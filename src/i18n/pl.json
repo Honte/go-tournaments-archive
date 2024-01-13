@@ -1,3 +1,17 @@
 {
-  "header": "Archiwum Mistrzostw Polski w Go"
+  "site": {
+    "name": "Archiwum Mistrzostw Polski w Go",
+    "description": "Archiwum wyników wszystkich edycji mistrzostw Polski w Go"
+  },
+  "navigation": {
+    "home": {
+      "anchor": "Strona główna",
+      "title": "Przejdź na stronę główną"
+
+    },
+    "statistics": {
+      "anchor": "Statystyki",
+      "title": "Zbiorcze statystyki z wszystkich lat"
+    }
+  }
 }

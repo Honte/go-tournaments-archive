@@ -11,8 +11,8 @@ export async function generateMetadata({ params: { locale }}) {
   const t = await getTranslations(locale)
 
   return {
-    title: t('header'),
-    description: 'Test'
+    title: t('site.name'),
+    description: t('site.description')
   }
 }
 
@@ -22,8 +22,8 @@ export async function generateStaticParams() {
 
 export default async function RootLayout({ children, params: { locale } }) {
   return (
-    <html lang={locale}>
-      <body className={inter.className}>
+    <html lang={locale} className="h-full bg-pgc-light">
+      <body className={`${inter.className} h-full`}>
         <Header locale={locale}/>
         <Navigation locale={locale}/>
         <main>
