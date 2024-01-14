@@ -11,11 +11,15 @@ module.exports = {
         'pgc-dark': '#222222',
         'pgc-light': '#F3F4F6FF',
         'pgc-primary': '#5287ae',
-        'pgc-hover': '#FFD700'
+        'pgc-hover': '#72940c'
       },
       screens: {
         xs: '420px'
+      },
+      gridTemplateColumns: {
+        'pgc': 'min-content repeat(3, minmax(0, 1fr))'
       }
+
     },
   },
   plugins: [],

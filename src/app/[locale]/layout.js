@@ -6,6 +6,7 @@ import { getTranslations, SUPPORTED_LOCALES } from '@/i18n/server';
 const inter = Inter({ subsets: ['latin'] })
 
 import '../globals.css'
+import { Footer } from '@/components/footer';
 
 export async function generateMetadata({ params: { locale }}) {
   const t = await getTranslations(locale)
@@ -22,13 +23,13 @@ export async function generateStaticParams() {
 
 export default async function RootLayout({ children, params: { locale } }) {
   return (
-    <html lang={locale} className="h-full bg-pgc-light">
-      <body className={`${inter.className} h-full`}>
+    <html lang={locale} className="h-full bg-pgc-light" style={{scrollbarGutter: 'stable'}}>
+      <body className={`${inter.className} h-full flex flex-col text-pgc-dark`}>
         <Header locale={locale}/>
-        <Navigation locale={locale}/>
-        <main>
+        <main className="flex-1 container mx-auto p-2">
           {children}
         </main>
+        <Footer locale={locale}/>
       </body>
     </html>
   )
