@@ -3,6 +3,7 @@ import fg from 'fast-glob';
 import slug from 'slug';
 import { parse } from 'yaml';
 import path from 'path';
+import { createTable } from '@/data/table';
 
 const PLAYER_REGEX = /^(?<name>[\p{Letter} -]+)( (?<rank>[0-9]{1,2}[dkp])?)?$/u;
 const GAME_REGEX = /(?<home>[a-z]+)-(?<away>[a-z]+) (?<winner>[a-z]+)(:(?<result>[?a-zA-Z0-9+,.:]+))?( (?<props>.+))?/i;
@@ -33,7 +34,7 @@ export async function loadTournaments() {
     }
 
     const stages = [];
-    for (const [stageIndex, stage] of json.stages.entries()) {
+    for (const stage of json.stages) {
       const target = {
         ...stage
       };
@@ -44,6 +45,7 @@ export async function loadTournaments() {
         case 'league':
         case 'league-table':
           target.rounds = stage.rounds.map((round) => round.map(parseGame));
+          target.table = createTable(target, players)
           break;
         case 'match':
         case 'round-robin-table':
@@ -104,9 +106,6 @@ function parseGame(string) {
       }, {})
   };
 
-  let black = null;
-  let white = null;
-
   if (result) {
     const gameResult = result.match(GAME_RESULT_REGEX);
 
@@ -121,13 +120,9 @@ function parseGame(string) {
     if (color.toLowerCase() === 'b') {
       winnerPlayer.color = 'black';
       loserPlayer.color = 'white';
-      black = winnerPlayer.id;
-      white = loserPlayer.id;
     } else {
       winnerPlayer.color = 'white';
       loserPlayer.color = 'black';
-      white = winnerPlayer.id;
-      black = loserPlayer.id;
     }
   }
 
