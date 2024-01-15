@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { getTournaments } from '@/data';
 
 export default async function Home({ params: { locale }}) {
-  const tournaments = await getTournaments();
+  const tournaments = getTournaments().toSorted((a, b) => b.id - a.id);
 
   return (
     <>

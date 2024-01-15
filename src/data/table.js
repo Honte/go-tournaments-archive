@@ -7,11 +7,12 @@ export function createTable(stage, playersMap) {
   for (const player in playersMap) {
     players[player] = {
       id: player,
+      place: 1,
       wins: 0,
       sos: 0,
       sodos: 0,
       sosos: 0,
-      startingPosition: position++,
+      starting: position++,
       games: new Array(stage.rounds.length),
       won: [],
       lost: [],
@@ -97,6 +98,10 @@ function compare(a, b, breaker) {
     }
 
     return b.won.includes(a) ? 1 : 0
+  }
+
+  if (breaker === 'starting') {
+    return a[breaker] - b[breaker];
   }
 
   return b[breaker] - a[breaker];

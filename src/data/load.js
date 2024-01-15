@@ -63,7 +63,7 @@ export async function loadTournaments() {
     });
   }
 
-  return tournaments;
+  return tournaments
 }
 
 function parseGame(string) {
