@@ -1,40 +1,25 @@
 import { notFound } from 'next/navigation';
 import { YearsNavigation } from '@/components/yearsNavigation';
+import { getTournaments } from '@/data';
 
-export default function Edition({ params: { year, locale }}) {
+export default async function Edition({ params: { year, locale }}) {
   if (!year.match(/^\d{4}$/)) {
     return notFound();
   }
 
-  const years = [];
-  for (let i = 1979; i <= 2023; i++) {
-    years.push(i);
-  }
-
-  const tournament = {
-    details: {
-      Miejsce: 'Warszawa',
-      Start: '26.12.2031',
-      Koniec: '12.12.2051',
-      Reguły: 'Japoński',
-      Komi: '6.5'
-    },
-    winners: [
-      'Adam ADASDASD 4d',
-      'Tomek Aasdfgsdfgsdfg 20k',
-      'Barry Ksdfsdfsd 2d',
-    ]
-  }
+  const tournaments = await getTournaments();
+  const tournament = tournaments.find((t) => t.year === Number(year));
+  const { id, stages, players, ...details } = tournament;
 
   return (
     <>
-      <YearsNavigation locale={locale} years={years} current={Number(year)} />
+      <YearsNavigation locale={locale} years={tournaments.map((t) => t.id)} current={Number(year)} />
 
       <div className="sm:flex sm:gap-8 my-4">
         <div className="flex-1">
           <h2 className="text-xl font-bold pb-1 my-2 border-b-pgc-dark border-b-2">Informacje</h2>
           <dl className="grid grid-cols-2">
-            {Object.entries(tournament.details).map(([label, response]) => (
+            {Object.entries(details).map(([label, response]) => (
               <>
                 <dt className="font-bold after:content-[':']">{label}</dt>
                 <dd>{response}</dd>
@@ -46,7 +31,7 @@ export default function Edition({ params: { year, locale }}) {
         <div className="flex-1">
           <h2 className="text-xl font-bold pb-1 my-2 border-b-pgc-dark border-b-2">Medaliści</h2>
           <ol className="list-decimal pl-5">
-            {tournament.winners.map((winner) => <li key={winner} className="my-1">{winner}</li>)}
+            {Object.values(players).slice(0, 3).map((winner) => <li key={winner.id} className="my-1">{winner.name}</li>)}
           </ol>
         </div>
       </div>
