@@ -20,7 +20,7 @@ stages:
         - km-ls km
         - js-wg js
       - - jk-ls jk
-        - km-js km
+        - km-js js
         - wd-wg wg
       - - jk-js jk
         - km-wg km
