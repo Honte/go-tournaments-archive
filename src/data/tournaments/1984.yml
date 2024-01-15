@@ -1,0 +1,123 @@
+location: Warszawa
+start: 1984-11-01
+end: 1984-11-04
+players:
+  ls: Leszek Sołdan 4d
+  gie: Krzysztof Giedrojć 2d
+  js: Jerzy Sacharewicz 3d
+  jf: Jan Frejlak 2d
+  jl: Jan Lubos 3d
+  kk: Katarzyna Koenig 1d
+  wm: Włodzimierz Malinowski 3d
+  ww: Wojciech Woskresiński 2d
+  mk: Marek Kopyt 1d
+  gs: Gerard Szymborski 1k
+  kg: Krzysztof Grabowski 2d
+  km: Krzysztof Moszczyński 3d
+  rz: Ryszard Zygowski 1d
+  mb: Marcin Bańkowski 1k
+  mg: Maciej Górski 2d
+  wg: Waldemar Grzywiński 1d
+  jr: Jerzy Rybka 1d
+  jk: Jan Konieczny 1k
+  sm: Stanisław Majerski 1k
+  jm: Jerzy Mazur 1k
+  tp: Tomasz Paruszewski 1d
+  kotor: Jerzy Kotorowicz 1k
+  rzab: Robert Zabłocki 1k
+  as: Andrzej Sanojca 1k
+  ks: Krzysztof Szymczyk 1k
+  eg: Emilia Grudzińska 1d
+  krasz: Janusz Kraszek 5d
+stages:
+  - type: ladder-table
+    order:
+      - ls
+      - gie,js
+      - jf
+      - jl
+      - kk
+      - wm
+      - ww
+      - mk
+      - gs
+      - kg
+      - km
+      - rz
+      - mb
+      - mg
+      - wg
+      - jr
+      - jk
+      - sm
+      - jm
+      - tp
+      - kotor
+      - rzab
+      - as
+      - ks
+      - eg
+    rounds:
+      - - gie-rzab gie
+        - kk-wg wg
+        - gs-eg gs
+        - km-BYE km
+        - rz-ks rz
+        - mb-mg mg
+        - jr-BYE jr
+        - jk-jm jk
+        - sm-kotor sm
+        - tp-as tp
+      - - gie-jk gie
+        - jl-tp jl
+        - kk-ks kk
+        - mk-wg wg
+        - gs-rz gs
+        - km-jk km
+        - mb-rzab mb
+        - mg-jr jr
+        - jm-eg jm
+        - kotor-as kotor
+      - - gie-kg gie
+        - js-jl jl
+        - kk-gs kk
+        - ww-jr ww
+        - mk-kotor mk
+        - km-wg km
+        - rz-tp rz
+        - mb-jm mb
+        - mg-sm mg
+      - - ls-km ls
+        - gie-jk gie
+        - js-wg js
+        - jf-ww ww
+        - jl-wm wm
+        - kk-rz kk
+        - mk-jr mk
+        - gs-mb gs
+        - kg-mg kg
+      - - ls-ww ls
+        - gie-wm gie
+        - js-gs js
+        - jf-kg jf
+        - jl-km jl
+        - kk-mk kk
+      - - ls-gie ls
+        - js-ww js
+        - jf-wm jf
+        - jl-kk jl
+      - - ls-jf ls
+        - gie-jk gie
+      - - ls-js ls
+      - - ls-gie ls
+      - - jf-jl jf
+        - kk-wm kk
+        - kk-ww kk
+        - wm-ww wm
+        - mk-kg mk
+        - mk-gs mk
+        - gs-kg gs
+  - type: match
+    games:
+      - krasz-ls krasz
+      - krasz-ls krasz

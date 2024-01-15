@@ -1,0 +1,49 @@
+location: Biłgoraj
+start: 2004-11-11
+end: 2004-11-14
+players:
+  jk: Janusz Kraszek 5d
+  kh: Koichiro Habu 4d
+  jl: Jan Lubos 3d
+  ls: Leszek Sołdan 5d
+  pc: Paweł Celejewski 3d
+  mr: Michał Rams 2d
+  mb: Michał Bażyński 4d
+  kg: Krzysztof Giedrojć 4d
+stages:
+  - type: league
+    egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T041111A
+    komi: 6.5
+    breakers:
+      - wins
+      - sodos
+      - starting
+    rounds:
+      - - ls-pc ls
+        - mb-kh mb
+        - kg-jk kg
+        - mr-jl mr
+      - - ls-mr ls
+        - mb-jk mb
+        - jl-pc jl
+        - kh-kg kh
+      - - ls-mb ls
+        - jk-mr jk
+        - kg-jl kg
+        - kh-pc kh
+      - - ls-kg ls
+        - jk-pc jk
+        - jl-mb jl
+        - kh-mr kh
+      - - ls-jk ls
+        - mb-mr mb
+        - jl-kh jl
+        - pc-kg pc
+      - - ls-kh ls
+        - mb-pc mb
+        - jk-jl jk
+        - kg-mr kg
+      - - ls-jl ls
+        - mb-kg mb
+        - jk-kh jk
+        - mr-pc mr

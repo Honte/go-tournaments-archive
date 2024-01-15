@@ -1,0 +1,37 @@
+location: Warszawa
+start: 1988-11-24
+end: 1988-11-26
+players:
+  ls: Leszek Sołdan 4d
+  jk: Janusz Kraszek 5d
+  rz: Robert Zabłocki 4d
+  rp: Roman Pozaroszczyk 1k
+  ku: Krzysztof Urtnowski 1d
+  wg: Włodzimierz Grudziński 1d
+stages:
+  - type: league
+    breakers:
+      - wins
+      - sodos
+    rounds:
+      - - ls-rp ls
+        - jk-wg jk
+        - rz-ku rz
+      - - ls-wg ls
+        - jk-rz jk
+        - rp-ku rp
+      - - ls-jk ls
+        - rz-rp rz
+        - ku-wg ku
+      - - ls-ku ls
+        - jk-rp jk
+        - rz-wg rz
+      - - ls-rz ls
+        - jk-ku jk
+        - rp-wg rp
+  - type: match
+    games:
+      - jk-ls jk
+      - jk-ls jk
+      - jk-ls ls
+      - jk-ls jk

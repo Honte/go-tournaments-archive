@@ -1,0 +1,56 @@
+location: Tuchola
+start: 1996-11-08
+end: 1996-11-11
+players:
+  ls: Leszek Sołdan 6d
+  jc: Janusz Chłodek 3d
+  mf: Mariusz Ferenc 4d
+  jl: Jan Lubos 3d
+  kg: Krzysztof Giedrojć 4d
+  gs: Gerard Szymborski 3d
+  wm: Włodzimierz Malinowski 2d
+  dt: Dariusz Targosz 1d
+stages:
+  - type: league
+    egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T961108
+    komi: 5.5
+    breakers:
+      - wins
+      - sodos
+    rounds:
+      - - ls-dt ls
+        - jc-jl jc
+        - mf-wm mf
+        - kg-gs kg
+      - - ls-wm ls
+        - mf-dt mf
+        - jl-gs jl
+        - kg-jc kg
+      - - ls-jc ls
+        - jl-dt jl
+        - kg-wm kg
+        - gs-mf gs
+      - - ls-gs ls
+        - jc-mf jc
+        - jl-wm jl
+        - kg-dt kg
+      - - ls-kg ls
+        - mf-jl mf
+        - gs-dt gs
+        - wm-jc wm
+      - - ls-jl ls
+        - jc-dt jc
+        - mf-kg mf
+        - gs-wm gs
+      - - ls-mf ls
+        - jc-gs jc
+        - jl-kg jl
+        - wm-dt wm
+  - type: match
+    egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T961207C
+    komi: 5.5
+    games:
+      - jc-ls ls
+      - jc-ls jc
+      - jc-ls jc
+      - jc-ls ls

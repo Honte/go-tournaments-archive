@@ -1,0 +1,51 @@
+location: Warszawa
+start: 2008-12-18
+end: 2008-12-21
+referee: Michał Rams
+players:
+  ls: Leszek Sołdan 5d
+  ms: Mateusz Surma 4d
+  kc: Kamil Chwedyna 4d
+  kh: Koichiro Habu 4d
+  pc: Paweł Celejewski 4d
+  mb: Michał Bażyński 4d
+  kb: Krzysztof Bożek 2d
+  pm: Paweł Morawiecki 1d
+stages:
+  - type: league
+    egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T081218A
+    komi: 6.5
+    breakers:
+      - wins
+      - sodos
+      - direct
+      - starting
+    rounds:
+      - - ls-kb ls:B+R sgf:2008/ls-kb.sgf
+        - ms-mb ms:W+R sgf:2008/ms-mb.sgf
+        - kc-pm kc:B+R sgf:2008/kc-pm.sgf
+        - kh-pc kh:W+R sgf:2008/kh-pc.sgf
+      - - ls-pm ls:W+R sgf:2008/ls-pm.sgf
+        - kc-kb kc:W+R sgf:2008/kc-kb.sgf
+        - pc-ms pc:W+R sgf:2008/pc-ms.sgf
+        - mb-kh mb:W+3.5 sgf:2008/mb-kh.sgf
+      - - ls-ms ls:B+R sgf:2008/ls-ms.sgf
+        - kc-kh kc:B+R sgf:2008/kc-kh.sgf
+        - kb-mb kb:W+8.5 sgf:2008/kb-mb.sgf
+        - pm-pc pm:W+1.5 sgf:2008/pm-pc.sgf
+      - - ms-kc ms:B+R sgf:2008/ms-kc.sgf
+        - kh-ls kh:B+1.5 sgf:2008/kh-ls.sgf
+        - pc-kb pc:W+1.5 sgf:2008/pc-kb.sgf
+        - mb-pm mb:W+R sgf:2008/mb-pm.sgf
+      - - ls-pc ls:B+R sgf:2008/ls-pc.sgf
+        - ms-pm ms:B+15.5 sgf:2008/ms-pm.sgf
+        - kc-mb kc:W+R sgf:2008/kc-mb.sgf
+        - kh-kb kh:B+1.5 sgf:2008/kh-kb.sgf
+      - - ms-kb ms:W+9.5 sgf:2008/ms-kb.sgf
+        - kc-pc kc:W+R sgf:2008/kc-pc.sgf
+        - kh-pm kh:W+R sgf:2008/kh-pm.sgf
+        - mb-ls mb:B+2.5 sgf:2008/mb-ls.sgf
+      - - ls-kc ls:W+R sgf:2008/ls-kc.sgf
+        - ms-kh ms:B+R sgf:2008/ms-kh.sgf
+        - pc-mb pc:B+R sgf:2008/pc-mb.sgf
+        - kb-pm kb:B+3.5 sgf:2008/kb-pm.sgf

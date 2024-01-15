@@ -1,0 +1,50 @@
+location: Kraków
+start: 2010-11-25
+end: 2010-11-28
+referee: Krzysztof Bożek
+players:
+  ls: Leszek Sołdan 5d
+  kc: Kamil Chwedyna 4d
+  kg: Krzysztof Giedrojć 4d
+  mk: Marek Kamiński 4d
+  sf: Stanisław Frejlak 2d
+  js: Jakub Straszewski 1d
+  ak: Arkadiusz Kindziuk 1d
+  cc: Cezary Czernecki 1d
+stages:
+  - type: league
+    egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T101125A
+    komi: 6.5
+    time: 90m + 60s byo
+    breakers:
+      - wins
+      - sodos
+    rounds:
+      - - ls-cc ls:W+R sgf:2010/ls-cc.sgf
+        - kc-ak kc:W+R sgf:2010/kc-ak.sgf
+        - kg-js kg:W+R sgf:2010/kg-js.sgf
+        - mk-sf mk:W+R sgf:2010/mk-sf.sgf
+      - - ls-ak ls:B+R sgf:2010/ls-ak.sgf
+        - kc-cc kc:B+12.5 sgf:2010/kc-cc.sgf
+        - kg-sf kg:B+R sgf:2010/kg-sf.sgf
+        - mk-js mk:B+R sgf:2010/mk-js.sgf
+      - - ls-js ls:W+17.5 sgf:2010/ls-js.sgf
+        - kc-sf kc:W+66.5 sgf:2010/kc-sf.sgf
+        - kg-cc kg:W+R sgf:2010/kg-cc.sgf
+        - mk-ak mk:W+12.5 sgf:2010/mk-ak.sgf
+      - - ls-sf ls:B+R sgf:2010/ls-sf.sgf
+        - kc-js kc:B+R sgf:2010/kc-js.sgf
+        - kg-ak kg:B+R sgf:2010/kg-ak.sgf
+        - mk-cc mk:B+R sgf:2010/mk-cc.sgf
+      - - ls-mk ls:W+13.5 sgf:2010/ls-mk.sgf
+        - kc-kg kc:W+R sgf:2010/kc-kg.sgf
+        - js-ak js:W+R sgf:2010/js-ak.sgf
+        - cc-sf cc:B+38.5 sgf:2010/cc-sf.sgf
+      - - kc-mk kc:B+R sgf:2010/kc-mk.sgf
+        - kg-ls kg:W+0.5 sgf:2010/kg-ls.sgf
+        - js-cc js:B+R sgf:2010/js-cc.sgf
+        - sf-ak sf:B+1.5 sgf:2010/sf-ak.sgf
+      - - ls-kc ls:W+R sgf:2010/ls-kc.sgf
+        - mk-kg mk:B+R sgf:2010/mk-kg.sgf
+        - js-sf js:B+R sgf:2010/js-sf.sgf
+        - cc-ak cc:B+R sgf:2010/cc-ak.sgf

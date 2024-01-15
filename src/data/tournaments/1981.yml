@@ -1,0 +1,77 @@
+location: Słupsk
+start: 1981-10-28
+end: 1981-10-31
+players:
+  km: Krzysztof Moszczyński 3d
+  js: Jerzy Sacharewicz 3d
+  jl: Jan Lubos 1d
+  mg: Maciej Górski 1d
+  wm: Włodzimierz Malinowski 1d
+  ls: Leszek Sołdan 2d
+  wg: Włodzimierz Grudziński 2d
+  kg: Krzysztof Grabowski 1d
+  kz: Katarzyna Żuk-Rybicka 1d
+  jm: Jerzy Mazur 1k
+  eg: Emilia Grudzińska 1k
+  jk: Janusz Kraszek 5d
+stages:
+  - type: ladder-table
+    order:
+      - km
+      - js
+      - jl
+      - mg
+      - wm,ls
+      - wg,kg
+      - kz,jm
+      - eg
+    rounds:
+      - - jl-eg jl
+        - mg-jm mg
+        - ls-kg kg
+      - - js-kg js
+        - jl-mg jl
+        - ls-eg ls
+        - kz-jm jm
+      - - js-wg js
+        - jl-wm jl
+        - mg-kz mg
+        - ls-jm ls
+      - - km-jl km
+        - js-ls ls
+        - mg-wg mg
+        - wm-kg wm
+      - - km-js js
+        - jl-ls jl
+        - mg-wm mg
+      - - km-mg km
+        - js-jl js
+      - - km-js km
+        - jl-mg jl
+  - type: round-robin-table
+    games:
+      - wm-ls ls
+      - wm-kg wm
+      - wm-eg wm
+      - wm-wg wm
+      - wm-kz wm
+      - wm-jm wm
+      - ls-kg kg
+      - ls-eg eg
+      - ls-wg ls
+      - ls-kz ls
+      - ls-jm ls
+      - kg-eg kg
+      - kg-wg wg
+      - kg-kz kg
+      - kg-jm kg
+      - eg-wg eg
+      - eg-kz eg
+      - eg-jm eg
+      - wg-kz kz
+      - wg-jm wg
+      - kz-jm jm
+  - type: match
+    games:
+      - jk-km jk
+      - jk-km jk

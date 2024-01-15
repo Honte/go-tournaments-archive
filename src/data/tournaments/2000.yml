@@ -1,0 +1,48 @@
+location: Warszawa
+start: 2000-12-07
+end: 2000-12-11
+players:
+  kg: Krzysztof Giedrojć 4d
+  ls: Leszek Sołdan 6d
+  jc: Janusz Chłodek 3d
+  mb: Michał Bażyński 3d
+  ku: Krzysztof Urtnowski 2d
+  jl: Jan Lubos 4d
+  mw: Marcin Wolak 2d
+  wm: Włodzimierz Malinowski 2d
+stages:
+  - type: league
+    egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T001207
+    komi: 5.5
+    breakers:
+      - wins
+      - sodos
+    rounds:
+      - - kg-wm kg
+        - ls-mw ls
+        - jc-mb jc
+        - jl-ku jl
+      - - kg-mw kg
+        - ls-wm ls
+        - jc-jl jc
+        - ku-mb ku
+      - - kg-ku kg
+        - ls-jc ls
+        - mb-mw mb
+        - jl-wm jl
+      - - kg-jc kg
+        - ls-ku ls
+        - mb-wm mb
+        - mw-jl mw
+      - - ls-jl ls
+        - jc-wm jc
+        - mb-kg mb
+        - ku-mw ku
+      - - kg-jl kg
+        - ls-mb ls
+        - jc-mw jc
+        - ku-wm ku
+      - - kg-ls kg
+        - jc-ku jc
+        - mb-jl mb
+        - mw-wm mw

@@ -1,0 +1,52 @@
+location: Andrychów
+start: 2009-11-26
+end: 2009-11-29
+referee: Krzysztof Bożek
+players:
+  ls: Leszek Sołdan 5d
+  kc: Kamil Chwedyna 4d
+  kh: Koichiro Habu 4d
+  kg: Krzysztof Giedrojć 4d
+  rj: Radosław Jachym 4d
+  ml: Maciej Lubiński 1d
+  ku: Krzysztof Urtnowski 1d
+  ww: Wojciech Woskresiński 1d
+stages:
+  - type: league
+    egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T091126B
+    komi: 6.5
+    time: 90m + 60s byo
+    breakers:
+      - wins
+      - sodos
+      - direct
+      - starting
+    rounds:
+      - - ls-ww ls:W+35.5 sgf:2009/ls-ww.sgf
+        - kc-ku kc:W+34.5 sgf:2009/kc-ku.sgf
+        - rj-kg rj:B+R sgf:2009/rj-kg.sgf
+        - kh-ml kh:W+R sgf:2009/kh-ml.sgf
+      - - ls-ku ls:B+31.5 sgf:2009/ls-ku.sgf
+        - kc-ww kc:B+12.5 sgf:2009/kc-ww.sgf
+        - rj-kh rj:W+R sgf:2009/rj-kh.sgf
+        - kg-ml kg:B+R sgf:2009/kg-ml.sgf
+      - - ls-ml ls:W+29.5 sgf:2009/ls-ml.sgf
+        - rj-kc rj:B+R sgf:2009/rj-kc.sgf
+        - kg-ku kg:W+60 sgf:2009/kg-ku.sgf
+        - kh-ww kh:W+1.5 sgf:2009/kh-ww.sgf
+      - - ls-rj ls:B+R sgf:2009/ls-rj.sgf
+        - kc-ml kc:B+5.5 sgf:2009/kc-ml.sgf
+        - kg-ww kg:B+R sgf:2009/kg-ww.sgf
+        - kh-ku kh:B+R sgf:2009/kh-ku.sgf
+      - - ls-kg ls:W+21.5 sgf:2009/ls-kg.sgf
+        - kc-kh kc:W+12.5 sgf:2009/kc-kh.sgf
+        - rj-ww rj:W+R sgf:2009/rj-ww.sgf
+        - ml-ku ml:W+31.5 sgf:2009/ml-ku.sgf
+      - - ls-kh ls:B+R sgf:2009/ls-kh.sgf
+        - kc-kg kc:B+R sgf:2009/kc-kg.sgf
+        - rj-ku rj:B+6.5 sgf:2009/rj-ku.sgf
+        - ww-ml ww:W+29.5 sgf:2009/ww-ml.sgf
+      - - kc-ls kc:B+10.5 sgf:2009/kc-ls.sgf
+        - rj-ml rj:W+R sgf:2009/rj-ml.sgf
+        - kg-kh kg:B+16.5 sgf:2009/kg-kh.sgf
+        - ww-ku ww:B+8.5 sgf:2009/ww-ku.sgf

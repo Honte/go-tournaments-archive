@@ -1,0 +1,49 @@
+location: Warszawa
+start: 2005-11-24
+end: 2005-11-27
+players:
+  ls: Leszek Sołdan 5d
+  mb: Michał Bażyński 4d
+  jl: Jan Lubos 4d
+  kg: Krzysztof Giedrojć 4d
+  kh: Koichiro Habu 4d
+  mr: Michał Rams 3d
+  dg: Dominik Gogosz 2d
+  mp: Michał Parkoła 2d
+stages:
+  - type: league
+    egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T051124A
+    komi: 6.5
+    breakers:
+      - wins
+      - sodos
+      - starting
+    rounds:
+      - - kh-kg kh
+        - ls-mp ls
+        - mb-mr mb
+        - jl-dg jl
+      - - kh-jl kh
+        - ls-mr ls
+        - mb-mp mb
+        - dg-kg dg
+      - - kh-mb kh
+        - ls-dg ls
+        - kg-mr kg
+        - jl-mp jl
+      - - kh-ls kh
+        - mb-dg mb
+        - kg-mp kg
+        - mr-jl mr
+      - - kh-mp kh
+        - mb-jl mb
+        - kg-ls kg
+        - mr-dg mr
+      - - kh-mr kh
+        - ls-jl ls
+        - mb-kg mb
+        - dg-mp dg
+      - - kh-dg kh
+        - ls-mb ls
+        - kg-jl kg
+        - mr-mp mr

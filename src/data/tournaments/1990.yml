@@ -1,0 +1,50 @@
+location: Warszawa
+start: 1990-11-29
+end: 1990-12-02
+players:
+  ls: Leszek Sołdan 5d
+  jk: Janusz Kraszek 5d
+  ku: Krzysztof Urtnowski 1d
+  jl: Jan Lubos 3d
+  rz: Robert Zabłocki 4d
+  kg: Krzysztof Giedrojć 4d
+  mf: Mariusz Ferenc 2d
+  mk: Mateusz Kłobukowski 2d
+stages:
+  - type: league
+    breakers:
+      - wins
+      - sodos
+    rounds:
+      - - ls-mk ls
+        - jk-ku jk
+        - rz-mf rz
+        - kg-jl kg
+      - - jk-mk jk
+        - ku-ls ku
+        - jl-mf jl
+        - kg-rz kg
+      - - ls-rz ls
+        - jk-jl jk
+        - ku-kg ku
+        - mf-mk mf
+      - - ls-jl ls
+        - jk-rz jk
+        - ku-mf ku
+        - mk-kg mk
+      - - ls-kg ls
+        - jk-mf jk
+        - jl-mk jl
+        - rz-ku rz
+      - - ls-mf ls
+        - jk-kg jk
+        - jl-ku jl
+        - rz-mk rz
+      - - ls-jk ls
+        - ku-mk ku
+        - jl-rz jl
+        - mf-kg mf
+  - type: match
+    games:
+      - jk-ls ls
+      - jk-ls ls

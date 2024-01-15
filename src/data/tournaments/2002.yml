@@ -1,0 +1,48 @@
+location: Bielsko-Biała
+start: 2002-12-05
+end: 2002-12-08
+players:
+  ls: Leszek Sołdan 6d
+  jk: Janusz Kraszek 5d
+  rp: Roman Pszonka 4d
+  jl: Jan Lubos 4d
+  kg: Krzysztof Giedrojć 4d
+  ww: Wojciech Wieczorek 3d
+  rz: Robert Zabłocki 3d
+  gs: Gerard Szymborski 3d
+stages:
+  - type: league
+    egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T021205
+    komi: 5.5
+    breakers:
+      - wins
+      - sodos
+    rounds:
+      - - ls-gs ls
+        - jk-rp jk
+        - jl-rz jl
+        - kg-ww kg
+      - - ls-rz ls
+        - jk-ww jk
+        - rp-kg rp
+        - jl-gs jl
+      - - jk-gs jk
+        - rp-ls rp
+        - jl-ww jl
+        - rz-kg rz
+      - - ls-ww ls
+        - jk-rz jk
+        - jl-rp jl
+        - kg-gs kg
+      - - ls-kg ls
+        - jk-jl jk
+        - rp-rz rp
+        - ww-gs ww
+      - - ls-jk ls
+        - rp-gs rp
+        - kg-jl kg
+        - ww-rz ww
+      - - ls-jl ls
+        - jk-kg jk
+        - rp-ww rp
+        - gs-rz gs

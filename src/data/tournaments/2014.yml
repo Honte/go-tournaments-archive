@@ -1,0 +1,53 @@
+location: Warszawa
+start: 2014-11-12
+end: 2014-11-14
+referee: Arkadiusz Kindziuk
+website: https://mp.go.art.pl/2014
+players:
+  mm: Marcin Majka 3d
+  sp: Sebastian Pawlaczyk 3d
+  sf: Stanisław Frejlak 4d
+  ms: Mateusz Surma 7d
+  kg: Krzysztof Giedrojć 3d
+  ll: Łukasz Lew 2d
+  kh: Koichiro Habu 4d
+  ls: Leszek Sołdan 4d
+stages:
+  - type: league
+    egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T141211A
+    time: 90m + 60s byo
+    komi: 6.5
+    breakers:
+      - wins
+      - sodos
+      - direct
+      - starting
+    rounds:
+      - - kg-ms ms:W+R sgf:2014/kg-ms.sgf
+        - ll-sf sf:W+R
+        - kh-sp sp:W+1.5
+        - ls-mm ls:B+R
+      - - sf-kg sf:B+13.5
+        - ms-ll ms:B+R
+        - mm-kh mm:B+R
+        - sp-ls sp:B+12.5 sgf:2014/sp-ls.sgf
+      - - kg-sp sp:W+15.5
+        - ll-mm mm:W+R
+        - kh-ms ms:W+R sgf:2014/kh-ms.sgf
+        - ls-sf sf:W+4.5
+      - - mm-kg kg:W+R sgf:2014/mm-kg.sgf
+        - sp-ll sp:B+1.5 sgf:2014/sp-ll.sgf
+        - sf-kh kh:W+R sgf:2014/sf-kh.sgf
+        - ms-ls ms:B+6.5 sgf:2014/ms-ls.sgf
+      - - sf-sp sp:W+R sgf:2014/sf-sp.sgf
+        - ms-mm ms:B+R sgf:2014/ms-mm.sgf
+        - kh-ll kh:B+13.5 sgf:2014/kh-ll.sgf
+        - ls-kg ls:B+6.5 sgf:2014/ls-kg.sgf
+      - - mm-sf sf:W+R sgf:2014/mm-sf.sgf
+        - sp-ms ms:W+R sgf:2014/sp-ms.sgf
+        - kg-kh kh:W+R sgf:2014/kg-kh.sgf
+        - ll-ls ls:W+18.5 sgf:2014/ll-ls.sgf
+      - - sp-mm sp:B+R sgf:2014/sp-mm.sgf
+        - ms-sf ms:B+5.5 sgf:2014/ms-sf.sgf
+        - ll-kg ll:B+R sgf:2014/ll-kg.sgf
+        - ls-kh kh:W+10.5 sgf:2014/ls-kh.sgf

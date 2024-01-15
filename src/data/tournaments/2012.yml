@@ -1,0 +1,53 @@
+location: Katowice
+start: 2012-11-29
+end: 2012-12-02
+referee: Krzysztof Bożek
+website: https://mp.go.art.pl/2012
+players:
+  ls: Leszek Sołdan 5d
+  kc: Kamil Chwedyna 4d
+  sf: Stanisław Frejlak 4d
+  kg: Krzysztof Giedrojć 4d
+  kh: Koichiro Habu 4d
+  dj: Dawid Jurkiewicz 1d
+  ak: Arkadiusz Kindziuk 1d
+  pw: Piotr Wysocki 2k
+stages:
+  - type: league
+    egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T121129A
+    time: 90m + 60s byo
+    komi: 6.5
+    breakers:
+      - wins
+      - sodos
+      - direct
+      - starting
+    rounds:
+      - - ls-pw ls:B+R sgf:2012/ls-pw.sgf
+        - kc-ak kc:B+20.5 sgf:2012/kc-ak.sgf
+        - sf-dj sf:B+R sgf:2012/sf-dj.sgf
+        - kg-kh kh:W+R sgf:2012/kg-kh.sgf
+      - - ak-ls ls:B+16.5 sgf:2012/ak-ls.sgf
+        - pw-kc kc:W+R sgf:2012/pw-kc.sgf
+        - kh-sf sf:W+10.5 sgf:2012/kh-sf.sgf
+        - dj-kg kg:W+R sgf:2012/dj-kg.sgf
+      - - ls-dj ls:B+R sgf:2012/ls-dj.sgf
+        - kc-kh kc:B+R sgf:2012/kc-kh.sgf
+        - sf-pw sf:B+R sgf:2012/sf-pw.sgf
+        - kg-ak kg:B+31.5 sgf:2012/kg-ak.sgf
+      - - kh-ls ls:B+T sgf:2012/kh-ls.sgf
+        - dj-kc kc:W+R sgf:2012/dj-kc.sgf
+        - ak-sf sf:W+16.5 sgf:2012/ak-sf.sgf
+        - pw-kg kg:W+R sgf:2012/pw-kg.sgf
+      - - ls-kg kg:W+4.5 sgf:2012/ls-kg.sgf
+        - kc-sf sf:W+R sgf:2012/kc-sf.sgf
+        - kh-pw kh:B+R sgf:2012/kh-pw.sgf
+        - dj-ak dj:B+R sgf:2012/dj-ak.sgf
+      - - sf-ls sf:W+T sgf:2012/sf-ls.sgf
+        - kg-kc kg:B+R sgf:2012/kg-kc.sgf
+        - ak-kh kh:W+R sgf:2012/ak-kh.sgf
+        - pw-dj dj:W+R sgf:2012/pw-dj.sgf
+      - - ls-kc kc:W+5.5 sgf:2012/ls-kc.sgf
+        - sf-kg sf:B+R sgf:2012/sf-kg.sgf
+        - kh-dj kh:B+R sgf:2012/kh-dj.sgf
+        - ak-pw ak:B+T sgf:2012/ak-pw.sgf

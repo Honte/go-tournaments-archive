@@ -1,0 +1,70 @@
+location: Warszawa
+start: 1982-10-08
+end: 1982-10-11
+players:
+  ls: Leszek Sołdan 2d
+  wm: Włodzimierz Malinowski 2d
+  mk: Marek Kopyt 1k
+  jl: Jan Lubos 2d
+  mg: Maciej Górski 2d
+  jf: Jan Frejlak 1k
+  kg: Krzysztof Grabowski 2d
+  js: Jerzy Sacharewicz 3d
+  wg: Waldemar Grzywiński 1d
+  eg: Emilia Grudzińska 1k
+  ld: Leszek Dabrowski 1k
+  jm: Jerzy Mazur 1k
+  gie: Krzysztof Giedrojć 1k
+  pb: Paweł Banas 1k
+  jk: Janusz Kraszek 5d
+stages:
+  - type: ladder-table
+    order:
+      - ls
+      - wm
+      - mk
+      - jl
+      - mg
+      - jf
+      - kg
+      - js
+      - wg,eg
+      - ld
+      - jm
+      - gie
+      - pb
+    rounds:
+      - - mk-jf jf
+        - wg-ld wg
+        - jm-pb jm
+      - - mk-pb mk
+        - jf-jm jf
+        - kg-gie kg
+        - wg-eg wg
+      - - ls-wg ls
+        - wm-ld wm
+        - mk-jm mk
+        - jf-kg kg
+      - - ls-jl ls
+        - wm-js wm
+        - mk-wg mk
+        - mg-kg mg
+        - jf-eg jf
+      - - ls-kg ls
+        - wm-mg wm
+        - mk-js mk
+        - jl-jf jl
+      - - ls-wm ls
+        - jl-mg jl
+      - - ls-mk ls
+        - wm-jl wm
+      - - ls-wm ls
+      - - mk-jl mk
+        - jf-kg jf
+        - jf-js jf
+        - kg-js kg
+        - ld-jm ld
+  - type: match
+    games:
+      - jk-ls jk
+      - jk-ls jk

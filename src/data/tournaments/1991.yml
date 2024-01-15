@@ -1,0 +1,50 @@
+location: Warszawa
+start: 1991-11-14
+end: 1991-11-17
+players:
+  kg: Krzysztof Giedrojć 4d
+  jl: Jan Lubos 3d
+  mf: Mariusz Ferenc 3d
+  ww: Wojciech Woskresiński 3d
+  jr: Jerzy Rybka 2d
+  ku: Krzysztof Urtnowski 2d
+  mk: Mateusz Kłobukowski 2d
+  tp: Tomasz Paruszewski 1d
+stages:
+  - type: league
+    breakers:
+      - wins
+      - sodos
+    rounds:
+      - - kg-mk kg
+        - jl-tp jl
+        - mf-ww mf
+        - jr-ku jr
+      - - kg-mf kg
+        - jl-jr jl
+        - ww-mk ww
+        - ku-tp ku
+      - - kg-jr kg
+        - jl-mf jl
+        - ww-tp ww
+        - mk-ku mk
+      - - kg-tp kg
+        - jl-mk jl
+        - mf-ku mf
+        - ww-jr ww
+      - - kg-jl kg
+        - mf-jr mf
+        - ku-ww ku
+        - mk-tp mk
+      - - kg-ku kg
+        - jl-ww jl
+        - jr-mk jr
+        - tp-mf tp
+      - - kg-ww kg
+        - jl-ku jl
+        - mf-mk mf
+        - jr-tp jr
+  - type: match
+    games:
+      - kg-jl kg
+      - kg-jl kg

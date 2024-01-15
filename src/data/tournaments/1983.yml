@@ -1,0 +1,77 @@
+location: Warszawa
+start: 1983-09-30
+end: 1983-10-02
+players:
+  ls: Leszek Sołdan 4d
+  wm: Włodzimierz Malinowski 2d
+  jf: Jan Frejlak 1d
+  kg: Krzysztof Grabowski 2d
+  js: Jerzy Sacharewicz 3d
+  ww: Wojciech Woskresiński 1k
+  ld: Leszek Dabrowski 1d
+  jl: Jan Lubos 3d
+  mk: Marek Kopyt 1d
+  kz: Katarzyna Żuk-Rybicka 1d
+  mg: Maciej Górski 2d
+  jr: Jerzy Rybka 1d
+  gie: Krzysztof Giedrojć 2d
+  rz: Ryszard Zygowski 1d
+  sm: Stanisław Majerski 1k
+  jk: Janusz Kraszek 5d
+stages:
+  - type: ladder-table
+    order:
+      - ls
+      - wm
+      - jf
+      - kg
+      - js
+      - ww
+      - ld
+      - jl
+      - mk
+      - kz,mg
+      - jr
+      - gie
+      - rz
+      - sm
+    rounds:
+      - - ww-sm ww
+        - ld-gie ld
+        - jr-rz jr
+        - kz-BYE kz
+      - - jf-ww ww
+        - kg-ld ld
+        - js-rz js
+        - kz-jr kz
+        - gie-sm gie
+      - - jf-gie jf
+        - kg-jr kg
+        - js-mk js
+        - ld-kz ld
+        - mg-BYE BYE
+      - - ls-wm ls
+        - jf-mg jf
+        - kg-ww kg
+        - js-ld js
+        - mk-kz mk
+      - - ls-js ls
+        - jf-jl jf
+        - kg-mk kg
+        - ww-ld ww
+      - - ls-kg ls
+        - wm-ww wm
+        - jf-js jf
+      - - ls-wm ls
+      - - ls-jf ls
+      - - wm-jf wm
+        - js-ww js
+        - kg-js kg
+        - jl-mk jl
+        - ld-jl ld
+        - jr-gie jr
+        - rz-sm rz
+  - type: match
+    games:
+      - jk-ls jk
+      - jk-ls jk

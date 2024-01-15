@@ -1,0 +1,53 @@
+location: Warszawa
+start: 2023-11-09
+end: 2023-11-12
+referee: Marcin Dzieżyć
+website: https://mp.go.art.pl/2023
+players:
+  kh: Koichiro Habu 5d
+  cc: Cezary Czernecki 4d
+  jf: Jan Frączak 3d
+  mm: Marcin Majka 4d
+  dj: Dawid Jurkiewicz 4d
+  kc: Karol Cieślak 3d
+  ls: Leszek Sołdan 4d
+  mw: Maksym Wałaszewski 3d
+stages:
+  - type: league
+    egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T231109A
+    time: 90m + 60s byo
+    komi: 6.5
+    breakers:
+      - wins
+      - sodos
+      - direct
+      - starting
+    rounds:
+      - - mm-dj dj:W+R sgf:2023/mm-dj.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/nwGSWqAvHjGCFysVBCKg yt:https://www.youtube.com/watch?v=Mp1mBgVVtYQ
+        - jf-kc jf:B+5.5 sgf:2023/jf-kc.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/tBAyTilrUS8GIBvgWEZy yt:https://www.youtube.com/watch?v=dM5KkN3bjqw
+        - cc-ls cc:B+26.5 sgf:2023/cc-ls.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/H8YBr3pjiNcUPEyhAs73 yt:https://www.youtube.com/watch?v=YkIMhLBVqCM
+        - kh-mw kh:B+R sgf:2023/kh-mw.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/4VBKTp9ZggH2FhI7NYgV yt:https://youtube.com/live/YrRwImFw1So
+      - - mw-cc cc:W+R sgf:2023/mw-cc.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/NwYWsn3gnuTkJs5LDUBq yt:https://www.youtube.com/watch?v=wbU1iesG8sA
+        - ls-kh ls:B+R sgf:2023/ls-kh.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/bFjhBfjDlx9tPan4h1Uk yt:https://www.youtube.com/watch?v=nvIChUrDPaA
+        - kc-mm mm:W+5.5 yt:https://www.youtube.com/watch?v=CExdJYTwLEw
+        - dj-jf dj:B+5.5 sgf:2023/dj-jf.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/nrKgHvKsRw45wEYqbVMX yt:https://www.youtube.com/watch?v=PYQxFZ7l7e0
+      - - cc-dj cc:B+R sgf:2023/cc-dj.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/E9ztGcX3BporKutAs1jM yt:https://www.youtube.com/watch?v=IkJYjPH7kK0
+        - kh-kc kh:B+R sgf:2023/kh-kc.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/wpgwbk7rX1Ttzob8MEmX yt:https://www.youtube.com/watch?v=gaxDVV-0ZQQ
+        - mm-ls mm:B+5.5 yt:https://www.youtube.com/watch?v=8qlraeBxzLA
+        - jf-mw mw:W+0.5 sgf:2023/jf-mw.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/Zy7eELOOfQ5S2McPBkqJ yt:https://www.youtube.com/watch?v=4MCEI8iwxQQ
+      - - dj-kh kh:W+R sgf:2023/dj-kh.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/DClmsMiqxjFETosRzT81 yt:https://www.youtube.com/watch?v=UpQr3PlO0rs
+        - kc-cc cc:W+15.5 sgf:2023/kc-cc.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/Za4FFDBzav2if0M2apoh yt:https://www.youtube.com/watch?v=vPskY3fnnRw
+        - ls-jf ls:B+0.5 sgf:2023/ls-jf.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/CmlZSLlgcVSaAyaekpsq yt:https://www.youtube.com/watch?v=yIqOJyHcBqs
+        - mw-mm mw:B+R sgf:2023/mw-mm.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/8zUIsxvJibBxgKTCN2DN yt:https://www.youtube.com/watch?v=uV-0ZythZqo
+      - - cc-jf cc:B+R sgf:2023/cc-jf.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/PaE64gruSvrhnHPWQsqz yt:https://www.youtube.com/watch?v=kjCOqUlvVP0
+        - kh-mm kh:B+R sgf:2023/kh-mm.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/lK8CDxbGB43HC3wOgsqE yt:https://www.youtube.com/watch?v=QB5gs9LIcME
+        - kc-ls ls:W+5.5 yt:https://www.youtube.com/watch?v=GDDVmF6SZ84
+        - dj-mw dj:B+R sgf:2023/dj-mw.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/mmGrbGQREBia5xZ6avN9 yt:https://www.youtube.com/watch?v=Ct9SN2E6EkI
+      - - jf-kh kh:W+8.5 sgf:2023/jf-kh.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/4X1XflWJRF3h1jgZJydd yt:https://www.youtube.com/watch?v=mSL5Kf_jfr4
+        - mm-cc cc:W+R sgf:2023/mm-cc.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/EPPiuSduRArlowtGyoN6 yt:https://www.youtube.com/watch?v=h3g2HASOBck
+        - ls-dj dj:W+R yt:https://www.youtube.com/watch?v=monRxXo8BCE
+        - mw-kc mw:B+R yt:https://www.youtube.com/watch?v=jO9qo1DVg7I
+      - - kh-cc kh:B+4.5 sgf:2023/kh-cc.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/Y0tk7E5LDom356ifBETF yt:https://www.youtube.com/watch?v=3n_G7-i0GyM
+        - jf-mm mm:W+R yt:https://www.youtube.com/watch?v=y_tGkcUhOto
+        - dj-kc dj:B+7.5 yt:https://www.youtube.com/watch?v=wlkW1NN0lrA
+        - ls-mw mw:W+R yt:https://www.youtube.com/watch?v=6zw4pUws3Ds

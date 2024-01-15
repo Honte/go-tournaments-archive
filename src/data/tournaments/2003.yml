@@ -1,0 +1,48 @@
+location: Szklary
+start: 2003-11-08
+end: 2003-11-11
+players:
+  jk: Janusz Kraszek 5d
+  kh: Koichiro Habu 4d
+  jl: Jan Lubos 3d
+  ls: Leszek Sołdan 6d
+  al: Aleksandra Lubos 3d
+  jc: Janusz Chłodek 3d
+  rp: Roman Pszonka 4d
+  mr: Michał Rams 3d
+stages:
+  - type: league
+    egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T031108D
+    komi: 6.5
+    breakers:
+      - wins
+      - sodos
+    rounds:
+      - - jl-kh jl
+        - ls-jc ls
+        - al-rp al
+        - mr-jk mr
+      - - jk-jc jk
+        - kh-rp kh
+        - ls-mr ls
+        - al-jl al
+      - - kh-jk kh
+        - jl-mr jl
+        - ls-al ls
+        - rp-jc rp
+      - - jk-al jk
+        - kh-ls kh
+        - jc-jl jc
+        - rp-mr rp
+      - - jk-rp jk
+        - jl-ls jl
+        - al-mr al
+        - jc-kh jc
+      - - jk-jl jk
+        - kh-mr kh
+        - ls-rp ls
+        - al-jc al
+      - - jk-ls jk
+        - kh-al kh
+        - jl-rp jl
+        - jc-mr jc

@@ -1,0 +1,48 @@
+location: Warszawa
+start: 1999-11-10
+end: 1999-11-14
+players:
+  kg: Krzysztof Giedrojć 4d
+  ls: Leszek Sołdan 6d
+  jl: Jan Lubos 4d
+  mb: Michał Bażyński 3d
+  jc: Janusz Chłodek 3d
+  ku: Krzysztof Urtnowski 2d
+  mw: Marcin Wolak 2d
+  ww: Wojciech Wieczorek 3d
+stages:
+  - type: league
+    egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T991111
+    komi: 5.5
+    breakers:
+      - wins
+      - sodos
+    rounds:
+      - - kg-ww kg:B
+        - ls-ku ls:B
+        - jl-mb jl:B
+        - mw-jc mw:W
+      - - kg-mw kg:W
+        - ls-ww ls:W
+        - jl-ku jl:W
+        - mb-jc mb:B
+      - - kg-mb kg:B
+        - ls-mw ls:B
+        - jl-ww jl:B
+        - jc-ku jc:B
+      - - kg-ku kg:W
+        - ls-mb ls:W
+        - jl-mw jl:W
+        - jc-ww jc:W
+      - - kg-jc kg:B
+        - ls-jl ls:B
+        - mb-ku mb:B
+        - ww-mw ww:W
+      - - ls-jc ls:W
+        - jl-kg jl:B
+        - mb-ww mb:W
+        - ku-mw ku:B
+      - - kg-ls kg:W
+        - mb-mw mb:B
+        - jc-jl jc:B
+        - ku-ww ku:W

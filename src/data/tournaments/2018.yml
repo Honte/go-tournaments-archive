@@ -1,0 +1,53 @@
+location: Poznań
+start: 2018-11-08
+end: 2018-11-12
+referee: Grzegorz Sobański
+website: https://mp.go.art.pl/2018
+players:
+  ls: Leszek Sołdan 4d
+  kh: Koichiro Habu 5d
+  mm: Marcin Majka 4d
+  mw: Maksym Wałaszewski 2d
+  dj: Dawid Jurkiewicz 2d
+  ac: Artur Chmielewski 1d
+  jf: Jan Frączak 1d
+  db: Diana Błaszczyk 1k
+stages:
+  - type: league
+    egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T181108B
+    time: 90m + 60s byo
+    komi: 6.5
+    breakers:
+      - wins
+      - sodos
+      - direct
+      - starting
+    rounds:
+      - - ls-db ls:B+R sgf:2018/ls-db.sgf ogs:https://online-go.com/review/352540
+        - kh-jf kh:B+R sgf:2018/kh-jf.sgf ogs:https://online-go.com/review/352537
+        - mm-ac mm:B+R sgf:2018/mm-ac.sgf ogs:https://online-go.com/review/352538
+        - mw-dj dj:W+R sgf:2018/mw-dj.sgf ogs:https://online-go.com/review/352539
+      - - db-kh kh:W+R sgf:2018/db-kh.sgf ogs:https://online-go.com/review/352708
+        - jf-ls ls:W+R sgf:2018/jf-ls.sgf ogs:https://online-go.com/review/352713
+        - ac-mw ac:B+R sgf:2018/ac-mw.sgf ogs:https://online-go.com/review/352709
+        - dj-mm mm:W+R sgf:2018/dj-mm.sgf ogs:https://online-go.com/review/352711
+      - - mm-db mm:B+R sgf:2018/mm-db.sgf ogs:https://online-go.com/review/352759
+        - mw-jf mw:B+R sgf:2018/mw-jf.sgf ogs:https://online-go.com/review/352761
+        - ls-ac ls:B+R sgf:2018/ls-ac.sgf ogs:https://online-go.com/review/352758
+        - kh-dj kh:B+R sgf:2018/kh-dj.sgf ogs:https://online-go.com/review/352760
+      - - db-mw mw:W+R sgf:2018/db-mw.sgf ogs:https://online-go.com/review/352950
+        - jf-mm mm:W+R sgf:2018/jf-mm.sgf ogs:https://online-go.com/review/352951
+        - ac-kh kh:W+R sgf:2018/ac-kh.sgf ogs:https://online-go.com/review/352954
+        - dj-ls dj:B+3.5 sgf:2018/dj-ls.sgf ogs:https://online-go.com/review/352949
+      - - dj-db dj:B+R sgf:2018/dj-db.sgf ogs:https://online-go.com/review/353005
+        - ac-jf jf:W+R sgf:2018/ac-jf.sgf ogs:https://online-go.com/review/352998
+        - ls-mw ls:B+R sgf:2018/ls-mw.sgf ogs:https://online-go.com/review/353002
+        - kh-mm kh:B+R sgf:2018/kh-mm.sgf ogs:https://online-go.com/review/352999
+      - - db-ac ac:W+R sgf:2018/db-ac.sgf ogs:https://online-go.com/review/353171
+        - jf-dj dj:W+2.5 sgf:2018/jf-dj.sgf ogs:https://online-go.com/review/353169
+        - mw-kh kh:W+R sgf:2018/mw-kh.sgf ogs:https://online-go.com/review/353170
+        - mm-ls mm:B+R sgf:2018/mm-ls.sgf ogs:https://online-go.com/review/353168
+      - - jf-db jf:B+R sgf:2018/jf-db.sgf ogs:https://online-go.com/review/353208
+        - dj-ac ac:W+2.5 sgf:2018/dj-ac.sgf ogs:https://online-go.com/review/353209
+        - mm-mw mw:W+4.5 sgf:2018/mm-mw.sgf ogs:https://online-go.com/review/353206
+        - ls-kh kh:W+R sgf:2018/ls-kh.sgf ogs:https://online-go.com/review/353204

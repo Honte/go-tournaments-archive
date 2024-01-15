@@ -1,0 +1,53 @@
+location: Warszawa
+start: 1987-11-26
+end: 1987-11-29
+players:
+  rz: Robert Zabłocki 4d
+  ls: Leszek Sołdan 4d
+  ku: Krzysztof Urtnowski 1d
+  gie: Krzysztof Giedrojć 4d
+  gs: Gerard Szymborski 3d
+  jl: Jan Lubos 3d
+  gg: Grzegorz Grygierzec 2d
+  jr: Jerzy Rybka 1d
+stages:
+  - type: league
+    breakers:
+      - wins
+      - sodos
+      - rank
+    rounds:
+      - - rz-gie rz
+        - ls-jr ls
+        - ku-gg ku
+        - gs-jl gs
+      - - rz-gs rz
+        - ls-ku ls
+        - gie-jl gie
+        - gg-jr gg
+      - - rz-jr rz
+        - ls-gie ls
+        - ku-jl jl
+        - gs-gg gs
+      - - rz-ku ku
+        - ls-gs ls
+        - gie-gg gie
+        - jl-jr jl
+      - - rz-gg rz
+        - ls-jl ls
+        - ku-gie ku
+        - gs-jr gs
+      - - rz-ls rz
+        - ku-gs ku
+        - gie-jr gie
+        - jl-gg gg
+      - - rz-jl rz
+        - ls-gg ls
+        - ku-jr jr
+        - gie-gs gie
+  - type: match
+    games:
+      - rz-ls ls
+      - rz-ls ls
+      - rz-ls rz
+      - rz-ls ls

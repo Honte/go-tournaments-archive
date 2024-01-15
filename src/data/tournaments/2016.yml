@@ -1,0 +1,53 @@
+location: Warszawa
+start: 2016-08-11
+end: 2016-08-14
+referee: Justyna Płatek
+website: https://mp.go.art.pl/2016
+players:
+  ms: Mateusz Surma 1p
+  sf: Stanisław Frejlak 6d
+  kg: Kamil Grabowski 2d
+  kh: Koichiro Habu 5d
+  ls: Leszek Sołdan 4d
+  mm: Marcin Majka 3d
+  gie: Krzysztof Giedrojć 3d
+  mw: Maksym Wałaszewski 1d
+stages:
+  - type: league
+    egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T160811A
+    time: 90m + 60s byo
+    komi: 6.5
+    breakers:
+      - wins
+      - sodos
+      - direct
+      - starting
+    rounds:
+      - - kh-ls kh:B+R sgf:2016/kh-ls.sgf ogs:https://online-go.com/review/177210
+        - kg-mm kg:B+R sgf:2016/kg-mm.sgf ogs:https://online-go.com/review/177212
+        - sf-gie sf:B+29.5 sgf:2016/sf-gie.sgf ogs:https://online-go.com/review/177213
+        - ms-mw ms:B+R sgf:2016/ms-mw.sgf ogs:https://online-go.com/review/177211
+      - - ls-kg ls:B+R sgf:2016/ls-kg.sgf ogs:https://online-go.com/review/177393
+        - mm-kh kh:W+R sgf:2016/mm-kh.sgf ogs:https://online-go.com/review/177392
+        - gie-ms ms:W+22.5 sgf:2016/gie-ms.sgf ogs:https://online-go.com/review/177396
+        - mw-sf sf:W+R sgf:2016/mw-sf.sgf ogs:https://online-go.com/review/177395
+      - - sf-ls ls:W+2.5 sgf:2016/sf-ls.sgf ogs:https://online-go.com/review/177441
+        - ms-mm ms:B+R sgf:2016/ms-mm.sgf ogs:https://online-go.com/review/177440
+        - kh-gie kh:B+R sgf:2016/kh-gie.sgf ogs:https://online-go.com/review/177444
+        - kg-mw mw:W+R sgf:2016/kg-mw.sgf ogs:https://online-go.com/review/177442
+      - - ls-ms ms:W+R sgf:2016/ls-ms.sgf ogs:https://online-go.com/review/177613
+        - mm-sf mm:B+R sgf:2016/mm-sf.sgf ogs:https://online-go.com/review/177614
+        - gie-kg kg:W+5.5 sgf:2016/gie-kg.sgf ogs:https://online-go.com/review/177616
+        - mw-kh kh:W+R sgf:2016/mw-kh.sgf ogs:https://online-go.com/review/177615
+      - - sf-kg sf:B+R sgf:2016/sf-kg.sgf ogs:https://online-go.com/review/177669
+        - ms-kh ms:B+R sgf:2016/ms-kh.sgf ogs:https://online-go.com/review/177670
+        - mm-gie mm:B+R sgf:2016/mm-gie.sgf ogs:https://online-go.com/review/177671
+        - ls-mw ls:B+R sgf:2016/ls-mw.sgf ogs:https://online-go.com/review/177672
+      - - kg-ms ms:W+R sgf:2016/kg-ms.sgf ogs:https://online-go.com/review/177852
+        - kh-sf sf:W+R sgf:2016/kh-sf.sgf ogs:https://online-go.com/review/177851
+        - gie-ls ls:W+R sgf:2016/gie-ls.sgf ogs:https://online-go.com/review/177850
+        - mw-mm mm:W+R sgf:2016/mw-mm.sgf ogs:https://online-go.com/review/177848
+      - - ms-sf ms:B+R sgf:2016/ms-sf.sgf ogs:https://online-go.com/review/177895
+        - kg-kh kh:W+R sgf:2016/kg-kh.sgf ogs:https://online-go.com/review/177899
+        - ls-mm mm:W+R sgf:2016/ls-mm.sgf ogs:https://online-go.com/review/177901
+        - gie-mw mw:W+R sgf:2016/gie-mw.sgf ogs:https://online-go.com/review/177900

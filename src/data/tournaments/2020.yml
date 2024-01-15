@@ -1,0 +1,53 @@
+location: Warszawa / Poznań / Online
+start: 2021-02-18
+end: 2021-02-21
+referee: Marcin Dzieżyć
+website: https://mp.go.art.pl/2020
+players:
+  sf: Stanisław Frejlak 7d
+  ls: Leszek Sołdan 4d
+  mm: Marcin Majka 4d
+  kac: Karol Cieślak 3d
+  fish: Kamil Chwedyna 4d
+  mw: Maksym Wałaszewski 3d
+  pd: Piotr Dyszczyk 1d
+  dj: Dawid Jurkiewicz 3d
+stages:
+  - type: league
+    egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T210218A
+    time: 90m + 60s byo
+    komi: 6.5
+    breakers:
+      - wins
+      - sodos
+      - direct
+      - starting
+    rounds:
+      - - dj-sf sf:W+R sgf:2020/dj-sf.sgf ogs:https://online-go.com/game/31235064
+        - pd-ls ls:W+20.5 sgf:2020/pd-ls.sgf ogs:https://online-go.com/review/619589
+        - mm-mw mm:B+R sgf:2020/mm-mw.sgf ogs:https://online-go.com/game/31235062
+        - fish-kac fish:B+42.5 sgf:2020/fish-kac.sgf ogs:https://online-go.com/game/31234786
+      - - ls-dj ls:B+R sgf:2020/ls-dj.sgf ogs:https://online-go.com/game/31256351
+        - sf-pd sf:B+R sgf:2020/sf-pd.sgf ogs:https://online-go.com/game/31256140
+        - kac-mw mw:W+10.5 sgf:2020/kac-mw.sgf ogs:https://online-go.com/game/31256291
+        - mm-fish mm:B+R sgf:2020/mm-fish.sgf ogs:https://online-go.com/game/31256422
+      - - dj-mm mm:W+21.5 sgf:2020/dj-mm.sgf ogs:https://online-go.com/review/620170
+        - pd-kac kac:W+14.5 sgf:2020/pd-kac.sgf ogs:https://online-go.com/review/620226
+        - mw-sf sf:W+R sgf:2020/mw-sf.sgf ogs:https://online-go.com/game/31263270
+        - fish-ls fish:B+17.5 sgf:2020/fish-ls.sgf ogs:https://online-go.com/game/31263021
+      - - kac-dj dj:W+R sgf:2020/kac-dj.sgf ogs:https://online-go.com/game/31288577
+        - mm-pd mm:B+R sgf:2020/mm-pd.sgf ogs:https://online-go.com/game/31289159
+        - ls-mw ls:B+R sgf:2020/ls-mw.sgf ogs:https://online-go.com/game/31288490
+        - sf-fish sf:B+R sgf:2020/sf-fish.sgf ogs:https://online-go.com/game/31288639
+      - - dj-fish dj:B+4.5 sgf:2020/dj-fish.sgf ogs:https://online-go.com/game/31295995
+        - pd-mw mw:W+R sgf:2020/pd-mw.sgf ogs:https://online-go.com/game/31295947
+        - kac-sf sf:W+31.5 sgf:2020/kac-sf.sgf
+        - mm-ls mm:B+48.5 sgf:2020/mm-ls.sgf ogs:https://online-go.com/game/31295870
+      - - mw-dj dj:W+7.5 sgf:2020/mw-dj.sgf ogs:https://online-go.com/review/621415
+        - fish-pd fish:B+R sgf:2020/fish-pd.sgf ogs:https://online-go.com/game/31319581
+        - ls-kac ls:B+6.5 sgf:2020/ls-kac.sgf ogs:https://online-go.com/review/621465
+        - sf-mm sf:B+R sgf:2020/sf-mm.sgf ogs:https://online-go.com/game/31319444
+      - - dj-pd dj:B+R sgf:2020/dj-pd.sgf ogs:https://online-go.com/game/31325477
+        - mw-fish fish:W+R sgf:2020/mw-fish.sgf ogs:https://online-go.com/game/31325331
+        - kac-mm mm:W+R sgf:2020/kac-mm.sgf ogs:https://online-go.com/game/31325297
+        - ls-sf sf:W+R sgf:2020/ls-sf.sgf ogs:https://online-go.com/review/621544

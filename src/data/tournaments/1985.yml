@@ -1,0 +1,87 @@
+location: Warszawa
+start: 1985-11-23
+end: 1985-11-26
+players:
+  ls: Leszek Sołdan 4d
+  wm: Włodzimierz Malinowski 3d
+  gie: Krzysztof Giedrojć 3d
+  rz: Robert Zabłocki 3d
+  gs: Gerard Szymborski 2d
+  jl: Jan Lubos 3d
+  wg: Waldemar Grzywiński 1d
+  js: Jerzy Sacharewicz 3d
+  as: Andrzej Sanojca 2d
+  kg: Krzysztof Grabowski 2d
+  km: Krzysztof Moszczyński 3d
+  mk: Marek Kopyt 1d
+  ww: Wojciech Woskresiński 3d
+  gg: Grzegorz Grygierzec 1d
+  sm: Stanisław Majerski 1k
+  kk: Katarzyna Koenig 2d
+  kotor: Jerzy Kotorowicz 1k
+  jk: Janusz Kraszek 5d
+stages:
+  - type: ladder-table
+    order:
+      - ls
+      - wm
+      - gie
+      - rz
+      - gs
+      - jl
+      - wg
+      - js
+      - as
+      - kg
+      - km,mk
+      - ww
+      - gg
+      - sm
+      - kk
+      - kotor
+    rounds:
+      - - rz-as rz
+        - wg-as as
+        - gg-kotor gg
+      - - wm-ww wm
+        - rz-km rz
+        - gs-as as
+        - kg-kk kg
+        - mk-gg mk
+        - sm-kotor sm
+      - - wm-kg wm
+        - rz-kk rz
+        - gs-sm gs
+        - jl-mk jl
+        - wg-gg wg
+        - js-as js
+        - km-ww km
+      - - ls-js ls
+        - wm-gie wm
+        - rz-jl rz
+        - gs-km gs
+        - wg-mk wg
+        - as-kg as
+      - - ls-wm ls
+        - gie-js gie
+        - rz-wg rz
+        - jl-as jl
+      - - ls-rz ls
+        - wm-jl wm
+        - gie-gs gie
+      - - ls-gie ls
+        - wm-rz wm
+      - - ls-wm ls
+      - - gie-rz gie
+        - gs-jl gs
+        - wg-js wg
+        - kg-km kg
+        - kg-mk kg
+        - ww-gg ww
+        - ww-sm ww
+        - gg-sm gg
+        - sm-kk sm
+  - type: match
+    games:
+      - jk-ls jk
+      - jk-ls jk

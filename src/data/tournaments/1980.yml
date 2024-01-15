@@ -1,0 +1,36 @@
+start: 1980-10-30
+end: 1980-11-02
+players:
+  jk: Janusz Kraszek 5d
+  km: Krzysztof Moszczyński 3d
+  wm: Włodzimierz Malinowski 1k
+  wg: Włodzimierz Grudziński 2d
+  wd: Włodzimierz Dobosiewicz 3d
+  kz: Katarzyna Żuk-Rybicka 1d
+  js: Jerzy Sacharewicz 2d
+  eg: Emilia Grudzińska 1k
+stages:
+  - type: ladder-table
+    order:
+      - jk
+      - km
+      - wm,wg
+      - wd
+      - kz,js
+      - eg
+    rounds:
+      - - wm-eg wm
+      - - wm-wg wm
+        - kz-eg kz
+      - - km-js km
+        - wm-wd wm
+        - wg-kz wg
+      - - jk-kz jk
+        - km-wm km
+        - wd-js wd
+      - - jk-km jk
+        - wg-wd wg
+      - - jk-wm jk
+        - km-wg km
+      - - jk-km km
+      - - jk-km jk

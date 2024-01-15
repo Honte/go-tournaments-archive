@@ -1,0 +1,30 @@
+start: 1979-10-31
+end: 1979-11-04
+players:
+  jk: Janusz Kraszek 4d
+  km: Krzysztof Moszczyński 2d
+  wd: Włodzimierz Dobosiewicz 3d
+  js: Jerzy Sacharewicz 2d
+  wg: Włodzimierz Grudziński 2d
+  ls: Leszek Sołdan 2d
+stages:
+  - type: league
+    breakers:
+      - wins
+      - sodos
+    rounds:
+      - - jk-wg jk
+        - km-wd wd
+        - js-ls js
+      - - jk-wd jk
+        - km-ls km
+        - js-wg js
+      - - jk-ls jk
+        - km-js km
+        - wd-wg wg
+      - - jk-js jk
+        - km-wg km
+        - wd-ls wd
+      - - jk-km km
+        - wd-js wd
+        - wg-ls wg

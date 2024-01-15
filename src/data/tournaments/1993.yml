@@ -1,0 +1,51 @@
+location: Warszawa
+start: 1994-01
+end: 1994-01
+players:
+  jk: Janusz Kraszek 5d
+  ls: Leszek Sołdan 6d
+  kg: Krzysztof Giedrojć 4d
+  jl: Jan Lubos 3d
+  jc: Janusz Chłodek 2d
+  ww: Wojciech Woskresiński 3d
+  kk: Krzysztof Karczewski 2d
+  jr: Jerzy Rybka 2d
+stages:
+  - type: league
+    breakers:
+      - wins
+      - sodos
+    rounds:
+      - - jk-ww jk
+        - ls-kk ls
+        - kg-jr kg
+        - jl-jc jl
+      - - jk-jr jk
+        - ls-jl ls
+        - kg-ww kg
+        - jc-kk jc
+      - - jk-jc jk
+        - ls-kg ls
+        - jl-kk jl
+        - ww-jr ww
+      - - jk-ls jk
+        - kg-jc kg
+        - jl-jr jl
+        - ww-kk ww
+      - - jk-kk jk
+        - ls-ww ls
+        - kg-jl kg
+        - jc-jr jc
+      - - jk-jl jk
+        - ls-jr ls
+        - kg-kk kg
+        - jc-ww jc
+      - - jk-kg jk
+        - ls-jc ls
+        - jl-ww jl
+        - kk-jr kk
+  - type: match
+    games:
+      - jk-ls ls
+      - jk-ls jk
+      - jk-ls jk

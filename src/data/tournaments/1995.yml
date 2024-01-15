@@ -1,0 +1,51 @@
+location: Wodzisław Śląski
+start: 1995-12-14
+end: 1995-12-19
+players:
+  ls: Leszek Sołdan 5d
+  mf: Mariusz Ferenc 4d
+  jl: Jan Lubos 3d
+  kg: Krzysztof Giedrojć 4d
+  tp: Tomasz Paruszewski 2d
+  jc: Janusz Chłodek 2d
+  jf: Jan Frejlak 2d
+  ww: Wojciech Wieczorek 1k
+stages:
+  - type: league
+    breakers:
+      - wins
+      - sodos
+    rounds:
+      - - ls-jc ls
+        - mf-ww mf
+        - jl-tp jl
+        - kg-jf kg
+      - - ls-jf ls
+        - mf-tp mf
+        - jl-ww jl
+        - kg-jc kg
+      - - ls-tp ls
+        - mf-jc mf
+        - jl-jf jl
+        - kg-ww kg
+      - - ls-ww ls
+        - mf-jf mf
+        - jl-jc jl
+        - tp-kg tp
+      - - ls-mf ls
+        - jl-kg jl
+        - tp-jf tp
+        - jc-ww jc
+      - - ls-kg ls
+        - mf-jl mf
+        - tp-ww tp
+        - jf-jc jf
+      - - ls-jl ls
+        - kg-mf kg
+        - jc-tp jc
+        - jf-ww jf
+  - type: match
+    egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T960128A
+    games:
+      - ls-mf ls:W
+      - ls-mf ls:B

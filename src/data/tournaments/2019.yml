@@ -1,0 +1,53 @@
+location: Poznań
+start: 2019-11-08
+end: 2019-11-11
+referee: Grzegorz Sobański
+website: https://mp.go.art.pl/2019
+players:
+  kh: Koichiro Habu 5d
+  mm: Marcin Majka 4d
+  dj: Dawid Jurkiewicz 2d
+  ls: Leszek Sołdan 4d
+  sf: Stanisław Frejlak 7d
+  mw: Maksym Wałaszewski 3d
+  kc: Karol Cieślak 3d
+  rj: Radosław Jachym 3d
+stages:
+  - type: league
+    egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T191108A
+    time: 90m + 60s byo
+    komi: 6.5
+    breakers:
+      - wins
+      - sodos
+      - direct
+      - starting
+    rounds:
+      - - kh-rj kh:B+23.5 sgf:2019/kh-rj.sgf ogs:https://online-go.com/review/424087
+        - mm-kc mm:B+19.5 sgf:2019/mm-kc.sgf ogs:https://online-go.com/review/424088
+        - dj-mw dj:B+R sgf:2019/dj-mw.sgf ogs:https://online-go.com/review/424086
+        - ls-sf sf:W+R sgf:2019/ls-sf.sgf ogs:https://online-go.com/review/424090
+      - - rj-mm mm:W+20.5 sgf:2019/rj-mm.sgf ogs:https://online-go.com/review/424209
+        - kc-kh kh:W+R sgf:2019/kc-kh.sgf ogs:https://online-go.com/review/424213
+        - mw-ls ls:W+10.5 sgf:2019/mw-ls.sgf ogs:https://online-go.com/review/424207
+        - sf-dj sf:B+R sgf:2019/sf-dj.sgf ogs:https://online-go.com/review/424208
+      - - dj-rj dj:B+R sgf:2019/dj-rj.sgf ogs:https://online-go.com/review/424249
+        - ls-kc ls:B+R sgf:2019/ls-kc.sgf ogs:https://online-go.com/review/424247
+        - kh-mw kh:B+R sgf:2019/kh-mw.sgf ogs:https://online-go.com/review/424246
+        - mm-sf sf:W+R sgf:2019/mm-sf.sgf ogs:https://online-go.com/review/424248
+      - - rj-ls ls:W+6.5 sgf:2019/rj-ls.sgf ogs:https://online-go.com/review/424321
+        - kc-dj dj:W+R sgf:2019/kc-dj.sgf ogs:https://online-go.com/review/424317
+        - mw-mm mm:W+R sgf:2019/mw-mm.sgf ogs:https://online-go.com/review/424319
+        - sf-kh sf:B+R sgf:2019/sf-kh.sgf ogs:https://online-go.com/review/424312
+      - - sf-rj sf:B+R sgf:2019/sf-rj.sgf ogs:https://online-go.com/review/424459
+        - mw-kc kc:W+R sgf:2019/mw-kc.sgf ogs:https://online-go.com/review/424458
+        - kh-ls kh:B+3.5 sgf:2019/kh-ls.sgf ogs:https://online-go.com/review/424465
+        - mm-dj mm:B+R sgf:2019/mm-dj.sgf ogs:https://online-go.com/review/424457
+      - - rj-mw mw:W+R sgf:2019/rj-mw.sgf ogs:https://online-go.com/review/424639
+        - kc-sf sf:W+31.5 sgf:2019/kc-sf.sgf ogs:https://online-go.com/review/424549
+        - ls-mm ls:B+R sgf:2019/ls-mm.sgf ogs:https://online-go.com/review/424638
+        - dj-kh kh:W+R sgf:2019/dj-kh.sgf ogs:https://online-go.com/review/424556
+      - - kc-rj rj:W+R sgf:2019/kc-rj.sgf ogs:https://online-go.com/review/424675
+        - sf-mw sf:B+R sgf:2019/sf-mw.sgf ogs:https://online-go.com/review/424672
+        - dj-ls ls:W+8.5 sgf:2019/dj-ls.sgf ogs:https://online-go.com/review/424674
+        - kh-mm kh:B+R sgf:2019/kh-mm.sgf ogs:https://online-go.com/review/424673

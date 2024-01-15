@@ -1,0 +1,54 @@
+location: Wodzisław Śląski
+start: 1998-11-06
+end: 1998-11-10
+players:
+  ls: Leszek Sołdan 6d
+  kg: Krzysztof Giedrojć 5d
+  jc: Janusz Chłodek 3d
+  jl: Jan Lubos 5d
+  ku: Krzysztof Urtnowski 2d
+  kgr: Krzysztof Grabowski 3d
+  mf: Mariusz Ferenc 4d
+  dt: Dariusz Targosz 2d
+stages:
+  - type: league
+    egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T981106
+    komi: 5.5
+    breakers:
+      - wins
+      - sodos
+    rounds:
+      - - ls-dt ls
+        - kg-ku kg
+        - jc-mf jc
+        - jl-kgr jl
+      - - ls-kgr ls
+        - kg-jc kg
+        - jl-ku jl
+        - mf-dt mf
+      - - ls-ku ls
+        - kg-dt kg
+        - jc-jl jc
+        - kgr-mf kgr
+      - - ls-jc ls
+        - kg-kgr kg
+        - jl-dt jl
+        - ku-mf ku
+      - - ls-mf ls
+        - kg-jl kg
+        - kgr-ku kgr
+        - dt-jc dt
+      - - ls-kg ls
+        - jc-kgr jc
+        - ku-dt ku
+        - mf-jl mf
+      - - ls-jl ls
+        - kg-mf kg
+        - ku-jc ku
+        - kgr-dt kgr
+  - type: match
+    egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T990220A
+    komi: 5.5
+    games:
+      - ls-kg ls:W
+      - kg-ls ls:B

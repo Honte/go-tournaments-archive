@@ -1,0 +1,48 @@
+location: Olsztyn
+start: 2013-12-05
+end: 2013-12-08
+players:
+  mm: Marcin Majka 3d
+  mis: Majus Misiak 2d
+  sp: Sebastian Pawlaczyk 3d
+  sf: Stanislaw Frejlak 4d
+  kc: Kamil Chwedyna 4d
+  cc: Cezary Czernecki 3d
+  ak: Agnieszka Kacprzyk 2d
+  kg: Krzysztof Giedrojc 4d
+stages:
+  - type: league
+    egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T131205A
+    komi: 6.5
+    breakers:
+      - wins
+      - sodos
+    rounds:
+      - - mis-kc mis:W+4.5 sgf:2013/mis-kc.sgf
+        - sp-mm sp:W+7.5 sgf:2013/sp-mm.sgf
+        - sf-cc sf:B+48.5 sgf:2013/sf-cc.sgf
+        - ak-kg ak:W+4.5 sgf:2013/ak-kg.sgf
+      - - mm-mis mm:W+8.5 sgf:2013/mm-mis.sgf
+        - sf-ak sf:W+R sgf:2013/sf-ak.sgf
+        - kc-sp kc:W+R sgf:2013/kc-sp.sgf
+        - kg-cc kg:W+29.5 sgf:2013/kg-cc.sgf
+      - - mm-ak mm:B+R sgf:2013/mm-ak.sgf
+        - mis-sf mis:W+R sgf:2013/mis-sf.sgf
+        - sp-kg sp:W+5.5 sgf:2013/sp-kg.sgf
+        - cc-kc cc:W+R sgf:2013/cc-kc.sgf
+      - - mm-cc mm:W+16.5 sgf:2013/mm-cc.sgf
+        - mis-kg mis:B+3.5 sgf:2013/mis-kg.sgf
+        - sp-sf sp:B+0.5 sgf:2013/sp-sf.sgf
+        - kc-ak kc:W+R sgf:2013/kc-ak.sgf
+      - - mm-sf mm:W+14.5 sgf:2013/mm-sf.sgf
+        - mis-ak mis:B+R sgf:2013/mis-ak.sgf
+        - sp-cc sp:B+R sgf:2013/sp-cc.sgf
+        - kc-kg kc:W+R sgf:2013/kc-kg.sgf
+      - - mm-kg mm:B+9.5 sgf:2013/mm-kg.sgf
+        - mis-cc mis:W+6.5 sgf:2013/mis-cc.sgf
+        - sf-kc sf:W+R sgf:2013/sf-kc.sgf
+        - ak-sp ak:B+1.5 sgf:2013/ak-sp.sgf
+      - - mm-kc mm:W+3.5 sgf:2013/mm-kc.sgf
+        - mis-sp mis:W+18.5 sgf:2013/mis-sp.sgf
+        - sf-kg sf:B+21.5 sgf:2013/sf-kg.sgf
+        - cc-ak cc:W+R sgf:2013/cc-ak.sgf

@@ -1,0 +1,48 @@
+location: Warszawa
+start: 2001-11-08
+end: 2001-11-11
+players:
+  ls: Leszek Sołdan 5d
+  jl: Jan Lubos 4d
+  jk: Janusz Kraszek 5d
+  kg: Krzysztof Giedrojć 4d
+  ww: Wojciech Woskresiński 2d
+  mb: Michał Bażyński 4d
+  jc: Janusz Chłodek 3d
+  mw: Marcin Wolak 2d
+stages:
+  - type: league
+    egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T011108
+    komi: 5.5
+    breakers:
+      - wins
+      - sodos
+    rounds:
+      - - jl-mb jl
+        - jk-ls jk
+        - kg-mw kg
+        - jc-ww jc
+      - - ls-mw ls
+        - jl-jc jl
+        - kg-jk kg
+        - mb-ww mb
+      - - ls-jl ls
+        - jk-mb jk
+        - ww-kg ww
+        - mw-jc mw
+      - - jk-jc jk
+        - kg-jl kg
+        - ww-ls ww
+        - mw-mb mw
+      - - ls-jc ls
+        - jl-mw jl
+        - jk-ww jk
+        - mb-kg mb
+      - - ls-mb ls
+        - jl-jk jl
+        - kg-jc kg
+        - ww-mw ww
+      - - ls-kg ls
+        - jl-ww jl
+        - jk-mw jk
+        - jc-mb jc

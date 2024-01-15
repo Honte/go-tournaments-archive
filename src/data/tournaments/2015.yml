@@ -1,0 +1,50 @@
+location: Warszawa
+start: 2016-01-07
+end: 2016-01-10
+referee: Marek Gutkowski
+website: https://mp.go.art.pl/2015
+players:
+  ms: Mateusz Surma 1p
+  sp: Sebastian Pawlaczyk 4d
+  kh: Koichiro Habu 5d
+  sf: Stanisław Frejlak 5d
+  ls: Leszek Sołdan 4d
+  kg: Kamil Grabowski 2d
+  kc: Karol Cieślak 1k
+  gie: Krzysztof Giedrojć 3d
+stages:
+  - type: league
+    breakers:
+      - wins
+      - sodos
+      - direct
+      - starting
+    rounds:
+      - - sf-ls sf:B+R sgf:2015/sf-ls.sgf
+        - kg-kh kg:B+R sgf:2015/kg-kh.sgf
+        - sp-kc sp:B+R sgf:2015/sp-kc.sgf
+        - ms-gie ms:B+R sgf:2015/ms-gie.sgf
+      - - ls-kh kh:W+17.5 sgf:2015/ls-kh.sgf
+        - kg-sf sf:W+R sgf:2015/kg-sf.sgf
+        - kc-ms ms:W+25.5 sgf:2015/kc-ms.sgf
+        - gie-sp gie:B+17.5 sgf:2015/gie-sp.sgf
+      - - sp-ls sp:B+R sgf:2015/sp-ls.sgf
+        - ms-kg ms:B+R sgf:2015/ms-kg.sgf
+        - sf-kc sf:B+R sgf:2015/sf-kc.sgf
+        - kh-gie kh:B+7.5 sgf:2015/kh-gie.sgf
+      - - ls-ms ms:W+R sgf:2015/ls-ms.sgf
+        - kg-sp kg:B+14.5 sgf:2015/kg-sp.sgf
+        - kc-kh kc:B+R sgf:2015/kc-kh.sgf
+        - gie-sf sf:W+R sgf:2015/gie-sf.sgf
+      - - sp-kh kh:W+R sgf:2015/sp-kh.sgf
+        - ms-sf ms:B+R sgf:2015/ms-sf.sgf
+        - kg-kc kg:B+R sgf:2015/kg-kc.sgf
+        - ls-gie ls:B+6.5 sgf:2015/ls-gie.sgf
+      - - kh-ms ms:W+R sgf:2015/kh-ms.sgf
+        - sf-sp sf:B+9.5 sgf:2015/sf-sp.sgf
+        - kc-ls ls:W+R sgf:2015/kc-ls.sgf
+        - gie-kg gie:B+7.5 sgf:2015/gie-kg.sgf
+      - - ms-sp ms:B+R sgf:2015/ms-sp.sgf
+        - kh-sf sf:W+19.5 sgf:2015/kh-sf.sgf
+        - ls-kg kg:W+22.5 sgf:2015/ls-kg.sgf
+        - kc-gie gie:W+2.5 sgf:2015/kc-gie.sgf

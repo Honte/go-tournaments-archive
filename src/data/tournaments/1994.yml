@@ -1,0 +1,50 @@
+location: Warszawa
+start: 1995-01-26
+end: 1995-01-29
+players:
+  ls: Leszek Sołdan 6d
+  jk: Janusz Kraszek 5d
+  jl: Jan Lubos 3d
+  kg: Krzysztof Giedrojć 4d
+  ww: Wojciech Woskresiński 3d
+  ld: Leszek Dziumowicz 1d
+  kgr: Krzysztof Grabowski 2d
+  tp: Tomasz Paruszewski 2d
+stages:
+  - type: league
+    breakers:
+      - wins
+      - sodos
+    rounds:
+      - - ls-ld ls
+        - jk-kgr jk
+        - jl-ww jl
+        - kg-tp kg
+      - - ls-kgr ls
+        - jk-ld jk
+        - jl-tp jl
+        - ww-kg ww
+      - - ls-ww ls
+        - jk-tp jk
+        - jl-ld jl
+        - kgr-kg kgr
+      - - ls-tp ls
+        - jk-ww jk
+        - jl-kgr jl
+        - kg-ld kg
+      - - ls-kg ls
+        - jk-jl jk
+        - ww-kgr ww
+        - ld-tp ld
+      - - ls-jl ls
+        - jk-kg jk
+        - ld-ww ld
+        - kgr-tp kgr
+      - - ls-jk ls
+        - kg-jl kg
+        - ww-tp ww
+        - ld-kgr ld
+  - type: match
+    games:
+      - ls-jk ls
+      - ls-jk ls

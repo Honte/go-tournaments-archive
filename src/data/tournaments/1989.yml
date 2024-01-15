@@ -1,0 +1,52 @@
+location: Warszawa
+start: 1989-11-23
+end: 1989-11-26
+players:
+  jk: Janusz Kraszek 5d
+  ls: Leszek Sołdan 5d
+  gie: Krzysztof Giedrojć 4d
+  mf: Mariusz Ferenc 1d
+  rz: Robert Zabłocki 3d
+  rp: Roman Pozaroszczyk 1d
+  ww: Wojciech Woskresiński 3d
+  kk: Krzysztof Karczewski 1d
+stages:
+  - type: league
+    breakers:
+      - wins
+      - sodos
+      - direct
+    rounds:
+      - - jk-ww jk
+        - ls-mf ls
+        - gie-rz gie
+        - rp-kk rp
+      - - jk-mf jk
+        - ls-ww ls
+        - gie-rp gie
+        - rz-kk rz
+      - - jk-kk jk
+        - ls-gie ls
+        - mf-rz mf
+        - rp-ww rp
+      - - jk-gie jk
+        - ls-kk ls
+        - mf-rp rp
+        - rz-ww rz
+      - - jk-rz jk
+        - ls-rp ls
+        - gie-ww gie
+        - mf-kk mf
+      - - jk-rp jk
+        - ls-rz ls
+        - gie-mf mf
+        - ww-kk ww
+      - - jk-ls jk
+        - gie-kk gie
+        - mf-ww ww
+        - rz-rp rz
+  - type: match
+    games:
+      - jk-ls jk
+      - jk-ls ls
+      - jk-ls jk

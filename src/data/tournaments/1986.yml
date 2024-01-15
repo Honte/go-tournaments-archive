@@ -1,0 +1,52 @@
+location: Warszawa
+start: 1986-11-13
+end: 1986-11-16
+players:
+  ls: Leszek Sołdan 4d
+  jk: Janusz Kraszek 5d
+  gg: Grzegorz Grygierzec 2d
+  rz: Robert Zabłocki 4d
+  ww: Wojciech Woskresiński 3d
+  gie: Krzysztof Giedrojć 4d
+  gs: Gerard Szymborski 3d
+  wm: Włodzimierz Malinowski 3d
+stages:
+  - type: league
+    breakers:
+      - wins
+      - sodos
+      - rank
+    rounds:
+      - - ls-gg gg
+        - jk-wm jk
+        - rz-ww rz
+        - gie-gs gs
+      - - ls-wm ls
+        - jk-gg jk
+        - rz-gs gs
+        - ww-gie gie
+      - - ls-gs ls
+        - jk-ww jk
+        - gg-gie gg
+        - rz-wm rz
+      - - ls-ww ls
+        - jk-gs jk
+        - gg-rz rz
+        - gie-wm gie
+      - - ls-rz ls
+        - jk-gie jk
+        - gg-ww ww
+        - gs-wm gs
+      - - ls-gie ls
+        - jk-rz jk
+        - gg-gs gg
+        - ww-wm ww
+      - - ls-jk ls
+        - gg-wm gg
+        - rz-gie gie
+        - ww-gs ww
+  - type: match
+    games:
+      - jk-ls jk
+      - jk-ls jk
+      - jk-ls jk

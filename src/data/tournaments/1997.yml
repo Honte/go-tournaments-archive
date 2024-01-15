@@ -1,0 +1,46 @@
+location: Wodzisław Śląski
+start: 1997-11-08
+end: 1997-11-11
+players:
+  ls: Leszek Sołdan 6d
+  jl: Jan Lubos 4d
+  kg: Krzysztof Giedrojć 4d
+  mf: Mariusz Ferenc 4d
+  kgr: Krzysztof Grabowski 2d
+  dt: Dariusz Targosz 2d
+  jc: Janusz Chłodek 3d
+stages:
+  - type: league
+    egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T971108A
+    komi: 5.5
+    breakers:
+      - wins
+      - sodos
+    rounds:
+      - - jl-kg jl
+        - mf-dt mf
+        - kgr-jc kgr
+      - - ls-kgr ls
+        - kg-mf kg
+        - dt-jc dt
+      - - ls-dt ls
+        - jl-kgr jl
+        - kg-jc kg
+      - - ls-kg ls
+        - jl-dt jl
+        - mf-kgr mf
+      - - ls-jl ls
+        - mf-jc mf
+        - kgr-dt kgr
+      - - ls-mf ls
+        - jl-jc jl
+        - kg-kgr kg
+      - - ls-jc ls
+        - jl-mf jl
+        - kg-dt kg
+  - type: match
+    egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T971129E
+    komi: 5.5
+    games:
+      - jl-ls ls:W
+      - ls-jl ls:B

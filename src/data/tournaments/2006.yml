@@ -1,0 +1,49 @@
+location: Wisła
+start: 2006-11-09
+end: 2006-11-11
+players:
+  kh: Koichiro Habu 4d
+  ls: Leszek Sołdan 5d
+  mb: Michał Bażyński 4d
+  kg: Krzysztof Giedrojć 4d
+  pc: Paweł Celejewski 4d
+  kc: Kamil Chwedyna 3d
+  mk: Marek Kamiński 1d
+  ts: Tomasz Ślązok 1d
+stages:
+  - type: league
+    egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T061109A
+    komi: 6.5
+    breakers:
+      - wins
+      - sodos
+      - starting
+    rounds:
+      - - ls-kc ls
+        - mb-mk mb
+        - kg-pc kg
+        - kh-ts kh
+      - - ls-ts ls
+        - mb-pc mb
+        - kg-mk kg
+        - kc-kh kc
+      - - ls-pc ls
+        - mb-ts mb
+        - kg-kc kg
+        - kh-mk kh
+      - - ls-mk ls
+        - kg-ts kg
+        - pc-kh pc
+        - kc-mb kc
+      - - ls-mb ls
+        - pc-ts pc
+        - kh-kg kh
+        - mk-kc mk
+      - - ls-kg ls
+        - mb-kh mb
+        - pc-kc pc
+        - mk-ts mk
+      - - ls-kh ls
+        - mb-kg mb
+        - pc-mk pc
+        - kc-ts kc

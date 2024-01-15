@@ -1,0 +1,52 @@
+location: Warszawa
+start: 1992-11-05
+end: 1992-11-08
+players:
+  kg: Krzysztof Giedrojć 4d
+  jk: Janusz Kraszek 5d
+  ww: Wojciech Woskresiński 3d
+  kk: Krzysztof Karczewski 1d
+  tp: Tomasz Paruszewski 1d
+  gg: Grzegorz Grygierzec 2d
+  jl: Jan Lubos 3d
+  mf: Mariusz Ferenc 3d
+stages:
+  - type: league
+    breakers:
+      - wins
+      - sodos
+    rounds:
+      - - kg-tp kg
+        - jk-mf jk
+        - ww-kk ww
+        - jl-gg jl
+      - - kg-gg kg
+        - jk-ww jk
+        - kk-mf kk
+        - tp-jl tp
+      - - kg-jk kg
+        - ww-gg ww
+        - kk-jl kk
+        - tp-mf tp
+      - - kg-kk kg
+        - jk-jl jk
+        - ww-tp ww
+        - gg-mf gg
+      - - kg-ww kg
+        - jk-gg jk
+        - kk-tp kk
+        - jl-mf jl
+      - - kg-mf kg
+        - jk-tp jk
+        - ww-jl ww
+        - gg-kk gg
+      - - kg-jl kg
+        - jk-kk jk
+        - ww-mf ww
+        - tp-gg tp
+  - type: match
+    games:
+      - kg-jk kg
+      - kg-jk jk
+      - kg-jk jk
+      - kg-jk kg

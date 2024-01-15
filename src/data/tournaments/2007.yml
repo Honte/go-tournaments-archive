@@ -1,0 +1,49 @@
+location: Zabrze
+start: 2007-11-22
+end: 2007-11-25
+players:
+  ls: Leszek Sołdan 5d
+  mb: Michał Bażyński 4d
+  kg: Krzysztof Giedrojć 4d
+  pc: Paweł Celejewski 3d
+  rj: Radosław Jachym 4d
+  ms: Mateusz Surma 3d
+  jl: Jan Lubos 3d
+  kc: Kamil Chwedyna 3d
+stages:
+  - type: league
+    egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T071122A
+    komi: 6.5
+    breakers:
+      - wins
+      - sodos
+      - starting
+    rounds:
+      - - kc-ls kc
+        - pc-rj pc
+        - mb-jl mb
+        - kg-ms kg
+      - - kc-mb kc
+        - ls-jl ls
+        - ms-pc ms
+        - kg-rj kg
+      - - kc-kg kc
+        - ls-ms ls
+        - pc-jl pc
+        - mb-rj mb
+      - - kc-pc kc
+        - ms-mb ms
+        - jl-kg jl
+        - rj-ls rj
+      - - kc-rj kc
+        - ls-pc ls
+        - kg-mb kg
+        - jl-ms jl
+      - - kc-ms kc
+        - ls-kg ls
+        - pc-mb pc
+        - jl-rj jl
+      - - kc-jl kc
+        - pc-kg pc
+        - mb-ls mb
+        - ms-rj ms
