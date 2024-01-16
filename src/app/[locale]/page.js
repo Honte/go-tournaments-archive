@@ -11,7 +11,7 @@ export default async function Home({ params: { locale }}) {
       <div className="grid grid-cols-pgc my-3 gap-1 items-center">
         {tournaments.map(({ year, players }) => (
           <Fragment key={year}>
-            <Link href={`/${locale}/${year}`} className="text-xl font-bold text-pgc-primary underline hover:text-pgc-hover">{year}</Link>
+            <Link href={`/${locale}/${year}`} className="sm:text-xl font-bold text-pgc-primary underline hover:text-pgc-hover">{year}</Link>
             {Object.values(players).slice(0, 3).map((winner) => <div key={winner.id} className="text-center">{winner.name}</div>)}
           </Fragment>
         ))}

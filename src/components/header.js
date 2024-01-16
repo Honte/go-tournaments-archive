@@ -8,7 +8,7 @@ export async function Header({ locale }) {
 
   return (
     <header className="bg-pgc-dark text-pgc-light flex">
-      <div className="container mx-auto flex h-16 items-center gap-3 md:gap-6 px-2">
+      <div className="container mx-auto flex h-16 items-center sm:justify-center gap-3 md:gap-6 px-2">
         {/*<div className="p-2 bg-pgc-light rounded-md text-pgc-dark cursor-pointer hover:bg-pgc-hover">*/}
         {/*  <HiBars3/>*/}
         {/*</div>*/}

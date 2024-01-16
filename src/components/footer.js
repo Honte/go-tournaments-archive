@@ -1,7 +1,14 @@
+import { ExternalLink } from '@/components/externalLink';
+
+const START = 2024;
+
 export function Footer({ locale }) {
+  const year = new Date().getFullYear()
+  const copyright = year === START ? START : `${START} - ${year}`
+
   return (
-    <footer className="flex justify-center bg-gray-400 py-3 mt-3">
-      <p>Copyright &copy; 2023 - Honte</p>
+    <footer className="flex justify-center bg-gray-400 py-3 mt-3 text-pgc-light">
+      <p><ExternalLink url="https://honte.pl" className="text-pgc-light hover:text-pgc-light">Honte</ExternalLink> &copy; {copyright}</p>
     </footer>
   )
 }

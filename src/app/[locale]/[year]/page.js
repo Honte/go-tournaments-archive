@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import { YearsNavigation } from '@/components/yearsNavigation';
 import { getTournaments } from '@/data';
 import { League } from '@/components/league';
+import { TournamentDetails } from '@/components/tournamentDetails';
 
 export default async function Edition({ params: { year, locale }}) {
   if (!year.match(/^\d{4}$/)) {
@@ -17,17 +18,7 @@ export default async function Edition({ params: { year, locale }}) {
       <YearsNavigation locale={locale} years={tournaments.map((t) => t.id)} current={Number(year)} />
 
       <div className="sm:flex sm:gap-8 my-4">
-        <div className="flex-1">
-          <h2 className="text-xl font-bold pb-1 my-2 border-b-pgc-dark border-b-2">Informacje</h2>
-          <dl className="grid grid-cols-2">
-            {Object.entries(details).map(([label, response]) => (
-              <>
-                <dt className="font-bold after:content-[':']">{label}</dt>
-                <dd>{response}</dd>
-              </>
-            ))}
-          </dl>
-        </div>
+        <TournamentDetails tournament={tournament} locale={locale}/>
 
         <div className="flex-1">
           <h2 className="text-xl font-bold pb-1 my-2 border-b-pgc-dark border-b-2">Medaliści</h2>

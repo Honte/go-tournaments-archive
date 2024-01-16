@@ -13,5 +13,43 @@
       "anchor": "Statystyki",
       "title": "Zbiorcze statystyki z wszystkich lat"
     }
+  },
+  "details": {
+    "header": "Informacje",
+    "location": "Miejsce",
+    "start": "Start",
+    "end": "Koniec",
+    "website": "Strona WWW",
+    "goToWebsite": "Przejdź na stronę MP %{year}",
+    "referee": "Sędzia"
+  },
+  "stage": {
+    "details": "Szczegóły",
+    "league": "Liga",
+    "egd": "Baza EGD",
+    "goToEGD": "Przejdź na stronę turnieju w bazie European Go Database",
+    "breakers": "Breakery",
+    "komi": "Komi",
+    "time": "Czas"
+  },
+  "breakers": {
+    "wins": "Liczba zwycięstw",
+    "sos": "SOS",
+    "sodos": "SODOS",
+    "sosos": "SOSOS",
+    "direct": "Bezpośredni pojedynek",
+    "starting": "Pozycja startowa",
+    "rank": "Ranking",
+    "descriptions": {
+      "sos": "Suma punktów zdobytych przez przeciwników.",
+      "sodos": "Suma punktów zdobytych przez pokonanych przeciwników.",
+      "sosos": "Suma SOS-ów zdobytych przez przeciwników, czyli suma sum ich punktów."
+    }
+  },
+  "table": {
+    "place": "Miejsce",
+    "name": "Zawodnik",
+    "rank": "Siła",
+    "round": "Runda %{round}"
   }
 }
