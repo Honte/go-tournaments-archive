@@ -21,7 +21,8 @@
     "end": "Koniec",
     "website": "Strona WWW",
     "goToWebsite": "Przejdź na stronę MP %{year}",
-    "referee": "Sędzia"
+    "referee": "Sędzia",
+    "awarded": "Medaliści"
   },
   "stage": {
     "details": "Szczegóły",

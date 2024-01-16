@@ -11,15 +11,11 @@ export async function TournamentDetails({ tournament, locale }) {
   }
 
   if (tournament.start) {
-    details[t('details.start')] = new Date(tournament.start).toLocaleDateString(locale, {
-      dateStyle: 'full'
-    })
+    details[t('details.start')] = formatDate(tournament.start, locale)
   }
 
   if (tournament.end) {
-    details[t('details.end')] = new Date(tournament.end).toLocaleDateString(locale, {
-      dateStyle: 'full'
-    })
+    details[t('details.end')] = formatDate(tournament.end, locale)
   }
 
   if (tournament.website) {
@@ -36,4 +32,12 @@ export async function TournamentDetails({ tournament, locale }) {
       <Details details={details}/>
     </div>
   );
+}
+
+function formatDate(date, locale) {
+  return new Date(date).toLocaleDateString(locale, {
+    day: date.length > 7 ? 'numeric' : undefined,
+    month: 'long',
+    year: 'numeric'
+  })
 }
