@@ -10,6 +10,10 @@ players:
   ww: Wojciech Wieczorek 3d
   rz: Robert Zabłocki 3d
   gs: Gerard Szymborski 3d
+top:
+  - ls
+  - jk
+  - rp
 stages:
   - type: league
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T021205

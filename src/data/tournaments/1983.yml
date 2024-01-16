@@ -17,7 +17,11 @@ players:
   gie: Krzysztof Giedrojć 2d
   rz: Ryszard Zygowski 1d
   sm: Stanisław Majerski 1k
-  jk: Janusz Kraszek 5d
+  jk: Janusz Kraszek 6d
+top:
+  - jk
+  - ls
+  - wm
 stages:
   - type: ladder-table
     order:

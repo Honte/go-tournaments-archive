@@ -10,6 +10,10 @@ players:
   ww: Wojciech Woskresiński 3d
   kk: Krzysztof Karczewski 2d
   jr: Jerzy Rybka 2d
+top:
+  - jk
+  - ls
+  - kg
 stages:
   - type: league
     breakers:

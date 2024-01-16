@@ -12,6 +12,10 @@ players:
   dj: Dawid Jurkiewicz 1d
   kc: Karol Cieślak 1d
   mw: Maksym Wałaszewski 2d
+top:
+  - sf
+  - ls
+  - kh
 stages:
   - type: league
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T171207A

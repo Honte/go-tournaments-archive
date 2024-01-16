@@ -8,6 +8,10 @@ players:
   rp: Roman Pozaroszczyk 1k
   ku: Krzysztof Urtnowski 1d
   wg: Włodzimierz Grudziński 1d
+top:
+  - jk
+  - ls
+  - rz
 stages:
   - type: league
     breakers:

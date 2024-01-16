@@ -12,6 +12,10 @@ players:
   kc: Karol Cieślak 3d
   ls: Leszek Sołdan 4d
   mw: Maksym Wałaszewski 3d
+top:
+  - kh
+  - cc
+  - dj
 stages:
   - type: league
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T231109A

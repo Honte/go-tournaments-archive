@@ -12,6 +12,10 @@ players:
   cc: Cezary Czernecki 4d
   mw: Maksym Wałaszewski 3d
   pd: Piotr Dyszczyk 1d
+top:
+  - sf
+  - ls
+  - cc
 stages:
   - type: league
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T211111A

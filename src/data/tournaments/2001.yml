@@ -10,6 +10,10 @@ players:
   mb: Michał Bażyński 4d
   jc: Janusz Chłodek 3d
   mw: Marcin Wolak 2d
+top:
+  - ls
+  - jl
+  - jk
 stages:
   - type: league
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T011108

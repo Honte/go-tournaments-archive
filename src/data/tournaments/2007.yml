@@ -10,6 +10,10 @@ players:
   ms: Mateusz Surma 3d
   jl: Jan Lubos 3d
   kc: Kamil Chwedyna 3d
+top:
+  - kc
+  - ls
+  - pc
 stages:
   - type: league
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T071122A

@@ -10,6 +10,10 @@ players:
   gs: Gerard Szymborski 3d
   wm: Włodzimierz Malinowski 2d
   dt: Dariusz Targosz 1d
+top:
+  - ls
+  - jc
+  - mf
 stages:
   - type: league
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T961108

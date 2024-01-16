@@ -11,6 +11,10 @@ players:
   js: Jakub Straszewski 1d
   ak: Arkadiusz Kindziuk 1d
   cc: Cezary Czernecki 1d
+top:
+  - ls
+  - kc
+  - kg
 stages:
   - type: league
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T101125A

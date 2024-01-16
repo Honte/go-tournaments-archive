@@ -11,6 +11,10 @@ players:
   ml: Maciej Lubiński 1d
   ku: Krzysztof Urtnowski 1d
   ww: Wojciech Woskresiński 1d
+top:
+  - ls
+  - kc
+  - rj
 stages:
   - type: league
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T091126B

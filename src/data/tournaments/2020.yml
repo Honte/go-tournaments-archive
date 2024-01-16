@@ -12,6 +12,10 @@ players:
   mw: Maksym Wałaszewski 3d
   pd: Piotr Dyszczyk 1d
   dj: Dawid Jurkiewicz 3d
+top:
+  - sf
+  - mm
+  - ls
 stages:
   - type: league
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T210218A

@@ -12,6 +12,10 @@ players:
   kg: Kamil Grabowski 2d
   kc: Karol Cieślak 1k
   gie: Krzysztof Giedrojć 3d
+top:
+  - ms
+  - sf
+  - kg
 stages:
   - type: league
     breakers:

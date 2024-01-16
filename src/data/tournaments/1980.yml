@@ -9,6 +9,10 @@ players:
   kz: Katarzyna Żuk-Rybicka 1d
   js: Jerzy Sacharewicz 2d
   eg: Emilia Grudzińska 1k
+top:
+  - jk
+  - km
+  - wm,wd
 stages:
   - type: ladder-table
     order:

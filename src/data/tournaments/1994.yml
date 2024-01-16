@@ -10,6 +10,10 @@ players:
   ld: Leszek Dziumowicz 1d
   kgr: Krzysztof Grabowski 2d
   tp: Tomasz Paruszewski 2d
+top:
+  - ls
+  - jk
+  - jl
 stages:
   - type: league
     breakers:

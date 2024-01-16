@@ -12,6 +12,10 @@ players:
   mm: Marcin Majka 3d
   gie: Krzysztof Giedrojć 3d
   mw: Maksym Wałaszewski 1d
+top:
+  - ms
+  - kg
+  - mm
 stages:
   - type: league
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T160811A

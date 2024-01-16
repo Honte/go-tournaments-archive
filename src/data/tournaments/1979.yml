@@ -7,6 +7,10 @@ players:
   js: Jerzy Sacharewicz 2d
   wg: Włodzimierz Grudziński 2d
   ls: Leszek Sołdan 2d
+top:
+  - jk
+  - km
+  - wd
 stages:
   - type: league
     breakers:

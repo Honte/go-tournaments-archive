@@ -10,6 +10,10 @@ players:
   kc: Kamil Chwedyna 3d
   mk: Marek Kamiński 1d
   ts: Tomasz Ślązok 1d
+top:
+  - ls
+  - mb
+  - kg
 stages:
   - type: league
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T061109A

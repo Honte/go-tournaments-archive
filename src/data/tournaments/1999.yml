@@ -10,6 +10,10 @@ players:
   ku: Krzysztof Urtnowski 2d
   mw: Marcin Wolak 2d
   ww: Wojciech Wieczorek 3d
+top:
+  - kg
+  - ls
+  - jl
 stages:
   - type: league
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T991111
@@ -20,29 +24,29 @@ stages:
     rounds:
       - - kg-ww kg:B
         - ls-ku ls:B
-        - jl-mb jl:B
+        - jl-mb jl:B+9.5 sgf:1999/jl-mb.sgf
         - mw-jc mw:W
       - - kg-mw kg:W
         - ls-ww ls:W
         - jl-ku jl:W
-        - mb-jc mb:B
-      - - kg-mb kg:B
+        - mb-jc mb:B+1.5 sgf:1999/mb-jc.sgf
+      - - kg-mb kg:B+R sgf:1999/kg-mb.sgf
         - ls-mw ls:B
         - jl-ww jl:B
         - jc-ku jc:B
       - - kg-ku kg:W
-        - ls-mb ls:W
+        - ls-mb ls:W+25.5 sgf:1999/ls-mb.sgf
         - jl-mw jl:W
         - jc-ww jc:W
       - - kg-jc kg:B
         - ls-jl ls:B
-        - mb-ku mb:B
+        - mb-ku mb:B+R sgf:1999/mb-ku.sgf
         - ww-mw ww:W
       - - ls-jc ls:W
         - jl-kg jl:B
-        - mb-ww mb:W
+        - mb-ww mb:W+R sgf:1999/mb-ww.sgf
         - ku-mw ku:B
-      - - kg-ls kg:W
-        - mb-mw mb:B
+      - - kg-ls kg:W+R sgf:1999/kg-ls.sgf
+        - mb-mw mb:B+9.5 sgf:1999/mb-mw.sgf
         - jc-jl jc:B
         - ku-ww ku:W

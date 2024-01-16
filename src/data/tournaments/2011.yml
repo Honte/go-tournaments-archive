@@ -12,6 +12,10 @@ players:
   mm: Marcin Majka 1d
   mc: Mateusz Chojnacki 1d
   em: Ewa Moś 1d
+top:
+  - ls
+  - kc
+  - sf
 stages:
   - type: league
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T111201B

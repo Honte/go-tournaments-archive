@@ -14,6 +14,10 @@ players:
   jm: Jerzy Mazur 1k
   eg: Emilia Grudzińska 1k
   jk: Janusz Kraszek 5d
+top:
+  - jk
+  - km
+  - js
 stages:
   - type: ladder-table
     order:
@@ -49,6 +53,7 @@ stages:
       - - km-js km
         - jl-mg jl
   - type: round-robin-table
+    name: Turniej o miejsca 5-11
     games:
       - wm-ls ls
       - wm-kg wm

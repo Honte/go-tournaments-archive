@@ -10,6 +10,10 @@ players:
   kg: Krzysztof Giedrojć 4d
   mf: Mariusz Ferenc 2d
   mk: Mateusz Kłobukowski 2d
+top:
+  - ls
+  - jk
+  - ku
 stages:
   - type: league
     breakers:

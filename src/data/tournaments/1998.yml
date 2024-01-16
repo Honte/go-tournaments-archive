@@ -10,6 +10,10 @@ players:
   kgr: Krzysztof Grabowski 3d
   mf: Mariusz Ferenc 4d
   dt: Dariusz Targosz 2d
+top:
+  - ls
+  - kg
+  - jc
 stages:
   - type: league
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T981106

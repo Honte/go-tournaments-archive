@@ -10,6 +10,10 @@ players:
   gie: Krzysztof Giedrojć 4d
   gs: Gerard Szymborski 3d
   wm: Włodzimierz Malinowski 3d
+top:
+  - jk
+  - ls
+  - gg
 stages:
   - type: league
     breakers:

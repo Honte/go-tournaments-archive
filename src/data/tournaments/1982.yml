@@ -17,6 +17,10 @@ players:
   gie: Krzysztof Giedrojć 1k
   pb: Paweł Banas 1k
   jk: Janusz Kraszek 5d
+top:
+  - jk
+  - ls
+  - wm
 stages:
   - type: ladder-table
     order:

@@ -10,6 +10,10 @@ players:
   jc: Janusz Chłodek 3d
   rp: Roman Pszonka 4d
   mr: Michał Rams 3d
+top:
+  - jk
+  - kh
+  - jl
 stages:
   - type: league
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T031108D

@@ -10,6 +10,10 @@ players:
   jl: Jan Lubos 4d
   mw: Marcin Wolak 2d
   wm: Włodzimierz Malinowski 2d
+top:
+  - kg
+  - ls
+  - jc
 stages:
   - type: league
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T001207

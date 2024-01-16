@@ -10,6 +10,10 @@ players:
   ku: Krzysztof Urtnowski 2d
   mk: Mateusz Kłobukowski 2d
   tp: Tomasz Paruszewski 1d
+top:
+  - kg
+  - jl
+  - mf
 stages:
   - type: league
     breakers:

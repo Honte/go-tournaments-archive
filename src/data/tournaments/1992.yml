@@ -10,6 +10,10 @@ players:
   gg: Grzegorz Grygierzec 2d
   jl: Jan Lubos 3d
   mf: Mariusz Ferenc 3d
+top:
+  - kg
+  - jk
+  - ww
 stages:
   - type: league
     breakers:

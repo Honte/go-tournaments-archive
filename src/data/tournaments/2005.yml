@@ -10,6 +10,10 @@ players:
   mr: Michał Rams 3d
   dg: Dominik Gogosz 2d
   mp: Michał Parkoła 2d
+top:
+  - kh
+  - ls
+  - mb
 stages:
   - type: league
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T051124A

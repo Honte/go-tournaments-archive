@@ -10,6 +10,10 @@ players:
   rp: Roman Pozaroszczyk 1d
   ww: Wojciech Woskresiński 3d
   kk: Krzysztof Karczewski 1d
+top:
+  - jk
+  - ls
+  - gie
 stages:
   - type: league
     breakers:

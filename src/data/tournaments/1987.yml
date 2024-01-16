@@ -10,6 +10,10 @@ players:
   jl: Jan Lubos 3d
   gg: Grzegorz Grygierzec 2d
   jr: Jerzy Rybka 1d
+top:
+  - ls
+  - rz
+  - ku
 stages:
   - type: league
     breakers:

@@ -12,6 +12,10 @@ players:
   mw: Maksym Wałaszewski 3d
   kc: Karol Cieślak 3d
   rj: Radosław Jachym 3d
+top:
+  - sf
+  - kh
+  - ls
 stages:
   - type: league
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T191108A

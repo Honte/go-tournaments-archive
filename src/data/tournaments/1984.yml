@@ -28,7 +28,11 @@ players:
   as: Andrzej Sanojca 1k
   ks: Krzysztof Szymczyk 1k
   eg: Emilia Grudzińska 1d
-  krasz: Janusz Kraszek 5d
+  krasz: Janusz Kraszek 6d
+top:
+  - krasz
+  - ls
+  - gie
 stages:
   - type: ladder-table
     order:

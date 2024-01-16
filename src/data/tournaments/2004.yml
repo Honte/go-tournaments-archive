@@ -10,6 +10,10 @@ players:
   mr: Michał Rams 2d
   mb: Michał Bażyński 4d
   kg: Krzysztof Giedrojć 4d
+top:
+  - ls
+  - mb
+  - jk
 stages:
   - type: league
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T041111A

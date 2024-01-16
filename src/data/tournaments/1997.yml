@@ -9,6 +9,10 @@ players:
   kgr: Krzysztof Grabowski 2d
   dt: Dariusz Targosz 2d
   jc: Janusz Chłodek 3d
+top:
+  - ls
+  - jl
+  - kg
 stages:
   - type: league
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T971108A
@@ -17,30 +21,30 @@ stages:
       - wins
       - sodos
     rounds:
-      - - jl-kg jl
-        - mf-dt mf
-        - kgr-jc kgr
-      - - ls-kgr ls
-        - kg-mf kg
-        - dt-jc dt
-      - - ls-dt ls
-        - jl-kgr jl
-        - kg-jc kg
-      - - ls-kg ls
-        - jl-dt jl
-        - mf-kgr mf
-      - - ls-jl ls
-        - mf-jc mf
-        - kgr-dt kgr
-      - - ls-mf ls
-        - jl-jc jl
-        - kg-kgr kg
-      - - ls-jc ls
-        - jl-mf jl
-        - kg-dt kg
+      - - jl-kg jl:B+R sgf:1997/jl-kg.sgf
+        - mf-dt mf:B+11.5 sgf:1997/mf-dt.sgf
+        - kgr-jc kgr:W+R sgf:1997/kgr-jc.sgf
+      - - ls-kgr ls:W+24.5 sgf:1997/ls-kgr.sgf
+        - kg-mf kg:B+R sgf:1997/kg-mf.sgf
+        - dt-jc dt:B+4.5 sgf:1997/dt-jc.sgf
+      - - ls-dt ls:B+R sgf:1997/ls-dt.sgf
+        - jl-kgr jl:B+R sgf:1997/jl-kgr.sgf
+        - kg-jc kg:W+R sgf:1997/kg-jc.sgf
+      - - ls-kg ls:W+21.5 sgf:1997/ls-kg.sgf
+        - jl-dt jl:W+R sgf:1997/jl-dt.sgf
+        - mf-kgr mf:W+12.5 sgf:1997/mf-kgr.sgf
+      - - ls-jl ls:B+7.5 sgf:1997/ls-jl.sgf
+        - mf-jc mf:W+0.5 sgf:1997/mf-jc.sgf
+        - kgr-dt kgr:W+15.5 sgf:1997/kgr-dt.sgf
+      - - ls-mf ls:W+R sgf:1997/ls-mf.sgf
+        - jl-jc jl:B+R sgf:1997/jl-jc.sgf
+        - kg-kgr kg:W+30.5 sgf:1997/kg-kgr.sgf
+      - - ls-jc ls:B+R sgf:1997/ls-jc.sgf
+        - jl-mf jl:W+12.5 sgf:1997/jl-mf.sgf
+        - kg-dt kg:B+35.5 sgf:1997/kg-dt.sgf
   - type: match
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T971129E
     komi: 5.5
     games:
-      - jl-ls ls:W
-      - ls-jl ls:B
+      - jl-ls ls:W+R sgf:1997/jl-ls.sgf
+      - ls-jl ls:B+29.5 sgf:1997/ls-jl.sgf

@@ -12,6 +12,10 @@ players:
   ac: Artur Chmielewski 1d
   jf: Jan Frączak 1d
   db: Diana Błaszczyk 1k
+top:
+  - kh
+  - mm
+  - dj
 stages:
   - type: league
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T181108B

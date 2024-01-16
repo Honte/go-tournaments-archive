@@ -10,6 +10,10 @@ players:
   jc: Janusz Chłodek 2d
   jf: Jan Frejlak 2d
   ww: Wojciech Wieczorek 1k
+top:
+  - ls
+  - mf
+  - jl
 stages:
   - type: league
     breakers:

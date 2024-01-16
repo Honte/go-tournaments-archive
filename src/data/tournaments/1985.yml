@@ -20,6 +20,10 @@ players:
   kk: Katarzyna Koenig 2d
   kotor: Jerzy Kotorowicz 1k
   jk: Janusz Kraszek 5d
+top:
+  - jk
+  - ls
+  - wm
 stages:
   - type: ladder-table
     order:

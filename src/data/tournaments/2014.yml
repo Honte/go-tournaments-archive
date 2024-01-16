@@ -12,6 +12,10 @@ players:
   ll: Łukasz Lew 2d
   kh: Koichiro Habu 4d
   ls: Leszek Sołdan 4d
+top:
+  - ms
+  - sp
+  - kh
 stages:
   - type: league
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T141211A

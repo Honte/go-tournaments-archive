@@ -11,6 +11,10 @@ players:
   mb: Michał Bażyński 4d
   kb: Krzysztof Bożek 2d
   pm: Paweł Morawiecki 1d
+top:
+  - ls
+  - ms
+  - kc
 stages:
   - type: league
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T081218A
