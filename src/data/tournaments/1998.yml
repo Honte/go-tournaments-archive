@@ -50,5 +50,5 @@ stages:
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T990220A
     komi: 5.5
     games:
-      - ls-kg ls:W
-      - kg-ls ls:B
+      - kg-ls ls:B+R
+      - ls-kg ls:W+R

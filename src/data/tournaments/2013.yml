@@ -17,6 +17,8 @@ stages:
     breakers:
       - wins
       - sodos
+      - direct
+      - starting
     rounds:
       - - mis-kc mis:W+4.5 sgf:2013/mis-kc.sgf
         - sp-mm sp:W+7.5 sgf:2013/sp-mm.sgf
