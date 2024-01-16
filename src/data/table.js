@@ -40,7 +40,7 @@ export function createTable(stage, playersMap) {
         opponent: winner,
         won: false,
         game
-      };;
+      };
     }
   }
 
@@ -49,12 +49,12 @@ export function createTable(stage, playersMap) {
     const player = players[id];
 
     for (const won of player.won) {
-      player.sos += players[won].wins
-      player.sodos += players[won].wins
+      player.sos += players[won].wins;
+      player.sodos += players[won].wins;
     }
 
     for (const lost of player.lost) {
-      player.sos += players[lost].wins
+      player.sos += players[lost].wins;
     }
   }
 
@@ -63,46 +63,121 @@ export function createTable(stage, playersMap) {
     const player = players[id];
 
     for (const won of player.won) {
-      player.sosos += players[won].sos
+      player.sosos += players[won].sos;
     }
 
     for (const lost of player.lost) {
-      player.sosos += players[lost].sos
+      player.sosos += players[lost].sos;
     }
   }
 
-  const comparator = createComparator(stage.breakers)
-  const table = Object.values(players).sort(comparator)
+  const table = sort(Object.values(players), stage.breakers);
+
+  // assign player index
+  for (const player of table) {
+    for (const game of player.games) {
+      if (game?.opponent) {
+        game.index = players[game.opponent].index;
+      }
+    }
+  }
 
   return table;
 }
 
-function createComparator(breakers) {
-  return function compareBreakers(a, b) {
-    for (const breaker of breakers) {
-      const result = compare(a, b, breaker);
+function sort(players, breakers) {
+  const final = breakers.reduce((groups, breaker) => {
+    const nextGroups = [];
+    const picker = (p) => p[breaker];
 
-      if (result !== 0) {
-        return result;
+    for (const group of groups) {
+      if (group.length === 1) {
+        nextGroups.push(group);
+        continue;
+      }
+
+      if (breaker === 'direct') {
+        for (const next of getDirectMatchesGroups(group)) {
+          nextGroups.push(next);
+        }
+        continue;
+      }
+
+      const entries = getGroupedEntries(group, picker);
+
+      if (breaker === 'starting') {
+        entries.reverse();
+      }
+
+      for (const [, players] of entries) {
+        nextGroups.push(players);
       }
     }
 
-    return 0;
+    return nextGroups;
+  }, [players]);
+
+
+  const result = [];
+  for (const [index, group] of final.entries()) {
+    for (const player of group) {
+      player.place = index + 1;
+      player.index = result.push(player);
+    }
   }
+
+  return result;
 }
 
-function compare(a, b, breaker) {
-  if (breaker === 'direction') {
-    if (a.won.includes(b)) {
-      return -1;
+function getGroupedEntries(list, propPicker) {
+  const grouped = list.reduce((map, player) => {
+    (map[propPicker(player)] ||= []).push(player);
+
+    return map;
+  }, {});
+
+  return Object.entries(grouped).sort(([a], [b]) => b - a);
+}
+
+function* getDirectMatchesGroups(group) {
+  if (group.length === 1) {
+    yield group;
+    return;
+  }
+
+  if (group.length === 2) {
+    const [a, b] = group;
+
+    if (a.won.includes(b.id)) {
+      yield [a];
+      yield [b];
+      return;
     }
 
-    return b.won.includes(a) ? 1 : 0
+    if (b.won.includes(a.id)) {
+      yield [b];
+      yield [a];
+      return;
+    }
+
+    yield group;
+    return;
   }
 
-  if (breaker === 'starting') {
-    return a[breaker] - b[breaker];
+  const directScores = group.reduce((map, player) => {
+    map[player.id] = group.reduce((r, p) => r + Number(player.won.includes(p.id)), 0);
+
+    return map;
+  }, {});
+
+  const entries = getGroupedEntries(group, (p) => directScores[p.id]);
+
+  if (entries.length === 1) {
+    yield group;
+    return;
   }
 
-  return b[breaker] - a[breaker];
+  for (const [, entry] of entries) {
+    yield* getDirectMatchesGroups(entry);
+  }
 }
