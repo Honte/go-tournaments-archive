@@ -2,14 +2,14 @@ location: Warszawa
 start: 1999-11-10
 end: 1999-11-14
 players:
-  kg: Krzysztof Giedrojć 4d
   ls: Leszek Sołdan 6d
+  kg: Krzysztof Giedrojć 4d
+  jc: Janusz Chłodek 3d
   jl: Jan Lubos 4d
   mb: Michał Bażyński 3d
-  jc: Janusz Chłodek 3d
-  ku: Krzysztof Urtnowski 2d
   mw: Marcin Wolak 2d
   ww: Wojciech Wieczorek 3d
+  ku: Krzysztof Urtnowski 2d
 top:
   - kg
   - ls
@@ -21,6 +21,7 @@ stages:
     breakers:
       - wins
       - sodos
+      - starting
     rounds:
       - - kg-ww kg:B
         - ls-ku ls:B

@@ -23,6 +23,8 @@ stages:
     breakers:
       - wins
       - sodos
+      - direct
+      - starting
     rounds:
       - - ls-cc ls:W+R sgf:2010/ls-cc.sgf
         - kc-ak kc:W+R sgf:2010/kc-ak.sgf

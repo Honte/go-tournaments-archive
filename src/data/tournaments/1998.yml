@@ -3,12 +3,12 @@ start: 1998-11-06
 end: 1998-11-10
 players:
   ls: Leszek Sołdan 6d
-  kg: Krzysztof Giedrojć 5d
-  jc: Janusz Chłodek 3d
   jl: Jan Lubos 5d
+  kg: Krzysztof Giedrojć 5d
+  mf: Mariusz Ferenc 4d
+  jc: Janusz Chłodek 3d
   ku: Krzysztof Urtnowski 2d
   kgr: Krzysztof Grabowski 3d
-  mf: Mariusz Ferenc 4d
   dt: Dariusz Targosz 2d
 top:
   - ls
@@ -21,6 +21,7 @@ stages:
     breakers:
       - wins
       - sodos
+      - starting
     rounds:
       - - ls-dt ls
         - kg-ku kg

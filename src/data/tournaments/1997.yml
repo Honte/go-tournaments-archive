@@ -3,12 +3,12 @@ start: 1997-11-08
 end: 1997-11-11
 players:
   ls: Leszek Sołdan 6d
+  jc: Janusz Chłodek 3d
+  mf: Mariusz Ferenc 4d
   jl: Jan Lubos 4d
   kg: Krzysztof Giedrojć 4d
-  mf: Mariusz Ferenc 4d
-  kgr: Krzysztof Grabowski 2d
   dt: Dariusz Targosz 2d
-  jc: Janusz Chłodek 3d
+  kgr: Krzysztof Grabowski 2d
 top:
   - ls
   - jl
@@ -20,6 +20,7 @@ stages:
     breakers:
       - wins
       - sodos
+      - starting
     rounds:
       - - jl-kg jl:B+R sgf:1997/jl-kg.sgf
         - mf-dt mf:B+11.5 sgf:1997/mf-dt.sgf

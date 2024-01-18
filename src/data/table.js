@@ -13,7 +13,7 @@ export function createTable(stage, games, playersMap) {
       sodos: 0,
       sosos: 0,
       starting: position++,
-      games: new Array(stage.rounds.length),
+      games: new Array(stage.rounds.length).fill(null),
       won: [],
       lost: [],
       rank: getRankValue(playersMap[player].rank)

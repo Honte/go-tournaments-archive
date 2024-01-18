@@ -2,10 +2,10 @@ location: Warszawa
 start: 1995-01-26
 end: 1995-01-29
 players:
-  ls: Leszek Sołdan 6d
   jk: Janusz Kraszek 5d
-  jl: Jan Lubos 3d
+  ls: Leszek Sołdan 6d
   kg: Krzysztof Giedrojć 4d
+  jl: Jan Lubos 3d
   ww: Wojciech Woskresiński 3d
   ld: Leszek Dziumowicz 1d
   kgr: Krzysztof Grabowski 2d
@@ -19,6 +19,7 @@ stages:
     breakers:
       - wins
       - sodos
+      - starting
     rounds:
       - - ls-ld ls
         - jk-kgr jk

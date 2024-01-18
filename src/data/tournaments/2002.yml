@@ -3,11 +3,11 @@ start: 2002-12-05
 end: 2002-12-08
 players:
   ls: Leszek Sołdan 6d
-  jk: Janusz Kraszek 5d
-  rp: Roman Pszonka 4d
   jl: Jan Lubos 4d
+  jk: Janusz Kraszek 5d
   kg: Krzysztof Giedrojć 4d
   ww: Wojciech Wieczorek 3d
+  rp: Roman Pszonka 4d
   rz: Robert Zabłocki 3d
   gs: Gerard Szymborski 3d
 top:
@@ -21,6 +21,7 @@ stages:
     breakers:
       - wins
       - sodos
+      - starting
     rounds:
       - - ls-gs ls
         - jk-rp jk

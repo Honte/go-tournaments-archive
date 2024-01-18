@@ -26,7 +26,7 @@ export async function Results({ stage, players, games, locale }) {
             <td className="p-1">{player.place}</td>
             <td className="p-1 text-left">{players[player.id].name}</td>
             <td className="p-1">{players[player.id].rank}</td>
-            {player.games.map((game, index) => <GamePopoverTrigger as="td" key={index} game={games[game.game]} players={players}>{game.index}{game.won ? '+' : '-'}</GamePopoverTrigger>)}
+            {player.games.map((game, index) => game ? <GamePopoverTrigger as="td" key={index} game={games[game.game]} players={players}>{game.index}{game.won ? '+' : '-'}</GamePopoverTrigger> : <td key={index}>&ndash;</td>)}
             {visibleBreakers.map((breaker) => <td className="p-1" key={breaker}>{player[breaker]}</td>)}
           </tr>
         ))}

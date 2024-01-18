@@ -2,14 +2,14 @@ location: Szklary
 start: 2003-11-08
 end: 2003-11-11
 players:
-  jk: Janusz Kraszek 5d
-  kh: Koichiro Habu 4d
-  jl: Jan Lubos 3d
   ls: Leszek Sołdan 6d
-  al: Aleksandra Lubos 3d
-  jc: Janusz Chłodek 3d
+  jk: Janusz Kraszek 5d
   rp: Roman Pszonka 4d
+  jl: Jan Lubos 3d
+  kh: Koichiro Habu 4d
+  al: Aleksandra Lubos 3d
   mr: Michał Rams 3d
+  jc: Janusz Chłodek 3d
 top:
   - jk
   - kh
@@ -21,6 +21,7 @@ stages:
     breakers:
       - wins
       - sodos
+      - starting
     rounds:
       - - jl-kh jl
         - ls-jc ls

@@ -2,13 +2,13 @@ location: Warszawa
 start: 2001-11-08
 end: 2001-11-11
 players:
-  ls: Leszek Sołdan 5d
-  jl: Jan Lubos 4d
-  jk: Janusz Kraszek 5d
   kg: Krzysztof Giedrojć 4d
-  ww: Wojciech Woskresiński 2d
-  mb: Michał Bażyński 4d
+  ls: Leszek Sołdan 5d
   jc: Janusz Chłodek 3d
+  mb: Michał Bażyński 4d
+  jl: Jan Lubos 4d
+  ww: Wojciech Woskresiński 2d
+  jk: Janusz Kraszek 5d
   mw: Marcin Wolak 2d
 top:
   - ls
@@ -21,6 +21,7 @@ stages:
     breakers:
       - wins
       - sodos
+      - starting
     rounds:
       - - jl-mb jl
         - jk-ls jk

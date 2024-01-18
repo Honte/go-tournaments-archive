@@ -4,10 +4,10 @@ end: 2000-12-11
 players:
   kg: Krzysztof Giedrojć 4d
   ls: Leszek Sołdan 6d
-  jc: Janusz Chłodek 3d
-  mb: Michał Bażyński 3d
-  ku: Krzysztof Urtnowski 2d
   jl: Jan Lubos 4d
+  mb: Michał Bażyński 3d
+  jc: Janusz Chłodek 3d
+  ku: Krzysztof Urtnowski 2d
   mw: Marcin Wolak 2d
   wm: Włodzimierz Malinowski 2d
 top:
@@ -21,6 +21,7 @@ stages:
     breakers:
       - wins
       - sodos
+      - starting
     rounds:
       - - kg-wm kg
         - ls-mw ls
