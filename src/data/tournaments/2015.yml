@@ -18,6 +18,9 @@ top:
   - kg
 stages:
   - type: league
+    egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T160107A
+    time: 90m + 60s byo
+    komi: 6.5
     breakers:
       - wins
       - sodos
