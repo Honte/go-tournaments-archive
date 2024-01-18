@@ -1,6 +1,6 @@
 import { getRankValue } from '@/data/rank';
 
-export function createTable(stage, playersMap) {
+export function createTable(stage, games, playersMap) {
   const players = {};
 
   let position = 1;
@@ -23,7 +23,7 @@ export function createTable(stage, playersMap) {
   // collect wins & games
   for (const [index, round] of stage.rounds.entries()) {
     for (const game of round) {
-      const [a, b] = game.players;
+      const [a, b] = games[game].players;
 
       const winner = a.won ? a.id : b.id;
       const loser = a.won ? b.id : a.id;

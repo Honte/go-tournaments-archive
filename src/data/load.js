@@ -1,8 +1,8 @@
 import fs from 'fs/promises';
 import fg from 'fast-glob';
+import path from 'path';
 import slug from 'slug';
 import { parse } from 'yaml';
-import path from 'path';
 import { createTable } from '@/data/table';
 
 const PLAYER_REGEX = /^(?<name>[\p{Letter} -]+)( (?<rank>[0-9]{1,2}[dkp])?)?$/u;
@@ -18,6 +18,7 @@ export async function loadTournaments() {
     const json = parse(content);
     const year = Number(path.parse(file).name);
     const players = {};
+    const games = {};
 
     for (const id in json.players) {
       const details = json.players[id].match(PLAYER_REGEX);
@@ -44,12 +45,12 @@ export async function loadTournaments() {
       switch (stage.type) {
         case 'league':
         case 'league-table':
-          target.rounds = stage.rounds.map((round) => round.map(parseGame));
-          target.table = createTable(target, players)
+          target.rounds = stage.rounds.map((round) => parseGames(games, round));
+          target.table = createTable(target, games, players);
           break;
         case 'match':
         case 'round-robin-table':
-          target.games = stage.games.map(parseGame);
+          target.games = parseGames(games, stage.games);
           break;
       }
     }
@@ -58,12 +59,27 @@ export async function loadTournaments() {
       id: year,
       ...json,
       year,
+      games,
       players,
       stages
     });
   }
 
-  return tournaments
+  return tournaments;
+}
+
+function parseGames(repository, games) {
+  const ids = [];
+
+  for (const string of games) {
+    const game = parseGame(string);
+    const id = getId(repository);
+
+    repository[id] = game;
+    ids.push(id);
+  }
+
+  return ids;
 }
 
 function parseGame(string) {
@@ -78,33 +94,15 @@ function parseGame(string) {
   const homePlayer = {
     id: home,
     won: winner === home,
-    color: null,
-    score: null
   };
 
   const awayPlayer = {
     id: away,
     won: winner === away,
-    color: null,
-    score: null
   };
 
   const winnerPlayer = home === winner ? homePlayer : awayPlayer;
   const loserPlayer = home === winner ? awayPlayer : homePlayer;
-
-  const game = {
-    players: [homePlayer, awayPlayer],
-    result,
-    props: (props?.split(' ') || [])
-      .reduce((map, prop) => {
-        const pos = prop.indexOf(':');
-        const type = prop.slice(0, pos);
-
-        map[type] = prop.slice(pos + 1);
-
-        return map;
-      }, {})
-  };
 
   if (result) {
     const gameResult = result.match(GAME_RESULT_REGEX);
@@ -126,5 +124,27 @@ function parseGame(string) {
     }
   }
 
-  return game;
+  return {
+    players: homePlayer.color === 'white' ? [awayPlayer, homePlayer] : [homePlayer, awayPlayer],
+    result,
+    props: (props?.split(' ') || [])
+      .reduce((map, prop) => {
+        const pos = prop.indexOf(':');
+        const type = prop.slice(0, pos);
+
+        map[type] = prop.slice(pos + 1);
+
+        return map;
+      }, {})
+  };
+}
+
+function getId(repository) {
+  let id;
+
+  do {
+    id = Math.random().toString(36).slice(2);
+  } while (id in repository);
+
+  return id;
 }

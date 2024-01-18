@@ -12,7 +12,7 @@ export default async function Edition({ params: { year, locale }}) {
 
   const tournaments = await getTournaments();
   const tournament = tournaments.find((t) => t.year === Number(year));
-  const { id, stages, players, ...details } = tournament;
+  const { games } = tournament;
 
   return (
     <>
@@ -26,7 +26,7 @@ export default async function Edition({ params: { year, locale }}) {
       {tournament.stages.map((stage) => {
         switch (stage.type) {
           case 'league':
-            return <League stage={stage} locale={locale} players={tournament.players}/>
+            return <League stage={stage} locale={locale} games={games} players={tournament.players}/>
           default:
             return (
               <div className="my-4">

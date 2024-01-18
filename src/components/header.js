@@ -8,10 +8,7 @@ export async function Header({ locale }) {
 
   return (
     <header className="bg-pgc-dark text-pgc-light flex">
-      <div className="container mx-auto flex h-16 items-center sm:justify-center gap-3 md:gap-6 px-2">
-        {/*<div className="p-2 bg-pgc-light rounded-md text-pgc-dark cursor-pointer hover:bg-pgc-hover">*/}
-        {/*  <HiBars3/>*/}
-        {/*</div>*/}
+      <div className="container mx-auto flex h-16 items-center justify-center gap-3 md:gap-6 px-4 text-center">
         <Link href={`/${locale}`} className="group flex items-center gap-3 md:gap-4" title={t('navigation.home.title')}>
           <span className="sr-only">{t('navigation.home.anchor')}</span>
           <Logo className="h-8"/>

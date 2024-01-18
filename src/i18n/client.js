@@ -7,14 +7,14 @@ const i18n = new I18n();
 
 export const I18nContext = createContext(i18n);
 
-export function I18nProvider({ lang, translations, children }) {
+export function I18nProvider({ locale, translations, children }) {
   i18n.store({
-    [lang]: JSON.parse(translations)
+    [locale]: JSON.parse(translations)
   })
-  i18n.locale = lang
+  i18n.locale = locale
 
   return (
-    <I18nContext.Provider value={i18n}>
+    <I18nContext.Provider value={i18n.t.bind(i18n)}>
       {children}
     </I18nContext.Provider>
   )

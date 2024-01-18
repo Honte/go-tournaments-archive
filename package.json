@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@floating-ui/react": "^0.26.6",
     "@formatjs/intl-localematcher": "^0.5.2",
     "fast-glob": "^3.3.2",
     "i18n-js": "^4.3.2",

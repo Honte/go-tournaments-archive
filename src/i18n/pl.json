@@ -1,6 +1,6 @@
 {
   "site": {
-    "name": "Archiwum Mistrzostw Polski w Go",
+    "name": "Archiwum Mistrzostw Polski w\u00A0Go",
     "description": "Archiwum wyników wszystkich edycji mistrzostw Polski w Go"
   },
   "navigation": {
@@ -52,5 +52,22 @@
     "name": "Zawodnik",
     "rank": "Siła",
     "round": "Runda %{round}"
+  },
+  "game": {
+    "sgf": "Pobierz zapis partii w formacie SGF",
+    "ogs": "Zobacz relacje w serwisie Online Go Server",
+    "yt": "Zobacz relację wideo z partii",
+    "ai": "Zobacz analizę AI"
+  },
+  "winners": {
+    "title": "Medaliści Mistrzostw Polski",
+    "year": "Rok",
+    "first": "Zwycięzca",
+    "second": "2. miejsce",
+    "third": "3. miejsce"
+  },
+  "stats": {
+    "medalists": "Medaliści",
+    "attendants": "Top %{count} uczestników"
   }
 }
