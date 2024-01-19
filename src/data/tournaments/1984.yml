@@ -30,7 +30,7 @@ players:
 top:
   - krasz
   - ls
-  - gie
+  - gie,js
 stages:
   - type: ladder-table
     date: 1984-11-01 - 1984-11-04
