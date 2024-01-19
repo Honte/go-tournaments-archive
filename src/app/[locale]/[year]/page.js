@@ -5,6 +5,7 @@ import { League } from '@/components/league';
 import { TournamentDetails } from '@/components/tournamentDetails';
 import { Awarded } from '@/components/awarded';
 import { StageFinal } from '@/components/stageFinal';
+import { Ladder } from '@/components/ladder';
 
 export default async function Edition({ params: { year, locale }}) {
   if (!year.match(/^\d{4}$/)) {
@@ -28,6 +29,8 @@ export default async function Edition({ params: { year, locale }}) {
         switch (stage.type) {
           case 'league':
             return <League stage={stage} locale={locale} games={games} players={players}/>
+          case 'ladder-table':
+            return <Ladder stage={stage} locale={locale} games={games} players={players}/>
           case 'final':
             return <StageFinal stage={stage} locale={locale} games={games} players={players}/>
           default:

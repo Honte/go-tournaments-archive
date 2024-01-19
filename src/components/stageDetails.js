@@ -12,26 +12,28 @@ export async function StageDetails({stage, locale}) {
   }
 
   if (stage.rules) {
-    details[t('stage.rules')] = stage.rules
+    details[t('stage.rules')] = stage.rules;
   }
 
   if (stage.komi) {
-    details[t('stage.komi')] = stage.komi
+    details[t('stage.komi')] = stage.komi;
   }
 
   if (stage.time) {
-    details[t('stage.time')] = stage.time
+    details[t('stage.time')] = stage.time;
   }
 
   if (stage.breakers?.length) {
     details[t('stage.breakers')] = <ol className="mx-5 list-decimal">
       {stage.breakers.map((breaker) => <li key={breaker}><Breaker t={t} breaker={breaker}/></li>)}
-    </ol>
+    </ol>;
   }
 
   return (
-    <div className="my-3">
-    <Details details={details}/>
-    </div>
+    <>
+      {Object.keys(details).length ? <div className="my-3">
+        <Details details={details}/>
+      </div> : ''}
+    </>
   );
 }

@@ -58,6 +58,7 @@ stages:
         - kg-ww kg
         - js-ld js
         - mk-kz mk
+        - jl-BYE BYE
       - - ls-js ls
         - jf-jl jf
         - kg-mk kg

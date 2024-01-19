@@ -27,6 +27,7 @@
   "stage": {
     "details": "Szczegóły",
     "league": "Liga",
+    "ladder": "Faza pucharowa",
     "egd": "Baza EGD",
     "goToEGD": "Przejdź na stronę turnieju w bazie European Go Database",
     "breakers": "Breakery",
@@ -54,7 +55,8 @@
     "place": "Miejsce",
     "name": "Zawodnik",
     "rank": "Siła",
-    "round": "Runda %{round}"
+    "round": "Runda %{round}",
+    "playoffs": "Play-Off"
   },
   "game": {
     "sgf": "Pobierz zapis partii w formacie SGF",

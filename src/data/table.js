@@ -78,6 +78,7 @@ export function createTable(stage, games, playersMap) {
     for (const game of player.games) {
       if (game?.opponent) {
         game.index = players[game.opponent].index;
+        game.text = `${game.index}${game.won ? '+' : '-'}`
       }
     }
   }

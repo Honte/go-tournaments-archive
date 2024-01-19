@@ -23,9 +23,13 @@ export function Game({game, players, t, wide = true }) {
 }
 
 function PlayerRow({player}) {
+  const color = player.color ? <Stone color={player.color} className={`h-4 inline`}/> : '';
+  const score= player.won && player.score ? `+ ${player.score}` : ''
+  const name = player.id === 'BYE' ? 'BYE' : `${player.name} (${player.rank}) ${score}`;
+
   return (
-    <div className={`flex items-center gap-1 text-l ${player.won ? 'font-bold' : ''}`}>{player.color &&
-      <Stone color={player.color}
-             className={`h-4 inline`}/>}{player.name} ({player.rank}) {player.won && player.score ? `+ ${player.score}` : ''}</div>
+    <div className={`flex items-center gap-1 text-l ${player.won ? 'font-bold' : ''}`}>
+      {color} {name} {score}
+    </div>
   );
 }

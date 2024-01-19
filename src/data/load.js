@@ -4,6 +4,7 @@ import path from 'path';
 import slug from 'slug';
 import { parse } from 'yaml';
 import { createTable } from '@/data/table';
+import { createLadderTable } from '@/data/ladderTable';
 
 const PLAYER_REGEX = /^(?<name>[\p{Letter} -]+)( (?<rank>[0-9]{1,2}[dkp])?)?$/u;
 const GAME_REGEX = /(?<home>[a-z]+)-(?<away>[a-z]+) (?<winner>[a-z]+)(:(?<result>[?a-zA-Z0-9+,.:]+))?( (?<props>.+))?/i;
@@ -49,18 +50,11 @@ export async function loadTournaments() {
         case 'league':
           target.rounds = stage.rounds.map((round) => parseGames(games, round));
           target.table = createTable(target, games, players);
-
-          if (stage.playoffs) {
-            target.playoffs = parseGames(games, stage.playoffs)
-          }
           break;
         case 'ladder-table':
           target.rounds = stage.rounds.map((round) => parseGames(games, round));
-
-          if (stage.playoffs) {
-            target.playoffs = parseGames(games, stage.playoffs)
-          }
-
+          target.playoffs = stage.playoffs ? parseGames(games, stage.playoffs) : []
+          target.table = createLadderTable(target, games);
           break;
         case 'final':
           target.games = parseGames(games, stage.games);
