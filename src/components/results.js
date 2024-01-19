@@ -1,6 +1,5 @@
 import { getTranslations } from '@/i18n/server';
 import { Breaker } from '@/components/breaker';
-import { GamePopoverTrigger } from '@/components/gamePopover';
 import { GameCell } from '@/components/gameCell';
 
 export async function Results({stage, players, games, locale}) {
