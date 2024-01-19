@@ -10,6 +10,8 @@ export function getStats() {
   const winners = {};
   const attendants = {}
   let games = 0;
+  let resign = 0;
+  let timeout = 0;
   let sgfs = 0
   let analysis = 0;
   let streams = 0;
@@ -38,6 +40,14 @@ export function getStats() {
       const game = tournamentGames[id];
 
       games++;
+
+      if (game.result?.includes('R')) {
+        resign++;
+      }
+
+      if (game.result?.includes('T')) {
+        timeout++;
+      }
 
       if (game.props?.sgf) {
         sgfs++;
@@ -68,6 +78,8 @@ export function getStats() {
     tournaments: tournaments.length,
     games,
     sgfs,
+    resign,
+    timeout,
     relays,
     streams,
     analysis,

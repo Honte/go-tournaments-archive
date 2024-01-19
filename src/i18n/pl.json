@@ -79,7 +79,9 @@
       "tournaments": "Wydarzeń",
       "participants": "Uczestników",
       "games": "Gier",
-      "sgfs": "Zapisów partii",
+      "resigned": "Wygranych przez poddanie",
+      "timeout": "Wygranych przez czas",
+      "sgfs": "Zapisów partii SGF",
       "relays": "Relacji na OGS",
       "streams": "Transmisji wideo",
       "analysis": "Analiz AI"
