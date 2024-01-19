@@ -47,9 +47,20 @@ export async function loadTournaments() {
 
       switch (stage.type) {
         case 'league':
-        case 'league-table':
           target.rounds = stage.rounds.map((round) => parseGames(games, round));
           target.table = createTable(target, games, players);
+
+          if (stage.playoffs) {
+            target.playoffs = parseGames(games, stage.playoffs)
+          }
+          break;
+        case 'ladder-table':
+          target.rounds = stage.rounds.map((round) => parseGames(games, round));
+
+          if (stage.playoffs) {
+            target.playoffs = parseGames(games, stage.playoffs)
+          }
+
           break;
         case 'final':
           target.games = parseGames(games, stage.games);

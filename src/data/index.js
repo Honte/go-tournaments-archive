@@ -11,9 +11,12 @@ export function getStats() {
   const attendants = {}
   let games = 0;
   let sgfs = 0
+  let analysis = 0;
+  let streams = 0;
+  let relays = 0
 
   for (const tournament of tournaments) {
-    const { players, top, stages } = tournament;
+    const { players, top, games: tournamentGames } = tournament;
 
     for (const [index, winner] of top.entries()) {
       for (const id of winner.split(',')) {
@@ -31,24 +34,25 @@ export function getStats() {
       attendants[name].attended.push(tournament.year)
     }
 
-    for (const stage of stages) {
-      if (stage.rounds) {
-        for (const round of stage.rounds) {
-          for (const game of round) {
-            games++;
-            if (game.props?.sgf) {
-              sgfs++;
-            }
-          }
-        }
+    for (const id in tournamentGames) {
+      const game = tournamentGames[id];
+
+      games++;
+
+      if (game.props?.sgf) {
+        sgfs++;
       }
-      if (stage.games) {
-        for (const game of stage.games) {
-          games++;
-          if (game.props?.sgf) {
-            sgfs++;
-          }
-        }
+
+      if (game.props?.ogs) {
+        relays++;
+      }
+
+      if (game.props?.yt) {
+        streams++;
+      }
+
+      if (game.props?.ai) {
+        analysis++;
       }
     }
   }
@@ -64,6 +68,9 @@ export function getStats() {
     tournaments: tournaments.length,
     games,
     sgfs,
+    relays,
+    streams,
+    analysis,
     winners: Object.values(winners).sort((a, b) => b.score - a.score),
     attendants: Object.values(attendants).sort((a, b) => b.attended.length - a.attended.length)
   }

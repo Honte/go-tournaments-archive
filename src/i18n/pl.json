@@ -71,6 +71,16 @@
   },
   "stats": {
     "medalists": "Medaliści",
-    "attendants": "Top %{count} uczestników"
+    "attendants": "Top %{count} uczestników",
+    "total": {
+      "title": "Archiwum w liczbach",
+      "tournaments": "Wydarzeń",
+      "participants": "Uczestników",
+      "games": "Gier",
+      "sgfs": "Zapisów partii",
+      "relays": "Relacji na OGS",
+      "streams": "Transmisji wideo",
+      "analysis": "Analiz AI"
+    }
   }
 }
