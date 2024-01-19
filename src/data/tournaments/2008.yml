@@ -1,6 +1,4 @@
 location: Warszawa
-start: 2008-12-18
-end: 2008-12-21
 referee: Michał Rams
 players:
   ls: Leszek Sołdan 5d
@@ -17,6 +15,7 @@ top:
   - kc
 stages:
   - type: league
+    date: 2008-12-18 - 2008-12-21
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T081218A
     komi: 6.5
     breakers:

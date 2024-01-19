@@ -31,7 +31,10 @@
     "goToEGD": "Przejdź na stronę turnieju w bazie European Go Database",
     "breakers": "Breakery",
     "komi": "Komi",
-    "time": "Czas"
+    "time": "Czas",
+    "final": "Finał",
+    "requiredWins": "Finał rozgrywany do %{wins} wygranych partii.",
+    "includePreviousWins": "Bezpośredni pojedynek z poprzedniego etapu jest wliczany do wyniku."
   },
   "breakers": {
     "wins": "Liczba zwycięstw",

@@ -1,6 +1,4 @@
 location: Warszawa
-start: 1994-01
-end: 1994-01
 players:
   jk: Janusz Kraszek 5d
   ls: Leszek Sołdan 6d
@@ -16,6 +14,7 @@ top:
   - kg
 stages:
   - type: league
+    date: 1994-01
     breakers:
       - wins
       - sodos
@@ -48,7 +47,10 @@ stages:
         - ls-jc ls
         - jl-ww jl
         - kk-jr kk
-  - type: match
+  - type: final
+    date: 1994-02
+    requiredWins: 3
+    includePrevious: true
     games:
       - jk-ls ls
       - jk-ls jk

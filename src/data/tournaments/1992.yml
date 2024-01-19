@@ -1,6 +1,4 @@
 location: Warszawa
-start: 1992-11-05
-end: 1992-11-08
 players:
   kg: Krzysztof Giedrojć 4d
   jk: Janusz Kraszek 5d
@@ -16,6 +14,7 @@ top:
   - ww
 stages:
   - type: league
+    date: 1992-11-05 - 1992-11-08
     breakers:
       - wins
       - sodos
@@ -48,7 +47,13 @@ stages:
         - jk-kk jk
         - ww-mf ww
         - tp-gg tp
-  - type: match
+  - type: final
+    date:
+    - 1993-03-02
+    - 1993-03-06
+    - 1993-03-16
+    requiredWins: 3
+    includePrevious: true
     games:
       - kg-jk kg
       - kg-jk jk

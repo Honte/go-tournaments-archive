@@ -1,6 +1,4 @@
 location: Warszawa
-start: 2016-01-07
-end: 2016-01-10
 referee: Marek Gutkowski
 website: https://mp.go.art.pl/2015
 players:
@@ -18,6 +16,7 @@ top:
   - kg
 stages:
   - type: league
+    date: 2016-01-07 - 2016-01-10
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T160107A
     time: 90m + 60s byo
     komi: 6.5

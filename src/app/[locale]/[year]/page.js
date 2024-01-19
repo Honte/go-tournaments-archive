@@ -4,6 +4,7 @@ import { getTournaments } from '@/data';
 import { League } from '@/components/league';
 import { TournamentDetails } from '@/components/tournamentDetails';
 import { Awarded } from '@/components/awarded';
+import { StageFinal } from '@/components/stageFinal';
 
 export default async function Edition({ params: { year, locale }}) {
   if (!year.match(/^\d{4}$/)) {
@@ -12,7 +13,7 @@ export default async function Edition({ params: { year, locale }}) {
 
   const tournaments = await getTournaments();
   const tournament = tournaments.find((t) => t.year === Number(year));
-  const { games } = tournament;
+  const { games, players } = tournament;
 
   return (
     <>
@@ -26,7 +27,9 @@ export default async function Edition({ params: { year, locale }}) {
       {tournament.stages.map((stage) => {
         switch (stage.type) {
           case 'league':
-            return <League stage={stage} locale={locale} games={games} players={tournament.players}/>
+            return <League stage={stage} locale={locale} games={games} players={players}/>
+          case 'final':
+            return <StageFinal stage={stage} locale={locale} games={games} players={players}/>
           default:
             return (
               <div className="my-4">

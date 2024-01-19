@@ -1,6 +1,4 @@
 location: Warszawa
-start: 1986-11-13
-end: 1986-11-16
 players:
   ls: Leszek Sołdan 4d
   jk: Janusz Kraszek 5d
@@ -16,6 +14,7 @@ top:
   - gg
 stages:
   - type: league
+    date: 1986-11-13 - 1986-11-16
     breakers:
       - wins
       - sodos
@@ -49,7 +48,10 @@ stages:
         - gg-wm gg
         - rz-gie gie
         - ww-gs ww
-  - type: match
+  - type: final
+    date: 1986-12-06 - 1986-12-07
+    requiredWins: 3
+    includePrevious: true
     games:
       - jk-ls jk
       - jk-ls jk

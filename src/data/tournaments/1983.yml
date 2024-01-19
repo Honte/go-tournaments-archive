@@ -1,6 +1,4 @@
 location: Warszawa
-start: 1983-09-30
-end: 1983-10-02
 players:
   ls: Leszek Sołdan 4d
   wm: Włodzimierz Malinowski 2d
@@ -24,6 +22,7 @@ top:
   - wm
 stages:
   - type: ladder-table
+    date: 1983-09-30 - 1983-10-02
     order:
       - ls
       - wm
@@ -68,14 +67,18 @@ stages:
         - jf-js jf
       - - ls-wm ls
       - - ls-jf ls
-      - - wm-jf wm
-        - js-ww js
-        - kg-js kg
-        - jl-mk jl
-        - ld-jl ld
-        - jr-gie jr
-        - rz-sm rz
-  - type: match
+    playoffs:
+      - wm-jf wm
+      - js-ww js
+      - kg-js kg
+      - jl-mk jl
+      - ld-jl ld
+      - jr-gie jr
+      - rz-sm rz
+  - type: final
+    date: 1983-10-03
+    requiredWins: 2
+    includePrevious: false
     games:
       - jk-ls jk
       - jk-ls jk

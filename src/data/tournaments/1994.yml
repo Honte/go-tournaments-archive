@@ -1,6 +1,4 @@
 location: Warszawa
-start: 1995-01-26
-end: 1995-01-29
 players:
   jk: Janusz Kraszek 5d
   ls: Leszek Sołdan 6d
@@ -16,6 +14,7 @@ top:
   - jl
 stages:
   - type: league
+    date: 1995-01-2 - 1995-01-29
     breakers:
       - wins
       - sodos
@@ -49,7 +48,10 @@ stages:
         - kg-jl kg
         - ww-tp ww
         - ld-kgr ld
-  - type: match
+  - type: final
+    date: 1995-02-18
+    requiredWins: 3
+    includePrevious: true
     games:
       - ls-jk ls
       - ls-jk ls

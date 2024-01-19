@@ -1,6 +1,4 @@
 location: Słupsk
-start: 1981-10-28
-end: 1981-10-31
 players:
   km: Krzysztof Moszczyński 3d
   js: Jerzy Sacharewicz 3d
@@ -20,6 +18,7 @@ top:
   - js
 stages:
   - type: ladder-table
+    date: 1981-10-28 - 1981-10-30
     order:
       - km
       - js
@@ -53,7 +52,10 @@ stages:
       - - km-js km
         - jl-mg jl
   - type: round-robin-table
-    name: Turniej o miejsca 5-11
+    name:
+      pl: Turniej o miejsca 5-11
+      en: Tournament for places 5-11
+    date: 1981-10-28 - 1981-10-30
     games:
       - wm-ls ls
       - wm-kg wm
@@ -76,7 +78,10 @@ stages:
       - wg-kz kz
       - wg-jm wg
       - kz-jm jm
-  - type: match
+  - type: final
+    date: 1981-10-31
+    requiredWins: 2
+    includePrevious: false
     games:
       - jk-km jk
       - jk-km jk

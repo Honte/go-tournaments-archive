@@ -1,6 +1,4 @@
 location: Andrychów
-start: 2009-11-26
-end: 2009-11-29
 referee: Krzysztof Bożek
 players:
   ls: Leszek Sołdan 5d
@@ -17,6 +15,7 @@ top:
   - rj
 stages:
   - type: league
+    date: 2009-11-26 - 2009-11-29
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T091126B
     komi: 6.5
     time: 90m + 60s byo

@@ -1,6 +1,4 @@
 location: Warszawa
-start: 1988-11-24
-end: 1988-11-26
 players:
   ls: Leszek Sołdan 4d
   jk: Janusz Kraszek 5d
@@ -14,6 +12,7 @@ top:
   - rz
 stages:
   - type: league
+    date: 1988-11-24 - 1988-11-26
     breakers:
       - wins
       - sodos
@@ -33,7 +32,10 @@ stages:
       - - ls-rz ls
         - jk-ku jk
         - rp-wg rp
-  - type: match
+  - type: final
+    date: 1988-12-10 - 1988-12-11
+    requiredWins: 3
+    includePrevious: true
     games:
       - jk-ls jk
       - jk-ls jk

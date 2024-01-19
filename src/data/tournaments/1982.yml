@@ -1,6 +1,4 @@
 location: Warszawa
-start: 1982-10-08
-end: 1982-10-11
 players:
   ls: Leszek Sołdan 2d
   wm: Włodzimierz Malinowski 2d
@@ -23,6 +21,7 @@ top:
   - wm
 stages:
   - type: ladder-table
+    date: 1982-10-08 - 1982-10-11
     order:
       - ls
       - wm
@@ -63,12 +62,16 @@ stages:
       - - ls-mk ls
         - wm-jl wm
       - - ls-wm ls
-      - - mk-jl mk
-        - jf-kg jf
-        - jf-js jf
-        - kg-js kg
-        - ld-jm ld
-  - type: match
+    playoffs:
+      - mk-jl mk
+      - jf-kg jf
+      - jf-js jf
+      - kg-js kg
+      - ld-jm ld
+  - type: final
+    date: 1982-10-11
+    requiredWins: 2
+    includePrevious: false
     games:
       - jk-ls jk
       - jk-ls jk

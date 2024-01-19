@@ -1,6 +1,4 @@
 location: Kraków
-start: 2010-11-25
-end: 2010-11-28
 referee: Krzysztof Bożek
 players:
   ls: Leszek Sołdan 5d
@@ -17,6 +15,7 @@ top:
   - kg
 stages:
   - type: league
+    date: 2010-11-25 - 2010-11-28
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T101125A
     komi: 6.5
     time: 90m + 60s byo

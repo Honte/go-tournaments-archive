@@ -1,6 +1,4 @@
 location: Tuchola
-start: 1996-11-08
-end: 1996-11-11
 players:
   ls: Leszek Sołdan 6d
   mf: Mariusz Ferenc 4d
@@ -16,6 +14,7 @@ top:
   - mf
 stages:
   - type: league
+    date: 1996-11-08 - 1996-11-11
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T961108
     komi: 5.5
     breakers:
@@ -51,8 +50,11 @@ stages:
         - jc-gs jc
         - jl-kg jl
         - wm-dt wm
-  - type: match
+  - type: final
+    date: 1996-12-07 - 1996-12-08
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T961207C
+    requiredWins: 3
+    includePrevious: true
     komi: 5.5
     games:
       - jc-ls ls

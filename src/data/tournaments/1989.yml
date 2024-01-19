@@ -1,6 +1,4 @@
 location: Warszawa
-start: 1989-11-23
-end: 1989-11-26
 players:
   jk: Janusz Kraszek 5d
   ls: Leszek Sołdan 5d
@@ -16,6 +14,7 @@ top:
   - gie
 stages:
   - type: league
+    date: 1989-11-23 - 1989-11-26
     breakers:
       - wins
       - sodos
@@ -49,7 +48,10 @@ stages:
         - gie-kk gie
         - mf-ww ww
         - rz-rp rz
-  - type: match
+  - type: final
+    date: 1990-01-06 - 1990-01-07
+    requiredWins: 3
+    includePrevious: true
     games:
       - jk-ls jk
       - jk-ls ls

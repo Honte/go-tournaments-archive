@@ -1,6 +1,4 @@
 location: Wodzisław Śląski
-start: 1995-12-14
-end: 1995-12-19
 players:
   ls: Leszek Sołdan 5d
   mf: Mariusz Ferenc 4d
@@ -16,6 +14,7 @@ top:
   - jl
 stages:
   - type: league
+    date: 1995-12-14 - 1995-12-19
     breakers:
       - wins
       - sodos
@@ -48,8 +47,11 @@ stages:
         - kg-mf kg
         - jc-tp jc
         - jf-ww jf
-  - type: match
+  - type: final
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T960128A
+    date: 1996-01-28
+    requiredWins: 3
+    includePrevious: true
     games:
       - ls-mf ls:W
       - ls-mf ls:B

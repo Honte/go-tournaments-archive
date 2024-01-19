@@ -1,6 +1,4 @@
 location: Warszawa
-start: 1985-11-23
-end: 1985-11-26
 players:
   ls: Leszek Sołdan 4d
   wm: Włodzimierz Malinowski 3d
@@ -26,6 +24,7 @@ top:
   - wm
 stages:
   - type: ladder-table
+    date: 1985-11-23 - 1985-11-26
     order:
       - ls
       - wm
@@ -76,16 +75,20 @@ stages:
       - - ls-gie ls
         - wm-rz wm
       - - ls-wm ls
-      - - gie-rz gie
-        - gs-jl gs
-        - wg-js wg
-        - kg-km kg
-        - kg-mk kg
-        - ww-gg ww
-        - ww-sm ww
-        - gg-sm gg
-        - sm-kk sm
-  - type: match
+    playoffs:
+      - gie-rz gie
+      - gs-jl gs
+      - wg-js wg
+      - kg-km kg
+      - kg-mk kg
+      - ww-gg ww
+      - ww-sm ww
+      - gg-sm gg
+      - sm-kk sm
+  - type: final
+    date: 1985-11-27 - 1985-11-28
+    requiredWins: 2
+    includePrevious: false
     games:
       - jk-ls jk
       - jk-ls jk

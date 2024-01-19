@@ -1,6 +1,4 @@
 location: Warszawa
-start: 2016-08-11
-end: 2016-08-14
 referee: Justyna Płatek
 website: https://mp.go.art.pl/2016
 players:
@@ -18,6 +16,7 @@ top:
   - mm
 stages:
   - type: league
+    date: 2016-08-11 - 2016-08-14
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T160811A
     time: 90m + 60s byo
     komi: 6.5

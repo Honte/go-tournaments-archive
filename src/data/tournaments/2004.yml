@@ -1,6 +1,4 @@
 location: Biłgoraj
-start: 2004-11-11
-end: 2004-11-14
 players:
   jk: Janusz Kraszek 5d
   kh: Koichiro Habu 4d
@@ -16,6 +14,7 @@ top:
   - jk
 stages:
   - type: league
+    date: 2004-11-11 - 2004-11-14
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T041111A
     komi: 6.5
     breakers:

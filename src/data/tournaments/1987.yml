@@ -1,6 +1,4 @@
 location: Warszawa
-start: 1987-11-26
-end: 1987-11-29
 players:
   rz: Robert Zabłocki 4d
   ls: Leszek Sołdan 4d
@@ -16,6 +14,7 @@ top:
   - ku
 stages:
   - type: league
+    date: 1987-11-26 - 1987-11-29
     breakers:
       - wins
       - sodos
@@ -49,7 +48,10 @@ stages:
         - ls-gg ls
         - ku-jr jr
         - gie-gs gie
-  - type: match
+  - type: final
+    date: 1987-12-19
+    requiredWins: 3
+    includePrevious: true
     games:
       - rz-ls ls
       - rz-ls ls

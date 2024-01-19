@@ -1,6 +1,4 @@
 location: Warszawa
-start: 1990-11-29
-end: 1990-12-02
 players:
   ls: Leszek Sołdan 5d
   jk: Janusz Kraszek 5d
@@ -16,6 +14,7 @@ top:
   - ku
 stages:
   - type: league
+    date: 1990-11-29 - 1990-12-02
     breakers:
       - wins
       - sodos
@@ -48,7 +47,10 @@ stages:
         - ku-mk ku
         - jl-rz jl
         - mf-kg mf
-  - type: match
+  - type: final
+    date: 1991-01-05
+    requiredWins: 3
+    includePrevious: true
     games:
       - jk-ls ls
       - jk-ls ls

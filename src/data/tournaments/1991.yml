@@ -1,6 +1,4 @@
 location: Warszawa
-start: 1991-11-14
-end: 1991-11-17
 players:
   kg: Krzysztof Giedrojć 4d
   jl: Jan Lubos 3d
@@ -16,6 +14,7 @@ top:
   - mf
 stages:
   - type: league
+    date: 1991-11-14 - 1991-11-17
     breakers:
       - wins
       - sodos
@@ -48,7 +47,10 @@ stages:
         - jl-ku jl
         - mf-mk mf
         - jr-tp jr
-  - type: match
+  - type: final
+    date: 1991-12-14
+    requiredWins: 3
+    includePrevious: true
     games:
       - kg-jl kg
       - kg-jl kg

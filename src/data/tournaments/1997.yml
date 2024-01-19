@@ -1,6 +1,4 @@
 location: Wodzisław Śląski
-start: 1997-11-08
-end: 1997-11-11
 players:
   ls: Leszek Sołdan 6d
   jc: Janusz Chłodek 3d
@@ -15,6 +13,7 @@ top:
   - kg
 stages:
   - type: league
+    date: 1997-11-08 - 1997-11-11
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T971108A
     komi: 5.5
     breakers:
@@ -43,7 +42,10 @@ stages:
       - - ls-jc ls:B+R sgf:1997/ls-jc.sgf
         - jl-mf jl:W+12.5 sgf:1997/jl-mf.sgf
         - kg-dt kg:B+35.5 sgf:1997/kg-dt.sgf
-  - type: match
+  - type: final
+    date: 1997-11-29
+    requiredWins: 2
+    includePrevious: false
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T971129E
     komi: 5.5
     games:

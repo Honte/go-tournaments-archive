@@ -1,6 +1,4 @@
 location: Warszawa
-start: 1984-11-01
-end: 1984-11-04
 players:
   ls: Leszek Sołdan 4d
   gie: Krzysztof Giedrojć 2d
@@ -35,6 +33,7 @@ top:
   - gie
 stages:
   - type: ladder-table
+    date: 1984-11-01 - 1984-11-04
     order:
       - ls
       - gie,js
@@ -114,14 +113,18 @@ stages:
         - gie-jk gie
       - - ls-js ls
       - - ls-gie ls
-      - - jf-jl jf
-        - kk-wm kk
-        - kk-ww kk
-        - wm-ww wm
-        - mk-kg mk
-        - mk-gs mk
-        - gs-kg gs
-  - type: match
+    playoffs:
+      - jf-jl jf
+      - kk-wm kk
+      - kk-ww kk
+      - wm-ww wm
+      - mk-kg mk
+      - mk-gs mk
+      - gs-kg gs
+  - type: final
+    date: 1984-12-08 - 1984-12-09
+    requiredWins: 2
+    includePrevious: false
     games:
       - krasz-ls krasz
       - krasz-ls krasz

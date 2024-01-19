@@ -19,6 +19,7 @@ export async function loadTournaments() {
     const year = Number(path.parse(file).name);
     const players = {};
     const games = {};
+    const dates = []
 
     for (const id in json.players) {
       const details = json.players[id].match(PLAYER_REGEX);
@@ -37,9 +38,11 @@ export async function loadTournaments() {
     const stages = [];
     for (const stage of json.stages) {
       const target = {
-        ...stage
+        ...stage,
+        date: parseDates(stage.date)
       };
 
+      dates.push(...target.date)
       stages.push(target);
 
       switch (stage.type) {
@@ -48,7 +51,10 @@ export async function loadTournaments() {
           target.rounds = stage.rounds.map((round) => parseGames(games, round));
           target.table = createTable(target, games, players);
           break;
-        case 'match':
+        case 'final':
+          target.games = parseGames(games, stage.games);
+          target.summary = createFinalSummary(target, games)
+          break;
         case 'round-robin-table':
           target.games = parseGames(games, stage.games);
           break;
@@ -58,6 +64,7 @@ export async function loadTournaments() {
     tournaments.push({
       id: year,
       ...json,
+      ...getDateRange(dates),
       year,
       games,
       players,
@@ -147,4 +154,84 @@ function getId(repository) {
   } while (id in repository);
 
   return id;
+}
+
+function parseDates(date) {
+  if (Array.isArray(date)) {
+    return date.map(parseDates).flat();
+  }
+
+  const [start, end] = date.split(' - ');
+
+  if (!end) {
+    return [{ start, end: start }]
+  }
+
+  return [{ start, end }]
+}
+
+function getDateRange(dates) {
+  const all = dates
+    .reduce((list, { start, end }) => {
+      list.push([start, +new Date(start)])
+      list.push([end, +new Date(end)])
+      return list;
+    }, [])
+    .sort((a,b) => b[1] - b[0])
+
+  return {
+    start: all[0][0],
+    end: all[all.length - 1][0]
+  }
+}
+
+function createFinalSummary(stage, games) {
+  const score = {};
+
+  for (const id of stage.games) {
+    const [a, b] = games[id].players;
+
+    score[a.id] = (score[a.id] || 0) + Number(a.won);
+    score[b.id] = (score[b.id] || 0) + Number(b.won);
+  }
+
+  const result = {
+    winner: null,
+    loser: null,
+    previous: null,
+    score,
+  }
+
+  const [home, away] = Object.keys(score);
+
+  if (stage.includePrevious) {
+    for (const game of iterateGames(games, home, away)) {
+      if (!stage.games.includes(game.id)) {
+        const winner = game.players.find((p) => p.won);
+
+        result.previous = winner.id;
+        result.score[winner.id] += 1;
+        break;
+      }
+    }
+  }
+
+  result.winner = score[home] > score[away] ? home : away;
+  result.loser = result.winner === away ? home : away
+
+  return result;
+}
+
+function* iterateGames(games, playerA, playerB) {
+  for (const id in games) {
+    const game = games[id];
+    const [a, b] = game.players;
+
+    if (
+      (a.id === playerA && b.id === playerB) ||
+      (a.id === playerB && b.id === playerA)
+    ) {
+      yield game;
+    }
+  }
 }
