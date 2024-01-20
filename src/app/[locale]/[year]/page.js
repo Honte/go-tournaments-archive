@@ -8,6 +8,7 @@ import { StageFinal } from '@/components/stageFinal';
 import { Ladder } from '@/components/ladder';
 import { loadTranslations, SUPPORTED_LOCALES } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
+import { RoundRobin } from '@/components/roundRobin';
 
 export async function generateMetadata({params: {year, locale}}) {
   const translations = await loadTranslations(locale);
@@ -57,6 +58,8 @@ export default async function Edition({params: {year, locale}}) {
             return <Ladder stage={stage} translations={translations} games={games} players={players}/>;
           case 'final':
             return <StageFinal stage={stage} translations={translations} games={games} players={players}/>;
+          case 'round-robin-table':
+            return <RoundRobin stage={stage} translations={translations} games={games} players={players}/>;
           default:
             return (
               <div className="my-4">

@@ -5,6 +5,7 @@ import slug from 'slug';
 import { parse } from 'yaml';
 import { createTable } from '@/data/table';
 import { createLadderTable } from '@/data/ladderTable';
+import { createTableWithoutRounds } from '@/data/tableWithoutRounds';
 
 const PLAYER_REGEX = /^(?<name>[\p{Letter} -]+)( (?<rank>[0-9]{1,2}[dkp])?)?$/u;
 const GAME_REGEX = /(?<home>[a-z]+)-(?<away>[a-z]+) (?<winner>[a-z]+)(:(?<result>[?a-zA-Z0-9+,.:]+))?( (?<props>.+))?/i;
@@ -62,7 +63,10 @@ export async function loadTournaments() {
           break;
         case 'round-robin-table':
           target.games = parseGames(games, stage.games);
+          target.table = createTableWithoutRounds(target, games, players);
           break;
+        default:
+          throw new Error(`Unrecognized stage ${stage.type}`);
       }
     }
 
