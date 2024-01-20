@@ -1,8 +1,8 @@
-import { getTranslations } from '@/i18n/server';
+import { getTranslator } from '@/i18n/translator';
 import { Game } from '@/components/game';
 
-export async function StageFinal({stage, games, players, locale}) {
-  const t = await getTranslations(locale);
+export function StageFinal({stage, games, players, translations}) {
+  const t = getTranslator(translations)
   const {
     requiredWins,
     includePrevious = false,
@@ -20,7 +20,7 @@ export async function StageFinal({stage, games, players, locale}) {
   return (
     <div className="my-4">
       <h2 className="text-xl font-bold pb-1 my-2 border-b-pgc-dark border-b-2">{t('stage.final')}</h2>
-      <p>{t('stage.requiredWins', {wins: requiredWins})} {includePrevious ? t('stage.includePreviousWins') : ''}</p>
+      <p>{t('stage.requiredWins', requiredWins)} {includePrevious ? t('stage.includePreviousWins') : ''}</p>
       <div className="bg-gray-200 p-2 my-2 md:p-3 text-lg flex items-center text-center gap-2">
         <strong>{players[winner].name}</strong>
         <span>&ndash;</span>
@@ -28,7 +28,7 @@ export async function StageFinal({stage, games, players, locale}) {
         <strong>{result}</strong>
         {prev && <span>{prev}</span>}
       </div>
-      {stage.games.map((game) => <Game key={game} game={games[game]} t={t} players={players}/>)}
+      {stage.games.map((game) => <Game key={game} game={games[game]} translations={translations} players={players}/>)}
     </div>
   );
 }

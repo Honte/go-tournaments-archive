@@ -1,7 +1,7 @@
-import { getTranslations } from '@/i18n/server';
+import { getTranslator } from '@/i18n/translator';
 
-export async function Awarded({ tournament, locale }) {
-  const t = await getTranslations(locale);
+export function Awarded({ tournament, translations }) {
+  const t = getTranslator(translations);
   const { top, players } = tournament;
   const awarded = top.map((ids) => ids.split(',').map((id) => `${players[id].name} (${players[id].rank})`).join(', '))
 

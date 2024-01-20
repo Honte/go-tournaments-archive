@@ -1,9 +1,9 @@
-import { getTranslations } from '@/i18n/server';
 import { ExternalLink } from '@/components/externalLink';
 import { Details } from '@/components/details';
+import { getTranslator } from '@/i18n/translator';
 
-export async function TournamentDetails({ tournament, locale }) {
-  const t = await getTranslations(locale);
+export function TournamentDetails({ tournament, translations }) {
+  const t = getTranslator(translations)
   const details = {};
 
   if (tournament.location) {
@@ -11,15 +11,15 @@ export async function TournamentDetails({ tournament, locale }) {
   }
 
   if (tournament.start) {
-    details[t('details.start')] = formatDate(tournament.start, locale)
+    details[t('details.start')] = formatDate(tournament.start, translations.locale)
   }
 
   if (tournament.end) {
-    details[t('details.end')] = formatDate(tournament.end, locale)
+    details[t('details.end')] = formatDate(tournament.end, translations.locale)
   }
 
   if (tournament.website) {
-    details[t('details.website')] = <ExternalLink title={t('details.goToWebsite', { year: tournament.year })} url={tournament.website}/>
+    details[t('details.website')] = <ExternalLink title={t('details.goToWebsite', tournament.year)} url={tournament.website}/>
   }
 
   if (tournament.referee) {

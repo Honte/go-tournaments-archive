@@ -1,10 +1,10 @@
-import { getTranslations } from '@/i18n/server';
 import { ExternalLink } from '@/components/externalLink';
 import { Details } from '@/components/details';
 import { Breaker } from '@/components/breaker';
+import { getTranslator } from '@/i18n/translator';
 
-export async function StageDetails({stage, locale}) {
-  const t = await getTranslations(locale);
+export function StageDetails({stage, translations}) {
+  const t = getTranslator(translations)
   const details = {};
 
   if (stage.egd) {
@@ -25,7 +25,7 @@ export async function StageDetails({stage, locale}) {
 
   if (stage.breakers?.length) {
     details[t('stage.breakers')] = <ol className="mx-5 list-decimal">
-      {stage.breakers.map((breaker) => <li key={breaker}><Breaker t={t} breaker={breaker}/></li>)}
+      {stage.breakers.map((breaker) => <li key={breaker}><Breaker translations={translations} breaker={breaker}/></li>)}
     </ol>;
   }
 

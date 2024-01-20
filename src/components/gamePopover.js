@@ -3,12 +3,10 @@
 import { Game } from '@/components/game';
 import { autoUpdate, useFloating } from '@floating-ui/react';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { useTranslations } from '@/i18n/client';
 
 const EVENT = 'show-game-popover';
 
-export function GamePopover({ locale }) {
-  const t = useTranslations(locale);
+export function GamePopover({ translations }) {
   const [state, setState] = useState(null)
   const {refs, floatingStyles, elements} = useFloating({
     whileElementsMounted: autoUpdate,
@@ -61,7 +59,7 @@ export function GamePopover({ locale }) {
             <h3 className="font-semibold ">{state?.title}</h3>
           </div>}
           <div className="px-4">
-            <Game game={state.game} players={state.players} t={t} wide={false}/>
+            <Game game={state.game} players={state.players} translations={translations} wide={false}/>
           </div>
         </div>
       </div>}

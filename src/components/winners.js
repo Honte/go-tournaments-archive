@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import { getTranslations } from '@/i18n/server';
+import { getTranslator } from '@/i18n/translator';
 
-export async function Winners({tournaments, locale, className}) {
-  const t = await getTranslations(locale);
+export function Winners({tournaments, translations, className}) {
+  const t = getTranslator(translations);
 
   return (
     <div className={className}>
@@ -21,7 +21,7 @@ export async function Winners({tournaments, locale, className}) {
           <tr key={year} className="text-center even:bg-gray-200">
             <td className="p-1">
               <Link className="sm:text-xl font-bold text-pgc-primary underline hover:text-pgc-hover"
-                    href={`/${locale}/${year}`}>
+                    href={`/${translations.locale}/${year}`}>
                 {year}
               </Link>
             </td>

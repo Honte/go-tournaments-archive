@@ -1,9 +1,8 @@
-import { getTranslations } from '@/i18n/server';
-import { GamePopoverTrigger } from '@/components/gamePopover';
+import { getTranslator } from '@/i18n/translator';
 import { GameCell } from '@/components/gameCell';
 
-export async function LadderResults({ stage, players, games, locale }) {
-  const t = await getTranslations(locale);
+export function LadderResults({ stage, players, games, translations }) {
+  const t = getTranslator(translations)
   const { table, rounds, playoffs } = stage;
 
   return (
@@ -14,7 +13,7 @@ export async function LadderResults({ stage, players, games, locale }) {
             <th className="p-1">{t('table.place')}</th>
             <th className="p-1 text-left">{t('table.name')}</th>
             <th className="p-1">{t('table.rank')}</th>
-            {rounds.map((round, index) => <th className="p-1" key={index}>{t('table.round', { round: index + 1})}</th>)}
+            {rounds.map((round, index) => <th className="p-1" key={index}>{t('table.round', index + 1)}</th>)}
             {playoffs?.length ? <th className="p-1">{t('table.playoffs')}</th> : ''}
           </tr>
         </thead>

@@ -1,8 +1,8 @@
-import { getTranslations } from '@/i18n/server';
 import { FaMedal } from 'react-icons/fa6';
+import { getTranslator } from '@/i18n/translator';
 
-export async function Medalists({ stats, locale }) {
-  const t = await getTranslations(locale)
+export function Medalists({ stats, translations }) {
+  const t = getTranslator(translations)
 
   return (
     <div>

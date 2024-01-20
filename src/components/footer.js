@@ -2,7 +2,7 @@ import { ExternalLink } from '@/components/externalLink';
 
 const START = 2024;
 
-export function Footer({ locale }) {
+export function Footer() {
   const year = new Date().getFullYear()
   const copyright = year === START ? START : `${START} - ${year}`
 

@@ -1,9 +1,10 @@
 import { getTranslations } from '@/i18n/server';
 import { Breaker } from '@/components/breaker';
 import { GameCell } from '@/components/gameCell';
+import { getTranslator } from '@/i18n/translator';
 
-export async function Results({stage, players, games, locale}) {
-  const t = await getTranslations(locale);
+export function Results({stage, players, games, translations}) {
+  const t = getTranslator(translations)
   const {breakers, table, rounds} = stage;
 
   const visibleBreakers = breakers.filter((breaker) => breaker !== 'direct' && breaker !== 'rank');
@@ -16,8 +17,8 @@ export async function Results({stage, players, games, locale}) {
           <th className="p-1">{t('table.place')}</th>
           <th className="p-1 text-left">{t('table.name')}</th>
           <th className="p-1">{t('table.rank')}</th>
-          {rounds.map((round, index) => <th className="p-1" key={index}>{t('table.round', {round: index + 1})}</th>)}
-          {visibleBreakers.map((breaker, index) => <th className="p-1" key={index}><Breaker t={t} breaker={breaker}/>
+          {rounds.map((round, index) => <th className="p-1" key={index}>{t('table.round', index + 1)}</th>)}
+          {visibleBreakers.map((breaker, index) => <th className="p-1" key={index}><Breaker translations={translations} breaker={breaker}/>
           </th>)}
         </tr>
         </thead>

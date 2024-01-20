@@ -1,7 +1,7 @@
-import { getTranslations } from '@/i18n/server';
+import { getTranslator } from '@/i18n/translator';
 
-export async function TotalStats({ locale, stats }) {
-  const t = await getTranslations(locale)
+export function TotalStats({ translations, stats }) {
+  const t = getTranslator(translations)
 
   return (
     <div>

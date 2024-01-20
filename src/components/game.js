@@ -1,8 +1,10 @@
 import { useMemo } from 'react';
+import { getTranslator } from '@/i18n/translator';
 import { Stone } from '@/components/stone';
 import { ExternalButton } from '@/components/externalButton';
 
-export function Game({game, players, t, wide = true }) {
+export function Game({game, players, translations, wide = true }) {
+  const t = getTranslator(translations);
   const [home, away] = useMemo(() => game.players.map((p) => ({...players[p.id], ...p})), [game, players]);
 
   return (

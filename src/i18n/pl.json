@@ -20,7 +20,7 @@
     "start": "Start",
     "end": "Koniec",
     "website": "Strona WWW",
-    "goToWebsite": "Przejdź na stronę MP %{year}",
+    "goToWebsite": "Przejdź na stronę MP %{0}",
     "referee": "Sędzia",
     "awarded": "Medaliści"
   },
@@ -34,7 +34,7 @@
     "komi": "Komi",
     "time": "Czas",
     "final": "Finał",
-    "requiredWins": "Finał rozgrywany do %{wins} wygranych partii.",
+    "requiredWins": "Finał rozgrywany do %{0} wygranych partii.",
     "includePreviousWins": "Bezpośredni pojedynek z poprzedniego etapu jest wliczany do wyniku."
   },
   "breakers": {
@@ -55,7 +55,7 @@
     "place": "Miejsce",
     "name": "Zawodnik",
     "rank": "Siła",
-    "round": "Runda %{round}",
+    "round": "Runda %{0}",
     "playoffs": "Play-Off"
   },
   "game": {
@@ -73,7 +73,7 @@
   },
   "stats": {
     "medalists": "Medaliści",
-    "attendants": "Top %{count} uczestników",
+    "attendants": "Top %{0} uczestników",
     "total": {
       "title": "Archiwum w liczbach",
       "tournaments": "Wydarzeń",
