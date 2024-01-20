@@ -79,6 +79,7 @@
       "tournaments": "Wydarzeń",
       "participants": "Uczestników",
       "games": "Gier",
+      "black": "% wygranych przez czarne",
       "resigned": "Wygranych przez poddanie",
       "timeout": "Wygranych przez czas",
       "sgfs": "Zapisów partii SGF",

@@ -11,6 +11,7 @@ export async function TotalStats({ locale, stats }) {
           <li>{t('stats.total.tournaments')} - {stats.tournaments}</li>
           <li>{t('stats.total.participants')} - {stats.attendants.length}</li>
           <li>{t('stats.total.games')} - {stats.games}</li>
+          <li>{t('stats.total.black')} - {(stats.black * 100).toFixed(2)}%</li>
           <li>{t('stats.total.resigned')} - {stats.resign}</li>
           <li>{t('stats.total.timeout')} - {stats.timeout}</li>
           <li>{t('stats.total.sgfs')} - {stats.sgfs}</li>

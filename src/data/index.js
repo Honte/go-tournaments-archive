@@ -10,6 +10,8 @@ export function getStats() {
   const winners = {};
   const attendants = {}
   let games = 0;
+  let black = 0;
+  let white = 0;
   let resign = 0;
   let timeout = 0;
   let sgfs = 0
@@ -40,6 +42,14 @@ export function getStats() {
       const game = tournamentGames[id];
 
       games++;
+
+      if (game.result?.startsWith('B')) {
+        black++
+      }
+
+      if (game.result?.startsWith('W')) {
+        white++
+      }
 
       if (game.result?.includes('R')) {
         resign++;
@@ -83,6 +93,7 @@ export function getStats() {
     relays,
     streams,
     analysis,
+    black: black / (black + white),
     winners: Object.values(winners).sort((a, b) => b.score - a.score),
     attendants: Object.values(attendants).sort((a, b) => b.attended.length - a.attended.length)
   }
