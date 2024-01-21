@@ -55,7 +55,7 @@ export function TopNavigation({tournaments, locale, current}) {
     function onMouseMove(currentEvent) {
       const distance = currentEvent.clientX - lastEvent.clientX;
 
-      if (Math.abs(distance) >= THRESHOLD) {
+      if (navRef.current && Math.abs(distance) >= THRESHOLD) {
         navRef.current.move(-distance);
         lastEvent = currentEvent;
         changed = true;
@@ -86,7 +86,7 @@ export function TopNavigation({tournaments, locale, current}) {
       console.log(currentEvent);
       const distance = currentEvent.targetTouches?.[0]?.clientX - lastEvent.targetTouches?.[0]?.clientX;
 
-      if (Math.abs(distance) >= THRESHOLD) {
+      if (navRef.current && Math.abs(distance) >= THRESHOLD) {
         navRef.current.move(-distance);
         lastEvent = currentEvent;
         changed = true;
@@ -112,9 +112,7 @@ export function TopNavigation({tournaments, locale, current}) {
   }, [elRef, delayRef, onWheel, onMouseDown, onTouchStart, clearNavigate]);
 
   return (
-    <div
-      className="container flex mx-auto items-center content-center overflow-hidden my-2 faded-left before:w-1/5 faded-right after:w-1/5"
-      ref={elRef}>
+    <div ref={elRef}>
       <YearsNavigation years={years} current={current} locale={locale} ref={navRef}/>
     </div>
   );

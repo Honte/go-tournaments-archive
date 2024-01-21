@@ -1,14 +1,14 @@
-export function getTranslator(translations, scope) {
+export function getTranslator(translations, options) {
   let dict = translations;
 
-  if (scope) {
-    for (const step of scope.split('.')) {
+  if (options?.scope) {
+    for (const step of options.scope.split('.')) {
       dict = dict?.[step];
     }
   }
 
   if (!dict) {
-    throw new Error(`No translations${scope ? ` at ${scope}` : ''}`);
+    throw new Error(`No translations${options?.scope ? ` at ${options.scope}` : ''}`);
   }
 
   return function translate(strings, ...params) {
@@ -24,9 +24,13 @@ export function getTranslator(translations, scope) {
       return msg;
     }
 
-    if (!translation) {
-      console.warn(`Missing translation: ${msg}`);
-      return msg;
+    if (typeof translation === 'undefined') {
+      if (!options?.allowMissing) {
+        console.warn(`Missing translation: ${msg}`);
+        return msg;
+      }
+
+      return undefined;
     }
 
     return replace(translation, ...params)
