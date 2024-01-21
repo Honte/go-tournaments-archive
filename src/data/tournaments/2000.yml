@@ -23,15 +23,15 @@ stages:
       - starting
     rounds:
       - - kg-wm kg
-        - ls-mw ls:W+R sgf:2000/ls-mw.sgf
+        - ls-mw ls:W+R sgf:2000/2000-1-1-2-ls-mw.sgf
         - jc-mb jc
         - jl-ku jl
       - - kg-mw kg
-        - ls-wm ls:B+R sgf:2000/ls-wm.sgf
+        - ls-wm ls:B+R sgf:2000/2000-1-2-2-ls-wm.sgf
         - jc-jl jc
         - ku-mb ku
       - - kg-ku kg
-        - ls-jc ls:W+R sgf:2000/ls-jc.sgf
+        - ls-jc ls:W+R sgf:2000/2000-1-3-2-ls-jc.sgf
         - mb-mw mb
         - jl-wm jl
       - - kg-jc kg
