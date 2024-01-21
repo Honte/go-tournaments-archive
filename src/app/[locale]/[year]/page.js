@@ -1,5 +1,4 @@
 import { notFound } from 'next/navigation';
-import { YearsNavigation } from '@/components/yearsNavigation';
 import { getTournaments } from '@/data';
 import { League } from '@/components/league';
 import { TournamentDetails } from '@/components/tournamentDetails';
@@ -9,6 +8,7 @@ import { Ladder } from '@/components/ladder';
 import { loadTranslations, SUPPORTED_LOCALES } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
 import { RoundRobin } from '@/components/roundRobin';
+import { TopNavigation } from '@/components/topNavigation';
 
 export async function generateMetadata({params: {year, locale}}) {
   const translations = await loadTranslations(locale);
@@ -43,7 +43,7 @@ export default async function Edition({params: {year, locale}}) {
 
   return (
     <>
-      <YearsNavigation locale={locale} years={tournaments.map((t) => t.id)} current={Number(year)}/>
+      <TopNavigation locale={locale} tournaments={tournaments} current={Number(year)}/>
 
       <div className="sm:flex sm:gap-8 my-4">
         <TournamentDetails tournament={tournament} translations={translations}/>

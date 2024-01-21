@@ -12,6 +12,7 @@
     "@floating-ui/react": "^0.26.6",
     "@formatjs/intl-localematcher": "^0.5.4",
     "fast-glob": "^3.3.2",
+    "lodash-es": "^4.17.21",
     "negotiator": "^0.6.3",
     "next": "14.1.0",
     "react": "^18",
