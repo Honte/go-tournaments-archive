@@ -23,28 +23,28 @@ stages:
       - starting
     rounds:
       - - ls-dt ls
-        - kg-ku kg
-        - jc-mf jc
-        - jl-kgr jl
+        - kg-ku kg:B+51.5 sgf:1998/kg-ku.sgf
+        - jc-mf jc:W+R sgf:1998/jc-mf.sgf
+        - jl-kgr jl:B+R sgf:1998/jl-kgr.sgf
       - - ls-kgr ls
-        - kg-jc kg
-        - jl-ku jl
-        - mf-dt mf
+        - kg-jc kg:W sgf:1998/kg-jc.sgf
+        - jl-ku jl:W+6.5 sgf:1998/jl-ku.sgf
+        - mf-dt mf:W+R sgf:1998/mf-dt.sgf
       - - ls-ku ls
-        - kg-dt kg
-        - jc-jl jc
-        - kgr-mf kgr
+        - kg-dt kg:B+24.5 sgf:1998/kg-dt.sgf
+        - jc-jl jc:W sgf:1998/jc-jl.sgf
+        - kgr-mf kgr:W+6.5 sgf:1998/kgr-mf.sgf
       - - ls-jc ls
         - kg-kgr kg
-        - jl-dt jl
-        - ku-mf ku
+        - jl-dt jl:W+5.5 sgf:1998/jl-dt.sgf
+        - ku-mf ku:B+12.5 sgf:1998/ku-mf.sgf
       - - ls-mf ls
         - kg-jl kg
-        - kgr-ku kgr
-        - dt-jc dt
+        - kgr-ku kgr:W+33.5 sgf:1998/kgr-ku.sgf
+        - dt-jc dt:W+R sgf:1998/dt-jc.sgf
       - - ls-kg ls
         - jc-kgr jc
-        - ku-dt ku
+        - ku-dt ku:W sgf:1998/ku-dt.sgf
         - mf-jl mf
       - - ls-jl ls
         - kg-mf kg
@@ -57,5 +57,5 @@ stages:
     includePrevious: false
     komi: 5.5
     games:
-      - kg-ls ls:B+R
-      - ls-kg ls:W+R
+      - kg-ls ls:B+R sgf:1998/kg-ls.sgf
+      - ls-kg ls:W+R sgf:1998/ls-kg.sgf
