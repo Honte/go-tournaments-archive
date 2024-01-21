@@ -1,12 +1,27 @@
 import { getRankValue } from '@/data/rank';
 
 export function createTable(stage, games, playersMap) {
-  const players = {};
+  const map = {
+    BYE: {
+      id: 'BYE',
+      place: 0,
+      wins: 0,
+      sos: 0,
+      sodos: 0,
+      sosos: 0,
+      starting: 0,
+      games: new Array(stage.rounds.length).fill(null),
+      won: [],
+      lost: [],
+      rank: 0
+    }
+  };
+  const players = [];
 
   let position = 1;
-  for (const player in playersMap) {
-    players[player] = {
-      id: player,
+  for (const id in playersMap) {
+    const player = {
+      id,
       place: 1,
       wins: 0,
       sos: 0,
@@ -16,8 +31,11 @@ export function createTable(stage, games, playersMap) {
       games: new Array(stage.rounds.length).fill(null),
       won: [],
       lost: [],
-      rank: getRankValue(playersMap[player].rank)
+      rank: getRankValue(playersMap[id].rank)
     };
+
+    map[id] = player;
+    players.push(player);
   }
 
   // collect wins & games
@@ -28,15 +46,15 @@ export function createTable(stage, games, playersMap) {
       const winner = a.won ? a.id : b.id;
       const loser = a.won ? b.id : a.id;
 
-      players[winner].wins += 1;
-      players[winner].won.push(loser);
-      players[loser].lost.push(winner);
-      players[winner].games[index] = {
+      map[winner].wins += 1;
+      map[winner].won.push(loser);
+      map[loser].lost.push(winner);
+      map[winner].games[index] = {
         opponent: loser,
         won: true,
         game
       };
-      players[loser].games[index] = {
+      map[loser].games[index] = {
         opponent: winner,
         won: false,
         game
@@ -45,39 +63,39 @@ export function createTable(stage, games, playersMap) {
   }
 
   // calculate sos & sodos
-  for (const id in players) {
-    const player = players[id];
+  for (const id in map) {
+    const player = map[id];
 
     for (const won of player.won) {
-      player.sos += players[won].wins;
-      player.sodos += players[won].wins;
+      player.sos += map[won].wins;
+      player.sodos += map[won].wins;
     }
 
     for (const lost of player.lost) {
-      player.sos += players[lost].wins;
+      player.sos += map[lost].wins;
     }
   }
 
   // calculate sosos
-  for (const id in players) {
-    const player = players[id];
+  for (const id in map) {
+    const player = map[id];
 
     for (const won of player.won) {
-      player.sosos += players[won].sos;
+      player.sosos += map[won].sos;
     }
 
     for (const lost of player.lost) {
-      player.sosos += players[lost].sos;
+      player.sosos += map[lost].sos;
     }
   }
 
-  const table = sort(Object.values(players), stage.breakers);
+  const table = sort(players, stage.breakers);
 
   // assign player index
   for (const player of table) {
     for (const game of player.games) {
       if (game?.opponent) {
-        game.index = players[game.opponent].index;
+        game.index = map[game.opponent].index;
         game.text = `${game.index}${game.won ? '+' : '-'}`
       }
     }

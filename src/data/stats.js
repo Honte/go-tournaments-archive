@@ -33,6 +33,10 @@ export function calculateStats(tournaments) {
     for (const id in tournamentGames) {
       const game = tournamentGames[id];
 
+      if (game.players.some((p) => p.id === 'BYE')) {
+        continue;
+      }
+
       games++;
 
       if (game.result?.startsWith('B')) {

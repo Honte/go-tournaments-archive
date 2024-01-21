@@ -24,24 +24,31 @@ stages:
       - - jl-kg jl:B+R sgf:1997/jl-kg.sgf
         - mf-dt mf:B+11.5 sgf:1997/mf-dt.sgf
         - kgr-jc kgr:W+R sgf:1997/kgr-jc.sgf
+        - ls-BYE ls
       - - ls-kgr ls:W+24.5 sgf:1997/ls-kgr.sgf
         - kg-mf kg:B+R sgf:1997/kg-mf.sgf
         - dt-jc dt:B+4.5 sgf:1997/dt-jc.sgf
+        - jl-BYE jl
       - - ls-dt ls:B+R sgf:1997/ls-dt.sgf
         - jl-kgr jl:B+R sgf:1997/jl-kgr.sgf
         - kg-jc kg:W+R sgf:1997/kg-jc.sgf
+        - mf-BYE mf
       - - ls-kg ls:W+21.5 sgf:1997/ls-kg.sgf
         - jl-dt jl:W+R sgf:1997/jl-dt.sgf
         - mf-kgr mf:W+12.5 sgf:1997/mf-kgr.sgf
+        - jc-BYE jc
       - - ls-jl ls:B+7.5 sgf:1997/ls-jl.sgf
         - mf-jc mf:W+0.5 sgf:1997/mf-jc.sgf
         - kgr-dt kgr:W+15.5 sgf:1997/kgr-dt.sgf
+        - kg-BYE kg
       - - ls-mf ls:W+R sgf:1997/ls-mf.sgf
         - jl-jc jl:B+R sgf:1997/jl-jc.sgf
         - kg-kgr kg:W+30.5 sgf:1997/kg-kgr.sgf
+        - dt-BYE dt
       - - ls-jc ls:B+R sgf:1997/ls-jc.sgf
         - jl-mf jl:W+12.5 sgf:1997/jl-mf.sgf
         - kg-dt kg:B+35.5 sgf:1997/kg-dt.sgf
+        - kgr-BYE kgr
   - type: final
     date: 1997-11-29
     requiredWins: 2
