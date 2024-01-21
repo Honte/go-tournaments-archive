@@ -1,3 +1,89 @@
 {
-  "header": "Polish Go Championships Archive"
+  "site": {
+    "name": "Polish Go Championships Archive",
+    "description": "Archive of all Polish Go Championships tournaments",
+    "yearDescription": "Results of PGC %{0}"
+  },
+  "navigation": {
+    "home": {
+      "anchor": "Home page",
+      "title": "Go to home page"
+
+    }
+  },
+  "details": {
+    "header": "About",
+    "location": "Venue",
+    "start": "Start",
+    "end": "End",
+    "website": "Website",
+    "goToWebsite": "Go to PGC %{0} website",
+    "referee": "Referee",
+    "awarded": "Medalists"
+  },
+  "stage": {
+    "details": "Details",
+    "league": "League",
+    "ladder": "Ladder",
+    "games": "Games",
+    "egd": "EGD",
+    "goToEGD": "See the tournament entry in the European Go Database",
+    "breakers": "Breakers",
+    "komi": "Komi",
+    "time": "Time",
+    "final": "The Final",
+    "requiredWins": "%{0} won matches are required to win the final.",
+    "includePreviousWins": "Direct match from previous stage counts toward final score."
+  },
+  "breakers": {
+    "wins": "Wins",
+    "sos": "SOS",
+    "sodos": "SODOS",
+    "sosos": "SOSOS",
+    "direct": "Direct match",
+    "starting": "Starting position",
+    "rank": "Rank",
+    "descriptions": {
+      "sos": "Sum of Opponents' Scores.",
+      "sodos": "Sum Of Defeated Opponents' Scores.",
+      "sosos": "Sum of Opponents' SOS -> sum of sums of opponents' scores."
+    }
+  },
+  "table": {
+    "place": "Place",
+    "name": "Name",
+    "rank": "Rank",
+    "round": "Round %{0}",
+    "playoffs": "Play-Off"
+  },
+  "game": {
+    "sgf": "Download SGF",
+    "ogs": "See the game's relay in the Online Go Server",
+    "yt": "See the video broadcast of the game",
+    "ai": "See the AI analysis of the game"
+  },
+  "winners": {
+    "title": "Medalists of Polish Go Championships",
+    "year": "Year",
+    "first": "Champion",
+    "second": "2nd place",
+    "third": "3rd place"
+  },
+  "stats": {
+    "medalists": "Medalists",
+    "attendants": "Top %{0} attendants",
+    "total": {
+      "title": "Archive in numbers",
+      "tournaments": "Events",
+      "participants": "Participants",
+      "games": "Games",
+      "black": "% won by black",
+      "resigned": "Won by resign",
+      "timeout": "Won by time",
+      "sgfs": "With game record",
+      "relays": "Relays on OGS",
+      "streams": "Video streamed",
+      "analysis": "Analyzed by AI"
+    }
+  }
 }

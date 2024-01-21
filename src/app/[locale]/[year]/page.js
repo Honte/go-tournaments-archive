@@ -17,8 +17,8 @@ export async function generateMetadata({params: {year, locale}}) {
   const t = getTranslator(translations);
 
   return {
-    title: t('site.name'),
-    description: t('site.description')
+    title: `${t('site.name')} - ${tournament.year}`,
+    description: t('site.yearDescription', tournament.year)
   };
 }
 
