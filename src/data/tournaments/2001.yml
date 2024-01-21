@@ -22,31 +22,31 @@ stages:
       - sodos
       - starting
     rounds:
-      - - jl-mb jl
-        - jk-ls jk
-        - kg-mw kg
-        - jc-ww jc
-      - - ls-mw ls
-        - jl-jc jl
-        - kg-jk kg
-        - mb-ww mb
-      - - ls-jl ls
-        - jk-mb jk
-        - ww-kg ww
-        - mw-jc mw
-      - - jk-jc jk
-        - kg-jl kg
-        - ww-ls ww
-        - mw-mb mw
-      - - ls-jc ls
-        - jl-mw jl
-        - jk-ww jk
-        - mb-kg mb
-      - - ls-mb ls
-        - jl-jk jl
-        - kg-jc kg
-        - ww-mw ww
-      - - ls-kg ls
-        - jl-ww jl
-        - jk-mw jk
-        - jc-mb jc
+      - - jl-mb jl:W+R sgf:2001/2001-1-1-1-jl-mb.sgf
+        - jk-ls jk:W sgf:2001/2001-1-1-2-jk-ls.sgf
+        - kg-mw kg:B+R sgf:2001/2001-1-1-3-kg-mw.sgf
+        - jc-ww jc:B+R sgf:2001/2001-1-1-4-jc-ww.sgf
+      - - ls-mw ls:W sgf:2001/2001-1-2-1-ls-mw.sgf
+        - jl-jc jl:B+R sgf:2001/2001-1-2-2-jl-jc.sgf
+        - kg-jk kg:W+14.5 sgf:2001/2001-1-2-3-kg-jk.sgf
+        - mb-ww mb:W+3.5 sgf:2001/2001-1-2-4-mb-ww.sgf
+      - - ls-jl ls:B sgf:2001/2001-1-3-1-ls-jl.sgf
+        - jk-mb jk:W+R sgf:2001/2001-1-3-2-jk-mb.sgf
+        - ww-kg ww:W+5.5 sgf:2001/2001-1-3-3-ww-kg.sgf
+        - mw-jc mw:W+12.5 sgf:2001/2001-1-3-4-mw-jc.sgf
+      - - jk-jc jk:B+9.5 sgf:2001/2001-1-4-1-jk-jc.sgf
+        - kg-jl kg sgf:2001/2001-1-4-2-kg-jl.sgf
+        - ww-ls ww:!
+        - mw-mb mw sgf:2001/2001-1-4-4-mw-mb.sgf
+      - - ls-jc ls:B+19.5 sgf:2001/2001-1-5-1-ls-jc.sgf
+        - jl-mw jl:B+R sgf:2001/2001-1-5-2-jl-mw.sgf
+        - jk-ww jk:W+11.5 sgf:2001/2001-1-5-3-jk-ww.sgf
+        - mb-kg mb:W+12.5 sgf:2001/2001-1-5-4-mb-kg.sgf
+      - - ls-mb ls:W+R sgf:2001/2001-1-6-1-ls-mb.sgf
+        - jl-jk jl:W+R sgf:2001/2001-1-6-2-jl-jk.sgf
+        - kg-jc kg:W+R sgf:2001/2001-1-6-3-kg-jc.sgf
+        - ww-mw ww:W+R sgf:2001/2001-1-6-4-ww-mw.sgf
+      - - ls-kg ls:W+29.5 sgf:2001/2001-1-7-1-ls-kg.sgf
+        - jl-ww jl:B+33.5 sgf:2001/2001-1-7-2-jl-ww.sgf
+        - jk-mw jk:B+R sgf:2001/2001-1-7-3-jk-mw.sgf
+        - jc-mb jc:B+R sgf:2001/2001-1-7-4-jc-mb.sgf
