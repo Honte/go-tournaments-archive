@@ -30,7 +30,7 @@ export function createLadderTable(stage, games) {
   // collect wins & games
   for (const [index, round] of stage.rounds.entries()) {
     for (const game of round) {
-      const [a, b] = games[game].players;
+      const { players: [a, b], result } = games[game];
 
       const winner = a.won ? a.id : b.id;
       const loser = a.won ? b.id : a.id;
@@ -39,19 +39,21 @@ export function createLadderTable(stage, games) {
         opponent: loser,
         index: map[loser]?.index,
         won: true,
+        result,
         game
       };
       map[loser].games[index] = {
         opponent: winner,
         index: map[winner]?.index,
         won: false,
+        result,
         game
       };
     }
   }
 
   for (const game of playoffs) {
-    const [a, b] = games[game].players;
+    const { players: [a, b], result } = games[game];
 
     const winner = a.won ? a.id : b.id;
     const loser = a.won ? b.id : a.id;
@@ -60,12 +62,14 @@ export function createLadderTable(stage, games) {
       opponent: loser,
       index: map[loser].index,
       won: true,
+      result,
       game
     });
     map[loser].playoffs.push({
       opponent: winner,
       index: map[winner].index,
       won: false,
+      result,
       game
     });
   }

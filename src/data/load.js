@@ -4,11 +4,11 @@ import path from 'path';
 import slug from 'slug';
 import { parse } from 'yaml';
 import { createTable } from '@/data/table';
-import { createLadderTable } from '@/data/ladderTable';
+import { createLadderTable } from '@/data/tableLadder';
 import { createTableWithoutRounds } from '@/data/tableWithoutRounds';
 
 const PLAYER_REGEX = /^(?<name>[\p{Letter} -]+)( (?<rank>[0-9]{1,2}[dkp])?)?$/u;
-const GAME_REGEX = /(?<home>[a-z]+)-(?<away>[a-z]+) (?<winner>[a-z]+)(:(?<result>[?a-zA-Z0-9+,.:]+))?( (?<props>.+))?/i;
+const GAME_REGEX = /(?<home>[a-z]+)-(?<away>[a-z]+) (?<winner>[a-z]+)(:(?<result>[?a-zA-Z!0-9+,.:]+))?( (?<props>.+))?/i;
 const GAME_RESULT_REGEX = /^(?<color>[BW])(\+(?<score>([RT?]|\d+([,.]5)?)))?$/i;
 
 export async function loadTournaments() {
@@ -120,7 +120,9 @@ function parseGame(string) {
   const winnerPlayer = home === winner ? homePlayer : awayPlayer;
   const loserPlayer = home === winner ? awayPlayer : homePlayer;
 
-  if (result) {
+  if (result === '!') {
+    winnerPlayer.score = '!'
+  } else if (result) {
     const gameResult = result.match(GAME_RESULT_REGEX);
 
     if (!gameResult) {

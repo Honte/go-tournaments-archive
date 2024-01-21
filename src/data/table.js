@@ -41,7 +41,7 @@ export function createTable(stage, games, playersMap) {
   // collect wins & games
   for (const [index, round] of stage.rounds.entries()) {
     for (const game of round) {
-      const [a, b] = games[game].players;
+      const { players: [a, b], result } = games[game];
 
       const winner = a.won ? a.id : b.id;
       const loser = a.won ? b.id : a.id;
@@ -52,11 +52,13 @@ export function createTable(stage, games, playersMap) {
       map[winner].games[index] = {
         opponent: loser,
         won: true,
+        result,
         game
       };
       map[loser].games[index] = {
         opponent: winner,
         won: false,
+        result,
         game
       };
     }

@@ -11,5 +11,5 @@ function getResult(entry) {
     return entry.won ? '++' : '--';
   }
 
-  return `${entry.index}${entry.won ? '+' : '-'}`;
+  return `${entry.index}${entry.won ? '+' : '-'}${entry.result === '!' ? '!' : ''}`;
 }

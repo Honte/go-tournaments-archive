@@ -5,7 +5,7 @@ export function createTableWithoutRounds(stage, games, players) {
 
   const results = {};
   for (const id of gameIds) {
-    const [home, away] = games[id].players;
+    const { players: [home, away], result } = games[id];
     const winner = home.won ? home.id : away.id;
     const loser = home.won ? away.id : home.id;
 
@@ -17,6 +17,7 @@ export function createTableWithoutRounds(stage, games, players) {
     }).games[loser] = {
       opponent: loser,
       won: true,
+      result,
       game: id
     };
 
@@ -28,6 +29,7 @@ export function createTableWithoutRounds(stage, games, players) {
     }).games[winner] = {
       opponent: winner,
       won: false,
+      result,
       game: id
     };
 
