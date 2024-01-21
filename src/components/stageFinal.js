@@ -1,7 +1,6 @@
 import { getTranslator } from '@/i18n/translator';
-import { Game } from '@/components/game';
 
-export function StageFinal({stage, games, players, translations}) {
+export function StageFinal({stage, players, translations}) {
   const t = getTranslator(translations)
   const {
     requiredWins,
@@ -18,8 +17,7 @@ export function StageFinal({stage, games, players, translations}) {
   const prev = includePrevious ? `(${score[winner] - Number(previous === winner)}:${score[loser] - Number(previous === loser)})` : '';
 
   return (
-    <div className="my-4">
-      <h2 className="text-xl font-bold pb-1 my-2 border-b-pgc-dark border-b-2">{t('stage.final')}</h2>
+    <>
       <p>{t('stage.requiredWins', requiredWins)} {includePrevious ? t('stage.includePreviousWins') : ''}</p>
       <div className="bg-gray-200 p-2 my-2 md:p-3 text-lg flex items-center text-center gap-2">
         <strong>{players[winner].name}</strong>
@@ -28,7 +26,6 @@ export function StageFinal({stage, games, players, translations}) {
         <strong>{result}</strong>
         {prev && <span>{prev}</span>}
       </div>
-      {stage.games.map((game) => <Game key={game} game={games[game]} translations={translations} players={players}/>)}
-    </div>
+    </>
   );
 }

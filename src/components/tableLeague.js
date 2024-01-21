@@ -1,9 +1,8 @@
-import { getTranslations } from '@/i18n/server';
 import { Breaker } from '@/components/breaker';
 import { GameCell } from '@/components/gameCell';
 import { getTranslator } from '@/i18n/translator';
 
-export function Results({stage, players, games, translations}) {
+export function TableLeague({stage, players, games, translations}) {
   const t = getTranslator(translations)
   const {breakers, table, rounds} = stage;
 

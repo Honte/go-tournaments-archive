@@ -1,9 +1,9 @@
 import { getTranslator } from '@/i18n/translator';
-import { GameCell } from '@/components/gameCell';
+import { GamePopoverTrigger } from '@/components/gamePopover';
 
-export function LadderResults({ stage, players, games, translations }) {
+export function TableWithoutRounds({ stage, players, games, translations }) {
   const t = getTranslator(translations)
-  const { table, rounds, playoffs } = stage;
+  const { table } = stage;
 
   return (
     <div className="w-full overflow-x-auto">
@@ -13,8 +13,8 @@ export function LadderResults({ stage, players, games, translations }) {
             <th className="p-1">{t('table.place')}</th>
             <th className="p-1 text-left">{t('table.name')}</th>
             <th className="p-1">{t('table.rank')}</th>
-            {rounds.map((round, index) => <th className="p-1" key={index}>{t('table.round', index + 1)}</th>)}
-            {playoffs?.length ? <th className="p-1">{t('table.playoffs')}</th> : ''}
+            {table.map((player, index) => <th className="p-1" key={index} title={players[player.id].name}>{shorten(players[player.id].name)}</th>)}
+            <th className="p-1">{t('breakers.wins')}</th>
           </tr>
         </thead>
         <tbody>
@@ -23,14 +23,18 @@ export function LadderResults({ stage, players, games, translations }) {
             <td className="p-1">{(i === 0 || player.place !== table[i - 1].place) ? player.place : ''}</td>
             <td className="p-1 text-left">{players[player.id].name}</td>
             <td className="p-1">{players[player.id].rank}</td>
-            {player.games.map((game, index) => game ? <GameCell as="td" key={index} entry={game} games={games} players={players}/> : <td key={index}/>)}
-            {playoffs.length ? <td className="inline-flex gap-2">
-              {player.playoffs.map((game, index) => <GameCell as="span" key={index} entry={game} games={games} players={players}/>)}
-            </td> : ''}
+            {table.map((p, index) => <td className="p-1" key={index}>
+              {p === player ? <>&ndash;</> : <GamePopoverTrigger game={games[player.games[p.id].game]} players={players} as="span">{player.games[p.id].won ? '1' : '0'}</GamePopoverTrigger>}
+            </td>)}
+            <td className="p-1">{player.score}</td>
           </tr>
         ))}
         </tbody>
       </table>
     </div>
   )
+}
+
+function shorten(name) {
+  return name.split(' ').map((s) => `${s[0].toUpperCase()}.`).join(' ')
 }

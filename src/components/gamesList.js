@@ -1,0 +1,57 @@
+import { Game } from '@/components/game';
+import { getTranslator } from '@/i18n/translator';
+import { getStageName } from '@/libs/stage';
+
+export function GamesList({ tournament, translations }) {
+  const {stages, games, players} = tournament;
+  const t = getTranslator(translations)
+
+  const list = stages.toReversed().reduce((list, stage) => {
+    const name = getStageName(stage, translations);
+
+    switch (stage.type) {
+      case 'league':
+      case 'ladder-table':
+        for (const [index, round] of stage.rounds.entries()) {
+          list.push({
+            stage: name,
+            name: t('table.round', index + 1),
+            games: round
+          })
+        }
+
+        if (stage.playoffs?.length) {
+          list.push({
+            stage: name,
+            name: t('table.playoffs'),
+            games: stage.playoffs
+          })
+        }
+
+        break;
+      case 'round-robin-table':
+      case 'final':
+        list.push({
+          name,
+          games: stage.games
+        })
+        break;
+      default:
+        throw new Error('Unrecognized stage type')
+    }
+
+    return list;
+  }, []);
+
+  return (
+    <div className="my-4">
+      <h2 className="text-xl font-bold pb-1 my-2 border-b-pgc-dark border-b-2">{t('stage.games')}</h2>
+      {list.map((list, index) => (
+        <div key={index} className="my-5">
+          <h4 className="text-l font-bold border-b-pgc-dark border-b">{stages.length > 1 && list.stage ? <>{list.stage} &ndash; </> : ''}{list.name}</h4>
+          {list.games.map((game) => <Game key={game} game={games[game]} translations={translations} players={players}/>)}
+        </div>
+      ))}
+    </div>
+  )
+}
