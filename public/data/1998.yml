@@ -23,28 +23,28 @@ stages:
       - starting
     rounds:
       - - ls-dt ls
-        - kg-ku kg:B+51.5 sgf:1998/1998-1-1-2-kg-ku.sgf
-        - jc-mf jc:W+R sgf:1998/1998-1-1-3-jc-mf.sgf
-        - jl-kgr jl:B+R sgf:1998/1998-1-1-4-jl-kgr.sgf
+        - kg-ku kg:B+51.5 sgf:1998/1998-league-1-kgiedrojc-kurtnowski.sgf
+        - jc-mf jc:W+R sgf:1998/1998-league-1-mferenc-jchlodek.sgf
+        - jl-kgr jl:B+R sgf:1998/1998-league-1-jlubos-kgrabowski.sgf
       - - ls-kgr ls
-        - kg-jc kg:W sgf:1998/1998-1-2-2-kg-jc.sgf
-        - jl-ku jl:W+6.5 sgf:1998/1998-1-2-3-jl-ku.sgf
-        - mf-dt mf:W+R sgf:1998/1998-1-2-4-mf-dt.sgf
+        - kg-jc kg:W sgf:1998/1998-league-2-jchlodek-kgiedrojc.sgf
+        - jl-ku jl:W+6.5 sgf:1998/1998-league-2-kurtnowski-jlubos.sgf
+        - mf-dt mf:W+R sgf:1998/1998-league-2-dtargosz-mferenc.sgf
       - - ls-ku ls
-        - kg-dt kg:B+24.5 sgf:1998/1998-1-3-2-kg-dt.sgf
-        - jc-jl jc:W sgf:1998/1998-1-3-3-jc-jl.sgf
-        - kgr-mf kgr:W+6.5 sgf:1998/1998-1-3-4-kgr-mf.sgf
+        - kg-dt kg:B+24.5 sgf:1998/1998-league-3-kgiedrojc-dtargosz.sgf
+        - jc-jl jc:W sgf:1998/1998-league-3-jlubos-jchlodek.sgf
+        - kgr-mf kgr:W+6.5 sgf:1998/1998-league-3-mferenc-kgrabowski.sgf
       - - ls-jc ls
         - kg-kgr kg
-        - jl-dt jl:W+5.5 sgf:1998/1998-1-4-3-jl-dt.sgf
-        - ku-mf ku:B+12.5 sgf:1998/1998-1-4-4-ku-mf.sgf
+        - jl-dt jl:W+5.5 sgf:1998/1998-league-4-dtargosz-jlubos.sgf
+        - ku-mf ku:B+12.5 sgf:1998/1998-league-4-kurtnowski-mferenc.sgf
       - - ls-mf ls
         - kg-jl kg
-        - kgr-ku kgr:W+33.5 sgf:1998/1998-1-5-3-kgr-ku.sgf
-        - dt-jc dt:W+R sgf:1998/1998-1-5-4-dt-jc.sgf
+        - kgr-ku kgr:W+33.5 sgf:1998/1998-league-5-kurtnowski-kgrabowski.sgf
+        - dt-jc dt:W+R sgf:1998/1998-league-5-jchlodek-dtargosz.sgf
       - - ls-kg ls
         - jc-kgr jc
-        - ku-dt ku:W sgf:1998/1998-1-6-3-ku-dt.sgf
+        - ku-dt ku:W sgf:1998/1998-league-6-dtargosz-kurtnowski.sgf
         - mf-jl mf
       - - ls-jl ls
         - kg-mf kg
@@ -57,5 +57,5 @@ stages:
     includePrevious: false
     komi: 5.5
     games:
-      - kg-ls ls:B+R sgf:1998/1998-2-1-kg-ls.sgf
-      - ls-kg ls:W+R sgf:1998/1998-2-2-ls-kg.sgf
+      - kg-ls ls:B+R sgf:1998/1998-final-1-lsoldan-kgiedrojc.sgf
+      - ls-kg ls:W+R sgf:1998/1998-final-2-kgiedrojc-lsoldan.sgf

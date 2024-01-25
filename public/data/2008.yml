@@ -24,31 +24,31 @@ stages:
       - direct
       - starting
     rounds:
-      - - ls-kb ls:B+R sgf:2008/ls-kb.sgf
-        - ms-mb ms:W+R sgf:2008/ms-mb.sgf
-        - kc-pm kc:B+R sgf:2008/kc-pm.sgf
-        - kh-pc kh:W+R sgf:2008/kh-pc.sgf
-      - - ls-pm ls:W+R sgf:2008/ls-pm.sgf
-        - kc-kb kc:W+R sgf:2008/kc-kb.sgf
-        - pc-ms pc:W+R sgf:2008/pc-ms.sgf
-        - mb-kh mb:W+3.5 sgf:2008/mb-kh.sgf
-      - - ls-ms ls:B+R sgf:2008/ls-ms.sgf
-        - kc-kh kc:B+R sgf:2008/kc-kh.sgf
-        - kb-mb kb:W+8.5 sgf:2008/kb-mb.sgf
-        - pm-pc pm:W+1.5 sgf:2008/pm-pc.sgf
-      - - ms-kc ms:B+R sgf:2008/ms-kc.sgf
-        - kh-ls kh:B+1.5 sgf:2008/kh-ls.sgf
-        - pc-kb pc:W+1.5 sgf:2008/pc-kb.sgf
-        - mb-pm mb:W+R sgf:2008/mb-pm.sgf
-      - - ls-pc ls:B+R sgf:2008/ls-pc.sgf
-        - ms-pm ms:B+15.5 sgf:2008/ms-pm.sgf
-        - kc-mb kc:W+R sgf:2008/kc-mb.sgf
-        - kh-kb kh:B+1.5 sgf:2008/kh-kb.sgf
-      - - ms-kb ms:W+9.5 sgf:2008/ms-kb.sgf
-        - kc-pc kc:W+R sgf:2008/kc-pc.sgf
-        - kh-pm kh:W+R sgf:2008/kh-pm.sgf
-        - mb-ls mb:B+2.5 sgf:2008/mb-ls.sgf
-      - - ls-kc ls:W+R sgf:2008/ls-kc.sgf
-        - ms-kh ms:B+R sgf:2008/ms-kh.sgf
-        - pc-mb pc:B+R sgf:2008/pc-mb.sgf
-        - kb-pm kb:B+3.5 sgf:2008/kb-pm.sgf
+      - - ls-kb ls:B+R sgf:2008/2008-1-lsoldan-kbozek.sgf
+        - ms-mb ms:W+R sgf:2008/2008-1-mbazynski-msurma.sgf
+        - kc-pm kc:B+R sgf:2008/2008-1-kchwedyna-pmorawiecki.sgf
+        - kh-pc kh:W+R sgf:2008/2008-1-pcelejewski-khabu.sgf
+      - - ls-pm ls:W+R sgf:2008/2008-2-pmorawiecki-lsoldan.sgf
+        - kc-kb kc:W+R sgf:2008/2008-2-kbozek-kchwedyna.sgf
+        - pc-ms pc:W+R sgf:2008/2008-2-msurma-pcelejewski.sgf
+        - mb-kh mb:W+3.5 sgf:2008/2008-2-khabu-mbazynski.sgf
+      - - ls-ms ls:B+R sgf:2008/2008-3-lsoldan-msurma.sgf
+        - kc-kh kc:B+R sgf:2008/2008-3-kchwedyna-khabu.sgf
+        - kb-mb kb:W+8.5 sgf:2008/2008-3-mbazynski-kbozek.sgf
+        - pm-pc pm:W+1.5 sgf:2008/2008-3-pcelejewski-pmorawiecki.sgf
+      - - ms-kc ms:B+R sgf:2008/2008-4-msurma-kchwedyna.sgf
+        - kh-ls kh:B+1.5 sgf:2008/2008-4-khabu-lsoldan.sgf
+        - pc-kb pc:W+1.5 sgf:2008/2008-4-kbozek-pcelejewski.sgf
+        - mb-pm mb:W+R sgf:2008/2008-4-pmorawiecki-mbazynski.sgf
+      - - ls-pc ls:B+R sgf:2008/2008-5-lsoldan-pcelejewski.sgf
+        - ms-pm ms:B+15.5 sgf:2008/2008-5-msurma-pmorawiecki.sgf
+        - kc-mb kc:W+R sgf:2008/2008-5-mbazynski-kchwedyna.sgf
+        - kh-kb kh:B+1.5 sgf:2008/2008-5-khabu-kbozek.sgf
+      - - ms-kb ms:W+9.5 sgf:2008/2008-6-kbozek-msurma.sgf
+        - kc-pc kc:W+R sgf:2008/2008-6-pcelejewski-kchwedyna.sgf
+        - kh-pm kh:W+R sgf:2008/2008-6-pmorawiecki-khabu.sgf
+        - mb-ls mb:B+2.5 sgf:2008/2008-6-mbazynski-lsoldan.sgf
+      - - ls-kc ls:W+R sgf:2008/2008-7-kchwedyna-lsoldan.sgf
+        - ms-kh ms:B+R sgf:2008/2008-7-msurma-khabu.sgf
+        - pc-mb pc:B+R sgf:2008/2008-7-pcelejewski-mbazynski.sgf
+        - kb-pm kb:B+3.5 sgf:2008/2008-7-kbozek-pmorawiecki.sgf

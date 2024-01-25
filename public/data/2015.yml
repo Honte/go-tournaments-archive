@@ -26,31 +26,31 @@ stages:
       - direct
       - starting
     rounds:
-      - - sf-ls sf:B+R sgf:2015/sf-ls.sgf
-        - kg-kh kg:B+R sgf:2015/kg-kh.sgf
-        - sp-kc sp:B+R sgf:2015/sp-kc.sgf
-        - ms-gie ms:B+R sgf:2015/ms-gie.sgf
-      - - ls-kh kh:W+17.5 sgf:2015/ls-kh.sgf
-        - kg-sf sf:W+R sgf:2015/kg-sf.sgf
-        - kc-ms ms:W+25.5 sgf:2015/kc-ms.sgf
-        - gie-sp gie:B+17.5 sgf:2015/gie-sp.sgf
-      - - sp-ls sp:B+R sgf:2015/sp-ls.sgf
-        - ms-kg ms:B+R sgf:2015/ms-kg.sgf
-        - sf-kc sf:B+R sgf:2015/sf-kc.sgf
-        - kh-gie kh:B+7.5 sgf:2015/kh-gie.sgf
-      - - ls-ms ms:W+R sgf:2015/ls-ms.sgf
-        - kg-sp kg:B+14.5 sgf:2015/kg-sp.sgf
-        - kc-kh kc:B+R sgf:2015/kc-kh.sgf
-        - gie-sf sf:W+R sgf:2015/gie-sf.sgf
-      - - sp-kh kh:W+R sgf:2015/sp-kh.sgf
-        - ms-sf ms:B+R sgf:2015/ms-sf.sgf
-        - kg-kc kg:B+R sgf:2015/kg-kc.sgf
-        - ls-gie ls:B+6.5 sgf:2015/ls-gie.sgf
-      - - kh-ms ms:W+R sgf:2015/kh-ms.sgf
-        - sf-sp sf:B+9.5 sgf:2015/sf-sp.sgf
-        - kc-ls ls:W+R sgf:2015/kc-ls.sgf
-        - gie-kg gie:B+7.5 sgf:2015/gie-kg.sgf
-      - - ms-sp ms:B+R sgf:2015/ms-sp.sgf
-        - kh-sf sf:W+19.5 sgf:2015/kh-sf.sgf
-        - ls-kg kg:W+22.5 sgf:2015/ls-kg.sgf
-        - kc-gie gie:W+2.5 sgf:2015/kc-gie.sgf
+      - - sf-ls sf:B+R sgf:2015/2015-1-sfrejlak-lsoldan.sgf
+        - kg-kh kg:B+R sgf:2015/2015-1-kgrabowski-khabu.sgf
+        - sp-kc sp:B+R sgf:2015/2015-1-spawlaczyk-kcieslak.sgf
+        - ms-gie ms:B+R sgf:2015/2015-1-msurma-kgiedrojc.sgf
+      - - ls-kh kh:W+17.5 sgf:2015/2015-2-lsoldan-khabu.sgf
+        - kg-sf sf:W+R sgf:2015/2015-2-kgrabowski-sfrejlak.sgf
+        - kc-ms ms:W+25.5 sgf:2015/2015-2-kcieslak-msurma.sgf
+        - gie-sp gie:B+17.5 sgf:2015/2015-2-kgiedrojc-spawlaczyk.sgf
+      - - sp-ls sp:B+R sgf:2015/2015-3-spawlaczyk-lsoldan.sgf
+        - ms-kg ms:B+R sgf:2015/2015-3-msurma-kgrabowski.sgf
+        - sf-kc sf:B+R sgf:2015/2015-3-sfrejlak-kcieslak.sgf
+        - kh-gie kh:B+7.5 sgf:2015/2015-3-khabu-kgiedrojc.sgf
+      - - ls-ms ms:W+R sgf:2015/2015-4-lsoldan-msurma.sgf
+        - kg-sp kg:B+14.5 sgf:2015/2015-4-kgrabowski-spawlaczyk.sgf
+        - kc-kh kc:B+R sgf:2015/2015-4-kcieslak-khabu.sgf
+        - gie-sf sf:W+R sgf:2015/2015-4-kgiedrojc-sfrejlak.sgf
+      - - sp-kh kh:W+R sgf:2015/2015-5-spawlaczyk-khabu.sgf
+        - ms-sf ms:B+R sgf:2015/2015-5-msurma-sfrejlak.sgf
+        - kg-kc kg:B+R sgf:2015/2015-5-kgrabowski-kcieslak.sgf
+        - ls-gie ls:B+6.5 sgf:2015/2015-5-lsoldan-kgiedrojc.sgf
+      - - kh-ms ms:W+R sgf:2015/2015-6-khabu-msurma.sgf
+        - sf-sp sf:B+9.5 sgf:2015/2015-6-sfrejlak-spawlaczyk.sgf
+        - kc-ls ls:W+R sgf:2015/2015-6-kcieslak-lsoldan.sgf
+        - gie-kg gie:B+7.5 sgf:2015/2015-6-kgiedrojc-kgrabowski.sgf
+      - - ms-sp ms:B+R sgf:2015/2015-7-msurma-spawlaczyk.sgf
+        - kh-sf sf:W+19.5 sgf:2015/2015-7-khabu-sfrejlak.sgf
+        - ls-kg kg:W+22.5 sgf:2015/2015-7-lsoldan-kgrabowski.sgf
+        - kc-gie gie:W+2.5 sgf:2015/2015-7-kcieslak-kgiedrojc.sgf

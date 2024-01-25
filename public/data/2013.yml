@@ -23,31 +23,31 @@ stages:
       - direct
       - starting
     rounds:
-      - - mis-kc mis:W+4.5 sgf:2013/mis-kc.sgf
-        - sp-mm sp:W+7.5 sgf:2013/sp-mm.sgf
-        - sf-cc sf:B+48.5 sgf:2013/sf-cc.sgf
-        - ak-kg ak:W+4.5 sgf:2013/ak-kg.sgf
-      - - mm-mis mm:W+8.5 sgf:2013/mm-mis.sgf
-        - sf-ak sf:W+R sgf:2013/sf-ak.sgf
-        - kc-sp kc:W+R sgf:2013/kc-sp.sgf
-        - kg-cc kg:W+29.5 sgf:2013/kg-cc.sgf
-      - - mm-ak mm:B+R sgf:2013/mm-ak.sgf
-        - mis-sf mis:W+R sgf:2013/mis-sf.sgf
-        - sp-kg sp:W+5.5 sgf:2013/sp-kg.sgf
-        - cc-kc cc:W+R sgf:2013/cc-kc.sgf
-      - - mm-cc mm:W+16.5 sgf:2013/mm-cc.sgf
-        - mis-kg mis:B+3.5 sgf:2013/mis-kg.sgf
-        - sp-sf sp:B+0.5 sgf:2013/sp-sf.sgf
-        - kc-ak kc:W+R sgf:2013/kc-ak.sgf
-      - - mm-sf mm:W+14.5 sgf:2013/mm-sf.sgf
-        - mis-ak mis:B+R sgf:2013/mis-ak.sgf
-        - sp-cc sp:B+R sgf:2013/sp-cc.sgf
-        - kc-kg kc:W+R sgf:2013/kc-kg.sgf
-      - - mm-kg mm:B+9.5 sgf:2013/mm-kg.sgf
-        - mis-cc mis:W+6.5 sgf:2013/mis-cc.sgf
-        - sf-kc sf:W+R sgf:2013/sf-kc.sgf
-        - ak-sp ak:B+1.5 sgf:2013/ak-sp.sgf
-      - - mm-kc mm:W+3.5 sgf:2013/mm-kc.sgf
-        - mis-sp mis:W+18.5 sgf:2013/mis-sp.sgf
-        - sf-kg sf:B+21.5 sgf:2013/sf-kg.sgf
-        - cc-ak cc:W+R sgf:2013/cc-ak.sgf
+      - - mis-kc mis:W+4.5 sgf:2013/2013-1-kchwedyna-mmisiak.sgf
+        - sp-mm sp:W+7.5 sgf:2013/2013-1-mmajka-spawlaczyk.sgf
+        - sf-cc sf:B+48.5 sgf:2013/2013-1-sfrejlak-cczernecki.sgf
+        - ak-kg ak:W+4.5 sgf:2013/2013-1-kgiedrojc-akacprzyk.sgf
+      - - mm-mis mm:W+8.5 sgf:2013/2013-2-mmisiak-mmajka.sgf
+        - sf-ak sf:W+R sgf:2013/2013-2-akacprzyk-sfrejlak.sgf
+        - kc-sp kc:W+R sgf:2013/2013-2-spawlaczyk-kchwedyna.sgf
+        - kg-cc kg:W+29.5 sgf:2013/2013-2-cczernecki-kgiedrojc.sgf
+      - - mm-ak mm:B+R sgf:2013/2013-3-mmajka-akacprzyk.sgf
+        - mis-sf mis:W+R sgf:2013/2013-3-sfrejlak-mmisiak.sgf
+        - sp-kg sp:W+5.5 sgf:2013/2013-3-kgiedrojc-spawlaczyk.sgf
+        - cc-kc cc:W+R sgf:2013/2013-3-kchwedyna-cczernecki.sgf
+      - - mm-cc mm:W+16.5 sgf:2013/2013-4-cczernecki-mmajka.sgf
+        - mis-kg mis:B+3.5 sgf:2013/2013-4-mmisiak-kgiedrojc.sgf
+        - sp-sf sp:B+0.5 sgf:2013/2013-4-spawlaczyk-sfrejlak.sgf
+        - kc-ak kc:W+R sgf:2013/2013-4-akacprzyk-kchwedyna.sgf
+      - - mm-sf mm:W+14.5 sgf:2013/2013-5-sfrejlak-mmajka.sgf
+        - mis-ak mis:B+R sgf:2013/2013-5-mmisiak-akacprzyk.sgf
+        - sp-cc sp:B+R sgf:2013/2013-5-spawlaczyk-cczernecki.sgf
+        - kc-kg kc:W+R sgf:2013/2013-5-kgiedrojc-kchwedyna.sgf
+      - - mm-kg mm:B+9.5 sgf:2013/2013-6-mmajka-kgiedrojc.sgf
+        - mis-cc mis:W+6.5 sgf:2013/2013-6-cczernecki-mmisiak.sgf
+        - sf-kc sf:W+R sgf:2013/2013-6-kchwedyna-sfrejlak.sgf
+        - ak-sp ak:B+1.5 sgf:2013/2013-6-akacprzyk-spawlaczyk.sgf
+      - - mm-kc mm:W+3.5 sgf:2013/2013-7-kchwedyna-mmajka.sgf
+        - mis-sp mis:W+18.5 sgf:2013/2013-7-spawlaczyk-mmisiak.sgf
+        - sf-kg sf:B+21.5 sgf:2013/2013-7-sfrejlak-kgiedrojc.sgf
+        - cc-ak cc:W+R sgf:2013/2013-7-akacprzyk-cczernecki.sgf

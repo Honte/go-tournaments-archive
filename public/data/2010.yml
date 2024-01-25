@@ -25,31 +25,31 @@ stages:
       - direct
       - starting
     rounds:
-      - - ls-cc ls:W+R sgf:2010/ls-cc.sgf
-        - kc-ak kc:W+R sgf:2010/kc-ak.sgf
-        - kg-js kg:W+R sgf:2010/kg-js.sgf
-        - mk-sf mk:W+R sgf:2010/mk-sf.sgf
-      - - ls-ak ls:B+R sgf:2010/ls-ak.sgf
-        - kc-cc kc:B+12.5 sgf:2010/kc-cc.sgf
-        - kg-sf kg:B+R sgf:2010/kg-sf.sgf
-        - mk-js mk:B+R sgf:2010/mk-js.sgf
-      - - ls-js ls:W+17.5 sgf:2010/ls-js.sgf
-        - kc-sf kc:W+66.5 sgf:2010/kc-sf.sgf
-        - kg-cc kg:W+R sgf:2010/kg-cc.sgf
-        - mk-ak mk:W+12.5 sgf:2010/mk-ak.sgf
-      - - ls-sf ls:B+R sgf:2010/ls-sf.sgf
-        - kc-js kc:B+R sgf:2010/kc-js.sgf
-        - kg-ak kg:B+R sgf:2010/kg-ak.sgf
-        - mk-cc mk:B+R sgf:2010/mk-cc.sgf
-      - - ls-mk ls:W+13.5 sgf:2010/ls-mk.sgf
-        - kc-kg kc:W+R sgf:2010/kc-kg.sgf
-        - js-ak js:W+R sgf:2010/js-ak.sgf
-        - cc-sf cc:B+38.5 sgf:2010/cc-sf.sgf
-      - - kc-mk kc:B+R sgf:2010/kc-mk.sgf
-        - kg-ls kg:W+0.5 sgf:2010/kg-ls.sgf
-        - js-cc js:B+R sgf:2010/js-cc.sgf
-        - sf-ak sf:B+1.5 sgf:2010/sf-ak.sgf
-      - - ls-kc ls:W+R sgf:2010/ls-kc.sgf
-        - mk-kg mk:B+R sgf:2010/mk-kg.sgf
-        - js-sf js:B+R sgf:2010/js-sf.sgf
-        - cc-ak cc:B+R sgf:2010/cc-ak.sgf
+      - - ls-cc ls:W+R sgf:2010/2010-1-cczernecki-lsoldan.sgf
+        - kc-ak kc:W+R sgf:2010/2010-1-akindziuk-kchwedyna.sgf
+        - kg-js kg:W+R sgf:2010/2010-1-jstraszewski-kgiedrojc.sgf
+        - mk-sf mk:W+R sgf:2010/2010-1-sfrejlak-mkaminski.sgf
+      - - ls-ak ls:B+R sgf:2010/2010-2-lsoldan-akindziuk.sgf
+        - kc-cc kc:B+12.5 sgf:2010/2010-2-kchwedyna-cczernecki.sgf
+        - kg-sf kg:B+R sgf:2010/2010-2-kgiedrojc-sfrejlak.sgf
+        - mk-js mk:B+R sgf:2010/2010-2-mkaminski-jstraszewski.sgf
+      - - ls-js ls:W+17.5 sgf:2010/2010-3-jstraszewski-lsoldan.sgf
+        - kc-sf kc:W+66.5 sgf:2010/2010-3-sfrejlak-kchwedyna.sgf
+        - kg-cc kg:W+R sgf:2010/2010-3-cczernecki-kgiedrojc.sgf
+        - mk-ak mk:W+12.5 sgf:2010/2010-3-akindziuk-mkaminski.sgf
+      - - ls-sf ls:B+R sgf:2010/2010-4-lsoldan-sfrejlak.sgf
+        - kc-js kc:B+R sgf:2010/2010-4-kchwedyna-jstraszewski.sgf
+        - kg-ak kg:B+R sgf:2010/2010-4-kgiedrojc-akindziuk.sgf
+        - mk-cc mk:B+R sgf:2010/2010-4-mkaminski-cczernecki.sgf
+      - - ls-mk ls:W+13.5 sgf:2010/2010-5-mkaminski-lsoldan.sgf
+        - kc-kg kc:W+R sgf:2010/2010-5-kgiedrojc-kchwedyna.sgf
+        - js-ak js:W+R sgf:2010/2010-5-akindziuk-jstraszewski.sgf
+        - cc-sf cc:B+38.5 sgf:2010/2010-5-cczernecki-sfrejlak.sgf
+      - - kc-mk kc:B+R sgf:2010/2010-6-kchwedyna-mkaminski.sgf
+        - kg-ls kg:W+0.5 sgf:2010/2010-6-lsoldan-kgiedrojc.sgf
+        - js-cc js:B+R sgf:2010/2010-6-jstraszewski-cczernecki.sgf
+        - sf-ak sf:B+1.5 sgf:2010/2010-6-sfrejlak-akindziuk.sgf
+      - - ls-kc ls:W+R sgf:2010/2010-7-kchwedyna-lsoldan.sgf
+        - mk-kg mk:B+R sgf:2010/2010-7-mkaminski-kgiedrojc.sgf
+        - js-sf js:B+R sgf:2010/2010-7-jstraszewski-sfrejlak.sgf
+        - cc-ak cc:B+R sgf:2010/2010-7-cczernecki-akindziuk.sgf

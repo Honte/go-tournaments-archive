@@ -26,31 +26,31 @@ stages:
       - direct
       - starting
     rounds:
-      - - ls-pw ls:B+R sgf:2012/ls-pw.sgf
-        - kc-ak kc:B+20.5 sgf:2012/kc-ak.sgf
-        - sf-dj sf:B+R sgf:2012/sf-dj.sgf
-        - kg-kh kh:W+R sgf:2012/kg-kh.sgf
-      - - ak-ls ls:B+16.5 sgf:2012/ak-ls.sgf
-        - pw-kc kc:W+R sgf:2012/pw-kc.sgf
-        - kh-sf sf:W+10.5 sgf:2012/kh-sf.sgf
-        - dj-kg kg:W+R sgf:2012/dj-kg.sgf
-      - - ls-dj ls:B+R sgf:2012/ls-dj.sgf
-        - kc-kh kc:B+R sgf:2012/kc-kh.sgf
-        - sf-pw sf:B+R sgf:2012/sf-pw.sgf
-        - kg-ak kg:B+31.5 sgf:2012/kg-ak.sgf
-      - - kh-ls ls:B+T sgf:2012/kh-ls.sgf
-        - dj-kc kc:W+R sgf:2012/dj-kc.sgf
-        - ak-sf sf:W+16.5 sgf:2012/ak-sf.sgf
-        - pw-kg kg:W+R sgf:2012/pw-kg.sgf
-      - - ls-kg kg:W+4.5 sgf:2012/ls-kg.sgf
-        - kc-sf sf:W+R sgf:2012/kc-sf.sgf
-        - kh-pw kh:B+R sgf:2012/kh-pw.sgf
-        - dj-ak dj:B+R sgf:2012/dj-ak.sgf
-      - - sf-ls sf:W+T sgf:2012/sf-ls.sgf
-        - kg-kc kg:B+R sgf:2012/kg-kc.sgf
-        - ak-kh kh:W+R sgf:2012/ak-kh.sgf
-        - pw-dj dj:W+R sgf:2012/pw-dj.sgf
-      - - ls-kc kc:W+5.5 sgf:2012/ls-kc.sgf
-        - sf-kg sf:B+R sgf:2012/sf-kg.sgf
-        - kh-dj kh:B+R sgf:2012/kh-dj.sgf
-        - ak-pw ak:B+T sgf:2012/ak-pw.sgf
+      - - ls-pw ls:B+R sgf:2012/2012-1-lsoldan-pwysocki.sgf
+        - kc-ak kc:B+20.5 sgf:2012/2012-1-kchwedyna-akindziuk.sgf
+        - sf-dj sf:B+R sgf:2012/2012-1-sfrejlak-djurkiewicz.sgf
+        - kg-kh kh:W+R sgf:2012/2012-1-kgiedrojc-khabu.sgf
+      - - ak-ls ls:B+16.5 sgf:2012/2012-2-lsoldan-akindziuk.sgf
+        - pw-kc kc:W+R sgf:2012/2012-2-pwysocki-kchwedyna.sgf
+        - kh-sf sf:W+10.5 sgf:2012/2012-2-khabu-sfrejlak.sgf
+        - dj-kg kg:W+R sgf:2012/2012-2-djurkiewicz-kgiedrojc.sgf
+      - - ls-dj ls:B+R sgf:2012/2012-3-lsoldan-djurkiewicz.sgf
+        - kc-kh kc:B+R sgf:2012/2012-3-kchwedyna-khabu.sgf
+        - sf-pw sf:B+R sgf:2012/2012-3-sfrejlak-pwysocki.sgf
+        - kg-ak kg:B+31.5 sgf:2012/2012-3-kgiedrojc-akindziuk.sgf
+      - - kh-ls ls:B+T sgf:2012/2012-4-lsoldan-khabu.sgf
+        - dj-kc kc:W+R sgf:2012/2012-4-djurkiewicz-kchwedyna.sgf
+        - ak-sf sf:W+16.5 sgf:2012/2012-4-akindziuk-sfrejlak.sgf
+        - pw-kg kg:W+R sgf:2012/2012-4-pwysocki-kgiedrojc.sgf
+      - - ls-kg kg:W+4.5 sgf:2012/2012-5-lsoldan-kgiedrojc.sgf
+        - kc-sf sf:W+R sgf:2012/2012-5-kchwedyna-sfrejlak.sgf
+        - kh-pw kh:B+R sgf:2012/2012-5-khabu-pwysocki.sgf
+        - dj-ak dj:B+R sgf:2012/2012-5-djurkiewicz-akindziuk.sgf
+      - - sf-ls sf:W+T sgf:2012/2012-6-lsoldan-sfrejlak.sgf
+        - kg-kc kg:B+R sgf:2012/2012-6-kgiedrojc-kchwedyna.sgf
+        - ak-kh kh:W+R sgf:2012/2012-6-akindziuk-khabu.sgf
+        - pw-dj dj:W+R sgf:2012/2012-6-pwysocki-djurkiewicz.sgf
+      - - ls-kc kc:W+5.5 sgf:2012/2012-7-lsoldan-kchwedyna.sgf
+        - sf-kg sf:B+R sgf:2012/2012-7-sfrejlak-kgiedrojc.sgf
+        - kh-dj kh:B+R sgf:2012/2012-7-khabu-djurkiewicz.sgf
+        - ak-pw ak:B+T sgf:2012/2012-7-akindziuk-pwysocki.sgf

@@ -26,31 +26,31 @@ stages:
       - direct
       - starting
     rounds:
-      - - mw-kh kh:W+R sgf:2017/mw-kh.sgf ogs:https://online-go.com/review/284651
-        - kc-mm kc:B+R sgf:2017/kc-mm.sgf ogs:https://online-go.com/review/284648
-        - jf-ls ls:W+10.5 sgf:2017/jf-ls.sgf ogs:https://online-go.com/review/284647
-        - dj-sf sf:W+R sgf:2017/dj-sf.sgf ogs:https://online-go.com/review/284649
-      - - mm-mw mm:B+R sgf:2017/mm-mw.sgf ogs:https://online-go.com/review/284766
-        - kh-kc kh:B+R sgf:2017/kh-kc.sgf ogs:https://online-go.com/review/284763
-        - ls-dj dj:W+22.5 sgf:2017/ls-dj.sgf ogs:https://online-go.com/review/284765
-        - sf-jf sf:B+R sgf:2017/sf-jf.sgf ogs:https://online-go.com/review/284762
-      - - mw-sf sf:W+R sgf:2017/mw-sf.sgf ogs:https://online-go.com/review/284796
-        - kc-ls ls:W+3.5 sgf:2017/kc-ls.sgf ogs:https://online-go.com/review/284795
-        - dj-kh kh:W+6.5 sgf:2017/dj-kh.sgf ogs:https://online-go.com/review/284797
-        - jf-mm mm:W+22.5 sgf:2017/jf-mm.sgf ogs:https://online-go.com/review/284794
-      - - ls-mw ls:B+R sgf:2017/ls-mw.sgf ogs:https://online-go.com/review/284997
-        - sf-kc sf:B+R sgf:2017/sf-kc.sgf ogs:https://online-go.com/review/285000
-        - mm-dj mm:B+T sgf:2017/mm-dj.sgf ogs:https://online-go.com/review/285002
-        - kh-jf kh:B+R sgf:2017/kh-jf.sgf ogs:https://online-go.com/review/284993
-      - - mw-jf mw:B+19.5 sgf:2017/mw-jf.sgf ogs:https://online-go.com/review/285040
-        - kc-dj dj:W+R sgf:2017/kc-dj.sgf ogs:https://online-go.com/review/285038
-        - ls-kh ls:B+4.5 sgf:2017/ls-kh.sgf ogs:https://online-go.com/review/285039
-        - sf-mm sf:B+R sgf:2017/sf-mm.sgf ogs:https://online-go.com/review/285042
-      - - dj-mw mw:W+T sgf:2017/dj-mw.sgf ogs:https://online-go.com/review/285182
-        - jf-kc jf:B+1.5 sgf:2017/jf-kc.sgf ogs:https://online-go.com/review/285184
-        - mm-ls ls:W+0.5 sgf:2017/mm-ls.sgf ogs:https://online-go.com/review/285185
-        - kh-sf sf:W+R sgf:2017/kh-sf.sgf ogs:https://online-go.com/review/285183
-      - - mw-kc mw:B+9.5 sgf:2017/mw-kc.sgf ogs:https://online-go.com/review/285212
-        - dj-jf jf:W+R sgf:2017/dj-jf.sgf ogs:https://online-go.com/review/285215
-        - ls-sf sf:W+7.5 sgf:2017/ls-sf.sgf ogs:https://online-go.com/review/285216
-        - mm-kh kh:W+5.5 sgf:2017/mm-kh.sgf ogs:https://online-go.com/review/285217
+      - - mw-kh kh:W+R sgf:2017/2017-1-mwalaszewski-khabu.sgf ogs:https://online-go.com/review/284651
+        - kc-mm kc:B+R sgf:2017/2017-1-kcieslak-mmajka.sgf ogs:https://online-go.com/review/284648
+        - jf-ls ls:W+10.5 sgf:2017/2017-1-jfraczak-lsoldan.sgf ogs:https://online-go.com/review/284647
+        - dj-sf sf:W+R sgf:2017/2017-1-djurkiewicz-sfrejlak.sgf ogs:https://online-go.com/review/284649
+      - - mm-mw mm:B+R sgf:2017/2017-2-mmajka-mwalaszewski.sgf ogs:https://online-go.com/review/284766
+        - kh-kc kh:B+R sgf:2017/2017-2-khabu-kcieslak.sgf ogs:https://online-go.com/review/284763
+        - ls-dj dj:W+22.5 sgf:2017/2017-2-lsoldan-djurkiewicz.sgf ogs:https://online-go.com/review/284765
+        - sf-jf sf:B+R sgf:2017/2017-2-sfrejlak-jfraczak.sgf ogs:https://online-go.com/review/284762
+      - - mw-sf sf:W+R sgf:2017/2017-3-mwalaszewski-sfrejlak.sgf ogs:https://online-go.com/review/284796
+        - kc-ls ls:W+3.5 sgf:2017/2017-3-kcieslak-lsoldan.sgf ogs:https://online-go.com/review/284795
+        - dj-kh kh:W+6.5 sgf:2017/2017-3-djurkiewicz-khabu.sgf ogs:https://online-go.com/review/284797
+        - jf-mm mm:W+22.5 sgf:2017/2017-3-jfraczak-mmajka.sgf ogs:https://online-go.com/review/284794
+      - - ls-mw ls:B+R sgf:2017/2017-4-lsoldan-mwalaszewski.sgf ogs:https://online-go.com/review/284997
+        - sf-kc sf:B+R sgf:2017/2017-4-sfrejlak-kcieslak.sgf ogs:https://online-go.com/review/285000
+        - mm-dj mm:B+T sgf:2017/2017-4-mmajka-djurkiewicz.sgf ogs:https://online-go.com/review/285002
+        - kh-jf kh:B+R sgf:2017/2017-4-khabu-jfraczak.sgf ogs:https://online-go.com/review/284993
+      - - mw-jf mw:B+19.5 sgf:2017/2017-5-mwalaszewski-jfraczak.sgf ogs:https://online-go.com/review/285040
+        - kc-dj dj:W+R sgf:2017/2017-5-kcieslak-djurkiewicz.sgf ogs:https://online-go.com/review/285038
+        - ls-kh ls:B+4.5 sgf:2017/2017-5-lsoldan-khabu.sgf ogs:https://online-go.com/review/285039
+        - sf-mm sf:B+R sgf:2017/2017-5-sfrejlak-mmajka.sgf ogs:https://online-go.com/review/285042
+      - - dj-mw mw:W+T sgf:2017/2017-6-djurkiewicz-mwalaszewski.sgf ogs:https://online-go.com/review/285182
+        - jf-kc jf:B+1.5 sgf:2017/2017-6-jfraczak-kcieslak.sgf ogs:https://online-go.com/review/285184
+        - mm-ls ls:W+0.5 sgf:2017/2017-6-mmajka-lsoldan.sgf ogs:https://online-go.com/review/285185
+        - kh-sf sf:W+R sgf:2017/2017-6-khabu-sfrejlak.sgf ogs:https://online-go.com/review/285183
+      - - mw-kc mw:B+9.5 sgf:2017/2017-7-mwalaszewski-kcieslak.sgf ogs:https://online-go.com/review/285212
+        - dj-jf jf:W+R sgf:2017/2017-7-djurkiewicz-jfraczak.sgf ogs:https://online-go.com/review/285215
+        - ls-sf sf:W+7.5 sgf:2017/2017-7-lsoldan-sfrejlak.sgf ogs:https://online-go.com/review/285216
+        - mm-kh kh:W+5.5 sgf:2017/2017-7-mmajka-khabu.sgf ogs:https://online-go.com/review/285217

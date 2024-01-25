@@ -21,33 +21,33 @@ stages:
       - sodos
       - starting
     rounds:
-      - - jl-kg jl:B+R sgf:1997/1997-1-1-1-jl-kg.sgf
-        - mf-dt mf:B+11.5 sgf:1997/1997-1-1-2-mf-dt.sgf
-        - kgr-jc kgr:W+R sgf:1997/1997-1-1-3-kgr-jc.sgf
+      - - jl-kg jl:B+R sgf:1997/1997-league-1-jlubos-kgiedrojc.sgf
+        - mf-dt mf:B+11.5 sgf:1997/1997-league-1-mferenc-dtargosz.sgf
+        - kgr-jc kgr:W+R sgf:1997/1997-league-1-jchlodek-kgrabowski.sgf
         - ls-BYE ls
-      - - ls-kgr ls:W+24.5 sgf:1997/1997-1-2-1-ls-kgr.sgf
-        - kg-mf kg:B+R sgf:1997/1997-1-2-2-kg-mf.sgf
-        - dt-jc dt:B+4.5 sgf:1997/1997-1-2-3-dt-jc.sgf
+      - - ls-kgr ls:W+24.5 sgf:1997/1997-league-2-kgrabowski-lsoldan.sgf
+        - kg-mf kg:B+R sgf:1997/1997-league-2-kgiedrojc-mferenc.sgf
+        - dt-jc dt:B+4.5 sgf:1997/1997-league-2-dtargosz-jchlodek.sgf
         - jl-BYE jl
-      - - ls-dt ls:B+R sgf:1997/1997-1-3-1-ls-dt.sgf
-        - jl-kgr jl:B+R sgf:1997/1997-1-3-2-jl-kgr.sgf
-        - kg-jc kg:W+R sgf:1997/1997-1-3-3-kg-jc.sgf
+      - - ls-dt ls:B+R sgf:1997/1997-league-3-lsoldan-dtargosz.sgf
+        - jl-kgr jl:B+R sgf:1997/1997-league-3-jlubos-kgrabowski.sgf
+        - kg-jc kg:W+R sgf:1997/1997-league-3-jchlodek-kgiedrojc.sgf
         - mf-BYE mf
-      - - ls-kg ls:W+21.5 sgf:1997/1997-1-4-1-ls-kg.sgf
-        - jl-dt jl:W+R sgf:1997/1997-1-4-2-jl-dt.sgf
-        - mf-kgr mf:W+12.5 sgf:1997/1997-1-4-3-mf-kgr.sgf
+      - - ls-kg ls:W+21.5 sgf:1997/1997-league-4-kgiedrojc-lsoldan.sgf
+        - jl-dt jl:W+R sgf:1997/1997-league-4-dtargosz-jlubos.sgf
+        - mf-kgr mf:W+12.5 sgf:1997/1997-league-4-kgrabowski-mferenc.sgf
         - jc-BYE jc
-      - - ls-jl ls:B+7.5 sgf:1997/1997-1-5-1-ls-jl.sgf
-        - mf-jc mf:W+0.5 sgf:1997/1997-1-5-2-mf-jc.sgf
-        - kgr-dt kgr:W+15.5 sgf:1997/1997-1-5-3-kgr-dt.sgf
+      - - ls-jl ls:B+7.5 sgf:1997/1997-league-5-lsoldan-jlubos.sgf
+        - mf-jc mf:W+0.5 sgf:1997/1997-league-5-jchlodek-mferenc.sgf
+        - kgr-dt kgr:W+15.5 sgf:1997/1997-league-5-dtargosz-kgrabowski.sgf
         - kg-BYE kg
-      - - ls-mf ls:W+R sgf:1997/1997-1-6-1-ls-mf.sgf
-        - jl-jc jl:B+R sgf:1997/1997-1-6-2-jl-jc.sgf
-        - kg-kgr kg:W+30.5 sgf:1997/1997-1-6-3-kg-kgr.sgf
+      - - ls-mf ls:W+R sgf:1997/1997-league-6-mferenc-lsoldan.sgf
+        - jl-jc jl:B+R sgf:1997/1997-league-6-jlubos-jchlodek.sgf
+        - kg-kgr kg:W+30.5 sgf:1997/1997-league-6-kgrabowski-kgiedrojc.sgf
         - dt-BYE dt
-      - - ls-jc ls:B+R sgf:1997/1997-1-7-1-ls-jc.sgf
-        - jl-mf jl:W+12.5 sgf:1997/1997-1-7-2-jl-mf.sgf
-        - kg-dt kg:B+35.5 sgf:1997/1997-1-7-3-kg-dt.sgf
+      - - ls-jc ls:B+R sgf:1997/1997-league-7-lsoldan-jchlodek.sgf
+        - jl-mf jl:W+12.5 sgf:1997/1997-league-7-mferenc-jlubos.sgf
+        - kg-dt kg:B+35.5 sgf:1997/1997-league-7-kgiedrojc-dtargosz.sgf
         - kgr-BYE kgr
   - type: final
     date: 1997-11-29
@@ -56,5 +56,5 @@ stages:
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T971129E
     komi: 5.5
     games:
-      - jl-ls ls:W+R sgf:1997/1997-2-1-jl-ls.sgf
-      - ls-jl ls:B+29.5 sgf:1997/1997-2-2-ls-jl.sgf
+      - jl-ls ls:W+R sgf:1997/1997-final-1-jlubos-lsoldan.sgf
+      - ls-jl ls:B+29.5 sgf:1997/1997-final-2-lsoldan-jlubos.sgf

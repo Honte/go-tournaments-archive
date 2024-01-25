@@ -24,29 +24,29 @@ stages:
     rounds:
       - - kg-ww kg:B
         - ls-ku ls:B
-        - jl-mb jl:B+9.5 sgf:1999/1999-1-1-3-jl-mb.sgf
+        - jl-mb jl:B+9.5 sgf:1999/1999-1-jlubos-mbazynski.sgf
         - mw-jc mw:W
       - - kg-mw kg:W
         - ls-ww ls:W
         - jl-ku jl:W
-        - mb-jc mb:B+1.5 sgf:1999/1999-1-2-4-mb-jc.sgf
-      - - kg-mb kg:B+R sgf:1999/1999-1-3-1-kg-mb.sgf
+        - mb-jc mb:B+1.5 sgf:1999/1999-2-mbazynski-jchlodek.sgf
+      - - kg-mb kg:B+R sgf:1999/1999-3-kgiedrojc-mbazynski.sgf
         - ls-mw ls:B
         - jl-ww jl:B
         - jc-ku jc:B
       - - kg-ku kg:W
-        - ls-mb ls:W+25.5 sgf:1999/1999-1-4-2-ls-mb.sgf
+        - ls-mb ls:W+25.5 sgf:1999/1999-4-mbazynski-lsoldan.sgf
         - jl-mw jl:W
         - jc-ww jc:W
       - - kg-jc kg:B
         - ls-jl ls:B
-        - mb-ku mb:B+R sgf:1999/1999-1-5-3-mb-ku.sgf
+        - mb-ku mb:B+R sgf:1999/1999-5-mbazynski-kurtnowski.sgf
         - ww-mw ww:W
       - - ls-jc ls:W
         - jl-kg jl:B
-        - mb-ww mb:W+R sgf:1999/1999-1-6-3-mb-ww.sgf
+        - mb-ww mb:W+R sgf:1999/1999-6-wwieczorek-mbazynski.sgf
         - ku-mw ku:B
-      - - kg-ls kg:W+R sgf:1999/1999-1-7-1-kg-ls.sgf
-        - mb-mw mb:B+9.5 sgf:1999/1999-1-7-2-mb-mw.sgf
+      - - kg-ls kg:W+R sgf:1999/1999-7-lsoldan-kgiedrojc.sgf
+        - mb-mw mb:B+9.5 sgf:1999/1999-7-mbazynski-mwolak.sgf
         - jc-jl jc:B
         - ku-ww ku:W

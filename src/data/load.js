@@ -1,7 +1,7 @@
 import fs from 'fs/promises';
 import fg from 'fast-glob';
 import path from 'path';
-import slug from 'slug';
+import slugify from 'slugify';
 import { parse } from 'yaml';
 import { createTable } from '@/data/table';
 import { createLadderTable } from '@/data/tableLadder';
@@ -30,8 +30,14 @@ export async function loadTournaments() {
         throw new Error(`Could not parse player ${json.players[id]} from ${file}`);
       }
 
+      const [first, last] = details.groups.name
+        .toLowerCase()
+        .split(' ')
+        .map(slugify)
+
+
       players[id] = {
-        id: slug(details.groups.name),
+        slug: first[0] + last,
         name: details.groups.name,
         rank: details.groups.rank
       };

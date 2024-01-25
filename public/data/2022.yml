@@ -26,31 +26,31 @@ stages:
       - direct
       - starting
     rounds:
-      - - kc-sf sf:W+R sgf:2022/kc-sf.sgf ogs:https://online-go.com/review/971196 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/0QQ12mldZrzpV8reGQgQ
-        - mw-ls mw:B+R sgf:2022/mw-ls.sgf ogs:https://online-go.com/review/971197 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/pVOHexJsSROSCW68d4n1
-        - dj-cc cc:W+R sgf:2022/dj-cc.sgf ogs:https://online-go.com/review/971198 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/33HAJ4l7qUfCh0nFtZTn
-        - kh-mm kh:B+R sgf:2022/kh-mm.sgf ogs:https://online-go.com/review/971199 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/cvbw7aKKJseFd34BwZtS
-      - - ls-kc ls:B+R sgf:2022/ls-kc.sgf ogs:https://online-go.com/review/971203 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/xgZQ29EtBgHjzn39hBmc
-        - sf-mw sf:B+R sgf:2022/sf-mw.sgf ogs:https://online-go.com/review/971202 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/fg1Rp01BhE92bW3xPz30
-        - mm-dj dj:W+R sgf:2022/mm-dj.sgf ogs:https://online-go.com/review/971201 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/j28KPeK7e4NNanwRnDih
-        - cc-kh kh:W+5.5 sgf:2022/cc-kh.sgf ogs:https://online-go.com/review/971200 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/eH9xLz6GcdvyrfmGiV2E
-      - - kc-cc cc:W+1.5 sgf:2022/kc-cc.sgf ogs:https://online-go.com/review/971207 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/4MZli2aFv4XhDOYiMekU
-        - mw-mm mm:W+R sgf:2022/mw-mm.sgf ogs:https://online-go.com/review/971206 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/4CFV40DzahX6XoljJMPX
-        - dj-sf sf:W+T sgf:2022/dj-sf.sgf ogs:https://online-go.com/review/971205 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/iVcv940Kf99yXvZ61HEz
-        - kh-ls kh:B+24.5 sgf:2022/kh-ls.sgf ogs:https://online-go.com/review/971204 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/r3ZIeSQnwvx1nHE25jVb
-      - - mm-kc mm:B+R sgf:2022/mm-kc.sgf ogs:https://online-go.com/review/971211 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/H2qT2iIU3LXooP1yTPla
-        - cc-mw cc:B+19.5 sgf:2022/cc-mw.sgf ogs:https://online-go.com/review/971210 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/RfRvtSbaoMUIAcJTeyfT
-        - ls-dj dj:W+3.5 sgf:2022/ls-dj.sgf ogs:https://online-go.com/review/971209 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/zKmFtEJv0p11ckco2ZtI
-        - sf-kh sf:B+R sgf:2022/sf-kh.sgf ogs:https://online-go.com/review/971208 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/IxMjTXXrFdqXYplDmms3
-      - - kc-kh kh:W+R sgf:2022/kc-kh.sgf ogs:https://online-go.com/review/971215 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/j6XFYwknH26IdtNSkk5y
-        - mw-dj dj:W+3.5 sgf:2022/mw-dj.sgf ogs:https://online-go.com/review/971214 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/1ie3tj1Bim1MbVlgbuQC
-        - mm-sf sf:W+13.5 sgf:2022/mm-sf.sgf ogs:https://online-go.com/review/971213 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/5DZFFClfESGiAbFffsgW
-        - cc-ls ls:W+6.5 sgf:2022/cc-ls.sgf ogs:https://online-go.com/review/971212 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/1x0YjgIcFX9USTWy3l7T
-      - - dj-kc dj:B+R sgf:2022/dj-kc.sgf ogs:https://online-go.com/review/971219 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/CXwSu9vWmYK4qKSn0mDC
-        - kh-mw mw:W+R sgf:2022/kh-mw.sgf ogs:https://online-go.com/review/971218 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/OQNInLUIHVhDPvUyyXvE
-        - ls-mm mm:W+19.5 sgf:2022/ls-mm.sgf ogs:https://online-go.com/review/971217 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/vlTZiP2CUMQrXgzhBmL0
-        - sf-cc sf:B+R sgf:2022/sf-cc.sgf ogs:https://online-go.com/review/971216 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/cb7uKkK4ffSdxCVsdffG
-      - - kc-mw mw:W+R sgf:2022/kc-mw.sgf ogs:https://online-go.com/review/971223 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/af6rukm2iuydJvuwnH89
-        - dj-kh kh:W+R sgf:2022/dj-kh.sgf ogs:https://online-go.com/review/971222 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/mdyJ53RRPfebSURRCj5S
-        - mm-cc cc:W+R sgf:2022/mm-cc.sgf ogs:https://online-go.com/review/971221 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/84yw6vtd2z0pvuwd1AgF
-        - ls-sf sf:W+4.5 sgf:2022/ls-sf.sgf ogs:https://online-go.com/review/971220 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/eM7MeXqZYacsoYWCmQ8R
+      - - kc-sf sf:W+R sgf:2022/2022-1-kcieslak-sfrejlak.sgf ogs:https://online-go.com/review/971196 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/0QQ12mldZrzpV8reGQgQ
+        - mw-ls mw:B+R sgf:2022/2022-1-mwalaszewski-lsoldan.sgf ogs:https://online-go.com/review/971197 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/pVOHexJsSROSCW68d4n1
+        - dj-cc cc:W+R sgf:2022/2022-1-djurkiewicz-cczernecki.sgf ogs:https://online-go.com/review/971198 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/33HAJ4l7qUfCh0nFtZTn
+        - kh-mm kh:B+R sgf:2022/2022-1-khabu-mmajka.sgf ogs:https://online-go.com/review/971199 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/cvbw7aKKJseFd34BwZtS
+      - - ls-kc ls:B+R sgf:2022/2022-2-lsoldan-kcieslak.sgf ogs:https://online-go.com/review/971203 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/xgZQ29EtBgHjzn39hBmc
+        - sf-mw sf:B+R sgf:2022/2022-2-sfrejlak-mwalaszewski.sgf ogs:https://online-go.com/review/971202 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/fg1Rp01BhE92bW3xPz30
+        - mm-dj dj:W+R sgf:2022/2022-2-mmajka-djurkiewicz.sgf ogs:https://online-go.com/review/971201 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/j28KPeK7e4NNanwRnDih
+        - cc-kh kh:W+5.5 sgf:2022/2022-2-cczernecki-khabu.sgf ogs:https://online-go.com/review/971200 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/eH9xLz6GcdvyrfmGiV2E
+      - - kc-cc cc:W+1.5 sgf:2022/2022-3-kcieslak-cczernecki.sgf ogs:https://online-go.com/review/971207 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/4MZli2aFv4XhDOYiMekU
+        - mw-mm mm:W+R sgf:2022/2022-3-mwalaszewski-mmajka.sgf ogs:https://online-go.com/review/971206 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/4CFV40DzahX6XoljJMPX
+        - dj-sf sf:W+T sgf:2022/2022-3-djurkiewicz-sfrejlak.sgf ogs:https://online-go.com/review/971205 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/iVcv940Kf99yXvZ61HEz
+        - kh-ls kh:B+24.5 sgf:2022/2022-3-khabu-lsoldan.sgf ogs:https://online-go.com/review/971204 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/r3ZIeSQnwvx1nHE25jVb
+      - - mm-kc mm:B+R sgf:2022/2022-4-mmajka-kcieslak.sgf ogs:https://online-go.com/review/971211 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/H2qT2iIU3LXooP1yTPla
+        - cc-mw cc:B+19.5 sgf:2022/2022-4-cczernecki-mwalaszewski.sgf ogs:https://online-go.com/review/971210 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/RfRvtSbaoMUIAcJTeyfT
+        - ls-dj dj:W+3.5 sgf:2022/2022-4-lsoldan-djurkiewicz.sgf ogs:https://online-go.com/review/971209 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/zKmFtEJv0p11ckco2ZtI
+        - sf-kh sf:B+R sgf:2022/2022-4-sfrejlak-khabu.sgf ogs:https://online-go.com/review/971208 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/IxMjTXXrFdqXYplDmms3
+      - - kc-kh kh:W+R sgf:2022/2022-5-kcieslak-khabu.sgf ogs:https://online-go.com/review/971215 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/j6XFYwknH26IdtNSkk5y
+        - mw-dj dj:W+3.5 sgf:2022/2022-5-mwalaszewski-djurkiewicz.sgf ogs:https://online-go.com/review/971214 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/1ie3tj1Bim1MbVlgbuQC
+        - mm-sf sf:W+13.5 sgf:2022/2022-5-mmajka-sfrejlak.sgf ogs:https://online-go.com/review/971213 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/5DZFFClfESGiAbFffsgW
+        - cc-ls ls:W+6.5 sgf:2022/2022-5-cczernecki-lsoldan.sgf ogs:https://online-go.com/review/971212 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/1x0YjgIcFX9USTWy3l7T
+      - - dj-kc dj:B+R sgf:2022/2022-6-djurkiewicz-kcieslak.sgf ogs:https://online-go.com/review/971219 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/CXwSu9vWmYK4qKSn0mDC
+        - kh-mw mw:W+R sgf:2022/2022-6-khabu-mwalaszewski.sgf ogs:https://online-go.com/review/971218 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/OQNInLUIHVhDPvUyyXvE
+        - ls-mm mm:W+19.5 sgf:2022/2022-6-lsoldan-mmajka.sgf ogs:https://online-go.com/review/971217 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/vlTZiP2CUMQrXgzhBmL0
+        - sf-cc sf:B+R sgf:2022/2022-6-sfrejlak-cczernecki.sgf ogs:https://online-go.com/review/971216 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/cb7uKkK4ffSdxCVsdffG
+      - - kc-mw mw:W+R sgf:2022/2022-7-kcieslak-mwalaszewski.sgf ogs:https://online-go.com/review/971223 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/af6rukm2iuydJvuwnH89
+        - dj-kh kh:W+R sgf:2022/2022-7-djurkiewicz-khabu.sgf ogs:https://online-go.com/review/971222 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/mdyJ53RRPfebSURRCj5S
+        - mm-cc cc:W+R sgf:2022/2022-7-mmajka-cczernecki.sgf ogs:https://online-go.com/review/971221 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/84yw6vtd2z0pvuwd1AgF
+        - ls-sf sf:W+4.5 sgf:2022/2022-7-lsoldan-sfrejlak.sgf ogs:https://online-go.com/review/971220 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/eM7MeXqZYacsoYWCmQ8R

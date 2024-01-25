@@ -26,31 +26,31 @@ stages:
       - direct
       - starting
     rounds:
-      - - ls-em ls:B+R sgf:2011/ls-em.sgf
-        - kc-mc kc:B+R sgf:2011/kc-mc.sgf
-        - kg-mm kg:B+R sgf:2011/kg-mm.sgf
-        - sf-rj sf:B+R sgf:2011/sf-rj.sgf
-      - - mc-ls ls:W+R sgf:2011/mc-ls.sgf
-        - em-kc kc:W+R sgf:2011/em-kc.sgf
-        - rj-kg kg:W+R sgf:2011/rj-kg.sgf
-        - mm-sf sf:W+16.5 sgf:2011/mm-sf.sgf
-      - - ls-mm mm:W+13.5 sgf:2011/ls-mm.sgf
-        - kc-rj kc:B+0.5 sgf:2011/kc-rj.sgf
-        - kg-em kg:B+R sgf:2011/kg-em.sgf
-        - sf-mc sf:B+R sgf:2011/sf-mc.sgf
-      - - rj-ls ls:W+0.5 sgf:2011/rj-ls.sgf
-        - mm-kc mm:B+R sgf:2011/mm-kc.sgf
-        - mc-kg kg:W+30.5 sgf:2011/mc-kg.sgf
-        - em-sf sf:W+R sgf:2011/em-sf.sgf
-      - - ls-sf ls:B+11.5 sgf:2011/ls-sf.sgf
-        - kc-kg kc:B+1.5 sgf:2011/kc-kg.sgf
-        - rj-em rj:B+R sgf:2011/rj-em.sgf
-        - mm-mc mm:B+15.5 sgf:2011/mm-mc.sgf
-      - - kg-ls kg:B+7.5 sgf:2011/kg-ls.sgf
-        - sf-kc kc:W+14.5 sgf:2011/sf-kc.sgf
-        - mc-rj rj:W+R sgf:2011/mc-rj.sgf
-        - em-mm mm:W+2.5 sgf:2011/em-mm.sgf
-      - - ls-kc ls:B+R sgf:2011/ls-kc.sgf
-        - kg-sf sf:W+R sgf:2011/kg-sf.sgf
-        - rj-mm rj:B+24.5 sgf:2011/rj-mm.sgf
-        - mc-em mc:B+R sgf:2011/mc-em.sgf
+      - - ls-em ls:B+R sgf:2011/2011-1-lsoldan-emos.sgf
+        - kc-mc kc:B+R sgf:2011/2011-1-kchwedyna-mchojnacki.sgf
+        - kg-mm kg:B+R sgf:2011/2011-1-kgiedrojc-mmajka.sgf
+        - sf-rj sf:B+R sgf:2011/2011-1-sfrejlak-rjachym.sgf
+      - - mc-ls ls:W+R sgf:2011/2011-2-mchojnacki-lsoldan.sgf
+        - em-kc kc:W+R sgf:2011/2011-2-emos-kchwedyna.sgf
+        - rj-kg kg:W+R sgf:2011/2011-2-rjachym-kgiedrojc.sgf
+        - mm-sf sf:W+16.5 sgf:2011/2011-2-mmajka-sfrejlak.sgf
+      - - ls-mm mm:W+13.5 sgf:2011/2011-3-lsoldan-mmajka.sgf
+        - kc-rj kc:B+0.5 sgf:2011/2011-3-kchwedyna-rjachym.sgf
+        - kg-em kg:B+R sgf:2011/2011-3-kgiedrojc-emos.sgf
+        - sf-mc sf:B+R sgf:2011/2011-3-sfrejlak-mchojnacki.sgf
+      - - rj-ls ls:W+0.5 sgf:2011/2011-4-rjachym-lsoldan.sgf
+        - mm-kc mm:B+R sgf:2011/2011-4-mmajka-kchwedyna.sgf
+        - mc-kg kg:W+30.5 sgf:2011/2011-4-mchojnacki-kgiedrojc.sgf
+        - em-sf sf:W+R sgf:2011/2011-4-emos-sfrejlak.sgf
+      - - ls-sf ls:B+11.5 sgf:2011/2011-5-lsoldan-sfrejlak.sgf
+        - kc-kg kc:B+1.5 sgf:2011/2011-5-kchwedyna-kgiedrojc.sgf
+        - rj-em rj:B+R sgf:2011/2011-5-rjachym-emos.sgf
+        - mm-mc mm:B+15.5 sgf:2011/2011-5-mmajka-mchojnacki.sgf
+      - - kg-ls kg:B+7.5 sgf:2011/2011-6-kgiedrojc-lsoldan.sgf
+        - sf-kc kc:W+14.5 sgf:2011/2011-6-sfrejlak-kchwedyna.sgf
+        - mc-rj rj:W+R sgf:2011/2011-6-mchojnacki-rjachym.sgf
+        - em-mm mm:W+2.5 sgf:2011/2011-6-emos-mmajka.sgf
+      - - ls-kc ls:B+R sgf:2011/2011-7-lsoldan-kchwedyna.sgf
+        - kg-sf sf:W+R sgf:2011/2011-7-kgiedrojc-sfrejlak.sgf
+        - rj-mm rj:B+24.5 sgf:2011/2011-7-rjachym-mmajka.sgf
+        - mc-em mc:B+R sgf:2011/2011-7-mchojnacki-emos.sgf
