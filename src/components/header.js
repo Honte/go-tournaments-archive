@@ -7,7 +7,7 @@ export async function Header({ translations }) {
 
   return (
     <header className="bg-pgc-dark text-pgc-light flex">
-      <div className="container mx-auto flex h-16 items-center justify-center gap-3 md:gap-6 px-4 text-center">
+      <div className="container mx-auto max-w-screen-2xl flex h-16 items-center justify-center gap-3 md:gap-6 px-4 text-center">
         <Link href={`/${translations.locale}`} className="group flex items-center gap-3 md:gap-4" title={t('navigation.home.title')}>
           <span className="sr-only">{t('navigation.home.anchor')}</span>
           <Logo className="h-8"/>
