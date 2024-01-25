@@ -1,7 +1,7 @@
 import { StageFinal } from '@/components/stageFinal';
-import { TableLeague } from '@/components/tableLeague';
-import { TableLadder } from '@/components/tableLadder';
-import { TableWithoutRounds } from '@/components/tableWithoutRounds';
+import { TableLeague } from '@/components/table/league';
+import { TableLadder } from '@/components/table/ladder';
+import { TableWithoutRounds } from '@/components/table/noRounds';
 
 export function StageResults({ stage, games, players, translations }) {
   switch (stage.type) {

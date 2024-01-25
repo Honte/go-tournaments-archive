@@ -1,6 +1,6 @@
 'use client';
 
-import { YearsNavigation } from '@/components/yearsNavigation';
+import { YearsNavigation } from '@/components/navigation/years';
 import { useCallback, useEffect, useMemo, useRef } from 'react';
 import { throttle } from 'lodash-es';
 import { useRouter } from 'next/navigation';

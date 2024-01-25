@@ -4,7 +4,7 @@ import { TournamentDetails } from '@/components/tournamentDetails';
 import { Awarded } from '@/components/awarded';
 import { loadTranslations, SUPPORTED_LOCALES } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
-import { TopNavigation } from '@/components/topNavigation';
+import { TopNavigation } from '@/components/navigation/top';
 import { StageDetails } from '@/components/stageDetails';
 import { getStageName } from '@/libs/stage';
 import { GamesList } from '@/components/gamesList';

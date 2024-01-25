@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { SUPPORTED_LOCALES } from '@/i18n/server';
 
-export function LangNavigation({ locale }) {
+export function LocaleNavigation({ locale }) {
   const pathname = usePathname();
   const regex = new RegExp(`^/${locale}`);
 

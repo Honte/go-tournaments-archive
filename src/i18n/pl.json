@@ -72,6 +72,11 @@
     "second": "2. miejsce",
     "third": "3. miejsce"
   },
+  "medals": {
+    "gold": "Złoto",
+    "silver": "Srebro",
+    "bronze": "Brąz"
+  },
   "stats": {
     "medalists": "Medaliści",
     "attendants": "Top %{0} uczestników",

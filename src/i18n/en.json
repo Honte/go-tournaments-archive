@@ -72,6 +72,11 @@
     "second": "2nd place",
     "third": "3rd place"
   },
+  "medals": {
+    "gold": "Gold",
+    "silver": "Silver",
+    "bronze": "Bronze"
+  },
   "stats": {
     "medalists": "Medalists",
     "attendants": "Top %{0} attendants",

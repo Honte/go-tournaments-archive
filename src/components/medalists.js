@@ -11,9 +11,9 @@ export function Medalists({ stats, translations }) {
         <thead className="border-b-gray-300 border-b">
         <tr className="text-xl">
           <th></th>
-          <th className="p-1 px-2"><FaMedal className="inline" fill="#fece43"/></th>
-          <th className="p-1 px-2"><FaMedal className="inline" fill="silver"/></th>
-          <th className="p-1 px-2"><FaMedal className="inline" fill="#CD7F32"/></th>
+          <th className="p-1 px-2"><FaMedal className="inline" fill="#fece43" title={t('medals.gold')}/></th>
+          <th className="p-1 px-2"><FaMedal className="inline" fill="silver" title={t('medals.silver')}/></th>
+          <th className="p-1 px-2"><FaMedal className="inline" fill="#CD7F32" title={t('medals.bronze')}/></th>
         </tr>
         </thead>
         <tbody>

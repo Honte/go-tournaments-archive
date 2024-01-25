@@ -3,7 +3,7 @@ import { loadTranslations, SUPPORTED_LOCALES } from '@/i18n/server';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { Client } from '@/components/client';
-import { LangNavigation } from '@/components/langNavigation';
+import { LocaleNavigation } from '@/components/navigation/locale';
 import { getTranslator } from '@/i18n/translator';
 
 import '../globals.css';
@@ -30,7 +30,7 @@ export default async function RootLayout({ children, params: { locale } }) {
   return (
     <html lang={locale} className="h-full bg-pgc-light" style={{ scrollbarGutter: 'stable' }}>
     <body className={`${inter.className} h-full flex flex-col text-pgc-dark`}>
-    <LangNavigation locale={locale}/>
+    <LocaleNavigation locale={locale}/>
     <Header translations={translations}/>
     <main className="flex-1 container max-w-screen-2xl mx-auto p-4">
       {children}
