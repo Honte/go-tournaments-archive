@@ -18,7 +18,7 @@ stages:
   - type: league
     date: 2022-11-11 - 2022-11-14
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T221110A
-    time: 90m + 60s byo
+    time: fischer 60m + 30s
     komi: 6.5
     breakers:
       - wins
