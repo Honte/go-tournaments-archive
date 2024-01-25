@@ -5,12 +5,13 @@ import { useCallback, useEffect, useMemo, useRef } from 'react';
 import { throttle } from 'lodash-es';
 import { useRouter } from 'next/navigation';
 
-const CAPTURE = {capture: true};
+const CAPTURE = { capture: true };
+const CAPTURE_AND_NOT_PASSIVE = { capture: true, passive: false };
 const THRESHOLD = 10;
 const THROTTLE = 200;
 const DELAY = 500;
 
-export function TopNavigation({tournaments, locale, current}) {
+export function TopNavigation({ tournaments, locale, current }) {
   const router = useRouter();
   const elRef = useRef(null);
   const navRef = useRef(null);
@@ -70,12 +71,12 @@ export function TopNavigation({tournaments, locale, current}) {
     let changed = delayRef.current;
 
     clearNavigate();
-    window.addEventListener('touchmove', onTouchMove, CAPTURE);
-    window.addEventListener('touchend', onTouchEnd, CAPTURE);
+    document.addEventListener('touchmove', onTouchMove, CAPTURE_AND_NOT_PASSIVE);
+    document.addEventListener('touchend', onTouchEnd, CAPTURE_AND_NOT_PASSIVE);
 
     function onTouchEnd() {
-      window.removeEventListener('touchmove', onTouchMove, CAPTURE);
-      window.removeEventListener('touchend', onTouchEnd, CAPTURE);
+      document.removeEventListener('touchmove', onTouchMove, CAPTURE_AND_NOT_PASSIVE);
+      document.removeEventListener('touchend', onTouchEnd, CAPTURE_AND_NOT_PASSIVE);
 
       if (changed) {
         scheduleNavigate();
@@ -83,7 +84,6 @@ export function TopNavigation({tournaments, locale, current}) {
     }
 
     function onTouchMove(currentEvent) {
-      console.log(currentEvent);
       const distance = currentEvent.targetTouches?.[0]?.clientX - lastEvent.targetTouches?.[0]?.clientX;
 
       if (navRef.current && Math.abs(distance) >= THRESHOLD) {
@@ -99,14 +99,14 @@ export function TopNavigation({tournaments, locale, current}) {
   useEffect(() => {
     elRef.current.addEventListener('wheel', onWheel);
     elRef.current.addEventListener('mousedown', onMouseDown, CAPTURE);
-    elRef.current.addEventListener('touchstart', onTouchStart, CAPTURE);
+    elRef.current.addEventListener('touchstart', onTouchStart, CAPTURE_AND_NOT_PASSIVE);
 
     return () => {
-      clearNavigate()
+      clearNavigate();
       if (elRef.current) {
         elRef.current.removeEventListener('wheel', onWheel);
         elRef.current.removeEventListener('mousedown', onMouseDown, CAPTURE);
-        elRef.current.removeEventListener('touchstart', onTouchStart, CAPTURE);
+        elRef.current.removeEventListener('touchstart', onTouchStart, CAPTURE_AND_NOT_PASSIVE);
       }
     };
   }, [elRef, delayRef, onWheel, onMouseDown, onTouchStart, clearNavigate]);
