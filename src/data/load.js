@@ -12,7 +12,7 @@ const GAME_REGEX = /(?<home>[a-z]+)-(?<away>[a-z]+) (?<winner>[a-z]+)(:(?<result
 const GAME_RESULT_REGEX = /^(?<color>[BW])(\+(?<score>([RT?]|\d+([,.]5)?)))?$/i;
 
 export async function loadTournaments() {
-  const files = await fg.glob('./src/data/tournaments/*.yml');
+  const files = await fg.glob('./public/data/*.yml');
   const tournaments = [];
 
   for (const file of files) {
@@ -149,8 +149,13 @@ function parseGame(string) {
       .reduce((map, prop) => {
         const pos = prop.indexOf(':');
         const type = prop.slice(0, pos);
+        let value = prop.slice(pos + 1)
 
-        map[type] = prop.slice(pos + 1);
+        if (type === 'sgf') {
+          value = `${process.env.SGF_URL_PREFIX}${value}`
+        }
+
+        map[type] = value;
 
         return map;
       }, {})

@@ -57,6 +57,9 @@
     "playoffs": "Play-Off"
   },
   "game": {
+    "resign": "Won by resign",
+    "time": "Won by time",
+    "walkover": "Walkover",
     "sgf": "Download SGF",
     "ogs": "See the game's relay in the Online Go Server",
     "yt": "See the video broadcast of the game",

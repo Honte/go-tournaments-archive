@@ -44,9 +44,9 @@
     "starting": "Pozycja startowa",
     "rank": "Ranking",
     "descriptions": {
-      "sos": "Suma punktów zdobytych przez przeciwników.",
-      "sodos": "Suma punktów zdobytych przez pokonanych przeciwników.",
-      "sosos": "Suma SOS-ów zdobytych przez przeciwników, czyli suma sum ich punktów."
+      "sos": "Sum of Opponents' Scores - Suma punktów zdobytych przez przeciwników.",
+      "sodos": "Sum of Defeated Opponents' Scores - Suma punktów zdobytych przez pokonanych przeciwników.",
+      "sosos": "Sum of Opponents' SOS - Suma SOS-ów zdobytych przez przeciwników, czyli suma sum ich punktów."
     }
   },
   "table": {
@@ -57,6 +57,9 @@
     "playoffs": "Play-Off"
   },
   "game": {
+    "resign": "Wygrana przez poddanie",
+    "time": "Wygrana przez czas",
+    "walkover": "Walkower",
     "sgf": "Pobierz zapis partii w formacie SGF",
     "ogs": "Zobacz relacje w serwisie Online Go Server",
     "yt": "Zobacz relację wideo z partii",

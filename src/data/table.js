@@ -91,14 +91,14 @@ export function createTable(stage, games, playersMap) {
     }
   }
 
-  const table = sort(players, stage.breakers);
+  const table = stage.order ? sortByOrder(players, stage.order) : sortByBreakers(players, stage.breakers);
 
   // assign player index
   for (const player of table) {
     for (const game of player.games) {
       if (game?.opponent) {
         game.index = map[game.opponent].index;
-        game.text = `${game.index}${game.won ? '+' : '-'}`
+        game.text = `${game.index}${game.won ? '+' : '-'}`;
       }
     }
   }
@@ -106,7 +106,33 @@ export function createTable(stage, games, playersMap) {
   return table;
 }
 
-function sort(players, breakers) {
+function sortByOrder(players, order) {
+  const result = [];
+  const map = players.reduce((m, p) => m.set(p.id, p), new Map());
+
+  // place players based on order
+  for (const [place, placed] of order.entries()) {
+    for (const id of placed.split(',')) {
+      const player = map.get(id.trim());
+
+      if (player) {
+        player.place = place + 1;
+        player.index = result.push(player);
+        map.delete(player.id);
+      }
+    }
+  }
+
+  // if any player was not mapped, add them at the end with the same place
+  for (const player of map.values()) {
+    player.place = order.length;
+    player.index = result.push(player);
+  }
+
+  return players;
+}
+
+function sortByBreakers(players, breakers) {
   const final = breakers.reduce((groups, breaker) => {
     const nextGroups = [];
     const picker = (p) => p[breaker];

@@ -31,3 +31,12 @@ stages:
       - - jk-km km
         - wd-js wd
         - wg-ls wg
+    order: # there were no ex aequo places in the final results
+    - jk
+    - km
+    - wd
+    - js
+    - wg
+    - ls
+
+
