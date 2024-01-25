@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       colors: {
         'pgc-dark': '#222222',
+        'pgc-gray': '#999999',
         'pgc-light': '#F3F4F6FF',
         'pgc-primary': '#5287ae',
         'pgc-hover': '#72940c'
