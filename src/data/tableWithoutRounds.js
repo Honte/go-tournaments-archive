@@ -12,26 +12,26 @@ export function createTableWithoutRounds(stage, games, players) {
     (results[winner] ||= {
       id: winner,
       score: 0,
-      games: {},
+      games: [],
       rank: getRankValue(players[winner].rank)
-    }).games[loser] = {
+    }).games.push({
       opponent: loser,
       won: true,
       result,
       game: id
-    };
+    });
 
     (results[loser] ||= {
       id: loser,
       score: 0,
-      games: {},
+      games: [],
       rank: getRankValue(players[loser].rank)
-    }).games[winner] = {
+    }).games.push({
       opponent: winner,
       won: false,
       result,
       game: id
-    };
+    });
 
     results[winner].score++;
   }

@@ -65,7 +65,7 @@ export async function loadTournaments() {
           break;
         case 'final':
           target.games = parseGames(games, stage.games);
-          target.summary = createFinalSummary(target, games)
+          target.table = createFinalTable(target, games)
           break;
         case 'round-robin-table':
           target.games = parseGames(games, stage.games);
@@ -207,41 +207,57 @@ function getDateRange(dates) {
   }
 }
 
-function createFinalSummary(stage, games) {
-  const score = {};
+function createFinalTable(stage, games) {
+  const players = {};
 
   for (const id of stage.games) {
     const [a, b] = games[id].players;
 
-    score[a.id] = (score[a.id] || 0) + Number(a.won);
-    score[b.id] = (score[b.id] || 0) + Number(b.won);
+    addGame(a, b.id, id);
+    addGame(b, a.id, id);
   }
 
-  const result = {
-    winner: null,
-    loser: null,
-    previous: null,
-    score,
-  }
-
-  const [home, away] = Object.keys(score);
+  const [home, away] = Object.keys(players);
 
   if (stage.includePrevious) {
     for (const game of iterateGames(games, home, away)) {
       if (!stage.games.includes(game.id)) {
-        const winner = game.players.find((p) => p.won);
+        const [a, b] = game.players;
 
-        result.previous = winner.id;
-        result.score[winner.id] += 1;
+        addGame(a, b.id, game.id);
+        addGame(b, a.id, game.id);
+
+        players[a.id].prevScore = Number(a.won);
+        players[b.id].prevScore = Number(b.won);
         break;
       }
     }
   }
 
-  result.winner = score[home] > score[away] ? home : away;
-  result.loser = result.winner === away ? home : away
 
-  return result;
+
+  const result = players[home].wins > players[away].wins ? [home, away] : [away, home];
+
+  return result.map((p, index) => ({
+    ...players[p],
+    place: index + 1,
+  }))
+
+  function addGame(player, opponent, game) {
+    players[player.id] ||= {
+      id: player.id,
+      place: 0,
+      games: [],
+      wins: 0
+    };
+
+    players[player.id].wins += Number(player.won);
+    players[player.id].games.push({
+      opponent,
+      won: player.won,
+      game
+    })
+  }
 }
 
 function* iterateGames(games, playerA, playerB) {

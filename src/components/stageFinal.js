@@ -5,24 +5,19 @@ export function StageFinal({stage, players, translations}) {
   const {
     requiredWins,
     includePrevious = false,
-    summary: {
-      winner,
-      loser,
-      score,
-      previous
-    }
+    table: [winner, loser]
   } = stage;
 
-  const result = `${score[winner]}:${score[loser]}`;
-  const prev = includePrevious ? `(${score[winner] - Number(previous === winner)}:${score[loser] - Number(previous === loser)})` : '';
+  const result = `${winner.wins}:${loser.wins}`;
+  const prev = includePrevious ? `(${winner.wins - winner.prevScore}:${loser.wins - loser.prevScore})` : '';
 
   return (
     <>
       <p>{t('stage.requiredWins', requiredWins)} {includePrevious ? t('stage.includePreviousWins') : ''}</p>
       <div className="bg-gray-200 p-2 my-2 md:p-3 text-lg flex items-center text-center gap-2">
-        <strong>{players[winner].name}</strong>
+        <strong>{players[winner.id].name}</strong>
         <span>&ndash;</span>
-        <span>{players[loser].name}</span>
+        <span>{players[loser.id].name}</span>
         <strong>{result}</strong>
         {prev && <span>{prev}</span>}
       </div>

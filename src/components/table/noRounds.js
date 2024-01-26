@@ -2,20 +2,21 @@ import { getTranslator } from '@/i18n/translator';
 import { GamePopoverTrigger } from '@/components/gamePopover';
 
 export function TableWithoutRounds({ stage, players, games, translations }) {
-  const t = getTranslator(translations)
+  const t = getTranslator(translations);
   const { table } = stage;
 
   return (
     <div className="w-full overflow-x-auto">
       <table className="min-w-full table-auto border-collapse">
         <thead className="border-b-gray-300 border-b">
-          <tr className="text-center">
-            <th className="p-1">{t('table.place')}</th>
-            <th className="p-1 text-left">{t('table.name')}</th>
-            <th className="p-1">{t('table.rank')}</th>
-            {table.map((player, index) => <th className="p-1" key={index} title={players[player.id].name}>{shorten(players[player.id].name)}</th>)}
-            <th className="p-1">{t('breakers.wins')}</th>
-          </tr>
+        <tr className="text-center">
+          <th className="p-1">{t('table.place')}</th>
+          <th className="p-1 text-left">{t('table.name')}</th>
+          <th className="p-1">{t('table.rank')}</th>
+          {table.map((player, index) => <th className="p-1" key={index}
+                                            title={players[player.id].name}>{shorten(players[player.id].name)}</th>)}
+          <th className="p-1">{t('breakers.wins')}</th>
+        </tr>
         </thead>
         <tbody>
         {table.map((player, i) => (
@@ -23,18 +24,31 @@ export function TableWithoutRounds({ stage, players, games, translations }) {
             <td className="p-1">{(i === 0 || player.place !== table[i - 1].place) ? player.place : ''}</td>
             <td className="p-1 text-left">{players[player.id].name}</td>
             <td className="p-1">{players[player.id].rank}</td>
-            {table.map((p, index) => <td className="p-1" key={index}>
-              {p === player ? <>&ndash;</> : <GamePopoverTrigger game={games[player.games[p.id].game]} players={players} as="span">{player.games[p.id].won ? '1' : '0'}</GamePopoverTrigger>}
-            </td>)}
+            {table.map((p, index) => {
+              const entry = p !== player && player.games.find((g) => g.opponent === p.id);
+
+              return (
+                <td className="p-1" key={index}>
+                  {p === player ? <>&ndash;</> :
+                    <GamePopoverTrigger
+                      game={games[entry.game]}
+                      players={players}
+                      as="span"
+                    >
+                      {entry.won ? '1' : '0'}
+                    </GamePopoverTrigger>}
+                </td>
+              );
+            })}
             <td className="p-1">{player.score}</td>
           </tr>
         ))}
         </tbody>
       </table>
     </div>
-  )
+  );
 }
 
 function shorten(name) {
-  return name.split(' ').map((s) => `${s[0].toUpperCase()}.`).join(' ')
+  return name.split(' ').map((s) => `${s[0].toUpperCase()}.`).join(' ');
 }
