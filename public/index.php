@@ -12,7 +12,7 @@ function select_best_language($languages) {
     return $languages[0];
 }
 
-$locale = select_best_language(['en', 'pl']);
+$locale = select_best_language(['pl', 'en']);
 $server = $_SERVER['SERVER_NAME'];
 $port = isset($_SERVER['HTTP_X_FORWARDED_PORT']) && !empty($_SERVER['HTTP_X_FORWARDED_PORT']) ? ':'. $_SERVER['HTTP_X_FORWARDED_PORT'] : '';
 $protocol = $_SERVER['PROTOCOL'] = isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && !empty($_SERVER['HTTP_X_FORWARDED_PROTO']) ? "https://" : "http://";

@@ -112,7 +112,7 @@ export function TopNavigation({ tournaments, locale, current }) {
   }, [elRef, delayRef, onWheel, onMouseDown, onTouchStart, clearNavigate]);
 
   return (
-    <div ref={elRef}>
+    <div ref={elRef} className="cursor-grab">
       <YearsNavigation years={years} current={current} locale={locale} ref={navRef}/>
     </div>
   );
