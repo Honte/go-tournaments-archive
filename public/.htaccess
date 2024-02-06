@@ -1,3 +1,4 @@
+AddDefaultCharset utf-8
 Options -Indexes
 Options +FollowSymLinks
 DirectorySlash Off
