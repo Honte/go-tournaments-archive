@@ -1,7 +1,8 @@
 export function calculateStats(tournaments) {
-  const winners = {};
-  const attendants = {}
-  let games = 0;
+  const players = {};
+  const games = {};
+
+  let playedGames = 0;
   let black = 0;
   let white = 0;
   let resign = 0;
@@ -11,33 +12,63 @@ export function calculateStats(tournaments) {
   let streams = 0;
   let relays = 0
 
+  upsertPlayer('BYE');
+
   for (const tournament of tournaments) {
-    const { players, top, games: tournamentGames } = tournament;
+    const { year, players: tournamentPlayers, stages, top, games: tournamentGames } = tournament;
 
-    for (const [index, winner] of top.entries()) {
-      for (const id of winner.split(',')) {
-        const name = players[id].name
+    const tournamentPlayersMap = {
+      BYE: players.BYE
+    };
+    for (const pid in tournamentPlayers) {
+      const player = upsertPlayer(tournamentPlayers[pid])
 
-        winners[name] ||= { name, medals: [0,0,0] };
-        winners[name].medals[index]++;
+      tournamentPlayersMap[pid] = player;
+      player.years.push(year);
+    }
+
+    for (const stage of stages) {
+      for (const player of stage.table) {
+        const playerGames = [];
+        let won = 0;
+
+        for (const game of player.games) {
+          if (game) {
+            won += Number(game.won)
+            playerGames.push({
+              ...game,
+              opponent: tournamentPlayersMap[game.opponent].id
+            })
+          }
+        }
+
+        tournamentPlayersMap[player.id].results.push({
+          year,
+          stage: stage.type,
+          place: player.place,
+          games: playerGames,
+          won,
+          rank: tournamentPlayers[player.id].rank
+        })
       }
     }
 
-    for (const id in players) {
-      const { name } = players[id];
-
-      attendants[name] ||= { name, attended: [] };
-      attendants[name].attended.push(tournament.year)
+    for (const [index, winner] of top.entries()) {
+      for (const id of winner.split(',')) {
+        tournamentPlayersMap[id].medals[index].push(year);
+      }
     }
 
     for (const id in tournamentGames) {
       const game = tournamentGames[id];
 
+      games[id] = game;
+
       if (game.players.some((p) => p.id === 'BYE')) {
         continue;
       }
 
-      games++;
+      playedGames++;
 
       if (game.result?.startsWith('B')) {
         black++
@@ -73,15 +104,18 @@ export function calculateStats(tournaments) {
     }
   }
 
-  for (const name in winners) {
-    const player = winners[name];
+  for (const id in players) {
+    const player = players[id];
     const [gold, silver, bronze] = player.medals;
 
-    player.score = gold * 10_000 + silver * 100 + bronze
+    player.score = gold.length * 10_000 + silver.length * 100 + bronze.length
+    player.totalGames = player.results.reduce((total, r) => total + r.games.length, 0);
+    player.totalWon = player.results.reduce((total, r) => total + r.won, 0);
   }
 
   return {
     tournaments: tournaments.length,
+    playedGames,
     games,
     sgfs,
     resign,
@@ -89,9 +123,23 @@ export function calculateStats(tournaments) {
     relays,
     streams,
     analysis,
+    players,
     black: black / (black + white),
-    winners: Object.values(winners).sort((a, b) => b.score - a.score),
-    attendants: Object.values(attendants).sort((a, b) => b.attended.length - a.attended.length)
+    winners: Object.values(players)
+      .filter((p) => p.score > 0)
+      .sort((a, b) => b.score - a.score),
   }
 
+  function upsertPlayer(player) {
+    const id = player?.id || player;
+
+    return players[id] ||= {
+      id,
+      medals: [[],[],[]],
+      name: player?.name,
+      years: [],
+      results: []
+    }
+  }
 }
+

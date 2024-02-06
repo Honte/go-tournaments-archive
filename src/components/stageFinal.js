@@ -1,4 +1,5 @@
 import { getTranslator } from '@/i18n/translator';
+import { PlayerLink } from '@/components/ui/playerLink';
 
 export function StageFinal({stage, players, translations}) {
   const t = getTranslator(translations)
@@ -15,9 +16,9 @@ export function StageFinal({stage, players, translations}) {
     <>
       <p>{t('stage.requiredWins', requiredWins)} {includePrevious ? t('stage.includePreviousWins') : ''}</p>
       <div className="bg-gray-200 p-2 my-2 md:p-3 text-lg flex items-center text-center gap-2">
-        <strong>{players[winner.id].name}</strong>
+        <strong><PlayerLink player={players[winner.id]} translations={translations}/></strong>
         <span>&ndash;</span>
-        <span>{players[loser.id].name}</span>
+        <span><PlayerLink player={players[loser.id]} translations={translations}/></span>
         <strong>{result}</strong>
         {prev && <span>{prev}</span>}
       </div>

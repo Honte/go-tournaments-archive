@@ -2,13 +2,16 @@
   "site": {
     "name": "Polish Go Championships Archive",
     "description": "Archive of all Polish Go Championships tournaments",
-    "yearDescription": "Results of PGC %{0}"
+    "yearDescription": "Results of PGC %{0}",
+    "allTimeStatsTitle": "All-time Table",
+    "allTimeStatsDescription": "All-time statistics of all Polish Go Championships participants",
+    "playerStatsTitle": "Player %{0} stats",
+    "playerStatsDescription": "Participation statistics of %{0} in all Polish Go Championships events"
   },
   "navigation": {
     "home": {
       "anchor": "Home page",
       "title": "Go to home page"
-
     }
   },
   "details": {
@@ -50,11 +53,21 @@
     }
   },
   "table": {
+    "year": "Year",
+    "stage": "Stage",
     "place": "Place",
+    "opponent": "Opponent",
+    "firstName": "First Name",
+    "lastName": "Last Name",
     "name": "Name",
     "rank": "Rank",
     "round": "Round %{0}",
-    "playoffs": "Play-Off"
+    "playoffs": "Play-Off",
+    "events": "Events",
+    "games": "Games played",
+    "won": "Games won",
+    "lost": "Games lost",
+    "wonPercent": "% won"
   },
   "game": {
     "resign": "Won by resign",
@@ -78,8 +91,12 @@
     "bronze": "Bronze"
   },
   "stats": {
+    "full": "See full stats",
+    "events": "Participation summary",
+    "opponents": "Opponents summary",
     "medalists": "Medalists",
     "attendants": "Top %{0} attendants",
+    "achievements": "Achievements",
     "total": {
       "title": "Archive in numbers",
       "tournaments": "Events",
@@ -92,6 +109,7 @@
       "relays": "Relays on OGS",
       "streams": "Video streamed",
       "analysis": "Analyzed by AI"
-    }
+    },
+    "allTimeHeader": "All-Time Table"
   }
 }

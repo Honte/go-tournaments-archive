@@ -5,9 +5,13 @@ export function getStageName(stage, translations) {
     return stage.name[translations.locale];
   }
 
+  return getStageNameFromType(stage.type, translations)
+}
+
+export function getStageNameFromType(type, translations) {
   const t = getTranslator(translations);
 
-  switch (stage.type) {
+  switch (type) {
     case 'league':
     case 'round-robin-table':
       return t('stage.league');

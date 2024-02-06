@@ -1,16 +1,21 @@
+'use client'
+
 import { Breaker } from '@/components/breaker';
 import { GameCell } from '@/components/gameCell';
 import { getTranslator } from '@/i18n/translator';
+import { PlayerLink } from '@/components/ui/playerLink';
+import attachHighlighter  from 'go-results-highlighter';
+
+import 'go-results-highlighter/dist/browser.css'
 
 export function TableLeague({stage, players, games, translations}) {
   const t = getTranslator(translations)
   const {breakers, table, rounds} = stage;
-
   const visibleBreakers = breakers.filter((breaker) => breaker !== 'direct' && breaker !== 'rank');
 
   return (
     <div className="w-full overflow-x-auto">
-      <table className="min-w-full table-auto border-collapse">
+      <table className="min-w-full table-auto border-separate border-spacing-x-0 border-spacing-y-0.5" ref={attachHighlighter}>
         <thead className="border-b-gray-300 border-b">
         <tr className="text-center">
           <th className="p-1">{t('table.place')}</th>
@@ -25,9 +30,14 @@ export function TableLeague({stage, players, games, translations}) {
         {table.map((player, i) => (
           <tr key={player.id} className="text-center even:bg-gray-200">
             <td className="p-1">{(i === 0 || player.place !== table[i - 1].place) ? player.place : ''}</td>
-            <td className="p-1 text-left">{players[player.id].name}</td>
+            <td className="p-1 text-left">
+              <PlayerLink player={players[player.id]} translations={translations}>
+                {players[player.id].name}
+              </PlayerLink>
+            </td>
             <td className="p-1">{players[player.id].rank}</td>
-            {player.games.map((game, index) => game ? <GameCell as="td" key={index} entry={game} games={games} players={players}/> :
+            {player.games.map((game, index) => game ?
+              <GameCell as="td" key={index} entry={game} games={games} players={players}/> :
               <td key={index}>&ndash;</td>)}
             {visibleBreakers.map((breaker) => <td className="p-1" key={breaker}>{player[breaker]}</td>)}
           </tr>

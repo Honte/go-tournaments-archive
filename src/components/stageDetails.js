@@ -1,4 +1,4 @@
-import { ExternalLink } from '@/components/externalLink';
+import { ExternalLink } from '@/components/ui/externalLink';
 import { Details } from '@/components/details';
 import { Breaker } from '@/components/breaker';
 import { getTranslator } from '@/i18n/translator';

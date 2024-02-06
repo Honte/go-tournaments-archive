@@ -37,7 +37,7 @@ export async function loadTournaments() {
 
 
       players[id] = {
-        slug: first[0] + last,
+        id: first[0] + last,
         name: details.groups.name,
         rank: details.groups.rank
       };

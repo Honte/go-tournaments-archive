@@ -1,6 +1,7 @@
 import { Game } from '@/components/game';
 import { getTranslator } from '@/i18n/translator';
 import { getStageName } from '@/libs/stage';
+import { H2 } from '@/components/ui/h2';
 
 export function GamesList({ tournament, translations }) {
   const {stages, games, players} = tournament;
@@ -45,7 +46,7 @@ export function GamesList({ tournament, translations }) {
 
   return (
     <div className="my-4">
-      <h2 className="text-xl font-bold pb-1 my-2 border-b-pgc-dark border-b-2">{t('stage.games')}</h2>
+      <H2>{t('stage.games')}</H2>
       {list.map((list, index) => (
         <div key={index} className="my-5">
           <h4 className="text-l font-bold border-b-pgc-dark border-b">{stages.length > 1 && list.stage ? <>{list.stage} &ndash; </> : ''}{list.name}</h4>

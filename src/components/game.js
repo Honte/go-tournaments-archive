@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { getTranslator } from '@/i18n/translator';
 import { Stone } from '@/components/stone';
-import { ExternalButton } from '@/components/externalButton';
+import { ExternalButton } from '@/components/ui/externalButton';
 
 export function Game({ game, players, translations, wide = true }) {
   const t = getTranslator(translations);

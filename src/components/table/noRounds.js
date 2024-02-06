@@ -1,5 +1,8 @@
+'use client'
+
 import { getTranslator } from '@/i18n/translator';
 import { GamePopoverTrigger } from '@/components/gamePopover';
+import { PlayerLink } from '@/components/ui/playerLink';
 
 export function TableWithoutRounds({ stage, players, games, translations }) {
   const t = getTranslator(translations);
@@ -22,7 +25,11 @@ export function TableWithoutRounds({ stage, players, games, translations }) {
         {table.map((player, i) => (
           <tr key={player.id} className="text-center even:bg-gray-200">
             <td className="p-1">{(i === 0 || player.place !== table[i - 1].place) ? player.place : ''}</td>
-            <td className="p-1 text-left">{players[player.id].name}</td>
+            <td className="p-1 text-left">
+              <PlayerLink player={players[player.id]} translations={translations}>
+                {players[player.id].name}
+              </PlayerLink>
+            </td>
             <td className="p-1">{players[player.id].rank}</td>
             {table.map((p, index) => {
               const entry = p !== player && player.games.find((g) => g.opponent === p.id);

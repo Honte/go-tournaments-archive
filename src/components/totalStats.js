@@ -1,16 +1,17 @@
 import { getTranslator } from '@/i18n/translator';
+import { H1 } from '@/components/ui/h1';
 
 export function TotalStats({ translations, stats }) {
   const t = getTranslator(translations)
 
   return (
     <div>
-      <h1 className="text-2xl font-bold pb-1 my-3 border-b-pgc-dark border-b-2">{t('stats.total.title')}</h1>
+      <H1>{t('stats.total.title')}</H1>
       <div className="items-center">
         <ul className="list-disc mx-8">
           <li>{t('stats.total.tournaments')} - {stats.tournaments}</li>
-          <li>{t('stats.total.participants')} - {stats.attendants.length}</li>
-          <li>{t('stats.total.games')} - {stats.games}</li>
+          <li>{t('stats.total.participants')} - {Object.keys(stats.players).length}</li>
+          <li>{t('stats.total.games')} - {stats.playedGames}</li>
           <li>{t('stats.total.black')} - {(stats.black * 100).toFixed(2)}%</li>
           <li>{t('stats.total.resigned')} - {stats.resign}</li>
           <li>{t('stats.total.timeout')} - {stats.timeout}</li>

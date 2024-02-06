@@ -1,12 +1,15 @@
 import Link from 'next/link';
 import { getTranslator } from '@/i18n/translator';
+import { H1 } from '@/components/ui/h1';
+import { PlayerLink } from '@/components/ui/playerLink';
+import { jsxJoin } from '@/libs/join';
 
 export function Winners({tournaments, translations, className}) {
   const t = getTranslator(translations);
 
   return (
     <div className={className}>
-      <h1 className="text-2xl font-bold pb-1 my-3 border-b-pgc-dark border-b-2">{t('winners.title')}</h1>
+      <H1>{t('winners.title')}</H1>
       <table className="w-full border-collapse sm:table-fixed">
         <thead className="border-b-gray-300 border-b">
         <tr>
@@ -18,7 +21,7 @@ export function Winners({tournaments, translations, className}) {
         </thead>
         <tbody>
         {tournaments.map(({year, top, players}) => (
-          <tr key={year} className="text-center even:bg-gray-200">
+          <tr key={year} className="text-center even:bg-gray-200 hover:bg-gray-300">
             <td className="p-2">
               <Link className="sm:text-xl font-bold text-pgc-primary underline hover:text-pgc-hover"
                     href={`/${translations.locale}/${year}`}>
@@ -27,7 +30,7 @@ export function Winners({tournaments, translations, className}) {
             </td>
             {top.map((winner, index) => (
               <td className="p-1" key={index}>
-                {winner.split(',').map((id) => `${players[id].name} (${players[id].rank})`).join(', ')}
+                {jsxJoin(winner.split(',').map((id) => <PlayerLink key={id} player={players[id]} translations={translations}/>), ', ')}
               </td>
             ))}
           </tr>

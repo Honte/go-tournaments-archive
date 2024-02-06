@@ -1,6 +1,7 @@
-import { ExternalLink } from '@/components/externalLink';
+import { ExternalLink } from '@/components/ui/externalLink';
 import { Details } from '@/components/details';
 import { getTranslator } from '@/i18n/translator';
+import { H2 } from '@/components/ui/h2';
 
 export function TournamentDetails({ tournament, translations }) {
   const t = getTranslator(translations)
@@ -28,7 +29,7 @@ export function TournamentDetails({ tournament, translations }) {
 
   return (
     <div className="flex-1">
-      <h2 className="text-xl font-bold pb-1 my-2 border-b-pgc-dark border-b-2">{t('details.header')}</h2>
+      <H2>{t('details.header')}</H2>
       <Details details={details}/>
     </div>
   );

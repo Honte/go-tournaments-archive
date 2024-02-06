@@ -2,7 +2,11 @@
   "site": {
     "name": "Archiwum Mistrzostw Polski w\u00A0Go",
     "description": "Archiwum wyników wszystkich edycji mistrzostw Polski w Go",
-    "yearDescription": "Wyniki mistrzostw z roku %{0}"
+    "yearDescription": "Wyniki mistrzostw z roku %{0}",
+    "allTimeStatsTitle": "Lista wszech czasów",
+    "allTimeStatsDescription": "Lista wszech czasów wszystkich uczestników mistrzostw Polski w Go",
+    "playerStatsTitle": "Wyniki gracza %{0}",
+    "playerStatsDescription": "Statystyki gracza %{0} we wszystkich rozegranych edycjach mistrzostw Polski w Go"
   },
   "navigation": {
     "home": {
@@ -50,11 +54,21 @@
     }
   },
   "table": {
+    "year": "Rok",
+    "stage": "Etap",
     "place": "Miejsce",
+    "opponent": "Przeciwnik",
+    "firstName": "Imię",
+    "lastName": "Nazwisko",
     "name": "Zawodnik",
     "rank": "Siła",
     "round": "Runda %{0}",
-    "playoffs": "Play-Off"
+    "playoffs": "Play-Off",
+    "events": "Uczestnictwa",
+    "games": "Rozegrane gry",
+    "won": "Wygrane gry",
+    "lost": "Przegrane gry",
+    "wonPercent": "% wygranych"
   },
   "game": {
     "resign": "Wygrana przez poddanie",
@@ -78,8 +92,12 @@
     "bronze": "Brąz"
   },
   "stats": {
+    "full": "Zobacz pełne statystyki",
+    "events": "Podsumowanie udziałów",
+    "opponents": "Podsumowanie przeciwników",
     "medalists": "Medaliści",
     "attendants": "Top %{0} uczestników",
+    "achievements": "Osiągnięcia",
     "total": {
       "title": "Archiwum w liczbach",
       "tournaments": "Wydarzeń",
@@ -92,6 +110,7 @@
       "relays": "Relacji na OGS",
       "streams": "Transmisji wideo",
       "analysis": "Analiz AI"
-    }
+    },
+    "allTimeHeader": "Lista Wszech Czasów"
   }
 }

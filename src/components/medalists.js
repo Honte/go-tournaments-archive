@@ -1,12 +1,15 @@
 import { FaMedal } from 'react-icons/fa6';
 import { getTranslator } from '@/i18n/translator';
+import { H1 } from '@/components/ui/h1';
+import { PlayerLink } from '@/components/ui/playerLink';
+import { FullStatsLink } from '@/components/fullStatsLink';
 
 export function Medalists({ stats, translations }) {
   const t = getTranslator(translations)
 
   return (
     <div>
-      <h1 className="text-2xl font-bold pb-1 mt-3 mb-0.5 border-b-pgc-dark border-b-2">{t('stats.medalists')}</h1>
+      <H1 className="mb-0.5">{t('stats.medalists')}</H1>
       <table className="w-full text-center border-collapse">
         <thead className="border-b-gray-300 border-b">
         <tr className="text-xl">
@@ -18,15 +21,17 @@ export function Medalists({ stats, translations }) {
         </thead>
         <tbody>
         {stats.winners.map((winner) => (
-          <tr key={winner.name} className="even:bg-gray-200">
-            <td className="text-left p-1">{winner.name}</td>
-            <td>{winner.medals[0]}</td>
-            <td>{winner.medals[1]}</td>
-            <td>{winner.medals[2]}</td>
+          <tr key={winner.name} className="even:bg-gray-200 hover:bg-gray-300">
+            <td className="text-left p-1"><PlayerLink player={winner} translations={translations}>{winner.name}</PlayerLink></td>
+            <td>{winner.medals[0].length}</td>
+            <td>{winner.medals[1].length}</td>
+            <td>{winner.medals[2].length}</td>
           </tr>
         ))}
         </tbody>
       </table>
+
+      <FullStatsLink translations={translations}/>
     </div>
   )
 }

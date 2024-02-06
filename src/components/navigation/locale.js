@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { SUPPORTED_LOCALES } from '@/i18n/server';
+import { SUPPORTED_LOCALES } from '@/i18n/consts';
 
 export function LocaleNavigation({ locale }) {
   const pathname = usePathname();
