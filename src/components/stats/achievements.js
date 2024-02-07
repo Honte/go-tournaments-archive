@@ -25,7 +25,7 @@ export function Achievements({ player, translations }) {
   details[t('table.won')] = player.totalWon
 
   return (
-    <div className="my-2">
+    <div className="my-1 flex flex-col">
       <H2>{t('stats.achievements')}</H2>
       <Details details={details}/>
     </div>

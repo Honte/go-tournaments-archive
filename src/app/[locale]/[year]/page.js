@@ -45,7 +45,7 @@ export default async function Edition({params: {year, locale}}) {
     <>
       <TopNavigation locale={locale} tournaments={tournaments} current={Number(year)}/>
 
-      <div className="sm:flex sm:gap-8 my-4">
+      <div className="sm:flex sm:gap-8 my-1">
         <TournamentDetails tournament={tournament} translations={translations}/>
         <Awarded tournament={tournament} translations={translations}/>
       </div>

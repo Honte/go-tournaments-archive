@@ -1,4 +1,3 @@
-import { H1 } from '@/components/ui/h1';
 import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
 import { PlayerStats } from '@/components/playerStats';
@@ -21,7 +20,7 @@ export default async function Stats({ params: { locale }}) {
 
   return (
     <>
-      <H1>{t('stats.allTimeHeader')}</H1>
+      <h1 className="text-4xl text-center font-bold mb-4">{t('stats.allTimeHeader')}</h1>
       <PlayerStats players={stats.players} translations={translations}/>
     </>
   )

@@ -1,7 +1,6 @@
 'use client';
 
 import { getTranslator } from '@/i18n/translator';
-import { PlayerLink } from '@/components/ui/playerLink';
 import { useMemo } from 'react';
 import { StatsTable } from '@/components/table/stats';
 import { toPercentage, toPlayerLink } from '@/libs/table';
