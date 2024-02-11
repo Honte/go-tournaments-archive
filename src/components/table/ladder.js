@@ -3,13 +3,14 @@
 import { getTranslator } from '@/i18n/translator';
 import { GameCell } from '@/components/gameCell';
 import { PlayerLink } from '@/components/ui/playerLink';
-import attachHighlighter from 'go-results-highlighter/src/lib/wrapper';
+import attachHighlighter from 'go-results-highlighter';
 
 import 'go-results-highlighter/dist/browser.css';
 
 export function TableLadder({ stage, players, games, translations }) {
   const t = getTranslator(translations);
   const { table, rounds, playoffs } = stage;
+  const playoffsColumns = playoffs.length ? Math.max(...table.map((p) => p.playoffs.length)) : 0;
 
   return (
     <div className="w-full overflow-x-auto">
@@ -21,7 +22,7 @@ export function TableLadder({ stage, players, games, translations }) {
           <th className="p-1 text-left">{t('table.name')}</th>
           <th className="p-1">{t('table.rank')}</th>
           {rounds.map((round, index) => <th className="p-1" key={index}>{t('table.round', index + 1)}</th>)}
-          {playoffs?.length ? <th className="p-1">{t('table.playoffs')}</th> : ''}
+          {playoffsColumns > 0 ? <th className="p-1" colSpan={playoffsColumns}>{t('table.playoffs')}</th> : ''}
         </tr>
         </thead>
         <tbody>
@@ -36,14 +37,35 @@ export function TableLadder({ stage, players, games, translations }) {
             <td className="p-1">{players[player.id].rank}</td>
             {player.games.map((game, index) => game ?
               <GameCell as="td" key={index} entry={game} games={games} players={players}/> : <td key={index}/>)}
-            {playoffs.length ? <td className="inline-flex gap-2">
-              {player.playoffs.map((game, index) => <GameCell as="span" key={index} entry={game} games={games}
-                                                              players={players}/>)}
-            </td> : ''}
+            {playoffsColumns > 0 ?
+              <PlayoffGames playoffs={player.playoffs} games={games} players={players} cols={playoffsColumns}/> : ''}
           </tr>
         ))}
         </tbody>
       </table>
     </div>
+  );
+}
+
+function PlayoffGames({ games, players, cols, playoffs }) {
+  if (!playoffs?.length) {
+    return <td colSpan={cols}/>;
+  }
+
+  const cells = playoffs.map((game) => ({
+    entry: game,
+    colspan: 1
+  }));
+
+  if (playoffs.length < cols) {
+    cells[cells.length - 1].colspan = 1 + (cols - playoffs.length);
+  }
+
+  return (
+    <>
+      {cells.map(({ entry, colspan }, index) =>
+        <GameCell as="td" key={index} entry={entry} games={games} players={players} colSpan={colspan}/>
+      )}
+    </>
   );
 }

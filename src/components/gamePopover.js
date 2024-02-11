@@ -67,7 +67,7 @@ export function GamePopover({ translations }) {
   )
 }
 
-export function GamePopoverTrigger({ as = 'div', game, players, children }) {
+export function GamePopoverTrigger({ as = 'div', game, players, children, ...props }) {
   const Component = as;
   const ref = useRef();
 
@@ -78,7 +78,7 @@ export function GamePopoverTrigger({ as = 'div', game, players, children }) {
         players,
         target: ref.current,
       }
-    }))} ref={ref} className="underline cursor-pointer">
+    }))} ref={ref} className="underline cursor-pointer" {...props}>
       {children}
     </Component>
   )

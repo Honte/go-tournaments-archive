@@ -1,8 +1,10 @@
 import { GamePopoverTrigger } from '@/components/gamePopover';
 
-export function GameCell({ entry, games, players, as }) {
+export function GameCell({ entry, games, players, as, ...props }) {
   return (
-    <GamePopoverTrigger as={as} game={games[entry.game]} players={players}>{getResult(entry)}</GamePopoverTrigger>
+    <GamePopoverTrigger as={as} game={games[entry.game]} players={players} {...props}>
+      {getResult(entry)}
+    </GamePopoverTrigger>
   )
 }
 

@@ -14,7 +14,7 @@
     "@tanstack/react-table": "^8.11.8",
     "clsx": "^2.1.0",
     "fast-glob": "^3.3.2",
-    "go-results-highlighter": "^3.0.3",
+    "go-results-highlighter": "^3.0.5",
     "lodash-es": "^4.17.21",
     "negotiator": "^0.6.3",
     "next": "14.1.0",
