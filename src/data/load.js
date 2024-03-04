@@ -15,6 +15,27 @@ export async function loadTournaments() {
   const files = await fg.glob('./public/data/*.yml');
   const tournaments = [];
 
+  const playerIds = {}
+  const getPlayerId = (name) => {
+    const parts = name
+      .toLowerCase()
+      .split(' ')
+      .map(slugify)
+
+    const full = parts.join(' ');
+    const hash = parts.at(0)[0] + parts.at(-1)
+
+    let id = hash
+    let index = 1;
+
+    while (playerIds[id] && playerIds[id] !== full) {
+      id = `${hash}${++index}`
+    }
+
+    playerIds[id] = full
+    return id;
+  }
+
   for (const file of files) {
     const content = await fs.readFile(file, 'utf-8');
     const json = parse(content);
@@ -30,14 +51,8 @@ export async function loadTournaments() {
         throw new Error(`Could not parse player ${json.players[id]} from ${file}`);
       }
 
-      const [first, last] = details.groups.name
-        .toLowerCase()
-        .split(' ')
-        .map(slugify)
-
-
       players[id] = {
-        id: first[0] + last,
+        id: getPlayerId(details.groups.name),
         name: details.groups.name,
         rank: details.groups.rank
       };
