@@ -26,7 +26,7 @@ export const YearsNavigation = forwardRef(function YearsNavigation({ locale, yea
   return (
     <>
       <div
-        className="container flex mx-auto items-center content-center overflow-hidden faded-left before:w-1/5 faded-right after:w-1/5">
+        className="container flex mx-auto items-center content-center overflow-hidden faded-left before:w-1/5 faded-right after:w-1/5 select-none">
         <div className="mx-auto relative px-2 flex items-center">
           <div className="absolute right-full flex gap-2 text-2xl">
             {years.map((year) =>
