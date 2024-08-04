@@ -30,10 +30,12 @@ export const YearsNavigation = forwardRef(function YearsNavigation({ locale, yea
         <div className="mx-auto relative px-2 flex items-center">
           <div className="absolute right-full flex gap-2 text-2xl">
             {years.map((year) =>
-              <Link key={year} href={`/${locale}/${year}`}
+              <Link key={year}
+                    href={`/${locale}/${year}`}
                     className={clsx('text-pgc-primary hover:text-pgc-hover font-bold underline', {
                       hidden: year >= selected
-                    })}>
+                    })}
+                    draggable={false}>
                 {year}
               </Link>
             )}
@@ -41,10 +43,12 @@ export const YearsNavigation = forwardRef(function YearsNavigation({ locale, yea
           <h1 className="text-4xl font-bold">{selected}</h1>
           <div className="absolute left-full flex gap-2 text-2xl">
             {years.map((year) =>
-              <Link key={year} href={`/${locale}/${year}`}
+              <Link key={year}
+                    href={`/${locale}/${year}`}
                     className={clsx('text-pgc-primary hover:text-pgc-hover font-bold underline', {
                       hidden: year <= selected
-                    })}>
+                    })}
+                    draggable={false}>
                 {year}
               </Link>
             )}
