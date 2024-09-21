@@ -9,6 +9,7 @@
     "playerStatsDescription": "Participation statistics of %{0} in all Polish Go Championships events"
   },
   "currentEdition": {
+    "website": "https://mp.go.art.pl/2024/en",
     "title": "The next Polish Go Championship starting soon",
     "subtitle": "Warsaw, 7 - 10 November 2024",
     "tooltip": "Go to championship's website"
