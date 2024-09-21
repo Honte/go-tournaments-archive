@@ -8,6 +8,11 @@
     "playerStatsTitle": "Player %{0} stats",
     "playerStatsDescription": "Participation statistics of %{0} in all Polish Go Championships events"
   },
+  "currentEdition": {
+    "title": "The next Polish Go Championship starting soon",
+    "subtitle": "Warsaw, 7 - 10 November 2024",
+    "tooltip": "Go to championship's website"
+  },
   "navigation": {
     "home": {
       "anchor": "Home page",

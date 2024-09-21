@@ -1,4 +1,7 @@
 export function Logo({...props}) {
+  const color = props.color ?? 'black'
+  const oppositeColor = color === 'black' ? 'white' : 'black'
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -23,6 +26,7 @@ export function Logo({...props}) {
           cx={137.42}
           cy={131.51}
           r={11.043}
+          fill={oppositeColor}
           strokeWidth={3.175}
         />
         <circle
@@ -37,6 +41,7 @@ export function Logo({...props}) {
           cx={111.81}
           cy={-114.62}
           r={11.043}
+          fill={oppositeColor}
           strokeWidth={3.175}
           transform="rotate(89.365)"
         />

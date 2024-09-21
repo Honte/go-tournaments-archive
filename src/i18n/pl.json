@@ -8,6 +8,11 @@
     "playerStatsTitle": "Wyniki gracza %{0}",
     "playerStatsDescription": "Statystyki gracza %{0} we wszystkich rozegranych edycjach mistrzostw Polski w Go"
   },
+  "currentEdition": {
+    "title": "Już wkrótce kolejne Mistrzostwa Polski w Go",
+    "subtitle": "Warszawa, 7 - 10 listopada 2024",
+    "tooltip": "Przejdź na stronę Mistrzostw"
+  },
   "navigation": {
     "home": {
       "anchor": "Strona główna",
