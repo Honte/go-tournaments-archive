@@ -3,9 +3,7 @@
 import { getTranslator } from '@/i18n/translator';
 import { GameCell } from '@/components/gameCell';
 import { PlayerLink } from '@/components/ui/playerLink';
-import attachHighlighter from 'go-results-highlighter';
-
-import 'go-results-highlighter/dist/browser.css';
+import { withHighlighter } from '@/libs/higlighter';
 
 export function TableLadder({ stage, players, games, translations }) {
   const t = getTranslator(translations);
@@ -15,7 +13,7 @@ export function TableLadder({ stage, players, games, translations }) {
   return (
     <div className="w-full overflow-x-auto">
       <table className="min-w-full table-auto border-separate border-spacing-x-0 border-spacing-y-0.5"
-             ref={attachHighlighter}>
+             ref={withHighlighter}>
         <thead className="border-b-gray-300 border-b">
         <tr className="text-center">
           <th className="p-1">{t('table.place')}</th>
@@ -27,7 +25,7 @@ export function TableLadder({ stage, players, games, translations }) {
         </thead>
         <tbody>
         {table.map((player, i) => (
-          <tr key={player.id} className="text-center even:bg-gray-200">
+          <tr key={player.id} className="text-center even:bg-gray-200 !cursor-default">
             <td className="p-1">{(i === 0 || player.place !== table[i - 1].place) ? player.place : ''}</td>
             <td className="p-1 text-left">
               <PlayerLink player={players[player.id]} translations={translations}>
