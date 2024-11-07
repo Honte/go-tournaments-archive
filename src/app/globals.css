@@ -11,3 +11,9 @@
         @apply relative after:bg-gradient-to-l after:h-full after:right-0 after:absolute after:z-10 after:from-pgc-light before:to-transparent after:pointer-events-none;
     }
 }
+
+@property --border-angle {
+    inherits: false;
+    initial-value: 0deg;
+    syntax: '<angle>';
+}
