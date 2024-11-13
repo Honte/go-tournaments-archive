@@ -2,6 +2,10 @@ import slugify from 'slugify';
 
 const PLAYER_REGEX = /^(?<name>[\p{Letter} -]+)( (?<rank>[0-9]{1,2}[dkp])?)?$/u;
 
+export function parsePlayers(json) {
+  return createPlayersHandler()(json)
+}
+
 export function createPlayersHandler() {
   const playerIds = {}
 
