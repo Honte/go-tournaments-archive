@@ -1,0 +1,55 @@
+location: Warszawa
+referee: Marcin Dzieżyc
+website: https://mp.go.art.pl/2024
+players:
+  kh: Koichiro Habu 5d
+  cc: Cezary Czernecki 5d
+  dj: Dawid Jurkiewicz 4d
+  mm: Marcin Majka 4d
+  sf: Stanisław Frejlak 1p
+  jf: Jan Frączak 3d
+  ls: Leszek Sołdan 4d
+  mw: Maksym Wałaszewski 3d
+top:
+  - sf
+  - cc
+  - ls
+stages:
+  - type: league
+    date: 2024-11-07 - 2024-11-10
+    time: fischer 60m + 30s
+    komi: 6.5
+    breakers:
+      - wins
+      - sodos
+      - direct
+      - starting
+    rounds:
+      - - sf-mm sf:B+R ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/G51DzNwBgA77fbZIiIxm yt:https://youtube.com/watch?v=FhK57HL7ijI sgf:2024/2024-1-sfrejlak-mmajka.sgf
+        - jf-dj jf:B+R ai:https://ai-sensei.com/game/tV4AQMflHscsWMEdcBUZUf5Geyy2/vjhcHIpFIsp0ykmfk2kA yt:https://youtube.com/watch?v=DZH6q8iJmbw sgf:2024/2024-1-jfraczak-djurkiewicz.sgf
+        - ls-cc ls:B+R ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/jRc3pSHF8hBK5t4E5DVR yt:https://youtube.com/watch?v=k93iA345LOc sgf:2024/2024-1-lsoldan-cczernecki.sgf
+        - mw-kh mw:B+R ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/rlxkL67Z5Og3mp6lzlvT yt:https://youtube.com/watch?v=HSEUW4BfNLg sgf:2024/2024-1-mwalaszewski-khabu.sgf
+      - - dj-sf sf:W+20.5 ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/s2ZVItwA5PoCwXdF2rlD yt:https://youtube.com/watch?v=OYsRdBrdsMA sgf:2024/2024-2-djurkiewicz-sfrejlak.sgf
+        - mm-jf jf:W+58.5
+        - kh-ls ls:W+9.5 ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/QERZF1CDZcIMBPsuBFeK yt:https://youtube.com/watch?v=o7c-jbyNpF0 sgf:2024/2024-2-khabu-lsoldan.sgf
+        - cc-mw cc:B+R ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/XFMWEqrDKWRuRrPenRHA yt:https://youtube.com/watch?v=YosZuNTfS2g sgf:2024/2024-2-cczernecki-mwalaszewski.sgf
+      - - sf-cc sf:B+15.5 ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/cA0verQE7mN0iPksiqYc yt:https://www.youtube.com/watch?v=jFRHjlzgRoY sgf:2024/2024-3-sfrejlak-cczernecki.sgf
+        - jf-kh kh:W+R
+        - ls-mm ls:B+R ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/7MEeaxLe2rYuog8n2tOK yt:https://www.youtube.com/watch?v=5r8WBoBHu2c sgf:2024/2024-3-lsoldan-mmajka.sgf
+        - mw-dj dj:W+R ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/TWmy2vOnwIEpfcfvCHyG yt:https://www.youtube.com/watch?v=OANwrVwFmZI sgf:2024/2024-3-mwalaszewski-djurkiewicz.sgf
+      - - kh-sf sf:W+19.5 ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/d73IY0aPrQAqQFjUAEZt yt:https://youtube.com/watch?v=0zq1aQK3seI sgf:2024/2024-4-khabu-sfrejlak.sgf
+        - cc-jf cc:B+R ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/BpmLhXziSyhxC36PPITl yt:https://youtube.com/watch?v=ldGgGjCpe-U sgf:2024/2024-4-cczernecki-jfraczak.sgf
+        - dj-ls dj:B+R ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/P2HZZXndPxawkKwPT5nD yt:https://youtube.com/watch?v=6eLJuUn7Ft4 sgf:2024/2024-4-djurkiewicz-lsoldan.sgf
+        - mm-mw mm:B+R ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/R9dQo2ZN6z3PN7oSZN4a yt:https://youtube.com/watch?v=b3VpJKFmU5w sgf:2024/2024-4-mmajka-mwalaszewski.sgf
+      - - dj-cc cc:W+T ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/oWdftiWDVDcJr3dxxo3Y yt:https://youtube.com/watch?v=O1PDbxvz0ms sgf:2024/2024-5-djurkiewicz-cczernecki.sgf
+        - mm-kh kh:W+R ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/DqNmCoXefPNov9kI7mAo yt:https://youtube.com/watch?v=ga1BVNumn6c sgf:2024/2024-5-mmajka-khabu.sgf
+        - ls-jf jf:W+5.5 ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/dFZDnB8mNPLBEI3S8Pa5 yt:https://youtube.com/watch?v=XN_eww0MOdo sgf:2024/2024-5-lsoldan-jfraczak.sgf
+        - sf-mw sf:B+R ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/V0qwxOwGGNJMvakRaBO4 yt:https://youtube.com/watch?v=JoTt_uvE7JY sgf:2024/2024-5-sfrejlak-mwalaszewski.sgf
+      - - kh-dj kh:B+R ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/292SCqHoUa0rbBuRxZnj yt:https://youtube.com/watch?v=xtq54d-gLDY sgf:2024/2024-6-khabu-djurkiewicz.sgf
+        - cc-mm cc:B+R ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/kx0adWWvLdq66aT1PcGJ yt:https://youtube.com/watch?v=18RxWpWAVj0 sgf:2024/2024-6-cczernecki-mmajka.sgf
+        - sf-ls sf:B+12.5 ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/C4W3MEry0c8pUdpRxM9B yt:https://youtube.com/watch?v=N3qc3r5SDy8 sgf:2024/2024-6-sfrejlak-lsoldan.sgf
+        - jf-mw jf:B+16.5 ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/ruubRmbqJaNuG0xbQ9s5 yt:https://youtube.com/watch?v=6kixedG_u_I sgf:2024/2024-6-jfraczak-mwalaszewski.sgf
+      - - cc-kh cc:B+7.5 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/bOtbiegcmGZ916xk87MR yt:https://youtube.com/watch?v=oUE8kIMCPo0 sgf:2024/2024-7-cczernecki-khabu.sgf
+        - mm-dj mm:B+R ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/LJF1cvQqbmItFWXObyFW yt:https://youtube.com/watch?v=0lcstgA60gA sgf:2024/2024-7-mmajka-djurkiewicz.sgf
+        - jf-sf sf:W+R ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/jP3qpBuNhk2NGfEXWXvh yt:https://youtube.com/watch?v=0ZQzCWNcv5Q sgf:2024/2024-7-jfraczak-sfrejlak.sgf
+        - mw-ls ls:W+9.5 ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/y8U7kWAp2yOW5NAhwf8m yt:https://youtube.com/watch?v=-_CX8FAc2b4 sgf:2024/2024-7-mwalaszewski-lsoldan.sgf
