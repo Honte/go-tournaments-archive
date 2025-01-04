@@ -97,17 +97,17 @@ export function TopNavigation({ tournaments, locale, current }) {
   }, [clearNavigate, scheduleNavigate]);
 
   useEffect(() => {
-    elRef.current.addEventListener('wheel', onWheel);
-    elRef.current.addEventListener('mousedown', onMouseDown, CAPTURE);
-    elRef.current.addEventListener('touchstart', onTouchStart, CAPTURE_AND_NOT_PASSIVE);
+    const node = elRef.current;
+
+    node.addEventListener('wheel', onWheel);
+    node.addEventListener('mousedown', onMouseDown, CAPTURE);
+    node.addEventListener('touchstart', onTouchStart, CAPTURE_AND_NOT_PASSIVE);
 
     return () => {
       clearNavigate();
-      if (elRef.current) {
-        elRef.current.removeEventListener('wheel', onWheel);
-        elRef.current.removeEventListener('mousedown', onMouseDown, CAPTURE);
-        elRef.current.removeEventListener('touchstart', onTouchStart, CAPTURE_AND_NOT_PASSIVE);
-      }
+      node.removeEventListener('wheel', onWheel);
+      node.removeEventListener('mousedown', onMouseDown, CAPTURE);
+      node.removeEventListener('touchstart', onTouchStart, CAPTURE_AND_NOT_PASSIVE);
     };
   }, [elRef, delayRef, onWheel, onMouseDown, onTouchStart, clearNavigate]);
 

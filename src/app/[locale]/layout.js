@@ -10,7 +10,13 @@ import '../globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export async function generateMetadata({ params: { locale } }) {
+export async function generateMetadata(props) {
+  const params = await props.params;
+
+  const {
+    locale
+  } = params;
+
   const translations = await loadTranslations(locale);
   const t = getTranslator(translations);
 
@@ -24,7 +30,8 @@ export async function generateStaticParams() {
   return SUPPORTED_LOCALES.map((locale) => ({ locale }));
 }
 
-export default async function RootLayout({ children, params: { locale } }) {
+export default async function RootLayout({ params, children }) {
+  const { locale } = await params;
   const translations = await loadTranslations(locale);
 
   return (

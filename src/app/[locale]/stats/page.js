@@ -3,7 +3,9 @@ import { getTranslator } from '@/i18n/translator';
 import { PlayerStats } from '@/components/playerStats';
 import { getStats } from '@/data';
 
-export async function generateMetadata({ params: { locale } }) {
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
+
   const translations = await loadTranslations(locale);
   const t = getTranslator(translations);
 
@@ -13,7 +15,9 @@ export async function generateMetadata({ params: { locale } }) {
   };
 }
 
-export default async function Stats({ params: { locale }}) {
+export default async function Stats({ params }) {
+  const { locale } = await params;
+
   const translations = await loadTranslations(locale);
   const stats = getStats();
   const t = getTranslator(translations);
@@ -23,5 +27,5 @@ export default async function Stats({ params: { locale }}) {
       <h1 className="text-4xl text-center font-bold mb-4">{t('stats.allTimeHeader')}</h1>
       <PlayerStats players={stats.players} translations={translations}/>
     </>
-  )
+  );
 }

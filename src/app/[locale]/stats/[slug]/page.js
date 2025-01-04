@@ -6,7 +6,9 @@ import { Achievements } from '@/components/stats/achievements';
 import { Events } from '@/components/stats/events';
 import { Opponents } from '@/components/stats/opponents';
 
-export async function generateMetadata({ params: { slug, locale } }) {
+export async function generateMetadata({ params }) {
+  const { slug, locale } = await params;
+
   const translations = await loadTranslations(locale);
   const stats = getStats();
   const player = stats.players[slug];
@@ -18,9 +20,10 @@ export async function generateMetadata({ params: { slug, locale } }) {
   };
 }
 
-export default async function PlayerStats({ params: { slug, locale } }) {
+export default async function PlayerStats({ params }) {
+  const { locale, slug } = await params;
+
   const translations = await loadTranslations(locale);
-  const t = getTranslator(translations);
   const stats = getStats();
   const player = stats.players[slug];
 

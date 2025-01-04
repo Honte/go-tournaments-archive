@@ -10,7 +10,9 @@ import { getStageName } from '@/libs/stage';
 import { GamesList } from '@/components/gamesList';
 import { StageResults } from '@/components/stageResults';
 
-export async function generateMetadata({params: {year, locale}}) {
+export async function generateMetadata({ params }) {
+  const { year, locale } = await params;
+
   const translations = await loadTranslations(locale);
   const tournaments = await getTournaments();
   const tournament = tournaments.find((t) => t.year === Number(year));
@@ -31,7 +33,14 @@ export async function generateStaticParams() {
   }))).flat();
 }
 
-export default async function Edition({params: {year, locale}}) {
+export default async function Edition(props) {
+  const params = await props.params;
+
+  const {
+    year,
+    locale
+  } = params;
+
   if (!year.match(/^\d{4}$/)) {
     return notFound();
   }
@@ -39,7 +48,7 @@ export default async function Edition({params: {year, locale}}) {
   const translations = await loadTranslations(locale);
   const tournaments = await getTournaments();
   const tournament = tournaments.find((t) => t.year === Number(year));
-  const {games, players, stages} = tournament;
+  const { games, players, stages } = tournament;
 
   return (
     <>
@@ -52,7 +61,8 @@ export default async function Edition({params: {year, locale}}) {
 
       {stages.toReversed().map((stage) => (
         <div key={stage.type} className="my-4">
-          <h2 className="text-xl font-bold pb-1 my-2 border-b-pgc-dark border-b-2">{getStageName(stage, translations)}</h2>
+          <h2
+            className="text-xl font-bold pb-1 my-2 border-b-pgc-dark border-b-2">{getStageName(stage, translations)}</h2>
           <StageDetails stage={stage} translations={translations}/>
           <StageResults stage={stage} games={games} players={players} translations={translations}/>
         </div>

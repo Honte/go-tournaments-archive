@@ -1,7 +1,8 @@
 import { getTournaments } from '@/data';
 import { notFound } from 'next/navigation';
 
-export async function GET(request, { params }) {
+export async function GET(request, props) {
+  const { params } = await props;
   const check = params?.year?.match(/^(\d{4})\.json(\?.+)?/);
 
   if (!check) {

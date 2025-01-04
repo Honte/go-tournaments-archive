@@ -5,7 +5,8 @@ import { Attendants } from '@/components/attendants';
 import { TotalStats } from '@/components/totalStats';
 import { loadTranslations } from '@/i18n/server';
 
-export default async function Home({ params: { locale } }) {
+export default async function Home({ params }) {
+  const { locale } = await params
   const translations = await loadTranslations(locale);
   const tournaments = (await getTournaments()).toSorted((a, b) => b.id - a.id);
   const stats = await getStats();
