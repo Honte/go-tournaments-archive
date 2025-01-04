@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "extract:mp-db": "tsx tools/extract.js",
-    "build:templates": "tsx tools/templates.js"
+    "build:templates": "tsx tools/templates.js",
+    "fix:sgfs": "tsx tools/fix.js"
   },
   "dependencies": {
     "@floating-ui/react": "0.27.2",

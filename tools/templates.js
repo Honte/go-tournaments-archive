@@ -51,7 +51,7 @@ async function buildTemplates() {
 
               const stagePrefix = hasManyStages ? `-${stage.type}` : '';
               const file = join(tournamentDir, `${year}${stagePrefix}-${roundNo + 1}-${b.id}-${w.id}.sgf`);
-              let content = ';'
+              let content = '(\n  ;'
 
               for (const prop in data) {
                 const item = data[prop]
@@ -61,7 +61,7 @@ async function buildTemplates() {
                 }
               }
 
-              content += '\n()'
+              content += '\n)'
 
               await writeFile(file, content, 'utf-8');
             }
