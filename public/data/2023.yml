@@ -32,11 +32,11 @@ stages:
         - kh-mw kh:B+R sgf:2023/2023-1-khabu-mwalaszewski.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/4VBKTp9ZggH2FhI7NYgV yt:https://youtube.com/live/YrRwImFw1So
       - - mw-cc cc:W+R sgf:2023/2023-2-mwalaszewski-cczernecki.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/NwYWsn3gnuTkJs5LDUBq yt:https://www.youtube.com/watch?v=wbU1iesG8sA
         - ls-kh ls:B+R sgf:2023/2023-2-lsoldan-khabu.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/bFjhBfjDlx9tPan4h1Uk yt:https://www.youtube.com/watch?v=nvIChUrDPaA
-        - kc-mm mm:W+5.5 yt:https://www.youtube.com/watch?v=CExdJYTwLEw
+        - kc-mm mm:W+5.5 sgf:2023/2023-2-kcieslak-mmajka.sgf yt:https://www.youtube.com/watch?v=CExdJYTwLEw
         - dj-jf dj:B+5.5 sgf:2023/2023-2-djurkiewicz-jfraczak.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/nrKgHvKsRw45wEYqbVMX yt:https://www.youtube.com/watch?v=PYQxFZ7l7e0
       - - cc-dj cc:B+R sgf:2023/2023-3-cczernecki-djurkiewicz.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/E9ztGcX3BporKutAs1jM yt:https://www.youtube.com/watch?v=IkJYjPH7kK0
         - kh-kc kh:B+R sgf:2023/2023-3-khabu-kcieslak.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/wpgwbk7rX1Ttzob8MEmX yt:https://www.youtube.com/watch?v=gaxDVV-0ZQQ
-        - mm-ls mm:B+5.5 yt:https://www.youtube.com/watch?v=8qlraeBxzLA
+        - mm-ls mm:B+5.5 sgf:2023/2023-3-mmajka-lsoldan.sgf yt:https://www.youtube.com/watch?v=8qlraeBxzLA
         - jf-mw mw:W+0.5 sgf:2023/2023-3-jfraczak-mwalaszewski.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/Zy7eELOOfQ5S2McPBkqJ yt:https://www.youtube.com/watch?v=4MCEI8iwxQQ
       - - dj-kh kh:W+R sgf:2023/2023-4-djurkiewicz-khabu.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/DClmsMiqxjFETosRzT81 yt:https://www.youtube.com/watch?v=UpQr3PlO0rs
         - kc-cc cc:W+15.5 sgf:2023/2023-4-kcieslak-cczernecki.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/Za4FFDBzav2if0M2apoh yt:https://www.youtube.com/watch?v=vPskY3fnnRw
@@ -44,13 +44,13 @@ stages:
         - mw-mm mw:B+R sgf:2023/2023-4-mwalaszewski-mmajka.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/8zUIsxvJibBxgKTCN2DN yt:https://www.youtube.com/watch?v=uV-0ZythZqo
       - - cc-jf cc:B+R sgf:2023/2023-5-cczernecki-jfraczak.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/PaE64gruSvrhnHPWQsqz yt:https://www.youtube.com/watch?v=kjCOqUlvVP0
         - kh-mm kh:B+R sgf:2023/2023-5-khabu-mmajka.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/lK8CDxbGB43HC3wOgsqE yt:https://www.youtube.com/watch?v=QB5gs9LIcME
-        - kc-ls ls:W+5.5 yt:https://www.youtube.com/watch?v=GDDVmF6SZ84
+        - kc-ls ls:W+5.5 sgf:2023/2023-5-kcieslak-lsoldan.sgf yt:https://www.youtube.com/watch?v=GDDVmF6SZ84
         - dj-mw dj:B+R sgf:2023/2023-5-djurkiewicz-mwalaszewski.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/mmGrbGQREBia5xZ6avN9 yt:https://www.youtube.com/watch?v=Ct9SN2E6EkI
       - - jf-kh kh:W+8.5 sgf:2023/2023-6-jfraczak-khabu.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/4X1XflWJRF3h1jgZJydd yt:https://www.youtube.com/watch?v=mSL5Kf_jfr4
         - mm-cc cc:W+R sgf:2023/2023-6-mmajka-cczernecki.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/EPPiuSduRArlowtGyoN6 yt:https://www.youtube.com/watch?v=h3g2HASOBck
         - ls-dj dj:W+R yt:https://www.youtube.com/watch?v=monRxXo8BCE
-        - mw-kc mw:B+R yt:https://www.youtube.com/watch?v=jO9qo1DVg7I
+        - mw-kc mw:B+R sgf:2023/2023-6-mwalaszewski-kcieslak.sgf yt:https://www.youtube.com/watch?v=jO9qo1DVg7I
       - - kh-cc kh:B+4.5 sgf:2023/2023-7-khabu-cczernecki.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/Y0tk7E5LDom356ifBETF yt:https://www.youtube.com/watch?v=3n_G7-i0GyM
-        - jf-mm mm:W+R yt:https://www.youtube.com/watch?v=y_tGkcUhOto
-        - dj-kc dj:B+7.5 yt:https://www.youtube.com/watch?v=wlkW1NN0lrA
-        - ls-mw mw:W+R yt:https://www.youtube.com/watch?v=6zw4pUws3Ds
+        - jf-mm mm:W+R sgf:2023/2023-7-jfraczak-mmajka.sgf yt:https://www.youtube.com/watch?v=y_tGkcUhOto
+        - dj-kc dj:B+7.5 sgf:2023/2023-7-djurkiewicz-kcieslak.sgf yt:https://www.youtube.com/watch?v=wlkW1NN0lrA
+        - ls-mw mw:W+R sgf:2023/2023-7-lsoldan-mwalaszewski.sgf yt:https://www.youtube.com/watch?v=6zw4pUws3Ds
