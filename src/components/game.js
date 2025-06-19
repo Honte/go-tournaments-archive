@@ -2,7 +2,6 @@ import { useMemo } from 'react';
 import { getTranslator } from '@/i18n/translator';
 import { Stone } from '@/components/stone';
 import { ExternalButton } from '@/components/ui/externalButton';
-import { Goban } from '@/components/goban/goban';
 import { clsx } from 'clsx';
 
 export function Game({ className, game, players, translations, sgf }) {
@@ -11,11 +10,14 @@ export function Game({ className, game, players, translations, sgf }) {
 
   return (
     <div className={`flex ${className} gap-2 md:gap-4 md:items-center max-xs:flex-wrap`}>
-      {sgf && <Goban sgf={sgf} className="size-20"/>}
-      <div className={clsx('flex justify-center', {
-        'flex-col': sgf,
-        'max-xs:flex-col gap-1': !sgf
-      })}>
+      {game.props.png &&
+        <img src={game.props.png} alt={t('game.preview', `${home.name} vs ${away.name}`)} className="size-20"/>}
+      <div
+        className={clsx('flex justify-center', {
+          'flex-col': sgf,
+          'max-xs:flex-col gap-1': !sgf
+        })}
+      >
         <PlayerRow t={t} player={home}/>
         {!sgf && <div className="max-xs:hidden">&ndash;</div>}
         <PlayerRow t={t} player={away}/>

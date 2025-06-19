@@ -83,7 +83,8 @@
     "sgf": "Pobierz zapis partii w formacie SGF",
     "ogs": "Zobacz relacje w serwisie Online Go Server",
     "yt": "Zobacz relację wideo z partii",
-    "ai": "Zobacz analizę AI"
+    "ai": "Zobacz analizę AI",
+    "preview": "Widok planszy na koniec gry %{0}"
   },
   "winners": {
     "title": "Medaliści Mistrzostw Polski",

@@ -82,7 +82,8 @@
     "sgf": "Download SGF",
     "ogs": "See the game's relay in the Online Go Server",
     "yt": "See the video broadcast of the game",
-    "ai": "See the AI analysis of the game"
+    "ai": "See the AI analysis of the game",
+    "preview": "Snapshot of board state at the end of game %{0}"
   },
   "winners": {
     "title": "Medalists of Polish Go Championships",
