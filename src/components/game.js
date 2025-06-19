@@ -3,6 +3,7 @@ import { getTranslator } from '@/i18n/translator';
 import { Stone } from '@/components/stone';
 import { ExternalButton } from '@/components/ui/externalButton';
 import { Goban } from '@/components/goban/goban';
+import { clsx } from 'clsx';
 
 export function Game({ className, game, players, translations, sgf }) {
   const t = getTranslator(translations);
@@ -10,9 +11,13 @@ export function Game({ className, game, players, translations, sgf }) {
 
   return (
     <div className={`flex ${className} gap-2 md:gap-4 md:items-center max-xs:flex-wrap`}>
-      {sgf && <Goban sgf={sgf} className="size-20" />}
-      <div className="flex flex-col justify-center">
+      {sgf && <Goban sgf={sgf} className="size-20"/>}
+      <div className={clsx('flex justify-center', {
+        'flex-col': sgf,
+        'max-xs:flex-col gap-1': !sgf
+      })}>
         <PlayerRow t={t} player={home}/>
+        {!sgf && <div className="max-xs:hidden">&ndash;</div>}
         <PlayerRow t={t} player={away}/>
         <div className="flex gap-2 mt-1">
           {game.props.sgf && <ExternalButton url={game.props.sgf} title={t('game.sgf')}>SGF</ExternalButton>}
