@@ -1,15 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@config "../../tailwind.config.js";
 
-@layer components {
-    .faded-left {
-        @apply relative before:bg-gradient-to-r before:h-full before:left-0 before:absolute before:z-10 before:from-pgc-light before:to-transparent before:pointer-events-none;
-    }
+@utility faded-left {
+  @apply relative before:bg-linear-to-r before:h-full before:left-0 before:absolute before:z-10 before:from-pgc-light before:to-transparent before:pointer-events-none;
+}
 
-    .faded-right {
-        @apply relative after:bg-gradient-to-l after:h-full after:right-0 after:absolute after:z-10 after:from-pgc-light before:to-transparent after:pointer-events-none;
-    }
+@utility faded-right {
+  @apply relative after:bg-linear-to-l after:h-full after:right-0 after:absolute after:z-10 after:from-pgc-light before:to-transparent after:pointer-events-none;
 }
 
 @property --border-angle {

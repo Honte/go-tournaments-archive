@@ -9,7 +9,7 @@ export function LocaleNavigation({ locale }) {
   const regex = new RegExp(`^/${locale}`);
 
   return (
-    <div className="text-pgc-dark container mx-auto max-w-screen-2xl flex justify-end text-sm px-4 py-1 gap-4">
+    <div className="text-pgc-dark container mx-auto max-w-(--breakpoint-2xl) flex justify-end text-sm px-4 py-1 gap-4">
       {SUPPORTED_LOCALES.map((nextLocale) =>
         <Link key={nextLocale}
               className="underline"

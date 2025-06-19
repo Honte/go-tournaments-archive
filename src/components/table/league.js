@@ -30,7 +30,7 @@ export function TableLeague({ stage, players, games, translations }) {
         </thead>
         <tbody>
         {table.map((player, i) => (
-          <tr key={player.id} className="text-center even:bg-gray-200 !cursor-default">
+          <tr key={player.id} className="text-center even:bg-gray-200 cursor-default!">
             <td className="p-1">{(i === 0 || player.place !== table[i - 1].place) ? player.place : ''}</td>
             <td className="p-1 text-left">
               <PlayerLink player={players[player.id]} translations={translations}>
