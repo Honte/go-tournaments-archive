@@ -9,6 +9,7 @@ import { StageDetails } from '@/components/stageDetails';
 import { getStageName } from '@/libs/stage';
 import { GamesList } from '@/components/gamesList';
 import { StageResults } from '@/components/stageResults';
+import { loadSgfs } from '@/data/sgfs';
 
 export async function generateMetadata({ params }) {
   const { year, locale } = await params;
@@ -49,6 +50,7 @@ export default async function Edition(props) {
   const tournaments = await getTournaments();
   const tournament = tournaments.find((t) => t.year === Number(year));
   const { games, players, stages } = tournament;
+  const sgfs = await loadSgfs(tournament)
 
   return (
     <>
@@ -68,7 +70,7 @@ export default async function Edition(props) {
         </div>
       ))}
 
-      <GamesList tournament={tournament} translations={translations}/>
+      <GamesList tournament={tournament} translations={translations} sgfs={sgfs} />
     </>
   );
 }

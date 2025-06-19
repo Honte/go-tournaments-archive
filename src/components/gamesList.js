@@ -3,9 +3,9 @@ import { getTranslator } from '@/i18n/translator';
 import { getStageName } from '@/libs/stage';
 import { H2 } from '@/components/ui/h2';
 
-export function GamesList({ tournament, translations }) {
-  const {stages, games, players} = tournament;
-  const t = getTranslator(translations)
+export function GamesList({ tournament, translations, sgfs }) {
+  const { stages, games, players } = tournament;
+  const t = getTranslator(translations);
 
   const list = stages.toReversed().reduce((list, stage) => {
     const name = getStageName(stage, translations);
@@ -18,7 +18,7 @@ export function GamesList({ tournament, translations }) {
             stage: name,
             name: t('table.round', index + 1),
             games: round
-          })
+          });
         }
 
         if (stage.playoffs?.length) {
@@ -26,7 +26,7 @@ export function GamesList({ tournament, translations }) {
             stage: name,
             name: t('table.playoffs'),
             games: stage.playoffs
-          })
+          });
         }
 
         break;
@@ -35,10 +35,10 @@ export function GamesList({ tournament, translations }) {
         list.push({
           name,
           games: stage.games
-        })
+        });
         break;
       default:
-        throw new Error('Unrecognized stage type')
+        throw new Error('Unrecognized stage type');
     }
 
     return list;
@@ -49,10 +49,21 @@ export function GamesList({ tournament, translations }) {
       <H2>{t('stage.games')}</H2>
       {list.map((list, index) => (
         <div key={index} className="my-5">
-          <h4 className="text-l font-bold border-b-pgc-dark border-b">{stages.length > 1 && list.stage ? <>{list.stage} &ndash; </> : ''}{list.name}</h4>
-          {list.games.map((game) => <Game key={game} game={games[game]} translations={translations} players={players}/>)}
+          <h4 className="text-l font-bold border-b-pgc-dark border-b">
+            {stages.length > 1 && list.stage ? <>{list.stage} &ndash; </> : ''}{list.name}
+          </h4>
+          <div className="max-md:flex max-md:flex-col md:grid md:grid-cols-2 gap-4 py-2 xl:py-4">
+            {list.games.map((game) => <Game
+              className="w-full"
+              key={game}
+              game={games[game]}
+              translations={translations}
+              players={players}
+              sgf={sgfs[game]}
+            />)}
+          </div>
         </div>
       ))}
     </div>
-  )
+  );
 }

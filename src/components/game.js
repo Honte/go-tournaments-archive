@@ -2,23 +2,24 @@ import { useMemo } from 'react';
 import { getTranslator } from '@/i18n/translator';
 import { Stone } from '@/components/stone';
 import { ExternalButton } from '@/components/ui/externalButton';
+import { Goban } from '@/components/goban/goban';
 
-export function Game({ game, players, translations, wide = true }) {
+export function Game({ className, game, players, translations, sgf }) {
   const t = getTranslator(translations);
   const [home, away] = useMemo(() => game.players.map((p) => ({ ...players[p.id], ...p })), [game, players]);
 
   return (
-    <div className={`my-4 md:my-2 ${wide ? 'md:flex md:gap-3' : ''} items-center`}>
-      <div className={wide ? 'md:flex md:gap-3 md:my-0' : ''}>
+    <div className={`flex ${className} gap-2 md:gap-4 md:items-center max-xs:flex-wrap`}>
+      {sgf && <Goban sgf={sgf} className="size-20" />}
+      <div className="flex flex-col justify-center">
         <PlayerRow t={t} player={home}/>
-        <div className={`hidden ${wide ? 'md:block' : ''}`}>&ndash;</div>
         <PlayerRow t={t} player={away}/>
-      </div>
-      <div className="flex gap-2 mt-1">
-        {game.props.sgf && <ExternalButton url={game.props.sgf} title={t('game.sgf')}>SGF</ExternalButton>}
-        {game.props.ogs && <ExternalButton url={game.props.ogs} title={t('game.ogs')}>OGS</ExternalButton>}
-        {game.props.ai && <ExternalButton url={game.props.ai} title={t('game.ai')}>AI</ExternalButton>}
-        {game.props.yt && <ExternalButton url={game.props.yt} title={t('game.yt')}>YT</ExternalButton>}
+        <div className="flex gap-2 mt-1">
+          {game.props.sgf && <ExternalButton url={game.props.sgf} title={t('game.sgf')}>SGF</ExternalButton>}
+          {game.props.ogs && <ExternalButton url={game.props.ogs} title={t('game.ogs')}>OGS</ExternalButton>}
+          {game.props.ai && <ExternalButton url={game.props.ai} title={t('game.ai')}>AI</ExternalButton>}
+          {game.props.yt && <ExternalButton url={game.props.yt} title={t('game.yt')}>YT</ExternalButton>}
+        </div>
       </div>
     </div>
   );
@@ -41,11 +42,11 @@ function PlayerScore({ score, t }) {
   }
 
   if (score === 'R') {
-    return <abbr className="cursor-help" title={t('game.resign')}>+R</abbr>
+    return <abbr className="cursor-help" title={t('game.resign')}>+R</abbr>;
   }
 
   if (score === 'T') {
-    return <abbr className="cursor-help" title={t('game.time')}>+T</abbr>
+    return <abbr className="cursor-help" title={t('game.time')}>+T</abbr>;
   }
 
   return `+${score}`;

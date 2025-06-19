@@ -58,7 +58,7 @@ export function GamePopover({ translations }) {
           {state?.title && <div className="px-3 py-2 border-b border-gray-200 rounded-t-lg">
             <h3 className="font-semibold ">{state?.title}</h3>
           </div>}
-          <div className="px-4">
+          <div className="p-4">
             <Game game={state.game} players={state.players} translations={translations} wide={false}/>
           </div>
         </div>

@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         'pgc-dark': '#222222',
         'pgc-gray': '#999999',
+        'pgc-soft': '#d2d2d2',
         'pgc-light': '#F3F4F6FF',
         'pgc-primary': '#5287ae',
         'pgc-hover': '#72940c'
