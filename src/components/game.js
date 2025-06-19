@@ -10,8 +10,8 @@ export function Game({ className, game, players, translations, sgf }) {
 
   return (
     <div className={`flex ${className} gap-2 md:gap-4 md:items-center max-xs:flex-wrap`}>
-      {game.props.png &&
-        <img src={game.props.png} alt={t('game.preview', `${home.name} vs ${away.name}`)} className="size-20"/>}
+      {game.props.svg &&
+        <img src={game.props.svg} alt={t('game.preview', `${home.name} vs ${away.name}`)} className="size-20"/>}
       <div
         className={clsx('flex justify-center', {
           'flex-col': sgf,

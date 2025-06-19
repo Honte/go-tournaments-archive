@@ -71,6 +71,7 @@ function parseGame(string) {
         if (type === 'sgf') {
           value = `${process.env.SGF_URL_PREFIX}${value}`;
           map.png = value.replace('.sgf', '.png')
+          map.svg = value.replace('.sgf', '.svg')
         }
 
         map[type] = value;
