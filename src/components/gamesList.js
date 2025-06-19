@@ -59,7 +59,7 @@ export function GamesList({ tournament, translations, sgfs }) {
               game={games[game]}
               translations={translations}
               players={players}
-              sgf={sgfs[game]}
+              wide={true}
             />)}
           </div>
         </div>

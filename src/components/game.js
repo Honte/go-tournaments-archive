@@ -4,22 +4,26 @@ import { Stone } from '@/components/stone';
 import { ExternalButton } from '@/components/ui/externalButton';
 import { clsx } from 'clsx';
 
-export function Game({ className, game, players, translations, sgf }) {
+export function Game({ className, game, players, translations, wide }) {
   const t = getTranslator(translations);
   const [home, away] = useMemo(() => game.players.map((p) => ({ ...players[p.id], ...p })), [game, players]);
+  const hasSgf = game.props.svg
 
   return (
-    <div className={`flex ${className} gap-2 md:gap-4 md:items-center max-xs:flex-wrap`}>
-      {game.props.svg &&
+    <div className={clsx(`flex ${className} gap-2 md:gap-4 md:items-center`, {
+      'max-xs:flex-wrap': wide,
+      'max-xs:flex-col': !wide
+    })}>
+      {hasSgf &&
         <img src={game.props.svg} alt={t('game.preview', `${home.name} vs ${away.name}`)} className="size-20"/>}
       <div
         className={clsx('flex justify-center', {
-          'flex-col': sgf,
-          'max-xs:flex-col gap-1': !sgf
+          'flex-col': hasSgf || !wide,
+          'max-xs:flex-col gap-1': !hasSgf
         })}
       >
         <PlayerRow t={t} player={home}/>
-        {!sgf && <div className="max-xs:hidden">&ndash;</div>}
+        {!hasSgf && wide && <div className="max-xs:hidden">&ndash;</div>}
         <PlayerRow t={t} player={away}/>
         <div className="flex gap-2 mt-1">
           {game.props.sgf && <ExternalButton url={game.props.sgf} title={t('game.sgf')}>SGF</ExternalButton>}
