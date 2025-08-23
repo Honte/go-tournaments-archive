@@ -9,9 +9,9 @@
     "playerStatsDescription": "Statystyki gracza %{0} we wszystkich rozegranych edycjach mistrzostw Polski w Go"
   },
   "currentEdition": {
-    "website": "https://mp.go.art.pl/2024/pl",
+    "website": "https://mp.go.art.pl/2025/pl",
     "title": "Bieżące Mistrzostwa Polski w Go!",
-    "subtitle": "Warszawa, 7 - 10 listopada 2024",
+    "subtitle": "Gdańsk, 8 - 11 listopada 2025",
     "tooltip": "Przejdź na stronę Mistrzostw"
   },
   "navigation": {
