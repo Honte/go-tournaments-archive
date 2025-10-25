@@ -1,4 +1,4 @@
-import { PlayerLink } from '@/components/ui/playerLink';
+import { PlayerLink } from '@/components/ui/PlayerLink';
 
 export function toPercentage(info) {
   return `${Math.round(info.cell.getValue() * 100)}%`;

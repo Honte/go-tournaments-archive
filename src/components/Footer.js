@@ -1,4 +1,4 @@
-import { ExternalLink } from '@/components/ui/externalLink';
+import { ExternalLink } from '@/components/ui/ExternalLink';
 
 const START = 2024;
 

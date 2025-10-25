@@ -1,10 +1,10 @@
 import { getStats, getTournaments } from '@/data';
-import { Winners } from '@/components/winners';
-import { Medalists } from '@/components/medalists';
-import { Attendants } from '@/components/attendants';
-import { TotalStats } from '@/components/totalStats';
+import { Winners } from '@/components/Winners';
+import { Medalists } from '@/components/Medalists';
+import { Attendants } from '@/components/Attendants';
+import { TotalStats } from '@/components/TotalStats';
 import { loadTranslations } from '@/i18n/server';
-import { Banner } from '@/components/banner';
+import { Banner } from '@/components/Banner';
 import { getTranslator } from '@/i18n/translator';
 
 export default async function Home({ params }) {

@@ -1,6 +1,6 @@
 import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
-import { PlayerStats } from '@/components/playerStats';
+import { PlayerStats } from '@/components/PlayerStats';
 import { getStats } from '@/data';
 
 export async function generateMetadata({ params }) {

@@ -1,6 +1,6 @@
 'use client'
 
-import { GamePopover } from '@/components/gamePopover';
+import { GamePopover } from '@/components/GamePopover';
 
 export function Client({ rawTranslations }) {
   return (

@@ -1,8 +1,8 @@
 'use client'
 
 import { getTranslator } from '@/i18n/translator';
-import { GamePopoverTrigger } from '@/components/gamePopover';
-import { PlayerLink } from '@/components/ui/playerLink';
+import { GamePopoverTrigger } from '@/components/GamePopoverTrigger';
+import { PlayerLink } from '@/components/ui/PlayerLink';
 
 export function TableWithoutRounds({ stage, players, games, translations }) {
   const t = getTranslator(translations);

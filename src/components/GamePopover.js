@@ -1,10 +1,10 @@
 'use client'
 
-import { Game } from '@/components/game';
+import { Game } from '@/components/Game';
 import { autoUpdate, useFloating } from '@floating-ui/react';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
-const EVENT = 'show-game-popover';
+export const SHOW_POPOVER_EVENT = 'show-game-popover';
 
 export function GamePopover({ translations }) {
   const [state, setState] = useState(null)
@@ -36,8 +36,8 @@ export function GamePopover({ translations }) {
   }, [setState, elements.floating])
 
   useEffect(() => {
-    document.addEventListener(EVENT, showListener)
-    return () => document.removeEventListener(EVENT, showListener)
+    document.addEventListener(SHOW_POPOVER_EVENT, showListener)
+    return () => document.removeEventListener(SHOW_POPOVER_EVENT, showListener)
   }, [showListener])
 
   useEffect(() => {
@@ -67,20 +67,4 @@ export function GamePopover({ translations }) {
   )
 }
 
-export function GamePopoverTrigger({ as = 'div', game, players, children, ...props }) {
-  const Component = as;
-  const ref = useRef();
-
-  return (
-    <Component onClick={() => document.dispatchEvent(new CustomEvent(EVENT, {
-      detail: {
-        game,
-        players,
-        target: ref.current,
-      }
-    }))} ref={ref} className="underline cursor-pointer" {...props}>
-      {children}
-    </Component>
-  )
-}
 

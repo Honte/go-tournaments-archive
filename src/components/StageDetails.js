@@ -1,6 +1,6 @@
-import { ExternalLink } from '@/components/ui/externalLink';
-import { Details } from '@/components/details';
-import { Breaker } from '@/components/breaker';
+import { ExternalLink } from '@/components/ui/ExternalLink';
+import { Details } from '@/components/Details';
+import { Breaker } from '@/components/Breaker';
 import { getTranslator } from '@/i18n/translator';
 
 export function StageDetails({stage, translations}) {

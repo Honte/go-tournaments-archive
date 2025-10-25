@@ -1,8 +1,8 @@
 'use client';
 
 import { getTranslator } from '@/i18n/translator';
-import { GameCell } from '@/components/gameCell';
-import { PlayerLink } from '@/components/ui/playerLink';
+import { GameCell } from '@/components/GameCell';
+import { PlayerLink } from '@/components/ui/PlayerLink';
 import { withHighlighter } from '@/libs/higlighter';
 
 export function TableLadder({ stage, players, games, translations }) {

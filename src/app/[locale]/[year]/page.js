@@ -1,14 +1,14 @@
 import { notFound } from 'next/navigation';
 import { getTournaments } from '@/data';
-import { TournamentDetails } from '@/components/tournamentDetails';
-import { Awarded } from '@/components/awarded';
+import { TournamentDetails } from '@/components/TournamentDetails';
+import { Awarded } from '@/components/Awarded';
 import { loadTranslations, SUPPORTED_LOCALES } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
-import { TopNavigation } from '@/components/navigation/top';
-import { StageDetails } from '@/components/stageDetails';
+import { TopNavigation } from '@/components/navigation/TopNavigation';
+import { StageDetails } from '@/components/StageDetails';
 import { getStageName } from '@/libs/stage';
-import { GamesList } from '@/components/gamesList';
-import { StageResults } from '@/components/stageResults';
+import { GamesList } from '@/components/GamesList';
+import { StageResults } from '@/components/StageResults';
 import { loadSgfs } from '@/data/sgfs';
 
 export async function generateMetadata({ params }) {

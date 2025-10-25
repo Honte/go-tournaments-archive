@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { getTranslator } from '@/i18n/translator';
-import { Stone } from '@/components/stone';
-import { ExternalButton } from '@/components/ui/externalButton';
+import { Stone } from '@/components/Stone';
+import { ExternalButton } from '@/components/ui/ExternalButton';
 import { clsx } from 'clsx';
 
 export function Game({ className, game, players, translations, wide }) {

@@ -1,4 +1,4 @@
-import { GamePopoverTrigger } from '@/components/gamePopover';
+import { GamePopoverTrigger } from '@/components/GamePopoverTrigger.js';
 
 export function GameCell({ entry, games, players, as, ...props }) {
   return (

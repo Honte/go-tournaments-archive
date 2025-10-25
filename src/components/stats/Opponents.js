@@ -1,9 +1,9 @@
 'use client';
 
 import { getTranslator } from '@/i18n/translator';
-import { H2 } from '@/components/ui/h2';
+import { H2 } from '@/components/ui/H2';
 import { useMemo } from 'react';
-import { StatsTable } from '@/components/table/stats';
+import { StatsTable } from '@/components/table/StatsTable';
 import { toPercentage, toPlayerLink } from '@/libs/table';
 
 export function Opponents({ player, translations, players }) {
@@ -31,8 +31,8 @@ export function Opponents({ player, translations, players }) {
     return Object.values(opponents)
       .filter((op) => op.id !== 'BYE')
       .map((opponent) => {
-        const { name, games, won} = opponent
-        const [firstName, lastName] = name.split(' ')
+        const { name, games, won } = opponent;
+        const [firstName, lastName] = name.split(' ');
 
         return {
           ...opponent,
@@ -40,9 +40,9 @@ export function Opponents({ player, translations, players }) {
           lastName,
           lost: games - won,
           wonPercent: won / games
-        }
+        };
       })
-      .sort((a, b) => a.lastName.localeCompare(b.lastName))
+      .sort((a, b) => a.lastName.localeCompare(b.lastName));
   }, [player, players]);
 
   const columns = useMemo(() => [
@@ -67,7 +67,7 @@ export function Opponents({ player, translations, players }) {
     },
     {
       accessorKey: 'lost',
-      header: t('table.lost'),
+      header: t('table.lost')
     },
     {
       accessorKey: 'wonPercent',

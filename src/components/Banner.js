@@ -1,4 +1,4 @@
-import { Logo } from '@/components/logo';
+import { Logo } from '@/components/Logo';
 import { FaAngleRight } from 'react-icons/fa6';
 
 export function Banner({ Icon = Logo, title, subtitle, href, tooltip }) {

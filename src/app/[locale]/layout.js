@@ -1,9 +1,9 @@
 import { Inter } from 'next/font/google';
 import { loadTranslations, SUPPORTED_LOCALES } from '@/i18n/server';
-import { Header } from '@/components/header';
-import { Footer } from '@/components/footer';
-import { Client } from '@/components/client';
-import { LocaleNavigation } from '@/components/navigation/locale';
+import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
+import { Client } from '@/components/Client';
+import { LocaleNavigation } from '@/components/navigation/LocaleNavigation';
 import { getTranslator } from '@/i18n/translator';
 
 import '../globals.css';

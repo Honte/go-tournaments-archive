@@ -2,7 +2,7 @@
 
 import { getTranslator } from '@/i18n/translator';
 import { useMemo } from 'react';
-import { StatsTable } from '@/components/table/stats';
+import { StatsTable } from '@/components/table/StatsTable';
 import { toPercentage, toPlayerLink } from '@/libs/table';
 
 export function PlayerStats({ players, translations }) {

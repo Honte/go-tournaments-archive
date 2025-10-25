@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { getTranslator } from '@/i18n/translator';
-import { Logo } from '@/components/logo';
+import { Logo } from '@/components/Logo';
 
 export async function Header({ translations }) {
   const t = getTranslator(translations)

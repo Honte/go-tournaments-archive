@@ -1,8 +1,8 @@
 import { getTranslator } from '@/i18n/translator';
-import { H2 } from '@/components/ui/h2';
-import { Details } from '@/components/details';
-import { jsxJoin } from '@/libs/join';
-import { YearLink } from '@/components/yearLink';
+import { H2 } from '@/components/ui/H2';
+import { Details } from '@/components/Details';
+import { YearLink } from '@/components/YearLink';
+import { jsxJoin } from '@/libs/join.js';
 
 const MEDALS = ['first', 'second', 'third'];
 

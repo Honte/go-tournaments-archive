@@ -1,7 +1,7 @@
-import { ExternalLink } from '@/components/ui/externalLink';
-import { Details } from '@/components/details';
-import { getTranslator } from '@/i18n/translator';
-import { H2 } from '@/components/ui/h2';
+import { ExternalLink } from '@/components/ui/ExternalLink';
+import { Details } from '@/components/Details';
+import { H2 } from '@/components/ui/H2';
+import { getTranslator } from '@/i18n/translator.js';
 
 export function TournamentDetails({ tournament, translations }) {
   const t = getTranslator(translations)

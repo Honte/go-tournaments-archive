@@ -1,7 +1,7 @@
-import { Game } from '@/components/game';
+import { Game } from '@/components/Game';
 import { getTranslator } from '@/i18n/translator';
 import { getStageName } from '@/libs/stage';
-import { H2 } from '@/components/ui/h2';
+import { H2 } from '@/components/ui/H2';
 
 export function GamesList({ tournament, translations, sgfs }) {
   const { stages, games, players } = tournament;

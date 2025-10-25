@@ -1,10 +1,10 @@
 'use client';
 
-import { Breaker } from '@/components/breaker';
-import { GameCell } from '@/components/gameCell';
-import { getTranslator } from '@/i18n/translator';
-import { PlayerLink } from '@/components/ui/playerLink';
+import { Breaker } from '@/components/Breaker';
+import { GameCell } from '@/components/GameCell';
+import { PlayerLink } from '@/components/ui/PlayerLink';
 import { withHighlighter } from '@/libs/higlighter';
+import { getTranslator } from '@/i18n/translator.js';
 
 export function TableLeague({ stage, players, games, translations }) {
   const t = getTranslator(translations);

@@ -1,8 +1,8 @@
 import { FaMedal } from 'react-icons/fa6';
 import { getTranslator } from '@/i18n/translator';
-import { H1 } from '@/components/ui/h1';
-import { PlayerLink } from '@/components/ui/playerLink';
-import { FullStatsLink } from '@/components/fullStatsLink';
+import { H1 } from '@/components/ui/H1';
+import { PlayerLink } from '@/components/ui/PlayerLink';
+import { FullStatsLink } from '@/components/FullStatsLink';
 
 export function Medalists({ stats, translations }) {
   const t = getTranslator(translations)

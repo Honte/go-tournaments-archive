@@ -2,7 +2,7 @@ import SVG_BOARD from './board.svg';
 import SVG_WHITE from './white.svg';
 import SVG_BLACK from './black.svg';
 import { useMemo } from 'react';
-import { iterateStones, sgfToBoard } from '@/components/goban/board';
+import { iterateStones, sgfToBoard } from '@/libs/goban';
 
 export function Goban({ className, sgf }) {
   const board = useMemo(() => sgfToBoard(sgf), [sgf]);
