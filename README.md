@@ -6,6 +6,14 @@ Repository of [Polish Go Championships Archive](https://mp.go.art.pl)
 2. Run the development server: `npm run dev`
 3. Open [http://localhost:3000](http://localhost:3000) to see the result.
 
+## Deployment
+
+The build produces static HTML, JS and CSS files. Additionally, it has `index.php` and `.htaccess` file for standard PHP servers to ensure that all routes would lead to `index.html`.
+
+1. Create `.env.production` file with `SGF_URL_PREFIX=https://mp.go.art.pl/sgf/` (or other deployment server address)
+2. Run `npm run build`
+3. Copy contents of `out` to the server
+
 ## Adding a new tournament
 
 Create `[year].yml` file in `public/data` directory
