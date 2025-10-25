@@ -21,26 +21,27 @@ export async function generateMetadata({ params }) {
 
   return {
     title: `${t('site.name')} - ${tournament.year}`,
-    description: t('site.yearDescription', tournament.year)
+    description: t('site.yearDescription', tournament.year),
   };
 }
 
 export async function generateStaticParams() {
   const tournaments = await getTournaments();
 
-  return tournaments.map((tournament) => SUPPORTED_LOCALES.map((locale) => ({
-    locale,
-    year: String(tournament.year)
-  }))).flat();
+  return tournaments
+    .map((tournament) =>
+      SUPPORTED_LOCALES.map((locale) => ({
+        locale,
+        year: String(tournament.year),
+      }))
+    )
+    .flat();
 }
 
 export default async function Edition(props) {
   const params = await props.params;
 
-  const {
-    year,
-    locale
-  } = params;
+  const { year, locale } = params;
 
   if (!year.match(/^\d{4}$/)) {
     return notFound();
@@ -50,23 +51,24 @@ export default async function Edition(props) {
   const tournaments = await getTournaments();
   const tournament = tournaments.find((t) => t.year === Number(year));
   const { games, players, stages } = tournament;
-  const sgfs = await loadSgfs(tournament)
+  const sgfs = await loadSgfs(tournament);
 
   return (
     <>
-      <TopNavigation locale={locale} tournaments={tournaments} current={Number(year)}/>
+      <TopNavigation locale={locale} tournaments={tournaments} current={Number(year)} />
 
       <div className="sm:flex sm:gap-8 my-1">
-        <TournamentDetails tournament={tournament} translations={translations}/>
-        <Awarded tournament={tournament} translations={translations}/>
+        <TournamentDetails tournament={tournament} translations={translations} />
+        <Awarded tournament={tournament} translations={translations} />
       </div>
 
       {stages.toReversed().map((stage) => (
         <div key={stage.type} className="my-4">
-          <h2
-            className="text-xl font-bold pb-1 my-2 border-b-pgc-dark border-b-2">{getStageName(stage, translations)}</h2>
-          <StageDetails stage={stage} translations={translations}/>
-          <StageResults stage={stage} games={games} players={players} translations={translations}/>
+          <h2 className="text-xl font-bold pb-1 my-2 border-b-pgc-dark border-b-2">
+            {getStageName(stage, translations)}
+          </h2>
+          <StageDetails stage={stage} translations={translations} />
+          <StageResults stage={stage} games={games} players={players} translations={translations} />
         </div>
       ))}
 

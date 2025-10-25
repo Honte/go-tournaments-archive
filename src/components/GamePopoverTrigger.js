@@ -15,8 +15,8 @@ export function GamePopoverTrigger({ as = 'div', game, players, children, ...pro
             detail: {
               game,
               players,
-              target: ref.current
-            }
+              target: ref.current,
+            },
           })
         )
       }

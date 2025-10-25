@@ -7,10 +7,7 @@ export function toPercentage(info) {
 export function toPlayerLink(info, translations) {
   return (
     <div className="text-left">
-      <PlayerLink
-        player={info.row.original}
-        translations={translations}
-      />
+      <PlayerLink player={info.row.original} translations={translations} />
     </div>
   );
 }

@@ -5,7 +5,7 @@ export function GameCell({ entry, games, players, as, ...props }) {
     <GamePopoverTrigger as={as} game={games[entry.game]} players={players} {...props}>
       {getResult(entry)}
     </GamePopoverTrigger>
-  )
+  );
 }
 
 function getResult(entry) {

@@ -1,11 +1,12 @@
 export function Stone({ color, ...props }) {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      {...props}
-    >
-      <circle cx={12} cy={12} r={9} className={`stroke-2 stroke-pgc-dark ${color === 'black' ? 'fill-pgc-dark' : 'fill-pgc-light'}`}/>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
+      <circle
+        cx={12}
+        cy={12}
+        r={9}
+        className={`stroke-2 stroke-pgc-dark ${color === 'black' ? 'fill-pgc-dark' : 'fill-pgc-light'}`}
+      />
     </svg>
   );
 }

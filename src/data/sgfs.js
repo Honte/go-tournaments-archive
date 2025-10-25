@@ -11,7 +11,10 @@ export async function loadSgfs(tournament) {
     const game = tournament.games[id];
 
     if (game.props?.sgf) {
-      result[id] = await readFile(join('./public', game.props.sgf.replace(process.env.SGF_URL_PREFIX, '/sgf/')), 'utf-8');
+      result[id] = await readFile(
+        join('./public', game.props.sgf.replace(process.env.SGF_URL_PREFIX, '/sgf/')),
+        'utf-8'
+      );
     }
   }
 

@@ -28,7 +28,7 @@ export function cleanSgf(content, rootParams) {
   while (typeof current.parentId === 'number') {
     const parent = map.get(current.parentId);
 
-    current = cleanNode(parent, [current])
+    current = cleanNode(parent, [current]);
   }
 
   if (rootParams) {
@@ -46,7 +46,7 @@ export function cleanSgf(content, rootParams) {
       }
     }
 
-    current.data = Object.fromEntries(Object.entries(current.data).sort((a, b) => a[0].localeCompare(b[0])))
+    current.data = Object.fromEntries(Object.entries(current.data).sort((a, b) => a[0].localeCompare(b[0])));
   }
 
   return sgfParser.stringify(current);
@@ -56,13 +56,13 @@ function cleanNode(node, newChildren) {
   const result = {
     ...node,
     data: {
-      ...node.data
+      ...node.data,
     },
-    children: newChildren
+    children: newChildren,
   };
 
   if ('C' in result.data) {
-    delete result.data.C
+    delete result.data.C;
   }
 
   return result;

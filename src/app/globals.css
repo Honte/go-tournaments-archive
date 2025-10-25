@@ -3,25 +3,25 @@
 @config "../../tailwind.config.js";
 
 @utility faded-left {
-    @apply relative before:bg-linear-to-r before:h-full before:left-0 before:absolute before:z-10 before:from-pgc-light before:to-transparent before:pointer-events-none;
+  @apply relative before:bg-linear-to-r before:h-full before:left-0 before:absolute before:z-10 before:from-pgc-light before:to-transparent before:pointer-events-none;
 }
 
 @utility faded-right {
-    @apply relative after:bg-linear-to-l after:h-full after:right-0 after:absolute after:z-10 after:from-pgc-light before:to-transparent after:pointer-events-none;
+  @apply relative after:bg-linear-to-l after:h-full after:right-0 after:absolute after:z-10 after:from-pgc-light before:to-transparent after:pointer-events-none;
 }
 
 @property --border-angle {
-    inherits: false;
-    initial-value: 0deg;
-    syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+  syntax: '<angle>';
 }
 
 @theme {
-    --color-pgc-dark: #222222;
-    --color-pgc-gray: #999999;
-    --color-pgc-soft: #d2d2d2;
-    --color-pgc-light: #F3F4F6FF;
-    --color-pgc-primary: #5287ae;
-    --color-pgc-hover: #72940c;
-    --color-pgc-bg: #e5e7eb;
+  --color-pgc-dark: #222222;
+  --color-pgc-gray: #999999;
+  --color-pgc-soft: #d2d2d2;
+  --color-pgc-light: #f3f4f6ff;
+  --color-pgc-primary: #5287ae;
+  --color-pgc-hover: #72940c;
+  --color-pgc-bg: #e5e7eb;
 }

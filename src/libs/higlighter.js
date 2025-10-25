@@ -3,6 +3,6 @@ import attachHighlighter from 'go-results-highlighter';
 
 export function withHighlighter(element) {
   attachHighlighter(element, {
-    rearranging: false
-  })
+    rearranging: false,
+  });
 }

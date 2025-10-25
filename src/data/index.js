@@ -1,13 +1,13 @@
-import { loadTournaments } from './load'
+import { loadTournaments } from './load';
 import { calculateStats } from '@/data/stats';
 
-const tournaments = await loadTournaments()
+const tournaments = await loadTournaments();
 const stats = calculateStats(tournaments);
 
 export function getTournaments() {
-  return tournaments
+  return tournaments;
 }
 
 export function getStats() {
-  return stats
+  return stats;
 }

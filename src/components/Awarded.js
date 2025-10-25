@@ -6,7 +6,7 @@ import { jsxJoin } from '@/libs/join';
 export function Awarded({ tournament, translations }) {
   const t = getTranslator(translations);
   const { top, players } = tournament;
-  const awarded = top.map((ids) => ids.split(',').map((id) => players[id]))
+  const awarded = top.map((ids) => ids.split(',').map((id) => players[id]));
 
   return (
     <div className="flex-1">
@@ -14,10 +14,13 @@ export function Awarded({ tournament, translations }) {
       <ol className="list-decimal pl-5">
         {awarded.map((players, index) => (
           <li key={index} className="my-1">
-            {jsxJoin(players.map((p) => <PlayerLink key={p.id} player={p} translations={translations}/>), ', ')}
+            {jsxJoin(
+              players.map((p) => <PlayerLink key={p.id} player={p} translations={translations} />),
+              ', '
+            )}
           </li>
         ))}
       </ol>
     </div>
-  )
+  );
 }

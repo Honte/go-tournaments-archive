@@ -16,7 +16,7 @@ export async function generateMetadata({ params }) {
 
   return {
     title: player ? `${t('site.playerStatsTitle', player.name)} - ${t('site.name')}` : t('site.name'),
-    description: player ? t('site.playerStatsDescription', player.name) : t('site.description')
+    description: player ? t('site.playerStatsDescription', player.name) : t('site.description'),
   };
 }
 
@@ -35,11 +35,11 @@ export default async function PlayerStats({ params }) {
     <>
       <h1 className="text-4xl text-center font-bold">{player.name}</h1>
 
-      <Achievements player={player} translations={translations}/>
+      <Achievements player={player} translations={translations} />
 
       <div className="flex max-xl:flex-col gap-4">
-        <Events player={player} translations={translations}/>
-        <Opponents player={player} translations={translations} players={stats.players}/>
+        <Events player={player} translations={translations} />
+        <Opponents player={player} translations={translations} players={stats.players} />
       </div>
     </>
   );
@@ -48,8 +48,13 @@ export default async function PlayerStats({ params }) {
 export async function generateStaticParams() {
   const stats = getStats();
 
-  return Object.keys(stats.players).filter((key) => key !== 'BYE').map((slug) => SUPPORTED_LOCALES.map((locale) => ({
-    locale,
-    slug
-  }))).flat();
+  return Object.keys(stats.players)
+    .filter((key) => key !== 'BYE')
+    .map((slug) =>
+      SUPPORTED_LOCALES.map((locale) => ({
+        locale,
+        slug,
+      }))
+    )
+    .flat();
 }

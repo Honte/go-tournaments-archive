@@ -14,13 +14,13 @@ export function Opponents({ player, translations, players }) {
 
     for (const event of player.results) {
       for (const game of event.games) {
-        const playerStats = opponents[game.opponent] ||= {
+        const playerStats = (opponents[game.opponent] ||= {
           id: game.opponent,
           name: players[game.opponent].name,
           games: 0,
           won: 0,
-          years: new Set()
-        };
+          years: new Set(),
+        });
 
         playerStats.games++;
         playerStats.won += Number(game.won);
@@ -39,47 +39,50 @@ export function Opponents({ player, translations, players }) {
           firstName,
           lastName,
           lost: games - won,
-          wonPercent: won / games
+          wonPercent: won / games,
         };
       })
       .sort((a, b) => a.lastName.localeCompare(b.lastName));
   }, [player, players]);
 
-  const columns = useMemo(() => [
-    {
-      accessorKey: 'firstName',
-      header: t('table.firstName'),
-      cell: (info) => toPlayerLink(info, translations),
-      span: 2
-    },
-    {
-      accessorKey: 'lastName',
-      header: t('table.lastName'),
-      skip: true
-    },
-    {
-      accessorKey: 'games',
-      header: t('table.games')
-    },
-    {
-      accessorKey: 'won',
-      header: t('table.won')
-    },
-    {
-      accessorKey: 'lost',
-      header: t('table.lost')
-    },
-    {
-      accessorKey: 'wonPercent',
-      header: t('table.wonPercent'),
-      cell: toPercentage
-    }
-  ], [translations, t]);
+  const columns = useMemo(
+    () => [
+      {
+        accessorKey: 'firstName',
+        header: t('table.firstName'),
+        cell: (info) => toPlayerLink(info, translations),
+        span: 2,
+      },
+      {
+        accessorKey: 'lastName',
+        header: t('table.lastName'),
+        skip: true,
+      },
+      {
+        accessorKey: 'games',
+        header: t('table.games'),
+      },
+      {
+        accessorKey: 'won',
+        header: t('table.won'),
+      },
+      {
+        accessorKey: 'lost',
+        header: t('table.lost'),
+      },
+      {
+        accessorKey: 'wonPercent',
+        header: t('table.wonPercent'),
+        cell: toPercentage,
+      },
+    ],
+    [translations, t]
+  );
 
   return (
     <div className="my-2">
       <H2>{t('stats.opponents')}</H2>
-      <StatsTable data={data} columns={columns}/>
+      <StatsTable data={data} columns={columns} />
     </div>
   );
 }

@@ -14,24 +14,29 @@ export function Achievements({ player, translations }) {
     const achievements = player.medals[index];
 
     if (achievements.length) {
-      details[t(`winners.${category}`)] = <span className="text-wrap">
-        {listYear(achievements.toReversed(), translations.locale)} ({achievements.length})
-      </span>
+      details[t(`winners.${category}`)] = (
+        <span className="text-wrap">
+          {listYear(achievements.toReversed(), translations.locale)} ({achievements.length})
+        </span>
+      );
     }
   }
 
-  details[t('table.events')] = player.years.length
-  details[t('table.games')] = player.totalGames
-  details[t('table.won')] = player.totalWon
+  details[t('table.events')] = player.years.length;
+  details[t('table.games')] = player.totalGames;
+  details[t('table.won')] = player.totalWon;
 
   return (
     <div className="my-1 flex flex-col">
       <H2>{t('stats.achievements')}</H2>
-      <Details details={details}/>
+      <Details details={details} />
     </div>
-  )
+  );
 }
 
 function listYear(years, locale) {
-  return jsxJoin(years.map((year) => <YearLink key={year} locale={locale} year={year}/>), ', ')
+  return jsxJoin(
+    years.map((year) => <YearLink key={year} locale={locale} year={year} />),
+    ', '
+  );
 }

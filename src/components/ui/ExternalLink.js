@@ -1,11 +1,6 @@
-import { twMerge } from 'tailwind-merge'
+import { twMerge } from 'tailwind-merge';
 
-export function ExternalLink({
-  url,
-  children = url.replace(/^https?:\/\//, ''),
-  title,
-  className
-}) {
+export function ExternalLink({ url, children = url.replace(/^https?:\/\//, ''), title, className }) {
   return (
     <a
       href={url}

@@ -10,5 +10,5 @@ export function Details({ details }) {
         </Fragment>
       ))}
     </dl>
-  )
+  );
 }

@@ -1,4 +1,5 @@
-const GAME_REGEX = /(?<home>[a-z]+)-(?<away>[a-z]+) (?<winner>[a-z]+)(:(?<result>[?a-zA-Z!0-9+,.:]+))?( (?<props>.+))?/i;
+const GAME_REGEX =
+  /(?<home>[a-z]+)-(?<away>[a-z]+) (?<winner>[a-z]+)(:(?<result>[?a-zA-Z!0-9+,.:]+))?( (?<props>.+))?/i;
 const GAME_RESULT_REGEX = /^(?<color>[BW])(\+(?<score>([RT?]|\d+([,.]5)?)))?$/i;
 
 export function parseGames(repository, games) {
@@ -26,12 +27,12 @@ function parseGame(string) {
 
   const homePlayer = {
     id: home,
-    won: winner === home
+    won: winner === home,
   };
 
   const awayPlayer = {
     id: away,
-    won: winner === away
+    won: winner === away,
   };
 
   const winnerPlayer = home === winner ? homePlayer : awayPlayer;
@@ -62,22 +63,21 @@ function parseGame(string) {
   return {
     players: homePlayer.color === 'white' ? [awayPlayer, homePlayer] : [homePlayer, awayPlayer],
     result,
-    props: (props?.split(' ') || [])
-      .reduce((map, prop) => {
-        const pos = prop.indexOf(':');
-        const type = prop.slice(0, pos);
-        let value = prop.slice(pos + 1);
+    props: (props?.split(' ') || []).reduce((map, prop) => {
+      const pos = prop.indexOf(':');
+      const type = prop.slice(0, pos);
+      let value = prop.slice(pos + 1);
 
-        if (type === 'sgf') {
-          value = `${process.env.SGF_URL_PREFIX}${value}`;
-          map.png = value.replace('.sgf', '.png')
-          map.svg = value.replace('.sgf', '.svg')
-        }
+      if (type === 'sgf') {
+        value = `${process.env.SGF_URL_PREFIX}${value}`;
+        map.png = value.replace('.sgf', '.png');
+        map.svg = value.replace('.sgf', '.svg');
+      }
 
-        map[type] = value;
+      map[type] = value;
 
-        return map;
-      }, {})
+      return map;
+    }, {}),
   };
 }
 

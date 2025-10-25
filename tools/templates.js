@@ -13,11 +13,10 @@ async function buildTemplates() {
 
   for (const tournament of tournaments) {
     const { players, games, stages, year, location } = tournament;
-    const tournamentDir = join(TEMPLATES_DIR, String(year))
+    const tournamentDir = join(TEMPLATES_DIR, String(year));
     const hasManyStages = stages.length > 1;
 
     await mkdir(tournamentDir, { recursive: true });
-
 
     for (const stage of stages) {
       switch (stage.type) {
@@ -46,22 +45,22 @@ async function buildTemplates() {
                 PB: b.name,
                 PW: w.name,
                 BR: b.rank,
-                WR: w.rank
+                WR: w.rank,
               };
 
               const stagePrefix = hasManyStages ? `-${stage.type}` : '';
               const file = join(tournamentDir, `${year}${stagePrefix}-${roundNo + 1}-${b.id}-${w.id}.sgf`);
-              let content = '(\n  ;'
+              let content = '(\n  ;';
 
               for (const prop in data) {
-                const item = data[prop]
+                const item = data[prop];
 
                 if (item) {
-                  content += `${prop}[${item}]`
+                  content += `${prop}[${item}]`;
                 }
               }
 
-              content += '\n)'
+              content += '\n)';
 
               await writeFile(file, content, 'utf-8');
             }
@@ -71,5 +70,3 @@ async function buildTemplates() {
     }
   }
 }
-
-

@@ -3,16 +3,16 @@ import slugify from 'slugify';
 const PLAYER_REGEX = /^(?<name>[\p{Letter} -]+)( (?<rank>[0-9]{1,2}[dkp])?)?$/u;
 
 export function parsePlayers(json) {
-  return createPlayersHandler()(json)
+  return createPlayersHandler()(json);
 }
 
 export function createPlayersHandler() {
-  const playerIds = {}
+  const playerIds = {};
 
-  return fromJson
+  return fromJson;
 
   function fromJson(json) {
-    const players = {}
+    const players = {};
 
     for (const id in json) {
       const details = json[id].match(PLAYER_REGEX);
@@ -24,30 +24,27 @@ export function createPlayersHandler() {
       players[id] = {
         id: getPlayerId(details.groups.name),
         name: details.groups.name,
-        rank: details.groups.rank
+        rank: details.groups.rank,
       };
     }
 
-    return players
+    return players;
   }
 
   function getPlayerId(name) {
-    const parts = name
-      .toLowerCase()
-      .split(' ')
-      .map(slugify)
+    const parts = name.toLowerCase().split(' ').map(slugify);
 
     const full = parts.join(' ');
-    const hash = parts.at(0)[0] + parts.at(-1)
+    const hash = parts.at(0)[0] + parts.at(-1);
 
-    let id = hash
+    let id = hash;
     let index = 1;
 
     while (playerIds[id] && playerIds[id] !== full) {
-      id = `${hash}${++index}`
+      id = `${hash}${++index}`;
     }
 
-    playerIds[id] = full
+    playerIds[id] = full;
     return id;
   }
 }

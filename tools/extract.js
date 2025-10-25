@@ -20,9 +20,8 @@ extractFromDatabase({
   year: '2024',
 
   location: 'Warszawa',
-  referee: 'Marcin Dzieżyc'
+  referee: 'Marcin Dzieżyc',
 });
-
 
 async function extractFromDatabase({
   host,
@@ -38,22 +37,17 @@ async function extractFromDatabase({
   sgfPrefix = `${website}/files/game/sgf`,
   time = 'fischer 60m + 30s',
   komi = 6.5,
-  breakers = [
-    'wins',
-    'sodos',
-    'direct',
-    'starting'
-  ],
+  breakers = ['wins', 'sodos', 'direct', 'starting'],
   egd,
   outputSgfDir = join(__dirname, `../public/sgf/${year}`),
-  outputYml = join(__dirname, `../public/data/${year}.yml`)
+  outputYml = join(__dirname, `../public/data/${year}.yml`),
 }) {
   const connection = await mysql.createConnection({
     host,
     user,
     password,
     port,
-    database
+    database,
   });
 
   const [playersRows] = await connection.execute(`SELECT *
@@ -89,11 +83,11 @@ async function extractFromDatabase({
     players[id] = `${player.first_name} ${player.last_name} ${rank}${kyudan[0]}`;
   }
 
-  const parsedPlayers = parsePlayers(players)
+  const parsedPlayers = parsePlayers(players);
 
-  const gamesRowsByRound = []
+  const gamesRowsByRound = [];
   for (const game of gamesRows) {
-    (gamesRowsByRound[game.round - 1] ||= []).push([game, game.game_order ?? 5])
+    (gamesRowsByRound[game.round - 1] ||= []).push([game, game.game_order ?? 5]);
   }
   for (const round of gamesRowsByRound) {
     round.sort((a, b) => a[1] - b[1]);
@@ -145,8 +139,8 @@ async function extractFromDatabase({
         }
       }
 
-      const parsedBlack = parsedPlayers[black]
-      const parsedWhite = parsedPlayers[white]
+      const parsedBlack = parsedPlayers[black];
+      const parsedWhite = parsedPlayers[white];
       const sgf = await getSgf({
         sgfs,
         output: join(outputSgfDir, `${year}-${round + 1}-${parsedBlack.id}-${parsedWhite.id}.sgf`),
@@ -163,13 +157,13 @@ async function extractFromDatabase({
           OT: null,
           PC: location,
           EV: `Polish Go Championship ${year}`,
-          RU: (val) => val ? val.toLowerCase() : null,
-          GN: `Round ${round + 1} - Board ${board + 1}`
-        }
-      })
+          RU: (val) => (val ? val.toLowerCase() : null),
+          GN: `Round ${round + 1} - Board ${board + 1}`,
+        },
+      });
 
       if (sgf) {
-        props.sgf = `${year}/${sgf}`
+        props.sgf = `${year}/${sgf}`;
       }
 
       const output = [];
@@ -190,31 +184,35 @@ async function extractFromDatabase({
   const testStage = {
     breakers,
     date: [{ start, end }],
-    rounds: rounds.map((round) => parseGames(testGames, round))
+    rounds: rounds.map((round) => parseGames(testGames, round)),
   };
   const testTable = createTable(testStage, testGames, parsedPlayers);
 
-  const result = stringify({
-    location,
-    referee,
-    website,
-    players,
-    top: testTable.slice(0, 3).map((entry) => entry.id),
-    stages: [{
-      type: 'league',
-      date: `${start} - ${end}`,
-      egd,
-      time,
-      komi,
-      breakers,
-      rounds
-    }]
-  }, { lineWidth: 0 });
-
+  const result = stringify(
+    {
+      location,
+      referee,
+      website,
+      players,
+      top: testTable.slice(0, 3).map((entry) => entry.id),
+      stages: [
+        {
+          type: 'league',
+          date: `${start} - ${end}`,
+          egd,
+          time,
+          komi,
+          breakers,
+          rounds,
+        },
+      ],
+    },
+    { lineWidth: 0 }
+  );
 
   await writeFile(outputYml, result, 'utf-8');
 
-  console.log('Done')
+  console.log('Done');
 }
 
 function toIsoDate(date) {
@@ -225,44 +223,41 @@ function toOgsLink(id, type = 'reviews', includeComments = false) {
   return `https://online-go.com/api/v1/${type}/${id}/sgf?without-comments=${includeComments ? 0 : 1}`;
 }
 
-async function getSgf({
-  sgfs,
-  props,
-  output
-}) {
+async function getSgf({ sgfs, props, output }) {
   if (!sgfs?.length) {
-    return null
+    return null;
   }
 
-  const expectedResult = props.RE
-  const result = []
+  const expectedResult = props.RE;
+  const result = [];
 
   for (const url of sgfs) {
-    const res = await fetch(url)
+    const res = await fetch(url);
 
     if (res.status === 429 && url.includes('online-go')) {
       throw new Error('Too many OGS requests - please wait a minute');
     }
 
-    const content = await res.text()
-    const gameResult = content.match(/RE\[(.+)]/)?.[1]
+    const content = await res.text();
+    const gameResult = content
+      .match(/RE\[(.+)]/)?.[1]
       .trim?.()
       .replaceAll?.(',', '.')
-      .toUpperCase?.()
+      .toUpperCase?.();
 
     if (gameResult && gameResult !== '?' && gameResult.trim() !== expectedResult) {
-      console.warn(`Result for game ${url} is different: ${gameResult} vs ${expectedResult}`)
+      console.warn(`Result for game ${url} is different: ${gameResult} vs ${expectedResult}`);
     }
 
     result.push({
       source: url,
       cleaned: cleanSgf(content, props),
-      original: content
-    })
+      original: content,
+    });
   }
 
   if (!result.length) {
-    return null
+    return null;
   }
 
   let same = true;
@@ -277,17 +272,17 @@ async function getSgf({
   }
 
   if (!same) {
-    console.warn(`SGFs for game ${output} are not the same - please investigate`)
+    console.warn(`SGFs for game ${output} are not the same - please investigate`);
     for (const [index, { source, original }] of result.entries()) {
-      const gameFile = `./temp-${index}.sgf`
-      await writeFile(gameFile, original, 'utf-8')
-      console.warn(`Saved ${source} copy to ${gameFile}`)
+      const gameFile = `./temp-${index}.sgf`;
+      await writeFile(gameFile, original, 'utf-8');
+      console.warn(`Saved ${source} copy to ${gameFile}`);
     }
-    return null
+    return null;
   }
 
   await mkdir(dirname(output), { recursive: true });
-  await writeFile(output, result[0].cleaned, 'utf-8')
+  await writeFile(output, result[0].cleaned, 'utf-8');
 
-  return parse(output).base
+  return parse(output).base;
 }

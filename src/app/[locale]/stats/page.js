@@ -11,7 +11,7 @@ export async function generateMetadata({ params }) {
 
   return {
     title: `${t('site.allTimeStatsTitle')} - ${t('site.name')}`,
-    description: t('site.allTimeStatsDescription')
+    description: t('site.allTimeStatsDescription'),
   };
 }
 
@@ -25,7 +25,7 @@ export default async function Stats({ params }) {
   return (
     <>
       <h1 className="text-4xl text-center font-bold mb-4">{t('stats.allTimeHeader')}</h1>
-      <PlayerStats players={stats.players} translations={translations}/>
+      <PlayerStats players={stats.players} translations={translations} />
     </>
   );
 }

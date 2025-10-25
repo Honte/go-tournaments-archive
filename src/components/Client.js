@@ -1,9 +1,7 @@
-'use client'
+'use client';
 
 import { GamePopover } from '@/components/GamePopover';
 
 export function Client({ rawTranslations }) {
-  return (
-    <GamePopover translations={JSON.parse(rawTranslations)} />
-  )
+  return <GamePopover translations={JSON.parse(rawTranslations)} />;
 }

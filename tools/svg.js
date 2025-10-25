@@ -38,11 +38,7 @@ export async function generateSvg(sgfFile) {
 
   const stones = [];
   for (const [x, y, color] of iterateStones(board)) {
-    stones.push([
-      (x + 1) * stepV - (stepV / 2),
-      (y + 1) * stepH - (stepH / 2),
-      color
-    ]);
+    stones.push([(x + 1) * stepV - stepV / 2, (y + 1) * stepH - stepH / 2, color]);
   }
 
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${SIZE} ${SIZE}">
@@ -61,12 +57,11 @@ export async function generateSvg(sgfFile) {
         name: 'preset-default',
         params: {
           overrides: {
-            collapseGroups: false // this breaks svg to png conversion for some reason
-
-          }
-        }
+            collapseGroups: false, // this breaks svg to png conversion for some reason
+          },
+        },
       },
-      'removeXlink'
-    ]
+      'removeXlink',
+    ],
   }).data;
 }

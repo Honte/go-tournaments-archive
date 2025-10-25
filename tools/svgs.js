@@ -4,8 +4,8 @@ import { generateSvg } from './svg';
 
 const tournaments = await loadTournaments();
 
-await generateSvgs()
-console.log('Done')
+await generateSvgs();
+console.log('Done');
 
 async function generateSvgs() {
   for (const tournament of tournaments) {
@@ -13,16 +13,14 @@ async function generateSvgs() {
       const game = tournament.games[id];
 
       if (game?.props?.sgf) {
-        const sgf = game.props.sgf
-          .replace(process.env.SGF_URL_PREFIX, '')
-          .replace(`${tournament.year}/`, '');
+        const sgf = game.props.sgf.replace(process.env.SGF_URL_PREFIX, '').replace(`${tournament.year}/`, '');
 
-        const source = `./public/sgf/${tournament.year}/${sgf}`
-        const target = source.replace('.sgf', '.svg')
+        const source = `./public/sgf/${tournament.year}/${sgf}`;
+        const target = source.replace('.sgf', '.svg');
         const svg = await generateSvg(source);
 
         await writeFile(target, svg);
-        console.log('Saved SVG', target)
+        console.log('Saved SVG', target);
       }
     }
   }

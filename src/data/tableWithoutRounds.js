@@ -1,11 +1,14 @@
 import { getRankValue } from '@/data/rank';
 
 export function createTableWithoutRounds(stage, games, players) {
-  const {games: gameIds} = stage;
+  const { games: gameIds } = stage;
 
   const results = {};
   for (const id of gameIds) {
-    const { players: [home, away], result } = games[id];
+    const {
+      players: [home, away],
+      result,
+    } = games[id];
     const winner = home.won ? home.id : away.id;
     const loser = home.won ? away.id : home.id;
 
@@ -13,24 +16,24 @@ export function createTableWithoutRounds(stage, games, players) {
       id: winner,
       score: 0,
       games: [],
-      rank: getRankValue(players[winner].rank)
+      rank: getRankValue(players[winner].rank),
     }).games.push({
       opponent: loser,
       won: true,
       result,
-      game: id
+      game: id,
     });
 
     (results[loser] ||= {
       id: loser,
       score: 0,
       games: [],
-      rank: getRankValue(players[loser].rank)
+      rank: getRankValue(players[loser].rank),
     }).games.push({
       opponent: winner,
       won: false,
       result,
-      game: id
+      game: id,
     });
 
     results[winner].score++;
@@ -41,7 +44,7 @@ export function createTableWithoutRounds(stage, games, players) {
       const score = b.score - a.score;
 
       if (score === 0) {
-        return b.rank - a.rank
+        return b.rank - a.rank;
       }
 
       return score;
@@ -49,7 +52,7 @@ export function createTableWithoutRounds(stage, games, players) {
     .map((p, index) => {
       return {
         ...p,
-        place: index + 1
+        place: index + 1,
       };
     });
 }

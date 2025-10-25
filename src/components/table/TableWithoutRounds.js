@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { getTranslator } from '@/i18n/translator';
 import { GamePopoverTrigger } from '@/components/GamePopoverTrigger';
@@ -12,44 +12,46 @@ export function TableWithoutRounds({ stage, players, games, translations }) {
     <div className="w-full overflow-x-auto">
       <table className="min-w-full table-auto border-collapse">
         <thead className="border-b-gray-300 border-b">
-        <tr className="text-center">
-          <th className="p-1">{t('table.place')}</th>
-          <th className="p-1 text-left">{t('table.name')}</th>
-          <th className="p-1">{t('table.rank')}</th>
-          {table.map((player, index) => <th className="p-1" key={index}
-                                            title={players[player.id].name}>{shorten(players[player.id].name)}</th>)}
-          <th className="p-1">{t('breakers.wins')}</th>
-        </tr>
+          <tr className="text-center">
+            <th className="p-1">{t('table.place')}</th>
+            <th className="p-1 text-left">{t('table.name')}</th>
+            <th className="p-1">{t('table.rank')}</th>
+            {table.map((player, index) => (
+              <th className="p-1" key={index} title={players[player.id].name}>
+                {shorten(players[player.id].name)}
+              </th>
+            ))}
+            <th className="p-1">{t('breakers.wins')}</th>
+          </tr>
         </thead>
         <tbody>
-        {table.map((player, i) => (
-          <tr key={player.id} className="text-center even:bg-gray-200">
-            <td className="p-1">{(i === 0 || player.place !== table[i - 1].place) ? player.place : ''}</td>
-            <td className="p-1 text-left">
-              <PlayerLink player={players[player.id]} translations={translations}>
-                {players[player.id].name}
-              </PlayerLink>
-            </td>
-            <td className="p-1">{players[player.id].rank}</td>
-            {table.map((p, index) => {
-              const entry = p !== player && player.games.find((g) => g.opponent === p.id);
+          {table.map((player, i) => (
+            <tr key={player.id} className="text-center even:bg-gray-200">
+              <td className="p-1">{i === 0 || player.place !== table[i - 1].place ? player.place : ''}</td>
+              <td className="p-1 text-left">
+                <PlayerLink player={players[player.id]} translations={translations}>
+                  {players[player.id].name}
+                </PlayerLink>
+              </td>
+              <td className="p-1">{players[player.id].rank}</td>
+              {table.map((p, index) => {
+                const entry = p !== player && player.games.find((g) => g.opponent === p.id);
 
-              return (
-                <td className="p-1" key={index}>
-                  {p === player ? <>&ndash;</> :
-                    <GamePopoverTrigger
-                      game={games[entry.game]}
-                      players={players}
-                      as="span"
-                    >
-                      {entry.won ? '1' : '0'}
-                    </GamePopoverTrigger>}
-                </td>
-              );
-            })}
-            <td className="p-1">{player.score}</td>
-          </tr>
-        ))}
+                return (
+                  <td className="p-1" key={index}>
+                    {p === player ? (
+                      <>&ndash;</>
+                    ) : (
+                      <GamePopoverTrigger game={games[entry.game]} players={players} as="span">
+                        {entry.won ? '1' : '0'}
+                      </GamePopoverTrigger>
+                    )}
+                  </td>
+                );
+              })}
+              <td className="p-1">{player.score}</td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>
@@ -57,5 +59,8 @@ export function TableWithoutRounds({ stage, players, games, translations }) {
 }
 
 function shorten(name) {
-  return name.split(' ').map((s) => `${s[0].toUpperCase()}.`).join(' ');
+  return name
+    .split(' ')
+    .map((s) => `${s[0].toUpperCase()}.`)
+    .join(' ');
 }

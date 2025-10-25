@@ -5,7 +5,7 @@ export function getStageName(stage, translations) {
     return stage.name[translations.locale];
   }
 
-  return getStageNameFromType(stage.type, translations)
+  return getStageNameFromType(stage.type, translations);
 }
 
 export function getStageNameFromType(type, translations) {

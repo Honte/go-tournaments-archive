@@ -29,72 +29,82 @@ export function TopNavigation({ tournaments, locale, current }) {
     delayRef.current = setTimeout(() => navRef.current && router.push(`/${locale}/${navRef.current.current()}`), DELAY);
   }, [clearNavigate, locale, router]);
 
-  const onWheel = useMemo(() => throttle((event) => {
-    if (navRef.current) {
-      navRef.current.move(event.deltaX);
-      scheduleNavigate();
-    }
-  }, THROTTLE), [navRef, scheduleNavigate]);
+  const onWheel = useMemo(
+    () =>
+      throttle((event) => {
+        if (navRef.current) {
+          navRef.current.move(event.deltaX);
+          scheduleNavigate();
+        }
+      }, THROTTLE),
+    [navRef, scheduleNavigate]
+  );
 
-  const onMouseDown = useMemo(() => (startEvent) => {
-    let lastEvent = startEvent;
-    let changed = !!delayRef.current;
+  const onMouseDown = useMemo(
+    () => (startEvent) => {
+      let lastEvent = startEvent;
+      let changed = !!delayRef.current;
 
-    clearNavigate();
-    window.addEventListener('mousemove', onMouseMove, CAPTURE);
-    window.addEventListener('mouseup', onMouseUp, CAPTURE);
+      clearNavigate();
+      window.addEventListener('mousemove', onMouseMove, CAPTURE);
+      window.addEventListener('mouseup', onMouseUp, CAPTURE);
 
-    function onMouseUp() {
-      window.removeEventListener('mousemove', onMouseMove, CAPTURE);
-      window.removeEventListener('mouseup', onMouseUp, CAPTURE);
+      function onMouseUp() {
+        window.removeEventListener('mousemove', onMouseMove, CAPTURE);
+        window.removeEventListener('mouseup', onMouseUp, CAPTURE);
 
-      if (changed) {
-        scheduleNavigate();
-      }
-    }
-
-    function onMouseMove(currentEvent) {
-      const distance = currentEvent.clientX - lastEvent.clientX;
-
-      if (navRef.current && Math.abs(distance) >= THRESHOLD) {
-        navRef.current.move(-distance);
-        lastEvent = currentEvent;
-        changed = true;
+        if (changed) {
+          scheduleNavigate();
+        }
       }
 
-      currentEvent.preventDefault();
-    }
-  }, [clearNavigate, scheduleNavigate]);
+      function onMouseMove(currentEvent) {
+        const distance = currentEvent.clientX - lastEvent.clientX;
 
-  const onTouchStart = useMemo(() => (startEvent) => {
-    let lastEvent = startEvent;
-    let changed = delayRef.current;
+        if (navRef.current && Math.abs(distance) >= THRESHOLD) {
+          navRef.current.move(-distance);
+          lastEvent = currentEvent;
+          changed = true;
+        }
 
-    clearNavigate();
-    document.addEventListener('touchmove', onTouchMove, CAPTURE_AND_NOT_PASSIVE);
-    document.addEventListener('touchend', onTouchEnd, CAPTURE_AND_NOT_PASSIVE);
-
-    function onTouchEnd() {
-      document.removeEventListener('touchmove', onTouchMove, CAPTURE_AND_NOT_PASSIVE);
-      document.removeEventListener('touchend', onTouchEnd, CAPTURE_AND_NOT_PASSIVE);
-
-      if (changed) {
-        scheduleNavigate();
+        currentEvent.preventDefault();
       }
-    }
+    },
+    [clearNavigate, scheduleNavigate]
+  );
 
-    function onTouchMove(currentEvent) {
-      const distance = currentEvent.targetTouches?.[0]?.clientX - lastEvent.targetTouches?.[0]?.clientX;
+  const onTouchStart = useMemo(
+    () => (startEvent) => {
+      let lastEvent = startEvent;
+      let changed = delayRef.current;
 
-      if (navRef.current && Math.abs(distance) >= THRESHOLD) {
-        navRef.current.move(-distance);
-        lastEvent = currentEvent;
-        changed = true;
+      clearNavigate();
+      document.addEventListener('touchmove', onTouchMove, CAPTURE_AND_NOT_PASSIVE);
+      document.addEventListener('touchend', onTouchEnd, CAPTURE_AND_NOT_PASSIVE);
+
+      function onTouchEnd() {
+        document.removeEventListener('touchmove', onTouchMove, CAPTURE_AND_NOT_PASSIVE);
+        document.removeEventListener('touchend', onTouchEnd, CAPTURE_AND_NOT_PASSIVE);
+
+        if (changed) {
+          scheduleNavigate();
+        }
       }
 
-      currentEvent.preventDefault();
-    }
-  }, [clearNavigate, scheduleNavigate]);
+      function onTouchMove(currentEvent) {
+        const distance = currentEvent.targetTouches?.[0]?.clientX - lastEvent.targetTouches?.[0]?.clientX;
+
+        if (navRef.current && Math.abs(distance) >= THRESHOLD) {
+          navRef.current.move(-distance);
+          lastEvent = currentEvent;
+          changed = true;
+        }
+
+        currentEvent.preventDefault();
+      }
+    },
+    [clearNavigate, scheduleNavigate]
+  );
 
   useEffect(() => {
     const node = elRef.current;
@@ -113,7 +123,7 @@ export function TopNavigation({ tournaments, locale, current }) {
 
   return (
     <div ref={elRef} className="cursor-grab">
-      <YearsNavigation years={years} current={current} locale={locale} ref={navRef}/>
+      <YearsNavigation years={years} current={current} locale={locale} ref={navRef} />
     </div>
   );
 }

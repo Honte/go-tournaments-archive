@@ -13,16 +13,14 @@ const inter = Inter({ subsets: ['latin'] });
 export async function generateMetadata(props) {
   const params = await props.params;
 
-  const {
-    locale
-  } = params;
+  const { locale } = params;
 
   const translations = await loadTranslations(locale);
   const t = getTranslator(translations);
 
   return {
     title: t('site.name'),
-    description: t('site.description')
+    description: t('site.description'),
   };
 }
 
@@ -36,15 +34,13 @@ export default async function RootLayout({ params, children }) {
 
   return (
     <html lang={locale} className="h-full bg-pgc-light" style={{ scrollbarGutter: 'stable' }}>
-    <body className={`${inter.className} h-full flex flex-col text-pgc-dark`}>
-    <LocaleNavigation locale={locale}/>
-    <Header translations={translations}/>
-    <main className="flex-1 container max-w-(--breakpoint-2xl) mx-auto p-4">
-      {children}
-    </main>
-    <Footer translations={translations}/>
-    <Client rawTranslations={JSON.stringify(translations)}/>
-    </body>
+      <body className={`${inter.className} h-full flex flex-col text-pgc-dark`}>
+        <LocaleNavigation locale={locale} />
+        <Header translations={translations} />
+        <main className="flex-1 container max-w-(--breakpoint-2xl) mx-auto p-4">{children}</main>
+        <Footer translations={translations} />
+        <Client rawTranslations={JSON.stringify(translations)} />
+      </body>
     </html>
   );
 }

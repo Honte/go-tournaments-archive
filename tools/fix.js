@@ -15,7 +15,7 @@ for (const file of files) {
   }
 
   if (warnAboutMissingPlayers(sgf)) {
-    console.log(`Missing players: ${file}`)
+    console.log(`Missing players: ${file}`);
   }
 
   if (fixed) {
@@ -48,7 +48,7 @@ function fixPlayerRanks(sgf) {
 function warnAboutMissingPlayers(sgf) {
   const [root] = sgf;
 
-  return (!root.data.PB || !root.data.PW)
+  return !root.data.PB || !root.data.PW;
 }
 
 console.log(`Fixed ${toFix} files; ${noFix} were not touched`);

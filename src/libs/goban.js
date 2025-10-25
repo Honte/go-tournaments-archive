@@ -8,10 +8,12 @@ export function sgfToBoard(sgf) {
   let board = Board.fromDimensions(sizeMatch ? Number(sizeMatch.groups.size) : 19);
 
   // assume there's no variations!
-  for (const { groups: { color, position } } of iterateMatches(sgf, MOVE_REGEX)) {
+  for (const {
+    groups: { color, position },
+  } of iterateMatches(sgf, MOVE_REGEX)) {
     const [a, b] = position.split('');
-    const x = (a.charCodeAt(0) - 97);
-    const y = (b.charCodeAt(0) - 97);
+    const x = a.charCodeAt(0) - 97;
+    const y = b.charCodeAt(0) - 97;
 
     board = board.makeMove(color === 'W' ? -1 : 1, [x, y]);
   }
@@ -23,11 +25,7 @@ export function* iterateStones(board) {
   for (const [y, row] of board.signMap.entries()) {
     for (const [x, color] of row.entries()) {
       if (color !== 0) {
-        yield [
-          x,
-          y,
-          color
-        ];
+        yield [x, y, color];
       }
     }
   }

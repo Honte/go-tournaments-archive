@@ -10,7 +10,7 @@ import { parseGames } from '@/data/games';
 
 export async function loadTournaments() {
   const files = await fg.glob('./public/data/*.yml');
-  const parsePlayers = createPlayersHandler()
+  const parsePlayers = createPlayersHandler();
   const tournaments = [];
 
   for (const file of files) {
@@ -18,7 +18,7 @@ export async function loadTournaments() {
     const json = parse(content);
     const year = Number(path.parse(file).name);
     const games = {};
-    const dates = []
+    const dates = [];
     const stages = [];
 
     const players = parsePlayers(json.players);
@@ -26,10 +26,10 @@ export async function loadTournaments() {
     for (const stage of json.stages) {
       const target = {
         ...stage,
-        date: parseDates(stage.date)
+        date: parseDates(stage.date),
       };
 
-      dates.push(...target.date)
+      dates.push(...target.date);
       stages.push(target);
 
       switch (stage.type) {
@@ -39,12 +39,12 @@ export async function loadTournaments() {
           break;
         case 'ladder-table':
           target.rounds = stage.rounds.map((round) => parseGames(games, round));
-          target.playoffs = stage.playoffs ? parseGames(games, stage.playoffs) : []
+          target.playoffs = stage.playoffs ? parseGames(games, stage.playoffs) : [];
           target.table = createLadderTable(target, games);
           break;
         case 'final':
           target.games = parseGames(games, stage.games);
-          target.table = createFinalTable(target, games)
+          target.table = createFinalTable(target, games);
           break;
         case 'round-robin-table':
           target.games = parseGames(games, stage.games);
@@ -62,13 +62,12 @@ export async function loadTournaments() {
       year,
       games,
       players,
-      stages
+      stages,
     });
   }
 
   return tournaments;
 }
-
 
 function parseDates(date) {
   if (Array.isArray(date)) {
@@ -78,25 +77,25 @@ function parseDates(date) {
   const [start, end] = date.split(' - ');
 
   if (!end) {
-    return [{ start, end: start }]
+    return [{ start, end: start }];
   }
 
-  return [{ start, end }]
+  return [{ start, end }];
 }
 
 function getDateRange(dates) {
   const all = dates
     .reduce((list, { start, end }) => {
-      list.push([start, +new Date(start)])
-      list.push([end, +new Date(end)])
+      list.push([start, +new Date(start)]);
+      list.push([end, +new Date(end)]);
       return list;
     }, [])
-    .sort((a,b) => b[1] - b[0])
+    .sort((a, b) => b[1] - b[0]);
 
   return {
     start: all[0][0],
-    end: all[all.length - 1][0]
-  }
+    end: all[all.length - 1][0],
+  };
 }
 
 function createFinalTable(stage, games) {
@@ -126,29 +125,27 @@ function createFinalTable(stage, games) {
     }
   }
 
-
-
   const result = players[home].wins > players[away].wins ? [home, away] : [away, home];
 
   return result.map((p, index) => ({
     ...players[p],
     place: index + 1,
-  }))
+  }));
 
   function addGame(player, opponent, game) {
     players[player.id] ||= {
       id: player.id,
       place: 0,
       games: [],
-      wins: 0
+      wins: 0,
     };
 
     players[player.id].wins += Number(player.won);
     players[player.id].games.push({
       opponent,
       won: player.won,
-      game
-    })
+      game,
+    });
   }
 }
 
@@ -157,10 +154,7 @@ function* iterateGames(games, playerA, playerB) {
     const game = games[id];
     const [a, b] = game.players;
 
-    if (
-      (a.id === playerA && b.id === playerB) ||
-      (a.id === playerB && b.id === playerA)
-    ) {
+    if ((a.id === playerA && b.id === playerB) || (a.id === playerB && b.id === playerA)) {
       yield game;
     }
   }

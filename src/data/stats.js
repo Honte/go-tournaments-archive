@@ -7,10 +7,10 @@ export function calculateStats(tournaments) {
   let white = 0;
   let resign = 0;
   let timeout = 0;
-  let sgfs = 0
+  let sgfs = 0;
   let analysis = 0;
   let streams = 0;
-  let relays = 0
+  let relays = 0;
 
   upsertPlayer('BYE');
 
@@ -18,10 +18,10 @@ export function calculateStats(tournaments) {
     const { year, players: tournamentPlayers, stages, top, games: tournamentGames } = tournament;
 
     const tournamentPlayersMap = {
-      BYE: players.BYE
+      BYE: players.BYE,
     };
     for (const pid in tournamentPlayers) {
-      const player = upsertPlayer(tournamentPlayers[pid])
+      const player = upsertPlayer(tournamentPlayers[pid]);
 
       tournamentPlayersMap[pid] = player;
       player.years.push(year);
@@ -34,11 +34,11 @@ export function calculateStats(tournaments) {
 
         for (const game of player.games) {
           if (game) {
-            won += Number(game.won)
+            won += Number(game.won);
             playerGames.push({
               ...game,
-              opponent: tournamentPlayersMap[game.opponent].id
-            })
+              opponent: tournamentPlayersMap[game.opponent].id,
+            });
           }
         }
 
@@ -48,8 +48,8 @@ export function calculateStats(tournaments) {
           place: player.place,
           games: playerGames,
           won,
-          rank: tournamentPlayers[player.id].rank
-        })
+          rank: tournamentPlayers[player.id].rank,
+        });
       }
     }
 
@@ -71,11 +71,11 @@ export function calculateStats(tournaments) {
       playedGames++;
 
       if (game.result?.startsWith('B')) {
-        black++
+        black++;
       }
 
       if (game.result?.startsWith('W')) {
-        white++
+        white++;
       }
 
       if (game.result?.includes('R')) {
@@ -108,7 +108,7 @@ export function calculateStats(tournaments) {
     const player = players[id];
     const [gold, silver, bronze] = player.medals;
 
-    player.score = gold.length * 10_000 + silver.length * 100 + bronze.length
+    player.score = gold.length * 10_000 + silver.length * 100 + bronze.length;
     player.totalGames = player.results.reduce((total, r) => total + r.games.length, 0);
     player.totalWon = player.results.reduce((total, r) => total + r.won, 0);
   }
@@ -128,18 +128,17 @@ export function calculateStats(tournaments) {
     winners: Object.values(players)
       .filter((p) => p.score > 0)
       .sort((a, b) => b.score - a.score),
-  }
+  };
 
   function upsertPlayer(player) {
     const id = player?.id || player;
 
-    return players[id] ||= {
+    return (players[id] ||= {
       id,
-      medals: [[],[],[]],
+      medals: [[], [], []],
       name: player?.name,
       years: [],
-      results: []
-    }
+      results: [],
+    });
   }
 }
-

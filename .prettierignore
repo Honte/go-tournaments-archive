@@ -1,0 +1,6 @@
+.idea
+.next
+out
+node_modules
+public/data
+public/sgf

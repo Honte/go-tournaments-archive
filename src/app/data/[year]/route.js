@@ -23,6 +23,6 @@ export async function generateStaticParams() {
   const tournaments = await getTournaments();
 
   return tournaments.map((tournament) => ({
-    year: `${tournament.year}.json`
+    year: `${tournament.year}.json`,
   }));
 }

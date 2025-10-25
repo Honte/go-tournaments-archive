@@ -17,7 +17,7 @@ export function GamesList({ tournament, translations, sgfs }) {
           list.push({
             stage: name,
             name: t('table.round', index + 1),
-            games: round
+            games: round,
           });
         }
 
@@ -25,7 +25,7 @@ export function GamesList({ tournament, translations, sgfs }) {
           list.push({
             stage: name,
             name: t('table.playoffs'),
-            games: stage.playoffs
+            games: stage.playoffs,
           });
         }
 
@@ -34,7 +34,7 @@ export function GamesList({ tournament, translations, sgfs }) {
       case 'final':
         list.push({
           name,
-          games: stage.games
+          games: stage.games,
         });
         break;
       default:
@@ -50,17 +50,20 @@ export function GamesList({ tournament, translations, sgfs }) {
       {list.map((list, index) => (
         <div key={index} className="my-5">
           <h4 className="text-l font-bold border-b-pgc-dark border-b">
-            {stages.length > 1 && list.stage ? <>{list.stage} &ndash; </> : ''}{list.name}
+            {stages.length > 1 && list.stage ? <>{list.stage} &ndash; </> : ''}
+            {list.name}
           </h4>
           <div className="max-md:flex max-md:flex-col md:grid md:grid-cols-2 gap-4 py-2 xl:py-4">
-            {list.games.map((game) => <Game
-              className="w-full"
-              key={game}
-              game={games[game]}
-              translations={translations}
-              players={players}
-              wide={true}
-            />)}
+            {list.games.map((game) => (
+              <Game
+                className="w-full"
+                key={game}
+                game={games[game]}
+                translations={translations}
+                players={players}
+                wide={true}
+              />
+            ))}
           </div>
         </div>
       ))}

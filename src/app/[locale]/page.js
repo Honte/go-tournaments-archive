@@ -8,7 +8,7 @@ import { Banner } from '@/components/Banner';
 import { getTranslator } from '@/i18n/translator';
 
 export default async function Home({ params }) {
-  const { locale } = await params
+  const { locale } = await params;
   const translations = await loadTranslations(locale);
   const tournaments = (await getTournaments()).toSorted((a, b) => b.id - a.id);
   const stats = await getStats();
@@ -24,11 +24,11 @@ export default async function Home({ params }) {
           title={t('currentEdition.title')}
           subtitle={t('currentEdition.subtitle')}
         />
-        <Winners translations={translations} tournaments={tournaments}/>
+        <Winners translations={translations} tournaments={tournaments} />
       </div>
-      <Medalists translations={translations} stats={stats}/>
-      <Attendants translations={translations} stats={stats}/>
-      <TotalStats translations={translations} stats={stats}/>
+      <Medalists translations={translations} stats={stats} />
+      <Attendants translations={translations} stats={stats} />
+      <TotalStats translations={translations} stats={stats} />
     </div>
   );
 }

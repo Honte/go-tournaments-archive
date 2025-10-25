@@ -16,7 +16,7 @@ export function getTranslator(translations, options) {
     let translation = dict;
 
     for (const step of msg.split('.')) {
-      translation = translation?.[step]
+      translation = translation?.[step];
     }
 
     if (typeof translation === 'object') {
@@ -33,10 +33,10 @@ export function getTranslator(translations, options) {
       return undefined;
     }
 
-    return replace(translation, ...params)
-  }
+    return replace(translation, ...params);
+  };
 }
 
 function replace(msg, ...params) {
-  return msg.replaceAll(/%\{(\d+)}/g, (match, index) => params[index])
+  return msg.replaceAll(/%\{(\d+)}/g, (match, index) => params[index]);
 }

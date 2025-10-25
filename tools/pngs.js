@@ -5,11 +5,11 @@ import { readFile, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { generateSvg } from './svg';
 
-const SIZE = 512
+const SIZE = 512;
 
 const tournaments = await loadTournaments();
 const converter = await createConverter({
-  launch: { executablePath }
+  launch: { executablePath },
 });
 
 await generatePngs();
@@ -22,9 +22,7 @@ async function generatePngs() {
       const game = tournament.games[id];
 
       if (game?.props?.sgf) {
-        const sgf = game.props.sgf
-          .replace(process.env.SGF_URL_PREFIX, '')
-          .replace(`${tournament.year}/`, '');
+        const sgf = game.props.sgf.replace(process.env.SGF_URL_PREFIX, '').replace(`${tournament.year}/`, '');
 
         await generatePng(`./public/sgf/${tournament.year}/${sgf}`);
       }
@@ -44,7 +42,7 @@ async function generatePng(file) {
   const svg = await (existsSync(targetSvg) ? readFile(targetSvg) : generateSvg(file));
   const png = await converter.convert(svg, {
     width: SIZE,
-    height: SIZE
+    height: SIZE,
   });
 
   await writeFile(targetPng, png);
