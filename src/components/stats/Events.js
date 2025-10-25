@@ -1,12 +1,12 @@
 'use client';
 
-import { getTranslator } from '@/i18n/translator';
-import { H2 } from '@/components/ui/H2';
+import { useMemo } from 'react';
 import { YearLink } from '@/components/YearLink';
 import { StatsTable } from '@/components/table/StatsTable';
+import { H2 } from '@/components/ui/H2';
 import { getStageNameFromType } from '@/libs/stage';
 import { toPercentage } from '@/libs/table';
-import { useMemo } from 'react';
+import { getTranslator } from '@/i18n/translator';
 
 export function Events({ player, translations }) {
   const t = getTranslator(translations);

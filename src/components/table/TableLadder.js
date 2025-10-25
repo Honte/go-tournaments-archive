@@ -1,9 +1,9 @@
 'use client';
 
-import { getTranslator } from '@/i18n/translator';
 import { GameCell } from '@/components/GameCell';
 import { PlayerLink } from '@/components/ui/PlayerLink';
 import { withHighlighter } from '@/libs/higlighter';
+import { getTranslator } from '@/i18n/translator';
 
 export function TableLadder({ stage, players, games, translations }) {
   const t = getTranslator(translations);

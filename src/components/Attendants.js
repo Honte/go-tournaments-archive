@@ -1,7 +1,7 @@
-import { getTranslator } from '@/i18n/translator';
+import { FullStatsLink } from '@/components/FullStatsLink';
 import { H1 } from '@/components/ui/H1';
 import { PlayerLink } from '@/components/ui/PlayerLink';
-import { FullStatsLink } from '@/components/FullStatsLink';
+import { getTranslator } from '@/i18n/translator';
 
 export function Attendants({ stats, translations }) {
   const t = getTranslator(translations);

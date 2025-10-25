@@ -1,10 +1,10 @@
-import { loadTranslations, SUPPORTED_LOCALES } from '@/i18n/server';
 import { getStats } from '@/data';
 import { notFound } from 'next/navigation';
-import { getTranslator } from '@/i18n/translator';
 import { Achievements } from '@/components/stats/Achievements';
 import { Events } from '@/components/stats/Events';
 import { Opponents } from '@/components/stats/Opponents';
+import { SUPPORTED_LOCALES, loadTranslations } from '@/i18n/server';
+import { getTranslator } from '@/i18n/translator';
 
 export async function generateMetadata({ params }) {
   const { slug, locale } = await params;

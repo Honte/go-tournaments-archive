@@ -1,4 +1,5 @@
 import fs from 'fs/promises';
+
 export * from './consts';
 
 export async function loadTranslations(locale) {

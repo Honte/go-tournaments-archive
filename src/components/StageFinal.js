@@ -1,5 +1,5 @@
-import { getTranslator } from '@/i18n/translator';
 import { PlayerLink } from '@/components/ui/PlayerLink';
+import { getTranslator } from '@/i18n/translator';
 
 export function StageFinal({ stage, players, translations }) {
   const t = getTranslator(translations);

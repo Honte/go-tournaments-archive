@@ -1,5 +1,5 @@
-import { ExternalLink } from '@/components/ui/ExternalLink';
 import { Details } from '@/components/Details';
+import { ExternalLink } from '@/components/ui/ExternalLink';
 import { H2 } from '@/components/ui/H2';
 import { getTranslator } from '@/i18n/translator.js';
 

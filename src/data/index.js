@@ -1,5 +1,5 @@
-import { loadTournaments } from './load';
 import { calculateStats } from '@/data/stats';
+import { loadTournaments } from './load';
 
 const tournaments = await loadTournaments();
 const stats = calculateStats(tournaments);

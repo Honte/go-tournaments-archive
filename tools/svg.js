@@ -1,7 +1,7 @@
 import { existsSync } from 'node:fs';
 import { readFile } from 'node:fs/promises';
-import { iterateStones, sgfToBoard } from '@/components/goban/board';
 import { optimize } from 'svgo';
+import { iterateStones, sgfToBoard } from '@/libs/goban';
 
 const SIZE = 1024;
 const STONE_SCALE = 0.055;

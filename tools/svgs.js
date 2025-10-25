@@ -1,5 +1,5 @@
-import { loadTournaments } from '@/data/load';
 import { writeFile } from 'node:fs/promises';
+import { loadTournaments } from '@/data/load';
 import { generateSvg } from './svg';
 
 const tournaments = await loadTournaments();

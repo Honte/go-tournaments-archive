@@ -1,9 +1,9 @@
 'use client';
 
-import { getTranslator } from '@/i18n/translator';
 import { useMemo } from 'react';
 import { StatsTable } from '@/components/table/StatsTable';
 import { toPercentage, toPlayerLink } from '@/libs/table';
+import { getTranslator } from '@/i18n/translator';
 
 export function PlayerStats({ players, translations }) {
   const t = getTranslator(translations);

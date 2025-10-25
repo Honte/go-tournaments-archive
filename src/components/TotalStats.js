@@ -1,5 +1,5 @@
-import { getTranslator } from '@/i18n/translator';
 import { H1 } from '@/components/ui/H1';
+import { getTranslator } from '@/i18n/translator';
 
 export function TotalStats({ translations, stats }) {
   const t = getTranslator(translations);

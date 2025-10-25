@@ -1,8 +1,8 @@
-import { loadTournaments } from '@/data/load';
+import { existsSync } from 'node:fs';
+import { readFile, writeFile } from 'node:fs/promises';
 import { createConverter } from 'convert-svg-to-png';
 import { executablePath } from 'puppeteer';
-import { readFile, writeFile } from 'node:fs/promises';
-import { existsSync } from 'node:fs';
+import { loadTournaments } from '@/data/load';
 import { generateSvg } from './svg';
 
 const SIZE = 512;

@@ -1,15 +1,15 @@
-import { notFound } from 'next/navigation';
 import { getTournaments } from '@/data';
-import { TournamentDetails } from '@/components/TournamentDetails';
+import { notFound } from 'next/navigation';
 import { Awarded } from '@/components/Awarded';
-import { loadTranslations, SUPPORTED_LOCALES } from '@/i18n/server';
-import { getTranslator } from '@/i18n/translator';
-import { TopNavigation } from '@/components/navigation/TopNavigation';
-import { StageDetails } from '@/components/StageDetails';
-import { getStageName } from '@/libs/stage';
 import { GamesList } from '@/components/GamesList';
+import { StageDetails } from '@/components/StageDetails';
 import { StageResults } from '@/components/StageResults';
+import { TournamentDetails } from '@/components/TournamentDetails';
+import { TopNavigation } from '@/components/navigation/TopNavigation';
 import { loadSgfs } from '@/data/sgfs';
+import { getStageName } from '@/libs/stage';
+import { SUPPORTED_LOCALES, loadTranslations } from '@/i18n/server';
+import { getTranslator } from '@/i18n/translator';
 
 export async function generateMetadata({ params }) {
   const { year, locale } = await params;

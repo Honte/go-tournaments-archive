@@ -1,8 +1,8 @@
+import { clsx } from 'clsx';
 import { useMemo } from 'react';
-import { getTranslator } from '@/i18n/translator';
 import { Stone } from '@/components/Stone';
 import { ExternalButton } from '@/components/ui/ExternalButton';
-import { clsx } from 'clsx';
+import { getTranslator } from '@/i18n/translator';
 
 export function Game({ className, game, players, translations, wide }) {
   const t = getTranslator(translations);

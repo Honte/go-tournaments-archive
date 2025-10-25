@@ -1,11 +1,10 @@
 import { Inter } from 'next/font/google';
-import { loadTranslations, SUPPORTED_LOCALES } from '@/i18n/server';
-import { Header } from '@/components/Header';
-import { Footer } from '@/components/Footer';
 import { Client } from '@/components/Client';
+import { Footer } from '@/components/Footer';
+import { Header } from '@/components/Header';
 import { LocaleNavigation } from '@/components/navigation/LocaleNavigation';
+import { SUPPORTED_LOCALES, loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
-
 import '../globals.css';
 
 const inter = Inter({ subsets: ['latin'] });

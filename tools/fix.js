@@ -1,6 +1,6 @@
-import fg from 'fast-glob';
-import sgfParser from '@sabaki/sgf';
 import { writeFile } from 'node:fs/promises';
+import sgfParser from '@sabaki/sgf';
+import fg from 'fast-glob';
 
 const files = await fg.glob('./public/sgf/**/*.sgf');
 

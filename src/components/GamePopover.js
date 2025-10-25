@@ -1,8 +1,8 @@
 'use client';
 
-import { Game } from '@/components/Game';
 import { autoUpdate, useFloating } from '@floating-ui/react';
 import { useCallback, useEffect, useRef, useState } from 'react';
+import { Game } from '@/components/Game';
 
 export const SHOW_POPOVER_EVENT = 'show-game-popover';
 

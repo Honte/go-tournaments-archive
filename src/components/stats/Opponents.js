@@ -1,10 +1,10 @@
 'use client';
 
-import { getTranslator } from '@/i18n/translator';
-import { H2 } from '@/components/ui/H2';
 import { useMemo } from 'react';
 import { StatsTable } from '@/components/table/StatsTable';
+import { H2 } from '@/components/ui/H2';
 import { toPercentage, toPlayerLink } from '@/libs/table';
+import { getTranslator } from '@/i18n/translator';
 
 export function Opponents({ player, translations, players }) {
   const t = getTranslator(translations);

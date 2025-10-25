@@ -1,12 +1,12 @@
-import fs from 'fs/promises';
 import fg from 'fast-glob';
+import fs from 'fs/promises';
 import path from 'path';
 import { parse } from 'yaml';
+import { parseGames } from '@/data/games';
+import { createPlayersHandler } from '@/data/players';
 import { createTable } from '@/data/table';
 import { createLadderTable } from '@/data/tableLadder';
 import { createTableWithoutRounds } from '@/data/tableWithoutRounds';
-import { createPlayersHandler } from '@/data/players';
-import { parseGames } from '@/data/games';
 
 export async function loadTournaments() {
   const files = await fg.glob('./public/data/*.yml');

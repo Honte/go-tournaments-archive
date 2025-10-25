@@ -1,8 +1,8 @@
 'use client';
 
+import { clsx } from 'clsx';
 import Link from 'next/link';
 import { forwardRef, useImperativeHandle, useState } from 'react';
-import { clsx } from 'clsx';
 
 export const YearsNavigation = forwardRef(function YearsNavigation({ locale, years, current }, ref) {
   const min = years[0];

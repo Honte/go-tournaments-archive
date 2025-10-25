@@ -1,11 +1,11 @@
-import mysql from 'mysql2/promise';
-import { diffLines } from 'diff';
-import { stringify } from 'yaml';
-import { dirname, parse, join } from 'node:path';
+import { mkdir, writeFile } from 'node:fs/promises';
+import { dirname, join, parse } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { writeFile, mkdir } from 'node:fs/promises';
-import { parsePlayers } from '@/data/players';
+import { diffLines } from 'diff';
+import mysql from 'mysql2/promise';
+import { stringify } from 'yaml';
 import { parseGames } from '@/data/games';
+import { parsePlayers } from '@/data/players';
 import { createTable } from '@/data/table';
 import { cleanSgf } from './sgf';
 

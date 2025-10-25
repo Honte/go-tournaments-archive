@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import { getTranslator } from '@/i18n/translator';
 import { H1 } from '@/components/ui/H1';
 import { PlayerLink } from '@/components/ui/PlayerLink';
 import { jsxJoin } from '@/libs/join';
+import { getTranslator } from '@/i18n/translator';
 
 export function Winners({ tournaments, translations, className }) {
   const t = getTranslator(translations);

@@ -1,9 +1,9 @@
 'use client';
 
-import { YearsNavigation } from '@/components/navigation/YearsNavigation';
-import { useCallback, useEffect, useMemo, useRef } from 'react';
 import { throttle } from 'lodash-es';
 import { useRouter } from 'next/navigation';
+import { useCallback, useEffect, useMemo, useRef } from 'react';
+import { YearsNavigation } from '@/components/navigation/YearsNavigation';
 
 const CAPTURE = { capture: true };
 const CAPTURE_AND_NOT_PASSIVE = { capture: true, passive: false };
