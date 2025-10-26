@@ -1,8 +1,9 @@
 import { getTournaments } from '@/data';
 import { notFound } from 'next/navigation';
+import type { NextRequest } from 'next/server';
 
-export async function GET(request, props) {
-  const { params } = await props;
+export async function GET(request: NextRequest, props: { params: Promise<{ year: string }> }) {
+  const params = await props.params;
   const check = params?.year?.match(/^(\d{4})\.json(\?.+)?/);
 
   if (!check) {
