@@ -1,4 +1,4 @@
-export function getRankValue(rank) {
+export function getRankValue(rank: string) {
   const val = parseInt(rank, 10);
   const level = rank[rank.length - 1].toLowerCase();
 

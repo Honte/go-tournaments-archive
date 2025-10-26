@@ -10,8 +10,8 @@ export type Tournament = {
 };
 
 export type TournamentDateSpan = {
-  start: Date;
-  end: Date;
+  start: string;
+  end: string;
 };
 
 export type Stage = LeagueStage | LadderTableStage | FinalStage | RoundRobinTableStage;
@@ -33,11 +33,12 @@ export type BaseStage = {
   egd?: string;
   time?: string;
   komi?: string;
+  rules?: string;
 };
 
 export type LeagueStage = BaseStage & {
   type: 'league';
-  rounds: Game[][];
+  rounds: string[][];
   table: TableResult[];
   breakers?: Breaker[];
 };
@@ -111,6 +112,7 @@ export type Player = {
 };
 
 export type Game = {
+  id: string;
   players: [black: GamePlayer, white: GamePlayer];
   result: string;
   props: GameProps;

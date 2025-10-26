@@ -1,7 +1,8 @@
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
+import type { Tournament } from '@/schema/data';
 
-export async function loadSgfs(tournament) {
+export async function loadSgfs(tournament: Tournament): Promise<Record<string, string>> {
   if (!tournament.games) {
     return {};
   }

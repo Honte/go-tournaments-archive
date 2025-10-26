@@ -1,22 +1,23 @@
+import type { Game, GamePlayer, GameProps } from '@/schema/data';
+
 const GAME_REGEX =
   /(?<home>[a-z]+)-(?<away>[a-z]+) (?<winner>[a-z]+)(:(?<result>[?a-zA-Z!0-9+,.:]+))?( (?<props>.+))?/i;
 const GAME_RESULT_REGEX = /^(?<color>[BW])(\+(?<score>([RT?]|\d+([,.]5)?)))?$/i;
 
-export function parseGames(repository, games) {
+export function parseGames(repository: Record<string, Game>, games: string[]) {
   const ids = [];
 
   for (const string of games) {
-    const game = parseGame(string);
     const id = getId(repository);
 
-    repository[id] = game;
+    repository[id] = parseGame(string, id);
     ids.push(id);
   }
 
   return ids;
 }
 
-function parseGame(string) {
+function parseGame(string: string, id: string): Game {
   const parsed = string.match(GAME_REGEX);
 
   if (!parsed) {
@@ -28,12 +29,12 @@ function parseGame(string) {
   const homePlayer = {
     id: home,
     won: winner === home,
-  };
+  } as GamePlayer;
 
   const awayPlayer = {
     id: away,
     won: winner === away,
-  };
+  } as GamePlayer;
 
   const winnerPlayer = home === winner ? homePlayer : awayPlayer;
   const loserPlayer = home === winner ? awayPlayer : homePlayer;
@@ -61,9 +62,10 @@ function parseGame(string) {
   }
 
   return {
+    id,
     players: homePlayer.color === 'white' ? [awayPlayer, homePlayer] : [homePlayer, awayPlayer],
     result,
-    props: (props?.split(' ') || []).reduce((map, prop) => {
+    props: (props?.split(' ') || []).reduce<GameProps>((map, prop) => {
       const pos = prop.indexOf(':');
       const type = prop.slice(0, pos);
       let value = prop.slice(pos + 1);
@@ -81,8 +83,8 @@ function parseGame(string) {
   };
 }
 
-function getId(repository) {
-  let id;
+function getId(repository: Record<string, Game>) {
+  let id: string;
 
   do {
     id = Math.random().toString(36).slice(2);

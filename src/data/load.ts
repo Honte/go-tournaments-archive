@@ -1,3 +1,4 @@
+import type { FinalStage, Game, Tournament, TournamentDateSpan } from '@/schema/data';
 import fg from 'fast-glob';
 import fs from 'fs/promises';
 import path from 'path';
@@ -11,7 +12,7 @@ import { createTableWithoutRounds } from '@/data/tableWithoutRounds';
 export async function loadTournaments() {
   const files = await fg.glob('./public/data/*.yml');
   const parsePlayers = createPlayersHandler();
-  const tournaments = [];
+  const tournaments: Tournament[] = [];
 
   for (const file of files) {
     const content = await fs.readFile(file, 'utf-8');
@@ -34,11 +35,11 @@ export async function loadTournaments() {
 
       switch (stage.type) {
         case 'league':
-          target.rounds = stage.rounds.map((round) => parseGames(games, round));
+          target.rounds = stage.rounds.map((round: string[]) => parseGames(games, round));
           target.table = createTable(target, games, players);
           break;
         case 'ladder-table':
-          target.rounds = stage.rounds.map((round) => parseGames(games, round));
+          target.rounds = stage.rounds.map((round: string[]) => parseGames(games, round));
           target.playoffs = stage.playoffs ? parseGames(games, stage.playoffs) : [];
           target.table = createLadderTable(target, games);
           break;
@@ -69,7 +70,7 @@ export async function loadTournaments() {
   return tournaments;
 }
 
-function parseDates(date) {
+function parseDates(date: string): TournamentDateSpan[] {
   if (Array.isArray(date)) {
     return date.map(parseDates).flat();
   }
@@ -83,7 +84,7 @@ function parseDates(date) {
   return [{ start, end }];
 }
 
-function getDateRange(dates) {
+function getDateRange(dates: TournamentDateSpan[]) {
   const all = dates
     .reduce((list, { start, end }) => {
       list.push([start, +new Date(start)]);
@@ -98,7 +99,7 @@ function getDateRange(dates) {
   };
 }
 
-function createFinalTable(stage, games) {
+function createFinalTable(stage: FinalStage, games: Record<string, Game>) {
   const players = {};
 
   for (const id of stage.games) {
@@ -149,7 +150,7 @@ function createFinalTable(stage, games) {
   }
 }
 
-function* iterateGames(games, playerA, playerB) {
+function* iterateGames(games: Record<string, Game>, playerA: string, playerB: string): IterableIterator<Game> {
   for (const id in games) {
     const game = games[id];
     const [a, b] = game.players;
