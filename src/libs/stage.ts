@@ -1,6 +1,8 @@
+import type { Stage } from '@/schema/data';
+import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 
-export function getStageName(stage, translations) {
+export function getStageName(stage: Stage, translations: Translations) {
   if (stage.name) {
     return stage.name[translations.locale];
   }
@@ -8,7 +10,7 @@ export function getStageName(stage, translations) {
   return getStageNameFromType(stage.type, translations);
 }
 
-export function getStageNameFromType(type, translations) {
+export function getStageNameFromType(type: Stage['type'], translations: Translations) {
   const t = getTranslator(translations);
 
   switch (type) {

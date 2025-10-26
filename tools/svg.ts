@@ -10,7 +10,7 @@ const boardSvg = await readFile('./src/components/goban/board.svg');
 const whiteSvg = await readFile('./src/components/goban/white.svg');
 const blackSvg = await readFile('./src/components/goban/black.svg');
 
-export async function generateSvg(sgfFile) {
+export async function generateSvg(sgfFile: string) {
   if (!existsSync(sgfFile)) {
     console.log(`File ${sgfFile} not found`);
     return;

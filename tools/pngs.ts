@@ -30,7 +30,7 @@ async function generatePngs() {
   }
 }
 
-async function generatePng(file) {
+async function generatePng(file: string) {
   const targetPng = file.replace('.sgf', '.png');
   const targetSvg = file.replace('.sgf', '.svg');
 

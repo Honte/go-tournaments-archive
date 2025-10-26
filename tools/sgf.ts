@@ -1,11 +1,21 @@
 import sgfParser from '@sabaki/sgf';
 
-export function cleanSgf(content, rootParams) {
-  const rootNodes = sgfParser.parse(content);
+export type SgfNode = {
+  id: number;
+  parentId?: number;
+  data: Record<string, string[]>;
+  children: SgfNode[];
+};
 
-  const leafs = [];
-  const map = new Map();
-  let branches = rootNodes.map((node) => [node, 0]);
+type RootParamValue = string | number | null | ((prev?: string) => string | number | null);
+type RootParams = Record<string, RootParamValue>;
+
+export function cleanSgf(content: string, rootParams?: RootParams): string {
+  const rootNodes = sgfParser.parse(content) as SgfNode[];
+
+  const leafs: [SgfNode, number][] = [];
+  const map = new Map<number, SgfNode>();
+  let branches: [SgfNode, number][] = rootNodes.map((node) => [node, 0]);
 
   while (branches.length) {
     const [branch, depth] = branches.shift();
@@ -52,8 +62,8 @@ export function cleanSgf(content, rootParams) {
   return sgfParser.stringify(current);
 }
 
-function cleanNode(node, newChildren) {
-  const result = {
+function cleanNode(node: SgfNode, newChildren: SgfNode[]): SgfNode {
+  const result: SgfNode = {
     ...node,
     data: {
       ...node.data,

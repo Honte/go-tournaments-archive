@@ -3,11 +3,11 @@ import Board from '@sabaki/go-board';
 const SIZE_REGEX = /[\];]SZ\[(?<size>\d{1,2})]/;
 const MOVE_REGEX = /;(?<color>B|W)\[(?<position>[a-z]{2})]/g;
 
-export function sgfToBoard(sgf) {
+export function sgfToBoard(sgf: string) {
   const sizeMatch = sgf.match(SIZE_REGEX);
   let board = Board.fromDimensions(sizeMatch ? Number(sizeMatch.groups.size) : 19);
 
-  // assume there's no variations!
+  // assume there are no variations!
   for (const {
     groups: { color, position },
   } of iterateMatches(sgf, MOVE_REGEX)) {
@@ -21,7 +21,7 @@ export function sgfToBoard(sgf) {
   return board;
 }
 
-export function* iterateStones(board) {
+export function* iterateStones(board: Board) {
   for (const [y, row] of board.signMap.entries()) {
     for (const [x, color] of row.entries()) {
       if (color !== 0) {
@@ -31,8 +31,9 @@ export function* iterateStones(board) {
   }
 }
 
-function* iterateMatches(input, regex) {
-  let result;
+function* iterateMatches(input: string, regex: RegExp) {
+  let result: RegExpExecArray | null;
+
   do {
     result = regex.exec(input);
     if (result) {

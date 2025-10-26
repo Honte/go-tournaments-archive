@@ -8,11 +8,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "extract:mp-db": "tsx tools/extract.js",
-    "build:templates": "tsx tools/templates.js",
-    "build:svgs": "tsx tools/svgs.js",
-    "build:pngs": "tsx tools/pngs.js",
-    "fix:sgfs": "tsx tools/fix.js"
+    "extract:mp-db": "tsx tools/extract.ts",
+    "build:templates": "tsx tools/templates.ts",
+    "build:svgs": "tsx tools/svgs.ts",
+    "build:pngs": "tsx tools/pngs.ts",
+    "fix:sgfs": "tsx tools/fix.ts"
   },
   "dependencies": {
     "@floating-ui/react": "0.27.16",

@@ -1,9 +1,11 @@
-export function getTranslator(translations, options) {
+import { Translations } from '@/i18n/consts';
+
+export function getTranslator(translations: Translations, options?: { scope?: string; allowMissing?: boolean }) {
   let dict = translations;
 
   if (options?.scope) {
     for (const step of options.scope.split('.')) {
-      dict = dict?.[step];
+      dict = dict?.[step] as Translations;
     }
   }
 
@@ -11,12 +13,12 @@ export function getTranslator(translations, options) {
     throw new Error(`No translations${options?.scope ? ` at ${options.scope}` : ''}`);
   }
 
-  return function translate(strings, ...params) {
+  return function translate(strings: string | string[], ...params: string[]) {
     const msg = Array.isArray(strings) ? strings[0].trim() : strings;
     let translation = dict;
 
     for (const step of msg.split('.')) {
-      translation = translation?.[step];
+      translation = translation?.[step] as Translations;
     }
 
     if (typeof translation === 'object') {
@@ -37,6 +39,6 @@ export function getTranslator(translations, options) {
   };
 }
 
-function replace(msg, ...params) {
+function replace(msg: string, ...params: string[]) {
   return msg.replaceAll(/%\{(\d+)}/g, (match, index) => params[index]);
 }

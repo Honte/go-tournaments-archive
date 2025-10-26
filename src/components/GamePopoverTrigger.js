@@ -1,7 +1,7 @@
 'use client';
 
 import { useRef } from 'react';
-import { SHOW_POPOVER_EVENT } from '@/components/GamePopover.js';
+import { SHOW_POPOVER_EVENT } from '@/components/GamePopover';
 
 export function GamePopoverTrigger({ as = 'div', game, players, children, ...props }) {
   const Component = as;

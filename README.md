@@ -59,5 +59,5 @@ Supported game properties:
 
 ### Preparing a sgf
 
-Use `cleanSgf` function from `tools/sgf.js` to remove all comments and alternative paths from sgf file (the longest will
+Use `cleanSgf` function from `tools/sgf.ts` to remove all comments and alternative paths from sgf file (the longest will
 be kept).

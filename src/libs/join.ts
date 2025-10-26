@@ -1,4 +1,6 @@
-export function jsxJoin(array, separator) {
+import { ReactNode } from 'react';
+
+export function jsxJoin(array: ReactNode[], separator: ReactNode) {
   const output = [array[0]];
 
   for (let i = 1; i < array.length; i++) {

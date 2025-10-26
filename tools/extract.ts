@@ -1,6 +1,7 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import { dirname, join, parse } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import type { GameProps } from '@/schema/data';
 import { diffLines } from 'diff';
 import mysql from 'mysql2/promise';
 import { stringify } from 'yaml';
@@ -15,13 +16,59 @@ extractFromDatabase({
   host: 'localhost',
   user: 'user',
   password: 'pass',
-  port: '9002',
+  port: 9002,
   database: 'baza1094_mp',
   year: '2024',
 
   location: 'Warszawa',
   referee: 'Marcin Dzieżyc',
 });
+
+type ExtractOptions = {
+  host: string;
+  user: string;
+  password: string;
+  port: number;
+  database: string;
+  year: string | number;
+  location: string;
+  referee: string;
+  prefix?: string;
+  website?: string;
+  sgfPrefix?: string;
+  time?: string;
+  komi?: number;
+  breakers?: string[];
+  egd?: string;
+  outputSgfDir?: string;
+  outputYml?: string;
+};
+
+type SqlPlayer = {
+  id: number;
+  starting_position: number;
+  active: boolean;
+  first_name: string;
+  last_name: string;
+  ranking: string;
+};
+
+type SqlGame = {
+  id: number;
+  round: number;
+  game_order: number;
+  black_id: number;
+  white_id: number;
+  winner: number;
+  result: string;
+  sgf: string;
+  ogs: string;
+};
+
+type SqlRound = {
+  id: number;
+  time: string;
+};
 
 async function extractFromDatabase({
   host,
@@ -41,7 +88,7 @@ async function extractFromDatabase({
   egd,
   outputSgfDir = join(__dirname, `../public/sgf/${year}`),
   outputYml = join(__dirname, `../public/data/${year}.yml`),
-}) {
+}: ExtractOptions): Promise<void> {
   const connection = await mysql.createConnection({
     host,
     user,
@@ -50,12 +97,13 @@ async function extractFromDatabase({
     database,
   });
 
-  const [playersRows] = await connection.execute(`SELECT *
-                                                  FROM ${prefix}players`);
-  const [gamesRows] = await connection.execute(`SELECT *
-                                                FROM ${prefix}games`);
-  const [roundsRows] = await connection.execute(`SELECT *
-                                                 FROM ${prefix}rounds`);
+  // @ts-ignore
+  const [playersRows] = await connection.execute<SqlPlayer[]>(`SELECT * FROM ${prefix}players`);
+  // @ts-ignore
+  const [gamesRows] = await connection.execute<SqlGame[]>(`SELECT * FROM ${prefix}games`);
+  // @ts-ignore
+  const [roundsRows] = await connection.execute<SqlRound[]>(`SELECT * FROM ${prefix}rounds`);
+
   connection.end();
 
   const start = toIsoDate(roundsRows.at(0).time);
@@ -102,7 +150,7 @@ async function extractFromDatabase({
       const result = game.result.replace(',', '.');
       const color = winner === black ? 'B' : 'W';
 
-      const props = {};
+      const props: GameProps = {};
       const sgfs = [];
 
       if (game.sgf?.includes('baduk')) {

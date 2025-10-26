@@ -1,13 +1,14 @@
 import { writeFile } from 'node:fs/promises';
 import sgfParser from '@sabaki/sgf';
 import fg from 'fast-glob';
+import type { SgfNode } from './sgf';
 
 const files = await fg.glob('./public/sgf/**/*.sgf');
 
 let toFix = 0;
 let noFix = 0;
 for (const file of files) {
-  const sgf = sgfParser.parseFile(file);
+  const sgf = sgfParser.parseFile(file) as SgfNode[];
   let fixed = false;
 
   if (fixPlayerRanks(sgf)) {
@@ -26,7 +27,7 @@ for (const file of files) {
   }
 }
 
-function fixPlayerRanks(sgf) {
+function fixPlayerRanks(sgf: SgfNode[]): boolean {
   const [root] = sgf;
   let fixed = false;
 
@@ -45,7 +46,7 @@ function fixPlayerRanks(sgf) {
   return fixed;
 }
 
-function warnAboutMissingPlayers(sgf) {
+function warnAboutMissingPlayers(sgf: SgfNode[]): boolean {
   const [root] = sgf;
 
   return !root.data.PB || !root.data.PW;
