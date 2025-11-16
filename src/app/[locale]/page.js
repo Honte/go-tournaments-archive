@@ -1,4 +1,5 @@
 import { getStats, getTournaments } from '@/data';
+import { Activity } from 'react';
 import { Attendants } from '@/components/Attendants';
 import { Banner } from '@/components/Banner';
 import { Medalists } from '@/components/Medalists';
@@ -6,6 +7,8 @@ import { TotalStats } from '@/components/TotalStats';
 import { Winners } from '@/components/Winners';
 import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
+
+const SHOW_BANNER = false;
 
 export default async function Home({ params }) {
   const { locale } = await params;
@@ -18,12 +21,14 @@ export default async function Home({ params }) {
   return (
     <div className="xl:grid xl:grid-cols-4 xl:gap-4">
       <div className="xl:col-span-3 xl:row-span-5">
-        <Banner
-          href={t('currentEdition.website')}
-          tooltip={t('currentEdition.tooltip')}
-          title={t('currentEdition.title')}
-          subtitle={t('currentEdition.subtitle')}
-        />
+        <Activity mode={SHOW_BANNER ? 'visible' : 'hidden'}>
+          <Banner
+            href={t('currentEdition.website')}
+            tooltip={t('currentEdition.tooltip')}
+            title={t('currentEdition.title')}
+            subtitle={t('currentEdition.subtitle')}
+          />
+        </Activity>
         <Winners translations={translations} tournaments={tournaments} />
       </div>
       <Medalists translations={translations} stats={stats} />
