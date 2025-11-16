@@ -4,7 +4,11 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { SUPPORTED_LOCALES } from '@/i18n/consts';
 
-export function LocaleNavigation({ locale }) {
+export type LocaleNavigationProps = {
+  locale: string;
+};
+
+export function LocaleNavigation({ locale }: LocaleNavigationProps) {
   const pathname = usePathname();
   const regex = new RegExp(`^/${locale}`);
 

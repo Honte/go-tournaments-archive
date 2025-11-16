@@ -1,17 +1,31 @@
 'use client';
 
-import { clsx } from 'clsx';
+import clsx from 'clsx';
 import Link from 'next/link';
-import { forwardRef, useImperativeHandle, useState } from 'react';
+import { type RefObject, useImperativeHandle, useState } from 'react';
+import { between } from '@/libs/math';
 
-export const YearsNavigation = forwardRef(function YearsNavigation({ locale, years, current }, ref) {
+export type YearsNavigationHandle = {
+  move: (direction: number) => void;
+  select: (year: number) => void;
+  current: () => number;
+};
+
+export type YearsNavigationProps = {
+  locale: string;
+  years: number[];
+  current: number;
+  ref?: RefObject<YearsNavigationHandle>;
+};
+
+export function YearsNavigation({ locale, years, current, ref }: YearsNavigationProps) {
   const min = years[0];
   const max = years[years.length - 1];
   const [selected, setSelected] = useState(between(min, current, max));
 
   useImperativeHandle(
     ref,
-    () => ({
+    (): YearsNavigationHandle => ({
       move(direction) {
         setSelected(between(min, selected + Math.sign(direction), max));
       },
@@ -22,7 +36,7 @@ export const YearsNavigation = forwardRef(function YearsNavigation({ locale, yea
         return selected;
       },
     }),
-    [min, max, selected, setSelected]
+    [min, max, selected]
   );
 
   // Whole years needs to be displayed on the sides because if they were removed from DOM while touched, touch events would stop firing
@@ -64,8 +78,4 @@ export const YearsNavigation = forwardRef(function YearsNavigation({ locale, yea
       </div>
     </>
   );
-});
-
-function between(min, value, max) {
-  return Math.min(max, Math.max(min, value));
 }

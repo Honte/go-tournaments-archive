@@ -20,6 +20,7 @@
     "@sabaki/go-board": "1.4.3",
     "@tailwindcss/postcss": "4.1.17",
     "@tanstack/react-table": "8.21.3",
+    "@types/lodash-es": "^4.17.12",
     "clsx": "2.1.1",
     "convert-svg-to-png": "0.7.1",
     "fast-glob": "3.3.3",

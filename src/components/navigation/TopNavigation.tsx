@@ -1,47 +1,57 @@
 'use client';
 
+import type { Tournament } from '@/schema/data';
 import { throttle } from 'lodash-es';
 import { useRouter } from 'next/navigation';
 import { useCallback, useEffect, useMemo, useRef } from 'react';
-import { YearsNavigation } from '@/components/navigation/YearsNavigation';
+import { YearsNavigation, YearsNavigationHandle } from '@/components/navigation/YearsNavigation';
 
-const CAPTURE = { capture: true };
-const CAPTURE_AND_NOT_PASSIVE = { capture: true, passive: false };
+const CAPTURE: AddEventListenerOptions = { capture: true };
+const CAPTURE_AND_NOT_PASSIVE: AddEventListenerOptions = { capture: true, passive: false };
 const THRESHOLD = 10;
 const THROTTLE = 200;
 const DELAY = 500;
 
-export function TopNavigation({ tournaments, locale, current }) {
+export type TopNavigationProps = {
+  tournaments: Tournament[];
+  locale: string;
+  current: number;
+};
+
+export function TopNavigation({ tournaments, locale, current }: TopNavigationProps) {
   const router = useRouter();
-  const elRef = useRef(null);
-  const navRef = useRef(null);
-  const delayRef = useRef(null);
+  const elRef = useRef<HTMLDivElement | null>(null);
+  const navRef = useRef<YearsNavigationHandle | null>(null);
+  const delayRef = useRef<number | null>(null);
   const years = tournaments.map((t) => t.year);
 
   const clearNavigate = useCallback(() => {
-    if (delayRef.current) {
+    if (delayRef.current !== null) {
       clearTimeout(delayRef.current);
     }
-  }, [delayRef]);
+  }, []);
 
   const scheduleNavigate = useCallback(() => {
     clearNavigate();
-    delayRef.current = setTimeout(() => navRef.current && router.push(`/${locale}/${navRef.current.current()}`), DELAY);
+    delayRef.current = window.setTimeout(
+      () => navRef.current && router.push(`/${locale}/${navRef.current.current()}`),
+      DELAY
+    );
   }, [clearNavigate, locale, router]);
 
   const onWheel = useMemo(
     () =>
-      throttle((event) => {
+      throttle((event: WheelEvent) => {
         if (navRef.current) {
           navRef.current.move(event.deltaX);
           scheduleNavigate();
         }
       }, THROTTLE),
-    [navRef, scheduleNavigate]
+    [scheduleNavigate]
   );
 
   const onMouseDown = useMemo(
-    () => (startEvent) => {
+    () => (startEvent: MouseEvent) => {
       let lastEvent = startEvent;
       let changed = !!delayRef.current;
 
@@ -58,7 +68,7 @@ export function TopNavigation({ tournaments, locale, current }) {
         }
       }
 
-      function onMouseMove(currentEvent) {
+      function onMouseMove(currentEvent: MouseEvent) {
         const distance = currentEvent.clientX - lastEvent.clientX;
 
         if (navRef.current && Math.abs(distance) >= THRESHOLD) {
@@ -74,9 +84,9 @@ export function TopNavigation({ tournaments, locale, current }) {
   );
 
   const onTouchStart = useMemo(
-    () => (startEvent) => {
+    () => (startEvent: TouchEvent) => {
       let lastEvent = startEvent;
-      let changed = delayRef.current;
+      let changed = !!delayRef.current;
 
       clearNavigate();
       document.addEventListener('touchmove', onTouchMove, CAPTURE_AND_NOT_PASSIVE);
@@ -91,7 +101,7 @@ export function TopNavigation({ tournaments, locale, current }) {
         }
       }
 
-      function onTouchMove(currentEvent) {
+      function onTouchMove(currentEvent: TouchEvent) {
         const distance = currentEvent.targetTouches?.[0]?.clientX - lastEvent.targetTouches?.[0]?.clientX;
 
         if (navRef.current && Math.abs(distance) >= THRESHOLD) {
@@ -119,7 +129,7 @@ export function TopNavigation({ tournaments, locale, current }) {
       node.removeEventListener('mousedown', onMouseDown, CAPTURE);
       node.removeEventListener('touchstart', onTouchStart, CAPTURE_AND_NOT_PASSIVE);
     };
-  }, [elRef, delayRef, onWheel, onMouseDown, onTouchStart, clearNavigate]);
+  }, [onWheel, onMouseDown, onTouchStart, clearNavigate]);
 
   return (
     <div ref={elRef} className="cursor-grab">
