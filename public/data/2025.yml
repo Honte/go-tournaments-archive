@@ -1,0 +1,55 @@
+location: Gdańsk
+referee: Tomasz Dec
+website: https://mp.go.art.pl/2025
+players:
+  sf: Stanisław Frejlak 2p
+  cc: Cezary Czernecki 5d
+  ls: Leszek Sołdan 4d
+  kh: Koichiro Habu 5d
+  mm: Marcin Majka 4d
+  mw: Maksym Wałaszewski 3d
+  ml: Maciej Lubiński 1d
+  mk: Marcin Kosz 1d
+top:
+  - sf
+  - cc
+  - kh
+stages:
+  - type: league
+    date: 2025-11-08 - 2025-11-11
+    time: fischer 60m + 30s
+    komi: 6.5
+    breakers:
+      - wins
+      - sodos
+      - direct
+      - starting
+    rounds:
+      - - mm-kh kh:W+R yt:https://youtube.com/watch?v=iGdigfWJ2ec sgf:2025/2025-1-mmajka-khabu.sgf
+        - mw-ls mw:B+1.5 yt:https://www.youtube.com/watch?v=T11-0QPEyz4,https://www.youtube.com/watch?v=LI_rOpwIKb0
+        - ml-cc cc:W+41.5 yt:https://youtube.com/watch?v=YZ4SYUF-zNM sgf:2025/2025-1-mlubinski-cczernecki.sgf
+        - mk-sf sf:W+R yt:https://youtube.com/watch?v=Wnjv0jMY59k sgf:2025/2025-1-mkosz-sfrejlak.sgf
+      - - ls-mm mm:W+7.5 yt:https://www.youtube.com/live/RHr01aPKEUs,https://www.youtube.com/live/NNLF340yetk,https://www.youtube.com/live/q3oXeEaw474 sgf:2025/2025-2-lsoldan-mmajka.sgf
+        - kh-mw mw:W+11.5 yt:https://youtube.com/watch?v=QEqjgMH9bug sgf:2025/2025-2-khabu-mwalaszewski.sgf
+        - sf-ml sf:B+R yt:https://youtube.com/watch?v=p3JrtwKDDoM,https://www.youtube.com/watch?v=x0k4gfZ9lms sgf:2025/2025-2-sfrejlak-mlubinski.sgf
+        - cc-mk cc:B+R yt:https://youtube.com/watch?v=VN5WCYzjU4g sgf:2025/2025-2-cczernecki-mkosz.sgf
+      - - mm-cc cc:W+3.5 yt:https://youtube.com/watch?v=Lsw6dpMEuEc sgf:2025/2025-3-mmajka-cczernecki.sgf
+        - mw-sf sf:W+R yt:https://youtube.com/watch?v=Dc923sRL9Bs sgf:2025/2025-3-mwalaszewski-sfrejlak.sgf
+        - ml-kh kh:W+R yt:https://youtube.com/watch?v=L7eGXb44RI0 sgf:2025/2025-3-mlubinski-khabu.sgf
+        - mk-ls ls:W+R yt:https://youtube.com/watch?v=oZgKU_r8RGA sgf:2025/2025-3-mkosz-lsoldan.sgf
+      - - sf-mm sf:B+R yt:https://youtube.com/watch?v=x_5dXUZWITM sgf:2025/2025-4-sfrejlak-mmajka.sgf
+        - cc-mw cc:B+R yt:https://youtube.com/watch?v=5e0lM8Kv7AA sgf:2025/2025-4-cczernecki-mwalaszewski.sgf
+        - ls-ml ls:B+R yt:https://youtube.com/watch?v=eQa68ZkTvbg sgf:2025/2025-4-lsoldan-mlubinski.sgf ai:https://ai-sensei.com/game/QSdijjy2VLU6Y2jB3c9d83a4uoz1/ZYOF4RP33ZmznkgyNGb4
+        - kh-mk kh:B+R yt:https://youtube.com/watch?v=bi1c-MQgapg sgf:2025/2025-4-khabu-mkosz.sgf
+      - - ls-cc cc:W+R yt:https://youtube.com/watch?v=9AqmZgnrzoI sgf:2025/2025-5-lsoldan-cczernecki.sgf
+        - kh-sf sf:W+R yt:https://youtube.com/watch?v=bDUIPG6SsME sgf:2025/2025-5-khabu-sfrejlak.sgf
+        - ml-mw mw:W+7.5 yt:https://youtube.com/watch?v=SiUBR7yftoc sgf:2025/2025-5-mlubinski-mwalaszewski.sgf
+        - mk-mm mm:W+R yt:https://youtube.com/watch?v=WuI477AN4OQ sgf:2025/2025-5-mkosz-mmajka.sgf
+      - - sf-ls sf:B+R yt:https://youtube.com/watch?v=TJwAI8_dYUA sgf:2025/2025-6-sfrejlak-lsoldan.sgf
+        - cc-kh kh:W+R yt:https://youtube.com/watch?v=xYugGTw8wDI sgf:2025/2025-6-cczernecki-khabu.sgf
+        - mm-ml ml:W+R yt:https://youtube.com/watch?v=tPVWnXEL16I sgf:2025/2025-6-mmajka-mlubinski.sgf ai:https://ai-sensei.com/game/QSdijjy2VLU6Y2jB3c9d83a4uoz1/oy4VSKeQb91rJRAYaqKK
+        - mw-mk mw:B+15.5 yt:https://youtube.com/watch?v=qATTNM1BGQw sgf:2025/2025-6-mwalaszewski-mkosz.sgf
+      - - cc-sf sf:W+R yt:https://youtube.com/watch?v=9ZAdyxmqmZA sgf:2025/2025-7-cczernecki-sfrejlak.sgf
+        - kh-ls kh:B+R yt:https://youtube.com/watch?v=6EhWwE626sE sgf:2025/2025-7-khabu-lsoldan.sgf
+        - mw-mm mw:B+4.5 yt:https://youtube.com/watch?v=Nz80hgcTDvs sgf:2025/2025-7-mwalaszewski-mmajka.sgf
+        - mk-ml mk:B+R yt:https://youtube.com/watch?v=7aBAgSIQ0oc sgf:2025/2025-7-mkosz-mlubinski.sgf

@@ -18,10 +18,10 @@ extractFromDatabase({
   password: 'pass',
   port: 9002,
   database: 'baza1094_mp',
-  year: '2024',
+  year: '2025',
 
-  location: 'Warszawa',
-  referee: 'Marcin Dzieżyc',
+  location: 'Gdańsk',
+  referee: 'Tomasz Dec',
 });
 
 type ExtractOptions = {
@@ -288,7 +288,7 @@ async function getSgf({ sgfs, props, output }) {
 
     const content = await res.text();
     const gameResult = content
-      .match(/RE\[(.+)]/)?.[1]
+      .match(/RE\[(.*?)]/)?.[1]
       .trim?.()
       .replaceAll?.(',', '.')
       .toUpperCase?.();
