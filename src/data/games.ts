@@ -1,5 +1,6 @@
 import type { Game, GamePlayer, GameProps } from '@/schema/data';
 
+const ARRAY_PROPS = ['yt'];
 const GAME_REGEX =
   /(?<home>[a-z]+)-(?<away>[a-z]+) (?<winner>[a-z]+)(:(?<result>[?a-zA-Z!0-9+,.:]+))?( (?<props>.+))?/i;
 const GAME_RESULT_REGEX = /^(?<color>[BW])(\+(?<score>([RT?]|\d+([,.]5)?)))?$/i;
@@ -76,7 +77,11 @@ function parseGame(string: string, id: string): Game {
         map.svg = value.replace('.sgf', '.svg');
       }
 
-      map[type] = value;
+      if (ARRAY_PROPS.includes(type) && value.indexOf(',') > 0) {
+        map[type] = value.split(',');
+      } else {
+        map[type] = value;
+      }
 
       return map;
     }, {}),

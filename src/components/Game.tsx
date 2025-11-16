@@ -1,0 +1,120 @@
+import { type Game, type GamePlayer, type Player } from '@/schema/data';
+import { clsx } from 'clsx';
+import { useMemo } from 'react';
+import { Stone } from '@/components/Stone';
+import { ExternalButton } from '@/components/ui/ExternalButton';
+import type { Translations, Translator } from '@/i18n/consts';
+import { getTranslator } from '@/i18n/translator';
+
+type GameProps = {
+  className?: string;
+  game: Game;
+  players: Player;
+  translations: Translations;
+  wide?: boolean;
+};
+
+export function Game({ className, game, players, translations, wide }: GameProps) {
+  const t = getTranslator(translations);
+  const [home, away] = useMemo(() => game.players.map((p) => ({ ...players[p.id], ...p })), [game, players]);
+  const hasSgf = game.props.svg;
+  const hasProps = Object.keys(game.props).length > 0;
+
+  return (
+    <div
+      className={clsx(`flex ${className} gap-2 md:gap-4 md:items-center`, {
+        'max-xs:flex-wrap': wide,
+        'max-xs:flex-col': !wide,
+      })}
+    >
+      {hasSgf && (
+        <img src={game.props.svg} alt={t('game.preview', `${home.name} vs ${away.name}`)} className="size-20" />
+      )}
+      <div className="flex flex-col">
+        <div
+          className={clsx('flex justify-center', {
+            'flex-col': hasSgf || !wide,
+            'max-xs:flex-col gap-1 items-center': !hasSgf,
+          })}
+        >
+          <PlayerRow t={t} player={home} />
+          {!hasSgf && wide && <div className="max-xs:hidden">&ndash;</div>}
+          <PlayerRow t={t} player={away} />
+        </div>
+        {hasProps && (
+          <div className="flex gap-2 mt-1">
+            {game.props.sgf && (
+              <ExternalButton url={game.props.sgf} title={t('game.sgf')}>
+                SGF
+              </ExternalButton>
+            )}
+            {game.props.ogs && (
+              <ExternalButton url={game.props.ogs} title={t('game.ogs')}>
+                OGS
+              </ExternalButton>
+            )}
+            {game.props.ai && (
+              <ExternalButton url={game.props.ai} title={t('game.ai')}>
+                AI
+              </ExternalButton>
+            )}
+            <YouTubeLink value={game.props.yt} t={t} />
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function YouTubeLink({ value, t }: { value: string | string[]; t: Translator }) {
+  if (!value || !value.length) {
+    return null;
+  }
+
+  const values = Array.isArray(value) ? value : [value];
+
+  return (
+    <>
+      {values.map((value, index) => (
+        <ExternalButton key={value} url={value} title={t('game.yt')}>
+          YT{values.length > 1 ? `#${index + 1}` : ''}
+        </ExternalButton>
+      ))}
+    </>
+  );
+}
+
+function PlayerRow({ player, t }: { player: GamePlayer & Player; t: Translator }) {
+  const color = player.color ? <Stone color={player.color} className={`h-4 inline`} /> : '';
+  const name = player.id === 'BYE' ? 'BYE' : `${player.name} (${player.rank})`;
+
+  return (
+    <div className={`flex items-center gap-1 text-l ${player.won ? 'font-bold' : ''}`}>
+      {color} {name} {player.won && player.score ? <PlayerScore score={player.score} t={t} /> : ''}
+    </div>
+  );
+}
+
+function PlayerScore({ score, t }: { score: string; t: Translator }) {
+  if (score === '!') {
+    return `+ ${t('game.walkover')}`;
+  }
+
+  if (score === 'R') {
+    return (
+      <abbr className="cursor-help" title={t('game.resign')}>
+        +R
+      </abbr>
+    );
+  }
+
+  if (score === 'T') {
+    return (
+      <abbr className="cursor-help" title={t('game.time')}>
+        +T
+      </abbr>
+    );
+  }
+
+  return `+${score}`;
+}

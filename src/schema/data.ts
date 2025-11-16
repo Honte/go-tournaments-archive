@@ -127,7 +127,7 @@ export type GamePlayer = {
 
 export type GameProps = {
   ai?: string;
-  yt?: string;
+  yt?: string | string[];
   ogs?: string;
   sgf?: string;
   svg?: string;
