@@ -8,6 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "tsc": "tsc --noEmit",
     "extract:mp-db": "tsx tools/extract.ts",
     "build:templates": "tsx tools/templates.ts",
     "build:svgs": "tsx tools/svgs.ts",
