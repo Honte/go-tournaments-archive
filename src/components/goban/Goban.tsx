@@ -1,10 +1,26 @@
 import { useMemo } from 'react';
 import { iterateStones, sgfToBoard } from '@/libs/goban';
-import SVG_BLACK from './black.svg';
-import SVG_BOARD from './board.svg';
-import SVG_WHITE from './white.svg';
+import BLACK from './black.svg';
+import BOARD from './board.svg';
+import WHITE from './white.svg';
 
-export function Goban({ className, sgf }) {
+// NOTE: Next's `next/image-types/global` declares `module '*.svg'` as `any` to
+// avoid conflicts with SVGR. That causes imported SVGs to appear as `any` in the
+// IDE even though at runtime Next returns an object with `{ src, width, height }`.
+// To restore IntelliSense locally (without changing global declarations), we
+// cast the three imports to a strongly-typed shape used in this component only.
+type StaticSvg = { src: string; width: number; height: number };
+
+const SVG_BLACK = BLACK as unknown as StaticSvg;
+const SVG_BOARD = BOARD as unknown as StaticSvg;
+const SVG_WHITE = WHITE as unknown as StaticSvg;
+
+type GobanProps = {
+  className?: string;
+  sgf: string;
+};
+
+export function Goban({ className, sgf }: GobanProps) {
   const board = useMemo(() => sgfToBoard(sgf), [sgf]);
   const stepV = SVG_BOARD.width / (board.width + 1);
   const stepH = SVG_BOARD.height / (board.height + 1);
@@ -27,7 +43,7 @@ export function Goban({ className, sgf }) {
       return [];
     }
 
-    const result = [];
+    const result: [number, number, number][] = [];
     for (const [x, y, color] of iterateStones(board)) {
       result.push([(x + 1) * stepV - stepV / 2, (y + 1) * stepH - stepH / 2, color]);
     }
