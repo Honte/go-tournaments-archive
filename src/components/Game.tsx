@@ -9,7 +9,7 @@ import { getTranslator } from '@/i18n/translator';
 type GameProps = {
   className?: string;
   game: Game;
-  players: Player;
+  players: Record<string, Player>;
   translations: Translations;
   wide?: boolean;
 };
@@ -66,7 +66,7 @@ export function Game({ className, game, players, translations, wide }: GameProps
   );
 }
 
-function YouTubeLink({ value, t }: { value: string | string[]; t: Translator }) {
+function YouTubeLink({ value, t }: { value?: string | string[]; t: Translator }) {
   if (!value || !value.length) {
     return null;
   }

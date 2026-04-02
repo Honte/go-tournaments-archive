@@ -1,3 +1,5 @@
-export default function FakeLayoutToPreventNextSkipGeneratingStubs({ children }) {
+import type { PropsWithChildren } from 'react';
+
+export default function FakeLayoutToPreventNextSkipGeneratingStubs({ children }: PropsWithChildren) {
   return children;
 }
