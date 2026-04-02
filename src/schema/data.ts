@@ -109,6 +109,8 @@ export type Player = {
   id: string;
   name: string;
   rank: string;
+  country?: string;
+  egd?: string;
 };
 
 export type Game = {

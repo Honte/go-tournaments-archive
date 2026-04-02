@@ -1,7 +1,8 @@
 import type { Player } from '@/schema/data';
 import slugify from 'slugify';
 
-const PLAYER_REGEX = /^(?<name>[\p{Letter} -]+)( (?<rank>[0-9]{1,2}[dkp])?)?$/u;
+const PLAYER_REGEX =
+  /^(?<name>[\p{Letter} \-]+)(\s+(?<rank>[0-9]{1,2}[dkp])?)?(\s+\((?<country>[A-Z]{2})\))?(\s+#(?<egd>[0-9]+))?$/u;
 
 export function parsePlayers(json: Record<string, string>): Record<string, Player> {
   return createPlayersHandler()(json);
@@ -13,7 +14,7 @@ export function createPlayersHandler() {
   return fromJson;
 
   function fromJson(json: Record<string, string>): Record<string, Player> {
-    const players = {};
+    const players: Record<string, Player> = {};
 
     for (const id in json) {
       const details = json[id].match(PLAYER_REGEX);
@@ -22,10 +23,14 @@ export function createPlayersHandler() {
         throw new Error(`Could not parse player ${json[id]}`);
       }
 
+      const { name, rank, egd, country } = details.groups;
+
       players[id] = {
-        id: getPlayerId(details.groups.name),
-        name: details.groups.name,
-        rank: details.groups.rank,
+        id: getPlayerId(name),
+        name,
+        rank,
+        country,
+        egd,
       };
     }
 
