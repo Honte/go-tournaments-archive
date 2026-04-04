@@ -2,18 +2,25 @@ import { Game, LeagueStage, Player, Stage, TournamentDateSpan } from '@/schema/d
 import { InputStage } from '@/schema/input';
 import { createFinalTable } from '@/data/final';
 import { parseGames } from '@/data/games';
+import { loadH9Tournament } from '@/data/h9tournament';
 import { createTable } from '@/data/table';
 import { createLadderTable } from '@/data/tableLadder';
 import { createTableWithoutRounds } from '@/data/tableWithoutRounds';
 
-export function parseStage(
+export async function parseStage(
   stage: InputStage,
   playersMap: Record<string, Player>,
   gamesMap: Record<string, Game>
-): Stage {
+): Promise<Stage> {
   const date = parseDates(stage.date);
 
   switch (stage.type) {
+    case 'tournament':
+      return loadH9Tournament({
+        stage,
+        playersMap,
+        gamesMap,
+      });
     case 'league': {
       const rounds = stage.rounds.map((round: string[]) => parseGames(gamesMap, round));
 
@@ -76,6 +83,7 @@ export function parseStage(
       };
     }
     default:
+      // @ts-ignore
       throw new Error(`Unrecognized stage ${stage.type}`);
   }
 }

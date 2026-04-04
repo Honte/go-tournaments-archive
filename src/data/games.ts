@@ -10,7 +10,7 @@ export function parseGames(repository: Record<string, Game>, games: string[]) {
   const ids = [];
 
   for (const string of games) {
-    const id = getId(repository);
+    const id = getGameId(repository);
 
     repository[id] = parseGame(string, id);
     ids.push(id);
@@ -91,7 +91,7 @@ function parseGame(string: string, id: string): Game {
   };
 }
 
-function getId(repository: Record<string, Game>) {
+export function getGameId(repository: Record<string, Game>) {
   let id: string;
 
   do {

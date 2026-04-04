@@ -25,7 +25,7 @@ export async function loadTournaments() {
     const players = parsePlayers(json.players);
 
     for (const stageJson of json.stages) {
-      const stage = parseStage(stageJson, players, games);
+      const stage = await parseStage(stageJson, players, games);
 
       if (stage.date) {
         dates.push(...stage.date);

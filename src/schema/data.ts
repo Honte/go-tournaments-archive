@@ -123,7 +123,7 @@ export type Player = {
   name: string;
   rank: string;
   country?: string;
-  egd?: string;
+  egd?: number;
 };
 
 export type Game = {

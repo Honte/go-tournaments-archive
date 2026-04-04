@@ -39,7 +39,7 @@ export type InputTournamentStage = InputBaseStage & {
   type: 'tournament';
   file: string;
   sgfsDir?: string;
-  scoringColumns?: string[];
+  scoringColumns?: (Breaker | null)[];
 };
 
 export type InputStage =

@@ -18,7 +18,7 @@ export function createPlayersHandler() {
     const players: Record<string, Player> = {};
 
     if (!json) {
-      return players
+      return players;
     }
 
     for (const id in json) {
@@ -31,34 +31,38 @@ export function createPlayersHandler() {
       const { name, rank, egd, country = EVENT_CONFIG.defaultCountry } = details.groups!;
 
       players[id] = {
-        id: getPlayerId(name),
+        id: getPlayerId(name, playerIds),
         name,
         rank,
         country,
-        egd,
+        egd: Number(egd) ?? undefined,
       };
     }
 
     return players;
   }
+}
 
-  function getPlayerId(name: string) {
-    const parts = name
-      .toLowerCase()
-      .split(' ')
-      .map((name) => slugify(name));
+export function getPlayerId(name: string, playerIds: Record<string, string>) {
+  const parts = name
+    .toLowerCase()
+    .split(' ')
+    .map((name) => slugify(name));
 
-    const full = parts.join(' ');
-    const hash = parts.at(0)![0] + parts.at(-1);
+  const full = parts.join(' ');
+  const hash =
+    parts
+      .slice(0, -1)
+      .map((part) => part[0])
+      .join('') + parts.at(-1);
 
-    let id = hash;
-    let index = 1;
+  let id = hash;
+  let index = 1;
 
-    while (playerIds[id] && playerIds[id] !== full) {
-      id = `${hash}${++index}`;
-    }
-
-    playerIds[id] = full;
-    return id;
+  while (playerIds[id] && playerIds[id] !== full) {
+    id = `${hash}${++index}`;
   }
+
+  playerIds[id] = full;
+  return id;
 }
