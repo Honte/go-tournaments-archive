@@ -1,10 +1,29 @@
 Repository of [Polish Go Championships Archive](https://mp.go.art.pl)
 
+A static Next.js site (no server required) displaying historical Polish Go Championship tournament data from 1979 to the present. Supports Polish and English via locale-based routing (`/pl`, `/en`). Tournament data is stored as YAML files in `public/data/`.
+
+**Tech stack:** Next.js, React 19, TypeScript, Tailwind CSS 4, YAML data files, SGF game records.
+
+## Prerequisites
+
+- Node.js 18 or later
+- npm (included with Node.js)
+- MySQL client — only needed for `npm run extract:mp-db` (data import tool)
+
 ## Development
 
 1. Install dependencies: `npm install`
 2. Run the development server: `npm run dev`
 3. Open [http://localhost:3000](http://localhost:3000) to see the result.
+
+Other useful commands:
+
+```bash
+npm run tsc          # Type-check without emitting
+npm run lint         # Run ESLint
+npm run build        # Build static output to /out
+npm run start        # Serve the /out directory locally
+```
 
 ## Deployment
 
@@ -48,16 +67,82 @@ stages: # tournament can have multiple stages
         - id3-id4 id3:B+1.5
 ```
 
-### Game properties:
+### Player format
 
-Supported game properties:
+```yaml
+players:
+  id1: Player Name 5d               # name + rank
+  id2: Player Name 4d (JP)          # with country code in parentheses
+  id3: Player Name 3d |12345        # with EGD pin
+  id4: Player Name 2d (PL) |67890   # with both
+```
+
+Supported ranks: `Xk` (kyu), `Xd` (dan), `Xp` (professional), e.g. `5k`, `1d`, `2p`.
+
+### Stage types
+
+**`league`** — round-robin with tiebreakers; `rounds` is an array of rounds, each round is an array of game strings.
+
+**`ladder-table`** — Swiss-system ladder; requires an `order` field listing initial seeding and an optional `playoffs` list of games played after the main rounds.
+
+```yaml
+  - type: ladder-table
+    date: 1983-09-30 - 1983-10-02
+    order:
+      - id1
+      - id2
+      - id3,id4  # comma-separated means tied for a position
+    rounds:
+      - - id1-id2 id1:B+R
+        - id3-id4 id3:B+5.5
+    playoffs:
+      - id2-id3 id2:W+R
+```
+
+**`round-robin-table`** — all games listed flat (no round structure), sorted by score then rank. Supports an optional localized `name`.
+
+```yaml
+  - type: round-robin-table
+    name:
+      pl: Turniej o miejsca 5-11
+      en: Tournament for places 5-11
+    date: 1981-10-28 - 1981-10-30
+    games:
+      - id1-id2 id1:B+R
+      - id2-id3 id3:W+4.5
+```
+
+**`final`** — head-to-head final; `requiredWins` sets how many wins are needed to win the match; `includePrevious` (true/false) controls whether league results count toward the final.
+
+```yaml
+  - type: final
+    date: 1997-11-29
+    requiredWins: 2
+    includePrevious: false
+    games:
+      - id1-id2 id2:W+R
+      - id2-id1 id1:B+29.5
+```
+
+### Game properties
+
+Supported game properties appended to a game string:
 
 - `sgf` - path to sgf file relative to `public` directory, e.g. `sgf:sgf/2025/black-vs-white.sgf`
 - `ai` - link to AI analysis, e.g. `ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/G51DzNwBgA77fbZIiIxm`
 - `yt` - link to YouTube video, e.g. `yt:https://youtube.com/watch?v=FhK57HL7ijI`
 - `ogs` - link to OGS game, e.g. `ogs:https://online-go.com/review/772950`
 
-### Preparing a sgf
+### Preparing an SGF
 
 Use `cleanSgf` function from `tools/sgf.ts` to remove all comments and alternative paths from sgf file (the longest will
 be kept).
+
+After adding SGF files, run the following to fix property names and generate board preview images:
+
+```bash
+npm run fix:sgfs      # Fix SGF property names (e.g. RB→BR, RW→WR)
+npm run build:svgs    # Generate SVG board previews from SGF files
+```
+
+SVG previews appear as board thumbnails on the tournament page.

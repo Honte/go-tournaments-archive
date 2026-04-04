@@ -2,7 +2,7 @@ import type { Player } from '@/schema/data';
 import slugify from 'slugify';
 
 const PLAYER_REGEX =
-  /^(?<name>[\p{Letter} \-]+)(\s+(?<rank>[0-9]{1,2}[dkp])?)?(\s+\((?<country>[A-Z]{2})\))?(\s+#(?<egd>[0-9]+))?$/u;
+  /^(?<name>[\p{Letter} \-]+)(\s+(?<rank>[0-9]{1,2}[dkp])?)?(\s+\((?<country>[A-Z]{2})\))?(\s+|(?<egd>[0-9]+))?$/u;
 
 export function parsePlayers(json: Record<string, string>): Record<string, Player> {
   return createPlayersHandler()(json);
