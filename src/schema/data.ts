@@ -3,8 +3,8 @@ export type Tournament = {
   year: number;
   location: string;
   country: string;
-  start: string;
-  end: string;
+  start?: string;
+  end?: string;
   website?: string;
   referee?: string;
   games: Record<string, Game>;
