@@ -22,7 +22,7 @@ export type H9Player = {
   rank: string;
   country: string;
   club: string;
-  games: H9Game[];
+  games: (null | H9Game)[];
   scores: string[];
   egd?: number;
 };
@@ -40,11 +40,15 @@ export function loadH9(input: string) {
   const table = [];
 
   for (const line of input.split(/\r?\n/)) {
+    if (!line.trim().length) {
+      continue;
+    }
+
     if (line.startsWith(';')) {
       const match = PROPERTY_REGEX.exec(line);
 
       if (match) {
-        const { key, value } = match.groups;
+        const { key, value } = match.groups!;
 
         properties[key] = value;
       } else if (line.trim() !== ';' && line.trim() !== ';.') {
@@ -64,16 +68,16 @@ export function parseH9(input: string): H9Tournament {
 
   for (const player of table) {
     const [place, surname, name, rank, country, club, ...columns] = player;
-    const games: H9Game[] = [];
+    const games: H9Player['games'] = [];
     const scores: string[] = [];
-    const egd = columns[columns.length - 1].startsWith('|') ? Number(columns.pop().slice(1)) : undefined;
+    const egd = columns[columns.length - 1].startsWith('|') ? Number(columns.pop()!.slice(1)) : undefined;
 
     let foundGameResult = false;
     for (const col of columns) {
       const match = GAME_REGEX.exec(col);
 
       if (match) {
-        const { opponent, result, color, handicap } = match.groups;
+        const { opponent, result, color, handicap } = match.groups!;
 
         games.push({
           color: color ? (color === 'w' ? 'white' : 'black') : undefined,
@@ -81,6 +85,9 @@ export function parseH9(input: string): H9Tournament {
           opponent: Number(opponent),
           result: result as H9Game['result'],
         });
+        foundGameResult = true;
+      } else if (col === '?') {
+        games.push(null);
         foundGameResult = true;
       } else if (!foundGameResult) {
         scores.push(col);
