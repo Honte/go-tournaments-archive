@@ -1,0 +1,14 @@
+website: https://leago.gg/event/wagc2025
+stages:
+  - type: tournament
+    file: 2025/wagc2025.txt
+    sgfsDir: 2025
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+      - null
+    breakers:
+      - wins
+      - sos
+      - sosos

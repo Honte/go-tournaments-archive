@@ -1,0 +1,36 @@
+; EV[1st World Amateur Go Championship]
+; PC[JP, Tokyo]
+; DT[1979-03-13,1979-03-17]
+; HA[h9]
+; KM[5.5]
+; CM[Shared Places 9-16,17-30]
+1	Nie Weiping	7d	CN	xxx	5	5	17+	9+	7+	4+	2+
+2	Chen Tsu-te	7d	CN	xxx	4	4	18+	10+	6+	3+	1-
+3	Chen Chai-jui	7d	CN	xxx	3	3	?	11+	8+	2-	4+
+4	Murakami Bunsho	7d	JP	xxx	3	3	19+	12+	5+	1-	3-
+5	Kung Shang-ming	7d	CN	xxx	4	4	20+	13+	4-	7+	6+
+6	Lee Yong-ho	6d	KR	xxx	3	3	21+	14+	2-	8+	5-
+7	Lim Sun-kun	6d	KR	xxx	3	3	22+	15+	1-	5-	8+
+8	Baek Kang-mean	5d	KR	xxx	2	2	23+	16+	3-	6-	7-
+9	Yasunaga Hajime	7d	JP	xxx	1	1	24+	1-	?	?	?
+10	Hubert Jerome	3d	FR	xxx	1	1	25+	2-	?	?	?
+11	Imamura Fumiaki	6d	JP	xxx	1	1	26+	3-	?	?	?
+12	Kippe Horst	4d	DE	xxx	1	1	27+	4-	?	?	?
+13	Schlemper Ronald	4d	NL	xxx	1	1	28+	5-	?	?	?
+14	Kim Kyung-wan	7d	US	xxx	1	1	29+	6-	?	?	?
+15	Selick Paul	5d	CA	xxx	0	0	?	7-	?	?	?
+16	Kang Shin-auk	6d	US	xxx	1	1	30+	8-	?	?	?
+17	Takamori Toshikatsu	5d	BR	xxx	0	0	1-	?	?	?	?
+18	Kikuchi Yasuro	7d	JP	xxx	0	0	2-	?	?	?	?
+19	Okazaki Shoji	5d	BR	xxx	0	0	4-	?	?	?	?
+20	Matsuhara Shigeo	6d	US	xxx	0	0	5-	?	?	?	?
+21	Kamekura Yoshiko	6d	JP	xxx	0	0	6-	?	?	?	?
+22	Wiltschek Helmut	5d	AT	xxx	0	0	7-	?	?	?	?
+23	Aguilar Fernando	5d	AR	xxx	0	0	8-	?	?	?	?
+24	Suc Lojze	4d	YU	xxx	0	0	9-	?	?	?	?
+25	Leiberman Daniel	1d	AR	xxx	0	0	10-	?	?	?	?
+26	Diamond Jon	6d	UK	xxx	0	0	11-	?	?	?	?
+27	Parmenter Graeme	1d	NZ	xxx	0	0	12-	?	?	?	?
+28	Narumi Naoshi	6d	JP	xxx	0	0	13-	?	?	?	?
+29	Hasibeder Helmut	5d	AT	xxx	0	0	14-	?	?	?	?
+30	Hahn Sang-dae	6d	AU	xxx	0	0	16-	?	?	?	?
