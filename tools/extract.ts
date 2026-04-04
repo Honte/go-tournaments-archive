@@ -1,3 +1,4 @@
+import EVENT from '@event';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { dirname, join, parse } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -12,6 +13,7 @@ import type { RootParams } from './sgf';
 import { cleanSgf } from './sgf';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
+const EVENT_DIR = join(__dirname, `../events/${EVENT}`);
 
 extractFromDatabase({
   host: 'localhost',
@@ -89,8 +91,8 @@ async function extractFromDatabase({
   komi = 6.5,
   breakers = ['wins', 'sodos', 'direct', 'starting'] as Breaker[],
   egd,
-  outputSgfDir = join(__dirname, `../public/sgf/${year}`),
-  outputYml = join(__dirname, `../public/data/${year}.yml`),
+  outputSgfDir = join(EVENT_DIR, `/sgf/${year}`),
+  outputYml = join(EVENT_DIR, `/data/${year}.yml`),
 }: ExtractOptions): Promise<void> {
   const connection = await mysql.createConnection({
     host,

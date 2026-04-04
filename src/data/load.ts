@@ -1,3 +1,4 @@
+import EVENT from '@event';
 import type { Tournament, TournamentDateSpan } from '@/schema/data';
 import fg from 'fast-glob';
 import fs from 'fs/promises';
@@ -11,7 +12,7 @@ import { createLadderTable } from '@/data/tableLadder';
 import { createTableWithoutRounds } from '@/data/tableWithoutRounds';
 
 export async function loadTournaments() {
-  const files = await fg.glob('./public/data/*.yml');
+  const files = await fg.glob(`./events/${EVENT}/data/*.yml`);
   const parsePlayers = createPlayersHandler();
   const tournaments: Tournament[] = [];
 

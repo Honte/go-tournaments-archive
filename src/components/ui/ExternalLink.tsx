@@ -11,7 +11,7 @@ export function ExternalLink({ url, children = url.replace(/^https?:\/\//, ''), 
   return (
     <a
       href={url}
-      className={twMerge(`underline text-pgc-primary hover:text-pgc-hover ${className || ''}`)}
+      className={twMerge(`underline text-event-primary hover:text-event-hover ${className || ''}`)}
       title={title}
     >
       {children}

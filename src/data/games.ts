@@ -1,4 +1,5 @@
 import type { Game, GamePlayer, GameProps, GamePropsArrayKey, GamePropsKey } from '@/schema/data';
+import EVENT_CONFIG from '@event/config';
 
 const ARRAY_PROPS: GamePropsArrayKey[] = ['yt'];
 const GAME_REGEX =
@@ -72,7 +73,9 @@ function parseGame(string: string, id: string): Game {
       let value = prop.slice(pos + 1);
 
       if (type === 'sgf') {
-        value = `${process.env.SGF_URL_PREFIX}${value}`;
+        const sgfPrefix = process.env.SGF_URL_PREFIX ?? EVENT_CONFIG.sgfUrlPrefix;
+
+        value = `${sgfPrefix}${value}`;
         map.png = value.replace('.sgf', '.png');
         map.svg = value.replace('.sgf', '.svg');
       }

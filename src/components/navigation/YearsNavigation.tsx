@@ -50,7 +50,7 @@ export function YearsNavigation({ locale, years, current, ref }: YearsNavigation
               <Link
                 key={year}
                 href={`/${locale}/${year}`}
-                className={clsx('text-pgc-primary hover:text-pgc-hover font-bold underline', {
+                className={clsx('text-event-primary hover:text-event-hover font-bold underline', {
                   hidden: year >= selected,
                 })}
                 draggable={false}
@@ -65,7 +65,7 @@ export function YearsNavigation({ locale, years, current, ref }: YearsNavigation
               <Link
                 key={year}
                 href={`/${locale}/${year}`}
-                className={clsx('text-pgc-primary hover:text-pgc-hover font-bold underline', {
+                className={clsx('text-event-primary hover:text-event-hover font-bold underline', {
                   hidden: year <= selected,
                 })}
                 draggable={false}

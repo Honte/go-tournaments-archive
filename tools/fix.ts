@@ -1,9 +1,9 @@
+import EVENT from '@event';
 import { writeFile } from 'node:fs/promises';
-import sgfParser from '@sabaki/sgf';
+import sgfParser, { SgfNode } from '@sabaki/sgf';
 import fg from 'fast-glob';
-import type { SgfNode } from './sgf';
 
-const files = await fg.glob('./public/sgf/**/*.sgf');
+const files = await fg.glob(`./events/${EVENT}/sgf/**/*.sgf`);
 
 let toFix = 0;
 let noFix = 0;

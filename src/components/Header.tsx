@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
-import { Logo } from '@/components/Logo';
+import { Logo } from '@event/Logo';
 
 type HeaderProps = {
   translations: Translations;
@@ -11,7 +11,7 @@ export async function Header({ translations }: HeaderProps) {
   const t = getTranslator(translations);
 
   return (
-    <header className="bg-pgc-dark text-pgc-light flex">
+    <header className="bg-event-dark text-event-light flex">
       <div className="container mx-auto max-w-(--breakpoint-2xl) flex h-16 items-center justify-center gap-3 md:gap-6 px-4 text-center">
         <Link
           href={`/${translations.locale}`}

@@ -15,7 +15,7 @@ export function PlayerLink({
   return (
     <Link
       href={`/${translations.locale}/stats/${player.id}`}
-      className="underline underline-offset-2 hover:text-pgc-hover"
+      className="underline underline-offset-2 hover:text-event-hover"
     >
       {children}
     </Link>

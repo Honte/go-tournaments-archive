@@ -7,7 +7,7 @@ type YearLinkProps = {
 
 export function YearLink({ year, locale }: YearLinkProps) {
   return (
-    <Link href={`/${locale}/${year}`} className="underline text-pgc-primary hover:text-pgc-hover">
+    <Link href={`/${locale}/${year}`} className="underline text-event-primary hover:text-event-hover">
       {year}
     </Link>
   );

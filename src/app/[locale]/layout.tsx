@@ -1,3 +1,4 @@
+import '@event/colors.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { PropsWithChildren } from 'react';
@@ -13,12 +14,12 @@ import '../globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 type RootLayoutProps = PropsWithChildren<{
-  params: Promise<{ locale: Locale }>;
+  params: Promise<{ locale: string }>;
 }>;
 
 export async function generateMetadata(props: RootLayoutProps): Promise<Metadata> {
   const { locale } = await props.params;
-  const translations = await loadTranslations(locale);
+  const translations = await loadTranslations(locale as Locale);
   const t = getTranslator(translations);
 
   return {
@@ -33,11 +34,11 @@ export async function generateStaticParams() {
 
 export default async function RootLayout({ params, children }: RootLayoutProps) {
   const { locale } = await params;
-  const translations = await loadTranslations(locale);
+  const translations = await loadTranslations(locale as Locale);
 
   return (
-    <html lang={locale} className="h-full bg-pgc-light" style={{ scrollbarGutter: 'stable' }}>
-      <body className={`${inter.className} h-full flex flex-col text-pgc-dark`}>
+    <html lang={locale} className="h-full bg-event-light" style={{ scrollbarGutter: 'stable' }}>
+      <body className={`${inter.className} h-full flex flex-col text-event-dark`}>
         <LocaleNavigation locale={locale} />
         <Header translations={translations} />
         <main className="flex-1 container max-w-(--breakpoint-2xl) mx-auto p-4">{children}</main>

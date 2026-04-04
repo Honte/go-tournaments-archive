@@ -10,7 +10,7 @@ export function Stone({ color, ...props }: StoneProps) {
         cx={12}
         cy={12}
         r={9}
-        className={`stroke-2 stroke-pgc-dark ${color === 'black' ? 'fill-pgc-dark' : 'fill-pgc-light'}`}
+        className={`stroke-2 stroke-event-dark ${color === 'black' ? 'fill-event-dark' : 'fill-event-light'}`}
       />
     </svg>
   );

@@ -1,3 +1,4 @@
+import EVENT from '@event';
 import { writeFile } from 'node:fs/promises';
 import { loadTournaments } from '@/data/load';
 import { generateSvg } from './svg';
@@ -15,7 +16,7 @@ async function generateSvgs() {
       if (game?.props?.sgf) {
         const sgf = game.props.sgf.replace(process.env.SGF_URL_PREFIX ?? '', '').replace(`${tournament.year}/`, '');
 
-        const source = `./public/sgf/${tournament.year}/${sgf}`;
+        const source = `./events/${EVENT}/sgf/${tournament.year}/${sgf}`;
         const target = source.replace('.sgf', '.svg');
         const svg = await generateSvg(source);
 

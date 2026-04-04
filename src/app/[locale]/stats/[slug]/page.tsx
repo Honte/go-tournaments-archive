@@ -11,14 +11,14 @@ import { Opponents } from '@/components/stats/Opponents';
 type PageProps = {
   params: Promise<{
     slug: string;
-    locale: string;
+    locale: Locale;
   }>;
 };
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug, locale } = await params;
 
-  const translations = await loadTranslations(locale as Locale);
+  const translations = await loadTranslations(locale);
   const stats = await getStats();
   const player = stats.players[slug];
   const t = getTranslator(translations);
@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function PlayerStatsPage({ params }: PageProps) {
   const { locale, slug } = await params;
 
-  const translations = await loadTranslations(locale as Locale);
+  const translations = await loadTranslations(locale);
   const stats = await getStats();
   const player = stats.players[slug];
 

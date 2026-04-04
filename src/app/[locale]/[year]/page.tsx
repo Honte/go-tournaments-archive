@@ -78,7 +78,7 @@ export default async function Edition(props: PageProps) {
 
       {stages.toReversed().map((stage) => (
         <div key={stage.type} className="my-4">
-          <h2 className="text-xl font-bold pb-1 my-2 border-b-pgc-dark border-b-2">
+          <h2 className="text-xl font-bold pb-1 my-2 border-b-event-dark border-b-2">
             {getStageName(stage, translations)}
           </h2>
           <StageDetails stage={stage} translations={translations} />

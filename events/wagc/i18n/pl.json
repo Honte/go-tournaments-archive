@@ -1,0 +1,122 @@
+{
+  "site": {
+    "name": "Archiwum Amatorskich Mistrzostw \u0346wiata w\u00A0Go",
+    "description": "Archiwum wynik\u00f3w wszystkich edycji amatorskich mistrzostw \u015bwiata w Go",
+    "yearDescription": "Wyniki mistrzostw z roku %{0}",
+    "allTimeStatsTitle": "Lista wszech czas\u00f3w",
+    "allTimeStatsDescription": "Lista wszech czas\u00f3w wszystkich uczestnik\u00f3w amatorskich mistrzostw \u015bwiata w Go",
+    "playerStatsTitle": "Wyniki gracza %{0}",
+    "playerStatsDescription": "Statystyki gracza %{0} we wszystkich rozegranych edycjach amatorskich mistrzostw \u015bwiata w Go"
+  },
+  "currentEdition": {
+    "website": "",
+    "title": "",
+    "subtitle": "",
+    "tooltip": ""
+  },
+  "navigation": {
+    "home": {
+      "anchor": "Strona g\u0142\u00f3wna",
+      "title": "Przejd\u017a na stron\u0119 g\u0142\u00f3wn\u0105"
+    }
+  },
+  "details": {
+    "header": "Informacje",
+    "location": "Miejsce",
+    "start": "Start",
+    "end": "Koniec",
+    "website": "Strona WWW",
+    "goToWebsite": "Przejd\u017a na stron\u0119 WAGC %{0}",
+    "referee": "S\u0119dzia",
+    "awarded": "Medali\u015bci"
+  },
+  "stage": {
+    "details": "Szczeg\u00f3\u0142y",
+    "league": "Liga",
+    "ladder": "Faza pucharowa",
+    "games": "Gry",
+    "egd": "Baza EGD",
+    "goToEGD": "Przejd\u017a na stron\u0119 turnieju w bazie European Go Database",
+    "breakers": "Breakery",
+    "komi": "Komi",
+    "time": "Czas",
+    "final": "Fina\u0142",
+    "requiredWins": "Fina\u0142 rozgrywany do %{0} wygranych partii.",
+    "includePreviousWins": "Bezpo\u015bredni pojedynek z poprzedniego etapu jest wliczany do wyniku."
+  },
+  "breakers": {
+    "wins": "Liczba zwyci\u0119stw",
+    "sos": "SOS",
+    "sodos": "SODOS",
+    "sosos": "SOSOS",
+    "direct": "Bezpo\u015bredni pojedynek",
+    "starting": "Pozycja startowa",
+    "rank": "Ranking",
+    "descriptions": {
+      "sos": "Sum of Opponents' Scores - Suma punkt\u00f3w zdobytych przez przeciwnik\u00f3w.",
+      "sodos": "Sum of Defeated Opponents' Scores - Suma punkt\u00f3w zdobytych przez pokonanych przeciwnik\u00f3w.",
+      "sosos": "Sum of Opponents' SOS - Suma SOS-\u00f3w zdobytych przez przeciwnik\u00f3w, czyli suma sum ich punkt\u00f3w."
+    }
+  },
+  "table": {
+    "year": "Rok",
+    "stage": "Etap",
+    "place": "Miejsce",
+    "opponent": "Przeciwnik",
+    "firstName": "Imi\u0119",
+    "lastName": "Nazwisko",
+    "name": "Zawodnik",
+    "rank": "Si\u0142a",
+    "round": "Runda %{0}",
+    "playoffs": "Play-Off",
+    "events": "Uczestnictwa",
+    "games": "Rozegrane gry",
+    "won": "Wygrane gry",
+    "lost": "Przegrane gry",
+    "wonPercent": "% wygranych"
+  },
+  "game": {
+    "resign": "Wygrana przez poddanie",
+    "time": "Wygrana przez czas",
+    "walkover": "Walkower",
+    "sgf": "Pobierz zapis partii w formacie SGF",
+    "ogs": "Zobacz relacje w serwisie Online Go Server",
+    "yt": "Zobacz relacj\u0119 wideo z partii",
+    "ai": "Zobacz analiz\u0119 AI",
+    "preview": "Widok planszy na koniec gry %{0}"
+  },
+  "winners": {
+    "title": "Medali\u015bci Amatorskich Mistrzostw \u015awiata",
+    "year": "Rok",
+    "first": "Mistrz",
+    "second": "2. miejsce",
+    "third": "3. miejsce"
+  },
+  "medals": {
+    "gold": "Z\u0142oto",
+    "silver": "Srebro",
+    "bronze": "Br\u0105z"
+  },
+  "stats": {
+    "full": "Zobacz pe\u0142ne statystyki",
+    "events": "Podsumowanie udzia\u0142\u00f3w",
+    "opponents": "Podsumowanie przeciwnik\u00f3w",
+    "medalists": "Medali\u015bci",
+    "attendants": "Top %{0} uczestnik\u00f3w",
+    "achievements": "Osi\u0105gni\u0119cia",
+    "total": {
+      "title": "Archiwum w liczbach",
+      "tournaments": "Wydarze\u0144",
+      "participants": "Uczestnik\u00f3w",
+      "games": "Gier",
+      "black": "% wygranych przez czarne",
+      "resigned": "Wygranych przez poddanie",
+      "timeout": "Wygranych przez czas",
+      "sgfs": "Zapis\u00f3w partii SGF",
+      "relays": "Relacji na OGS",
+      "streams": "Transmisji wideo",
+      "analysis": "Analiz AI"
+    },
+    "allTimeHeader": "Lista Wszech Czas\u00f3w"
+  }
+}

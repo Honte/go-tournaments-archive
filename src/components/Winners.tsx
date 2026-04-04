@@ -32,7 +32,7 @@ export function Winners({ tournaments, translations, className }: WinnersProps) 
             <tr key={year} className="text-center even:bg-gray-200 hover:bg-gray-300">
               <td className="p-2">
                 <Link
-                  className="sm:text-xl font-bold text-pgc-primary underline hover:text-pgc-hover"
+                  className="sm:text-xl font-bold text-event-primary underline hover:text-event-hover"
                   href={`/${translations.locale}/${year}`}
                 >
                   {year}

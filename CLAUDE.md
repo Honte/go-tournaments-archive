@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Polish Go Championships Archive — a static Next.js site displaying historical tournament data (1979–present) at https://mp.go.art.pl. Supports Polish and English via locale-based routing (`/pl`, `/en`). Builds to pure static HTML/CSS/JS for deployment.
+A multi-event Go tournament archive — a static Next.js site supporting multiple events (e.g. Polish Go Championships, WAGC). The active event is selected via the `EVENT` environment variable (defaults to `pgc`). Supports Polish and English via locale-based routing (`/pl`, `/en`). Builds to pure static HTML/CSS/JS for deployment.
 
 ## Commands
 
@@ -38,17 +38,36 @@ npm run fix:sgfs         # Clean SGF game files
 - `src/app/[locale]/stats/[slug]/page.tsx` — individual player stats (achievements, opponents)
 - `src/app/data/[year]/route.ts` — API route that serves tournament data as JSON
 
+### Events Directory
+
+Each event lives in `events/[event-id]/` and contains:
+
+- `config.ts` — `EventConfig` with `id`, `domain`, `sgfUrlPrefix`, `defaultLocale`
+- `Logo.tsx` — event-specific logo component
+- `colors.css` — event-specific CSS color variables
+- `i18n/pl.json`, `i18n/en.json` — event-specific translations
+- `data/[year].yml` — one YAML file per tournament year
+- `sgf/` — SGF game files and SVG board previews
+
+`events/index.ts` exports the active event ID (`process.env.EVENT || 'pgc'`).  
+`events/schema.ts` defines the `EventConfig` type.
+
+Path aliases in `next.config.js` (via `turbopack.resolveAlias`):
+- `@event` → `events/index.ts` (active event ID)
+- `@event/schema` → `events/schema.ts`
+- `@event/*` → `events/[active-event]/*` (e.g. `@event/config` resolves to the active event's `config.ts`)
+
 ### Data Pipeline
 
-Tournament data lives in `public/data/[year].yml` (YAML, one file per year). At runtime:
+Tournament data lives in `events/[event-id]/data/[year].yml` (YAML, one file per year). At runtime:
 
-1. `src/data/load.ts` reads and parses YAML files
+1. `src/data/load.ts` reads and parses YAML files from `events/${EVENT}/data/`
 2. `src/data/games.ts` parses game strings (format: `id1-id2 id1:B+2.5`)
 3. `src/data/players.ts` parses player info including rank, country, EGD ID; generates slugified IDs
 4. `src/data/table.ts`, `tableLadder.ts`, `tableWithoutRounds.ts`, `final.ts` compute standings with tiebreakers (wins, SOS, SODOS, SOSOS, direct, starting, rank)
 5. `src/data/stats.ts` aggregates cross-tournament statistics
 6. `src/data/rank.ts` converts rank strings (5k, 1d, 2p) to numeric values for sorting
-7. `src/data/sgfs.ts` loads SGF files from `public/sgf/` for a tournament
+7. `src/data/sgfs.ts` loads SGF files from `events/${EVENT}/sgf/` for a tournament
 8. `src/data/index.ts` exports the main data access functions (`getTournaments()`, `getStats()`)
 
 ### Schema
@@ -91,8 +110,8 @@ Core types are in `src/schema/data.ts`:
 
 ### Environment
 
-- Development: SGF files served from `/sgf/` (relative)
-- Production: SGF files at `https://mp.go.art.pl/sgf/` (absolute)
+- `EVENT` — selects the active event directory (default: `pgc`). Set to `wagc` to build the WAGC archive.
+- `SGF_URL_PREFIX` — overrides the event's `sgfUrlPrefix` from `config.ts`. If unset, the value from `config.ts` is used.
 
 ### Path Alias
 

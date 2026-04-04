@@ -13,7 +13,7 @@ export function FullStatsLink({ translations }: FullStatsLinkProps) {
     <p className="text-center my-2">
       <Link
         href={`${translations.locale}/stats`}
-        className="underline underline-offset-2 text-pgc-primary cursor-pointer hover:text-pgc-hover"
+        className="underline underline-offset-2 text-event-primary cursor-pointer hover:text-event-hover"
       >
         {t('stats.full')}
       </Link>

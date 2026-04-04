@@ -6,6 +6,8 @@ export default {
   endOfLine: 'auto',
   plugins: ['@trivago/prettier-plugin-sort-imports'],
   importOrder: [
+    '^@event$',
+    '^@event/(.*)$',
     '^node:(.*)$',
     '<THIRD_PARTY_MODULES>',
     '^@/i18n/(.*)$',

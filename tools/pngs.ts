@@ -1,3 +1,4 @@
+import EVENT from '@event';
 import { existsSync } from 'node:fs';
 import { readFile, writeFile } from 'node:fs/promises';
 import { createConverter } from 'convert-svg-to-png';
@@ -24,7 +25,7 @@ async function generatePngs() {
       if (game?.props?.sgf) {
         const sgf = game.props.sgf.replace(process.env.SGF_URL_PREFIX ?? '', '').replace(`${tournament.year}/`, '');
 
-        await generatePng(`./public/sgf/${tournament.year}/${sgf}`);
+        await generatePng(`./events/${EVENT}/sgf/${tournament.year}/${sgf}`);
       }
     }
   }

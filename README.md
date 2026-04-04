@@ -1,6 +1,6 @@
 Repository of [Polish Go Championships Archive](https://mp.go.art.pl)
 
-A static Next.js site (no server required) displaying historical Polish Go Championship tournament data from 1979 to the present. Supports Polish and English via locale-based routing (`/pl`, `/en`). Tournament data is stored as YAML files in `public/data/`.
+A multi-event Go tournament archive — a static Next.js site (no server required) supporting multiple events (Polish Go Championships, WAGC, etc.). Supports Polish and English via locale-based routing (`/pl`, `/en`). Tournament data is stored as YAML files in `events/[event-id]/data/`.
 
 **Tech stack:** Next.js, React 19, TypeScript, Tailwind CSS 4, YAML data files, SGF game records.
 
@@ -29,13 +29,14 @@ npm run start        # Serve the /out directory locally
 
 The build produces static HTML, JS and CSS files. Additionally, it has `index.php` and `.htaccess` file for standard PHP servers to ensure that all routes would lead to `index.html`.
 
-1. Create `.env.production` file with `SGF_URL_PREFIX=https://mp.go.art.pl/sgf/` (or other deployment server address)
-2. Run `npm run build`
-3. Copy contents of `out` to the server
+1. Set the `EVENT` environment variable to select the event to build (e.g. `EVENT=pgc` or `EVENT=wagc`). Defaults to `pgc`.
+2. Optionally set `SGF_URL_PREFIX` to override the SGF base URL defined in the event's `config.ts`.
+3. Run `npm run build`
+4. Copy contents of `out` to the server
 
 ## Adding a new tournament
 
-Create `[year].yml` file in `public/data` directory
+Create `[year].yml` file in `events/[event-id]/data/` directory
 
 ```yaml
 location: Poznan # location name
@@ -128,15 +129,14 @@ Supported ranks: `Xk` (kyu), `Xd` (dan), `Xp` (professional), e.g. `5k`, `1d`, `
 
 Supported game properties appended to a game string:
 
-- `sgf` - path to sgf file relative to `public` directory, e.g. `sgf:sgf/2025/black-vs-white.sgf`
+- `sgf` - path to sgf file relative to the event's `sgf/` directory, e.g. `sgf:2025/black-vs-white.sgf`
 - `ai` - link to AI analysis, e.g. `ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/G51DzNwBgA77fbZIiIxm`
 - `yt` - link to YouTube video, e.g. `yt:https://youtube.com/watch?v=FhK57HL7ijI`
 - `ogs` - link to OGS game, e.g. `ogs:https://online-go.com/review/772950`
 
 ### Preparing an SGF
 
-Use `cleanSgf` function from `tools/sgf.ts` to remove all comments and alternative paths from sgf file (the longest will
-be kept).
+Place SGF files under `events/[event-id]/sgf/[year]/`. Use `cleanSgf` function from `tools/sgf.ts` to remove all comments and alternative paths from sgf file (the longest will be kept).
 
 After adding SGF files, run the following to fix property names and generate board preview images:
 
@@ -146,3 +146,14 @@ npm run build:svgs    # Generate SVG board previews from SGF files
 ```
 
 SVG previews appear as board thumbnails on the tournament page.
+
+## Adding a new event
+
+1. Create `events/[event-id]/` directory with:
+   - `config.ts` — implement `EventConfig` with `id`, `domain`, `sgfUrlPrefix`, `defaultLocale`
+   - `Logo.tsx` — event logo component
+   - `colors.css` — CSS color variables
+   - `i18n/pl.json`, `i18n/en.json` — translations
+   - `data/` — tournament YAML files
+   - `sgf/` — SGF files and SVG previews
+2. Build with `EVENT=[event-id] npm run build`

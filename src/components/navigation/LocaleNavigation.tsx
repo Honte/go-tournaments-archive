@@ -13,7 +13,7 @@ export function LocaleNavigation({ locale }: LocaleNavigationProps) {
   const regex = new RegExp(`^/${locale}`);
 
   return (
-    <div className="text-pgc-dark container mx-auto max-w-(--breakpoint-2xl) flex justify-end text-sm px-4 py-1 gap-4">
+    <div className="text-event-dark container mx-auto max-w-(--breakpoint-2xl) flex justify-end text-sm px-4 py-1 gap-4">
       {SUPPORTED_LOCALES.map((nextLocale) => (
         <Link key={nextLocale} className="underline" href={pathname.replace(regex, `/${nextLocale}`)}>
           {nextLocale.toUpperCase()}

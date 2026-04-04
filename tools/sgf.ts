@@ -1,11 +1,4 @@
-import sgfParser from '@sabaki/sgf';
-
-export type SgfNode = {
-  id: number;
-  parentId?: number;
-  data: Record<string, string[]>;
-  children: SgfNode[];
-};
+import sgfParser, { SgfNode } from '@sabaki/sgf';
 
 type RootParamValue = string | number | null | ((prev?: string) => string | number | null);
 export type RootParams = Record<string, RootParamValue>;
