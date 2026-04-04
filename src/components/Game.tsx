@@ -1,10 +1,10 @@
 import { type Game, type GamePlayer, type Player } from '@/schema/data';
 import { clsx } from 'clsx';
 import { useMemo } from 'react';
-import { Stone } from '@/components/Stone';
-import { ExternalButton } from '@/components/ui/ExternalButton';
 import type { Translations, Translator } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
+import { Stone } from '@/components/Stone';
+import { ExternalButton } from '@/components/ui/ExternalButton';
 
 type GameProps = {
   className?: string;

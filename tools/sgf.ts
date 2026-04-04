@@ -8,7 +8,7 @@ export type SgfNode = {
 };
 
 type RootParamValue = string | number | null | ((prev?: string) => string | number | null);
-type RootParams = Record<string, RootParamValue>;
+export type RootParams = Record<string, RootParamValue>;
 
 export function cleanSgf(content: string, rootParams?: RootParams): string {
   const rootNodes = sgfParser.parse(content) as SgfNode[];
@@ -18,7 +18,7 @@ export function cleanSgf(content: string, rootParams?: RootParams): string {
   let branches: [SgfNode, number][] = rootNodes.map((node) => [node, 0]);
 
   while (branches.length) {
-    const [branch, depth] = branches.shift();
+    const [branch, depth] = branches.shift()!;
 
     map.set(branch.id, branch);
 
@@ -36,7 +36,7 @@ export function cleanSgf(content: string, rootParams?: RootParams): string {
   let current = cleanNode(farthestLeaf, []);
 
   while (typeof current.parentId === 'number') {
-    const parent = map.get(current.parentId);
+    const parent = map.get(current.parentId)!;
 
     current = cleanNode(parent, [current]);
   }

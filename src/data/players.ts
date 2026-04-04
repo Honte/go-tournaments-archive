@@ -9,7 +9,7 @@ export function parsePlayers(json: Record<string, string>): Record<string, Playe
 }
 
 export function createPlayersHandler() {
-  const playerIds = {};
+  const playerIds: Record<string, string> = {};
 
   return fromJson;
 
@@ -23,7 +23,7 @@ export function createPlayersHandler() {
         throw new Error(`Could not parse player ${json[id]}`);
       }
 
-      const { name, rank, egd, country } = details.groups;
+      const { name, rank, egd, country } = details.groups!;
 
       players[id] = {
         id: getPlayerId(name),
@@ -44,7 +44,7 @@ export function createPlayersHandler() {
       .map((name) => slugify(name));
 
     const full = parts.join(' ');
-    const hash = parts.at(0)[0] + parts.at(-1);
+    const hash = parts.at(0)![0] + parts.at(-1);
 
     let id = hash;
     let index = 1;

@@ -1,6 +1,6 @@
-import type { Game, GamePlayer, GameProps } from '@/schema/data';
+import type { Game, GamePlayer, GameProps, GamePropsArrayKey, GamePropsKey } from '@/schema/data';
 
-const ARRAY_PROPS = ['yt'];
+const ARRAY_PROPS: GamePropsArrayKey[] = ['yt'];
 const GAME_REGEX =
   /(?<home>[a-z]+)-(?<away>[a-z]+) (?<winner>[a-z]+)(:(?<result>[?a-zA-Z!0-9+,.:]+))?( (?<props>.+))?/i;
 const GAME_RESULT_REGEX = /^(?<color>[BW])(\+(?<score>([RT?]|\d+([,.]5)?)))?$/i;
@@ -25,7 +25,7 @@ function parseGame(string: string, id: string): Game {
     throw new Error(`Could not parse game ${string})`);
   }
 
-  const { home, away, winner, result, props } = parsed.groups;
+  const { home, away, winner, result, props } = parsed.groups!;
 
   const homePlayer = {
     id: home,
@@ -49,7 +49,7 @@ function parseGame(string: string, id: string): Game {
       throw new Error(`Unrecognized game result in ${string}`);
     }
 
-    const { color, score } = gameResult.groups;
+    const { color, score } = gameResult.groups!;
 
     winnerPlayer.score = score;
 
@@ -66,7 +66,7 @@ function parseGame(string: string, id: string): Game {
     id,
     players: homePlayer.color === 'white' ? [awayPlayer, homePlayer] : [homePlayer, awayPlayer],
     result,
-    props: (props?.split(' ') || []).reduce<GameProps>((map, prop) => {
+    props: (props?.split(' ') ?? ([] as string[])).reduce<GameProps>((map: GameProps, prop: string) => {
       const pos = prop.indexOf(':');
       const type = prop.slice(0, pos);
       let value = prop.slice(pos + 1);
@@ -77,10 +77,10 @@ function parseGame(string: string, id: string): Game {
         map.svg = value.replace('.sgf', '.svg');
       }
 
-      if (ARRAY_PROPS.includes(type) && value.indexOf(',') > 0) {
-        map[type] = value.split(',');
+      if (ARRAY_PROPS.includes(type as GamePropsArrayKey) && value.indexOf(',') > 0) {
+        map[type as GamePropsArrayKey] = value.split(',');
       } else {
-        map[type] = value;
+        map[type as GamePropsKey] = value;
       }
 
       return map;

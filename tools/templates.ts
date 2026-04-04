@@ -52,9 +52,7 @@ async function buildTemplates() {
               const file = join(tournamentDir, `${year}${stagePrefix}-${roundNo + 1}-${b.id}-${w.id}.sgf`);
               let content = '(\n  ;';
 
-              for (const prop in data) {
-                const item = data[prop];
-
+              for (const [prop, item] of Object.entries(data)) {
                 if (item) {
                   content += `${prop}[${item}]`;
                 }

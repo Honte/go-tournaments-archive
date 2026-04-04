@@ -15,7 +15,7 @@ export type YearsNavigationProps = {
   locale: string;
   years: number[];
   current: number;
-  ref?: RefObject<YearsNavigationHandle>;
+  ref?: RefObject<YearsNavigationHandle | null>;
 };
 
 export function YearsNavigation({ locale, years, current, ref }: YearsNavigationProps) {

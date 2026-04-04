@@ -1,13 +1,14 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import { dirname, join, parse } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import type { GameProps } from '@/schema/data';
+import type { Breaker, Game, GameProps, TableResult } from '@/schema/data';
 import { diffLines } from 'diff';
 import mysql from 'mysql2/promise';
 import { stringify } from 'yaml';
 import { parseGames } from '@/data/games';
 import { parsePlayers } from '@/data/players';
 import { createTable } from '@/data/table';
+import type { RootParams } from './sgf';
 import { cleanSgf } from './sgf';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -38,7 +39,7 @@ type ExtractOptions = {
   sgfPrefix?: string;
   time?: string;
   komi?: number;
-  breakers?: string[];
+  breakers?: Breaker[];
   egd?: string;
   outputSgfDir?: string;
   outputYml?: string;
@@ -63,6 +64,8 @@ type SqlGame = {
   result: string;
   sgf: string;
   ogs: string;
+  analysis?: string;
+  video?: string;
 };
 
 type SqlRound = {
@@ -84,7 +87,7 @@ async function extractFromDatabase({
   sgfPrefix = `${website}/files/game/sgf`,
   time = 'fischer 60m + 30s',
   komi = 6.5,
-  breakers = ['wins', 'sodos', 'direct', 'starting'],
+  breakers = ['wins', 'sodos', 'direct', 'starting'] as Breaker[],
   egd,
   outputSgfDir = join(__dirname, `../public/sgf/${year}`),
   outputYml = join(__dirname, `../public/data/${year}.yml`),
@@ -106,11 +109,11 @@ async function extractFromDatabase({
 
   connection.end();
 
-  const start = toIsoDate(roundsRows.at(0).time);
-  const end = toIsoDate(roundsRows.at(-1).time);
+  const start = toIsoDate(roundsRows.at(0)!.time);
+  const end = toIsoDate(roundsRows.at(-1)!.time);
 
-  const players = {};
-  const playerDbIdToId = {};
+  const players: Record<string, string> = {};
+  const playerDbIdToId: Record<number, string> = {};
 
   playersRows.sort((a, b) => a.starting_position - b.starting_position);
 
@@ -133,7 +136,7 @@ async function extractFromDatabase({
 
   const parsedPlayers = parsePlayers(players);
 
-  const gamesRowsByRound = [];
+  const gamesRowsByRound: [SqlGame, number][][] = [];
   for (const game of gamesRows) {
     (gamesRowsByRound[game.round - 1] ||= []).push([game, game.game_order ?? 5]);
   }
@@ -141,7 +144,7 @@ async function extractFromDatabase({
     round.sort((a, b) => a[1] - b[1]);
   }
 
-  const rounds = [];
+  const rounds: string[][] = [];
   for (const [round, roundGames] of gamesRowsByRound.entries()) {
     for (const [board, [game]] of roundGames.entries()) {
       const black = playerDbIdToId[game.black_id];
@@ -205,7 +208,7 @@ async function extractFromDatabase({
           OT: null,
           PC: location,
           EV: `Polish Go Championship ${year}`,
-          RU: (val) => (val ? val.toLowerCase() : null),
+          RU: (val: string | undefined) => (val ? val.toLowerCase() : null),
           GN: `Round ${round + 1} - Board ${board + 1}`,
         },
       });
@@ -228,8 +231,10 @@ async function extractFromDatabase({
 
   // establish final order
 
-  const testGames = {};
+  const testGames: Record<string, Game> = {};
   const testStage = {
+    type: 'league' as const,
+    table: [] as TableResult[],
     breakers,
     date: [{ start, end }],
     rounds: rounds.map((round) => parseGames(testGames, round)),
@@ -263,15 +268,23 @@ async function extractFromDatabase({
   console.log('Done');
 }
 
-function toIsoDate(date) {
+function toIsoDate(date: string): string {
   return new Date(date).toISOString().slice(0, 10);
 }
 
-function toOgsLink(id, type = 'reviews', includeComments = false) {
+function toOgsLink(id: string | undefined, type = 'reviews', includeComments = false): string {
   return `https://online-go.com/api/v1/${type}/${id}/sgf?without-comments=${includeComments ? 0 : 1}`;
 }
 
-async function getSgf({ sgfs, props, output }) {
+async function getSgf({
+  sgfs,
+  props,
+  output,
+}: {
+  sgfs: string[];
+  props: RootParams;
+  output: string;
+}): Promise<string | null> {
   if (!sgfs?.length) {
     return null;
   }

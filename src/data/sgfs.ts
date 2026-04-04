@@ -7,13 +7,13 @@ export async function loadSgfs(tournament: Tournament): Promise<Record<string, s
     return {};
   }
 
-  const result = {};
+  const result: Record<string, string> = {};
   for (const id in tournament.games) {
     const game = tournament.games[id];
 
     if (game.props?.sgf) {
       result[id] = await readFile(
-        join('./public', game.props.sgf.replace(process.env.SGF_URL_PREFIX, '/sgf/')),
+        join('./public', game.props.sgf.replace(process.env.SGF_URL_PREFIX ?? '', '/sgf/')),
         'utf-8'
       );
     }

@@ -4,10 +4,10 @@ import { loadTournaments } from './load';
 const tournaments = await loadTournaments();
 const stats = calculateStats(tournaments);
 
-export function getTournaments() {
+export async function getTournaments() {
   return tournaments;
 }
 
-export function getStats() {
+export async function getStats() {
   return stats;
 }

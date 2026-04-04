@@ -21,7 +21,7 @@ export type TopNavigationProps = {
 export function TopNavigation({ tournaments, locale, current }: TopNavigationProps) {
   const router = useRouter();
   const elRef = useRef<HTMLDivElement | null>(null);
-  const navRef = useRef<YearsNavigationHandle | null>(null);
+  const navRef = useRef<YearsNavigationHandle>(null);
   const delayRef = useRef<number | null>(null);
   const years = tournaments.map((t) => t.year);
 
@@ -118,6 +118,10 @@ export function TopNavigation({ tournaments, locale, current }: TopNavigationPro
 
   useEffect(() => {
     const node = elRef.current;
+
+    if (!node) {
+      return;
+    }
 
     node.addEventListener('wheel', onWheel);
     node.addEventListener('mousedown', onMouseDown, CAPTURE);

@@ -13,11 +13,15 @@ async function generateSvgs() {
       const game = tournament.games[id];
 
       if (game?.props?.sgf) {
-        const sgf = game.props.sgf.replace(process.env.SGF_URL_PREFIX, '').replace(`${tournament.year}/`, '');
+        const sgf = game.props.sgf.replace(process.env.SGF_URL_PREFIX ?? '', '').replace(`${tournament.year}/`, '');
 
         const source = `./public/sgf/${tournament.year}/${sgf}`;
         const target = source.replace('.sgf', '.svg');
         const svg = await generateSvg(source);
+
+        if (!svg) {
+          continue;
+        }
 
         await writeFile(target, svg);
         console.log('Saved SVG', target);

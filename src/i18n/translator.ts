@@ -1,9 +1,17 @@
-import { Translations, type Translator } from '@/i18n/consts';
+import { type OptionalTranslator, Translations, type Translator } from '@/i18n/consts';
 
 export function getTranslator(
   translations: Translations,
+  options: { scope?: string; allowMissing: true }
+): OptionalTranslator;
+export function getTranslator(
+  translations: Translations,
+  options?: { scope?: string; allowMissing?: false }
+): Translator;
+export function getTranslator(
+  translations: Translations,
   options?: { scope?: string; allowMissing?: boolean }
-): Translator {
+): Translator | OptionalTranslator {
   let dict = translations;
 
   if (options?.scope) {

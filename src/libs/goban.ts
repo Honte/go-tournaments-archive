@@ -5,12 +5,11 @@ const MOVE_REGEX = /;(?<color>B|W)\[(?<position>[a-z]{2})]/g;
 
 export function sgfToBoard(sgf: string) {
   const sizeMatch = sgf.match(SIZE_REGEX);
-  let board = Board.fromDimensions(sizeMatch ? Number(sizeMatch.groups.size) : 19);
+  let board = Board.fromDimensions(sizeMatch ? Number(sizeMatch.groups!.size) : 19);
 
   // assume there are no variations!
-  for (const {
-    groups: { color, position },
-  } of iterateMatches(sgf, MOVE_REGEX)) {
+  for (const { groups } of iterateMatches(sgf, MOVE_REGEX)) {
+    const { color, position } = groups!;
     const [a, b] = position.split('');
     const x = a.charCodeAt(0) - 97;
     const y = b.charCodeAt(0) - 97;

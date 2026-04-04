@@ -1,8 +1,9 @@
-import type { FinalStage, Game, Tournament, TournamentDateSpan } from '@/schema/data';
+import type { Tournament, TournamentDateSpan } from '@/schema/data';
 import fg from 'fast-glob';
 import fs from 'fs/promises';
 import path from 'path';
 import { parse } from 'yaml';
+import { createFinalTable } from '@/data/final';
 import { parseGames } from '@/data/games';
 import { createPlayersHandler } from '@/data/players';
 import { createTable } from '@/data/table';
@@ -86,77 +87,15 @@ function parseDates(date: string): TournamentDateSpan[] {
 
 function getDateRange(dates: TournamentDateSpan[]) {
   const all = dates
-    .reduce((list, { start, end }) => {
+    .reduce<[string, number][]>((list, { start, end }) => {
       list.push([start, +new Date(start)]);
       list.push([end, +new Date(end)]);
       return list;
     }, [])
-    .sort((a, b) => b[1] - b[0]);
+    .sort((a, b) => b[1] - (b[0] as unknown as number));
 
   return {
     start: all[0][0],
     end: all[all.length - 1][0],
   };
-}
-
-function createFinalTable(stage: FinalStage, games: Record<string, Game>) {
-  const players = {};
-
-  for (const id of stage.games) {
-    const [a, b] = games[id].players;
-
-    addGame(a, b.id, id);
-    addGame(b, a.id, id);
-  }
-
-  const [home, away] = Object.keys(players);
-
-  if (stage.includePrevious) {
-    for (const game of iterateGames(games, home, away)) {
-      if (!stage.games.includes(game.id)) {
-        const [a, b] = game.players;
-
-        addGame(a, b.id, game.id);
-        addGame(b, a.id, game.id);
-
-        players[a.id].prevScore = Number(a.won);
-        players[b.id].prevScore = Number(b.won);
-        break;
-      }
-    }
-  }
-
-  const result = players[home].wins > players[away].wins ? [home, away] : [away, home];
-
-  return result.map((p, index) => ({
-    ...players[p],
-    place: index + 1,
-  }));
-
-  function addGame(player, opponent, game) {
-    players[player.id] ||= {
-      id: player.id,
-      place: 0,
-      games: [],
-      wins: 0,
-    };
-
-    players[player.id].wins += Number(player.won);
-    players[player.id].games.push({
-      opponent,
-      won: player.won,
-      game,
-    });
-  }
-}
-
-function* iterateGames(games: Record<string, Game>, playerA: string, playerB: string): IterableIterator<Game> {
-  for (const id in games) {
-    const game = games[id];
-    const [a, b] = game.players;
-
-    if ((a.id === playerA && b.id === playerB) || (a.id === playerB && b.id === playerA)) {
-      yield game;
-    }
-  }
 }

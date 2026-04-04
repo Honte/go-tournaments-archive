@@ -2,7 +2,10 @@ export type Tournament = {
   id: number;
   year: number;
   location: string;
-  date: TournamentDateSpan[];
+  start: string;
+  end: string;
+  website?: string;
+  referee?: string;
   games: Record<string, Game>;
   stages: Stage[];
   top: string[];
@@ -24,7 +27,17 @@ export enum Breaker {
   STARTING_POSITION = 'starting',
   DIRECT_MATCH = 'direct',
   RANK = 'rank',
+  SCORE = 'score',
 }
+
+export type ScoringBreaker =
+  | Breaker.WINS
+  | Breaker.SCORE
+  | Breaker.SOS
+  | Breaker.SODOS
+  | Breaker.SOSOS
+  | Breaker.STARTING_POSITION
+  | Breaker.RANK;
 
 // Then modify the BaseStage type to use the enum
 export type BaseStage = {
@@ -41,19 +54,21 @@ export type LeagueStage = BaseStage & {
   rounds: string[][];
   table: TableResult[];
   breakers?: Breaker[];
+  order?: string[];
 };
 
 export type LadderTableStage = BaseStage & {
   type: 'ladder-table';
-  rounds: Game[][];
+  rounds: string[][];
+  order: string[];
   table: {
     id: string;
     place: number;
     index: number;
     games: (IndexedTablePlayerGame | null)[];
-    playoffs: (TablePlayerGame | null)[];
+    playoffs: IndexedTablePlayerGame[];
   }[];
-  playoffs?: string[];
+  playoffs: string[];
 };
 
 export type FinalStage = BaseStage & {
@@ -67,6 +82,7 @@ export type FinalStage = BaseStage & {
     prevScore?: number;
   }[];
   includePrevious?: boolean;
+  requiredWins?: number;
 };
 
 export type RoundRobinTableStage = BaseStage & {
@@ -74,31 +90,27 @@ export type RoundRobinTableStage = BaseStage & {
   games: string[];
   table: {
     id: string;
+    place: number;
     score: number;
     games: TablePlayerGame[];
     rank: number;
   }[];
 };
 
-export type TableResult = {
+export type TableResult = Record<ScoringBreaker, number> & {
   id: string;
   place: number;
-  wins: number;
-  sos: number;
-  sodos: number;
-  sosos: number;
-  starting: number;
-  games: (TablePlayerGame | null)[];
+  index: number;
+  games: (IndexedTablePlayerGame | null)[];
   won: string[];
   lost: string[];
-  rank: number;
 };
 
 export type TablePlayerGame = {
   opponent: string;
   won: boolean;
   result: string;
-  game: Game;
+  game: string;
 };
 
 export type IndexedTablePlayerGame = TablePlayerGame & {
@@ -134,4 +146,52 @@ export type GameProps = {
   sgf?: string;
   svg?: string;
   png?: string;
+};
+
+export type GamePropsKey = keyof GameProps;
+export type GamePropsArrayKey = {
+  [K in GamePropsKey]-?: Extract<GameProps[K], any[]> extends never ? never : K;
+}[GamePropsKey];
+
+export type StatsPlayerGame = {
+  opponent: string;
+  won: boolean;
+  result: string;
+  game: string;
+  index?: number;
+};
+
+export type StatsPlayerResult = {
+  year: number;
+  stage: Stage['type'];
+  place: number;
+  games: StatsPlayerGame[];
+  won: number;
+  rank: string;
+};
+
+export type StatsPlayer = {
+  id: string;
+  name?: string;
+  medals: [string[], string[], string[]];
+  years: number[];
+  results: StatsPlayerResult[];
+  score: number;
+  totalGames: number;
+  totalWon: number;
+};
+
+export type Stats = {
+  tournaments: number;
+  playedGames: number;
+  games: Record<string, Game>;
+  sgfs: number;
+  resign: number;
+  timeout: number;
+  relays: number;
+  streams: number;
+  analysis: number;
+  players: Record<string, StatsPlayer>;
+  black: number;
+  winners: StatsPlayer[];
 };

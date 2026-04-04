@@ -2,7 +2,11 @@ import { getTournaments } from '@/data';
 import { notFound } from 'next/navigation';
 import type { NextRequest } from 'next/server';
 
-export async function GET(request: NextRequest, props: { params: Promise<{ year: string }> }) {
+type PageProps = {
+  params: Promise<{ year: string }>;
+};
+
+export async function GET(request: NextRequest, props: PageProps) {
   const params = await props.params;
   const check = params?.year?.match(/^(\d{4})\.json(\?.+)?/);
 

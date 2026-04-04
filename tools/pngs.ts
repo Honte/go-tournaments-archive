@@ -22,7 +22,7 @@ async function generatePngs() {
       const game = tournament.games[id];
 
       if (game?.props?.sgf) {
-        const sgf = game.props.sgf.replace(process.env.SGF_URL_PREFIX, '').replace(`${tournament.year}/`, '');
+        const sgf = game.props.sgf.replace(process.env.SGF_URL_PREFIX ?? '', '').replace(`${tournament.year}/`, '');
 
         await generatePng(`./public/sgf/${tournament.year}/${sgf}`);
       }
@@ -40,6 +40,11 @@ async function generatePng(file: string) {
   }
 
   const svg = await (existsSync(targetSvg) ? readFile(targetSvg) : generateSvg(file));
+
+  if (!svg) {
+    return;
+  }
+
   const png = await converter.convert(svg, {
     width: SIZE,
     height: SIZE,
