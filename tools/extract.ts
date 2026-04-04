@@ -12,6 +12,21 @@ import { createTable } from '@/data/table';
 import type { RootParams } from './sgf';
 import { cleanSgf } from './sgf';
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const EVENT_DIR = join(__dirname, `../events/${EVENT}`);
 
@@ -234,14 +249,12 @@ async function extractFromDatabase({
   // establish final order
 
   const testGames: Record<string, Game> = {};
-  const testStage = {
-    type: 'league' as const,
-    table: [] as TableResult[],
+  const testTable = createTable({
+    gamesMap: testGames,
+    playersMap: parsedPlayers,
     breakers,
-    date: [{ start, end }],
     rounds: rounds.map((round) => parseGames(testGames, round)),
-  };
-  const testTable = createTable(testStage, testGames, parsedPlayers);
+  });
 
   const result = stringify(
     {

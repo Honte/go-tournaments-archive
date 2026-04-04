@@ -5,6 +5,7 @@ export type H9Tournament = {
   id: string;
   class: 'A' | 'B' | 'C' | 'D';
   name: string;
+  country: string;
   location: string;
   dates: string[];
   handicap: number;
@@ -107,10 +108,13 @@ export function parseH9(input: string): H9Tournament {
     });
   }
 
+  const [country, location] = properties.PC.split(', ');
+
   return {
     id: properties.TC,
     name: properties.EV,
-    location: properties.PC,
+    location: location ?? country,
+    country: location ? country : '',
     class: properties.CL as H9Tournament['class'],
     dates: properties.DT.split(',').map((date) => date.trim()),
     handicap: parseInt(properties.HA.slice(1), 10),

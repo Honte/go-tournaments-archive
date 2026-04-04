@@ -1,12 +1,20 @@
-import type { Game, LeagueStage, Player, ScoringBreaker, TableResult } from '@/schema/data';
+import type { Game, Player, ScoringBreaker, TableResult } from '@/schema/data';
 import { Breaker } from '@/schema/data';
 import { getRankValue } from '@/data/rank';
 
-export function createTable(
-  stage: LeagueStage,
-  games: Record<string, Game>,
-  playersMap: Record<string, Player>
-): TableResult[] {
+export function createTable({
+  gamesMap,
+  playersMap,
+  rounds,
+  order,
+  breakers,
+}: {
+  gamesMap: Record<string, Game>;
+  playersMap: Record<string, Player>;
+  rounds: string[][];
+  order?: string[];
+  breakers?: Breaker[];
+}): TableResult[] {
   const map: Record<string, TableResult> = {
     BYE: {
       id: 'BYE',
@@ -18,7 +26,7 @@ export function createTable(
       sodos: 0,
       sosos: 0,
       starting: 0,
-      games: new Array(stage.rounds.length).fill(null),
+      games: new Array(rounds.length).fill(null),
       won: [],
       lost: [],
       rank: 0,
@@ -38,7 +46,7 @@ export function createTable(
       sodos: 0,
       sosos: 0,
       starting: position++,
-      games: new Array(stage.rounds.length).fill(null),
+      games: new Array(rounds.length).fill(null),
       won: [],
       lost: [],
       rank: getRankValue(playersMap[id].rank),
@@ -49,12 +57,12 @@ export function createTable(
   }
 
   // collect wins & games
-  for (const [index, round] of stage.rounds.entries()) {
+  for (const [index, round] of rounds.entries()) {
     for (const game of round) {
       const {
         players: [a, b],
         result,
-      } = games[game];
+      } = gamesMap[game];
 
       const winner = a.won ? a.id : b.id;
       const loser = a.won ? b.id : a.id;
@@ -106,7 +114,7 @@ export function createTable(
     }
   }
 
-  const table = stage.order ? sortByOrder(players, stage.order) : sortByBreakers(players, stage.breakers!);
+  const table = order ? sortByOrder(players, order) : sortByBreakers(players, breakers!);
 
   // assign player index
   for (const player of table) {

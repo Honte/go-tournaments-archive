@@ -3,4 +3,5 @@ export type EventConfig = {
   domain: string;
   sgfUrlPrefix: string;
   defaultLocale: string;
+  defaultCountry?: string;
 };

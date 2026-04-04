@@ -1,20 +1,22 @@
 import type { Game, Player, RoundRobinTableStage } from '@/schema/data';
 import { getRankValue } from '@/data/rank';
 
-export function createTableWithoutRounds(
-  stage: RoundRobinTableStage,
-  games: Record<string, Game>,
-  players: Record<string, Player>
-): RoundRobinTableStage['table'] {
-  const { games: gameIds } = stage;
-
+export function createTableWithoutRounds({
+  games,
+  gamesMap,
+  playersMap,
+}: {
+  games: string[];
+  gamesMap: Record<string, Game>;
+  playersMap: Record<string, Player>;
+}): RoundRobinTableStage['table'] {
   const results: Record<string, RoundRobinTableStage['table'][number]> = {};
 
-  for (const id of gameIds) {
+  for (const id of games) {
     const {
       players: [home, away],
       result,
-    } = games[id];
+    } = gamesMap[id];
     const winner = home.won ? home.id : away.id;
     const loser = home.won ? away.id : home.id;
 
@@ -23,7 +25,7 @@ export function createTableWithoutRounds(
       place: 0,
       score: 0,
       games: [],
-      rank: getRankValue(players[winner].rank),
+      rank: getRankValue(playersMap[winner].rank),
     }).games.push({
       opponent: loser,
       won: true,
@@ -36,7 +38,7 @@ export function createTableWithoutRounds(
       place: 0,
       score: 0,
       games: [],
-      rank: getRankValue(players[loser].rank),
+      rank: getRankValue(playersMap[loser].rank),
     }).games.push({
       opponent: winner,
       won: false,

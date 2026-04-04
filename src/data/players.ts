@@ -1,3 +1,4 @@
+import EVENT_CONFIG from '@event/config';
 import type { Player } from '@/schema/data';
 import slugify from 'slugify';
 
@@ -13,8 +14,12 @@ export function createPlayersHandler() {
 
   return fromJson;
 
-  function fromJson(json: Record<string, string>): Record<string, Player> {
+  function fromJson(json?: Record<string, string>): Record<string, Player> {
     const players: Record<string, Player> = {};
+
+    if (!json) {
+      return players
+    }
 
     for (const id in json) {
       const details = json[id].match(PLAYER_REGEX);
@@ -23,7 +28,7 @@ export function createPlayersHandler() {
         throw new Error(`Could not parse player ${json[id]}`);
       }
 
-      const { name, rank, egd, country } = details.groups!;
+      const { name, rank, egd, country = EVENT_CONFIG.defaultCountry } = details.groups!;
 
       players[id] = {
         id: getPlayerId(name),

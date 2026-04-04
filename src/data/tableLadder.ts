@@ -1,8 +1,16 @@
 import type { Game, IndexedTablePlayerGame, LadderTableStage } from '@/schema/data';
 
-export function createLadderTable(stage: LadderTableStage, games: Record<string, Game>): LadderTableStage['table'] {
-  const { order, rounds, playoffs } = stage;
-
+export function createLadderTable({
+  order,
+  rounds,
+  playoffs,
+  gamesMap,
+}: {
+  order: string[];
+  rounds: string[][];
+  playoffs: string[];
+  gamesMap: Record<string, Game>;
+}): LadderTableStage['table'] {
   const table: LadderTableStage['table'] = [];
   const map: Record<string, LadderTableStage['table'][number]> = {
     BYE: {
@@ -36,7 +44,7 @@ export function createLadderTable(stage: LadderTableStage, games: Record<string,
       const {
         players: [a, b],
         result,
-      } = games[game];
+      } = gamesMap[game];
 
       const winner = a.won ? a.id : b.id;
       const loser = a.won ? b.id : a.id;
@@ -62,7 +70,7 @@ export function createLadderTable(stage: LadderTableStage, games: Record<string,
     const {
       players: [a, b],
       result,
-    } = games[game];
+    } = gamesMap[game];
 
     const winner = a.won ? a.id : b.id;
     const loser = a.won ? b.id : a.id;

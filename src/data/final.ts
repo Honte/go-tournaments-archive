@@ -1,4 +1,4 @@
-import type { FinalStage, Game, GamePlayer, TablePlayerGame } from '@/schema/data';
+import type { Game, GamePlayer, TablePlayerGame } from '@/schema/data';
 
 export type FinalPlayerEntry = {
   id: string;
@@ -8,11 +8,19 @@ export type FinalPlayerEntry = {
   prevScore?: number;
 };
 
-export function createFinalTable(stage: FinalStage, games: Record<string, Game>) {
+export function createFinalTable({
+  games,
+  gamesMap,
+  includePrevious,
+}: {
+  games: string[];
+  gamesMap: Record<string, Game>;
+  includePrevious: boolean;
+}) {
   const players: Record<string, FinalPlayerEntry> = {};
 
-  for (const id of stage.games) {
-    const [a, b] = games[id].players;
+  for (const id of games) {
+    const [a, b] = gamesMap[id].players;
 
     addGame(a, b.id, id);
     addGame(b, a.id, id);
@@ -20,9 +28,9 @@ export function createFinalTable(stage: FinalStage, games: Record<string, Game>)
 
   const [home, away] = Object.keys(players);
 
-  if (stage.includePrevious) {
-    for (const game of iterateGames(games, home, away)) {
-      if (!stage.games.includes(game.id)) {
+  if (includePrevious) {
+    for (const game of iterateGames(gamesMap, home, away)) {
+      if (!games.includes(game.id)) {
         const [a, b] = game.players;
 
         addGame(a, b.id, game.id);
@@ -60,9 +68,9 @@ export function createFinalTable(stage: FinalStage, games: Record<string, Game>)
   }
 }
 
-function* iterateGames(games: Record<string, Game>, playerA: string, playerB: string): IterableIterator<Game> {
-  for (const id in games) {
-    const game = games[id];
+function* iterateGames(gamesMap: Record<string, Game>, playerA: string, playerB: string): IterableIterator<Game> {
+  for (const id in gamesMap) {
+    const game = gamesMap[id];
     const [a, b] = game.players;
 
     if ((a.id === playerA && b.id === playerB) || (a.id === playerB && b.id === playerA)) {

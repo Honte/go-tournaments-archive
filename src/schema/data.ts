@@ -2,6 +2,7 @@ export type Tournament = {
   id: number;
   year: number;
   location: string;
+  country: string;
   start: string;
   end: string;
   website?: string;
@@ -42,10 +43,10 @@ export type ScoringBreaker =
 // Then modify the BaseStage type to use the enum
 export type BaseStage = {
   name?: Record<string, string>;
-  date: TournamentDateSpan[];
+  date?: TournamentDateSpan[];
   egd?: string;
   time?: string;
-  komi?: string;
+  komi?: number;
   rules?: string;
 };
 

@@ -1,5 +1,7 @@
 import EVENT from '@event';
-import type { Tournament, TournamentDateSpan } from '@/schema/data';
+import EVENT_CONFIG from '@event/config';
+import { Game, LeagueStage, Player, Stage, Tournament, TournamentDateSpan } from '@/schema/data';
+import { InputStage, InputTournament } from '@/schema/input';
 import fg from 'fast-glob';
 import fs from 'fs/promises';
 import path from 'path';
@@ -18,61 +20,46 @@ export async function loadTournaments() {
 
   for (const file of files) {
     const content = await fs.readFile(file, 'utf-8');
-    const json = parse(content);
+    const json = parse(content) as InputTournament;
     const year = Number(path.parse(file).name);
-    const games = {};
+    const games: Record<string, Game> = {};
     const dates = [];
     const stages = [];
 
     const players = parsePlayers(json.players);
 
-    for (const stage of json.stages) {
-      const target = {
-        ...stage,
-        date: parseDates(stage.date),
-      };
+    for (const stageJson of json.stages) {
+      const stage = parseStage(stageJson, players, games);
 
-      dates.push(...target.date);
-      stages.push(target);
-
-      switch (stage.type) {
-        case 'league':
-          target.rounds = stage.rounds.map((round: string[]) => parseGames(games, round));
-          target.table = createTable(target, games, players);
-          break;
-        case 'ladder-table':
-          target.rounds = stage.rounds.map((round: string[]) => parseGames(games, round));
-          target.playoffs = stage.playoffs ? parseGames(games, stage.playoffs) : [];
-          target.table = createLadderTable(target, games);
-          break;
-        case 'final':
-          target.games = parseGames(games, stage.games);
-          target.table = createFinalTable(target, games);
-          break;
-        case 'round-robin-table':
-          target.games = parseGames(games, stage.games);
-          target.table = createTableWithoutRounds(target, games, players);
-          break;
-        default:
-          throw new Error(`Unrecognized stage ${stage.type}`);
+      if (stage.date) {
+        dates.push(...stage.date);
       }
+
+      stages.push(stage);
     }
 
     tournaments.push({
-      id: year,
       ...json,
+      id: year,
+      country: json.country ?? EVENT_CONFIG.defaultCountry,
+      location: json.location ?? '',
       ...getDateRange(dates),
       year,
       games,
       players,
       stages,
+      top: json.top ?? [],
     });
   }
 
   return tournaments;
 }
 
-function parseDates(date: string): TournamentDateSpan[] {
+function parseDates(date?: string | string[]): TournamentDateSpan[] {
+  if (date === undefined) {
+    return [];
+  }
+
   if (Array.isArray(date)) {
     return date.map(parseDates).flat();
   }
@@ -99,4 +86,74 @@ function getDateRange(dates: TournamentDateSpan[]) {
     start: all[0][0],
     end: all[all.length - 1][0],
   };
+}
+
+function parseStage(stage: InputStage, playersMap: Record<string, Player>, gamesMap: Record<string, Game>): Stage {
+  const date = parseDates(stage.date);
+
+  switch (stage.type) {
+    case 'league': {
+      const rounds = stage.rounds.map((round: string[]) => parseGames(gamesMap, round));
+
+      return {
+        ...stage,
+        date,
+        rounds,
+        table: createTable({
+          rounds,
+          gamesMap,
+          playersMap,
+          order: stage.order,
+          breakers: stage.breakers,
+        }),
+      } satisfies LeagueStage;
+    }
+    case 'ladder-table': {
+      const rounds = stage.rounds.map((round: string[]) => parseGames(gamesMap, round));
+      const playoffs = stage.playoffs ? parseGames(gamesMap, stage.playoffs) : [];
+
+      return {
+        ...stage,
+        date,
+        rounds,
+        playoffs,
+        table: createLadderTable({
+          rounds,
+          playoffs,
+          gamesMap,
+          order: stage.order,
+        }),
+      };
+    }
+    case 'final': {
+      const games = parseGames(gamesMap, stage.games);
+
+      return {
+        ...stage,
+        date,
+        games,
+        table: createFinalTable({
+          games,
+          gamesMap,
+          includePrevious: stage.includePrevious ?? false,
+        }),
+      };
+    }
+    case 'round-robin-table': {
+      const games = parseGames(gamesMap, stage.games);
+
+      return {
+        ...stage,
+        date,
+        games,
+        table: createTableWithoutRounds({
+          games,
+          gamesMap,
+          playersMap
+        }),
+      };
+    }
+    default:
+      throw new Error(`Unrecognized stage ${stage.type}`);
+  }
 }
