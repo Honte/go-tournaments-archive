@@ -1,0 +1,46 @@
+; EV[15th World Amateur Go Championship]
+; PC[JP, Fukuoka]
+; DT[1993-05-25,1993-05-28]
+; HA[h9]
+; KM[5.5]
+; CM[Shared Places 4-5,7-8,11-12,21-22,28-29,34-35]
+1	Sun Yiguo	7d	CN	xxx	7	7	44	37	12+	16+	8+	5+	3+	2-	4+	7+
+2	Seo Soonjoo	5d	KR	xxx	7	7	43	37	11+	20+	24+	4+	9+	1+	3-	5+
+3	Hirata Hironori	7d	JP	xxx	6	6	44	31	26+	10+	18+	6+	1-	7+	2+	4-
+4	Chou Chun-Hsun	6d	TW	xxx	6	6	42	28	23+	15+	7+	2-	11+	18+	1-	3+
+5	Schlemper Ronald	6d	NL	xxx	6	6	42	28	27+	13+	6+	1-	19+	8+	9+	2-
+6	Mun Yongsam	6d	KP	xxx	6	6	37	25	30+	14+	5-	3-	16+	15+	17+	8+
+7	Kan Ying	7d	HK	xxx	5	5	39	20	35+	25+	4-	20+	21+	3-	13+	1-
+8	Beck June-Ki	6d	CA	xxx	5	5	39	20	38+	22+	1-	24+	10+	5-	12+	6-
+9	Gerlach Christoph	4d	DE	xxx	5	5	37	20	31+	24-	23+	12+	2-	21+	5-	17+
+10	Scheid Bernhard	5d	AT	xxx	5	5	35	20	32+	3-	22+	14+	8-	20+	18-	15+
+11	Yeo Teong-Loke	4d	MY	xxx	5	5	35	18	2-	34+	26+	29+	4-	17-	19+	22+
+12	Ariya Khosa	5d	TH	xxx	5	5	35	18	1-	38+	25+	9-	23+	19+	8-	21+
+13	Crasmaru Marcel	4d	RO	xxx	5	5	34	18	28+	5-	14-	27+	24+	25+	7-	18+
+14	Hahn Sang-dae	6d	AU	xxx	5	5	32	17	37+	6-	13+	10-	17-	36+	20+	16+
+15	Nechanicky Radek	5d	CZ	xxx	4	4	36	15	33+	4-	17+	19-	22+	6-	23+	10-
+16	Matoh Leon	5d	SI	xxx	4	4	36	14	29+	1-	20-	26+	6-	32+	24+	14-
+17	Tawara Guillermo	3d	AR	xxx	4	4	35	16	21+	18-	15-	37+	14+	11+	6-	9-
+18	Kim Woo-Jin	6d	US	xxx	4	4	35	14	36+	17+	3-	21-	29+	4-	10+	13-
+19	Flusser Miguel	5d	BR	xxx	4	4	33	13	22-	33+	27+	15+	5-	12-	11-	28+
+20	Gondor Andras	5d	HU	xxx	4	4	33	11	39+	2-	16+	7-	28+	10-	14-	27+
+21	Kraszek Janusz	5d	PL	xxx	4	4	32	13	17-	36+	30+	18+	7-	9-	25+	12-
+22	Shepperson Piers	5d	UK	xxx	4	4	32	13	19+	8-	10-	36+	15-	29+	26+	11-
+23	Bro-Jorgensen Ulrik	4d	DK	xxx	4	4	32	12	4-	28+	9-	33+	12-	35+	15-	32+
+24	Wong Kok-Meng	4d	SG	xxx	4	4	32	11	40+	9+	2-	8-	13-	28+	16-	29+
+25	Olsson Ulf	4d	SE	xxx	4	4	30	11	34+	7-	12-	30+	32+	13-	21-	36+
+26	Bouzy Bruno	2d	FR	xxx	4	4	27	8	3-	40+	11-	16-	37+	27+	22-	31+
+27	Karppinen Ari	2d	FI	xxx	3	3	30	7	5-	39+	19-	13-	31+	26-	33+	20-
+28	Soletti Ramon	2d	IT	xxx	3	3	29	8	13-	23-	34+	35+	20-	24-	36+	19-
+29	Nicolet Philip	2d	CH	xxx	3	3	29	8	16-	35+	37+	11-	18-	22-	30+	24-
+30	Wong Chi-Yiu	2d	BE	xxx	3	3	27	7	6-	32+	21-	25-	34+	31-	29-	39+
+31	Rivaud Juan-Jose	3d	MX	xxx	3	3	25	8	9-	37-	32-	38+	27-	30+	35+	26-
+32	Tan Edmond	1d	PH	xxx	3	3	25	5	10-	30-	31+	40+	25-	16-	37+	23-
+33	Pons Joan	2d	ES	xxx	3	3	22	5	15-	19-	38+	23-	36-	34+	27-	40+
+34	Mitchell Noel	1d	IE	xxx	3	3	21	3	25-	11-	28-	39+	30-	33-	40+	37+
+35	Phease Yucong	4d	NZ	xxx	3	3	21	3	7-	29-	40+	28-	39+	23-	31-	38+
+36	Segura Carlos	1d	CL	xxx	2	2	28	4	18-	21-	39+	22-	33+	14-	28-	25-
+37	Christoffersen Terje	1d	NO	xxx	2	2	27	5	14-	31+	29-	17-	26-	38+	32-	34-
+38	Schmit Paul	2k	LU	xxx	2	2	22	1	8-	12-	33-	31-	40+	37-	39+	35-
+39	Branco Gabriel	2k	PT	xxx	1	1	20	0	20-	27-	36-	34-	35-	40+	38-	30-
+40	Puerta Maria	3k	VE	xxx	0	0	23	0	24-	26-	35-	32-	38-	39-	34-	33-

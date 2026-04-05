@@ -1,0 +1,77 @@
+; TC[W080528]
+; CL[A]
+; EV[29th World Amateur Go Championship]
+; PC[JP, Tokyo]
+; DT[2008-05-28,2007-05-31]
+; HA[h9]
+; KM[6.5]
+; TM[110]
+;
+  1 Ha Sung-Bong                     7d KR Seo   8 8  44 311  37+ 46+ 16+  5+  2+  8+  3+  4+ |15037154
+  2 Guo Yuzheng                      7d CN Daq   7 7  43 307  27+ 41+ 12+  4+  1- 26+  6+  5+ |15050156
+  3 Aguilar Fernando                 7d AR SFe   7 7  43 300  24+ 48+  7+  6+ 18+ 11+  1- 13+ |12098713
+  4 Chan Naisan                      7d HK Wam   6 6  44 305  29+ 47+  9+  2- 13+  7+ 14+  1- |14349742
+  5 Tsuchimune Yoshiyuki             7d JP Tok   6 6  40 299  39+ 45+ 54+  1- 12+ 17+ 11+  2- |15062157
+  6 Burzo Cornel                     6d RO BaMa  6 6  40 299  13+ 30+ 25+  3- 51+ 15+  2- 19+ |10325249
+  7 Guan Mozheng                     7d US xxx   6 6  37 290  38+ 26+  3- 46+ 32+  4- 20+ 33+ |12974401
+  8 Balogh Pal                       6d HU Debr  6 6  37 281  45- 60+ 10+ 36+ 31+  1- 15+ 18+ |10498246
+  9 Dickhut Franz-Josef              6d DE Mon   6 6  36 284  22+ 49+  4- 18- 50+ 30+ 16+ 11+ |10501403
+ 10 Yang Tsung-Lin                   6d TW Tai   6 6  36 283  28+ 16-  8- 52+ 34+ 27+ 12+ 14+ |15074158
+ 11 Heiser Laurent                   6d LU Lux   5 5  42 296  17+ 36+ 19+ 28+ 14+  3-  5-  9- |10249195
+ 12 Ge Yongfei                       7d CA Sca   5 5  40 269  43+ 40+  2- 41+  5- 21+ 10- 38+ |14350743
+ 13 Jabarin Ali                      4d IL TAv   5 5  39 283   6- 58+ 49+ 22+  4- 35+ 17+  3- |14637810
+ 14 Hora Jan                         6d CZ Pra   5 5  39 282  56+ 23+ 20+ 31+ 11- 16+  4- 10- |10401083
+ 15 Mitic Dusan                      4d RS Nis   5 5  38 267  36- 44+ 35+ 21+ 19+  6-  8- 30+ |10649507
+ 16 Trairananusom Ruechagom          4d TH Bha   5 5  37 281  66+ 10+  1- 48+ 25+ 14-  9- 40+ |15662097
+ 17 Audouard Pierre                  5d FR 13Ma  5 5  37 272  11- 42+ 33+ 23+ 30+  5- 13- 43+ |10437284
+ 18 Janssen Frank                    6d NL Alme  5 5  36 271  34+ 32- 63+  9+  3- 45+ 28+  8- |10298596
+ 19 Shin Raphael                     6d AU Eas   5 5  35 281  52+ 53+ 11- 20+ 15- 29+ 25+  6- |13437061
+ 20 Macfadyen Matthew                6d UK Leam  5 5  34 264  33+ 55+ 14- 19- 53+ 32+  7- 34+ |10249019
+ 21 Carles Pau                       3d ES Bar   5 5  33 271  58+ 31- 27+ 15- 33+ 12- 35+ 29+ |10398036
+ 22 Chwedyna Kamil                   4d PL Koz   5 5  32 267   9- 50+ 53+ 13- 26- 49+ 37+ 25+ |13513786
+ 23 Paatero Lauri                    3d FI Hels  5 5  30 273  51+ 14- 26+ 17- 29- 59+ 46+ 27+ |10362649
+ 24 Ofstad Morten                    4d NO Osl   5 5  30 264   3- 66+ 40- 42+ 48+ 25- 47+ 28+ |10762752
+ 25 Zhou Juhua                       4d NZ Auc   4 4  38 264  44+ 35+  6- 29+ 16- 24+ 19- 22- |15086159
+ 26 Okawa Hiroaki                    3d BR SPa   4 4  36 258  42+  7- 23- 55+ 22+  2- 27- 60+ |15098160
+ 27 Bro-Joergensen Ulrik             4d DK KGK   4 4  35 259   2- 52+ 21- 66+ 41+ 10- 26+ 23- |10398762
+ 28 Minieri Davide                   3d IT Pado  4 4  34 268  10- 57+ 45+ 11- 47+ 39+ 18- 24- |12801602
+ 29 Renner Josef                     3d CH Zur   4 4  34 263   4- 65+ 38+ 25- 23+ 19- 48+ 21- |12649714
+ 30 Ramirez-Reyes Jaime              4d CO Bog   4 4  34 261  67+  6- 39+ 37+ 17-  9- 58+ 15- |12837704
+ 31 Sakhabutdinov Rustam             5d RU 77Mo  4 4  34 255  50+ 21+ 32+ 14-  8- 43- 33- 56+ |10349394
+ 32 Fernandez-Caballero Antonio      5d CU Hab   4 4  33 254  61+ 18+ 31- 40+  7- 20- 38- 57+ |12874708
+ 33 Thanh Tran-Chi                   3d VN Hoc   4 4  33 251  20- 67+ 17- 49+ 21- 44+ 31+  7- |12825703
+ 34 Matoh Leon                       5d SI NMe   4 4  33 250  18- 59+ 36- 56+ 10- 41+ 39+ 20- |10398608
+ 35 Strelka Martin                   1k SK Brat  4 4  32 266  54+ 25- 15- 44+ 46+ 13- 21- 48+ |10625857
+ 36 Regginos Dimitris                1d CY Nico  4 4  32 261  15+ 11- 34+  8- 59- 56+ 40- 55+ |13225795
+ 37 Wettach Alain                    4d BE Brug  4 4  32 255   1- 51+ 47+ 30- 39- 61+ 22- 53+ |10437548
+ 38 Chuah Chee-Hiong                 3d SG Sin   4 4  32 252   7- 64+ 29- 39- 42+ 50+ 32+ 12- |15001162
+ 39 Zakanj Matej                     2d HR VGor  4 4  31 257   5- 62+ 30- 38+ 37+ 28- 34- 51+ |13437963
+ 40 Quintero Ricardo                 5d MX Mex   4 4  31 255  63+ 12- 24+ 32- 45- 52+ 36+ 16- |10898789
+ 41 Huettler Franz                   4d AT Wien  4 4  28 260  68+  2- 55+ 12- 27- 34- 59+ 46+ |10274869
+ 42 Schroeter Carl-Nicolas           3d CL San   4 4  28 237  26- 17- 62+ 24- 38- 65+ 54+ 47+ |15013163
+ 43 Barisic Dragan                   4d BA BLu   4 4  26 254  12- 61- 57+ 47- 66+ 31+ 45+ 17- |10398091
+ 44 Rakotoarisoa Abel                2d MG Ant   4 4  24 247  25- 15- 67+ 35- 68+ 33- 49+ 45+ |12701084
+ 45 Li Martin                        5d SE Bor   3 3  35 251   8+  5- 28- 62+ 40+ 18- 43- 44- |10498631
+ 46 Zulkifli Zaid                    5d MY KLu   3 3  35 243  64+  1- 56+  7- 35- 54+ 23- 41- |15025164
+ 47 Putera Martin                    3d ID xxx   3 3  33 246  57+  4- 37- 43+ 28- 53+ 24- 42- |15037165
+ 48 Agvandondov Demberelnaymbu       1d MN Ula   3 3  32 249  65+  3- 61+ 16- 24- 51+ 29- 35- |15050167
+ 49 Scheffler Konrad                 2d ZA CTo   3 3  30 238  59+  9- 13- 33- 60+ 22- 44- 63+ |10986107
+ 50 Bachri Amine-Mehdi               2d MA xxx   3 3  29 237  31- 22- 59+ 54+  9- 38- 57- 62+ |10625769
+ 51 Quevedo-Valencia Sergio          1d EC Tol   3 3  29 233  23- 37- 64+ 58+  6- 48- 62+ 39- |15062168
+ 52 Davis Ian                        1d IE xxx   3 3  28 240  19- 27- 60+ 10- 57+ 40- 55- 66+ |12913769
+ 53 Suponev Alexandr                 1d BY Min   3 3  27 239  60+ 19- 22- 61+ 20- 47- 67+ 37- |12349205
+ 54 Sulak Fatih                      2d TR Ank   3 3  27 237  35- 63+  5- 50- 58+ 46- 42- 59+ |12786081
+ 55 Maciulskis Arturas               1d LT Kaun  3 3  27 226  62+ 20- 41- 26- 56- 64+ 52+ 36- |12950234
+ 56 Benenati Martin                  2d UY Mnv   3 3  25 244  14- 68+ 46- 34- 55+ 36- 61+ 31- |14325751
+ 57 Traykov Stanislav                1k BG Sofi  3 3  25 229  47- 28- 43- 64+ 52- 60+ 50+ 32- |15013152
+ 58 Paiz-Castillo Hector             1d GT Gua   3 3  25 228  21- 13- 65+ 51- 54- 67+ 30- 61+ |12737087
+ 59 Neto Cristovao                   1d PT Por   2 2  28 228  49- 34- 50- 65+ 36+ 23- 41- 54- |14225640
+ 60 Igei Manuel                      1d PE xxx   2 2  26 223  53-  8- 52- 63+ 49- 57- 64+ 26- |15074169
+ 61 Sowal Narendra                   1d NP Bha   2 2  25 222  32- 43+ 48- 53- 67+ 37- 56- 58- |13650824
+ 62 Gutierrez Daniel                 2k VE Car   2 2  23 223  55- 39- 42- 45- 65+ 66+ 51- 50- |15086170
+ 63 Quesada-Garcia David             1k CR Car   2 2  20 214  40- 54- 18- 60- 64- 68+ 66+ 49- |15033172
+ 64 Shah Raju-Kumar                  1k IN Kol   2 2  20 213  46- 38- 51- 57- 63+ 55- 60- 68+ |15001173
+ 65 Sacramento Martin                1k PH Man   2 2  19 211  48- 29- 58- 59- 62- 42- 68+ 67+ |15013174
+ 66 Mamedov Ibadat                   1d AZ Bak   1 1  25 218  16- 24- 68+ 27- 43- 62- 63- 52- |13250017
+ 67 Voskanyan Samvel                 3k AM Jeg   1 1  22 206  30- 33- 44- 68+ 61- 58- 53- 65- |15025153
+ 68 Escobar-Thompson Edgar           5k PA Pan   0 0  19 183  41- 56- 66- 67- 44- 63- 65- 64- |13650835

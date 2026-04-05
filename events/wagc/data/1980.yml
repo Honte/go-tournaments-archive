@@ -1,7 +1,6 @@
 stages:
   - type: tournament
-    file: 1980/wagc1980.txt
-    sgfsDir: 1980
+    file: wagc1980.txt
     scoringColumns:
       - wins
       - null

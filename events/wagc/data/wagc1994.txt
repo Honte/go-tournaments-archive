@@ -1,0 +1,49 @@
+; EV[16th World Amateur Go Championship]
+; PC[JP, Kyoto]
+; DT[1994-05-23,1994-05-26]
+; HA[h9]
+; KM[5.5]
+1	Satoshi Hiraoka	6d	JP	xxx	8	8	42	22+	17+	7+	6+	18+	2+	5+	3+
+2	Chou Chun-hsun	7d	TW	xxx	7	7	43	27+	19+	9+	4+	3+	1-	8+	12+
+3	Wang Cun	7d	CN	xxx	6	6	43	25+	8+	29+	10+	2-	7+	6+	1-
+4	Kim Sehyun	6d	KR	xxx	6	6	43	21+	15+	5+	2-	11+	6-	13+	10+
+5	Lee John	6d	US	xxx	6	6	41	34+	13+	4-	24+	9+	10+	1-	7+
+6	Mateescu Robert	5d	RO	xxx	6	6	39	39+	20+	18+	1-	8+	4+	3-	23+
+7	Detkov Ivan	6d	RU	xxx	5	5	42	11+	31+	1-	12+	20+	3-	14+	5-
+8	Gondor Andras	5d	HU	xxx	5	5	39	38+	3-	15+	17+	6-	23+	2-	22+
+9	Nechanicky Radek	5d	CZ	xxx	5	5	37	29+	22+	2-	21+	5-	13-	26+	24+
+10	Kan Ying	7d	HK	xxx	5	5	37	44+	28+	12+	3-	14+	5-	16+	4-
+11	Dickhut Franz-Josef	6d	DE	xxx	5	5	36	7-	42+	16+	13+	4-	15+	20-	25+
+12	Heiser Laurent	6d	LU	xxx	5	5	35	23+	32+	10-	7-	29+	22+	17+	2-
+13	Ledovskii Yuri	6d	UA	xxx	5	5	34	43+	5-	27+	11-	32+	9+	4-	17+
+14	Ben-Malek Farid	6d	FR	xxx	5	5	33	24+	18-	30+	19+	10-	25+	7-	20+
+15	Penz Harald	4d	AT	xxx	5	5	33	33+	4-	8-	30+	26+	11-	21+	31+
+16	Hansen Frank	5d	DK	xxx	5	5	30	17-	37+	11-	36+	39+	18+	10-	19+
+17	Eijkhout Michiel	5d	NL	xxx	4	4	39	16+	1-	35+	8-	27+	20+	12-	13-
+18	Sasaki Jorge	5d	BR	xxx	4	4	37	40+	14+	6-	23+	1-	16-	19-	30+
+19	Sanchez Cesar	2d	ES	xxx	4	4	35	26+	2-	21-	14-	36+	35+	18+	16-
+20	Choi Jong-Sung	6d	CA	xxx	4	4	34	35+	6-	39+	28+	7-	17-	11+	14-
+21	Cann Desmond	4d	UK	xxx	4	4	34	4-	26+	19+	9-	22-	34+	15-	33+
+22	Bates Jim	6d	AU	xxx	4	4	34	1-	9-	42+	40+	21+	12-	33+	8-
+23	Ong Peng-Chwan	4d	SG	xxx	4	4	34	12-	38+	31+	18-	24+	8-	28+	6-
+24	Soldan Leszek	6d	PL	xxx	4	4	33	14-	41+	25+	5-	23-	30+	27+	9-
+25	Flood Jostein	4d	NO	xxx	4	4	31	3-	40+	24-	41+	28+	14-	36+	11-
+26	Siivola Matti	5d	FI	xxx	4	4	29	19-	21-	32+	34+	15-	39+	9-	29+
+27	Yeo Teong-Loke	4d	MY	xxx	4	4	29	2-	43+	13-	37+	17-	42+	24-	35+
+28	Ekart Eduard	5d	SI	xxx	4	4	27	37+	10-	41+	20-	25-	29+	23-	40+
+29	Borloz Francois	2d	CH	xxx	3	3	32	9-	34+	3-	35+	12-	28-	39+	26-
+30	Wettach Alain	2d	BE	xxx	3	3	29	32-	33+	14-	15-	31+	24-	41+	18-
+31	Grierson Colin	4d	NZ	xxx	3	3	28	36+	7-	23-	32-	30-	40+	34+	15-
+32	Pedrini Enzo	2d	IT	xxx	3	3	28	30+	12-	26-	31+	13-	33-	35-	39+
+33	Chairasmisak Korsak	5d	TH	xxx	3	3	27	15-	30-	34-	38+	40+	32+	22-	21-
+34	Alaluf Roberto	4d	AR	xxx	3	3	26	5-	29-	33+	26-	41+	21-	31-	43+
+35	Persson Magnus	2d	SE	xxx	3	3	25	20-	36+	17-	29-	44+	19-	32+	27-
+36	Chacon Jose	4d	MX	xxx	3	3	24	31-	35-	44+	16-	19-	37+	25-	42+
+37	Karali Huseyin	1d	TR	xxx	3	3	21	28-	16-	43+	27-	42-	36-	44+	41+
+38	Gibson John	2k	IE	xxx	3	3	19	8-	23-	40-	33-	43+	41-	42+	44+
+39	Ishida Chizuko	5d	JP	xxx	2	2	26	6-	44+	20-	43+	16-	26-	29-	32-
+40	Edwards Paul	1d	ZA	xxx	2	2	26	18-	25-	38+	22-	33-	31-	43+	28-
+41	Sebrosa Jose	3k	PT	xxx	2	2	26	42+	24-	28-	25-	34-	38+	30-	37-
+42	Grange Luis_de	1k	CL	xxx	2	2	24	41-	11-	22-	44+	37+	27-	38-	36-
+43	Romero Susana	3k	VE	xxx	1	1	22	13-	27-	37-	39-	38-	44+	40-	34-
+44	Tan Bee-Giok	4d	PH	xxx	0	0	22	10-	39-	36-	42-	35-	43-	37-	38-

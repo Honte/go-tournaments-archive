@@ -1,0 +1,11 @@
+stages:
+  - type: tournament
+    file: wagc2012.txt
+    scoringColumns:
+      - wins
+      - null
+      - sos
+    breakers:
+      - wins
+      - sos
+    findSharedPlaces: true

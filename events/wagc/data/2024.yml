@@ -1,0 +1,3 @@
+stages:
+  - type: tournament
+    file: wagc2024.txt

@@ -1,0 +1,50 @@
+; EV[17th World Amateur Go Championship]
+; PC[JP, Tokyo]
+; DT[1995-05-21,1995-05-24]
+; HA[h9]
+; KM[5.5]
+; CM[Shared Places 17-18]
+1	Hironori Hirata	7d	JP	xxx	7	7	42	319	16+	19+	5+	9+	7+	3-	6+	4+
+2	Shi Hongyi	7d	CN	xxx	7	7	41	300	27+	22+	13+	4-	12+	5+	3+	9+
+3	Kan Ying	7d	HK	xxx	6	6	44	313	12+	20+	8+	18+	4+	1+	2-	5-
+4	Park Sung-kyun	7d	KR	xxx	6	6	44	306	15+	21+	11+	2+	3-	8+	10+	1-
+5	Lee Jong-Moon	6d	US	xxx	6	6	41	304	23+	7+	1-	31+	10+	2-	17+	3+
+6	Wang Wenheng	6d	TW	xxx	6	6	38	287	26+	11-	24+	25+	9+	16+	1-	8+
+7	Chi Andrew	7d	AU	xxx	5	5	40	286	14+	5-	22+	11+	1-	20+	24+	13-
+8	Rittner Egbert	6d	DE	xxx	5	5	39	289	28+	17+	3-	30+	13+	4-	15+	6-
+9	Schlemper Ronald	7d	NL	xxx	5	5	39	285	25+	30+	31+	1-	6-	21+	13+	2-
+10	Mateescu Robert	6d	RO	xxx	5	5	37	287	18-	26+	21+	17+	5-	14+	4-	20+
+11	Laatikainen Vesa	5d	FI	xxx	5	5	36	287	33+	6+	4-	7-	24-	25+	19+	17+
+12	Seailles Jeff	5d	FR	xxx	5	5	36	280	3-	23+	35+	15+	2-	17-	30+	21+
+13	Saifullin Ruslan	6d	RU	xxx	5	5	35	282	40+	18+	2-	32+	8-	22+	9-	7+
+14	Gondor Andras	5d	HU	xxx	5	5	33	276	7-	27+	18-	19+	23+	10-	34+	16+
+15	Hong Sunghwa	6d	CA	xxx	5	5	33	273	4-	41+	20+	12-	16+	34+	8-	24+
+16	Flood Jostein	4d	NO	xxx	4	4	38	261	1-	28+	37+	24+	15-	6-	23+	14-
+17	Chow Victor	4d	ZA	xxx	4	4	36	276	38+	8-	19+	10-	32+	12+	5-	11-
+18	Phease Barry	4d	NZ	xxx	4	4	36	276	10+	13-	14+	3-	35+	24-	22+	19-
+19	Heshe Thomas	5d	DK	xxx	4	4	35	253	29+	1-	17-	14-	36+	39+	11-	18+
+20	Nechanicky Radek	5d	CZ	xxx	4	4	34	263	37+	3-	15-	29+	31+	7-	33+	10-
+21	Huttler Franz	4d	AT	xxx	4	4	34	262	36+	4-	10-	39+	30+	9-	26+	12-
+22	Kraszek Janusz	5d	PL	xxx	4	4	33	266	43+	2-	7-	27+	25+	13-	18-	32+
+23	Shaw Edmund	5d	UK	xxx	4	4	33	250	5-	12-	26+	38+	14-	35+	16-	36+
+24	Mai K	4d	SG	xxx	4	4	32	271	44+	32+	6-	16-	11+	18+	7-	15-
+25	Matoh Leon	5d	SI	xxx	4	4	32	251	9-	40+	29+	6-	22-	11-	35+	34+
+26	Chairasmisak Korsak	5d	TH	xxx	4	4	29	245	6-	10-	23-	43+	29+	32+	21-	40+
+27	Pons Joan	2d	ES	xxx	4	4	28	236	2-	14-	36+	22-	33-	43+	42+	31+
+28	Zagorodnij Igor	5d	UA	xxx	4	4	27	243	8-	16-	39+	33+	34-	37+	31-	30+
+29	Koch Sebastien	1d	CH	xxx	4	4	25	227	19-	43+	25-	20-	26-	41+	38+	33+
+30	Asato Carlos	3d	AR	xxx	3	3	32	248	39+	9-	33+	8-	21-	38+	12-	28-
+31	Yeo Teong-Loke	4d	MY	xxx	3	3	31	249	41+	34+	9-	5-	20-	33-	28+	27-
+32	Jakubec Stanislav	4d	SK	xxx	3	3	30	242	35+	24-	34+	13-	17-	26-	39+	22-
+33	Willfor Lars	2d	SE	xxx	3	3	30	237	11-	36+	30-	28-	27+	31+	20-	29-
+34	Torres Carlos	3d	MX	xxx	3	3	29	229	42+	31-	32-	37+	28+	15-	14-	25-
+35	Dodinval Olivier	1d	BE	xxx	3	3	27	233	32-	38+	12-	40+	18-	23-	25-	42+
+36	Djap Woei-Haw	3d	ID	xxx	3	3	24	227	21-	33-	27-	44+	19-	40+	37+	23-
+37	Vitari Maurizio	1d	IT	xxx	3	3	23	220	20-	42+	16-	34-	40+	28-	36-	43+
+38	Karaerkek Kerem	1d	TR	xxx	3	3	22	214	17-	35-	41+	23-	42+	30-	29-	44+
+39	Flinter Stephen	1k	IE	xxx	3	3	21	223	30-	44+	28-	21-	43+	19-	32-	41+
+40	Carillo Juan-Carlos	3d	CL	xxx	2	2	24	210	13-	25-	42+	35-	37-	36-	44+	26-
+41	Cymbalista Andre	1d	BR	xxx	2	2	21	196	31-	15-	38-	42-	44+	29-	43+	39-
+42	Schmit Paul	2k	LU	xxx	2	2	20	194	34-	37-	40-	41+	38-	44+	27-	35-
+43	Faria Luis	3k	PT	xxx	1	1	24	200	22-	29-	44+	26-	39-	27-	41-	37-
+44	Romero Susana	3k	VE	xxx	0	0	20	188	24-	39-	43-	36-	41-	42-	40-	38-

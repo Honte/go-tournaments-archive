@@ -1,0 +1,46 @@
+; EV[14th World Amateur Go Championship]
+; PC[JP, Chiba]
+; DT[1992-05-25,1992-05-30]
+; HA[h9]
+; KM[5.5]
+; CM[Shared Places 31-33]
+1	Kikuchi Yasuro	7d	JP	xxx	7	7	44	10+	21+	8+	13+	2+	7+	3-	4+
+2	Lee Yongman	5d	KR	xxx	7	7	42	24+	16+	5+	3+	1-	18+	7+	8+
+3	Han Qi-Yu	6d	CN	xxx	7	7	42	29+	14+	9+	2-	15+	5+	1+	10+
+4	Heiser Laurent	6d	LU	xxx	6	6	41	13+	18+	15+	7-	8+	6+	9+	1-
+5	Macfadyen Matthew	6d	UK	xxx	6	6	40	23+	28+	2-	9+	10+	3-	17+	7+
+6	Kou Yupang	7d	TW	xxx	6	6	37	12+	30+	7-	19+	11+	4-	13+	20+
+7	Kan Ying	7d	HK	xxx	5	5	44	22+	26+	6+	4+	25+	1-	2-	5-
+8	Janssen Frank	6d	NL	xxx	5	5	40	17+	27+	1-	16+	4-	22+	11+	2-
+9	Lazarev Alexej	6d	RU	xxx	5	5	39	20+	25+	3-	5-	21+	17+	4-	15+
+10	Moussa Andre	5d	FR	xxx	5	5	39	1-	33+	26+	21+	5-	25+	15+	3-
+11	Kim Joong-Ki	6d	US	xxx	5	5	36	19+	15-	18+	20+	6-	12+	8-	25+
+12	Flood Jostein	4d	NO	xxx	5	5	36	6-	24+	13-	32+	14+	11-	23+	19+
+13	Spiegl Ralph	5d	AT	xxx	5	5	36	4-	40+	12+	1-	23+	16+	6-	18+
+14	Mattern Jurgen	5d	DE	xxx	5	5	32	31+	3-	17+	15-	12-	39+	24+	16+
+15	Mun Yongsam	5d	KP	xxx	4	4	38	39+	11+	4-	14+	3-	20+	10-	9-
+16	Yeo Cheong-Tat	4d	MY	xxx	4	4	35	32+	2-	30+	8-	29+	13-	26+	14-
+17	Gondor Andras	5d	HU	xxx	4	4	34	8-	34+	14-	24+	19+	9-	5-	36+
+18	Ariya Khosa	5d	TH	xxx	4	4	34	33+	4-	11-	35+	34+	2-	31+	13-
+19	Cipra Petr	5d	CS	xxx	4	4	33	11-	31+	28+	6-	17-	30+	21+	12-
+20	Tse Ying-Min	6d	SG	xxx	4	4	32	9-	38+	29+	11-	27+	15-	22+	6-
+21	Chang Young	4d	CA	xxx	4	4	32	35+	1-	32+	10-	9-	34+	19-	33+
+22	Lee Kwong-Moon	5d	BR	xxx	4	4	31	7-	37+	23+	25-	26+	8-	20-	29+
+23	Garcia_dl_Banda Paco	4d	ES	xxx	4	4	31	5-	35+	22-	30+	13-	28+	12-	27+
+24	Laatikainen Vesa	5d	FI	xxx	4	4	31	2-	12-	37+	17-	36+	27+	14-	32+
+25	Gherman Sorin	5d	RO	xxx	4	4	30	40+	9-	27+	22+	7-	10-	33+	11-
+26	Giedrojc Krzysztof	4d	PL	xxx	4	4	28	38+	7-	10-	36+	22-	31+	16-	28+
+27	Phease Barry	4d	NZ	xxx	3	3	29	34+	8-	25-	28+	20-	24-	37+	23-
+28	Carillo Juan-Carlos	2d	CL	xxx	3	3	29	37+	5-	19-	27-	32+	23-	34+	26-
+29	Lazarevic Milan	5d	YU	xxx	3	3	28	3-	36+	20-	38+	16-	33-	35+	22-
+30	Quintero Ricardo	4d	MX	xxx	3	3	27	36+	6-	16-	23-	35+	19-	32-	38+
+31	Wettach Alain	2d	BE	xxx	3	3	26	14-	19-	36+	34-	38+	26-	18-	35+
+32	Frederiksen Jan	3d	DK	xxx	3	3	26	16-	39+	21-	12-	28-	37+	30+	24-
+33	Fontaine Serge	2d	CH	xxx	3	3	26	18-	10-	34-	37+	39+	29+	25-	21-
+34	Lindstedt Christer	2d	SE	xxx	3	3	24	27-	17-	33+	31+	18-	21-	28-	40+
+35	Reye Stephen	3d	AU	xxx	2	2	23	21-	23-	40+	18-	30-	38+	29-	31-
+36	Tan Bee-Giok	4d	PH	xxx	2	2	22	30-	29-	31-	26-	24-	40+	39+	17-
+37	Almiron Carlos	3d	AR	xxx	2	2	21	28-	22-	24-	33-	40+	32-	27-	39+
+38	Burlini Enzo	1d	IT	xxx	2	2	20	26-	20-	39+	29-	31-	35-	40+	30-
+39	Mitchell Noel	1d	IE	xxx	1	1	21	15-	32-	38-	40+	33-	14-	36-	37-
+40	Cifuentes Calixto	3k	VE	xxx	0	0	21	25-	13-	35-	39-	37-	36-	38-	34-

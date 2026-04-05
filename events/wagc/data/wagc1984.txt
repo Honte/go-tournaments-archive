@@ -1,0 +1,36 @@
+; EV[6th World Amateur Go Championship]
+; PC[JP, Tokyo]
+; DT[1984-04-10,1984-04-13]
+; HA[h9]
+; KM[5.5]
+; CM[Shared Places 28-29]
+1	Wang Qun	6d	CN	xxx	7	7	32	12+	9+	4+	8+	7+	2+	3+
+2	Yoo Chang-hyeok	5d	KR	xxx	6	6	32	11+	15+	16+	9+	3+	1-	4+
+3	Hirata Hironori	7d	JP	xxx	5	5	32	18+	7+	8+	16+	2-	5+	1-
+4	Schlemper Ronald	6d	NL	xxx	5	5	30	27+	20+	1-	13+	10+	14+	2-
+5	Macfadyen Matthew	6d	UK	xxx	5	5	23	8-	30+	18+	17+	11+	3-	7+
+6	Colmez Pierre	4d	FR	xxx	5	5	21	16-	19-	22+	27+	24+	9+	10+
+7	Suc Lojze	4d	YU	xxx	4	4	31	14+	3-	25+	11+	1-	8+	5-
+8	Kan Wai-shui	6d	HK	xxx	4	4	30	5+	25+	3-	1-	13+	7-	20+
+9	Kraszek Janusz	5d	PL	xxx	4	4	30	24+	1-	13+	2-	16+	6-	19+
+10	Hansen Frank	5d	DK	xxx	4	4	29	13-	14+	12+	21+	4-	15+	6-
+11	Budig Stefan	4d	DE	xxx	4	4	27	2-	23+	19+	7-	5-	17+	16+
+12	Beck Gerfried	4d	AT	xxx	4	4	26	1-	29+	10-	19+	17+	18+	15-
+13	Shin Hongsoo	6d	US	xxx	4	4	25	10+	17+	9-	4-	8-	26+	18+
+14	Kiskos Laszlo	3d	HU	xxx	4	4	23	7-	10-	28+	23+	20+	4-	24+
+15	An Kwang-ho	4d	AU	xxx	4	4	20	30+	2-	24-	25+	26+	10-	12+
+16	Lee Se-ju	4d	CA	xxx	3	3	29	6+	26+	2-	3-	9-	23+	11-
+17	Olsson Ulf	3d	SE	xxx	3	3	25	22+	13-	20+	5-	12-	11-	26+
+18	Danek Vladimir	5d	CS	xxx	3	3	25	3-	28+	5-	29+	21+	12-	13-
+19	Tan Liek-foo	3d	SG	xxx	3	3	23	25-	6+	11-	12-	29+	24+	9-
+20	Garcia_dl_Banda Paco	4d	ES	xxx	3	3	22	29+	4-	17-	28+	14-	25+	8-
+21	Paatero Lauri	1k	FI	xxx	3	3	18	28+	24-	26+	10-	18-	22-	29+
+22	Tan Bee-giok	1k	PH	xxx	3	3	17	17-	27-	6-	30+	25-	21+	28+
+23	Bassarsky Franklin	3d	AR	xxx	3	3	17	26-	11-	30+	14-	27+	16-	25+
+24	Nicolet Philip	1d	CH	xxx	2	2	25	9-	21+	15+	26-	6-	19-	14-
+25	Jones Kyle	2d	NZ	xxx	2	2	24	19+	8-	7-	15-	22+	20-	23-
+26	Sasaki Jorge	4d	BR	xxx	2	2	22	23+	16-	21-	24+	15-	13-	17-
+27	Burlini Enzo	2k	IT	xxx	2	2	20	4-	22+	29-	6-	23-	28-	30+
+28	Chairasmisak Korsak	1d	TH	xxx	2	2	18	21-	18-	14-	20-	30+	27+	22-
+29	Quintero Ricardo	1d	MX	xxx	2	2	18	20-	12-	27+	18-	19-	30+	21-
+30	Roll-Lund Knut	3k	NO	xxx	0	0	21	15-	5-	23-	22-	28-	29-	27-

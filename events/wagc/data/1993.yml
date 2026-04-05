@@ -1,0 +1,15 @@
+stages:
+  - type: tournament
+    file: wagc1993.txt
+    scoringColumns:
+      - wins
+      - null
+      - sos
+      - sosos
+    sharedPlaces:
+      - 4-5
+      - 7-8
+      - 11-12
+      - 21-22
+      - 28-29
+      - 34-35

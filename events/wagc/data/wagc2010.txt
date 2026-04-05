@@ -1,0 +1,71 @@
+; TC[W100524A]
+; CL[A]
+; EV[31st World Amateur Go Championship ]
+; PC[CN, Hangzhou]
+; DT[2010-05-24,2010-05-31]
+; HA[h9]
+; KM[6.5]
+; TM[112.5]
+; CM[ (submitted by Flatline)]
+;.
+ 1 Song Hong-suk              7d KR  xxx   8    8    42   18+/b0  42+/w0  10+/b0  15+/w0  2+/b0   4+/w0   14+/b0  5+/w0    |15649095
+ 2 Wang Chen                  7d CN  xxx   7    7    43   56+/b0  16+/w0  19+/b0  12+/w0  1-/w0   6+/b0   3+/b0   4+/w0    |15025956
+ 3 Cho Tae-weon               7d KP  xxx   6    6    45   21+/b0  8+/w0   6-/b0   7+/w0   12+/w0  10+/b0  2-/w0   14+/b0   |13950827
+ 4 Chan Naisan                6d HK  WCh   6    6    43   39+/b0  23+/w0  17+/b0  11+/w0  6+/w0   1-/b0   10+/w0  2-/b0    |14349742
+ 5 Silt Ondrej                6d CZ  KaVa  6    6    41   25+/b0  17-/w0  22+/w0  20+/b0  39+/b0  11+/w0  8+/w0   1-/b0    |10337481
+ 6 Chen Zhengxun              6d TW  xxx   6    6    39   51+/b0  52+/w0  3+/w0   13+/b0  4-/b0   2-/w0   19+/w0  11+/b0   |15862275
+ 7 Balogh Pal                 6d HU  Debr  6    6    39   48+/b0  9+/w0   13-/w0  3-/b0   20+/w0  12+/b0  23+/b0  21+/w0   |10498246
+ 8 Sato Yohei                 6d JP  6     6    6    38   36+/w0  3-/b0   28+/w0  31+/b0  13+/b0  23+/w0  5-/b0   15+/w0   |14886993
+ 9 Lou Yuxiang                5d SG  xxx   6    6    38   29+/w0  7-/b0   26+/b0  17+/w0  11-/b0  22+/w0  34+/w0  13+/b0   |15474701
+10 Ge Yongfei                 7d CA  xxx   5    5    41   14+/b0  41+/w0  1-/w0   30+/b0  15+/b0  3-/w0   4-/b0   27+/w0   |14350743
+11 Blomback Fredrik           5d SE  Stoc  5    5    40   50+/b0  37+/w0  18+/w0  4-/b0   9+/w0   5-/b0   26+/b0  6-/w0    |13937946
+12 Hsiang Thomas              7d US  xxx   5    5    39   47+/b0  20+/w0  31+/w0  2-/b0   3-/b0   7-/w0   28+/b0  25+/w0   |10849784
+13 Aguilar Fernando           7d AR  SFe   5    5    38   59+/b0  22+/w0  7+/b0   6-/w0   8-/w0   33+/b0  25+/b0  9-/w0    |12098713
+14 Lazarev Alexej             6d RU  10Pt  5    5    38   10-/w0  34+/b0  45+/w0  40+/w0  16+/b0  24+/b0  1-/w0   3-/w0    |10374386
+15 Soldan Leszek              5d PL  Wars  5    5    38   55+/w0  30+/b0  32+/b0  1-/b0   10-/w0  31+/w0  18+/w0  8-/b0    |10449560
+16 Zhurakovskyj Bohdan        5d UA  Rivn  5    5    36   40+/w0  2-/b0   27+/b0  32+/w0  14-/w0  19-/w0  33+/b0  24+/b0   |12374461
+17 Scheid Bernhard            5d AT  Wien  5    5    36   46+/w0  5+/b0   4-/w0   9-/b0   37+/b0  25-/w0  42+/w0  29+/b0   |10449791
+18 Gerlach Christoph          6d DE  H     5    5    35   1-/w0   57+/b0  11-/b0  45+/w0  34+/b0  27+/w0  15-/b0  30+/w0   |10225017
+19 Zivony Ofer                3d IL  TAv   5    5    35   54+/w0  35+/b0  2-/w0   44+/b0  24-/w0  16+/b0  6-/b0   31+/w0   |14225607
+20 Debarre Thomas             5d FR  67SE  5    5    34   28+/w0  12-/b0  53+/b0  5-/w0   7-/b0   49+/w0  36+/b0  23+/w0   |12950872
+21 Laatikainen Vesa           5d FI  HGK   5    5    33   3-/w0   36+/b0  44-/w0  28+/b0  43+/w0  40+/b0  24+/w0  7-/b0    |10201015
+22 Kral Maros                 3d SK  Kosi  5    5    32   38+/w0  13-/b0  5-/b0   53+/w0  52+/w0  9-/b0   39+/b0  26+/w0   |12537041
+23 Hornbaek Kasper            5d DK  KGK   4    4    37   58+/w0  4-/b0   29+/w0  37+/b0  30+/w0  8-/b0   7-/w0   20-/b0   |10413546
+24 Mitic Nikola               5d RS  Stu   4    4    35   33+/b0  32-/w0  35+/b0  43+/w0  19+/b0  14-/w0  21-/b0  16-/w0   |10801923
+25 Lou Wan-Kao                5d MO  xxx   4    4    34   5-/w0   46+/b0  39-/b0  50+/w0  38+/w0  17+/b0  13-/w0  12-/b0   |15033832
+26 Suponev Alexandr           1d BY  Min   4    4    33   37-/b0  50+/w0  9-/w0   29+/b0  45+/b0  39+/w0  11-/w0  22-/b0   |12349205
+27 Corlan Lucian              5d RO  Bucu  4    4    32   32-/b0  33+/w0  16-/w0  54+/b0  41+/w0  18-/b0  35+/b0  10-/b0   |12586750
+28 Wettach Alain              4d BE  Brug  4    4    32   20-/b0  47+/w0  8-/b0   21-/w0  51+/w0  52+/b0  12-/w0  44+/b0   |10437548
+29 Rubidge Lloyd              1k ZA  Edi   4    4    32   9-/b0   48+/w0  23-/b0  26-/w0  53+/w0  38+/b0  37+/b0  17-/w0   |12037674
+30 Bustamante Emil            5d MX  xxx   4    4    31   45+/w0  15-/w0  42+/b0  10-/w0  23-/b0  41+/b0  40+/b0  18-/b0   |15086841
+31 Ormerod David              5d AU  xxx   4    4    31   60+/w0  43+/b0  12-/b0  8-/w0   44+/w0  15-/b0  32+/w0  19-/b0   |15874276
+32 Santipojana Kamon          4d TH  xxx   4    4    31   27+/w0  24+/b0  15-/w0  16-/b0  40-/w0  43+/b0  31-/b0  49+/w0   |14013681
+33 Groenen Geert              6d NL  DHaa  4    4    30   24-/w0  27-/b0  56+/w0  47+/b0  35+/b0  13-/w0  16-/w0  41+/b0   |10501216
+34 Teng Boon-Ping             4d MY  KLu   4    4    30   41-/b0  14-/w0  57+/w0  49+/b0  18-/w0  42+/b0  9-/b0   40+/w0   |13933832
+35 Xie Kaikun                 3d NZ  xxx   4    4    30   49+/b0  19-/w0  24-/w0  36+/b0  33-/w0  44+/b0  27-/w0  43+/b0   |14849164
+36 Tumelis Giedrius           2d LT  Kaun  4    4    30   8-/b0   21-/w0  59+/b0  35-/w0  48+/b0  47+/w0  20-/w0  51+/b0   |13813140
+37 Bui Le_Khanh_Lam           5d VN  xxx   4    4    30   26+/w0  11-/b0  55+/b0  23-/w0  17-/w0  46+/b0  29-/w0  50+/b0   |15898278
+38 Bilen Bertan               2d TR  Ank   4    4    25   22-/b0  59+/w0  52-/w0  48+/b0  25-/b0  29-/w0  46+/b0  39+/w0   |14013087
+39 Puerta Maria               3k VE  xxx   3    3    33   4-/w0   58+/b0  25+/w0  52+/b0  5-/w0   26-/b0  22-/w0  38-/b0   |10625923
+40 Pachon-Calderon Juan       3d CO  xxx   3    3    32   16-/b0  56+/w0  41+/w0  14-/b0  32+/b0  21-/w0  30-/w0  34-/b0   |15833279
+41 Hall T_Mark                4d UK  Bris  3    3    30   34+/w0  10-/b0  40-/b0  42+/w0  27-/b0  30-/w0  45+/w0  33-/w0   |10286023
+42 Baumann Daniel             1k CH  Lau   3    3    30   57+/w0  1-/b0   30-/w0  41-/b0  55+/w0  34-/w0  17-/b0  54+/w0   |10286804
+43 Egea Antonio               3d ES  MAD   3    3    29   44+/b0  31-/w0  49+/w0  24-/b0  21-/b0  32-/w0  54+/b0  35-/w0   |13701094
+44 Vestgaarden Oystein        2d NO  Oslo  3    3    28   43-/w0  60+/b0  21+/b0  19-/w0  31-/b0  35-/w0  47+/b0  28-/w0   |10986316
+45 Janza Janez                3d SI  Mari  3    3    27   30-/b0  55+/w0  14-/b0  18-/b0  26-/w0  57+/w0  41-/b0  52+/w0   |10433346
+46 Galero Michael             1d PH  xxx   3    3    27   17-/b0  25-/w0  48-/w0  58+/b0  50+/b0  37-/w0  38-/w0  55+/b0   |15313793
+47 Ioannides Sotiris          1k CY  Nico  3    3    27   12-/w0  28-/b0  51+/b0  33-/w0  54+/w0  36-/b0  44-/w0  53+/w0   |14737943
+48 Mauri Francesca            5k IT  Mila  3    3    27   7-/w0   29-/b0  46+/b0  38-/w0  36-/w0  54-/b0  56+/b0  58+/w0   |10398157
+49 Tseveenravdan Tugsbilegt   3d MN  Ula   3    3    26   35-/w0  54+/b0  43-/b0  34-/w0  56+/w0  20-/b0  55+/w0  32-/b0   |14749427
+50 Artigue Alfonso            2k UY  xxx   3    3    26   11-/w0  26-/b0  58+/w0  25-/b0  46-/w0  53+/b0  57+/b0  37-/w0   |15813281
+51 Carmona Pedro              2k PT  Lis   3    3    25   6-/w0   53-/b0  47-/w0  57+/b0  28-/b0  58+/w0  52+/b0  36-/w0   |13533652
+52 Gibson John                2k IE  Dubl  2    2    30   53+/w0  6-/b0   38+/b0  39-/w0  22-/b0  28-/w0  51-/w0  45-/b0   |10637385
+53 Rios_Joels Carlos_Leon     1k PE  xxx   2    2    26   52-/b0  51+/w0  20-/w0  22-/b0  29-/b0  50-/w0  59+/w0  47-/b0   |15837283
+54 Paiz-Castillo Hector       1k GT  Gua   2    2    24   19-/b0  49-/w0  60+/b0  27-/w0  47-/b0  48+/w0  43-/w0  42-/b0   |12737087
+55 Gomez-Pinto Jose           2k CL  xxx   2    2    23   15-/b0  45-/b0  37-/w0  60+/w0  42-/b0  56+/w0  49-/b0  46-/w0   |14886179
+56 Carpio-Cordero Rodrigo     7k EC  xxx   2    2    23   2-/w0   40-/b0  33-/b0  59+/w0  49-/b0  55-/b0  48-/w0  60+/w0   |15849284
+57 Deak Csaba                 1k BR  xxx   2    2    22   42-/b0  18-/w0  34-/b0  51-/w0  60+/b0  45-/b0  50-/w0  59+/w0   |15850285
+58 Rakotondravelo Jean        1k MG  xxx   2    2    20   23-/b0  39-/w0  50-/b0  46-/w0  59+/w0  51-/b0  60+/w0  48-/b0   |12586167
+59 Dave Sandeep               6k IN  xxx   1    1    21   13-/w0  38-/b0  36-/w0  56-/b0  58-/b0  60+/w0  53-/b0  57-/b0   |14801182
+60 Vargas-Campos Daniel       5k CR  xxx   0    0    18   31-/b0  44-/w0  54-/w0  55-/b0  57-/w0  59-/b0  58-/b0  56-/b0   |15862286
+

@@ -1,0 +1,10 @@
+stages:
+  - type: tournament
+    file: wagc2023.txt
+    scoringColumns:
+      - wins
+      - sos
+    breakers:
+      - wins
+      - sos
+    findSharedPlaces: true

@@ -1,0 +1,73 @@
+; TC[W180504A]
+; CL[A]
+; EV[39th World Amateur Go Championship]
+; PC[JP, Tokyo]
+; DT[2018-05-04,2018-05-07]
+; HA[h9]
+; KM[6.5]
+; TM[82.5]
+; CM[ (submitted by Flatline)]
+;.
+;Pl     Name                Rank Cou Club score sos sosos  1       2       3       4      5       6       7       8
+;
+ 1 Chan Yi-Tien               7d TW  Taiw  8    42   323  24+     13+     27+     10+     3+      2+      9+      4+       |17225758
+ 2 Kim Sangcheon              7d KR  XXXX  7    40   320  29+     23+     41+     25+     5+      1-      3+      9+       |18774316
+ 3 Wang Chen                  7d CN  Shan  6    45   318  16+     25+     9+      11+     1-      5+      2-      12+      |15025956
+ 4 Frejlak Stanislaw          6d PL  Wars  6    41   280  36+     14-     34+     26+     7+      18+     11+     1-       |12837594
+ 5 Murakami Fukashi           7d JP  XXXX  6    38   298  49+     12+     46+     14+     2-      3-      24+     13+      |14937329
+ 6 Kuronen Juri               6d FI  eGo   6    34   299  31+     10-     42+     9-      41+     26+     16+     11+      |15386382
+ 7 Mitic Dusan                7d RS  NiSt  6    32   267  19-     61+     53+     15+     4-      44+     17+     23+      |10649507
+ 8 Florencia Jose             5d MX  XXXX  6    32   257  11-     26-     45+     47+     52+     33+     20+     18+      |17686746
+ 9 Kwa Jie-Hui                6d SG  XXXX  5    44   305  28+     42+     3-      6+      12+     14+     1-      2-       |15025351
+10 Teuber Benjamin            6d DE  HH    5    40   289  15+     6+      30+     1-      14-     23-     38+     24+      |10437174
+11 Mero Csaba                 6d HU  BPMG  5    40   280  8+      34+     56+     3-      19+     13+     4-      6-       |10225875
+12 Surin Dmitrij              6d RU  78SP  5    39   312  26+     5-      23+     24+     9-      20+     14+     3-       |10825254
+13 Lo Cheuk-Tung              6d HK  XXXX  5    38   296  43+     1-      28+     30+     27+     11-     23+     5-       |18786317
+14 Ge Yongfei                 7d CA  XXXX  5    37   300  37+     4+      55+     5-      10+     9-      12-     25+      |14350743
+15 Fitrah Faishal_Umar        4d ID  XXXX  5    36   259  10-     37+     48+     7-      30+     19+     18-     28+      |18474236
+16 Karuehawanit Wichrich      4d TH  XXXX  5    35   286  3-      17+     24-     57+     28+     29+     6-      26+      |17362378
+17 Drean-Guenaizia Benjamin   6d FR  83SA  5    33   259  41-     16-     39+     43+     31+     32+     7-      33+      |14513532
+18 Lei Xin                    5d AU  XXXX  5    32   270  23-     43+     58+     56+     33+     4-      15+     8-       |18798318
+19 Nguyen Manh-Linh           5d VN  XXXX  5    31   270  7+      27-     57+     55+     11-     15-     41+     30+      |18733319
+20 Walch John                 4d CH  XXXX  5    29   264  25-     49+     61+     46+     44+     12-     8-      32+      |13949815
+21 Cheng Khai-Yong            4d MY  XXXX  5    26   247  34-     28-     0+      39+     49+     25-     42+     35+      |16598923
+22 Pereira Pedro              1k PT  CR    5    26   226  47-     35+     32-     58+     50-     48+     51+     38+      |14749361
+23 Pop Cristian               7d RO  CSRB  4    41   293  18+     2-      12-     32+     25+     10+     13-     7-       |10333389
+24 Spiegel Lothar             5d AT  Go7   4    40   293  1-      29+     16+     12-     46+     27+     5-      10-      |13750836
+25 Ye Aaron                   7d US  Cupe  4    40   280  20+     3-      38+     2-      23-     21+     27+     14-      |16233712
+26 Hu Daniel                  4d UK  Camb  4    38   276  12-     8+      31+     4-      55+     6-      29+     16-      |17213581
+27 Fragman Amir               5d IL  MGC   4    35   293  45+     19+     1-      41+     13-     24-     25-     43+      |13625315
+28 Kral Maros                 4d SK  Kosi  4    35   263  9-      21+     13-     53+     16-     34+     46+     15-      |12537041
+29 Pomstra Koen               5d NL  Arnh  4    33   279  2-      24-     37+     49+     42+     16-     26-     41+      |10249602
+30 Pedersen Torben            3d DK  KGK   4    32   267  48+     57+     10-     13-     15-     43+     31+     19-      |10401842
+31 Mestrovic Stjepan          3d HR  VGor  4    32   260  6-      45+     26-     48+     17-     36+     30-     44+      |12649307
+32 Connor Thomas              4d BE  Pant  4    32   248  42-     36+     22+     23-     56+     17-     37+     20-      |13774849
+33 Yamamoto Kina-Jorge        3d PE  XXXX  4    32   238  54+     46-     47+     38+     18-     8-      44+     17-      |15050948
+34 Prokop Jan                 6d CZ  SRic  4    30   264  21+     11-     4-      42-     57+     28-     55+     46+      |10433654
+35 Hertz Jeremie              2k LU  Lux   4    30   207  51-     22-     40+     37-     58+     39+     50+     21-      |14249851
+36 Shimada-Ramos Thiago       6d BR  XXXX  4    29   249  4-      32-     43-     45+     54+     31-     48+     47+      |15937152
+37 Tang Chan-Fai              4d MO  XXXX  4    28   258  14-     15-     29-     35+     61+     56+     32-     45+      |18486831
+38 Suponeu Aliaksandr         2d BY  XXXX  4    27   249  0+      44+     25-     33-     51+     50+     10-     22-      |12349205
+39 Guner Hakki_Burak          1d TR  Ank   4    26   214  61-     40+     17-     21-     59+     35-     58+     51+      |16733365
+40 Connell Andre              3d ZA  XXXX  4    22   218  44-     39-     35-     0+      45-     53+     59+     50+      |17362246
+41 Metta Carlo                4d IT  Pisa  3    37   268  17+     47+     2-      27-     6-      42+     19-     29-      |14713996
+42 Vazquez Oscar              5d ES  Nam   3    33   266  32+     9-      6-      34+     29-     41-     21-     55+      |15633673
+43 Matoh Leopold              5d SI  NoMe  3    33   256  13-     18-     36+     17-     47+     30-     49+     27-      |10398608
+44 Sabirovas Tomas            1k LT  Viln  3    33   225  40+     38-     51+     52+     20-     7-      33-     31-      |16586152
+45 Johansson Kim              2d SE  Vaes  3    32   224  27-     31-     8-      36-     40+     54+     52+     37-      |15313947
+46 Burgos Juan_Felipe         3d CO  XXXX  3    31   256  59+     33+     5-      20-     24-     55+     28-     34-      |16533792
+47 Sigurdarson Olafur         2d IS  Reyk  3    29   246  22+     41-     33-     8-      43-     57+     56+     36-      |16350587
+48 Thai Michael               2k IE  Dubl  3    29   228  30-     59+     15-     31-     53+     22-     36-     57+      |13925142
+49 Skochko Vasyl              4d UA  Kyiv  3    28   239  5-      20-     59+     29-     21-     61+     43-     56+      |10237876
+50 Montesinos-Gonzalez Ari    1d EC  XXXX  3    27   197  55-     52-     60+     54+     22+     38-     35-     40-      |18749324
+51 Pollitzer David            3d AR  XXXX  3    26   226  35+     55-     44-     61+     38-     52+     22-     39-      |17398249
+52 Thordarson Hordur          1d NZ  XXXX  3    25   225  57-     50+     54+     44-     8-      51-     45-     58+      |18750325
+53 Aliyev Eichin              1d AZ  Nov   3    23   214  58+     56-     7-      28-     48-     40-     60+     0+       |13262018
+54 Bataa Temuujin             1d MN  XXXX  3    21   208  33-     60+     52-     50-     36-     45-     0+      59+      |18662523
+55 Hestvik Frank              1d NO  Oslo  2    30   253  50+     51+     14-     19-     26-     46-     34-     42-      |14525731
+56 Azuaje Manuel              2d VE  XXXX  2    29   228  60+     53+     11-     18-     32-     37-     47-     49-      |14349753
+57 Turkieltaub Abner          2d CL  XXXX  2    28   240  52+     30-     19-     16-     34-     47-     61+     48-      |18762326
+58 Margaryan Ashot            5k AM  XXXX  2    26   203  53-     0+      18-     22-     35-     60+     39-     52-      |10425492
+59 Nedev Teodor               2k BG  Rous  2    22   198  46-     48-     49-     60+     39-     0+      40-     54-      |15049859
+60 Abat Celeste               5k PH  XXXX  2    16   202  56-     54-     50-     59-     0+      58-     53-     61+      |16913589
+61 Dave Shashank              4k IN  XXXX  1    29   213  39+     7-      20-     51-     37-     49-     57-     60-      |18774327

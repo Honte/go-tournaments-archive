@@ -1,12 +1,11 @@
-website: https://leago.gg/event/wagc2025
 stages:
   - type: tournament
-    file: wagc2025.txt
+    file: wagc2009.txt
     scoringColumns:
       - wins
+      - null
       - sos
       - sosos
-      - null
     breakers:
       - wins
       - sos

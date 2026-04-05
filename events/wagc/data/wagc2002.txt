@@ -1,0 +1,70 @@
+; TC[W020602]
+; CL[A]
+; EV[24th World Amateur Go Championship]
+; PC[JP, Hida]
+; DT[2002-06-02,2002-06-06]
+; KM[5.5]
+; TM[3h]
+; HA[h9]
+;
+  1 Fu Li                        7d CN xxx   8 8  43 320  15+ 40+  8+ 12+  2+  3+ 10+  4+  |12849694
+  2 Hong Maleun-Saem             7d KR xxx   7 7  44 309  38+ 24+ 16+  6+  1- 11+  7+  3+  |12501148
+  3 Kikuchi Yasuro               7d JP xxx   6 6  44 310  42+ 32+  4+  7+  5+  1- 26+  2-  |12850695
+  4 Ri Pong-il                   7d KP xxx   6 6  43 301  34+ 29+  3- 31+ 13+  8+  6+  1-  |12037509
+  5 Chow Victor                  7d ZA xxx   6 6  42 308  11+ 14+ 17+  9+  3-  6- 24+ 15+  |10449549
+  6 Pop Cristian                 6d RO VaDo  6 6  41 295  51+ 27+ 18+  2- 20+  5+  4- 13+  |10333389
+  7 Yu Cheng-juei                7d TW xxx   6 6  41 294  28+ 41+ 21+  3- 23+  9+  2- 17+  |12049510
+  8 Guo Yiming                   7d AU xxx   6 6  40 290  25+ 31+  1- 48+ 14+  4- 22+ 11+  |12874697
+  9 Colmez Pierre                5d FR 75Pa  6 6  38 293  35+ 45+ 20+  5- 26+  7- 18+ 10+  |10237018
+ 10 Yi Hosuk                     7d US xxx   5 5  42 285  22+ 16- 36+ 32+ 21+ 12+  1-  9-  |10674906
+ 11 Chadwick Norman              6d CA xxx   5 5  38 283   5- 55+ 50+ 25+ 19+  2- 16+  8-  |12886698
+ 12 Bogackyj Dmytro              6d UA Kyiv  5 5  38 280  13+ 50+ 19+  1- 33+ 10- 17- 42+  |10250867
+ 13 Nechanicky Radek             6d CZ Nym   5 5  37 283  12- 37+ 45+ 28+  4- 30+ 19+  6-  |10250196
+ 14 Balogh Pal                   5d HU Debr  5 5  37 280  36+  5- 46+ 17+  8- 29+ 15- 30+  |10498246
+ 15 Kim Steve                    5d NZ xxx   5 5  37 278   1- 49+ 25- 37+ 40+ 28+ 14+  5-  |12725075
+ 16 Matoh Leon                   5d SI NMe   5 5  36 275  52+ 10+  2- 23- 46+ 33+ 11- 29+  |10398608
+ 17 Soldan Leszek                5d PL Wars  5 5  36 273  56+ 53+  5- 14- 34+ 20+ 12+  7-  |10449560
+ 18 Lazarev Alexej               6d RU 10Pt  5 5  36 272  30+ 47+  6- 33- 31+ 23+  9- 24+  |10374386
+ 19 Tsang Ping-Fai               7d HK xxx   5 5  36 272  26+ 23+ 12- 22+ 11- 49+ 13- 36+  |12801701
+ 20 Tan Yee-Fan                  5d SG xxx   5 5  35 276  44+ 43+  9- 24+  6- 17- 35+ 27+  |12813702
+ 21 Nijhuis Emil                 6d NL Amst  5 5  35 272  33+ 39+  7- 30+ 10- 26- 37+ 32+  |10213027
+ 22 Cocke Matthew                5d UK Nwch  5 5  34 273  10- 58+ 27+ 19- 39+ 25+  8- 26+  |10262021
+ 23 Aekasinghachai Husdin        5d TH xxx   5 5  33 268  55+ 19- 44+ 16+  7- 18- 46+ 25+  |12033516
+ 24 Mitic Dragan                 5d YU Nis   4 4  37 269  54+  2- 34+ 20- 44+ 32+  5- 18-  |10325084
+ 25 Poliak Miroslav              3d SK Brat  4 4  36 270   8- 52+ 15+ 11- 27+ 22- 43+ 23-  |10262659
+ 26 Schnider Gert                5d AT Graz  4 4  36 265  19- 56+ 53+ 38+  9- 21+  3- 22-  |10513129
+ 27 Petrauskas Andrius           2d LT Viln  4 4  33 261  46+  6- 22- 53+ 25- 44+ 33+ 20-  |12733589
+ 28 Paatero Lauri                3d FI Hels  4 4  33 260   7- 57+ 29+ 13- 35+ 15- 36- 48+  |10362649
+ 29 Hornbaek Kasper              5d DK KGK   4 4  33 260  57+  4- 28- 47+ 38+ 14- 34+ 16-  |10413546
+ 30 Franke Lutz                  5d DE HH    4 4  33 257  18- 54+ 43+ 21- 45+ 13- 31+ 14-  |10225512
+ 31 Kong Fan-Nian                4d NO Osl   4 4  32 260  58+  8- 41+  4- 18- 48+ 30- 46+  |10501370
+ 32 Ekholm Erik                  3d SE Sto   4 4  31 268  60+  3- 39+ 10- 43+ 24- 41+ 21-  |10313061
+ 33 Wettach Alain                4d BE Brug  4 4  31 256  21- 60+ 47+ 18+ 12- 16- 27- 41+  |10437548
+ 34 Thanh Tran-Chi               2d VN xxx   4 4  31 256   4- 48+ 24- 52+ 17- 42+ 29- 50+  |12825703
+ 35 Ramirez-Reyes Jaime          4d CO xxx   4 4  31 250   9- 42+ 38- 49+ 28- 47+ 20- 40+  |12837704
+ 36 Quintero Ricardo             5d MX xxx   4 4  30 257  14- 51+ 10- 44- 57+ 45+ 28+ 19-  |10898789
+ 37 Hernandez Alexis             2d VE xxx   4 4  29 244  41- 13- 56+ 15- 59+ 38+ 21- 44+  |12501159
+ 38 Liu Kai-Yun                  6d BR xxx   4 4  29 244   2- 59+ 35+ 26- 29- 37- 61+ 45+  |12849705
+ 39 Zweig Adrian                 2d CH Zur   4 4  29 243  40+ 21- 32- 51+ 22- 41- 53+ 43+  |10998394
+ 40 Rittatore Alvaro             4d UY xxx   3 3  32 238  39-  1- 54+ 50+ 15- 46- 55+ 35-  |12025310
+ 41 Tiong Kee-Soon               3d MY xxx   3 3  31 246  37+  7- 31- 46- 56+ 39+ 32- 33-  |10437570
+ 42 Barisic Dragan               5d BA BLu   3 3  30 247   3- 35- 58+ 43- 51+ 34- 47+ 12-  |10398091
+ 43 Fernandez Francesc           2d ES Bar   3 3  30 246  48+ 20- 30- 42+ 32- 50+ 25- 39-  |10325018
+ 44 Solganik Gregory             4d IL RhA   3 3  30 242  20- 61+ 23- 36+ 24- 27- 51+ 37-  |12850706
+ 45 Efe Baris                    2d TR Ank   3 3  30 238  49+  9- 13- 59+ 30- 36- 57+ 38-  |12533158
+ 46 Yamamoto Noriyuki            4d PE xxx   3 3  29 234  27-  0+ 14- 41+ 16- 40+ 23- 31-  |12049521
+ 47 Bacevina Sead                2d HR Zagr  3 3  27 226  59+ 18- 33- 29- 54+ 35- 42- 55+  |10986701
+ 48 Fernandez-Caballero Antonio  2d CU xxx   3 3  27 217  43- 34-  0+  8- 53+ 31- 49+ 28-  |12874708
+ 49 Razafindrabe Tovonony        2k MG xxx   3 3  26 230  45- 15- 57+ 35- 52+ 19- 48- 60+  |12886709
+ 50 Carrillo Juan-Carlos         3d CL xxx   3 3  25 234  61+ 12- 11- 40- 60+ 43- 52+ 34-  |10849795
+ 51 Montrasio Paolo              1d IT Mila  3 3  25 225   6- 36- 61+ 39- 42- 59+ 44- 56+  |10474926
+ 52 Brauch Jean                  1k LU Lux   3 3  25 223  16- 25- 55+ 34- 49- 58+ 50- 57+  |10333906
+ 53 Suponev Alexandr             1d BY Min   3 3  25 202   0+ 17- 26- 27- 48- 54+ 39- 59+  |12349205
+ 54 Margarjan Ashot              1k AM xxx   3 3  20 195  24- 30- 40- 61+ 47- 53- 58+  0+  |10425492
+ 55 Moreano Oswaldo              1d EC xxx   2 2  24 223  23- 11- 52- 57- 61+ 56+ 40- 47-  |12898710
+ 56 Raposo Jose                  1d PT Lis   2 2  24 222  17- 26- 37- 58+ 41- 55- 60+ 51-  |10601921
+ 57 Gibson John                  2k IE Dubl  2 2  24 221  29- 28- 49- 55+ 36- 60+ 45- 52-  |10637385
+ 58 Arria Febbiyuti              1k ID xxx   2 2  21 185  31- 22- 42- 56-  0+ 52- 54- 61+  |12513160
+ 59 Gomez_Delafuente Anibal      1d AR xxx   2 2  21 185  47- 38- 60+ 45- 37- 51-  0+ 53-  |12801712
+ 60 Gandhi Mandeep-Singh         5k IN xxx   1 1  20 182  32- 33- 59-  0+ 50- 57- 56- 49-  |12813713
+ 61 Caceres-Perez Rodrigo        3k GT xxx   1 1  20 174  50- 44- 51- 54- 55-  0+ 38- 58-  |12825714

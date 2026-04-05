@@ -1,9 +1,6 @@
 stages:
   - type: tournament
-    file: wagc1979.txt
+    file: wagc1983.txt
     scoringColumns:
       - wins
       - null
-    sharedPlaces:
-      - 9-16
-      - 17-30

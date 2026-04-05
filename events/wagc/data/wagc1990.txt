@@ -1,0 +1,46 @@
+; EV[12th World Amateur Go Championship]
+; PC[JP, Hiroshima]
+; DT[1990-05-22,1990-05-25]
+; HA[h9]
+; KM[5.5]
+; CM[Shared Places 12-13,18-19]
+1	Chang Hao	3d	CN	xxx	8	8	42	24+	16+	4+	2+	12+	3+	9+	7+
+2	Ann Gwanwook	6d	KR	xxx	7	7	42	40+	13+	6+	1-	5+	8+	3+	4+
+3	Miura Hiroshi	7d	JP	xxx	6	6	44	12+	15+	7+	10+	9+	1-	2-	8+
+4	Heiser Laurent	5d	LU	xxx	6	6	41	27+	22+	1-	15+	6+	7+	19+	2-
+5	Su Jyhhao	7d	TW	xxx	6	6	38	23+	8-	29+	25+	2-	13+	11+	9+
+6	Kan Ying	6d	HK	xxx	6	6	38	29+	18+	2-	14+	4-	17+	10+	15+
+7	Wang Sen-feng	6d	BR	xxx	5	5	42	14+	26+	3-	22+	11+	4-	24+	1-
+8	Janssen Frank	5d	NL	xxx	5	5	41	31+	5+	11+	9-	21+	2-	14+	3-
+9	Huh Charles	6d	US	xxx	5	5	41	21+	19+	20+	8+	3-	23+	1-	5-
+10	Detkov Igor	6d	SU	xxx	5	5	36	17-	31+	13+	3-	26+	20+	6-	19+
+11	Hasibeder Helmut	6d	AT	xxx	5	5	35	28+	25+	8-	18+	7-	15+	5-	17+
+12	Soldan Leszek	5d	PL	xxx	5	5	35	3-	34+	28+	20+	1-	19-	27+	16+
+13	Song Brian	5d	CA	xxx	5	5	35	35+	2-	10-	32+	22+	5-	26+	21+
+14	Mutabzija Zoran	5d	YU	xxx	5	5	33	7-	27+	30+	6-	29+	21+	8-	18+
+15	Tse Ying-ming	6d	SG	xxx	4	4	36	37+	3-	26+	4-	33+	11-	23+	6-
+16	Ariya Khosa	5d	TH	xxx	4	4	35	33+	1-	24+	21-	19-	30+	25+	12-
+17	Colmez Pierre	5d	FR	xxx	4	4	33	10+	20-	21-	39+	18+	6-	22+	11-
+18	Winkelhofer Petr	5d	CS	xxx	4	4	33	38+	6-	23+	11-	17-	31+	20+	14-
+19	Gherman Sorin	3d	RO	xxx	4	4	33	39+	9-	22-	30+	16+	12+	4-	10-
+20	Siivola Matti	4d	FI	xxx	4	4	33	34+	17+	9-	12-	24+	10-	18-	32+
+21	Flood Jostein	4d	NO	xxx	4	4	32	9-	35+	17+	16+	8-	14-	37+	13-
+22	Shaw Edmund	4d	UK	xxx	4	4	31	30+	4-	19+	7-	13-	36+	17-	35+
+23	Garcia_dl_Banda Paco	4d	ES	xxx	4	4	31	5-	37+	18-	28+	25+	9-	15-	30+
+24	Gostelli Patrice	4d	CH	xxx	4	4	31	1-	39+	16-	34+	20-	33+	7-	29+
+25	Hubner Thomas	4d	DD	xxx	4	4	30	36+	11-	33+	5-	23-	28+	16-	27+
+26	Bro-Joergensen Ulrik	3d	DK	xxx	4	4	29	32+	7-	15-	36+	10-	35+	13-	28+
+27	Kurushima Yoshiko	3d	JP	xxx	3	3	30	4-	14-	37+	33-	38+	29+	12-	25-
+28	Coughlin David	3d	NZ	xxx	3	3	29	11-	38+	12-	23-	36+	25-	31+	26-
+29	Yeo Teong-loke	4d	MY	xxx	3	3	28	6-	36+	5-	35+	14-	27-	40+	24-
+30	Torres Carlos	3d	MX	xxx	3	3	27	22-	40+	14-	19-	34+	16-	33+	23-
+31	Burzyn Enrique	3d	AR	xxx	3	3	26	8-	10-	35-	38+	32+	18-	28-	36+
+32	Kelemen Zoltan	4d	HU	xxx	3	3	26	26-	33-	38+	13-	31-	34+	35+	20-
+33	Wettach Michel	1d	BE	xxx	3	3	25	16-	32+	25-	27+	15-	24-	30-	40+
+34	Smythe Neville	2d	AU	xxx	3	3	24	20-	12-	39+	24-	30-	32-	38+	37+
+35	Hallin Bjoern	1k	SE	xxx	2	2	28	13-	21-	31+	29-	37+	26-	32-	22-
+36	Tan Edmond	1d	PH	xxx	2	2	22	25-	29-	40+	26-	28-	22-	39+	31-
+37	Vajani Marco	2k	IT	xxx	2	2	21	15-	23-	27-	40+	35-	39+	21-	34-
+38	Segura Carlos	2k	CL	xxx	2	2	20	18-	28-	32-	31-	27-	40+	34-	39+
+39	Mitchell Noel	1k	IE	xxx	1	1	21	19-	24-	34-	17-	40+	37-	36-	38-
+40	Mattern Jurgen	6d	DE	xxx	0	0	23	2-	30-	36-	37-	39-	38-	29-	33-

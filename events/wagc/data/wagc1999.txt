@@ -1,0 +1,64 @@
+; TC[W990608]
+; CL[A]
+; EV[21st World Amateur Go Championship]
+; PC[JP, Oita]
+; DT[1999-06-08,1999-06-11]
+; TM[90]
+; HA[h9]
+; KM[5.5]
+;
+  1 Yu Chae-seong           7d KR xxx   8 8  45 318  16+ 27+ 15+  9+  3+  2+  7+  4+  |12025508
+  2 Sakai Hideyuki          7d JP xxx   7 7  44 323  26+ 13+  5+ 12+  4+  1- 21+  3+  |10625901
+  3 Ri Pong-il              7d KP xxx   6 6  45 314  25+ 17+  6+ 22+  1- 14+  5+  2-  |12037509
+  4 Yu Cheng-juei           7d TW xxx   6 6  45 303  32+ 11+ 19+  7+  2- 27+  6+  1-  |12049510
+  5 Wei Xin                 6d CA xxx   6 6  42 298  18+ 20+  2- 33+ 10+  8+  3- 28+  |12062512
+  6 Kan Ying                7d HK xxx   6 6  40 300  22+ 43+  3- 18+ 12+  9+  4- 14+  |10450539
+  7 Sun Yiguo               7d CN xxx   6 6  40 297  24+ 39+  8+  4- 42+ 11+  1- 10+  |12074513
+  8 Ning Ted                6d US xxx   6 6  38 293  10+ 29+  7- 31+ 24+  5- 22+ 12+  |12086514
+  9 Koszegi Diana           5d HU BuPe  6 6  37 282  37+ 30+ 31+  1- 21+  6- 41+ 13+  |10301247
+ 10 Xia Jie-Lin             4d NO Osl   5 5  39 283   8- 40+ 34+ 19+  5- 25+ 15+  7-  |10886425
+ 11 Gherman Sorin           6d RO Bucu  5 5  37 285  48+  4- 16+ 30+ 17+  7- 13- 26+  |10362385
+ 12 Chow Victor             5d ZA xxx   5 5  37 283  55+ 21+ 23+  2-  6- 32+ 16+  8-  |10449549
+ 13 Bogackyj Arkadij        5d UA Kyiv  5 5  37 281  49+  2- 20+ 24- 26+ 23+ 11+  9-  |10298871
+ 14 Bogdanov Viktor         6d RU 10Pt  5 5  37 279  36- 35+ 38+ 23+ 15+  3- 17+  6-  |10325139
+ 15 Eeden Gilles_van        6d NL Nijm  5 5  37 277  35+ 38+  1- 37+ 14- 20+ 10- 29+  |10201598
+ 16 Macfadyen Matthew       6d UK Leam  5 5  37 272   1- 45+ 11- 40+ 34+ 18+ 12- 23+  |10249019
+ 17 Soldan Leszek           6d PL Wars  5 5  36 284  40+  3- 28+ 25+ 11- 19+ 14- 24+  |10449560
+ 18 Aekasinghachai Husdin   4d TH xxx   5 5  35 273   5- 49+ 26+  6- 33+ 16- 34+ 22+  |12033516
+ 19 Gerlach Christoph       6d DE H     5 5  34 276  28+ 33+  4- 10- 51+ 17- 31+ 21+  |10225017
+ 20 Pedrini Enzo            3d IT Mila  5 5  34 268  44+  5- 13- 29+ 36+ 15- 37+ 25+  |10233058
+ 21 Briscoe Wuge            6d AU xxx   4 4  38 265  47+ 12- 27+ 36+  9- 30+  2- 19-  |12001517
+ 22 Hornbaek Kasper         5d DK KGK   4 4  36 276   6- 52+ 39+  3- 28+ 24+  8- 18-  |10413546
+ 23 Danek Vladimir          6d CZ Pra   4 4  35 264  34+ 36+ 12- 14- 39+ 13- 33+ 16-  |10213016
+ 24 Ben_Malek Farid         6d FR 75Pa  4 4  35 262   7- 32+ 50+ 13+  8- 22- 47+ 17-  |10313391
+ 25 Mutabzija Zoran         5d HR Zagr  4 4  34 269   3- 51+ 29+ 17- 35+ 10- 38+ 20-  |10249041
+ 26 Grierson Colin          4d NZ xxx   4 4  34 257   2- 46+ 18- 52+ 13- 39+ 32+ 11-  |12013518
+ 27 Wettach Alain           3d BE Brug  4 4  33 265  51+  1- 21- 46+ 31+  4- 29- 48+  |10437548
+ 28 Klemencic Jure          5d SI Lju   4 4  33 254  19- 44+ 17- 53+ 22- 35+ 30+  5-  |10749640
+ 29 Gubas Xaver             4d SK Brat  4 4  33 254  46+  8- 25- 20- 45+ 40+ 27+ 15-  |10498807
+ 30 Alaluf Roberto-Issac    4d AR xxx   4 4  31 259  42+  9- 41+ 11- 38+ 21- 28- 44+  |12025519
+ 31 Lounela Olli            4d FI Hels  4 4  31 245  45+ 50+  9-  8- 27- 48+ 19- 39+  |10274781
+ 32 Tran Trung-Tin          3d VN xxx   4 4  30 258   4- 24- 52+ 44+ 37+ 12- 26- 42+  |12037520
+ 33 Ekholm Erik             2d SE Sto   4 4  30 253  41+ 19- 42+  5- 18- 55+ 23- 43+  |10313061
+ 34 Scheid Bernhard         5d AT Wien  4 4  29 250  23- 53+ 10- 50+ 16- 42+ 18- 38+  |10449791
+ 35 Yamamoto Noriyuki       4d PE xxx   4 4  28 247  15- 14- 49+ 43+ 25- 28- 50+ 41+  |12049521
+ 36 Stankovic Mijodrag      5d YU Nis   4 4  28 245  14+ 23- 54+ 21- 20- 41- 53+ 37+  |10313083
+ 37 Volosov Andrej          4d IL xxx   3 3  31 243   9- 48+ 43+ 15- 32- 50+ 20- 36-  |12062523
+ 38 Garcia_De_La_Banda Paco 4d ES Can   3 3  30 245  54+ 15- 14- 41+ 30- 43+ 25- 34-  |10533710
+ 39 Rivaud Juan-Jose        3d MX xxx   3 3  29 242  52+  7- 22- 47+ 23- 26- 51+ 31-  |10449571
+ 40 Pareja Federico         2d CO xxx   3 3  29 240  17- 10- 45+ 16- 54+ 29- 44- 50+  |12074524
+ 41 Djap Woei-Haw           3d ID xxx   3 3  29 229  33- 55+ 30- 38- 46+ 36+  9- 35-  |10474574
+ 42 Chua Chin-Hwee          4d SG xxx   3 3  29 226  30- 47+ 33- 54+  7- 34- 48+ 32-  |12098526
+ 43 Chow Chee-Wen           3d MY xxx   3 3  28 230  53+  6- 37- 35- 44+ 38- 46+ 33-  |12033527
+ 44 Mitchell Noel           2d IE Dubl  3 3  26 226  20- 28- 55+ 32- 43- 54+ 40+ 30-  |10474563
+ 45 Tellez Ruben            1d CL xxx   3 3  25 220  31- 16- 40- 49+ 29- 47- 54+ 51+  |12001528
+ 46 Akkol Ertug             1d TR Ist   3 3  24 227  29- 26- 51+ 27- 41- 49+ 43- 52+  |10633920
+ 47 Nicolet Philip          3d CH Gene  3 3  21 222  21- 42-  0+ 39- 48- 45+ 24- 49+  |10974392
+ 48 Raposo Jose             3k PT Lis   2 2  25 224  11- 37- 53- 55+ 47+ 31- 42- 27-  |10601921
+ 49 Sagar Arun              1k IN xxx   2 2  25 207  13- 18- 35- 45- 52+ 46-  0+ 47-  |10813803
+ 50 Schmit Paul             1k LU Lux   2 2  24 220   0+ 31- 24- 34- 53+ 37- 35- 40-  |12013529
+ 51 Gonzalez-Fleitas Vadel  3k CU xxx   2 2  24 216  27- 25- 46-  0+ 19- 53+ 39- 45-  |10933439
+ 52 Caceres-Estrada Edgardo 4k GT xxx   2 2  21 215  39- 22- 32- 26- 49-  0+ 55+ 46-  |12025530
+ 53 Rey Mario_del           1d BR xxx   2 2  21 207  43- 34- 48+ 28- 50- 51- 36-  0+  |12037531
+ 54 Razafindrabe Manitra    1d MG xxx   2 2  20 204  38-  0+ 36- 42- 40- 44- 45- 55+  |12049532
+ 55 Puerta Maria            3k VE xxx   1 1  21 204  12- 41- 44- 48-  0+ 33- 52- 54-  |10625923

@@ -1,0 +1,66 @@
+; TC[W120513A]
+; CL[A]
+; EV[33rd World Amateur Go Championship]
+; PC[CN, Guangzhou]
+; DT[2012-05-13,2012-05-16]
+; HA[h9]
+; KM[6.5]
+; TM[82.5]
+; CM[ (submitted by kamyszyn)]
+;.
+ 1 Qiao Zhijian              7d CN  xxxx  8    8    45   16+/b   9+/w    19+/b   4+/w    3+/w    2+/b    5+/w    10+/b    |16474810
+ 2 Lee Hyunjoon              7d KR  xxxx  7    7    41   50+/w   37+/w   8+/b    23+/b   5+/b    1-/w    6+/b    3+/w     |16437806
+ 3 Chen Cheng-Hsun           7d TW  Taip  6    6    45   35+/b   21+/w   7+/b    12+/w   1-/b    10+/w   4+/w    2-/b     |16213703
+ 4 Chan Chi-hin              6d HK  xxx   6    6    42   38+/b   14+/w   24+/b   1-/b    7+/w    9+/w    3-/b    20+/w    |15913150
+ 5 Ri Kwang-Hyok             6d KP  xxxx  6    6    41   52+/b   6+/b    31+/b   11+/w   2-/w    21+/w   1-/b    15+/b    |16498812
+ 6 Balogh Pal                6d HU  Debr  6    6    40   28+/b   5-/w    25+/b   17+/w   13+/b   22+/b   2-/w    9+/w     |10498246
+ 7 Kuronen Juri              5d FI  eGo   6    6    37   47+/b   30+/w   3-/w    14+/b   4-/b    26+/w   21+/b   11+/w    |15386382
+ 8 Nakazono Seizo            7d JP  xxx   6    6    37   15+/b   29+/w   2-/w    21-/b   12+/w   33+/b   22+/b   32+/w    |13662814
+ 9 Lou Yuxiang               5d SG  xxx   5    5    43   45+/w   1-/b    16+/b   19+/w   11+/w   4-/b    14+/w   6-/b     |15474701
+10 Teuber Benjamin           6d DE  HH    5    5    40   42+/w   12-/w   26+/b   15+/b   18+/b   3-/b    23+/w   1-/w     |10437174
+11 Burzo Cornel              6d RO  BaMa  5    5    39   25+/w   34+/w   22+/w   5-/b    9-/b    12+/b   13+/w   7-/b     |10325249
+12 Podpera Lukas             5d CZ  APWS  5    5    39   18+/w   10+/b   23+/w   3-/b    8-/b    11-/w   27+/w   21+/b    |13201914
+13 Rasmussen Jannik          4d DK  KGK   5    5    36   33+/w   19-/b   46+/b   28+/b   6-/w    18+/w   11-/b   22+/w    |10486201
+14 Do Khanh-Binh             2d VN  xxx   5    5    36   44+/w   4-/b    38+/b   7-/w    16+/w   29+/w   9-/b    24+/b    |16250157
+15 Saechen Panjawat          4d TH  xxxx  5    5    35   8-/w    39+/b   37+/b   10-/w   43+/b   25+/b   17+/b   5-/w     |16433813
+16 Metta Carlo               3d IT  Pisa  5    5    35   1-/w    45+/b   9-/w    34+/w   14-/b   47+/b   38+/w   25+/b    |14713996
+17 Campagnie Remi            5d FR  35Re  5    5    34   22-/b   41+/w   33+/w   6-/b    28+/b   24+/b   15-/w   29+/w    |15449269
+18 Li Long-Yang              5d NZ  xxx   5    5    34   12-/b   42+/b   27+/w   24+/w   10-/w   13-/b   26+/b   23+/w    |15062960
+19 Chan Kuok-Wan             5d MO  xxx   5    5    33   56+/b   13+/w   1-/w    9-/b    25-/w   39+/b   34+/w   28+/w    |15098831
+20 Popov Igor                5d RU  77Mo  5    5    32   23-/w   26-/b   42+/w   35+/w   27+/b   30+/w   37+/b   4-/b     |10849025
+21 Zhou Yuan                 7d US  xxx   4    4    41   36+/b   3-/b    32+/w   8+/w    30+/b   5-/b    7-/w    12-/w    |13450712
+22 Lisy Pavol                5d SK  DoSt  4    4    38   17+/w   48+/w   11-/b   31+/b   29+/b   6-/w    8-/w    13-/b    |12686597
+23 Matoh Leon                5d SI  NoMe  4    4    36   20+/b   27+/w   12-/b   2-/w    50+/w   40+/w   10-/b   18-/b    |10398608
+24 Li Xianyu                 6d CA  xxx   4    4    35   40+/w   32+/b   4-/w    18-/b   38+/b   17-/w   30+/w   14-/w    |13674815
+25 Mohd-Zaid Waqiyuddin      4d MY  xxx   4    4    35   11-/b   51+/w   6-/w    45+/b   19+/b   15-/w   33+/b   16-/w    |15025164
+26 Li Martin                 5d SE  Borl  4    4    33   27-/b   20+/w   10-/w   55+/b   32+/w   7-/b    18-/w   46+/b    |10498631
+27 Lopez-Herrero Eduardo     5d AR  xxx   4    4    33   26+/w   23-/b   18-/b   44+/w   20-/w   31+/b   12-/b   40+/w    |10401567
+28 Goetzfried Andreas        4d LU  Lux   4    4    33   6-/w    52+/b   34+/b   13-/w   17-/w   44+/b   41+/w   19-/b    |14033206
+29 Eerbeek Alexander         5d NL  Vink  4    4    32   39+/w   8-/b    53+/b   43+/w   22-/w   14-/b   31+/w   17-/b    |13501356
+30 Aitken Sam                4d UK  Leam  4    4    31   49+/w   7-/b    36+/w   40+/b   21-/w   20-/b   24-/b   39+/w    |14050102
+31 Spiegel Lothar            4d AT  Wien  4    4    30   43+/b   46+/b   5-/w    22-/w   39+/b   27-/w   29-/b   37+/w    |13750836
+32 Paunic Dragan             2d BA  Sara  4    4    29   54+/b   24-/w   21-/b   53+/w   26-/b   36+/w   40+/w   8-/b     |10313710
+33 Suponev Alexandr          1d BY  Min   4    4    29   13-/b   56+/w   17-/b   48+/w   41+/b   8-/w    25-/w   42+/b    |12349205
+34 Tome Daniel               3d PT  Por   4    4    28   51+/w   11-/b   28-/w   16-/b   55+/w   43+/w   19-/b   38+/b    |15486064
+35 Acuna Carlos              3d CO  xxxx  4    4    28   3-/w    36-/b   54+/w   20-/b   49+/w   38-/w   47+/b   48+/w    |16401814
+36 Sannes Paal               4d NO  Oslo  4    4    27   21-/w   35+/w   30-/b   37+/w   40-/b   32-/b   49+/b   41+/w    |10233047
+37 Stankovic Mijodrag        5d RS  NiSt  3    3    33   53+/w   2-/b    15-/w   36-/b   48+/b   46+/w   20-/w   31-/b    |10313083
+38 Mazille Felicien          1d CH  Ishi  3    3    33   4-/w    44+/b   14-/w   49+/b   24-/w   35+/b   16-/b   34-/w    |15625027
+39 Carles Pau                3d ES  Pedr  3    3    30   29-/b   15-/w   50+/b   42+/b   31-/w   19-/w   43+/b   30-/b    |10398036
+40 Gonze Francois            4d BE  LLN   3    3    28   24-/b   54+/w   49+/w   30-/w   36+/w   23-/b   32-/b   27-/b    |14613654
+41 Leuner John               2d ZA  xxxx  3    3    28   48-/b   17-/b   52+/w   46+/w   33-/w   45+/w   28-/b   36-/b    |13062390
+42 Petrauskas Albertas       1d LT  Viln  3    3    28   10-/b   18-/w   20-/b   39-/w   54+/w   51+/b   53+/b   33-/w    |12749528
+43 Mutabzija Zoran           5d HR  Zagr  3    3    26   31-/w   55+/w   48+/b   29-/b   15-/w   34-/b   39-/w   50+/b    |10249041
+44 Karaerkek Kerem           2d TR  Aji   3    3    26   14-/b   38-/w   47+/w   27-/b   51+/b   28-/w   46-/b   49+/b    |10498576
+45 Regginos Dimitris         1d CY  Nico  3    3    26   9-/b    16-/w   51+/b   25-/w   47-/w   41-/b   54+/b   52+/b    |13225795
+46 Bofinger David            2d AU  xxxx  3    3    25   55+/b   31-/w   13-/w   41-/b   53+/w   37-/b   44+/w   26-/w    |16462809
+47 Cajiao-Campos Luis        2d CR  SJo   3    3    25   7-/w    49-/b   44-/b   56+/w   45+/b   16-/w   35-/w   51+/w    |14750428
+48 MacSweeny Colin           1k IE  Dubl  3    3    25   41+/w   22-/b   43-/w   33-/b   37-/w   50+/b   52+/w   35-/b    |14998478
+49 Larios Salvador           2d MX  xxx   2    2    26   30-/b   47+/w   40-/b   38-/w   35-/b   53+/b   36-/w   44-/w    |15049991
+50 Prem Nadeen               3d BR  xxxx  2    2    25   2-/b    53-/b   39-/w   52+/w   23-/b   48-/w   55+/b   43-/w    |16413815
+51 Tahirbayov Bahadur        6d AZ  Baku  2    2    22   34-/b   25-/b   45-/w   54+/b   44-/w   42-/w   56+/w   47-/b    |15037880
+52 Fang Xiaoyan              1k CN  xxxx  2    2    22   5-/w    28-/w   41-/b   50-/b   56+/w   55+/b   48-/b   45-/w    |16425816
+53 Perez Leslie              4k CL  Vin   2    2    21   37-/b   50+/w   29-/w   32-/b   46-/b   49-/w   42-/w   56+/b    |15901072
+54 Ivanov Ivan-Nikolaev      3k BG  Sofi  2    2    20   32-/w   40-/b   35-/b   51-/w   42-/b   56+/b   45-/w   55+/w    |15333450
+55 Shartologoi Bayarjargal   2k MN  xxxx  1    1    20   46-/w   43-/b   56+/b   26-/w   34-/b   52-/w   50-/w   54-/b    |16437817
+56 Ja Ismail                 7k MA  xxxx  0    0    21   19-/w   33-/b   55-/w   47-/b   52-/b   54-/w   51-/b   53-/w    |16450819

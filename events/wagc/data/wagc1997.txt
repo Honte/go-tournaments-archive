@@ -1,0 +1,58 @@
+; TC[W970610]
+; CL[A]
+; EV[World Amateur Go Championship 1997]
+; PC[JP,Sapporo]
+; KM[5.5]
+; TM[90]
+; HA[h9]
+; DT[1997-06-10,1997-06-13]
+;                  19th World Amateur Go Championship, Sapporo (JP)
+;                               June 10 - 13, 1997
+;
+;Pl     Name             Grade  Club   MM S SOS SSOS  1.  2.  3.  4.  5.  6.  7.  8.
+  1 Liu Jun                 7d CN xxx   7 7  44 308  31+ 13+ 10+  7+  2+  4+  3-  9+  |10425536
+  2 Sakai Hideyuki          7d JP xxx   7 7  43 304  40+ 14+  3+  5+  1- 22+  6+  4+  |10625901
+  3 Mun Yeong-sam           7d KP xxx   7 7  40 300  34+ 30+  2- 24+  9+  5+  1+ 10+  |10637902
+  4 Lin Zhihan              7d TW xxx   6 6  44 299  20+ 28+  6+ 11+ 15+  1-  7+  2-  |13249643
+  5 Pop Cristian            6d RO VaDo  6 6  42 297   8+ 27+  9+  2- 23+  3- 16+ 11+  |10333389
+  6 Lazarev Alexej          6d RU 10Pt  6 6  41 294  16+ 18+  4- 17+ 25+ 11+  2-  8+  |10374386
+  7 Yi Hak-yeong            7d KR xxx   6 6  37 293  25+ 19+ 32+  1- 20+  8+  4- 21+  |10650904
+  8 Tian Tom                6d CA xxx   5 5  41 287   5- 37+ 13+ 12+ 10+  7- 14+  6-  |10662905
+  9 Kan Ying                7d HK xxx   5 5  41 282  12+ 24+  5- 40+  3- 17+ 15+  1-  |10450539
+ 10 Michel Jean             5d FR 75Pa  5 5  38 281  35+ 21+  1- 26+  8- 34+ 12+  3-  |10374540
+ 11 Yi Hosuk                7d US xxx   5 5  37 282  37+ 36+ 23+  4- 18+  6- 13+  5-  |10674906
+ 12 Spiegl Ralph            5d AT Wien  5 5  34 272   9- 16+ 36+  8- 35+ 19+ 10- 25+  |10333609
+ 13 Danek Vladimir          6d CZ Pra   5 5  34 266  44+  1-  8- 33+ 29+ 20+ 11- 27+  |10213016
+ 14 Soldan Leszek           6d PL Olsz  5 5  34 266  33+  2- 15- 41+ 27+ 23+  8- 28+  |10449560
+ 15 Mero Csaba              5d HU BuPe  5 5  33 272  30- 31+ 14+ 19+  4- 28+  9- 37+  |10225875
+ 16 Laatikainen Vesa        5d FI HGK   5 5  32 272   6- 12- 46+ 21+ 31+ 18+  5- 20+  |10201015
+ 17 Pljushch Jurij          5d UA Kyiv  5 5  31 268  22- 45+ 21+  6- 32+  9- 26+ 18+  |10449230
+ 18 Poliak Miroslav         5d SK Gala  4 4  35 257  29+  6- 33+ 28+ 11- 16- 36+ 17-  |10262659
+ 19 Pons Joan               3d ES Bar   4 4  34 253  38+  7- 25+ 15- 26+ 12- 27- 33+  |10386013
+ 20 Westhoff Gerald         6d NL Leid  4 4  34 252   4- 39+ 42+ 32+  7- 13- 29+ 16-  |10233597
+ 21 Chi Bo-keun             6d AU xxx   4 4  34 249  26+ 10- 17- 16- 43+ 35+ 23+  7-  |10686907
+ 22 Borloz Francois         2d CH Gene  4 4  33 248  17+ 23- 26- 42+ 24+  2- 25- 36+  |10574487
+ 23 Schroer Jan             4d DE Bie   4 4  32 256  41+ 22+ 11- 29+  5- 14- 21- 42+  |10225204
+ 24 Gaspari Peter           4d SI Lju   4 4  32 254  39+  9- 35+  3- 22- 27- 38+ 30+  |10333620
+ 25 Taari Harry             2d SE Got   4 4  31 260   7- 46+ 19- 34+  6- 30+ 22+ 12-  |10386761
+ 26 Cocke Matthew           5d UK Lpol  4 4  31 257  21- 38+ 22+ 10- 19- 33+ 17- 31+  |10262021
+ 27 Chairasmisak Korsak     4d TH xxx   4 4  31 255  32-  5- 45+ 38+ 14- 24+ 19+ 13-  |10425569
+ 28 Liu Mun-Kang            4d MY xxx   4 4  30 247  43+  4- 41+ 18- 39+ 15- 31+ 14-  |10698908
+ 29 Ang Keng-Kiat           7d SG xxx   4 4  29 253  18- 34+ 30+ 23- 13- 37+ 20- 32+  |10601910
+ 30 Chacon Jose             4d MX xxx   3 3  31 239  15+  3- 29- 35- 44+ 25- 41+ 24-  |10625912
+ 31 Dodinval Olivier        2d BE Brug  3 3  31 239   1- 15- 43+ 36+ 16- 45+ 28- 26-  |10237062
+ 32 Kong Fan-Nian           3d NO Osl   3 3  31 234  27+ 42+  7- 20- 17- 36- 39+ 29-  |10501370
+ 33 Pedersen Jesper         3d DK KGK   3 3  30 248  14- 40+ 18- 13- 38+ 26- 35+ 19-  |10425195
+ 34 Caio-Petersen Rudolf    4d BR xxx   3 3  29 237   3- 29- 39+ 25- 41+ 10- 37- 45+  |10637913
+ 35 Vajani Marco            1d IT Mila  3 3  28 239  10- 43+ 24- 30+ 12- 21- 33- 44+  |10398146
+ 36 Donnelly Paul           1d IE xxx   3 3  27 244  45+ 11- 12- 31- 42+ 32+ 18- 22-  |10237073
+ 37 Jones Eric              4d NZ xxx   3 3  27 242  11-  8- 38- 46+ 40+ 29- 34+ 15-  |10649914
+ 38 Djap Woei-Haw           3d ID xxx   3 3  26 231  19- 26- 37+ 27- 33- 43+ 24- 40+  |10474574
+ 39 Segura Carlos           3d CL xxx   3 3  24 228  24- 20- 34- 44+ 28- 40+ 32- 41+  |10650915
+ 40 Burzyn Enrique          2d AR xxx   2 2  26 232   2- 33- 44+  9- 37- 39- 46+ 38-  |10662916
+ 41 Visser Chris            2d ZA xxx   2 2  26 221  23- 44+ 28- 14- 34- 42+ 30- 39-  |10674917
+ 42 Hoffmann Ralf           1k LU Lux   2 2  21 226  46+ 32- 20- 22- 36- 41- 45+ 23-  |10333631
+ 43 Melijov Vladimir        1k CU xxx   2 2  20 212  28- 35- 31- 45+ 21- 38- 44- 46+  |10686918
+ 44 Akkol Ertug             2d TR Ist   2 2  20 210  13- 41- 40- 39- 30- 46+ 43+ 35-  |10633920
+ 45 Raposo Jose             3k PT Lis   1 1  22 211  36- 17- 27- 43- 46+ 31- 42- 34-  |10601921
+ 46 Puerta Maria            3k VE xxx   0 0  21 199  42- 25- 16- 37- 45- 44- 40- 43-  |10625923

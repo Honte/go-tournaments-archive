@@ -1,0 +1,74 @@
+; TC[W050524]
+; CL[A]
+; TM[3h]
+; HA[h9]
+; EV[26th World Amateur Go Championship]
+; PC[JP, Nagoya]
+; DT[2005-05-24~27]
+; KM[6.5]
+;
+  1 Hu Yuqing                  7d CN xxx   8 45 328   0  42+ 13+  5+  6+  2+  3+  7+  4+  |13949826
+  2 Cho Tae-weon               7d KP xxx   7 43 319   0  27+ 37+  7+  4+  1- 30+ 11+  3+  |13950827
+  3 Yu Chengrui                7d TW xxx   6 46 312   0  20+ 18+ 14+ 21+ 11+  1-  5+  2-  |14298790
+  4 Seo Yeong-hwi              7d KR xxx   6 43 314   0  17+ 26+ 12+  2- 43+ 15+  6+  1-  |13974829
+  5 Dickhut Franz-Josef        6d DE Mon   6 42 300   0  22+ 45+  1- 27+ 19+  8+  3- 20+  |10501403
+  6 Kikuchi Yasuro             7d JP xxx   6 42 298   0  30+ 35+ 28+  1- 17+  9+  4- 19+  |12850695
+  7 Hsiang Thomas              7d US xxx   6 41 297   0  32+ 15+  2- 54+ 29+ 12+  1- 16+  |10849784
+  8 Chan Naisan                5d HK Wam   6 39 292   0  36+ 10+  9+ 11- 26+  5- 50+ 13+  |14349742
+  9 Li Xianyu                  6d CA xxx   6 37 294   0  58+ 29+  8- 31+ 10+  6- 26+ 12+  |13674815
+ 10 Guo Yiming                 7d AU xxx   6 37 281   0  39+  8- 47+ 35+  9- 14+ 27+ 11+  |12874697
+ 11 Nechanicky Radek           6d CZ Nym   5 42 295   0  44+ 23+ 25+  8+  3- 28+  2- 10-  |10250196
+ 12 Bogackyj Dmytro            6d UA Kyiv  5 42 287   0  16+ 41+  4- 22+ 14+  7- 24+  9-  |10250867
+ 13 Spiegl Ralph               5d AT Wien  5 38 274   0  56+  1- 34+ 17- 47+ 21+ 28+  8-  |10333609
+ 14 Dmitriev Ruslan            5d RU 00oo  5 37 278   0  40+ 31+  3- 16+ 12- 10- 53+ 37+  |10698204
+ 15 Le Mai-Duy                 5d VN xxx   5 37 276   0  50+  7- 36+ 18+ 21+  4- 16- 48+  |12550153
+ 16 Poliak Miroslav            3d SK Brat  5 36 273   0  12- 49+ 41+ 14- 22+ 51+ 15+  7-  |10262659
+ 17 Tan Jia-Cheng              5d SG xxx   5 36 270   0   4- 55+ 59+ 13+  6- 25+ 20- 35+  |10725176
+ 18 Lubos Jan                  3d PL Wodz  5 35 278   0  55+  3- 30+ 15- 34+ 29+ 19- 33+  |10337613
+ 19 Janssen Frank              6d NL Amvn  5 35 267   0  21- 51+ 65+ 24+  5- 35+ 18+  6-  |10298596
+ 20 Bojanic Milos              5d YU Beo   5 34 279   0   3- 57+ 40+ 29- 42+ 36+ 17+  5-  |10337085
+ 21 Matoh Leon                 5d SI NMe   5 34 271   0  19+ 59+ 46+  3- 15- 13- 41+ 32+  |10398608
+ 22 Benmergui Gabriel          4d AR xxx   5 34 267   0   5- 56+ 51+ 12- 16- 39+ 36+ 27+  |13998831
+ 23 Teng Boon-Ping             4d MY xxx   5 32 273   0  52+ 11- 32+ 25+ 28- 26- 46+ 29+  |13933832
+ 24 Burzo Cornel               6d RO Slob  5 32 270   0  33- 42+ 45+ 19- 38+ 32+ 12- 28+  |10325249
+ 25 Michel Jean                5d FR 75Pa  5 32 269   0  34+ 43+ 11- 23- 60+ 17- 31+ 26+  |10374540
+ 26 Heshe Thomas               5d DK AAR   4 38 264   0  62+  4- 38+ 33+  8- 23+  9- 25-  |10413194
+ 27 Simeunovic Zoran           5d BA Bij   4 37 272   0   2- 53+ 43+  5- 51+ 33+ 10- 22-  |10350087
+ 28 Csizmadia Gyorgy           4d HU BuPe  4 36 270   0  54+ 38+  6- 46+ 23+ 11- 13- 24-  |12698928
+ 29 Charoenkul Supakit         4d TH xxx   4 36 268   0  57+  9- 44+ 20+  7- 18- 34+ 23-  |12750078
+ 30 Gale Ben                   4d ZA xxx   4 35 264   0   6- 50+ 18- 52+ 31+  2- 37- 49+  |13437072
+ 31 Sanchez Cesar              4d ES Bar   4 33 255   0  48+ 14- 37+  9- 30- 49+ 25- 50+  |10450561
+ 32 Siivola Matti              5d FI HGK   4 33 254   0   7- 52+ 23- 48+ 46+ 24- 45+ 21-  |10286782
+ 33 Li Martin                  5d SE Bor   4 32 262   0  24+ 46- 39+ 26- 37+ 27- 43+ 18-  |10498631
+ 34 Ramirez-Reyes Jaime        4d CO xxx   4 32 247   0  25- 64+ 13- 39+ 18- 40+ 29- 43+  |12837704
+ 35 Mutabzija Zoran            5d HR Zagr  4 31 258   0  65+  6- 61+ 10- 45+ 19- 44+ 17-  |10249041
+ 36 Ofstad Morten              4d NO Osl   4 31 250   0   8- 62+ 15- 57+ 44+ 20- 22- 47+  |10762752
+ 37 Pozaroszczyk Roman         4d NZ Auc   4 30 259   0  49+  2- 31- 58+ 33- 65+ 30+ 14-  |12850739
+ 38 Rivaud Juan-Jose           4d MX xxx   4 29 247   0  53+ 28- 26- 40+ 24- 43- 52+ 45+  |10449571
+ 39 Araki Hatime               1d MA xxx   4 29 245   0  10- 58+ 33- 34- 56+ 22- 57+ 42+  |10425459
+ 40 Petrauskas Andrius         3d LT Viln  4 28 238   0  14- 60+ 20- 38- 53+ 34- 59+ 44+  |12733589
+ 41 Aharoni Eitan              3d IL TAv   4 27 253   0  60+ 12- 16- 42- 65+ 48+ 21- 46+  |12598157
+ 42 Carrillo Juan-Carlos       3d CL xxx   3 33 239   0   1- 24- 62+ 41+ 20- 50- 60+ 39-  |10849795
+ 43 Bogaerts Jan               4d BE Brug  3 31 248   0  64+ 25- 27- 59+  4- 38+ 33- 34-  |10286617
+ 44 Ward David                 4d UK Camb  3 30 253   0  11- 48+ 29- 50+ 36- 47+ 35- 40-  |10313017
+ 45 Sakata-Yamashita Fabio     4d BR xxx   3 30 247   0  47+  5- 24- 61+ 35- 57+ 32- 38-  |13925835
+ 46 Morrison Roberto           1d CH Loc   3 30 236   0  63+ 33+ 21- 28- 32- 61+ 23- 41-  |10349493
+ 47 Ravjir Tungalag            2d MN xxx   3 29 240   0  45- 54+ 10- 55+ 13- 44- 61+ 36-  |13937836
+ 48 Brauch Jean                1k LU Lux   3 29 239   0  31- 44- 49+ 32- 52+ 41- 55+ 15-  |10333906
+ 49 Rakotoarisoa Mamy          2d MG xxx   3 28 233   0  37- 16- 48- 63+ 54+ 31- 51+ 30-  |13949837
+ 50 Paiz-Castillo Hector       2d GT xxx   3 27 249   0  15- 30-  0+ 44- 59+ 42+  8- 31-  |12737087
+ 51 Narain Abhishek            1d IN xxx   3 27 236   0  61+ 19- 22- 65+ 27- 16- 49- 63+  |13962839
+ 52 Lim Surya-Tjahyadi         1d ID xxx   3 26 228   0  23- 32- 63+ 30- 48- 58+ 38- 60+  |13974840
+ 53 Gonzalez Javier            1d VE xxx   3 26 227   0  38- 27- 58- 62+ 40- 54+ 14- 61+  |13986841
+ 54 Akkol Ertug                1d TR Ist   3 25 228   0  28- 47- 60+  7- 49- 53- 64+ 59+  |10633920
+ 55 Eudokimov Maxim            1d BY xxx   3 25 221   0  18- 17- 56+ 47- 61- 63+ 48- 58+  |13998842
+ 56 Sowal Narendra             1d NP xxx   3 23 213   0  13- 22- 55- 64+ 39- 60-  0+ 57+  |13650824
+ 57 Garbarini Cristiano        1d IT Mila  2 27 228   0  29- 20- 64+ 36- 58+ 45- 39- 56-  |12486243
+ 58 Rittatore Alvaro           4d UY xxx   2 27 220   0   9- 39- 53+ 37- 57- 52- 62+ 55-  |12025310
+ 59 Aguilar Andres             1k EC xxx   2 25 218   0   0+ 21- 17- 43- 50- 62+ 40- 54-  |13933843
+ 60 Margarjan Ashot            1k AM xxx   2 25 211   0  41- 40- 54-  0+ 25- 56+ 42- 52-  |10425492
+ 61 Torres-Miranda Rafael      2k CU xxx   2 24 216   0  51- 63+ 35- 45- 55+ 46- 47- 53-  |10413579
+ 62 Miyagui-Shimabukuro Pedro  1k PE xxx   2 20 215   0  26- 36- 42- 53- 64+ 59- 58-  0+  |13913845
+ 63 Teles-Menezes Jose         3k PT Lis   2 18 201   0  46- 61- 52- 49-  0+ 55- 65+ 51-  |10313831
+ 64 Palmer Bernard             1k IE Dubl  2 18 199   0  43- 34- 57- 56- 62-  0+ 54- 65+  |10649386
+ 65 Vegas Carlos               2k PA xxx   1 24 203   0  35-  0+ 19- 51- 41- 37- 63- 64-  |13925846

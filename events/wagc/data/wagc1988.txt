@@ -1,0 +1,42 @@
+; EV[10th World Amateur Go Championship]
+; PC[JP, Tokyo]
+; DT[1988-05-17,1988-05-20]
+; HA[h9]
+; KM[5.5]
+; CM[Shared Places 3-4,7-8]
+1	Zhang Wendong	6d	CN	xxx	8	8	43	21+	7+	9+	4+	2+	8+	3+	10+
+2	Imamura Fumiaki	7d	JP	xxx	7	7	43	12+	14+	18+	3+	1-	13+	4+	6+
+3	Schlemper Ronald	6d	NL	xxx	6	6	42	19+	26+	5+	2-	22+	6+	1-	7+
+4	Kim Chul-jung	6d	KR	xxx	6	6	42	31+	11+	17+	1-	10+	5+	2-	20+
+5	Tsang Pingfai	6d	HK	xxx	6	6	38	23+	6+	3-	25+	15+	4-	13+	8+
+6	Rittner Egbert	5d	DE	xxx	5	5	38	27+	5-	29+	11+	16+	3-	21+	2-
+7	Heiser Laurent	5d	LU	xxx	5	5	35	28+	1-	14-	33+	24+	17+	9+	3-
+8	Wang Sen-Feng	6d	BR	xxx	5	5	35	32+	16-	33+	21+	14+	1-	11+	5-
+9	Soldan Leszek	4d	PL	xxx	5	5	34	33+	17-	1-	29+	19+	14+	7-	18+
+10	Lin Chi-Liang	6d	TW	xxx	5	5	34	35+	24+	16-	19+	4-	18+	20+	1-
+11	Solovjov Valerij	6d	SU	xxx	5	5	32	22+	4-	35+	6-	30+	15+	8-	14+
+12	Gondor Andras	5d	HU	xxx	5	5	31	2-	15-	19-	32+	31+	26+	17+	16+
+13	Shepperson Piers	4d	UK	xxx	5	5	30	14-	35+	36+	16+	18+	2-	5-	15+
+14	Zemor Gilles	4d	FR	xxx	4	4	39	13+	2-	7+	30+	8-	9-	22+	11-
+15	Danek Vladimir	5d	CS	xxx	4	4	37	16-	12+	23+	17+	5-	11-	19+	13-
+16	Flood Jostein	1d	NO	xxx	4	4	36	15+	8+	10+	13-	6-	20-	25+	12-
+17	Petrovic Rade	5d	YU	xxx	4	4	35	20+	9+	4-	15-	26+	7-	12-	28+
+18	Song Byung-yoon	5d	CA	xxx	4	4	35	30+	29+	2-	20+	13-	10-	24+	9-
+19	Lim Jung-Ho	6d	US	xxx	4	4	34	3-	22+	12+	10-	9-	34+	15-	29+
+20	Lee Choon-Huat	5d	MY	xxx	4	4	33	17-	31+	24+	18-	21+	16+	10-	4-
+21	An Kwang-Ho	5d	AU	xxx	4	4	33	1-	27+	26+	8-	20-	32+	6-	30+
+22	Hansen Frank	5d	DK	xxx	4	4	31	11-	19-	32+	28+	3-	23+	14-	25+
+23	Siivola Matti	3d	FI	xxx	4	4	28	5-	32+	15-	26-	28+	22-	27+	24+
+24	Tomes Ray	4d	NZ	xxx	3	3	31	25+	10-	20-	27+	7-	29+	18-	23-
+25	Yeat How-Ching	4d	SG	xxx	3	3	28	24-	28-	34+	5-	27+	30+	16-	22-
+26	Olsson Ulf	4d	SE	xxx	3	3	28	34+	3-	21-	23+	17-	12-	29-	36+
+27	Irimie Sergiu	2d	RO	xxx	3	3	26	6-	21-	31+	24-	25-	33+	23-	34+
+28	Ginoux Marc	1k	BE	xxx	3	3	26	7-	25+	30-	22-	23-	35+	34+	17-
+29	Garofalo Primo	1d	IT	xxx	3	3	26	36+	18-	6-	9-	33+	24-	26+	19-
+30	Wiltschek Helmut	6d	AT	xxx	3	3	25	18-	34+	28+	14-	11-	25-	36+	21-
+31	Pons Joan	1d	ES	xxx	3	3	24	4-	20-	27-	34-	12-	36+	33+	32+
+32	Bassarsky Franklin	3d	AR	xxx	2	2	26	8-	23-	22-	12-	36+	21-	35+	31-
+33	Zweig Adrian	1d	CH	xxx	2	2	25	9-	36+	8-	7-	29-	27-	31-	35+
+34	Chacon Jose	3d	MX	xxx	2	2	23	26-	30-	25-	31+	35+	19-	28-	27-
+35	Ventura Hercules	1d	PH	xxx	1	1	24	10-	13-	11-	36+	34-	28-	32-	33-
+36	Jear Pitaya	3d	TH	xxx	0	0	22	29-	33-	13-	35-	32-	31-	30-	26-

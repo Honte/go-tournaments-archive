@@ -1,0 +1,5 @@
+stages:
+  - type: tournament
+    file: wagc2021.txt
+    scoringColumns:
+      - null

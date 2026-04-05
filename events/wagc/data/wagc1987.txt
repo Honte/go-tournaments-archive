@@ -1,0 +1,40 @@
+; EV[9th World Amateur Go Championship]
+; PC[CN, Beijing]
+; DT[1987-05-12,1987-05-16]
+; HA[h9]
+; KM[5.5]
+; CM[Shared Places 16-18]
+1	Imamura Fumiaki	7d	JP	xxx	7	7	42	22+	2+	15+	4+	6+	3-	7+	5+
+2	Yu Bin	6d	CN	xxx	7	7	42	13+	1-	19+	15+	4+	14+	3+	6+
+3	Lee Kwan-Chol	5d	KR	xxx	7	7	40	5+	20+	23+	10+	14+	1+	2-	9+
+4	Tsang Pingfai	6d	HK	xxx	6	6	37	34+	5+	6+	1-	2-	17+	14+	7+
+5	Choi Jong	6d	CA	xxx	5	5	40	3-	4-	25+	30+	16+	8+	11+	1-
+6	Macfadyen Matthew	6d	UK	xxx	5	5	39	29+	18+	4-	24+	1-	15+	13+	2-
+7	Kraszek Janusz	5d	PL	xxx	5	5	38	8-	27+	30+	18+	10+	11+	1-	4-
+8	Song Moo-Yong	5d	BR	xxx	5	5	37	7+	10-	12-	9+	20+	5-	16+	17+
+9	Pocsai Tibor	5d	HU	xxx	5	5	36	11+	24+	14-	8-	18+	22+	12+	3-
+10	Michel Jean	4d	FR	xxx	5	5	36	25+	8+	16+	3-	7-	12-	29+	19+
+11	Heiser Laurent	4d	LU	xxx	5	5	35	9-	29+	22+	12+	13+	7-	5-	14+
+12	Bogdanov Viktor	6d	SU	xxx	5	5	34	20-	25+	8+	11-	26+	10+	9-	18+
+13	Rittner Egbert	5d	DE	xxx	5	5	34	2-	32+	17+	16+	11-	19+	6-	22+
+14	Matsuda Takao	6d	US	xxx	4	4	40	28+	23+	9+	20+	3-	2-	4-	11-
+15	Gostelli Patrice	3d	CH	xxx	4	4	33	32+	19+	1-	2-	22-	6-	31+	23+
+16	Garcia_dl_Banda Paco	4d	ES	xxx	4	4	32	30+	31+	10-	13-	5-	20+	8-	25+
+17	Westhoff Arend-Jan	4d	NL	xxx	4	4	32	18-	26+	13-	23+	24+	4-	27+	8-
+18	Wiltschek Helmut	6d	AT	xxx	4	4	32	17+	6-	31+	7-	9-	24+	22+	12-
+19	Garofalo Primo	1d	IT	xxx	4	4	32	33+	15-	2-	26+	21+	13-	28+	10-
+20	Yeat How-Ching	4d	SG	xxx	4	4	30	12+	3-	34+	14-	8-	16-	32+	28+
+21	Matoh Leon	4d	YU	xxx	4	4	22	24-	22-	33+	31+	19-	28-	26+	27+
+22	Laatikainen Vesa	3d	FI	xxx	3	3	37	1-	21+	11-	27+	15+	9-	18-	13-
+23	Tung Francis	4d	AU	xxx	3	3	31	26+	14-	3-	17-	29+	27-	24+	15-
+24	Tan Bee-Giok	3d	PH	xxx	3	3	28	21+	9-	28+	6-	17-	18-	23-	34+
+25	Sgall Jiri	3d	CS	xxx	3	3	28	10-	12-	5-	28+	27-	32+	33+	16-
+26	Johansson Mats	3d	SE	xxx	3	3	27	23-	17-	29+	19-	12-	30+	21-	33+
+27	Bro-Jorgensen Ulrik	1d	DK	xxx	3	3	26	31-	7-	32+	22-	25+	23+	17-	21-
+28	Phease Barry	4d	NZ	xxx	3	3	24	14-	34+	24-	25-	31+	21+	19-	20-
+29	Chairasmisak Korsak	3d	TH	xxx	3	3	24	6-	11-	26-	33+	23-	34+	10-	32+
+30	Yeo Teong-Loke	4d	MY	xxx	3	3	22	16-	33+	7-	5-	32-	26-	34+	31+
+31	Quintero Ricardo	3d	MX	xxx	2	2	26	27+	16-	18-	21-	28-	33+	15-	30-
+32	Gilbert Michel	2k	BE	xxx	2	2	25	15-	13-	27-	34+	30+	25-	20-	29-
+33	Christoffersen Terje	1d	NO	xxx	1	1	22	19-	30-	21-	29-	34+	31-	25-	26-
+34	Castro Carlos	2d	AR	xxx	0	0	25	4-	28-	20-	32-	33-	29-	30-	24-

@@ -1,0 +1,12 @@
+stages:
+  - type: tournament
+    file: wagc2017.txt
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - sos
+    breakers:
+      - wins
+      - sos
+    findSharedPlaces: true

@@ -1,0 +1,73 @@
+; TC[W040606]
+; CL[A]
+; EV[25th World Amateur Go Championship]
+; PC[JP, Kurashiki]
+; DT[2004-06-06,2004-06-10]
+; KM[6.5]
+; TM[3h]
+; HA[h9]
+;
+  1 Yi Kang-wuk                 7d KR xxx   8 8  43 317  46+ 26+ 11+  6+  4+  2+  7+  3+  |13649812
+  2 Lai Youzheng                7d TW Tai   7 7  42 318  43+ 32+ 24+ 10+  3+  1-  5+  4+  |13650813
+  3 Fu Li                       7d CN xxx   6 6  44 302  39+ 33+ 25+  5+  2- 17+  6+  1-  |12849694
+  4 Helmstetter Bernard         5d FR 75Pa  6 6  44 294  21+ 35+  7+ 16+  1- 13+ 30+  2-  |10450297
+  5 Nakazono Seizo              7d JP xxx   6 6  43 301  19+ 29+ 20+  3- 15+  9+  2- 12+  |13662814
+  6 Li Xianyu                   6d CA xxx   6 6  43 300  37+ 27+  8+  1- 19+ 12+  3- 14+  |13674815
+  7 Tong Ling-Ying              5d HK xxx   6 6  39 288  48+ 51+  4- 38+ 14+ 10+  1- 13+  |13686816
+  8 Ning Ted                    6d US xxx   6 6  38 297  42+ 15+  6- 22+ 12- 23+ 25+ 10+  |12086514
+  9 Heiser Laurent              6d LU Lux   6 6  38 296  12+ 24- 34+ 25+ 18+  5- 21+ 11+  |10249195
+ 10 Nechanicky Radek            6d CZ Nym   5 5  42 282  17+ 38+ 31+  2- 20+  7- 22+  8-  |10250196
+ 11 Surin Dmitrij               6d RU 59Pe  5 5  40 273  40+ 36+  1- 13- 39+ 28+ 17+  9-  |10825254
+ 12 Koszegi Diana               6d HU Szfv  5 5  39 290   9- 42+ 49+ 29+  8+  6- 20+  5-  |10301247
+ 13 Arnim Felix_von             5d DE HH    5 5  38 284  18- 50+ 36+ 11+ 31+  4- 15+  7-  |10237194
+ 14 Jacenko Dmytro              5d UA Kyiv  5 5  37 283  22+ 41+ 16- 30+  7- 42+ 24+  6-  |10286870
+ 15 Fahl Gustav                 2d SE Sto   5 5  37 271  60+  8- 21+ 28+  5- 19+ 13- 35+  |10386068
+ 16 Matoh Leon                  5d SI NMe   5 5  36 276  23+ 28+ 14+  4- 17- 30- 47+ 34+  |10398608
+ 17 Groenen Geert               6d NL DHaa  5 5  35 283  10- 52+ 51+ 26+ 16+  3- 11- 32+  |10501216
+ 18 Calota Lucretiu             5d RO Tims  5 5  34 279  13+ 25- 44+ 24+  9- 22- 46+ 27+  |10350395
+ 19 Brouwer Peter               4d DK AAR   5 5  34 274   5- 59+ 56+ 23+  6- 15- 37+ 26+  |10986514
+ 20 Rix Alex                    4d UK Lndn  5 5  33 282  57+ 49+  5- 27+ 10- 29+ 12- 28+  |10262032
+ 21 Manrique-Ochoa Fernando     4d CO xxx   5 5  33 272   4- 57+ 15- 45+ 43+ 31+  9- 30+  |12725086
+ 22 Lopez-Herrero Eduardo       6d AR xxx   5 5  33 271  14- 64+ 33+  8- 36+ 18+ 10- 25+  |10401567
+ 23 Lai Zhiyi-Benson            2d SG xxx   5 5  33 268  16- 58+ 48+ 19- 27+  8- 31+ 24+  |13698817
+ 24 Kraszek Janusz              5d PL Wars  4 4  39 267  55+  9+  2- 18- 37+ 33+ 14- 23-  |10637924
+ 25 Winkler Michael             4d AT Wien  4 4  37 269  63+ 18+  3-  9- 40+ 26+  8- 22-  |10301610
+ 26 Jevtic Nikola               5d YU Kra   4 4  36 260  54+  1- 39+ 17- 35+ 25- 45+ 19-  |10374089
+ 27 Ramon Jan                   4d BE Leuv  4 4  35 259  34+  6- 45+ 20- 23- 53+ 36+ 18-  |10213632
+ 28 Mutabzija Zoran             5d HR Zagr  4 4  34 262  52+ 16- 32+ 15- 44+ 11- 39+ 20-  |10249041
+ 29 Jadron Peter                4d SK SBel  4 4  34 258  50+  5- 40+ 12- 32+ 20- 34- 52+  |10298651
+ 30 Sulak Fatih                 3d TR Ank   4 4  33 265  59+ 31- 35+ 14- 56+ 16+  4- 21-  |12786081
+ 31 Grierson Colin              5d NZ xxx   4 4  33 262  56+ 30+ 10- 41+ 13- 21- 23- 50+  |12013518
+ 32 Puha Timo                   3d FI Kanp  4 4  32 257  53+  2- 28- 47+ 29- 54+ 42+ 17-  |10737914
+ 33 Benjarit Rit                5d TH xxx   4 4  31 253  58+  3- 22- 53+ 41+ 24- 35- 46+  |12949409
+ 34 Purcell Tony                5d AU xxx   4 4  31 248  27- 55+  9- 35- 58+ 49+ 29+ 16-  |13601819
+ 35 Flood Jostein               5d NO Osl   4 4  30 264  64+  4- 30- 34+ 26- 44+ 33+ 15-  |10533369
+ 36 Mitchell Noel               2d IE Dubl  4 4  30 256  44+ 11- 13- 58+ 22- 50+ 27- 48+  |10474563
+ 37 Tran Anh-Tuan               2d VN xxx   4 4  30 249   6- 61+ 38- 57+ 24- 41+ 19- 45+  |13613820
+ 38 Lee Choon-Huat              4d MY xxx   4 4  29 246  61+ 10- 37+  7- 42- 47- 55+ 44+  |12762079
+ 39 Cabre Dimas                 3d ES Bar   4 4  28 258   3- 63+ 26- 50+ 11- 56+ 28- 47+  |10333015
+ 40 Fernandez-Caballero Antonio 3d CU xxx   4 4  27 247  11- 53+ 29- 46+ 25- 45- 61+ 43+  |12874708
+ 41 Renner Josef                2d CH Zur   4 4  27 242  62+ 14- 43+ 31- 33- 37- 56+ 42+  |12649714
+ 42 Gonzalez-Zelaya Carlos      1d MX xxx   3 3  33 248   8- 12- 62+ 49+ 38+ 14- 32- 41-  |13625821
+ 43 Iamashita Henri-Joiti       2d BR xxx   3 3  31 235   2- 54+ 41- 52+ 21- 46- 57+ 40-  |13649823
+ 44 Raikin Shlomo               1d IL xxx   3 3  30 237  36- 46+ 18- 51+ 28- 35- 54+ 38-  |12425182
+ 45 Paunic Dragan               5d BA Sar   3 3  29 238  49- 60+ 27- 21- 48+ 40+ 26- 37-  |10313710
+ 46 Petrauskas Albertas         1d LT Viln  3 3  29 236   1- 44- 64+ 40- 62+ 43+ 18- 33-  |12749528
+ 47 Moreano Oswaldo             2d EC xxx   3 3  29 230  51- 48- 54+ 32- 52+ 38+ 16- 39-  |12898710
+ 48 Sowal Narendra              1d NP xxx   3 3  28 236   7- 47+ 23- 56- 45- 61+ 53+ 36-  |13650824
+ 49 Suponev Alexandr            1d BY Min   3 3  28 234  45+ 20- 12- 42- 55+ 34- 52- 60+  |12349205
+ 50 Soletti Gionata             1k IT Mila  3 3  27 232  29- 13- 63+ 39- 59+ 36- 51+ 31-  |10313149
+ 51 Rakotoarisoa Abel           1d MG xxx   3 3  27 230  47+  7- 17- 44- 54- 60+ 50- 58+  |12701084
+ 52 Perez Alfonso               1d UY xxx   3 3  26 232  28- 17- 59+ 43- 47- 62+ 49+ 29-  |13474076
+ 53 Tsolmon Sansar              1d MN xxx   3 3  26 225  32- 40- 55+ 33- 57+ 27- 48- 59+  |13662825
+ 54 Ong Edison                  4k ID xxx   3 3  24 233  26- 43- 47- 61+ 51+ 32- 44- 57+  |13674826
+ 55 Edwards Paul                1d ZA xxx   3 3  22 229  24- 34- 53- 64+ 49- 58+ 38- 56+  |10913738
+ 56 Unten Augusto               2d PE xxx   2 2  29 223  31- 62+ 19- 48+ 30- 39- 41- 55-  |13686827
+ 57 Teles-Menezes Jose          3k PT Lis   2 2  27 221  20- 21- 60+ 37- 53- 59+ 43- 54-  |10313831
+ 58 Pacheco Eric                2k VE xxx   2 2  25 217  33- 23- 61+ 36- 34- 55- 64+ 51-  |13633829
+ 59 Valenzuela Alfredo          1d CL xxx   2 2  23 213  30- 19- 52- 60+ 50- 57- 63+ 53-  |13601830
+ 60 Shaw Shiba                  1k IN xxx   2 2  21 208  15- 45- 57- 59- 63+ 51- 62+ 49-  |13613831
+ 61 Harutyunyan Davit           1d AM xxx   2 2  21 204  38- 37- 58- 54- 64+ 48- 40- 63+  |12750089
+ 62 Tehhani Fouad               4k MO xxx   2 2  18 206  41- 56- 42- 63+ 46- 52- 60- 64+  |13625832
+ 63 Gomar Rosa-Maria            5k GT xxx   1 1  19 197  25- 39- 50- 62- 60- 64+ 59- 61-  |13649834
+ 64 Escobar-Thompson Edgar      5k PA xxx   0 0  22 197  35- 22- 46- 55- 61- 63- 58- 62-  |13650835

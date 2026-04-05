@@ -1,0 +1,62 @@
+; TC[W980602]
+; CL[A]
+; EV[World Amateur Go Championship 1998]
+; PC[JP,Tokyo]
+; KM[5.5]
+; TM[90]
+; HA[h9]
+; DT[1998-06-02,1998-06-05]
+;                 20th World Amateur Go Championship, Tokyo (JP) 
+;                               June 2 - 5, 1998
+;
+;Pl     Name             Grade  Club   MM S SOS SSOS  1.  2.  3.  4.  5.  6.  7.  8. 
+  1 Kim Ch`an-u             7d KR xxx   8 8  42 320  10+ 20+ 19+ 17+  8+  2+  6+  3+  |13298351
+  2 Hiraoka Satoshi         7d JP xxx   7 7  43 302  14+ 26+ 30+  4+  5+  1-  8+ 15+  |10801780
+  3 Zhao Wendong            7d CN xxx   6 6  43 301  37+ 18+ 16+  8- 13+  5+  4+  1-  |10813781
+  4 Zhou Pingqiang          6d TW xxx   6 6  42 307   9+ 24+ 13+  2-  7+ 19+  3- 11+  |13225289
+  5 Mun Yeong-sam           7d KP xxx   6 6  42 303  27+ 15+ 21+  6+  2-  3- 14+ 10+  |10637902
+  6 Wang Yee-Hsun           6d HK xxx   6 6  40 296  33+ 25+ 11+  5- 23+ 12+  1-  9+  |10837783
+  7 Janssen Frank           6d NL Amvn  6 6  35 284  19- 47+ 31+ 11+  4- 22+ 16+  8+  |10298596
+  8 Hsiang Thomas           7d US xxx   5 5  44 299  39+ 22+ 12+  3+  1-  9+  2-  7-  |10849784
+  9 Nechanicky Radek        6d CZ Nym   5 5  39 297   4- 27+ 28+ 10+ 16+  8- 21+  6-  |10250196
+ 10 Ong Peng-Chwan          5d SG xxx   5 5  39 276   1- 43+ 32+  9- 24+ 20+ 13+  5-  |10850785
+ 11 Yu Zhiqi                6d CA xxx   5 5  37 274  29+ 31+  6-  7- 41+ 23+ 19+  4-  |10498543
+ 12 Lazarev Alexej          6d RU 10Pt  5 5  36 282  35+ 17+  8- 26+ 25+  6- 15- 23+  |10374386
+ 13 Mero Csaba              5d HU BuPe  5 5  36 278  34+ 40+  4- 18+  3- 26+ 10- 24+  |10225875
+ 14 Yi Ren_Zhou             7d AU xxx   5 5  36 271   2- 45+ 37+ 25- 18+ 17+  5- 21+  |10862786
+ 15 Rittner Egbert          6d DE HH    5 5  35 283  47+  5- 22+ 20+ 19- 36+ 12+  2-  |10237513
+ 16 Laatikainen Vesa        5d FI HGK   5 5  35 272  23+ 38+  3- 29+  9- 33+  7- 27+  |10201015
+ 17 Bogaerts Jan            3d BE Brug  5 5  34 264  46+ 12- 35+  1- 30+ 14- 33+ 22+  |10286617
+ 18 Jacenko Dmytro          6d UA Kyiv  5 5  32 261  45+  3- 41+ 13- 14- 40+ 28+ 19+  |10286870
+ 19 Colmez Pierre           5d FR 75Pa  4 4  41 279   7+ 41+  1- 34+ 15+  4- 11- 18-  |10237018
+ 20 Quintero Ricardo        5d MX xxx   4 4  36 260  42+  1- 24+ 15- 31+ 10- 34+ 32-  |10898789
+ 21 Mateescu Robert         6d RO Bucu  4 4  35 269  36+ 32+  5- 23- 28+ 25+  9- 14-  |10486817
+ 22 Kylemark Magnus         2d SE Got   4 4  35 264  28+  8- 15- 38+ 35+  7- 29+ 17-  |10374760
+ 23 Huettler Franz          4d AT Wien  4 4  34 265  16- 39+ 40+ 21+  6- 11- 35+ 12-  |10274869
+ 24 Hall T_Mark             4d UK Bris  4 4  33 266  44+  4- 20- 36+ 10- 31+ 26+ 13-  |10286023
+ 25 Kang Injune             6d NZ xxx   4 4  33 260  43+  6- 33+ 14+ 12- 21- 27- 38+  |10833790
+ 26 Mutabzija Zoran         5d HR Zagr  4 4  32 257  30+  2- 50+ 12- 29+ 13- 24- 35+  |10249041
+ 27 Entin Leonid            3d IL xxx   4 4  32 255   5-  9- 43+ 42+ 33- 38+ 25+ 16-  |10801791
+ 28 Lubos Jan               4d PL Wodz  4 4  30 251  22- 34+  9- 39+ 21- 42+ 18- 37+  |10337613
+ 29 Matoh Leon              5d SI NM    4 4  29 247  11- 46+ 36+ 16- 26- 39+ 22- 34+  |10398608
+ 30 Djap Woei-Haw           3d ID xxx   4 4  29 246  26- 50+  2- 32+ 17- 34- 42+ 33+  |10474574
+ 31 Watanabe Kazuo          5d BR xxx   4 4  28 242  49+ 11-  7- 37+ 20- 24- 44+ 36+  |10813792
+ 32 Chu Pai-Yee             4d MY xxx   4 4  27 238  48+ 21- 10- 30- 34- 47+ 41+ 20+  |10825793
+ 33 Sanchez Cesar           4d ES Mad   3 3  33 249   6- 42+ 25- 48+ 27+ 16- 17- 30-  |10450561
+ 34 Kostolansky Miroslav    2d SK Brat  3 3  31 249  13- 28- 48+ 19- 32+ 30+ 20- 29-  |10349746
+ 35 Ngmjarassrivichai V     3d TH xxx   3 3  30 243  12- 48+ 17- 40+ 22- 41+ 23- 26-  |10837794
+ 36 Flood Jostein           5d NO Osl   3 3  28 236  21- 44+ 29- 24- 37+ 15- 46+ 31-  |10533369
+ 37 Staub Michael           2d DK KGK   3 3  28 232   3- 49+ 14- 31- 36- 48+ 40+ 28-  |10401204
+ 38 Stankovic Mijodrag      5d YU Nis   3 3  27 228  40- 16- 49+ 22- 43+ 27- 39+ 25-  |10313083
+ 39 Carrillo Juan-Carlos    3d CL xxx   3 3  26 236   8- 23- 44+ 28- 46+ 29- 38- 45+  |10849795
+ 40 Baizini Giacomo         1k IT Mila  3 3  26 232  38+ 13- 23- 35- 44+ 18- 37- 49+  |10398520
+ 41 Karaerkek Kerem         3d TR Ank   3 3  25 233  50+ 19- 18- 45+ 11- 35- 32- 48+  |10498576
+ 42 Reiser Stephan          1k CH Ber   3 3  25 232  20- 33- 46+ 27- 45+ 28- 30- 44+  |10298805
+ 43 Rojas Rogelio           3k CU xxx   3 3  21 220  25- 10- 27- 49+ 38- 44- 50+ 46+  |10850796
+ 44 Branco Gabriel          1k PT Lis   2 2  25 209  24- 36- 39- 47+ 40- 43+ 31- 42-  |10401578
+ 45 Scolnik Hugo            2d AR xxx   2 2  24 209  18- 14- 47+ 41- 42- 46- 49+ 39-  |10874798
+ 46 Hunt Clive              1k ZA xxx   2 2  23 208  17- 29- 42- 50+ 39- 45+ 36- 43-  |10833801
+ 47 Rafferty Chris          1k IE Dubl  2 2  22 208  15-  7- 45- 44- 49+ 32- 48- 50+  |10849256
+ 48 Brauch Jean             1k LU Lux   2 2  21 217  32- 35- 34- 33- 50+ 37- 47+ 41-  |10333906
+ 49 Gonzalez-G Heiryck      3k VE xxx   1 1  20 197  31- 37- 38- 43- 47- 50+ 45- 40-  |10801802
+ 50 Sagar Arun              5k IN xxx   0 0  21 193  41- 30- 26- 46- 48- 49- 43- 47-  |10813803

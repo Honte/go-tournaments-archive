@@ -1,7 +1,6 @@
-website: https://leago.gg/event/wagc2025
 stages:
   - type: tournament
-    file: wagc2025.txt
+    file: wagc2015.txt
     scoringColumns:
       - wins
       - sos
