@@ -66,6 +66,7 @@
     "place": "Place",
     "country": "Country",
     "opponent": "Opponent",
+    "index": "#",
     "firstName": "First Name",
     "lastName": "Last Name",
     "name": "Name",

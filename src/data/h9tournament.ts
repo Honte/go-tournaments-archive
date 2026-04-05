@@ -7,6 +7,7 @@ import { parseH9 } from '@/libs/h9';
 import { getGameId } from '@/data/games';
 import { getPlayerId } from '@/data/players';
 import { getRankValue } from '@/data/rank';
+import { isScoringBreaker } from '@/libs/breakers';
 
 const EVENT_DATA_DIR = `./events/${EVENT}/data/`;
 
@@ -21,7 +22,7 @@ export async function loadH9Tournament({
   gamesMap: Record<string, Game>;
   tournamentDetails: TournamentDetails;
 }): Promise<LeagueStage> {
-  const { file, date, egd, breakers, scoringColumns, rules, sgfsDir } = stage;
+  const { file, date, egd, breakers, scoringColumns, rules, markExAequo = false } = stage;
 
   const content = await readFile(join(EVENT_DATA_DIR, file), 'utf-8');
   const tournament = parseH9(content);
@@ -52,7 +53,7 @@ export async function loadH9Tournament({
     const tableEntry: TableResult = {
       id,
       place: player.place,
-      index: table.length,
+      index: table.length + 1,
       rank: getRankValue(player.rank),
       wins: 0,
       sos: 0,
@@ -70,7 +71,7 @@ export async function loadH9Tournament({
     for (let i = 0; i < player.scores.length; i++) {
       const breaker = scoringColumns?.[i];
 
-      if (!breaker || breaker === Breaker.DIRECT_MATCH) {
+      if (!isScoringBreaker(breaker)) {
         continue;
       }
 
@@ -142,8 +143,38 @@ export async function loadH9Tournament({
     }
   }
 
+  if (markExAequo && breakers) {
+    for (let i = 1; i < table.length; i++) {
+      const prev = table[i - 1]
+      const current = table[i]
+      let exAequo = true
+
+      for (const breaker of breakers) {
+        if (!isScoringBreaker(breaker)) {
+          continue;
+        }
+
+        if (current[breaker] !== prev[breaker]) {
+          exAequo = false
+          break;
+        }
+      }
+
+      current.place = exAequo ? prev.place : prev.place + 1
+    }
+  }
+
   if (!tournamentDetails.top.length) {
-    tournamentDetails.top = table.slice(0, 3).map((p) => p.id);
+    const winners: string[][] = []
+    for (const player of table) {
+      if (player.place <= 3) {
+        (winners[player.place - 1] ||= []).push(player.id)
+      } else {
+        break;
+      }
+    }
+
+    tournamentDetails.top = winners.map((winner) => winner.join(','))
   }
 
   return {

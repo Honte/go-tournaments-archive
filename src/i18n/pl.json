@@ -68,6 +68,7 @@
     "opponent": "Przeciwnik",
     "firstName": "Imię",
     "lastName": "Nazwisko",
+    "index": "Lp.",
     "name": "Zawodnik",
     "rank": "Siła",
     "round": "Runda %{0}",
