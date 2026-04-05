@@ -1,8 +1,11 @@
 import { EventConfig } from '@event/schema';
 
-export default {
+const EVENT_CONFIG: EventConfig = {
   id: 'wagc',
   domain: 'wagc.go.art.pl',
   sgfUrlPrefix: 'https://wagc.go.art.pl/sgf/',
   defaultLocale: 'en',
-} satisfies EventConfig;
+  showCountry: true,
+};
+
+export default EVENT_CONFIG;
