@@ -5,7 +5,7 @@ import { Game, GamePlayer, LeagueStage, Player, TableResult, TournamentDetails }
 import { InputTournamentStage } from '@/schema/input';
 import { isScoringBreaker } from '@/libs/breakers';
 import { parseDates } from '@/libs/dates';
-import { parseH9 } from '@/libs/h9';
+import { H9Game, parseH9 } from '@/libs/h9';
 import { getGameId } from '@/data/games';
 import type { PlayersHandler } from '@/data/players';
 import { getRankValue } from '@/data/rank';
@@ -119,7 +119,7 @@ export async function loadH9Tournament({
         const parsedGame = {
           id: getGameId(gamesMap),
           players: [isCurrentBlack ? playerA : playerB, isCurrentBlack ? playerB : playerA],
-          result: game.result,
+          result: getGameResult(game.result, game.color),
           props: {},
         } satisfies Game;
 
@@ -203,4 +203,15 @@ export async function loadH9Tournament({
     rounds,
     date: parseDates(stage.date ?? tournament.dates),
   } satisfies LeagueStage;
+}
+
+function getGameResult(result: H9Game['result'], color: H9Game['color']) {
+  switch (result) {
+    case '+':
+      return color ? (color === 'black' ? 'B+' : 'W+') : '+';
+    case '-':
+      return color ? (color === 'black' ? 'W+' : 'B+') : '+';
+    case '=':
+      return '=';
+  }
 }
