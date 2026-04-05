@@ -51,13 +51,16 @@
     "sos": "SOS",
     "sodos": "SODOS",
     "sosos": "SOSOS",
+    "score": "Punkty",
+    "mms": "MMS",
     "direct": "Bezpośredni pojedynek",
     "starting": "Pozycja startowa",
     "rank": "Ranking",
     "descriptions": {
       "sos": "Sum of Opponents' Scores - Suma punktów zdobytych przez przeciwników.",
       "sodos": "Sum of Defeated Opponents' Scores - Suma punktów zdobytych przez pokonanych przeciwników.",
-      "sosos": "Sum of Opponents' SOS - Suma SOS-ów zdobytych przez przeciwników, czyli suma sum ich punktów."
+      "sosos": "Sum of Opponents' SOS - Suma SOS-ów zdobytych przez przeciwników, czyli suma sum ich punktów.",
+      "mms": "Punkty McMahon"
     }
   },
   "table": {

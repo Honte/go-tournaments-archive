@@ -17,7 +17,14 @@ type TableLeagueProps = {
   translations: Translations;
 };
 
-type NumericBreaker = Breaker.WINS | Breaker.SOS | Breaker.SODOS | Breaker.SOSOS | Breaker.STARTING_POSITION;
+type NumericBreaker =
+  | Breaker.WINS
+  | Breaker.SOS
+  | Breaker.SODOS
+  | Breaker.SOSOS
+  | Breaker.MMS
+  | Breaker.STARTING_POSITION
+  | Breaker.SCORE;
 
 export function TableLeague({ stage, players, games, translations }: TableLeagueProps) {
   const t = getTranslator(translations);

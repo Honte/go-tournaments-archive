@@ -51,13 +51,16 @@
     "sos": "SOS",
     "sodos": "SODOS",
     "sosos": "SOSOS",
+    "score": "Score",
+    "mms": "MMS",
     "direct": "Direct match",
     "starting": "Starting position",
     "rank": "Rank",
     "descriptions": {
       "sos": "Sum of Opponents' Scores.",
       "sodos": "Sum Of Defeated Opponents' Scores.",
-      "sosos": "Sum of Opponents' SOS -> sum of sums of opponents' scores."
+      "sosos": "Sum of Opponents' SOS -> sum of sums of opponents' scores.",
+      "mms": "McMahon score"
     }
   },
   "table": {

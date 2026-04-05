@@ -56,6 +56,7 @@ export async function loadH9Tournament({
       sodos: 0,
       sosos: 0,
       score: 0,
+      mms: 0,
       starting: 0,
       won: [],
       lost: [],

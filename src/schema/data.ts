@@ -26,6 +26,7 @@ export type Stage = LeagueStage | LadderTableStage | FinalStage | RoundRobinTabl
 export enum Breaker {
   WINS = 'wins',
   SOS = 'sos',
+  MMS = 'mms',
   SODOS = 'sodos',
   SOSOS = 'sosos',
   STARTING_POSITION = 'starting',
@@ -37,6 +38,7 @@ export enum Breaker {
 export type ScoringBreaker =
   | Breaker.WINS
   | Breaker.SCORE
+  | Breaker.MMS
   | Breaker.SOS
   | Breaker.SODOS
   | Breaker.SOSOS
