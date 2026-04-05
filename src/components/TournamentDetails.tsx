@@ -3,6 +3,7 @@ import type { Tournament } from '@/schema/data';
 import type { ReactNode } from 'react';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
+import { formatDate } from '@/libs/dates';
 import { Details } from '@/components/Details';
 import { ExternalLink } from '@/components/ui/ExternalLink';
 import { H2 } from '@/components/ui/H2';
@@ -48,12 +49,4 @@ export function TournamentDetails({ tournament, translations }: TournamentDetail
       <Details details={details} />
     </div>
   );
-}
-
-function formatDate(date: string, locale: string) {
-  return new Intl.DateTimeFormat(locale, {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
-  }).format(new Date(date));
 }

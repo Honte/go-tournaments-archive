@@ -1,5 +1,6 @@
-import { Game, LeagueStage, Player, Stage, TournamentDateSpan, TournamentDetails } from '@/schema/data';
+import { Game, LeagueStage, Player, Stage, TournamentDetails } from '@/schema/data';
 import { InputStage } from '@/schema/input';
+import { parseDates } from '@/libs/dates';
 import { createFinalTable } from '@/data/final';
 import { parseGames } from '@/data/games';
 import { loadH9Tournament } from '@/data/h9tournament';
@@ -88,22 +89,4 @@ export async function parseStage(
       // @ts-ignore
       throw new Error(`Unrecognized stage ${stage.type}`);
   }
-}
-
-function parseDates(date?: string | string[]): TournamentDateSpan[] {
-  if (date === undefined) {
-    return [];
-  }
-
-  if (Array.isArray(date)) {
-    return date.map(parseDates).flat();
-  }
-
-  const [start, end] = date.split(' - ');
-
-  if (!end) {
-    return [{ start, end: start }];
-  }
-
-  return [{ start, end }];
 }

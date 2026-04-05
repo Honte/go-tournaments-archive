@@ -4,6 +4,7 @@ import { join } from 'node:path';
 import { Game, GamePlayer, LeagueStage, Player, TableResult, TournamentDetails } from '@/schema/data';
 import { InputTournamentStage } from '@/schema/input';
 import { isScoringBreaker } from '@/libs/breakers';
+import { parseDates } from '@/libs/dates';
 import { parseH9 } from '@/libs/h9';
 import { getGameId } from '@/data/games';
 import { getPlayerId } from '@/data/players';
@@ -179,12 +180,16 @@ export async function loadH9Tournament({
 
   return {
     type: 'tournament',
-    egd,
+    egd:
+      (stage.egd ?? tournament.id)
+        ? `https://europeangodatabase.eu/EGD/Tournament_Card.php?&key=${tournament.id}`
+        : undefined,
     breakers,
     rules,
     time: stage.time ?? (tournament.time ? `AT ${tournament.time} min` : undefined),
     komi: stage.komi ?? tournament.komi,
     table,
     rounds,
+    date: parseDates(stage.date ?? tournament.dates),
   } satisfies LeagueStage;
 }
