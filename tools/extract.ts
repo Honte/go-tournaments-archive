@@ -12,21 +12,6 @@ import { createTable } from '@/data/table';
 import type { RootParams } from './sgf';
 import { cleanSgf } from './sgf';
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const EVENT_DIR = join(__dirname, `../events/${EVENT}`);
 

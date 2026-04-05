@@ -1,7 +1,7 @@
+import { Logo } from '@event/Logo';
 import Link from 'next/link';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
-import { Logo } from '@event/Logo';
 
 type HeaderProps = {
   translations: Translations;

@@ -17,7 +17,9 @@
     "build:templates": "tsx tools/templates.ts",
     "build:svgs": "tsx tools/svgs.ts",
     "build:pngs": "tsx tools/pngs.ts",
-    "fix:sgfs": "tsx tools/fix.ts"
+    "fix:sgfs": "tsx tools/fix.ts",
+    "fmt": "prettier --check .",
+    "fmt:write": "prettier --write ."
   },
   "dependencies": {
     "@floating-ui/react": "0.27.19",

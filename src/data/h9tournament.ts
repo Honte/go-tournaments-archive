@@ -1,13 +1,13 @@
 import EVENT from '@event';
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
-import { Breaker, Game, GamePlayer, LeagueStage, Player, TableResult, TournamentDetails } from '@/schema/data';
+import { Game, GamePlayer, LeagueStage, Player, TableResult, TournamentDetails } from '@/schema/data';
 import { InputTournamentStage } from '@/schema/input';
+import { isScoringBreaker } from '@/libs/breakers';
 import { parseH9 } from '@/libs/h9';
 import { getGameId } from '@/data/games';
 import { getPlayerId } from '@/data/players';
 import { getRankValue } from '@/data/rank';
-import { isScoringBreaker } from '@/libs/breakers';
 
 const EVENT_DATA_DIR = `./events/${EVENT}/data/`;
 
@@ -145,9 +145,9 @@ export async function loadH9Tournament({
 
   if (markExAequo && breakers) {
     for (let i = 1; i < table.length; i++) {
-      const prev = table[i - 1]
-      const current = table[i]
-      let exAequo = true
+      const prev = table[i - 1];
+      const current = table[i];
+      let exAequo = true;
 
       for (const breaker of breakers) {
         if (!isScoringBreaker(breaker)) {
@@ -155,26 +155,26 @@ export async function loadH9Tournament({
         }
 
         if (current[breaker] !== prev[breaker]) {
-          exAequo = false
+          exAequo = false;
           break;
         }
       }
 
-      current.place = exAequo ? prev.place : prev.place + 1
+      current.place = exAequo ? prev.place : prev.place + 1;
     }
   }
 
   if (!tournamentDetails.top.length) {
-    const winners: string[][] = []
+    const winners: string[][] = [];
     for (const player of table) {
       if (player.place <= 3) {
-        (winners[player.place - 1] ||= []).push(player.id)
+        (winners[player.place - 1] ||= []).push(player.id);
       } else {
         break;
       }
     }
 
-    tournamentDetails.top = winners.map((winner) => winner.join(','))
+    tournamentDetails.top = winners.map((winner) => winner.join(','));
   }
 
   return {

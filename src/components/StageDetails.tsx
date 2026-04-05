@@ -1,5 +1,5 @@
-import type { ReactNode } from 'react';
 import type { Stage } from '@/schema/data';
+import type { ReactNode } from 'react';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { Breaker } from '@/components/Breaker';

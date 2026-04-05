@@ -1,6 +1,6 @@
+import { Logo } from '@event/Logo';
 import type { ComponentType } from 'react';
 import { FaAngleRight } from 'react-icons/fa6';
-import { Logo } from '@event/Logo';
 
 type BannerProps = {
   Icon?: ComponentType<{ className?: string; color?: string }>;

@@ -1,6 +1,6 @@
 import EVENT_CONFIG from '@event/config';
-import type { ReactNode } from 'react';
 import type { Tournament } from '@/schema/data';
+import type { ReactNode } from 'react';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { Details } from '@/components/Details';

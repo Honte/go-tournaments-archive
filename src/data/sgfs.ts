@@ -1,8 +1,8 @@
+import EVENT from '@event';
+import EVENT_CONFIG from '@event/config';
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import type { Tournament } from '@/schema/data';
-import EVENT from '@event';
-import EVENT_CONFIG from '@event/config';
 
 const SGF_DIR = `./events/${EVENT}/sgf`;
 

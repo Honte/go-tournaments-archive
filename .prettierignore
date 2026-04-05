@@ -2,5 +2,5 @@
 .next
 out
 node_modules
-public/data
-public/sgf
+events/*/data
+events/*/sgf

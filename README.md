@@ -1,6 +1,10 @@
-Repository of [Polish Go Championships Archive](https://mp.go.art.pl)
+# Go Tournaments Archive
 
 A multi-event Go tournament archive — a static Next.js site (no server required) supporting multiple events (Polish Go Championships, WAGC, etc.). Supports Polish and English via locale-based routing (`/pl`, `/en`). Tournament data is stored as YAML files in `events/[event-id]/data/`.
+
+## Sites
+
+- [Polish Go Championships Archive](https://mp.go.art.pl)
 
 **Tech stack:** Next.js, React 19, TypeScript, Tailwind CSS 4, YAML data files, SGF game records.
 
@@ -72,10 +76,10 @@ stages: # tournament can have multiple stages
 
 ```yaml
 players:
-  id1: Player Name 5d               # name + rank
-  id2: Player Name 4d (JP)          # with country code in parentheses
-  id3: Player Name 3d |12345        # with EGD pin
-  id4: Player Name 2d (PL) |67890   # with both
+  id1: Player Name 5d # name + rank
+  id2: Player Name 4d (JP) # with country code in parentheses
+  id3: Player Name 3d |12345 # with EGD pin
+  id4: Player Name 2d (PL) |67890 # with both
 ```
 
 Supported ranks: `Xk` (kyu), `Xd` (dan), `Xp` (professional), e.g. `5k`, `1d`, `2p`.
@@ -87,42 +91,53 @@ Supported ranks: `Xk` (kyu), `Xd` (dan), `Xp` (professional), e.g. `5k`, `1d`, `
 **`ladder-table`** — Swiss-system ladder; requires an `order` field listing initial seeding and an optional `playoffs` list of games played after the main rounds.
 
 ```yaml
-  - type: ladder-table
-    date: 1983-09-30 - 1983-10-02
-    order:
-      - id1
-      - id2
-      - id3,id4  # comma-separated means tied for a position
-    rounds:
-      - - id1-id2 id1:B+R
-        - id3-id4 id3:B+5.5
-    playoffs:
-      - id2-id3 id2:W+R
+- type: ladder-table
+  date: 1983-09-30 - 1983-10-02
+  order:
+    - id1
+    - id2
+    - id3,id4 # comma-separated means tied for a position
+  rounds:
+    - - id1-id2 id1:B+R
+      - id3-id4 id3:B+5.5
+  playoffs:
+    - id2-id3 id2:W+R
 ```
 
 **`round-robin-table`** — all games listed flat (no round structure), sorted by score then rank. Supports an optional localized `name`.
 
 ```yaml
-  - type: round-robin-table
-    name:
-      pl: Turniej o miejsca 5-11
-      en: Tournament for places 5-11
-    date: 1981-10-28 - 1981-10-30
-    games:
-      - id1-id2 id1:B+R
-      - id2-id3 id3:W+4.5
+- type: round-robin-table
+  name:
+    pl: Turniej o miejsca 5-11
+    en: Tournament for places 5-11
+  date: 1981-10-28 - 1981-10-30
+  games:
+    - id1-id2 id1:B+R
+    - id2-id3 id3:W+4.5
+```
+
+**`tournament`** — imports results from an H9 format file (used by EGD). The stage references an external `.txt` file parsed by `loadH9()`. Supports `scoringColumns` to extract score-based tiebreakers and `markExAequo` for equal-place detection.
+
+```yaml
+- type: tournament
+  file: data/2025/wagc2025.txt
+  scoringColumns:
+    - wins
+    - sos
+  markExAequo: true
 ```
 
 **`final`** — head-to-head final; `requiredWins` sets how many wins are needed to win the match; `includePrevious` (true/false) controls whether league results count toward the final.
 
 ```yaml
-  - type: final
-    date: 1997-11-29
-    requiredWins: 2
-    includePrevious: false
-    games:
-      - id1-id2 id2:W+R
-      - id2-id1 id1:B+29.5
+- type: final
+  date: 1997-11-29
+  requiredWins: 2
+  includePrevious: false
+  games:
+    - id1-id2 id2:W+R
+    - id2-id1 id1:B+29.5
 ```
 
 ### Game properties
@@ -150,7 +165,7 @@ SVG previews appear as board thumbnails on the tournament page.
 ## Adding a new event
 
 1. Create `events/[event-id]/` directory with:
-   - `config.ts` — implement `EventConfig` with `id`, `domain`, `sgfUrlPrefix`, `defaultLocale`
+   - `config.ts` — implement `EventConfig` with `id`, `domain`, `sgfUrlPrefix`, `defaultLocale`, `defaultCountry`; set `showCountry: true` for international events
    - `Logo.tsx` — event logo component
    - `colors.css` — CSS color variables
    - `i18n/pl.json`, `i18n/en.json` — translations

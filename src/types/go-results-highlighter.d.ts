@@ -1,8 +1,8 @@
 declare module 'go-results-highlighter' {
   export type GoResultsHighlighter = {
-    highlight(player: number, games?: number, rearrange?: boolean): void
-    dispose(): void
-  }
+    highlight(player: number, games?: number, rearrange?: boolean): void;
+    dispose(): void;
+  };
 
   function attachHighlighter(
     element: HTMLElement,

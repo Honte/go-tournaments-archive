@@ -1,5 +1,5 @@
-import type { PropsWithChildren } from 'react';
 import { clsx } from 'clsx';
+import type { PropsWithChildren } from 'react';
 
 type H1Props = PropsWithChildren<{
   className?: string;

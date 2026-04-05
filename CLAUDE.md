@@ -37,12 +37,13 @@ npm run fix:sgfs         # Clean SGF game files
 - `src/app/[locale]/stats/page.tsx` — all-time statistics page
 - `src/app/[locale]/stats/[slug]/page.tsx` — individual player stats (achievements, opponents)
 - `src/app/data/[year]/route.ts` — API route that serves tournament data as JSON
+- `src/app/sgf/[...path]/route.ts` — serves SGF, SVG, and PNG files with correct MIME types
 
 ### Events Directory
 
 Each event lives in `events/[event-id]/` and contains:
 
-- `config.ts` — `EventConfig` with `id`, `domain`, `sgfUrlPrefix`, `defaultLocale`
+- `config.ts` — `EventConfig` with `id`, `domain`, `sgfUrlPrefix`, `defaultLocale`, `defaultCountry`, and optional `showCountry` (shows country column in tables)
 - `Logo.tsx` — event-specific logo component
 - `colors.css` — event-specific CSS color variables
 - `i18n/pl.json`, `i18n/en.json` — event-specific translations
@@ -53,6 +54,7 @@ Each event lives in `events/[event-id]/` and contains:
 `events/schema.ts` defines the `EventConfig` type.
 
 Path aliases in `next.config.js` (via `turbopack.resolveAlias`):
+
 - `@event` → `events/index.ts` (active event ID)
 - `@event/schema` → `events/schema.ts`
 - `@event/*` → `events/[active-event]/*` (e.g. `@event/config` resolves to the active event's `config.ts`)
@@ -65,10 +67,11 @@ Tournament data lives in `events/[event-id]/data/[year].yml` (YAML, one file per
 2. `src/data/games.ts` parses game strings (format: `id1-id2 id1:B+2.5`)
 3. `src/data/players.ts` parses player info including rank, country, EGD ID; generates slugified IDs
 4. `src/data/table.ts`, `tableLadder.ts`, `tableWithoutRounds.ts`, `final.ts` compute standings with tiebreakers (wins, SOS, SODOS, SOSOS, direct, starting, rank)
-5. `src/data/stats.ts` aggregates cross-tournament statistics
-6. `src/data/rank.ts` converts rank strings (5k, 1d, 2p) to numeric values for sorting
-7. `src/data/sgfs.ts` loads SGF files from `events/${EVENT}/sgf/` for a tournament
-8. `src/data/index.ts` exports the main data access functions (`getTournaments()`, `getStats()`)
+5. `src/data/h9tournament.ts` parses H9 format tournament files (`.txt`) into stage data; used for WAGC and EGD-sourced tournaments
+6. `src/data/stats.ts` aggregates cross-tournament statistics
+7. `src/data/rank.ts` converts rank strings (5k, 1d, 2p) to numeric values for sorting
+8. `src/data/sgfs.ts` loads SGF files from `events/${EVENT}/sgf/` for a tournament
+9. `src/data/index.ts` exports the main data access functions (`getTournaments()`, `getStats()`)
 
 ### Schema
 
@@ -86,20 +89,22 @@ Core types are in `src/schema/data.ts`:
 
 `src/libs/` contains shared utilities used across components and data layer:
 
+- `breakers.ts` — `isScoringBreaker()` type guard for tiebreaker types
 - `goban.ts` — SGF parsing to board state: `sgfToBoard()`, `iterateStones()`
 - `h9.ts` — H9 international tournament format parser: `loadH9()`, `parseH9()`
-- `highlighter.ts` — wraps go-results-highlighter library
 - `join.ts` — React utility: `jsxJoin()` for interspersing arrays
 - `math.ts` — `between()` min/max clamp
 - `stage.ts` — `getStageName()` / `getStageNameFromType()` with i18n support
+- `table.ts` — `toPercentage()` for score calculation
 
 ### Components
 
-- `src/components/ui/` — reusable primitives: Button, H1, H2, ExternalLink, PlayerLink
-- `src/components/table/` — stage-specific table renderers: TableLeague, TableLadder, TableWithoutRounds, StatsTable
+- `src/components/ui/` — reusable primitives: Button, H1, H2, ExternalLink, PlayerLink, PlayerName (name + rank + country), PlayerCell (player with optional country column)
+- `src/components/table/` — stage-specific table renderers: GoResultsTable (interactive wrapper via go-results-highlighter), TableLeague, TableLadder, TableWithoutRounds, StatsTable
 - `src/components/stats/` — player stats views: Achievements, Events, Opponents
 - `src/components/navigation/` — TopNavigation, YearsNavigation, LocaleNavigation
 - `src/components/goban/` — Go board visualization (Goban.tsx + SVG assets)
+- `src/components/Country.tsx` — displays a country code with a localized tooltip (respects `showCountry` from EventConfig)
 - `src/components/Client.tsx` — client-side hydration with JSON-stringified translations
 
 ### i18n
