@@ -1,3 +1,4 @@
+import EVENT_CONFIG from '@event/config';
 import type { ReactNode } from 'react';
 import type { Tournament } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
@@ -17,6 +18,10 @@ export function TournamentDetails({ tournament, translations }: TournamentDetail
 
   if (tournament.location) {
     details[t('details.location')] = tournament.location;
+  }
+
+  if (tournament.country && EVENT_CONFIG.showCountry) {
+    details[t('details.country')] = t(`country.${tournament.country}`);
   }
 
   if (tournament.start) {

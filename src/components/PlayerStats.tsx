@@ -1,12 +1,16 @@
 'use client';
 
+import EVENT_CONFIG from '@event/config';
 import type { StatsPlayer } from '@/schema/data';
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
-import { toPercentage, toPlayerLink } from '@/libs/table';
+import { jsxJoin } from '@/libs/join';
+import { toPercentage } from '@/libs/table';
+import { Country } from '@/components/Country';
 import { StatsTable } from '@/components/table/StatsTable';
+import { PlayerCell } from '@/components/ui/PlayerCell';
 
 type PlayerStatsProps = {
   players: Record<string, StatsPlayer>;
@@ -18,6 +22,7 @@ type PlayerRow = {
   name: string;
   firstName: string;
   lastName: string;
+  countries: Set<string>;
   gold: number;
   silver: number;
   bronze: number;
@@ -48,6 +53,7 @@ export function PlayerStats({ players, translations }: PlayerStatsProps) {
             name: name ?? '',
             firstName,
             lastName,
+            countries: p.countries,
             gold: gold.length,
             silver: silver.length,
             bronze: bronze.length,
@@ -63,54 +69,76 @@ export function PlayerStats({ players, translations }: PlayerStatsProps) {
     [players]
   );
 
-  const columns = useMemo<ColumnDef<PlayerRow>[]>(() => {
-    return [
-      {
-        accessorKey: 'firstName',
-        header: t('table.firstName'),
-        cell: (info) => toPlayerLink(info, translations),
-        meta: { span: 2 },
-      },
-      {
-        accessorKey: 'lastName',
-        header: t('table.lastName'),
-        meta: { skip: true },
-      },
-      {
-        accessorKey: 'gold',
-        header: t('medals.gold'),
-      },
-      {
-        accessorKey: 'silver',
-        header: t('medals.silver'),
-      },
-      {
-        accessorKey: 'bronze',
-        header: t('medals.bronze'),
-      },
-      {
-        accessorKey: 'attended',
-        header: t('table.events'),
-      },
-      {
-        accessorKey: 'games',
-        header: t('table.games'),
-      },
-      {
-        accessorKey: 'won',
-        header: t('table.won'),
-      },
-      {
-        accessorKey: 'lost',
-        header: t('table.lost'),
-      },
-      {
-        accessorKey: 'wonPercent',
-        header: t('table.wonPercent'),
-        cell: toPercentage,
-      },
-    ] as ColumnDef<PlayerRow>[];
-  }, [t, translations]);
+  const columns = useMemo<ColumnDef<PlayerRow>[]>(
+    () =>
+      (
+        [
+          {
+            accessorKey: 'firstName',
+            header: t('table.firstName'),
+            cell: (info) => (
+              <PlayerCell
+                player={info.row.original}
+                locale={translations.locale}
+                includeRank={false}
+                includeCountry={false}
+              />
+            ),
+            meta: { span: 2 },
+          },
+          {
+            accessorKey: 'lastName',
+            header: t('table.lastName'),
+            meta: { skip: true },
+          },
+          EVENT_CONFIG.showCountry && {
+            accessorKey: 'country',
+            header: t('table.country'),
+            cell: (info) =>
+              jsxJoin(
+                Array.from(info.row.original.countries).map((code) => (
+                  <Country key={code} translations={translations} code={code} />
+                )),
+                ', '
+              ),
+          },
+          {
+            accessorKey: 'gold',
+            header: t('medals.gold'),
+          },
+          {
+            accessorKey: 'silver',
+            header: t('medals.silver'),
+          },
+          {
+            accessorKey: 'bronze',
+            header: t('medals.bronze'),
+          },
+          {
+            accessorKey: 'attended',
+            header: t('table.events'),
+          },
+          {
+            accessorKey: 'games',
+            header: t('table.games'),
+          },
+          {
+            accessorKey: 'won',
+            header: t('table.won'),
+          },
+          {
+            accessorKey: 'lost',
+            header: t('table.lost'),
+          },
+          {
+            accessorKey: 'wonPercent',
+            header: t('table.wonPercent'),
+            cell: toPercentage,
+          },
+        ] as ColumnDef<PlayerRow>[]
+      ).filter(Boolean),
+    [t, translations]
+  );
 
   return <StatsTable columns={columns} data={data} />;
 }

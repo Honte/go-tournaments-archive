@@ -4,6 +4,7 @@ import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
 import { H2 } from '@/components/ui/H2';
 import { PlayerLink } from '@/components/ui/PlayerLink';
+import { PlayerName } from '@/components/ui/PlayerName';
 
 type AwardedProps = {
   tournament: Tournament;
@@ -22,7 +23,11 @@ export function Awarded({ tournament, translations }: AwardedProps) {
         {awarded.map((players, index) => (
           <li key={index} className="my-1">
             {jsxJoin(
-              players.map((p) => <PlayerLink key={p.id} player={p} translations={translations} />),
+              players.map((p) => (
+                <PlayerLink key={p.id} playerId={p.id} locale={translations.locale}>
+                  <PlayerName player={p} />
+                </PlayerLink>
+              )),
               ', '
             )}
           </li>

@@ -21,7 +21,7 @@ export function Attendants({ stats, translations }: AttendantsProps) {
         <ol className="list-decimal mx-8">
           {players.slice(0, 10).map((p) => (
             <li key={p.id}>
-              <PlayerLink player={p} translations={translations}>
+              <PlayerLink playerId={p.id} locale={translations.locale}>
                 {p.name}
               </PlayerLink>{' '}
               - {p.years.length}

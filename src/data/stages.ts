@@ -1,4 +1,4 @@
-import { Game, LeagueStage, Player, Stage, TournamentDateSpan } from '@/schema/data';
+import { Game, LeagueStage, Player, Stage, TournamentDateSpan, TournamentDetails } from '@/schema/data';
 import { InputStage } from '@/schema/input';
 import { createFinalTable } from '@/data/final';
 import { parseGames } from '@/data/games';
@@ -10,7 +10,8 @@ import { createTableWithoutRounds } from '@/data/tableWithoutRounds';
 export async function parseStage(
   stage: InputStage,
   playersMap: Record<string, Player>,
-  gamesMap: Record<string, Game>
+  gamesMap: Record<string, Game>,
+  tournamentDetails: TournamentDetails
 ): Promise<Stage> {
   const date = parseDates(stage.date);
 
@@ -20,6 +21,7 @@ export async function parseStage(
         stage,
         playersMap,
         gamesMap,
+        tournamentDetails,
       });
     case 'league': {
       const rounds = stage.rounds.map((round: string[]) => parseGames(gamesMap, round));

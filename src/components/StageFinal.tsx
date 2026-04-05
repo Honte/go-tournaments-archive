@@ -2,6 +2,7 @@ import type { FinalStage, Player } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { PlayerLink } from '@/components/ui/PlayerLink';
+import { PlayerName } from '@/components/ui/PlayerName';
 
 type StageFinalProps = {
   stage: FinalStage;
@@ -29,11 +30,15 @@ export function StageFinal({ stage, players, translations }: StageFinalProps) {
       </p>
       <div className="bg-gray-200 p-2 my-2 md:p-3 text-lg flex items-center text-center gap-2">
         <strong>
-          <PlayerLink player={players[winner.id]} translations={translations} />
+          <PlayerLink playerId={winner.id} locale={translations.locale}>
+            <PlayerName player={players[winner.id]} />
+          </PlayerLink>
         </strong>
         <span>&ndash;</span>
         <span>
-          <PlayerLink player={players[loser.id]} translations={translations} />
+          <PlayerLink playerId={loser.id} locale={translations.locale}>
+            <PlayerName player={players[winner.id]} />
+          </PlayerLink>
         </span>
         <strong>{result}</strong>
         {prev && <span>{prev}</span>}

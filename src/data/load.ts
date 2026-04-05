@@ -2,7 +2,7 @@ import EVENT from '@event';
 import EVENT_CONFIG from '@event/config';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
-import { Game, Tournament, TournamentDateSpan } from '@/schema/data';
+import { Game, Tournament, TournamentDateSpan, TournamentDetails } from '@/schema/data';
 import { InputTournament } from '@/schema/input';
 import { glob } from 'fast-glob';
 import { parse } from 'yaml';
@@ -23,9 +23,16 @@ export async function loadTournaments() {
     const stages = [];
 
     const players = parsePlayers(json.players);
+    const tournamentDetails: TournamentDetails = {
+      ...json,
+      year,
+      country: json.country ?? EVENT_CONFIG.defaultCountry,
+      location: json.location ?? '',
+      top: json.top ?? [],
+    };
 
     for (const stageJson of json.stages) {
-      const stage = await parseStage(stageJson, players, games);
+      const stage = await parseStage(stageJson, players, games, tournamentDetails);
 
       if (stage.date) {
         dates.push(...stage.date);
@@ -35,16 +42,12 @@ export async function loadTournaments() {
     }
 
     tournaments.push({
-      ...json,
-      id: year,
-      country: json.country ?? EVENT_CONFIG.defaultCountry,
-      location: json.location ?? '',
+      ...tournamentDetails,
       ...getDateRange(dates),
-      year,
+      id: year,
       games,
       players,
       stages,
-      top: json.top ?? [],
     });
   }
 

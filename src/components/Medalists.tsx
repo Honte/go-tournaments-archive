@@ -5,6 +5,7 @@ import { getTranslator } from '@/i18n/translator';
 import { FullStatsLink } from '@/components/FullStatsLink';
 import { H1 } from '@/components/ui/H1';
 import { PlayerLink } from '@/components/ui/PlayerLink';
+import { PlayerName } from '@/components/ui/PlayerName';
 
 type MedalistsProps = {
   stats: Stats;
@@ -36,8 +37,8 @@ export function Medalists({ stats, translations }: MedalistsProps) {
           {stats.winners.map((winner) => (
             <tr key={winner.name} className="even:bg-gray-200 hover:bg-gray-300">
               <td className="text-left p-1">
-                <PlayerLink player={winner} translations={translations}>
-                  {winner.name}
+                <PlayerLink playerId={winner.id} locale={translations.locale}>
+                  <PlayerName player={winner} includeRank={false} />
                 </PlayerLink>
               </td>
               <td>{winner.medals[0].length}</td>

@@ -24,9 +24,14 @@ export function calculateStats(tournaments: Tournament[]): Stats {
     };
     for (const pid in tournamentPlayers) {
       const player = upsertPlayer(tournamentPlayers[pid]);
+      const country = tournamentPlayers[pid].country;
 
       tournamentPlayersMap[pid] = player;
       player.years.push(year);
+
+      if (country) {
+        player.countries.add(country);
+      }
     }
 
     for (const stage of stages) {
@@ -54,6 +59,7 @@ export function calculateStats(tournaments: Tournament[]): Stats {
           games: playerGames,
           won,
           rank: tournamentPlayers[player.id]?.rank ?? '',
+          country: tournamentPlayers[player.id].country,
         };
 
         tournamentPlayersMap[player.id].results.push(result);
@@ -143,6 +149,7 @@ export function calculateStats(tournaments: Tournament[]): Stats {
     return (players[id] ||= {
       id,
       medals: [[], [], []],
+      countries: new Set(),
       name: typeof player === 'string' ? undefined : player.name,
       years: [],
       results: [],

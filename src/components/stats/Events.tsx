@@ -1,5 +1,6 @@
 'use client';
 
+import EVENT_CONFIG from '@event/config';
 import type { Stage, StatsPlayer } from '@/schema/data';
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
@@ -7,6 +8,7 @@ import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { getStageNameFromType } from '@/libs/stage';
 import { toPercentage } from '@/libs/table';
+import { Country } from '@/components/Country';
 import { YearLink } from '@/components/YearLink';
 import { StatsTable } from '@/components/table/StatsTable';
 import { H2 } from '@/components/ui/H2';
@@ -18,10 +20,11 @@ type EventsProps = {
 
 type EventRow = {
   year: number;
-  stage: string;
+  stage: Stage['type'];
   rank: string;
   place: number;
   games: number;
+  country?: string;
   won: number;
   lost: number;
   wonPercent: number;
@@ -50,43 +53,50 @@ export function Events({ player, translations }: EventsProps) {
 
   const columns = useMemo<ColumnDef<EventRow>[]>(
     () =>
-      [
-        {
-          accessorKey: 'year',
-          header: t('table.year'),
-          cell: (info) => <YearLink locale={translations.locale} year={info.cell.getValue() as number} />,
-        },
-        {
-          accessorKey: 'stage',
-          header: t('table.stage'),
-          cell: (info) => getStageNameFromType(info.cell.getValue() as Stage['type'], translations),
-        },
-        {
-          accessorKey: 'rank',
-          header: t('table.rank'),
-        },
-        {
-          accessorKey: 'place',
-          header: t('table.place'),
-        },
-        {
-          accessorKey: 'games',
-          header: t('table.games'),
-        },
-        {
-          accessorKey: 'won',
-          header: t('table.won'),
-        },
-        {
-          accessorKey: 'lost',
-          header: t('table.lost'),
-        },
-        {
-          accessorKey: 'wonPercent',
-          header: t('table.wonPercent'),
-          cell: toPercentage,
-        },
-      ] as ColumnDef<EventRow>[],
+      (
+        [
+          {
+            accessorKey: 'year',
+            header: t('table.year'),
+            cell: (info) => <YearLink locale={translations.locale} year={info.cell.getValue() as number} />,
+          },
+          {
+            accessorKey: 'stage',
+            header: t('table.stage'),
+            cell: (info) => getStageNameFromType(info.row.original.stage, translations),
+          },
+          EVENT_CONFIG.showCountry && {
+            accessorKey: 'country',
+            header: t('table.country'),
+            cell: (info) => <Country code={info.row.original.country} translations={translations} />,
+          },
+          {
+            accessorKey: 'rank',
+            header: t('table.rank'),
+          },
+          {
+            accessorKey: 'place',
+            header: t('table.place'),
+          },
+          {
+            accessorKey: 'games',
+            header: t('table.games'),
+          },
+          {
+            accessorKey: 'won',
+            header: t('table.won'),
+          },
+          {
+            accessorKey: 'lost',
+            header: t('table.lost'),
+          },
+          {
+            accessorKey: 'wonPercent',
+            header: t('table.wonPercent'),
+            cell: toPercentage,
+          },
+        ] as ColumnDef<EventRow>[]
+      ).filter(Boolean),
     [translations, t]
   );
 

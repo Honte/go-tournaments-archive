@@ -46,7 +46,7 @@ export function TableLadder({ stage, players, games, translations }: TableLadder
             <tr key={player.id} className="text-center even:bg-gray-200 cursor-default!">
               <td className="p-1">{i === 0 || player.place !== table[i - 1].place ? player.place : ''}</td>
               <td className="p-1 text-left">
-                <PlayerLink player={players[player.id]} translations={translations}>
+                <PlayerLink playerId={player.id} locale={translations.locale}>
                   {players[player.id].name}
                 </PlayerLink>
               </td>

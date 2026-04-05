@@ -1,3 +1,4 @@
+import EVENT_CONFIG from '@event/config';
 import { getStats } from '@/data';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
@@ -7,6 +8,7 @@ import { getTranslator } from '@/i18n/translator';
 import { Achievements } from '@/components/stats/Achievements';
 import { Events } from '@/components/stats/Events';
 import { Opponents } from '@/components/stats/Opponents';
+import { H2 } from '@/components/ui/H2';
 
 type PageProps = {
   params: Promise<{
@@ -33,6 +35,7 @@ export default async function PlayerStatsPage({ params }: PageProps) {
   const { locale, slug } = await params;
 
   const translations = await loadTranslations(locale);
+  const t = getTranslator(translations);
   const stats = await getStats();
   const player = stats.players[slug];
 
@@ -43,6 +46,14 @@ export default async function PlayerStatsPage({ params }: PageProps) {
   return (
     <>
       <h1 className="text-4xl text-center font-bold">{player.name}</h1>
+      {EVENT_CONFIG.showCountry && (
+        <h2 className="text-xl text-center font-bold">
+          {Array.from(player.countries)
+            .map((country) => t(`country.${country}`))
+            .filter(Boolean)
+            .join(', ')}
+        </h2>
+      )}
 
       <Achievements player={player} translations={translations} />
 

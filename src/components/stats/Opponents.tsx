@@ -5,9 +5,10 @@ import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
-import { toPercentage, toPlayerLink } from '@/libs/table';
+import { toPercentage } from '@/libs/table';
 import { StatsTable } from '@/components/table/StatsTable';
 import { H2 } from '@/components/ui/H2';
+import { PlayerCell } from '@/components/ui/PlayerCell';
 
 type OpponentsProps = {
   player: StatsPlayer;
@@ -15,23 +16,27 @@ type OpponentsProps = {
   players: Record<string, StatsPlayer>;
 };
 
-type OpponentRow = {
+type Opponent = {
   id: string;
   name: string;
-  firstName: string;
-  lastName: string;
   games: number;
   won: number;
+  years: Set<number>;
+};
+
+type OpponentRow = Opponent & {
+  firstName: string;
+  lastName: string;
   lost: number;
   wonPercent: number;
-  years: Set<number>;
+  country: string;
 };
 
 export function Opponents({ player, translations, players }: OpponentsProps) {
   const t = getTranslator(translations);
 
   const data = useMemo(() => {
-    const opponents: Record<string, { id: string; name: string; games: number; won: number; years: Set<number> }> = {};
+    const opponents: Record<string, Opponent> = {};
 
     for (const event of player.results) {
       for (const game of event.games) {
@@ -59,6 +64,7 @@ export function Opponents({ player, translations, players }: OpponentsProps) {
           ...opponent,
           firstName,
           lastName,
+          country: Array.from(players[opponent.id]?.countries).join(', '),
           lost: games - won,
           wonPercent: won / games,
         } as OpponentRow;
@@ -72,7 +78,7 @@ export function Opponents({ player, translations, players }: OpponentsProps) {
         {
           accessorKey: 'firstName',
           header: t('table.firstName'),
-          cell: (info) => toPlayerLink(info, translations),
+          cell: (info) => <PlayerCell player={info.row.original} locale={translations.locale} includeRank={false} />,
           meta: { span: 2 },
         },
         {

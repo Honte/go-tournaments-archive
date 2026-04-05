@@ -1,15 +1,18 @@
-export type Tournament = {
-  id: number;
+export type TournamentDetails = {
   year: number;
   location: string;
-  country: string;
+  country?: string;
   start?: string;
   end?: string;
   website?: string;
   referee?: string;
+  top: string[];
+};
+
+export type Tournament = TournamentDetails & {
+  id: number;
   games: Record<string, Game>;
   stages: Stage[];
-  top: string[];
   players: Record<string, Player>;
 };
 
@@ -51,7 +54,7 @@ export type BaseStage = {
 };
 
 export type LeagueStage = BaseStage & {
-  type: 'league' | 'tournament'
+  type: 'league' | 'tournament';
   rounds: string[][];
   table: TableResult[];
   breakers?: Breaker[];
@@ -169,11 +172,13 @@ export type StatsPlayerResult = {
   games: StatsPlayerGame[];
   won: number;
   rank: string;
+  country?: string;
 };
 
 export type StatsPlayer = {
   id: string;
   name?: string;
+  countries: Set<string>;
   medals: [string[], string[], string[]];
   years: number[];
   results: StatsPlayerResult[];

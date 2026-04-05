@@ -1,7 +1,7 @@
 import EVENT from '@event';
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
-import { Breaker, Game, GamePlayer, LeagueStage, Player, TableResult } from '@/schema/data';
+import { Breaker, Game, GamePlayer, LeagueStage, Player, TableResult, TournamentDetails } from '@/schema/data';
 import { InputTournamentStage } from '@/schema/input';
 import { parseH9 } from '@/libs/h9';
 import { getGameId } from '@/data/games';
@@ -14,12 +14,14 @@ export async function loadH9Tournament({
   stage,
   playersMap,
   gamesMap,
+  tournamentDetails,
 }: {
   stage: InputTournamentStage;
   playersMap: Record<string, Player>;
   gamesMap: Record<string, Game>;
+  tournamentDetails: TournamentDetails;
 }): Promise<LeagueStage> {
-  const { file, date, egd, komi, breakers, scoringColumns, rules, time, sgfsDir } = stage;
+  const { file, date, egd, breakers, scoringColumns, rules, sgfsDir } = stage;
 
   const content = await readFile(join(EVENT_DATA_DIR, file), 'utf-8');
   const tournament = parseH9(content);
@@ -27,6 +29,9 @@ export async function loadH9Tournament({
   const table: TableResult[] = [];
   const localGamesMap = new Map<string, Game>();
   const rounds: string[][] = [];
+
+  tournamentDetails.country ||= tournament.country;
+  tournamentDetails.location ||= tournament.location;
 
   for (const player of tournament.results) {
     const name = `${player.name} ${player.surname}`;
@@ -137,13 +142,17 @@ export async function loadH9Tournament({
     }
   }
 
+  if (!tournamentDetails.top.length) {
+    tournamentDetails.top = table.slice(0, 3).map((p) => p.id);
+  }
+
   return {
     type: 'tournament',
     egd,
-    komi,
     breakers,
     rules,
-    time,
+    time: stage.time ?? (tournament.time ? `AT ${tournament.time} min` : undefined),
+    komi: stage.komi ?? tournament.komi,
     table,
     rounds,
   } satisfies LeagueStage;

@@ -5,6 +5,7 @@ import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
 import { H1 } from '@/components/ui/H1';
 import { PlayerLink } from '@/components/ui/PlayerLink';
+import { PlayerName } from '@/components/ui/PlayerName';
 
 type WinnersProps = {
   tournaments: Tournament[];
@@ -41,9 +42,11 @@ export function Winners({ tournaments, translations, className }: WinnersProps) 
               {top.map((winner, index) => (
                 <td className="p-1" key={index}>
                   {jsxJoin(
-                    winner
-                      .split(',')
-                      .map((id) => <PlayerLink key={id} player={players[id]} translations={translations} />),
+                    winner.split(',').map((id) => (
+                      <PlayerLink key={id} playerId={id} locale={translations.locale}>
+                        <PlayerName player={players[id]} />
+                      </PlayerLink>
+                    )),
                     ', '
                   )}
                 </td>

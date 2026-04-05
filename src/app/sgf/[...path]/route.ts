@@ -41,6 +41,10 @@ export async function GET(request: NextRequest, props: RouteProps) {
 export async function generateStaticParams() {
   const files = await fg.glob(`${SGF_DIR}/**/*.{sgf,svg,png}`);
 
+  if (!files.length) {
+    return [{ path: ['imaginary-sgf'] }];
+  }
+
   return files.map((f) => ({
     path: path.relative(SGF_DIR, f).split('/'),
   }));
