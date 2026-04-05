@@ -23,7 +23,7 @@ export async function loadH9Tournament({
   gamesMap: Record<string, Game>;
   tournamentDetails: TournamentDetails;
 }): Promise<LeagueStage> {
-  const { file, date, egd, breakers, scoringColumns, rules, markExAequo = false } = stage;
+  const { file, breakers, scoringColumns, rules, findSharedPlaces = false, sharedPlaces } = stage;
 
   const content = await readFile(join(EVENT_DATA_DIR, file), 'utf-8');
   const tournament = parseH9(content);
@@ -144,7 +144,7 @@ export async function loadH9Tournament({
     }
   }
 
-  if (markExAequo && breakers) {
+  if (findSharedPlaces && breakers) {
     for (let i = 1; i < table.length; i++) {
       const prev = table[i - 1];
       const current = table[i];
@@ -162,6 +162,22 @@ export async function loadH9Tournament({
       }
 
       current.place = exAequo ? prev.place : prev.place + 1;
+    }
+  } else if (sharedPlaces?.length) {
+    const map = new Map<number, boolean>();
+    for (const shared of sharedPlaces) {
+      const [from, to] = shared.split('-').map(Number);
+
+      for (let index = from + 1; index <= to; index++) {
+        map.set(index, true);
+      }
+    }
+
+    for (let i = 1; i < table.length; i++) {
+      const current = table[i];
+      const prev = table[i - 1].place;
+
+      current.place = prev + Number(!map.has(current.index));
     }
   }
 

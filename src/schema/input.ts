@@ -40,7 +40,8 @@ export type InputTournamentStage = InputBaseStage & {
   file: string;
   sgfsDir?: string;
   scoringColumns?: (Breaker | null)[];
-  markExAequo?: boolean;
+  findSharedPlaces?: boolean;
+  sharedPlaces?: string[];
 };
 
 export type InputStage =

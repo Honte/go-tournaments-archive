@@ -12,4 +12,4 @@ stages:
       - wins
       - sos
       - sosos
-    markExAequo: true
+    findSharedPlaces: true
