@@ -51,9 +51,9 @@ export function TournamentDetails({ tournament, translations }: TournamentDetail
 }
 
 function formatDate(date: string, locale: string) {
-  return new Date(date).toLocaleDateString(locale, {
-    day: date.length > 7 ? 'numeric' : undefined,
+  return new Intl.DateTimeFormat(locale, {
+    day: 'numeric',
     month: 'long',
     year: 'numeric',
-  });
+  }).format(new Date(date));
 }
