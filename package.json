@@ -30,7 +30,7 @@
     "clsx": "2.1.1",
     "convert-svg-to-png": "0.7.1",
     "fast-glob": "3.3.3",
-    "go-results-highlighter": "4.0.0",
+    "go-results-highlighter": "4.0.1",
     "lodash-es": "4.18.1",
     "next": "16.2.2",
     "react": "19.2.4",
