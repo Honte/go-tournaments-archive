@@ -25,6 +25,7 @@ export function GamesList({ tournament, translations }: GamesListProps) {
     const name = getStageName(stage, translations);
 
     switch (stage.type) {
+      case 'tournament':
       case 'league':
       case 'ladder-table':
         for (const [index, round] of stage.rounds.entries()) {

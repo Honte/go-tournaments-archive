@@ -138,7 +138,7 @@ export async function loadH9Tournament({
   }
 
   return {
-    type: 'league',
+    type: 'tournament',
     egd,
     komi,
     breakers,

@@ -1,11 +1,11 @@
 'use client';
 
-import type { Breaker, Game, LeagueStage, Player, TableResult } from '@/schema/data';
+import type { Breaker, Game, LeagueStage, Player } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
-import { withHighlighter } from '@/libs/higlighter';
 import { Breaker as BreakerComponent } from '@/components/Breaker';
 import { GameCell } from '@/components/GameCell';
+import { GoResultsTable } from '@/components/table/GoResultsTable';
 import { PlayerLink } from '@/components/ui/PlayerLink';
 
 type TableLeagueProps = {
@@ -24,9 +24,9 @@ export function TableLeague({ stage, players, games, translations }: TableLeague
 
   return (
     <div className="w-full overflow-x-auto">
-      <table
+      <GoResultsTable
         className="min-w-full table-auto border-separate border-spacing-x-0 border-spacing-y-0.5"
-        ref={withHighlighter}
+        rearranging={stage.type === 'tournament'}
       >
         <thead className="border-b-gray-300 border-b">
           <tr className="text-center">
@@ -59,7 +59,7 @@ export function TableLeague({ stage, players, games, translations }: TableLeague
                 game ? (
                   <GameCell as="td" key={index} entry={game} games={games} players={players} />
                 ) : (
-                  <td key={index}>&ndash;</td>
+                  <td key={index} />
                 )
               )}
               {visibleBreakers.map((breaker) => (
@@ -70,7 +70,7 @@ export function TableLeague({ stage, players, games, translations }: TableLeague
             </tr>
           ))}
         </tbody>
-      </table>
+      </GoResultsTable>
     </div>
   );
 }

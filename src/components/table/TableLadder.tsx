@@ -3,8 +3,8 @@
 import type { Game, IndexedTablePlayerGame, LadderTableStage, Player } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
-import { withHighlighter } from '@/libs/higlighter';
 import { GameCell } from '@/components/GameCell';
+import { GoResultsTable } from '@/components/table/GoResultsTable';
 import { PlayerLink } from '@/components/ui/PlayerLink';
 
 type TableLadderProps = {
@@ -21,10 +21,7 @@ export function TableLadder({ stage, players, games, translations }: TableLadder
 
   return (
     <div className="w-full overflow-x-auto">
-      <table
-        className="min-w-full table-auto border-separate border-spacing-x-0 border-spacing-y-0.5"
-        ref={withHighlighter}
-      >
+      <GoResultsTable className="min-w-full table-auto border-separate border-spacing-x-0 border-spacing-y-0.5">
         <thead className="border-b-gray-300 border-b">
           <tr className="text-center">
             <th className="p-1">{t('table.place')}</th>
@@ -69,7 +66,7 @@ export function TableLadder({ stage, players, games, translations }: TableLadder
             </tr>
           ))}
         </tbody>
-      </table>
+      </GoResultsTable>
     </div>
   );
 }

@@ -51,7 +51,7 @@ export type BaseStage = {
 };
 
 export type LeagueStage = BaseStage & {
-  type: 'league';
+  type: 'league' | 'tournament'
   rounds: string[][];
   table: TableResult[];
   breakers?: Breaker[];

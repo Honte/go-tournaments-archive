@@ -14,6 +14,7 @@ type StageResultsProps = {
 
 export function StageResults({ stage, games, players, translations }: StageResultsProps) {
   switch (stage.type) {
+    case 'tournament':
     case 'league':
       return <TableLeague stage={stage} players={players} translations={translations} games={games} />;
     case 'ladder-table':

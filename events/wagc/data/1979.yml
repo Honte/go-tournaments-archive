@@ -1,0 +1,9 @@
+stages:
+  - type: tournament
+    file: 1979/wagc1979.txt
+    sgfsDir: 1979
+    scoringColumns:
+      - wins
+      - null
+    breakers:
+      - wins

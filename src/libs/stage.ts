@@ -14,6 +14,8 @@ export function getStageNameFromType(type: Stage['type'], translations: Translat
   const t = getTranslator(translations);
 
   switch (type) {
+    case 'tournament':
+      return t('stage.tournament');
     case 'league':
     case 'round-robin-table':
       return t('stage.league');
