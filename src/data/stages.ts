@@ -4,6 +4,7 @@ import { parseDates } from '@/libs/dates';
 import { createFinalTable } from '@/data/final';
 import { parseGames } from '@/data/games';
 import { loadH9Tournament } from '@/data/h9tournament';
+import { PlayersHandler } from '@/data/players';
 import { createTable } from '@/data/table';
 import { createLadderTable } from '@/data/tableLadder';
 import { createTableWithoutRounds } from '@/data/tableWithoutRounds';
@@ -12,7 +13,8 @@ export async function parseStage(
   stage: InputStage,
   playersMap: Record<string, Player>,
   gamesMap: Record<string, Game>,
-  tournamentDetails: TournamentDetails
+  tournamentDetails: TournamentDetails,
+  playersHandler: PlayersHandler
 ): Promise<Stage> {
   const date = parseDates(stage.date);
 
@@ -21,6 +23,7 @@ export async function parseStage(
       return loadH9Tournament({
         stage,
         playersMap,
+        playersHandler,
         gamesMap,
         tournamentDetails,
       });

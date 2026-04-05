@@ -7,7 +7,7 @@ import { isScoringBreaker } from '@/libs/breakers';
 import { parseDates } from '@/libs/dates';
 import { parseH9 } from '@/libs/h9';
 import { getGameId } from '@/data/games';
-import { getPlayerId } from '@/data/players';
+import type { PlayersHandler } from '@/data/players';
 import { getRankValue } from '@/data/rank';
 
 const EVENT_DATA_DIR = `./events/${EVENT}/data/`;
@@ -15,11 +15,13 @@ const EVENT_DATA_DIR = `./events/${EVENT}/data/`;
 export async function loadH9Tournament({
   stage,
   playersMap,
+  playersHandler,
   gamesMap,
   tournamentDetails,
 }: {
   stage: InputTournamentStage;
   playersMap: Record<string, Player>;
+  playersHandler: PlayersHandler;
   gamesMap: Record<string, Game>;
   tournamentDetails: TournamentDetails;
 }): Promise<LeagueStage> {
@@ -27,7 +29,6 @@ export async function loadH9Tournament({
 
   const content = await readFile(join(EVENT_DATA_DIR, file), 'utf-8');
   const tournament = parseH9(content);
-  const playerNameMap: Record<string, string> = {};
   const table: TableResult[] = [];
   const localGamesMap = new Map<string, Game>();
   const rounds: string[][] = [];
@@ -36,23 +37,17 @@ export async function loadH9Tournament({
   tournamentDetails.location ||= tournament.location;
 
   for (const player of tournament.results) {
-    const name = `${player.name} ${player.surname}`;
-    const id = getPlayerId(name, playerNameMap);
-
-    if (id in playersMap) {
-      continue;
-    }
-
-    playersMap[id] = {
-      id,
-      name,
+    const newPlayer = playersHandler.loadPlayer({
+      name: `${player.name} ${player.surname}`,
       country: player.country,
       rank: player.rank,
       egd: player.egd,
-    };
+    });
+
+    playersMap[newPlayer.id] = newPlayer;
 
     const tableEntry: TableResult = {
-      id,
+      id: newPlayer.id,
       place: player.place,
       index: table.length + 1,
       rank: getRankValue(player.rank),

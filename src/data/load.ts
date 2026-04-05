@@ -11,7 +11,7 @@ import { parseStage } from '@/data/stages';
 
 export async function loadTournaments() {
   const files = await fg.glob(`./events/${EVENT}/data/*.yml`);
-  const parsePlayers = createPlayersHandler();
+  const playersHandler = createPlayersHandler();
   const tournaments: Tournament[] = [];
 
   for (const file of files) {
@@ -22,7 +22,7 @@ export async function loadTournaments() {
     const dates = [];
     const stages = [];
 
-    const players = parsePlayers(json.players);
+    const players = playersHandler.loadJson(json.players);
     const tournamentDetails: TournamentDetails = {
       ...json,
       year,
@@ -32,7 +32,7 @@ export async function loadTournaments() {
     };
 
     for (const stageJson of json.stages) {
-      const stage = await parseStage(stageJson, players, games, tournamentDetails);
+      const stage = await parseStage(stageJson, players, games, tournamentDetails, playersHandler);
 
       if (stage.date) {
         dates.push(...stage.date);

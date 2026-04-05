@@ -5,16 +5,22 @@ import slugify from 'slugify';
 const PLAYER_REGEX =
   /^(?<name>[\p{Letter} \-]+)(\s+(?<rank>[0-9]{1,2}[dkp])?)?(\s+\((?<country>[A-Z]{2})\))?(\s+|(?<egd>[0-9]+))?$/u;
 
+export type PlayersHandler = ReturnType<typeof createPlayersHandler>;
+
 export function parsePlayers(json: Record<string, string>): Record<string, Player> {
-  return createPlayersHandler()(json);
+  return createPlayersHandler().loadJson(json);
 }
 
 export function createPlayersHandler() {
   const playerIds: Record<string, string> = {};
 
-  return fromJson;
+  return {
+    loadJson,
+    loadPlayer,
+    playerIds,
+  };
 
-  function fromJson(json?: Record<string, string>): Record<string, Player> {
+  function loadJson(json?: Record<string, string>): Record<string, Player> {
     const players: Record<string, Player> = {};
 
     if (!json) {
@@ -41,9 +47,16 @@ export function createPlayersHandler() {
 
     return players;
   }
+
+  function loadPlayer(player: Omit<Player, 'id'>): Player {
+    return {
+      ...player,
+      id: getPlayerId(player.name, playerIds),
+    };
+  }
 }
 
-export function getPlayerId(name: string, playerIds: Record<string, string>) {
+function getPlayerId(name: string, playerIds: Record<string, string>) {
   const parts = name
     .toLowerCase()
     .split(' ')
