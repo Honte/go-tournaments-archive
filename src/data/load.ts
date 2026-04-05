@@ -4,13 +4,13 @@ import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { Game, Tournament, TournamentDateSpan, TournamentDetails } from '@/schema/data';
 import { InputTournament } from '@/schema/input';
-import { glob } from 'fast-glob';
+import fg from 'fast-glob';
 import { parse } from 'yaml';
 import { createPlayersHandler } from '@/data/players';
 import { parseStage } from '@/data/stages';
 
 export async function loadTournaments() {
-  const files = await glob(`./events/${EVENT}/data/*.yml`);
+  const files = await fg.glob(`./events/${EVENT}/data/*.yml`);
   const parsePlayers = createPlayersHandler();
   const tournaments: Tournament[] = [];
 
