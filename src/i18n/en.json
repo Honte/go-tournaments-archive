@@ -1,0 +1,123 @@
+{
+  "site": {
+    "name": "Polish Go Championships Archive",
+    "description": "Archive of all Polish Go Championships tournaments",
+    "yearDescription": "Results of PGC %{0}",
+    "allTimeStatsTitle": "All-time Table",
+    "allTimeStatsDescription": "All-time statistics of all Polish Go Championships participants",
+    "playerStatsTitle": "Player %{0} stats",
+    "playerStatsDescription": "Participation statistics of %{0} in all Polish Go Championships events"
+  },
+  "currentEdition": {
+    "website": "https://mp.go.art.pl/2025/en",
+    "title": "Current Polish Go Championship!",
+    "subtitle": "Gdańsk, 8 - 11 November 2025",
+    "tooltip": "Go to championship's website"
+  },
+  "navigation": {
+    "home": {
+      "anchor": "Home page",
+      "title": "Go to home page"
+    }
+  },
+  "details": {
+    "header": "About",
+    "location": "Venue",
+    "start": "Start",
+    "end": "End",
+    "website": "Website",
+    "goToWebsite": "Go to PGC %{0} website",
+    "referee": "Referee",
+    "awarded": "Medalists"
+  },
+  "stage": {
+    "details": "Details",
+    "league": "League",
+    "ladder": "Ladder",
+    "tournament": "Tournament",
+    "games": "Games",
+    "egd": "EGD",
+    "goToEGD": "See the tournament entry in the European Go Database",
+    "breakers": "Breakers",
+    "komi": "Komi",
+    "time": "Time",
+    "final": "The Final",
+    "requiredWins": "%{0} won matches are required to win the final.",
+    "includePreviousWins": "Direct match from previous stage counts toward final score."
+  },
+  "breakers": {
+    "wins": "Wins",
+    "sos": "SOS",
+    "sodos": "SODOS",
+    "sosos": "SOSOS",
+    "direct": "Direct match",
+    "starting": "Starting position",
+    "rank": "Rank",
+    "descriptions": {
+      "sos": "Sum of Opponents' Scores.",
+      "sodos": "Sum Of Defeated Opponents' Scores.",
+      "sosos": "Sum of Opponents' SOS -> sum of sums of opponents' scores."
+    }
+  },
+  "table": {
+    "year": "Year",
+    "stage": "Stage",
+    "place": "Place",
+    "opponent": "Opponent",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "name": "Name",
+    "rank": "Rank",
+    "round": "Round %{0}",
+    "playoffs": "Play-Off",
+    "events": "Events",
+    "games": "Games played",
+    "won": "Games won",
+    "lost": "Games lost",
+    "wonPercent": "% won"
+  },
+  "game": {
+    "resign": "Won by resign",
+    "time": "Won by time",
+    "walkover": "Walkover",
+    "sgf": "Download SGF",
+    "ogs": "See the game's relay in the Online Go Server",
+    "yt": "See the video broadcast of the game",
+    "ai": "See the AI analysis of the game",
+    "preview": "Snapshot of board state at the end of game %{0}"
+  },
+  "winners": {
+    "title": "Medalists of Polish Go Championships",
+    "year": "Year",
+    "first": "Champion",
+    "second": "2nd place",
+    "third": "3rd place"
+  },
+  "medals": {
+    "gold": "Gold",
+    "silver": "Silver",
+    "bronze": "Bronze"
+  },
+  "stats": {
+    "full": "See full stats",
+    "events": "Participation summary",
+    "opponents": "Opponents summary",
+    "medalists": "Medalists",
+    "attendants": "Top %{0} attendants",
+    "achievements": "Achievements",
+    "total": {
+      "title": "Archive in numbers",
+      "tournaments": "Events",
+      "participants": "Participants",
+      "games": "Games",
+      "black": "% won by black",
+      "resigned": "Won by resign",
+      "timeout": "Won by time",
+      "sgfs": "With game record",
+      "relays": "Relays on OGS",
+      "streams": "Video streamed",
+      "analysis": "Analyzed by AI"
+    },
+    "allTimeHeader": "All-Time Table"
+  }
+}

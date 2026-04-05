@@ -3,120 +3,13 @@
     "name": "Archiwum Amatorskich Mistrzostw Świata w Go",
     "description": "Archiwum wyników wszystkich edycji amatorskich mistrzostw świata w\u00A0Go",
     "yearDescription": "Wyniki mistrzostw z roku %{0}",
-    "allTimeStatsTitle": "Lista wszech czasów",
     "allTimeStatsDescription": "Lista wszech czasów wszystkich uczestników amatorskich mistrzostw świata w Go",
-    "playerStatsTitle": "Wyniki gracza %{0}",
     "playerStatsDescription": "Statystyki gracza %{0} we wszystkich rozegranych edycjach amatorskich mistrzostw świata w Go"
   },
-  "currentEdition": {
-    "website": "",
-    "title": "",
-    "subtitle": "",
-    "tooltip": ""
-  },
-  "navigation": {
-    "home": {
-      "anchor": "Strona główna",
-      "title": "Przejdź na stronę główną"
-    }
-  },
   "details": {
-    "header": "Informacje",
-    "location": "Miejsce",
-    "start": "Start",
-    "end": "Koniec",
-    "website": "Strona WWW",
-    "goToWebsite": "Przejdź na stronę WAGC %{0}",
-    "referee": "Sędzia",
-    "awarded": "Medaliści"
-  },
-  "stage": {
-    "details": "Szczegóły",
-    "league": "Liga",
-    "ladder": "Faza pucharowa",
-    "games": "Gry",
-    "egd": "Baza EGD",
-    "goToEGD": "Przejdź na stronę turnieju w bazie European Go Database",
-    "breakers": "Breakery",
-    "komi": "Komi",
-    "time": "Czas",
-    "final": "Finał",
-    "requiredWins": "Finał rozgrywany do %{0} wygranych partii.",
-    "includePreviousWins": "Bezpośredni pojedynek z poprzedniego etapu jest wliczany do wyniku."
-  },
-  "breakers": {
-    "wins": "Liczba zwycięstw",
-    "sos": "SOS",
-    "sodos": "SODOS",
-    "sosos": "SOSOS",
-    "direct": "Bezpośredni pojedynek",
-    "starting": "Pozycja startowa",
-    "rank": "Ranking",
-    "descriptions": {
-      "sos": "Sum of Opponents' Scores - Suma punktów zdobytych przez przeciwników.",
-      "sodos": "Sum of Defeated Opponents' Scores - Suma punktów zdobytych przez pokonanych przeciwników.",
-      "sosos": "Sum of Opponents' SOS - Suma SOS-ów zdobytych przez przeciwników, czyli suma sum ich punktów."
-    }
-  },
-  "table": {
-    "year": "Rok",
-    "stage": "Etap",
-    "place": "Miejsce",
-    "opponent": "Przeciwnik",
-    "firstName": "Imię",
-    "lastName": "Nazwisko",
-    "name": "Zawodnik",
-    "rank": "Siła",
-    "round": "Runda %{0}",
-    "playoffs": "Play-Off",
-    "events": "Uczestnictwa",
-    "games": "Rozegrane gry",
-    "won": "Wygrane gry",
-    "lost": "Przegrane gry",
-    "wonPercent": "% wygranych"
-  },
-  "game": {
-    "resign": "Wygrana przez poddanie",
-    "time": "Wygrana przez czas",
-    "walkover": "Walkower",
-    "sgf": "Pobierz zapis partii w formacie SGF",
-    "ogs": "Zobacz relacje w serwisie Online Go Server",
-    "yt": "Zobacz relację wideo z partii",
-    "ai": "Zobacz analizę AI",
-    "preview": "Widok planszy na koniec gry %{0}"
+    "goToWebsite": "Przejdź na stronę WAGC %{0}"
   },
   "winners": {
-    "title": "Medaliści Amatorskich Mistrzostw Świata",
-    "year": "Rok",
-    "first": "Mistrz",
-    "second": "2. miejsce",
-    "third": "3. miejsce"
-  },
-  "medals": {
-    "gold": "Złoto",
-    "silver": "Srebro",
-    "bronze": "Brąz"
-  },
-  "stats": {
-    "full": "Zobacz pełne statystyki",
-    "events": "Podsumowanie udziałów",
-    "opponents": "Podsumowanie przeciwników",
-    "medalists": "Medaliści",
-    "attendants": "Top %{0} uczestników",
-    "achievements": "Osiągnięcia",
-    "total": {
-      "title": "Archiwum w liczbach",
-      "tournaments": "Wydarzeń",
-      "participants": "Uczestników",
-      "games": "Gier",
-      "black": "% wygranych przez czarne",
-      "resigned": "Wygranych przez poddanie",
-      "timeout": "Wygranych przez czas",
-      "sgfs": "Zapisów partii SGF",
-      "relays": "Relacji na OGS",
-      "streams": "Transmisji wideo",
-      "analysis": "Analiz AI"
-    },
-    "allTimeHeader": "Lista Wszech Czasów"
+    "title": "Medaliści Amatorskich Mistrzostw Świata"
   }
 }
