@@ -16,6 +16,7 @@
     "goToWebsite": "Przejdź na stronę MP %{0}"
   },
   "winners": {
-    "title": "Medaliści Mistrzostw Polski"
+    "title": "Medaliści Mistrzostw Polski",
+    "first": "Mistrz Polski"
   }
 }

@@ -10,6 +10,7 @@
     "goToWebsite": "Go to WAGC %{0} website"
   },
   "winners": {
-    "title": "Medalists of World Amateur Go Championships"
+    "title": "Medalists of World Amateur Go Championships",
+    "first": "World Champion"
   }
 }

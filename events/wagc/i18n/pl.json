@@ -10,6 +10,7 @@
     "goToWebsite": "Przejdź na stronę WAGC %{0}"
   },
   "winners": {
-    "title": "Medaliści Amatorskich Mistrzostw Świata"
+    "title": "Medaliści Amatorskich Mistrzostw Świata",
+    "first": "Mistrz Świata"
   }
 }

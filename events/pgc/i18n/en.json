@@ -16,6 +16,7 @@
     "goToWebsite": "Go to PGC %{0} website"
   },
   "winners": {
-    "title": "Medalists of Polish Go Championships"
+    "title": "Medalists of Polish Go Championships",
+    "first": "Polish Champion"
   }
 }
