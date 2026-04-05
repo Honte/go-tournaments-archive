@@ -17,6 +17,7 @@ top:
 stages:
   - type: league
     date: 2025-11-08 - 2025-11-11
+    egd: https://europeangodatabase.eu/EGD/Tournament_Card.php?&key=T251108B
     time: fischer 60m + 30s
     komi: 6.5
     breakers:
