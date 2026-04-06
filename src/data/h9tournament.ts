@@ -157,23 +157,22 @@ export async function loadH9Tournament({
         }
       }
 
-      current.place = exAequo ? prev.place : prev.place + 1;
+      current.place = exAequo ? prev.place : current.index;
     }
   } else if (sharedPlaces?.length) {
-    const map = new Map<number, boolean>();
+    const map = new Map<number, number>();
     for (const shared of sharedPlaces) {
       const [from, to] = shared.split('-').map(Number);
 
-      for (let index = from + 1; index <= to; index++) {
-        map.set(index, true);
+      for (let index = from; index <= to; index++) {
+        map.set(index, from);
       }
     }
 
     for (let i = 1; i < table.length; i++) {
       const current = table[i];
-      const prev = table[i - 1].place;
 
-      current.place = prev + Number(!map.has(current.index));
+      current.place = map.get(current.index) ?? current.index;
     }
   }
 

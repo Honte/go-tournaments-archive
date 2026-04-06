@@ -30,8 +30,7 @@ export function TableLeague({ stage, players, games, translations }: TableLeague
   const t = getTranslator(translations);
   const { breakers, table, rounds } = stage;
   const visibleBreakers = (breakers ?? []).filter((b): b is NumericBreaker => b !== 'direct' && b !== 'rank');
-  const last = table[table.length - 1];
-  const hasExAequo = last.place !== last.index;
+  const hasSharedPlaces = table.some((p) => p.index !== p.place);
 
   return (
     <div className="w-full overflow-x-auto">
@@ -41,7 +40,7 @@ export function TableLeague({ stage, players, games, translations }: TableLeague
       >
         <thead className="border-b-gray-300 border-b">
           <tr className="text-center">
-            {hasExAequo && <th className="p-1">{t('table.index')}</th>}
+            {hasSharedPlaces && <th className="p-1">{t('table.index')}</th>}
             <th className="p-1">{t('table.place')}</th>
             <th className="p-1 text-left">{t('table.name')}</th>
             <th className="p-1">{t('table.rank')}</th>
@@ -61,7 +60,7 @@ export function TableLeague({ stage, players, games, translations }: TableLeague
         <tbody>
           {table.map((player, i) => (
             <tr key={player.id} className="text-center even:bg-gray-200 cursor-default!">
-              {hasExAequo && <td className="p-1">{player.index}</td>}
+              {hasSharedPlaces && <td className="p-1">{player.index}</td>}
               <td className="p-1">{i === 0 || player.place !== table[i - 1].place ? player.place : ''}</td>
               <td className="p-1 text-left">
                 <PlayerLink playerId={player.id} locale={translations.locale}>

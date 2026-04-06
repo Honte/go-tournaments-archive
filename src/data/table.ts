@@ -192,9 +192,11 @@ function sortByBreakers(players: TableResult[], breakers: Breaker[]): TableResul
   );
 
   const result: TableResult[] = [];
-  for (const [index, group] of final.entries()) {
+  for (const group of final) {
+    const place = result.length + 1;
+
     for (const player of group) {
-      player.place = index + 1;
+      player.place = place;
       player.index = result.push(player);
     }
   }

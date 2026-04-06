@@ -22,18 +22,20 @@ export function createLadderTable({
     },
   };
 
-  for (const [place, players] of order.entries()) {
+  for (const players of order) {
+    const place = table.length + 1;
+
     for (const player of players.split(',')) {
       const id = player.trim();
       const entry: LadderTableStage['table'][number] = {
         id,
-        place: place + 1,
-        index: 0,
+        place,
+        index: table.length + 1,
         games: new Array(rounds.length).fill(null),
         playoffs: [],
       };
 
-      entry.index = table.push(entry);
+      table.push(entry);
       map[id] = entry;
     }
   }
