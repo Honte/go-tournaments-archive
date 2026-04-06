@@ -43,7 +43,7 @@ export function Winners({ tournaments, translations, className }: WinnersProps) 
                 <td className="p-1" key={index}>
                   {jsxJoin(
                     winner.split(',').map((id) => (
-                      <PlayerLink key={id} playerId={id} locale={translations.locale}>
+                      <PlayerLink key={id} playerId={players[id].id} locale={translations.locale}>
                         <PlayerName player={players[id]} />
                       </PlayerLink>
                     )),
