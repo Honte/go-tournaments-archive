@@ -159,6 +159,8 @@ export type GamePropsArrayKey = {
   [K in GamePropsKey]-?: Extract<GameProps[K], any[]> extends never ? never : K;
 }[GamePropsKey];
 
+export type StatsMedals = [gold: string[], silver: string[], bronze: string[]];
+
 export type StatsPlayerGame = {
   opponent: string;
   won: boolean;
@@ -181,10 +183,28 @@ export type StatsPlayer = {
   id: string;
   name?: string;
   countries: Set<string>;
-  medals: [string[], string[], string[]];
+  medals: StatsMedals;
   years: number[];
   results: StatsPlayerResult[];
   score: number;
+  totalGames: number;
+  totalWon: number;
+};
+
+export type StatsCountryResult = {
+  year: number;
+  players: number;
+  bestPlace: number;
+  totalWon: number;
+  totalGames: number;
+  results: StatsPlayerResult[];
+};
+
+export type StatsCountry = {
+  country: string;
+  medals: StatsMedals;
+  score: number;
+  results: StatsCountryResult[];
   totalGames: number;
   totalWon: number;
 };
@@ -200,6 +220,8 @@ export type Stats = {
   streams: number;
   analysis: number;
   players: Record<string, StatsPlayer>;
+  countries: Record<string, StatsCountry>;
   black: number;
-  winners: StatsPlayer[];
+  playerMedalists: StatsPlayer[];
+  countryMedalists: StatsCountry[];
 };

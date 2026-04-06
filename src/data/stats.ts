@@ -1,7 +1,17 @@
-import type { Game, Player, Stats, StatsPlayer, StatsPlayerGame, StatsPlayerResult, Tournament } from '@/schema/data';
+import type {
+  Game,
+  Player,
+  Stats,
+  StatsCountry,
+  StatsPlayer,
+  StatsPlayerGame,
+  StatsPlayerResult,
+  Tournament,
+} from '@/schema/data';
 
 export function calculateStats(tournaments: Tournament[]): Stats {
   const players: Record<string, StatsPlayer> = {};
+  const countries: Record<string, StatsCountry> = {};
   const games: Record<string, Game> = {};
 
   let playedGames = 0;
@@ -69,6 +79,12 @@ export function calculateStats(tournaments: Tournament[]): Stats {
     for (const [index, winner] of top.entries()) {
       for (const id of winner.split(',')) {
         tournamentPlayersMap[id].medals[index].push(year.toString());
+
+        const country = tournamentPlayers[id].country;
+
+        if (country) {
+          upsertCountry(country).medals[index].push(year.toString());
+        }
       }
     }
 
@@ -126,6 +142,15 @@ export function calculateStats(tournaments: Tournament[]): Stats {
     player.totalWon = player.results.reduce((total, r) => total + r.won, 0);
   }
 
+  for (const country in countries) {
+    const stats = countries[country];
+    const [gold, silver, bronze] = stats.medals;
+
+    stats.score = gold.length * 10_000 + silver.length * 100 + bronze.length;
+    stats.totalGames = stats.results.reduce((total, r) => total + r.totalGames, 0);
+    stats.totalWon = stats.results.reduce((total, r) => total + r.totalWon, 0);
+  }
+
   return {
     tournaments: tournaments.length,
     playedGames,
@@ -137,8 +162,12 @@ export function calculateStats(tournaments: Tournament[]): Stats {
     streams,
     analysis,
     players,
+    countries,
     black: black / (black + white),
-    winners: Object.values(players)
+    playerMedalists: Object.values(players)
+      .filter((p) => p.score > 0)
+      .sort((a, b) => b.score - a.score),
+    countryMedalists: Object.values(countries)
       .filter((p) => p.score > 0)
       .sort((a, b) => b.score - a.score),
   };
@@ -156,6 +185,17 @@ export function calculateStats(tournaments: Tournament[]): Stats {
       score: 0,
       totalGames: 0,
       totalWon: 0,
+    });
+  }
+
+  function upsertCountry(country: string): StatsCountry {
+    return (countries[country] ||= {
+      country,
+      medals: [[], [], []],
+      totalGames: 0,
+      totalWon: 0,
+      score: 0,
+      results: [],
     });
   }
 }

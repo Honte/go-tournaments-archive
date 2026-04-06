@@ -1,3 +1,4 @@
+import EVENT_CONFIG from '@event/config';
 import { getStats, getTournaments } from '@/data';
 import { Activity } from 'react';
 import type { Locale } from '@/i18n/consts';
@@ -5,6 +6,7 @@ import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
 import { Attendants } from '@/components/Attendants';
 import { Banner } from '@/components/Banner';
+import { CountryMedalists } from '@/components/CountryMedalists';
 import { Medalists } from '@/components/Medalists';
 import { TotalStats } from '@/components/TotalStats';
 import { Winners } from '@/components/Winners';
@@ -38,6 +40,7 @@ export default async function Home({ params }: PageProps) {
         </Activity>
         <Winners translations={translations} tournaments={tournaments} />
       </div>
+      {EVENT_CONFIG.showCountry && <CountryMedalists stats={stats} translations={translations} />}
       <Medalists translations={translations} stats={stats} />
       <Attendants translations={translations} stats={stats} />
       <TotalStats translations={translations} stats={stats} />
