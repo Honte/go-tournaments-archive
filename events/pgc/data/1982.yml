@@ -22,6 +22,8 @@ top:
 stages:
   - type: ladder-table
     date: 1982-10-08 - 1982-10-11
+    placeOffset: 1
+    promoted: 1
     order:
       - ls
       - wm

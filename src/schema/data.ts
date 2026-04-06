@@ -53,6 +53,8 @@ export type BaseStage = {
   time?: string;
   komi?: number;
   rules?: string;
+  promoted?: number;
+  placeOffset?: number;
 };
 
 export type LeagueStage = BaseStage & {
@@ -173,6 +175,7 @@ export type StatsPlayerResult = {
   year: number;
   stage: Stage['type'];
   place: number;
+  finalPlace: number;
   games: StatsPlayerGame[];
   won: number;
   rank: string;

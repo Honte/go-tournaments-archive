@@ -68,6 +68,7 @@ export function calculateStats(tournaments: Tournament[]): Stats {
           year,
           stage: stage.type,
           place: player.place,
+          finalPlace: player.place > (stage.promoted ?? 0) ? player.place + (stage.placeOffset ?? 0) : Infinity,
           games: playerGames,
           won,
           rank: tournamentPlayers[player.id]?.rank ?? '',
@@ -144,9 +145,12 @@ export function calculateStats(tournaments: Tournament[]): Stats {
     const [gold, silver, bronze] = player.medals;
 
     player.score = gold.length * 10_000 + silver.length * 100 + bronze.length;
-    player.totalGames = player.results.reduce((total, r) => total + r.games.length, 0);
-    player.totalWon = player.results.reduce((total, r) => total + r.won, 0);
-    player.bestPlace = player.results.reduce((best, r) => Math.min(best, r.place), Infinity);
+
+    for (const result of player.results) {
+      player.totalGames += result.games.length;
+      player.totalWon += result.won;
+      player.bestPlace = Math.min(player.bestPlace, result.finalPlace);
+    }
   }
 
   for (const country in countries) {
@@ -158,9 +162,12 @@ export function calculateStats(tournaments: Tournament[]): Stats {
     for (const year in stats.years) {
       const yearStats = stats.years[year];
 
-      yearStats.totalGames = yearStats.results.reduce((total, r) => total + r.games.length, 0);
-      yearStats.totalWon = yearStats.results.reduce((total, r) => total + r.won, 0);
-      yearStats.bestPlace = yearStats.results.reduce((best, r) => Math.min(best, r.place), Infinity);
+      for (const result of yearStats.results) {
+        yearStats.totalGames += result.games.length;
+        yearStats.totalWon += result.won;
+        yearStats.bestPlace = Math.min(yearStats.bestPlace, result.finalPlace);
+      }
+
       stats.totalWon += yearStats.totalWon;
       stats.totalGames += yearStats.totalGames;
       stats.totalPlayers += yearStats.results.length;

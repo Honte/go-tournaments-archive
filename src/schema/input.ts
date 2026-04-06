@@ -8,6 +8,8 @@ export type InputBaseStage = {
   komi?: number;
   rules?: string;
   breakers?: Breaker[];
+  promoted?: number;
+  placeOffset?: number;
 };
 
 export type InputLeagueStage = InputBaseStage & {

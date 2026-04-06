@@ -19,6 +19,7 @@ top:
 stages:
   - type: ladder-table
     date: 1981-10-28 - 1981-10-30
+    promoted: 11
     order:
       - km
       - js
@@ -56,6 +57,7 @@ stages:
       pl: Turniej o miejsca 5-11
       en: Tournament for places 5-11
     date: 1981-10-28 - 1981-10-30
+    placeOffset: 5
     games:
       - wm-ls ls
       - wm-kg wm

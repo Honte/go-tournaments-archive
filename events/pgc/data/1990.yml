@@ -15,6 +15,7 @@ top:
 stages:
   - type: league
     date: 1990-11-29 - 1990-12-02
+    promoted: 2
     breakers:
       - wins
       - sodos

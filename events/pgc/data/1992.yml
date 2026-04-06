@@ -15,6 +15,7 @@ top:
 stages:
   - type: league
     date: 1992-11-05 - 1992-11-08
+    promoted: 2
     breakers:
       - wins
       - sodos

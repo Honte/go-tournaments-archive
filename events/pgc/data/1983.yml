@@ -23,6 +23,8 @@ top:
 stages:
   - type: ladder-table
     date: 1983-09-30 - 1983-10-02
+    placeOffset: 1
+    promoted: 1
     order:
       - ls
       - wm

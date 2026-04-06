@@ -15,6 +15,7 @@ top:
 stages:
   - type: league
     date: 1987-11-26 - 1987-11-29
+    promoted: 2
     breakers:
       - wins
       - sodos

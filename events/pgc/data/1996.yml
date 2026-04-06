@@ -15,6 +15,7 @@ top:
 stages:
   - type: league
     date: 1996-11-08 - 1996-11-11
+    promoted: 2
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T961108
     komi: 5.5
     breakers:

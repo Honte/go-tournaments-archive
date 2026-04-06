@@ -15,6 +15,7 @@ top:
 stages:
   - type: league
     date: 1995-01-2 - 1995-01-29
+    promoted: 2
     breakers:
       - wins
       - sodos

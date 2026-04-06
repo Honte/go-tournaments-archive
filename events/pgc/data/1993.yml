@@ -15,6 +15,7 @@ top:
 stages:
   - type: league
     date: 1994-01
+    promoted: 2
     breakers:
       - wins
       - sodos
