@@ -1,5 +1,5 @@
 const PROPERTY_REGEX = /(?<key>[A-Z]+)\[(?<value>.*)]/;
-const GAME_REGEX = /(?<opponent>\d+)(?<result>[+=-])(\/(?<color>[wb])(?<handicap>\d)?)?/;
+const GAME_REGEX = /(?<opponent>\d+)(?<result>[+=-])(?<modifier>!)?(\/(?<color>[wb])(?<handicap>\d)?)?/;
 
 export type H9Tournament = {
   id: string;
@@ -30,6 +30,7 @@ export type H9Player = {
 
 export type H9Game = {
   opponent: number;
+  modifier?: '!';
   result: '+' | '-' | '=';
   color?: 'white' | 'black';
   handicap?: number;
@@ -73,26 +74,24 @@ export function parseH9(input: string): H9Tournament {
     const scores: string[] = [];
     const egd = columns[columns.length - 1].startsWith('|') ? Number(columns.pop()!.slice(1)) : undefined;
 
-    let foundGameResult = false;
     for (const col of columns) {
       const match = GAME_REGEX.exec(col);
 
-      if (match) {
-        const { opponent, result, color, handicap } = match.groups!;
+      if (col === '?' || col === '0=') {
+        games.push(null);
+      } else if (match) {
+        const { opponent, result, color, handicap, modifier } = match.groups!;
 
         games.push({
           color: color ? (color === 'w' ? 'white' : 'black') : undefined,
           handicap: handicap ? parseInt(handicap, 10) : undefined,
           opponent: Number(opponent),
+          modifier: modifier as H9Game['modifier'],
           result: result as H9Game['result'],
         });
-        foundGameResult = true;
-      } else if (col === '?') {
-        games.push(null);
-        foundGameResult = true;
-      } else if (!foundGameResult) {
+      } else {
         scores.push(col);
-      } // other columns are ignored
+      }
     }
 
     results.push({

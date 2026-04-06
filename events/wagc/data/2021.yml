@@ -3,3 +3,13 @@ stages:
     file: wagc2021.txt
     scoringColumns:
       - null
+      - score
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - score
+      - wins
+      - sos
+      - sodos
+    findSharedPlaces: true
