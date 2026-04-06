@@ -167,24 +167,21 @@ export function calculateStats(tournaments: Tournament[]): Stats {
   }
 
   return {
-    tournaments: tournaments.length,
-    playedGames,
+    summary: {
+      tournaments: tournaments.length,
+      players: Object.keys(players).length,
+      playedGames,
+      sgfs,
+      resign,
+      timeout,
+      relays,
+      streams,
+      analysis,
+      black: black / (black + white),
+    },
     games,
-    sgfs,
-    resign,
-    timeout,
-    relays,
-    streams,
-    analysis,
     players,
     countries,
-    black: black / (black + white),
-    playerMedalists: Object.values(players)
-      .filter((p) => p.score > 0)
-      .sort((a, b) => b.score - a.score),
-    countryMedalists: Object.values(countries)
-      .filter((p) => p.score > 0)
-      .sort((a, b) => b.score - a.score),
   };
 
   function upsertPlayer(player: Player | string): StatsPlayer {

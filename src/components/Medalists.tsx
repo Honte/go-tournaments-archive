@@ -1,4 +1,4 @@
-import type { Stats } from '@/schema/data';
+import type { StatsPlayer } from '@/schema/data';
 import { FaMedal } from 'react-icons/fa6';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
@@ -8,11 +8,11 @@ import { PlayerLink } from '@/components/ui/PlayerLink';
 import { PlayerName } from '@/components/ui/PlayerName';
 
 type MedalistsProps = {
-  stats: Stats;
+  players: StatsPlayer[];
   translations: Translations;
 };
 
-export function Medalists({ stats, translations }: MedalistsProps) {
+export function Medalists({ players, translations }: MedalistsProps) {
   const t = getTranslator(translations);
 
   return (
@@ -34,7 +34,7 @@ export function Medalists({ stats, translations }: MedalistsProps) {
           </tr>
         </thead>
         <tbody>
-          {stats.playerMedalists.map((winner) => (
+          {players.map((winner) => (
             <tr key={winner.name} className="even:bg-gray-200 hover:bg-gray-300">
               <td className="text-left p-1">
                 <PlayerLink playerId={winner.id} locale={translations.locale}>

@@ -1,11 +1,11 @@
-import type { Stats } from '@/schema/data';
+import type { StatsSummary } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { H1 } from '@/components/ui/H1';
 
 type TotalStatsProps = {
   translations: Translations;
-  stats: Stats;
+  stats: StatsSummary;
 };
 
 export function TotalStats({ translations, stats }: TotalStatsProps) {
@@ -20,7 +20,7 @@ export function TotalStats({ translations, stats }: TotalStatsProps) {
             {t('stats.total.tournaments')} - {stats.tournaments}
           </li>
           <li>
-            {t('stats.total.participants')} - {Object.keys(stats.players).length}
+            {t('stats.total.participants')} - {stats.players}
           </li>
           <li>
             {t('stats.total.games')} - {stats.playedGames}

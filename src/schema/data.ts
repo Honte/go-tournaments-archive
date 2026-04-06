@@ -210,18 +210,21 @@ export type StatsCountry = {
 };
 
 export type Stats = {
+  summary: StatsSummary;
+  games: Record<string, Game>;
+  players: Record<string, StatsPlayer>;
+  countries: Record<string, StatsCountry>;
+};
+
+export type StatsSummary = {
   tournaments: number;
   playedGames: number;
-  games: Record<string, Game>;
   sgfs: number;
   resign: number;
   timeout: number;
   relays: number;
   streams: number;
   analysis: number;
-  players: Record<string, StatsPlayer>;
-  countries: Record<string, StatsCountry>;
+  players: number;
   black: number;
-  playerMedalists: StatsPlayer[];
-  countryMedalists: StatsCountry[];
 };

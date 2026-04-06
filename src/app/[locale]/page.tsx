@@ -1,5 +1,5 @@
 import EVENT_CONFIG from '@event/config';
-import { getStats, getTournaments } from '@/data';
+import { getCountryMedals, getPlayerMedalists, getTopAttendants, getTotalStats, getTournaments } from '@/data';
 import { Activity } from 'react';
 import type { Locale } from '@/i18n/consts';
 import { loadTranslations } from '@/i18n/server';
@@ -23,7 +23,10 @@ export default async function Home({ params }: PageProps) {
   const { locale } = await params;
   const translations = await loadTranslations(locale);
   const tournaments = (await getTournaments()).toSorted((a, b) => b.id - a.id);
-  const stats = await getStats();
+  const attendants = await getTopAttendants(10);
+  const medalists = await getPlayerMedalists();
+  const countryMedals = await getCountryMedals();
+  const totalStats = await getTotalStats();
 
   const t = getTranslator(translations);
 
@@ -40,10 +43,10 @@ export default async function Home({ params }: PageProps) {
         </Activity>
         <Winners translations={translations} tournaments={tournaments} />
       </div>
-      {EVENT_CONFIG.showCountry && <CountryMedalists stats={stats} translations={translations} />}
-      <Medalists translations={translations} stats={stats} />
-      <Attendants translations={translations} stats={stats} />
-      <TotalStats translations={translations} stats={stats} />
+      {EVENT_CONFIG.showCountry && <CountryMedalists countries={countryMedals} translations={translations} />}
+      <Medalists translations={translations} players={medalists} />
+      <Attendants translations={translations} players={attendants} />
+      <TotalStats translations={translations} stats={totalStats} />
     </div>
   );
 }

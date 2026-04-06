@@ -1,15 +1,15 @@
-import type { Stats } from '@/schema/data';
+import type { StatsCountry } from '@/schema/data';
 import { FaMedal } from 'react-icons/fa6';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { H1 } from '@/components/ui/H1';
 
 type CountryMedalistsProps = {
-  stats: Stats;
+  countries: StatsCountry[];
   translations: Translations;
 };
 
-export function CountryMedalists({ stats, translations }: CountryMedalistsProps) {
+export function CountryMedalists({ countries, translations }: CountryMedalistsProps) {
   const t = getTranslator(translations);
 
   return (
@@ -31,7 +31,7 @@ export function CountryMedalists({ stats, translations }: CountryMedalistsProps)
           </tr>
         </thead>
         <tbody>
-          {stats.countryMedalists.map((winner) => (
+          {countries.map((winner) => (
             <tr key={winner.country} className="even:bg-gray-200 hover:bg-gray-300">
               <td className="text-left p-1">{t(`country.${winner.country}`)}</td>
               <td>{winner.medals[0].length}</td>

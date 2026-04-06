@@ -1,4 +1,4 @@
-import type { Stats } from '@/schema/data';
+import type { StatsPlayer } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { FullStatsLink } from '@/components/FullStatsLink';
@@ -6,13 +6,12 @@ import { H1 } from '@/components/ui/H1';
 import { PlayerLink } from '@/components/ui/PlayerLink';
 
 type AttendantsProps = {
-  stats: Stats;
+  players: StatsPlayer[];
   translations: Translations;
 };
 
-export function Attendants({ stats, translations }: AttendantsProps) {
+export function Attendants({ players, translations }: AttendantsProps) {
   const t = getTranslator(translations);
-  const players = Object.values(stats.players).sort((a, b) => b.years.length - a.years.length);
 
   return (
     <div>

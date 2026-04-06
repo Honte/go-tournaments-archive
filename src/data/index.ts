@@ -45,3 +45,25 @@ export async function getPlayerOpponentsStats(playerId: string) {
 export async function getCountryStats(country: string) {
   return stats.countries[country];
 }
+
+export async function getPlayerMedalists() {
+  return Object.values(stats.players)
+    .filter((p) => p.score > 0)
+    .sort((a, b) => b.score - a.score);
+}
+
+export async function getCountryMedals() {
+  return Object.values(stats.countries)
+    .filter((p) => p.score > 0)
+    .sort((a, b) => b.score - a.score);
+}
+
+export async function getTopAttendants(limit: number) {
+  return Object.values(stats.players)
+    .sort((a, b) => b.years.length - a.years.length)
+    .slice(0, limit);
+}
+
+export async function getTotalStats() {
+  return stats.summary;
+}
