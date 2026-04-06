@@ -1,4 +1,4 @@
-import { getStats } from '@/data';
+import { getPlayersStats } from '@/data';
 import type { Metadata } from 'next';
 import type { Locale } from '@/i18n/consts';
 import { loadTranslations } from '@/i18n/server';
@@ -27,13 +27,13 @@ export default async function Stats({ params }: PageProps) {
   const { locale } = await params;
 
   const translations = await loadTranslations(locale);
-  const stats = await getStats();
+  const players = await getPlayersStats();
   const t = getTranslator(translations);
 
   return (
     <>
       <h1 className="text-4xl text-center font-bold mb-4">{t('stats.allTimeHeader')}</h1>
-      <PlayerStats players={stats.players} translations={translations} />
+      <PlayerStats players={players} translations={translations} />
     </>
   );
 }

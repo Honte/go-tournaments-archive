@@ -1,5 +1,5 @@
 import EVENT_CONFIG from '@event/config';
-import { getStats } from '@/data';
+import { getPlayerOpponentsStats, getPlayerStats, getStats } from '@/data';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import type { Locale } from '@/i18n/consts';
@@ -8,7 +8,6 @@ import { getTranslator } from '@/i18n/translator';
 import { Achievements } from '@/components/stats/Achievements';
 import { Events } from '@/components/stats/Events';
 import { Opponents } from '@/components/stats/Opponents';
-import { H2 } from '@/components/ui/H2';
 
 type PageProps = {
   params: Promise<{
@@ -21,8 +20,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { slug, locale } = await params;
 
   const translations = await loadTranslations(locale);
-  const stats = await getStats();
-  const player = stats.players[slug];
+  const player = await getPlayerStats(slug);
   const t = getTranslator(translations);
 
   return {
@@ -36,8 +34,8 @@ export default async function PlayerStatsPage({ params }: PageProps) {
 
   const translations = await loadTranslations(locale);
   const t = getTranslator(translations);
-  const stats = await getStats();
-  const player = stats.players[slug];
+  const player = await getPlayerStats(slug);
+  const opponents = await getPlayerOpponentsStats(slug);
 
   if (!player) {
     return notFound();
@@ -59,7 +57,7 @@ export default async function PlayerStatsPage({ params }: PageProps) {
 
       <div className="flex max-xl:flex-col gap-4">
         <Events player={player} translations={translations} />
-        <Opponents player={player} translations={translations} players={stats.players} />
+        <Opponents player={player} translations={translations} players={opponents} />
       </div>
     </>
   );

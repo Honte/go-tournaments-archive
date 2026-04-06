@@ -3,6 +3,7 @@ import type {
   Player,
   Stats,
   StatsCountry,
+  StatsCountryResult,
   StatsPlayer,
   StatsPlayerGame,
   StatsPlayerResult,
@@ -62,6 +63,7 @@ export function calculateStats(tournaments: Tournament[]): Stats {
           }
         }
 
+        const country = tournamentPlayers[player.id].country;
         const result: StatsPlayerResult = {
           year,
           stage: stage.type,
@@ -69,10 +71,14 @@ export function calculateStats(tournaments: Tournament[]): Stats {
           games: playerGames,
           won,
           rank: tournamentPlayers[player.id]?.rank ?? '',
-          country: tournamentPlayers[player.id].country,
+          country,
         };
 
         tournamentPlayersMap[player.id].results.push(result);
+
+        if (country) {
+          upsertCountryYear(country, year).results.push(result);
+        }
       }
     }
 
@@ -147,8 +153,17 @@ export function calculateStats(tournaments: Tournament[]): Stats {
     const [gold, silver, bronze] = stats.medals;
 
     stats.score = gold.length * 10_000 + silver.length * 100 + bronze.length;
-    stats.totalGames = stats.results.reduce((total, r) => total + r.totalGames, 0);
-    stats.totalWon = stats.results.reduce((total, r) => total + r.totalWon, 0);
+
+    for (const year in stats.years) {
+      const yearStats = stats.years[year];
+
+      yearStats.totalGames = yearStats.results.reduce((total, r) => total + r.games.length, 0);
+      yearStats.totalWon = yearStats.results.reduce((total, r) => total + r.won, 0);
+      yearStats.bestPlace = yearStats.results.reduce((best, r) => Math.min(best, r.place), Infinity);
+      stats.totalWon += yearStats.totalWon;
+      stats.totalGames += yearStats.totalGames;
+      stats.totalPlayers += yearStats.results.length;
+    }
   }
 
   return {
@@ -194,7 +209,20 @@ export function calculateStats(tournaments: Tournament[]): Stats {
       medals: [[], [], []],
       totalGames: 0,
       totalWon: 0,
+      totalPlayers: 0,
       score: 0,
+      years: {},
+    });
+  }
+
+  function upsertCountryYear(country: string, year: number): StatsCountryResult {
+    const stats = upsertCountry(country);
+
+    return (stats.years[year] ||= {
+      year,
+      bestPlace: 0,
+      totalGames: 0,
+      totalWon: 0,
       results: [],
     });
   }

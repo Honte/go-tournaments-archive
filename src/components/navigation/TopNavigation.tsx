@@ -1,6 +1,5 @@
 'use client';
 
-import type { Tournament } from '@/schema/data';
 import { throttle } from 'lodash-es';
 import { useRouter } from 'next/navigation';
 import { useCallback, useEffect, useMemo, useRef } from 'react';
@@ -13,17 +12,16 @@ const THROTTLE = 200;
 const DELAY = 500;
 
 export type TopNavigationProps = {
-  tournaments: Tournament[];
+  years: number[];
   locale: string;
   current: number;
 };
 
-export function TopNavigation({ tournaments, locale, current }: TopNavigationProps) {
+export function TopNavigation({ years, locale, current }: TopNavigationProps) {
   const router = useRouter();
   const elRef = useRef<HTMLDivElement | null>(null);
   const navRef = useRef<YearsNavigationHandle>(null);
   const delayRef = useRef<number | null>(null);
-  const years = tournaments.map((t) => t.year);
 
   const clearNavigate = useCallback(() => {
     if (delayRef.current !== null) {

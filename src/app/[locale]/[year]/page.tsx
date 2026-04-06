@@ -1,4 +1,4 @@
-import { getTournaments } from '@/data';
+import { getAvailableTournaments, getTournament, getTournaments } from '@/data';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import type { Locale } from '@/i18n/consts';
@@ -24,8 +24,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { year, locale } = await params;
 
   const translations = await loadTranslations(locale);
-  const tournaments = await getTournaments();
-  const tournament = tournaments.find((t) => t.year === Number(year));
+  const tournament = await getTournament(Number(year));
   const t = getTranslator(translations);
 
   return {
@@ -57,8 +56,8 @@ export default async function Edition(props: PageProps) {
   }
 
   const translations = await loadTranslations(locale);
-  const tournaments = await getTournaments();
-  const tournament = tournaments.find((t) => t.year === Number(year));
+  const tournament = await getTournament(Number(year));
+  const years = await getAvailableTournaments();
 
   if (!tournament) {
     return notFound();
@@ -69,7 +68,7 @@ export default async function Edition(props: PageProps) {
 
   return (
     <>
-      <TopNavigation locale={locale} tournaments={tournaments} current={Number(year)} />
+      <TopNavigation locale={locale} years={years} current={Number(year)} />
 
       <div className="sm:flex sm:gap-8 my-1">
         <TournamentDetails tournament={tournament} translations={translations} />
