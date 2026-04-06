@@ -8,12 +8,6 @@ export default {
   ],
   theme: {
     extend: {
-      screens: {
-        xs: '420px',
-      },
-      gridTemplateColumns: {
-        pgc: 'min-content repeat(3, minmax(0, 1fr))',
-      },
       animation: {
         border: 'border 4s linear infinite',
       },

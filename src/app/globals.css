@@ -17,6 +17,7 @@
 }
 
 @theme {
+  --breakpoint-xs: 420px;
   --color-event-dark: #222222;
   --color-event-gray: #999999;
   --color-event-soft: #d2d2d2;

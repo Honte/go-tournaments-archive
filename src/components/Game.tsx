@@ -34,7 +34,7 @@ export function Game({ className, game, players, translations, wide }: GameProps
         <div
           className={clsx('flex justify-center', {
             'flex-col': hasSgf || !wide,
-            'max-xs:flex-col gap-1 items-center': !hasSgf,
+            'max-xs:flex-col gap-1 sm:items-center': !hasSgf,
           })}
         >
           <PlayerRow t={t} player={home} />
