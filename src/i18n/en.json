@@ -6,7 +6,9 @@
     "allTimeStatsTitle": "All-time Table",
     "allTimeStatsDescription": "All-time statistics of all Polish Go Championships participants",
     "playerStatsTitle": "Player %{0} stats",
-    "playerStatsDescription": "Participation statistics of %{0} in all Polish Go Championships events"
+    "playerStatsDescription": "Participation statistics of %{0} in all Polish Go Championships events",
+    "lastUpdated": "Last updated: %{0}",
+    "github": "Contribute on GitHub: %{0}"
   },
   "currentEdition": {
     "website": "https://mp.go.art.pl/2025/en",

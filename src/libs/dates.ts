@@ -1,6 +1,6 @@
 import { TournamentDateSpan } from '@/schema/data';
 
-export function formatDate(date: string, locale: string) {
+export function formatDate(date: Date | string, locale: string) {
   return new Intl.DateTimeFormat(locale, {
     day: 'numeric',
     month: 'long',

@@ -42,7 +42,7 @@ export default async function RootLayout({ params, children }: RootLayoutProps) 
         <LocaleNavigation locale={locale} />
         <Header translations={translations} />
         <main className="flex-1 container max-w-(--breakpoint-2xl) mx-auto p-4">{children}</main>
-        <Footer />
+        <Footer translations={translations} />
         <Client rawTranslations={JSON.stringify(translations)} />
       </body>
     </html>

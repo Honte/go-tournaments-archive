@@ -6,7 +6,9 @@
     "allTimeStatsTitle": "Lista wszech czasów",
     "allTimeStatsDescription": "Lista wszech czasów wszystkich uczestników mistrzostw Polski w Go",
     "playerStatsTitle": "Wyniki gracza %{0}",
-    "playerStatsDescription": "Statystyki gracza %{0} we wszystkich rozegranych edycjach mistrzostw Polski w Go"
+    "playerStatsDescription": "Statystyki gracza %{0} we wszystkich rozegranych edycjach mistrzostw Polski w Go",
+    "lastUpdated": "Ostatnia aktualizacja: %{0}",
+    "github": "Zobacz na GitHub: %{0}"
   },
   "currentEdition": {
     "website": "https://mp.go.art.pl/2025/pl",
