@@ -44,30 +44,34 @@ export function TableLadder({ stage, players, games, translations }: TableLadder
           </tr>
         </thead>
         <tbody>
-          {table.map((player, i) => (
-            <tr key={player.id} className="text-center even:bg-gray-200 cursor-default!">
-              {hasSharedPlaces && <td className="p-1">{player.index}</td>}
-              <td className="p-1">{i === 0 || player.place !== table[i - 1].place ? player.place : ''}</td>
-              <td className="p-1 text-left">
-                <PlayerLink playerId={player.id} locale={translations.locale}>
-                  {players[player.id].name}
-                </PlayerLink>
-              </td>
-              <td className="p-1">{players[player.id].rank}</td>
-              {player.games.map((game, index) =>
-                game ? (
-                  <GameCell as="td" key={index} entry={game} games={games} players={players} />
+          {table.map((result, i) => {
+            const player = players[result.id];
+
+            return (
+              <tr key={result.id} className="text-center even:bg-gray-200 cursor-default!">
+                {hasSharedPlaces && <td className="p-1">{result.index}</td>}
+                <td className="p-1">{i === 0 || result.place !== table[i - 1].place ? result.place : ''}</td>
+                <td className="p-1 text-left">
+                  <PlayerLink playerId={player.id} locale={translations.locale}>
+                    {player.name}
+                  </PlayerLink>
+                </td>
+                <td className="p-1">{player.rank}</td>
+                {result.games.map((game, index) =>
+                  game ? (
+                    <GameCell as="td" key={index} entry={game} games={games} players={players} />
+                  ) : (
+                    <td key={index} />
+                  )
+                )}
+                {playoffsColumns > 0 ? (
+                  <PlayoffGames playoffs={result.playoffs} games={games} players={players} cols={playoffsColumns} />
                 ) : (
-                  <td key={index} />
-                )
-              )}
-              {playoffsColumns > 0 ? (
-                <PlayoffGames playoffs={player.playoffs} games={games} players={players} cols={playoffsColumns} />
-              ) : (
-                ''
-              )}
-            </tr>
-          ))}
+                  ''
+                )}
+              </tr>
+            );
+          })}
         </tbody>
       </GoResultsTable>
     </div>

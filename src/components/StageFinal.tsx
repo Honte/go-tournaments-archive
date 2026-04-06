@@ -30,13 +30,13 @@ export function StageFinal({ stage, players, translations }: StageFinalProps) {
       </p>
       <div className="bg-gray-200 p-2 my-2 md:p-3 text-lg flex items-center text-center gap-2">
         <strong>
-          <PlayerLink playerId={winner.id} locale={translations.locale}>
+          <PlayerLink playerId={players[winner.id].id} locale={translations.locale}>
             <PlayerName player={players[winner.id]} />
           </PlayerLink>
         </strong>
         <span>&ndash;</span>
         <span>
-          <PlayerLink playerId={loser.id} locale={translations.locale}>
+          <PlayerLink playerId={players[loser.id].id} locale={translations.locale}>
             <PlayerName player={players[winner.id]} />
           </PlayerLink>
         </span>

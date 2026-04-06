@@ -58,35 +58,39 @@ export function TableLeague({ stage, players, games, translations }: TableLeague
           </tr>
         </thead>
         <tbody>
-          {table.map((player, i) => (
-            <tr key={player.id} className="text-center even:bg-gray-200 cursor-default!">
-              {hasSharedPlaces && <td className="p-1">{player.index}</td>}
-              <td className="p-1">{i === 0 || player.place !== table[i - 1].place ? player.place : ''}</td>
-              <td className="p-1 text-left">
-                <PlayerLink playerId={player.id} locale={translations.locale}>
-                  {players[player.id].name}
-                </PlayerLink>
-              </td>
-              <td className="p-1">{players[player.id].rank}</td>
-              {EVENT_CONFIG.showCountry && (
-                <td className="p-1">
-                  <Country code={players[player.id].country} translations={translations} />
+          {table.map((result, i) => {
+            const player = players[result.id];
+
+            return (
+              <tr key={result.id} className="text-center even:bg-gray-200 cursor-default!">
+                {hasSharedPlaces && <td className="p-1">{result.index}</td>}
+                <td className="p-1">{i === 0 || result.place !== table[i - 1].place ? result.place : ''}</td>
+                <td className="p-1 text-left">
+                  <PlayerLink playerId={player.id} locale={translations.locale}>
+                    {player.name}
+                  </PlayerLink>
                 </td>
-              )}
-              {player.games.map((game, index) =>
-                game ? (
-                  <GameCell as="td" key={index} entry={game} games={games} players={players} />
-                ) : (
-                  <td key={index} />
-                )
-              )}
-              {visibleBreakers.map((breaker) => (
-                <td className="p-1" key={breaker}>
-                  {player[breaker]}
-                </td>
-              ))}
-            </tr>
-          ))}
+                <td className="p-1">{player.rank}</td>
+                {EVENT_CONFIG.showCountry && (
+                  <td className="p-1">
+                    <Country code={player.country} translations={translations} />
+                  </td>
+                )}
+                {result.games.map((game, index) =>
+                  game ? (
+                    <GameCell as="td" key={index} entry={game} games={games} players={players} />
+                  ) : (
+                    <td key={index} />
+                  )
+                )}
+                {visibleBreakers.map((breaker) => (
+                  <td className="p-1" key={breaker}>
+                    {result[breaker]}
+                  </td>
+                ))}
+              </tr>
+            );
+          })}
         </tbody>
       </GoResultsTable>
     </div>

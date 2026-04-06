@@ -34,33 +34,37 @@ export function TableWithoutRounds({ stage, players, games, translations }: Tabl
           </tr>
         </thead>
         <tbody>
-          {table.map((player, i) => (
-            <tr key={player.id} className="text-center even:bg-gray-200">
-              <td className="p-1">{i === 0 || player.place !== table[i - 1].place ? player.place : ''}</td>
-              <td className="p-1 text-left">
-                <PlayerLink playerId={player.id} locale={translations.locale}>
-                  {players[player.id].name}
-                </PlayerLink>
-              </td>
-              <td className="p-1">{players[player.id].rank}</td>
-              {table.map((p, index) => {
-                const entry = p !== player && player.games.find((g) => g.opponent === p.id);
+          {table.map((result, i) => {
+            const player = players[result.id];
 
-                return (
-                  <td className="p-1" key={index}>
-                    {p === player ? (
-                      <>&ndash;</>
-                    ) : entry ? (
-                      <GamePopoverTrigger game={games[entry.game]} players={players} as="span">
-                        {entry.won ? '1' : '0'}
-                      </GamePopoverTrigger>
-                    ) : null}
-                  </td>
-                );
-              })}
-              <td className="p-1">{player.score}</td>
-            </tr>
-          ))}
+            return (
+              <tr key={result.id} className="text-center even:bg-gray-200">
+                <td className="p-1">{i === 0 || result.place !== table[i - 1].place ? result.place : ''}</td>
+                <td className="p-1 text-left">
+                  <PlayerLink playerId={player.id} locale={translations.locale}>
+                    {player.name}
+                  </PlayerLink>
+                </td>
+                <td className="p-1">{player.rank}</td>
+                {table.map((p, index) => {
+                  const entry = p !== result && result.games.find((g) => g.opponent === p.id);
+
+                  return (
+                    <td className="p-1" key={index}>
+                      {p === result ? (
+                        <>&ndash;</>
+                      ) : entry ? (
+                        <GamePopoverTrigger game={games[entry.game]} players={players} as="span">
+                          {entry.won ? '1' : '0'}
+                        </GamePopoverTrigger>
+                      ) : null}
+                    </td>
+                  );
+                })}
+                <td className="p-1">{result.score}</td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>
