@@ -18,6 +18,7 @@ export function Achievements({ player, translations }: AchievementsProps) {
   const t = getTranslator(translations);
   const details: Record<string, ReactNode> = {};
 
+  let hasMedals = false;
   for (const [index, category] of MEDALS.entries()) {
     const achievements = player.medals[index];
 
@@ -27,7 +28,12 @@ export function Achievements({ player, translations }: AchievementsProps) {
           {listYear(achievements.toReversed(), translations.locale)} ({achievements.length})
         </span>
       );
+      hasMedals = true;
     }
+  }
+
+  if (!hasMedals) {
+    details[t('table.bestPlace')] = player.bestPlace;
   }
 
   details[t('table.events')] = player.years.length;

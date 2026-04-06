@@ -187,6 +187,7 @@ export type StatsPlayer = {
   years: number[];
   results: StatsPlayerResult[];
   score: number;
+  bestPlace: number;
   totalGames: number;
   totalWon: number;
 };
@@ -204,6 +205,7 @@ export type StatsCountry = {
   medals: StatsMedals;
   score: number;
   years: Record<number, StatsCountryResult>;
+  bestPlace: number;
   totalPlayers: number;
   totalGames: number;
   totalWon: number;

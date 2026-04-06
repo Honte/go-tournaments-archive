@@ -146,6 +146,7 @@ export function calculateStats(tournaments: Tournament[]): Stats {
     player.score = gold.length * 10_000 + silver.length * 100 + bronze.length;
     player.totalGames = player.results.reduce((total, r) => total + r.games.length, 0);
     player.totalWon = player.results.reduce((total, r) => total + r.won, 0);
+    player.bestPlace = player.results.reduce((best, r) => Math.min(best, r.place), Infinity);
   }
 
   for (const country in countries) {
@@ -163,6 +164,7 @@ export function calculateStats(tournaments: Tournament[]): Stats {
       stats.totalWon += yearStats.totalWon;
       stats.totalGames += yearStats.totalGames;
       stats.totalPlayers += yearStats.results.length;
+      stats.bestPlace = Math.min(stats.bestPlace, yearStats.bestPlace);
     }
   }
 
@@ -195,6 +197,7 @@ export function calculateStats(tournaments: Tournament[]): Stats {
       years: [],
       results: [],
       score: 0,
+      bestPlace: Infinity,
       totalGames: 0,
       totalWon: 0,
     });
@@ -207,6 +210,7 @@ export function calculateStats(tournaments: Tournament[]): Stats {
       totalGames: 0,
       totalWon: 0,
       totalPlayers: 0,
+      bestPlace: Infinity,
       score: 0,
       years: {},
     });

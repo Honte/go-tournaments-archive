@@ -77,6 +77,8 @@
     "round": "Round %{0}",
     "playoffs": "Play-Off",
     "events": "Events",
+    "best": "Best",
+    "bestPlace": "Best place",
     "games": "Games played",
     "won": "Games won",
     "lost": "Games lost",

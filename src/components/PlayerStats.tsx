@@ -23,6 +23,7 @@ type PlayerRow = {
   firstName: string;
   lastName: string;
   countries: Set<string>;
+  bestPlace: number;
   gold: number;
   silver: number;
   bronze: number;
@@ -31,7 +32,7 @@ type PlayerRow = {
   won: number;
   lost: number;
   wonPercent: number;
-  finalScore: number;
+  score: number;
 };
 
 export function PlayerStats({ players, translations }: PlayerStatsProps) {
@@ -42,18 +43,18 @@ export function PlayerStats({ players, translations }: PlayerStatsProps) {
       Object.values(players)
         .filter((p) => p.id !== 'BYE')
         .map((p) => {
-          const { id, name, medals, years, score, totalGames, totalWon } = p;
+          const { id, name, medals, years, score, totalGames, totalWon, bestPlace, countries } = p;
           const [firstName, lastName] = (name ?? '').split(' ');
           const [gold, silver, bronze] = medals;
-
-          const finalScore = score * 10000 + totalWon * 100 + totalGames;
 
           return {
             id,
             name: name ?? '',
             firstName,
             lastName,
-            countries: p.countries,
+            countries,
+            bestPlace,
+            score,
             gold: gold.length,
             silver: silver.length,
             bronze: bronze.length,
@@ -62,10 +63,9 @@ export function PlayerStats({ players, translations }: PlayerStatsProps) {
             won: totalWon,
             lost: totalGames - totalWon,
             wonPercent: totalWon / totalGames,
-            finalScore,
           } as PlayerRow;
         })
-        .sort((a, b) => b.finalScore - a.finalScore),
+        .sort(sortPlayers),
     [players]
   );
 
@@ -101,6 +101,10 @@ export function PlayerStats({ players, translations }: PlayerStatsProps) {
                 )),
                 ', '
               ),
+          },
+          {
+            accessorKey: 'bestPlace',
+            header: t('table.best'),
           },
           {
             accessorKey: 'gold',
@@ -141,4 +145,24 @@ export function PlayerStats({ players, translations }: PlayerStatsProps) {
   );
 
   return <StatsTable columns={columns} data={data} />;
+}
+
+function sortPlayers(a: PlayerRow, b: PlayerRow) {
+  if (a.score === b.score) {
+    if (a.bestPlace === b.bestPlace) {
+      if (a.attended === b.attended) {
+        if (a.won === b.won) {
+          return b.games - a.games;
+        }
+
+        return b.won - a.won;
+      }
+
+      return b.attended - a.attended;
+    }
+
+    return a.bestPlace - b.bestPlace;
+  }
+
+  return b.score - a.score;
 }
