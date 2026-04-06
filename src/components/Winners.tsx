@@ -35,6 +35,7 @@ export function Winners({ tournaments, translations, className }: WinnersProps) 
                 <Link
                   className="sm:text-xl font-bold text-event-primary underline hover:text-event-hover"
                   href={`/${translations.locale}/${year}`}
+                  prefetch={false}
                 >
                   {year}
                 </Link>

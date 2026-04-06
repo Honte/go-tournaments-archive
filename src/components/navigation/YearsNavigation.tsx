@@ -54,6 +54,7 @@ export function YearsNavigation({ locale, years, current, ref }: YearsNavigation
                   hidden: year >= selected,
                 })}
                 draggable={false}
+                prefetch={false}
               >
                 {year}
               </Link>
@@ -69,6 +70,7 @@ export function YearsNavigation({ locale, years, current, ref }: YearsNavigation
                   hidden: year <= selected,
                 })}
                 draggable={false}
+                prefetch={false}
               >
                 {year}
               </Link>

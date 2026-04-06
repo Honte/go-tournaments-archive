@@ -14,6 +14,7 @@ export function FullStatsLink({ translations }: FullStatsLinkProps) {
       <Link
         href={`${translations.locale}/stats`}
         className="underline underline-offset-2 text-event-primary cursor-pointer hover:text-event-hover"
+        prefetch={false}
       >
         {t('stats.full')}
       </Link>

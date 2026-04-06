@@ -17,6 +17,7 @@ export async function Header({ translations }: HeaderProps) {
           href={`/${translations.locale}`}
           className="group flex items-center gap-3 md:gap-4"
           title={t('navigation.home.title')}
+          prefetch={false}
         >
           <span className="sr-only">{t('navigation.home.anchor')}</span>
           <Logo className="h-8" color="white" />
