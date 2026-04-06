@@ -28,7 +28,12 @@ export function Game({ className, game, players, translations, wide }: GameProps
       })}
     >
       {hasSgf && (
-        <img src={game.props.svg} alt={t('game.preview', `${home.name} vs ${away.name}`)} className="size-20" />
+        <img
+          src={game.props.svg}
+          alt={t('game.preview', `${home.name} vs ${away.name}`)}
+          className="size-20"
+          loading="lazy"
+        />
       )}
       <div className="flex flex-col">
         <div
