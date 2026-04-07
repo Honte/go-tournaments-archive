@@ -1,7 +1,7 @@
 import type { StatsPlayer } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
-import { FullStatsLink } from '@/components/FullStatsLink';
+import { AllPlayersStatsLink } from '@/components/AllPlayersStatsLink';
 import { H1 } from '@/components/ui/H1';
 import { PlayerLink } from '@/components/ui/PlayerLink';
 
@@ -28,7 +28,7 @@ export function Attendants({ players, translations }: AttendantsProps) {
           ))}
         </ol>
       </div>
-      <FullStatsLink translations={translations} />
+      <AllPlayersStatsLink translations={translations} />
     </div>
   );
 }

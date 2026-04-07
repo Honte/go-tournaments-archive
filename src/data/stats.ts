@@ -55,6 +55,7 @@ export function calculateStats(tournaments: Tournament[]): Stats {
             won += Number(game.won);
             playerGames.push({
               opponent: tournamentPlayersMap[game.opponent].id,
+              opponentCountry: tournamentPlayers[game.opponent]?.country,
               won: game.won,
               result: game.result,
               game: game.game,
@@ -64,6 +65,7 @@ export function calculateStats(tournaments: Tournament[]): Stats {
         }
 
         const country = tournamentPlayers[player.id].country;
+        const globalPlayer = tournamentPlayersMap[player.id];
         const result: StatsPlayerResult = {
           year,
           stage: stage.type,
@@ -75,10 +77,14 @@ export function calculateStats(tournaments: Tournament[]): Stats {
           country,
         };
 
-        tournamentPlayersMap[player.id].results.push(result);
+        globalPlayer.results.push(result);
 
         if (country) {
-          upsertCountryYear(country, year).results.push(result);
+          upsertCountryYear(country, year).results.push({
+            ...result,
+            id: globalPlayer.id,
+            name: globalPlayer.name,
+          });
         }
       }
     }
@@ -170,7 +176,6 @@ export function calculateStats(tournaments: Tournament[]): Stats {
 
       stats.totalWon += yearStats.totalWon;
       stats.totalGames += yearStats.totalGames;
-      stats.totalPlayers += yearStats.results.length;
       stats.bestPlace = Math.min(stats.bestPlace, yearStats.bestPlace);
     }
   }
@@ -200,7 +205,7 @@ export function calculateStats(tournaments: Tournament[]): Stats {
       id,
       medals: [[], [], []],
       countries: new Set(),
-      name: typeof player === 'string' ? undefined : player.name,
+      name: typeof player === 'string' ? id : player.name,
       years: [],
       results: [],
       score: 0,
@@ -216,7 +221,6 @@ export function calculateStats(tournaments: Tournament[]): Stats {
       medals: [[], [], []],
       totalGames: 0,
       totalWon: 0,
-      totalPlayers: 0,
       bestPlace: Infinity,
       score: 0,
       years: {},
@@ -228,7 +232,7 @@ export function calculateStats(tournaments: Tournament[]): Stats {
 
     return (stats.years[year] ||= {
       year,
-      bestPlace: 0,
+      bestPlace: Infinity,
       totalGames: 0,
       totalWon: 0,
       results: [],

@@ -17,11 +17,7 @@ export async function getAvailableTournaments() {
   return tournaments.map((t) => t.year);
 }
 
-export async function getStats() {
-  return calculateStats(tournaments);
-}
-
-export async function getPlayersStats() {
+export async function getAllPlayersStats() {
   return stats.players;
 }
 
@@ -40,6 +36,10 @@ export async function getPlayerOpponentsStats(playerId: string) {
   }
 
   return opponents;
+}
+
+export async function getAllCountriesStats() {
+  return stats.countries;
 }
 
 export async function getCountryStats(country: string) {

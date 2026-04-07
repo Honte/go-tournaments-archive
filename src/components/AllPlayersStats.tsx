@@ -1,49 +1,40 @@
 'use client';
 
 import EVENT_CONFIG from '@event/config';
-import type { StatsPlayer } from '@/schema/data';
+import type { StatsPlayer, TableStats } from '@/schema/data';
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
+import { sortTableStats } from '@/libs/sort';
 import { toPercentage } from '@/libs/table';
-import { Country } from '@/components/Country';
 import { StatsTable } from '@/components/table/StatsTable';
+import { CountryLink } from '@/components/ui/CountryLink';
 import { PlayerCell } from '@/components/ui/PlayerCell';
 
-type PlayerStatsProps = {
+type AllPlayersStatsProps = {
   players: Record<string, StatsPlayer>;
   translations: Translations;
 };
 
-type PlayerRow = {
+type PlayerRow = TableStats & {
   id: string;
   name: string;
   firstName: string;
   lastName: string;
   countries: Set<string>;
-  bestPlace: number;
-  gold: number;
-  silver: number;
-  bronze: number;
-  attended: number;
-  games: number;
-  won: number;
-  lost: number;
-  wonPercent: number;
-  score: number;
 };
 
-export function PlayerStats({ players, translations }: PlayerStatsProps) {
+export function AllPlayersStats({ players, translations }: AllPlayersStatsProps) {
   const t = getTranslator(translations);
 
   const data = useMemo(
     () =>
       Object.values(players)
         .filter((p) => p.id !== 'BYE')
-        .map((p) => {
-          const { id, name, medals, years, score, totalGames, totalWon, bestPlace, countries } = p;
+        .map<PlayerRow>((p) => {
+          const { id, name, medals, years, totalGames, totalWon, bestPlace, countries } = p;
           const [firstName, lastName] = (name ?? '').split(' ');
           const [gold, silver, bronze] = medals;
 
@@ -54,7 +45,6 @@ export function PlayerStats({ players, translations }: PlayerStatsProps) {
             lastName,
             countries,
             bestPlace,
-            score,
             gold: gold.length,
             silver: silver.length,
             bronze: bronze.length,
@@ -63,9 +53,9 @@ export function PlayerStats({ players, translations }: PlayerStatsProps) {
             won: totalWon,
             lost: totalGames - totalWon,
             wonPercent: totalWon / totalGames,
-          } as PlayerRow;
+          };
         })
-        .sort(sortPlayers),
+        .sort(sortTableStats),
     [players]
   );
 
@@ -97,7 +87,7 @@ export function PlayerStats({ players, translations }: PlayerStatsProps) {
             cell: (info) =>
               jsxJoin(
                 Array.from(info.row.original.countries).map((code) => (
-                  <Country key={code} translations={translations} code={code} />
+                  <CountryLink key={code} translations={translations} code={code} />
                 )),
                 ', '
               ),
@@ -145,24 +135,4 @@ export function PlayerStats({ players, translations }: PlayerStatsProps) {
   );
 
   return <StatsTable columns={columns} data={data} />;
-}
-
-function sortPlayers(a: PlayerRow, b: PlayerRow) {
-  if (a.score === b.score) {
-    if (a.bestPlace === b.bestPlace) {
-      if (a.attended === b.attended) {
-        if (a.won === b.won) {
-          return b.games - a.games;
-        }
-
-        return b.won - a.won;
-      }
-
-      return b.attended - a.attended;
-    }
-
-    return a.bestPlace - b.bestPlace;
-  }
-
-  return b.score - a.score;
 }

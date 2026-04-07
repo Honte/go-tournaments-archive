@@ -1,20 +1,18 @@
 {
   "site": {
-    "name": "Polish Go Championships Archive",
-    "description": "Archive of all Polish Go Championships tournaments",
-    "yearDescription": "Results of PGC %{0}",
+    "name": "Tournament Archive",
+    "description": "Archive of all tournaments",
+    "yearDescription": "Results of %{0}",
     "allTimeStatsTitle": "All-time Table",
-    "allTimeStatsDescription": "All-time statistics of all Polish Go Championships participants",
-    "playerStatsTitle": "Player %{0} stats",
-    "playerStatsDescription": "Participation statistics of %{0} in all Polish Go Championships events",
+    "allTimeStatsDescription": "All-time statistics of all participants",
+    "allTimeStatsByCountryTitle": "All-time Table by Country",
+    "allTimeStatsByCountryDescription": "All-time statistics of all countries taking part in the event",
+    "playerStatsTitle": "%{0} - Stats",
+    "playerStatsDescription": "Participation statistics of %{0} in all tournaments",
+    "countryStatsTitle": "%{0} - Stats",
+    "countryStatsDescription": "All-time statistics of %{0} in all tournaments",
     "lastUpdated": "Last updated: %{0}",
     "github": "Contribute on GitHub: %{0}"
-  },
-  "currentEdition": {
-    "website": "https://mp.go.art.pl/2025/en",
-    "title": "Current Polish Go Championship!",
-    "subtitle": "Gdańsk, 8 - 11 November 2025",
-    "tooltip": "Go to championship's website"
   },
   "navigation": {
     "home": {
@@ -29,7 +27,7 @@
     "start": "Start",
     "end": "End",
     "website": "Website",
-    "goToWebsite": "Go to PGC %{0} website",
+    "goToWebsite": "Go to event website",
     "referee": "Referee",
     "awarded": "Medalists"
   },
@@ -67,6 +65,7 @@
   },
   "table": {
     "year": "Year",
+    "code": "Code",
     "stage": "Stage",
     "place": "Place",
     "country": "Country",
@@ -79,6 +78,9 @@
     "round": "Round %{0}",
     "playoffs": "Play-Off",
     "events": "Events",
+    "attended": "Participated",
+    "player": "Player",
+    "players": "Players",
     "best": "Best",
     "bestPlace": "Best place",
     "games": "Games played",
@@ -109,8 +111,10 @@
     "bronze": "Bronze"
   },
   "stats": {
-    "full": "See full stats",
+    "goToAllPlayersStats": "See full stats",
+    "goToAllCountriesStats": "See full stats by country",
     "events": "Participation summary",
+    "players": "Players summary",
     "opponents": "Opponents summary",
     "medalists": "Medalists",
     "countries": "Medal standings",
@@ -128,8 +132,7 @@
       "relays": "Relays on OGS",
       "streams": "Video streamed",
       "analysis": "Analyzed by AI"
-    },
-    "allTimeHeader": "All-Time Table"
+    }
   },
   "country": {
     "AD": "Andorra",

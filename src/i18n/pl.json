@@ -1,20 +1,18 @@
 {
   "site": {
-    "name": "Archiwum Mistrzostw Polski w\u00A0Go",
-    "description": "Archiwum wyników wszystkich edycji mistrzostw Polski w Go",
-    "yearDescription": "Wyniki mistrzostw z roku %{0}",
+    "name": "Archiwum Turniejów Go",
+    "description": "Archiwum wyników wszystkich turniejów w Go",
+    "yearDescription": "Wyniki turniejów z roku %{0}",
     "allTimeStatsTitle": "Lista wszech czasów",
-    "allTimeStatsDescription": "Lista wszech czasów wszystkich uczestników mistrzostw Polski w Go",
-    "playerStatsTitle": "Wyniki gracza %{0}",
-    "playerStatsDescription": "Statystyki gracza %{0} we wszystkich rozegranych edycjach mistrzostw Polski w Go",
+    "allTimeStatsDescription": "Lista wszech czasów wszystkich uczestników turniejów w Go",
+    "allTimeStatsByCountryTitle": "Lista wszech czasów krajów",
+    "allTimeStatsByCountryDescription": "Lista wszech czasów osiągnieć wszystkich krajów w turniejach Go",
+    "playerStatsTitle": "%{0} - Statystyki",
+    "playerStatsDescription": "Statystyki gracza %{0} we wszystkich rozegranych turniejach w Go",
+    "countryStatsTitle": "%{0} - Statystyki",
+    "countryStatsDescription": "Statystyki kraju %{0} we wszystkich turniejach Go",
     "lastUpdated": "Ostatnia aktualizacja: %{0}",
     "github": "Zobacz na GitHub: %{0}"
-  },
-  "currentEdition": {
-    "website": "https://mp.go.art.pl/2025/pl",
-    "title": "Bieżące Mistrzostwa Polski w Go!",
-    "subtitle": "Gdańsk, 8 - 11 listopada 2025",
-    "tooltip": "Przejdź na stronę Mistrzostw"
   },
   "navigation": {
     "home": {
@@ -29,7 +27,7 @@
     "start": "Start",
     "end": "Koniec",
     "website": "Strona WWW",
-    "goToWebsite": "Przejdź na stronę MP %{0}",
+    "goToWebsite": "Przejdź na stronę wydarzenia",
     "referee": "Sędzia",
     "awarded": "Medaliści"
   },
@@ -67,6 +65,7 @@
   },
   "table": {
     "year": "Rok",
+    "code": "Kod",
     "stage": "Etap",
     "place": "Miejsce",
     "country": "Kraj",
@@ -79,6 +78,9 @@
     "round": "Runda %{0}",
     "playoffs": "Play-Off",
     "events": "Uczestnictwa",
+    "attended": "Udziałów",
+    "player": "Gracz",
+    "players": "Graczy",
     "best": "Najwyżej",
     "bestPlace": "Najwyższe miejsce",
     "games": "Rozegrane gry",
@@ -109,8 +111,10 @@
     "bronze": "Brąz"
   },
   "stats": {
-    "full": "Zobacz pełne statystyki",
+    "goToAllPlayersStats": "Zobacz pełne statystyki",
+    "goToAllCountriesStats": "Zobacz pełne statystyki krajów",
     "events": "Podsumowanie udziałów",
+    "players": "Podsumowanie graczy",
     "opponents": "Podsumowanie przeciwników",
     "medalists": "Medaliści",
     "countries": "Klasyfikacja medalowa",
@@ -128,8 +132,7 @@
       "relays": "Relacji na OGS",
       "streams": "Transmisji wideo",
       "analysis": "Analiz AI"
-    },
-    "allTimeHeader": "Lista Wszech Czasów"
+    }
   },
   "country": {
     "AD": "Andora",

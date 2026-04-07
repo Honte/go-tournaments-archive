@@ -5,7 +5,7 @@ import type { Breaker, Game, LeagueStage, Player } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { Breaker as BreakerComponent } from '@/components/Breaker';
-import { Country } from '@/components/Country';
+import { CountryLink } from '@/components/ui/CountryLink';
 import { GameCell } from '@/components/GameCell';
 import { GoResultsTable } from '@/components/table/GoResultsTable';
 import { PlayerLink } from '@/components/ui/PlayerLink';
@@ -73,7 +73,7 @@ export function TableLeague({ stage, players, games, translations }: TableLeague
                 <td className="p-1">{player.rank}</td>
                 {EVENT_CONFIG.showCountry && (
                   <td className="p-1">
-                    <Country code={player.country} translations={translations} />
+                    <CountryLink code={player.country} translations={translations} />
                   </td>
                 )}
                 {result.games.map((game, index) =>

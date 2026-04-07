@@ -1,57 +1,64 @@
 'use client';
 
-import EVENT_CONFIG from '@event/config';
-import type { Stage, StatsPlayer } from '@/schema/data';
+import type { StatsCountry } from '@/schema/data';
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
-import { getStageNameFromType } from '@/libs/stage';
 import { toPercentage } from '@/libs/table';
-import { CountryLink } from '@/components/ui/CountryLink';
 import { YearLink } from '@/components/YearLink';
 import { StatsTable } from '@/components/table/StatsTable';
 import { H2 } from '@/components/ui/H2';
+import { PlayerLink } from '@/components/ui/PlayerLink';
 
-type EventsProps = {
-  player: StatsPlayer;
+type CountryEventsProps = {
+  country: StatsCountry;
   translations: Translations;
 };
 
-type EventRow = {
+type CountryEventRow = {
   year: number;
-  stage: Stage['type'];
+  id: string;
+  name: string;
   rank: string;
   place: number;
   games: number;
-  country?: string;
   won: number;
   lost: number;
   wonPercent: number;
 };
 
-export function Events({ player, translations }: EventsProps) {
+export function CountryEvents({ country, translations }: CountryEventsProps) {
   const t = getTranslator(translations);
 
-  const data = useMemo(
-    () =>
-      player.results.toReversed().map((result) => {
-        const {
-          games: { length: games },
-          won,
-        } = result;
+  const data = useMemo(() => {
+    const list: CountryEventRow[] = [];
 
-        return {
-          ...result,
+    for (const year in country.years) {
+      const yearData = country.years[year];
+
+      for (const result of yearData.results) {
+        const games = result.games.length;
+
+        list.push({
+          year: Number(year),
+          id: result.id,
+          name: result.name,
+          rank: result.rank,
+          place: result.place,
           games,
-          lost: games - won,
-          wonPercent: won / games,
-        };
-      }),
-    [player]
-  );
+          won: result.won,
+          lost: games - result.won,
+          wonPercent: result.won / games,
+        });
+      }
+    }
 
-  const columns = useMemo<ColumnDef<EventRow>[]>(
+    return list
+      .sort((a, b) => a.year - b.year);
+  }, [country]);
+
+  const columns = useMemo<ColumnDef<CountryEventRow>[]>(
     () =>
       (
         [
@@ -61,14 +68,13 @@ export function Events({ player, translations }: EventsProps) {
             cell: (info) => <YearLink locale={translations.locale} year={info.cell.getValue() as number} />,
           },
           {
-            accessorKey: 'stage',
-            header: t('table.stage'),
-            cell: (info) => getStageNameFromType(info.row.original.stage, translations),
-          },
-          EVENT_CONFIG.showCountry && {
-            accessorKey: 'country',
-            header: t('table.country'),
-            cell: (info) => <CountryLink code={info.row.original.country} translations={translations} />,
+            accessorKey: 'name',
+            header: t('table.player'),
+            cell: (info) => (
+              <PlayerLink playerId={info.row.original.id} locale={translations.locale} className="block text-left">
+                {info.row.original.name}
+              </PlayerLink>
+            ),
           },
           {
             accessorKey: 'rank',
@@ -95,7 +101,7 @@ export function Events({ player, translations }: EventsProps) {
             header: t('table.wonPercent'),
             cell: toPercentage,
           },
-        ] as ColumnDef<EventRow>[]
+        ] as ColumnDef<CountryEventRow>[]
       ).filter(Boolean),
     [translations, t]
   );

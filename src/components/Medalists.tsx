@@ -2,7 +2,7 @@ import type { StatsPlayer } from '@/schema/data';
 import { FaMedal } from 'react-icons/fa6';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
-import { FullStatsLink } from '@/components/FullStatsLink';
+import { AllPlayersStatsLink } from '@/components/AllPlayersStatsLink';
 import { H1 } from '@/components/ui/H1';
 import { PlayerLink } from '@/components/ui/PlayerLink';
 import { PlayerName } from '@/components/ui/PlayerName';
@@ -49,7 +49,7 @@ export function Medalists({ players, translations }: MedalistsProps) {
         </tbody>
       </table>
 
-      <FullStatsLink translations={translations} />
+      <AllPlayersStatsLink translations={translations} />
     </div>
   );
 }

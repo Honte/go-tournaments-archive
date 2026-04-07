@@ -2,11 +2,11 @@ import Link from 'next/link';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 
-type FullStatsLinkProps = {
+type AllPlayersStatsLinkProps = {
   translations: Translations;
 };
 
-export function FullStatsLink({ translations }: FullStatsLinkProps) {
+export function AllPlayersStatsLink({ translations }: AllPlayersStatsLinkProps) {
   const t = getTranslator(translations);
 
   return (
@@ -16,7 +16,7 @@ export function FullStatsLink({ translations }: FullStatsLinkProps) {
         className="underline underline-offset-2 text-event-primary cursor-pointer hover:text-event-hover"
         prefetch={false}
       >
-        {t('stats.full')}
+        {t('stats.goToAllPlayersStats')}
       </Link>
     </p>
   );

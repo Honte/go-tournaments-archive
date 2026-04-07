@@ -165,6 +165,7 @@ export type StatsMedals = [gold: string[], silver: string[], bronze: string[]];
 
 export type StatsPlayerGame = {
   opponent: string;
+  opponentCountry?: string;
   won: boolean;
   result: string;
   game: string;
@@ -184,7 +185,7 @@ export type StatsPlayerResult = {
 
 export type StatsPlayer = {
   id: string;
-  name?: string;
+  name: string;
   countries: Set<string>;
   medals: StatsMedals;
   years: number[];
@@ -200,7 +201,7 @@ export type StatsCountryResult = {
   bestPlace: number;
   totalWon: number;
   totalGames: number;
-  results: StatsPlayerResult[];
+  results: (StatsPlayerResult & { id: string; name: string })[];
 };
 
 export type StatsCountry = {
@@ -209,7 +210,6 @@ export type StatsCountry = {
   score: number;
   years: Record<number, StatsCountryResult>;
   bestPlace: number;
-  totalPlayers: number;
   totalGames: number;
   totalWon: number;
 };
@@ -232,4 +232,16 @@ export type StatsSummary = {
   analysis: number;
   players: number;
   black: number;
+};
+
+export type TableStats = {
+  bestPlace: number;
+  attended: number;
+  gold: number;
+  silver: number;
+  bronze: number;
+  games: number;
+  won: number;
+  lost: number;
+  wonPercent: number;
 };

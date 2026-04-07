@@ -1,5 +1,5 @@
 import EVENT_CONFIG from '@event/config';
-import { getPlayerOpponentsStats, getPlayerStats, getStats } from '@/data';
+import { getAllPlayersStats, getPlayerOpponentsStats, getPlayerStats } from '@/data';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import type { Locale } from '@/i18n/consts';
@@ -64,9 +64,9 @@ export default async function PlayerStatsPage({ params }: PageProps) {
 }
 
 export async function generateStaticParams() {
-  const stats = await getStats();
+  const players = await getAllPlayersStats();
 
-  return Object.keys(stats.players)
+  return Object.keys(players)
     .filter((key) => key !== 'BYE')
     .map((slug) =>
       SUPPORTED_LOCALES.map((locale) => ({
