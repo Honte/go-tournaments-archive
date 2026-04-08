@@ -5,9 +5,11 @@ import { notFound } from 'next/navigation';
 import type { Locale } from '@/i18n/consts';
 import { SUPPORTED_LOCALES, loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
+import { jsxJoin } from '@/libs/join';
 import { Achievements } from '@/components/stats/Achievements';
 import { Events } from '@/components/stats/Events';
 import { Opponents } from '@/components/stats/Opponents';
+import { CountryLink } from '@/components/ui/CountryLink';
 
 type PageProps = {
   params: Promise<{
@@ -46,10 +48,12 @@ export default async function PlayerStatsPage({ params }: PageProps) {
       <h1 className="text-4xl text-center font-bold">{player.name}</h1>
       {EVENT_CONFIG.showCountry && (
         <h2 className="text-xl text-center font-bold">
-          {Array.from(player.countries)
-            .map((country) => t(`country.${country}`))
-            .filter(Boolean)
-            .join(', ')}
+          {jsxJoin(
+            Array.from(player.countries)
+              .filter(Boolean)
+              .map((country) => <CountryLink key={country} translations={translations} code={country} full={true} />),
+            ', '
+          )}
         </h2>
       )}
 
