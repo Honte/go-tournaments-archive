@@ -22,6 +22,8 @@ export function StageFinal({ stage, players, translations }: StageFinalProps) {
   const prev = includePrevious
     ? `(${winner.wins - (winner.prevScore ?? 0)}:${loser.wins - (loser.prevScore ?? 0)})`
     : '';
+  const winnerPlayer = players[winner.id];
+  const loserPlayer = players[loser.id];
 
   return (
     <>
@@ -30,14 +32,14 @@ export function StageFinal({ stage, players, translations }: StageFinalProps) {
       </p>
       <div className="bg-gray-200 p-2 my-2 md:p-3 text-lg flex items-center text-center gap-2">
         <strong>
-          <PlayerLink playerId={players[winner.id].id} locale={translations.locale}>
-            <PlayerName player={players[winner.id]} />
+          <PlayerLink playerId={winnerPlayer.id} locale={translations.locale}>
+            <PlayerName player={winnerPlayer} />
           </PlayerLink>
         </strong>
         <span>&ndash;</span>
         <span>
-          <PlayerLink playerId={players[loser.id].id} locale={translations.locale}>
-            <PlayerName player={players[winner.id]} />
+          <PlayerLink playerId={loserPlayer.id} locale={translations.locale}>
+            <PlayerName player={loserPlayer} />
           </PlayerLink>
         </span>
         <strong>{result}</strong>
