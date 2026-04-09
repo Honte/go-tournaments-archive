@@ -53,7 +53,7 @@ export function AllCountriesStats({ countries, translations }: AllCountriesStats
           };
         })
         .sort(sortTableStats),
-    [countries]
+    [countries, t]
   );
 
   const columns = useMemo<ColumnDef<CountryRow>[]>(

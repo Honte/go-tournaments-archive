@@ -2,9 +2,16 @@
 
 import type { Game, Player } from '@/schema/data';
 import { autoUpdate, useFloating } from '@floating-ui/react';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import type { Translations } from '@/i18n/consts';
 import { Game as GameComponent } from '@/components/Game';
+
+
+
+
+
+
+
 
 export const SHOW_POPOVER_EVENT = 'show-game-popover';
 
@@ -73,6 +80,7 @@ export function GamePopover({ translations }: GamePopoverProps) {
   return (
     <>
       {state && (
+        // eslint-disable-next-line react-hooks/refs -- https://github.com/floating-ui/floating-ui/discussions/3405
         <div ref={refs.setFloating} style={floatingStyles}>
           <div
             role="tooltip"

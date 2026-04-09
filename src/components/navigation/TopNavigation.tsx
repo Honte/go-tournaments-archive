@@ -39,6 +39,7 @@ export function TopNavigation({ years, locale, current }: TopNavigationProps) {
 
   const onWheel = useMemo(
     () =>
+      // eslint-disable-next-line react-hooks/refs
       throttle((event: WheelEvent) => {
         if (navRef.current) {
           navRef.current.move(event.deltaX);

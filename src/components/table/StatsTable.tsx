@@ -19,6 +19,7 @@ type StatsTableProps<T> = {
 export function StatsTable<T>({ data, columns }: StatsTableProps<T>) {
   const [sorting, setSorting] = useState<SortingState>([]);
 
+  // eslint-disable-next-line react-hooks/incompatible-library
   const table = useReactTable({
     data,
     columns,

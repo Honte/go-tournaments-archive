@@ -63,8 +63,13 @@ function getDateRange(dates: TournamentDateSpan[]) {
   let end = dates[0].end;
 
   for (const { start: s, end: e } of dates) {
-    if (new Date(s) < new Date(start)) start = s;
-    if (new Date(e) > new Date(end)) end = e;
+    if (new Date(s) < new Date(start)) {
+      start = s;
+    }
+
+    if (new Date(e) > new Date(end)) {
+      end = e;
+    }
   }
 
   return { start, end };

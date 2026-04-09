@@ -47,9 +47,15 @@ export function CountryPlayers({ country, translations }: CountryPlayerProps) {
 
         player.attended++;
         player.bestPlace = Math.min(player.bestPlace, result.place);
-        if (result.place === 1) player.gold++;
-        if (result.place === 2) player.silver++;
-        if (result.place === 3) player.bronze++;
+        if (result.place === 1) {
+          player.gold++;
+        }
+        if (result.place === 2) {
+          player.silver++;
+        }
+        if (result.place === 3) {
+          player.bronze++;
+        }
         player.games += result.games.length;
         player.won += result.won;
       }

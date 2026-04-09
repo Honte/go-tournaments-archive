@@ -62,7 +62,7 @@ export function CountryOpponents({ country, translations }: CountryOpponentsProp
     }
 
     return list.sort((a, b) => a.name.localeCompare(b.name));
-  }, [country]);
+  }, [country.years, t]);
 
   const columns = useMemo<ColumnDef<CountryOpponentRow>[]>(
     () =>

@@ -11,7 +11,7 @@
     "build:pgc": "cross-env EVENT=pgc next build",
     "build:wagc": "cross-env EVENT=wagc next build",
     "start": "npx serve@latest out",
-    "lint": "next lint",
+    "lint": "eslint .",
     "tsc": "tsc --noEmit",
     "extract:mp-db": "tsx tools/extract.ts",
     "build:templates": "tsx tools/templates.ts",
