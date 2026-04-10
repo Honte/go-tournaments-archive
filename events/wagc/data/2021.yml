@@ -7,9 +7,18 @@ stages:
       - wins
       - sos
       - sodos
+      - place
     breakers:
+      - place
       - score
       - wins
       - sos
       - sodos
     findSharedPlaces: true
+    customBreakers:
+      place:
+        order: 'asc'
+        hidden: true
+        translations:
+          en: Place
+          pl: Miejsce

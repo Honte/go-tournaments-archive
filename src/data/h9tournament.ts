@@ -3,7 +3,6 @@ import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { Game, GamePlayer, LeagueStage, Player, TableResult, TournamentDetails } from '@/schema/data';
 import { InputTournamentStage } from '@/schema/input';
-import { isScoringBreaker } from '@/libs/breakers';
 import { parseDates } from '@/libs/dates';
 import { H9Game, parseH9 } from '@/libs/h9';
 import { getGameId } from '@/data/games';
@@ -25,7 +24,7 @@ export async function loadH9Tournament({
   gamesMap: Record<string, Game>;
   tournamentDetails: TournamentDetails;
 }): Promise<LeagueStage> {
-  const { file, breakers, scoringColumns, rules, findSharedPlaces = false, sharedPlaces } = stage;
+  const { file, breakers, scoringColumns, rules, findSharedPlaces = false, sharedPlaces, customBreakers } = stage;
 
   const content = await readFile(join(EVENT_DATA_DIR, file), 'utf-8');
   const tournament = parseH9(content);
@@ -50,14 +49,16 @@ export async function loadH9Tournament({
       id: newPlayer.id,
       place: player.place,
       index: table.length + 1,
-      rank: getRankValue(player.rank),
-      wins: 0,
-      sos: 0,
-      sodos: 0,
-      sosos: 0,
-      score: 0,
-      mms: 0,
-      starting: 0,
+      breakers: {
+        rank: getRankValue(player.rank),
+        wins: 0,
+        sos: 0,
+        sodos: 0,
+        sosos: 0,
+        score: 0,
+        mms: 0,
+        starting: 0,
+      },
       won: [],
       lost: [],
       games: [],
@@ -68,7 +69,7 @@ export async function loadH9Tournament({
     for (let i = 0; i < player.scores.length; i++) {
       const breaker = scoringColumns?.[i];
 
-      if (!isScoringBreaker(breaker)) {
+      if (!breaker) {
         continue;
       }
 
@@ -78,7 +79,7 @@ export async function loadH9Tournament({
         continue;
       }
 
-      tableEntry[breaker] = value;
+      tableEntry.breakers[breaker] = value;
     }
   }
 
@@ -144,20 +145,16 @@ export async function loadH9Tournament({
     for (let i = 1; i < table.length; i++) {
       const prev = table[i - 1];
       const current = table[i];
-      let exAequo = true;
+      let isShared = true;
 
       for (const breaker of breakers) {
-        if (!isScoringBreaker(breaker)) {
-          continue;
-        }
-
-        if (current[breaker] !== prev[breaker]) {
-          exAequo = false;
+        if (current.breakers[breaker] !== prev.breakers[breaker]) {
+          isShared = false;
           break;
         }
       }
 
-      current.place = exAequo ? prev.place : current.index;
+      current.place = isShared ? prev.place : current.index;
     }
   } else if (sharedPlaces?.length) {
     const map = new Map<number, number>();
@@ -196,6 +193,7 @@ export async function loadH9Tournament({
         ? `https://europeangodatabase.eu/EGD/Tournament_Card.php?&key=${tournament.id}`
         : undefined,
     breakers,
+    customBreakers,
     rules,
     time: stage.time ?? (tournament.time ? `AT ${tournament.time} min` : undefined),
     komi: stage.komi ?? tournament.komi,

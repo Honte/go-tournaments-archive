@@ -1,4 +1,4 @@
-import type { Game, Player, ScoringBreaker, TableResult } from '@/schema/data';
+import type { Game, Player, TableResult } from '@/schema/data';
 import { Breaker } from '@/schema/data';
 import { getRankValue } from '@/data/rank';
 
@@ -18,19 +18,19 @@ export function createTable({
   const map: Record<string, TableResult> = {
     BYE: {
       id: 'BYE',
-      place: 0,
-      score: 0,
       index: 0,
-      wins: 0,
-      sos: 0,
-      sodos: 0,
-      sosos: 0,
-      mms: 0,
-      starting: 0,
+      place: 0,
+      breakers: {
+        wins: 0,
+        sos: 0,
+        sodos: 0,
+        sosos: 0,
+        starting: 0,
+        rank: 0,
+      },
       games: new Array(rounds.length).fill(null),
       won: [],
       lost: [],
-      rank: 0,
     },
   };
   const players: TableResult[] = [];
@@ -40,18 +40,20 @@ export function createTable({
     const player: TableResult = {
       id,
       place: 1,
-      score: 0,
       index: 0,
-      wins: 0,
-      sos: 0,
-      sodos: 0,
-      sosos: 0,
-      mms: 0,
-      starting: position++,
+      breakers: {
+        score: 0,
+        wins: 0,
+        sos: 0,
+        sodos: 0,
+        sosos: 0,
+        mms: 0,
+        rank: getRankValue(playersMap[id].rank),
+        starting: position++,
+      },
       games: new Array(rounds.length).fill(null),
       won: [],
       lost: [],
-      rank: getRankValue(playersMap[id].rank),
     };
 
     map[id] = player;
@@ -69,7 +71,7 @@ export function createTable({
       const winner = a.won ? a.id : b.id;
       const loser = a.won ? b.id : a.id;
 
-      map[winner].wins += 1;
+      map[winner].breakers.wins += 1;
       map[winner].won.push(loser);
       map[loser].lost.push(winner);
       map[winner].games[index] = {
@@ -94,12 +96,12 @@ export function createTable({
     const player = map[id];
 
     for (const won of player.won) {
-      player.sos += map[won].wins;
-      player.sodos += map[won].wins;
+      player.breakers.sos += map[won].breakers.wins;
+      player.breakers.sodos += map[won].breakers.wins;
     }
 
     for (const lost of player.lost) {
-      player.sos += map[lost].wins;
+      player.breakers.sos += map[lost].breakers.wins;
     }
   }
 
@@ -108,11 +110,11 @@ export function createTable({
     const player = map[id];
 
     for (const won of player.won) {
-      player.sosos += map[won].sos;
+      player.breakers.sosos += map[won].breakers.sos;
     }
 
     for (const lost of player.lost) {
-      player.sosos += map[lost].sos;
+      player.breakers.sosos += map[lost].breakers.sos;
     }
   }
 
@@ -160,7 +162,7 @@ function sortByBreakers(players: TableResult[], breakers: Breaker[]): TableResul
   const final = breakers.reduce(
     (groups, breaker) => {
       const nextGroups: TableResult[][] = [];
-      const picker = (p: TableResult) => p[breaker as ScoringBreaker];
+      const picker = (p: TableResult) => p.breakers[breaker];
 
       for (const group of groups) {
         if (group.length === 1) {

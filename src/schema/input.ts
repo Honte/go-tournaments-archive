@@ -1,4 +1,4 @@
-import { Breaker } from '@/schema/data';
+import { Breaker, type CustomBreaker } from '@/schema/data';
 
 export type InputBaseStage = {
   name?: Record<string, string>;
@@ -40,10 +40,13 @@ export type InputRoundRobinTableStage = InputBaseStage & {
 export type InputTournamentStage = InputBaseStage & {
   type: 'tournament';
   file: string;
-  sgfsDir?: string;
-  scoringColumns?: (Breaker | null)[];
+  dir?: string;
+  scoringColumns?: (Breaker | string | null)[];
   findSharedPlaces?: boolean;
   sharedPlaces?: string[];
+  games?: string[];
+  unmatchedSgfs?: string[];
+  customBreakers: Record<string, CustomBreaker>;
 };
 
 export type InputStage =

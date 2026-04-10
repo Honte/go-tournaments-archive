@@ -1,3 +1,5 @@
+import type { Locale } from '@/i18n/consts';
+
 export type TournamentDetails = {
   year: number;
   location: string;
@@ -35,10 +37,15 @@ export enum Breaker {
   SCORE = 'score',
 }
 
-export type ScoringBreaker =
+export type CustomBreaker = {
+  order?: 'asc' | 'desc'; // by default descending
+  hidden?: boolean; // by default visible
+  translations?: Record<Locale, string>;
+  description?: Record<Locale, string>;
+};
+
+export type MandatoryBreakers =
   | Breaker.WINS
-  | Breaker.SCORE
-  | Breaker.MMS
   | Breaker.SOS
   | Breaker.SODOS
   | Breaker.SOSOS
@@ -62,7 +69,9 @@ export type LeagueStage = BaseStage & {
   rounds: string[][];
   table: TableResult[];
   breakers?: Breaker[];
+  customBreakers?: Record<string, CustomBreaker>;
   order?: string[];
+  games?: string[];
 };
 
 export type LadderTableStage = BaseStage & {
@@ -105,13 +114,14 @@ export type RoundRobinTableStage = BaseStage & {
   }[];
 };
 
-export type TableResult = Record<ScoringBreaker, number> & {
+export type TableResult = {
   id: string;
   place: number;
   index: number;
   games: (IndexedTablePlayerGame | null)[];
   won: string[];
   lost: string[];
+  breakers: Record<MandatoryBreakers, number> & Record<string, number>;
 };
 
 export type TablePlayerGame = {

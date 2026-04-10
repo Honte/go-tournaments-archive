@@ -1,13 +1,13 @@
 'use client';
 
 import EVENT_CONFIG from '@event/config';
-import type { Breaker, Game, LeagueStage, Player } from '@/schema/data';
+import type { Game, LeagueStage, Player } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { Breaker as BreakerComponent } from '@/components/Breaker';
-import { CountryLink } from '@/components/ui/CountryLink';
 import { GameCell } from '@/components/GameCell';
 import { GoResultsTable } from '@/components/table/GoResultsTable';
+import { CountryLink } from '@/components/ui/CountryLink';
 import { PlayerLink } from '@/components/ui/PlayerLink';
 
 type TableLeagueProps = {
@@ -17,19 +17,12 @@ type TableLeagueProps = {
   translations: Translations;
 };
 
-type NumericBreaker =
-  | Breaker.WINS
-  | Breaker.SOS
-  | Breaker.SODOS
-  | Breaker.SOSOS
-  | Breaker.MMS
-  | Breaker.STARTING_POSITION
-  | Breaker.SCORE;
-
 export function TableLeague({ stage, players, games, translations }: TableLeagueProps) {
   const t = getTranslator(translations);
-  const { breakers, table, rounds } = stage;
-  const visibleBreakers = (breakers ?? []).filter((b): b is NumericBreaker => b !== 'direct' && b !== 'rank');
+  const { breakers, table, rounds, customBreakers } = stage;
+  const visibleBreakers = (breakers ?? []).filter(
+    (b) => b !== 'direct' && b !== 'rank' && !customBreakers?.[b]?.hidden
+  );
   const hasSharedPlaces = table.some((p) => p.index !== p.place);
 
   return (
@@ -52,7 +45,7 @@ export function TableLeague({ stage, players, games, translations }: TableLeague
             ))}
             {visibleBreakers.map((breaker, index) => (
               <th className="p-1" key={index}>
-                <BreakerComponent translations={translations} breaker={breaker} />
+                <BreakerComponent translations={translations} breaker={breaker} customBreakers={customBreakers} />
               </th>
             ))}
           </tr>
@@ -85,7 +78,7 @@ export function TableLeague({ stage, players, games, translations }: TableLeague
                 )}
                 {visibleBreakers.map((breaker) => (
                   <td className="p-1" key={breaker}>
-                    {result[breaker]}
+                    {result.breakers[breaker]}
                   </td>
                 ))}
               </tr>
