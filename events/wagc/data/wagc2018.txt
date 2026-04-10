@@ -18,7 +18,7 @@
  6 Kuronen Juri               6d FI  eGo   6    34   299  31+     10-     42+     9-      41+     26+     16+     11+      |15386382
  7 Mitic Dusan                7d RS  NiSt  6    32   267  19-     61+     53+     15+     4-      44+     17+     23+      |10649507
  8 Florencia Jose             5d MX  XXXX  6    32   257  11-     26-     45+     47+     52+     33+     20+     18+      |17686746
- 9 Kwa Jie-Hui                6d SG  XXXX  5    44   305  28+     42+     3-      6+      12+     14+     1-      2-       |15025351
+ 9 Kwa Jie_Hui                6d SG  XXXX  5    44   305  28+     42+     3-      6+      12+     14+     1-      2-       |15025351
 10 Teuber Benjamin            6d DE  HH    5    40   289  15+     6+      30+     1-      14-     23-     38+     24+      |10437174
 11 Mero Csaba                 6d HU  BPMG  5    40   280  8+      34+     56+     3-      19+     13+     4-      6-       |10225875
 12 Surin Dmitrij              6d RU  78SP  5    39   312  26+     5-      23+     24+     9-      20+     14+     3-       |10825254
@@ -47,7 +47,7 @@
 35 Hertz Jeremie              2k LU  Lux   4    30   207  51-     22-     40+     37-     58+     39+     50+     21-      |14249851
 36 Shimada-Ramos Thiago       6d BR  XXXX  4    29   249  4-      32-     43-     45+     54+     31-     48+     47+      |15937152
 37 Tang Chan-Fai              4d MO  XXXX  4    28   258  14-     15-     29-     35+     61+     56+     32-     45+      |18486831
-38 Suponeu Aliaksandr         2d BY  XXXX  4    27   249  0+      44+     25-     33-     51+     50+     10-     22-      |12349205
+38 Suponev Alexandr           2d BY  XXXX  4    27   249  0+      44+     25-     33-     51+     50+     10-     22-      |12349205
 39 Guner Hakki_Burak          1d TR  Ank   4    26   214  61-     40+     17-     21-     59+     35-     58+     51+      |16733365
 40 Connell Andre              3d ZA  XXXX  4    22   218  44-     39-     35-     0+      45-     53+     59+     50+      |17362246
 41 Metta Carlo                4d IT  Pisa  3    37   268  17+     47+     2-      27-     6-      42+     19-     29-      |14713996
@@ -55,7 +55,7 @@
 43 Matoh Leopold              5d SI  NoMe  3    33   256  13-     18-     36+     17-     47+     30-     49+     27-      |10398608
 44 Sabirovas Tomas            1k LT  Viln  3    33   225  40+     38-     51+     52+     20-     7-      33-     31-      |16586152
 45 Johansson Kim              2d SE  Vaes  3    32   224  27-     31-     8-      36-     40+     54+     52+     37-      |15313947
-46 Burgos Juan_Felipe         3d CO  XXXX  3    31   256  59+     33+     5-      20-     24-     55+     28-     34-      |16533792
+46 Burgos_Andrade Juan_Felipe 3d CO  XXXX  3    31   256  59+     33+     5-      20-     24-     55+     28-     34-      |16533792
 47 Sigurdarson Olafur         2d IS  Reyk  3    29   246  22+     41-     33-     8-      43-     57+     56+     36-      |16350587
 48 Thai Michael               2k IE  Dubl  3    29   228  30-     59+     15-     31-     53+     22-     36-     57+      |13925142
 49 Skochko Vasyl              4d UA  Kyiv  3    28   239  5-      20-     59+     29-     21-     61+     43-     56+      |10237876

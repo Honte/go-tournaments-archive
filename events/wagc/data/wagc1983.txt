@@ -7,7 +7,7 @@
 2	Miura Hiroshi	7d	JP	xxx	4	4	26+	13+	5+	4+	1-	?
 3	Fumiaki Imamura	7d	JP	xxx	4	4	27+	11+	8+	1-	4+	?
 4	Li Yang	4d	CN	xxx	3	3	28+	10+	7+	2-	3-	?
-5	Kim Chul-choong	6d	KR	xxx	4	4	29+	12+	2-	7+	6+	?
+5	Kim Chul-jung	6d	KR	xxx	4	4	29+	12+	2-	7+	6+	?
 6	Danek Vladimir	4d	CS	xxx	3	3	21+	14+	1-	8+	5-	?
 7	Wiltschek Helmut	5d	AT	xxx	3	3	19+	16+	4-	5-	8+	?
 8	Barty Jim	4d	UK	xxx	2	2	20+	15+	3-	6-	7-	?
@@ -19,10 +19,10 @@
 14	Blair John	1d	NZ	xxx	3	3	30+	6-	19+	9-	15+	13-
 15	Torres Carlos	1d	MX	xxx	3	3	31+	8-	22+	11-	14-	16+
 16	Parimbelli Sergio	3k	IT	xxx	2	2	0+	7-	21+	10-	13-	15-
-17	Tsang Ping-fai	6d	HK	xxx	4	4	1-	25+	10-	21+	20+	18+
+17	Tsang Ping-Fai	6d	HK	xxx	4	4	1-	25+	10-	21+	20+	18+
 18	Hahn Sang-dae	6d	AU	xxx	3	3	12-	29+	11-	22+	19+	17-
 19	Dieterich Martin	4d	DE	xxx	3	3	7-	0+	14-	24+	18-	20+
-20	Alaluf Roberto	3d	AR	xxx	2	2	8-	31+	13-	23+	17-	19-
+20	Alaluf Roberto-Issac	3d	AR	xxx	2	2	8-	31+	13-	23+	17-	19-
 21	Gondor Andras	3d	HU	xxx	3	3	6-	30+	16-	17-	23+	22+
 22	Gostelli Patrice	3d	CH	xxx	2	2	13-	26+	15-	18-	24+	21-
 23	Lindstedt Christer	2d	SE	xxx	2	2	11-	27+	12-	20-	21-	24+

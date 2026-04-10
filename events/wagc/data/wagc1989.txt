@@ -7,7 +7,7 @@
 1	Che Zewu	6d	CN	xxx	7	7	45	12+	6+	15+	2+	3+	5+	4-	10+
 2	Tsai Wenhe	7d	TW	xxx	7	7	40	25+	14+	16+	1-	18+	7+	3+	4+
 3	Hirata Hironori	7d	JP	xxx	6	6	44	19+	9+	5+	4+	1-	15+	2-	7+
-4	Lee Hak-yong	6d	KR	xxx	6	6	43	22+	13+	18+	3-	8+	9+	1+	2-
+4	Yi Hak-yeong	6d	KR	xxx	6	6	43	22+	13+	18+	3-	8+	9+	1+	2-
 5	Hasibeder Helmut	6d	AT	xxx	6	6	38	8+	27+	3-	24+	17+	1-	11+	21+
 6	Heiser Laurent	5d	LU	xxx	6	6	37	26+	1-	11+	20+	7-	24+	14+	8+
 7	Kraszek Janusz	5d	PL	xxx	5	5	38	13-	36+	22+	15+	6+	2-	18+	3-
@@ -25,7 +25,7 @@
 19	Bisca Mihai	4d	RO	xxx	4	4	33	3-	29+	14+	17-	25+	11-	21-	26+
 20	Laatikainen Vesa	4d	FI	xxx	4	4	33	15-	37+	13+	6-	10-	25+	12-	28+
 21	Lee Choon-huat	5d	MY	xxx	4	4	32	33+	18-	17-	31+	22+	16-	19+	5-
-22	Berty Jim	4d	UK	xxx	4	4	32	4-	33+	7-	27+	21-	26+	13-	29+
+22	Barty Jim	4d	UK	xxx	4	4	32	4-	33+	7-	27+	21-	26+	13-	29+
 23	Hong Sunghwa	5d	CA	xxx	4	4	31	10-	35+	8-	30+	14-	31+	24+	12-
 24	Liu Mun-Kang	5d	SG	xxx	4	4	31	34+	16-	30+	5-	28+	6-	23-	27+
 25	Jones Kyle	4d	NZ	xxx	4	4	30	2-	38+	12-	28+	19-	20-	31+	15+
@@ -39,6 +39,6 @@
 33	Amador Alberto	2d	ES	xxx	3	3	22	21-	22-	38+	13-	27-	28-	34+	37+
 34	Rivaud Juan-Jose	2d	MX	xxx	2	2	24	24-	8-	31-	29-	36+	37+	33-	32-
 35	Asato Carlos	2d	AR	xxx	2	2	23	32-	23-	29-	36+	38+	13-	26-	30-
-36	Carillo Juan-Carlos	2d	CL	xxx	2	2	22	11-	7-	26-	35-	34-	38+	37+	18-
+36	Carrillo Juan-Carlos	2d	CL	xxx	2	2	22	11-	7-	26-	35-	34-	38+	37+	18-
 37	Dahl Fredrik	1k	NO	xxx	1	1	20	27-	20-	28-	38+	30-	34-	36-	33-
 38	Gueco Luverne	1d	PH	xxx	0	0	22	18-	25-	33-	37-	35-	36-	32-	31-

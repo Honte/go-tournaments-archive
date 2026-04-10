@@ -4,7 +4,9 @@ stages:
     scoringColumns:
       - wins
       - sos
+      - top10
     breakers:
       - wins
       - sos
+      - top10
     findSharedPlaces: true

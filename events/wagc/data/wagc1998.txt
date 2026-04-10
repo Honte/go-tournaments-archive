@@ -27,7 +27,7 @@
  15 Rittner Egbert          6d DE HH    5 5  35 283  47+  5- 22+ 20+ 19- 36+ 12+  2-  |10237513
  16 Laatikainen Vesa        5d FI HGK   5 5  35 272  23+ 38+  3- 29+  9- 33+  7- 27+  |10201015
  17 Bogaerts Jan            3d BE Brug  5 5  34 264  46+ 12- 35+  1- 30+ 14- 33+ 22+  |10286617
- 18 Jacenko Dmytro          6d UA Kyiv  5 5  32 261  45+  3- 41+ 13- 14- 40+ 28+ 19+  |10286870
+ 18 Yatsenko Dmytro         6d UA Kyiv  5 5  32 261  45+  3- 41+ 13- 14- 40+ 28+ 19+  |10286870
  19 Colmez Pierre           5d FR 75Pa  4 4  41 279   7+ 41+  1- 34+ 15+  4- 11- 18-  |10237018
  20 Quintero Ricardo        5d MX xxx   4 4  36 260  42+  1- 24+ 15- 31+ 10- 34+ 32-  |10898789
  21 Mateescu Robert         6d RO Bucu  4 4  35 269  36+ 32+  5- 23- 28+ 25+  9- 14-  |10486817

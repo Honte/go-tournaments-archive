@@ -30,9 +30,9 @@
 24	Moussa Andre	4d	FR	xxx	1	1	7-	31+	16-	?	?	?
 25	Sandbeck Dix	2d	DK	xxx	0	0	20-	11-	?	?	?	?
 26	Phease Barry	2d	NZ	xxx	0	0	19-	12-	?	?	?	?
-27	Lopez_Herrero Eduardo	5d	AR	xxx	0	0	6-	13-	?	?	?	?
+27	Lopez-Herrero Eduardo	5d	AR	xxx	0	0	6-	13-	?	?	?	?
 28	Chen John	2d	AU	xxx	0	0	14-	17-	?	?	?	?
 29	Olsson Per-inge	2d	SE	xxx	0	0	5-	22-	?	?	?	?
 30	Taniguchi Minoru	4d	BR	xxx	0	0	8-	23-	?	?	?	?
-31	Garcia_dl_Banda Paco	4d	ES	xxx	0	0	15-	24-	?	?	?	?
-32	Tsang Ping-fai	6d	HK	xxx	0	0	21-	18-!	?	?	?	?
+31	Garcia_de_la_Banda Francisco	4d	ES	xxx	0	0	15-	24-	?	?	?	?
+32	Tsang Ping-Fai	6d	HK	xxx	0	0	21-	18-!	?	?	?	?

@@ -17,7 +17,7 @@
 11	Imamura Fumiaki	6d	JP	xxx	1	1	26+	3-	?	?	?
 12	Kippe Horst	4d	DE	xxx	1	1	27+	4-	?	?	?
 13	Schlemper Ronald	4d	NL	xxx	1	1	28+	5-	?	?	?
-14	Kim Kyung-wan	7d	US	xxx	1	1	29+	6-	?	?	?
+14	Kim Kyung	7d	US	xxx	1	1	29+	6-	?	?	?
 15	Selick Paul	5d	CA	xxx	0	0	?	7-	?	?	?
 16	Kang Shin-auk	6d	US	xxx	1	1	30+	8-	?	?	?
 17	Takamori Toshikatsu	5d	BR	xxx	0	0	1-	?	?	?	?

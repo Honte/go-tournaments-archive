@@ -14,11 +14,11 @@
   5 Dickhut Franz-Josef        6d DE Mon   6 42 300   0  22+ 45+  1- 27+ 19+  8+  3- 20+  |10501403
   6 Kikuchi Yasuro             7d JP xxx   6 42 298   0  30+ 35+ 28+  1- 17+  9+  4- 19+  |12850695
   7 Hsiang Thomas              7d US xxx   6 41 297   0  32+ 15+  2- 54+ 29+ 12+  1- 16+  |10849784
-  8 Chan Naisan                5d HK Wam   6 39 292   0  36+ 10+  9+ 11- 26+  5- 50+ 13+  |14349742
+  8 Chan Nai-San               5d HK Wam   6 39 292   0  36+ 10+  9+ 11- 26+  5- 50+ 13+  |14349742
   9 Li Xianyu                  6d CA xxx   6 37 294   0  58+ 29+  8- 31+ 10+  6- 26+ 12+  |13674815
  10 Guo Yiming                 7d AU xxx   6 37 281   0  39+  8- 47+ 35+  9- 14+ 27+ 11+  |12874697
  11 Nechanicky Radek           6d CZ Nym   5 42 295   0  44+ 23+ 25+  8+  3- 28+  2- 10-  |10250196
- 12 Bogackyj Dmytro            6d UA Kyiv  5 42 287   0  16+ 41+  4- 22+ 14+  7- 24+  9-  |10250867
+ 12 Bogatskyy Dmytro           6d UA Kyiv  5 42 287   0  16+ 41+  4- 22+ 14+  7- 24+  9-  |10250867
  13 Spiegl Ralph               5d AT Wien  5 38 274   0  56+  1- 34+ 17- 47+ 21+ 28+  8-  |10333609
  14 Dmitriev Ruslan            5d RU 00oo  5 37 278   0  40+ 31+  3- 16+ 12- 10- 53+ 37+  |10698204
  15 Le Mai-Duy                 5d VN xxx   5 37 276   0  50+  7- 36+ 18+ 21+  4- 16- 48+  |12550153
@@ -66,7 +66,7 @@
  57 Garbarini Cristiano        1d IT Mila  2 27 228   0  29- 20- 64+ 36- 58+ 45- 39- 56-  |12486243
  58 Rittatore Alvaro           4d UY xxx   2 27 220   0   9- 39- 53+ 37- 57- 52- 62+ 55-  |12025310
  59 Aguilar Andres             1k EC xxx   2 25 218   0   0+ 21- 17- 43- 50- 62+ 40- 54-  |13933843
- 60 Margarjan Ashot            1k AM xxx   2 25 211   0  41- 40- 54-  0+ 25- 56+ 42- 52-  |10425492
+ 60 Margaryan Ashot            1k AM xxx   2 25 211   0  41- 40- 54-  0+ 25- 56+ 42- 52-  |10425492
  61 Torres-Miranda Rafael      2k CU xxx   2 24 216   0  51- 63+ 35- 45- 55+ 46- 47- 53-  |10413579
  62 Miyagui-Shimabukuro Pedro  1k PE xxx   2 20 215   0  26- 36- 42- 53- 64+ 59- 58-  0+  |13913845
  63 Teles-Menezes Jose         3k PT Lis   2 18 201   0  46- 61- 52- 49-  0+ 55- 65+ 51-  |10313831

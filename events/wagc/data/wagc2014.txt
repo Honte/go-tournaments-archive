@@ -14,14 +14,14 @@
  1 Chan Yi-Tien               7d TW  xxxx  7    46   315  0    18+     4+      2+      8+      3-      5+      14+     11+      |17225758
  2 Wei Tae-Woong              7d KR  xxxx  7    45   318  0    16+     21+     1-      4+      6+      3+      10+     17+      |17249760
  3 Ruoran Wang                7d CN  xxxx  7    43   318  0    37+     13+     9+      5+      1+      2-      7+      10+      |17237759
- 4 Chan Naisan                6d HK  WCh   6    43   310  0    12+     1-      11+     2-      20+     8+      21+     14+      |14349742
+ 4 Chan Nai-San               6d HK  WCh   6    43   310  0    12+     1-      11+     2-      20+     8+      21+     14+      |14349742
  5 Zhurakovskyi Bohdan        5d UA  Rivn  6    40   299  0    14+     48+     26+     3-      13+     1-      12+     7+       |12374461
  6 Podpera Lukas              6d CZ  APWS  6    38   295  0    38+     31+     23+     7+      2-      10-     9+      15+      |13201914
  7 Surin Dmitrij              6d RU  78SP  5    41   294  0    28+     22+     25+     6-      8+      12+     3-      5-       |10825254
  8 Blomback Fredrik           6d SE  Stoc  5    40   290  0    10+     29+     27+     1-      7-      4-      19+     31+      |13937946
  9 Emura Kikou                7d JP  xxxx  5    39   286  0    17+     11+     3-      21-     18+     36+     6-      33+      |20437417
 10 Liang Jie                  7d US  xxx   5    38   298  0    8-      43+     48+     29+     21+     6+      2-      3-       |14533035
-11 Tan Jia_Cheng              6d SG  xxxx  5    37   289  0    15+     9-      4-      40+     38+     25+     24+     1-       |10725176
+11 Tan Jia-Cheng              6d SG  xxxx  5    37   289  0    15+     9-      4-      40+     38+     25+     24+     1-       |10725176
 12 Kuin Merlijn               6d NL  Amvn  5    36   281  0    4-      51+     36+     16+     17+     7-      5-      30+      |10233861
 13 Nyyssonen Juuso            5d FI  YliG  5    35   289  0    36+     3-      39+     26+     5-      21-     22+     28+      |14374074
 14 Tiawattananont Thanapol    4d TH  Ban   5    35   282  0    5-      53+     41+     27+     22+     24+     1-      4-       |14798421
@@ -35,7 +35,7 @@
 22 Sam In-Hang                5d MO  xxx   4    35   274  0    30+     7-      40+     18+     14-     16-     13-     36+      |15013834
 23 Fragman Amir               4d IL  MGC   4    35   252  0    19+     47+     6-      25-     26+     15-     37+     18-      |13625315
 24 Jadron Peter               4d SK  SBel  4    33   261  0    44+     50+     21-     15+     25+     14-     11-     20-      |10298651
-25 Fitrah Rafif               4d ID  xxxx  4    31   266  0    53+     40+     7-      23+     24-     11-     27+     16-      |17250761
+25 Fitrah Rafif_Shidqi        4d ID  xxxx  4    31   266  0    53+     40+     7-      23+     24-     11-     27+     16-      |17250761
 26 Vo Nhat-Minh               2d VN  xxxx  4    31   261  0    41+     34+     5-      13-     23-     37-     40+     38+      |17262762
 27 Vestgaarden Oystein        2d NO  Oslo  4    31   259  0    51+     39+     8-      14-     29+     17-     25-     37+      |10986316
 28 Radmacher Bernd            4d DE  MEE   4    31   258  0    7-      18-     53+     48+     41+     20+     17-     13-      |10333675

@@ -18,7 +18,7 @@
 12	Soldan Leszek	5d	PL	xxx	5	5	35	3-	34+	28+	20+	1-	19-	27+	16+
 13	Song Brian	5d	CA	xxx	5	5	35	35+	2-	10-	32+	22+	5-	26+	21+
 14	Mutabzija Zoran	5d	YU	xxx	5	5	33	7-	27+	30+	6-	29+	21+	8-	18+
-15	Tse Ying-ming	6d	SG	xxx	4	4	36	37+	3-	26+	4-	33+	11-	23+	6-
+15	Tse Ying-Min	6d	SG	xxx	4	4	36	37+	3-	26+	4-	33+	11-	23+	6-
 16	Ariya Khosa	5d	TH	xxx	4	4	35	33+	1-	24+	21-	19-	30+	25+	12-
 17	Colmez Pierre	5d	FR	xxx	4	4	33	10+	20-	21-	39+	18+	6-	22+	11-
 18	Winkelhofer Petr	5d	CS	xxx	4	4	33	38+	6-	23+	11-	17-	31+	20+	14-
@@ -26,7 +26,7 @@
 20	Siivola Matti	4d	FI	xxx	4	4	33	34+	17+	9-	12-	24+	10-	18-	32+
 21	Flood Jostein	4d	NO	xxx	4	4	32	9-	35+	17+	16+	8-	14-	37+	13-
 22	Shaw Edmund	4d	UK	xxx	4	4	31	30+	4-	19+	7-	13-	36+	17-	35+
-23	Garcia_dl_Banda Paco	4d	ES	xxx	4	4	31	5-	37+	18-	28+	25+	9-	15-	30+
+23	Garcia_de_la_Banda Francisco	4d	ES	xxx	4	4	31	5-	37+	18-	28+	25+	9-	15-	30+
 24	Gostelli Patrice	4d	CH	xxx	4	4	31	1-	39+	16-	34+	20-	33+	7-	29+
 25	Hubner Thomas	4d	DD	xxx	4	4	30	36+	11-	33+	5-	23-	28+	16-	27+
 26	Bro-Joergensen Ulrik	3d	DK	xxx	4	4	29	32+	7-	15-	36+	10-	35+	13-	28+

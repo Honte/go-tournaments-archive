@@ -8,59 +8,59 @@
 ; TM[82.5]
 ; CM[ (submitted by Flatline)]
 ;.
-;# Pl                      rank Cntry club  1st     2nd     r3d     4th     5th     6th     7th     8th    score   sos
- 1 Bai Baoxiang              8d CN  xxx   37+     28+     22+     9+      4+      2+      5+      3+      16   82    |16249156
- 2 Kim Kibaek                7d KR  xxxx  49+     24+     6+      3+      15+     1-      7+      12+     14   84    |17962659
- 3 Hsu Chia_Cheng            7d TW  xxxx  7+      5+      30+     2-      18+     4+      16+     1-      12   94    |17962670
- 4 Kravets Andrii            6d UA  Rivn  8+      10+     13+     23+     1-      3-      17+     19+     12   88    |12350261
- 5 Hiraoka Satoshi           8d JP  xxx   44+     3-      42+     13+     22+     9+      1-      10+     12   78    |10801780
- 6 Mero Csaba                6d HU  BuPe  21+     35+     2-      7-      39+     18+     23+     16+     12   78    |10225875
- 7 Mitic Dusan               6d RS  NiSt  3-      44+     50+     6+      38+     14+     2-      11+     12   74    |10649507
- 8 Pop Cristian              7d RO  CSRB  4-      46+     10-     25+     12+     32+     9+      27+     12   72    |10333389
- 9 Dai Junfu                 8d FR  75EG  32+     17+     14+     1-      10+     5-      8-      28+     10   86    |10349537
-10 Chan Chi_Hin              6d HK  xxx   46+     4-      8+      17+     9-      45+     14+     5-      10   78    |15913150
-11 Surin Dmitrij             6d RU  78SP  34+     15-     19+     18-     20+     26+     29+     7-      10   76    |10825254
-12 Kraemer Lukas             6d DE  BN    23-     27+     45+     24+     8-      33+     15+     2-      10   74    |14698739
-13 Prokop Jan                6d CZ  SRic  43+     26+     4-      5-      28+     17-     25+     31+     10   72    |10433654
-14 Lockhart Benjamin         7d US  NY    42+     18+     9-      26+     32+     7-      10-     22+     10   72    |16262807
-15 Fitrah Rafif_Shidqi       5d ID  xxxx  39+     11+     38+     33+     2-      16-     12-     23+     10   72    |17250761
-16 Heiser Laurent            6d LU  Lux   27+     23-     51+     20+     33+     15+     3-      6-      10   72    |10249195
-17 Frejlak Stanislaw         5d PL  Wars  41+     9-      25+     10-     31+     13+     4-      40+     10   70    |12837594
-18 Tanapatsopol Vorawat      5d TH  xxxx  0+      14-     36+     11+     3-      6-      37+     29+     10   66    |17301240
-19 Koleejan Chahine          5d NZ  xxxx  20+     30-     11-     54+     34+     27+     22+     4-      10   66    |17974671
-20 Alemany_flos Joan         3d ES  Pedr  19-     48+     40+     16-     11-     34+     38+     24+     10   64    |13437974
-21 Simons Andrew             4d UK  Camb  6-      55+     35-     50+     24-     49+     40+     36+     10   52    |14337147
-22 Michaeli Tal              3d IL  TAv   29+     25+     1-      30+     5-      37+     19-     14-     4    78    |14837603
-23 Yue Yi-Fei                5d SG  xxxx  12+     16+     33-     4-      46+     24+     6-      15-     8    76    |15837690
-24 Suntinger Juergen         3d AT  Go7   40+     2-      39+     12-     21+     23-     33+     20-     8    72    |14033074
-25 Siivola Matti             5d FI  HGK   31+     22-     17-     8-      41+     44+     13-     43+     8    66    |10286782
-26 Chang Fu_Kang             5d MY  xxx   47+     13-     29+     14-     30+     11-     28-     37+     8    66    |17301361
-27 Wan Kei-Chon              5d MO  xxx   16-     12-     53+     40+     35+     19-     41+     8-      8    66    |15025835
-28 Vets Nelis                2d BE  Leuv  52+     1-      37-     41+     13-     51+     26+     9-      8    64    |12698642
-29 Vo Nhat-Minh              4d VN  xxxx  22-     31+     26-     47+     36+     38+     11-     18-     8    64    |17262762
-30 Velasco Manuel            5d CA  xxxx  48+     19+     3-      22-     26-     39+     36-     42+     8    64    |17986672
-31 Kuin Merlijn              6d NL  Amvn  25-     29-     46+     48+     17-     42+     32+     13-     8    62    |10233861
-32 Almrot Leif               3d SE  Gote  9-      41+     43+     37+     14-     8-      31-     53+     8    62    |12837748
-33 Polat Emre                4d TR  Ist   51+     45+     23+     15-     16-     12-     24-     38+     8    62    |14762847
-34 Petrauskas Andrius        3d LT  Viln  11-     39-     48+     51+     19-     20-     49+     45+     8    56    |12733589
-35 Espinosa-Uribe Santiago   4d CO  xxxx  55+     6-      21+     38-     27-     40-     39+     47+     8    56    |16274159
-36 Garcia Emil               5d MX  xxxx  54+     38-     18-     49+     29-     47+     30+     21-     8    54    |15086841
-37 Butala Gregor             5d SI  Ljub  1-      52+     28+     32-     42+     22-     18-     26-     6    68    |10433016
-38 Sannes Paal               3d NO  Oslo  50+     36+     15-     35+     7-      29-     20-     33-     6    68    |10233047
-39 Chin Sin-Voon             3d BN  Bmhm  15-     34+     24-     45+     6-      30-     35-     51+     6    64    |14837174
-40 Rios Leon                 1d PE  xxxx  24-     49+     20-     27-     50+     35+     21-     17-     6    62    |15837283
-41 Pollitzer David           3d AR  xxxx  17-     32-     44+     28-     25-     46+     27-     49+     6    58    |17398249
-42 Wolff Armel-David         4d CH  Kogo  14-     0+      5-      43+     37-     31-     44+     30-     6    56    |10598610
-43 Poliak Miroslav           2d SK  Brat  13-     47+     32-     42-     44-     52+     48+     25-     6    54    |10262659
-44 Song Amy_Yimei            4d AU  xxxx  5-      7-      41-     55+     43+     25-     42-     54+     6    54    |17937678
-45 Davies Andrew_Lewis       3d ZA  xxxx  53+     33-     12-     39-     51+     10-     52+     34-     6    54    |15301792
-46 Aliev Elchin_Hasanxan     1d AZ  Nov   10-     8-      31-     52+     23-     41-     54+     0+      6    50    |13262018
-47 Mutabzija Zoran           2d HR  Zagr  26-     43-     52+     29-     54+     36-     50+     35-     6    48    |10249041
-48 Gorlero Filippo           2k IT  Mila  30-     20-     34-     31-     55+     54+     43-     50+     6    48    |15050651
-49 Gibson John               5k IE  Dubl  2-      40-     55+     36-     53+     21-     34-     41-     4    58    |10637385
-50 Makio Gabriel_Hissao      1d BR  xxxx  38-     54+     7-      21-     40-     53+     47-     48-     4    52    |17949679
-51 Pimenta Vasco             5k PT  Lis   33-     53+     16-     34-     45-     28-     0+      39-     4    50    |14737360
-52 Byambaakhuu Battulga      2k MN  xxxx  28-     37-     47-     46-     0+      43-     45-     55+     4    40    |17950680
-53 Xu Linglin                4k CN  xxxx  45-     51-     27-     0+      49-     50-     55+     32-     4    36    |17962681
-54 Ilkevich Anastasiya       5k BY  xxxx  36-     50-     0+      19-     47-     48-     46-     44-     2    46    |17974682
-55 Pal Supravat              1k IN  xxx   35-     21-     49-     44-     48-     0+      53-     52-     2    42    |14033250
+;# Pl                      rank Cntry club  1st     2nd     r3d     4th     5th     6th     7th     8th    score   sos top8
+ 1 Bai Baoxiang              8d CN  xxx   37+     28+     22+     9+      4+      2+      5+      3+      16   82  0  |16249156
+ 2 Kim Kibaek                7d KR  xxxx  49+     24+     6+      3+      15+     1-      7+      12+     14   84  0  |17962659
+ 3 Hsu Chia_Cheng            7d TW  xxxx  7+      5+      30+     2-      18+     4+      16+     1-      12   94  0  |17962670
+ 4 Kravets Andrii            6d UA  Rivn  8+      10+     13+     23+     1-      3-      17+     19+     12   88  0  |12350261
+ 5 Hiraoka Satoshi           8d JP  xxx   44+     3-      42+     13+     22+     9+      1-      10+     12   78  1  |10801780
+ 6 Mero Csaba                6d HU  BuPe  21+     35+     2-      7-      39+     18+     23+     16+     12   78  0  |10225875
+ 7 Mitic Dusan               6d RS  NiSt  3-      44+     50+     6+      38+     14+     2-      11+     12   74  0  |10649507
+ 8 Pop Cristian              7d RO  CSRB  4-      46+     10-     25+     12+     32+     9+      27+     12   72  0  |10333389
+ 9 Dai Junfu                 8d FR  75EG  32+     17+     14+     1-      10+     5-      8-      28+     10   86  0  |10349537
+10 Chan Chi_Hin              6d HK  xxx   46+     4-      8+      17+     9-      45+     14+     5-      10   78  0  |15913150
+11 Surin Dmitrij             6d RU  78SP  34+     15-     19+     18-     20+     26+     29+     7-      10   76  0  |10825254
+12 Kraemer Lukas             6d DE  BN    23-     27+     45+     24+     8-      33+     15+     2-      10   74  0  |14698739
+13 Prokop Jan                6d CZ  SRic  43+     26+     4-      5-      28+     17-     25+     31+     10   72  0  |10433654
+14 Lockhart Benjamin         7d US  NY    42+     18+     9-      26+     32+     7-      10-     22+     10   72  0  |16262807
+15 Fitrah Rafif_Shidqi       5d ID  xxxx  39+     11+     38+     33+     2-      16-     12-     23+     10   72  0  |17250761
+16 Heiser Laurent            6d LU  Lux   27+     23-     51+     20+     33+     15+     3-      6-      10   72  0  |10249195
+17 Frejlak Stanislaw         5d PL  Wars  41+     9-      25+     10-     31+     13+     4-      40+     10   70  0  |12837594
+18 Tanapatsopol Vorawat      5d TH  xxxx  0+      14-     36+     11+     3-      6-      37+     29+     10   66  0  |17301240
+19 Koleejan Chahine          5d NZ  xxxx  20+     30-     11-     54+     34+     27+     22+     4-      10   66  0  |17974671
+20 Alemany-Flos Joan         3d ES  Pedr  19-     48+     40+     16-     11-     34+     38+     24+     10   64  0  |13437974
+21 Simons Andrew             4d UK  Camb  6-      55+     35-     50+     24-     49+     40+     36+     10   52  0  |14337147
+22 Michaeli Tal              3d IL  TAv   29+     25+     1-      30+     5-      37+     19-     14-     4    78  0  |14837603
+23 Yue Yi-Fei                5d SG  xxxx  12+     16+     33-     4-      46+     24+     6-      15-     8    76  0  |15837690
+24 Suntinger Juergen         3d AT  Go7   40+     2-      39+     12-     21+     23-     33+     20-     8    72  0  |14033074
+25 Siivola Matti             5d FI  HGK   31+     22-     17-     8-      41+     44+     13-     43+     8    66  0  |10286782
+26 Chang Fu_Kang             5d MY  xxx   47+     13-     29+     14-     30+     11-     28-     37+     8    66  0  |17301361
+27 Wan Kei-Chon              5d MO  xxx   16-     12-     53+     40+     35+     19-     41+     8-      8    66  0  |15025835
+28 Vets Nelis                2d BE  Leuv  52+     1-      37-     41+     13-     51+     26+     9-      8    64  0  |12698642
+29 Vo Nhat-Minh              4d VN  xxxx  22-     31+     26-     47+     36+     38+     11-     18-     8    64  0  |17262762
+30 Velasco Manuel            5d CA  xxxx  48+     19+     3-      22-     26-     39+     36-     42+     8    64  0  |17986672
+31 Kuin Merlijn              6d NL  Amvn  25-     29-     46+     48+     17-     42+     32+     13-     8    62  0  |10233861
+32 Almrot Leif               3d SE  Gote  9-      41+     43+     37+     14-     8-      31-     53+     8    62  0  |12837748
+33 Polat Emre                4d TR  Ist   51+     45+     23+     15-     16-     12-     24-     38+     8    62  0  |14762847
+34 Petrauskas Andrius        3d LT  Viln  11-     39-     48+     51+     19-     20-     49+     45+     8    56  0  |12733589
+35 Espinosa-Uribe Santiago   4d CO  xxxx  55+     6-      21+     38-     27-     40-     39+     47+     8    56  0  |16274159
+36 Garcia Emil               5d MX  xxxx  54+     38-     18-     49+     29-     47+     30+     21-     8    54  0  |15086841
+37 Butala Gregor             5d SI  Ljub  1-      52+     28+     32-     42+     22-     18-     26-     6    68  0  |10433016
+38 Sannes Paal               3d NO  Oslo  50+     36+     15-     35+     7-      29-     20-     33-     6    68  0  |10233047
+39 Chin Sin-Voon             3d BN  Bmhm  15-     34+     24-     45+     6-      30-     35-     51+     6    64  0  |14837174
+40 Rios Leon                 1d PE  xxxx  24-     49+     20-     27-     50+     35+     21-     17-     6    62  0  |15837283
+41 Pollitzer David           3d AR  xxxx  17-     32-     44+     28-     25-     46+     27-     49+     6    58  0  |17398249
+42 Wolff Armel-David         4d CH  Kogo  14-     0+      5-      43+     37-     31-     44+     30-     6    56  0  |10598610
+43 Poliak Miroslav           2d SK  Brat  13-     47+     32-     42-     44-     52+     48+     25-     6    54  0  |10262659
+44 Song Amy_Yimei            4d AU  xxxx  5-      7-      41-     55+     43+     25-     42-     54+     6    54  0  |17937678
+45 Davies Andrew_Lewis       3d ZA  xxxx  53+     33-     12-     39-     51+     10-     52+     34-     6    54  0  |15301792
+46 Aliyev Eichin             1d AZ  Nov   10-     8-      31-     52+     23-     41-     54+     0+      6    50  0  |13262018
+47 Mutabzija Zoran           2d HR  Zagr  26-     43-     52+     29-     54+     36-     50+     35-     6    48  0  |10249041
+48 Gorlero Filippo           2k IT  Mila  30-     20-     34-     31-     55+     54+     43-     50+     6    48  0  |15050651
+49 Gibson John               5k IE  Dubl  2-      40-     55+     36-     53+     21-     34-     41-     4    58  0  |10637385
+50 Makio Gabriel_Hissao      1d BR  xxxx  38-     54+     7-      21-     40-     53+     47-     48-     4    52  0  |17949679
+51 Pimenta Vasco             5k PT  Lis   33-     53+     16-     34-     45-     28-     0+      39-     4    50  0  |14737360
+52 Byambaakhuu Battulga      2k MN  xxxx  28-     37-     47-     46-     0+      43-     45-     55+     4    40  0  |17950680
+53 Xu Linglin                4k CN  xxxx  45-     51-     27-     0+      49-     50-     55+     32-     4    36  0  |17962681
+54 Ilkevich Anastasiya       5k BY  xxxx  36-     50-     0+      19-     47-     48-     46-     44-     2    46  0  |17974682
+55 Pal Supravat              1k IN  xxx   35-     21-     49-     44-     48-     0+      53-     52-     2    42  0  |14033250

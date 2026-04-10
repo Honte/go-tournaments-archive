@@ -1,3 +1,4 @@
+website: https://www.nihonkiin.or.jp/event/amakisen/worldama/44/index.html
 stages:
   - type: tournament
     file: wagc2024.txt
@@ -10,3 +11,45 @@ stages:
       - sos
       - sosos
     findSharedPlaces: true
+    games:
+      - 1-2 1:W+R sgf:2024/7-JungSeonKim-BaoxiangBai.sgf
+      - 1-3 3:B+R sgf:2024/5-MinoruOzeki-BaoxiangBai.sgf
+      - 1-4 1:B+R sgf:2024/4-BaoxiangBai-PongsakarnSornarra.sgf
+      - 1-5 1:B+T sgf:2024/8-BaoxiangBai-ShengChiehLo.sgf
+      - 1-8 1:W+R sgf:2024/6-NaiSanChan-BaoxiangBai.sgf
+      - 1-9 1:B+R sgf:2024/2-BaoxiangBai-CornelBurzo.sgf
+      - 2-3 2:B+R sgf:2024/6-JungSeonKim-MinoruOzeki.sgf
+      - 2-5 2:B+10.5 sgf:2024/5-JungSeonKim-ShengChiehLo.sgf
+      - 2-8 2:B+0.5 sgf:2024/8-JungSeonKim-NaiSanChan.sgf
+      - 2-18 2:W+R sgf:2024/4-GillesvanEeden-JungSeonKim.sgf
+      - 3-4 3:W+9.5 sgf:2024/7-PongsakarnSornarra-MinoruOzeki.sgf
+      - 3-8 3:W+12.5 sgf:2024/4-NaiSanChan-MinoruOzeki.sgf
+      - 3-9 3:W+R sgf:2024/8-CornelBurzo-MinoruOzeki.sgf
+      - 3-10 3:W+9.5 sgf:2024/2-LukasPodpera-MinoruOzeki.sgf
+      - 3-25 3:W+R sgf:2024/3-DenisKaradaban-MinoruOzeki.sgf
+      - 3-40 3:B+R sgf:2024/1-MinoruOzeki-CharlieAakerblom.sgf
+      - 4-24 4:B+R sgf:2024/3-PongsakarnSornarra-DusanMitic.sgf
+      - 5-13 5:W+R sgf:2024/7-TalMichaeli-ShengChiehLo.sgf
+      - 5-15 5:W+2.5 sgf:2024/2-DavideBernardis-ShengChiehLo.sgf
+      - 6-27 6:W+0.5 sgf:2024/3-DucAnhPham-CsabaMero.sgf
+      - 7-41 7:B+19.5 sgf:2024/5-InHangSam-JonRunarMelting.sgf
+      - 8-23 8:W+T sgf:2024/5-ZhiyuanZhang-NaiSanChan.sgf
+      - 11-40 11:W+30.5 sgf:2024/4-CharlieAakerblom-DanielGourdeau.sgf
+      - 12-42 12:B+R sgf:2024/2-KwanTaoLi-AlexanderRix.sgf
+      - 14-45 14:W+R sgf:2024/3-JuanFelipeBurgosAndrade-JiaChengTan.sgf
+      - 15-37 15:W+R sgf:2024/1-NikolaTsarigradski-DavideBernardis.sgf
+      - 16-25 25:B+29.5 sgf:2024/1-DenisKaradaban-StjepanMestrovic.sgf
+      - 17-44 17:W+R sgf:2024/6-PeterSmolarik-HaidarAlimin.sgf
+      - 19-26 26:B+R sgf:2024/5-KoichiroHabu-VesaLaatikainen.sgf
+      - 20-33 20:B+R sgf:2024/8-VladasZaleskas-UgurArikan.sgf
+      - 21-22 21:W+R sgf:2024/7-WeiJieTeh-JohannesObenaus.sgf
+      - 21-56 21:W+127.5 sgf:2024/3-SenHeiGui-JohannesObenaus.sgf
+      - 23-25 23:B+T sgf:2024/4-ZhiyuanZhang-DenisKaradaban.sgf
+      - 29-58 29:B+R sgf:2024/1-DmytroYatsenko-ErnurEmiliev.sgf
+      - 35-48 35:W+14.5 sgf:2024/7-ThiagoAugustoGomesdaSilva-JavierGonzales.sgf
+      - 36-49 36:W+24.5 sgf:2024/8-AlejandroRafaelCurielSanchez-ArmelDavidWolff.sgf
+      - 38-43 43:B+23.5 sgf:2024/1-GregorButala-PascalAlejandroNunezMariot.sgf
+      - 46-51 46:B+17.5 sgf:2024/2-StephenNulty-JoaoFerreira.sgf
+      - 50-55 50:W+14.5 sgf:2024/6-JorgeEmilioMurilloLux-EtugenBayarjargal.sgf
+    unmatchedSgfs:
+      - 31-16 ? sgf:2024/6-RenaudGaban-StjepanMestrovic.sgf

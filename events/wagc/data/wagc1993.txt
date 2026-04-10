@@ -9,7 +9,7 @@
 3	Hirata Hironori	7d	JP	xxx	6	6	44	31	26+	10+	18+	6+	1-	7+	2+	4-
 4	Chou Chun-Hsun	6d	TW	xxx	6	6	42	28	23+	15+	7+	2-	11+	18+	1-	3+
 5	Schlemper Ronald	6d	NL	xxx	6	6	42	28	27+	13+	6+	1-	19+	8+	9+	2-
-6	Mun Yongsam	6d	KP	xxx	6	6	37	25	30+	14+	5-	3-	16+	15+	17+	8+
+6	Mun Yeong-sam	6d	KP	xxx	6	6	37	25	30+	14+	5-	3-	16+	15+	17+	8+
 7	Kan Ying	7d	HK	xxx	5	5	39	20	35+	25+	4-	20+	21+	3-	13+	1-
 8	Beck June-Ki	6d	CA	xxx	5	5	39	20	38+	22+	1-	24+	10+	5-	12+	6-
 9	Gerlach Christoph	4d	DE	xxx	5	5	37	20	31+	24-	23+	12+	2-	21+	5-	17+
@@ -26,7 +26,7 @@
 20	Gondor Andras	5d	HU	xxx	4	4	33	11	39+	2-	16+	7-	28+	10-	14-	27+
 21	Kraszek Janusz	5d	PL	xxx	4	4	32	13	17-	36+	30+	18+	7-	9-	25+	12-
 22	Shepperson Piers	5d	UK	xxx	4	4	32	13	19+	8-	10-	36+	15-	29+	26+	11-
-23	Bro-Jorgensen Ulrik	4d	DK	xxx	4	4	32	12	4-	28+	9-	33+	12-	35+	15-	32+
+23	Bro-Joergensen Ulrik	4d	DK	xxx	4	4	32	12	4-	28+	9-	33+	12-	35+	15-	32+
 24	Wong Kok-Meng	4d	SG	xxx	4	4	32	11	40+	9+	2-	8-	13-	28+	16-	29+
 25	Olsson Ulf	4d	SE	xxx	4	4	30	11	34+	7-	12-	30+	32+	13-	21-	36+
 26	Bouzy Bruno	2d	FR	xxx	4	4	27	8	3-	40+	11-	16-	37+	27+	22-	31+

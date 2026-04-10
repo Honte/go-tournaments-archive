@@ -23,7 +23,7 @@
 12 Do Khanh-Binh             5d VN  xxx   5    5    38   288  4-      29+     21+     28+     18+     11-     9-      22+      |16250157
 13 Chwedyna Kamil            4d PL  Kedz  5    5    37   287  51+     14+     26+     38+     8-      2-      23+     6-       |13513786
 14 Lin Viktor                5d AT  Gote  5    5    37   285  20+     13-     7-      25+     15+     22-     27+     23+      |14501256
-15 Chan Chi-hin              6d HK  xxx   5    5    36   288  29+     21+     8-      4-      14-     38+     25+     26+      |15913150
+15 Chan Chi_Hin              6d HK  xxx   5    5    36   288  29+     21+     8-      4-      14-     38+     25+     26+      |15913150
 16 Petrauskas Andrius        3d LT  Viln  5    5    35   263  50+     3-      33+     26-     19+     40+     6-      28+      |12733589
 17 Halchenko Mykhailo        5d UA  Kyiv  5    5    34   267  10-     0+      31+     19+     20+     9-      29+     7-       |10433236
 18 Siukola Mikko             4d FI  YliG  5    5    31   264  54+     46+     38-     30+     12-     28+     20+     10-      |13913075
@@ -34,7 +34,7 @@
 23 Zhang Xiang               6d SG  Sin   4    4    36   288  19+     41+     11-     39+     3-      24+     13-     14-      |14525192
 24 Ofstad Morten             4d NO  Oslo  4    4    36   281  34+     53+     5+      8-      4-      23-     10-     36+      |10762752
 25 Mezhov Oleg               6d RU  77Mo  4    4    36   276  45+     1-      4-      14-     47+     39+     15-     40+      |10837068
-26 Alemany Joan              4d ES  Pedr  4    4    34   269  0+      31+     13-     16+     40+     5-      7-      15-      |13437974
+26 Alemany-Flos Joan         4d ES  Pedr  4    4    34   269  0+      31+     13-     16+     40+     5-      7-      15-      |13437974
 27 Karlsson John             4d SE  Stoc  4    4    34   268  3-      34+     22-     20-     49+     32+     14-     39+      |13486693
 28 Lakeland Corrin           2d NZ  xxx   4    4    34   254  37+     5-      53+     12-     32+     18-     40+     16-      |15025846
 29 Mutabzija Zoran           5d HR  Zagr  4    4    32   247  15-     12-     0+      21+     44+     35+     17-     19-      |10249041

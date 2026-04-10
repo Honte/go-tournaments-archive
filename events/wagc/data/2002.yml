@@ -1,13 +1,15 @@
+website: https://www.nihonkiin.or.jp/event/amakisen/worldama/24/index-e.htm
 stages:
   - type: tournament
     file: wagc2002.txt
     scoringColumns:
       - wins
-      - null
+      - direct
       - sos
       - sosos
     breakers:
       - wins
       - sos
       - sosos
+      - direct
     findSharedPlaces: true

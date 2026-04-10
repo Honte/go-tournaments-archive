@@ -24,7 +24,7 @@
 18	Phease Barry	4d	NZ	xxx	4	4	36	276	10+	13-	14+	3-	35+	24-	22+	19-
 19	Heshe Thomas	5d	DK	xxx	4	4	35	253	29+	1-	17-	14-	36+	39+	11-	18+
 20	Nechanicky Radek	5d	CZ	xxx	4	4	34	263	37+	3-	15-	29+	31+	7-	33+	10-
-21	Huttler Franz	4d	AT	xxx	4	4	34	262	36+	4-	10-	39+	30+	9-	26+	12-
+21	Huettler Franz	4d	AT	xxx	4	4	34	262	36+	4-	10-	39+	30+	9-	26+	12-
 22	Kraszek Janusz	5d	PL	xxx	4	4	33	266	43+	2-	7-	27+	25+	13-	18-	32+
 23	Shaw Edmund	5d	UK	xxx	4	4	33	250	5-	12-	26+	38+	14-	35+	16-	36+
 24	Mai K	4d	SG	xxx	4	4	32	271	44+	32+	6-	16-	11+	18+	7-	15-
@@ -43,7 +43,7 @@
 37	Vitari Maurizio	1d	IT	xxx	3	3	23	220	20-	42+	16-	34-	40+	28-	36-	43+
 38	Karaerkek Kerem	1d	TR	xxx	3	3	22	214	17-	35-	41+	23-	42+	30-	29-	44+
 39	Flinter Stephen	1k	IE	xxx	3	3	21	223	30-	44+	28-	21-	43+	19-	32-	41+
-40	Carillo Juan-Carlos	3d	CL	xxx	2	2	24	210	13-	25-	42+	35-	37-	36-	44+	26-
+40	Carrillo Juan-Carlos	3d	CL	xxx	2	2	24	210	13-	25-	42+	35-	37-	36-	44+	26-
 41	Cymbalista Andre	1d	BR	xxx	2	2	21	196	31-	15-	38-	42-	44+	29-	43+	39-
 42	Schmit Paul	2k	LU	xxx	2	2	20	194	34-	37-	40-	41+	38-	44+	27-	35-
 43	Faria Luis	3k	PT	xxx	1	1	24	200	22-	29-	44+	26-	39-	27-	41-	37-

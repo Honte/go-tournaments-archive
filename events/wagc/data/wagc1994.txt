@@ -16,7 +16,7 @@
 11	Dickhut Franz-Josef	6d	DE	xxx	5	5	36	7-	42+	16+	13+	4-	15+	20-	25+
 12	Heiser Laurent	6d	LU	xxx	5	5	35	23+	32+	10-	7-	29+	22+	17+	2-
 13	Ledovskii Yuri	6d	UA	xxx	5	5	34	43+	5-	27+	11-	32+	9+	4-	17+
-14	Ben-Malek Farid	6d	FR	xxx	5	5	33	24+	18-	30+	19+	10-	25+	7-	20+
+14	Ben_Malek Farid	6d	FR	xxx	5	5	33	24+	18-	30+	19+	10-	25+	7-	20+
 15	Penz Harald	4d	AT	xxx	5	5	33	33+	4-	8-	30+	26+	11-	21+	31+
 16	Hansen Frank	5d	DK	xxx	5	5	30	17-	37+	11-	36+	39+	18+	10-	19+
 17	Eijkhout Michiel	5d	NL	xxx	4	4	39	16+	1-	35+	8-	27+	20+	12-	13-
@@ -36,7 +36,7 @@
 31	Grierson Colin	4d	NZ	xxx	3	3	28	36+	7-	23-	32-	30-	40+	34+	15-
 32	Pedrini Enzo	2d	IT	xxx	3	3	28	30+	12-	26-	31+	13-	33-	35-	39+
 33	Chairasmisak Korsak	5d	TH	xxx	3	3	27	15-	30-	34-	38+	40+	32+	22-	21-
-34	Alaluf Roberto	4d	AR	xxx	3	3	26	5-	29-	33+	26-	41+	21-	31-	43+
+34	Alaluf Roberto-Issac	4d	AR	xxx	3	3	26	5-	29-	33+	26-	41+	21-	31-	43+
 35	Persson Magnus	2d	SE	xxx	3	3	25	20-	36+	17-	29-	44+	19-	32+	27-
 36	Chacon Jose	4d	MX	xxx	3	3	24	31-	35-	44+	16-	19-	37+	25-	42+
 37	Karali Huseyin	1d	TR	xxx	3	3	21	28-	16-	43+	27-	42-	36-	44+	41+

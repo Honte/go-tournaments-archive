@@ -32,7 +32,7 @@
 19 Zaleskas Vladas                1d LT  Kaun  5    30   252  0    18-     33+     50-     31+     39+     17-     40+     28+      |15401716
 20 Giedrojc Krzysztof             4d PL  Wars  5    29   258  0    3-      54+     41+     50+     27-     40+     17-     29+      |10437834
 21 Mero Csaba                     6d HU  BuPe  4    39   300  0    43+     27+     2-      22+     4-      23+     5-      8-       |10225875
-22 Tan Jia_Cheng                  6d SG  xxxx  4    39   284  0    16+     18+     1-      21-     14-     38+     29+     13-      |10725176
+22 Tan Jia-Cheng                  6d SG  xxxx  4    39   284  0    16+     18+     1-      21-     14-     38+     29+     13-      |10725176
 23 Kuin Merlijn                   6d NL  Amvn  4    37   282  0    33+     32+     26+     1-      12-     21-     37+     14-      |10233861
 24 Kay Andrew                     4d UK  SLon  4    37   257  0    1-      35+     30-     32+     34+     16-     15-     38+      |14613720
 25 Dickhut Franz-Josef            6d DE  VIE   4    36   273  0    44+     11-     12-     18+     30+     5-      13-     37+      |10501403

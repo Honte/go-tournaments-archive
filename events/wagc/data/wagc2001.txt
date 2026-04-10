@@ -23,7 +23,7 @@
  14 Roche Antoine                4d FR 75Pa  5 5  38 283  42+  2- 25+ 22- 26+ 21+ 11+  9-  |10374826
  15 Koszegi Diana                5d HU BuPe  5 5  38 281  32+ 50+  2- 17+ 21+  7- 12- 25+  |10301247
  16 Eijkhout Michiel             5d NL Leid  5 5  38 279  34+ 31+  3- 24+  8- 28+  9- 26+  |10486410
- 17 Jacenko Dmytro               5d UA Kyiv  5 5  35 274  13- 42+ 30+ 15- 35+ 22+  3- 29+  |10286870
+ 17 Yatsenko Dmytro              5d UA Kyiv  5 5  35 274  13- 42+ 30+ 15- 35+ 22+  3- 29+  |10286870
  18 Huettler Franz               4d AT Wien  5 5  35 272   2- 52+ 28+  9- 25+ 12- 37+ 24+  |10274869
  19 Dickhut Franz-Josef          6d DE BO    5 5  34 277  11- 49+ 29+  8- 40+ 36+ 13+  5-  |10501403
  20 Bisca Mihai                  5d RO Bucu  5 5  34 277  39+ 29+  7- 36+ 11- 31+ 10- 23+  |10301390

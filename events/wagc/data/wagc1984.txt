@@ -19,11 +19,11 @@
 13	Shin Hongsoo	6d	US	xxx	4	4	25	10+	17+	9-	4-	8-	26+	18+
 14	Kiskos Laszlo	3d	HU	xxx	4	4	23	7-	10-	28+	23+	20+	4-	24+
 15	An Kwang-ho	4d	AU	xxx	4	4	20	30+	2-	24-	25+	26+	10-	12+
-16	Lee Se-ju	4d	CA	xxx	3	3	29	6+	26+	2-	3-	9-	23+	11-
+16	Lee Se_Ju	6d	CA	xxx	3	3	29	6+	26+	2-	3-	9-	23+	11-
 17	Olsson Ulf	3d	SE	xxx	3	3	25	22+	13-	20+	5-	12-	11-	26+
 18	Danek Vladimir	5d	CS	xxx	3	3	25	3-	28+	5-	29+	21+	12-	13-
 19	Tan Liek-foo	3d	SG	xxx	3	3	23	25-	6+	11-	12-	29+	24+	9-
-20	Garcia_dl_Banda Paco	4d	ES	xxx	3	3	22	29+	4-	17-	28+	14-	25+	8-
+20	Garcia_de_la_Banda Francisco	4d	ES	xxx	3	3	22	29+	4-	17-	28+	14-	25+	8-
 21	Paatero Lauri	1k	FI	xxx	3	3	18	28+	24-	26+	10-	18-	22-	29+
 22	Tan Bee-giok	1k	PH	xxx	3	3	17	17-	27-	6-	30+	25-	21+	28+
 23	Bassarsky Franklin	3d	AR	xxx	3	3	17	26-	11-	30+	14-	27+	16-	25+

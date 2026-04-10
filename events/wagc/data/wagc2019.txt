@@ -15,7 +15,7 @@
  4 Yen Albert                     7d US  xxx   6    41   299  33+     43+     26+     1-      23+     13+     5+      2-       |17337375
  5 Balogh Pal                     6d HU  Debr  6    39   282  36+     11-     22+     7+      27+     26+     4-      10+      |10498246
  6 Wu Qi-you                      6d CA  XXXX  6    37   300  46+     2-      12+     40+     28+     8-      13+     14+      |18433239
- 7 Bohatskyi Dmytro               5d UA  Kyiv  6    35   264  58+     18+     24-     5-      31+     17+     29+     16+      |10250867
+ 7 Bogatskyy Dmytro               5d UA  Kyiv  6    35   264  58+     18+     24-     5-      31+     17+     29+     16+      |10250867
  8 Kawaguchi Tsubasa              7d JP  XXXX  5    44   303  30+     22+     40+     9+      1-      6+      2-      3-       |19325471
  9 Kwa Jie_Hui                    6d SG  xxxx  5    43   319  15+     25+     2-      8-      24+     12+     11+     1-       |15025351
 10 Umar_Fitrah Faishal            5d ID  XXXX  5    41   312  31+     24+     13+     2-      11+     3-      23+     5-       |18474236
@@ -23,7 +23,7 @@
 12 Debarre Thomas                 7d FR  67SE  5    38   285  29+     1-      6-      30+     41+     9-      39+     23+      |12950872
 13 Xie Kaikun                     4d NZ  XXXX  5    37   286  54+     20+     10-     25+     15+     4-      6-      24+      |14849164
 14 Tran Phuoc_Dinh                5d VN  xxxx  5    37   278  1-      42+     15-     45+     40+     20+     26+     6-       |18950305
-15 Groenen Gerardus_Petrus        5d NL  XXXX  5    36   287  9-      30+     14+     31+     13-     28+     16-     26+      |10501216
+15 Groenen Geert                  5d NL  XXXX  5    36   287  9-      30+     14+     31+     13-     28+     16-     26+      |10501216
 16 Habu Koichiro                  5d PL  Krak  5    35   271  24-     47+     46+     29+     18+     11-     15+     7-       |10837827
 17 Simara Jan                     6d CZ  KVaS  5    34   266  47+     49+     11-     19+     26-     7-      27+     28+      |10749860
 18 Zivony Ofer                    4d IL  Jer   5    33   246  57+     7-      49+     32+     16-     19-     30+     29+      |14225607
@@ -41,7 +41,7 @@
 30 Chan Wai_Chong                 5d MO  xxxx  4    32   268  8-      15-     34+     12-     49+     53+     18-     43+      |18913301
 31 Schroter_Mendez Carl_Nicolas   3d CL  XXXX  4    32   268  10-     36+     48+     15-     7-      40-     41+     42+      |19374476
 32 Bojanic Milos                  5d RS  BGmp  4    31   243  25-     51+     44+     18-     43+     42+     19-     20-      |10337085
-33 Gomez_de_la Anibal             1d AR  XXXX  4    29   225  4-      45-     50+     38-     57+     55+     34+     21-      |19398478
+33 Gomez_Delafuente Anibal        1d AR  XXXX  4    29   225  4-      45-     50+     38-     57+     55+     34+     21-      |19398478
 34 Kralik Michal                  1k SK  Kosi  4    29   218  21-     56+     30-     51+     37-     36+     33-     47+      |13033658
 35 Zaleskas Vladas                3d LT  Kaun  4    28   245  56+     40-     43+     26-     19-     44+     21-     45+      |15401716
 36 Mitchell Noel                  2d IE  Dubl  4    27   221  5-      31-     55-     47+     56+     34-     51+     52+      |10474563

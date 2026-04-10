@@ -8,7 +8,7 @@
 2	Imamura Fumiaki	7d	JP	xxx	7	7	43	12+	14+	18+	3+	1-	13+	4+	6+
 3	Schlemper Ronald	6d	NL	xxx	6	6	42	19+	26+	5+	2-	22+	6+	1-	7+
 4	Kim Chul-jung	6d	KR	xxx	6	6	42	31+	11+	17+	1-	10+	5+	2-	20+
-5	Tsang Pingfai	6d	HK	xxx	6	6	38	23+	6+	3-	25+	15+	4-	13+	8+
+5	Tsang Ping-Fai	6d	HK	xxx	6	6	38	23+	6+	3-	25+	15+	4-	13+	8+
 6	Rittner Egbert	5d	DE	xxx	5	5	38	27+	5-	29+	11+	16+	3-	21+	2-
 7	Heiser Laurent	5d	LU	xxx	5	5	35	28+	1-	14-	33+	24+	17+	9+	3-
 8	Wang Sen-Feng	6d	BR	xxx	5	5	35	32+	16-	33+	21+	14+	1-	11+	5-

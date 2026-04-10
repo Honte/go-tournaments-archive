@@ -1,11 +1,13 @@
+website: https://www.nihonkiin.or.jp/event/amakisen/worldama/33/e/index.html
 stages:
   - type: tournament
     file: wagc2012.txt
     scoringColumns:
       - wins
-      - null
+      - top8
       - sos
     breakers:
       - wins
       - sos
+      - top8
     findSharedPlaces: true

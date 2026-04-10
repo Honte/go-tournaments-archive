@@ -10,7 +10,7 @@
 ;.
  1 Hu Yuqing               7d CN  Sha   8    8    42   323  43+    32+    9+     6+     11+    2+     10+    4+      |13949826
  2 Yu Shin-hwan            7d KR  Seo   7    7    46   309  16+    22+    12+    4+     3+     1-     18+    13+     |15350786
- 3 Chan Naisan             6d HK  WCh   7    7    39   311  65+    30+    10+    5+     2-     15+    6+     12+     |14349742
+ 3 Chan Nai-San            6d HK  WCh   7    7    39   311  65+    30+    10+    5+     2-     15+    6+     12+     |14349742
  4 Yeh Kang-Ting           7d TW  TPe   6    6    45   303  35+    20+    14+    2-     38+    7+     5+     1-      |15386789
  5 Kanazawa Moriei         7d JP  Kan   6    6    44   297  23+    38+    7+     3-     17+    8+     4-     15+     |12774069
  6 Tan Jia-Cheng           6d SG  xxx   6    6    42   287  8+     48+    13+    1-     19+    26+    3-     37+     |10725176
@@ -23,7 +23,7 @@
 13 He Wei                  7d AU  xxx   5    5    39   292  37+    36+    6-     33+    10-    31+    19+    2-      |15074851
 14 Burzo Cornel            6d RO  TgMs  5    5    39   291  46+    21+    4-     30+    16+    10-    24+    9-      |10325249
 15 Lui Eric                7d US  xxx   5    5    39   282  18+    39+    11-    52+    22+    3-     26+    5-      |10937047
-16 Jacenko Dmytro          5d UA  Kyiv  5    5    37   276  2-     49+    35+    23+    14-    45+    9-     39+     |10286870
+16 Yatsenko Dmytro         5d UA  Kyiv  5    5    37   276  2-     49+    35+    23+    14-    45+    9-     39+     |10286870
 17 Ragnarsson Carl-Johan   4d SE  Lun   5    5    37   274  64+    11-    20+    32+    5-     23+    8-     30+     |12898743
 18 Tormanen Antti          5d FI  PoGo  5    5    34   284  15-    51+    43+    12-    46+    33+    2-     32+     |12949310
 19 Thunthadaluk Paisal     4d TH  xxx   5    5    34   269  24-    56+    45+    27+    6-     29+    13-    28+     |15333791
@@ -50,7 +50,7 @@
 40 Gonzalez Javier         2d VE  xxx   4    4    29   247  51+    25-    22-    54+    45-    50+    23-    44+     |13986841
 41 Marquardsen Per         3d DK  KGK   4    4    28   245  60+    7-     31-    36-    59+    28-    52+    43+     |10413205
 42 Benenati Martin         3d UY  Mnv   4    4    27   252  55+    12-    30-    43-    51+    36-    57+    45+     |14325751
-43 Davies Andrew           2d ZA  xxx   3    3    35   243  1-     63+    18-    42+    23-    49+    35-    41-     |15301792
+43 Davies Andrew_Lewis     2d ZA  xxx   3    3    35   243  1-     63+    18-    42+    23-    49+    35-    41-     |15301792
 44 Poliak Miroslav         3d SK  Brat  3    3    34   250  54+    9-     38+    7-     31-    52+    32-    40-     |10262659
 45 Suc Timotej             3d SI  Ljub  3    3    32   249  53+    10-    19-    57+    40+    16-    39-    42-     |12533697
 46 Flood Jostein           4d NO  Osl   3    3    30   243  14-    52+    29-    47+    18-    37-    62+    38-     |10533369
@@ -65,12 +65,12 @@
 55 Roussos Nicholas        4k CY  Nico  3    3    24   228  42-    29-    52-    61+    65+    12-    48-    59+     |13598849
 56 Singh Mandish           1d IN  xxx   3    3    22   226  30-    19-    66+    35-    47-    51-    65+    58+     |12549163
 57 Galero Michael          1k PH  xxx   2    2    27   212  20-    23-    64+    45-    52-    63+    42-    54-     |15313793
-58 Aguero Mario            2k CR  xxx   2    2    25   211  32-    28-    60+    38-    49-    54-    64+    56-     |14898180
+58 Aguero-Obando Mario     2k CR  xxx   2    2    25   211  32-    28-    60+    38-    49-    54-    64+    56-     |14898180
 59 Sakajiri Fumio          2d BR  xxx   2    2    24   210  50-    62+    8-     39-    41-    61-    66+    55-     |15337795
 60 Harutyunyan Davit       2k AM  xxx   2    2    23   211  41-    47-    58-    51-    64+    30-    63+    50-     |12750089
 61 Korbut Siarhei          4k BY  Mog   2    2    23   209  38-    35-    54-    55-    66+    59+    33-    53-     |14786563
 62 Munoz Miguel            7k CL  xxx   2    2    21   215  48-    59-    37-    66+    24-    65+    46-    52-     |15349796
-63 Caceres Edgardo         7k GT  xxx   2    2    20   213  21-    43-    49-    64+    48-    57-    60-    66+     |12025530
+63 Caceres-Estrada Edgardo 7k GT  xxx   2    2    20   213  21-    43-    49-    64+    48-    57-    60-    66+     |12025530
 64 Nedev Teodor            3k BG  Rous  2    2    18   208  17-    34-    57-    63-    60-    66+    58-    65+     |15049859
 65 Baghirov Niyazi         3d AZ  xxx   1    1    24   200  3-     66+    32-    53-    55-    62-    56-    64-     |14598661
 66 Raya Rabin              5k NP  xxx   0    0    19   185  22-    65-    56-    62-    61-    64-    59-    63-     |15398801

@@ -44,7 +44,7 @@
  35 Yamamoto Noriyuki       4d PE xxx   4 4  28 247  15- 14- 49+ 43+ 25- 28- 50+ 41+  |12049521
  36 Stankovic Mijodrag      5d YU Nis   4 4  28 245  14+ 23- 54+ 21- 20- 41- 53+ 37+  |10313083
  37 Volosov Andrej          4d IL xxx   3 3  31 243   9- 48+ 43+ 15- 32- 50+ 20- 36-  |12062523
- 38 Garcia_De_La_Banda Paco 4d ES Can   3 3  30 245  54+ 15- 14- 41+ 30- 43+ 25- 34-  |10533710
+ 38 Garcia_de_la_Banda Francisco 4d ES Can   3 3  30 245  54+ 15- 14- 41+ 30- 43+ 25- 34-  |10533710
  39 Rivaud Juan-Jose        3d MX xxx   3 3  29 242  52+  7- 22- 47+ 23- 26- 51+ 31-  |10449571
  40 Pareja Federico         2d CO xxx   3 3  29 240  17- 10- 45+ 16- 54+ 29- 44- 50+  |12074524
  41 Djap Woei-Haw           3d ID xxx   3 3  29 229  33- 55+ 30- 38- 46+ 36+  9- 35-  |10474574
