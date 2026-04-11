@@ -1,5 +1,6 @@
 import { existsSync } from 'node:fs';
 import { readFile } from 'node:fs/promises';
+import { cleanSgf } from '@tools/sgf';
 import { optimize } from 'svgo';
 import { iterateStones, sgfToBoard } from '@/libs/goban';
 
@@ -17,7 +18,7 @@ export async function generateSvg(sgfFile: string) {
   }
 
   const content = await readFile(sgfFile, 'utf-8');
-  const board = sgfToBoard(content);
+  const board = sgfToBoard(cleanSgf(content));
 
   const stepV = SIZE / (board.width + 1);
   const stepH = SIZE / (board.height + 1);

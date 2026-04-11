@@ -117,7 +117,7 @@ Supported ranks: `Xk` (kyu), `Xd` (dan), `Xp` (professional), e.g. `5k`, `1d`, `
     - id2-id3 id3:W+4.5
 ```
 
-**`tournament`** — imports results from an H9 format file (used by EGD). The stage references an external `.txt` file parsed by `loadH9()`. Supports `scoringColumns` to extract score-based tiebreakers and `markExAequo` for equal-place detection.
+**`tournament`** — imports results from an H9 format file (used by EGD). The stage references an external `.txt` file parsed by `loadH9()`. Supports `scoringColumns` to extract score-based tiebreakers and `findSharedPlaces` for equal-place detection.
 
 ```yaml
 - type: tournament
@@ -125,7 +125,7 @@ Supported ranks: `Xk` (kyu), `Xd` (dan), `Xp` (professional), e.g. `5k`, `1d`, `
   scoringColumns:
     - wins
     - sos
-  markExAequo: true
+  findSharedPlaces: true
 ```
 
 **`final`** — head-to-head final; `requiredWins` sets how many wins are needed to win the match; `includePrevious` (true/false) controls whether league results count toward the final.
@@ -151,13 +151,12 @@ Supported game properties appended to a game string:
 
 ### Preparing an SGF
 
-Place SGF files under `events/[event-id]/sgf/[year]/`. Use `cleanSgf` function from `tools/sgf.ts` to remove all comments and alternative paths from sgf file (the longest will be kept).
+Place SGF files under `events/[event-id]/sgf/[year]/`.
 
 After adding SGF files, run the following to fix property names and generate board preview images:
 
 ```bash
 npm run fix:sgfs      # Fix SGF property names (e.g. RB→BR, RW→WR)
-npm run build:svgs    # Generate SVG board previews from SGF files
 ```
 
 SVG previews appear as board thumbnails on the tournament page.

@@ -1,51 +1,102 @@
 import EVENT from '@event';
+import EVENT_CONFIG from '@event/config';
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { cleanSgf } from '@tools/sgf';
+import { generateSvg } from '@tools/svg';
+import { createConverter } from 'convert-svg-to-png';
 import fg from 'fast-glob';
 import type { NextRequest } from 'next/server';
+import { executablePath } from 'puppeteer';
 
+const PNG_SIZE = 512;
 const SGF_DIR = `./events/${EVENT}/sgf`;
-
-const CONTENT_TYPES: Record<string, string> = {
-  '.sgf': 'application/x-go-sgf',
-  '.svg': 'image/svg+xml',
-  '.png': 'image/png',
-};
 
 type RouteProps = {
   params: Promise<{ path: string[] }>;
 };
 
+let converter: Awaited<ReturnType<typeof createConverter>> | undefined;
+
 export async function GET(request: NextRequest, props: RouteProps) {
   const { path: segments } = await props.params;
-  const filePath = path.join(SGF_DIR, ...segments);
+  const details = path.parse(path.join(SGF_DIR, ...segments));
 
-  const resolved = path.resolve(filePath);
-  if (!resolved.startsWith(path.resolve(SGF_DIR))) {
+  if (!path.resolve(details.dir).startsWith(path.resolve(SGF_DIR))) {
     return new Response('Not Found', { status: 404 });
   }
 
-  try {
-    const content = await fs.readFile(resolved);
-    const ext = path.extname(resolved);
-    const contentType = CONTENT_TYPES[ext] || 'application/octet-stream';
+  const sgfPath = path.resolve(path.join(details.dir, `${details.name.replace(/\.raw$/, '')}.sgf`));
 
-    return new Response(content, {
-      headers: { 'Content-Type': contentType },
-    });
-  } catch {
+  try {
+    if (details.ext === '.sgf') {
+      const content = await fs.readFile(sgfPath, 'utf-8');
+
+      return new Response(details.name.endsWith('.raw') ? content : cleanSgf(content), {
+        headers: { 'Content-Type': 'application/x-go-sgf' },
+      });
+    }
+
+    if (details.ext === '.svg') {
+      const svg = await generateSvg(sgfPath);
+
+      return new Response(svg, {
+        headers: { 'Content-Type': 'image/svg+xml' },
+      });
+    }
+
+    if (details.ext === '.png') {
+      converter ||= await createConverter({
+        launch: { executablePath },
+      });
+
+      const svg = await generateSvg(sgfPath);
+      const png = await converter.convert(svg!, {
+        width: PNG_SIZE,
+        height: PNG_SIZE,
+      });
+
+      return new Response(new Uint8Array(png), {
+        headers: { 'Content-Type': 'image/png' },
+      });
+    }
+
+    return new Response('Not Found', { status: 404 });
+  } catch (err) {
     return new Response('Not Found', { status: 404 });
   }
 }
 
 export async function generateStaticParams() {
-  const files = await fg.glob(`${SGF_DIR}/**/*.{sgf,svg,png}`);
+  const files = await fg.glob(`${SGF_DIR}/**/*.sgf`);
 
   if (!files.length) {
     return [{ path: ['imaginary-sgf'] }];
   }
 
-  return files.map((f) => ({
-    path: path.relative(SGF_DIR, f).split('/'),
-  }));
+  const output = [];
+
+  for (const file of files) {
+    const details = path.parse(path.relative(SGF_DIR, file));
+
+    output.push(
+      {
+        path: [...details.dir.split(path.sep), `${details.name}.sgf`],
+      },
+      {
+        path: [...details.dir.split(path.sep), `${details.name}.raw.sgf`],
+      },
+      {
+        path: [...details.dir.split(path.sep), `${details.name}.svg`],
+      }
+    );
+
+    if (EVENT_CONFIG.generatePngs) {
+      output.push({
+        path: [...details.dir.split(path.sep), `${details.name}.png`],
+      });
+    }
+  }
+
+  return output;
 }

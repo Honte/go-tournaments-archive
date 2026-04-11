@@ -52,7 +52,10 @@ export function cleanSgf(content: string, rootParams?: RootParams): string {
     current.data = Object.fromEntries(Object.entries(current.data).sort((a, b) => a[0].localeCompare(b[0])));
   }
 
-  return sgfParser.stringify(current);
+  return sgfParser.stringify(current, {
+    linebreak: '',
+    indent: ''
+  });
 }
 
 function cleanNode(node: SgfNode, newChildren: SgfNode[]): SgfNode {

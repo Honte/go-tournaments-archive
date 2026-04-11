@@ -15,8 +15,6 @@
     "tsc": "tsc --noEmit",
     "extract:mp-db": "tsx tools/extract.ts",
     "build:templates": "tsx tools/templates.ts",
-    "build:svgs": "tsx tools/svgs.ts",
-    "build:pngs": "tsx tools/pngs.ts",
     "sgf:fix": "tsx tools/fix.ts",
     "sgf:match": "tsx tools/sgfMatcher/index.ts",
     "fmt": "prettier --check .",

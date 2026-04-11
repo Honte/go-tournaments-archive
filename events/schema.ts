@@ -5,4 +5,5 @@ export type EventConfig = {
   defaultLocale: string;
   defaultCountry?: string;
   showCountry?: boolean;
+  generatePngs?: boolean;
 };
