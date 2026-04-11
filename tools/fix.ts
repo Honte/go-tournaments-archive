@@ -7,23 +7,28 @@ const files = await fg.glob(`./events/${EVENT}/**/*.sgf`);
 
 let toFix = 0;
 let noFix = 0;
+let corrupted = 0;
 for (const file of files) {
-  const sgf = sgfParser.parseFile(file) as SgfNode[];
-  let fixed = false;
+  try {
+    const sgf = sgfParser.parseFile(file) as SgfNode[];
+    let fixed = false;
 
-  if (fixPlayerRanks(sgf)) {
-    fixed = true;
-  }
+    if (fixPlayerRanks(sgf)) {
+      fixed = true;
+    }
 
-  if (warnAboutMissingPlayers(sgf)) {
-    console.log(`Missing players: ${file}`);
-  }
+    if (warnAboutMissingPlayers(sgf)) {
+      console.log(`Missing players: ${file}`);
+    }
 
-  if (fixed) {
-    toFix++;
-    await writeFile(file, sgfParser.stringify(sgf), 'utf-8');
-  } else {
-    noFix++;
+    if (fixed) {
+      toFix++;
+      await writeFile(file, sgfParser.stringify(sgf), 'utf-8');
+    } else {
+      noFix++;
+    }
+  } catch {
+    corrupted++;
   }
 }
 
@@ -52,4 +57,4 @@ function warnAboutMissingPlayers(sgf: SgfNode[]): boolean {
   return !root.data.PB || !root.data.PW;
 }
 
-console.log(`Fixed ${toFix} files; ${noFix} were not touched`);
+console.log(`Fixed ${toFix} files; ${noFix} were not touched; ${corrupted} files were corrupted.`);
