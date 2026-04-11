@@ -1,3 +1,4 @@
+import EVENT_CONFIG from '@event/config';
 import type { Tournament } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
@@ -19,6 +20,7 @@ type GameGroup = {
 export function GamesList({ tournament, translations }: GamesListProps) {
   const { stages, games, players } = tournament;
   const t = getTranslator(translations);
+  const gamesFilter = EVENT_CONFIG.hideGamesWithoutSgf ? (game: string) => !!games[game]?.props?.sgf : () => true;
 
   const list = stages.toReversed().reduce<GameGroup[]>((list, stage) => {
     const name = getStageName(stage, translations);
@@ -31,7 +33,7 @@ export function GamesList({ tournament, translations }: GamesListProps) {
           list.push({
             stage: name,
             name: t('table.round', String(index + 1)),
-            games: round,
+            games: round.filter(gamesFilter),
           });
         }
 
@@ -39,7 +41,7 @@ export function GamesList({ tournament, translations }: GamesListProps) {
           list.push({
             stage: name,
             name: t('table.playoffs'),
-            games: stage.playoffs,
+            games: stage.playoffs.filter(gamesFilter),
           });
         }
 
@@ -48,15 +50,19 @@ export function GamesList({ tournament, translations }: GamesListProps) {
       case 'final':
         list.push({
           name,
-          games: stage.games,
+          games: stage.games.filter(gamesFilter),
         });
         break;
       default:
         throw new Error('Unrecognized stage type');
     }
 
-    return list;
+    return list.filter((stage) => stage.games.length);
   }, []);
+
+  if (!list.length) {
+    return null;
+  }
 
   return (
     <div className="my-4">

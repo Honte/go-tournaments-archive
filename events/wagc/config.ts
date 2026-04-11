@@ -6,6 +6,7 @@ const EVENT_CONFIG: EventConfig = {
   sgfUrlPrefix: 'https://wagc.go.art.pl/sgf/',
   defaultLocale: 'en',
   showCountry: true,
+  hideGamesWithoutSgf: true,
 };
 
 export default EVENT_CONFIG;
