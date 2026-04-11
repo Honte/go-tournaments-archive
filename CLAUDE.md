@@ -23,7 +23,8 @@ npm run extract:mp-db    # Extract tournament data from MySQL DB
 npm run build:templates  # Build SVG templates for game boards
 npm run build:svgs       # Generate SVG files
 npm run build:pngs       # Convert SVGs to PNGs
-npm run fix:sgfs         # Clean SGF game files
+npm run sgf:fix          # Clean SGF game files
+npm run sgf:match        # Match SGF files to tournament games
 ```
 
 ## Architecture

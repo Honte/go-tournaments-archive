@@ -2,8 +2,8 @@ import EVENT_CONFIG from '@event/config';
 import type { Game, GamePlayer, GameProps, GamePropsArrayKey, GamePropsKey } from '@/schema/data';
 
 const ARRAY_PROPS: GamePropsArrayKey[] = ['yt'];
-const GAME_REGEX =
-  /(?<home>[a-z]+)-(?<away>[a-z]+) (?<winner>[a-z]+)(:(?<result>[?a-zA-Z!0-9+,.:]+))?( (?<props>.+))?/i;
+export const GAME_REGEX =
+  /(?<home>[a-z0-9]+)-(?<away>[a-z0-9]+) (?<winner>[a-z0-9]+)(:(?<result>[?a-zA-Z!0-9+,.:]+))?( (?<props>.+))?/i;
 const GAME_RESULT_REGEX = /^(?<color>[BW])(\+(?<score>([RT?]|\d+([,.]5)?)))?$/i;
 
 export function parseGames(repository: Record<string, Game>, games: string[]) {
