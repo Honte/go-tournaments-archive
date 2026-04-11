@@ -15,55 +15,55 @@ stages:
     games:
       - 1-2 1:B+6.5 sgf:2025/7-TianfangMa-MinoruOzeki.sgf
       - 1-3 3:W+6.5 sgf:2025/5-TianfangMa-SawooKim.sgf
-      - 1-4 1:W+C sgf:2025/8-YuChengLai-TianfangMa.sgf
-      - 1-11 1:W+C sgf:2025/1-LukasKraemer-TianfangMa.sgf
       - 1-16 1:B+C sgf:2025/3-TianfangMa-WichrichKaruehawanit.sgf
       - 1-27 1:B+31.5 sgf:2025/2-TianfangMa-TugkanEren.sgf
-      - 2-3 2:W+C sgf:2025/6-SawooKim-MinoruOzeki.sgf
       - 2-7 2:B+C sgf:2025/3-MinoruOzeki-XiaofanXu.sgf
       - 2-8 2:B+C sgf:2025/4-MinoruOzeki-BenjaminDreanGuenaizia.sgf
-      - 2-9 2:W+C sgf:2025/5-ChahineKoleejan-MinoruOzeki.sgf
       - 2-10 2:B+C sgf:2025/8-MinoruOzeki-BradyBeiMingZhang.sgf
-      - 2-14 2:W+C sgf:2025/2-StjepanMedak-MinoruOzeki.sgf
       - 2-20 2:B+C sgf:2025/1-MinoruOzeki-DuyMinhVo.sgf
-      - 3-4 3:W+11.5 sgf:2025/4-YuChengLai-SawooKim.sgf
-      - 3-5 3:W+12.5 sgf:2025/7-NaiSanChan-SawooKim.sgf
+      - 3-2 2:W+C sgf:2025/6-SawooKim-MinoruOzeki.sgf
       - 3-11 3:B+C sgf:2025/8-SawooKim-LukasKraemer.sgf
-      - 3-13 3:W+C sgf:2025/3-AlanHuang-SawooKim.sgf
+      - 4-1 1:W+C sgf:2025/8-YuChengLai-TianfangMa.sgf
+      - 4-3 3:W+11.5 sgf:2025/4-YuChengLai-SawooKim.sgf
       - 4-6 4:B+C sgf:2025/1-YuChengLai-LukasPodpera.sgf
-      - 4-8 4:W+C sgf:2025/7-BenjaminDreanGuenaizia-YuChengLai.sgf
-      - 4-9 4:W+C sgf:2025/3-ChahineKoleejan-YuChengLai.sgf
-      - 4-10 4:W+C sgf:2025/6-BradyBeiMingZhang-YuChengLai.sgf
-      - 4-13 4:W+C sgf:2025/5-AlanHuang-YuChengLai.sgf
-      - 5-10 5:W+C sgf:2025/3-BradyBeiMingZhang-NaiSanChan.sgf
-      - 5-13 5:W+T sgf:2025/8-AlanHuang-NaiSanChan.sgf
+      - 5-3 3:W+12.5 sgf:2025/7-NaiSanChan-SawooKim.sgf
       - 6-8 8:W+C sgf:2025/5-LukasPodpera-BenjaminDreanGuenaizia.sgf
       - 7-8 7:B+C sgf:2025/8-XiaofanXu-BenjaminDreanGuenaizia.sgf
+      - 8-4 4:W+C sgf:2025/7-BenjaminDreanGuenaizia-YuChengLai.sgf
       - 8-21 8:B+32.5 sgf:2025/3-BenjaminDreanGuenaizia-MilosBojanic.sgf
-      - 9-12 9:W+C sgf:2025/7-ElianIoanGrigoriu-ChahineKoleejan.sgf
-      - 10-16 10:W+7.5 sgf:2025/4-WichrichKaruehawanit-BradyBeiMingZhang.sgf
+      - 9-2 2:W+C sgf:2025/5-ChahineKoleejan-MinoruOzeki.sgf
+      - 9-4 4:W+C sgf:2025/3-ChahineKoleejan-YuChengLai.sgf
+      - 10-4 4:W+C sgf:2025/6-BradyBeiMingZhang-YuChengLai.sgf
+      - 10-5 5:W+C sgf:2025/3-BradyBeiMingZhang-NaiSanChan.sgf
+      - 11-1 1:W+C sgf:2025/1-LukasKraemer-TianfangMa.sgf
       - 11-31 11:B+C sgf:2025/2-LukasKraemer-LucianoSalerno.sgf
-      - 15-32 15:W+23.5 sgf:2025/2-OlliHella-InHangSam.sgf
+      - 12-9 9:W+C sgf:2025/7-ElianIoanGrigoriu-ChahineKoleejan.sgf
+      - 13-3 3:W+C sgf:2025/3-AlanHuang-SawooKim.sgf
+      - 13-4 4:W+C sgf:2025/5-AlanHuang-YuChengLai.sgf
+      - 13-5 5:W+T sgf:2025/8-AlanHuang-NaiSanChan.sgf
+      - 14-2 2:W+C sgf:2025/2-StjepanMedak-MinoruOzeki.sgf
+      - 16-10 10:W+7.5 sgf:2025/4-WichrichKaruehawanit-BradyBeiMingZhang.sgf
       - 16-40 16:B+C sgf:2025/2-WichrichKaruehawanit-SusanaSanchez.sgf
-      - 17-38 17:W+97.5 sgf:2025/2-LillyHu-DavidZitianHe.sgf
-      - 18-47 18:W+resign sgf:2025/2-MarcelloPoltronieri-ShouWeiLee.sgf
-      - 19-29 19:W+C sgf:2025/5-AlistairWall-AndriusPetrauskas.sgf
       - 20-23 23:W+C sgf:2025/4-DuyMinhVo-DmytroBogatskyy.sgf
       - 24-43 24:B sgf:2025/1-BendeBarcza-HelcioAlexandrePacheco.sgf
-      - 25-43 25:W+18.5 sgf:2025/2-HelcioAlexandrePacheco-CezaryCzernecki.sgf
       - 27-32 27:B+10.5 sgf:2025/1-TugkanEren-OlliHella.sgf
-      - 28-34 28:W+C sgf:2025/7-JonasEgeberg-OferZivony.sgf
-      - 30-37 30:W+C sgf:2025/4-SantiagoEspinosaUribe-KevinPrist.sgf
+      - 29-19 19:W+C sgf:2025/5-AlistairWall-AndriusPetrauskas.sgf
       - 31-36 31:B+C sgf:2025/6-LucianoSalerno-MikkelKraghMathiesen.sgf
-      - 33-46 33:W+31.5 sgf:2025/6-MarioGomezFlores-FlavienAubelle.sgf
-      - 37-47 37:W+0.5 sgf:2025/8-MarcelloPoltronieri-SantiagoEspinosaUribe.sgf
-      - 40-42 40:W+25.5 sgf:2025/1-MarcStoehr-SusanaSanchez.sgf
+      - 32-15 15:W+23.5 sgf:2025/2-OlliHella-InHangSam.sgf
+      - 34-28 28:W+C sgf:2025/7-JonasEgeberg-OferZivony.sgf
+      - 37-30 30:W+C sgf:2025/4-SantiagoEspinosaUribe-KevinPrist.sgf
+      - 38-17 17:W+97.5 sgf:2025/2-LillyHu-DavidZitianHe.sgf
       - 40-47 47:W+resign sgf:2025/6-SusanaSanchez-MarcelloPoltronieri.sgf
       - 41-43 43:W sgf:2025/4-GillesEnglebert-HelcioAlexandrePacheco.sgf
-      - 41-47 41:W+9.5 sgf:2025/5-MarcelloPoltronieri-GillesEnglebert.sgf
+      - 42-40 40:W+25.5 sgf:2025/1-MarcStoehr-SusanaSanchez.sgf
+      - 43-25 25:W+18.5 sgf:2025/2-HelcioAlexandrePacheco-CezaryCzernecki.sgf
       - 43-47 43:B sgf:2025/3-HelcioAlexandrePacheco-MarcelloPoltronieri.sgf
-      - 47-52 47:W+resign sgf:2025/7-HenryWilliams-MarcelloPoltronieri.sgf
+      - 46-33 33:W+31.5 sgf:2025/6-MarioGomezFlores-FlavienAubelle.sgf
+      - 47-18 18:W+resign sgf:2025/2-MarcelloPoltronieri-ShouWeiLee.sgf
+      - 47-37 37:W+0.5 sgf:2025/8-MarcelloPoltronieri-SantiagoEspinosaUribe.sgf
+      - 47-41 41:W+9.5 sgf:2025/5-MarcelloPoltronieri-GillesEnglebert.sgf
       - 51-52 51:B+70.5 sgf:2025/1-SilvanodePenaCastillo-HenryWilliams.sgf
+      - 52-47 47:W+resign sgf:2025/7-HenryWilliams-MarcelloPoltronieri.sgf
     unmatchedSgfs:
-      - ?-47 47:W+resign sgf:2025/4-JesusFranciscoGomezOrtuz-MarcelloPoltronieri.sgf
-      - ?-48 ?:B+C sgf:2025/6-SimonCristi-AdelinaAbdybekova.sgf
+      - ?-47 47:W+resign sgf:2025/4-JesusFranciscoGomezOrtuz-MarcelloPoltronieri.sgf # player "Jesus Ortiz" not found
+      - ?-48 ?:B+C sgf:2025/6-SimonCristi-AdelinaAbdybekova.sgf # player "Simon Pablo Cristi Martinez" not found
