@@ -9,13 +9,22 @@ import { loadSgfInfos } from './sgf';
 import { buildGamesMap, buildPlayersMap } from './tournament';
 import type { ParsedGameEntry, StageProcessResult } from './types';
 
-export async function processStage(
-  stage: InputTournamentStage,
-  sgfPaths: string[],
-  rootDir: string,
-  force: boolean
-): Promise<StageProcessResult> {
-  const tournamentFilePath = path.join(rootDir, stage.file);
+type StageProcessInput = {
+  stage: InputTournamentStage;
+  sgfPaths: string[];
+  dataDir: string;
+  sgfDir: string;
+  force: boolean;
+};
+
+export async function processStage({
+  stage,
+  sgfPaths,
+  sgfDir,
+  dataDir,
+  force,
+}: StageProcessInput): Promise<StageProcessResult> {
+  const tournamentFilePath = path.join(dataDir, stage.file);
   const tournamentFileContent = await readFile(tournamentFilePath, 'utf-8');
   const tournament = parseH9(tournamentFileContent);
 
@@ -41,7 +50,7 @@ export async function processStage(
   }
 
   const pathsToMatch = force ? sgfPaths : sgfPaths.filter((p) => !existingGamesBySgf.has(p));
-  const sgfInfos = await loadSgfInfos(rootDir, pathsToMatch);
+  const sgfInfos = await loadSgfInfos(sgfDir, pathsToMatch);
 
   const { matchedEntries, unmatchedSgfs } = matchSgfs(sgfInfos, playersMap, gamesMap, existingGamesById, force);
 

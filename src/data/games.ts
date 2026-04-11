@@ -4,22 +4,23 @@ import type { Game, GamePlayer, GameProps, GamePropsArrayKey, GamePropsKey } fro
 const ARRAY_PROPS: GamePropsArrayKey[] = ['yt'];
 export const GAME_REGEX =
   /(?<home>[a-z0-9]+)-(?<away>[a-z0-9]+) (?<winner>[a-z0-9]+)(:(?<result>[?a-zA-Z!0-9+,.:]+))?( (?<props>.+))?/i;
-const GAME_RESULT_REGEX = /^(?<color>[BW])(\+(?<score>([RT?]|\d+([,.]5)?)))?$/i;
+const STRICT_GAME_RESULT_REGEX = /^(?<color>[BW])(\+(?<score>([RT?]|\d+([,.]5)?)))?$/i;
+const LOOSE_GAME_RESULT_REGEX = /^(?<color>[BW])(\+(?<score>\S+))?$/i;
 
-export function parseGames(repository: Record<string, Game>, games: string[]) {
+export function parseGames(repository: Record<string, Game>, games: string[], strict = true) {
   const ids = [];
 
   for (const string of games) {
     const id = getGameId(repository);
 
-    repository[id] = parseGame(string, id);
+    repository[id] = parseGame(string, id, strict);
     ids.push(id);
   }
 
   return ids;
 }
 
-function parseGame(string: string, id: string): Game {
+export function parseGame(string: string, id: string, strict = true): Game {
   const parsed = string.match(GAME_REGEX);
 
   if (!parsed) {
@@ -44,7 +45,7 @@ function parseGame(string: string, id: string): Game {
   if (result === '!') {
     winnerPlayer.score = '!';
   } else if (result) {
-    const gameResult = result.match(GAME_RESULT_REGEX);
+    const gameResult = result.match(strict ? STRICT_GAME_RESULT_REGEX : LOOSE_GAME_RESULT_REGEX);
 
     if (!gameResult) {
       throw new Error(`Unrecognized game result in ${string}`);

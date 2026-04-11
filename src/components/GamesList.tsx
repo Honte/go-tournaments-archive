@@ -8,7 +8,6 @@ import { H2 } from '@/components/ui/H2';
 type GamesListProps = {
   tournament: Tournament;
   translations: Translations;
-  sgfs: Record<string, string>;
 };
 
 type GameGroup = {

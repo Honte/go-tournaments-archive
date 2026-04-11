@@ -5,7 +5,6 @@ import type { Locale } from '@/i18n/consts';
 import { SUPPORTED_LOCALES, loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
 import { getStageName } from '@/libs/stage';
-import { loadSgfs } from '@/data/sgfs';
 import { Awarded } from '@/components/Awarded';
 import { GamesList } from '@/components/GamesList';
 import { StageDetails } from '@/components/StageDetails';
@@ -64,7 +63,6 @@ export default async function Edition(props: PageProps) {
   }
 
   const { games, players, stages } = tournament;
-  const sgfs = await loadSgfs(tournament);
 
   return (
     <>
@@ -85,7 +83,7 @@ export default async function Edition(props: PageProps) {
         </div>
       ))}
 
-      <GamesList tournament={tournament} translations={translations} sgfs={sgfs} />
+      <GamesList tournament={tournament} translations={translations} />
     </>
   );
 }

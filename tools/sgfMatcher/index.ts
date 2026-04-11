@@ -29,6 +29,7 @@ if (!event || (yearArg && isNaN(filterYear!))) {
 }
 
 const dataDir = `events/${event}/data`;
+const sgfDir = `events/${event}/sgf`;
 const results: StageResult[] = [];
 
 const yamlFiles = await fg.glob(`${dataDir}/*.yml`);
@@ -60,14 +61,20 @@ for (const yamlPath of yamlFiles.sort()) {
   let yamlModified = false;
 
   for (const stage of tournaments) {
-    const sgfPaths = await findSgfs(dataDir, stage.dir ?? String(year));
+    const sgfPaths = await findSgfs(sgfDir, stage.dir ?? String(year));
 
     if (!sgfPaths.length) {
       console.log('No sgf files found.\n');
       continue;
     }
 
-    const stageResult = await processStage(stage, sgfPaths, dataDir, force);
+    const stageResult = await processStage({
+      stage,
+      sgfPaths,
+      dataDir,
+      sgfDir,
+      force,
+    });
 
     printStageReport(stageResult);
 
