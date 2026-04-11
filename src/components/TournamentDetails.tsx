@@ -17,6 +17,11 @@ export function TournamentDetails({ tournament, translations }: TournamentDetail
   const t = getTranslator(translations);
   const details: Record<string, ReactNode> = {};
 
+  if (tournament.name) {
+    details[t('details.name')] =
+      typeof tournament.name === 'string' ? tournament.name : tournament.name[translations.locale];
+  }
+
   if (tournament.location) {
     details[t('details.location')] = tournament.location;
   }

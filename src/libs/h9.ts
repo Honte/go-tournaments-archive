@@ -107,7 +107,7 @@ export function parseH9(input: string): H9Tournament {
     });
   }
 
-  const [country, location] = properties.PC.split(', ');
+  const [country, location] = properties.PC.split(/,\s?/);
 
   return {
     id: properties.TC,

@@ -230,6 +230,10 @@ export async function loadH9Tournament({
     tournamentDetails.top = winners.map((winner) => winner.join(','));
   }
 
+  if (!tournamentDetails.name) {
+    tournamentDetails.name = tournament.name;
+  }
+
   return {
     type: 'tournament',
     egd:
