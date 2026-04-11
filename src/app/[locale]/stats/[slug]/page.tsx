@@ -35,7 +35,6 @@ export default async function PlayerStatsPage({ params }: PageProps) {
   const { locale, slug } = await params;
 
   const translations = await loadTranslations(locale);
-  const t = getTranslator(translations);
   const player = await getPlayerStats(slug);
   const opponents = await getPlayerOpponentsStats(slug);
 
@@ -61,7 +60,7 @@ export default async function PlayerStatsPage({ params }: PageProps) {
 
       <div className="flex max-xl:flex-col gap-4">
         <Events player={player} translations={translations} />
-        <Opponents player={player} translations={translations} players={opponents} />
+        <Opponents opponents={opponents} translations={translations} />
       </div>
     </>
   );

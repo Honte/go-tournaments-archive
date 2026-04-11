@@ -1,4 +1,4 @@
-import { StatsPlayer } from '@/schema/data';
+import { type StatsOpponent, StatsPlayer } from '@/schema/data';
 import { calculateStats } from '@/data/stats';
 import { loadTournaments } from './load';
 
@@ -27,15 +27,27 @@ export async function getPlayerStats(playerId: string) {
 
 export async function getPlayerOpponentsStats(playerId: string) {
   const player = stats.players[playerId];
-  const opponents: Record<string, StatsPlayer> = {};
+  const opponents: Record<string, StatsOpponent> = {};
 
   for (const event of player.results) {
     for (const game of event.games) {
-      opponents[game.opponent] ||= stats.players[game.opponent];
+      if (game.opponent === 'BYE') {
+        continue;
+      }
+
+      (opponents[game.opponent] ||= {
+        id: game.opponent,
+        name: stats.players[game.opponent]!.name,
+        countries: stats.players[game.opponent]!.countries,
+        games: [],
+      }).games.push({
+        year: event.year,
+        won: game.won,
+      });
     }
   }
 
-  return opponents;
+  return Object.values(opponents);
 }
 
 export async function getAllCountriesStats() {

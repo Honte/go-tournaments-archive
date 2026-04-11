@@ -207,6 +207,16 @@ export type StatsPlayer = {
   totalWon: number;
 };
 
+export type StatsOpponent = {
+  id: string;
+  name: string;
+  countries: Set<string>
+  games: {
+    year: number
+    won: boolean
+  }[]
+}
+
 export type StatsCountryResult = {
   year: number;
   bestPlace: number;
