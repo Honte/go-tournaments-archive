@@ -55,7 +55,7 @@ SVG and PNG board previews are generated on-demand by `src/app/sgf/[...path]/rou
 
 Each event lives in `events/[event-id]/` and contains:
 
-- `config.ts` — `EventConfig` with `id`, `domain`, `sgfUrlPrefix`, `defaultLocale`, `defaultCountry`, and optional
+- `config.ts` — `EventConfig` with `id`, `domain`, `defaultLocale`, `defaultCountry`, and optional
   `showCountry` (shows country column in tables) and `generatePngs` (emit `.png` previews alongside `.svg` at build
   time)
 - `Logo.tsx` — event-specific logo component
@@ -141,7 +141,7 @@ Core types are in `src/schema/data.ts`:
 ### Environment
 
 - `EVENT` — selects the active event directory (default: `pgc`). Set to `wagc` to build the WAGC archive.
-- `SGF_URL_PREFIX` — overrides the event's `sgfUrlPrefix` from `config.ts`. If unset, the value from `config.ts` is
+- `SGF_URL_PREFIX` — overrides the event's `domain/sgf` from `config.ts`. If unset, the value from `config.ts` is
   used.
 
 ### Path Alias

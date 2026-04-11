@@ -2,8 +2,7 @@ import { EventConfig } from '@event/schema';
 
 const EVENT_CONFIG: EventConfig = {
   id: 'wagc',
-  domain: 'wagc.go.art.pl',
-  sgfUrlPrefix: 'https://wagc.go.art.pl/sgf/',
+  domain: '',
   defaultLocale: 'en',
   showCountry: true,
   hideGamesWithoutSgf: true,

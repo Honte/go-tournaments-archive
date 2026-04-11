@@ -2,8 +2,7 @@ import { EventConfig } from '@event/schema';
 
 const EVENT_CONFIG: EventConfig = {
   id: 'pgc',
-  domain: 'mp.go.art.pl',
-  sgfUrlPrefix: 'https://mp.go.art.pl/sgf/',
+  domain: 'https://mp.go.art.pl',
   defaultLocale: 'pl',
   defaultCountry: 'PL',
   generateSvgs: true,

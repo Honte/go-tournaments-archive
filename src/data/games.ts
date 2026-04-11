@@ -1,5 +1,6 @@
 import EVENT_CONFIG from '@event/config';
 import type { Game, GamePlayer, GameProps, GamePropsArrayKey, GamePropsKey } from '@/schema/data';
+import { IS_DEVELOPMENT } from '@/libs/dev';
 
 const ARRAY_PROPS: GamePropsArrayKey[] = ['yt'];
 export const GAME_REGEX =
@@ -74,7 +75,7 @@ export function parseGame(string: string, id: string, strict = true): Game {
       let value = prop.slice(pos + 1);
 
       if (type === 'sgf') {
-        const sgfPrefix = process.env.SGF_URL_PREFIX ?? EVENT_CONFIG.sgfUrlPrefix;
+        const sgfPrefix = `${IS_DEVELOPMENT ? '' : EVENT_CONFIG.domain}/sgf/`;
 
         value = `${sgfPrefix}${value}`;
         map.png = value.replace('.sgf', '.png');

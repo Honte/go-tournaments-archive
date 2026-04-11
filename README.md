@@ -168,7 +168,7 @@ SVG (and optionally PNG) board previews are generated automatically during `npm 
 ## Adding a new event
 
 1. Create `events/[event-id]/` directory with:
-   - `config.ts` — implement `EventConfig` with `id`, `domain`, `sgfUrlPrefix`, `defaultLocale`, `defaultCountry`; set `showCountry: true` for international events
+   - `config.ts` — implement `EventConfig` with `id`, `domain`, `defaultLocale`, `defaultCountry`; set `showCountry: true` for international events
    - `Logo.tsx` — event logo component
    - `colors.css` — CSS color variables
    - `i18n/pl.json`, `i18n/en.json` — translations
