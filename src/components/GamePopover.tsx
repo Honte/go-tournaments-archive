@@ -6,13 +6,6 @@ import { useCallback, useEffect, useState } from 'react';
 import type { Translations } from '@/i18n/consts';
 import { Game as GameComponent } from '@/components/Game';
 
-
-
-
-
-
-
-
 export const SHOW_POPOVER_EVENT = 'show-game-popover';
 
 type PopoverState = {

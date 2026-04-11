@@ -28,7 +28,7 @@ export function TotalStats({ translations, stats }: TotalStatsProps) {
     { label: t('stats.total.relays'), value: stats.relays },
     { label: t('stats.total.analysis'), value: stats.analysis },
     { label: t('stats.total.streams'), value: stats.streams },
-  ].filter(item => item.value !== 0);
+  ].filter((item) => item.value !== 0);
 
   return (
     <div>

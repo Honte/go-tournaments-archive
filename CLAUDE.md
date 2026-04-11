@@ -11,21 +11,30 @@ English via locale-based routing (`/pl`, `/en`). Builds to pure static HTML/CSS/
 ## Commands
 
 ```bash
-npm run dev          # Start dev server (Turbopack) at http://localhost:3000
-npm run build        # Build static output to /out
+npm run dev          # Start dev server (Turbopack) at http://localhost:3000 (EVENT=pgc)
+npm run dev:pgc      # Same, explicit EVENT=pgc
+npm run dev:wagc     # Dev server for the WAGC event
+npm run build        # Build static output to /out (uses current EVENT)
+npm run build:pgc    # Build with EVENT=pgc
+npm run build:wagc   # Build with EVENT=wagc
 npm run start        # Serve the /out directory
 npm run lint         # ESLint
 npm run tsc          # Type check without emitting
+npm run fmt          # Prettier check
+npm run fmt:write    # Prettier write
 ```
 
 **Data/asset tools** (run as needed, not part of regular dev):
 
 ```bash
 npm run extract:mp-db    # Extract tournament data from MySQL DB
-npm run build:templates  # Build SVG templates for game boards
-npm run sgf:fix          # Clean SGF game files
-npm run sgf:match        # Match SGF files to tournament games
+npm run build:templates  # Build SGF templates for game boards
+npm run sgf:fix:pgc      # Clean SGF game files (PGC)
+npm run sgf:match:pgc    # Match SGF files to tournament games (PGC)
+npm run sgf:match:wagc   # Match SGF files to tournament games (WAGC)
 ```
+
+SVG and PNG board previews are generated on-demand by `src/app/sgf/[...path]/route.ts` and emitted at build time via its `generateStaticParams` — there is no separate preview-generation step and no committed image assets.
 
 ## Architecture
 
@@ -38,14 +47,17 @@ npm run sgf:match        # Match SGF files to tournament games
 - `src/app/[locale]/stats/page.tsx` — all-time statistics page
 - `src/app/[locale]/stats/[slug]/page.tsx` — individual player stats (achievements, opponents)
 - `src/app/data/[year]/route.ts` — API route that serves tournament data as JSON
-- `src/app/sgf/[...path]/route.ts` — serves SGF, SVG, and PNG files with correct MIME types
+- `src/app/sgf/[...path]/route.ts` — serves SGF, SVG, and PNG files with correct MIME types; `generateStaticParams`
+  enumerates every `.sgf` under `events/${EVENT}/sgf/` and emits `.sgf`, `.raw.sgf`, `.svg`, and (when
+  `generatePngs` is set) `.png` variants during the static export
 
 ### Events Directory
 
 Each event lives in `events/[event-id]/` and contains:
 
 - `config.ts` — `EventConfig` with `id`, `domain`, `sgfUrlPrefix`, `defaultLocale`, `defaultCountry`, and optional
-  `showCountry` (shows country column in tables)
+  `showCountry` (shows country column in tables) and `generatePngs` (emit `.png` previews alongside `.svg` at build
+  time)
 - `Logo.tsx` — event-specific logo component
 - `colors.css` — event-specific CSS color variables
 - `i18n/pl.json`, `i18n/en.json` — event-specific translations
@@ -70,34 +82,40 @@ Tournament data lives in `events/[event-id]/data/[year].yml` (YAML, one file per
 3. `src/data/players.ts` parses player info including rank, country, EGD ID; generates slugified IDs
 4. `src/data/table.ts`, `tableLadder.ts`, `tableWithoutRounds.ts`, `final.ts` compute standings with tiebreakers (wins,
    SOS, SODOS, SOSOS, direct, starting, rank)
-5. `src/data/h9tournament.ts` parses H9 format tournament files (`.txt`) into stage data; used for WAGC and EGD-sourced
+5. `src/data/stages.ts` is the per-stage dispatcher (`parseStage`) that routes to the right table builder based on
+   stage `type`
+6. `src/data/h9tournament.ts` parses H9 format tournament files (`.txt`) into stage data; used for WAGC and EGD-sourced
    tournaments
-6. `src/data/stats.ts` aggregates cross-tournament statistics
-7. `src/data/rank.ts` converts rank strings (5k, 1d, 2p) to numeric values for sorting
-8. `src/data/sgfs.ts` loads SGF files from `events/${EVENT}/sgf/` for a tournament
+7. `src/data/stats.ts` aggregates cross-tournament statistics (including per-country medal/best-place stats)
+8. `src/data/rank.ts` converts rank strings (5k, 1d, 2p) to numeric values for sorting
 9. `src/data/index.ts` exports the main data access functions (`getTournaments()`, `getStats()`)
+
+SGF discovery is handled directly by the SGF route's `generateStaticParams` (via `fast-glob`), not by a dedicated
+loader module.
 
 ### Schema
 
 Core types are in `src/schema/data.ts`:
 
 - **Tournament** — year, location, date span, players map, stages, games map, top (medalists)
-- **Stage** — one of four types: `league`, `ladder-table`, `final`, `round-robin-table`
+- **Stage** — one of: `league`, `ladder-table`, `final`, `round-robin-table`, `tournament` (H9-imported)
 - **Game** — two players (black/white), result string, optional props (SGF, PNG, SVG, YouTube, OGS, AI)
 - **Player** — id, name, rank (e.g. `5k`, `1d`, `5p`), country code, EGD ID
 - **TableResult** — place, wins, SOS, SODOS, SOSOS, starting position, rank, games array
-- **Breaker** enum — WINS, SOS, SODOS, SOSOS, STARTING_POSITION, DIRECT_MATCH, RANK, SCORE
+- **Breaker** enum — WINS, SOS, MMS, SODOS, SOSOS, STARTING_POSITION, DIRECT_MATCH, RANK, SCORE
+- **CustomBreaker** — per-stage user-defined breaker (`order`, `hidden`, localized `translations` and `description`)
 - **Stats** / **StatsPlayer** / **StatsPlayerResult** — cross-tournament aggregate statistics
 
 ### Utility Libraries
 
 `src/libs/` contains shared utilities used across components and data layer:
 
-- `breakers.ts` — `isScoringBreaker()` type guard for tiebreaker types
+- `dates.ts` — date-span parsing helpers used by stage parsing
 - `goban.ts` — SGF parsing to board state: `sgfToBoard()`, `iterateStones()`
 - `h9.ts` — H9 international tournament format parser: `loadH9()`, `parseH9()`
 - `join.ts` — React utility: `jsxJoin()` for interspersing arrays
 - `math.ts` — `between()` min/max clamp
+- `sort.ts` — comparators used by table builders
 - `stage.ts` — `getStageName()` / `getStageNameFromType()` with i18n support
 - `table.ts` — `toPercentage()` for score calculation
 
@@ -146,5 +164,10 @@ app:
 - `extract.ts` — MySQL database extraction; converts tournament data to YAML; cleans SGFs
 - `templates.ts` — generates SGF file templates from tournament data
 - `fix.ts` — fixes SGF property names (RB→BR, RW→WR); warns about missing players
-- `svg.ts` — core `generateSvg()` function using @sabaki/go-board; 1024×1024 output with SVGO optimization
+- `svg.ts` — core `generateSvg()` function using @sabaki/go-board; 1024×1024 output with SVGO optimization. Imported
+  by the SGF route to generate previews at build time
 - `sgf.ts` — `cleanSgf()` function; traverses SGF tree, removes comments, applies root params
+- `cli.ts` — small `readCliParams()` wrapper around `node:util` `parseArgs` for tool scripts
+- `sgfMatcher/` — multi-file tool that matches SGF files in `events/${EVENT}/sgf/` to games in tournament YAML and
+  writes back `sgf:` props. Entry point `index.ts` accepts `--year/-y` and `--force/-f`. Modules: `match.ts`,
+  `stage.ts`, `tournament.ts`, `entries.ts`, `sgf.ts`, `yaml.ts`, `report.ts`, `types.ts`, `utils.ts`

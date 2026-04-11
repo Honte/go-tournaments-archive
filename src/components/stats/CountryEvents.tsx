@@ -54,8 +54,7 @@ export function CountryEvents({ country, translations }: CountryEventsProps) {
       }
     }
 
-    return list
-      .sort((a, b) => a.year - b.year);
+    return list.sort((a, b) => a.year - b.year);
   }, [country]);
 
   const columns = useMemo<ColumnDef<CountryEventRow>[]>(

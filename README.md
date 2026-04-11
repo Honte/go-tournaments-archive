@@ -6,8 +6,6 @@ A multi-event Go tournament archive — a static Next.js site (no server require
 
 - [Polish Go Championships Archive](https://mp.go.art.pl)
 
-**Tech stack:** Next.js, React 19, TypeScript, Tailwind CSS 4, YAML data files, SGF game records.
-
 ## Prerequisites
 
 - Node.js 18 or later
@@ -15,6 +13,8 @@ A multi-event Go tournament archive — a static Next.js site (no server require
 - MySQL client — only needed for `npm run extract:mp-db` (data import tool)
 
 ## Development
+
+**Tech stack:** Next.js, React 19, TypeScript, Tailwind CSS 4, YAML data files, SGF game records.
 
 1. Install dependencies: `npm install`
 2. Run the development server: `npm run dev`
@@ -61,7 +61,7 @@ stages: # tournament can have multiple stages
     egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T241107A # optional EGD link
     time: fischer 60m + 30s # string with time setup for the stage
     komi: 6.5
-    breakers: # order of breakers, supported: wins, sos, sodos, sosos, direct, starting, rank
+    breakers: # order of breakers, supported: wins, sos, mms, sodos, sosos, direct, starting, rank
       - wins
       - sodos
       - direct
@@ -151,15 +151,19 @@ Supported game properties appended to a game string:
 
 ### Preparing an SGF
 
-Place SGF files under `events/[event-id]/sgf/[year]/`.
-
-After adding SGF files, run the following to fix property names and generate board preview images:
+Place SGF files under `events/[event-id]/sgf/[year]/`. Then:
 
 ```bash
-npm run fix:sgfs      # Fix SGF property names (e.g. RB→BR, RW→WR)
+npm run sgf:fix:pgc      # Fix SGF property names (e.g. RB→BR, RW→WR)
+npm run sgf:match:pgc    # Match SGF files to games in YAML and write back `sgf:` props
 ```
 
-SVG previews appear as board thumbnails on the tournament page.
+`sgf:match:pgc` accepts `-y <year>` to limit to one year and `-f` to force overwrites. Use `:wagc` variants for the
+WAGC event.
+
+SVG (and optionally PNG) board previews are generated automatically during `npm run build` from the SGF files in
+`events/[event-id]/sgf/` — there is no manual preview step and the images are not committed to the repo. Set
+`generatePngs: true` in the event's `config.ts` to also emit PNG variants.
 
 ## Adding a new event
 

@@ -54,7 +54,7 @@ export function cleanSgf(content: string, rootParams?: RootParams): string {
 
   return sgfParser.stringify(current, {
     linebreak: '',
-    indent: ''
+    indent: '',
   });
 }
 

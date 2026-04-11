@@ -8,9 +8,9 @@ import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { getStageNameFromType } from '@/libs/stage';
 import { toPercentage } from '@/libs/table';
-import { CountryLink } from '@/components/ui/CountryLink';
 import { YearLink } from '@/components/YearLink';
 import { StatsTable } from '@/components/table/StatsTable';
+import { CountryLink } from '@/components/ui/CountryLink';
 import { H2 } from '@/components/ui/H2';
 
 type EventsProps = {
