@@ -7,6 +7,7 @@ const EVENT_CONFIG: EventConfig = {
   defaultLocale: 'en',
   showCountry: true,
   hideGamesWithoutSgf: true,
+  generateSvgs: true,
 };
 
 export default EVENT_CONFIG;

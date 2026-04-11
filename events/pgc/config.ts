@@ -6,6 +6,7 @@ const EVENT_CONFIG: EventConfig = {
   sgfUrlPrefix: 'https://mp.go.art.pl/sgf/',
   defaultLocale: 'pl',
   defaultCountry: 'PL',
+  generateSvgs: true,
 };
 
 export default EVENT_CONFIG;

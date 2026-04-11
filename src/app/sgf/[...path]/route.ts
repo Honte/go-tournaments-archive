@@ -85,11 +85,14 @@ export async function generateStaticParams() {
       },
       {
         path: [...details.dir.split(path.sep), `${details.name}.raw.sgf`],
-      },
-      {
-        path: [...details.dir.split(path.sep), `${details.name}.svg`],
       }
     );
+
+    if (EVENT_CONFIG.generateSvgs) {
+      output.push({
+        path: [...details.dir.split(path.sep), `${details.name}.svg`],
+      });
+    }
 
     if (EVENT_CONFIG.generatePngs) {
       output.push({
