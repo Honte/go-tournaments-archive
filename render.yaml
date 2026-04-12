@@ -1,0 +1,39 @@
+services:
+  - type: web
+    name: go-archive-pgc
+    runtime: static
+    branch: main
+    buildCommand: npm ci && npm run build
+    staticPublishPath: ./out
+    pullRequestPreviewsEnabled: false
+    envVars:
+      - key: EVENT
+        value: pgc
+      - key: NODE_VERSION
+        value: "24"
+
+  - type: web
+    name: go-archive-wagc
+    runtime: static
+    branch: main
+    buildCommand: npm ci && npm run build
+    staticPublishPath: ./out
+    pullRequestPreviewsEnabled: false
+    envVars:
+      - key: EVENT
+        value: wagc
+      - key: NODE_VERSION
+        value: "24"
+
+  - type: web
+    name: go-archive-pwgc
+    runtime: static
+    branch: main
+    buildCommand: npm ci && npm run build
+    staticPublishPath: ./out
+    pullRequestPreviewsEnabled: false
+    envVars:
+      - key: EVENT
+        value: pwgc
+      - key: NODE_VERSION
+        value: "24"
