@@ -38,7 +38,7 @@ jobs:
 
   deploy-pgc:
     needs: check
-    if: github.event_name == 'push' || inputs.event == 'all' || inputs.event == 'pgc'
+    if: inputs.event == 'all' || inputs.event == 'pgc'
     runs-on: ubuntu-latest
     environment: pgc-${{ inputs.target || 'dev' }}
     steps:
@@ -65,8 +65,7 @@ jobs:
 
   deploy-wagc:
     needs: check
-    if: inputs.event == 'all' || inputs.event == 'wagc'
-    # Skipped on push — only pgc-dev auto-deploys
+    if: inputs.event == 'all' || inputs.event == 'wagc' || github.event_name == 'push'
     runs-on: ubuntu-latest
     environment: wagc-${{ inputs.target }}
     steps:
