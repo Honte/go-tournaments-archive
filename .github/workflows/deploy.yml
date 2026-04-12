@@ -34,14 +34,11 @@ jobs:
       - run: npm run lint
       - run: npm run tsc
 
-  deploy:
+  deploy-pgc:
     needs: check
+    if: inputs.event == 'all' || inputs.event == 'pgc'
     runs-on: ubuntu-latest
-    if: inputs.event == 'all' || inputs.event == matrix.event
-    strategy:
-      matrix:
-        event: [pgc, wagc]
-    environment: ${{ matrix.event }}-${{ inputs.target }}
+    environment: pgc-${{ inputs.target }}
     steps:
       - uses: actions/checkout@v4
 
@@ -52,8 +49,35 @@ jobs:
 
       - run: npm ci
 
-      - name: Build ${{ matrix.event }}
-        run: npm run build:${{ matrix.event }}
+      - name: Build pgc
+        run: npm run build:pgc
+
+      - name: Deploy to FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ vars.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./out/
+          server-dir: ${{ vars.FTP_PATH }}
+
+  deploy-wagc:
+    needs: check
+    if: inputs.event == 'all' || inputs.event == 'wagc'
+    runs-on: ubuntu-latest
+    environment: wagc-${{ inputs.target }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Build wagc
+        run: npm run build:wagc
 
       - name: Deploy to FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
