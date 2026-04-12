@@ -10,7 +10,7 @@ players:
 top:
   - jk
   - km
-  - wm,wd
+  - wm,wg
 stages:
   - type: ladder-table
     date: 1980-10-30 - 1980-11-02
