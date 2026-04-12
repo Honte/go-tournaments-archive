@@ -2,7 +2,7 @@ name: Deploy
 
 on:
   push:
-    branches: [actions]
+    branches: [main]
   workflow_dispatch:
     inputs:
       event:
@@ -14,7 +14,7 @@ on:
           - pgc
           - wagc
           - pwgc
-        default: pwgc
+        default: all
       target:
         description: 'Target environment'
         required: true
@@ -47,7 +47,7 @@ jobs:
 
   deploy-pgc:
     needs: check
-    if: ${{ inputs.event == 'all' || inputs.event == 'pgc' }}
+    if: ${{ inputs.event == null || inputs.event == 'all' || inputs.event == 'pgc' }}
     runs-on: ubuntu-latest
     environment: pgc-${{ inputs.target || 'dev' }}
     steps:
@@ -83,7 +83,7 @@ jobs:
 
   deploy-wagc:
     needs: check
-    if: ${{ inputs.event == 'all' || inputs.event == 'wagc' }}
+    if: ${{ inputs.event == null || inputs.event == 'all' || inputs.event == 'wagc' }}
     runs-on: ubuntu-latest
     environment: wagc-${{ inputs.target || 'dev' }}
     steps:
