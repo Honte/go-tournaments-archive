@@ -2,24 +2,17 @@ website: https://wagc2020.org/en/
 stages:
   - type: tournament
     file: wagc2021.txt
+    time: 60min + 3x30s japanese
+    komi: 6.5
     scoringColumns:
       - null
       - score
       - wins
       - sos
       - sodos
-      - place
     breakers:
-      - place
       - score
       - wins
       - sos
       - sodos
     findSharedPlaces: true
-    customBreakers:
-      place:
-        order: 'asc'
-        hidden: true
-        translations:
-          en: Place
-          pl: Miejsce

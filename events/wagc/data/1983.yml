@@ -1,6 +1,7 @@
 stages:
   - type: tournament
     file: wagc1983.txt
+    komi: 5.5
     scoringColumns:
       - wins
       - null

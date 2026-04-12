@@ -2,6 +2,8 @@ website: https://www.nihonkiin.or.jp/event/amakisen/worldama/33/e/index.html
 stages:
   - type: tournament
     file: wagc2012.txt
+    time: 60min + 3x30s japanese
+    komi: 6.5
     scoringColumns:
       - wins
       - top8

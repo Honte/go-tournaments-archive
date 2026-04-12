@@ -2,6 +2,8 @@ website: https://www.nihonkiin.or.jp/event/amakisen/worldama/29/29th-top-en_ama.
 stages:
   - type: tournament
     file: wagc2008.txt
+    time: 90min + 10 min/15 moves canadian    
+    komi: 6.5
     scoringColumns:
       - wins
       - null

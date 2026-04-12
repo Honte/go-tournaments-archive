@@ -1,6 +1,7 @@
 stages:
   - type: tournament
     file: wagc2023.txt
+    komi: 6.5
     scoringColumns:
       - wins
       - sos

@@ -2,6 +2,7 @@ website: https://www.nihonkiin.or.jp/event/amakisen/worldama/18/list018e.htm
 stages:
   - type: tournament
     file: wagc1996.txt
+    komi: 5.5
     scoringColumns:
       - wins
       - null

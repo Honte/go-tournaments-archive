@@ -2,6 +2,8 @@ website: https://www.nihonkiin.or.jp/event/amakisen/worldama/25/index-e.htm
 stages:
   - type: tournament
     file: wagc2004.txt
+    time: 90min + 10 min/15 moves canadian
+    komi: 6.5  
     scoringColumns:
       - wins
       - null

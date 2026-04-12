@@ -2,6 +2,7 @@ website: https://www.nihonkiin.or.jp/event/amakisen/worldama/40/index.html
 stages:
   - type: tournament
     file: wagc2019.txt
+    komi: 6.5
     scoringColumns:
       - wins
       - sos
@@ -11,3 +12,84 @@ stages:
       - sos
       - sosos
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+0.5 sgf:2019/6-ChenWang-JaesungLee.sgf
+      - 1-12 1:B+R sgf:2019/2-ChenWang-ThomasDebarre.sgf
+      - 2-4 2:B+R sgf:2019/8-JaesungLeei-AlbertYen.sgf
+      - 2-6 2:B+R sgf:2019/2-JaesungLee-QiyouWu.sgf
+      - 2-8 2:B+R sgf:2019/7-JaesungLee-TsubasaKawaguchi.sgf
+      - 2-9 2:B+R sgf:2019/3-JaesungLee-JieHuiKwa.sgf
+      - 2-10 2:B+7.5 sgf:2019/4-FaishalUmarFitrah-JaesungLee.sgf
+      - 2-27 2:B+R sgf:2019/1-JaesungLee-AndrewKay.sgf
+      - 3-1 1:W+R sgf:2019/7-NaiSanChan-ChenWang.sgf
+      - 3-2 2:W+T sgf:2019/5-NaiSanChan-JaesungLee.sgf
+      - 3-8 3:B+T sgf:2019/8-NaiSanChan-TsubasaKawaguchi.sgf
+      - 4-1 1:W+R sgf:2019/4-AlbertYen-ChenWang.sgf
+      - 5-4 4:W+T sgf:2019/7-PalBalogh-AlbertYen.sgf
+      - 5-11 11:W+9.5 sgf:2019/2-PalBalogh-FuTeYang.sgf
+      - 5-36 5:B+R sgf:2019/1-PalBalogh-NoelMitchell.sgf
+      - 6-8 8:W+R sgf:2019/6-QiyouWu-TsubasaKawaguchi.sgf
+      - 6-14 6:B+R sgf:2019/8-QiyouWu-PhuocDinhTran.sgf
+      - 7-29 7:B+32.5 sgf:2019/7-DmytroBogatskyy-TimotejSuc.sgf
+      - 8-1 1:W+R sgf:2019/5-TsubasaKawaguchi-ChenWang.sgf
+      - 8-9 8:B+R sgf:2019/4-TsubasaKawaguchi-JieHuiKwa.sgf
+      - 8-30 8:B+R sgf:2019/1-TsubasaKawaguchi-WaiChongChan.sgf
+      - 8-40 8:B+16.5 sgf:2019/3-TsubasaKawaguchi-ElianIoanGrigoriu.sgf
+      - 9-1 1:W+R sgf:2019/8-JieHuiKwa-ChenWang.sgf
+      - 9-11 9:B+0.5 sgf:2019/7-JieHuiKwa-FuTeYang.sgf
+      - 10-5 5:W+R sgf:2019/8-FaishalUmarFitrah-PalBalogh.sgf
+      - 10-11 10:B+0.5 sgf:2019/5-FaishalUmarFitrah-FuTeYang.sgf
+      - 11-3 3:W+3.5 sgf:2019/4-FuTeYang-NaiSanChan.sgf
+      - 11-16 11:B+R sgf:2019/6-FuTeYang-KoichiroHabu.sgf
+      - 11-19 11:B+R sgf:2019/8-FuTeYang-SimaoGoncalves.sgf
+      - 14-1 1:W+R sgf:2019/1-PhuocDinhTran-ChenWang.sgf
+      - 14-40 14:B+2.50 sgf:2019/5-PhuocDinhTran-ElianIoanGrigoriu.sgf
+      - 15-9 9:W+R sgf:2019/1-GeertGroenen-JieHuiKwa.sgf
+      - 16-7 7:W+R sgf:2019/8-KoichiroHabu-DmytroBogatskyy.sgf
+      - 16-24 24:W+R sgf:2019/1-KoichiroHabu-JonasWelticke.sgf
+      - 17-11 11:W+R sgf:2019/3-JanSimara-FuTeYang.sgf
+      - 17-47 17:B+R sgf:2019/1-JanSimara-CristobalBravoMarvan.sgf
+      - 18-7 7:W+R sgf:2019/2-OferZivony-DmytroBogatskyy.sgf
+      - 18-16 16:W+R sgf:2019/5-OferZivony-KoichiroHabu.sgf
+      - 20-13 13:W+2.5 sgf:2019/2-WichrichKaruehawanit-KaikunXie.sgf
+      - 22-8 8:W+23.5 sgf:2019/2-AlessandroMartinelli-TsubasaKawaguchi.sgf
+      - 23-1 1:W+24.5 sgf:2019/3-TimurSankin-ChenWang.sgf
+      - 23-4 4:W+4.5 sgf:2019/5-TimurSankin-AlbertYen.sgf
+      - 23-10 10:W+8.5 sgf:2019/7-TimurSankin-FaishalUmarFitrah.sgf
+      - 25-13 13:W+0.5 sgf:2019/4-CaryJin-KaikunXie.sgf
+      - 25-24 24:W+12.5 sgf:2019/7-CaryJin-JonasWelticke.sgf
+      - 26-53 26:B+R sgf:2019/2-FrancoisGonze-BirandAdal.sgf
+      - 27-21 27:B+R sgf:2019/4-AndrewKay-StjepanMestrovic.sgf
+      - 28-15 15:W+R sgf:2019/6-JesseSavo-GeertGroenen.sgf
+      - 28-38 28:B+4.5 sgf:2019/2-JesseSavo-ShoukaiLee.sgf
+      - 28-41 28:B+2.5 sgf:2019/4-JesseSavo-SoerenOhlenbusch.sgf
+      - 29-12 12:W+33.5 sgf:2019/1-TimotejSuc-ThomasDebarre.sgf
+      - 32-20 20:W+17.5 sgf:2019/8-MilosBojanic-WichrichKaruehawanit.sgf
+      - 32-44 44:W+R sgf:2019/3-MilosBojanic-MiguelEscribamoPerez.sgf
+      - 34-37 37:W+0.5 sgf:2019/5-MichalKralik-DimitrisRegginos.sgf
+      - 34-56 34:B+69.5 sgf:2019/2-MichalKralik-TeodorNedev.sgf
+      - 35-19 19:W+16.5 sgf:2019/5-VladasZaleskas-SimaoGoncalves.sgf
+      - 36-34 34:W+10.5 sgf:2019/6-NoelMitchell-MichalKralik.sgf
+      - 38-44 38:B+R sgf:2019/7-ShoukaiLee-MiguelEscribamoPerez.sgf
+      - 39-37 39:B+R sgf:2019/6-IljaBusko-DimitrisRegginos.sgf
+      - 39-59 39:B+R sgf:2019/3-IljaBusko-FengYangLim.sgf
+      - 41-31 31:W+16.5 sgf:2019/7-SoerenOhlenbusch-CarlNicolasSchroterMendez.sgf
+      - 42-11 11:W+14.50 sgf:2019/1-SeverinHanevik-FuTeYang.sgf
+      - 42-32 32:W+16.5 sgf:2019/6-SeverinHanevik-MilosBojanic.sgf
+      - 43-21 21:W+R sgf:2019/6-HelcioAlexandrePacheco-StjepanMestrovic.sgf
+      - 43-35 35:W+33.5 sgf:2019/3-HelcioAlexandrePacheco-VladasZaleskas.sgf
+      - 45-23 23:W+R sgf:2019/1-MartinLi-TimurSankin.sgf
+      - 46-44 44:W+6.5 sgf:2019/4-BrandalJosueHenaoRoa-MiguelEscribamoPerez.sgf
+      - 46-45 45:W+26.5 sgf:2019/7-BrandalJosueHenaoRoa-MartinLi.sgf
+      - 46-49 46:B+R sgf:2019/6-BrandalJosueHenaoRoa-ThomasMarkusKoller.sgf
+      - 48-31 31:W+21.5 sgf:2019/3-NarendraSowal-CarlNicolasSchroterMendez.sgf
+      - 48-51 48:B+26.5 sgf:2019/5-NarendraSowal-MaximilianPeter.sgf
+      - 49-57 49:B+R sgf:2019/8-ThomasMarkusKoller-CelesteAbat.sgf
+      - 50-33 33:W+22.5 sgf:2019/3-LloydRubidge-AnibalGomezDelafuente.sgf
+      - 50-56 50:B+19.5 sgf:2019/8-LloydRubidge-TeodorNedev.sgf
+      - 52-59 52:B+R sgf:2019/4-JorgeEmilioMurilloLux-FengYangLim.sgf
+      - 54-55 54:B+T sgf:2019/2-NyambaatarSersendemid-BahadurTahirbayov.sgf
+      - 55-33 33:W+33.5 sgf:2019/6-BahadurTahirbayov-AnibalGomezDelafuente.sgf
+      - 57-39 39:W+76.5 sgf:2019/4-CelesteAbat-IljaBusko.sgf
+      - 58-51 51:W+T sgf:2019/3-SupravatPal-MaximilianPeter.sgf
+      - 58-52 52:W+14.5 sgf:2019/5-SupravatPal-JorgeEmilioMurilloLux.sgf

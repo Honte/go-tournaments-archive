@@ -2,15 +2,8 @@ website: https://www.nihonkiin.or.jp/event/amakisen/worldama/44/index.html
 stages:
   - type: tournament
     file: wagc2024.txt
-    scoringColumns:
-      - score
-      - sos
-      - sosos
-    breakers:
-      - score
-      - sos
-      - sosos
-    findSharedPlaces: true
+    time: 60min + 3x30s japanese
+    komi: 6.5
     games:
       - 1-4 1:B+R sgf:2024/4-BaoxiangBai-PongsakarnSornarra.sgf
       - 1-5 1:B+T sgf:2024/8-BaoxiangBai-ShengChiehLo.sgf
@@ -41,6 +34,7 @@ stages:
       - 26-19 26:B+R sgf:2024/5-KoichiroHabu-VesaLaatikainen.sgf
       - 27-6 6:W+0.5 sgf:2024/3-DucAnhPham-CsabaMero.sgf
       - 29-58 29:B+R sgf:2024/1-DmytroYatsenko-ErnurEmiliev.sgf
+      - 31-16 16:W+R sgf:2024/6-RenaudGaban-StjepanMestrovic.sgf
       - 37-15 15:W+R sgf:2024/1-NikolaTsarigradski-DavideBernardis.sgf
       - 40-11 11:W+30.5 sgf:2024/4-CharlieAakerblom-DanielGourdeau.sgf
       - 43-38 43:B+23.5 sgf:2024/1-GregorButala-PascalAlejandroNunezMariot.sgf
@@ -51,5 +45,3 @@ stages:
       - 49-36 36:W+24.5 sgf:2024/8-AlejandroRafaelCurielSanchez-ArmelDavidWolff.sgf
       - 55-50 50:W+14.5 sgf:2024/6-JorgeEmilioMurilloLux-EtugenBayarjargal.sgf
       - 56-21 21:W+127.5 sgf:2024/3-SenHeiGui-JohannesObenaus.sgf
-    unmatchedSgfs:
-      - 31-16 ? sgf:2024/6-RenaudGaban-StjepanMestrovic.sgf # corrupted SGF
