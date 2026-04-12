@@ -1,6 +1,8 @@
 name: Deploy
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
     inputs:
       event:
@@ -36,9 +38,9 @@ jobs:
 
   deploy-pgc:
     needs: check
-    if: inputs.event == 'all' || inputs.event == 'pgc'
+    if: github.event_name == 'push' || inputs.event == 'all' || inputs.event == 'pgc'
     runs-on: ubuntu-latest
-    environment: pgc-${{ inputs.target }}
+    environment: pgc-${{ inputs.target || 'dev' }}
     steps:
       - uses: actions/checkout@v4
 
@@ -64,6 +66,7 @@ jobs:
   deploy-wagc:
     needs: check
     if: inputs.event == 'all' || inputs.event == 'wagc'
+    # Skipped on push — only pgc-dev auto-deploys
     runs-on: ubuntu-latest
     environment: wagc-${{ inputs.target }}
     steps:
