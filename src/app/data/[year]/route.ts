@@ -1,4 +1,6 @@
+import EVENT_CONFIG from '@event/config';
 import { getTournaments } from '@/data';
+import { mapValues } from 'lodash-es';
 import { notFound } from 'next/navigation';
 import type { NextRequest } from 'next/server';
 
@@ -21,7 +23,24 @@ export async function GET(request: NextRequest, props: PageProps) {
     return notFound();
   }
 
-  return Response.json(tournament);
+  return Response.json({
+    ...tournament,
+    games: mapValues(tournament.games, (game) => {
+      if (!game.props.sgf) {
+        return game;
+      }
+
+      return {
+        ...game,
+        props: {
+          ...game.props,
+          sgf: EVENT_CONFIG.domain + game.props.sgf,
+          svg: game.props.svg ? EVENT_CONFIG.domain + game.props.svg : undefined,
+          png: game.props.png ? EVENT_CONFIG.domain + game.props.png : undefined,
+        },
+      };
+    }),
+  });
 }
 
 export async function generateStaticParams() {
