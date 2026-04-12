@@ -7,7 +7,7 @@ import { generateSvg } from '@tools/svg';
 import { createConverter } from 'convert-svg-to-png';
 import fg from 'fast-glob';
 import type { NextRequest } from 'next/server';
-import { executablePath } from 'puppeteer';
+import { generatePng } from '@tools/png';
 
 const PNG_SIZE = 512;
 const SGF_DIR = `./events/${EVENT}/sgf`;
@@ -46,15 +46,8 @@ export async function GET(request: NextRequest, props: RouteProps) {
     }
 
     if (details.ext === '.png') {
-      converter ||= await createConverter({
-        launch: { executablePath },
-      });
-
       const svg = await generateSvg(sgfPath);
-      const png = await converter.convert(svg!, {
-        width: PNG_SIZE,
-        height: PNG_SIZE,
-      });
+      const png = await generatePng(svg!, PNG_SIZE);
 
       return new Response(new Uint8Array(png), {
         headers: { 'Content-Type': 'image/png' },
