@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-export default async function PlayerStatsPage({ params }: PageProps) {
+export default async function CountryStatsPage({ params }: PageProps) {
   if (!EVENT_CONFIG.showCountry) {
     return notFound();
   }

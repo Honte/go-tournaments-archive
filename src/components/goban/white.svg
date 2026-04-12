@@ -1,1 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 31.335 33.933"><defs><linearGradient id="white_svg__e"><stop offset="0" style="stop-color:#e7e7e7;stop-opacity:1"/><stop offset=".814" style="stop-color:#cbcbcb;stop-opacity:1"/><stop offset="1" style="stop-color:#494949;stop-opacity:1"/></linearGradient><linearGradient id="white_svg__d"><stop offset="0" style="stop-color:gray;stop-opacity:1"/><stop offset=".814" style="stop-color:gray;stop-opacity:.39607843"/><stop offset="1" style="stop-color:gray;stop-opacity:0"/></linearGradient><linearGradient id="white_svg__c"><stop offset="0" style="stop-color:#f9f9f9;stop-opacity:0"/><stop offset=".874" style="stop-color:#edd996;stop-opacity:0"/><stop offset=".955" style="stop-color:#e1ba32;stop-opacity:.18518518"/><stop offset="1" style="stop-color:#c48800;stop-opacity:.32549021"/></linearGradient><linearGradient id="white_svg__b"><stop offset="0" style="stop-color:#000;stop-opacity:1"/><stop offset=".844" style="stop-color:#000;stop-opacity:.41176471"/><stop offset="1" style="stop-color:#000;stop-opacity:0"/></linearGradient><linearGradient id="white_svg__a"><stop offset="0" style="stop-color:#2e2e2e;stop-opacity:1"/><stop offset="1" style="stop-color:#080808;stop-opacity:1"/></linearGradient><radialGradient xlink:href="#white_svg__c" id="white_svg__l" cx="18.733" cy="17.819" r="14.537" fx="18.733" fy="17.819" gradientUnits="userSpaceOnUse"/><radialGradient xlink:href="#white_svg__e" id="white_svg__g" cx="48.811" cy="105.224" r="14.537" fx="48.811" fy="105.224" gradientTransform="matrix(.67063 1.10752 -1.48909 .90168 146.606 -130.817)" gradientUnits="userSpaceOnUse"/><radialGradient xlink:href="#white_svg__b" id="white_svg__f" cx="6.32" cy="26.948" r="14.763" fx="6.32" fy="26.948" gradientTransform="matrix(.01477 1.34275 -1.26706 .01447 53.437 9.267)" gradientUnits="userSpaceOnUse"/><clipPath id="white_svg__h" clipPathUnits="userSpaceOnUse"><circle cx="18.733" cy="17.819" r="14.537" style="opacity:1;fill:none;fill-opacity:1;stroke:red;stroke-width:.92546928;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"/></clipPath></defs><g style="display:inline;opacity:1"><ellipse cx="19.989" cy="20.6" rx="15.19" ry="16.263" style="display:inline;opacity:1;fill:url(#white_svg__f);fill-opacity:1;stroke:none;stroke-width:1.0005765;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" transform="translate(-3.843 -2.93)"/></g><g style="display:inline" transform="translate(-3.843 -2.93)"><circle cx="18.733" cy="17.819" r="14.537" style="opacity:1;fill:url(#white_svg__g);fill-opacity:1;stroke:none;stroke-width:.92546928;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"/><circle cx="17.421" cy="13.721" r="14.537" clip-path="url(#white_svg__h)" style="opacity:1;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:.92546928;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"/></g><g style="display:inline;opacity:.82599996"><circle cx="18.733" cy="17.819" r="14.537" style="display:inline;opacity:1;fill:url(#white_svg__l);fill-opacity:1;stroke:none;stroke-width:.35277778;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" transform="translate(-3.843 -2.93)"/></g><g style="display:inline;opacity:1"><path d="M15.008.85C7.279.85 1.014 7.364 1.014 15.4a15 15 0 0 0 1.557 6.663c-.717-1.774-.827-3.837-.831-5.762C1.309 8.044 6.958 1.506 14.75 1.54c5.347-.557 10.93 4.028 13.157 8.257C25.734 4.383 20.65.856 15.007.85" style="opacity:1;fill:#fff;fill-opacity:1;stroke:none;stroke-width:1.25091147;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" transform="translate(-.11 -.11)"/></g><g style="display:inline;opacity:.601"><circle cx="18.733" cy="17.819" r="14.537" style="opacity:1;fill:none;fill-opacity:1;stroke:#000;stroke-width:.70555556;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" transform="translate(-3.843 -2.93)"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1.0827" viewBox="0 0 1 1.0827">
+    <defs>
+        <radialGradient href="#wa" id="wg" cx=".4751" cy=".4751" r=".4639" fx=".5976" fy=".5686"
+                        gradientUnits="userSpaceOnUse"/>
+        <radialGradient href="#wb" id="we" cx="1.5577" cy="3.3572" r=".4639" fx="1.5577" fy="3.3572"
+                        gradientTransform="rotate(59 6.0434 2.0634)scale(1.3 1.74)" gradientUnits="userSpaceOnUse"/>
+        <radialGradient href="#wc" id="wd" cx=".2017" cy=".8599" r=".4710" fx=".2017" fy=".8599"
+                        gradientTransform="matrix(.01 1.34 -1.27 .01 1.7048 .2958)" gradientUnits="userSpaceOnUse"/>
+        <linearGradient id="wb">
+            <stop offset="0" stop-color="#e7e7e7"/>
+            <stop offset=".81" stop-color="#cbcbcb"/>
+            <stop offset="1" stop-color="#494949"/>
+        </linearGradient>
+        <linearGradient id="wa">
+            <stop offset="0" stop-color="#f9f9f9" stop-opacity="0"/>
+            <stop offset=".87" stop-color="#edd996" stop-opacity="0"/>
+            <stop offset=".95" stop-color="#e1ba32" stop-opacity=".19"/>
+            <stop offset="1" stop-color="#c48800" stop-opacity=".33"/>
+        </linearGradient>
+        <linearGradient id="wc">
+            <stop offset="0"/>
+            <stop offset=".84" stop-opacity=".41"/>
+            <stop offset="1" stop-opacity="0"/>
+        </linearGradient>
+        <clipPath id="wf" clipPathUnits="userSpaceOnUse">
+            <circle cx=".4751" cy=".4751" r=".4639" fill="none" stroke-width=".0297"/>
+        </clipPath>
+    </defs>
+    <ellipse cx=".5154" cy=".5639" fill="url(#wd)" rx=".4847" ry=".5188"/>
+    <circle cx=".4751" cy=".4751" r=".4639" fill="url(#we)"/>
+    <circle cx=".4333" cy=".3443" r=".4639" fill="#f9f9f9" clip-path="url(#wf)"/>
+    <circle cx=".4751" cy=".4751" r=".4639" fill="url(#wg)" opacity=".83"/>
+    <path fill="#fff"
+          d="M.4754.0236C.2287.0236.0287.2313.0287.4879a.4787.4787 0 0 0 .0498.2124c-.023-.0565-.0265-.1222-.0265-.1837C.0383.253.2185.0447.4671.0456.6379.0278.816.1742.8870.3092A.4467.4467 0 0 0 .4754.0236"/>
+    <circle cx=".4751" cy=".4751" r=".4639" fill="none" stroke="#000" stroke-width=".0227" opacity="601"/>
+</svg>

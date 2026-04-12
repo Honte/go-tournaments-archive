@@ -1,70 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 31.335 33.933">
+<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1.0827" viewBox="0 0 1 1.0827">
     <defs>
-        <linearGradient id="black_svg__e">
-            <stop offset="0" style="stop-color:#e7e7e7;stop-opacity:1"/>
-            <stop offset=".814" style="stop-color:#cbcbcb;stop-opacity:1"/>
-            <stop offset="1" style="stop-color:#494949;stop-opacity:1"/>
+        <radialGradient id="bf" cx="1.5577" cy="3.3572" r=".4639" fx="1.5577" fy="3.3572"
+                        gradientTransform="translate(-.1225 -.0935) rotate(59 6.0434 2.0634)scale(1.3 1.74)"
+                        gradientUnits="userSpaceOnUse"
+                        href="#ba"/>
+        <radialGradient id="bi" cx=".4751" cy=".4751" r=".4639" fx=".4751" fy=".4751" gradientUnits="userSpaceOnUse"
+                        href="#bb"/>
+        <radialGradient id="bh" cx="-.3101" cy=".2399" r=".0913" fx="-.3101" fy=".2399"
+                        gradientTransform="matrix(1.3 0 0 1.34 .0619 -.0619)" gradientUnits="userSpaceOnUse"
+                        href="#bc"/>
+        <radialGradient id="be" cx=".2017" cy=".8599" r=".4710" fx=".2017" fy=".8599"
+                        gradientTransform="matrix(.01 1.34 -1.27 .01 1.5823 .2023)" gradientUnits="userSpaceOnUse"
+                        href="#bd"/>
+        <linearGradient id="bc">
+            <stop offset="0" stop-color="gray"/>
+            <stop offset=".81" stop-color="gray" stop-opacity=".4"/>
+            <stop offset="1" stop-color="gray" stop-opacity="0"/>
         </linearGradient>
-        <linearGradient id="black_svg__d">
-            <stop offset="0" style="stop-color:gray;stop-opacity:1"/>
-            <stop offset=".814" style="stop-color:gray;stop-opacity:.39607843"/>
-            <stop offset="1" style="stop-color:gray;stop-opacity:0"/>
+        <linearGradient id="bb">
+            <stop offset="0" stop-color="#f9f9f9" stop-opacity="0"/>
+            <stop offset=".87" stop-color="#edd996" stop-opacity="0"/>
+            <stop offset=".95" stop-color="#e1ba32" stop-opacity=".19"/>
+            <stop offset="1" stop-color="#c48800" stop-opacity=".33"/>
         </linearGradient>
-        <linearGradient id="black_svg__c">
-            <stop offset="0" style="stop-color:#f9f9f9;stop-opacity:0"/>
-            <stop offset=".874" style="stop-color:#edd996;stop-opacity:0"/>
-            <stop offset=".955" style="stop-color:#e1ba32;stop-opacity:.18518518"/>
-            <stop offset="1" style="stop-color:#c48800;stop-opacity:.32549021"/>
+        <linearGradient id="bd">
+            <stop offset="0"/>
+            <stop offset=".84" stop-opacity=".41"/>
+            <stop offset="1" stop-opacity="0"/>
         </linearGradient>
-        <linearGradient id="black_svg__b">
-            <stop offset="0" style="stop-color:#000;stop-opacity:1"/>
-            <stop offset=".844" style="stop-color:#000;stop-opacity:.41176471"/>
-            <stop offset="1" style="stop-color:#000;stop-opacity:0"/>
+        <linearGradient id="ba">
+            <stop offset="0" stop-color="#2e2e2e"/>
+            <stop offset="1" stop-color="#080808"/>
         </linearGradient>
-        <linearGradient id="black_svg__a">
-            <stop offset="0" style="stop-color:#2e2e2e;stop-opacity:1"/>
-            <stop offset="1" style="stop-color:#080808;stop-opacity:1"/>
-        </linearGradient>
-        <radialGradient xlink:href="#black_svg__a" id="black_svg__i" cx="48.811" cy="105.224" r="14.537" fx="48.811"
-                        fy="105.224" gradientTransform="matrix(.67063 1.10752 -1.48909 .90168 146.606 -130.817)"
-                        gradientUnits="userSpaceOnUse"/>
-        <radialGradient xlink:href="#black_svg__c" id="black_svg__l" cx="18.733" cy="17.819" r="14.537" fx="18.733"
-                        fy="17.819" gradientUnits="userSpaceOnUse"/>
-        <radialGradient xlink:href="#black_svg__d" id="black_svg__k" cx="-9.724" cy="7.521" r="2.861" fx="-9.724"
-                        fy="7.521" gradientTransform="matrix(1.3026 0 0 1.33773 1.937 -1.935)"
-                        gradientUnits="userSpaceOnUse"/>
-        <radialGradient xlink:href="#black_svg__b" id="black_svg__f" cx="6.32" cy="26.948" r="14.763" fx="6.32"
-                        fy="26.948" gradientTransform="matrix(.01477 1.34275 -1.26706 .01447 53.437 9.267)"
-                        gradientUnits="userSpaceOnUse"/>
-        <clipPath id="black_svg__j" clipPathUnits="userSpaceOnUse">
-            <circle cx="18.733" cy="17.819" r="14.537"
-                    style="opacity:1;fill:none;fill-opacity:1;stroke:red;stroke-width:.92546928;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"/>
+        <clipPath id="bg" clipPathUnits="userSpaceOnUse">
+            <circle cx=".4751" cy=".4751" r=".4639" fill="none" stroke="red" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width=".0297"/>
         </clipPath>
     </defs>
-    <g style="display:inline;opacity:1">
-        <ellipse cx="19.989" cy="20.6" rx="15.19" ry="16.263"
-                 style="display:inline;opacity:1;fill:url(#black_svg__f);fill-opacity:1;stroke:none;stroke-width:1.0005765;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-                 transform="translate(-3.843 -2.93)"/>
-    </g>
-    <g style="display:inline" transform="translate(-3.843 -2.93)">
-        <circle cx="18.733" cy="17.819" r="14.537"
-                style="opacity:1;fill:url(#black_svg__i);fill-opacity:1;stroke:none;stroke-width:.92546928;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"/>
-        <circle cx="17.315" cy="14.361" r="14.537" clip-path="url(#black_svg__j)"
-                style="opacity:1;fill:#333;fill-opacity:1;stroke:none;stroke-width:.92546928;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"/>
-    </g>
-    <g style="display:inline">
-        <ellipse cx="-10.729" cy="8.127" rx="3.727" ry="3.827"
-                 style="opacity:1;fill:url(#black_svg__k);fill-opacity:1;stroke:none;stroke-width:.48835081;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:.3254902"
-                 transform="matrix(-.28845 -.9575 .96307 -.26924 -.11 -.11)"/>
-    </g>
-    <g style="display:inline;opacity:.82599996">
-        <circle cx="18.733" cy="17.819" r="14.537"
-                style="display:inline;opacity:1;fill:url(#black_svg__l);fill-opacity:1;stroke:none;stroke-width:.35277778;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-                transform="translate(-3.843 -2.93)"/>
-    </g>
-    <g style="display:inline;opacity:.601">
-        <circle cx="18.733" cy="17.819" r="14.537"
-                style="opacity:1;fill:none;fill-opacity:1;stroke:#000;stroke-width:.70555556;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-                transform="translate(-3.843 -2.93)"/>
-    </g>
+    <ellipse cx=".5154" cy=".5638" fill="url(#be)" rx=".4847" ry=".5188"/>
+    <circle cx=".4751" cy=".4751" r=".4639" fill="url(#bf)"/>
+    <circle cx=".4302" cy=".3647" r=".4639" fill="#333" clip-path="url(#bg)"/>
+    <ellipse cx="-.3423" cy=".2594" fill="url(#bh)" rx=".1190" ry=".1222"
+             transform="rotate(254 -.0032 -.0003)skewY(-1)"/>
+    <circle cx=".4751" cy=".4751" r=".4639" fill="url(#bi)" opacity=".83"/>
+    <circle cx=".4751" cy=".4751" r=".4639" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width=".0227" opacity=".6"/>
 </svg>
