@@ -1,0 +1,16 @@
+website: https://roundsboard.com/tournaments/mistrzostwa-polski-kobiet-2025
+stages:
+  - type: tournament
+    file: mpk2025.txt
+    time: 60min + 3x30s japanese
+    komi: 6.5
+    scoringColumns:
+      - mms
+      - sos
+      - sosos
+      - null
+    breakers:
+      - mms
+      - sos
+      - sosos
+    findSharedPlaces: true

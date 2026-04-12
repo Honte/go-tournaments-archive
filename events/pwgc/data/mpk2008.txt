@@ -1,0 +1,14 @@
+; CL[A]
+; EV[Polish Female Championship]
+; PC[PL, Bielsko-Biala]
+; DT[2008-05-22,2008-05-23]
+; HA[h9]
+; KM[6.5]
+; TM[80]
+;
+  1 Dubiel Marika           1k PL Lubl  4 4  11   9  3+/b 4-/b 6+/w 5+/w 2+/w |14301617
+  2 Kacprzyk Agnieszka      1k PL Bebn  4 4  11   7  4+/w 6+/b 5+/w 3+/b 1-/b |13625524
+  3 Kaczorowska Malgorzata  2k PL Wars  3 3  12   4  1-/w 5+/b 4+/b 2-/w 6+/w |13050543
+  4 Dlugosz Sylwia          7k PL Pozn  2 2  13   4  2-/b 1+/w 3-/w 6+/b 5-/b |13550790
+  5 Chwedyna Zaneta         3k PL Kedz  2 2  13   2  6+/b 3-/w 2-/b 1-/b 4+/w |13574803
+  6 Sontowska Aleksandra    10 PL Gdan  0 0  15   0  5-/w 2-/w 1-/b 4-/w 3-/b |14513983

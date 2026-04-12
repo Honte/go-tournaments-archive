@@ -1,0 +1,14 @@
+stages:
+  - type: tournament
+    file: mpk2011.txt
+    komi: 6.5
+    scoringColumns:
+      - wins
+      - null
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: true
