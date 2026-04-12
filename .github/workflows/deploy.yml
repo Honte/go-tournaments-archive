@@ -67,7 +67,7 @@ jobs:
     needs: check
     if: inputs.event == 'all' || inputs.event == 'wagc' || github.event_name == 'push'
     runs-on: ubuntu-latest
-    environment: wagc-${{ inputs.target }}
+    environment: wagc-${{ inputs.target || 'dev' }}
     steps:
       - uses: actions/checkout@v4
 
