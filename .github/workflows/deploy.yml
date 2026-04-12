@@ -59,7 +59,7 @@ jobs:
         with:
           server: ${{ vars.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          password: ${{ secrets.FTP_PASS }}
           local-dir: ./out/
           server-dir: ${{ vars.FTP_PATH }}
 
@@ -87,6 +87,6 @@ jobs:
         with:
           server: ${{ vars.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          password: ${{ secrets.FTP_PASS }}
           local-dir: ./out/
           server-dir: ${{ vars.FTP_PATH }}
