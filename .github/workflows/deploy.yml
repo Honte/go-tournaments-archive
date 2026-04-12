@@ -1,0 +1,138 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      event:
+        description: 'Event to deploy'
+        required: true
+        type: choice
+        options:
+          - all
+          - pgc
+          - wagc
+          - pwgc
+        default: all
+      target:
+        description: 'Target environment'
+        required: true
+        type: choice
+        options:
+          - dev
+          - prod
+        default: dev
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Guard prod deploys to main
+        if: inputs.target == 'prod' && github.ref != 'refs/heads/main'
+        run: |
+          echo "::error::Production deploys are only allowed from the main branch."
+          exit 1
+
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run tsc
+
+  deploy-pgc:
+    needs: check
+    if: ${{ inputs.event == null || inputs.event == 'all' || inputs.event == 'pgc' }}
+    runs-on: ubuntu-latest
+    environment: pgc-${{ inputs.target || 'dev' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Build pgc
+        run: npm run build:pgc
+
+      - name: Deploy pgc preview to Cloudflare Pages
+        if: ${{ (inputs.target || 'dev') == 'dev' }}
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy out --project-name=${{ vars.CLOUDFLARE_PROJECT }} --branch=preview
+
+      - name: Deploy pgc production to FTP
+        if: ${{ inputs.target == 'prod' }}
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ vars.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASS }}
+          local-dir: ./out/
+          server-dir: ${{ vars.FTP_PATH }}
+
+  deploy-wagc:
+    needs: check
+    if: ${{ inputs.event == null || inputs.event == 'all' || inputs.event == 'wagc' }}
+    runs-on: ubuntu-latest
+    environment: wagc-${{ inputs.target || 'dev' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Build wagc
+        run: npm run build:wagc
+
+      - name: Deploy wagc to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: >-
+            pages deploy out
+            --project-name=${{ vars.CLOUDFLARE_PROJECT }}
+            --branch=${{ inputs.target == 'prod' && 'production' || 'preview' }}
+
+  deploy-pwgc:
+    needs: check
+    if: ${{ inputs.event == null || inputs.event == 'all' || inputs.event == 'pwgc' }}
+    runs-on: ubuntu-latest
+    environment: pwgc-${{ inputs.target || 'dev' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Build pwgc
+        run: npm run build:pwgc
+
+      - name: Deploy pwgc to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: >-
+            pages deploy out
+            --project-name=${{ vars.CLOUDFLARE_PROJECT }}
+            --branch=${{ inputs.target == 'prod' && 'production' || 'preview' }}
