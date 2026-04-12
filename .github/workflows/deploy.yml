@@ -11,7 +11,7 @@ on:
           - all
           - pgc
           - wagc
-      environment:
+      target:
         description: 'Target environment'
         required: true
         type: choice
@@ -37,11 +37,11 @@ jobs:
   deploy:
     needs: check
     runs-on: ubuntu-latest
-    if: ${{ inputs.event == 'all' || inputs.event == matrix.event }}
+    if: inputs.event == 'all' || inputs.event == matrix.event
     strategy:
       matrix:
         event: [pgc, wagc]
-    environment: ${{ matrix.event }}-${{ inputs.environment }}
+    environment: ${{ matrix.event }}-${{ inputs.target }}
     steps:
       - uses: actions/checkout@v4
 
