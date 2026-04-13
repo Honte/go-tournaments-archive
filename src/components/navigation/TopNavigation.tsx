@@ -2,8 +2,16 @@
 
 import { throttle } from 'lodash-es';
 import { useRouter } from 'next/navigation';
-import { useCallback, useEffect, useMemo, useRef } from 'react';
-import { YearsNavigation, YearsNavigationHandle } from '@/components/navigation/YearsNavigation';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { between } from '@/libs/math';
+import { YearsNavigation } from '@/components/navigation/YearsNavigation';
+
+
+
+
+
+
+
 
 const CAPTURE: AddEventListenerOptions = { capture: true };
 const CAPTURE_AND_NOT_PASSIVE: AddEventListenerOptions = { capture: true, passive: false };
@@ -20,99 +28,94 @@ export type TopNavigationProps = {
 export function TopNavigation({ years, locale, current }: TopNavigationProps) {
   const router = useRouter();
   const elRef = useRef<HTMLDivElement | null>(null);
-  const navRef = useRef<YearsNavigationHandle>(null);
   const delayRef = useRef<number | null>(null);
+  const [index, setIndex] = useState(years.indexOf(current));
+  const [shouldRedirect, setShouldRedirect] = useState(false);
 
-  const clearNavigate = useCallback(() => {
-    if (delayRef.current !== null) {
+  useEffect(() => {
+    const next = years[index];
+
+    if (delayRef.current) {
       clearTimeout(delayRef.current);
     }
-  }, []);
 
-  const scheduleNavigate = useCallback(() => {
-    clearNavigate();
-    delayRef.current = window.setTimeout(
-      () => navRef.current && router.push(`/${locale}/${navRef.current.current()}`),
-      DELAY
-    );
-  }, [clearNavigate, locale, router]);
+    if (shouldRedirect) {
+      delayRef.current = window.setTimeout(() => {
+        if (next !== current) {
+          router.push(`/${locale}/${next}`);
+        }
+        setShouldRedirect(false);
+      }, DELAY);
+    }
+
+    return () => {
+      if (delayRef.current) {
+        clearTimeout(delayRef.current);
+      }
+    };
+  }, [current, index, locale, router, shouldRedirect, years]);
 
   const onWheel = useMemo(
     () =>
-      // eslint-disable-next-line react-hooks/refs
       throttle((event: WheelEvent) => {
-        if (navRef.current) {
-          navRef.current.move(event.deltaX);
-          scheduleNavigate();
-        }
+        setIndex((index) => between(0, index + Math.sign(event.deltaX), years.length - 1));
+        setShouldRedirect(true);
       }, THROTTLE),
-    [scheduleNavigate]
+    [years.length]
   );
 
   const onMouseDown = useMemo(
     () => (startEvent: MouseEvent) => {
       let lastEvent = startEvent;
-      let changed = !!delayRef.current;
 
-      clearNavigate();
       window.addEventListener('mousemove', onMouseMove, CAPTURE);
       window.addEventListener('mouseup', onMouseUp, CAPTURE);
 
       function onMouseUp() {
         window.removeEventListener('mousemove', onMouseMove, CAPTURE);
         window.removeEventListener('mouseup', onMouseUp, CAPTURE);
-
-        if (changed) {
-          scheduleNavigate();
-        }
+        setShouldRedirect(true);
       }
 
       function onMouseMove(currentEvent: MouseEvent) {
         const distance = currentEvent.clientX - lastEvent.clientX;
 
-        if (navRef.current && Math.abs(distance) >= THRESHOLD) {
-          navRef.current.move(-distance);
+        if (Math.abs(distance) >= THRESHOLD) {
+          setIndex((index) => between(0, index - Math.sign(distance), years.length - 1));
           lastEvent = currentEvent;
-          changed = true;
         }
 
         currentEvent.preventDefault();
       }
     },
-    [clearNavigate, scheduleNavigate]
+    [years.length]
   );
 
   const onTouchStart = useMemo(
     () => (startEvent: TouchEvent) => {
       let lastEvent = startEvent;
-      let changed = !!delayRef.current;
 
-      clearNavigate();
       document.addEventListener('touchmove', onTouchMove, CAPTURE_AND_NOT_PASSIVE);
       document.addEventListener('touchend', onTouchEnd, CAPTURE_AND_NOT_PASSIVE);
 
       function onTouchEnd() {
         document.removeEventListener('touchmove', onTouchMove, CAPTURE_AND_NOT_PASSIVE);
         document.removeEventListener('touchend', onTouchEnd, CAPTURE_AND_NOT_PASSIVE);
-
-        if (changed) {
-          scheduleNavigate();
-        }
+        setShouldRedirect(true);
       }
 
       function onTouchMove(currentEvent: TouchEvent) {
         const distance = currentEvent.targetTouches?.[0]?.clientX - lastEvent.targetTouches?.[0]?.clientX;
 
-        if (navRef.current && Math.abs(distance) >= THRESHOLD) {
-          navRef.current.move(-distance);
+        if (Math.abs(distance) >= THRESHOLD) {
+          setIndex((index) => between(0, index - Math.sign(distance), years.length - 1));
           lastEvent = currentEvent;
-          changed = true;
         }
 
         currentEvent.preventDefault();
       }
     },
-    [clearNavigate, scheduleNavigate]
+    [years.length]
   );
 
   useEffect(() => {
@@ -127,16 +130,15 @@ export function TopNavigation({ years, locale, current }: TopNavigationProps) {
     node.addEventListener('touchstart', onTouchStart, CAPTURE_AND_NOT_PASSIVE);
 
     return () => {
-      clearNavigate();
       node.removeEventListener('wheel', onWheel);
       node.removeEventListener('mousedown', onMouseDown, CAPTURE);
       node.removeEventListener('touchstart', onTouchStart, CAPTURE_AND_NOT_PASSIVE);
     };
-  }, [onWheel, onMouseDown, onTouchStart, clearNavigate]);
+  }, [onWheel, onMouseDown, onTouchStart]);
 
   return (
     <div ref={elRef} className="cursor-grab">
-      <YearsNavigation years={years} current={current} locale={locale} ref={navRef} />
+      <YearsNavigation years={years} current={years[index]} locale={locale} />
     </div>
   );
 }
