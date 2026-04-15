@@ -1,0 +1,13 @@
+stages:
+  - type: tournament
+    file: amp2010.txt
+    komi: 6.5
+    scoringColumns:
+      - mms
+      - sos
+      - wins
+      - null
+    breakers:
+      - wins
+      - sos
+    findSharedPlaces: true

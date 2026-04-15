@@ -1,0 +1,14 @@
+; TC[T100529I]
+; CL[A]
+; EV[Polish Academic Championship]
+; PC[PL, Wroclaw]
+; DT[2010-05-29,2010-05-29]
+; HA[h9]
+; KM[6.5]
+; TM[82.5]
+; CM[ (submitted by kamyszyn)]
+;.
+;Pl Name                   Grd Co Club  MMS  SOS
+1 Chojnacki Mateusz    1d PL  Bydg  22   61   2    0    2+/b0  3+/w0  0-      |14237498
+2 Bednarczyk Dariusz   5k PL  Pozn  21   62   1    0    1-/w0  0-     3+/b0   |14037826
+3 Paletko Piotr       10k PL  Wroc  20   63   0    0    0-     1-/b0  2-/w0   |15313397
