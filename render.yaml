@@ -5,7 +5,9 @@ services:
     branch: main
     buildCommand: npm ci && npm run build
     staticPublishPath: ./out
-    pullRequestPreviewsEnabled: false
+    previews:
+      generation: manual
+    autoDeployTrigger: checksPass
     envVars:
       - key: EVENT
         value: pgc
@@ -18,7 +20,9 @@ services:
     branch: main
     buildCommand: npm ci && npm run build
     staticPublishPath: ./out
-    pullRequestPreviewsEnabled: false
+    previews:
+      generation: manual
+    autoDeployTrigger: checksPass
     envVars:
       - key: EVENT
         value: wagc
@@ -31,9 +35,25 @@ services:
     branch: main
     buildCommand: npm ci && npm run build
     staticPublishPath: ./out
-    pullRequestPreviewsEnabled: false
+    previews:
+      generation: manual
+    autoDeployTrigger: checksPass
     envVars:
       - key: EVENT
         value: pwgc
+      - key: NODE_VERSION
+        value: "24"
+  - type: web
+    name: go-archive-pagc
+    runtime: static
+    branch: main
+    buildCommand: npm ci && npm run build
+    staticPublishPath: ./out
+    previews:
+      generation: manual
+    autoDeployTrigger: checksPass
+    envVars:
+      - key: EVENT
+        value: pagc
       - key: NODE_VERSION
         value: "24"
