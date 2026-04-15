@@ -1,0 +1,15 @@
+stages:
+  - type: tournament
+    file: mpj2013.txt
+    komi: 6.5
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+      - direct
+    breakers:
+      - wins
+      - sos
+      - sosos
+      - direct
+    findSharedPlaces: true

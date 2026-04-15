@@ -1,0 +1,20 @@
+website: https://roundsboard.com/tournaments/mistrzostwa-polski-juniorow-w-go-2025
+stages:
+  - type: tournament
+    file: mpj2025.txt
+    komi: 6.5
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sosos
+      - sodos
+      - u21
+      - u16
+      - u12  
+    breakers:
+      - mms
+      - sos
+      - sosos
+      - sodos
+    findSharedPlaces: true

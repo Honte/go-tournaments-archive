@@ -43,6 +43,7 @@ services:
         value: pwgc
       - key: NODE_VERSION
         value: "24"
+
   - type: web
     name: go-archive-pagc
     runtime: static
@@ -55,5 +56,20 @@ services:
     envVars:
       - key: EVENT
         value: pagc
+      - key: NODE_VERSION
+        value: "24"
+
+  - type: web
+    name: go-archive-pygc
+    runtime: static
+    branch: main
+    buildCommand: npm ci && npm run build
+    staticPublishPath: ./out
+    previews:
+      generation: manual
+    autoDeployTrigger: checksPass
+    envVars:
+      - key: EVENT
+        value: pygc
       - key: NODE_VERSION
         value: "24"

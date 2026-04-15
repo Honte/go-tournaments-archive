@@ -1,0 +1,13 @@
+; EV[Polish Youth Championship]
+; PC[PL, Torun]
+; DT[2012-03-17,2012-03-18]
+; HA[h9]
+; KM[6.5]
+;. U12
+; Liga dla zawodników do lat 12 została przeprowadzona na planszach 13x13. Miejsca od 2-4 zostały przyznane w bezpośredniej konfrontacji podczas dogrywki.
+1 Malkiewicz Wojciech  22k PL  Greb  5    5    10  1  4+/w   2+/b   3+/w   6+/b   5+/b    |16562128
+2 Widlinski Mikolaj    25k PL  Greb  3    3    12  2  3+/b   1-/w   5+/b   4-/w   6+/w    |
+3 Bednarska Julia      25k PL  Greb  3    3    12  3  2-/w   6+/w   1-/b   5+/b   4+/w    |16733706
+4 Paczek Szymon        25k PL  Greb  3    3    12  0  1-/b   5+/w   6+/w   2+/b   3-/b    |
+5 Kaszkowiak Amelia    25k PL  Greb  1    1    14  0  6+/b   4-/b   2-/w   3-/w   1-/w    |
+6 Zarzycki Dawid       30k PL  Greb  0    0    15  0  5-/w   3-/b   4-/w   1-/w   2-/b    |

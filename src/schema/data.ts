@@ -10,6 +10,7 @@ export type TournamentDetails = {
   website?: string;
   referee?: string;
   top: string[];
+  displayReversed?: boolean;
 };
 
 export type Tournament = TournamentDetails & {
@@ -55,7 +56,7 @@ export type MandatoryBreakers =
 
 // Then modify the BaseStage type to use the enum
 export type BaseStage = {
-  name?: Record<string, string>;
+  name?: string | Record<Locale, string>;
   date?: TournamentDateSpan[];
   egd?: string;
   time?: string;
@@ -210,12 +211,12 @@ export type StatsPlayer = {
 export type StatsOpponent = {
   id: string;
   name: string;
-  countries: Set<string>
+  countries: Set<string>;
   games: {
-    year: number
-    won: boolean
-  }[]
-}
+    year: number;
+    won: boolean;
+  }[];
+};
 
 export type StatsCountryResult = {
   year: number;

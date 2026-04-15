@@ -1,0 +1,42 @@
+displayReversed: false
+stages:
+  - type: tournament
+    name:
+      pl: Turniej główny
+      en: Main tournament
+    file: mpj2015.txt
+    komi: 6.5
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+      - direct
+      - u20
+      - u16
+      - u12
+    breakers:
+      - wins
+      - sos
+      - sosos
+      - direct
+    findSharedPlaces: true
+  - type: tournament
+    name:
+      pl: Baraż u16
+      en: u16 playoff
+    file: mpj2015u16playoff.txt
+    komi: 6.5
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+      - direct
+      - u20
+      - u16
+      - u12
+    breakers:
+      - wins
+      - sos
+      - sosos
+      - direct
+    findSharedPlaces: true

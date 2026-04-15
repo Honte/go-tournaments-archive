@@ -1,5 +1,6 @@
 const PROPERTY_REGEX = /(?<key>[A-Z]+)\[(?<value>.*)]/;
 const GAME_REGEX = /(?<opponent>\d+)(?<result>[+=-])(?<modifier>!)?(\/(?<color>[wb])(?<handicap>\d)?)?/;
+const FIRST_GAME_COLUMN = 6; // after place, surname, name, rank, country, club
 
 export type H9Tournament = {
   id: string;
@@ -67,6 +68,7 @@ export function loadH9(input: string) {
 export function parseH9(input: string): H9Tournament {
   const { properties, other, table } = loadH9(input);
   const results: H9Player[] = [];
+  const colsWithGames = getColumnsWithGames(table);
 
   for (const player of table) {
     const [place, surname, name, rank, country, club, ...columns] = player;
@@ -74,12 +76,19 @@ export function parseH9(input: string): H9Tournament {
     const scores: string[] = [];
     const egd = columns[columns.length - 1].startsWith('|') ? Number(columns.pop()!.slice(1)) : undefined;
 
-    for (const col of columns) {
-      const match = GAME_REGEX.exec(col);
+    for (let col = 0; col < columns.length; col++) {
+      const value = columns[col];
 
-      if (col === '?' || col === '0=') {
+      if (!colsWithGames.has(col)) {
+        scores.push(value);
+        continue;
+      }
+
+      const match = GAME_REGEX.exec(value);
+
+      if (value === '?' || value === '0=' || !match) {
         games.push(null);
-      } else if (match) {
+      } else {
         const { opponent, result, color, handicap, modifier } = match.groups!;
 
         games.push({
@@ -89,8 +98,6 @@ export function parseH9(input: string): H9Tournament {
           modifier: modifier as H9Game['modifier'],
           result: result as H9Game['result'],
         });
-      } else {
-        scores.push(col);
       }
     }
 
@@ -123,4 +130,27 @@ export function parseH9(input: string): H9Tournament {
     results,
     other,
   };
+}
+
+function getColumnsWithGames(table: string[][]) {
+  const results = new Set<number>();
+
+  for (const player of table) {
+    for (let col = FIRST_GAME_COLUMN; col < player.length; col++) {
+      const index = col - FIRST_GAME_COLUMN;
+
+      if (results.has(index)) {
+        continue;
+      }
+
+      const match = player[col]?.match(GAME_REGEX);
+
+      // ignore jigo results as it may be used as fraction in score
+      if (match && match.groups?.result !== '=') {
+        results.add(index);
+      }
+    }
+  }
+
+  return results;
 }

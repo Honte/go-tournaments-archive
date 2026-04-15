@@ -3,7 +3,11 @@ import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 
 export function getStageName(stage: Stage, translations: Translations) {
-  if (stage.name) {
+  if (typeof stage.name === 'string') {
+    return stage.name;
+  }
+
+  if (stage.name && typeof stage.name === 'object') {
     return stage.name[translations.locale];
   }
 

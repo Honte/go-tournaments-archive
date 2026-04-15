@@ -25,6 +25,7 @@ export async function loadH9Tournament({
   tournamentDetails: TournamentDetails;
 }): Promise<LeagueStage> {
   const {
+    name,
     file,
     breakers,
     scoringColumns,
@@ -236,6 +237,7 @@ export async function loadH9Tournament({
 
   return {
     type: 'tournament',
+    name,
     egd:
       (stage.egd ?? tournament.id)
         ? `https://europeangodatabase.eu/EGD/Tournament_Card.php?&key=${tournament.id}`
