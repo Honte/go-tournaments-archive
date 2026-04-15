@@ -1,0 +1,18 @@
+website: https://roundsboard.com/tournaments/mistrzostwa-polski-juniorow-w-go-2026
+stages:
+  - type: tournament
+    file: mpj2026.txt
+    komi: 6.5
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sosos
+      - u21
+      - u16
+      - u12  
+    breakers:
+      - mms
+      - sos
+      - sosos
+    findSharedPlaces: true

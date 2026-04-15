@@ -1,0 +1,32 @@
+; TC[T071110A]
+; CL[A]
+; EV[Polish Youth Championship]
+; PC[PL, Zabrze]
+; DT[2007-11-10,2007-11-11]
+; HA[h9]
+; KM[6.5]
+; TM[75]
+; U18 U15 U12 
+  1 Surma Mateusz           3d PL Wodz  16 5   68  345 1 0 0 12+/b0   7+/w0   4+/w0   2+/w0    3+/b0 |12837968
+  2 Lubos Przemyslaw        3k PL Wodz  15 4   71  342 2 0 0  3+/w0   8+/b0   6+/w0   1-/b0    4+/w0 |12074260
+  3 Tracichleb Piotr        7k PL Ruda  14 3   71  322 3 0 0  2-/b0  10+/b0   9+/w0   5+/w0    1-/w0 |12701095
+  4 Frejlak Stanislaw       2k PL Wars  14 3   70  339 0 1 0  7+/b0   5+/w0   1-/b0  11+/w0    2-/b0 |12837594
+  5 Pacana Patryk           6k PL Byto  14 3   67  338 0 2 0  6+/b0   4-/b0   8+/w0   3-/b0   11+/w0 |14786948
+  6 Soldan Leszek_jr        6k PL Wars  14 3   67  334 0 0 1  5-/w0  12+/w0   2-/b0   9+/b0    7+/b0 |14362876
+  7 Wozniak Aleksandra      9k PL Choc  13 2   69  335 0 0 0  4-/w0   1-/b0  12+/w0   8+/b0    6-/w0 |12986589
+  8 Surma Bartosz           9k PL Wodz  13 2   66  335 0 0 2 11+/b0   2-/w0   5-/b0   7-/w0   12+/b0 |13833039
+  9 Pokrzywa Mikolaj        10 PL Wroc  13 3   63  309 0 3 0 10+/w0  11+/b0   3-/b0   6-/w0   13+/w0 |14537952
+ 10 Lisiecki Bartlomiej     10 PL Zamo  13 3   53  269 0 0 0  9-/b0   3-/w0  14+/b0  13+/w0   15+/w0 |14398967
+ 11 Dyszczyk Piotr          8k PL Lubl  12 1   64  320 0 0 0  8-/w0   9-/w0  13+/b0   4-/b0    5-/b0 |13862035
+ 12 Wozniak Anna            9k PL Choc  12 1   64  314 0 0 0  1-/w0   6-/b0   7-/b0  14+/w0    8-/w0 |12950586
+ 13 Sawicki-Hughes Jan      12 PL Wars  10 2   54  261 0 0 0 14+/b0  15+/w0  11-/w0  10-/b0    9-/b0 |13533190
+ 14 Kulon Tomasz            14 PL Byto   8 2   44  230 0 0 0 13-/w0  18+/b0  10-/w0  12-/b0   16+/b0 |14825426
+ 15 Wojciga Slawomir        15 PL Biel   8 3   37  189 0 0 0 18+/w0  13-/b0  16+/b0  17+/w0   10-/b0 |14837427
+ 16 Noworyta Adrian         17 PL Biel   5 2   29  150 0 0 0 20+/b0  17-/w0  15-/w0  18+/b0   14-/w0 |14849428
+ 17 Klamecka Natalia        19 PL Pozn   5 4   23  130 0 0 0 22+/w0  16+/b0  18+/w0  15-/b0   19+/w0 |14033239
+ 18 Smejkal Symeon          16 PL Tych   4 0   30  153 0 0 0 15-/b0  14-/w0  17-/b0  16-/w0    0=    |13774321
+ 19 Ciombor Krzysztof       20 PL Krak   4 4   17   87 0 0 0  0+     22+/b0  21+/w0  20+/w0   17-/b0 |14850429
+ 20 Duda Slawomir           18 PL Gliw   4 2   16   85 0 0 0 16-/w0  21-/b0  23+/w0  19-/b0   22+/b0 |14637887
+ 21 Rucinski Jaroslaw       20 PL Biel   3 3   14   72 0 0 0 23+/b0  20+/w0  19-/b0  22-/w0    0+    |14862430
+ 22 Kanafek Marek           20 PL Biel   2 2   17   87 0 0 0 17-/b0  19-/w0   0+     21+/b0   20-/w0 |14874431
+ 23 Kuczka Piotr            20 PL Zabr   2 1    8   38 0 0 3 21-/w0   0+     20-/b0   0=       0=    |14886432

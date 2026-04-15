@@ -1,0 +1,15 @@
+stages:
+  - type: tournament
+    file: mpj2011.txt
+    komi: 6.5
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+      - u20
+      - u16
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: true

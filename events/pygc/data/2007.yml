@@ -1,0 +1,17 @@
+stages:
+  - type: tournament
+    file: mpj2007.txt
+    komi: 6.5
+    scoringColumns:
+      - mms
+      - wins
+      - sodos
+      - sos
+      - u18
+      - u15
+      - u12      
+    breakers:
+      - mms
+      - sodos
+      - sos
+    findSharedPlaces: true

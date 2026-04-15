@@ -1,0 +1,39 @@
+; TC[T051111A]
+; HA[h9]
+; CL[A]
+; EV[Polish Youth Championship]
+; PC[PL, Wodzislaw]
+; DT[2005-11-11,2005-11-13]
+; KM[6.5]
+; TM[75]
+; U18 U15 U12
+  1 Surma Mateusz           1k PL Wodz 19 4  90  71 1 0 0  7+/w  2+/b  6+/w  4+/b  3-/b  |12837968
+  2 Dyszczyk Przemyslaw     6k PL Lubl 19 4  87  68 2 0 0  8+/b  1-/w  7+/b  5+/w  4+/w  |13649218
+  3 Pabich Mariusz          3k PL Pabi 19 4  85  67 3 0 0  9+/b  7+/w  4-/b  8+/w  1+/w  |13849891
+  4 Chwedyna Zaneta         6k PL Kedz 18 3  91  53 0 0 0 10+/b  5+/w  3+/w  1-/w  2-/b  |13574803
+  5 Tracichleb Magda        8k PL Ruda 18 3  87  50 0 0 0  6+/w  4-/b  8+/w  2-/b  7+/w  |12737769
+  6 Celejewski Piotr        1k PL Choc 18 3  85  48 0 0 0  5-/b 10+/w  1-/b  9+/b  8+/w  |12801063
+  7 Tracichleb Piotr        6k PL Ruda 16 1  91  16 0 0 0  1-/b  3-/b  2-/w 10+/w  5-/b  |12701095
+  8 Owsiany Tomasz          6k PL Swie 16 1  90  16 0 0 0  2-/w  9+/w  5-/b  3-/b  6-/b  |12933327
+  9 Frejlak Stanislaw       9k PL Wars 16 1  82  13 0 1 0  3-/w  8-/b 10-/b  6-/w 11+/w  |12837594
+ 10 Nagaj Dawid             12 PL Choc 16 2  80  28 0 0 0  4-/w  6-/b  9+/w  7-/b 12+/b  |12937584
+ 11 Dyszczyk Piotr          17 PL Lubl 13 4  62  46 0 2 0 14+/w 12+/w 13+/b 16+/b  9-/b  |13862035
+ 12 Gogosz Dorota           15 PL Choc 12 1  63  12 0 3 0 13+/w 11-/b 15-/b 14-/w 10-/w  |12901581
+ 13 Szczygiel Piotr         17 PL Choc 12 3  58  33 0 0 0 12-/b 16+/w 11-/w 15+/b 14+/b  |12925583
+ 14 Wozniak Anna            17 PL Choc 11 2  58  22 0 0 0 11-/b 15-/b 17+/w 12+/b 13-/w  |12950586
+ 15 Surma Bartosz           18 PL Wodz 11 3  51  28 0 0 1 16-/b 14+/w 12+/w 13-/w 18+/b  |13833039
+ 16 Wozniak Aleksandra      18 PL Choc 11 3  51  26 0 0 2 15+/w 13-/b 18+/b 11-/w 17+/b  |12986589
+ 17 Kaluza Klaudia          19 PL Wodz 10 3  36  14 0 0 3 18+/w 21+/b 14-/b 19+/w 16-/w  |12850970
+ 18 Hajski Przemyslaw       20 PL Wodz  5 2  41   9 0 0 0 17-/b 19+/b 16-/w 21+/w 15-/w  |13474472
+ 19 Mentla Justyna          20 PL Wodz  5 3  26  11 0 0 0 22+/b 18-/w 25+/w 17-/b 21+/w  |13737438
+ 20 Klamecka Natalia        20 PL Pozn  5 5  14  14 0 0 0 27+/b 28+/w 23+/b 22+/w 24+/b  |14033239
+ 21 Kowalczyk Mateusz       20 PL Wodz  4 2  27   7 0 0 0 23+/b 17-/w 22+/w 18-/b 19-/b  |14249169
+ 22 Kowalczyk Robert        20 PL Wodz  4 2  20   6 0 0 0 19-/w 23+/w 21-/b 20-/b 25+/w  |14250170
+ 23 Hajski Mateusz          20 PL Wodz  3 1  16   0 0 0 0 21-/w 22-/b 20-/w 25-/b 30+/b  |13462471
+ 24 Grabiec Artur           20 PL Wodz  3 3  15   7 0 0 0 26+/b 25-/b 29+/w 27+/b 20-/w  |13898038
+ 25 Bojar Olga              20 PL Wars  3 3  15   6 0 0 0 30+/b 24+/w 19-/b 23+/w 22-/b  |13601214
+ 26 Meisel Filip            20 PL Wodz  3 3   9   4 0 0 0 24-/w 27-/w 30+/b 29+/w 28+/b  |14274172
+ 27 Wojtylak Aleksandra     20 PL Wodz  2 2  15   5 0 0 0 20-/w 26+/b 28+/b 24-/w 29-/w  |14286173
+ 28 Kaluza Weronika         20 PL Wodz  2 2  12   2 0 0 0 29+/b 20-/b 27-/w 30+/w 26-/w  |14298174
+ 29 Smigowski Szymon        20 PL Wodz  2 2  10   2 0 0 0 28-/w 30+/w 24-/b 26-/b 27+/b  |14233175
+ 30 Dworczak Agata          20 PL Wodz  0 0  13   0 0 0 0 25-/w 29-/b 26-/w 28-/b 23-/w  |14201176

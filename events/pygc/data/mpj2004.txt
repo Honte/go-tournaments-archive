@@ -1,0 +1,44 @@
+; TC[T031109B]
+; DT[2003-11-09,2023-11-11]
+; CL[A]
+; EV[Polish Youth Championship]
+; PC[PL,Szklary]
+; KM[6.5]
+; TM[80]
+; HA[h9]
+;                          Polish Junior Go Championship, Szklary
+;                                   November 9-11, 2003
+;Pl     Name             Grade  Club   MM S SOS SDOS U18 U15 U12 1.     2.     3.     4.     5.
+;
+  1 Celejewski Pawel        1d PL Choc 13 5  53  53 1 0 0 15+/b0  8+/w0  6+/b0  2+/w0  3+/b0  |12833062
+  2 Gogosz Dominik          1k PL Choc 12 4  43  56 2 0 0  4+/w0  9+/b0  3+/b0  1-/b0  5+/w0  |12813064
+  3 Celejewski Piotr        6k PL Choc 11 3  31  56 3 0 0 14+/w0  5+/b0  2-/w0  4+/b0  1-/w0  |12801063
+  4 Bazynski Jan            6k PL Wars 11 3  30  53 0 0 0  2-/b0  7+/w0 11+/b0  3-/w0 10+/w0  |10925728
+  5 Grining Tomasz          10 PL Poli 11 3  29  52 0 0 0 11+/w0  3-/w0 15+/b0  8+/w0  2-/b0  |13098965
+  6 Piekarczyk Michal       12 PL Pozn 11 2  19  48 0 0 0  0=     0=     1-/w0 14+/b0  8+/w0  |13001967
+  7 Tracichleb Magda        13 PL Ruda 10 3  24  45 0 0 0 16+/w0  4-/b0 10-/w0 18+/b0 15+/w0  |12737769
+  8 Zyzak Andrzej           5k PL Wodz 10 2  20  55 0 0 0 12+/w0  1-/b0  9+/w0  5-/b0  6-/b0  |10949763
+  9 Lubos Barbara           9k PL Rybn 10 2  20  52 0 0 0 10+/b0  2-/w0  8-/b0 11+/w0 12-/b0  |10925761
+ 10 Surma Mateusz           10 PL Wodz 10 2  19  50 0 1 0  9-/w0 11-/b0  7+/b0 15+/w0  4-/b0  |12837968
+ 11 Lubos Przemyslaw        10 PL Wodz 10 2  18  50 0 2 0  5-/b0 10+/w0  4-/w0  9-/b0 16+/b0  |12074260
+ 12 Tracichleb Piotr        11 PL Ruda 10 2  18  46 0 3 0  8-/b0 15-/w0 14-/b0 16+/b0  9+/w0  |12701095
+ 13 Jarzyna Lukasz          15 PL Glog  9 4  29  37 0 0 0 18+/b0 19+/w0 16-/b0 17+/w0 14+/w0  |13449469
+ 14 Piekarczyk Marta        13 PL Pozn  9 2  18  49 0 0 0  3-/b0 16+/w0 12+/w0  6-/w0 13-/b0  |13025628
+ 15 Smigowska Agnieszka     9k PL Wodz  9 1  10  54 0 0 0  1-/w0 12+/b0  5-/w0 10-/b0  7-/b0  |12098372
+ 16 Cymbala Tomasz          13 PL Choc  8 1   9  48 0 0 0  7-/b0 14-/b0 13+/w0 12-/w0 11-/w0  |12933580
+ 17 Owsiany Tomasz          17 PL Swie  7 4  21  30 0 0 0 19+/w0 18+/w0 26+/b0 13-/b0 20+/b0  |12933327
+ 18 Gogosz Dorota           15 PL Choc  7 2  10  36 0 0 1 13-/w0 17-/b0 19+/b0  7-/w0 21+/w0  |12901581
+ 19 Stozek Adam             15 PL Wars  6 1   3  31 0 0 2 17-/b0 13-/b0 18-/w0 20-/w0 26+/w0  |12750023
+ 20 Nagaj Dawid             18 PL Choc  5 3  11  22 0 0 0 26+/b0 21-/w0 27+/b0 19+/b0 17-/w0  |12937584
+ 21 Kaczorowski Marcin      20 PL Kedz  4 4  13  20 0 0 0 29+/w0 20+/b0 22+/b0 26+/w0 18-/b0  |12913582
+ 22 Wozniak Anna            20 PL Choc  4 4  10  14 0 0 3  0+    29+/b0 21-/w0 23+/w0 24+/b0  |12950586
+ 23 Wozniak Aleksandra      20 PL Choc  3 3   8  14 0 0 0 24+/w0 27-/b0 25+/w0 22-/b0 28+/w0  |12986589
+ 24 Kaczorowska Justyna     20 PL Kedz  3 3   5  12 0 0 0 23-/b0 28+/w0 30+/w0 27+/b0 22-/w0  |13450470
+ 25 Hajski Mateusz          20 PL Wodz  3 3   4  10 0 0 0 30+/b0 26-/w0 23-/b0 29+/b0 27+/w0  |13462471
+ 26 Szczygiel Piotr         18 PL Choc  3 1   3  25 0 0 0 20-/w0 25+/b0 17-/w0 21-/b0 19-/b0  |12925583
+ 27 Smulski Oskar           20 PL Wars  2 2   5  16 0 0 0 28+/b0 23+/w0 20-/w0 24-/w0 25-/b0  |13086876
+ 28 Kaluza Klaudia          20 PL Wodz  2 2   2  10 0 0 0 27-/w0 24-/b0 29+/w0 30+/b0 23-/b0  |12850970
+ 29 Danielewska Cyryla      20 PL Wodz  1 1   1  14 0 0 0 21-/b0 22-/w0 28-/b0 25-/w0 30+/w0  |12933349
+ 30 Hajski Przemyslaw       20 PL Wodz  1 1   0   9 0 0 0 25-/w0  0+    24-/b0 28-/w0 29-/b0  |13474472
+;
+;time=60+b

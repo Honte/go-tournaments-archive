@@ -1,0 +1,18 @@
+stages:
+  - type: tournament
+    file: mpj2020.txt
+    komi: 6.5
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+      - direct
+      - u20
+      - u16
+      - u12      
+    breakers:
+      - wins
+      - sos
+      - sosos
+      - direct
+    findSharedPlaces: true

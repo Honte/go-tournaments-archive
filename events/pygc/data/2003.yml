@@ -1,0 +1,16 @@
+stages:
+  - type: tournament
+    file: mpj2003.txt 
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sodos
+      - u18
+      - u15
+      - u12
+    breakers:
+      - mms
+      - sos
+      - sodos
+    findSharedPlaces: true

@@ -1,0 +1,28 @@
+displayReversed: false
+stages:
+  - type: tournament
+    name: U20
+    file: mpj2012.txt
+    komi: 6.5
+    scoringColumns:
+      - wins
+      - null
+      - sodos
+      - u20
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true
+  - type: tournament
+    name: U12
+    file: mpj2012u12.txt
+    komi: 6.5
+    scoringColumns:
+      - wins
+      - null
+      - sodos
+      - u20
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true

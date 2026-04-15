@@ -1,0 +1,17 @@
+stages:
+  - type: tournament
+    file: mpj2009.txt
+    komi: 6.5
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sosos
+      - u18
+      - u15
+      - u12
+    breakers:
+      - mms
+      - sos
+      - sosos
+    findSharedPlaces: true

@@ -1,0 +1,17 @@
+stages:
+  - type: tournament
+    file: mpj2018.txt
+    komi: 6.5
+    scoringColumns:
+      - null
+      - wins
+      - sos
+      - sosos
+      - u20
+      - u16
+      - u12 
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: true

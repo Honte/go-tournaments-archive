@@ -1,0 +1,16 @@
+{
+  "site": {
+    "name": "Polish Youth Championships Archive",
+    "description": "Archive of all Polish Youth Go Championships tournaments",
+    "yearDescription": "Results of PYGC %{0}",
+    "allTimeStatsDescription": "All-time statistics of all Polish Youth Go Championships participants",
+    "playerStatsDescription": "Participation statistics of %{0} in all Polish Youth Go Championships events"
+  },
+  "details": {
+    "goToWebsite": "Go to PYGC %{0} website"
+  },
+  "winners": {
+    "title": "Medalists of Polish Youth Go Championships",
+    "first": "Polish Youth Champion"
+  }
+}
