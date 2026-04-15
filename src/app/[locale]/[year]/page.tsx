@@ -62,7 +62,8 @@ export default async function Edition(props: PageProps) {
     return notFound();
   }
 
-  const { games, players, stages } = tournament;
+  const { games, players, stages, displayReversed = true } = tournament;
+  const stagesToDisplay = displayReversed ? stages.toReversed() : stages;
 
   return (
     <>
@@ -73,8 +74,8 @@ export default async function Edition(props: PageProps) {
         <Awarded tournament={tournament} translations={translations} />
       </div>
 
-      {stages.toReversed().map((stage) => (
-        <div key={stage.type} className="my-4">
+      {stagesToDisplay.map((stage, index) => (
+        <div key={index} className="my-4">
           <h2 className="text-xl font-bold pb-1 my-2 border-b-event-dark border-b-2">
             {getStageName(stage, translations)}
           </h2>
