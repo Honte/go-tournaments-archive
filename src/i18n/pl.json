@@ -30,7 +30,8 @@
     "website": "Strona WWW",
     "goToWebsite": "Przejdź na stronę wydarzenia",
     "referee": "Sędzia",
-    "awarded": "Medaliści"
+    "awarded": "Medaliści",
+    "awardedIn": "Medaliści %{0}"
   },
   "stage": {
     "details": "Szczegóły",

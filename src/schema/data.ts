@@ -11,6 +11,7 @@ export type TournamentDetails = {
   website?: string;
   referee?: string;
   top: string[];
+  categoriesTop?: Record<string, string[]>;
   displayReversed?: boolean;
 };
 
