@@ -5,6 +5,7 @@ import { getTranslator } from '@/i18n/translator';
 import { Breaker } from '@/components/Breaker';
 import { Details } from '@/components/Details';
 import { ExternalLink } from '@/components/ui/ExternalLink';
+import { Markdown } from '@/components/ui/Markdown';
 
 type StageDetailsProps = {
   stage: Stage;
@@ -41,6 +42,12 @@ export function StageDetails({ stage, translations }: StageDetailsProps) {
         ))}
       </ol>
     );
+  }
+
+  if (stage.notes) {
+    const content = typeof stage.notes === 'string' ? stage.notes : stage.notes[translations.locale];
+
+    details[t('stage.notes')] = <Markdown content={content} inline={true} />;
   }
 
   return (

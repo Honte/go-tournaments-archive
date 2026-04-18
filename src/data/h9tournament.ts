@@ -34,6 +34,7 @@ export async function loadH9Tournament({
     sharedPlaces,
     customBreakers,
     games,
+    notes,
   } = stage;
 
   const content = await readFile(join(EVENT_DATA_DIR, file), 'utf-8');
@@ -249,6 +250,7 @@ export async function loadH9Tournament({
     komi: stage.komi ?? tournament.komi,
     table,
     rounds,
+    notes,
     date: parseDates(stage.date ?? tournament.dates),
   } satisfies LeagueStage;
 }

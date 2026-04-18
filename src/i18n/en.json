@@ -39,6 +39,7 @@
     "tournament": "Tournament",
     "games": "Games",
     "egd": "EGD",
+    "notes": "Notes",
     "goToEGD": "See the tournament entry in the European Go Database",
     "breakers": "Breakers",
     "komi": "Komi",

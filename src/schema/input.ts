@@ -2,6 +2,7 @@ import { Breaker, type CustomBreaker } from '@/schema/data';
 
 export type InputBaseStage = {
   name?: string | Record<string, string>;
+  notes?: string | Record<string, string>;
   date: string | string[];
   egd?: string;
   time?: string;
@@ -64,5 +65,6 @@ export type InputTournament = {
   players?: Record<string, string>;
   top?: string[];
   stages: InputStage[];
-  displayReversed?: boolean
+  displayReversed?: boolean;
+  description?: string | Record<string, string>;
 };
