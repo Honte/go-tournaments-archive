@@ -1,4 +1,4 @@
-import EVENT from './events/index.ts';
+import EVENT from './events';
 
 /** @type {import('next').NextConfig} */
 export default {
@@ -10,4 +10,5 @@ export default {
       '@event/*': `./events/${EVENT}/*`,
     },
   },
+  serverExternalPackages: ['@resvg/resvg-js'],
 };
