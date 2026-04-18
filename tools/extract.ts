@@ -238,7 +238,7 @@ async function extractFromDatabase({
     gamesMap: testGames,
     playersMap: parsedPlayers,
     breakers,
-    rounds: rounds.map((round) => parseGames(testGames, round)),
+    rounds: rounds.map((round, index) => parseGames(testGames, round, index + 1)),
   });
 
   const result = stringify(

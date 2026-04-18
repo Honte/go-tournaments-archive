@@ -169,7 +169,7 @@ export type GameProps = {
   sgf?: string;
   svg?: string;
   png?: string;
-  round?: string;
+  round?: number;
 };
 
 export type GamePropsKey = keyof GameProps;

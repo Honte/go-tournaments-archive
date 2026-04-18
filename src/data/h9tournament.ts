@@ -103,8 +103,7 @@ export async function loadH9Tournament({
       const game = parseGame(gameString, id, false);
       const blackPlace = Number(game.players[0].id);
       const whitePlace = Number(game.players[1].id);
-      const existingRound = game.props.round ? Number(game.props.round) : undefined;
-      const localId = buildLocalGameId(blackPlace, whitePlace, existingRound);
+      const localId = buildLocalGameId(blackPlace, whitePlace, game.props.round);
       const blackPlayerId = table[blackPlace - 1]?.id;
       const whitePlayerId = table[whitePlace - 1]?.id;
 
@@ -159,7 +158,9 @@ export async function loadH9Tournament({
             id: getGameId(gamesMap),
             players: [isCurrentBlack ? playerA : playerB, isCurrentBlack ? playerB : playerA],
             result: getGameResult(game.result, game.color),
-            props: { round: String(game.round) },
+            props: {
+              round: game.round,
+            },
           } satisfies Game;
         }
 

@@ -28,7 +28,7 @@ export async function parseStage(
         tournamentDetails,
       });
     case 'league': {
-      const rounds = stage.rounds.map((round: string[]) => parseGames(gamesMap, round));
+      const rounds = stage.rounds.map((round, index) => parseGames(gamesMap, round, index + 1));
 
       return {
         ...stage,
@@ -44,7 +44,7 @@ export async function parseStage(
       } satisfies LeagueStage;
     }
     case 'ladder-table': {
-      const rounds = stage.rounds.map((round: string[]) => parseGames(gamesMap, round));
+      const rounds = stage.rounds.map((round, index) => parseGames(gamesMap, round, index + 1));
       const playoffs = stage.playoffs ? parseGames(gamesMap, stage.playoffs) : [];
 
       return {
