@@ -1,9 +1,11 @@
+import EVENT_CONFIG from '@event/config';
 import type {
   Game,
   Player,
   Stats,
   StatsCountry,
   StatsCountryResult,
+  StatsMedals,
   StatsPlayer,
   StatsPlayerGame,
   StatsPlayerResult,
@@ -28,7 +30,7 @@ export function calculateStats(tournaments: Tournament[]): Stats {
   upsertPlayer('BYE');
 
   for (const tournament of tournaments) {
-    const { year, players: tournamentPlayers, stages, top, games: tournamentGames } = tournament;
+    const { year, players: tournamentPlayers, stages, top, games: tournamentGames, categoriesTop } = tournament;
 
     const tournamentPlayersMap: Record<string, StatsPlayer> = {
       BYE: players.BYE,
@@ -89,16 +91,12 @@ export function calculateStats(tournaments: Tournament[]): Stats {
       }
     }
 
-    for (const [index, winner] of top.entries()) {
-      for (const id of winner.split(',')) {
-        tournamentPlayersMap[id].medals[index].push(year.toString());
-
-        const country = tournamentPlayers[id].country;
-
-        if (country) {
-          upsertCountry(country).medals[index].push(year.toString());
-        }
+    if (EVENT_CONFIG.showCategories && EVENT_CONFIG.categories?.length) {
+      for (const category of EVENT_CONFIG.categories) {
+        upsertMedals(year, tournamentPlayers, categoriesTop?.[category], category);
       }
+    } else {
+      upsertMedals(year, tournamentPlayers, top);
     }
 
     for (const id in tournamentGames) {
@@ -204,6 +202,11 @@ export function calculateStats(tournaments: Tournament[]): Stats {
     return (players[id] ||= {
       id,
       medals: [[], [], []],
+      categoriesMedals: (EVENT_CONFIG.categories || []).reduce<Record<string, StatsMedals>>((acc, category) => {
+        acc[category] = [[], [], []];
+
+        return acc;
+      }, {}),
       countries: new Set(),
       name: typeof player === 'string' ? id : player.name,
       years: [],
@@ -237,5 +240,30 @@ export function calculateStats(tournaments: Tournament[]): Stats {
       totalWon: 0,
       results: [],
     });
+  }
+
+  function upsertMedals(year: number, players: Record<string, Player>, winners?: string[], category?: string) {
+    if (!winners) {
+      return;
+    }
+
+    const edition = String(year);
+
+    for (const [index, winner] of winners.entries()) {
+      for (const id of winner.split(',')) {
+        const player = players[id];
+        const playerStats = upsertPlayer(player);
+
+        playerStats.medals[index].push(edition);
+
+        if (category) {
+          playerStats.categoriesMedals[category][index].push(edition);
+        }
+
+        if (player.country) {
+          upsertCountry(player.country).medals[index].push(edition);
+        }
+      }
+    }
   }
 }

@@ -30,7 +30,8 @@
     "website": "Website",
     "goToWebsite": "Go to event website",
     "referee": "Referee",
-    "awarded": "Medalists"
+    "awarded": "Medalists",
+    "awardedIn": "Medalists Of %{0}"
   },
   "stage": {
     "details": "Details",
@@ -104,8 +105,11 @@
     "title": "Medalists",
     "year": "Year",
     "first": "Champion",
+    "firstIn": "Champion of %{0}",
     "second": "2nd place",
-    "third": "3rd place"
+    "secondIn": "2nd place in %{0}",
+    "third": "3rd place",
+    "thirdIn": "3rd place in %{0}"
   },
   "medals": {
     "gold": "Gold",

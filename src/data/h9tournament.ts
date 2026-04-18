@@ -1,8 +1,10 @@
 import EVENT from '@event';
+import EVENT_CONFIG from '@event/config';
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { Game, GamePlayer, LeagueStage, Player, TableResult, TournamentDetails } from '@/schema/data';
 import { InputTournamentStage } from '@/schema/input';
+import { mapValues } from 'lodash-es';
 import { parseDates } from '@/libs/dates';
 import { H9Game, parseH9 } from '@/libs/h9';
 import { getGameId, parseGame } from '@/data/games';
@@ -219,7 +221,23 @@ export async function loadH9Tournament({
     }
   }
 
-  if (!tournamentDetails.top.length) {
+  if (EVENT_CONFIG.showCategories && EVENT_CONFIG.categories?.length && !tournamentDetails.categoriesTop) {
+    const top: Record<string, string[][]> = {};
+
+    for (const player of table) {
+      for (const category of EVENT_CONFIG.categories) {
+        const place = Number(player.breakers[category]);
+
+        if (!isNaN(place) && place <= 3) {
+          const categoryTop = (top[category] ||= []);
+
+          (categoryTop[place - 1] ||= []).push(player.id);
+        }
+      }
+    }
+
+    tournamentDetails.categoriesTop = mapValues(top, (cat) => cat.map((pl) => pl.join(',')));
+  } else if (!tournamentDetails.top.length) {
     const winners: string[][] = [];
     for (const player of table) {
       if (player.place <= 3) {

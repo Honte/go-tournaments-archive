@@ -11,6 +11,7 @@ export type TournamentDetails = {
   website?: string;
   referee?: string;
   top: string[];
+  categoriesTop?: Record<string, string[]>;
   displayReversed?: boolean;
 };
 
@@ -202,6 +203,7 @@ export type StatsPlayer = {
   name: string;
   countries: Set<string>;
   medals: StatsMedals;
+  categoriesMedals: Record<string, StatsMedals>;
   years: number[];
   results: StatsPlayerResult[];
   score: number;

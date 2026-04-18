@@ -9,33 +9,33 @@
 ;                                 Polish Junior Go Championship
 ;                                  Bielsko-Biala, 7-8.12.2002
 ;Pl     Name             Grade  Club   MM S SOS SDOS U18 U15 U12  1.     2.     3.     4.     5.
-  1 Celejewski Pawel        2k PL Choc 14 5  58 291 1 0 0  7+    10+     2+     3+     5+  |12833062
-  2 Mroczek Krzysztof       3k PL Wars 13 4  59 285 2 0 0  8+    11+     1-     4+     3+  |12725064
-  3 Gogosz Dominik          3k PL Choc 12 3  60 283 3 0 0 11+     8+     6+     1-     2-  |12813064
-  4 Zyzak Andrzej           8k PL Wodz 12 3  57 285 0 0 0  5+     9-    10+     2-     7+  |10949763
-  5 Celejewski Piotr        4k PL Choc 12 3  57 274 0 1 0  4-    12+     9+     6+     1-  |12801063
-  6 Bazynski Jan            8k PL Wars 12 3  56 286 0 2 0  9+     7+     3-     5-    11+  |10925728
-  7 Lubos Przemyslaw        9k PL Wodz 11 2  59 281 0 3 0  1-     6-    11+     8+     4-  |12074260
-  8 Lubos Barbara           8k PL Rybn 11 2  54 283 0 0 0  2-     3-    12+     7-    10+  |10925761
-  9 Smigowska Agnieszka     9k PL Wodz 11 2  54 275 0 0 0  6-     4+     5-    10-    12+  |12098372
- 10 Majer Marek             12 PL Lodz 10 2  56 272 0 0 0 12+     1-     4-     9+     8-  |12886720
- 11 Gogosz Damian           9k PL Choc 10 1  56 264 0 0 0  3-     2-     7-    13+     6-  |12986160
- 12 Tracichleb Piotr        13 PL Ruda  8 1  49 251 0 0 0 10-     5-     8-    15+     9-  |12701095
- 13 Surma Mateusz           16 PL Rydu  8 4  30 156 0 0 1 15+    14+    16+    11-    17+  |12837968
- 14 Tracichleb Magda        18 PL Ruda  6 4  25 124 0 0 0 16+    13-    15+    17+    18+  |12737769
- 15 Szychowiak Weronika     16 PL Bydg  5 1  30 142 0 0 2 13-    16-    14-    12-    19+  |12586497
- 16 Stozek Adam             18 PL Wars  5 3  25 117 0 0 3 14-    15+    13-    18+    20+  |12750023
- 17 Szychowiak Gracjan      19 PL Bydg  4 3  20  95 0 0 0 24+    25+    23+    14-    13-  |12686608
- 18 Owsiany Tomasz          20 PL Swie  3 3  19  89 0 0 0 19+    20+    24+    16-    14-  |12933327
- 19 Cymbala Tomasz          20 PL Choc  3 3  13  84 0 0 0 18-    28+    21+    23+    15-  |12933580
- 20 Gogosz Dorota           20 PL Choc  3 3  13  77 0 0 0 26+    18-    27+    25+    16-  |12901581
- 21 Kaluza Klaudia          20 PL Wodz  3 3  11  63 0 0 0 25-    26+    19-    24+    23+  |12850970
- 22 Kaczorowski Marcin      20 PL Kedz  3 3   9  60 0 0 0 23-    24-    26+    27+    25+  |12913582
- 23 Szczygiel Piotr         20 PL Choc  2 2  14  63 0 0 0 22+    27+    17-    19-    21-  |12925583
- 24 Nagaj Dawid             20 PL Choc  2 2  13  69 0 0 0 17-    22+    18-    21-    28+  |12937584
- 25 Wozniak Anna            20 PL Choc  2 2  13  63 0 0 0 21+    17-    28+    20-    22-  |12950586
- 26 Mielnik Karolina        20 PL Choc  2 2  10  53 0 0 0 20-    21-    22-    28+    27+  |12962587
- 27 Danielewska Cyryla      20 PL Wodz  1 1  10  56 0 0 0 28+    23-    20-    22-    26-  |12933349
- 28 Wozniak Aleksandra      20 PL Choc  0 0  10  59 0 0 0 27-    19-    25-    26-    24-  |12986589
+  1 Celejewski Pawel        2k PL Choc 14 5  58 291  1   0   0     7+    10+     2+     3+     5+  |12833062
+  2 Mroczek Krzysztof       3k PL Wars 13 4  59 285  2   0   0     8+    11+     1-     4+     3+  |12725064
+  3 Gogosz Dominik          3k PL Choc 12 3  60 283  3   0   0    11+     8+     6+     1-     2-  |12813064
+  4 Zyzak Andrzej           8k PL Wodz 12 3  57 285  4   0   0     5+     9-    10+     2-     7+  |10949763
+  5 Celejewski Piotr        4k PL Choc 12 3  57 274  0   1   0     4-    12+     9+     6+     1-  |12801063
+  6 Bazynski Jan            8k PL Wars 12 3  56 286  0   2   0     9+     7+     3-     5-    11+  |10925728
+  7 Lubos Przemyslaw        9k PL Wodz 11 2  59 281  0   3   0     1-     6-    11+     8+     4-  |12074260
+  8 Lubos Barbara           8k PL Rybn 11 2  54 283  ?   ?   0     2-     3-    12+     7-    10+  |10925761
+  9 Smigowska Agnieszka     9k PL Wodz 11 2  54 275  ?   ?   0     6-     4+     5-    10-    12+  |12098372
+ 10 Majer Marek            12k PL Lodz 10 2  56 272  ?   ?   0    12+     1-     4-     9+     8-  |12886720
+ 11 Gogosz Damian           9k PL Choc 10 1  56 264  ?   ?   0     3-     2-     7-    13+     6-  |12986160
+ 12 Tracichleb Piotr       13k PL Ruda  8 1  49 251  ?   ?   0    10-     5-     8-    15+     9-  |12701095
+ 13 Surma Mateusz          16k PL Rydu  8 4  30 156  0   0   1    15+    14+    16+    11-    17+  |12837968
+ 14 Tracichleb Magda       18k PL Ruda  6 4  25 124  ?   ?   0    16+    13-    15+    17+    18+  |12737769
+ 15 Szychowiak Weronika    16k PL Bydg  5 1  30 142  0   0   2    13-    16-    14-    12-    19+  |12586497
+ 16 Stozek Adam            18k PL Wars  5 3  25 117  0   0   3    14-    15+    13-    18+    20+  |12750023
+ 17 Szychowiak Gracjan     19k PL Bydg  4 3  20  95  ?   ?   ?    24+    25+    23+    14-    13-  |12686608
+ 18 Owsiany Tomasz         20k PL Swie  3 3  19  89  ?   ?   ?    19+    20+    24+    16-    14-  |12933327
+ 19 Cymbala Tomasz         20k PL Choc  3 3  13  84  ?   ?   ?    18-    28+    21+    23+    15-  |12933580
+ 20 Gogosz Dorota          20k PL Choc  3 3  13  77  ?   ?   ?    26+    18-    27+    25+    16-  |12901581
+ 21 Kaluza Klaudia         20k PL Wodz  3 3  11  63  ?   ?   ?    25-    26+    19-    24+    23+  |12850970
+ 22 Kaczorowski Marcin     20k PL Kedz  3 3   9  60  ?   ?   ?    23-    24-    26+    27+    25+  |12913582
+ 23 Szczygiel Piotr        20k PL Choc  2 2  14  63  ?   ?   ?    22+    27+    17-    19-    21-  |12925583
+ 24 Nagaj Dawid            20k PL Choc  2 2  13  69  ?   ?   ?    17-    22+    18-    21-    28+  |12937584
+ 25 Wozniak Anna           20k PL Choc  2 2  13  63  ?   ?   ?    21+    17-    28+    20-    22-  |12950586
+ 26 Mielnik Karolina       20k PL Choc  2 2  10  53  ?   ?   ?    20-    21-    22-    28+    27+  |12962587
+ 27 Danielewska Cyryla     20k PL Wodz  1 1  10  56  ?   ?   ?    28+    23-    20-    22-    26-  |12933349
+ 28 Wozniak Aleksandra     20k PL Choc  0 0  10  59  ?   ?   ?    27-    19-    25-    26-    24-  |12986589
 ;
 ;time=60+b
