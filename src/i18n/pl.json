@@ -105,8 +105,11 @@
     "title": "Medaliści",
     "year": "Rok",
     "first": "1. Miejsce",
+    "firstIn": "1. Miejsce w %{0}",
     "second": "2. miejsce",
-    "third": "3. miejsce"
+    "secondIn": "2. miejsce w %{0}",
+    "third": "3. miejsce",
+    "thirdIn": "3. miejsce w %{0}"
   },
   "medals": {
     "gold": "Złoto",

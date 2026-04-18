@@ -203,6 +203,7 @@ export type StatsPlayer = {
   name: string;
   countries: Set<string>;
   medals: StatsMedals;
+  categoriesMedals: Record<string, StatsMedals>;
   years: number[];
   results: StatsPlayerResult[];
   score: number;

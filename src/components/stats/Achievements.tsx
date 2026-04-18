@@ -20,16 +20,25 @@ export function Achievements({ player, translations }: AchievementsProps) {
   const details: Record<string, ReactNode> = {};
 
   let hasMedals = false;
-  for (const [index, category] of MEDALS.entries()) {
-    const achievements = player.medals[index];
+  for (const [index, medal] of MEDALS.entries()) {
+    if (EVENT_CONFIG.showCategories && EVENT_CONFIG.categories?.length) {
+      for (const category of EVENT_CONFIG.categories) {
+        const achievements = player.categoriesMedals[category][index];
 
-    if (achievements.length) {
-      details[t(`winners.${category}`)] = (
-        <span className="text-wrap">
-          {listYear(achievements.toReversed(), translations.locale)} ({achievements.length})
-        </span>
-      );
-      hasMedals = true;
+        if (achievements.length) {
+          details[t(`winners.${medal}In`, t(`categories.short.${category}`))] = (
+            <AchievementYears years={achievements} locale={translations.locale} />
+          );
+          hasMedals = true;
+        }
+      }
+    } else {
+      const achievements = player.medals[index];
+
+      if (achievements.length) {
+        details[t(`winners.${medal}`)] = <AchievementYears years={achievements} locale={translations.locale} />;
+        hasMedals = true;
+      }
     }
   }
 
@@ -46,6 +55,14 @@ export function Achievements({ player, translations }: AchievementsProps) {
       <H2>{t('stats.achievements')}</H2>
       <Details details={details} />
     </div>
+  );
+}
+
+function AchievementYears(props: { years: string[]; locale: string }) {
+  return (
+    <span className="text-wrap">
+      {listYear(props.years.toReversed(), props.locale)} ({props.years.length})
+    </span>
   );
 }
 

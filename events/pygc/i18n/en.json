@@ -11,7 +11,10 @@
   },
   "winners": {
     "title": "Medalists of Polish Youth Go Championships",
-    "first": "Polish Youth Champion"
+    "first": "Polish Youth Champion",
+    "firstIn": "Polish Youth Champion %{0}",
+    "secondIn": "2nd place %{0}",
+    "thirdIn": "3rd place %{0}"
   },
   "categories": {
     "full": {
