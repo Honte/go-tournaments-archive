@@ -12,5 +12,23 @@
   "winners": {
     "title": "Medalists of Polish Youth Go Championships",
     "first": "Polish Youth Champion"
+  },
+  "categories": {
+    "full": {
+      "u21": "Under 21",
+      "u20": "Under 20",
+      "u18": "Under 18",
+      "u16": "Under 16",
+      "u15": "Under 15",
+      "u12": "Under 12"
+    },
+    "short": {
+      "u21": "U21",
+      "u20": "U20",
+      "u18": "U18",
+      "u16": "U16",
+      "u15": "U15",
+      "u12": "U12"
+    }
   }
 }

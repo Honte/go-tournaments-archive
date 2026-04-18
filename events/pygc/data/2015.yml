@@ -31,9 +31,6 @@ stages:
       - sos
       - sosos
       - direct
-      - u20
-      - u16
-      - u12
     breakers:
       - wins
       - sos

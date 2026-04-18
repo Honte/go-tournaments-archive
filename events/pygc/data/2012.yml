@@ -21,7 +21,7 @@ stages:
       - wins
       - null
       - sodos
-      - u20
+      - u12
     breakers:
       - wins
       - sodos

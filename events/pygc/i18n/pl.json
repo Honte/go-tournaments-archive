@@ -12,5 +12,23 @@
   "winners": {
     "title": "Medaliści Mistrzostw Polski juniorów",
     "first": "Mistrz Polski juniorów"
+  },
+  "categories": {
+    "full": {
+      "u21": "Kategoria U21",
+      "u20": "Kategoria U20",
+      "u18": "Kategoria U18",
+      "u16": "Kategoria U16",
+      "u15": "Kategoria U15",
+      "u12": "Kategoria U12"
+    },
+    "short": {
+      "u21": "U21",
+      "u20": "U20",
+      "u18": "U18",
+      "u16": "U16",
+      "u15": "U15",
+      "u12": "U12"
+    }
   }
 }
