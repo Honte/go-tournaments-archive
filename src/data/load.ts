@@ -32,13 +32,19 @@ export async function loadTournaments() {
     };
 
     for (const stageJson of json.stages) {
-      const stage = await parseStage(stageJson, players, games, tournamentDetails, playersHandler);
+      try {
+        const stage = await parseStage(stageJson, players, games, tournamentDetails, playersHandler);
 
-      if (stage.date) {
-        dates.push(...stage.date);
+        if (stage.date) {
+          dates.push(...stage.date);
+        }
+
+        stages.push(stage);
+      } catch (e) {
+        console.error(`\nError parsing tournament: ${file}`);
+        console.error(e);
+        console.log();
       }
-
-      stages.push(stage);
     }
 
     tournaments.push({

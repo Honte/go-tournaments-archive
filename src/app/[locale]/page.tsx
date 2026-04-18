@@ -34,12 +34,14 @@ export default async function Home({ params }: PageProps) {
     <div className="xl:grid xl:grid-cols-4 xl:gap-4">
       <div className="xl:col-span-3 xl:row-span-5">
         <Activity mode={SHOW_BANNER ? 'visible' : 'hidden'}>
-          <Banner
-            href={t('currentEdition.website')}
-            tooltip={t('currentEdition.tooltip')}
-            title={t('currentEdition.title')}
-            subtitle={t('currentEdition.subtitle')}
-          />
+          {EVENT_CONFIG.currentEdition && (
+            <Banner
+              href={t('currentEdition.website')}
+              tooltip={t('currentEdition.tooltip')}
+              title={t('currentEdition.title')}
+              subtitle={t('currentEdition.subtitle')}
+            />
+          )}
         </Activity>
         <Winners translations={translations} tournaments={tournaments} />
       </div>

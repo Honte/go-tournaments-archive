@@ -3,6 +3,7 @@ import type { Locale } from '@/i18n/consts';
 export type TournamentDetails = {
   year: number;
   name?: string | Record<Locale, string>;
+  description?: string | Record<Locale, string>;
   location: string;
   country?: string;
   start?: string;
@@ -57,6 +58,7 @@ export type MandatoryBreakers =
 // Then modify the BaseStage type to use the enum
 export type BaseStage = {
   name?: string | Record<Locale, string>;
+  notes?: string | Record<Locale, string>;
   date?: TournamentDateSpan[];
   egd?: string;
   time?: string;

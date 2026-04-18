@@ -6,13 +6,6 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { between } from '@/libs/math';
 import { YearsNavigation } from '@/components/navigation/YearsNavigation';
 
-
-
-
-
-
-
-
 const CAPTURE: AddEventListenerOptions = { capture: true };
 const CAPTURE_AND_NOT_PASSIVE: AddEventListenerOptions = { capture: true, passive: false };
 const THRESHOLD = 10;

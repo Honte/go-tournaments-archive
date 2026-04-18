@@ -18,12 +18,12 @@
     "title": "Medalistki Mistrzostw Polski kobiet",
     "first": "Mistrzyni Polski"
   },
-  "stats":  {
+  "stats": {
     "attendants": "Top %{0} uczestniczek",
     "opponents": "Podsumowanie przeciwniczek",
     "medalists": "Medalistki"
   },
-    "total": {
-      "participants": "Uczestniczek"
+  "total": {
+    "participants": "Uczestniczek"
   }
 }

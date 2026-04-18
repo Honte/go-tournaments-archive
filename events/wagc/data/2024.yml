@@ -4,6 +4,14 @@ stages:
     file: wagc2024.txt
     time: 60min + 3x30s japanese
     komi: 6.5
+    scoringColumns:
+    - wins
+    - sos
+    - sosos
+    breakers:
+    - wins
+    - sos
+    - sosos
     games:
       - 1-4 1:B+R sgf:2024/4-BaoxiangBai-PongsakarnSornarra.sgf
       - 1-5 1:B+T sgf:2024/8-BaoxiangBai-ShengChiehLo.sgf

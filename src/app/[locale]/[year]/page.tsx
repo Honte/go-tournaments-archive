@@ -9,6 +9,7 @@ import { Awarded } from '@/components/Awarded';
 import { GamesList } from '@/components/GamesList';
 import { StageDetails } from '@/components/StageDetails';
 import { StageResults } from '@/components/StageResults';
+import { TournamentDescription } from '@/components/TournamentDescription';
 import { TournamentDetails } from '@/components/TournamentDetails';
 import { TopNavigation } from '@/components/navigation/TopNavigation';
 
@@ -73,6 +74,8 @@ export default async function Edition(props: PageProps) {
         <TournamentDetails tournament={tournament} translations={translations} />
         <Awarded tournament={tournament} translations={translations} />
       </div>
+
+      <TournamentDescription tournament={tournament} translations={translations} />
 
       {stagesToDisplay.map((stage, index) => (
         <div key={index} className="my-4">
