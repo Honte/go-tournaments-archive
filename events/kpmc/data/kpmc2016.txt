@@ -1,0 +1,64 @@
+; TC[W160905A]
+; CL[B]
+; EV[11th Korea Prime Minister Cup]
+; PC[KR, Buan]
+; DT[2016-09-05,2016-09-07]
+; HA[h9]
+; KM[6.5]
+; TM[62.5]
+; CM[ (submitted by Herman Hiddema)]
+;.
+ 1 Yang Rundong               7d CN  xxxx  4+      9+      36+     2+      3+      6+      6    25   134   |18025403
+ 2 Lai Yu-Cheng               7d TW  xxxx  50+     10+     13+     1-      9+      11+     5    23   129   |13650813
+ 3 Kim Heesoo                 7d KR  xxxx  38+     37+     7+      6+      1-      8+      5    22   138   |17674745
+ 4 Ge Yongfei                 7d CA  xxxx  1-      49+     39+     22+     23+     12+     5    19   123   |14350743
+ 5 Tanapatsopol Vorawat       5d TH  xxxx  51+     45+     11-     14+     21+     10+     5    18   116   |17301240
+ 6 Ando Shota                 6d JP  xxxx  25+     26+     8+      3-      11+     1-      4    25   130   |18049405
+ 7 Hora Jan                   6d CZ  APra  22+     15+     3-      18+     8-      17+     4    24   118   |10401083
+ 8 Ben-David Reem             4d IL  TAv   21+     24+     6-      13+     7+      3-      4    23   133   |14825580
+ 9 Le_Calve Tanguy            6d FR  44Na  32+     1-      40+     15+     2-      21+     4    23   122   |14962706
+10 Lee Cheuk-Leung            6d HK  xxxx  33+     2-      28+     29+     18+     5-      4    23   107   |15074983
+11 Fionin Grigorij            6d RU  78SP  49+     28+     5+      17+     6-      2-      4    22   118   |16013096
+12 Do Khanh_Binh              5d VN  xxxx  23-     27+     34+     16+     25+     4-      4    21   110   |16250157
+13 Halchenko Mykhailo         5d UA  xxxx  46+     16+     2-      8-      37+     25+     4    20   118   |10433236
+14 Chang Fu_Kang              5d MY  xxxx  31+     39+     17-     5-      22+     24+     4    20   110   |17301361
+15 Thalib Daniel-Sufiah       4d ID  xxxx  19+     7-      37+     9-      36+     27+     4    19   125   |14586660
+16 Soerlin Weiying            5d SE  xxxx  42+     13-     24+     12-     38+     23+     4    18   117   |14762825
+17 Chiu Jeremy                6d US  xxxx  54+     40+     14+     11-     30+     7-      4    17   114   |16950879
+18 Kwa Jie_Hui                4d SG  xxxx  52+     41+     29+     7-      10-     26+     4    17   113   |15025351
+19 Iugulescu Sergiu_Dan       3d RO  Cluj  15-     54+     32+     21-     42+     30+     4    15   105   |10350263
+20 Mercier Gabriel            2d BE  LLN   36-     52+     22-     39+     34+     37+     4    13   111   |14825305
+21 Degirmenci Ozgur           4d TR  Ist   8-      48+     26+     19+     5-      9-      3    22   110   |14713589
+22 Sigurdarson Olafur         2d IS  Reyk  7-      50+     20+     4-      14-     36+     3    20   114   |16350587
+23 Hanevik Severin            3d NO  Berg  12+     29-     41+     36+     4-      16-     3    20   114   |14962662
+24 Tumelis Giedrius           2d LT  Kaun  27+     8-      16-     44+     29+     14-     3    20   111   |13813140
+25 Hiddema Herman             4d NL  Gron  6-      42+     31+     38+     12-     13-     3    19   118   |10550573
+26 Grabowski Kamil            2d PL  Opol  47+     6-      21-     28+     31+     18-     3    19   110   |15849361
+27 Castelblanco Francisco     5d CO  xxxx  24-     12-     43+     33+     32+     15-     3    19   107   |16598791
+28 Csizmadia Gyorgy           4d HU  BuPe  43+     11-     10-     26-     40+     38+     3    17   116   |12698928
+29 Phease Barry               4d NZ  xxxx  53+     23+     18-     10-     24-     39+     3    17   111   |15086852
+30 Jadron Milan               1k SK  Brat  37-     43+     35+     41+     17-     19-     3    17   97    |10201653
+31 Laatikainen Vesa           5d FI  eGo   14-     33+     25-     50+     26-     41+     3    16   106   |10201015
+32 Tseveenravdan Tugsbilegt   3d MN  Ula   9-      51+     19-     46+     27-     42+     3    16   102   |14749427
+33 Felix Benoit               1d CH  Kogo  10-     31-     47+     27-     51+     43+     3    15   102   |14850418
+34 Janza Janez                3d SI  xxxx  40-     53+     12-     45+     20-     44+     3    15   91    |10433346
+35 Curiel-Sanchez Alejandro   2d MX  xxxx  41-     47+     30-     49-     54+     48+     3    10   91    |18050406
+36 Powell Ruairi              1d DK  DGF   20+     44+     1-      23-     15-     22-     2    22   111   |13901624
+37 Trinks Daniela             3d DE  B     30+     3-      15-     40+     13-     20-     2    22   108   |10249261
+38 Walde Tashi                3d IT  Roma  3-      46+     44+     25-     16-     28-     2    19   103   |17050704
+39 Galinovskij Vasilij        2k BY  Min   48+     14-     4-      20-     50+     29-     2    19   97    |13650802
+40 d`Albuquerque Francisco    1d AR  xxxx  34+     17-     9-      37-     28-     49+     2    17   112   |18062407
+41 Bachri Amine               1k MA  xxxx  35+     18-     23-     30-     49+     31-     2    17   98    |10625769
+42 Chang Chan-fai             4d MO  xxxx  16-     25-     48+     51+     19-     32-     2    17   95    |18074408
+43 Roldan Jesus               1d ES  NamB  28-     30-     27-     47+     45+     33-     2    16   95    |12633984
+44 Mutabzija Zoran            2d HR  Zagr  45+     36-     38-     24-     46+     34-     2    14   103   |10249041
+45 Goncalves Fernando         8k PT  Brg   44-     5-      53+     34-     43-     51+     2    14   90    |16950758
+46 Jacimovic Mihailo          3d RS  KGRa  13-     38-     49+     32-     44-     50+     2    13   103   |16786891
+47 Rubidge Lloyd              1d ZA  xxxx  26-     35-     33-     43-     53+     52+     2    13   85    |12037674
+48 Nedev Teodor               3k BG  Rous  39-     21-     42-     53+     52+     35-     2    12   93    |15049859
+49 Gomez-Pinto Jose           1d CL  xxxx  11-     4-      46-     35+     41-     40-     1    18   98    |14886179
+50 Rodriguez_Rojas Leiner     7k CR  xxxx  2-      22-     52+     31-     39-     46-     1    16   104   |18086409
+51 Linster Bernard            5k LU  Lux   5-      32-     54+     42-     33-     45-     1    15   94    |17013601
+52 Galvez-Mora Carlos         4k PE  xxxx  18-     20-     50-     54+     48-     47-     1    13   85    |15674120
+53 Caceres-Estrada Edgardo    7k GT  xxxx  29-     34-     45-     48-     47-     54+     1    12   85    |12025530
+54 Doyle Carol               10k IE  Dubl  17-     19-     51-     52-     35-     53-     0    14   82    |14633982

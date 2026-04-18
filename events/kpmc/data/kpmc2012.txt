@@ -1,0 +1,80 @@
+; TC[W121027A]
+; CL[B]
+; EV[7th Korea Prime Minister Cup]
+; PC[KR, Gwangju]
+; DT[2012-10-27,2012-10-28]
+; HA[h9]
+; KM[6.5]
+; TM[67.5]
+; CM[ (submitted by kamyszyn)]
+;.
+ 1 Han Seung-yu              5d KR  xxxx  7    6    27   156  54+     30+     22+     9+      4+      2+       |14701841
+ 2 Hu Yuqing                 7d CN  Sha   6    5    31   151  47+     10+     20+     3+      7+      1-       |13949826
+ 3 Ge Yongfei                7d CA  xxxx  6    5    29   148  43+     16+     6+      2-      23+     14+      |14350743
+ 4 Kinoshita Nagatoki        6d JP  xxxx  6    5    29   147  39+     29+     5+      12+     1-      25+      |16562920
+ 5 Chan Naisan               6d HK  WCh   6    5    26   145  49+     11+     4-      28+     38+     8+       |14349742
+ 6 Kachanovskyi Artem        7d UA  Rivn  6    5    25   149  65+     28+     3-      13+     19+     12+      |12662870
+ 7 Hamrah Schayan            4d AT  Gote  6    5    25   149  58+     37+     24+     8+      2-      10+      |15437598
+ 8 Kuronen Juri              5d FI  eGo   5    4    29   147  44+     18+     19+     7-      15+     5-       |15386382
+ 9 Lazarev Alexej            6d RU  10Pt  5    4    28   142  32+     42+     17+     1-      12-     24+      |10374386
+10 Groenen Geert             6d NL  DHaa  5    4    26   147  53+     2-      46+     22+     11+     7-       |10501216
+11 Chen Chi-Jui              7d TW  Taip  5    4    26   145  38+     5-      40+     18+     10-     23+      |16262708
+12 Surma Mateusz             6d PL  Dzim  5    4    26   143  70+     26+     15+     4-      9+      6-       |12837968
+13 Zhang Xiang               6d SG  Sin   5    4    26   141  35+     17-     27+     6-      36+     22+      |14525192
+14 Podpera Lukas             5d CZ  APWS  5    4    24   150  64+     19-     26+     17+     20+     3-       |13201914
+15 Pocsai Rita               4d HU  Szen  5    4    24   149  41+     40+     12-     21+     8-      26+      |10686346
+16 Corlan Lucian             5d RO  Bucu  5    4    24   143  52+     3-      21-     32+     37+     19+      |12586750
+17 Le Mai-Duy                2d VN  xxxx  5    4    24   142  67+     13+     9-      14-     31+     20+      |12550153
+18 Anguila Oscar             4d ES  Pedr  5    4    24   140  60+     8-      33+     11-     27+     21+      |13562450
+19 Kim Doyoung               6d NZ  xxxx  4    3    29   142  34+     14+     8-      31+     6-      16-      |16574921
+20 le_Calve Tanguy           5d FR  44Na  4    3    27   145  48+     23+     2-      24+     14-     17-      |14962706
+21 Butala Gregor             5d SI  Ljub  4    4    27   135  33+     25+     16+     15-     34+     18-      |10433016
+22 Jirasophin Apidet         5d TH  xxxx  4    3    27   129  50+     31+     1-      10-     51+     13-      |15033876
+23 Mualime Sebastian         4d ID  xxxx  4    3    25   142  46+     20-     42+     29+     3-      11-      |16262158
+24 Missiaen Kwinten          2d BE  Leuv  4    3    24   139  61+     36+     7-      20-     33+     9-       |15286062
+25 Cheng Khai-yong           3d MY  xxxx  4    3    24   138  27-     21-     50+     39+     29+     4-       |16598923
+26 Welticke Jonas            4d DE  BN    4    3    24   135  57+     12-     14-     41+     28+     15-      |15786287
+27 Jabarin Ali               5d IL  TAv   4    4    23   136  25+     45+     13-     40+     18-     41+      |14637810
+28 Manojlovic Lazar          5d RS  Radn  4    3    23   129  68+     6-      37+     5-      26-     45+      |12301652
+29 Sulak Fatih               3d TR  Odtu  4    3    22   140  55+     4-      36+     23-     25-     44+      |12786081
+30 Pedersen Torben           3d DK  KGK  4    3    22   125  59+     1-      31-     38-     49+     37+      |10401842
+31 Manning Toby              3d UK  Leic  4    3    21   140  66+     22-     30+     19-     17-     40+      |10286067
+32 Burrall Matthew           7d US  xxxx  4    4    21   123  9-      63+     44+     16-     46+     38+      |15049870
+33 Bing Jakob                2d SE  Karl  4    3    20   130  21-     56+     18-     55+     24-     43+      |14850462
+34 Petrauskas Andrius        3d LT  Viln  4    4    19   134  19-     57+     48+     42+     21-     36+      |12733589
+35 Sasaki Jorge              5d BR  xxxx  4    4    18   127  13-     59+     45+     36-     53+     39+      |13449073
+36 Tabares Santiago          3d AR  Sau   3    2    24   123  51+     24-     29-     35+     13-     34-      |14825173
+37 Jadron Milan              1d SK  Brat  3    2    23   126  62+     7-      28-     53+     16-     30-      |10201653
+38 Chen Xiaochun             6d AU  xxxx  3    3    22   129  11-     64+     56+     30+     5-      32-      |16533924
+39 Gutierrez Emilio          1d MX  xxxx  3    3    22   126  4-      47+     43+     25-     54+     35-      |15062872
+40 Hanevik Heming            1d NO  Berg  3    2    22   125  69+     15-     11-     27-     42+     31-      |14986664
+41 Benenati Martin           3d UY  Mnv   3    3    21   117  15-     60+     49+     26-     50+     27-      |14325751
+42 Morrison Roberto          1d CH  Loc   3    2    20   126  63+     9-      23-     34-     40-     53+      |10349493
+43 Tahirbayov Bahadur        6d AZ  Baku  3    3    19   124  3-      54+     39-     47+     64+     33-      |15037880
+44 Ho-Soon Ang               7k BN  xxxx  3    3    19   116  8-      69+     32-     52+     55+     29-      |16501925
+45 Burgos Juan_Felipe        3d CO  xxxx  3    3    19   115  56+     27-     35-     57+     48+     28-      |16533792
+46 Alexandrov Bojan          2k BG  Sofi  3    3    18   123  23-     66+     10-     58+     32-     55+      |15201527
+47 Nguyen Cuong              1d LU  Lux   3    3    17   125  2-      39-     64+     43-     57+     54+      |13662902
+48 Hutchinson James          1d UK  Belf  3    3    17   109  20-     62+     34-     61+     45-     56+      |14850187
+49 Rakotoarisoa Mamy         2d MG  Ant   3    3    16   113  5-      70+     41-     60+     30-     65+      |13949837
+50 Chakur Alexandr           1d BY  Min   3    3    15   119  22-     65+     25-     67+     41-     60+      |14074280
+51 Davies Andrew             3d ZA  xxxx  3    3    14   114  36-     53-     68+     59+     22-     61+      |15301792
+52 Izeki Yu                  5k PH  xxxx  3    3    14   110  16-     55-     66+     44-     67+     58+      |16513926
+53 Gonzalez Javier           2d VE  KA    2    2    20   116  10-     51+     61+     37-     35-     42-      |13986841
+54 Tsetseg-Ulzii Zoljargal   1k MN  xxxx  2    2    19   118  1-      43-     65+     56+     39-     47-      |16525927
+55 Margarjan Artak           4k AM  Jer   2    2    19   109  29-     52+     58+     33-     44-     46-      |13049168
+56 Montiel Sebastian         1k CL  Pun   2    1    17   109  45-     33-     38-     54-     62+     48-      |15037847
+57 Giuliato Leonardo         4k IT  Pado  2    2    17   108  26-     34-     62+     45-     47-     64+      |13001109
+58 Mohammadi Shirin         10k IR  xxxx  2    2    16   108  7-      67+     55-     46-     66+     52-      |16537928
+59 Bajic Vladimir            3k BA  BLu   2    2    16   93   30-     35-     63+     51-     61-     68+      |12662947
+60 Kina Avalos-Kenyi         1d PE  xxxx  2    2    15   105  18-     41-     70+     49-     65+     50-      |15225287
+61 Albuja-Ortiz Diego        1d EC  Qui   2    2    15   103  24-     68+     53-     48-     59+     51-      |14333759
+62 Christodoulides Phedias   2k CY  Nico  2    2    12   101  37-     48-     57-     69+     56-     66+      |15613345
+63 Ki Young-suk              7k KR  xxxx  2    2    12   100  42-     32-     59-     66-     69+     67+      |16550930
+64 Zrno Daniel               1k HR  VGor  1    1    17   111  14-     38-     47-     68+     43-     57-      |10825397
+65 Ganeyev Damir             3k KZ  xxxx  1    1    16   103  6-      50-     54-     70+     60-     49-      |16513035
+66 Noh Young-sun             7k KR  xxxx  1    1    16   93   31-     46-     52-     63+     58-     62-      |16562931
+67 Kim Young-ja              7k KR  xxxx  1    1    16   92   17-     58-     69+     50-     52-     63-      |16574932
+68 Gomez-Flores Mario        9k GT  xxxx  1    1    12   98   28-     61-     51-     64-     70+     59-      |16598934
+69 Yun Su-Kyung              7k KR  xxxx  1    1    11   94   40-     44-     67-     62-     63-     70+      |16533935
+70 Vargas-Campos Daniel      5k CR  xxxx  0    0    13   96   12-     49-     60-     65-     68-     69-      |15862286

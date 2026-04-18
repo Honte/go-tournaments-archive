@@ -1,0 +1,16 @@
+website: https://kpmc.kbaduk.or.kr/us/2021
+stages:
+  - type: tournament
+    file: kpmc2021.txt
+    time: 60min + 3x30s japanese
+    notes:
+     en: Groups of 4 - rounds 1-3, Knock Out 32 - rounds 4-8
+     pl: Grupy po 4 graczy - rundy 1-3, Knock out 32 - rundy 4-8     
+    komi: 6.5
+    scoringColumns:
+      - null
+      - wins
+      - place
+    breakers:
+      - place
+    findSharedPlaces: true

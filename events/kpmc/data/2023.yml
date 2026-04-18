@@ -1,0 +1,15 @@
+website: https://kpmc.kbaduk.or.kr/us/2023
+stages:
+  - type: tournament
+    file: kpmc2023.txt
+    time: 25min + 20s fischer
+    komi: 6.5
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: true

@@ -1,0 +1,16 @@
+website: https://kpmc.kbaduk.or.kr/us/2013
+stages:
+  - type: tournament
+    file: kpmc2013.txt
+    time: 45min + 3x30s japanese
+    komi: 6.5
+    scoringColumns:
+      - mms
+      - sos
+      - sosos
+      - wins
+    breakers:
+      - mms
+      - sos
+      - sosos
+    findSharedPlaces: true
