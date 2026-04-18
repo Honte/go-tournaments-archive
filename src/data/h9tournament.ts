@@ -6,7 +6,7 @@ import { Game, GamePlayer, LeagueStage, Player, TableResult, TournamentDetails }
 import { InputTournamentStage } from '@/schema/input';
 import { mapValues } from 'lodash-es';
 import { parseDates } from '@/libs/dates';
-import { H9Game, parseH9 } from '@/libs/h9';
+import { H9Game, buildLocalGameId, parseH9 } from '@/libs/h9';
 import { getGameId, parseGame } from '@/data/games';
 import type { PlayersHandler } from '@/data/players';
 import { getRankValue } from '@/data/rank';
@@ -103,7 +103,7 @@ export async function loadH9Tournament({
       const game = parseGame(gameString, id, false);
       const blackPlace = Number(game.players[0].id);
       const whitePlace = Number(game.players[1].id);
-      const localId = [blackPlace, whitePlace].sort().join('-');
+      const localId = buildLocalGameId(blackPlace, whitePlace, game.props.round);
       const blackPlayerId = table[blackPlace - 1]?.id;
       const whitePlayerId = table[whitePlace - 1]?.id;
 
@@ -127,7 +127,7 @@ export async function loadH9Tournament({
         continue;
       }
 
-      const localId = [player.place, game.opponent].sort().join('-');
+      const localId = buildLocalGameId(player.place, game.opponent, game.round);
       const opponentId = table[game.opponent - 1]?.id ?? 'BYE';
 
       if (game.result === '+') {
@@ -137,7 +137,8 @@ export async function loadH9Tournament({
       }
 
       if (!processedGamesMap.has(localId)) {
-        let parsedGame = existingGamesMap.get(localId);
+        let parsedGame =
+          existingGamesMap.get(localId) ?? existingGamesMap.get(buildLocalGameId(player.place, game.opponent));
 
         if (!parsedGame) {
           const isCurrentBlack = game.color ? game.color === 'black' : game.result === '+';
@@ -157,7 +158,9 @@ export async function loadH9Tournament({
             id: getGameId(gamesMap),
             players: [isCurrentBlack ? playerA : playerB, isCurrentBlack ? playerB : playerA],
             result: getGameResult(game.result, game.color),
-            props: {},
+            props: {
+              round: game.round,
+            },
           } satisfies Game;
         }
 

@@ -29,7 +29,7 @@ async function loadSgfInfo(rootDir: string, sgfPath: string) {
 }
 
 function extractSgfInfo(content: string, filename: string): SgfInfo {
-  const fromFilename = extractNamesFromFilename(filename);
+  const { names: fromFilename, round: roundFromFilename } = parseFilename(filename);
 
   let nodes;
   try {
@@ -41,6 +41,7 @@ function extractSgfInfo(content: string, filename: string): SgfInfo {
       fromFilename,
       rawResult: null,
       cleanResult: null,
+      round: roundFromFilename,
       corrupted: true,
     };
   }
@@ -53,6 +54,7 @@ function extractSgfInfo(content: string, filename: string): SgfInfo {
   const rawResult = data?.RE?.[0] ?? null;
   // Some SGFs in the archive use "B,Resign" instead of "B+Resign" as the result separator — accept both.
   const cleanResult = rawResult ? rawResult.replace(/,/g, '+') : null;
+  const roundFromMetadata = parseRoundValue(data?.RO?.[0]);
 
   return {
     path: filename,
@@ -60,24 +62,41 @@ function extractSgfInfo(content: string, filename: string): SgfInfo {
     fromFilename,
     rawResult,
     cleanResult,
+    round: roundFromMetadata ?? roundFromFilename,
     corrupted: false,
   };
 }
 
-// Split the name by dash
-// - if the file name contain rounds separated with dash (1-name1-name2, or name1-name2-1) the round would be ignore
-// - note that multi part names should used underscore instead of dash (e.g. "Kim-Sung-Lee" → "Kim_Sung_Lee")
-function extractNamesFromFilename(filename: string): PlayerNames {
+function parseRoundValue(value: string | undefined): number | null {
+  if (!value) {
+    return null;
+  }
+
+  const match = value.match(/\d+/);
+
+  return match ? Number(match[0]) : null;
+}
+
+// Parse a SGF filename like "2018/5-YiTienChan-ChenWang.sgf" into its round prefix and player names.
+// - leading "{N}-" is treated as the round number
+// - remaining digits are stripped before splitting on the last dash into black/white
+// - multi-part names should use underscores (e.g. "Kim-Sung-Lee" → "Kim_Sung_Lee")
+export function parseFilename(filename: string): { names: PlayerNames; round: number | null } {
   const stem = path.parse(filename).name;
+  const roundMatch = stem.match(/^(\d+)-/);
+  const round = roundMatch ? Number(roundMatch[1]) : null;
   const cleaned = stem.replace(/\d/g, '').replace(/^-+/, '').replace(/-+$/, '');
   const nameSeparator = cleaned.lastIndexOf('-');
 
   if (nameSeparator > 0) {
     return {
-      blackName: cleaned.slice(0, nameSeparator),
-      whiteName: cleaned.slice(nameSeparator + 1),
+      names: {
+        blackName: cleaned.slice(0, nameSeparator),
+        whiteName: cleaned.slice(nameSeparator + 1),
+      },
+      round,
     };
   }
 
-  return { blackName: null, whiteName: null };
+  return { names: { blackName: null, whiteName: null }, round };
 }

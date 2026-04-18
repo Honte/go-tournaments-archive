@@ -14,82 +14,82 @@ stages:
       - sosos
     findSharedPlaces: true
     games:
-      - 1-3 1:B+0.5 sgf:2018/5-YiTienChan-ChenWang.sgf
-      - 1-13 1:B+4.5 sgf:2018/2-YiTienChan-CheukTungLo.sgf
-      - 1-24 1:B+R sgf:2018/1-YiTienChan-LotharSpiegel.sgf
-      - 2-1 1:W+R sgf:2018/6-SangcheonKim-YiTienChan.sgf
-      - 2-5 2:B+3.5 sgf:2018/5-SangcheonKim-FukashiMurakami.sgf
-      - 2-9 2:B+R sgf:2018/8-SangcheonKim-JieHuiKwa.sgf
-      - 2-25 2:B+R sgf:2018/4-SangcheonKim-AaronYe.sgf
-      - 2-29 2:B+R sgf:2018/1-SangcheonKim-KoenPomstra.sgf
-      - 2-41 2:B+R sgf:2018/3-SangcheonKim-CarloMetta.sgf
-      - 3-2 2:W+R sgf:2018/7-ChenWang-SangcheonKim.sgf
-      - 3-9 3:B+R sgf:2018/3-ChenWang-JieHuiKwa.sgf
-      - 3-11 3:B+16.5 sgf:2018/4-ChenWang-CsabaMero.sgf
-      - 4-1 1:W+30.5 sgf:2018/8-StanislawFrejlak-YiTienChan.sgf
-      - 4-11 4:B+15.5 sgf:2018/7-StanislawFrejlak-CsabaMero.sgf
-      - 4-34 4:B+R sgf:2018/3-StanislawFrejlak-JanProkop.sgf
-      - 5-3 3:W+R sgf:2018/6-FukashiMurakami-ChenWang.sgf
-      - 5-14 5:B+4.5 sgf:2018/4-FukashiMurakami-YongfeiGe.sgf
-      - 5-24 5:B+R sgf:2018/7-FukashiMurakami-LotharSpiegel.sgf
-      - 5-49 5:B+R sgf:2018/1-FukashiMurakami-VasylSkochko.sgf
-      - 8-18 8:B+22.5 sgf:2018/8-JoseFlorencia-XinLei.sgf
-      - 8-47 8:B+R sgf:2018/4-JoseFlorencia-OlafurSigurdarson.sgf
-      - 9-1 1:W+8.5 sgf:2018/7-JieHuiKwa-YiTienChan.sgf
-      - 10-1 1:W+14.5 sgf:2018/4-BenjaminTeuber-YiTienChan.sgf
-      - 10-24 10:B+0.5 sgf:2018/8-BenjaminTeuber-LotharSpiegel.sgf
-      - 12-3 3:W+20.5 sgf:2018/8-DmitrijSurin-ChenWang.sgf
-      - 12-5 5:W+R sgf:2018/2-DmitrijSurin-FukashiMurakami.sgf
-      - 12-14 12:B+4.5 sgf:2018/7-DmitrijSurin-YongfeiGe.sgf
-      - 13-5 5:W+9.5 sgf:2018/8-CheukTungLo-FukashiMurakami.sgf
-      - 13-23 13:B+R sgf:2018/7-CheukTungLo-CristianPop.sgf
-      - 14-9 9:W+2.5 sgf:2018/6-YongfeiGe-JieHuiKwa.sgf
-      - 15-7 7:W+19.5 sgf:2018/4-FaishalUmarFitrah-DusanMitic.sgf
-      - 15-37 15:B+R sgf:2018/2-FaishalUmarFitrah-ChanFaiTang.sgf
-      - 16-3 3:W+R sgf:2018/1-WichrichKaruehawanit-ChenWang.sgf
-      - 17-7 7:W+6.5 sgf:2018/7-BenjaminDreanGuenaizia-DusanMitic.sgf
-      - 18-56 18:B+25.5 sgf:2018/4-XinLei-ManuelAzuaje.sgf
-      - 19-57 19:B+R sgf:2018/3-ManhLinhNguyen-AbnerTurkieltaub.sgf
-      - 20-32 20:B+R sgf:2018/8-JohnWalch-ThomasConnor.sgf
-      - 21-42 21:B+0.5 sgf:2018/7-KhaiYongCheng-OscarVazquez.sgf
-      - 23-2 2:W+R sgf:2018/2-CristianPop-SangcheonKim.sgf
-      - 24-27 24:B+R sgf:2018/6-LotharSpiegel-AmirFragman.sgf
-      - 25-3 3:W+R sgf:2018/2-AaronYe-ChenWang.sgf
-      - 26-4 4:W+R sgf:2018/4-DanielHu-StanislawFrejlak.sgf
-      - 26-55 26:B+R sgf:2018/5-DanielHu-FrankHestvik.sgf
-      - 27-1 1:W+R sgf:2018/3-AmirFragman-YiTienChan.sgf
-      - 29-16 16:W+R sgf:2018/6-KoenPomstra-WichrichKaruehawanit.sgf
-      - 30-19 19:W+R sgf:2018/8-TorbenPedersen-ManhLinhNguyen.sgf
-      - 30-48 30:B+R sgf:2018/1-TorbenPedersen-MichaelThai.sgf
-      - 31-36 31:B+11.5 sgf:2018/6-StjepanMestrovic-ThiagoShimadaRamos.sgf
-      - 32-17 17:W+13.5 sgf:2018/6-ThomasConnor-BenjaminDreanGuenaizia.sgf
-      - 34-28 28:W+4.5 sgf:2018/6-JanProkop-MarosKral.sgf
-      - 35-22 22:W+9.5 sgf:2018/2-JeremieHertz-PedroPereira.sgf
-      - 35-58 35:B+R sgf:2018/5-JeremieHertz-AshotMargaryan.sgf
-      - 38-51 38:B+13.5 sgf:2018/5-AlexandrSuponev-DavidPollitzer.sgf
-      - 39-17 17:W+R sgf:2018/3-HakkiBurakGuner-BenjaminDreanGuenaizia.sgf
-      - 39-21 21:W+R sgf:2018/4-HakkiBurakGuner-KhaiYongCheng.sgf
-      - 40-45 45:W+R sgf:2018/5-AndreConnell-KimJohansson.sgf
-      - 41-42 41:B+R sgf:2018/6-CarloMetta-OscarVazquez.sgf
-      - 42-6 6:W+R sgf:2018/3-OscarVazquez-JuriKuronen.sgf
-      - 43-36 43:B+R sgf:2018/3-LeopoldMatoh-ThiagoShimadaRamos.sgf
-      - 43-47 43:B+26.5 sgf:2018/5-LeopoldMatoh-OlafurSigurdarson.sgf
-      - 44-33 33:W+2.5 sgf:2018/7-TomasSabirovas-KinaJorgeYamamoto.sgf
-      - 44-38 38:W+6.5 sgf:2018/2-TomasSabirovas-AlexandrSuponev.sgf
-      - 45-31 31:W+14.5 sgf:2018/2-KimJohansson-StjepanMestrovic.sgf
-      - 45-37 37:W+5.5 sgf:2018/8-KimJohansson-ChanFaiTang.sgf
-      - 46-5 5:W+R sgf:2018/3-JuanFelipeBurgosAndrade-FukashiMurakami.sgf
-      - 48-57 48:B+17.5 sgf:2018/8-MichaelThai-AbnerTurkieltaub.sgf
-      - 49-61 49:B+R sgf:2018/6-VasylSkochko-ShashankDave.sgf
-      - 50-22 50:B+R sgf:2018/5-AriMontesinosGonzalez-PedroPereira.sgf
-      - 50-52 52:W+R sgf:2018/2-AriMontesinosGonzalez-HordurThordarson.sgf
-      - 52-8 8:W+R sgf:2018/5-HordurThordarson-JoseFlorencia.sgf
-      - 53-28 28:W+43.5 sgf:2018/4-EichinAliyev-MarosKral.sgf
-      - 54-33 33:W+R sgf:2018/1-TemuujinBataa-KinaJorgeYamamoto.sgf
-      - 55-51 55:B+R sgf:2018/2-FrankHestvik-DavidPollitzer.sgf
-      - 56-32 32:W+R sgf:2018/5-ManuelAzuaje-ThomasConnor.sgf
-      - 56-60 56:B+R sgf:2018/1-ManuelAzuaje-CelesteAbat.sgf
-      - 58-53 53:W+R sgf:2018/1-AshotMargarya-EichinAliyev.sgf
-      - 59-40 40:W+R sgf:2018/7-TeodorNedev-AndreConnell.sgf
-      - 59-46 46:W+R sgf:2018/1-TeodorNedev-JuanFelipeBurgosAndrade.sgf
-      - 61-20 20:W+R sgf:2018/3-ShashankDave-JohnWalch.sgf
+      - 1-3 1:B+0.5 round:5 sgf:2018/5-YiTienChan-ChenWang.sgf
+      - 1-13 1:B+4.5 round:2 sgf:2018/2-YiTienChan-CheukTungLo.sgf
+      - 1-24 1:B+R round:1 sgf:2018/1-YiTienChan-LotharSpiegel.sgf
+      - 2-1 1:W+R round:6 sgf:2018/6-SangcheonKim-YiTienChan.sgf
+      - 2-5 2:B+3.5 round:5 sgf:2018/5-SangcheonKim-FukashiMurakami.sgf
+      - 2-9 2:B+R round:8 sgf:2018/8-SangcheonKim-JieHuiKwa.sgf
+      - 2-25 2:B+R round:4 sgf:2018/4-SangcheonKim-AaronYe.sgf
+      - 2-29 2:B+R round:1 sgf:2018/1-SangcheonKim-KoenPomstra.sgf
+      - 2-41 2:B+R round:3 sgf:2018/3-SangcheonKim-CarloMetta.sgf
+      - 3-2 2:W+R round:7 sgf:2018/7-ChenWang-SangcheonKim.sgf
+      - 3-9 3:B+R round:3 sgf:2018/3-ChenWang-JieHuiKwa.sgf
+      - 3-11 3:B+16.5 round:4 sgf:2018/4-ChenWang-CsabaMero.sgf
+      - 4-1 1:W+30.5 round:8 sgf:2018/8-StanislawFrejlak-YiTienChan.sgf
+      - 4-11 4:B+15.5 round:7 sgf:2018/7-StanislawFrejlak-CsabaMero.sgf
+      - 4-34 4:B+R round:3 sgf:2018/3-StanislawFrejlak-JanProkop.sgf
+      - 5-3 3:W+R round:6 sgf:2018/6-FukashiMurakami-ChenWang.sgf
+      - 5-14 5:B+4.5 round:4 sgf:2018/4-FukashiMurakami-YongfeiGe.sgf
+      - 5-24 5:B+R round:7 sgf:2018/7-FukashiMurakami-LotharSpiegel.sgf
+      - 5-49 5:B+R round:1 sgf:2018/1-FukashiMurakami-VasylSkochko.sgf
+      - 8-18 8:B+22.5 round:8 sgf:2018/8-JoseFlorencia-XinLei.sgf
+      - 8-47 8:B+R round:4 sgf:2018/4-JoseFlorencia-OlafurSigurdarson.sgf
+      - 9-1 1:W+8.5 round:7 sgf:2018/7-JieHuiKwa-YiTienChan.sgf
+      - 10-1 1:W+14.5 round:4 sgf:2018/4-BenjaminTeuber-YiTienChan.sgf
+      - 10-24 10:B+0.5 round:8 sgf:2018/8-BenjaminTeuber-LotharSpiegel.sgf
+      - 12-3 3:W+20.5 round:8 sgf:2018/8-DmitrijSurin-ChenWang.sgf
+      - 12-5 5:W+R round:2 sgf:2018/2-DmitrijSurin-FukashiMurakami.sgf
+      - 12-14 12:B+4.5 round:7 sgf:2018/7-DmitrijSurin-YongfeiGe.sgf
+      - 13-5 5:W+9.5 round:8 sgf:2018/8-CheukTungLo-FukashiMurakami.sgf
+      - 13-23 13:B+R round:7 sgf:2018/7-CheukTungLo-CristianPop.sgf
+      - 14-9 9:W+2.5 round:6 sgf:2018/6-YongfeiGe-JieHuiKwa.sgf
+      - 15-7 7:W+19.5 round:4 sgf:2018/4-FaishalUmarFitrah-DusanMitic.sgf
+      - 15-37 15:B+R round:2 sgf:2018/2-FaishalUmarFitrah-ChanFaiTang.sgf
+      - 16-3 3:W+R round:1 sgf:2018/1-WichrichKaruehawanit-ChenWang.sgf
+      - 17-7 7:W+6.5 round:7 sgf:2018/7-BenjaminDreanGuenaizia-DusanMitic.sgf
+      - 18-56 18:B+25.5 round:4 sgf:2018/4-XinLei-ManuelAzuaje.sgf
+      - 19-57 19:B+R round:3 sgf:2018/3-ManhLinhNguyen-AbnerTurkieltaub.sgf
+      - 20-32 20:B+R round:8 sgf:2018/8-JohnWalch-ThomasConnor.sgf
+      - 21-42 21:B+0.5 round:7 sgf:2018/7-KhaiYongCheng-OscarVazquez.sgf
+      - 23-2 2:W+R round:2 sgf:2018/2-CristianPop-SangcheonKim.sgf
+      - 24-27 24:B+R round:6 sgf:2018/6-LotharSpiegel-AmirFragman.sgf
+      - 25-3 3:W+R round:2 sgf:2018/2-AaronYe-ChenWang.sgf
+      - 26-4 4:W+R round:4 sgf:2018/4-DanielHu-StanislawFrejlak.sgf
+      - 26-55 26:B+R round:5 sgf:2018/5-DanielHu-FrankHestvik.sgf
+      - 27-1 1:W+R round:3 sgf:2018/3-AmirFragman-YiTienChan.sgf
+      - 29-16 16:W+R round:6 sgf:2018/6-KoenPomstra-WichrichKaruehawanit.sgf
+      - 30-19 19:W+R round:8 sgf:2018/8-TorbenPedersen-ManhLinhNguyen.sgf
+      - 30-48 30:B+R round:1 sgf:2018/1-TorbenPedersen-MichaelThai.sgf
+      - 31-36 31:B+11.5 round:6 sgf:2018/6-StjepanMestrovic-ThiagoShimadaRamos.sgf
+      - 32-17 17:W+13.5 round:6 sgf:2018/6-ThomasConnor-BenjaminDreanGuenaizia.sgf
+      - 34-28 28:W+4.5 round:6 sgf:2018/6-JanProkop-MarosKral.sgf
+      - 35-22 22:W+9.5 round:2 sgf:2018/2-JeremieHertz-PedroPereira.sgf
+      - 35-58 35:B+R round:5 sgf:2018/5-JeremieHertz-AshotMargaryan.sgf
+      - 38-51 38:B+13.5 round:5 sgf:2018/5-AlexandrSuponev-DavidPollitzer.sgf
+      - 39-17 17:W+R round:3 sgf:2018/3-HakkiBurakGuner-BenjaminDreanGuenaizia.sgf
+      - 39-21 21:W+R round:4 sgf:2018/4-HakkiBurakGuner-KhaiYongCheng.sgf
+      - 40-45 45:W+R round:5 sgf:2018/5-AndreConnell-KimJohansson.sgf
+      - 41-42 41:B+R round:6 sgf:2018/6-CarloMetta-OscarVazquez.sgf
+      - 42-6 6:W+R round:3 sgf:2018/3-OscarVazquez-JuriKuronen.sgf
+      - 43-36 43:B+R round:3 sgf:2018/3-LeopoldMatoh-ThiagoShimadaRamos.sgf
+      - 43-47 43:B+26.5 round:5 sgf:2018/5-LeopoldMatoh-OlafurSigurdarson.sgf
+      - 44-33 33:W+2.5 round:7 sgf:2018/7-TomasSabirovas-KinaJorgeYamamoto.sgf
+      - 44-38 38:W+6.5 round:2 sgf:2018/2-TomasSabirovas-AlexandrSuponev.sgf
+      - 45-31 31:W+14.5 round:2 sgf:2018/2-KimJohansson-StjepanMestrovic.sgf
+      - 45-37 37:W+5.5 round:8 sgf:2018/8-KimJohansson-ChanFaiTang.sgf
+      - 46-5 5:W+R round:3 sgf:2018/3-JuanFelipeBurgosAndrade-FukashiMurakami.sgf
+      - 48-57 48:B+17.5 round:8 sgf:2018/8-MichaelThai-AbnerTurkieltaub.sgf
+      - 49-61 49:B+R round:6 sgf:2018/6-VasylSkochko-ShashankDave.sgf
+      - 50-22 50:B+R round:5 sgf:2018/5-AriMontesinosGonzalez-PedroPereira.sgf
+      - 50-52 52:W+R round:2 sgf:2018/2-AriMontesinosGonzalez-HordurThordarson.sgf
+      - 52-8 8:W+R round:5 sgf:2018/5-HordurThordarson-JoseFlorencia.sgf
+      - 53-28 28:W+43.5 round:4 sgf:2018/4-EichinAliyev-MarosKral.sgf
+      - 54-33 33:W+R round:1 sgf:2018/1-TemuujinBataa-KinaJorgeYamamoto.sgf
+      - 55-51 55:B+R round:2 sgf:2018/2-FrankHestvik-DavidPollitzer.sgf
+      - 56-32 32:W+R round:5 sgf:2018/5-ManuelAzuaje-ThomasConnor.sgf
+      - 56-60 56:B+R round:1 sgf:2018/1-ManuelAzuaje-CelesteAbat.sgf
+      - 58-53 53:W+R round:1 sgf:2018/1-AshotMargarya-EichinAliyev.sgf
+      - 59-40 40:W+R round:7 sgf:2018/7-TeodorNedev-AndreConnell.sgf
+      - 59-46 46:W+R round:1 sgf:2018/1-TeodorNedev-JuanFelipeBurgosAndrade.sgf
+      - 61-20 20:W+R round:3 sgf:2018/3-ShashankDave-JohnWalch.sgf

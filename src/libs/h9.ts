@@ -31,11 +31,22 @@ export type H9Player = {
 
 export type H9Game = {
   opponent: number;
+  round: number;
   modifier?: '!';
   result: '+' | '-' | '=';
   color?: 'white' | 'black';
   handicap?: number;
 };
+
+export function buildLocalGameId(p1: number, p2: number, round?: number): string {
+  const [low, high] = p1 < p2 ? [p1, p2] : [p2, p1];
+
+  if (round === undefined) {
+    return `${low}-${high}`;
+  }
+
+  return `${low}-${high}-${round}`;
+}
 
 export function loadH9(input: string) {
   const properties: Record<string, string> = {};
@@ -69,6 +80,7 @@ export function parseH9(input: string): H9Tournament {
   const { properties, other, table } = loadH9(input);
   const results: H9Player[] = [];
   const colsWithGames = getColumnsWithGames(table);
+  const colsRounds = Array.from(colsWithGames).sort((a, b) => a - b);
 
   for (const player of table) {
     const [place, surname, name, rank, country, club, ...columns] = player;
@@ -92,6 +104,7 @@ export function parseH9(input: string): H9Tournament {
         const { opponent, result, color, handicap, modifier } = match.groups!;
 
         games.push({
+          round: colsRounds.indexOf(col) + 1,
           color: color ? (color === 'w' ? 'white' : 'black') : undefined,
           handicap: handicap ? parseInt(handicap, 10) : undefined,
           opponent: Number(opponent),

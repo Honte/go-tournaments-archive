@@ -1,4 +1,4 @@
-import type { H9Player } from '@/libs/h9';
+import { type H9Player, buildLocalGameId } from '@/libs/h9';
 import { type Color, type H9GameRecord } from './types';
 import { flipColor, normalizePlayerName } from './utils';
 
@@ -32,7 +32,7 @@ export function buildGamesMap(results: H9Player[]): Map<string, H9GameRecord> {
       const opponentPlace = game.opponent;
       const myColor: Color = game.color;
       const opponentColor: Color = flipColor(game.color);
-      const localId = myPlace < opponentPlace ? `${myPlace}-${opponentPlace}` : `${opponentPlace}-${myPlace}`;
+      const localId = buildLocalGameId(myPlace, opponentPlace, game.round);
 
       if (map.has(localId)) {
         continue;
@@ -52,6 +52,7 @@ export function buildGamesMap(results: H9Player[]): Map<string, H9GameRecord> {
       map.set(localId, {
         homePlace: isHomePlayer ? myPlace : opponentPlace,
         awayPlace: isHomePlayer ? opponentPlace : myPlace,
+        round: game.round,
         winnerPlace,
         homeColor: isHomePlayer ? myColor : opponentColor,
         winnerColor: winnerPlace === myPlace ? myColor : opponentColor,
