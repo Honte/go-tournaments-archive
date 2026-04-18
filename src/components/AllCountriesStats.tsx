@@ -1,5 +1,6 @@
 'use client';
 
+import EVENT_CONFIG from '@event/config';
 import type { StatsCountry, TableStats } from '@/schema/data';
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
@@ -76,7 +77,7 @@ export function AllCountriesStats({ countries, translations }: AllCountriesStats
               />
             ),
           },
-          {
+          EVENT_CONFIG.showBestPlace && {
             accessorKey: 'bestPlace',
             header: t('table.best'),
           },

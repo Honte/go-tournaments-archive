@@ -1,3 +1,4 @@
+import EVENT_CONFIG from '@event/config';
 import type { StatsPlayer } from '@/schema/data';
 import type { ReactNode } from 'react';
 import type { Translations } from '@/i18n/consts';
@@ -32,7 +33,7 @@ export function Achievements({ player, translations }: AchievementsProps) {
     }
   }
 
-  if (!hasMedals) {
+  if (EVENT_CONFIG.showBestPlace && !hasMedals) {
     details[t('table.bestPlace')] = player.bestPlace;
   }
 

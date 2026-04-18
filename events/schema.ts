@@ -6,6 +6,7 @@ export type EventConfig = {
   defaultLocale: Locale;
   defaultCountry?: string;
   showCountry?: boolean;
+  showBestPlace?: boolean;
   generatePngs?: boolean;
   generateSvgs?: boolean;
   hideGamesWithoutSgf?: boolean;

@@ -92,7 +92,7 @@ export function AllPlayersStats({ players, translations }: AllPlayersStatsProps)
                 ', '
               ),
           },
-          {
+          EVENT_CONFIG.showBestPlace && {
             accessorKey: 'bestPlace',
             header: t('table.best'),
           },
