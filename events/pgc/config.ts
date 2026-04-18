@@ -5,6 +5,7 @@ const EVENT_CONFIG: EventConfig = {
   domain: 'https://mp.go.art.pl',
   defaultLocale: 'pl',
   defaultCountry: 'PL',
+  showBestPlace: true,
   generateSvgs: true,
 };
 

@@ -5,6 +5,7 @@ const EVENT_CONFIG: EventConfig = {
   domain: '',
   defaultLocale: 'en',
   showCountry: true,
+  showBestPlace: true,
   hideGamesWithoutSgf: true,
   generateSvgs: true,
 };
