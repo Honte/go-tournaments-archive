@@ -5,7 +5,6 @@ import path from 'node:path';
 import { generatePng } from '@tools/png';
 import { cleanSgf } from '@tools/sgf';
 import { generateSvg } from '@tools/svg';
-import { createConverter } from 'convert-svg-to-png';
 import fg from 'fast-glob';
 import type { NextRequest } from 'next/server';
 
@@ -15,8 +14,6 @@ const SGF_DIR = `./events/${EVENT}/sgf`;
 type RouteProps = {
   params: Promise<{ path: string[] }>;
 };
-
-let converter: Awaited<ReturnType<typeof createConverter>> | undefined;
 
 export async function GET(request: NextRequest, props: RouteProps) {
   const { path: segments } = await props.params;

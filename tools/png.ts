@@ -1,15 +1,10 @@
-import { createConverter } from 'convert-svg-to-png';
-import { executablePath } from 'puppeteer';
+import { Resvg } from '@resvg/resvg-js';
 
-let converter: Awaited<ReturnType<typeof createConverter>> | undefined;
-
-export async function generatePng(svg: string, width: number, height = width) {
-  converter ||= await createConverter({
-    launch: { executablePath, args: process.env.CI ? ['--no-sandbox'] : [] },
-  });
-
-  return converter.convert(svg, {
-    width,
-    height,
-  });
+export async function generatePng(svg: string, width: number) {
+  return new Resvg(svg, {
+    fitTo: { mode: 'width', value: width },
+    background: 'rgba(0,0,0,0)',
+  })
+    .render()
+    .asPng();
 }
