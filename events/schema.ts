@@ -9,4 +9,5 @@ export type EventConfig = {
   generatePngs?: boolean;
   generateSvgs?: boolean;
   hideGamesWithoutSgf?: boolean;
+  currentEdition?: boolean
 };
