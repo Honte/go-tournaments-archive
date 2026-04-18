@@ -22,7 +22,11 @@ export type MarkdownProps = {
 
 export function Markdown({ content, inline = false }: MarkdownProps) {
   return (
-    <ReactMarkdown components={COMPONENTS} disallowedElements={inline ? SKIP_WHEN_INLINE : undefined} unwrapDisallowed>
+    <ReactMarkdown
+      components={COMPONENTS}
+      disallowedElements={inline ? SKIP_WHEN_INLINE : undefined}
+      unwrapDisallowed={true}
+    >
       {content}
     </ReactMarkdown>
   );
