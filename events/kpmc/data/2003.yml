@@ -1,0 +1,27 @@
+website: https://senseis.xmp.net/?IncheonWorldAmateurBadukChampionship
+description:
+    pl: |
+        **Uwaga:** turniej formalnie nie jest częścią Pucharu Premiera Korei 
+    en: |
+        **Notice:** tournament is formally not part of KPMC       
+stages:
+  - type: tournament
+    file: kpmc2003.txt
+    notes: 
+     pl: | 
+          Po 6 rundach 4 najlepszych graczy rozegrało playoff o miejsca na podium
+     en: |
+          After 6 rounds best 4 go to playoffs for the medals
+    time: 60min + 3x30sec japanese
+    komi: 6.5  
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+      - xfactor
+    breakers:
+      - wins
+      - sos
+      - sosos
+      - xfactor
+    findSharedPlaces: true

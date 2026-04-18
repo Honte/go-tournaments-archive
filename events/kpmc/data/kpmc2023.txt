@@ -1,0 +1,67 @@
+; TC[W230828A]
+; CL[A]
+; EV[18th Korea Prime Minister Cup]
+; PC[KR, Gwangju]
+; DT[2023-08-28,2023-08-31]
+; HA[h9]
+; KM[6.5]
+; TM[65]
+; CM[Fischer 25 / 20 (submitted by erdbeer)]
+;.
+;#  Name Rnk Cntry Club Wins SOS SOSOS R1 R2 R3 R4 R5 R6 R7
+ 1 Tang Chongzhe                   8d CN  xxxx  7    30   214  44+     18+     10+     15+     14+     2+      6+       |20449418
+ 2 Choi Hwan-young                 7d KR  xxxx  6    32   202  39+     17+     29+     21+     3+      1-      5+       |20301083
+ 3 Lai Yu-Cheng                    7d TW  xxxx  6    31   211  45+     19+     5+      9+      2-      15+     10+      |13650813
+ 4 Podpera Lukas                   7d CZ  APWS  6    29   194  22+     5-      19+     27+     20+     16+     24+      |13201914
+ 5 Krushelnytskyi Valerii          6d UA  Rivn  5    35   205  31+     4+      3-      8+      18+     7+      2-       |15450072
+ 6 Park Han-phil                   7d PH  xxxx  5    32   183  52+     7-      17+     13+     11+     14+     1-       |20450419
+ 7 Sornarra Pongsakarn             5d TH  xxxx  5    30   205  40+     6+      8+      14-     22+     5-      20+      |18949304
+ 8 Mei Jincong                     5d HK  xxxx  5    30   198  13+     11+     7-      5-      44+     22+     15+      |20462420
+ 9 Zhang Brady_Bei_Ming            6d CA  xxxx  5    30   187  32+     25+     12+     3-      30+     10-     21+      |19325570
+10 Chiu Jeremy                     7d US  xxxx  5    30   187  33+     37+     1-      29+     36+     9+      3-       |16950879
+11 Walch John                      4d CH  IGC   5    25   185  48+     8-      38+     23+     6-      30+     29+      |13949815
+12 Michaeli Tal                    5d IL  TAv   5    23   185  41+     53+     9-      30-     32+     19+     14+      |14837603
+13 Vaataja Ville                   4d FI  OGP   5    22   179  8-      56+     35+     6-      49+     29+     17+      |16062640
+14 Emura Kiko                      7d JP  xxxx  4    33   189  36+     26+     16+     7+      1-      6-      12-      |20437417
+15 Ha Quynh_anh                    5d VN  xxxx  4    32   195  30+     24+     21+     1-      31+     3-      8-       |20474421
+16 Dobranis Denis                  5d RO  ATSU  4    29   178  28+     27+     14-     20-     23+     4-      38+      |15350038
+17 Mestrovic Stjepan               4d HR  VGor  4    29   172  42+     2-      6-      49+     25+     26+     13-      |12649307
+18 Pace Alessandro                 5d IT  Roma  4    28   187  35+     1-      24+     46+     5-      20-     34+      |15049650
+19 Majka Marcin                    4d PL  Wroc  4    28   173  23+     3-      4-      53+     42+     12-     37+      |14713413
+20 Mitic Nikola                    7d RS  NiSt  4    27   190  21-     47+     44+     16+     4-      18+     7-       |10801923
+21 Yu Bryan_Chen                   4d SG  xxxx  4    27   188  20+     50+     15-     2-      33+     31+     9-       |20498423
+22 Welticke Jonas                  7d DE  BN    4    27   184  4-      48+     34+     25+     7-      8-      44+      |15786287
+23 Sam In-Hang                     5d MO  xxxx  4    27   171  19-     28+     26+     11-     16-     39+     30+      |15013834
+24 Zeijst Rob_van                  7d NL  Amst  4    26   179  34+     15-     18-     45+     39+     27+     4-       |10337382
+25 Granger Alban                   4d FR  35Re  4    25   172  43+     9-      33+     22-     17-     32+     41+      |15933456
+26 Kose Dogac                      2d TR  Ist   4    23   180  46+     14-     23-     40+     37+     17-     31+      |14825052
+27 Aakerblom Charlie               5d SE  Norr  4    22   162  55+     16-     50+     4-      46+     24-     40+      |13286603
+28 Pollitzer David                 3d AR  XXXX  4    19   167  16-     23-     47+     32-     53+     46+     42+      |17398249
+29 Wu Xuqi                         4d NZ  xxxx  3    29   171  49+     38+     2-      10-     35+     13-     11-      |15674098
+30 Teh Wei_Jie                     3d MY  xxxx  3    26   178  15-     51+     53+     12+     9-      11-     23-      |19374564
+31 Kralik Ondrej                   3d SK  Kosi  3    25   183  5-      40+     45+     37+     15-     21-     26-      |16350279
+32 Rix Alex                        2d UK  LGC   3    25   162  9-      35-     41+     28+     12-     25-     53+      |10262032
+33 Tome Daniel                     3d PT  Por   3    24   165  10-     42+     25-     38+     21-     34-     47+      |15486064
+34 Sun Hao-Song                    5d AU  xxxx  3    23   171  24-     41+     22-     36-     45+     33+     18-      |15086951
+35 Satkus Simonas                  2d LT  Viln  3    22   167  18-     32+     13-     50+     29-     40-     45+      |14513763
+36 Haga Sverre                     1d NO  Oslo  3    22   166  14-     46-     43+     34+     10-     38-     51+      |14213903
+37 Palacios_Vela Luis_Jorge        1d MX  xxxx  3    21   166  51+     10-     54+     31-     26-     44+     19-      |19774689
+38 Navarro Matias                  2d CL  xxxx  3    21   164  47+     29-     11-     33-     54+     36+     16-      |20413426
+39 Kristensen Lars                 2k DK  KGK   3    21   162  2-      45-     48+     54+     24-     23-     50+      |13998413
+40 Cuyt Sven                       2d BE  Leuv  3    21   160  7-      31-     56+     26-     48+     35+     27-      |18050527
+41 Samper_Munoz Juan_Felipe        3d CO  xxxx  3    20   149  12-     34-     32-     56+     50+     43+     25-      |16513794
+42 Kina Avalos-Kenyi               1d PE  xxxx  3    19   156  17-     33-     55+     51+     19-     53+     28-      |15225287
+43 Kartawijaya Theo                2d ID  xxxx  3    17   143  25-     49-     36-     55+     51+     41-     46+      |20425427
+44 Hertz Jeremie                   1d LU  Lux   2    27   169  1-      52+     20-     47+     8-      37-     22-      |14249851
+45 Logar Maja                      1d SI  Ljub  2    24   167  3-      39+     31-     24-     34-     49+     35-      |14886740
+46 Ganeyev Damir                   1d KZ  xxxx  2    24   150  26-     36+     49+     18-     27-     28-     43-      |16513035
+47 Rakotoarisoa Mamy               2d MG  Ant   2    20   152  38-     20-     28-     44-     52+     48+     33-      |13949837
+48 Rodrigues_da_Cruz Renan_Pablo   1d BR  xxxx  2    20   143  11-     22-     39-     52+     40-     47-     54+      |20186342
+49 Jimenez_Izquierdo Enrique       1d ES  Pedr  2    19   163  29-     43+     46-     17-     13-     45-     56+      |17898419
+50 Vasquez_Albuja Edisson_Paul     3d EC  xxxx  2    18   145  56+     21-     27-     35-     41-     54+     39-      |20449429
+51 Azuaje Manuel                   1d VE  XXXX  2    18   134  37-     30-     52+     42-     43-     55+     36-      |14349753
+52 Wong Hui_Xin                    4k BN  xxxx  2    14   150  6-      44-     51-     48-     47-     56+     55+      |20450430
+53 Tseveenravdan Tugsbilegt        2d MN  Ulb   1    23   155  54+     12-     30-     19-     28-     42-     32-      |14749427
+54 Goschler Aron                   4k HU  PaGo  1    15   139  53-     55+     37-     39-     38-     50-     48-      |16333614
+55 Kanti_Kundu Soumya              1d IN  xxxx  1    15   123  27-     54-     42-     43-     56+     51-     52-      |20462431
+56 Murillo Jorge                   5k GT  xxxx  0    18   129  50-     13-     40-     41-     55-     52-     49-      |20474432

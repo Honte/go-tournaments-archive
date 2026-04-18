@@ -1,0 +1,15 @@
+website: https://kpmc.kbaduk.or.kr/us/2016
+stages:
+  - type: tournament
+    file: kpmc2016.txt
+    time: 40min + 3x30s japanese
+    komi: 6.5
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: true

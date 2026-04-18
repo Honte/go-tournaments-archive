@@ -1,0 +1,17 @@
+website: https://kpmc.kbaduk.or.kr/us/2018
+stages:
+  - type: tournament
+    file: kpmc2018.txt
+    time: 40min + 3x30s japanese
+    komi: 6.5
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - sos
+      - sosos      
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: true

@@ -1,0 +1,77 @@
+; TC[W081109]
+; CL[B]
+; EV[3rd Korea Prime Minister Cup]
+; PC[KR, Goyang]
+; DT[2008-11-09,2008-11-11]
+; HA[h9]
+; KM[6.5]
+; TM[50]
+;
+  1 Chien Li-Chen           7d TW xxx   7 7  47 312  19+  6+ 15+  3+  4+  2- 11+  7+ |15298283
+  2 Lee Sang-hun            7d KR xxx   7 7  43 311  18+ 34+ 17+ 11+ 28+  1+  3-  4+ |13213486
+  3 Zhao Wei                7d CN xxx   7 7  42 323  26+ 32+ 30+  1-  5+ 12+  2+ 11+ |15262280
+  4 Huang Chao              6d HK xxx   6 6  39 293  65+  7+ 33+ 44+  1- 28+  5+  2- |15074950
+  5 Silt Ondrej             6d CZ KVa   6 6  39 288  63+ 37+ 27+ 14+  3-  9+  4- 12+ |10337481
+  6 Hsiang Thomas           7d US xxx   6 6  38 308  46+  1- 36+ 17+ 11- 29+ 13+ 14+ |10849784
+  7 Shin Raphael            7d AU Eas   6 6  35 292  59+  4- 37+ 47+ 45+ 20+ 14+  1- |13437061
+  8 Donzet Frederic         5d FR 67SE  6 6  33 289  64+ 11- 18+ 34+ 14- 45+ 26+ 16+ |10333895
+  9 Tan Jia-Cheng           6d SG xxx   6 6  32 280  56+ 12- 60+ 46+ 29+  5- 28+ 20+ |10725176
+ 10 Lam Hin-Chan            5d MO xxx   6 6  28 259  16- 68+ 62+ 31+ 44+ 14- 39+ 21+ |15233284
+ 11 Nagayo Kazumori         6d JP xxx   5 5  44 306  52+  8+ 44+  2-  6+ 13+  1-  3- |14837163
+ 12 Spiegel Lothar          4d AT Wien  5 5  41 290  40+  9+ 13- 27+ 30+  3- 15+  5- |13750836
+ 13 Bogatskyy Dmytro        6d UA Kyiv  5 5  39 294  24+ 23+ 12+ 28- 15+ 11-  6- 26+ |10250867
+ 14 Mero Csaba              6d HU BuPe  5 5  39 254  67+ 50+ 22+  5-  8+ 10+  7-  6- |10225875
+ 15 Lazarev Alexej          6d RU 10Pt  5 5  38 293  21+ 51+  1- 19+ 13- 30+ 12- 27+ |10374386
+ 16 Pearson Ciaran          4d NZ xxx   5 5  37 261  10+ 27- 50+ 29- 34+ 22+ 19+  8- |15249278
+ 17 Kuin Merlijn            6d NL Amvn  5 5  35 288  49+ 36+  2-  6- 27- 44+ 30+ 31+ |10233861
+ 18 Laatikainen Vesa        5d FI HGK   5 5  35 263   2- 64+  8- 24+ 60+ 35+ 20- 28+ |10201015
+ 19 Janza Janez             3d SI Mar   5 5  33 279   1- 53+ 52+ 15- 46+ 48+ 16- 32+ |10433346
+ 20 Corlan Lucian           5d RO Bucu  5 5  33 258  29- 54+ 61+ 49+ 35+  7- 18+  9- |12586750
+ 21 Pacheco Helcio_Alexandre 3d BR xxx   5 5  32 254  15- 59+ 48- 53+ 32+ 31+ 25+ 10- |15201285
+ 22 Nguyen Cuong            1d LU Lux   5 5  31 273  54+ 29+ 14- 45- 47+ 16- 33+ 35+ |13662902
+ 23 Le Mai-Duy              5d VN xxx   5 5  29 266  42+ 13- 26- 50+ 31- 60+ 49+ 36+ |12550153
+ 24 Regginos Dimitris       1d CY Nico  5 5  27 248  13- 62+ 49- 18- 53+ 59+ 54+ 41+ |13225795
+ 25 Manrique-Ochoa Fernando 4d CO Bog   5 5  26 245  47- 26- 64+ 63+ 56+ 49+ 21- 39+ |12725086
+ 26 Soldan Leszek           5d PL Wars  4 4  40 273   3- 25+ 23+ 30- 33+ 27+  8- 13- |10449560
+ 27 Tiawattananont Thanapol 4d TH Ban   4 4  37 295  53+ 16+  5- 12- 17+ 26- 29+ 15- |14798421
+ 28 Fan Jun                 7d CA xxx   4 4  37 284  62+ 47+ 45+ 13+  2-  4-  9- 18- |15050860
+ 29 Reindl Martin           2d SK Brat  4 4  37 273  20+ 22- 51+ 16+  9-  6- 27- 45+ |13986698
+ 30 Jasiek Robert           5d DE B  4 4  35 296  60+ 33+  3- 26+ 12- 15- 17- 44+ |10213203
+ 31 Gonze Francois          1d BE LlN   4 4  35 248  36- 55+ 39+ 10- 23+ 21- 45+ 17- |14613654
+ 32 Morales Pablo           1d ES Ali   4 4  34 253  58+  3- 35- 37+ 21- 50+ 48+ 19- |13801073
+ 33 Krstic Dejan            4d RS Beo   4 4  32 267  38+ 30-  4- 51+ 26- 47+ 22- 50+ |10313127
+ 34 Rasmussen Jannik        4d DK KGK  4 4  32 263  68+  2- 40+  8- 16- 46+ 35- 49+ |10486201
+ 35 Chan Hong-Guan          2d MY xxx   4 4  32 256  57+ 44- 32+ 48+ 20- 18- 34+ 22- |15098985
+ 36 Comito Andres           3d AR xxx   4 4  32 255  31+ 17-  6- 52+ 48- 61+ 38+ 23- |15213286
+ 37 Roads Francis           3d UK Wans  4 4  32 250  66+  5-  7- 32- 39- 43+ 46+ 48+ |10286034
+ 38 Chakur Alexandr         1d BY Min   4 4  30 238  33- 43+ 46- 42+ 40+ 39- 36- 51+ |14074280
+ 39 Thalib Daniel-Sufiah    2d ID xxx   4 4  30 237  51- 65+ 31- 59+ 37+ 38+ 10- 25- |14586660
+ 40 Haga Sverre             1d NO Tro   4 4  28 235  12- 58+ 34- 55+ 38- 41- 60+ 54+ |14213903
+ 41 Morrison Roberto        1d CH Loc   4 4  27 232  43+ 45- 47- 61- 52+ 40+ 56+ 24- |10349493
+ 42 Pacheco Eric            2d VE EMi   4 4  26 228  23- 46- 43+ 38- 59- 64+ 57+ 55+ |13633829
+ 43 Mercado-Sanchez Mario   2d MX xxx   4 4  26 212  41- 38- 42- 58+ 62+ 37- 65+ 56+ |15250279
+ 44 Almrot Klas             4d SE Got   3 3  36 278  48+ 35+ 11-  4- 10- 17- 47+ 30- |13874124
+ 45 Lidor Jonathan          2d IL xxx   3 3  36 261  55+ 41+ 28- 22+  7-  8- 31- 29- |14849197
+ 46 Chin Sin-Voon           2d BN xxx   3 3  35 251   6- 42+ 38+  9- 19- 34- 37- 61+ |14837174
+ 47 McSweeney Terence       1d IE xxx   3 3  33 257  25+ 28- 41+  7- 22- 33- 44- 59+ |14313167
+ 48 Barsbey Mehmet-Emin     1d TR Ist   3 3  32 254  44- 57+ 21+ 35- 36+ 19- 32- 37- |14050861
+ 49 Kina Avalos-Kenyi       1d PE xxx   3 3  32 230  17- 67+ 24+ 20- 61+ 25- 23- 34- |15225287
+ 50 Vasiljevic Vedran       1k HR Rije  3 3  30 261  61+ 14- 16- 23- 51+ 32- 59+ 33- |12833612
+ 51 Moreano Oswaldo         1d EC xxx   3 3  29 253  39+ 15- 29- 33- 50- 52+ 61+ 38- |12898710
+ 52 Edwards Paul            1d ZA xxx   3 3  28 243  11- 63+ 19- 36- 41- 51- 58+ 60+ |10913738
+ 53 Sacramento Martin       1d PH Man   3 3  28 231  27- 19- 65+ 21- 24- 55- 64+ 63+ |15013174
+ 54 Kraujelis Jonas         2k LT Mole  3 3  27 210  22- 20- 55- 67+ 66+ 63+ 24- 40- |12713536
+ 55 Razafindrabe Tovonony   1k MG xxx   3 3  26 229  45- 31- 54+ 40- 57- 53+ 63+ 42- |12886709
+ 56 Rittatore Alvaro        2d UY xxx   3 3  26 212   9- 61- 68+ 62+ 25- 57+ 41- 43- |12025310
+ 57 Savchovsky Alexander    1k BG xxx   3 3  23 217  35- 48- 66+ 60- 55+ 56- 42- 65+ |14874794
+ 58 Bogdanovic Mladen       2k BA Bij   3 3  20 219  32- 40- 59- 43- 67+ 62+ 52- 68+ |12925561
+ 59 Deleg Khadbaatar        1d MN xxx   2 2  33 233   7- 21- 58+ 39- 42+ 24- 50- 47- |15249289
+ 60 Fernandez Jose          1d CL xxx   2 2  32 229  30- 66+  9- 57+ 18- 23- 40- 52- |15262104
+ 61 Montrasio Paolo         2k IT Mila  2 2  28 244  50- 56+ 20- 41+ 49- 36- 51- 46- |10474926
+ 62 Araki Mehdi             6k MA xxx   2 2  27 206  28- 24- 10- 56- 43- 58- 68+ 66+ |15250290
+ 63 Teles-Menezes Jose      5k PT Lis   2 2  26 218   5- 52- 67+ 25- 65+ 54- 55- 53- |10313831
+ 64 Villalta-Cerdas Juan    6k CR xxx   2 2  26 210   8- 18- 25- 66- 68+ 42- 53- 67+ |15225276
+ 65 Romero Jose             6k GT Gua   2 2  24 214   4- 39- 53- 68+ 63- 66+ 43- 57- |14798432
+ 66 Baghirov Niyazi         3d AZ xxx   2 2  19 211  37- 60- 57- 64+ 54- 65- 67+ 62- |14598661
+ 67 Sayadyan Hasmik         3k AM xxx   1 1  20 212  14- 49- 63- 54- 58- 68+ 66- 64- |14737294
+ 68 Pandey Mahendra         4k IN xxx   0 0  23 203  34- 10- 56- 65- 64- 67- 62- 58- |15274281

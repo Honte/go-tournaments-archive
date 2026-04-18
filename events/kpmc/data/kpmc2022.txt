@@ -1,0 +1,63 @@
+; TC[T220926A]
+; CL[B]
+; EV[17th Korea Prime Minister Cup]
+; PC[KR, Gwangju]
+; DT[2022-09-26,2022-09-28]
+; HA[h9]
+; KM[6.5]
+; TM[60]
+; CM[50 minutes + 3x30 (submitted by erdbeer)]
+;.
+;Pl Name Rnk Nation Clb R1 R2 R3 R4 R5 R6 Wins SOS SOSOS No ID
+ 1 Kim Jeong-seon               7d KR  xxx   40+     19+     13+     4+      2+      3+      6    24   127  2     |20537946
+ 2 Lai Yu-Cheng                 7d TW  xxxx  35+     11+     16+     10+     1-      8+      5    24   130  34    |13650813
+ 3 Ozeki Minoru                 7d JP  xxxx  39+     20+     12+     22+     19+     1-      5    21   130  47    |18462829
+ 4 Zeijst Rob_van               7d NL  Amst  45+     24+     23+     1-      20+     13+     5    21   118  43    |10337382
+ 5 Tran Quang-Tue               5d VN  xxxx  37+     10-     35+     21+     38+     7+      5    17   130  10    |17350245
+ 6 Xie Kaikun                   5d NZ  xxxx  7-      52+     33+     37+     22+     9+      5    16   116  40    |14849164
+ 7 Dobranis Denis               5d RO  ATSU  6+      36+     17+     8-      12+     5-      4    24   116  39    |15350038
+ 8 Campagnie Remi               6d CA  67SE  9+      14-     41+     7+      11+     2-      4    23   127  29    |15449269
+ 9 Kruml Ondrej                 6d CZ  Imba  8-      29+     26+     27+     10+     6-      4    22   112  30    |10886524
+10 Zhang Xiang                  6d SG  Sin   49+     5+      18+     2-      9-      28+     4    22   110  28    |14525192
+11 Labouret Florent             5d FR  38Gr  21+     2-      15+     39+     8-      22+     4    21   128  16    |16486184
+12 Tu Xinyu                     7d US  xxx   32+     15+     3-      36+     7-      21+     4    21   122  7     |15033854
+13 Karuehawanit Wichrich        6d TH  xxxx  46+     43+     1-      38+     14+     4-      4    21   112  24    |17362378
+14 Savolainen Javier-Aleksi     5d FI  YliG  26+     8+      22-     23+     13-     20+     4    20   124  45    |14001537
+15 Michaeli Tal                 4d IL  TAv   16+     12-     11-     25+     36+     24+     4    20   117  35    |14837603
+16 Song Amy_Yimei               5d AU  xxxx  15-     47+     2-      32+     35+     19+     4    18   118  36    |17937678
+17 Anguila Oscar                4d ES  Pedr  44+     25+     7-      20-     26+     34+     4    18   108  21    |13562450
+18 Soldan Leszek                4d PL  Wars  51+     30+     10-     19-     27+     23+     4    17   107  52    |10449560
+19 Bogatskyy Dmytro             6d UA  Kyiv  48+     1-      25+     18+     3-      16-     3    23   111  32    |10250867
+20 Aksut Husrev                 4d TR  Ant   41+     3-      42+     17+     4-      14-     3    22   112  4     |14649943
+21 Silfver Anton                2d SE  Link  11-     28+     30+     5-      39+     12-     3    21   110  15    |15933236
+22 Neirynck Lucas               6d BE  75Ju  52+     31+     14+     3-      6-      11-     3    21   108  14    |14898301
+23 Kacwin Christopher           5d DE  D     47+     42+     4-      14-     31+     18-     3    19   103  12    |14262149
+24 Csizmadia Robert             3d HU  MGE   27+     4-      38-     42+     41+     15-     3    18   110  41    |14925416
+25 Reisenegger Renate           1d CL  TE    29+     17-     19-     15-     43+     40+     3    18   109  38    |19625298
+26 Neubauer Peter               2d AT  Hipp  14-     49+     9-      30+     17-     37+     3    18   109  46    |16313308
+27 Ohlenbusch Soeren            4d DK  OGK   24-     40+     43+     9-      18-     36+     3    17   110  42    |13749241
+28 Poltronieri Bruno            4d UK  Camb  31-     21-     46+     44+     29+     10-     3    17   101  17    |16086059
+29 Amaro Souza_Alexandre_de     5d BR  Braz  25-     9-      40+     45+     28-     39+     3    16   107  37    |19701451
+30 Teh Wei_Jie                  3d MY  xxxx  38+     18-     21-     26-     49+     35+     3    15   111  25    |19374564
+31 Samper_Munoz Juan_Felipe     3d CO  xxxx  28+     22-     36-     43+     23-     44+     3    15   108  18    |16513794
+32 Butala Gregor                5d SI  Ljub  12-     48+     39-     16-     42+     38+     3    15   107  8     |10433016
+33 Pereira Pedro                1d PT  CR    42-     37-     6-      51+     50+     41+     3    13   93   19    |14749361
+34 Kleiner Brian                2d CH  Orbe  36-     35-     52+     50+     37+     17-     3    11   110  50    |15401419
+35 Douangboutdy Somboun         3d LA  xxxx  2-      34+     5-      46+     16-     30-     2    22   97   33    |20150416
+36 Tirado Alvaro                1d VE  xxxx  34+     7-      31+     12-     15-     27-     2    21   108  49    |20174418
+37 Medak Stjepan                1d HR  Vrba  5-      33+     44+     6-      34-     26-     2    21   90   9     |17437574
+38 Ravjir Tungalag              3d MN  xxx   30-     46+     24+     13-     5-      32-     2    20   98   26    |13937836
+39 Dovcik Boris                 2d SK  Kosi  3-      50+     32+     11-     21-     29-     2    19   107  48    |19437605
+40 Cristobal Bravo              2d MX  xxxx  1-      27-     29-     47+     48+     25-     2    17   102  1     |20133410
+41 Wijaya Ifan                  1k ID  xxxx  20-     45+     8-      48+     24-     33-     2    16   103  3     |20113412
+42 Yorgachevic Marta            1k RS  Mysh  33+     23-     20-     24-     32-     48+     2    16   100  20    |16550820
+43 Regginos Dimitris            2d CY  Nico  50+     13-     27-     31-     25-     47+     2    15   98   6     |13225795
+44 Petrauskas Albertas          2d LT  Viln  17-     51+     37-     28-     45+     31-     2    15   96   22    |12749528
+45 Piccioni Jose                3k AR  xxxx  4-      41-     47+     29-     44-     49+     2    14   95   44    |20162417
+46 Andreetto Tommaso            6k IT  Pado  13-     38-     28-     35-     52+     50+     2    12   108  23    |16586823
+47 Jin_Quan Lee                 1d BN  xxxx  23-     16-     45-     40-     51+     43-     1    14   94   11    |20125413
+48 Kina Avalos-Kenyi            1d PE  xxxx  19-     32-     51+     41-     40-     42-     1    13   98   31    |15225287
+49 Hoa Nguyen                   3k LU  Lux   10-     26-     50-     52+     30-     45-     1    13   97   27    |14013208
+50 Shashwat Chandra             3k IN  NoCb  43-     39-     49+     34-     33-     46-     1    13   83   5     |16562062
+51 Fernandez John_Marc          6k PH  xxxx  18-     44-     48-     33-     47-     52+     1    11   87   51    |20186419
+52 Mohammadghasem Manouchehri   1d IR  xxxx  22-     6-      34-     49-     46-     51-     0    15   84   13    |20149415

@@ -1,0 +1,75 @@
+; TC[W061022]
+; CL[A]
+; EV[1st Korea Prime Minister Cup]
+; PC[KR, Jeonju]
+; DT[2006-10-22,2006-10-25]
+; HA[h9]
+; KM[6.5]
+; TM[80]
+;
+  1 U Tong-ha                   7d KR Seo  9 7 57 439  21+/w  7+/b 14+/b  2+/b  5+/w  6+/b  4-/w  9+/b |14386273
+  2 Hu Yuqing                   7d CN xxx  9 7 57 436  16+/b 15+/w  6+/b  1-/w 14+/w  3+/w  8+/b  4+/b |13949826
+  3 Noh Yong-Duck               5d PH xxx  8 6 54 427   7-/w 16+/w 27+/b  5+/b 10+/w  2-/b 20+/w  6+/b |14333275
+  4 Hiraoka Satoshi             7d JP xxx  8 6 53 419  26+/b 14-/w 30+/w  9+/b 15+/b 17+/w  1+/b  2-/w |10801780
+  5 Ge Yongfei                  6d CA xxx  7 5 58 430  11+/b 10+/w  8+/b  3-/w  1-/b 12+/w 14+/b  7-/w |14350743
+  6 Chen Hsien-Hsu              7d TW xxx  7 5 58 415   9+/b 22+/b  2-/w 30+/w 11+/b  1-/w  7+/w  3-/w |14513653
+  7 Shikshin Ilja               6d RU 16Kz 7 5 56 421   3+/b  1-/w 13+/w 10-/b 18+/w 28+/w  6-/b  5+/b |12013342
+  8 Balogh Pal                  6d HU Debr 7 5 53 417  18+/b 12+/w  5-/w 14-/b 20+/b 11+/w  2-/w 27+/w |10498246
+  9 Lui Eric                    7d US xxx  7 5 53 410   6-/w 28+/b 22+/b  4-/w 26+/w 10+/b 16+/b  1-/w |10937047
+ 10 Silt Ondrej                 6d CZ KVa  7 5 52 413  17+/b  5-/b 33+/w  7+/w  3-/b  9-/w 15+/b 18+/w |10337481
+ 11 Pop Cristian                7d RO Bucu 7 5 50 404   5-/w 32+/b 23+/w 12+/b  6-/w  8-/b 27+/b 16+/w |10333389
+ 12 Zhang Xiang                 5d SG Sin  7 5 50 397  13+/b  8-/b 26+/w 11-/w 19+/w  5-/b 29+/w 17+/b |14525192
+ 13 Yao Michael                 5d SE Sto  7 5 46 392  12-/w 19+/w  7-/b 42+/b 17-/b 26+/w 32+/b 14+/w |12401829
+ 14 Groenen Geert               6d NL DHaa 6 4 58 411  19+/b  4+/b  1-/w  8+/w  2-/b 34+/w  5-/w 13-/b |10501216
+ 15 Tsang Tung                  5d HK HKo  6 4 52 403  27+/w  2-/b 17+/w 20+/b  4-/w 16-/b 10-/w 29+/b |14525654
+ 16 Arnim Felix_von             6d DE HH   6 4 51 377   2-/w  3-/b 53+/w 31+/b 34+/b 15+/w  9-/w 11-/b |10237194
+ 17 Ben_Malek Farid             5d FR 21Di 6 4 50 380  10-/w 21+/b 15-/b 47+/w 13+/w  4-/b 28+/b 12-/w |10313391
+ 18 Xia Jie-Lin                 5d NO Osl  6 4 49 378   8-/w 43+/b 20-/w 22+/w  7-/b 19+/b 24+/w 10-/b |10886425
+ 19 Qian Wei                    6d AU xxx  6 4 47 374  14-/w 13-/b 36+/w 32+/w 12-/b 18-/w 22+/b 26+/b |14333748
+ 20 Io Kin-Peng                 5d MO xxx  6 5 47 370  44+/w 33+/b 18+/b 15-/w  8-/w 23+/w  3-/b 35+/b |14550657
+ 21 Heiser Laurent              6d LU Lux  6 4 46 366   1-/b 17-/w 24+/w 23+/b 28-/w 29-/b 42+/w 31+/b |10249195
+ 22 De_Souza Alexandre          5d BR SPa  6 4 44 366  34+/b  6-/w  9-/w 18-/b 46+/w 43+/b 19-/w 30+/b |14301749
+ 23 Trairatananusorn Ruechagorn 4d TH xxx  6 5 44 342  25+/w 31+/w 11-/b 21-/w 38+/b 20-/b 45+/b 28+/w |15662097
+ 24 Chlodek Janusz              4d PL Wodz 6 5 39 329  29-/b 56+/w 21-/b 44+/w 35+/w 31+/w 18-/b 36+/w |10398465
+ 25 Gonzalez-Zelaya Carlos      3d MX xxx  6 5 39 323  23-/b 49+/w 43+/w 28-/b 31-/b 38+/w 33+/w 32+/b |13625821
+ 26 Schnider Gert               5d AT Graz 5 3 48 369   4-/w 34+/w 12-/b 27+/w  9-/b 13-/b 55+/b 19-/w |10513129
+ 27 Mutabzija Zoran             5d HR Zagr 5 3 48 366  15-/b 29+/w  3-/w 26-/b 39+/b 37+/w 11-/w  8-/b |10249041
+ 28 Jantunen Kare               3d FI Teng 5 4 47 370  45+/b  9-/w 29+/w 25+/w 21+/b  7-/b 17-/w 23-/b |10950863
+ 29 Pons Joan                   3d ES Bar  5 4 45 348  24+/w 27-/b 28-/b 41+/w 36+/b 21+/w 12-/b 15-/w |10386013
+ 30 Tsolmon Sansar              3d MN Ulb  5 4 44 338  35+/w 41+/w  4-/b  6-/b 42-/b 46+/w 34+/b 22-/w |13662825
+ 31 Wettach Alain               4d BE LlN  5 4 43 318  36+/w 23-/b 55+/b 16-/w 25+/w 24-/b 40+/b 21-/w |10437548
+ 32 Hall T_Mark                 4d UK Bris 5 4 42 319  49+/b 11-/w 37+/w 19-/b 57+/w 42+/b 13-/w 25-/w |10286023
+ 33 Pljushch Jurij              4d UA Kyiv 5 4 41 316  37+/w 20-/w 10-/b 49+/b 43-/w 39+/b 25-/b 42+/w |10449230
+ 34 Bojanic Milos               5d RS Beo  5 3 40 349  22-/w 26-/b 51+/w 46+/b 16-/w 14-/b 30-/w 44+/b |10337085
+ 35 Fragman Amir                4d IL RhA  5 4 38 309  30-/b 42-/w 50+/w 37+/b 24-/b 48+/w 44+/w 20-/w |13625315
+ 36 Le Mai-Duy                  2d VN xxx  5 4 37 315  31-/b 47+/w 19-/b 45+/w 29-/w 57+/b 43+/w 24-/b |12550153
+ 37 Parmenter Graeme            4d NZ xxx  5 4 33 293  33-/b 57+/w 32-/b 35-/w 63+/b 27-/b 49+/w 45+/w |14562658
+ 38 Jadron Milan                1d SK Brat 5 5 33 256  60-/b 58+/w 61+/b 52+/w 23-/w 25-/b 48+/w 47+/b |10201653
+ 39 Araki Hatime                1d MA xxx  5 5 31 273  64+/w 46-/b 56+/b 48+/b 27-/w 33-/w 52+/b 50+/b |10425459
+ 40 Kayatepe Adem               1d TR Ist  5 5 30 264  48-/b 59+/w 44-/b 60+/w 56+/b 47+/w 31-/w 51+/b |13686640
+ 41 Petrauskas Albertas         1d LT Viln 5 5 29 267  63+/w 30-/b 54+/w 29-/b 51-/b 56+/w 62+/w 43+/b |12749528
+ 42 Pedersen Torben             4d DK KGK  4 3 41 334  43-/w 35+/b 45+/b 13-/w 30+/w 32-/w 21-/b 33-/b |10401842
+ 43 Rupel Mirko                 4d SI Kra  4 3 40 312  42+/b 18-/w 25-/b 55+/w 33+/b 22-/w 36-/b 41-/w |10233036
+ 44 Galfaso Lucas               3d AR xxx  4 3 39 291  20-/b 45-/w 40+/w 24-/b 53+/b 50+/w 35-/b 34-/w |14574659
+ 45 Lee Choon-Huat              4d MY xxx  4 3 37 298  28-/w 44+/b 42-/w 36-/b 54+/b 51+/w 23-/w 37-/b |12762079
+ 46 Soletti Ramon               2d IT Mila 4 4 35 279  59+/b 39+/w 48+/w 34-/w 22-/b 30-/b 47-/w 60+/b |10350142
+ 47 Trippel Lorenz              1d CH Zur  4 4 34 266  52+/w 36-/b 65+/w 17-/b 55+/w 40-/b 46+/b 38-/w |10513492
+ 48 Putra Daniel-Jakadewa       1k ID Jak  4 4 34 257  40+/w 50+/b 46-/b 39-/w 58+/w 35-/b 38-/b 57+/w |14725425
+ 49 Baghirov Niyazi             3d AZ xxx  4 3 33 256  32-/w 25-/b 52-/b 33-/w 61+/b 59+/w 37-/b 64+/w |14598661
+ 50 Moreano Oswaldo             1d EC xxx  4 4 32 249  58+/b 48-/w 35-/b 61+/w 52+/w 44-/b 54+/b 39-/w |12898710
+ 51 Suponev Alexandr            1d BY Min  4 4 30 242  54+/b 53-/w 34-/b 66+/w 41+/w 45-/b 57+/b 40-/w |12349205
+ 52 Fouchereau Stephane         4k TO xxx  4 4 29 240  47-/b 63+/w 49+/w 38-/b 50-/b 62+/b 39-/w 58+/w |13098921
+ 53 Razafindrabe Tovonony       1d MG xxx  4 4 27 233  62+/w 51+/b 16-/b 57-/b 44-/w 55-/w 59+/w 56+/b |12886709
+ 54 Gaum Leander                3k ZA xxx  4 4 32 268  51-/w 62+/b 41-/b 65+/b 45-/w 58+/b 50-/w 55+/w |14533662
+ 55 Davis Ian                   2k IE xxx  3 3 32 268  61+/b 60+/w 31-/w 43-/b 47-/b 53+/b 26-/w 54-/b |12913769
+ 56 Puerta Maria                3k VE xxx  3 3 32 225  65+/w 24-/b 39-/w 62+/b 40-/w 41-/b 61+/b 53-/w |10625923
+ 57 Paiz-Castillo Hector        3k GT xxx  3 3 30 250  66+/w 37-/b 60+/b 53+/w 32-/b 36-/w 51-/w 48-/b |12737087
+ 58 Neeman Barak                4k CR xxx  3 3 28 228  50-/w 38-/b 64+/w 59+/b 48-/b 54-/w 63+/b 52-/b |14501663
+ 59 Lazarov Yoni-Petrov         1d BG Sofi 3 3 27 228  46-/w 40-/b 63+/b 58-/w 60+/w 49-/b 53-/b 62+/w |14374756
+ 60 Gonzalez-Galeano Fabian     1k CO xxx  3 3 25 230  38+/w 55-/b 57-/w 40-/b 59-/b 64+/b 66+/w 46-/w |14513664
+ 61 Aylanc Nurman               9k CY Nico 3 3 23 225  55-/w 64+/b 38-/w 50-/b 49-/w 65+/b 56-/w 66+/b |13533850
+ 62 Pineyro Ivan                3k CL xxx  2 2 25 213  53-/b 54-/w 66+/b 56-/w 65+/w 52-/w 41-/b 59-/b |14525665
+ 63 Teles-Menezes Miguel        6k PT Lis  2 2 24 209  41-/b 52-/b 59-/w 64+/b 37-/w 66+/b 58-/w 65-/w |10598016
+ 64 Pal Supravat                1k IN xxx  2 2 22 205  39-/b 61-/w 58-/b 63-/w 66+/b 60-/w 65+/w 49-/b |14033250
+ 65 Escobar Edgar_Ivan          5k PA xxx  2 2 20 208  56-/b 66+/w 47-/b 54-/w 62-/b 61-/w 64-/b 63+/b |13650835
+ 66 Margarjan Armen             6k AM xxx  0 0 21 199  57-/b 65-/b 62-/w 51-/b 64-/w 63-/w 60-/b 61-/w |14549667

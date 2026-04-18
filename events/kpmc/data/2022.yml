@@ -1,0 +1,16 @@
+website: https://kpmc.kbaduk.or.kr/us/2022
+stages:
+  - type: tournament
+    file: kpmc2022.txt
+    komi: 6.5
+    time: 50min + 3x30s japanese    
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+      - null
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: true

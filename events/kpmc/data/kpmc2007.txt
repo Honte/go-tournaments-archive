@@ -1,0 +1,75 @@
+; TC[W071014]
+; CL[B]
+; EV[2nd Korea Prime Minister Cup]
+; PC[KR, Suwon]
+; DT[2007-10-14,2007-10-16]
+; HA[h9]
+; KM[6.5]
+; TM[50]
+;
+  1 Kang Chang-pae            7d KR xxx   1 8  45 319   7+ 42+  4+ 11+  2+  3+  6+  5+ |14801160
+  2 Hu Yuqing                 7d CN xxx   2 7  41 324  13+ 59+ 10+ 25+  1- 12+  3+  4+ |13949826
+  3 Chen Hsi                  6d TW xxx   6 6  44 312  33+ 18+ 26+  6+ 12+  1-  2- 10+ |14825162
+  4 Nagayo Kazumori           6d JP xxx   4 6  41 296  46+ 35+  1- 47+ 10+ 15+  8+  2- |14837163
+  5 Janssen Frank             6d NL Amvn 14 6  40 285  53+ 16- 34+ 30+ 13+  9+ 14+  1- |10298596
+  6 Pop Cristian              7d RO Bucu 11 6  39 311  32+ 43+ 28+  3- 25+ 14+  1- 12+ |10333389
+  7 Le Mai-Duy                4d VN xxx  34 6  38 299   1- 45+ 13- 18+ 29+ 28+ 25+ 14+ |12550153
+  8 Guo Yiming                7d AU xxx  19 6  38 283  41+ 28+ 27+ 12- 16+ 19+  4- 13+ |12874697
+  9 Spiegl Ralph              5d AT Wien 25 6  33 267  62+ 10- 59+ 20+ 44+  5- 17+ 21+ |10333609
+ 10 Tan Jia-Cheng             5d SG Sin  12 5  42 295  23+  9+  2- 29+  4- 42+ 15+  3- |10725176
+ 11 Yao Michael               5d SE Sto  13 5  41 296  21+ 29+ 16+  1- 14- 26+ 12- 20+ |12401829
+ 12 Yang Jing                 7d CA Win   5 5  41 295  45+ 47+ 24+  8+  3-  2- 11+  6- |14762418
+ 13 Xie Kaikun                3d NZ xxx  35 5  39 275   2- 55+  7+ 50+  5- 44+ 19+  8- |14849164
+ 14 Ramon Jan                 4d BE Leuv 29 5  38 280  60+ 40+ 19+ 27+ 11+  6-  5-  7- |10213632
+ 15 Nechanicky Radek          6d CZ Nym  10 5  37 292  20+ 26- 35+ 17+ 31+  4- 10- 25+ |10250196
+ 16 Yu Lianzhou               7d US xxx   9 5  36 296  48+  5+ 11- 26+  8- 25- 27+ 30+ |13433706
+ 17 Jevtic Nikola             5d RS KGRa 32 5  34 268  44+ 27- 18+ 15- 46+ 35+  9- 32+ |10374089
+ 18 Sompaokaew Pariwat        4d TH xxx  22 5  33 273  54+  3- 17-  7- 59+ 43+ 31+ 35+ |14850165
+ 19 Ge Bei                    5d UK MKes 30 5  32 279  39+ 61+ 14- 43+ 42+  8- 13- 26+ |14013472
+ 20 Lee Choon-Huat            4d MY xxx  43 5  32 268  15- 66+ 36+  9- 33+ 31+ 32+ 11- |12762079
+ 21 Putra Daniel-Jakadewa     2d ID Jak  46 5  31 247  11- 36- 66+ 51+ 49+ 22+ 24+  9- |14725425
+ 22 Rodriguez Diego           3d CO Bog  56 5  30 253  36+ 30- 29- 61+ 34+ 21- 49+ 38+ |13949496
+ 23 Walch John                2d CH Nyo  45 5  29 245  10- 52+ 31- 64+ 30- 51+ 37+ 39+ |13949815
+ 24 Fernandez-Villares Javier 2d ES Sevi 27 5  28 265  66+ 34+ 12- 42- 43+ 38+ 21- 33+ |13050752
+ 25 Dmitriev Ruslan           6d RU 59Pe  7 4  40 288  31+ 48+ 30+  2-  6- 16+  7- 15- |10698204
+ 26 Balogh Pal                6d HU Debr  8 4  38 291  37+ 15+  3- 16- 27+ 11- 28+ 19- |10498246
+ 27 Bogackyj Arkadij          5d UA Kyiv 31 4  35 281  50+ 17+  8- 14- 26- 29+ 16- 44+ |10298871
+ 28 Firnhaber Marco           5d DE B 16 4  35 275  51+  8-  6- 48+ 37+  7- 26- 45+ |10398179
+ 29 Ben_Malek Farid           6d FR 21Di 17 4  35 275  38+ 11- 22+ 10-  7- 27- 56+ 42+ |10313391
+ 30 Siu Hon-Hung              5d HK xxx  15 4  35 266  55+ 22+ 25-  5- 23+ 32- 44+ 16- |14874167
+ 31 Heshe Thomas              4d DK AAR 40 4  33 266  25- 60+ 23+ 37+ 15- 20- 18- 43+ |10413194
+ 32 Garbarini Cristiano       1d IT Mila 44 4  33 260   6- 38- 52+ 45+ 50+ 30+ 20- 17- |12486243
+ 33 Tumelis Giedrius          1d LT Kaun 39 4  33 238   3- 58+ 37- 40+ 20- 48+ 47+ 24- |13813140
+ 34 Entin Leonid              3d IL RhA  33 4  33 237  58+ 24-  5- 36+ 22- 37- 48+ 49+ |10801791
+ 35 Siivola Matti             5d FI HGK  26 4  32 271  49+  4- 15- 59+ 47+ 17- 42+ 18- |10286782
+ 36 Zyzak Andrzej             4d PL Wodz 23 4  32 239  22- 21+ 20- 34- 53+ 39- 51+ 47+ |10949763
+ 37 Suc Timotej               3d SI Ljub 41 4  31 255  26- 53+ 33+ 31- 28- 34+ 23- 50+ |12533697
+ 38 Gale Ben                  3d ZA xxx  50 4  31 248  29- 32+ 54+ 44- 39+ 24- 45+ 22- |13437072
+ 39 Roca-Rey_Ross Bernardo    3d PE xxx  63 4  29 233  19- 46- 60+ 53+ 38- 36+ 57+ 23- |13049465 
+ 40 Smid Miroslav             1d SK Brat 36 4  26 245  52+ 14- 43- 33- 60+ 45- 54+ 55+ |10337470
+ 41 Melchert Julio            1d VE xxx  52 4  24 229   8- 65+ 50- 46- 45- 60+ 52+ 57+ |14898169
+ 42 Tsendjav Oyutbileg        2d MN xxx  28 3  35 264  65+  1- 46+ 24+ 19- 10- 35- 29- |14833170
+ 43 Kong Fan-Nian             4d NO Osl  18 3  35 245  56+  6- 40+ 19- 24- 18- 46+ 31- |10501370
+ 44 Benenati Martin           1d UY Mtv  65 3  34 258  17- 57+ 51+ 38+  9- 13- 30- 27- |14325751
+ 45 Barsbey Mehmet-Emin       1d TR Ist  38 3  34 252  12-  7- 55+ 32- 41+ 40+ 38- 28- |14050861
+ 46 Bachri Amine              1k MA xxx  37 3  31 251   4- 39+ 42- 41+ 17- 47- 43- 56+ |10625769
+ 47 Cheong Heng               1d MO xxx  20 3  30 257  64+ 12- 61+  4- 35- 46+ 33- 36- |14813172
+ 48 Tabares Santiago          3d AR xxx  42 3  29 261  16- 25- 49+ 28- 56+ 33- 34- 59+ |14825173
+ 49 Pereira Francisco         1d PT CR   59 3  29 228  35- 62+ 48- 57+ 21- 50+ 22- 34- |14213639
+ 50 Chin Sin-Voon             1d BN xxx  64 3  28 243  27- 64+ 41+ 13- 32- 49- 59+ 37- |14837174
+ 51 Galinovskij Vasilij       3k BY Min  49 3  28 240  28- 56+ 44- 21- 61+ 23- 36- 60+ |13650802
+ 52 Aguillon Cherisse         1k PH xxx   3 3  27 209  40- 23- 32- 62+ 54+ 57- 41- 61+ |14849175
+ 53 Baghirov Niyazi           3d AZ xxx  47 3  26 222   5- 37- 58+ 39- 36- 54- 66+ 63+ |14598661
+ 54 Lazarov Yoni-Petrov       1d BG Sofi 55 3  25 206  18- 63+ 38- 56- 52- 53+ 40- 65+ |14374756
+ 55 Sanchez-Chinchuna Irwing  3k EC xxx  48 3  24 226  30- 13- 45- 60- 62+ 64+ 63+ 40- |14850176
+ 56 Gibson John               2k IE Col  51 3  23 226  43- 51- 62+ 54+ 48- 63+ 29- 46- |10637385
+ 57 Arambula-Moreno Marcos    1d MX xxx  24 3  23 211  61- 44- 63+ 49- 64+ 52+ 39- 41- |14874178
+ 58 Vodenik Dragoslav         3k BA BLu  66 3  18 207  34- 33- 53- 63- 66+ 65+ 61- 62+ |10350714
+ 59 Borchartt Bruno           4d BR SPa  21 2  32 244  63+  2-  9- 35- 18- 61+ 50- 48- |14786420
+ 60 Harutyunyan Davit         1k AM xxx  62 2  29 222  14- 31- 39- 55+ 40- 41- 64+ 51- |12750089
+ 61 Aylanc Nurman             4k CY Nico 57 2  27 220  57+ 19- 47- 22- 51- 59- 58+ 52- |13533850
+ 62 Gomez-Pinto Jose          10 CL xxx  58 2  22 199   9- 49- 56- 52- 55- 66+ 65+ 58- |14886179
+ 63 Aguero-Obando Mario       4k CR xxx  54 2  21 190  59- 54- 57- 58+ 65+ 56- 55- 53- |14898180
+ 64 Caceres-Estrada Edgardo   3k GT xxx  53 2  20 208  47- 50- 65+ 23- 57- 55- 60- 66+ |12025530
+ 65 Escobar Edgar_Ivan        5k PA xxx  61 1  19 191  42- 41- 64- 66+ 63- 58- 62- 54- |13650835
+ 66 Dave Sandeep              2k IN xxx  60 0  26 196  24- 20- 21- 65- 58- 62- 53- 64- |14801182

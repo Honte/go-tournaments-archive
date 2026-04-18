@@ -1,0 +1,16 @@
+website: https://kpmc.kbaduk.or.kr/us/2025
+stages:
+  - type: tournament
+    file: kpmc2025.txt
+    time: 40min + 20s fischer
+    komi: 6.5
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+      - null
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: true

@@ -1,0 +1,16 @@
+{
+  "site": {
+    "name": "Korea Prime Minister Cup Archive",
+    "description": "Archive of all Korea Prime Minister Cup tournaments",
+    "yearDescription": "Results of KPMC %{0}",
+    "allTimeStatsDescription": "All-time statistics of all Korea Prime Minister Cup participants",
+    "playerStatsDescription": "Participation statistics of %{0} in all Korea Prime Minister Cup events"
+  },
+  "details": {
+    "goToWebsite": "Go to KPMC %{0} website"
+  },
+  "winners": {
+    "title": "Medalists of Korea Prime Minister Cup",
+    "first": "KPMC Champion"
+  }
+}

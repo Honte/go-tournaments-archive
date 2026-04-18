@@ -1,0 +1,16 @@
+website: https://kpmc.kbaduk.or.kr/us/2007
+stages:
+  - type: tournament
+    file: kpmc2007.txt
+    time: 30min + 3x30s japanese
+    komi: 6.5
+    scoringColumns:
+      - null
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: true

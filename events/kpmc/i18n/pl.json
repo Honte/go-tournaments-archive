@@ -1,0 +1,16 @@
+{
+  "site": {
+    "name": "Archiwum Pucharu Premiera Korei w Go",
+    "description": "Archiwum wyników wszystkich edycji Pucharu Premiera Korei w\u00A0Go",
+    "yearDescription": "Wyniki pucharu z roku %{0}",
+    "allTimeStatsDescription": "Lista wszech czasów wszystkich uczestników Pucharu Premiera Korei w Go",
+    "playerStatsDescription": "Statystyki gracza %{0} we wszystkich rozegranych edycjach Pucharu Premiera Korei w Go"
+  },
+  "details": {
+    "goToWebsite": "Przejdź na stronę KPMC %{0}"
+  },
+  "winners": {
+    "title": "Medaliści Pucharu Premiera Korei",
+    "first": "Zwycięzca pucharu"
+  }
+}
