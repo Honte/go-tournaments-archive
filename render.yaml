@@ -12,7 +12,7 @@ services:
       - key: EVENT
         value: pgc
       - key: NODE_VERSION
-        value: "24"
+        value: '24'
 
   - type: web
     name: go-archive-wagc
@@ -27,7 +27,7 @@ services:
       - key: EVENT
         value: wagc
       - key: NODE_VERSION
-        value: "24"
+        value: '24'
 
   - type: web
     name: go-archive-pwgc
@@ -42,7 +42,7 @@ services:
       - key: EVENT
         value: pwgc
       - key: NODE_VERSION
-        value: "24"
+        value: '24'
 
   - type: web
     name: go-archive-pagc
@@ -57,7 +57,7 @@ services:
       - key: EVENT
         value: pagc
       - key: NODE_VERSION
-        value: "24"
+        value: '24'
 
   - type: web
     name: go-archive-pygc
@@ -72,4 +72,4 @@ services:
       - key: EVENT
         value: pygc
       - key: NODE_VERSION
-        value: "24"
+        value: '24'

@@ -2,12 +2,12 @@ import EVENT from '@event';
 import EVENT_CONFIG from '@event/config';
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { generatePng } from '@tools/png';
 import { cleanSgf } from '@tools/sgf';
 import { generateSvg } from '@tools/svg';
 import { createConverter } from 'convert-svg-to-png';
 import fg from 'fast-glob';
 import type { NextRequest } from 'next/server';
-import { generatePng } from '@tools/png';
 
 const PNG_SIZE = 512;
 const SGF_DIR = `./events/${EVENT}/sgf`;
