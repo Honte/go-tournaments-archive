@@ -13,6 +13,7 @@ export type SgfInfo = {
   fromFilename: PlayerNames;
   rawResult: string | null;
   cleanResult: string | null;
+  round: number | null;
   corrupted: boolean;
 };
 
@@ -24,6 +25,7 @@ export type SgfPlaces = {
 export type H9GameRecord = {
   homePlace: number;
   awayPlace: number;
+  round: number;
   winnerPlace: number | null;
   homeColor: Color;
   winnerColor: Color;
@@ -32,6 +34,7 @@ export type H9GameRecord = {
 export type ParsedGameEntry = {
   id: string;
   sgf: string;
+  round: number | null;
   props: string;
 };
 

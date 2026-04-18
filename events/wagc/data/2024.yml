@@ -5,51 +5,51 @@ stages:
     time: 60min + 3x30s japanese
     komi: 6.5
     scoringColumns:
-    - wins
-    - sos
-    - sosos
+      - wins
+      - sos
+      - sosos
     breakers:
-    - wins
-    - sos
-    - sosos
+      - wins
+      - sos
+      - sosos
     games:
-      - 1-4 1:B+R sgf:2024/4-BaoxiangBai-PongsakarnSornarra.sgf
-      - 1-5 1:B+T sgf:2024/8-BaoxiangBai-ShengChiehLo.sgf
-      - 1-9 1:B+R sgf:2024/2-BaoxiangBai-CornelBurzo.sgf
-      - 2-1 1:W+R sgf:2024/7-JungSeonKim-BaoxiangBai.sgf
-      - 2-3 2:B+R sgf:2024/6-JungSeonKim-MinoruOzeki.sgf
-      - 2-5 2:B+10.5 sgf:2024/5-JungSeonKim-ShengChiehLo.sgf
-      - 2-8 2:B+0.5 sgf:2024/8-JungSeonKim-NaiSanChan.sgf
-      - 3-1 3:B+R sgf:2024/5-MinoruOzeki-BaoxiangBai.sgf
-      - 3-40 3:B+R sgf:2024/1-MinoruOzeki-CharlieAakerblom.sgf
-      - 4-3 3:W+9.5 sgf:2024/7-PongsakarnSornarra-MinoruOzeki.sgf
-      - 4-24 4:B+R sgf:2024/3-PongsakarnSornarra-DusanMitic.sgf
-      - 7-41 7:B+19.5 sgf:2024/5-InHangSam-JonRunarMelting.sgf
-      - 8-1 1:W+R sgf:2024/6-NaiSanChan-BaoxiangBai.sgf
-      - 8-3 3:W+12.5 sgf:2024/4-NaiSanChan-MinoruOzeki.sgf
-      - 9-3 3:W+R sgf:2024/8-CornelBurzo-MinoruOzeki.sgf
-      - 10-3 3:W+9.5 sgf:2024/2-LukasPodpera-MinoruOzeki.sgf
-      - 12-42 12:B+R sgf:2024/2-KwanTaoLi-AlexanderRix.sgf
-      - 13-5 5:W+R sgf:2024/7-TalMichaeli-ShengChiehLo.sgf
-      - 15-5 5:W+2.5 sgf:2024/2-DavideBernardis-ShengChiehLo.sgf
-      - 18-2 2:W+R sgf:2024/4-GillesvanEeden-JungSeonKim.sgf
-      - 20-33 20:B+R sgf:2024/8-VladasZaleskas-UgurArikan.sgf
-      - 22-21 21:W+R sgf:2024/7-WeiJieTeh-JohannesObenaus.sgf
-      - 23-8 8:W+T sgf:2024/5-ZhiyuanZhang-NaiSanChan.sgf
-      - 23-25 23:B+T sgf:2024/4-ZhiyuanZhang-DenisKaradaban.sgf
-      - 25-3 3:W+R sgf:2024/3-DenisKaradaban-MinoruOzeki.sgf
-      - 25-16 25:B+29.5 sgf:2024/1-DenisKaradaban-StjepanMestrovic.sgf
-      - 26-19 26:B+R sgf:2024/5-KoichiroHabu-VesaLaatikainen.sgf
-      - 27-6 6:W+0.5 sgf:2024/3-DucAnhPham-CsabaMero.sgf
-      - 29-58 29:B+R sgf:2024/1-DmytroYatsenko-ErnurEmiliev.sgf
-      - 31-16 16:W+R sgf:2024/6-RenaudGaban-StjepanMestrovic.sgf
-      - 37-15 15:W+R sgf:2024/1-NikolaTsarigradski-DavideBernardis.sgf
-      - 40-11 11:W+30.5 sgf:2024/4-CharlieAakerblom-DanielGourdeau.sgf
-      - 43-38 43:B+23.5 sgf:2024/1-GregorButala-PascalAlejandroNunezMariot.sgf
-      - 44-17 17:W+R sgf:2024/6-PeterSmolarik-HaidarAlimin.sgf
-      - 45-14 14:W+R sgf:2024/3-JuanFelipeBurgosAndrade-JiaChengTan.sgf
-      - 46-51 46:B+17.5 sgf:2024/2-StephenNulty-JoaoFerreira.sgf
-      - 48-35 35:W+14.5 sgf:2024/7-ThiagoAugustoGomesdaSilva-JavierGonzales.sgf
-      - 49-36 36:W+24.5 sgf:2024/8-AlejandroRafaelCurielSanchez-ArmelDavidWolff.sgf
-      - 55-50 50:W+14.5 sgf:2024/6-JorgeEmilioMurilloLux-EtugenBayarjargal.sgf
-      - 56-21 21:W+127.5 sgf:2024/3-SenHeiGui-JohannesObenaus.sgf
+      - 1-4 1:B+R round:4 sgf:2024/4-BaoxiangBai-PongsakarnSornarra.sgf
+      - 1-5 1:B+T round:8 sgf:2024/8-BaoxiangBai-ShengChiehLo.sgf
+      - 1-9 1:B+R round:2 sgf:2024/2-BaoxiangBai-CornelBurzo.sgf
+      - 2-1 1:W+R round:7 sgf:2024/7-JungSeonKim-BaoxiangBai.sgf
+      - 2-3 2:B+R round:6 sgf:2024/6-JungSeonKim-MinoruOzeki.sgf
+      - 2-5 2:B+10.5 round:5 sgf:2024/5-JungSeonKim-ShengChiehLo.sgf
+      - 2-8 2:B+0.5 round:8 sgf:2024/8-JungSeonKim-NaiSanChan.sgf
+      - 3-1 3:B+R round:5 sgf:2024/5-MinoruOzeki-BaoxiangBai.sgf
+      - 3-40 3:B+R round:1 sgf:2024/1-MinoruOzeki-CharlieAakerblom.sgf
+      - 4-3 3:W+9.5 round:7 sgf:2024/7-PongsakarnSornarra-MinoruOzeki.sgf
+      - 4-24 4:B+R round:3 sgf:2024/3-PongsakarnSornarra-DusanMitic.sgf
+      - 7-41 7:B+19.5 round:5 sgf:2024/5-InHangSam-JonRunarMelting.sgf
+      - 8-1 1:W+R round:6 sgf:2024/6-NaiSanChan-BaoxiangBai.sgf
+      - 8-3 3:W+12.5 round:4 sgf:2024/4-NaiSanChan-MinoruOzeki.sgf
+      - 9-3 3:W+R round:8 sgf:2024/8-CornelBurzo-MinoruOzeki.sgf
+      - 10-3 3:W+9.5 round:2 sgf:2024/2-LukasPodpera-MinoruOzeki.sgf
+      - 12-42 12:B+R round:2 sgf:2024/2-KwanTaoLi-AlexanderRix.sgf
+      - 13-5 5:W+R round:7 sgf:2024/7-TalMichaeli-ShengChiehLo.sgf
+      - 15-5 5:W+2.5 round:2 sgf:2024/2-DavideBernardis-ShengChiehLo.sgf
+      - 18-2 2:W+R round:4 sgf:2024/4-GillesvanEeden-JungSeonKim.sgf
+      - 20-33 20:B+R round:8 sgf:2024/8-VladasZaleskas-UgurArikan.sgf
+      - 22-21 21:W+R round:7 sgf:2024/7-WeiJieTeh-JohannesObenaus.sgf
+      - 23-8 8:W+T round:5 sgf:2024/5-ZhiyuanZhang-NaiSanChan.sgf
+      - 23-25 23:B+T round:4 sgf:2024/4-ZhiyuanZhang-DenisKaradaban.sgf
+      - 25-3 3:W+R round:3 sgf:2024/3-DenisKaradaban-MinoruOzeki.sgf
+      - 25-16 25:B+29.5 round:1 sgf:2024/1-DenisKaradaban-StjepanMestrovic.sgf
+      - 26-19 26:B+R round:5 sgf:2024/5-KoichiroHabu-VesaLaatikainen.sgf
+      - 27-6 6:W+0.5 round:3 sgf:2024/3-DucAnhPham-CsabaMero.sgf
+      - 29-58 29:B+R round:1 sgf:2024/1-DmytroYatsenko-ErnurEmiliev.sgf
+      - 31-16 16:W+R round:6 sgf:2024/6-RenaudGaban-StjepanMestrovic.sgf
+      - 37-15 15:W+R round:1 sgf:2024/1-NikolaTsarigradski-DavideBernardis.sgf
+      - 40-11 11:W+30.5 round:4 sgf:2024/4-CharlieAakerblom-DanielGourdeau.sgf
+      - 43-38 43:B+23.5 round:1 sgf:2024/1-GregorButala-PascalAlejandroNunezMariot.sgf
+      - 44-17 17:W+R round:6 sgf:2024/6-PeterSmolarik-HaidarAlimin.sgf
+      - 45-14 14:W+R round:3 sgf:2024/3-JuanFelipeBurgosAndrade-JiaChengTan.sgf
+      - 46-51 46:B+17.5 round:2 sgf:2024/2-StephenNulty-JoaoFerreira.sgf
+      - 48-35 35:W+14.5 round:7 sgf:2024/7-ThiagoAugustoGomesdaSilva-JavierGonzales.sgf
+      - 49-36 36:W+24.5 round:8 sgf:2024/8-AlejandroRafaelCurielSanchez-ArmelDavidWolff.sgf
+      - 55-50 50:W+14.5 round:6 sgf:2024/6-JorgeEmilioMurilloLux-EtugenBayarjargal.sgf
+      - 56-21 21:W+127.5 round:3 sgf:2024/3-SenHeiGui-JohannesObenaus.sgf

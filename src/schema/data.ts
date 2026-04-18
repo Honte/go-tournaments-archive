@@ -169,6 +169,7 @@ export type GameProps = {
   sgf?: string;
   svg?: string;
   png?: string;
+  round?: string;
 };
 
 export type GamePropsKey = keyof GameProps;

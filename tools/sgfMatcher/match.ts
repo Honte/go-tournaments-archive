@@ -1,3 +1,4 @@
+import { buildLocalGameId } from '@/libs/h9';
 import {
   type Color,
   type H9GameRecord,
@@ -7,7 +8,7 @@ import {
   type SgfPlaces,
   UNKNOWN_PLACE,
 } from './types';
-import { flipColor, normalizeLocalGameId, normalizePlayerName } from './utils';
+import { flipColor, normalizePlayerName } from './utils';
 
 export type WinnerPart = {
   winnerPlace: number | typeof UNKNOWN_PLACE;
@@ -31,7 +32,9 @@ export function matchSgfs(
       continue;
     }
 
-    const localId = resolveLocalId(sgf.metadata, playersMap) ?? resolveLocalId(sgf.fromFilename, playersMap);
+    const localId =
+      resolveLocalId(sgf.metadata, sgf.round, playersMap, h9gamesMap) ??
+      resolveLocalId(sgf.fromFilename, sgf.round, playersMap, h9gamesMap);
 
     if (!localId) {
       unmatchedSgfs.push(sgf);
@@ -79,7 +82,12 @@ function lookupPlace(name: string | null, playerLookup: Map<string, number>): nu
   return name ? (playerLookup.get(normalizePlayerName(name)) ?? null) : null;
 }
 
-function resolveLocalId(names: PlayerNames, playersMap: Map<string, number>): string | null {
+function resolveLocalId(
+  names: PlayerNames,
+  round: number | null,
+  playersMap: Map<string, number>,
+  h9gamesMap: Map<string, H9GameRecord>
+): string | null {
   const places: number[] = [];
 
   for (const name of [names.blackName, names.whiteName]) {
@@ -93,7 +101,25 @@ function resolveLocalId(names: PlayerNames, playersMap: Map<string, number>): st
     return null;
   }
 
-  return normalizeLocalGameId(places.join('-'));
+  if (round !== null) {
+    return buildLocalGameId(places[0], places[1], round);
+  }
+
+  const candidates: string[] = [];
+  for (const [key, record] of h9gamesMap) {
+    if (
+      (record.homePlace === places[0] && record.awayPlace === places[1]) ||
+      (record.homePlace === places[1] && record.awayPlace === places[0])
+    ) {
+      candidates.push(key);
+    }
+  }
+
+  if (candidates.length === 1) {
+    return candidates[0];
+  }
+
+  return null;
 }
 
 export function resolveSgfPlaces(sgf: SgfInfo, playerLookup: Map<string, number>): SgfPlaces {
@@ -162,7 +188,7 @@ function buildGameString(h9Record: H9GameRecord, sgf: SgfInfo, sgfPlaces: SgfPla
 
   const winnerPart = resultStr ? `${winnerPlace}:${resultStr}` : String(winnerPlace);
 
-  return `${places} ${winnerPart} sgf:${sgf.path} ${props || ''}`.trim();
+  return `${places} ${winnerPart} round:${h9Record.round} sgf:${sgf.path} ${props || ''}`.trim();
 }
 
 function hasSgf(parsedGamesMap: Map<string, ParsedGameEntry>, sgf: string) {
