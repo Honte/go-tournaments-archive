@@ -7,18 +7,18 @@
 ; KM[6.5]
 ; TM[75]
 ; CM[45min+15s Fischer (submitted by kamyszyn)]
-;.
- 1 Szychowiak Marianna   2k PL  Bydg  9    5    9    30   161 1 0 0 3+/b    4+/w    2+/b    6+/w    5+/w     |16725709
- 2 Bugaj Antoni          1k PL  Wars  8    4    8    31   149 2 1 0 4+/b    5+/w    1-/w    3+/b    7+/b     |17898078
- 3 Barcicki Tymoteusz    3k PL  Pozn  7    3    7    32   159 3 2 0 1-/w    6+/b    5+/b    2-/w    4+/w     |18737928
- 4 Siwy Adam             7k PL  Szcz  6    2    6    33   158 0 3 0 2-/w    1-/b    6+/w    5+/b    3-/b     |19725508
- 5 Bednarska Julia       8k PL  Toru  5    1    5    34   157 0 0 0 6+/b    2-/b    3-/w    4-/w    1-/b     |16733706
- 6 Kowalski Marek       10k PL  Pozn  4    0    4    31   146 0 0 0 5-/w    3-/w    4-/b    1-/b    8-/w     |20174517
- 7 Lubinski Jakub       17k PL  Toru  4    4    4    20    82 0 0 0 9+/w    8+/b    10+/b   12+/b   2-/w     |18213547
- 8 Bugaj Zofia          18k PL  Joze  4    4    4    17    84 0 0 0  11+/b   7-/w    9+/w    10+/w   6+/b     |18201546
- 9 Barcicki Kacper      17k PL  Pozn  3    3    3    12    70 0 0 1 7-/b    11+/w   8-/b    14+/w   13+/b    |19850039
-10 Tyrala Michal        30k PL  Rzes  3    3    3    11    71 0 0 2 12+/b   13+/w   7-/w    8-/b    14+/b    |20401051
-11 Szopa Rysio          20k PL  Wars  3    3    3    10    63 0 0 3  8-/w    9-/b    14+/w   13+/w   12+/b    |20137458
-12 Kolinska Natalia     30k PL  Bydg  2    2    2    11    64 0 0 0  10-/w   14+/b   13+/b   7-/w    11-/w    |19301854
-13 Chometa Szymon       30k PL  Wroc  1    1    1    11    56 0 0 0  14+/w   10-/b   12-/w   11-/b   9-/w     |20113357
-14 Chometa Mateusz      30k PL  Wroc  0    0    0    12    55 0 0 0  13-/b   12-/w   11-/b   9-/b    10-/w    |20125358
+;.                                                            U20 U16 U12
+ 1 Szychowiak Marianna   2k PL  Bydg  9    5    9    30   161 1   0   0   3+/b    4+/w    2+/b    6+/w    5+/w     |16725709
+ 2 Bugaj Antoni          1k PL  Wars  8    4    8    31   149 2   1   0   4+/b    5+/w    1-/w    3+/b    7+/b     |17898078
+ 3 Barcicki Tymoteusz    3k PL  Pozn  7    3    7    32   159 3   2   0   1-/w    6+/b    5+/b    2-/w    4+/w     |18737928
+ 4 Siwy Adam             7k PL  Szcz  6    2    6    33   158 4   3   0   2-/w    1-/b    6+/w    5+/b    3-/b     |19725508
+ 5 Bednarska Julia       8k PL  Toru  5    1    5    34   157 5   0   0   6+/b    2-/b    3-/w    4-/w    1-/b     |16733706
+ 6 Kowalski Marek       10k PL  Pozn  4    0    4    31   146 6   0   0   5-/w    3-/w    4-/b    1-/b    8-/w     |20174517
+ 7 Lubinski Jakub       17k PL  Toru  4    4    4    20    82 7   0   0   9+/w    8+/b    10+/b   12+/b   2-/w     |18213547
+ 8 Bugaj Zofia          18k PL  Joze  4    4    4    17    84 8   4   0   11+/b   7-/w    9+/w    10+/w   6+/b     |18201546
+ 9 Barcicki Kacper      17k PL  Pozn  3    3    3    12    70 9   5   1   7-/b    11+/w   8-/b    14+/w   13+/b    |19850039
+10 Tyrala Michal        30k PL  Rzes  3    3    3    11    71 10  6   2   12+/b   13+/w   7-/w    8-/b    14+/b    |20401051
+11 Szopa Rysio          20k PL  Wars  3    3    3    10    63 11  7   3   8-/w    9-/b    14+/w   13+/w   12+/b    |20137458
+12 Kolinska Natalia     30k PL  Bydg  2    2    2    11    64 12  8   0   10-/w   14+/b   13+/b   7-/w    11-/w    |19301854
+13 Chometa Szymon       30k PL  Wroc  1    1    1    11    56 13  9   4   14+/w   10-/b   12-/w   11-/b   9-/w     |20113357
+14 Chometa Mateusz      30k PL  Wroc  0    0    0    12    55 14  10  5   13-/b   12-/w   11-/b   9-/b    10-/w    |20125358

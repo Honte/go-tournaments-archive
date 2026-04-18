@@ -8,14 +8,13 @@
 ; TM[82.5]
 ; CM[ (submitted by krzysztof.grabowski)]
 ;.
-;Pl     Name             Grade  Club    MM S  SOS SDOS U18 U16 U12  1.      2.      3.      4.       5.
-;
-1 Frejlak Stanislaw    2d PL  Wars  5    5    15   73 1 0 0 5+/w0  6+/w0  2+/w0  3+/b0  4+/b0   |12837594
-2 Majka Marcin         1k PL  Wroc  4    4    14   68 0 1 0 3+/w0  4+/w0  1-/b0  9+/b0  7+/w0   |14713413
-3 Soldan Leszek_jr     4k PL  Wars  3    3    16   71 0 0 1 2-/b0  5+/w0  7+/b0  1-/w0  0+      |14362876
-4 Pacana Patryk        4k PL  Byto  3    3    15   65 2 0 0 7+/w0  2-/b0  8+/b0  6+/b0  1-/w0   |14786948
-5 Pokrzywa Mikolaj     6k PL  Wroc  3    3    14   69 3 0 0 1-/b0  3-/b0  0+     8+/w0  6+/w0   |14537952
-6 Surma Bartosz        6k PL  Wodz  2    2    14   64 0 2 0 8+/w0  1-/b0  9+/b0  4-/w0  5-/b0   |13833039
-7 Ciombor Krzysztof    7k PL  Krak  2    2    12   67 0 0 0 4-/b0  9+/w0  3-/w0  0+     2-/b0   |14850429
-8 Sawicki-Hughes Jan  11k PL  Wars  2    2    10   63 0 3 0 6-/b0  0+     4-/w0  5-/b0  9+/w0   |13533190
-9 Sawicki-Hughes Ben  20k PL  Wars  1    1    10   60 0 0 2 0+     7-/b0  6-/w0  2-/w0  8-/b0   |15601509
+;Pl     Name         Grade  Club    MM S  SOS SDOS U18 U16 U12  1.      2.      3.      4.       5.
+1 Frejlak Stanislaw    2d PL  Wars  5  5  15  73   1   0   0    5+/w0  6+/w0  2+/w0  3+/b0  4+/b0   |12837594
+2 Majka Marcin         1k PL  Wroc  4  4  14  68   0   1   0    3+/w0  4+/w0  1-/b0  9+/b0  7+/w0   |14713413
+3 Soldan Leszek_jr     4k PL  Wars  3  3  16  71   0   0   1    2-/b0  5+/w0  7+/b0  1-/w0  0+      |14362876
+4 Pacana Patryk        4k PL  Byto  3  3  15  65   2   0   0    7+/w0  2-/b0  8+/b0  6+/b0  1-/w0   |14786948
+5 Pokrzywa Mikolaj     6k PL  Wroc  3  3  14  69   3   0   0    1-/b0  3-/b0  0+     8+/w0  6+/w0   |14537952
+6 Surma Bartosz        6k PL  Wodz  2  2  14  64   0   2   0    8+/w0  1-/b0  9+/b0  4-/w0  5-/b0   |13833039
+7 Ciombor Krzysztof    7k PL  Krak  2  2  12  67   4   0   0    4-/b0  9+/w0  3-/w0  0+     2-/b0   |14850429
+8 Sawicki-Hughes Jan  11k PL  Wars  2  2  10  63   0   3   0    6-/b0  0+     4-/w0  5-/b0  9+/w0   |13533190
+9 Sawicki-Hughes Ben  20k PL  Wars  1  1  10  60   0   0   2    0+     7-/b0  6-/w0  2-/w0  8-/b0   |15601509

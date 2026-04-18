@@ -1,3 +1,4 @@
+website: https://mpj.go.art.pl/2020
 stages:
   - type: tournament
     file: mpj2020.txt
@@ -9,7 +10,7 @@ stages:
       - direct
       - u20
       - u16
-      - u12      
+      - u12
     breakers:
       - wins
       - sos
