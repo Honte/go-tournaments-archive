@@ -4,7 +4,6 @@ import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { Game, GamePlayer, LeagueStage, Player, TableResult, TournamentDetails } from '@/schema/data';
 import { InputTournamentStage } from '@/schema/input';
-import { mapValues } from 'lodash-es';
 import { parseDates } from '@/libs/dates';
 import { H9Game, buildLocalGameId, parseH9 } from '@/libs/h9';
 import { getGameId, parseGame } from '@/data/games';
@@ -92,9 +91,9 @@ export async function loadH9Tournament({
 
       if (EVENT_CONFIG.categories?.includes(breaker)) {
         if (raw === '?' || value > 0) {
-          (tableEntry.categories ||= {})[breaker] = raw === '?' ? raw : value
+          (tableEntry.categories ||= {})[breaker] = raw === '?' ? raw : value;
         }
-        continue
+        continue;
       }
 
       if (isNaN(value)) {

@@ -1,10 +1,11 @@
 'use client';
 import type { StatsCategory, StatsCategoryPlayer } from '@/schema/data';
-import type { ColumnDef } from '@tanstack/react-table';
-import { useMemo, useState } from 'react';
+import type { ColumnDef, SortingFn } from '@tanstack/react-table';
+import { useCallback, useMemo, useState } from 'react';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
+import type { KeysMatching } from '@/libs/types';
 import { YearLink } from '@/components/YearLink';
 import { StatsTable } from '@/components/table/StatsTable';
 import { H2 } from '@/components/ui/H2';
@@ -26,6 +27,7 @@ type SummaryRow = {
   players: number;
   hasUnsure?: boolean;
 };
+type MedalKey = KeysMatching<SummaryRow, StatsCategoryPlayer[]>;
 
 export function CategoryResultsTable({ translations, stats }: CategoryResultsTableProps) {
   const [includeUnsure, setIncludeUnsure] = useState(true);
@@ -58,6 +60,25 @@ export function CategoryResultsTable({ translations, stats }: CategoryResultsTab
 
   const hasUnsure = data.some((r) => r.hasUnsure);
 
+  const sortByFirstPlayer = useCallback<(key: MedalKey) => SortingFn<SummaryRow>>(
+    (key) => (a, b) =>
+      (a.original[key][0]?.name ?? '').localeCompare(b.original[key][0]?.name ?? '', translations.locale),
+    [translations.locale]
+  );
+
+  const renderPlayers = useCallback<(key: MedalKey) => ColumnDef<SummaryRow>['cell']>(
+    (key) => (info) =>
+      jsxJoin(
+        info.row.original[key].map((p) => (
+          <PlayerLink key={p.id} playerId={p.id} locale={translations.locale}>
+            <PlayerName player={p} />
+          </PlayerLink>
+        )),
+        ', '
+      ),
+    [translations.locale]
+  );
+
   const columns = useMemo(
     () =>
       (
@@ -70,41 +91,20 @@ export function CategoryResultsTable({ translations, stats }: CategoryResultsTab
           {
             accessorKey: 'gold',
             header: t('winners.first'),
-            cell: (info) =>
-              jsxJoin(
-                info.row.original.gold.map((p) => (
-                  <PlayerLink key={p.id} playerId={p.id} locale={translations.locale}>
-                    <PlayerName player={p} />
-                  </PlayerLink>
-                )),
-                ', '
-              ),
+            cell: renderPlayers('gold'),
+            sortingFn: sortByFirstPlayer('gold'),
           },
           {
             accessorKey: 'silver',
             header: t('winners.second'),
-            cell: (info) =>
-              jsxJoin(
-                info.row.original.silver.map((p) => (
-                  <PlayerLink key={p.id} playerId={p.id} locale={translations.locale}>
-                    <PlayerName player={p} />
-                  </PlayerLink>
-                )),
-                ', '
-              ),
+            cell: renderPlayers('silver'),
+            sortingFn: sortByFirstPlayer('silver'),
           },
           {
             accessorKey: 'bronze',
             header: t('winners.third'),
-            cell: (info) =>
-              jsxJoin(
-                info.row.original.bronze.map((p) => (
-                  <PlayerLink key={p.id} playerId={p.id} locale={translations.locale}>
-                    <PlayerName player={p} />
-                  </PlayerLink>
-                )),
-                ', '
-              ),
+            cell: renderPlayers('bronze'),
+            sortingFn: sortByFirstPlayer('bronze'),
           },
           {
             accessorKey: 'players',
@@ -112,7 +112,7 @@ export function CategoryResultsTable({ translations, stats }: CategoryResultsTab
           },
         ] as ColumnDef<SummaryRow>[]
       ).filter(Boolean),
-    [t, translations.locale]
+    [t, translations.locale, sortByFirstPlayer, renderPlayers]
   );
 
   return (
