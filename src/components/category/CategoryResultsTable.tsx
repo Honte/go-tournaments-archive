@@ -1,7 +1,7 @@
 'use client';
 import type { StatsCategory, StatsCategoryPlayer } from '@/schema/data';
 import type { ColumnDef } from '@tanstack/react-table';
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
@@ -10,6 +10,7 @@ import { StatsTable } from '@/components/table/StatsTable';
 import { H2 } from '@/components/ui/H2';
 import { PlayerLink } from '@/components/ui/PlayerLink';
 import { PlayerName } from '@/components/ui/PlayerName';
+import { Toggle } from '@/components/ui/Toggle';
 
 export type CategoryResultsTableProps = {
   category: string;
@@ -22,12 +23,12 @@ type SummaryRow = {
   gold: StatsCategoryPlayer[];
   silver: StatsCategoryPlayer[];
   bronze: StatsCategoryPlayer[];
-  totalPlayers: number;
-  unsurePlayers: number;
-  surePlayers: number;
+  players: number;
+  hasUnsure?: boolean;
 };
 
 export function CategoryResultsTable({ translations, stats }: CategoryResultsTableProps) {
+  const [includeUnsure, setIncludeUnsure] = useState(true);
   const t = getTranslator(translations);
 
   const data = useMemo(() => {
@@ -47,14 +48,15 @@ export function CategoryResultsTable({ translations, stats }: CategoryResultsTab
         gold: byPlace[1] || [],
         silver: byPlace[2] || [],
         bronze: byPlace[3] || [],
-        surePlayers: tournament.results.length - possiblePlayers,
-        unsurePlayers: possiblePlayers,
-        totalPlayers: tournament.results.length,
+        players: includeUnsure ? tournament.results.length : tournament.results.length - possiblePlayers,
+        hasUnsure: possiblePlayers > 0,
       });
     }
 
     return result;
-  }, [stats.tournaments]);
+  }, [includeUnsure, stats.tournaments]);
+
+  const hasUnsure = data.some((r) => r.hasUnsure);
 
   const columns = useMemo(
     () =>
@@ -105,15 +107,7 @@ export function CategoryResultsTable({ translations, stats }: CategoryResultsTab
               ),
           },
           {
-            accessorKey: 'surePlayers',
-            header: t('table.surePlayers'),
-          },
-          {
-            accessorKey: 'unsurePlayers',
-            header: t('table.unsurePlayers'),
-          },
-          {
-            accessorKey: 'totalPlayers',
+            accessorKey: 'players',
             header: t('table.players'),
           },
         ] as ColumnDef<SummaryRow>[]
@@ -125,6 +119,13 @@ export function CategoryResultsTable({ translations, stats }: CategoryResultsTab
     <div className="flex-2 flex-col">
       <H2>{t('stats.summary')}</H2>
       <StatsTable data={data} columns={columns} />
+      {hasUnsure && (
+        <div className="flex p-2">
+          <Toggle checked={includeUnsure} onChange={setIncludeUnsure} className="ml-auto">
+            {t('stats.includeUnsurePlayers')}
+          </Toggle>
+        </div>
+      )}
     </div>
   );
 }
