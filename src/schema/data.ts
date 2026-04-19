@@ -1,4 +1,5 @@
 import type { Locale } from '@/i18n/consts';
+import type { KeysMatching } from '@/libs/types';
 
 export type TournamentDetails = {
   year: number;
@@ -173,11 +174,7 @@ export type GameProps = {
   round?: number;
 };
 
-export type GamePropsKey = keyof GameProps;
-export type GamePropsArrayKey = {
-  [K in GamePropsKey]-?: Extract<GameProps[K], any[]> extends never ? never : K;
-}[GamePropsKey];
-
+export type GamePropsArrayKey = KeysMatching<GameProps, string[]>;
 export type StatsMedals = [gold: string[], silver: string[], bronze: string[]];
 
 export type StatsPlayerGame = {
@@ -245,17 +242,17 @@ export type StatsCountry = {
 export type StatsCategoryPlayer = {
   id: string;
   name: string;
-  rank: string
-  country?: string
+  rank: string;
+  country?: string;
   place: number | '?';
-}
+};
 
 export type StatsCategory = {
   category: string;
   tournaments: {
     year: number;
     results: StatsCategoryPlayer[];
-  }[]
+  }[];
 };
 
 export type Stats = {

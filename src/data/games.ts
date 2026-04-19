@@ -1,5 +1,5 @@
 import EVENT_CONFIG from '@event/config';
-import type { Game, GamePlayer, GameProps, GamePropsArrayKey, GamePropsKey } from '@/schema/data';
+import type { Game, GamePlayer, GameProps, GamePropsArrayKey } from '@/schema/data';
 
 const ARRAY_PROPS: GamePropsArrayKey[] = ['yt'];
 export const GAME_REGEX =
