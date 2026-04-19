@@ -7,6 +7,7 @@ import { formatDate } from '@/libs/dates';
 import { Details } from '@/components/Details';
 import { ExternalLink } from '@/components/ui/ExternalLink';
 import { H2 } from '@/components/ui/H2';
+import { Markdown } from '@/components/ui/Markdown';
 
 type TournamentDetailsProps = {
   tournament: Tournament;
@@ -42,6 +43,12 @@ export function TournamentDetails({ tournament, translations }: TournamentDetail
     details[t('details.website')] = (
       <ExternalLink title={t('details.goToWebsite', String(tournament.year))} url={tournament.website} />
     );
+  }
+
+  if (tournament.notes) {
+    const content = typeof tournament.notes === 'string' ? tournament.notes : tournament.notes[translations.locale];
+
+    details[t('stage.notes')] = <Markdown content={content} inline={true} />;
   }
 
   if (tournament.referee) {

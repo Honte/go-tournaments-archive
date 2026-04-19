@@ -66,5 +66,5 @@ export type InputTournament = {
   top?: string[];
   stages: InputStage[];
   displayReversed?: boolean;
-  description?: string | Record<string, string>;
+  notes?: string | Record<string, string>;
 };
