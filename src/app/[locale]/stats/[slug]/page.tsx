@@ -9,7 +9,9 @@ import { jsxJoin } from '@/libs/join';
 import { Achievements } from '@/components/stats/Achievements';
 import { Events } from '@/components/stats/Events';
 import { Opponents } from '@/components/stats/Opponents';
+import { Content } from '@/components/ui/Content';
 import { CountryLink } from '@/components/ui/CountryLink';
+import { Title } from '@/components/ui/Title';
 
 type PageProps = {
   params: Promise<{
@@ -43,18 +45,20 @@ export default async function PlayerStatsPage({ params }: PageProps) {
   }
 
   return (
-    <>
-      <h1 className="text-4xl text-center font-bold">{player.name}</h1>
-      {EVENT_CONFIG.showCountry && (
-        <h2 className="text-xl text-center font-bold">
-          {jsxJoin(
-            Array.from(player.countries)
-              .filter(Boolean)
-              .map((country) => <CountryLink key={country} translations={translations} code={country} full={true} />),
-            ', '
-          )}
-        </h2>
-      )}
+    <Content>
+      <header className="flex flex-col">
+        <Title>{player.name}</Title>
+        {EVENT_CONFIG.showCountry && (
+          <h2 className="text-xl text-center font-bold">
+            {jsxJoin(
+              Array.from(player.countries)
+                .filter(Boolean)
+                .map((country) => <CountryLink key={country} translations={translations} code={country} full={true} />),
+              ', '
+            )}
+          </h2>
+        )}
+      </header>
 
       <Achievements player={player} translations={translations} />
 
@@ -62,7 +66,7 @@ export default async function PlayerStatsPage({ params }: PageProps) {
         <Events player={player} translations={translations} />
         <Opponents opponents={opponents} translations={translations} />
       </div>
-    </>
+    </Content>
   );
 }
 

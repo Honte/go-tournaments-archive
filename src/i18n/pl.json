@@ -11,6 +11,8 @@
     "playerStatsDescription": "Statystyki gracza %{0} we wszystkich rozegranych turniejach w Go",
     "countryStatsTitle": "%{0} - Statystyki",
     "countryStatsDescription": "Statystyki kraju %{0} we wszystkich turniejach Go",
+    "categoryStatsTitle": "%{0} - Statystyki",
+    "categoryStatsDescription": "Statystyki %{0}",
     "lastUpdated": "Ostatnia aktualizacja: %{0}",
     "github": "Zobacz na GitHub: %{0}"
   },

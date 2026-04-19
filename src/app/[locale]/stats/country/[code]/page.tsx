@@ -9,6 +9,8 @@ import { CountryAchievements } from '@/components/stats/CountryAchievements';
 import { CountryEvents } from '@/components/stats/CountryEvents';
 import { CountryOpponents } from '@/components/stats/CountryOpponents';
 import { CountryPlayers } from '@/components/stats/CountryPlayers';
+import { Content } from '@/components/ui/Content';
+import { Title } from '@/components/ui/Title';
 
 type PageProps = {
   params: Promise<{
@@ -47,16 +49,15 @@ export default async function CountryStatsPage({ params }: PageProps) {
   }
 
   return (
-    <>
-      <h1 className="text-4xl text-center font-bold">{name}</h1>
-
+    <Content>
+      <Title>{name}</Title>
       <div className="flex flex-col gap-2">
         <CountryAchievements country={country} translations={translations} />
         <CountryPlayers country={country} translations={translations} />
         <CountryEvents country={country} translations={translations} />
         <CountryOpponents country={country} translations={translations} />
       </div>
-    </>
+    </Content>
   );
 }
 
