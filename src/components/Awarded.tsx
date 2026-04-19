@@ -45,7 +45,7 @@ export function Awarded({ tournament, translations }: AwardedProps) {
 function getAwarded(tournament: Tournament) {
   const { top, players, categoriesTop } = tournament;
 
-  if (EVENT_CONFIG.showCategories && categoriesTop) {
+  if (EVENT_CONFIG.categories?.length && categoriesTop) {
     return Object.entries(categoriesTop).map(([category, top]) => ({
       category,
       awarded: top.map((ids) => ids.split(',').map((id) => players[id])),

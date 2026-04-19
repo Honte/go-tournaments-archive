@@ -91,7 +91,7 @@ export function calculateStats(tournaments: Tournament[]): Stats {
       }
     }
 
-    if (EVENT_CONFIG.showCategories && EVENT_CONFIG.categories?.length) {
+    if (EVENT_CONFIG.categories?.length) {
       for (const category of EVENT_CONFIG.categories) {
         upsertMedals(year, tournamentPlayers, categoriesTop?.[category], category);
       }

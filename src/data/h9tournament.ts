@@ -224,8 +224,9 @@ export async function loadH9Tournament({
     }
   }
 
-  if (EVENT_CONFIG.showCategories && EVENT_CONFIG.categories?.length && !tournamentDetails.categoriesTop) {
+  if (EVENT_CONFIG.categories?.length) {
     const top: Record<string, string[][]> = {};
+    const target = (tournamentDetails.categoriesTop ||= {});
 
     for (const player of table) {
       for (const category of EVENT_CONFIG.categories) {
@@ -239,7 +240,11 @@ export async function loadH9Tournament({
       }
     }
 
-    tournamentDetails.categoriesTop = mapValues(top, (cat) => cat.map((pl) => pl.join(',')));
+    for (const category in top) {
+      if (top[category].length && !target[category]) {
+        target[category] = top[category].map((pl) => pl.join(','));
+      }
+    }
   } else if (!tournamentDetails.top.length) {
     const winners: string[][] = [];
     for (const player of table) {

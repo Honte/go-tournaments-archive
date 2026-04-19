@@ -21,7 +21,7 @@ export function Achievements({ player, translations }: AchievementsProps) {
 
   let hasMedals = false;
   for (const [index, medal] of MEDALS.entries()) {
-    if (EVENT_CONFIG.showCategories && EVENT_CONFIG.categories?.length) {
+    if (EVENT_CONFIG.categories?.length) {
       for (const category of EVENT_CONFIG.categories) {
         const achievements = player.categoriesMedals[category][index];
 

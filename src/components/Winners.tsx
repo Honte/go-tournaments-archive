@@ -17,7 +17,7 @@ export function Winners({ tournaments, translations }: WinnersProps) {
   return (
     <div>
       <H1>{t('winners.title')}</H1>
-      {EVENT_CONFIG.showCategories ? (
+      {EVENT_CONFIG.categories?.length ? (
         <CategoryWinners tournaments={tournaments} translations={translations} />
       ) : (
         <TotalWinners tournaments={tournaments} translations={translations} />
