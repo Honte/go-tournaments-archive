@@ -3,7 +3,7 @@ import type { Locale } from '@/i18n/consts';
 export type TournamentDetails = {
   year: number;
   name?: string | Record<Locale, string>;
-  description?: string | Record<Locale, string>;
+  notes?: string | Record<Locale, string>;
   location: string;
   country?: string;
   start?: string;

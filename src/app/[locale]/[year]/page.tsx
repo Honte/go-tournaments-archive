@@ -5,6 +5,7 @@ import type { Locale } from '@/i18n/consts';
 import { SUPPORTED_LOCALES, loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
 import { getStageName } from '@/libs/stage';
+import { getTournamentDescription } from '@/data/description';
 import { Awarded } from '@/components/Awarded';
 import { GamesList } from '@/components/GamesList';
 import { StageDetails } from '@/components/StageDetails';
@@ -58,6 +59,7 @@ export default async function Edition(props: PageProps) {
   const translations = await loadTranslations(locale);
   const tournament = await getTournament(Number(year));
   const years = await getAvailableTournaments();
+  const description = await getTournamentDescription(year, locale);
 
   if (!tournament) {
     return notFound();
@@ -75,7 +77,7 @@ export default async function Edition(props: PageProps) {
         <Awarded tournament={tournament} translations={translations} />
       </div>
 
-      <TournamentDescription tournament={tournament} translations={translations} />
+      <TournamentDescription content={description} />
 
       {stagesToDisplay.map((stage, index) => (
         <div key={index} className="my-4">
