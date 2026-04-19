@@ -86,6 +86,8 @@
     "attended": "Udziałów",
     "player": "Gracz",
     "players": "Graczy",
+    "surePlayers": "Pewnych graczy",
+    "unsurePlayers": "Potencjalnych graczy",
     "best": "Najwyżej",
     "bestPlace": "Najwyższe miejsce",
     "games": "Rozegrane gry",
@@ -121,6 +123,7 @@
   "stats": {
     "goToAllPlayersStats": "Zobacz pełne statystyki",
     "goToAllCountriesStats": "Zobacz pełne statystyki krajów",
+    "summary": "Podsumowanie",
     "events": "Podsumowanie udziałów",
     "players": "Podsumowanie graczy",
     "opponents": "Podsumowanie przeciwników",

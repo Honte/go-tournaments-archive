@@ -1,4 +1,4 @@
-import { type StatsOpponent, StatsPlayer } from '@/schema/data';
+import { type StatsOpponent } from '@/schema/data';
 import { calculateStats } from '@/data/stats';
 import { loadTournaments } from './load';
 

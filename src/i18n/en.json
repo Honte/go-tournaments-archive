@@ -86,6 +86,8 @@
     "attended": "Participated",
     "player": "Player",
     "players": "Players",
+    "surePlayers": "Sure players",
+    "unsurePlayers": "Unsure players",
     "best": "Best",
     "bestPlace": "Best place",
     "games": "Games played",
@@ -121,6 +123,7 @@
   "stats": {
     "goToAllPlayersStats": "See full stats",
     "goToAllCountriesStats": "See full stats by country",
+    "summary": "Summary",
     "events": "Participation summary",
     "players": "Players summary",
     "opponents": "Opponents summary",
