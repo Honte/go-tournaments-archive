@@ -6,6 +6,8 @@ import type { Locale } from '@/i18n/consts';
 import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
 import { AllCountriesStats } from '@/components/AllCountriesStats';
+import { Content } from '@/components/ui/Content';
+import { Title } from '@/components/ui/Title';
 
 type PageProps = {
   params: Promise<{
@@ -37,9 +39,9 @@ export default async function Stats({ params }: PageProps) {
   const t = getTranslator(translations);
 
   return (
-    <>
-      <h1 className="text-4xl text-center font-bold mb-4">{t('site.allTimeStatsByCountryTitle')}</h1>
+    <Content>
+      <Title>{t('site.allTimeStatsByCountryTitle')}</Title>
       <AllCountriesStats countries={countries} translations={translations} />
-    </>
+    </Content>
   );
 }

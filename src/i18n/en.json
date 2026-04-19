@@ -11,6 +11,8 @@
     "playerStatsDescription": "Participation statistics of %{0} in all tournaments",
     "countryStatsTitle": "%{0} - Stats",
     "countryStatsDescription": "All-time statistics of %{0} in all tournaments",
+    "categoryStatsTitle": "%{0} - Stats",
+    "categoryStatsDescription": "%{0} statistics",
     "lastUpdated": "Last updated: %{0}",
     "github": "Contribute on GitHub: %{0}"
   },
