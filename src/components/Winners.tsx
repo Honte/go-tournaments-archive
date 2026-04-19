@@ -3,7 +3,7 @@ import type { Tournament } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { WinnersTable } from '@/components/WinnersTable';
-import { CategoryLink } from '@/components/ui/CategoryLink';
+import { CategoryLink } from '@/components/category/CategoryLink';
 import { H1 } from '@/components/ui/H1';
 import { H2 } from '@/components/ui/H2';
 
