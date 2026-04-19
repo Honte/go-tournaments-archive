@@ -6,7 +6,6 @@ export type EventConfig = {
   defaultLocale: Locale;
   defaultCountry?: string;
   showCountry?: boolean;
-  showCategories?: boolean;
   showBestPlace?: boolean;
   generatePngs?: boolean;
   generateSvgs?: boolean;
