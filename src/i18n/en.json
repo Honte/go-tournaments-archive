@@ -86,8 +86,6 @@
     "attended": "Participated",
     "player": "Player",
     "players": "Players",
-    "surePlayers": "Sure players",
-    "unsurePlayers": "Unsure players",
     "best": "Best",
     "bestPlace": "Best place",
     "games": "Games played",
@@ -131,6 +129,7 @@
     "countries": "Medal standings",
     "attendants": "Top %{0} attendants",
     "achievements": "Achievements",
+    "includeUnsurePlayers": "Include unconfirmed players",
     "total": {
       "title": "Archive in numbers",
       "tournaments": "Events",

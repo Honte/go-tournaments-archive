@@ -86,8 +86,6 @@
     "attended": "Udziałów",
     "player": "Gracz",
     "players": "Graczy",
-    "surePlayers": "Pewnych graczy",
-    "unsurePlayers": "Potencjalnych graczy",
     "best": "Najwyżej",
     "bestPlace": "Najwyższe miejsce",
     "games": "Rozegrane gry",
@@ -131,6 +129,7 @@
     "countries": "Klasyfikacja medalowa",
     "attendants": "Top %{0} uczestników",
     "achievements": "Osiągnięcia",
+    "includeUnsurePlayers": "Uwzględnij niepewnych graczy",
     "total": {
       "title": "Archiwum w liczbach",
       "tournaments": "Wydarzeń",
