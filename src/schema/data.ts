@@ -127,6 +127,7 @@ export type TableResult = {
   won: string[];
   lost: string[];
   breakers: Record<MandatoryBreakers, number> & Record<string, number>;
+  categories?: Record<string, number | '?'>;
 };
 
 export type TablePlayerGame = {
@@ -241,11 +242,28 @@ export type StatsCountry = {
   totalWon: number;
 };
 
+export type StatsCategoryPlayer = {
+  id: string;
+  name: string;
+  rank: string
+  country?: string
+  place: number | '?';
+}
+
+export type StatsCategory = {
+  category: string;
+  tournaments: {
+    year: number;
+    results: StatsCategoryPlayer[];
+  }[]
+};
+
 export type Stats = {
   summary: StatsSummary;
   games: Record<string, Game>;
   players: Record<string, StatsPlayer>;
   countries: Record<string, StatsCountry>;
+  categories: Record<string, StatsCategory>;
 };
 
 export type StatsSummary = {

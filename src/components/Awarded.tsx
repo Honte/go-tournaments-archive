@@ -1,5 +1,6 @@
 import EVENT_CONFIG from '@event/config';
 import type { Tournament } from '@/schema/data';
+import Link from 'next/link';
 import { Fragment } from 'react';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';

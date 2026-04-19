@@ -79,3 +79,7 @@ export async function getTopAttendants(limit: number) {
 export async function getTotalStats() {
   return stats.summary;
 }
+
+export async function getCategoryStats(category: string) {
+  return stats.categories[category];
+}
