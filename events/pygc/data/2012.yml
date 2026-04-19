@@ -26,3 +26,6 @@ stages:
       - wins
       - sodos
     findSharedPlaces: true
+    notes:
+      pl: Liga została przeprowadzona na planszach 13x13. Miejsca od 2-4 zostały przyznane w bezpośredniej konfrontacji podczas dogrywki.
+      en: Tournament was played on 13x13 boards. Places 2-4 were given in direct contact with the opponent during the game.

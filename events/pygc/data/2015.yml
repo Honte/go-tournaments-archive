@@ -22,8 +22,8 @@ stages:
     findSharedPlaces: true
   - type: tournament
     name:
-      pl: Baraż u16
-      en: u16 playoff
+      pl: Baraż U16
+      en: U16 playoff
     file: mpj2015u16playoff.txt
     komi: 6.5
     scoringColumns:
@@ -32,8 +32,5 @@ stages:
       - sosos
       - direct
     breakers:
-      - wins
-      - sos
-      - sosos
       - direct
     findSharedPlaces: true
