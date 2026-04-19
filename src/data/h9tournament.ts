@@ -87,7 +87,15 @@ export async function loadH9Tournament({
         continue;
       }
 
-      const value = Number(player.scores[i]);
+      const raw = player.scores[i];
+      const value = Number(raw);
+
+      if (EVENT_CONFIG.categories?.includes(breaker)) {
+        if (raw === '?' || value > 0) {
+          (tableEntry.categories ||= {})[breaker] = raw === '?' ? raw : value
+        }
+        continue
+      }
 
       if (isNaN(value)) {
         continue;
@@ -230,7 +238,7 @@ export async function loadH9Tournament({
 
     for (const player of table) {
       for (const category of EVENT_CONFIG.categories) {
-        const place = Number(player.breakers[category]);
+        const place = Number(player.categories?.[category]);
 
         if (!isNaN(place) && place <= 3) {
           const categoryTop = (top[category] ||= []);

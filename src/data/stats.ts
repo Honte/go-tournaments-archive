@@ -3,6 +3,8 @@ import type {
   Game,
   Player,
   Stats,
+  StatsCategory,
+  StatsCategoryPlayer,
   StatsCountry,
   StatsCountryResult,
   StatsMedals,
@@ -15,7 +17,17 @@ import type {
 export function calculateStats(tournaments: Tournament[]): Stats {
   const players: Record<string, StatsPlayer> = {};
   const countries: Record<string, StatsCountry> = {};
+  const categories: Record<string, StatsCategory> = {};
   const games: Record<string, Game> = {};
+
+  if (EVENT_CONFIG.categories?.length) {
+    for (const category of EVENT_CONFIG.categories) {
+      categories[category] = {
+        tournaments: [],
+        category,
+      };
+    }
+  }
 
   let playedGames = 0;
   let black = 0;
@@ -31,7 +43,7 @@ export function calculateStats(tournaments: Tournament[]): Stats {
 
   for (const tournament of tournaments) {
     const { year, players: tournamentPlayers, stages, top, games: tournamentGames, categoriesTop } = tournament;
-
+    const tournamentCategories: Record<string, StatsCategoryPlayer[]> = {};
     const tournamentPlayersMap: Record<string, StatsPlayer> = {
       BYE: players.BYE,
     };
@@ -67,6 +79,7 @@ export function calculateStats(tournaments: Tournament[]): Stats {
         }
 
         const country = tournamentPlayers[player.id].country;
+        const rank = tournamentPlayers[player.id]?.rank ?? '';
         const globalPlayer = tournamentPlayersMap[player.id];
         const result: StatsPlayerResult = {
           year,
@@ -75,7 +88,7 @@ export function calculateStats(tournaments: Tournament[]): Stats {
           finalPlace: player.place > (stage.promoted ?? 0) ? player.place + (stage.placeOffset ?? 0) : Infinity,
           games: playerGames,
           won,
-          rank: tournamentPlayers[player.id]?.rank ?? '',
+          rank,
           country,
         };
 
@@ -88,12 +101,33 @@ export function calculateStats(tournaments: Tournament[]): Stats {
             name: globalPlayer.name,
           });
         }
+
+        if (EVENT_CONFIG.categories?.length) {
+          for (const category of EVENT_CONFIG.categories) {
+            if ('categories' in player && player?.categories?.[category]) {
+              (tournamentCategories[category] ||= []).push({
+                id: globalPlayer.id,
+                name: globalPlayer.name,
+                rank,
+                country,
+                place: player.categories[category],
+              });
+            }
+          }
+        }
       }
     }
 
     if (EVENT_CONFIG.categories?.length) {
       for (const category of EVENT_CONFIG.categories) {
         upsertMedals(year, tournamentPlayers, categoriesTop?.[category], category);
+      }
+
+      for (const category in tournamentCategories) {
+        categories[category].tournaments.push({
+          year,
+          results: tournamentCategories[category],
+        });
       }
     } else {
       upsertMedals(year, tournamentPlayers, top);
@@ -194,6 +228,7 @@ export function calculateStats(tournaments: Tournament[]): Stats {
     games,
     players,
     countries,
+    categories,
   };
 
   function upsertPlayer(player: Player | string): StatsPlayer {
