@@ -1,6 +1,7 @@
 {
   "site": {
     "name": "Archiwum Pucharu Premiera Korei w Go",
+    "acronym": "KPMC",
     "description": "Archiwum wyników wszystkich edycji Pucharu Premiera Korei w\u00A0Go",
     "yearDescription": "Wyniki pucharu z roku %{0}",
     "allTimeStatsDescription": "Lista wszech czasów wszystkich uczestników Pucharu Premiera Korei w Go",

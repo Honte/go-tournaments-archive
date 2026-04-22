@@ -1,6 +1,7 @@
 {
   "site": {
     "name": "Polish Youth Championships Archive",
+    "acronym": "PYGC",
     "description": "Archive of all Polish Youth Go Championships tournaments",
     "yearDescription": "Results of PYGC %{0}",
     "allTimeStatsDescription": "All-time statistics of all Polish Youth Go Championships participants",

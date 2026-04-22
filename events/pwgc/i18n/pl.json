@@ -1,6 +1,7 @@
 {
   "site": {
     "name": "Archiwum Mistrzostw Polski kobiet w Go",
+    "acronym": "MPK",
     "description": "Archiwum wyników wszystkich edycji Mistrzostw Polski kobiet w Go",
     "yearDescription": "Wyniki mistrzostw z roku %{0}",
     "allTimeStatsDescription": "Lista wszech czasów wszystkich uczestniczek Mistrzostw Polski kobiet w Go",

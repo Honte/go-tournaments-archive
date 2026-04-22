@@ -1,6 +1,7 @@
 {
   "site": {
     "name": "Archiwum Mistrzostw Polski w\u00A0Go",
+    "acronym": "MP",
     "description": "Archiwum wyników wszystkich edycji mistrzostw Polski w Go",
     "yearDescription": "Wyniki mistrzostw z roku %{0}",
     "allTimeStatsDescription": "Lista wszech czasów wszystkich uczestników mistrzostw Polski w Go",
