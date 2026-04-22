@@ -7,6 +7,7 @@ const EVENT_CONFIG: EventConfig = {
   defaultCountry: 'PL',
   showBestPlace: true,
   generateSvgs: true,
+  generateJpgs: true,
 };
 
 export default EVENT_CONFIG;
