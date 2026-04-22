@@ -29,7 +29,7 @@ export function Game({ className, game, players, translations, wide }: GameProps
     >
       {hasSgf && (
         <img
-          src={game.props.svg}
+          src={game.props.jpg ?? game.props.svg}
           alt={t('game.preview', `${home.name} vs ${away.name}`)}
           className="size-20"
           loading="lazy"

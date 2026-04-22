@@ -88,6 +88,10 @@ export function parseGame(string: string, id: string, strict = true): Game {
         if (EVENT_CONFIG.generateSvgs) {
           map.svg = value.replace('.sgf', '.svg');
         }
+
+        if (EVENT_CONFIG.generateJpgs) {
+          map.jpg = value.replace('.sgf', '.jpg');
+        }
       }
 
       if (ARRAY_PROPS.includes(type as GamePropsArrayKey) && value.indexOf(',') > 0) {

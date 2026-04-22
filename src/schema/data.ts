@@ -170,6 +170,7 @@ export type GameProps = {
   ogs?: string;
   sgf?: string;
   svg?: string;
+  jpg?: string;
   png?: string;
   round?: number;
 };

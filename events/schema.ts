@@ -7,6 +7,7 @@ export type EventConfig = {
   defaultCountry?: string;
   showCountry?: boolean;
   showBestPlace?: boolean;
+  generateJpgs?: boolean;
   generatePngs?: boolean;
   generateSvgs?: boolean;
   hideGamesWithoutSgf?: boolean;
