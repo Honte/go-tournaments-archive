@@ -2,7 +2,7 @@ website: https://www.nihonkiin.or.jp/event/amakisen/worldama/36/index.html
 stages:
   - type: tournament
     file: wagc2015.txt
-    time: 60min + 3x30s japanese    
+    time: 60min + 3x30s japanese
     komi: 6.5
     scoringColumns:
       - wins
@@ -14,3 +14,60 @@ stages:
       - sos
       - sosos
     findSharedPlaces: true
+    games:
+      - 1-4 1:B+R round:7 sgf:2015/7-ChanghunKim-ChiHinChan.sgf
+      - 1-7 1:B+10.5 round:8 sgf:2015/8-ChanghunKim-ArtemKachanovskyi.sgf
+      - 2-1 1:W+R round:4 sgf:2015/4-AohuaHu-ChanghunKim.sgf
+      - 2-3 2:B+R round:7 sgf:2015/7-AohuaHu-JyunfuLai.sgf
+      - 2-5 2:B+R round:8 sgf:2015/8-AohuaHu-SatoshiHiraoka.sgf
+      - 2-6 2:B+9.5 round:6 sgf:2015/6-AohuaHu-CornelBurzo.sgf
+      - 3-1 1:W+R round:5 sgf:2015/5-JyunFuLai-ChanghunKim.sgf
+      - 3-12 3:B+27.5 round:6 sgf:2015/6-JyunFuLai-RitBenjarit.sgf
+      - 4-10 4:B+11.5 round:5 sgf:2015/5-ChiHinChan-DanielKo.sgf
+      - 5-3 3:W+1.5 round:4 sgf:2015/4-SatoshiHiraoka-JyunfuLai.sgf
+      - 5-4 4:W+3.5 round:6 sgf:2015/6-SatoshiHiraoka-ChiHinChan.sgf
+      - 5-26 5:B+R round:3 sgf:2015/3-SatoshiHiraoka-BenjaminPapazoglou.sgf
+      - 6-3 3:W+0.5 round:8 sgf:2015/8-CornelBurzo-JyunfuLai.sgf
+      - 6-27 6:B+R round:3 sgf:2015/3-CornelBurzo-LeonMatoh.sgf
+      - 7-5 5:W+R round:5 sgf:2015/5-ArtemKachanovskyi-SatoshiHiraoka.sgf
+      - 7-13 7:B+R round:6 sgf:2015/6-ArtemKachanovskyi-KoichiroHabu.sgf
+      - 8-4 4:W+R round:8 sgf:2015/8-JuyongKoh-ChiHinChan.sgf
+      - 8-30 8:B+T round:4 sgf:2015/4-JuyongKoh-DiegoRodriguez.sgf
+      - 9-11 9:B+R round:4 sgf:2015/4-PalBalogh-FuKangChang.sgf
+      - 9-19 9:B+R round:8 sgf:2015/8-PalBalogh-OndrejSilt.sgf
+      - 11-5 5:W+R round:7 sgf:2015/7-FuKangChang-SatoshiHiraoka.sgf
+      - 11-24 11:B+R round:5 sgf:2015/5-FuKangChang-UffeRasmussen.sgf
+      - 11-35 11:B+R round:2 sgf:2015/2-FuKangChang-DesmondCann.sgf
+      - 12-14 12:B+0.5 round:8 sgf:2015/8-RitBenjarit-DusanMitic.sgf
+      - 13-8 8:W+R round:1 sgf:2015/1-KoichiroHabu-JuyongKoh.sgf
+      - 14-1 1:W+R round:6 sgf:2015/6-DusanMitic-ChanghunKim.sgf
+      - 14-28 14:B+R round:4 sgf:2015/4-DusanMitic-KhanhBinhDo.sgf
+      - 15-12 12:W+9.5 round:3 sgf:2015/3-RitBenjarit-TimurSankin.sgf
+      - 15-29 15:B+8.5 round:7 sgf:2015/7-TimurSankin-RaphaelShin.sgf
+      - 17-10 10:W+2.5 round:8 sgf:2015/8-JieHuiKwa-DanielKo.sgf
+      - 17-23 17:B+R round:2 sgf:2015/2-JieHuiKwa-KlasAlmrot.sgf
+      - 18-2 2:W+T round:5 sgf:2015/5-JohannesObenaus-AohuaHu.sgf
+      - 18-32 18:B+25.50 round:2 sgf:2015/2-JohannesObenaus-OyutbilegTsendjav.sgf
+      - 19-24 19:B+R round:7 sgf:2015/7-OndrejSilt-UffeRasmussen.sgf
+      - 19-39 19:B+34.50 round:2 sgf:2015/2-OndrejSilt-AndrewLewisDavies.sgf
+      - 20-12 12:W+1.5 round:7 sgf:2015/7-InHangSam-RitBenjarit.sgf
+      - 20-29 20:B+R round:4 sgf:2015/4-InHangSam-RaphaelShin.sgf
+      - 21-34 21:B+R round:1 sgf:2015/1-MerlijnKuin-ThomasConnor.sgf
+      - 22-35 22:B+R round:5 sgf:2015/5-VesaLaatikainen-DesmondCann.sgf
+      - 25-10 10:W+R round:3 sgf:2015/3-OferZivony-DanielKo.sgf
+      - 28-29 29:W+2.5 round:6 sgf:2015/6-KhanhBinhDo-RaphaelShin.sgf
+      - 31-16 16:W+R round:3 sgf:2015/3-MatiasPankoke-RafifShidqiFitrah.sgf
+      - 33-37 33:B+R round:2 sgf:2015/2-JonasEgeberg-JoanPons.sgf
+      - 34-9 9:W+R round:6 sgf:2015/6-ThomasConnor-PalBalogh.sgf
+      - 38-17 17:W+R round:7 sgf:2015/7-DimitrisRegginos-JieHuiKwa.sgf
+      - 38-46 38:B+11.5 round:1 sgf:2015/1-DimitrisRegginos-HayriKilic.sgf
+      - 40-36 36:W+1.5 round:1 sgf:2015/1-ErnestasRomeika-SebastienKoch.sgf
+      - 41-50 41:B+T round:3 sgf:2015/3-AlexandrSuponev-RudolfCaioPetersen.sgf
+      - 43-42 43:B+R round:2 sgf:2015/2-LuisCajiaoCampos-DavidPollitzer.sgf
+      - 45-47 45:B+7.5 round:1 sgf:2015/1-JamesHutchinson-BahadurTahirbayov.sgf
+      - 46-44 44:W+1.5 round:5 sgf:2015/5-HayriKilic-JuQiangChen.sgf
+      - 49-55 49:B+1.5 round:3 sgf:2015/3-CarlosLeonRiosJoels-AlexanderHuber.sgf
+      - 51-57 51:B+R round:1 sgf:2015/1-PedroCarmona-KarenMikayelyan.sgf
+      - 52-53 53:W+R round:2 sgf:2015/2-EnRuLi-JeremieHertz.sgf
+      - 54-48 48:W+R round:1 sgf:2015/1-DrazenOdobasic-StefanSabo.sgf
+      - 56-55 55:W+67.5 round:4 sgf:2015/4-SandeepDave-AlexanderHuber.sgf

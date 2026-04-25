@@ -11,3 +11,14 @@ stages:
       - sos
       - top10
     findSharedPlaces: true
+    games:
+      - 1-5 1:B+R round:7 sgf:2023/r7-JeongseonKim-AlanHuang.sgf
+      - 5-2 2:W round:2 sgf:2023/r2-AlanHuang-ChukunYang.sgf
+      - 9-6 6:W+4.5 round:6 sgf:2023/r6-ElianIoanGrigoriu-PongsakarnSornarra.sgf
+      - 15-8 8:W+Resign round:6 sgf:2023/r6-AmirFragman-JieHuiKwa.sgf
+      - 17-29 17:B+R round:2 sgf:2023/r2-AndeasGoetzfried-MirtaMedak.sgf
+      - 29-12 12:W+0.50 round:1 sgf:2023/r1-MirtaMedak-JanneKosso.sgf
+      - 29-34 34:W+R round:4 sgf:2023/r4-MirtaMedak-BramVandenbon.sgf
+      - 37-29 29:W+Resign round:7 sgf:2023/r7-PetrCipra-MirtaMedak.sgf
+      - 39-29 29:W+8.50 round:3 sgf:2023/r3-MarioMercadoSanchez-MirtaMedak.sgf
+      - 41-36 36:W+R round:6 sgf:2023/r6-RenateReisenegger-TimHunt.sgf

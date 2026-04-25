@@ -26,7 +26,7 @@
     "sgf:fix:pgc": "cross-env EVENT=pgc tsx tools/fix.ts",
     "sgf:match:pgc": "cross-env EVENT=pgc tsx tools/sgfMatcher/index.ts",
     "sgf:match:wagc": "cross-env EVENT=wagc tsx tools/sgfMatcher/index.ts",
-    "sgf:match:pwgc": "cross-env EVENT=pwgc tsx tools/sgfMatcher/index.ts",
+    "sgf:match:kpmc": "cross-env EVENT=kpmc tsx tools/sgfMatcher/index.ts",
     "fmt": "prettier --check .",
     "fmt:write": "prettier --write ."
   },

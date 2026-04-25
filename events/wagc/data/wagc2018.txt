@@ -52,7 +52,7 @@
 40 Connell Andre              3d ZA  XXXX  4    22   218  44-     39-     35-     0+      45-     53+     59+     50+      |17362246
 41 Metta Carlo                4d IT  Pisa  3    37   268  17+     47+     2-      27-     6-      42+     19-     29-      |14713996
 42 Vazquez Oscar              5d ES  Nam   3    33   266  32+     9-      6-      34+     29-     41-     21-     55+      |15633673
-43 Matoh Leopold              5d SI  NoMe  3    33   256  13-     18-     36+     17-     47+     30-     49+     27-      |10398608
+43 Matoh Leon                 5d SI  NoMe  3    33   256  13-     18-     36+     17-     47+     30-     49+     27-      |10398608
 44 Sabirovas Tomas            1k LT  Viln  3    33   225  40+     38-     51+     52+     20-     7-      33-     31-      |16586152
 45 Johansson Kim              2d SE  Vaes  3    32   224  27-     31-     8-      36-     40+     54+     52+     37-      |15313947
 46 Burgos_Andrade Juan_Felipe 3d CO  XXXX  3    31   256  59+     33+     5-      20-     24-     55+     28-     34-      |16533792
