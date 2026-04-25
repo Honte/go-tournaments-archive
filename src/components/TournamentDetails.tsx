@@ -59,10 +59,30 @@ export function TournamentDetails({ tournament, translations }: TournamentDetail
     details[t('details.referee')] = tournament.referee;
   }
 
+  const totalSgfs = countSgfs(tournament);
+
+  if (totalSgfs > 0) {
+    details[t('stats.total.sgfs')] = totalSgfs;
+  }
+
   return (
     <div className="flex-1">
       <H2>{t('details.header')}</H2>
       <Details details={details} />
     </div>
   );
+}
+
+function countSgfs(tournament: Tournament) {
+  let sgfs = 0;
+
+  for (const id in tournament.games) {
+    const game = tournament.games[id];
+
+    if (game.props.sgf) {
+      sgfs++;
+    }
+  }
+
+  return sgfs;
 }
