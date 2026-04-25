@@ -138,12 +138,12 @@ export function SideNavigation({ translations, tournaments }: SideNavigationProp
           open ? 'translate-x-0' : '-translate-x-full'
         )}
       >
-        <nav className="flex-1 overflow-y-auto p-4">
+        <nav className="flex-1 overflow-y-auto p-2">
           <div className="flex flex-col gap-2 overflow-y-auto">
             {links.map((group) => (
               <div key={group.key}>
                 {group.label && (
-                  <h3 className="text-xs uppercase tracking-wide text-event-dark mt-2 mb-1 first:mt-0">
+                  <h3 className="text-xs uppercase tracking-wide text-event-dark mt-2 mb-1 first:mt-0 pl-2">
                     {group.label}
                   </h3>
                 )}
@@ -159,7 +159,7 @@ export function SideNavigation({ translations, tournaments }: SideNavigationProp
                         prefetch={false}
                         onClick={closeMenu}
                         className={clsx(
-                          'group block p-1 text-event-primary font-semibold underline hover:text-event-hover hover:bg-event-soft'
+                          'group block py-1 px-2 text-event-primary font-semibold underline hover:text-event-hover hover:bg-gray-300 rounded-sm'
                         )}
                       >
                         {link.label}
