@@ -11,6 +11,7 @@ export type InputBaseStage = {
   breakers?: Breaker[];
   promoted?: number;
   placeOffset?: number;
+  category?: string;
 };
 
 export type InputLeagueStage = InputBaseStage & {
