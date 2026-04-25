@@ -3,6 +3,7 @@ import type { TournamentItem } from '@/schema/data';
 import Link from 'next/link';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
+import { getSitemap } from '@/data/sitemap';
 import { LocaleNavigation } from '@/components/navigation/LocaleNavigation';
 import { SideNavigation } from '@/components/navigation/SideNavigation';
 
@@ -14,11 +15,18 @@ type TopBarProps = {
 export function Header({ translations, tournaments }: TopBarProps) {
   const t = getTranslator(translations);
   const locale = translations.locale;
+  const sitemap = getSitemap(tournaments, translations);
 
   return (
     <header className="shrink-0 z-40 bg-event-dark text-event-light">
       <div className="container mx-auto max-w-(--breakpoint-2xl) flex h-12 items-center gap-3 px-4">
-        <SideNavigation translations={translations} tournaments={tournaments} />
+        <SideNavigation
+          sitemap={sitemap}
+          strings={{
+            open: t('navigation.open'),
+            close: t('navigation.close'),
+          }}
+        />
         <Link
           href={`/${locale}`}
           className="flex items-center gap-2 md:gap-3 min-w-0"
