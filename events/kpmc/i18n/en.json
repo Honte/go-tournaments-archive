@@ -1,6 +1,7 @@
 {
   "site": {
     "name": "Korea Prime Minister Cup Archive",
+    "acronym": "KPMC",
     "description": "Archive of all Korea Prime Minister Cup tournaments",
     "yearDescription": "Results of KPMC %{0}",
     "allTimeStatsDescription": "All-time statistics of all Korea Prime Minister Cup participants",

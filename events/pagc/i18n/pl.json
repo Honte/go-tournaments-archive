@@ -1,6 +1,7 @@
 {
   "site": {
     "name": "Archiwum akademickich Mistrzostw Polski w Go",
+    "acronym": "AMP",
     "description": "Archiwum wyników wszystkich edycji akademickich Mistrzostw Polski w Go",
     "yearDescription": "Wyniki mistrzostw z roku %{0}",
     "allTimeStatsDescription": "Lista wszech czasów wszystkich uczestników akademickich Mistrzostw Polski w Go",

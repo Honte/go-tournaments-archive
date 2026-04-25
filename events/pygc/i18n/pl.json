@@ -1,6 +1,7 @@
 {
   "site": {
     "name": "Archiwum Mistrzostw Polski Juniorów w Go",
+    "acronym": "MPJ",
     "description": "Archiwum wyników wszystkich edycji Mistrzostw Polski Juniorów w Go",
     "yearDescription": "Wyniki mistrzostw z roku %{0}",
     "allTimeStatsDescription": "Lista wszech czasów wszystkich uczestników Mistrzostw Polski Juniorów w Go",

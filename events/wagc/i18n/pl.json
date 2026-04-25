@@ -1,6 +1,7 @@
 {
   "site": {
     "name": "Archiwum Amatorskich Mistrzostw Świata w Go",
+    "acronym": "WAGC",
     "description": "Archiwum wyników wszystkich edycji amatorskich mistrzostw świata w\u00A0Go",
     "yearDescription": "Wyniki mistrzostw z roku %{0}",
     "allTimeStatsDescription": "Lista wszech czasów wszystkich uczestników amatorskich mistrzostw świata w Go",

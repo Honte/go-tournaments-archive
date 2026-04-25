@@ -39,9 +39,13 @@ export function TournamentDetails({ tournament, translations }: TournamentDetail
     details[t('details.end')] = formatDate(tournament.end, translations.locale);
   }
 
-  if (tournament.website) {
+  if (tournament.website?.length) {
     details[t('details.website')] = (
-      <ExternalLink title={t('details.goToWebsite', String(tournament.year))} url={tournament.website} />
+      <div className="flex flex-col">
+        {(Array.isArray(tournament.website) ? tournament.website : [tournament.website]).map((website) => (
+          <ExternalLink key={website} title={t('details.goToWebsite', String(tournament.year))} url={website} />
+        ))}
+      </div>
     );
   }
 
@@ -55,10 +59,30 @@ export function TournamentDetails({ tournament, translations }: TournamentDetail
     details[t('details.referee')] = tournament.referee;
   }
 
+  const totalSgfs = countSgfs(tournament);
+
+  if (totalSgfs > 0) {
+    details[t('stats.total.sgfs')] = totalSgfs;
+  }
+
   return (
     <div className="flex-1">
       <H2>{t('details.header')}</H2>
       <Details details={details} />
     </div>
   );
+}
+
+function countSgfs(tournament: Tournament) {
+  let sgfs = 0;
+
+  for (const id in tournament.games) {
+    const game = tournament.games[id];
+
+    if (game.props.sgf) {
+      sgfs++;
+    }
+  }
+
+  return sgfs;
 }

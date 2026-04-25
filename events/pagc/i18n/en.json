@@ -1,6 +1,7 @@
 {
   "site": {
     "name": "Polish Academic Go Championships Archive",
+    "acronym": "PAGC",
     "description": "Archive of all Polish Academic Go Championships tournaments",
     "yearDescription": "Results of PAGC %{0}",
     "allTimeStatsDescription": "All-time statistics of all Polish Academic Go Championships participants",

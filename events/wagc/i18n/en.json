@@ -1,6 +1,7 @@
 {
   "site": {
     "name": "World Amateur Go Championships Archive",
+    "acronym": "WAGC",
     "description": "Archive of all World Amateur Go Championships tournaments",
     "yearDescription": "Results of WAGC %{0}",
     "allTimeStatsDescription": "All-time statistics of all World Amateur Go Championships participants",

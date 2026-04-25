@@ -247,6 +247,16 @@ export async function loadH9Tournament({
       }
     }
 
+    if (stage.category && !top[stage.category]) {
+      const categoryTop = (top[stage.category] ||= []);
+
+      for (const player of table) {
+        if (player.place <= 3) {
+          (categoryTop[player.place - 1] ||= []).push(player.id);
+        }
+      }
+    }
+
     for (const category in top) {
       if (top[category].length && !target[category]) {
         target[category] = top[category].map((pl) => pl.join(','));

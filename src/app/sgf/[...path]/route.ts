@@ -2,13 +2,14 @@ import EVENT from '@event';
 import EVENT_CONFIG from '@event/config';
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { generateJpg } from '@tools/jpg';
 import { generatePng } from '@tools/png';
 import { cleanSgf } from '@tools/sgf';
 import { generateSvg } from '@tools/svg';
 import fg from 'fast-glob';
 import type { NextRequest } from 'next/server';
 
-const PNG_SIZE = 512;
+const THUMB_SIZE = 256;
 const SGF_DIR = `./events/${EVENT}/sgf`;
 
 type RouteProps = {
@@ -44,10 +45,19 @@ export async function GET(request: NextRequest, props: RouteProps) {
 
     if (details.ext === '.png') {
       const svg = await generateSvg(sgfPath);
-      const png = await generatePng(svg!, PNG_SIZE);
+      const png = await generatePng(svg!, THUMB_SIZE);
 
       return new Response(new Uint8Array(png), {
         headers: { 'Content-Type': 'image/png' },
+      });
+    }
+
+    if (details.ext === '.jpg') {
+      const svg = await generateSvg(sgfPath);
+      const jpg = await generateJpg(svg!, THUMB_SIZE);
+
+      return new Response(new Uint8Array(jpg), {
+        headers: { 'Content-Type': 'image/jpeg' },
       });
     }
 
@@ -87,6 +97,12 @@ export async function generateStaticParams() {
     if (EVENT_CONFIG.generatePngs) {
       output.push({
         path: [...details.dir.split(path.sep), `${details.name}.png`],
+      });
+    }
+
+    if (EVENT_CONFIG.generateJpgs) {
+      output.push({
+        path: [...details.dir.split(path.sep), `${details.name}.jpg`],
       });
     }
   }

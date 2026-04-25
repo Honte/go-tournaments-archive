@@ -1,6 +1,7 @@
 {
   "site": {
     "name": "Polish Women Go Championships Archive",
+    "acronym": "PWGC",
     "description": "Archive of all Polish Women Go Championships tournaments",
     "yearDescription": "Results of PWGC %{0}",
     "allTimeStatsDescription": "All-time statistics of all Polish Women Go Championships participants",

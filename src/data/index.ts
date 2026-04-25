@@ -13,6 +13,14 @@ export async function getTournament(year: number) {
   return tournaments.find((t) => t.year === year);
 }
 
+export async function getTournamentList() {
+  return tournaments.map((t) => ({
+    year: t.year,
+    location: t.location,
+    country: t.country,
+  }));
+}
+
 export async function getAvailableTournaments() {
   return tournaments.map((t) => t.year);
 }
