@@ -3,9 +3,11 @@
     "name": "Tournament Archive",
     "description": "Archive of all tournaments",
     "yearDescription": "Results of %{0}",
+    "allTimeStatsLink": "Participants",
     "allTimeStatsTitle": "All-time Table",
     "allTimeStatsDescription": "All-time statistics of all participants",
-    "allTimeStatsByCountryTitle": "All-time Table by Country",
+    "allTimeStatsByCountryLink": "Countries",
+    "allTimeStatsByCountryTitle": "All-Time Country Statistics",
     "allTimeStatsByCountryDescription": "All-time statistics of all countries taking part in the event",
     "playerStatsTitle": "%{0} - Stats",
     "playerStatsDescription": "Participation statistics of %{0} in all tournaments",
@@ -20,7 +22,12 @@
     "home": {
       "anchor": "Home page",
       "title": "Go to home page"
-    }
+    },
+    "open": "Open menu",
+    "close": "Close menu",
+    "archiveLabel": "%{0} Archive",
+    "categories": "Categories",
+    "tournaments": "Tournaments"
   },
   "details": {
     "header": "About",
@@ -48,8 +55,8 @@
     "komi": "Komi",
     "time": "Time",
     "final": "The Final",
-    "requiredWins": "%{0} won matches are required to win the final.",
-    "includePreviousWins": "Direct match from previous stage counts toward final score."
+    "requiredWins": "A player needs %{0} match wins to win the final.",
+    "includePreviousWins": "The direct match from the previous stage counts toward the final score."
   },
   "breakers": {
     "wins": "Wins",
@@ -83,7 +90,7 @@
     "round": "Round %{0}",
     "playoffs": "Play-Off",
     "events": "Events",
-    "attended": "Participated",
+    "attended": "Appearances",
     "player": "Player",
     "players": "Players",
     "best": "Best",
@@ -94,14 +101,14 @@
     "wonPercent": "% won"
   },
   "game": {
-    "resign": "Won by resign",
+    "resign": "Won by resignation",
     "time": "Won by time",
     "walkover": "Walkover",
     "sgf": "Download SGF",
     "ogs": "See the game's relay in the Online Go Server",
     "yt": "See the video broadcast of the game",
     "ai": "See the AI analysis of the game",
-    "preview": "Snapshot of board state at the end of game %{0}"
+    "preview": "Board position at the end of game %{0}"
   },
   "winners": {
     "title": "Medalists",
@@ -123,11 +130,11 @@
     "goToAllCountriesStats": "See full stats by country",
     "summary": "Summary",
     "events": "Participation summary",
-    "players": "Players summary",
-    "opponents": "Opponents summary",
+    "players": "Player summary",
+    "opponents": "Opponent summary",
     "medalists": "Medalists",
     "countries": "Medal standings",
-    "attendants": "Top %{0} attendants",
+    "attendants": "Top %{0} participants",
     "achievements": "Achievements",
     "includeUnsurePlayers": "Include unconfirmed players",
     "total": {
@@ -138,10 +145,10 @@
       "black": "% won by black",
       "resigned": "Won by resign",
       "timeout": "Won by time",
-      "sgfs": "With game record",
+      "sgfs": "Games with SGF records",
       "relays": "Relays on OGS",
-      "streams": "Video streamed",
-      "analysis": "Analyzed by AI"
+      "streams": "Games streamed",
+      "analysis": "AI analysis"
     }
   },
   "country": {

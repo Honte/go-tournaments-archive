@@ -28,6 +28,12 @@ export type TournamentDateSpan = {
   end: string;
 };
 
+export type TournamentItem = {
+  year: number;
+  location: string;
+  country?: string;
+}
+
 export type Stage = LeagueStage | LadderTableStage | FinalStage | RoundRobinTableStage;
 
 export enum Breaker {

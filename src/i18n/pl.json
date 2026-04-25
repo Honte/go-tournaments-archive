@@ -3,8 +3,10 @@
     "name": "Archiwum Turniejów Go",
     "description": "Archiwum wyników wszystkich turniejów w Go",
     "yearDescription": "Wyniki turniejów z roku %{0}",
+    "allTimeStatsLink": "Lista uczestników",
     "allTimeStatsTitle": "Lista wszech czasów",
     "allTimeStatsDescription": "Lista wszech czasów wszystkich uczestników turniejów w Go",
+    "allTimeStatsByCountryLink": "Lista krajów",
     "allTimeStatsByCountryTitle": "Lista wszech czasów krajów",
     "allTimeStatsByCountryDescription": "Lista wszech czasów osiągnieć wszystkich krajów w turniejach Go",
     "playerStatsTitle": "%{0} - Statystyki",
@@ -20,7 +22,12 @@
     "home": {
       "anchor": "Strona główna",
       "title": "Przejdź na stronę główną"
-    }
+    },
+    "open": "Otwórz menu",
+    "close": "Zamknij menu",
+    "archiveLabel": "Archiwum %{0}",
+    "categories": "Kategorie",
+    "tournaments": "Turnieje"
   },
   "details": {
     "header": "Informacje",

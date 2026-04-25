@@ -1,4 +1,5 @@
 import '@event/colors.css';
+import { getTournamentList } from '@/data';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { PropsWithChildren } from 'react';
@@ -8,7 +9,6 @@ import { getTranslator } from '@/i18n/translator';
 import { Client } from '@/components/Client';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
-import { LocaleNavigation } from '@/components/navigation/LocaleNavigation';
 import '../globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -39,14 +39,16 @@ export async function generateStaticParams() {
 export default async function RootLayout({ params, children }: RootLayoutProps) {
   const { locale } = await params;
   const translations = await loadTranslations(locale as Locale);
+  const tournaments = await getTournamentList();
 
   return (
-    <html lang={locale} className="h-full bg-event-light" style={{ scrollbarGutter: 'stable' }}>
-      <body className={`${inter.className} h-full flex flex-col text-event-dark`}>
-        <LocaleNavigation locale={locale} />
-        <Header translations={translations} />
-        <main className="flex-1 container max-w-(--breakpoint-2xl) mx-auto p-4">{children}</main>
-        <Footer translations={translations} />
+    <html lang={locale} className="h-full bg-event-light">
+      <body className={`${inter.className} h-full flex flex-col text-event-dark overflow-hidden`}>
+        <Header translations={translations} tournaments={tournaments} />
+        <div className="flex-1 overflow-y-auto flex flex-col min-h-0" style={{ scrollbarGutter: 'stable' }}>
+          <main className="flex-1 container max-w-(--breakpoint-2xl) mx-auto p-4 w-full">{children}</main>
+          <Footer translations={translations} />
+        </div>
         <Client rawTranslations={JSON.stringify(translations)} />
       </body>
     </html>
