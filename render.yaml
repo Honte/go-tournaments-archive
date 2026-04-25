@@ -73,3 +73,18 @@ services:
         value: pygc
       - key: NODE_VERSION
         value: '24'
+
+  - type: web
+    name: go-archive-kpmc
+    runtime: static
+    branch: main
+    buildCommand: npm ci && npm run build
+    staticPublishPath: ./out
+    previews:
+      generation: manual
+    autoDeployTrigger: checksPass
+    envVars:
+      - key: EVENT
+        value: kpmc
+      - key: NODE_VERSION
+        value: '24'
