@@ -39,9 +39,13 @@ export function TournamentDetails({ tournament, translations }: TournamentDetail
     details[t('details.end')] = formatDate(tournament.end, translations.locale);
   }
 
-  if (tournament.website) {
+  if (tournament.website?.length) {
     details[t('details.website')] = (
-      <ExternalLink title={t('details.goToWebsite', String(tournament.year))} url={tournament.website} />
+      <div className="flex flex-col">
+        {(Array.isArray(tournament.website) ? tournament.website : [tournament.website]).map((website) => (
+          <ExternalLink key={website} title={t('details.goToWebsite', String(tournament.year))} url={website} />
+        ))}
+      </div>
     );
   }
 

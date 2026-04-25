@@ -9,7 +9,7 @@ export type TournamentDetails = {
   country?: string;
   start?: string;
   end?: string;
-  website?: string;
+  website?: string | string[];
   referee?: string;
   top: string[];
   categoriesTop?: Record<string, string[]>;
@@ -32,7 +32,7 @@ export type TournamentItem = {
   year: number;
   location: string;
   country?: string;
-}
+};
 
 export type Stage = LeagueStage | LadderTableStage | FinalStage | RoundRobinTableStage;
 

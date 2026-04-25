@@ -61,7 +61,7 @@ export type InputTournament = {
   location?: string;
   country?: string;
   referee?: string;
-  website?: string;
+  website?: string | string[];
   players?: Record<string, string>;
   top?: string[];
   stages: InputStage[];
