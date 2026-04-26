@@ -1,6 +1,9 @@
 stages:
   - type: tournament
     file: wagc2023.txt
+    notes:
+      pl: dla top 10 dodatkowy breaker SOS-3
+      en: for top 10 additional breaker SOS-3
     komi: 6.5
     scoringColumns:
       - wins

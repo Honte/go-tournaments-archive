@@ -1,4 +1,6 @@
-website: https://www.nihonkiin.or.jp/event/amakisen/worldama/36/index.html
+website:
+  - https://www.nihonkiin.or.jp/event/amakisen/worldama/36/index.html
+  - https://www.pandanet.co.jp/event/worldama2015/outline_e.htm
 stages:
   - type: tournament
     file: wagc2015.txt

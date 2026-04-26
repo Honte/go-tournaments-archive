@@ -2,6 +2,9 @@ website: https://www.nihonkiin.or.jp/event/amakisen/worldama/37/index.html
 stages:
   - type: tournament
     file: wagc2016.txt
+    notes:
+     pl: dla top 8 dodatkowe breakery
+     en: for top 8 additional breakers   
     time: 60min + 3x30s japanese
     komi: 6.5
     scoringColumns:
