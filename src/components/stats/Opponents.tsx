@@ -1,6 +1,6 @@
 'use client';
 
-import type { StatsOpponent } from '@/schema/data';
+import type { ApiPlayerStats } from '@/schema/api';
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
 import type { Translations } from '@/i18n/consts';
@@ -12,7 +12,7 @@ import { PlayerCell } from '@/components/ui/PlayerCell';
 
 type OpponentsProps = {
   translations: Translations;
-  opponents: StatsOpponent[];
+  player: ApiPlayerStats;
 };
 
 type OpponentRow = {
@@ -27,30 +27,55 @@ type OpponentRow = {
   country: string;
 };
 
-export function Opponents({ translations, opponents }: OpponentsProps) {
+export function Opponents({ player, translations }: OpponentsProps) {
   const t = getTranslator(translations);
 
   const data = useMemo(() => {
-    return opponents
-      .map<OpponentRow>((opponent) => {
-        const { name, games, id, countries } = opponent;
+    const stats: Record<string, { won: number; games: number; countries: Set<string | undefined> }> = {};
+
+    for (const event of player.results) {
+      for (const stage of event.stages) {
+        for (const game of stage.games) {
+          if (game.id === 'BYE') {
+            continue;
+          }
+
+          const opponent = (stats[game.id] ||= {
+            games: 0,
+            won: 0,
+            countries: new Set(),
+          });
+
+          opponent.games += 1;
+          opponent.won += Number(game.won);
+          opponent.countries.add(game.country);
+        }
+      }
+    }
+
+    return Object.entries(stats)
+      .map<OpponentRow>(([id, { games, won, countries }]) => {
+        const name = player.opponents[id];
         const [firstName, ...rest] = name.split(' ');
-        const won = games.filter((g) => g.won);
+        const lastName = rest.join(' ') || '';
+        const country = Array.from(countries).filter(Boolean).join(', ');
+        const lost = games - won;
+        const wonPercent = won / games;
 
         return {
           id,
           name,
           firstName,
-          lastName: rest.join(' ') || '',
-          country: countries.join(', '),
-          games: games.length,
-          won: won.length,
-          lost: games.length - won.length,
-          wonPercent: won.length / games.length,
+          lastName,
+          country,
+          games,
+          won,
+          lost,
+          wonPercent,
         };
       })
       .sort((a, b) => a.lastName.localeCompare(b.lastName));
-  }, [opponents]);
+  }, [player]);
 
   const columns = useMemo<ColumnDef<OpponentRow>[]>(
     () =>
@@ -88,7 +113,7 @@ export function Opponents({ translations, opponents }: OpponentsProps) {
   );
 
   return (
-    <div className="my-2">
+    <div className="flex-1">
       <H2>{t('stats.opponents')}</H2>
       <StatsTable data={data} columns={columns} />
     </div>

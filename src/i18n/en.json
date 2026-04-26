@@ -98,7 +98,10 @@
     "games": "Games played",
     "won": "Games won",
     "lost": "Games lost",
-    "wonPercent": "% won"
+    "wonPercent": "% won",
+    "gameColor": "Color",
+    "gameResult": "Result",
+    "gameWon": "Won"
   },
   "game": {
     "resign": "Won by resignation",
@@ -131,6 +134,7 @@
     "summary": "Summary",
     "events": "Participation summary",
     "players": "Player summary",
+    "gameRecords": "Game records",
     "opponents": "Opponent summary",
     "medalists": "Medalists",
     "countries": "Medal standings",

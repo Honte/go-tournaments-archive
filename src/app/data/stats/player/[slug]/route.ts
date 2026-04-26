@@ -1,4 +1,4 @@
-import { getAllPlayersStats, getPlayerOpponentsStats, getPlayerStats } from '@/data';
+import { getAllPlayersStats, getPlayerStats } from '@/data';
 import { notFound } from 'next/navigation';
 
 type PageProps = {
@@ -16,18 +16,13 @@ export async function GET(_: Request, props: PageProps) {
     return notFound();
   }
 
-  const player = await getPlayerStats(slug);
+  const stats = await getPlayerStats(slug);
 
-  if (!player) {
+  if (!stats) {
     return notFound();
   }
 
-  const opponents = await getPlayerOpponentsStats(slug);
-
-  return Response.json({
-    player,
-    opponents,
-  });
+  return Response.json(stats);
 }
 
 export async function generateStaticParams() {

@@ -176,11 +176,14 @@ export async function loadH9Tournament({
         (rounds[round] ||= []).push(parsedGame.id);
       }
 
+      const processed = processedGamesMap.get(localId)!;
+
       current.games.push({
-        game: processedGamesMap.get(localId)!.id,
+        color: processed.players[processed.players[0].id === currentId ? 0 : 1].color,
+        game: processed.id,
         won: game.result === '+',
         opponent: opponentId,
-        result: game.result,
+        result: processed.result,
         index: game.opponent,
       });
     }

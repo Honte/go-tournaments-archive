@@ -1,5 +1,5 @@
 import EVENT_CONFIG from '@event/config';
-import type { StatsPlayer } from '@/schema/data';
+import type { ApiPlayerStats } from '@/schema/api';
 import type { ReactNode } from 'react';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
@@ -9,7 +9,7 @@ import { YearLink } from '@/components/YearLink';
 import { H2 } from '@/components/ui/H2';
 
 type AchievementsProps = {
-  player: StatsPlayer;
+  player: ApiPlayerStats;
   translations: Translations;
 };
 
@@ -46,7 +46,7 @@ export function Achievements({ player, translations }: AchievementsProps) {
     details[t('table.bestPlace')] = player.bestPlace;
   }
 
-  details[t('table.events')] = player.years.length;
+  details[t('table.events')] = player.results.length;
   details[t('table.games')] = player.totalGames;
   details[t('table.won')] = player.totalWon;
 

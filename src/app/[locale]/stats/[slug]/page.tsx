@@ -46,10 +46,10 @@ export default async function PlayerStatsPage({ params }: PageProps) {
     <Content>
       <header className="flex flex-col">
         <Title>{player.name}</Title>
-        {EVENT_CONFIG.showCountry && (
+        {EVENT_CONFIG.showCountry && player.country && (
           <h2 className="text-xl text-center font-bold">
             {jsxJoin(
-              player.countries
+              player.country
                 .filter(Boolean)
                 .map((country) => <CountryLink key={country} translations={translations} code={country} full={true} />),
               ', '

@@ -9,6 +9,7 @@ import {
   getSortedRowModel,
   useReactTable,
 } from '@tanstack/react-table';
+import { clsx } from 'clsx';
 import { useState } from 'react';
 
 type StatsTableProps<T> = {
@@ -36,9 +37,15 @@ export function StatsTable<T>({ data, columns }: StatsTableProps<T>) {
       <table className="min-w-full table-auto border-collapse">
         <thead className="border-b-gray-300 border-b">
           {table.getHeaderGroups().map((headerGroup) => (
-            <tr key={headerGroup.id} className="text-center cursor-pointer select-none">
+            <tr key={headerGroup.id} className="text-center select-none">
               {headerGroup.headers.map((header) => (
-                <th key={header.id} onClick={header.column.getToggleSortingHandler()} className="p-1">
+                <th
+                  key={header.id}
+                  onClick={header.column.getToggleSortingHandler()}
+                  className={clsx('p-1', {
+                    'cursor-pointer': header.column.getCanSort(),
+                  })}
+                >
                   {header.isPlaceholder ? null : flexRender(header.column.columnDef.header, header.getContext())}
                   <SortingHeader header={header} />
                 </th>

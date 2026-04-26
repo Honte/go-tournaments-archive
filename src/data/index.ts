@@ -1,4 +1,4 @@
-import { type StatsOpponent } from '@/schema/data';
+import type { ApiPlayerResult, ApiPlayerStats } from '@/schema/api';
 import { calculateStats } from '@/data/stats';
 import { loadTournaments } from './load';
 
@@ -29,33 +29,49 @@ export async function getAllPlayersStats() {
   return stats.players;
 }
 
-export async function getPlayerStats(playerId: string) {
-  return stats.players[playerId];
-}
-
-export async function getPlayerOpponentsStats(playerId: string) {
+export async function getPlayerStats(playerId: string): Promise<ApiPlayerStats> {
   const player = stats.players[playerId];
-  const opponents: Record<string, StatsOpponent> = {};
+  const events: Record<number, ApiPlayerResult> = {};
+  const opponents: Record<string, string> = {};
 
-  for (const event of player.results) {
-    for (const game of event.games) {
-      if (game.opponent === 'BYE') {
-        continue;
+  for (const result of player.results) {
+    const event = (events[result.year] ||= {
+      year: result.year,
+      country: result.country,
+      stages: [],
+      place: result.finalPlace,
+      rank: result.rank,
+    });
+
+    if (result.finalPlace && !event.place) {
+      event.place = result.finalPlace;
+    }
+
+    event.stages.push({
+      type: result.stage,
+      place: result.place,
+      games: result.games,
+    });
+
+    for (const game of result.games) {
+      if (game.id !== 'BYE') {
+        opponents[game.id] = stats.players[game.id].name;
       }
-
-      (opponents[game.opponent] ||= {
-        id: game.opponent,
-        name: stats.players[game.opponent]!.name,
-        countries: stats.players[game.opponent]!.countries,
-        games: [],
-      }).games.push({
-        year: event.year,
-        won: game.won,
-      });
     }
   }
 
-  return Object.values(opponents);
+  return {
+    id: player.id,
+    name: player.name,
+    country: player.countries,
+    medals: player.medals,
+    categoriesMedals: player.categoriesMedals,
+    results: Object.values(events).sort((a, b) => a.year - b.year),
+    bestPlace: player.bestPlace,
+    totalGames: player.totalGames,
+    totalWon: player.totalWon,
+    opponents,
+  };
 }
 
 export async function getAllCountriesStats() {

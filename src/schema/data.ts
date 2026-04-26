@@ -138,6 +138,7 @@ export type TableResult = {
 };
 
 export type TablePlayerGame = {
+  color?: 'white' | 'black';
   opponent: string;
   won: boolean;
   result: string;
@@ -185,12 +186,13 @@ export type GamePropsArrayKey = KeysMatching<GameProps, string[]>;
 export type StatsMedals = [gold: string[], silver: string[], bronze: string[]];
 
 export type StatsPlayerGame = {
-  opponent: string;
-  opponentCountry?: string;
+  id: string; // opponent id
+  country?: string; // opponent country
+  rank?: string; // opponent rank
+  color?: 'white' | 'black'; // player color
   won: boolean;
   result: string;
-  game: string;
-  index?: number;
+  props?: GameProps;
 };
 
 export type StatsPlayerResult = {

@@ -1,7 +1,8 @@
 'use client';
 
 import EVENT_CONFIG from '@event/config';
-import type { Stage, StatsPlayer } from '@/schema/data';
+import type { ApiPlayerStats } from '@/schema/api';
+import type { Stage } from '@/schema/data';
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
 import type { Translations } from '@/i18n/consts';
@@ -14,7 +15,7 @@ import { CountryLink } from '@/components/ui/CountryLink';
 import { H2 } from '@/components/ui/H2';
 
 type EventsProps = {
-  player: StatsPlayer;
+  player: ApiPlayerStats;
   translations: Translations;
 };
 
@@ -33,23 +34,30 @@ type EventRow = {
 export function Events({ player, translations }: EventsProps) {
   const t = getTranslator(translations);
 
-  const data = useMemo(
-    () =>
-      player.results.toReversed().map((result) => {
-        const {
-          games: { length: games },
-          won,
-        } = result;
+  const data = useMemo(() => {
+    const results: EventRow[] = [];
 
-        return {
-          ...result,
+    for (const event of player.results) {
+      for (const stage of event.stages) {
+        const games = stage.games.length;
+        const won = stage.games.reduce((acc, game) => acc + (game.won ? 1 : 0), 0);
+
+        results.push({
+          year: event.year,
+          stage: stage.type,
+          won,
           games,
           lost: games - won,
           wonPercent: won / games,
-        };
-      }),
-    [player]
-  );
+          country: event.country,
+          place: stage.place,
+          rank: event.rank,
+        });
+      }
+    }
+
+    return results.sort((a, b) => b.year - a.year);
+  }, [player]);
 
   const columns = useMemo<ColumnDef<EventRow>[]>(
     () =>
@@ -101,7 +109,7 @@ export function Events({ player, translations }: EventsProps) {
   );
 
   return (
-    <div className="my-2 flex-1">
+    <div>
       <H2>{t('stats.events')}</H2>
       <StatsTable data={data} columns={columns} />
     </div>
