@@ -17,7 +17,7 @@ type GameProps = {
 export function Game({ className, game, players, translations, wide }: GameProps) {
   const t = getTranslator(translations);
   const [home, away] = useMemo(() => game.players.map((p) => ({ ...players[p.id], ...p })), [game, players]);
-  const hasSgf = game.props.svg;
+  const hasSgf = game.props.sgf;
   const hasProps = Object.keys(game.props).length > 0;
 
   return (
