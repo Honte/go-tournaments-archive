@@ -1,17 +1,24 @@
 'use client';
 
 import EVENT_CONFIG from '@event/config';
+import { useTranslationsData } from '@/hooks/useTranslationsData';
 import type { StatsCountry, TableStats } from '@/schema/data';
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
-import type { Translations } from '@/i18n/consts';
+import type { Locale, Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { sortTableStats } from '@/libs/sort';
 import { toPercentage } from '@/libs/table';
 import { StatsTable } from '@/components/table/StatsTable';
 import { CountryLink } from '@/components/ui/CountryLink';
+import { Loader } from '@/components/ui/Loader';
 
 type AllCountriesStatsProps = {
+  countries: Record<string, StatsCountry>;
+  locale: Locale;
+};
+
+type AllCountriesStatsContentProps = {
   countries: Record<string, StatsCountry>;
   translations: Translations;
 };
@@ -22,7 +29,17 @@ type CountryRow = TableStats & {
   players: number;
 };
 
-export function AllCountriesStats({ countries, translations }: AllCountriesStatsProps) {
+export function AllCountriesStats({ countries, locale }: AllCountriesStatsProps) {
+  const { data: translations } = useTranslationsData(locale);
+
+  if (!translations) {
+    return <Loader />;
+  }
+
+  return <AllCountriesStatsContent countries={countries} translations={translations} />;
+}
+
+function AllCountriesStatsContent({ countries, translations }: AllCountriesStatsContentProps) {
   const t = getTranslator(translations);
 
   const data = useMemo(

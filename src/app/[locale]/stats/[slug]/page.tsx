@@ -6,9 +6,8 @@ import type { Locale } from '@/i18n/consts';
 import { SUPPORTED_LOCALES, loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
+import { PlayerStats } from '@/components/PlayerStats';
 import { Achievements } from '@/components/stats/Achievements';
-import { Events } from '@/components/stats/Events';
-import { Opponents } from '@/components/stats/Opponents';
 import { Content } from '@/components/ui/Content';
 import { CountryLink } from '@/components/ui/CountryLink';
 import { Title } from '@/components/ui/Title';
@@ -61,11 +60,7 @@ export default async function PlayerStatsPage({ params }: PageProps) {
       </header>
 
       <Achievements player={player} translations={translations} />
-
-      <div className="flex max-xl:flex-col gap-4">
-        <Events player={player} translations={translations} />
-        <Opponents opponents={opponents} translations={translations} />
-      </div>
+      <PlayerStats player={player} opponents={opponents} locale={locale} />
     </Content>
   );
 }

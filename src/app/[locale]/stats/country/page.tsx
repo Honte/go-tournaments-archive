@@ -41,7 +41,7 @@ export default async function Stats({ params }: PageProps) {
   return (
     <Content>
       <Title>{t('site.allTimeStatsByCountryTitle')}</Title>
-      <AllCountriesStats countries={countries} translations={translations} />
+      <AllCountriesStats countries={countries} locale={locale} />
     </Content>
   );
 }
