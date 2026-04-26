@@ -2,12 +2,12 @@ import { EventConfig } from '@event/schema';
 
 const EVENT_CONFIG: EventConfig = {
   id: 'wagc',
-  domain: '',
+  domain: 'https://wagc.go.art.pl',
   defaultLocale: 'en',
   showCountry: true,
   showBestPlace: true,
   hideGamesWithoutSgf: true,
-  generateSvgs: true,
+  generateSvgs: false,
   generateJpgs: true,
 };
 

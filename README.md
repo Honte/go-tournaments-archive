@@ -5,6 +5,7 @@ A multi-event Go tournament archive — a static Next.js site (no server require
 ## Sites
 
 - [Polish Go Championships Archive](https://mp.go.art.pl)
+- [World Amateur Go Championships Archive](https://wagc.go.art.pl)
 
 ## Prerequisites
 

@@ -7,7 +7,7 @@ const EVENT_CONFIG: EventConfig = {
   showCountry: true,
   showBestPlace: true,
   hideGamesWithoutSgf: true,
-  generateSvgs: true,
+  generateSvgs: false,
   generateJpgs: true,
 };
 
