@@ -2,7 +2,7 @@
 
 import { usePlayerStatsData } from '@/hooks/usePlayerStatsData';
 import { useTranslationsData } from '@/hooks/useTranslationsData';
-import type { StatsOpponent, StatsPlayer } from '@/schema/data';
+import type { ApiPlayerStats } from '@/schema/api';
 import type { Locale, Translations } from '@/i18n/consts';
 import { Events } from '@/components/stats/Events';
 import { Opponents } from '@/components/stats/Opponents';
@@ -14,27 +14,26 @@ type PlayerStatsProps = {
 };
 
 type PlayerStatsContentProps = {
-  player: StatsPlayer;
-  opponents: StatsOpponent[];
+  player: ApiPlayerStats;
   translations: Translations;
 };
 
 export function PlayerStats({ slug, locale }: PlayerStatsProps) {
   const { data: translations } = useTranslationsData(locale);
-  const { data: stats } = usePlayerStatsData(slug);
+  const { data: player } = usePlayerStatsData(slug);
 
-  if (!translations || !stats) {
+  if (!translations || !player) {
     return <Loader />;
   }
 
-  return <PlayerStatsContent player={stats.player} opponents={stats.opponents} translations={translations} />;
+  return <PlayerStatsContent player={player} translations={translations} />;
 }
 
-function PlayerStatsContent({ player, opponents, translations }: PlayerStatsContentProps) {
+function PlayerStatsContent({ player, translations }: PlayerStatsContentProps) {
   return (
     <div className="flex max-xl:flex-col gap-4">
       <Events player={player} translations={translations} />
-      <Opponents opponents={opponents} translations={translations} />
+      <Opponents player={player} translations={translations} />
     </div>
   );
 }

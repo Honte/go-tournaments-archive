@@ -17,36 +17,38 @@ export function createTableWithoutRounds({
       players: [home, away],
       result,
     } = gamesMap[id];
-    const winner = home.won ? home.id : away.id;
-    const loser = home.won ? away.id : home.id;
+    const winner = home.won ? home : away;
+    const loser = home.won ? away : home;
 
-    (results[winner] ||= {
-      id: winner,
+    (results[winner.id] ||= {
+      id: winner.id,
       place: 0,
       score: 0,
       games: [],
-      rank: getRankValue(playersMap[winner].rank),
+      rank: getRankValue(playersMap[winner.id].rank),
     }).games.push({
-      opponent: loser,
+      color: winner.color,
+      opponent: loser.id,
       won: true,
       result,
       game: id,
     });
 
-    (results[loser] ||= {
-      id: loser,
+    (results[loser.id] ||= {
+      id: loser.id,
       place: 0,
       score: 0,
       games: [],
-      rank: getRankValue(playersMap[loser].rank),
+      rank: getRankValue(playersMap[loser.id].rank),
     }).games.push({
-      opponent: winner,
+      color: loser.color,
+      opponent: winner.id,
       won: false,
       result,
       game: id,
     });
 
-    results[winner].score++;
+    results[winner.id].score++;
   }
 
   return Object.values(results)

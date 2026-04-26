@@ -48,19 +48,21 @@ export function createLadderTable({
         result,
       } = gamesMap[game];
 
-      const winner = a.won ? a.id : b.id;
-      const loser = a.won ? b.id : a.id;
+      const winner = a.won ? a : b;
+      const loser = a.won ? b : a;
 
-      map[winner].games[index] = {
-        opponent: loser,
-        index: map[loser]?.index ?? 0,
+      map[winner.id].games[index] = {
+        color: winner.color,
+        opponent: loser.id,
+        index: map[loser.id]?.index ?? 0,
         won: true,
         result,
         game,
       };
-      map[loser].games[index] = {
-        opponent: winner,
-        index: map[winner]?.index ?? 0,
+      map[loser.id].games[index] = {
+        color: loser.color,
+        opponent: winner.id,
+        index: map[winner.id]?.index ?? 0,
         won: false,
         result,
         game,
@@ -74,19 +76,21 @@ export function createLadderTable({
       result,
     } = gamesMap[game];
 
-    const winner = a.won ? a.id : b.id;
-    const loser = a.won ? b.id : a.id;
+    const winner = a.won ? a : b;
+    const loser = a.won ? b : a;
 
-    map[winner].playoffs.push({
-      opponent: loser,
-      index: map[loser].index,
+    map[winner.id].playoffs.push({
+      color: winner.color,
+      opponent: loser.id,
+      index: map[loser.id].index,
       won: true,
       result,
       game,
     } as IndexedTablePlayerGame);
-    map[loser].playoffs.push({
-      opponent: winner,
-      index: map[winner].index,
+    map[loser.id].playoffs.push({
+      color: loser.color,
+      opponent: winner.id,
+      index: map[winner.id].index,
       won: false,
       result,
       game,

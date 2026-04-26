@@ -177,6 +177,7 @@ export async function loadH9Tournament({
       }
 
       current.games.push({
+        color: game.color ? (game.color === 'black' ? 'black' : 'white') : undefined,
         game: processedGamesMap.get(localId)!.id,
         won: game.result === '+',
         opponent: opponentId,

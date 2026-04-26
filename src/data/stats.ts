@@ -68,12 +68,13 @@ export function calculateStats(tournaments: Tournament[]): Stats {
           if (game) {
             won += Number(game.won);
             playerGames.push({
-              opponent: tournamentPlayersMap[game.opponent].id,
-              opponentCountry: tournamentPlayers[game.opponent]?.country,
+              id: tournamentPlayersMap[game.opponent].id,
+              country: tournamentPlayers[game.opponent]?.country,
+              rank: tournamentPlayers[game.opponent]?.rank,
               won: game.won,
               result: game.result,
-              game: game.game,
-              index: 'index' in game ? game.index : undefined,
+              props: tournament.games[game.game]?.props,
+              color: game.color,
             });
           }
         }

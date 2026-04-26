@@ -68,21 +68,23 @@ export function createTable({
         result,
       } = gamesMap[game];
 
-      const winner = a.won ? a.id : b.id;
-      const loser = a.won ? b.id : a.id;
+      const winner = a.won ? a : b;
+      const loser = a.won ? b : a;
 
-      map[winner].breakers.wins += 1;
-      map[winner].won.push(loser);
-      map[loser].lost.push(winner);
-      map[winner].games[index] = {
-        opponent: loser,
+      map[winner.id].breakers.wins += 1;
+      map[winner.id].won.push(loser.id);
+      map[loser.id].lost.push(winner.id);
+      map[winner.id].games[index] = {
+        color: winner.color,
+        opponent: loser.id,
         index: 0,
         won: true,
         result,
         game,
       };
-      map[loser].games[index] = {
-        opponent: winner,
+      map[loser.id].games[index] = {
+        color: loser.color,
+        opponent: winner.id,
         index: 0,
         won: false,
         result,

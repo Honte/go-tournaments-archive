@@ -35,13 +35,13 @@ export function CountryOpponents({ country, translations }: CountryOpponentsProp
 
       for (const result of yearData.results) {
         for (const game of result.games) {
-          if (!game.opponentCountry) {
+          if (!game.country) {
             continue;
           }
 
-          const target = (countries[game.opponentCountry] ||= {
-            code: game.opponentCountry,
-            name: t(`country.${game.opponentCountry}`),
+          const target = (countries[game.country] ||= {
+            code: game.country,
+            name: t(`country.${game.country}`),
             games: 0,
             won: 0,
             lost: 0,
