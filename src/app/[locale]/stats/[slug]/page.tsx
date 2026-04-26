@@ -1,5 +1,5 @@
 import EVENT_CONFIG from '@event/config';
-import { getAllPlayersStats, getPlayerOpponentsStats, getPlayerStats } from '@/data';
+import { getAllPlayersStats, getPlayerStats } from '@/data';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import type { Locale } from '@/i18n/consts';
@@ -37,7 +37,6 @@ export default async function PlayerStatsPage({ params }: PageProps) {
 
   const translations = await loadTranslations(locale);
   const player = await getPlayerStats(slug);
-  const opponents = await getPlayerOpponentsStats(slug);
 
   if (!player) {
     return notFound();
@@ -50,7 +49,7 @@ export default async function PlayerStatsPage({ params }: PageProps) {
         {EVENT_CONFIG.showCountry && (
           <h2 className="text-xl text-center font-bold">
             {jsxJoin(
-              Array.from(player.countries)
+              player.countries
                 .filter(Boolean)
                 .map((country) => <CountryLink key={country} translations={translations} code={country} full={true} />),
               ', '
@@ -60,7 +59,7 @@ export default async function PlayerStatsPage({ params }: PageProps) {
       </header>
 
       <Achievements player={player} translations={translations} />
-      <PlayerStats player={player} opponents={opponents} locale={locale} />
+      <PlayerStats slug={slug} locale={locale} />
     </Content>
   );
 }

@@ -1,6 +1,6 @@
 'use client';
 
-import type { StatsOpponent, StatsPlayer } from '@/schema/data';
+import type { StatsOpponent } from '@/schema/data';
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
 import type { Translations } from '@/i18n/consts';
@@ -42,7 +42,7 @@ export function Opponents({ translations, opponents }: OpponentsProps) {
           name,
           firstName,
           lastName: rest.join(' ') || '',
-          country: Array.from(countries).join(', '),
+          country: countries.join(', '),
           games: games.length,
           won: won.length,
           lost: games.length - won.length,

@@ -1,5 +1,6 @@
 'use client';
 
+import { useCountryStatsData } from '@/hooks/useCountryStatsData';
 import { useTranslationsData } from '@/hooks/useTranslationsData';
 import type { StatsCountry } from '@/schema/data';
 import type { Locale, Translations } from '@/i18n/consts';
@@ -10,7 +11,7 @@ import { CountryPlayers } from '@/components/stats/CountryPlayers';
 import { Loader } from '@/components/ui/Loader';
 
 type CountryStatsProps = {
-  country: StatsCountry;
+  code: string;
   locale: Locale;
 };
 
@@ -19,10 +20,11 @@ type CountryStatsContentProps = {
   translations: Translations;
 };
 
-export function CountryStats({ country, locale }: CountryStatsProps) {
+export function CountryStats({ code, locale }: CountryStatsProps) {
   const { data: translations } = useTranslationsData(locale);
+  const { data: country } = useCountryStatsData(code);
 
-  if (!translations) {
+  if (!translations || !country) {
     return <Loader />;
   }
 

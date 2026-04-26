@@ -30,7 +30,7 @@ type PlayerRow = TableStats & {
   name: string;
   firstName: string;
   lastName: string;
-  countries: Set<string>;
+  countries: string[];
 };
 
 export function AllPlayersStats({ players, locale }: AllPlayersStatsProps) {
@@ -103,7 +103,7 @@ function AllPlayersStatsContent({ players, translations }: AllPlayersStatsConten
             header: t('table.country'),
             cell: (info) =>
               jsxJoin(
-                Array.from(info.row.original.countries).map((code) => (
+                info.row.original.countries.map((code) => (
                   <CountryLink key={code} translations={translations} code={code} />
                 )),
                 ', '

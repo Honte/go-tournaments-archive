@@ -1,5 +1,6 @@
 'use client';
 
+import { usePlayerStatsData } from '@/hooks/usePlayerStatsData';
 import { useTranslationsData } from '@/hooks/useTranslationsData';
 import type { StatsOpponent, StatsPlayer } from '@/schema/data';
 import type { Locale, Translations } from '@/i18n/consts';
@@ -8,8 +9,7 @@ import { Opponents } from '@/components/stats/Opponents';
 import { Loader } from '@/components/ui/Loader';
 
 type PlayerStatsProps = {
-  player: StatsPlayer;
-  opponents: StatsOpponent[];
+  slug: string;
   locale: Locale;
 };
 
@@ -19,14 +19,15 @@ type PlayerStatsContentProps = {
   translations: Translations;
 };
 
-export function PlayerStats({ player, opponents, locale }: PlayerStatsProps) {
+export function PlayerStats({ slug, locale }: PlayerStatsProps) {
   const { data: translations } = useTranslationsData(locale);
+  const { data: stats } = usePlayerStatsData(slug);
 
-  if (!translations) {
+  if (!translations || !stats) {
     return <Loader />;
   }
 
-  return <PlayerStatsContent player={player} opponents={opponents} translations={translations} />;
+  return <PlayerStatsContent player={stats.player} opponents={stats.opponents} translations={translations} />;
 }
 
 function PlayerStatsContent({ player, opponents, translations }: PlayerStatsContentProps) {

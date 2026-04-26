@@ -1,11 +1,25 @@
+import type { StatsCountry, StatsOpponent, StatsPlayer } from '@/schema/data';
 import type { Locale, Translations } from '@/i18n/consts';
 
-export async function fetchTranslations(locale: Locale) {
-  const response = await fetch(`/data/i18n/${locale}.json`);
+export type PlayerStatsData = {
+  player: StatsPlayer;
+  opponents: StatsOpponent[];
+};
 
-  if (!response.ok) {
-    throw new Error(`Could not load translations for ${locale}`);
-  }
+export function fetchTranslations(locale: Locale) {
+  return get<Translations>(`/data/i18n/${locale}.json`);
+}
 
-  return (await response.json()) as Translations;
+export function fetchPlayerStats(slug: string) {
+  return get<PlayerStatsData>(`/data/stats/player/${slug}.json`);
+}
+
+export function fetchCountryStats(code: string) {
+  return get<StatsCountry>(`/data/stats/country/${code.toLowerCase()}.json`);
+}
+
+async function get<T>(path: string) {
+  const response = await fetch(path);
+
+  return (await response.json()) as T;
 }

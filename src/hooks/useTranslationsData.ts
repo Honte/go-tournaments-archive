@@ -7,5 +7,6 @@ export function useTranslationsData(locale: Locale) {
     queryKey: ['i18n', locale],
     queryFn: () => fetchTranslations(locale),
     staleTime: Infinity,
+    enabled: typeof window !== 'undefined',
   });
 }
