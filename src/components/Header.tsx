@@ -1,4 +1,3 @@
-import { Logo } from '@event/Logo';
 import type { TournamentItem } from '@/schema/data';
 import Link from 'next/link';
 import type { Translations } from '@/i18n/consts';
@@ -34,7 +33,7 @@ export function Header({ translations, tournaments }: TopBarProps) {
           prefetch={false}
         >
           <span className="sr-only">{t('navigation.home.anchor')}</span>
-          <Logo className="h-4 xs:h-5 shrink-0" color="white" />
+          <img src="/logo-white.svg" alt="" className="h-4 xs:h-5 shrink-0" />
           <span className="text-base xs:text-lg font-semibold truncate">
             {t('navigation.archiveLabel', t('site.acronym'))}
           </span>

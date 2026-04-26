@@ -1,9 +1,12 @@
-import { SVGProps } from 'react';
+import type { LogoProps } from '@event/schema';
 
-export function Logo(props: SVGProps<SVGSVGElement>) {
+export function Logo({ mode = 'logo', ...props }: LogoProps) {
+  const faviconProps = mode === 'favicon' ? { width: 120, height: 75.742 } : {};
+  const strokeWidth = mode === 'favicon' ? '.8' : '.5';
+
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.75 20.04" {...props}>
-      <g stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth=".5">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.75 20.04" {...faviconProps} {...props}>
+      <g stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth}>
         <path
           fill="#f39800"
           d="M21.28 5.3a10.7 7.155 0 0 1 .519 2.197 10.7 7.155 0 0 1-10.7 7.155 10.7 7.155 0 0 1-.61-.011 10.7 7.155 0 0 0 10.15 4.94 10.7 7.155 0 0 0 10.7-7.154A10.7 7.155 0 0 0 21.278 5.3zm-2.038.033a10.7 7.155 0 0 0-3.954.897 10.7 7.155 0 0 1 3.954-.897m-3.954.897a10.7 7.155 0 0 0-2.216 1.137 10.7 7.155 0 0 1 2.216-1.137m-4.987 4.345a10.7 7.155 0 0 0-.365 1.852 10.7 7.155 0 0 1 .365-1.852m-.282 2.701a10.7 7.155 0 0 0 .067.282 10.7 7.155 0 0 1-.067-.282m.237.85a10.7 7.155 0 0 0 .12.3 10.7 7.155 0 0 1-.12-.3"

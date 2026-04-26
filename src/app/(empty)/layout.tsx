@@ -13,7 +13,7 @@ export async function generateMetadata(): Promise<Metadata> {
     title: t('site.name'),
     description: t('site.description'),
     icons: {
-      icon: { url: '/icon.svg', type: 'image/svg+xml' },
+      icon: { url: '/favicon.svg', type: 'image/svg+xml' },
       apple: { url: '/apple-icon.png', type: 'image/png', sizes: '180x180' },
     },
   };
