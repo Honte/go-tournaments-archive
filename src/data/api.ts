@@ -1,5 +1,6 @@
 import type { StatsCountry, StatsOpponent, StatsPlayer } from '@/schema/data';
 import type { Locale, Translations } from '@/i18n/consts';
+import type { NavigationGroup } from '@/data/sitemap';
 
 export type PlayerStatsData = {
   player: StatsPlayer;
@@ -16,6 +17,10 @@ export function fetchPlayerStats(slug: string) {
 
 export function fetchCountryStats(code: string) {
   return get<StatsCountry>(`/data/stats/country/${code.toLowerCase()}.json`);
+}
+
+export function fetchSitemap(locale: Locale) {
+  return get<NavigationGroup[]>(`/data/sitemap/${locale}.json`);
 }
 
 async function get<T>(path: string) {

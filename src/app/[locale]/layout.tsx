@@ -1,5 +1,4 @@
 import '@event/colors.css';
-import { getTournamentList } from '@/data';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { PropsWithChildren } from 'react';
@@ -40,13 +39,12 @@ export async function generateStaticParams() {
 export default async function RootLayout({ params, children }: RootLayoutProps) {
   const { locale } = await params;
   const translations = await loadTranslations(locale as Locale);
-  const tournaments = await getTournamentList();
 
   return (
     <html lang={locale} className="h-full bg-event-light">
       <body className={`${inter.className} h-full flex flex-col text-event-dark overflow-hidden`}>
         <QueryProvider>
-          <Header translations={translations} tournaments={tournaments} />
+          <Header translations={translations} />
           <div className="flex-1 overflow-y-auto flex flex-col min-h-0" style={{ scrollbarGutter: 'stable' }}>
             <main className="flex-1 container max-w-(--breakpoint-2xl) mx-auto p-4 w-full">{children}</main>
             <Footer translations={translations} />
