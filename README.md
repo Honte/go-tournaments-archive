@@ -31,8 +31,7 @@ Available event directories:
 
 ## Prerequisites
 
-- Node.js 20.9 or later
-- npm
+- Node.js 24 LTS
 - MySQL access only for `npm run extract:mp-db`
 
 ## Development

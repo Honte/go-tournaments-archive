@@ -34,10 +34,8 @@
     "@floating-ui/react": "0.27.19",
     "@resvg/resvg-js": "2.6.2",
     "@sabaki/go-board": "1.4.3",
-    "@tailwindcss/postcss": "4.2.4",
     "@tanstack/react-query": "5.100.5",
     "@tanstack/react-table": "8.21.3",
-    "@types/lodash-es": "4.17.12",
     "clsx": "2.1.1",
     "fast-glob": "3.3.3",
     "go-results-highlighter": "4.0.1",
@@ -54,8 +52,10 @@
     "yaml": "2.8.3"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "4.2.4",
     "@sabaki/sgf": "3.4.7",
     "@trivago/prettier-plugin-sort-imports": "6.0.2",
+    "@types/lodash-es": "4.17.12",
     "@types/node": "24.12.2",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
@@ -65,12 +65,12 @@
     "eslint": "9.39.4",
     "eslint-config-next": "16.2.4",
     "mysql2": "3.22.2",
-    "postcss": "8.5.10",
+    "postcss": "8.5.12",
     "prettier": "3.8.3",
     "tailwindcss": "4.2.4",
     "tsx": "4.21.0"
   },
-  "overrides": {
-    "@types/react": "19.2.14"
+  "engines": {
+    "node": ">=24.0.0"
   }
 }
