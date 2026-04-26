@@ -41,11 +41,11 @@ export default async function RootLayout({ params, children }: RootLayoutProps) 
   const translations = await loadTranslations(locale as Locale);
 
   return (
-    <html lang={locale} className="h-full bg-event-light">
-      <body className={`${inter.className} h-full flex flex-col text-event-dark overflow-hidden`}>
+    <html lang={locale} className="min-h-full bg-event-light">
+      <body className={`${inter.className} min-h-dvh flex flex-col text-event-dark`}>
         <QueryProvider>
           <Header translations={translations} />
-          <div className="flex-1 overflow-y-auto flex flex-col min-h-0" style={{ scrollbarGutter: 'stable' }}>
+          <div className="flex-1 flex flex-col">
             <main className="flex-1 container max-w-(--breakpoint-2xl) mx-auto p-4 w-full">{children}</main>
             <Footer translations={translations} />
           </div>

@@ -13,7 +13,7 @@ export function Header({ translations }: TopBarProps) {
   const locale = translations.locale;
 
   return (
-    <header className="shrink-0 z-40 bg-event-dark text-event-light">
+    <header className="sticky top-0 z-40 shrink-0 bg-event-dark text-event-light">
       <div className="container mx-auto max-w-(--breakpoint-2xl) flex h-12 items-center gap-3 px-4">
         <SideNavigation
           locale={translations.locale}

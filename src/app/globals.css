@@ -27,6 +27,10 @@
   --color-event-bg: #e5e7eb;
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
 * {
   scrollbar-width: thin;
   scrollbar-color: rgba(0, 0, 0, 0.25) transparent;
