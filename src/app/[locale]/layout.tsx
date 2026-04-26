@@ -9,6 +9,7 @@ import { getTranslator } from '@/i18n/translator';
 import { Client } from '@/components/Client';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
+import { QueryProvider } from '@/components/QueryProvider';
 import '../globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -44,12 +45,14 @@ export default async function RootLayout({ params, children }: RootLayoutProps) 
   return (
     <html lang={locale} className="h-full bg-event-light">
       <body className={`${inter.className} h-full flex flex-col text-event-dark overflow-hidden`}>
-        <Header translations={translations} tournaments={tournaments} />
-        <div className="flex-1 overflow-y-auto flex flex-col min-h-0" style={{ scrollbarGutter: 'stable' }}>
-          <main className="flex-1 container max-w-(--breakpoint-2xl) mx-auto p-4 w-full">{children}</main>
-          <Footer translations={translations} />
-        </div>
-        <Client rawTranslations={JSON.stringify(translations)} />
+        <QueryProvider>
+          <Header translations={translations} tournaments={tournaments} />
+          <div className="flex-1 overflow-y-auto flex flex-col min-h-0" style={{ scrollbarGutter: 'stable' }}>
+            <main className="flex-1 container max-w-(--breakpoint-2xl) mx-auto p-4 w-full">{children}</main>
+            <Footer translations={translations} />
+          </div>
+          <Client locale={locale as Locale} />
+        </QueryProvider>
       </body>
     </html>
   );

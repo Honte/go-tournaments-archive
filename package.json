@@ -35,6 +35,7 @@
     "@resvg/resvg-js": "2.6.2",
     "@sabaki/go-board": "1.4.3",
     "@tailwindcss/postcss": "4.2.4",
+    "@tanstack/react-query": "5.100.5",
     "@tanstack/react-table": "8.21.3",
     "@types/lodash-es": "4.17.12",
     "clsx": "2.1.1",

@@ -1,12 +1,23 @@
 'use client';
 
-import type { Translations } from '@/i18n/consts';
+import { useQuery } from '@tanstack/react-query';
+import type { Locale } from '@/i18n/consts';
+import { fetchTranslations } from '@/data/api';
 import { GamePopover } from '@/components/GamePopover';
 
 type ClientProps = {
-  rawTranslations: string;
+  locale: Locale;
 };
 
-export function Client({ rawTranslations }: ClientProps) {
-  return <GamePopover translations={JSON.parse(rawTranslations) as Translations} />;
+export function Client({ locale }: ClientProps) {
+  const { data: translations } = useQuery({
+    queryKey: ['i18n', locale],
+    queryFn: () => fetchTranslations(locale),
+  });
+
+  if (!translations) {
+    return null;
+  }
+
+  return <GamePopover translations={translations} />;
 }
