@@ -109,7 +109,7 @@ export function Events({ player, translations }: EventsProps) {
   );
 
   return (
-    <div className="my-2 flex-1">
+    <div>
       <H2>{t('stats.events')}</H2>
       <StatsTable data={data} columns={columns} />
     </div>

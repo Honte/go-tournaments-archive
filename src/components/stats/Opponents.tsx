@@ -113,7 +113,7 @@ export function Opponents({ player, translations }: OpponentsProps) {
   );
 
   return (
-    <div className="my-2">
+    <div className="flex-1">
       <H2>{t('stats.opponents')}</H2>
       <StatsTable data={data} columns={columns} />
     </div>

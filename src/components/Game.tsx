@@ -3,8 +3,8 @@ import { clsx } from 'clsx';
 import { useMemo } from 'react';
 import type { Translations, Translator } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
+import { GameActions } from '@/components/GameActions';
 import { Stone } from '@/components/Stone';
-import { ExternalButton } from '@/components/ui/ExternalButton';
 
 type GameProps = {
   className?: string;
@@ -46,46 +46,9 @@ export function Game({ className, game, players, translations, wide }: GameProps
           {!hasSgf && wide && <div className="max-xs:hidden">&ndash;</div>}
           <PlayerRow t={t} player={away} />
         </div>
-        {hasProps && (
-          <div className="flex gap-2 mt-1">
-            {game.props.sgf && (
-              <ExternalButton url={game.props.sgf} title={t('game.sgf')}>
-                SGF
-              </ExternalButton>
-            )}
-            {game.props.ogs && (
-              <ExternalButton url={game.props.ogs} title={t('game.ogs')}>
-                OGS
-              </ExternalButton>
-            )}
-            {game.props.ai && (
-              <ExternalButton url={game.props.ai} title={t('game.ai')}>
-                AI
-              </ExternalButton>
-            )}
-            <YouTubeLink value={game.props.yt} t={t} />
-          </div>
-        )}
+        {hasProps && <GameActions props={game.props} t={t} />}
       </div>
     </div>
-  );
-}
-
-function YouTubeLink({ value, t }: { value?: string | string[]; t: Translator }) {
-  if (!value || !value.length) {
-    return null;
-  }
-
-  const values = Array.isArray(value) ? value : [value];
-
-  return (
-    <>
-      {values.map((value, index) => (
-        <ExternalButton key={value} url={value} title={t('game.yt')}>
-          YT{values.length > 1 ? `#${index + 1}` : ''}
-        </ExternalButton>
-      ))}
-    </>
   );
 }
 

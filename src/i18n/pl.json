@@ -98,7 +98,10 @@
     "games": "Rozegrane gry",
     "won": "Wygrane gry",
     "lost": "Przegrane gry",
-    "wonPercent": "% wygranych"
+    "wonPercent": "% wygranych",
+    "gameColor": "Kolor",
+    "gameResult": "Wynik",
+    "gameWon": "Wygrana"
   },
   "game": {
     "resign": "Wygrana przez poddanie",
@@ -132,6 +135,7 @@
     "events": "Podsumowanie udziałów",
     "players": "Podsumowanie graczy",
     "opponents": "Podsumowanie przeciwników",
+    "gameRecords": "Zapisane partie",
     "medalists": "Medaliści",
     "countries": "Klasyfikacja medalowa",
     "attendants": "Top %{0} uczestników",
