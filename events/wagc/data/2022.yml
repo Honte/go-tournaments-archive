@@ -1,6 +1,9 @@
 stages:
   - type: tournament
     file: wagc2022.txt
+    notes:
+     pl: dla top 8 dodatkowe breakery
+     en: for top 8 additional breakers    
     komi: 6.5
     scoringColumns:
       - wins

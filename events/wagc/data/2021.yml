@@ -1,4 +1,6 @@
-website: https://wagc2020.org/en/
+website:
+  - https://wagc2020.org/en/
+  - https://sec.pandanet.co.jp/event/41st_wagc/outline_e.htm
 stages:
   - type: tournament
     file: wagc2021.txt

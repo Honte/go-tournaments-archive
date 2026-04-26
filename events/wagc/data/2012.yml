@@ -2,6 +2,9 @@ website: https://www.nihonkiin.or.jp/event/amakisen/worldama/33/e/index.html
 stages:
   - type: tournament
     file: wagc2012.txt
+    notes:
+      pl: dla top 8 dodatkowe breakery
+      en: for top 8 additional breakers
     time: 60min + 3x30s japanese
     komi: 6.5
     scoringColumns:
@@ -13,3 +16,33 @@ stages:
       - sos
       - top8
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+2.5 round:6 sgf:2012/6-ZhijianQiao-HyunjoonLee.sgf
+      - 1-3 1:B+R round:5 sgf:2012/5-ZhijianQiao-ChengHsunChen.sgf
+      - 1-4 1:B+R round:4 sgf:2012/4-ZhijianQiao-ChiHinChan.sgf
+      - 2-5 2:B+2.5 round:5 sgf:2012/5-HyunjoonLee-KwangHyokRi.sgf
+      - 2-6 2:B+R round:7 sgf:2012/7-HyunjoonLee-PalBalogh.sgf
+      - 2-8 2:B+13.5 round:3 sgf:2012/3-HyunjoonLee-SeizoNakazono.sgf
+      - 3-2 2:W+2.5 round:8 sgf:2012/8-ChengHsunChen-HyunjoonLee.sgf
+      - 3-4 3:B+6.5 round:7 sgf:2012/7-ChengHsunChen.sgf
+      - 3-10 3:B+R round:6 sgf:2012/6-ChengHsunChen.sgf
+      - 3-12 3:B+R round:4 sgf:2012/4-ChengHsunChen-LukasPodpera.sgf
+      - 4-9 4:B+1.5 round:6 sgf:2012/6-ChiHinChan-YuxiangLou.sgf
+      - 5-1 1:W+T round:7 sgf:2012/7-KwangHyokRi-ZhijianQiao.sgf
+      - 5-6 5:B+9.5 round:2 sgf:2012/2-KwangHyokRi-PalBalogh.sgf
+      - 5-11 5:B+R round:4 sgf:2012/4-KwangHyokRi-CornelBurzo.sgf
+      - 5-21 5:B+R round:6 sgf:2012/6-KwangHyokRi-YuanZhou.sgf
+      - 8-12 8:B+6.5 round:5 sgf:2012/5-SeizoNakazono-LukasPodpera.sgf
+      - 8-15 8:B+R round:1 sgf:2012/1-SeizoNakazono-PanjawatSaechen.sgf
+      - 8-22 8:B+5.5 round:7 sgf:2012/7-SeizoNakazono-PavolLisy.sgf
+      - 9-1 1:W+R round:2 sgf:2012/2-YuxiangLou-ZhijianQiao.sgf
+      - 10-1 1:W+R round:8 sgf:2012/8-BenjaminTeuber-ZhijianQiao.sgf
+      - 11-7 7:W+8.5 round:8 sgf:2012/8-CornelBurzo-JuriKuronen.sgf
+      - 11-22 11:B+3.5 round:3 sgf:2012/3-CornelBurzo-PavolLisy.sgf
+      - 19-1 1:W+R round:3 sgf:2012/3-KuokWanChan-ZhijianQiao.sgf
+      - 21-3 3:W+R round:2 sgf:2012/2-YuanZhou-ChengHsunChen.sgf
+      - 21-30 21:B+R round:5 sgf:2012/5-YuanZhou-SamAitken.sgf
+      - 24-18 18:W+R round:4 sgf:2012/4-XianyuLi-LongYangLi.sgf
+      - 30-7 7:W+7.5 round:2 sgf:2012/2-SamAitken-JuriKuronen.sgf
+      - 31-5 5:W+R round:3 sgf:2012/3-LotharSpiegel-KwangHyokRi.sgf
+      - 32-8 8:W+R round:8 sgf:2012/8-DraganPaunic-SeizoNakazono.sgf
