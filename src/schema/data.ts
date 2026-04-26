@@ -207,7 +207,7 @@ export type StatsPlayerResult = {
 export type StatsPlayer = {
   id: string;
   name: string;
-  countries: Set<string>;
+  countries: string[];
   medals: StatsMedals;
   categoriesMedals: Record<string, StatsMedals>;
   years: number[];
@@ -221,7 +221,7 @@ export type StatsPlayer = {
 export type StatsOpponent = {
   id: string;
   name: string;
-  countries: Set<string>;
+  countries: string[];
   games: {
     year: number;
     won: boolean;

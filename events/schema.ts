@@ -1,3 +1,4 @@
+import type { SVGProps } from 'react';
 import type { Locale } from '@/i18n/consts';
 
 export type EventConfig = {
@@ -13,4 +14,8 @@ export type EventConfig = {
   hideGamesWithoutSgf?: boolean;
   currentEdition?: boolean;
   categories?: string[];
+};
+
+export type LogoProps = SVGProps<SVGSVGElement> & {
+  mode?: 'logo' | 'favicon';
 };

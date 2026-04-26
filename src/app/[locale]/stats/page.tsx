@@ -35,7 +35,7 @@ export default async function Stats({ params }: PageProps) {
   return (
     <Content>
       <Title>{t('site.allTimeStatsTitle')}</Title>
-      <AllPlayersStats players={players} translations={translations} />
+      <AllPlayersStats players={players} locale={locale} />
     </Content>
   );
 }

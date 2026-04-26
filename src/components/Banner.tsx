@@ -1,4 +1,3 @@
-import { Logo } from '@event/Logo';
 import type { ComponentType } from 'react';
 import { FaAngleRight } from 'react-icons/fa6';
 
@@ -10,14 +9,18 @@ type BannerProps = {
   tooltip?: string;
 };
 
-export function Banner({ Icon = Logo, title, subtitle, href, tooltip }: BannerProps) {
+export function Banner({ Icon, title, subtitle, href, tooltip }: BannerProps) {
   return (
     <a
       href={href}
       className="flex gap-4 xl:p-12 md:p-8 p-4 items-center animate-border border-4 border-event-hover rounded-xl bg:event-gray hover:bg-event-hover transition-colors duration-300 hover:text-event-bg"
       title={tooltip}
     >
-      <Icon className="size-12 md:size-16 xl:size-20" color="black" />
+      {Icon ? (
+        <Icon className="size-12 md:size-16 xl:size-20" color="black" />
+      ) : (
+        <img src="/logo-black.svg" alt="" className="size-12 md:size-16 xl:size-20" />
+      )}
       <div>
         <h3 className="text-lg font-bold md:text-xl xl:text-2xl">{title}</h3>
         <p>{subtitle}</p>

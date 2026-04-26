@@ -9,7 +9,7 @@ import { generateSvg } from '@tools/svg';
 import fg from 'fast-glob';
 import type { NextRequest } from 'next/server';
 
-const THUMB_SIZE = 256;
+const THUMB_SIZE = 128;
 const SGF_DIR = `./events/${EVENT}/sgf`;
 
 type RouteProps = {

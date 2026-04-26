@@ -54,8 +54,8 @@ export function calculateStats(tournaments: Tournament[]): Stats {
       tournamentPlayersMap[pid] = player;
       player.years.push(year);
 
-      if (country) {
-        player.countries.add(country);
+      if (country && !player.countries.includes(country)) {
+        player.countries.push(country);
       }
     }
 
@@ -242,7 +242,7 @@ export function calculateStats(tournaments: Tournament[]): Stats {
 
         return acc;
       }, {}),
-      countries: new Set(),
+      countries: [],
       name: typeof player === 'string' ? id : player.name,
       years: [],
       results: [],

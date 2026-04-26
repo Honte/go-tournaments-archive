@@ -1,21 +1,23 @@
 'use client';
 
+import { useSitemapData } from '@/hooks/useSitemapData';
 import { clsx } from 'clsx';
 import Link from 'next/link';
 import { useCallback, useEffect, useState } from 'react';
-import type { NavigationGroup } from '@/data/sitemap';
+import type { Locale } from '@/i18n/consts';
 import { Hamburger } from '@/components/ui/Hamburger';
 import { Overlay } from '@/components/ui/Overlay';
 
 export type SideNavigationProps = {
-  sitemap: NavigationGroup[];
+  locale: Locale;
   strings: {
     open: string;
     close: string;
   };
 };
 
-export function SideNavigation({ sitemap, strings }: SideNavigationProps) {
+export function SideNavigation({ locale, strings }: SideNavigationProps) {
+  const { data: sitemap, isPending } = useSitemapData(locale);
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -42,7 +44,7 @@ export function SideNavigation({ sitemap, strings }: SideNavigationProps) {
   const toggleMenu = useCallback(() => setOpen((v) => !v), []);
   const closeMenu = useCallback(() => setOpen(false), []);
 
-  if (sitemap.length === 0) {
+  if (!isPending && !sitemap?.length) {
     return null;
   }
 
@@ -58,7 +60,7 @@ export function SideNavigation({ sitemap, strings }: SideNavigationProps) {
       >
         <nav className="flex-1 overflow-y-auto p-2">
           <div className="flex flex-col gap-2 overflow-y-auto">
-            {sitemap.map((group) => (
+            {sitemap?.map((group) => (
               <div key={group.key}>
                 {group.label && (
                   <h3 className="text-xs uppercase tracking-wide text-event-dark mt-2 mb-1 first:mt-0 pl-2">

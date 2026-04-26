@@ -1,12 +1,19 @@
 'use client';
 
-import type { Translations } from '@/i18n/consts';
+import { useTranslationsData } from '@/hooks/useTranslationsData';
+import type { Locale } from '@/i18n/consts';
 import { GamePopover } from '@/components/GamePopover';
 
 type ClientProps = {
-  rawTranslations: string;
+  locale: Locale;
 };
 
-export function Client({ rawTranslations }: ClientProps) {
-  return <GamePopover translations={JSON.parse(rawTranslations) as Translations} />;
+export function Client({ locale }: ClientProps) {
+  const { data: translations } = useTranslationsData(locale);
+
+  if (!translations) {
+    return null;
+  }
+
+  return <GamePopover translations={translations} />;
 }

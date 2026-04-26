@@ -1,19 +1,26 @@
 'use client';
 
 import EVENT_CONFIG from '@event/config';
+import { useTranslationsData } from '@/hooks/useTranslationsData';
 import type { StatsPlayer, TableStats } from '@/schema/data';
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
-import type { Translations } from '@/i18n/consts';
+import type { Locale, Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
 import { sortTableStats } from '@/libs/sort';
 import { toPercentage } from '@/libs/table';
 import { StatsTable } from '@/components/table/StatsTable';
 import { CountryLink } from '@/components/ui/CountryLink';
+import { Loader } from '@/components/ui/Loader';
 import { PlayerCell } from '@/components/ui/PlayerCell';
 
 type AllPlayersStatsProps = {
+  players: Record<string, StatsPlayer>;
+  locale: Locale;
+};
+
+type AllPlayersStatsContentProps = {
   players: Record<string, StatsPlayer>;
   translations: Translations;
 };
@@ -23,10 +30,20 @@ type PlayerRow = TableStats & {
   name: string;
   firstName: string;
   lastName: string;
-  countries: Set<string>;
+  countries: string[];
 };
 
-export function AllPlayersStats({ players, translations }: AllPlayersStatsProps) {
+export function AllPlayersStats({ players, locale }: AllPlayersStatsProps) {
+  const { data: translations } = useTranslationsData(locale);
+
+  if (!translations) {
+    return <Loader />;
+  }
+
+  return <AllPlayersStatsContent players={players} translations={translations} />;
+}
+
+function AllPlayersStatsContent({ players, translations }: AllPlayersStatsContentProps) {
   const t = getTranslator(translations);
 
   const data = useMemo(
@@ -86,7 +103,7 @@ export function AllPlayersStats({ players, translations }: AllPlayersStatsProps)
             header: t('table.country'),
             cell: (info) =>
               jsxJoin(
-                Array.from(info.row.original.countries).map((code) => (
+                info.row.original.countries.map((code) => (
                   <CountryLink key={code} translations={translations} code={code} />
                 )),
                 ', '

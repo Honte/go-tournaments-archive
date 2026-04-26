@@ -1,14 +1,13 @@
 import EVENT_CONFIG from '@event/config';
-import { getAllPlayersStats, getPlayerOpponentsStats, getPlayerStats } from '@/data';
+import { getAllPlayersStats, getPlayerStats } from '@/data';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import type { Locale } from '@/i18n/consts';
 import { SUPPORTED_LOCALES, loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
+import { PlayerStats } from '@/components/PlayerStats';
 import { Achievements } from '@/components/stats/Achievements';
-import { Events } from '@/components/stats/Events';
-import { Opponents } from '@/components/stats/Opponents';
 import { Content } from '@/components/ui/Content';
 import { CountryLink } from '@/components/ui/CountryLink';
 import { Title } from '@/components/ui/Title';
@@ -38,7 +37,6 @@ export default async function PlayerStatsPage({ params }: PageProps) {
 
   const translations = await loadTranslations(locale);
   const player = await getPlayerStats(slug);
-  const opponents = await getPlayerOpponentsStats(slug);
 
   if (!player) {
     return notFound();
@@ -51,7 +49,7 @@ export default async function PlayerStatsPage({ params }: PageProps) {
         {EVENT_CONFIG.showCountry && (
           <h2 className="text-xl text-center font-bold">
             {jsxJoin(
-              Array.from(player.countries)
+              player.countries
                 .filter(Boolean)
                 .map((country) => <CountryLink key={country} translations={translations} code={country} full={true} />),
               ', '
@@ -61,11 +59,7 @@ export default async function PlayerStatsPage({ params }: PageProps) {
       </header>
 
       <Achievements player={player} translations={translations} />
-
-      <div className="flex max-xl:flex-col gap-4">
-        <Events player={player} translations={translations} />
-        <Opponents opponents={opponents} translations={translations} />
-      </div>
+      <PlayerStats slug={slug} locale={locale} />
     </Content>
   );
 }
