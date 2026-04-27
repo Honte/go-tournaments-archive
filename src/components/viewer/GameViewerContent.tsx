@@ -191,14 +191,14 @@ function GameViewerContent(props: GameViewerContentProps) {
           color="black"
           locale={translations.locale}
           onNavigate={onClose}
-          prisoners={board.getCaptures(-1)}
+          prisoners={board.getCaptures(1)}
         />
         <PlayerRow
           player={payload.white}
           color="white"
           locale={translations.locale}
           onNavigate={onClose}
-          prisoners={board.getCaptures(1)}
+          prisoners={board.getCaptures(-1)}
         />
       </div>
 
