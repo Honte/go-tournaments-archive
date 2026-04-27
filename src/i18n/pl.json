@@ -107,6 +107,7 @@
     "gameWon": "Wygrana"
   },
   "game": {
+    "open": "Otwórz",
     "result": "Wynik",
     "resign": "Wygrana przez poddanie",
     "time": "Wygrana przez czas",

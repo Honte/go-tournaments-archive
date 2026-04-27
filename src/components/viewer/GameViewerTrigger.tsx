@@ -1,7 +1,9 @@
 'use client';
 
 import type { ComponentProps, PropsWithChildren } from 'react';
-import { type GameViewerPayload, SHOW_GAME_VIEWER_EVENT } from '@/components/viewer/schema';
+import { Button } from '@/components/ui/Button';
+import { type GameViewerPayload } from '@/components/viewer/schema';
+import { dispatchGameEvent } from '@/components/viewer/utils';
 
 type GameLinkProps = PropsWithChildren<
   Omit<ComponentProps<'button'>, 'type' | 'onClick'> & {
@@ -14,16 +16,18 @@ export function GameViewerTrigger({ payload, children, className, ...props }: Ga
     <button
       type="button"
       className={`block cursor-pointer border-0 bg-transparent outline-none p-0 ${className ?? ''}`}
-      onClick={() => {
-        document.dispatchEvent(
-          new CustomEvent<GameViewerPayload>(SHOW_GAME_VIEWER_EVENT, {
-            detail: payload,
-          })
-        );
-      }}
+      onClick={() => dispatchGameEvent(payload)}
       {...props}
     >
       {children}
     </button>
+  );
+}
+
+export function GameViewButton({ payload, children, ...props }: GameLinkProps) {
+  return (
+    <Button {...props} onClick={() => dispatchGameEvent(payload)}>
+      {children}
+    </Button>
   );
 }

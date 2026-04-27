@@ -107,6 +107,7 @@
     "gameWon": "Won"
   },
   "game": {
+    "open": "View",
     "result": "Result",
     "resign": "Won by resignation",
     "time": "Won by time",

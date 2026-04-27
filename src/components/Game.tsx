@@ -53,7 +53,7 @@ export function Game({ className, game, players, translations, title, komi, wide
           {!hasSgf && wide && <div className="max-xs:hidden">&ndash;</div>}
           <PlayerRow t={t} player={away} />
         </div>
-        {hasProps && <GameActions props={game.props} t={t} />}
+        {hasProps && <GameActions props={game.props} payload={viewerPayload} t={t} />}
       </div>
     </div>
   );
