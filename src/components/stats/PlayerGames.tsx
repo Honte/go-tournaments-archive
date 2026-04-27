@@ -13,6 +13,8 @@ import { CountryLink } from '@/components/ui/CountryLink';
 import { H2 } from '@/components/ui/H2';
 import { PlayerCell } from '@/components/ui/PlayerCell';
 import type { PlayerDetails } from '@/components/ui/PlayerName';
+import { GameViewerTrigger } from '@/components/viewer/GameViewerTrigger';
+import type { GameViewerPayload } from '@/components/viewer/schema';
 
 type PlayerGamesProps = {
   player: ApiPlayerStats;
@@ -30,6 +32,7 @@ type GameRow = {
   opponentLastName: string;
   result: string;
   props: GameProps;
+  payload: GameViewerPayload;
 };
 
 export function PlayerGames({ player, translations }: PlayerGamesProps) {
@@ -47,6 +50,18 @@ export function PlayerGames({ player, translations }: PlayerGamesProps) {
           const opponentName = player.opponents[game.id];
           const [opponentFirstName, ...rest] = opponentName.split(' ');
           const opponentLastName = rest.join(' ') || '';
+          const me = {
+            id: player.id,
+            name: player.name,
+            rank: event.rank,
+            country: event.country,
+          };
+          const opponent = {
+            id: game.id,
+            name: opponentName,
+            rank: game.rank,
+            country: game.country,
+          };
 
           games.push({
             img: game.props.jpg ?? game.props.png ?? game.props.svg,
@@ -54,16 +69,18 @@ export function PlayerGames({ player, translations }: PlayerGamesProps) {
             color: game.color!,
             rank: event.rank,
             won: game.won,
-            opponent: {
-              id: game.id,
-              name: opponentName,
-              rank: game.rank,
-              country: game.country,
-            },
+            opponent,
             opponentFirstName,
             opponentLastName,
             result: game.result,
             props: game.props,
+            payload: {
+              title: ``,
+              black: game.color === 'black' ? me : opponent,
+              white: game.color === 'white' ? me : opponent,
+              result: game.result,
+              props: game.props,
+            },
           });
         }
       }
@@ -80,12 +97,14 @@ export function PlayerGames({ player, translations }: PlayerGamesProps) {
             accessorKey: 'img',
             header: null,
             cell: (info) => (
-              <img
-                src={info.row.original.img}
-                alt={t('game.preview', `${player.name} vs ${info.row.original.opponent.name}`)}
-                className="size-20 min-w-20 min-h-20"
-                loading="lazy"
-              />
+              <GameViewerTrigger payload={info.row.original.payload}>
+                <img
+                  src={info.row.original.img}
+                  alt={t('game.preview', `${player.name} vs ${info.row.original.opponent.name}`)}
+                  className="size-20 min-w-20 min-h-20"
+                  loading="lazy"
+                />
+              </GameViewerTrigger>
             ),
             enableSorting: false,
           },
@@ -144,7 +163,7 @@ export function PlayerGames({ player, translations }: PlayerGamesProps) {
           {
             accessorKey: 'props',
             header: null,
-            cell: (info) => <GameActions props={info.row.original.props} t={t} />,
+            cell: (info) => <GameActions props={info.row.original.props} t={t}/>,
             enableSorting: false,
           },
         ] as ColumnDef<GameRow>[]

@@ -5,7 +5,7 @@ export const SHOW_GAME_VIEWER_EVENT = 'show-game-viewer';
 export type GameViewerPlayer = {
   id: string;
   name: string;
-  rank: string;
+  rank?: string;
   country?: string;
 };
 
