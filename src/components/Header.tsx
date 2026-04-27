@@ -18,8 +18,8 @@ export function Header({ translations }: TopBarProps) {
         <SideNavigation
           locale={translations.locale}
           strings={{
-            open: t('navigation.open'),
-            close: t('navigation.close'),
+            open: t('navigation.openMenu'),
+            close: t('navigation.closeMenu'),
           }}
         />
         <Link

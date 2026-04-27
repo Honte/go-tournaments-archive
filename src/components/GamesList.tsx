@@ -15,6 +15,7 @@ type GameGroup = {
   stage?: string;
   name: string;
   games: string[];
+  komi?: number;
 };
 
 export function GamesList({ tournament, translations }: GamesListProps) {
@@ -30,18 +31,24 @@ export function GamesList({ tournament, translations }: GamesListProps) {
       case 'league':
       case 'ladder-table':
         for (const [index, round] of stage.rounds.entries()) {
+          const roundName = t('table.round', String(index + 1));
+
           list.push({
             stage: name,
-            name: t('table.round', String(index + 1)),
+            name: roundName,
             games: round.filter(gamesFilter),
+            komi: stage.komi,
           });
         }
 
         if (stage.type === 'ladder-table' && stage.playoffs?.length) {
+          const playoffName = t('table.playoffs');
+
           list.push({
             stage: name,
-            name: t('table.playoffs'),
+            name: playoffName,
             games: stage.playoffs.filter(gamesFilter),
+            komi: stage.komi,
           });
         }
 
@@ -49,8 +56,10 @@ export function GamesList({ tournament, translations }: GamesListProps) {
       case 'round-robin-table':
       case 'final':
         list.push({
+          stage: name,
           name,
           games: stage.games.filter(gamesFilter),
+          komi: stage.komi,
         });
         break;
       default:
@@ -74,13 +83,15 @@ export function GamesList({ tournament, translations }: GamesListProps) {
             {list.name}
           </h4>
           <div className="max-md:flex max-md:flex-col md:grid md:grid-cols-2 gap-4 py-2 xl:py-4">
-            {list.games.map((game) => (
+            {list.games.map((game, gameIndex) => (
               <Game
                 className="w-full"
                 key={game}
                 game={games[game]}
                 translations={translations}
                 players={players}
+                title={`${t('site.acronym')} ${tournament.year} - ${list.name} - ${t('table.game', String(gameIndex + 1))}`}
+                komi={list.komi}
                 wide={true}
               />
             ))}
