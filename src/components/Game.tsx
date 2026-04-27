@@ -118,7 +118,7 @@ function getViewerPlayer(id: string, players: Record<string, Player>): GameViewe
   return {
     id: player?.id ?? id,
     name: player?.name ?? id,
-    rank: player?.rank ?? '',
+    rank: player?.rank,
     country: player?.country,
   };
 }

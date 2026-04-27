@@ -6,7 +6,7 @@ import type { GameViewerPayload } from '@/components/viewer/schema';
 
 type GameActionProps = {
   props: GameProps;
-  payload?: GameViewerPayload;
+  payload?: GameViewerPayload | null;
   t: Translator;
 };
 
