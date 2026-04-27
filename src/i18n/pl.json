@@ -107,6 +107,7 @@
     "gameWon": "Wygrana"
   },
   "game": {
+    "result": "Wynik",
     "resign": "Wygrana przez poddanie",
     "time": "Wygrana przez czas",
     "walkover": "Walkower",
@@ -116,7 +117,17 @@
     "ai": "Zobacz analizę AI",
     "preview": "Widok planszy na koniec gry %{0}",
     "komi": "Komi",
-    "prisoners": "Jeńcy"
+    "prisoners": "Jeńcy",
+    "controls": {
+      "first": "Cofnij na start",
+      "backTen": "Cofnij 10 ruchów",
+      "previous": "Cofnij",
+      "play": "Odtwarzaj",
+      "pause": "Pauza",
+      "next": "Następny ruch",
+      "forwardTen": "Przejdź o 10 ruchów",
+      "end": "Przejdź na koniec"
+    }
   },
   "winners": {
     "title": "Medaliści",

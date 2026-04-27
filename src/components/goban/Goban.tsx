@@ -1,5 +1,5 @@
-import { useMemo } from 'react';
-import { iterateStones, sgfToBoard } from '@/libs/goban';
+import type { default as Board, Vertex } from '@sabaki/go-board';
+import { iterateStones } from '@/libs/goban';
 import BLACK from './black.svg';
 import BOARD from './board.svg';
 import WHITE from './white.svg';
@@ -15,66 +15,40 @@ const SVG_BLACK = BLACK as unknown as StaticSvg;
 const SVG_BOARD = BOARD as unknown as StaticSvg;
 const SVG_WHITE = WHITE as unknown as StaticSvg;
 
-type GobanProps = {
+export type GobanProps = {
   className?: string;
-  sgf: string;
+  board: Board;
+  mark?: Vertex;
 };
 
-export function Goban({ className, sgf }: GobanProps) {
-  const board = useMemo(() => sgfToBoard(sgf), [sgf]);
-  const stepV = SVG_BOARD.width / (board.width + 1);
-  const stepH = SVG_BOARD.height / (board.height + 1);
-  const linesV = Array.from({ length: board.width }).map((_, i) => ({
-    x1: stepV * (i + 1),
-    y1: stepH,
-    x2: stepV * (i + 1),
-    y2: SVG_BOARD.height - stepH,
-  }));
-  const linesH = Array.from({ length: board.height }).map((_, i) => ({
-    y1: stepH * (i + 1),
-    x1: stepV,
-    y2: stepH * (i + 1),
-    x2: SVG_BOARD.width - stepV,
-  }));
-  const lines = linesV.concat(linesH);
+export function Goban({ className, board, mark }: GobanProps) {
+  const w = board.width;
+  const h = board.height;
 
-  const stones = useMemo(() => {
-    if (!board) {
-      return [];
-    }
-
-    const result: [number, number, number][] = [];
-    for (const [x, y, color] of iterateStones(board)) {
-      result.push([(x + 1) * stepV - stepV / 2, (y + 1) * stepH - stepH / 2, color]);
-    }
-
-    return result;
-  }, [stepH, stepV, board]);
-
-  if (!sgf) {
-    return null;
+  let path = '';
+  for (let i = 1; i <= w; i++) {
+    path += `M${i} 1L${i} ${h}`;
+  }
+  for (let j = 1; j <= h; j++) {
+    path += `M1 ${j}L${w} ${j}`;
   }
 
   return (
-    <svg
-      className={className}
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox={`0 0 ${SVG_BOARD.width} ${SVG_BOARD.height}`}
-    >
-      <image x="0" y="0" width={SVG_BOARD.width} height={SVG_BOARD.height} href={SVG_BOARD.src} />
-      {lines.map((line, index) => (
-        <line key={index} {...line} stroke="black" strokeWidth="2" />
+    <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox={`0 0 ${w + 1} ${h + 1}`}>
+      <defs>
+        <image id="black" href={SVG_BLACK.src} transform="translate(.51 .52)" />
+        <image id="white" href={SVG_WHITE.src} transform="translate(.53 .52)" />
+      </defs>
+      <image x="0" y="0" width={w + 1} height={h + 1} href={SVG_BOARD.src} />
+      <path d={path} stroke="black" strokeWidth=".02" strokeLinejoin="round" />
+
+      {Array.from(iterateStones(board)).map(({ sign, vertex: [x, y] }) => (
+        <use key={`${x}-${y}`} x={x} y={y} href={`#${sign === -1 ? 'white' : 'black'}`} />
       ))}
-      {stones.map(([x, y, color], index) => (
-        <image
-          key={index}
-          x={x}
-          y={y}
-          href={color === -1 ? SVG_WHITE.src : SVG_BLACK.src}
-          width={stepV}
-          height={stepH}
-        />
-      ))}
+
+      {mark && (
+        <circle cx={mark[0] + 1} cy={mark[1] + 1} r=".3" className="fill-transparent stroke-red-500 stroke-[0.1px]" />
+      )}
     </svg>
   );
 }

@@ -107,6 +107,7 @@
     "gameWon": "Won"
   },
   "game": {
+    "result": "Result",
     "resign": "Won by resignation",
     "time": "Won by time",
     "walkover": "Walkover",
@@ -116,7 +117,17 @@
     "ai": "See the AI analysis of the game",
     "preview": "Board position at the end of game %{0}",
     "komi": "Komi",
-    "prisoners": "Prisoners"
+    "prisoners": "Prisoners",
+    "controls": {
+      "first": "Go to start",
+      "backTen": "Go back 10 moves",
+      "previous": "Go back",
+      "play": "Play",
+      "pause": "Pause",
+      "next": "Next move",
+      "forwardTen": "Go forward 10 moves",
+      "end": "Go to end"
+    }
   },
   "winners": {
     "title": "Medalists",

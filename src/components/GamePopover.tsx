@@ -85,7 +85,13 @@ export function GamePopover({ translations }: GamePopoverProps) {
               </div>
             )}
             <div className="p-4">
-              <GameComponent game={state.game} players={state.players} translations={translations} wide={false} />
+              <GameComponent
+                game={state.game}
+                title={state.title ?? ''}
+                players={state.players}
+                translations={translations}
+                wide={false}
+              />
             </div>
           </div>
         </div>

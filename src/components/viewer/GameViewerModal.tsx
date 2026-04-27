@@ -1,5 +1,3 @@
-'use client';
-
 import { useSgfData } from '@/hooks/useSgfData';
 import { useEffect } from 'react';
 import { FaXmark } from 'react-icons/fa6';
@@ -9,7 +7,7 @@ import { GameActions } from '@/components/GameActions';
 import { Button } from '@/components/ui/Button';
 import { Loader } from '@/components/ui/Loader';
 import { Overlay } from '@/components/ui/Overlay';
-import { GameViewerContent } from '@/components/viewer/GameViewerContent';
+import GameViewerContent from '@/components/viewer/GameViewerContent';
 import type { GameViewerPayload } from '@/components/viewer/schema';
 
 type GameViewerDialogProps = {
@@ -62,10 +60,10 @@ export function GameViewerModal({ payload, translations, onClose }: GameViewerDi
             </button>
           </header>
 
-          {isPending ? (
+          {isPending || !data ? (
             <Loader />
           ) : (
-            <GameViewerContent sgf={data!} payload={payload} translations={translations} onClose={onClose} />
+            <GameViewerContent sgf={data} payload={payload} translations={translations} onClose={onClose} />
           )}
 
           <footer className="flex items-center justify-between gap-3 border-t border-event-soft px-2 md:px-4 py-2 md:py-3">

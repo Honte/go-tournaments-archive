@@ -13,7 +13,7 @@ export function GameViewerTrigger({ payload, children, className, ...props }: Ga
   return (
     <button
       type="button"
-      className={`block cursor-pointer border-0 bg-transparent p-0 ${className ?? ''}`}
+      className={`block cursor-pointer border-0 bg-transparent outline-none p-0 ${className ?? ''}`}
       onClick={() => {
         document.dispatchEvent(
           new CustomEvent<GameViewerPayload>(SHOW_GAME_VIEWER_EVENT, {

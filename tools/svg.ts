@@ -29,8 +29,11 @@ export async function generateSvg(sgfFile: string) {
   }
 
   const stones = [];
-  for (const [x, y, color] of iterateStones(board)) {
-    stones.push(`<use href="#${color === -1 ? 'WHITE' : 'BLACK'}" x="${x}" y="${y}"/>`);
+  for (const {
+    sign,
+    vertex: [x, y],
+  } of iterateStones(board)) {
+    stones.push(`<use href="#${sign === -1 ? 'WHITE' : 'BLACK'}" x="${x}" y="${y}"/>`);
   }
 
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}">
