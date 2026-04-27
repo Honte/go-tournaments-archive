@@ -5,20 +5,30 @@ import type { Translations, Translator } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { GameActions } from '@/components/GameActions';
 import { Stone } from '@/components/Stone';
+import { GameViewerTrigger } from '@/components/viewer/GameViewerTrigger';
+import type { GameViewerPayload, GameViewerPlayer } from '@/components/viewer/schema';
 
 type GameProps = {
-  className?: string;
   game: Game;
+  title: string;
+  className?: string;
   players: Record<string, Player>;
   translations: Translations;
+  komi?: number;
   wide?: boolean;
 };
 
-export function Game({ className, game, players, translations, wide }: GameProps) {
+export function Game({ className, game, players, translations, title, komi, wide }: GameProps) {
   const t = getTranslator(translations);
   const [home, away] = useMemo(() => game.players.map((p) => ({ ...players[p.id], ...p })), [game, players]);
   const hasSgf = game.props.sgf;
   const hasProps = Object.keys(game.props).length > 0;
+  const preview = game.props.jpg ?? game.props.svg ?? game.props.png;
+  const viewerPayload = useMemo(
+    () => (hasSgf ? getViewerPayload(game, players, title, komi) : null),
+    [game, hasSgf, komi, players, title]
+  );
+  const gameTitle = t('game.preview', `${title}: ${home.name} vs ${away.name}`);
 
   return (
     <div
@@ -27,13 +37,10 @@ export function Game({ className, game, players, translations, wide }: GameProps
         'max-xs:flex-col': !wide,
       })}
     >
-      {hasSgf && (
-        <img
-          src={game.props.jpg ?? game.props.svg}
-          alt={t('game.preview', `${home.name} vs ${away.name}`)}
-          className="size-20"
-          loading="lazy"
-        />
+      {hasSgf && preview && (
+        <GameViewerTrigger payload={viewerPayload!} aria-label={gameTitle}>
+          <img src={preview} alt={gameTitle} className="size-20" loading="lazy" />
+        </GameViewerTrigger>
       )}
       <div className="flex flex-col">
         <div
@@ -85,4 +92,33 @@ function PlayerScore({ score, t }: { score: string; t: Translator }) {
   }
 
   return `+${score}`;
+}
+
+function getViewerPayload(
+  game: Game,
+  players: Record<string, Player>,
+  title: string,
+  komi?: number
+): GameViewerPayload {
+  const [black, white] = game.players;
+
+  return {
+    black: getViewerPlayer(black.id, players),
+    white: getViewerPlayer(white.id, players),
+    props: game.props,
+    result: game.result,
+    komi,
+    title,
+  };
+}
+
+function getViewerPlayer(id: string, players: Record<string, Player>): GameViewerPlayer {
+  const player = players[id];
+
+  return {
+    id: player?.id ?? id,
+    name: player?.name ?? id,
+    rank: player?.rank ?? '',
+    country: player?.country,
+  };
 }

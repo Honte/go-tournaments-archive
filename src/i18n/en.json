@@ -23,8 +23,10 @@
       "anchor": "Home page",
       "title": "Go to home page"
     },
-    "open": "Open menu",
-    "close": "Close menu",
+    "open": "Open",
+    "close": "Close",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
     "archiveLabel": "%{0} Archive",
     "categories": "Categories",
     "tournaments": "Tournaments"
@@ -96,6 +98,7 @@
     "best": "Best",
     "bestPlace": "Best place",
     "games": "Games played",
+    "game": "Game %{0}",
     "won": "Games won",
     "lost": "Games lost",
     "wonPercent": "% won",
@@ -111,7 +114,9 @@
     "ogs": "See the game's relay in the Online Go Server",
     "yt": "See the video broadcast of the game",
     "ai": "See the AI analysis of the game",
-    "preview": "Board position at the end of game %{0}"
+    "preview": "Board position at the end of game %{0}",
+    "komi": "Komi",
+    "prisoners": "Prisoners"
   },
   "winners": {
     "title": "Medalists",

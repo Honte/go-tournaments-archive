@@ -2,6 +2,7 @@
 
 import { useTranslationsData } from '@/hooks/useTranslationsData';
 import type { Locale } from '@/i18n/consts';
+import { GameViewer } from '@/components/viewer/GameViewer';
 import { GamePopover } from '@/components/GamePopover';
 
 type ClientProps = {
@@ -15,5 +16,10 @@ export function Client({ locale }: ClientProps) {
     return null;
   }
 
-  return <GamePopover translations={translations} />;
+  return (
+    <>
+      <GamePopover translations={translations} />
+      <GameViewer translations={translations} />
+    </>
+  );
 }

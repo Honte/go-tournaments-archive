@@ -23,8 +23,10 @@
       "anchor": "Strona główna",
       "title": "Przejdź na stronę główną"
     },
-    "open": "Otwórz menu",
-    "close": "Zamknij menu",
+    "open": "Otwórz",
+    "close": "Zamknij",
+    "openMenu": "Otwórz menu",
+    "closeMenu": "Zamknij menu",
     "archiveLabel": "Archiwum %{0}",
     "categories": "Kategorie",
     "tournaments": "Turnieje"
@@ -96,6 +98,7 @@
     "best": "Najwyżej",
     "bestPlace": "Najwyższe miejsce",
     "games": "Rozegrane gry",
+    "game": "Gra %{0}",
     "won": "Wygrane gry",
     "lost": "Przegrane gry",
     "wonPercent": "% wygranych",
@@ -111,7 +114,9 @@
     "ogs": "Zobacz relacje w serwisie Online Go Server",
     "yt": "Zobacz relację wideo z partii",
     "ai": "Zobacz analizę AI",
-    "preview": "Widok planszy na koniec gry %{0}"
+    "preview": "Widok planszy na koniec gry %{0}",
+    "komi": "Komi",
+    "prisoners": "Jeńcy"
   },
   "winners": {
     "title": "Medaliści",
