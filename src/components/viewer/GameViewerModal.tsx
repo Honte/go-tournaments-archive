@@ -45,9 +45,9 @@ export function GameViewerModal({ payload, translations, onClose }: GameViewerDi
           role="dialog"
           aria-modal="true"
           aria-label={payload.title}
-          className="flex max-h-[95dvh] w-[95vw] flex-col overflow-hidden rounded-md bg-event-light text-event-dark shadow-2xl md:h-[95dvh] md:w-[min(95vw,calc(95dvh-16.5rem))] md:min-w-md"
+          className="flex h-[95dvh] w-[95vw] flex-col overflow-hidden rounded-md bg-event-light text-event-dark shadow-2xl md:w-[min(95vw,calc(95dvh-16.5rem))] md:min-w-md"
         >
-          <header className="flex items-center gap-2 p-1 md:p-2 md:px-3 bg-event-dark text-event-light">
+          <header className="flex shrink-0 items-center gap-2 p-1 md:p-2 md:px-3 bg-event-dark text-event-light">
             <h2 className="min-w-0 px-1 flex-1 truncate text-sm font-semibold">{payload.title}</h2>
             <button
               type="button"
@@ -61,12 +61,14 @@ export function GameViewerModal({ payload, translations, onClose }: GameViewerDi
           </header>
 
           {isPending || !data ? (
-            <Loader />
+            <div className="flex min-h-0 flex-1 items-center justify-center">
+              <Loader />
+            </div>
           ) : (
             <GameViewerContent sgf={data} payload={payload} translations={translations} onClose={onClose} />
           )}
 
-          <footer className="flex items-center justify-between gap-3 border-t border-event-soft px-2 md:px-4 py-2 md:py-3">
+          <footer className="flex shrink-0 items-center justify-between gap-3 border-t border-event-soft px-2 md:px-4 py-2 md:py-3">
             <Button type="button" onClick={onClose}>
               {t('navigation.close')}
             </Button>

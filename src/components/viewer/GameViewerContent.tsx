@@ -36,7 +36,6 @@ function GameViewerContent(props: GameViewerContentProps) {
   const [playing, setPlaying] = useState(false);
   const komi = sgf.komi ?? (payload.komi !== undefined ? String(payload.komi) : '?');
   const result = sgf.result ?? (payload.result !== undefined ? String(payload.result) : '?');
-  const image = payload.props.svg ?? payload.props.png ?? payload.props.jpg;
   const maxMove = sgf.moves.length;
 
   const changePosition = useCallback(
@@ -174,8 +173,8 @@ function GameViewerContent(props: GameViewerContentProps) {
   }, [goBack, goBackTen, goForwardTen, goNext, goToEnd, goToStart, togglePlay]);
 
   return (
-    <div className="flex min-h-0 flex-col gap-2 p-2 md:flex-1 md:p-2 md:px-4">
-      <div className="flex items-center justify-between text-sm font-semibold">
+    <div className="flex min-h-0 flex-1 flex-col gap-2 p-2 md:p-2 md:px-4">
+      <div className="flex shrink-0 items-center justify-between text-sm font-semibold">
         <span>
           {t('game.komi')}: {komi}
         </span>
@@ -185,7 +184,7 @@ function GameViewerContent(props: GameViewerContentProps) {
         <span>{t('game.prisoners')}</span>
       </div>
 
-      <div className="flex flex-col gap-1">
+      <div className="flex shrink-0 flex-col gap-1">
         <PlayerRow
           player={payload.black}
           color="black"
@@ -202,13 +201,15 @@ function GameViewerContent(props: GameViewerContentProps) {
         />
       </div>
 
-      {image && (
-        <div className="flex aspect-square min-h-0 w-full items-center justify-center md:aspect-auto md:flex-1">
-          <Goban board={board} mark={sgf.moves[position - 1]?.vertex} className="rounded-md" />
-        </div>
-      )}
+      <div className="flex min-h-0 flex-1 items-center justify-center overflow-hidden">
+        <Goban
+          board={board}
+          mark={sgf.moves[position - 1]?.vertex}
+          className="block aspect-square max-h-full max-w-full rounded-md"
+        />
+      </div>
 
-      <div className="grid grid-cols-7 gap-1">
+      <div className="grid shrink-0 grid-cols-7 gap-1">
         <GameControlButton label={t('game.controls.first')} icon={<FaBackwardFast />} onClick={goToStart} />
         <GameControlButton label={t('game.controls.backTen')} icon={<FaBackward />} onClick={goBackTen} />
         <GameControlButton label={t('game.controls.previous')} icon={<FaBackwardStep />} onClick={goBack} />
@@ -222,7 +223,9 @@ function GameViewerContent(props: GameViewerContentProps) {
         <GameControlButton label={t('game.controls.end')} icon={<FaForwardFast />} onClick={goToEnd} />
       </div>
 
-      <Slider min={0} max={maxMove} value={position} onChange={onSliderChange} />
+      <div className="shrink-0">
+        <Slider min={0} max={maxMove} value={position} onChange={onSliderChange} />
+      </div>
     </div>
   );
 }
