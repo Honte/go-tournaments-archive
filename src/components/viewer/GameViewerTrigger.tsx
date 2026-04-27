@@ -24,7 +24,7 @@ export function GameViewerTrigger({ payload, children, className, ...props }: Ga
   );
 }
 
-export function GameViewButton({ payload, children, ...props }: GameLinkProps) {
+export function GameViewerButton({ payload, children, ...props }: GameLinkProps) {
   return (
     <Button {...props} onClick={() => dispatchGameEvent(payload)}>
       {children}

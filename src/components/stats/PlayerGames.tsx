@@ -163,7 +163,7 @@ export function PlayerGames({ player, translations }: PlayerGamesProps) {
           {
             accessorKey: 'props',
             header: null,
-            cell: (info) => <GameActions props={info.row.original.props} t={t}/>,
+            cell: (info) => <GameActions props={info.row.original.props} t={t} />,
             enableSorting: false,
           },
         ] as ColumnDef<GameRow>[]
