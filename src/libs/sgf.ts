@@ -1,7 +1,5 @@
 import { tokenize } from '@sabaki/sgf/src/tokenize';
 
-type SgfToken = { type: string; value: string };
-
 export function getSgfRootProperties(content: string) {
   const result: Record<string, string> = {};
 
@@ -30,14 +28,6 @@ export function getSgfRootProperties(content: string) {
   }
 
   return result;
-}
-
-function getBoardSize(size?: string) {
-  if (!size || !/^[1-9]\d*$/.test(size)) {
-    return 19;
-  }
-
-  return Number(size);
 }
 
 function unescapeSgfValue(value: string) {

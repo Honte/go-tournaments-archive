@@ -2,6 +2,7 @@ import EVENT from '@event';
 import EVENT_CONFIG from '@event/config';
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { getGameDetails } from '@/data';
 import { generateJpg } from '@tools/jpg';
 import { generatePng } from '@tools/png';
 import { cleanSgf } from '@tools/sgf';
@@ -28,9 +29,9 @@ export async function GET(request: NextRequest, props: RouteProps) {
 
   try {
     if (details.ext === '.sgf') {
-      const content = await fs.readFile(sgfPath, 'utf-8');
+      const sgf = await getSgf(sgfPath, details.name.endsWith('.raw'));
 
-      return new Response(details.name.endsWith('.raw') ? content : cleanSgf(content), {
+      return new Response(sgf, {
         headers: { 'Content-Type': 'application/x-go-sgf' },
       });
     }
@@ -108,4 +109,21 @@ export async function generateStaticParams() {
   }
 
   return output;
+}
+
+async function getSgf(file: string, raw = false) {
+  const content = await fs.readFile(file, 'utf-8');
+
+  if (raw) {
+    return content;
+  }
+
+  const sgfPath = path.posix.join('/sgf', ...path.relative(SGF_DIR, file).split(path.sep));
+  const game = await getGameDetails(sgfPath);
+
+  if (!game) {
+    throw new Error(`Could not find game for ${sgfPath}`);
+  }
+
+  return cleanSgf(content, game);
 }
