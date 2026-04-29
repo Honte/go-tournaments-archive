@@ -13,3 +13,10 @@ stages:
       - sos
       - sosos
     findSharedPlaces: true
+    games:
+      - 1-7 1:B+R round:4 sgf:1997/4-JunLiu-HakyeongYi.sgf
+      - 4-15 4:B+R round:5 sgf:1997/5-ZhihanLin-CsabaMero.sgf
+      - 4-20 4:B+R round:1 sgf:1997/1-ZhihanLin-GeraldWesthoff.sgf
+      - 7-20 7:B+R round:5 sgf:1997/5-HakyeongYi-GeraldWesthoff.sgf
+      - 7-21 7:B+R round:8 sgf:1997/8-HakyeongYi-BokeunChi.sgf
+      - 11-4 4:W+19.5 round:4 sgf:1997/4-HosukYi-ZhihanLin.sgf

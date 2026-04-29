@@ -13,3 +13,5 @@ stages:
       - sos
       - sosos
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+2.5 round:6 sgf:1998/6-Ch'anuKim-SatoshiHiraoka.sgf

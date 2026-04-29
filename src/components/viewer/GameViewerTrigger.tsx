@@ -2,21 +2,20 @@
 
 import type { ComponentProps, PropsWithChildren } from 'react';
 import { Button } from '@/components/ui/Button';
-import { type GameViewerPayload } from '@/components/viewer/schema';
 import { dispatchGameEvent } from '@/components/viewer/utils';
 
 type GameLinkProps = PropsWithChildren<
   Omit<ComponentProps<'button'>, 'type' | 'onClick'> & {
-    payload: GameViewerPayload;
+    sgfPath: string;
   }
 >;
 
-export function GameViewerTrigger({ payload, children, className, ...props }: GameLinkProps) {
+export function GameViewerTrigger({ sgfPath, children, className, ...props }: GameLinkProps) {
   return (
     <button
       type="button"
       className={`block cursor-pointer border-0 bg-transparent outline-none p-0 ${className ?? ''}`}
-      onClick={() => dispatchGameEvent(payload)}
+      onClick={() => dispatchGameEvent(sgfPath)}
       {...props}
     >
       {children}
@@ -24,9 +23,9 @@ export function GameViewerTrigger({ payload, children, className, ...props }: Ga
   );
 }
 
-export function GameViewerButton({ payload, children, ...props }: GameLinkProps) {
+export function GameViewerButton({ sgfPath, children, ...props }: GameLinkProps) {
   return (
-    <Button {...props} onClick={() => dispatchGameEvent(payload)}>
+    <Button {...props} onClick={() => dispatchGameEvent(sgfPath)}>
       {children}
     </Button>
   );

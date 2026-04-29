@@ -31,6 +31,7 @@ type PlayerRow = TableStats & {
   firstName: string;
   lastName: string;
   countries: string[];
+  sgfs: number;
 };
 
 export function AllPlayersStats({ players, locale }: AllPlayersStatsProps) {
@@ -51,7 +52,7 @@ function AllPlayersStatsContent({ players, translations }: AllPlayersStatsConten
       Object.values(players)
         .filter((p) => p.id !== 'BYE')
         .map<PlayerRow>((p) => {
-          const { id, name, medals, years, totalGames, totalWon, bestPlace, countries } = p;
+          const { id, name, medals, years, totalGames, totalWon, bestPlace, countries, sgfs } = p;
           const [firstName, lastName] = (name ?? '').split(' ');
           const [gold, silver, bronze] = medals;
 
@@ -70,6 +71,7 @@ function AllPlayersStatsContent({ players, translations }: AllPlayersStatsConten
             won: totalWon,
             lost: totalGames - totalWon,
             wonPercent: totalWon / totalGames,
+            sgfs,
           };
         })
         .sort(sortTableStats),
@@ -140,6 +142,10 @@ function AllPlayersStatsContent({ players, translations }: AllPlayersStatsConten
           {
             accessorKey: 'lost',
             header: t('table.lost'),
+          },
+          {
+            accessorKey: 'sgfs',
+            header: t('table.sgfs'),
           },
           {
             accessorKey: 'wonPercent',

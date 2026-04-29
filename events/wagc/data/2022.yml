@@ -2,8 +2,8 @@ stages:
   - type: tournament
     file: wagc2022.txt
     notes:
-     pl: dla top 8 dodatkowe breakery
-     en: for top 8 additional breakers    
+      pl: dla top 8 dodatkowe breakery
+      en: for top 8 additional breakers
     komi: 6.5
     scoringColumns:
       - wins
@@ -14,3 +14,116 @@ stages:
       - sos
       - top8
     findSharedPlaces: true
+    games:
+      - 1-3 1:B+10.50 round:3 sgf:2022/3-BaoxiangBai-ParkYoungWoon.sgf
+      - 1-10 1:B+0 round:4 sgf:2022/4-BaoxiangBai-WanKaoLou.sgf
+      - 1-17 1:B+R round:1 sgf:2022/1-BaoxiangBai-JieLinXia.sgf
+      - 2-1 1:W+R round:5 sgf:2022/5-ChoiHwanYoung-BaoxiangBai.sgf
+      - 2-6 2:B+1.50 round:4 sgf:2022/4-ChoiHwanYoung-YuChengLai.sgf
+      - 2-22 2:B+53.50 round:2 sgf:2022/2-ChoiHwanYoung-StjepanMestrovic.sgf
+      - 3-5 3:B+9.50 round:2 sgf:2022/2-ParkYoungWoon-SatoshiHiraoka.sgf
+      - 3-8 3:B+R round:6 sgf:2022/6-ParkYoungWoon-DenisDobranis.sgf
+      - 3-12 3:B+R round:4 sgf:2022/4-ParkYoungWoon-QuangTueTran.sgf
+      - 4-1 1:W+R round:6 sgf:2022/6-ThomasDebarre-BaoxiangBai.sgf
+      - 4-7 4:B+14.50 round:4 sgf:2022/4-ThomasDebarre-WichrichKaruehawanit.sgf
+      - 4-38 4:B+R round:2 sgf:2022/2-ThomasDebarre-FengYangLim.sgf
+      - 5-11 5:B+12.50 round:6 sgf:2022/6-SatoshiHiraoka-ShouKaiLee.sgf
+      - 5-21 5:B+R round:4 sgf:2022/4-SatoshiHiraoka-SofiaMalatesta.sgf
+      - 5-34 5:B+R round:3 sgf:2022/3-SatoshiHiraoka-RamosJoseAntonioFelix.sgf
+      - 6-13 6:B+R round:5 sgf:2022/5-YuChengLai-MatthewBurrall.sgf
+      - 6-18 6:B+R round:3 sgf:2022/3-YuChengLai-CezaryCzernecki.sgf
+      - 7-2 2:W+8.50 round:6 sgf:2022/6-WichrichKaruehawanit-ChoiHwanYoung.sgf
+      - 7-9 7:B+7.50 round:3 sgf:2022/3-WichrichKaruehawanitFernandoAguilar.sgf
+      - 7-17 7:B+38.50 round:5 sgf:2022/5-WichrichKaruehawanit-JieLinXia.sgf
+      - 7-24 7:B+R round:1 sgf:2022/1-WichrichKaruehawanit-JulioMelchert.sgf
+      - 8-2 2:W+R round:3 sgf:2022/3-DenisDobranis-ChoiHwanYoung.sgf
+      - 8-28 8:B+R round:5 sgf:2022/5-DenisDobranis-LuisPalacios.sgf
+      - 8-31 8:B+30.50 round:1 sgf:2022/1-DenisDobranis-PranjalSrivastava.sgf
+      - 9-15 9:B+R round:4 sgf:2022/4-FernandoAguilar-AndrejKralj.sgf
+      - 9-21 9:B+R round:2 sgf:2022/2-FernandoAguilar-SofiaMalatesta.sgf
+      - 9-22 9:B+R round:6 sgf:2022/6-FernandoAguilar-StjepanMestrovic.sgf
+      - 10-5 5:W+R round:5 sgf:2022/5-WanKaoLou-SatoshiHiraoka.sgf
+      - 10-13 10:B+3.50 round:3 sgf:2022/3-WanKaoLou-MatthewBurrall.sgf
+      - 10-33 10:B+45.50 round:1 sgf:2022/1-WanKaoLou-ManuelAlejandrGomez.sgf
+      - 11-8 8:W+17.50 round:2 sgf:2022/2-ShouKaiLee-DenisDobranis.sgf
+      - 11-9 11:B+R round:5 sgf:2022/5-ShouKaiLee-FernandoAguilar.sgf
+      - 11-41 11:B+R round:3 sgf:2022/3-ShouKaiLee-AguidoHoratioDavis.sgf
+      - 12-2 2:W+6.50 round:1 sgf:2022/1-QuangTueTran-ChoiHwanYoung.sgf
+      - 12-27 12:B+R round:5 sgf:2022/5-QuangTueTran-LucmanBounoider.sgf
+      - 12-32 12:B+13.50 round:3 sgf:2022/3-QuangTueTran-VladasZaleskas.sgf
+      - 13-19 13:B+R round:6 sgf:2022/6-MatthewBurrall-TugkanEren.sgf
+      - 13-24 13:B+R round:4 sgf:2022/4-MatthewBurrall-JulioMelchert.sgf
+      - 13-39 13:B+R round:2 sgf:2022/2-MatthewBurrall-EshkarGutkind.sgf
+      - 14-4 4:W+R round:5 sgf:2022/5-YiHanChen-ThomasDebarre.sgf
+      - 14-5 5:W+R round:1 sgf:2022/1-YiHanChen-SatoshiHiraoka.sgf
+      - 14-16 14:B+R round:3 sgf:2022/3-YiHanChen-BenMantle.sgf
+      - 15-20 15:B+6.50 round:1 sgf:2022/1-AndrejKralj-PeterSmolarik.sgf
+      - 16-18 18:W+R round:1 sgf:2022/1-BenMantle-CezaryCzernecki.sgf
+      - 16-33 16:B+R round:5 sgf:2022/5-BenMantle-ManuelAlejandrGomez.sgf
+      - 16-36 16:B+R round:2 sgf:2022/2-BenMantle-JulioSaquicCanil.sgf
+      - 17-12 12:W+R round:6 sgf:2022/6-JieLinXia-QuangTueTran.sgf
+      - 17-22 17:B+3.50 round:4 sgf:2022/4-JieLinXia-StjepanMestrovic.sgf
+      - 17-26 17:B+R round:2 sgf:2022/2-JieLinXia-HiroakiOkawa.sgf
+      - 18-8 8:W+R round:4 sgf:2022/4-CezaryCzernecki-DenisDobranis.sgf
+      - 18-28 18:B+R round:2 sgf:2022/2-CezaryCzernecki-LuisPalacios.sgf
+      - 18-33 18:B+58.50 round:6 sgf:2022/6-CezaryCzernecki-ManuelAlejandrGomez.sgf
+      - 19-3 3:W+R round:5 sgf:2022/5-TugkanEren-ParkYoungWoon.sgf
+      - 19-9 9:W+R round:1 sgf:2022/1-TugkanEren-FernandoAguilar.sgf
+      - 19-23 19:B+7.50 round:3 sgf:2022/3-TugkanEren-PetrCipra.sgf
+      - 20-6 6:W+0 round:6 sgf:2022/6-PeterSmolarik-YuChengLai.sgf
+      - 20-11 11:W+28.50 round:4 sgf:2022/4-PeterSmolarik-ShouKaiLee.sgf
+      - 20-40 20:B+52.50 round:2 sgf:2022/2-PeterSmolarik-JeffreydeCastro.sgf
+      - 21-14 14:W+R round:6 sgf:2022/6-SofiaMalatesta-YiHanChen.sgf
+      - 21-18 21:B+11.50 round:5 sgf:2022/5-SofiaMalatesta-CezaryCzernecki.sgf
+      - 21-35 21:B+7.50 round:1 sgf:2022/1-SofiaMalatesta-LisaMayer.sgf
+      - 21-43 21:B+R round:3 sgf:2022/3-SofiaMalatesta-PerezAnibal.sgf
+      - 22-29 22:B+R round:3 sgf:2022/3-StjepanMestrovic-BendeBarcza.sgf
+      - 22-31 22:B+R round:5 sgf:2022/5-StjepanMestrovic-PranjalSrivastava.sgf
+      - 22-37 22:B+5.50 round:1 sgf:2022/1-StjepanMestrovic-MarcStoehr.sgf
+      - 23-15 15:W+15.50 round:6 sgf:2022/6-PetrCipra-AndrejKralj.sgf
+      - 24-20 20:W+17.50 round:5 sgf:2022/5-JulioMelchert-PeterSmolarik.sgf
+      - 24-30 24:B+28.50 round:2 sgf:2022/2-JulioMelchert-GhlontiGiorgi.sgf
+      - 25-7 7:W+R round:2 sgf:2022/2-DolgorsurenBatmunkh-WichrichKaruehawanit.sgf
+      - 25-34 25:B+8.50 round:6 sgf:2022/6-DolgorsurenBatmunkh-RamosJoseAntonioFelix.sgf
+      - 25-38 25:B+58.50 round:4 sgf:2022/4-DolgorsurenBatmunkh-FengYangLim.sgf
+      - 26-16 16:W+7.50 round:6 sgf:2022/6-HiroakiOkawa-BenMantle.sgf
+      - 26-25 26:B+R round:5 sgf:2022/5-HiroakiOkawa-DolgorsurenBatmunkh.sgf
+      - 26-37 26:B+R round:3 sgf:2022/3-HiroakiOkawaMarcStoehr.sgf
+      - 27-11 11:W+6.50 round:1 sgf:2022/1-LucmanBounoider-ShouKaiLee.sgf
+      - 27-36 27:B+0 round:6 sgf:2022/6-LucmanBounoider-JulioSaquicCanil.sgf
+      - 27-40 27:B+R round:3 sgf:2022/3-LucmanBounoider-JeffreydeCastro.sgf
+      - 28-19 19:W+22.50 round:4 sgf:2022/4-LuisPalacios-TugkanEren.sgf
+      - 28-33 28:B+9.50 round:3 sgf:2022/3-LuisPalacios-ManuelAlejandrGomez.sgf
+      - 29-6 6:W+R round:2 sgf:2022/2-BendeBarcza-YuChengLai.sgf
+      - 29-27 27:W+53.50 round:4 sgf:2022/4-BendeBarcza-LucmanBounoider.sgf
+      - 29-41 29:B+R round:5 sgf:2022/5-BendeBarcza-AguidoHoratioDavis.sgf
+      - 30-25 25:W+12.50 round:1 sgf:2022/1-GhlontiGiorgi-DolgorsurenBatmunkh.sgf
+      - 30-43 30:B+10.50 round:5 sgf:2022/5-GhlontiGiorgi-PerezAnibal.sgf
+      - 31-10 10:W+59.50 round:6 sgf:2022/6-PranjalSrivastava-WanKaoLou.sgf
+      - 31-20 20:W+9.50 round:3 sgf:2022/3-PranjalSrivastava-PeterSmolarik.sgf
+      - 33-34 33:B+5.50 round:4 sgf:2022/4-ManuelAlejandrGomez-RamosJoseAntonioFelix.sgf
+      - 33-45 33:B+R round:2 sgf:2022/2-ManuelAlejandrGomez-EdgarIvanEscobar.sgf
+      - 34-13 13:W+71.50 round:1 sgf:2022/1-RamosJoseAntonioFelix-MatthewBurrall.sgf
+      - 35-16 16:W+R round:4 sgf:2022/4-LisaMayer-BenMantle.sgf
+      - 35-19 19:W+R round:2 sgf:2022/2-LisaMayer-TugkanEren.sgf
+      - 36-23 23:W+R round:5 sgf:2022/5-JulioSaquicCanil-PetrCipra.sgf
+      - 36-28 28:W+R round:1 sgf:2022/1-JulioSaquicCanil-LuisPalacios.sgf
+      - 37-12 12:W+59.50 round:2 sgf:2022/2-MarcStoehr-QuangTueTran.sgf
+      - 37-29 29:W+5.50 round:6 sgf:2022/6-MarcStoehr-BendeBarcza.sgf
+      - 37-45 37:B+R round:4 sgf:2022/4-MarcStoehr-EdgarIvanEscobar.sgf
+      - 38-17 17:W+92.50 round:3 sgf:2022/3-FengYangLim-JieLinXia.sgf
+      - 38-32 32:W+R round:5 sgf:2022/5-FengYangLim-VladasZaleskas.sgf
+      - 39-4 4:W+R round:1 sgf:2022/1-EshkarGutkind-ThomasDebarre.sgf
+      - 39-31 31:W+21.50 round:4 sgf:2022/4-EshkarGutkind-PranjalSrivastava.sgf
+      - 39-45 39:B+31.50 round:6 sgf:2022/6-EshkarGutkind-EdgarIvanEscobar.sgf
+      - 40-24 24:W+2.50 round:6 sgf:2022/6-JeffreydeCastro-JulioMelchert.sgf
+      - 40-41 41:W+3.50 round:1 sgf:2022/1-JeffreydeCastro-AguidoHoratioDavis.sgf
+      - 41-14 14:W+R round:4 sgf:2022/4-AguidoHoratioDavis-YiHanChen.sgf
+      - 41-15 15:W+R round:2 sgf:2022/2-AguidoHoratioDavis-AndrejKralj.sgf
+      - 41-38 38:W+8.50 round:6 sgf:2022/6-AguidoHoratioDavis-FengYangLim.sgf
+      - 42-30 42:B+R round:3 sgf:2022/3-ScottCobbold-GhlontiGiorgi.sgf
+      - 43-10 10:W+R round:2 sgf:2022/2-PerezAnibal-WanKaoLou.sgf
+      - 43-35 35:W+R round:6 sgf:2022/6-PerezAnibal-LisaMayer.sgf
+      - 43-36 36:W+R round:4 sgf:2022/4-PerezAnibal-JulioSaquicCanil.sgf
+      - 45-35 35:W+56.50 round:3 sgf:2022/3-EdgarIvanEscobar-LisaMayer.sgf
+      - 45-43 43:W+51.50 round:1 sgf:2022/1-EdgarIvanEscobar-PerezAnibal.sgf

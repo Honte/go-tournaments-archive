@@ -1,5 +1,5 @@
 import EVENT from '@event';
-import { writeFile } from 'node:fs/promises';
+import { readFile, writeFile } from 'node:fs/promises';
 import sgfParser, { SgfNode } from '@sabaki/sgf';
 import fg from 'fast-glob';
 
@@ -10,7 +10,7 @@ let noFix = 0;
 let corrupted = 0;
 for (const file of files) {
   try {
-    const sgf = sgfParser.parseFile(file) as SgfNode[];
+    const sgf = sgfParser.parse(await readFile(file, 'utf-8'));
     let fixed = false;
 
     if (fixPlayerRanks(sgf)) {

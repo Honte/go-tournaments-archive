@@ -1,0 +1,273 @@
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]
+PW[Cezary Czernecki]PB[Andrius Petrauskas]WR[5d]BR[4d]C[Mistakes:
+
+Player	Move	Loss 	Score
+
+Black	 49	  4.2	W+5.6 points
+Black	 63	  6.3	W+12.5 points
+Black	 65	  4.2	W+14.7 points
+White	 72	  4.5	W+10.5 points
+Black	 73	  5.2	W+15.7 points
+White	 74	  4.4	W+11.3 points
+White	104	  4.9	W+3.2 points
+Black	135	  4.8	W+10.3 points
+Black	139	  5.3	W+17.2 points
+Black	143	  6.0	W+19.9 points
+Black	145	  4.2	W+24.8 points
+White	146	 18.0	W+6.8 points
+Black	147	 16.6	W+23.4 points
+White	154	  5.4	W+20.3 points
+Black	155	  6.5	W+26.8 points
+White	158	 20.2	W+8.3 points
+White	162	  7.2	B+1.7 points
+White	172	 41.4	B+41.3 points]RE[B+Resign]MULTIGOGM[1]
+;B[cp]
+;W[pd]
+;B[dd]
+;W[pq]
+;B[qo]
+;W[op]
+;B[ql]
+;W[ep]
+;B[eq]
+;W[fq]
+;B[dq]
+;W[fp]
+;B[cn]
+;W[jp]
+;B[qc]
+;W[pc]
+;B[qd]
+;W[pe]
+;B[rf]
+;W[fc]
+;B[id]
+;W[cc]
+;B[dc]
+;W[cd]
+;B[de]
+;W[db]
+;B[eb]
+;W[cb]
+;B[fb]
+;W[cf]
+;B[qg]
+;W[ld]
+;B[kp]
+;W[kq]
+;B[lq]
+;W[ko]
+;B[lp]
+;W[jq]
+;B[lo]
+;W[pn]
+;B[qn]
+;W[pm]
+;B[kn]
+;W[jo]
+;B[pl]
+;W[nm]
+;B[lm]
+;W[ol]
+;B[pj]C[Mistake!
+
+This move is 4.2 points worse than the AI move.
+
+White is ahead by 5.6 points.]
+;W[mn]
+;B[ln]
+;W[oj]
+;B[oi]
+;W[nj]
+;B[im]
+;W[dp]
+;B[co]
+;W[cq]
+;B[cr]
+;W[bq]
+;B[fr]
+;W[br]
+;B[dr]C[Mistake!
+
+This move is 6.3 points worse than the AI move.
+
+White is ahead by 12.5 points.]
+;W[gr]
+;B[bs]C[Mistake!
+
+This move is 4.2 points worse than the AI move.
+
+White is ahead by 14.7 points.]
+;W[fs]
+;B[bp]
+;W[er]
+;B[aq]
+;W[pi]
+;B[qj]
+;W[oh]C[Mistake!
+
+This move is 4.5 points worse than the AI move.
+
+White is ahead by 10.5 points.]
+;B[ch]C[Mistake!
+
+This move is 5.2 points worse than the AI move.
+
+White is ahead by 15.7 points.]
+;W[df]C[Mistake!
+
+This move is 4.4 points worse than the AI move.
+
+White is ahead by 11.3 points.]
+;B[gc]
+;W[gd]
+;B[hd]
+;W[cj]
+;B[di]
+;W[dj]
+;B[ej]
+;W[ek]
+;B[fj]
+;W[fk]
+;B[gj]
+;W[gk]
+;B[hk]
+;W[hj]
+;B[hl]
+;W[fm]
+;B[ij]
+;W[hi]
+;B[fh]
+;W[ii]
+;B[ji]
+;W[jj]
+;B[ik]
+;W[jh]
+;B[ki]
+;W[hg]
+;B[ef]
+;W[gf]
+;B[dg]
+;W[bg]C[Mistake!
+
+This move is 4.9 points worse than the AI move.
+
+White is ahead by 3.2 points.]
+;B[fe]
+;W[kg]
+;B[lj]
+;W[hc]
+;B[gb]
+;W[jc]
+;B[ic]
+;W[qm]
+;B[rm]
+;W[rl]
+;B[ro]
+;W[qi]
+;B[rk]
+;W[rj]
+;B[sl]
+;W[qe]
+;B[re]
+;W[qb]
+;B[rb]
+;W[ge]
+;B[lg]
+;W[fd]
+;B[ec]
+;W[ff]
+;B[ee]
+;W[ib]
+;B[hb]
+;W[jb]
+;B[kf]
+;W[jf]
+;B[ke]C[Mistake!
+
+This move is 4.8 points worse than the AI move.
+
+White is ahead by 10.3 points.]
+;W[je]
+;B[jd]
+;W[kd]
+;B[kh]C[Mistake!
+
+This move is 5.3 points worse than the AI move.
+
+White is ahead by 17.2 points.]
+;W[jg]
+;B[me]
+;W[lh]
+;B[mg]C[Mistake!
+
+This move is 6 points worse than the AI move.
+
+White is ahead by 19.9 points.]
+;W[mh]
+;B[ng]C[Mistake!
+
+This move is 4.2 points worse than the AI move.
+
+White is ahead by 24.8 points.]
+;W[he]C[Mistake!
+
+This move is 18 points worse than the AI move.
+
+White is ahead by 6.8 points.]
+;B[gh]C[Mistake!
+
+This move is 16.6 points worse than the AI move.
+
+White is ahead by 23.4 points.]
+;W[kj]
+;B[li]
+;W[lk]
+;B[kk]
+;W[mi]
+;B[jk]
+;W[og]C[Mistake!
+
+This move is 5.4 points worse than the AI move.
+
+White is ahead by 20.3 points.]
+;B[md]C[Mistake!
+
+This move is 6.5 points worse than the AI move.
+
+White is ahead by 26.8 points.]
+;W[mc]
+;B[nc]
+;W[lb]C[Mistake!
+
+This move is 20.2 points worse than the AI move.
+
+White is ahead by 8.3 points.]
+;B[mb]
+;W[lc]
+;B[nd]
+;W[nb]C[Mistake!
+
+This move is 7.2 points worse than the AI move.
+
+Black is ahead by 1.7 points.]
+;B[ob]
+;W[ma]
+;B[pb]
+;W[le]
+;B[lf]
+;W[nf]
+;B[of]
+;W[pf]
+;B[oc]
+;W[gg]C[Mistake!
+
+This move is 41.4 points worse than the AI move.
+
+Black is ahead by 41.3 points.]
+;B[hh]
+;W[ih]
+;B[if]
+;W[ie]
+;B[hc])

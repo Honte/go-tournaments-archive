@@ -1,4 +1,3 @@
-import type { SgfData } from '@/hooks/useSgfData';
 import Board from '@sabaki/go-board';
 import { type ChangeEvent, useCallback, useEffect, useMemo, useState } from 'react';
 import {
@@ -14,29 +13,25 @@ import {
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { between } from '@/libs/math';
+import type { SgfData, SgfPlayer } from '@/libs/sgf';
 import { Stone } from '@/components/Stone';
 import { Goban } from '@/components/goban/Goban';
 import { PlayerLink } from '@/components/ui/PlayerLink';
 import { PlayerName } from '@/components/ui/PlayerName';
 import { Slider } from '@/components/ui/Slider';
 import { GameControlButton } from '@/components/viewer/GameControlButton';
-import type { GameViewerPayload, GameViewerPlayer } from '@/components/viewer/schema';
 
 type GameViewerContentProps = {
   sgf: SgfData;
-  payload: GameViewerPayload;
   translations: Translations;
   onClose: () => void;
 };
 
 function GameViewerContent(props: GameViewerContentProps) {
-  const { sgf, payload, translations, onClose } = props;
+  const { sgf, translations, onClose } = props;
   const t = getTranslator(translations);
   const [position, setPosition] = useState(sgf.moves.length);
   const [playing, setPlaying] = useState(false);
-  const komi = sgf.komi ?? (payload.komi !== undefined ? String(payload.komi) : '?');
-  const result = sgf.result ?? (payload.result !== undefined ? String(payload.result) : '?');
-  const image = payload.props.svg ?? payload.props.png ?? payload.props.jpg;
   const maxMove = sgf.moves.length;
 
   const changePosition = useCallback(
@@ -174,27 +169,27 @@ function GameViewerContent(props: GameViewerContentProps) {
   }, [goBack, goBackTen, goForwardTen, goNext, goToEnd, goToStart, togglePlay]);
 
   return (
-    <div className="flex min-h-0 flex-col gap-2 p-2 md:flex-1 md:p-2 md:px-4">
-      <div className="flex items-center justify-between text-sm font-semibold">
+    <div className="flex min-h-0 flex-1 flex-col gap-2 p-2 md:p-2 md:px-4">
+      <div className="flex shrink-0 items-center justify-between text-sm font-semibold">
         <span>
-          {t('game.komi')}: {komi}
+          {t('game.komi')}: {sgf.komi ?? '?'}
         </span>
         <span>
-          {t('game.result')}: {result}
+          {t('game.result')}: {sgf.result ?? '?'}
         </span>
         <span>{t('game.prisoners')}</span>
       </div>
 
-      <div className="flex flex-col gap-1">
+      <div className="flex shrink-0 flex-col gap-1">
         <PlayerRow
-          player={payload.black}
+          player={sgf.black}
           color="black"
           locale={translations.locale}
           onNavigate={onClose}
           prisoners={board.getCaptures(1)}
         />
         <PlayerRow
-          player={payload.white}
+          player={sgf.white}
           color="white"
           locale={translations.locale}
           onNavigate={onClose}
@@ -202,13 +197,15 @@ function GameViewerContent(props: GameViewerContentProps) {
         />
       </div>
 
-      {image && (
-        <div className="flex aspect-square min-h-0 w-full items-center justify-center md:aspect-auto md:flex-1">
-          <Goban board={board} mark={sgf.moves[position - 1]?.vertex} className="rounded-md" />
-        </div>
-      )}
+      <div className="flex min-h-0 flex-1 items-center justify-center overflow-hidden">
+        <Goban
+          board={board}
+          mark={sgf.moves[position - 1]?.vertex}
+          className="block aspect-square max-h-full max-w-full rounded-md"
+        />
+      </div>
 
-      <div className="grid grid-cols-7 gap-1">
+      <div className="grid shrink-0 grid-cols-7 gap-1">
         <GameControlButton label={t('game.controls.first')} icon={<FaBackwardFast />} onClick={goToStart} />
         <GameControlButton label={t('game.controls.backTen')} icon={<FaBackward />} onClick={goBackTen} />
         <GameControlButton label={t('game.controls.previous')} icon={<FaBackwardStep />} onClick={goBack} />
@@ -222,7 +219,9 @@ function GameViewerContent(props: GameViewerContentProps) {
         <GameControlButton label={t('game.controls.end')} icon={<FaForwardFast />} onClick={goToEnd} />
       </div>
 
-      <Slider min={0} max={maxMove} value={position} onChange={onSliderChange} />
+      <div className="shrink-0">
+        <Slider min={0} max={maxMove} value={position} onChange={onSliderChange} />
+      </div>
     </div>
   );
 }
@@ -250,7 +249,7 @@ function PlayerRow({
   onNavigate,
   prisoners,
 }: {
-  player: GameViewerPlayer;
+  player: SgfPlayer;
   color: 'black' | 'white';
   locale: string;
   prisoners?: number;
@@ -259,9 +258,18 @@ function PlayerRow({
   return (
     <div className="flex items-center gap-2 text-sm">
       <Stone color={color} className="size-5" />
-      <PlayerLink playerId={player.id} locale={locale} onClick={onNavigate} className="min-w-0 truncate font-semibold">
+      {player.id ? (
+        <PlayerLink
+          playerId={player.id}
+          locale={locale}
+          onClick={onNavigate}
+          className="min-w-0 truncate font-semibold"
+        >
+          <PlayerName player={player} />
+        </PlayerLink>
+      ) : (
         <PlayerName player={player} />
-      </PlayerLink>
+      )}
       <span className="ml-auto font-semibold">{prisoners ?? 0}</span>
     </div>
   );

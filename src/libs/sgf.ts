@@ -1,45 +1,86 @@
-import { tokenize } from '@sabaki/sgf/src/tokenize';
+import type { GameProps } from '@/schema/data';
+import { CustomSgfProps, SgfRootProps } from '@/schema/sgf';
+import type { Sign, Vertex } from '@sabaki/go-board';
+import { parse } from '@sabaki/sgf';
 
-type SgfToken = { type: string; value: string };
+export type SgfPlayer = {
+  id?: string;
+  name: string;
+  rank?: string;
+  country?: string;
+};
 
-export function getSgfRootProperties(content: string) {
-  const result: Record<string, string> = {};
+export type SgfData = {
+  size: number;
+  komi?: number;
+  title?: string;
+  result?: string;
+  black: SgfPlayer;
+  white: SgfPlayer;
+  props?: GameProps;
+  moves: SgfMove[];
+};
 
-  let inRoot = false;
-  let currentProperty: string | undefined;
+export type SgfMove = {
+  sign: Sign;
+  vertex: Vertex;
+};
 
-  for (const token of tokenize(content)) {
-    if (token.type === 'semicolon') {
-      if (inRoot) {
-        break;
-      }
+export function loadSgf(content: string, sgfPath?: string): SgfData {
+  const [root] = parse(content);
+  const moves: SgfMove[] = [];
 
-      inRoot = true;
-      continue;
+  let node = root.children[0];
+  while (node) {
+    const move = node.data?.B || node.data?.W;
+
+    if (move) {
+      const [a, b] = move[0].split('');
+      const x = a.charCodeAt(0) - 97;
+      const y = b.charCodeAt(0) - 97;
+
+      moves.push({
+        sign: node.data.W ? -1 : 1,
+        vertex: [x, y],
+      });
     }
 
-    if (!inRoot) {
-      continue;
-    }
-
-    if (token.type === 'prop_ident') {
-      currentProperty = token.value;
-    } else if (token.type === 'c_value_type' && currentProperty) {
-      result[currentProperty] = unescapeSgfValue(token.value.slice(1, -1));
-    }
+    node = node.children?.[0];
   }
 
-  return result;
+  return {
+    title: toSingleString(root.data[SgfRootProps.GAME_NAME]),
+    size: toSingleNumber(root.data[SgfRootProps.BOARD_SIZE]) ?? 19,
+    komi: toSingleNumber(root.data[SgfRootProps.GAME_KOMI]),
+    result: toSingleString(root.data[SgfRootProps.GAME_RESULT]),
+    black: {
+      id: toSingleString(root.data[CustomSgfProps.BLACK_ID]),
+      name: toSingleString(root.data[SgfRootProps.BLACK_NAME])!,
+      rank: toSingleString(root.data[SgfRootProps.BLACK_RANK]),
+      country: toSingleString(root.data[SgfRootProps.BLACK_TEAM]),
+    },
+    white: {
+      id: toSingleString(root.data[CustomSgfProps.WHITE_ID]),
+      name: toSingleString(root.data[SgfRootProps.WHITE_NAME])!,
+      rank: toSingleString(root.data[SgfRootProps.WHITE_RANK]),
+      country: toSingleString(root.data[SgfRootProps.WHITE_TEAM]),
+    },
+    props: {
+      sgf: sgfPath,
+      ai: toSingleString(root.data[CustomSgfProps.GAME_AI]),
+      ogs: toSingleString(root.data[CustomSgfProps.GAME_OGS]),
+      yt: root.data[CustomSgfProps.GAME_YT],
+    },
+    moves,
+  };
 }
 
-function getBoardSize(size?: string) {
-  if (!size || !/^[1-9]\d*$/.test(size)) {
-    return 19;
-  }
+function toSingleNumber(value?: string[]) {
+  const num = Number(value?.[0]);
 
-  return Number(size);
+  return isNaN(num) ? undefined : num;
 }
 
-function unescapeSgfValue(value: string) {
-  return value.replaceAll(/\\\r?\n/g, '').replaceAll(/\\(.)/g, '$1');
+function toSingleString(value?: string[]) {
+  return value?.[0];
 }

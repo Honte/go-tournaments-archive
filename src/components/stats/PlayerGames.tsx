@@ -14,7 +14,6 @@ import { H2 } from '@/components/ui/H2';
 import { PlayerCell } from '@/components/ui/PlayerCell';
 import type { PlayerDetails } from '@/components/ui/PlayerName';
 import { GameViewerTrigger } from '@/components/viewer/GameViewerTrigger';
-import type { GameViewerPayload } from '@/components/viewer/schema';
 
 type PlayerGamesProps = {
   player: ApiPlayerStats;
@@ -32,7 +31,6 @@ type GameRow = {
   opponentLastName: string;
   result: string;
   props: GameProps;
-  payload: GameViewerPayload;
 };
 
 export function PlayerGames({ player, translations }: PlayerGamesProps) {
@@ -74,13 +72,6 @@ export function PlayerGames({ player, translations }: PlayerGamesProps) {
             opponentLastName,
             result: game.result,
             props: game.props,
-            payload: {
-              title: ``,
-              black: game.color === 'black' ? me : opponent,
-              white: game.color === 'white' ? me : opponent,
-              result: game.result,
-              props: game.props,
-            },
           });
         }
       }
@@ -97,7 +88,7 @@ export function PlayerGames({ player, translations }: PlayerGamesProps) {
             accessorKey: 'img',
             header: null,
             cell: (info) => (
-              <GameViewerTrigger payload={info.row.original.payload}>
+              <GameViewerTrigger sgfPath={info.row.original.props.sgf!}>
                 <img
                   src={info.row.original.img}
                   alt={t('game.preview', `${player.name} vs ${info.row.original.opponent.name}`)}

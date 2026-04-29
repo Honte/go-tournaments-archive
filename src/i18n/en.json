@@ -104,7 +104,8 @@
     "wonPercent": "% won",
     "gameColor": "Color",
     "gameResult": "Result",
-    "gameWon": "Won"
+    "gameWon": "Won",
+    "sgfs": "Game records"
   },
   "game": {
     "open": "View",

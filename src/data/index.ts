@@ -1,6 +1,13 @@
+import EVENT_CONFIG from '@event/config';
 import type { ApiPlayerResult, ApiPlayerStats } from '@/schema/api';
+import type { Stage } from '@/schema/data';
+import { CustomSgfProps, SgfRootProps } from '@/schema/sgf';
+import type { RootParams } from '@tools/sgf';
+import { loadTranslations } from '@/i18n/server';
+import { getTranslator } from '@/i18n/translator';
+import { loadTournaments } from '@/data/load';
 import { calculateStats } from '@/data/stats';
-import { loadTournaments } from './load';
+import pkg from '../../package.json';
 
 const tournaments = await loadTournaments();
 const stats = calculateStats(tournaments);
@@ -106,4 +113,89 @@ export async function getTotalStats() {
 
 export async function getCategoryStats(category: string) {
   return stats.categories[category];
+}
+
+export async function getGameDetails(sgf: string) {
+  for (const tournament of tournaments) {
+    for (const id in tournament.games) {
+      const game = tournament.games[id];
+
+      if (game.props.sgf === sgf) {
+        let gameStage: Stage | undefined;
+        let gameRound: number | undefined;
+        let gameIndex: number | undefined;
+
+        for (const stage of tournament.stages) {
+          switch (stage.type) {
+            case 'tournament':
+            case 'ladder-table':
+            case 'league':
+              for (const [roundNo, round] of stage.rounds.entries()) {
+                const gameNo = round.indexOf(id);
+
+                if (gameNo >= 0) {
+                  gameStage = stage;
+                  gameRound = roundNo;
+                  gameIndex = gameNo;
+                  break;
+                }
+              }
+              break;
+            default:
+              const gameNo = stage.games.indexOf(id);
+
+              if (gameNo >= 0) {
+                gameStage = stage;
+                gameRound = undefined;
+                gameIndex = gameNo;
+                break;
+              }
+          }
+        }
+
+        const translations = await loadTranslations('en');
+        const t = getTranslator(translations);
+        const black = tournament.players[game.players[0].id];
+        const white = tournament.players[game.players[1].id];
+
+        return {
+          [SgfRootProps.ENCODING]: 'utf-8',
+          [SgfRootProps.GAME_TYPE]: 1,
+          [SgfRootProps.FILE_FORMAT]: 4,
+          [SgfRootProps.BOARD_SIZE]: (val?: string) => (val ? Number(val) : 19),
+          [SgfRootProps.APPLICATION]: `${pkg.name}:${pkg.version}`,
+          [SgfRootProps.EVENT_LOCATION]: tournament.country
+            ? `${tournament.country},${tournament.location}`
+            : tournament.location,
+          [SgfRootProps.GAME_RESULT]: game.result,
+          [SgfRootProps.BLACK_NAME]: black.name,
+          [SgfRootProps.BLACK_RANK]: black.rank,
+          [SgfRootProps.BLACK_TEAM]: (EVENT_CONFIG.showCountry && black.country) || null,
+          [SgfRootProps.WHITE_NAME]: white.name,
+          [SgfRootProps.WHITE_RANK]: white.rank,
+          [SgfRootProps.WHITE_TEAM]: (EVENT_CONFIG.showCountry && white.country) || null,
+          [SgfRootProps.COPYRIGHT]: null,
+          [SgfRootProps.GAME_NAME]: null,
+          [SgfRootProps.GAME_KOMI]: (val?: string) => val ?? gameStage?.komi ?? null,
+          [SgfRootProps.GAME_DATE]: (val?: string) =>
+            val ?? tournament.start?.split('-').slice(0, -1).join('-') ?? null,
+          [SgfRootProps.EVENT_NAME]:
+            (tournament.name && typeof tournament.name === 'object' ? tournament.name.en : tournament.name) ??
+            `${t('site.acronym')} ${tournament.year}`,
+          [SgfRootProps.GAME_RULES]: (val?: string) => (val ? val.toLowerCase() : null),
+          [SgfRootProps.GAME_ROUND]: gameStage && gameRound ? `${gameRound + 1} (${gameStage.type})` : null,
+          [SgfRootProps.COMMENT]: `Exported from ${t('site.name')}${EVENT_CONFIG.domain ? ` (${EVENT_CONFIG.domain})` : ''}`,
+
+          // additional attributes for SGF Viewer
+          [CustomSgfProps.BLACK_ID]: black.id,
+          [CustomSgfProps.WHITE_ID]: white.id,
+          [CustomSgfProps.GAME_AI]: game.props.ai || null,
+          [CustomSgfProps.GAME_YT]: game.props.yt || null,
+          [CustomSgfProps.GAME_OGS]: game.props.ogs || null,
+        } satisfies RootParams;
+      }
+    }
+  }
+
+  return undefined;
 }
