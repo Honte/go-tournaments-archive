@@ -39,12 +39,3 @@ declare module '@sabaki/sgf' {
   export { parse, parseTokens, parseBuffer, stringify, tokenize, tokenizeBuffer };
   export type { SgfNode, ParseOptions, StringifyOptions };
 }
-
-declare module '@sabaki/sgf/src/tokenize' {
-  export type SgfToken = {
-    type: string;
-    value: string;
-  };
-
-  export function tokenize(contents: string): SgfToken[];
-}

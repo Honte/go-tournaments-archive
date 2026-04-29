@@ -190,7 +190,7 @@ export async function getGameDetails(sgf: string) {
           [CustomSgfProps.BLACK_ID]: black.id,
           [CustomSgfProps.WHITE_ID]: white.id,
           [CustomSgfProps.GAME_AI]: game.props.ai || null,
-          [CustomSgfProps.GAME_YT]: (Array.isArray(game.props.yt) ? game.props.yt.join(',') : game.props.yt) || null,
+          [CustomSgfProps.GAME_YT]: game.props.yt || null,
           [CustomSgfProps.GAME_OGS]: game.props.ogs || null,
         } satisfies RootParams;
       }

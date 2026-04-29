@@ -1,10 +1,10 @@
-import sgfParser, { SgfNode } from '@sabaki/sgf';
+import { SgfNode, parse, stringify } from '@sabaki/sgf';
 
-type RootParamValue = string | number | null | ((prev?: string) => string | number | null);
+type RootParamValue = string | string[] | number | null | ((prev?: string) => string | number | null);
 export type RootParams = Record<string, RootParamValue>;
 
 export function cleanSgf(content: string, rootParams?: RootParams): string {
-  const rootNodes = sgfParser.parse(content) as SgfNode[];
+  const rootNodes = parse(content) as SgfNode[];
 
   const leafs: [SgfNode, number][] = [];
   const map = new Map<number, SgfNode>();
@@ -44,6 +44,8 @@ export function cleanSgf(content: string, rootParams?: RootParams): string {
 
       if (value === null && param in current.data) {
         delete current.data[param];
+      } else if (Array.isArray(value)) {
+        current.data[param] = value.map(String);
       } else if (value) {
         current.data[param] = [String(value)];
       }
@@ -52,7 +54,7 @@ export function cleanSgf(content: string, rootParams?: RootParams): string {
     current.data = Object.fromEntries(Object.entries(current.data).sort((a, b) => a[0].localeCompare(b[0])));
   }
 
-  return sgfParser.stringify(current, {
+  return stringify(current, {
     linebreak: '',
     indent: '',
   });

@@ -1,4 +1,3 @@
-import type { SgfData } from '@/hooks/useSgfData';
 import Board from '@sabaki/go-board';
 import { type ChangeEvent, useCallback, useEffect, useMemo, useState } from 'react';
 import {
@@ -14,28 +13,25 @@ import {
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { between } from '@/libs/math';
+import type { SgfData, SgfPlayer } from '@/libs/sgf';
 import { Stone } from '@/components/Stone';
 import { Goban } from '@/components/goban/Goban';
 import { PlayerLink } from '@/components/ui/PlayerLink';
 import { PlayerName } from '@/components/ui/PlayerName';
 import { Slider } from '@/components/ui/Slider';
 import { GameControlButton } from '@/components/viewer/GameControlButton';
-import type { GameViewerPayload, GameViewerPlayer } from '@/components/viewer/schema';
 
 type GameViewerContentProps = {
   sgf: SgfData;
-  payload: GameViewerPayload;
   translations: Translations;
   onClose: () => void;
 };
 
 function GameViewerContent(props: GameViewerContentProps) {
-  const { sgf, payload, translations, onClose } = props;
+  const { sgf, translations, onClose } = props;
   const t = getTranslator(translations);
   const [position, setPosition] = useState(sgf.moves.length);
   const [playing, setPlaying] = useState(false);
-  const komi = sgf.komi ?? (payload.komi !== undefined ? String(payload.komi) : '?');
-  const result = sgf.result ?? (payload.result !== undefined ? String(payload.result) : '?');
   const maxMove = sgf.moves.length;
 
   const changePosition = useCallback(
@@ -176,24 +172,24 @@ function GameViewerContent(props: GameViewerContentProps) {
     <div className="flex min-h-0 flex-1 flex-col gap-2 p-2 md:p-2 md:px-4">
       <div className="flex shrink-0 items-center justify-between text-sm font-semibold">
         <span>
-          {t('game.komi')}: {komi}
+          {t('game.komi')}: {sgf.komi ?? '?'}
         </span>
         <span>
-          {t('game.result')}: {result}
+          {t('game.result')}: {sgf.result ?? '?'}
         </span>
         <span>{t('game.prisoners')}</span>
       </div>
 
       <div className="flex shrink-0 flex-col gap-1">
         <PlayerRow
-          player={payload.black}
+          player={sgf.black}
           color="black"
           locale={translations.locale}
           onNavigate={onClose}
           prisoners={board.getCaptures(1)}
         />
         <PlayerRow
-          player={payload.white}
+          player={sgf.white}
           color="white"
           locale={translations.locale}
           onNavigate={onClose}
@@ -253,7 +249,7 @@ function PlayerRow({
   onNavigate,
   prisoners,
 }: {
-  player: GameViewerPlayer;
+  player: SgfPlayer;
   color: 'black' | 'white';
   locale: string;
   prisoners?: number;
@@ -262,9 +258,18 @@ function PlayerRow({
   return (
     <div className="flex items-center gap-2 text-sm">
       <Stone color={color} className="size-5" />
-      <PlayerLink playerId={player.id} locale={locale} onClick={onNavigate} className="min-w-0 truncate font-semibold">
+      {player.id ? (
+        <PlayerLink
+          playerId={player.id}
+          locale={locale}
+          onClick={onNavigate}
+          className="min-w-0 truncate font-semibold"
+        >
+          <PlayerName player={player} />
+        </PlayerLink>
+      ) : (
         <PlayerName player={player} />
-      </PlayerLink>
+      )}
       <span className="ml-auto font-semibold">{prisoners ?? 0}</span>
     </div>
   );

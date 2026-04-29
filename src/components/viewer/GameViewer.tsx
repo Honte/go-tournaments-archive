@@ -3,7 +3,7 @@
 import dynamic from 'next/dynamic';
 import { useCallback, useEffect, useState } from 'react';
 import type { Translations } from '@/i18n/consts';
-import { type GameViewerPayload, SHOW_GAME_VIEWER_EVENT } from '@/components/viewer/schema';
+import { SHOW_GAME_VIEWER_EVENT } from '@/components/viewer/utils';
 
 const GameViewerDialog = dynamic(
   () => import('@/components/viewer/GameViewerModal').then((mod) => mod.GameViewerModal),
@@ -17,27 +17,21 @@ type GameViewerProps = {
 };
 
 export function GameViewer({ translations }: GameViewerProps) {
-  const [state, setState] = useState<GameViewerPayload | null>(null);
-  const close = useCallback(() => setState(null), []);
+  const [sgfPath, setSgfPath] = useState<string | null>(null);
+  const close = useCallback(() => setSgfPath(null), []);
 
   useEffect(() => {
-    const showListener = (event: Event) => {
-      const detail = (event as CustomEvent<GameViewerPayload>).detail;
-
-      if (!detail?.props?.sgf) {
-        return;
-      }
-
-      setState(detail);
-    };
-
     document.addEventListener(SHOW_GAME_VIEWER_EVENT, showListener);
     return () => document.removeEventListener(SHOW_GAME_VIEWER_EVENT, showListener);
+
+    function showListener(event: Event) {
+      setSgfPath((event as CustomEvent).detail);
+    }
   }, []);
 
-  if (!state) {
+  if (!sgfPath) {
     return null;
   }
 
-  return <GameViewerDialog payload={state} translations={translations} onClose={close} />;
+  return <GameViewerDialog sgfPath={sgfPath} translations={translations} onClose={close} />;
 }

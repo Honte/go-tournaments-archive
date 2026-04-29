@@ -2,18 +2,17 @@ import type { GameProps } from '@/schema/data';
 import type { Translator } from '@/i18n/consts';
 import { ExternalButton } from '@/components/ui/ExternalButton';
 import { GameViewerButton } from '@/components/viewer/GameViewerTrigger';
-import type { GameViewerPayload } from '@/components/viewer/schema';
 
 type GameActionProps = {
   props: GameProps;
-  payload?: GameViewerPayload | null;
+  showViewer?: boolean;
   t: Translator;
 };
 
-export function GameActions({ props, payload, t }: GameActionProps) {
+export function GameActions({ props, showViewer, t }: GameActionProps) {
   return (
     <div className="flex gap-2 mt-1">
-      {payload && <GameViewerButton payload={payload}>{t('game.open')}</GameViewerButton>}
+      {showViewer && props.sgf && <GameViewerButton sgfPath={props.sgf}>{t('game.open')}</GameViewerButton>}
 
       {props.sgf && (
         <ExternalButton url={props.sgf} title={t('game.sgf')}>

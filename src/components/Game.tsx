@@ -6,7 +6,6 @@ import { getTranslator } from '@/i18n/translator';
 import { GameActions } from '@/components/GameActions';
 import { Stone } from '@/components/Stone';
 import { GameViewerTrigger } from '@/components/viewer/GameViewerTrigger';
-import type { GameViewerPayload, GameViewerPlayer } from '@/components/viewer/schema';
 
 type GameProps = {
   game: Game;
@@ -24,10 +23,6 @@ export function Game({ className, game, players, translations, title, komi, wide
   const hasSgf = game.props.sgf;
   const hasProps = Object.keys(game.props).length > 0;
   const preview = game.props.jpg ?? game.props.svg ?? game.props.png;
-  const viewerPayload = useMemo(
-    () => (hasSgf ? getViewerPayload(game, players, title, komi) : null),
-    [game, hasSgf, komi, players, title]
-  );
   const gameTitle = t('game.preview', `${title}: ${home.name} vs ${away.name}`);
 
   return (
@@ -38,7 +33,7 @@ export function Game({ className, game, players, translations, title, komi, wide
       })}
     >
       {hasSgf && preview && (
-        <GameViewerTrigger payload={viewerPayload!} aria-label={gameTitle}>
+        <GameViewerTrigger sgfPath={game.props.sgf!} aria-label={gameTitle}>
           <img src={preview} alt={gameTitle} className="size-20" loading="lazy" />
         </GameViewerTrigger>
       )}
@@ -53,7 +48,7 @@ export function Game({ className, game, players, translations, title, komi, wide
           {!hasSgf && wide && <div className="max-xs:hidden">&ndash;</div>}
           <PlayerRow t={t} player={away} />
         </div>
-        {hasProps && <GameActions props={game.props} payload={viewerPayload} t={t} />}
+        {hasProps && <GameActions props={game.props} t={t} showViewer={true} />}
       </div>
     </div>
   );
@@ -92,33 +87,4 @@ function PlayerScore({ score, t }: { score: string; t: Translator }) {
   }
 
   return `+${score}`;
-}
-
-function getViewerPayload(
-  game: Game,
-  players: Record<string, Player>,
-  title: string,
-  komi?: number
-): GameViewerPayload {
-  const [black, white] = game.players;
-
-  return {
-    black: getViewerPlayer(black.id, players),
-    white: getViewerPlayer(white.id, players),
-    props: game.props,
-    result: game.result,
-    komi,
-    title,
-  };
-}
-
-function getViewerPlayer(id: string, players: Record<string, Player>): GameViewerPlayer {
-  const player = players[id];
-
-  return {
-    id: player?.id ?? id,
-    name: player?.name ?? id,
-    rank: player?.rank,
-    country: player?.country,
-  };
 }

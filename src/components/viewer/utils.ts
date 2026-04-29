@@ -1,9 +1,9 @@
-import { type GameViewerPayload, SHOW_GAME_VIEWER_EVENT } from '@/components/viewer/schema';
+export const SHOW_GAME_VIEWER_EVENT = 'show-game-viewer';
 
-export function dispatchGameEvent(detail: GameViewerPayload) {
+export function dispatchGameEvent(sgfPath: string) {
   document.dispatchEvent(
-    new CustomEvent<GameViewerPayload>(SHOW_GAME_VIEWER_EVENT, {
-      detail,
+    new CustomEvent(SHOW_GAME_VIEWER_EVENT, {
+      detail: sgfPath,
     })
   );
 }

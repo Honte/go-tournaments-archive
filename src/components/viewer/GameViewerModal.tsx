@@ -8,17 +8,16 @@ import { Button } from '@/components/ui/Button';
 import { Loader } from '@/components/ui/Loader';
 import { Overlay } from '@/components/ui/Overlay';
 import GameViewerContent from '@/components/viewer/GameViewerContent';
-import type { GameViewerPayload } from '@/components/viewer/schema';
 
 type GameViewerDialogProps = {
-  payload: GameViewerPayload;
+  sgfPath: string;
   translations: Translations;
   onClose: () => void;
 };
 
-export function GameViewerModal({ payload, translations, onClose }: GameViewerDialogProps) {
+export function GameViewerModal({ sgfPath, translations, onClose }: GameViewerDialogProps) {
   const t = getTranslator(translations);
-  const { data, isPending } = useSgfData(payload.props.sgf);
+  const { data, isPending } = useSgfData(sgfPath);
 
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
@@ -44,11 +43,11 @@ export function GameViewerModal({ payload, translations, onClose }: GameViewerDi
         <section
           role="dialog"
           aria-modal="true"
-          aria-label={payload.title}
+          aria-label={data?.title}
           className="flex h-[95dvh] w-[95vw] flex-col overflow-hidden rounded-md bg-event-light text-event-dark shadow-2xl md:w-[min(95vw,calc(95dvh-16.5rem))] md:min-w-md"
         >
           <header className="flex shrink-0 items-center gap-2 p-1 md:p-2 md:px-3 bg-event-dark text-event-light">
-            <h2 className="min-w-0 px-1 flex-1 truncate text-sm font-semibold">{payload.title}</h2>
+            <h2 className="min-w-0 px-1 flex-1 truncate text-sm font-semibold">{data?.title}</h2>
             <button
               type="button"
               onClick={onClose}
@@ -65,14 +64,14 @@ export function GameViewerModal({ payload, translations, onClose }: GameViewerDi
               <Loader />
             </div>
           ) : (
-            <GameViewerContent sgf={data} payload={payload} translations={translations} onClose={onClose} />
+            <GameViewerContent sgf={data} translations={translations} onClose={onClose} />
           )}
 
           <footer className="flex shrink-0 items-center justify-between gap-3 border-t border-event-soft px-2 md:px-4 py-2 md:py-3">
             <Button type="button" onClick={onClose}>
               {t('navigation.close')}
             </Button>
-            <GameActions props={payload.props} t={t} />
+            {data?.props && <GameActions props={data.props} t={t} />}
           </footer>
         </section>
       </div>
