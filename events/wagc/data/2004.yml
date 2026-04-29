@@ -3,7 +3,7 @@ stages:
   - type: tournament
     file: wagc2004.txt
     time: 90min + 10 min/15 moves canadian
-    komi: 6.5  
+    komi: 6.5
     scoringColumns:
       - wins
       - null
@@ -15,3 +15,36 @@ stages:
       - sosos
       - direct
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+21.50 round:6 sgf:2004/6-KangwukYi-YuChengLai.sgf
+      - 1-7 1:B+R round:7 sgf:2004/7-KangwukYi-LingYingTong.sgf
+      - 2-3 2:B+R round:5 sgf:2004/5-YuChengLai-LiFu.sgf
+      - 2-5 2:B+4.50 round:7 sgf:2004/7-YuChengLai-SeizoNakazono.sgf
+      - 3-1 1:W+1.50 round:8 sgf:2004/8-LiFu-KangwukYi.sgf
+      - 3-17 3:B+R round:6 sgf:2004/6-LiFu-GeertGroenen.sgf
+      - 4-1 1:W+R round:5 sgf:2004/5-BernardHelmstetter-KangwukYi.sgf
+      - 4-2 2:W+R round:8 sgf:2004/8-BernardHelmstetter-YuChengLai.sgf
+      - 4-13 4:B+12.50 round:6 sgf:2004/6-BernardHelmstetter-FelixvonArnim.sgf
+      - 5-3 3:W+1.50 round:4 sgf:2004/4-SeizoNakazono-LiFu.sgf
+      - 5-9 5:B+T round:6 sgf:2004/6-SeizoNakazono-LaurentHeiser.sgf
+      - 6-3 3:W+R round:7 sgf:2004/7-XianyuLi-LiFu.sgf
+      - 6-8 6:B+R round:3 sgf:2004/3-XianyuLi-TedNing.sgf
+      - 7-14 7:B+R round:5 sgf:2004/5-LingYingTong-DmytroYatsenko.sgf
+      - 10-2 2:W+13.50 round:4 sgf:2004/4-RadekNechanicky-YuChengLai.sgf
+      - 11-1 1:W+R round:3 sgf:2004/3-DmitrijSurin-KangwukYi.sgf
+      - 12-5 5:W+R round:8 sgf:2004/8-DianaKoszegi-SeizoNakazono.sgf
+      - 12-9 9:W+8.5 round:1 sgf:2004/1-DianaKoszegi-LaurentHeiser.sgf
+      - 15-60 15:B+53.50 round:1 sgf:2004/1-GustavFahl-ShibaShaw.sgf
+      - 21-45 21:B+29.50 round:4 sgf:2004/4-FernandoManriqueOchoa-DraganPaunic.sgf
+      - 25-18 25:B+R round:2 sgf:2004/2-MichaelWinkler-LucretiuCalota.sgf
+      - 30-31 31:W+3.5 round:2 sgf:2004/2-FatihSulak-ColinGrierson.sgf
+      - 33-46 33:B+R round:8 sgf:2004/8-RitBenjarit-AlbertasPetrauskas.sgf
+      - 34-27 27:W+R round:1 sgf:2004/1-TonyPurcell-JanRamon.sgf
+      - 40-29 29:W+3.50 round:3 sgf:2004/3-AntonioFernandezCaballero-PeterJadron.sgf
+      - 42-32 32:W+17.50 round:7 sgf:2004/7-CarlosGonzalezZelaya-TimoPuha.sgf
+      - 47-51 51:W+11.50 round:1 sgf:2004/1-OswaldoMoreano-AbelRakotoarisoa.sgf
+      - 48-47 48:B+11.5 round:2 sgf:2004/2-NarendraSowal-OswaldoMoreano.sgf
+      - 56-30 30:W+34.50 round:5 sgf:2004/5-AugustoUnten-FatihSulak.sgf
+      - 58-36 36:W+44.50 round:4 sgf:2004/4-EricPacheco-NoelMitchell.sgf
+      - 61-37 37:W+R round:2 sgf:2004/2-DavitHarutyunyan-AnhTuanTran.sgf
+      - 62-42 42:W+5.50 round:3 sgf:2004/3-FouadTehhani-CarlosGonzalezZelaya.sgf

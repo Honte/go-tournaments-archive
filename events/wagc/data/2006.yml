@@ -3,7 +3,7 @@ stages:
   - type: tournament
     file: wagc2006.txt
     time: 90min + 10 min/15 moves canadian
-    komi: 6.5    
+    komi: 6.5
     scoringColumns:
       - wins
       - null
@@ -14,3 +14,71 @@ stages:
       - sos
       - sosos
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+11.5 round:8 sgf:2006/8-SatoshiHiraoka-WeixingTang.sgf
+      - 1-3 3:W+T round:4 sgf:2006/4-SatoshiHiraoka-TaeweonCho.sgf
+      - 2-18 2:B+R round:3 sgf:2006/3-WeixingTang-TingyuYen.sgf
+      - 3-2 2:W+R round:6 sgf:2006/6-TaeweonCho-WeixingTang.sgf
+      - 3-14 3:B+12.5 round:8 sgf:2006/8-TaeweonCho-AlexejLazarev.sgf
+      - 4-2 2:W+4.5 round:7 sgf:2006/7-MankiHong-WeixingTang.sgf
+      - 5-2 2:W+13.5 round:5 sgf:2006/5-NaiSanChan-WeixingTang.sgf
+      - 5-4 4:W+R round:8 sgf:2006/8-NaiSanChan-MankiHong.sgf
+      - 5-8 5:B+7.5pts round:7 sgf:2006/7-NaiSanChan-OndrejSilt.sgf
+      - 5-9 5:B+7.5 round:3 sgf:2006/3-NaiSanChan-ChristophGerlach.sgf
+      - 5-42 5:B+R round:6 sgf:2006/6-NaiSanChan-GregorButala.sgf
+      - 6-1 1:W+R round:7 sgf:2006/7-JoeyHung-SatoshiHiraoka.sgf
+      - 6-40 6:B+R round:5 sgf:2006/5-JoeyHung-PaalSannes.sgf
+      - 7-13 7:B+R round:6 sgf:2006/6-CristianPop-PalBalogh.sgf
+      - 8-1 1:W+R round:3 sgf:2006/3-OndrejSilt-SatoshiHiraoka.sgf
+      - 8-13 8:B+4.5 round:8 sgf:2006/8-OndrejSilt-PalBalogh.sgf
+      - 10-4 4:W+R round:5 sgf:2006/5-YongfeiGe-MankiHong.sgf
+      - 11-6 6:W+0.5 round:6 sgf:2006/6-VesaLaatikainen-JoeyHung.sgf
+      - 12-4 4:W+15.5 round:4 sgf:2006/4-YutaChen-MankiHong.sgf
+      - 13-21 13:B+1.5 round:7 sgf:2006/7-PalBalogh-EmilNijhuis.sgf
+      - 15-4 4:W+R round:6 sgf:2006/6-MykhailoHalchenko-MankiHong.sgf
+      - 15-27 15:B+R round:5 sgf:2006/5-MykhailoHalchenko-KeeSoonTiong.sgf
+      - 16-3 3:W+R round:5 sgf:2006/5-MichaelYao-TaeweonCho.sgf
+      - 16-7 7:W+R round:8 sgf:2006/8-MichaelYao-CristianPop.sgf
+      - 17-20 17:B+R round:6 sgf:2006/6-FernandoManriqueOchoa-BernhardScheid.sgf
+      - 17-54 17:B+R round:2 sgf:2006/2-FernandoManriqueOchoa-JoseRaposo.sgf
+      - 19-35 19:B+R round:6 sgf:2006/6-LeszekSoldan-TranChiThanh.sgf
+      - 24-7 7:W+2.5 round:5 sgf:2006/5-RitBenjarit-CristianPop.sgf
+      - 24-38 24:B+R round:7 sgf:2006/7-RitBenjarit-IgnacioCernuda.sgf
+      - 25-32 25:B+R round:8 sgf:2006/8-JanRamon-AlexandreDeSouza.sgf
+      - 26-39 26:B+1.5 round:5 sgf:2006/5-PatricGrueter-MingyuanWang.sgf
+      - 28-54 28:B+5.5 round:4 sgf:2006/4-SansarTsolmon-JoseRaposo.sgf
+      - 29-15 15:W+34.5 round:4 sgf:2006/4-MladenSmud-MykhailoHalchenko.sgf
+      - 30-34 30:B+R round:7 sgf:2006/7-DesmondCann-ZoranSimeunovic.sgf
+      - 31-23 23:W+15.5 round:5 sgf:2006/5-JannikRasmussen-FaridBenMalek.sgf
+      - 34-26 26:W+8.5 round:6 sgf:2006/6-ZoranSimeunovic-PatricGrueter.sgf
+      - 35-49 35:B+13.5 round:2 sgf:2006/2-TranChiThanh-MartinBenenati.sgf
+      - 36-2 2:W+R round:4 sgf:2006/4-AntonioFernandezCaballero-WeixingTang.sgf
+      - 37-33 33:W+R round:1 sgf:2006/1-AudrisKuras-SuryaTjahyadiLim.sgf
+      - 38-53 38:B+R round:6 sgf:2006/6-IgnacioCernuda-NarendraSowal.sgf
+      - 40-21 21:W+R round:1 sgf:2006/1-PaalSannes-EmilNijhuis.sgf
+      - 41-22 22:W+7.5 round:1 sgf:2006/1-MijodragStankovic-WeiQian.sgf
+      - 42-32 32:W+T round:1 sgf:2006/1-GregorButala-AlexandreDeSouza.sgf
+      - 43-30 30:W+R round:5 sgf:2006/5-RicardoQuintero-DesmondCann.sgf
+      - 43-56 43:B+R round:2 sgf:2006/2-RicardoQuintero-MaurizioVitari.sgf
+      - 44-41 41:W+R round:5 sgf:2006/5-DiegoRuiz-MijodragStankovic.sgf
+      - 47-31 31:W+4.5 round:3 sgf:2006/3-NoriyukiYamamoto-JannikRasmussen.sgf
+      - 48-25 25:W+R round:2 sgf:2006/2-DimitrisRegginos-JanRamon.sgf
+      - 50-63 50:B+R round:1 sgf:2006/1-JuliusPaulu-DiegoAlbujaOrtiz.sgf
+      - 51-28 28:W+R round:1 sgf:2006/1-AlexandrSuponev-SansarTsolmon.sgf
+      - 52-67 52:B+R round:2 sgf:2006/2-PeterPetkovKarailiev-SamvelGhaczaryan.sgf
+      - 53-18 18:W+R round:1 sgf:2006/1-NarendraSowal-TingyuYen.sgf
+      - 55-35 35:W+T round:4 sgf:2006/4-AlexisHernandez-TranChiThanh.sgf
+      - 55-58 58:W+7.5 round:1 sgf:2006/1-AlexisHernandez-YoniPetrovLazarov.sgf
+      - 57-50 50:W+R round:7 sgf:2006/7-JuanPabloSchweitzer-JuliusPaulu.sgf
+      - 59-14 14:W+R round:2 sgf:2006/2-CuongNguyen-AlexejLazarev.sgf
+      - 60-46 46:W+R round:1 sgf:2006/1-StephenFlinter-KivancDoganay.sgf
+      - 60-48 48:W+R round:3 sgf:2006/3-StephenFlinter-DimitrisRegginos.sgf
+      - 61-45 45:W+51.5 round:2 sgf:2006/2-IreneBasileRajaofetra-AnatolijVernik.sgf
+      - 62-11 11:W+R round:3 sgf:2006/3-AmynAlioua-VesaLaatikainen.sgf
+      - 62-58 58:W+8.5 round:4 sgf:2006/4-AmynAlioua-YoniPetrovLazarov.sgf
+      - 64-26 26:W+R round:2 sgf:2006/2-EdgardoCaceresEstrada-PatricGrueter.sgf
+      - 64-61 61:W+6.5 round:6 sgf:2006/6-EdgardoCaceresEstrada-IreneBasileRajaofetra.sgf
+      - 65-36 36:W+R round:2 sgf:2006/2-SupravatPal-AntonioFernandezCaballero.sgf
+      - 65-53 53:W+R round:3 sgf:2006/3-SupravatPal-NarendraSowal.sgf
+      - 66-38 38:W+R round:1 sgf:2006/1-IbadatMamedov-IgnacioCernuda.sgf
+      - 68-57 57:W+R round:2 sgf:2006/2-EdgarIvanEscobar-JuanPabloSchweitzer.sgf

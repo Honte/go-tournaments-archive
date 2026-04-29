@@ -2,7 +2,7 @@ website: https://www.nihonkiin.or.jp/event/amakisen/worldama/29/29th-top-en_ama.
 stages:
   - type: tournament
     file: wagc2008.txt
-    time: 90min + 10 min/15 moves canadian    
+    time: 90min + 10 min/15 moves canadian
     komi: 6.5
     scoringColumns:
       - wins
@@ -14,3 +14,84 @@ stages:
       - sos
       - sosos
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+0.5 round:5 sgf:2008/5-SungBongHa-YuzhengGuo.sgf
+      - 1-3 1:B+R round:7 sgf:2008/7-SungBongHa-FernandoAguilar.sgf
+      - 1-4 1:B+R round:8 sgf:2008/8-SungBongHa-NaiSanChan.sgf
+      - 1-5 1:B+10.5 round:4 sgf:2008/4-SungBongHa-YoshiyukiTsuchimune.sgf
+      - 1-8 1:B+R round:6 sgf:2008/6-SungBongHa-PalBalogh.sgf
+      - 1-16 1:B+R round:3 sgf:2008/3-SungBongHa-RuechagomTrairananusom.sgf
+      - 5-2 2:W+R round:8 sgf:2008/8-YoshiyukiTsuchimune-YuzhengGuo.sgf
+      - 6-2 2:W+6.5 round:7 sgf:2008/7-CornelBurzo-YuzhengGuo.sgf
+      - 6-19 6:B+R round:8 sgf:2008/8-CornelBurzo-RaphaelShin.sgf
+      - 7-3 3:W+8.5 round:3 sgf:2008/3-MozhengGuan-FernandoAguilar.sgf
+      - 7-4 4:W+3.5 round:6 sgf:2008/6-MozhengGuan-NaiSanChan.sgf
+      - 10-27 10:B+R round:6 sgf:2008/6-TsungLinYang-UlrikBroJoergensen.sgf
+      - 10-52 10:B+R round:4 sgf:2008/4-TsungLinYang-IanDavis.sgf
+      - 11-5 5:W+11.5 round:7 sgf:2008/7-LaurentHeiser-YoshiyukiTsuchimune.sgf
+      - 11-9 9:W+R round:8 sgf:2008/8-LaurentHeiser-FranzJosefDickhut.sgf
+      - 11-36 11:B+R round:2 sgf:2008/2-LaurentHeiser-DimitrisRegginos.sgf
+      - 12-5 5:W+2.5 round:5 sgf:2008/5-YongfeiGe-YoshiyukiTsuchimune.sgf
+      - 13-4 4:W+R round:5 sgf:2008/5-AliJabarin-NaiSanChan.sgf
+      - 14-16 14:B+R round:6 sgf:2008/6-JanHora-RuechagomTrairananusom.sgf
+      - 14-20 14:B+R round:3 sgf:2008/3-JanHora-MatthewMacfadyen.sgf
+      - 15-44 15:B+R round:2 sgf:2008/2-DusanMitic-AbelRakotoarisoa.sgf
+      - 17-5 5:W+R round:6 sgf:2008/6-PierreAudouard-YoshiyukiTsuchimune.sgf
+      - 18-3 3:W+T round:5 sgf:2008/5-FrankJanssen-FernandoAguilar.sgf
+      - 19-15 15:W+R round:5 sgf:2008/5-RaphaelShin-DusanMitic.sgf
+      - 19-25 19:B+R round:7 sgf:2008/7-RaphaelShin-JuhuaZhou.sgf
+      - 21-29 21:B+R round:8 sgf:2008/8-PauCarles-JosefRenner.sgf
+      - 21-58 21:B+R round:1 sgf:2008/1-PauCarles-HectorPaizCastillo.sgf
+      - 22-9 9:W+R round:1 sgf:2008/1-KamilChwedyna-FranzJosefDickhut.sgf
+      - 22-37 22:B+R round:7 sgf:2008/7-KamilChwedyna-AlainWettach.sgf
+      - 23-17 17:W+9.5 round:4 sgf:2008/4-LauriPaatero-PierreAudouard.sgf
+      - 23-26 23:B+R round:3 sgf:2008/3-LauriPaatero-HiroakiOkawa.sgf
+      - 24-66 24:B+R round:2 sgf:2008/2-MortenOfstad-IbadatMamedov.sgf
+      - 25-29 25:B+R round:4 sgf:2008/4-JuhuaZhou-JosefRenner.sgf
+      - 26-42 26:B+R round:1 sgf:2008/1-HiroakiOkawa-CarlNicolasSchroterMendez.sgf
+      - 28-57 28:B+R round:2 sgf:2008/2-DavideMinieri-StanislavTraykov.sgf
+      - 29-38 29:B+0.5 round:3 sgf:2008/3-JosefRenner-CheeHiongChuah.sgf
+      - 30-9 9:W+7.5 round:6 sgf:2008/6-JaimeRamirezReyes-FranzJosefDickhut.sgf
+      - 30-39 30:B+R round:3 sgf:2008/3-JaimeRamirezReyes-MatejZakanj.sgf
+      - 31-8 8:W+R round:5 sgf:2008/5-RustamSakhabutdinov-PalBalogh.sgf
+      - 32-20 20:W+R round:6 sgf:2008/6-AntonioFernandezCaballero-MatthewMacfadyen.sgf
+      - 32-31 31:W+R round:3 sgf:2008/3-AntonioFernandezCaballero-RustamSakhabutdinov.sgf
+      - 33-44 33:B+R round:6 sgf:2008/6-TranChiThanh-AbelRakotoarisoa.sgf
+      - 34-18 18:W+R round:1 sgf:2008/1-LeonMatoh-FrankJanssen.sgf
+      - 34-20 20:W+R round:8 sgf:2008/8-LeonMatoh-MatthewMacfadyen.sgf
+      - 35-46 35:B+6.5 round:5 sgf:2008/5-MartinStrelka-ZaidZulkifli.sgf
+      - 36-56 36:B+R round:6 sgf:2008/6-DimitrisRegginos-MartinBenenati.sgf
+      - 37-47 37:B+7.5 round:3 sgf:2008/3-AlainWettach-MartinPutera.sgf
+      - 38-64 38:B+R round:2 sgf:2008/2-CheeHiongChuah-RajuKumarShah.sgf
+      - 39-28 28:W+R round:6 sgf:2008/6-MatejZakanj-DavideMinieri.sgf
+      - 40-36 40:B+T round:7 sgf:2008/7-RicardoQuintero-DimitrisRegginos.sgf
+      - 40-45 45:W+R round:5 sgf:2008/5-RicardoQuintero-MartinLi.sgf
+      - 41-12 12:W+R round:4 sgf:2008/4-FranzHuettler-YongfeiGe.sgf
+      - 41-46 41:B+1.5 round:8 sgf:2008/8-FranzHuettler-ZaidZulkifli.sgf
+      - 42-47 42:B+R round:8 sgf:2008/8-CarlNicolasSchroterMendez-MartinPutera.sgf
+      - 45-8 45:B+2.5 round:1 sgf:2008/1-MartinLi-PalBalogh.sgf
+      - 47-24 24:W+R round:7 sgf:2008/7-MartinPutera-MortenOfstad.sgf
+      - 47-43 47:B+R round:4 sgf:2008/4-MartinPutera-DraganBarisic.sgf
+      - 48-35 35:W+25.5 round:8 sgf:2008/8-DemberelnaymbuAgvandondov-MartinStrelka.sgf
+      - 49-13 13:W+R round:3 sgf:2008/3-KonradScheffler-AliJabarin.sgf
+      - 50-54 50:B+6.5 round:4 sgf:2008/4-AmineMehdiBachri-FatihSulak.sgf
+      - 50-59 50:B+1.5 round:3 sgf:2008/3-AmineMehdiBachri-CristovaoNeto.sgf
+      - 51-6 6:W+R round:5 sgf:2008/5-SergioQuevedoValencia-CornelBurzo.sgf
+      - 51-37 37:W+R round:2 sgf:2008/2-SergioQuevedoValencia-AlainWettach.sgf
+      - 52-27 27:W+R round:2 sgf:2008/2-IanDavis-UlrikBroJoergensen.sgf
+      - 52-55 55:W+2.5 round:7 sgf:2008/7-IanDavis-ArturasMaciulskis.sgf
+      - 54-35 35:W+R round:1 sgf:2008/1-FatihSulak-MartinStrelka.sgf
+      - 55-62 55:B+8.5 round:1 sgf:2008/1-ArturasMaciulskis-DanielGutierrez.sgf
+      - 57-64 57:B+R round:4 sgf:2008/4-StanislavTraykov-RajuKumarShah.sgf
+      - 59-49 49:W+T round:1 sgf:2008/1-CristovaoNeto-KonradScheffler.sgf
+      - 60-53 53:W+19.5 round:1 sgf:2008/1-ManuelIgei-AlexandrSuponev.sgf
+      - 61-43 61:B+5.5 round:2 sgf:2008/2-NarendraSowal-DraganBarisic.sgf
+      - 61-58 58:W+R round:8 sgf:2008/8-NarendraSowal-HectorPaizCastillo.sgf
+      - 62-65 62:B+8.5 round:5 sgf:2008/5-DanielGutierrez-MartinSacramento.sgf
+      - 63-60 60:W+21.5 round:4 sgf:2008/4-DavidQuesadaGarcia-ManuelIgei.sgf
+      - 63-66 63:B+R round:7 sgf:2008/7-DavidQuesadaGarcia-IbadatMamedov.sgf
+      - 65-48 48:W+34.5 round:1 sgf:2008/1-MartinSacramento-DemberelnaymbuAgvandondov.sgf
+      - 67-33 33:W+R round:2 sgf:2008/2-SamvelVoskanyan-TranChiThanh.sgf
+      - 67-53 53:W+R round:7 sgf:2008/7-SamvelVoskanyan-AlexandrSuponev.sgf
+      - 68-56 56:W+R round:2 sgf:2008/2-EdgarIvanEscobar-MartinBenenati.sgf
+      - 68-67 67:W+R round:4 sgf:2008/4-EdgarIvanEscobar-SamvelVoskanyan.sgf

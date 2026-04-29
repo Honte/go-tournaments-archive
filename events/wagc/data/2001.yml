@@ -3,7 +3,7 @@ stages:
   - type: tournament
     file: wagc2001.txt
     time: 90min + 10 min/15 moves canadian
-    komi: 5.5  
+    komi: 5.5
     scoringColumns:
       - wins
       - null
@@ -14,3 +14,5 @@ stages:
       - sos
       - sosos
     findSharedPlaces: true
+    games:
+      - 2-15 2:B+R round:3 sgf:2001/3-MorieiKanazawa-DianaKoszegi.sgf

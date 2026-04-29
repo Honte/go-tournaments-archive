@@ -14,3 +14,10 @@ stages:
       - sos
       - sosos
     findSharedPlaces: true
+    games:
+      - 2-1 1:W+0.5 round:6 sgf:1999/6-HideyukiSakai-ChaeseongYu.sgf
+      - 2-3 2:B+6.5 round:8 sgf:1999/8-HideyukiSakai-PongilRi.sgf
+      - 2-5 2:B+R round:3 sgf:1999/3-HideyukiSakai-XinWei.sgf
+      - 4-11 4:B+R round:2 sgf:1999/2-ChengjueiYu-SorinGherman.sgf
+      - 7-8 7:B+12.5 round:3 sgf:1999/3-YiguoSun-TedNing.sgf
+      - 18-16 16:W+R round:6 sgf:1999/6-HusdinAekasinghachai-MatthewMacfadyen.sgf

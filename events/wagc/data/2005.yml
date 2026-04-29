@@ -3,7 +3,7 @@ stages:
   - type: tournament
     file: wagc2005.txt
     time: 90min + 10 min/15 moves canadian
-    komi: 6.5  
+    komi: 6.5
     scoringColumns:
       - wins
       - sos
@@ -14,3 +14,87 @@ stages:
       - sos
       - sosos
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:5 sgf:2005/5-YuqingHu-TaeweonCho.sgf
+      - 1-7 1:B+R round:7 sgf:2005/7-YuqingHu-ThomasHsiang.sgf
+      - 2-11 2:B+2.5 round:7 sgf:2005/7-TaeweonCho-RadekNechanicky.sgf
+      - 3-1 1:W+R round:6 sgf:2005/6-ChengruiYu-YuqingHu.sgf
+      - 3-2 2:W+17.5 round:8 sgf:2005/8-ChengruiYu-TaeweonCho.sgf
+      - 3-5 3:B+R round:7 sgf:2005/7-ChengruiYu-FranzJosefDickhut.sgf
+      - 3-11 3:B+R round:5 sgf:2005/5-ChengruiYu-RadekNechanicky.sgf
+      - 4-1 1:W+R round:8 sgf:2005/8-YeonghwiSeo-YuqingHu.sgf
+      - 4-2 2:W+R round:4 sgf:2005/4-YeonghwiSeo-TaeweonCho.sgf
+      - 4-6 4:B+R round:7 sgf:2005/7-YeonghwiSeo-YasuroKikuchi.sgf
+      - 6-1 1:W+6.5 round:4 sgf:2005/4-YasuroKikuchi-YuqingHu.sgf
+      - 6-9 6:B+T round:6 sgf:2005/6-YasuroKikuchi-XianyuLi.sgf
+      - 7-54 7:B+R round:4 sgf:2005/4-ThomasHsiang-ErtugAkkol.sgf
+      - 8-9 8:B+R round:3 sgf:2005/3-NaiSanChan-XianyuLi.sgf
+      - 11-8 11:B+R round:4 sgf:2005/4-RadekNechanicky-NaiSanChan.sgf
+      - 12-7 7:W+R round:6 sgf:2005/6-DmytroBogatskyy-ThomasHsiang.sgf
+      - 13-21 13:B+R round:6 sgf:2005/6-RalphSpiegl-LeonMatoh.sgf
+      - 13-34 13:B+R round:3 sgf:2005/3-RalphSpiegl-JaimeRamirezReyes.sgf
+      - 14-10 10:W+18.5 round:6 sgf:2005/6-RuslanDmitriev-YimingGuo.sgf
+      - 15-50 15:B+R round:1 sgf:2005/1-MaiDuyLe-HectorPaizCastillo.sgf
+      - 16-49 16:B+R round:2 sgf:2005/2-MiroslavPoliak-MamyRakotoarisoa.sgf
+      - 17-59 59:W+R round:3 sgf:2005/3-JiaChengTan-AndresAguilar.sgf
+      - 18-33 18:B+1.5 round:8 sgf:2005/8-JanLubos-MartinLi.sgf
+      - 19-5 5:W+R round:5 sgf:2005/5-FrankJanssen-FranzJosefDickhut.sgf
+      - 19-18 19:B+R round:7 sgf:2005/7-FrankJanssen-JanLubos.sgf
+      - 20-36 20:B+R round:6 sgf:2005/6-MilosBojanic-MortenOfstad.sgf
+      - 21-15 15:W+R round:5 sgf:2005/5-LeonMatoh-MaiDuyLe.sgf
+      - 21-19 21:B+0.5 round:1 sgf:2005/1-LeonMatoh-FrankJanssen.sgf
+      - 22-27 22:B+11.5 round:8 sgf:2005/8-GabrielBenmergui-ZoranSimeunovic.sgf
+      - 23-28 28:W+R round:5 sgf:2005/5-BoonPingTeng-GyorgyCsizmadia.sgf
+      - 23-52 23:B+42.5 round:1 sgf:2005/1-BoonPingTeng-SuryaTjahyadiLim.sgf
+      - 24-19 19:W+11.5 round:4 sgf:2005/4-CornelBurzo-FrankJanssen.sgf
+      - 24-28 24:B+9.5 round:8 sgf:2005/8-CornelBurzo-GyorgyCsizmadia.sgf
+      - 25-11 11:W+R round:3 sgf:2005/3-JeanMichel-RadekNechanicky.sgf
+      - 25-26 25:B+R round:8 sgf:2005/8-JeanMichel-ThomasHeshe.sgf
+      - 27-33 27:B+15.5 round:6 sgf:2005/6-ZoranSimeunovic-MartinLi.sgf
+      - 29-20 29:B+8.5 round:4 sgf:2005/4-SupakitCharoenkul-MilosBojanic.sgf
+      - 30-31 30:B+5.5 round:5 sgf:2005/5-BenGale-CesarSanchez.sgf
+      - 30-50 30:B+9.5 round:2 sgf:2005/2-BenGale-HectorPaizCastillo.sgf
+      - 31-48 31:B+R round:1 sgf:2005/1-CesarSanchez-JeanBrauch.sgf
+      - 32-23 23:W+12.5 round:3 sgf:2005/3-MattiSiivola-BoonPingTeng.sgf
+      - 32-24 24:W+R round:6 sgf:2005/6-MattiSiivola-CornelBurzo.sgf
+      - 33-37 33:B+19.5 round:5 sgf:2005/5-MartinLi-RomanPozaroszczyk.sgf
+      - 34-18 18:W+14.5 round:5 sgf:2005/5-JaimeRamirezReyes-JanLubos.sgf
+      - 35-19 19:W+R round:6 sgf:2005/6-ZoranMutabzija-FrankJanssen.sgf
+      - 35-44 35:B+16.5 round:7 sgf:2005/7-ZoranMutabzija-DavidWard.sgf
+      - 35-61 35:B+R round:3 sgf:2005/3-ZoranMutabzija-RafaelTorresMiranda.sgf
+      - 37-58 37:B+32.5 round:4 sgf:2005/4-RomanPozaroszczyk-AlvaroRittatore.sgf
+      - 38-26 26:W+R round:3 sgf:2005/3-JuanJoseRivaud-ThomasHeshe.sgf
+      - 38-40 38:B+R round:4 sgf:2005/4-JuanJoseRivaud-AndriusPetrauskas.sgf
+      - 38-53 38:B+R round:1 sgf:2005/1-JuanJoseRivaud-JavierGonzalez.sgf
+      - 39-34 34:W+19.5 round:4 sgf:2005/4-HatimeAraki-JaimeRamirezReyes.sgf
+      - 41-16 16:W+R round:3 sgf:2005/3-EitanAharoni-MiroslavPoliak.sgf
+      - 41-60 41:B+R round:1 sgf:2005/1-EitanAharoni-AshotMargaryan.sgf
+      - 42-24 24:W+R round:2 sgf:2005/2-JuanCarlosCarrillo-CornelBurzo.sgf
+      - 42-62 42:B+R round:3 sgf:2005/3-JuanCarlosCarrillo-PedroMiyaguiShimabukuro.sgf
+      - 43-34 34:W+9.5 round:8 sgf:2005/8-JanBogaerts-JaimeRamirezReyes.sgf
+      - 44-50 44:B+R round:4 sgf:2005/4-DavidWard-HectorPaizCastillo.sgf
+      - 45-47 45:B+3.5 round:1 sgf:2005/1-FabioSakataYamashita-TungalagRavjir.sgf
+      - 46-41 41:W+R round:8 sgf:2005/8-RobertoMorrison-EitanAharoni.sgf
+      - 46-63 46:B+57.5 round:1 sgf:2005/1-RobertoMorrison-JoseTelesMenezes.sgf
+      - 47-13 13:W+10.5 round:5 sgf:2005/5-TungalagRavjir-RalphSpiegl.sgf
+      - 49-51 49:B+R round:7 sgf:2005/7-MamyRakotoarisoa-AbhishekNarain.sgf
+      - 51-19 19:W+R round:2 sgf:2005/2-AbhishekNarain-FrankJanssen.sgf
+      - 51-61 51:B+0.5 round:1 sgf:2005/1-AbhishekNarain-RafaelTorresMiranda.sgf
+      - 53-27 27:W+9.5 round:2 sgf:2005/2-JavierGonzalez-ZoranSimeunovic.sgf
+      - 54-64 54:B+19.5 round:7 sgf:2005/7-ErtugAkkol-BernardPalmer.sgf
+      - 55-17 17:W+R round:2 sgf:2005/2-MaximEudokimov-JiaChengTan.sgf
+      - 55-48 48:W+R round:7 sgf:2005/7-MaximEudokimov-JeanBrauch.sgf
+      - 56-22 22:W+R round:2 sgf:2005/2-NarendraSowal-GabrielBenmergui.sgf
+      - 57-29 29:W+R round:1 sgf:2005/1-CristianoGarbarini-SupakitCharoenkul.sgf
+      - 57-45 45:W+18.5 round:6 sgf:2005/6-CristianoGarbarini-FabioSakataYamashita.sgf
+      - 58-39 39:W+18.5 round:2 sgf:2005/2-AlvaroRittatore-HatimeAraki.sgf
+      - 59-40 40:W+R round:7 sgf:2005/7-AndresAguilar-AndriusPetrauskas.sgf
+      - 59-43 59:B+13.5 round:4 sgf:2005/4-AndresAguilar-JanBogaerts.sgf
+      - 60-52 52:W+36.5 round:8 sgf:2005/8-AshotMargaryan-SuryaTjahyadiLim.sgf
+      - 60-56 60:B+R round:6 sgf:2005/6-AshotMargaryan-NarendraSowal.sgf
+      - 62-36 36:W+R round:2 sgf:2005/2-PedroMiyaguiShimabukuro.sgf
+      - 63-61 61:W+4.5 round:2 sgf:2005/2-JoseTelesMenezes-RafaelTorresMiranda.sgf
+      - 63-65 63:B+R round:7 sgf:2005/7-JoseTelesMenezes-CarlosVegas.sgf
+      - 64-34 34:W+R round:2 sgf:2005/2-BernardPalmer-JaimeRamirezReyes.sgf
+      - 64-65 64:B+R round:8 sgf:2005/8-BernardPalmer-CarlosVegas.sgf
+      - 65-19 19:W+R round:3 sgf:2005/3-CarlosVegas-FrankJanssen.sgf

@@ -13,3 +13,5 @@ stages:
       - sos
       - sosos
     findSharedPlaces: true
+    games:
+      - 3-7 3:B+5.5 round:3 sgf:1996/3-YongmanYi-MyeongseonCh`oe.sgf

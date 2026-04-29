@@ -13,3 +13,36 @@ stages:
       - sos
       - top8
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:5 sgf:2010/5-HongsukSong-ChenWang.sgf
+      - 1-10 1:B+R round:3 sgf:2010/3-HongsukSong-YongfeiGe.sgf
+      - 1-14 1:B+R round:7 sgf:2010/7-HongsukSong-AlexejLazarev.sgf
+      - 1-18 1:B+R round:1 sgf:2010/1-HongsukSong-ChristophGerlach.sgf
+      - 2-3 2:B+5.5 round:7 sgf:2010/7-ChenWang-TaeweonCho.sgf
+      - 2-6 2:B+R round:6 sgf:2010/6-ChenWang-ZhengxunChen.sgf
+      - 2-19 2:B+R round:3 sgf:2010/3-ChenWang-OferZivony.sgf
+      - 4-1 1:W+R round:6 sgf:2010/6-NaiSanChan-HongsukSong.sgf
+      - 4-2 2:W+0.5 round:8 sgf:2010/8-NaiSanChan-ChenWang.sgf
+      - 5-1 1:W+8.5 round:8 sgf:2010/8-OndrejSilt-HongsukSong.sgf
+      - 6-4 4:W+R round:5 sgf:2010/5-ZhengxunChen-NaiSanChan.sgf
+      - 6-11 6:B+R round:8 sgf:2010/8-ZhengxunChen-FredrikBlomback.sgf
+      - 6-13 6:B+7.5 round:4 sgf:2010/4-ZhengxunChen-FernandoAguilar.sgf
+      - 8-3 3:W+R round:2 sgf:2010/2-YoheiSato-TaeweonCho.sgf
+      - 8-5 5:W+10.5 round:7 sgf:2010/7-YoheiSato-OndrejSilt.sgf
+      - 9-7 7:W+3.5 round:2 sgf:2010/2-YuxiangLou-PalBalogh.sgf
+      - 9-13 9:B+17.5 round:8 sgf:2010/8-YuxiangLou-FernandoAguilar.sgf
+      - 10-4 4:W+4.5 round:7 sgf:2010/7-YongfeiGe-NaiSanChan.sgf
+      - 10-14 10:B+R round:1 sgf:2010/1-YongfeiGe-AlexejLazarev.sgf
+      - 10-15 10:B+8.5 round:5 sgf:2010/5-YongfeiGe-LeszekSoldan.sgf
+      - 11-4 4:W+R round:4 sgf:2010/4-FredrikBlomback-NaiSanChan.sgf
+      - 11-5 5:W+R round:6 sgf:2010/6-FredrikBlomback-OndrejSilt.sgf
+      - 12-2 2:W+R round:4 sgf:2010/4-ThomasHsiang-ChenWang.sgf
+      - 14-16 14:B+R round:5 sgf:2010/5-AlexejLazarev-BohdanZhurakovskyi.sgf
+      - 15-1 1:W+R round:4 sgf:2010/4-LeszekSoldan-HongsukSong.sgf
+      - 15-32 15:B+3.5 round:3 sgf:2010/3-LeszekSoldan-KamonSantipojana.sgf
+      - 17-5 17:B+R round:2 sgf:2010/2-BernhardScheid-OndrejSilt.sgf
+      - 23-4 4:W+R round:2 sgf:2010/2-KasperHornbaek-NaiSanChan.sgf
+      - 23-8 8:W+R round:6 sgf:2010/6-KasperHornbaek-YoheiSato.sgf
+      - 31-12 12:W+R round:3 sgf:2010/3-DavidOrmerod-ThomasHsiang.sgf
+      - 34-41 41:W+R round:1 sgf:2010/1-BoonPingTeng-TMarkHall.sgf
+      - 45-30 30:W+28.5 round:1 sgf:2010/1-JanezJanza-EmilBustamante.sgf

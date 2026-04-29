@@ -3,7 +3,7 @@ stages:
   - type: tournament
     file: wagc2000.txt
     time: 90min + 10 min/15 moves canadian
-    komi: 5.5  
+    komi: 5.5
     scoringColumns:
       - wins
       - null
@@ -14,3 +14,8 @@ stages:
       - sos
       - sosos
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+9.5 round:6 sgf:2000/6-HideyukiSakai-HokilPak.sgf
+      - 2-13 2:B+13.5 round:8 sgf:2000/8-HokilPak-AndrejKhmyrov.sgf
+      - 3-9 3:B+R round:7 sgf:2000/7-MaleunSaemHong-PingqiangZhou.sgf
+      - 14-2 2:W+13.5 round:7 sgf:2000/7-JongMoonLee-HokilPak.sgf
