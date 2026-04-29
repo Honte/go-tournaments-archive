@@ -61,27 +61,34 @@ export function calculateStats(tournaments: Tournament[]): Stats {
 
     for (const stage of stages) {
       for (const player of stage.table) {
+        const globalPlayer = tournamentPlayersMap[player.id];
         const playerGames: StatsPlayerGame[] = [];
         let won = 0;
 
         for (const game of player.games) {
           if (game) {
             won += Number(game.won);
+
+            const globalGame = tournamentGames[game.game];
+
             playerGames.push({
               id: tournamentPlayersMap[game.opponent].id,
               country: tournamentPlayers[game.opponent]?.country,
               rank: tournamentPlayers[game.opponent]?.rank,
               won: game.won,
               result: game.result,
-              props: tournament.games[game.game]?.props,
+              props: globalGame?.props,
               color: game.color,
             });
+
+            if (globalGame?.props?.sgf) {
+              globalPlayer.sgfs++;
+            }
           }
         }
 
         const country = tournamentPlayers[player.id].country;
         const rank = tournamentPlayers[player.id]?.rank ?? '';
-        const globalPlayer = tournamentPlayersMap[player.id];
         const result: StatsPlayerResult = {
           year,
           stage: stage.type,
@@ -251,6 +258,7 @@ export function calculateStats(tournaments: Tournament[]): Stats {
       bestPlace: Infinity,
       totalGames: 0,
       totalWon: 0,
+      sgfs: 0,
     });
   }
 

@@ -218,16 +218,7 @@ export type StatsPlayer = {
   bestPlace: number;
   totalGames: number;
   totalWon: number;
-};
-
-export type StatsOpponent = {
-  id: string;
-  name: string;
-  countries: string[];
-  games: {
-    year: number;
-    won: boolean;
-  }[];
+  sgfs: number;
 };
 
 export type StatsCountryResult = {

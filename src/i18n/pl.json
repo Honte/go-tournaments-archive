@@ -104,7 +104,8 @@
     "wonPercent": "% wygranych",
     "gameColor": "Kolor",
     "gameResult": "Wynik",
-    "gameWon": "Wygrana"
+    "gameWon": "Wygrana",
+    "sgfs": "Zapisane gry"
   },
   "game": {
     "open": "Otwórz",
