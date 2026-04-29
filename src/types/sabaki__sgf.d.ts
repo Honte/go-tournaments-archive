@@ -22,7 +22,6 @@ declare module '@sabaki/sgf' {
   function parse(contents: string, options?: ParseOptions): SgfNode[];
   function parseTokens(tokens: unknown[], options?: ParseOptions): SgfNode[];
   function parseBuffer(buffer: Buffer, options?: ParseOptions): SgfNode[];
-  function parseFile(path: string, options?: ParseOptions): SgfNode[];
   function stringify(node: SgfNode | SgfNode[], options?: StringifyOptions): string;
   function tokenize(contents: string): unknown[];
   function tokenizeBuffer(buffer: Buffer): unknown[];
@@ -31,14 +30,13 @@ declare module '@sabaki/sgf' {
     parse: typeof parse;
     parseTokens: typeof parseTokens;
     parseBuffer: typeof parseBuffer;
-    parseFile: typeof parseFile;
     stringify: typeof stringify;
     tokenize: typeof tokenize;
     tokenizeBuffer: typeof tokenizeBuffer;
   };
 
   export default sgf;
-  export { parse, parseTokens, parseBuffer, parseFile, stringify, tokenize, tokenizeBuffer };
+  export { parse, parseTokens, parseBuffer, stringify, tokenize, tokenizeBuffer };
   export type { SgfNode, ParseOptions, StringifyOptions };
 }
 

@@ -1,0 +1,39 @@
+diff --git a/node_modules/@sabaki/sgf/src/main.js b/node_modules/@sabaki/sgf/src/main.js
+index d17505b..c1ad85e 100644
+--- a/node_modules/@sabaki/sgf/src/main.js
++++ b/node_modules/@sabaki/sgf/src/main.js
+@@ -4,7 +4,7 @@ const {
+   tokenize,
+   tokenizeBuffer
+ } = require('./tokenize')
+-const {parse, parseTokens, parseBuffer, parseFile} = require('./parse')
++const {parse, parseTokens, parseBuffer} = require('./parse')
+ const {stringify} = require('./stringify')
+ const helper = require('./helper')
+ 
+@@ -18,7 +18,6 @@ Object.assign(
+     parse,
+     parseTokens,
+     parseBuffer,
+-    parseFile,
+     stringify
+   },
+   helper
+diff --git a/node_modules/@sabaki/sgf/src/parse.js b/node_modules/@sabaki/sgf/src/parse.js
+index 0da4685..6d7436a 100644
+--- a/node_modules/@sabaki/sgf/src/parse.js
++++ b/node_modules/@sabaki/sgf/src/parse.js
+@@ -1,5 +1,3 @@
+-const fs = require('fs')
+-
+ const Peekable = require('./peekable')
+ const {tokenizeIter, tokenizeBufferIter} = require('./tokenize')
+ const {unescapeString} = require('./helper')
+@@ -139,7 +137,3 @@ exports.parseBuffer = function(buffer, options = {}) {
+     options
+   )
+ }
+-
+-exports.parseFile = function(filename, options = {}) {
+-  return exports.parseBuffer(fs.readFileSync(filename), options)
+-}
