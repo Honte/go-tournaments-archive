@@ -26,7 +26,7 @@ export type SgfMove = {
   vertex: Vertex;
 };
 
-export function loadSgf(content: string, sgfPath: string): SgfData {
+export function loadSgf(content: string, sgfPath?: string): SgfData {
   const [root] = parse(content);
   const moves: SgfMove[] = [];
 

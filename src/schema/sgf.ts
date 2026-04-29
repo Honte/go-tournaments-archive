@@ -15,10 +15,10 @@ export enum SgfRootProps {
   GAME_TIME = 'TM', // in seconds
   GAME_OVERTIME = 'OT',
   BLACK_NAME = 'PB',
-  BLACK_RANK = 'RB',
+  BLACK_RANK = 'BR',
   BLACK_TEAM = 'BT',
   WHITE_NAME = 'PW',
-  WHITE_RANK = 'RW',
+  WHITE_RANK = 'WR',
   WHITE_TEAM = 'WT',
   COPYRIGHT = 'CP',
   COMMENT = 'GC',
