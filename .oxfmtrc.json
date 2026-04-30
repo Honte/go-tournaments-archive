@@ -1,0 +1,56 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "printWidth": 120,
+  "singleQuote": true,
+  "semi": true,
+  "trailingComma": "es5",
+  "ignorePatterns": [".gitattributes", ".idea", ".next", "out", "node_modules", "events/*/data", "events/*/sgf"],
+  "sortImports": {
+    "newlinesBetween": false,
+    "internalPattern": ["@/", "@event", "@event/"],
+    "groups": [
+      "event",
+      "eventSubpath",
+      "builtin",
+      "external",
+      "schema",
+      "i18n",
+      "libs",
+      "data",
+      "components",
+      ["parent", "sibling", "index"],
+      "style",
+      "unknown"
+    ],
+    "customGroups": [
+      {
+        "groupName": "event",
+        "elementNamePattern": ["@event"]
+      },
+      {
+        "groupName": "eventSubpath",
+        "elementNamePattern": ["@event/**"]
+      },
+      {
+        "groupName": "i18n",
+        "elementNamePattern": ["@/i18n/**"]
+      },
+      {
+        "groupName": "libs",
+        "elementNamePattern": ["@/libs/**"]
+      },
+      {
+        "groupName": "data",
+        "elementNamePattern": ["@/data/**"]
+      },
+      {
+        "groupName": "schema",
+        "elementNamePattern": ["@/schema/**"]
+      },
+      {
+        "groupName": "components",
+        "elementNamePattern": ["@/components/**"]
+      }
+    ]
+  }
+}

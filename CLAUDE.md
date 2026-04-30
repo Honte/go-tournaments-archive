@@ -20,8 +20,8 @@ npm run build:wagc   # Build with EVENT=wagc
 npm run start        # Serve the /out directory
 npm run lint         # ESLint
 npm run tsc          # Type check without emitting
-npm run fmt          # Prettier check
-npm run fmt:write    # Prettier write
+npm run fmt          # Oxfmt check
+npm run fmt:write    # Oxfmt write
 ```
 
 **Data/asset tools** (run as needed, not part of regular dev):
