@@ -20,7 +20,7 @@ that define age or other categories.
 Available event directories:
 
 | Event ID | Archive                          | Notes                                                                           |
-|----------|----------------------------------|---------------------------------------------------------------------------------|
+| -------- | -------------------------------- | ------------------------------------------------------------------------------- |
 | `pgc`    | Polish Go Championships          | Default event, locales `pl`, `en`                                               |
 | `wagc`   | World Amateur Go Championships   | Locales `en`, `pl`, country stats                                               |
 | `kpmc`   | Korea Prime Minister Cup         | Locales `en`, `pl`, country stats                                               |

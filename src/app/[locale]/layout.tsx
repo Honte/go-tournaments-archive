@@ -1,7 +1,7 @@
 import '@event/colors.css';
 import type { Metadata } from 'next';
-import { notFound } from 'next/navigation';
 import { Inter } from 'next/font/google';
+import { notFound } from 'next/navigation';
 import { PropsWithChildren } from 'react';
 import { EVENT_LOCALES, isEventLocale } from '@/i18n/locales';
 import { loadTranslations } from '@/i18n/server';

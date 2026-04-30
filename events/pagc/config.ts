@@ -8,7 +8,7 @@ const EVENT_CONFIG: EventConfig = {
   showBestPlace: true,
   hideGamesWithoutSgf: true,
   generateSvgs: false,
-  generateJpgs: true
+  generateJpgs: true,
 };
 
 export default EVENT_CONFIG;
