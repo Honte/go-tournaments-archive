@@ -1,4 +1,3 @@
-import { getAvailableTournaments, getTournament, getTournaments } from '@/data';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import type { Locale } from '@/i18n/consts';
@@ -6,14 +5,15 @@ import { EVENT_LOCALES } from '@/i18n/locales';
 import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
 import { getStageName } from '@/libs/stage';
+import { getAvailableTournaments, getTournament, getTournaments } from '@/data';
 import { getTournamentDescription } from '@/data/description';
 import { Awarded } from '@/components/Awarded';
 import { GamesList } from '@/components/GamesList';
+import { TopNavigation } from '@/components/navigation/TopNavigation';
 import { StageDetails } from '@/components/StageDetails';
 import { StageResults } from '@/components/StageResults';
 import { TournamentDescription } from '@/components/TournamentDescription';
 import { TournamentDetails } from '@/components/TournamentDetails';
-import { TopNavigation } from '@/components/navigation/TopNavigation';
 
 type PageProps = {
   params: Promise<{

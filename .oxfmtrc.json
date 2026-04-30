@@ -10,14 +10,15 @@
     "internalPattern": ["@/", "@event", "@event/"],
     "groups": [
       "event",
-      "eventSubpath",
       "builtin",
       "external",
       "schema",
       "i18n",
+      "tools",
       "libs",
       "data",
       "components",
+      "hooks",
       ["parent", "sibling", "index"],
       "style",
       "unknown"
@@ -25,11 +26,7 @@
     "customGroups": [
       {
         "groupName": "event",
-        "elementNamePattern": ["@event"]
-      },
-      {
-        "groupName": "eventSubpath",
-        "elementNamePattern": ["@event/**"]
+        "elementNamePattern": ["@event", "@event/**"]
       },
       {
         "groupName": "i18n",
@@ -41,7 +38,7 @@
       },
       {
         "groupName": "data",
-        "elementNamePattern": ["@/data/**"]
+        "elementNamePattern": ["@/data", "@/data/**"]
       },
       {
         "groupName": "schema",
@@ -50,6 +47,14 @@
       {
         "groupName": "components",
         "elementNamePattern": ["@/components/**"]
+      },
+      {
+        "groupName": "hooks",
+        "elementNamePattern": ["@/hooks/**"]
+      },
+      {
+        "groupName": "tools",
+        "elementNamePattern": ["@tools/**"]
       }
     ]
   }

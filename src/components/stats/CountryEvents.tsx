@@ -1,15 +1,15 @@
 'use client';
 
-import type { StatsCountry } from '@/schema/data';
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
+import type { StatsCountry } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { toPercentage } from '@/libs/table';
-import { YearLink } from '@/components/YearLink';
 import { StatsTable } from '@/components/table/StatsTable';
 import { H2 } from '@/components/ui/H2';
 import { PlayerLink } from '@/components/ui/PlayerLink';
+import { YearLink } from '@/components/YearLink';
 
 type CountryEventsProps = {
   country: StatsCountry;

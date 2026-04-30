@@ -1,8 +1,8 @@
 'use client';
 
-import type { ApiPlayerStats } from '@/schema/api';
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
+import type { ApiPlayerStats } from '@/schema/api';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { toPercentage } from '@/libs/table';

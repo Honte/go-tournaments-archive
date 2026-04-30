@@ -1,6 +1,6 @@
 import EVENT_CONFIG from '@event/config';
-import type { Player } from '@/schema/data';
 import slugify from 'slugify';
+import type { Player } from '@/schema/data';
 
 const PLAYER_REGEX =
   /^(?<name>[\p{Letter} \-]+)(\s+(?<rank>[0-9]{1,2}[dkp])?)?(\s+\((?<country>[A-Z]{2})\))?(\s+|(?<egd>[0-9]+))?$/u;

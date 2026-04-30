@@ -1,18 +1,18 @@
 'use client';
 
 import EVENT_CONFIG from '@event/config';
-import type { ApiPlayerStats } from '@/schema/api';
-import type { Stage } from '@/schema/data';
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
+import type { ApiPlayerStats } from '@/schema/api';
+import type { Stage } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { getStageNameFromType } from '@/libs/stage';
 import { toPercentage } from '@/libs/table';
-import { YearLink } from '@/components/YearLink';
 import { StatsTable } from '@/components/table/StatsTable';
 import { CountryLink } from '@/components/ui/CountryLink';
 import { H2 } from '@/components/ui/H2';
+import { YearLink } from '@/components/YearLink';
 
 type EventsProps = {
   player: ApiPlayerStats;

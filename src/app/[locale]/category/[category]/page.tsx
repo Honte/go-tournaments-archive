@@ -1,11 +1,11 @@
 import EVENT_CONFIG from '@event/config';
-import { getCategoryStats } from '@/data';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import type { Locale } from '@/i18n/consts';
 import { DEFAULT_LOCALE, EVENT_LOCALES } from '@/i18n/locales';
 import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
+import { getCategoryStats } from '@/data';
 import { CategoryMedalTable } from '@/components/category/CategoryMedalTable';
 import { CategoryResultsTable } from '@/components/category/CategoryResultsTable';
 import { Content } from '@/components/ui/Content';

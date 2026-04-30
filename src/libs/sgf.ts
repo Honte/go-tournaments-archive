@@ -1,7 +1,7 @@
-import type { GameProps } from '@/schema/data';
-import { CustomSgfProps, SgfRootProps } from '@/schema/sgf';
 import type { Sign, Vertex } from '@sabaki/go-board';
 import { parse } from '@sabaki/sgf';
+import type { GameProps } from '@/schema/data';
+import { CustomSgfProps, SgfRootProps } from '@/schema/sgf';
 
 export type SgfPlayer = {
   id?: string;

@@ -1,9 +1,9 @@
 import EVENT_CONFIG from '@event/config';
-import { getCountryMedals, getPlayerMedalists, getTopAttendants, getTotalStats, getTournaments } from '@/data';
 import { Activity } from 'react';
 import type { Locale } from '@/i18n/consts';
 import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
+import { getCountryMedals, getPlayerMedalists, getTopAttendants, getTotalStats, getTournaments } from '@/data';
 import { Attendants } from '@/components/Attendants';
 import { Banner } from '@/components/Banner';
 import { CountryMedalists } from '@/components/CountryMedalists';

@@ -1,10 +1,10 @@
 import EVENT from '@event';
 import { readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
-import type { InputTournament, InputTournamentStage } from '@/schema/input';
-import { readCliParams } from '@tools/cli';
 import fg from 'fast-glob';
 import { parseDocument } from 'yaml';
+import type { InputTournament, InputTournamentStage } from '@/schema/input';
+import { readCliParams } from '@tools/cli';
 import { printStageReport, printSummary } from './report';
 import { findSgfs } from './sgf';
 import { processStage } from './stage';

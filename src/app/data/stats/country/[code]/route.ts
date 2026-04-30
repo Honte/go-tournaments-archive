@@ -1,5 +1,5 @@
-import { getAllCountriesStats, getCountryStats } from '@/data';
 import { notFound } from 'next/navigation';
+import { getAllCountriesStats, getCountryStats } from '@/data';
 
 type PageProps = {
   params: Promise<{ code: string }>;

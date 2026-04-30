@@ -1,7 +1,7 @@
 import { Logo } from '@event/Logo';
 import type { LogoProps } from '@event/schema';
-import { generatePng } from '@tools/png';
 import { createElement } from 'react';
+import { generatePng } from '@tools/png';
 
 const APPLE_ICON_SIZE = 180;
 

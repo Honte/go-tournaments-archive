@@ -2,13 +2,13 @@ import EVENT from '@event';
 import EVENT_CONFIG from '@event/config';
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { getGameDetails } from '@/data';
+import fg from 'fast-glob';
+import type { NextRequest } from 'next/server';
 import { generateJpg } from '@tools/jpg';
 import { generatePng } from '@tools/png';
 import { cleanSgf } from '@tools/sgf';
 import { generateSvg } from '@tools/svg';
-import fg from 'fast-glob';
-import type { NextRequest } from 'next/server';
+import { getGameDetails } from '@/data';
 
 const THUMB_SIZE = 128;
 const SGF_DIR = `./events/${EVENT}/sgf`;

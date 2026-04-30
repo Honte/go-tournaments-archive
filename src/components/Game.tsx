@@ -1,6 +1,6 @@
-import { type Game, type GamePlayer, type Player } from '@/schema/data';
 import { clsx } from 'clsx';
 import { useMemo } from 'react';
+import { type Game, type GamePlayer, type Player } from '@/schema/data';
 import type { Translations, Translator } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { GameActions } from '@/components/GameActions';

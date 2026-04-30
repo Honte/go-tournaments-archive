@@ -1,12 +1,12 @@
 import EVENT_CONFIG from '@event/config';
-import type { StatsCountry } from '@/schema/data';
 import type { ReactNode } from 'react';
+import type { StatsCountry } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
 import { Details } from '@/components/Details';
-import { YearLink } from '@/components/YearLink';
 import { H2 } from '@/components/ui/H2';
+import { YearLink } from '@/components/YearLink';
 
 type CountryAchievementsProps = {
   country: StatsCountry;

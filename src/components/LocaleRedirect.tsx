@@ -1,10 +1,10 @@
 'use client';
 
-import Loading from '@/app/loading';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 import type { Locale } from '@/i18n/consts';
 import { DEFAULT_LOCALE, isEventLocale } from '@/i18n/locales';
+import Loading from '@/app/loading';
 
 function pickLocale(): Locale {
   const candidates = navigator.languages?.length ? navigator.languages : [navigator.language ?? ''];

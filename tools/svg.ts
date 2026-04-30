@@ -1,7 +1,7 @@
 import { existsSync } from 'node:fs';
 import { readFile } from 'node:fs/promises';
-import { cleanSgf } from '@tools/sgf';
 import { optimize } from 'svgo';
+import { cleanSgf } from '@tools/sgf';
 import { iterateStones, sgfToBoard } from '@/libs/goban';
 
 const boardSvg = await readFile('./src/components/goban/board.svg', 'utf-8');
