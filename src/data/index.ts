@@ -3,6 +3,7 @@ import type { ApiPlayerResult, ApiPlayerStats } from '@/schema/api';
 import type { Stage } from '@/schema/data';
 import { CustomSgfProps, SgfRootProps } from '@/schema/sgf';
 import type { RootParams } from '@tools/sgf';
+import { DEFAULT_LOCALE } from '@/i18n/locales';
 import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
 import { loadTournaments } from '@/data/load';
@@ -153,7 +154,7 @@ export async function getGameDetails(sgf: string) {
           }
         }
 
-        const translations = await loadTranslations('en');
+        const translations = await loadTranslations(DEFAULT_LOCALE);
         const t = getTranslator(translations);
         const black = tournament.players[game.players[0].id];
         const white = tournament.players[game.players[1].id];

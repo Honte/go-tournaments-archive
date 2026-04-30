@@ -2,18 +2,18 @@ import type { SVGProps } from 'react';
 import type { Locale } from '@/i18n/consts';
 
 export type EventConfig = {
-  id: string;
-  domain: string;
-  defaultLocale: Locale;
-  defaultCountry?: string;
-  showCountry?: boolean;
-  showBestPlace?: boolean;
-  generateJpgs?: boolean;
-  generatePngs?: boolean;
-  generateSvgs?: boolean;
-  hideGamesWithoutSgf?: boolean;
-  currentEdition?: boolean;
-  categories?: string[];
+  readonly id: string;
+  readonly domain: string;
+  readonly locales: [Locale, ...Locale[]];
+  readonly defaultCountry?: string;
+  readonly showCountry?: boolean;
+  readonly showBestPlace?: boolean;
+  readonly generateJpgs?: boolean;
+  readonly generatePngs?: boolean;
+  readonly generateSvgs?: boolean;
+  readonly hideGamesWithoutSgf?: boolean;
+  readonly currentEdition?: boolean;
+  readonly categories?: string[];
 };
 
 export type LogoProps = SVGProps<SVGSVGElement> & {

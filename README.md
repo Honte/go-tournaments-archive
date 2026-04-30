@@ -1,8 +1,9 @@
 # Go Tournaments Archive
 
 A multi-event Go tournament archive built as a static Next.js site. The same app can render several tournament archives,
-selected at build/dev time with the `EVENT` environment variable. Polish and English are supported through locale routes
-(`/pl`, `/en`), and tournament data is stored in YAML and H9 text files under `events/[event-id]/data/`.
+selected at build/dev time with the `EVENT` environment variable. Supports multiple languages (`en` and `pl` by default)
+through locale routes (`/[lang]`) when enabled by the active event config, and tournament data is stored in YAML and H9
+text files under `events/[event-id]/data/` and game records in SGF files under `events/[event-id]/sgf/`.
 
 The site supports tournament lists, edition detail pages, stage standings, game lists with SGF links and generated board
 previews, all-time player statistics, country statistics for international events, and category medal tables for events
@@ -10,21 +11,22 @@ that define age or other categories.
 
 ## Live sites
 
-- [Polish Go Championships Archive](https://mp.go.art.pl) (`pgc`)
 - [World Amateur Go Championships Archive](https://wagc.go.art.pl) (`wagc`)
+- [Polish Go Championships Archive](https://mp.go.art.pl) (`pgc`)
+- [Polish Women's Go Championships Archive](https://mpk.go.art.pl) (`pwgc`)
 
 ## Events
 
 Available event directories:
 
-| Event ID | Archive                          | Notes                                                                              |
-| -------- | -------------------------------- | ---------------------------------------------------------------------------------- |
-| `pgc`    | Polish Go Championships          | Default event, Polish default locale, SGF previews                                 |
-| `wagc`   | World Amateur Go Championships   | English default locale, country stats, JPG previews                                |
-| `kpmc`   | Korea Prime Minister Cup         | English default locale, country stats, JPG previews                                |
-| `pwgc`   | Polish Women Go Championships    | Polish default locale                                                              |
-| `pagc`   | Polish Academic Go Championships | Polish default locale                                                              |
-| `pygc`   | Polish Youth Go Championships    | Polish default locale, category stats for `u21`, `u20`, `u18`, `u16`, `u15`, `u12` |
+| Event ID | Archive                          | Notes                                                                           |
+|----------|----------------------------------|---------------------------------------------------------------------------------|
+| `pgc`    | Polish Go Championships          | Default event, locales `pl`, `en`                                               |
+| `wagc`   | World Amateur Go Championships   | Locales `en`, `pl`, country stats                                               |
+| `kpmc`   | Korea Prime Minister Cup         | Locales `en`, `pl`, country stats                                               |
+| `pwgc`   | Polish Women Go Championships    | Locales `pl`, `en`                                                              |
+| `pagc`   | Polish Academic Go Championships | Locales `pl`, `en`                                                              |
+| `pygc`   | Polish Youth Go Championships    | Locales `pl`, `en`, category stats for `u21`, `u20`, `u18`, `u16`, `u15`, `u12` |
 
 `EVENT` defaults to `pgc`. Event-specific config, translations, colors, logo, data, and SGF files live in
 `events/[event-id]/`.
@@ -104,7 +106,7 @@ Environment variables:
 
 Main static pages:
 
-- `/` - redirects to the best browser-supported locale, falling back to the event default locale.
+- `/` - redirects to the best browser-supported event locale, falling back to the first configured event locale.
 - `/:locale` - archive overview with winners, medalists, attendants, total stats, and country medalists when enabled.
 - `/:locale/:year` - tournament detail page with event metadata, awarded players, stage tables, and game list.
 - `/:locale/stats` - all-time player table.
@@ -141,7 +143,7 @@ src/
   app/              # Next.js App Router pages and static route handlers
   components/       # UI, tables, stats, navigation, goban preview components
   data/             # YAML/H9 loaders, standings, tiebreakers, aggregate stats
-  i18n/             # Locale constants, server loader, translator
+  i18n/             # Locale types, active event locale helpers, server loader, translator
   libs/             # Shared utilities: dates, H9 parser, SGF/goban parser, sorting, math
   schema/           # Input and normalized data types
 tools/              # One-off extraction, SGF cleanup/matching, preview generation helpers
@@ -161,7 +163,7 @@ Each event has `events/[event-id]/config.ts` exporting an `EventConfig`:
 type EventConfig = {
   id: string;
   domain: string;
-  defaultLocale: 'pl' | 'en';
+  locales: ['pl', 'en'];
   defaultCountry?: string;
   showCountry?: boolean;
   showBestPlace?: boolean;
@@ -176,6 +178,8 @@ type EventConfig = {
 
 Common flags:
 
+- `locales` defines which locale-prefixed routes and translation JSON files are generated for the event. The first item
+  is the default locale used by root redirects and default metadata.
 - `defaultCountry` is applied to players/tournaments without an explicit country.
 - `showCountry` enables country columns, country medalists, and country stats routes.
 - `showBestPlace` controls best-place display in stats tables.
@@ -439,7 +443,7 @@ Relevant tool modules:
 ## Adding a new event
 
 1. Create `events/[event-id]/`.
-2. Add `config.ts`, `Logo.tsx`, `colors.css`, `i18n/pl.json`, and `i18n/en.json`.
+2. Add `config.ts`, `Logo.tsx`, `colors.css`, and translation JSON files for every locale listed in `config.ts`.
 3. Add `data/[year].yml` files, plus H9 `.txt` files or Markdown descriptions if needed.
 4. Add SGF files under `sgf/` if the archive exposes game records.
 5. Add matching `dev:[event-id]` and `build:[event-id]` scripts if this should be a first-class event command.

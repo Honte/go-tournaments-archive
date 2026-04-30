@@ -2,12 +2,12 @@ import { EventConfig } from '@event/schema';
 
 const EVENT_CONFIG: EventConfig = {
   id: 'pwgc',
-  domain: '',
-  defaultLocale: 'pl',
+  domain: 'https://mpk.go.art.pl',
+  locales: ['pl', 'en'],
   showCountry: false,
   showBestPlace: true,
   hideGamesWithoutSgf: true,
-  generateSvgs: true,
+  generateSvgs: false,
   generateJpgs: true,
 };
 

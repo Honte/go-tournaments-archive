@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { SUPPORTED_LOCALES } from '@/i18n/consts';
+import { EVENT_LOCALES } from '@/i18n/locales';
 
 export type LocaleNavigationProps = {
   locale: string;
@@ -12,9 +12,13 @@ export function LocaleNavigation({ locale }: LocaleNavigationProps) {
   const pathname = usePathname();
   const regex = new RegExp(`^/${locale}`);
 
+  if (EVENT_LOCALES.length <= 1) {
+    return null;
+  }
+
   return (
     <div className="flex gap-3 text-sm text-event-light ml-auto">
-      {SUPPORTED_LOCALES.map((nextLocale) => (
+      {EVENT_LOCALES.map((nextLocale) => (
         <Link
           key={nextLocale}
           className={nextLocale === locale ? 'font-bold' : 'underline'}

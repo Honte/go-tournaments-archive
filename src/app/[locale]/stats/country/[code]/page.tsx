@@ -3,7 +3,8 @@ import { getAllCountriesStats, getCountryStats } from '@/data';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import type { Locale } from '@/i18n/consts';
-import { SUPPORTED_LOCALES, loadTranslations } from '@/i18n/server';
+import { EVENT_LOCALES } from '@/i18n/locales';
+import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
 import { CountryStats } from '@/components/CountryStats';
 import { Content } from '@/components/ui/Content';
@@ -58,7 +59,7 @@ export async function generateStaticParams() {
 
   return Object.keys(countries)
     .map((code) =>
-      SUPPORTED_LOCALES.map((locale) => ({
+      EVENT_LOCALES.map((locale) => ({
         locale,
         code: code.toLowerCase(),
       }))
