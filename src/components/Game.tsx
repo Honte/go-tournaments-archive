@@ -13,11 +13,10 @@ type GameProps = {
   className?: string;
   players: Record<string, Player>;
   translations: Translations;
-  komi?: number;
   wide?: boolean;
 };
 
-export function Game({ className, game, players, translations, title, komi, wide }: GameProps) {
+export function Game({ className, game, players, translations, title, wide }: GameProps) {
   const t = getTranslator(translations);
   const [home, away] = useMemo(() => game.players.map((p) => ({ ...players[p.id], ...p })), [game, players]);
   const hasSgf = game.props.sgf;

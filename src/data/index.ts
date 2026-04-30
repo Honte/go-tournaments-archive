@@ -124,7 +124,6 @@ export async function getGameDetails(sgf: string) {
       if (game.props.sgf === sgf) {
         let gameStage: Stage | undefined;
         let gameRound: number | undefined;
-        let gameIndex: number | undefined;
 
         for (const stage of tournament.stages) {
           switch (stage.type) {
@@ -137,7 +136,6 @@ export async function getGameDetails(sgf: string) {
                 if (gameNo >= 0) {
                   gameStage = stage;
                   gameRound = roundNo;
-                  gameIndex = gameNo;
                   break;
                 }
               }
@@ -148,7 +146,6 @@ export async function getGameDetails(sgf: string) {
               if (gameNo >= 0) {
                 gameStage = stage;
                 gameRound = undefined;
-                gameIndex = gameNo;
                 break;
               }
           }

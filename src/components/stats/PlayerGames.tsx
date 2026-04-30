@@ -48,12 +48,7 @@ export function PlayerGames({ player, translations }: PlayerGamesProps) {
           const opponentName = player.opponents[game.id];
           const [opponentFirstName, ...rest] = opponentName.split(' ');
           const opponentLastName = rest.join(' ') || '';
-          const me = {
-            id: player.id,
-            name: player.name,
-            rank: event.rank,
-            country: event.country,
-          };
+
           const opponent = {
             id: game.id,
             name: opponentName,

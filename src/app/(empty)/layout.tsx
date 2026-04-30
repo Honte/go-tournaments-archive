@@ -22,7 +22,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function RootLayout({ children }: PropsWithChildren) {
   return (
-    <html className="size-full bg-event-light">
+    <html className="size-full bg-event-light" lang={DEFAULT_LOCALE}>
       <body>{children}</body>
     </html>
   );

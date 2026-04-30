@@ -28,7 +28,7 @@ export function createTable({
         starting: 0,
         rank: 0,
       },
-      games: new Array(rounds.length).fill(null),
+      games: Array.from({ length: rounds.length }, () => null),
       won: [],
       lost: [],
     },
@@ -51,7 +51,7 @@ export function createTable({
         rank: getRankValue(playersMap[id].rank),
         starting: position++,
       },
-      games: new Array(rounds.length).fill(null),
+      games: Array.from({ length: rounds.length }, () => null),
       won: [],
       lost: [],
     };

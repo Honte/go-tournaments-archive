@@ -18,8 +18,8 @@ npm run build        # Build static output to /out (uses current EVENT)
 npm run build:pgc    # Build with EVENT=pgc
 npm run build:wagc   # Build with EVENT=wagc
 npm run start        # Serve the /out directory
-npm run lint         # ESLint
-npm run tsc          # Type check without emitting
+npm run lint         # Oxlint with type checking
+npm run tsc          # Type check with Oxlint
 npm run fmt          # Oxfmt check
 npm run fmt:write    # Oxfmt write
 ```

@@ -31,7 +31,7 @@ export function createLadderTable({
         id,
         place,
         index: table.length + 1,
-        games: new Array(rounds.length).fill(null),
+        games: Array.from({ length: rounds.length }, () => null),
         playoffs: [],
       };
 

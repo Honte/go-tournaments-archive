@@ -73,7 +73,6 @@ export function GamePopover({ translations }: GamePopoverProps) {
   return (
     <>
       {state && (
-        // eslint-disable-next-line react-hooks/refs -- https://github.com/floating-ui/floating-ui/discussions/3405
         <div ref={refs.setFloating} style={floatingStyles}>
           <div
             role="tooltip"

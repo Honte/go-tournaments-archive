@@ -224,7 +224,7 @@ async function extractFromDatabase({
       output.push(
         `${black}-${white}`,
         `${winner}:${color}+${result}`,
-        ...Object.entries(props).map(([key, value]) => `${key}:${value}`)
+        ...Object.entries(props).map(([key, value]) => `${key}:${Array.isArray(value) ? value.join(',') : value}`)
       );
 
       (rounds[round] ||= []).push(output.join(' '));
@@ -307,7 +307,7 @@ async function getSgf({
       .toUpperCase?.();
 
     if (gameResult && gameResult !== '?' && gameResult.trim() !== expectedResult) {
-      console.warn(`Result for game ${url} is different: ${gameResult} vs ${expectedResult}`);
+      console.warn(`Result for game ${url} is different: ${gameResult} vs ${String(expectedResult)}`);
     }
 
     result.push({

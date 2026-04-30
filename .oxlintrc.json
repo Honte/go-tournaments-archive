@@ -1,0 +1,15 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["eslint", "typescript", "unicorn", "oxc", "react", "nextjs", "jsx-a11y", "import"],
+  "options": {
+    "typeAware": true,
+    "typeCheck": true,
+    "reportUnusedDisableDirectives": "error"
+  },
+  "rules": {
+    "curly": ["error", "all"],
+    "import/no-anonymous-default-export": "off",
+    "nextjs/no-img-element": "off",
+    "typescript/no-floating-promises": "off"
+  }
+}

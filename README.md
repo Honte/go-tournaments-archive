@@ -63,8 +63,8 @@ npm run dev:pygc
 Useful checks:
 
 ```bash
-npm run tsc          # Type-check without emitting
-npm run lint         # Run ESLint
+npm run tsc          # Type-check with Oxlint
+npm run lint         # Run Oxlint with type checking
 npm run fmt          # Check formatting
 npm run fmt:write    # Write formatting changes
 ```

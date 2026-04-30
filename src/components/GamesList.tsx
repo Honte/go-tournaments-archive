@@ -37,7 +37,6 @@ export function GamesList({ tournament, translations }: GamesListProps) {
             stage: name,
             name: roundName,
             games: round.filter(gamesFilter),
-            komi: stage.komi,
           });
         }
 
@@ -48,7 +47,6 @@ export function GamesList({ tournament, translations }: GamesListProps) {
             stage: name,
             name: playoffName,
             games: stage.playoffs.filter(gamesFilter),
-            komi: stage.komi,
           });
         }
 
@@ -59,7 +57,6 @@ export function GamesList({ tournament, translations }: GamesListProps) {
           stage: name,
           name,
           games: stage.games.filter(gamesFilter),
-          komi: stage.komi,
         });
         break;
       default:
@@ -91,7 +88,6 @@ export function GamesList({ tournament, translations }: GamesListProps) {
                 translations={translations}
                 players={players}
                 title={`${t('site.acronym')} ${tournament.year} - ${list.name} - ${t('table.game', String(gameIndex + 1))}`}
-                komi={list.komi}
                 wide={true}
               />
             ))}
