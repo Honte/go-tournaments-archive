@@ -66,8 +66,7 @@ for (const yamlPath of yamlFiles.sort()) {
 
     printStageReport(stageResult);
 
-    updateYamlDoc(doc, json.stages.indexOf(stage), stageResult);
-    yamlModified = true;
+    yamlModified = updateYamlDoc(doc, json.stages.indexOf(stage), stageResult) || yamlModified;
 
     results.push({
       year,

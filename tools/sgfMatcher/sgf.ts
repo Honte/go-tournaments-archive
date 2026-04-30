@@ -4,6 +4,11 @@ import sgfParser from '@sabaki/sgf';
 import fg from 'fast-glob';
 import type { PlayerNames, SgfInfo } from './types';
 
+type NormalizedSgfResult = {
+  cleanResult: string | null;
+  resultIssue: string | null;
+};
+
 export function resolveNames(sgf: SgfInfo): PlayerNames {
   return {
     blackName: sgf.metadata.blackName ?? sgf.fromFilename.blackName,
@@ -41,6 +46,7 @@ function extractSgfInfo(content: string, filename: string): SgfInfo {
       fromFilename,
       rawResult: null,
       cleanResult: null,
+      resultIssue: null,
       round: roundFromFilename,
       corrupted: true,
     };
@@ -52,8 +58,7 @@ function extractSgfInfo(content: string, filename: string): SgfInfo {
     whiteName: data?.PW?.[0] ?? null,
   };
   const rawResult = data?.RE?.[0] ?? null;
-  // Some SGFs in the archive use "B,Resign" instead of "B+Resign" as the result separator — accept both.
-  const cleanResult = rawResult ? rawResult.replace(/,/g, '+') : null;
+  const { cleanResult, resultIssue } = normalizeSgfResult(rawResult);
   const roundFromMetadata = parseRoundValue(data?.RO?.[0]);
 
   return {
@@ -62,9 +67,99 @@ function extractSgfInfo(content: string, filename: string): SgfInfo {
     fromFilename,
     rawResult,
     cleanResult,
+    resultIssue,
     round: roundFromMetadata ?? roundFromFilename,
     corrupted: false,
   };
+}
+
+export function normalizeSgfResult(rawResult: string | null): NormalizedSgfResult {
+  if (rawResult === null) {
+    return { cleanResult: null, resultIssue: null };
+  }
+
+  const value = rawResult.trim();
+
+  if (!value) {
+    return {
+      cleanResult: null,
+      resultIssue: `invalid result "${rawResult}": expected B+<result> or W+<result>`,
+    };
+  }
+
+  const colorMatch = value.match(/^([A-Za-z]+)(.*)$/);
+
+  if (!colorMatch) {
+    return {
+      cleanResult: null,
+      resultIssue: `invalid result "${rawResult}": expected B+<result> or W+<result>`,
+    };
+  }
+
+  const [, rawColor, rest] = colorMatch;
+  const color = normalizeResultColor(rawColor);
+
+  if (!color) {
+    return {
+      cleanResult: null,
+      resultIssue: `invalid result color "${rawColor}": expected B, W, Black, or White`,
+    };
+  }
+
+  if (!rest) {
+    return { cleanResult: color, resultIssue: null };
+  }
+
+  if (!rest.startsWith('+') && !rest.startsWith(',')) {
+    return {
+      cleanResult: null,
+      resultIssue: `invalid result "${rawResult}": expected + or , separator`,
+    };
+  }
+
+  const result = rest.slice(1);
+
+  if (!result) {
+    return {
+      cleanResult: null,
+      resultIssue: `invalid result "${rawResult}": expected B+<result> or W+<result>`,
+    };
+  }
+
+  if (/\s/.test(result)) {
+    return {
+      cleanResult: null,
+      resultIssue: `invalid result "${rawResult}": result must not contain spaces`,
+    };
+  }
+
+  return { cleanResult: `${color}+${normalizeResultValue(result)}`, resultIssue: null };
+}
+
+function normalizeResultColor(color: string): 'B' | 'W' | null {
+  const normalized = color.toLowerCase();
+
+  if (normalized === 'b' || normalized === 'black') {
+    return 'B';
+  }
+
+  if (normalized === 'w' || normalized === 'white') {
+    return 'W';
+  }
+
+  return null;
+}
+
+function normalizeResultValue(result: string): string {
+  if (result.toLowerCase() === 'resign') {
+    return 'R';
+  }
+
+  if (/^\d+([,.]\d+)?$/.test(result)) {
+    return String(Number(result.replace(',', '.')));
+  }
+
+  return result;
 }
 
 function parseRoundValue(value: string | undefined): number | null {

@@ -35,7 +35,11 @@ function buildReasons(sgf: SgfInfo, playerLookup: Map<string, number>): string[]
     reasons.push(`player "${names.whiteName}" not found`);
   }
 
-  return reasons;
+  if (sgf.resultIssue) {
+    reasons.push(sgf.resultIssue);
+  }
+
+  return reasons.length > 0 ? reasons : ['no matching game'];
 }
 
 export function printStageReport(result: StageProcessResult): void {
@@ -46,7 +50,7 @@ export function printStageReport(result: StageProcessResult): void {
   console.log(`Unmatched: ${result.unmatchedEntries.length}`);
 
   for (const { filename, reasons } of result.unmatchedEntries) {
-    console.log(` ✗ ${filename} — ${reasons.join(', ') || 'no matching game'}`);
+    console.log(` ✗ ${filename} — ${reasons.join(', ')}`);
   }
 }
 
