@@ -1,7 +1,7 @@
 'use client';
 
-import type { Game, Player } from '@/schema/data';
 import { type ElementType, type HTMLAttributes, type JSX, type PropsWithChildren, useRef } from 'react';
+import type { Game, Player } from '@/schema/data';
 import { SHOW_POPOVER_EVENT } from '@/components/GamePopover';
 
 type GamePopoverTriggerProps = PropsWithChildren<

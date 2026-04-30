@@ -1,12 +1,12 @@
 'use client';
 
-import { useSitemapData } from '@/hooks/useSitemapData';
 import { clsx } from 'clsx';
 import Link from 'next/link';
 import { useCallback, useEffect, useState } from 'react';
 import type { Locale } from '@/i18n/consts';
 import { Hamburger } from '@/components/ui/Hamburger';
 import { Overlay } from '@/components/ui/Overlay';
+import { useSitemapData } from '@/hooks/useSitemapData';
 
 export type SideNavigationProps = {
   locale: Locale;

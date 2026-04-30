@@ -3,7 +3,7 @@ import { EventConfig } from '@event/schema';
 const EVENT_CONFIG: EventConfig = {
   id: 'mpj',
   domain: '',
-  defaultLocale: 'pl',
+  locales: ['pl', 'en'],
   showCountry: false,
   showBestPlace: false,
   hideGamesWithoutSgf: true,

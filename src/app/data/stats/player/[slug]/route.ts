@@ -1,5 +1,5 @@
-import { getAllPlayersStats, getPlayerStats } from '@/data';
 import { notFound } from 'next/navigation';
+import { getAllPlayersStats, getPlayerStats } from '@/data';
 
 type PageProps = {
   params: Promise<{ slug: string }>;

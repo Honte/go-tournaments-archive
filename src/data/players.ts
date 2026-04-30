@@ -1,9 +1,9 @@
 import EVENT_CONFIG from '@event/config';
-import type { Player } from '@/schema/data';
 import slugify from 'slugify';
+import type { Player } from '@/schema/data';
 
 const PLAYER_REGEX =
-  /^(?<name>[\p{Letter} \-]+)(\s+(?<rank>[0-9]{1,2}[dkp])?)?(\s+\((?<country>[A-Z]{2})\))?(\s+|(?<egd>[0-9]+))?$/u;
+  /^(?<name>[\p{Letter} -]+)(\s+(?<rank>[0-9]{1,2}[dkp])?)?(\s+\((?<country>[A-Z]{2})\))?(\s+|(?<egd>[0-9]+))?$/u;
 
 export type PlayersHandler = ReturnType<typeof createPlayersHandler>;
 
@@ -41,7 +41,7 @@ export function createPlayersHandler() {
         name,
         rank,
         country,
-        egd: Number(egd) ?? undefined,
+        egd: egd ? Number(egd) : undefined,
       };
     }
 

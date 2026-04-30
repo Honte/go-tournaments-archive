@@ -43,7 +43,7 @@ stages:
       - 11-16 11:B+R round:6 sgf:2019/6-FuTeYang-KoichiroHabu.sgf
       - 11-19 11:B+R round:8 sgf:2019/8-FuTeYang-SimaoGoncalves.sgf
       - 14-1 1:W+R round:1 sgf:2019/1-PhuocDinhTran-ChenWang.sgf
-      - 14-40 14:B+2.50 round:5 sgf:2019/5-PhuocDinhTran-ElianIoanGrigoriu.sgf
+      - 14-40 14:B+2.5 round:5 sgf:2019/5-PhuocDinhTran-ElianIoanGrigoriu.sgf
       - 15-9 9:W+R round:1 sgf:2019/1-GeertGroenen-JieHuiKwa.sgf
       - 16-7 7:W+R round:8 sgf:2019/8-KoichiroHabu-DmytroBogatskyy.sgf
       - 16-24 24:W+R round:1 sgf:2019/1-KoichiroHabu-JonasWelticke.sgf
@@ -74,7 +74,7 @@ stages:
       - 39-37 39:B+R round:6 sgf:2019/6-IljaBusko-DimitrisRegginos.sgf
       - 39-59 39:B+R round:3 sgf:2019/3-IljaBusko-FengYangLim.sgf
       - 41-31 31:W+16.5 round:7 sgf:2019/7-SoerenOhlenbusch-CarlNicolasSchroterMendez.sgf
-      - 42-11 11:W+14.50 round:1 sgf:2019/1-SeverinHanevik-FuTeYang.sgf
+      - 42-11 11:W+14.5 round:1 sgf:2019/1-SeverinHanevik-FuTeYang.sgf
       - 42-32 32:W+16.5 round:6 sgf:2019/6-SeverinHanevik-MilosBojanic.sgf
       - 43-21 21:W+R round:6 sgf:2019/6-HelcioAlexandrePacheco-StjepanMestrovic.sgf
       - 43-35 35:W+33.5 round:3 sgf:2019/3-HelcioAlexandrePacheco-VladasZaleskas.sgf

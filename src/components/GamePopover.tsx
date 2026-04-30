@@ -1,8 +1,8 @@
 'use client';
 
-import type { Game, Player } from '@/schema/data';
 import { autoUpdate, useFloating } from '@floating-ui/react';
 import { useCallback, useEffect, useState } from 'react';
+import type { Game, Player } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { Game as GameComponent } from '@/components/Game';
 
@@ -73,7 +73,6 @@ export function GamePopover({ translations }: GamePopoverProps) {
   return (
     <>
       {state && (
-        // eslint-disable-next-line react-hooks/refs -- https://github.com/floating-ui/floating-ui/discussions/3405
         <div ref={refs.setFloating} style={floatingStyles}>
           <div
             role="tooltip"

@@ -2,10 +2,10 @@ import EVENT from '@event';
 import EVENT_CONFIG from '@event/config';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
-import { Game, Tournament, TournamentDateSpan, TournamentDetails } from '@/schema/data';
-import { InputTournament } from '@/schema/input';
 import fg from 'fast-glob';
 import { parse } from 'yaml';
+import { Game, Tournament, TournamentDateSpan, TournamentDetails } from '@/schema/data';
+import { InputTournament } from '@/schema/input';
 import { createPlayersHandler } from '@/data/players';
 import { parseStage } from '@/data/stages';
 

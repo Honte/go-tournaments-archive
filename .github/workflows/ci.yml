@@ -18,5 +18,6 @@ jobs:
           cache: npm
 
       - run: npm ci
+      - run: npm run fmt
       - run: npm run lint
-      - run: npm run tsc
+      - run: npm run test

@@ -2,7 +2,8 @@ import { type Document, Scalar, YAMLSeq } from 'yaml';
 import { compareEntries } from './entries';
 import type { StageProcessResult, UnmatchedEntry } from './types';
 
-export function updateYamlDoc(doc: Document, stageIndex: number, stageResult: StageProcessResult): void {
+export function updateYamlDoc(doc: Document, stageIndex: number, stageResult: StageProcessResult): boolean {
+  const before = doc.toString({ lineWidth: 0 });
   const stagesPath = ['stages', stageIndex];
   const matched = [...stageResult.reusedEntries, ...stageResult.matchedEntries].sort(compareEntries);
   const unmatched = stageResult.unmatchedEntries.sort((a, b) => compareEntries(a.line, b.line));
@@ -18,6 +19,8 @@ export function updateYamlDoc(doc: Document, stageIndex: number, stageResult: St
   } else {
     doc.deleteIn([...stagesPath, 'unmatchedSgfs']);
   }
+
+  return doc.toString({ lineWidth: 0 }) !== before;
 }
 
 function buildUnmatchedSeq(entries: UnmatchedEntry[]): YAMLSeq<Scalar<string>> {

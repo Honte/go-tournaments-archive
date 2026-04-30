@@ -1,9 +1,10 @@
 import '@event/colors.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import { notFound } from 'next/navigation';
 import { PropsWithChildren } from 'react';
-import type { Locale } from '@/i18n/consts';
-import { SUPPORTED_LOCALES, loadTranslations } from '@/i18n/server';
+import { EVENT_LOCALES, isEventLocale } from '@/i18n/locales';
+import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
 import { Client } from '@/components/Client';
 import { Footer } from '@/components/Footer';
@@ -19,7 +20,10 @@ type RootLayoutProps = PropsWithChildren<{
 
 export async function generateMetadata(props: RootLayoutProps): Promise<Metadata> {
   const { locale } = await props.params;
-  const translations = await loadTranslations(locale as Locale);
+  if (!isEventLocale(locale)) {
+    return notFound();
+  }
+  const translations = await loadTranslations(locale);
   const t = getTranslator(translations);
 
   return {
@@ -33,12 +37,15 @@ export async function generateMetadata(props: RootLayoutProps): Promise<Metadata
 }
 
 export async function generateStaticParams() {
-  return SUPPORTED_LOCALES.map((locale) => ({ locale }));
+  return EVENT_LOCALES.map((locale) => ({ locale }));
 }
 
 export default async function RootLayout({ params, children }: RootLayoutProps) {
   const { locale } = await params;
-  const translations = await loadTranslations(locale as Locale);
+  if (!isEventLocale(locale)) {
+    return notFound();
+  }
+  const translations = await loadTranslations(locale);
 
   return (
     <html lang={locale} className="min-h-full bg-event-light">
@@ -49,7 +56,7 @@ export default async function RootLayout({ params, children }: RootLayoutProps) 
             <main className="flex-1 container max-w-(--breakpoint-2xl) mx-auto p-4 w-full">{children}</main>
             <Footer translations={translations} />
           </div>
-          <Client locale={locale as Locale} />
+          <Client locale={locale} />
         </QueryProvider>
       </body>
     </html>

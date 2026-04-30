@@ -1,9 +1,9 @@
 'use client';
 
-import { useTranslationsData } from '@/hooks/useTranslationsData';
 import type { Locale } from '@/i18n/consts';
 import { GamePopover } from '@/components/GamePopover';
 import { GameViewer } from '@/components/viewer/GameViewer';
+import { useTranslationsData } from '@/hooks/useTranslationsData';
 
 type ClientProps = {
   locale: Locale;

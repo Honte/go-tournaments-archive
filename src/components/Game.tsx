@@ -1,6 +1,6 @@
-import { type Game, type GamePlayer, type Player } from '@/schema/data';
 import { clsx } from 'clsx';
 import { useMemo } from 'react';
+import { type Game, type GamePlayer, type Player } from '@/schema/data';
 import type { Translations, Translator } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { GameActions } from '@/components/GameActions';
@@ -13,11 +13,10 @@ type GameProps = {
   className?: string;
   players: Record<string, Player>;
   translations: Translations;
-  komi?: number;
   wide?: boolean;
 };
 
-export function Game({ className, game, players, translations, title, komi, wide }: GameProps) {
+export function Game({ className, game, players, translations, title, wide }: GameProps) {
   const t = getTranslator(translations);
   const [home, away] = useMemo(() => game.players.map((p) => ({ ...players[p.id], ...p })), [game, players]);
   const hasSgf = game.props.sgf;

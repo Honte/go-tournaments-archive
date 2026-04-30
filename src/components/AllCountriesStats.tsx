@@ -1,10 +1,9 @@
 'use client';
 
 import EVENT_CONFIG from '@event/config';
-import { useTranslationsData } from '@/hooks/useTranslationsData';
-import type { StatsCountry, TableStats } from '@/schema/data';
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
+import type { StatsCountry, TableStats } from '@/schema/data';
 import type { Locale, Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { sortTableStats } from '@/libs/sort';
@@ -12,6 +11,7 @@ import { toPercentage } from '@/libs/table';
 import { StatsTable } from '@/components/table/StatsTable';
 import { CountryLink } from '@/components/ui/CountryLink';
 import { Loader } from '@/components/ui/Loader';
+import { useTranslationsData } from '@/hooks/useTranslationsData';
 
 type AllCountriesStatsProps = {
   countries: Record<string, StatsCountry>;

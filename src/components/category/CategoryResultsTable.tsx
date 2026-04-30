@@ -1,17 +1,17 @@
 'use client';
-import type { StatsCategory, StatsCategoryPlayer } from '@/schema/data';
 import type { ColumnDef, SortingFn } from '@tanstack/react-table';
 import { useCallback, useMemo, useState } from 'react';
+import type { StatsCategory, StatsCategoryPlayer } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
 import type { KeysMatching } from '@/libs/types';
-import { YearLink } from '@/components/YearLink';
 import { StatsTable } from '@/components/table/StatsTable';
 import { H2 } from '@/components/ui/H2';
 import { PlayerLink } from '@/components/ui/PlayerLink';
 import { PlayerName } from '@/components/ui/PlayerName';
 import { Toggle } from '@/components/ui/Toggle';
+import { YearLink } from '@/components/YearLink';
 
 export type CategoryResultsTableProps = {
   category: string;

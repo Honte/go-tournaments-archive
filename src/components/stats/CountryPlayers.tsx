@@ -1,9 +1,9 @@
 'use client';
 
 import EVENT_CONFIG from '@event/config';
-import type { StatsCountry, TableStats } from '@/schema/data';
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
+import type { StatsCountry, TableStats } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { sortTableStats } from '@/libs/sort';

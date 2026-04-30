@@ -13,6 +13,7 @@ export type SgfInfo = {
   fromFilename: PlayerNames;
   rawResult: string | null;
   cleanResult: string | null;
+  resultIssue: string | null;
   round: number | null;
   corrupted: boolean;
 };

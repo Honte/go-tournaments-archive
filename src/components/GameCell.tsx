@@ -1,5 +1,5 @@
-import type { Game, IndexedTablePlayerGame, Player } from '@/schema/data';
 import type { JSX } from 'react';
+import type { Game, IndexedTablePlayerGame, Player } from '@/schema/data';
 import { GamePopoverTrigger } from '@/components/GamePopoverTrigger';
 
 type GameCellProps = {

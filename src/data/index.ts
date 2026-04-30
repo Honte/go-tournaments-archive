@@ -2,9 +2,10 @@ import EVENT_CONFIG from '@event/config';
 import type { ApiPlayerResult, ApiPlayerStats } from '@/schema/api';
 import type { Stage } from '@/schema/data';
 import { CustomSgfProps, SgfRootProps } from '@/schema/sgf';
-import type { RootParams } from '@tools/sgf';
+import { DEFAULT_LOCALE } from '@/i18n/locales';
 import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
+import type { RootParams } from '@tools/sgf';
 import { loadTournaments } from '@/data/load';
 import { calculateStats } from '@/data/stats';
 import pkg from '../../package.json';
@@ -123,7 +124,6 @@ export async function getGameDetails(sgf: string) {
       if (game.props.sgf === sgf) {
         let gameStage: Stage | undefined;
         let gameRound: number | undefined;
-        let gameIndex: number | undefined;
 
         for (const stage of tournament.stages) {
           switch (stage.type) {
@@ -136,7 +136,6 @@ export async function getGameDetails(sgf: string) {
                 if (gameNo >= 0) {
                   gameStage = stage;
                   gameRound = roundNo;
-                  gameIndex = gameNo;
                   break;
                 }
               }
@@ -147,13 +146,12 @@ export async function getGameDetails(sgf: string) {
               if (gameNo >= 0) {
                 gameStage = stage;
                 gameRound = undefined;
-                gameIndex = gameNo;
                 break;
               }
           }
         }
 
-        const translations = await loadTranslations('en');
+        const translations = await loadTranslations(DEFAULT_LOCALE);
         const t = getTranslator(translations);
         const black = tournament.players[game.players[0].id];
         const white = tournament.players[game.players[1].id];

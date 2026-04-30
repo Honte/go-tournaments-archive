@@ -1,13 +1,13 @@
 'use client';
 
-import { usePlayerStatsData } from '@/hooks/usePlayerStatsData';
-import { useTranslationsData } from '@/hooks/useTranslationsData';
 import type { ApiPlayerStats } from '@/schema/api';
 import type { Locale, Translations } from '@/i18n/consts';
 import { Events } from '@/components/stats/Events';
 import { Opponents } from '@/components/stats/Opponents';
 import { PlayerGames } from '@/components/stats/PlayerGames';
 import { Loader } from '@/components/ui/Loader';
+import { usePlayerStatsData } from '@/hooks/usePlayerStatsData';
+import { useTranslationsData } from '@/hooks/useTranslationsData';
 
 type PlayerStatsProps = {
   slug: string;

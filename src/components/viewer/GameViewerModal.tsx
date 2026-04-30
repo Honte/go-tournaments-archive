@@ -1,4 +1,3 @@
-import { useSgfData } from '@/hooks/useSgfData';
 import { useEffect } from 'react';
 import { FaXmark } from 'react-icons/fa6';
 import type { Translations } from '@/i18n/consts';
@@ -8,6 +7,7 @@ import { Button } from '@/components/ui/Button';
 import { Loader } from '@/components/ui/Loader';
 import { Overlay } from '@/components/ui/Overlay';
 import GameViewerContent from '@/components/viewer/GameViewerContent';
+import { useSgfData } from '@/hooks/useSgfData';
 
 type GameViewerDialogProps = {
   sgfPath: string;

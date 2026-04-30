@@ -2,10 +2,10 @@ import EVENT from '@event';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { dirname, join, parse } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import type { Breaker, Game, GameProps, TableResult } from '@/schema/data';
 import { diffLines } from 'diff';
 import mysql from 'mysql2/promise';
 import { stringify } from 'yaml';
+import type { Breaker, Game, GameProps } from '@/schema/data';
 import { parseGames } from '@/data/games';
 import { parsePlayers } from '@/data/players';
 import { createTable } from '@/data/table';
@@ -224,7 +224,7 @@ async function extractFromDatabase({
       output.push(
         `${black}-${white}`,
         `${winner}:${color}+${result}`,
-        ...Object.entries(props).map(([key, value]) => `${key}:${value}`)
+        ...Object.entries(props).map(([key, value]) => `${key}:${Array.isArray(value) ? value.join(',') : value}`)
       );
 
       (rounds[round] ||= []).push(output.join(' '));
@@ -307,7 +307,7 @@ async function getSgf({
       .toUpperCase?.();
 
     if (gameResult && gameResult !== '?' && gameResult.trim() !== expectedResult) {
-      console.warn(`Result for game ${url} is different: ${gameResult} vs ${expectedResult}`);
+      console.warn(`Result for game ${url} is different: ${gameResult} vs ${String(expectedResult)}`);
     }
 
     result.push({

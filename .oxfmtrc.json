@@ -1,0 +1,61 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "printWidth": 120,
+  "singleQuote": true,
+  "semi": true,
+  "trailingComma": "es5",
+  "ignorePatterns": [".gitattributes", ".idea", ".next", "out", "node_modules", "events/*/data", "events/*/sgf"],
+  "sortImports": {
+    "newlinesBetween": false,
+    "internalPattern": ["@/", "@event", "@event/"],
+    "groups": [
+      "event",
+      "builtin",
+      "external",
+      "schema",
+      "i18n",
+      "tools",
+      "libs",
+      "data",
+      "components",
+      "hooks",
+      ["parent", "sibling", "index"],
+      "style",
+      "unknown"
+    ],
+    "customGroups": [
+      {
+        "groupName": "event",
+        "elementNamePattern": ["@event", "@event/**"]
+      },
+      {
+        "groupName": "i18n",
+        "elementNamePattern": ["@/i18n/**"]
+      },
+      {
+        "groupName": "libs",
+        "elementNamePattern": ["@/libs/**"]
+      },
+      {
+        "groupName": "data",
+        "elementNamePattern": ["@/data", "@/data/**"]
+      },
+      {
+        "groupName": "schema",
+        "elementNamePattern": ["@/schema/**"]
+      },
+      {
+        "groupName": "components",
+        "elementNamePattern": ["@/components/**"]
+      },
+      {
+        "groupName": "hooks",
+        "elementNamePattern": ["@/hooks/**"]
+      },
+      {
+        "groupName": "tools",
+        "elementNamePattern": ["@tools/**"]
+      }
+    ]
+  }
+}

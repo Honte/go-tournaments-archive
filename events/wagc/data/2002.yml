@@ -20,78 +20,78 @@ stages:
       - 2-1 1:W+R round:5 sgf:2002/5-MaleunSaemHong-LiFu.sgf
       - 2-3 2:B+R round:8 sgf:2002/8-MaleunSaemHong-YasuroKikuchi.sgf
       - 3-1 1:W+R round:6 sgf:2002/6-YasuroKikuchi-LiFu.sgf
-      - 3-5 3:B+16.50 round:5 sgf:2002/5-YasuroKikuchi-VictorChow.sgf
+      - 3-5 3:B+16.5 round:5 sgf:2002/5-YasuroKikuchi-VictorChow.sgf
       - 3-26 3:B+R round:7 sgf:2002/7-YasuroKikuchi-GertSchnider.sgf
       - 4-1 1:W+T round:8 sgf:2002/8-PongilRi-LiFu.sgf
-      - 4-3 3:W+15.50 round:3 sgf:2002/3-PongilRi-YasuroKikuchi.sgf
+      - 4-3 3:W+15.5 round:3 sgf:2002/3-PongilRi-YasuroKikuchi.sgf
       - 5-6 6:W+R round:6 sgf:2002/6-VictorChow-CristianPop.sgf
       - 5-17 5:B+R round:3 sgf:2002/3-VictorChow-LeszekSoldan.sgf
-      - 6-2 2:W+34.50 round:4 sgf:2002/4-CristianPop-MaleunSaemHong.sgf
-      - 6-4 4:W+1.50 round:7 sgf:2002/7-CristianPop-PongilRi.sgf
-      - 7-2 2:W+2.50 round:7 sgf:2002/7-ChengjueiYu-MaleunSaemHong.sgf
+      - 6-2 2:W+34.5 round:4 sgf:2002/4-CristianPop-MaleunSaemHong.sgf
+      - 6-4 4:W+1.5 round:7 sgf:2002/7-CristianPop-PongilRi.sgf
+      - 7-2 2:W+2.5 round:7 sgf:2002/7-ChengjueiYu-MaleunSaemHong.sgf
       - 7-3 3:W+R round:4 sgf:2002/4-ChengjueiYu-YasuroKikuchi.sgf
       - 7-23 7:B+R round:5 sgf:2002/5-ChengjueiYu-HusdinAekasinghachai.sgf
       - 8-1 1:W+R round:3 sgf:2002/3-YimingGuo-LiFu.sgf
-      - 8-4 4:W+2.50 round:6 sgf:2002/6-YimingGuo-PongilRi.sgf
-      - 10-12 10:B+4.50 round:6 sgf:2002/6-HosukYi-DmytroBogatskyy.sgf
+      - 8-4 4:W+2.5 round:6 sgf:2002/6-YimingGuo-PongilRi.sgf
+      - 10-12 10:B+4.5 round:6 sgf:2002/6-HosukYi-DmytroBogatskyy.sgf
       - 11-2 2:W+R round:6 sgf:2002/6-NormanChadwick-MaleunSaemHong.sgf
-      - 11-25 11:B+27.50 round:4 sgf:2002/4-NormanChadwick-MiroslavPoliak.sgf
-      - 12-1 1:W+2.50 round:4 sgf:2002/4-DmytroBogatskyy-LiFu.sgf
+      - 11-25 11:B+27.5 round:4 sgf:2002/4-NormanChadwick-MiroslavPoliak.sgf
+      - 12-1 1:W+2.5 round:4 sgf:2002/4-DmytroBogatskyy-LiFu.sgf
       - 12-42 12:B+R round:8 sgf:2002/8-DmytroBogatskyy-DraganBarisic.sgf
       - 13-19 13:B+R round:7 sgf:2002/7-RadekNechanicky-PingFaiTsang.sgf
       - 13-37 13:B+R round:2 sgf:2002/2-RadekNechanicky-AlexisHernandez.sgf
       - 14-5 5:W+R round:2 sgf:2002/2-PalBalogh-VictorChow.sgf
-      - 14-8 8:W+8.50 round:5 sgf:2002/5-PalBalogh-YimingGuo.sgf
+      - 14-8 8:W+8.5 round:5 sgf:2002/5-PalBalogh-YimingGuo.sgf
       - 15-40 15:B+R round:5 sgf:2002/5-SteveKim-AlvaroRittatore.sgf
-      - 16-23 23:W+4.50 round:4 sgf:2002/4-LeonMatoh-HusdinAekasinghachai.sgf
-      - 17-53 17:B+50.50 round:2 sgf:2002/2-LeszekSoldan-AlexandrSuponev.sgf
+      - 16-23 23:W+4.5 round:4 sgf:2002/4-LeonMatoh-HusdinAekasinghachai.sgf
+      - 17-53 17:B+50.5 round:2 sgf:2002/2-LeszekSoldan-AlexandrSuponev.sgf
       - 19-12 12:W+T round:3 sgf:2002/3-PingFaiTsang-DmytroBogatskyy.sgf
       - 20-24 20:B+R round:4 sgf:2002/4-YeeFanTan-DraganMitic.sgf
       - 20-27 20:B+R round:8 sgf:2002/8-YeeFanTan-AndriusPetrauskas.sgf
       - 21-7 7:W+R round:3 sgf:2002/3-EmilNijhuis-ChengjueiYu.sgf
-      - 22-10 10:W+0.50 round:1 sgf:2002/1-MatthewCocke-HosukYi.sgf
+      - 22-10 10:W+0.5 round:1 sgf:2002/1-MatthewCocke-HosukYi.sgf
       - 22-26 22:B+R round:8 sgf:2002/8-MatthewCocke-GertSchnider.sgf
       - 23-44 23:B+R round:3 sgf:2002/3-HusdinAekasinghachai-GregorySolganik.sgf
       - 25-8 8:W+R round:1 sgf:2002/1-MiroslavPoliak-YimingGuo.sgf
       - 26-9 9:W+R round:5 sgf:2002/5-GertSchnider-PierreColmez.sgf
       - 27-33 27:B+R round:7 sgf:2002/7-AndriusPetrauskas-AlainWettach.sgf
-      - 27-46 27:B+10.50 round:1 sgf:2002/1-AndriusPetrauskas-NoriyukiYamamoto.sgf
+      - 27-46 27:B+10.5 round:1 sgf:2002/1-AndriusPetrauskas-NoriyukiYamamoto.sgf
       - 29-4 4:W+R round:2 sgf:2002/2-KasperHornbaek-PoingilRi.sgf
       - 29-14 14:W+R round:6 sgf:2002/6-KasperHornbaek-PalBalogh.sgf
       - 30-18 18:W+R round:1 sgf:2002/1-LutzFranke-AlexejLazarev.sgf
       - 31-30 30:W+R round:7 sgf:2002/7-FanNianKong-LutzFranke.sgf
       - 32-21 21:W+R round:8 sgf:2002/8-ErikEkholm-EmilNijhuis.sgf
       - 32-41 32:B+R round:7 sgf:2002/7-ErikEkholm-KeeSoonTiong.sgf
-      - 35-47 35:B+15.50 round:6 sgf:2002/6-JaimeRamirezReyes-SeadBacevina.sgf
-      - 36-44 44:W+10.50 round:4 sgf:2002/4-RicardoQuintero-GregorySolganik.sgf
+      - 35-47 35:B+15.5 round:6 sgf:2002/6-JaimeRamirezReyes-SeadBacevina.sgf
+      - 36-44 44:W+10.5 round:4 sgf:2002/4-RicardoQuintero-GregorySolganik.sgf
       - 36-45 36:B+R round:6 sgf:2002/6-RicardoQuintero-BarisEfe.sgf
       - 38-26 26:W+R round:4 sgf:2002/4-KaiYunLiu-GertSchnider.sgf
       - 38-61 38:B+R round:7 sgf:2002/7-KaiYunLiu-RodrigoCaceresPerez.sgf
       - 40-39 39:W+R round:1 sgf:2002/1-AlvaroRittatore-AdrianZweig.sgf
-      - 41-31 31:W+24.50 round:3 sgf:2002/3-KeeSoonTiong-FanNianKong.sgf
+      - 41-31 31:W+24.5 round:3 sgf:2002/3-KeeSoonTiong-FanNianKong.sgf
       - 41-56 41:B+R round:5 sgf:2002/5-KeeSoonTiong-JoseRaposo.sgf
-      - 42-35 35:W+16.50 round:2 sgf:2002/2-DraganBarisic-JaimeRamirezReyes.sgf
-      - 42-43 43:W+6.50 round:4 sgf:2002/4-DraganBarisic-FrancescFernandez.sgf
-      - 43-39 39:W+0.50 round:8 sgf:2002/8-FrancescFernandez-AdrianZweig.sgf
-      - 44-37 37:W+16.50 round:8 sgf:2002/8-GregorySolganik-AlexisHernandez.sgf
+      - 42-35 35:W+16.5 round:2 sgf:2002/2-DraganBarisic-JaimeRamirezReyes.sgf
+      - 42-43 43:W+6.5 round:4 sgf:2002/4-DraganBarisic-FrancescFernandez.sgf
+      - 43-39 39:W+0.5 round:8 sgf:2002/8-FrancescFernandez-AdrianZweig.sgf
+      - 44-37 37:W+16.5 round:8 sgf:2002/8-GregorySolganik-AlexisHernandez.sgf
       - 45-57 45:B+R round:7 sgf:2002/7-BarisEfe-JohnGibson.sgf
-      - 46-31 31:W+14.50 round:8 sgf:2002/8-NoriyukiYamamoto-FanNianKong.sgf
-      - 47-33 33:W+27.50 round:3 sgf:2002/3-SeadBacevina-AlainWettach.sgf
+      - 46-31 31:W+14.5 round:8 sgf:2002/8-NoriyukiYamamoto-FanNianKong.sgf
+      - 47-33 33:W+27.5 round:3 sgf:2002/3-SeadBacevina-AlainWettach.sgf
       - 48-34 34:W+R round:2 sgf:2002/2-AntonioFernandezCaballero-TranChiThanh.sgf
-      - 49-15 15:W+38.50 round:2 sgf:2002/2-TovononyRazafindrabe-SteveKim.sgf
-      - 49-52 49:B+11.50 round:5 sgf:2002/5-TovononyRazafindrabe-JeanBrauch.sgf
-      - 50-34 34:W+30.50 round:8 sgf:2002/8-JuanCarlosCarrillo-TranChiThanh.sgf
+      - 49-15 15:W+38.5 round:2 sgf:2002/2-TovononyRazafindrabe-SteveKim.sgf
+      - 49-52 49:B+11.5 round:5 sgf:2002/5-TovononyRazafindrabe-JeanBrauch.sgf
+      - 50-34 34:W+30.5 round:8 sgf:2002/8-JuanCarlosCarrillo-TranChiThanh.sgf
       - 50-60 50:B+R round:5 sgf:2002/5-JuanCarlosCarrillo-MandeepSinghGandhi.sgf
-      - 51-6 6:W+58.50 round:1 sgf:2002/1-PaoloMontrasio-CristianPop.sgf
-      - 53-48 48:W+2.50 round:5 sgf:2002/5-AlexandrSuponev-AntonioFernandezCaballero.sgf
+      - 51-6 6:W+58.5 round:1 sgf:2002/1-PaoloMontrasio-CristianPop.sgf
+      - 53-48 48:W+2.5 round:5 sgf:2002/5-AlexandrSuponev-AntonioFernandezCaballero.sgf
       - 54-24 24:W+R round:1 sgf:2002/1-AshotMargaryan-DraganMitic.sgf
       - 54-53 53:W+R round:6 sgf:2002/6-AshotMargaryan-AlexandrSuponev.sgf
       - 55-23 23:W+R round:1 sgf:2002/1-OswaldoMoreano-HusdinAekasinghachai.sgf
-      - 55-52 52:W+28.50 round:3 sgf:2002/3-OswaldoMoreano-JeanBrauch.sgf
-      - 56-58 56:B+18.50 round:4 sgf:2002/4-JoseRaposo-FebbiyutiArria.sgf
-      - 57-28 28:W+57.50 round:2 sgf:2002/2-JohnGibson-LauriPaatero.sgf
-      - 58-42 42:W+45.50 round:3 sgf:2002/3-FebbiyutiArria-DraganBarisic.sgf
+      - 55-52 52:W+28.5 round:3 sgf:2002/3-OswaldoMoreano-JeanBrauch.sgf
+      - 56-58 56:B+18.5 round:4 sgf:2002/4-JoseRaposo-FebbiyutiArria.sgf
+      - 57-28 28:W+57.5 round:2 sgf:2002/2-JohnGibson-LauriPaatero.sgf
+      - 58-42 42:W+45.5 round:3 sgf:2002/3-FebbiyutiArria-DraganBarisic.sgf
       - 59-38 38:W+R round:2 sgf:2002/2-AnibalGomezDelafuente-KaiYunLiu.sgf
-      - 59-51 51:W+8.50 round:6 sgf:2002/6-AnibalGomezDelafuente-PaoloMontrasio.sgf
-      - 60-32 32:W+77.50 round:1 sgf:2002/1-MandeepSinghGandhi-ErikEkholm.sgf
+      - 59-51 51:W+8.5 round:6 sgf:2002/6-AnibalGomezDelafuente-PaoloMontrasio.sgf
+      - 60-32 32:W+77.5 round:1 sgf:2002/1-MandeepSinghGandhi-ErikEkholm.sgf
       - 61-50 50:W+R round:1 sgf:2002/1-RodrigoCaceresPerez-JuanCarlosCarrillo.sgf

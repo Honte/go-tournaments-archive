@@ -20,16 +20,16 @@
     "build:kpmc": "cross-env EVENT=kpmc next build",
     "start": "npx serve@latest out",
     "postinstall": "patch-package",
-    "lint": "eslint .",
-    "tsc": "tsc --noEmit",
+    "lint": "oxlint .",
     "extract:mp-db": "cross-env EVENT=pgc tsx tools/extract.ts",
     "build:templates": "cross-env EVENT=pgc tsx tools/templates.ts",
     "sgf:fix:pgc": "cross-env EVENT=pgc tsx tools/fix.ts",
     "sgf:match:pgc": "cross-env EVENT=pgc tsx tools/sgfMatcher/index.ts",
     "sgf:match:wagc": "cross-env EVENT=wagc tsx tools/sgfMatcher/index.ts",
     "sgf:match:kpmc": "cross-env EVENT=kpmc tsx tools/sgfMatcher/index.ts",
-    "fmt": "prettier --check .",
-    "fmt:write": "prettier --write ."
+    "test": "node --import tsx --test \"**/*.test.ts\"",
+    "fmt": "oxfmt --check .",
+    "fmt:write": "oxfmt --write ."
   },
   "dependencies": {
     "@floating-ui/react": "0.27.19",
@@ -55,7 +55,6 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "4.2.4",
-    "@trivago/prettier-plugin-sort-imports": "6.0.2",
     "@types/lodash-es": "4.17.12",
     "@types/node": "24.12.2",
     "@types/react": "19.2.14",
@@ -63,14 +62,15 @@
     "autoprefixer": "10.5.0",
     "cross-env": "10.1.0",
     "diff": "8.0.4",
-    "eslint": "9.39.4",
-    "eslint-config-next": "16.2.4",
     "mysql2": "3.22.2",
+    "oxfmt": "0.47.0",
+    "oxlint": "1.62.0",
+    "oxlint-tsgolint": "0.22.1",
     "patch-package": "8.0.1",
     "postcss": "8.5.12",
-    "prettier": "3.8.3",
     "tailwindcss": "4.2.4",
-    "tsx": "4.21.0"
+    "tsx": "4.21.0",
+    "typescript": "6.0.3"
   },
   "engines": {
     "node": ">=24.0.0"

@@ -80,7 +80,7 @@ stages:
       - 50-59 50:B+R round:7 sgf:2007/7-MamyRakotoarisoa-CristovaoNeto.sgf
       - 52-60 52:B+20.5 round:5 sgf:2007/5-AlexandrChakur-NicholasRoussos.sgf
       - 53-62 53:B+R round:8 sgf:2007/8-OswaldoMoreano-EichinAliyev.sgf
-      - 55-57 55:B won by 17.5 round:6 sgf:2007/6-SercanOruc-IgnacioFacello.sgf
+      - 55-57 55:B+17.5 round:6 sgf:2007/6-SercanOruc-IgnacioFacello.sgf
       - 56-54 54:W+0.5 round:1 sgf:2007/1-LuisCajiaoCampos-EricPacheco.sgf
       - 58-28 28:W+9.5 round:1 sgf:2007/1-SebastianOyarzun-JaimaRamirezReyes.sgf
       - 60-46 46:W+31.5 round:1 sgf:2007/1-NicholasRoussos-RoylanddelaTorre.sgf

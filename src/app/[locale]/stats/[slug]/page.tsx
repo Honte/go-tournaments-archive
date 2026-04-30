@@ -1,11 +1,12 @@
 import EVENT_CONFIG from '@event/config';
-import { getAllPlayersStats, getPlayerStats } from '@/data';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import type { Locale } from '@/i18n/consts';
-import { SUPPORTED_LOCALES, loadTranslations } from '@/i18n/server';
+import { EVENT_LOCALES } from '@/i18n/locales';
+import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
+import { getAllPlayersStats, getPlayerStats } from '@/data';
 import { PlayerStats } from '@/components/PlayerStats';
 import { Achievements } from '@/components/stats/Achievements';
 import { Content } from '@/components/ui/Content';
@@ -70,7 +71,7 @@ export async function generateStaticParams() {
   return Object.keys(players)
     .filter((key) => key !== 'BYE')
     .map((slug) =>
-      SUPPORTED_LOCALES.map((locale) => ({
+      EVENT_LOCALES.map((locale) => ({
         locale,
         slug,
       }))

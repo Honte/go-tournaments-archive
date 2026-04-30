@@ -1,8 +1,8 @@
 import EVENT_CONFIG from '@event/config';
-import { getTournaments } from '@/data';
 import { mapValues } from 'lodash-es';
 import { notFound } from 'next/navigation';
 import type { NextRequest } from 'next/server';
+import { getTournaments } from '@/data';
 
 type PageProps = {
   params: Promise<{ year: string }>;

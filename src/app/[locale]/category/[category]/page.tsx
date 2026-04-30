@@ -1,10 +1,11 @@
 import EVENT_CONFIG from '@event/config';
-import { getCategoryStats } from '@/data';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { type Locale, SUPPORTED_LOCALES } from '@/i18n/consts';
+import type { Locale } from '@/i18n/consts';
+import { DEFAULT_LOCALE, EVENT_LOCALES } from '@/i18n/locales';
 import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
+import { getCategoryStats } from '@/data';
 import { CategoryMedalTable } from '@/components/category/CategoryMedalTable';
 import { CategoryResultsTable } from '@/components/category/CategoryResultsTable';
 import { Content } from '@/components/ui/Content';
@@ -58,14 +59,14 @@ export async function generateStaticParams() {
     return [
       {
         category: 'none',
-        locale: 'en',
+        locale: DEFAULT_LOCALE,
       },
     ];
   }
 
   const pages = [];
 
-  for (const locale of SUPPORTED_LOCALES) {
+  for (const locale of EVENT_LOCALES) {
     for (const category of EVENT_CONFIG.categories) {
       pages.push({ locale, category });
     }

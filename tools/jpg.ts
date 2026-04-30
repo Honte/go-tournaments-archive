@@ -1,5 +1,5 @@
-import { generatePng } from '@tools/png';
 import sharp from 'sharp';
+import { generatePng } from '@tools/png';
 
 export async function generateJpg(svg: string, width: number) {
   const png = await generatePng(svg, width);

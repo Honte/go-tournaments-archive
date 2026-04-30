@@ -1,19 +1,19 @@
 import EVENT_CONFIG from '@event/config';
-import type { ApiPlayerStats } from '@/schema/api';
-import type { GameProps } from '@/schema/data';
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
+import type { ApiPlayerStats } from '@/schema/api';
+import type { GameProps } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { GameActions } from '@/components/GameActions';
 import { Stone } from '@/components/Stone';
-import { YearLink } from '@/components/YearLink';
 import { StatsTable } from '@/components/table/StatsTable';
 import { CountryLink } from '@/components/ui/CountryLink';
 import { H2 } from '@/components/ui/H2';
 import { PlayerCell } from '@/components/ui/PlayerCell';
 import type { PlayerDetails } from '@/components/ui/PlayerName';
 import { GameViewerTrigger } from '@/components/viewer/GameViewerTrigger';
+import { YearLink } from '@/components/YearLink';
 
 type PlayerGamesProps = {
   player: ApiPlayerStats;
@@ -48,12 +48,7 @@ export function PlayerGames({ player, translations }: PlayerGamesProps) {
           const opponentName = player.opponents[game.id];
           const [opponentFirstName, ...rest] = opponentName.split(' ');
           const opponentLastName = rest.join(' ') || '';
-          const me = {
-            id: player.id,
-            name: player.name,
-            rank: event.rank,
-            country: event.country,
-          };
+
           const opponent = {
             id: game.id,
             name: opponentName,

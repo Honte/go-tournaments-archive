@@ -1,8 +1,8 @@
-import { getAllPlayersStats } from '@/data';
 import type { Metadata } from 'next';
 import type { Locale } from '@/i18n/consts';
 import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
+import { getAllPlayersStats } from '@/data';
 import { AllPlayersStats } from '@/components/AllPlayersStats';
 import { Content } from '@/components/ui/Content';
 import { Title } from '@/components/ui/Title';

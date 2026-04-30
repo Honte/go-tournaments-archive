@@ -1,7 +1,5 @@
 'use client';
 
-import { useCountryStatsData } from '@/hooks/useCountryStatsData';
-import { useTranslationsData } from '@/hooks/useTranslationsData';
 import type { StatsCountry } from '@/schema/data';
 import type { Locale, Translations } from '@/i18n/consts';
 import { CountryAchievements } from '@/components/stats/CountryAchievements';
@@ -9,6 +7,8 @@ import { CountryEvents } from '@/components/stats/CountryEvents';
 import { CountryOpponents } from '@/components/stats/CountryOpponents';
 import { CountryPlayers } from '@/components/stats/CountryPlayers';
 import { Loader } from '@/components/ui/Loader';
+import { useCountryStatsData } from '@/hooks/useCountryStatsData';
+import { useTranslationsData } from '@/hooks/useTranslationsData';
 
 type CountryStatsProps = {
   code: string;

@@ -1,10 +1,10 @@
 import EVENT_CONFIG from '@event/config';
-import { getAllCountriesStats } from '@/data';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import type { Locale } from '@/i18n/consts';
 import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
+import { getAllCountriesStats } from '@/data';
 import { AllCountriesStats } from '@/components/AllCountriesStats';
 import { Content } from '@/components/ui/Content';
 import { Title } from '@/components/ui/Title';

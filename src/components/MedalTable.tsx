@@ -1,6 +1,6 @@
-import type { StatsMedals } from '@/schema/data';
 import type { ReactNode } from 'react';
 import { FaMedal } from 'react-icons/fa6';
+import type { StatsMedals } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 

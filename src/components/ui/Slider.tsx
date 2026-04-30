@@ -49,7 +49,7 @@ export function Slider(props: ComponentProps<'input'>) {
           className
         )}
       />
-      <span className="w-14 shrink-0 text-right text-xs font-semibold tabular-nums text-event-dark text-nowrap">{`${value} / ${max}`}</span>
+      <span className="w-14 shrink-0 text-right text-xs font-semibold tabular-nums text-event-dark text-nowrap">{`${value as string} / ${max}`}</span>
     </div>
   );
 }

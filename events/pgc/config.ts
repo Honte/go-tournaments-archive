@@ -3,10 +3,11 @@ import { EventConfig } from '@event/schema';
 const EVENT_CONFIG: EventConfig = {
   id: 'pgc',
   domain: 'https://mp.go.art.pl',
-  defaultLocale: 'pl',
-  defaultCountry: 'PL',
+  locales: ['pl', 'en'],
+  showCountry: false,
   showBestPlace: true,
-  generateSvgs: true,
+  hideGamesWithoutSgf: false,
+  generateSvgs: false,
   generateJpgs: true,
 };
 
