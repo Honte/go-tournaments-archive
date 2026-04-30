@@ -72,8 +72,8 @@ stages:
       - 40-45 45:W+R round:5 sgf:2018/5-AndreConnell-KimJohansson.sgf
       - 41-42 41:B+R round:6 sgf:2018/6-CarloMetta-OscarVazquez.sgf
       - 42-6 6:W+R round:3 sgf:2018/3-OscarVazquez-JuriKuronen.sgf
-      - 43-36 43:B+R round:3 sgf:2018/3-LeopoldMatoh-ThiagoShimadaRamos.sgf
-      - 43-47 43:B+26.5 round:5 sgf:2018/5-LeopoldMatoh-OlafurSigurdarson.sgf
+      - 43-36 43:B+R round:3 sgf:2018/3-LeonMatoh-ThiagoShimadaRamos.sgf
+      - 43-47 43:B+26.5 round:5 sgf:2018/5-LeonMatoh-OlafurSigurdarson.sgf
       - 44-33 33:W+2.5 round:7 sgf:2018/7-TomasSabirovas-KinaJorgeYamamoto.sgf
       - 44-38 38:W+6.5 round:2 sgf:2018/2-TomasSabirovas-AlexandrSuponev.sgf
       - 45-31 31:W+14.5 round:2 sgf:2018/2-KimJohansson-StjepanMestrovic.sgf

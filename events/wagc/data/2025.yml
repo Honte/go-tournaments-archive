@@ -46,7 +46,7 @@ stages:
       - 14-2 2:W+R round:2 sgf:2025/2-StjepanMedak-MinoruOzeki.sgf
       - 16-10 10:W+7.5 round:4 sgf:2025/4-WichrichKaruehawanit-BradyBeiMingZhang.sgf
       - 16-40 16:B+R round:2 sgf:2025/2-WichrichKaruehawanit-SusanaSanchez.sgf
-      - 19-25 19:B+Resign round:7 sgf:2025/7-AndriusPetrauskas-CezaryCzernecki.sgf
+      - 19-25 19:B+R round:7 sgf:2025/7-AndriusPetrauskas-CezaryCzernecki.sgf
       - 20-23 23:W+R round:4 sgf:2025/4-DuyMinhVo-DmytroBogatskyy.sgf
       - 21-25 21:B+24.5 round:4 sgf:2025/4-MilosBojanic-CezaryCzernecki.sgf
       - 24-43 24:B+R round:1 sgf:2025/1-BendeBarcza-HelcioAlexandrePacheco.sgf
