@@ -7,21 +7,21 @@ import type { ApiPlayerStats } from '@/schema/api';
 import type { Stage } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
-import { getStageNameFromType } from '@/libs/stage';
+import { getStageName } from '@/libs/stage';
 import { toPercentage } from '@/libs/table';
 import { StatsTable } from '@/components/table/StatsTable';
 import { CountryLink } from '@/components/ui/CountryLink';
 import { H2 } from '@/components/ui/H2';
 import { YearLink } from '@/components/YearLink';
 
-type EventsProps = {
+type PlayerEventsProps = {
   player: ApiPlayerStats;
   translations: Translations;
 };
 
 type EventRow = {
   year: number;
-  stage: Stage['type'];
+  stage: Pick<Stage, 'name' | 'type'>;
   rank: string;
   place: number;
   games: number;
@@ -31,7 +31,7 @@ type EventRow = {
   wonPercent: number;
 };
 
-export function Events({ player, translations }: EventsProps) {
+export function PlayerEvents({ player, translations }: PlayerEventsProps) {
   const t = getTranslator(translations);
 
   const data = useMemo(() => {
@@ -44,7 +44,10 @@ export function Events({ player, translations }: EventsProps) {
 
         results.push({
           year: event.year,
-          stage: stage.type,
+          stage: {
+            name: stage.name,
+            type: stage.type,
+          },
           won,
           games,
           lost: games - won,
@@ -71,7 +74,7 @@ export function Events({ player, translations }: EventsProps) {
           {
             accessorKey: 'stage',
             header: t('table.stage'),
-            cell: (info) => getStageNameFromType(info.row.original.stage, translations),
+            cell: (info) => getStageName(info.row.original.stage, translations),
           },
           EVENT_CONFIG.showCountry && {
             accessorKey: 'country',

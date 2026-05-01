@@ -91,7 +91,10 @@ export function calculateStats(tournaments: Tournament[]): Stats {
         const rank = tournamentPlayers[player.id]?.rank ?? '';
         const result: StatsPlayerResult = {
           year,
-          stage: stage.type,
+          stage: {
+            type: stage.type,
+            name: stage.name,
+          },
           place: player.place,
           finalPlace: player.place > (stage.promoted ?? 0) ? player.place + (stage.placeOffset ?? 0) : Infinity,
           games: playerGames,

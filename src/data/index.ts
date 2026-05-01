@@ -57,7 +57,7 @@ export async function getPlayerStats(playerId: string): Promise<ApiPlayerStats> 
     }
 
     event.stages.push({
-      type: result.stage,
+      ...result.stage,
       place: result.place,
       games: result.games,
     });

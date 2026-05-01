@@ -198,7 +198,7 @@ export type StatsPlayerGame = {
 
 export type StatsPlayerResult = {
   year: number;
-  stage: Stage['type'];
+  stage: Pick<Stage, 'name' | 'type'>
   place: number;
   finalPlace: number;
   games: StatsPlayerGame[];

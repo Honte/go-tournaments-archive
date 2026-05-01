@@ -2,7 +2,7 @@ import type { Stage } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 
-export function getStageName(stage: Stage, translations: Translations) {
+export function getStageName(stage: Pick<Stage, 'name' | 'type'>, translations: Translations) {
   if (typeof stage.name === 'string') {
     return stage.name;
   }
