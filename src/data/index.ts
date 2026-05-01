@@ -7,11 +7,11 @@ import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
 import type { RootParams } from '@tools/sgf';
 import { getStageName } from '@/libs/stage';
-import { loadTournaments } from '@/data/load';
+import { loadData } from '@/data/load';
 import { calculateStats } from '@/data/stats';
 import pkg from '../../package.json';
 
-const tournaments = await loadTournaments();
+const { tournaments } = await loadData();
 const stats = calculateStats(tournaments);
 
 export async function getTournaments() {

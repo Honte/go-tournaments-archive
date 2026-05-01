@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 import type { Stage } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
+import { formatRange } from '@/libs/dates';
 import { Breaker } from '@/components/Breaker';
 import { Details } from '@/components/Details';
 import { ExternalLink } from '@/components/ui/ExternalLink';
@@ -30,6 +31,12 @@ export function StageDetails({ stage, translations }: StageDetailsProps) {
 
   if (stage.time) {
     details[t('stage.time')] = stage.time;
+  }
+
+  if (stage.date) {
+    details[t('stage.date')] = stage.date
+      .map(({ start, end }) => formatRange(start, end, translations.locale))
+      .join(', ');
   }
 
   if ('breakers' in stage && stage.breakers?.length) {

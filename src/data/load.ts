@@ -1,5 +1,4 @@
 import EVENT from '@event';
-import EVENT_CONFIG from '@event/config';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import fg from 'fast-glob';
@@ -9,7 +8,7 @@ import { InputTournament } from '@/schema/input';
 import { createPlayersHandler } from '@/data/players';
 import { parseStage } from '@/data/stages';
 
-export async function loadTournaments() {
+export async function loadData() {
   const files = await fg.glob(`./events/${EVENT}/data/*.yml`);
   const playersHandler = createPlayersHandler();
   const tournaments: Tournament[] = [];
@@ -26,7 +25,7 @@ export async function loadTournaments() {
     const tournamentDetails: TournamentDetails = {
       ...json,
       year,
-      country: json.country ?? EVENT_CONFIG.defaultCountry,
+      country: json.country,
       location: json.location ?? '',
       top: json.top ?? [],
     };
@@ -57,7 +56,10 @@ export async function loadTournaments() {
     });
   }
 
-  return tournaments;
+  return {
+    tournaments,
+    playersIds: playersHandler.playerIds,
+  };
 }
 
 function getDateRange(dates: TournamentDateSpan[]) {

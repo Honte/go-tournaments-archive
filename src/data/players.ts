@@ -1,4 +1,3 @@
-import EVENT_CONFIG from '@event/config';
 import slugify from 'slugify';
 import type { Player } from '@/schema/data';
 
@@ -34,7 +33,7 @@ export function createPlayersHandler() {
         throw new Error(`Could not parse player ${json[id]}`);
       }
 
-      const { name, rank, egd, country = EVENT_CONFIG.defaultCountry } = details.groups!;
+      const { name, rank, egd, country } = details.groups!;
 
       players[id] = {
         id: getPlayerId(name, playerIds),

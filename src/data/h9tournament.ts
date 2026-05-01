@@ -297,7 +297,7 @@ export async function loadH9Tournament({
     table,
     rounds,
     notes,
-    date: parseDates(stage.date ?? tournament.dates),
+    date: parseDates(stage.date ?? tournament.dates?.join(' - ')),
   } satisfies LeagueStage;
 }
 

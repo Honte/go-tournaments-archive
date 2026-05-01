@@ -1,7 +1,7 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { loadTournaments } from '@/data/load';
+import { loadData } from '@/data/load';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const TEMPLATES_DIR = join(__dirname, '../templates');
@@ -9,7 +9,7 @@ const TEMPLATES_DIR = join(__dirname, '../templates');
 buildTemplates();
 
 async function buildTemplates() {
-  const tournaments = await loadTournaments();
+  const { tournaments } = await loadData();
 
   for (const tournament of tournaments) {
     const { players, games, stages, year, location } = tournament;
