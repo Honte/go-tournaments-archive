@@ -2,12 +2,12 @@
 
 import type { ApiPlayerStats } from '@/schema/api';
 import type { Locale, Translations } from '@/i18n/consts';
-import { PlayerEvents } from './stats/PlayerEvents';
 import { Opponents } from '@/components/stats/Opponents';
 import { PlayerGames } from '@/components/stats/PlayerGames';
 import { Loader } from '@/components/ui/Loader';
 import { usePlayerStatsData } from '@/hooks/usePlayerStatsData';
 import { useTranslationsData } from '@/hooks/useTranslationsData';
+import { PlayerEvents } from './stats/PlayerEvents';
 
 type PlayerStatsProps = {
   slug: string;

@@ -32,7 +32,7 @@ export function loadSgf(content: string, sgfPath?: string): SgfData {
 
   let node = root.children[0];
   while (node) {
-    const move = (node.data?.B || node.data?.W);
+    const move = node.data?.B || node.data?.W;
     const position = move?.[0];
 
     if (position) {
