@@ -1,6 +1,7 @@
 {
   "site": {
     "name": "Archiwum Turniejów Go",
+    "eventName": "Turniej",
     "description": "Archiwum wyników wszystkich turniejów w Go",
     "yearDescription": "Wyniki turniejów z roku %{0}",
     "allTimeStatsLink": "Lista uczestników",

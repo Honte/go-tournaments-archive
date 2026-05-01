@@ -165,15 +165,15 @@ export async function loadH9Tournament({
             id: getGameId(gamesMap),
             players: [isCurrentBlack ? playerA : playerB, isCurrentBlack ? playerB : playerA],
             result: getGameResult(game.result, game.color),
-            props: {
-              round: game.round,
-            },
+            props: {},
           } satisfies Game;
         }
 
         processedGamesMap.set(localId, parsedGame);
         gamesMap[parsedGame.id] = parsedGame;
         (rounds[round] ||= []).push(parsedGame.id);
+        parsedGame.props.round = game.round;
+        parsedGame.props.index = rounds[round].length;
       }
 
       const processed = processedGamesMap.get(localId)!;

@@ -6,6 +6,7 @@ import { DEFAULT_LOCALE } from '@/i18n/locales';
 import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
 import type { RootParams } from '@tools/sgf';
+import { getStageName } from '@/libs/stage';
 import { loadTournaments } from '@/data/load';
 import { calculateStats } from '@/data/stats';
 import pkg from '../../package.json';
@@ -123,19 +124,17 @@ export async function getGameDetails(sgf: string) {
 
       if (game.props.sgf === sgf) {
         let gameStage: Stage | undefined;
-        let gameRound: number | undefined;
 
         for (const stage of tournament.stages) {
           switch (stage.type) {
             case 'tournament':
             case 'ladder-table':
             case 'league':
-              for (const [roundNo, round] of stage.rounds.entries()) {
+              for (const round of stage.rounds) {
                 const gameNo = round.indexOf(id);
 
                 if (gameNo >= 0) {
                   gameStage = stage;
-                  gameRound = roundNo;
                   break;
                 }
               }
@@ -145,7 +144,6 @@ export async function getGameDetails(sgf: string) {
 
               if (gameNo >= 0) {
                 gameStage = stage;
-                gameRound = undefined;
                 break;
               }
           }
@@ -155,6 +153,16 @@ export async function getGameDetails(sgf: string) {
         const t = getTranslator(translations);
         const black = tournament.players[game.players[0].id];
         const white = tournament.players[game.players[1].id];
+        const stageName = gameStage && getStageName(gameStage, translations);
+        const roundName = gameStage && game.props.round ? `${game.props.round} (${stageName})` : undefined;
+        const gameName = [
+          `${t('site.eventName')} ${tournament.year}`,
+          tournament.stages.length > 1 ? stageName : undefined,
+          typeof game.props.round === 'number' ? `${t('table.round', String(game.props.round))}` : undefined,
+          typeof game.props.index === 'number' ? `${t('table.game', String(game.props.index))}` : undefined,
+        ]
+          .filter(Boolean)
+          .join(' - ');
 
         return {
           [SgfRootProps.ENCODING]: 'utf-8',
@@ -165,6 +173,7 @@ export async function getGameDetails(sgf: string) {
           [SgfRootProps.EVENT_LOCATION]: tournament.country
             ? `${tournament.country},${tournament.location}`
             : tournament.location,
+          [SgfRootProps.GAME_NAME]: gameName,
           [SgfRootProps.GAME_RESULT]: game.result,
           [SgfRootProps.BLACK_NAME]: black.name,
           [SgfRootProps.BLACK_RANK]: black.rank,
@@ -173,7 +182,6 @@ export async function getGameDetails(sgf: string) {
           [SgfRootProps.WHITE_RANK]: white.rank,
           [SgfRootProps.WHITE_TEAM]: (EVENT_CONFIG.showCountry && white.country) || null,
           [SgfRootProps.COPYRIGHT]: null,
-          [SgfRootProps.GAME_NAME]: null,
           [SgfRootProps.GAME_KOMI]: (val?: string) => val ?? gameStage?.komi ?? null,
           [SgfRootProps.GAME_DATE]: (val?: string) =>
             val ?? tournament.start?.split('-').slice(0, -1).join('-') ?? null,
@@ -181,7 +189,7 @@ export async function getGameDetails(sgf: string) {
             (tournament.name && typeof tournament.name === 'object' ? tournament.name.en : tournament.name) ??
             `${t('site.acronym')} ${tournament.year}`,
           [SgfRootProps.GAME_RULES]: (val?: string) => (val ? val.toLowerCase() : null),
-          [SgfRootProps.GAME_ROUND]: gameStage && gameRound ? `${gameRound + 1} (${gameStage.type})` : null,
+          [SgfRootProps.GAME_ROUND]: roundName || null,
           [SgfRootProps.COMMENT]: `Exported from ${t('site.name')}${EVENT_CONFIG.domain ? ` (${EVENT_CONFIG.domain})` : ''}`,
 
           // additional attributes for SGF Viewer

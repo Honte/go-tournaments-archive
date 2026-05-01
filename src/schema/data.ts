@@ -180,6 +180,7 @@ export type GameProps = {
   jpg?: string;
   png?: string;
   round?: number;
+  index?: number;
 };
 
 export type GamePropsArrayKey = KeysMatching<GameProps, string[]>;

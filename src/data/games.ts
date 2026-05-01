@@ -10,7 +10,7 @@ const LOOSE_GAME_RESULT_REGEX = /^(?<color>[BW])(\+(?<score>\S+))?$/i;
 export function parseGames(repository: Record<string, Game>, games: string[], round?: number) {
   const ids = [];
 
-  for (const string of games) {
+  for (const [index, string] of games.entries()) {
     const id = getGameId(repository);
     const game = parseGame(string, id, true);
 
@@ -18,6 +18,7 @@ export function parseGames(repository: Record<string, Game>, games: string[], ro
       game.props.round = round;
     }
 
+    game.props.index = index + 1;
     repository[id] = game;
     ids.push(id);
   }

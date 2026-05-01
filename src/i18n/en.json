@@ -1,6 +1,7 @@
 {
   "site": {
     "name": "Tournament Archive",
+    "eventName": "Tournament",
     "description": "Archive of all tournaments",
     "yearDescription": "Results of %{0}",
     "allTimeStatsLink": "Participants",

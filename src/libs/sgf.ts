@@ -32,10 +32,11 @@ export function loadSgf(content: string, sgfPath?: string): SgfData {
 
   let node = root.children[0];
   while (node) {
-    const move = node.data?.B || node.data?.W;
+    const move = (node.data?.B || node.data?.W);
+    const position = move?.[0];
 
-    if (move) {
-      const [a, b] = move[0].split('');
+    if (position) {
+      const [a, b] = position.split('');
       const x = a.charCodeAt(0) - 97;
       const y = b.charCodeAt(0) - 97;
 
@@ -43,6 +44,8 @@ export function loadSgf(content: string, sgfPath?: string): SgfData {
         sign: node.data.W ? -1 : 1,
         vertex: [x, y],
       });
+    } else {
+      // TODO handle pass
     }
 
     node = node.children?.[0];
