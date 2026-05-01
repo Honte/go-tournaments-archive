@@ -1,0 +1,20 @@
+; TC[T021019H]
+; CL[A]
+; EV[9th Croatian Championship]
+; PC[HR,Velika Gorica]
+; DT[2002-10-19,2002-10-20]
+; KM[5.5]
+; TM[2h]
+; HA[h9]
+;                      9th Croatian Championship, Velika Gorica
+;                              October 19 - 20, 2002
+;
+;Pl     Name             Grade  Club   MM S SOS SDOS  1.  2.  3.  4.  5.
+;
+; === Top Category, TA[1h45]
+  1 Mutabzija Zoran         5d HR Zagr  5 0   10   0   2+  4+  3+  5+  6+  |10249041
+  2 Smud Mladen             4d HR VGor  4 0   6   0   1-  6+  4+  3+  5+  |10398982
+  3 Kuhar Velimir           5d HR Zagr  3 0   3   0   6+  5+  1-  2-  4+  |10425657
+  4 Ilic-Dreven Josip       1d HR Zagr  2 0   1   0   5+  1-  2-  6+  3-  |10701240
+  5 Bacevina Sead           3d HR Zagr  1 0   0   0   4-  3-  6+  1-  2-  |10986701
+  6 Bednjanec Zvonko        1d HR VGor  0 0   0   0   3-  2-  5-  4-  1-  |10525735

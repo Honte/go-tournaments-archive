@@ -63,7 +63,8 @@ export async function GET(request: NextRequest, props: RouteProps) {
     }
 
     return new Response('Not Found', { status: 404 });
-  } catch {
+  } catch (err) {
+    console.error(err);
     return new Response('Not Found', { status: 404 });
   }
 }

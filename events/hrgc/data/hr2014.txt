@@ -1,0 +1,17 @@
+; TC[T140906E]
+; CL[A]
+; EV[Tournament of 6 challengers for match ws. Croatian Go Champion]
+; PC[HR, Velika Gorica]
+; DT[2014-09-06,2014-09-07]
+; HA[h9]
+; KM[6.5]
+; TM[105]
+; CM[byoyomi 3x40 sec (submitted by HIGOU)]
+;.
+; Turnir sestorke za izazivaca prvaka Hrvatske 2014
+1 Furjanic Lovro     2d HR  Karl  5    5    10   2+/w0  4+/w0  6+/b0  5+/b0  3+/w0   |15350247
+2 Smud Mladen        1k HR  VGor  3    3    4    1-/b0  5+/w0  4+/w0  3-/b0  6+/w0   |10398982
+3 Zrno Daniel        1k HR  VGor  3    3    4    4-/b0  6+/b0  5+/w0  2+/w0  1-/b0   |10825397
+4 Bednjanec Zvonko   2k HR  VGor  3    3    4    3+/w0  1-/b0  2-/b0  6+/b0  5+/w0   |10525735
+5 Primetica Nikola   3k HR  Zagr  1    1    0    6+/w0  2-/b0  3-/b0  1-/w0  4-/b0   |14001647
+6 Ugarcina Marko     7k HR  VGor  0    0    0    5-/b0  3-/w0  1-/w0  4-/w0  2-/b0   |12586728

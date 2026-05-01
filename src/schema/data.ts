@@ -180,6 +180,7 @@ export type GameProps = {
   jpg?: string;
   png?: string;
   round?: number;
+  index?: number;
 };
 
 export type GamePropsArrayKey = KeysMatching<GameProps, string[]>;
@@ -197,7 +198,7 @@ export type StatsPlayerGame = {
 
 export type StatsPlayerResult = {
   year: number;
-  stage: Stage['type'];
+  stage: Pick<Stage, 'name' | 'type'>;
   place: number;
   finalPlace: number;
   games: StatsPlayerGame[];

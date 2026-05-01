@@ -1,0 +1,31 @@
+top:
+- smestrovic
+- zmutabzija
+- mmedak
+stages:
+  - type: tournament
+    name:
+      pl: Kandydaci
+      en: Challengers
+    file: hr2018.txt
+    komi: 6.5 
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: true
+  - type: tournament
+    name:
+      pl: Finał
+      en: Final
+    file: hr2018playoff.txt
+    scoringColumns:
+      - null   
+      - wins
+      - null
+      - null
+    breakers:
+      - wins   

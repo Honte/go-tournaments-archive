@@ -1,0 +1,13 @@
+stages:
+  - type: tournament
+    file: hr2001.txt
+    komi: 6.5 
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true

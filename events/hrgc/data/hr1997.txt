@@ -1,0 +1,26 @@
+; TC[T971018C]
+; CL[A]
+; EV[22nd Croatian Championship]
+; DT[1997-10-18,1997-10-19]
+; PC[HR,Malinska]
+; KM[5.5]
+; TM[90]
+; HA[h9]
+;                       Croatian Championship, Malinska 1997
+;                              October 18 - 19, 1997
+;
+;Pl     Name             Grade  Club   MM S SOS SDOS  1.    2.     3.     4.     5.
+  1 Mutabzija Zoran         5d HR Zagr  7 5   0   0  4+/b  9+/w   2+/w   3+/b   5+/w  |10249041
+  2 Koncer Slobodan         3d HR Rije  6 4   0   0  5+/b  3+/w   1-/b   6+/w1  4+/b  |10713417
+  3 Smud Mladen             4d HR VGor  5 3   0   0  9+/b  2-/b   4+/w   1-/w   6+/w1  |10398982
+  4 Vujasinovic Ljubomir    2d HR Rije  4 2  26   7  1-/w  5+/w   3-/b   9+/b   2-/w  |10598731
+  5 Orbanic Djordje         3d HR Zagr  4 2  25   8  2-/w  4-/b   7+/w   8+/w1  1-/b  |10513734
+  6 Matusan Robert          5k HR Rije  4 3  22  11  8+/w  7+/w   9+/w   2-/b1  3-/b1  |10725418
+  7 Ilic-Dreven Josip       3k HR Zagr  4 3  14   6 12+/w2 6-/b   5-/b  13+/w2 10+/b  |10701240
+  8 Ozvald Gabrijel         4k HR Rije  4 3  14   6  6-/b 10+/w  11+/w   5-/b1 14+/w2  |10737419
+  9 Vodopija Mladen         1d HR Zagr  3 1  26   2  3-/w  1-/b   6-/b   4-/w  12+/w2  |10449659
+ 10 Bednjanec Zvonko        7k HR VGor  3 3  12   4 11+/b  8-/b  13+/w  14+/w2  7-/w  |10525735
+ 11 Mutabzija Vladimir      8k HR Rije  3 3  10   3 10-/w 14+/w1  8-/b  12+/w  13+/b  |10601602
+ 12 Mutabzija Jasmina       10 HR Rije  2 2   0   0  7-/b2 13+/w 14+/w1 11-/b   9-/b2  |10798139
+ 13 Kedzo Ivan              10 HR Rije  1 1   0   0 14+/w  12-/b 10-/b   7-/b2 11-/w  |10749420
+ 14 Rasic Ranko             16 HR xxx   0 0   0   0 13-/b 11-/b1 12-/b1 10-/b2  8-/b2  |10750421

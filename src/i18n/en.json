@@ -1,6 +1,7 @@
 {
   "site": {
     "name": "Tournament Archive",
+    "eventName": "Tournament",
     "description": "Archive of all tournaments",
     "yearDescription": "Results of %{0}",
     "allTimeStatsLink": "Participants",
@@ -49,6 +50,7 @@
     "league": "League",
     "ladder": "Ladder",
     "tournament": "Tournament",
+    "date": "Dates",
     "games": "Games",
     "egd": "EGD",
     "notes": "Notes",

@@ -1,0 +1,16 @@
+; TC[T991204B]
+; CL[A]
+; EV[24th Croatian Championship (play-off)]
+; PC[HR,Zagreb]
+; DT[1999-12-04,1999-12-05]
+; KM[5.5]
+; TM[1h45]
+; HA[h9]
+;                  24th Croatian Championship, Zagreb 1999
+;                            December 4 - 5, 1999
+;
+;Pl     Name             Grade  Club   MM S SOS SDOS  1.   2.   3.
+  1 Mutabzija Zoran         5d HR Zagr  2 2   0   0   2+   2-   2+  |10249041
+  2 Kuhar Velimir           5d HR Zagr  1 1   0   0   1-   1+   1-  |10425657
+;
+; time: 1h15+c20/10

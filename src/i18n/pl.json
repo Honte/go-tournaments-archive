@@ -1,6 +1,7 @@
 {
   "site": {
     "name": "Archiwum Turniejów Go",
+    "eventName": "Turniej",
     "description": "Archiwum wyników wszystkich turniejów w Go",
     "yearDescription": "Wyniki turniejów z roku %{0}",
     "allTimeStatsLink": "Lista uczestników",
@@ -49,6 +50,7 @@
     "league": "Liga",
     "ladder": "Faza pucharowa",
     "tournament": "Turniej",
+    "date": "Termin",
     "games": "Gry",
     "egd": "Baza EGD",
     "notes": "Uwagi",

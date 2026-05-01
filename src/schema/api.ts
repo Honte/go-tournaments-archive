@@ -21,8 +21,7 @@ export type ApiPlayerResult = {
   stages: ApiPlayerStage[];
 };
 
-export type ApiPlayerStage = {
-  type: Stage['type'];
+export type ApiPlayerStage = Pick<Stage, 'name' | 'type'> & {
   place: number;
   games: StatsPlayerGame[];
 };

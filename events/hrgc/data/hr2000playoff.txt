@@ -1,0 +1,14 @@
+; TC[T010120B]
+; CL[A]
+; EV[Croatian Championship Playoff]
+; PC[HR,Zagreb]
+; DT[2001-01-20,2001-01-20]
+; KM[5.5]
+; TM[2h]
+; HA[h9]
+;                    Croatian Championship Playoff, Zagreb 2001
+;                               January 20, 2001
+;
+;Pl     Name             Grade  Club   MM S x x  1.   2.  
+  1 Mutabzija Zoran         5D HR Zagr  2 2 0 0  2+/w 2+/b  |10249041
+  2 Kuhar Velimir           5D HR VGrd  0 0 0 0  1-/b 1-/w  |10425657

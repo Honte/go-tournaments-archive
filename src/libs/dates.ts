@@ -8,6 +8,12 @@ export function formatDate(date: Date | string, locale: string) {
   }).format(new Date(date));
 }
 
+export function formatRange(start: Date | string, end: Date | string, locale: string) {
+  return new Date(start).getTime() === new Date(end).getTime()
+    ? formatDate(start, locale)
+    : `${formatDate(start, locale)} - ${formatDate(end, locale)}`;
+}
+
 export function parseDates(date?: string | string[]): TournamentDateSpan[] {
   if (!date) {
     return [];

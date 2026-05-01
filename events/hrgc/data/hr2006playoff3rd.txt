@@ -1,0 +1,12 @@
+; TC[T070505G]
+; CL[A]
+; EV[Croatian Championship 3rd place playoff]
+; PC[HR, Velika Gorica]
+; DT[2007-05-05,2007-05-12]
+; HA[h9]
+; KM[6.5]
+; TM[90]
+;
+  1 Smud Mladen             3d HR VGor  4 3  10  52  2+/w 0=   3-/b 2+/b 3+/w 0=   |10398982
+  2 Zakanj Matej            1k HR VGor  3 2  12  48  1-/b 3+/w 0=   1-/w 0=   3+/b |13437963
+  3 Bednjanec Zvonko        1k HR VGor  2 1  14  44  0=   2-/b 1+/w 0=   1-/b 2-/w |10525735

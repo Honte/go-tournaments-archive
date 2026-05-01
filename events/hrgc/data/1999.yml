@@ -1,0 +1,32 @@
+top:
+- zmutabzija
+- vkuhar
+- msmud
+stages:
+  - type: tournament
+    name:
+      pl: Kandydaci
+      en: Challengers
+    file: hr1999.txt
+    komi: 5.5 
+    scoringColumns:
+      - wins
+      - null
+      - sodos
+      - null
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true
+  - type: tournament
+    name:
+      pl: Finał
+      en: Final
+    file: hr1999playoff.txt
+    scoringColumns:   
+      - wins
+      - null
+      - null
+      - null
+    breakers:
+      - wins   

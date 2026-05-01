@@ -1,0 +1,31 @@
+; TC[T981219A]
+; CL[A]
+; EV[23rd Croatian Championship]
+; PC[HR,Zagreb]
+; DT[1998-12-19,1998-12-20]
+; KM[7=]
+; TM[1h45]
+; HA[h9]
+;                       Croatian Championship, Zagreb 1998
+;                             December 19 - 20, 1998
+;
+;Pl     Name             Grade  Club   MM S SOS SDOS  1.   2.   3.   4.   5.
+  1 Kuhar Velimir           5d HR VGrd  6 4  25  25   2+   4+   3-   8+   7+  |10425657
+  2 Mutabzija Zoran         5d HR Zagr  6 4  25  25   1-   5+   7+   3+   8+  |10249041
+  3 Smud Mladen             4d HR VGor  6 4  25  25   8+   7+   1+   2-   4+  |10398982
+  4 Vujasinovic Ljubomir    2d HR Rije  5 3  22  22   9+   1-  12+  11+   3-  |10598731
+  5 Ilic-Dreven Josip       1k HR Zagr  5 4  19  19   6+   2-  15+  17+  11+  |10701240
+  6 Vezaj Vesel             3k HR Zagr  5 4  19  19   5-  16+  10+  12+   9+  |10474673
+  7 Kuhar Ivica             3d HR VGrd  4 2  25  25  11+   3-   2-   9+   1-  |10437658
+  8 Bacevina Sead           2d HR Spl   4 2  24  24   3-  12+  11+   1-   2-  |10986701
+  9 Vodopija Mladen         1d HR Zagr  4 2  19  19   4-  17+  13+   7-   6-  |10449659
+ 10 Bednjanec Zvonko        2k HR VGor  4 3  16  16  13+  11-   6-  14+  17+  |10525735
+ 11 Romek Vladimir          1d HR Bjel  3 1  22  22   7-  10+   8-   4-   5-  |10413678
+ 12 Marinic-Kragic Miroslav 4k HR Spl   3 2  20  20  14+   8-   4-   6-  13+  |10813396
+ 13 Rupcic Zdravko          7k HR Zagr  3 2  17  17  10-  14+   9-  15+  12-  |10586312
+ 14 Mutabzija Jasmina       8k HR Rije  3 2  12  12  12-  13-  18+  10-   0+  |10798139
+ 15 Ilic-Dreven Jelena      20 HR Zagr  3 3  11  11   0+  19+   5-  13-  18+  |10998702
+ 16 Graziani Marco          20 HR Rije  3 3  10  10  18+   6-  17-   0+  19+  |10986129
+ 17 Svilicic Marijan        15 HR Zagr  2 2  17  17  19+   9-  16+   5-  10-  |10701724
+ 18 Ilic-Dreven Vedran      20 HR Zagr  2 2  10  10  16-   0+  14-  19+  15-  |10933703
+ 19 Smud Vedran             20 HR VGor  1 1  10  10  17-  15-   0+  18-  16-  |10949620

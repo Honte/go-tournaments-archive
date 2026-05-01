@@ -1,0 +1,17 @@
+{
+  "site": {
+    "name": "Croatian Go Championships Archive",
+    "acronym": "HRGC",
+    "description": "Archive of all Croatian Championships tournaments",
+    "yearDescription": "Results of HRGC %{0}",
+    "allTimeStatsDescription": "All-time statistics of all Croatian Go Championships participants",
+    "playerStatsDescription": "Participation statistics of %{0} in all Croatian Go Championships events"
+  },
+  "details": {
+    "goToWebsite": "Go to HRGC %{0} website"
+  },
+  "winners": {
+    "title": "Medalists of Croatian Go Championships",
+    "first": "Croatian Champion"
+  }
+}

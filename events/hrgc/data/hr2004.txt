@@ -1,0 +1,29 @@
+; TC[T041023F]
+; CL[A]
+; HA[h9]
+; EV[Croatian Championship]
+; PC[HR, Velika Gorica]
+; DT[2004-10-23,2004-10-24]
+; KM[6.5]
+; TM[75]
+;
+  1 Mutabzija Zoran         5d HR Zagr  6 5  15  90  10+   2+  17+   5+  13+   |10249041
+  2 Smud Mladen             2d HR VGor  5 4  16  89  13+   1-   5+  10+  17+   |10398982
+  3 Vasiljevic Vedran       2k HR Rije  4 4  11  64   6+  18+   7+   4-  14+   |12833612
+  4 Knapic Andrej           8k HR VGor  4 4  11  64  14+   7+   6-   3+  18+   |12437876
+  5 Kuhar Velimir           5d HR Zagr  4 3  17  88  17+  13+   2-   1-  10+   |10425657
+  6 Klasnic Marko           4k HR VGor  3 3  12  63   3-  14+   4+  18+   7-   |12533015
+  7 Strbac Dino             6k HR VGor  3 3  12  63  18+   4-   3-  14+   6+   |12586013
+  8 Tumpa Tajana            8k HR VGor  4 3   6  24  20+  16+  11+   0=    0=  |12498893
+  9 Zakanj Matej            15 HR VGor  4 3   6  24  15+  12+  19+   0=    0=  |13437963
+ 10 Bacevina Sead           2d HR Zagr  3 2  18  87   1-  17+  13+   2-   5-   |10986701
+ 11 Robotic Tea             8k HR VGor  3 2   7  23  16+  20+   8-   0=    0=  |12598014
+ 12 Strbac Vladimir         14 HR VGor  3 2   7  23  19+   9-  15+   0=    0=  |12986732
+ 13 Zrno Daniel             2k HR VGor  2 1  19  86   2-   5-  10-  17+   1-   |10825397
+ 14 Mestrovic Stjepan       7k HR VGor  1 1  14  61   4-   6-  18+   7-   3-   |12649307
+ 15 Novak Marko             12 HR VGor  2 1   8  22   9-  19+  12-   0=    0=  |12950740
+ 16 Svob Petra              13 HR RiDm  2 1   8  22  11-   8-  20+   0=    0=  |12862619
+ 17 Alibasic Ismet          1d HR Zagr  1 0  20  85   5-  10-   1-  13-   2-   |12498871
+ 18 Vracan Marko            10 HR VGor  0 0  15  60   7-   3-  14-   6-   4-   |13074160
+ 19 Matic Petar             20 HR VGor  1 0   9  21  12-  15-   9-   0=    0=  |12849243
+ 20 Matic Tena              20 HR VGor  1 0   9  21   8-  11-  16-   0=    0=  |13725976

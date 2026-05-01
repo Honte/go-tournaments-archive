@@ -1,0 +1,28 @@
+top:
+- lfurjanic
+- zmutabzija
+- mmedak
+stages:
+  - type: tournament
+    name:
+      pl: Kandydaci
+      en: Challengers
+    file: hr2015.txt
+    komi: 6.5 
+    scoringColumns:
+      - wins
+      - null
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true
+  - type: tournament
+    name:
+      pl: Finał
+      en: Final
+    file: hr2015playoff.txt
+    scoringColumns:   
+      - wins
+    breakers:
+      - wins   

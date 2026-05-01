@@ -1,0 +1,17 @@
+; TC[T101127E]
+; CL[A]
+; EV[Croatian Championship 2010 - Final 6 ]
+; PC[HR, Rijeka]
+; DT[2010-11-27,2010-11-28]
+; HA[h9]
+; KM[6.5]
+; TM[90]
+; CM[(submitted by gozvald)]
+;.
+; 
+1 Zakanj Matej        4d HR  VGor  5    5    10    38   5+/w0  2+/b0  4+/w0  6+/w0  3+/b0   |13437963
+2 Mutabzija Zoran     5d HR  Zagr  4    4    6    30   4+/b0  1-/w0  3+/b0  5+/w0  6+/b0   |10249041
+3 Vasiljevic Vedran   2d HR  RiDm  3    3    3    38   6+/b0  5+/b0  2-/w0  4+/w0  1-/w0   |12833612
+4 Smud Mladen         1k HR  VGor  2    2    1   28   2-/w0  6+/w0  1-/b0  3-/b0  5+/b0   |10398982
+5 Jovicic Robert      2k HR  Zagr  1    1    0   28   1-/b0  3-/w0  6+/b0  2-/b0  4-/w0   |13937396
+6 Ozvald Gabrijel     2k HR  Rije  0    0    0    30   3-/w0  4-/b0  5-/w0  1-/b0  2-/w0   |10737419

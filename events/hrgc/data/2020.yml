@@ -1,0 +1,29 @@
+top:
+- zmutabzija
+- smestrovic
+- mzakanj
+stages:
+  - type: tournament
+    name:
+      pl: Kandydaci
+      en: Challengers
+    file: hr2020.txt
+    komi: 6.5 
+    scoringColumns:
+      - wins
+      - sodos
+      - direct
+      - null
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true
+  - type: tournament
+    name:
+      pl: Finał
+      en: Final
+    file: hr2020playoff.txt
+    scoringColumns:
+      - wins
+    breakers:
+      - wins   

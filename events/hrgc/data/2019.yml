@@ -1,0 +1,43 @@
+top:
+- smestrovic
+- ttukara
+- mmedak
+stages:
+  - type: tournament
+    name:
+      pl: Kandydaci
+      en: Challengers
+    file: hr2019.txt
+    komi: 6.5 
+    scoringColumns:
+      - mms
+      - sos
+      - sosos
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true
+  - type: tournament
+    name:
+      pl: Playoff
+      en: Playoff
+    file: hr2019playoff.txt
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - null
+    breakers:
+      - wins      
+  - type: tournament
+    name:
+      pl: Finał
+      en: Final
+    file: hr2019final.txt
+    scoringColumns:
+      - null
+      - wins
+      - null
+      - null
+    breakers:
+      - wins   

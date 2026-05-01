@@ -1,0 +1,15 @@
+stages:
+  - type: tournament
+    file: hr2021.txt
+    komi: 6.5 
+    scoringColumns:
+      - mms
+      - wins
+      - null
+      - sos
+      - sosos
+    breakers:
+      - mms
+      - sos
+      - sosos
+    findSharedPlaces: true
