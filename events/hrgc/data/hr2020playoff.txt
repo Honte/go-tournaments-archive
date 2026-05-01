@@ -1,0 +1,14 @@
+; TC[T201218A]
+; CL[D]
+; EV[27th Croatian Championship title match]
+; PC[HR, Online Go Server]
+; DT[2020-12-18,2020-12-18]
+; HA[h9]
+; KM[6.5]
+; TM[82.5]
+; CM[30x3 byoyomi (submitted by HIGOU)]
+;.
+;
+; Pl Name                            Rk Co Club
+1 Mutabzija Zoran     5d HR 2 Zagr  2+     2+      |10249041
+2 Mestrovic Stjepan   3d HR 0 VGor  1-     1-      |12649307

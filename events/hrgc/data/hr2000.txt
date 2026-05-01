@@ -1,0 +1,20 @@
+; TC[T001021B]
+; CL[A]
+; EV[Croatian Candidates]
+; PC[HR,Zagreb]
+; DT[2000-10-21,2000-10-22]
+; KM[5.5]
+; TM[2h]
+; HA[h9]
+;                       Croatian Candidates, Zagreb 2000
+;                            October 21 - 22, 2000
+;
+;Pl     Name             Grade  Club   MM S SDOS x  1.  2.  3.  4.  5.
+  1 Mutabzija Zoran         5d HR Zagr  5 5  10  0  6+  3+  4+  5+  2+  |10249041
+  2 Kuhar Velimir           5d HR VGrd  4 4   6  0  3+  5+  6+  4+  1-  |10425657
+  3 Smud Mladen             4d HR VGor  3 3   3  0  2-  1-  5+  6+  4+  |10398982
+  4 Vujasinovic Ljubomir    2d HR Rije  2 2   1  0  5+  6+  1-  2-  3-  |10598731
+  5 Bacevina Sead           2d HR Zagr  1 1   0  0  4-  2-  3-  1-  6+  |10986701
+  6 Vodopija Mladen         1d HR Zagr  0 0   0  0  1-  4-  2-  3-  5-  |10449659
+;
+; time: 90+c20/10

@@ -1,4 +1,3 @@
-import { Logo } from '@event/Logo';
 import type { LogoProps } from '@event/schema';
 import { createElement } from 'react';
 import { generatePng } from '@tools/png';
@@ -28,7 +27,14 @@ export async function createFaviconRoute() {
 
 async function renderLogo(options: LogoProps) {
   // use import this way to avoid false error by next.js
-  const { renderToStaticMarkup } = await import('react-dom/server');
+  const { renderToReadableStream } = await import('react-dom/server');
 
-  return renderToStaticMarkup(createElement(Logo, options));
+  const { Logo } = await import('@event/Logo');
+
+  // use this way to allow the component to do some async stuff (e.g. load png)
+  const stream = await renderToReadableStream(createElement(Logo, options));
+  await stream.allReady;
+  const response = new Response(stream);
+
+  return await response.text();
 }

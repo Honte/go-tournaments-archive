@@ -1,0 +1,20 @@
+; TC[T991002A]
+; CL[A]
+; EV[Croatian Candidates Tournament]
+; PC[HR,Zagreb]
+; DT[1999-10-02,1999-10-03]
+; KM[5.5]
+; TM[1h45]
+; HA[h9]
+;                 Croatian Candidates Tournament, Zagreb 1999
+;                            October 2 - 3, 1999
+;
+;Pl     Name             Grade  Club   MM S SOS SDOS  1.   2.   3.   4.   5.
+  1 Mutabzija Zoran         5d HR Zagr  5 5   10   0   6+   2+   3+   4+   5+  |10249041
+  2 Kuhar Velimir           5d HR Zagr  4 4   6   0   5+   1-   6+   3+   4+  |10425657
+  3 Smud Mladen             4d HR VGor  3 3   3   0   4+   5+   1-   2-   6+  |10398982
+  4 Vujasinovic Ljubomir    2d HR Rije  2 2   1   0   3-   6+   5+   1-   2-  |10598731
+  5 Bacevina Sead           1d HR Zagr  1 1   0   0   2-   3-   4-   6+   1-  |10986701
+  6 Romek Vladimir          1d HR Bjel  0 0   0   0   1-   4-   2-   5-   3-  |10413678
+;
+; time: 1h15+c20/10

@@ -1,0 +1,31 @@
+top:
+- zmutabzija
+- vkuhar
+- msmud
+stages:
+  - type: tournament
+    name:
+      pl: Kandydaci
+      en: Challengers
+    file: hr2006.txt
+    komi: 6.5 
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - wins
+    findSharedPlaces: true
+  - type: tournament
+    name:
+      pl: Playoff
+      en: Playoff
+    file: hr2006playoff3rd.txt
+    scoringColumns:
+      - null    
+      - wins
+      - null
+      - null
+    breakers:
+      - wins   

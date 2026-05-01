@@ -1,0 +1,15 @@
+; TC[T051105E]
+; CL[A]
+; EV[Croatian Championships]
+; PC[HR, Velika Gorica]
+; DT[2005-11-05,2005-11-06]
+; KM[6.5]
+; TM[75]
+;
+;=== SENIORS
+  1 Mutabzija Zoran         5d HR Zagr 35 5 10   0   5+  2+  4+  3+  6+  |10249041
+  2 Smud Mladen             3d HR VGor 34 4 6   0   4+  1-  6+  5+  3+  |10398982
+  3 Kuhar Velimir           5d HR Zagr 33 3  3   0   6+  4+  5+  1-  2-  |10425657
+  4 Bednjanec Zvonko        2k HR VGor 32 2  1   0   2-  3-  1-  6+  5+  |10525735
+  5 Alibasic Ismet          1d HR Zagr 31 1  0   0   1-  6+  3-  2-  4-  |12498871
+  6 Bacevina Sead           2d HR Zagr 30 0   0   0   3-  5-  2-  4-  1-  |10986701

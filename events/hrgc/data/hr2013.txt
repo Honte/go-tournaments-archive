@@ -1,0 +1,17 @@
+; TC[T130830A]
+; CL[A]
+; EV[Croatian Championship 2013 - Final 6 ]
+; PC[HR, Zagreb]
+; DT[2013-08-30,2013-09-01]
+; HA[h9]
+; KM[6.5]
+; TM[97.5]
+; CM[Byoyomi with 4 owertimes. (5/30) (submitted by HIGOU)]
+;.
+; T6 - Finale Prvenstva Hrvatske 2013.
+1 Mutabzija Zoran     5d HR  Zagr  5    5    10   6+/w0  2+/w0  4+/b0  3+/b0  5+/b0   |10249041
+2 Bacevina Sead       2d HR  Zagr  3    3    4    5+/w0  1-/b0  3+/w0  6+/w0  4-/b0   |10986701
+3 Furjanic Lovro      1k HR  Karl  3    3    4    4+/w0  5+/w0  2-/b0  1-/w0  6+/b0   |15350247
+4 Mestrovic Stjepan   1k HR  VGor  3    3    4    3-/b0  6+/b0  1-/w0  5+/b0  2+/w0   |12649307
+5 Smud Mladen         1k HR  VGor  1    1    0    2-/b0  3-/b0  6+/w0  4-/w0  1-/w0   |10398982
+6 Bednjanec Zvonko    3k HR  VGor  0    0    0    1-/b0  4-/w0  5-/b0  2-/b0  3-/w0   |10525735

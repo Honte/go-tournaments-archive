@@ -1,0 +1,18 @@
+; TC[T011013D]
+; CL[A]
+; EV[8th Croatian Championship]
+; PC[HR,Velika Gorica]
+; DT[2001-10-13,2001-10-14]
+; KM[5.5]
+; TM[2h]
+; HA[h9]
+;               8th Croatian Championship, Velika Gorica
+;                         October 13 - 14, 2001
+;
+;Pl     Name             Grade  Club   MM S SOS SDOS 1. 2. 3. 4. 5.
+  1 Mutabzija Zoran         5d HR Zagr  5 5   0  10  6+ 4+ 3+ 2+ 5+  |10249041
+  2 Bacevina Sead           2d HR Zagr  3 3   0   5  5+ 3+ 6+ 1- 4-  |10986701
+  3 Kuhar Velimir           5d HR Zagr  3 3   0   4  4+ 2- 1- 5+ 6+  |10425657
+  4 Smud Mladen             4d HR VGor  2 2   0   4  3- 1- 5- 6+ 2+  |10398982
+  5 Romek Vladimir          1d HR Bjel  1 1   0   2  2- 6- 4+ 3- 1-  |10413678
+  6 Vujasinovic Ljubomir    2d HR Rije  1 1   0   1  1- 5+ 2- 4- 3-  |10598731

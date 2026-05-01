@@ -1,0 +1,15 @@
+; TC[T071117A]
+; CL[A]
+; EV[Croatian Championship]
+; PC[HR, Velika Gorica]
+; DT[2007-11-17,2007-11-18]
+; HA[h9]
+; KM[6.5]
+; TM[95]
+;
+  1 Zakanj Matej            1d HR VGor  4 4   8   0  5+/b 6+/w 4+/b 2-/w 3+/b |13437963
+  2 Kuhar Velimir           5d HR Zagr  3 3   7   0  6+/b 4-/w 3-/b 1+/b 5+/w |10425657
+  3 Mutabzija Zoran         5d HR Zagr  3 3   6   0  4+/w 5-/b 2+/w 6+/b 1-/w |10249041
+  4 Zrno Daniel             1k HR VGor  2 2   5   0  3-/b 2+/b 1-/w 5+/b 6-/w |10825397
+  5 Bacevina Sead           2d HR Zagr  2 2   4   0  1-/w 3+/w 6+/b 4-/w 2-/b |10986701
+  6 Smud Mladen             3d HR VGor  1 1   2   0  2-/w 1-/b 5-/w 3-/w 4+/b |10398982

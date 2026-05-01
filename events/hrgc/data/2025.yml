@@ -1,0 +1,13 @@
+notes: missing final
+stages:
+  - type: tournament
+    file: hr2025.txt
+    komi: 6.5 
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: true

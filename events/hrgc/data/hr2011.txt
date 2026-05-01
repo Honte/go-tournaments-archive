@@ -1,0 +1,15 @@
+; TC[T111126A]
+; CL[A]
+; EV[Croatian championship - Final four - 2011]
+; PC[HR, Velika Gorica]
+; DT[2011-11-26,2011-11-26]
+; HA[h9]
+; KM[6.5]
+; TM[97.5]
+; CM[ (submitted by HIGOU)]
+;.
+; Turnir eetvorke 2011
+1 Mutabzija Zoran   3d HR  Zagr  3    3    3    3+/w0  2+/w0  4+/b0   |10249041
+2 Bacevina Sead     2d HR  Zagr  2    2    1    4+/w0  1-/b0  3+/w0   |10986701
+3 Smud Mladen       1k HR  VGor  1    1    0    1-/b0  4+/w0  2-/b0   |10398982
+4 Zrno Daniel       2k HR  VGor  0    0    0    2-/b0  3-/b0  1-/w0   |10825397

@@ -1,0 +1,13 @@
+; TC[T141203B]
+; CL[A]
+; EV[Croatian Champiomship 2014. Final Match]
+; PC[HR, Velika Gorica - Zagreb]
+; DT[2014-12-03,2014-12-17]
+; HA[h9]
+; KM[6.5]
+; TM[105]
+; CM[byoyomi 5x40 sec (submitted by HIGOU)]
+;.
+; Croatian Champiomship 2014. Final Match
+1 Furjanic Lovro    2d HR  Karl  2    2    2+/w0  2-/b0  2+/w0   |15350247
+2 Mutabzija Zoran   5d HR  Zagr  1    1    1-/b0  1+/w0  1-/b0   |10249041
