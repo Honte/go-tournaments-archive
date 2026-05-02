@@ -1,5 +1,5 @@
 import Board from '@sabaki/go-board';
-import { loadSgf } from '@/libs/sgf';
+import { loadSgf, type SgfMove } from '@/libs/sgf';
 
 export function sgfToBoard(sgf: string) {
   const { size, moves } = loadSgf(sgf);
@@ -17,7 +17,7 @@ export function* iterateStones(board: Board) {
   for (const [y, row] of board.signMap.entries()) {
     for (const [x, color] of row.entries()) {
       if (color !== 0) {
-        yield { sign: color, vertex: [x, y] };
+        yield { sign: color, vertex: [x, y] } satisfies SgfMove;
       }
     }
   }
