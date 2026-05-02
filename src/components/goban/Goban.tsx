@@ -98,6 +98,17 @@ export function Goban({ className, board, mark, pointer, onClick, onMouseMove }:
         <Stone key={toKey(move)} {...move} />
       ))}
 
+      {pointer && <Stone {...pointer} className="opacity-50 pointer-events-none" />}
+
+      {mark && (
+        <circle
+          cx={mark[0] + 1}
+          cy={mark[1] + 1}
+          r=".28"
+          className="fill-transparent stroke-red-500 stroke-[0.1px] pointer-events-none"
+        />
+      )}
+
       {pointer?.hint && (
         <>
           <rect
@@ -119,16 +130,6 @@ export function Goban({ className, board, mark, pointer, onClick, onMouseMove }:
             {pointer.hint}
           </text>
         </>
-      )}
-      {pointer && <Stone {...pointer} className="opacity-50 pointer-events-none" />}
-
-      {mark && (
-        <circle
-          cx={mark[0] + 1}
-          cy={mark[1] + 1}
-          r=".28"
-          className="fill-transparent stroke-red-500 stroke-[0.1px] pointer-events-none"
-        />
       )}
     </svg>
   );
