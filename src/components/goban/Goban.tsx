@@ -76,8 +76,20 @@ export function Goban({ className, board, mark, pointer, onClick, onMouseMove }:
       }}
     >
       <defs>
-        <image id="black" href={SVG_BLACK.src} transform="translate(.51 .52)" />
-        <image id="white" href={SVG_WHITE.src} transform="translate(.53 .52)" />
+        <image
+          id="black"
+          href={SVG_BLACK.src}
+          width={SVG_BLACK.width}
+          height={SVG_BLACK.height}
+          transform="translate(.515 .55)"
+        />
+        <image
+          id="white"
+          href={SVG_WHITE.src}
+          transform="translate(.525 .58)"
+          width={SVG_WHITE.width}
+          height={SVG_WHITE.height}
+        />
       </defs>
       <image x="0" y="0" width={size + 1} height={size + 1} href={SVG_BOARD.src} />
       <path d={path} stroke="black" strokeWidth=".02" strokeLinejoin="round" />
@@ -85,15 +97,6 @@ export function Goban({ className, board, mark, pointer, onClick, onMouseMove }:
       {Array.from(iterateStones(board)).map((move) => (
         <Stone key={toKey(move)} {...move} />
       ))}
-
-      {mark && (
-        <circle
-          cx={mark[0] + 1}
-          cy={mark[1] + 1}
-          r=".3"
-          className="fill-transparent stroke-red-500 stroke-[0.1px] pointer-events-none"
-        />
-      )}
 
       {pointer?.hint && (
         <>
@@ -103,8 +106,8 @@ export function Goban({ className, board, mark, pointer, onClick, onMouseMove }:
             width={1}
             height={0.5}
             opacity={0.5}
-            rx={0.2}
-            ry={0.2}
+            rx={0.1}
+            ry={0.1}
             className="fill-black pointer-events-none"
           />
           <text
@@ -118,6 +121,15 @@ export function Goban({ className, board, mark, pointer, onClick, onMouseMove }:
         </>
       )}
       {pointer && <Stone {...pointer} className="opacity-50 pointer-events-none" />}
+
+      {mark && (
+        <circle
+          cx={mark[0] + 1}
+          cy={mark[1] + 1}
+          r=".28"
+          className="fill-transparent stroke-red-500 stroke-[0.1px] pointer-events-none"
+        />
+      )}
     </svg>
   );
 }
