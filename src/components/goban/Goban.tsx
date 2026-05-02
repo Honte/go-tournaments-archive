@@ -28,6 +28,15 @@ export function Goban({ className, board, mark, pointer, onClick, onMouseMove }:
     path += `M${i} 1L${i} ${size}M1 ${i}L${size} ${i}`;
   }
 
+  // add hoshi points for 19x19
+  if (size === 19) {
+    for (const x of [4, 10, 16]) {
+      for (const y of [4, 10, 16]) {
+        path += `M${x} ${y}m-.08 0a.08 .08 0 1 0 .16 0a.08 .08 0 1 0 -.16 0`;
+      }
+    }
+  }
+
   return (
     // oxlint-disable-next-line jsx_a11y/no-static-element-interactions oxlint-disable-next-line jsx_a11y/click-events-have-key-events
     <svg
