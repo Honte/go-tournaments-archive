@@ -93,9 +93,12 @@ function GameViewerContent(props: GameViewerContentProps) {
   );
 
   const goToMove = useCallback(
-    (target: SgfMove) => {
+    (boardMove: SgfMove) => {
       const index = sgf.moves.findIndex(
-        (move) => move.vertex[0] === target.vertex[0] && move.vertex[1] === target.vertex[1]
+        (move) =>
+          move.vertex[0] === boardMove.vertex[0] &&
+          move.vertex[1] === boardMove.vertex[1] &&
+          (!boardMove.sign || move.sign === boardMove.sign)
       );
 
       if (index >= 0) {
