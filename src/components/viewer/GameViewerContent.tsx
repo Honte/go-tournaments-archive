@@ -13,8 +13,8 @@ import {
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { between } from '@/libs/math';
-import type { SgfData, SgfPlayer } from '@/libs/sgf';
-import { Goban } from '@/components/goban/Goban';
+import type { SgfData, SgfMove, SgfPlayer } from '@/libs/sgf';
+import { Goban, type SgfPointer } from '@/components/goban/Goban';
 import { Stone } from '@/components/Stone';
 import { PlayerLink } from '@/components/ui/PlayerLink';
 import { PlayerName } from '@/components/ui/PlayerName';
@@ -32,6 +32,7 @@ function GameViewerContent(props: GameViewerContentProps) {
   const t = getTranslator(translations);
   const [position, setPosition] = useState(sgf.moves.length);
   const [playing, setPlaying] = useState(false);
+  const [pointer, setPointer] = useState<SgfPointer | undefined>(undefined);
   const maxMove = sgf.moves.length;
 
   const changePosition = useCallback(
@@ -89,6 +90,40 @@ function GameViewerContent(props: GameViewerContentProps) {
       }
     },
     [maxMove, setPosition, setPlaying]
+  );
+
+  const goToMove = useCallback(
+    (target: SgfMove) => {
+      const index = sgf.moves.findIndex(
+        (move) => move.vertex[0] === target.vertex[0] && move.vertex[1] === target.vertex[1]
+      );
+
+      if (index >= 0) {
+        setPosition(index + 1);
+        setPlaying(false);
+      }
+    },
+    [setPosition, setPlaying, sgf.moves]
+  );
+
+  const showPointer = useCallback(
+    (boardMove: SgfMove, element: SVGSVGElement) => {
+      const gameMove = sgf.moves.find(
+        (move) => move.vertex[0] === boardMove.vertex[0] && move.vertex[1] === boardMove.vertex[1]
+      );
+
+      element.style.cursor = gameMove ? 'pointer' : 'default';
+      setPointer(
+        gameMove && !boardMove.sign
+          ? {
+              sign: gameMove.sign,
+              vertex: gameMove.vertex,
+              hint: `#${sgf.moves.indexOf(gameMove) + 1}`,
+            }
+          : undefined
+      );
+    },
+    [sgf.moves]
   );
 
   const board = useMemo(() => {
@@ -201,7 +236,10 @@ function GameViewerContent(props: GameViewerContentProps) {
         <Goban
           board={board}
           mark={sgf.moves[position - 1]?.vertex}
+          pointer={pointer}
           className="block aspect-square max-h-full max-w-full rounded-md"
+          onClick={goToMove}
+          onMouseMove={showPointer}
         />
       </div>
 
