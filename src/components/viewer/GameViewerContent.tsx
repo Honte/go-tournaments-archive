@@ -94,26 +94,19 @@ function GameViewerContent(props: GameViewerContentProps) {
 
   const goToMove = useCallback(
     (boardMove: SgfMove) => {
-      const index = sgf.moves.findIndex(
-        (move) =>
-          move.vertex[0] === boardMove.vertex[0] &&
-          move.vertex[1] === boardMove.vertex[1] &&
-          (!boardMove.sign || move.sign === boardMove.sign)
-      );
+      const gameMove = findMove(sgf.moves, boardMove, position);
 
-      if (index >= 0) {
-        setPosition(index + 1);
+      if (gameMove) {
+        setPosition(sgf.moves.indexOf(gameMove) + 1);
         setPlaying(false);
       }
     },
-    [setPosition, setPlaying, sgf.moves]
+    [setPosition, setPlaying, sgf.moves, position]
   );
 
   const showPointer = useCallback(
     (boardMove: SgfMove, element: SVGSVGElement) => {
-      const gameMove = sgf.moves.find(
-        (move) => move.vertex[0] === boardMove.vertex[0] && move.vertex[1] === boardMove.vertex[1]
-      );
+      const gameMove = findMove(sgf.moves, boardMove, position);
 
       element.style.cursor = gameMove ? 'pointer' : 'default';
       setPointer(
@@ -126,7 +119,7 @@ function GameViewerContent(props: GameViewerContentProps) {
           : undefined
       );
     },
-    [sgf.moves]
+    [sgf.moves, position]
   );
 
   const board = useMemo(() => {
@@ -313,5 +306,14 @@ function PlayerRow({
       )}
       <span className="ml-auto font-semibold">{prisoners ?? 0}</span>
     </div>
+  );
+}
+
+function findMove(moves: SgfMove[], boardMove: SgfMove, position: number): SgfMove | undefined {
+  return moves.find(
+    (move, index) =>
+      move.vertex[0] === boardMove.vertex[0] &&
+      move.vertex[1] === boardMove.vertex[1] &&
+      (boardMove.sign ? move.sign === boardMove.sign : index >= position)
   );
 }
