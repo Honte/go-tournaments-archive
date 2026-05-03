@@ -1,6 +1,9 @@
 name: Deploy
 
 on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened]
   workflow_dispatch:
     inputs:
       event:
@@ -14,7 +17,7 @@ on:
 
 jobs:
   deploy-pgc-prod:
-    if: ${{ inputs.event == 'pgc' }}
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.event == 'pgc' }}
     runs-on: ubuntu-latest
     environment: pgc
     env:
@@ -39,7 +42,7 @@ jobs:
           local-dir: ./out/
           server-dir: ${{ vars.PGC_FTP_PATH }}
   deploy-pygc-prod:
-    if: ${{ inputs.event == 'pygc' }}
+    if: ${{ github.event_name == 'pull_request' || inputs.event == 'pygc' }}
     runs-on: ubuntu-latest
     environment: pygc
     env:
