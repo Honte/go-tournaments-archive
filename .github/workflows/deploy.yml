@@ -41,12 +41,14 @@ jobs:
           password: ${{ secrets.PGC_FTP_PASS }}
           local-dir: ./out/
           server-dir: ${{ vars.PGC_FTP_PATH }}
+
   deploy-pygc-prod:
     if: ${{ github.event_name == 'pull_request' || inputs.event == 'pygc' }}
     runs-on: ubuntu-latest
     environment: pygc
     env:
       EVENT: pygc
+      SSH_PATH: "/usr/home/${{ secrets.PYGC_SSH_USER }}/domains/${{ vars.SSH_HOST }}/public_nodejs/archive"
     steps:
       - uses: actions/checkout@v4
 
@@ -59,10 +61,13 @@ jobs:
 
       - run: npm run build
 
-      - uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Deploy
+        uses: appleboy/scp-action@v1
         with:
-          server: ${{ vars.PYGC_FTP_HOST }}
-          username: ${{ secrets.PYGC_FTP_USER }}
-          password: ${{ secrets.PYGC_FTP_PASS }}
-          local-dir: ./out/
-          server-dir: ${{ vars.PYGC_FTP_PATH }}
+          host: ${{ vars.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          passphrase: ${{ secrets.SSH_KEY_PASS }}
+          source: out/*
+          strip_components: 1
+          target: ${{ env.SSH_PATH }}
