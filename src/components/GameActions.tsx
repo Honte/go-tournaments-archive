@@ -1,5 +1,6 @@
 import type { GameProps } from '@/schema/data';
 import type { Translator } from '@/i18n/consts';
+import { Endpoints } from '@/libs/endpoints';
 import { ExternalButton } from '@/components/ui/ExternalButton';
 import { GameViewerButton } from '@/components/viewer/GameViewerTrigger';
 
@@ -15,7 +16,7 @@ export function GameActions({ props, showViewer, t }: GameActionProps) {
       {showViewer && props.sgf && <GameViewerButton sgfPath={props.sgf}>{t('game.open')}</GameViewerButton>}
 
       {props.sgf && (
-        <ExternalButton url={props.sgf} title={t('game.sgf')}>
+        <ExternalButton url={Endpoints.GAME_SGF(props.sgf)} title={t('game.sgf')}>
           SGF
         </ExternalButton>
       )}

@@ -1,4 +1,5 @@
 import { skipToken, useQuery } from '@tanstack/react-query';
+import { Endpoints } from '@/libs/endpoints';
 import { loadSgf } from '@/libs/sgf';
 
 export function useSgfData(sgfPath?: string) {
@@ -6,7 +7,7 @@ export function useSgfData(sgfPath?: string) {
     queryKey: ['sgf', sgfPath],
     queryFn: sgfPath
       ? async () => {
-          const response = await fetch(sgfPath);
+          const response = await fetch(Endpoints.GAME_SGF(sgfPath));
           const content = await response.text();
 
           return loadSgf(content, sgfPath);

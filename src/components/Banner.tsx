@@ -1,5 +1,6 @@
 import type { ComponentType } from 'react';
 import { FaAngleRight } from 'react-icons/fa6';
+import { Endpoints } from '@/libs/endpoints';
 
 type BannerProps = {
   Icon?: ComponentType<{ className?: string; color?: string }>;
@@ -19,7 +20,7 @@ export function Banner({ Icon, title, subtitle, href, tooltip }: BannerProps) {
       {Icon ? (
         <Icon className="size-12 md:size-16 xl:size-20" color="black" />
       ) : (
-        <img src="/logo-black.svg" alt="" className="size-12 md:size-16 xl:size-20" />
+        <img src={Endpoints.LOGO_BLACK()} alt="" className="size-12 md:size-16 xl:size-20" />
       )}
       <div>
         <h3 className="text-lg font-bold md:text-xl xl:text-2xl">{title}</h3>

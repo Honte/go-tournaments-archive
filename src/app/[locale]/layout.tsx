@@ -6,6 +6,7 @@ import { PropsWithChildren } from 'react';
 import { EVENT_LOCALES, isEventLocale } from '@/i18n/locales';
 import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
+import { Endpoints } from '@/libs/endpoints';
 import { Client } from '@/components/Client';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
@@ -30,8 +31,8 @@ export async function generateMetadata(props: RootLayoutProps): Promise<Metadata
     title: t('site.name'),
     description: t('site.description'),
     icons: {
-      icon: { url: '/favicon.svg', type: 'image/svg+xml' },
-      apple: { url: '/apple-icon.png', type: 'image/png', sizes: '180x180' },
+      icon: { url: Endpoints.FAVICON(), type: 'image/svg+xml' },
+      apple: { url: Endpoints.APPLE_ICON(), type: 'image/png', sizes: '180x180' },
     },
   };
 }
