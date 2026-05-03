@@ -39,34 +39,13 @@ jobs:
           DEPLOY_TOKEN: ${{ secrets.FTP_TOKEN }}
         run: |
           set -euo pipefail
-          mkdir -p deploy-pgc
-          cp tools/unzip.php deploy-pgc/unzip.php
-          node --input-type=module <<'NODE'
-          import { readFileSync, writeFileSync } from 'node:fs';
-
-          const path = 'deploy-pgc/unzip.php';
-          const token = process.env.DEPLOY_TOKEN;
-
-          if (!token) {
-            throw new Error('DEPLOY_TOKEN is required.');
-          }
-
-          const phpString = `'${token.replaceAll('\\', '\\\\').replaceAll("'", "\\'")}'`;
-          const source = readFileSync(path, 'utf8');
-          const updated = source.replace("'__DEPLOY_TOKEN__'", phpString);
-
-          if (updated === source) {
-            throw new Error('Deploy token placeholder was not found.');
-          }
-
-          writeFileSync(path, updated);
-          NODE
-          (cd out && zip -qr ../deploy-pgc/site.zip .)
+          node tools/deployment/prepare.js --source tools/deployment/unzip.php --target dist/unzip.php
+          (cd out && zip -qr ../dist/site.zip .)
 
       - name: Upload zip deploy bundle
         env:
           FTP_HOST: ${{ vars.FTP_HOST }}
-          FTP_PATH: public_html/${{ vars.FTP_HOST }}/archive2
+          FTP_PATH: public_html/${{ vars.FTP_HOST }}/2030
           FTP_USER: ${{ secrets.FTP_USER }}
           FTP_PASS: ${{ secrets.FTP_PASS }}
         run: |
@@ -79,18 +58,22 @@ jobs:
             base_url="ftp://${FTP_HOST}"
           fi
 
-          curl --fail --show-error --silent --ftp-create-dirs --user "$FTP_USER:$FTP_PASS" -T deploy-pgc/site.zip "${base_url}/site.zip"
-          curl --fail --show-error --silent --ftp-create-dirs --user "$FTP_USER:$FTP_PASS" -T deploy-pgc/unzip.php "${base_url}/unzip.php"
+          curl --fail --show-error --silent --ftp-create-dirs --user "$FTP_USER:$FTP_PASS" -T dist/site.zip "${base_url}/site.zip"
+          curl --fail --show-error --silent --ftp-create-dirs --user "$FTP_USER:$FTP_PASS" -T dist/unzip.php "${base_url}/unzip.php"
 
-#      - name: Trigger remote unzip
-#        env:
-#          FTP_TOKEN: ${{ secrets.FTP_TOKEN }}
-#          FTP_HOST: ${{ vars.FTP_HOST }}
-#        run: |
-#          set -euo pipefail
-#          curl --fail --show-error --silent --get "https://${FTP_HOST}/unzip.php" \
-#            --data-urlencode "token=${FTP_TOKEN}" \
-#            --data-urlencode "archive=site.zip"
+  #      - name: Trigger remote unzip
+  #        env:
+  #          FTP_TOKEN: ${{ secrets.FTP_TOKEN }}
+  #          FTP_HOST: ${{ vars.FTP_HOST }}
+  #        run: |
+  #          set -euo pipefail
+  #          response_file="$(mktemp)"
+  #          status="$(
+  #            curl --show-error --silent --output "$response_file" --write-out "%{http_code}" --get "https://${FTP_HOST}/unzip.php" \
+  #              --data-urlencode "token=${FTP_TOKEN}"
+  #          )"
+  #          cat "$response_file"
+  #          test "$status" -ge 200 && test "$status" -lt 300
 
   deploy-pygc-prod:
     if: ${{ github.event_name == 'workflow_dispatch' && inputs.event == 'pygc' }}
@@ -98,7 +81,7 @@ jobs:
     environment: pygc
     env:
       EVENT: pygc
-      SSH_PATH: "/usr/home/${{ secrets.SSH_USER }}/domains/${{ vars.SSH_HOST }}/public_nodejs/archive"
+      SSH_PATH: '/usr/home/${{ secrets.SSH_USER }}/domains/${{ vars.SSH_HOST }}/public_nodejs/archive'
     steps:
       - uses: actions/checkout@v4
 
