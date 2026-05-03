@@ -3,6 +3,7 @@ import { useMemo } from 'react';
 import { type Game, type GamePlayer, type Player } from '@/schema/data';
 import type { Translations, Translator } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
+import { Endpoints } from '@/libs/endpoints';
 import { GameActions } from '@/components/GameActions';
 import { Stone } from '@/components/Stone';
 import { GameViewerTrigger } from '@/components/viewer/GameViewerTrigger';
@@ -33,7 +34,7 @@ export function Game({ className, game, players, translations, title, wide }: Ga
     >
       {hasSgf && preview && (
         <GameViewerTrigger sgfPath={game.props.sgf!} aria-label={gameTitle}>
-          <img src={preview} alt={gameTitle} className="size-20" loading="lazy" />
+          <img src={Endpoints.GAME_THUMB(preview)} alt={gameTitle} className="size-20" loading="lazy" />
         </GameViewerTrigger>
       )}
       <div className="flex flex-col">

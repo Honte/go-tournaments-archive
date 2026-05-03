@@ -5,6 +5,7 @@ import type { ApiPlayerStats } from '@/schema/api';
 import type { GameProps } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
+import { Endpoints } from '@/libs/endpoints';
 import { GameActions } from '@/components/GameActions';
 import { Stone } from '@/components/Stone';
 import { StatsTable } from '@/components/table/StatsTable';
@@ -85,7 +86,7 @@ export function PlayerGames({ player, translations }: PlayerGamesProps) {
             cell: (info) => (
               <GameViewerTrigger sgfPath={info.row.original.props.sgf!}>
                 <img
-                  src={info.row.original.img}
+                  src={Endpoints.GAME_THUMB(info.row.original.img)}
                   alt={t('game.preview', `${player.name} vs ${info.row.original.opponent.name}`)}
                   className="size-20 min-w-20 min-h-20"
                   loading="lazy"

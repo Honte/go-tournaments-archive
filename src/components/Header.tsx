@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
+import { Endpoints } from '@/libs/endpoints';
 import { LocaleNavigation } from '@/components/navigation/LocaleNavigation';
 import { SideNavigation } from '@/components/navigation/SideNavigation';
 
@@ -29,7 +30,7 @@ export function Header({ translations }: TopBarProps) {
           prefetch={false}
         >
           <span className="sr-only">{t('navigation.home.anchor')}</span>
-          <img src="/logo-white.svg" alt="" className="h-4 xs:h-5 shrink-0" />
+          <img src={Endpoints.LOGO_WHITE()} alt="" className="h-4 xs:h-5 shrink-0" />
           <span className="text-base xs:text-lg font-semibold truncate">
             {t('navigation.archiveLabel', t('site.acronym'))}
           </span>

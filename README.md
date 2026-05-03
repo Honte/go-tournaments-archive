@@ -100,9 +100,18 @@ npm run start
 Environment variables:
 
 - `EVENT` selects the event directory. Defaults to `pgc`.
-- `SGF_URL_PREFIX` overrides the SGF base URL derived from the event domain.
+- `BASE_PATH` sets the static deployment subdirectory and Next.js `basePath`. Use this when serving the exported site below a path instead of the domain root, for example `/archive`.
+
+Build for a subdirectory deployment:
+
+```bash
+BASE_PATH=/archive npm run build
+```
 
 ## App routes
+
+The route examples below are shown without a base path. When `BASE_PATH` is set, public routes and generated
+data/assets are served below that prefix, for example `/archive/pl` and `/archive/data/i18n/pl.json`.
 
 Main static pages:
 

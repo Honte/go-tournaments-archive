@@ -4,6 +4,7 @@ import { PropsWithChildren } from 'react';
 import { DEFAULT_LOCALE } from '@/i18n/locales';
 import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
+import { Endpoints } from '@/libs/endpoints';
 import '../globals.css';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -14,8 +15,8 @@ export async function generateMetadata(): Promise<Metadata> {
     title: t('site.name'),
     description: t('site.description'),
     icons: {
-      icon: { url: '/favicon.svg', type: 'image/svg+xml' },
-      apple: { url: '/apple-icon.png', type: 'image/png', sizes: '180x180' },
+      icon: { url: Endpoints.FAVICON(), type: 'image/svg+xml' },
+      apple: { url: Endpoints.APPLE_ICON(), type: 'image/png', sizes: '180x180' },
     },
   };
 }

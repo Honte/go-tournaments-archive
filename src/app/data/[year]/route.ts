@@ -1,7 +1,7 @@
-import EVENT_CONFIG from '@event/config';
 import { mapValues } from 'lodash-es';
 import { notFound } from 'next/navigation';
 import type { NextRequest } from 'next/server';
+import { Endpoints } from '@/libs/endpoints';
 import { getTournaments } from '@/data';
 
 type PageProps = {
@@ -34,9 +34,10 @@ export async function GET(request: NextRequest, props: PageProps) {
         ...game,
         props: {
           ...game.props,
-          sgf: EVENT_CONFIG.domain + game.props.sgf,
-          svg: game.props.svg ? EVENT_CONFIG.domain + game.props.svg : undefined,
-          png: game.props.png ? EVENT_CONFIG.domain + game.props.png : undefined,
+          sgf: Endpoints.GAME_FILE(game.props.sgf),
+          svg: game.props.svg ? Endpoints.GAME_FILE(game.props.svg) : undefined,
+          png: game.props.png ? Endpoints.GAME_FILE(game.props.png) : undefined,
+          jpg: game.props.jpg ? Endpoints.GAME_FILE(game.props.jpg) : undefined,
         },
       };
     }),
