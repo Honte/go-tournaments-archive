@@ -48,7 +48,7 @@ jobs:
     environment: pygc
     env:
       EVENT: pygc
-      SSH_PATH: "/usr/home/${{ secrets.PYGC_SSH_USER }}/domains/${{ vars.SSH_HOST }}/public_nodejs/archive"
+      SSH_PATH: "/usr/home/${{ secrets.SSH_USER }}/domains/${{ vars.SSH_HOST }}/public_nodejs/archive"
     steps:
       - uses: actions/checkout@v4
 
