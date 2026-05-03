@@ -1,10 +1,20 @@
-name: Deploy PGC to FTP
+name: Deploy
 
 on:
   workflow_dispatch:
+    inputs:
+      event:
+        description: Event
+        required: true
+        type: choice
+        default: pgc
+        options:
+          - pgc
+          - pygc
 
 jobs:
   deploy-pgc-prod:
+    if: ${{ inputs.event == 'pgc' }}
     runs-on: ubuntu-latest
     environment: pgc
     env:
@@ -21,18 +31,54 @@ jobs:
 
       - run: npm run build
 
-      - uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ vars.PGC_FTP_HOST }}
-          username: ${{ secrets.PGC_FTP_USER }}
-          password: ${{ secrets.PGC_FTP_PASS }}
-          local-dir: ./out/
-          server-dir: ${{ vars.PGC_FTP_PATH }}
+      - name: Prepare bundle
+        env:
+          DEPLOY_TOKEN: ${{ secrets.FTP_TOKEN }}
+        run: |
+          set -euo pipefail
+          node tools/deployment/prepare.js --source tools/deployment/unzip.php --target dist/unzip.php
+          (cd out && zip -qr ../dist/site.zip .)
+
+      - name: Upload bundle
+        env:
+          FTP_HOST: ${{ vars.FTP_HOST }}
+          FTP_PATH: public_html/${{ vars.FTP_HOST }}/archive
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASS: ${{ secrets.FTP_PASS }}
+        run: |
+          set -euo pipefail
+          remote_path="${FTP_PATH%/}"
+
+          if [ -n "$remote_path" ]; then
+            base_url="ftp://${FTP_HOST}/${remote_path}"
+          else
+            base_url="ftp://${FTP_HOST}"
+          fi
+
+          curl --fail --show-error --silent --ftp-create-dirs --user "$FTP_USER:$FTP_PASS" -T dist/site.zip "${base_url}/site.zip"
+          curl --fail --show-error --silent --ftp-create-dirs --user "$FTP_USER:$FTP_PASS" -T dist/unzip.php "${base_url}/unzip.php"
+
+      - name: Unzip bundle
+        env:
+          FTP_TOKEN: ${{ secrets.FTP_TOKEN }}
+          FTP_HOST: ${{ vars.FTP_HOST }}
+        run: |
+          set -euo pipefail
+          response_file="$(mktemp)"
+          status="$(
+            curl --show-error --silent --output "$response_file" --write-out "%{http_code}" --get "https://${FTP_HOST}/unzip.php" \
+              --data-urlencode "token=${FTP_TOKEN}"
+          )"
+          cat "$response_file"
+          test "$status" -ge 200 && test "$status" -lt 300
+
   deploy-pygc-prod:
+    if: ${{ inputs.event == 'pygc' }}
     runs-on: ubuntu-latest
     environment: pygc
     env:
       EVENT: pygc
+      SSH_PATH: '/usr/home/${{ secrets.SSH_USER }}/domains/${{ vars.SSH_HOST }}/public_nodejs/archive'
     steps:
       - uses: actions/checkout@v4
 
@@ -45,10 +91,13 @@ jobs:
 
       - run: npm run build
 
-      - uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Deploy
+        uses: appleboy/scp-action@v1
         with:
-          server: ${{ vars.PYGC_FTP_HOST }}
-          username: ${{ secrets.PYGC_FTP_USER }}
-          password: ${{ secrets.PYGC_FTP_PASS }}
-          local-dir: ./out/
-          server-dir: ${{ vars.PYGC_FTP_PATH }}
+          host: ${{ vars.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          passphrase: ${{ secrets.SSH_KEY_PASS }}
+          source: out/*
+          strip_components: 1
+          target: ${{ env.SSH_PATH }}
