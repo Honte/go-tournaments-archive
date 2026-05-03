@@ -17,7 +17,7 @@ on:
 
 jobs:
   deploy-pgc-prod:
-    if: ${{ github.event_name == 'workflow_dispatch' && inputs.event == 'pgc' }}
+    if: ${{ github.event_name == 'pull_request' || inputs.event == 'pgc' }}
     runs-on: ubuntu-latest
     environment: pgc
     env:
@@ -34,16 +34,66 @@ jobs:
 
       - run: npm run build
 
-      - uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ vars.PGC_FTP_HOST }}
-          username: ${{ secrets.PGC_FTP_USER }}
-          password: ${{ secrets.PGC_FTP_PASS }}
-          local-dir: ./out/
-          server-dir: ${{ vars.PGC_FTP_PATH }}
+      - name: Prepare zip deploy bundle
+        env:
+          DEPLOY_TOKEN: ${{ secrets.FTP_TOKEN }}
+        run: |
+          set -euo pipefail
+          mkdir -p deploy-pgc
+          cp tools/unzip.php deploy-pgc/unzip.php
+          node --input-type=module <<'NODE'
+          import { readFileSync, writeFileSync } from 'node:fs';
+
+          const path = 'deploy-pgc/unzip.php';
+          const token = process.env.DEPLOY_TOKEN;
+
+          if (!token) {
+            throw new Error('DEPLOY_TOKEN is required.');
+          }
+
+          const phpString = `'${token.replaceAll('\\', '\\\\').replaceAll("'", "\\'")}'`;
+          const source = readFileSync(path, 'utf8');
+          const updated = source.replace("'__DEPLOY_TOKEN__'", phpString);
+
+          if (updated === source) {
+            throw new Error('Deploy token placeholder was not found.');
+          }
+
+          writeFileSync(path, updated);
+          NODE
+          (cd out && zip -qr ../deploy-pgc/site.zip .)
+
+      - name: Upload zip deploy bundle
+        env:
+          FTP_HOST: ${{ vars.FTP_HOST }}
+          FTP_PATH: public_html/${{ vars.FTP_HOST }}/archive2
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASS: ${{ secrets.FTP_PASS }}
+        run: |
+          set -euo pipefail
+          remote_path="${FTP_PATH%/}"
+
+          if [ -n "$remote_path" ]; then
+            base_url="ftp://${FTP_HOST}/${remote_path}"
+          else
+            base_url="ftp://${FTP_HOST}"
+          fi
+
+          curl --fail --show-error --silent --ftp-create-dirs --user "$FTP_USER:$FTP_PASS" -T deploy-pgc/site.zip "${base_url}/site.zip"
+          curl --fail --show-error --silent --ftp-create-dirs --user "$FTP_USER:$FTP_PASS" -T deploy-pgc/unzip.php "${base_url}/unzip.php"
+
+#      - name: Trigger remote unzip
+#        env:
+#          FTP_TOKEN: ${{ secrets.FTP_TOKEN }}
+#          FTP_HOST: ${{ vars.FTP_HOST }}
+#        run: |
+#          set -euo pipefail
+#          curl --fail --show-error --silent --get "https://${FTP_HOST}/unzip.php" \
+#            --data-urlencode "token=${FTP_TOKEN}" \
+#            --data-urlencode "archive=site.zip"
 
   deploy-pygc-prod:
-    if: ${{ github.event_name == 'pull_request' || inputs.event == 'pygc' }}
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.event == 'pygc' }}
     runs-on: ubuntu-latest
     environment: pygc
     env:
