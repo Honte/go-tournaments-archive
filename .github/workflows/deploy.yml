@@ -34,7 +34,7 @@ jobs:
 
       - run: npm run build
 
-      - name: Prepare zip deploy bundle
+      - name: Prepare bundle
         env:
           DEPLOY_TOKEN: ${{ secrets.FTP_TOKEN }}
         run: |
@@ -42,7 +42,7 @@ jobs:
           node tools/deployment/prepare.js --source tools/deployment/unzip.php --target dist/unzip.php
           (cd out && zip -qr ../dist/site.zip .)
 
-      - name: Upload zip deploy bundle
+      - name: Upload bundle
         env:
           FTP_HOST: ${{ vars.FTP_HOST }}
           FTP_PATH: public_html/${{ vars.FTP_HOST }}/2030
@@ -61,19 +61,19 @@ jobs:
           curl --fail --show-error --silent --ftp-create-dirs --user "$FTP_USER:$FTP_PASS" -T dist/site.zip "${base_url}/site.zip"
           curl --fail --show-error --silent --ftp-create-dirs --user "$FTP_USER:$FTP_PASS" -T dist/unzip.php "${base_url}/unzip.php"
 
-  #      - name: Trigger remote unzip
-  #        env:
-  #          FTP_TOKEN: ${{ secrets.FTP_TOKEN }}
-  #          FTP_HOST: ${{ vars.FTP_HOST }}
-  #        run: |
-  #          set -euo pipefail
-  #          response_file="$(mktemp)"
-  #          status="$(
-  #            curl --show-error --silent --output "$response_file" --write-out "%{http_code}" --get "https://${FTP_HOST}/unzip.php" \
-  #              --data-urlencode "token=${FTP_TOKEN}"
-  #          )"
-  #          cat "$response_file"
-  #          test "$status" -ge 200 && test "$status" -lt 300
+      - name: Unzip bundle
+        env:
+          FTP_TOKEN: ${{ secrets.FTP_TOKEN }}
+          FTP_HOST: ${{ vars.FTP_HOST }}
+        run: |
+          set -euo pipefail
+          response_file="$(mktemp)"
+          status="$(
+            curl --show-error --silent --output "$response_file" --write-out "%{http_code}" --get "https://${FTP_HOST}/unzip.php" \
+              --data-urlencode "token=${FTP_TOKEN}"
+          )"
+          cat "$response_file"
+          test "$status" -ge 200 && test "$status" -lt 300
 
   deploy-pygc-prod:
     if: ${{ github.event_name == 'workflow_dispatch' && inputs.event == 'pygc' }}
