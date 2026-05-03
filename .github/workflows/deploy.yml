@@ -69,7 +69,7 @@ jobs:
           set -euo pipefail
           response_file="$(mktemp)"
           status="$(
-            curl --show-error --silent --output "$response_file" --write-out "%{http_code}" --get "https://${FTP_HOST}/unzip.php" \
+            curl --show-error --silent --output "$response_file" --write-out "%{http_code}" --get "https://${FTP_HOST}/2030/unzip.php" \
               --data-urlencode "token=${FTP_TOKEN}"
           )"
           cat "$response_file"
