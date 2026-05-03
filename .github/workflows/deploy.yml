@@ -6,7 +6,7 @@ on:
 jobs:
   deploy-pgc-prod:
     runs-on: ubuntu-latest
-    environment: pgc-prod
+    environment: pgc
     env:
       EVENT: pgc
     steps:
@@ -28,3 +28,27 @@ jobs:
           password: ${{ secrets.PGC_FTP_PASS }}
           local-dir: ./out/
           server-dir: ${{ vars.PGC_FTP_PATH }}
+  deploy-pygc-prod:
+    runs-on: ubuntu-latest
+    environment: pygc
+    env:
+      EVENT: pygc
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run build
+
+      - uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ vars.PYGC_FTP_HOST }}
+          username: ${{ secrets.PYGC_FTP_USER }}
+          password: ${{ secrets.PYGC_FTP_PASS }}
+          local-dir: ./out/
+          server-dir: ${{ vars.PYGC_FTP_PATH }}

@@ -55,7 +55,7 @@ export function CategoryResultsTable({ translations, stats }: CategoryResultsTab
       });
     }
 
-    return result;
+    return result.sort((a, b) => b.year - a.year);
   }, [includeUnsure, stats.tournaments]);
 
   const hasUnsure = data.some((r) => r.hasUnsure);

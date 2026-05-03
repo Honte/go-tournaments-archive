@@ -2,7 +2,7 @@ import { EventConfig } from '@event/schema';
 
 const EVENT_CONFIG: EventConfig = {
   id: 'mpj',
-  domain: '',
+  domain: 'https://mpj.go.art.pl',
   locales: ['pl', 'en'],
   showCountry: false,
   showBestPlace: false,

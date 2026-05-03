@@ -13,6 +13,7 @@ that define age or other categories.
 
 - [World Amateur Go Championships Archive](https://wagc.go.art.pl) (`wagc`)
 - [Polish Go Championships Archive](https://mp.go.art.pl) (`pgc`)
+- [Polish Youth Go Championships Archive](https://mpj.go.art.pl) (`pygc`)
 - [Polish Women's Go Championships Archive](https://mpk.go.art.pl) (`pwgc`)
 
 ## Events
