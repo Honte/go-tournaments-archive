@@ -29,7 +29,7 @@ export function TableLeague({ stage, players, games, translations }: TableLeague
     <div className="w-full overflow-x-auto">
       <GoResultsTable
         className="min-w-full table-auto border-separate border-spacing-x-0 border-spacing-y-0.5"
-        rearranging={stage.type === 'tournament'}
+        rearranging={stage.rounds.length < table.length - 1}
       >
         <thead className="border-b-gray-300 border-b">
           <tr className="text-center">
