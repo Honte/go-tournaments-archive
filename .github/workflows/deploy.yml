@@ -1,10 +1,20 @@
-name: Deploy PGC to FTP
+name: Deploy
 
 on:
   workflow_dispatch:
+    inputs:
+      event:
+        description: Event
+        required: true
+        type: choice
+        default: pgc
+        options:
+          - pgc
+          - pygc
 
 jobs:
   deploy-pgc-prod:
+    if: ${{ inputs.event == 'pgc' }}
     runs-on: ubuntu-latest
     environment: pgc
     env:
@@ -29,6 +39,7 @@ jobs:
           local-dir: ./out/
           server-dir: ${{ vars.PGC_FTP_PATH }}
   deploy-pygc-prod:
+    if: ${{ inputs.event == 'pygc' }}
     runs-on: ubuntu-latest
     environment: pygc
     env:
