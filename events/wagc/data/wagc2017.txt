@@ -9,9 +9,9 @@
 ; CM[ (submitted by cieply)]
 ;.
 ;
- 1 Bai Baoxiang               8d CN  xxxx  8    8    0    42   18+/w   37+/b   4+/b    7+/w    6+/w    2+/w    9+/b    3+/b     |16249156
+ 1 Bai Baoxiang               8d CN  xxxx  8    8    0    42   18+/w   37+/b   4+/b    7+/w    6+/w    2+/w    9+/b    3+/w     |16249156
  2 Lee Sang-bin               7d KR  xxxx  6    6    0    43   5+/b    34+/b   20+/w   8+/w    18+/w   1-/b    3-/w    6+/b     |18413219
- 3 Lai Yu-Cheng               7d TW  xxxx  6    6    2    40   31+/w   10-/b   38+/w   14+/b   13+/w   12+/b   2+/b    1-/w     |13650813
+ 3 Lai Yu-Cheng               7d TW  xxxx  6    6    2    40   31+/w   10-/b   38+/w   14+/b   13+/w   12+/b   2+/b    1-/b     |13650813
  4 Ko Daniel                  7d US  xxxx  6    6    1    40   36+/b   11+/w   1-/w    19+/b   7-/b    14+/w   16+/b   24+/w    |17001193
  5 Shusaku Sakamoto           7d JP  xxxx  6    6    0    40   2-/w    35+/b   21+/w   26+/b   8+/w    7+/b    6-/w    10+/w    |13449513
  6 Ri Jin-ung                 7d KP  xxxx  6    6    0    39   44+/w   39+/b   9+/w    10+/b   1-/b    26+/w   5+/b    2-/w     |18425231

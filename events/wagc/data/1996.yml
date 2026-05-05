@@ -14,4 +14,7 @@ stages:
       - sosos
     findSharedPlaces: true
     games:
+      - 1-2 1:B+4.5 round:6 sgf:1996/6-JunLiu-HironoriHirata.sgf
       - 3-7 3:B+5.5 round:3 sgf:1996/3-YongmanYi-MyeongseonCh`oe.sgf
+      - 4-1 1:W+Time round:5 sgf:1996/5-YingKan-JunLiu.sgf
+      - 19-6 19:B+R round:4 sgf:1996/4-MatthewMacfadyen-HsiangJenHuang.sgf

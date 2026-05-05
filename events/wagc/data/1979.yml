@@ -8,3 +8,5 @@ stages:
     sharedPlaces:
       - 9-16
       - 17-30
+    games:
+      - 1-2 1:B+R round:5 sgf:1979/5-WeipingNie-TsuteChen.sgf
