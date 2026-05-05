@@ -15,4 +15,7 @@ stages:
       - sosos
     findSharedPlaces: true
     games:
+      - 1-5 1:B+R round:7 sgf:2001/7-DaichunLi-AlexejLazarev.sgf
+      - 2-1 1:W+1.5 round:6 sgf:2001/6-MorieiKanazawa-DaichunLi.sgf
       - 2-15 2:B+R round:3 sgf:2001/3-MorieiKanazawa-DianaKoszegi.sgf
+      - 4-1 1:W+R round:8 sgf:2001/8-Keunt`aeKo-DaichunLi.sgf

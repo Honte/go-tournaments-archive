@@ -3,9 +3,9 @@ stages:
   - type: tournament
     file: wagc2017.txt
     notes:
-     pl: dla top 10 dodatkowe breakery
-     en: for top 10 additional breakers  
-    time: 60min + 3x30s japanese    
+      pl: dla top 10 dodatkowe breakery
+      en: for top 10 additional breakers
+    time: 60min + 3x30s japanese
     komi: 6.5
     scoringColumns:
       - wins
@@ -17,3 +17,7 @@ stages:
       - sos
       - top10
     findSharedPlaces: true
+    games:
+      - 1-4 1:B+R round:3 sgf:2017/3-BaoxiangBai-DanielKo.sgf
+      - 3-1 1:W+R round:8 sgf:2017/8-YuChengLai-BaoxiangBai.sgf
+      - 7-1 1:W+R round:4 sgf:2017/4-CornelBurzo-BaoxiangBai.sgf

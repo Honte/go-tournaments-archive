@@ -3,8 +3,8 @@ stages:
   - type: tournament
     file: wagc2016.txt
     notes:
-     pl: dla top 8 dodatkowe breakery
-     en: for top 8 additional breakers   
+      pl: dla top 8 dodatkowe breakery
+      en: for top 8 additional breakers
     time: 60min + 3x30s japanese
     komi: 6.5
     scoringColumns:
@@ -16,3 +16,13 @@ stages:
       - sos
       - top8
     findSharedPlaces: true
+    games:
+      - 1-5 1:B+2.5 round:7 sgf:2016/7-BaoxiangBai-SatoshiHiraoka.sgf
+      - 4-1 1:W+R round:5 sgf:2016/5-AndriiKravets-BaoxiangBai.sgf
+      - 4-8 4:B+6.5 round:1 sgf:2016/1-AndriiKravets-CristianPop.sgf
+      - 4-10 4:B+19.5 round:2 sgf:2016/2-AndriiKravets-ChiHinChan.sgf
+      - 5-10 5:B+R round:8 sgf:2016/8-SatoshiHiraoka-ChiHinChan.sgf
+      - 6-7 7:W+11.5 round:4 sgf:2016/4-CsabaMero-DusanMitic.sgf
+      - 10-14 10:B+R round:7 sgf:2016/7-ChiHinChan-BenjaminLockhart.sgf
+      - 14-7 7:W+R round:6 sgf:2016/6-BenjaminLockhart-DusanMitic.sgf
+      - 26-14 14:W+R round:4 sgf:2016/4-FuKangChang-BenjaminLockhart.sgf

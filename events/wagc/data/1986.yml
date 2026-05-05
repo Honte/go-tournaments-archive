@@ -8,3 +8,12 @@ stages:
       - sos
     sharedPlaces:
       - 17-18
+    games:
+      - 1-2 1:B+R round:3 sgf:1986/3-KaYuiChan-YasuroKikuchi.sgf
+      - 2-3 2:B+R round:7 sgf:1986/7-YasuroKikuchi-XueLinSong.sgf
+      - 2-4 2:B+4.5 round:6 sgf:1986/6-YasuroKikuchi-ChuljungKim.sgf
+      - 3-1 1:W+2.5 round:5 sgf:1986/5-XueLinSong-KaYuiChan.sgf
+      - 3-4 4:W+0.5 round:8 sgf:1986/8-XueLinSong-ChuljungKim.sgf
+      - 7-6 6:W+R round:3 sgf:1986/3-RonaldSchlemper-JanuszKraszek.sgf
+      - 8-5 8:B+R round:5 sgf:1986/5-RadePetrovic-MirngjihnChern.sgf
+      - 14-15 14:B+19.5 round:4 sgf:1986/4-RonSnyder-IvanDetkov.sgf

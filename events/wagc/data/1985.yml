@@ -8,3 +8,24 @@ stages:
       - sos
     sharedPlaces:
       - 9-10
+    games:
+      - 1-2 1:B+R round:3 sgf:1985/3-JianHongWang-KaYuiChan.sgf
+      - 1-3 1:B+1.5 round:6 sgf:1985/6-JianHongWang-YasuroKikuchi.sgf
+      - 1-4 1:B+3.5 round:2 sgf:1985/2-JianHongWang-KingHwaPerng.sgf
+      - 1-7 1:B+3.5 round:7 sgf:1985/7-JianHongWang-ChuljungKim.sgf
+      - 2-6 2:B+R round:1 sgf:1985/1-KaYuiChan-AndreMoussa.sgf
+      - 5-9 5:B+R round:5 sgf:1985/5-CharlesHuh-TiborPocsai.sgf
+      - 5-19 5:B+14.5 round:4 sgf:1985/4-CharlesHuh-ZoranMutabzija.sgf
+      - 6-26 6:B+R round:3 sgf:1985/3-AndreMoussa-LeszekSoldan.sgf
+      - 8-6 8:B+5.5 round:4 sgf:1985/4-DavidSchoffel-AndreMoussa.sgf
+      - 11-13 11:B+3.5 round:3 sgf:1985/3-MyungChulShin-HelmutHasibeder.sgf
+      - 13-12 13:B+R round:1 sgf:1985/1-HelmutHasibeder-JamesBater.sgf
+      - 14-21 14:B+R round:4 sgf:1985/4-ErikPuyt-PetrWinkelhofer.sgf
+      - 15-20 15:B+R round:6 sgf:1985/6-KazuoKawai-PatriceGostelli.sgf
+      - 16-17 17:W+1.5 round:2 sgf:1985/2-BarryPhease-GunnarvonArnold.sgf
+      - 18-24 18:B+R round:3 sgf:1985/3-LeonDiner-StigTjur.sgf
+      - 22-28 22:B+13.5 round:5 sgf:1985/5-MattiSiivola-SergioParimbelli.sgf
+      - 23-27 27:W+R round:3 sgf:1985/3-JohnChen-FranciscoGarciadelaBanda.sgf
+      - 29-30 30:W+22.5 round:2 sgf:1985/2-DagBelsnes-BeeGiokTan.sgf
+      - 31-25 25:W+9.5 round:6 sgf:1985/6-HoracioPernia-ChuiOnnCheong.sgf
+      - 32-29 29:W+R round:4 sgf:1985/4-ThanomnualLeekulpitak-DagBelsnes.sgf
