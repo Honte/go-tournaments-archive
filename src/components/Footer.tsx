@@ -11,7 +11,7 @@ export function Footer({ translations }: { translations: Translations }) {
   const t = getTranslator(translations);
 
   return (
-    <footer className="bg-event-gray text-event-light mt-3">
+    <footer className="bg-event-gray text-event-light">
       <div className="container mx-auto max-w-(--breakpoint-2xl) xs:flex items-center p-3">
         <p>
           <ExternalLink url="https://honte.pl" className="text-event-light hover:text-event-light">

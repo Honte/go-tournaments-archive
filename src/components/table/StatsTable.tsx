@@ -2,15 +2,15 @@
 
 import {
   type ColumnDef,
-  type Header,
-  type SortingState,
   flexRender,
   getCoreRowModel,
   getSortedRowModel,
+  type SortingState,
   useReactTable,
 } from '@tanstack/react-table';
 import { clsx } from 'clsx';
 import { useState } from 'react';
+import { SortingHeader } from '@/components/table/SortingHeader';
 
 type StatsTableProps<T> = {
   data: T[];
@@ -72,14 +72,4 @@ export function StatsTable<T>({ data, columns }: StatsTableProps<T>) {
       </table>
     </div>
   );
-}
-
-function SortingHeader<T>({ header }: { header: Header<T, unknown> }) {
-  const state = header.column.getIsSorted();
-
-  if (!state) {
-    return null;
-  }
-
-  return <span className="text-xs ml-1 ">{state === 'asc' ? '▲' : '▼'}</span>;
 }

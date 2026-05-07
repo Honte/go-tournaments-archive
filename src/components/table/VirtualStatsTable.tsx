@@ -1,0 +1,77 @@
+'use client';
+
+import {
+  type ColumnDef,
+  flexRender,
+  getCoreRowModel,
+  getSortedRowModel,
+  type SortingState,
+  useReactTable,
+} from '@tanstack/react-table';
+import { clsx } from 'clsx';
+import { useState } from 'react';
+import { SortingHeader } from '@/components/table/SortingHeader';
+
+type VirtualStatsTableProps<T> = {
+  data: T[];
+  columns: ColumnDef<T>[];
+};
+
+export function VirtualStatsTable<T>({ data, columns }: VirtualStatsTableProps<T>) {
+  const [sorting, setSorting] = useState<SortingState>([]);
+
+  const table = useReactTable({
+    data,
+    columns,
+    state: {
+      sorting,
+    },
+    getCoreRowModel: getCoreRowModel(),
+    getSortedRowModel: getSortedRowModel(),
+    onSortingChange: setSorting,
+  });
+
+  return (
+    <div className="relative flex-1 ">
+      <div className="absolute w-full h-full overflow-auto">
+        <table className="min-w-full table-auto border-collapse">
+          <thead className="border-b-gray-300 border-b">
+            {table.getHeaderGroups().map((headerGroup) => (
+              <tr key={headerGroup.id} className="text-center select-none">
+                {headerGroup.headers.map((header) => (
+                  <th
+                    key={header.id}
+                    onClick={header.column.getToggleSortingHandler()}
+                    className={clsx('p-1', {
+                      'cursor-pointer': header.column.getCanSort(),
+                    })}
+                  >
+                    {header.isPlaceholder ? null : flexRender(header.column.columnDef.header, header.getContext())}
+                    <SortingHeader header={header} />
+                  </th>
+                ))}
+              </tr>
+            ))}
+          </thead>
+          <tbody>
+            {table.getRowModel().rows.map((row) => (
+              <tr key={row.id} className="text-center even:bg-gray-200 hover:bg-gray-300">
+                {row.getVisibleCells().map((cell) => {
+                  if (cell.column.columnDef.meta?.skip) {
+                    return null;
+                  }
+
+                  return (
+                    <td key={cell.id} className="py-1 px-2" colSpan={cell.column.columnDef.meta?.span ?? 1}>
+                      {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                    </td>
+                  );
+                })}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
