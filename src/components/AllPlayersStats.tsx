@@ -9,7 +9,7 @@ import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
 import { sortTableStats } from '@/libs/sort';
 import { toPercentage } from '@/libs/table';
-import { VirtualStatsTable } from '@/components/table/VirtualStatsTable';
+import { StatsTable } from '@/components/table/StatsTable';
 import { CountryLink } from '@/components/ui/CountryLink';
 import { Loader } from '@/components/ui/Loader';
 import { PlayerCell } from '@/components/ui/PlayerCell';
@@ -162,5 +162,5 @@ function AllPlayersStatsContent({ players, translations }: AllPlayersStatsConten
     [t, translations]
   );
 
-  return <VirtualStatsTable columns={columns} data={data} />;
+  return <StatsTable columns={columns} data={data} />;
 }
