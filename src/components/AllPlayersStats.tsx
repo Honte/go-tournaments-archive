@@ -9,7 +9,7 @@ import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
 import { sortTableStats } from '@/libs/sort';
 import { toPercentage } from '@/libs/table';
-import { StatsTable } from '@/components/table/StatsTable';
+import { VirtualStatsTable } from '@/components/table/VirtualStatsTable';
 import { CountryLink } from '@/components/ui/CountryLink';
 import { Loader } from '@/components/ui/Loader';
 import { PlayerCell } from '@/components/ui/PlayerCell';
@@ -30,6 +30,7 @@ type PlayerRow = TableStats & {
   name: string;
   firstName: string;
   lastName: string;
+  country: string;
   countries: string[];
   sgfs: number;
 };
@@ -56,11 +57,15 @@ function AllPlayersStatsContent({ players, translations }: AllPlayersStatsConten
           const [firstName, lastName] = (name ?? '').split(' ');
           const [gold, silver, bronze] = medals;
 
+          // for sorting
+          const country = countries.toSorted((a, b) => a.localeCompare(b)).join(',');
+
           return {
             id,
             name: name ?? '',
             firstName,
             lastName,
+            country,
             countries,
             bestPlace,
             gold: gold.length,
@@ -157,5 +162,5 @@ function AllPlayersStatsContent({ players, translations }: AllPlayersStatsConten
     [t, translations]
   );
 
-  return <StatsTable columns={columns} data={data} />;
+  return <VirtualStatsTable columns={columns} data={data} />;
 }
