@@ -63,7 +63,13 @@ export function VirtualStatsTable<T>({ data, columns }: VirtualStatsTableProps<T
               const row = rows[virtualRow.index];
 
               return (
-                <TableRow row={row} key={row.id} ref={rowVirtualizer.measureElement} data-index={virtualRow.index} />
+                <TableRow
+                  row={row}
+                  key={row.id}
+                  ref={rowVirtualizer.measureElement}
+                  data-index={virtualRow.index}
+                  className={virtualRow.index % 2 === 1 ? 'bg-gray-200' : ''}
+                />
               );
             })}
             {paddingBottom > 0 && (

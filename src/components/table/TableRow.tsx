@@ -1,13 +1,16 @@
 import { flexRender, type Row } from '@tanstack/react-table';
-import type { ComponentProps } from 'react';
+import { clsx } from 'clsx';
+import { type ComponentProps, memo } from 'react';
 
 type TableCellProps<T> = ComponentProps<'tr'> & {
   row: Row<T>;
 };
 
-export function TableRow<T>({ row, ...props }: TableCellProps<T>) {
+export const TableRow = memo(TableRowComponent) as typeof TableRowComponent;
+
+function TableRowComponent<T>({ row, className, ...props }: TableCellProps<T>) {
   return (
-    <tr key={row.id} className="text-center even:bg-gray-200 hover:bg-gray-300" {...props}>
+    <tr key={row.id} className={clsx('text-center hover:bg-gray-300', className)} {...props}>
       {row.getVisibleCells().map((cell) => {
         if (cell.column.columnDef.meta?.skip) {
           return null;
