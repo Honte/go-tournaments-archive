@@ -6,3 +6,11 @@ stages:
       - wins
       - null
       - sos
+      - sosos
+      - sodos
+    breakers:
+      - wins
+      - sos
+      - sosos
+      - sodos
+    findSharedPlaces: true  

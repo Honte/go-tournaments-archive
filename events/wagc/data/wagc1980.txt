@@ -24,7 +24,7 @@
 18	Lopez-Herrero Eduardo	3d	AR	xxx	1	1	3-	29+	10-	?	?	?
 19	Chang Yoon-jung	7d	BR	xxx	1	1	8-	30+	11-	?	?	?
 20	Phipps Ned	5d	US	xxx	1	1	30+	8-	12-	?	?	?
-21	Mattern Jurgen	6d	AT	xxx	1	1	22+	6-	13-	?	?	?
+21	Mattern Jurgen	6d	DE	xxx	1	1	22+	6-	13-	?	?	?
 22	Parmenter Graeme	3d	NZ	xxx	1	1	21-	31+	14-	?	?	?
 23	Macfadyen Matthew	5d	UK	xxx	1	1	32+	4-	15-	?	?	?
 24	Michel Jean	3d	FR	xxx	1	1	4-	32+	16-	?	?	?

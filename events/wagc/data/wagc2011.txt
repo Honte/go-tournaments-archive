@@ -44,7 +44,7 @@
 33 Minieri Davide            3d IT  Bas   4    4    30   253  9-      47+     16-     32-     43+     52+     19-     45+      |12801602
 34 Trippel Lorenz            1d CH  Zur   4    4    28   240  24-     27-     43+     41-     51+     42+     21-     46+      |10513492
 35 Smid Miroslav             1k SK  Brat  4    4    27   237  38-     54+     48+     40-     36+     29-     45+     21-      |10337470
-36 Hutchinson James          1k UK  Belf  4    4    27   235  39-     32+     30-     53+     35-     48+     50+     24-      |14850187
+36 Hutchinson James          1k IE  Belf  4    4    27   235  39-     32+     30-     53+     35-     48+     50+     24-      |14850187
 37 Aylanc Nurman             1k CY  Fama  4    4    22   210  28-     42-     57+     47-     45-     55+     51+     50+      |13533850
 38 Ramon Jan                 4d BE  Leuv  3    3    37   276  35+     2-      18+     13-     9-      15-     39-     47+      |10213632
 39 Butala Gregor             5d SI  Ljub  3    3    35   279  36+     30+     3-      23-     6-      25-     38+     27-      |10433016
