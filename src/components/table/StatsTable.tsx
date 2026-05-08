@@ -36,7 +36,7 @@ export function StatsTable<T>({ data, columns }: StatsTableProps<T>) {
         <TableHeader table={table} />
         <tbody>
           {table.getRowModel().rows.map((row) => (
-            <TableRow key={row.id} row={row} />
+            <TableRow key={row.id} row={row} className="even:bg-gray-200" />
           ))}
         </tbody>
       </table>
