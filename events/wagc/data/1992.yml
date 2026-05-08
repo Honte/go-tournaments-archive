@@ -6,5 +6,11 @@ stages:
       - wins
       - null
       - sos
-    sharedPlaces:
-      - 31-33
+      - sodos
+      - direct
+    breakers:
+      - wins
+      - sos
+      - sodos
+      - direct
+    findSharedPlaces: true

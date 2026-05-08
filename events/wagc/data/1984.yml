@@ -4,10 +4,14 @@ stages:
     komi: 5.5
     scoringColumns:
       - wins
-      - null
       - sos
-    sharedPlaces:
-      - 28-29
+      - sodos
+      - direct
+    breakers:
+      - wins
+      - sos
+      - sodos
+    findSharedPlaces: true
     games:
       - 1-2 1:B+R round:6 sgf:1984/6-QunWang-ChanghyeokYoo.sgf
       - 3-1 1:W+R round:7 sgf:1984/7-HironoriHirata-QunWang.sgf

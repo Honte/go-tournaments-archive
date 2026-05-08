@@ -7,7 +7,10 @@ stages:
       - null
       - sos
       - sosos
-    sharedPlaces:
-      - 17-18
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: true      
     games:
       - 4-1 1:W+0.5 round:8 sgf:1995/8-SungkyunPark-HirataHironori.sgf

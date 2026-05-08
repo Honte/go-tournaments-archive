@@ -6,5 +6,17 @@ stages:
       - wins
       - null
       - sos
-    sharedPlaces:
-      - 26-27
+      - sodos
+    breakers:
+      - wins
+      - sos
+      - sodos
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:4 sgf:1989/4-ZewuChe-WenheTsai.sgf
+      - 3-1 1:W+0.5 round:5 sgf:1989/5-HironoriHirata-ZewuChe.sgf
+      - 4-1 4:B+R round:7 sgf:1989/7-HakyeongYi-ZewuChe.sgf
+      - 6-7 7:W+R round:5 sgf:1989/5-LaurentHeiser-JanuszKraszek.sgf
+      - 6-8 6:B+R round:8 sgf:1989/8-LaurentHeiser-RadePetrovic.sgf
+      - 16-2 2:W+R round:3 sgf:1989/3-AlexejLazarev-WenheTsai.sgf
+      - 17-5 5:W+R round:5 sgf:1989/5-MalteSchuster-HelmutHasibeder.sgf

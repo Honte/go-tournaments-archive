@@ -68,6 +68,6 @@
  59 Valenzuela Alfredo          1d CL xxx   2 2  23 213  30- 19- 52- 60+ 50- 57- 63+ 53-  |13601830
  60 Shaw Shiba                  1k IN xxx   2 2  21 208  15- 45- 57- 59- 63+ 51- 62+ 49-  |13613831
  61 Harutyunyan Davit           1d AM xxx   2 2  21 204  38- 37- 58- 54- 64+ 48- 40- 63+  |12750089
- 62 Tehhani Fouad               4k MO xxx   2 2  18 206  41- 56- 42- 63+ 46- 52- 60- 64+  |13625832
+ 62 Tehhani Fouad               4k MA xxx   2 2  18 206  41- 56- 42- 63+ 46- 52- 60- 64+  |13625832
  63 Gomar Rosa-Maria            5k GT xxx   1 1  19 197  25- 39- 50- 62- 60- 64+ 59- 61-  |13649834
  64 Escobar Edgar_Ivan          5k PA xxx   0 0  22 197  35- 22- 46- 55- 61- 63- 58- 62-  |13650835

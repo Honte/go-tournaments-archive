@@ -2,10 +2,17 @@ stages:
   - type: tournament
     file: wagc1990.txt
     komi: 5.5
+    notes: 
+     en: German player had to leave after 1st round due to illness - all 0+ wins are formally against him     
+     pl: Gracz z niemiec musiał opuścić turniej po 1 rundzie z powodu choroby - wszystkie wygrane 0+ są formalnie przeciwko niemu
     scoringColumns:
       - wins
-      - null
       - sos
-    sharedPlaces:
-      - 12-13
-      - 18-19
+      - sodos
+      - direct
+    breakers:
+      - wins
+      - sos
+      - sodos
+      - direct
+    findSharedPlaces: true

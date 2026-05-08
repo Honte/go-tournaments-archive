@@ -4,10 +4,15 @@ stages:
     komi: 5.5
     scoringColumns:
       - wins
-      - null
       - sos
-    sharedPlaces:
-      - 17-18
+      - sodos
+      - direct
+    breakers:
+      - wins
+      - sos
+      - sodos
+      - direct
+    findSharedPlaces: true
     games:
       - 1-2 1:B+R round:3 sgf:1986/3-KaYuiChan-YasuroKikuchi.sgf
       - 2-3 2:B+R round:7 sgf:1986/7-YasuroKikuchi-XueLinSong.sgf

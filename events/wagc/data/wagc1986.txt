@@ -4,37 +4,38 @@
 ; HA[h9]
 ; KM[5.5]
 ; CM[Shared Places 17-18]
-1	Chan Ka-Yui	7d	HK	xxx	7	7	43	13+	11+	2+	4+	3-	5+	7+	9+
-2	Kikuchi Yasuro	7d	JP	xxx	7	7	42	20+	9+	1-	13+	6+	4+	3+	8+
-3	Song Xue-Lin	7d	CN	xxx	6	6	43	18+	19+	5+	8+	1+	11+	2-	4-
-4	Kim Chul-jung	6d	KR	xxx	6	6	39	29+	15+	24+	1-	9+	2-	5+	3+
-5	Chern Mirng-jihn	6d	TW	xxx	5	5	42	22+	7+	3-	18+	8+	1-	4-	6+
-6	Kraszek Janusz	5d	PL	xxx	5	5	37	12-	31+	7+	10+	2-	25+	11+	5-
-7	Schlemper Ronald	6d	NL	xxx	5	5	37	17+	5-	6-	26+	12+	19+	1-	14+
-8	Petrovic Rade	5d	YU	xxx	5	5	37	14+	28+	10+	3-	5-	24+	15+	2-
-9	Hasibeder Helmut	6d	AT	xxx	5	5	36	30+	2-	29+	16+	4-	13+	14+	1-
-10	Heiser Laurent	3d	LU	xxx	5	5	35	16+	12+	8-	6-	21+	15-	20+	17+
-11	Hahn Sang-dae	6d	AU	xxx	5	5	35	32+	1-	19+	24+	14+	3-	6-	13+
-12	Donzet Frederic	5d	FR	xxx	5	5	33	6+	10-	17+	22-	7-	27+	25+	15+
-13	Stacey Terence	5d	UK	xxx	4	4	39	1-	22+	26+	2-	18+	9-	21+	11-
-14	Snyder Ron	6d	US	xxx	4	4	35	8-	21+	25+	15+	11-	16+	9-	7-
-15	Detkov Ivan	6d	SU	xxx	4	4	34	27+	4-	23+	14-	29+	10+	8-	12-
-16	Tomes Ray	4d	NZ	xxx	4	4	32	10-	25+	20+	9-	17+	14-	26+	18-
-17	Olsson Ulf	3d	SE	xxx	4	4	32	7-	32+	12-	27+	16-	23+	19+	10-
-18	Kim Yoon-Bae	5d	CA	xxx	4	4	32	3-	27+	28+	5-	13-	20-	24+	16+
-19	Gondor Andras	5d	HU	xxx	4	4	31	34+	3-	11-	20+	24+	7-	17-	25+
-20	Baumann Hanspeter	3d	CH	xxx	4	4	31	2-	30+	16-	19-	28+	18+	10-	29+
-21	Danek Vladimir	5d	CS	xxx	4	4	27	24-	14-	30+	23+	10-	29+	13-	26+
-22	Quintero Ricardo	3d	MX	xxx	4	4	26	5-	13-	34+	12+	25-	26-	31+	27+
-23	Amador Alberto	2d	ES	xxx	4	4	24	25-	33+	15-	21-	30+	17-	32+	28+
-24	Alaluf Roberto-Issac	4d	AR	xxx	3	3	33	21+	26+	4-	11-	19-	8-	18-	33+
-25	Cheong Chui-Onn	5d	SG	xxx	3	3	32	23+	16-	14-	31+	22+	6-	12-	19-
-26	Tan Bee-Giok	2d	PH	xxx	3	3	28	31+	24-	13-	7-	32+	22+	16-	21-
-27	Isele Wolfgang	5d	DE	xxx	3	3	27	15-	18-	33+	17-	31+	12-	29+	22-
-28	Lounela Olli	1d	FI	xxx	3	3	24	33+	8-	18-	29-	20-	30+	34+	23-
-29	Lee Do-jae	5d	BR	xxx	2	2	30	4-	34+	9-	28+	15-	21-	27-	20-
-30	Dusausoy Guy	3k	BE	xxx	2	2	25	9-	20-	21-	34+	23-	28-	33-	32+
-31	Frederiksen Jan	1d	DK	xxx	2	2	23	26-	6-	32+	25-	27-	33+	22-	34-
-32	Savagnone Fulvio	3k	IT	xxx	2	2	23	11-	17-	31-	33+	26-	34+	23-	30-
-33	Skogen Tor-Birger	1k	NO	xxx	2	2	20	28-	23-	27-	32-	34+	31-	30+	24-
-34	Intaratase Surapon	3k	TH	xxx	1	1	21	19-	29-	22-	30-	33-	32-	28-	31+
+; Pl Name                            Rk Co Club  NBW  SOSSODOS   DC
+   1 Chan Ka-Yui                     7D HK  xxx    7   43   37    0      13+      11+       2+       4+       3-       5+       7+       9+
+   2 Kikuchi Yasuro                  7D JP  xxx    7   42   35    0      20+       9+       1-      13+       6+       4+       3+       8+
+   3 Song Xue-Lin                    7D CN  xxx    6   43   30    0      17+      19+       5+       8+       1+      11+       2-       4-
+   4 Kim Chul-jung                   6D KR  xxx    6   39   25    0      29+      15+      24+       1-       9+       2-       5+       3+
+   5 Chern Mirng-jihn                6D TW  xxx    5   42   23    0      22+       7+       3-      17+       8+       1-       4-       6+
+   6 Kraszek Janusz                  5D PL  xxx    5   37   20    1      12-      31+       7+      10+       2-      25+      11+       5-
+   7 Schlemper Ronald                6D NL  xxx    5   37   20    0      18+       5-       6-      26+      12+      19+       1-      14+
+   8 Petrovic Rade                   5D YU  xxx    5   37   19    0      14+      28+      10+       3-       5-      24+      15+       2-
+   9 Hasibeder Helmut                6D AT  xxx    5   36   16    0      30+       2-      29+      16+       4-      13+      14+       1-
+  10 Heiser Laurent                  3D LU  xxx    5   35   21    0      16+      12+       8-       6-      21+      15-      20+      18+
+  11 Hahn Sang-dae                   6D AU  xxx    5   35   17    0      32+       1-      19+      24+      14+       3-       6-      13+
+  12 Donzet Frederic                 5D FR  xxx    5   33   19    0       6+      10-      18+      22-       7-      27+      25+      15+
+  13 Stacey Terence                  5D UK  xxx    4   39   15    0       1-      22+      26+       2-      17+       9-      21+      11-
+  14 Snyder Ron                      6D US  xxx    4   35   15    0       8-      21+      25+      15+      11-      16+       9-       7-
+  15 Detkov Ivan                     6D SU  xxx    4   34   14    0      27+       4-      23+      14-      29+      10+       8-      12-
+  16 Tomes Ray                       4D NZ  xxx    4   32   14    0      10-      25+      20+       9-      18+      14-      26+      17-
+  17 Kim Yoon-Bae                    5D CA  xxx    4   32   13    0       3-      27+      28+       5-      13-      20-      24+      16+
+  18 Olsson Ulf                      3D SE  xxx    4   32   13    0       7-      32+      12-      27+      16-      23+      19+      10-
+  19 Gondor Andras                   5D HU  xxx    4   31   11    1      34+       3-      11-      20+      24+       7-      18-      25+
+  20 Baumann Hanspeter               3D CH  xxx    4   31   11    0       2-      30+      16-      19-      28+      17+      10-      29+
+  21 Danek Vladimir                  5D CS  xxx    4   27   11    0      24-      14-      30+      23+      10-      29+      13-      26+
+  22 Quintero Ricardo                3D MX  xxx    4   26   11    0       5-      13-      34+      12+      25-      26-      31+      27+
+  23 Amador Alberto                  2D ES  xxx    4   24    9    0      25-      33+      15-      21-      30+      18-      32+      28+
+  24 Alaluf Roberto-Issac            4D AR  xxx    3   33    9    0      21+      26+       4-      11-      19-       8-      17-      33+
+  25 Cheong Chui-Onn                 5D SG  xxx    3   32   10    0      23+      16-      14-      31+      22+       6-      12-      19-
+  26 Tan Bee-Giok                    2D PH  xxx    3   28    8    0      31+      24-      13-       7-      32+      22+      16-      21-
+  27 Isele Wolfgang                  5D DE  xxx    3   27    6    0      15-      17-      33+      18-      31+      12-      29+      22-
+  28 Lounela Olli                    1D FI  xxx    3   24    5    0      33+       8-      17-      29-      20-      30+      34+      23-
+  29 Lee Do-jae                      5D BR  xxx    2   30    4    0       4-      34+       9-      28+      15-      21-      27-      20-
+  30 Dusausoy Guy                    3K BE  xxx    2   25    3    0       9-      20-      21-      34+      23-      28-      33-      32+
+  31 Frederiksen Jan                 1D DK  xxx    2   23    4    0      26-       6-      32+      25-      27-      33+      22-      34-
+  32 Savagnone Fulvio                3K IT  xxx    2   23    3    0      11-      18-      31-      33+      26-      34+      23-      30-
+  33 Skogen Tor-Birger               1K NO  xxx    2   20    3    0      28-      23-      27-      32-      34+      31-      30+      24-
+  34 Intaratase Surapon              3K TH  xxx    1   21    2    0      19-      29-      22-      30-      33-      32-      28-      31+
