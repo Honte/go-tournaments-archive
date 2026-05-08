@@ -24,7 +24,7 @@
   17 Olsson Ulf                      3D SE  xxx    3   25    8 0      22+      13-      20+       5-      12-      11-      26+
   18 Danek Vladimir                  5D CS  xxx    3   25    7 0       3-      28+       5-      29+      21+      12-      13-
   19 Tan Liek-foo                    3D SG  xxx    3   23    9 0      25-       6+      11-      12-      29+      24+       9-
-  20 Garcia_de_la_Banda Fra          4D ES  xxx    3   22    6 0      29+       4-      17-      28+      14-      25+       8-
+  20 Garcia_de_la_Banda Francisco    4D ES  xxx    3   22    6 0      29+       4-      17-      28+      14-      25+       8-
   21 Paatero Lauri                   1K FI  xxx    3   18    6 0      28+      24-      26+      10-      18-      22-      29+
   22 Tan Bee-giok                    1K PH  xxx    3   17    5 0      17-      27-       6-      30+      25-      21+      28+
   23 Bassarsky Franklin              3D AR  xxx    3   17    4 0      26-      11-      30+      14-      27+      16-      25+

@@ -20,7 +20,7 @@
   13 Rittner Egbert                  5D DE  xxx    5   34   17 0       2-      32+      17+      16+      11-      19+       6-      22+
   14 Matsuda Takao                   6D US  xxx    4   40   15 0      28+      23+       9+      20+       3-       2-       4-      11-
   15 Gostelli Patrice                3D CH  xxx    4   33   11 0      32+      19+       1-       2-      22-       6-      31+      23+
-  16 Garcia_de_la_Banda Fra          4D ES  xxx    4   32   12 0      30+      31+      10-      13-       5-      20+       8-      25+
+  16 Garcia_de_la_Banda Francisco    4D ES  xxx    4   32   12 0      30+      31+      10-      13-       5-      20+       8-      25+
   17 Westhoff Arend-Jan              4D NL  xxx    4   32   12 0      18-      26+      13-      23+      24+       4-      27+       8-
   18 Wiltschek Helmut                6D AT  xxx    4   32   12 0      17+       6-      31+       7-       9-      24+      22+      12-
   19 Garofalo Primo                  1D IT  xxx    4   32   11 0      33+      15-       2-      26+      21+      13-      28+      10-
@@ -38,4 +38,4 @@
   31 Quintero Ricardo                3D MX  xxx    2   26    4 0      27+      16-      18-      21-      28-      33+      15-      30-
   32 Gilbert Michel                  2K BE  xxx    2   25    3 0      15-      13-      27-      34+      30+      25-      20-      29-
   33 Christoffersen Terje            1D NO  xxx    1   22    0 0      19-      30-      21-      29-      34+      31-      25-      26-
-  34 Castro Carlos                   2D AR  xxx    0   25    0 0       4-      28-      20-      32-      33-      29-      30-      24- 
+  34 Castro Carlos                   2D AR  xxx    0   25    0 0       4-      28-      20-      32-      33-      29-      30-      24-
