@@ -12,7 +12,7 @@ import { calculateStats } from '@/data/stats';
 import pkg from '../../package.json';
 
 const { tournaments, playersHandler } = await loadData();
-const stats = calculateStats(tournaments);
+const stats = calculateStats(tournaments, playersHandler);
 
 export async function getTournaments() {
   return tournaments;
@@ -40,9 +40,8 @@ export async function getAllPlayersStats() {
 
 export async function getPlayerStats(playerId: string): Promise<ApiPlayerStats | undefined> {
   const player = stats.players[playerId];
-  const playerData = playersHandler.getPlayer(playerId);
 
-  if (!player || !playerData) {
+  if (!player) {
     return undefined;
   }
 
@@ -78,7 +77,7 @@ export async function getPlayerStats(playerId: string): Promise<ApiPlayerStats |
 
   return {
     id: player.id,
-    egd: playerData.egd,
+    egd: player.egd,
     name: player.name,
     country: player.countries,
     medals: player.medals,

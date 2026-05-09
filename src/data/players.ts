@@ -9,6 +9,7 @@ export type PlayersHandler = ReturnType<typeof createPlayersHandler>;
 export type PlayerData = {
   id: string;
   egd?: number;
+  lastUsedName: string
   names: Set<string>;
   hashes: Set<string>;
 };
@@ -80,6 +81,7 @@ export function createPlayersHandler() {
 
     // don't reuse player if it has different EGD pin
     if (player && (!player.egd || !egd || player.egd === egd)) {
+      player.lastUsedName = name;
       player.names.add(name);
       player.hashes.add(hash);
 
@@ -102,6 +104,7 @@ export function createPlayersHandler() {
     const playerData = {
       id,
       egd,
+      lastUsedName: name,
       names: new Set([name]),
       hashes: new Set([hash]),
     };

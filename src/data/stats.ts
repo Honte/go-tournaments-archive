@@ -13,8 +13,9 @@ import type {
   StatsPlayerResult,
   Tournament,
 } from '@/schema/data';
+import type { PlayersHandler } from '@/data/players';
 
-export function calculateStats(tournaments: Tournament[]): Stats {
+export function calculateStats(tournaments: Tournament[], playersHandler: PlayersHandler): Stats {
   const players: Record<string, StatsPlayer> = {};
   const countries: Record<string, StatsCountry> = {};
   const categories: Record<string, StatsCategory> = {};
@@ -247,9 +248,12 @@ export function calculateStats(tournaments: Tournament[]): Stats {
 
   function upsertPlayer(player: Player | string): StatsPlayer {
     const id = typeof player === 'string' ? player : player.id;
+    const playerData = playersHandler.getPlayer(id)!
 
     return (players[id] ||= {
       id,
+      egd: playerData?.egd,
+      name: playerData?.lastUsedName,
       medals: [[], [], []],
       categoriesMedals: (EVENT_CONFIG.categories || []).reduce<Record<string, StatsMedals>>((acc, category) => {
         acc[category] = [[], [], []];
@@ -257,7 +261,6 @@ export function calculateStats(tournaments: Tournament[]): Stats {
         return acc;
       }, {}),
       countries: [],
-      name: typeof player === 'string' ? id : player.name,
       years: [],
       results: [],
       score: 0,

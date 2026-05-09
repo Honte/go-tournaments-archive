@@ -210,6 +210,7 @@ export type StatsPlayerResult = {
 
 export type StatsPlayer = {
   id: string;
+  egd?: number;
   name: string;
   countries: string[];
   medals: StatsMedals;
