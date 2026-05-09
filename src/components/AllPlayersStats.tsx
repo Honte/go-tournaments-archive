@@ -83,6 +83,8 @@ function AllPlayersStatsContent({ players, translations }: AllPlayersStatsConten
     [players]
   );
 
+  const hasSgfs = data.some((p) => p.sgfs > 0);
+
   const columns = useMemo<ColumnDef<PlayerRow>[]>(
     () =>
       (
@@ -148,7 +150,7 @@ function AllPlayersStatsContent({ players, translations }: AllPlayersStatsConten
             accessorKey: 'lost',
             header: t('table.lost'),
           },
-          {
+          hasSgfs && {
             accessorKey: 'sgfs',
             header: t('table.sgfs'),
           },
