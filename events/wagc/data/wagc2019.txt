@@ -8,7 +8,7 @@
 ; TM[82.5]
 ; CM[30x3 byoyomi (submitted by Flatline)]
 ;.
-; Pl Name                         Rk Co  Club Score SOSSO SOS  R1      R2      R3     R4      R5      R6      R7      R8        PIN                                    
+; Pl Name                         Rk Co  Club Score SOSSO SOS  R1      R2      R3     R4      R5      R6      R7      R8        PIN
  1 Wang Chen                      7d CN  Shan  8    43   330  14+     12+     23+     4+      8+      2+      3+      9+       |15025956
  2 Lee Jaesung                    7d KR  XXXX  7    45   327  27+     6+      9+      10+     3+      1-      8+      4+       |19301469
  3 Chan Nai-San                   7d HK  WCh   6    42   312  19+     41+     28+     11+     2-      10+     1-      8+       |14349742
@@ -39,9 +39,9 @@
 28 Savo Jesse                     5d FI  Haya  4    35   271  48+     38+     3-      41+     6-      15-     40+     17-      |13801634
 29 Suc Timotej                    3d SI  Ljub  4    33   257  12-     59+     37+     16-     44+     27+     7-      18-      |12533697
 30 Chan Wai_Chong                 5d MO  xxxx  4    32   268  8-      15-     34+     12-     49+     53+     18-     43+      |18913301
-31 Schroter_Mendez Carl_Nicolas   3d CL  XXXX  4    32   268  10-     36+     48+     15-     7-      40-     41+     42+      |19374476
+31 Schroter_Mendez Carl_Nicolas   3d CL  XXXX  4    32   268  10-     36+     48+     15-     7-      40-     41+     42+      |15013163
 32 Bojanic Milos                  5d RS  BGmp  4    31   243  25-     51+     44+     18-     43+     42+     19-     20-      |10337085
-33 Gomez_Delafuente Anibal        1d AR  XXXX  4    29   225  4-      45-     50+     38-     57+     55+     34+     21-      |19398478
+33 Gomez_Delafuente Anibal        1d AR  XXXX  4    29   225  4-      45-     50+     38-     57+     55+     34+     21-      |12801712
 34 Kralik Michal                  1k SK  Kosi  4    29   218  21-     56+     30-     51+     37-     36+     33-     47+      |13033658
 35 Zaleskas Vladas                3d LT  Kaun  4    28   245  56+     40-     43+     26-     19-     44+     21-     45+      |15401716
 36 Mitchell Noel                  2d IE  Dubl  4    27   221  5-      31-     55-     47+     56+     34-     51+     52+      |10474563
