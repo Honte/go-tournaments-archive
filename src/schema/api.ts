@@ -16,6 +16,7 @@ export type ApiPlayerStats = {
 export type ApiPlayerResult = {
   year: number;
   place: number;
+  name: string;
   rank: string;
   country?: string;
   stages: ApiPlayerStage[];

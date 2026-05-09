@@ -89,7 +89,7 @@
     "firstName": "Imię",
     "lastName": "Nazwisko",
     "index": "Lp.",
-    "name": "Zawodnik",
+    "name": "Uczestnik",
     "rank": "Siła",
     "round": "Runda %{0}",
     "playoffs": "Play-Off",

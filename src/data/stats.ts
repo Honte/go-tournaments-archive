@@ -87,8 +87,10 @@ export function calculateStats(tournaments: Tournament[]): Stats {
           }
         }
 
-        const country = tournamentPlayers[player.id].country;
-        const rank = tournamentPlayers[player.id]?.rank ?? '';
+        const tournamentPlayer = tournamentPlayers[player.id];
+        const name = tournamentPlayer.name;
+        const country = tournamentPlayer.country;
+        const rank = tournamentPlayer.rank ?? '';
         const result: StatsPlayerResult = {
           year,
           stage: {
@@ -98,8 +100,9 @@ export function calculateStats(tournaments: Tournament[]): Stats {
           place: player.place,
           finalPlace: player.place > (stage.promoted ?? 0) ? player.place + (stage.placeOffset ?? 0) : Infinity,
           games: playerGames,
-          won,
+          name,
           rank,
+          won,
           country,
         };
 
@@ -118,7 +121,7 @@ export function calculateStats(tournaments: Tournament[]): Stats {
             if ('categories' in player && player?.categories?.[category]) {
               (tournamentCategories[category] ||= []).push({
                 id: globalPlayer.id,
-                name: globalPlayer.name,
+                name,
                 rank,
                 country,
                 place: player.categories[category],

@@ -58,7 +58,7 @@ export async function loadData() {
 
   return {
     tournaments,
-    playersIds: playersHandler.playerIds,
+    playersHandler,
   };
 }
 
