@@ -203,12 +203,14 @@ export type StatsPlayerResult = {
   finalPlace: number;
   games: StatsPlayerGame[];
   won: number;
+  name: string;
   rank: string;
   country?: string;
 };
 
 export type StatsPlayer = {
   id: string;
+  egd?: number;
   name: string;
   countries: string[];
   medals: StatsMedals;

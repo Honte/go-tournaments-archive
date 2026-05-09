@@ -3,7 +3,7 @@ import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import fg from 'fast-glob';
 import { parse } from 'yaml';
-import { Game, Tournament, TournamentDateSpan, TournamentDetails } from '@/schema/data';
+import { Game, type Player, Tournament, TournamentDateSpan, TournamentDetails } from '@/schema/data';
 import { InputTournament } from '@/schema/input';
 import { createPlayersHandler } from '@/data/players';
 import { parseStage } from '@/data/stages';
@@ -46,6 +46,21 @@ export async function loadData() {
       }
     }
 
+    const playersIdMap = createPlayersIdMap(players);
+
+    if (tournamentDetails.top) {
+      tournamentDetails.top = replaceFullNamesWithIds(tournamentDetails.top, playersIdMap);
+    }
+
+    if (tournamentDetails.categoriesTop) {
+      for (const category in tournamentDetails.categoriesTop) {
+        tournamentDetails.categoriesTop[category] = replaceFullNamesWithIds(
+          tournamentDetails.categoriesTop[category],
+          playersIdMap
+        );
+      }
+    }
+
     tournaments.push({
       ...tournamentDetails,
       ...getDateRange(dates),
@@ -58,7 +73,7 @@ export async function loadData() {
 
   return {
     tournaments,
-    playersIds: playersHandler.playerIds,
+    playersHandler,
   };
 }
 
@@ -81,4 +96,31 @@ function getDateRange(dates: TournamentDateSpan[]) {
   }
 
   return { start, end };
+}
+
+function replaceFullNamesWithIds(top: string[], idsMap: Record<string, string>) {
+  return top.map((place) =>
+    place
+      .split(',')
+      .map((id) => idsMap[id])
+      .filter(Boolean)
+      .join(',')
+  );
+}
+
+function createPlayersIdMap(players: Record<string, Player>) {
+  const idsMap: Record<string, string> = {};
+
+  for (const id in players) {
+    const player = players[id];
+
+    idsMap[id] = id;
+    idsMap[player.name] = id;
+
+    if (player.egd) {
+      idsMap[player.egd] = id;
+    }
+  }
+
+  return idsMap;
 }

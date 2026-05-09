@@ -11,8 +11,8 @@ import { loadData } from '@/data/load';
 import { calculateStats } from '@/data/stats';
 import pkg from '../../package.json';
 
-const { tournaments } = await loadData();
-const stats = calculateStats(tournaments);
+const { tournaments, playersHandler } = await loadData();
+const stats = calculateStats(tournaments, playersHandler);
 
 export async function getTournaments() {
   return tournaments;
@@ -38,14 +38,20 @@ export async function getAllPlayersStats() {
   return stats.players;
 }
 
-export async function getPlayerStats(playerId: string): Promise<ApiPlayerStats> {
+export async function getPlayerStats(playerId: string): Promise<ApiPlayerStats | undefined> {
   const player = stats.players[playerId];
+
+  if (!player) {
+    return undefined;
+  }
+
   const events: Record<number, ApiPlayerResult> = {};
   const opponents: Record<string, string> = {};
 
   for (const result of player.results) {
     const event = (events[result.year] ||= {
       year: result.year,
+      name: result.name,
       country: result.country,
       stages: [],
       place: result.finalPlace,
@@ -71,6 +77,7 @@ export async function getPlayerStats(playerId: string): Promise<ApiPlayerStats> 
 
   return {
     id: player.id,
+    egd: player.egd,
     name: player.name,
     country: player.countries,
     medals: player.medals,

@@ -3,8 +3,10 @@ import type { ReactNode } from 'react';
 import type { ApiPlayerStats } from '@/schema/api';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
+import { Endpoints } from '@/libs/endpoints';
 import { jsxJoin } from '@/libs/join';
 import { Details } from '@/components/Details';
+import { ExternalLink } from '@/components/ui/ExternalLink';
 import { H2 } from '@/components/ui/H2';
 import { YearLink } from '@/components/YearLink';
 
@@ -49,6 +51,14 @@ export function Achievements({ player, translations }: AchievementsProps) {
   details[t('table.events')] = player.results.length;
   details[t('table.games')] = player.totalGames;
   details[t('table.won')] = player.totalWon;
+
+  if (player.egd) {
+    details[t('details.egd')] = (
+      <ExternalLink url={Endpoints.EGD_PLAYER_LINK(player.egd)} title={t('details.goToEGD')}>
+        {player.egd}
+      </ExternalLink>
+    );
+  }
 
   return (
     <div className="flex flex-col">

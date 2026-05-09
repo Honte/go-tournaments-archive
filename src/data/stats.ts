@@ -13,8 +13,9 @@ import type {
   StatsPlayerResult,
   Tournament,
 } from '@/schema/data';
+import type { PlayersHandler } from '@/data/players';
 
-export function calculateStats(tournaments: Tournament[]): Stats {
+export function calculateStats(tournaments: Tournament[], playersHandler: PlayersHandler): Stats {
   const players: Record<string, StatsPlayer> = {};
   const countries: Record<string, StatsCountry> = {};
   const categories: Record<string, StatsCategory> = {};
@@ -87,8 +88,10 @@ export function calculateStats(tournaments: Tournament[]): Stats {
           }
         }
 
-        const country = tournamentPlayers[player.id].country;
-        const rank = tournamentPlayers[player.id]?.rank ?? '';
+        const tournamentPlayer = tournamentPlayers[player.id];
+        const name = tournamentPlayer.name;
+        const country = tournamentPlayer.country;
+        const rank = tournamentPlayer.rank ?? '';
         const result: StatsPlayerResult = {
           year,
           stage: {
@@ -98,8 +101,9 @@ export function calculateStats(tournaments: Tournament[]): Stats {
           place: player.place,
           finalPlace: player.place > (stage.promoted ?? 0) ? player.place + (stage.placeOffset ?? 0) : Infinity,
           games: playerGames,
-          won,
+          name,
           rank,
+          won,
           country,
         };
 
@@ -118,7 +122,7 @@ export function calculateStats(tournaments: Tournament[]): Stats {
             if ('categories' in player && player?.categories?.[category]) {
               (tournamentCategories[category] ||= []).push({
                 id: globalPlayer.id,
-                name: globalPlayer.name,
+                name,
                 rank,
                 country,
                 place: player.categories[category],
@@ -244,9 +248,12 @@ export function calculateStats(tournaments: Tournament[]): Stats {
 
   function upsertPlayer(player: Player | string): StatsPlayer {
     const id = typeof player === 'string' ? player : player.id;
+    const playerData = playersHandler.getPlayer(id)!;
 
     return (players[id] ||= {
       id,
+      egd: playerData?.egd,
+      name: playerData?.lastUsedName,
       medals: [[], [], []],
       categoriesMedals: (EVENT_CONFIG.categories || []).reduce<Record<string, StatsMedals>>((acc, category) => {
         acc[category] = [[], [], []];
@@ -254,7 +261,6 @@ export function calculateStats(tournaments: Tournament[]): Stats {
         return acc;
       }, {}),
       countries: [],
-      name: typeof player === 'string' ? id : player.name,
       years: [],
       results: [],
       score: 0,

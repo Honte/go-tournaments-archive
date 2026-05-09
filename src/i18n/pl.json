@@ -43,7 +43,9 @@
     "goToWebsite": "Przejdź na stronę wydarzenia",
     "referee": "Sędzia",
     "awarded": "Medaliści",
-    "awardedIn": "Medaliści %{0}"
+    "awardedIn": "Medaliści %{0}",
+    "egd": "Profil EGD",
+    "goToEGD": "Zobacz profil gracza w bazie European Go Database"
   },
   "stage": {
     "details": "Szczegóły",
@@ -89,7 +91,7 @@
     "firstName": "Imię",
     "lastName": "Nazwisko",
     "index": "Lp.",
-    "name": "Zawodnik",
+    "name": "Uczestnik",
     "rank": "Siła",
     "round": "Runda %{0}",
     "playoffs": "Play-Off",

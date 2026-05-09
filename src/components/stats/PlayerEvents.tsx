@@ -22,6 +22,7 @@ type PlayerEventsProps = {
 type EventRow = {
   year: number;
   stage: Pick<Stage, 'name' | 'type'>;
+  name: string;
   rank: string;
   place: number;
   games: number;
@@ -44,6 +45,7 @@ export function PlayerEvents({ player, translations }: PlayerEventsProps) {
 
         results.push({
           year: event.year,
+          name: event.name,
           stage: {
             name: stage.name,
             type: stage.type,
@@ -62,6 +64,9 @@ export function PlayerEvents({ player, translations }: PlayerEventsProps) {
     return results.sort((a, b) => b.year - a.year);
   }, [player]);
 
+  const hasMultipleNames = new Set(data.map((row) => row.name)).size > 1;
+  const hasMultipleCountries = new Set(data.map((row) => row.country)).size > 1;
+
   const columns = useMemo<ColumnDef<EventRow>[]>(
     () =>
       (
@@ -76,15 +81,20 @@ export function PlayerEvents({ player, translations }: PlayerEventsProps) {
             header: t('table.stage'),
             cell: (info) => getStageName(info.row.original.stage, translations),
           },
-          EVENT_CONFIG.showCountry && {
-            accessorKey: 'country',
-            header: t('table.country'),
-            cell: (info) => <CountryLink code={info.row.original.country} translations={translations} />,
+          hasMultipleNames && {
+            accessorKey: 'name',
+            header: t('table.name'),
           },
           {
             accessorKey: 'rank',
             header: t('table.rank'),
           },
+          EVENT_CONFIG.showCountry &&
+            hasMultipleCountries && {
+              accessorKey: 'country',
+              header: t('table.country'),
+              cell: (info) => <CountryLink code={info.row.original.country} translations={translations} />,
+            },
           {
             accessorKey: 'place',
             header: t('table.place'),
@@ -108,7 +118,7 @@ export function PlayerEvents({ player, translations }: PlayerEventsProps) {
           },
         ] as ColumnDef<EventRow>[]
       ).filter(Boolean),
-    [translations, t]
+    [translations, hasMultipleNames, hasMultipleCountries, t]
   );
 
   return (
