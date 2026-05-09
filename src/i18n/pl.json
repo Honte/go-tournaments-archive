@@ -43,7 +43,9 @@
     "goToWebsite": "Przejdź na stronę wydarzenia",
     "referee": "Sędzia",
     "awarded": "Medaliści",
-    "awardedIn": "Medaliści %{0}"
+    "awardedIn": "Medaliści %{0}",
+    "egd": "Profil EGD",
+    "goToEGD": "Zobacz profil gracza w bazie European Go Database"
   },
   "stage": {
     "details": "Szczegóły",

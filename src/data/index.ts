@@ -40,8 +40,9 @@ export async function getAllPlayersStats() {
 
 export async function getPlayerStats(playerId: string): Promise<ApiPlayerStats | undefined> {
   const player = stats.players[playerId];
+  const playerData = playersHandler.getPlayer(playerId);
 
-  if (!player) {
+  if (!player || !playerData) {
     return undefined;
   }
 
@@ -77,6 +78,7 @@ export async function getPlayerStats(playerId: string): Promise<ApiPlayerStats |
 
   return {
     id: player.id,
+    egd: playerData.egd,
     name: player.name,
     country: player.countries,
     medals: player.medals,

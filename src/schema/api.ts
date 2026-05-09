@@ -2,6 +2,7 @@ import type { Stage, StatsMedals, StatsPlayerGame } from '@/schema/data';
 
 export type ApiPlayerStats = {
   id: string;
+  egd?: number;
   name: string;
   medals: StatsMedals;
   categoriesMedals: Record<string, StatsMedals>;
