@@ -248,7 +248,7 @@ export function calculateStats(tournaments: Tournament[], playersHandler: Player
 
   function upsertPlayer(player: Player | string): StatsPlayer {
     const id = typeof player === 'string' ? player : player.id;
-    const playerData = playersHandler.getPlayer(id)!
+    const playerData = playersHandler.getPlayer(id)!;
 
     return (players[id] ||= {
       id,

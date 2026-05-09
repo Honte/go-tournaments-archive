@@ -9,7 +9,7 @@ export type PlayersHandler = ReturnType<typeof createPlayersHandler>;
 export type PlayerData = {
   id: string;
   egd?: number;
-  lastUsedName: string
+  lastUsedName: string;
   names: Set<string>;
   hashes: Set<string>;
 };
