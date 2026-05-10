@@ -32,6 +32,7 @@ export type TournamentItem = {
   year: number;
   location: string;
   country?: string;
+  hasSgfs?: boolean;
 };
 
 export type Stage = LeagueStage | LadderTableStage | FinalStage | RoundRobinTableStage;

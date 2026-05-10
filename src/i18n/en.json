@@ -16,6 +16,9 @@
     "countryStatsDescription": "All-time statistics of %{0} in all tournaments",
     "categoryStatsTitle": "%{0} - Stats",
     "categoryStatsDescription": "%{0} statistics",
+    "gamesListLink": "Game records",
+    "gamesListTitle": "Game records",
+    "gamesListDescription": "List of all games records from all tournaments",
     "lastUpdated": "Last updated: %{0}",
     "github": "Contribute on GitHub: %{0}"
   },
@@ -109,7 +112,9 @@
     "gameColor": "Color",
     "gameResult": "Result",
     "gameWon": "Won",
-    "sgfs": "Game records"
+    "sgfs": "Game records",
+    "black": "Black",
+    "white": "White"
   },
   "game": {
     "open": "View",
@@ -123,6 +128,7 @@
     "ai": "See the AI analysis of the game",
     "preview": "Board position at the end of game %{0}",
     "komi": "Komi",
+    "moves": "Moves",
     "prisoners": "Prisoners",
     "controls": {
       "first": "Go to start",

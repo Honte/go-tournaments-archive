@@ -1,4 +1,4 @@
-import type { Stage, StatsMedals, StatsPlayerGame } from '@/schema/data';
+import type { GameProps, Player, Stage, StatsMedals, StatsPlayerGame } from '@/schema/data';
 
 export type ApiPlayerStats = {
   id: string;
@@ -26,4 +26,14 @@ export type ApiPlayerResult = {
 export type ApiPlayerStage = Pick<Stage, 'name' | 'type'> & {
   place: number;
   games: StatsPlayerGame[];
+};
+
+export type ApiGameInfo = GameProps & {
+  tournament: number;
+  stage: number;
+  moves: number;
+  black: Player;
+  white: Player;
+  winner?: 'black' | 'white';
+  result?: string;
 };
