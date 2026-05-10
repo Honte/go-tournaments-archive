@@ -16,6 +16,9 @@
     "countryStatsDescription": "Statystyki kraju %{0} we wszystkich turniejach Go",
     "categoryStatsTitle": "%{0} - Statystyki",
     "categoryStatsDescription": "Statystyki %{0}",
+    "gamesListLink": "Lista zapisów gier",
+    "gamesListTitle": "Lista zapisów gier",
+    "gamesListDescription": "Lista zapisanych gier we wszystkich turniejach",
     "lastUpdated": "Ostatnia aktualizacja: %{0}",
     "github": "Zobacz na GitHub: %{0}"
   },
@@ -109,7 +112,9 @@
     "gameColor": "Kolor",
     "gameResult": "Wynik",
     "gameWon": "Wygrana",
-    "sgfs": "Zapisane gry"
+    "sgfs": "Zapisane gry",
+    "black": "Czarny",
+    "white": "Biały"
   },
   "game": {
     "open": "Otwórz",
@@ -123,6 +128,7 @@
     "ai": "Zobacz analizę AI",
     "preview": "Widok planszy na koniec gry %{0}",
     "komi": "Komi",
+    "moves": "Ruchów",
     "prisoners": "Jeńcy",
     "controls": {
       "first": "Cofnij na start",

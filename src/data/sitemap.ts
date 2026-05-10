@@ -44,6 +44,14 @@ export function getSitemap(tournaments: TournamentItem[], translations: Translat
     });
   }
 
+  if (tournaments.some((tournament) => tournament.hasSgfs)) {
+    main.push({
+      key: 'games',
+      href: `/${locale}/stats/games`,
+      label: t('site.gamesListLink'),
+    });
+  }
+
   groups.push({ key: 'main', links: main });
 
   if (EVENT_CONFIG.categories?.length) {

@@ -1,4 +1,4 @@
-import type { ApiPlayerStats } from '@/schema/api';
+import type { ApiGameInfo, ApiPlayerStats } from '@/schema/api';
 import type { StatsCountry } from '@/schema/data';
 import type { Locale, Translations } from '@/i18n/consts';
 import { Endpoints } from '@/libs/endpoints';
@@ -18,6 +18,10 @@ export function fetchCountryStats(code: string) {
 
 export function fetchSitemap(locale: Locale) {
   return get<NavigationGroup[]>(Endpoints.SITEMAP(locale));
+}
+
+export function fetchGames() {
+  return get<ApiGameInfo[]>(Endpoints.GAMES_WITH_SGFS());
 }
 
 async function get<T>(path: string) {

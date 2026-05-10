@@ -4,11 +4,14 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import fg from 'fast-glob';
 import type { NextRequest } from 'next/server';
+import { DEFAULT_LOCALE } from '@/i18n/locales';
+import { loadTranslations } from '@/i18n/server';
 import { generateJpg } from '@tools/jpg';
 import { generatePng } from '@tools/png';
 import { cleanSgf } from '@tools/sgf';
 import { generateSvg } from '@tools/svg';
-import { getGameDetails } from '@/data';
+import { getTournaments } from '@/data';
+import { loadGameSgfProps } from '@/data/sgfs';
 
 const THUMB_SIZE = 128;
 const SGF_DIR = `./events/${EVENT}/sgf`;
@@ -119,12 +122,14 @@ async function getSgf(file: string, raw = false) {
     return content;
   }
 
+  const translations = await loadTranslations(DEFAULT_LOCALE);
+  const tournaments = await getTournaments();
   const sgfPath = path.posix.join('/sgf', ...path.relative(SGF_DIR, file).split(path.sep));
-  const game = await getGameDetails(sgfPath);
+  const sgfProps = await loadGameSgfProps(tournaments, sgfPath, translations);
 
-  if (!game) {
+  if (!sgfProps) {
     throw new Error(`Could not find game for ${sgfPath}`);
   }
 
-  return cleanSgf(content, game);
+  return cleanSgf(content, sgfProps);
 }

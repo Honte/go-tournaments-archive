@@ -161,7 +161,7 @@ function AllPlayersStatsContent({ players, translations }: AllPlayersStatsConten
           },
         ] as ColumnDef<PlayerRow>[]
       ).filter(Boolean),
-    [t, translations]
+    [t, translations, hasSgfs]
   );
 
   return <StatsTable columns={columns} data={data} />;
