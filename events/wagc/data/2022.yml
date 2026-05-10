@@ -87,7 +87,6 @@ stages:
       - 25-34 25:B+8.5 round:6 sgf:2022/6-DolgorsurenBatmunkh-RamosJoseAntonioFelix.sgf
       - 25-38 25:B+58.5 round:4 sgf:2022/4-DolgorsurenBatmunkh-FengYangLim.sgf
       - 26-16 16:W+7.5 round:6 sgf:2022/6-HiroakiOkawa-BenMantle.sgf
-      - 26-25 26:B+R round:5 sgf:2022/5-HiroakiOkawa-DolgorsurenBatmunkh.sgf
       - 26-37 26:B+R round:3 sgf:2022/3-HiroakiOkawaMarcStoehr.sgf
       - 27-11 11:W+6.5 round:1 sgf:2022/1-LucmanBounoider-ShouKaiLee.sgf
       - 27-36 27:B+0 round:6 sgf:2022/6-LucmanBounoider-JulioSaquicCanil.sgf
