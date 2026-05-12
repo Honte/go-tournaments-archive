@@ -53,7 +53,7 @@ export default async function Edition(props: PageProps) {
 
   const { year, locale } = params;
 
-  if (!year.match(/^\d{4}$/)) {
+  if (!year.match(/^\d+$/)) {
     return notFound();
   }
 

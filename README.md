@@ -15,6 +15,8 @@ that define age or other categories.
 - [Polish Go Championships Archive](https://mp.go.art.pl) (`pgc`)
 - [Polish Youth Go Championships Archive](https://mpj.go.art.pl) (`pygc`)
 - [Polish Women's Go Championships Archive](https://mpk.go.art.pl) (`pwgc`)
+- [Polish Academic Go Championships Archive](https://amp.go.art.pl) (`pagc`)
+- [Korea Prime Minister Cup](https://kpmc.go.art.pl) (`kmpc`)
 
 ## Events
 
