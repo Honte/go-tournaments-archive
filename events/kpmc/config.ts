@@ -2,7 +2,7 @@ import { EventConfig } from '@event/schema';
 
 const EVENT_CONFIG: EventConfig = {
   id: 'wagc',
-  domain: '',
+  domain: 'https://kpmc.go.art.pl',
   locales: ['en', 'pl'],
   showCountry: true,
   showBestPlace: true,
