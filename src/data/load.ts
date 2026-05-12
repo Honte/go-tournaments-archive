@@ -71,6 +71,8 @@ export async function loadData() {
     });
   }
 
+  tournaments.sort((a, b) => a.year - b.year);
+
   return {
     tournaments,
     playersHandler,
