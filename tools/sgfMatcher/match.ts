@@ -1,4 +1,5 @@
 import { buildLocalGameId } from '@/libs/h9';
+import { hasSgfFilenameSpaces } from './sgf';
 import {
   type Color,
   type H9GameRecord,
@@ -9,7 +10,6 @@ import {
   UNKNOWN_PLACE,
 } from './types';
 import { flipColor, normalizePlayerName } from './utils';
-import { hasSgfFilenameSpaces } from './sgf';
 
 export type WinnerPart = {
   winnerPlace: number | typeof UNKNOWN_PLACE;

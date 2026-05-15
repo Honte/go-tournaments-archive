@@ -5,15 +5,21 @@ import fg from 'fast-glob';
 import { parseDocument } from 'yaml';
 import type { InputTournament, InputTournamentStage } from '@/schema/input';
 import { readCliParams } from '@tools/cli';
+import { createLogger } from '@tools/sgfMatcher/logger';
 import { printStageReport, printSummary } from './report';
 import { findSgfs } from './sgf';
 import { processStage } from './stage';
 import type { StageResult } from './types';
 import { updateYamlDoc } from './yaml';
 
-const { force, year: yearFilter } = readCliParams({
+const {
+  force,
+  year: yearFilter,
+  verbose,
+} = readCliParams({
   year: { type: 'string', short: 'y' },
   force: { type: 'boolean', default: false, short: 'f' },
+  verbose: { type: 'boolean', default: false, short: 'v' },
 });
 
 const DATA_DIR = `events/${EVENT}/data`;
@@ -34,15 +40,15 @@ for (const yamlPath of yamlFiles.sort()) {
     continue;
   }
 
+  const logger = createLogger(`=== ${EVENT.toUpperCase()} ${year} ===`);
   const yamlContent = await readFile(yamlPath, 'utf-8');
   const doc = parseDocument(yamlContent);
   const json = doc.toJSON() as InputTournament;
   const tournaments = json.stages.filter((s): s is InputTournamentStage => s.type === 'tournament');
 
-  console.log(`=== ${EVENT.toUpperCase()} ${year} ===`);
-
   if (!tournaments.length) {
-    console.log('No tournament stages found.\n');
+    logger.error('No tournament stages found.');
+    logger.print(verbose);
     continue;
   }
 
@@ -52,7 +58,7 @@ for (const yamlPath of yamlFiles.sort()) {
     const sgfPaths = await findSgfs(SGF_DIR, stage.dir ?? String(year));
 
     if (!sgfPaths.length) {
-      console.log('No sgf files found.\n');
+      logger.log('No sgf files found');
       continue;
     }
 
@@ -64,7 +70,7 @@ for (const yamlPath of yamlFiles.sort()) {
       force,
     });
 
-    printStageReport(stageResult);
+    printStageReport(logger, stageResult);
 
     yamlModified = updateYamlDoc(doc, json.stages.indexOf(stage), stageResult) || yamlModified;
 
@@ -74,15 +80,16 @@ for (const yamlPath of yamlFiles.sort()) {
       matched: stageResult.matchedEntries.length,
       unmatched: stageResult.unmatchedEntries.length,
       totalSgfs: stageResult.totalSgfs,
+      unmatchedEntries: stageResult.unmatchedEntries,
     });
   }
 
   if (yamlModified) {
     await writeFile(yamlPath, doc.toString({ lineWidth: 0 }), 'utf-8');
-    console.log(`Written to ${yamlPath}`);
+    logger.log(`Written to ${yamlPath}`);
   }
 
-  console.log();
+  logger.print(verbose);
 }
 
 printSummary(results);
