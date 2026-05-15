@@ -1,5 +1,6 @@
+import type { Logger } from '@tools/sgfMatcher/logger';
 import { buildUnmatchedString } from './entries';
-import { resolveNames } from './sgf';
+import { hasSgfFilenameSpaces, resolveNames } from './sgf';
 import type { ParsedGameEntry, SgfInfo, StageProcessResult, StageResult, UnmatchedEntry } from './types';
 import { normalizePlayerName } from './utils';
 
@@ -23,6 +24,10 @@ function buildReasons(sgf: SgfInfo, playerLookup: Map<string, number>): string[]
   const reasons: string[] = [];
   const names = resolveNames(sgf);
 
+  if (hasSgfFilenameSpaces(sgf.path)) {
+    reasons.push('filename contains spaces');
+  }
+
   if (names.blackName === null && names.whiteName === null) {
     reasons.push('no player names found');
   }
@@ -42,33 +47,41 @@ function buildReasons(sgf: SgfInfo, playerLookup: Map<string, number>): string[]
   return reasons.length > 0 ? reasons : ['no matching game'];
 }
 
-export function printStageReport(result: StageProcessResult): void {
-  console.log(`SGF files found: ${result.totalSgfs}`);
-  console.log(`Previously matched: ${result.previousEntries.length}`);
-  console.log(`Reused entries: ${result.reusedEntries.length}`);
-  console.log(`Newly matched: ${result.matchedEntries.length}`);
-  console.log(`Unmatched: ${result.unmatchedEntries.length}`);
+export function printStageReport(logger: Logger, result: StageProcessResult): void {
+  logger.log(`SGF files found: ${result.totalSgfs}`);
+  logger.log(`Previously matched: ${result.previousEntries.length}`);
+  logger.log(`Reused entries: ${result.reusedEntries.length}`);
+  logger.log(`Newly matched: ${result.matchedEntries.length}`);
+  logger.log(`Unmatched: ${result.unmatchedEntries.length}`, result.unmatchedEntries.length > 0);
 
   for (const { filename, reasons } of result.unmatchedEntries) {
-    console.log(` ✗ ${filename} — ${reasons.join(', ')}`);
+    logger.error(` ✗ ${filename} — ${reasons.join(', ')}`);
   }
 }
 
 export function printSummary(results: StageResult[]): void {
-  if (results.length > 1) {
-    let totalSgfs = 0;
-    let totalMatched = 0;
-    let totalUnmatched = 0;
-    let totalReused = 0;
-    for (const r of results) {
-      totalSgfs += r.totalSgfs;
-      totalMatched += r.matched;
-      totalUnmatched += r.unmatched;
-      totalReused += r.reused;
+  let totalSgfs = 0;
+  let totalMatched = 0;
+  let totalUnmatched = 0;
+  let totalReused = 0;
+
+  for (const r of results) {
+    totalSgfs += r.totalSgfs;
+    totalMatched += r.matched;
+    totalUnmatched += r.unmatched;
+    totalReused += r.reused;
+  }
+
+  console.log(`=== Summary ===`);
+  console.log(`Total: ${totalSgfs} SGFs, ${totalReused} reused, ${totalMatched} matched, ${totalUnmatched} unmatched`);
+
+  const unmatchedEntries = results.flatMap((r) => r.unmatchedEntries);
+
+  if (unmatchedEntries.length > 0) {
+    console.log('Unmatched games:');
+
+    for (const { filename, reasons } of unmatchedEntries) {
+      console.log(` ✗ ${filename} - ${reasons.join(', ')}`);
     }
-    console.log(`=== Summary ===`);
-    console.log(
-      `Total: ${totalSgfs} SGFs, ${totalReused} reused, ${totalMatched} matched, ${totalUnmatched} unmatched`
-    );
   }
 }

@@ -426,10 +426,16 @@ The matcher accepts:
 ```bash
 npm run sgf:match:pgc -- -y 2025
 npm run sgf:match:pgc -- -f
+npm run sgf:match:pgc -- -v
 ```
 
 - `-y` / `--year` limits matching to one year.
 - `-f` / `--force` overwrites existing `sgf:` props.
+- `-v` / `--verbose` prints per-stage matching details.
+
+By default, the matcher keeps output compact: it prints a total summary and then lists unmatched games with their
+reasons. Use `--verbose` when you need the full per-stage counts that include found, reused, newly matched, and unmatched
+SGFs.
 
 SGF previews are generated on demand by `src/app/sgf/[...path]/route.ts` and emitted during `next build` through
 `generateStaticParams`. There is no committed preview image build step. Enable output formats per event with

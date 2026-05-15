@@ -27,6 +27,10 @@ export async function loadSgfInfos(rootDir: string, sgfPaths: string[]) {
   return Promise.all(sgfPaths.map((p) => loadSgfInfo(rootDir, p)));
 }
 
+export function hasSgfFilenameSpaces(filename: string): boolean {
+  return /\s/.test(path.parse(filename).base);
+}
+
 async function loadSgfInfo(rootDir: string, sgfPath: string) {
   const content = await readFile(path.join(rootDir, sgfPath), 'utf-8');
 

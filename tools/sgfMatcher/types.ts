@@ -45,6 +45,7 @@ export type StageResult = {
   unmatched: number;
   totalSgfs: number;
   reused: number;
+  unmatchedEntries: UnmatchedEntry[];
 };
 
 export type UnmatchedEntry = {

@@ -1,4 +1,5 @@
 import { buildLocalGameId } from '@/libs/h9';
+import { hasSgfFilenameSpaces } from './sgf';
 import {
   type Color,
   type H9GameRecord,
@@ -27,6 +28,11 @@ export function matchSgfs(
   const unmatchedSgfs: SgfInfo[] = [];
 
   for (const sgf of sgfInfos) {
+    if (hasSgfFilenameSpaces(sgf.path)) {
+      unmatchedSgfs.push(sgf);
+      continue;
+    }
+
     if (sgf.corrupted && (force || !hasSgf(yamlGames, sgf.path))) {
       unmatchedSgfs.push(sgf);
       continue;

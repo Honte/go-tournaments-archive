@@ -34,7 +34,7 @@ stages:
       - 7-15 7:B+9.5 round:6 sgf:2001/6-YeeHsunWang-DianaKoszegi.sgf
       - 8-4 4:W+R round:7 sgf:2001/7-YuxiangLin-KeuntaeKo.sgf
       - 8-10 8:B+T round:8 sgf:2001/8-YuxiangLin-LaurentHeiser.sgf
-      - 8-16 8:B+R round:5 sgf:2001/5--YuxiangLin-MichielEijkhout.sgf
+      - 8-16 8:B+R round:5 sgf:2001/5-YuxiangLin-MichielEijkhout.sgf
       - 9-6 6:W+0.5 round:5 sgf:2001/5-FernandoAguilar-ZhiqiYu.sgf
       - 9-14 9:B+R round:8 sgf:2001/8-FernandoAguilar-AntoineRoche.sgf
       - 9-23 9:B+T round:3 sgf:2001/3-FernandoAguilar-ThomasHeshe.sgf
@@ -50,7 +50,7 @@ stages:
       - 15-32 15:B+R round:1 sgf:2001/1-DianaKoszegi-SupakitCharoenkul.sgf
       - 17-30 17:B+21.5 round:3 sgf:2001/3-DmytroYatsenko-HoangNamThang.sgf
       - 18-2 2:W+R round:1 sgf:2001/1-FranzHuettler-MorieiKanazawa.sgf
-      - 18-25 18:B+R round:5 sgf:2001/5-Franz Huettler-WoeiHawDjap.sgf Huettler-WoeiHawDjap.sgf Huettler-WoeiHawDjap.sgf Huettler-WoeiHawDjap.sgf Huettler-WoeiHawDjap.sgf
+      - 18-25 18:B+R round:5 sgf:2001/5-FranzHuettler-WoeiHawDjap.sgf Huettler-WoeiHawDjap.sgf Huettler-WoeiHawDjap.sgf Huettler-WoeiHawDjap.sgf Huettler-WoeiHawDjap.sgf Huettler-WoeiHawDjap.sgf
       - 21-15 15:W+5.5 round:5 sgf:2001/5-KrzysztofGiedrojc-DianaKoszegi.sgf
       - 21-22 21:B+R round:8 sgf:2001/8-KrzysztofGiedrojc-HarryTaari.sgf
       - 22-17 17:W+R round:6 sgf:2001/6-HarryTaari-DmytroYatsenko.sgf

@@ -3,6 +3,7 @@ import { describe, it } from 'node:test';
 import { parseDocument } from 'yaml';
 import type { H9Player } from '@/libs/h9';
 import { matchSgfs } from './match';
+import { buildUnmatchedEntries } from './report';
 import { normalizeSgfResult } from './sgf';
 import { buildPlayersMap } from './tournament';
 import type { SgfInfo } from './types';
@@ -142,6 +143,42 @@ describe('SGF matcher result handling', () => {
       matchedEntries: ['4-1 1:W+0.5 round:8 sgf:1995/8-SungkyunPark-HirataHironori.sgf'],
       unmatchedSgfs: [],
     });
+  });
+
+  it('treats SGF filenames with spaces as unmatched', () => {
+    const playersMap = buildPlayersMap([
+      makeH9Player({ place: 1, name: 'Black', surname: 'Player' }),
+      makeH9Player({ place: 2, name: 'White', surname: 'Player' }),
+    ]);
+    const gamesMap = new Map([
+      [
+        '1-2-1',
+        {
+          homePlace: 1,
+          awayPlace: 2,
+          round: 1,
+          winnerPlace: 1,
+          homeColor: 'black' as const,
+          winnerColor: 'black' as const,
+        },
+      ],
+    ]);
+    const sgf: SgfInfo = {
+      path: '2025/1-BlackPlayer-WhitePlayer copy.sgf',
+      metadata: { blackName: 'Black Player', whiteName: 'White Player' },
+      fromFilename: { blackName: 'BlackPlayer', whiteName: 'WhitePlayer copy' },
+      rawResult: 'B+R',
+      cleanResult: 'B+R',
+      resultIssue: null,
+      round: 1,
+      corrupted: false,
+    };
+
+    const result = matchSgfs([sgf], playersMap, gamesMap, new Map());
+    const unmatchedEntries = buildUnmatchedEntries(result.unmatchedSgfs, playersMap, new Map());
+
+    assert.deepEqual(result, { matchedEntries: [], unmatchedSgfs: [sgf] });
+    assert.deepEqual(unmatchedEntries[0]?.reasons, ['filename contains spaces']);
   });
 });
 
