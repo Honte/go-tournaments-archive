@@ -15,9 +15,78 @@ stages:
       - sosos
     findSharedPlaces: true
     games:
+      - 1-3 1:B+R round:5 sgf:1999/5-ChaeseongYu-PongilRi.sgf
+      - 1-4 1:B+R round:8 sgf:1999/8-ChaeseongYu-ChengjueiYu.sgf
+      - 1-16 1:B+R round:1 sgf:1999/1-ChaeseonYu-MatthewMacfadyen.sgf
+      - 1-27 1:B+R round:2 sgf:1999/2-ChaeseongYu-AlainWettach.sgf
       - 2-1 1:W+0.5 round:6 sgf:1999/6-HideyukiSakai-ChaeseongYu.sgf
       - 2-3 2:B+6.5 round:8 sgf:1999/8-HideyukiSakai-PongilRi.sgf
       - 2-5 2:B+R round:3 sgf:1999/3-HideyukiSakai-XinWei.sgf
+      - 2-12 2:B+R round:4 sgf:1999/4-HideyukiSakai-VictorChow.sgf
+      - 2-21 2:B+R round:7 sgf:1999/7-HideyukiSakai-WugeBriscoe.sgf
+      - 3-5 3:B+R round:7 sgf:1999/7-PongilRi-XinWei.sgf
+      - 3-6 3:B+8.5 round:3 sgf:1999/3-PongilRi-YingKan.sgf
+      - 3-25 3:B+R round:1 sgf:1999/1-PongilRi-ZoranMutabzija.sgf
+      - 4-2 2:W+R round:5 sgf:1999/5-ChengjueiYu-HideyukiSakai.sgf
+      - 4-6 4:B+R round:7 sgf:1999/7-ChengjueiYu-YingKan.sgf
       - 4-11 4:B+R round:2 sgf:1999/2-ChengjueiYu-SorinGherman.sgf
+      - 4-27 4:B+R round:6 sgf:1999/6-ChengjueiYu-AlainWettach.sgf
+      - 5-8 5:B+2.5 round:6 sgf:1999/6-XinWei-TedNing.sgf
+      - 6-9 6:B+R round:6 sgf:1999/6-YingKan-DianaKoszegi.sgf
+      - 6-14 6:B+1.5 round:8 sgf:1999/8-YingKan-ViktorBogdanov.sgf
+      - 7-1 1:W+R round:7 sgf:1999/7-YiguoSun-ChaeseongYu.sgf
+      - 7-4 4:W+3.5 round:4 sgf:1999/4-YiguoSun-ChengjueiYu.sgf
       - 7-8 7:B+12.5 round:3 sgf:1999/3-YiguoSun-TedNing.sgf
+      - 7-24 7:B+17.5 round:1 sgf:1999/1-YiguoSun-FaridBenMalek.sgf
+      - 7-39 7:B+R round:2 sgf:1999/2-YiguoSun-JuanJoseRivaud.sgf
+      - 8-10 8:B+R round:1 sgf:1999/1-TedNing-JieLinXia.sgf
+      - 9-1 1:W+R round:4 sgf:1999/4-DianaKoszegi-ChaeseongYu.sgf
+      - 9-13 9:B+8.5 round:8 sgf:1999/8-DianaKoszegi-ArkadijBogackyj.sgf
+      - 9-31 9:B+R round:3 sgf:1999/3-DianaKoszegi-OlliLounela.sgf
+      - 10-7 7:W+R round:8 sgf:1999/8-JieLinXia-YiguoSun.sgf
+      - 10-15 10:B+2.5 round:7 sgf:1999/7-JieLinXia-GillesvanEeden.sgf
+      - 11-7 7:W+R round:6 sgf:1999/6-SorinGherman-YiguoSun.sgf
+      - 11-13 13:W+37.5 round:7 sgf:1999/7-SorinGherman-ArkadijBogackyj.sgf
+      - 12-6 6:W+R round:5 sgf:1999/5-VictorChow-YingKan.sgf
+      - 12-8 8:W+9.5 round:8 sgf:1999/8-VictorChow-TedNing.sgf
+      - 14-3 3:W+7.5 round:6 sgf:1999/6-ViktorBogdanov-PongilRi.sgf
+      - 15-1 1:W+R round:3 sgf:1999/3-GillesvanEeden-ChaeseongYu.sgf
+      - 15-14 14:W+R round:5 sgf:1999/5-GillesvanEeden-ViktorBogdanov.sgf
+      - 17-28 17:B+18.5 round:3 sgf:1999/3-LeszekSoldan-JureKlemencic.sgf
+      - 17-40 17:B+R round:1 sgf:1999/1-LeszekSoldan-FedericoPareja.sgf
       - 18-16 16:W+R round:6 sgf:1999/6-HusdinAekasinghachai-MatthewMacfadyen.sgf
+      - 19-17 17:W+R round:6 sgf:1999/6-ChristophGerlach-LeszekSoldan.sgf
+      - 20-29 20:B+15.5 round:4 sgf:1999/4-EnzoPedrini-XaverGubas.sgf
+      - 21-9 9:W+R round:5 sgf:1999/5-WugeBriscoe-DianaKoszegi.sgf
+      - 21-12 12:W+T round:2 sgf:1999/2-WugeBriscoe-VictorChow.sgf
+      - 22-8 8:W+R round:7 sgf:1999/7-KasperHornbaek-TedNing.sgf
+      - 23-13 23:B+6.5 round:6 sgf:1999/6-VladimirDanek-ArkadijBogackyj.sgf
+      - 25-35 25:B+R round:5 sgf:1999/5-ZoranMutabzija-NoriyukiYamamoto.sgf
+      - 26-2 2:W+R round:1 sgf:1999/1-ColinGrierson-HideyukiSakai.sgf
+      - 26-18 18:W+15.5 round:3 sgf:1999/3-ColinGrierson-HusdinAekasinghachai.sgf
+      - 30-42 30:B+6.5 round:1 sgf:1999/1-RobertoIssacAlaluf-ChinHweeChua.sgf
+      - 32-44 32:B+5.5 round:4 sgf:1999/4-TrungTinTran-NoelMitchell.sgf
+      - 33-19 19:W+R round:2 sgf:1999/2-ErikEkholm-ChristophGerlach.sgf
+      - 34-38 34:B+R round:8 sgf:1999/8-BernhardScheid-FranciscoGarciadelaBanda.sgf
+      - 35-15 15:W+R round:1 sgf:1999/1-NoriyukiYamamoto-GillesvanEeden.sgf
+      - 36-23 23:W+R round:2 sgf:1999/2-MijodragStankovic-VladimirDanek.sgf
+      - 36-53 36:B+R round:7 sgf:1999/7-MijodragStankovic-MariodelRey.sgf
+      - 37-32 37:B+R round:5 sgf:1999/5-AndrejVolosov-TrungTinTran.sgf
+      - 37-48 37:B+2.5 round:2 sgf:1999/2-AndrejVolosov-JoseRaposo.sgf
+      - 38-14 14:W+7.5 round:3 sgf:1999/3-FranciscoGarciadelaBanda-ViktorBogdanov.sgf
+      - 39-47 39:B+14.5 round:4 sgf:1999/4-JuanJoseRivaud-PhilipNicolet.sgf
+      - 43-6 6:W+R round:2 sgf:1999/2-CheeWenChow-YingKan.sgf
+      - 44-20 20:W+R round:1 sgf:1999/1-NoelMitchell-EnzoPedrini.sgf
+      - 44-30 30:W+R round:8 sgf:1999/8-NoelMitchell-RobertoIssacAlaluf.sgf
+      - 45-31 31:W+R round:1 sgf:1999/1-RubenTellez-OlliLounela.sgf
+      - 45-51 45:B+9.5 round:8 sgf:1999/8-RubenTellez-VadelGonzalezFleitas.sgf
+      - 46-43 43:W+41.5 round:7 sgf:1999/7-ErtugAkkol-CheeWenChow.sgf
+      - 49-13 13:W+R round:1 sgf:1999/1-ArunSagar-ArkadijBogackyj.sgf
+      - 49-52 49:B+54.5 round:5 sgf:1999/5-ArunSagar-EdgardoCaceresEstrada.sgf
+      - 50-31 31:W+R round:2 sgf:1999/2-PaulSchmit-OlliLounela.sgf
+      - 50-34 34:W+41.5 round:4 sgf:1999/4-PaulSchmit-BernhardScheid.sgf
+      - 51-46 46:W+10.5 round:3 sgf:1999/3-VadelGonzalezFleitas-ErtugAkkol.sgf
+      - 52-22 22:W+R round:2 sgf:1999/2-EdgardoCaceresEstrada-KasperHornbaek.sgf
+      - 53-28 28:W+50.5 round:4 sgf:1999/4-MariodelRey-JureKlemencic.sgf
+      - 54-42 42:W+R round:4 sgf:1999/4-ManitraRazafindrabe-ChinHweeChua.sgf
+      - 55-41 41:W+R round:2 sgf:1999/2-MariaPuerta-WoeiHawDjap.sgf

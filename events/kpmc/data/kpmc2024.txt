@@ -31,7 +31,7 @@
 19 Song_He Kwee                        5d MY  xxxx  4    28   185  44+/w   4-/b    21+/b   34+/w   10-/w   15-/b   35+/w    |20462387
 20 Aksut Husrev                        4d TR  Ant   4    28   179  55+/w   13-/b   42+/w   15+/b   6-/w    8-/b    33+/w    |14649943
 21 Ruzicka Martin                      5d DE  DA    4    27   180  46+/b   5-/w    19-/w   43+/b   33+/b   24+/w   12-/w    |13037596
-22 Alimin Haidar                       2d BN  xxxx  4    26   176  1-/w    47+/b   25-/b   53+/w   34+/w   13-/b   38+/b    |20325129
+22 Haidar Alimin                       2d BN  xxxx  4    26   176  1-/w    47+/b   25-/b   53+/w   34+/w   13-/b   38+/b    |20325129
 23 Silfver Anton                       3d SE  Link  4    26   175  7-/b    49+/w   48+/b   12-/w   44+/b   27+/w   13-/w    |15933236
 24 Czernecki Cezary                    5d PL  Bial  4    25   180  50+/w   7-/w    38+/b   35+/w   11-/b   21-/b   34+/w    |14813139
 25 Tumelis Giedrius                    3d LT  Kaun  4    25   180  53+/b   16-/w   22+/w   13-/b   47+/w   38+/b   10-/b    |13813140

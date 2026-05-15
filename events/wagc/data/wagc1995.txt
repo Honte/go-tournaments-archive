@@ -4,7 +4,7 @@
 ; HA[h9]
 ; KM[5.5]
 ; CM[Shared Places 17-18]
-1	Hironori Hirata	7d	JP	xxx	7	7	42	319	16+	19+	5+	9+	7+	3-	6+	4+
+1	Hirata Hironori	7d	JP	xxx	7	7	42	319	16+	19+	5+	9+	7+	3-	6+	4+
 2	Shi Hongyi	7d	CN	xxx	7	7	41	300	27+	22+	13+	4-	12+	5+	3+	9+
 3	Kan Ying	7d	HK	xxx	6	6	44	313	12+	20+	8+	18+	4+	1+	2-	5-
 4	Park Sung-kyun	7d	KR	xxx	6	6	44	306	15+	21+	11+	2+	3-	8+	10+	1-
@@ -27,7 +27,7 @@
 21	Huettler Franz	4d	AT	xxx	4	4	34	262	36+	4-	10-	39+	30+	9-	26+	12-
 22	Kraszek Janusz	5d	PL	xxx	4	4	33	266	43+	2-	7-	27+	25+	13-	18-	32+
 23	Shaw Edmund	5d	UK	xxx	4	4	33	250	5-	12-	26+	38+	14-	35+	16-	36+
-24	Mai K	4d	SG	xxx	4	4	32	271	44+	32+	6-	16-	11+	18+	7-	15-
+24	Mai Kao-Jie	4d	SG	xxx	4	4	32	271	44+	32+	6-	16-	11+	18+	7-	15-
 25	Matoh Leon	5d	SI	xxx	4	4	32	251	9-	40+	29+	6-	22-	11-	35+	34+
 26	Chairasmisak Korsak	5d	TH	xxx	4	4	29	245	6-	10-	23-	43+	29+	32+	21-	40+
 27	Pons Joan	2d	ES	xxx	4	4	28	236	2-	14-	36+	22-	33-	43+	42+	31+

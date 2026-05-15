@@ -1,0 +1,16 @@
+website: https://roundsboard.com/tournaments/warszawska-liga-go-sezon-1
+stages:
+  - type: tournament
+    file: wgl_01_2024.txt
+    komi: 6.5    
+    scoringColumns:
+      - null
+      - wins
+      - mms
+      - sos
+      - sosos
+    breakers:
+      - mms
+      - sos
+      - sosos
+    findSharedPlaces: true

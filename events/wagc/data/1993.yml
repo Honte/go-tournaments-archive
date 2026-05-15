@@ -13,4 +13,5 @@ stages:
       - sodos
     findSharedPlaces: true
     games:
+      - 3-1 1:W+4.5 round:5 sgf:1993/5-HironoriHirata-YiguoSan.sgf
       - 5-1 1:W+5.5 round:4 sgf:1993/4-RonaldSchlemper-YiguoSun.sgf

@@ -16,5 +16,14 @@ stages:
     games:
       - 1-2 1:B+4.5 round:6 sgf:1996/6-JunLiu-HironoriHirata.sgf
       - 3-7 3:B+5.5 round:3 sgf:1996/3-YongmanYi-MyeongseonChoe.sgf
+      - 3-8 3:B+R round:7 sgf:1996/7-YongmanYi-ViktorBogdanov.sgf
       - 4-1 1:W+Time round:5 sgf:1996/5-YingKan-JunLiu.sgf
+      - 5-7 5:B+R round:4 sgf:1996/4-ThomasFaulKo-MyeongseonChoe.sgf
+      - 9-1 1 round:7 sgf:1996/7-ZhiqiYu-JunLiu.sgf
+      - 18-2 18:B+R round:2 sgf:1996/2-GillesvanEeden-HironoriHirata.sgf
+      - 18-4 4:W+R round:3 sgf:1996/3-GillesvanEeden-YingKan.sgf
       - 19-6 19:B+R round:4 sgf:1996/4-MatthewMacfadyen-HsiangJenHuang.sgf
+      - 19-10 19:B+6.5 round:2 sgf:1996/2-MatthewMacfadyen-FelixvonArnim.sgf
+      - 24-28 24:B+R round:6 sgf:1996/6-CesarSanchez-NoelMitchell.sgf
+      - 30-13 13:W+R round:7 sgf:1996/7-EduardoLopezHerrero-LaurentHeiser.sgf
+      - 35-9 9:W+R round:1 sgf:1996/1-KeeSoonTiong-ZhiqiYu.sgf

@@ -1,9 +1,12 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { parseDocument } from 'yaml';
+import type { H9Player } from '@/libs/h9';
 import { matchSgfs } from './match';
 import { normalizeSgfResult } from './sgf';
+import { buildPlayersMap } from './tournament';
 import type { SgfInfo } from './types';
+import { normalizePlayerName } from './utils';
 import { updateYamlDoc } from './yaml';
 
 describe('normalizeSgfResult', () => {
@@ -103,6 +106,60 @@ describe('SGF matcher result handling', () => {
 
     assert.deepEqual(result, { matchedEntries: [], unmatchedSgfs: [sgf] });
   });
+
+  it('matches SGF names written in H9 surname-name order', () => {
+    const playersMap = buildPlayersMap([
+      makeH9Player({ place: 1, name: 'Hironori', surname: 'Hirata' }),
+      makeH9Player({ place: 4, name: 'Sung-kyun', surname: 'Park' }),
+    ]);
+    const gamesMap = new Map([
+      [
+        '1-4-8',
+        {
+          homePlace: 4,
+          awayPlace: 1,
+          round: 8,
+          winnerPlace: 1,
+          homeColor: 'black' as const,
+          winnerColor: 'white' as const,
+        },
+      ],
+    ]);
+    const sgf: SgfInfo = {
+      path: '1995/8-SungkyunPark-HirataHironori.sgf',
+      metadata: { blackName: 'Sung kyun Park', whiteName: 'Hirata Hironori' },
+      fromFilename: { blackName: 'SungkyunPark', whiteName: 'HirataHironori' },
+      rawResult: 'W+0.5',
+      cleanResult: 'W+0.5',
+      resultIssue: null,
+      round: 8,
+      corrupted: false,
+    };
+
+    const result = matchSgfs([sgf], playersMap, gamesMap, new Map());
+
+    assert.deepEqual(result, {
+      matchedEntries: ['4-1 1:W+0.5 round:8 sgf:1995/8-SungkyunPark-HirataHironori.sgf'],
+      unmatchedSgfs: [],
+    });
+  });
+});
+
+describe('buildPlayersMap', () => {
+  it('does not overwrite primary names with reversed aliases', (t) => {
+    const warn = t.mock.method(console, 'warn', () => undefined);
+    const playersMap = buildPlayersMap([
+      makeH9Player({ place: 1, name: 'Alpha', surname: 'Beta' }),
+      makeH9Player({ place: 2, name: 'Beta', surname: 'Alpha' }),
+    ]);
+
+    assert.equal(playersMap.get(normalizePlayerName('Alpha Beta')), 1);
+    assert.equal(playersMap.get(normalizePlayerName('Beta Alpha')), 2);
+
+    const warnings = warn.mock.calls.map((call) => String(call.arguments[0]));
+    assert.equal(warnings.length, 2);
+    assert.ok(warnings.every((warning) => warning.includes('skipped normalized name alias')));
+  });
 });
 
 describe('updateYamlDoc', () => {
@@ -150,3 +207,16 @@ describe('updateYamlDoc', () => {
     assert.equal(changed, true);
   });
 });
+
+function makeH9Player({ place, name, surname }: { place: number; name: string; surname: string }): H9Player {
+  return {
+    place,
+    name,
+    surname,
+    rank: '1d',
+    country: 'XX',
+    club: 'xxx',
+    games: [],
+    scores: [],
+  };
+}

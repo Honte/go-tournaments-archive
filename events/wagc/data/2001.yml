@@ -16,6 +16,80 @@ stages:
     findSharedPlaces: true
     games:
       - 1-5 1:B+R round:7 sgf:2001/7-DaichunLi-AlexejLazarev.sgf
+      - 1-10 1:B+R round:3 sgf:2001/3-DaichunLi-LaurentHeiser.sgf
       - 2-1 1:W+1.5 round:6 sgf:2001/6-MorieiKanazawa-DaichunLi.sgf
       - 2-15 2:B+R round:3 sgf:2001/3-MorieiKanazawa-DianaKoszegi.sgf
+      - 3-2 2:W+R round:8 sgf:2001/8-DongMingLiu-MorieiKanazawa.sgf
+      - 3-6 3:B+7.5 round:6 sgf:2001/6-DongMingLiu-ZhiqiYu.sgf
+      - 3-16 3:B+2.5 round:3 sgf:2001/3-DongMingLiu-MichielEijkhout.sgf
+      - 3-17 3:B+R round:7 sgf:2001/7-DongMingLiu-DmytroYatsenko.sgf
       - 4-1 1:W+R round:8 sgf:2001/8-Keunt`aeKo-DaichunLi.sgf
+      - 4-11 4:B+R round:6 sgf:2001/6-KeuntaeKo-RadekNechanicky.sgf
+      - 4-33 4:B+R round:5 sgf:2001/5-KeuntaeKo-ChoonHuatLee.sgf
+      - 5-2 2:W+R round:5 sgf:2001/5-AlexejLazarev-MorieiKanazawa.sgf
+      - 6-8 6:B+1.5 round:3 sgf:2001/3-ZhiqiYu-YuxiangLin.sgf
+      - 7-1 1:W+4.5 round:5 sgf:2001/5-YeeHsunWang-DaichunLi.sgf
+      - 7-2 2:W+7.5 round:7 sgf:2001/7-YeeHsunWang-MorieiKanazawa.sgf
+      - 7-4 7:B+4.5 round:4 sgf:2001/4-YeeHsunWang-KeuntaeKo.sgf
+      - 7-15 7:B+9.5 round:6 sgf:2001/6-YeeHsunWang-DianaKoszegi.sgf
+      - 8-4 4:W+R round:7 sgf:2001/7-YuxiangLin-KeuntaeKo.sgf
+      - 8-10 8:B+T round:8 sgf:2001/8-YuxiangLin-LaurentHeiser.sgf
+      - 8-16 8:B+R round:5 sgf:2001/5--YuxiangLin-MichielEijkhout.sgf
+      - 9-6 6:W+0.5 round:5 sgf:2001/5-FernandoAguilar-ZhiqiYu.sgf
+      - 9-14 9:B+R round:8 sgf:2001/8-FernandoAguilar-AntoineRoche.sgf
+      - 9-23 9:B+T round:3 sgf:2001/3-FernandoAguilar-ThomasHeshe.sgf
+      - 10-13 13:W+R round:5 sgf:2001/5-LaurentHeiser-EdwardKim.sgf
+      - 12-6 6:W+R round:8 sgf:2001/8-GengYangCai-ZhiqiYu.sgf
+      - 12-18 12:B+R round:6 sgf:2001/6-GengYangCai-FranzHuettler.sgf
+      - 12-33 12:B+R round:2 sgf:2001/2-GengYangCai-ChoonHuatLee.sgf
+      - 13-8 8:W+4.5 round:6 sgf:2001/6-EdwardKim-YuxiangLin.sgf
+      - 13-19 19:W+R round:7 sgf:2001/7-EdwardKim-FranzJosefDickhut.sgf
+      - 13-31 13:B+R round:4 sgf:2001/4-EdwardKim-VelimirKuhar.sgf
+      - 14-2 2:W+R round:2 sgf:2001/2-AntoineRoche-MorieiKanazawa.sgf
+      - 15-12 12:W+R round:7 sgf:2001/7-DianaKoszegi-GengYangCai.sgf
+      - 15-32 15:B+R round:1 sgf:2001/1-DianaKoszegi-SupakitCharoenkul.sgf
+      - 17-30 17:B+21.5 round:3 sgf:2001/3-DmytroYatsenko-HoangNamThang.sgf
+      - 18-2 2:W+R round:1 sgf:2001/1-FranzHuettler-MorieiKanazawa.sgf
+      - 18-25 18:B+R round:5 sgf:2001/5-Franz Huettler-WoeiHawDjap.sgf Huettler-WoeiHawDjap.sgf Huettler-WoeiHawDjap.sgf Huettler-WoeiHawDjap.sgf Huettler-WoeiHawDjap.sgf
+      - 21-15 15:W+5.5 round:5 sgf:2001/5-KrzysztofGiedrojc-DianaKoszegi.sgf
+      - 21-22 21:B+R round:8 sgf:2001/8-KrzysztofGiedrojc-HarryTaari.sgf
+      - 22-17 17:W+R round:6 sgf:2001/6-HarryTaari-DmytroYatsenko.sgf
+      - 22-39 22:B+T round:3 sgf:2001/3-HarryTaari-DesmondCann.sgf
+      - 24-32 24:B+9.5 round:7 sgf:2001/7-PaalSannes-SupakitCharoenkul.sgf
+      - 25-53 25:B+R round:2 sgf:2001/2-WoeiHawDjap-DavitHarutyunyan.sgf
+      - 26-39 26:B+R round:6 sgf:2001/6-LeonidEntin-DesmondCann.sgf
+      - 27-29 29:W+R round:5 sgf:2001/5-JanBogaerts-SteveKim.sgf
+      - 29-20 20:W+19.5 round:2 sgf:2001/2-SteveKim-MihaiBisca.sgf
+      - 30-51 30:B+R round:1 sgf:2001/1-HoangNamThang-MandishSingh.sgf
+      - 31-55 31:B+R round:1 sgf:2001/1-VelimirKuhar-JoseTelesMenezes.sgf
+      - 32-2 2:W+R round:4 sgf:2001/4-SupakitCharoenkul-MorieiKanazawa.sgf
+      - 33-27 27:W+5.5 round:3 sgf:2001/3-ChoonHuatLee-JanBogaerts.sgf
+      - 34-46 34:B+9.5 round:2 sgf:2001/2-VesaLaatikainen-MarcoVajani.sgf
+      - 35-55 35:B+58.5 round:7 sgf:2001/7-CesarSanchez-JoseTelesMenezes.sgf
+      - 36-20 20:W+4.5 round:4 sgf:2001/4-TamarCefarin-MihaiBisca.sgf
+      - 36-48 36:B+37.5 round:1 sgf:2001/1-TamarCefarin-AbelRakotoarisoa.sgf
+      - 37-5 5:W+R round:2 sgf:2001/2-JuanJoseRivaud-AlexejLazarev.sgf
+      - 37-50 37:B+34.5 round:6 sgf:2001/6-JuanJoseRivaud-FernandoManriqueOchoa.sgf
+      - 38-11 11:W+R round:3 sgf:2001/3-FatihSulak-RadekNechanicky.sgf
+      - 40-52 40:B+R round:1 sgf:2001/1-CliveHunt-HectorPaizCastillo.sgf
+      - 41-38 38:W+4.5 round:2 sgf:2001/2-MiroslavKostolansky-FatihSulak.sgf
+      - 41-46 41:B+6.5 round:7 sgf:2001/7-MiroslavKostolansky-MarcoVajani.sgf
+      - 42-14 14:W+21.5 round:1 sgf:2001/1-PatricGrueter-AntoineRoche.sgf
+      - 43-23 23:W+R round:4 sgf:2001/4-AudrisKuras-ThomasHeshe.sgf
+      - 43-35 35:W+R round:1 sgf:2001/1-AudrisKuras-CesarSanchez.sgf
+      - 44-7 7:W+T round:2 sgf:2001/2-CristianLopez-YeeHsunWang.sgf
+      - 44-42 42:W+T round:7 sgf:2001/7-CristianLopez-PatricGrueter.sgf
+      - 45-28 28:W+R round:1 sgf:2001/1-HatimeAraki-MilosBojanic.sgf
+      - 45-48 45:B+R round:8 sgf:2001/8-HatimeAraki-AbelRakotoarisoa.sgf
+      - 46-40 40:W+9.5 round:4 sgf:2001/4-MarcoVajani-CliveHunt.sgf
+      - 47-24 24:W+R round:2 sgf:2001/2-BrianGallagher-PaalSannes.sgf
+      - 47-42 42:W+R round:6 sgf:2001/6-BrianGallagher-PatricGrueter.sgf
+      - 48-53 48:B+35.5 round:4 sgf:2001/4-AbelRakotoarisoa-DavitHarutyunyan.sgf
+      - 49-19 19:W+R round:2 sgf:2001/2-RafaelSantos-FranzJosefDickhut.sgf
+      - 49-28 28:W+R round:4 sgf:2001/4-RafaelSantos-MilosBojanic.sgf
+      - 50-52 50:B+R round:4 sgf:2001/4-FernandoManriqueOchoa-HectorPaiz.sgf
+      - 52-43 43:W+R round:8 sgf:2001/8-HectorPaizCastillo.sgf
+      - 54-26 26:W+26.5 round:1 sgf:2001/1-AlbertoKohatsu-LeonidEntin.sgf
+      - 54-37 37:W+41.5 round:4 sgf:2001/4-AlbertoKohatsu-JuanJoseRivaud.sgf
+      - 54-56 54:B+R round:5 sgf:2001/5-AlbertoKohatsu-IrwinHernandez.sgf
+      - 56-51 51:W+20.5 round:3 sgf:2001/3-IrwinHernandez-MandishSingh.sgf

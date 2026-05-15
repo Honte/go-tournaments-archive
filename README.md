@@ -30,6 +30,7 @@ Available event directories:
 | `pwgc`   | Polish Women Go Championships    | Locales `pl`, `en`                                                              |
 | `pagc`   | Polish Academic Go Championships | Locales `pl`, `en`                                                              |
 | `pygc`   | Polish Youth Go Championships    | Locales `pl`, `en`, category stats for `u21`, `u20`, `u18`, `u16`, `u15`, `u12` |
+| `wgl`    | Warsaw Go League                 | Locales `pl`, `en`                                                              |
 
 `EVENT` defaults to `pgc`. Event-specific config, translations, colors, logo, data, and SGF files live in
 `events/[event-id]/`.
