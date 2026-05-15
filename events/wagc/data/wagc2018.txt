@@ -46,7 +46,7 @@
 34 Prokop Jan                 6d CZ  SRic  4    30   264  21+     11-     4-      42-     57+     28-     55+     46+      |10433654
 35 Hertz Jeremie              2k LU  Lux   4    30   207  51-     22-     40+     37-     58+     39+     50+     21-      |14249851
 36 Shimada-Ramos Thiago       6d BR  XXXX  4    29   249  4-      32-     43-     45+     54+     31-     48+     47+      |15937152
-37 Tang Chan-Fai              4d MO  XXXX  4    28   258  14-     15-     29-     35+     61+     56+     32-     45+      |18486831
+37 Tang Chan-Fai              4d MO  XXXX  4    28   258  14-     15-     29-     35+     61+     56+     32-     45+      |18074408
 38 Suponev Alexandr           2d BY  XXXX  4    27   249  0+      44+     25-     33-     51+     50+     10-     22-      |12349205
 39 Guner Hakki_Burak          1d TR  Ank   4    26   214  61-     40+     17-     21-     59+     35-     58+     51+      |16733365
 40 Connell Andre              3d ZA  XXXX  4    22   218  44-     39-     35-     0+      45-     53+     59+     50+      |17362246

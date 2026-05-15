@@ -13,4 +13,10 @@ stages:
       - sos
       - sosos
       - sodos
-    findSharedPlaces: true  
+    findSharedPlaces: true
+    games:
+      - 3-1 1:W+R round:8 sgf:1994/8-CunWang-SatoshiHiraoka.sgf
+      - 4-2 2:W+19.5 round:4 sgf:1994/4-SehyunKim-ChunhsunChou.sgf
+      - 4-6 6:W+1.5 round:6 sgf:1994/6-SehyunKim-RobertMateescu.sgf
+      - 5-1 1:W+11.5 round:7 sgf:1994/7-JohnLee-SatoshiHiraoka.sgf
+      - 12-32 12:B+R round:2 sgf:1994/2-LaurentHeiser-EnzoPedrini.sgf

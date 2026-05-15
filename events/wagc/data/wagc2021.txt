@@ -29,7 +29,7 @@
 18 Degirmenci Ozgur           5d TR  Ist   2    47+     11-     6-      31+     26+     10-     5    3    29   11   18    |14713589
 19 Yeo Lucas_Chun_Teng        5d SG  xxxx  2    11-     43+     14-     28+     9-      26+     5    3    28   11   19    |17637246
 20 Mestrovic Stjepan          3d HR  VGor  1    30+     14-     40+     29+     17+     6-      5    4    27   16   20    |12649307
-21 Amaro Souza_Alexandre_de   5d BR  Braz  2    10-     41+     7-      24-     31+     36+     5    3    27   11   21    |19701451
+21 Amaro Souza_Alexandre_de   5d BR  Braz  2    10-     41+     7-      24-     31+     36+     5    3    27   11   21    |14301749
 22 Aguilar Fernando           7d AR  Sau   2    25-     15-     27+     32+     45+     12-     5    3    26   11   22    |12098713
 23 Yatsenko Dmytro            5d UA  Kyiv  2    5-      42+     13-     26-     27+     29+     5    3    26   11   22    |10286870
 24 Koleejan Chahine           5d NZ  xxxx  2    4-      34+     3-      21+     11-     16-     4    2    34   9    24    |17974671

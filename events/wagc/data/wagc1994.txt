@@ -3,7 +3,7 @@
 ; DT[1994-05-23,1994-05-26]
 ; HA[h9]
 ; KM[5.5]
-1	Satoshi Hiraoka	    6d	JP	xxx	8	8	42 318 42	22+	17+	7+	6+	18+	2+	5+	3+
+1	Hiraoka Satoshi	    6d	JP	xxx	8	8	42 318 42	22+	17+	7+	6+	18+	2+	5+	3+
 2	Chou Chun-hsun	    7d	TW	xxx	7	7	43 303 35	27+	19+	9+	4+	3+	1-	8+	12+
 3	Wang Cun	        7d	CN	xxx	6	6	43 305 28	25+	8+	29+	10+	2-	7+	6+	1-
 4	Kim Sehyun	        6d	KR	xxx	6	6	43 297 30	21+	15+	5+	2-	11+	6-	13+	10+

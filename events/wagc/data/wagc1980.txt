@@ -12,7 +12,7 @@
 6	Han Keun-seuk	5d	KR	xxx	3	3	31+	21+	3-	8+	5-	?
 7	Kim Kyung	7d	US	xxx	3	3	17+	10+	1-	5-	8+	?
 8	Schlemper Ronald	5d	NL	xxx	2	2	19+	20+	2-	6-	7-	?
-9	Wang Chun	7d	CN	xxx	5	5	29+	3-	17+	13+	12+	10+
+9	Wang Qun	7d	CN	xxx	5	5	29+	3-	17+	13+	12+	10+
 10	Lee Sang-choul	4d	KR	xxx	4	4	28+	7-	18+	14+	11+	9-
 11	Matsuda Takao	6d	JP	xxx	4	4	25+	5-	19+	15+	10-	12+
 12	Kang Seun-beum	5d	KR	xxx	3	3	5-	25+	20+	16+	9-	11-

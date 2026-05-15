@@ -2,9 +2,9 @@ stages:
   - type: tournament
     file: wagc1990.txt
     komi: 5.5
-    notes: 
-     en: German player had to leave after 1st round due to illness - all 0+ wins are formally against him     
-     pl: Gracz z niemiec musiał opuścić turniej po 1 rundzie z powodu choroby - wszystkie wygrane 0+ są formalnie przeciwko niemu
+    notes:
+      en: German player had to leave after 1st round due to illness - all 0+ wins are formally against him
+      pl: Gracz z niemiec musiał opuścić turniej po 1 rundzie z powodu choroby - wszystkie wygrane 0+ są formalnie przeciwko niemu
     scoringColumns:
       - wins
       - sos
@@ -16,3 +16,13 @@ stages:
       - sodos
       - direct
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:4 sgf:1990/4-HaoChang-GwanwookAnn.sgf
+      - 1-3 1:B+2.5 round:6 sgf:1990/6-HaoChang-HiroshiMiura.sgf
+      - 3-2 2:W+R round:7 sgf:1990/7-HiroshiMiura-GwanwookAnn.sgf
+      - 3-9 3:B+R round:5 sgf:1990/5-HiroshiMiura-ChalresHuh.sgf
+      - 5-8 8:W+4.5 round:2 sgf:1990/2-JyhhaoSu-FrankJanssen.sgf
+      - 6-4 4:W+R round:5 sgf:1990/5-YingKan-LaurentHeiser.sgf
+      - 6-10 6:B+R round:7 sgf:1990/7-YingKan-IgorDetkov.sgf
+      - 11-5 5:W+12.5 round:7 sgf:1990/7-HelmutHasibeder-JyhhaoSu.sgf
+      - 14-7 7:W+20.5 round:1 sgf:1990/1-ZoranMutabzija-SenfengWang.sgf
