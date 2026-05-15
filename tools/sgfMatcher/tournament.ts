@@ -7,16 +7,45 @@ export function buildPlayersMap(results: H9Player[]): Map<string, number> {
 
   for (const player of results) {
     const fullName = `${player.name} ${player.surname}`;
-    const normalized = normalizePlayerName(fullName);
-    if (lookup.has(normalized)) {
-      console.warn(
-        `  Warning: duplicate normalized name "${normalized}" (places ${lookup.get(normalized)} and ${player.place})`
-      );
-    }
-    lookup.set(normalized, player.place);
+    registerPrimaryName(lookup, fullName, player.place);
+  }
+
+  for (const player of results) {
+    const fullName = `${player.name} ${player.surname}`;
+    const reversedName = `${player.surname} ${player.name}`;
+    registerAliasName(lookup, reversedName, player.place, fullName);
   }
 
   return lookup;
+}
+
+function registerPrimaryName(lookup: Map<string, number>, name: string, place: number): void {
+  const normalized = normalizePlayerName(name);
+
+  if (lookup.has(normalized)) {
+    console.warn(
+      `  Warning: duplicate normalized name "${normalized}" (places ${lookup.get(normalized)} and ${place})`
+    );
+  }
+
+  lookup.set(normalized, place);
+}
+
+function registerAliasName(lookup: Map<string, number>, alias: string, place: number, primaryName: string): void {
+  const normalized = normalizePlayerName(alias);
+  const existingPlace = lookup.get(normalized);
+
+  if (existingPlace !== undefined) {
+    if (existingPlace !== place) {
+      console.warn(
+        `  Warning: skipped normalized name alias "${normalized}" for "${primaryName}" (places ${existingPlace} and ${place})`
+      );
+    }
+
+    return;
+  }
+
+  lookup.set(normalized, place);
 }
 
 export function buildGamesMap(results: H9Player[]): Map<string, H9GameRecord> {
