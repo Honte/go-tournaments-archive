@@ -1,0 +1,37 @@
+; TC[T240913B]
+; CL[A]
+; EV[Warszawska Liga Go - Sezon 3]
+; PC[PL, Warszawa]
+; DT[2024-09-13,2024-11-29]
+; HA[h9]
+; KM[6.5]
+; TM[82.5]
+; CM[ (submitted by kamyszyn)]
+;.
+ 1 Zuchowski Bartlomiej   1k PL  Wars  36   4    36   174 852  7+/w    2+/b    5+/w    3-/w    4+/b     |13862376
+ 2 Kielczykowski Adrian   1d PL  Wars  36   4    36   172 858  4+/w    1-/w    7+/b    6+/b    3+/w     |19725937
+ 3 Turkmen Onur           1k PL  Wars  35   3    35   174  841  5-/w    8+/b    10+/w   1+/b    2-/b     |16037538
+ 4 Psoda Jan              3k PL  Wars  34=  2    34   170  842  2-/b    0=      6+/w    8+/w    1-/w     |20198453
+ 5 Leszczynski Grzegorz   1d PL  Wars  35   2    34   168  840 3+/b    6+/w    1-/b    0=      0=       |14033734
+ 6 Garcia Pedro           3k ES  Teru  33   1    33   172  825  8+/w    5-/b    4-/b    2-/w    9-/w     |17062397
+ 7 Koziol Pawel           3k PL  Wars  34   1    33   167 814 1-/b    11+/b   2-/w    0=      0=       |13037431
+ 8 Przybycien Robert      3k PL  Wars  33   1    33   163  818 6-/b    3-/w    9-/w    4-/b    14+/w    |15850472
+ 9 Korczewski Lukasz      6k PL  Wars  33=  4    33   151 780  0=      12+/w   8+/b    14+/w   6+/b     |16274049
+10 Malyshev Serafym       2k UA  Khar  34   0    32   163  814  0=      0=      3-/b    0=      0=       |17925952
+11 Bronisz Wojciech       6k PL  Wars  31=  3    31   147 744  12+/b   7-/w    14+/b   0=      13+/w    |20598490
+12 Kupar Oleksandra       7k PL  Wars  29=  0    28   149  719  11-/w   9-/b    0=      0=      0=       |14674836
+13 Halas Konrad           8k PL  Wars  29   1    28   136 697 14-/w   0=      17+/b   0=      11-/b    |19613462
+14 Osinski Kazimierz      9k PL  Wars  27   1    27   151  727 13+/b   17-/w   11-/w   9-/b    8-/b     |12949123
+15 Delezuch Kamil        15k PL  Wars  25   5    25   116 56= 23+/b   16+/w   18+/b   21+/w   17+/w    |12701920
+16 Szopa Rysio           14k PL  Wars  25   4    25   115  575 22+/w   15-/b   21+/b   17+/w   20+/b    |20137458
+17 Wlodarczyk Jakub      12k PL  Wars  24   1    24   129  635  18-/w   14+/b   13-/w   16-/b   15-/b    |20437263
+18 Szopa Ryszard         14k PL  Wars  23   2    23   116  583  17+/b   21-/b   15-/w   20+/w   19-/w    |20125457
+19 Majewski Kenan        16k PL  Wars  23   4    23   108 517 24+/b   20-/w   23+/w   22+/w   18+/b    |20498643
+20 Hidalgo Augusto       15k VE  Wars  22   2    22   115  554 21-/w   19+/b   22+/b   18-/b   16-/w    |20633679
+21 Stozek Adam           15k PL  Wars  22   2    22   114  553 20+/b   18+/w   16-/w   15-/b   24-/b    |12750023
+22 Kucharczyk Michal     15k PL  Wars  22   2    22   101  508  16-/b   24+/w   20-/w   19-/b   27+/w    |20650674
+23 Szpura Maciej         15k PL  Wars  22=  2    22   94  476  15-/w   0=      19-/b   25+/w   26+/b    |20501492
+24 Busleika Aliaksei     19k PL  Wars  19   3    19   91   481  19-/w   22-/b   27+/b   26+/w   21+/w    |20649079
+25 Wiszowaty Andrzej     23k PL  Wars  14=  2    14   72   384  0=      27+/w   26-/b   23-/b   0+       |20449649
+26 Kobus Aleksander      25k PL  Wars  12   2    12   79   415  27-/b   0+      25+/w   24-/b   23-/w    |20750037
+27 Telega Mateusz        25k PL  Wars  12   2    12   78  421 26+/w   25-/b   24-/w   0+      22-/b    |20762038

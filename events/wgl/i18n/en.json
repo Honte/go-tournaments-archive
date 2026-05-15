@@ -1,0 +1,22 @@
+{
+  "site": {
+    "name": "Warsaw Go League Archive",
+    "eventName": "Warsaw Go League",
+    "acronym": "WGL",
+    "description": "Archive of all Warsaw Go League tournaments",
+    "yearDescription": "Results of WGL %{0}",
+    "allTimeStatsDescription": "All-time statistics of all Warsaw Go League participants",
+    "playerStatsDescription": "Participation statistics of %{0} in all Warsaw Go League events"
+  },
+  "details": {
+    "goToWebsite": "Go to PAGC %{0} website"
+  },
+  "winners": {
+    "title": "Medalists of Warsaw Go League",
+    "first": "Warsaw Go League Champion",
+	  "year": "Edition"	
+  },
+  "table": {
+	  "year": "Edition"
+  }
+}
