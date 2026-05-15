@@ -58,7 +58,7 @@
 47 Rakotoarisoa Mamy               2d MG  Ant   2    20   152  38-     20-     28-     44-     52+     48+     33-      |13949837
 48 Rodrigues_da_Cruz Renan_Pablo   1d BR  xxxx  2    20   143  11-     22-     39-     52+     40-     47-     54+      |20186342
 49 Jimenez_Izquierdo Enrique       1d ES  Pedr  2    19   163  29-     43+     46-     17-     13-     45-     56+      |17898419
-50 Vasquez_Albuja Edisson_Paul     3d EC  xxxx  2    18   145  56+     21-     27-     35-     41-     54+     39-      |20449429
+50 Vasquez_Albuja Edisson_Paul     3d EC  xxxx  2    18   145  56+     21-     27-     35-     41-     54+     39-      |19798460
 51 Azuaje Manuel                   1d VE  XXXX  2    18   134  37-     30-     52+     42-     43-     55+     36-      |14349753
 52 Wong Hui_Xin                    4k BN  xxxx  2    14   150  6-      44-     51-     48-     47-     56+     55+      |20450430
 53 Tseveenravdan Tugsbilegt        2d MN  Ulb   1    23   155  54+     12-     30-     19-     28-     42-     32-      |14749427

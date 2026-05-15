@@ -50,7 +50,7 @@
 40 Samper_Munoz Juan_Felipe        3d CO  xxxx  2    2    2    20   114  10-/b   19+/w   17-/b   45+/w   24-/w   28-/b    |16513794
 41 Christenson Anton               2d SE  Stoc  2    2    2    19   110  47+/b   14-/b   33+/w   15-/w   30-/b   29-/w    |16986156
 42 Guiamet Jaime                   1d AR  xxxx  2    2    2    19   107  52+/w   2-/w    39+/w   32-/b   26-/b   25-/b    |18986308
-43 Kina_Avalos Kenyi_Miguel        1d PE  xxxx  2    2    2    18   99   2-/b    33-/w   56+/b   19-/w   51+/b   35-/b    |18998309
+43 Kina_Avalos Kenyi_Miguel        1d PE  xxxx  2    2    2    18   99   2-/b    33-/w   56+/b   19-/w   51+/b   35-/b    |15225287
 44 Divissin Sergey                 4k KZ  10Pt  2    2    2    18   92   6-/b    52+/b   21-/w   39-/w   36-/w   55+/b    |16274423
 45 Lysiuk Dmytro                   3d UA  Kyiv  2    2    2    17   108  39+/b   13-/w   23-/w   40-/b   46+/w   37-/b    |10874435
 46 Chang Xin                       1d MY  xxxx  2    2    2    17   100  4-/w    17-/w   31-/b   57+/b   45-/b   52+/b    |17374368
@@ -61,7 +61,7 @@
 51 Praz Sylvain_Gasana             1d CH  Neu   2    2    2    13   100  54+/w   26-/b   32-/b   47-/w   43-/w   56+/b    |15650547
 52 Ramirez_Alvarez Carlos_Adrian   6k GT  xxxx  2    2    2    11   92   42-/b   44-/w   48-/w   59+/b   54+/b   46-/w    |18913312
 53 Hadjixenophontos Alexandros     5k CY  Nico  2    2    2    11   91   32-/b   55-/b   59+/w   48-/b   58+/w   38-/w    |13949265
-54 Ang Ho_Soon_.Winston.           1k BN  xxxx  2    2    2    10   70   51-/b   31-/w   0+      49-/b   52-/w   59+/w    |18937314
+54 Ang Ho_Soon_.Winston.           1k BN  xxxx  2    2    2    10   70   51-/b   31-/w   0+      49-/b   52-/w   59+/w    |16501925
 55 Gomes_da_Silva Thiago_Augusto   1d BR  xxxx  1    1    1    18   97   3-/b    53+/w   37-/w   35-/b   33-/w   44-/w    |18925137
 56 Gram Jannik                     1k DK  KGK   1    1    1    16   99   29-/w   11-/b   43-/w   50+/b   38-/b   51-/w    |16349025
 57 Ganbat Bold                     1k MN  03UU  1    1    1    15   81   14-/w   38-/w   19-/b   46-/w   50-/b   0+       |18674524
