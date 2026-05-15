@@ -9,6 +9,7 @@ import {
   UNKNOWN_PLACE,
 } from './types';
 import { flipColor, normalizePlayerName } from './utils';
+import { hasSgfFilenameSpaces } from './sgf';
 
 export type WinnerPart = {
   winnerPlace: number | typeof UNKNOWN_PLACE;
@@ -27,6 +28,11 @@ export function matchSgfs(
   const unmatchedSgfs: SgfInfo[] = [];
 
   for (const sgf of sgfInfos) {
+    if (hasSgfFilenameSpaces(sgf.path)) {
+      unmatchedSgfs.push(sgf);
+      continue;
+    }
+
     if (sgf.corrupted && (force || !hasSgf(yamlGames, sgf.path))) {
       unmatchedSgfs.push(sgf);
       continue;

@@ -1,5 +1,5 @@
 import { buildUnmatchedString } from './entries';
-import { resolveNames } from './sgf';
+import { hasSgfFilenameSpaces, resolveNames } from './sgf';
 import type { ParsedGameEntry, SgfInfo, StageProcessResult, StageResult, UnmatchedEntry } from './types';
 import { normalizePlayerName } from './utils';
 
@@ -22,6 +22,10 @@ function buildReasons(sgf: SgfInfo, playerLookup: Map<string, number>): string[]
 
   const reasons: string[] = [];
   const names = resolveNames(sgf);
+
+  if (hasSgfFilenameSpaces(sgf.path)) {
+    reasons.push('filename contains spaces');
+  }
 
   if (names.blackName === null && names.whiteName === null) {
     reasons.push('no player names found');
