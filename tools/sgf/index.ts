@@ -55,11 +55,20 @@ export class Sgf {
     for (const [prop, nextValue] of Object.entries(props)) {
       const current = this.root.data[prop] ?? [];
       const value = typeof nextValue === 'function' ? nextValue([...current]) : nextValue;
+      const result = [];
 
-      if (value === null) {
+      for (const item of Array.isArray(value) ? value : [value]) {
+        if (item === null || item === undefined) {
+          continue;
+        }
+
+        result.push(String(item));
+      }
+
+      if (result.length === 0) {
         delete this.root.data[prop];
       } else {
-        this.root.data[prop] = Array.isArray(value) ? value.map(String) : [String(value)];
+        this.root.data[prop] = result;
       }
     }
 
@@ -161,7 +170,7 @@ function stringifyNode(node: SgfNode): string {
   let result = ';';
 
   for (const [identifier, values] of Object.entries(node.data)) {
-    if (!/^[A-Z]+$/.test(identifier)) {
+    if (!/^[A-Z]+$/.test(identifier) || !values.length) {
       continue;
     }
 

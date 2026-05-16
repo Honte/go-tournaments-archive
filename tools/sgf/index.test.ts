@@ -112,7 +112,6 @@ describe('Sgf', () => {
       PW: ['White'],
       RE: ['B+R'],
       GC: ['one', 'two'],
-      ZZ: [],
     });
   });
 

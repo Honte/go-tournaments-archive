@@ -5,11 +5,11 @@ export type SgfNode = {
   data: Record<string, string[]>;
 };
 
+type SgfNodeDataValueType = string | number | undefined | null;
+
 export type SgfNodeDataValue =
-  | string
-  | string[]
-  | number
-  | null
-  | ((current: string[]) => string | number | string[] | null);
+  | SgfNodeDataValueType
+  | SgfNodeDataValueType[]
+  | ((current: string[]) => SgfNodeDataValueType | SgfNodeDataValueType[]);
 
 export type SgfNodeData = Record<string, SgfNodeDataValue>;
