@@ -123,6 +123,8 @@
     "time": "Won by time",
     "walkover": "Walkover",
     "sgf": "Download SGF",
+    "raw": "SGF (raw)",
+    "rawSgf": "Download raw SGF e.g. with comments",
     "ogs": "See the game's relay in the Online Go Server",
     "yt": "See the video broadcast of the game",
     "ai": "See the AI analysis of the game",
