@@ -30,6 +30,7 @@ stages:
       - 5-11 5:B+R round:7 sgf:2011/7-HironoriHirata-CholtitRattanasetyut.sgf
       - 5-22 5:B+R round:5 sgf:2011/5-HironoriHirata-RadekNechanicky.sgf
       - 5-26 5:B+R round:6 sgf:2011/6-HironoriHirata-JoanAlemanyFlos.sgf
+      - 6-13 6:B+R round:8 sgf:2011/8-JunFan-KamilChwedyna.sgf
       - 7-17 7:B+R round:8 sgf:2011/8-FranzJosefDickhut-MykhailoHalchenko.sgf
       - 7-30 7:B+R round:5 sgf:2011/5-FranzJosefDickhut-HusrevAksut.sgf
       - 8-3 3:W+R round:8 sgf:2011/8-TsungHanWu-EricLui.sgf
@@ -43,6 +44,8 @@ stages:
       - 12-9 9:W+21.5 round:7 sgf:2011/7-KhanhBinhDo-CornelBurzo.sgf
       - 12-11 11:W+9.5 round:6 sgf:2011/6-KhanhBinhDo-CholtitRattanasetyut.sgf
       - 12-29 12:B+R round:2 sgf:2011/2-KhanhBinhDo-ZoranMutabzija.sgf
+      - 13-23 13:B+4.5 round:7 sgf:2011/7-KamilChwedyna-XiangZhang.sgf
+      - 13-26 13:B+6.5 round:3 sgf:2011/3-KamilChwedyna-JoanAlemanyFlos.sgf
       - 14-13 13:W+R round:2 sgf:2011/2-ViktorLin-KamilChwedyna.sgf
       - 15-38 15:B+R round:6 sgf:2011/6-ChiHinChan-JanRamon.sgf
       - 16-19 16:B+R round:5 sgf:2011/5-AndriusPetrauskas-ZoltanFodi.sgf
@@ -74,6 +77,7 @@ stages:
       - 35-38 38:W+R round:1 sgf:2011/1-MiroslavSmid-JanRamon.sgf
       - 35-45 35:B+R round:7 sgf:2011/7-MiroslavSmid-NevilleSmythe.sgf
       - 36-39 39:W+R round:1 sgf:2011/1-JamesHutchinson-GregorButala.sgf
+      - 38-13 13:W+27.5 round:4 sgf:2011/4-JanRamon-KamilChwedyna.sgf
       - 39-3 39:B+R round:3 sgf:2011/3-GregorButala-EricLui.sgf
       - 40-35 35:W+R round:4 sgf:2011/4-AlexandrSuponev-MiroslavSmid.sgf
       - 41-34 34:W+14.5 round:4 sgf:2011/4-SantiagoEspinosaUribe-LorenzTrippel.sgf
