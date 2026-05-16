@@ -1,0 +1,637 @@
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[5400]OT[1x60 byo-yomi]
+PW[Michał Bażyński]PB[Tomasz Ślązok]WR[1d]BR[4d]DT[2006-11-10]EV[Mistrzostwa Polski w Go 2006]RO[3]PC[Wisła]
+;B[pd]C[maciek [1d\]: czesc
+]
+;W[dp]
+;B[pp]
+;W[dc]
+;B[de]
+;W[ee]C[MP2006 [-\]: witamy :-)
+]
+;B[ef]
+;W[fe]C[leszczyn [?\]: d16-e17-d11-c17 jedno z mozliwych joseki 
+maciek [1d\]: d13 d16 c15 k16 drugie mozliwe;)
+maciek [1d\]: ale po e17 to jest duuuuuzo mozliwosci;)
+]
+;B[dd]C[MP2006 [-\]: starannie pachi
+]
+;W[ec]C[maciek [1d\]: pachi?
+maciek [1d\]: c17 najmocniejszy
+]
+;B[dg]
+;W[cc]C[MP2006 [-\]: buuuu
+]
+;B[cn]
+;W[fq]
+;B[cp]
+;W[cq]
+;B[bq]
+;W[co]
+;B[bp]
+;W[do]
+;B[bo]
+;W[dn]
+;B[cm]
+;W[cr]
+;B[dm]
+;W[ff]
+;B[fg]
+;W[cf]
+;B[df]
+;W[gg]C[maciek [1d\]: ile dan ma Michał Bazynski?
+leszczyn [?\]: 4
+]
+;B[gh]
+;W[fh]
+;B[eg]
+;W[hg]
+;B[fi]
+;W[nc]
+;B[qf]
+;W[kd]
+;B[bd]
+;W[hh]C[maciek [1d\]: b16 duze ale to chyba yose
+]
+;B[eh]
+;W[nq]
+;B[pn]C[leszczyn [?\]: tez tak mysle...
+maciek [1d\]: n3 bym gral
+maciek [1d\]: i nad g4 myslalem
+]
+;W[jp]
+;B[kf]C[maciek [1d\]: l14 tez bym nie gral;)
+]
+;W[ne]C[Bankowy13 [6k\]: sorki jaka siłe ma czarny
+leszczyn [?\]: 1 dan
+maciek [1d\]: 1d?
+Bankowy13 [6k\]: dz
+]
+;B[ng]C[maciek [1d\]: o13 za to bym gral;DD
+maciek [1d\]: wyglada pieknie
+maciek [1d\]: r8?
+text: KTO był białym???
+text: teraz pisze ze Michał
+text: przedtem było odwrotnie
+maciek [1d\]: nieee
+maciek [1d\]: bialy byl michal
+text: i wygrał +2,5 ??
+text: tak czy inaczej biały wygrał fartem
+]
+;W[pi]C[bin7674 [9d?\]: Hi
+maciek [1d\]: hello
+MP2006 [-\]: welcome Seok-bin
+]
+;B[pk]C[bin7674 [9d?\]: Oh Ela is comming..i will ask her about this game comment
+]
+;W[pg]C[jurek [1d?\]: cześć:)
+]
+;B[pf]
+;W[og]C[bin7674 [9d?\]: b is much better than w
+]
+;B[of]C[vergi: czesc
+]
+;W[nf]C[copyright [1d\]: ktos tu zginie
+copyright [1d\]: yose nie bedzie
+leszczyn [?\]: o12?
+]
+;B[nh]C[finland [1d\]: their ranks?
+MP2006 [-\]: w is 4d, b is 1d
+finland [1d\]: ok
+finland [1d\]: thx:)
+]
+;W[oj]C[leszczyn [?\]: mp2006: pisze przy nazwiskach ranking od razu, nie trzeba bedzie ludziom co chwila odpowiadac
+leszczyn [?\]: *pisz
+leszczyn [?\]: n10?
+copyright [1d\]: o11
+]
+;B[oi]
+;W[oh]
+;B[ni]
+;W[pj]
+;B[qg]
+(;W[ph])
+(;W[pl]C[finland [1d\]: huh
+finland [1d\]: an undo?
+]
+;B[qk]C[MP2006 [-\]: my mistake
+bin7674 [9d?\]: you should teaching them what is atari...
+]
+;W[ok]
+;B[ql]C[bin7674 [9d?\]: very stupid..
+]
+;W[ph]C[salmon [5k\]: wydaje mi sie cz czaarny ma przechlapane teraz?
+MP2006 [-\]: in round 1 bazik missed an atari in yose
+]
+;B[ji]
+;W[pm]
+;B[qm]
+;W[hj]
+;B[nl]
+;W[mk]
+;B[mj]C[finland [1d\]: hi bin
+finland [1d\]: was it fun in finland  ?
+]
+;W[nk]C[knigt1b: p8 ?
+bin7674 [9d?\]: Hi...yes i love there
+finland [1d\]: :)
+knigt1b: there in p8 ?
+]
+;B[lk]C[knigt1b: :)
+]
+;W[ll]
+;B[kk]
+;W[nm]
+;B[kl]
+;W[lm]
+;B[jd]
+;W[je]
+;B[ke]
+;W[kc]
+;B[if]
+;W[id]
+;B[ie]
+;W[jc]
+;B[ge]
+;W[gf]
+;B[hd]
+;W[gd]
+;B[ic]
+;W[jd]
+;B[he]
+;W[gc]
+;B[hc]
+;W[jg]
+;B[jf]
+;W[jh]C[Bankowy13 [6k\]: przepraszam a co sie dzieje w innych partiach
+MP2006 [-\]: gie z fiszem niszcza sobie nawzajem terytorium
+MP2006 [-\]: Leszek z CelePa graja fuseki/wczesny chuban
+MP2006 [-\]: (na zmiane)
+MP2006 [-\]: kamyk z Koichi robia trudna walke o ksztalt
+chrpa [1k\]: to jest mistrovstvo polske ?
+MP2006 [-\]: tzn. maja obaj slabe grupy, ale nie chca ich w ej chwili atakowac tylko usiluja wzmocnic je i wyjsc w sente
+chrpa [1k\]: tak :), czitale info
+leszczyn [?\]: nexo ma klopoty.....
+]
+;B[ld]
+;W[lc]
+;B[md]
+;W[nd]
+;B[mf]
+;W[pb]
+;B[mc]
+;W[mb]
+;B[jb]C[leszczyn [?\]: a moze to nie nexo ;-)
+TheStudent [5k?\]: czy ja wiem, wychodzi do centrum a to bazik bedzie musial sobie w rogu robic oczy
+MP2006 [-\]: czarny? to nexo... bialy? to nie nexo...
+]
+;W[kb]
+;B[ka]
+;W[lb]
+;B[qb]C[MP2006 [-\]: ciekawe by bylo jakby bialy zignorowal k18 i zagral r17
+TheStudent [5k?\]: chrpa: tak to mistrzostwa Polski
+MP2006 [-\]: ale moglo by byc wystarczajaco duze dla czarnego
+TheStudent [5k?\]: tez sie zastanawialem
+]
+;W[le]
+;B[me]
+;W[ib]
+;B[ia]
+;W[ja]
+;B[ob]C[TheStudent [5k?\]: nexo przegra to ko ?
+leszczyn [?\]: dla nexa to jest hanami ko
+TheStudent [5k?\]: a nie dla bazika? kurde w ktora strone to dziala ? :D
+leszczyn [?\]: moze nie hanami ale na pewno "lzejsze" niz dla bazika
+MP2006 [-\]: no niezupelnie - jak je przegra to ala jego grupa jest taka sobie
+MP2006 [-\]: (k12, k13 boli)
+MP2006 [-\]: a wiecej lokalnych grozb to juz nie ma... moze jeszcze j13
+MP2006 [-\]: z drugiej strony bialy tez nie bardzo ma grozby (h18 jest za DUZY minus)
+]
+;W[nb]
+;B[jb]C[TheStudent [5k?\]: no to zobaczymy co wymyśli 
+]
+;W[oc]C[MP2006 [-\]: bylo sobie zycie...
+]
+;B[hb]C[TheStudent [5k?\]: ale w gote ?
+]
+;W[oa]C[MP2006 [-\]: bylo sobie zycie w gote... ale grozi r17
+]
+;B[qc]C[salmon [5k\]: nexo wyszedl lepiej?
+TheStudent [5k?\]: r17 duze, ale.... juz niewazne :P
+MP2006 [-\]: nexo wyszedl dosyc rewelacyjnie
+MP2006 [-\]: to m15 mialo chyba dac bialym grozby? ale w efekcie dalo tylko czarnym oko
+MP2006 [-\]: i chyba tylko dzieki m15 p18 bylo grozba...
+Bankowy13 [6k\]: 13n to nie była fajna grozba
+MP2006 [-\]: grozba jak grozba, teraz bazik pewnie i bez grozby tam zagra
+TheStudent [5k?\]: chyba wolałbym być czarnym
+]
+;W[ci]C[MP2006 [-\]: tzw. do-and-die move
+]
+;B[bh]
+;W[be]
+;B[cg]C[TheStudent [5k?\]: biały troche zyska, ale w gote ?
+TheStudent [5k?\]: pewnie znowu sie myle ;P
+MP2006 [-\]: bialy juz zyskal i teraz tenuki
+]
+;W[ej]C[MP2006 [-\]: zyskal, bo w yose tu wroci
+MP2006 [-\]: (albo czarny tu wroci a bialy dostanie sente)
+TheStudent [5k?\]: sytuacja win-win :>
+TheStudent [5k?\]: o ile dojdzie do yose
+]
+;B[cj]
+;W[ck]C[leszczyn [?\]: nexo jakos dziwnie tu pogral nie?
+MP2006 [-\]: usiluje grac wyjatkowo bezpiecznie
+leszczyn [?\]: ale nie ma az tak duzej przewagi wcale....
+MP2006 [-\]: moze zbyt bezpiecznie, bo az takiej wielkiej przewagi nie ma
+]
+;B[em]C[yocker [?\]: dokładnie, powinien zaatakowac z drugiej strony ten bialy kamien c11
+leszczyn [?\]: ela jak zawsze pomocna :-)
+bin7674 [9d?\]: Ela told me Black start crazy
+]
+;W[li]
+;B[fj]
+;W[fk]C[maciek [1d\]: czesc ponownie
+]
+;B[fl]C[maciek [1d\]: no zeby w Krakowie prad wylaczyc!...
+]
+;W[lg]C[maciek [1d\]: i to podczas mistrzostw polski w go
+]
+;B[lf]C[MP2006 [-\]: moim zdaniem Krakow jest znacznie lepszym miejscem do wylaczenia pradu podczas Mistrzostw Polski niz np. Wisla...
+]
+;W[mg]C[maciek [1d\]: :)
+leszczyn [?\]: h7?
+bin7674 [9d?\]: Ela said B group look so sad
+TheStudent [5k?\]: o rany zignorował m11 ? to bylo rzosadne ?
+TheStudent [5k?\]: *rozsądne
+MP2006 [-\]: a gdzie powinien byl odpowiedziec na m11?
+]
+;B[gk]C[TheStudent [5k?\]: no w sumie 
+]
+;W[il]
+;B[pr]C[leszczyn [?\]: jak czarny nie wyciagnie tej grupy to przegra....
+DarkHaze [-\]: no dziwnie to zaczyna wygladac 
+]
+;W[no]C[maciek [1d\]: czarnego j9?
+MP2006 [-\]: widze oczami duszy wielka inwazje 'o wszystko'
+leszczyn [?\]: gdzie?
+MP2006 [-\]: na innych deskach: kamyk usiluje mordowac Koichiego, ale raczej bez wiekszych szans na powodzenie
+]
+;B[hm]
+;W[im]
+;B[ho]C[MP2006 [-\]: CelePa z Leskiem tluka sie w strefie wplywow CelePy
+bin7674 [9d?\]: Ela said this game still good for b
+MP2006 [-\]: Leszek wyglada jakby mial calkiem sporo slabych grup
+TheStudent [5k?\]: może młode wilki zaczną dzisiaj mocniej gryźć
+MP2006 [-\]: gie prowadzi intensywne operacje w moyo fisza
+maciek [1d\]: Ela ma racje;)
+yocker [?\]: :-)
+leszczyn [?\]: nie wiem jak seok to liczy ze mu wychodzi lepiej dla czarnego....
+DarkHaze [-\]: ja tez :)
+DarkHaze [-\]: moze gdzie jakies laczenie jest dla L9
+DarkHaze [-\]: i spolki :)
+MP2006 [-\]: czarny ma wszedzie pewny teren, bialy ma wszedzie otwarty
+maciek [1d\]: j9!!!
+areal [5k?\]: albo polaczy, albo zredukuje
+maciek [1d\]: tylko trzeba postraszyc wjazdem na dol
+MP2006 [-\]: w yose czarny nadrobi BARDZO duzo
+maciek [1d\]: i j7 i j8 do odciecia;)!
+DarkHaze [-\]: tia :)
+DarkHaze [-\]: a bazik bedzie w miedzy czasie tenuki gral :)
+MP2006 [-\]: (na przyklad, w lewym gornym rogu yose czarnego to b17, nie c16)
+maciek [1d\]: o2 ogromne
+MP2006 [-\]: k5 tez spore
+DarkHaze [-\]: ogromne ale nie na 40 punktow
+areal [5k?\]: nie mozna miec wszystkiego
+MP2006 [-\]: te 40 punktow to sie se cos po*.*
+DarkHaze [-\]: nie tak na oko to az tak zle mu nie poszlo
+maciek [1d\]: policz
+DarkHaze [-\]: nie zaznaczyl, zadnej grupy na odwrot
+maciek [1d\]: czarny jest ok
+TheStudent [5k?\]: se daje za duzo bialemu na dole
+TheStudent [5k?\]: zdecydowanie
+MP2006 [-\]: prawde mowiac jest okolo rownosci
+DarkHaze [-\]: fakt jak sie samemu policzy inaczej wychodzi :)
+MP2006 [-\]: czarny ma ponad 70 punktow
+areal [5k?\]: z prawej tez bez sensu nalicza punkty bialemu i na gorze z lewej...
+leszczyn [?\]: nexo jest dobry w yose
+leszczyn [?\]: moze wygrac
+MP2006 [-\]: wiec to raczej bialy sie musi niezle w yose powysilac zeby z tego zrobic partie go
+DarkHaze [-\]: fakt , cos w tym jest
+]
+;W[io]C[maciek [1d\]: nie mowiac ze nexo wyciagnie te w srodkku;)
+maciek [1d\]: albo wjedzie w dol;)
+MP2006 [-\]: juz nie wyciagnie,ale dol ucierpi
+maciek [1d\]: wlasnie;)
+text: teraz to czarny ma spoko redukcje
+DarkHaze [-\]: to teraz juz bialemu cieezko bedzie
+leszczyn [?\]: h4 only move?
+DarkHaze [-\]: nie wiem czy only
+maciek [1d\]: h3 chyba nawet;)
+sonicyouth [6k\]: na razie se pokazuje w+40.....
+DarkHaze [-\]: ale wyglada dobrze :D
+DarkHaze [-\]: h3 bym nie ryzykowal
+]
+;B[gp]C[maciek [1d\]: to nie ryzyko;)
+MP2006 [-\]: a co wlasciwie by bialy odpowiedzial?
+leszczyn [?\]: nie trafilismy
+DarkHaze [-\]: tiak , wiem maciek jak Ty nie ryzykujesz ;P
+MP2006 [-\]: (tak sie pytam, towarzysko)
+DarkHaze [-\]: ta pytanie co ma teraz odpowiedziec :)
+TheStudent [5k?\]: ma wybór
+TheStudent [5k?\]: biały nie bardzo
+]
+(;W[hr]C[TheStudent [5k?\]: ups, nie przewinięta dyskusja
+])
+(;W[ir]C[maciek [1d\]: tu?:)
+areal [5k?\]: teraz tenuki :)
+DarkHaze [-\]: powaznie ?
+]
+;B[nr]C[TheStudent [5k?\]: se zmienił decyzję o 20 punktów
+maciek [1d\]: g3...
+MP2006 [-\]: i dalej klamie (w lewym gornym, na prawej bandzie,..)
+maciek [1d\]: jesli bialy g2
+maciek [1d\]: f2!!
+maciek [1d\]: ?
+TheStudent [5k?\]: mm jak tak dalej pójdzie to biały będzie miał w zasadzie tylko centrum i trochę dołu ;)
+]
+;W[mr]
+;B[or]C[salmon [5k\]: i o to chodzi :)
+TheStudent [5k?\]: jak na pozostałych dechach ?
+text: jak czarny zaatakuje D4 i ferajne to ledwo to moze przezyc...
+adalan [2k\]: i jeszcze b17 czarnego czeka
+quasigoose [-\]: polaczone
+sonicyouth [6k\]: w s11 duze
+text: S11 nie dziala
+MP2006 [-\]: kamyk zrobil sciane i usiluje brac male centrum
+MP2006 [-\]: Leszek czyms przezyl a czyms umarl
+MP2006 [-\]: gie zrezygnowal z przezywania w moyo i liczy na teren co go ma wszedzie indziej
+MP2006 [-\]: d4 sa polaczone, o jakim ataku mowisz?
+maciek [1d\]: polaczone?
+maciek [1d\]: czarny g3
+MP2006 [-\]: a jak chcesz uciac?
+maciek [1d\]: g3
+MP2006 [-\]: g2
+maciek [1d\]: f2
+Bankowy13 [6k\]: ile czasu im jeszcze zostało
+MP2006 [-\]: e2
+DarkHaze [-\]: maciek niby nie do konca
+maciek [1d\]: atari
+MP2006 [-\]: bije
+maciek [1d\]: i h1;)
+text: D4 atakujemy w H2
+TheStudent [5k?\]: i h2 atari :P
+text: nie są połączone
+quasigoose [-\]: what Ela thinks about the score ? Who is winning? 
+DarkHaze [-\]: da sie przeciac
+maciek [1d\]: a moze nawet zeby nie dac ponnuki
+MP2006 [-\]: Ela is not here
+maciek [1d\]: po g2 zagrac h2
+maciek [1d\]: a zreszta
+maciek [1d\]: po co to ciac;)
+DarkHaze [-\]: nie wychodzi to ciecie tak super
+TheStudent [5k?\]: Ela is back
+DarkHaze [-\]: bo bieresz D4
+MP2006 [-\]: na razie to ciekawe jest czy p2 sente
+maciek [1d\]: g2
+DarkHaze [-\]: a oddajesz pare kamyszkow
+DarkHaze [-\]: *myczkow :)
+quasigoose [-\]: ciece jest kompletnie nie praktyczne...
+DarkHaze [-\]: moze byc na zero, albo i maly minus
+yocker [?\]: p2 was suck...b shoudl play p3
+MP2006 [-\]: jesli p2 sente to dobre (po p3 bialy ma o1)
+pattop [7k\]: o chyba coś przegapiłem :P
+MP2006 [-\]: jesli gote to oczywiscie p3 lepsze
+quasigoose [-\]: snete o tyle zeB zagra m2
+maciek [1d\]: po p3 bialy nie bardzo moze grac o1
+maciek [1d\]: bo o4
+MP2006 [-\]: wymiana i bialy ma aji w r3
+maciek [1d\]: ide na to;)
+]
+;W[cd]C[MP2006 [-\]: a o4, n4 az tak duzo czarnemu nie daje...
+]
+;B[kg]
+;W[kh]
+;B[gq]
+;W[gr]C[MP2006 [-\]: czas: MB 25', TS 38'
+]
+;B[lr]
+;W[lq]
+;B[ms]
+;W[mq]
+;B[iq]C[quasigoose [-\]: fajno w sente
+sonicyouth [6k\]: Nexo ma do odrobienia jakies 10 punktow
+MP2006 [-\]: Koichi cos zaczyna stac odrobine podejrzanie - czarny ma wszedzie sciany a on ma slabe grupy
+sonicyouth [6k\]: moze da sie zrobic...
+MP2006 [-\]: no nie, se oszukuje o ponad 10 punktow (po prawej i po lewej), wiec wyglada jak spore prowadzenie nexa
+]
+;W[hr]
+;B[bf]C[sonicyouth [6k\]: no nie wiem :)
+quasigoose [-\]: b2 wieksze?
+quasigoose [-\]: >10 pkt
+]
+;W[ce]C[maciek [1d\]: mi wychodzi ze bialy +5
+leszczyn [?\]: s12?
+sonicyouth [6k\]: e19 czy a 15 wieksze?
+maciek [1d\]: a teraz +1
+]
+;B[ri]
+;W[af]C[leszczyn [?\]: ???
+quasigoose [-\]: >>
+]
+;B[bg]C[quasigoose [-\]: czemu polaczyl ?
+]
+;W[gb]
+;B[ga]C[MP2006 [-\]: mnie dziwi s11...
+quasigoose [-\]: b2 teraz 12 pkt...
+leszczyn [?\]: no wlasnie, czemu s11?
+DarkHaze [-\]: tylko s s11 jest problem
+DarkHaze [-\]: *z
+quasigoose [-\]: no pewnie boi nie laczy
+]
+;W[fb]C[MP2006 [-\]: czemu bialy nie chcial grac ko?
+sonicyouth [6k\]: teraz czarny juz wyglada do przodu
+quasigoose [-\]: ciekawe kto w koncu zagra b2
+maciek [1d\]: :)
+areal [5k?\]: b2 jest ogromne...
+]
+;B[qj]C[quasigoose [-\]: argh
+leszczyn [?\]: zorientowal sie :-)
+yocker [?\]: b is sleep in endgame
+quasigoose [-\]: i tak mniejsze od b2
+maciek [1d\]: czarny 80punktow;)
+MP2006 [-\]: no, chyba wieksze od b2 akurat...
+]
+;W[kr]C[MP2006 [-\]: a L2 mniejsze od b2
+]
+;B[br]
+;W[on]C[maciek [1d\]: bialy tez 80;)
+maciek [1d\]: rowno;)
+]
+;B[po]C[DarkHaze [-\]: oj chyba juz bialy bedzie
+DarkHaze [-\]: ma pare sente 
+Hinomorii [9k\]: czarny ma d 2
+MP2006 [-\]: r19? czarny moze grac ko
+quasigoose [-\]: raczej c1
+MP2006 [-\]: czarny ma f4
+salmon [5k\]: co u innych?
+]
+;W[bs]C[MP2006 [-\]: Koichi z kamykiem graja semeai, ktos podda
+sonicyouth [6k\]: se:b+1,5
+]
+;B[fp]
+;W[eq]C[maciek [1d\]: j4 czarnego 
+]
+;B[hk]
+;W[ik]
+;B[ip]C[MP2006 [-\]: gie jednak wystrugal jakies zycie, byc moze umrze w innym miejscu 
+maciek [1d\]: pieknie
+areal [5k?\]: nexo produkuje wiecej aji przed J4 :)
+MP2006 [-\]: (ale jak nie umrze to fisz nie ma ziemi)
+]
+;W[in]
+;B[jq]
+;W[kq]C[maciek [1d\]: nexo wygral;)
+Oko [5k\]: nie
+Oko [5k\]: yose zdecyduje
+salmon [5k\]: o ile wytrzymie psychicznie :) pewnie znowu mu sie rece trzesa jak na LMM...:)
+MP2006 [-\]: CelePa wyglada slicznie ale Leszek ma duzi terenu wiec nic nie wiadomo
+TheStudent [5k?\]: podoba Ci się CelePa ?
+maciek [1d\]: chociaz teraz znowu wyszlo mi dla bialego
+TheStudent [5k?\]: (nie mogłem się powstrzymać)
+sonicyouth [6k\]: :)
+salmon [5k\]: a13 chba sente?
+Hinomorii [9k\]: chyba _^_ ?
+text: bialy ma 80 + komi
+]
+;B[qa]C[maciek [1d\]: nie ma pospiechu a13 jest zarezerwowane dla czarnego;)
+maciek [1d\]: tez mi tak wychodzi
+Hinomorii [9k\]: pozatym po a 13 jeśli chce wyłowić
+maciek [1d\]: 40 podwojnych
+Hinomorii [9k\]: b16
+maciek [1d\]: ten i ten
+]
+;W[fo]C[Hinomorii [9k\]: to kończy w gote
+maciek [1d\]: +-1podwojne
+maciek [1d\]: ale komi...
+text: a czarny ma 83-4
+]
+;B[hn]
+;W[ls]
+;B[ag]
+;W[ae]C[fumero [2d\]: haj
+maciek [1d\]: haj
+maciek [1d\]: h11 i g10
+]
+;B[fn]C[maciek [1d\]: czarny wygra ko
+DarkHaze [-\]: blissko jest
+]
+;W[eo]C[maciek [1d\]: teraz mi wyszlo biale88,5 punkta
+DarkHaze [-\]: uzywaj juz se
+DarkHaze [-\]: chyba myli sie tylk 2-3 punktach
+maciek [1d\]: czarny 84
+]
+;B[jr]C[leszczyn [?\]: bialy wygral, se nic nie dodaje bialemu
+leszczyn [?\]: a ma wiecej...
+]
+;W[js]C[maciek [1d\]: czarny h11
+maciek [1d\]: i se dodaje bialemu chyba dwa punkty
+fumero [2d\]: wygrał biały
+MP2006 [-\]: kamyk zabral Koichiemu 11 kamykow
+maciek [1d\]: a to zlodziej
+maciek [1d\]: dyskwalifikacja!!!
+MP2006 [-\]: teraz jest ich 12nastu
+fumero [2d\]: kamyk zabrał 11 kamyków :P
+areal [5k?\]: zbiera swoich towarzyszy :)
+paldiabli: :)
+maciek [1d\]: zdyskwalifikowac kamyka!!!
+maciek [1d\]: :)
+jurek [1d?\]: to razem 12
+]
+;B[pc]
+;W[pa]C[salmon [5k\]: h11 chyba najwieksze teraz
+]
+;B[op]
+;W[np]C[maciek [1d\]: h11 jest super
+salmon [5k\]: wygrywajace?
+maciek [1d\]: :)
+ambrosio [1k\]: oby zagral :)
+DarkHaze [-\]: bialy wygrywa
+]
+;B[ig]
+;W[ih]C[text: teraz jest równo
+DarkHaze [-\]: obejrzyj se i go popraw
+text: 86 do 86 :)
+sonicyouth [6k\]: z komi?
+text: tak
+salmon [5k\]: czyli nexo 4dan?
+Oko [5k\]: :P
+Oko [5k\]: tak z komi 86-86
+Oko [5k\]: :)
+fumero [2d\]: jedna jaskółka wiosny nie czyni:)
+]
+;B[hi]C[areal [5k?\]: :D
+]
+;W[ii]C[maciek [1d\]: jest!
+]
+;B[gi]C[fumero [2d\]: i teraz sente bazika ;)
+maciek [1d\]: ale moze ko?
+]
+;W[oq]
+;B[pq]C[ambrosio [1k\]: ale bialy ma kilka sente teraz
+]
+;W[hl]C[salmon [5k\]: lipa
+]
+;B[gl]C[fumero [2d\]: r12
+maciek [1d\]: przed j13
+Filip41 [10k\]: sorki ale kto gra? dopiero przyszedłem
+Filip41 [10k\]: witam wogóle :D
+]
+;W[go]C[maciek [1d\]: h11 bylo lepsze
+Filip41 [10k\]: lol
+Filip41 [10k\]: jest napisane
+]
+;B[gn]C[fumero [2d\]: bazik 4d W nexo 1d B
+Filip41 [10k\]: ślepy jestem :D
+]
+;W[qh]
+;B[rh]C[Oko [5k\]: po grzybachg :)
+]
+;W[ns]C[DarkHaze [-\]: W+2-3
+]
+;B[ed]
+;W[fd]C[fumero [2d\]: ale i tak ładnie nexo
+]
+;B[fa]
+;W[ea]
+;B[ha]
+;W[la]
+;B[ja]C[fumero [2d\]: p1
+montezuma [4k\]: ko w a2 chyba zdecyduje o zwycięstwie
+fumero [2d\]: p15 najpierw
+]
+;W[oe]C[fumero [2d\]: juz bialy wygral
+ambrosio [1k\]: nie zadecyduje
+]
+;B[pe]
+;W[os]
+;B[ps]
+;W[ms]
+;B[ar]
+;W[ep]
+;B[hp]C[maciek [1d\]: o niebo lepsza gra niz gie z kamykiem!!!!
+MP2006 [-\]: wypelniaja dame...
+maciek [1d\]: w jakiej kolejnosci?
+Oko [5k\]: :P
+ambrosio [1k\]: a co w innych grach sie dzieje ? 
+maciek [1d\]: kamyk oddal te kamienie czy nie?
+text: chyba +3 dla białego
+maciek [1d\]: przynajmniej o pol sie mylisz;)
+text: niemozkiwe :)
+areal [5k?\]: ciekaw czy im tez wyjdzie 2,5 :)
+maciek [1d\]: narazie do szesnastej:)
+leszczyn [?\]: jak w pozostalych partiach?
+MP2006 [-\]: W+2.5
+fumero [2d\]: nice
+fumero [2d\]: ładna gra
+MP2006 [-\]: informacje o innych grach w pokoju
+])))

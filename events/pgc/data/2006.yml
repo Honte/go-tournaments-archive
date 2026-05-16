@@ -22,31 +22,31 @@ stages:
       - sodos
       - starting
     rounds:
-      - - ls-kc ls
+      - - ls-kc ls:W+R sgf:2006/2006-1-kchwedyna-lsoldan.sgf
         - mb-mk mb
         - kg-pc kg
         - kh-ts kh
       - - ls-ts ls
         - mb-pc mb
-        - kg-mk kg
+        - kg-mk kg:B+R sgf:2006/2006-2-kgiedrojc-mkaminski.sgf
         - kc-kh kc
       - - ls-pc ls
-        - mb-ts mb
+        - mb-ts mb:W+2.5 sgf:2006/2006-3-tslazok-mbazynski.sgf
         - kg-kc kg
         - kh-mk kh
       - - ls-mk ls
         - kg-ts kg
-        - pc-kh pc
+        - pc-kh pc:W+5.5 sgf:2006/2006-4-khabu-pcelejewski.sgf
         - kc-mb kc
       - - ls-mb ls
         - pc-ts pc
-        - kh-kg kh
+        - kh-kg kh:W+24.5 sgf:2006/2006-5-kgiedrojc-khabu.sgf
         - mk-kc mk
       - - ls-kg ls
         - mb-kh mb
-        - pc-kc pc
+        - pc-kc pc:B+R sgf:2006/2006-6-pcelejewski-kchwedyna.sgf
         - mk-ts mk
-      - - ls-kh ls
+      - - ls-kh ls sgf:2006/2006-7-lsoldan-khabu.sgf
         - mb-kg mb
         - pc-mk pc
         - kc-ts kc

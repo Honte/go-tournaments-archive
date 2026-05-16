@@ -1,0 +1,447 @@
+(;GM[1]FF[4]CA[UTF-8]
+RU[Japanese]SZ[19]KM[6.50]
+PW[LMP]PB[LMP]DT[2005-11-27]PC[The Kiseido Go Server (KGS) at http://kgs.kiseido.com/]C[LMP [-\]: jak na razie zaden z przeciwnikow nie jest obecny...
+LMP [-\]: biale: Jan Lubos
+LMP [-\]: czarne: Leszek Soldan
+marcinkam [-\]: wszyscy zaspali? 
+marcinkam [-\]: co robisz z zegarem, gdy żadnego z przeciwników nie ma a czas się zaczął?
+LMP [-\]: wlacza sie zegar
+marcinkam [-\]: jeśli tak zrobiłeś, to będzie niezła chryja
+LMP [-\]: bylo zapowiedziane i wiedzieli o tym
+marcinkam [-\]: no tak, ale nie ma obu
+]
+;B[cp]CR[cp]C[marcinkam [-\]: czemu odejmować czas tylko jednemu?
+]
+;W[pd]CR[pd]
+;B[dc]CR[dc]
+;W[pp]CR[pp]
+;B[ep]CR[ep]
+;W[de]CR[de]
+;B[dh]CR[dh]
+;W[gd]CR[gd]
+;B[ee]CR[ee]
+;W[ef]CR[ef]
+;B[fe]CR[fe]
+;W[dd]CR[dd]
+;B[fc]CR[fc]
+;W[cc]CR[cc]
+;B[ec]CR[ec]
+;W[cf]CR[cf]
+;B[cb]CR[cb]
+;W[bc]CR[bc]C[Nikodemus [1k\]: biale = black? :)
+marcinkam [-\]: no
+Nikodemus [1k\]: ok
+]
+;B[nc]CR[nc]C[marcinkam [-\]: białe - white
+Kalu [6d\]: whu play here
+Kalu [6d\]: ?
+marcinkam [-\]: zapraszam do analizy w moim klonie
+Kalu [6d\]: k
+]
+;W[pf]CR[pf]
+(;B[jd]CR[jd])
+(;B[kd]CR[kd]
+;W[jq]CR[jq]
+;B[qn]CR[qn]C[Alchem [-\]: B (5d) vs W (4d)
+]
+;W[np]CR[np]
+;B[qk]CR[qk]
+;W[gq]CR[gq]
+;B[cl]CR[cl]
+;W[qi]CR[qi]
+;B[rp]CR[rp]
+;W[qq]CR[qq]C[Nikodemus [1k\]: W r5 before r11 better?
+LMP [-\]: not really 
+]
+;B[qc]CR[qc]C[Nikodemus [1k\]: ok
+stef [8k\]: q17
+LMP [-\]: black would R12 after r5
+]
+;W[pc]CR[pc]
+;B[pb]CR[pb]
+;W[ob]CR[ob]
+;B[qb]CR[qb]
+;W[oc]CR[oc]
+;B[re]CR[re]
+;W[rf]CR[rf]
+;B[qe]CR[qe]
+;W[qf]CR[qf]
+;B[pe]CR[pe]
+;W[oe]CR[oe]
+;B[nb]CR[nb]
+;W[oa]CR[oa]C[stef [8k\]: p14
+]
+;B[nd]CR[nd]
+;W[od]CR[od]
+;B[qd]CR[qd]
+;W[kf]CR[kf]
+;B[ie]CR[ie]
+;W[cj]CR[cj]
+;B[bh]CR[bh]C[Nikodemus [1k\]: what kind of time limits they have?
+LMP [-\]: 90 minutes per player
+LMP [-\]: white has 60 mnutes left
+LMP [-\]: black has 71
+Nikodemus [1k\]: thanks
+]
+;W[dl]CR[dl]
+;B[ck]CR[ck]
+;W[cm]CR[cm]
+;B[dk]CR[dk]
+;W[dm]CR[dm]
+;B[fr]CR[fr]
+;W[ek]CR[ek]
+;B[dj]CR[dj]
+;W[pl]CR[pl]
+;B[ql]CR[ql]
+;W[pn]CR[pn]
+;B[pm]CR[pm]
+;W[om]CR[om]
+;B[qm]CR[qm]
+;W[fo]CR[fo]
+;B[gr]CR[gr]
+;W[hq]CR[hq]
+;B[jg]CR[jg]
+;W[ne]CR[ne]
+;B[lm]CR[lm]
+;W[ld]CR[ld]
+;B[kc]CR[kc]
+;W[lc]CR[lc]
+;B[lb]CR[lb]
+;W[ke]CR[ke]
+;B[je]CR[je]
+;W[lj]CR[lj]
+;B[me]CR[me]
+;W[mf]CR[mf]
+;B[kq]CR[kq]
+;W[kp]CR[kp]
+;B[lp]CR[lp]
+;W[lq]CR[lq]C[CelePa [3d\]: jak sa wybierane gry do transmisji?
+LMP [-\]: to zalezy
+LMP [-\]: raz bylo rzutem monety
+LMP [-\]: dzis akurat przez dyskusje
+]
+;B[kr]CR[kr]C[LMP [-\]: raz bylo przez plebiscyt na kgs
+CelePa [3d\]: a dyskusja wsrod zawodnikow?
+LMP [-\]: zawodnikow i reszty
+]
+;W[lr]CR[lr]
+;B[jp]CR[jp]C[CelePa [3d\]: jak tam reszta>
+]
+;W[ko]CR[ko]C[LMP [-\]: graja :)
+LMP [-\]: ale jest za wczesnie i nie chce mi sie wstawac i ogladac :)
+]
+;B[jo]CR[jo]
+;W[kn]CR[kn]
+;B[iq]CR[iq]
+;W[jr]CR[jr]
+;B[ir]CR[ir]
+;W[ks]CR[ks]C[LMP [-\]: ale dominik chyba do przodu jest
+LMP [-\]: co prawda mocno pod katem patrze i nie wszystko widze
+]
+;B[hp]CR[hp]C[CelePa [3d\]: nie no dominik raczerj wygra, koichi?
+]
+;W[hr]CR[hr]
+;B[is]CR[is]C[LMP [-\]: koichi to chyba nawet duuzoo do przodu
+LMP [-\]: wlasnie rams poddal
+CelePa [3d\]: :)
+LMP [-\]: martwa grupa + duuzooo terenu
+CelePa [3d\]: to koichi juz jest mistrzem?
+]
+;W[gp]CR[gp]
+;B[hs]CR[hs]
+;W[ho]CR[ho]
+;B[ip]CR[ip]
+;W[jn]CR[jn]C[LMP [-\]: no jeszcze bazik moze miec 6 chyba ( jakby koichi nastepna przegral )
+LMP [-\]: sorry koichi juz 7 ma :)
+LMP [-\]: nie dobrze 6
+CelePa [3d\]: no
+LMP [-\]: pokickalo mi sie :)
+CelePa [3d\]: nie, koichi ma 6...
+]
+;B[jj]CR[jj]
+;W[eo]CR[eo]
+;B[dp]CR[dp]
+;W[ci]CR[ci]
+;B[ch]CR[ch]
+;W[ei]CR[ei]
+;B[di]CR[di]
+(;W[hg]CR[hg]C[LMP [-\]: bazik + 2.5
+marcinkam [-\]: o czemu nie k14?
+]
+;B[ig]CR[ig]
+;W[he]CR[he]
+;B[ff]CR[ff]
+;W[kb]CR[kb]
+;B[jb]CR[jb]
+;W[hh]CR[hh]
+;B[ii]CR[ii]C[LMP [-\]: koichi juz jest mistrzem
+Radziol [3k?\]: kto gra?
+czarny [-\]: Dominik przegrał moje piwa :(
+czarny [-\]: jak On mógł :(((
+CelePa [3d\]: :)
+LMP [-\]: janek z lesiem
+czarny [-\]: janek czarne ?
+LMP [-\]: biale
+LMP [-\]: dominik ewidetnie wygrywa
+LMP [-\]: bazik - gie - chyba lekkie wskazanie na gie
+LMP [-\]: vertigo poddal
+]
+;W[eg]CR[eg]
+;B[fg]CR[fg]
+;W[eh]CR[eh]
+;B[gi]CR[gi]C[Radziol [3k?\]: ryzyk
+LMP [-\]: gie duzo do przodu
+]
+;W[mb]CR[mb]
+;B[ka]CR[ka]
+;W[na]CR[na]
+;B[kk]CR[kk]
+;W[rj]CR[rj]C[dasDas007 [20k?\]: kolejan runda dzisiaj ?
+]
+;B[rk]CR[rk]C[LMP [-\]: tak o 14-tej
+]
+;W[rq]CR[rq]
+;B[on]CR[on]
+(;W[qr]CR[qr])
+(;W[ol]CR[ol]
+;B[po]CR[po]
+;W[nn]CR[nn]C[LMP [-\]: gie wlasnie podstawil grupke, ale mala...
+]
+;B[no]CR[no]
+;W[mo]CR[mo]
+;B[oo]CR[oo]
+;W[op]CR[op]C[marcinkam [-\]: no jak Dominik ma 2 to mogę powiedzieć że jest nieźle :)
+]
+;B[qp]CR[qp]
+;W[bp]CR[bp]
+;B[bq]CR[bq]
+;W[bo]CR[bo]
+;B[cr]CR[cr]
+;W[fq]CR[fq]
+;B[er]CR[er]C[Azael [-\]: moze koichi awansuje na 5d :d
+LMP [-\]: raczej nie, oni przy 4d za wygrana dostajesz po pare punktow ledwo
+czarny [-\]: w tym sezonie jest w formie ;)
+LMP [-\]: *odstaja
+czarny [-\]: może komisja go awansuje :)
+LMP [-\]: *dostaja
+LMP [-\]: *cokolwiek
+Azael [-\]: ;\]
+]
+;W[oj]CR[oj]
+;B[bb]CR[bb]
+;W[bg]CR[bg]
+;B[ej]CR[ej]
+;W[be]CR[be]
+;B[fk]CR[fk]
+;W[hk]CR[hk]
+;B[gj]CR[gj]
+;W[gl]CR[gl]
+;B[lh]CR[lh]
+;W[mh]CR[mh]
+;B[lg]CR[lg]
+;W[mg]CR[mg]
+;B[sq]CR[sq]
+;W[sr]CR[sr]
+;B[sp]CR[sp]
+;W[se]CR[se]
+;B[sd]CR[sd]
+;W[sf]CR[sf]
+;B[sb]CR[sb]
+;W[kl]CR[kl]
+;B[lk]CR[lk]
+;W[ll]CR[ll]
+;B[jl]CR[jl]
+;W[km]CR[km]
+;B[qj]CR[qj]
+;W[ri]CR[ri]
+;B[mk]CR[mk]
+;W[mi]CR[mi]
+;B[nm]CR[nm]
+;W[mn]CR[mn]
+;B[pj]CR[pj]
+;W[pi]CR[pi]C[thelaura [9k\]: how much time do they have now?
+LMP [-\]: W 7 B 25 minutes
+thelaura [9k\]: thx
+]
+;B[bm]CR[bm]
+;W[bn]CR[bn]
+;B[bl]CR[bl]
+;W[il]CR[il]
+;B[fl]CR[fl]
+;W[fm]CR[fm]
+;B[em]CR[em]
+;W[do]CR[do]C[CelePa [3d\]: d5 blad...
+CelePa [3d\]: d6...
+LMP [-\]: jak pokarac?
+CelePa [3d\]: teraz czarny moze zostawic
+CelePa [3d\]: i e8 nie bierze bialego
+CelePa [3d\]: tzn czarnego
+]
+;B[el]CR[el]C[CelePa [3d\]: bo c6 chodzi
+CelePa [3d\]: wlasnie
+]
+;W[co]CR[co]
+;B[nj]CR[nj]
+;W[oi]CR[oi]
+;B[fn]CR[fn]
+;W[gn]CR[gn]
+;B[gm]CR[gm]
+;W[hm]CR[hm]
+;B[nl]CR[nl]
+;W[ok]CR[ok]
+;B[rr]CR[rr]
+;W[qr]CR[qr]
+;B[ss]CR[ss]
+;W[en]CR[en]
+(;B[fm]CR[fm])
+(;B[qs]CR[qs]
+;W[pr]CR[pr]C[Azael [-\]: łał. czarny duzo wyciagnal w yose
+LMP [-\]: wszyscy wiedza, ze w go nie chodzi o to jak kto gra fuseki, tylko o to jak gra yose
+adaml [-\]: lmp nie pisz pierdoł bo ci jeszcze ktoś uwierzy
+buuu123 [?\]: lol
+kabu [13k\]: :)
+Azael [-\]: ;\]
+totylkoja [?\]: ;>
+trojann [7k?\]: :)
+buuu123 [?\]: ja wierze :)
+]
+;B[mj]CR[mj]
+;W[li]CR[li]C[adaml [-\]: dlatego jesteś taki silny :)
+czarny [-\]: LMP zgubiłeś gdzieś chuban chyba :)
+buuu123 [?\]: nawet premier milller cos w tym stylu mowil
+]
+;B[ki]CR[ki]C[Loosermod [30k?\]: Hem... I'm beginner, but white is winning is that right ?
+LMP [-\]: use the scoreest, luke
+marcinkam [-\]: no, black is winning
+totylkoja [?\]: a jak partia Gie?
+Loosermod [30k?\]: hm ok
+]
+;W[jm]CR[jm]
+;B[jk]CR[jk]
+;W[hj]CR[hj]
+;B[hi]CR[hi]
+;W[fh]CR[fh]
+;B[gh]CR[gh]
+;W[ed]CR[ed]
+;B[fd]CR[fd]
+;W[jf]CR[jf]
+;B[if]CR[if]
+;W[kg]CR[kg]
+;B[kh]CR[kh]
+;W[lf]CR[lf]
+;B[ni]CR[ni]
+;W[nh]CR[nh]
+;B[fm]CR[fm]
+;W[ab]CR[ab]
+;B[mm]CR[mm]
+;W[ma]CR[ma]
+;B[ln]CR[ln]
+;W[lo]CR[lo]
+;B[ag]CR[ag]
+;W[af]CR[af]
+;B[ah]CR[ah]
+;W[cg]CR[cg]
+;B[dg]CR[dg]
+;W[df]CR[df]
+;B[io]CR[io]
+;W[in]CR[in]
+;B[gk]CR[gk]
+;W[la]CR[la]
+;B[kb]CR[kb]
+;W[pa]CR[pa]
+;B[sj]CR[sj]
+;W[si]CR[si]
+;B[sk]CR[sk]
+;W[qa]CR[qa]
+;B[ra]CR[ra]
+;W[ba]CR[ba]
+;B[da]CR[da]
+;W[eq]CR[eq]
+;B[dq]CR[dq]C[LMP [-\]: B+R
+stef [8k\]: very nice game!
+stef [8k\]: thanks LMP !
+thelaura [9k\]: thx LMP:)
+czarny [-\]: we're glad U appriciate :)
+LMP [-\]: our pleasure
+conus [12k\]: A co u gie?
+LMP [-\]: rams: "grają"
+conus [12k\]: A kto prowadzi=
+conus [12k\]: ?
+buuu123 [?\]: co w ostatniej rundzie zobaczymy?
+LMP [-\]: łery close
+conus [12k\]: mersi z boku
+buuu123 [?\]: czy lesio-bazik to bedzie mecz o drugie miejsce ?
+adaml [-\]: w ostatniej koniecznie nowego mistrza polski w akcji
+conus [12k\]: A jaki jest drugi break? SOS?
+LMP [-\]: w turnieju kazdy z kazdym?
+buuu123 [?\]: oj nie marudz tylko powiedz jaki jest break
+CelePa [3d\]: w ostatniej koichiego partia powinna byc jak nic,...
+LMP [-\]: sodos
+LMP [-\]: potem kolejnosc startowa
+conus [12k\]: Mersi z boku
+buuu123 [?\]: jesli soldan-bazik bedzie o 2-gie miejsce to wolalbym to zobaczyc, przynajmniej o cos, a jesli nie, to faktycznie koichi
+])))
+(;W[jf]CR[jf]
+;B[if]CR[if]
+;W[ig]CR[ig]
+;B[jh]CR[jh]
+;W[ih]CR[ih]
+;B[ii]CR[ii]
+;W[gh]CR[gh]C[LMP [-\]: teraz to ukladaja...
+]
+;B[gj]CR[gj]
+;W[ki]CR[ki]
+;B[ji]CR[ji]
+;W[hf]CR[hf]
+;B[he]CR[he]
+;W[ff]CR[ff]
+;B[gf]CR[gf]
+;W[ge]CR[ge]
+;B[hg]CR[hg]C[LMP [-\]: przerwa...
+]
+;W[hh]CR[hh]C[LMP [-\]: nastepna runda wczesniej 13:30
+czarny [-\]: bedzie batalia o 4 miejsce :)
+Azael [-\]: jaka gre bedziecie teraz transmitowac?
+czarny [-\]: Sołdan Bazik o II miejsce ?
+Azael [-\]: niee o 1!
+Azael [-\]: ;\]
+czarny [-\]: przecież 1 ma Koichi
+Azael [-\]: moze przegrac :d
+czarny [-\]: ale ma na razie 6 punktów
+czarny [-\]: i wygrał bezpośredni mecz z bazikiem
+czarny [-\]: no chyba, że tam jakoś sosy liczą itp.
+yoshi [8k?\]: leszek ma dwie przegrane, bazik też
+buuu123 [?\]: sodosy, sosy bylyby bez sensu
+yoshi [8k?\]: habu ma same wygrane
+yoshi [8k?\]: została jedna runda
+yoshi [8k?\]: więc chyba cud by się musiał stać :P
+kamyszyn [1d?\]: tak, dyskwalifikacja :>
+buuu123 [?\]: dyskwalifikacja
+buuu123 [?\]: :)
+adziu [-\]: bazik ma chyba 1 poki co?
+adziu [-\]: przegrana
+fgjfjf: tak ale kichi bedzie mial lepszy sodos nawet jak przegra ;_
+fgjfjf: koichi
+adziu [-\]: no co ty
+adziu [-\]: a nie, sorki ok
+adziu [-\]: ta bazik ma juz lepszy sodos od lesia, wiec 2 miejsce tez juz jest
+kamyszyn [1d?\]: w moim info jest aktualna tabelka po 6 rundach :>
+fgjfjf: nie
+fgjfjf: jak leszek wygra to dostanie 5 sodosu ;__
+adziu [-\]: co nie?
+fgjfjf: i moze przeskoczyc bazika :)
+dede [-\]: kto gra?
+dede [-\]: czesc tak w ogole
+fgjfjf: czesc
+fgjfjf: znaczy grali ;)
+fgjfjf: leszek i janek
+adziu [-\]: ta, ciagle licze sodos w druga strone
+dede [-\]: juz nie graja?
+adziu [-\]: czyli lesio jak wygra na pewno przeskoczy bazika
+fgjfjf: lesio wygral przez rezygnacje
+fgjfjf: o 13.30 bedzie ostatnia runda
+dede [-\]: lesio byl bialy?
+czarny [-\]: czarny
+wysek [9k?\]: hmm to co bedzie transmitowane?
+wysek [9k?\]: gra o II miejsce chyba no nie? :)
+])))
