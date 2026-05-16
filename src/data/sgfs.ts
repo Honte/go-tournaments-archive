@@ -131,7 +131,7 @@ function getSgfProps(game: Game, tournament: Tournament, stage: Stage, translati
     [SgfRootProps.WHITE_RANK]: white.rank,
     [SgfRootProps.WHITE_TEAM]: (EVENT_CONFIG.showCountry && white.country) || null,
     [SgfRootProps.COPYRIGHT]: null,
-    [SgfRootProps.GAME_KOMI]: (current) => current[0] ?? stage?.komi ?? null,
+    [SgfRootProps.GAME_KOMI]: (current) => (current[0] ? Number(current[0]) : (stage?.komi ?? null)),
     [SgfRootProps.GAME_DATE]: (current) => current[0] ?? tournament.start?.split('-').slice(0, -1).join('-') ?? null,
     [SgfRootProps.EVENT_NAME]:
       (tournament.name && typeof tournament.name === 'object' ? tournament.name.en : tournament.name) ??
@@ -139,6 +139,7 @@ function getSgfProps(game: Game, tournament: Tournament, stage: Stage, translati
     [SgfRootProps.GAME_RULES]: (current) => (current[0] ? current[0].toLowerCase() : null),
     [SgfRootProps.GAME_ROUND]: roundName || null,
     [SgfRootProps.COMMENT]: `Exported from ${t('site.name')}${EVENT_CONFIG.domain ? ` (${EVENT_CONFIG.domain})` : ''}`,
+    [SgfRootProps.GAME_OVERTIME]: (current) => (current[0] && !current[0].match(/error/i) ? current[0] : null),
 
     // additional attributes for SGF Viewer
     [CustomSgfProps.BLACK_ID]: black.id,
