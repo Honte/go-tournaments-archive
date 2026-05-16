@@ -1,229 +1,410 @@
-(
-  ;BR[4d]CA[UTF-8]EV[Polish Go Championship 2018]FF[4]GM[1]GN[Round 7 - Board 4]KM[6.5]PB[Leszek Sołdan]PC[Poznań]PW[Koichiro Habu]RE[W+R]RU[japanese]SZ[19]WR[5d]
-  ;B[qd]
-  ;W[pp]
-  ;B[cd]
-  ;W[dp]
-  ;B[fq]
-  ;W[cn]
-  ;B[dr]
-  ;W[ec]
-  ;B[hd]
-  ;W[de]
-  ;B[dd]
-  ;W[ed]
-  ;B[ee]
-  ;W[ce]
-  ;B[be]
-  ;W[bf]
-  ;B[bd]
-  ;W[fe]
-  ;B[ef]
-  ;W[dg]
-  ;B[ff]
-  ;W[cb]
-  ;B[cf]
-  ;W[df]
-  ;B[cg]
-  ;W[dh]
-  ;B[bg]
-  ;W[ge]
-  ;B[fh]
-  ;W[bh]
-  ;B[ch]
-  ;W[ci]
-  ;B[af]
-  ;W[ei]
-  ;B[dc]
-  ;W[eb]
-  ;B[bi]
-  ;W[bj]
-  ;B[ah]
-  ;W[cj]
-  ;B[hg]
-  ;W[gg]
-  ;B[gf]
-  ;W[he]
-  ;B[hf]
-  ;W[ie]
-  ;B[jc]
-  ;W[lc]
-  ;B[kd]
-  ;W[jf]
-  ;B[ld]
-  ;W[pd]
-  ;B[qc]
-  ;W[jh]
-  ;B[gj]
-  ;W[hi]
-  ;B[gi]
-  ;W[hh]
-  ;B[gh]
-  ;W[gp]
-  ;B[cm]
-  ;W[dm]
-  ;B[dl]
-  ;W[cl]
-  ;B[bm]
-  ;W[em]
-  ;B[ji]
-  ;W[ih]
-  ;B[hj]
-  ;W[ki]
-  ;B[kj]
-  ;W[lj]
-  ;B[jj]
-  ;W[lk]
-  ;B[jl]
-  ;W[hl]
-  ;B[kl]
-  ;W[mm]
-  ;B[gl]
-  ;W[gq]
-  ;B[bn]
-  ;W[co]
-  ;B[cq]
-  ;W[bo]
-  ;B[gr]
-  ;W[hr]
-  ;B[fr]
-  ;W[mc]
-  ;B[md]
-  ;W[nd]
-  ;B[ne]
-  ;W[od]
-  ;B[kh]
-  ;W[li]
-  ;B[kg]
-  ;W[kf]
-  ;B[ob]
-  ;W[nb]
-  ;B[oc]
-  ;W[nc]
-  ;B[lf]
-  ;W[jg]
-  ;B[mh]
-  ;W[mf]
-  ;B[lg]
-  ;W[hc]
-  ;B[pf]
-  ;W[of]
-  ;B[me]
-  ;W[oe]
-  ;B[pg]
-  ;W[og]
-  ;B[oh]
-  ;W[qe]
-  ;B[ph]
-  ;W[re]
-  ;B[pe]
-  ;W[rd]
-  ;B[rc]
-  ;W[pc]
-  ;B[qb]
-  ;W[pb]
-  ;B[sb]
-  ;W[ke]
-  ;B[le]
-  ;W[oj]
-  ;B[mi]
-  ;W[rg]
-  ;B[ra]
-  ;W[hm]
-  ;B[nk]
-  ;W[nj]
-  ;B[qi]
-  ;W[kn]
-  ;B[el]
-  ;W[fk]
-  ;B[fl]
-  ;W[gk]
-  ;B[hk]
-  ;W[ek]
-  ;B[jn]
-  ;W[jo]
-  ;B[dk]
-  ;W[dj]
-  ;B[ej]
-  ;W[fj]
-  ;B[fi]
-  ;W[ej]
-  ;B[ck]
-  ;W[bk]
-  ;B[bl]
-  ;W[gm]
-  ;B[eh]
-  ;W[qk]
-  ;B[lb]
-  ;W[kb]
-  ;B[aj]
-  ;W[fm]
-  ;B[cl]
-  ;W[al]
-  ;B[jb]
-  ;W[kc]
-  ;B[id]
-  ;W[gd]
-  ;B[oa]
-  ;W[la]
-  ;B[db]
-  ;W[ib]
-  ;B[rk]
-  ;W[rl]
-  ;B[rj]
-  ;W[qm]
-  ;B[ko]
-  ;W[ln]
-  ;B[iq]
-  ;W[hq]
-  ;B[ir]
-  ;W[hs]
-  ;B[nq]
-  ;W[oq]
-  ;B[or]
-  ;W[pr]
-  ;B[mr]
-  ;W[lq]
-  ;B[kq]
-  ;W[lr]
-  ;B[lp]
-  ;W[kr]
-  ;B[io]
-  ;W[jp]
-  ;B[ip]
-  ;W[jm]
-  ;B[in]
-  ;W[mp]
-  ;B[im]
-  ;W[da]
-  ;B[qr]
-  ;W[pq]
-  ;B[pk]
-  ;W[pj]
-  ;B[qj]
-  ;W[ql]
-  ;B[ps]
-  ;W[lo]
-  ;B[qp]
-  ;W[qq]
-  ;B[rq]
-  ;W[rp]
-  ;B[ok]
-  ;W[mj]
-  ;B[rs]
-  ;W[sr]
-  ;B[qo]
-  ;W[rr]
-  ;B[po]
-  ;W[op]
-  ;B[np]
-  ;W[oo]
-  ;B[mo]
-  ;W[on]
-  ;B[mq]
-  ;W[jq]
-  ;B[nm]
-  ;W[ml]
-  ;B[nn]
-  ;W[jr]
+(;FF[4]
+GM[1]
+PC[OGS: http://online-go.com/game/review/353204]
+BR[4d]
+WR[7d]
+CP[online-go.com]
+TM[0]OT[0 none]
+RE[?]
+SZ[19]
+KM[6.5]
+RU[japanese]
+C[
+
+-- chat --
+LMP2018-1: Start 13:30
+
+]
+
+;B[qd]
+;W[pp]
+;B[cd]
+;W[dp]
+;B[fq]
+;W[cn]
+;B[dr]
+;W[ec]
+;B[hd]
+;W[de]
+;B[dd]C[
+
+-- chat --
+metaphysician splurgist :): so disgraceful. From move 0: R16 Q4 C16 D4 F3 C6 D2 E17 H16 D15 D16 
+
+]
+
+;W[ed]C[
+
+-- chat --
+RadosławJachym: Tak się gra? :)
+
+]
+
+;B[ee]
+;W[ce]
+;B[be]
+;W[bf]
+;B[bd]
+;W[fe]
+;B[ef]
+;W[dg]
+;B[ff]
+;W[cb]
+;B[cf]
+;W[df]
+;B[cg]
+;W[dh]
+;B[bg]
+;W[ge]
+;B[fh]
+;W[bh]
+;B[ch]
+;W[ci]
+;B[af]
+;W[ei]C[
+
+-- chat --
+LMP2018-1: Current results: http://mp.go.art.pl/2018/en/results
+
+]
+
+;B[dc]
+;W[eb]
+;B[bi]
+;W[bj]
+;B[ah]
+;W[cj]
+;B[hg]C[
+
+-- chat --
+metaphysician splurgist :): at first glance, this is not pretty to look at ^^
+
+]
+
+;W[gg]
+;B[gf]
+;W[he]
+;B[hf]
+;W[ie]
+;B[jc]
+;W[lc]
+;B[kd]
+;W[jf]
+;B[ld]
+;W[pd]
+;B[qc]C[
+
+-- chat --
+metaphysician splurgist :): white plays much stronger than black ^^
+
+]
+
+;W[jh]
+;B[gj]
+;W[hi]
+;B[gi]
+;W[hh]
+;B[gh]
+;W[gp]
+;B[cm]
+;W[dm]
+;B[dl]
+;W[cl]
+;B[bm]C[
+
+-- chat --
+RadosławJachym: E7
+LMP2018-1: Lizzie says it's 89% winning chance for white at the moment
+
+]
+
+;W[em]
+;B[ji]
+;W[ih]
+;B[hj]
+;W[ki]
+;B[kj]
+;W[lj]
+;B[jj]
+;W[lk]
+;B[jl]
+;W[hl]
+;B[kl]
+;W[mm]
+;B[gl]
+;W[gq]
+;B[bn]
+;W[co]
+;B[cq]
+;W[bo]
+;B[gr]
+;W[hr]
+;B[fr]
+;W[mc]
+;B[md]
+;W[nd]
+;B[ne]
+;W[od]
+;B[kh]
+;W[li]C[
+
+-- chat --
+Sadiker: Kto białemu 7d dał?
+
+]
+
+;B[kg]C[
+
+-- chat --
+LMP2018-1: błąd, nie można edytować
+
+]
+
+;W[kf]
+;B[ob]
+;W[nb]
+;B[oc]
+;W[nc]
+;B[lf]
+;W[jg]C[
+
+-- chat --
+Sadiker: Ktoś wie, czy Krzysztof Giedrojć jeszcze bedzie grał?
+
+]
+
+;B[mh]C[
+
+-- chat --
+silk: Wydaje mi się, że kiedyś powiedział, że będzie grać aż nie wypadnie z 4
+
+]
+
+;W[mf]
+;B[lg]
+;W[hc]
+;B[pf]
+;W[of]
+;B[me]
+;W[oe]
+;B[pg]
+;W[og]
+;B[oh]
+;W[qe]
+;B[ph]C[
+
+-- chat --
+Sadiker: Ładnie się biją
+
+]
+
+;W[re]
+;B[pe]
+;W[rd]C[
+
+-- chat --
+Sadiker: S15 śliczne :>
+
+]
+
+;B[rc]
+;W[pc]
+;B[qb]
+;W[pb]
+;B[sb]
+;W[ke]
+;B[le]
+;W[oj]
+;B[mi]C[
+
+-- chat --
+Cezary: jest juz pewny zwyciezca czy jeszcze moze sie cos pozmieniac ?
+
+]
+
+;W[rg]C[
+
+-- chat --
+dead_robot: o ile zdrowie mu nie nawali z nagła to pewny jest Koichi
+
+]
+
+;B[ra]C[
+
+-- chat --
+dead_robot: teraz ma rekreacyjny występ, można powiedzieć
+Cezary: a czemu ani mateusz ani stas nie graja ?
+dead_robot: są na marszu...
+LMP2018-1: Siasio za granicą
+Sadiker: Mateusz jest za silny
+LMP2018-1: a Mateusz... nie znam oficjalnego stanowiska
+Sadiker: I mu nie wolno
+Cezary: w sumie bycie za granica, tez jest slaba wymowka :p
+dead_robot: ale chyba wiadomo, czemu nie gra
+Cezary: dzieki za info
+
+]
+
+;W[hm]
+;B[nk]
+;W[nj]
+;B[qi]
+;W[kn]
+;B[el]
+;W[fk]
+;B[fl]
+;W[gk]
+;B[hk]C[
+
+-- chat --
+LMP2018-3: Czy to jest pewne, że mu nie wolno?
+LMP2018-1: w regulaminie nic nie ma ten temat
+tasuki: kurcze ale ten Koiczi fajnie gra
+LMP2018-3: no właśnie
+
+]
+
+;W[ek]C[
+
+-- chat --
+LMP2018-1: "a. posiadają polskie obywatelstwo lub kartę stałego pobytu oraz b. są Uczestnikami Systemu Rankingowego PSG (patrz Regulamin Rankingowy PSG)."
+LMP2018-1: http://psg.go.art.pl/node/65
+Sadiker: No była dyskusja jakiś czas temu i stwierdzili, że w domyśle to są amatorskie mistrzostwa
+LMP2018-1: by trzeba to uchwalić
+LMP2018-3: Nawiasem mówiąc nie ma nigdzie zapisu, że Uczestnikami Systemu Rankingowego PSG są tylko członkowie PSG
+Cezary: widze nie ma mnie 5 lat
+Cezary: ale dylematy dalej takie same :D
+LMP2018-1: raczej wnioski nie zostały spisane ;p
+
+]
+
+;B[jn]
+;W[jo]C[
+
+-- chat --
+RadosławJachym: to zmienia postać rzeczy LMP
+
+]
+
+;B[dk]
+;W[dj]
+;B[ej]
+;W[fj]
+;B[fi]
+;W[ej]
+;B[ck]
+;W[bk]
+;B[bl]
+;W[gm]
+;B[eh]
+;W[qk]
+;B[lb]
+;W[kb]
+;B[aj]
+;W[fm]
+;B[cl]
+;W[al]
+;B[jb]
+;W[kc]
+;B[id]C[
+
+-- chat --
+LMP2018-1: B 24m, W 20m
+
+]
+
+;W[gd]
+;B[oa]
+;W[la]
+;B[db]C[
+
+-- chat --
+Sadiker: Ile lizzie pokazuje?
+LMP2018-1: 97,9%
+
+]
+
+;W[ib]C[
+
+-- chat --
+LMP2018-1: dla białego
+
+]
+
+;B[rk]
+;W[rl]
+;B[rj]
+;W[qm]
+;B[ko]
+;W[ln]
+;B[iq]C[
+
+-- chat --
+Sadiker: sansana mu?
+
+]
+
+;W[hq]
+;B[ir]
+;W[hs]
+;B[nq]
+;W[oq]
+;B[or]
+;W[pr]
+;B[mr]
+;W[lq]
+;B[kq]
+;W[lr]
+;B[lp]
+;W[kr]
+;B[io]
+;W[jp]
+;B[ip]
+;W[jm]
+;B[in]
+;W[mp]
+;B[im]
+;W[da]
+;B[qr]
+;W[pq]
+;B[pk]C[
+
+-- chat --
+Sadiker: ale kombinuje
+
+]
+
+;W[pj]
+;B[qj]
+;W[ql]
+;B[ps]
+;W[lo]
+;B[qp]
+;W[qq]
+;B[rq]
+;W[rp]
+;B[ok]
+;W[mj]
+;B[rs]
+;W[sr]
+;B[qo]
+;W[rr]
+;B[po]
+;W[op]
+;B[np]
+;W[oo]
+;B[mo]
+;W[on]
+;B[mq]
+;W[jq]
+;B[nm]
+;W[ml]
+;B[nn]
+;W[jr]C[
+
+-- chat --
+LMP2018-1: W+R
+
+]
+
 )

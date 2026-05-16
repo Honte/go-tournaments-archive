@@ -1,84 +1,243 @@
-(
-  ;BR[4d]CA[UTF-8]DT[2021-02-20]EV[Polish Go Championship 2020]FF[4]GM[1]GN[Round 4 - Board 3]KM[6.5]PB[Leszek Sołdan]PC[Warszawa / Poznań / Online]PW[Maksym Wałaszewski]RE[B+R]RU[japanese]SZ[19]WR[3d]
-  ;B[qd]
-  ;W[dc]
-  ;B[pq]
-  ;W[cp]
-  ;B[eq]
-  ;W[do]
-  ;B[gp]
-  ;W[dq]
-  ;B[nd]
-  ;W[po]
-  ;B[qo]
-  ;W[pp]
-  ;B[qp]
-  ;W[oq]
-  ;B[pr]
-  ;W[pn]
-  ;B[or]
-  ;W[nq]
-  ;B[qn]
-  ;W[pm]
-  ;B[qm]
-  ;W[pl]
-  ;B[mq]
-  ;W[mp]
-  ;B[lp]
-  ;W[lq]
-  ;B[mr]
-  ;W[kp]
-  ;B[lo]
-  ;W[kq]
-  ;B[lm]
-  ;W[jn]
-  ;B[iq]
-  ;W[mo]
-  ;B[ln]
-  ;W[ip]
-  ;B[hp]
-  ;W[jl]
-  ;B[lk]
-  ;W[jj]
-  ;B[io]
-  ;W[ko]
-  ;B[li]
-  ;W[nm]
-  ;B[jh]
-  ;W[ih]
-  ;B[ig]
-  ;W[ii]
-  ;B[im]
-  ;W[kl]
-  ;B[ll]
-  ;W[in]
-  ;B[hn]
-  ;W[hm]
-  ;B[il]
-  ;W[gn]
-  ;B[jm]
-  ;W[kj]
-  ;B[ho]
-  ;W[km]
-  ;B[kn]
-  ;W[jo]
-  ;B[hl]
-  ;W[gm]
-  ;B[gl]
-  ;W[fl]
-  ;B[fk]
-  ;W[lj]
-  ;B[nk]
-  ;W[mj]
-  ;B[mk]
-  ;W[el]
-  ;B[gj]
-  ;W[oj]
-  ;B[lc]
-  ;W[ek]
-  ;B[ej]
-  ;W[dj]
-  ;B[ei]
-  ;W[di]
-  ;B[eh]
-)
+(;FF[4]
+CA[UTF-8]
+GM[1]
+DT[2021-02-20]
+PC[OGS: https://online-go.com/game/31288490]
+GN[LMP Runda 4 deska 2 ]
+PB[LeszekSołdan]
+PW[Moggetyrael]
+BR[4d]
+WR[4d]
+TM[5400]OT[3x60 byo-yomi]
+RE[B+R]
+SZ[19]
+KM[6.5]
+RU[Japanese]
+C[Moggetyrael: Cześć
+Moggetyrael: Miłej gry
+LeszekSołdan: cześć
+LeszekSołdan: Miłej gry
+Radziol: Cześć
+]
+;B[qd]
+(;W[dc]
+(;B[pq]
+(;W[cp]
+(;B[eq]
+(;W[do]
+(;B[gp]
+(;W[dq]
+(;B[nd]
+(;W[po]
+(;B[qo]
+(;W[pp]
+(;B[qp]
+(;W[oq]
+(;B[pr]
+(;W[pn]
+(;B[or]
+(;W[nq]
+(;B[qn]
+(;W[pm]
+(;B[qm]
+(;W[pl]
+(;B[mq]
+C[Mrrr: dzien dober wszystkim
+Radziol: bry
+Mrrr: nikt juz nie gra na tym swiecie malych shimari?
+Mrrr: wszystkie gry sa z duzym, wysokim lub niskim
+Radziol: grają grają, po prostu chwilowo nie jest to modne
+Mrrr: od czasow ai w modzie jest tylko co ai zaproponuje
+]
+(;W[mp]
+C[Radziol: tak
+]
+(;B[lp]
+C[Radziol: może niedługo powstanie ai które będzie jeszcze silniejsze i zaproponuje bliskie shimari
+]
+(;W[lq]
+(;B[mr]
+C[Cezary: ale przeciez odchodzi sie juz od modnych rzeczy
+Mrrr: tak?
+Cezary: na poczatku niemodne byly pincery wszelakie bo lilka mowila zle -5%
+Cezary: a pozniej przyszla katago i mowi -5% owszem ale -0.1 punkta
+Cezary: ludzie sie przestali tym przejmowac 
+]
+(;W[kp]
+(;B[lo]
+(;W[kq]
+C[Cezary: gralismy bliskie shimari przez stulecia
+Cezary: i bylo spoko
+Mrrr: Ktore rzeczy zaproponowane przez ai najbardziej pomogly wam grac lepiej w go, cos zrozumiec?
+Cezary: gramy 3 lata duze shimari i jest zle, boty zabily gre :p
+Mrrr: wczesne inwazje w san san? inne podejscie do scian?
+Cezary: a to ciekawe pytanie, mi ai pokazaly ze nie przegrywa sie jednym ruchem :p
+Cezary: niee to tam joseki malo wazne
+Cezary: konkretne ruchy malo wazne
+Cezary: dla mnie najwazniejsze byla zmiana myslenia o grze
+Mrrr: (co do shimari, ostatnio rozlozylem sobie jakies gry go seigena i on czesto gral takie duze shimari)
+Cezary: robisz np. blad i myslisz no tutaj to jest blad tragedia
+Cezary: a bot mowi no niezbyt fajnie, no ale czemu "nie wyciagnales na czas" ?
+]
+(;B[lm]
+C[Cezary: bo tragedia to bylo brnąć
+Cezary: a nie zagrac ten jeden konkretny, slaby bo slaby ale gry nie przegrywajacy, ruch
+Mrrr: czyli bardziej cos na poziomie ogolnym, rozumienia calosci gry?
+Cezary: tak
+Cezary: wartosc grup, kamieni
+Cezary: co mozna poswiecic a co juz nie
+Mrrr: w sensie takich strategicznych prawd, niz wskazowek co do lokalnych bijatyk
+Cezary: jak traktowac kamienie lekko
+Cezary: no tak bo lokalne bijatyki to zawsze lokalne bijatyki nie maja wplyw na nastepna gre :)
+Cezary: no i boty zdemaskowaly nadziemska sile ludzi to tez ciekawe
+Mrrr: tzn?
+Cezary: bo sie wydawalo ze pro to juz bledow nie robia, a wychodzi na to ze w kazdej grze "niby" juz gra jest skonczona a zawsze jest jakis moment w ktorym przeciwnik mogl do tej gry wrocic
+Mrrr: nie no, chyba malo kto wierzyl w to, ze zawodowcy nie robia bledow :)
+Cezary: prawda prawda
+Cezary: ale nie takie ja krobia :p
+Mrrr: moze jestem niesprawiedliwy wzgledem ai, bo nie mam cierpliwosci do siedzenia przy kompie i nie mam zadnego ai zaisntalowanego, ale...
+Mrrr: jakos ciekawsze wydaja mi sie komentarze do jakichs starych partii, nawet jesli sa bledne.
+Mrrr: tam tez sa takie ogolne wskazowki, ktore zawsze sa przydatne
+Mrrr: w gruncie rzeczy wszystko jednak i tak sprowadza sie do jakosci czytania 
+Mrrr: albo przynajmneij 80%
+Cezary: zgadza sie
+Cezary: ale jeszcze ciekawsze
+Cezary: sa komentarze katago do starych gier :D
+Cezary: to sa gry bardzo wysokiej jakosci, bo bez limitu czasowego wiec oni zawsze duzo czasu poswiecali na kazdy ruch
+Mrrr: mogget dobrze wygladal do momentu, gdy pojawila sie ta dzielaca grupka skaczaca do centrum
+Mrrr: sa?
+]
+(;W[jn]
+C[Moggetyrael: Małę problemy z internetem mieliśmy
+Cezary: jest kilka na youtube komentarzy redmonda starych gier
+Cezary: gdzie tez mowi co proponuja boty
+Cezary: i no nazwal jeden z ruchow katago, ze jesli cos takiego istnieje to ten ruch bota to kami no itte 
+Mrrr: co to kami no itte?
+Cezary: hehe reka boga ?
+Cezary: boski ruch
+Cezary: cos takeigo
+Cezary: tak dobre zagranie ze lepszego to juz nie bedzie
+]
+(;B[iq]
+C[Cezary: w zadnej grze nigdy :p
+Mrrr: hm
+Mrrr: ale wlasnie to jest zaskakaujace, bo mnie sie wydawalo, ze ai pokazalo, jak bardzo wszystko jest relatywne w go
+Mrrr: ze na swietny ruch jest swietna odpowiedz w inna strone
+]
+(;W[mo]
+C[Mrrr: ze swietnym ruchem jest raczej postawa elastyczna, gotowa na zmiany, a nie cos rozwiazujacego pozycje na amen, jakby sie chcialo widziec takie kami no itte
+]
+(;B[ln]
+C[Cezary: prawda
+Cezary: to subiektywna opinia redmonda
+Cezary: po prostu jemu sie ten ruch, zaproponowany przez bota, tak podobal ze nazwal go boskim :)
+Cezary: no i oczywiscie, ruch byl zwyklym ruchem, nie niszczyl gobanu ani przeciwnika po prostu byl bardzo ciekawym ruchem z wieloma konsekwencjami
+]
+(;W[ip]
+C[Mrrr: ale... jest tez cos takiego, ze z jednej strony jest postawa elastyczna gracza jako wielka wartosc w jego grze, ale z drugiej w kazdej grze dochodzi do momentu, gdy ta fleksibilitas musi byc zamieniona na punkty, czyli na decyzje, ze czas skonczyc z podnoszeniem stawki i podjac decyzje o zamykaniu gry
+]
+(;B[hp]
+C[Mrrr: zawsze mialem z tym problem, przejscie do duzego yose jest nielatwo wychwycic. 
+Mrrr: pewnie nie tylko ja
+]
+(;W[jl]
+(;B[lk]
+C[Mrrr: ale ai chyba milczy na ten temat, ono tylko pokazuje perfekcje :)
+Mrrr: bialy ma niewygodna pozycje tutaj
+Mrrr: chcialby zagiac, ale nie moze :)
+Mrrr: a jak nie zagnie, to tez bedzie zle
+Cezary: zgadzam sie
+Cezary: bialy chcial namowic czarnego zeby wzial o3
+Cezary: a czarny nie chce i tak jest dziwnie :p
+PaweMorawiecki: Q11 chyba niezbędne teraz
+Mrrr: q11 bardzo fajne
+PaweMorawiecki: jak biały odpuści to strasznie ciężka ta grupa będzie, nie?
+Mrrr: no tak, tenuki raczej nie wchodzi w gre
+Mrrr: Twoja propozycja wydaje mi sie dobra 
+]
+(;W[jj]
+C[Mrrr: q11 ladnie wygflada
+]
+(;B[io]
+C[Mrrr: na moje oko :)
+]
+(;W[ko]
+(;B[li]
+(;W[nm]
+(;B[jh]
+C[Mrrr: ło
+]
+(;W[ih]
+(;B[ig]
+C[Cezary: chyba juz czarny nie odda tej gry
+]
+(;W[ii]
+(;B[im]
+C[Mrrr: zaraz sam wezmie q11
+]
+(;W[kl]
+(;B[ll]
+(;W[in]
+(;B[hn]
+(;W[hm]
+C[Cezary: jakos mi sie nawet nie chcialoby o tego kamyczka klocic na miejscu czarnego
+Cezary: ale atari w h8 mocne
+Cezary: ciekawe co lukan o tym powie :)
+silent: Spóźniłem się przez spanko na dyskusje o AI ale tylko dopowiem, że KataGo ma wersje które są nastawione na terytorium/wpływy, albo uspokajanie gier, sam z nich nie korzystam ale zawsze jest to opcją
+Mrrr: atari w h8 to opcja turbo
+Mrrr: nie wiem, czy potrzebna :)
+]
+(;B[il]
+(;W[gn]
+(;B[jm]
+(;W[kj]
+(;B[ho]
+(;W[km]
+(;B[kn]
+(;W[jo]
+(;B[hl]
+(;W[gm]
+(;B[gl]
+(;W[fl]
+(;B[fk]
+C[Mrrr: downhill
+Mrrr: gracze beda mieli czas na drugie sniadanie
+]
+(;W[lj]
+(;B[nk]
+(;W[mj]
+(;B[mk]
+C[Sadiker: l10 jakies dziwne
+]
+(;W[el]
+(;B[gj]
+(;W[oj]
+C[Sadiker: gdzie te katago mozna znalezc?
+Sadiker: najlepiej z instalka dla nieinformatykow ;)
+]
+(;B[lc]
+(;W[ek]
+C[Cezary: zainstaluj lizzie
+Cezary: hm no to juz koniec gry jest
+]
+(;B[ej]
+(;W[dj]
+(;B[ei]
+C[silent: https://github.com/sanderland/katrain
+]
+(;W[di]
+(;B[eh]
+C[Moggetyrael: Dzięki za grę
+Moggetyrael: nie
+Moggetyrael: bez remisó
+LeszekSołdan: dziękuję
+Moggetyrael: ostateczny breaker to pozycja startowa
+LeszekSołdan: a co myślisz o j2?
+Moggetyrael: Teraz? chyba możesz H2
+Moggetyrael: aaa
+LeszekSołdan: no tak. ale chcę coś pokazać
+Moggetyrael: \[object Object\]
+Sadiker: do tej pory korzystałem z zbaduk
+Sadiker: w sumie jak Leszek wygta z Higaki to mogą być 3 osoby na drugim miejscu?
+]
+)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))

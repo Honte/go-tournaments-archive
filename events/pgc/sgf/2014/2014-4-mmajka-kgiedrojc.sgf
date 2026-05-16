@@ -1,209 +1,313 @@
-(
-  ;BR[3d]CA[UTF-8]DT[2014-12-13]EV[Polish Go Championship 2014]FF[4]GM[1]GN[Round 4 - Board 1]KM[6.50]PB[Marcin Majka]PC[Warszawa]PW[Krzysztof Giedrojć]RE[W+R]RO[4]RU[japanese]ST[2]SZ[19]WR[3d]
-  ;B[pq]
-  ;W[pd]
-  ;B[dd]
-  ;W[dp]
-  ;B[qo]
-  ;W[kq]
-  ;B[cn]
-  ;W[dk]
-  ;B[cq]
-  ;W[cp]
-  ;B[dq]
-  ;W[ep]
-  ;B[bp]
-  ;W[bo]
-  ;B[bq]
-  ;W[co]
-  ;B[fq]
-  ;W[go]
-  ;B[cg]
-  ;W[gq]
-  ;B[fp]
-  ;W[fo]
-  ;B[fr]
-  ;W[fc]
-  ;B[dc]
-  ;W[jd]
-  ;B[qf]
-  ;W[pi]
-  ;B[qc]
-  ;W[pc]
-  ;B[qd]
-  ;W[pe]
-  ;B[pf]
-  ;W[qe]
-  ;B[re]
-  ;W[rd]
-  ;B[rc]
-  ;W[rf]
-  ;B[sd]
-  ;W[of]
-  ;B[rg]
-  ;W[pg]
-  ;B[qg]
-  ;W[og]
-  ;B[hc]
-  ;W[hd]
-  ;B[ic]
-  ;W[jc]
-  ;B[id]
-  ;W[ie]
-  ;B[gd]
-  ;W[he]
-  ;B[gc]
-  ;W[ge]
-  ;B[fd]
-  ;W[dg]
-  ;B[dh]
-  ;W[eh]
-  ;B[eg]
-  ;W[fh]
-  ;B[di]
-  ;W[ej]
-  ;B[fg]
-  ;W[gh]
-  ;B[je]
-  ;W[df]
-  ;B[cf]
-  ;W[ef]
-  ;B[mc]
-  ;W[ld]
-  ;B[pb]
-  ;W[ob]
-  ;B[oc]
-  ;W[nc]
-  ;B[nb]
-  ;W[od]
-  ;B[oa]
-  ;W[md]
-  ;B[oc]
-  ;W[nd]
-  ;B[pk]
-  ;W[nk]
-  ;B[ln]
-  ;W[lm]
-  ;B[ml]
-  ;W[mm]
-  ;B[nl]
-  ;W[kk]
-  ;B[mk]
-  ;W[mj]
-  ;B[nj]
-  ;W[mi]
-  ;B[km]
-  ;W[kn]
-  ;B[ll]
-  ;W[kl]
-  ;B[jm]
-  ;W[mn]
-  ;B[lo]
-  ;W[jn]
-  ;B[mo]
-  ;W[im]
-  ;B[nn]
-  ;W[jl]
-  ;B[lr]
-  ;W[qk]
-  ;B[ql]
-  ;W[qj]
-  ;B[rl]
-  ;W[ff]
-  ;B[ck]
-  ;W[cj]
-  ;B[dj]
-  ;W[bk]
-  ;B[cl]
-  ;W[bi]
-  ;B[ci]
-  ;W[bj]
-  ;B[bl]
-  ;W[bh]
-  ;B[ch]
-  ;W[ce]
-  ;B[be]
-  ;W[bd]
-  ;B[cd]
-  ;W[de]
-  ;B[bf]
-  ;W[bc]
-  ;B[ek]
-  ;W[dl]
-  ;B[ei]
-  ;W[fj]
-  ;B[fi]
-  ;W[gi]
-  ;B[gj]
-  ;W[fk]
-  ;B[fl]
-  ;W[gk]
-  ;B[el]
-  ;W[dm]
-  ;B[dn]
-  ;W[em]
-  ;B[gl]
-  ;W[hk]
-  ;B[en]
-  ;W[fm]
-  ;B[eo]
-  ;W[bn]
-  ;B[fn]
-  ;W[gm]
-  ;B[gn]
-  ;W[hn]
-  ;B[ho]
-  ;W[gp]
-  ;B[bm]
-  ;W[al]
-  ;B[ak]
-  ;W[do]
-  ;B[bb]
-  ;W[cb]
-  ;B[ab]
-  ;W[db]
-  ;B[eb]
-  ;W[cc]
-  ;B[da]
-  ;W[ec]
-  ;B[ed]
-  ;W[fb]
-  ;B[fa]
-  ;W[ea]
-  ;B[ke]
-  ;W[ga]
-  ;B[kd]
-  ;W[jb]
-  ;B[lc]
-  ;W[kc]
-  ;B[ib]
-  ;W[lb]
-  ;B[mb]
-  ;W[ia]
-  ;B[la]
-  ;W[ja]
-  ;B[kb]
-  ;W[ha]
-  ;B[ni]
-  ;W[mh]
-  ;B[nh]
-  ;W[ng]
-  ;B[lj]
-  ;W[lk]
-  ;B[mg]
-  ;W[mf]
-  ;B[lg]
-  ;W[li]
-  ;B[ne]
-  ;W[kf]
-  ;B[jf]
-  ;W[lf]
-  ;B[ki]
-  ;W[kj]
-  ;B[lh]
-  ;W[lj]
-  ;B[jg]
-  ;W[kg]
-  ;B[hf]
-  ;W[gg]
-)
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[5400]OT[1x60 byo-yomi]
+GN[Polish Championship 2014 Round 4 Board 1]PW[Krzysztof Giedrojć]PB[Marcin Majka]WR[3d]BR[3d]DT[2014-12-13]EV[Polish Go Championship League]RO[4]C[LMP1 [-\]: The round will start arround 10:30 
+eladzap [5k\]: what tournament is it?
+wysek [?\]: poprosze o wpisanie w nazwe gry: Polish Championship 2014 Round 4 Board 1
+eladzap [5k\]: do you have a website with results?
+eladzap [5k\]: list of players?
+Holub [1d\]: so who is playing on this board ?
+tanais [2d\]: http://mp.go.art.pl/2014
+eladzap [5k\]: why can't people write a website in english
+eladzap [5k\]: goddamit
+eladzap [5k\]: its not that hard
+wysek [?\]: there is a link in upper right corner -> "English"
+wysek [?\]: (however not all info is translated)
+LMP1 [-\]: The round has started, have a nice time watching all the games.
+]RE[W+Resign]
+;B[pq]
+;W[pd]
+;B[dd]
+;W[dp]
+;B[qo]C[kamil [2d?\]: higaki na mistrza!
+]
+;W[kq]
+;B[cn]
+;W[dk]C[Holub [1d\]: eladzap...maybe because its their national championship and not an international event ...so there is really no need to :)
+]
+;B[cq]
+;W[cp]
+;B[dq]
+;W[ep]
+;B[bp]
+;W[bo]
+;B[bq]
+;W[co]
+;B[fq]
+;W[go]
+;B[cg]
+;W[gq]
+;B[fp]
+;W[fo]
+;B[fr]C[Goombario [10k\]: my first language is english and I prefer the Polish language anyway
+]
+;W[fc]
+;B[dc]
+;W[jd]
+;B[qf]
+;W[pi]
+;B[qc]
+;W[pc]
+;B[qd]
+;W[pe]
+;B[pf]
+;W[qe]
+;B[re]
+;W[rd]
+;B[rc]
+;W[rf]
+;B[sd]
+;W[of]
+;B[rg]
+;W[pg]
+;B[qg]
+;W[og]
+;B[hc]
+;W[hd]
+;B[ic]
+;W[jc]
+;B[id]
+;W[ie]
+;B[gd]
+;W[he]
+;B[gc]
+;W[ge]
+;B[fd]C[kamil [2d?\]: g15 wasn't to fast? there were some aji at e15
+]
+;W[dg]C[woodpecker [?\]: moyo vs territory, I like it :)
+]
+;B[dh]
+;W[eh]
+;B[eg]
+;W[fh]
+;B[di]
+;W[ej]
+;B[fg]
+;W[gh]C[mayeck [5d\]: typowa gra dla gie
+]
+;B[je]
+;W[df]
+;B[cf]
+;W[ef]C[wysek [?\]: dla higakiego tez. wzial teren i czeka:)
+]
+;B[mc]C[samoht [1d\]: ist this father or son Gierdrojc?
+]
+;W[ld]
+;B[pb]C[LMP1 [-\]: You can check at: http://mp.go.art.pl/2014/uczestnicy
+]
+;W[ob]
+;B[oc]C[Lesmian [2d\]: there is a spelling mistake in his surname here. Should be Giedrojć
+]
+;W[nc]C[LMP1 [-\]: fixed, thank you
+]
+;B[nb]
+;W[od]
+;B[oa]
+;W[md]
+;B[oc]
+;W[nd]C[darwold [1k\]: dive in
+yw [?\]: n16 at n18 and white has a slightly better continuation when black plays tenuki
+Lesmian [2d\]: zawsze mnie ciekawiło, na ile blisko (i czy w ogóle) Krzysztof Giedrojć może pochodzić z litewskich Giedroyciów :)
+kingmango [3d\]: mifht q9 be ok for b? strengthen corner and enlarging territory, while dtill eying the cwnter
+yw [?\]: the center is way too big, black has only like 70 points
+darwold [1k\]: L4
+yw [?\]: but its hard to find a move that makes the center worth less than 70
+yw [?\]: black probably needs a yolo move like m9 now
+]
+;B[pk]C[yw [?\]: o9 for white
+]
+;W[nk]
+;B[ln]C[LMP1 [-\]: Time: W: 01:00:00 B: 01:06:00 / Czas: Białe: 01:00:00  Czarne: 01:06:00
+Lesmian [2d\]: jak biały zamknie moyo, to czarny ma fajne n3 potem, więc chyba lepiej od razu to zaatakować?
+Lesmian [2d\]: "to" czyli m6
+]
+;W[lm]C[Lesmian [2d\]: czyli czarny dostanie pewnie n3
+]
+;B[ml]C[Lesmian [2d\]: o
+maciek [2d\]: :))
+Lesmian [2d\]: fajne!
+maciek [2d\]: missclick!
+]
+;W[mm]
+;B[nl]C[Lesmian [2d\]: fajny missclick
+maciek [2d\]: :)
+]
+;W[kk]C[Lesmian [2d\]: nie lepiej było białym o7?
+Lesmian [2d\]: szybko odpowiedział
+Lesmian [2d\]: hm, może jednak byłoby gorzej :)
+Lesmian [2d\]: no to m9
+Lesmian [2d\]: czarny musi się wpychać, nie ma alternatywy
+]
+;B[mk]
+;W[mj]
+;B[nj]
+;W[mi]
+;B[km]C[kamil [2d?\]: w will cut
+]
+;W[kn]
+;B[ll]
+;W[kl]
+;B[jm]
+;W[mn]
+;B[lo]
+;W[jn]
+;B[mo]
+;W[im]
+;B[nn]
+;W[jl]
+;B[lr]C[Lesmian [2d\]: to chyba wystarczy czarnemu
+Lesmian [2d\]: chyba że jakieś cuda przy c15 i c12 da się wykręcić
+Lesmian [2d\]: ale nawet jeśli, to d14 ma i tak za mało oddechów
+LMP1 [-\]: Time: W: 00:52:00 B: 01:00:00 / Czas: Białe: 00:52:00  Czarne: 01:00:00
+]
+;W[qk]
+;B[ql]
+;W[qj]
+;B[rl]C[Lesmian [2d\]: wygląda na to, że tsuke w m7 było niedobre, może biały powinien najpierw jakoś spróbować zaatakować szimari, póki jeszcze było słabe?
+wysek [?\]: wtedy mialby jeszcze wiekszy problem z zabezpieczeniem centrum IMO.
+]
+;W[ff]
+;B[ck]C[Lesmian [2d\]: no to nie wiem, jakiś inny niebezpośredni atak na m6, a nie takie murowanie
+Lesmian [2d\]: tzn nie mówię, że potrafię wynaleźć taki atak, ale droga obrana przez Giedrojcia chyba nie była najlepsza w tej sytuacji
+Lesmian [2d\]: inna sprawa, że takie pozycje ciężko się ocenia, ja zawsze jestem w nich zupełnie zgubiony
+]
+;W[cj]
+;B[dj]
+;W[bk]
+;B[cl]
+;W[bi]
+;B[ci]
+;W[bj]
+;B[bl]
+;W[bh]
+;B[ch]
+;W[ce]
+;B[be]
+;W[bd]
+;B[cd]
+;W[de]
+;B[bf]
+;W[bc]
+;B[ek]
+;W[dl]
+;B[ei]
+;W[fj]
+;B[fi]C[Bogdan13x [1k\]: nie wygląda to tak jakby miało to czarnemu chodzić
+LMP1 [-\]: Time: W: 00:30:00 B: 00:56:00 / Czas: Białe: 00:30:00  Czarne: 00:56:00
+]
+;W[gi]
+;B[gj]C[Lesmian [2d\]: jeśli nie chodzi, to ma za swoje, f14 było tak oczywiste
+]
+;W[fk]C[Lesmian [2d\]: wystarczyło zamiast c9 zagrać c10
+Winc [1k\]: is this actual game?
+]
+;B[fl]C[Lesmian [2d\]: yes
+]
+;W[gk]C[Lesmian [2d\]: ie. transmission 
+]
+;B[el]
+;W[dm]
+;B[dn]
+;W[em]
+;B[gl]
+;W[hk]
+;B[en]C[Lesmian [2d\]: ale boskowanie :)
+]
+;W[fm]
+;B[eo]C[Lesmian [2d\]: boksowanie
+tenuk [1d\]: higaki bez szans
+Maek [3d\]: Co on tu zagrał 
+]
+;W[bn]C[Lesmian [2d\]: zagrał c10 mimo że biały miał f14, reszta to już droga jednokierunkowa pewnie
+Lesmian [2d\]: tzn c9
+]
+;B[fn]C[Lesmian [2d\]: będzie żałował tej gry, oby się otrząsnął przed następną
+]
+;W[gm]
+;B[gn]
+;W[hn]
+;B[ho]
+;W[gp]
+;B[bm]
+;W[al]
+;B[ak]
+;W[do]
+;B[bb]C[Lesmian [2d\]: finis
+]
+;W[cb]
+;B[ab]C[westdock: gie w formie jak widze
+Lesmian [2d\]: tak, w formie murarskiej
+]
+;W[db]C[Lesmian [2d\]: b13 dla spokoju
+Lesmian [2d\]: po co więcej
+]
+;B[eb]
+;W[cc]
+;B[da]
+;W[ec]
+;B[ed]
+;W[fb]
+;B[fa]
+;W[ea]
+;B[ke]
+;W[ga]C[Lesmian [2d\]: to w ogóle groźba?
+]
+;B[kd]C[Lesmian [2d\]: biały się łączy z g19
+]
+;W[jb]
+;B[lc]
+;W[kc]
+;B[ib]
+;W[lb]
+;B[mb]
+;W[ia]
+;B[la]
+;W[ja]
+;B[kb]
+;W[ha]
+;B[ni]
+;W[mh]
+;B[nh]
+;W[ng]
+;B[lj]
+;W[lk]
+;B[mg]
+;W[mf]
+;B[lg]
+;W[li]
+;B[ne]
+;W[kf]
+;B[jf]
+;W[lf]
+;B[ki]
+;W[kj]
+;B[lh]
+;W[lj]
+;B[jg]
+;W[kg]
+;B[hf]C[westdock: wat
+]
+;W[gg]C[maciek [2d\]: ale sie tutaj zrobilo, masakra
+LMP1 [-\]: Result: W+R
+LMP1 [-\]: Biały wygrał przez poddanie
+Lesmian [2d\]: dzięki za przekaz
+Lesmian [2d\]: szkoda czarnego
+Winc [1k\]: black lost a won game :(
+Lesmian [2d\]: wystarczyło c10 zamiast c9
+wysek [?\]: .. czyli to tak sie wygrywa gre na moya
+Winc [1k\]: e6 @ 135 
+Winc [1k\]: 7*
+Lesmian [2d\]: dzięki za transmisję!
+LMP1 [-\]: Do zobaczenia w następnej
+kamil [2d?\]: wydaje mi się, że f11 w b18 też załatwiało sprawę
+Lesmian [2d\]: nie potrafię tego przeliczyć, ale pewnie tak :) w każdym razie ja bym nie ryzykował i wcześniej zagrał spokojnie
+Lesmian [2d\]: b18 c18 a18 c17 d18 c19 d19 a17 
+Lesmian [2d\]: jeśli tak to się gra, no to białe a17 dają ko
+wysek [?\]: oj chyba nie, a17 a15 
+Lesmian [2d\]: i nie braknie czarnemu oddechu?
+wysek [?\]: nie, bo tym ruchem a17 sobie zabierasz.
+Lesmian [2d\]: tak, masz rację
+Lesmian [2d\]: f11 było zagrane zatem tylko na czuja, bo bialy wyglądał na potwornie pociętego
+Lesmian [2d\]: i wyglądało, że coś tam na pewno pęknie
+wysek [?\]: inna sprawa ze wtedy f11 sente by bylo i c8 i tak ginelo chyba
+wysek [?\]: wiec b18 nie ratowalo gry IMO
+])

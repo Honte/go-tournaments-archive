@@ -1,282 +1,605 @@
-(
-  ;BR[5d]CA[UTF-8]DT[2016-01-10]EV[Polish Go Championship 2015]FF[4]GM[1]GN[Round 6 - Board 2]KM[6.50]PB[Stanisław Frejlak]PC[Warszawa]PW[Sebastian Pawlaczyk]RE[B+9.5]RU[japanese]ST[2]SZ[19]WR[4d]
-  ;B[qd]
-  ;W[dq]
-  ;B[pq]
-  ;W[dd]
-  ;B[nc]
-  ;W[qn]
-  ;B[qp]
-  ;W[pj]
-  ;B[qh]
-  ;W[on]
-  ;B[do]
-  ;W[cm]
-  ;B[cq]
-  ;W[cr]
-  ;B[cp]
-  ;W[gq]
-  ;B[er]
-  ;W[dr]
-  ;B[dm]
-  ;W[dl]
-  ;B[eq]
-  ;W[ep]
-  ;B[dp]
-  ;W[fq]
-  ;B[fp]
-  ;W[eo]
-  ;B[fn]
-  ;W[es]
-  ;B[en]
-  ;W[fr]
-  ;B[cl]
-  ;W[cn]
-  ;B[dk]
-  ;W[el]
-  ;B[bm]
-  ;W[bl]
-  ;B[ck]
-  ;W[bn]
-  ;B[dn]
-  ;W[bk]
-  ;B[ci]
-  ;W[bj]
-  ;B[ei]
-  ;W[dh]
-  ;B[di]
-  ;W[gl]
-  ;B[bi]
-  ;W[am]
-  ;B[fl]
-  ;W[fk]
-  ;B[fm]
-  ;W[ek]
-  ;B[gk]
-  ;W[gj]
-  ;B[hk]
-  ;W[fi]
-  ;B[eh]
-  ;W[gg]
-  ;B[hl]
-  ;W[ef]
-  ;B[cf]
-  ;W[dg]
-  ;B[cd]
-  ;W[bh]
-  ;B[bg]
-  ;W[ch]
-  ;B[ah]
-  ;W[cc]
-  ;B[dc]
-  ;W[ed]
-  ;B[cb]
-  ;W[bc]
-  ;B[bd]
-  ;W[db]
-  ;B[ec]
-  ;W[bb]
-  ;B[gh]
-  ;W[fh]
-  ;B[fg]
-  ;W[hh]
-  ;B[gf]
-  ;W[hg]
-  ;B[eb]
-  ;W[ca]
-  ;B[fd]
-  ;W[fe]
-  ;B[ge]
-  ;W[fc]
-  ;B[gd]
-  ;W[fb]
-  ;B[ff]
-  ;W[ee]
-  ;B[eg]
-  ;W[df]
-  ;B[hi]
-  ;W[gi]
-  ;B[gb]
-  ;W[oh]
-  ;B[pf]
-  ;W[jh]
-  ;B[hj]
-  ;W[ie]
-  ;B[jd]
-  ;W[nf]
-  ;B[mq]
-  ;W[oc]
-  ;B[nd]
-  ;W[qc]
-  ;B[pd]
-  ;W[rd]
-  ;B[re]
-  ;W[pb]
-  ;B[rc]
-  ;W[rb]
-  ;B[sd]
-  ;W[nb]
-  ;B[mb]
-  ;W[od]
-  ;B[oe]
-  ;W[mc]
-  ;B[lb]
-  ;W[ne]
-  ;B[md]
-  ;W[pc]
-  ;B[na]
-  ;W[oa]
-  ;B[ob]
-  ;W[of]
-  ;B[pe]
-  ;W[nb]
-  ;B[gc]
-  ;W[ea]
-  ;B[ob]
-  ;W[hn]
-  ;B[in]
-  ;W[nb]
-  ;B[le]
-  ;W[lg]
-  ;B[ob]
-  ;W[ho]
-  ;B[hm]
-  ;W[nb]
-  ;B[ma]
-  ;W[sb]
-  ;B[ob]
-  ;W[op]
-  ;B[oq]
-  ;W[nb]
-  ;B[qa]
-  ;W[ra]
-  ;B[ob]
-  ;W[io]
-  ;B[jn]
-  ;W[nb]
-  ;B[pl]
-  ;W[ob]
-  ;B[qj]
-  ;W[pk]
-  ;B[qk]
-  ;W[ol]
-  ;B[pi]
-  ;W[oi]
-  ;B[ok]
-  ;W[oj]
-  ;B[om]
-  ;W[nl]
-  ;B[nm]
-  ;W[pm]
-  ;B[ql]
-  ;W[mp]
-  ;B[ml]
-  ;W[nk]
-  ;B[mm]
-  ;W[lq]
-  ;B[mr]
-  ;W[lp]
-  ;B[po]
-  ;W[id]
-  ;B[ic]
-  ;W[lr]
-  ;B[lj]
-  ;W[mi]
-  ;B[je]
-  ;W[jj]
-  ;B[jk]
-  ;W[oo]
-  ;B[pn]
-  ;W[ms]
-  ;B[nr]
-  ;W[jf]
-  ;B[kf]
-  ;W[jg]
-  ;B[fo]
-  ;W[jo]
-  ;B[kn]
-  ;W[kj]
-  ;B[kk]
-  ;W[li]
-  ;B[br]
-  ;W[bs]
-  ;B[bo]
-  ;W[ph]
-  ;B[qi]
-  ;W[pg]
-  ;B[qg]
-  ;W[sc]
-  ;B[rd]
-  ;W[ga]
-  ;B[hb]
-  ;W[lk]
-  ;B[ll]
-  ;W[mk]
-  ;B[eq]
-  ;W[be]
-  ;B[ce]
-  ;W[ad]
-  ;B[ii]
-  ;W[ji]
-  ;B[hd]
-  ;W[if]
-  ;B[gp]
-  ;W[hp]
-  ;B[cs]
-  ;W[ds]
-  ;B[ko]
-  ;W[kp]
-  ;B[mo]
-  ;W[np]
-  ;B[pp]
-  ;W[an]
-  ;B[ar]
-  ;W[aj]
-  ;B[ai]
-  ;W[me]
-  ;B[ld]
-  ;W[lf]
-  ;B[ns]
-  ;W[ls]
-  ;B[ij]
-  ;W[lo]
-  ;B[ln]
-  ;W[ao]
-  ;B[ap]
-  ;W[co]
-  ;B[bp]
-  ;W[kg]
-  ;B[ke]
-  ;W[nq]
-  ;B[or]
-  ;W[ih]
-  ;B[ha]
-  ;W[fa]
-  ;B[gn]
-  ;W[cj]
-  ;B[dj]
-  ;W[fj]
-  ;B[ag]
-  ;W[ae]
-  ;B[ep]
-  ;W[er]
-  ;B[as]
-  ;W[cs]
-  ;B[cg]
-  ;W[hq]
-  ;B[mn]
-  ;W[gh]
-  ;B[go]
-  ;W[hf]
-  ;B[em]
-  ;W[ac]
-  ;B[nn]
-  ;W[he]
-  ;B[no]
-  ;W[ej]
-  ;B[bf]
-  ;W[af]
-  ;B[de]
-  ;W[]
-  ;B[]
-)
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[90]OT[1x60 byo-yomi]
+GN[Sebastian Pawlaczyk 4d (white) vs Stanisław Frejlak 5d (black)]PW[Sebastian Pawlaczyk]PB[Stanisław Frejlak]WR[4d]BR[5d]DT[2016-01-10]C[LMP2 [-\]: Welcome all you happy spectators!
+LMP2 [-\]: You look very nice today.
+LMP2 [-\]: Did you lose some weight recently?
+]RE[B+9.50]
+;B[qd]
+;W[dq]
+;B[pq]
+;W[dd]
+;B[nc]
+;W[qn]
+;B[qp]
+;W[pj]
+;B[qh]
+;W[on]C[UVP [?\]: Hi all, hi host
+]
+;B[do]C[kmr [2d\]: white need win like a water on desert, if he lose then he is almost 100% out of sure place league and must fight in preliminary to next Pol Champ.
+]
+;W[cm]
+;B[cq]
+;W[cr]
+;B[cp]
+;W[gq]C[UVP [?\]: he needs to jump over the head then. Seems to be quite a game
+LMP2 [-\]: Watch us LIVE: https://www.youtube.com/watch?v=g7jJlYnwur0
+]
+;B[er]
+;W[dr]
+;B[dm]
+;W[dl]
+;B[eq]
+;W[ep]
+;B[dp]C[UVP [?\]: d2 nearly same result, but better for b, i think
+]
+;W[fq]
+;B[fp]
+;W[eo]
+;B[fn]
+;W[es]
+;B[en]
+;W[fr]
+;B[cl]
+;W[cn]
+;B[dk]
+;W[el]
+;B[bm]C[UVP [?\]: b E3
+UVP [?\]: is host here?
+]
+;W[bl]
+;B[ck]
+;W[bn]C[LMP2 [-\]: Yes
+UVP [?\]: ok thank you
+]
+;B[dn]
+;W[bk]
+;B[ci]
+;W[bj]
+;B[ei]
+;W[dh]
+;B[di]
+;W[gl]
+;B[bi]
+;W[am]
+;B[fl]
+;W[fk]
+;B[fm]C[UVP [?\]: b E3 w E2 b F5 w E3 b B5
+]
+;W[ek]
+;B[gk]
+;W[gj]
+;B[hk]C[UVP [?\]: still exists
+]
+;W[fi]
+;B[eh]C[LMP2 [-\]: White would not connect after F5
+LMP2 [-\]: Actually, he would ignore E3 as well
+UVP [?\]: worls for b anyways
+]
+;W[gg]C[UVP [?\]: i'd 3-3 now
+]
+;B[hl]C[UVP [?\]: for b
+UVP [?\]: i mean c17
+]
+;W[ef]
+;B[cf]C[gosei [1d\]: w has to be careful
+UVP [?\]: i don't even know, which joseki is correct to play for w... I'd take corner
+gosei [1d\]: yes agree,c16
+]
+;W[dg]C[gosei [1d\]: this looks like blacks plan worked out...
+UVP [?\]: yeah
+gosei [1d\]: g12 is  abig weak nis...
+gosei [1d\]: weaknis
+UVP [?\]: weakness, got it )
+gosei [1d\]: sorry
+gosei [1d\]: really bad at typing:)
+UVP [?\]: np english is not my native either
+UVP [?\]: =)
+gosei [1d\]: hmmm
+gisel [-\]: g12 ?
+gosei [1d\]: maybe b16 first
+gosei [1d\]: to test what w wants
+gosei [1d\]: but im not sure
+UVP [?\]: w gives up corner it seems
+gosei [1d\]: and gained to save a single stone
+gisel [-\]: I think b16 is some wasted of potential - later 3-3 could work
+gosei [1d\]: w has to kill now to know...
+gisel [-\]: though it would be fun to see Siasio lose to someone besides Mateusz
+gosei [1d\]: but g12 is good any way
+gosei [1d\]: will be w shocked if b play g12?
+UVP [?\]: corner first imo
+gosei [1d\]: yes,it thought too
+gosei [1d\]: I
+gosei [1d\]: what does mean imo?
+gisel [-\]: in my opinion\\
+UVP [?\]: in my opinion
+gosei [1d\]: I see thank you:)
+UVP [?\]: np )
+gisel [-\]: I doubt anything will be played in the corner now
+gisel [-\]: but I guess now that b is thinking so much, he already plans to kill something
+gosei [1d\]: b?
+gosei [1d\]: can kill`?
+gisel [-\]: b is known to be a fighter, and has pretty good reading skills
+gosei [1d\]: but he should live not kill,isnt it?
+gisel [-\]: we might not see,  but he probably picks his target right now ;)
+gosei [1d\]: :)
+gisel [-\]: yeah, living is first step - but best to live, when killing something :)
+UVP [?\]: nah, it would only streighten w now
+LMP2 [-\]: Such patience.
+LMP2 [-\]: I would make 20 moves in the time he's thinking about 1.
+LMP2 [-\]: (And that is why they're playing and I'm recording ;))
+UVP [?\]: i think he is thinking about more, than 1 )
+jiva [1k\]: Hehe. 
+UVP [?\]:  I think it was Honinbo Shusaku who said that in the time of enlightment he can read 40 moves ahead...
+kmr [2d\]: in first 3 seconds, in another 6, he can read next 80 moves
+UVP [?\]: XD
+gisel [-\]: does Siasio look nervous?
+]
+;B[cd]C[LMP2 [-\]: Nope
+LMP2 [-\]: Both players are calm.
+gosei [1d\]: and he goes to the corner
+UVP [?\]: he was invited, after all
+gosei [1d\]: yes
+barty [1d\]: LMP2 we see you :)
+SadPlayer [-\]: biały był chciwy to niech teraz cierpi
+]
+;W[bh]C[LMP2 [-\]: @barty: in that case let me sit up straight!
+]
+;B[bg]
+;W[ch]C[barty [1d\]: :)
+]
+;B[ah]
+;W[cc]C[LMP2 [-\]: There is death in the hane.
+barty [1d\]: nil should sit straight too ;)
+LMP2 [-\]: This is a one way broadcast. I dare not influence the game :P
+barty [1d\]: Sad you are thinking white is bad position on board?
+barty [1d\]: :)
+UVP [?\]: btw what is happening at m4 area in the actual game?
+UVP [?\]: can't see clearly at translation
+Song [4d\]: aigoo I am late to the games again
+SadPlayer [-\]: d17 
+Song [4d\]: mm d15 is playable I think I would play it as black
+]
+;B[dc]
+;W[ed]C[Song [4d\]: mm or even b17 but seems like b read out cut thoroughly  I guess 
+]
+;B[cb]
+;W[bc]C[UVP [?\]: d14 instead of d15?
+]
+;B[bd]C[Song [4d\]: you would play^? mm e6 I thought w would e17 mm
+]
+;W[db]
+;B[ec]
+;W[bb]C[Song [4d\]: mm
+]
+;B[gh]C[Song [4d\]: yep
+]
+;W[fh]
+;B[fg]C[Song [4d\]: I would do this as b...not sure if he regrets cut or not haha
+UVP [?\]: yeah )
+Song [4d\]: I thought of mainly d15 or maybe evn b17 but that cut was a little :/
+UVP [?\]: that's why i suggested d14
+Song [4d\]: also black should have done
+Song [4d\]: e13 here
+]
+;W[hh]C[Song [4d\]: this is actual game h12?
+gisel [-\]: I guess b wanted to not let white get away with giving up 4 stones only
+Song [4d\]: h12 is actual move in game?
+UVP [?\]: i wonder what w is thinking
+Song [4d\]: maybe b will g14 now
+Song [4d\]: b is pretty much alive
+UVP [?\]: h13
+Ardziuna [1k\]: must e13
+Ardziuna [1k\]: first
+Song [4d\]: b seem pretty much alive
+Ardziuna [1k\]: yes
+LMP2 [-\]: Black has 15 minutes remaining.
+Ardziuna [1k\]: he can kill d13
+LMP2 [-\]: White has 37
+Song [4d\]: mm
+]
+;B[gf]
+;W[hg]C[UVP [?\]: h13 was better
+]
+;B[eb]
+;W[ca]C[Song [4d\]: ah ok he did my move g14
+]
+;B[fd]C[Song [4d\]: mm ard e13 also playable btw is pretty much like natural choice
+]
+;W[fe]C[papapishu [1d\]: Siasio już pozamiatał?
+Song [4d\]: the result is pretty much same
+]
+;B[ge]C[LMP2 [-\]: The white group suddenly found itself in black's warm embrace.
+LMP2 [-\]: Well ok... not so suddenly.
+Song [4d\]: mm
+Song [4d\]: mm
+Song [4d\]: rlly this one
+]
+;W[fc]C[Song [4d\]: I wouldve just e13
+]
+;B[gd]C[Song [4d\]: I don't understand 
+]
+;W[fb]C[UVP [?\]: afraid of a18?
+]
+;B[ff]C[Song [4d\]: a18??
+UVP [?\]: nah nwm
+Song [4d\]: well after all of this
+Song [4d\]: seems like b is ahead byt a bit think is still close
+fandel2 [1k\]: whats the name of this tournament?
+Rodtank [2d\]: b ahead lots with h13 weak though?
+]
+;W[ee]
+;B[eg]
+;W[df]C[Song [4d\]: mhm b is ahead by a bit 
+]
+;B[hi]C[wade [5d\]: h11 so annoying for w
+Rodtank [2d\]: i don't see w winning with this liability
+Song [4d\]: mm I was thinking about j11
+Song [4d\]: yes was going to say g12 not completely an eye yet
+UVP [?\]: b A17 w A18 b D19
+UVP [?\]: w dead?
+UVP [?\]: i mean that's what he was afraid of?
+]
+;W[gi]
+;B[gb]C[Song [4d\]: what is that
+wade [5d\]: g18 too early
+Song [4d\]: omo
+]
+;W[oh]C[Song [4d\]: what the hack
+Song [4d\]: haha
+Song [4d\]: what is g18?
+UVP [?\]: donno, building moyo? )
+Song [4d\]: well it is obvious for that but that seem
+wade [5d\]: j11 should be played now
+Song [4d\]: yea wade say it like too early
+UVP [?\]: yeah jk
+]
+;B[pf]C[wade [5d\]: wow
+UVP [?\]: i think he wanted to e19
+mayeck [-\]: j11 certainly more important
+UVP [?\]: next
+]
+;W[jh]
+;B[hj]
+;W[ie]C[wade [5d\]: k12? common h10 much more important
+]
+;B[jd]
+;W[nf]C[Song [4d\]: idk what happening
+SadPlayer [-\]: g17 
+wade [5d\]: unless w is trying to win by b2bombers
+UVP [?\]: if g17 e19 next
+]
+;B[mq]C[Song [4d\]: guess b just going for safe territory
+UVP [?\]: he must try to kill top left
+Song [4d\]: thought g18 wouldve been j11..idk
+wade [5d\]: w's top left is alive and b's top left is too strong to kill UVP
+Song [4d\]: mm
+]
+;W[oc]C[Song [4d\]: mm yea it seems like w should do something top side
+Song [4d\]: or maybe try something with b's lower left group like h6 haha idk
+]
+;B[nd]C[UVP [?\]: well yeah, i think there will not be ko or sente enough for b to kill top left. Too huge
+]
+;W[qc]C[UVP [?\]: yose will be fun it seems
+Song [4d\]: mm r17 haha I would have just done p15 honstl
+Song [4d\]: I was happy I saw h6 but I am not sure how useful it can be
+UVP [?\]: would sure help to reduce b
+]
+;B[pd]C[Song [4d\]: h6 is mainly meant for attack it doesnt do much reducing unless u say about another move
+papapishu [1d\]: W has so many groups
+wade [5d\]: s16 is the best thing w can do locally
+wade [5d\]: though i'd rather play k10 or k3
+UVP [?\]: kinda classic. As for h6, it has potential to divide n3 i think
+Song [4d\]: yes wade 
+Song [4d\]: I would just k10 myself
+UVP [?\]: thus reducing
+]
+;W[rd]C[UVP [?\]: why not j?
+Song [4d\]: but yea k10 does not look good enough
+]
+;B[re]C[Song [4d\]: or k3...they both almost feel mia 
+Song [4d\]: so I say h6 before but idk...not sure what w will do to be honest
+wade [5d\]: you can try being greedy and play k9 and hope b gets afraid of h9 group
+johnny1 [1d\]: dead?
+Ardziuna [1k\]: the best b can get is ko
+wade [5d\]: ko of gote life with q17 either way w is bad
+Song [4d\]: um no there seems to be ko 
+wade [5d\]: or*
+papapishu [1d\]: how?
+papapishu [1d\]: s18 q18 ?
+wade [5d\]: q17 s17 s18 t16 t18 p18 q18 o18 r19 
+wade [5d\]: q17 p18 q18 o18 s18 t16 ko
+]
+;W[pb]C[Song [4d\]: is ko
+]
+;B[rc]
+;W[rb]
+;B[sd]
+;W[nb]
+;B[mb]C[UVP [?\]: wow
+Song [4d\]: mm w chise this one
+wade [5d\]: n19 only move
+]
+;W[od]
+;B[oe]
+;W[mc]C[gisel [-\]: nice one
+Ardziuna [1k\]: m18
+papapishu [1d\]: doesnt not work?
+gisel [-\]: m18 m17 
+alvar [2k\]: l17
+papapishu [1d\]: m18 m17 l17 
+gisel [-\]: o15  ladder
+alvar [2k\]: :)
+Song [4d\]: yea I would do this cut as well
+]
+;B[lb]C[SadPlayer [-\]: o15 n16 m17 m16 l17 l18 k17 j17 k18 j18 
+papapishu [1d\]: m17 n16 
+papapishu [1d\]: m17 n16 l17 l18 
+Song [4d\]: thought of it before p16 but is w.e
+Ardziuna [1k\]: b wants some ladder breaker to attack h12?
+gisel [-\]: hmm, papapishu...
+gisel [-\]: m17 m16 l17 l18 k17 q17 p18 r18 o15 n16 l16 m15 m14 
+gisel [-\]: and another ladder :P
+]
+;W[ne]
+;B[md]
+;W[pc]
+;B[na]C[kronopio [1k\]: whote tries to overdo
+UVP [?\]: aww
+]
+;W[oa]
+;B[ob]
+;W[of]C[papapishu [1d\]: no m17 m16 but m17 n16
+]
+;B[pe]
+;W[nb]
+;B[gc]
+;W[ea]
+;B[ob]
+;W[hn]C[Song [4d\]: I thought when w m17 and b m16 white just l17
+Song [4d\]: ah there's my h6
+gisel [-\]: ok, seems i got lost in there :P
+Song [4d\]: but yea
+Song [4d\]: Iwoulve just m17 when b does u move m16 i go l17
+LMP2 [-\]: B in byoyomi
+Song [4d\]: but this is different result
+]
+;B[in]
+;W[nb]C[papapishu [1d\]: how long is byo?
+]
+;B[le]C[LMP2 [-\]: 1 minute
+Song [4d\]: is m17 bad for w? instead of o15 cut
+Song [4d\]: mm
+UVP [?\]: l16?
+papapishu [1d\]: m12 makes 6 groups for white, something must die
+]
+;W[lg]
+;B[ob]
+;W[ho]C[UVP [?\]: i saw games with 7 groups alive
+wade [5d\]: i would h7 @h5 
+]
+;B[hm]
+;W[nb]C[Song [4d\]: I would have just captured but I guess white want to use ko more
+]
+;B[ma]C[Song [4d\]: aigoo
+]
+;W[sb]
+;B[ob]
+;W[op]
+;B[oq]
+;W[nb]
+;B[qa]
+;W[ra]
+;B[ob]C[Tyger [1k?\]: anyway game looks good for b
+Song [4d\]: u know what I was thinking besides p4? 
+Prometeusz [10k?\]: a10?
+Song [4d\]: no k7
+]
+;W[io]C[UVP [?\]: overplay
+Song [4d\]: j5 mm
+]
+;B[jn]
+;W[nb]
+;B[pl]C[Song [4d\]: well if w wins ko I think the gay is ok for w.....
+Song [4d\]: of course q8 is played
+]
+;W[ob]C[Song [4d\]: game* excuse me srry I said wrong word
+]
+;B[qj]
+;W[pk]
+;B[qk]C[UVP [?\]: close enough
+]
+;W[ol]
+;B[pi]
+;W[oi]
+;B[ok]
+;W[oj]
+;B[om]C[Song [4d\]: k so game is in b's favor
+]
+;W[nl]
+;B[nm]
+;W[pm]
+;B[ql]
+;W[mp]C[UVP [?\]: how much komi they play at?
+]
+;B[ml]
+;W[nk]C[Song [4d\]: should be 6.5 komi no?
+LMP2 [-\]: Yes
+UVP [?\]: ty
+]
+;B[mm]
+;W[lq]
+;B[mr]C[Song [4d\]: is only reason why w is still in this game/close if it was shusaku's time I think b's win was not in question
+]
+;W[lp]
+;B[po]C[LMP2 [-\]: It's not over until the fat lady sings.
+Song [4d\]: that and o5 next for v?
+Song [4d\]: b*
+]
+;W[id]C[LMP2 [-\]: Black is also in byo-yomi now.
+]
+;B[ic]
+;W[lr]
+;B[lj]
+;W[mi]
+;B[je]C[SadPlayer [-\]: k10 
+]
+;W[jj]
+;B[jk]C[SadPlayer [-\]: :)
+Song [4d\]: u know I thought white would do l7
+Song [4d\]: after q5 haha
+]
+;W[oo]
+;B[pn]
+;W[ms]C[UVP [?\]: i think a fat lad ysang all she could
+]
+;B[nr]C[UVP [?\]: lady*
+Song [4d\]: mm so b + 5-10? something like this
+]
+;W[jf]
+;B[kf]
+;W[jg]C[Song [4d\]: is around 10 points b is ahead by
+]
+;B[fo]
+;W[jo]
+;B[kn]
+;W[kj]
+;B[kk]
+;W[li]
+;B[br]
+;W[bs]
+;B[bo]C[Spirit [-\]: White had a good chance on the left when black overplayed with b7 but he played too softly
+barty [1d\]: even more
+]
+;W[ph]
+;B[qi]
+;W[pg]
+;B[qg]C[Spirit [-\]: G13 and J15 are just not powerful enough
+UVP [?\]: b could kill top left, if played before f18
+UVP [?\]: i think
+]
+;W[sc]
+;B[rd]C[Song [4d\]: there is still like b15 that can be played
+]
+;W[ga]
+;B[hb]C[Spirit [-\]: Black should have a disadvantage on the left following B7
+]
+;W[lk]
+;B[ll]
+;W[mk]C[Song [4d\]: and no barty I don't think it's more
+]
+;B[eq]C[barty [1d\]: yeap
+barty [1d\]: maybe less
+barty [1d\]: count 
+barty [1d\]: b3 huge now
+Song [4d\]: I did most of the end game 
+]
+;W[be]C[Song [4d\]: so I say 5-10 there goes b15
+]
+;B[ce]
+;W[ad]C[barty [1d\]: i am not, beacsue not watch all the time
+]
+;B[ii]
+;W[ji]
+;B[hd]
+;W[if]C[Song [4d\]: mm b3 is quite big in this end game
+]
+;B[gp]C[barty [1d\]: yeap gote but big one
+barty [1d\]: 5 moku
+]
+;W[hp]
+;B[cs]
+;W[ds]
+;B[ko]
+;W[kp]C[wade [5d\]: b3 a4 a2 a6 not so good for w
+]
+;B[mo]
+;W[np]
+;B[pp]
+;W[an]C[barty [1d\]: true
+]
+;B[ar]
+;W[aj]
+;B[ai]
+;W[me]
+;B[ld]
+;W[lf]
+;B[ns]
+;W[ls]
+;B[ij]C[barty [1d\]: black better yose
+]
+;W[lo]
+;B[ln]
+;W[ao]
+;B[ap]
+;W[co]
+;B[bp]C[UVP [?\]: a14 w
+]
+;W[kg]
+;B[ke]C[UVP [?\]: +1 
+barty [1d\]: a14 gote dame
+]
+;W[nq]
+;B[or]C[Song [4d\]: g6 also option
+]
+;W[ih]C[barty [1d\]: UVP how there is no point there
+]
+;B[ha]C[papapishu [1d\]: e10 for black
+]
+;W[fa]C[papapishu [1d\]: 1 point
+Song [4d\]: he misread I think
+]
+;B[gn]C[Song [4d\]: no g6
+barty [1d\]: around a14 is only dame
+UVP [?\]: yeah
+barty [1d\]: yeap song
+]
+;W[cj]
+;B[dj]
+;W[fj]
+;B[ag]C[barty [1d\]: sente like G6 is weak for white
+]
+;W[ae]C[barty [1d\]: should be played
+]
+;B[ep]
+;W[er]
+;B[as]C[Song [4d\]: mm so 9.5?
+barty [1d\]: must play h3
+]
+;W[cs]C[barty [1d\]: G5 sente
+LMP2 [-\]: black said "hmm" and smiled
+]
+;B[cg]C[Song [4d\]: yes me saying 5-10 was quite accurate
+LMP2 [-\]: both staring at the lower group
+]
+;W[hq]
+;B[mn]
+;W[gh]
+;B[go]
+;W[hf]
+;B[em]
+;W[ac]
+;B[nn]
+;W[he]
+;B[no]
+;W[ej]C[Song [4d\]: ah is it 10.5
+]
+;B[bf]
+;W[af]
+;B[de]
+;W[]
+;B[]C[LMP2 [-\]: the players are counting
+Song [4d\]: 9.5 right?
+LMP2 [-\]: black showing some variations
+LMP2 [-\]: white doesn't agree
+UVP [?\]: thank you host
+LMP2 [-\]: ah, yes, 9 points for black
+LMP2 [-\]: now everyone talking over each other
+Song [4d\]: kk ok I thought I missed the fake eye but is 9.5 like I originally said
+Song [4d\]: wish there was live
+Song [4d\]: video of them
+LMP2 [-\]: thanks for watching, next round 14.30 central european time, ie in one and half hours
+LMP2 [-\]: there was (and will be) live video at: https://www.youtube.com/watch?v=g7jJlYnwur0
+LMP2 [-\]: see you in the next round!
+Song [4d\]: aigoo I can't click the link
+Song [4d\]: My mouse does not let link pop up like it is nulled not sure what to do haha
+])

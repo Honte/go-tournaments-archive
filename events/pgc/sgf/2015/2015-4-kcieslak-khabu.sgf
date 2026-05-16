@@ -1,158 +1,298 @@
-(
-  ;BR[1k]CA[UTF-8]DT[2016-01-09]EV[Polish Go Championship 2015]FF[4]GM[1]GN[Round 4 - Board 3]KM[6.50]PB[Karol Cieślak]PC[Warszawa]PW[Koichiro Habu]RE[B+R]RU[japanese]ST[2]SZ[19]WR[5d]
-  ;B[qd]
-  ;W[pp]
-  ;B[dp]
-  ;W[dc]
-  ;B[oc]
-  ;W[ce]
-  ;B[qn]
-  ;W[nq]
-  ;B[pj]
-  ;W[jc]
-  ;B[cn]
-  ;W[cj]
-  ;B[ec]
-  ;W[gc]
-  ;B[ee]
-  ;W[db]
-  ;B[ch]
-  ;W[ef]
-  ;B[eh]
-  ;W[cm]
-  ;B[dm]
-  ;W[cl]
-  ;B[bn]
-  ;W[ek]
-  ;B[df]
-  ;W[de]
-  ;B[ff]
-  ;W[iq]
-  ;B[gq]
-  ;W[mc]
-  ;B[lq]
-  ;W[io]
-  ;B[lo]
-  ;W[pn]
-  ;B[pm]
-  ;W[on]
-  ;B[qo]
-  ;W[qp]
-  ;B[go]
-  ;W[im]
-  ;B[lm]
-  ;W[rl]
-  ;B[ql]
-  ;W[rm]
-  ;B[qm]
-  ;W[rd]
-  ;B[qe]
-  ;W[qc]
-  ;B[pc]
-  ;W[re]
-  ;B[rc]
-  ;W[qb]
-  ;B[rb]
-  ;W[qf]
-  ;B[pf]
-  ;W[qg]
-  ;B[rh]
-  ;W[pg]
-  ;B[of]
-  ;W[og]
-  ;B[nf]
-  ;W[ng]
-  ;B[rg]
-  ;W[rf]
-  ;B[qi]
-  ;W[nl]
-  ;B[lk]
-  ;W[jk]
-  ;B[mg]
-  ;W[mh]
-  ;B[lh]
-  ;W[li]
-  ;B[mi]
-  ;W[nh]
-  ;B[ki]
-  ;W[lg]
-  ;B[lj]
-  ;W[mf]
-  ;B[gl]
-  ;W[kn]
-  ;B[ln]
-  ;W[ji]
-  ;B[jh]
-  ;W[ii]
-  ;B[fj]
-  ;W[em]
-  ;B[dn]
-  ;W[ll]
-  ;B[ml]
-  ;W[kl]
-  ;B[nm]
-  ;W[gn]
-  ;B[fn]
-  ;W[fk]
-  ;B[gk]
-  ;W[gj]
-  ;B[fi]
-  ;W[bh]
-  ;B[bi]
-  ;W[ci]
-  ;B[bg]
-  ;W[dh]
-  ;B[cg]
-  ;W[di]
-  ;B[eg]
-  ;W[gm]
-  ;B[fm]
-  ;W[ih]
-  ;B[fl]
-  ;W[jg]
-  ;B[eb]
-  ;W[rp]
-  ;B[ro]
-  ;W[fr]
-  ;B[dr]
-  ;W[gr]
-  ;B[mr]
-  ;W[nr]
-  ;B[sp]
-  ;W[sq]
-  ;B[so]
-  ;W[rr]
-  ;B[ad]
-  ;W[bd]
-  ;B[ae]
-  ;W[ac]
-  ;B[bf]
-  ;W[be]
-  ;B[af]
-  ;W[bb]
-  ;B[ho]
-  ;W[ge]
-  ;B[in]
-  ;W[kr]
-  ;B[hq]
-  ;W[hr]
-  ;B[jq]
-  ;W[kq]
-  ;B[ip]
-  ;W[ir]
-  ;B[kp]
-  ;W[jr]
-  ;B[lr]
-  ;W[er]
-  ;B[es]
-  ;W[jp]
-  ;B[jo]
-  ;W[ko]
-  ;B[lp]
-  ;W[jn]
-  ;B[io]
-  ;W[om]
-  ;B[ol]
-  ;W[nk]
-  ;B[ok]
-)
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[5400]OT[1x60 byo-yomi]
+PW[Koichiro Habu]PB[Karol Cieślak]WR[5d]BR[1k]DT[2016-01-09]PC[The KGS Go Server at http://www.gokgs.com/]RE[B+Resign]
+;B[qd]
+;W[pp]
+;B[dp]
+;W[dc]
+;B[oc]
+;W[ce]
+;B[qn]
+;W[nq]
+;B[pj]
+;W[jc]
+;B[cn]
+;W[cj]
+;B[ec]
+;W[gc]
+;B[ee]
+;W[db]
+;B[ch]
+;W[ef]
+;B[eh]
+;W[cm]
+;B[dm]
+;W[cl]
+;B[bn]
+;W[ek]
+;B[df]
+;W[de]
+;B[ff]
+;W[iq]
+;B[gq]
+;W[mc]
+;B[lq]
+;W[io]
+;B[lo]
+;W[pn]
+;B[pm]
+;W[on]
+;B[qo]
+;W[qp]
+;B[go]
+;W[im]
+;B[lm]
+;W[rl]
+;B[ql]
+;W[rm]
+;B[qm]
+;W[rd]
+;B[qe]
+;W[qc]
+;B[pc]
+;W[re]
+;B[rc]
+;W[qb]
+;B[rb]
+;W[qf]
+;B[pf]
+;W[qg]
+;B[rh]
+;W[pg]
+;B[of]
+;W[og]
+;B[nf]
+;W[ng]C[Song [4d\]: mm they just started
+]
+;B[rg]
+;W[rf]C[LMP3 [-\]: they've used almost a half of their time already
+Song [4d\]: ah rlly? mm s13 is mm I was thinking g8 is option but now feel like I would r11 here hehe I don't understand this exchange now
+]
+;B[qi]
+;W[nl]
+;B[lk]
+;W[jk]
+;B[mg]
+;W[mh]
+;B[lh]C[Song [4d\]: think w should have thought more in o8 turn
+]
+;W[li]C[Song [4d\]: I thoguth would n14 not o8 aigoo oh well too late now
+Song [4d\]: I guess b will n11 cut now
+]
+;B[mi]
+;W[nh]
+;B[ki]
+;W[lg]
+;B[lj]
+;W[mf]
+;B[gl]C[Song [4d\]: ah there is o8
+]
+;W[kn]
+;B[ln]
+;W[ji]
+;B[jh]
+;W[ii]
+;B[fj]
+;W[em]
+;B[dn]C[Song [4d\]: aigoo w a bit in trouble
+]
+;W[ll]
+;B[ml]
+;W[kl]C[Song [4d\]: m8 interesting g7 also option
+]
+;B[nm]
+;W[gn]
+;B[fn]C[Song [4d\]: mm yes I would also f6
+Song [4d\]: g6 questionable 
+]
+;W[fk]
+;B[gk]
+;W[gj]C[Song [4d\]: mm I would also f9 mm
+Song [4d\]: mm maybe e10 for b now
+]
+;B[fi]C[Song [4d\]: aigoo extend
+SadPlayer [-\]: what's aigoo?
+]
+;W[bh]C[Song [4d\]: aigoo means oh my or oh goodness
+LMP3 [-\]: in what language?
+Song [4d\]: is korean guess u can say is expression of
+Song [4d\]: surprise I guess?
+SadPlayer [-\]: thx
+]
+;B[bi]
+;W[ci]
+;B[bg]
+;W[dh]
+;B[cg]
+;W[di]
+;B[eg]C[Song [4d\]: b11 also nice move I would play as well
+Song [4d\]: no problem sad
+SadPlayer [-\]: f7 
+mayeck [-\]: umarł bi?
+mayeck [-\]: cofam znak zapytania :P
+SadPlayer [-\]: Koichi nie ginie
+mayeck [-\]: koichi nie w formie :(
+Song [4d\]: aigoo I dont know
+Song [4d\]: I dont see how w will live through this I would like to o15 or something but the game seems a bit hopeless for white
+Song [4d\]: even if white is alive white needs to end life with sente since technically white is behind overall
+mayeck [-\]: not a chance
+mayeck [-\]: there is no complicated move to live
+mayeck [-\]: so that b could blunder
+mayeck [-\]: and to simple tries b wont blunder :)
+Slaboumov [4k\]: can white play something near c3 or it's suicide territory? )
+mayeck [-\]: there is some aji
+mayeck [-\]: how about q16 q15 o15 p16 p15 q16 t18 ?
+]
+;W[gm]C[Slaboumov [4k\]: why 1k play in this champ? )
+LMP3 [-\]: he is strong :)
+LMP3 [-\]: has qualified in the elimination
+Song [4d\]: because his strength is not rlly 1kyu 
+Song [4d\]: and yes there is annoying aji top right
+Song [4d\]: but b still alive
+Song [4d\]: mm g7
+LMP3 [-\]: is mm some common korean expression as well?
+mayeck [-\]: g7 revoes the possibility of c3 at any rate
+mayeck [-\]: so maybe g7 should try sth in upper right
+mayeck [-\]: and reserve this for later
+Song [4d\]: I guess b f7
+Song [4d\]: no is not korean expression 
+LMP3 [-\]: so its just Song's expression
+DKOI [11k\]: Well I use the "expression" too
+]
+;B[fm]C[ofbusy [-\]: is this the semi final ? ( as there s 2 games)
+Song [4d\]: m maybe f8? it just mean I am thinking questions my moves
+]
+;W[ih]
+;B[fl]
+;W[jg]C[Song [4d\]: ah ok he went my f7 and now white is doing something on top
+]
+;B[eb]C[Song [4d\]: ok I predicted something like this
+]
+;W[rp]
+;B[ro]C[Song [4d\]: seems like game is over right?
+Song [4d\]: the loss is quite large I mean is nonsense this lead 
+]
+;W[fr]C[LMP3 [-\]: ofbusy, no, 2 other boards already finished
+]
+;B[dr]C[ofbusy [-\]: hm ok 
+Song [4d\]: yea black just need to play very defensive and solid
+Entity [1d\]: the q16 + t18 combo looks scary to me
+Song [4d\]: his lead big enough to do that I think
+ofbusy [-\]: thx i just noticed the name was lmp3 but it was after asking the question )
+]
+;W[gr]
+;B[mr]
+;W[nr]
+;B[sp]
+;W[sq]C[Song [4d\]: b top right is alive even with that no?
+]
+;B[so]
+;W[rr]C[Entity [1d\]: I think it gets complicated
+]
+;B[ad]
+;W[bd]
+;B[ae]
+;W[ac]
+;B[bf]C[Song [4d\]: ah wait
+]
+;W[be]
+;B[af]
+;W[bb]C[Entity [1d\]: b can capture o15 and p15 but it only gets out with a false eye
+Slaboumov [4k\]: very weak japan player )
+LMP3 [-\]: might be not his best time but he's pretty solid overall
+]
+;B[ho]C[Slaboumov [4k\]: if your name Koichiro Habu you need kill stupid euro players with 9 handi on all board xDDD
+DKOI [11k\]: Who is playing BTW? Can not see that with the mobile client
+LMP3 [-\]: black is 1k white is 5d
+Slaboumov [4k\]: Koichiro Habu 5d white - Karol Cieslak 1k black
+DKOI [11k\]: Thx
+SG [4k\]: can c10 live?
+Song [4d\]: ?
+BubbIes [3d?\]: yea
+Song [4d\]: ah yes
+Song [4d\]: black can live top right
+Song [4d\]: haha funny way though
+]
+;W[ge]C[Song [4d\]: no nvm I misread aigoo guess if b wantes to end this game for good a move on top right would be nice
+]
+;B[in]
+(;W[jn])
+(;W[kr]
+;B[hq]
+;W[hr]
+;B[jq]
+;W[kq]C[Slaboumov [4k\]: hmmm...
+]
+;B[ip]
+;W[ir]
+;B[kp]
+;W[jr]
+;B[lr]
+;W[er]C[Slaboumov [4k\]: Cho Chikun vol 1 chapter 3 example 19 - how to kill themselve xD
+Song [4d\]: I do not think the loss of black stones on top right are enough to win either mm
+]
+;B[es]C[Slaboumov [4k\]: mm?
+]
+;W[jp]
+;B[jo]
+;W[ko]
+;B[lp]
+;W[jn]
+;B[io]
+;W[om]
+;B[ol]
+;W[nk]
+;B[ok]C[LMP3 [-\]: white has resigned
+koszatek [3k\]: BRAWO !
+Kountch [2k\]: Strong 1k
+Song [4d\]: mm interesting game
+DKOI [11k\]: Paper dans :)
+koszatek [3k\]: Przekaż graty mojemu bratowi ! :D
+LMP3 [-\]: brat dziekuje :)
+LMP3 [-\]: black is very excited about this game
+Song [4d\]: I think b played quite nice this game
+Ikra [3k\]: but why not Bo10 ?
+LMP3 [-\]: white is screaming in despair
+LMP3 [-\]: literally :)
+Song [4d\]: mm
+BubbIes [3d?\]: Give him a hug
+Song [4d\]: I guess
+krakengo [?\]: poor w
+Song [4d\]: black does live on top right
+Z3R0 [?\]: wow, gratuluje!
+Ikra [3k\]: but B can do first on top right ..
+Song [4d\]: mm I dont think b needs to go top right to live
+Song [4d\]: because when t18 is played
+Song [4d\]: white still has n15 cut
+Ikra [3k\]: top right not bigger than  h2 ?
+Song [4d\]: maybe I misread Idk the others can figure it out
+Ikra [3k\]: as well W has c2 to leave
+mayeck [-\]: very hard to live for b on top right
+mayeck [-\]: after k13 
+YoungPro [-\]: is this 1k?
+LMP3 [-\]: they say there was no aji at the top
+LMP3 [-\]: for W
+mayeck [-\]: really?
+LMP3 [-\]: black lived
+LMP3 [-\]: thats what they say
+mayeck [-\]: show q16 to hoichi
+Song [4d\]: mhm
+YoungPro [-\]: this b played like.. 
+mayeck [-\]: :)
+Song [4d\]: yea I guess I read correctly
+LMP3 [-\]: they're reviewing fuseki now
+LMP3 [-\]: will ask about q16
+Song [4d\]: seem like pressure but
+Song [4d\]: I see way for b to live after q16 and t18 comebo
+Song [4d\]: because of whites cuts
+mayeck [-\]: im 95% sure that w can at least get ko on top
+mayeck [-\]: lmp can i have control? :D
+BubbIes [3d?\]: :o
+YoungPro [-\]: q16 q15 o15 p16 p15 q16 t18 q18 t17 r19 o18 (q16 q15 o15 p16 p15 q16 t18 n18 (something with n18)
+Song [4d\]: yea this what I say
+Song [4d\]: the cuts^
+Song [4d\]: b can live
+Song [4d\]: many ways even if white have different responces
+mayeck [-\]: prove me wrong in polish room :)
+ofbusy [-\]: nice one b
+]))

@@ -1,291 +1,445 @@
-(
-  ;BR[4d]CA[UTF-8]DT[2014-12-13]EV[Polish Go Championship 2014]FF[4]GM[1]GN[Round 4 - Board 3]KM[6.50]PB[Stanisław Frejlak]PC[Warszawa]PW[Koichiro Habu]RE[W+R]RU[japanese]ST[2]SZ[19]WR[4d]
-  ;B[dp]
-  ;W[pp]
-  ;B[dc]
-  ;W[qd]
-  ;B[od]
-  ;W[oc]
-  ;B[nc]
-  ;W[pc]
-  ;B[nd]
-  ;W[qf]
-  ;B[jd]
-  ;W[cf]
-  ;B[be]
-  ;W[id]
-  ;B[ic]
-  ;W[hc]
-  ;B[hd]
-  ;W[ie]
-  ;B[he]
-  ;W[jc]
-  ;B[ib]
-  ;W[je]
-  ;B[kd]
-  ;W[gc]
-  ;B[if]
-  ;W[ke]
-  ;B[kc]
-  ;W[ec]
-  ;B[dd]
-  ;W[ed]
-  ;B[de]
-  ;W[hf]
-  ;B[ge]
-  ;W[hg]
-  ;B[le]
-  ;W[jg]
-  ;B[ee]
-  ;W[fe]
-  ;B[gf]
-  ;W[db]
-  ;B[gg]
-  ;W[hh]
-  ;B[fb]
-  ;W[hb]
-  ;B[jb]
-  ;W[cb]
-  ;B[fc]
-  ;W[fd]
-  ;B[eb]
-  ;W[ff]
-  ;B[fg]
-  ;W[ef]
-  ;B[gd]
-  ;W[eh]
-  ;B[bc]
-  ;W[df]
-  ;B[ha]
-  ;W[bf]
-  ;B[bb]
-  ;W[cn]
-  ;B[eo]
-  ;W[dk]
-  ;B[nq]
-  ;W[jp]
-  ;B[pn]
-  ;W[oq]
-  ;B[np]
-  ;W[oo]
-  ;B[qq]
-  ;W[qp]
-  ;B[op]
-  ;W[pq]
-  ;B[po]
-  ;W[on]
-  ;B[pm]
-  ;W[mn]
-  ;B[lo]
-  ;W[qk]
-  ;B[pk]
-  ;W[pj]
-  ;B[mo]
-  ;W[om]
-  ;B[pl]
-  ;W[ml]
-  ;B[qj]
-  ;W[gq]
-  ;B[co]
-  ;W[dn]
-  ;B[bn]
-  ;W[bm]
-  ;B[bo]
-  ;W[dr]
-  ;B[bl]
-  ;W[am]
-  ;B[cr]
-  ;W[cq]
-  ;B[er]
-  ;W[br]
-  ;B[gp]
-  ;W[hq]
-  ;B[fq]
-  ;W[hp]
-  ;B[go]
-  ;W[lq]
-  ;B[ln]
-  ;W[lm]
-  ;B[jn]
-  ;W[in]
-  ;B[km]
-  ;W[kl]
-  ;B[jl]
-  ;W[kk]
-  ;B[im]
-  ;W[hn]
-  ;B[fm]
-  ;W[em]
-  ;B[gr]
-  ;W[hm]
-  ;B[jk]
-  ;W[fn]
-  ;B[kj]
-  ;W[mk]
-  ;B[nn]
-  ;W[hr]
-  ;B[aq]
-  ;W[ar]
-  ;B[dq]
-  ;W[cs]
-  ;B[en]
-  ;W[el]
-  ;B[cm]
-  ;W[cl]
-  ;B[gn]
-  ;W[qi]
-  ;B[rj]
-  ;W[rk]
-  ;B[ri]
-  ;W[rm]
-  ;B[qh]
-  ;W[nm]
-  ;B[mm]
-  ;W[ro]
-  ;B[ll]
-  ;W[pi]
-  ;B[ph]
-  ;W[ni]
-  ;B[nj]
-  ;W[oi]
-  ;B[og]
-  ;W[mj]
-  ;B[mi]
-  ;W[ng]
-  ;B[mh]
-  ;W[nh]
-  ;B[nf]
-  ;W[mg]
-  ;B[lg]
-  ;W[lf]
-  ;B[li]
-  ;W[kg]
-  ;B[ok]
-  ;W[pg]
-  ;B[re]
-  ;W[rf]
-  ;B[pf]
-  ;W[qe]
-  ;B[qg]
-  ;W[rg]
-  ;B[lh]
-  ;W[mf]
-  ;B[rh]
-  ;W[ki]
-  ;B[lj]
-  ;W[hk]
-  ;B[gi]
-  ;W[gh]
-  ;B[fh]
-  ;W[fi]
-  ;B[gb]
-  ;W[jj]
-  ;B[ij]
-  ;W[ji]
-  ;B[lk]
-  ;W[ei]
-  ;B[eg]
-  ;W[dg]
-  ;B[dh]
-  ;W[ch]
-  ;B[fj]
-  ;W[gm]
-  ;B[ii]
-  ;W[gj]
-  ;B[ik]
-  ;W[hi]
-  ;B[es]
-  ;W[ds]
-  ;B[hs]
-  ;W[is]
-  ;B[gs]
-  ;W[lr]
-  ;B[nr]
-  ;W[pr]
-  ;B[rn]
-  ;W[qn]
-  ;B[qo]
-  ;W[sn]
-  ;B[qm]
-  ;W[rq]
-  ;B[rl]
-  ;W[sl]
-  ;B[sj]
-  ;W[ql]
-  ;B[sk]
-  ;W[rl]
-  ;B[rn]
-  ;W[hc]
-  ;B[sm]
-  ;W[gc]
-  ;B[so]
-  ;W[ae]
-  ;B[rp]
-  ;W[qr]
-  ;B[ad]
-  ;W[af]
-  ;B[nb]
-  ;W[ob]
-  ;B[oa]
-  ;W[pa]
-  ;B[na]
-  ;W[ce]
-  ;B[bd]
-  ;W[cd]
-  ;B[cc]
-  ;W[oj]
-  ;B[nk]
-  ;W[me]
-  ;B[ks]
-  ;W[jr]
-  ;B[qb]
-  ;W[pb]
-  ;B[qc]
-  ;W[pd]
-  ;B[rd]
-  ;W[rb]
-  ;B[rc]
-  ;W[qa]
-  ;B[ra]
-  ;W[sa]
-  ;B[sd]
-  ;W[se]
-  ;B[sf]
-  ;W[sg]
-  ;B[sc]
-  ;W[se]
-  ;B[iq]
-  ;W[ip]
-  ;B[sf]
-  ;W[dm]
-  ;B[pe]
-  ;W[se]
-  ;B[bs]
-  ;W[as]
-  ;B[sf]
-  ;W[ba]
-  ;B[da]
-  ;W[se]
-  ;B[cp]
-  ;W[bq]
-  ;B[sf]
-  ;W[ab]
-  ;B[ca]
-  ;W[se]
-  ;B[ir]
-  ;W[jq]
-  ;B[sf]
-  ;W[sq]
-  ;B[fl]
-  ;W[fk]
-  ;B[sh]
-  ;W[se]
-  ;B[gl]
-  ;W[sb]
-  ;B[hl]
-  ;W[gk]
-  ;B[fo]
-  ;W[ls]
-  ;B[ld]
-  ;W[md]
-)
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[5400]OT[1x60 byo-yomi]
+GN[Polish Championship 2014 Round 4 Board 3]PW[Koichiro Habu]PB[Stanislaw Frejlak]WR[4d]BR[4d]DT[2014-12-13]C[kamil [2d?\]: pozdrowienia dla Koichiego i Siasia!
+]RE[W+Resign]
+;B[dp]
+;W[pp]
+;B[dc]
+;W[qd]C[Lesmian [2d\]: i dla osoby transmitujacej oraz podającej jej herbatę w razie potrzeby
+LMP3 [-\]: :)
+]
+;B[od]
+;W[oc]C[urtok [11k\]: w "aktywnych grach" cię nie ma LMP3
+]
+;B[nc]
+;W[pc]
+;B[nd]
+;W[qf]
+;B[jd]
+;W[cf]C[LMP3 [-\]: moze dlatego ze ta pierwsza gra jeszcze jest otwarta
+]
+;B[be]C[LMP3 [-\]: koichiro sie usmiechnal na ten ruch siasia
+wysek [?\]: poprosze o wpisanie w nazwe gry: Polish Championship 2014 Round 4 Board 3
+LMP3 [-\]: wysek: juz
+LMP3 [-\]: sorki ;)
+Lesmian [2d\]: wygląda na mocne siasuji
+]
+;W[id]C[kamil [2d?\]: Koichiro nie lubi odpowiadać na ruchy na 2 linii
+]
+;B[ic]C[gfdhff [2k\]: do boju siasio ?
+]
+;W[hc]C[gfdhff [2k\]: !!!!!
+Lesmian [2d\]: ja bym raczej powiedział, że Koichiro lubi tsuke. Wczorajsza gra z Mateuszem była pełna podobnych zagrań
+]
+;B[hd]
+;W[ie]
+;B[he]C[Lesmian [2d\]: ale może w tym być jakas niechęc do odpowiadania na b15. Bo jak na to lokalnie odpowiedzieć najlepiej? :)
+]
+;W[jc]
+;B[ib]
+;W[je]
+;B[kd]
+;W[gc]
+;B[if]C[mayeck [5d\]: koichi znowu chce przegrać w 30 ruchach :(
+]
+;W[ke]
+;B[kc]
+;W[ec]C[LMP3 [-\]: znowu tsuke :)
+]
+;B[dd]
+;W[ed]
+;B[de]
+;W[hf]C[woodpecker [?\]: Koichi okrutnie przegina
+radziol: eh tam
+radziol: biały zyje
+LMP3 [-\]: stefan czemu cie tu nie ma!
+LMP3 [-\]: przyjsc i grac!
+Lesmian [2d\]: w obliczu siasuji nie ma się wyjścia
+]
+;B[ge]C[woodpecker [?\]: pokibicować chętnie, ale grać nie dam rady i tak 
+woodpecker [?\]: to za trudna gra dla mnie :P
+Lesmian [2d\]: gra nie jest trudna, ale kamienie są ciężkie
+woodpecker [?\]: haha
+]
+;W[hg]
+;B[le]
+;W[jg]
+;B[ee]
+;W[fe]
+;B[gf]
+;W[db]
+;B[gg]
+;W[hh]
+;B[fb]C[Lesmian [2d\]: co tu się stało
+Lesmian [2d\]: chwila nieuwagi
+Lesmian [2d\]: i znowu białe mają problem
+Lesmian [2d\]: a jak zmieniałem okno to było ok
+]
+;W[hb]
+;B[jb]
+;W[cb]
+;B[fc]
+;W[fd]
+;B[eb]
+;W[ff]
+;B[fg]
+;W[ef]
+;B[gd]
+;W[eh]
+;B[bc]
+;W[df]
+;B[ha]
+;W[bf]
+;B[bb]
+;W[cn]
+;B[eo]C[Lesmian [2d\]: w sumie nie jest tak źle, tylko te niepołączone grupy w centrum kiedyś będą bolały
+]
+;W[dk]
+;B[nq]
+;W[jp]C[mayeck [5d\]: w sumie to jakaś grywalna gra dla bi się zrobiła
+]
+(;B[qn])
+(;B[pn]
+;W[oq]C[Lesmian [2d\]: to przez ten kręciołek u góry, w pewnym momencie Siasio musiał stracić orientację, co chce
+Lesmian [2d\]: bo raz brał ścianę do centrum, raz teren, potem ścianę, no i skończył z terenem
+]
+;B[np]
+;W[oo]
+;B[qq]
+;W[qp]
+;B[op]C[mayeck [5d\]: o,siasio nie zna joseki :)
+mayeck [5d\]: gora tak wygląda trochę
+mayeck [5d\]: jakby cały czas w ścianę szeł byloby super
+]
+;W[pq]
+;B[po]
+;W[on]
+;B[pm]
+;W[mn]C[Lesmian [2d\]: no teraz zaczyna to być już dobrą grą dla białego, co tu się stało w tym rogu? ;)
+]
+;B[lo]
+;W[qk]C[Lesmian [2d\]: będzie bijatyka
+Lesmian [2d\]: :)
+Lesmian [2d\]: nia siasuji i tsuke
+Lesmian [2d\]: na
+gfdhff [2k\]: :)
+]
+;B[pk]
+;W[pj]
+;B[mo]
+;W[om]
+;B[pl]
+;W[ml]
+;B[qj]
+;W[gq]
+;B[co]
+;W[dn]
+;B[bn]
+;W[bm]
+;B[bo]
+;W[dr]
+;B[bl]
+;W[am]C[LMP3 [-\]: siasio sie cieszy
+LMP3 [-\]: i koichi sie cieszy
+LMP3 [-\]: smieja sie
+LMP3 [-\]: ;)
+Lesmian [2d\]: co go robi z ludźmi
+LMP3 [-\]: uszczesliwia
+Lesmian [2d\]: ale czy to takie chichranie
+Lesmian [2d\]: czy taki jowialny śmiech na całą salę?
+Lesmian [2d\]: ;)
+LMP3 [-\]: "hihi"
+LMP3 [-\]: koichi do sasia "co sie tak cieszysz hihi"
+tenuk [1d\]: Faktycznie, tragicznie dla Siasia to wygląda
+]
+;B[cr]C[Lesmian [2d\]: a tam
+maciek [2d\]: ciezko powiedziec
+Lesmian [2d\]: potężne siasuji wisi w powietrzu
+]
+;W[cq]
+;B[er]
+;W[br]C[Lesmian [2d\]: wolę białe, ale gra nie jest rozstrzygnięta dopóki prawy dolny róg wygląda jak wygląda
+Lesmian [2d\]: a teraz można zaatakować jeszcze k4 także jest wesoło
+]
+;B[gp]
+;W[hq]
+;B[fq]
+;W[hp]
+;B[go]
+;W[lq]
+;B[ln]
+;W[lm]
+;B[jn]
+;W[in]
+;B[km]
+;W[kl]
+;B[jl]
+;W[kk]
+;B[im]
+;W[hn]
+;B[fm]C[LMP3 [-\]: siasiowi zostalo 7 min
+LMP3 [-\]: koichi 48
+LMP3 [-\]: yy tfu
+LMP3 [-\]: 7 sekund :)
+Lesmian [2d\]: :)
+LMP3 [-\]: koichi 48 min
+Lesmian [2d\]: czyli teraz możemy spodziewać się siasuji co minutę
+]
+;W[em]
+;B[gr]
+;W[hm]
+;B[jk]
+;W[fn]
+;B[kj]
+;W[mk]
+;B[nn]
+;W[hr]
+;B[aq]
+;W[ar]
+;B[dq]
+;W[cs]
+;B[en]
+;W[el]
+;B[cm]
+;W[cl]
+;B[gn]
+;W[qi]
+;B[rj]
+;W[rk]
+;B[ri]
+;W[rm]
+;B[qh]
+;W[nm]
+;B[mm]
+;W[ro]
+;B[ll]
+;W[pi]
+;B[ph]C[gfdhff [2k\]: 7 sekund a minut to niewielka różnica ;)
+]
+;W[ni]
+;B[nj]
+;W[oi]
+;B[og]
+;W[mj]
+;B[mi]
+;W[ng]
+;B[mh]
+;W[nh]
+;B[nf]
+;W[mg]C[tenuk [1d\]: p13 to chyba był błąd
+]
+;B[lg]
+;W[lf]C[tenuk [1d\]: jakby czarny sam zagrał n10, to uratował by obie grupy
+]
+;B[li]
+;W[kg]
+;B[ok]
+;W[pg]
+;B[re]
+;W[rf]
+;B[pf]
+;W[qe]
+;B[qg]
+;W[rg]C[tenuk [1d\]: o? i tak uratował
+]
+;B[lh]
+;W[mf]
+;B[rh]
+;W[ki]
+;B[lj]
+;W[hk]
+;B[gi]
+;W[gh]
+;B[fh]
+;W[fi]
+;B[gb]
+;W[jj]
+;B[ij]
+;W[ji]
+;B[lk]
+;W[ei]
+;B[eg]
+;W[dg]
+;B[dh]
+;W[ch]
+;B[fj]
+;W[gm]C[tenuk [1d\]: Habu ma ze 20p przewagi
+]
+;B[ii]
+;W[gj]C[rwy [2k\]: why don't cut at j9? (white)
+]
+;B[ik]
+;W[hi]C[radziol: a czemu nie polaczyl h11
+rwy [2k\]: cut at j9
+nare [-\]: nie widział :(
+Winc [1k\]: why didnt black connect at h11?
+]
+;B[es]C[rwy [2k\]: because of the cut at j9
+]
+;W[ds]C[radziol: nah
+Winc [1k\]: there was no cut
+]
+;B[hs]
+;W[is]
+;B[gs]C[rwy [2k\]: ooo ... right
+]
+;W[lr]
+;B[nr]
+;W[pr]
+;B[rn]
+;W[qn]
+;B[qo]
+;W[sn]
+;B[qm]C[LMP3 [-\]: koichi pobil sie w czolo
+LMP3 [-\]: ;)
+]
+;W[rq]C[LMP3 [-\]: wielokrotnie ;)
+]
+;B[rl]C[LMP3 [-\]: ciagle sie bije ;)
+radziol: lepiej siebie niz Siasia
+]
+;W[sl]
+;B[sj]C[Warfreak2 [4d\]: i see that there will be strong competition in this tournament, for second place
+]
+;W[ql]
+;B[sk]
+;W[rl]
+;B[rn]C[Lesmian [2d\]: ratuj kluchę!
+]
+;W[hc]C[tenuk [1d\]: :)))
+urtok [11k\]: :)
+]
+;B[sm]
+;W[gc]
+;B[so]C[wysek [?\]: nice exchange for w
+tenuk [1d\]: b lost 4 points
+]
+;W[ae]C[tenuk [1d\]: but he was far behind anyway
+]
+;B[rp]
+;W[qr]
+;B[ad]
+;W[af]
+;B[nb]
+;W[ob]
+;B[oa]
+;W[pa]
+;B[na]
+;W[ce]
+;B[bd]
+;W[cd]
+;B[cc]
+;W[oj]
+;B[nk]
+;W[me]
+;B[ks]
+;W[jr]
+;B[qb]
+;W[pb]
+;B[qc]
+;W[pd]
+;B[rd]
+;W[rb]
+;B[rc]
+;W[qa]
+;B[ra]
+;W[sa]
+;B[sd]C[LMP3 [-\]: wow
+LMP3 [-\]: siasio walil niezle
+LMP3 [-\]: i szybko
+Lesmian [2d\]: a nie mowiłem, że nadejdzie siasuji?
+]
+;W[se]
+;B[sf]
+;W[sg]
+;B[sc]
+;W[se]C[tenuk [1d\]: dwustopniowe ko
+tenuk [1d\]: ale nie ma nic do stracenia
+Lesmian [2d\]: nie lepiej było b18 zamiast b17?
+Lesmian [2d\]: tzn t18
+]
+;B[iq]C[wysek [?\]: wtedy laczy i podwojne ko
+]
+;W[ip]C[Lesmian [2d\]: a co oznacza w takiej sytuacji podwojne ko?
+wysek [?\]: no, bialy zyje w podwojnym ko
+]
+;B[sf]C[Lesmian [2d\]: ale czarny tez?
+Lesmian [2d\]: czyli rodzaj seki?
+tenuk [1d\]: Siasio musi odpuścić groźbę i wtedy dopiero jest zwykłe ko
+wysek [?\]: nie, czarny wtedy nie zyje tam, ale ma nieskonczona liczbe grozb
+tenuk [1d\]: nie Habu wystarczy że zignoruje jedną groźbę i zbije
+wysek [?\]: tenuk mowimy o innej sytuacji:)
+]
+;W[dm]
+;B[pe]
+;W[se]C[tenuk [1d\]: ooo
+]
+;B[bs]C[wysek [?\]: teraz jest 2stopniowe. bylo 3:)
+]
+;W[as]C[Lesmian [2d\]: czarny ma grozby jeszcze w PD
+]
+;B[sf]
+;W[ba]
+;B[da]
+;W[se]
+;B[cp]
+;W[bq]
+;B[sf]
+;W[ab]
+;B[ca]
+;W[se]C[Lesmian [2d\]: czy wszyscy transmiterzy zachowali siłę na następną rundę? :)
+LMP3 [-\]: tak sadze
+Bogdan13x [1k\]: ciekawie jak zawodnicy
+LMP3 [-\]: teraz bedzie przerwa obiadowa po tej grze
+Lesmian [2d\]: bogowie nieśmiertelni powinni ich wynagrodzić 
+]
+;B[ir]C[wysek [?\]: o ktorej kolejna?
+Lesmian [2d\]: 15
+LMP3 [-\]: prawdopodobnie 15:30
+LMP3 [-\]: mielismy 30min opoznienia
+wysek [?\]: bij
+wysek [?\]: Siasio podpuszcza tylko
+]
+;W[jq]
+;B[sf]C[wysek [?\]: no bij ale nie tu :)
+LMP3 [-\]: :D
+Lesmian [2d\]: zaraz bedzie grozil w t2
+urtok [11k\]: :)
+Lesmian [2d\]: a nie jakies pitu pitu w j1
+]
+;W[sq]C[wysek [?\]: no wlasnie
+tenuk [1d\]: sprytnie
+wysek [?\]: ladny moment na poddanie
+]
+;B[fl]C[tenuk [1d\]: teraz Siasio nie ma już żadnej groźby
+]
+;W[fk]C[Aleksandra [6d?\]: t17 was so useless
+]
+;B[sh]
+;W[se]C[Lesmian [2d\]: Siasio powinien uratować a3
+Lesmian [2d\]: należy mu się to
+]
+;B[gl]
+;W[sb]
+;B[hl]
+;W[gk]
+;B[fo]
+;W[ls]C[LMP3 [-\]: siasio liczy jencow
+tenuk [1d\]: t17 was ok
+tenuk [1d\]: there was no option
+]
+;B[ld]
+;W[md]C[LMP3 [-\]: siasio poddal
+LMP3 [-\]: W wins by resignation
+maciek [2d\]: brawo Koichi!
+Lesmian [2d\]: Sebastian jeszcze pokona Mateusza i mistrzostwo zapewnione!
+LMP3 [-\]: nastepna runda o 15:00
+Lesmian [2d\]: ok, dzięki :)
+Lesmian [2d\]: o 15?
+LMP3 [-\]: tak
+LMP3 [-\]: taki jest plan
+Lesmian [2d\]: to na obiad macie kanapkę z serem?
+Lesmian [2d\]: ok :)
+wysek [?\]: proponuje opoznic o 30min, rano start tez byl opozniony
+Lesmian [2d\]: jak taki plan no to ok, bo myślałem, że rzeczywistość :)
+]))

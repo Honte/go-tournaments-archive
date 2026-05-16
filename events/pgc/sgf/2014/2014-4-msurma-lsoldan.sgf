@@ -1,294 +1,699 @@
-(
-  ;BR[7d]CA[UTF-8]DT[2014-12-13]EV[Polish Go Championship 2014]FF[4]GM[1]GN[Round 4 - Board 4]KM[6.50]PB[Mateusz Surma]PC[Warszawa]PW[Leszek Sołdan]RE[B+6.5]RU[japanese]ST[2]SZ[19]US[Tomasz Zając]WR[4d]
-  ;B[qd]
-  ;W[dc]
-  ;B[pq]
-  ;W[oc]
-  ;B[de]
-  ;W[dp]
-  ;B[cc]
-  ;W[po]
-  ;B[qo]
-  ;W[qn]
-  ;B[qp]
-  ;W[pn]
-  ;B[nq]
-  ;W[qf]
-  ;B[pe]
-  ;W[pf]
-  ;B[ne]
-  ;W[of]
-  ;B[nc]
-  ;W[nb]
-  ;B[mc]
-  ;W[oe]
-  ;B[od]
-  ;W[pc]
-  ;B[pd]
-  ;W[qc]
-  ;B[re]
-  ;W[mb]
-  ;B[pj]
-  ;W[nj]
-  ;B[pl]
-  ;W[nf]
-  ;B[me]
-  ;W[kc]
-  ;B[nl]
-  ;W[pp]
-  ;B[qq]
-  ;W[mo]
-  ;B[ll]
-  ;W[lg]
-  ;B[ke]
-  ;W[mq]
-  ;B[mr]
-  ;W[np]
-  ;B[oq]
-  ;W[lq]
-  ;B[nn]
-  ;W[no]
-  ;B[cn]
-  ;W[fp]
-  ;B[lr]
-  ;W[jq]
-  ;B[kq]
-  ;W[kp]
-  ;B[kr]
-  ;W[jp]
-  ;B[cq]
-  ;W[cp]
-  ;B[bp]
-  ;W[bo]
-  ;B[bq]
-  ;W[co]
-  ;B[er]
-  ;W[dn]
-  ;B[fq]
-  ;W[gq]
-  ;B[cj]
-  ;W[fr]
-  ;B[eq]
-  ;W[gr]
-  ;B[dq]
-  ;W[cd]
-  ;B[dd]
-  ;W[bc]
-  ;B[cb]
-  ;W[ce]
-  ;B[ec]
-  ;W[bb]
-  ;B[db]
-  ;W[cg]
-  ;B[ej]
-  ;W[df]
-  ;B[cm]
-  ;W[dm]
-  ;B[cl]
-  ;W[go]
-  ;B[lp]
-  ;W[hc]
-  ;B[bf]
-  ;W[bg]
-  ;B[ef]
-  ;W[dg]
-  ;B[ph]
-  ;W[nh]
-  ;B[rg]
-  ;W[fb]
-  ;B[he]
-  ;W[id]
-  ;B[jg]
-  ;W[kj]
-  ;B[lo]
-  ;W[ln]
-  ;B[mp]
-  ;W[mn]
-  ;B[jl]
-  ;W[kn]
-  ;B[li]
-  ;W[mk]
-  ;B[mi]
-  ;W[ni]
-  ;B[lk]
-  ;W[lj]
-  ;B[mj]
-  ;W[nk]
-  ;B[ki]
-  ;W[ml]
-  ;B[jj]
-  ;W[eg]
-  ;B[ff]
-  ;W[fc]
-  ;B[rl]
-  ;W[fd]
-  ;B[mm]
-  ;W[ol]
-  ;B[om]
-  ;W[nm]
-  ;B[bd]
-  ;W[be]
-  ;B[nl]
-  ;W[ok]
-  ;B[nm]
-  ;W[pm]
-  ;B[lm]
-  ;W[pk]
-  ;B[ql]
-  ;W[qj]
-  ;B[qi]
-  ;W[qk]
-  ;B[rk]
-  ;W[rj]
-  ;B[rn]
-  ;W[rm]
-  ;B[qm]
-  ;W[rf]
-  ;B[sf]
-  ;W[rh]
-  ;B[qg]
-  ;W[ri]
-  ;B[pg]
-  ;W[sk]
-  ;B[sm]
-  ;W[sj]
-  ;B[sl]
-  ;W[sh]
-  ;B[sg]
-  ;W[mf]
-  ;B[mh]
-  ;W[kf]
-  ;B[je]
-  ;W[jf]
-  ;B[ie]
-  ;W[if]
-  ;B[le]
-  ;W[lf]
-  ;B[hf]
-  ;W[ig]
-  ;B[fe]
-  ;W[hh]
-  ;B[jc]
-  ;W[jd]
-  ;B[lc]
-  ;W[lb]
-  ;B[kd]
-  ;W[kb]
-  ;B[rc]
-  ;W[rb]
-  ;B[sb]
-  ;W[ra]
-  ;B[gh]
-  ;W[jh]
-  ;B[ep]
-  ;W[eo]
-  ;B[fn]
-  ;W[fo]
-  ;B[ko]
-  ;W[jo]
-  ;B[jn]
-  ;W[jm]
-  ;B[in]
-  ;W[im]
-  ;B[km]
-  ;W[hn]
-  ;B[op]
-  ;W[io]
-  ;B[oo]
-  ;W[jn]
-  ;B[bn]
-  ;W[ap]
-  ;B[bs]
-  ;W[eb]
-  ;B[ee]
-  ;W[aj]
-  ;B[bi]
-  ;W[ai]
-  ;B[ah]
-  ;W[bh]
-  ;B[ak]
-  ;W[ag]
-  ;B[bj]
-  ;W[jr]
-  ;B[el]
-  ;W[fk]
-  ;B[ah]
-  ;W[di]
-  ;B[hd]
-  ;W[ic]
-  ;B[hi]
-  ;W[ek]
-  ;B[dl]
-  ;W[dj]
-  ;B[fi]
-  ;W[ba]
-  ;B[kh]
-  ;W[kg]
-  ;B[fl]
-  ;W[dk]
-  ;B[aq]
-  ;W[ao]
-  ;B[an]
-  ;W[do]
-  ;B[ai]
-  ;W[ck]
-  ;B[bk]
-  ;W[fg]
-  ;B[gg]
-  ;W[gd]
-  ;B[ii]
-  ;W[ih]
-  ;B[ci]
-  ;W[ge]
-  ;B[gf]
-  ;W[gj]
-  ;B[gi]
-  ;W[ik]
-  ;B[jk]
-  ;W[ij]
-  ;B[ji]
-  ;W[gl]
-  ;B[gm]
-  ;W[ei]
-  ;B[fj]
-  ;W[da]
-  ;B[hl]
-  ;W[gk]
-  ;B[il]
-  ;W[em]
-  ;B[fm]
-  ;W[qe]
-  ;B[js]
-  ;W[is]
-  ;B[ks]
-  ;W[es]
-  ;B[ds]
-  ;W[fs]
-  ;B[dc]
-  ;W[ca]
-  ;B[hm]
-  ;W[oh]
-  ;B[og]
-  ;W[ng]
-  ;B[qb]
-  ;W[pb]
-  ;B[gn]
-  ;W[ir]
-  ;B[pi]
-  ;W[qa]
-  ;B[se]
-  ;W[hj]
-  ;B[ch]
-  ;W[dh]
-  ;B[fh]
-  ;W[ad]
-  ;B[sc]
-  ;W[rd]
-  ;B[sd]
-  ;W[mg]
-  ;B[nd]
-  ;W[oi]
-  ;B[rd]
-  ;W[sa]
-  ;B[oj]
-)
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[5400]OT[1x60 byo-yomi]
+GN[Polish Championship 2014 Round 4 Board 4]PW[Leszek Sołdan]PB[Mateusz Surma]WR[4d]BR[7d]DT[2014-12-13]US[Tomasz Zając]C[Bogdan13x [1k\]: bardzo prosimi wpisać kto z kim gra
+Lesmian [2d\]: można by właśnie zrobić odstępstwo
+Lesmian [2d\]: i nie wpisywać
+Lesmian [2d\]: niech kibice zgadują po ruchach
+Lesmian [2d\]: kto zgadnie - bon zniżkowy na 2 zł na nastepny turniej
+Bogdan13x [1k\]: ja bym chciał się skupić na grze Mateusza a nie bawić w zgadywanki
+wysek [?\]: poprosze o wpisanie w nazwe gry: Polish Championship 2014 Round 4 Board 4
+Lesmian [2d\]: a ja poproszę o Mistrzostwa Polski. I o ciepłą herbatę ;)
+]RE[B+6.50]
+;B[qd]
+;W[dc]C[LMP4 [-\]: zaczeli
+]
+;B[pq]
+;W[oc]
+;B[de]
+;W[dp]
+;B[cc]
+;W[po]
+;B[qo]
+;W[qn]
+;B[qp]
+;W[pn]
+;B[nq]
+;W[qf]
+;B[pe]
+;W[pf]
+;B[ne]
+;W[of]
+;B[nc]
+;W[nb]
+;B[mc]
+;W[oe]
+;B[od]
+;W[pc]
+;B[pd]
+;W[qc]C[gogonuts [4d\]: p15 must be bad style
+woodpecker [?\]: nie wygląda na dobrą wymianę dla Leszka
+xDragon [?\]: W style tends to prefer to start fights over getting a good result
+gogonuts [4d\]: b s15?
+]
+;B[re]
+;W[mb]
+;B[pj]C[gogonuts [4d\]: hot blooded move
+]
+;W[nj]C[gogonuts [4d\]: just answering at the top was also possble for b
+LMP4 [-\]: Leszek gruchnął kamieniem o stół
+gogonuts [4d\]: prob move out to the bottom now
+kamil [2d?\]: i nic mu to raczej nie pomoże
+gogonuts [4d\]: moving to the top would provoke w o14
+]
+;B[pl]C[gogonuts [4d\]: actually ... b might take o14 himself now
+gogonuts [4d\]: did not :-)
+gogonuts [4d\]: q8 is another tough move - it doesnt reliably move out, but goes for ws weak spots instead
+]
+;W[nf]
+;B[me]C[gogonuts [4d\]: o14 was vital for both
+]
+;W[kc]C[gogonuts [4d\]: wow
+gogonuts [4d\]: not playing in the bottom right looks like an outright mistake to me
+woodpecker [?\]: yeah, black looks impossible to capture at the top
+]
+;B[nl]C[gogonuts [4d\]: o8 practically played itself
+]
+;W[pp]C[kostuek [?\]: go w kill it all
+]
+;B[qq]
+;W[mo]C[gogonuts [4d\]: this is actually difficult
+gogonuts [4d\]: m8 cant be bad
+gogonuts [4d\]: but where is best?
+kostuek [?\]: o12? looks ugly
+]
+;B[ll]C[gogonuts [4d\]: there was a temptation to be first in the top fight, but in a good position you often have to let the other guy play the creative moves :_)
+]
+;W[lg]
+;B[ke]
+;W[mq]C[gogonuts [4d\]: expecting tenuki
+]
+;B[mr]C[gogonuts [4d\]: wrongly :-)
+]
+;W[np]
+;B[oq]
+;W[lq]
+;B[nn]
+;W[no]C[gogonuts [4d\]: w never got around to his attack
+]
+;B[cn]C[maciek [2d\]: K8 :)
+gogonuts [4d\]: hm, total tenuki looks tame to me
+gogonuts [4d\]: not a bad suggestion - helps ws groups
+maciek [2d\]: this kind of group is strong for Mateusz :)
+maciek [2d\]: ho i czesc btw :)
+maciek [2d\]: hi :)
+gogonuts [4d\]: k8 or m10 were good-looking for b on the right too
+maciek [2d\]: i would play K8 too
+gogonuts [4d\]: actually, i think your right - k8 is a good point for both
+kostuek [?\]: L10?
+maciek [2d\]: and against Leszek i want two moves k* and H8!
+gogonuts [4d\]: w L10 would be too thin
+gogonuts [4d\]: w m10 would be some shape and also support for o10
+]
+;W[fp]C[gogonuts [4d\]: w still has his eyes on p9
+gogonuts [4d\]: now k8 doesnt look quite as majestic anymore
+]
+;B[lr]
+;W[jq]
+;B[kq]
+;W[kp]
+;B[kr]
+;W[jp]C[gogonuts [4d\]: the whole sequence from c6 was unproductive for b, imo
+gogonuts [4d\]: took the bottom w group completely out of the picture
+]
+;B[cq]
+;W[cp]
+;B[bp]C[gogonuts [4d\]: b5
+gogonuts [4d\]: bottom is trash anyways
+gogonuts [4d\]: why is b playing this thin profitgrabing with all those weak b&w groups
+maciek [2d\]: he playd m2 to k4 in sente, looks great for me
+maciek [2d\]: but i love crawling on second line^^
+]
+;W[bo]
+;B[bq]
+;W[co]C[gogonuts [4d\]: m2 was justifyable after giving w f4, true
+]
+;B[er]
+;W[dn]C[gogonuts [4d\]: but he shouldnt have given w f4, imo
+gogonuts [4d\]: and also not invadede at c3
+maciek [2d\]: K8 now?
+maciek [2d\]: or territory? i bet for territory :)
+maciek [2d\]: C11
+]
+;B[fq]C[maciek [2d\]: :D
+]
+;W[gq]
+;B[cj]
+;W[fr]
+;B[eq]
+;W[gr]C[gogonuts [4d\]: f2???
+kostuek [?\]: w's time to transform sente in points
+wysek [?\]: great...for b:)
+gogonuts [4d\]: what a stingy way to make a thick position thin
+maciek [2d\]: its not sente :D
+maciek [2d\]: or it might not be
+maciek [2d\]: B6
+]
+;B[dq]C[gogonuts [4d\]: f2 is the kind of move you would expect to maybe explain to a 5k not to play it
+maciek [2d\]: nah...
+miao [6d\]: D3...
+miao [6d\]: so old schoool
+maciek [2d\]: u can easily start explayying me if u are patient enuf
+miao [6d\]: also C10 needs one more move
+gogonuts [4d\]: lol, miao
+isor [3d\]: he feels just good
+kostuek [?\]: k8 time?
+]
+;W[cd]C[gogonuts [4d\]: right, feeling happy with your position does that to you
+miao [6d\]: ha
+]
+;B[dd]C[miao [6d\]: nice
+miao [6d\]: O meien style
+]
+;W[bc]
+;B[cb]C[miao [6d\]: that´s why black cannot play E10 to reinforce
+]
+;W[ce]C[miao [6d\]: I´d maybe D13 instead of D3
+miao [6d\]: but also I´d play C11 to start with
+gogonuts [4d\]: i think w is almost out of the game now
+gogonuts [4d\]: too many bothersome thinness problems
+miao [6d\]: true
+miao [6d\]: but he got momentum just now
+maciek [2d\]: for me its even game :)
+gogonuts [4d\]: b has to come back from the auto-mode that produced d3 :-)
+gogonuts [4d\]: he can now show off his 7d-ness by producing a global plan :-)
+maciek [2d\]: C14 :D
+maciek [2d\]: albo nie, E17
+]
+;B[ec]
+;W[bb]
+;B[db]
+;W[cg]C[Aleksandra [6d?\]: nice plan
+mayeck [5d\]: global plan seems to be "take it easy"
+gogonuts [4d\]: justifyable - gave w want he wanted, but now has flow control
+gogonuts [4d\]: he has to unveil his plan now :-)
+woodpecker [?\]: but it looks like white has more potential to build his own territory in the center than black. The only problem is this weak group of white
+]
+;B[ej]C[maciek [2d\]: eee, bialy ma mocne grupki
+gogonuts [4d\]: mayeck - looks like you were right
+maciek [2d\]: J9!
+woodpecker [?\]: tyle, że jedna bez pewnych oczu a przeżywanie nią nie da terenu
+gogonuts [4d\]: letting w stew in his problems instead of taking action
+maciek [2d\]: no w sumie moglbym tamtym umrzec grajac z Mateuszem :)
+urtok [11k\]: :)
+]
+;W[df]C[gfdhff [2k\]: umesz z Mateuszem? Challange accepted
+gfdhff [2k\]: umrzeć*
+wysek [?\]: no need to have a plan against 3 stones weaker opponent :p
+]
+;B[cm]
+;W[dm]C[maciek [2d\]: not true
+]
+;B[cl]C[maciek [2d\]: i think the opposite is more true
+maciek [2d\]: Mateusz ma plan za kazdym ruchem :)
+gogonuts [4d\]: w needs to answer maybe simple g5
+maciek [2d\]: looks too shy
+gogonuts [4d\]: b certainly taking a nitty gritty approach - cashing in safely into a position thats getting closer
+maciek [2d\]: G7 :)
+gogonuts [4d\]: g7 is thin
+Aleksandra [6d?\]: g5 is better indeed
+]
+;W[go]C[maciek [2d\]: G7 is cooler! :D
+maciek [2d\]: hmm
+Aleksandra [6d?\]: nie
+maciek [2d\]: ;000
+sharma [6d\]: the white thickness feels so useless
+kostuek [?\]: the cool move now
+maciek [2d\]: K17?
+Aleksandra [6d?\]: also, it is very hard to protect p14 group in a good way
+gogonuts [4d\]: yes, ws thickness isnt working, but thats still an improvement from thinness :-)
+sharma [6d\]: q12 is huge
+gogonuts [4d\]: is m11 doable?
+]
+;B[lp]C[gogonuts [4d\]: more nitty gritty :-)
+Lice [4d?\]: did mateush lose a game?
+]
+;W[hc]
+;B[bf]C[maciek [2d\]: no
+Lice [4d?\]: how come this is board 4 then?
+gogonuts [4d\]: modesty :-)
+Lesmian [2d\]: pairing and number of boards is prescribed in this tournament
+]
+;W[bg]
+;B[ef]C[maciek [2d\]: M4 was a mistake?
+]
+;W[dg]C[gogonuts [4d\]: mistake is too harsh
+gogonuts [4d\]: b m5 next will do damage
+sharma [6d\]: wrong timing which will pay off later
+wysek [?\]: the higher the starting position of the _weaker_ player is, the higher board number the game gets
+gogonuts [4d\]: which is it, valued scribe?
+gogonuts [4d\]: position has stabelized :-)
+maciek [2d\]: W not so bad here?
+maciek [2d\]: wyglada ze bialy nie ma zle...
+kostuek [?\]: some quantum effects
+gogonuts [4d\]: b still preferable
+gogonuts [4d\]: but gone from much prefered to prefered
+maciek [2d\]: Mateusz musi dobrze zaatakowac te w srodku
+gogonuts [4d\]: b has to work for his top groups, imo
+gogonuts [4d\]: s17 not bad
+]
+;B[ph]
+;W[nh]C[gogonuts [4d\]: now cap?
+maciek [2d\]: Mateusz has 6 groups
+]
+;B[rg]C[maciek [2d\]: dwie polaczone :)
+LMP4 [-\]: Leszek: HMMM..
+gogonuts [4d\]: for a young player he sure can be methodical :-)
+maciek [2d\]: zaatakuje teraz te po lewej
+]
+;W[fb]C[gogonuts [4d\]: now k13
+kamil [2d?\]: or maybe m10/11
+kostuek [?\]: e13
+maciek [2d\]: E18 :P
+KMALM [10k\]: n11
+gogonuts [4d\]: now that w got o12, m11 lost power
+gogonuts [4d\]: just cap - b is safe and w has to struggle
+]
+;B[he]C[maciek [2d\]: S6 dosc duze
+gogonuts [4d\]: b playing like he has an extra 20 points in his back pocket :-)
+]
+;W[id]C[gogonuts [4d\]: b kosumi imo
+gogonuts [4d\]: k14
+Bogdan13x [1k\]: mam dziwne wrażenie że biały zdobywa punkty grając od swojej silnej grupy osłabiająć swoją najsłabszą grupkę
+]
+;B[jg]C[gogonuts [4d\]: lol - how to evaluate h15 for J16 before the cap?
+samoht [1d\]: what do you count for b and w, gogo?
+gogonuts [4d\]: i am very bad at counting
+gogonuts [4d\]: im also bad at sharp tactics
+gogonuts [4d\]: so i dont even know why i play :-)
+Lice [4d?\]: nobody knows
+gogonuts [4d\]: but even i i could count - how would i take ws weak group and m4 into account?
+Lice [4d?\]: go is like life, it just happens and most of the time you regret it
+gogonuts [4d\]: the great thing about go is - you can play again
+Lice [4d?\]: but then there's that moment
+]
+;W[kj]C[samoht [1d\]: i would say this are the 20 extra points for B ;-)
+Lice [4d?\]: nah, there are no moments nvm
+]
+;B[lo]C[TurtleDove [3k?\]: if o12 dies, no need to count :)
+]
+;W[ln]
+;B[mp]
+;W[mn]C[gogonuts [4d\]: k9?
+isor [3d\]: l9  leaning?
+MrFofi [5d?\]: the end
+]
+;B[jl]C[gogonuts [4d\]: J16 is looking like a mistake - when b didnt play k13 w should have played ther himself
+gogonuts [4d\]: or go back to answer m4
+MrFofi [5d?\]: to let b s13 was the mistake
+gogonuts [4d\]: but when b played q12 it was too late to resist
+gogonuts [4d\]: maybe he didnt have the time for h17
+gfdhff [2k\]: wyglada jakby czarny dostal kilka kamieni handicapu w srodku
+kostuek [?\]: the "joseki" in the right top corner was the mistake
+gogonuts [4d\]: lol
+urtok [11k\]: O5-Q5 or L10-O12-O14 dead :)
+gogonuts [4d\]: q15 was a good answer to the close pincer
+gogonuts [4d\]: the technical mistake there was p15 ofc
+LMP4 [-\]: B: 38 min;  W:51 min
+gogonuts [4d\]: funny how w is now floating around after b didnt play a single rough move for about 30 moves
+MrFofi [5d?\]: w s14 was all the time kind of sente for the w p9 next
+gogonuts [4d\]: f18 was also too optimistic by w
+gogonuts [4d\]: needed to help the center
+]
+;W[kn]C[gogonuts [4d\]: but i dont think there was ever a happy point in time to trade s14 for b s17
+gogonuts [4d\]: wow
+gogonuts [4d\]: "come and get me" :-)
+wysek [?\]: what else did you expect;)
+]
+;B[li]C[gogonuts [4d\]: b obliges :-)
+MrFofi [5d?\]: nobless oblige
+]
+;W[mk]C[miao [6d\]: N9?
+]
+;B[mi]C[gogonuts [4d\]: that nobi looks hard to digest
+]
+;W[ni]
+;B[lk]
+;W[lj]
+;B[mj]
+;W[nk]
+;B[ki]
+;W[ml]
+;B[jj]
+;W[eg]C[samoht [1d\]: somebody sayed something about w points in center ;-)
+Bogdan13x [1k\]: 7m większe?
+]
+;B[ff]
+;W[fc]C[Ootakamoku [2d\]: n7 p8 o7 p7 
+Ootakamoku [2d\]: nvm, cant read
+elsky [1k\]: n7 p8 p7 ko?
+]
+;B[rl]C[nare [-\]: czesc. z 4 transmisji najbardziej sa zadowolenie zawodnicy :) [nie ma obowiazku wypelniania kifu\]
+kostuek [?\]: n7 m7 o7 p8 p7 p9 q7 q9 r9 
+]
+;W[fd]C[kmlck [3d\]: f15
+]
+;B[mm]
+;W[ol]
+;B[om]
+;W[nm]
+;B[bd]
+;W[be]
+;B[nl]
+;W[ok]
+;B[nm]
+;W[pm]
+;B[lm]
+;W[pk]
+;B[ql]C[whynotboth: b+r?
+Jazzman [1d\]: w cant sae both groups
+Jazzman [1d\]: *save
+whynotboth: ?? which 2 groups
+whynotboth: o12 has major problems
+maciek [2d\]: o12 and o14 :)
+Jazzman [1d\]: stilll cut at k6
+whynotboth: I see
+gogonuts [4d\]: w would like to play a group-joker now
+Jazzman [1d\]: sthan 2 w groups
+whynotboth: how do you cut at k6?????
+whynotboth: k6 L5 miai
+qpax [1d\]: more question marks pls
+samoht [1d\]: connect to g5
+whynotboth: people talking nonsense....
+gogonuts [4d\]: marching through at L5 will actually be some extra pain
+MrFofi [5d?\]: with a computer virus the cut of k6 maybe works on internet
+gogonuts [4d\]: but no matter with that big dragon going down anyways
+Jazzman [1d\]: at least gogonut ot my point
+patcher [1k\]: so, what with à12 ? just dead ?
+]
+;W[qj]C[patcher [1k\]: o
+]
+;B[qi]
+;W[qk]C[MrFofi [5d?\]: he is playing s6
+]
+;B[rk]C[whynotboth: your point was nonsense o12 is more dead than alive and the rest is at least sort of connected but also weak
+]
+;W[rj]
+;B[rn]C[gogonuts [4d\]: if w already had a stone at s17 there would be some hope, but as it stands - no way
+]
+;W[rm]
+;B[qm]C[MrFofi [5d?\]: in the future even k6 works 
+maciek [2d\]: T10 is something
+]
+;W[rf]
+;B[sf]
+;W[rh]
+;B[qg]C[Lice [4d?\]: m14 then k14
+]
+;W[ri]
+;B[pg]C[samoht [1d\]: .one eye in gote
+samoht [1d\]: but
+Lice [4d?\]: sente eye
+gogonuts [4d\]: sente
+maciek [2d\]: t10 t7 t12 is sente :)
+]
+;W[sk]
+;B[sm]C[Lice [4d?\]: O.O
+]
+;W[sj]C[Lice [4d?\]: he noob?
+]
+;B[sl]
+;W[sh]
+;B[sg]C[Lice [4d?\]: ah works this way aswell
+maciek [2d\]: only you :)
+Lice [4d?\]: i noob
+maciek [2d\]: :))
+]
+;W[mf]C[gogonuts [4d\]: i think s9 gave b an extra half eye, but b got q13, so maybe its no difference
+samoht [1d\]: can he strt a semeai
+maciek [2d\]: at least interesting
+qpax [1d\]: there will be no semeai
+Lice [4d?\]: i hope w isn't trying to live in gote
+maciek [2d\]: live in gote is perfect here, what do u want, live in sente?
+kostuek [?\]: to die in sente is also not a good option
+Lice [4d?\]: i don't think he has enough point
+Lice [4d?\]: a
+Lice [4d?\]: points*
+gogonuts [4d\]: hm, maybe s9 really was expensive
+maciek [2d\]: doesnt matter, white must live, no need to worry about anything more
+]
+;B[mh]
+;W[kf]C[Lice [4d?\]: sure he does
+gogonuts [4d\]: wrong timing?
+gogonuts [4d\]: better at m15, imo
+gogonuts [4d\]: as it stands b m15 looks like getting there
+Bogdan13x [1k\]: 13o 
+elsky [1k\]: maybe b k15 now
+maciek [2d\]: m15 :)
+Bogdan13x [1k\]: ok beter
+]
+;B[je]
+;W[jf]C[maciek [2d\]: ;d
+]
+;B[ie]
+;W[if]C[maciek [2d\]: g12 :)
+gogonuts [4d\]: instead of s9, b had s11 - then if w s9 sagari to t8
+maciek [2d\]: ale cos mi sie wydaje ze czarny wcale nie chce tego zabic
+]
+;B[le]C[maciek [2d\]: h14 zagra
+maciek [2d\]: polaczy e15
+]
+;W[lf]
+;B[hf]
+;W[ig]C[patcher [1k\]: gogonuts : after your sequence if w t9, i sit sure  can connect to r5 ?
+patcher [1k\]: b
+]
+;B[fe]
+;W[hh]C[gogonuts [4d\]: oops
+gogonuts [4d\]: my bad
+]
+;B[jc]C[gogonuts [4d\]: good eye, patcher
+patcher [1k\]: easy : i replayed it :)
+Lice [4d?\]: yey he lived in sente
+maciek [2d\]: haha
+Lice [4d?\]: though the only reason to live in sente was to f15
+Bogdan13x [1k\]: wow już myślałęm że po czarnym hehe
+Lice [4d?\]: i mean to e15
+Lice [4d?\]: so its kinda gote life after all
+Lice [4d?\]: did eliminate the moyo though
+Bogdan13x [1k\]: 18L?
+maciek [2d\]: nie wiem czy czasami biale nie osiagnely teraz przewagi?
+urtok [11k\]: K18
+Lice [4d?\]: hmm this game is pretty close
+gogonuts [4d\]: b couldnt even afford to press at f15
+gogonuts [4d\]: and lost the right side
+maciek [2d\]: BM9 still no eyes
+Lice [4d?\]: g10 now :P
+gogonuts [4d\]: pretty surely b wont get L5
+maciek [2d\]: J9 for White is so so
+Jazzman [1d\]: l10 is one eye
+]
+;W[jd]
+;B[lc]C[Lice [4d?\]: oh no
+Splinter [5d\]: oh...
+]
+;W[lb]
+;B[kd]
+;W[kb]
+;B[rc]
+;W[rb]
+;B[sb]
+;W[ra]C[Splinter [5d\]: that's alive
+whuang [4d\]: Easy life
+]
+;B[gh]C[maciek [2d\]: still need to play
+whuang [4d\]: yes
+]
+;W[jh]C[maciek [2d\]: black l11 group might become in danger
+gogonuts [4d\]: w group officially home
+gogonuts [4d\]: this attack went so incredibly badly, i think w ahead for now
+Bogdan13x [1k\]: 11j is nice 
+Lice [4d?\]: w has 40+ what ever he can get on lower left
+]
+;B[ep]C[kostuek [?\]: w gambled nice with f16
+]
+;W[eo]
+;B[fn]
+;W[fo]
+;B[ko]C[Jazzman [1d\]: well gogo, you lost your bet
+]
+;W[jo]C[Lice [4d?\]: b has 40
+urtok [11k\]: czarnt ma chyba przewagę 3-5 punktów
+maciek [2d\]: Q can die now
+Lice [4d?\]: mabye 42
+]
+;B[jn]C[Jazzman [1d\]: and now there is the cut at k6, as predicted
+]
+;W[jm]
+;B[in]
+;W[im]
+;B[km]
+;W[hn]
+;B[op]
+;W[io]
+;B[oo]C[Lice [4d?\]: wtff
+urtok [11k\]: ładnie :)
+Lice [4d?\]: this can't be enough for b
+maciek [2d\]: its in sente
+Lice [4d?\]: ah
+maciek [2d\]: or next 6 stones die
+Lice [4d?\]: man im sicker then i've thought
+maciek [2d\]: :D
+]
+;W[jn]
+;B[bn]C[urtok [11k\]: czrny przewaga chyba już ok 15 pkt :)
+]
+;W[ap]C[gfdhff [2k\]: ciekawe czy zagra coś głupiego i przegra gre
+]
+;B[bs]C[gogonuts [4d\]: L5 was a nice question after all - settling the center this way made the game reasonable for b again
+urtok [11k\]: czarny 64 pkt, biały 54 pkt, tak myślę
+]
+;W[eb]C[maciek [2d\]: bardzo rowno jak na moje umiejetnosci liczenia :)
+]
+;B[ee]C[urtok [11k\]: :)
+maciek [2d\]: ciekawe czy bialy moze jakos zaatakowac C10
+]
+;W[aj]C[urtok [11k\]: myśle, ze c10 biały nie zdejmie
+]
+;B[bi]C[maciek [2d\]: no nie ale jezeli zrobi jakies punkty zmuszajac do laczenia sie
+]
+;W[ai]
+;B[ah]
+;W[bh]
+;B[ak]
+;W[ag]
+;B[bj]C[urtok [11k\]: ale moze ograniczyc tam czarnego do 2-5 punktów
+]
+;W[jr]
+;B[el]C[urtok [11k\]: no biały może 
+urtok [11k\]: mógł :)
+maciek [2d\]: zadecyduje gra na 9x9!
+maciek [2d\]: gdzie g9 to tengen 9x9 :D
+urtok [11k\]: :)
+]
+;W[fk]C[LMP4 [-\]: Czarny w byo
+]
+;B[ah]C[Bogdan13x [1k\]: a Leszkowi ile zostało
+LMP4 [-\]: 19min
+urtok [11k\]: to duzo...
+]
+;W[di]C[wysek [?\]: e tam, ~20 ruchow
+urtok [11k\]: :)
+]
+;B[hd]
+;W[ic]
+;B[hi]
+;W[ek]
+;B[dl]
+;W[dj]
+;B[fi]C[urtok [11k\]: f8
+]
+;W[ba]
+;B[kh]
+;W[kg]
+;B[fl]C[urtok [11k\]: :)
+miao [6d\]: Is any admin online?
+]
+;W[dk]C[whynotboth: just write ***** in the egr
+miao [6d\]: :)
+whynotboth: and you will meet one
+]
+;B[aq]
+;W[ao]
+;B[an]C[maciek [2d\]: ej
+]
+;W[do]
+;B[ai]
+;W[ck]C[maciek [2d\]: no:)
+]
+;B[bk]
+;W[fg]
+;B[gg]C[urtok [11k\]: O13działa ?
+]
+;W[gd]
+;B[ii]
+;W[ih]C[urtok [11k\]: O13 czarny chyba działa
+urtok [11k\]: nie :)
+urtok [11k\]: nie działa :0
+]
+;B[ci]
+;W[ge]
+;B[gf]
+;W[gj]
+;B[gi]
+;W[ik]
+;B[jk]
+;W[ij]C[maciek [2d\]: chyba najtrudniejsza gra dla Mateusza jak na razie
+urtok [11k\]: noo
+]
+;B[ji]C[Lesmian [2d\]: a kto tu prowadzi?
+maciek [2d\]: minimalnie czarny
+wysek [?\]: jak dla mnie B+8
+maciek [2d\]: mysle ze +.5
+maciek [2d\]: 5.5
+Lesmian [2d\]: ja wróżę ze mniej niż 5 dla czarnego, raczej 3 albo 2 
+LMP4 [-\]: Biały mruczy - 3pkt
+]
+;W[gl]
+;B[gm]
+;W[ei]
+;B[fj]
+;W[da]
+;B[hl]
+;W[gk]
+;B[il]
+;W[em]
+;B[fm]C[Bogdan13x [1k\]: 1l
+gfdhff [2k\]: 0,7l
+urtok [11k\]: e1
+]
+;W[qe]C[Bogdan13x [1k\]: hehe
+]
+;B[js]
+;W[is]
+;B[ks]
+;W[es]
+;B[ds]
+;W[fs]C[urtok [11k\]: l1 lepsze od e1 :)
+]
+;B[dc]
+;W[ca]
+;B[hm]
+;W[oh]C[whynotboth: w needs a16
+]
+;B[og]
+;W[ng]
+;B[qb]
+;W[pb]
+;B[gn]C[Bogdan13x [1k\]: 6g is score
+urtok [11k\]: C12
+whynotboth: c12 then atari 2 times
+whynotboth: and w needs a16
+]
+;W[ir]C[Jazzman [1d\]: w first needs to play sthg ike j2...
+]
+;B[pi]
+;W[qa]
+;B[se]
+;W[hj]
+;B[ch]
+;W[dh]
+;B[fh]
+;W[ad]
+;B[sc]
+;W[rd]
+;B[sd]
+;W[mg]
+;B[nd]C[Lesmian [2d\]: se mówi, że 8
+]
+;W[oi]
+;B[rd]C[LMP4 [-\]: filling dame, and pas
+]
+;W[sa]C[whynotboth: otherwise d13 dies
+rex27 [1k\]: b has a14
+Bogdan13x [1k\]: how die
+Bogdan13x [1k\]: 13d
+whynotboth: 9d is max
+Sanyel [-\]: a14 oiotoshi Bogdan
+whuang [4d\]: Black won
+LMP4 [-\]: B+6.5
+wysek [?\]: there was a stone at b16
+whuang [4d\]: Good fight by white!
+urtok [11k\]: :)
+resusou: thx 
+Bogdan13x [1k\]: ok i see A14 thx 
+whynotboth: f16 was pretty ballsy
+Jazzman [1d\]: thx for relay,lmp4
+whynotboth: making life for o12 did cost q4 and the game
+]
+;B[oj]C[Bogdan13x [1k\]: why 16A
+])

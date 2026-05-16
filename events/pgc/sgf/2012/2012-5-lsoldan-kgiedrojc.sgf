@@ -1,251 +1,562 @@
-(
-  ;BR[5d]CA[UTF-8]DT[2012-12-01]EV[Polish Go Championship 2012]FF[4]GM[1]GN[Round 5 - Board 1]KM[6.50]PB[Leszek Sołdan]PC[Katowice]PW[Krzysztof Giedrojć]RE[W+4.5]RO[5]RU[japanese]ST[2]SZ[19]WR[4d]
-  ;B[pd]
-  ;W[dp]
-  ;B[qp]
-  ;W[dc]
-  ;B[oq]
-  ;W[qk]
-  ;B[de]
-  ;W[ce]
-  ;B[cf]
-  ;W[cd]
-  ;B[cn]
-  ;W[dj]
-  ;B[fq]
-  ;W[eo]
-  ;B[cq]
-  ;W[df]
-  ;B[dq]
-  ;W[dm]
-  ;B[bo]
-  ;W[gp]
-  ;B[fp]
-  ;W[gn]
-  ;B[fo]
-  ;W[hm]
-  ;B[em]
-  ;W[el]
-  ;B[fl]
-  ;W[fm]
-  ;B[en]
-  ;W[dl]
-  ;B[gl]
-  ;W[hl]
-  ;B[gj]
-  ;W[dg]
-  ;B[hk]
-  ;W[jl]
-  ;B[jj]
-  ;W[mq]
-  ;B[hp]
-  ;W[ip]
-  ;B[iq]
-  ;W[hq]
-  ;B[ho]
-  ;W[jq]
-  ;B[ir]
-  ;W[jp]
-  ;B[hr]
-  ;W[kj]
-  ;B[jk]
-  ;W[kk]
-  ;B[kl]
-  ;W[ll]
-  ;B[km]
-  ;W[lm]
-  ;B[jm]
-  ;W[ln]
-  ;B[jn]
-  ;W[qn]
-  ;B[oo]
-  ;W[qf]
-  ;B[nc]
-  ;W[rd]
-  ;B[qg]
-  ;W[rf]
-  ;B[og]
-  ;W[of]
-  ;B[nf]
-  ;W[pg]
-  ;B[ph]
-  ;W[pf]
-  ;B[ng]
-  ;W[oh]
-  ;B[ni]
-  ;W[pi]
-  ;B[mj]
-  ;W[mk]
-  ;B[pk]
-  ;W[ql]
-  ;B[nk]
-  ;W[nl]
-  ;B[ol]
-  ;W[nh]
-  ;B[mh]
-  ;W[oi]
-  ;B[ki]
-  ;W[nm]
-  ;B[pj]
-  ;W[qj]
-  ;B[oj]
-  ;W[qi]
-  ;B[di]
-  ;W[ci]
-  ;B[cj]
-  ;W[ei]
-  ;B[dk]
-  ;W[dh]
-  ;B[ek]
-  ;W[ck]
-  ;B[cl]
-  ;W[bj]
-  ;B[cm]
-  ;W[ic]
-  ;B[hd]
-  ;W[hc]
-  ;B[gd]
-  ;W[gc]
-  ;B[kc]
-  ;W[id]
-  ;B[lp]
-  ;W[ko]
-  ;B[lq]
-  ;W[om]
-  ;B[lo]
-  ;W[kn]
-  ;B[pl]
-  ;W[pm]
-  ;B[hf]
-  ;W[if]
-  ;B[ig]
-  ;W[jf]
-  ;B[hg]
-  ;W[ne]
-  ;B[me]
-  ;W[mf]
-  ;B[mg]
-  ;W[md]
-  ;B[lf]
-  ;W[le]
-  ;B[mc]
-  ;W[qc]
-  ;B[ld]
-  ;W[mf]
-  ;B[ke]
-  ;W[io]
-  ;B[il]
-  ;W[lr]
-  ;B[kr]
-  ;W[rp]
-  ;B[rq]
-  ;W[ro]
-  ;B[fd]
-  ;W[fc]
-  ;B[jr]
-  ;W[jb]
-  ;B[pc]
-  ;W[od]
-  ;B[me]
-  ;W[ob]
-  ;B[oc]
-  ;W[pb]
-  ;B[qd]
-  ;W[rb]
-  ;B[in]
-  ;W[gh]
-  ;B[fh]
-  ;W[fg]
-  ;B[hi]
-  ;W[rr]
-  ;B[sq]
-  ;W[qq]
-  ;B[qr]
-  ;W[pq]
-  ;B[pr]
-  ;W[pp]
-  ;B[po]
-  ;W[qo]
-  ;B[op]
-  ;W[qp]
-  ;B[rs]
-  ;W[bl]
-  ;B[dd]
-  ;W[ed]
-  ;B[ee]
-  ;W[ec]
-  ;B[ff]
-  ;W[fi]
-  ;B[gg]
-  ;W[ef]
-  ;B[fe]
-  ;W[eh]
-  ;B[he]
-  ;W[jd]
-  ;B[bm]
-  ;W[jg]
-  ;B[jh]
-  ;W[kb]
-  ;B[al]
-  ;W[bk]
-  ;B[lb]
-  ;W[mo]
-  ;B[mp]
-  ;W[no]
-  ;B[np]
-  ;W[kh]
-  ;B[ji]
-  ;W[kg]
-  ;B[lj]
-  ;W[lk]
-  ;B[qe]
-  ;W[nb]
-  ;B[re]
-  ;W[se]
-  ;B[nd]
-  ;W[oe]
-  ;B[gi]
-  ;W[ma]
-  ;B[la]
-  ;W[mb]
-  ;B[fj]
-  ;W[ej]
-  ;B[dn]
-  ;W[ak]
-  ;B[hh]
-  ;W[am]
-  ;B[an]
-  ;W[on]
-  ;B[fh]
-  ;W[lh]
-  ;B[li]
-  ;W[gh]
-  ;B[cc]
-  ;W[bc]
-  ;B[fh]
-  ;W[sp]
-  ;B[sr]
-  ;W[gh]
-  ;B[sc]
-  ;W[rc]
-  ;B[fh]
-  ;W[go]
-  ;B[hn]
-  ;W[gh]
-  ;B[sf]
-  ;W[sg]
-  ;B[fh]
-  ;W[eg]
-  ;B[ka]
-  ;W[ja]
-  ;B[lc]
-  ;W[jc]
-  ;B[kq]
-  ;W[al]
-  ;B[kf]
-  ;W[kd]
-  ;B[lg]
-  ;W[pn]
-  ;B[je]
-  ;W[ie]
-)
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[5400]OT[1x60 byo-yomi]
+GN[Polish Go Championship League]PW[Leszek Sołdan]PB[Krzysztof Giedrojć]WR[5d]BR[4d]DT[2012-12-01]RO[5]PC[The KGS Go Server at http://www.gokgs.com/]C[LMP1 [-\]: video http://ustre.am/RhBr
+TreborRGR [?\]: czarny ekran;)
+liquescens [1k\]: moze bialy juz poddal
+LMP1 [-\]: lepiej?
+maciek [2d\]: jakies czolgi jezdza
+padasnieg [3k\]: krzysiek, krzysiek !
+maciek [2d\]: widać Krzyska:)
+TreborRGR [?\]: to reklamy ;-(
+LMP1 [-\]: jakie czołgi? to tylko Katowice
+celepa [?\]: ja kibicuje Krzyskowi! on zawsze byl mocny na Leszka!
+]
+;B[pd]C[padasnieg [3k\]: true
+maciek [2d\]: ciekawe czy zagra trzy gwiazdki
+liquescens [1k\]: czarny juz przyszedl
+]
+;W[dp]C[TreborRGR [?\]: biały też
+liquescens [1k\]: nie patrza nawet na deske
+liquescens [1k\]: zapomniali ze graja?
+liquescens [1k\]: moze ktos cos dosypal do kawy?
+padasnieg [3k\]: dwaj odwieczni przeciwnicy sie spotkali, cierpliwosci :)
+liquescens [1k\]: moze odwolali runde
+TreborRGR [?\]: w zeszłym roku jak mnie pamięć nie myli wygrał Gie
+]
+;B[qp]C[padasnieg [3k\]: tak
+liquescens [1k\]: czarny sprytny
+liquescens [1k\]: nie patrzyl caly czas na deske
+liquescens [1k\]: nagle szybko polozyl kamien i nacisnal zegar i mysli ze ten drugi nei zauwazyl
+]
+;W[dc]C[liquescens [1k\]: ale bialy sie nie dal nabrac
+]
+;B[oq]C[goren2 [3k\]: jakby sie dal to by nie byl chyba 5d...
+liquescens [1k\]: p3 to yose :/
+maciek [2d\]: na razie wiecej razy wstali od stlu niz zrobili ruchow
+goren2 [3k\]: p3 normalne
+padasnieg [3k\]: wcale nie yose :|
+LMP1 [-\]: lique, jak już nie przyjechałeś to nie znaczy że możesz trollować ;p
+liquescens [1k\]: a ile razy wstali?
+celepa [?\]: dokladnie... lekcewazenie widzow...
+]
+;W[qk]C[goren2 [3k\]: leaszek to byly insei?
+LMP1 [-\]: tak
+TreborRGR [?\]: szkoda, ze kamera ma źle ustawiony kontrast i nie widać białych kamieni :(
+maciek [2d\]: kiedys też gral w hokeja w reprezentacji Kanady
+goren2 [3k\]: czemu zaprzestal?
+]
+;B[de]C[celepa [?\]: na trawie czy na lodzie?
+]
+;W[ce]C[maciek [2d\]: na lodzie:)
+celepa [?\]: a, to spoko
+celepa [?\]: ;)
+maciek [2d\]: przestal bo za bardzo urósł
+goren2 [3k\]: cos nie wierze ze gral w hokeja
+liquescens [1k\]: a ja nie wierze w bitwe pod grunwaldem
+]
+;B[cf]C[liquescens [1k\]: chociaz ostatnio widzialem jej rekonstrukcje
+liquescens [1k\]: jak mi sie drobne na dworcu wysypaly
+]
+;W[cd]
+;B[cn]C[liquescens [1k\]: d10, musi byc walka
+]
+;W[dj]C[LMP1 [-\]: mówisz i masz
+liquescens [1k\]: d4 atakujemy?
+goren2 [3k\]: ja bym d14
+PlaynFree: is Surma playing in this?
+LMP1 [-\]: he's not
+SadPlayer [-\]: jak oglądałem gry prosów to zawsze grzecznie w takiej sytuacji odpowiadali w f3 :)
+]
+;B[fq]C[PlaynFree: LMP1, why isn't he playing?
+barty [2d\]: d13 i potem bym gral e17
+LMP1 [-\]: he's in Korea as far as I know
+]
+;W[eo]
+;B[cq]C[barty [2d\]: ask him ;)
+PlaynFree: oh, studying again? That's awesome :)
+barty [2d\]: dont have time this year probably :)
+]
+;W[df]C[liquescens [1k\]: w bazie mam tylko jedna taka partie
+liquescens [1k\]: 3 razy czesciej grali d9 zamiast d10 
+goren2 [3k\]: ja nie mam bazy.  
+]
+;B[dq]C[cwilliams [6k\]: this looks like textbook go so far.
+liquescens [1k\]: co ciekawe po d10 zawsze wygrywal czarny, a po d9 bialy
+cwilliams [6k\]: who are the players?
+]
+;W[dm]C[SadPlayer [-\]: na gokifu ostatnio ciągle to szło f3 d13 f17 d9 
+]
+;B[bo]C[LMP3 [-\]: black is bald ;)
+]
+;W[gp]
+;B[fp]
+;W[gn]C[liquescens [1k\]: bold?
+goren2 [3k\]: bald.  I am guessing lmp was responding to cwilliams' question.
+]
+;B[fo]
+;W[hm]C[oonicks [?\]: ljysy :)
+LMP3 [-\]: of course
+LMP3 [-\]: what else?
+]
+;B[em]C[goren2 [3k\]: fajny ruch
+]
+;W[el]
+;B[fl]
+;W[fm]
+;B[en]
+;W[dl]
+;B[gl]C[PlaynFree: Soldan is the younger guy?
+]
+;W[hl]
+;B[gj]
+;W[dg]C[LMP1 [-\]: Soldan is in darker clothes
+]
+;B[hk]
+;W[jl]C[PlaynFree: I see, thanks LMP1
+LMP1 [-\]: I'm not sure which one is younger
+]
+;B[jj]
+;W[mq]
+;B[hp]
+;W[ip]
+;B[iq]
+;W[hq]
+;B[ho]
+;W[jq]
+;B[ir]C[udreka [1d\]: giedrojc is 49, soldan is 77
+]
+;W[jp]C[PlaynFree: Soldan is 77, wow
+celepa [?\]: lol :) the old master!
+Hipcio [2d\]: O_o
+]
+;B[hr]C[maciek [2d\]: a real one too
+LMP1 [-\]: that's not true
+LMP1 [-\]: Leszek Stanisław Sołdan (ur. 13 listopada 1961) 
+LMP1 [-\]: unless wikipedia has wrong info
+dft [-\]: so the bold one is younger
+PlaynFree: so Soldan seems to be 51, looks more probable than 77 :)
+LMP1 [-\]: yeah
+]
+;W[kj]
+;B[jk]
+;W[kk]
+;B[kl]C[LMP1 [-\]: gie robi świetne miny
+]
+;W[ll]C[maciek [2d\]: a przypommij prosze link do video bo wylaczylem niechcacy
+TreborRGR [?\]: jest na górze
+TreborRGR [?\]: pierwszy wpis
+LMP3 [-\]: video (if playing) http://ustre.am/RhBr 
+maciek [2d\]: dz
+LMP3 [-\]: jest w opisie LMP1
+maciek [2d\]: ale to tak daleko:)
+maciek [2d\]: Leszek tanczy:)
+highdan: A gdzie Giedriojc?
+LMP1 [-\]: wyszedł z sali
+LMP1 [-\]: wrócił
+]
+;B[km]C[Bogdan13x [1k\]: a moze sie ktos oriętuje czemu w tej edycji niema Kamyka
+]
+;W[lm]C[highdan: Siłą woli telepatycznie postawie za niego w L7
+highdan: udało sie )
+LMP1 [-\]: Bogdan: bo nie pojechał na eliminacje, nie wystartował w nich, nie zajął jednego z trzech pierwszych miejsc
+LMP3 [-\]: chyba sie nie wyrobil na eliminacje
+highdan: teraz mi trudniej bo trzyma kamień w reku ((
+LMP1 [-\]: *czterech
+Nilatarion [3d\]: ostatnio gie zawsze ogrywa leszka coś czuje że będzie podobnie;p
+highdan: szansa jest na razie czarny stoi niexle )
+Bogdan13x [1k\]: Dziękuje LMP3 za odpowiedz
+SadPlayer [-\]: k7 j8 j6 ?
+]
+;B[jm]
+;W[ln]
+;B[jn]
+;W[qn]C[lobo [?\]: nie lepiej bylo wzmocnic rog i zniwelowac sciane?
+celepa [?\]: k6?
+]
+;B[oo]C[oonicks [?\]: j6 = 9 pt
+]
+;W[qf]C[lobo [?\]: czyli na chwile obecna ruch bez wartosci
+]
+;B[nc]C[Bogdan13x [1k\]: w yose sie przyda
+maciek [2d\]: eee h7 martwe no nie?
+Nilatarion [3d\]: ta
+]
+;W[rd]C[lobo [?\]: no na yose tak ale nie teraz
+maciek [2d\]: niezly rog ma czarny
+liquescens [1k\]: jak to martwe?
+]
+;B[qg]C[Bogdan13x [1k\]: tez zmacnia czrnego w centrum 
+celepa [?\]: ale k6?  bez sensu
+Hipcio [2d\]: napewno zagral k6?
+maciek [2d\]: z 50 punkto
+maciek [2d\]: w
+oonicks [?\]: liked it b took the loose stones w offered
+celepa [?\]: j5
+Hipcio [2d\]: j5
+liquescens [1k\]: j5 laczy
+LMP1 [-\]: k6 na pewno
+SadPlayer [-\]: naprawde zagrał k6 a nie j6 ?
+SadPlayer [-\]: ok:)
+]
+;W[rf]C[celepa [?\]: rozumiem ze celuje w zabicie ccalosci, wtedy ok
+liquescens [1k\]: moze liczy na...
+liquescens [1k\]: j5 g5 j6 l5 
+]
+;B[og]
+;W[of]
+;B[nf]
+;W[pg]
+;B[ph]
+;W[pf]
+;B[ng]
+;W[oh]C[Demiurgos [7k?\]: stream wam działa??
+TreborRGR [?\]: tak
+comoco: k7???too bad
+]
+;B[ni]
+;W[pi]
+;B[mj]
+;W[mk]
+;B[pk]
+;W[ql]C[oonicks [?\]: if w get the move on the top b still seems lost
+]
+;B[nk]C[TheThe [7k\]: the suspence
+]
+;W[nl]
+;B[ol]
+;W[nh]
+;B[mh]C[highdan: gęsto będzie słać się trup...
+]
+;W[oi]
+;B[ki]
+;W[nm]
+;B[pj]
+;W[qj]C[Nilatarion [3d\]: h17;p
+]
+;B[oj]
+;W[qi]C[comoco: l5?
+]
+;B[di]
+;W[ci]C[Hipcio [2d\]: o co kaman
+]
+;B[cj]
+;W[ei]C[Nilatarion [3d\]: widać determinacje u gie;p
+]
+;B[dk]
+;W[dh]C[Nilatarion [3d\]: w sumie on może przegrać wszystkei gry ale tą wygrać musi;p
+]
+;B[ek]
+;W[ck]
+;B[cl]
+;W[bj]
+;B[cm]C[Hipcio [2d\]: super
+Nilatarion [3d\]: jednak bym wolal h17 jakies
+Hipcio [2d\]: zlapal 33 kamienie
+Hipcio [2d\]: 32
+Hipcio [2d\]: tj 3*
+Hipcio [2d\]: :)
+Nilatarion [3d\]: teortycznie 5
+]
+;W[ic]C[Nilatarion [3d\]: bo e6 bylo zawsze sente
+Hipcio [2d\]:  no dobrze ale bialy zbil 2
+Nilatarion [3d\]: h16
+Hipcio [2d\]: :P
+Nilatarion [3d\]: dlatego to bylo średnie;p
+Hipcio [2d\]: gorny rejon faktycznie wydawal sie wazniejszy
+]
+;B[hd]C[Nilatarion [3d\]: ale ten rog czarnego to praktycznie 60 punktow
+]
+;W[hc]C[celepa [?\]: raczej 36 ;)
+Hipcio [2d\]: 40 max
+]
+;B[gd]
+;W[gc]C[Nilatarion [3d\]: jak 36
+Nilatarion [3d\]: ja licze h7 do rogu;p
+Hipcio [2d\]: teraz j5 jest sente dla bialego
+celepa [?\]: no ta, h7 martwe nie jest ;)
+]
+;B[kc]
+;W[id]C[Nilatarion [3d\]: no dobra
+]
+;B[lp]C[padasnieg [3k\]: rok temu pol gry z leszkiem gie gral w byo. jak teraz stoja z czasem ?
+LMP1 [-\]: obaj mają dużo, ale nie widzę dokładnie ile
+LMP1 [-\]: jak będzie okazja to zerknę
+]
+;W[ko]C[TheThe [7k\]: yeah, can't see anything on that feed ;-P
+]
+;B[lq]
+;W[om]
+;B[lo]C[TheThe [7k\]: the clock display doesn't face the side actaully
+]
+;W[kn]
+;B[pl]C[barty [2d\]: r17 big 
+]
+;W[pm]C[barty [2d\]: h14 too
+karmaic [1d\]: now j5 is dangerous
+Nilatarion [3d\]: h14 wieksze
+barty [2d\]: j5 is nothing
+Nilatarion [3d\]: j5 yose
+]
+;B[hf]C[barty [2d\]: yeap
+]
+;W[if]
+;B[ig]
+;W[jf]
+;B[hg]
+;W[ne]C[barty [2d\]: maybe r17 now ?
+GandalfTW [2d\]: y r17 looks interesting
+Hipcio [2d\]: no tak
+]
+;B[me]
+;W[mf]C[GandalfTW [2d\]: b ahead
+]
+;B[mg]
+;W[md]C[barty [2d\]: not so much
+barty [2d\]: still white can win
+JPollock [7k\]: hmm
+barty [2d\]: left top huige
+barty [2d\]: right too
+barty [2d\]: r17
+barty [2d\]: or n17
+]
+;B[lf]C[Nilatarion [3d\]: musial bić
+barty [2d\]: looks ok
+]
+;W[le]C[barty [2d\]: r17 or n17?
+]
+;B[mc]C[barty [2d\]: r17 white now
+goren2 [3k\]: w no chacne to win.
+]
+;W[qc]
+;B[ld]C[goren2 [3k\]: maybe...
+Hipcio [2d\]: yes he has a chance to win
+]
+;W[mf]
+;B[ke]
+;W[io]C[goren2 [3k\]: w about 78 points
+]
+;B[il]
+;W[lr]C[goren2 [3k\]: having a hard time counting b\]
+]
+;B[kr]
+;W[rp]
+;B[rq]
+;W[ro]
+;B[fd]C[goren2 [3k\]: acually i think w will win.  i see things clearer now
+]
+;W[fc]C[Pinguschaf [?\]: u found ur glasses?
+goren2 [3k\]: something like that
+]
+;B[jr]C[GandalfTW [2d\]: no b win
+goren2 [3k\]: can w not s2?
+]
+;W[jb]
+;B[pc]
+;W[od]
+;B[me]C[goren2 [3k\]: k6 has to be big soon
+]
+;W[ob]
+;B[oc]
+;W[pb]
+;B[qd]
+;W[rb]
+;B[in]
+;W[gh]C[goren2 [3k\]: (j6, whatever.  glasses lost again)
+tomash [1k\]: b d16 sente?
+]
+;B[fh]C[GandalfTW [2d\]: no
+]
+;W[fg]C[goren2 [3k\]: again, w s2 at some point
+Hipcio [2d\]: sure why not
+]
+;B[hi]C[tomash [1k\]: if tenuki b cannot c17 in sente?
+]
+;W[rr]C[GandalfTW [2d\]: t3?
+LMP1 [-\]: B 10 minutes left
+LMP1 [-\]: W more than 40
+]
+;B[sq]C[celepa [?\]: seems like w+6
+SkillOut [9k\]: white h5 group dead and just aji?
+]
+;W[qq]
+;B[qr]C[SkillOut [9k\]: oh lol nvm
+]
+;W[pq]
+;B[pr]
+;W[pp]C[GandalfTW [2d\]: dead and no agi
+]
+;B[po]C[GandalfTW [2d\]: aji*
+]
+;W[qo]
+;B[op]
+;W[qp]
+;B[rs]C[karmaic [1d\]: aji in ko
+goren2 [3k\]: b8?
+SkillOut [9k\]: <----blind and stuff
+goren2 [3k\]: or k14?
+]
+;W[bl]
+;B[dd]
+;W[ed]
+;B[ee]
+;W[ec]
+;B[ff]C[goren2 [3k\]: e14
+SkillOut [9k\]: tenuki
+]
+;W[fi]
+;B[gg]
+;W[ef]
+;B[fe]C[GandalfTW [2d\]: h15
+]
+;W[eh]
+;B[he]
+;W[jd]
+;B[bm]
+;W[jg]
+;B[jh]
+;W[kb]
+;B[al]C[EmeraldGo [4k\]: f9
+karmaic [1d\]: reread f9 situation
+gogonuts [5d\]: b9 :-)
+gogonuts [5d\]: they made this game really close
+GandalfTW [2d\]: but still b win
+gogonuts [5d\]: im not sure
+]
+;W[bk]C[EmeraldGo [4k\]: f9 work it's good
+GandalfTW [2d\]: n6
+vitrivius [2k\]: b+2 as i counted
+]
+;B[lb]C[goren2 [3k\]: n5
+]
+;W[mo]
+;B[mp]
+;W[no]C[karmaic [1d\]: f9 is just a force capture, but i guess it is yose to remove a point 
+]
+;B[np]C[comoco: m12
+EmeraldGo [4k\]: 1point sente for f8
+EmeraldGo [4k\]: f9*
+tomash [1k\]: l13
+]
+;W[kh]
+;B[ji]
+;W[kg]
+;B[lj]
+;W[lk]C[GandalfTW [2d\]: f10
+]
+;B[qe]
+;W[nb]C[EmeraldGo [4k\]: no
+]
+;B[re]
+;W[se]
+;B[nd]
+;W[oe]C[EmeraldGo [4k\]: 1point for black or f9 not point for black
+GandalfTW [2d\]: f10 = 2 points for b
+gogonuts [5d\]: w wins imo
+gogonuts [5d\]: about 1.5
+EmeraldGo [4k\]: but yes black f10
+]
+;B[gi]C[celepa [?\]: ye, it's like 0.5 moku game
+]
+;W[ma]
+;B[la]
+;W[mb]C[GandalfTW [2d\]: no b *must* win this... ;)
+]
+;B[fj]
+;W[ej]
+;B[dn]
+;W[ak]C[GandalfTW [2d\]: o6?
+]
+;B[hh]C[gogonuts [5d\]: im so bad at endgame
+]
+;W[am]
+;B[an]C[gogonuts [5d\]: now it looks like a b win ...
+]
+;W[on]
+;B[fh]C[around1d [-\]: actually b was lead from start and for now
+]
+;W[lh]
+;B[li]
+;W[gh]C[gogonuts [5d\]: lower left was so strange by both, starting with h7
+barty [2d\]: black will win i think
+GandalfTW [2d\]: b should've o6..
+]
+;B[cc]
+;W[bc]
+;B[fh]C[celepa [?\]: this ko is bad for black
+celepa [?\]: losing yose points
+GandalfTW [2d\]: y o6 = -2 points for w for sure
+goren2 [3k\]: t4
+karmaic [1d\]: it's fine cuz b has a8
+]
+;W[sp]C[gogonuts [5d\]: b doesnt need to win the ko
+]
+;B[sr]
+;W[gh]C[GandalfTW [2d\]: y
+goren2 [3k\]: l19
+]
+;B[sc]
+;W[rc]
+;B[fh]C[around1d [-\]: b can play this ko long time 
+]
+;W[go]C[around1d [-\]: he has too many threats for w
+]
+;B[hn]
+;W[gh]
+;B[sf]
+;W[sg]
+;B[fh]C[evvi [11k?\]: black will win
+]
+;W[eg]
+;B[ka]
+;W[ja]
+;B[lc]C[karmaic [1d\]: b+3.5
+]
+;W[jc]C[TheThe [7k\]: a8 
+barty [2d\]: this game dont have set komi
+karmaic [1d\]: a8 g12 maia
+barty [2d\]: SE count 0.5
+]
+;B[kq]
+;W[al]C[barty [2d\]: looks like white win then
+barty [2d\]: :)
+goren2 [3k\]: b + 2
+padasnieg [3k\]: komi is set to 6.5
+]
+(;B[gh]
+;W[kf]
+;B[lg])
+(;B[kd]
+;W[kf])
+(;B[kf]
+;W[kd]C[highdan: skupcie się )) podajcie wynik ))
+]
+;B[lg]C[padasnieg [3k\]: double checked.
+]
+;W[pn]C[evvi [11k?\]: close game
+barty [2d\]: ahhh yes :)
+]
+;B[je]
+;W[ie]C[LMP1 [-\]: very fast in the finish
+Dragoness [-\]: b+
+karmaic [1d\]: chinese rules?
+LMP1 [-\]: a ters
+celepa [?\]: who won?
+tomash [1k\]: f12?
+Nilatarion [3d\]: Gie!
+celepa [?\]: nice gie!
+goren2 [3k\]: w j6 was necessary
+padasnieg [3k\]: Gieeeeeeeeeeeee! :D
+celepa [?\]: told ya he is strong against Leszek
+highdan: Z ilu? LMP nie znasz wyniku ???
+highdan: musze liczyć sam ? ((
+tescik: uzgodnią wynik wieczorem przy piwie :0)
+celepa [?\]: ;D
+LMP1 [-\]: B + 4,5
+Gokgs001: looking at first time that game, looks like a 25kyu game
+Coriolan [9k\]: Gie!
+LMP1 [-\]: Krszysztof refused to count at some point
+LMP1 [-\]: :P
+LMP1 [-\]: thanks for watching
+highdan: thanks ))
+Gokgs001: thx lmp1
+]))

@@ -1,197 +1,631 @@
-(
-  ;BR[4d]CA[UTF-8]DT[2016-01-09]EV[Polish Go Championship 2015]FF[4]GM[1]GN[Round 4 - Board 1]KM[6.50]PB[Leszek Sołdan]PC[Warszawa]PW[Mateusz Surma]RE[W+R]RU[japanese]ST[2]SZ[19]WR[1p]
-  ;B[pp]
-  ;W[pd]
-  ;B[dq]
-  ;W[dd]
-  ;B[cn]
-  ;W[nq]
-  ;B[lq]
-  ;W[qq]
-  ;B[pq]
-  ;W[qp]
-  ;B[po]
-  ;W[pr]
-  ;B[or]
-  ;W[qr]
-  ;B[oq]
-  ;W[qn]
-  ;B[om]
-  ;W[cf]
-  ;B[nc]
-  ;W[qf]
-  ;B[pb]
-  ;W[qc]
-  ;B[hp]
-  ;W[lc]
-  ;B[ne]
-  ;W[le]
-  ;B[qb]
-  ;W[ec]
-  ;B[dj]
-  ;W[en]
-  ;B[ep]
-  ;W[kp]
-  ;B[lp]
-  ;W[kn]
-  ;B[lo]
-  ;W[hn]
-  ;B[dl]
-  ;W[ip]
-  ;B[hq]
-  ;W[iq]
-  ;B[hl]
-  ;W[ho]
-  ;B[jc]
-  ;W[hc]
-  ;B[hd]
-  ;W[gc]
-  ;B[je]
-  ;W[lg]
-  ;B[ng]
-  ;W[li]
-  ;B[ld]
-  ;W[md]
-  ;B[kd]
-  ;W[mc]
-  ;B[me]
-  ;W[nd]
-  ;B[lf]
-  ;W[oc]
-  ;B[rc]
-  ;W[rd]
-  ;B[kl]
-  ;W[hr]
-  ;B[gr]
-  ;W[jr]
-  ;B[hs]
-  ;W[kq]
-  ;B[sc]
-  ;W[ra]
-  ;B[rb]
-  ;W[sa]
-  ;B[qg]
-  ;W[rg]
-  ;B[qe]
-  ;W[re]
-  ;B[pf]
-  ;W[rf]
-  ;B[ob]
-  ;W[nb]
-  ;B[oa]
-  ;W[qa]
-  ;B[oe]
-  ;W[pe]
-  ;B[qm]
-  ;W[rn]
-  ;B[ph]
-  ;W[ii]
-  ;B[gi]
-  ;W[hh]
-  ;B[fg]
-  ;W[hf]
-  ;B[ge]
-  ;W[kf]
-  ;B[ke]
-  ;W[jf]
-  ;B[ig]
-  ;W[if]
-  ;B[lr]
-  ;W[fp]
-  ;B[fq]
-  ;W[gp]
-  ;B[ir]
-  ;W[eo]
-  ;B[do]
-  ;W[jm]
-  ;B[kj]
-  ;W[ki]
-  ;B[fm]
-  ;W[fn]
-  ;B[gm]
-  ;W[gn]
-  ;B[ch]
-  ;W[bg]
-  ;B[bh]
-  ;W[ah]
-  ;B[ai]
-  ;W[ag]
-  ;B[bi]
-  ;W[jj]
-  ;B[df]
-  ;W[de]
-  ;B[cg]
-  ;W[be]
-  ;B[rh]
-  ;W[mf]
-  ;B[le]
-  ;W[mg]
-  ;B[og]
-  ;W[ql]
-  ;B[rm]
-  ;W[pm]
-  ;B[pl]
-  ;W[pn]
-  ;B[rl]
-  ;W[qk]
-  ;B[rk]
-  ;W[pj]
-  ;B[qj]
-  ;W[pk]
-  ;B[ol]
-  ;W[qi]
-  ;B[rj]
-  ;W[pi]
-  ;B[qh]
-  ;W[nj]
-  ;B[on]
-  ;W[ri]
-  ;B[si]
-  ;W[nf]
-  ;B[of]
-  ;W[sm]
-  ;B[qo]
-  ;W[ro]
-  ;B[ni]
-  ;W[oi]
-  ;B[oh]
-  ;W[mi]
-  ;B[kb]
-  ;W[lb]
-  ;B[ib]
-  ;W[hb]
-  ;B[ef]
-  ;W[gh]
-  ;B[fh]
-  ;W[gj]
-  ;B[fj]
-  ;W[hi]
-  ;B[fi]
-  ;W[nh]
-  ;B[sl]
-  ;W[ln]
-  ;B[mn]
-  ;W[mm]
-  ;B[sn]
-  ;W[sp]
-  ;B[jl]
-  ;W[nn]
-  ;B[mo]
-  ;W[nm]
-  ;B[no]
-  ;W[oo]
-  ;B[op]
-  ;W[nl]
-  ;B[sr]
-  ;W[ok]
-  ;B[oo]
-  ;W[rr]
-  ;B[gk]
-  ;W[gq]
-  ;B[hr]
-  ;W[fr]
-  ;B[eq]
-  ;W[js]
-  ;B[er]
-  ;W[ms]
-)
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[5400]OT[5x60 byo-yomi]
+PW[Mateusz Surma]PB[Leszek Sołdan]WR[1p]BR[4d]DT[2016-01-09]PC[Narnia]RE[W+Resign]
+;B[pp]
+;W[pd]C[LMP1 [-\]: Good morning everyone
+]
+;B[dq]
+;W[dd]
+;B[cn]
+;W[nq]
+;B[lq]C[superpal1 [1d\]: good evening
+Muttley [2k\]: go on, o5
+]
+;W[qq]
+;B[pq]
+;W[qp]
+;B[po]
+;W[pr]
+;B[or]
+;W[qr]
+;B[oq]
+;W[qn]C[Muttley [2k\]: ho hum, certainty over potential
+]
+;B[om]C[floppy: good night
+]
+;W[cf]C[LMP1 [-\]: Black nods
+]
+;B[nc]C[floppy: bot will become 3rd line moyo
+]
+;W[qf]
+;B[pb]
+;W[qc]
+;B[hp]
+;W[lc]
+;B[ne]
+;W[le]C[LMP1 [-\]: Black leaves
+floppy: escapes already???
+LMP1 [-\]: magic gingerbread from yesterday is gone
+LMP1 [-\]: he just realized that and returned, empty handed
+]
+;B[qb]C[LMP1 [-\]: no more magic potions, he is on his own
+floppy: does he at least still have his boots of swiftness and his sword +2?
+LMP1 [-\]: yesterday, Black lost what many considered a won game after his opponent ate some gingerbread
+LMP1 [-\]: I don't see a sword, but boots are there, and they're certainly swift
+]
+;W[ec]C[floppy: without sword he cannot cut
+]
+;B[dj]C[LMP1 [-\]: I am sure he can and will cut. Fighting spirit is strong in Black
+harlej9 [1k\]: nice game by b
+harlej9 [1k\]: so far he's managing to keep up i think
+floppy: i like the b position but versus stronger players it usually gets reduced to almost nothing
+]
+;W[en]C[harlej9 [1k\]: well, the invasion time has come 
+]
+;B[ep]C[floppy: this is unexpected
+floppy: now c7 shenanigans?
+YoungPro [-\]: what is unexpected?
+floppy: your question
+YoungPro [-\]: i didnt understand what is unexpected
+floppy: and the spanish inquisition
+YoungPro [-\]: if you talk about e4.. its quite normal.. :) e6 too
+floppy: why not d5 instead?
+YoungPro [-\]: d5 is not good shape
+YoungPro [-\]: this is normal
+YoungPro [-\]: white can try c4 now
+YoungPro [-\]: or just play c7
+YoungPro [-\]: or something else
+YoungPro [-\]: c7 is overplay
+YoungPro [-\]: maybe c4 probe
+YoungPro [-\]: and then swich to d8
+floppy: i dont like e4
+midorisuke [4d\]: i dont like you
+superpal1 [1d\]: lol
+floppy: me neither
+floppy: so i congratulate on a good taste :-)
+]
+;W[kp]
+;B[lp]
+;W[kn]
+;B[lo]C[superpal1 [1d\]: w thinks he can manage 2 groups
+floppy: j4
+dogfish [2d\]: managing two groups is probably a bad idea
+floppy: e6 is not a group
+dogfish [2d\]: that makes everything easier
+]
+;W[hn]
+;B[dl]C[floppy: b has r12 and r7
+dogfish [2d\]: everytime someone plays a move, I always ask myself what would kingmaker do
+superpal1 [1d\]: that must be tiring
+]
+;W[ip]C[Kripparian [1d\]: make a king?
+]
+;B[hq]C[floppy: i ask myself what would heimerdinger do
+floppy: right side now
+dogfish [2d\]: right side more interesting than the center?
+floppy: giving b r7 and r12 hurts
+]
+;W[iq]
+;B[hl]C[dogfish [2d\]: I think white is going to hurt no matter what he gives black
+]
+;W[ho]C[dogfish [2d\]: but I also think the center is more urgent
+]
+;B[jc]C[floppy: do dogfishs hunt cats or get eaten by cats?
+]
+;W[hc]C[dogfish [2d\]: they do both simultaneously
+]
+;B[hd]C[barty [1d\]: k17 aggressive 
+floppy: schroedinger dogfishs, interesting
+]
+;W[gc]C[barty [1d\]: m18 maybe now
+dogfish [2d\]: k17 not really aggressive
+]
+;B[je]
+;W[lg]
+;B[ng]C[floppy: r12 looming
+barty [1d\]: two not live groups
+barty [1d\]: now
+floppy: i count 4 at top
+midorisuke [4d\]: you can't count both r14 and r18 as not live
+midorisuke [4d\]: someone has to play s18, after all
+floppy: sure i can
+]
+;W[li]C[midorisuke [4d\]: this is why i don't like you
+floppy: :-)
+dogfish [2d\]: ouch -.-
+barty [1d\]: :)
+floppy: you have good taste
+midorisuke [4d\]: only the best
+floppy: I see
+barty [1d\]: m18 for me to connect
+barty [1d\]: is now time
+dogfish [2d\]: might r12 first or something
+midorisuke [4d\]: if you play m18 and let w get to r11
+midorisuke [4d\]: you can resign
+floppy: I like you mido
+]
+;B[ld]C[midorisuke [4d\]: that's symptomatic of good taste
+dogfish [2d\]: well then
+dogfish [2d\]: this happened
+midorisuke [4d\]: that's rather direct
+dogfish [2d\]: this is going to get ugly
+GoPostal [2d\]: this is nicely going to settle things
+LMP1 [-\]: as I said, Black is not afraid to cut
+GoPostal [2d\]: oh.. Im 2d again..
+floppy: b found his sword +2
+LMP1 [-\]: Is it a good thing or a bad thing, GoPostal?
+dogfish [2d\]: kgs felt you should be demoted 1 stone for that comment =P
+dogfish [2d\]: wedging is almost never good when you aren't thick
+]
+;W[md]
+;B[kd]
+;W[mc]C[GoPostal [2d\]: b risks too much
+]
+;B[me]
+;W[nd]C[GoPostal [2d\]: huge investment giving up q18 stones
+]
+;B[lf]C[barty [1d\]: now black can resign
+Butcher [1k\]: maybe alive in the corner
+midorisuke [4d\]: this is kind of playable
+Gor [4d\]: s17 can live
+Werfeus [5d\]: this is so bad i just laugh
+midorisuke [4d\]: q18 isn't dead
+midorisuke [4d\]: real sad tho
+dogfish [2d\]: q18 isn't dead
+dogfish [2d\]: but this is still terrible
+barty [1d\]: this is really bad for black
+midorisuke [4d\]: w just plays l8, i guess
+dogfish [2d\]: l8 looks ok
+GoPostal [2d\]: the m11 are easy tohandle for white, I guess slight worry about splitting attack, with j4 group the way it is
+floppy: if w plays l8 now he can resign
+dogfish [2d\]: lol @ floppy
+Butcher [1k\]: black likes the bigger picture of center attack
+GoPostal [2d\]: if w plays l8, b lives in topright corner
+dogfish [2d\]: butcher, you can't attack things if you're groups are weak and you give up sente
+GoPostal [2d\]: l8 does look very important tho, even if m13 and m11 are light to some extend, l8 just too nice
+Butcher [1k\]: blacks center groups looking strong to me
+floppy: l8 is too weak and too slow to use a famous quote
+midorisuke [4d\]: l8 is yooge, it's the best move
+dogfish [2d\]: yooge?
+floppy: yooge sounds like a tasty milk product
+midorisuke [4d\]: yooge
+]
+;W[oc]C[dogfish [2d\]: what kanji does that use? ;o
+floppy: see
+floppy: told you
+]
+;B[rc]
+;W[rd]C[Gor [4d\]: too early for ko?
+]
+;B[kl]C[Butcher [1k\]: blacks corner goup only ko aji for other fights
+LMP1 [-\]: Black spent a few seconds reading the corner and nodded before playing L8
+GoPostal [2d\]: no rush witht hat ko I think, its rather small
+]
+;W[hr]
+;B[gr]C[harlej9 [1k\]: looks like w is more than comfortable
+GoPostal [2d\]: kgs sure can be confusing, got to 3d yesterday, then won a game ranked game as 3d, kgs demoted me to 2d and now I won another game and still 2d.
+floppy: cho chicun could make 2 living groups there
+woodpecker [-\]: I wonder if the comments would reverse if players strenght would be reversed
+dogfish [2d\]: whose strength?
+dogfish [2d\]: black and whites?
+woodpecker [-\]: yep
+floppy: sure
+midorisuke [4d\]: i prefer black
+GoPostal [2d\]: heh, I didnt even notice who white was until you said that
+Butcher [1k\]: strengths are facts
+woodpecker [-\]: it would goes like this "now black is crushing white", "shite should resign" etc
+floppy: yes
+woodpecker [-\]: strenghts doesn't play, position on the board matters
+LMP1 [-\]: shite is such a strong word
+dogfish [2d\]: actually, black is kinda winning after l8 -.-
+Gor [4d\]: black prospects in the center are huge
+floppy: but we know w will live here so we can use that assumption
+LMP1 [-\]: no need for that kind of language, woodpecker
+GoPostal [2d\]: lmp1, its a good word, because you can always claim you just missspelled white
+Gor [4d\]: while all w can do is to get some points on the right
+LMP1 [-\]: it looks like you lost all your manners while travelling, woodpecker
+woodpecker [-\]: what kind of language LMP?
+Butcher [1k\]: hehe
+dogfish [2d\]: so today, I took my car to the shop for maintenance
+dogfish [2d\]: and I saw a road runner
+floppy: woodpecker from mars?
+LMP1 [-\]: although I don't remember you going to Ireland, where the word is so popular
+]
+;W[jr]C[woodpecker [-\]: oh, it's a typo, a meant white ;P
+]
+;B[hs]C[LMP1 [-\]: OH I SEE, woodpecker!
+woodpecker [-\]: LOL
+LMP1 [-\]: THANKS FOR CLARIFYING THAT, MY FRIEND
+]
+;W[kq]C[floppy: lies.... blatant lies...
+dogfish [2d\]: it's much less convincing for hjim to say that after GoPostal's comment though -.-
+LMP1 [-\]: true, but GoPostal is a shady character himself, with all his rank manipulations
+floppy: b looks fine but w will win
+LMP1 [-\]: I mean, how can a person be trustworthy if their rank changes three times a day
+]
+;B[sc]C[GoPostal [2d\]: probably not
+midorisuke [4d\]: yeah that's my guess
+midorisuke [4d\]: what
+midorisuke [4d\]: wow, black sure lost fast
+LMP1 [-\]: white looks at the corner really close
+GoPostal [2d\]: b died..
+GoPostal [2d\]: bent4 can be difficult yes
+]
+;W[ra]
+;B[rb]
+;W[sa]C[midorisuke [4d\]: if i were b, i would stand up, go outside, and scream for a while
+GoPostal [2d\]: pretty suprised egf 4d messes this up
+dogfish [2d\]: yeah, that was really silly -.-
+GoPostal [2d\]: maybe b clever plan is to kill white otuside group :)
+]
+;B[qg]C[dogfish [2d\]: that would be interesting to see
+midorisuke [4d\]: that sure would be a plan
+midorisuke [4d\]: i guess it's time for tilt
+dogfish [2d\]: so according to lmp, black looked at the corner and nodded before playin gl8
+]
+;W[rg]C[scfld [2k\]: b wants big moyo in the center?
+floppy: i think b just wants to win
+]
+;B[qe]
+;W[re]C[scfld [2k\]: winning is the best strategy
+]
+;B[pf]
+;W[rf]C[dogfish [2d\]: life is all about strategy
+scfld [2k\]: tell that to dr. freud
+]
+;B[ob]
+;W[nb]C[floppy: i am waiting for midos opinion
+]
+;B[oa]C[midorisuke [4d\]: my opinion?
+]
+;W[qa]
+;B[oe]C[floppy: no
+midorisuke [4d\]: in my excellent opinion, b is losing his mind
+Gor [4d\]: why not saving for corner ko for later
+]
+;W[pe]C[Gor [4d\]: he cant really squeeze white
+dogfish [2d\]: because black either missclicked or misread
+floppy: why not both?
+floppy: r7
+scfld [2k\]: because miserad+misclick=good move
+midorisuke [4d\]: b needs about 30 points in the center
+]
+;B[qm]C[Muttley [2k\]: unless b can attack m13, this is just dead lost
+scfld [2k\]: seems possible for me
+scfld [2k\]: to me..
+dogfish [2d\]: m13 might die
+dogfish [2d\]: but m11 is going to 100% live
+Muttley [2k\]: b's too thin, I'd bet more on L8 dying
+]
+;W[rn]C[floppy: this is where guo juan would say AYAYAYAYAY
+midorisuke [4d\]: b isn't that thin, but w has so many points
+dogfish [2d\]: guo juan says AYAYA
+dogfish [2d\]: ?
+scfld [2k\]: guo juan very wise
+midorisuke [4d\]: it's hard to eat the two white center stones on a large enough scale
+Muttley [2k\]: h8/L8 are thin
+kyusaku [6k\]: what is this event?
+Muttley [2k\]: Polish ch
+]
+;B[ph]C[dogfish [2d\]: polish thing
+woodpecker [-\]: festival of comments
+kyusaku [6k\]: thanks
+]
+;W[ii]C[floppy: enjoy the pole position
+]
+;B[gi]C[Muttley [2k\]: b going allin
+floppy: w lives and it´s gg and 
+midorisuke [4d\]: q12 was slow imo
+dogfish [2d\]: this is where a 100 ft. titan appears and blows up walls
+floppy: h8 or l8 will die
+]
+;W[hh]C[floppy: nobody asked why not both??
+dogfish [2d\]: I bet that they both live
+SadPlayer [-\]: Coś słabo Leszek póki co. Myślałem że po tym jak wygrał eliminacje to będzie w top 3
+kyusaku [6k\]: nice that european pros can still play in national championships
+]
+;B[fg]
+;W[hf]
+;B[ge]
+;W[kf]
+;B[ke]
+;W[jf]C[Muttley [2k\]: w lives in sente, gets b10 and saves the world
+Muttley [2k\]: result
+LMP1 [-\]: bridge players started another round and the room suddenly becomes quiet
+floppy: which world?
+]
+;B[ig]C[LMP1 [-\]: we can hear the sound of a cat passing nearby
+Muttley [2k\]: muttsuji!
+dogfish [2d\]: za warudo
+]
+;W[if]C[floppy: twoeye!!
+LMP1 [-\]: Black laughs
+dogfish [2d\]: black be laughin
+Muttley [2k\]: yep, doesn't work
+floppy: evil laugh or silly laugh?
+]
+;B[lr]C[LMP1 [-\]: self-bashing laugh I think
+dogfish [2d\]: it can only be a desperate laugh
+LMP1 [-\]: self-pity?
+BubbIes [3d?\]: Give him a hug
+]
+;W[fp]C[floppy: and the phone number of lee sedol
+LMP1 [-\]: I'm not sure if you met Black in person, but if you did you'd know this is not a great idea
+]
+;B[fq]
+;W[gp]
+;B[ir]
+;W[eo]C[BubbIes [3d?\]: Why not
+dogfish [2d\]: which idea isn't great?
+LMP1 [-\]: You'd have to meet Black
+]
+;B[do]C[LMP1 [-\]: giving Black a hug, especially during a game
+floppy: upload a pic
+dogfish [2d\]: is he like 250 lbs of pure athletic scariness?
+dogfish [2d\]: ahh
+floppy: imgur
+woodpecker [-\]: more like scarface
+woodpecker [-\]: with ak47 in his hands
+LMP1 [-\]: https://www.facebook.com/PolskieStowarzyszenieGo/photos/a.159611090760633.44776.103237129731363/918401961548205/?type=3&theater
+dogfish [2d\]: al pacino was pretty huggable
+LMP1 [-\]: black on the left, first board
+dogfish [2d\]: the old man?
+kyusaku [6k\]: looks cuddly enough :)
+LMP1 [-\]: White, for comparison:
+dogfish [2d\]: who's turning red?
+LMP1 [-\]: https://www.facebook.com/PolskieStowarzyszenieGo/photos/a.159611090760633.44776.103237129731363/918816258173442/?type=3&theater
+]
+;W[jm]
+;B[kj]
+;W[ki]C[Muttley [2k\]: Mateusz Surma, the invisible man
+]
+;B[fm]
+;W[fn]
+;B[gm]
+;W[gn]C[floppy: now we need a pic of the gingerbread or the story is not complete
+]
+;B[ch]
+;W[bg]
+;B[bh]
+;W[ah]
+;B[ai]
+;W[ag]
+;B[bi]C[dogfish [2d\]: w++
+LMP1 [-\]: the gingerbread is gone, sadly, but there's a picture of a yesterday's fruit salad if that helps
+Muttley [2k\]: w 745
+floppy: that was a rather fast defeat
+Muttley [2k\]: 74.5
+floppy: ok fruit salad is fair enough
+Muttley [2k\]: b needs 15 on the right I think
+Muttley [2k\]: about 59 b
+midorisuke [4d\]: that's a pleasant dream
+floppy: hi mido my friend :-)
+Muttley [2k\]: 15 is vaguely plausible against slack w yose, but w yose will be a lot better
+harlej9 [1k\]: b iw winning
+harlej9 [1k\]: is*
+midorisuke [4d\]: i think b and w will get similar amounts on the right
+floppy: i could win as w 
+Muttley [2k\]: lol harlej :))
+kyusaku [6k\]: 74.5 seems like a generous estimate...
+Muttley [2k\]: you know b is dead top right?
+LMP1 [-\]: right side open on both ends
+kyusaku [6k\]: ah.
+Muttley [2k\]: if you think it is wrong, count it
+Muttley [2k\]: bent 4 in the corner = dead
+LMP1 [-\]: even SE knows that
+Meto [1d\]: n10
+floppy: which ruleset do they use?
+Muttley [2k\]: presumably Japanese?
+LMP1 [-\]: yes, Japanese
+Muttley [2k\]: There you go, easiest rule set to count with
+floppy: w is ordering his lunch already?
+LMP1 [-\]: He would never do that.
+Muttley [2k\]: I would k10 instead
+]
+;W[jj]C[Muttley [2k\]: Muttsuji!
+]
+;B[df]
+;W[de]C[floppy: but he could do that 
+]
+;B[cg]
+;W[be]
+;B[rh]C[Muttley [2k\]: r8
+floppy: r11
+Muttley [2k\]: combined with r11 and connect out 
+Muttley [2k\]: and q8 of course
+LMP1 [-\]: you'll notice, floppy, how he didn't even touch his fruit salad while playing yesterday
+LMP1 [-\]: his mind is fully on the game
+]
+;W[mf]C[LMP1 [-\]: as evidenced by the above photo
+LMP1 [-\]: checkmate, floppy
+]
+;B[le]
+;W[mg]C[floppy: L8 almost dead already
+]
+;B[og]
+;W[ql]C[Muttley [2k\]: Muttsuji!
+floppy: he read your book
+Muttley [2k\]: Mateusz took private lessons with on "Exploiting the second line moyo"
+floppy: but then i wonder how could he become pro??
+Muttley [2k\]: Well, he did ask for his money back
+floppy: to use it to erase his mind and start with a fresh mind?
+Muttley [2k\]: w might aim at  the bottom group as well, with o2 and q6
+]
+;B[rm]C[Muttley [2k\]: but I still prefer r11 first
+floppy: b has k1 ko if hell breaks loose
+floppy: q7? without reading
+houjuu [3k\]: b is 4dan only?
+]
+;W[pm]C[woodpecker [-\]: former 6dan
+midorisuke [4d\]: hm, i expected s8
+]
+;B[pl]
+;W[pn]
+;B[rl]
+;W[qk]
+;B[rk]
+;W[pj]C[woodpecker [-\]: b is also many times polish champ
+]
+;B[qj]
+;W[pk]
+;B[ol]C[floppy: that is why you are only 4d mido you were wrong with l8 as well
+]
+;W[qi]
+;B[rj]
+;W[pi]
+;B[qh]C[midorisuke [4d\]: i'm the literal worst
+Muttley [2k\]: sweet, you ain't getting 15 points here bub
+floppy: there are worse
+Muttley [2k\]: p6 first
+Muttley [2k\]: o11 = declariation of victory but please, p6 first
+]
+;W[nj]
+;B[on]C[Muttley [2k\]: sigh
+floppy: p1
+Muttley [2k\]: r5
+floppy: p1 bad
+]
+;W[ri]
+;B[si]C[Muttley [2k\]: w, w can try to kill the lot
+floppy: t10
+]
+;W[nf]
+;B[of]
+;W[sm]C[floppy: g14
+]
+;B[qo]
+;W[ro]C[woodpecker [-\]: g14 doesnt work
+woodpecker [-\]: j16
+Slaboumov [4k\]: p11?
+Meto [1d\]: h15 
+]
+;B[ni]
+;W[oi]
+;B[oh]
+;W[mi]C[Woodman [5d\]: s18 group is annoying for black..
+Slaboumov [4k\]: why not p11 ? )
+patcher [1d\]: p11 also looked better to me
+]
+;B[kb]
+;W[lb]
+;B[ib]
+;W[hb]C[patcher [1d\]: is s18 dead ?
+Woodman [5d\]: w can make a ko after filling libs
+floppy: what do you think?
+PAPANINJA [4k\]: if japanese rules its dead right?
+Slaboumov [4k\]: dead in the end of game
+patcher [1d\]: but isnt there this "bent of four" rule
+LMP1 [-\]: I don't think the rule is even required. There are no ko threats when playing out l&d at the end of the game except for a pass
+LMP1 [-\]: i.e. l&d is always decided locally, without taking the rest of the board into account
+patcher [1d\]: there could be ko threats !
+patcher [1d\]: even in the end game
+PAPANINJA [4k\]: yep
+Vinicius [1d\]: maybe there is a double ko 
+LMP1 [-\]: I'm trying to say it does not matter. If the players disagree about group status, they will play it out
+floppy: b resigned?
+]
+;B[ef]C[LMP1 [-\]: and during this playout, only life and death of a particular group is decided
+Slaboumov [4k\]: in japan rules it's dead group
+]
+;W[gh]C[patcher [1d\]: Ah, ok
+]
+;B[fh]
+;W[gj]C[patcher [1d\]: so w could protect against ko threats without losing points
+]
+;B[fj]
+;W[hi]
+;B[fi]C[SadPlayer [-\]: ?j16 
+Slaboumov [4k\]: black can live local
+LMP1 [-\]: he will not even answer non-local ko threats
+]
+;W[nh]C[patcher [1d\]: ok
+]
+;B[sl]C[LMP1 [-\]: as they do not change the status of the corner group
+LMP1 [-\]: and the playout is only to decide this status
+Slaboumov [4k\]: ???
+Woodman [5d\]: how is it dead as long as it can be ko? makes no sense to me..
+Slaboumov [4k\]: t8 ?
+floppy: t10 and connect s4
+LMP1 [-\]: http://senseis.xmp.net/?BentFourInTheCornerIsDead#toc4
+floppy: or t4
+patcher [1d\]: cause only white decide when to start the ko, and could protect every ko threats before
+woodpecker [-\]: in japanese rules protecting ko threats is usually losing points
+woodpecker [-\]: that's why this rule exists
+Meto [1d\]: d7
+LMP1 [-\]: I think you are missing the point
+]
+;W[ln]C[woodpecker [-\]: in chinese rules there is no such rule
+LMP1 [-\]: when deciding the status of a group, only a pass is a valid ko threat
+]
+;B[mn]
+;W[mm]C[Kogokhan [1k\]: The thing becomes interesting if there is an infinite source of ko threats. But it is like a academic research
+]
+;B[sn]
+;W[sp]
+;B[jl]
+;W[nn]
+;B[mo]C[Slaboumov [4k\]: infinite source of ko on infinite board...
+]
+;W[nm]C[patcher [1d\]: on the link you provided, it is said that "unremovable" ko threats can cause some problems
+LMP1 [-\]: it says that the rules imply that the defending side has no unremovable ko threats
+]
+;B[no]C[Kogokhan [1k\]: Slabournov, you would be surprise about what can you got on a finite board :)
+LMP1 [-\]: therefore, cannot make a ko threat
+patcher [1d\]: so in case of unremovable ko threats the ko might have to be played
+LMP1 [-\]: ok, one last time: if players disagree about the status of a group, they play it out
+]
+;W[oo]C[SkyWalker [1k\]: p5 
+LMP1 [-\]: during this playout, only the status of this particular group is decided
+LMP1 [-\]: at the end of the playout, the group is removed or not, depending on the playout result
+patcher [1d\]: this is only with japanese rules
+LMP1 [-\]: but the playout itself is taken back
+]
+;B[op]C[LMP1 [-\]: therefore, there are no non-local ko threats
+]
+;W[nl]C[patcher [1d\]: wich is equivalent to "by the bent of four rule, it is dead"
+Woodman [5d\]: h10 
+LMP1 [-\]: I'm trying to say it doesn't need a special rule
+LMP1 [-\]: it is implied by the way playouts are done
+patcher [1d\]: ok
+patcher [1d\]: but only in japanese :)
+Slaboumov [4k\]: xD
+woodpecker [-\]: but you can just start this ko before and of the game if you have enough ko threats ;)
+Kogokhan [1k\]: Because in japanese rule, w wouldnt want to play inside not to lose a point.
+Meto [1d\]: wo2 or j8
+PAPANINJA [4k\]: white starts the ko
+PAPANINJA [4k\]: not b
+woodpecker [-\]: yep
+]
+;B[sr]
+;W[ok]
+;B[oo]C[woodpecker [-\]: so trick is to buy youir opponent lolipop so he starts it first
+]
+;W[rr]C[Kogokhan [1k\]: So there must be an exceptional rule in the ruleset to fix it. In other rulesets, it is assumed it is played out. (Because they can play out)  So there is no rule about it
+woodpecker [-\]: think outside the box !
+LMP1 [-\]: AFAIR the nihon kiin ruleset doesn't even have a special rule for bent four
+Slaboumov [4k\]: because remove all ko threats probably was worst then kill dead group xD
+]
+;B[gk]
+;W[gq]
+;B[hr]
+;W[fr]
+;B[eq]C[floppy: l1
+LMP1 [-\]: funny how we have these conversations about rules whenever bent four appears on the board
+LMP1 [-\]: the bridge players are arguing like crazy
+]
+;W[js]
+;B[er]
+;W[ms]C[LMP1 [-\]: their referee is very busy
+LMP1 [-\]: my job is so much easier than his
+LMP1 [-\]: Black resigned
+Slaboumov [4k\]: rip black
+floppy: thanks
+LMP1 [-\]: thanks for watching everyone
+patcher [1d\]: what a pity, they didnt have time for the upper rght ko
+woodpecker [-\]: thanks for broadcast
+SadPlayer [-\]: Przerażające jest z jaką łatwością biały robił te żywe grupy :)
+floppy: if b is dangerous does mateusz have to fear for his life now?
+barty [1d\]: looks dead
+barty [1d\]: black
+LMP1 [-\]: Next round at 3 pm local time, roughly in an hour and a half
+LMP1 [-\]: http://mp.go.art.pl has results, game records, schedule and player profiles
+LMP1 [-\]: uh, two and a half, sorry
+barty [1d\]: G3 nice tricky
+LMP1 [-\]: Mateusz says the game was good for him after j4 lived
+barty [1d\]: Looks like Mateusz or Saisio in this year :)
+floppy: can you give b a hug now?
+LMP1 [-\]: NOPE
+LMP1 [-\]: in the next round, Mateusz will play Stanisław Frejlak 5d
+floppy: hehe
+LMP1 [-\]: come for a game full of blood and gore
+])

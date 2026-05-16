@@ -1,269 +1,456 @@
-(
-  ;BR[3d]CA[UTF-8]DT[2016-01-10]EV[Polish Go Championship 2015]FF[4]GM[1]GN[Round 6 - Board 4]KM[6.50]PB[Krzysztof Giedrojć]PC[Warszawa]PW[Kamil Grabowski]RE[B+7.5]RU[japanese]ST[2]SZ[19]WR[2d]
-  ;B[pd]
-  ;W[dd]
-  ;B[pq]
-  ;W[dq]
-  ;B[qk]
-  ;W[nc]
-  ;B[pf]
-  ;W[qc]
-  ;B[pc]
-  ;W[pb]
-  ;B[qd]
-  ;W[rb]
-  ;B[rc]
-  ;W[qb]
-  ;B[jp]
-  ;W[po]
-  ;B[np]
-  ;W[qq]
-  ;B[qr]
-  ;W[qp]
-  ;B[rr]
-  ;W[qm]
-  ;B[ok]
-  ;W[rk]
-  ;B[rj]
-  ;W[rl]
-  ;B[qi]
-  ;W[nn]
-  ;B[on]
-  ;W[oo]
-  ;B[no]
-  ;W[om]
-  ;B[mn]
-  ;W[nm]
-  ;B[mm]
-  ;W[hq]
-  ;B[jq]
-  ;W[ep]
-  ;B[ck]
-  ;W[cf]
-  ;B[cn]
-  ;W[cp]
-  ;B[md]
-  ;W[nd]
-  ;B[mf]
-  ;W[me]
-  ;B[le]
-  ;W[ne]
-  ;B[lf]
-  ;W[oq]
-  ;B[op]
-  ;W[pp]
-  ;B[pr]
-  ;W[og]
-  ;B[of]
-  ;W[nf]
-  ;B[ng]
-  ;W[ml]
-  ;B[nl]
-  ;W[ll]
-  ;B[lo]
-  ;W[mg]
-  ;B[nh]
-  ;W[mh]
-  ;B[mi]
-  ;W[ni]
-  ;B[oh]
-  ;W[kg]
-  ;B[li]
-  ;W[kh]
-  ;B[je]
-  ;W[if]
-  ;B[mc]
-  ;W[mb]
-  ;B[lb]
-  ;W[nb]
-  ;B[hd]
-  ;W[fc]
-  ;B[gc]
-  ;W[fd]
-  ;B[fb]
-  ;W[eb]
-  ;B[ki]
-  ;W[ih]
-  ;B[ii]
-  ;W[hi]
-  ;B[ij]
-  ;W[kb]
-  ;B[jb]
-  ;W[kc]
-  ;B[jc]
-  ;W[kd]
-  ;B[ka]
-  ;W[ke]
-  ;B[hf]
-  ;W[hg]
-  ;B[ie]
-  ;W[gb]
-  ;B[hb]
-  ;W[fa]
-  ;B[jf]
-  ;W[ig]
-  ;B[kf]
-  ;W[ld]
-  ;B[jd]
-  ;W[lc]
-  ;B[gg]
-  ;W[gf]
-  ;B[ge]
-  ;W[he]
-  ;B[lh]
-  ;W[jh]
-  ;B[lg]
-  ;W[hj]
-  ;B[hk]
-  ;W[gk]
-  ;B[gl]
-  ;W[fl]
-  ;B[hl]
-  ;W[fk]
-  ;B[ff]
-  ;W[hf]
-  ;B[gd]
-  ;W[fe]
-  ;B[ch]
-  ;W[cl]
-  ;B[bl]
-  ;W[bi]
-  ;B[bj]
-  ;W[ci]
-  ;B[bh]
-  ;W[cj]
-  ;B[ai]
-  ;W[dk]
-  ;B[bk]
-  ;W[dl]
-  ;B[bf]
-  ;W[be]
-  ;B[df]
-  ;W[bg]
-  ;B[cg]
-  ;W[af]
-  ;B[ei]
-  ;W[dj]
-  ;B[ah]
-  ;W[de]
-  ;B[eg]
-  ;W[gh]
-  ;B[fh]
-  ;W[fg]
-  ;B[ef]
-  ;W[bo]
-  ;B[bn]
-  ;W[im]
-  ;B[hn]
-  ;W[cm]
-  ;B[bm]
-  ;W[fi]
-  ;B[eh]
-  ;W[io]
-  ;B[in]
-  ;W[jo]
-  ;B[ho]
-  ;W[ip]
-  ;B[gq]
-  ;W[gr]
-  ;B[fq]
-  ;W[fr]
-  ;B[ir]
-  ;W[hr]
-  ;B[jn]
-  ;W[ko]
-  ;B[kn]
-  ;W[kp]
-  ;B[lq]
-  ;W[kq]
-  ;B[kr]
-  ;W[lp]
-  ;B[mp]
-  ;W[lr]
-  ;B[mq]
-  ;W[iq]
-  ;B[jr]
-  ;W[ol]
-  ;B[nk]
-  ;W[gm]
-  ;B[hm]
-  ;W[rd]
-  ;B[re]
-  ;W[sc]
-  ;B[fo]
-  ;W[ej]
-  ;B[so]
-  ;W[ro]
-  ;B[sp]
-  ;W[sn]
-  ;B[rq]
-  ;W[rp]
-  ;B[sq]
-  ;W[is]
-  ;B[mr]
-  ;W[se]
-  ;B[rf]
-  ;W[ji]
-  ;B[jj]
-  ;W[rm]
-  ;B[gg]
-  ;W[gj]
-  ;B[ag]
-  ;W[bf]
-  ;B[co]
-  ;W[bp]
-  ;B[pl]
-  ;W[pm]
-  ;B[sf]
-  ;W[ql]
-  ;B[pk]
-  ;W[oe]
-  ;B[pe]
-  ;W[la]
-  ;B[sd]
-  ;W[id]
-  ;B[ic]
-  ;W[se]
-  ;B[jg]
-  ;W[hh]
-  ;B[sd]
-  ;W[rc]
-  ;B[eq]
-  ;W[er]
-  ;B[fm]
-  ;W[em]
-  ;B[fn]
-  ;W[ja]
-  ;B[ia]
-  ;W[gp]
-  ;B[fp]
-  ;W[js]
-  ;B[ls]
-  ;W[hp]
-  ;B[go]
-  ;W[an]
-  ;B[am]
-  ;W[ao]
-  ;B[oc]
-  ;W[ob]
-  ;B[di]
-  ;W[sj]
-  ;B[si]
-  ;W[sk]
-  ;B[ee]
-  ;W[ed]
-  ;B[dn]
-  ;W[hs]
-  ;B[ks]
-  ;W[dm]
-  ;B[se]
-  ;W[ka]
-  ;B[en]
-  ;W[fg]
-  ;B[ha]
-  ;W[ga]
-  ;B[gg]
-  ;W[da]
-  ;B[dr]
-  ;W[cr]
-)
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[5400]OT[1x60 byo-yomi]
+GN[Krzysztof Giedrojć 3d (black) vs Kamil Grabowski 2d (white) ]PW[Kamil Grabowski]PB[Krzysztof Giedrojć]WR[2d]BR[3d]DT[2016-01-10]PC[The KGS Go Server at http://www.gokgs.com/]C[LMP4 [-\]: 6th round of Polish Go Championship
+]RE[B+7.50]
+;B[pd]
+;W[dd]
+;B[pq]
+;W[dq]
+;B[qk]
+;W[nc]
+;B[pf]
+;W[qc]
+;B[pc]
+;W[pb]
+;B[qd]
+;W[rb]
+;B[rc]
+;W[qb]
+;B[jp]
+;W[po]
+;B[np]
+;W[qq]
+;B[qr]
+;W[qp]
+;B[rr]
+;W[qm]
+;B[ok]
+;W[rk]C[LMP4 [-\]: Kamil ask Giedrojć about the board " is it a bit convex or not?"
+]
+;B[rj]
+;W[rl]
+;B[qi]
+;W[nn]
+;B[on]
+;W[oo]
+;B[no]
+;W[om]
+;B[mn]
+;W[nm]
+;B[mm]
+;W[hq]C[LMP4 [-\]: Bridge player asks what we are playing here - Giedroijć gets up and explain 
+]
+;B[jq]C[gisel [-\]: they were wondering, why so silent during game ;)
+LMP4 [-\]: He gives some leaflets and back to game
+LMP4 [-\]: more bridge spectactors here
+LMP4 [-\]: Gie distributes more promo materials
+LMP4 [-\]: Gie gest up from the table again - he is watching what's going on 3rd board 
+]
+;W[ep]C[LMP4 [-\]: Kamil plaed a move and goes for a coffe
+LMP4 [-\]: both players stand up
+LMP4 [-\]: no one playing now
+LMP4 [-\]: You can watch first board live: https://www.youtube.com/watch?v=g7jJlYnwur0
+SadPlayer [-\]: r16 po zagraniu chińskiego otwarcia jest naprawde dobre?
+gisel [-\]: wydaje mi się trochę miękkie to r16
+gisel [-\]: na razie wygląda mi że biały robi co chce, a czarny się nie opiera
+LMP4 [-\]: they are back
+LMP4 [-\]: Leszek Sołdan is here - reading Giedrojć leaflets
+]
+;B[ck]
+;W[cf]C[LMP4 [-\]: again - they are both walking and watching other players games
+]
+;B[cn]
+;W[cp]
+;B[md]
+;W[nd]
+;B[mf]
+;W[me]
+;B[le]
+;W[ne]
+;B[lf]
+;W[oq]C[LMP4 [-\]: uff they are playing
+gisel [-\]: jak zwykle, Kamil nie może usiedzieć
+gisel [-\]: ale jak zacznie zabijać, to pewnie będzie siedział i myślał
+]
+;B[op]
+;W[pp]
+;B[pr]
+;W[og]
+;B[of]
+;W[nf]
+;B[ng]
+;W[ml]
+;B[nl]
+;W[ll]
+;B[lo]C[gisel [-\]: i jak - chyba Kamil siedzi już spokojnie? :P
+LMP4 [-\]: tak - oboje wyglądają teraz na skupionych
+]
+;W[mg]C[LMP4 [-\]: pochylają się głęboko nad planszą
+]
+;B[nh]
+;W[mh]C[LMP4 [-\]: chyba wcześniej zbierali moc przed akcją :)
+LMP4 [-\]: Kamil 1:08, Krzysiek 0:42
+gisel [-\]: to widzę że Krzysiek bardzo ostrożnie gra
+LMP4 [-\]: Krzysiek trzyma się za głowe i myśli przy gobanie, Kamil znów się kręci i sprawdza coś na komórce
+LMP4 [-\]: to raczej nie podobne do niego ale wydaje się, że nie może przejąć inicjatywy i narzucić swojego stylu gry
+]
+;B[mi]
+;W[ni]
+;B[oh]C[gisel [-\]: l13 ?
+]
+;W[kg]C[LMP4 [-\]: :)
+gisel [-\]: ale w sumie
+gisel [-\]: m13 m12 l12 m11 k13 
+gisel [-\]: i drabinka działa
+]
+;B[li]
+;W[kh]C[gisel [-\]: jednak widzę że agresywnie
+]
+;B[je]
+;W[if]
+;B[mc]
+;W[mb]
+;B[lb]
+;W[nb]C[afterbreak [2k?\]: moge powiezdiec ze dla Kamila ta gra jest nie latwa :) nie po jego mysli ;)
+]
+;B[hd]C[gisel [-\]: czemu? ma co atakować, powinien być szczęśliwy
+afterbreak [2k?\]: ale uklad nie ten :)
+afterbreak [2k?\]: zwykle to on mial teren ;)
+afterbreak [2k?\]: :P
+gisel [-\]: wiadomo że najlepiej jakby coś zabił i przeciwnik zrezygnował, nie musiałby liczyć potem
+gisel [-\]: no, nie jest tak źle w sumie z tym terenem
+]
+;W[fc]C[afterbreak [2k?\]: i tak czarny prowadzi ;)
+]
+;B[gc]
+;W[fd]C[gisel [-\]: l11 ?
+]
+;B[fb]
+;W[eb]
+;B[ki]
+;W[ih]
+;B[ii]
+;W[hi]
+;B[ij]
+;W[kb]
+;B[jb]C[LMP4 [-\]: Kamil wygląda na zdziwionego ruchem czarnych
+]
+;W[kc]
+;B[jc]
+;W[kd]C[LMP4 [-\]: cały czas trzyma ręke w gosu
+gisel [-\]: no, teraz to czarny ma już sporo punktów...
+SadPlayer [-\]: tylko przeżyć musi :)
+LMP4 [-\]: brydżyści znów przychodzą się pytać w co gramy
+LMP4 [-\]: Krzysiek liczy - kiwa lekko głową w rytm stawianych w wyobraźni kamieni
+gisel [-\]: h18 i jest ko - innej opcji nie widzę
+afterbreak [2k?\]: ja tam widze 2
+afterbreak [2k?\]: l13 martwe lub o18 :P
+LMP4 [-\]: Krzysiek chciał położyć kamień ale cofnął rękę
+LMP4 [-\]: zegar właśnie zakomunikował ostatnie 10 minut czasu podstawowego dla Gie
+]
+;B[ka]
+;W[ke]C[afterbreak [2k?\]: L15 to nie rozumiem
+LMP4 [-\]: Kamil odszedł od stołu
+SadPlayer [-\]: znowu?
+SadPlayer [-\]: nawet ja tak często nie odchodze :)
+LMP4 [-\]: tak :) rozmawia o grze zakończonej na stole nr 3
+afterbreak [2k?\]: student Sad, szuka jedzenia :d
+gisel [-\]: l15 łapie kamienie m14 i łaczy grupę środkowę
+gisel [-\]: tylko daje czarnemu więcej ruchów żeby pomógł sobie życie zrobić
+afterbreak [2k?\]: em
+afterbreak [2k?\]: daj mi na to sekwencje :P 
+gisel [-\]: l14 k14 m17 m13 żeby złapać
+afterbreak [2k?\]: ok nie widzialem tego hehe
+gisel [-\]: k14 może czarny zagrać 
+]
+;B[hf]
+;W[hg]
+;B[ie]
+;W[gb]
+;B[hb]
+;W[fa]
+;B[jf]
+;W[ig]
+;B[kf]C[LMP4 [-\]: Krzyśkowi skończył się czas
+]
+;W[ld]
+;B[jd]
+;W[lc]
+;B[gg]
+;W[gf]
+;B[ge]C[afterbreak [2k?\]: i krzysiu uciekl :)
+]
+;W[he]C[SadPlayer [-\]: tj W+T?
+]
+;B[lh]C[LMP4 [-\]: byo yomi gra
+]
+;W[jh]
+;B[lg]
+;W[hj]
+;B[hk]
+;W[gk]
+;B[gl]
+;W[fl]C[gisel [-\]: no to ciężko nadrobić białym
+]
+;B[hl]
+;W[fk]C[gisel [-\]: jakie są ustawinia byo? 3x 1 min?
+SadPlayer [-\]: c11 
+]
+;B[ff]
+;W[hf]
+;B[gd]
+;W[fe]C[LMP4 [-\]: 1 x 60 s
+]
+;B[ch]C[SadPlayer [-\]: tak to c10 mozna potem
+gisel [-\]: b9 ?
+LMP4 [-\]: ponoć najdłuższa partia w historii Mp trwała 7 godzin
+]
+;W[cl]C[gisel [-\]: kto tyle czasu grał?
+gisel [-\]: Sołdan vs Giedrojć?
+]
+;B[bl]C[LMP4 [-\]: nie wiem - ale to możliwe :)
+LMP4 [-\]: pewnie najczęściej spotykająca się para na MP
+]
+;W[bi]
+;B[bj]
+;W[ci]
+;B[bh]
+;W[cj]
+;B[ai]
+;W[dk]
+;B[bk]C[LMP4 [-\]: Sołdan pierwszy raz został wicemistrzem w 82 roku
+]
+;W[dl]
+;B[bf]
+;W[be]C[LMP4 [-\]: Giedrojć  II wicemistzrem w 84
+SadPlayer [-\]: no tak, od 1996 grali razem 31 razy
+]
+;B[df]
+;W[bg]
+;B[cg]
+;W[af]C[SadPlayer [-\]: aczkolwiek z Romanem Pszonką Krzysztod Giedrojć grał po 1996r 43 razy
+]
+;B[ei]
+;W[dj]
+;B[ah]
+;W[de]
+;B[eg]C[SadPlayer [-\]: c7 /
+SadPlayer [-\]: a nie, najpierw g12 
+gisel [-\]: ile czasu ma kamil?
+LMP4 [-\]: 48 minut
+LMP4 [-\]: ale wygląda na zdenerwowanego
+afterbreak [2k?\]: lol
+]
+;W[gh]C[afterbreak [2k?\]: nie dziwie mu sie ;)
+LMP4 [-\]: odchyla się na krześle, prawie rzucił kamieniem na plansze od niechcenia
+]
+;B[fh]
+;W[fg]
+;B[ef]
+;W[bo]
+;B[bn]C[SadPlayer [-\]: dobrze mu szło, tylko źle zabijał k16 :)
+]
+;W[im]C[afterbreak [2k?\]: nie za gleboko?
+afterbreak [2k?\]: h5 by chyba wystarczylo
+]
+;B[hn]C[LMP4 [-\]: na sali zaczęło intensywnie pachnieć obiadem
+]
+;W[cm]
+;B[bm]C[afterbreak [2k?\]: zaraz skoncza grac bo glodni :P
+LMP4 [-\]: dziś serwują eskalop ze schabu lub sznycel z kurczaka
+LMP4 [-\]: warunki lokalowe może nie są najlepsze (turniej brydżowy tuż obok) ale wyżywienie premium 
+LMP4 [-\]: Mateusz przygląda się grze
+SadPlayer [-\]: f11 bo sente
+SadPlayer [-\]: a potem może j5 
+mayeck [-\]: takie sobie sente
+mayeck [-\]: a jak odpowie w c5 b4 f6 ?
+mayeck [-\]: a potem na j5 ?
+mayeck [-\]: h5 na j5
+mayeck [-\]: no dobra, może nie :P
+]
+;W[fi]
+;B[eh]C[SadPlayer [-\]: hehe
+czemuja: kamil to fisz?
+SadPlayer [-\]: nie, maek
+gisel [-\]: fisz na emeryturze
+czemuja: tak szybko?
+SadPlayer [-\]: przez dziewczynę
+czemuja: a no tak, zawsze to samo
+czemuja: wredne baby nawet z Achillesa zrobia mieczaka
+funcoal: ile czasu im zostalo?
+LMP4 [-\]: Kamil ma 32 minuty
+SadPlayer [-\]: cz w byo:)
+gisel [-\]: ciężko coś wymyślic, a czarny prowadzi jakieś 15 pkt
+LMP4 [-\]: Kamil przebiera w gosu 
+SadPlayer [-\]: trzeba zagrać j5, liczyć, ze cz odpowie pasywnie i potem mieć nadzieję ze nie zabije f9 i zagra słabe yose :)
+LMP4 [-\]: 26 minut
+LMP4 [-\]: z 15 minut już myśli
+LMP4 [-\]: z kuchni słychać dźwięk tłuczonego szkła
+LMP4 [-\]: o zagrał
+]
+;W[io]C[LMP4 [-\]: SadPlayer - czy ty nie wysyłasz podpowiedzi sms'em?
+]
+;B[in]
+;W[jo]
+;B[ho]
+;W[ip]C[SadPlayer [-\]: nic mi nie udowodnisz :)
+SadPlayer [-\]: h5 chyba złe bo wzmocniło czarnego
+SadPlayer [-\]: tj białego
+]
+;B[gq]
+;W[gr]C[LMP4 [-\]: graczom od brydża bardzo nie podoba się głos z zegara
+]
+;B[fq]
+;W[fr]C[SadPlayer [-\]: zmiencie na jeżyk japonski
+LMP4 [-\]: to i tak brzmi jakby jakieś chińskie dziecko mówiło :)
+]
+;B[ir]
+;W[hr]C[SadPlayer [-\]: l7 ?
+gisel [-\]: hmm, nie lepiej było g4 zamiast łączenia?
+]
+;B[jn]
+;W[ko]C[gisel [-\]: jakby czarny ratował 2 kamienie, to można by squeeze zrobić
+]
+;B[kn]
+;W[kp]
+;B[lq]
+;W[kq]
+;B[kr]
+;W[lp]
+;B[mp]
+;W[lr]
+;B[mq]
+;W[iq]
+;B[jr]
+;W[ol]
+;B[nk]
+;W[gm]
+;B[hm]
+;W[rd]
+;B[re]
+;W[sc]
+;B[fo]
+;W[ej]
+;B[so]C[czemuja: czarny ma dużo
+]
+;W[ro]
+;B[sp]
+;W[sn]
+;B[rq]
+;W[rp]
+;B[sq]
+;W[is]
+;B[mr]
+;W[se]
+;B[rf]C[LMP4 [-\]: Kamil mówi że Krzysiek gra zanim on odklika zegar
+LMP4 [-\]: ale sędzia czuwa obok
+gisel [-\]: s4 niepotrzebnie Kamil zagrał
+gisel [-\]: ale w sumie to wygląda że biały ma szaanse
+czemuja: wychodzi mi ze bialy tez ma duzo
+czemuja: i ze jest rowna gra
+]
+;W[ji]
+;B[jj]
+;W[rm]
+;B[gg]
+;W[gj]
+;B[ag]
+;W[bf]
+;B[co]
+;W[bp]
+;B[pl]
+;W[pm]
+;B[sf]
+;W[ql]
+;B[pk]
+;W[oe]
+;B[pe]
+;W[la]C[LMP4 [-\]: Kamil ma 8 złapanych kamieni
+LMP4 [-\]: Krzysiek 3
+]
+;B[sd]
+;W[id]
+;B[ic]
+;W[se]
+;B[jg]
+;W[hh]
+;B[sd]
+;W[rc]C[gisel [-\]: biały +1.5?
+czemuja: no u mnie tez 1.5
+gisel [-\]: f7 duże
+czemuja: albo wiecej hm
+]
+;B[eq]
+;W[er]C[LMP4 [-\]: znów przyszedł koleś z pretensjami o zegra
+LMP4 [-\]: zegar*
+]
+;B[fm]
+;W[em]
+;B[fn]
+;W[ja]
+;B[ia]C[czemuja: trzeba bryzdzystom kupic stopery w aptece 
+]
+;W[gp]
+;B[fp]
+;W[js]
+;B[ls]
+;W[hp]C[czemuja: f7 bylo spore teraz to juz nie wiem
+czemuja: ale powinien bialy byc na +
+]
+;B[go]
+;W[an]C[gisel [-\]: g19?
+]
+;B[am]
+;W[ao]
+;B[oc]
+;W[ob]
+;B[di]C[papapishu [1d\]: kto g19?
+]
+;W[sj]
+;B[si]
+;W[sk]
+;B[ee]C[gisel [-\]: myślałem że biały - w sumie obaj mogą :P
+]
+;W[ed]C[papapishu [1d\]: carny już lepiej l19 
+]
+;B[dn]
+;W[hs]
+;B[ks]C[LMP4 [-\]: sory
+]
+;W[dm]
+;B[se]
+;W[ka]C[czemuja: wygladalo pieknie
+gisel [-\]: brydżyści przejęli klawiaturę :P
+LMP4 [-\]: szybko graja
+]
+;B[en]
+;W[fg]
+;B[ha]
+;W[ga]C[afterbreak [2k?\]: bierz linijke i po rekach jak za szybko :P
+]
+;B[gg]
+;W[da]C[LMP4 [-\]: zgubiłam się :(
+]
+;B[dr]C[LMP4 [-\]: skończyli
+LMP4 [-\]: liczą punkty
+LMP4 [-\]: brakuje kilku ostatnich ruchów
+afterbreak [2k?\]: kto wygral ko?
+LMP4 [-\]: umknęła mi groźba czarnego
+afterbreak [2k?\]: :P
+LMP4 [-\]: nie wiem - szukałam błędu w zapisie
+LMP4 [-\]: zaraz podam wynik
+LMP4 [-\]: B+7,5
+afterbreak [2k?\]: cos kolo tego mi wyszlo :/
+LMP4 [-\]: przepraszam za problemy na koniec
+afterbreak [2k?\]: i znow moja teoria dotyczaca tengena sie sprawdzila :P
+LMP4 [-\]: ten kto ma kamień w tengen ten wygrywa?
+gisel [-\]: a już myślałem że coś więcej punktów udało się nadrobić
+afterbreak [2k?\]: tak
+afterbreak [2k?\]: k10 :LD
+LMP4 [-\]: ale całkiem emocjonująca partia
+LMP4 [-\]: dużo energii psychicznej wyciągnęła z graczy ;)
+LMP4 [-\]: idziemy się regenerować
+LMP4 [-\]: następna partia ok 14:30
+LMP4 [-\]: dzięki za oglądanie :)
+]
+;W[cr])

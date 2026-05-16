@@ -1,225 +1,486 @@
-(
-  ;BR[4d]CA[UTF-8]DT[2012-11-30]EV[Polish Go Championship 2012]FF[4]GM[1]GN[Round 3 - Board 3]KM[6.50]PB[Stanisław Frejlak]PC[Katowice]PW[Piotr Wysocki]RE[B+R]RO[3]RU[japanese]ST[2]SZ[19]WR[2k]
-  ;B[pq]
-  ;W[dd]
-  ;B[pd]
-  ;W[dp]
-  ;B[fq]
-  ;W[cn]
-  ;B[jp]
-  ;W[qn]
-  ;B[po]
-  ;W[rp]
-  ;B[pl]
-  ;W[pn]
-  ;B[qo]
-  ;W[ro]
-  ;B[qq]
-  ;W[rm]
-  ;B[on]
-  ;W[pk]
-  ;B[ol]
-  ;W[qk]
-  ;B[fc]
-  ;W[df]
-  ;B[jd]
-  ;W[hq]
-  ;B[hp]
-  ;W[nn]
-  ;B[om]
-  ;W[ip]
-  ;B[iq]
-  ;W[io]
-  ;B[hr]
-  ;W[jq]
-  ;B[gq]
-  ;W[ir]
-  ;B[hq]
-  ;W[kq]
-  ;B[ko]
-  ;W[ln]
-  ;B[no]
-  ;W[lo]
-  ;B[kp]
-  ;W[lp]
-  ;B[jn]
-  ;W[mq]
-  ;B[jm]
-  ;W[ll]
-  ;B[gm]
-  ;W[qf]
-  ;B[pf]
-  ;W[pg]
-  ;B[of]
-  ;W[qc]
-  ;B[pc]
-  ;W[qd]
-  ;B[qe]
-  ;W[re]
-  ;B[pe]
-  ;W[rg]
-  ;B[fe]
-  ;W[og]
-  ;B[mf]
-  ;W[nm]
-  ;B[nq]
-  ;W[rr]
-  ;B[mr]
-  ;W[lr]
-  ;B[mp]
-  ;W[lq]
-  ;B[or]
-  ;W[op]
-  ;B[oo]
-  ;W[ps]
-  ;B[ns]
-  ;W[mo]
-  ;B[np]
-  ;W[ls]
-  ;B[qs]
-  ;W[jc]
-  ;B[ic]
-  ;W[kc]
-  ;B[id]
-  ;W[nc]
-  ;B[ld]
-  ;W[ob]
-  ;B[lc]
-  ;W[pb]
-  ;B[ch]
-  ;W[dh]
-  ;B[dg]
-  ;W[cg]
-  ;B[eg]
-  ;W[ef]
-  ;B[ff]
-  ;W[bg]
-  ;B[cf]
-  ;W[bf]
-  ;B[bh]
-  ;W[dj]
-  ;B[eh]
-  ;W[di]
-  ;B[ce]
-  ;W[be]
-  ;B[cd]
-  ;W[cc]
-  ;B[bd]
-  ;W[bc]
-  ;B[de]
-  ;W[ad]
-  ;B[ee]
-  ;W[jl]
-  ;B[kl]
-  ;W[kk]
-  ;B[km]
-  ;W[lk]
-  ;B[jk]
-  ;W[jj]
-  ;B[il]
-  ;W[ki]
-  ;B[ok]
-  ;W[lm]
-  ;B[dk]
-  ;W[ck]
-  ;B[cl]
-  ;W[dl]
-  ;B[ek]
-  ;W[bk]
-  ;B[cj]
-  ;W[bj]
-  ;B[ah]
-  ;W[ae]
-  ;B[ci]
-  ;W[ag]
-  ;B[ej]
-  ;W[dq]
-  ;B[dm]
-  ;W[bl]
-  ;B[cm]
-  ;W[bm]
-  ;B[dn]
-  ;W[do]
-  ;B[db]
-  ;W[cb]
-  ;B[ij]
-  ;W[ii]
-  ;B[hi]
-  ;W[ne]
-  ;B[nf]
-  ;W[le]
-  ;B[ab]
-  ;W[kd]
-  ;B[me]
-  ;W[lb]
-  ;B[ke]
-  ;W[lf]
-  ;B[ac]
-  ;W[kf]
-  ;B[oi]
-  ;W[nh]
-  ;B[ql]
-  ;W[rl]
-  ;B[pj]
-  ;W[qj]
-  ;B[qi]
-  ;W[ri]
-  ;B[qh]
-  ;W[rh]
-  ;B[qg]
-  ;W[rf]
-  ;B[lg]
-  ;W[kg]
-  ;B[mi]
-  ;W[ni]
-  ;B[oh]
-  ;W[ng]
-  ;B[nj]
-  ;W[ph]
-  ;B[lj]
-  ;W[lh]
-  ;B[kj]
-  ;W[js]
-  ;B[er]
-  ;W[ji]
-  ;B[jb]
-  ;W[kb]
-  ;B[co]
-  ;W[bn]
-  ;B[cr]
-  ;W[dr]
-  ;B[ds]
-  ;W[bq]
-  ;B[cq]
-  ;W[cp]
-  ;B[br]
-  ;W[bp]
-  ;B[hh]
-  ;W[qr]
-  ;B[rq]
-  ;W[sq]
-  ;B[ms]
-  ;W[pr]
-  ;B[os]
-  ;W[ar]
-  ;B[es]
-  ;W[en]
-  ;B[em]
-  ;W[fm]
-  ;B[el]
-  ;W[fn]
-  ;B[fl]
-  ;W[gn]
-  ;B[eo]
-  ;W[fp]
-  ;B[hn]
-  ;W[hm]
-  ;B[gl]
-  ;W[ho]
-  ;B[go]
-  ;W[in]
-  ;B[fo]
-  ;W[im]
-  ;B[jo]
-  ;W[kn]
-)
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[5400]OT[1x60 byo-yomi]
+GN[Polish Go Championship League]PW[Stanislaw Frejlak]PB[Piotr Wysocki]WR[4d]BR[2k]DT[2012-11-30]RO[3]PC[The KGS Go Server at http://www.gokgs.com/]
+;B[pq]
+;W[dd]
+;B[pd]
+;W[dp]
+;B[fq]
+;W[cn]
+;B[jp]
+;W[qn]
+;B[po]
+;W[rp]
+;B[pl]
+;W[pn]
+;B[qo]
+;W[ro]
+;B[qq]
+;W[rm]
+;B[on]
+;W[pk]
+;B[ol]
+;W[qk]
+;B[fc]
+;W[df]
+;B[jd]
+;W[hq]
+;B[hp]
+;W[nn]
+;B[om]
+;W[ip]
+;B[iq]
+;W[io]
+;B[hr]
+;W[jq]
+;B[gq]
+;W[ir]
+;B[hq]
+;W[kq]C[LMP3 [-\]: co tu taka cisza?
+LMP3 [-\]: siasio idzie na mistrza ;)
+]
+;B[ko]C[Lesmian [1d\]: obserwujemy w milczeniu proces mordowania czarnych
+]
+;W[ln]C[LMP3 [-\]: no chyba ze tak
+LMP3 [-\]: ale dajmy szanse wyskowi
+LMP3 [-\]: z leszkiem nie bylo zle caly czas sie upieram ze cos mogl mu ubic
+Bjondro [12k\]: dokładnie
+]
+;B[no]
+;W[lo]
+;B[kp]C[spooke9 [4k\]: trójkąt ciekawe
+]
+;W[lp]C[Bjondro [12k\]: i przewrócony krzyż
+Bjondro [12k\]: zła wróżba
+]
+;B[jn]C[LMP3 [-\]: przynajmniej nie boi sie robic brzydkich ksztaltow
+]
+;W[mq]C[spooke9 [4k\]: ciekawe czy sobie ktoś dzisiaj wywróżył zwycięstwo z wosku
+LMP3 [-\]: nie pytalem sie
+]
+;B[jm]
+;W[ll]
+;B[gm]
+;W[qf]
+;B[pf]
+;W[pg]
+;B[of]
+;W[qc]C[Lesmian [1d\]: na andrzejki niezamężne panie wróżą, jakiego przyjdzie im spotkać małżonka. Ale może przespałem ostatnią dekadę i coś się zmieniło?
+LMP3 [-\]: http://ustre.am/RhBr tu znajdziecie relacje live z pierwszej deski niestetybez komentatora 
+]
+;B[pc]
+;W[qd]
+;B[qe]
+;W[re]
+;B[pe]
+;W[rg]C[spooke9 [4k\]: Trza było zagadać do salmona bielski klub ma tablicę, to byście mogli relację live jak pro zrobić XD Jeszcze tylko dobrą hostesse by trza :P
+LMP3 [-\]: jest Ewa moze byc?
+]
+;B[fe]C[Lesmian [1d\]: na Uniwersytecie Ekonomicznym mają tam kandydatek pod dostatkiem
+LMP3 [-\]: no ale wypadaloby zeby sie ciut znala ;)
+Lesmian [1d\]: e tam
+LMP3 [-\]: niektore potrafilyby kamienie w pola wciskac ;)
+]
+;W[og]
+;B[mf]
+;W[nm]C[LMP3 [-\]: wysek teraz na stojaco
+spooke9 [4k\]: Na Japońskich pokazach to komentator mówi hostessa się uśmiecha i przykleja kamienie na tablice. Więc nie musi się znać, ogólna umiejętność odczytywania współrzędnych tylko potrzebna.
+LMP3 [-\]: spooke zawsze taki pomysl mozesz zglosic psg ;)
+LMP3 [-\]: i w bielsku mozecie przetestowac
+spooke9 [4k\]: W Bielsku na ATH ciężko znaleźć by było ładno hostessę nie mówią już o tych współrzednych XD
+LMP3 [-\]: e tam
+LMP3 [-\]: salmon moze byc hostessa ;)
+LMP3 [-\]: wysek usiadl ^^
+]
+;B[nq]C[LMP3 [-\]: o2?
+LMP3 [-\]: b 29, w 1:09
+]
+;W[rr]
+;B[mr]
+;W[lr]
+;B[mp]C[Lesmian [1d\]: salmona można zrobić na bóstwo, mówię wam...
+LMP3 [-\]: no ba
+]
+;W[lq]
+;B[or]
+;W[op]
+;B[oo]
+;W[ps]C[LMP3 [-\]: heh gdzie mi tam do 4d :(
+]
+;B[ns]
+;W[mo]
+;B[np]
+;W[ls]C[BlazejS [4k\]: r1
+]
+;B[qs]
+;W[jc]
+;B[ic]
+;W[kc]
+;B[id]
+;W[nc]
+;B[ld]
+;W[ob]
+;B[lc]
+;W[pb]
+;B[ch]
+;W[dh]
+;B[dg]
+;W[cg]
+;B[eg]
+;W[ef]C[spooke9 [4k\]: bóstwo czego?
+LMP3 [-\]: b 5 min, w ok 1h
+]
+;B[ff]
+;W[bg]C[LMP3 [-\]: zawsze graja jak chodze czas sprawdzic, na zlosc mi robia czy co?
+]
+;B[cf]
+;W[bf]
+;B[bh]
+;W[dj]
+;B[eh]
+;W[di]
+;B[ce]
+;W[be]
+;B[cd]
+;W[cc]
+;B[bd]
+;W[bc]
+;B[de]
+;W[ad]
+;B[ee]
+;W[jl]C[LMP3 [-\]: b w byo
+LMP3 [-\]: chyba od pewnego czasu
+]
+;B[kl]C[Stachu: Nie umiem grac w go, jak idzie bialemu?
+]
+;W[kk]
+;B[km]C[LMP3 [-\]: widac ze wysek nie ma takiego doswiadczenia jak siasio w byo
+LMP3 [-\]: w poprzedniej partii przed wykonaniem oczywistych ruchow siasio czekal niemal do konca
+LMP3 [-\]: wysek wykonal ruch po 20 sekundach
+]
+;W[lk]
+;B[jk]C[Stachu: dzieki
+LMP3 [-\]: to nie byla odpowiedz na Twoje pytanie
+]
+;W[jj]
+;B[il]C[LMP3 [-\]: nie chce sie wypowiadac jak komu idzie bo jestem za slaby
+Stachu: No my tu z emocjami czekamy na wynik (koledzy i kolezanki siasia) ale w go grac w ogole nie umiemy...
+Lesmian [1d\]: :)
+]
+;W[ki]C[Lesmian [1d\]: białe raczej prowadzą :)
+]
+;B[ok]
+;W[lm]
+;B[dk]
+;W[ck]
+;B[cl]C[Stachu: a skad te wnioski?
+]
+;W[dl]C[Stachu: ja nie podwazam! chce tylko wiedziec :)
+]
+;B[ek]
+;W[bk]
+;B[cj]
+;W[bj]C[Lesmian [1d\]: punktów ma chyba trochę więcej, no ale jeszcze wiele się może zmienić
+]
+;B[ah]C[Lesmian [1d\]: o
+Lesmian [1d\]: czyżby właśnie się zmieniło?
+Stachu: A co sie stalo? W sensie na czyja korzysc?
+]
+;W[ae]
+;B[ci]
+;W[ag]C[Lesmian [1d\]: czarny uratował b12 i zabił d11
+]
+;B[ej]C[LMP3 [-\]: ladnie to wykombinowal
+Lesmian [1d\]: tak
+LMP3 [-\]: ale teraz wysek pokiwal glowa z niezadowoleniem
+Lesmian [1d\]: mało mu?
+LMP3 [-\]: wiesz w koncu jesli chce wygrac
+Lesmian [1d\]: może róg większy?
+]
+;W[dq]C[Lesmian [1d\]: do dzisiaj nie wiem, ile jest warte d2
+LMP3 [-\]: teraz d2 czy wczesniej?
+Stachu: nie mozna mowic nic do zawodnikow, prawda?
+]
+;B[dm]
+;W[bl]
+;B[cm]C[LMP1 [-\]: nie można
+LMP3 [-\]: nie
+]
+;W[bm]
+;B[dn]
+;W[do]C[Stachu: tak sie upewniam
+]
+;B[db]
+;W[cb]
+;B[ij]
+;W[ii]
+;B[hi]C[Lesmian [1d\]: biały ma około 60
+Stachu: Czego?
+Lesmian [1d\]: punktów
+Stachu: tak myslalem...
+]
+;W[ne]C[Stachu: a ile ma czarny?
+]
+;B[nf]C[Lesmian [1d\]: czarny tyle albo minimalnie więcej, ale nie ufajcie mojej umiejętności szacowania
+]
+;W[le]C[Stachu: nie ufamy
+Lesmian [1d\]: ja mogę po nich co najwyżej sprzątać kamienie 
+Stachu: My co najwyzej mozemy zachwycac sie kamyczkami, o ktorych nic nie wiemy.
+]
+;B[ab]C[Lesmian [1d\]: czarny w byo czy o co chodzi?
+LMP3 [-\]: przy 110 ruchu napisalem ze czarny w byo siedzi
+]
+;W[kd]
+;B[me]
+;W[lb]
+;B[ke]
+;W[lf]
+;B[ac]C[Lesmian [1d\]: oj
+]
+;W[kf]C[Stachu: Przepraszamy za pytanie, miejcie wyrozumialosc i cierpliwosc... co to byo?
+LMP3 [-\]: dodatkowy czas na skonczenie gry
+]
+;B[oi]
+;W[nh]C[Lesmian [1d\]: po skończeniu czasu podstawowego (90 min) gracz ma minute na każdy ruch
+]
+;B[ql]
+;W[rl]C[Lesmian [1d\]: ta wymiana chyba nie opłaci się czarnemu?
+]
+;B[pj]
+;W[qj]
+;B[qi]
+;W[ri]
+;B[qh]C[Stachu: Oby nie.
+LMP3 [-\]: oj
+Lesmian [1d\]: no
+Stachu: o co chodzi? :(
+]
+;W[rh]C[Stachu: tlumaczcie jak Kacper kozie.
+Stachu: jezeli mozecie oczywiscie :)
+]
+;B[qg]
+;W[rf]C[Lesmian [1d\]: w sumie na razie nic, ale czarny może teraz próbować coś kombinować 
+LMP3 [-\]: p13 jest teraz wazne
+LMP3 [-\]: jak zgina to bialy ma ciezko
+Lesmian [1d\]: jak zginie p13 to biały chyba przegrał
+]
+;B[lg]C[Lesmian [1d\]: ale tego sie nie da złapać, przynajmniej nie tak wprost
+barty [2d\]: czarny ma zycie
+LMP3 [-\]: cos musi pasc
+barty [2d\]: jesli dobrze pogra
+Lesmian [1d\]: to niedobrze 
+Stachu: jakie zycie?
+barty [2d\]: n14
+Lesmian [1d\]: chodzi o to, że czarny chce uciec kamieniami o14 do innych swoich kamieni
+barty [2d\]: moze zyc
+bartosz [-\]: jak?
+Stachu: niech zyje!
+barty [2d\]: m13 bardzo dobre na poczatek
+Lesmian [1d\]: ile Siasio ma czasu?
+bartosz [-\]: m13 chyba jedyny ruch który daje coś
+LMP3 [-\]: duzo
+barty [2d\]: n13 nie mozna ciac
+Lesmian [1d\]: tpo dobrze
+LMP3 [-\]: 28 minut
+Stachu: nie zaraz... niech czarny nie zyje. siasio ma wygrac
+barty [2d\]: hehe
+Lesmian [1d\]: no właśnie
+barty [2d\]: wlasnie nie niech ta liga nie bedzie tylko dominowana przez 4 graczy
+barty [2d\]: reszta nie jest do zbierania na nich punktow
+barty [2d\]: niech walcza :D
+bartosz [-\]: niech nie będzie ae to nie znaczy że akurat siasio ma przegrac :)
+Stachu: Ej, ale co siasiowi tak zle idzie... jest o wiele lepszy w rankingach
+bartosz [-\]: ranking nie gra
+Lesmian [1d\]: według rankingów Polska jest zieloną wyspą :)
+Stachu: niestety
+Stachu: haha
+bartosz [-\]: shift
+]
+;W[kg]
+;B[mi]C[arczi87 [2k\]: n11?
+barty [2d\]: i zyje czarny
+barty [2d\]: :)
+Lesmian [1d\]: Siasio coś wyduma
+barty [2d\]: zycze mu tego
+]
+;W[ni]C[barty [2d\]: z checia bym jakies tesuji zobaczyl
+barty [2d\]: o10
+barty [2d\]: od razu
+arczi87 [2k\]: zamiast p12 np o10
+]
+(;B[oh]C[bartosz [-\]: ja ciagle nie widze jak czarny ma zyc
+barty [2d\]: p12 wazne
+Lesmian [1d\]: żyje
+barty [2d\]: tak
+arczi87 [2k\]: game over?
+barty [2d\]: dobrze
+barty [2d\]: nie
+]
+;W[ng]C[Lesmian [1d\]: punktowo słabiej wygląda ale chyba poddawać nie musi?
+Lesmian [1d\]: ej
+barty [2d\]: choc chyba cofam martwe
+barty [2d\]: :)
+Lesmian [1d\]: to działa
+]
+;B[nj]C[Lesmian [1d\]: no własnie!
+bartosz [-\]: no właśnie
+Lesmian [1d\]: victoria!
+LMP1 [-\]: ta deska jest w tej chwili transmitowana na http://ustre.am/RhBr 
+bartosz [-\]: co wy liczyliście?
+bartosz [-\]: że wszyscy życie widzieliscie
+barty [2d\]: za szybko zagral p12 chyba
+]
+;W[ph]C[Lesmian [1d\]: alem się zdenerwował!
+bartosz [-\]: może
+barty [2d\]: p12 na samym koncu powinien grac
+bartosz [-\]: przed p12 nie liczyłem
+]
+;B[lj]C[barty [2d\]: ooo
+barty [2d\]: ladnie
+bartosz [-\]: spore ale zycia nie wraca
+barty [2d\]: nie ?
+bartosz [-\]: a wraca?
+LMP3 [-\]: m12?
+Lesmian [1d\]: nie wraca
+bartosz [-\]: ja bym grał m12
+]
+;W[lh]C[Lesmian [1d\]: no to koniec
+]
+;B[kj]
+;W[js]
+;B[er]
+;W[ji]
+;B[jb]
+;W[kb]C[bartosz [-\]: powaznie k11 > d2 ?
+Lesmian [1d\]: mnie też to dziwi
+]
+;B[co]
+;W[bn]C[bartosz [-\]: może i tak
+]
+;B[cr]
+;W[dr]C[bartosz [-\]: c3 
+barty [2d\]: d1 b3 f5 
+barty [2d\]: ogolnie chyba czarny moze miec wiecej
+]
+;B[ds]C[barty [2d\]: b4 zabojcze wiec d1 w sente
+barty [2d\]: i potem f5
+]
+;W[bq]C[Lesmian [1d\]: ale nie prowadzi
+barty [2d\]: e5 moze lepiej
+barty [2d\]: czy ja wiem
+]
+;B[cq]
+;W[cp]C[barty [2d\]: dolna bialego to 2 punkty
+]
+;B[br]C[barty [2d\]: tak jak prawa czarneo
+LMP4 [-\]: h12?
+]
+;W[bp]C[barty [2d\]: lewa bialego ma z 4 punkty
+Lesmian [1d\]: nie zdąży zamknąć h12
+barty [2d\]: po e5 czarny bierze duzo punktow
+Lesmian [1d\]: ale nie dość, przynajmniej wedlug mojego szacunku
+barty [2d\]: no zobaczymy mozwlie
+]
+;B[hh]
+;W[qr]C[barty [2d\]: uuu
+barty [2d\]: h12 male
+barty [2d\]: n1 
+LMP4 [-\]: duuuze
+]
+;B[rq]C[barty [2d\]: ale raczej e5 wieksze
+]
+;W[sq]C[barty [2d\]: niz h12
+]
+;B[ms]
+;W[pr]
+;B[os]
+;W[ar]
+;B[es]C[LMP3 [-\]: ledwo
+]
+;W[en]
+;B[em]
+;W[fm]
+;B[el]C[barty [2d\]: teraz b1
+LMP3 [-\]: zdazyl
+barty [2d\]: i nie graj tam czarnym
+]
+;W[fn]C[bartosz [-\]: bo co b1?
+bartosz [-\]: p co
+barty [2d\]: choc to tez i tak chodzi
+barty [2d\]: nic myslalem ze e5 dziala
+barty [2d\]: ale nie 
+barty [2d\]: :)
+barty [2d\]: teraz to juz po grze na 100%
+]
+;B[fl]C[bartosz [-\]: g6 
+]
+;W[gn]C[barty [2d\]: no chyba ze bialy odda cos za darmo
+]
+;B[eo]C[barty [2d\]: dlatego h12 bylo male
+]
+;W[fp]
+;B[hn]C[barty [2d\]: hehe :)
+bartosz [-\]: f5 
+]
+;W[hm]C[barty [2d\]: h7 moze
+barty [2d\]: no wlasnie
+]
+;B[gl]C[barty [2d\]: uuu
+barty [2d\]: masakra
+]
+;W[ho]C[barty [2d\]: h5 moze
+barty [2d\]: przeciez
+barty [2d\]: oj plama na koniec
+Lesmian [1d\]: wina byo
+barty [2d\]: no ale tutaj nie ma co liczyc nawet
+]
+;B[go]C[Lesmian [1d\]: powinno byc zakazane
+barty [2d\]: a pewnie maja po minucie
+barty [2d\]: czy 30 sek ?
+]
+;W[in]C[Lesmian [1d\]: minuta
+barty [2d\]: no to duzo czasu
+Lesmian [1d\]: ale to i tak stresuje
+barty [2d\]: nie przesadzajmy
+]
+;B[fo]C[barty [2d\]: lol
+barty [2d\]: :)
+Lesmian [1d\]: l6...
+barty [2d\]: to bylo nice
+barty [2d\]: :P
+]
+;W[im]C[barty [2d\]: teraz siasio byo
+bartosz [-\]: siasio tez w byo?
+LMP3 [-\]: nie
+Lesmian [1d\]: raczej nie
+barty [2d\]: cos LMP3 przekabinowal
+LMP3 [-\]: siasio ma 13 minut jeszcze
+barty [2d\]: zaraz l6 pojdzie
+LMP3 [-\]: chcesz sie przekonac?
+]
+;B[jo]
+;W[kn]C[barty [2d\]: o nie patrze
+barty [2d\]: czarny poddal
+Lesmian [1d\]: :)
+barty [2d\]: po tym ruchu
+barty [2d\]: :)
+barty [2d\]: i koniec
+Lesmian [1d\]: może chce dograć sekwencje :)
+barty [2d\]: :)
+barty [2d\]: haha
+LMP3 [-\]: poddal
+LMP4 [-\]: barty zachowaj powage
+barty [2d\]: ja zawsze jestem powazny :D
+barty [2d\]: ;)
+Lesmian [1d\]: to wina byo
+arczi87 [2k\]: lmp3 mozesz sprawdzic tutaj wariant :)?
+LMP3 [-\]: b+R
+arczi87 [2k\]: zamiast p12
+LMP3 [-\]: bialy+R
+barty [2d\]: daj do p12
+])
+(;B[nj]C[barty [2d\]: chyba laczy ?
+arczi87 [2k\]: wydaje sie ze chodiz nie?
+Lesmian [1d\]: tak
+barty [2d\]: p12 bialy
+]))

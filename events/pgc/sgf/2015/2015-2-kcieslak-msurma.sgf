@@ -1,242 +1,422 @@
-(
-  ;CA[UTF-8]DT[2016-01-08]EV[Polish Go Championship 2015]FF[4]GM[1]GN[Round 2 - Board 3]KM[6.50]PB[Karol Cieślak]PC[Warszawa]PW[Mateusz Surma]RE[W+25.5]RU[japanese]ST[2]SZ[19]BR[1k]WR[1p]
-  ;B[pd]
-  ;W[dd]
-  ;B[qp]
-  ;W[dq]
-  ;B[oq]
-  ;W[qf]
-  ;B[nc]
-  ;W[qo]
-  ;B[po]
-  ;W[qn]
-  ;B[pp]
-  ;W[pj]
-  ;B[do]
-  ;W[fq]
-  ;B[cf]
-  ;W[fc]
-  ;B[cq]
-  ;W[cr]
-  ;B[cp]
-  ;W[br]
-  ;B[dj]
-  ;W[dl]
-  ;B[fo]
-  ;W[fl]
-  ;B[cl]
-  ;W[cm]
-  ;B[ck]
-  ;W[dm]
-  ;B[ho]
-  ;W[hq]
-  ;B[hl]
-  ;W[ej]
-  ;B[ei]
-  ;W[fj]
-  ;B[bd]
-  ;W[pn]
-  ;B[hc]
-  ;W[gn]
-  ;B[go]
-  ;W[im]
-  ;B[gm]
-  ;W[fn]
-  ;B[hn]
-  ;W[hm]
-  ;B[jo]
-  ;W[km]
-  ;B[cc]
-  ;W[he]
-  ;B[jd]
-  ;W[df]
-  ;B[dg]
-  ;W[ce]
-  ;B[bf]
-  ;W[ff]
-  ;B[eg]
-  ;W[gh]
-  ;B[jf]
-  ;W[of]
-  ;B[ne]
-  ;W[rd]
-  ;B[qc]
-  ;W[en]
-  ;B[jn]
-  ;W[jm]
-  ;B[kq]
-  ;W[jh]
-  ;B[nn]
-  ;W[mg]
-  ;B[gq]
-  ;W[gr]
-  ;B[ol]
-  ;W[pl]
-  ;B[oj]
-  ;W[pk]
-  ;B[ll]
-  ;W[kn]
-  ;B[mo]
-  ;W[mm]
-  ;B[lm]
-  ;W[ln]
-  ;B[mn]
-  ;W[ml]
-  ;B[kh]
-  ;W[lk]
-  ;B[hg]
-  ;W[hh]
-  ;B[fi]
-  ;W[gi]
-  ;B[ig]
-  ;W[ih]
-  ;B[kg]
-  ;W[lf]
-  ;B[ke]
-  ;W[dc]
-  ;B[bm]
-  ;W[bn]
-  ;B[bl]
-  ;W[cn]
-  ;B[eo]
-  ;W[kr]
-  ;B[lr]
-  ;W[kp]
-  ;B[jq]
-  ;W[lp]
-  ;B[iq]
-  ;W[mp]
-  ;B[mr]
-  ;W[ir]
-  ;B[on]
-  ;W[jr]
-  ;B[lq]
-  ;W[np]
-  ;B[op]
-  ;W[ki]
-  ;B[li]
-  ;W[lh]
-  ;B[kj]
-  ;W[ji]
-  ;B[ok]
-  ;W[mi]
-  ;B[oi]
-  ;W[pi]
-  ;B[pg]
-  ;W[qg]
-  ;B[ph]
-  ;W[qh]
-  ;B[gb]
-  ;W[be]
-  ;B[ae]
-  ;W[cd]
-  ;B[bb]
-  ;W[cb]
-  ;B[bc]
-  ;W[jg]
-  ;B[kf]
-  ;W[rc]
-  ;B[rb]
-  ;W[ro]
-  ;B[rp]
-  ;W[sp]
-  ;B[sq]
-  ;W[so]
-  ;B[rq]
-  ;W[ef]
-  ;B[db]
-  ;W[eb]
-  ;B[ca]
-  ;W[me]
-  ;B[md]
-  ;W[qd]
-  ;B[pc]
-  ;W[sb]
-  ;B[lg]
-  ;W[mh]
-  ;B[ra]
-  ;W[oe]
-  ;B[pe]
-  ;W[pf]
-  ;B[qe]
-  ;W[re]
-  ;B[le]
-  ;W[mf]
-  ;B[gd]
-  ;W[if]
-  ;B[ge]
-  ;W[gf]
-  ;B[ie]
-  ;W[hf]
-  ;B[hd]
-  ;W[dk]
-  ;B[di]
-  ;W[od]
-  ;B[oc]
-  ;W[oh]
-  ;B[fg]
-  ;W[gg]
-  ;B[nd]
-  ;W[gp]
-  ;B[bq]
-  ;W[ar]
-  ;B[fb]
-  ;W[ea]
-  ;B[fa]
-  ;W[ni]
-  ;B[nf]
-  ;W[ng]
-  ;B[fd]
-  ;W[nq]
-  ;B[nr]
-  ;W[ls]
-  ;B[nk]
-  ;W[mk]
-  ;B[ee]
-  ;W[de]
-  ;B[ep]
-  ;W[eq]
-  ;B[sc]
-  ;W[sd]
-  ;B[ms]
-  ;W[ks]
-  ;B[am]
-  ;W[ec]
-  ;B[da]
-  ;W[gc]
-  ;B[hb]
-  ;W[fh]
-  ;B[eh]
-  ;W[pm]
-  ;B[om]
-  ;W[nj]
-  ;B[an]
-  ;W[bo]
-  ;B[ao]
-  ;W[aq]
-  ;B[ap]
-  ;W[bp]
-  ;B[hp]
-  ;W[in]
-  ;B[jp]
-  ;W[io]
-  ;B[ip]
-  ;W[fp]
-  ;B[dn]
-  ;W[gl]
-  ;B[dp]
-  ;W[rf]
-  ;B[qb]
-  ;W[sc]
-  ;B[oo]
-  ;W[sa]
-  ;B[no]
-  ;W[lo]
-  ;B[mq]
-  ;W[ed]
-  ;B[fe]
-  ;W[co]
-  ;B[nl]
-  ;W[nm]
-  ;B[ko]
-)
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[5400]OT[1x60 byo-yomi]
+GN[Polish Go Championship Mateusz Surma 1p (white) vs Karol Cieślak 1k (black)]PW[Mateusz Surma 1p]PB[Karol Cieślak 1k]DT[2016-01-08]PC[The KGS Go Server at http://www.gokgs.com/]RE[W+25.50]
+;B[pd]
+;W[dd]
+(;B[pq]
+;W[dp])
+(;B[qp]
+;W[dq]
+;B[oq]
+;W[qf]
+;B[nc]
+;W[qo]
+;B[po]
+;W[qn]
+;B[pp]
+;W[pj]
+;B[do]
+;W[fq]
+;B[cf]
+;W[fc]
+;B[cq]
+;W[cr]
+;B[cp]
+;W[br]
+;B[dj]C[floppy: 1d vs 1k 
+]
+;W[dl]C[floppy: d8 is the beginning of the end
+Coorchac [3k\]: 1p vs 1k :P
+]
+;B[fo]
+;W[fl]
+;B[cl]
+;W[cm]
+;B[ck]
+;W[dm]C[floppy: e14
+]
+;B[ho]
+;W[hq]
+;B[hl]
+;W[ej]
+;B[ei]
+;W[fj]
+;B[bd]C[kmr [2d\]: this 1k is underrated i think, he did well in preliminary to PolChamp winning with dans player.....anyway his chances to win arent big
+]
+;W[pn]
+;B[hc]C[LMP1 [-\]: he was a shodan few years ago
+floppy: those kids watch too many LSD games
+]
+;W[gn]
+;B[go]
+;W[im]C[LMP3 [-\]: Karol said before the round that he want to play the best and longest as he can but he treat this more as trainging game than real fight
+]
+;B[gm]
+;W[fn]
+;B[hn]
+;W[hm]C[LMP3 [-\]: but in my opinion the result on board looks better than yesterday game Surma vs Giedrojć (who is 3dan)
+]
+;B[jo]
+;W[km]
+;B[cc]
+;W[he]
+;B[jd]
+;W[df]
+;B[dg]
+;W[ce]
+;B[bf]C[Kotonoha [3d\]: why this game look like KieJie VS Lee Sedol 
+]
+;W[ff]
+;B[eg]
+;W[gh]
+;B[jf]
+;W[of]C[LMP3 [-\]: because in Poland we have some really strong players :)
+floppy: they use their mobile phones which are connected to LSD and KJ
+Kotonoha [3d\]: left botto, black need to run no? 
+Kotonoha [3d\]: well 
+Kotonoha [3d\]: middle is quite big for w as b need to run a bit 
+LMP1 [-\]: White has defeated a 9p recently
+Kotonoha [3d\]: oh
+floppy: who
+Kotonoha [3d\]: flobby 
+floppy: :-)
+]
+;B[ne]C[Kotonoha [3d\]: European 9p? never heard 
+LMP1 [-\]: Hong Zheng
+]
+;W[rd]C[Kotonoha [3d\]: oh I see
+Kotonoha [3d\]: I don't understand who is HongZheng 
+LMP1 [-\]: Chinese 9p, living in Australia
+Kotonoha [3d\]: so disappointed that I thought he beated a hot asian pro 9p 
+LMP1 [-\]: whether Hong Zheng is hot or not depends on one's personal preferences
+LMP1 [-\]: but the rest is true
+Kotonoha [3d\]: they really hate center
+Kotonoha [3d\]: so k12 is very small ? 
+Zonked [3d\]: what rank is black? title so long his name and rank don't fit the screen 
+LMP1 [-\]: 1k
+Kotonoha [3d\]: 1k 
+Kotonoha [3d\]: well 
+floppy: 1 dan versus 1 kyu
+LMP1 [-\]: seems fair
+Kotonoha [3d\]: just like the case of Swedish 1k 
+Kotonoha [3d\]: actually b is KGS 7d 
+floppy: some 1 kyus are strong despite being kyus
+Kotonoha [3d\]: sorry LMP I come to destroy your broadcast lol 
+]
+;B[qc]
+;W[en]C[Kotonoha [3d\]: We love LMP 
+floppy: and game over if connect
+austrogo [6k\]: Why game over ? 
+]
+;B[jn]C[ofbusy [-\]: i suppose w will m5 if b connects
+]
+;W[jm]
+;B[kq]
+;W[jh]C[ofbusy [-\]: m12 maybe
+]
+;B[nn]
+;W[mg]C[LMP3 [-\]: Karol 40 minutes left, Mateusz more than hour
+ofbusy [-\]: this 1k is pretty kyood
+]
+;B[gq]
+;W[gr]C[Rettel [7k?\]: kyuud
+Muttley [2k\]: Karol received Muttley's complete set of "Let's be pro!" DVDs from Santa.
+Muttley [2k\]: He didn't even know what go was, look at him now.
+Muttley [2k\]: "I watched Muttley's DVD on counting before my last game against Ke Jie" - Lee Sedol
+]
+;B[ol]C[Muttley [2k\]: "I lost" - Lee Sedol
+]
+;W[pl]
+;B[oj]C[Muttley [2k\]: nice redux
+]
+;W[pk]
+;B[ll]C[Muttley [2k\]: b has no fear and might even get a semedori later with g8
+Rettel [7k?\]: "bananas and mango" abraham lincoln
+Muttley [2k\]: has anyone counted anyway>
+Rettel [7k?\]: "if you can; Not listen you can; Not think" - gradeschooler
+ofbusy [-\]: w wins, as expected
+Muttley [2k\]: Can anyone remind me what XY's actual username is?
+]
+;W[kn]C[Muttley [2k\]: I'd like to leave him a message about a cat :)
+Mitty [1k\]: 0908
+Muttley [2k\]: ahhh Mitty, you're a star, thanks
+Werfeus [5d\]: a happy msg i hope
+Muttley [2k\]: Yeah, my cat's been missing for 5 days, he turned up this morning ;0
+Werfeus [5d\]: with a full belly i bet
+PhoenixGT [?\]: Is this an euphemism for pregnancy?
+Muttley [2k\]: Heh, male, so no
+Muttley [2k\]: Yeah, he's put a bit of weight on
+LMP2 [-\]: He was on a paleo diet this whole time.
+wysek [1d?\]: Finally got sth to eat
+]
+;B[mo]C[Muttley [2k\]: I think its a mistake to feed cats, gives them the impression you care
+ofbusy [-\]: its a theory that cats are kind of trolls ?
+Werfeus [5d\]: and the earth is round
+Muttley [2k\]: w 60 about plus komi, b 69.5
+Muttley [2k\]: interesting ...
+Muttley [2k\]: b should start some serious sente yose attempts
+ofbusy [-\]: p9 seems important
+]
+;W[mm]
+;B[lm]
+;W[ln]C[Muttley [2k\]: w trying to exploit e5
+Muttley [2k\]: be careful black
+]
+;B[mn]
+;W[ml]
+;B[kh]C[Slaboumov [4k\]: 1p vs 1k? )
+vaarsavius [1k\]: black is going to collapse, starting here
+]
+;W[lk]C[Slaboumov [4k\]: я думал челябинские мужики суровые, а тут оказывается в польше кю с про даном на чемпионате месятся )
+]
+;B[hg]
+;W[hh]C[GoshaPi [7k\]: дауж
+]
+;B[fi]
+;W[gi]C[SkyWalker [1k\]: не честная игра
+]
+;B[ig]C[vaarsavius [1k\]: really?
+vaarsavius [1k\]: I'm pretty sure they get one move each
+SkyWalker [1k\]: столько камней лишних у черного
+]
+;W[ih]C[vaarsavius [1k\]: never played at a tournament?
+SkyWalker [1k\]: каждый ход белого стоит 2 хода черного
+vaarsavius [1k\]: so what, the stronger player has higher chances to win
+vaarsavius [1k\]: like in every competition
+vaarsavius [1k\]: it's only fair the stronger player to be the likely victor
+]
+(;B[ki])
+(;B[kg]
+;W[lf]C[Slaboumov [4k\]: интересно если кюшник выиграет матеуш уйдет из го? )
+]
+;B[ke]C[ofbusy [-\]: with close fights that require precision, the gap becomes wider
+]
+;W[dc]
+;B[bm]
+;W[bn]
+;B[bl]
+;W[cn]
+;B[eo]C[gogonuts [4d\]: pretty amazing for a humble 1k
+vaarsavius [1k\]: I don't know, I can't see any chance for black to win
+gogonuts [4d\]: yeah, w will win
+gogonuts [4d\]: but 99 moves played, and w still has to watch his step
+Direktsaft: white's leading by a few points and b has no potential anymore
+vaarsavius [1k\]: yeah, he played well
+]
+;W[kr]C[Direktsaft: w could show his strength by winning by .5
+Idoc [2d\]: maby he is trying to
+vaarsavius [1k\]: doesn't that only happen in anime?
+Idoc [2d\]: this game is too close to represent the diffrence in strength between 1p and 1k
+vaarsavius [1k\]: depends on your measure
+vaarsavius [1k\]: if you think in points, yes
+vaarsavius [1k\]: if you think in chances to win, then it represents it quite well
+MyWay [5d\]: w will win in endgame
+Idoc [2d\]: you cant measure chances according to one game
+vaarsavius [1k\]: you can estimate the chances to win from a given position
+vaarsavius [1k\]: that's what bots do after all
+]
+;B[lr]
+;W[kp]
+;B[jq]
+;W[lp]C[vaarsavius [1k\]: this hurts
+]
+;B[iq]
+;W[mp]C[vaarsavius [1k\]: black may lose n5 stones
+Direktsaft: not really
+MyWay [5d\]: game over
+]
+;B[mr]C[vaarsavius [1k\]: n11 or m11 now?
+]
+;W[ir]C[NCP [4k\]: l10
+]
+;B[on]
+;W[jr]
+;B[lq]
+;W[np]
+;B[op]
+;W[ki]
+;B[li]C[SIscurge [5d\]: very strong first kyu
+]
+;W[lh]
+;B[kj]
+;W[ji]
+;B[ok]
+;W[mi]
+;B[oi]
+;W[pi]C[Direktsaft: s17 is pretty big
+]
+;B[pg]
+;W[qg]
+;B[ph]
+;W[qh]
+;B[gb]
+;W[be]
+;B[ae]
+;W[cd]
+;B[bb]
+;W[cb]
+;B[bc]
+;W[jg]
+;B[kf]
+;W[rc]
+;B[rb]
+;W[ro]
+;B[rp]
+;W[sp]
+;B[sq]
+;W[so]
+;B[rq]C[Grunman [5k\]: j14
+]
+;W[ef]
+;B[db]
+;W[eb]
+;B[ca]C[Grunman [5k\]: o3 first
+]
+;W[me]
+;B[md]
+;W[qd]
+;B[pc]
+;W[sb]
+;B[lg]
+;W[mh]
+;B[ra]
+;W[oe]
+;B[pe]
+;W[pf]
+;B[qe]
+;W[re]C[Direktsaft: more or less w +10
+]
+;B[le]
+;W[mf]
+;B[gd]
+;W[if]
+;B[ge]
+;W[gf]
+;B[ie]
+;W[hf]
+;B[hd]
+;W[dk]
+;B[di]
+;W[od]
+;B[oc]
+;W[oh]
+;B[fg]
+;W[gg]
+;B[nd]
+;W[gp]
+;B[bq]
+;W[ar]C[Grunman [5k\]: o3 not enough?
+Grunman [5k\]: tired?
+]
+;B[fb]
+;W[ea]
+;B[fa]
+;W[ni]
+;B[nf]
+;W[ng]
+;B[fd]
+;W[nq]
+;B[nr]
+;W[ls]
+;B[nk]
+;W[mk]
+;B[ee]
+;W[de]
+;B[ep]
+;W[eq]
+;B[sc]
+;W[sd]
+;B[ms]
+;W[ks]
+;B[am]
+(;W[ec]
+;B[da]
+;W[gc]
+;B[hb]
+;W[fh]
+;B[eh]
+;W[pm]
+;B[om]
+;W[nj]
+;B[an]
+;W[bo]
+;B[ao]
+(;W[bp]
+(;B[aq])
+(;B[ap]))
+(;W[aq]
+;B[ap]
+;W[bp]
+;B[hp]
+;W[in]
+;B[jp]
+;W[io]
+;B[ip]
+;W[fp]
+;B[dn]
+;W[gl]
+;B[dp]
+;W[rf]
+;B[qb]
+;W[sc]
+;B[oo]
+;W[sa]
+;B[no]
+;W[lo]
+;B[mq]
+;W[ed]
+;B[fe]
+;W[co]
+;B[nl]
+;W[nm]
+;B[ko]C[SkyWalker [1k\]: p2 
+]))
+(;W[da]
+;B[gc]
+;W[ec]
+;B[om]
+;W[pm]
+;B[an]
+;W[bo]
+;B[ao]
+;W[aq]
+;B[ap]
+;W[bp]
+;B[hp]
+;W[in]
+;B[jp]
+;W[io]
+;B[ip]
+;W[fp]
+;B[dn]
+;W[gl]
+;B[or]C[Shinjiro [2k?\]: W+20+
+]
+;W[rf]
+;B[qb]
+;W[sc]
+;B[dp]C[Shinjiro [2k?\]: o10 ?
+]
+(;W[nl]C[ofbusy [-\]: some moves seem to be missing
+LMP3 [-\]: yeh they played so fast - i didnt notice what is going on
+LMP3 [-\]: the game is over now
+LMP3 [-\]: counting points
+])
+(;W[nj]C[Rettel [7k?\]: c18
+Shinjiro [2k?\]: Yes
+]
+;B[cb]C[Shinjiro [2k?\]: And dame
+LMP3 [-\]: i hehe maybe - for sure i ask players
+LMP3 [-\]: is it correct sequence
+LMP1 [-\]: LMP3, please record the final score for me
+Shinjiro [2k?\]: Anyway w win.
+LMP3 [-\]: yes
+LMP1 [-\]: score please
+LMP3 [-\]: +25,5 white
+LMP1 [-\]: thanks
+ofbusy [-\]:  thx lmp3
+Shinjiro [2k?\]: Thanks
+ofbusy [-\]: b had a good game
+LMP3 [-\]: sorry first time recording :)
+LMP3 [-\]: thanks for watching - next round at 3 p.m
+])))))

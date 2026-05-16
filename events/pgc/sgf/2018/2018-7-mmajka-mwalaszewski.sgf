@@ -1,266 +1,483 @@
-(
-  ;BR[4d]CA[UTF-8]EV[Polish Go Championship 2018]FF[4]GM[1]GN[Round 7 - Board 3]KM[6.5]PB[Marcin Majka]PC[Poznań]PW[Maksym Wałaszewski]RE[W+4.5]RU[japanese]SZ[19]WR[2d]
-  ;B[pq]
-  ;W[qd]
-  ;B[cc]
-  ;W[cq]
-  ;B[oc]
-  ;W[ld]
-  ;B[qh]
-  ;W[od]
-  ;B[qk]
-  ;W[pc]
-  ;B[jp]
-  ;W[pp]
-  ;B[qp]
-  ;W[oq]
-  ;B[po]
-  ;W[op]
-  ;B[qq]
-  ;W[mn]
-  ;B[fq]
-  ;W[cn]
-  ;B[oo]
-  ;W[mp]
-  ;B[no]
-  ;W[lq]
-  ;B[fo]
-  ;W[kn]
-  ;B[fd]
-  ;W[hc]
-  ;B[ci]
-  ;W[dh]
-  ;B[ch]
-  ;W[df]
-  ;B[cg]
-  ;W[ff]
-  ;B[hd]
-  ;W[id]
-  ;B[he]
-  ;W[gc]
-  ;B[fc]
-  ;W[hg]
-  ;B[fh]
-  ;W[fg]
-  ;B[ic]
-  ;W[jc]
-  ;B[ib]
-  ;W[jb]
-  ;B[ie]
-  ;W[jd]
-  ;B[gh]
-  ;W[hf]
-  ;B[jf]
-  ;W[hh]
-  ;B[mo]
-  ;W[lo]
-  ;B[lm]
-  ;W[km]
-  ;B[ln]
-  ;W[ll]
-  ;B[mm]
-  ;W[ml]
-  ;B[nm]
-  ;W[kp]
-  ;B[jo]
-  ;W[ko]
-  ;B[jq]
-  ;W[cf]
-  ;B[dg]
-  ;W[dd]
-  ;B[dc]
-  ;W[ck]
-  ;B[ef]
-  ;W[ee]
-  ;B[eg]
-  ;W[fe]
-  ;B[gb]
-  ;W[hb]
-  ;B[gd]
-  ;W[ia]
-  ;B[hi]
-  ;W[ii]
-  ;B[hj]
-  ;W[kg]
-  ;B[co]
-  ;W[do]
-  ;B[dn]
-  ;W[cm]
-  ;B[dp]
-  ;W[bo]
-  ;B[eo]
-  ;W[pj]
-  ;B[qj]
-  ;W[ph]
-  ;B[pg]
-  ;W[og]
-  ;B[pi]
-  ;W[oh]
-  ;B[oi]
-  ;W[ni]
-  ;B[nj]
-  ;W[oj]
-  ;B[qi]
-  ;W[nk]
-  ;B[mj]
-  ;W[ok]
-  ;B[nh]
-  ;W[mi]
-  ;B[of]
-  ;W[ng]
-  ;B[mh]
-  ;W[li]
-  ;B[nf]
-  ;W[mg]
-  ;B[mf]
-  ;W[lh]
-  ;B[qf]
-  ;W[pe]
-  ;B[pf]
-  ;W[fj]
-  ;B[ek]
-  ;W[ej]
-  ;B[dj]
-  ;W[dk]
-  ;B[fk]
-  ;W[gk]
-  ;B[gl]
-  ;W[hk]
-  ;B[gj]
-  ;W[ij]
-  ;B[gi]
-  ;W[cj]
-  ;B[di]
-  ;W[hl]
-  ;B[bp]
-  ;W[cp]
-  ;B[bn]
-  ;W[do]
-  ;B[nd]
-  ;W[nc]
-  ;B[co]
-  ;W[el]
-  ;B[fl]
-  ;W[do]
-  ;B[mc]
-  ;W[ob]
-  ;B[co]
-  ;W[hn]
-  ;B[ao]
-  ;W[fm]
-  ;B[ei]
-  ;W[gm]
-  ;B[bf]
-  ;W[be]
-  ;B[ag]
-  ;W[cd]
-  ;B[bc]
-  ;W[hq]
-  ;B[hp]
-  ;W[jr]
-  ;B[ir]
-  ;W[kr]
-  ;B[md]
-  ;W[hr]
-  ;B[iq]
-  ;W[is]
-  ;B[gr]
-  ;W[re]
-  ;B[fb]
-  ;W[mb]
-  ;B[lc]
-  ;W[lb]
-  ;B[rf]
-  ;W[gs]
-  ;B[fr]
-  ;W[fs]
-  ;B[es]
-  ;W[hs]
-  ;B[gq]
-  ;W[js]
-  ;B[er]
-  ;W[ho]
-  ;B[gp]
-  ;W[pr]
-  ;B[qr]
-  ;W[or]
-  ;B[pl]
-  ;W[qs]
-  ;B[rs]
-  ;W[ps]
-  ;B[rr]
-  ;W[bi]
-  ;B[bh]
-  ;W[aj]
-  ;B[bm]
-  ;W[ae]
-  ;B[af]
-  ;W[ah]
-  ;B[ai]
-  ;W[me]
-  ;B[bj]
-  ;W[ne]
-  ;B[le]
-  ;W[kc]
-  ;B[bk]
-  ;W[nl]
-  ;B[ol]
-  ;W[ac]
-  ;B[bd]
-  ;W[ad]
-  ;B[ab]
-  ;W[ce]
-  ;B[ed]
-  ;W[de]
-  ;B[bb]
-  ;W[sf]
-  ;B[jg]
-  ;W[jh]
-  ;B[sg]
-  ;W[se]
-  ;B[rg]
-  ;W[jn]
-  ;B[np]
-  ;W[nq]
-  ;B[kq]
-  ;W[lr]
-  ;B[qe]
-  ;W[rd]
-  ;B[dm]
-  ;W[cl]
-  ;B[dl]
-  ;W[bl]
-  ;B[al]
-  ;W[ek]
-  ;B[kf]
-  ;W[io]
-  ;B[ip]
-  ;W[fi]
-  ;B[ge]
-  ;W[en]
-  ;B[oe]
-  ;W[ga]
-  ;B[fa]
-  ;W[fn]
-  ;B[go]
-  ;W[pd]
-  ;B[ke]
-  ;W[lg]
-  ;B[kd]
-  ;W[md]
-  ;B[ha]
-  ;W[em]
-  ;B[do]
-  ;W[ga]
-  ;B[if]
-  ;W[ha]
-  ;B[eh]
-  ;W[ih]
-  ;B[gg]
-  ;W[gf]
-  ;B[lf]
-  ;W[je]
-  ;B[pk]
-  ;W[ig]
-  ;B[gn]
+(;FF[4]
+GM[1]
+PC[OGS: http://online-go.com/game/review/353206]
+BR[4d]
+WR[2d]
+CP[online-go.com]
+TM[0]OT[0 none]
+RE[?]
+SZ[19]
+KM[6.5]
+RU[japanese]
+C[
+
+-- chat --
+LMP2018-3: Welcome to the final round, board 3
+LMP2018-3: http://mp.go.art.pl/2018/en/results - results after 6th rounds
+RadosławJachym: No czesć!
+LMP2018-3: cześć
+LMP2018-3: Sytuacja wygląda tak: Koichiro Habu 1, Marcin Majka 2, gramy o pozostale miejsca
+LMP2018-3: sędzia puścił czas, gracze przy desce 3 wyszli z sali
+
+]
+
+;B[pq]C[
+
+-- chat --
+LMP2018-3: Higaki, wszedł, zrobił ruch i wyszedl
+
+]
+
+;W[qd]
+;B[cc]
+;W[cq]C[
+
+-- chat --
+LMP2018-3: Ok, już obaj siedzą
+
+]
+
+;B[oc]
+;W[ld]
+;B[qh]
+;W[od]
+;B[qk]
+;W[pc]
+;B[jp]
+;W[pp]
+;B[qp]
+;W[oq]
+;B[po]
+;W[op]
+;B[qq]
+;W[mn]
+;B[fq]
+;W[cn]
+;B[oo]
+;W[mp]
+;B[no]
+;W[lq]
+;B[fo]
+;W[kn]
+;B[fd]
+;W[hc]
+;B[ci]
+;W[dh]
+;B[ch]
+;W[df]
+;B[cg]
+;W[ff]
+;B[hd]
+;W[id]
+;B[he]
+;W[gc]
+;B[fc]
+;W[hg]
+;B[fh]
+;W[fg]
+;B[ic]
+;W[jc]
+;B[ib]
+;W[jb]
+;B[ie]
+;W[jd]
+;B[gh]
+;W[hf]
+;B[jf]C[
+
+-- chat --
+LMP2018-3: B: 80min;  W: 55min
+
+]
+
+;W[hh]
+;B[mo]
+;W[lo]
+;B[lm]
+;W[km]
+;B[ln]
+;W[ll]
+;B[mm]
+;W[ml]
+;B[nm]
+;W[kp]
+;B[jo]
+;W[ko]
+;B[jq]
+;W[cf]
+;B[dg]
+;W[dd]
+;B[dc]
+;W[ck]
+;B[ef]
+;W[ee]
+;B[eg]
+;W[fe]
+;B[gb]
+;W[hb]
+;B[gd]
+;W[ia]
+;B[hi]
+;W[ii]
+;B[hj]
+;W[kg]
+;B[co]
+;W[do]
+;B[dn]
+;W[cm]
+;B[dp]
+;W[bo]
+;B[eo]
+;W[pj]C[
+
+-- chat --
+LMP2018-3: Higaki napił się wody
+
+]
+
+;B[qj]
+;W[ph]
+;B[pg]
+;W[og]
+;B[pi]
+;W[oh]
+;B[oi]
+;W[ni]C[
+
+-- chat --
+infra: gazowanej? źródlanej?
+
+]
+
+;B[nj]C[
+
+-- chat --
+LMP2018-3: Muszyna
+LMP2018-3: wysokozmineralizowana
+
+]
+
+;W[oj]
+;B[qi]
+;W[nk]C[
+
+-- chat --
+infra: *biegnie do sklepu*
+
+]
+
+;B[mj]
+;W[ok]
+;B[nh]
+;W[mi]
+;B[of]
+;W[ng]
+;B[mh]
+;W[li]
+;B[nf]
+;W[mg]C[
+
+-- chat --
+Sadiker: Do d4 bym wrócił
+Sadiker: C4
+
+]
+
+;B[mf]
+;W[lh]
+;B[qf]C[
+
+-- chat --
+Sadiker: Ale blutza grają. Pewnie na pociąg się śpieszą
+Sadiker: Blitza
+LMP2018-3: Higaki był przez moment zdziwiony sytuacją
+LMP2018-3: Diana i Janek skończyli
+LMP2018-3: i hałasują zbierając kamienie
+
+]
+
+;W[pe]
+;B[pf]C[
+
+-- chat --
+LMP2018-3: Diana wyszła, Janek przygląda się grze
+
+]
+
+;W[fj]
+;B[ek]C[
+
+-- chat --
+LMP2018-3: Maksym się zawahał i westchnął
+
+]
+
+;W[ej]
+;B[dj]
+;W[dk]
+;B[fk]
+;W[gk]
+;B[gl]C[
+
+-- chat --
+LMP2018-3: pokiwał głową
+Sadiker: H9
+Sadiker: Biały lubi grać głupie trójkaty
+
+]
+
+;W[hk]C[
+
+-- chat --
+LMP2018-3: :)
+LMP2018-3: Maksym się przeciągnął
+Sadiker: Na wszystkich deskach szybko grają
+LMP2018-3: a Higaki westchnął
+
+]
+
+;B[gj]
+;W[ij]
+;B[gi]
+;W[cj]
+;B[di]C[
+
+-- chat --
+LMP2018-3: szybka sekwencja
+
+]
+
+;W[hl]C[
+
+-- chat --
+LMP2018-3: oddaję głos Darkowi
+Sadiker: B4
+
+]
+
+;B[bp]
+;W[cp]
+;B[bn]
+;W[do]
+;B[nd]C[
+
+-- chat --
+Sadiker: Darmowe ko
+
+]
+
+;W[nc]
+;B[co]
+;W[el]
+;B[fl]
+;W[do]
+;B[mc]
+;W[ob]
+;B[co]
+;W[hn]C[
+
+-- chat --
+LMP2018-3: W rundzie 7 atmosfera w sali lekko mowiąc senna
+
+]
+
+;B[ao]
+;W[fm]
+;B[ei]
+;W[gm]
+;B[bf]
+;W[be]
+;B[ag]
+;W[cd]
+;B[bc]C[
+
+-- chat --
+LMP2018-3: Higaki wstaje i sie rozciąga, Maksyma nie było, ale wrócił
+Sadiker: H4 potem q8
+LMP2018-3: Ja się zastanawiam zawsze kiedy grać ruchy takie jak S15 i czy nie przypadkiem teraz
+Sadiker: Ew b11
+Sadiker: ...
+Sadiker: Widzowie czekają!
+
+]
+
+;W[hq]
+;B[hp]C[
+
+-- chat --
+Sadiker: Zależy czy sente czy nie
+
+]
+
+;W[jr]C[
+
+-- chat --
+LMP2018-3: no właśnie
+Sadiker: Trzeba zadać sobie pytanie czy Alphago by odpowiedział;)
+LMP2018-3: aha, to już wiem :P
+Sadiker: L2 z przekory
+LMP2018-3: btw nikogo nie ma przy stole
+LMP2018-3: w ogóle wszyscy sobie chodzą gdzieś, w sali jest aktualnie dwóch graczy
+Sadiker: Tak to jest jak sie gra w internecie to poten takie nawyki wchodzą
+LMP2018-3: Towarzyszący się kończy, może poszli sprawdzić wyniki
+LMP2018-3: Higaki podszedł, spojrzał na zegar, powiedział "mam czas" i wyszedl
+
+]
+
+;B[ir]C[
+
+-- chat --
+LMP2018-3: gracze są z powrotem
+
+]
+
+;W[kr]
+;B[md]
+;W[hr]
+;B[iq]
+;W[is]
+;B[gr]
+;W[re]
+;B[fb]
+;W[mb]
+;B[lc]
+;W[lb]
+;B[rf]
+;W[gs]
+;B[fr]
+;W[fs]
+;B[es]
+;W[hs]
+;B[gq]
+;W[js]
+;B[er]C[
+
+-- chat --
+LMP2018-3: B: 38min;  W: 24min
+
+]
+
+;W[ho]
+;B[gp]C[
+
+-- chat --
+Sadiker: B11
+
+]
+
+;W[pr]
+;B[qr]
+;W[or]
+;B[pl]C[
+
+-- chat --
+Sadiker: B11 b12 a10
+
+]
+
+;W[qs]
+;B[rs]
+;W[ps]
+;B[rr]
+;W[bi]
+;B[bh]
+;W[aj]C[
+
+-- chat --
+LMP2018-3: proszę bardzo
+
+]
+
+;B[bm]
+;W[ae]
+;B[af]
+;W[ah]
+;B[ai]
+;W[me]
+;B[bj]
+;W[ne]
+;B[le]
+;W[kc]
+;B[bk]C[
+
+-- chat --
+Sadiker: A17 chyba lepsze jako groźba
+
+]
+
+;W[nl]
+;B[ol]
+;W[ac]
+;B[bd]
+;W[ad]
+;B[ab]
+;W[ce]
+;B[ed]
+;W[de]
+;B[bb]
+;W[sf]
+;B[jg]
+;W[jh]
+;B[sg]
+;W[se]
+;B[rg]
+;W[jn]
+;B[np]
+;W[nq]
+;B[kq]
+;W[lr]
+;B[qe]
+;W[rd]
+;B[dm]
+;W[cl]
+;B[dl]
+;W[bl]
+;B[al]
+;W[ek]
+;B[kf]
+;W[io]
+;B[ip]
+;W[fi]
+;B[ge]
+;W[en]
+;B[oe]
+;W[ga]
+;B[fa]
+;W[fn]
+;B[go]
+;W[pd]
+;B[ke]
+;W[lg]
+;B[kd]
+;W[md]
+;B[ha]
+;W[em]
+;B[do]
+;W[ga]
+;B[if]
+;W[ha]C[
+
+-- chat --
+LMP2018-3: ciekawe
+
+]
+
+;B[eh]
+;W[ih]
+;B[gg]
+;W[gf]
+;B[lf]
+;W[je]
+;B[pk]
+;W[ig]
+;B[gn]C[
+
+-- chat --
+LMP2018-3: pas  - pas
+LMP2018-3: liczenie
+LMP2018-3: W+4,5
+Sadiker: To Higaki który bedzie?
+
+]
+
 )

@@ -1,217 +1,611 @@
-(
-  ;BR[4d]CA[UTF-8]DT[2012-12-02]EV[Polish Go Championship 2012]FF[4]GM[1]GN[Round 7 - Board 2]KM[6.50]PB[Stanisław Frejlak]PC[Katowice]PW[Krzysztof Giedrojć]RE[B+R]RO[7]RU[japanese]ST[2]SZ[19]US[kamys]WR[4d]
-  ;B[pd]
-  ;W[dp]
-  ;B[pq]
-  ;W[dc]
-  ;B[qk]
-  ;W[mp]
-  ;B[po]
-  ;W[jp]
-  ;B[jd]
-  ;W[qf]
-  ;B[qe]
-  ;W[pf]
-  ;B[nd]
-  ;W[qi]
-  ;B[ok]
-  ;W[ch]
-  ;B[ng]
-  ;W[rk]
-  ;B[rl]
-  ;W[oi]
-  ;B[ni]
-  ;W[rj]
-  ;B[oj]
-  ;W[oh]
-  ;B[nh]
-  ;W[eh]
-  ;B[rh]
-  ;W[re]
-  ;B[rd]
-  ;W[rf]
-  ;B[qh]
-  ;W[ph]
-  ;B[cn]
-  ;W[eo]
-  ;B[cq]
-  ;W[cp]
-  ;B[dq]
-  ;W[fq]
-  ;B[fr]
-  ;W[gr]
-  ;B[eq]
-  ;W[fp]
-  ;B[ep]
-  ;W[bq]
-  ;B[do]
-  ;W[bp]
-  ;B[er]
-  ;W[fo]
-  ;B[br]
-  ;W[ar]
-  ;B[cs]
-  ;W[dn]
-  ;B[dm]
-  ;W[co]
-  ;B[en]
-  ;W[bn]
-  ;B[cm]
-  ;W[bm]
-  ;B[ej]
-  ;W[gi]
-  ;B[gk]
-  ;W[hc]
-  ;B[he]
-  ;W[fd]
-  ;B[cc]
-  ;W[cd]
-  ;B[db]
-  ;W[bc]
-  ;B[fe]
-  ;W[ee]
-  ;B[gd]
-  ;W[gc]
-  ;B[ec]
-  ;W[cb]
-  ;B[dd]
-  ;W[de]
-  ;B[fc]
-  ;W[ed]
-  ;B[fh]
-  ;W[fi]
-  ;B[ei]
-  ;W[gg]
-  ;B[fg]
-  ;W[gf]
-  ;B[gh]
-  ;W[hh]
-  ;B[ff]
-  ;W[ge]
-  ;B[hg]
-  ;W[hd]
-  ;B[hi]
-  ;W[ih]
-  ;B[gj]
-  ;W[ii]
-  ;B[fj]
-  ;W[ie]
-  ;B[ij]
-  ;W[je]
-  ;B[ji]
-  ;W[kd]
-  ;B[hq]
-  ;W[gq]
-  ;B[jq]
-  ;W[kq]
-  ;B[ip]
-  ;W[jr]
-  ;B[ir]
-  ;W[iq]
-  ;B[og]
-  ;W[pg]
-  ;B[jq]
-  ;W[io]
-  ;B[ho]
-  ;W[iq]
-  ;B[pj]
-  ;W[pi]
-  ;B[jq]
-  ;W[jo]
-  ;B[hn]
-  ;W[iq]
-  ;B[sk]
-  ;W[sj]
-  ;B[jq]
-  ;W[is]
-  ;B[kr]
-  ;W[iq]
-  ;B[se]
-  ;W[sf]
-  ;B[jq]
-  ;W[js]
-  ;B[hs]
-  ;W[iq]
-  ;B[qj]
-  ;W[ri]
-  ;B[jq]
-  ;W[hp]
-  ;B[ks]
-  ;W[iq]
-  ;B[lq]
-  ;W[jr]
-  ;B[lp]
-  ;W[lo]
-  ;B[mo]
-  ;W[mq]
-  ;B[ko]
-  ;W[lr]
-  ;B[ln]
-  ;W[kp]
-  ;B[lo]
-  ;W[nr]
-  ;B[jm]
-  ;W[rm]
-  ;B[ql]
-  ;W[sl]
-  ;B[kc]
-  ;W[jc]
-  ;B[ld]
-  ;W[id]
-  ;B[kb]
-  ;W[qp]
-  ;B[or]
-  ;W[js]
-  ;B[ro]
-  ;W[qo]
-  ;B[qn]
-  ;W[rn]
-  ;B[so]
-  ;W[rp]
-  ;B[qm]
-  ;W[sp]
-  ;B[np]
-  ;W[jh]
-  ;B[kh]
-  ;W[jg]
-  ;B[kf]
-  ;W[kg]
-  ;B[lg]
-  ;W[ki]
-  ;B[jf]
-  ;W[jj]
-  ;B[if]
-  ;W[hf]
-  ;B[ig]
-  ;W[lh]
-  ;B[lf]
-  ;W[lj]
-  ;B[kk]
-  ;W[kj]
-  ;B[jk]
-  ;W[lk]
-  ;B[ll]
-  ;W[ck]
-  ;B[cg]
-  ;W[bg]
-  ;B[cj]
-  ;W[bj]
-  ;B[bk]
-  ;W[bl]
-  ;B[bi]
-  ;W[ak]
-  ;B[bh]
-  ;W[dg]
-  ;B[cf]
-  ;W[bf]
-  ;B[ci]
-  ;W[dh]
-  ;B[nq]
-  ;W[mr]
-  ;B[mk]
-  ;W[pp]
-  ;B[oo]
-  ;W[sd]
-  ;B[rc]
-  ;W[fs]
-)
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[5400]OT[1x60 byo-yomi]
+GN[Polish Go Championship League]PW[Stanisław Frejlak]PB[Krzysztof Giedrojć]WR[4d]BR[4d]DT[2012-12-02]RO[7]PC[The KGS Go Server at http://www.gokgs.com/]US[kamys]C[SadPlayer [-\]: co za emocje!
+LewyBut [1d\]: Siasio na mistrza Polski!
+highdan: Więc młody Frejlak jeszcze nie jest MP??
+highdan: wg mnie to sie mu juz należy )))
+highdan: LMP2 please bitte daj jakąś wykładnie aktualnego stanu rzeczy wg regulaminu?
+bartosz [-\]: ale jaką wykładnię?
+SadPlayer [-\]: zwycięzca jest mistrzem
+bartosz [-\]: jak gie wygrywa to ma wiekszy sodos i tyle
+highdan: aha
+highdan: dzieki
+]
+;B[pd]C[bartosz [-\]: jak Koichi ogra dj to przegrany z pierwszej deski wypada poza 4
+]
+;W[dp]
+;B[pq]
+;W[dc]
+;B[qk]
+;W[mp]
+;B[po]
+;W[jp]
+;B[jd]
+;W[qf]
+;B[qe]
+;W[pf]
+;B[nd]
+;W[qi]
+;B[ok]
+;W[ch]C[SadPlayer [-\]: jak to teraz zaatakować
+SadPlayer [-\]: p11 ?
+bartosz [-\]: p11 chyba 
+]
+;B[ng]
+;W[rk]
+;B[rl]
+;W[oi]
+;B[ni]
+;W[rj]
+;B[oj]
+;W[oh]
+;B[nh]
+;W[eh]C[liquescens [1k\]: siosasio chyba tego juz nie wygra
+SadPlayer [-\]: czemu?
+Stachu: w takim momencie gry umiesz stwierdzic?
+Stachu: Inteligentne...
+dsdfsdf: na pewno siasio wygra
+dsdfsdf: nie znacie sie
+]
+;B[rh]C[Stachu: Siasio na prezydenta!
+dsdfsdf: giedrojć już przegrał i o tym wie
+bartosz [-\]: siasiowe trolle :)
+liquescens [1k\]: trup
+Stachu: trolle? po prostu fani!
+dsdfsdf: giedrojć wie ze przegra, dla tego ma taka mine
+]
+;W[re]
+;B[rd]
+;W[rf]
+;B[qh]
+;W[ph]C[dsdfsdf: czemu twierdzisz lquescenes ze siasio przegra?
+liquescens [1k\]: bo umre
+liquescens [1k\]: *umrze
+dsdfsdf: czemu?
+liquescens [1k\]: p13 ?
+Lothus [2d\]: szalony siasiek
+Stachu2: Giedrojć szybciej umrze
+Lothus [2d\]: mowimy o sytuacji na planszy
+liquescens [1k\]: prynajmniej ne bedzie sie meczyl
+sempai [-\]: najgorzej seki
+Lothus [2d\]: no wlasnie, zyje
+Lothus [2d\]: w kazdym razie smutno jest miec taka grupę
+]
+;B[cn]C[Lothus [2d\]: w sensie, otoczoną
+liquescens [1k\]: a co robi e12?
+liquescens [1k\]: redukuje sile czarnego?
+liquescens [1k\]: to po co dawal sie otoczyc?
+Lothus [2d\]: to tzw wieksza czaszka konia czy jakos tak
+sempai [-\]: i nie redukuje?
+Lothus [2d\]: rozszerzenie od niej ^^
+dsdfsdf: .
+dsdfsdf: ,
+Lothus [2d\]: poki zyje, a czarny nie ma wiele  terenu to jest ok, ja mowie, ze dla mnie to by było smutne, ale ja grac nie umiem, wiec dla kogos 4d+ moze nie byc to przeszkoda
+]
+;W[eo]C[maciek [2d\]: kto wygra, zostanie mistrzem?
+Lothus [2d\]: siasio!
+sempai [-\]: ale e5 jest nieladne
+Lothus [2d\]: niemal shushaku
+sempai [-\]: ogolnie e12 byl bardzo dobry ruch
+]
+;B[cq]
+;W[cp]C[Stachu: Nie mozna pisac "kto wygra..." bo i tak siasio wygra!
+]
+;B[dq]
+;W[fq]
+;B[fr]
+;W[gr]
+;B[eq]C[Lothus [2d\]: to bylo pytanie retoryczne
+paroxyzm [3k\]: mateusz surma powinien byc mistrzem polski
+Lothus [2d\]: surma niech sprobuje byc mistrzem chin,c zy gdzie tam trenuje :p
+liquescens [1k\]: tak bez grania? bez sensu
+highdan: byc moze :)
+MPtow: Siasio zostanie królem, Mistrz to tytuł nazbyt skromny
+LMP4 [-\]: Może zdobedzie dwie korony w tym roku, LMM juz ma
+MPtow: jego rządy będą srogie i sprawiedliwe
+Stachu: Mozna tak sobie odchodzic?
+Lothus [2d\]: moze sie nie ograniczajmy, dwie korony to juz cesarz
+Lothus [2d\]: jest jakies video?
+Bogdan13x [1k\]: spokojnie narazie ma jedna
+liquescens [1k\]: dlaczego nie ma dzwieku z sali?
+Stachu: jest video
+Bogdan13x [1k\]: http://www.ustream.tv/channel/lmp2012katowice#utm_campaign=unknown&utm_source=12699053&utm_medium=social
+Lothus [2d\]: thx
+Bogdan13x [1k\]: ;-)
+liquescens [1k\]: koichi dopier oteraz umyl rece
+Stachu2: p prostu Giedrojć wie, że już nie ma szans
+Stachu2: *po prostu
+]
+;W[fp]C[Lothus [2d\]: az zaluje ze sie nie przeszlam na mistrzostwa
+Bogdan13x [1k\]: tez tam mialem byc
+]
+;B[ep]C[LMP4 [-\]: Lothus towarzyszacy moglabys wygrac
+LMP4 [-\]: Lesmian ma szanse na zwyciestwo teraz
+Lothus [2d\]: glownego bym nie mogla, wiec nie warto ;p
+LMP4 [-\]: i bonus 50Euro na kongres, albo kubek
+LMP4 [-\]: i takie tam ;)
+liquescens [1k\]: jak bys chciala to bys mogla
+Lothus [2d\]: a o tym nie wiedzialam
+Lothus [2d\]: cholera :'(
+Lothus [2d\]: kubek
+Bogdan13x [1k\]: tez nie wiedziałęm
+Lothus [2d\]: nawygrywam sie  jak nie bede musiala sie uczyc
+Bogdan13x [1k\]: cgyba ze bedziesz pracowac
+Bogdan13x [1k\]: chyba
+Lothus [2d\]: wez mnie nie pocieszaj
+Bogdan13x [1k\]: a poten gdy juz bede na eneryturze 
+Lothus [2d\]: w pracy weekendy sa wolne w kazdym razie
+]
+;W[bq]C[LMP4 [-\]: zalezy w jakies, MC jest otwarty caly tydzien :P
+LMP4 [-\]: *jakiej
+]
+;B[do]C[Bogdan13x [1k\]: nie tylko w takiej duzo tego
+]
+;W[bp]C[Lothus [2d\]: myślja zamierzam mieć wolne pol tygodnia
+Bogdan13x [1k\]: tez mam takie plany
+Bogdan13x [1k\]: i zaczynam je realizowac
+sempai [-\]: ciekawa sytuacja
+Bogdan13x [1k\]: zgadzam sie
+highdan: w tym momencie korzystna dla białego
+sempai [-\]: tak wyglada
+paroxyzm [3k\]: dlaczego?
+highdan: bo czarny musi wyżyć
+sempai [-\]: bialy tez musi, ale ma latwiej :)
+paroxyzm [3k\]: nie mozna tego oddać? 
+highdan: ale potem rzyjdzie kolej na białego B3,4
+]
+;B[er]C[Lothus [2d\]: f5?
+sempai [-\]: e6 ?
+]
+;W[fo]C[highdan: razcej tak :)
+sempai [-\]: ha
+Lothus [2d\]: \\o/
+highdan: F5
+alvar [3k\]: dead
+liquescens [1k\]: wyniki: 1. gie 2. siasio 3. fisz 4. leszek\\
+]
+;B[br]
+;W[ar]C[Stachu2: i tak Stasio wygra
+Lothus [2d\]: b6 i bialy ucieka
+Lothus [2d\]: co wy gadacie
+Stachu: siasio wygra!
+]
+;B[cs]C[sempai [-\]: no w sumie f5 jest ladniejsze
+Lothus [2d\]: oczywiscie, moje:>
+]
+;W[dn]C[Lothus [2d\]: a to ciekawe
+paroxyzm [3k\]: no bialy bedzie mial niezle wplywy
+sempai [-\]: w ogole kto to liquescens i czemu ciagle trolluje?
+highdan: O1 to mi sie podoba 
+]
+;B[dm]C[SadPlayer [-\]: kijowy rezultat dla cz
+]
+;W[co]C[celepa [?\]: lol
+paroxyzm [3k\]: tragedia
+Lothus [2d\]: lol
+sempai [-\]: i o co chodzi z c1 ?
+Stachu: ale slabo zrobil!
+]
+;B[en]C[Lothus [2d\]: lol2
+celepa [?\]: tak zagrali?
+SadPlayer [-\]: można darmowe ko ustawić
+Lothus [2d\]: gei niemal poddal teraz
+celepa [?\]: dokladnie
+liquescens [1k\]: teraz jest rowno ;p
+sempai [-\]: c1 chyba jedyny ruch, po ktorym nawet jak tam czarny jeszcze raz zagra, to ciagle jest ko
+Stachu: dlaczego niemal poddal?
+SadPlayer [-\]: łaczyć to
+Lothus [2d\]: wedlug mnie czarny stracil na tym
+liquescens [1k\]: bo juz powiedzial "podda" i nie dokonczyl ;p
+Lothus [2d\]: i to sporo
+Lothus [2d\]: jest otoczony w rogu z ko
+Lothus [2d\]: tragedia
+Bogdan13x [1k\]: sempai A TY KIM JESTES
+Lothus [2d\]: tasuki 4 d:P
+SadPlayer [-\]: w sumie można f1 zagrac
+liquescens [1k\]: to tasuki ;p
+SadPlayer [-\]: f1 e1 d2 d5 b6 
+dsdfsdf: b3 teraz
+Bogdan13x [1k\]: aha dziękuje za informacje
+Stachu: nie nie! lepszy jest c4...
+Lothus [2d\]: f1 e1d1
+Lothus [2d\]: lol
+]
+;W[bn]C[Lothus [2d\]: aha, odwrotne kolory
+Lothus [2d\]: ^^
+liquescens [1k\]: taki dziwny czlowiek co woli tyskie od porzadnego czeskiego piwa ;p
+Lothus [2d\]: siasio sprytny jest
+Stachu2: no ba!
+Stachu: no jasne że jest!
+Lothus [2d\]: gie moze poddac
+]
+;B[cm]
+;W[bm]C[liquescens [1k\]: obaj gracze sa tego rodzaju, ze nie poddaja ;p
+Lothus [2d\]: to nie znaczy, ze nie nalezy zachecac
+Uberdude [5d?\]: who is it on the video behing these guys?
+Lothus [2d\]: koichiro
+Lothus [2d\]: Habu
+Lothus [2d\]: 4 d
+liquescens [1k\]: lee chang ho
+Uberdude [5d?\]: thx
+]
+;B[ej]
+;W[gi]C[Lothus [2d\]: mądry siasiek
+dsdfsdf: a gdyby Giedrojć przypadkiem rozwalil plansze to by przegral?
+]
+;B[gk]C[Ber [1d\]: g16 !
+liquescens [1k\]: apropos rozwalania planszy
+Bogdan13x [1k\]: wie ktos czego słucha Kamil
+liquescens [1k\]: http://www.youtube.com/watch?v=rlEEUTTesHM
+Lothus [2d\]: kamil slucha onej
+Lothus [2d\]: czy anej
+Lothus [2d\]: nie wiem jak sie nazywa to wycie
+liquescens [1k\]: ja wiem, bo mi podeslal
+dwt3: moze enej
+liquescens [1k\]: http://www.youtube.com/watch?v=owG1wQXOmEY
+Bogdan13x [1k\]: a wiec
+liquescens [1k\]: tego slucha
+]
+(;W[gc])
+(;W[hc]C[liquescens [1k\]: zreszta powinniscie sie sami domyslec
+]
+;B[he]
+;W[fd]C[Bogdan13x [1k\]: dzwieki ktorych nie umie  nazwac wzbudzaja strach  strach 
+]
+;B[cc]
+;W[cd]C[Lothus [2d\]: uberdude who is leading?:)
+]
+;B[db]
+;W[bc]
+;B[fe]C[dsdfsdf: lee sedol
+]
+;W[ee]
+;B[gd]
+;W[gc]C[bartosz [-\]: jakos dziwnie cz tu pograł
+bartosz [-\]: bedzie odcinał g11 pewnie
+]
+;B[ec]
+;W[cb]
+;B[dd]C[liquescens [1k\]: ta gra jest jakas chora
+]
+;W[de]
+;B[fc]
+;W[ed]
+;B[fh]C[SadPlayer [-\]: chore jest zrobić komuś dziecko majac 85 lat. To jest najwyżej dziwne
+liquescens [1k\]: stary czlowiek i może
+SadPlayer [-\]: ale mogliby już zabić dół
+borsuk94 [2k\]: male
+Lipa [3k\]: tengen!
+borsuk94 [2k\]: www.youtube.com/watch?v=mQV5K4meobM
+borsuk94 [2k\]: chory to jest człowiek ktory to wymyslil
+Lothus [2d\]: wy to macie zarty
+borsuk94 [2k\]: siema lipa tak wogóle
+Lipa [3k\]: siema
+borsuk94 [2k\]: ty jestes ten li[pa?
+borsuk94 [2k\]: blondyn z alaski?
+Lipa [3k\]: chyba tak
+]
+;W[fi]
+;B[ei]
+;W[gg]C[romanp [-\]: o co chodziło z tą wymianą w lewym górnym? wciśnięcie białemu terenu w zamian za nic?
+romanp [-\]: i tak, żeby już na 100% nie było żadnych aji?
+]
+;B[fg]C[bartosz [-\]: :)
+orzelek [1k\]: g14
+]
+;W[gf]C[celepa [?\]: wow
+Lothus [2d\]: chyba chcial centrum wziac
+celepa [?\]: najmlodszy mistrz polski? ;>
+Lothus [2d\]: tylko nie wyszlo
+bartosz [-\]: nawet mateusz mistrzem nie był jeszcze
+watayasu [4k\]: E13
+liquescens [1k\]: f14 
+bartosz [-\]: f14 jedyna sensowna opcja chyba
+]
+;B[gh]C[Lothus [2d\]: f14? zeby sie zabic?
+]
+;W[hh]
+;B[ff]C[bartosz [-\]: nie
+]
+;W[ge]
+;B[hg]
+;W[hd]C[Lothus [2d\]: teraz bialy prowadzi
+]
+;B[hi]
+;W[ih]C[SadPlayer [-\]: wow, ale Leszek się czerwony zrobił
+SadPlayer [-\]: na streamie widać
+Stachu: wkurzyl sie!
+SadPlayer [-\]: albo z solarium przesadził
+]
+;B[gj]
+;W[ii]
+;B[fj]
+;W[ie]C[Lothus [2d\]: niektórzy mają po prostu buraczaną urodę
+Otori [6k\]: ma ktos link do strony na zywo? jest relacja?
+orzelek [1k\]: moze teraz czarny moglby grac ko o zycie
+Stachu: www.youtube.com/watch?v=mQV5K4meobM
+SadPlayer [-\]: o na kamerce widać, że LMP2 to Kamyszyn :\]
+Lothus [2d\]: http://www.ustream.tv/channel/lmp2012katowice#utm_campaign=unknown&utm_source=12699053&utm_medium=social
+]
+;B[ij]C[Lothus [2d\]: jakies m17 sie czai?
+Lothus [2d\]: no jak dogra teraz
+]
+;W[je]
+;B[ji]
+;W[kd]
+;B[hq]C[paroxyzm [3k\]: ale zagral
+celepa [?\]: Krzysiek jeszcze nie powiedzial ostatniego slowa!
+]
+;W[gq]
+;B[jq]
+;W[kq]
+;B[ip]
+;W[jr]
+;B[ir]
+;W[iq]
+;B[og]
+;W[pg]
+;B[jq]C[Lothus [2d\]: oo
+Lothus [2d\]: pozdrow jana baranka
+Lothus [2d\]: :P
+dsdfsdf: jego ostatnie słowo to bedzie "poddaję"
+]
+;W[io]C[Lothus [2d\]: wszyscy czekaja na to ostatnie slowo
+highdan: :)
+]
+;B[ho]
+;W[iq]
+;B[pj]C[highdan: S7 czy T12?
+SadPlayer [-\]: olać to i wziać h4 i f1 
+SadPlayer [-\]: Potem mozna pobawić sie z zaji w r17 i w s7 
+celepa [?\]: jak odpowie tutaj to napewno ko przegra
+celepa [?\]: bo bedzie z milion grozb tam
+bartosz [-\]: ld czarnego zyje tylko w ko
+]
+;W[pi]
+;B[jq]
+;W[jo]C[bartosz [-\]: ile czasu?
+LMP2 [-\]: po 29
+]
+;B[hn]
+;W[iq]
+;B[sk]C[liquescens [1k\]: r10 
+]
+;W[sj]
+;B[jq]C[SadPlayer [-\]: przynajmniej s7 dostał
+]
+;W[is]
+;B[kr]
+;W[iq]C[liquescens [1k\]: to ko jest za duze
+barty [2d\]: i tak e2 nie jes zywe
+SadPlayer [-\]: r10 ?
+]
+;B[se]C[lecewkulki [-\]: s11?
+LMP2 [-\]: gracze maja po 25 min
+romanp [-\]: hmm... a czy to jest groźba?
+SadPlayer [-\]: mi wychodzi, ze tak
+sigm [4k\]: jedno oko
+SadPlayer [-\]: ale i tak bym olał:)
+sempai [-\]: jaka jest idea j1 ?
+romanp [-\]: jedno oko, ale może seki?
+]
+;W[sf]C[liquescens [1k\]: trup
+]
+;B[jq]
+;W[js]
+;B[hs]
+;W[iq]C[liquescens [1k\]: ale jakby taki zywy trup
+sempai [-\]: bialy musi ignorowac nastepna grozbe
+Amadeusz [2d\]: r10
+tytuz [5k\]: gdzie czarny ma grozby jeszcze? d2 ?
+]
+;B[qj]C[Amadeusz [2d\]: r10 mi się podoba
+]
+;W[ri]
+;B[jq]C[sempai [-\]: o.O
+]
+;W[hp]
+;B[ks]
+;W[iq]C[sempai [-\]: aha, sprytnie
+]
+;B[lq]
+;W[jr]
+;B[lp]C[SadPlayer [-\]: f1 
+liquescens [1k\]: r3
+]
+;W[lo]
+;B[mo]
+;W[mq]C[dsdfsdf: kto wygrywa?
+liquescens [1k\]: czarny
+]
+;B[ko]C[liquescens [1k\]: m2
+Ber [1d\]: m2
+dsdfsdf: m2
+radzik23 [-\]: czarny zrobil sobie piekny teren w centrum
+]
+;W[lr]
+;B[ln]
+;W[kp]C[liquescens [1k\]: gote
+]
+;B[lo]
+;W[nr]C[liquescens [1k\]:  wolalbym czarnym wziac o2 niz m5 ?
+Mitxy19 [3k\]: isnt r14 group dead if b plays t12???
+liquescens [1k\]: l17 
+liquescens [1k\]: d2 tez duze
+liquescens [1k\]: gdzie mona wygenerowac jakies grozsby?
+LewyBut [1d\]: t12 only seki
+]
+;B[jm]
+;W[rm]C[romanp [-\]: t12 - s13
+]
+;B[ql]
+;W[sl]C[Prodigious [4d?\]: t12 and white can tenuki
+LewyBut [1d\]: right
+romanp [-\]: ah, OK :)
+]
+;B[kc]
+;W[jc]C[jyka [4k\]: b2 ko? 
+jyka [4k\]: d2
+radzik23 [-\]: dlaczego bialy nie zagral double hane?
+]
+;B[ld]
+;W[id]
+;B[kb]
+;W[qp]C[LMP2 [-\]: zapytac?
+villen [9k?\]: dlatego :)
+radzik23 [-\]: prosze :)
+LMP2 [-\]: :P
+Lothus [2d\]: tracaj siasia w ramie i pros o komentarze do ruchow
+jyka [4k\]: j13 big no ? 
+Lothus [2d\]: chyba zeby miec sente nie zagral
+Nilatarion [3d\]: no to siasio bedzie mistrzem lol;p
+Nilatarion [3d\]: a leszek spada z ligi;p
+Nilatarion [3d\]: co się dzieje;p
+Lothus [2d\]: a ja nie zdam kolokwium przez ogladanie tej gry
+Nilatarion [3d\]: tuli;p
+Lothus [2d\]: dla mnie to rownie istotna okolicznosc
+dwt3: fiszu ma piekna łososiową koszulę
+jyka [4k\]: j13
+SadPlayer [-\]: jeszcze studiujesz?
+Lothus [2d\]: pewnie
+Lothus [2d\]: bo zmienialam studia
+SadPlayer [-\]: czego się nie robi by nie iść do pracy :>
+Lothus [2d\]: no nie wiem wlasnie, bo nie mam juz motywacji
+radzik23 [-\]: pracy i tak nie ma
+]
+;B[or]C[Lothus [2d\]: masz kiepskich znajomych radzik
+radzik23 [-\]: dlatego wyjechalem
+Lothus [2d\]: i nadal masz kiepskich?
+Lothus [2d\]: teraz nie masz zadnych ;p
+lazarow [7k\]: ;/
+radzik23 [-\]: mam przyjaciol na KGS :P
+Lothus [2d\]: pare botów
+Lothus [2d\]: :)
+radzik23 [-\]: :)
+radzik23 [-\]: przywitalem sie na poliszu i nikt nie odpowiedzial
+Lothus [2d\]: mysle, ze w miare sensowna prace znajde, b. malo osob konczy moje studia
+Lothus [2d\]: od 2 do 5 na rok, 5 to urodzaj
+radzik23 [-\]: a co konczysz/zaczynasz?
+]
+;W[js]C[Lothus [2d\]: jestem na 1 roku magisterki z theoretical physics in english i 2 roku licencjatu z matmy
+LMP2 [-\]: Staś 12 min, Gie 7
+Lothus [2d\]: i tylko fizyke malo osob konczy, matme od cholery
+jyka [4k\]: j13 is big
+radzik23 [-\]: ja skonczylem politologie :)
+radzik23 [-\]: zapakowalem sie i wyjechalemn#
+Lothus [2d\]: no troche nieszczesliwy wybor :P
+sneke [-\]: na fizyce sieka jest :/
+]
+;B[ro]C[radzik23 [-\]: p6 ?:)
+]
+;W[qo]C[Lothus [2d\]: nie uwazam zeby byla sieka, jak sie na zajecia chodzi :p ja mam z tym male problemy
+sneke [-\]: zajęcia zajęciami ale kolokwia są na sporo wyższym  poziomie
+sneke [-\]: na zajęciach cię za wiele nie nauczą :P
+radzik23 [-\]: dla mnie Ci co koncza fizyke to nadludzie
+Lothus [2d\]: niby na UŚ jest ejden z najlepszych istututów w  kraju, ale nie uwazam zeby poziom był wysoki
+Lothus [2d\]: za granica pewnei to sieczkę robią
+radzik23 [-\]: za granica to pewnie by bylo ciekawiej i bys na zajecia chodzila
+Lothus [2d\]: w sumie jednak poziom jest wystarczjacy by zniechecic 90 % ludzi ktorzy przychodza na 1 rok
+]
+;B[qn]
+;W[rn]C[Lothus [2d\]: jak mam w poniedzialek wstawac na 3 h wykladu z kwantowej teorii pola to ja dziękuję, a pozniej 3 h cwiczen
+lazarow [7k\]: ;/
+sneke [-\]: na UW też niezły przesiew, ale sporo osób przychodzi żeby brać kasę (zamawiany kierunek)
+Lothus [2d\]: bede musiala wszystko sama teraz czytac :/
+Lothus [2d\]: u nas tylko matma zamawiana ( tez biore kase)
+]
+;B[so]
+;W[rp]C[Lothus [2d\]: a to ciekawy ruch
+Lothus [2d\]: ale nie dziala
+Nilatarion [3d\]: ^^
+]
+;B[qm]
+;W[sp]C[Mariusz [2k\]: Lothus są po Twoich studiach jakieś perspektywy na zatrudnienie i dobrą kasę?
+highdan: w sente :)
+Lothus [2d\]: to jest unikatowe wykształcenie wiec owszem jakieś są
+]
+;B[np]
+;W[jh]
+;B[kh]
+;W[jg]C[Lothus [2d\]: duzo zalezy od człowieka, niekoniecznie trzeba pracowac jako fizyk
+]
+;B[kf]C[radzik23 [-\]: o to tak ja politologii ;\]
+radzik23 [-\]: jak po politologii
+Lothus [2d\]: tylko ze po moich studiach umeisz zazwyczaj programwoac i znasz cala metodologie naukową
+]
+;W[kg]C[LMP2 [-\]: "programowac"
+Lothus [2d\]: wiec modelwoanie matematyczne, wszelka analiza danych 
+LMP2 [-\]: Tymczasem czarny w byo
+]
+;B[lg]C[Lothus [2d\]: obsulga programow specjalistycznych, masz doswiadczenia w pracy w laboratorium
+Lothus [2d\]: a to mi dowaliles lmp2 ;)
+]
+;W[ki]C[Lothus [2d\]: biedny gie
+Lothus [2d\]: wiele zalezy od tego czym sie zajmujesz, jak sie zajmujesz kosmologią to ciężko żebys uial cos praktycznego ^^
+]
+;B[jf]C[Lothus [2d\]: umiał *
+]
+;W[jj]
+;B[if]C[Lothus [2d\]: mozesz co najwyzej nobla dostac za bzdury, jak sie okazalo niedawno
+]
+;W[hf]
+;B[ig]
+;W[lh]
+;B[lf]
+;W[lj]C[radzik23 [-\]: poddalemy?
+Lothus [2d\]: i po gie
+celepa [?\]: gg siasio
+]
+;B[kk]
+;W[kj]C[paroxyzm [3k\]: było sobie centrum? 
+highdan: :)
+]
+;B[jk]
+;W[lk]
+;B[ll]C[Lothus [2d\]: nowy mistrz siasiek
+]
+;W[ck]
+;B[cg]C[radzik23 [-\]: n11 sente!!
+]
+;W[bg]C[radzik23 [-\]: ja nie wiem co ten czarny teraz gra jak takie duze ruchy do zagrania
+]
+;B[cj]
+;W[bj]
+;B[bk]
+;W[bl]
+;B[bi]
+;W[ak]C[Lothus [2d\]: e8?
+bartosz [-\]: a co z LD?
+]
+;B[bh]C[bartosz [-\]: nie bedzie próbował ko czarny?
+]
+;W[dg]
+;B[cf]C[Lothus [2d\]: i bez tego przegrywa
+]
+;W[bf]
+;B[ci]
+;W[dh]C[bartosz [-\]: tyle to ja wiem
+bartosz [-\]: ale nigdy się nie poddajemy i walczymy do końca
+]
+;B[nq]
+;W[mr]
+;B[mk]
+;W[pp]
+;B[oo]
+;W[sd]
+;B[rc]
+;W[fs]C[Lothus [2d\]: chyba poddal
+Lothus [2d\]: omg fisz na rozowo
+Lothus [2d\]: czy ja mam przewidzenia/
+LMP2 [-\]: Gie poddal
+highdan:  :)
+radzik23 [-\]: dziekujemy LMP2
+Lothus [2d\]: gratulacje siasiek!
+Bogdan13x [1k\]: Cześć Łukasz
+LMP2 [-\]: yoyo
+bartosz [-\]: Siasio \\o/
+radzik23 [-\]: mozesz sie dopytac o to double hane ?:)
+kida [?\]: gratulacje! o/
+Mariusz [2k\]: fajne mistrzostwa dzięki za organizację i transmije pozdrawiam
+Bogdan13x [1k\]: przyłańczam sie 
+]))

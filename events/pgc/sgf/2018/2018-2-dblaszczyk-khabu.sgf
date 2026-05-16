@@ -1,161 +1,311 @@
-(
-  ;BR[1k]CA[UTF-8]DT[2018-11-09]EV[Polish Go Championship 2018]FF[4]GM[1]GN[Round 2 - Board 1]KM[6.5]PB[Diana Błaszczyk]PC[Poznań]PW[Koichiro Habu]RE[W+R]RU[japanese]SZ[19]WR[5d]
-  ;B[pd]
-  ;W[dc]
-  ;B[pp]
-  ;W[dq]
-  ;B[co]
-  ;W[ep]
-  ;B[bq]
-  ;W[nq]
-  ;B[lq]
-  ;W[iq]
-  ;B[mp]
-  ;W[qq]
-  ;B[qp]
-  ;W[pq]
-  ;B[rq]
-  ;W[rr]
-  ;B[rp]
-  ;W[np]
-  ;B[no]
-  ;W[lr]
-  ;B[kr]
-  ;W[mr]
-  ;B[kq]
-  ;W[oo]
-  ;B[op]
-  ;W[on]
-  ;B[nn]
-  ;W[qn]
-  ;B[rn]
-  ;W[rm]
-  ;B[pn]
-  ;W[om]
-  ;B[sr]
-  ;W[rs]
-  ;B[or]
-  ;W[oq]
-  ;B[pr]
-  ;W[qr]
-  ;B[pm]
-  ;W[po]
-  ;B[qo]
-  ;W[pl]
-  ;B[qm]
-  ;W[ql]
-  ;B[qn]
-  ;W[rl]
-  ;B[ol]
-  ;W[nm]
-  ;B[mm]
-  ;W[nl]
-  ;B[ok]
-  ;W[nk]
-  ;B[so]
-  ;W[oj]
-  ;B[sq]
-  ;W[mo]
-  ;B[mn]
-  ;W[lo]
-  ;B[ip]
-  ;W[jp]
-  ;B[jq]
-  ;W[hq]
-  ;B[jo]
-  ;W[kn]
-  ;B[ll]
-  ;W[jn]
-  ;B[io]
-  ;W[jl]
-  ;B[lj]
-  ;W[ko]
-  ;B[kp]
-  ;W[dn]
-  ;B[gp]
-  ;W[gq]
-  ;B[fp]
-  ;W[fq]
-  ;B[fn]
-  ;W[cn]
-  ;B[bo]
-  ;W[cr]
-  ;B[bn]
-  ;W[cl]
-  ;B[bm]
-  ;W[fl]
-  ;B[do]
-  ;W[eo]
-  ;B[hm]
-  ;W[jj]
-  ;B[en]
-  ;W[dl]
-  ;B[br]
-  ;W[hp]
-  ;B[ho]
-  ;W[fo]
-  ;B[go]
-  ;W[gn]
-  ;B[hk]
-  ;W[gm]
-  ;B[im]
-  ;W[kl]
-  ;B[hi]
-  ;W[jh]
-  ;B[ki]
-  ;W[ij]
-  ;B[hj]
-  ;W[ih]
-  ;B[lg]
-  ;W[fh]
-  ;B[ps]
-  ;W[ls]
-  ;B[fk]
-  ;W[fj]
-  ;B[fi]
-  ;W[ei]
-  ;B[gh]
-  ;W[gg]
-  ;B[gj]
-  ;W[gi]
-  ;B[er]
-  ;W[eq]
-  ;B[fi]
-  ;W[od]
-  ;B[ej]
-  ;W[pe]
-  ;B[hh]
-  ;W[hg]
-  ;B[jf]
-  ;W[jg]
-  ;B[if]
-  ;W[lh]
-  ;B[mh]
-  ;W[kf]
-  ;B[kg]
-  ;W[kh]
-  ;B[ig]
-  ;W[mg]
-  ;B[lf]
-  ;W[ke]
-  ;B[le]
-  ;W[kd]
-  ;B[fg]
-  ;W[he]
-  ;B[hf]
-  ;W[gf]
-  ;B[ge]
-  ;W[ff]
-  ;B[fe]
-  ;W[ef]
-  ;B[ie]
-  ;W[ld]
-  ;B[me]
-  ;W[md]
-  ;B[ne]
-  ;W[oe]
-  ;B[ng]
-  ;W[hd]
-  ;B[id]
-  ;W[ic]
-)
+(;FF[4]
+GM[1]
+DT[2018-11-09]
+PC[OGS: http://online-go.com/game/review/352708]
+PB[Diana Błaszczyk]
+PW[Koichiro Habu]
+BR[1k]
+WR[5d]
+CP[online-go.com]
+TM[0]OT[0 none]
+RE[?]
+SZ[19]
+KM[6.5]
+RU[japanese]
+C[
+
+-- chat --
+LMP2018-1: Start 10:00
+Sadiker: Czemu Siasio nie wziął udziału w MP? Coś mówił?
+LMP2018-4: Z tego co wiem, jest w Chinach
+
+]
+
+;B[pd]C[
+
+-- chat --
+LMP2018-1: Zaczynamy.
+
+]
+
+;W[dc]
+;B[pp]
+;W[dq]
+;B[co]
+;W[ep]
+;B[bq]C[
+
+-- chat --
+Sadiker: d6
+
+]
+
+;W[nq]
+;B[lq]
+;W[iq]
+;B[mp]
+;W[qq]
+;B[qp]
+;W[pq]
+;B[rq]
+;W[rr]
+;B[rp]
+;W[np]
+;B[no]
+;W[lr]
+;B[kr]
+;W[mr]
+;B[kq]C[
+
+-- chat --
+Sadiker: nie lepiej k3?
+
+]
+
+;W[oo]
+;B[op]
+;W[on]
+;B[nn]
+;W[qn]
+;B[rn]
+;W[rm]
+;B[pn]
+;W[om]
+;B[sr]
+;W[rs]
+;B[or]
+;W[oq]
+;B[pr]
+;W[qr]
+;B[pm]
+;W[po]
+;B[qo]
+;W[pl]
+;B[qm]
+;W[ql]
+;B[qn]
+;W[rl]
+;B[ol]
+;W[nm]
+;B[mm]
+;W[nl]
+;B[ok]
+;W[nk]
+;B[so]
+;W[oj]
+;B[sq]
+;W[mo]
+;B[mn]
+;W[lo]
+;B[ip]
+;W[jp]
+;B[jq]
+;W[hq]C[
+
+-- chat --
+dead_robot: może nie chciał odpuścić marszu niepodległości
+dead_robot: kiepsko to wygląda dla czarnych
+
+]
+
+;B[jo]
+;W[kn]C[
+
+-- chat --
+ekrilat: nice
+dead_robot: depends on perspective
+
+]
+
+;B[ll]C[
+
+-- chat --
+ekrilat: K6?
+
+]
+
+;W[jn]
+;B[io]
+;W[jl]
+;B[lj]C[
+
+-- chat --
+S_Alexander: polish 1k is like 3d on ogs?
+S_Alexander: why not o1 q1?
+
+]
+
+;W[ko]
+;B[kp]
+;W[dn]
+;B[gp]
+;W[gq]C[
+
+-- chat --
+Sadiker: da sie róg zabić? Bo mi seki wychodzi
+
+]
+
+;B[fp]
+;W[fq]C[
+
+-- chat --
+Sadiker: bo n3 sente
+
+]
+
+;B[fn]
+;W[cn]
+;B[bo]
+;W[cr]
+;B[bn]
+;W[cl]
+;B[bm]
+;W[fl]
+;B[do]
+;W[eo]
+;B[hm]
+;W[jj]
+;B[en]
+;W[dl]C[
+
+-- chat --
+dead_robot: mówisz o tym na dolnej bandzie czy czarny po lewej?
+dead_robot: bo na dole to mnie nawet seki nie wychodzi...
+
+]
+
+;B[br]C[
+
+-- chat --
+dead_robot: inna sprawa, że czarny ma dwie grupy w centrum, z którymi coś będzie musiał począć
+ekrilat: now no chance J2?
+
+]
+
+;W[hp]
+;B[ho]
+;W[fo]
+;B[go]
+;W[gn]
+;B[hk]
+;W[gm]C[
+
+-- chat --
+ekrilat: G8
+ekrilat: oh, not working
+
+]
+
+;B[im]
+;W[kl]C[
+
+-- chat --
+LMP2018-1: Move 100, Black has 1h03m remaining, White 1h01m.
+
+]
+
+;B[hi]
+;W[jh]
+;B[ki]
+;W[ij]
+;B[hj]
+;W[ih]
+;B[lg]C[
+
+-- chat --
+ekrilat: G13?
+
+]
+
+;W[fh]
+;B[ps]
+;W[ls]C[
+
+-- chat --
+ekrilat: O1 and gg?
+
+]
+
+;B[fk]
+;W[fj]C[
+
+-- chat --
+Sadiker: o1, o2 seki
+
+]
+
+;B[fi]
+;W[ei]C[
+
+-- chat --
+ekrilat: oh, i see. Thanks
+
+]
+
+;B[gh]C[
+
+-- chat --
+S_Alexander: or, lol, sorry, i was in wrong position
+
+]
+
+;W[gg]
+;B[gj]
+;W[gi]
+;B[er]
+;W[eq]
+;B[fi]
+;W[od]
+;B[ej]
+;W[pe]
+;B[hh]
+;W[hg]
+;B[jf]
+;W[jg]
+;B[if]
+;W[lh]
+;B[mh]
+;W[kf]
+;B[kg]
+;W[kh]C[
+
+-- chat --
+ekrilat: N11?
+
+]
+
+(;B[mg]
+)(;B[ig]
+;W[mg]
+;B[lf]
+;W[ke]
+;B[le]
+;W[kd]
+;B[fg]
+;W[he]
+;B[hf]
+;W[gf]
+;B[ge]
+;W[ff]
+;B[fe]
+;W[ef]
+;B[ie]
+;W[ld]
+;B[me]
+;W[md]
+;B[ne]
+;W[oe]
+;B[ng]
+;W[hd]
+;B[id]
+;W[ic]C[
+
+-- chat --
+LMP2018-1: W+R
+ekrilat: wow
+ekrilat: meat grinder
+
+]
+
+))

@@ -1,220 +1,356 @@
-(
-  ;CA[UTF-8]DT[2016-01-07]EV[Polish Go Championship 2015]FF[4]GM[1]GN[Round 1 - Board 4]KM[6.50]PB[Mateusz Surma]PC[Warszawa]PW[Krzysztof Giedrojć]RE[B+R]RU[japanese]ST[2]SZ[19]BR[1p]WR[3d]
-  ;B[qd]
-  ;W[dd]
-  ;B[pq]
-  ;W[dp]
-  ;B[fc]
-  ;W[cf]
-  ;B[db]
-  ;W[gc]
-  ;B[gd]
-  ;W[hc]
-  ;B[fd]
-  ;W[kc]
-  ;B[cc]
-  ;W[cd]
-  ;B[fb]
-  ;W[ci]
-  ;B[nc]
-  ;W[qo]
-  ;B[qk]
-  ;W[no]
-  ;B[mq]
-  ;W[qq]
-  ;B[qr]
-  ;W[nq]
-  ;B[qp]
-  ;W[pp]
-  ;B[rq]
-  ;W[rp]
-  ;B[qq]
-  ;W[oq]
-  ;B[po]
-  ;W[pn]
-  ;B[op]
-  ;W[np]
-  ;B[qn]
-  ;W[qm]
-  ;B[ro]
-  ;W[rn]
-  ;B[on]
-  ;W[qo]
-  ;B[pm]
-  ;W[qn]
-  ;B[oo]
-  ;W[rk]
-  ;B[rl]
-  ;W[ql]
-  ;B[rj]
-  ;W[om]
-  ;B[nn]
-  ;W[pk]
-  ;B[qj]
-  ;W[lo]
-  ;B[fq]
-  ;W[hq]
-  ;B[cq]
-  ;W[cp]
-  ;B[dq]
-  ;W[ep]
-  ;B[fr]
-  ;W[go]
-  ;B[dj]
-  ;W[di]
-  ;B[ej]
-  ;W[bk]
-  ;B[sp]
-  ;W[pj]
-  ;B[pi]
-  ;W[nj]
-  ;B[oi]
-  ;W[lm]
-  ;B[hj]
-  ;W[nm]
-  ;B[mn]
-  ;W[mm]
-  ;B[ld]
-  ;W[je]
-  ;B[lc]
-  ;W[he]
-  ;B[hl]
-  ;W[qc]
-  ;B[pc]
-  ;W[rd]
-  ;B[rc]
-  ;W[qe]
-  ;B[pd]
-  ;W[sc]
-  ;B[rb]
-  ;W[rh]
-  ;B[qh]
-  ;W[qg]
-  ;B[rf]
-  ;W[ph]
-  ;B[qi]
-  ;W[og]
-  ;B[rg]
-  ;W[mh]
-  ;B[ng]
-  ;W[nh]
-  ;B[oh]
-  ;W[mf]
-  ;B[nf]
-  ;W[ne]
-  ;B[of]
-  ;W[oe]
-  ;B[me]
-  ;W[pf]
-  ;B[pg]
-  ;W[mg]
-  ;B[og]
-  ;W[le]
-  ;B[md]
-  ;W[gk]
-  ;B[gj]
-  ;W[fk]
-  ;B[hk]
-  ;W[fj]
-  ;B[fi]
-  ;W[fm]
-  ;B[if]
-  ;W[ei]
-  ;B[ie]
-  ;W[ih]
-  ;B[hh]
-  ;W[hg]
-  ;B[ig]
-  ;W[gh]
-  ;B[hi]
-  ;W[jh]
-  ;B[gg]
-  ;W[hf]
-  ;B[hd]
-  ;W[gf]
-  ;B[fg]
-  ;W[ff]
-  ;B[eg]
-  ;W[ef]
-  ;B[dg]
-  ;W[cg]
-  ;B[df]
-  ;W[ee]
-  ;B[gm]
-  ;W[gl]
-  ;B[in]
-  ;W[gn]
-  ;B[jl]
-  ;W[im]
-  ;B[hm]
-  ;W[jm]
-  ;B[hn]
-  ;W[jo]
-  ;B[ip]
-  ;W[io]
-  ;B[ho]
-  ;W[gp]
-  ;B[hp]
-  ;W[gq]
-  ;B[ke]
-  ;W[jd]
-  ;B[kf]
-  ;W[bq]
-  ;B[br]
-  ;W[bp]
-  ;B[ar]
-  ;W[gr]
-  ;B[jn]
-  ;W[kn]
-  ;B[jp]
-  ;W[kp]
-  ;B[kq]
-  ;W[kr]
-  ;B[lp]
-  ;W[ko]
-  ;B[jr]
-  ;W[mo]
-  ;B[mr]
-  ;W[id]
-  ;B[jf]
-  ;W[lb]
-  ;B[jb]
-  ;W[kb]
-  ;B[ia]
-  ;W[ds]
-  ;B[fs]
-  ;W[iq]
-  ;B[jq]
-  ;W[eq]
-  ;B[er]
-  ;W[cr]
-  ;B[dr]
-  ;W[bs]
-  ;B[cs]
-  ;W[ib]
-  ;B[ha]
-  ;W[cr]
-  ;B[ni]
-  ;W[mi]
-  ;B[cs]
-  ;W[de]
-  ;B[oj]
-  ;W[ok]
-  ;B[es]
-  ;W[fh]
-  ;B[mj]
-  ;W[lj]
-  ;B[nk]
-  ;W[mk]
-  ;B[nj]
-  ;W[lk]
-  ;B[kl]
-  ;W[kg]
-  ;B[lf]
-  ;W[ki]
-  ;B[ol]
-  ;W[pl]
-  ;B[nl]
-  ;W[jk]
-  ;B[jj]
-)
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[5400]OT[1x60 byo-yomi]
+GN[Krzysztof Giedrojć 3d (white) vs Mateusz Surma 1p (black)]PW[Krzysztof Giedrojć 3d]PB[Mateusz Surma 1p]DT[2016-01-07]PC[The KGS Go Server at http://www.gokgs.com/]C[Muttley [2k\]: Is this game including Surma?
+Muttley [2k\]: Surma Mateusz, 1p :)
+Bombil [3k?\]: surma vs who?
+PhoenixGT [?\]: If surma then Giedroyc
+LMP4 [-\]: yes - Surma vs Krzysztof Giedroic
+Muttley [2k\]: For those who don't know, Surma is European 1p
+bolbi [-\]: hello
+kmr [2d\]: zamiast pisac kazdemu kto spyta po prostu wypelnijcie imiona i nazwiska i rank w demo wszystkich :)
+Wizardry [4d\]: mind updating the display so we don't get asked that question 500 times?
+kmr [2d\]: i already said them :)
+PhoenixGT [?\]: Options -> rules
+Muttley [2k\]: yes,please enter the players names and ranks
+LMP4 [-\]: ok :)
+kmr [2d\]: no dzieki w imieniu wszystkich pytajacych :)
+bolbi [-\]: please write the name in the title of the game as well, it's for the androïd client's users
+]RE[B+Resign]
+;B[qd]
+;W[dd]C[kmr [2d\]: Jest prosba zeby wypelnic nazwe gry nazwiskami i imionami graczy (i rank w nawiasie)
+]
+;B[pq]C[kmr [2d\]: W will play ni ren sei
+LMP4 [-\]: tak - za moment to zrobię
+]
+;W[dp]
+;B[fc]C[rvf [-\]: Thanks LMP4
+]
+;W[cf]
+;B[db]
+;W[gc]
+;B[gd]
+;W[hc]
+;B[fd]
+;W[kc]
+;B[cc]
+;W[cd]
+;B[fb]
+;W[ci]C[miao [6d\]: white is losing already
+miao [6d\]: lol
+miao [6d\]: n17
+]
+;B[nc]
+;W[qo]C[miao [6d\]: surma slightly careful
+]
+;B[qk]C[Muttley [2k\]: p4 please
+]
+;W[no]
+;B[mq]C[Muttley [2k\]: I never understood how this joseki works for white
+Muttley [2k\]: it all looks like dame to me
+miao [6d\]: it is
+miao [6d\]: he needs to counter r9 pincer
+]
+;W[qq]
+;B[qr]C[akbnn: upper w heavy
+Muttley [2k\]: so why not press down and counter?
+akbnn: r9 huge,but w gets corner,upper w be thin
+miao [6d\]: hm
+miao [6d\]: good question
+Holub [1d\]: well ...i think we can expect b to take advantage from early stage of the game ...
+miao [6d\]: maybe if u wanna avoid a cut variation
+Muttley [2k\]: possibly
+Muttley [2k\]: but if you want to avoid cuts, don't  play go
+miao [6d\]: hehe :)
+Muttley [2k\]: ;-))
+miao [6d\]: corners are most dangerous though
+miao [6d\]: ^^
+]
+;W[nq]
+;B[qp]C[akbnn: q4 s3 n4?
+miao [6d\]: was wondering about this
+rvf [-\]: is this a known joseki?
+miao [6d\]: it is not joseki
+akbnn: I don't know komoku joseki
+Muttley [2k\]: its probably in Ishida, I bet
+miao [6d\]: it is not
+Muttley [2k\]: everything old is in Ishida
+miao [6d\]: i read all 3
+zima [1k\]: n4
+Muttley [2k\]: really :)
+miao [6d\]: yeah
+Muttley [2k\]: I'm surprised, its not a deep line to play to r
+Muttley [2k\]: r4
+miao [6d\]: but there is n4 sometimes after o5
+miao [6d\]: no alternative for 4
+miao [6d\]: i think
+zima [1k\]: it's joseki if b r8 instead r9
+akbnn: seems even trade
+Muttley [2k\]: well, its a better version then because its less severe on white
+miao [6d\]: is b r8 instead of r9 w will always p4
+]
+;W[pp]
+;B[rq]
+;W[rp]
+;B[qq]C[Muttley [2k\]: I saw this far but wondered what white's next move would be
+Muttley [2k\]: I guess you can still argue for n4
+akbnn: w get wall
+miao [6d\]: n4 is best i think
+Muttley [2k\]: nothing else makes any sense
+akbnn: ja n4
+miao [6d\]: :)
+]
+;W[oq]C[akbnn: hm
+Muttley [2k\]: noooo, I thought this but the shape is bad
+akbnn: q5?
+miao [6d\]: hm
+Muttley [2k\]: exactly
+miao [6d\]: maybe ok
+akbnn: p3 seems heavy shape
+]
+;B[po]C[akbnn: ?
+akbnn: w is 3d? no 3p???
+miao [6d\]: q6 only move
+]
+;W[pn]
+;B[op]
+;W[np]
+;B[qn]C[Muttley [2k\]: rather expensive kikashi
+Naphthalin [8k?\]: @akbnn: there are no 3p in EGF
+akbnn: hmm
+akbnn: thanks
+akbnn: q7?
+akbnn: q7 r7 r8
+]
+;W[qm]
+;B[ro]C[miao [6d\]: q7 p9
+]
+;W[rn]
+;B[on]
+;W[qo]
+;B[pm]
+;W[qn]
+;B[oo]C[Naphthalin [8k?\]: w q8?
+kmr [2d\]: N3 and R9 will be weakened, but O5 group will be very weak, i think unsatisfactionary result for white
+]
+;W[rk]
+;B[rl]
+;W[ql]
+;B[rj]
+;W[om]
+;B[nn]
+;W[pk]
+;B[qj]
+;W[lo]C[kmr [2d\]: hmm i thought he will choose Q8 instead of S9.Looks better than Q8, but still not enough imho
+]
+;B[fq]
+;W[hq]
+;B[cq]
+;W[cp]
+;B[dq]
+;W[ep]
+;B[fr]
+;W[go]C[gisel [-\]: d10 ?
+]
+;B[dj]
+;W[di]
+;B[ej]
+;W[bk]
+;B[sp]
+;W[pj]
+;B[pi]C[Ikra [3k\]: is it possible for B r11 ?
+papapishu [1d\]: for B ?
+Ikra [3k\]: yes
+papapishu [1d\]: yes its empty
+]
+;W[nj]
+;B[oi]C[Ikra [3k\]: now it is better ?
+Ikra [3k\]: for B ?
+kmr [2d\]: black almost 4 corners
+papapishu [1d\]: having 4 corners is the easiest way to lose
+]
+;W[lm]
+;B[hj]
+;W[nm]
+;B[mn]
+;W[mm]
+;B[ld]C[rvf [-\]: W needs points
+]
+;W[je]
+;B[lc]
+;W[he]
+;B[hl]
+;W[qc]C[papapishu [1d\]: or W needs erase points
+LMP4 [-\]: Krzysiek 0:43, Surma 1:08 time left
+Wizardry [4d\]: i think b will s16
+]
+;B[pc]
+;W[rd]
+;B[rc]
+;W[qe]
+;B[pd]
+;W[sc]
+;B[rb]C[papapishu [1d\]: cut
+]
+;W[rh]C[papapishu [1d\]: looks dead to me
+]
+;B[qh]
+;W[qg]
+(;B[pg])
+(;B[ni]
+;W[ph]
+;B[qi]C[SadPlayer [-\]: o13 ?
+kmr [2d\]: first S14 i think
+SadPlayer [-\]: s14 q14 
+papapishu [1d\]: Surma dzisiaj bez stroju narodowego (dresu). Co na to premier Szydło?
+])
+(;B[rf]
+;W[ph]
+;B[qi]
+;W[og]
+;B[rg]C[LMP4 [-\]: sorry my mistake
+LMP4 [-\]: Surma elegancko w garniturze - chyba nie wypada w polskich barwach wśród samych krajowych graczy
+LMP4 [-\]: Krzysiek 0:24, Mateusz 1:00
+]
+;W[mh]
+(;B[ll])
+(;B[ng]
+;W[nh]
+;B[oh]
+;W[mf]
+;B[nf]
+;W[ne]
+;B[of]
+;W[oe]
+;B[me]
+;W[pf]
+;B[pg]
+;W[mg]
+;B[og]C[SadPlayer [-\]: no to czas na wsiekły atak na h10 
+]
+;W[le]
+;B[md]
+;W[gk]
+;B[gj]
+;W[fk]
+;B[hk]
+;W[fj]
+;B[fi]C[SadPlayer [-\]: ja bym stchórzył i zamiast grać w n16 bym wzmocnił h10 :)
+]
+;W[fm]
+;B[if]C[Hipcio [1d\]: czarny żyje
+]
+;W[ei]
+;B[ie]C[PhoenixGT [?\]: chyba nie cały :)
+]
+;W[ih]
+;B[hh]
+;W[hg]
+;B[ig]
+;W[gh]
+;B[hi]
+;W[jh]
+;B[gg]
+;W[hf]
+;B[hd]
+;W[gf]
+;B[fg]
+;W[ff]
+;B[eg]
+;W[ef]
+;B[dg]
+;W[cg]
+;B[df]C[LMP4 [-\]: Giedrojć - only 1 minute left to byo yomi
+]
+;W[ee]
+;B[gm]C[LMP4 [-\]: są problemy z zegarem - nie działa głośniczek
+LMP4 [-\]: sędzia zmienia zegar
+LMP4 [-\]: some problems with clock - judge have to change equipment
+LMP4 [-\]: ok, back to play :)
+]
+;W[gl]
+;B[in]
+;W[gn]
+;B[jl]
+;W[im]
+;B[hm]
+;W[jm]
+;B[hn]
+;W[jo]
+;B[ip]
+;W[io]
+;B[ho]
+;W[gp]
+;B[hp]
+;W[gq]
+;B[ke]
+;W[jd]
+;B[kf]
+;W[bq]
+;B[br]
+;W[bp]
+;B[ar]
+;W[gr]
+;B[jn]
+;W[kn]
+;B[jp]
+;W[kp]
+;B[kq]
+;W[kr]
+;B[lp]
+;W[ko]
+;B[jr]
+;W[mo]
+;B[mr]C[Arhiman [3d\]: ko at d1 now ?
+Ikra [3k\]: ko in the down left conner ? 
+]
+;W[id]C[Arhiman [3d\]: yes d1 e2 c2 d2 b1 is ko
+Arhiman [3d\]: if there was a stone at f4, d1 would kill without ko
+Arhiman [3d\]: and if there was a second liberty at, I don't know... g3, then it's fully alive
+]
+;B[jf]
+;W[lb]
+;B[jb]
+;W[kb]
+;B[ia]
+;W[ds]
+;B[fs]
+;W[iq]
+;B[jq]
+;W[eq]
+;B[er]
+;W[cr]
+;B[dr]
+;W[bs]
+;B[cs]C[Arhiman [3d\]: even with this corner, b would still be up by 20 points, though
+]
+;W[ib]
+;B[ha]
+;W[cr]
+;B[ni]
+;W[mi]
+;B[cs]
+;W[de]
+;B[oj]
+;W[ok]
+;B[es]
+;W[fh]
+;B[mj]
+;W[lj]
+;B[nk]
+;W[mk]
+;B[nj]
+;W[lk]
+;B[kl]
+;W[kg]
+;B[lf]
+;W[ki]
+;B[ol]
+;W[pl]
+;B[nl]
+;W[jk]
+;B[jj]C[inte [?\]: death...
+LMP4 [-\]: Giedrojć resigns
+Arhiman [3d\]: thanks :)
+LMP4 [-\]: :)
+LMP4 [-\]: omawiają partię - czy coś się dało wykombinować w prawym górnym rogu
+])))

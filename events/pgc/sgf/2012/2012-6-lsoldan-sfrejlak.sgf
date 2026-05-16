@@ -1,229 +1,465 @@
-(
-  ;BR[5d]CA[UTF-8]DT[2012-12-02]EV[Polish Go Championship 2012]FF[4]GM[1]GN[Round 6 - Board 1]KM[6.50]PB[Leszek Sołdan]PC[Katowice]PW[Stanisław Frejlak]RE[W+T]RO[6]RU[japanese]ST[2]SZ[19]WR[4d]
-  ;B[pd]
-  ;W[dp]
-  ;B[qp]
-  ;W[dd]
-  ;B[fq]
-  ;W[dn]
-  ;B[kq]
-  ;W[pj]
-  ;B[op]
-  ;W[jc]
-  ;B[cf]
-  ;W[be]
-  ;B[fc]
-  ;W[ee]
-  ;B[db]
-  ;W[cj]
-  ;B[ej]
-  ;W[di]
-  ;B[cc]
-  ;W[ei]
-  ;B[bd]
-  ;W[bf]
-  ;B[gn]
-  ;W[rp]
-  ;B[qq]
-  ;W[ql]
-  ;B[qn]
-  ;W[in]
-  ;B[ip]
-  ;W[eq]
-  ;B[fp]
-  ;W[nc]
-  ;B[qh]
-  ;W[qf]
-  ;B[pf]
-  ;W[pe]
-  ;B[oe]
-  ;W[pg]
-  ;B[qe]
-  ;W[qg]
-  ;B[ob]
-  ;W[og]
-  ;B[ol]
-  ;W[il]
-  ;B[jm]
-  ;W[jl]
-  ;B[im]
-  ;W[hm]
-  ;B[hn]
-  ;W[km]
-  ;B[jn]
-  ;W[kn]
-  ;B[jo]
-  ;W[kl]
-  ;B[oj]
-  ;W[pi]
-  ;B[lc]
-  ;W[nb]
-  ;B[md]
-  ;W[lb]
-  ;B[oc]
-  ;W[nd]
-  ;B[ne]
-  ;W[kc]
-  ;B[pl]
-  ;W[fb]
-  ;B[gb]
-  ;W[gc]
-  ;B[eb]
-  ;W[fd]
-  ;B[fa]
-  ;W[qm]
-  ;B[pn]
-  ;W[pk]
-  ;B[fl]
-  ;W[fr]
-  ;B[gr]
-  ;W[er]
-  ;B[dm]
-  ;W[cm]
-  ;B[ok]
-  ;W[me]
-  ;B[mf]
-  ;W[le]
-  ;B[lf]
-  ;W[ke]
-  ;B[kf]
-  ;W[hj]
-  ;B[je]
-  ;W[mc]
-  ;B[gi]
-  ;W[gj]
-  ;B[fj]
-  ;W[fi]
-  ;B[hi]
-  ;W[ii]
-  ;B[ih]
-  ;W[jh]
-  ;B[ij]
-  ;W[ji]
-  ;B[hk]
-  ;W[jj]
-  ;B[gk]
-  ;W[ig]
-  ;B[if]
-  ;W[hh]
-  ;B[gh]
-  ;W[gg]
-  ;B[hf]
-  ;W[hg]
-  ;B[cl]
-  ;W[dl]
-  ;B[em]
-  ;W[cn]
-  ;B[dk]
-  ;W[bl]
-  ;B[ck]
-  ;W[bk]
-  ;B[lo]
-  ;W[re]
-  ;B[rd]
-  ;W[sf]
-  ;B[rn]
-  ;W[rc]
-  ;B[sd]
-  ;W[qc]
-  ;B[qd]
-  ;W[pb]
-  ;B[ng]
-  ;W[oa]
-  ;B[sl]
-  ;W[rk]
-  ;B[mm]
-  ;W[hc]
-  ;B[ni]
-  ;W[gs]
-  ;B[hr]
-  ;W[hs]
-  ;B[is]
-  ;W[fs]
-  ;B[ir]
-  ;W[ml]
-  ;B[mk]
-  ;W[lk]
-  ;B[mj]
-  ;W[ko]
-  ;B[kp]
-  ;W[nm]
-  ;B[mn]
-  ;W[nl]
-  ;B[sk]
-  ;W[sj]
-  ;B[rj]
-  ;W[si]
-  ;B[ri]
-  ;W[sh]
-  ;B[rm]
-  ;W[rh]
-  ;B[fh]
-  ;W[eg]
-  ;B[fg]
-  ;W[ff]
-  ;B[eh]
-  ;W[dh]
-  ;B[dj]
-  ;W[cg]
-  ;B[cd]
-  ;W[ce]
-  ;B[nn]
-  ;W[hb]
-  ;B[hl]
-  ;W[en]
-  ;B[fn]
-  ;W[om]
-  ;B[pm]
-  ;W[on]
-  ;B[oo]
-  ;W[li]
-  ;B[lj]
-  ;W[kj]
-  ;B[lh]
-  ;W[kh]
-  ;B[oh]
-  ;W[ph]
-  ;B[lg]
-  ;W[ik]
-  ;B[id]
-  ;W[hj]
-  ;B[gj]
-  ;W[ic]
-  ;B[sc]
-  ;W[of]
-  ;B[nf]
-  ;W[qb]
-  ;B[sb]
-  ;W[od]
-  ;B[pc]
-  ;W[pe]
-  ;B[na]
-  ;W[ma]
-  ;B[pf]
-  ;W[fm]
-  ;B[gm]
-  ;W[pe]
-  ;B[pa]
-  ;W[qa]
-  ;B[pf]
-  ;W[jg]
-  ;B[jf]
-  ;W[pe]
-  ;B[ra]
-  ;W[na]
-  ;B[pf]
-  ;W[ln]
-  ;B[mo]
-  ;W[pe]
-  ;B[rf]
-  ;W[pf]
-  ;B[se]
-  ;W[rg]
-  ;B[rb]
-  ;W[pa]
-  ;B[sg]
-  ;W[mh]
-  ;B[rl]
-  ;W[sf]
-)
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[5400]OT[1x60 byo-yomi]
+GN[Polish Go Championship League]PW[Stanisław Frejlak]PB[Leszek Sołdan]WR[4d]BR[5d]DT[2012-12-02]RO[6]PC[The KGS Go Server at http://www.gokgs.com/]C[LMP1 [-\]: we will be starting soon
+LMP1 [-\]: video stream is at http://ustre.am/RhBr
+]RE[W+Time]
+;B[pd]
+;W[dp]
+;B[qp]
+;W[dd]
+;B[fq]
+;W[dn]
+;B[kq]
+;W[pj]
+;B[op]
+;W[jc]
+;B[cf]
+;W[be]
+;B[fc]
+;W[ee]
+;B[db]
+;W[cj]
+;B[ej]
+;W[di]
+;B[cc]
+;W[ei]
+;B[bd]
+;W[bf]C[SadPlayer [-\]: w książce "graj jak shodan" udowadniają że q10 złe jest
+]
+;B[gn]
+;W[rp]
+;B[qq]
+;W[ql]
+;B[qn]
+;W[in]
+;B[ip]
+;W[eq]
+;B[fp]C[liquescens [1k\]: ale to nie shodan
+]
+;W[nc]C[LMP1 [-\]: lepiej żeby nie gral jak shodan
+]
+;B[qh]
+;W[qf]
+;B[pf]
+;W[pe]
+;B[oe]C[LMP1 [-\]: "bez sensu" powiedział Siasio
+liquescens [1k\]: ze leszek?
+LMP1 [-\]: nie wiem co lub kogo miał na myśli :)
+liquescens [1k\]: po r15 r16 ?
+]
+;W[pg]
+;B[qe]
+;W[qg]
+;B[ob]
+;W[og]
+;B[ol]
+;W[il]
+;B[jm]
+;W[jl]
+;B[im]
+;W[hm]
+;B[hn]
+;W[km]
+;B[jn]
+;W[kn]
+;B[jo]
+;W[kl]
+;B[oj]
+;W[pi]
+;B[lc]
+;W[nb]
+;B[md]C[Cezary [-\]: W sumie jak jest tu was tak duzo wszystkich
+Cezary [-\]: to zapraszam do klubu go w gdansku w kazda sobote o 15
+Cezary [-\]: sala 245ea wydzial eti polibudy
+SadPlayer [-\]: trochę daleko :/
+]
+;W[lb]
+;B[oc]
+;W[nd]
+;B[ne]
+;W[kc]
+;B[pl]
+;W[fb]
+;B[gb]
+;W[gc]
+;B[eb]C[SadPlayer [-\]: e2 ?
+]
+;W[fd]
+;B[fa]C[SadPlayer [-\]: bo takie c3 może być bolesne
+celepa [?\]: siasio dobrze konbinuje
+celepa [?\]: wezmie cale centrum!
+SadPlayer [-\]: nie da sie
+SadPlayer [-\]: s7 też duże
+jnnkn: o10?
+SadPlayer [-\]: n15 może?
+LMP4 [-\]: lub m14?
+barty [2d\]: m4 bym wyplacil na poczatek
+barty [2d\]: a potem moze wlasnie s7
+kmr [1k\]: najlepiej m14 i s7 naraz
+barty [2d\]: jest szansa ze b edzie to sente
+barty [2d\]: i na koniec e2
+]
+;W[qm]
+;B[pn]C[kmr [1k\]: albo kombinacje p14 -q15-q14-p16 i od razu prawie cale centrum bialych....
+]
+;W[pk]
+;B[fl]
+;W[fr]
+;B[gr]
+;W[er]
+;B[dm]
+;W[cm]
+;B[ok]
+;W[me]
+;B[mf]
+;W[le]
+;B[lf]
+;W[ke]
+;B[kf]C[celepa [?\]: hmm
+celepa [?\]: tnij siasio! ;)
+SadPlayer [-\]: tnij i niech rozpocznie sie starcie tytanów
+Cezary [-\]: chyba takie ciecie bardzo niebezpieczne
+Cezary [-\]: ale czego sie nie robi dla kibicow
+romanp [-\]: ale co to cięcie ma dać? do tego czarne k15 jest dość bolesne
+Cezary [-\]: no widzicie
+Cezary [-\]: irlandzki mistrz sie odezwal
+Cezary [-\]: przemowil
+Cezary [-\]: i to jest prawda.
+barty [2d\]: l8 teraz zagrozone
+highdan: Biały wygrywa teraz na grunty, ale los grupy K8 bedzie decydował
+romanp [-\]: tymczasem białe kamienie L8 wyglądają jakoś samotnie, z czarnymi dookoła
+highdan: he, he Panie Romanie piątka !!
+LMP1 [-\]: White has 10 minutes left
+]
+;W[hj]C[highdan: no i słuchajcie madrzejszych i ładniejszych :))
+]
+;B[je]
+;W[mc]C[Cezary [-\]: i google translate : p
+highdan: :)
+]
+;B[gi]C[highdan: tengen Mistrzu!
+celepa [?\]: nie bylo mnie. po cieciu r17(a le nie liczylem)
+highdan: to cięcie za jakis czas będzie dopiero straszyło
+]
+;W[gj]
+;B[fj]
+;W[fi]
+;B[hi]
+;W[ii]
+;B[ih]
+;W[jh]
+;B[ij]
+;W[ji]
+;B[hk]
+;W[jj]
+;B[gk]
+;W[ig]C[highdan: i teraz
+]
+;B[if]
+;W[hh]
+;B[gh]
+;W[gg]
+;B[hf]
+;W[hg]
+;B[cl]
+;W[dl]
+;B[em]C[LMP1 [-\]: White in byo
+]
+;W[cn]
+;B[dk]
+;W[bl]
+;B[ck]
+;W[bk]C[highdan: S6
+]
+;B[lo]
+;W[re]
+;B[rd]C[SadPlayer [-\]: a jakby teraz ciąć?
+celepa [?\]: h16
+]
+;W[sf]C[highdan: G16 praktrycznie łączy ((
+celepa [?\]: h17, misstell
+]
+;B[rn]C[highdan: też
+]
+;W[rc]
+;B[sd]C[SadPlayer [-\]: no to czas wszystko zabic :)
+highdan: widzę ko :))
+]
+;W[qc]
+;B[qd]C[SadPlayer [-\]: gdzie?
+SadPlayer [-\]: teraz o14 ?
+celepa [?\]: tak
+]
+;W[pb]C[celepa [?\]: choc wtedy Leszek r19
+celepa [?\]: r18*
+celepa [?\]: jest ok
+SadPlayer [-\]: na h17 chyba działa j16 
+barty [2d\]: widze ze siasio nie zdarzyl zagrac juz m4
+barty [2d\]: :/
+Javaness [2d\]: how did a 2kyu get into the championship league
+LMP1 [-\]: bribe
+Javaness [2d\]: good
+ikken [?\]: :D:D
+LMP1 [-\]: we really should have a law against that
+Javaness [2d\]: how did mateusz surma get removed from the league? bribe?
+]
+;B[ng]
+;W[oa]C[LMP1 [-\]: how else
+LMP1 [-\]: he's in Korea afaik
+]
+;B[sl]
+;W[rk]
+;B[mm]C[Pinguschaf [?\]: if white makes no bigger mistake, he should win now
+]
+;W[hc]C[Pinguschaf [?\]: hmm h17 is small
+Pinguschaf [?\]: better to play f12
+Pinguschaf [?\]: and white should play sente yose like g1 first, too
+LMP1 [-\]: was that mistake big enough?
+Pinguschaf [?\]: hmm im not sure
+Pinguschaf [?\]: its siasio, so probably he plans to attack whole upper right group still :)
+celepa [?\]: yes
+Pinguschaf [?\]: but personally I would just go for the points and close the game
+LMP1 [-\]: no doubt about it
+Pinguschaf [?\]: when I know that im ahead
+celepa [?\]: true
+Pinguschaf [?\]: upper right connection was extremely big
+celepa [?\]: yeah, game changing
+Pinguschaf [?\]: Leszek chickened there
+LMP1 [-\]: Leszek is looking at the top group intensely
+tzji [5k\]: is there a better move than o12?
+LMP1 [-\]: he knows what's up too
+]
+;B[ni]
+;W[gs]
+;B[hr]
+;W[hs]
+;B[is]
+;W[fs]
+;B[ir]
+;W[ml]
+;B[mk]
+;W[lk]
+;B[mj]
+;W[ko]
+;B[kp]
+;W[nm]C[TheThe [7k\]: c3 
+Pinguschaf [?\]: common f12 is so big
+celepa [?\]: :)
+]
+;B[mn]
+;W[nl]
+;B[sk]
+;W[sj]C[highdan: Sołdan igra ze smiercią ...
+Pinguschaf [?\]: I wonder
+Pinguschaf [?\]: if Leszek still thinks that he is ahead
+celepa [?\]: he thinks if he can kill this group ;)
+]
+;B[rj]C[Pinguschaf [?\]: i see
+]
+;W[si]C[Pinguschaf [?\]: i think w could have played just t7
+Pinguschaf [?\]: without any problems
+celepa [?\]: W is in byo I guess
+]
+;B[ri]
+;W[sh]
+;B[rm]C[Pinguschaf [?\]: aslong white doesnt die here, everything should be fine 
+romanp [-\]: so... can white play O6?
+LMP1 [-\]: yes, white in byo
+Pinguschaf [?\]: o6 is a legal move, so yes he can
+romanp [-\]: haha
+celepa [?\]: :)
+]
+;W[rh]C[Pinguschaf [?\]: looks like siasio did a better job at tricking in opponent´s territory
+]
+;B[fh]
+;W[eg]
+;B[fg]
+;W[ff]C[celepa [?\]: wow
+celepa [?\]: f12 for black! ;)
+Pinguschaf [?\]: its working?
+Pinguschaf [?\]: ah u mean f12
+]
+;B[eh]C[celepa [?\]: dunno, jast came back to the computer, is siasio still winning?
+]
+;W[dh]C[Stachu: Who is winnig in this situation? (I cant play go, im only a friend of siasio)
+lttmoon [3k\]: g14
+]
+;B[dj]C[Pinguschaf [?\]: siasio is going his way to be polish champion :)
+]
+;W[cg]C[Stachu: Yay :)
+romanp [-\]: welll... k13 is white's sente so g14 not that good maybe
+Pinguschaf [?\]: yes g14 just loses points
+Pinguschaf [?\]: but game is pretty much finished
+romanp [-\]: better to reduce the space and force white to connect
+Pinguschaf [?\]: there should be no way to turn the game now
+]
+;B[cd]C[lttmoon [3k\]: g14 does not mean to kill w
+Pinguschaf [?\]: except for missing ataris and stuff
+]
+;W[ce]C[tffffgdrty: who is winning?
+Pinguschaf [?\]: white
+]
+;B[nn]C[highdan: ((
+Pinguschaf [?\]: :))))))
+highdan: ))
+Pinguschaf [?\]: t17 and h18 are big
+]
+;W[hb]C[SadPlayer [-\]: jak Sasio wygra to ma mistrza czy nie?
+celepa [?\]: nie wiem
+romanp [-\]: najbezpieczniej jest wygrać wszystkie :)
+celepa [?\]: czekaj, chyba ma
+LMP1 [-\]: gra z gir bedzie decydowala chyba
+SadPlayer [-\]: no chyba, ze z Gie przegra to moze Gie zostanie mistrzem
+LMP1 [-\]: *gie
+celepa [?\]: racja
+Uberdude [5d?\]: go siasio!
+]
+;B[hl]C[Bogdan13x [1k\]: bedzie dzs tv
+LMP1 [-\]: jest
+oonicks [?\]: black has a nice thoughtfull style
+]
+;W[en]
+;B[fn]C[rteat: jak siasio wygra z sołdanem ale przegra z gie to gie mistrzem
+Bogdan13x [1k\]: mozecie podac linka
+lttmoon [3k\]: k13 for black, can be intersting
+Pinguschaf [?\]: t17
+]
+;W[om]
+;B[pm]
+;W[on]
+;B[oo]
+;W[li]C[rteat: siasio wydaje sie zdenerwowany
+]
+;B[lj]
+;W[kj]C[SadPlayer [-\]: na tyle, ze przestał mówic do siebie w trakcie gry:> ?
+paroxyzm [3k\]: cz wygrywa na punkty?
+]
+;B[lh]
+;W[kh]C[SadPlayer [-\]: a moze by tak t17 ?
+celepa [?\]: seems like a close game
+]
+;B[oh]C[celepa [?\]: if B will play t17
+]
+;W[ph]
+;B[lg]C[oonicks [?\]: jak cz wygrywa na punkti ;)
+]
+;W[ik]C[paroxyzm [3k\]: wyglądają jak ojciec z synem w tych bluzach
+]
+;B[id]C[Bogdan13x [1k\]: hehe
+]
+;W[hj]
+;B[gj]C[Bogdan13x [1k\]: a syn chyba w wieku  Siasia
+]
+;W[ic]C[Stachu: Młodszy
+Stachu: dwa lata
+Bogdan13x [1k\]: aha
+LMP1 [-\]: cz w byo
+SadPlayer [-\]: mi wyszło 2,5 dla bialego
+]
+;B[sc]C[celepa [?\]: jak cz wezmie t17?
+SadPlayer [-\]: nie:P
+romanp [-\]: t18
+]
+;W[of]C[celepa [?\]: t18?
+celepa [?\]: oh, nice
+]
+;B[nf]
+;W[qb]C[Bogdan13x [1k\]: czarny ma grozby w centrum
+celepa [?\]: clever
+dwt3: wszedzie paski, myslalem, ze goisci bedsa uwielbiac krate
+paroxyzm [3k\]: przyszedl prawdziwy ojciec chyba
+SadPlayer [-\]: czemu nie s18 ?
+]
+;B[sb]
+;W[od]C[celepa [?\]: bo teraz ko
+dwt3: Tu w Olsztynie, tez paski nosimy
+]
+;B[pc]C[highdan: a nie mówiłem ?))
+paroxyzm [3k\]: duże ko
+SadPlayer [-\]: tylko o grę:>
+celepa [?\]: leszek nie ma grozb wg mnie
+]
+;W[pe]C[Pinguschaf [?\]: I dont like siasio´s decision
+]
+;B[na]C[Pinguschaf [?\]: it would have been easier to just take points
+celepa [?\]: yep
+Pinguschaf [?\]: for example m11 was nothing
+]
+;W[ma]C[Pinguschaf [?\]: he had time to play t17 and just finish the game
+]
+;B[pf]
+;W[fm]
+;B[gm]C[tffffgdrty: what for was f7?
+]
+;W[pe]
+;B[pa]
+;W[qa]
+;B[pf]C[clement44 [-\]: K13
+]
+;W[jg]
+;B[jf]
+;W[pe]
+;B[ra]
+;W[na]
+;B[pf]C[clement44 [-\]: N5?
+]
+;W[ln]
+;B[mo]C[Bogdan13x [1k\]: 16 A ?
+]
+;W[pe]C[rteat: biały bez gróźb
+romanp [-\]: n5 - m6 and white would lost points - not good idea to loose points in ko threats
+]
+;B[rf]C[celepa [?\]: lol?
+celepa [?\]: oh, another ko
+]
+;W[pf]C[SadPlayer [-\]: w n12 ma jeszcze groźbe
+ranyee [3k\]: should w answer?
+romanp [-\]: :D
+]
+;B[se]C[alvar [3k\]: ???
+]
+;W[rg]C[celepa [?\]: another ko
+Pinguschaf [?\]: that was strange
+alvar [3k\]: ok
+SadPlayer [-\]: i w q19 :)
+]
+;B[rb]C[Pinguschaf [?\]: he loses points by changing to this ko
+SadPlayer [-\]: heh, zauważył:P
+Bogdan13x [1k\]: to teraz moze przegrac
+Stachu: kto?
+Bogdan13x [1k\]: teraz Siasio ma ko o partię
+]
+;W[pa]
+;B[sg]C[woodpecker [1k?\]: wcześniej też miał :P
+ranyee [3k\]: now w can die?
+celepa [?\]: no
+]
+;W[mh]C[marmez [?\]: ładny emocjonujący koniec, taki sasiowy :)
+Nexik [1k\]: e8 is enough?
+woodpecker [1k?\]: obaj w byo?
+LMP1 [-\]: tak
+romanp [-\]: another ko?
+celepa [?\]: :)
+]
+;B[rl]C[jyka [4k\]: what ? 
+alvar [3k\]: pomylil kolejnosc?|
+asasa: b fail
+highdan: O12
+oonicks [?\]: w eply or die
+]
+;W[sf]C[oonicks [?\]: or ko:/
+SadPlayer [-\]: m19 
+SadPlayer [-\]: badabum, co za emocje
+highdan: potem ma zapasie O12
+asasa: m19
+celepa [?\]: kazda grozbe olewa
+LMP1 [-\]: W+T
+romanp [-\]: m19 is loosing points for B, as otherwise he has L16 to play
+StrLov [4k\]: :)
+celepa [?\]: gz siasio
+LewyBut [1d\]: lol
+woodpecker [1k?\]: no to mamy nowego Mistrza?
+paroxyzm [3k\]: Słaby koniec
+gimlix [1k?\]: nie
+romanp [-\]: buu
+])

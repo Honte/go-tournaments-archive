@@ -1,223 +1,497 @@
-(
-  ;BR[3d]CA[UTF-8]DT[2021-02-20]EV[Polish Go Championship 2020]FF[4]GM[1]GN[Round 4 - Board 1]KM[6.5]PB[Karol Cieślak]PC[Warszawa / Poznań / Online]PW[Dawid Jurkiewicz]RE[W+R]RU[japanese]SZ[19]WR[3d]
-  ;B[pd]
-  ;W[dp]
-  ;B[dc]
-  ;W[pp]
-  ;B[cf]
-  ;W[dd]
-  ;B[cd]
-  ;W[ec]
-  ;B[de]
-  ;W[ed]
-  ;B[db]
-  ;W[ee]
-  ;B[ef]
-  ;W[ff]
-  ;B[eg]
-  ;W[fg]
-  ;B[eh]
-  ;W[cc]
-  ;B[eb]
-  ;W[gc]
-  ;B[fb]
-  ;W[gb]
-  ;B[nc]
-  ;W[bd]
-  ;B[ce]
-  ;W[bb]
-  ;B[cb]
-  ;W[bc]
-  ;B[ba]
-  ;W[ca]
-  ;B[da]
-  ;W[be]
-  ;B[bf]
-  ;W[ab]
-  ;B[fa]
-  ;W[fc]
-  ;B[ae]
-  ;W[ad]
-  ;B[af]
-  ;W[cn]
-  ;B[ib]
-  ;W[hb]
-  ;B[ic]
-  ;W[fh]
-  ;B[ei]
-  ;W[fi]
-  ;B[cl]
-  ;W[dk]
-  ;B[ck]
-  ;W[dj]
-  ;B[cj]
-  ;W[di]
-  ;B[ci]
-  ;W[dh]
-  ;B[ej]
-  ;W[dl]
-  ;B[fj]
-  ;W[gj]
-  ;B[gk]
-  ;W[hj]
-  ;B[dm]
-  ;W[fl]
-  ;B[cm]
-  ;W[fk]
-  ;B[hk]
-  ;W[dg]
-  ;B[bh]
-  ;W[df]
-  ;B[nq]
-  ;W[oq]
-  ;B[np]
-  ;W[qn]
-  ;B[jq]
-  ;W[dn]
-  ;B[dr]
-  ;W[dq]
-  ;B[er]
-  ;W[cr]
-  ;B[br]
-  ;W[cq]
-  ;B[gq]
-  ;W[qf]
-  ;B[pf]
-  ;W[pg]
-  ;B[of]
-  ;W[re]
-  ;B[rc]
-  ;W[qd]
-  ;B[qc]
-  ;W[og]
-  ;B[nf]
-  ;W[pk]
-  ;B[qh]
-  ;W[qg]
-  ;B[pj]
-  ;W[oj]
-  ;B[oi]
-  ;W[pi]
-  ;B[qj]
-  ;W[qk]
-  ;B[ph]
-  ;W[oh]
-  ;B[ni]
-  ;W[rj]
-  ;B[qi]
-  ;W[rh]
-  ;B[ri]
-  ;W[si]
-  ;B[pi]
-  ;W[rl]
-  ;B[mk]
-  ;W[jd]
-  ;B[id]
-  ;W[je]
-  ;B[kc]
-  ;W[ds]
-  ;B[po]
-  ;W[oo]
-  ;B[qo]
-  ;W[pn]
-  ;B[qp]
-  ;W[op]
-  ;B[pr]
-  ;W[qq]
-  ;B[or]
-  ;W[qr]
-  ;B[no]
-  ;W[nn]
-  ;B[mn]
-  ;W[ip]
-  ;B[ho]
-  ;W[io]
-  ;B[hn]
-  ;W[lo]
-  ;B[lq]
-  ;W[hq]
-  ;B[gr]
-  ;W[in]
-  ;B[hm]
-  ;W[jl]
-  ;B[ik]
-  ;W[jk]
-  ;B[ij]
-  ;W[ll]
-  ;B[ml]
-  ;W[lm]
-  ;B[ln]
-  ;W[kn]
-  ;B[mm]
-  ;W[kp]
-  ;B[lk]
-  ;W[kq]
-  ;B[kr]
-  ;W[lr]
-  ;B[mr]
-  ;W[jr]
-  ;B[ls]
-  ;W[ir]
-  ;B[if]
-  ;W[mg]
-  ;B[jf]
-  ;W[mi]
-  ;B[nj]
-  ;W[gp]
-  ;B[pq]
-  ;W[on]
-  ;B[rr]
-  ;W[rq]
-  ;B[qs]
-  ;W[sr]
-  ;B[rs]
-  ;W[ro]
-  ;B[fn]
-  ;W[ki]
-  ;B[ok]
-  ;W[fp]
-  ;B[bn]
-  ;W[bo]
-  ;B[bm]
-  ;W[mf]
-  ;B[rg]
-  ;W[sh]
-  ;B[le]
-  ;W[me]
-  ;B[ld]
-  ;W[ol]
-  ;B[mj]
-  ;W[kf]
-  ;B[ke]
-  ;W[ia]
-  ;B[ja]
-  ;W[ha]
-  ;B[jc]
-  ;W[nl]
-  ;B[jj]
-  ;W[kg]
-  ;B[kj]
-  ;W[ao]
-  ;B[rd]
-  ;W[qe]
-  ;B[od]
-  ;W[md]
-  ;B[mc]
-  ;W[li]
-  ;B[hi]
-  ;W[gi]
-  ;B[ng]
-  ;W[nh]
-  ;B[hh]
-  ;W[he]
-  ;B[ie]
-  ;W[hf]
-  ;B[hd]
-  ;W[gd]
-  ;B[jh]
-  ;W[eo]
-  ;B[lf]
-  ;W[hg]
-  ;B[lp]
-  ;W[il]
-)
+(;FF[4]
+CA[UTF-8]
+GM[1]
+DT[2021-02-20]
+PC[OGS: https://online-go.com/game/31288577]
+GN[MP r4 ]
+PB[karolkac04]
+PW[deejay]
+BR[?]
+WR[1d]
+TM[5400]OT[3x60 byo-yomi]
+RE[W+R]
+SZ[19]
+KM[6.5]
+RU[Japanese]
+C[deejay: cześć miłej gry
+]
+;B[pd]
+C[deejay: cześć miłej gry
+]
+(;W[dp]
+(;B[dc]
+(;W[pp]
+(;B[cf]
+(;W[dd]
+(;B[cd]
+(;W[ec]
+(;B[de]
+(;W[ed]
+(;B[db]
+(;W[ee]
+(;B[ef]
+(;W[ff]
+(;B[eg]
+(;W[fg]
+(;B[eh]
+(;W[cc]
+(;B[eb]
+(;W[gc]
+(;B[fb]
+(;W[gb]
+(;B[nc]
+(;W[bd]
+(;B[ce]
+(;W[bb]
+(;B[cb]
+(;W[bc]
+(;B[ba]
+(;W[ca]
+(;B[da]
+(;W[be]
+(;B[bf]
+(;W[ab]
+(;B[fa]
+(;W[fc]
+(;B[ae]
+(;W[ad]
+(;B[af]
+(;W[cn]
+(;B[ib]
+(;W[hb]
+(;B[ic]
+(;W[fh]
+(;B[ei]
+(;W[fi]
+(;B[cl]
+(;W[dk]
+(;B[ck]
+(;W[dj]
+(;B[cj]
+(;W[di]
+(;B[ci]
+(;W[dh]
+(;B[ej]
+(;W[dl]
+(;B[fj]
+C[karolkac04: wężykiem wężykiem
+]
+(;W[gj]
+(;B[gk]
+C[Cezary: mozna tak sobie gadac :) ?
+]
+(;W[hj]
+(;B[dm]
+(;W[fl]
+(;B[cm]
+C[yakcyll: Nie mamy reguł przeciw gadaniu, wyłącznie przeciw przeszkadzaniu graczom
+]
+(;W[fk]
+(;B[hk]
+C[yakcyll: Tak długo, jak nie spamują, to nie ma problemu, przeciwnik może też zgłosić do nas, to ograniczymy.
+yakcyll: KaC w ogóle w dobrym humorze, my tu mamy jesień średniowiecza, a ten z bananem na twarzy
+]
+(;W[dg]
+C[Mrrr: jesien sredniowiecza?
+yakcyll: Dużo problemów technicznych z komunikacją i internetem
+yakcyll: Higaki i shin0e musieli zacząć od nowa
+Mrrr: brzmi raczej jak jesien nowoczesnosci ;)
+yakcyll: Racja w sumie
+yakcyll: Teraz Koksik nie może się skupić
+yakcyll: Będę mu refundował bilet do domu w tym tempie
+]
+(;B[bh]
+C[Mrrr: fajnie, ze tamta gre rozpoczeto od nowa, bo bylby niesmak gdyby jakos literalnie podejsc do sytuacji
+Cezary: czemu koksik nie moze sie skupic ?
+]
+(;W[df]
+C[Cezary: w ogole mozna na ogs zablokowac ai review (zeby ci sie nie wysiwetlal od razu po zakonczeniu gry)
+Cezary: gracze powinni miec to zaznaczone
+]
+(;B[nq]
+(;W[oq]
+C[Cezary: lol kac dalej jest w takim dobrym humorze jak zginal tym e13 ?
+]
+(;B[np]
+C[Mrrr: no wlasnie, to moglaby byc rzecz ktora sedzie sprawdza przed gra
+]
+(;W[qn]
+C[Mrrr: zeby ai wylaczyc
+]
+(;B[jq]
+C[Mrrr: i nie wlaczac ;-)
+Mrrr: natomiast pozostanie kwestia komentarzy, ktore tez moga cos wskazywac graczom
+Mrrr: ale fakt, ten anti-ai check mozna wprowadzic do rutyny przy takich rozgrywkach
+yakcyll: Higaki podobno miał wyłączony ten review
+yakcyll: Tam to się nazywa 'Włącz analizę AI' czy jakoś tak
+yakcyll: Teraz podobno jest na sto procent wyłączona, więc trzymam kciuki.
+]
+(;W[dn]
+C[yakcyll: Ale jeszcze lepsze byłoby móc zobaczyć rozłączenie w trybie Zen
+Mrrr: disabilita la revisione dell`intelligencia artificiale
+yakcyll: To przy tworzeniu partii?
+Mrrr: wloski brzmi jak slowa szefa kuchni nawet przy wylaczaniu ai :)
+yakcyll: xd
+yakcyll: Wyślę chyba taki request do OGS, żeby było widać dc w każdym wypadku
+Mrrr: dc?
+yakcyll: Disconnect.
+]
+(;B[dr]
+C[silent: ZEN chyba do tego nie służy, musieliby dedykowany tryb dla turniejów chyba zrobić
+]
+(;W[dq]
+(;B[er]
+(;W[cr]
+(;B[br]
+C[yakcyll: Mogliby też.
+]
+(;W[cq]
+(;B[gq]
+(;W[qf]
+C[Mrrr: strata tego wezyka musi bolec 
+Mrrr: zwlaszcza, ze rownoczesnie bialy zyskal sciane
+yakcyll: Trochę na pewno, sytuacja taka sobie
+yakcyll: Ale czarny ma dużo profitu
+silent: W sumie można też powiedzieć graczom żeby zmodyfikowali źródło strony i wyłączyli nieporządane elementy :D
+yakcyll: Więc nie jest jeszcze paskudnie
+yakcyll: ROFL
+yakcyll: Tournament patch for OGS
+silent: xD
+]
+(;B[pf]
+(;W[pg]
+(;B[of]
+(;W[re]
+(;B[rc]
+(;W[qd]
+(;B[qc]
+(;W[og]
+(;B[nf]
+(;W[pk]
+(;B[qh]
+(;W[qg]
+(;B[pj]
+(;W[oj]
+(;B[oi]
+(;W[pi]
+(;B[qj]
+(;W[qk]
+C[Sadiker: co w kazdej parti Kac traci jakas grupe kamieni
+yakcyll: Czarek się zakłada przy nie tych partiach co trzeba xd
+Cezary: :/
+Cezary: juz stracilem 50euraczy
+Mrrr: takie ostre zaklady robicie?
+Mrrr: komisja hazardowa bedzie miala co robic ;-)
+]
+(;B[ph]
+(;W[oh]
+(;B[ni]
+(;W[rj]
+(;B[qi]
+(;W[rh]
+C[Cezary: haha to w ogole sa takie glupie zaklady
+Cezary: bo zakladamy sie kto wrzuci pieniadze do skarbonki iglo
+Cezary: a to jest skarbonka ktora ja zarzadzam :p
+Cezary: to jest dobry pomysl zeby teraz zareklamowac iglo
+Cezary: iglo to polska liga, gramy jedna gre na tydzien 
+Cezary: https://docs.google.com/spreadsheets/d/1Be7XNZ9BaCTK_uxmuyh32yrcYhMbHDT9YaWBCz8tW94/edit#gid=0
+Cezary: tutaj sa wszelkie informacje
+]
+(;B[ri]
+(;W[si]
+(;B[pi]
+(;W[rl]
+(;B[mk]
+C[yakcyll: Kto zamawiał pierogi?
+]
+(;W[jd]
+(;B[id]
+(;W[je]
+(;B[kc]
+C[Sadiker: ale ksztalt q11 jest fantastyczny
+]
+(;W[ds]
+(;B[po]
+C[Mrrr: iglo super sprawa, a wyklady siasia na yt to juz w ogole w annalach polskiego go beda 
+yakcyll: Gdzie biały ma teren tak w ogóle
+Radziol: to tu to tam yakcyll
+Mrrr: bialy ma 
+Sadiker: teren to sie dopiero w yose bierze
+Mrrr: wezyk warty tyle co rog
+Mrrr: i dwa inne rogi
+Mrrr: jest ok
+]
+(;W[oo]
+C[Radziol: w + komi 
+yakcyll: o
+Radziol: nawet bez terenu 
+Radziol: :P
+yakcyll: xd
+Sadiker: chodzi tu cod?
+yakcyll: Afaik ogs jest na awsie
+yakcyll: Mają tam chyba tylko integry
+yakcyll: Więc cod nie pójdzie
+yakcyll: :(
+Cezary: cod to przeciez dorsz
+yakcyll: a
+Radziol: a w jezyku ludzi o co chodzi?
+yakcyll: To tym bardziej nie pójdzie
+yakcyll: Bo nie ma nóg
+Mrrr: :)
+Cezary: rozumiem ze docker, kontenery rybka
+yakcyll: A jeśli chodzi o wariacje, to nie mam pojęcia, way above my paygrade
+Cezary: moze szczupaki jeszcze
+yakcyll: Kac siedzi i duma
+Cezary: ale dorsze tu nei chadzają
+Moggetyrael: To wygląda jak dobra gra i dobre komentarze
+Moggetyrael: czas się dołączyć
+yakcyll: A Ty co snajpujesz
+Moggetyrael: yoyoyoyo
+yakcyll: Na szczęście znalazłem Twój profil zanim Leszek zapytał jaki ejst Twój pseudonim
+yakcyll: Bo gdybym musiał mu go literować, to by mnie przechrzcił
+Moggetyrael: No ale mój nick to chyba znasz
+Moggetyrael: Bez przesady
+]
+(;B[qo]
+C[Moggetyrael: Tygrysem jestem dopiero od pół roku
+yakcyll: I za każdym razem go źle wpisuję na początku
+Cezary: well
+Cezary: dobrze ze gramy live
+Cezary: jakby m1nd0nf1r3 gral na lmp
+]
+(;W[pn]
+C[Cezary: to by bylo dopiero wpisywanie
+]
+(;B[qp]
+C[yakcyll: rofl
+]
+(;W[op]
+(;B[pr]
+C[Moggetyrael: Deejay to ma mocne fuseki jednak
+]
+(;W[qq]
+C[Radziol: wyglada jak życie
+Moggetyrael: trochę tak
+Moggetyrael: ale chyba część można uciąć
+Moggetyrael: ale taką małą
+Moggetyrael: \[object Object\]
+Moggetyrael: OGS to jednak jest dobry z tym sharowaniem wariacji
+Radziol: dobry rezultat dla czarnego
+Radziol: \[object Object\]
+Moggetyrael: \[object Object\]
+Moggetyrael: albo tak :P
+]
+(;B[or]
+C[Moggetyrael: \[object Object\]
+Moggetyrael: Tak pewnie czarny
+]
+(;W[qr]
+C[Moggetyrael: albo nie
+Radziol: \[object Object\]
+]
+(;B[no]
+C[Mrrr: to co w grze chyba najlepsze dla czarnego
+]
+(;W[nn]
+(;B[mn]
+C[Mrrr: i najprostsze :) Wasze warianty to jest tru hardkor
+Mrrr: a tutaj prosze, zlote, a skromne...
+]
+(;W[ip]
+C[Moggetyrael: To już Lukan narzekał, że Ci polscy gracze to tylko komplikują
+Moggetyrael: bez sensu
+yakcyll: xd
+Cezary: za duzo sie nasluchalismy stasia
+Cezary: zreszta ja juz dawno temu poweidzialem
+Cezary: polski styl to lać się
+Cezary: innych gier byc nie moze
+]
+(;B[ho]
+C[Cezary: inaczej Mrrr przyjezdza i aresztuje juz dogadane wszystko
+Sadiker: no gracma sprawiac przyjemnosc
+Mrrr: "wezyka pomscimy!"
+Sadiker: gra ma
+]
+(;W[io]
+(;B[hn]
+C[Mrrr: no to bialy wdepnal
+yakcyll: To w stylu dja
+yakcyll: Pokojowe fuseki przez półtorej godziny
+yakcyll: A potem sieczka w SD
+Mrrr: :D
+]
+(;W[lo]
+C[Mrrr: wezyk bedzie pomszczony z nawiazka
+Moggetyrael: Ciekawe czy Kacu policzył, że musi tu ostro walczyć, czy po prostu miał ochotę sobie jakieś kamyczki złapać
+Mrrr: aresztuje za co? ze sie nie leja?
+Mrrr: takie J4 chyba sie samo prosilo
+Moggetyrael: Ciekawe że kac lczy czy grać O7
+Moggetyrael: jakie najlepsze yose daje Q3? Chyba nic wielkiego
+Moggetyrael: może teraz S2
+Moggetyrael: pytanie
+]
+(;B[lq]
+C[Mrrr: s2 wyglada sente, zawsze te 5 punktow na plus
+]
+(;W[hq]
+C[Mrrr: chociaz w sumie co tu jest sente przy takiej walce w centrum?
+Mrrr: G2 wyglada przyzwoicie
+Moggetyrael: Ciekawe co DJ wyczaruje tu
+Sadiker: i tak Kacowi zaraz cos zginie
+Mrrr: w sumie to nie, po g2 bialy moze dostac oko
+]
+(;B[gr]
+C[Mrrr: G4 zaboli teraz
+Mrrr: a moze nie, chyba jednak mam halucynacje...
+]
+(;W[in]
+(;B[hm]
+(;W[jl]
+(;B[ik]
+(;W[jk]
+C[Mrrr: w tej walce czarny niby wyglada jakby mogl duzo, ale ten zestaw kamieni z trzema oddechami na prawej bandzie rownie dobrze moze przeszkadzac, co pomagac
+]
+(;B[ij]
+(;W[ll]
+(;B[ml]
+(;W[lm]
+(;B[ln]
+C[Mrrr: czy ten ruch nie pomaga bialemu? jakis ksztalt sie zacznie wylaniac zaraz
+Sadiker: chyba bialy jakos wyciagnie
+]
+(;W[kn]
+(;B[mm]
+C[Mrrr: juz moze przezyc lokalnie
+Mrrr: no, prawie :)
+]
+(;W[kp]
+(;B[lk]
+(;W[kq]
+(;B[kr]
+(;W[lr]
+C[Sadiker: k2 chyba musi
+Mrrr: a nie J2?
+]
+(;B[mr]
+C[Mrrr: czemu N2?
+]
+(;W[jr]
+(;B[ls]
+(;W[ir]
+(;B[if]
+C[Mrrr: cala ta inwazja to wielki sukces bialego, biorac pod uwage, ze czarny mogl wziac rog, ale zdecydowal sie na bande
+]
+(;W[mg]
+C[Mrrr: nie rozumiem n2
+]
+(;B[jf]
+(;W[mi]
+C[Mrrr: wydawalo mi sie, ze w ataku na grupe bialych czarny mial szanse pozbawiac sie wlasnych slabosci, a to co jest teraz, to jakies wartosciowe kamienie w bezwartosciowych ksztaltach, ktore trzeba pilnowac, by przezyly
+]
+(;B[nj]
+(;W[gp]
+C[Sadiker: ups
+Mrrr: druga polowe tez mozna docisnac
+]
+(;B[pq]
+(;W[on]
+(;B[rr]
+(;W[rq]
+(;B[qs]
+(;W[sr]
+(;B[rs]
+(;W[ro]
+C[Radziol: Gdzie czarny ma teren?
+Radziol: :>
+Mrrr: Radziol, mozesz wyjasnic N2?
+Radziol: Nie
+Mrrr: slabszemu ranga :)
+Radziol: Bez sensu
+Mrrr: aha ok
+Mrrr: myslalem, ze tam jakis sekret sie kryl
+]
+(;B[fn]
+C[Mrrr: ale mam wrazenie, jakby wszystko zle zaczelo sie od M6
+Mrrr: bialy nagle zaczal miec ksztalt i opcje
+Radziol: No może czarny się bal że nie przezyje
+Radziol: Ale alternatywa raczej gorsza
+]
+(;W[ki]
+(;B[ok]
+C[Mrrr: mnie sie wydawalo, ze J2 wygladalo na grywalne, bojka trwalaby dalej
+Radziol: No i nie wygląda żeby było duże ryzyko
+]
+(;W[fp]
+(;B[bn]
+(;W[bo]
+(;B[bm]
+(;W[mf]
+(;B[rg]
+(;W[sh]
+(;B[le]
+(;W[me]
+(;B[ld]
+C[Mrrr: czarny musi ugrac w centrum 20 punktow ;)
+]
+(;W[ol]
+(;B[mj]
+C[Moggetyrael: DJ strong
+]
+(;W[kf]
+(;B[ke]
+(;W[ia]
+C[yakcyll: Co jecie?
+]
+(;B[ja]
+C[yakcyll: Gdzie livestream
+Mrrr: orzechy nerkowca i lososia z warzywami ;-)
+]
+(;W[ha]
+(;B[jc]
+C[Moggetyrael: Ja po kebabie kolejnym uż
+silent: Będziesz gruby :(
+silent: Ale szczęśliwy w sumie
+]
+(;W[nl]
+(;B[jj]
+C[Sadiker: p16?
+]
+(;W[kg]
+C[Moggetyrael: Jak w Go nie wygrywam, to chociaż trochę radości z życia musi być
+Moggetyrael: p16 to tam czeka
+Moggetyrael: na dobry moment
+Moggetyrael: Jak Kacu odzyska trochę nadziei
+Moggetyrael: na wygraną
+]
+(;B[kj]
+C[Mrrr: C8 bylo fajnie skontrowane przez D9, ten wezyk stracony na starcie musial zle wplynac na kaca
+]
+(;W[ao]
+(;B[rd]
+(;W[qe]
+(;B[od]
+(;W[md]
+(;B[mc]
+(;W[li]
+(;B[hi]
+C[Mrrr: jakby zagral E9 zamiast c8, to biala sciana wcale nie wygladalaby imponujaco
+]
+(;W[gi]
+(;B[ng]
+(;W[nh]
+(;B[hh]
+(;W[he]
+(;B[ie]
+(;W[hf]
+(;B[hd]
+(;W[gd]
+(;B[jh]
+(;W[eo]
+(;B[lf]
+(;W[hg]
+(;B[lp]
+(;W[il]
+C[deejay: dziękuję
+karolkac04: dzieki za gre
+]
+))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))

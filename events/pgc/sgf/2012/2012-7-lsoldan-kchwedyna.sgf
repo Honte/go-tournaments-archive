@@ -1,217 +1,354 @@
-(
-  ;BR[5d]CA[UTF-8]DT[2012-12-02]EV[Polish Go Championship 2012]FF[4]GM[1]GN[Round 7 - Board 1]KM[6.50]PB[Leszek Sołdan]PC[Katowice]PW[Kamil Chwedyna]RE[W+5.5]RO[7]RU[japanese]ST[2]SZ[19]WR[4d]
-  ;B[cc]
-  ;W[pp]
-  ;B[ii]
-  ;W[oc]
-  ;B[co]
-  ;W[dd]
-  ;B[cf]
-  ;W[df]
-  ;B[dg]
-  ;W[ce]
-  ;B[cg]
-  ;W[dc]
-  ;B[be]
-  ;W[id]
-  ;B[ef]
-  ;W[bd]
-  ;B[cd]
-  ;W[de]
-  ;B[bc]
-  ;W[fd]
-  ;B[eo]
-  ;W[pj]
-  ;B[fq]
-  ;W[nq]
-  ;B[qh]
-  ;W[qd]
-  ;B[qj]
-  ;W[qk]
-  ;B[pk]
-  ;W[ql]
-  ;B[qe]
-  ;W[qi]
-  ;B[rj]
-  ;W[pi]
-  ;B[ri]
-  ;W[ph]
-  ;B[qg]
-  ;W[ok]
-  ;B[rd]
-  ;W[rc]
-  ;B[mp]
-  ;W[mq]
-  ;B[pl]
-  ;W[qm]
-  ;B[ol]
-  ;W[nl]
-  ;B[oj]
-  ;W[nk]
-  ;B[qc]
-  ;W[pd]
-  ;B[rb]
-  ;W[re]
-  ;B[sc]
-  ;W[qf]
-  ;B[pg]
-  ;W[oi]
-  ;B[ni]
-  ;W[nj]
-  ;B[oh]
-  ;W[oj]
-  ;B[pe]
-  ;W[pf]
-  ;B[oe]
-  ;W[of]
-  ;B[rf]
-  ;W[ne]
-  ;B[se]
-  ;W[od]
-  ;B[re]
-  ;W[nf]
-  ;B[kp]
-  ;W[gi]
-  ;B[ig]
-  ;W[gk]
-  ;B[fj]
-  ;W[hi]
-  ;B[ik]
-  ;W[cn]
-  ;B[bo]
-  ;W[hk]
-  ;B[el]
-  ;W[il]
-  ;B[jk]
-  ;W[jl]
-  ;B[kl]
-  ;W[fm]
-  ;B[em]
-  ;W[km]
-  ;B[lm]
-  ;W[kk]
-  ;B[ll]
-  ;W[lk]
-  ;B[hh]
-  ;W[kn]
-  ;B[kc]
-  ;W[kd]
-  ;B[ld]
-  ;W[ke]
-  ;B[ic]
-  ;W[hd]
-  ;B[mc]
-  ;W[nd]
-  ;B[le]
-  ;W[lf]
-  ;B[mf]
-  ;W[mg]
-  ;B[jd]
-  ;W[je]
-  ;B[jc]
-  ;W[kg]
-  ;B[fg]
-  ;W[hf]
-  ;B[hg]
-  ;W[fi]
-  ;B[di]
-  ;W[ln]
-  ;B[qp]
-  ;W[pq]
-  ;B[gb]
-  ;W[gf]
-  ;B[gg]
-  ;W[hq]
-  ;B[gc]
-  ;W[jh]
-  ;B[gd]
-  ;W[ih]
-  ;B[hp]
-  ;W[ip]
-  ;B[gp]
-  ;W[iq]
-  ;B[og]
-  ;W[gr]
-  ;B[fr]
-  ;W[rk]
-  ;B[mi]
-  ;W[lh]
-  ;B[io]
-  ;W[jo]
-  ;B[in]
-  ;W[jp]
-  ;B[qn]
-  ;W[ro]
-  ;B[mk]
-  ;W[mj]
-  ;B[rn]
-  ;W[pn]
-  ;B[li]
-  ;W[ki]
-  ;B[ei]
-  ;W[if]
-  ;B[ge]
-  ;W[nb]
-  ;B[mb]
-  ;W[nh]
-  ;B[ng]
-  ;W[me]
-  ;B[mh]
-  ;W[lj]
-  ;B[nh]
-  ;W[fn]
-  ;B[fl]
-  ;W[gm]
-  ;B[gl]
-  ;W[hm]
-  ;B[fo]
-  ;W[fs]
-  ;B[es]
-  ;W[gs]
-  ;B[er]
-  ;W[sj]
-  ;B[rh]
-  ;W[ma]
-  ;B[la]
-  ;W[na]
-  ;B[hc]
-  ;W[ff]
-  ;B[fe]
-  ;W[jg]
-  ;B[he]
-  ;W[ie]
-  ;B[hl]
-  ;W[im]
-  ;B[gj]
-  ;W[hj]
-  ;B[fk]
-  ;W[pb]
-  ;B[qb]
-  ;W[en]
-  ;B[dn]
-  ;W[jn]
-  ;B[gq]
-  ;W[hr]
-  ;B[hn]
-  ;W[gn]
-  ;B[ho]
-  ;W[jj]
-  ;B[pa]
-  ;W[fh]
-  ;B[eh]
-  ;W[si]
-  ;B[sh]
-  ;W[sk]
-  ;B[lc]
-  ;W[oa]
-  ;B[qa]
-  ;W[nc]
-  ;B[pc]
-  ;W[ob]
-  ;B[eg]
-  ;W[ij]
-  ;B[md]
-  ;W[mf]
-  ;B[gh]
-  ;W[go]
-)
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[5400]OT[1x60 byo-yomi]
+GN[Polish Go Championship League]PW[Leszek Sołdan]PB[Kamil Chwedyna]WR[5d]BR[4d]DT[2012-12-02]RO[7]PC[The KGS Go Server at http://www.gokgs.com/]C[LMP1 [-\]: transmisja video z drugiej deski
+LMP1 [-\]: http://ustre.am/RhBr
+SadPlayer [-\]: obaj gracze pod presją:>
+LMP1 [-\]: gra o utrzymanie w lidze, zakładając że Koichi nie przegra
+]
+;B[cc]
+;W[pp]
+;B[ii]
+;W[oc]
+;B[co]
+;W[dd]C[bartosz [-\]: o braz lepiej brzmi
+]
+;B[cf]C[liquescens [1k\]: obraz nie brzmi tylko wyglada
+]
+;W[df]C[Bogdan13x [1k\]: a o utrzymaniej wiecej zgrozy dodaje 
+bartosz [-\]: ale zarcik z tym obrazem
+LMP1 [-\]: ?
+andy92 [1k\]: zarcik kosmonaucik
+]
+;B[dg]C[Bogdan13x [1k\]:  fajne mamy tlo pogaduszek
+]
+;W[ce]
+;B[cg]C[liquescens [1k\]: a znacie to jak facet wchodzi do mieszkania a tam kuchnia?
+]
+;W[dc]
+;B[be]C[LewyBut [1d\]: nie, opowiedz
+Pinguschaf [?\]: c14 is genius
+]
+;W[id]C[liquescens [1k\]: lekko zdziwniony ze nie ma jakiegos przedpokoju, ale widzi troje drzwi. Wchodzi przez pierwsza, a tam tez kuchnia.
+]
+;B[ef]
+;W[bd]
+;B[cd]
+;W[de]
+;B[bc]C[liquescens [1k\]: za drugimi podobnie, za trzecimi rowniez kuchnia. Stoi juz calkiem konsternowany.
+]
+;W[fd]C[andy92 [1k\]: ratunku
+]
+;B[eo]C[liquescens [1k\]: Nagle w kuchni dzwoni telefon. Odbiera. W sluchawce slyszy glos "przepraszam ze niepokoje..."
+]
+;W[pj]
+;B[fq]
+;W[nq]C[Pinguschaf [?\]: r16
+liquescens [1k\]: l4 
+LMP1 [-\]: nie wygląda na chorego
+liquescens [1k\]: a jak wyglada kaczynski w spodniach giertycha? przez rozporek.
+bartosz [-\]: nie ma tu żadnego admina?
+]
+;B[qh]
+;W[qd]C[Pinguschaf [?\]: r12 is horrible
+bartosz [-\]: why?
+liquescens [1k\]: mi sie podoba
+Pinguschaf [?\]: because it gives free shimari to white
+Pinguschaf [?\]: corners are more important
+liquescens [1k\]: more important on empty board
+]
+;B[qj]
+;W[qk]
+;B[pk]
+;W[ql]
+;B[qe]C[liquescens [1k\]: l4 fajny lamacz
+]
+;W[qi]
+;B[rj]
+;W[pi]
+;B[ri]
+;W[ph]
+;B[qg]C[Pinguschaf [?\]: black should have tenukied
+Pinguschaf [?\]: and just play s16
+]
+;W[ok]C[Pinguschaf [?\]: oh now he still gets it
+]
+;B[rd]C[Pinguschaf [?\]: but w should not play p9 either
+]
+;W[rc]
+;B[mp]
+;W[mq]
+;B[pl]
+;W[qm]
+;B[ol]
+;W[nl]C[bartosz [-\]: pinguschaf: is it good timing to rescue q9 stone?
+Pinguschaf [?\]: no its horrible
+Pinguschaf [?\]: kamil lost his focus
+bartosz [-\]: seems like only strenghtenign white
+Pinguschaf [?\]: and creating heavy black group
+]
+;B[oj]
+;W[nk]
+;B[qc]
+;W[pd]
+;B[rb]C[Pinguschaf [?\]: ohoh
+Pinguschaf [?\]: so this was secret plan :)
+]
+;W[re]
+;B[sc]
+;W[qf]
+;B[pg]C[Pinguschaf [?\]: i take everything back
+Pinguschaf [?\]: kamil didnt lose his focus at all :)
+bartosz [-\]: :)
+LMP1 [-\]: we forgive you
+]
+;W[oi]
+;B[ni]C[Pinguschaf [?\]: o11
+]
+;W[nj]
+;B[oh]
+;W[oj]C[Pinguschaf [?\]: nice shape leszek
+]
+;B[pe]
+;W[pf]
+;B[oe]
+;W[of]
+;B[rf]
+;W[ne]
+;B[se]
+;W[od]
+;B[re]
+;W[nf]C[Pinguschaf [?\]: very good result for black
+]
+;B[kp]
+;W[gi]
+;B[ig]C[mw42 [1d\]: "is starting" admin troll
+Pinguschaf [?\]: if leszek loses, does this mean that he is not directly qualified for the finals next year?
+bartosz [-\]: only if Koichiro Habu wins
+]
+;W[gk]
+;B[fj]C[bartosz [-\]: but that is highly likely
+]
+;W[hi]
+;B[ik]C[Pinguschaf [?\]: j9 is a bit strange
+]
+;W[cn]
+;B[bo]C[Javaness [2d\]: why didn't you tell us earlier :-
+]
+;W[hk]
+;B[el]
+;W[il]C[soui [-\]: he did
+]
+;B[jk]
+;W[jl]
+;B[kl]
+;W[fm]
+;B[em]
+;W[km]
+;B[lm]
+;W[kk]
+;B[ll]
+;W[lk]
+;B[hh]C[Javaness [2d\]: i suppose white expects black to talk in the centre
+]
+;W[kn]
+;B[kc]
+;W[kd]
+;B[ld]
+;W[ke]
+;B[ic]
+;W[hd]C[SadPlayer [-\]: chyba cz przesadza
+]
+;B[mc]
+;W[nd]
+;B[le]
+;W[lf]
+;B[mf]
+;W[mg]
+;B[jd]
+;W[je]
+;B[jc]
+;W[kg]
+;B[fg]
+;W[hf]
+;B[hg]
+;W[fi]C[SadPlayer [-\]: góra jest żywa?
+Maek [2d\]: na martwa nie wyglada
+celepa [?\]: ta, o18 albo f18 i powinno zyc
+]
+;B[di]
+;W[ln]
+;B[qp]C[celepa [?\]: no jak tu przezyje to jest po gre
+]
+;W[pq]C[celepa [?\]: grze*
+Maek [2d\]: ciezko
+bartosz [-\]: m3 
+celepa [?\]: teoretycznie r6 czy cos moze dzialac
+bartosz [-\]: chociaz nie
+bartosz [-\]: mysle ze jakies tenuki zagra
+Pinguschaf [?\]: m3 is overplay
+]
+;B[gb]
+;W[gf]C[Pinguschaf [?\]: just j3 would be enough
+]
+;B[gg]
+;W[hq]
+;B[gc]C[Maek [2d\]: h5
+Maek [2d\]: ?
+]
+;W[jh]C[Pinguschaf [?\]: g16
+Pinguschaf [?\]: is bigger than those middle stones
+celepa [?\]: yes
+Lothus [2d\]: pozdrowcie fisza
+LMP1 [-\]: nie mogę do niego mówić
+Lothus [2d\]: ...po grze
+Lothus [2d\]: :P
+LMP1 [-\]: ok ;)
+]
+;B[gd]C[celepa [?\]: ok, now just make some life in the bottom and gg
+Pinguschaf [?\]: no way
+Pinguschaf [?\]: just give
+Pinguschaf [?\]: h4 is enough
+]
+;W[ih]C[celepa [?\]: thought leszek would play h4...
+celepa [?\]: i mean h5
+Pinguschaf [?\]: but after h5 there is really no life on the bottom
+]
+;B[hp]C[Pinguschaf [?\]: goo
+celepa [?\]: if there's no life, h5 was better than j12
+Pinguschaf [?\]: good
+]
+;W[ip]
+;B[gp]
+;W[iq]
+;B[og]
+;W[gr]
+;B[fr]
+;W[rk]C[SadPlayer [-\]: no to jeszcze w rogu niech przeżyje :)
+SadPlayer [-\]: za późno:(
+celepa [?\]: n11
+Pinguschaf [?\]: j5
+]
+;B[mi]C[celepa [?\]: ;P
+Pinguschaf [?\]: u won
+]
+;W[lh]C[SadPlayer [-\]: SE zdradź mi wynik!
+]
+;B[io]
+;W[jo]
+;B[in]C[SadPlayer [-\]: po dograniu yose wyszło mi cz+3,5
+celepa [?\]: hehe, jeszcze sie moze duzo wydarzyc
+SadPlayer [-\]: tak
+]
+;W[jp]C[SadPlayer [-\]: w końcu Fisz gra
+celepa [?\]: dokladnie
+lecewkulki [-\]: b j14?
+SadPlayer [-\]: a po co?
+lecewkulki [-\]: no dobrze, f15
+]
+;B[qn]C[celepa [?\]: I knew it ;D
+bartosz [-\]: f15?
+Faonig [1k\]: hmm, b j14... the cut work, no ? oO
+Pinguschaf [?\]: hehe
+Faonig [1k\]: works*
+]
+;W[ro]C[osa [2k\]: f15 nic nie daje i tak przetnie
+LewyBut [1d\]: w is already cut
+bartosz [-\]: dokładnie
+]
+;B[mk]C[Faonig [1k\]: right ^^
+SadPlayer [-\]: mi wychodziło że to nie działa
+]
+;W[mj]C[SadPlayer [-\]: Fiszowi jak widac działa :)
+]
+;B[rn]
+;W[pn]
+;B[li]C[highdan: To jest  uciete i czarny prowadzi ale może jeszcze duzo oddac jak sie bedzie starał
+]
+;W[ki]
+;B[ei]C[celepa [?\]: does that mean: I won?
+]
+;W[if]
+;B[ge]
+;W[nb]
+;B[mb]
+;W[nh]
+;B[ng]
+;W[me]
+;B[mh]C[highdan: tak, tak...
+]
+;W[lj]
+;B[nh]
+;W[fn]
+;B[fl]C[celepa [?\]: jak z czasem stoja? juz byo ktos ma?
+SadPlayer [-\]: po co biały wrzucił ten kamień w o12 ?
+celepa [?\]: bo czul ze musi oddac punkt
+]
+;W[gm]
+;B[gl]
+;W[hm]
+;B[fo]
+;W[fs]
+;B[es]
+;W[gs]
+;B[er]
+;W[sj]
+;B[rh]
+;W[ma]
+;B[la]
+;W[na]C[celepa [?\]: h17?
+]
+;B[hc]
+;W[ff]
+;B[fe]
+;W[jg]
+;B[he]
+;W[ie]
+;B[hl]C[SadPlayer [-\]: q18 ?
+]
+;W[im]
+;B[gj]
+;W[hj]
+;B[fk]
+;W[pb]C[Uberdude [5d?\]: close game
+]
+;B[qb]C[SadPlayer [-\]: q18 nie było większe niż g10 ?
+]
+;W[en]
+;B[dn]
+;W[jn]C[highdan: było
+]
+;B[gq]
+;W[hr]
+;B[hn]C[highdan: i wczesnie O18 było wieksze
+]
+;W[gn]
+;B[ho]
+;W[jj]
+;B[pa]
+;W[fh]
+;B[eh]
+;W[si]
+;B[sh]
+;W[sk]C[SadPlayer [-\]: cz+7,5?
+]
+;B[lc]
+;W[oa]
+;B[qa]
+;W[nc]
+;B[pc]
+;W[ob]
+;B[eg]
+;W[ij]
+;B[md]
+;W[mf]
+;B[gh]C[soui [-\]: :D
+celepa [?\]: nice fisz
+soui [-\]: jaka spokojna gra
+]
+;W[go]C[celepa [?\]: gz
+LMP1 [-\]: pass
+consideRat [13k\]: is the bottom right corner area considered to be whites and black is dead?
+litchy [1d\]: yes
+soui [-\]: yes
+LMP1 [-\]: B+5,5
+])

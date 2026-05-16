@@ -1,147 +1,361 @@
-(
-  ;BR[1d]CA[UTF-8]DT[2018-11-08]EV[Polish Go Championship 2018]FF[4]GM[1]GN[Round 2 - Board 2]KM[6.5]PB[Jan Frączak]PC[Poznań]PW[Leszek Sołdan]RE[W+R]RU[japanese]SZ[19]WR[4d]
-  ;B[pp]
-  ;W[dd]
-  ;B[cp]
-  ;W[pd]
-  ;B[iq]
-  ;W[cf]
-  ;B[qn]
-  ;W[qf]
-  ;B[ep]
-  ;W[jd]
-  ;B[cj]
-  ;W[pm]
-  ;B[pn]
-  ;W[nm]
-  ;B[om]
-  ;W[ol]
-  ;B[on]
-  ;W[nl]
-  ;B[qk]
-  ;W[pj]
-  ;B[qj]
-  ;W[pi]
-  ;B[ln]
-  ;W[kl]
-  ;B[jj]
-  ;W[ej]
-  ;B[gj]
-  ;W[kj]
-  ;B[ji]
-  ;W[ki]
-  ;B[ob]
-  ;W[nc]
-  ;B[jh]
-  ;W[qc]
-  ;B[jm]
-  ;W[ck]
-  ;B[bk]
-  ;W[cq]
-  ;B[dq]
-  ;W[dk]
-  ;B[bl]
-  ;W[eh]
-  ;B[eb]
-  ;W[db]
-  ;B[dc]
-  ;W[ec]
-  ;B[cc]
-  ;W[cb]
-  ;B[ed]
-  ;W[fc]
-  ;B[cd]
-  ;W[de]
-  ;B[fb]
-  ;W[bb]
-  ;B[gc]
-  ;W[fd]
-  ;B[ge]
-  ;W[fe]
-  ;B[ff]
-  ;W[gd]
-  ;B[hd]
-  ;W[ee]
-  ;B[hc]
-  ;W[he]
-  ;B[ie]
-  ;W[gf]
-  ;B[hf]
-  ;W[id]
-  ;B[ge]
-  ;W[co]
-  ;B[bp]
-  ;W[he]
-  ;B[je]
-  ;W[kd]
-  ;B[ge]
-  ;W[gg]
-  ;B[he]
-  ;W[do]
-  ;B[eo]
-  ;W[cm]
-  ;B[bn]
-  ;W[bo]
-  ;B[ao]
-  ;W[bm]
-  ;B[am]
-  ;W[cn]
-  ;B[an]
-  ;W[pr]
-  ;B[oq]
-  ;W[or]
-  ;B[nr]
-  ;W[nq]
-  ;B[mr]
-  ;W[qp]
-  ;B[qq]
-  ;W[pq]
-  ;B[rp]
-  ;W[op]
-  ;B[qo]
-  ;W[lq]
-  ;B[lr]
-  ;W[mo]
-  ;B[kq]
-  ;W[mn]
-  ;B[lf]
-  ;W[me]
-  ;B[ch]
-  ;W[bg]
-  ;B[mf]
-  ;W[ib]
-  ;B[lc]
-  ;W[ld]
-  ;B[mc]
-  ;W[md]
-  ;B[kb]
-  ;W[nb]
-  ;B[ic]
-  ;W[jb]
-  ;B[jc]
-  ;W[kc]
-  ;B[hb]
-  ;W[lb]
-  ;B[em]
-  ;W[dm]
-  ;B[el]
-  ;W[dp]
-  ;B[bq]
-  ;W[cr]
-  ;B[br]
-  ;W[kp]
-  ;B[mq]
-  ;W[mp]
-  ;B[jp]
-  ;W[fk]
-  ;B[ek]
-  ;W[dj]
-  ;B[fj]
-  ;W[eq]
-  ;B[dr]
-  ;W[en]
-  ;B[fn]
-  ;W[fo]
-  ;B[dn]
-  ;W[al]
-)
+(;FF[4]
+GM[1]
+DT[2018-11-08]
+PC[OGS: http://online-go.com/game/review/352713]
+PB[Jan Frączak]
+PW[Leszek Sołdan]
+BR[1d]
+WR[4d]
+CP[online-go.com]
+TM[0]OT[0 none]
+RE[?]
+SZ[19]
+KM[6.5]
+RU[japanese]
+
+;B[pp]
+;W[dd]
+;B[cp]
+;W[pd]
+;B[iq]
+;W[cf]
+;B[qn]
+;W[qf]C[
+
+-- chat --
+Sadiker: k17?. From move 0: Q4 D16 C4 Q16 J3 C14 R6 R14 
+
+]
+
+;B[ep]
+;W[jd]
+;B[cj]
+;W[pm]
+;B[pn]
+;W[nm]
+;B[om]
+;W[ol]
+;B[on]
+;W[nl]
+;B[qk]
+;W[pj]
+;B[qj]
+;W[pi]
+;B[ln]
+;W[kl]
+;B[jj]
+;W[ej]
+;B[gj]
+;W[kj]
+;B[ji]
+;W[ki]
+;B[ob]
+;W[nc]
+;B[jh]
+;W[qc]
+;B[jm]C[
+
+-- chat --
+LMP2018-2: Tournament details and agenda: http://mp.go.art.pl/2018/en
+ekrilat: I like the black position
+
+]
+
+;W[ck]
+;B[bk]
+;W[cq]
+;B[dq]
+;W[dk]
+;B[bl]
+;W[eh]
+;B[eb]
+;W[db]
+;B[dc]
+;W[ec]
+;B[cc]
+;W[cb]
+;B[ed]
+;W[fc]
+;B[cd]
+;W[de]
+;B[fb]
+;W[bb]
+;B[gc]
+;W[fd]
+;B[ge]
+;W[fe]
+;B[ff]
+;W[gd]
+;B[hd]
+;W[ee]
+;B[hc]
+;W[he]C[
+
+-- chat --
+LMP2018-2: Time: B 55m remaining, W 1h
+kklz: puszczam sobie bota na stronie i bot mówi, że obaj grają bardzo dobrze jak na razie :)
+
+]
+
+;B[ie]C[
+
+-- chat --
+kklz: lekka przewaga janka'
+
+]
+
+;W[gf]
+;B[hf]
+;W[id]
+;B[ge]
+;W[co]
+;B[bp]
+;W[he]
+;B[je]
+;W[kd]
+;B[ge]
+;W[gg]
+;B[he]
+;W[do]
+;B[eo]
+;W[cm]
+;B[bn]
+;W[bo]
+;B[ao]
+;W[bm]
+;B[am]
+;W[cn]
+;B[an]
+;W[pr]
+;B[oq]
+;W[or]
+;B[nr]
+;W[nq]
+;B[mr]
+;W[qp]
+;B[qq]
+;W[pq]
+;B[rp]
+;W[op]
+;B[qo]
+;W[lq]
+;B[lr]C[
+
+-- chat --
+Sadiker: ktorego bota? L Zero?
+
+]
+
+;W[mo]C[
+
+-- chat --
+Sadiker: nie ma jakiegoś tesuji w np N17?
+kklz: LZero - tak
+
+]
+
+;B[kq]C[
+
+-- chat --
+kklz: bot mói, że lokalnie na górze najlepiej po prostu K18
+kklz: aczkolwiek jak teraz biały N3 to czarny P17
+Sadiker: działa to?
+kklz: cholera wie :)
+Sadiker: no fakt, działa
+kklz: https://gyazo.com/7bb62c423f2dc78d06e3e8116017b9ff
+
+]
+
+;W[mn]
+(;B[lf]
+;W[me]C[
+
+-- chat --
+kklz: ale generalnie good for white
+Sadiker: jako słaby amator bym grał R12
+
+]
+
+(;B[cl]
+;W[dl]
+;B[dm]
+;W[em]
+;B[en]
+;W[dn]C[
+
+-- chat --
+kklz: bit mówi, że trzeba bronić cięcia w D4
+kklz: np. w taki sposób. From move 0: Q4 D16 C4 Q16 J3 C14 R6 R14 E4 K16 C10 Q7 Q6 O7 P7 P8 P6 O8 R9 Q10 R10 Q11 M6 L8 K10 E10 G10 L10 K11 L11 P18 O17 K12 R17 K7 C9 B9 C3 D3 D9 B8 E12 E18 D18 D17 E17 C17 C18 E16 F17 C16 D15 F18 B18 G17 F16 G15 F15 F14 G16 H16 E15 H17 H15 J15 G14 H14 J16 G15 C5 B4 H15 K15 L16 G15 G13 H15 D5 E5 C7 B6 B5 A5 B7 A7 C6 A6 Q2 P3 P2 O2 O3 N2 R4 R3 Q3 S4 P4 R5 M3 M2 N5 L3 N6 M14 N15 C8 D8 D7 E7 E6 D6 
+
+]
+
+)(;B[ch]C[
+
+-- chat --
+kklz: teraz dla białego coś takiego:
+LMP2018-2: B 34m, W 23m
+
+]
+
+(;W[dp]
+;B[bq]
+(;W[eq]
+;B[cr]
+;W[en]
+;B[fn]
+;W[fm]
+;B[gn]
+;W[bi]
+;B[ci]
+;W[bh]
+;B[bj]
+;W[cg]C[
+
+-- chat --
+kklz: podobno.... From move 0: Q4 D16 C4 Q16 J3 C14 R6 R14 E4 K16 C10 Q7 Q6 O7 P7 P8 P6 O8 R9 Q10 R10 Q11 M6 L8 K10 E10 G10 L10 K11 L11 P18 O17 K12 R17 K7 C9 B9 C3 D3 D9 B8 E12 E18 D18 D17 E17 C17 C18 E16 F17 C16 D15 F18 B18 G17 F16 G15 F15 F14 G16 H16 E15 H17 H15 J15 G14 H14 J16 G15 C5 B4 H15 K15 L16 G15 G13 H15 D5 E5 C7 B6 B5 A5 B7 A7 C6 A6 Q2 P3 P2 O2 O3 N2 R4 R3 Q3 S4 P4 R5 M3 M2 N5 L3 N6 M14 N15 C12 D4 B3 E3 C2 E6 F6 F7 G6 B11 C11 B12 B10 C13 
+kklz: a nie - źle przeklikałem :P
+fanfanfan: wow
+fanfanfan: niezły spadek
+fanfanfan: jugglerze, czy do takiej analizy jaką robisz potrzebny jest mocny sprzęt?
+fanfanfan: zrobiłeś błąd w słowie 'góra'
+fanfanfan: dzięki za info o sprzęcie i goreview
+fanfanfan: Sadiker = Sadplayer?
+
+]
+
+)(;W[en]
+;B[fn]
+;W[fm]C[
+
+-- chat --
+kklz: bez atari w E3
+
+]
+
+))(;W[bg]C[
+
+-- chat --
+kklz: bot mówi, że to złe aji keshi
+kklz: i ocena białego spadła z 85%  do 61%
+kklz: trudo powiedzieć ile to warte jest punktów
+kklz: nie
+kklz: tzn. mocny sprzęt się przydaje , żeby widzieć 40 ruchowe kontynuacje
+kklz: ale żeby widzieć kto prowadzi wystarczy pewnie komórka
+Sadiker: na lifein19x19 jest o tym temat
+
+]
+
+;B[mf]C[
+
+-- chat --
+Sadiker: wkładasz SGFa i analizuje na bierząco, nawet ja dałem radę obsłużyć ten program
+kklz: np. ten ruch dla bota wygląda jak blunder na pierwszy rzut oka
+kklz: i nie zmienił zdania po 50k playoutów
+kklz: to jest trochę wada tej analizy bota
+kklz: że on widzi to cięcie w D4 jako bardzo duże
+kklz: double sente
+
+]
+
+;W[ib]C[
+
+-- chat --
+kklz: i kto tam nie gra ten blunder :)
+Sadiker: http://yuntingdian.com/goreviewpartner/
+kklz: nic nie mówiąc  o jakości ruchów na gurze
+kklz: jesus..........
+kklz: do tego był ten komentarz...
+kklz: goreview partner jest lepszy do tego jesli chcesz wrzucic sgf, zostawic na noc i miec komentarz
+kklz: do analizy na zywo fajniejsze jest lizzie
+Sadiker: raz analizowałem swoja partię to przez 30 ruchów bot twierdził, ze powinnienem poddać, a potem wygram na końcu. Trochę dołujące to było
+
+]
+
+;B[lc]C[
+
+-- chat --
+Sadiker: tak
+
+]
+
+;W[ld]
+;B[mc]
+;W[md]C[
+
+-- chat --
+Sadiker: LZ widzi tu życie?
+
+]
+
+;B[kb]
+;W[nb]C[
+
+-- chat --
+Sadiker: uuu
+Sadiker: bolesne
+
+]
+
+;B[ic]
+;W[jb]
+;B[jc]
+;W[kc]
+;B[hb]
+;W[lb]
+;B[em]
+;W[dm]
+;B[el]
+;W[dp]
+;B[bq]
+;W[cr]
+;B[br]
+;W[kp]
+;B[mq]
+;W[mp]C[
+
+-- chat --
+Sadiker: naprawde r12 jest takie małe?
+
+]
+
+;B[jp]
+;W[fk]
+;B[ek]
+;W[dj]
+;B[fj]
+;W[eq]
+;B[dr]
+;W[en]
+;B[fn]
+;W[fo]
+;B[dn]
+;W[al]C[
+
+-- chat --
+Sadiker: bot miał rację z tym cięciem
+LMP2018-2: W+R
+
+]
+
+)))(;B[oc]
+;W[nd]
+;B[qb]
+;W[rb]
+;B[od]
+;W[ne]
+;B[oe]
+;W[nf]
+;B[nb]
+;W[mb]
+;B[lb]
+;W[ma]
+;B[jb]
+;W[mc]
+;B[qh]C[
+
+-- chat --
+kklz: coś takiego np.. From move 0: Q4 D16 C4 Q16 J3 C14 R6 R14 E4 K16 C10 Q7 Q6 O7 P7 P8 P6 O8 R9 Q10 R10 Q11 M6 L8 K10 E10 G10 L10 K11 L11 P18 O17 K12 R17 K7 C9 B9 C3 D3 D9 B8 E12 E18 D18 D17 E17 C17 C18 E16 F17 C16 D15 F18 B18 G17 F16 G15 F15 F14 G16 H16 E15 H17 H15 J15 G14 H14 J16 G15 C5 B4 H15 K15 L16 G15 G13 H15 D5 E5 C7 B6 B5 A5 B7 A7 C6 A6 Q2 P3 P2 O2 O3 N2 R4 R3 Q3 S4 P4 R5 M3 M2 N5 L3 N6 P17 O16 R18 S18 P16 O15 P15 O14 O18 N18 M18 N19 K18 N17 R12 
+
+]
+
+))

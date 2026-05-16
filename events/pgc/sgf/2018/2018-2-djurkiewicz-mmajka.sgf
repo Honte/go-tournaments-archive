@@ -1,167 +1,411 @@
-(
-  ;BR[2d]CA[UTF-8]EV[Polish Go Championship 2018]FF[4]GM[1]GN[Round 2 - Board 4]KM[6.5]PB[Dawid Jurkiewicz]PC[Poznań]PW[Marcin Majka]RE[W+R]RU[japanese]SZ[19]WR[4d]
-  ;B[pp]
-  ;W[pd]
-  ;B[cp]
-  ;W[eq]
-  ;B[dc]
-  ;W[cn]
-  ;B[ep]
-  ;W[fp]
-  ;B[eo]
-  ;W[dq]
-  ;B[co]
-  ;W[cq]
-  ;B[cl]
-  ;W[cf]
-  ;B[cd]
-  ;W[ci]
-  ;B[qc]
-  ;W[qq]
-  ;B[qd]
-  ;W[pq]
-  ;B[pe]
-  ;W[op]
-  ;B[fo]
-  ;W[go]
-  ;B[gn]
-  ;W[ho]
-  ;B[fm]
-  ;W[qj]
-  ;B[dh]
-  ;W[ch]
-  ;B[df]
-  ;W[de]
-  ;B[ce]
-  ;W[dg]
-  ;B[ef]
-  ;W[eh]
-  ;B[jd]
-  ;W[hn]
-  ;B[hm]
-  ;W[im]
-  ;B[gp]
-  ;W[fq]
-  ;B[in]
-  ;W[hl]
-  ;B[gm]
-  ;W[io]
-  ;B[jn]
-  ;W[jo]
-  ;B[kn]
-  ;W[ko]
-  ;B[ln]
-  ;W[mo]
-  ;B[mn]
-  ;W[no]
-  ;B[bf]
-  ;W[nm]
-  ;B[lk]
-  ;W[nk]
-  ;B[di]
-  ;W[dj]
-  ;B[ei]
-  ;W[fi]
-  ;B[gj]
-  ;W[fj]
-  ;B[ek]
-  ;W[ej]
-  ;B[gg]
-  ;W[mi]
-  ;B[oi]
-  ;W[oj]
-  ;B[mh]
-  ;W[li]
-  ;B[jj]
-  ;W[lh]
-  ;B[lg]
-  ;W[kg]
-  ;B[mg]
-  ;W[jh]
-  ;B[kf]
-  ;W[jf]
-  ;B[je]
-  ;W[if]
-  ;B[he]
-  ;W[ik]
-  ;B[jl]
-  ;W[il]
-  ;B[ij]
-  ;W[gk]
-  ;B[gi]
-  ;W[fk]
-  ;B[ki]
-  ;W[lf]
-  ;B[ke]
-  ;W[kh]
-  ;B[ni]
-  ;W[nj]
-  ;B[pi]
-  ;W[qi]
-  ;B[qh]
-  ;W[rh]
-  ;B[rg]
-  ;W[qg]
-  ;B[ph]
-  ;W[rf]
-  ;B[ri]
-  ;W[sg]
-  ;B[pj]
-  ;W[pk]
-  ;B[qk]
-  ;W[rj]
-  ;B[pl]
-  ;W[ok]
-  ;B[pg]
-  ;W[pf]
-  ;B[of]
-  ;W[qf]
-  ;B[mj]
-  ;W[oe]
-  ;B[nf]
-  ;W[mk]
-  ;B[lj]
-  ;W[qe]
-  ;B[rk]
-  ;W[si]
-  ;B[ml]
-  ;W[om]
-  ;B[sj]
-  ;W[ri]
-  ;B[oc]
-  ;W[nc]
-  ;B[pc]
-  ;W[od]
-  ;B[nl]
-  ;W[ol]
-  ;B[nd]
-  ;W[ne]
-  ;B[md]
-  ;W[me]
-  ;B[le]
-  ;W[ll]
-  ;B[kl]
-  ;W[mm]
-  ;B[lm]
-  ;W[ml]
-  ;B[kj]
-  ;W[hj]
-  ;B[ih]
-  ;W[fg]
-  ;B[gh]
-  ;W[ff]
-  ;B[ee]
-  ;W[fe]
-  ;B[fc]
-  ;W[ck]
-  ;B[dl]
-  ;W[gd]
-  ;B[bk]
-  ;W[bj]
-  ;B[hb]
-  ;W[bl]
-  ;B[bm]
-  ;W[ak]
-  ;B[bn]
-  ;W[bp]
-)
+(;FF[4]
+GM[1]
+PC[OGS: http://online-go.com/game/review/352711]
+BR[2d]
+WR[4d]
+CP[online-go.com]
+TM[0]OT[0 none]
+RE[?]
+SZ[19]
+KM[6.5]
+RU[japanese]
+C[
+
+-- chat --
+quaigon: ale mecz!
+Sadiker: Patrząc po  wczorajszym to cz powinnien wygrać :)
+
+]
+
+;B[pp]
+;W[pd]
+;B[cp]
+;W[eq]
+;B[dc]C[
+
+-- chat --
+LMP2018-4: Strona wydarzenia http://mp.go.art.pl/2018/pl
+
+]
+
+;W[cn]
+;B[ep]
+;W[fp]
+;B[eo]
+;W[dq]
+;B[co]
+;W[cq]
+;B[cl]
+;W[cf]
+;B[cd]
+;W[ci]
+;B[qc]
+;W[qq]
+;B[qd]
+;W[pq]
+;B[pe]
+;W[op]
+;B[fo]
+;W[go]
+;B[gn]
+;W[ho]C[
+
+-- chat --
+dead_robot: a skąd taka wróżba, Sadiker?
+dead_robot: biały słabo grał, czy czarny taki świetny?
+Sadiker: Bialemu sie fartło wczoraj :)
+
+]
+
+;B[fm]
+;W[qj]
+;B[dh]C[
+
+-- chat --
+Sadiker: F7 dziwne
+Sadiker: najpierw daje teren po 5 lini a potem sie wraca
+Sadiker: ale może to nowy styl Alphago ;)
+
+]
+
+;W[ch]C[
+
+-- chat --
+dead_robot: wygląda na PanzerGo
+
+]
+
+;B[df]C[
+
+-- chat --
+Sadiker: jak biały zajmie okolice k17 to może być cięzko
+
+]
+
+;W[de]
+;B[ce]
+;W[dg]
+;B[ef]
+;W[eh]C[
+
+-- chat --
+dead_robot: chyba mógł od razu k17 grać czarny
+dead_robot: teraz ciężko się stąd wyplątać
+dead_robot: (od razu po ruchu białego na bandzie)
+dead_robot: choć pewnie to byłoby zbyt pokojowo i w ogóle na nasze niespokojne czasy
+
+]
+
+;B[jd]
+;W[hn]
+;B[hm]
+;W[im]
+;B[gp]
+;W[fq]C[
+
+-- chat --
+LMP2018-4: Jak  najlepiej zmniejszyć terytorium białego?M4?L3?
+
+]
+
+;B[in]
+;W[hl]
+;B[gm]C[
+
+-- chat --
+dead_robot: ja bym tak głęboko nie wchodził
+dead_robot: bo wtedy ryzyko jest, że do prawej bandy zbuduje ścianę
+
+]
+
+;W[io]
+;B[jn]
+;W[jo]C[
+
+-- chat --
+dead_robot: chyba najpierw próbowałbym bezpośrednio dłubać przy R10
+dead_robot: zresztą problem się sam rozwązuje...
+LMP2018-4: W sumie rcaja, ale idąc od góry daje teren białemu na 5 linii i to taki solidny
+dead_robot: 5 linia jest ok ;)
+
+]
+
+;B[kn]C[
+
+-- chat --
+dead_robot: jak daję na 7, to zaczynam się martwić ;)
+
+]
+
+;W[ko]
+;B[ln]
+;W[mo]C[
+
+-- chat --
+LMP2018-4: Nowe spojrzenie na świat :D 
+
+]
+
+;B[mn]
+;W[no]
+;B[bf]
+;W[nm]
+;B[lk]
+;W[nk]C[
+
+-- chat --
+Sadiker: tak na oko to cz musi zabić c12 by wygrac
+
+]
+
+;B[di]
+;W[dj]
+;B[ei]
+;W[fi]C[
+
+-- chat --
+LMP2018-4: Dawid skomentował "Co za bezsens"
+
+]
+
+;B[gj]
+;W[fj]
+;B[ek]
+;W[ej]
+;B[gg]
+;W[mi]C[
+
+-- chat --
+Sadiker: ale czemu ni eciągnął drabinki?
+
+]
+
+;B[oi]
+;W[oj]C[
+
+-- chat --
+LMP2018-4: Dobre pytanie, na które kompletnie nie znam odpowiedzi, bo chyba działało(przynajmniej tak mi się zdaje)
+
+]
+
+;B[mh]
+;W[li]C[
+
+-- chat --
+silk: a może z G10 nie trafił tam gdzie chciał zagrać? :D
+LMP2018-4: Jakoś nie wychwyciłam załamanej twarzy po postawieniu i chwytania się za głwę mówiącego"Gdzie ja położyłem"
+silk: :)
+
+]
+
+;B[jj]
+;W[lh]
+;B[lg]
+;W[kg]
+;B[mg]
+;W[jh]
+;B[kf]
+;W[jf]
+;B[je]
+;W[if]
+;B[he]
+;W[ik]
+;B[jl]
+;W[il]C[
+
+-- chat --
+cehijow: Silku grasz w turnieju towarzyszącym? :)
+silk: (tu pasqda) nie, Silk raczej nie gra w towarzyszącym, sędziuje ligę
+
+]
+
+;B[ij]
+;W[gk]C[
+
+-- chat --
+ekrilat: h12?
+
+]
+
+;B[gi]
+;W[fk]C[
+
+-- chat --
+Sadiker: Zapytaj po grze o co chodziło z tą drabinką :)
+
+]
+
+;B[ki]
+;W[lf]
+;B[ke]C[
+
+-- chat --
+Sadiker: też raz tak miałem jak liczyłem drabinkę, ale mi się kolor którym grałem pomylił
+
+]
+
+;W[kh]
+;B[ni]
+;W[nj]C[
+
+-- chat --
+LMP2018-4: Zapytam, zapytam, bo mi to nie da spać :D 
+
+]
+
+;B[pi]
+;W[qi]
+;B[qh]
+;W[rh]
+;B[rg]
+;W[qg]
+;B[ph]
+;W[rf]
+;B[ri]
+;W[sg]
+;B[pj]
+;W[pk]C[
+
+-- chat --
+Sadiker: S13 też nie rozumiem
+
+]
+
+;B[qk]
+;W[rj]
+;B[pl]
+;W[ok]C[
+
+-- chat --
+Sadiker: teraz ma takie słabosci w p14 że aż oczy bolą
+
+]
+
+;B[pg]
+;W[pf]
+;B[of]
+;W[qf]C[
+
+-- chat --
+LMP2018-4: Może chciał zrobić grupę w terytorium białego? Bądź co bądź miał trochę wymuszeń, ale chyba nie działa 
+
+]
+
+;B[mj]
+;W[oe]C[
+
+-- chat --
+LMP2018-3: jaka wymiana
+quaigon: spoko dla bialego
+quaigon: nawet bardzo
+Sadiker: albo po prostu przegrywa i ryzykuje
+
+]
+
+;B[nf]
+;W[mk]
+;B[lj]
+;W[qe]
+;B[rk]
+;W[si]C[
+
+-- chat --
+Sadiker: O8?
+Sadiker: albo lepiej P7
+
+]
+
+(;B[ml]
+;W[om]C[
+
+-- chat --
+LMP2018-4: Black is in byo yomi, White has 59 m remaining
+Sadiker: Po partii zapytaj też o P7 :)
+LMP2018-4: Pewnie ^^
+
+]
+
+;B[sj]
+;W[ri]C[
+
+-- chat --
+silk: To N8  jakieś takie zbyt uległe
+
+]
+
+;B[oc]C[
+
+-- chat --
+Sadiker: ale sente
+silk: A T9 jest puste? :D
+LMP2018-4: Tak ^^' Deejay jest w byo i zostało mu kilka sekund wtedy
+silk: a, time-suji :D
+
+]
+
+;W[nc]
+;B[pc]
+;W[od]
+;B[nl]
+;W[ol]
+;B[nd]
+;W[ne]
+;B[md]
+;W[me]
+;B[le]
+;W[ll]
+;B[kl]
+;W[mm]
+;B[lm]C[
+
+-- chat --
+Sadiker: ale o16 było piękne
+Sadiker: teraz wygląda jakby cz za darmo wziął L12
+
+]
+
+;W[ml]
+;B[kj]
+;W[hj]
+;B[ih]
+;W[fg]
+;B[gh]
+;W[ff]
+;B[ee]
+;W[fe]
+;B[fc]
+;W[ck]
+;B[dl]
+;W[gd]
+;B[bk]
+;W[bj]
+;B[hb]
+;W[bl]
+;B[bm]
+;W[ak]C[
+
+-- chat --
+Sadiker: a jakieś n17 a potem S16?
+
+]
+
+;B[bn]
+;W[bp]C[
+
+-- chat --
+LMP2018-4: W+R
+
+]
+
+)(;B[nl]
+;W[ol]
+;B[om]
+;W[ml]
+;B[nn]C[
+
+-- chat --
+Sadiker: Tj o8, p7 jednak nie działa
+
+]
+
+))

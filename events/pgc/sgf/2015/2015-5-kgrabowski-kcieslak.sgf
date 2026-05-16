@@ -1,224 +1,396 @@
-(
-  ;BR[2d]BT[Opole]CA[UTF-8]DT[2016-01-09]EV[Polish Go Championship 2015]FF[4]GM[1]GN[Round 5 - Board 3]KM[6.50]PB[Kamil Grabowski]PC[Warszawa]PW[Karol Cieślak]RE[B+R]RU[japanese]ST[2]SZ[19]WR[1k]WT[Koszalin]
-  ;B[qd]
-  ;W[dd]
-  ;B[pp]
-  ;W[dq]
-  ;B[fc]
-  ;W[cf]
-  ;B[lc]
-  ;W[qj]
-  ;B[qn]
-  ;W[ic]
-  ;B[qh]
-  ;W[gd]
-  ;B[do]
-  ;W[od]
-  ;B[oc]
-  ;W[nc]
-  ;B[pc]
-  ;W[nd]
-  ;B[pf]TR[nc][oc][pc][nd]
-  ;W[of]
-  ;B[le]
-  ;W[mf]
-  ;B[kg]
-  ;W[qe]
-  ;B[pe]
-  ;W[pd]
-  ;B[qc]
-  ;W[pg]
-  ;B[qf]
-  ;W[qg]
-  ;B[rg]
-  ;W[ph]
-  ;B[rh]
-  ;W[oj]
-  ;B[je]
-  ;W[dc]
-  ;B[cq]
-  ;W[cr]
-  ;B[cp]
-  ;W[gq]
-  ;B[iq]
-  ;W[ip]
-  ;B[jp]
-  ;W[hp]
-  ;B[jq]
-  ;W[br]
-  ;B[cl]
-  ;W[pq]
-  ;B[qq]
-  ;W[oq]
-  ;B[qp]
-  ;W[lp]
-  ;B[jo]
-  ;W[ln]
-  ;B[jm]
-  ;W[ki]
-  ;B[ll]
-  ;W[ml]
-  ;B[mk]
-  ;W[nl]
-  ;B[lm]
-  ;W[nn]
-  ;B[nk]
-  ;W[kn]
-  ;B[jn]
-  ;W[lk]
-  ;B[ok]
-  ;W[pl]
-  ;B[lj]
-  ;W[kk]
-  ;B[jl]
-  ;W[mj]
-  ;B[nj]
-  ;W[mi]
-  ;B[ni]
-  ;W[mh]
-  ;B[pi]
-  ;W[qi]
-  ;B[oi]
-  ;W[nh]
-  ;B[qk]
-  ;W[pk]
-  ;B[pj]
-  ;W[rk]
-  ;B[ol]
-  ;W[pm]
-  ;B[om]
-  ;W[pn]
-  ;B[on]
-  ;W[po]
-  ;B[oo]
-  ;W[qo]
-  ;B[ro]
-  ;W[rm]
-  ;B[rn]
-  ;W[ri]
-  ;B[ql]
-  ;W[rf]
-  ;B[re]
-  ;W[qm]
-  ;B[si]
-  ;W[rl]
-  ;B[sj]
-  ;W[sm]
-  ;B[op]
-  ;W[sk]
-  ;B[jc]
-  ;W[lr]
-  ;B[mq]
-  ;W[mr]
-  ;B[nq]
-  ;W[nr]
-  ;B[qr]
-  ;W[jr]
-  ;B[ir]
-  ;W[np]
-  ;B[or]
-  ;W[kq]
-  ;B[ks]
-  ;W[is]
-  ;B[hr]
-  ;W[no]
-  ;B[mn]
-  ;W[gr]
-  ;B[hs]
-  ;W[jb]
-  ;B[id]
-  ;W[kc]
-  ;B[jd]
-  ;W[kb]
-  ;B[hc]
-  ;W[ib]
-  ;B[hd]
-  ;W[ge]
-  ;B[ih]
-  ;W[hj]
-  ;B[lb]
-  ;W[mb]
-  ;B[kd]
-  ;W[md]
-  ;B[ld]
-  ;W[la]
-  ;B[jj]
-  ;W[ji]
-  ;B[ii]
-  ;W[ij]
-  ;B[jk]
-  ;W[kf]
-  ;B[jf]
-  ;W[ig]
-  ;B[hg]
-  ;W[if]
-  ;B[hf]
-  ;W[jh]
-  ;B[jg]
-  ;W[hh]
-  ;B[ie]
-  ;W[ig]
-  ;B[ff]
-  ;W[gh]
-  ;B[hb]
-  ;W[ed]
-  ;B[ka]
-  ;W[ja]
-  ;B[ha]
-  ;W[ma]
-  ;B[eb]
-  ;W[lf]
-  ;B[fg]
-  ;W[dh]
-  ;B[df]
-  ;W[ee]
-  ;B[dg]
-  ;W[cg]
-  ;B[cb]
-  ;W[db]
-  ;B[da]
-  ;W[bc]
-  ;B[cc]
-  ;W[cd]
-  ;B[bb]
-  ;W[ab]
-  ;B[bd]
-  ;W[ad]
-  ;B[ac]
-  ;W[os]
-  ;B[pr]
-  ;W[bc]
-  ;B[be]
-  ;W[ba]
-  ;B[ac]
-  ;W[kl]
-  ;B[km]
-  ;W[bc]
-  ;B[ce]
-  ;W[ca]
-  ;B[ch]
-  ;W[ci]
-  ;B[bh]
-  ;W[bi]
-  ;B[bg]
-  ;W[ck]
-  ;B[dl]
-  ;W[dk]
-  ;B[kj]
-  ;W[hi]
-  ;B[li]
-  ;W[lh]
-  ;B[kh]
-  ;W[oe]
-  ;B[sf]
-  ;W[ef]
-  ;B[eg]
-  ;W[fa]
-  ;B[lg]
-  ;W[ob]
-  ;B[pb]
-  ;W[me]
-  ;B[nf]
-  ;W[mg]
-  ;B[oa]
-)
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[5400]OT[1x60 byo-yomi]
+GN[Karol 1k Cieślak (while) vs. Kamil 2d Grabowski (black)]PW[Karol Cieślak]PB[Kamil Grabowski]WR[1k]BR[2d]DT[2016-01-09]PC[The KGS Go Server at http://www.gokgs.com/]WT[Koszalin]BT[Opole]C[LMP3 [-\]: the players have sit down and are talking
+LMP3 [-\]: I'm doing my best to distract them
+LMP3 [-\]: (KaC said I should write that I'm tasuki, so yea)
+]RE[B+Resign]
+;B[qd]
+;W[dd]C[LMP3 [-\]: black played his move resolutely, white played his lazily
+afterbreak [2k?\]: TASUKI!!!!!!!!!!!!!!!!!!!!!!!!!!! :D
+LMP3 [-\]: we've just had a good lunch
+]
+;B[pp]C[LMP3 [-\]: white said: "tak mi jeszcze nikt nie zagral"
+]
+;W[dq]
+;B[fc]
+;W[cf]
+;B[lc]C[afterbreak [2k?\]: haha
+LMP3 [-\]: Kamil got up to watch other, possibly more interesting, games
+afterbreak [2k?\]: what was good in lunch? ;p
+LMP3 [-\]: curry and some other stuff, and it was discounted!
+]
+;W[qj]
+;B[qn]
+;W[ic]
+;B[qh]
+;W[gd]
+;B[do]C[LMP3 [-\]: Kamil again off to watch the other games
+]
+;W[od]
+;B[oc]C[LMP3 [-\]: I won't tell you what I think about this move
+]
+;W[nc]
+;B[pc]C[afterbreak [2k?\]: u would play it too :P
+LMP3 [-\]: no way, never ever
+]
+;W[nd]
+;B[pf]TR[nc][oc][pc][nd]C[afterbreak [2k?\]: its best posible combination! :P
+LMP3 [-\]: to provide a bit of an online commentary, look which two of the triangle-marked stones are more useful
+]
+;W[of]C[LMP3 [-\]: both players seem rather concentrated
+LMP3 [-\]: no thrashtalking
+vertigo [-\]: yes, very boring
+vertigo [-\]: spectators want blood!
+vertigo [-\]: I know!
+vertigo [-\]: i think i'll accidentaly trip over a cable or something
+vertigo [-\]: and disrupt the board
+vertigo [-\]: #chaos
+]
+;B[le]
+;W[mf]
+;B[kg]C[LMP3 [-\]: strange that white chose p14 over m15
+]
+;W[qe]
+;B[pe]
+;W[pd]
+;B[qc]
+;W[pg]
+;B[qf]
+;W[qg]
+;B[rg]
+;W[ph]
+;B[rh]C[LMP3 [-\]: Kamil is fidgety and keeps getting up
+LMP3 [-\]: Karol sitting patiently
+]
+;W[oj]C[LMP3 [-\]: Karol played his move and got up as well
+LMP3 [-\]: Kamil chatting with someone on the phone
+]
+;B[je]
+;W[dc]
+;B[cq]
+;W[cr]
+;B[cp]
+;W[gq]
+;B[iq]
+;W[ip]
+;B[jp]
+;W[hp]C[LMP3 [-\]: Kamil checking his phone again
+LMP3 [-\]: he must have a joseki dictionary in there
+LMP3 [-\]: or an angry wife
+LMP3 [-\]: or something similarly urgent
+]
+;B[jq]
+;W[br]
+;B[cl]C[LMP3 [-\]: if my opponent did that I'd bring it up
+LMP3 [-\]: now Kamil got up to chat on his phone
+Slaboumov [5k\]: brake his phone
+]
+;W[pq]C[LMP3 [-\]: Mateusz walking around watching the games
+LMP3 [-\]: he's wearing a suit
+afterbreak [2k?\]: if ure strongest in country then u need suit :P
+Slaboumov [5k\]: xD
+]
+;B[qq]C[LMP3 [-\]: I'll just write a dot here whenever Kamil checks his phone
+LMP3 [-\]: .
+]
+;W[oq]
+;B[qp]C[LMP3 [-\]: .
+]
+;W[lp]
+;B[jo]
+;W[ln]
+;B[jm]
+;W[ki]C[LMP3 [-\]: suddenly they play fast
+LMP3 [-\]: Kamil lost interest in his phone
+]
+;B[ll]
+;W[ml]
+;B[mk]C[LMP3 [-\]: .
+SadPlayer [-\]: na josekipedie wchodzi
+]
+;W[nl]
+;B[lm]
+;W[nn]C[afterbreak [2k?\]: e tam :P
+]
+;B[nk]
+;W[kn]
+;B[jn]
+;W[lk]C[LMP3 [-\]: w stretched, smiled, and cut
+]
+;B[ok]C[Slaboumov [5k\]: you better then tv xD
+]
+;W[pl]
+;B[lj]
+;W[kk]
+;B[jl]C[LMP3 [-\]: they play on a bamboo board with plastic stones
+LMP3 [-\]: rather unusual for a championship
+afterbreak [2k?\]: well.. pooor country and poor psg.. :P
+]
+;W[mj]C[LMP3 [-\]: white cut with a poker face and checked the reaction of his opponent
+]
+;B[nj]C[afterbreak [2k?\]: looks like one problem I did today :P
+LMP3 [-\]: black even more fidgety than usual, I don't think he's happy with the fight
+LMP3 [-\]: bridge players' volume has increased markedly
+afterbreak [2k?\]: right, so who read out that?
+afterbreak [2k?\]: black escape? :P
+LMP3 [-\]: I wonder what w is thinking about
+LMP3 [-\]: don't think he can sacrifice that stone
+afterbreak [2k?\]: hes searching resign button? :P
+FoH [-\]: prolly searching it at the phone )
+]
+;W[mi]C[LMP3 [-\]: white hasn't used his phone since they started playing
+LMP3 [-\]: or he's hiding it under the table very well
+FoH [-\]: w is ok
+FoH [-\]: but b need to start it
+LMP3 [-\]: black leaning over the board, his chin above the tengen
+]
+;B[ni]
+;W[mh]C[FoH [-\]: no way to excape
+FoH [-\]: escape*
+SadPlayer [-\]: q11 
+SadPlayer [-\]: q11 q10 p13 p12 p11 o12 r11 
+LMP3 [-\]: q11 r11 probably
+FoH [-\]: yes
+SadPlayer [-\]: q11 r11 r9 
+LMP3 [-\]: no :P
+SadPlayer [-\]: q11 r11 r9 q9 p11 p12 q10 s9 r8 s8 p8 
+LMP3 [-\]: after s8 in your sequence, w plays r8 shicho
+LMP3 [-\]: still captured
+]
+;B[pi]C[LMP3 [-\]: b stopped fidgeting and let out a loud sigh
+LMP3 [-\]: ah no, not captured
+FoH [-\]: pretty usefull combination
+SadPlayer [-\]: \\o/
+LMP3 [-\]: (I should leave the speculation to you guys, but it's too tempting to make wild guesses)
+]
+;W[qi]
+;B[oi]C[FoH [-\]: maybe something like r8 q9 p8 p7 n6 o7 better way
+]
+;W[nh]C[FoH [-\]: to cut bottom stones
+]
+;B[qk]
+;W[pk]
+;B[pj]
+;W[rk]
+;B[ol]C[afterbreak [2k?\]: and we got winner :D
+]
+;W[pm]C[Slaboumov [5k\]: why not r8 first?
+]
+;B[om]
+;W[pn]
+;B[on]
+;W[po]C[FoH [-\]: to get more profit
+]
+;B[oo]C[Slaboumov [5k\]: with r8 black can run more simple no? )
+Slaboumov [5k\]: anyway, white have trouble )
+LMP3 [-\]: .
+Slaboumov [5k\]: phone? )
+LMP3 [-\]: yes
+LMP3 [-\]: finally!
+LMP3 [-\]: I thought he lost it
+poh:  you are a bit annoyed by b behaviour aren't you?
+LMP3 [-\]: actually I'm amused
+LMP3 [-\]: but if I were playing I'd be annoyed, yes
+]
+;W[qo]C[poh: are chess player allowed to use mobiles during a match?
+]
+;B[ro]
+;W[rm]
+;B[rn]C[LMP3 [-\]: no way to delete a move in a demo?
+]
+;W[ri]
+;B[ql]
+;W[rf]
+;B[re]C[Slaboumov [5k\]: add new move tree
+afterbreak [2k?\]: btw if b would play first t11 wouldnt be it better than just killin r15?
+afterbreak [2k?\]: or then the corner would be to weak?
+Slaboumov [5k\]: time to res?
+]
+;W[qm]
+;B[si]
+;W[rl]
+;B[sj]C[LMP3 [-\]: I'm surprised b didn't let w live
+LMP3 [-\]: p4 too good for b in sente imo
+]
+;W[sm]
+;B[op]C[LMP3 [-\]: oh
+]
+;W[sk]C[Slaboumov [5k\]: o3 ?
+LMP3 [-\]: perhaps no need... dead already?
+Slaboumov [5k\]: i'm don't understand, why black don't kill right side
+]
+;B[jc]C[LMP3 [-\]: small + danger of p4
+]
+;W[lr]
+;B[mq]
+;W[mr]
+;B[nq]
+;W[nr]
+;B[qr]C[FoH [-\]: if not t9 than can be semeai that w wins
+]
+;W[jr]
+;B[ir]
+;W[np]
+;B[or]
+;W[kq]C[LMP3 [-\]: zzz
+Slaboumov [5k\]: xDDD
+]
+;B[ks]C[LMP3 [-\]: if I were black _now_ I'd take out my phone
+FoH [-\]: time to kill l16 or res
+]
+;W[is]
+;B[hr]
+;W[no]
+;B[mn]C[LMP3 [-\]: could also kill k8
+LMP3 [-\]: but yea, difficult ^^
+]
+;W[gr]
+;B[hs]C[FoH [-\]: hard to say how many tenukies b need to do 4 w to kill l16 group)
+]
+;W[jb]
+;B[id]
+;W[kc]
+;B[jd]C[Slaboumov [5k\]: no one
+FoH [-\]: do u think its already dead?
+]
+;W[kb]
+;B[hc]
+;W[ib]
+;B[hd]C[Slaboumov [5k\]: похоже что оно может жить и тенучить?
+FoH [-\]: угу
+FoH [-\]: выбигай куда хочешь
+]
+;W[ge]C[FoH [-\]: места вагон
+]
+;B[ih]
+;W[hj]
+;B[lb]
+;W[mb]
+;B[kd]
+;W[md]
+;B[ld]
+;W[la]
+;B[jj]
+;W[ji]
+;B[ii]
+;W[ij]
+;B[jk]
+;W[kf]
+;B[jf]C[FoH [-\]: очень странный замес
+FoH [-\]: тут 2 глаза сделать в темпе раз плюнуть
+]
+;W[ig]C[LMP3 [-\]: w going full berserk
+Slaboumov [5k\]: боюсь спросить какой у тебя кю? )
+FoH [-\]: у меня не кю
+LMP3 [-\]: b has slightly more time but none of them are i byoyomi yet
+]
+;B[hg]
+;W[if]
+;B[hf]
+;W[jh]
+;B[jg]
+;W[hh]
+;B[ie]
+;W[ig]
+;B[ff]
+;W[gh]
+;B[hb]
+;W[ed]
+;B[ka]
+;W[ja]
+;B[ha]
+;W[ma]
+;B[eb]C[LMP3 [-\]: zzz
+LMP3 [-\]: this white group also gone
+]
+;W[lf]C[LMP3 [-\]: not sure why B doesn't play L10 
+]
+;B[fg]C[LMP3 [-\]: ah it can connect, not gone yet, anyway b should still L10
+Slaboumov [5k\]: o7 connect if you think about k7 
+LMP3 [-\]: talking about white n12 group
+]
+;W[dh]C[LMP3 [-\]: but not as dead as I thought
+]
+;B[df]C[LMP3 [-\]: .
+LMP3 [-\]: .
+]
+;W[ee]C[Slaboumov [5k\]: talk with pro about this game xD
+]
+;B[dg]
+;W[cg]
+;B[cb]
+;W[db]
+;B[da]C[Slaboumov [5k\]: to many adzi, black must find life anyway
+LMP3 [-\]: agreed
+]
+;W[bc]
+;B[cc]C[FoH [-\]: e12 f12 still available
+]
+;W[cd]
+;B[bb]
+;W[ab]
+;B[bd]
+;W[ad]
+;B[ac]C[Slaboumov [5k\]: easy ko for black?
+LMP3 [-\]: yes
+FoH [-\]: ofc
+FoH [-\]: free ko
+]
+;W[os]C[LMP3 [-\]: white about to enter byoyomi
+Slaboumov [5k\]: just for lulz black can ignore this, and still ahead xD
+]
+;B[pr]
+;W[bc]
+;B[be]
+;W[ba]
+;B[ac]
+;W[kl]
+;B[km]
+;W[bc]
+;B[ce]
+;W[ca]
+;B[ch]
+;W[ci]
+;B[bh]
+;W[bi]
+;B[bg]
+;W[ck]C[Slaboumov [5k\]: time to res number two
+]
+;B[dl]C[LMP3 [-\]: w seems to have lost fighting spirit
+]
+;W[dk]C[LMP3 [-\]: he's basically filling the board with stones now
+]
+;B[kj]
+;W[hi]
+;B[li]
+;W[lh]
+;B[kh]
+;W[oe]
+;B[sf]C[Slaboumov [5k\]: he win one game on this tournament? or more?
+]
+;W[ef]
+;B[eg]
+;W[fa]C[Entity [1d\]: f19 too obvious
+]
+;B[lg]C[LMP3 [-\]: one so far
+LMP3 [-\]: but he had strong opponents
+FoH [-\]: now b has great chance to die
+]
+;W[ob]
+;B[pb]C[LMP3 [-\]: w probably dies a lot faster
+]
+;W[me]C[Entity [1d\]: die where?
+]
+;B[nf]C[Entity [1d\]: a12 is life, isn't it?
+LMP3 [-\]: this was a rather silly move
+LMP3 [-\]: ah yes, a12 is life
+]
+;W[mg]C[LMP3 [-\]: what. are. they. doing.
+LMP3 [-\]: shouldn't white have played o13 ?
+]
+;B[oa]C[LMP3 [-\]: oh, resigned
+LMP3 [-\]: none of them seem particularly happy
+LMP3 [-\]: thanks for watching, see you tomorrow!
+FoH [-\]: yes life but b can be faster
+FoH [-\]: n13 mistake
+])
