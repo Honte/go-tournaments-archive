@@ -1,11 +1,15 @@
 import { SgfParser } from './parser';
-import type { SgfNode, SgfPropertyValue } from './schema';
+import type { SgfNode, SgfNodeData } from './schema';
 
-export type { SgfNode, SgfPropertyValue } from './schema';
+export type { SgfNode, SgfNodeData, SgfNodeDataValue } from './schema';
 
 export class Sgf {
   private readonly root: SgfNode;
   private nodes = new Map<number, SgfNode>();
+
+  static clean(content: string, props?: SgfNodeData): string {
+    return new Sgf(content).stripShorterBranches().stripComments().updateRootProperties(props).toString(false);
+  }
 
   constructor(content: string) {
     const parser = new SgfParser(content);
@@ -43,12 +47,20 @@ export class Sgf {
     return this;
   }
 
-  updateRootProperties(props: Record<string, SgfPropertyValue>): this {
+  updateRootProperties(props?: SgfNodeData): this {
+    if (!props) {
+      return this;
+    }
+
     for (const [prop, nextValue] of Object.entries(props)) {
       const current = this.root.data[prop] ?? [];
       const value = typeof nextValue === 'function' ? nextValue([...current]) : nextValue;
 
-      this.root.data[prop] = Array.isArray(value) ? value.map(String) : [String(value)];
+      if (value === null) {
+        delete this.root.data[prop];
+      } else {
+        this.root.data[prop] = Array.isArray(value) ? value.map(String) : [String(value)];
+      }
     }
 
     return this;

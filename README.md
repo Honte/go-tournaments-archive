@@ -412,6 +412,10 @@ When an `sgf` prop is present, the app exposes `/sgf/...` routes and attaches co
 
 Place SGF files under `events/[event-id]/sgf/[year]/`.
 
+SGF parsing, cleanup, and stringifying are handled by the internal parser in `tools/sgf/`. The `Sgf.clean()` helper is
+used when serving cleaned SGFs and generating previews: it keeps the longest branch, strips comments, applies archive
+root metadata, and emits compact SGF output. Raw SGFs remain available through `/sgf/.../*.raw.sgf`.
+
 Available SGF tools:
 
 ```bash
@@ -456,7 +460,7 @@ Relevant tool modules:
 - `tools/templates.ts` creates SGF templates.
 - `tools/fix.ts` normalizes SGF property names.
 - `tools/sgfMatcher/` matches SGF files back to games and writes YAML.
-- `tools/sgf.ts` cleans SGF files before serving.
+- `tools/sgf/` parses, cleans, and stringifies SGF files before serving.
 - `tools/svg.ts`, `tools/png.ts`, `tools/jpg.ts` generate board previews.
 
 ## Adding a new event
@@ -477,4 +481,4 @@ Relevant tool modules:
 - TanStack Table and React Query
 - YAML tournament data
 - H9 tournament import parser
-- SGF parsing and generated board previews via `@sabaki/go-board`, SVGO, Sharp, and Resvg
+- Internal SGF parser with generated board previews via `@sabaki/go-board`, SVGO, Sharp, and Resvg

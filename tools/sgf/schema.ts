@@ -5,4 +5,11 @@ export type SgfNode = {
   data: Record<string, string[]>;
 };
 
-export type SgfPropertyValue = string | string[] | ((current: string[]) => string | string[]);
+export type SgfNodeDataValue =
+  | string
+  | string[]
+  | number
+  | null
+  | ((current: string[]) => string | number | string[] | null);
+
+export type SgfNodeData = Record<string, SgfNodeDataValue>;

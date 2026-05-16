@@ -1,7 +1,7 @@
 import EVENT from '@event';
 import { readFile, writeFile } from 'node:fs/promises';
-import sgfParser, { SgfNode } from '@sabaki/sgf';
 import fg from 'fast-glob';
+import { Sgf, type SgfNode } from '@tools/sgf';
 
 const files = await fg.glob(`./events/${EVENT}/**/*.sgf`);
 
@@ -10,20 +10,21 @@ let noFix = 0;
 let corrupted = 0;
 for (const file of files) {
   try {
-    const sgf = sgfParser.parse(await readFile(file, 'utf-8'));
+    const sgf = new Sgf(await readFile(file, 'utf-8'));
+    const root = sgf.getRoot();
     let fixed = false;
 
-    if (fixPlayerRanks(sgf)) {
+    if (fixPlayerRanks(root)) {
       fixed = true;
     }
 
-    if (warnAboutMissingPlayers(sgf)) {
+    if (warnAboutMissingPlayers(root)) {
       console.log(`Missing players: ${file}`);
     }
 
     if (fixed) {
       toFix++;
-      await writeFile(file, sgfParser.stringify(sgf), 'utf-8');
+      await writeFile(file, sgf.toString(false), 'utf-8');
     } else {
       noFix++;
     }
@@ -32,8 +33,7 @@ for (const file of files) {
   }
 }
 
-function fixPlayerRanks(sgf: SgfNode[]): boolean {
-  const [root] = sgf;
+function fixPlayerRanks(root: SgfNode): boolean {
   let fixed = false;
 
   if (root.data.RB) {
@@ -51,9 +51,7 @@ function fixPlayerRanks(sgf: SgfNode[]): boolean {
   return fixed;
 }
 
-function warnAboutMissingPlayers(sgf: SgfNode[]): boolean {
-  const [root] = sgf;
-
+function warnAboutMissingPlayers(root: SgfNode): boolean {
   return !root.data.PB || !root.data.PW;
 }
 

@@ -116,6 +116,20 @@ describe('Sgf', () => {
     });
   });
 
+  it('updates root properties with numbers, null deletes, and undefined props are ignored', () => {
+    const sgf = new Sgf('(;KM[6.5]PW[White])');
+
+    sgf.updateRootProperties();
+    sgf.updateRootProperties({
+      KM: 7.5,
+      PW: null,
+    });
+
+    assert.deepEqual(sgf.getRoot().data, {
+      KM: ['7.5'],
+    });
+  });
+
   it('returns the unique longest branch as nodes', () => {
     const sgf = new Sgf('(;A[root];B[aa](;W[bb];B[cc])(;W[dd]))');
     const branch = sgf.getLongestBranch();
@@ -158,6 +172,16 @@ describe('Sgf', () => {
     assert.equal(sgf.toString().startsWith('('), true);
     assert.equal(sgf.toString(true).startsWith('('), true);
     assert.match(sgf.toString(true), /\n  ;B\[aa\]\n  ;W\[bb\]\n\)$/);
+  });
+
+  it('cleans SGFs through the static cleaner', () => {
+    const output = Sgf.clean('(;PW[Old]C[root];B[aa](;W[bb]C[move];B[cc])(;W[dd]))', {
+      PW: 'New',
+      KM: 6.5,
+      C: null,
+    });
+
+    assert.equal(output, '(;PW[New]KM[6.5];B[aa];W[bb];B[cc])');
   });
 
   it('round-trips local SGF examples in compact and pretty formats', () => {

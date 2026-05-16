@@ -8,7 +8,7 @@ import { DEFAULT_LOCALE } from '@/i18n/locales';
 import { loadTranslations } from '@/i18n/server';
 import { generateJpg } from '@tools/jpg';
 import { generatePng } from '@tools/png';
-import { cleanSgf } from '@tools/sgf';
+import { Sgf } from '@tools/sgf';
 import { generateSvg } from '@tools/svg';
 import { getTournaments } from '@/data';
 import { loadGameSgfProps } from '@/data/sgfs';
@@ -67,7 +67,7 @@ export async function GET(request: NextRequest, props: RouteProps) {
 
     return new Response('Not Found', { status: 404 });
   } catch (err) {
-    console.error(err);
+    console.error(`Error generating ${segments.join('/')}:`, err);
     return new Response('Not Found', { status: 404 });
   }
 }
@@ -131,5 +131,5 @@ async function getSgf(file: string, raw = false) {
     throw new Error(`Could not find game for ${sgfPath}`);
   }
 
-  return cleanSgf(content, sgfProps);
+  return Sgf.clean(content, sgfProps);
 }

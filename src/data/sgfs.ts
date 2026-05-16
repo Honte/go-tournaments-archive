@@ -1,14 +1,12 @@
 import EVENT from '@event';
 import EVENT_CONFIG from '@event/config';
 import fs from 'node:fs/promises';
-import { parse } from '@sabaki/sgf';
 import type { ApiGameInfo } from '@/schema/api';
 import type { Game, Stage, Tournament } from '@/schema/data';
 import { CustomSgfProps, SgfRootProps } from '@/schema/sgf';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
-import { type RootParams } from '@tools/sgf';
-import { getLongestBranch } from '@/libs/sgf';
+import { Sgf, type SgfNodeData } from '@tools/sgf';
 import { getStageName } from '@/libs/stage';
 import pkg from '../../package.json';
 
@@ -52,7 +50,7 @@ export async function loadSgfs(tournaments: Tournament[]) {
       }
 
       const content = await fs.readFile(`${EVENT_DIR}/${game.props.sgf}`, 'utf-8');
-      const sgfTree = parse(content);
+      const sgf = new Sgf(content);
       const black = tournament.players[game.players[0].id];
       const white = tournament.players[game.players[1].id];
 
@@ -64,7 +62,7 @@ export async function loadSgfs(tournaments: Tournament[]) {
         white,
         result: game.result,
         winner: game.players[0].won ? 'black' : game.players[1].won ? 'white' : undefined,
-        moves: getLongestBranch(sgfTree).length - 1,
+        moves: sgf.getLongestBranch().length - 1,
       };
 
       games.push(result);
@@ -119,7 +117,7 @@ function getSgfProps(game: Game, tournament: Tournament, stage: Stage, translati
     [SgfRootProps.ENCODING]: 'utf-8',
     [SgfRootProps.GAME_TYPE]: 1,
     [SgfRootProps.FILE_FORMAT]: 4,
-    [SgfRootProps.BOARD_SIZE]: (val?: string) => (val ? Number(val) : 19),
+    [SgfRootProps.BOARD_SIZE]: (current) => (current[0] ? Number(current[0]) : 19),
     [SgfRootProps.APPLICATION]: `${pkg.name}:${pkg.version}`,
     [SgfRootProps.EVENT_LOCATION]: tournament.country
       ? `${tournament.country},${tournament.location}`
@@ -133,12 +131,12 @@ function getSgfProps(game: Game, tournament: Tournament, stage: Stage, translati
     [SgfRootProps.WHITE_RANK]: white.rank,
     [SgfRootProps.WHITE_TEAM]: (EVENT_CONFIG.showCountry && white.country) || null,
     [SgfRootProps.COPYRIGHT]: null,
-    [SgfRootProps.GAME_KOMI]: (val?: string) => val ?? stage?.komi ?? null,
-    [SgfRootProps.GAME_DATE]: (val?: string) => val ?? tournament.start?.split('-').slice(0, -1).join('-') ?? null,
+    [SgfRootProps.GAME_KOMI]: (current) => current[0] ?? stage?.komi ?? null,
+    [SgfRootProps.GAME_DATE]: (current) => current[0] ?? tournament.start?.split('-').slice(0, -1).join('-') ?? null,
     [SgfRootProps.EVENT_NAME]:
       (tournament.name && typeof tournament.name === 'object' ? tournament.name.en : tournament.name) ??
       `${t('site.acronym')} ${tournament.year}`,
-    [SgfRootProps.GAME_RULES]: (val?: string) => (val ? val.toLowerCase() : null),
+    [SgfRootProps.GAME_RULES]: (current) => (current[0] ? current[0].toLowerCase() : null),
     [SgfRootProps.GAME_ROUND]: roundName || null,
     [SgfRootProps.COMMENT]: `Exported from ${t('site.name')}${EVENT_CONFIG.domain ? ` (${EVENT_CONFIG.domain})` : ''}`,
 
@@ -148,5 +146,5 @@ function getSgfProps(game: Game, tournament: Tournament, stage: Stage, translati
     [CustomSgfProps.GAME_AI]: game.props.ai || null,
     [CustomSgfProps.GAME_YT]: game.props.yt || null,
     [CustomSgfProps.GAME_OGS]: game.props.ogs || null,
-  } satisfies RootParams;
+  } satisfies SgfNodeData;
 }
