@@ -1,4 +1,4 @@
-(;GM[1]FF[4]CA[UTF-8]
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
 RU[Japanese]SZ[19]KM[6.50]
 PW[LMP]PB[LMP]DT[2005-11-25]PC[The Kiseido Go Server (KGS) at http://kgs.kiseido.com/]C[LMP [-\]: White: Michał Bażyński
 LMP [-\]: Black: Koichiro Habu
@@ -470,8 +470,7 @@ partisan [20k?\]: :)
 ;W[gn]CR[gn]
 ;B[cm]CR[cm]
 ;W[cn]CR[cn]
-(;B[gm]CR[gm])
-(;B[do]CR[do]C[czarny [-\]: czarny ma ko na połączenie chyba ?
+;B[do]CR[do]C[czarny [-\]: czarny ma ko na połączenie chyba ?
 LMP [-\]: vertigo-lubos zaraz bedzie lubos+R
 Dragonstar [11k?\]: wow
 Dragonstar [11k?\]: a jak tam ko u gie ?
@@ -589,7 +588,7 @@ LMP [-\]: jeszcze nie
 LMP [-\]: pol godziny jeszcze , przynajmniej
 Azael [-\]: a kto prowadzi/
 chikaru [2k\]: czyja to gra?
-]))
+])
 (;B[gk]CR[gk]))
 (;W[gm]CR[gm])
 (;W[hp]CR[hp]))
