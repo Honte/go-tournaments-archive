@@ -1,158 +1,736 @@
-(
-  ;BR[1p]CA[UTF-8]DT[2016-01-09]EV[Polish Go Championship 2015]FF[4]GM[1]GN[Round 5 - Board 2]KM[6.50]PB[Mateusz Surma]PC[Warszawa]PW[Stanisław Frejlak]RE[B+R]RU[japanese]ST[2]SZ[19]WR[5d]
-  ;B[pq]
-  ;W[qd]
-  ;B[dc]
-  ;W[cp]
-  ;B[oc]
-  ;W[ld]
-  ;B[nd]
-  ;W[pf]
-  ;B[qb]
-  ;W[qi]
-  ;B[id]
-  ;W[eq]
-  ;B[ce]
-  ;W[dj]
-  ;B[qo]
-  ;W[jp]
-  ;B[lq]
-  ;W[cg]
-  ;B[cl]
-  ;W[el]
-  ;B[co]
-  ;W[do]
-  ;B[cn]
-  ;W[bp]
-  ;B[bj]
-  ;W[bi]
-  ;B[em]
-  ;W[dm]
-  ;B[ek]
-  ;W[fm]
-  ;B[dk]
-  ;W[cj]
-  ;B[bk]
-  ;W[eg]
-  ;B[ee]
-  ;W[db]
-  ;B[cc]
-  ;W[gf]
-  ;B[gk]
-  ;W[gd]
-  ;B[fg]
-  ;W[fj]
-  ;B[fk]
-  ;W[ff]
-  ;B[ef]
-  ;W[eh]
-  ;B[gg]
-  ;W[hg]
-  ;B[gh]
-  ;W[hi]
-  ;B[hh]
-  ;W[ih]
-  ;B[ig]
-  ;W[gi]
-  ;B[hf]
-  ;W[fh]
-  ;B[hg]
-  ;W[ik]
-  ;B[bh]
-  ;W[ci]
-  ;B[ij]
-  ;W[hj]
-  ;B[hk]
-  ;W[il]
-  ;B[bg]
-  ;W[ah]
-  ;B[dl]
-  ;W[en]
-  ;B[bf]
-  ;W[jh]
-  ;B[aj]
-  ;W[ic]
-  ;B[jc]
-  ;W[jd]
-  ;B[je]
-  ;W[kd]
-  ;B[hc]
-  ;W[ie]
-  ;B[hd]
-  ;W[ib]
-  ;B[hb]
-  ;W[jf]
-  ;B[he]
-  ;W[pm]
-  ;B[lo]
-  ;W[qn]
-  ;B[po]
-  ;W[mm]
-  ;B[nf]
-  ;W[ng]
-  ;B[mg]
-  ;W[nh]
-  ;B[of]
-  ;W[pg]
-  ;B[lf]
-  ;W[jb]
-  ;B[jr]
-  ;W[iq]
-  ;B[ir]
-  ;W[hr]
-  ;B[kn]
-  ;W[lh]
-  ;B[kl]
-  ;W[lk]
-  ;B[om]
-  ;W[ol]
-  ;B[on]
-  ;W[pl]
-  ;B[kk]
-  ;W[kj]
-  ;B[lb]
-  ;W[mb]
-  ;B[mc]
-  ;W[kf]
-  ;B[lc]
-  ;W[kc]
-  ;B[ro]
-  ;W[ai]
-  ;B[al]
-  ;W[io]
-  ;B[ll]
-  ;W[mk]
-  ;B[ml]
-  ;W[nl]
-  ;B[nm]
-  ;W[gb]
-  ;B[ga]
-  ;W[fa]
-  ;B[ha]
-  ;W[bo]
-  ;B[bn]
-  ;W[an]
-  ;B[cm]
-  ;W[rb]
-  ;B[qc]
-  ;W[rc]
-  ;B[pd]
-  ;W[qe]
-  ;B[jj]
-  ;W[jk]
-  ;B[lj]
-  ;W[ki]
-  ;B[im]
-  ;W[hl]
-  ;B[gr]
-  ;W[hs]
-  ;B[hq]
-  ;W[gq]
-  ;B[hp]
-  ;W[fr]
-  ;B[hm]
-  ;W[gl]
-  ;B[ho]
-  ;W[jm]
-  ;B[jn]
-)
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[5400]OT[5x60 byo-yomi]
+GN[Stanisław Frejlak 5d (white) vs Mateusz Surma 1p (black)]PW[Stanisław Frejlak]PB[Mateusz Surma]WR[5d]BR[1p]DT[2016-01-09]PC[Narnia]C[LMP2 [-\]: The players are here
+sampo [2k\]: is there a website with additional info?
+LMP2 [-\]: http://mp.go.art.pl
+LMP2 [-\]: has results, schedule, game records and player profiles
+kmr [2d\]: ustawione mistrzostwa, w nieparzystych rundach wygrywają tylko czarne, nie można obstawiać w betcom....lipa ;)
+sampo [2k\]: why is there a 1k participating? why is his rank not adjusted to the level at which he plays?
+papapishu [1d\]: is it final game, right?
+]RE[B+Resign]
+;B[pq]C[LMP2 [-\]: This is round 5 out of 8
+LMP2 [-\]: this is a round-robin tournament
+Egg [11k\]: 2 rounds today and 2 more tomorrow ?
+LMP2 [-\]: correct
+]
+;W[qd]C[Egg [11k\]: ok
+]
+;B[dc]C[LMP2 [-\]: sampo, Karol will probably reach 1d after this tournament
+sampo [2k\]: this white player looks pretty young, what is his age?
+]
+;W[cp]
+;B[oc]C[kmr [2d\]: 19 yo is white
+]
+;W[ld]C[Egg [11k\]: regulation fuseki
+kmr [2d\]: this 1k beat in final round 3d player and took by force his place in champ
+kmr [2d\]: i mean final round of preliminary tournament of Polish champ.
+]
+;B[nd]C[bert [?\]: how come surma needs to play the preliminary?
+]
+;W[pf]
+;B[qb]C[LMP3 [-\]: also the 1k beat a 5d in the last round
+]
+;W[qi]C[Egg [11k\]: gonna vote for e4 
+LMP2 [-\]: Mateusz did not have to play in the preliminary
+LMP2 [-\]: and he didn't play in the preliminary. This is THE championship, not prelims
+]
+;B[id]C[Hobbes [1k\]: I already like b... I wonder if the pincer was proper here
+bert [?\]: ah, so kmr confused us a little, thx
+kmr [2d\]: last year 1st and 2nd places dont nned to play preliminary tournament.
+Egg [11k\]: well, looks ok for both, except that r11 is more often played at r10 
+LMP2 [-\]: first four actually, kmr
+kmr [2d\]: oh sorry was sure its only 2
+afterbreak [2k?\]: I think its played there cuz black got p not d in rank :P
+Butcher [1k\]: r5 now looks good
+kmr [2d\]: Q5 looks better than R5 imho
+]
+;W[eq]C[kmr [2d\]: but white is in no rush to play kakari there
+]
+;B[ce]
+;W[dj]C[bert [?\]: there you see what players think about your opinions
+]
+;B[qo]C[kmr [2d\]: actually white agreed with me and played shimari 
+Egg [11k\]: nice start of the game, black looks pretty solid with his 2 shimari's though
+papapishu [1d\]: l3 
+LMP2 [-\]: White looks at the board and hisses
+Egg [11k\]: white can make double wing ?
+power [1k\]: b should m18 
+]
+;W[jp]
+;B[lq]C[LMP2 [-\]: White nods and smiles
+Egg [11k\]: nice
+Egg [11k\]: the smile I mean
+Butcher [1k\]: i like white´s double wing formation
+power [1k\]: White will cry soon
+hurluberlu [6k\]: J16 shining
+]
+;W[cg]C[Egg [11k\]: e5 is the vital point right ?
+]
+;B[cl]C[LMP2 [-\]: I thought so too, Egg, but the pro disagrees
+Egg [11k\]: :-)
+hurluberlu [6k\]: seems C13 mistake
+]
+;W[el]C[Holub [1d\]: it is vital ...this is just to test w´s response in my opinion...
+Butcher [1k\]: c13 restrict b in the upper left so its good in itself
+Mollusque5 [3d\]: c13 is not a mistake. Imagine b has the opportunity to play c12 first
+Egg [11k\]: perhaps c8 is better since black has h3 later
+bert [?\]: there's an old skata's book with detailed analisys of e5
+hurluberlu [6k\]: then w playing high on both sides was a problem
+Timk [1k\]: isn't e8 passive ?
+Timk [1k\]: letting B slide..
+Mollusque5 [3d\]: and later w can aim at c17 because of c13
+Egg [11k\]: but for now black has to live first
+hurluberlu [6k\]: a boshi, passive ?
+Timk [1k\]: yes
+power [1k\]: Looks fine for me
+Timk [1k\]: compare c9 
+Mollusque5 [3d\]: cause after c10 b is almost alive without effort
+Timk [1k\]: yes
+Timk [1k\]: the same i taling about
+power [1k\]: Compare e5 with and without b d8 
+]
+;B[co]C[LMP2 [-\]: the bridge players are arguing again
+power [1k\]: Bridge players?
+Egg [11k\]: there is also a bridge championship ?
+LMP2 [-\]: quote: "Would you be so nice to hand me this thing there?" "No, I would not."
+LMP2 [-\]: "Not with this kind of attitude".
+LMP2 [-\]: Yes, there's a bridge championship here as well
+LMP2 [-\]: Now these guys like to argue
+Timk [1k\]: funny :)
+hurluberlu [6k\]: sounds stark
+Egg [11k\]: nice
+power [1k\]: Thow a stone to they
+bert [?\]: why are you calling them bridge players? coz they take the role of a dummy in turns?
+LMP2 [-\]: haha, I'm sure this would start a massive fight
+Butcher [1k\]: d4
+Volh [6k?\]: c6
+hurluberlu [6k\]: w short on cash and no grand plan for the high stones :(
+]
+;W[do]C[LMP2 [-\]: Black looks at the position closely
+]
+;B[cn]
+;W[bp]C[LMP2 [-\]: White is well known for his fighting abilities
+]
+;B[bj]C[ranyee [3k\]: j16 should be very annoying for w
+power [1k\]: Can he beat the bridge players?
+hurluberlu [6k\]: yup
+Egg [11k\]: o3 too soon ?
+hurluberlu [6k\]: yes
+Holub [1d\]: and no good ...
+]
+;W[bi]C[Egg [11k\]: hm, ok
+hurluberlu [6k\]: finish the left 
+LMP2 [-\]: To tell you more about our surroundings: there's a door in the wall roughly two meters above the ground right in front of us
+power [1k\]: o4 is black's
+LMP2 [-\]: let me see if I can post a picture
+hurluberlu [6k\]: E7 ?
+power [1k\]: Thanks LMP@. And picture of players please
+Egg [11k\]: c10 c11 d9 e9 d6 e5 ot somethink like that 
+LMP2 [-\]: I cannot take a good picture of the players from where I'm sitting, but there are some at our FB page: https://www.facebook.com/PolskieStowarzyszenieGo/?fref=ts
+hurluberlu [6k\]: is b polish ?
+LMP2 [-\]: This is the Polish Go Championship, hurlberlu
+]
+;B[em]C[LMP2 [-\]: board 1 and door in the wall: https://www.facebook.com/PolskieStowarzyszenieGo/?fref=ts
+LMP2 [-\]: https://www.facebook.com/PolskieStowarzyszenieGo/photos/a.159611090760633.44776.103237129731363/919293821459019/?type=3&theater
+hurluberlu [6k\]: thx
+]
+;W[dm]C[hurluberlu [6k\]: w indeed seems to like fighting a lot
+fatih [1d\]: wow w is aggressive
+Egg [11k\]: dumb question perhaps, but why is that door there 
+]
+;B[ek]C[LMP2 [-\]: I'd like to know that myself
+power [1k\]: Lol that door
+Egg [11k\]: and who is that nice lady with the labtob ?
+power [1k\]: Nice girl
+]
+;W[fm]
+;B[dk]
+;W[cj]
+;B[bk]C[LMP2 [-\]: The nice lady is the Polish Go Association in all its glory
+Egg [11k\]: :-)
+LMP2 [-\]: did I tell you the Association baked some gingerbread on Thursday?
+]
+;W[eg]C[LMP2 [-\]: White adjusts the stone on the board carefully
+hurluberlu [6k\]: yummy
+peanatsu [1d\]: that door gives a postmodern touch to the setting
+hurluberlu [6k\]: bold game
+LMP2 [-\]: Some people believe ingesting gingerbread gives players an additional stone
+ranyee [3k\]: is it illusion that w is disorganised?
+LMP2 [-\]: (wonder if the above makes sense as a joke to anyone)
+Egg [11k\]: this looks pretty good for white, he has a ponnukie if he wants to and black is not yet alive, the only proble i can see is with his e13 group
+]
+;B[ee]C[hurluberlu [6k\]: no illusion
+LMP2 [-\]: White's games tend to be a bit messy, but he's really good at this kind of game.
+hurluberlu [6k\]: E15 is severe disillusion for w :(
+Egg [11k\]: ok, I admit that I did not see e15 coming, looks like a pretty good move
+hurluberlu [6k\]: it's like "attack all you want, the north will stand"...
+fatih [1d\]: if white cannot attack e9 properly, it will be difficult for him
+Bouton [?\]: f11, g9, c17
+Egg [11k\]: eh, c17 is a mistake right ?
+hurluberlu [6k\]: C17 can be used as a question move
+Egg [11k\]: oh
+Egg [11k\]: could have fooled me
+hurluberlu [6k\]: but first, help the weaker group
+power [1k\]: https://www.facebook.com/PolskieStowarzyszenieGo/photos/pb.103237129731363.-2207520000.1452351064./736406059747797/?type=3&theater
+power [1k\]: Is that a goban for blind people?
+Bouton [?\]: @egg : no
+LMP2 [-\]: power: yes
+Egg [11k\]: ok bouton
+LMP2 [-\]: PGA bought a couple of those in Japan
+Egg [11k\]: f9 possible ?
+hurluberlu [6k\]: w shape is broken there
+Egg [11k\]: hm, g13 then ?
+]
+;W[db]C[LMP2 [-\]: d18 placed on the board with emphasis
+Egg [11k\]: ah, the kond of bouton move I suppose
+Egg [11k\]: kind
+LMP2 [-\]: yosu-miru, although I'm not sure how it works with e15 in place
+]
+;B[cc]C[Bouton [?\]: it's the common move in the corner but in this kind of situation, I think C17 was more appropriate
+power [1k\]: https://www.facebook.com/PolskieStowarzyszenieGo/photos/pb.103237129731363.-2207520000.1452351410./238586302863111/?type=3&theater
+Egg [11k\]: what does that kind of move do anyway ?
+Bouton [?\]: and after F11
+Egg [11k\]: looking for trouble if you ask me
+fatih [1d\]: black playing solid
+Dantek [1k\]: b doesn't want w group to settle
+YoungPro [-\]: i don't know about solid but he plays honte ;)
+leachy [2k\]: i don't know here but black has to respond here pretty much to stop white making life with c17 and b17
+leachy [2k\]: obviously there is some idea to use the stone to help reduce or invade near there later
+Egg [11k\]: hm, I see
+]
+;W[gf]C[LMP2 [-\]: another argument erupts between the bridge players
+LMP2 [-\]: I think they argue during the game - about the rules, and after the game, where they blame their partners for playing badly
+Egg [11k\]: there are no argumente between the go players yet ?
+LMP2 [-\]: so you get two arguments per round per table
+LMP1 [-\]: one may think transmitting the bridge tournament would be more interesting 
+LMP2 [-\]: Not a single one, Egg
+Bouton [?\]: f11
+bert [?\]: make them group on separate banks of the river and collapse the bridge
+Egg [11k\]: hm, I wont start to play bridge :-)
+LMP2 [-\]: Do not. It makes you a horrible person apparently
+vertigo [-\]: Lightsabre battle!
+Egg [11k\]: g16 looks very solid to me here
+]
+;B[gk]C[Egg [11k\]: but as usual I am wrong
+]
+;W[gd]
+;B[fg]C[bert [?\]: g9 surprises me too
+bert [?\]: but f13 doesn't
+hurluberlu [6k\]: i guess F9 had become too severe
+leachy [2k\]: how is jump out to g9 a surprise, bert?
+Egg [11k\]: this seems to complicate the fight
+Egg [11k\]: at least white has been cut
+]
+;W[fj]
+;B[fk]C[leachy [2k\]: hmm maybe w e14 here
+Bouton [?\]: f12
+leachy [2k\]: e14 f14 f15 (with the idea that black pushing g13 h14 h13 j14 if bad) so  if b f12 hten f11 
+]
+;W[ff]C[leachy [2k\]: yeah f12 looks better but black is basically junking the 2 stones then
+]
+;B[ef]C[leachy [2k\]: *white is...
+Egg [11k\]: the ladder does not work
+leachy [2k\]: i guess w g12 is good enough
+hurluberlu [6k\]: w gets cutting points
+leachy [2k\]: w is fine as long as he connect out
+leachy [2k\]: *connects out
+Bouton [?\]: g11 las try for w
+bert [?\]: i would just push g13 f12 g12 e12 g11 
+hurluberlu [6k\]: w shape is a gote
+papapishu [1d\]: e12 
+papapishu [1d\]: or teunki
+leachy [2k\]: amazingly seems to work bert.....g13 f12 g12 e12 g11 e10 e11 d12 d13 d11 f11 c11 is self-atari
+hurluberlu [6k\]: b captures in sente
+papapishu [1d\]: e12 at f11 ?
+hurluberlu [6k\]: trouble for G16
+Bouton [?\]: why e12 after g12 leachy? G12, F11
+]
+;W[eh]C[leachy [2k\]: but g13 f12 g12 e12 g11 d13 and the cut is threatened so 
+]
+;B[gg]C[leachy [2k\]: well not my variation at that point bouton
+]
+;W[hg]
+;B[gh]C[frostwind [5k\]: my feeet.... smells very bad :(
+fatih [1d\]: really messy now 
+frostwind [5k\]: sigh
+]
+;W[hi]C[leachy [2k\]: but you're right i should have noticed it doesn't work to begin with because of that
+LMP2 [-\]: white slams the stone down
+bert [?\]: he was told he need to play strong?
+Egg [11k\]: h12 j12 h14 j13 g15 ?
+papapishu [1d\]: h12 j12 h14 g11 ? is it the plan?
+hurluberlu [6k\]: plan is J9
+leachy [2k\]: so much better than 11k, egg
+hurluberlu [6k\]: E12 is a strong move
+papapishu [1d\]: black can cut directly
+papapishu [1d\]: or
+bert [?\]: ..and w position seems to be collapsing
+frostwind [5k\]: g13 is alive
+papapishu [1d\]: h12 j12 j13 
+frostwind [5k\]: w cant capture
+frostwind [5k\]: black will seal top
+]
+;B[hh]
+;W[ih]C[leachy [2k\]: there is h14 h15 here
+leachy [2k\]: not sure if it's any good
+]
+;B[ig]C[papapishu [1d\]: j13 is the best point to cut
+]
+;W[gi]
+;B[hf]
+;W[fh]
+;B[hg]C[leachy [2k\]: right with j13 you don't give that h15 possibility
+papapishu [1d\]: th question is how white want to continue right now
+leachy [2k\]: wonder if white will ever slam down a stone again
+LMP2 [-\]: bridge players start their end-of-round arguments
+hurluberlu [6k\]: J9 him
+papapishu [1d\]: j17 or j9 ?
+leachy [2k\]: 'why didn't you play the other card....all the trumps are with west!'
+leachy [2k\]: 'some partner.....'
+frostwind [5k\]: looks like this black
+LMP2 [-\]: this sounds very close, leachy
+frostwind [5k\]: doesnt know much about shape
+Egg [11k\]: did not see that sequence, but it seems black got a lot stronger at the top
+frostwind [5k\]: maybe 1p does not understand stone shapes
+]
+;W[ik]C[frostwind [5k\]: nice dumpling
+hurluberlu [6k\]: fierce plan
+LMP2 [-\]: frostwind, it would do you good to have 10% of black's understanding of shape
+Egg [11k\]: wonder if white can still live at the top later in the game
+leachy [2k\]: e7 helps
+frostwind [5k\]: :( my feet smells
+]
+;B[bh]C[ranyee [3k\]: for me w result isnt worth top loss
+bert [?\]: i will always defend frostwing's right to call a dumpling dumpling
+Gor [4d\]: i agree
+leachy [2k\]: only a dumpling if you can eat it....otherwise it's a power clump
+]
+;W[ci]C[frostwind [5k\]: that black top looking quite promising tho
+Egg [11k\]: black cannot connect here
+LMP2 [-\]: No need to defend that, bert. I only take issue with frostwinds evaluation of black's understanding of shape
+frostwind [5k\]: just let f9 die and use it as ko threats later on
+hurluberlu [6k\]: if b is a gote life, w has J17 things
+frostwind [5k\]: and surround the top is enough
+]
+;B[ij]C[LMP2 [-\]: White hisses
+hurluberlu [6k\]: nice
+frostwind [5k\]: wow nice move
+gogonuts [4d\]: lol
+frostwind [5k\]: what does hisses mean?
+Egg [11k\]: h10 ?
+gogonuts [4d\]: this is a family server, can'say
+LMP2 [-\]: why don't you google that, frostwind?
+hurluberlu [6k\]: if H10, b makes good shape
+fatih [1d\]: h9 is fun
+frostwind [5k\]: am in the grand country of north korea, google is banned
+kmr [2d\]: widze że na LMP2 siedzi wujec cieta riposta ;)
+kmr [2d\]: wujek*
+gogonuts [4d\]: hissing is the sound a snake makes when threatened
+frostwind [5k\]: thanks gonuts
+frostwind [5k\]: can you tell us the time left please LMP2 ?
+Weak [-\]: why b12 ?
+hurluberlu [6k\]: kikashi
+playerx [1k\]: h9 ?
+hurluberlu [6k\]: before defense
+bert [?\]: i fear you will always be weak
+LMP2 [-\]: White has 1 hour and three minutes left
+LMP2 [-\]: Sorry, black
+LMP2 [-\]: White has 34 minutes
+]
+;W[hj]C[ranyee [3k\]: w cannot h9
+hurluberlu [6k\]: M3 shining
+bert [?\]: that is too bad
+frostwind [5k\]: thanks Little Monkey Player 2
+bert [?\]: and he didnt notice it before he played j10?
+babbleman [13k?\]: Im bigginer.
+ranyee [3k\]: give up g14 was big mistake
+LMP2 [-\]: You're welcome, smelly feet
+babbleman [13k?\]: I cant win IGO game at all.
+hurluberlu [6k\]: more like gamble
+frostwind [5k\]: )
+sinojos [8k\]: did i walk into the romper room by mistake?
+babbleman [13k?\]: is there japanese in this chat?
+hurluberlu [6k\]: and b has the ladders
+playerx [1k\]: b think about protect top to make lot of cash in 1 move and search a solution for left group after ? is that possible ? or too risky ?
+hurluberlu [6k\]: b SW quarter too heavy
+frostwind [5k\]: i think b wants to live in sente then seal the top
+hurluberlu [6k\]: not sure about that sente thing
+frostwind [5k\]: what will be the best spot to seal top / invade top?
+frostwind [5k\]: any dans comment?
+Eburg [2k?\]: top is already split by m16 
+gogonuts [4d\]: we have to wait for the center result first
+Kogokhan [1k\]: the best one is not to close it and play a move like r9 
+]
+;B[hk]
+;W[il]C[ranyee [3k\]: wow
+Gor [4d\]: there seem to be some aji if white plays j17
+hurluberlu [6k\]: SW fight is at the foreground for the moment
+ranyee [3k\]: e12 alive?
+playerx [1k\]: w say he think he win liberty race if b cut ?
+bert [?\]: i dont get this
+]
+;B[bg]C[hurluberlu [6k\]: b might K17 later
+barty [1d\]: black left dead?
+playerx [1k\]: b13 so painful for w
+barty [1d\]: ahhh ok no :)
+frostwind [5k\]: a11 k10 miai
+]
+;W[ah]C[LMP2 [-\]: Black reached to the bowl, but stopped to read some more
+barty [1d\]: nice
+]
+;B[dl]C[frostwind [5k\]: what are theyir expressions on face?  Who looks more stressed?
+frostwind [5k\]: do their feet smell too?
+LMP2 [-\]: he never thinks with a stone in his hand. He plays a move only when he's fully decided
+]
+;W[en]C[barty [1d\]: there is maybe streaming from tour?
+playerx [1k\]: btw thx for showing us game and nice comments LMP2 ;)
+LMP2 [-\]: enough of the feet stuff please, frostwind
+Gor [4d\]: what is the purpose of d8
+fatih [1d\]: a12 seems like asking too much
+Gor [4d\]: this stone had some aji
+LMP2 [-\]: they both seem very focused
+fatih [1d\]: a10 a11 a8 
+leachy [2k\]: could be capture race
+]
+;B[bf]C[frostwind [5k\]: k10 
+Kogokhan [1k\]: w has to play j11 
+Kogokhan [1k\]: k10 i mean
+playerx [1k\]: b7 now possible ?
+LMP2 [-\]: you're welcome, playerx, and I'm not sure I understand barty's question?
+frostwind [5k\]: yes thanks LMP2
+leachy [2k\]: right w can make a capture race here 
+kmr [2d\]: he asked for video stream
+bert [?\]: well k10 is quite ok for w anyway
+kmr [2d\]: i think no video
+Kogokhan [1k\]: he asks that "is there a youtube boradcast of the tournament? "
+LMP2 [-\]: no video, sadly
+Gor [4d\]: is it really ok for white
+barty [1d\]: yeap
+barty [1d\]: video :)
+barty [1d\]: ok 
+Gor [4d\]: b gained a big top
+YoungPro [-\]: maybe picture? :D 
+Gor [4d\]: what did w gain
+LMP2 [-\]: there's a small chance of a video stream tomorrow
+gogonuts [4d\]: played d8 to avoid w b7
+frostwind [5k\]: w gains left
+YoungPro [-\]: may make picture and up to some site:D to see the players D: 
+kmr [2d\]: https://web.facebook.com/PolskieStowarzyszenieGo/?fref=ts - pics
+playerx [1k\]: if w can b7 sente before k10 thats better than just k10 irght ? but is that playable ?
+frostwind [5k\]: i make many ko threats (dead groups) against dans, but sadly, they dont normally create ko
+leachy [2k\]: you can set up a static photo of each next to a staticboard of stones and nearly exactly the same as you'll see
+leachy [2k\]: you can even scream 'move already' in a satisfying refrain
+barty [1d\]: mateusz is pro trust this is ok lather works for white
+leachy [2k\]: *static board
+Rodtank [2d\]: k10 please siasio
+LMP2 [-\]: this requires rocking my chair dangerously, leachy, but we like to go an extra mile
+barty [1d\]: if not on J10 then on H14
+]
+;W[jh]C[Rodtank [2d\]: don't go crazy, it is good enough
+gogonuts [4d\]: tengen gives w a decent position
+barty [1d\]: K10 yes
+barty [1d\]: buuu :(
+LMP2 [-\]: if I go quiet for a second it means I broke my neck while rocking chair
+leachy [2k\]: heh :)
+]
+;B[aj]
+;W[ic]C[Egg [11k\]: white is a fighter
+hurluberlu [6k\]: w had his cake
+kmr [2d\]: white is Siasio, KGS 5d btw.
+]
+;B[jc]
+;W[jd]
+;B[je]
+;W[kd]
+;B[hc]C[hurluberlu [6k\]: wild
+]
+;W[ie]C[LMP2 [-\]: Black takes a very close look at the board
+]
+;B[hd]C[hurluberlu [6k\]: cool
+leachy [2k\]: nothing here.... h15 g15 f15 f16 g15 g17 
+kmr [2d\]: white cant H15 now
+Katoan [3k\]: :)
+leachy [2k\]: only has k14 
+hurluberlu [6k\]: J18
+gogonuts [4d\]: w should have taken a close look too
+Katoan [3k\]: this is pretty
+Rodtank [2d\]: j18 siaso style
+Kogokhan [1k\]: l14 
+kmr [2d\]: taking close look was psychological play, he saw all this earlier 
+LMP2 [-\]: leachy, photo as requested: https://www.facebook.com/PolskieStowarzyszenieGo/photos/a.159611090760633.44776.103237129731363/919325508122517/?type=3&theater
+leachy [2k\]: j18 k18 l18 interesting....don't know top right joseki well....b s17 need for life i think
+gogonuts [4d\]: h15 fails because of g15
+gogonuts [4d\]: so j15 is a blunder
+SadPlayer [-\]: ktoś rozpoznaje jaki typ węzła ma krawat Mateusza?
+Rodtank [2d\]: b doesn't need s17 until white attacks at q16
+leachy [2k\]: cool :) i will print it, frame it and put it next to the board
+hurluberlu [6k\]: should J18 right away
+barty [1d\]: LMP2 thx
+leachy [2k\]: ah ok thanks rodtank
+frostwind [5k\]: thanks, 
+kmr [2d\]: Mateusz nie ma krawata akurat 
+Weak [-\]: the sribe is cute
+frostwind [5k\]: who's that girl at the back?
+]
+;W[ib]C[kmr [2d\]: girl is LMP2 ^^
+barty [1d\]: haha 
+barty [1d\]: :)
+LMP2 [-\]: Not really. Leachy asked for a photo of what I'm seeing
+]
+;B[hb]
+;W[jf]
+;B[he]C[frostwind [5k\]: phew
+fatih [1d\]: m5 is a nice spot now
+Rodtank [2d\]: m5 now?
+playerx [1k\]: seems like w lost game here isnt it ? 
+Rodtank [2d\]: but then i expect mateusz will play k13
+LMP2 [-\]: There are two cute girls at the back actually. They are 2/3 of the PGA Commitee
+Egg [11k\]: no, they are still playing
+Rodtank [2d\]: so maybe white should defend there
+leachy [2k\]: nice to know the nsa through akamaihd is building my profile at the same time
+]
+;W[pm]C[LMP2 [-\]: q7 placed with a loud click
+]
+;B[lo]C[gogonuts [4d\]: it looks wishy washy
+kmr [2d\]: white "moyo" too open, O14 will be painful
+Weak [-\]: now white try to take the psychologic advantage
+Weak [-\]: acting he's very confiant
+hurluberlu [6k\]: M5 seemed more promising
+gogonuts [4d\]: q7 lacks continuation
+LMP2 [-\]: black decides it's time for some blackcurrant juice while white attaches
+]
+;W[qn]
+;B[po]
+;W[mm]C[kmr [2d\]: i didnt say O14 is better than M5
+gogonuts [4d\]: now from the top ...
+LMP2 [-\]: black adjusts the position of n7
+kmr [2d\]: O14 now i think
+gogonuts [4d\]: like ice in the sunshine ...
+leachy [2k\]: well i didn't ask for a photo but it's nice......really a photo is almost as good as a video here....
+leachy [2k\]: you get a feeling for the atmosphere
+kmr [2d\]: this "door" on upper level are really funny
+playerx [1k\]: w feel himself behind by playing like this ?
+]
+;B[nf]
+;W[ng]C[hurluberlu [6k\]: b SE like 25 moku
+]
+;B[mg]C[hurluberlu [6k\]: how many in center ?
+frostwind [5k\]: its accwss panel to duct
+rsun [-\]: center 10 points
+]
+;W[nh]C[gogonuts [4d\]: SE is not a polite subject of conversation, except saying how terrible it is
+]
+;B[of]
+;W[pg]
+;B[lf]C[hurluberlu [6k\]: M14
+Weak [-\]: SE is usually fiable
+gogonuts [4d\]: this is too easy for b
+]
+;W[jb]C[liusasori [3d\]: w resign soon ?
+fatih [1d\]: k2 plz 
+frostwind [5k\]: oh man this move is multi purpose
+Egg [11k\]: m11 ?
+LMP2 [-\]: the bridge players are gone. Its blissfully quiet here
+Kountch [1k\]: I guess W read life
+frostwind [5k\]: m14 i mean
+]
+;B[jr]C[rsun [-\]: there's a reason why hitchcock picked N by NW instead of S by SE
+gogonuts [4d\]: they made noise complaining about their partners?
+playerx [1k\]: s17 still big too
+]
+;W[iq]
+;B[ir]C[hurluberlu [6k\]: w attack NE
+]
+;W[hr]C[LMP2 [-\]: they did, gogonuts
+frostwind [5k\]: cut
+gogonuts [4d\]: lol
+LMP2 [-\]: I've never played competitive bridge, but it appears making noise is a requirement
+liusasori [3d\]: b can g2
+fatih [1d\]: it seems close to me... probably i miscalculate
+]
+;B[kn]C[Kountch [1k\]: White has enough if he lives
+]
+;W[lh]
+;B[kl]C[Warfreak2 [-\]: i would cheer for siasio but
+Warfreak2 [-\]: there is no point.
+]
+;W[lk]
+;B[om]C[gogonuts [4d\]: lol freak
+LMP2 [-\]: White hang his jumper on the back of his chair, but tied the sleeves around his body, forming sort of a seatbelt
+Warfreak2 [-\]: lol
+Warfreak2 [-\]: safety first
+]
+;W[ol]C[Warfreak2 [-\]: so did b open r18 then?
+LMP2 [-\]: the game finished abruptly on board #1
+gogonuts [4d\]: seeing your position melt away against pro endgame is agonizing
+]
+;B[on]C[LMP2 [-\]: White nods, 'mhm'
+rsun [-\]: gogo, zen19s is back, please play next
+hurluberlu [6k\]: R7 magic
+gogonuts [4d\]: im sick
+rsun [-\]: gesundheit
+gogonuts [4d\]: recovering, but still in poor shape
+gogonuts [4d\]: if its still there on monday i'll try
+LMP3 [-\]: LMP2 just ordering a camera online
+LMP2 [-\]: LMP3 is spying on me!
+gogonuts [4d\]: do they have instant drone deliveryß
+hurluberlu [6k\]: N17 / S17 = b privilege ?
+gogonuts [4d\]: b will try to make m18 playable
+Egg [11k\]: I hope it will be a half point game
+hurluberlu [6k\]: nice
+hurluberlu [6k\]: endgame favors b
+LMP2 [-\]: they do, gogonuts. I'll be the drone.
+power [1k\]: w 56 b 52
+LMP2 [-\]: As I said, chance of video stream tomorrow
+LMP2 [-\]: need to find a tripod tho
+LMP3 [-\]: I have a tripod
+LMP2 [-\]: good man, LMP3
+]
+;W[pl]C[scfld [2k\]: i think w is alive on top. m18 leaves only one eye for w but in gote, so w can connect/make second eye with L15, K13, L14?
+]
+;B[kk]
+;W[kj]C[power [1k\]: l9 so good
+leachy [2k\]: l14 connects out of course
+]
+;B[lb]C[scfld [2k\]: right, thats easier
+hurluberlu [7k\]: good
+leachy [2k\]: still it's a big endgame move
+leachy [2k\]: m18 that is
+scfld [2k\]: y
+power [1k\]: B+
+anton007 [-\]: g2 is very big for b
+]
+;W[mb]C[leachy [2k\]: n18 n17 etc.
+]
+;B[mc]C[leachy [2k\]: saves the j18 stones no problem and then l14
+leachy [2k\]: sente sequence for b
+power [1k\]: Is anybody counting?
+sinojos [8k\]: se says b+10 but then again se says w top all dead
+harlej9 [1k\]: the game looks surprisingly even
+]
+;W[kf]C[harlej9 [1k\]: in this very moment
+]
+;B[lc]
+;W[kc]C[Eburg [2k?\]: confusng...
+LMP2 [-\]: this is the game, I misclicked
+]
+;B[ro]C[Eburg [2k?\]: clearly so, thankse LMP2
+leachy [2k\]: oh thought s17 was bigger
+LMP2 [-\]: white unfastened his seatbelt. He appears to be counting
+leachy [2k\]: it's unsafe to count a losing game without a seatbelt 
+papapishu [1d\]: W+5 few moves ago
+Kountch [1k\]: Are they in a car?
+gwarek: B won easy
+LMP2 [-\]: Yeah. Lamborghini Kountach
+Kountch [1k\]: :) I wondered why they had seatbelts
+leachy [2k\]: b has about 85 and sente; w has about 70 + komi is my guesstimate
+]
+;W[ai]
+;B[al]
+;W[io]
+;B[ll]C[Egg [11k\]: aha, a8 was the way to make life
+leachy [2k\]: so i make it about b + about 20
+leachy [2k\]: but i can't count a go game to save my life
+Mariusz [2k\]: b7 kiluje co nie>?
+gwarek: Maybe A6 kill
+papapishu [1d\]: b7 c7 b6 b5 a5 a6 
+liusasori [3d\]: a6 c7 
+]
+;W[mk]
+;B[ml]
+;W[nl]
+;B[nm]C[Mariusz [2k\]: aha dzięki jak zwykle nie dopatrzyłem a6
+]
+;W[gb]C[barty [1d\]: a6 take c6 
+gwarek: No B6 - B7 life
+hihi [5d\]: g19 
+liusasori [3d\]: no barty : a6 c7 b alive
+Mariusz [2k\]: za dużo tego sportu dzisiaj 4 gry go 1 radwańska 1 ręczna i zaraz siatkówka
+barty [1d\]: no A6 then black C7 and live
+Mariusz [2k\]: albo nic albo wszystko na raz
+LMP2 [-\]: dzisiaj też są MPJ
+barty [1d\]: a no sa trwaja
+]
+;B[ga]C[barty [1d\]: ooo
+barty [1d\]: G18
+barty [1d\]: if not work then lose sente yose
+leachy [2k\]: but it works :)
+papapishu [1d\]: co ten Sisasio wymyślił?
+leachy [2k\]: really nice move
+barty [1d\]: leachy but how :)
+]
+;W[fa]
+;B[ha]C[LMP2 [-\]: black responds with confidence
+leachy [2k\]: well i thought white would just play j19 in sente
+barty [1d\]: haha
+barty [1d\]: :)
+gwarek: hmm WC7 then A6 kill!
+leachy [2k\]: that was my definition of works
+papapishu [1d\]: j19 in sente? why not just h19 in sente?
+]
+;W[bo]C[Egg [11k\]: b7 
+papapishu [1d\]: maybe it was o threats generating move?
+]
+;B[bn]C[papapishu [1d\]: *ko
+leachy [2k\]: right papa
+barty [1d\]: black have s17 or s7
+barty [1d\]: s6 for white perhaps bigger
+]
+;W[an]C[LMP2 [-\]: White in byo-yomi
+leachy [2k\]: s7 surely bigger of the two
+]
+;B[cm]C[barty [1d\]: black leads
+LMP2 [-\]: Black has a whopping 42 minutes left
+malakhim [1k\]: s7, why not t8 ?
+]
+;W[rb]
+;B[qc]
+;W[rc]
+;B[pd]C[liusasori [3d\]: tobi is almost always better than monkey jump
+]
+;W[qe]C[barty [1d\]: h7 bigger maybe than s6
+]
+;B[jj]C[barty [1d\]: :)
+]
+;W[jk]
+;B[lj]C[papapishu [1d\]: l11 n11 
+barty [1d\]: nice
+]
+;W[ki]C[barty [1d\]: l11 n11 
+]
+;B[im]C[liusasori [3d\]: enter the moyo first
+]
+;W[hl]C[liusasori [3d\]: this is when you notice w only has moyo and no territory :)
+]
+;B[gr]
+;W[hs]
+;B[hq]
+;W[gq]
+;B[hp]
+;W[fr]C[liusasori [3d\]: w falling into b's trap
+leachy [2k\]: oh i sense impending doom
+]
+;B[hm]
+;W[gl]C[Egg [11k\]: j5 dies ?
+]
+;B[ho]C[papapishu [1d\]: over :/
+liusasori [3d\]: resign coming
+LMP2 [-\]: white takes two stones
+LMP2 [-\]: but places one
+]
+;W[jm]
+;B[jn]C[leachy [2k\]: flirting with resign....
+Egg [11k\]: it was a great game
+leachy [2k\]: b+>30
+LMP2 [-\]: White resigns
+leachy [2k\]: white put up a good show
+Egg [11k\]: thanks for the relay
+leachy [2k\]: interesting game
+LMP2 [-\]: thanks for watching everyone
+rinkaio [1k\]: tx
+LMP2 [-\]: come tomorrow to see if we manage to get the video stream up :)
+leachy [2k\]: thanks for the relay and commentary, LMP2 :)
+Warfreak2 [-\]: siasio will win the rest
+LMP2 [-\]: results, player profiles, schedule and game records at http://mp.go.art.pl
+LMP2 [-\]: see you!
+])

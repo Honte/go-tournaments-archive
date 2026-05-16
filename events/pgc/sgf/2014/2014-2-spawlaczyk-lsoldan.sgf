@@ -1,221 +1,1105 @@
-(
-  ;BR[3d]CA[UTF-8]DT[2014-12-12]EV[Polish Go Championship 2014]FF[4]GM[1]GN[Round 2 - Board 4]KM[6.50]PB[Sebastian Pawlaczyk]PC[Warszawa]PW[Leszek Sołdan]RE[B+12.5]RU[japanese]ST[2]SZ[19]WR[4d]
-  ;B[cp]
-  ;W[pq]
-  ;B[ec]
-  ;W[pc]
-  ;B[pe]
-  ;W[qe]
-  ;B[qf]
-  ;W[qd]
-  ;B[po]
-  ;W[pl]
-  ;B[mp]
-  ;W[oo]
-  ;B[on]
-  ;W[no]
-  ;B[pp]
-  ;W[nq]
-  ;B[qq]
-  ;W[oq]
-  ;B[nn]
-  ;W[pn]
-  ;B[pm]
-  ;W[qn]
-  ;B[qm]
-  ;W[ro]
-  ;B[rp]
-  ;W[rm]
-  ;B[ql]
-  ;W[rl]
-  ;B[qk]
-  ;W[rk]
-  ;B[qj]
-  ;W[rr]
-  ;B[qr]
-  ;W[sp]
-  ;B[sq]
-  ;W[so]
-  ;B[rs]
-  ;W[sr]
-  ;B[rq]
-  ;W[pr]
-  ;B[mo]
-  ;W[qp]
-  ;B[qo]
-  ;W[rn]
-  ;B[mq]
-  ;W[ep]
-  ;B[gq]
-  ;W[cq]
-  ;B[bq]
-  ;W[dq]
-  ;B[cm]
-  ;W[gp]
-  ;B[hp]
-  ;W[go]
-  ;B[fq]
-  ;W[dn]
-  ;B[bo]
-  ;W[ho]
-  ;B[ip]
-  ;W[dm]
-  ;B[cl]
-  ;W[io]
-  ;B[jp]
-  ;W[pf]
-  ;B[qg]
-  ;W[pg]
-  ;B[ph]
-  ;W[oh]
-  ;B[pi]
-  ;W[ng]
-  ;B[jd]
-  ;W[ld]
-  ;B[df]
-  ;W[cd]
-  ;B[dd]
-  ;W[ce]
-  ;B[cf]
-  ;W[de]
-  ;B[ee]
-  ;W[dc]
-  ;B[ed]
-  ;W[db]
-  ;B[eb]
-  ;W[bb]
-  ;B[bf]
-  ;W[bd]
-  ;B[lc]
-  ;W[mc]
-  ;B[kc]
-  ;W[md]
-  ;B[ek]
-  ;W[fl]
-  ;B[fk]
-  ;W[gk]
-  ;B[gj]
-  ;W[hk]
-  ;B[hj]
-  ;W[je]
-  ;B[ie]
-  ;W[jf]
-  ;B[if]
-  ;W[jg]
-  ;B[ig]
-  ;W[jo]
-  ;B[nr]
-  ;W[op]
-  ;B[ik]
-  ;W[il]
-  ;B[jl]
-  ;W[im]
-  ;B[jk]
-  ;W[jm]
-  ;B[kd]
-  ;W[jh]
-  ;B[ii]
-  ;W[nj]
-  ;B[ol]
-  ;W[kj]
-  ;B[ke]
-  ;W[lf]
-  ;B[el]
-  ;W[fm]
-  ;B[ji]
-  ;W[ki]
-  ;B[le]
-  ;W[me]
-  ;B[kf]
-  ;W[lg]
-  ;B[mb]
-  ;W[nb]
-  ;B[lb]
-  ;W[rf]
-  ;B[rg]
-  ;W[re]
-  ;B[rj]
-  ;W[ko]
-  ;B[kp]
-  ;W[er]
-  ;B[fr]
-  ;W[eq]
-  ;B[na]
-  ;W[ob]
-  ;B[cr]
-  ;W[fs]
-  ;B[gs]
-  ;W[es]
-  ;B[hr]
-  ;W[os]
-  ;B[ns]
-  ;W[or]
-  ;B[mr]
-  ;W[nl]
-  ;B[ok]
-  ;W[ll]
-  ;B[nk]
-  ;W[mk]
-  ;B[oj]
-  ;W[ni]
-  ;B[em]
-  ;W[en]
-  ;B[mm]
-  ;W[ml]
-  ;B[sg]
-  ;W[ea]
-  ;B[fa]
-  ;W[da]
-  ;B[fb]
-  ;W[sj]
-  ;B[si]
-  ;W[sk]
-  ;B[fp]
-  ;W[fo]
-  ;B[lo]
-  ;W[ln]
-  ;B[lm]
-  ;W[kn]
-  ;B[cn]
-  ;W[mn]
-  ;B[nm]
-  ;W[cs]
-  ;B[bs]
-  ;W[dr]
-  ;B[ds]
-  ;W[ae]
-  ;B[af]
-  ;W[cs]
-  ;B[br]
-  ;W[ih]
-  ;B[hh]
-  ;W[jj]
-  ;B[ij]
-  ;W[do]
-  ;B[kg]
-  ;W[kh]
-  ;B[be]
-  ;W[ad]
-  ;B[dp]
-  ;W[co]
-  ;B[bp]
-  ;W[dl]
-  ;B[dk]
-  ;W[oa]
-  ;B[ma]
-  ;W[ri]
-  ;B[sh]
-  ;W[sf]
-  ;B[qh]
-  ;W[km]
-  ;B[om]
-  ;W[kk]
-  ;B[ds]
-  ;W[eo]
-  ;B[cs]
-  ;W[kl]
-  ;B[np]
-  ;W[qp]
-  ;B[hd]
-  ;W[oi]
-)
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[5400]OT[1x60 byo-yomi]
+GN[Polish Championship League 2014, round 2, board 4]PW[Leszek Sołdan ]PB[Sebastian Pawlaczyk]WR[4d]BR[3d]DT[2014-12-12]C[maciek [2d\]: cześć :)
+urtok [11k\]: :)
+LMP1 [-\]: czesc
+Lesmian [2d\]: jedna deska?
+maciek [2d\]: w Mistrzostwach Polski gra sie na jednej desce
+maciek [2d\]: i dwoma kompletami kamieni
+maciek [2d\]: :)
+maciek [2d\]: fajnie, że Leszek znowu gra!
+gfdhff [2k\]: 8 graczy 1 deska
+Lesmian [2d\]: muszą się podzielić kamieniami :)
+Maek [4d\]: nil wygra!
+maciek [2d\]: LMP, ogromna prosba, pokazcie w 3 rundzie gre Koichiego z Mateuszem, czy pokazujecie tylko 1 deske/
+Lesmian [2d\]: to będzie dobra partia!
+maciek [2d\]: Stary Mistrz(mlody duchem) wygra!
+Maek [4d\]: nil!
+maciek [2d\]: Leszek!
+Lesmian [2d\]: jigo!
+maciek [2d\]: w razie jigo 2 rundowy boks
+Lesmian [2d\]: a ile ważą zawodnicy?
+LMP1 [-\]: pokazuje to co są kibice, w tej chwili przysiadlem sie do 4 stoliku
+maciek [2d\]: pewnie podobnie
+gfdhff [2k\]: 2? lepiej last man standing
+]RE[B+12.50]
+;B[cp]C[maciek [2d\]: o to super, na pewno wiekszosc bedzie chciala gre Koichego z Mateuszem
+]
+;W[pq]
+;B[ec]C[Maek [4d\]: chcemy siasia!
+maciek [2d\]: bo wybor 2 rundy wedlug mnie doskonaly!
+maciek [2d\]: Maek bo zaraz my bedziemy musieli poboksowac
+LMP1 [-\]: podziękuj kibicom z 1 rundy :)
+Lesmian [2d\]: tak, najlepsza partia w tej rundzie
+maciek [2d\]: dziękuję
+]
+;W[pc]C[Maek [4d\]: zapraszam
+maciek [2d\]: :D
+Maek [4d\]: co ten nil gra
+Maek [4d\]: juz przegral
+]
+;B[pe]C[maciek [2d\]: e tam etam, fajnie kombinuje od poczatku
+maciek [2d\]: mowil mi przed mistrzostwami ze czuje glod gry wiec bedzie swietna partia
+LMP1 [-\]: jest obecnych 7 zawodników, Krzysiek Giedrojć jeszcze nie dotarł
+]
+;W[qe]C[maciek [2d\]: pewnie wcina jakies warzywa :P
+]
+;B[qf]
+;W[qd]C[maciek [2d\]: bedzie Q16?
+maciek [2d\]: ah
+]
+;B[po]C[Ootakamoku [3d\]: b sente will be too big
+Ootakamoku [3d\]: er.. w sente
+Ootakamoku [3d\]: so I wouldnt like to just go along with this as black
+maciek [2d\]: Hi Oo the greatest KGS kibitz!
+Ootakamoku [3d\]: XD
+LMP1 [-\]: Krzysiek już jest :)
+Ootakamoku [3d\]: ohwell, maybe its all fine for b, w probably dont want to approach at e3, because o3 is low, so he will choose instead topleft corner
+maciek [2d\]: W pincer now
+Ootakamoku [3d\]: usually you dont pincer here as white tho
+]
+;W[pl]C[medical [3k\]: :)
+maciek [2d\]: :D
+bavly [1k\]: these guys are amatures right?
+maciek [2d\]: yes
+OneStone [6d\]: o5 n3 q14 o17 q10 ?
+samoht [1d\]: tho polish Profi-League starts 2015 ;-)
+]
+;B[mp]C[Ootakamoku [3d\]: ya, this looks nice for b
+Ootakamoku [3d\]: uh..
+Ootakamoku [3d\]: would have looked nice
+U [?\]: so itd be surma versus poland then
+maciek [2d\]: :)
+OneStone [6d\]: Surma can beat Poland single-handed.
+]
+;W[oo]
+;B[on]
+;W[no]C[OneStone [6d\]: r3 or q4 
+Ootakamoku [3d\]: q4 o3 o6 n5 r3 p3 s4 if played like that can w extend to e4?
+Ootakamoku [3d\]: or is n4 too dangerous with so much room to manouver
+]
+;B[pp]C[Lesmian [2d\]: nie przepadam za tym joseki, zresztą nigdy go nie zagrałem, nie chce mi sie go poznawać. O co w nim czarnemu?
+Lesmian [2d\]: *chodzi
+maciek [2d\]: niestty tez nie znam tego joseki
+Muttley [2k\]: hold on a minute, Surma isn't even playing in this game
+OneStone [6d\]: o3 r3 p3 o6 n5 s4 and j3 looks normal?
+wysek [?\]: gdzie jest aga, ona je lubi:)
+OneStone [6d\]: Muttley, nobody cares.
+maciek [2d\]: yes he is playing but no transmition this round
+whynotboth: so who gets the pole position in this one?
+maciek [2d\]: if u vote here he will be transmitted next round :D
+Muttley [2k\]: I just wondered why there was the discussion about Surma
+U [?\]: this is board 4 after all
+OneStone [6d\]: Well, it's just an idle thought.
+Ootakamoku [3d\]: feels annoying to end with j3 tho, as gives b a nice excuse to play e3 that he wants to play anyways
+Muttley [2k\]: no problem
+OneStone [6d\]: Yes, but then W can play q14 
+]
+;W[nq]C[maciek [2d\]: this is 4 boar but both players here won first game
+]
+;B[qq]
+;W[oq]C[Lesmian [2d\]: transmitting Surma`s game would mean that we will save 2 hrs of our life for something else
+Ootakamoku [3d\]: good point
+]
+;B[nn]C[OneStone [6d\]: is it?
+Muttley [2k\]: don't you mean "not transmitting"?
+U [?\]: i think tis fine to relay the most competitive games because its not overly interesting to see surma beating up on low dans or something
+Ootakamoku [3d\]: just forgot to take into account that there was big q14 wating.
+whynotboth: saving my life seems like a waste anyway
+OneStone [6d\]: I mean the board is large, so it is not so clear.
+Ootakamoku [3d\]: tho I guess b getting e3 also increase the size of moves on the left
+medical [3k\]: U are right
+maciek [2d\]: yes i understood it this way too Muttley
+wysek [?\]: U: That was exactly the thought.
+Muttley [2k\]: we are the Unimind
+OneStone [6d\]: not all thoughts are equal.
+Lesmian [2d\]: yeah, not transmitting :)
+]
+;W[pn]C[maciek [2d\]: but in 3 round Surma is playing VS Koichiro Habu!
+]
+;B[pm]C[OneStone [6d\]: who is that?
+Muttley [2k\]: well, there you go, let the crazy stuff being
+wysek [?\]: btw, W is x-teen times Polish Champion, he's quite good anyway:)
+Muttley [2k\]: begin
+]
+;W[qn]C[Ootakamoku [3d\]: b outside will look way too good
+]
+;B[qm]
+;W[ro]C[maciek [2d\]: the real fighter!
+U [?\]: oh this sequence
+OneStone [6d\]: B just sacs.
+Muttley [2k\]: Leszek is a legend :)
+maciek [2d\]: yeah
+Muttley [2k\]: even outside Poland
+OneStone [6d\]: Leszek loves to fight
+Muttley [2k\]: I've known about him for years
+medical [3k\]: yeah, bet sacs for sente and q14/13
+wysek [?\]: is this the one where black has to sacrifice the corner?
+]
+;B[rp]C[medical [3k\]: +b
+]
+;W[rm]C[maciek [2d\]: in Poland he is like Go seigen :)
+Ootakamoku [3d\]: w+ now
+]
+;B[ql]
+;W[rl]
+;B[qk]C[Tasky [3d\]: s4 looks kinda strange
+OneStone [6d\]: I wouldn't go that far...
+]
+;W[rk]C[Muttley [2k\]: (he means "very old")
+]
+;B[qj]C[OneStone [6d\]: Go Seigen.... (may he rest in his grave...)
+maciek [2d\]: no :0 i mean the best player in history
+Ootakamoku [3d\]: q14 dissapeared mostly
+Muttley [2k\]: I know :)
+Muttley [2k\]: father of Polish go and all that
+Ootakamoku [3d\]: well, lower value anyways
+OneStone [6d\]: Ahhh, Leszek must be about 50 or so?
+Muttley [2k\]: older, surely
+Muttley [2k\]: isn't he in his 60s now?
+OneStone [6d\]: what???
+maciek [2d\]: but his soul is still very young
+OneStone [6d\]: I remember him from 1993 in Prague.
+Muttley [2k\]: maybe I'm wrong, but I thought he was active in the early seventies
+OneStone [6d\]: Nah
+OneStone [6d\]: later
+Muttley [2k\]: ah right, my mistake, apologies Leszek :)
+whynotboth: how can he be in his 60s after move 31? where does he get all these points???
+maciek [2d\]: Leszek is 54
+OneStone [6d\]: r2 s2 q2 will kill already?
+Muttley [2k\]: thanks maciek, sorry :)
+OneStone [6d\]: Yes, that makes sense age-wise.
+LMP1 [-\]: polish championship 1979 (http://archiwum.go.art.pl/wyniki/mp79.php)
+maciek [2d\]: 15 times the Polsih Master
+OneStone [6d\]: That is to say... aged, but not wiser.
+Tasky [3d\]: s2 lives in the corner, no?
+maciek [2d\]: 12 times 2 place
+Muttley [2k\]: I'd be happy to be 6d at the age of 54
+OneStone [6d\]: Problem with Leszek is that he loves fighting more than good results.
+OneStone [6d\]: He is 4d only?
+maciek [2d\]: this is not problem
+Muttley [2k\]: hey, it says he's 4d :/
+Muttley [2k\]: I thought he's a Euro 6d
+wysek [?\]: was
+Muttley [2k\]: ah
+OneStone [6d\]: Ahhh, he went down (the drain)...
+maciek [2d\]: i hope he will be 5d back after this League
+Muttley [2k\]: I want my money back.
+OneStone [6d\]: Problem is that Leszek never grew wise.
+Muttley [2k\]: w wants n4, p8, top left, bottom right
+OneStone [6d\]: (as a go player, I mean)
+Muttley [2k\]: too much choice
+OneStone [6d\]: s10 is safe
+daisuki [2k\]: q6 is bad move?
+OneStone [6d\]: Yes, q6 was bad
+Muttley [2k\]: its a trick play, isn't it?
+wysek [?\]: and why it's bad?
+wysek [?\]: joseki afair
+U [?\]: if i remember right its only played when w has ladder?
+OneStone [6d\]: Even if he gets the corner, B's outside influence is still superior
+OneStone [6d\]: W normally has a stone at n5 
+wysek [?\]: n5 still open, so not surrounded
+OneStone [6d\]: so normally the exchange of n5 for r2 is made
+Muttley [2k\]: yes, wysek, I suspect that's what w is considering
+]
+;W[rr]C[medical [3k\]: no, w is reading the killing sequence :)
+Ootakamoku [3d\]: s2 weird
+OneStone [6d\]: s2 is probably bad
+]
+;B[qr]C[OneStone [6d\]: because r2 s2 q2 kills as well
+wysek [?\]: actually as black I much fear this variation and I try to play sth different 
+OneStone [6d\]: s1 is the vital point now
+]
+;W[sp]C[daisuki [2k\]: n5 ?
+medical [3k\]: b gets n5 in sente now?
+OneStone [6d\]: at least, W put some thought into it.
+]
+;B[sq]
+;W[so]C[OneStone [6d\]: this is quite quick
+OneStone [6d\]: s1 t2 s3 q2 n5 
+Ootakamoku [3d\]:  s6
+]
+;B[rs]
+;W[sr]C[medical [3k\]: why exchange s6?
+OneStone [6d\]: s6 is wrong
+feda [2d\]: i initially read white's name as Lee Sedol
+whynotboth: n5 and enjoy free ko threats
+]
+;B[rq]C[OneStone [6d\]: yes n5 is gimongous
+medical [3k\]: i get the feeling that b is thinking more about getting s10 in sente than n5...
+OneStone [6d\]: W has no choice but to play q2 
+scoutscode [2d\]: w could always bail and take n5
+scoutscode [2d\]: but that seems bad
+scoutscode [2d\]: all seems bad for w
+]
+;W[pr]C[OneStone [6d\]: Why do you have that feeling, medical? Is there any scientific evidence?
+medical [3k\]: from all these forcing moves..
+OneStone [6d\]: don't worry about that
+medical [3k\]: can't figure it out why b is forcing and forcing :)
+Tasky [3d\]: n5 now seems like the only move
+medical [3k\]: himself to his death
+]
+;B[mo]C[OneStone [6d\]: B has no choice
+scoutscode [2d\]: its a sacrifice, good for b
+OneStone [6d\]: m3 is wrong now
+OneStone [6d\]: so m2 
+]
+;W[qp]C[maciek [2d\]: hmm
+Tasky [3d\]: n3 !
+OneStone [6d\]: no
+OneStone [6d\]: n3 m3 m2 l2 
+Ootakamoku [3d\]: no reason I can see not to play r5
+Tasky [3d\]: for b I mean
+scoutscode [2d\]: can justify save r5 for ko threat
+Tasky [3d\]: r5 is a wasted ko threat
+OneStone [6d\]: r5 s6 n3 
+Ootakamoku [3d\]: w has to clear it up anyways, r5 is worth at very least 1 point
+Ootakamoku [3d\]: and only chance to get it since w clears up the b corner anwyays
+wysek [?\]: W seems impatient
+Tasky [3d\]: does w really have to clear up?
+Ootakamoku [3d\]: after b n3 sure
+feda [2d\]: b s6 
+scoutscode [2d\]: are you sure tho
+OneStone [6d\]: But B n3 is hugantic
+maciek [2d\]: jest transmisja video?
+scoutscode [2d\]: w can tenuki after n3
+LMP1 [-\]: nie
+OneStone [6d\]: Yes, that's fine
+scoutscode [2d\]: so b should save r5 for ko threat
+feda [2d\]: s6
+Tasky [3d\]: I don't think b n3 i sente
+maciek [2d\]: no to prosze opisz jak to tam wyglda
+OneStone [6d\]: But if W plays m3 next, B has to worry about the cut at n6 
+maciek [2d\]: :)
+]
+;B[qo]
+;W[rn]C[Tasky [3d\]: so it looks to me as if r5 is just a wasted threat
+scoutscode [2d\]: b n3 definitely wasn't sente
+OneStone [6d\]: the issue is that n3 defends against the cut at n6 
+scoutscode [2d\]: i agree with u tsaky
+medical [3k\]: would s10 be sente now? after that s6 would give w so few liberties to work with..
+scoutscode [2d\]: but n3 is still big enough to play right away
+Tasky [3d\]: n3 is still the best move imho
+medical [3k\]: oh, they palyed.
+scoutscode [2d\]: even if it isn't sente
+OneStone [6d\]: B q14 is also huge
+maciek [2d\]: Q14 also looks nice
+maciek [2d\]: :d
+OneStone [6d\]: q14 o17 n3 ?
+]
+;B[mq]C[OneStone [6d\]: q14 
+scoutscode [2d\]: b will feel silly about r5 if he doesn't do n3 after hehe
+LMP1 [-\]: siedzimy sobie przy 5 stolikach brydżowych (z zdemontowanymi zasłonami) i gramy (na pozostalych deskach jest spokojniej)
+Tasky [3d\]: would w answer q14 ?
+scoutscode [2d\]: even if q14 was bigger
+]
+;W[ep]C[maciek [2d\]: :)
+OneStone [6d\]: it is hard to say. After all, it's Leszek.
+OneStone [6d\]: g4 or g3 ?
+Ootakamoku [3d\]: neither, play t1
+Ootakamoku [3d\]: w still wins it, but b shape improves
+OneStone [6d\]: Leszek is completely unpredictable for me.
+OneStone [6d\]: g3 f5 g5 g6 g4 h6 ?
+U [?\]: this appraoch doesnt feel right with all the thickness
+Tasky [3d\]: I would h4 
+OneStone [6d\]: it feels great
+OneStone [6d\]: but maybe f4 would be lighter
+maciek [2d\]: yeah i like this aproach here too
+U [?\]: id probably have played f3 but meh
+Tasky [3d\]: ok, maybe not h4 ; to close to wall
+]
+;B[gq]C[maciek [2d\]: dawno nie widzialem Nila grajacego na takie duze wplywy
+Lesmian [2d\]: bo pewnie nikt mu nie dawał okazji
+whynotboth: how much time left?
+OneStone [6d\]: f5 now
+maciek [2d\]: hours
+LMP1 [-\]: 1h11m Sebastian, 1:09 Leszek
+Tasky [3d\]: maybe w can d6 
+whynotboth: thanks
+]
+;W[cq]C[maciek [2d\]: W wants all corners!
+maciek [2d\]: Nil uwielbia C7, ale tutaj top chyba nie pasuje, no nie?
+medical [3k\]: d3 almost only choice here, right?
+medical [3k\]: b3 doesn't feel good. w crawling over g3 stone
+]
+;B[bq]C[maciek [2d\]: lets see :)
+Tasky [3d\]: d3 strange I think
+medical [3k\]: ok. 3d played it :)
+Tasky [3d\]: because after d3 w will just let b take the corner and settle its group away on the left side
+maciek [2d\]: maybe the pincer was not so great choice
+]
+;W[dq]C[maciek [2d\]: looks like taking territory with a wall
+]
+;B[cm]C[wysek [?\]: if not pincer, then white would nullify the wall
+medical [3k\]: tasky, i've never seen a sequence where b takes the corner after d3
+maciek [2d\]: true
+OneStone [6d\]: This doesn't look great for B
+Tasky [3d\]: I don't like c7 at all
+medical [3k\]: would g4 been a better pincer then?
+maciek [2d\]: but i still consider D6 instead of pincer
+OneStone [6d\]: Because W can easily make sabaki
+maciek [2d\]: or maybe the low one wasnt the  greatest
+Tasky [3d\]: medical: seriously? almost all the sequences I know after d3 give b the corner
+Tasky [3d\]: d3 d4 e3 f3 and then either f4 or f2 
+]
+;W[gp]C[medical [3k\]: oh. i didn't consider that to be a corner. it's kind of shared :)
+oonicks [?\]: if i were b i want g5 so badly.. to late
+medical [3k\]: now i get what you mean
+]
+;B[hp]
+;W[go]C[OneStone [6d\]: b5 b4 c5 d5 d4 a5 was ossible
+OneStone [6d\]: possible
+whynotboth: h5 sac g3
+]
+;B[fq]C[OneStone [6d\]: instead of g5 
+OneStone [6d\]: b5 b4 c5 d5 d4 c6 d6 e5 f6 
+OneStone [6d\]: ladder is good
+Tasky [3d\]: good for b
+]
+;W[dn]C[OneStone [6d\]: b5 b4 c5 d5 d4 c6 d6 e5 e6 f5 f4 f6 h3 
+OneStone [6d\]: d6 is terrible
+OneStone [6d\]: b5 
+maciek [2d\]: not so terrible here
+Tasky [3d\]: ladder doesnt work for w, no?
+apina [1d\]: it really looks like move, which asks b to fix his shape
+]
+;B[bo]
+;W[ho]
+;B[ip]C[whynotboth: well w needed sente
+OneStone [6d\]: It's didn't work for W
+]
+;W[dm]C[maciek [2d\]: yeah he has a sente and the influences of black wall are reduced now
+OneStone [6d\]: this is just far below W could have gotten
+kingmango [3d\]: influence has been yraded for b territory
+]
+;B[cl]C[kingmango [3d\]: so good uae of the wall
+OneStone [6d\]: so so, because it is a bit overconcentrated anyway
+OneStone [6d\]: j5 k5 k6 l5 e9 
+maciek [2d\]: but W is richer now
+Tasky [3d\]: o2 also sente for b, so the bottom isn't small
+]
+;W[io]C[maciek [2d\]: i like W
+maciek [2d\]: so big wall and only 25 points
+Muttley [2k\]: o2 comes to about 6-8 points in the end
+Muttley [2k\]: and its black's privilege
+Tasky [3d\]: well, but you must consider, that w only has about 20 points in the corner
+]
+;B[jp]C[Muttley [2k\]: unless you're going to claim n2 works for w as reverse sente
+]
+;W[pf]C[maciek [2d\]: but the upper right + sente now
+]
+;B[qg]C[scoutscode [2d\]: the corner is 22 pts or so for w
+]
+;W[pg]C[maciek [2d\]: nice game :)
+Tasky [3d\]: indeed
+Mirth [2d\]: e9 is awfully big to leave out
+whynotboth: w should just kill r10
+Tasky [3d\]: I think finishing the top left corner is bigger
+maciek [2d\]: i think c16 is bigger before e9
+Muttley [2k\]: OneStone, if w plays first on the left, where would you play?
+maciek [2d\]: OneStone: C16
+scoutscode [2d\]: he already said e9
+maciek [2d\]: :D
+Muttley [2k\]: thanks
+Muttley [2k\]: different question scoutscode :)
+Muttley [2k\]: e9 is local, I'm interested in the overall choice :)
+scoutscode [2d\]: i suppose the game is slightly different from his variatin
+Tasky [3d\]: I'm not sure r13 was a good move for b
+Mirth [2d\]: e9 is not local
+Muttley [2k\]: yeah, no criticism intended
+scoutscode [2d\]: but still e9
+Tasky [3d\]: maybe should just have played tenuki instead of r13 
+scoutscode [2d\]: he did mention earlier 
+Muttley [2k\]: sure, its a key point
+maciek [2d\]: or atari
+scoutscode [2d\]: "j5 k5 k6 l5 e9" is what i reference
+maciek [2d\]: but yeah, tthese two stones are not interesting for black
+Muttley [2k\]: I wondered if the bottom left takes precedence over the top left
+scoutscode [2d\]: but anyway top right something happens
+maciek [2d\]: P15 now? :)
+Muttley [2k\]: but OneStone, would I be right in saying "b needs two stones to close the left so white not in a hurry"?
+Mirth [2d\]: b must answer at r12 first
+Muttley [2k\]: e.g. shimari/extension
+maciek [2d\]: W choose Q14 because it was sente for black
+scoutscode [2d\]: p15 looks playable
+scoutscode [2d\]: at first glance to me
+Tasky [3d\]: p15 looks really risky
+maciek [2d\]: P15 looks the only choice for me
+Mirth [2d\]: p15 looks like bad kind of risk...
+Tasky [3d\]: actually, it seems to work
+maciek [2d\]: connecting R12 is sad
+Muttley [2k\]: why not p15, its cut still
+Muttley [2k\]: that's a pain for w to deal with
+maciek [2d\]: doesnt matter it works or not, it looks more optimistic :D
+Mirth [2d\]: because b has cuts at p7
+Mirth [2d\]: it will not end good to extend that stone
+rinkaio [1k\]: P15 P15 P15
+Tasky [3d\]: yeah, the cut at p7 is quite annoying
+maciek [2d\]: P7 not much
+Muttley [2k\]: later that matters, not now?
+Mirth [2d\]: r12 is sure sente and protects the cut, so no reason not to play
+maciek [2d\]: annoying but black can sacriface something now
+]
+;B[ph]C[maciek [2d\]: because he already has finished the bottom
+Muttley [2k\]: p7 n7 and w hasn't really achieve much yet
+Tasky [3d\]: r12 gives w perfect shape at p15 
+rinkaio [1k\]: :(
+maciek [2d\]: yeah P15 is really perfect
+Tasky [3d\]: I stand by my opinion that r13 should have been tenuki instead
+whynotboth: p15 c16
+maciek [2d\]: i love the tenuki idea Tasky
+Tasky [3d\]: I mean, would w really play gote again at r13 ?
+scoutscode [2d\]: tenuki did seem fine
+Muttley [2k\]: take a stone?   Of course you would?
+Muttley [2k\]: Gote?  even better.
+maciek [2d\]: k16 and c16  was better than R13
+scoutscode [2d\]: and e9
+Muttley [2k\]: to be fair, if you want to make the aji at p7 meaningful, you might consider r13 as white
+]
+;W[oh]C[Mirth [2d\]: q12 was not good
+]
+;B[pi]C[Tasky [3d\]: this gets worse and worse for b
+scoutscode [2d\]: b making points where he is undercut 
+scoutscode [2d\]: oops
+Tasky [3d\]: so overconcentrated
+Tasky [3d\]: however, it has to be said that if w p15 there is a nice cut at p13 
+whynotboth: r12 looked better than q11
+]
+;W[ng]C[oonicks [?\]: actually b won a few points with this since w did not play r12
+Tasky [3d\]: l16 
+]
+;B[jd]C[whynotboth: 3d think alike
+maciek [2d\]: C15 might be clever?
+Tasky [3d\]: weeell, l16 ≠k16 ^^ 
+Mirth [2d\]: c15 = thank you
+whynotboth: thats why I said alike
+Muttley [2k\]: I wondered about an outside kakari top left but thought it left b with too much cash and white facing thickness
+maciek [2d\]: i like C15
+maciek [2d\]: no idea why
+Mirth [2d\]: c15, e15 and then black can play again at n17 area
+maciek [2d\]: but M17 also big :)
+Tasky [3d\]: n17 almost sente for b, since q15 stone has aji
+kingmango [3d\]: i think w must approach upper ledt
+Muttley [2k\]: maybe if b responds with c17 then w c13 is a base is why you like it
+whynotboth: I wonder if b p17 is a good probe soon
+kingmango [3d\]: cannot let b make an enclosure there
+maciek [2d\]: P17 is too far
+maciek [2d\]: just N17 is better i think
+bobombera [7k?\]: d14
+Tasky [3d\]: I think if b p17 , w will just remove all aji by playing p15 
+whynotboth: probe means probe
+maciek [2d\]: good probe dosnt help your opponent 
+Muttley [2k\]: how is p17 a probe?
+Tasky [3d\]: yeah, but a probe that kills all your aji is usually not a good probe
+whynotboth: trying to get aji and a favourable exchange - NOT saving the stone
+Muttley [2k\]: won't w just play p15 and say "thank you"
+maciek [2d\]: Q15 is cool aji already
+oonicks [?\]: d15 but b gets to play top, probably h17 ? b still gets a move at the top
+Tasky [3d\]: and a probe with only one meaningful answer isn't a probe either
+maciek [2d\]: :)
+Tasky [3d\]: the whole point of a probe is forcing the opponent to make a choice
+maciek [2d\]: upper left the only choice
+Mirth [2d\]: if p17, i'd play n16
+whynotboth: well then you get some cash from it
+Muttley [2k\]: I'm still cheering for white
+maciek [2d\]: me too
+whynotboth: you cannot have everything
+maciek [2d\]: Leszek Leszek!!!
+Muttley [2k\]: white kills stuff, that's good enough for me
+Tasky [3d\]: yeah, Mirth that might even work
+kingmango [3d\]: n17for b accomplishes almostthesame thing
+Maek [4d\]: nil nil!
+oonicks [?\]: quite equal now i think w to play
+OneStone [6d\]: B p15 later could be a problem
+]
+;W[ld]C[maciek [2d\]: ok
+Mirth [2d\]: this was the only area imo
+maciek [2d\]: :D
+OneStone [6d\]: so, m16 makes sense
+OneStone [6d\]: B d14 ?
+OneStone [6d\]: or just d15 or c16 ?
+]
+;B[df]C[OneStone [6d\]: hahaha
+whynotboth: onestone was p17 serving as a probe an option for b?
+whynotboth: before m16
+maciek [2d\]: u dont trust Us 
+OneStone [6d\]: no
+maciek [2d\]: kibitz is stronger than 6d :)
+Tasky [3d\]: no harm in asking
+maciek [2d\]: of course, just kidding :)
+OneStone [6d\]: p17 is nonsense
+OneStone [6d\]: how can that be a probe?
+OneStone [6d\]: w just answers p16 and all the aji is gone
+]
+;W[cd]C[maciek [2d\]: we test your answer^^
+OneStone [6d\]: Well, I have no answer to that.
+OneStone [6d\]: ^^
+]
+;B[dd]C[whynotboth: I thought it might help either p15 or get more points around p17
+OneStone [6d\]: c15 c14 d18 e18 d15 e15 b14 b13 b15 is standard 
+maciek [2d\]: standart is too long too read
+Tasky [3d\]: although I must admit: if OneStone had said that 'probe' would be a good, I would have lost faith in my go-skills
+reprisal [3d\]: you have faith in your skills still, at 3d?
+OneStone [6d\]: that sounds very reasonable, Tasky^^
+OneStone [6d\]: c15 c14 d15 e15 d18 I guess
+maciek [2d\]: i would rather have lost fath in OneStone skills
+Tasky [3d\]: ^true
+OneStone [6d\]: Yes, that's also reasonable.
+]
+;W[ce]
+;B[cf]C[OneStone [6d\]: W doesn't need to think here
+maciek [2d\]: E9 starts to look like a perfect one
+Tasky [3d\]: @reprisal: well, I do not always have faith in my skills, but in some cases I am quite confident that some moves are bad or some moves are good
+]
+;W[de]
+;B[ee]
+;W[dc]
+;B[ed]
+;W[db]C[OneStone [6d\]: Pfff, Tasky, I am getting bored with your reasonableness.
+Tasky [3d\]: pffff
+OneStone [6d\]: What is the point of being so reasonable?
+reprisal [3d\]: this doesnt seem good for b
+reprisal [3d\]: i'm not liking d14 very much anymore
+Tasky [3d\]: yeah, you are right. actually I am an invincible immortal go-master who will crush you into dust at every opportunity
+maciek [2d\]: D9 is great continuation
+OneStone [6d\]: d17 e16 exchange before b14 b13 b15 is probably bad
+maciek [2d\]: E9 i mean
+OneStone [6d\]: Yes, that is the spirit, Tasky!
+Muttley [2k\]: make sure you clean up after, Tasky
+Tasky [3d\]: so you better believe me if I say that r17 is now a super tesuji for b
+reprisal [3d\]: its totally a tesuji shape
+]
+;B[eb]C[Tasky [3d\]: there will be nothing left to clean up
+]
+;W[bb]C[OneStone [6d\]: hahaha
+Muttley [2k\]: I hear you.
+OneStone [6d\]: b14 is correct now for B
+OneStone [6d\]: b18 should be at b14 b13 b15 c12 and e19 
+OneStone [6d\]: that is a joseki
+whynotboth: see r17 and p17 are similar, I was right all the time after all!!
+Muttley [2k\]: this was my concern about w result top left, stuck in the corner
+maciek [2d\]: is B14 sente?
+OneStone [6d\]: b14 !
+]
+;B[bf]C[Muttley [2k\]: I think black will play b14
+OneStone [6d\]: So W lost a lot of pnts in this corner
+maciek [2d\]: u worng, he wont, he alredy did
+Muttley [2k\]: I think my claim will be disputed
+reprisal [3d\]: i want to get severe now, f8 or so
+reprisal [3d\]: wouldnt that be fun
+]
+;W[bd]C[manul [?\]: and now W will play b16 
+Muttley [2k\]: never.
+maciek [2d\]: 99.9% E9 coming
+reprisal [3d\]: e9 looks so soft
+oonicks [?\]: i vote for e8
+maciek [2d\]: soft is wonderful
+reprisal [3d\]: i wanna get up close and personal on those
+Muttley [2k\]: b doesn't really appear to be concerned with destroying white
+wysek [?\]: how about f8 then :)
+Mirth [2d\]: e9 but maybetake some sentein top @ m17 first
+maciek [2d\]: f8 too much aji
+oonicks [?\]: not f8 if w cuts b has wasted his wall
+Muttley [2k\]: I bet against f8
+maciek [2d\]: M17 not really sente now
+manul [?\]: i bet against t1 
+maciek [2d\]: m17 n17 l17 e9 
+Mirth [2d\]: m17 is sente
+reprisal [3d\]: my feeling was that if w cuts f8 the cutting stone dies
+Muttley [2k\]: t1 is actually sente, manul :)
+Weiss [3d\]: f9 
+LMP1 [-\]: Sebastian eyes looks like be checking q15-m16 area
+Muttley [2k\]: "black plays p17"
+Muttley [2k\]: "crowd goes wild"
+maciek [2d\]: haha
+maciek [2d\]: and whynotboth for a president!
+reprisal [3d\]: but how does one choose between e9 e8 f8 f9 ?
+reprisal [3d\]: i dont know how to think about it
+Muttley [2k\]: "whynotboth dies and goes to heaven" :)
+oonicks [?\]: e8 becus w group still weak
+reprisal [3d\]: they are all the same to the first order
+kingmango [3d\]: if b is leading with e9, the probably bestchoice
+maciek [2d\]: read ajis
+maciek [2d\]: for me E9 is perfect
+maciek [2d\]: so no need to read :D
+OneStone [6d\]: n15 is a possible move
+whynotboth: assuming I go to hell otherwise?
+maciek [2d\]: no matter to think am i lead or no, just choose best move
+maciek [2d\]: N15 is very risky
+reprisal [3d\]: you are very confident in your ability to find the best move
+oonicks [?\]: ya know if b plays m17 r13 makes you wonder if he will play n17:)
+maciek [2d\]: or rather more confident than being confident in my counting leads
+Coco [?\]: is there much game left? B looks too far behind, no?
+maciek [2d\]: :D
+reprisal [3d\]: i think i will not be mid dan unless i can figure out how im supposed to choose e8 area move
+feda [2d\]: black d8
+whynotboth: b+83,5 how is he behind?
+maciek [2d\]: D8 also looks nice
+Manslay [7k\]: d8 just helps white too much
+]
+;B[lc]C[Ephemere [3d\]: d8 or e9 build up the moyo and put pressure on W, I like it :) 
+maciek [2d\]: n17 l17 e9 
+]
+;W[mc]C[maciek [2d\]: M17 is not sente
+Mirth [2d\]: first of all l17 is not a given
+reprisal [3d\]: why play up here at all
+]
+;B[kc]C[reprisal [3d\]: w wasnt going to play k17
+maciek [2d\]: E9!!!
+Ephemere [3d\]: e9 now
+]
+;W[md]C[maciek [2d\]: ah
+Coco [?\]: W has two giant corners, no?
+maciek [2d\]: but Leszek might be right
+Ephemere [3d\]: still e9 now then...
+maciek [2d\]: W has wonderful corner now
+]
+;B[ek]C[maciek [2d\]: 65 points for W already
+maciek [2d\]: ^^
+reprisal [3d\]: i hope b has counted to play this soft
+reprisal [3d\]: at a glance it looks like a poor path to go down
+maciek [2d\]: very close
+Ephemere [3d\]: around g9?
+whynotboth: maciek how many points did you count for g5 group?
+maciek [2d\]: but W must reduce
+Mirth [2d\]: this w is not alive
+Manslay [7k\]: w group still unsettled
+maciek [2d\]: 2
+whynotboth: maybe 2 too many :-)
+maciek [2d\]: :D
+reprisal [3d\]: i'd be okay counting it as -5
+LMP1 [-\]: Sebastian 43m left, Leszek 45m left
+oonicks [?\]: 2
+Ephemere [3d\]: b is komi late but he's the one with potential and I don't see where else you want  to play...
+maciek [2d\]: if i were Leszek i cut E14 now :D
+feda [2d\]: j14
+Ephemere [3d\]: e14 ... hum... how about no?
+bobombera [7k?\]: w e14 looks for troubles
+maciek [2d\]: agree
+reprisal [3d\]: lets compare e14 to p17
+Ephemere [3d\]: g9 or k14 
+Mirth [2d\]: obviously e14 was not serious :p
+reprisal [3d\]: i think p17 > e14
+wysek [?\]: p17 too early
+maciek [2d\]: G12
+whynotboth: can still save p17 as a ko threat
+]
+;W[fl]C[Ephemere [3d\]: w can only reduce, not invade so b will end with a nice chunk of pointhere
+Mirth [2d\]: hard to not play from h5 group
+]
+;B[fk]C[Ephemere [3d\]: k13 !!
+]
+;W[gk]C[Mirth [2d\]: f9 :(
+maciek [2d\]: W is calm
+Ephemere [3d\]: w is helping b T_T
+]
+;B[gj]C[Mirth [2d\]: can double hane now
+maciek [2d\]: i start to see W taking center :)
+]
+;W[hk]
+;B[hj]C[Muttley [2k\]: with black stones on the right?  In your dreams :))
+]
+;W[je]C[Mirth [2d\]: k15
+Mirth [2d\]: yup
+feda [2d\]: W giving center
+Ephemere [3d\]: w is curently taking 8 pts in the center while b took around 15...
+]
+;B[ie]C[reprisal [3d\]: well if the group was worth -5 before then its fine
+Ephemere [3d\]: h10 should be on k14  I think
+]
+;W[jf]
+;B[if]C[reprisal [3d\]: so many extends
+]
+;W[jg]C[feda [2d\]: j9 
+Ephemere [3d\]: h10 ends up useless now.
+reprisal [3d\]: they make it endgame at move 100, how disappointing
+maciek [2d\]: yea, i like the way W played here
+maciek [2d\]: very patient
+OneStone [6d\]: l16 
+]
+;B[ig]C[feda [2d\]: W played bad
+Ootakamoku [3d\]: I remember a kgs 8d vs 7d game that went to scoring in 117 moves.
+whynotboth: so if you exchange p17 with p16 now b gained a few points in yose already
+wysek [?\]: W is good at endgame
+maciek [2d\]: so play L16 :)
+maciek [2d\]: and i wonder ho big is N2
+OneStone [6d\]: or first n18 ?
+Ootakamoku [3d\]: you wont get p16 response to
+Muttley [2k\]: minimum with a definitely living group is 12 moves, by my count
+bobombera [7k?\]: o10
+Ootakamoku [3d\]: w will answer with n18
+maciek [2d\]: N18 is 20 points :)
+OneStone [6d\]: o2 is quite big and sent-ish
+]
+;W[jo]C[OneStone [6d\]: o2 !!!!
+Ootakamoku [3d\]: onestone, t1 before o2, no?
+OneStone [6d\]: Maybe not
+whynotboth: oota it was an earlier probe move
+OneStone [6d\]: t1 n2 m2 o2 
+whynotboth: and p16 was the answer
+]
+;B[nr]
+;W[op]C[Ootakamoku [3d\]: onestone, and allow ko?
+Ephemere [3d\]: j9 
+]
+;B[ik]
+;W[il]
+;B[jl]
+;W[im]C[Ephemere [3d\]: w has m2 n2 l4 aji
+]
+;B[jk]C[Ephemere [3d\]: l16 before connecting would have been interesting
+Oloril [-\]: aji is like a rotten fish
+Mirth [2d\]: i would have just o10
+Ootakamoku [3d\]: oloril, the smell doesnt bother if you can hide it deep enough?
+OneStone [6d\]: as a matter of fact, 'aji' is the name of a fish as well.
+Mirth [2d\]: connect did not seem necessary
+Ephemere [3d\]: a very nice one grilled indeed
+Oloril [-\]: i don't know about aji, but i could eat ahi tuna every day
+maciek [2d\]: Go Vegetarians!!!
+Mirth [2d\]: dont want to see your mercury levels if you do that
+maciek [2d\]: O10 forced/
+LMP1 [-\]: Krzysiek wydaje sie bardziej zainteresowany gra Leszka i Nila niż swoją (od 4 minut ogląda nie swoją deskę)
+]
+;W[jm]
+;B[kd]C[Oloril [-\]: what's a little mercury poisoning between friends?
+bobombera [7k?\]: very nice
+]
+;W[jh]C[maciek [2d\]: Krzysiek z Siasiem tez fajna gra :)
+LMP1 [-\]: jest walka tam i Sasio mysli
+]
+;B[ii]C[Ephemere [3d\]: j11 seem a little shy
+whynotboth: b+102,5 now
+Ephemere [3d\]: am I the only one interested in m2? 
+Ootakamoku [3d\]: m2 doesnt do anything usefull
+Ootakamoku [3d\]: m2 is b sente, threattens to save corner stones
+Ephemere [3d\]: realy?
+Ootakamoku [3d\]: w m2 peep likewise allowes b to sve corner stones
+Ephemere [3d\]: w m2 gives m2 n2 l4 l3 k3 and w capture f3 g3  stones then how do you save the corner stones?
+]
+;W[nj]C[Ootakamoku [3d\]: t1 r4 q1 p1 p2 and ko
+]
+;B[ol]C[maciek [2d\]: Black very defensive now
+bobombera [7k?\]: after l7 would be better
+Ephemere [3d\]:  no
+kudoku [3k\]: p1 p2 n2 o1 n1
+Ootakamoku [3d\]: ok, skip t1, just directly q1 for ko
+Ephemere [3d\]: t1 q1 and b has not enough libs...
+kingmango [3d\]: t1 doesnt work, q1 and ir is ko
+Ootakamoku [3d\]: saves r2 stones, even if q4 dies
+]
+;W[kj]
+;B[ke]
+;W[lf]
+;B[el]
+;W[fm]C[Ephemere [3d\]: hard ko for b, no risk for w and w already got a lot of point capturing b 2 stones on the left, I would play it...
+maciek [2d\]: yea
+Ootakamoku [3d\]: hmm, actually b q1 right away is some reasonable yose
+maciek [2d\]: M2 is really interesting
+Ootakamoku [3d\]: q1 p1 p2 r4 o1 r1 r2 
+reprisal [3d\]: i think w can n2 though
+reprisal [3d\]: oh i see what you mean
+]
+;B[ji]
+;W[ki]C[Oloril [-\]: man, all these long sequences
+urtok [11k\]: black winning +8 pkt, i think
+Oloril [-\]: and I'm just wondering why they aren't playing in the little squares
+madigouf [2d\]: S10 ?
+Ootakamoku [3d\]: oloril, if you play in the intersection, you cover 4 squares at once, more efficient
+]
+;B[le]
+;W[me]
+;B[kf]
+;W[lg]C[Ephemere [3d\]: m2 is w only hope IMHO
+madigouf [2d\]: M2 ?
+madigouf [2d\]: is it working ?
+]
+;B[mb]C[madigouf [2d\]: really ?
+]
+;W[nb]C[reprisal [3d\]: m2 is...quite the brew
+]
+;B[lb]C[maciek [2d\]: now i really want to see W M2
+]
+;W[rf]
+;B[rg]
+;W[re]C[Ootakamoku [3d\]: m2 n2 (huge dept in corner) then.. l4 l3 k3 k2 m3 l2 m4 l5 m5 l6 and.. dont see how w can handle it
+whynotboth: NOW IMAGINE p17 p16 EXCHANGE RIGHT THERE!!
+whynotboth: wonderful probe
+reprisal [3d\]: whynot, that is fundamentally flawed thinking
+]
+;B[rj]C[Tasky [3d\]: trolltroll is troll
+maciek [2d\]: :D
+whynotboth: that is what probe means
+]
+;W[ko]
+;B[kp]C[Ootakamoku [3d\]: the game might have played out a bit differently had that probe been exchanged
+madigouf [2d\]: bye bye M2 
+Ootakamoku [3d\]: q1 pretty darn big move
+whynotboth: b got an advantage of the exchange
+reprisal [3d\]: i dont think q1 is worth much
+]
+;W[er]C[Ootakamoku [3d\]: hmm, ok.. saomething like 5 points gote
+reprisal [3d\]: b is still short on liberties even after retaking r1
+]
+;B[fr]C[Ootakamoku [3d\]: ah, ya
+reprisal [3d\]: though if w p2 is sente
+]
+;W[eq]C[maciek [2d\]: my counting is B+6,5
+maciek [2d\]: so its close
+reprisal [3d\]: then it may be small double sente
+OneStone [6d\]: c2 
+]
+;B[na]
+;W[ob]C[Tasky [3d\]: my counting b + ~5
+OneStone [6d\]: n9 - or is n10 possible?
+]
+;B[cr]C[maciek [2d\]: Last game Sebastian wins by 1,5
+Ootakamoku [3d\]: is black e19 sente against corner?
+maciek [2d\]: his games always close it seems :)
+]
+;W[fs]C[OneStone [6d\]: nah just n9 n10 
+]
+;B[gs]
+;W[es]
+;B[hr]C[OneStone [6d\]: e19 
+]
+;W[os]
+;B[ns]C[maciek [2d\]: N2
+Ephemere [3d\]: e19 
+]
+;W[or]
+;B[mr]
+;W[nl]C[OneStone [6d\]: m9 
+]
+;B[ok]C[maciek [2d\]: W got sme extra points here...
+maciek [2d\]: coser and closer
+Muttley [2k\]: what's the rule set, LMP1, please?
+Tasky [3d\]: w should get his sente at e19 asap
+Ephemere [3d\]: should have play e19 and t13 sente first this smell like gote 
+Muttley [2k\]: clearly, this one is going to counting
+OneStone [6d\]: Not according to SE
+maciek [2d\]: e19 t13 a15 
+feda [2d\]: W was winning but let B catch up with the f8 and k13 pushes
+Lesmian [2d\]: japanese rules, 6.5 komi
+koshtoryz [4k\]: Co się dzieje na desce Siasia?
+Muttley [2k\]: thank you Lesmian
+Lesmian [2d\]: np
+maciek [2d\]: S12 takes eye...
+maciek [2d\]: but T13 sente ")
+]
+;W[ll]
+;B[nk]
+;W[mk]
+;B[oj]C[wysek [?\]: it does not take eye
+maciek [2d\]: ok S12 nonsense^^
+]
+;W[ni]
+;B[em]
+;W[en]C[Muttley [2k\]: b 91, w about 80.5
+Muttley [2k\]: I must be missing something
+wysek [?\]: I don't think you are. White was leading by more than 10
+OneStone [6d\]: o9 at n9 o9 m9 l9 n8 didn't quite work?
+]
+;B[mm]
+;W[ml]C[bobombera [7k?\]: w t11
+sharma [6d\]: w 82 with komi is kinda correct
+Muttley [2k\]: 83.5 corrected
+LMP1 [-\]: Marcin Majka won by resign
+bobombera [7k?\]: wt11
+maciek [2d\]: yes black should win 
+koshtoryz [4k\]: YAY
+maciek [2d\]: i think 7,5
+]
+;B[sg]C[Muttley [2k\]: so I still have b ahead about 9.5
+Lesmian [2d\]: me too
+]
+;W[ea]
+;B[fa]
+;W[da]
+;B[fb]
+;W[sj]C[koshtoryz [4k\]: LMP1: Co się dzieje na deasce Siasia?
+maciek [2d\]: podobna ostro walcza
+]
+;B[si]C[wysek [?\]: Sorry, I meant B:)
+]
+;W[sk]C[Muttley [2k\]: Learn to count with Muttley's DVD - "Learn to count with Muttley's DVD!"
+Lesmian [2d\]: deska siasia pewnie rozsypała się na wióry po uderzeniach kamieniami
+whynotboth: so b didnt even need my great probe to win - good for him, I guess
+LMP1 [-\]: walcza o zycie kosztem cudzej grupy (obydwaj Sasio i KRzysiek)
+maciek [2d\]: to kto im tam jakas grupe podrzucil?!
+Muttley [2k\]: what the critics say: "Complete rubbish" - Lee Changho "Dear god, not another one from Muttley"- Park Jungwhan
+wysek [?\]: "Must have" - KGS kibitzers
+feda [2d\]: :)
+whynotboth: how much do you pay me for watching it muttley?
+whynotboth: and how much can I sue you for the caused pain afterwards? ^^
+]
+;B[fp]
+;W[fo]C[OneStone [6d\]: You won't survive it, whynot.
+whynotboth: :-(
+takku [10k\]: hi
+OneStone [6d\]: so you can't sue for 'inflicted pain'.
+OneStone [6d\]: But if you have a wife, she might be very happy.
+]
+;B[lo]
+;W[ln]C[Tasky [3d\]: b can kill at t7!
+whynotboth: lol
+]
+;B[lm]
+;W[kn]C[Muttley [2k\]: whynotboth, I'll send you a review copy of my next all-star DVD "Tesujis I've seen that the pros missed!"
+]
+;B[cn]C[Ephemere [3d\]: a15 
+]
+;W[mn]C[xDragon [?\]: Is that a move from muttleys tsumego series tasky
+whynotboth: like the self ataris?
+Ephemere [3d\]: d5 first
+Muttley [2k\]: if w cuts, as he has, then w can get a seki later with s11?
+]
+;B[nm]
+;W[cs]C[Ephemere [3d\]: no, s11 is just a 1 point yose
+Muttley [2k\]: t7!  I'll add it to the examples :)
+OneStone [6d\]: b1 d2 b2 d5 
+]
+;B[bs]
+;W[dr]C[Muttley [2k\]: oh right, because q9 to reduce to one eye doesn't work, sorry
+]
+;B[ds]C[OneStone [6d\]: but B wins by over 10 pnts
+]
+;W[ae]
+;B[af]
+;W[cs]C[xDragon [?\]: Another tesuji for the book
+]
+;B[br]C[Muttley [2k\]: right :)
+Muttley [2k\]: that's the spirit xDragon :)
+]
+;W[ih]C[OneStone [6d\]: d5 now?
+Muttley [2k\]: all the same, its a nice idea to get a seki like this
+]
+;B[hh]
+;W[jj]
+;B[ij]
+;W[do]
+;B[kg]
+;W[kh]C[OneStone [6d\]: c5 is 1.5 pnts
+OneStone [6d\]: t14 is 1 pnt is sente
+OneStone [6d\]: or reverse sente, so that is 2 pnts
+OneStone [6d\]: l9 is biggest now
+wysek [?\]: d4 > c5
+Holub [1d\]: i dont think so
+OneStone [6d\]: no
+]
+;B[be]
+;W[ad]
+;B[dp]
+;W[co]
+;B[bp]
+;W[dl]
+;B[dk]
+;W[oa]
+;B[ma]
+;W[ri]
+;B[sh]
+;W[sf]
+;B[qh]
+;W[km]
+;B[om]
+;W[kk]C[madigouf [2d\]: black misses l9
+]
+;B[ds]
+;W[eo]C[OneStone [6d\]: he misses a few pnts here and there
+whynotboth: like p17 probe
+Tasky [3d\]: lol
+whynotboth: but it´s alright
+OneStone [6d\]: so you want to play it now?
+Tasky [3d\]: I would play h8 probe now
+Tasky [3d\]: and see how w answers
+whynotboth: nah a few dozen moves earlier when you answered it with p16
+]
+;B[cs]
+;W[kl]C[OneStone [6d\]: 500 moves ago, you mean
+wysek [?\]: yeah it would be good then. now you don't answer.
+OneStone [6d\]: It would still be bad
+OneStone [6d\]: because after that, if B plays k16, W would ignore
+Tasky [3d\]: b should have played p17 as his first move
+OneStone [6d\]: he would play tenuki
+OneStone [6d\]: yes, finally, someone who make sense ;-)
+wysek [?\]: p17 as first move = super probe
+Tasky [3d\]: sorry OneStone, bad habit
+maciek [2d\]: the definition of "lets see how my opponent answer'
+whynotboth: too bad I asked for the probe AFTER k16 was played but nice try
+OneStone [6d\]: o4 r4 
+OneStone [6d\]: ic
+OneStone [6d\]: that would have caused quite a scandal if you had.
+]
+;B[np]
+;W[qp]C[Lesmian [2d\]: se killed b18
+OneStone [6d\]: SE can't figure out the topr left
+whynotboth: c17 and miai to kill both sides
+OneStone [6d\]: two rights don't make a wrong.
+woj [2k\]: LMP
+Lesmian [2d\]: czy jest szansa na trasmisję większej liczby desek o 16?
+OneStone [6d\]: ??? LMP???
+LMP1 [-\]: imho nie (nic nie wiem o tym aby ktos jeszcze byl do transmisji)
+maciek [2d\]: Koich vs Mateusz!
+LMP1 [-\]: Sebastian counting points but game still in progress
+gfdhff [2k\]: dobrze, chociaz jedna partia bedzie
+]
+;B[hd]
+;W[oi]C[sharma [6d\]: h16 was needed?
+LMP1 [-\]: pas, pas
+LMP1 [-\]: players counting
+wysek [?\]: Leszek-Siasio tez fajna by byla
+Lesmian [2d\]: no własnie gdybyście mieli drugiego transmitera, to chyba będziemy zgodni co do transmisji gry Leszka i Siasia
+Lesmian [2d\]: my tzn. kibice :)
+Ootakamoku [3d\]: h16 probably just because didnt want any suprises, winning anywaysy
+LMP1 [-\]: B won
+OneStone [6d\]: surprises are for Xmas
+koshtoryz [4k\]: :))
+koshtoryz [4k\]: All black will win this round.
+OneStone [6d\]: first mover's advantage
+LMP1 [-\]: Mateusz Surma (7d) - Koichiro Habu (4d) will be broadcast at round 3
+OneStone [6d\]: what time?
+LMP1 [-\]: III round: <gmt>2014-12-12 15:00</gmt>
+OneStone [6d\]: in 20 minutes?
+OneStone [6d\]: tomorrow
+OneStone [6d\]: ic
+wysek [?\]: pls check LMP1 info for schedule
+koshtoryz [4k\]: in 4 hours and 20 minutes
+Lesmian [2d\]: no, in 3 hours and 20 mintes :)
+koshtoryz [4k\]: edit, 3 hours 20 minutes
+koshtoryz [4k\]: yep
+koshtoryz [4k\]: maths ^^
+gfdhff [2k\]: zaciera ręce
+OneStone [6d\]: it's 12/12/14 now
+LMP1 [-\]: for now: Sebestian and Marcin won, two games still in progress
+Lesmian [2d\]: fajnie gdyby Łukasz wygrał
+Lesmian [2d\]: byłoby ciekawie...
+wysek [?\]: w jakim swiecie Ty zyjesz;)
+Lesmian [2d\]: Leo est rex animalium, może i goistycznych ;)
+LMP1 [-\]: Siasio z Krzyskiem maja wszystko żywe, nieprawdopobne
+koshtoryz [4k\]: A kto wygrywa?
+wysek [?\]: jak tak sie skonczy, to trzeba bedzie powtorzyc partie
+LMP1 [-\]: nie ma wyraznej przewagi żadnego gracza (a sa na oko kolo 120 ruchu)
+maciek [2d\]: a u Mateusza co slychac?
+Lesmian [2d\]: walczy z lwem
+maciek [2d\]: :)
+Lesmian [2d\]: :)
+maciek [2d\]: z koteczkiem :)
+LMP1 [-\]: na moj rozumek chyba ustawia ko na życie grupy Lwa (a to rownie dobrze moze byc misreading)
+Lesmian [2d\]: ze strony twojej czy Mateusza? :)
+LMP1 [-\]: fajny dowcip :)
+sheena [?\]: nare, zrob zdjecie!
+sheena [?\]: :)
+maciek [2d\]: dajcie jakies zdjecia na facebook pls :)
+LMP1 [-\]: hehe, co jak co, ale Ty powinnaś wiedzieć z wczoraj że jestem za mało techniczny aby potrafić posługiwać się komórką :-p
+gfdhff [2k\]: :(
+LMP1 [-\]: musisz przyjechać na 3 rundą i będziemy mieli fotografa :)
+gfdhff [2k\]: jak przyjedzie z laptopem to nawet Szpakowskiego
+maciek [2d\]: :)
+Lesmian [2d\]: tak w ogóle to gratulacje dla Sebastiana. Tak jak w poprzednim roku, początek turnieju ma dobry :)
+sheena [?\]: no niestety nie dam rady byc na 16
+LMP1 [-\]: Mateusz Surma won by resign
+sheena [?\]: heh
+sheena [?\]: a to zaskoczenie
+Lesmian [2d\]: szkoda
+Lesmian [2d\]: ale w III rundzie może zostanie pokonany! będzie wtedy ciekawie 
+maciek [2d\]: brawo Mateusz :) 
+])

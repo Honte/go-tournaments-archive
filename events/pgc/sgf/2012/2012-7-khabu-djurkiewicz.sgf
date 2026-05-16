@@ -1,185 +1,274 @@
-(
-  ;BR[4d]CA[UTF-8]DT[2012-12-02]EV[Polish Go Championship 2012]FF[4]GM[1]GN[Round 7 - Board 3]KM[6.50]PB[Koichiro Habu]PC[Katowice]PW[Dawid Jurkiewicz]RE[B+R]RO[7]RU[japanese]ST[2]SZ[19]WR[1d]
-  ;B[pd]
-  ;W[dd]
-  ;B[pq]
-  ;W[cp]
-  ;B[eq]
-  ;W[qo]
-  ;B[np]
-  ;W[hp]
-  ;B[en]
-  ;W[dm]
-  ;B[jp]
-  ;W[dn]
-  ;B[eo]
-  ;W[dq]
-  ;B[er]
-  ;W[pk]
-  ;B[hn]
-  ;W[jn]
-  ;B[io]
-  ;W[jd]
-  ;B[qi]
-  ;W[nc]
-  ;B[pf]
-  ;W[cf]
-  ;B[eb]
-  ;W[db]
-  ;B[ec]
-  ;W[dc]
-  ;B[hc]
-  ;W[ib]
-  ;B[he]
-  ;W[hb]
-  ;B[je]
-  ;W[id]
-  ;B[ie]
-  ;W[qq]
-  ;B[qr]
-  ;W[pr]
-  ;B[oq]
-  ;W[rr]
-  ;B[qp]
-  ;W[rq]
-  ;B[rp]
-  ;W[ro]
-  ;B[sp]
-  ;W[po]
-  ;B[pp]
-  ;W[qs]
-  ;B[rk]
-  ;W[nn]
-  ;B[pm]
-  ;W[nl]
-  ;B[oo]
-  ;W[on]
-  ;B[ql]
-  ;W[no]
-  ;B[kd]
-  ;W[ke]
-  ;B[kc]
-  ;W[hd]
-  ;B[gd]
-  ;W[jb]
-  ;B[md]
-  ;W[kb]
-  ;B[lb]
-  ;W[ge]
-  ;B[ig]
-  ;W[gf]
-  ;B[gb]
-  ;W[fd]
-  ;B[gc]
-  ;W[ed]
-  ;B[ka]
-  ;W[fc]
-  ;B[kg]
-  ;W[mp]
-  ;B[mq]
-  ;W[lp]
-  ;B[kr]
-  ;W[qc]
-  ;B[pc]
-  ;W[pb]
-  ;B[rd]
-  ;W[qd]
-  ;B[re]
-  ;W[qe]
-  ;B[qf]
-  ;W[pe]
-  ;B[od]
-  ;W[mc]
-  ;B[lc]
-  ;W[nd]
-  ;B[oe]
-  ;W[me]
-  ;B[le]
-  ;W[lf]
-  ;B[kf]
-  ;W[ld]
-  ;B[ke]
-  ;W[rb]
-  ;B[rc]
-  ;W[qb]
-  ;B[oa]
-  ;W[ob]
-  ;B[na]
-  ;W[mg]
-  ;B[nf]
-  ;W[mf]
-  ;B[mh]
-  ;W[ng]
-  ;B[ni]
-  ;W[lh]
-  ;B[li]
-  ;W[ph]
-  ;B[ri]
-  ;W[pi]
-  ;B[oj]
-  ;W[pj]
-  ;B[ok]
-  ;W[rj]
-  ;B[sj]
-  ;W[ol]
-  ;B[pl]
-  ;W[rg]
-  ;B[qg]
-  ;W[sc]
-  ;B[rf]
-  ;W[og]
-  ;B[of]
-  ;W[ki]
-  ;B[kh]
-  ;W[nh]
-  ;B[lg]
-  ;W[oi]
-  ;B[nj]
-  ;W[pg]
-  ;B[sb]
-  ;W[sa]
-  ;B[ln]
-  ;W[lm]
-  ;B[ko]
-  ;W[kj]
-  ;B[jl]
-  ;W[lj]
-  ;B[ll]
-  ;W[mj]
-  ;B[mi]
-  ;W[hi]
-  ;B[ii]
-  ;W[ij]
-  ;B[jk]
-  ;W[ih]
-  ;B[mk]
-  ;W[nk]
-  ;B[lh]
-  ;W[kp]
-  ;B[km]
-  ;W[mm]
-  ;B[kl]
-  ;W[lr]
-  ;B[lq]
-  ;W[kq]
-  ;B[mr]
-  ;W[jr]
-  ;B[ls]
-  ;W[jq]
-  ;B[kn]
-  ;W[op]
-  ;B[nq]
-  ;W[mo]
-  ;B[or]
-  ;W[hh]
-  ;B[jh]
-  ;W[ji]
-  ;B[gg]
-  ;W[hg]
-  ;B[hf]
-  ;W[jf]
-  ;B[fg]
-  ;W[ef]
-  ;B[fi]
-  ;W[fj]
-)
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[5400]OT[1x60 byo-yomi]
+GN[Polish Go Championship League]PW[Koichiro Habu]PB[Dawid Jurkiewicz]WR[4d]BR[1d]DT[2012-12-02]RO[7]PC[The KGS Go Server at http://www.gokgs.com/]
+;B[pd]
+;W[dd]
+;B[pq]
+;W[cp]
+;B[eq]
+;W[qo]C[LMP3 [-\]: jesli Koichi wygra nie bedzie musial jechac na nastepne eliminacje
+LMP3 [-\]: deejay ma juz zapewnione 6 miejsce
+LMP3 [-\]: wyzej ani nizej nie bedzie
+]
+;B[np]
+;W[hp]
+;B[en]
+;W[dm]
+;B[jp]
+;W[dn]
+;B[eo]
+;W[dq]
+;B[er]
+;W[pk]
+;B[hn]
+;W[jn]
+;B[io]
+;W[jd]
+;B[qi]
+;W[nc]
+;B[pf]
+;W[cf]
+;B[eb]
+;W[db]
+;B[ec]
+;W[dc]
+;B[hc]
+;W[ib]
+;B[he]
+;W[hb]
+;B[je]
+;W[id]
+;B[ie]
+;W[qq]
+;B[qr]
+;W[pr]
+;B[oq]
+;W[rr]
+;B[qp]
+;W[rq]
+;B[rp]
+;W[ro]
+;B[sp]
+;W[po]
+;B[pp]
+;W[qs]
+;B[rk]
+;W[nn]
+;B[pm]
+;W[nl]
+;B[oo]
+;W[on]
+;B[ql]
+;W[no]
+;B[kd]
+;W[ke]
+;B[kc]
+;W[hd]
+;B[gd]
+;W[jb]
+;B[md]
+;W[kb]
+;B[lb]
+;W[ge]
+;B[ig]
+;W[gf]
+;B[gb]
+;W[fd]
+;B[gc]
+;W[ed]
+;B[ka]
+;W[fc]
+;B[kg]
+;W[mp]
+;B[mq]
+;W[lp]
+;B[kr]C[lecewkulki [-\]: ile maja czasu?
+]
+;W[qc]
+;B[pc]
+;W[pb]C[LMP3 [-\]: czarne 21 min
+SadPlayer [-\]: p18 r18 r16 ?
+LMP3 [-\]: biale nie widze
+lecewkulki [-\]: thx
+juggler [3d?\]: skoro minelo 100 minut od poczatku gry to latwo policzyc ze koichi powinien miec jeszcze z godzine
+LMP3 [-\]: białe mają 1 min 
+juggler [3d?\]: hm to cos zle policzylem :)
+SadPlayer [-\]: matematyka kłamie:)
+]
+;B[rd]C[celepa [?\]: :)
+lecewkulki [-\]: zapomnial klikac zegar???
+LMP3 [-\]: nie ja zle chyba spojzale
+juggler [3d?\]: nie no bez sesnu, bo wynika, ze czarny zuzyl 70 minut, a bialy 90, czyli w sumie 2.5 godziny
+juggler [3d?\]: czy to znaczy, ze runda sie zaczela o 13?
+LMP3 [-\]: bialem maja teraz 18 sekund
+celepa [?\]: lmp3 to jakis troll
+trol [1d\]: Nie, to nie ja.
+celepa [?\]: ups,s orry
+celepa [?\]: ;)
+juggler [3d?\]: cos dlugo trwa te 18 sekund :)
+LMP3 [-\]: sorry, czarne
+]
+;W[qd]C[lecewkulki [-\]: ale daltonizm...
+juggler [3d?\]: to moge prosic o info, czy koichi ma okolo godziny, czy okolo zero czasu? :)\\
+celepa [?\]: godziny
+LMP3 [-\]: i nie sekund a minut, nie widze dobrze wyświetlaczy zegra
+]
+;B[re]
+;W[qe]
+;B[qf]
+;W[pe]
+;B[od]
+;W[mc]
+;B[lc]
+;W[nd]
+;B[oe]
+;W[me]
+;B[le]
+;W[lf]
+;B[kf]
+;W[ld]
+;B[ke]C[SadPlayer [-\]: widzi ktoś tu życie?
+celepa [?\]: nie, ale nie wiem czy zamiast kombinowania nie mogl uciec w p16
+celepa [?\]: p15*
+SadPlayer [-\]: no to d10 i wygrać to w yose 
+trol [1d\]: Dlaczego d10, a nie f8?
+SadPlayer [-\]: nie wolno być chciwym :>
+SadPlayer [-\]: no dobra, kompromis: e9 
+LMP3 [-\]: time: w 49; b 13 minutes
+]
+;W[rb]
+;B[rc]
+;W[qb]C[celepa [?\]: zyje? :P
+radzik23 [-\]: kto?
+]
+;B[oa]C[radzik23 [-\]: to nie moze byc dobre :)
+radzik23 [-\]: p14 ?
+radzik23 [-\]: moze jednak nie
+]
+;W[ob]
+;B[na]
+;W[mg]
+;B[nf]
+;W[mf]
+;B[mh]
+;W[ng]C[celepa [?\]: czemu nie wyplacil o14 zamiasr n13?
+]
+;B[ni]C[celepa [?\]: i wychodzil
+]
+;W[lh]
+;B[li]
+;W[ph]C[trol [1d\]: Może i przeżyje, ale wtedy grupa niżej nie ma za ciekawie.
+slender [2d\]: biały spokojnie się łączy
+slender [2d\]: jeśli czarny zagra nieuważnie, to połączy się w sente
+]
+;B[ri]
+;W[pi]
+;B[oj]C[LMP3 [-\]: czarny w byo
+]
+;W[pj]
+;B[ok]C[celepa [?\]: q11 blad Koichiego
+slender [2d\]: ta
+celepa [?\]: powinien p11
+celepa [?\]: pq10*
+slender [2d\]: ale i tak zle nie ma 
+celepa [?\]: tfu, p10*
+celepa [?\]: chociaz... zyje chyba, jesli na o12 cz musi laczyc
+]
+;W[rj]
+;B[sj]C[lecewkulki [-\]: zabije cos! :>
+celepa [?\]: zwyczajnie p8, jesli ciecie to p13 o12 p11 q13 oczko
+celepa [?\]: aaa nie ma drugiego, lol
+celepa [?\]: zginal ;)
+SadPlayer [-\]: sie uparł zeby przeżyć
+SadPlayer [-\]: zamiast sie do błedu przyznać i poświecić te kamienie kiedy ich jeszcze mało było
+slender [2d\]: cz ma problem M14 vs L13
+]
+;W[ol]
+;B[pl]
+;W[rg]C[celepa [?\]: zyje
+celepa [?\]: t17 sente bedzie
+slender [2d\]: i L12
+]
+;B[qg]
+;W[sc]
+;B[rf]C[celepa [?\]: i o12
+SadPlayer [-\]: żyje chyba
+celepa [?\]: ta
+SadPlayer [-\]: o12 n11 p11 o10 p13 p14 q13 
+SadPlayer [-\]: szok
+celepa [?\]: gz Koihci
+SadPlayer [-\]: i niedowierzanie ;)
+]
+;W[og]C[celepa [?\]: pewnie ciezko oddycha teraz ;P
+]
+;B[of]C[LMP3 [-\]: nic po nim nie widać
+]
+;W[ki]C[celepa [?\]: hmm
+]
+;B[kh]C[LMP3 [-\]: teraz widać
+slender [2d\]: dlategho l12 lepsze
+slender [2d\]: niż L11
+]
+;W[nh]
+;B[lg]
+;W[oi]
+;B[nj]
+;W[pg]
+;B[sb]
+;W[sa]
+;B[ln]
+;W[lm]
+;B[ko]
+;W[kj]
+;B[jl]
+;W[lj]
+;B[ll]
+;W[mj]
+;B[mi]C[slender [2d\]: N8?
+celepa [?\]: j11
+]
+;W[hi]
+;B[ii]
+;W[ij]
+;B[jk]
+;W[ih]
+;B[mk]
+;W[nk]
+;B[lh]C[slender [2d\]: cz chce umrzec?
+]
+;W[kp]C[celepa [?\]: a mowielm j11
+]
+;B[km]
+;W[mm]
+;B[kl]
+;W[lr]
+;B[lq]
+;W[kq]
+;B[mr]
+;W[jr]
+;B[ls]
+;W[jq]
+;B[kn]
+;W[op]
+;B[nq]
+;W[mo]
+;B[or]C[celepa [?\]: gg Koichi
+slender [2d\]: yep
+]
+;W[hh]
+(;B[jg])
+(;B[jh]
+;W[ji]
+;B[gg]
+;W[hg]
+;B[hf]
+;W[jf]
+;B[fg]
+;W[ef]
+;B[fi]
+;W[fj]C[LMP3 [-\]: W+R
+soui [-\]: :)
+juggler [3d?\]: ktos moze podac szybka statystyke ile razy z rzedu leszek utryzmal sie w lidze? :)
+SadPlayer [-\]: chyba nigdy nie spadł
+celepa [?\]: chyba kiedys gral w eliminacjach, ale nie jestem pewien
+]))

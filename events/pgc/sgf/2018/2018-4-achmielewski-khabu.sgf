@@ -1,151 +1,240 @@
-(
-  ;BR[1d]CA[UTF-8]EV[Polish Go Championship 2018]FF[4]GM[1]GN[Round 4 - Board 3]KM[6.5]PB[Artur Chmielewski]PC[Poznań]PW[Koichiro Habu]RE[W+R]RU[japanese]SZ[19]WR[5d]
-  ;B[pq]
-  ;W[dp]
-  ;B[dc]
-  ;W[qd]
-  ;B[ce]
-  ;W[qo]
-  ;B[oc]
-  ;W[pe]
-  ;B[op]
-  ;W[lc]
-  ;B[ql]
-  ;W[fq]
-  ;B[dj]
-  ;W[oo]
-  ;B[oe]
-  ;W[of]
-  ;B[ne]
-  ;W[pg]
-  ;B[no]
-  ;W[on]
-  ;B[mp]
-  ;W[qj]
-  ;B[jc]
-  ;W[le]
-  ;B[mf]
-  ;W[jd]
-  ;B[ic]
-  ;W[kc]
-  ;B[id]
-  ;W[je]
-  ;B[qc]
-  ;W[pc]
-  ;B[pb]
-  ;W[pd]
-  ;B[rb]
-  ;W[rc]
-  ;B[qb]
-  ;W[od]
-  ;B[nd]
-  ;W[nc]
-  ;B[ob]
-  ;W[nb]
-  ;B[rd]
-  ;W[re]
-  ;B[sc]
-  ;W[nn]
-  ;B[hf]
-  ;W[db]
-  ;B[cc]
-  ;W[jh]
-  ;B[qf]
-  ;W[pf]
-  ;B[kj]
-  ;W[hh]
-  ;B[kh]
-  ;W[jg]
-  ;B[oi]
-  ;W[qg]
-  ;B[rp]
-  ;W[qp]
-  ;B[qi]
-  ;W[ri]
-  ;B[pj]
-  ;W[qh]
-  ;B[qq]
-  ;W[ro]
-  ;B[pi]
-  ;W[qk]
-  ;B[pk]
-  ;W[pl]
-  ;B[ol]
-  ;W[pm]
-  ;B[fg]
-  ;W[mi]
-  ;B[mj]
-  ;W[nj]
-  ;B[ni]
-  ;W[lj]
-  ;B[mk]
-  ;W[lk]
-  ;B[li]
-  ;W[mh]
-  ;B[ml]
-  ;W[kk]
-  ;B[mn]
-  ;W[jk]
-  ;B[ng]
-  ;W[lh]
-  ;B[cn]
-  ;W[mm]
-  ;B[lm]
-  ;W[nm]
-  ;B[ll]
-  ;W[ln]
-  ;B[mo]
-  ;W[kn]
-  ;B[jl]
-  ;W[kp]
-  ;B[jm]
-  ;W[lq]
-  ;B[mq]
-  ;W[hm]
-  ;B[ki]
-  ;W[jj]
-  ;B[jo]
-  ;W[jn]
-  ;B[in]
-  ;W[io]
-  ;B[im]
-  ;W[ip]
-  ;B[hl]
-  ;W[gl]
-  ;B[gm]
-  ;W[hn]
-  ;B[gk]
-  ;W[fl]
-  ;B[hk]
-  ;W[dl]
-  ;B[fj]
-  ;W[dn]
-  ;B[em]
-  ;W[el]
-  ;B[jq]
-  ;W[jp]
-  ;B[cl]
-  ;W[cm]
-  ;B[gn]
-  ;W[ho]
-  ;B[bm]
-  ;W[dm]
-  ;B[ck]
-  ;W[bn]
-  ;B[lr]
-  ;W[gg]
-  ;B[ff]
-  ;W[ei]
-  ;B[ej]
-  ;W[fh]
-  ;B[gi]
-  ;W[gh]
-  ;B[if]
-  ;W[kg]
-  ;B[ii]
-  ;W[ji]
-  ;B[ih]
-  ;W[ig]
-  ;B[hg]
-  ;W[ik]
-)
+(;FF[4]
+GM[1]
+PC[OGS: http://online-go.com/game/review/352954]
+BR[1d]
+WR[5d]
+CP[online-go.com]
+TM[0]OT[0 none]
+RE[?]
+SZ[19]
+KM[6.5]
+RU[japanese]
+
+;B[pq]
+;W[dp]
+;B[dc]
+;W[qd]
+;B[ce]
+;W[qo]
+;B[oc]
+;W[pe]C[
+
+-- chat --
+LMP2018-3: Welcome to Round 4 of Polish Go Championships
+LMP2018-3: http://mp.go.art.pl/2018/en/results - results and schedule
+
+]
+
+;B[op]
+;W[lc]
+;B[ql]
+;W[fq]
+;B[dj]
+;W[oo]
+;B[oe]
+;W[of]
+;B[ne]
+;W[pg]
+;B[no]
+;W[on]C[
+
+-- chat --
+LMP2018-3: mamy coś w stylu mirror go , ale inne na początek
+
+]
+
+;B[mp]
+;W[qj]
+;B[jc]
+;W[le]C[
+
+-- chat --
+LMP2018-3: Koichiro mocno wzdycha
+
+]
+
+;B[mf]
+;W[jd]C[
+
+-- chat --
+dead_robot: a mnie się wydawało, że to krzywe zwierciadło trochę lepsze dla niego
+
+]
+
+;B[ic]C[
+
+-- chat --
+LMP2018-3: możliwe, ale chyba nikt nie lubi jak przeciwnik gra lustrzankę
+dead_robot: fakt
+
+]
+
+;W[kc]
+;B[id]
+;W[je]
+(;B[qc]
+;W[pc]
+;B[pb]
+;W[pd]C[
+
+-- chat --
+dead_robot: chyba ten san san to nie był najlepszy pomysł
+dead_robot: może lepiej było keimę zagrać
+
+]
+
+;B[rb]
+;W[rc]
+;B[qb]
+;W[od]
+;B[nd]
+;W[nc]
+;B[ob]
+;W[nb]
+;B[rd]
+;W[re]
+;B[sc]
+;W[nn]
+;B[hf]
+;W[db]
+;B[cc]
+;W[jh]
+;B[qf]
+;W[pf]C[
+
+-- chat --
+LMP2018-3: pewnie byłoby lepszeod tego co teraz
+
+]
+
+;B[kj]
+;W[hh]
+;B[kh]
+;W[jg]
+;B[oi]
+;W[qg]
+;B[rp]
+;W[qp]
+;B[qi]
+;W[ri]
+;B[pj]
+;W[qh]
+;B[qq]C[
+
+-- chat --
+LMP2018-3:  B: 43min, W: 66min
+
+]
+
+;W[ro]
+;B[pi]
+;W[qk]
+;B[pk]
+;W[pl]
+;B[ol]
+;W[pm]
+;B[fg]
+;W[mi]
+;B[mj]
+;W[nj]
+;B[ni]
+;W[lj]
+;B[mk]
+;W[lk]
+;B[li]
+;W[mh]
+;B[ml]
+;W[kk]
+;B[mn]
+;W[jk]
+;B[ng]
+;W[lh]
+;B[cn]
+;W[mm]
+;B[lm]
+;W[nm]
+;B[ll]
+;W[ln]
+;B[mo]
+;W[kn]
+;B[jl]C[
+
+-- chat --
+LMP2018-3: B: 21min; W: 46min
+
+]
+
+;W[kp]
+;B[jm]
+;W[lq]
+;B[mq]
+;W[hm]
+;B[ki]
+;W[jj]
+;B[jo]
+;W[jn]
+;B[in]
+;W[io]
+;B[im]
+;W[ip]
+;B[hl]
+;W[gl]
+;B[gm]
+;W[hn]C[
+
+-- chat --
+LMP2018-3: B: byo;  W: 39min
+
+]
+
+;B[gk]
+;W[fl]
+;B[hk]
+;W[dl]
+;B[fj]
+;W[dn]
+;B[em]
+;W[el]
+;B[jq]
+;W[jp]
+;B[cl]
+;W[cm]
+;B[gn]
+;W[ho]
+;B[bm]
+;W[dm]
+;B[ck]
+;W[bn]
+;B[lr]
+;W[gg]
+;B[ff]
+;W[ei]
+;B[ej]
+;W[fh]
+;B[gi]
+;W[gh]
+;B[if]
+;W[kg]
+;B[ii]
+;W[ji]
+;B[ih]
+;W[ig]
+;B[hg]
+;W[ik]C[
+
+-- chat --
+LMP2018-3: W+R
+LMP2018-3: dziękuję
+
+]
+
+)(;B[qb]
+;W[rb]
+;B[pb]C[
+
+-- chat --
+dead_robot: coś takiego. From move 0: Q3 D4 D17 R16 C15 R5 P17 Q15 P4 M17 R8 F3 D10 P5 P15 P14 O15 Q13 O5 P6 N4 R10 K17 M15 N14 K16 J17 L17 J16 K15 R18 S18 Q18 
+
+]
+
+))

@@ -1,179 +1,381 @@
-(
-  ;BR[3d]CA[UTF-8]DT[2021-02-21]EV[Polish Go Championship 2020]FF[4]GM[1]GN[Round 7 - Board 2]KM[6.5]PB[Maksym Wałaszewski]PC[Warszawa / Poznań / Online]PW[Kamil Chwedyna]RE[W+R]RU[japanese]SZ[19]WR[4d]
-  ;B[pd]
-  ;W[dc]
-  ;B[pp]
-  ;W[dq]
-  ;B[de]
-  ;W[fd]
-  ;B[cc]
-  ;W[cb]
-  ;B[cd]
-  ;W[eb]
-  ;B[ch]
-  ;W[co]
-  ;B[jp]
-  ;W[nc]
-  ;B[nd]
-  ;W[md]
-  ;B[ne]
-  ;W[pc]
-  ;B[qc]
-  ;W[oc]
-  ;B[qd]
-  ;W[qn]
-  ;B[ro]
-  ;W[pj]
-  ;B[pk]
-  ;W[me]
-  ;B[mf]
-  ;W[lf]
-  ;B[lg]
-  ;W[kf]
-  ;B[mg]
-  ;W[qk]
-  ;B[ql]
-  ;W[pl]
-  ;B[ok]
-  ;W[rl]
-  ;B[qj]
-  ;W[qm]
-  ;B[rk]
-  ;W[rj]
-  ;B[ql]
-  ;W[qp]
-  ;B[qk]
-  ;W[qo]
-  ;B[jf]
-  ;W[kg]
-  ;B[kd]
-  ;W[lc]
-  ;B[id]
-  ;W[jb]
-  ;B[ig]
-  ;W[hf]
-  ;B[le]
-  ;W[kh]
-  ;B[if]
-  ;W[ji]
-  ;B[ii]
-  ;W[ij]
-  ;B[hi]
-  ;W[jj]
-  ;B[hj]
-  ;W[hk]
-  ;B[gk]
-  ;W[gl]
-  ;B[ik]
-  ;W[hl]
-  ;B[im]
-  ;W[kl]
-  ;B[il]
-  ;W[fk]
-  ;B[gj]
-  ;W[fl]
-  ;B[km]
-  ;W[lm]
-  ;B[ll]
-  ;W[lk]
-  ;B[ml]
-  ;W[jm]
-  ;B[kk]
-  ;W[kn]
-  ;B[jk]
-  ;W[in]
-  ;B[lj]
-  ;W[hn]
-  ;B[mq]
-  ;W[kq]
-  ;B[kp]
-  ;W[jq]
-  ;B[qq]
-  ;W[lq]
-  ;B[oq]
-  ;W[rq]
-  ;B[rr]
-  ;W[qr]
-  ;B[pr]
-  ;W[pq]
-  ;B[lp]
-  ;W[mp]
-  ;B[mo]
-  ;W[np]
-  ;B[nq]
-  ;W[op]
-  ;B[qq]
-  ;W[mk]
-  ;B[oo]
-  ;W[mj]
-  ;B[mi]
-  ;W[kj]
-  ;B[nj]
-  ;W[li]
-  ;B[nk]
-  ;W[lj]
-  ;B[qs]
-  ;W[dh]
-  ;B[ff]
-  ;W[df]
-  ;B[cf]
-  ;W[cg]
-  ;B[bg]
-  ;W[dg]
-  ;B[bh]
-  ;W[ee]
-  ;B[di]
-  ;W[ei]
-  ;B[ej]
-  ;W[bf]
-  ;B[ce]
-  ;W[ef]
-  ;B[eh]
-  ;W[ci]
-  ;B[dj]
-  ;W[bi]
-  ;B[be]
-  ;W[ck]
-  ;B[gh]
-  ;W[nn]
-  ;B[no]
-  ;W[af]
-  ;B[nm]
-  ;W[he]
-  ;B[gd]
-  ;W[hd]
-  ;B[gc]
-  ;W[hc]
-  ;B[fi]
-  ;W[mh]
-  ;B[fg]
-  ;W[iq]
-  ;B[dl]
-  ;W[cl]
-  ;B[el]
-  ;W[hg]
-  ;B[hh]
-  ;W[dm]
-  ;B[em]
-  ;W[en]
-  ;B[cm]
-  ;W[dn]
-  ;B[ae]
-  ;W[bc]
-  ;B[bl]
-  ;W[bk]
-  ;B[bn]
-  ;W[bo]
-  ;B[cj]
-  ;W[bj]
-  ;B[ai]
-  ;W[cn]
-  ;B[nh]
-  ;W[ni]
-  ;B[oi]
-  ;W[ng]
-  ;B[oh]
-  ;W[nf]
-  ;B[pf]
-  ;W[ge]
-)
+(;FF[4]
+CA[UTF-8]
+GM[1]
+DT[2021-02-21]
+PC[OGS: https://online-go.com/game/31325331]
+GN[LMP 2020 round 7 board 3]
+PB[Moggetyrael]
+PW[fisz]
+BR[4d]
+WR[3d]
+TM[5400]OT[3x60 byo-yomi]
+RE[W+R]
+SZ[19]
+KM[6.5]
+RU[Japanese]
+C[Moggetyrael: Miłej gry
+Moggetyrael: !
+fisz: Miłej gry!
+]
+;B[pd]
+(;W[dc]
+(;B[pp]
+(;W[dq]
+(;B[de]
+(;W[fd]
+(;B[cc]
+(;W[cb]
+(;B[cd]
+(;W[eb]
+C[kmr44: D17-D3 Go Seigen czesto tak grywal, nawet juz po "rewolucji" shin-fuseki
+]
+(;B[ch]
+(;W[co]
+(;B[jp]
+(;W[nc]
+(;B[nd]
+(;W[md]
+(;B[ne]
+(;W[pc]
+(;B[qc]
+(;W[oc]
+(;B[qd]
+(;W[qn]
+(;B[ro]
+(;W[pj]
+(;B[pk]
+C[kmr44: ostro czarny pogrywa
+kmr44: G3 lub L16 spokojne i chyba nienajgorsze
+Mrrr: czarny nie mial przerwy po poprzedniej partii, ktora trwala z 4-5 godzin
+Cezary: niezle obie drabinki dzialaja
+kmr44: hmm, R9-R8-Q8 itd nie wyglada dobrze dla bialych
+]
+(;W[me]
+(;B[mf]
+(;W[lf]
+(;B[lg]
+(;W[kf]
+(;B[mg]
+(;W[qk]
+(;B[ql]
+(;W[pl]
+(;B[ok]
+(;W[rl]
+(;B[qj]
+(;W[qm]
+(;B[rk]
+C[kmr44: chyba bialy ma zamiar ko pograc
+]
+(;W[rj]
+(;B[ql]
+(;W[qp]
+(;B[qk]
+C[kmr44: ko bylo krotkie ;)
+]
+(;W[qo]
+(;B[jf]
+(;W[kg]
+C[kmr44: wow K14
+kmr44: pewnie cos kolo -10% dla LZ
+]
+(;B[kd]
+(;W[lc]
+C[Radziol: Kilka fajnych dużych ruchów na planszy i co
+Radziol: Granat najlepiej rzucić
+Mrrr: Q3 jest nadal calkiem dobre dla czarnego
+kmr44: "fire in the hole" - tak to jest jak sie cisnie w CSa za duzo ;)
+Radziol: 😉
+]
+(;B[id]
+C[yakcyll: /bet ct all
+Mrrr: czarny stworzyl sobie slaba grupe, teraz bedzie mogl uciekac 
+kmr44: zapewne w jego mniemaniu byla to dobra inwazja 
+Cezary: nie jest zla
+kmr44: ale M17 to chyba byla zbyt solidna odpowiedz
+Cezary: ale sympatyzuje z propozycja zagrania w q3 zamiast tego
+]
+(;W[jb]
+C[kmr44: teraz to nawet mozna powiedziec ze czarny osiagnal sukces, cos w stylu H14 albo G14 i moyo bialego zostalo poteznie zredukowane, a upierdliwe ciecie w M14 caly czas bedzie wisiec
+]
+(;B[ig]
+(;W[hf]
+(;B[le]
+(;W[kh]
+(;B[if]
+C[Mrrr: bylo czarnemu od razu grac h14 
+]
+(;W[ji]
+C[Mrrr: a tak wymienil je z bialym na pusty trojkat
+]
+(;B[ii]
+(;W[ij]
+(;B[hi]
+(;W[jj]
+(;B[hj]
+(;W[hk]
+(;B[gk]
+(;W[gl]
+(;B[ik]
+(;W[hl]
+(;B[im]
+C[Radziol: no to j12
+]
+(;W[kl]
+(;B[il]
+(;W[fk]
+(;B[gj]
+(;W[fl]
+(;B[km]
+C[kmr44: H14-J12 wyglada bardzo zle, bo czarny zagra po prostu K13 i jak bialy laczy w K12 to czarny tnie w L12 i bialy musi bronic sie przed atari w M15. Rezultat wyglada zle dla bialych.
+Sadiker: W sumie to była jakaś partia w której Kamil prowadził na poczatku?
+kmr44: nie wiem, nie wszystkie ogladalem, ale w 1 rundzie mial chyba poteznego wora od poczatku
+Radziol: z Leszkiem dobrze szło całą grę
+]
+(;W[lm]
+(;B[ll]
+(;W[lk]
+(;B[ml]
+(;W[jm]
+(;B[kk]
+(;W[kn]
+(;B[jk]
+(;W[in]
+(;B[lj]
+(;W[hn]
+C[kmr44: hmm, bialy poswiecil te slaba grupe, czarny ma w cholere terenu, ale za to piony K4 i Q4 czuja sie bardzo samotne 
+]
+(;B[mq]
+(;W[kq]
+C[kmr44: ale H6 to chyba przegiecie, zbyt solidne. Cos w stylu N3 albo N4 zamiast tego, i chyba nie byloby zle. A tak chyba jest zle i to bardzo
+Radziol: to zawsze trudny wybor
+]
+(;B[kp]
+C[Mrrr: moze najpierw E3?
+Radziol: choc o tym samym pomyslalem to pozniejszy brak h6 moze byc kluczowy w walce
+Sadiker: no ale wszystko czarnego na dole jest martwe
+Sadiker: kamil zabije to przecież
+kmr44: no jak czarny zagra ze 2 tenuki to pewnie tak 
+Cezary: nie takie rzeczy kamil zabijal
+Sadiker: potem inwazja w R13 i łatwe zwycięstwo
+Mrrr: :)
+]
+(;W[jq]
+C[Sadiker: Poza tym jak się uprze to i L15 może zagrać
+kmr44: no moze, ale wtedy zginie za to O17
+]
+(;B[qq]
+C[Sadiker: Nie mówię, ze teraz, ale jak coś pogra w okolicy E12 to moze jakaś wymiana pójdzie
+]
+(;W[lq]
+C[kmr44: fakt, czarny musi uwazac zeby mu cala ta klucha H11 i J14 nie zginela
+Mrrr: rog bialego jest juz tak duzy jak to co czarny ma w centrum i po prawej
+]
+(;B[oq]
+(;W[rq]
+(;B[rr]
+(;W[qr]
+(;B[pr]
+(;W[pq]
+(;B[lp]
+C[kmr44: OK, czarny idzie na all-in, w wg mnie nie musial, to P3 wyglada dziwnie
+]
+(;W[mp]
+C[Sadiker: ale komplikują
+]
+(;B[mo]
+(;W[np]
+(;B[nq]
+(;W[op]
+(;B[qq]
+(;W[mk]
+C[Sadiker: ja bym ko chyba brał
+]
+(;B[oo]
+(;W[mj]
+(;B[mi]
+(;W[kj]
+(;B[nj]
+(;W[li]
+(;B[nk]
+C[Sadiker: r1 jeszcze?
+]
+(;W[lj]
+(;B[qs]
+(;W[dh]
+(;B[ff]
+(;W[df]
+(;B[cf]
+(;W[cg]
+(;B[bg]
+(;W[dg]
+(;B[bh]
+(;W[ee]
+(;B[di]
+(;W[ei]
+(;B[ej]
+(;W[bf]
+(;B[ce]
+(;W[ef]
+(;B[eh]
+(;W[ci]
+(;B[dj]
+(;W[bi]
+C[yakcyll: frag?
+Radziol: nope
+yakcyll: \[object Object\]
+Radziol: chyba że  mowisz o centrum
+yakcyll: O bandzie
+]
+(;B[be]
+(;W[ck]
+C[yakcyll: A14 nie sente?
+yakcyll: A, lol
+Radziol: sente ale i tak bialy musi zabezpieczyc
+yakcyll: C9 jest sente
+yakcyll: yeah
+Sadiker: to mozna zabijać h11
+Radziol: b18 kluczowe
+Radziol: bialy przy zabijaniu bedzie muszial uwazac na swoja grupe
+]
+(;B[gh]
+(;W[nn]
+C[Sadiker: A14 za małe?
+Radziol: fisz lubi peepnać przed kluczowym ruchem
+Radziol: :)
+Radziol: poza tym to jest bardzo dobry ruch
+yakcyll: Co za katorga to musi być teraz
+yakcyll: Dla czarnego
+yakcyll: O6 pyta 'czy jesteś pewien, co robisz'
+]
+(;B[no]
+C[Sadiker: Rozczarowanie trochę
+Sadiker: tak długo myślałe to spodziewałem się jakiegoś finezyjnego ruchu
+kmr44: A14 i czarny lewy rog ginie
+kmr44: chyba ze sie myle :D
+Radziol: inne ruchy zdaje sie nie dzialaly
+Sadiker: czyli chyba pójdzie jakieś a14, o7 i coś w okolicy h3
+Sadiker: i mozna przejść do yose
+Sadiker: Ciekawe co biały knuje
+Sadiker: albo mam laga
+Radziol: wieksze o7 czy h3?
+Sadiker: Zapytałbym bota, ale jest zablokowane ściąganie sgf-ów
+kmr44: O8 chyba tez laczy a zabija dodatkowo 2 kamienie
+Radziol: nic prostszego
+Radziol: odpalasz bota
+Radziol: przepisujesz gre
+Radziol: sprawdzasz
+tasuki: czarnego inwazja u góry to jakaś pomyłka chyba
+Radziol: o8 tniemy w p6
+yakcyll: O, cześć
+kmr44: ale wyglada na to ze bialy nie najlepiej odpowiedzial na te inwazje
+yakcyll: Ciekawe, skąd ten zgryz białego
+kmr44: P6-P7 i chyba jest bialy polaczony
+yakcyll: Czyżby b18 faktycznie było krytyczne?
+Radziol: p7 to p8 
+yakcyll: \[object Object\]
+Radziol: nie no po a14 to juz nie ma nic w b18
+yakcyll: No to co, frag za mały?
+yakcyll: Fisz myśli chyba od dziesięciu minut
+kmr44: masz racje, to P8 nie mozna.
+Radziol: jeszcze jest dół do przemyslenia i p6
+Sadiker: może zasnął?
+Radziol: i zabicie centrum 
+Sadiker: niech go sedzia poklepie
+yakcyll: xd
+kmr44: niech sedzia krzyknie "20 minut do boy yomi!" ;)
+yakcyll: xd
+LMP2020: xd
+yakcyll: Jak zegary ingowe
+yakcyll: White's basic time minutes left twenty minutes
+kmr44: niegdy nie zapomne jak na moim jednym z pierwszych turniejow szachowych pewien poczotakujacy zawodnik lat okolo 11 chcac wezwac sedziego krzyknal "Sedzia, chodz tu!".
+yakcyll: :DD
+kmr44:  sorry za literowki :) ostatnio nie trafial dobrze w klawisze
+silent: Szachowa hierarchia
+silent: GM szachowy >>>>> plebsy szachowe >>>>>>> reszta świata
+kmr44: kurde, obawiam sie ze nawet nie naleze do plebsu 
+silent: No jak się nie ma telentu, żeby zostać GMem to po co w ogóle grać w te gre -.-'
+yakcyll: Jeśli kiedykolwiek naśmiewałeś się w internecie z błędów Carlsena, to resztą świata też nie jesteś
+silent: No to drogą eliminacji jesteś GMem ;p
+silent: Może mkr to Nakamura w przebraniu?
+silent: kmr*
+kmr44: gralem w szachy bo lubilem. Kiedys myslalem ze mam jakis talent, ale potem zrozumialem ze co najwyzej zostane kiepskim IM. Wiec rzucilem.
+yakcyll: karabin maszynowy ręczny 44 deko
+kmr44: tak, to wariacja mg42 ;)
+Sadiker: co to jest IM i kto to jest Carlsen?
+yakcyll: :D
+kmr44: IM - mistrz miedzynarodowy (tytul)
+kmr44: ah ok to joke byl
+kmr44: nie zajarzylem
+yakcyll: Dziwne to granie w ogóle jest, albo kochasz grę, albo poświęcanie tyle czasu na naukę wydaje się bezcelowe
+silent: A Carlsen jest aktualnie najwyżej w rankingu szachowym od paru lat
+kmr44: jak kochasz grac w szachy to mozesz sie nie przejmowac ze nie progresujesz. Tak jest z ogromna liczba szachistow - graja bo to uwielbiaja.
+Sadiker: 30min myśli?
+kmr44: oblicza Wielkie Tesuji Totalnego Zniszczenia
+]
+(;W[af]
+C[yakcyll: A, jest
+kmr44: i cyk :D
+]
+(;B[nm]
+C[kmr44: teraz czarny O7, bialy cos na dole i mamy upragnione yose
+]
+(;W[he]
+C[kmr44: a jednak nie!
+Radziol: no to teraz mamy czarnego z glowy na 20 minut
+Mrrr: zostanie mu prawa banda na pocieszenie
+yakcyll: FIsz ma pewnie przeliczoną całą partię już
+]
+(;B[gd]
+(;W[hd]
+(;B[gc]
+(;W[hc]
+C[Sadiker: Jakby miał to my nie myślał teraz tylko odpowiadał od razu :)
+]
+(;B[fi]
+(;W[mh]
+(;B[fg]
+(;W[iq]
+(;B[dl]
+(;W[cl]
+C[Sadiker: nareszcie jest j3
+]
+(;B[el]
+(;W[hg]
+(;B[hh]
+(;W[dm]
+(;B[em]
+(;W[en]
+(;B[cm]
+(;W[dn]
+(;B[ae]
+(;W[bc]
+(;B[bl]
+(;W[bk]
+C[Sadiker: a mi wychodziło, ze to niechodzi
+]
+(;B[bn]
+(;W[bo]
+(;B[cj]
+(;W[bj]
+(;B[ai]
+C[Sadiker: a7?
+yakcyll: Cokolwiek poza a6 tam działa chyba
+Sadiker: ale na ko trzeba uwazac
+yakcyll: racja
+]
+(;W[cn]
+C[Sadiker: no to chyba bedą 3 osoby z 4 zwyciestwami by rozdzielic miejsca od 3 do 5
+]
+(;B[nh]
+(;W[ni]
+(;B[oi]
+C[Sadiker: \[object Object\]
+]
+(;W[ng]
+(;B[oh]
+(;W[nf]
+(;B[pf]
+(;W[ge]
+C[fisz: dzięki!
+]
+))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))

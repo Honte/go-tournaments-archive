@@ -1,186 +1,473 @@
-(
-  ;BR[5d]CA[UTF-8]EV[Polish Go Championship 2018]FF[4]GM[1]GN[Round 5 - Board 4]KM[6.5]PB[Koichiro Habu]PC[Poznań]PW[Marcin Majka]RE[B+R]RU[japanese]SZ[19]WR[4d]
-  ;B[pd]
-  ;W[dd]
-  ;B[pp]
-  ;W[dq]
-  ;B[co]
-  ;W[ck]
-  ;B[ep]
-  ;W[eq]
-  ;B[fp]
-  ;W[fq]
-  ;B[gp]
-  ;W[hq]
-  ;B[ci]
-  ;W[ek]
-  ;B[cf]
-  ;W[ce]
-  ;B[df]
-  ;W[fd]
-  ;B[ei]
-  ;W[cm]
-  ;B[em]
-  ;W[cq]
-  ;B[cn]
-  ;W[el]
-  ;B[dm]
-  ;W[dl]
-  ;B[bm]
-  ;W[fm]
-  ;B[gl]
-  ;W[fl]
-  ;B[hp]
-  ;W[iq]
-  ;B[gk]
-  ;W[hn]
-  ;B[gn]
-  ;W[gm]
-  ;B[hm]
-  ;W[in]
-  ;B[fn]
-  ;W[fj]
-  ;B[im]
-  ;W[ip]
-  ;B[hi]
-  ;W[bl]
-  ;B[cl]
-  ;W[gh]
-  ;B[ej]
-  ;W[cm]
-  ;B[fk]
-  ;W[nq]
-  ;B[pn]
-  ;W[qf]
-  ;B[nd]
-  ;W[qc]
-  ;B[qd]
-  ;W[rd]
-  ;B[pc]
-  ;W[rb]
-  ;B[qb]
-  ;W[rc]
-  ;B[cl]
-  ;W[ql]
-  ;B[np]
-  ;W[mp]
-  ;B[mq]
-  ;W[or]
-  ;B[pq]
-  ;W[lq]
-  ;B[mr]
-  ;W[lr]
-  ;B[mo]
-  ;W[lp]
-  ;B[nr]
-  ;W[oq]
-  ;B[pr]
-  ;W[op]
-  ;B[no]
-  ;W[oo]
-  ;B[on]
-  ;W[ms]
-  ;B[qi]
-  ;W[cm]
-  ;B[po]
-  ;W[ns]
-  ;B[cl]
-  ;W[pj]
-  ;B[qg]
-  ;W[cm]
-  ;B[rf]
-  ;W[bn]
-  ;B[cl]
-  ;W[re]
-  ;B[dk]
-  ;W[pg]
-  ;B[pf]
-  ;W[qe]
-  ;B[og]
-  ;W[qj]
-  ;B[ph]
-  ;W[rn]
-  ;B[ro]
-  ;W[nl]
-  ;B[hc]
-  ;W[hd]
-  ;B[gd]
-  ;W[gc]
-  ;B[ge]
-  ;W[ic]
-  ;B[hb]
-  ;W[gb]
-  ;B[ib]
-  ;W[jc]
-  ;B[jb]
-  ;W[kc]
-  ;B[kb]
-  ;W[lc]
-  ;B[he]
-  ;W[id]
-  ;B[lb]
-  ;W[mc]
-  ;B[mb]
-  ;W[if]
-  ;B[fe]
-  ;W[ec]
-  ;B[ie]
-  ;W[je]
-  ;B[jf]
-  ;W[pe]
-  ;B[oe]
-  ;W[ob]
-  ;B[pb]
-  ;W[nc]
-  ;B[nb]
-  ;W[oc]
-  ;B[od]
-  ;W[nf]
-  ;B[of]
-  ;W[kf]
-  ;B[jg]
-  ;W[oa]
-  ;B[ha]
-  ;W[kg]
-  ;B[ke]
-  ;W[kd]
-  ;B[le]
-  ;W[me]
-  ;B[jd]
-  ;W[qn]
-  ;B[je]
-  ;W[ps]
-  ;B[mm]
-  ;W[nm]
-  ;B[nn]
-  ;W[ln]
-  ;B[mn]
-  ;W[kl]
-  ;B[ml]
-  ;W[nk]
-  ;B[km]
-  ;W[lm]
-  ;B[ll]
-  ;W[kk]
-  ;B[lo]
-  ;W[kn]
-  ;B[jm]
-  ;W[jn]
-  ;B[lj]
-  ;W[kj]
-  ;B[nj]
-  ;W[li]
-  ;B[mj]
-  ;W[oi]
-  ;B[mh]
-  ;W[mi]
-  ;B[ni]
-  ;W[nh]
-  ;B[oh]
-  ;W[ng]
-  ;B[ki]
-  ;W[lh]
-  ;B[kh]
-  ;W[md]
-  ;B[rh]
-)
+(;FF[4]
+GM[1]
+PC[OGS: http://online-go.com/game/review/352999]
+BR[5d]
+WR[4d]
+CP[online-go.com]
+TM[0]OT[0 none]
+RE[?]
+SZ[19]
+KM[6.5]
+RU[japanese]
+
+;B[pd]
+;W[dd]
+;B[pp]
+;W[dq]
+;B[co]
+;W[ck]
+;B[ep]
+;W[eq]
+;B[fp]
+;W[fq]
+;B[gp]
+;W[hq]
+;B[ci]C[
+
+-- chat --
+LMP2018-1: http://mp.go.art.pl/2018/en/results - current results & schedule
+
+]
+
+;W[ek]
+;B[cf]
+;W[ce]
+;B[df]
+;W[fd]
+;B[ei]
+;W[cm]
+;B[em]
+;W[cq]
+;B[cn]
+;W[el]
+;B[dm]C[
+
+-- chat --
+kolorek94: kiedys to bylo
+kolorek94: na kgsie 20-30 osob
+tasuki: właśnie obejrzałem grę DJa z Leszkiem - masakryczne yose
+kolorek94: na transmisji
+kolorek94: teraz juz nie ma
+LMP2018-1: jak się pojawia ogłoszenie na OGS to do 30 dobijamy
+
+]
+
+;W[dl]
+;B[bm]
+;W[fm]C[
+
+-- chat --
+tasuki: no co on robi?
+kolorek94: siemka @tasuki ^^
+
+]
+
+;B[gl]C[
+
+-- chat --
+tasuki: cześć kolorku!
+
+]
+
+;W[fl]C[
+
+-- chat --
+LMP2018-1: partię dj z leszkiem się świetnie oglądało z lizzie - widać było drastyczne wahania % podczas końcówki
+
+]
+
+;B[hp]
+;W[iq]C[
+
+-- chat --
+tasuki: jak dla mnie to już całkiem gg wp
+
+]
+
+;B[gk]C[
+
+-- chat --
+tasuki: biały robi nic tylko puste trójkąty
+
+]
+
+;W[hn]C[
+
+-- chat --
+LMP2018-1: zacytowałbym higakiego, ale potem się na mnie obrazi :)
+tasuki: dajesz
+tasuki: a kto tam w ogóle?
+LMP2018-1: artur
+
+]
+
+;B[gn]
+;W[gm]
+;B[hm]C[
+
+-- chat --
+tasuki: :wave:
+tasuki: jak usłyszałem cytat higakiego to nie mogę inaczej niż mu kibicować!
+dead_robot: pewnie "po trójkątach do celu"
+
+]
+
+;W[in]
+;B[fn]
+;W[fj]C[
+
+-- chat --
+tasuki: więcej brzydkich słów ale ogólnie podobnie
+
+]
+
+;B[im]C[
+
+-- chat --
+dead_robot: czy jest jakiś brzydszy wyraz od trójkąta?
+
+]
+
+;W[ip]C[
+
+-- chat --
+infra: dwa trójkąty dają prostokąt
+dead_robot: no ale chyba biały ma co chciał
+dead_robot: przecież nic lepszego po zagraniu D8 nie mógł oczekiwać
+
+]
+
+;B[hi]
+;W[bl]
+;B[cl]C[
+
+-- chat --
+tasuki: właśnie ko
+tasuki: spoko czarny też nie do końca żyje
+dead_robot: no własnie to nie jest zły rezultat dla białego, zły jest tylko kształt tej kluchy ;)
+
+]
+
+;W[gh]
+;B[ej]
+;W[cm]C[
+
+-- chat --
+tasuki: a to czarny nie może przeciąć?
+
+]
+
+;B[fk]
+;W[nq]C[
+
+-- chat --
+tasuki: lol
+tasuki: dobre tenuki, propsuję higakiego
+
+]
+
+;B[pn]C[
+
+-- chat --
+LMP2018-2: propsuję to znzczy popieram ?
+kolorek94: tak
+kolorek94: taki slang
+kolorek94: czeski
+LMP2018-2: wiem, bo rozumiem
+
+]
+
+;W[qf]
+;B[nd]C[
+
+-- chat --
+Sadiker: b6 nie warte zagrania?
+
+]
+
+;W[qc]
+;B[qd]
+;W[rd]
+;B[pc]
+;W[rb]
+;B[qb]
+;W[rc]C[
+
+-- chat --
+LMP2018-1: Higaki tak lubi chyba zostawiać, z Jankiem miał grupę którą wyglądało, że oddał, a potem do niej wrócił i przeżył
+tasuki: to wcale nie jest czeski slang
+Siasio: jasne, że warte, te kakari to chyba nieudane próby stworzenia gróźb
+LMP2018-1: wydaję mi się, że niedługo tam wróci
+Siasio: nie ma niedługo
+Siasio: w tej chwili czarny  gra b6
+Siasio: a6
+
+]
+
+;B[cl]C[
+
+-- chat --
+tasuki: ale ok rezultat dla białego: dwa razy dostał sente
+LMP2018-1: B 1h, W 1h07m
+tasuki: a jeszcze udało mu się zagrać G12, który może się okazać pożytecznym kamyczkiem
+
+]
+
+;W[ql]C[
+
+-- chat --
+tasuki: po co komu R8? nie było M17 ciekawsze?
+
+]
+
+;B[np]
+;W[mp]
+;B[mq]
+;W[or]
+;B[pq]
+;W[lq]C[
+
+-- chat --
+Siasio: Higaki, czemu nie atari od dołu??
+
+]
+
+;B[mr]
+;W[lr]
+;B[mo]
+;W[lp]
+;B[nr]
+;W[oq]
+;B[pr]
+;W[op]
+;B[no]
+;W[oo]
+;B[on]
+;W[ms]C[
+
+-- chat --
+tasuki: ciężko jest higakiemu kibicować w tej grze
+
+]
+
+;B[qi]
+;W[cm]
+;B[po]
+;W[ns]
+;B[cl]
+;W[pj]
+;B[qg]
+;W[cm]
+;B[rf]
+;W[bn]
+;B[cl]
+;W[re]
+;B[dk]
+;W[pg]
+;B[pf]
+;W[qe]
+;B[og]
+;W[qj]
+;B[ph]
+;W[rn]
+;B[ro]
+;W[nl]C[
+
+-- chat --
+LMP2018-1: B 55m, W 1h
+
+]
+
+;B[hc]
+;W[hd]
+;B[gd]
+;W[gc]
+;B[ge]
+;W[ic]
+;B[hb]
+;W[gb]
+;B[ib]
+;W[jc]
+;B[jb]
+;W[kc]
+;B[kb]
+;W[lc]
+;B[he]
+;W[id]
+;B[lb]
+;W[mc]
+;B[mb]
+;W[if]
+;B[fe]C[
+
+-- chat --
+kanibal: is it the final?
+LMP2018-1: It's round-robin, it's round 5 out of 7: mp.go.art.pl
+
+]
+
+;W[ec]
+;B[ie]
+;W[je]
+;B[jf]C[
+
+-- chat --
+LMP2018-1: http://mp.go.art.pl
+
+]
+
+;W[pe]
+;B[oe]
+;W[ob]
+;B[pb]
+;W[nc]
+;B[nb]
+;W[oc]
+;B[od]
+;W[nf]
+;B[of]C[
+
+-- chat --
+Sadiker: no to troche liczenia bedzie
+
+]
+
+;W[kf]
+;B[jg]
+;W[oa]
+;B[ha]
+;W[kg]C[
+
+-- chat --
+Sadiker: nie zauwazyłem ze oczy moze zrobić:)
+
+]
+
+;B[ke]
+;W[kd]
+;B[le]
+;W[me]C[
+
+-- chat --
+Sadiker: No to Koichi mistrzem bedzie
+
+]
+
+;B[jd]
+;W[qn]C[
+
+-- chat --
+kanibal: ignore
+
+]
+
+;B[je]C[
+
+-- chat --
+kanibal: resign
+
+]
+
+;W[ps]C[
+
+-- chat --
+kanibal: just n7
+
+]
+
+;B[mm]
+;W[nm]
+;B[nn]
+;W[ln]
+;B[mn]
+;W[kl]C[
+
+-- chat --
+kanibal: push
+kanibal: or r1
+
+]
+
+;B[ml]
+;W[nk]C[
+
+-- chat --
+kanibal: push again
+
+]
+
+;B[km]
+;W[lm]
+;B[ll]
+;W[kk]
+(;B[lo]
+;W[kn]
+;B[jm]
+;W[jn]
+;B[lj]
+;W[kj]C[
+
+-- chat --
+Sadiker: L11
+Sadiker: nie wiem na co biały liczy
+kanibal: n10
+
+]
+
+;B[nj]
+;W[li]
+;B[mj]
+;W[oi]C[
+
+-- chat --
+kanibal: white wants to create next dead group
+
+]
+
+;B[mh]
+;W[mi]
+;B[ni]
+;W[nh]
+;B[oh]
+;W[ng]C[
+
+-- chat --
+kanibal: N13
+
+]
+
+;B[ki]
+;W[lh]
+;B[kh]
+;W[md]
+;B[rh]C[
+
+-- chat --
+LMP2018-1: B+R
+
+]
+
+)(;B[pl]
+;W[pk]
+;B[lj]
+;W[lk]
+;B[qm]
+;W[rm]
+;B[pm]
+;W[rl]
+;B[mk]
+;W[mj]
+;B[nj]
+;W[mi]
+;B[ok]
+;W[oj]
+;B[ni]
+;W[ol]
+;B[kj]C[
+
+-- chat --
+kanibal: 1. From move 0: Q16 D16 Q4 D3 C5 C9 E4 E3 F4 F3 G4 H3 C11 E9 C14 C15 D14 F16 E11 C7 E7 C3 C6 E8 D7 D8 B7 F7 G8 F8 H4 J3 G9 H6 G6 G7 H7 J6 F6 F10 J7 J4 H11 B8 C8 G12 E10 C7 F9 O3 Q6 R14 O16 R17 R16 S16 Q17 S18 R18 S17 C8 R8 O4 N4 N3 P2 Q3 M3 N2 M2 N5 M4 O2 P3 Q2 P4 O5 P5 P6 N1 R11 C7 Q5 O1 C8 Q10 R13 C7 S14 B6 C8 S15 D9 Q13 Q14 R15 P13 R10 Q12 S6 S5 O8 H17 H16 G16 G17 G15 J17 H18 G18 J18 K17 K18 L17 L18 M17 H15 J16 M18 N17 N18 J14 F15 E17 J15 K15 K14 Q15 P15 P18 Q18 O17 O18 P17 P16 O14 P14 L14 K13 P19 H19 L13 L15 L16 M15 N15 K16 R6 K15 Q1 N7 O7 O6 M6 N6 L8 N8 O9 L7 M7 M8 L9 Q8 Q9 M10 M9 R7 S7 Q7 S8 N9 N10 O10 N11 P9 P10 O11 P8 L10 
+
+]
+
+))

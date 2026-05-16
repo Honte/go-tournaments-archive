@@ -1,0 +1,775 @@
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]
+PW[LMP]PB[LMP]DT[2005-11-25]PC[The Kiseido Go Server (KGS) at http://kgs.kiseido.com/]C[LMP [-\]: White: Michał Bażyński
+LMP [-\]: Black: Koichiro Habu
+Azael [-\]: let's Mortam Combat beggins :P
+Azael [-\]: nortal*
+Azael [-\]: mortal*
+tommyray [12k\]: :D
+Azael [-\]: glupia, niemiecka klawiatura :-\]
+Pietrucha [9k\]: czemu nie wykonuje ruchow?
+LMP [-\]: gracze si e obijaj a
+LMP [-\]: graja w gomoku
+Pietrucha [9k\]: nie pookazuje mi gry
+pjk [-\]: bo to gra dla cierpliwych :-)))
+aldek [6k\]: Pietrucha, już jest 14-ty ruch
+Pietrucha [9k\]: robicie mnie w konia?
+problem [6k?\]: to czemu nie transmitujesz? :)
+Pietrucha [9k\]: wogole rochow nie pokazuje
+LMP [-\]: juz sie zaczyna
+aldek [6k\]: a jaką masz wersje windowsa?
+]
+;B[qd]CR[qd]C[Pietrucha [9k\]: teraz jestem na linuxie
+]
+;W[dd]CR[dd]
+;B[pq]CR[pq]C[aldek [6k\]: to dlatego
+]
+;W[oc]CR[oc]
+;B[ld]CR[ld]
+;W[of]CR[of]
+;B[qf]CR[qf]C[LMP [-\]: dziwne
+]
+;W[pe]CR[pe]
+;B[qe]CR[qe]
+;W[id]CR[id]C[LMP [-\]: tutaj pozostaje silne aji
+LMP [-\]: mozna sobie wyobrazic nawet takie:
+]
+(;B[lf]CR[lf]C[LMP [-\]: ten ruch tez dziwny
+]
+;W[oh]CR[oh]C[LMP [-\]: poniewaz czarny nie zak\\gral wlasciwie - bialy powinien grac spokojnie
+LMP [-\]: to ciecie bylo niepotrzebne
+]
+;B[qi]CR[qi]
+(;W[pj]CR[pj]C[LMP [-\]: (to ze bialy pozwolil sie rozciac)
+]
+;B[pi]CR[pi]
+;W[oi]CR[oi]
+;B[oj]CR[oj]C[LMP [-\]: dopuszczalne (moze) jest takie cos:
+bazik [-\]: cze :)
+]
+(;W[qj]CR[qj]
+;B[rj]CR[rj]
+;W[rk]CR[rk]
+;B[ri]CR[ri]
+;W[pl]CR[pl]
+;B[ok]CR[ok]C[LMP [-\]: tutaj bialy konczy w gote
+]
+;W[pm]CR[pm]C[bazik [-\]: q7 tez tragedia?
+]
+;B[ng]CR[ng]C[bazik [-\]: r7?
+]
+(;W[me]CR[me]
+;B[le]CR[le]C[nare [3k\]: brednie :-P
+]
+;W[og]CR[og]
+;B[mi]CR[mi]C[salmon [17k\]: czy inne gry też są zapisywane?
+LMP [-\]: nie
+LMP [-\]: sorki tak
+LMP [-\]: :)
+LMP [-\]: no wlasnie
+bazik [-\]: czy co zamiast q7?
+LMP [-\]: gorsze dla bialych
+bazik [-\]: od teraz 50 ruchow mozna przeskoczyc :-) prosze :-)
+LMP [-\]: niz poprzednio
+]
+;W[md]CR[md]
+(;B[mc]CR[mc]C[LMP [-\]: twoje zyczenie jest dla mlodziezy rozkazem
+bazik [-\]: jakbym bral od koichi 9 kamieni taka sekwencja
+LMP [-\]: :)
+]
+(;W[nc]CR[nc]
+(;B[lc]CR[lc]C[pjk [-\]: szykuje się chyba sporo bijatyk :-((, czyżby gra miałe się skończcyć +R
+bazik [-\]: 2 do przodu pls
+LMP [-\]: no to widac teraz ze od razu m17 jest lepiej
+]
+;W[qb]CR[qb]C[salmon [17k\]: a kiedy będą dostępne?
+nare [3k\]: jak ktos przeklepie z kifu do sgf
+Azael [-\]: moze czesc z nich uzywa palmtopow - bedzie latwiej
+]
+;B[rb]CR[rb]C[guxxan [5d\]: does Romap play?
+Azael [-\]: no
+guxxan [5d\]: why not?
+Azael [-\]: he didn't go to the eliminations
+guxxan [5d\]: ok, thx
+nare [3k\]: habu musi byc szczesliwy, dostal na poczatku dwie slabe biale grupy do ataku
+]
+;W[mh]CR[mh]
+;B[lh]CR[lh]
+;W[ni]CR[ni]
+;B[mj]CR[mj]
+;W[mg]CR[mg]
+;B[lg]CR[lg]
+;W[mf]CR[mf]C[bazik [-\]: cofnij do s18
+bazik [-\]: jesli mozna
+]
+(;B[rl]CR[rl]
+;W[pp]CR[pp]
+;B[qp]CR[qp]
+(;W[po]CR[po]C[LMP [-\]: habu to jest szczesliwy bo kawe dostal
+]
+;B[oq]CR[oq]C[Ishii [5k\]: :)
+Mandos [12k\]: teraz nie ma możliwosci aby przegrał 
+Mandos [12k\]: :-D
+]
+;W[qo]CR[qo]
+;B[rp]CR[rp]
+;W[mn]CR[mn]C[buuu123 [?\]: czy ja mam omamy, czy czarny ma tu spora jak na te faze gry przewage?
+LMP [-\]: omamy
+LMP [-\]: kawy nie piliscie :)
+buuu123 [?\]: ok, dzieki
+LMP [-\]: ale faktycznie cos w tym jest :)
+LMP [-\]: ale na pewno nie duza
+]
+;B[fd]CR[fd]C[Mandos [12k\]: a kto w tej chwili jest tak miły i transmituje nam tą grę?
+LMP [-\]: haze :)
+LMP [-\]: czasmi sheena
+LMP [-\]: czasami aist
+LMP [-\]: czasami dizzus :)
+Mandos [12k\]: :-)
+LMP [-\]: popatrzcie: dkoro bialy i tak zdecyedowal, ze nie bedzie bronil dolnej czesci - i zagral n6 - to moze od razu tak by bylo lepiej
+]
+;W[fe]CR[fe]C[Mandos [12k\]: powiedz sheenie aby znalazła chwilkę i zagrała ze mną do ligi 
+LMP [-\]: ona teraz jest zestresowana, nie przeszkadzac jej :)
+Mandos [12k\]: i możesz pozdrowić całą trójkę :-)
+EmTom [12k\]: :)
+messiah [?\]: jebac
+]
+;B[ge]CR[ge]C[nare [3k\]: gdzie jutro mozna was odwiedzic i popatrzec na zywo?
+LMP [-\]: sgh
+EmTom [12k\]: messiah w tym celu udalbym sie gdzie indziej
+Mandos [12k\]: :-)
+]
+;W[ff]CR[ff]C[nare [3k\]: ok, blisko mam :)
+]
+;B[dc]CR[dc]
+;W[ed]CR[ed]
+;B[ec]CR[ec]C[BusyBeaver [?\]: ech, chyba wybiore sie zobaczyc gre na zywo :)
+]
+;W[cc]CR[cc]
+;B[gd]CR[gd]
+(;W[gf]CR[gf]C[LMP [-\]: na zywo ciekawiej , mozna zobaczyc jak Dominik je wachlarz :)
+LMP [-\]: przepraszam, sprostowanie, przezuwa :)
+buuu123 [?\]: jakis zabawny zaklad?
+EmTom [12k\]: e tam... stac tak nad danowcami to przez 3 godziny... nogi bola i jesc sie chce :) a w domku to wygodnie mozna sie rozsiasc i lookac ;)
+TeeSushi [11k\]: how strong are the players?
+czarny [-\]: ERF 4d
+czarny [-\]: EGF
+czarny [-\]: both W and B
+LMP [-\]: ale za to 4 gry na raz
+LMP [-\]: ;\]
+]
+(;B[cb]CR[cb]
+;W[cd]CR[cd]C[EmTom [12k\]: ja nie rozumiem jednej wiec po co mi 4 ;)
+]
+;B[hf]CR[hf]
+;W[fc]CR[fc]
+;B[fb]CR[fb]C[czarny [-\]: LMP powiedz Jackowi, że prawdopodobnie będę w Warszawie 10-11
+]
+;W[hg]CR[hg]
+;B[if]CR[if]C[czarny [-\]: grudnia w sensie
+salmon [17k\]: wytłumaczy mi ktoś czemu oni jeszcze nie zagrali w jednym rogu?
+LMP [-\]: tak?
+bazik [-\]: cokolwiek zeby nie pokazywac jak sie dawalem otoczyc na wlasne zyczenie
+]
+(;W[co]CR[co]C[buuu123 [?\]: jak oceniacie ten wynik F16? 
+EmTom [12k\]: za pozno ;)
+salmon [17k\]: :)
+Ishii [5k\]: hehe4
+czarny [-\]: już zagrali
+Ishii [5k\]: :D
+buuu123 [?\]: nie jest dosc slaby dla czarnego?
+salmon [17k\]: jak na życzenie:D
+]
+;B[cj]CR[cj]C[LMP [-\]: o wlasnie
+]
+;W[ch]CR[ch]C[Mandos [12k\]: :-)
+]
+;B[bh]CR[bh]C[EmTom [12k\]: buuuu bo ja wiem... pewnie nie jak to zagral ;)
+czarny [-\]: Koichi w dobrej formie widac :)
+Mandos [12k\]: parkoła jakoś nie bardzo lubi z nim grać 
+]
+;W[bi]CR[bi]
+;B[ci]CR[ci]C[buuu123 [?\]: tia, jest to jakis argument
+Fernell [11k\]: a koichi to W czy B??
+EmTom [12k\]: b
+buuu123 [?\]: a co slychac na stole parkola-lubos?
+Mandos [12k\]: pewnie lubos 
+buuu123 [?\]: ;)
+]
+;W[bj]CR[bj]C[buuu123 [?\]: hmmm, tak jakby m.in. dlatego pytam
+buuu123 [?\]: haze? moglbys moze rzucic okiem? pliiis
+buuu123 [?\]: ?
+LMP [-\]: na stole parkola-lubos
+TeeSushi [11k\]: B10 ... doesnt look good to me
+LMP [-\]: lubos ma przewage w terenie
+LMP [-\]: atakuje slaba grupe
+TeeSushi [11k\]: b ends in good shape i think
+Qoryl [12k\]: kto z kim gra ?
+LMP [-\]: jak wyjdzie w sente i dogra zamkniecie rogu, vertigo nie ma szns nadrobic terenu
+buuu123 [?\]: aha, dz
+czarny [-\]: LMP - powiedz Jackowi - keczupowi, ze bede w Wawie 10-11 XII
+buuu123 [?\]: a moze bys zaczal robic jednoczesnie taka bardziej radiowa relacje z pozostalych gier, niezle ci to wychodzi :)
+LMP [-\]: :)
+]
+;B[dh]CR[dh]
+;W[cg]CR[cg]
+;B[bk]CR[bk]C[mindless: :)
+]
+;W[bg]CR[bg]
+;B[ck]CR[ck]
+;W[dq]CR[dq]C[czarny [-\]: a jak Dominik ?
+LMP [-\]: chyba dostaje
+LMP [-\]: nawet na pewno
+czarny [-\]: padło mu coś? mało terenu ?
+Azael [-\]: mowisz tak po jego minie i zachowaniu czy po tym, co sie dzieje na planszy? :)
+LMP [-\]: leszek ma wplywy
+buuu123 [?\]: :)
+LMP [-\]: spore:\]
+buuu123 [?\]: to brzmi groznie
+LMP [-\]: a czarny nie ma zadnego pewnego terenu
+LMP [-\]: znaczy dominik
+czarny [-\]: to dominik, czy ja nie mam terenu ?
+LMP [-\]: nie teraz ale po0zniej bialemu pozostaje nieprzyjemne "aji"
+]
+(;B[dn]CR[dn]
+;W[ig]CR[ig]C[LMP [-\]: :P
+buuu123 [?\]: bialy tak szybko odpowiada, czy po prostu wpisujesz ruchy po 2?
+LMP [-\]: ty tez
+LMP [-\]: i tak i tak:)
+czarny [-\]: Koichi wygra :)
+czarny [-\]: może poobstawiamy
+czarny [-\]: 2 piwa na Koichiego
+]
+;B[gg]CR[gg]C[LMP [-\]: czarny lepiej stoi chyba jednak
+LMP [-\]: tylko ty wiesz kto siedz cicho :P
+Azael [-\]: co to za zaklad - stawiac na tego, kto wygrywa
+czarny [-\]: dlaczego wygrywa ?
+czarny [-\]: biały ma aji na górnej bandzie
+Azael [-\]: ale wydaje mi sie, ze czarny ma troche lepsza sytuacje
+]
+(;W[he]CR[he]
+;B[hd]CR[hd]
+;W[jf]CR[jf]
+;B[ie]CR[ie]
+;W[je]CR[je]
+;B[he]CR[he]C[nare [3k\]: te aji to tylko kilka punktow
+buuu123 [?\]: bialy wykonal squeeze dla squeezu?
+czarny [-\]: na to wygląda :)
+czarny [-\]: czarny gra sprytnie
+]
+;W[gh]CR[gh]C[czarny [-\]: chce zwiększyć swoją obecność w centrum
+]
+;B[fg]CR[fg]
+;W[jh]CR[jh]C[czarny [-\]: teraz z czarnego terenu niewiele zostało
+]
+;B[kj]CR[kj]C[nare [3k\]: a bialy zrobil sobie nastepna grupe do ataku
+LMP [-\]: lubos zrobic jakas dziwna sekwencje ataku, ale spowrotem zaczal brac teren :)
+marcinkam [-\]: zgodnie z zasadą 'atari widzisz, atari daj' :) ?
+]
+(;W[jc]CR[jc]C[buuu123 [?\]: tzn. wygral juz czy nie?
+czarny [-\]: i po terenie czarnego
+LMP [-\]: lubos - jeszcze nie
+LMP [-\]: ale ma przewage
+buuu123 [?\]: nie ale pytam tak na desce, czy ma przewage miazdzaca, czy nie?
+czarny [-\]: sijahamba
+czarny [-\]: ugaczaka
+czarny [-\]: :)
+czarny [-\]: ja wciąż stawiam na czarnego
+czarny [-\]: kto wejdzie w mój zakład 2 piwa ?
+marcinkam [-\]: czemu biały nie dawał atari?
+]
+;B[hb]CR[hb]C[Azael [-\]: a gie?
+nare [3k\]: stawiaj na bialego to znajdziejsz chetnych :-P
+]
+;W[ki]CR[ki]C[Qoryl [12k\]: ja stawiam na Habu :)
+LMP [-\]: gie to jeszce nie wiadomo, bo rams d lugo myśli
+LMP [-\]: ale zaczynają sie bić
+Azael [-\]: w fuseki czy juz chuban? :P
+nare [3k\]: dziwne jakby tych dwoch zagralo inaczej ze soba 
+]
+;B[ji]CR[ji]C[LMP [-\]: jak sie zaczeli bic to chuban
+LMP [-\]: z definicji :)
+]
+;W[jj]CR[jj]
+;B[ii]CR[ii]
+;W[kh]CR[kh]
+;B[li]CR[li]
+;W[kk]CR[kk]
+;B[lj]CR[lj]C[LMP [-\]: teraz nagle wyglada gorzej dla czarnego
+]
+(;W[ij]CR[ij]
+;B[hi]CR[hi]
+;W[gj]CR[gj]
+;B[hj]CR[hj]C[czarny [-\]: nare a teraz stawiasz na bialego? :)
+nare [3k\]: teraz to licze...
+nare [3k\]: ciekawe :)
+marcinkam [-\]: cześć
+]
+;W[hk]CR[hk]
+;B[gk]CR[gk]C[czarny [-\]: hej
+Ishii [5k\]: J9 ?
+LMP [-\]: a teraz zaczelo sie robic przykro dla bialego
+LMP [-\]: bo nie polaczyl
+]
+(;W[gi]CR[gi])
+(;W[fh]CR[fh]
+;B[gi]CR[gi]
+;W[hl]CR[hl]C[LMP [-\]: nie jestem pewna kolejności bo na chwilę stracilismy z oczu
+marcinkam [-\]: czy ktoś chce żebym otworzył klon tej partii? ;)
+])
+(;W[hl]CR[hl]
+;B[gi]CR[gi]
+;W[fh]CR[fh]C[LMP [-\]: chyba taka
+buuu123 [?\]: tak wyglada sensowniej
+LMP [-\]: :\]
+Ishii [5k\]: to nie namoj rozum :P
+nare [3k\]: tez :-), bialy nie ma kiedy zagrac h12 imho
+czarny [-\]: po E12, biąły chyba F10 może
+LMP [-\]: leszek właśnie jakimś cudownym sposobem ożywł martwe kamienie
+LMP [-\]: nikt nie zauważył jakim
+czarny [-\]: pewnie były zawsze żywe
+czarny [-\]: ex define
+LMP [-\]: nie były:P
+nare [3k\]: bialy zawsze zyje, no poza ta partia :-p
+LMP [-\]: rams - giedrojc - bardzo wczesna faza bitwy
+LMP [-\]: obaj podobnie wygladaja
+LMP [-\]: trzeba by kogos kto umie grac, zeby ocenic, czy ktos ma przewage :)
+buuu123 [?\]: rams jest niesamowicie mocny przeciwko giedrojciowi, mysle, ze wygra :)
+nare [3k\]: rams jakim kolorem gra?
+LMP [-\]: no tak
+LMP [-\]: nie dziala
+]
+(;B[ll]CR[ll]C[LMP [-\]: czarnym
+nare [3k\]: a to gie pewnie zaczal wariowac i semai jakies ustawiac
+nare [3k\]: :)
+buuu123 [?\]: z reguly tak sie to konczy, tylko z jakiegos powodu robi blad w liczeniu i rams wygrywa :)
+]
+;W[km]CR[km]C[LMP [-\]: ożywione martwe kamienie leszka zabiły pół planszy dominika
+buuu123 [?\]: omg
+LMP [-\]: chyba
+buuu123 [?\]: hehe
+LMP [-\]: dizzi mi mowi że nie ma chyba
+]
+;B[lm]CR[lm]
+;W[ln]CR[ln]
+;B[kn]CR[kn]
+(;W[kl]CR[kl]
+;B[nm]CR[nm]C[nare [3k\]: hmm, dlaczego nie e13?
+czarny [-\]: bo mozna przeciąć tą grupę też
+czarny [-\]: O10
+czarny [-\]: a terz już nie
+LMP [-\]: pare ruchow jeszcze i bedzie wiadomo kto ma przewage u rams/giedrojc
+LMP [-\]: jest szansa , ze rams lepiej wyjdzie
+czarny [-\]: i albo się podłączy do bandy, albo do prawego rogu
+pjk [-\]: o której jest juro runda?
+LMP [-\]: jutro 3-cia
+]
+;W[mm]CR[mm]
+;B[ml]CR[ml]
+;W[nl]CR[nl]C[LMP [-\]: u lubos/parkola juz lubos gra spokojnie - chyba wie, ze juz ma w kieszeni wygrana
+czarny [-\]: Q10?
+LMP [-\]: jutro 4-ta runda, sorry :D
+czarny [-\]: sorry Q9
+]
+;B[ko]CR[ko]C[pjk [-\]: a o której godz. start
+]
+;W[mp]CR[mp]C[LMP [-\]: 10:00
+]
+;B[lp]CR[lp]
+;W[nn]CR[nn]
+;B[mq]CR[mq]C[LMP [-\]: no dobra, dominik odżył
+LMP [-\]: ;)
+LMP [-\]: ale środek się duży zrobił
+agusia [8k\]: :D
+LMP [-\]: i z wkladem
+]
+;W[pk]CR[pk]C[LMP [-\]: znaczy się tam gdzie czarny mogł planować teren teraz jest ściana bialego
+]
+;B[fj]CR[fj]
+;W[kb]CR[kb]
+;B[lb]CR[lb]
+;W[eg]CR[eg]C[pjk [-\]: to mamy ko :-))
+czarny [-\]: dlaczego tak brzydko się stało ?
+Leszczyn2 [-\]: bialy mogl wyplacic najpierw h17
+]
+;B[hn]CR[hn]C[czarny [-\]: mam nadzieję, żę czarny wie co robi
+Azael [-\]: po co ko :P
+LMP [-\]: raczej przegapił
+LMP [-\]: to byl komentarz aist:)
+agusia [8k\]: to ko to w partii Gogosz/Sołdan??
+buuu123 [?\]: te zaklady o piwa dalej aktualne?
+czarny [-\]: nadal
+czarny [-\]: stawiam na czarnego
+buuu123 [?\]: to ja wchodze
+JW [7k\]: czy można się dowiedzić kto gra?
+czarny [-\]: Koichi vs Bazik
+Ishii [5k\]: jakas partia sie skonczyla ? :)
+JW [7k\]: dzięki, a czy są gdzieś dostępne wczorajsze wyniki?
+Ishii [5k\]: LMP info
+]
+;W[gn]CR[gn]C[LMP [-\]: dominik próbuje przeżyć w centrum
+Azael [-\]: a ma jakies szanse
+Azael [-\]: :P
+Ishii [5k\]: szanse zawsze sa ;)
+]
+;B[go]CR[go]C[pjk [-\]: na razie zwiększa ilość odechów
+]
+;W[ho]CR[ho]C[czarny [-\]: Ishi podobno masz miec awans na 1 dan, to prawda?
+Ishii [5k\]: xP
+Ishii [5k\]: co Ci odbilo :P
+czarny [-\]: :P
+czarny [-\]: mam po prostu dobry humor dziś :)
+Ishii [5k\]: ja tez :P
+Ishii [5k\]: ale nie az tak :P
+marcinkam [-\]: a wymiana n3 q9?
+]
+;B[io]CR[io]C[Ishii [5k\]: tylko mi z powodu tego humoru nic tam z sila w psg nie manipuluj :P
+]
+(;W[gl]CR[gl]C[LMP [-\]: Dominik poddał
+]
+;B[fn]CR[fn]
+;W[fk]CR[fk]
+;B[ek]CR[ek]
+;W[gj]CR[gj]
+;B[fl]CR[fl]C[buuu123 [?\]: cos niedobrze
+LMP [-\]: a partii rams gie ko o życie gie
+LMP [-\]: *w
+buuu123 [?\]: chle chle
+]
+;W[fm]CR[fm]
+(;B[el]CR[el]
+;W[hm]CR[hm]
+;B[hp]CR[hp]
+;W[in]CR[in]
+;B[ho]CR[ho]
+;W[en]CR[en]
+;B[gm]CR[gm]
+;W[gk]CR[gk]
+;B[fi]CR[fi]
+;W[gn]CR[gn]
+;B[fo]CR[fo]
+;W[em]CR[em]
+;B[gm]CR[gm]
+;W[jn]CR[jn]C[pjk [-\]: K9
+]
+;B[il]CR[il]C[partisan [20k?\]: of corse k9
+partisan [20k?\]: or there
+]
+;W[im]CR[im]
+;B[jl]CR[jl]
+;W[gn]CR[gn]C[partisan [20k?\]: big ko oO
+]
+;B[eo]CR[eo]
+;W[dm]CR[dm]C[partisan [20k?\]: if b loose m16 dead too?
+]
+;B[gm]CR[gm]C[LMP [-\]: if:\]
+partisan [20k?\]: :)
+]
+;W[ej]CR[ej]
+;B[ei]CR[ei]
+;W[gn]CR[gn]
+;B[cm]CR[cm]
+;W[cn]CR[cn]
+;B[do]CR[do]C[czarny [-\]: czarny ma ko na połączenie chyba ?
+LMP [-\]: vertigo-lubos zaraz bedzie lubos+R
+Dragonstar [11k?\]: wow
+Dragonstar [11k?\]: a jak tam ko u gie ?
+LMP [-\]: vertigo olal ruch , ktory dawal duze aji i ostatecznie zycie kamieni w terenie vertiga
+Azael [-\]: uuła
+Dragonstar [11k?\]: uuu
+partisan [20k?\]: uuu=oO ??
+Azael [-\]: a gdyby sie  wzmocnil za wczasu,  mialby szanse na wygrana/?
+LMP [-\]: no ale byl do tylu z terenem no i postawil wszystko na jedna karte :)
+Azael [-\]: aha
+Azael [-\]: szkoda
+LMP [-\]: ko się skonczylo
+Azael [-\]: i:>
+Dragonstar [11k?\]: i ?
+LMP [-\]: zycie za teren
+buuu123 [?\]: czyli rams wygra? 
+LMP [-\]: jeszze dużo gry 
+LMP [-\]: niejedno ko przed nimi
+Dragonstar [11k?\]: tak gie sie postara zeby byly ko ;)
+pjk [-\]: już nie ma ko :-(( w tej grze
+LMP [-\]: cicho Dragonstar miales sie uczyc
+Azael [-\]: ;\]
+LMP [-\]: poprawka
+LMP [-\]: bardzo duzy teren
+czarny [-\]: gdzie był ten koleś od piwa ?
+LMP [-\]: :\]
+buuu123 [?\]: hehe, dobra dobra, nie boj sie
+czarny [-\]: i tak nie będę chciał tych piw
+czarny [-\]: wiedziałem, że Koichi wygra
+czarny [-\]: Bazik ostatnio zajmuje się rodziną
+czarny [-\]: i nie ma czasu na trening
+buuu123 [?\]: :)
+agusia [8k\]: hehe
+buuu123 [?\]: brutalna prawda :)
+Dragonstar [11k?\]: kuexw przez pomylke trzymalem kciuki za zlego gracza ;P
+czarny [-\]: ale nie widzę nic w tym złego
+Dragonstar [11k?\]: *kurcze
+czarny [-\]: tylko, że odbija się na Gobanie
+buuu123 [?\]: i to lekcja dla wszystkich, rodzina to nie jest dobry pomysl !
+LMP [-\]: bazik poddał, gie mnie ochrzaqnia za plotkowanie
+partisan [20k?\]: dont understand... w resigned ???
+Dragonstar [11k?\]: :D
+LMP [-\]: aist)
+LMP [-\]: dizzi się wyglupia
+buuu123 [?\]: yes, w resigned
+partisan [20k?\]: ok thx
+czarny [-\]: na razie Koichi nie miał, poza Jankiem, wymagających przeciwnigów
+LMP [-\]: :)
+czarny [-\]: *przeciwników
+Dragonstar [11k?\]: to dawaj nastepna gre
+Dragonstar [11k?\]: :D
+LMP [-\]: nie ma
+Dragonstar [11k?\]: juz wszyscy rozegrali ?
+buuu123 [?\]: to tekstowo gie-rams
+LMP [-\]: hehe nie mozna:) wlasnie gie. ochrzanil aist za rozsiewanie plotek:)
+LMP [-\]: wiec:))
+LMP [-\]: ^_^
+buuu123 [?\]: popatrz na deske i powiedz z czym ci sie kojarzy
+czarny [-\]: Gie nie jest w dobrej formie :)
+czarny [-\]: przegrana z DOminikiem
+LMP [-\]: poczekajcie beda niedlugo(za kilka dni:P) gry na necie:>
+czarny [-\]: chociaż Domo to mój typ :)
+LMP [-\]: so be patient
+Dragonstar [11k?\]: a jak u janka
+Dragonstar [11k?\]: i vertigo
+LMP [-\]: graja jeszcze
+Dragonstar [11k?\]: a janek zpisuje ? ;P
+LMP [-\]: wlasnie vertigo troszke tryknal
+LMP [-\]: nie
+LMP [-\]: nie ma czasu
+Dragonstar [11k?\]: :D
+Dragonstar [11k?\]: byo ?
+LMP [-\]: jeszcze nie
+buuu123 [?\]: jeszcze troszke? mowiles, ze juz nie mial szans
+Dragonstar [11k?\]: a powiedzial ze nie ma czasu ?
+Dragonstar [11k?\]: ;)
+LMP [-\]: cos ty taki dociekliwy
+Dragonstar [11k?\]: :)
+Dragonstar [11k?\]: bo wczoraj
+Dragonstar [11k?\]: eh
+Dragonstar [11k?\]: nic
+Dragonstar [11k?\]: :)
+Dragonstar [11k?\]: dzisiaj graja dwie rundy ?
+LMP [-\]: wlasnie konczy sie druga runda
+Dragonstar [11k?\]: a jaki system kazdy z kazdym ?
+Dragonstar [11k?\]: czy szwajcarski
+LMP [-\]: y
+Dragonstar [11k?\]: y tzn ?
+Azael [-\]: yes :P
+LMP [-\]: szwajcar to kazdy z kazdym imho
+Dragonstar [11k?\]: wiem
+Dragonstar [11k?\]: nie 
+Dragonstar [11k?\]: przynajmniej z tego co wiem to nie
+Azael [-\]: jest 7 rund, a 8 graczy, wiec...
+Azael [-\]: :)
+Dragonstar [11k?\]: wiec kazdy z kazdym
+pjk [-\]: do której będą dzisiaj siedzieć ludzie w GARDENIE?
+m127 [?\]: SZWAJCARSKI 
+pjk [-\]: czy jest sens jeszcze przyjeżdzać?
+LMP [-\]: do ostatniej rgy i troche dluzej
+LMP [-\]: gry
+Dragonstar [11k?\]: :)
+LMP [-\]: hmm
+m127 [?\]: sorry, szwajcarski to jak macMahona z barem na 45 kyu
+LMP [-\]: zakladajac ze nie ma graczy ponizej 45kyu
+LMP [-\]: :)
+m127 [?\]: tak :)
+Azael [-\]: to pokomentuj troche gry reszty
+LMP [-\]: wydaje sie ze bialy przegral gdy zagral j10
+LMP [-\]: potem to juz bylo bardzo trudne dla bialego
+Ishikawa [-\]: kto jeszcze gra ?
+LMP [-\]: rams gie
+Azael [-\]: jak wyglada ostatnia gra, mamy zwyciezce?
+LMP [-\]: jeszcze nie
+LMP [-\]: pol godziny jeszcze , przynajmniej
+Azael [-\]: a kto prowadzi/
+chikaru [2k\]: czyja to gra?
+])
+(;B[gk]CR[gk]))
+(;W[gm]CR[gm])
+(;W[hp]CR[hp]))
+(;W[jm]CR[jm]))
+(;B[eg]CR[eg]C[LMP [-\]: dlaczego nie tu?
+marcinkam [-\]: miałem nadzieję, że mi powiesz
+]
+;W[eh]CR[eh]
+;B[dg]CR[dg]
+;W[fj]CR[fj]
+;B[fi]CR[fi]
+;W[ei]CR[ei])))
+(;W[hi]CR[hi]C[LMP [-\]: tutaj wystarczy
+marcinkam [-\]: f13 było konieczne?
+]
+;B[ij]CR[ij]
+;W[jk]CR[jk]C[marcinkam [-\]: to był ruch w stylu 'zabierz mi teren a ja cię pogonię i zobaczymy'
+LMP [-\]: ciezka walka sie zapowiada
+LMP [-\]: ale bialy lepiej stoi
+LMP [-\]: bo:
+LMP [-\]: L9
+LMP [-\]: za darmo
+]))
+(;W[hc]CR[hc]C[LMP [-\]: ?
+]
+;B[gc]CR[gc]
+;W[gb]CR[gb]
+;B[fc]CR[fc]C[marcinkam [-\]: tak
+]
+;W[jc]CR[jc]
+;B[hb]CR[hb]
+;W[ib]CR[ib]C[LMP [-\]: i grac ko?
+marcinkam [-\]: niekoniecznie
+LMP [-\]: moze byc
+LMP [-\]: inaczej nie ma sensu
+marcinkam [-\]: ale czarny nie ma teraz łączenia w ko w k18
+LMP [-\]: ale to jest "pachnace" ko dla bialego
+LMP [-\]: duzo nie traci
+LMP [-\]: a jak wygra - to lo jezu
+marcinkam [-\]: tak
+]))
+(;W[jf]CR[jf]C[LMP [-\]: nie rozumiem
+LMP [-\]: przewine troche
+]))
+(;B[gg]CR[gg]
+;W[gh]CR[gh]
+;B[fg]CR[fg]
+;W[fh]CR[fh]
+;B[eg]CR[eg]C[LMP [-\]: nie?
+]))
+(;W[dk]CR[dk]C[LMP [-\]: tutaj gdzies jest "hnte
+LMP [-\]: "honte"
+]))
+(;B[cd]CR[cd]C[LMP [-\]: to jest chyba "must"
+LMP [-\]: jak mowia jugoslowianie
+]
+;W[ce]CR[ce]
+;B[bd]CR[bd]
+;W[be]CR[be]
+;B[bc]CR[bc]
+;W[df]CR[df]
+;B[eg]CR[eg]
+;W[ef]CR[ef]C[LMP [-\]: to byl zart
+]))
+(;W[cd]CR[cd]))
+(;W[oq]CR[oq]C[LMP [-\]: o tu
+]
+;B[po]CR[po]
+;W[op]CR[op]
+;B[qq]CR[qq]
+;W[oo]CR[oo]
+;B[pn]CR[pn]
+;W[on]CR[on]
+;B[rn]CR[rn]
+;W[ql]CR[ql]C[LMP [-\]: i sciana coskolwiek fajniejsza i aji zostaly
+]))
+(;B[qo]CR[qo]C[matt [28k?\]: its a live game?
+marcinkam [-\]: no, its post mortem
+mindless: :D
+LMP [-\]: to wydaje sie lepsze
+]))
+(;B[mb]CR[mb]))
+(;W[lc]CR[lc]C[bazik [-\]: balem sie :-)
+]))
+(;B[lc]CR[lc]C[LMP [-\]: tu lepiej
+]))
+(;W[og]CR[og]))
+(;W[pl]CR[pl]C[LMP [-\]: jesli"
+LMP [-\]: dlatego tez czarny bedzie mial do wyboru tylko: p9 i q9
+LMP [-\]: co daje bialemu troche lepszy ksztalt
+czarny [-\]: O10 ?
+bazik [-\]: zalozylem ze p9
+bazik [-\]: i nie wpadlem na to ze moge tenuki
+]
+(;B[ok]CR[ok]
+(;W[pk]CR[pk]C[LMP [-\]: bialy zagra tu
+LMP [-\]: i co dalej?
+bazik [-\]: mysle ze m12/m11 lepsze niz q9
+bazik [-\]: o13 n11
+bazik [-\]: (a jak widac z gry te kombinacja odbiera bazikowi wole walki
+LMP [-\]: nie sadze
+bazik [-\]: nie wiedziec czemu
+LMP [-\]: to jest bardzo duze
+LMP [-\]: bialy nie ma wyboru tylko grac "w mece"
+LMP [-\]: nic strasznego sie nie dzieje
+marcinkam [-\]: kto jako LMP pisze?
+bazik [-\]: i tak najpierw wole wyskoczyc w m11.m12
+LMP [-\]: :)
+bazik [-\]: leszek zgaduje
+])
+(;W[lh]CR[lh]
+;B[pk]CR[pk]C[bazik [-\]: no teraz to nie wiem
+LMP [-\]: i co teraz bedzie?
+bazik [-\]: moze zabije?
+LMP [-\]: acha
+LMP [-\]: fajnie
+bazik [-\]: :-D
+]))
+(;B[nj]CR[nj]C[LMP [-\]: jesli tu
+LMP [-\]: bialy zagra to co przedtem
+]
+;W[qj]CR[qj]
+;B[rj]CR[rj]
+;W[rk]CR[rk]
+;B[ri]CR[ri]C[LMP [-\]: teraz to nie jest takie "niebezpieczne" dla bialego
+LMP [-\]: porownajcie pozycje
+LMP [-\]: a tu w sente
+marcinkam [-\]: hej
+bazik [-\]: czy to nie najlepsze fuseki we wszechswiecie?
+LMP [-\]: sc - bazik
+Azael [-\]: i wykrakales przegrana :D
+]
+;W[mh]CR[mh])
+(;B[pk]CR[pk]
+;W[ok]CR[ok]
+;B[qj]CR[qj]
+;W[nj]CR[nj]
+;B[ol]CR[ol]
+;W[pj]CR[pj]C[bazik [-\]: znamy, nie spodziwamy sie naiwnosci takiej
+]
+;B[qk]CR[qk]
+;W[pn]CR[pn]C[bazik [-\]: czarny by tak nie gral
+LMP [-\]: to oczywiscie znacie
+bazik [-\]: przeciez
+LMP [-\]: a jak by gral?
+])))
+(;W[oj]CR[oj]C[mindless: ta gra jest jeszcze w trakcie?
+LMP [-\]: tutaj jest poprawnie
+]
+;B[if]CR[if]
+;W[gd]CR[gd]
+;B[lh]CR[lh]C[LMP [-\]: spokojny rozwoj
+]
+;W[qk]CR[qk]))
+(;B[od]CR[od]
+;W[pd]CR[pd])
+(;B[dp]CR[dp]
+;W[dj]CR[dj]
+;B[od]CR[od]
+(;W[pd]CR[pd]
+;B[oe]CR[oe])
+(;W[nd]CR[nd]
+;B[ne]CR[ne]))
+(;B[og]CR[og]
+;W[ng]CR[ng]
+;B[oh]CR[oh]
+;W[nf]CR[nf]C[LMP [-\]: czarny kamiien jest dosyc zwawy
+LMP [-\]: bo
+]
+(;B[nc]CR[nc]
+;W[od]CR[od]
+;B[ob]CR[ob]
+;W[pb]CR[pb]
+;B[mb]CR[mb]
+;W[qc]CR[qc])
+(;B[lf]CR[lf]
+;W[nh]CR[nh]
+;B[oi]CR[oi]))
+(;B[mf]CR[mf]C[LMP [-\]: tutaj jest wlasciwy ksztalt
+]
+;W[oh]CR[oh]
+;B[od]CR[od]
+;W[pd]CR[pd]
+;B[oe]CR[oe]))

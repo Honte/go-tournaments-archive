@@ -1,110 +1,312 @@
-(
-  ;BR[7d]CA[UTF-8]DT[2021-02-19]EV[Polish Go Championship 2020]FF[4]GM[1]GN[Round 2 - Board 2]KM[6.5]PB[Stanisław Frejlak]PC[Warszawa / Poznań / Online]PW[Piotr Dyszczyk]RE[B+R]RU[japanese]SZ[19]WR[1d]
-  ;B[qc]
-  ;W[dp]
-  ;B[pq]
-  ;W[dd]
-  ;B[po]
-  ;W[fq]
-  ;B[fc]
-  ;W[id]
-  ;B[cc]
-  ;W[dc]
-  ;B[cd]
-  ;W[de]
-  ;B[db]
-  ;W[eb]
-  ;B[cb]
-  ;W[fb]
-  ;B[cf]
-  ;W[gc]
-  ;B[nd]
-  ;W[qi]
-  ;B[qg]
-  ;W[qm]
-  ;B[qk]
-  ;W[om]
-  ;B[pj]
-  ;W[op]
-  ;B[oo]
-  ;W[np]
-  ;B[pp]
-  ;W[no]
-  ;B[nn]
-  ;W[mn]
-  ;B[nm]
-  ;W[ok]
-  ;B[nl]
-  ;W[oj]
-  ;B[pi]
-  ;W[pk]
-  ;B[qj]
-  ;W[mj]
-  ;B[ll]
-  ;W[lo]
-  ;B[kk]
-  ;W[li]
-  ;B[ki]
-  ;W[kh]
-  ;B[ji]
-  ;W[lg]
-  ;B[jh]
-  ;W[jg]
-  ;B[ig]
-  ;W[jf]
-  ;B[ip]
-  ;W[kq]
-  ;B[gp]
-  ;W[fp]
-  ;B[gn]
-  ;W[dm]
-  ;B[nr]
-  ;W[ir]
-  ;B[bn]
-  ;W[bp]
-  ;B[cl]
-  ;W[dl]
-  ;B[ck]
-  ;W[dk]
-  ;B[cj]
-  ;W[jl]
-  ;B[jm]
-  ;W[km]
-  ;B[kl]
-  ;W[im]
-  ;B[jn]
-  ;W[hl]
-  ;B[in]
-  ;W[fm]
-  ;B[jk]
-  ;W[il]
-  ;B[ln]
-  ;W[ko]
-  ;B[kn]
-  ;W[mm]
-  ;B[ml]
-  ;W[lc]
-  ;B[hr]
-  ;W[jr]
-  ;B[gr]
-  ;W[mr]
-  ;B[nq]
-  ;W[mq]
-  ;B[mc]
-  ;W[ld]
-  ;B[nf]
-  ;W[ch]
-  ;B[df]
-  ;W[ef]
-  ;B[dh]
-  ;W[di]
-  ;B[ci]
-  ;W[dg]
-  ;B[cg]
-  ;W[eh]
-  ;B[bh]
-  ;W[ih]
-  ;B[mh]
-  ;W[lh]
-  ;B[hi]
-)
+(;FF[4]
+CA[UTF-8]
+GM[1]
+DT[2021-02-19]
+PC[OGS: https://online-go.com/game/31256140]
+GN[LMP round 2 board 3]
+PB[Siasio]
+PW[shin0e]
+BR[5d]
+WR[3d]
+TM[10800]OT[3x60 byo-yomi]
+RE[B+R]
+SZ[19]
+KM[6.5]
+RU[Japanese]
+;B[qc]
+(;W[dp]
+(;B[pq]
+(;W[dd]
+(;B[po]
+(;W[fq]
+(;B[fc]
+(;W[id]
+(;B[cc]
+(;W[dc]
+(;B[cd]
+(;W[de]
+(;B[db]
+(;W[eb]
+(;B[cb]
+C[Cezary: wyglada ze dzis tylko staś z piotrkiem graja na prawdziwym gobanie ?
+hypergeometric: hi
+]
+(;W[fb]
+(;B[cf]
+(;W[gc]
+(;B[nd]
+(;W[qi]
+(;B[qg]
+C[yakcyll: Tak, KaC niechętny do gobanu
+yakcyll: Hello there
+Ashi1989: pisal, ze nie chce zapisywac partii :)
+]
+(;W[qm]
+(;B[qk]
+C[Ashi1989: ja go rozumiem - granie i zapisywanie partii moze rozpraszac :D
+Ashi1989: no i dzieki temu cala partia bedzie zapisana ;)
+]
+(;W[om]
+(;B[pj]
+(;W[op]
+(;B[oo]
+(;W[np]
+C[Cezary: ja tez bym wolal 
+silent: P4 to chyba troche ovaerplay, co nie?
+Cezary: grac na kompie
+silent: No ja nie rozumeim czemu wszyscy nie zagrają online :(
+Ashi1989: ja wole na gobanie ;D
+Ashi1989: inny klimat ;)
+]
+(;B[pp]
+C[silent: Pewno, że na gobanie lepiej
+silent: Ale wolałbym grać online, niż zapisywać partię podczas gry
+silent: (I lepiej dla ludzi którzy nie mają co robić w piątek i oglądają transmisje ^^)
+yakcyll: Doświadczenie na przyszłość.
+yakcyll: Być może następnym razem uda się znaleźć odpowiednie statywy, wtedy osoby transmitujące mogłyby być zdalnie
+yakcyll: Albo nie będzie to zwyczajnie potrzebne
+]
+(;W[no]
+(;B[nn]
+C[yakcyll: Na tej planszy grają do byo tylko, więc pewnie kiedy któryś z graczy osiągnie 1h30m, to transmisja się urwie
+]
+(;W[mn]
+C[silent: No miejmy nadzieję, że za rok nie będzie już covida po prostu ;p
+MagiQ: covid ma być już zawsze ...
+]
+(;B[nm]
+C[yakcyll: Może tak być niestety, ale trzeba być dobrej myśli
+yakcyll: Żebyśmy mogli spotkać się przy gobanach w większej grupie
+MagiQ: może jakoś w konspiracji na dzień dzisiejszy 
+]
+(;W[ok]
+(;B[nl]
+C[Ashi1989: nie wiem co bym zagral bialym teraz :D
+yakcyll: tbh neither does white
+Ashi1989: ;))
+]
+(;W[oj]
+(;B[pi]
+(;W[pk]
+C[Ashi1989: Q9 bez P10 chyba byloby lepsze?
+]
+(;B[qj]
+(;W[mj]
+C[yakcyll: Teraz ma lepszy wyskok, nie?
+yakcyll: Czarny i tak zagrałby r10
+Ashi1989: ale bialy moze by mogl ciac w P6? albo zagrac kosumi?
+Ashi1989: i niby taki double attack
+]
+(;B[ll]
+C[yakcyll: Może nie mógł doczytać, co po cięciu
+yakcyll: Ten atak to i tak trudny, czarny w rogu i na zewnątrz otwarty
+Ashi1989: ale to nie jest pozycja w ktorej mozna tak spokojnie oddac R11 :D
+]
+(;W[lo]
+C[silent: bajdełej, Lukas już streamuje
+]
+(;B[kk]
+C[Ashi1989: wiem, slucham ;)
+Ashi1989: https://www.twitch.tv/lukan95
+]
+(;W[li]
+C[Cezary: no niestety
+Cezary: wydaje mi sie ze
+Cezary: p10 i m5 umrą
+]
+(;B[ki]
+C[Ashi1989: haha
+Ashi1989: wydaje mi sie, ze po tych wymianach w centrum D4 i F3 potrzebuja wsparcia
+]
+(;W[kh]
+(;B[ji]
+(;W[lg]
+(;B[jh]
+(;W[jg]
+(;B[ig]
+(;W[jf]
+(;B[ip]
+C[yakcyll: j5?
+]
+(;W[kq]
+(;B[gp]
+(;W[fp]
+(;B[gn]
+(;W[dm]
+(;B[nr]
+C[Radziol: czarny już dużo prowadzi
+]
+(;W[ir]
+C[Sadiker: Szok ;)
+Sadiker: powinien dawać po 3h to jakieś wyzwanie by było
+yakcyll: No, coś tam xd
+]
+(;B[bn]
+C[silent: woooo
+yakcyll: Trudne sprawy
+yakcyll: Coś będzie musiało zginąć
+silent: Na przykład G4? ^^'
+Ashi1989: najwazniejsze zeby grupa M5 przezyla
+]
+(;W[bp]
+(;B[cl]
+C[Radziol: nic nie zginie
+Ashi1989: to dobrze
+Ashi1989: zalozylem sie z Cezarym, ze M5 przezyje
+Radziol: Siasio nie lubi zabijać \]:->
+Ashi1989: :D
+]
+(;W[dl]
+(;B[ck]
+C[Radziol: coś trzeba zrobić
+Ashi1989: jak czas dla obu graczy?
+Radziol: c13? :)
+yakcyll: Koksik faktycznie coś koło 7 minut
+yakcyll: Zegar wspomniał dziesięć jakiś czas temu
+yakcyll: Siasio dużo xd
+Ashi1989: :)
+]
+(;W[dk]
+C[Ashi1989: koksik teraz bardzo wolno gra
+]
+(;B[cj]
+C[yakcyll: Godzina trzy
+yakcyll: Yeah, myśli
+yakcyll: Ma trudną sytuację ewidentnie
+Ashi1989: no nie jest lekko
+yakcyll: Ani Leszek, ani Siasio nie chcieli go zabijać
+yakcyll: Nie musieli
+yakcyll: I'm impressed
+yakcyll: White's basic time 5 minutes left
+yakcyll: White's basic time minutes left 1 minute
+]
+(;W[jl]
+C[Ashi1989: yeah
+Ashi1989: bialy idzie na calosc :D
+Ashi1989: i odda M5 :(
+]
+(;B[jm]
+C[yakcyll: Jest w byo
+]
+(;W[km]
+C[Ashi1989: dzieki yakcyll :)
+]
+(;B[kl]
+C[yakcyll: Będzie próbował
+yakcyll: Może coś tam pomogę, ale nie mogę faworyzować ;(
+]
+(;W[im]
+C[Ashi1989: jako sedzia mozesz dodac mu czas z powodow technicznych
+Ashi1989: xD
+yakcyll: xd
+]
+(;B[jn]
+(;W[hl]
+(;B[in]
+C[Ashi1989: czas byo to 60sec/1?
+yakcyll: 3x60
+Ashi1989: nice
+]
+(;W[fm]
+C[yakcyll: Wciąż ma trzy
+Ashi1989: kiedys byl 1x60:D
+]
+(;B[jk]
+C[yakcyll: Na MP, serio? Wydawało mi się, że 3x60
+yakcyll: Może jako przeciwdziałanie problemom z netem
+Ashi1989: fajnie ze to zmieniono - czasowo gre wydluza maksymalnie o 4 minuty, a pomaga graczom :)
+]
+(;W[il]
+C[yakcyll: Yeah
+]
+(;B[ln]
+(;W[ko]
+(;B[kn]
+C[yakcyll: BIały musi próbować na górze po prawej
+yakcyll: Tylko nie ma kiedy...
+]
+(;W[mm]
+(;B[ml]
+(;W[lc]
+(;B[hr]
+C[Ashi1989: podrzuci ktos link do gry kaca?
+Ashi1989: bo nie moge znalezc
+yakcyll: https://online-go.com/game/31256291
+Ashi1989: oj
+]
+(;W[jr]
+(;B[gr]
+(;W[mr]
+(;B[nq]
+C[Radziol: no i żyje
+yakcyll: but at what cost
+]
+(;W[mq]
+C[yakcyll: e2
+Radziol: cicho
+yakcyll: xd
+Radziol: sukces białego
+yakcyll: yeah
+Ashi1989: to porazka Cezarego :D
+Ashi1989: 5 dych w plecy =\]\]
+]
+(;B[mc]
+C[Radziol: k8 to była dywersja mająca na celu przezycie m5 100%
+]
+(;W[ld]
+(;B[nf]
+(;W[ch]
+C[silent: Czy IGLO przechodzi teraz w ręce Ashitaki w takim razie?
+]
+(;B[df]
+C[yakcyll: Zeszło byo
+Radziol: jak to zeszło?
+yakcyll: W sensie jest na drugim byo
+yakcyll: Orze jak może.
+]
+(;W[ef]
+C[Ashi1989: silent: nie, moze przy kolejnym zakladzie ;)
+Radziol: a to jest wincyj byo
+yakcyll: 3x60
+yakcyll: gdi
+Ashi1989: mowilem, ze kiedys bylo 1x60 byo :D
+]
+(;B[dh]
+C[yakcyll: No najwyraźniej
+yakcyll: Aż się zdziwiłem
+yakcyll: Ostatnie byo
+yakcyll: Tu się pewnie urwie
+yakcyll: Bo będzie chciał się skupić
+Ashi1989: oj
+Ashi1989: to przejmij od niego! xD
+]
+(;W[di]
+(;B[ci]
+C[Ashi1989: a siasio transmituje czy nie?
+]
+(;W[dg]
+C[yakcyll: Obaj są tu
+]
+(;B[cg]
+C[Ashi1989: o, to lepiej niz wczoraj gdzie piotrek i leszek transmitowali osobno :D
+yakcyll: Z tym, że jeśli jeden przerwie, to kicha
+Ashi1989: hmm
+yakcyll: Zbił, zablokował
+Ashi1989: no nic
+yakcyll: Nie będę im stał nad głowami
+Ashi1989: trudno sie mowi
+yakcyll: Jakby coś wycyzelował, to dam znać
+Ashi1989: :D
+yakcyll: \[object Object\]
+yakcyll: Nie na bieżąco, ale doklikam
+yakcyll: B+R
+]
+(;W[eh]
+(;B[bh]
+(;W[ih]
+(;B[mh]
+(;W[lh]
+(;B[hi]
+C[Ashi1989: dzieki i tak :)
+]
+)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))

@@ -71,7 +71,7 @@ export function GameViewerModal({ sgfPath, translations, onClose }: GameViewerDi
             <Button type="button" onClick={onClose}>
               {t('navigation.close')}
             </Button>
-            {data?.props && <GameActions props={data.props} t={t} />}
+            {data?.props && <GameActions props={data.props} t={t} showOriginal={true} />}
           </footer>
         </section>
       </div>

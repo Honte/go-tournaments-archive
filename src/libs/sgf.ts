@@ -1,7 +1,7 @@
 import type { Sign, Vertex } from '@sabaki/go-board';
-import { parse, type SgfNode } from '@sabaki/sgf';
 import type { GameProps } from '@/schema/data';
 import { CustomSgfProps, SgfRootProps } from '@/schema/sgf';
+import { Sgf } from '@tools/sgf';
 
 export type SgfPlayer = {
   id?: string;
@@ -27,7 +27,7 @@ export type SgfMove = {
 };
 
 export function loadSgf(content: string, sgfPath?: string): SgfData {
-  const [root] = parse(content);
+  const root = new Sgf(content).getRoot();
   const moves: SgfMove[] = [];
 
   let node = root.children[0];
@@ -76,42 +76,6 @@ export function loadSgf(content: string, sgfPath?: string): SgfData {
     },
     moves,
   };
-}
-
-export function getLongestBranch(sgfTree: SgfNode[]) {
-  const map = new Map<number, SgfNode>();
-  const queue: [node: SgfNode, depth: number][] = sgfTree.map((node) => [node, 0]);
-  const leafs: [node: SgfNode, depth: number][] = [];
-
-  while (queue.length) {
-    const [node, depth] = queue.shift()!;
-
-    map.set(node.id, node);
-
-    if (node.children?.length) {
-      for (const child of node.children) {
-        queue.push([child, depth + 1]);
-      }
-    } else {
-      leafs.push([node, depth]);
-    }
-  }
-
-  leafs.sort((a, b) => b[1] - a[1]);
-
-  if (leafs.length > 1 && leafs[0][1] === leafs[1][1]) {
-    console.warn('Multiple longest branches found');
-  }
-
-  const longest = [];
-  let current: SgfNode | undefined = leafs[0][0];
-
-  while (current) {
-    longest.unshift(current);
-    current = map.get(current.parentId!);
-  }
-
-  return longest;
 }
 
 function toSingleNumber(value?: string[]) {

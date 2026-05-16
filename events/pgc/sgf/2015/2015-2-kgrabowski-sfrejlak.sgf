@@ -1,105 +1,160 @@
-(
-  ;BR[2d]CA[UTF-8]DT[2016-01-08]EV[Polish Go Championship 2015]FF[4]GM[1]GN[Round 2 - Board 2]KM[6.50]PB[Kamil Grabowski]PC[Warszawa]PW[Stanisław Frejlak]RE[W+R]RO[2]RU[japanese]ST[2]SZ[19]US[Michał Parkoła]WR[5d]
-  ;B[qd]
-  ;W[dp]
-  ;B[pp]
-  ;W[dc]
-  ;B[oc]
-  ;W[qn]
-  ;B[nq]
-  ;W[qj]
-  ;B[qh]
-  ;W[ci]
-  ;B[qo]
-  ;W[pn]
-  ;B[ql]
-  ;W[rl]
-  ;B[pl]
-  ;W[rm]
-  ;B[fq]
-  ;W[dn]
-  ;B[cq]
-  ;W[dq]
-  ;B[dr]
-  ;W[er]
-  ;B[cr]
-  ;W[eq]
-  ;B[bo]
-  ;W[bn]
-  ;B[co]
-  ;W[cn]
-  ;B[fr]
-  ;W[es]
-  ;B[cp]
-  ;W[ip]
-  ;B[kq]
-  ;W[jd]
-  ;B[de]
-  ;W[fd]
-  ;B[cc]
-  ;W[cb]
-  ;B[fe]
-  ;W[ge]
-  ;B[db]
-  ;W[dd]
-  ;B[cd]
-  ;W[bb]
-  ;B[eb]
-  ;W[fc]
-  ;B[cf]
-  ;W[be]
-  ;B[ce]
-  ;W[fb]
-  ;B[ff]
-  ;W[ei]
-  ;B[gf]
-  ;W[he]
-  ;B[gi]
-  ;W[gj]
-  ;B[hj]
-  ;W[fj]
-  ;B[hk]
-  ;W[hi]
-  ;B[gh]
-  ;W[ii]
-  ;B[ig]
-  ;W[jg]
-  ;B[if]
-  ;W[jh]
-  ;B[dg]
-  ;W[il]
-  ;B[im]
-  ;W[hm]
-  ;B[jm]
-  ;W[jl]
-  ;B[hn]
-  ;W[in]
-  ;B[io]
-  ;W[jn]
-  ;B[jo]
-  ;W[km]
-  ;B[ho]
-  ;W[fp]
-  ;B[gp]
-  ;W[gq]
-  ;B[fo]
-  ;W[ep]
-  ;B[gr]
-  ;W[hq]
-  ;B[hr]
-  ;W[ir]
-  ;B[iq]
-  ;W[jq]
-  ;B[hp]
-  ;W[iq]
-  ;B[kr]
-  ;W[hs]
-  ;B[ri]
-  ;W[op]
-  ;B[oq]
-  ;W[qq]
-  ;B[po]
-  ;W[ro]
-  ;B[rp]
-  ;W[qp]
-)
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[90]OT[1x60 byo-yomi]
+GN[Stanisław Frejlak 5d (white) vs. Kamil Grabowski 2d (black)]PW[Stanisław Frejlak]PB[Kamil Grabowski]WR[5d]BR[2d]DT[2016-01-08]EV[Polish Championship]RO[2]PC[Warszawa]US[Michał Parkoła]RE[W+Resign]
+;B[qd]
+;W[dp]
+;B[pp]
+;W[dc]
+;B[oc]
+;W[qn]
+;B[nq]
+;W[qj]C[LMP2 [-\]: This is a clash between Warsaw and Krakow.
+LMP2 [-\]: A historic rivalry between the best city in Poland and that other one.
+]
+;B[qh]C[LMP2 [-\]: The opening was kept at a pretty fast pace.
+LMP2 [-\]: But now Stanislaw seems a bit dejected.
+]
+;W[ci]C[Song [4d\]: mm what is this game for?
+LMP2 [-\]: Polish Championship round 2
+]
+;B[qo]
+;W[pn]
+;B[ql]
+;W[rl]
+;B[pl]
+;W[rm]
+;B[fq]
+;W[dn]
+;B[cq]
+;W[dq]
+;B[dr]
+;W[er]
+;B[cr]
+;W[eq]
+;B[bo]
+;W[bn]
+;B[co]
+;W[cn]
+;B[fr]
+;W[es]
+;B[cp]
+;W[ip]
+;B[kq]
+;W[jd]
+;B[de]
+;W[fd]C[gisel [-\]: Calling Warsaw the other one? Pretty harsh considering its capital
+]
+;B[cc]
+;W[cb]C[LMP2 [-\]: I'll let each observer decide for himself which one is the other one ;)
+]
+;B[fe]
+;W[ge]
+;B[db]C[afterbreak [2k?\]: Black is Kamil?
+kmr [2d\]: yes look at name of game
+afterbreak [2k?\]: Cant :€ android 2.1 :P
+]
+;W[dd]C[LMP2 [-\]: This move took a very long time.
+LMP2 [-\]: I read an article, watched a movie and knitted a sweater in the meantime.
+]
+;B[cd]
+;W[bb]
+;B[eb]
+;W[fc]C[midorisuke [4d\]: takes courage to play that fast after your opponent takes so long
+kmr [2d\]: so android verison is improving by managing to close all way to see players names?LOL.
+LMP2 [-\]: Minimalism
+LMP2 [-\]: It's a philosophical choice.
+LMP2 [-\]: The names are not important.
+LMP2 [-\]: Only the moves.
+]
+;B[cf]
+;W[be]
+;B[ce]
+;W[fb]
+;B[ff]
+;W[ei]
+;B[gf]
+;W[he]
+;B[gi]
+;W[gj]
+;B[hj]
+;W[fj]
+;B[hk]
+;W[hi]
+;B[gh]
+;W[ii]
+;B[ig]C[afterbreak [2k?\]: The one that takes tengen wins :p
+]
+;W[jg]C[LMP2 [-\]: Black almost placed a stone, but threw it back in the bowl instead.
+]
+;B[if]
+;W[jh]C[badpunman [?\]: what a mad man
+]
+;B[dg]C[LMP1 [-\]: hey, badpunman, have you heard the story of Noah?
+LMP1 [-\]: he was tasked with building an ark, but only for fish
+LMP1 [-\]: carp, to be precise
+LMP1 [-\]: very large
+LMP1 [-\]: and so he build the world's first multi-storey carp ark!
+]
+;W[il]C[badpunman [?\]: groan
+LMP2 [-\]: ;)
+LMP2 [-\]: #dry
+LMP2 [-\]: Black thinking for a long time.
+LMP2 [-\]: Game recorder almost asleep.
+LMP2 [-\]: No coffee this morning.
+]
+;B[im]C[LMP2 [-\]: These are the signs of out times
+LMP2 [-\]: Even the spectators are bots
+]
+;W[hm]C[LMP2 [-\]: There is death in the hane
+AndEdhel [4k\]: j2?
+AndEdhel [4k\]: the silent (player) is death-haneing ?
+LMP2 [-\]: Yes
+LMP2 [-\]: He clearly has murderous intentions
+LMP2 [-\]: Thinking to himself "mine, allll miiiineeee"
+]
+;B[jm]C[AndEdhel [4k\]: we need more scribe like you.  But I hope you have a silent keyboard ^^
+LMP2 [-\]: The players experienced a bridge tournament here yesterday.
+LMP2 [-\]: My keyboard is irrelevant :P
+]
+;W[jl]
+;B[hn]
+;W[in]
+;B[io]
+;W[jn]C[LMP2 [-\]: Black had a serious case of rubber hand before this move.
+]
+;B[jo]
+;W[km]
+;B[ho]
+;W[fp]
+;B[gp]
+;W[gq]
+;B[fo]
+;W[ep]
+;B[gr]
+;W[hq]
+;B[hr]
+;W[ir]
+;B[iq]
+;W[jq]
+;B[hp]
+;W[iq]
+;B[kr]
+;W[hs]
+;B[ri]C[AndEdhel [4k\]: I can hear b facepalming from here
+]
+;W[op]
+;B[oq]
+;W[qq]C[LMP2 [-\]: It's not over until the fat lady sings.
+LMP2 [-\]: And we have only one skinny lady here, not fat ladies at all.
+LMP2 [-\]: So this is going to be a long day.
+AndEdhel [4k\]: just talking about h5 stones versus both  a turtle in center and g2
+]
+;B[po]
+;W[ro]
+;B[rp]
+;W[qp]C[LMP2 [-\]: Black resigned.
+LMP2 [-\]: There was a fat lady in the pub next door.
+LMP2 [-\]: She sung.
+AndEdhel [4k\]: thx!
+LMP2 [-\]: Thenk you all for watching and see you in the afternoon.
+])

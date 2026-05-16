@@ -16,7 +16,7 @@ stages:
     findSharedPlaces: true
     games:
       - 1-3 1:B+7.5 round:5 sgf:2023/5-JeongseonKim-YuChengLai.sgf
-      - 1-5 1:B+R round:7 sgf:2023/r7-JeongseonKim-AlanHuang.sgf
+      - 1-5 1:B+R round:7 sgf:2023/7-JeongseonKim-AlanHuang.sgf
       - 2-4 2:B+R round:7 sgf:2023/7-ChukunYang-YoshikiKurita.sgf
       - 2-8 2:B+R round:4 sgf:2023/4-ChukunYang-JieHuiKwa.sgf
       - 2-31 2:B+R round:1 sgf:2023/1-ChukunYang-FredericSchlattner.sgf
@@ -25,14 +25,14 @@ stages:
       - 4-1 1:W+R round:6 sgf:2023/6-YoshikiKurita-JeongseonKim.sgf
       - 4-6 4:B+R round:4 sgf:2023/4-YoshikiKurita-PongsakarnSornarra.sgf
       - 4-33 4:B+R round:1 sgf:2023/1-YoshikiKurita-ErnestasRomeika.sgf
-      - 5-2 2:W round:2 sgf:2023/r2-AlanHuang-ChukunYang.sgf
+      - 5-2 2:W round:2 sgf:2023/2-AlanHuang-ChukunYang.sgf
       - 5-14 5:B+1.5 round:5 sgf:2023/5-AlanHuang-ChahineKoleejan.sgf
       - 6-12 6:B+R round:3 sgf:2023/3-PongsakarnSornarra-JanneKosso.sgf
       - 7-1 1:W+R round:4 sgf:2023/4-JonasWelticke-JeongseonKim.sgf
       - 7-2 2:W+R round:6 sgf:2023/6-JonasWelticke-ChukunYang.sgf
       - 7-9 7:B+R round:3 sgf:2023/3-JonasWelticke-ElianIoanGrigoriu.sgf
       - 7-25 7:B+R round:2 sgf:2023/2-JonasWelticke-DraganDubakovic.sgf
-      - 9-6 6:W+4.5 round:6 sgf:2023/r6-ElianIoanGrigoriu-PongsakarnSornarra.sgf
+      - 9-6 6:W+4.5 round:6 sgf:2023/6-ElianIoanGrigoriu-PongsakarnSornarra.sgf
       - 10-4 4:W+4.5 round:5 sgf:2023/5-YongwoonPark-YoshikiKurita.sgf
       - 10-6 10:B+R round:7 sgf:2023/7-YongwoonPark-PongsakarnSornarra.sgf
       - 10-26 10:B+R round:3 sgf:2023/3-YongwoonPark-SoerenOhlenbusch.sgf
@@ -41,7 +41,7 @@ stages:
       - 11-17 11:B+R round:7 sgf:2023/7-SchayanHamrah-AndreasGoetzfried.sgf
       - 12-18 12:B+3.5 round:2 sgf:2023/2-JanneKosso-GerardNederveen.sgf
       - 13-7 7:W+R round:7 sgf:2023/7-ManuelVelasco-JonasWelticke.sgf
-      - 15-8 8:W+R round:6 sgf:2023/r6-AmirFragman-JieHuiKwa.sgf
+      - 15-8 8:W+R round:6 sgf:2023/6-AmirFragman-JieHuiKwa.sgf
       - 17-29 17:B+R round:2 sgf:2023/2-AndreasGoetzfried-MirtaMedak.sgf
       - 18-23 18:B+10.5 round:4 sgf:2023/4-GerardNederveen-BendeBarcza.sgf
       - 21-9 9:W+15.5 round:2 sgf:2023/2-BenjaminBlanchard-ElianIoanGrigoriu.sgf
@@ -52,13 +52,13 @@ stages:
       - 24-21 21:W+R round:7 sgf:2023/7-KarlIrwin-BenjaminBlanchard.sgf
       - 25-41 25:B+8.5 round:3 sgf:2023/3-DraganDubakovic-RenateReisenegger.sgf
       - 28-21 21:W+R round:3 sgf:2023/3-JanFraczak-BenjaminBlanchard.sgf
-      - 29-12 12:W+0.5 round:1 sgf:2023/r1-MirtaMedak-JanneKosso.sgf
-      - 29-34 34:W+R round:4 sgf:2023/r4-MirtaMedak-BramVandenbon.sgf
+      - 29-12 12:W+0.5 round:1 sgf:2023/1-MirtaMedak-JanneKosso.sgf
+      - 29-34 34:W+R round:4 sgf:2023/4-MirtaMedak-BramVandenbon.sgf
       - 32-26 26:W+2.5 round:5 sgf:2023/5-ZhengboZhao-SoerenOhlenbusch.sgf
       - 34-21 21:W+29.5 round:1 sgf:2023/1-BramVandenbon-BenjaminBlanchard.sgf
       - 35-25 25:W+40.5 round:6 sgf:2023/6-SantiagoLaplagne-DraganDubakovic.sgf
       - 37-21 21:W+R round:6 sgf:2023/6-PetrCipra-BenjaminBlanchard.sgf
-      - 37-29 29:W+R round:7 sgf:2023/r7-PetrCipra-MirtaMedak.sgf
-      - 39-29 29:W+8.5 round:3 sgf:2023/r3-MarioMercadoSanchez-MirtaMedak.sgf
+      - 37-29 29:W+R round:7 sgf:2023/7-PetrCipra-MirtaMedak.sgf
+      - 39-29 29:W+8.5 round:3 sgf:2023/3-MarioMercadoSanchez-MirtaMedak.sgf
       - 40-1 1:W+R round:1 sgf:2023/1-SergeyDivissin-JeongseonKim.sgf
-      - 41-36 36:W+R round:6 sgf:2023/r6-RenateReisenegger-TimHunt.sgf
+      - 41-36 36:W+R round:6 sgf:2023/6-RenateReisenegger-TimHunt.sgf

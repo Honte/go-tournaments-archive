@@ -1,226 +1,421 @@
-(
-  ;BR[4d]CA[UTF-8]DT[2021-02-18]EV[Polish Go Championship 2020]FF[4]GM[1]GN[Round 1 - Board 3]KM[6.5]PB[Marcin Majka]PC[Warszawa / Poznań / Online]PW[Maksym Wałaszewski]RE[B+R]RU[japanese]SZ[19]WR[3d]
-  ;B[pd]
-  ;W[dp]
-  ;B[pq]
-  ;W[dd]
-  ;B[fq]
-  ;W[qo]
-  ;B[qp]
-  ;W[po]
-  ;B[np]
-  ;W[qk]
-  ;B[cq]
-  ;W[qc]
-  ;B[pc]
-  ;W[qd]
-  ;B[qe]
-  ;W[re]
-  ;B[rf]
-  ;W[qf]
-  ;B[pe]
-  ;W[rg]
-  ;B[rd]
-  ;W[sf]
-  ;B[rc]
-  ;W[dj]
-  ;B[fc]
-  ;W[fd]
-  ;B[gd]
-  ;W[fe]
-  ;B[cc]
-  ;W[cd]
-  ;B[dc]
-  ;W[gc]
-  ;B[ec]
-  ;W[hd]
-  ;B[pl]
-  ;W[ge]
-  ;B[ql]
-  ;W[no]
-  ;B[mo]
-  ;W[mn]
-  ;B[oo]
-  ;W[nn]
-  ;B[op]
-  ;W[on]
-  ;B[ln]
-  ;W[pk]
-  ;B[ol]
-  ;W[lm]
-  ;B[lo]
-  ;W[ml]
-  ;B[ok]
-  ;W[rn]
-  ;B[oj]
-  ;W[pi]
-  ;B[pj]
-  ;W[qj]
-  ;B[qi]
-  ;W[ri]
-  ;B[qh]
-  ;W[ph]
-  ;B[rl]
-  ;W[ni]
-  ;B[mk]
-  ;W[lk]
-  ;B[mj]
-  ;W[lh]
-  ;B[ki]
-  ;W[lj]
-  ;B[mi]
-  ;W[li]
-  ;B[oi]
-  ;W[oh]
-  ;B[nh]
-  ;W[ng]
-  ;B[mh]
-  ;W[mg]
-  ;B[rj]
-  ;W[rh]
-  ;B[rk]
-  ;W[gp]
-  ;B[fp]
-  ;W[fo]
-  ;B[go]
-  ;W[gq]
-  ;B[gr]
-  ;W[hr]
-  ;B[er]
-  ;W[gs]
-  ;B[fr]
-  ;W[ip]
-  ;B[ho]
-  ;W[io]
-  ;B[fn]
-  ;W[lq]
-  ;B[eo]
-  ;W[mp]
-  ;B[cl]
-  ;W[nb]
-  ;B[nc]
-  ;W[mc]
-  ;B[nd]
-  ;W[lb]
-  ;B[ob]
-  ;W[bc]
-  ;B[bb]
-  ;W[bd]
-  ;B[ab]
-  ;W[ck]
-  ;B[dl]
-  ;W[fk]
-  ;B[lg]
-  ;W[lf]
-  ;B[kg]
-  ;W[kf]
-  ;B[mf]
-  ;W[pg]
-  ;B[jf]
-  ;W[je]
-  ;B[kl]
-  ;W[km]
-  ;B[il]
-  ;W[ij]
-  ;B[gk]
-  ;W[gj]
-  ;B[fj]
-  ;W[hk]
-  ;B[ek]
-  ;W[gl]
-  ;B[ej]
-  ;W[bl]
-  ;B[bm]
-  ;W[bj]
-  ;B[eh]
-  ;W[bn]
-  ;B[am]
-  ;W[di]
-  ;B[gh]
-  ;W[cm]
-  ;B[cn]
-  ;W[dm]
-  ;B[em]
-  ;W[dn]
-  ;B[do]
-  ;W[co]
-  ;B[en]
-  ;W[cn]
-  ;B[cp]
-  ;W[an]
-  ;B[jg]
-  ;W[hh]
-  ;B[ie]
-  ;W[jd]
-  ;B[le]
-  ;W[ke]
-  ;B[id]
-  ;W[ic]
-  ;B[hg]
-  ;W[gg]
-  ;B[jj]
-  ;W[ji]
-  ;B[hi]
-  ;W[ih]
-  ;B[ii]
-  ;W[jk]
-  ;B[jh]
-  ;W[kj]
-  ;B[ik]
-  ;W[ji]
-  ;B[jc]
-  ;W[kd]
-  ;B[jj]
-  ;W[qb]
-  ;B[rb]
-  ;W[ji]
-  ;B[ib]
-  ;W[hc]
-  ;B[jj]
-  ;W[fb]
-  ;B[eb]
-  ;W[ji]
-  ;B[nf]
-  ;W[og]
-  ;B[jj]
-  ;W[rp]
-  ;B[rq]
-  ;W[rr]
-  ;B[sp]
-  ;W[so]
-  ;B[ro]
-  ;W[ji]
-  ;B[sn]
-  ;W[gi]
-  ;B[ig]
-  ;W[fh]
-  ;B[hh]
-  ;W[fi]
-  ;B[fg]
-  ;W[ei]
-  ;B[jj]
-  ;W[nk]
-  ;B[nj]
-  ;W[ji]
-  ;B[kb]
-  ;W[kc]
-  ;B[jj]
-  ;W[gf]
-  ;B[jb]
-  ;W[ld]
-  ;B[md]
-  ;W[me]
-  ;B[ne]
-  ;W[ka]
-  ;B[ma]
-  ;W[hb]
-  ;B[le]
-  ;W[dq]
-  ;B[lc]
-  ;W[cr]
-  ;B[br]
-  ;W[dr]
-  ;B[bs]
-  ;W[bp]
-  ;B[bq]
-)
+(;FF[4]
+CA[UTF-8]
+GM[1]
+DT[2021-02-18]
+PC[OGS: https://online-go.com/game/31235062]
+GN[LMP2020 - Round 1 - Board 2]
+PB[Higaki]
+PW[Moggetyrael]
+BR[3d]
+WR[4d]
+TM[14400]OT[3x3600 byo-yomi]
+RE[B+R]
+SZ[19]
+KM[6.5]
+RU[Japanese]
+;B[pd]
+(;W[dp]
+(;B[pq]
+C[Cezary: czemu oni maja setup 4h + godzina byo :D ?
+]
+(;W[dd]
+(;B[fq]
+C[silk: Ta gra jest na żywo, i transmitują tutaj :)
+]
+(;W[qo]
+(;B[qp]
+(;W[po]
+(;B[np]
+(;W[qk]
+(;B[cq]
+(;W[qc]
+C[LMP2020: Hejo :)
+]
+(;B[pc]
+(;W[qd]
+(;B[qe]
+(;W[re]
+(;B[rf]
+(;W[qf]
+(;B[pe]
+(;W[rg]
+C[LMP2020: https://mp.go.art.pl/2020/pl
+]
+(;B[rd]
+(;W[sf]
+C[LMP2020: zapraszamy :)
+]
+(;B[rc]
+(;W[dj]
+(;B[fc]
+(;W[fd]
+C[Cezary: bylbym zadowolony na tym etapie  na miejscu higakiego brzmi jak latwa gra
+Cezary: ofkors jeszcze wielka wojna przed nami
+]
+(;B[gd]
+(;W[fe]
+C[Cezary: ale bym zmuszal bialego zeby zrobil pierwszy krok
+]
+(;B[cc]
+(;W[cd]
+(;B[dc]
+(;W[gc]
+(;B[ec]
+(;W[hd]
+(;B[pl]
+(;W[ge]
+(;B[ql]
+C[Radziol: łamacz piekny
+ortren: No Higaki strong
+Radziol: teraz moge powiedziec ze gra brzmi latwo
+Radziol: dla czarnego
+Radziol: choc wcale nie prosto
+]
+(;W[no]
+(;B[mo]
+(;W[mn]
+(;B[oo]
+(;W[nn]
+(;B[op]
+C[LMP2020: https://www.twitch.tv/lukan95 - komentuje Lukáš Podpěra
+]
+(;W[on]
+(;B[ln]
+(;W[pk]
+(;B[ol]
+(;W[lm]
+(;B[lo]
+(;W[ml]
+(;B[ok]
+C[marmez: laguje ta transmisja okropnie
+marmez: w sensie komentarz Lukasa
+LMP2020: masz słaby internet Marmezie? :P
+tibboh: ja mam dobry i też mi laguje
+]
+(;W[rn]
+C[LMP2020: hmm to może u transmitera ciężko idzie ? :)
+Radziol: no raczej
+]
+(;B[oj]
+C[LMP2020: b: 1h 11min, w: 58min
+]
+(;W[pi]
+(;B[pj]
+(;W[qj]
+(;B[qi]
+(;W[ri]
+(;B[qh]
+(;W[ph]
+(;B[rl]
+(;W[ni]
+C[Mrrr: ladnie
+silent: Oho, Maks poczuł żądzę krwii
+Mrrr: czarny sie skusil na zejscie na druga linie i bedzie bity
+Mrrr: albo przynajmniej zaczepiany do bojki
+Radziol: ladna odpowiedz
+Mrrr: nie rozumiem tylko, po co czarnemu byla ta druga linia
+Dariatka: MAKSIU, MAKSIU!!!  Do boju! :D
+Mrrr: chyba z rozpedu zagral
+Radziol: prawdpodobnie nie wzial poduwage n11
+Radziol: o11
+Mrrr: jesli nie wzial pod uwage i nagle mu sie objawilo, to w czasie gry bol tym wiekszy zobaczyc nagle taki ruch
+Radziol: ale nic straconego dla czarnego
+Radziol: no tak, shit happens, trzeba grać dalej :)
+Radziol: o jaka ładna cenzura
+Mrrr: :)
+]
+(;B[mk]
+C[silent: O.o U mnie normalnie widać
+]
+(;W[lk]
+C[silent: Pewno jakieś ustawienia preferencji ogs
+Cezary: mozna sobie wylaczyc ale pewnie standardowo jest wlaczona
+Mrrr: tak, mozna wylaczyc blokowanie wulgaryzmow. Wspaniala opcja ;)
+]
+(;B[mj]
+C[Mrrr: czy to juz pora zabezpieczyc trzy kamienie?
+silent: Chyba nie musi, to tylko 3 kamienie
+Mrrr: ja bym wkrotce to zrobil, choc jeszcze nie teraz
+Mrrr: moze L11 
+]
+(;W[lh]
+(;B[ki]
+C[Sadiker: jabym wolal L11 jako bialy
+]
+(;W[lj]
+C[Sadiker: ale ja sie sie znam i slaby jestem
+Mrrr: tez mysle, ze l11 dawalo lepsze opcje, ale ruch czarnego je przywrocil
+Mrrr: wiec jest ok :)
+]
+(;B[mi]
+(;W[li]
+C[Mrrr: tak to jest git
+Sadiker: no L11 teraz dziwnie wyglada
+]
+(;B[oi]
+(;W[oh]
+(;B[nh]
+(;W[ng]
+(;B[mh]
+(;W[mg]
+(;B[rj]
+(;W[rh]
+(;B[rk]
+C[san-chan-kun: c4?
+Mrrr: c4 wyglada idealnie w tej sytuacji
+Mrrr: myslalem, ze bialy musi dograc na bandzie, ale nawet to nie jest konieczne
+Mrrr: taka piekna sciana w centrum, pewnie zanim zagra c4 musi sie na nia napatrzec :)
+]
+(;W[gp]
+C[LMP2020: ;0pudło g4 
+LMP2020: 0;
+LMP2020: ;)
+]
+(;B[fp]
+(;W[fo]
+(;B[go]
+(;W[gq]
+(;B[gr]
+(;W[hr]
+(;B[er]
+C[silent: g4 wygląda trochę jak overplay, tylko się daje porozcinać
+LMP2020: będzie krwawo :D
+]
+(;W[gs]
+(;B[fr]
+(;W[ip]
+(;B[ho]
+C[Mrrr: tak to jest jak sie czlowiek zagapi w sciane...
+]
+(;W[io]
+C[LMP2020: Maksiu szykuje cięcie N4 ;p 
+Mrrr: na takie okruchy sie rzuca?
+san-chan-kun: ale.. ale.. czemu
+Mrrr: dobre pytanie
+]
+(;B[fn]
+C[Mrrr: bylo pieknie, ale to se nevrati
+Mrrr: czy jak to rzec :)
+]
+(;W[lq]
+(;B[eo]
+(;W[mp]
+C[LMP2020: Ha ! Przejrzałam plan Maksia xD
+silent: Pewnie położył wcześnie okruszka po biszkopcie żeby pokazać gdzie zagra
+]
+(;B[cl]
+C[Mrrr: ja bym kosumi 
+Mrrr: E9
+]
+(;W[nb]
+(;B[nc]
+(;W[mc]
+C[Sadiker: kiepsko nam idzie zgadywanie ruchow białego
+]
+(;B[nd]
+(;W[lb]
+(;B[ob]
+(;W[bc]
+(;B[bb]
+(;W[bd]
+(;B[ab]
+C[LMP2020: B: 45min W: 28min
+]
+(;W[ck]
+(;B[dl]
+(;W[fk]
+(;B[lg]
+(;W[lf]
+(;B[kg]
+(;W[kf]
+(;B[mf]
+(;W[pg]
+C[Mrrr: biały ciągle prowadzi i to znacznie
+Mrrr: jesi nie da się wciągnąć w jakąś niepotrzebną bójkę, to powinno być ok
+Mrrr: potencjał na bójkę jest na dole
+Dariatka: LMP 2020! Szkoda, że nie ma tradycyjnego transmotowania gier! :( Ah co to za wspomnienia :D
+Sadiker: moze jakies g9 albo okolicce
+LMP2020: Daria :D
+silent: Przynajmniej nie będzie błędów w transmisji!
+Dariatka: hshhahahha :D 
+Sadiker: za moich czasow nie bylo transmisji bo internetu nie bylo
+LMP2020: transmisje są fajne :D
+Mrrr: ciekawe co tam czarny gotuje
+Dariatka: Jeżeli tylko raz bedziesz transmiterem to juz zostajesz na całe zycie :P 
+Mrrr: widzi na pewno, ze musi ostro przyprawic
+Mrrr: brzmi jak opis  jakiejs choroby... ;)
+Dariatka: kurde blaszka, to jakos nieciekawie wyglada dla białego
+Mrrr: nieciekawie?
+Mrrr: wyglada super
+Mrrr: czarny musi ugotowac jakas mocna rzecz, a nie ma z czego
+Dariatka: aaa, faktycznie, bo myslałam, ze biały ginie
+]
+(;B[jf]
+(;W[je]
+(;B[kl]
+C[Dariatka: a czarny nie moze zagrac r13
+Mrrr: jakby chcial, to nawet moze ;)
+silent: Jak chce sięzabićto tak ;p
+Dariatka: ogolnie "go" to niezła choroba, co? :P
+Mrrr: L7 teraz
+Dariatka: Mrrr no prawie :P
+Mrrr: go to szkodliwy nalog
+Dariatka: ale nie wyobrazam sobie zycia bez tych paskudnych i okropnych, ślicznie błyszcących kamieni  xD
+Sadiker: z ołowiem w środku
+Mrrr: dariatka, tak wlasnie  cierpia nalogowcy
+Sadiker: przynajmniej ingi podobno mialy w środku ołów
+Mrrr: ale jest pare osob, ktore oferowaly pomoc uzaleznionym
+Mrrr: http://akademia.go.art.pl/index.php?name=Forums&file=viewtopic&p=8221
+Dariatka: no to śmierc na planszy nabiera innego znaczenia ^^
+Dariatka: ale zreszta ile tam tego ołowiu xD 
+]
+(;W[km]
+(;B[il]
+C[Dariatka: pewnie w 1 rybie jest go wiecej niz w 160 kamneiach 
+]
+(;W[ij]
+(;B[gk]
+C[Sadiker: a nie wiem, ale jak sie te starsze potrzasało to coś w środku można było wyczuc
+Dariatka: :O
+Sadiker: przewidziałem g9 :)
+]
+(;W[gj]
+(;B[fj]
+(;W[hk]
+(;B[ek]
+(;W[gl]
+(;B[ej]
+C[Sadiker: w sumie redukcja zakonczona sukcesem
+]
+(;W[bl]
+(;B[bm]
+(;W[bj]
+C[LMP2020: B:28 min W:10 min
+]
+(;B[eh]
+(;W[bn]
+(;B[am]
+(;W[di]
+(;B[gh]
+(;W[cm]
+(;B[cn]
+(;W[dm]
+C[tasuki: jak sobie poradzi mistrz drabinki??
+Sadiker: albo tu jakies tesuji jest albo cz ma ciezko
+Parzivalll: kto jest mistrzem drabinki?
+]
+(;B[em]
+C[tasuki: higaki
+]
+(;W[dn]
+(;B[do]
+(;W[co]
+(;B[en]
+C[Sadiker: czy kreje sie za tym jakas historia?
+]
+(;W[cn]
+(;B[cp]
+(;W[an]
+C[Sadiker: kryje
+tasuki: za tym się kryje wiele historii
+tasuki: ostatnio chyba dja w iglo złapał w drabinkę w kluczowym momencie?
+Parzivalll: na ostatnim lsg w grze z toba na torusie przegral bo zle obliczyl drabinke
+]
+(;B[jg]
+C[tasuki: a faktycznie, całkiem zapomniałem... trzeba mu to przypomnieć!
+LMP2020: W in bio
+]
+(;W[hh]
+C[Mrrr: dziwnie bialy gral, tak jakby nie chcial tego wielkiego terenu w centrum i podsuwal czarnemu okazje do redukcji
+]
+(;B[ie]
+(;W[jd]
+(;B[le]
+(;W[ke]
+C[san-chan-kun: Ile czasu B ma?
+LMP2020: B: 5 min
+Parzivalll: a czemu tutaj te ustawienia takie są?
+silent: To je transmisja o ile dobrze zrozumiałem
+Sadiker: cz mysli czy przestali zapisywac?
+LMP2020: przestali (zgodnie z regulaminem do bio muszą transmitować przez neta - obecnie grają ko w środkowej części planszy
+LMP2020: uzupełnią zapis po grze
+LMP2020: czasy sobie śmieszki for fun ustawili ;) 
+Dariatka: hahhaha, a to Ci smieszki
+LMP2020: Idę oglądać na żywo :D
+Cezary: bez sensu to granie na gobanie bez transmisji :)
+LMP2020: Maks poddał
+]
+(;B[id]
+(;W[ic]
+C[Dariatka: :(
+]
+(;B[hg]
+(;W[gg]
+(;B[jj]
+(;W[ji]
+(;B[hi]
+(;W[ih]
+(;B[ii]
+(;W[jk]
+(;B[jh]
+(;W[kj]
+(;B[ik]
+(;W[ji]
+(;B[jc]
+(;W[kd]
+(;B[jj]
+(;W[qb]
+(;B[rb]
+(;W[ji]
+(;B[ib]
+(;W[hc]
+(;B[jj]
+(;W[fb]
+(;B[eb]
+(;W[ji]
+(;B[nf]
+(;W[og]
+(;B[jj]
+(;W[rp]
+(;B[rq]
+(;W[rr]
+(;B[sp]
+(;W[so]
+(;B[ro]
+(;W[ji]
+(;B[sn]
+(;W[gi]
+(;B[ig]
+(;W[fh]
+(;B[hh]
+(;W[fi]
+(;B[fg]
+(;W[ei]
+(;B[jj]
+(;W[nk]
+(;B[nj]
+(;W[ji]
+(;B[kb]
+(;W[kc]
+(;B[jj]
+(;W[gf]
+(;B[jb]
+(;W[ld]
+(;B[md]
+(;W[me]
+(;B[ne]
+(;W[ka]
+(;B[ma]
+(;W[hb]
+(;B[le]
+(;W[dq]
+(;B[lc]
+(;W[cr]
+(;B[br]
+(;W[dr]
+(;B[bs]
+(;W[bp]
+(;B[bq]
+C[Moggetyrael: TO dobre historie
+]
+)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))

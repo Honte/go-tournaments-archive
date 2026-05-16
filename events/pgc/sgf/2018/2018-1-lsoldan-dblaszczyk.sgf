@@ -1,224 +1,395 @@
-(
-  ;BR[4d]CA[UTF-8]DT[2018-11-08]EV[Polish Go Championship 2018]FF[4]GM[1]GN[Round 1 - Board 1]KM[6.5]PB[Leszek Sołdan]PC[Poznań]PW[Diana Błaszczyk]RE[B+R]RU[japanese]SZ[19]WR[1k]
-  ;B[pd]
-  ;W[dp]
-  ;B[pq]
-  ;W[dd]
-  ;B[fq]
-  ;W[cn]
-  ;B[pn]
-  ;W[kq]
-  ;B[dq]
-  ;W[cq]
-  ;B[cr]
-  ;W[bq]
-  ;B[ep]
-  ;W[do]
-  ;B[er]
-  ;W[qn]
-  ;B[qo]
-  ;W[ro]
-  ;B[qp]
-  ;W[qm]
-  ;B[pm]
-  ;W[ql]
-  ;B[mq]
-  ;W[ko]
-  ;B[jp]
-  ;W[kp]
-  ;B[km]
-  ;W[jo]
-  ;B[in]
-  ;W[hp]
-  ;B[hr]
-  ;W[lm]
-  ;B[ll]
-  ;W[ln]
-  ;B[ml]
-  ;W[kl]
-  ;B[kk]
-  ;W[jl]
-  ;B[jm]
-  ;W[il]
-  ;B[gn]
-  ;W[go]
-  ;B[ho]
-  ;W[io]
-  ;B[hn]
-  ;W[fo]
-  ;B[gl]
-  ;W[eo]
-  ;B[gj]
-  ;W[ij]
-  ;B[gh]
-  ;W[nm]
-  ;B[ji]
-  ;W[nq]
-  ;B[np]
-  ;W[oq]
-  ;B[op]
-  ;W[ok]
-  ;B[jj]
-  ;W[mr]
-  ;B[qg]
-  ;W[qc]
-  ;B[pc]
-  ;W[qd]
-  ;B[qe]
-  ;W[re]
-  ;B[rf]
-  ;W[pe]
-  ;B[qf]
-  ;W[pb]
-  ;B[ob]
-  ;W[qb]
-  ;B[nc]
-  ;W[rd]
-  ;B[qj]
-  ;W[rp]
-  ;B[rq]
-  ;W[pr]
-  ;B[qr]
-  ;W[or]
-  ;B[pl]
-  ;W[qk]
-  ;B[pk]
-  ;W[rj]
-  ;B[pj]
-  ;W[jc]
-  ;B[ri]
-  ;W[sk]
-  ;B[fc]
-  ;W[od]
-  ;B[oc]
-  ;W[fe]
-  ;B[id]
-  ;W[jd]
-  ;B[ie]
-  ;W[hb]
-  ;B[hc]
-  ;W[gb]
-  ;B[fd]
-  ;W[kf]
-  ;B[me]
-  ;W[mf]
-  ;B[ne]
-  ;W[hf]
-  ;B[ig]
-  ;W[if]
-  ;B[je]
-  ;W[ke]
-  ;B[jf]
-  ;W[jg]
-  ;B[kg]
-  ;W[jh]
-  ;B[ih]
-  ;W[kh]
-  ;B[ib]
-  ;W[he]
-  ;B[hd]
-  ;W[lg]
-  ;B[li]
-  ;W[ed]
-  ;B[jb]
-  ;W[ic]
-  ;B[kd]
-  ;W[kc]
-  ;B[kb]
-  ;W[lc]
-  ;B[fb]
-  ;W[lb]
-  ;B[gc]
-  ;W[md]
-  ;B[ge]
-  ;W[gf]
-  ;B[ff]
-  ;W[og]
-  ;B[pf]
-  ;W[oe]
-  ;B[ee]
-  ;W[de]
-  ;B[cc]
-  ;W[ef]
-  ;B[fe]
-  ;W[ch]
-  ;B[cj]
-  ;W[fk]
-  ;B[gk]
-  ;W[ei]
-  ;B[cf]
-  ;W[df]
-  ;B[be]
-  ;W[bd]
-  ;B[cd]
-  ;W[ce]
-  ;B[bf]
-  ;W[db]
-  ;B[bh]
-  ;W[ci]
-  ;B[bi]
-  ;W[bk]
-  ;B[dc]
-  ;W[ec]
-  ;B[eb]
-  ;W[bc]
-  ;B[cb]
-  ;W[bb]
-  ;B[da]
-  ;W[cg]
-  ;B[bg]
-  ;W[dj]
-  ;B[bj]
-  ;W[ck]
-  ;B[eg]
-  ;W[dg]
-  ;B[di]
-  ;W[dh]
-  ;B[eh]
-  ;W[di]
-  ;B[fi]
-  ;W[dk]
-  ;B[aj]
-  ;W[ph]
-  ;B[qh]
-  ;W[pi]
-  ;B[qi]
-  ;W[ii]
-  ;B[hi]
-  ;W[mj]
-  ;B[ik]
-  ;W[jk]
-  ;B[hl]
-  ;W[hk]
-  ;B[kj]
-  ;W[mi]
-  ;B[of]
-  ;W[nd]
-  ;B[nf]
-  ;W[lk]
-  ;B[im]
-  ;W[lj]
-  ;B[ik]
-  ;W[ir]
-  ;B[gr]
-  ;W[br]
-  ;B[bs]
-  ;W[ba]
-  ;B[ae]
-  ;W[iq]
-  ;B[mp]
-  ;W[oj]
-  ;B[lh]
-  ;W[mh]
-  ;B[ki]
-  ;W[kg]
-  ;B[le]
-  ;W[ld]
-  ;B[ng]
-  ;W[mg]
-  ;B[nh]
-  ;W[oh]
-  ;B[ni]
-  ;W[oi]
-  ;B[nj]
-)
+(;FF[4]
+GM[1]
+DT[2018-11-08]
+PC[OGS: http://online-go.com/game/review/352540]
+PB[Leszek Sołdan]
+PW[Diana Błaszczyk]
+BR[4d]
+WR[1k]
+CP[online-go.com]
+TM[0]OT[0 none]
+RE[?]
+SZ[19]
+KM[6.5]
+RU[japanese]
+
+;B[pd]
+;W[dp]
+;B[pq]
+;W[dd]
+;B[fq]
+;W[cn]
+;B[pn]
+;W[kq]
+;B[dq]
+;W[cq]
+;B[cr]
+(;W[bq]C[
+
+-- chat --
+metaphysician splurgist :): i think bad. From move 0: Q16 D4 Q3 D16 F3 C6 Q6 L3 D3 C3 C2 B3 
+
+]
+
+;B[ep]
+;W[do]
+;B[er]
+;W[qn]C[
+
+-- chat --
+metaphysician splurgist :): questionnable... From move 0: Q16 D4 Q3 D16 F3 C6 Q6 L3 D3 C3 C2 B3 E4 D5 E2 R6 
+
+]
+
+;B[qo]
+;W[ro]
+;B[qp]
+;W[qm]
+;B[pm]
+;W[ql]
+;B[mq]
+;W[ko]
+;B[jp]
+;W[kp]
+;B[km]C[
+
+-- chat --
+metaphysician splurgist :): you can see that black is much stronger here. From move 0: Q16 D4 Q3 D16 F3 C6 Q6 L3 D3 C3 C2 B3 E4 D5 E2 R6 R5 S5 R4 R7 Q7 R8 N3 L5 K4 L4 L7 
+
+]
+
+(;W[jo]
+;B[in]
+;W[hp]
+;B[hr]
+(;W[lm]
+;B[ll]
+;W[ln]
+;B[ml]
+;W[kl]
+;B[kk]
+;W[jl]
+;B[jm]
+;W[il]
+;B[gn]
+;W[go]
+;B[ho]
+;W[io]
+;B[hn]
+;W[fo]
+;B[gl]
+;W[eo]
+;B[gj]
+;W[ij]
+;B[gh]
+;W[nm]
+;B[ji]C[
+
+-- chat --
+dead_robot: zaszlachtować czarnego!
+
+]
+
+;W[nq]
+;B[np]
+;W[oq]C[
+
+-- chat --
+dead_robot: chociaż w sumie to on gra tak, jakby chciał Dianę zaszlachtować
+S_Alexander: If only I could understand what's going on.
+
+]
+
+;B[op]C[
+
+-- chat --
+💖 KoBa 💖: what time settings they use?
+dead_robot: 90 minutes basic time
+dead_robot: 1 minute byo
+dead_robot: no idea how much they have left though
+
+]
+
+;W[ok]C[
+
+-- chat --
+dead_robot: mp.go.art.pl - all info you can find on that website (also in English)
+
+]
+
+;B[jj]C[
+
+-- chat --
+LMP2018-1: In this game, Leszek has 1h15 remaining, Diana 0h52.
+
+]
+
+;W[mr]
+;B[qg]C[
+
+-- chat --
+dead_robot: i can`t see the way white could kill the corner :/
+
+]
+
+;W[qc]
+;B[pc]
+;W[qd]
+;B[qe]
+;W[re]
+;B[rf]
+;W[pe]
+;B[qf]
+;W[pb]
+;B[ob]
+;W[qb]
+;B[nc]
+;W[rd]
+;B[qj]C[
+
+-- chat --
+metaphysician splurgist :): white needs handi
+metaphysician splurgist :): this is not a game, but a slaughter
+
+]
+
+;W[rp]
+;B[rq]
+;W[pr]
+;B[qr]
+;W[or]
+;B[pl]
+;W[qk]
+;B[pk]
+;W[rj]
+;B[pj]C[
+
+-- chat --
+marmez: Dalej! Dalej! Dawaj!
+
+]
+
+;W[jc]
+;B[ri]C[
+
+-- chat --
+💖 KoBa 💖: 4d vs 1k?
+
+]
+
+;W[sk]C[
+
+-- chat --
+metaphysician splurgist :): no need to look at their ranks :)
+metaphysician splurgist :): you can tell just from the first moves
+
+]
+
+;B[fc]
+;W[od]
+;B[oc]
+;W[fe]C[
+
+-- chat --
+AdJar001: Dobry wieczur, panie i panowie.. From move 0: Q16 D4 Q3 D16 F3 C6 Q6 L3 D3 C3 C2 B3 E4 D5 E2 R6 R5 S5 R4 R7 Q7 R8 N3 L5 K4 L4 L7 K5 J6 H4 H2 M7 M8 M6 N8 L8 L9 K8 K7 J8 G6 G5 H5 J5 H6 F5 G8 E5 G10 J10 G12 O7 K11 O3 O4 P3 P4 P9 K10 N2 R13 R17 Q17 R16 R15 S15 S14 Q15 R14 Q18 P18 R18 O17 S16 R10 S4 S3 Q2 R2 P2 Q8 R9 Q9 S10 Q10 K17 S11 T9 F17 P16 P17 F15 
+
+]
+
+;B[id]C[
+
+-- chat --
+AdJar001: Dobry wieczur, panie i panowie.
+
+]
+
+;W[jd]
+;B[ie]
+;W[hb]
+;B[hc]
+;W[gb]
+;B[fd]
+;W[kf]C[
+
+-- chat --
+LMP2018-1: Move 100, Black has 1h09m remaining, White 0h35m.
+
+]
+
+;B[me]
+;W[mf]
+;B[ne]
+;W[hf]
+;B[ig]
+;W[if]
+;B[je]
+;W[ke]
+;B[jf]
+;W[jg]
+;B[kg]
+;W[jh]
+;B[ih]
+;W[kh]
+;B[ib]
+;W[he]
+;B[hd]
+;W[lg]
+;B[li]
+;W[ed]
+;B[jb]
+;W[ic]
+;B[kd]
+;W[kc]
+;B[kb]
+;W[lc]
+;B[fb]
+;W[lb]
+;B[gc]
+;W[md]
+;B[ge]
+;W[gf]
+;B[ff]
+;W[og]
+;B[pf]
+;W[oe]
+;B[ee]
+;W[de]
+;B[cc]
+;W[ef]
+;B[fe]
+;W[ch]
+;B[cj]
+;W[fk]
+;B[gk]
+;W[ei]
+;B[cf]
+;W[df]
+;B[be]
+;W[bd]
+;B[cd]
+;W[ce]
+;B[bf]
+;W[db]
+;B[bh]
+;W[ci]
+;B[bi]
+;W[bk]
+;B[dc]
+;W[ec]
+;B[eb]
+;W[bc]
+;B[cb]
+;W[bb]
+;B[da]
+;W[cg]
+;B[bg]C[
+
+-- chat --
+LMP2018-1: Move 167, Black has 0h48m remaining, White 9m20s.
+
+]
+
+;W[dj]
+;B[bj]
+;W[ck]
+;B[eg]
+;W[dg]
+;B[di]
+;W[dh]
+;B[eh]
+;W[di]
+;B[fi]
+;W[dk]
+;B[aj]
+;W[ph]
+;B[qh]
+;W[pi]
+;B[qi]
+;W[ii]
+;B[hi]
+;W[mj]
+;B[ik]
+;W[jk]
+;B[hl]
+;W[hk]
+;B[kj]
+;W[mi]
+;B[of]
+;W[nd]
+;B[nf]
+;W[lk]
+;B[im]
+;W[lj]
+;B[ik]
+;W[ir]
+;B[gr]
+;W[br]
+;B[bs]
+;W[ba]
+;B[ae]
+;W[iq]
+;B[mp]
+;W[oj]
+;B[lh]
+;W[mh]
+;B[ki]
+;W[kg]
+;B[le]
+;W[ld]
+;B[ng]
+;W[mg]
+;B[nh]
+;W[oh]
+;B[ni]
+;W[oi]
+;B[nj]C[
+
+-- chat --
+LMP2018-1: B+R
+
+]
+
+)(;W[hn]C[
+
+-- chat --
+metaphysician splurgist :): maybe this. From move 0: Q16 D4 Q3 D16 F3 C6 Q6 L3 D3 C3 C2 B3 E4 D5 E2 R6 R5 S5 R4 R7 Q7 R8 N3 L5 K4 L4 L7 K5 J6 H4 H2 H6 
+
+]
+
+)(;W[go]C[
+
+-- chat --
+metaphysician splurgist :): maybe this v2. From move 0: Q16 D4 Q3 D16 F3 C6 Q6 L3 D3 C3 C2 B3 E4 D5 E2 R6 R5 S5 R4 R7 Q7 R8 N3 L5 K4 L4 L7 K5 J6 H4 H2 G5 
+metaphysician splurgist :): anways ^^
+
+]
+
+))(;W[in]C[
+
+-- chat --
+metaphysician splurgist :): better i think. From move 0: Q16 D4 Q3 D16 F3 C6 Q6 L3 D3 C3 C2 B3 E4 D5 E2 R6 R5 S5 R4 R7 Q7 R8 N3 L5 K4 L4 L7 J6 
+
+]
+
+))(;W[bp]
+;B[er]
+;W[nc]C[
+
+-- chat --
+metaphysician splurgist :): better. From move 0: Q16 D4 Q3 D16 F3 C6 Q6 L3 D3 C3 C2 B4 E2 O17 
+
+]
+
+)(;W[eq]
+;B[dr]
+;W[ep]
+;B[er]
+;W[fp]
+;B[gq]
+;W[nc]C[
+
+-- chat --
+metaphysician splurgist :): better v2. From move 0: Q16 D4 Q3 D16 F3 C6 Q6 L3 D3 C3 C2 E3 D2 E4 E2 F4 G3 O17 
+
+]
+
+))

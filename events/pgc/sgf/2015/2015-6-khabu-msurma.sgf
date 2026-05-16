@@ -1,137 +1,360 @@
-(
-  ;BR[5d]CA[UTF-8]DT[2016-01-10]EV[Polish Go Championship 2015]FF[4]GM[1]GN[Round 6 - Board 1]KM[6.50]PB[Koichiro Habu]PC[Warszawa]PW[Mateusz Surma]RE[W+R]RU[japanese]ST[2]SZ[19]WR[1p]
-  ;B[pq]
-  ;W[qd]
-  ;B[cd]
-  ;W[dp]
-  ;B[oc]
-  ;W[pe]
-  ;B[qn]
-  ;W[ec]
-  ;B[ic]
-  ;W[de]
-  ;B[ce]
-  ;W[df]
-  ;B[cf]
-  ;W[dg]
-  ;B[ch]
-  ;W[kc]
-  ;B[mc]
-  ;W[dh]
-  ;B[ci]
-  ;W[cg]
-  ;B[bg]
-  ;W[bf]
-  ;B[bh]
-  ;W[cc]
-  ;B[jd]
-  ;W[bd]
-  ;B[be]
-  ;W[dd]
-  ;B[af]
-  ;W[ld]
-  ;B[oe]
-  ;W[of]
-  ;B[ne]
-  ;W[lf]
-  ;B[jf]
-  ;W[lh]
-  ;B[fb]
-  ;W[pc]
-  ;B[mg]
-  ;W[lg]
-  ;B[og]
-  ;W[ob]
-  ;B[nb]
-  ;W[od]
-  ;B[nd]
-  ;W[nc]
-  ;B[pf]
-  ;W[qf]
-  ;B[nf]
-  ;W[oc]
-  ;B[md]
-  ;W[ke]
-  ;B[qg]
-  ;W[rf]
-  ;B[ih]
-  ;W[lj]
-  ;B[fq]
-  ;W[hq]
-  ;B[fo]
-  ;W[dr]
-  ;B[jq]
-  ;W[ho]
-  ;B[dn]
-  ;W[cn]
-  ;B[cm]
-  ;W[co]
-  ;B[bm]
-  ;W[fr]
-  ;B[mq]
-  ;W[dm]
-  ;B[do]
-  ;W[cp]
-  ;B[fm]
-  ;W[dl]
-  ;B[ek]
-  ;W[dj]
-  ;B[dk]
-  ;W[cl]
-  ;B[bl]
-  ;W[ck]
-  ;B[bj]
-  ;W[cj]
-  ;B[di]
-  ;W[ej]
-  ;B[ei]
-  ;W[fj]
-  ;B[hn]
-  ;W[ij]
-  ;B[gj]
-  ;W[fi]
-  ;B[gk]
-  ;W[bk]
-  ;B[ak]
-  ;W[bn]
-  ;B[al]
-  ;W[fh]
-  ;B[bc]
-  ;W[bb]
-  ;B[ad]
-  ;W[hi]
-  ;B[gi]
-  ;W[hh]
-  ;B[gh]
-  ;W[hg]
-  ;B[gg]
-  ;W[gf]
-  ;B[fg]
-  ;W[eh]
-  ;B[fc]
-  ;W[ff]
-  ;B[hf]
-  ;W[he]
-  ;B[if]
-  ;W[ge]
-  ;B[kb]
-  ;W[jb]
-  ;B[jc]
-  ;W[lb]
-  ;B[ki]
-  ;W[kj]
-  ;B[ii]
-  ;W[hj]
-  ;B[jj]
-  ;W[jk]
-  ;B[ji]
-  ;W[il]
-  ;B[li]
-  ;W[in]
-  ;B[io]
-  ;W[ip]
-  ;B[im]
-  ;W[jo]
-  ;B[jn]
-  ;W[hm]
-)
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[5400]OT[5x60 byo-yomi]
+GN[Mateusz Surma 1p (White) vs Koichiro Habu 5d (Black)]PW[Mateusz Surma]PB[Koichiro Habu]WR[1p]BR[5d]DT[2016-01-10]PC[Narnia]C[LMP1 [-\]: Live stream: https://www.youtube.com/watch?v=g7jJlYnwur0
+]RE[W+Resign]
+;B[pq]
+;W[qd]
+;B[cd]
+;W[dp]
+;B[oc]
+;W[pe]
+;B[qn]
+;W[ec]
+;B[ic]C[LMP1 [-\]: Results, schedule, game records and player profiles: http://mp.go.art.pl
+]
+;W[de]
+;B[ce]
+;W[df]
+;B[cf]
+;W[dg]
+;B[ch]
+;W[kc]C[LMP1 [-\]: Watch us live on YouTube: https://www.youtube.com/watch?v=g7jJlYnwur0
+]
+;B[mc]C[LMP1 [-\]: Black opens a chocolate bar
+]
+;W[dh]
+;B[ci]
+;W[cg]
+;B[bg]
+;W[bf]
+;B[bh]
+;W[cc]C[floppy: which brand?
+LMP1 [-\]: Wedel
+LMP1 [-\]: Dark. He's black after all.
+]
+;B[jd]C[Gigot [1k\]: Should white eat white chocolate?
+floppy: makes sense
+]
+;W[bd]
+;B[be]
+;W[dd]
+;B[af]C[kmr [2d\]: Wedel is owned still by PepsiCo?Or Kraft?Anyway no more good old Wedel.....
+Punch [1d?\]: chickalate
+LMP1 [-\]: Wedel is now owned by Lotte
+]
+;W[ld]C[LMP1 [-\]: interestingly, Lotte is a Japanese-Korean company
+floppy: lieselotte?
+LMP1 [-\]: making Wedel a Go player's first choice
+]
+;B[oe]
+;W[of]
+;B[ne]C[LMP1 [-\]: no wonder Black has turned to Wedel for his chocolate needs
+Gigot [1k\]: Wedel bar instead of fans
+]
+;W[lf]C[floppy: habu is black and japanese so a dark choco bar from japan is a logical choice
+Punch [1d?\]: I think  is p15  mistake 
+LMP1 [-\]: I should also point out that eating sweets helped Black turn around two games in the previous rounds
+LMP1 [-\]: this time, he started early
+Punch [1d?\]: muffin time! )
+floppy: maybe he has to be sent to the doping control after the game :-O
+]
+;B[jf]C[kmr [2d\]: w zasadzie prywatyzacja Wedla to jeden wielki przekret, ale nie bedziemy o tym tu gadac :)
+Kogokhan [1k\]: this position looks promising for b 
+LMP1 [-\]: Watch all the action live: https://www.youtube.com/watch?v=g7jJlYnwur0
+]
+;W[lh]C[ChoMama [-\]: wonder if the music is distracting or helpful?
+]
+;B[fb]C[floppy: one bar of chocolate in play keeps baka no itte away
+Dovery [-\]: Is that necessary?
+kmr [2d\]: in commentaries to Best Game of Era, N17 option (wasnt played in game) was heavily criticized by pros.I wonder why black chose N17 when normal O16 should give him good result?
+]
+;W[pc]
+;B[mg]C[YoungPro [-\]: because he is 5d ^^ 
+]
+;W[lg]
+;B[og]C[YoungPro [-\]: and unfortunately not familiar with this common joseki...
+]
+;W[ob]
+;B[nb]C[Dovery [-\]: Sad
+]
+;W[od]C[packer [?\]: b q14 was better
+floppy: four 5dan bots on kgs
+]
+;B[nd]
+;W[nc]
+;B[pf]
+;W[qf]
+;B[nf]
+;W[oc]
+;B[md]
+;W[ke]C[snapik [1k?\]: nie rwie
+]
+;B[qg]C[SiaTex [4k\]: j13 
+]
+;W[rf]C[snapik [1k?\]: dobry ten strim
+packer [?\]: b h14
+LMP1 [-\]: a jak z rozdzielczością? musiałem przyciąć bitrate
+]
+;B[ih]C[wilczasty [2k\]: jest ok
+wilczasty [2k\]: goban i tak trzeba sledzic na kgs
+]
+;W[lj]C[floppy: f18 looks pretty premature
+]
+;B[fq]
+;W[hq]
+;B[fo]
+;W[dr]C[LMP1 [-\]: Black drops his stone back to the bowl
+LMP1 [-\]: he wasn't expecting d2
+floppy: is his chin falling down?
+LMP1 [-\]: I wouldn't say that
+floppy: does he still some choco bars in his stock for emergency cases?
+floppy: *have
+wilczasty [2k\]: is d2 a joseki here?
+Cool [1k\]: big move d2 
+LMP1 [-\]: Yeah, almost a full bar set aside on your scribe's table
+LMP1 [-\]: Kamil Grabowski wonders in from board 4
+]
+;B[jq]
+;W[ho]
+;B[dn]C[floppy: i prefer b
+]
+;W[cn]
+;B[cm]
+;W[co]
+;B[bm]
+;W[fr]
+;B[mq]C[chansiukit [1k\]: hy both of them had not move j10
+floppy: b7 was weird either tenuki or connect
+chansiukit [1k\]: i think this is quite important
+]
+;W[dm]C[LMP1 [-\]: here we go
+LMP1 [-\]: watch the impending bloodbath live: https://www.youtube.com/watch?v=g7jJlYnwur0
+]
+;B[do]C[floppy: n3 and b7 show that b is too afraid but then why f18?
+]
+;W[cp]
+;B[fm]
+;W[dl]
+;B[ek]
+;W[dj]
+;B[dk]
+;W[cl]
+;B[bl]
+;W[ck]C[seegurken3: d10 was such a cool move :-o
+]
+;B[bj]
+;W[cj]
+;B[di]
+;W[ej]
+;B[ei]C[LMP1 [-\]: The bridge players nearby finished a round and started their post-round arguments
+Gigot [1k\]: e7?
+LMP1 [-\]: the referee is being called
+floppy: are they in go-stones-throwing-distance?
+LMP1 [-\]: they are, actually :)
+floppy: :)
+ChoMama [-\]: six hearts?? are you klidding? we barely had enough for 3 NT
+LMP1 [-\]: the number of accessories and contraptions these people use makes one appreciate the beauty and simplicity of Go
+floppy: i doubted b but this looks good again
+akbnn: b see h6 sabaki?
+]
+;W[fj]
+;B[hn]C[akbnn: k4
+]
+;W[ij]C[floppy: now he should take his remaining choco bar
+packer [?\]: b h10 ?)
+barty [1d\]: its looks like to 75-100 moves mateusz plays 5% of their power
+barty [1d\]: And at some point he jump to 15% :)
+]
+;B[gj]
+;W[fi]
+;B[gk]C[Rodtank [2d\]: koichiro got stronger?
+Rodtank [2d\]: used to be 4d
+Gigot [1k\]: Seems black has some nasty ideas
+LMP1 [-\]: yes, recently promoted to 5d
+]
+;W[bk]C[packer [?\]: bad form b
+Rodtank [2d\]: did he have lessons?
+]
+;B[ak]
+;W[bn]
+;B[al]
+;W[fh]C[Rodtank [2d\]: hmm white not throw in, save a point but lose a6 sente
+Rodtank [2d\]: i suppose a6 is not so useful here
+Rodtank [2d\]: white a17 is fun
+Gigot [1k\]: A pro would says, with 1 point you can win two games.
+Rodtank [2d\]: but maybe b accerpts ko
+Rodtank [2d\]: i have the feeling b would not chicken out weith a15
+]
+;B[bc]
+;W[bb]
+;B[ad]C[Rodtank [2d\]: :-(
+floppy: w starts punching now
+Rodtank [2d\]: h14?
+]
+;W[hi]C[Rodtank [2d\]: or just simple h11
+Gigot [1k\]: no need to repair the weakness at e12?
+]
+;B[gi]
+;W[hh]
+;B[gh]
+;W[hg]
+;B[gg]C[Rodtank [2d\]: this is why i thought about h14
+]
+;W[gf]C[GoPostal [2d\]: if you are obviously stronger than your opponent, there is no need to fight so much realy, you win by just playing ordinary moves
+floppy: this looks bad for b
+Gigot [1k\]: W wants b to help him repair
+]
+;B[fg]
+;W[eh]C[floppy: now b better has some sabaki and tsumego skillz
+LMP1 [-\]: Live stream: https://www.youtube.com/watch?v=g7jJlYnwur0
+jiva [1k\]: W in control
+floppy: or the game is over soon
+floppy: g15?
+Gigot [1k\]: w is not yet alive
+barty [1d\]: LMP1 great
+Rodtank [2d\]: mateusz looks good in a suit
+Rodtank [2d\]: better than that red and white polish tracksuit =)
+jiva [1k\]: Hehe
+floppy: very suitable
+]
+;B[fc]C[LMP1 [-\]: White adjusts the two stones gently
+Rodtank [2d\]: h15 enough?
+Gigot [1k\]: I was expecting w to wear a sport's dress
+jiva [1k\]: h15 is my thought
+packer [?\]: w g16
+LMP1 [-\]: The tracksuit is just for international tournaments
+jiva [1k\]: Thought about g16 too
+GoPostal [2d\]: g16 f16 f15 h14?
+]
+;W[ff]C[Rodtank [2d\]: is it polish olympic one?
+LMP1 [-\]: similar
+barty [1d\]: polish masters
+harlej9 [1k\]: what is Koichi listening to?
+jiva [1k\]: Enigma
+jiva [1k\]: Sadness 
+floppy: wanted dead or alive by bon jovi
+jiva [1k\]: Haha
+harlej9 [1k\]: isnt b alive after k18?
+floppy: e18 first
+Rodtank [2d\]: ah i tihnk w doesn't want to h15 because he wants to finish with k15
+barty [1d\]: e18 d18 e16 d17 h14 if works
+LMP1 [-\]: Black resorts to chocolate
+floppy: told ya
+]
+;B[hf]C[barty [1d\]: uu faster H14
+]
+;W[he]
+;B[if]
+;W[ge]C[floppy: w means business
+floppy: f18 or k14 dies
+]
+;B[kb]
+;W[jb]C[packer [?\]: b kill yourself
+]
+;B[jc]
+;W[lb]C[LMP1 [-\]: a nearby bridge table calls the referee for the third time in 10 minutes
+]
+;B[ki]C[LMP1 [-\]: they now argue with the referee as well
+floppy: throw the go stones, they can only throw cards back and run out of ammunition much earlier :)
+]
+;W[kj]C[packer [?\]: b died
+Dovery [-\]: B resign?
+]
+;B[ii]
+;W[hj]
+;B[jj]
+;W[jk]
+;B[ji]C[liusasori [3d\]: h9 
+liusasori [3d\]: h9 h8 so maybe not so good idea
+harlej9 [1k\]: LMP1 dawaj dawaj ;-) na wizji klada kamieni na potege :-) 
+LMP1 [-\]: Game ends abruptly on board 3 after a nasty cut
+LMP1 [-\]: the stream is lagging
+]
+;W[il]
+;B[li]C[barty [1d\]: The stream is Ok 
+LMP1 [-\]: about 20 seconds delay by my estimate
+LMP1 [-\]: you might have noticed by measurement tool briefly :)
+]
+;W[in]C[LMP1 [-\]: Black is visibly counting
+fatih [1d\]: yeah :) it seems funny
+jiva [1k\]: Counting on a miracle 
+harlej9 [1k\]: that's completely understandeable, you cannot assume your reading is better than a pro's 
+Dovery [-\]: Black not enough
+packer [?\]: b n18 !)
+floppy: b has 2 flatlining groups. how can he start counting now?
+Dovery [-\]: W have more than 70
+Rodtank [2d\]: i like how white made a few beneficial exchanges before answering h6 with the natural j6
+floppy: the g line push was very bad
+fatih [1d\]: n18 may not be enough but black has no other choice
+]
+;B[io]
+;W[ip]C[packer [?\]: b j5 also bring some coins
+GoPostal [2d\]: b planning on playing j7 here?
+floppy: j7 looks horrible
+]
+;B[im]C[GoPostal [2d\]: yes it does, but nothing else makes sense
+]
+;W[jo]C[Dovery [-\]: Why cuutt 
+floppy: ko
+Dovery [-\]: No ko
+GoPostal [2d\]: k6 aint no ko, its a ladder
+GoPostal [2d\]: k6 k7 j5 l6 j6 g6 h7 g7 h8 g8 h9 f9 
+GoPostal [2d\]: b will play k7 here
+liusasori [3d\]: nice reading GoPostal
+liusasori [3d\]: I think b just died now
+Dovery [-\]: B ends in gote.. N18 for whhite now
+packer [?\]: b dnt see n18
+GoPostal [2d\]: probably does, but trade for g9 dont makes sense
+liusasori [3d\]: k7 h7 h8 g6 k8 j9 l9 l8 so k7 doesn't work to kill w
+floppy: w+r
+liusasori [3d\]: dont see a way for b to escape
+GoPostal [2d\]: true, but getting the option to capture l10 I guess is something
+GoPostal [2d\]: and from that perspective, b n10 is sente
+Dovery [-\]: Then extend is a must
+LMP1 [-\]: emergency chocolate dose
+Dovery [-\]: At k7
+floppy: too late lmp1
+GoPostal [2d\]: chocholate improves reading
+LMP1 [-\]: Watch all the chocolate munching live at: https://www.youtube.com/watch?v=g7jJlYnwur0
+liusasori [3d\]: but w can sacrify m10 if he capture g12 and f5. Then he can easily reduce b moyo
+Dovery [-\]: Yes
+Dovery [-\]: B cant win this game.. Maybe he just looking for a place to resign gloriously
+frostwind [5k\]: Can you provide the time please?
+frostwind [5k\]: time left for the players
+LMP1 [-\]: White has 45 minutes left
+barty [1d\]: k7 h7 h8 g6 k8 j9 m8 for beginning
+barty [1d\]: after this take point to bottom
+barty [1d\]: but need N18
+LMP1 [-\]: Black: 9 minutes
+GoPostal [2d\]: barty, m7 dont make sense, you just have weak group, b short on liberties on the isnide so its not really a proper cut even
+floppy: is this the final round?
+GoPostal [2d\]: m8*
+barty [1d\]: if top center white dead game is still playable
+LMP1 [-\]: No, one more today
+LMP1 [-\]: careful observers will notice the famous self-slapping by Black
+]
+;B[jn]C[Dovery [-\]: Woahhh
+Dovery [-\]: B so committed
+]
+;W[hm]C[Wizardry [4d\]: h7 captures
+Rodtank [2d\]: this is a belgian ko
+barty [1d\]: no ko
+LMP1 [-\]: Black resigns with a smile
+barty [1d\]: ladder
+barty [1d\]: :)
+Dovery [-\]: GG
+mayeck [-\]: still, koichi had very nice game up to d7 i think :)
+frostwind [5k\]: why does black not make life with g9 ?
+LMP1 [-\]: I'll leave the stream up for a few minutes more
+LMP1 [-\]: Next round 14:30 local time, almost three hours from now
+LMP1 [-\]: thanks for watching and see you after lunch
+Kaylo [9k\]: can you turn the volume up?
+LMP1 [-\]: for a while, yes, but I will turn it off again when the bridge players enter the argument phase
+Kaylo [9k\]: ok, ty :)
+harlej9 [1k\]: thank you LMP1
+LMP1 [-\]: f18 criticised
+LMP1 [-\]: d16 already alive, says Mateusz
+LMP1 [-\]: better to jump out immediately
+mayeck [-\]: f18 was like pass
+mayeck [-\]: but despite f18 b had good position
+])

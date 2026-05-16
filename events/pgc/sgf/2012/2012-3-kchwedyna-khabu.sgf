@@ -1,167 +1,274 @@
-(
-  ;BR[4d]CA[UTF-8]DT[2012-11-30]EV[Polish Go Championship 2012]FF[4]GM[1]GN[Round 3 - Board 2]KM[6.50]PB[Kamil Chwedyna]PC[Katowice]PW[Koichiro Habu]RE[B+R]RO[3]RU[japanese]ST[2]SZ[19]WR[4d]
-  ;B[pd]
-  ;W[nc]
-  ;B[qf]
-  ;W[hc]
-  ;B[cp]
-  ;W[pr]
-  ;B[qq]
-  ;W[qr]
-  ;B[cd]
-  ;W[ec]
-  ;B[de]
-  ;W[eq]
-  ;B[dn]
-  ;W[qn]
-  ;B[op]
-  ;W[nq]
-  ;B[rp]
-  ;W[qo]
-  ;B[qp]
-  ;W[qk]
-  ;B[po]
-  ;W[pn]
-  ;B[on]
-  ;W[om]
-  ;B[nn]
-  ;W[nm]
-  ;B[mn]
-  ;W[kq]
-  ;B[cj]
-  ;W[np]
-  ;B[mm]
-  ;W[kn]
-  ;B[mk]
-  ;W[fn]
-  ;B[pl]
-  ;W[ql]
-  ;B[in]
-  ;W[jn]
-  ;B[fo]
-  ;W[eo]
-  ;B[en]
-  ;W[go]
-  ;B[fp]
-  ;W[ep]
-  ;B[lp]
-  ;W[jr]
-  ;B[io]
-  ;W[cl]
-  ;B[gp]
-  ;W[fm]
-  ;B[gn]
-  ;W[el]
-  ;B[bn]
-  ;W[hq]
-  ;B[dk]
-  ;W[il]
-  ;B[hl]
-  ;W[hm]
-  ;B[im]
-  ;W[dl]
-  ;B[cr]
-  ;W[hp]
-  ;B[ho]
-  ;W[hk]
-  ;B[gq]
-  ;W[gr]
-  ;B[hr]
-  ;W[fq]
-  ;B[go]
-  ;W[cq]
-  ;B[bq]
-  ;W[ir]
-  ;B[fr]
-  ;W[hs]
-  ;B[er]
-  ;W[dg]
-  ;B[fd]
-  ;W[fc]
-  ;B[eh]
-  ;W[eg]
-  ;B[fg]
-  ;W[ff]
-  ;B[ef]
-  ;W[fh]
-  ;B[gg]
-  ;W[dh]
-  ;B[ei]
-  ;W[di]
-  ;B[dj]
-  ;W[ej]
-  ;B[fi]
-  ;W[gh]
-  ;B[ek]
-  ;W[fj]
-  ;B[gi]
-  ;W[hh]
-  ;B[fk]
-  ;W[gj]
-  ;B[gl]
-  ;W[gm]
-  ;B[ik]
-  ;W[jl]
-  ;B[hj]
-  ;W[hi]
-  ;B[gk]
-  ;W[jm]
-  ;B[dq]
-  ;W[jo]
-  ;B[ip]
-  ;W[cb]
-  ;B[hd]
-  ;W[ic]
-  ;B[gf]
-  ;W[ij]
-  ;B[gc]
-  ;W[gb]
-  ;B[gd]
-  ;W[bj]
-  ;B[bi]
-  ;W[bk]
-  ;B[ci]
-  ;W[bg]
-  ;B[ai]
-  ;W[hk]
-  ;B[cm]
-  ;W[bl]
-  ;B[hj]
-  ;W[jp]
-  ;B[do]
-  ;W[hk]
-  ;B[em]
-  ;W[fl]
-  ;B[hj]
-  ;W[jk]
-  ;B[qi]
-  ;W[pm]
-  ;B[fb]
-  ;W[eb]
-  ;B[hb]
-  ;W[fa]
-  ;B[jc]
-  ;W[id]
-  ;B[ib]
-  ;W[ie]
-  ;B[kd]
-  ;W[ml]
-  ;B[ll]
-  ;W[nl]
-  ;B[lj]
-  ;W[lm]
-  ;B[rr]
-  ;W[he]
-  ;B[ge]
-  ;W[ed]
-  ;B[ee]
-  ;W[be]
-  ;B[rm]
-  ;W[pq]
-  ;B[pp]
-  ;W[oj]
-  ;B[ni]
-  ;W[ro]
-  ;B[rj]
-  ;W[sp]
-)
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[5400]OT[1x60 byo-yomi]
+GN[Polish Go Championship League]PW[Kamil Chwedyna]PB[Koichiro Habu]WR[4d]BR[4d]DT[2012-11-30]RO[3]PC[The KGS Go Server at http://www.gokgs.com/]
+;B[pd]
+;W[nc]
+;B[qf]
+;W[hc]
+;B[cp]
+;W[pr]
+;B[qq]C[mahr [1d\]: really idiotic 
+mahr [1d\]: q
+mahr [1d\]: Q2 is proper?
+soui [-\]: looks proper
+spooke9 [4k\]: It is for Kamil XD
+mahr [1d\]: pornographic move
+mahr [1d\]: should be banned
+]
+;W[qr]
+;B[cd]
+;W[ec]
+;B[de]
+;W[eq]
+;B[dn]
+;W[qn]
+;B[op]
+;W[nq]
+;B[rp]
+;W[qo]
+;B[qp]
+;W[qk]
+;B[po]
+;W[pn]
+;B[on]
+;W[om]
+;B[nn]
+;W[nm]
+;B[mn]
+;W[kq]C[Lesmian [1d\]: wygląda jak joseki
+]
+;B[cj]C[bartosz [-\]: a nie jest?
+]
+;W[np]
+;B[mm]C[Lesmian [1d\]: no nie wiem, czarny raz zagrał tenuki 
+Lesmian [1d\]: własnie spostrzegłem
+]
+;W[kn]C[Lesmian [1d\]: l6 bardzo wojownicze
+]
+;B[mk]
+;W[fn]
+;B[pl]
+;W[ql]
+;B[in]
+;W[jn]
+;B[fo]
+;W[eo]
+;B[en]
+;W[go]
+;B[fp]
+;W[ep]
+;B[lp]C[bartosz [-\]: k2 ?
+]
+;W[jr]
+;B[io]C[meness [18k\]: dlaczego na tym kgs-owym gobanie nie ma litterki i ?
+bartosz [-\]: bo są tylko do T
+LMP3 [-\]: z tego co pamietam japonczykom sie zle kojarzy czy cos 
+Lesmian [1d\]: moze kgs programowal jakis konserwatywny latynista, a moze po prostu dla wygody, zeby sie nie mylilo
+meness [18k\]: dzieki;)
+Bjondro [12k\]: a w Chinach nie ma chyba 4go piętra w budynkach
+]
+;W[cl]C[Bjondro [12k\]: bo 4 przynosi im pecha
+]
+;B[gp]C[Lesmian [1d\]: c8 wygląda bardzo ryzykownie
+bartosz [-\]: nie wygląda obiecująco dla białego
+]
+;W[fm]
+;B[gn]
+;W[el]
+;B[bn]
+;W[hq]C[spooke9 [4k\]: fiszu coś wymyśli na pewno
+bartosz [-\]: na pewno widzi coś więcej
+]
+;B[dk]C[Lesmian [1d\]: fisz chyba lubi grę w takie uciekające, bezoczne grupki 
+bartosz [-\]: tylko ze grupy czarnego nie uciakają i mają oczy :)
+Lesmian [1d\]: s4 ma jedno w gote (plus wyjście do centrum, no ale to się może zmienić), a g4 to nie wiem, czy to oko jest
+]
+;W[il]
+;B[hl]C[Lesmian [1d\]: czasu mają nadal mniej więcej po równo, czy ktoś stracił go wyraźnie więcej?
+]
+;W[hm]
+;B[im]
+;W[dl]C[LMP2 [-\]: obaj koło 55
+]
+;B[cr]C[Lesmian [1d\]: dzięki
+]
+;W[hp]
+;B[ho]C[liquescens [1k\]: h9 ?
+Lesmian [1d\]: szkoda by było, gdyby czarny się połaczył z grupą po prawej
+]
+;W[hk]
+;B[gq]C[liquescens [1k\]: boli
+Lesmian [1d\]: to działa...
+liquescens [1k\]: ko
+liquescens [1k\]: a nie, bialy sie po prostu laczy
+Lesmian [1d\]: jak?
+]
+;W[gr]
+;B[hr]
+;W[fq]C[liquescens [1k\]: po 1 linii
+]
+;B[go]C[Lesmian [1d\]: ah ok, no tak
+Lesmian [1d\]: ale kosztem mięsa
+liquescens [1k\]: gdyby chociaz w sente to mialby ponuki ;p
+Lesmian [1d\]: w sumie może być ko, ale biały jest taki dziurawy, ze nie sądzę, by był do niego skory
+]
+;W[cq]
+;B[bq]C[liquescens [1k\]: celuje w c5?
+liquescens [1k\]: tylko nie widze tego jakos
+Lesmian [1d\]: myślę, że raczej chce jakoś d2 w sente wziąć
+liquescens [1k\]: tego jeszcze bardziej nie widze ;p
+Lesmian [1d\]: heh
+liquescens [1k\]: d3 w sente tez pomaga
+liquescens [1k\]: tzn moze j2
+Lesmian [1d\]: śmierć h3 wpłynie na całą grupę białego, więc jeśli jakoś z tego nie wyjdzie, to gra pewnie będzie skończona szybko
+liquescens [1k\]: jak bardzo w płynie?
+liquescens [1k\]: ze zamiast 0 oczu bedzie 1? :P
+spooke9 [4k\]: po j2 teraz nie będzie ko
+spooke9 [4k\]: ?
+liquescens [1k\]: nie
+Lesmian [1d\]: nie widzę ko po j2
+spooke9 [4k\]: a dobra po prostu czarny zbije C3
+Lesmian [1d\]: gracie jutro na turnieju?
+LMP3 [-\]: do kogo to pytanie Lesmian?
+Lesmian [1d\]: no że wy gracie to ja wiem
+LMP3 [-\]: akurat my nie gramy ;)
+Lesmian [1d\]: miałem dziś przyjśc pooglądać, ale utknąłem gdzieś na długie godziny
+liquescens [1k\]: znam ten problem
+liquescens [1k\]: gra bialy i wygrywa gre
+]
+;W[ir]
+;B[fr]
+;W[hs]
+;B[er]
+;W[dg]C[liquescens [1k\]: sente wieksze od tych kamieni?
+Lesmian [1d\]: a jak można je było wyciągnąć? 
+]
+;B[fd]
+;W[fc]
+;B[eh]
+;W[eg]
+;B[fg]
+;W[ff]
+;B[ef]
+;W[fh]
+;B[gg]
+;W[dh]
+;B[ei]
+;W[di]
+;B[dj]
+;W[ej]
+;B[fi]C[bartosz [-\]: ile czasu mają?
+LMP3 [-\]: mniej niz wczesniej
+LMP2 [-\]: Koichi 51, fisz 24
+bartosz [-\]: dzieki
+]
+;W[gh]
+;B[ek]
+;W[fj]
+;B[gi]
+;W[hh]
+;B[fk]
+;W[gj]
+;B[gl]
+;W[gm]
+;B[ik]
+;W[jl]C[SadPlayer [-\]: się uczciwe dzielą ciagle
+]
+;B[hj]
+;W[hi]
+;B[gk]
+;W[jm]
+;B[dq]
+;W[jo]
+;B[ip]C[bartosz [-\]: czy ja wiem czy tak uczciwie
+]
+;W[cb]
+;B[hd]
+;W[ic]
+;B[gf]
+;W[ij]C[liquescens [1k\]: gote
+BlazejS [4k\]: no to q18?
+]
+;B[gc]
+;W[gb]
+;B[gd]
+;W[bj]C[Lesmian [1d\]: to jest ukręcanie bicza na n9
+Pinguschaf [?\]: what was g17?
+Lesmian [1d\]: o ile będzie potrzebny
+]
+;B[bi]
+;W[bk]
+;B[ci]
+;W[bg]
+;B[ai]
+;W[hk]C[liquescens [1k\]: c7 
+]
+;B[cm]
+;W[bl]
+;B[hj]
+;W[jp]
+;B[do]
+;W[hk]C[liquescens [1k\]: ale i tak czarny przegial ;p
+liquescens [1k\]: tu w ogole jest ko?
+]
+;B[em]
+;W[fl]
+;B[hj]
+;W[jk]C[liquescens [1k\]: poddal
+BlazejS [4k\]: bi wygrywa semeai
+]
+;B[qi]
+;W[pm]
+;B[fb]
+;W[eb]
+;B[hb]
+;W[fa]
+;B[jc]
+;W[id]
+;B[ib]
+;W[ie]
+;B[kd]C[Lesmian [1d\]: żal czarnego, jeśli dobrze wieszczysz
+]
+;W[ml]C[Lesmian [1d\]: nie dość że mu wykradziono róg, to pożarto mięso na bandzie
+bartosz [-\]: i jeszcze w rogu ginie
+Lesmian [1d\]: no ta grupa już od jakiegoś czasu na kredycie żyła
+]
+;B[ll]
+;W[nl]C[BlazejS [4k\]: bi wykupil weksel :)
+]
+;B[lj]
+;W[lm]C[Lesmian [1d\]: zgłosi się do Merkel po pozyczkę
+]
+;B[rr]C[LMP3 [-\]: lesmian nawet dobrze ze wdomu siedzisz skoto takie teksty mozna od Ciebie wyczytac ;)
+Lesmian [1d\]: biały musi teraz q3 chyba
+bartosz [-\]: tak
+]
+;W[he]C[Lesmian [1d\]: aha
+]
+;B[ge]C[bartosz [-\]: :)
+]
+;W[ed]
+;B[ee]
+;W[be]C[bartosz [-\]: ok teraz
+BlazejS [4k\]: killer mode bi sie wlaczyl
+BlazejS [4k\]: no ale jak chlopak moze to niech sobie pouzywa
+]
+;B[rm]
+;W[pq]
+;B[pp]
+;W[oj]
+;B[ni]
+;W[ro]C[bartosz [-\]: jak przypomne sobie fuseki tej gry to nie chce mi sie wierzyc ze cała lewa strona gdzie cz był mocny a biały miał pare ciekzich kamieni wyglada jak wygląda
+BlazejS [4k\]: no i koniec
+Lesmian [1d\]: ale to wszystko wina czarnego
+]
+;B[rj]C[BlazejS [4k\]: uhmm
+Lesmian [1d\]: g17 było tak zbędne
+]
+;W[sp]C[Lesmian [1d\]: mógł przeżyć e9 i musiałby tylko walczyć o przetrwanie w dolnym prawym
+bartosz [-\]: daleko fiszowi do 5d?
+LMP2 [-\]: W+R
+Lesmian [1d\]: dzięki za transmisję
+Lesmian [1d\]: i za walkę graczy!
+bartosz [-\]: najlepsza gra do tej pory
+])

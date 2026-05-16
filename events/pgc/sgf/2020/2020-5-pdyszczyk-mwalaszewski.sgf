@@ -1,75 +1,164 @@
-(
-  ;BR[1d]CA[UTF-8]DT[2021-02-20]EV[Polish Go Championship 2020]FF[4]GM[1]GN[Round 5 - Board 2]KM[6.5]PB[Piotr Dyszczyk]PC[Warszawa / Poznań / Online]PW[Maksym Wałaszewski]RE[W+R]RU[japanese]SZ[19]WR[3d]
-  ;B[pd]
-  ;W[dp]
-  ;B[qp]
-  ;W[dd]
-  ;B[nq]
-  ;W[nc]
-  ;B[qf]
-  ;W[jd]
-  ;B[cf]
-  ;W[be]
-  ;B[bf]
-  ;W[ce]
-  ;B[df]
-  ;W[fc]
-  ;B[cj]
-  ;W[fq]
-  ;B[gp]
-  ;W[gq]
-  ;B[ip]
-  ;W[np]
-  ;B[op]
-  ;W[dh]
-  ;B[ch]
-  ;W[mq]
-  ;B[no]
-  ;W[mp]
-  ;B[oq]
-  ;W[mo]
-  ;B[hq]
-  ;W[nn]
-  ;B[oo]
-  ;W[ho]
-  ;B[io]
-  ;W[lm]
-  ;B[hm]
-  ;W[qk]
-  ;B[oc]
-  ;W[nd]
-  ;B[lb]
-  ;W[ob]
-  ;B[pb]
-  ;W[lc]
-  ;B[kc]
-  ;W[ld]
-  ;B[nb]
-  ;W[mb]
-  ;B[oa]
-  ;W[cn]
-  ;B[kb]
-  ;W[ma]
-  ;B[ic]
-  ;W[id]
-  ;B[hc]
-  ;W[jc]
-  ;B[jb]
-  ;W[hd]
-  ;B[gc]
-  ;W[gd]
-  ;B[fb]
-  ;W[eb]
-  ;B[gb]
-  ;W[ec]
-  ;B[qi]
-  ;W[la]
-  ;B[ha]
-  ;W[ib]
-  ;B[nl]
-  ;W[om]
-  ;B[nm]
-  ;W[on]
-  ;B[mn]
-  ;W[mm]
-)
+(;FF[4]
+CA[UTF-8]
+GM[1]
+DT[2021-02-20]
+PC[OGS: https://online-go.com/game/31295947]
+GN[LMP round 5 board 3]
+PB[shin0e]
+PW[Moggetyrael]
+BR[3d]
+WR[4d]
+TM[5400]OT[3x60 byo-yomi]
+RE[W+R]
+SZ[19]
+KM[6.5]
+RU[Japanese]
+C[Moggetyrael: Hej
+shin0e: hej ho! :)
+Moggetyrael: Miłej gry!
+shin0e: milej gry ;)
+]
+;B[pd]
+(;W[dp]
+(;B[qp]
+(;W[dd]
+(;B[nq]
+(;W[nc]
+(;B[qf]
+(;W[jd]
+(;B[cf]
+(;W[be]
+(;B[bf]
+(;W[ce]
+(;B[df]
+(;W[fc]
+(;B[cj]
+(;W[fq]
+(;B[gp]
+(;W[gq]
+(;B[ip]
+(;W[np]
+(;B[op]
+(;W[dh]
+(;B[ch]
+(;W[mq]
+(;B[no]
+(;W[mp]
+(;B[oq]
+(;W[mo]
+(;B[hq]
+(;W[nn]
+(;B[oo]
+(;W[ho]
+(;B[io]
+(;W[lm]
+(;B[hm]
+(;W[qk]
+(;B[oc]
+(;W[nd]
+(;B[lb]
+(;W[ob]
+(;B[pb]
+(;W[lc]
+(;B[kc]
+(;W[ld]
+(;B[nb]
+(;W[mb]
+(;B[oa]
+(;W[cn]
+(;B[kb]
+(;W[ma]
+C[Cezary: n18 to chyba dame
+]
+(;B[ic]
+C[Ashi1989: niby odcina czarnego
+]
+(;W[id]
+C[Ashi1989: ale czarny przezywa na bandzie bez problemow
+Ashi1989: albo ucieka
+]
+(;B[hc]
+(;W[jc]
+(;B[jb]
+(;W[hd]
+(;B[gc]
+(;W[gd]
+(;B[fb]
+(;W[eb]
+C[Ashi1989: dobrze to wyglada dla koksika
+Ashi1989: warto zagrac f16 i l16 przed f19?
+]
+(;B[gb]
+(;W[ec]
+(;B[qi]
+C[Ashi1989: ok, nie zagranie F16 to dobry pomysl
+Ashi1989: :D
+]
+(;W[la]
+C[Ashi1989: hmm
+yakcyll: No, ciężko
+Ashi1989: to troche dziwne
+Ashi1989: bo czarny zyje
+yakcyll: Żyje, jak?
+]
+(;B[ha]
+C[yakcyll: j18
+]
+(;W[ib]
+C[yakcyll: Ale lipa, też tego nie zauważyłem wcześniej
+Ashi1989: \[object Object\]
+yakcyll: To l19
+yakcyll: Biały ma k17
+yakcyll: oh
+yakcyll: wait
+yakcyll: faktycznie
+yakcyll: aaaa
+yakcyll: \[object Object\]
+Sadiker: no to bieda i rozczarowanie
+Ashi1989: na F19hmm
+Ashi1989: hmm D
+Sadiker: \[object Object\]
+yakcyll: No, l19 to błąd białego w takiej sytuacji
+yakcyll: Trzeba f19
+Ashi1989: piotrek strzelil missreada :D
+Sadiker: czyli jednak n18 bylo dobre :)
+]
+(;B[nl]
+(;W[om]
+C[Ashi1989: na to wychodzi ;D
+Ashi1989: bialy przygotowal pulapke ;D
+]
+(;B[nm]
+(;W[on]
+(;B[mn]
+(;W[mm]
+C[shin0e: xD
+shin0e: dzieki
+shin0e: ta ;p
+Moggetyrael: Dzięki za grę
+shin0e: xD
+Moggetyrael: ta śmierć smutna
+shin0e: co ja tu odwalilem
+shin0e: no r11
+Moggetyrael: bo G19 chyba przeżywało
+shin0e: wtf :D
+shin0e: jakis konkretny missread
+shin0e: :D
+Moggetyrael: taki L&D jjak z książki
+Moggetyrael: prosto :)
+shin0e: to sie popisalem xD
+Moggetyrael: ja tak przegrałem poprzednią
+Moggetyrael: więc się zdarza
+Moggetyrael: \[object Object\]
+Moggetyrael: dajemy review
+Sadiker: wut?
+Ashi1989: :(
+yakcyll: A, bo tu jest sieć
+yakcyll: no nieźle, asdf
+Ashi1989: tam na gorze to kawal :&D
+Ashi1989: L&D
+Ashi1989: po M19 byla martwa
+yakcyll: Nerwy nerwami
+he541: \[object Object\]
+]
+))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))

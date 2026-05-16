@@ -1,184 +1,649 @@
-(
-  ;BR[5d]CA[UTF-8]DT[2012-12-01]EV[Polish Go Championship 2012]FF[4]GM[1]GN[Round 4 - Board 1]KM[6.50]PB[Leszek Sołdan]PC[Katowice]PW[Koichiro Habu]RE[B+T]RO[4]RU[japanese]ST[2]SZ[19]WR[4d]
-  ;B[pd]
-  ;W[dd]
-  ;B[pp]
-  ;W[dq]
-  ;B[do]
-  ;W[cm]
-  ;B[bo]
-  ;W[fp]
-  ;B[en]
-  ;W[cj]
-  ;B[hq]
-  ;W[hp]
-  ;B[ip]
-  ;W[ho]
-  ;B[eq]
-  ;W[er]
-  ;B[ep]
-  ;W[fq]
-  ;B[fr]
-  ;W[gr]
-  ;B[dr]
-  ;W[fs]
-  ;B[cq]
-  ;W[kq]
-  ;B[mq]
-  ;W[ko]
-  ;B[kr]
-  ;W[lr]
-  ;B[lq]
-  ;W[mr]
-  ;B[kp]
-  ;W[jq]
-  ;B[jr]
-  ;W[nq]
-  ;B[np]
-  ;W[oq]
-  ;B[mp]
-  ;W[op]
-  ;B[oo]
-  ;W[no]
-  ;B[mo]
-  ;W[nn]
-  ;B[qo]
-  ;W[mn]
-  ;B[jp]
-  ;W[lo]
-  ;B[iq]
-  ;W[qr]
-  ;B[qq]
-  ;W[pr]
-  ;B[rr]
-  ;W[rs]
-  ;B[rp]
-  ;W[sr]
-  ;B[rq]
-  ;W[on]
-  ;B[po]
-  ;W[ns]
-  ;B[fo]
-  ;W[qm]
-  ;B[pm]
-  ;W[pn]
-  ;B[rm]
-  ;W[ql]
-  ;B[rl]
-  ;W[go]
-  ;B[hr]
-  ;W[qk]
-  ;B[rk]
-  ;W[nc]
-  ;B[lc]
-  ;W[ne]
-  ;B[pf]
-  ;W[pb]
-  ;B[qj]
-  ;W[qn]
-  ;B[rn]
-  ;W[ic]
-  ;B[le]
-  ;W[ng]
-  ;B[ie]
-  ;W[gc]
-  ;B[lg]
-  ;W[ph]
-  ;B[im]
-  ;W[gm]
-  ;B[oh]
-  ;W[pj]
-  ;B[og]
-  ;W[nh]
-  ;B[oi]
-  ;W[rj]
-  ;B[qc]
-  ;W[ni]
-  ;B[oj]
-  ;W[ig]
-  ;B[li]
-  ;W[nj]
-  ;B[ok]
-  ;W[qi]
-  ;B[oc]
-  ;W[ob]
-  ;B[nd]
-  ;W[md]
-  ;B[od]
-  ;W[mc]
-  ;B[me]
-  ;W[lb]
-  ;B[nf]
-  ;W[kf]
-  ;B[ke]
-  ;W[mf]
-  ;B[oe]
-  ;W[lf]
-  ;B[kb]
-  ;W[mb]
-  ;B[jf]
-  ;W[jg]
-  ;B[kg]
-  ;W[mg]
-  ;B[ji]
-  ;W[kj]
-  ;B[mk]
-  ;W[nk]
-  ;B[nl]
-  ;W[ml]
-  ;B[ll]
-  ;W[mj]
-  ;B[mm]
-  ;W[lj]
-  ;B[ki]
-  ;W[jj]
-  ;B[ol]
-  ;W[km]
-  ;B[jn]
-  ;W[kn]
-  ;B[kl]
-  ;W[jm]
-  ;B[hn]
-  ;W[jl]
-  ;B[gn]
-  ;W[ce]
-  ;B[jc]
-  ;W[qb]
-  ;B[rb]
-  ;W[ra]
-  ;B[rd]
-  ;W[qa]
-  ;B[ge]
-  ;W[gg]
-  ;B[ec]
-  ;W[fd]
-  ;B[cc]
-  ;W[fe]
-  ;B[bd]
-  ;W[fm]
-  ;B[bf]
-  ;W[fn]
-  ;B[eo]
-  ;W[be]
-  ;B[ae]
-  ;W[cg]
-  ;B[dl]
-  ;W[db]
-  ;B[dc]
-  ;W[eb]
-  ;B[ci]
-  ;W[ch]
-  ;B[dj]
-  ;W[bi]
-  ;B[hh]
-  ;W[if]
-  ;B[hk]
-  ;W[ik]
-  ;B[hj]
-  ;W[jo]
-  ;B[io]
-  ;W[hl]
-  ;B[di]
-  ;W[ck]
-  ;B[dk]
-)
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[5400]OT[1x60 byo-yomi]
+GN[Polish Go Championship League]PW[Koichiro Habu]PB[Leszek Sołdan]WR[4d]BR[5d]DT[2012-12-01]RO[4]PC[The KGS Go Server at http://www.gokgs.com/]C[LMP1 [-\]: pozdrawiamy graczy z towarzyszącego, który właśnie wystartował
+SadPlayer [-\]: jest jakaś lista grających w towarzyszącym?
+LMP1 [-\]: na razie nie ma
+LMP1 [-\]: jak będzie chwila to wrzucimy na stronę
+SadPlayer [-\]: mogłaby być w końcu jakaś gra co się 0,5 skończy.
+celepa [?\]: oj tam
+SadPlayer [-\]: jak jest +R to nuda jest
+LMP1 [-\]: teoretycznie najciekawsze rundy przed nami
+LMP1 [-\]: video streaming http://ustre.am/RhBr 
+LMP1 [-\]: clocks will be started in about 5 minutes
+]RE[B+Time]
+;B[pd]
+;W[dd]
+;B[pp]
+;W[dq]
+;B[do]
+;W[cm]
+;B[bo]
+;W[fp]C[vdfgfdgfd: am'i the only one who can see black screen only on stream ?
+ajka [2d?\]: Mateusz nie gra w LMP? :-o
+]
+;B[en]
+;W[cj]
+;B[hq]
+;W[hp]
+;B[ip]
+;W[ho]C[LMP1 [-\]: it should be ok now
+LMP1 [-\]: video
+]
+;B[eq]C[ajka [2d?\]: it's just started now 
+]
+;W[er]C[vdfgfdgfd: yeah, thanks. go koichiro !
+wloczykij [13k?\]: i have no problems with the stream
+SadPlayer [-\]: kolejny pojedynek Kraków vs Warszawa
+SadPlayer [-\]: o to jest to nowe joseki
+baduk23 [6k?\]: how to speak Pojedynek krakow lol
+]
+;B[ep]C[baduk23 [6k?\]: its like a klasklas klasklas name
+baduk23 [6k?\]: asdasd
+baduk23 [6k?\]: xD
+kmr [1k\]: Polish language is easyyyy :)
+SadPlayer [-\]: Leszek joseki zepsuł:(
+SadPlayer [-\]: f3 albo f2 teraz?
+]
+;W[fq]
+;B[fr]
+;W[gr]
+;B[dr]
+;W[fs]
+;B[cq]C[baduk23 [6k?\]: the kid watching is cool
+baduk23 [6k?\]: he will be a professional go player
+baduk23 [6k?\]: j3 
+SadPlayer [-\]: Leszek sprawdza czy łysieje?
+baduk23 [6k?\]: what did u said?
+baduk23 [6k?\]: Did u say
+SadPlayer [-\]: bo ciągle po głowie sie drapie
+baduk23 [6k?\]: omg
+baduk23 [6k?\]: this is hard to understand
+LMP1 [-\]: nothing game related
+LMP1 [-\]: just try harder :)
+SadPlayer [-\]: l4 
+baduk23 [6k?\]: :heheh
+liquescens [1k\]: a jest euro go tv?
+LMP1 [-\]: nie
+baduk23 [6k?\]: czek 
+baduk23 [6k?\]: jesten pienk
+vdfgfdgfd: you meant "jesien piekna" ?
+LMP1 [-\]: please try to keep the comments game related :)
+baduk23 [6k?\]: yes, what jesien piekna means? i remember that a long time ago, i think was 6 years
+]
+;W[kq]C[baduk23 [6k?\]: okey sry lmp1
+SadPlayer [-\]: jesien piekna - beautiful spring
+TheThe [7k\]: video is somewhat saturated - can't see white stones on some parts of the board
+astronis [6k\]: spring to wiosna :D
+LMP1 [-\]: we know that... not much we can do
+TheThe [7k\]: maybe a light reflection or just over-exposure
+]
+;B[mq]C[baduk23 [6k?\]: or the board have lights,, new technology boards
+baduk23 [6k?\]: Lol
+]
+;W[ko]
+;B[kr]C[TheThe [7k\]: maybe move the camera closer to the board
+LMP1 [-\]: do you want to see the board or tle players?
+baduk23 [6k?\]: sems you got a bug on kgs?
+TheThe [7k\]: I think camera maybe self-adjusting to the background
+TheThe [7k\]: maybe just moving it to a different location around the table can help
+LMP1 [-\]: we tried that
+LMP1 [-\]: you have the transmission here for board situation
+vdfgfdgfd: lmp1, tried this ? http://www.ehow.com/how_2337809_change-settings-webcam.html
+LMP1 [-\]: video is just for the players
+TheThe [7k\]: ok
+baduk23 [6k?\]: i wanted to back on time, i wantedf to be that kid and have a father
+TheThe [7k\]: but I can see the stones on the left side 
+]
+;W[lr]C[TheThe [7k\]: never mind
+]
+;B[lq]
+;W[mr]
+;B[kp]
+;W[jq]
+;B[jr]
+;W[nq]C[baduk23 [6k?\]: there are one w stone, the d16, its very hard to see 
+baduk23 [6k?\]: on the vid
+SadPlayer [-\]: konkurencja:/
+baduk23 [6k?\]: will be bater with b stones around 
+LMP3 [-\]: jaka tam konkurencja ;)
+baduk23 [6k?\]: :) jaka
+]
+;B[np]C[baduk23 [6k?\]: who is the best poland player ?
+baduk23 [6k?\]: on poland ofc
+]
+;W[oq]C[celepa [?\]: me
+LMP1 [-\]: Leszek is the current champion
+SadPlayer [-\]: Mateusz Surma
+LMP1 [-\]: but Mateusz Surma has higher rank
+LMP1 [-\]: too bad he could not be here
+baduk23 [6k?\]: he is 7d kgs?
+LMP1 [-\]: does not have a rank on kgs
+baduk23 [6k?\]: ic
+kmr [1k\]: Mateusz Surma played some times ago on kgs as Drakula
+kmr [1k\]: but recently no games here
+liquescens [1k\]: a nie ma dzwieku?
+baduk23 [6k?\]: woa from 1995
+LMP1 [-\]: nie ma
+vdfgfdgfd: gie is watching. hello gie !
+baduk23 [6k?\]: gie?
+baduk23 [6k?\]: hi gie
+liquescens [1k\]: drojsc ;p
+SadPlayer [-\]: jakieś pomysły, gdzie teraz zagrać?
+LMP1 [-\]: tenuki
+LMP1 [-\]: :P
+baduk23 [6k?\]: but p4 is like a must
+vdfgfdgfd: funny go player :) you can... hmmm you could have part of him on stream.
+baduk23 [6k?\]: or a broken shape
+SadPlayer [-\]: p4 m4 
+vdfgfdgfd: *you could have seen
+kmr [1k\]: p4  k4 - and then?
+liquescens [1k\]: tylko k4?
+baduk23 [6k?\]: p4 m4 n4  not bad
+baduk23 [6k?\]: i would say 
+baduk23 [6k?\]: p4 r2 k4  thats the right one
+]
+;B[mp]
+;W[op]C[baduk23 [6k?\]: what was that?
+baduk23 [6k?\]: missclick?
+LMP1 [-\]: nope
+baduk23 [6k?\]: ok
+liquescens [1k\]: drabinka dziala
+liquescens [1k\]: ale
+SadPlayer [-\]: najlepszy ruch chyba
+liquescens [1k\]: p5 o5 
+SadPlayer [-\]: w tej sytuacji
+Arhiman [3d\]: n4 surprisingly risky
+SadPlayer [-\]: ale i tak cz ma przewalone ;)
+baduk23 [6k?\]: w much stronger
+Arhiman [3d\]: p4 was not bad, getting thickness and sente for some stones
+liquescens [1k\]: i tak musi k4
+liquescens [1k\]: pytanie czy wymiana n4 p4 byla ok
+bartosz [-\]: gra decydująca o brązowym medalu
+LMP1 [-\]: Leszek does not seem happy
+baduk23 [6k?\]: i think he just messed
+baduk23 [6k?\]: up
+liquescens [1k\]: chyba ze bedzie gral jakos p5 o5 n5 ?
+baduk23 [6k?\]: i can't believe in n4
+]
+;B[oo]C[baduk23 [6k?\]: this is not right
+SadPlayer [-\]: q5 
+]
+;W[no]C[SadPlayer [-\]: kto tam stoi przy stole bo twarzy nie widze?
+]
+;B[mo]
+;W[nn]C[vdfgfdgfd: gie
+LMP1 [-\]: krzysztof giedrojc kamil chwedyna
+liquescens [1k\]: łysy
+baduk23 [6k?\]: this can be the end of game already for b
+SadPlayer [-\]: ich gry są nudne to oglądaja inne ciekawsze :>
+baduk23 [6k?\]: probabily he is reading q3
+liquescens [1k\]: q6?
+baduk23 [6k?\]: but seems does not work
+baduk23 [6k?\]: cus of ladder
+Arhiman [3d\]: k4 ?
+muh [1k\]: n6
+]
+;B[qo]C[baduk23 [6k?\]: r2
+SadPlayer [-\]: o5 chyba chciwe było
+Arhiman [3d\]: p6
+baduk23 [6k?\]: or p6 1st
+]
+;W[mn]
+;B[jp]
+;W[lo]
+;B[iq]C[baduk23 [6k?\]: b dead
+Arhiman [3d\]: weird choice for w o_o
+liquescens [1k\]: r2
+baduk23 [6k?\]: oh better not try risky semeai
+baduk23 [6k?\]: r2 yes
+Arhiman [3d\]: q3
+]
+;W[qr]C[liquescens [1k\]: isnt semeai
+baduk23 [6k?\]: h2  now
+vdfgfdgfd: b alive. but what kind of live is that...
+kmr [1k\]: j6
+baduk23 [6k?\]: but what kind of play is that if w takes q7?
+]
+;B[qq]C[Arhiman [3d\]: w is not thick at all, and his influence is just useless here
+liquescens [1k\]: white would be dead
+Meatbun [4d\]: who is w and b?
+baduk23 [6k?\]: w is the guy who looks like japanese
+baduk23 [6k?\]: The better one in position of that game
+baduk23 [6k?\]: xD
+kmr [1k\]: black is Malysz on KGS
+Arhiman [3d\]: w is koichiro habu and b is leszek soldan
+Arhiman [3d\]: resp. 4d and 5d
+LMP1 [-\]: w is doralive on kgs
+celepa [?\]: Adam Malysz plays on kgs?
+kmr [1k\]: sure after endin ski jumping :)
+celepa [?\]: nice!
+Bieber [1k\]: Malysz is weak
+vdfgfdgfd: bieber...
+celepa [?\]: ;D
+vdfgfdgfd: shall be banned.
+]
+;W[pr]
+;B[rr]
+;W[rs]
+;B[rp]C[baduk23 [6k?\]: yes and not by his comment
+baduk23 [6k?\]: ;D
+]
+;W[sr]
+;B[rq]C[baduk23 [6k?\]: o1 or p1 easy and fresh
+celepa [?\]: o1
+celepa [?\]: p1=dead
+]
+;W[on]
+;B[po]C[baduk23 [6k?\]: yes sry
+baduk23 [6k?\]: o1 :))
+baduk23 [6k?\]: but wait
+]
+;W[ns]C[baduk23 [6k?\]: what time is on poland?
+LMP3 [-\]: 11:42
+LMP1 [-\]: 11:42
+Bieber [1k\]: k6 
+baduk23 [6k?\]: pm?
+LMP1 [-\]: am
+LMP1 [-\]: ..
+]
+;B[fo]C[baduk23 [6k?\]: nice
+baduk23 [6k?\]: hey, koichiro seems stronnng
+baduk23 [6k?\]: he is famous player?^^
+celepa [?\]: very
+LMP1 [-\]: previous rounds results http://mp.go.art.pl/2012/wyniki
+Azael [1d\]: :D
+Bieber [1k\]: not much as i
+baduk23 [6k?\]: ban !!
+baduk23 [6k?\]: ^^
+baduk23 [6k?\]: i closed the video
+baduk23 [6k?\]: hate the adds
+baduk23 [6k?\]: :[
+]
+;W[qm]
+;B[pm]
+;W[pn]
+;B[rm]C[TheThe [7k\]: hate the google chrmo
+TheThe [7k\]: it will not stay maximized on second monitor
+Bieber [1k\]: hate the world
+]
+;W[ql]
+;B[rl]
+;W[go]C[baduk23 [6k?\]: google chrome?
+TheThe [7k\]: for some reason this video doesn't work in IE even though other ustream channels are ok
+baduk23 [6k?\]: well i use firefox
+LMP1 [-\]: no idea why
+baduk23 [6k?\]: chrome starting to get heavy
+vdfgfdgfd: the reason is IE, o tell you.
+TheThe [7k\]: firefox uninstalled itself from my system - it was trying to upgrade...lol
+baduk23 [6k?\]: haha
+baduk23 [6k?\]: or use the safari, but ofc on a mac and not windows
+baduk23 [6k?\]: :D
+Bieber [1k\]: i have very old browser (firefox 3.5.0)
+baduk23 [6k?\]: but here im using firefox on windows xp
+baduk23 [6k?\]: XP**
+baduk23 [6k?\]: chrome is heavy for my old machine
+TheThe [7k\]: safari is junkware, don't need that
+Bieber [1k\]: newest version is 17.0.1
+]
+;B[hr]C[mfg [9k\]: isnt black dead when w h2?
+]
+;W[qk]
+;B[rk]C[baduk23 [6k?\]: not
+TheThe [7k\]: is seems it;s a flash feature that you can't have it maximized unless it has focus
+]
+;W[nc]C[TheThe [7k\]: Adobe guys are dumb, seriously
+baduk23 [6k?\]: hahaha
+baduk23 [6k?\]: on the dual monitor?
+TheThe [7k\]: yes
+baduk23 [6k?\]: oh
+baduk23 [6k?\]: i got that error too
+baduk23 [6k?\]: when i was using dual monitor
+baduk23 [6k?\]: i did not tried to fix, but i stoped to try dual monitor on the streams
+]
+;B[lc]
+;W[ne]C[baduk23 [6k?\]: if u try full screen on 2nd monitor, it bug right? haha i dunno why this happens too 
+TheThe [7k\]: I googled it and it seems people are actually hacking the binary to fix that
+baduk23 [6k?\]: GOsh
+TheThe [7k\]: crazy
+baduk23 [6k?\]: Lol
+baduk23 [6k?\]: its very cool to have a full screen on the players, and the 2nd on the kgs game
+]
+;B[pf]C[baduk23 [6k?\]: but that SUck kind of flashplayer
+TheThe [7k\]: but it used to work fine with IE, except that this particular stream doesn't show in my IE at all
+LMP1 [-\]: just don't type and you can keep focus on the player
+LMP1 [-\]: ;)
+baduk23 [6k?\]: ;))
+TheThe [7k\]: it says to get flash, but I already have that and it works with other ustream
+TheThe [7k\]: very frustrating
+]
+;W[pb]C[baduk23 [6k?\]: omg, did u try to clean the files of the ie? like temporary and cache? :(
+TheThe [7k\]: good idea
+TheThe [7k\]: let me try
+baduk23 [6k?\]: okey
+]
+;B[qj]
+;W[qn]
+;B[rn]C[Bieber [1k\]: stupid adds
+ajka [2d?\]: ads
+Bieber [1k\]: shoulde be my songs instead
+baduk23 [6k?\]: do thios and restart, tell if it works, then is great cus i will use ie next time i use dual monitor
+baduk23 [6k?\]: restart the browzer
+]
+;W[ic]C[TheThe [7k\]: same
+TheThe [7k\]: :-(
+LMP1 [-\]: this stone was smashed on the board
+TheThe [7k\]: there is even a button "get adobe flash player", but can't click that either
+]
+;B[le]
+;W[ng]
+;B[ie]
+;W[gc]
+;B[lg]C[highdan: nie jest dobrze z czarnym
+LMP1 [-\]: time: W 62, B 64 minutes
+celepa [?\]: wydaje sie ze r17 jest ok
+highdan: lub wręcz R12
+]
+;W[ph]C[highdan: hmmm ((
+highdan: r12 łączy
+baduk23 [6k?\]: what
+baduk23 [6k?\]: laczy?
+vdfgfdgfd: connects
+baduk23 [6k?\]: hey
+baduk23 [6k?\]: black seems very bad for now
+Bieber [1k\]: r12 r11 and?
+]
+;B[im]C[highdan: O! ))
+baduk23 [6k?\]: omg
+power [3k\]: is Koichiro a polish name?
+celepa [?\]: yes
+baduk23 [6k?\]: of w play r13
+baduk23 [6k?\]: its over
+Bieber [1k\]: yes, but very old and unpopular
+highdan: its right direction ))
+baduk23 [6k?\]: w can sacrifice g5 if he wants
+baduk23 [6k?\]: R13 come on
+LMP1 [-\]: Leszek just said "this is not resigning"
+baduk23 [6k?\]: hahahha
+LMP1 [-\]: after Koichi asked about the move
+baduk23 [6k?\]: what koichi said
+LMP1 [-\]: (he was gone while it was played)
+celepa [?\]: asked about the move? lol
+baduk23 [6k?\]: like a , what is that ?
+]
+;W[gm]C[highdan:  no at all its serious wekness
+LMP1 [-\]: just nodded
+]
+;B[oh]C[baduk23 [6k?\]: w wants to toy a bit
+Bieber [1k\]: Koichi zbladł
+Bieber [1k\]: (Koichi goes white)
+]
+;W[pj]C[Catlemur [8k\]: Nice nickname
+]
+;B[og]
+;W[nh]
+;B[oi]C[highdan: oj to woda na młyn Leszka
+]
+;W[rj]C[highdan: Koichi ma 4 grupy podatne na atak w tym 1 G7 gardzo podatną ((
+]
+;B[qc]C[highdan: O to jest to!
+]
+;W[ni]
+;B[oj]
+;W[ig]
+;B[li]C[highdan: Chyba biały przesadził, ale czy czarny to wykorzysta?
+]
+;W[nj]
+;B[ok]
+;W[qi]
+;B[oc]C[baduk23 [6k?\]: hey im back
+]
+;W[ob]
+;B[nd]
+;W[md]
+;B[od]
+;W[mc]
+;B[me]C[baduk23 [6k?\]: who wins?
+baduk23 [6k?\]: m16 n9 c15  ?
+baduk23 [6k?\]: enuf for w
+Arhiman [3d\]: n9 doesn't seem to capture
+baduk23 [6k?\]: oh
+]
+;W[lb]
+;B[nf]C[baduk23 [6k?\]: ur right
+Arhiman [3d\]: o10 is not valuable anymore anyway
+Nilatarion [3d\]: c15
+baduk23 [6k?\]: Agree
+baduk23 [6k?\]: making moyo better :D
+Arhiman [3d\]: territory ? :)
+baduk23 [6k?\]: terry with a little bit moyo
+baduk23 [6k?\]: XD
+LMP1 [-\]: Koichi looking at P6 group
+LMP1 [-\]: I think
+]
+;W[kf]C[baduk23 [6k?\]: hmm
+LMP1 [-\]: and played elsewhere
+LMP1 [-\]: :)
+baduk23 [6k?\]: if he cut off j15 will be even wrost for b
+baduk23 [6k?\]: if i was b i would play c16 now
+baduk23 [6k?\]: cus b losing already to me --
+baduk23 [6k?\]: b can't let w play c15... come on just c16 and be happy :/ i can't see any move better than that area
+]
+;B[ke]C[baduk23 [6k?\]: .....
+baduk23 [6k?\]: this is solid.. but for who is low on points, i would take care ^^
+baduk23 [6k?\]: b must trust on his yose
+baduk23 [6k?\]: HEh
+]
+;W[mf]
+;B[oe]
+;W[lf]
+;B[kb]C[baduk23 [6k?\]: m16 works
+baduk23 [6k?\]: w can kill b
+baduk23 [6k?\]: m16 l17 l16 k16 n18 o18 m19 , w will win by 1 lib
+]
+;W[mb]C[baduk23 [6k?\]: well
+baduk23 [6k?\]: let me read it again
+baduk23 [6k?\]: im sure w could play m16....
+baduk23 [6k?\]: l17 r18 s18 o19 k14 k15 l10 and b again on center trouble
+ajka [2d?\]: do you enjoy monologues?
+]
+;B[jf]
+;W[jg]
+;B[kg]
+;W[mg]
+;B[ji]
+;W[kj]C[baduk23 [6k?\]: this is making yose wrost
+baduk23 [6k?\]: xD
+baduk23 [6k?\]: for b later :D
+baduk23 [6k?\]: b can resign 
+baduk23 [6k?\]: i go watch another game, this is very over and w win big
+Murugandi [4d\]: Wrost Njet !
+]
+;B[mk]
+;W[nk]
+;B[nl]
+;W[ml]C[baduk23 [6k?\]: w+16
+ajka [2d?\]: I thought you're watching a different game now
+baduk23 [6k?\]: just come say score
+baduk23 [6k?\]: now i leave
+LMP1 [-\]: why not 17?
+baduk23 [6k?\]: w+16 and i am 100% of this. after that u can leave a comment that i am magic
+]
+;B[ll]
+;W[mj]
+;B[mm]
+;W[lj]C[bartosz [-\]: wasnt l11 better?
+]
+;B[ki]C[woodpecker [1k?\]: w pojemniku Leszka wygląda jakby leżały tylko 3 kamienie. Co słaba jakość wideo czy jeden znikł?
+]
+;W[jj]C[LMP1 [-\]: jeden ma po drugiej stronie
+LMP1 [-\]: przy kubku
+woodpecker [1k?\]: faktycznie, jest :)
+Bieber [1k\]: to legalne?
+]
+;B[ol]
+;W[km]
+;B[jn]C[Bieber [1k\]: bialy umarl?
+LMP1 [-\]: coś chyba padnie
+woodpecker [1k?\]: prędzej g7
+Bieber [1k\]: r10
+bartosz [-\]: g7 silne
+woodpecker [1k?\]: koichi da radę pewnie na bandzie
+LMP1 [-\]: W 22 min
+LMP1 [-\]: B 35 min
+bartosz [-\]: wszystkim da sie przezyc, pytanie czy wszsytkij jednoczesnie
+bartosz [-\]: a jesli tak to kosztem czego
+woodpecker [1k?\]: jeśli biały przeyzje na prawej bandzie to nie zaszkodzi bardziej grupie w g7
+Mariusz [2k\]: memento mori
+Bieber [1k\]: ale jak ma przezyc?
+woodpecker [1k?\]: skutecznie
+]
+;W[kn]
+;B[kl]C[ra4ok [6k\]: w j14 then j11 
+bartosz [-\]: j14 premature
+]
+;W[jm]
+;B[hn]C[Bieber [1k\]: ko
+Bieber [1k\]: o gre
+Bieber [1k\]: kto ma wiecej grozb?
+]
+;W[jl]
+;B[gn]C[bartosz [-\]: ko?
+Bieber [1k\]: jednak czarny mial wiecej
+bartosz [-\]: h15 
+]
+;W[ce]
+;B[jc]
+;W[qb]
+;B[rb]
+;W[ra]
+;B[rd]
+;W[qa]C[highdan: i teraz ...
+]
+;B[ge]C[highdan: ciekawe jak przyatakuje C7; C10 ?
+xasass: hey, is possible to be a pro, if a guy is about 4d, but then he wants to be a pro, and have conditions to just study go, and travell for study and get pro lessons, and only live by go and have 24h of time free to just study to be a pro and have no troubles with money. can that people be a pro? or is another kind of thing? like to be very very smart?
+]
+;W[gg]C[highdan: If he is 12 or 14 it is possible
+]
+;B[ec]C[xasass: and if about 21 years old? but he will stop all his life, the money, peoples will give his money for free for just study forever, he want to be a pro player forever and do only that for live, studying that all the time on day, no other things to do, but will be focussed only on go, all the day. possible to be pro? or maybe hard? :/
+]
+;W[fd]C[xasass: he already 4d 
+xasass: but never studied
+xasass: go*
+xasass: just did tsumegos and reading
+xasass: but now he got money to make the life only in go with travelling to another country to see new things and start new life in go
+highdan: My advice to him: study medicine like, be docktor dont waste your life
+]
+;B[cc]C[andy92 [1k\]: :)
+xasass: he just want to play go for living by that, money is not his problem, but just want to be pro and start to playing the pro tournaments
+xasass: he is very very rich
+xasass: don't need to work with nothing.
+xasass: but he wants to make a go life^^
+xasass: he did not see hikaru no go if someone is thinking...
+kyial [4k\]: hw shoukd follow his heart
+highdan: Be engineer, artist, etc. dont waste life
+kyial [4k\]: U can waste life doing medicne, art...
+xasass: engineer is too bad, im already one and im not from usa. but is not that good
+highdan: Sorry You can be doctor and very god player
+xasass: u get good in a mix of alot of things, and at all you are not good at all 
+highdan: I remember dutch pro who stay doctor
+xasass: He is a pro go player and doctor?
+Murugandi [4d\]: he chose being doctor over becoming professional go player
+Murugandi [4d\]: in Japan
+highdan: He was go pro then start study medicine
+]
+;W[fe]C[highdan: Also World Amateur Champion from Japan was docktor )) 
+highdan: I dont remember their names ((
+]
+;B[bd]C[xasass: Hey murugandi, i checked lots of u videos, ur good teacher and player, have u some hints for my friend? he is at 4d kgs now, my family and his family will pay all things he needed too, he got 21 years, he wanting to start a go carrer and play on pro tournaments, so if he focus go 24h peer day, studying and using the money to study with pros too on another country ( again money not a problem ) is possibile to him turn a pro maybe in some years?
+Murugandi [4d\]: Ronald Schlemper: http://senseis.xmp.net/?RonaldSchlemper
+highdan: Thank You ! ))
+]
+;W[fm]C[Murugandi [4d\]: xasass, thanks
+BlazejS [4k\]: im a paramedic, maybe its close enough :p
+Murugandi [4d\]: I think it will be extremely difficult to become pro when you're 21 years old and 4dan amateur
+Murugandi [4d\]: but you can always try if it is your dream
+highdan: Better be good engineer, than one of the weekest pro!
+xasass: yes , thats the biggest problem i hear talking with lots peoples with experience :(.  Even if he can foccus only in go for more than 5 years everyday without work on anything but only in go, even in this is hard? :(
+bartosz [-\]: xasass: come on...
+]
+;B[bf]
+;W[fn]
+;B[eo]C[highdan: If he is only 4 dan after 5 years, he is not talented I am sorry
+]
+;W[be]
+;B[ae]C[xasass: he just played go for 2 years
+highdan: Look at acktual European Champion
+xasass: he started at 19
+bartosz [-\]: how can 1d kgs ansewer if u can become a pro?
+]
+;W[cg]C[gergsf: you don't progress in go with talent, you progress by studying and playing
+xasass: ic
+xasass: yes and he don't have any study, all he did he said was tsumego on goproblems
+]
+;B[dl]C[xasass: i tough he was crazy cus somedays he was like 12hours a day looking for the page of tsumego
+highdan:  O! peyszedł czas, tylko czy nie za późno ?
+]
+;W[db]
+;B[dc]
+;W[eb]C[highdan: własnie... ((
+highdan: to moze byc koniec gry
+Bieber [1k\]: f17 
+]
+;B[ci]C[LMP1 [-\]: Leszkowi zostało 5 minut
+LMP1 [-\]: a nie, przepraszam - to Koichiemu
+]
+;W[ch]
+;B[dj]
+;W[bi]
+;B[hh]C[highdan: Leszek marzy jeszcze o ataku
+]
+;W[if]C[Bieber [1k\]: h13 
+highdan: Koichi daje mu szansę
+Bieber [1k\]: chcesz powiedziec, ze czarny hameci?
+highdan: Hamete to w joseki
+highdan: nie wiem dlaczego to okreslenie jest używane dla trick play
+highdan: bardzo mnie to razi
+andy92 [1k\]: racja
+Bieber [1k\]: bo trickplaye sa dwa rodzaje
+Bieber [1k\]: amatorskie i zwodowe
+Bieber [1k\]: te amatorskie to hamety
+highdan: sorry zerkij do sensei lbrary
+highdan: potem pogadamy
+highdan: przyczytałeś?
+]
+;B[hk]C[Bieber [1k\]: pytalem pro
+Bieber [1k\]: m12 l12 j11 ?
+Bieber [1k\]: bialy ma laczenie
+Leo12kyu: レシェク！レシェク！
+Bieber [1k\]: k9
+LMP1 [-\]: White in byo
+]
+;W[ik]C[LMP1 [-\]: last second move, first of many to come
+]
+;B[hj]C[Bieber [1k\]: k5 
+]
+;W[jo]C[tomash [1k\]: przygotowanie do h8
+tomash [1k\]: ?
+Bieber [1k\]: tak
+]
+;B[io]C[Catlemur [8k\]: ko?
+Bieber [1k\]: dobre ko dla bialyhc
+]
+;W[hl]C[Bieber [1k\]: ale tylko lokalnie
+tomash [1k\]: j6 j8 f9 ?
+Bieber [1k\]: f9 prawie dame
+]
+;B[di]C[Bieber [1k\]: bialy moze jeszcze myslec o j6 g9 
+Bieber [1k\]: ale chyba nie ma sensu
+]
+;W[ck]
+;B[dk]C[tomash [1k\]: ...
+woodpecker [1k?\]: Koichi poddał?
+LMP1 [-\]: time
+woodpecker [1k?\]: pytam, czy specjalnie nie stawiał czy nie słyszał czy co się stało
+LMP3 [-\]: 1 sekunde sie spoznil
+Bieber [1k\]: polozyl kamien i nie zdazyl nacisnac? :P
+LMP1 [-\]: potrącił ręką gosu gdy chciał nacisnąć zegar
+woodpecker [1k?\]: szkoda
+woodpecker [1k?\]: rozumiem, że Leszek żadnego fairplay nie zastosował i nie pozwolił grać dalej
+])

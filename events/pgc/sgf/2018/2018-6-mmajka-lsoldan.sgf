@@ -1,178 +1,472 @@
-(
-  ;BR[4d]CA[UTF-8]EV[Polish Go Championship 2018]FF[4]GM[1]GN[Round 6 - Board 4]KM[6.5]PB[Marcin Majka]PC[Poznań]PW[Leszek Sołdan]RE[B+R]RU[japanese]SZ[19]WR[4d]
-  ;B[qd]
-  ;W[dd]
-  ;B[dp]
-  ;W[pp]
-  ;B[oc]
-  ;W[qn]
-  ;B[cn]
-  ;W[fc]
-  ;B[jq]
-  ;W[cj]
-  ;B[qj]
-  ;W[jd]
-  ;B[bd]
-  ;W[cd]
-  ;B[be]
-  ;W[bc]
-  ;B[bb]
-  ;W[ac]
-  ;B[ch]
-  ;W[mc]
-  ;B[ei]
-  ;W[ej]
-  ;B[fj]
-  ;W[ek]
-  ;B[fi]
-  ;W[cl]
-  ;B[gl]
-  ;W[dn]
-  ;B[do]
-  ;W[en]
-  ;B[cm]
-  ;W[dl]
-  ;B[fo]
-  ;W[gm]
-  ;B[fl]
-  ;W[dm]
-  ;B[gn]
-  ;W[hm]
-  ;B[fm]
-  ;W[fn]
-  ;B[go]
-  ;W[dh]
-  ;B[di]
-  ;W[bh]
-  ;B[ci]
-  ;W[bi]
-  ;B[cg]
-  ;W[bk]
-  ;B[np]
-  ;W[dq]
-  ;B[cq]
-  ;W[eq]
-  ;B[bp]
-  ;W[hq]
-  ;B[ip]
-  ;W[hp]
-  ;B[ho]
-  ;W[jr]
-  ;B[kr]
-  ;W[ir]
-  ;B[kq]
-  ;W[gr]
-  ;B[pm]
-  ;W[pn]
-  ;B[nm]
-  ;W[ij]
-  ;B[ih]
-  ;W[mm]
-  ;B[nn]
-  ;W[mk]
-  ;B[lj]
-  ;W[kj]
-  ;B[kk]
-  ;W[ki]
-  ;B[lk]
-  ;W[gh]
-  ;B[hi]
-  ;W[li]
-  ;B[mj]
-  ;W[mi]
-  ;B[jk]
-  ;W[ii]
-  ;B[hh]
-  ;W[nj]
-  ;B[nk]
-  ;W[ik]
-  ;B[gc]
-  ;W[gb]
-  ;B[ec]
-  ;W[eb]
-  ;B[fd]
-  ;W[fb]
-  ;B[ed]
-  ;W[cc]
-  ;B[hc]
-  ;W[cf]
-  ;B[ce]
-  ;W[de]
-  ;B[df]
-  ;W[ef]
-  ;B[dg]
-  ;W[gd]
-  ;B[id]
-  ;W[ge]
-  ;B[je]
-  ;W[ie]
-  ;B[kd]
-  ;W[jc]
-  ;B[if]
-  ;W[kc]
-  ;B[he]
-  ;W[hb]
-  ;B[me]
-  ;W[oj]
-  ;B[ok]
-  ;W[pj]
-  ;B[qi]
-  ;W[oh]
-  ;B[pg]
-  ;W[rl]
-  ;B[pk]
-  ;W[mg]
-  ;B[og]
-  ;W[ph]
-  ;B[pi]
-  ;W[oi]
-  ;B[nh]
-  ;W[ng]
-  ;B[qh]
-  ;W[ni]
-  ;B[ld]
-  ;W[of]
-  ;B[pf]
-  ;W[lc]
-  ;B[kg]
-  ;W[ne]
-  ;B[nd]
-  ;W[jl]
-  ;B[ml]
-  ;W[md]
-  ;B[le]
-  ;W[jn]
-  ;B[hl]
-  ;W[il]
-  ;B[im]
-  ;W[mo]
-  ;B[no]
-  ;W[kf]
-  ;B[jg]
-  ;W[lg]
-  ;B[lf]
-  ;W[ll]
-  ;B[jj]
-  ;W[ji]
-  ;B[kl]
-  ;W[lm]
-  ;B[hn]
-  ;W[km]
-  ;B[mk]
-  ;W[jm]
-  ;B[lp]
-  ;W[mp]
-  ;B[mq]
-  ;W[lo]
-  ;B[ko]
-  ;W[nq]
-  ;B[mn]
-  ;W[ln]
-  ;B[oq]
-  ;W[nr]
-  ;B[or]
-  ;W[mr]
-  ;B[lq]
-  ;W[io]
-  ;B[jp]
+(;FF[4]
+GM[1]
+PC[OGS: http://online-go.com/game/review/353168]
+BR[4d]
+WR[4d]
+CP[online-go.com]
+TM[0]OT[0 none]
+RE[?]
+SZ[19]
+KM[6.5]
+RU[japanese]
+C[
+
+-- chat --
+dead_robot: dzieńdoberek
+LMP2018-1: Zegary wystartowane, Higakiego jeszcze nie ma przy desce
+LMP2018-1: Wyniki: http://mp.go.art.pl/2018/pl/wyniki
+LMP2018-1: Zdjęcia z turnieju na fanpege Honte: https://www.facebook.com/honte.poznan albo w wydarzeniu https://www.facebook.com/events/2349516711728504/
+LMP2018-1: Wyniki towarzyszącego po 3. rundzie: http://mp.go.art.pl/2018/pl/turniej-towarzyszacy
+Sadiker: Ważna partia. Jak cz wygra to Koichi jest mistrzem
+LMP2018-1: niekoniecznie, jeśli Koich też przegra a potem Leszek z nim wygra to Leszek będzie mistrzem
+dead_robot: :)
+dead_robot: Ech. Jakbym wziął udział w elminacjach, dostał się, wygrał kilka gier, pokonał Koichiego, to też byłbym mistrzem. 
+
+]
+
+;B[qd]
+;W[dd]C[
+
+-- chat --
+dead_robot: bycie mistrzem przegranych szans ma jednak swój urok...
+
+]
+
+;B[dp]
+;W[pp]
+;B[oc]C[
+
+-- chat --
+Sadiker: Leszek polubił shimari
+Sadiker: Od hoshii też to sie nazywa shimari?
+
+]
+
+;W[qn]
+;B[cn]
+;W[fc]
+;B[jq]C[
+
+-- chat --
+dead_robot: tengen!
+
+]
+
+;W[cj]
+;B[qj]C[
+
+-- chat --
+dead_robot: tak
+dead_robot: choć ciężko przez gardło przechodzi
+
+]
+
+;W[jd]C[
+
+-- chat --
+dead_robot: ostatnia szansa na tengen
+dead_robot: co ich powstrzymuje?
+
+]
+
+;B[bd]
+;W[cd]C[
+
+-- chat --
+Sadiker: Wydaje mi sie, ze przez rozwiniecia od shimari tengen jest malo wart
+Sadiker: I bym wolał b15 zamiast b16
+
+]
+
+;B[be]
+;W[bc]
+;B[bb]
+;W[ac]
+;B[ch]
+;W[mc]C[
+
+-- chat --
+Sadiker: N17 dziwne, tj duże ale chyba mało ważne
+
+]
+
+;B[ei]
+;W[ej]
+;B[fj]
+;W[ek]
+;B[fi]
+;W[cl]
+;B[gl]
+;W[dn]
+;B[do]
+;W[en]
+;B[cm]
+;W[dl]
+;B[fo]C[
+
+-- chat --
+jfrejlak: Higaki  w każdej chwili może aktywować aji w lewym górnym rogu
+
+]
+
+;W[gm]
+;B[fl]C[
+
+-- chat --
+jfrejlak: d18-c18-h17
+LMP2018-1: lizzie daje 69% na czarnego teraz
+
+]
+
+;W[dm]
+;B[gn]
+;W[hm]
+;B[fm]
+;W[fn]
+;B[go]
+;W[dh]
+;B[di]C[
+
+-- chat --
+LMP2018-1: teraz 80%
+
+]
+
+;W[bh]
+;B[ci]
+;W[bi]
+;B[cg]
+;W[bk]
+;B[np]
+;W[dq]
+;B[cq]
+;W[eq]C[
+
+-- chat --
+Sadiker: A teraz?
+LMP2018-1: 84%
+LMP2018-1: po C2
+
+]
+
+;B[bp]C[
+
+-- chat --
+Sadiker: Zaiste chędogo
+LMP2018-1: spadło na 81%
+LMP2018-1: :)
+LMP2018-1: no 82%.. ciągle liczy
+
+]
+
+;W[hq]C[
+
+-- chat --
+LMP2018-1: z wbudowanej karty graficznej z lapka ciężko wymusić dużą dokładność :)
+
+]
+
+;B[ip]
+;W[hp]
+;B[ho]C[
+
+-- chat --
+Sadiker: Czy to żyje według lizzie
+LMP2018-1: tak
+
+]
+
+;W[jr]C[
+
+-- chat --
+LMP2018-1: L2, J2, D2
+LMP2018-1: L2, J2, M3, D2 miało być
+LMP2018-1: wg lizzie
+Sadiker: A potem?
+LMP2018-1: potem lizzie gra tenuki :)
+
+]
+
+;B[kr]
+;W[ir]C[
+
+-- chat --
+dead_robot: ciekawe co czarny knuje, że nie dokłada tam kamienia
+
+]
+
+;B[kq]C[
+
+-- chat --
+Sadiker: Ale gdzie?
+LMP2018-1: na górę G16
+LMP2018-1: ale teraz po L3 zamiast M3 to rozważa oddać grupę i zagrać O3
+LMP2018-1: daje O3 i D2 na równi na 25%
+LMP2018-1: po 10k playoutów
+LMP2018-1: B 49m, W 48m
+
+]
+
+;W[gr]
+;B[pm]
+;W[pn]
+;B[nm]
+;W[ij]
+;B[ih]
+;W[mm]
+;B[nn]
+;W[mk]
+;B[lj]
+;W[kj]
+;B[kk]C[
+
+-- chat --
+dead_robot: oh
+dead_robot: miałem zatrzymaną grę... na 61 ruchu :-)
+
+]
+
+;W[ki]
+;B[lk]
+;W[gh]C[
+
+-- chat --
+LMP2018-1: Leszek zagrał i poszedł
+
+]
+
+;B[hi]
+;W[li]
+;B[mj]
+;W[mi]
+;B[jk]
+;W[ii]
+;B[hh]
+;W[nj]
+;B[nk]C[
+
+-- chat --
+jfrejlak: jak leela teraz ocenia grę?
+LMP2018-1: B 86,7%
+LMP2018-1: B 38m, W 13m
+
+]
+
+;W[ik]
+;B[gc]
+;W[gb]
+;B[ec]
+;W[eb]
+;B[fd]
+;W[fb]
+;B[ed]C[
+
+-- chat --
+LMP2018-1: teraz 93%
+jfrejlak: Oczywiście dla Higakiego
+
+]
+
+;W[cc]
+;B[hc]C[
+
+-- chat --
+LMP2018-1: tak,
+jfrejlak: Leszek ma tylko prawy dolny róg, kilka punktów w lewym górnym i kilka grup z dwojgiem oczu
+
+]
+
+;W[cf]
+;B[ce]
+;W[de]
+;B[df]
+;W[ef]
+;B[dg]
+;W[gd]C[
+
+-- chat --
+LMP2018-3: Czy w tym dolnym nie ma inwazji?
+dead_robot: ale czarny w centrum też nie ma zbyt wiele, o ile nie dogra
+jfrejlak: w dolnym sansan daje chyba tylko ko
+jfrejlak: a q3 jest dużą redukcją i daje czarnemu terenik
+jfrejlak: nie wiem co większe
+LMP2018-1: lizzie mówi san san :)
+LMP2018-1: lubi jeszcze G14
+
+]
+
+;B[id]
+;W[ge]
+;B[je]
+;W[ie]C[
+
+-- chat --
+jfrejlak: wygląda jakby Higaki się pogubił
+jfrejlak: chyba musi poświęcić kolejne kamienie
+
+]
+
+;B[kd]
+;W[jc]
+;B[if]C[
+
+-- chat --
+jfrejlak: o - coś takiego
+
+]
+
+;W[kc]C[
+
+-- chat --
+jfrejlak: ale teraz chyba Leszek powinien zignorować atari i zagrać
+
+]
+
+;B[he]C[
+
+-- chat --
+jfrejlak: no właśnie
+
+]
+
+;W[hb]C[
+
+-- chat --
+quaigon: czarny chyba nie zyskal duzo na gorze
+jfrejlak: rozpłaszczył białego
+jfrejlak: i osłabił środkową grupę Leszka
+quaigon: chociaz m11 to praktycznie teren juz
+
+]
+
+;B[me]C[
+
+-- chat --
+jfrejlak: haha
+
+]
+
+;W[oj]
+;B[ok]C[
+
+-- chat --
+LMP2018-1: leszek byo
+
+]
+
+;W[pj]
+;B[qi]
+;W[oh]
+;B[pg]
+;W[rl]
+;B[pk]
+;W[mg]
+;B[og]
+;W[ph]
+;B[pi]C[
+
+-- chat --
+quaigon: troche dziwny ruch
+
+]
+
+;W[oi]
+;B[nh]
+;W[ng]
+;B[qh]
+;W[ni]
+;B[ld]
+;W[of]
+;B[pf]
+;W[lc]
+;B[kg]
+;W[ne]C[
+
+-- chat --
+Sadiker: Jak tam lizzie?
+
+]
+
+;B[nd]C[
+
+-- chat --
+LMP2018-1: 95%
+
+]
+
+;W[jl]
+;B[ml]
+;W[md]
+;B[le]
+;W[jn]
+;B[hl]
+;W[il]
+;B[im]
+;W[mo]
+;B[no]
+;W[kf]C[
+
+-- chat --
+Sadiker: Jak żyć?
+
+]
+
+;B[jg]
+;W[lg]
+;B[lf]
+;W[ll]
+;B[jj]
+;W[ji]
+;B[kl]
+;W[lm]C[
+
+-- chat --
+dead_robot: W Polsce wystarczy odychać, ale się nie zaciągać
+dead_robot: ale na tym gobanie to nie wiem
+
+]
+
+;B[hn]
+;W[km]
+;B[mk]
+;W[jm]C[
+
+-- chat --
+Sadiker: N12, tenuki L12 i zyje
+
+]
+
+;B[lp]C[
+
+-- chat --
+dead_robot: :)
+
+]
+
+;W[mp]
+;B[mq]C[
+
+-- chat --
+dead_robot: widzę jeszcze inny wariant, ale Twój bardziej prawdopodobny
+
+]
+
+;W[lo]
+;B[ko]
+;W[nq]
+;B[mn]
+;W[ln]
+;B[oq]
+;W[nr]
+;B[or]
+;W[mr]
+;B[lq]
+;W[io]
+;B[jp]C[
+
+-- chat --
+LMP2018-1: B+R
+
+]
+
 )

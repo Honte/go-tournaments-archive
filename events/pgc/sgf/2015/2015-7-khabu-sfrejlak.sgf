@@ -1,305 +1,943 @@
-(
-  ;BR[5d]BT[Kraków]CA[UTF-8]DT[2016-01-10]EV[Polish Go Championship 2015]FF[4]GM[1]GN[Round 7 - Board 2]KM[6.50]PB[Koichiro Habu]PC[Warszawa]PW[Stanisław Frejlak]RE[W+19.5]RU[japanese]ST[2]SZ[19]WR[5d]WT[Warszawa]
-  ;B[cp]
-  ;W[pd]
-  ;B[qf]
-  ;W[nc]
-  ;B[pq]
-  ;W[cd]
-  ;B[ql]
-  ;W[ep]
-  ;B[gq]
-  ;W[cq]
-  ;B[cm]
-  ;W[dn]
-  ;B[bq]
-  ;W[dp]
-  ;B[cr]
-  ;W[dq]
-  ;B[bo]
-  ;W[co]
-  ;B[bp]
-  ;W[hp]
-  ;B[iq]
-  ;W[hq]
-  ;B[hr]
-  ;W[gr]
-  ;B[fr]
-  ;W[ir]
-  ;B[gs]
-  ;W[jq]
-  ;B[gp]
-  ;W[ip]
-  ;B[gn]
-  ;W[dr]
-  ;B[lq]
-  ;W[dm]
-  ;B[cl]
-  ;W[dl]
-  ;B[ho]
-  ;W[ck]
-  ;B[bk]
-  ;W[bj]
-  ;B[al]
-  ;W[cj]
-  ;B[jo]
-  ;W[kp]
-  ;B[ln]
-  ;W[lp]
-  ;B[mq]
-  ;W[mn]
-  ;B[lm]
-  ;W[mp]
-  ;B[nq]
-  ;W[io]
-  ;B[in]
-  ;W[jn]
-  ;B[ko]
-  ;W[im]
-  ;B[hn]
-  ;W[jp]
-  ;B[mm]
-  ;W[jm]
-  ;B[gl]
-  ;W[nm]
-  ;B[nl]
-  ;W[nn]
-  ;B[ol]
-  ;W[np]
-  ;B[ik]
-  ;W[id]
-  ;B[oo]
-  ;W[op]
-  ;B[pp]
-  ;W[oq]
-  ;B[or]
-  ;W[nr]
-  ;B[pr]
-  ;W[kr]
-  ;B[ed]
-  ;W[df]
-  ;B[cc]
-  ;W[bc]
-  ;B[ef]
-  ;W[eg]
-  ;B[bd]
-  ;W[ce]
-  ;B[bb]
-  ;W[dc]
-  ;B[cb]
-  ;W[db]
-  ;B[ic]
-  ;W[jc]
-  ;B[jd]
-  ;W[hd]
-  ;B[ib]
-  ;W[kc]
-  ;B[kd]
-  ;W[lc]
-  ;B[dd]
-  ;W[fc]
-  ;B[gc]
-  ;W[fd]
-  ;B[gd]
-  ;W[fe]
-  ;B[ge]
-  ;W[if]
-  ;B[hf]
-  ;W[je]
-  ;B[ig]
-  ;W[ke]
-  ;B[jf]
-  ;W[ie]
-  ;B[hg]
-  ;W[pg]
-  ;B[pf]
-  ;W[og]
-  ;B[of]
-  ;W[ng]
-  ;B[qc]
-  ;W[qd]
-  ;B[rd]
-  ;W[re]
-  ;B[rc]
-  ;W[qe]
-  ;B[pc]
-  ;W[od]
-  ;B[rf]
-  ;W[se]
-  ;B[qi]
-  ;W[jk]
-  ;B[kl]
-  ;W[hk]
-  ;B[hl]
-  ;W[ij]
-  ;B[il]
-  ;W[jl]
-  ;B[jj]
-  ;W[kk]
-  ;B[ji]
-  ;W[lk]
-  ;B[mk]
-  ;W[li]
-  ;B[lh]
-  ;W[mh]
-  ;B[lg]
-  ;W[mj]
-  ;B[ni]
-  ;W[pi]
-  ;B[nj]
-  ;W[qh]
-  ;B[mg]
-  ;W[mf]
-  ;B[lf]
-  ;W[ob]
-  ;B[nf]
-  ;W[me]
-  ;B[ri]
-  ;W[rh]
-  ;B[sg]
-  ;W[qj]
-  ;B[rj]
-  ;W[sh]
-  ;B[pb]
-  ;W[jg]
-  ;B[jh]
-  ;W[kf]
-  ;B[kh]
-  ;W[gb]
-  ;B[le]
-  ;W[ld]
-  ;B[ac]
-  ;W[pn]
-  ;B[qn]
-  ;W[pm]
-  ;B[qm]
-  ;W[po]
-  ;B[qo]
-  ;W[rb]
-  ;B[pj]
-  ;W[oj]
-  ;B[pk]
-  ;W[nh]
-  ;B[mi]
-  ;W[oi]
-  ;B[lj]
-  ;W[ph]
-  ;B[oc]
-  ;W[nb]
-  ;B[ne]
-  ;W[md]
-  ;B[nd]
-  ;W[sc]
-  ;B[ek]
-  ;W[fo]
-  ;B[go]
-  ;W[br]
-  ;B[ar]
-  ;W[bs]
-  ;B[dk]
-  ;W[bn]
-  ;B[cn]
-  ;W[bm]
-  ;B[bl]
-  ;W[fk]
-  ;B[el]
-  ;W[do]
-  ;B[ch]
-  ;W[di]
-  ;B[dh]
-  ;W[eh]
-  ;B[ei]
-  ;W[bh]
-  ;B[fn]
-  ;W[aq]
-  ;B[dj]
-  ;W[ci]
-  ;B[bi]
-  ;W[aj]
-  ;B[an]
-  ;W[ap]
-  ;B[ao]
-  ;W[fi]
-  ;B[ej]
-  ;W[en]
-  ;B[fj]
-  ;W[bf]
-  ;B[aq]
-  ;W[fp]
-  ;B[hc]
-  ;W[gh]
-  ;B[ff]
-  ;W[ee]
-  ;B[mr]
-  ;W[hi]
-  ;B[gj]
-  ;W[hh]
-  ;B[fg]
-  ;W[fh]
-  ;B[ih]
-  ;W[hj]
-  ;B[es]
-  ;W[gk]
-  ;B[fl]
-  ;W[er]
-  ;B[fq]
-  ;W[ds]
-  ;B[ka]
-  ;W[lb]
-  ;B[sd]
-  ;W[pa]
-  ;B[si]
-  ;W[qb]
-  ;B[ok]
-  ;W[sf]
-  ;B[em]
-  ;W[is]
-  ;B[kn]
-  ;W[ae]
-  ;B[be]
-  ;W[ca]
-  ;B[ba]
-  ;W[da]
-  ;B[fs]
-  ;W[hs]
-  ;B[om]
-  ;W[on]
-  ;B[ad]
-  ;W[af]
-  ;B[la]
-  ;W[ma]
-  ;B[ia]
-  ;W[ga]
-  ;B[kg]
-  ;W[ls]
-  ;B[ms]
-  ;W[lr]
-  ;B[lo]
-  ;W[mo]
-  ;B[ll]
-  ;W[gi]
-  ;B[hm]
-  ;W[jf]
-  ;B[gr]
-  ;W[gg]
-  ;B[gf]
-  ;W[dg]
-  ;B[kj]
-  ;W[cs]
-  ;B[am]
-  ;W[cg]
-  ;B[ja]
-  ;W[fb]
-  ;B[pl]
-  ;W[eq]
-  ;B[ns]
-  ;W[kq]
-  ;B[jb]
-  ;W[hb]
-  ;B[kb]
-  ;W[ha]
-  ;B[ak]
-  ;W[ii]
-  ;B[he]
-  ;W[as]
-)
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[5400]OT[1x60 byo-yomi]
+GN[Koichiro Habu 5d (black) vs. Stanisław Frejlak 5d (white)]PW[Stanisław Frejlak]PB[Koichiro Habu]WR[5d]BR[5d]DT[2016-01-10]PC[The KGS Go Server at http://www.gokgs.com/]WT[Warszawa]BT[Kraków]C[LMP2 [-\]: hello hello
+LMP2 [-\]: we've just eaten lunch
+LMP2 [-\]: and discussed the present state and future plans of the polish go community and association
+LMP2 [-\]: as usual, there were a lot of plans and not many clear conclusions
+]RE[W+19.50]
+;B[cp]C[LMP2 [-\]: the players have bowed, asked me whether I was ready, and started playing
+]
+;W[pd]
+;B[qf]
+;W[nc]
+;B[pq]
+;W[cd]
+;B[ql]
+;W[ep]
+;B[gq]
+;W[cq]
+;B[cm]C[LMP2 [-\]: both players are placing the stones very gently
+LMP2 [-\]: watch the video stream at: https://www.youtube.com/watch?v=g7jJlYnwur0
+]
+;W[dn]
+;B[bq]
+;W[dp]
+;B[cr]
+;W[dq]
+;B[bo]
+;W[co]
+;B[bp]
+;W[hp]
+;B[iq]
+;W[hq]
+;B[hr]
+;W[gr]
+;B[fr]
+;W[ir]
+;B[gs]
+;W[jq]
+;B[gp]
+;W[ip]
+;B[gn]
+;W[dr]
+;B[lq]
+;W[dm]
+;B[cl]C[ThiGar [4k\]: Is the go community growing, in Poland?
+]
+;W[dl]C[LMP2 [-\]: no
+ThiGar [4k\]: ty
+Song [4d\]: is that live stream for all of the games or just the pro's?
+LMP2 [-\]: the other games are further at the distance
+DarkAvatar [6d?\]: looks like black must h5 now else w will g5 next
+LMP2 [-\]: I'm getting in the way with my laptop there
+Song [4d\]: haha
+Song [4d\]: funny is fine we can only see the pro's game anyways
+]
+;B[ho]
+;W[ck]
+;B[bk]
+;W[bj]
+;B[al]C[LMP2 [-\]: they played so fast, now stopped playing completely
+DarkAvatar [6d?\]: tell them to play faster please
+]
+;W[cj]
+;B[jo]
+;W[kp]C[LMP2 [-\]: bridge players being noisy again
+LMP3 [-\]: maybe you wont fall asleep thanks to that, LMP2 :P
+LMP2 [-\]: black put headphones on his ears
+DarkAvatar [6d?\]: m6 is kind of only move here
+]
+;B[ln]C[DarkAvatar [6d?\]: L5...
+]
+;W[lp]
+;B[mq]C[LMP2 [-\]: L5 vulgar, now there's L6 for later
+]
+;W[mn]C[DarkAvatar [6d?\]: L5 would allow N4 next, now white does not have a good way to make shape
+ThiGar [4k\]: It seems white has gotten a better start, isn't it?
+]
+;B[lm]
+;W[mp]C[DarkAvatar [6d?\]: depends on how this will end, if black will get wall, some points and sente white white will be making shape then black si better
+]
+;B[nq]C[ThiGar [4k\]: ty, Dvatar
+DarkAvatar [6d?\]: o3 is slow, would look cooler at p5 :)
+]
+;W[io]
+;B[in]
+;W[jn]
+;B[ko]C[LMP2 [-\]: wouldn't it have been sufficiently good for black to capture k6 ?
+DarkAvatar [6d?\]: yea, with k6 i would prefer black in the game
+LMP2 [-\]: ah he captures anyway
+LMP2 [-\]: I'm blind
+]
+;W[im]
+;B[hn]C[DarkAvatar [6d?\]: but in slightly worse shape
+]
+;W[jp]C[DarkAvatar [6d?\]: it looks like black now plays for the kill
+LMP2 [-\]: ah because counteratari and false eye
+ThiGar [4k\]: ok, black makes the wall anyways
+DarkAvatar [6d?\]: if b k7 now then it was better to k7 directly
+]
+;B[mm]C[ThiGar [4k\]: n7 choses the wall instead of the kill
+DarkAvatar [6d?\]: black wants to protect the weakness in a cool way
+ThiGar [4k\]: you're right ^^
+DarkAvatar [6d?\]: though white can counter the wall with g8 easily later
+DarkAvatar [6d?\]: if black k7 then k8 - black ends with neutral points
+DarkAvatar [6d?\]: so black must make sure he gets to g9 first
+ThiGar [4k\]: yes, g9  would threaten a peep at e9 too
+]
+;W[jm]
+;B[gl]C[gwidon: Trouble for W
+ThiGar [4k\]: g9 instead of g8 was utterly possible, no?
+Burton [6k\]: after o6 w makes tiny life
+DarkAvatar [6d?\]: this is good for b
+LMP2 [-\]: white finally hisses
+DarkAvatar [6d?\]: with k7 w is trying to force black to run into center but that is exactly what would black do even if white didnt spend that one move there :)
+LMP2 [-\]: white 1 hour left, black 1:11
+Warfreak2 [-\]: goooo siasio
+Warfreak2 [-\]: higaki, why aren't you playing
+LMP2 [-\]: white slapping his neck lightly with his palm
+LMP2 [-\]: higaki didn't manage to qualify
+LMP2 [-\]: tough competition this year
+Warfreak2 [-\]: scandal
+LMP2 [-\]: white leaning over the board, reading
+]
+;W[nm]C[LMP2 [-\]: now white leaning back, black over the board
+awesome [3k\]: is there video feed for this game too?
+LMP2 [-\]: we'll get the main camera here shortly
+awesome [3k\]: thanks
+LMP2 [-\]: just waiting for Mateusz and Sebastian to finish their review
+]
+;B[nl]C[LMP2 [-\]: black played the stone resolutely
+]
+;W[nn]C[LMP2 [-\]: we've just gotten the camera, see: https://www.youtube.com/watch?v=g7jJlYnwur0
+]
+;B[ol]
+;W[np]
+;B[ik]C[LMP2 [-\]: smashed the stone really hard
+LMP2 [-\]: this is the loudest I've ever heard Koichiro play
+BubbIes [3d?\]: Is he mad? D:
+LMP2 [-\]: it almost woke me up
+awesome [3k\]: should w tenuki?
+Bouton [?\]: r15?
+Spirit [-\]: Interesting game so far
+Spirit [-\]: O6 O4 feel slow to me
+]
+;W[id]
+;B[oo]C[awesome [3k\]: l2
+]
+;W[op]
+;B[pp]C[LMP2 [-\]: black looked at the ceiling before playing his move
+LMP2 [-\]: I've verified there was no hint on the ceiling
+awesome [3k\]: :
+awesome [3k\]: )
+Spirit [-\]: maybe it's a 3D picture that's only viewable from his perspective?
+Warfreak2 [-\]: imagine the scandal
+]
+;W[oq]C[Spirit [-\]: Good preparation I'd say
+]
+;B[or]
+;W[nr]
+;B[pr]
+;W[kr]
+;B[ed]
+;W[df]
+;B[cc]
+;W[bc]
+;B[ef]
+;W[eg]
+;B[bd]C[LMP2 [-\]: white again smiled seeing this move
+Bouton [?\]: d16 for sure because it's a trick
+LMP2 [-\]: black got up and left, presumably bathroom break, it's the first time either of the players stood up
+HW [-\]: did he look at the ceiling again?
+LMP2 [-\]: not this time
+LMP2 [-\]: white is making funny faces
+LMP2 [-\]: both players laugh
+BubbIes [3d?\]: Who is the girl with the black hair and why is her hand down her skirt? :O
+LMP2 [-\]: that's Diana
+LMP1 [-\]: she has a pocket there
+BubbIes [3d?\]: oh
+Warfreak2 [-\]: lol
+LMP1 [-\]: can we see the pocket, please, LMP3?
+]
+;W[ce]
+;B[bb]
+;W[dc]C[Warfreak2 [-\]: you know that womens' clothes have too few pockets, when "hand down her skirt" is the first explanation that springs to mind
+]
+;B[cb]
+;W[db]C[awesome [3k\]: if I can't see how a girl looks like I automatically assume she is hot
+Warfreak2 [-\]: either that or you've got a dirty mind
+Bouton [?\]: poor b
+Warfreak2 [-\]: is it diano koszegi?
+Hatesphere [2d?\]: I think thats not wath black really wanted ...
+Warfreak2 [-\]: (i can't watch live streams on youtube because of no flash)
+BubbIes [3d?\]: Is she laughing at us now?!
+Warfreak2 [-\]: *diana
+HW [-\]: don't look like it warfreak2
+LMP1 [-\]: no, she laughed 20 seconds ago :)
+LMP2 [-\]: yes, she read your message
+awesome [3k\]: youtube works with html5, I watch it withouy flash
+LMP1 [-\]: huh, now we are contradicting ourselves
+LMP3 [-\]: and I wont show you my pocket
+Warfreak2 [-\]: youtube does work for me with html5, if it's not a livestream
+LMP2 [-\]: because there is no pocket
+LMP2 [-\]: you still have some explaining to do
+HW [-\]: I thought transcribing games was serious business
+LMP2 [-\]: I forgot about the game totally
+Warfreak2 [-\]: :D
+LMP2 [-\]: Mateusz had to help me with the sequence
+Warfreak2 [-\]: did they play 100 moves?
+bert [?\]: so, is Diana a pro or not?
+LMP2 [-\]: not yet
+awesome [3k\]: when I right- click on the stream it says "about the html5 player"
+Warfreak2 [-\]: awesome, are you denying my own lived experience?
+moopitz [1d\]: only your perception of it
+awesome [3k\]: you will never accept being caught technically wrong, will you?
+Warfreak2 [-\]: what am i technically wrong about?
+Spirit [-\]: Diana is 1p in korea
+Warfreak2 [-\]: where did i say "it is impossible to watch youtube livestreams without flash"?
+Warfreak2 [-\]: i said *i* can't because i don't have flash
+awesome [3k\]: exactly... :D
+Warfreak2 [-\]: i didn't say not having flash is a reason that it is impossible in general
+Warfreak2 [-\]: i had flash, i could watch youtube livestreams, i uninstalled flash, now i cannot
+awesome [3k\]: exactly to ALL of the above
+Warfreak2 [-\]: so it is reasonable to say that not having flash is the reason i cannot watch youtube livestreams
+awesome [3k\]: so you are NOT technically wrong!!!!
+Warfreak2 [-\]: yes, it is your poor reading comprehension
+moopitz [1d\]: how is any of this relevant to the game
+LMP2 [-\]: guys, you're getting offtopic
+HW [-\]: tengen
+HW [-\]: looks pretty bad here
+LMP2 [-\]: please, let's keep the discussion relevant to Diana's pocket
+LMP2 [-\]: I mean, err, the game
+awesome [3k\]: lol
+Warfreak2 [-\]: :D
+Warfreak2 [-\]: goooo siasio
+Warfreak2 [-\]: crush the human
+BubbIes [3d?\]: LMP2 Diana is being mean :(
+bert [?\]: namely, during an USGO game a couple of days ago sombody was naming european pros and left Diana out
+]
+;B[ic]C[LMP2 [-\]: they play moves when I'm not looking
+LMP1 [-\]: Player profiles, results and game records: http://mp.go.art.pl
+LMP1 [-\]: Live muppetry: https://www.youtube.com/watch?v=g7jJlYnwur0
+]
+;W[jc]C[LMP2 [-\]: Siasio sitting very straight, deep in concentration
+ThiGar [4k\]: game pretty much won by black
+Warfreak2 [-\]: siasio guaranteed 2nd place ic
+Hatesphere [2d?\]: h16 looks like the best answer
+]
+;B[jd]
+;W[hd]C[Hatesphere [2d?\]: l no choice ?
+Hatesphere [2d?\]: l17
+Hatesphere [2d?\]: hum may bve not; forgot about d16 aji
+]
+;B[ib]
+;W[kc]C[Eizero [?\]: d16 f17 g17?
+]
+;B[kd]C[Hatesphere [2d?\]: i would play g first i think
+Hatesphere [2d?\]: g17
+bert [?\]: j18 looks unreasonable
+]
+;W[lc]
+;B[dd]C[hitaus [7k?\]: bert, really? Isn't it playing nice miai for B to get nice top or huge center?
+]
+;W[fc]
+;B[gc]C[LMP2 [-\]: white nodding
+bert [?\]: let'see
+]
+;W[fd]
+;B[gd]
+;W[fe]C[HW [-\]: i got it right, yay
+]
+;B[ge]C[hitaus [7k?\]: HW, about tengen?
+HW [-\]: no about this sequence
+hitaus [7k?\]: tengen is darkening
+rayheart [?\]: Which tournameent uis this?
+LMP2 [-\]: polish go championship
+rayheart [?\]: Why is there a so long discussion about Dia Pockets here?
+LMP2 [-\]: black massaging the back of his neck
+]
+;W[if]C[awesome [3k\]: looks like w is freezing
+hitaus [7k?\]: so, where will W invade with the sente? reduce center nice, or jump somewhere in right?
+]
+;B[hf]
+;W[je]
+;B[ig]
+;W[ke]
+;B[jf]
+;W[ie]C[Hatesphere [2d?\]: s16 is really big
+HW [-\]: bad exchange?
+Kery [?\]: isn't there somebody to give Koichi a massage?
+awesome [3k\]: p14
+]
+;B[hg]C[HW [-\]: d19 g18 threatnes h17 now
+HW [-\]: oh nvm
+Ardziuna [1k\]: now looks good for b
+harpo [-\]: a17 big
+HW [-\]: my idea was b j15 instead of k14
+Ardziuna [1k\]: w must invide 
+]
+;W[pg]C[LMP2 [-\]: played very resolutely
+bert [?\]: looks like an emergency measure
+Song [4d\]: aigoo this seems interesting
+awesome [3k\]: r17
+]
+;B[pf]
+;W[og]C[Song [4d\]: r17?
+Song [4d\]: I would thought r13
+awesome [3k\]: was that bad?
+]
+;B[of]C[Song [4d\]: r17?
+awesome [3k\]: yes
+Song [4d\]: is an option but I don't think it's something u want to play when white goes q13 given how the board looks
+]
+;W[ng]
+;B[qc]
+;W[qd]
+;B[rd]
+;W[re]
+;B[rc]
+;W[qe]C[Song [4d\]: the timing tho..
+]
+;B[pc]
+;W[od]
+;B[rf]C[gwidon: Oho Koichiro poszedła na ostro 
+]
+;W[se]
+;B[qi]
+;W[jk]C[harlej9 [1k\]: so if Sasio wins Maek will have the 3rd place?
+]
+;B[kl]C[Song [4d\]: mm nice
+]
+;W[hk]C[Song [4d\]: r11 mm
+Ardziuna [1k\]: but Siasio has not so big chance to win
+]
+;B[hl]
+;W[ij]
+;B[il]
+;W[jl]
+;B[jj]
+;W[kk]C[awesome [3k\]: l10 like a hero
+LMP2 [-\]: bridge players really noisy now
+HW [-\]: go and bridge... I wonder who comes up with these names
+Song [4d\]: l8 was mm
+]
+;B[ji]
+;W[lk]
+;B[mk]
+;W[li]C[Song [4d\]: I thought just extending at j19 was fine
+Ardziuna [1k\]: w will resign soon
+Song [4d\]: when I came in it seems like b was ahead by a bit
+]
+;B[lh]
+;W[mh]
+;B[lg]C[harlej9 [1k\]: i think it's still the case
+]
+;W[mj]C[Song [4d\]: aig
+Song [4d\]: haha I would have just f14
+HW [-\]: looks dangerous
+]
+;B[ni]C[Song [4d\]: after w's jump 
+Song [4d\]: but b doing all these other things
+Hatesphere [2d?\]: white seems almost dead idk
+]
+;W[pi]C[Song [4d\]: mm I wonder if white should have m8 first...idk haha
+Song [4d\]: aigoo
+]
+;B[nj]C[Hatesphere [2d?\]: trade time
+Hatesphere [2d?\]: it will be over soon
+whuang [5d\]: :/
+Ardziuna [1k\]: no w can connect
+whuang [5d\]: only a small piece
+]
+;W[qh]C[barty [1d\]: o14 now white
+barty [1d\]: or this
+Ardziuna [1k\]: o14 or r12
+barty [1d\]: exchange
+Ardziuna [1k\]: ah played
+barty [1d\]: r10 first
+]
+;B[mg]C[Song [4d\]: that m12 move >.>...divine move lol
+]
+;W[mf]C[barty [1d\]: r10 
+Hatesphere [2d?\]: white has not enought ?
+barty [1d\]: looks like
+]
+;B[lf]C[Song [4d\]: honestly even if white lives don't know if even enough to make black lose
+barty [1d\]: s17 100% live?
+Hatesphere [2d?\]: i wonder, may be ko
+barty [1d\]: looks like P18 will be not sente now perhaps or soon
+barty [1d\]: after P18 looks dead
+barty [1d\]: i mean P17 for black
+LMP2 [-\]: white 7 minutes left, black 23 minutes
+barty [1d\]: white should O14 now
+kostro [2d\]: s11!
+barty [1d\]: or maybe R10 even :)
+]
+;W[ob]C[barty [1d\]: S11 good to maybe better
+barty [1d\]: ahhh P 18
+gwidon: O14
+Song [4d\]: mm had a feeling white would play on the top
+barty [1d\]: o14 not help
+Song [4d\]: I was also staring
+Song [4d\]: at l11
+barty [1d\]: n15 will be ok for white
+barty [1d\]: q14 is dead 
+]
+;B[nf]C[Song [4d\]: yea I wouldve tried l11
+ThiGar [4k\]: b O14, then b s11
+LMP2 [-\]: black played the move in an unsure way
+]
+;W[me]C[Song [4d\]: staring at that a bit
+]
+;B[ri]
+;W[rh]C[barty [1d\]: but q18 give live 
+awesome [3k\]: is this just to force w to capture?
+barty [1d\]: looks like q18 or o14 live miai
+Song [4d\]: if b had a plan he wouldnt be thinking right now
+barty [1d\]: problem is M14
+Song [4d\]: couldve been mistake to o14
+barty [1d\]: yeap
+DarkAvatar [6d?\]: o14 looks like an expensive mistake
+]
+;B[sg]
+;W[qj]
+;B[rj]C[Song [4d\]: mm
+awesome [3k\]: diana hasn't looked at me once
+bert [?\]: but twice?
+barty [1d\]: m15 m16 o15 n16 q18 p17 t16 corner live
+Song [4d\]: what is w going to do here though?
+barty [1d\]: t12 
+barty [1d\]: must now
+barty [1d\]: can T11
+SIscurge [5d\]: Koichiro fighting ~
+barty [1d\]: T11 not work T12
+]
+;W[sh]
+;B[pb]C[whuang [5d\]: maybe Q12?
+whuang [5d\]: I'm too lazy to count the liberties :/
+Vinicius [1d\]: w wins race anyway
+LMP2 [-\]: white has one minute left
+Hatesphere [2d?\]: just s18 ?
+LMP2 [-\]: an unfortunate time to enter byoyomi
+]
+;W[jg]C[Song [4d\]: w is dead no?
+awesome [3k\]: oooh
+Vinicius [1d\]: nice
+barty [1d\]: Song where?
+]
+;B[jh]
+;W[kf]C[barty [1d\]: o12 
+]
+;B[kh]
+;W[gb]C[awesome [3k\]: but b can still m15 :)
+barty [1d\]: uuu O12 looks better for secure
+barty [1d\]: or maybe not ;)
+]
+;B[le]C[Song [4d\]: I thought w's q12 is dead.
+]
+;W[ld]
+;B[ac]C[SIscurge [5d\]: b should p18
+Vinicius [1d\]: corner alive now.. g18 bad?
+]
+;W[pn]
+;B[qn]
+;W[pm]C[Vinicius [1d\]: ah.. w had to protect anyway
+flatwhite [3k\]: black has 4 corner...
+Kery [?\]: how much time left?
+Song [4d\]: but seems like I was right o14 was a mistake
+LMP2 [-\]: Koichi beating his forehead
+LMP2 [-\]: and making gorilla sounds
+LMP2 [-\]: I think he's tired
+]
+;B[qm]
+;W[po]
+;B[qo]C[LMP2 [-\]: Siasio can smell a chance now
+]
+;W[rb]C[awesome [3k\]: can't b p17 now? 
+barty [1d\]: o15 
+Hatesphere [2d?\]: s18 kills
+Song [4d\]: aigoo
+barty [1d\]: p17 give live
+LMP2 [-\]: Siasio smiling
+Hatesphere [2d?\]: no
+Hatesphere [2d?\]: it doesnt
+LMP2 [-\]: probably just noticed p17
+barty [1d\]: it does
+Ashitaka [2d\]: jaki czas maja jeszcze?
+barty [1d\]: o15 n16 p17 
+Song [4d\]: that one mistake
+awesome [3k\]: I doubt he just noticed :)
+Song [4d\]: cost b sooo much aigoo
+LMP2 [-\]: white is in byoyomi, black ~15 minutes left by my estimate
+Ashitaka [2d\]: thanks :)
+SIscurge [5d\]: I think that in this variation q13 should get captured
+LMP2 [-\]: Leszek observing, hugging a bottle
+barty [1d\]: hmmm
+barty [1d\]: maybe white win semai
+barty [1d\]: hmmm
+Hatesphere [2d?\]: o15 does nothing imo
+barty [1d\]: o15 force to cut
+barty [1d\]: but after P17 and cut in O16 black could be short by 1 moku
+barty [1d\]: if t13 was in T14
+barty [1d\]: then 100% ok
+LMP2 [-\]: black 10 minutes left
+awesome [3k\]: isn't it local seki, then b kills? 
+Hatesphere [2d?\]: there is no seki
+barty [1d\]: no seki
+awesome [3k\]: how sad
+]
+;B[pj]
+;W[oj]
+;B[pk]C[SIscurge [5d\]: I think that P17 directly worked by one for b
+LMP2 [-\]: we just had a conflict with a bridge player
+Song [4d\]: mhm cut
+LMP2 [-\]: she was rather pretty, but complained about our talking clock
+Song [4d\]: conflict with bridge player'?
+]
+;W[nh]C[Song [4d\]: what is bridge player?
+LMP2 [-\]: which is ridiculous considering how loud _they_ are
+]
+;B[mi]C[LMP2 [-\]: bridge, a card game
+barty [1d\]: :)
+Hatesphere [2d?\]: i hope you sent her off
+LMP2 [-\]: yes
+LMP2 [-\]: we outnumbered her
+barty [1d\]: if white now O15 is dead
+]
+;W[oi]
+;B[lj]C[SIscurge [5d\]: poor black :(
+Bouton [?\]: s9
+awesome [3k\]: w will make mistake
+Song [4d\]: I know right...
+]
+;W[ph]C[DarkAvatar [6d?\]: too easy
+DarkAvatar [6d?\]: t16?
+barty [1d\]: P17 black still should play
+barty [1d\]: will see what will do white :)
+Song [4d\]: wait a minute...
+DarkAvatar [6d?\]: t16 first
+]
+;B[oc]C[barty [1d\]: Yeap
+Hatesphere [2d?\]: oooooh
+]
+;W[nb]
+;B[ne]
+;W[md]C[Hatesphere [2d?\]: q12 should have been o15 !!!
+Song [4d\]: aigoo
+]
+;B[nd]C[barty [1d\]: not work :(
+]
+;W[sc]C[awesome [3k\]: too sad
+barty [1d\]: and
+barty [1d\]: end*
+barty [1d\]: :P
+LMP2 [-\]: black beating his head really loudly now
+Hatesphere [2d?\]: does he like pain ?
+barty [1d\]: T16 should be before O16 cut
+DarkAvatar [6d?\]: i told him t16 should have been first :)
+barty [1d\]: yeap but before this cut
+whuang [5d\]: no difference?
+barty [1d\]: P17 could be first ;)
+whuang [5d\]: t16 q19
+barty [1d\]: still black short by 1 moku
+barty [1d\]: even if T16
+gwidon: T16 if w connect semeai won B
+HW [-\]: t18
+LMP2 [-\]: and a loud sigh from black
+barty [1d\]: if connect just T18
+barty [1d\]: yesp
+Hatesphere [2d?\]: q12 group is dead imo
+LMP2 [-\]: now he slapped his cheek exactly three times in a row
+SIscurge [5d\]: wait
+HW [-\]: does t18 work
+SIscurge [5d\]: just disconnect?
+SIscurge [5d\]: ah t16 r18 
+SIscurge [5d\]: so t18?
+DarkAvatar [6d?\]: yea
+SIscurge [5d\]: it seems like t18 works right?
+barty [1d\]: but in ko yeap?
+angsax [2k\]: t18, t16 then what?
+]
+;B[ek]
+;W[fo]C[Vinicius [1d\]: t18 t19 and what?
+LMP1 [-\]: white smiles and counter-peeps
+Song [4d\]: did
+]
+;B[go]
+;W[br]C[Song [4d\]: b e8?
+Hatesphere [2d?\]: t16 t18 p9 q18 t11 etc
+]
+;B[ar]
+;W[bs]C[Song [4d\]: e9*
+HW [-\]: what's e9 for 
+barty [1d\]: f14 
+barty [1d\]: and maybe cut in d13
+]
+;B[dk]C[barty [1d\]: last fight :)
+barty [1d\]: this will be interesting too :)
+Werfeus [5d\]: b is too upset to see t18
+]
+;W[bn]
+;B[cn]
+;W[bm]C[Bouton [?\]: b aiming at c13
+TheThe [4k\]: hm
+]
+;B[bl]C[SIscurge [5d\]: a6?:)
+SIscurge [5d\]: not quite
+Song [4d\]: ?
+barty [1d\]: not really
+Hipcio [1d\]: a3
+barty [1d\]: a6 d5 
+Song [4d\]: a6??
+]
+;W[fk]C[Hatesphere [2d?\]: i dont understand
+]
+;B[el]C[barty [1d\]: d5 now
+barty [1d\]: first 
+barty [1d\]: :(
+barty [1d\]: D5 important
+HW [-\]: i don't get it
+]
+;W[do]C[LMP2 [-\]: reluctantly
+barty [1d\]: T18 give Ko ? or i missed something?
+Vinicius [1d\]: t18 t19.. i dont see anything
+SIscurge [5d\]: b should have probably answered F9 at D11
+Werfeus [5d\]: t18 t19 t16 is ko
+awesome [3k\]: but t16?
+Hatesphere [2d?\]: t16 should be working as well i dont understand
+Vinicius [1d\]: t18 t19 t16 q19
+]
+;B[ch]C[awesome [3k\]: come on koichiro, have another look at it!
+rosi [?\]: t18 s19 
+barty [1d\]: aaaa
+]
+;W[di]C[barty [1d\]: a6 not need?
+Werfeus [5d\]: ach so
+Song [4d\]: w couldve d5 before f9 >.>
+]
+;B[dh]C[LMP2 [-\]: Koichi covering his mouth with a napkin
+barty [1d\]: yeap black could play d5 but not do this :(
+]
+;W[eh]C[LMP2 [-\]: black has entered byoyomi
+Hipcio [1d\]: it won't help
+]
+;B[ei]C[barty [1d\]: hmmm
+barty [1d\]: works?
+]
+;W[bh]C[barty [1d\]: B12 white
+ThiGar [4k\]: is q14 captured?
+barty [1d\]: yeap
+ThiGar [4k\]: ty
+bert [?\]: it is too late to remove your mp3 player now
+barty [1d\]: :)
+Song [4d\]: no gar
+]
+;B[fn]C[LMP2 [-\]: Koichi has exclaimed something and hit his head
+barty [1d\]: aaaa
+barty [1d\]: :)
+]
+;W[aq]C[Song [4d\]: it is im jk
+barty [1d\]: ahhh
+barty [1d\]: end
+ThiGar [4k\]: Song, seki, then?
+Ardziuna [1k\]: seki
+ThiGar [4k\]: ty
+Ardziuna [1k\]: a6
+Song [4d\]: no it's dead lol
+Mariusz [2k\]: litości :(
+barty [1d\]: a6 still dead
+Onfire [6d\]: not yet
+barty [1d\]: F6 why ;(
+]
+;B[dj]C[LMP2 [-\]: black played at the last second, visibly nervous
+Song [4d\]: im not talking about a6 btw someone asking me about something else
+Bouton [?\]: a5
+Ardziuna [1k\]: b11
+Onfire [6d\]: a6 a4 a5 a3 b11 c11 a10 a11 d0
+Onfire [6d\]: d10
+]
+;W[ci]C[ThiGar [4k\]: LMP, is the famed fear to win?
+Onfire [6d\]: but now b11 a10
+awesome [3k\]: if b is going to mess up in the lower left first then t16 will not help
+]
+;B[bi]
+;W[aj]C[Werfeus [5d\]: t16 q19 
+Song [4d\]: t16??
+barty [1d\]: now dead
+Song [4d\]: aigoo I don't understand the moves some of u pick lol
+barty [1d\]: t16 and ko not help now
+]
+;B[an]C[awesome [3k\]: I see
+]
+;W[ap]
+;B[ao]C[Song [4d\]: a4?
+LMP2 [-\]: Koichi seems nervous, Siasio concentrated
+Ardziuna [1k\]: why b didn't played for ko?
+barty [1d\]: will be ko
+]
+;W[fi]
+;B[ej]C[Onfire [6d\]: e10??
+Werfeus [5d\]: ??
+Onfire [6d\]: why not a3
+barty [1d\]: a3 b13 a11 c13 
+barty [1d\]: ko 
+Bouton [?\]: if a3 b13 
+Onfire [6d\]: b13 is ok
+]
+;W[en]C[barty [1d\]: a3 
+barty [1d\]: now
+Song [4d\]: mhm
+barty [1d\]: and then B13
+Mariusz [2k\]: LMP2 co z koiczim katar czy coś gorszego?
+Werfeus [5d\]: you miss w f8 here barty
+angsax [2k\]: a3 must be bigger for w than e9 group?
+barty [1d\]: yeap
+LMP2 [-\]: I think it's just his way of handling stress
+GIGN [5k\]: e10 need to protect
+barty [1d\]: now F8 works
+]
+;B[fj]C[barty [1d\]: then a3 
+]
+;W[bf]C[barty [1d\]: and then t18 
+LMP2 [-\]: white played very resolutely
+awesome [3k\]: that always helps
+ThiGar [4k\]: a3 since b does not have the b13 threat anymore
+]
+;B[aq]
+;W[fp]C[flatwhite [3k\]: white win?
+Song [4d\]: mhm
+GIGN [5k\]: upper right if good enough for w
+GIGN [5k\]: imho
+Song [4d\]: seems like
+Song [4d\]: white is ahead
+awesome [3k\]: p9
+Song [4d\]: and will probably win because of komi
+]
+;B[hc]C[flatwhite [3k\]: just looks like white killed more to me xD
+Song [4d\]: haha well yes
+ThiGar [4k\]: too bad, was'nt b in control for most of the game?
+Song [4d\]: white is ahead
+awesome [3k\]: he was
+HW [-\]: t18 
+Song [4d\]: yes but like me and I think 6d said a while back
+]
+;W[gh]C[ThiGar [4k\]: where was the tippping point?
+Song [4d\]: black made a very big mistake
+ThiGar [4k\]: where?
+Song [4d\]: or I think it was a big mistake at o14
+awesome [3k\]: maybe o14
+Song [4d\]: yes^
+ThiGar [4k\]: ty
+SIscurge [5d\]: n2 mb
+Song [4d\]: that was like the losing move in my opinion
+SIscurge [5d\]: atari and n2
+]
+;B[ff]
+;W[ee]C[Song [4d\]: there is still f
+Song [4d\]: ok he played it
+Marek [4d\]: when b will play t18 ?
+bert [?\]: b overreacting, i think
+barty [1d\]: they dont see this
+]
+;B[mr]C[Song [4d\]: now black can go to n2 for free
+SIscurge [5d\]: t18 doesnt work as someone explained
+]
+;W[hi]C[barty [1d\]: t18  then what white ?
+SIscurge [5d\]: t19 t16 q19 
+barty [1d\]: t18 t16 s19 ko
+barty [1d\]: t18 t19 t16 q19 t18 ko too
+Hatesphere [2d?\]: no ko
+Hatesphere [2d?\]: it just dies
+Song [4d\]: lol
+barty [1d\]: ahh yes :P
+barty [1d\]: lol
+]
+;B[gj]
+;W[hh]C[Song [4d\]: some of the moves u guys say r just misreads I feel xD only reason im not commenting on t18 move..
+bert [?\]: can be ko, if w accepts it tho
+Song [4d\]: .... k
+]
+;B[fg]
+;W[fh]C[Song [4d\]: well it seems like white clearly wins
+Marek [4d\]: ok ;-)
+bert [?\]: ...which would be stupid, of course
+Song [4d\]: b will probably resign unless he play to the end like the other player I said lost by 15-25 points
+flatwhite [3k\]: nah isn't e1 sente?
+flatwhite [3k\]: w would win but black can save this group
+Hatesphere [2d?\]: no e1 e2
+Hatesphere [2d?\]: ah
+Hatesphere [2d?\]: idk
+]
+;B[ih]
+;W[hj]C[flatwhite [3k\]: then you get f3 in sente?
+Ardziuna [1k\]: t18 works imho?
+awesome [3k\]: lol
+barty [1d\]: no
+flatwhite [3k\]: play e1 now?
+]
+;B[es]C[flatwhite [3k\]: i htink you can get at least a ko for blak
+]
+;W[gk]C[GIGN [5k\]: t18 t19 t16 q19 t18 r18 s19 t16
+awesome [3k\]: clever w
+Ardziuna [1k\]: b dies but gets extra lib
+HW [-\]: should still play t18 though it doesn't work 
+Ardziuna [1k\]: and wins with p13
+awesome [3k\]: check r18 atari :)
+HW [-\]: in case white makes an error and also to get p9 and 11
+]
+;B[fl]C[HW [-\]: *t11
+]
+;W[er]C[Mariusz [2k\]: oh ten Siasio
+]
+;B[fq]
+;W[ds]C[Ardziuna [1k\]: Habu może wygrać jednym ruchem - t18
+barty [1d\]: t18 nie dziala
+Ardziuna [1k\]: działa, bo zabija q12
+]
+;B[ka]C[barty [1d\]: haha nie
+Ardziuna [1k\]: daje Habu dodatkowy oddech
+]
+;W[lb]C[Mogget [2d\]: ale to za mało
+barty [1d\]: grupa bez oka i z okiem
+GIGN [5k\]: t18 cant help p14
+barty [1d\]: ktora wygrywa 
+barty [1d\]: koichi nie moze jej zabic
+]
+;B[sd]
+;W[pa]C[awesome [3k\]: b could s19?
+Ardziuna [1k\]: ale Stasio nie będzie go mógł skracać
+awesome [3k\]: oh wait
+Ardziuna [1k\]: znaczy teraz to już po grze
+]
+;B[si]C[GIGN [5k\]: not work
+]
+;W[qb]C[Ardziuna [1k\]: Habu stracił szansę
+GIGN [5k\]: just end game
+Song [4d\]: mhm
+bert [?\]: you will show him after the game
+Song [4d\]: t18 no work white can just capture
+]
+;B[ok]
+;W[sf]C[Song [4d\]: omo
+Song [4d\]: what
+SIscurge [5d\]: 15-20
+barty [1d\]: Song new question that t18 could give extra liberty to kill P11?
+Song [4d\]: wait a minute
+Song [4d\]: what
+]
+;B[em]
+;W[is]C[Song [4d\]: oh my goodness
+Song [4d\]: my eyes...
+barty [1d\]: :)
+awesome [3k\]: thanks lmp2, excellent scribe job
+Song [4d\]: my eyes played trick on me
+vertigo [-\]: Your eyes, his eyes...
+LMP2 [-\]: you're welcome
+Song [4d\]: literally
+Song [4d\]: I had like a 11kyu moment
+Song [4d\]: I was like wait doesnt s13 kill right now? xD
+]
+;B[kn]
+;W[ae]C[barty [1d\]: haha :)
+Song [4d\]: oh goodness my eyes
+barty [1d\]: what should say koichi
+barty [1d\]: :P
+]
+;B[be]
+;W[ca]C[Song [4d\]: and I don't it does barty to ur last question
+]
+;B[ba]
+;W[da]
+;B[fs]
+;W[hs]C[Mariusz [2k\]: entliczek pentliczek co zrobi Koichi tego nie wie nikt
+barty [1d\]: never mind i thing still dont work
+]
+;B[om]
+;W[on]C[rosi [?\]: h7 
+]
+;B[ad]
+;W[af]C[Song [4d\]: I thought b would resign many moves ago
+LMP2 [-\]: hard to resign what had been a good game
+Song [4d\]: this is like other game think b behind 15-20 points
+]
+;B[la]
+;W[ma]
+;B[ia]
+;W[ga]
+;B[kg]C[TheThe [4k\]: se has w+15
+]
+;W[ls]
+;B[ms]
+;W[lr]
+;B[lo]
+;W[mo]C[noi [7k?\]: se bring eyes to the blind, and kill the healthiest of groups
+]
+;B[ll]
+;W[gi]
+;B[hm]
+;W[jf]
+;B[gr]
+;W[gg]
+;B[gf]
+;W[dg]
+;B[kj]
+;W[cs]
+;B[am]
+;W[cg]
+;B[ja]
+;W[fb]
+;B[pl]
+;W[eq]
+;B[ns]
+;W[kq]
+;B[jb]
+;W[hb]
+;B[kb]
+;W[ha]
+;B[ak]
+;W[ii]
+;B[he]
+;W[as]C[bert [?\]: b should play a1 in sign of resign
+Song [4d\]: well w ahead liike 19.5 20.5 something like that
+LMP2 [-\]: Song: I also have SE
+LMP2 [-\]: white has officially won by 19.5 points
+Song [4d\]: what is se?
+TheThe [4k\]: I bet Song actually counted
+Song [4d\]: ah ok 19.5
+TheThe [4k\]: Score Estimator
+LMP2 [-\]: now discussing c11 group
+LMP2 [-\]: thanks for watching, guys!
+bert [?\]: ty
+Kery [?\]: thanks for transmitting
+LMP2 [-\]: the official results will be at: http://mp.go.art.pl/2015/wyniki
+LMP2 [-\]: see ya!
+Song [4d\]: well it was nice game
+Song [4d\]: but for sure I would say o14
+Song [4d\]: was the losing move
+Mariusz [2k\]: fajnie że była kamera
+Mariusz [2k\]: trochę atmosfera się udzieliła
+Song [4d\]: that mistake was quite painful/brutal for b
+Mariusz [2k\]: mało im jeszcze?
+Mariusz [2k\]: będzei transmisja?
+Mariusz [2k\]: z komentarzem prosa
+])

@@ -1,0 +1,608 @@
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[5400]OT[1x60 byo-yomi]
+PW[Koichiro Habu]PB[Leszek Sołdan]WR[4d]BR[5d]DT[2006-11-12]EV[Mistrzostwa Polski w Go 2006]RO[7]PC[Wisła]C[vis: witam
+]
+;B[qd]
+;W[dp]
+;B[cd]
+;W[nd]
+;B[pp]
+;W[qc]
+;B[pc]
+;W[pd]
+;B[pb]
+;W[qb]
+;B[rb]
+;W[rc]
+;B[rd]
+;W[sb]
+;B[ra]C[janusz [2k\]: ale joseki, widzialem juz kiedys Koichiro  jak je gral
+]
+(;W[qa]
+;B[nb]
+;W[pe]
+;B[sd]
+;W[qe]
+;B[sc]
+;W[pn]
+;B[np]
+;W[qp]
+;B[qq]
+;W[qo]
+;B[rq]
+;W[pk]C[jurek [1d?\]: :)
+]
+;B[jq]C[jurek [1d?\]: Koichi nie obroni tytułu MP, ciekawe czy obroni ważniejszy tytuł MA:):):):):
+]
+;W[fd]C[leszczyn [?\]: a co jest MA?
+jurek [1d?\]: Mistrz Andrychowa:)
+leszczyn [?\]: aha :-)
+]
+;B[nj]C[MP2006 [-\]: zarządzono 10 minutową przerwę
+cedry [2k\]: jak to przerwę?
+wojtekw [4d?\]: Kto zarządził i czemu?
+MP2006 [-\]: musimy opuscic pokoje hotelowe...
+Parnik [3k?\]: ee?
+Parnik [3k?\]: hmmmm
+]
+;W[oi]C[MP2006 [-\]: (ale jeszcze jeden ruch przed przerwa byl)
+MP2006 [-\]: (atmosfera totalnego rozprzezenia, fisz powtarza 'shit, shit, shit' i bije sie po glowie...
+MP2006 [-\]: a janek patrzy na to co fisz wyprawia irobi bardzo dziwne miny...)
+vis: co slychac u juniorow?
+MP2006 [-\]: nie wiem, sa dwa pietrsa nizej
+MP2006 [-\]: juz jedziemy
+]
+;B[ni]C[tasuki [-\]: i gdzie sa wyniki?
+MP2006 [-\]: LS 6 MB,KG 4 KH,PC 3 KC,MK 2 TS 0
+]
+;W[cc]
+;B[oh]
+;W[pi]C[MP2006 [-\]: Koichi walczy o 3 miejsce i pozostanie w lidze
+MP2006 [-\]: bazik z gie walcza o drugie miejsce
+MP2006 [-\]: jesli Koichi przegra a CelePa lub fisz wygraja, Koichi spada na piate miejsce (czyli z rok bedzie musial grac w eliminacjach)
+]
+;B[mg]
+;W[cf]
+;B[ph]
+;W[qh]
+;B[fq]
+;W[dn]C[MP2006 [-\]: nexo robi fiszowi inwazje w jego glowny teren - nie powinien miec problemow z zyciem ale sciana fisza bedzie chyba bardzo uzyteczna
+]
+;B[fo]
+;W[fm]C[wysek [2k\]: hm, wykombinowalem, ze jesli kamyk i nexo wygraja, a koichi przegra, to kamyk wchodzi na 4. :)
+]
+;B[cl]
+;W[sa]
+;B[rb]
+;W[cj]C[MP2006 [-\]: ja wyliczylem, ze wtedy czwarty bedzie Koichi...
+MP2006 [-\]: ta wymiana T19 S18 byla juz dawno, na zakonczenie joseki (ten drugi wpisujacy sie zagapil)
+jinnai [8k?\]: hehe
+]
+;B[co]C[wysek [2k\]: a nie, przepraszam; faktycznie, masz racje.
+jinnai [8k?\]: cos sie wydawalo dziwne ze nie koncza
+]
+;W[do]
+;B[cn]
+;W[dm]
+;B[cp]C[MP2006 [-\]: kamyk walczy o zycie w srodku moyo CelePy
+]
+;W[cq]C[MP2006 [-\]: gie gra czarnymi, wiec ion ren sei oczywiscie...
+wojtekw [4d?\]: jon ren sei? to jakaś nowa strategia? ;)
+MP2006 [-\]: dla gie? chyba nie...
+wojtekw [4d?\]: a może to ni ren sei?
+]
+;B[bq]
+;W[cm]C[wojtekw [4d?\]: Nie rozumiem czarnych B3
+]
+;B[bm]
+;W[bl]
+;B[dq]C[MP2006 [-\]: co powinien? c7?
+]
+;W[cr]C[wojtekw [4d?\]: w c 7 stoi biały ... ja bym zagral B9
+Parnik [3k?\]: czarne troche pociete
+MP2006 [-\]: no nie, c7 bialy odpowiedzial na b3...
+Parnik [3k?\]: d2
+wojtekw [4d?\]: aaa
+]
+;B[bo]
+;W[am]C[wojtekw [4d?\]: a le i tak bym odp. b9
+Parnik [3k?\]: oooo :)
+MP2006 [-\]: moze i tak - bialy b3 czarny b10?
+]
+;B[bn]
+;W[bk]
+;B[dr]C[wojtekw [4d?\]: a teraz w sumie wyszlo po równo
+]
+;W[dc]C[Parnik [3k?\]: a koichi nie mogl wyjsc lepiej?
+]
+;B[ff]C[foyle [2k\]: komu kibicuje wiekszośc osób ?
+wysek [2k\]: ja LS; wtedy mlodzi maja szanse przetrwac :)
+foyle [2k\]: he he  
+wojtekw [4d?\]: lokalnie w lewym dolnym
+wojtekw [4d?\]: bialy dał d...
+MP2006 [-\]: nie jestem przekonany, czy to jest po rowno - bialy mial tam duzo kamieni a zarny wzial kupe terenu
+jinnai [8k?\]: czany jak widac dobrze sobie radzi w rogach
+wojtekw [4d?\]: szczególnie wymianac3 c2 - d3 d2
+wojtekw [4d?\]: wychodzi na jego niekorzysc
+Parnik [3k?\]: aha :) czyli mogl :)
+MP2006 [-\]: moze lepiej bylo b2 zamiast b8?
+wojtekw [4d?\]: zamiast c2
+wojtekw [4d?\]: od razu b9
+wojtekw [4d?\]: i moze wyszedłby w sente
+misiek [9k\]: jaka sile ma leszek?
+wysek [2k\]: toc wyszedl w sente :)
+Parnik [3k?\]: chyba 5d w tej chwili
+wojtekw [4d?\]: ;) faktycznie
+]
+;W[fh]C[wojtekw [4d?\]: to nawet lepiej, bo teraz ma nawet
+wojtekw [4d?\]: yose - b2
+]
+;B[ok]C[wojtekw [4d?\]: i a6
+MP2006 [-\]: mikroskopijne to yose...
+MP2006 [-\]: (punkt w sente)
+wojtekw [4d?\]: ha - moze 1 moze 2 pkt ;) ale
+wojtekw [4d?\]: tez sie licza
+]
+;W[pl]
+;B[qi]
+;W[pj]
+;B[qg]C[wojtekw [4d?\]: w tej chwili obstawiam czarne ...
+]
+;W[rh]C[Feniks [-\]: Koichi wygra
+]
+;B[rg]
+;W[re]
+;B[ra]
+;W[se]C[Parnik [3k?\]: no nie wiem czy sie beda liczyly jak gra bedzie dalej wygladala w ten sposob
+]
+;B[pa]
+;W[sg]
+;B[gh]
+;W[gi]C[janusz [2k\]: czarne dostaly w sente mozliwosc wyjscia na prawa bande
+janusz [2k\]: gorna bande, przepraszam
+MP2006 [-\]: no, na prawej bandzie bardzo zle aji, ale nie wiem czy i co chodzi
+]
+;B[hi]
+;W[hj]C[evr [7k\]: what's MP2006?
+MP2006 [-\]: Polish Championship
+Parnik [3k?\]: polish championship 2006
+]
+;B[hh]C[MP2006 [-\]: nexo chyba nieoczekiwanie umarl w jednym rogu...
+MP2006 [-\]: gie stosuje swoja ulubiona strategie: wielkie moyo plus slaba grupa
+MP2006 [-\]: kamyk uciekl, CelePa dostal taaaaka sciane i wiekszy teren niz mial przed inwazja
+]
+;W[fg]
+;B[gf]
+;W[gj]
+;B[df]
+;W[cg]
+;B[gd]
+;W[gc]
+;B[hc]
+;W[hd]
+;B[ge]
+;W[id]
+;B[ic]C[wojtekw [4d?\]: No to teraz parę minut myślenia :)
+wojtekw [4d?\]: Ogłaszam przerwę na kawę wśród obserwatorów!
+Parnik [3k?\]: mam pytanko :) gie wszystkie gry gra w takim tempie jak ta wczorajsza z koichim?
+MP2006 [-\]: obserwatorom to dobrze...
+MP2006 [-\]: tak, gie lubi byo, byo lubi gie
+Parnik [3k?\]: aha :) lol
+]
+;W[jd]C[vis: co by nie mowic, to gra jest ciekawa i nie jest to proste tnij i uciekaj
+]
+;B[fc]C[MP2006 [-\]: teraz nastepuje proste tnij i zabij...
+]
+;W[jf]C[vis: nie, to nie tak. 
+MP2006 [-\]: czas: obaj 53'
+]
+;B[gb]
+;W[jh]C[vis: zwroc uwage na zmiennosc planow
+MP2006 [-\]: czarny tylko grozil zrobieniem terenu w centrum, moim zdaniem
+]
+;B[kj]C[MP2006 [-\]: zeby glebiej zredukowac (ma np. d16)
+]
+;W[mp]C[lipa: a co u reszty graczy slychac ? ;)
+vis: ta gietkosc mi sie podoba
+vis: grozic, zeby gdzie indziej miec troche lepiej
+MP2006 [-\]: no, ladnie graja, niewatpliwie
+MP2006 [-\]: w go nie mozna sobie postanowic ze sie cos wezmie zeby nie wiem co - trzeba byc gotowym do ustepstw i wymian
+wojtekw [4d?\]: D16 jest sente? kto to juz policzył?
+koreanczyk [3k\]: a jak reszta gier ??
+Parnik [3k?\]: w koncu obecny mistrz i przyszly mistrz :)
+MP2006 [-\]: kamyk ma tragedie
+MP2006 [-\]: nexo 10 sekund temu stal dosyc przyzwoicie ale teraz wyglada to mocno podejrzanie (moze 10 sekund temu czegos nie widzialem)
+MP2006 [-\]: gie wzial teren gigant a teraz jest goniony po drugiej stronie planszy - nie wiadomo ile bazik uga na tej slabej grupie
+]
+;B[no]
+;W[jp]C[MP2006 [-\]: *ugra
+]
+;B[ip]
+;W[mm]C[MP2006 [-\]: oho, Koichi chyba sie przyglada o11 i kolegom...
+]
+;B[ji]C[wojtekw [4d?\]: o11 i koledzy są nie do zabicia :)
+MP2006 [-\]: Leszkowi to powiedz
+]
+;W[kh]C[Parnik [3k?\]: tylko r13
+]
+;B[ij]C[MP2006 [-\]: po d16 jest chyba e16?
+wojtekw [4d?\]: Natomiast K14 i koledzy
+wojtekw [4d?\]: traca kontakt z otoczeniem ;)
+MP2006 [-\]: a da sie ich juz uciac?
+MP2006 [-\]: moze sie dac...
+jinnai [8k?\]: chyba nie...koichiro tez to chyba widzi
+]
+;W[nh]C[wojtekw [4d?\]: udany atak na 4 kamienie - mało trochę
+MP2006 [-\]: Koichiro widzi wszystko
+MP2006 [-\]: no nie, to tylko proba
+wojtekw [4d?\]: fajna mi próba dac zbić kamienia
+MP2006 [-\]: bialy czeka gdzie czarny da atari...
+wojtekw [4d?\]: i zrobić przeciwnikowi
+Parnik [3k?\]: drabinka chyba chodzi
+wojtekw [4d?\]: oczny kształt
+MP2006 [-\]: czarny jest juz prawie polaczony (najblizsze ciecie jest w g13) wiec nic mu i tak nie grozi
+Parnik [3k?\]: przeciez q13 chodzi i bez tego
+MP2006 [-\]: q13 nikogo nie obchodzi - bialy chcialby nie musiec laczyc k14 z o16
+]
+;B[li]C[Parnik [3k?\]: a ten ruch mu pozwoli mu to osiagnac?
+MP2006 [-\]: jesli czarny zagralby o13, bialy moglby m11 i ciac
+Parnik [3k?\]: dzieki :)
+MP2006 [-\]: jesli czarny n12 (albo m11) to bialy moze kiedys uruchomic o12 i wziac kilka kamieni 
+]
+;W[mf]C[wojtekw [4d?\]: M11 - widać klasę zawodnika
+foyle [2k\]: a na czym polega ewenement M11 ?
+foyle [2k\]: bo nie bardz orozumiem
+wojtekw [4d?\]: gdybym ja rozumial bylbym 5 dan ha ha
+jinnai [8k?\]: XD
+wojtekw [4d?\]: wzmocnil sie za pomoca M11
+wojtekw [4d?\]: nie grajac zadnego ruchu
+wojtekw [4d?\]: na ktory liczyl
+wojtekw [4d?\]: przeciwnik
+wojtekw [4d?\]: czyli n12, o13
+]
+;B[ng]C[wojtekw [4d?\]: M11
+]
+;W[iq]
+;B[kq]
+;W[kp]C[wojtekw [4d?\]: chial zagrac bialy!
+]
+;B[mq]C[MP2006 [-\]: ale bialy sie polaczyl w sente... i nawet nie stracil q13
+MP2006 [-\]: nie moze narzekac
+woodpecker [6k\]: ile maja czasu jeszcze?
+foyle [2k\]: thanx za wyjasnienie
+kropek [8k\]: kto wygrywa ?
+MP2006 [-\]: LS 41', KH 4'
+wojtekw [4d?\]: czarny tez nie - jego grupa wyglada
+woodpecker [6k\]: thx
+wojtekw [4d?\]: o wiele lepiej niz przed cala akcja
+MP2006 [-\]: wygrywamy my wszyscy bo mozemy ogladac te partie
+MP2006 [-\]: (czyt. nie mam pojecia)
+kropek [8k\]: :\]
+maciek [1d\]: bialy wygrywa bp ma mniej kamieni na drugiej i pierwszej linni
+wojtekw [4d?\]: D16 chyba jest sente
+wojtekw [4d?\]: powiedzialbym ze czarny ma przewage
+MP2006 [-\]: bialy mial ich tam calkiem sporo, tylko czarny je zbil...
+foyle [2k\]: za duzo czasu mają 
+foyle [2k\]: :P
+wojtekw [4d?\]: Licząć pewni teren czarny jest do przudu
+MP2006 [-\]: chcecie ogladac dobra partie czy szybka partie?
+wojtekw [4d?\]: kilka oczek od 3 do 8
+janusz [2k\]: jak bialy wyjdzie tu w sente i zamknie D16 to chyba on
+oxy [-\]: My sister said c15is better
+wojtekw [4d?\]: pewny teren*
+MP2006 [-\]: moim zdaniem duzo zalezy od tego czy bialy jest w stanie uruchomic j3
+]
+;W[lq]
+;B[lr]
+;W[lp]
+;B[kr]
+;W[gq]C[wojtekw [4d?\]: Ale kosztem czego? L4 i pozostalych?
+MP2006 [-\]: no, najlepiej bez kosztu...
+wojtekw [4d?\]: Kto jeszcze kawy nie wypil teraz ma okazję
+kimball [5d?\]: i doubt that this will give w a resonable result
+wojtekw [4d?\]: pare minut liczenia gwarantowane
+MP2006 [-\]: czarny ma wszedzie dobre aji, wyglada ze w yose duzo jeszcze zarobi...
+]
+;B[io]C[wojtekw [4d?\]: oj szybki ten Leszek
+wojtekw [4d?\]: zeby to sie nie zemscilo
+MP2006 [-\]: ruch wyglada ladnie - pyta Koichiego z ktorej strony ten ma zamiar umrzec...
+wojtekw [4d?\]: kto pyta? LS?
+MP2006 [-\]: j5 pyta
+]
+;W[fr]C[wojtekw [4d?\]: myslalem ze sobie dyskutuja
+wojtekw [4d?\]: przy grze :)
+wojtekw [4d?\]: to sie zdarza, ale chyba nie w zawodach takiej rangi
+MP2006 [-\]: tu raczej nie pozwalamy...
+]
+;B[eq]
+;W[go]C[foyle [2k\]: a gdzie są traz te zawody ?
+wojtekw [4d?\]: Wisła - ta od Małysza 
+foyle [2k\]: he he ciekawe miejsce
+foyle [2k\]: na turniej go
+]
+;B[hq]
+;W[gp]C[ForeverKyu [-\]: to Leszek sie moze czuc poniekad w domu ;)
+wojtekw [4d?\]: Ośrodek ma fajną nazwę:
+wojtekw [4d?\]: relaks ;)
+MP2006 [-\]: miejsce jak miejsce, troche nierowne
+jinnai [8k?\]: kamienie sie obsuwaja z gobanu:p
+foyle [2k\]: co teraz zrobi czarny mając sente
+MP2006 [-\]: z drugiej strony budynku to nawet ladne widoki, ale z sali gry to akurat pod gorke sie patrzy...
+]
+;B[dd]C[wojtekw [4d?\]: ładnie tu biały pograł
+wojtekw [4d?\]: oooo mówiłem o D16
+wojtekw [4d?\]: ciekawe czy będzie sente...
+MP2006 [-\]: moze tak, moze nie - duzo sie nie wcial a sporo za to oddal
+kropek [8k\]: a ja mam pytanie... byl taki koles Honinbu Shusaku zy jakos tak.. ?
+wojtekw [4d?\]: ale czarny jeszcze nic nie wziął w zamian!
+wojtekw [4d?\]: L4 mogą czmychnąć
+MP2006 [-\]: no, wzial sente...
+wojtekw [4d?\]: czmyhnąć...
+wojtekw [4d?\]: cholewcia jakie "h"
+ForeverKyu [-\]: ce
+MP2006 [-\]: a L4 teraz nie sa zbyt istotne
+wojtekw [4d?\]: w yose 5 kamieni
+wojtekw [4d?\]: to już coś
+MP2006 [-\]: moim zdaniem czmyhac
+foyle [2k\]: na mój gust bile wziely sporo kredytu i za jakiś czas bedą mialy prob;lem
+foyle [2k\]: mam czuja ze czarny wygra
+foyle [2k\]: :D
+MP2006 [-\]: kamyk poddal (zmarlo mu sie biedakowi)
+cedry [2k\]: czmychać
+wojtekw [4d?\]: sprawdziłeś w słowniku?
+cedry [2k\]: tak
+wojtekw [4d?\]: dz
+fan [1k\]: czyli Koichi gra o miejsce w czwórce? 
+maciek [1d\]: KO-ICHI-RO!! KO-ICHI-RO!! KO-ICHI-RO!!
+MP2006 [-\]: Koichi i tak wiedzial, ze gra o czworke (fisz tez go moze wziac)
+Parnik [3k?\]: koichi nie jest juz byo?
+kropek [8k\]: a ja bym chcial zeby soldan wygral 
+MP2006 [-\]: KH 30', LS 36'
+Parnik [3k?\]: ah to wczesniej zjadles cyferke :D
+m127 [?\]: kto to jest fisz?
+vis: trzymam palce za leszkiem
+MP2006 [-\]: a istotnie zjadlem (mialo byc 43...)
+maciek [1d\]:  
+maciek [1d\]:  
+kropek [8k\]:  
+MP2006 [-\]: nexo tez poddal
+maciek [1d\]: kto jest czwarty jesli koichiro przegra?
+fan [1k\]: Pawel
+kropek [8k\]: krzyknij tam na koichiro zeby jechal... 
+MP2006 [-\]: ja tu krzycze na dzieci bo halasuja...
+kropek [8k\]: hehe 
+tfm [2k\]: a dzieci juz cos grały?
+foyle [2k\]: kto tam dzieci wpuścił :P
+Parnik [3k?\]: to fisz nie ma szans byc w czworce?
+MP2006 [-\]: no, fisza kamyka itd musialem wpuscic...
+tfm [2k\]: jakie sa rezultaty dzieci w czołówce?
+MP2006 [-\]: nie wiem
+kkamil [5k\]: co sie dzieje a drugiej desce ?
+MP2006 [-\]: ciezko policzyc, ale chyba bazik do przodu
+]
+;W[bd]C[maciek [1d\]: b16 - a to niespodzianka;)
+]
+;B[be]C[foyle [2k\]: biale mają katatrofe
+foyle [2k\]: he he 
+foyle [2k\]: *katastrofę
+kropek [8k\]: jezu i nad czym on tak mysli .. ? myslal tyle mogl wpasc na to ze wlasnie taki ruch zrobi czarny no to chyba juz powinnien wiedziec gdzie odpowiedziec... 
+foyle [2k\]: nie do końca masz racje
+mariosoft [1d\]: mysli nad e16
+foyle [2k\]: teraz ma te kamnienie na desce i moze przeczytać dalej
+kropek [8k\]: :/
+foyle [2k\]: btw ile czasu ostalo nazemu japończykowi
+foyle [2k\]: ?
+MP2006 [-\]: 17'
+foyle [2k\]: tahnx :)
+MP2006 [-\]: LS 35'
+]
+;W[ad]
+;B[ce]
+;W[in]C[MP2006 [-\]: mam niejasne wrazenie, ze Koichi uwaza ze przegrywa i usiluje na sile odrobic straty
+MP2006 [-\]: zostawiajac wszedzie niedokonczone sytuacje...
+tfm [2k\]: bo chyba "w pewnym" terytorium przegrywa istotnie ...
+]
+;B[dg]
+;W[ch]C[MP2006 [-\]: w 'pewnym' terytorium nie wiem czy przegrywa - ale zadne jego terytorium nie jest tak naprawde pewne, wszedzie ma zle aji
+]
+;B[jn]C[josumiru [?\]: adzi kisi kesi :)
+]
+;W[jo]C[theme [1k\]: a sa gdzies wyniki mpj?
+tfm [2k\]: a sa jakies wyniki mpj?
+foyle [2k\]: gracz który wygra bedzie mistrzem?
+MP2006 [-\]: nie wiem
+wojtekw [4d?\]: Oj po B18 będą kłopoty
+MP2006 [-\]: mistrzem bedzie Leszek
+kropek [8k\]: ql :)
+]
+;B[ir]
+;W[im]C[Parnik [3k?\]: wiadomo Lesio zostanie mistrzem
+kkamil [5k\]: L6?
+foyle [2k\]: juz spojrzałem nie przegrał zadnej gry
+MP2006 [-\]: za oknem grad
+kropek [8k\]: :/
+foyle [2k\]: wiedz mozna by policzyć kto wygra punktowo mam racje ?
+foyle [2k\]: w rankingu punktowym znacyz sie
+]
+;B[kn]
+;W[ln]C[mariosoft [1d\]: leszek musi uwazac teraz na m11
+fumero [2d\]: a jak sie prezentuja inne gry?
+MP2006 [-\]: gie wlasnie zagral wielkie yose, ktore chodzi albo nie
+mariosoft [1d\]: koichi przetnie go  h14
+MP2006 [-\]: bazik usiluje go przeonac ze nie
+]
+;B[jl]
+;W[nn]
+;B[mo]
+;W[lo]
+;B[ll]C[foyle [2k\]: fajny ruch :)
+]
+;W[ik]
+;B[jk]
+;W[mc]
+;B[sn]
+;W[rn]
+;B[so]
+;W[sm]
+;B[rp]
+;W[ro]
+;B[sp]
+;W[rm]
+;B[eb]
+;W[bb]
+;B[db]
+;W[cb]
+;B[il]
+;W[hl]
+;B[hk]
+;W[gl]
+;B[kc]C[maciek [1d\]: wpadli w byo?
+atl [1d\]: q13 spore
+MP2006 [-\]: KH 6', LS 22'
+]
+;W[lb]
+;B[kb]
+;W[lg]C[Parnik [3k?\]: f11 nie dziala?
+]
+;B[mh]C[atl [1d\]: i po q13
+mariosoft [1d\]: i q13  sie zepsulo
+atl [1d\]: m15 a tutaj i tak garstka punktow jesli bedzie wogule
+Parnik [3k?\]: eh nie dziala :(
+mariosoft [1d\]: aa co koichi na n6 
+Parnik [3k?\]: czarnemu chyba zacznie brakowac oddechow jak zagra n6
+atl [1d\]: o3 trzeba pamietac
+mariosoft [1d\]: mozan dac zbic o3
+atl [1d\]: wiem
+kropek [8k\]: B+0.5
+]
+;W[ld]C[Demokles [1k\]: ?
+pjk [4k\]: trochę wiecj np po 2
+atl [1d\]: zobaczymy co z tym bedzie
+atl [1d\]: ale faktem jest to ze mozna bialego odciac
+Parnik [3k?\]: ups no fakt n6 dziala chyba :)
+atl [1d\]: choc nie
+]
+;B[dh]
+;W[di]C[atl [1d\]: nie dziala
+]
+;B[gr]C[Demokles [1k\]: koniec gry
+mariosoft [1d\]: chyba czegos nie widzimy
+atl [1d\]: moze w ko
+MP2006 [-\]: Leszek niewatpliwie uwaza ze prowadzi i gra wyjatkowo bezpiecznie
+MP2006 [-\]: pewnie n6 nawet nie liczy
+kropek [8k\]: bo prowadzi chyba 
+foyle [2k\]: dla 5d to jest łatwe policzyć
+foyle [2k\]: mysle ze to nie chodzi i tyle
+MP2006 [-\]: latwe, ale po co?
+pjk [4k\]: n6 nie działa
+foyle [2k\]: a po co sie gra
+mariosoft [1d\]: h6 duze
+MP2006 [-\]: jesli latwymi ruchami wygra, po co grac trudne?
+foyle [2k\]: dla satysfakcji i przyjmności
+]
+;W[ka]C[foyle [2k\]: zeby mieć plecy
+foyle [2k\]: jak sie latwe ruchy nie udadzą
+MP2006 [-\]: zeby przegrac wygrana gre, chciales powiedziec?
+]
+(;B[jb]C[kropek [8k\]: glupia gra te GO 
+Arador [10k?\]: nie bluźnij
+areal [4k?\]: to idz graj w kropki :)
+MP2006 [-\]: Koichi ma minute
+foyle [2k\]: a byo ile wynosi ?
+MP2006 [-\]: minuta
+foyle [2k\]: swoją drogą porudzyliśmyu ciekawą kwestie ciekawe kto ma racje
+foyle [2k\]: mysle te to tez zalezy od stylu gracza
+foyle [2k\]: ja sie nie boje ryzykowac bo jak zaczynam grać bezpiecznie to mi sie wszystko sypie
+MP2006 [-\]: Koichiro poddal partie
+foyle [2k\]: bo przeciwnik aczyna napierać
+kropek [8k\]: poddal ?
+Arador [10k?\]: której literki eni rozumiesz ?
+pjk [4k\]: gratulacje dla Leszka nowego MP (!!!!)
+kropek [8k\]: 2 i 4 
+Mandos [4k\]: a co na pozostałych stołach ?
+vis: gratulacje dla Mistrza
+kropek [8k\]: Arador: tak sie zbulwersowales ze Go jest glupia gra a TY w nia gras z?
+Arador [10k?\]: zdaża mi się
+janusz [2k\]: dziekuje MP2006 za transmisje
+kropek [8k\]: jupi :)
+MP2006 [-\]: na pozostalym stole gie zrobil zycie w rogu bazika
+foyle [2k\]: thanx i narazie
+kropek [8k\]: POlak mistrzem polski :)
+tfm [2k\]: dzieki, zobacz co u dzieci prosze ...
+MP2006 [-\]: mowy nie ma, jak ktos tu przyjdzie to moze go posle
+tfm [2k\]: ok
+MP2006 [-\]: ale nie ma mowy zebym zostawil sale kiedy wlasnie zblizaja sie do byo
+tfm [2k\]: chetnie poczekam :)
+kropek [8k\]: kto sie zbiza do byo 
+vis: co u bazika?
+mariosoft [1d\]: sprawdz wariant z n6
+mariosoft [1d\]: dla czarnego
+atl [1d\]: mario dziala jednak
+atl [1d\]: braknie bialemu oddechow
+Parnik [3k?\]: MP2006 boi sie dzieci :P
+kropek [8k\]: :\]
+mariosoft [1d\]: ale mandos trzeba uwazac na rog
+MP2006 [-\]: bialy byl w atari, ale lepiej bylo go nie bic
+MP2006 [-\]: wariant by Leszek Soldan
+MP2006 [-\]: (czyli n6 chodzilo)
+kropek [8k\]: czyli co leszek przegralby  ?
+mariosoft [1d\]: nie
+kropek [8k\]: nie ?
+MP2006 [-\]: nie, wygralby jeszcze wiecej
+kropek [8k\]: aha
+kropek [8k\]: dobra ja sie nie znam.. na tej grze .. 
+Parnik [3k?\]: chyba nie mozna wygrac wiecje niz przez poddanie ;)
+mariosoft [1d\]: pokaz mp zezbiciem
+wojtekw [4d?\]: tez dawalo wygrana
+MP2006 [-\]: macie racje, towarzyszu
+mariosoft [1d\]: wojtku dawno cie tu nie wdzialem
+mariosoft [1d\]: chyba ze ukrywasz sie
+wojtekw [4d?\]: takie zycie = praca nie przelewki
+MP2006 [-\]: dajcie mi chwile, a sprobuje policzyc bazika
+wojtekw [4d?\]: Nie - mam tylko jednego nicka
+wojtekw [4d?\]: wojtekw
+tfm [2k\]: czasem Wojtku wpadasz, ale o dziwnych godzinach :)
+wojtekw [4d?\]: ;) w porze mojej najwiekszej
+wojtekw [4d?\]: aktywnosci umoslowej
+wojtekw [4d?\]: umyslowej ;)
+tfm [2k\]: :)
+MP2006 [-\]: wyglada ze gie do przodu, ale nieduzo a ma slabosci... yose rozstrzygnie
+MP2006 [-\]: drakula mistrzem
+MP2006 [-\]: wiecej nie wiem
+tfm [2k\]: dzieki
+method [-\]: hi all
+fumero [2d\]: to akurat male zaskoczenie:)
+ouigkmy [9k\]: ile czasu zostalo graczom ?
+ouigkmy [9k\]: oh juz koniec
+buggler [9k\]: lol yohei
+buggler [9k\]: why is it just us two here
+buggler [9k\]: oh and mateuszm
+])
+(;B[mn]
+;W[nq]
+;B[lm]C[Mandos [4k\]: ialby nie był w atari ?
+]
+;W[op]
+(;B[oo]C[Matheus [?\]: M4 bylo w atari przez dwa ruchy :)
+]
+;W[oq]
+(;B[pq]C[DarkHaze [-\]: lol ??
+DarkHaze [-\]: cos nie tak ?
+]
+;W[mr]
+;B[po])
+(;B[ko]
+;W[pq]C[MP2006 [-\]: tak?
+Matheus [?\]: :)
+wojtekw [4d?\]: A w ogole to naradziliśmy się z towarzyszami
+wojtekw [4d?\]: i doszli do wniosku
+MP2006 [-\]: (po co bic jak i tak otoczone?)
+wojtekw [4d?\]: ze B18
+]))
+(;B[ko]
+;W[pq]C[mariosoft [1d\]: :)
+MP2006 [-\]: tak?
+mariosoft [1d\]: no wlasnie
+Matheus [?\]: a zbicie ruch pozniej?
+])))
+(;W[pe]))

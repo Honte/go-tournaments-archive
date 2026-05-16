@@ -1,286 +1,121 @@
-(
-  ;BL[1800.0]BR[6d]CA[UTF-8]DT[1999-11-14]EV[Polish Go Championship 1999]GN[Round 7 - Board 1]PB[Leszek Sołdan]PC[Warszawa]PW[Krzysztof Giedrojć]RE[W+R]RO[7]SZ[19]WL[1800.0]WR[4d]
-  ;B[pd]
-  ;W[dp]
-  ;B[pp]
-  ;W[dc]
-  ;B[de]
-  ;W[fd]
-  ;B[cc]
-  ;W[cb]
-  ;B[cd]
-  ;W[eb]
-  ;B[ch]
-  ;W[nc]
-  ;B[pf]
-  ;W[jd]
-  ;B[qj]
-  ;W[nq]
-  ;B[pn]
-  ;W[oj]
-  ;B[ok]
-  ;W[pj]
-  ;B[pk]
-  ;W[qi]
-  ;B[pi]
-  ;W[qk]
-  ;B[rj]
-  ;W[ql]
-  ;B[qh]
-  ;W[oi]
-  ;B[ri]
-  ;W[om]
-  ;B[nk]
-  ;W[pm]
-  ;B[np]
-  ;W[qn]
-  ;B[qo]
-  ;W[mm]
-  ;B[mq]
-  ;W[lk]
-  ;B[nh]
-  ;W[ro]
-  ;B[rn]
-  ;W[rm]
-  ;B[qm]
-  ;W[dg]
-  ;B[qn]
-  ;W[cg]
-  ;B[fe]
-  ;W[gd]
-  ;B[eg]
-  ;W[dh]
-  ;B[fg]
-  ;W[gf]
-  ;B[ee]
-  ;W[fi]
-  ;B[gi]
-  ;W[gh]
-  ;B[ei]
-  ;W[eh]
-  ;B[fh]
-  ;W[fj]
-  ;B[gg]
-  ;W[hh]
-  ;B[hg]
-  ;W[ig]
-  ;B[hi]
-  ;W[ih]
-  ;B[ej]
-  ;W[ek]
-  ;B[fk]
-  ;W[gj]
-  ;B[dk]
-  ;W[el]
-  ;B[ci]
-  ;W[di]
-  ;B[dj]
-  ;W[cj]
-  ;B[fl]
-  ;W[hj]
-  ;B[ck]
-  ;W[bj]
-  ;B[bk]
-  ;W[bh]
-  ;B[aj]
-  ;W[bi]
-  ;B[bf]
-  ;W[cm]
-  ;B[dl]
-  ;W[em]
-  ;B[dm]
-  ;W[dn]
-  ;B[en]
-  ;W[fm]
-  ;B[cn]
-  ;W[do]
-  ;B[bn]
-  ;W[bm]
-  ;B[am]
-  ;W[bo]
-  ;B[bl]
-  ;W[ak]
-  ;B[cl]
-  ;W[ao]
-  ;B[bg]
-  ;W[ai]
-  ;B[bb]
-  ;W[ba]
-  ;B[ag]
-  ;W[kq]
-  ;B[kp]
-  ;W[jp]
-  ;B[ko]
-  ;W[lq]
-  ;B[mp]
-  ;W[jo]
-  ;B[kn]
-  ;W[jn]
-  ;B[km]
-  ;W[jm]
-  ;B[kl]
-  ;W[mk]
-  ;B[kk]
-  ;W[mr]
-  ;B[nr]
-  ;W[lr]
-  ;B[dq]
-  ;W[eq]
-  ;B[lj]
-  ;W[mj]
-  ;B[mi]
-  ;W[nj]
-  ;B[ll]
-  ;W[oh]
-  ;B[ng]
-  ;W[mo]
-  ;B[no]
-  ;W[nn]
-  ;B[er]
-  ;W[fq]
-  ;B[nl]
-  ;W[ml]
-  ;B[ol]
-  ;W[kj]
-  ;B[li]
-  ;W[lp]
-  ;B[lo]
-  ;W[mn]
-  ;B[jj]
-  ;W[ki]
-  ;B[ji]
-  ;W[kh]
-  ;B[jh]
-  ;W[kg]
-  ;B[jg]
-  ;W[jf]
-  ;B[kf]
-  ;W[lf]
-  ;B[ke]
-  ;W[lg]
-  ;B[ik]
-  ;W[ii]
-  ;B[le]
-  ;W[mf]
-  ;B[if]
-  ;W[je]
-  ;B[hk]
-  ;W[gk]
-  ;B[id]
-  ;W[gm]
-  ;B[jc]
-  ;W[kd]
-  ;B[iq]
-  ;W[jl]
-  ;B[jk]
-  ;W[jq]
-  ;B[ld]
-  ;W[kc]
-  ;B[lc]
-  ;W[kb]
-  ;B[lb]
-  ;W[ni]
-  ;B[mh]
-  ;W[nf]
-  ;B[ie]
-  ;W[jb]
-  ;B[ib]
-  ;W[ic]
-  ;B[hc]
-  ;W[hb]
-  ;B[jc]
-  ;W[pg]
-  ;B[of]
-  ;W[og]
-  ;B[gb]
-  ;W[ic]
-  ;B[ha]
-  ;W[hd]
-  ;B[bc]
-  ;W[oe]
-  ;B[pe]
-  ;W[od]
-  ;B[pc]
-  ;W[qg]
-  ;B[rg]
-  ;W[qf]
-  ;B[ne]
-  ;W[hf]
-  ;B[jc]
-  ;W[be]
-  ;B[ic]
-  ;W[cf]
-  ;B[fc]
-  ;W[ed]
-  ;B[da]
-  ;W[ca]
-  ;B[ec]
-  ;W[dd]
-  ;B[ce]
-  ;W[ah]
-  ;B[db]
-  ;W[ea]
-  ;B[db]
-  ;W[da]
-  ;B[ff]
-  ;W[df]
-  ;B[me]
-  ;W[rf]
-  ;B[rk]
-  ;W[sg]
-  ;B[rl]
-  ;W[rh]
-  ;B[on]
-  ;W[rd]
-  ;B[rc]
-  ;W[sc]
-  ;B[sb]
-  ;W[sd]
-  ;B[qb]
-  ;W[ge]
-  ;B[he]
-  ;W[ab]
-  ;B[gc]
-  ;W[db]
-  ;B[fa]
-  ;W[bd]
-  ;B[ad]
-  ;W[af]
-  ;B[fb]
-  ;W[oq]
-  ;B[or]
-  ;W[pq]
-  ;B[pr]
-  ;W[qq]
-  ;B[qr]
-  ;W[rr]
-  ;B[rq]
-  ;W[rp]
-  ;B[sq]
-  ;W[sr]
-  ;B[qp]
-  ;W[sp]
-  ;B[rq]
-  ;W[qd]
-  ;B[hl]
-  ;W[gl]
-  ;B[hm]
-  ;W[hn]
-  ;B[op]
-  ;W[qc]
-  ;B[rb]
-  ;W[qe]
-  ;B[ob]
-  ;W[si]
-  ;B[sj]
-  ;W[sh]
-  ;B[im]
-  ;W[in]
-  ;B[ms]
-  ;W[ls]
-  ;B[ns]
-  ;W[ef]
-  ;B[aa]
-  ;W[ae]
-  ;B[ac]
-)
+(;BL[1800.0]WL[1800.0]SZ[19]DT[1999-11-14]C[Ostatatnia
+partia mistrzostw Polski w go, warszawa'99.
+Czarne-leszek soldan,
+biale - krzysztof giedrojc.
+Wynik zdecydowal o mistrzostwie polski.
+Partia wyjatkowo zostala skomentowana przez przegranego (na komentarz
+mistrza musicie troche
+poczekac)]EV[mp '99]RO[7]PB[Leszek Sołdan]BR[6 dan]PW[Krzysztof Giedrojć]WR[4 dan];B[pd];W[dp];B[pp];W[dc];B[de];W[fd]
+;B[cc];W[cb];B[cd];W[eb];B[ch];W[nc];B[pf];W[jd];B[qj];W[nq];B[pn];W[oj]C[dziwne, przypomina
+troche styl Bogdanowa.];B[ok]
+;W[pj]C[bardzo dziwne-wydaje sie ze to powazny blad (ksztaltu, stylu
+itp)];B[pk];W[qi];B[pi];W[qk];B[rj];W[ql];B[qh];W[oi];B[ri];W[om];B[nk];W[pm]
+;B[np];W[qn];B[qo];W[mm];B[mq]C[do tego miejsca czarny
+zyskiwal na kazdym ruchu. konsekwencja ruchow 20 i 22.];W[lk];B[nh]C[prawie
+geta. bialy zostal wirtualnie zlapany.];W[ro];B[rn]C[41 - aktywny, moze zbyt aktywny, ale nie jest jednoznacznie
+zly.];W[rm];B[qm];W[dg]
+;B[qn]C[45-polaczenie ko bardzo duze. zabezpiecza
+caly dolny rog i jednoczesnie bardzo oslabia piony 24-38. Ciecie 46 nie ma
+szans na zabicie czarnej grupy.];W[cg];B[fe]C[tesuji
+obronne.];W[gd];B[eg]C[tesuji];W[dh];B[fg]C[wlasciwy ksztalt tej formacji.];W[gf]C[52- wyglada jak
+aji-keshi];B[ee];W[fi];B[gi]C[tesuji. krzysiek uwaza, ze to
+overplay-niestety nie znam jego kontrpropozycji.]
+;W[gh]C[przesadnie
+agresywne.];B[ei];W[eh];B[fh];W[fj];B[gg];W[hh];B[hg];W[ig]C[kolejny zbyt agresywny ruch. czarne nie
+maja zadnego problemu w przezywaniu. (niestety sekwencja ktora
+przeliczylem - jest tak dluga, ze pod koniec jej grania pomylilem!
+Wykonalem za 29ruchow blad kosztujacy mnie partie, a przynajmniej tak sie
+przez dlugi czas wydawalo :))];B[hi];W[ih];B[ej]
+;W[ek];B[fk];W[gj];B[dk];W[el];B[ci];W[di];B[dj];W[cj];B[fl]C[(przygotowuje drabinke
+na trzy kamienie)];W[hj];B[ck];W[bj]
+;B[bk];W[bh];B[aj];W[bi];B[bf]C[zabijajacy biala
+grupe!];W[cm]C[najtrudniejszy wariant.];B[dl]C[sekwencja do 94 wymuszona.
+potem nastapil tragiczny blad (pomimo, ze wczesniej przeliczylem wariant
+ktora zobaczycie w wariancie)];W[em];B[dm];W[dn];B[en];W[fm]
+;B[cn];W[do]
+(;B[bn]C[95-katastrofa!!!!
+powinno byc w b-7 (wariant)]
+()
+(;W[bm];B[am];W[bo];B[bl];W[ak];B[cl];W[ao];B[bg];W[ai];B[bb];W[ba];B[ag]C[to jest jakas aberracja. zamiast skarcic bialego, cvzarny
+przegral: grupe, zewnetrzne wplywy i terytoria wszedzie dookola. Roznica
+pomiedzy rezultatami - ok 60 punktow. :)
+Jeden blad, a taka roznica, niezle co?];W[kq]C[chcialem sie juz poddac, ale
+od czegoz mamy mazenia i sekretne plany?
+:)]
+;B[kp];W[jp];B[ko];W[lq];B[mp];W[jo];B[kn];W[jn];B[km];W[jm];B[kl];W[mk];B[kk]C[ciekawy ruch bialy nie moze skasowac
+trzech pionow z powodu 121 ktory jest lamaczem drabinek
+:)]
+;W[mr];B[nr];W[lr]C[przyszedl cien szansy :)];B[dq];W[eq];B[lj]C[ten ruch zabija biala grupe. odzyskuje punkty po troszeczku.
+ale jeszcze do 60 daleka droga...];W[mj];B[mi];W[nj];B[ll]C[bialy ma tylko
+jedno oko.
+Niestety i tak ma wiecej punktow, wiec nawet gdyby ich poswiecil to i tak
+wygra. Moja jedyna szansa w tym, zeby wdal sie w udowadnianie mi, ze grupa
+zyje..];W[oh];B[ng]
+;W[mo];B[no];W[nn];B[er];W[fq];B[nl];W[ml];B[ol]C[zrobilismy jedno oko i teraz czekam
+na rozwoj wypadkow. Niestety gram juz od pewnego czasu w byo-yomi (30
+sekund-kolejna zmiana systemu rozgrywania ligi), stad czasami pojawiaja
+sie idiotyzmy z obu stron. :)
+];W[kj]C[moja szansa nadchodzi..];B[li];W[lp];B[lo]
+;W[mn];B[jj]C[teraz pojawilo sie kilka bledow i niedokladnosci, ale
+rezultat byl juz obiecujacy
+:)];W[ki];B[ji];W[kh];B[jh];W[kg];B[jg];W[jf];B[kf];W[lf];B[ke];W[lg]
+;B[ik]C[powinno byc laczenie na twardo - o jeden oddech
+wiecej - coz byoyomi jest nieublagane.];W[ii];B[le];W[mf];B[if];W[je];B[hk];W[gk];B[id]C[musze myslec o wszystkich naraz- bardzo
+trudne..];W[gm];B[jc];W[kd]
+;B[iq];W[jl];B[jk];W[jq];B[ld];W[kc];B[lc];W[kb];B[lb]
+(;W[nf])
+(;W[mh])
+(;W[ni];B[mh];W[nf]C[182- musi uciec bialymi pionami bo inaczej moze byc
+nieszczescie.];B[ie];W[jb];B[ib];W[ic];B[hc];W[hb];B[jc];W[pg]C[grozba wlasciwie dobra, ale lepiej chyba nie grac tego ko, efekty
+sa niesamowite.];B[of]
+;W[og];B[gb]C[uratowalem grupe, i groze bialym w
+rogu. bialy nie zauwazyl :)];W[ic];B[ha];W[hd];B[bc]C[postanowilem zabic
+rog...]
+(;W[hf];B[jc];W[be];B[ic];W[cf]C[troche odkulem, ale ciagle jeszcze wiele
+trzeba];B[fc];W[ed];B[da];W[ca];B[ec];W[dd];B[ce];W[ah]
+;B[db];W[ea]
+(;B[ff])
+(;B[db];W[da];B[ff];W[df]C[bi]))
+(;W[oe];B[pe];W[od];B[pc];W[qg];B[rg];W[qf];B[ne];W[hf];B[jc];W[be];B[ic];W[cf]
+;B[fc];W[ed];B[da];W[ca];B[ec];W[dd];B[ce];W[ah]
+(;B[ff])
+(;B[db];W[ea];B[db];W[da];B[ff];W[df]C[tutaj bialy zagral w gote i pozwolil
+mi jeszcze bardziej zblizyc sie w grze do zwyciestwa.];B[me]C[Najwieksze
+-warte ok 40 punktow. teraz jestem juz w domu - a przynajmniej tak mi sie
+wydawalo.];W[rf]C[bialy musi szukac zycia ta wielka grupa z jednym okiem.
+zagralem troszke za malo aktywnie?.. :)];B[rk]C[bialy nie moze sie
+polaczyc!];W[sg];B[rl]
+;W[rh];B[on]C[uratowane 5 pionow !];W[rd];B[rc];W[sc];B[sb];W[sd];B[qb]
+(;W[bd]C[byoyomi kolejny blad...];B[ad];W[af];B[ab])
+(;W[ge];B[he];W[ab];B[gc];W[db];B[fa];W[bd];B[ad];W[af];B[fb];W[oq];B[or];W[pq]C[w tym momencie bialy zrobil ostateczny blad, ktory
+pozwalal mi wygrac... wystarczylo zagrac sente yose r-16 i t-11. Wygralbym
+z 1 punktu. Niestety krotkie byoyomi ( o ktorym juz tyle razy wspominalem,
+nie pozwolilo mi policzyc dokladnie. Wydawalo mi sie, ze wygrywam juz
+znacznie i moge sobie pozwolic na rozrzutnosc. oj,
+oj)]
+;B[pr];W[qq];B[qr];W[rr];B[rq];W[rp];B[sq];W[sr];B[qp];W[sp];B[rq];W[qd]C[nadal wygrywam, jesli sie polacze, ale
+niestety...];B[hl]
+;W[gl];B[hm];W[hn];B[op]C[wolalem zagrac glupote.];W[qc];B[rb];W[qe];B[ob];W[si];B[sj];W[sh];B[im];W[in]
+;B[ms];W[ls];B[ns];W[ef];B[aa];W[ae];B[ac]C[W koncu bialy wygral z 2.5punktu.
+Gratulacje dla nowego mistrza polski.
+
+Przyklad tej partii, pokazuje jednak, ze tegoroczne mistrzostwa polski byly
+delikatnie mowiac "niedopracowane".
+krotkie byoyomi to jedna niedoskonalosc. Powazniejszey blad to wprowadzenie
+formuly ligi bez finalow. Nie znam kraju uzywajacego takiego systemu.
+Przeciez jedna partia nie powinna wyznaczac mistrza kraju - nieprawdaz? To
+troche zbyt przypadkowe.
+Mam nadzieje obejrzec komentarz mistrza. Poki co przyjdzie mi w cichosci
+ducha cierpiec do najblizszych mistrzostw, mam nadzieje, ze rozgrywanych
+bardziej stabilnym systemem.
+
+Leszek Soldan
+(wasz nieoczekiwany-ciag dalszy :))
+
+]))))))
+(;B[bm]C[95-109 wariant ktory zapomnialem w trakcie
+gry.];W[bn];B[co];W[bo];B[cp];W[cq];B[bp];W[ap];B[bq];W[br];B[cl];W[aq];B[cm]
+;W[cr];B[an]C[czarny zyje, biala grupa niezywa - skutek
+zbyt agresywnej gry bialego.
+Nie ma katastrofy, ale bardzo pewne zwyciestwo czarnego. niestety stalo sie
+inaczej (patrz partia)]))

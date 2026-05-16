@@ -1,140 +1,257 @@
-(
-  ;BR[3d]CA[UTF-8]DT[2021-02-21]EV[Polish Go Championship 2020]FF[4]GM[1]GN[Round 7 - Board 1]KM[6.5]PB[Dawid Jurkiewicz]PC[Warszawa / Poznań / Online]PW[Piotr Dyszczyk]RE[B+R]RU[japanese]SZ[19]WR[1d]
-  ;B[pd]
-  ;W[dp]
-  ;B[qp]
-  ;W[dd]
-  ;B[np]
-  ;W[qc]
-  ;B[pc]
-  ;W[qd]
-  ;B[qf]
-  ;W[qe]
-  ;B[pe]
-  ;W[rf]
-  ;B[qb]
-  ;W[rb]
-  ;B[re]
-  ;W[pb]
-  ;B[rc]
-  ;W[qa]
-  ;B[rd]
-  ;W[qb]
-  ;B[rg]
-  ;W[pf]
-  ;B[qg]
-  ;W[nc]
-  ;B[nf]
-  ;W[ld]
-  ;B[fq]
-  ;W[hq]
-  ;B[fo]
-  ;W[dn]
-  ;B[jq]
-  ;W[cf]
-  ;B[fm]
-  ;W[jp]
-  ;B[kp]
-  ;W[ip]
-  ;B[ko]
-  ;W[in]
-  ;B[il]
-  ;W[gn]
-  ;B[fn]
-  ;W[dl]
-  ;B[km]
-  ;W[gl]
-  ;B[gm]
-  ;W[hm]
-  ;B[hl]
-  ;W[fl]
-  ;B[fp]
-  ;W[kq]
-  ;B[kr]
-  ;W[er]
-  ;B[fr]
-  ;W[ln]
-  ;B[kn]
-  ;W[po]
-  ;B[pp]
-  ;W[ph]
-  ;B[pg]
-  ;W[qk]
-  ;B[ok]
-  ;W[qo]
-  ;B[rp]
-  ;W[ro]
-  ;B[oo]
-  ;W[pm]
-  ;B[pl]
-  ;W[ql]
-  ;B[om]
-  ;W[pk]
-  ;B[ol]
-  ;W[ri]
-  ;B[eb]
-  ;W[ec]
-  ;B[db]
-  ;W[fb]
-  ;B[fc]
-  ;W[gb]
-  ;B[cd]
-  ;W[ce]
-  ;B[bd]
-  ;W[ed]
-  ;B[bb]
-  ;W[hd]
-  ;B[gj]
-  ;W[fi]
-  ;B[el]
-  ;W[ek]
-  ;B[em]
-  ;W[dm]
-  ;B[fk]
-  ;W[fj]
-  ;B[gk]
-  ;W[kg]
-  ;B[nd]
-  ;W[md]
-  ;B[gi]
-  ;W[fh]
-  ;B[gh]
-  ;W[fg]
-  ;B[ag]
-  ;W[bg]
-  ;B[ae]
-  ;W[ah]
-  ;B[af]
-  ;W[bh]
-  ;B[dq]
-  ;W[cq]
-  ;B[cr]
-  ;W[br]
-  ;B[bq]
-  ;W[cp]
-  ;B[ar]
-  ;W[bs]
-  ;B[cs]
-  ;W[eq]
-  ;B[bp]
-  ;W[fs]
-  ;B[gs]
-  ;W[es]
-  ;B[co]
-  ;W[do]
-  ;B[gr]
-  ;W[bo]
-  ;B[ao]
-  ;W[bn]
-  ;B[ap]
-  ;W[an]
-  ;B[as]
-  ;W[sp]
-  ;B[sq]
-  ;W[so]
-  ;B[qm]
-  ;W[rm]
-  ;B[pn]
-  ;W[rn]
-  ;B[ig]
-)
+(;FF[4]
+CA[UTF-8]
+GM[1]
+DT[2021-02-21]
+PC[OGS: https://online-go.com/game/31325477]
+GN[LMP 2020 round 7 board 4]
+PB[deejay]
+PW[shin0e]
+BR[1d]
+WR[3d]
+TM[5400]OT[3x60 byo-yomi]
+RE[B+R]
+SZ[19]
+KM[6.5]
+RU[Japanese]
+C[shin0e: hej ;)
+shin0e: milej gry! :)
+deejay: hej
+deejay: miłej gry!
+]
+;B[pd]
+(;W[dp]
+(;B[qp]
+(;W[dd]
+(;B[np]
+(;W[qc]
+(;B[pc]
+(;W[qd]
+(;B[qf]
+(;W[qe]
+(;B[pe]
+(;W[rf]
+(;B[qb]
+(;W[rb]
+(;B[re]
+(;W[pb]
+(;B[rc]
+(;W[qa]
+(;B[rd]
+(;W[qb]
+(;B[rg]
+(;W[pf]
+(;B[qg]
+(;W[nc]
+(;B[nf]
+(;W[ld]
+(;B[fq]
+(;W[hq]
+(;B[fo]
+(;W[dn]
+(;B[jq]
+(;W[cf]
+(;B[fm]
+(;W[jp]
+(;B[kp]
+(;W[ip]
+(;B[ko]
+(;W[in]
+(;B[il]
+C[Ashi1989: policja jeszcze nie przyjechala?
+Mrrr: wpadna na rozdanie nagrod
+Mrrr: ich kofniskata przysluzy sie lepszej pracy urzednikow 
+Ashi1989: nie nie, nie nie o covid
+Ashi1989: koksik ma mniej czasu niz deejay, to jest karalne :D
+yakcyll: :DD
+yakcyll: Koksik liczył, w którym ruchu musi wejść w byo, żeby uzyskać tytuł rozegrania najdłuższej partii w turnieju
+yakcyll: Po poprzedniej rundzie będzie ciężko, ale będzie próbował
+yakcyll: Nawet kosztem pociągu xd
+]
+(;W[gn]
+(;B[fn]
+(;W[dl]
+C[Cezary: CO
+Cezary: dzwonie na policje w tej chwili
+slowemp: emm
+Cezary: ile razy mozna mowic
+Cezary: miec czasu mniej niz dawid jest nielegalne
+Cezary: jak zwierzeta normalnie
+]
+(;B[km]
+C[Ashi1989: a ostrzegalem go przed gra :(
+Radziol: co?
+]
+(;W[gl]
+C[Ashi1989: eee
+Ashi1989: a ten ruch dziala?
+]
+(;B[gm]
+(;W[hm]
+(;B[hl]
+(;W[fl]
+C[Ashi1989: chyba troche za bardzo yolo
+Sadiker: Szybciej po grze będzie
+Sadiker: może ktoś ma pociag alo coś
+]
+(;B[fp]
+C[Sadiker: L3 ale pewnie i tak nie działa
+yakcyll: No, to teraz
+yakcyll: Giga moyo
+yakcyll: I wygrywa na komi
+]
+(;W[kq]
+(;B[kr]
+(;W[er]
+(;B[fr]
+C[yakcyll: Tak jak mówiłem, że ma problem z poświęcaniem,
+yakcyll: To tę trudno poświęcić teraz : p
+yakcyll: Niewiele aji w niej jest chyba
+]
+(;W[ln]
+(;B[kn]
+(;W[po]
+(;B[pp]
+(;W[ph]
+(;B[pg]
+C[Ashi1989: po G8
+Ashi1989: poswiecic bylo latwo xD
+]
+(;W[qk]
+(;B[ok]
+(;W[qo]
+(;B[rp]
+(;W[ro]
+(;B[oo]
+(;W[pm]
+(;B[pl]
+(;W[ql]
+(;B[om]
+C[yakcyll: Teraz tenuki?
+]
+(;W[pk]
+(;B[ol]
+(;W[ri]
+C[Radziol: tera zobaczymy jak sobie czarny poradzi we wplywach bialasa
+yakcyll: Chyba poradzi
+yakcyll: ISH i Leela powiedziałyyby teraz 'jakie wpływy' i pacnęły kamień gdzie popadnie
+yakcyll: Czarny ma dużo profitu, trudna gra białego, ale z drugiej strony czarny nie sięga nigdzie głęboko, więc nawet nie wiem, kogo obstawiać
+Radziol: gra o stawkę dla obu
+Radziol: moze sie wiele wydarzyc :)
+]
+(;B[eb]
+(;W[ec]
+(;B[db]
+(;W[fb]
+(;B[fc]
+(;W[gb]
+(;B[cd]
+(;W[ce]
+(;B[bd]
+(;W[ed]
+(;B[bb]
+C[Sadiker: Za dużo dziur ma D8 D6 D4, coś tam musi chodzić
+Radziol: wiadomka ze bialy calosci nie zgarnie
+Radziol: ale przeciez nie musi
+yakcyll: Lubisz białego w tej grze?
+]
+(;W[hd]
+C[Radziol: nie tak bardzo
+Sadiker: h16 chyba nie wystarczy by wygrać
+Sadiker: szybciej jakieś L14
+Radziol: co nie znaczy ze czarny wygral
+Sadiker: biały musia grać chciwe jak chce wygrać :>
+]
+(;B[gj]
+C[yakcyll: Łatwo nie będzie, jest bardzo szeroko wszędzie
+Sadiker: o g10 też myślałem dla białego
+]
+(;W[fi]
+C[yakcyll: O, masz chciwie
+]
+(;B[el]
+(;W[ek]
+(;B[em]
+C[yakcyll: o
+yakcyll: d9 wygląda groźnie nagle
+]
+(;W[dm]
+(;B[fk]
+(;W[fj]
+(;B[gk]
+C[Sadiker: cz sie połasił na 2 kamyczki?
+Sadiker: h12?
+yakcyll: interesting.jpeg
+Sadiker: ew coś w rogu
+yakcyll: h12 gigantyczne
+yakcyll: I potencjalnie groźne dla czarnego
+yakcyll: Wpływy mu się tam rysowały
+]
+(;W[kg]
+C[Sadiker: troche sie boje C5 D5 C3
+yakcyll: Co, będzie przeżywał po lewej?
+yakcyll: A to l13 to tak z lewego pola
+]
+(;B[nd]
+C[Sadiker: teraz trochę bez sensu wygląda h16
+]
+(;W[md]
+(;B[gi]
+C[Sadiker: g12, chciwo graj
+]
+(;W[fh]
+(;B[gh]
+(;W[fg]
+(;B[ag]
+(;W[bg]
+C[Radziol: czo g12 nie chodziło?
+]
+(;B[ae]
+(;W[ah]
+(;B[af]
+(;W[bh]
+C[Radziol: b+komi ?
+]
+(;B[dq]
+(;W[cq]
+(;B[cr]
+C[slowemp: e3?
+]
+(;W[br]
+(;B[bq]
+(;W[cp]
+(;B[ar]
+(;W[bs]
+(;B[cs]
+(;W[eq]
+(;B[bp]
+(;W[fs]
+(;B[gs]
+(;W[es]
+C[yakcyll: b6 sente?
+yakcyll: W sumie b5 lepsze?
+Radziol: b5 dobre jesli chcesz zeby bialy wrocil do gry
+yakcyll: Mam na myśli białego b5
+Radziol: a to co innego :)
+yakcyll: :p
+]
+(;B[co]
+(;W[do]
+(;B[gr]
+(;W[bo]
+(;B[ao]
+(;W[bn]
+(;B[ap]
+(;W[an]
+(;B[as]
+(;W[sp]
+(;B[sq]
+(;W[so]
+(;B[qm]
+(;W[rm]
+(;B[pn]
+(;W[rn]
+(;B[ig]
+C[shin0e: dzieki ;)
+deejay: dzięki
+]
+)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))

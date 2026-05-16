@@ -9,8 +9,7 @@ import type { Breaker, Game, GameProps } from '@/schema/data';
 import { parseGames } from '@/data/games';
 import { parsePlayers } from '@/data/players';
 import { createTable } from '@/data/table';
-import type { RootParams } from './sgf';
-import { cleanSgf } from './sgf';
+import { Sgf, type SgfNodeData } from './sgf';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const EVENT_DIR = join(__dirname, `../events/${EVENT}`);
@@ -210,7 +209,7 @@ async function extractFromDatabase({
           OT: null,
           PC: location,
           EV: `Polish Go Championship ${year}`,
-          RU: (val: string | undefined) => (val ? val.toLowerCase() : null),
+          RU: (current) => (current[0] ? current[0].toLowerCase() : null),
           GN: `Round ${round + 1} - Board ${board + 1}`,
         },
       });
@@ -282,7 +281,7 @@ async function getSgf({
   output,
 }: {
   sgfs: string[];
-  props: RootParams;
+  props: SgfNodeData;
   output: string;
 }): Promise<string | null> {
   if (!sgfs?.length) {
@@ -312,7 +311,7 @@ async function getSgf({
 
     result.push({
       source: url,
-      cleaned: cleanSgf(content, props),
+      cleaned: Sgf.clean(content, props),
       original: content,
     });
   }

@@ -1,184 +1,460 @@
-(
-  ;BR[4d]CA[UTF-8]DT[2021-02-19]EV[Polish Go Championship 2020]FF[4]GM[1]GN[Round 2 - Board 4]KM[6.5]PB[Marcin Majka]PC[Warszawa / Poznań / Online]PW[Kamil Chwedyna]RE[B+R]RU[japanese]SZ[19]WR[4d]
-  ;B[pd]
-  ;W[dc]
-  ;B[cq]
-  ;W[qp]
-  ;B[oq]
-  ;W[po]
-  ;B[ce]
-  ;W[ci]
-  ;B[ed]
-  ;W[ec]
-  ;B[fd]
-  ;W[gc]
-  ;B[ck]
-  ;W[ei]
-  ;B[ek]
-  ;W[ef]
-  ;B[gd]
-  ;W[hc]
-  ;B[hd]
-  ;W[ic]
-  ;B[cg]
-  ;W[dd]
-  ;B[de]
-  ;W[ee]
-  ;B[dh]
-  ;W[fg]
-  ;B[di]
-  ;W[nd]
-  ;B[id]
-  ;W[ig]
-  ;B[fc]
-  ;W[fb]
-  ;B[gb]
-  ;W[eb]
-  ;B[jc]
-  ;W[hb]
-  ;B[ib]
-  ;W[ga]
-  ;B[je]
-  ;W[kd]
-  ;B[jd]
-  ;W[kg]
-  ;B[kf]
-  ;W[lg]
-  ;B[hg]
-  ;W[hf]
-  ;B[hh]
-  ;W[if]
-  ;B[gf]
-  ;W[gg]
-  ;B[ff]
-  ;W[gi]
-  ;B[eg]
-  ;W[hk]
-  ;B[pf]
-  ;W[ep]
-  ;B[kp]
-  ;W[cp]
-  ;B[dq]
-  ;W[dp]
-  ;B[fr]
-  ;W[cl]
-  ;B[dl]
-  ;W[cm]
-  ;B[pi]
-  ;W[qk]
-  ;B[lf]
-  ;W[mf]
-  ;B[mg]
-  ;W[pc]
-  ;B[qc]
-  ;W[qb]
-  ;B[oc]
-  ;W[pb]
-  ;B[od]
-  ;W[qd]
-  ;B[rc]
-  ;W[qe]
-  ;B[ob]
-  ;W[qf]
-  ;B[rb]
-  ;W[pg]
-  ;B[mh]
-  ;W[nf]
-  ;B[jh]
-  ;W[jf]
-  ;B[ld]
-  ;W[ih]
-  ;B[ji]
-  ;W[jg]
-  ;B[of]
-  ;W[oh]
-  ;B[pk]
-  ;W[qh]
-  ;B[ql]
-  ;W[rj]
-  ;B[og]
-  ;W[ph]
-  ;B[pm]
-  ;W[np]
-  ;B[op]
-  ;W[oo]
-  ;B[no]
-  ;W[mo]
-  ;B[nn]
-  ;W[mp]
-  ;B[qr]
-  ;W[rr]
-  ;B[pr]
-  ;W[rq]
-  ;B[mr]
-  ;W[lr]
-  ;B[mq]
-  ;W[mn]
-  ;B[mm]
-  ;W[kn]
-  ;B[lm]
-  ;W[ko]
-  ;B[jp]
-  ;W[ol]
-  ;B[om]
-  ;W[nl]
-  ;B[nm]
-  ;W[qn]
-  ;B[jl]
-  ;W[in]
-  ;B[nj]
-  ;W[gr]
-  ;B[gq]
-  ;W[fq]
-  ;B[eq]
-  ;W[lq]
-  ;B[lp]
-  ;W[jr]
-  ;B[kr]
-  ;W[kq]
-  ;B[iq]
-  ;W[hq]
-  ;B[ir]
-  ;W[gp]
-  ;B[io]
-  ;W[jo]
-  ;B[hl]
-  ;W[ho]
-  ;B[ik]
-  ;W[is]
-  ;B[jq]
-  ;W[ks]
-  ;B[ms]
-  ;W[ls]
-  ;B[hs]
-  ;W[hr]
-  ;B[js]
-  ;W[eh]
-  ;B[kr]
-  ;W[dg]
-  ;B[ch]
-  ;W[cj]
-  ;B[dj]
-  ;W[bk]
-  ;B[hi]
-  ;W[gk]
-  ;B[hj]
-  ;W[fk]
-  ;B[fm]
-  ;W[fl]
-  ;B[gm]
-  ;W[el]
-  ;B[dk]
-  ;W[em]
-  ;B[dm]
-  ;W[en]
-  ;B[cn]
-  ;W[bm]
-  ;B[bn]
-  ;W[al]
-  ;B[an]
-  ;W[am]
-  ;B[aj]
-  ;W[rl]
-  ;B[qj]
-)
+(;FF[4]
+CA[UTF-8]
+GM[1]
+DT[2021-02-19]
+PC[OGS: https://online-go.com/game/31256422]
+GN[LMP2020 - Round 2 - Board 1]
+PB[Higaki]
+PW[fisz]
+BR[3d]
+WR[3d]
+TM[5400]OT[3x60 byo-yomi]
+RE[B+R]
+SZ[19]
+KM[6.5]
+RU[Japanese]
+;B[pd]
+(;W[dc]
+C[Higaki: IGLO
+fisz: miłej gry i do iglo
+]
+(;B[cq]
+C[Sadiker: Mozna tak?
+]
+(;W[qp]
+(;B[oq]
+(;W[po]
+(;B[ce]
+(;W[ci]
+(;B[ed]
+(;W[ec]
+(;B[fd]
+(;W[gc]
+(;B[ck]
+(;W[ei]
+(;B[ek]
+(;W[ef]
+C[Cezary: w sensie jak
+]
+(;B[gd]
+(;W[hc]
+(;B[hd]
+C[Sadiker: grać do IGLO podaczas mistrzostw
+]
+(;W[ic]
+(;B[cg]
+C[yakcyll: rofl
+yakcyll: Raczej żartował xd
+yakcyll: Chociaż...
+Radziol: no nie
+Radziol: grają do iglo
+Radziol: póki co iglo ma mniejszą rangę więc nie powinno być problemu c'nie szefie cezary?
+]
+(;W[dd]
+(;B[de]
+(;W[ee]
+C[Sadiker: Cezary gra w IGLo a nie gra w MP. Więc IGLO ma większą rangę ;)
+]
+(;B[dh]
+(;W[fg]
+(;B[di]
+(;W[nd]
+C[led: Cezary, jak grają do Iglo to pamiętaj by nie zgłaszać do EGD, bo będzie policzona podówjnie
+]
+(;B[id]
+(;W[ig]
+(;B[fc]
+(;W[fb]
+(;B[gb]
+(;W[eb]
+(;B[jc]
+(;W[hb]
+(;B[ib]
+(;W[ga]
+C[Sadiker: e15 chyba złe było? Czy to moze jakiś nowy ruch bota
+Sadiker: bo cz złapał c11 i teraz można atakować o16 i j13
+]
+(;B[je]
+(;W[kd]
+(;B[jd]
+(;W[kg]
+C[Radziol: wydaje się, że czarny ma profit
+Radziol: ale to dopiero początek przygody
+]
+(;B[kf]
+(;W[lg]
+C[Cezary: wszystko jest zgodnie z prawem
+Cezary: boskim i igloskim
+silent: Hmm, to biały miał tam kamień na początku, a teraz ma otwarty róg i dwie słabe grupy, to chyba cz dobrze pograł
+]
+(;B[hg]
+C[Cezary: a do egd jest wtedy gdy obaj gracze sie zadeklaruja ze chca do egd (przed rozpoczeciem sezonu)
+Sadiker: wrzuciłem szybko do bota i przed cięciem w E15 było równo, a teraz cz ma 90
+Cezary: fisz i higaki nie chcieli wiec nie ma do egd
+Cezary: no wiesz sad, wczoraj kac tez mial pewnie z 100% :p
+Cezary: przeciwko fiszowi
+Sadiker: ale po L14 i H13 się wyrównuje
+Sadiker: ale Kac to Kac
+]
+(;W[hf]
+(;B[hh]
+(;W[if]
+(;B[gf]
+(;W[gg]
+(;B[ff]
+C[Sadiker: chyba e12 musi
+]
+(;W[gi]
+C[Sadiker: ja bym brał e13
+yakcyll: Pytanie, czy nie za solidne
+Sadiker: nie trzeba sie potem przejmować K15
+Sadiker: \[object Object\]
+]
+(;B[eg]
+C[yakcyll: No i jest
+]
+(;W[hk]
+(;B[pf]
+(;W[ep]
+(;B[kp]
+(;W[cp]
+(;B[dq]
+(;W[dp]
+(;B[fr]
+(;W[cl]
+(;B[dl]
+(;W[cm]
+(;B[pi]
+(;W[qk]
+(;B[lf]
+(;W[mf]
+C[Sadiker: B9 wydaje się duże
+]
+(;B[mg]
+(;W[pc]
+(;B[qc]
+(;W[qb]
+(;B[oc]
+(;W[pb]
+(;B[od]
+(;W[qd]
+(;B[rc]
+(;W[qe]
+C[Sadiker: s18
+]
+(;B[ob]
+(;W[qf]
+C[Sadiker: Dalej s18
+]
+(;B[rb]
+(;W[pg]
+(;B[mh]
+(;W[nf]
+C[kmr44: co to jest IGLO? :)
+silent: Internetowa Go Liga O!
+kmr44: dziwna nazwa ale ok. Myslalem ze to MP, a tu zonk
+silent: https://patronite.pl/iglo/description
+Radziol: rozwinięcie skrótu zupełnie bez sensu, ale liga fajna
+silent: Nie wiem czy jest gdfzieśbardziej oficjalne info
+silent: Znaczy to jest gra do MP ;p
+kmr44: Aha, czyli jednoczesnie MP i IGLO, ok. Grunt to jasnosc przekazu.
+]
+(;B[jh]
+(;W[jf]
+C[kmr44: Tak czy siak, bialy ma niezly worek.
+]
+(;B[ld]
+(;W[ih]
+(;B[ji]
+C[Sadiker: ciężko bo nie ma grupy do zabicia dla białego
+]
+(;W[jg]
+(;B[of]
+(;W[oh]
+(;B[pk]
+(;W[qh]
+(;B[ql]
+(;W[rj]
+(;B[og]
+(;W[ph]
+(;B[pm]
+(;W[np]
+C[kmr44: jakims cudem czarnemu udalo sie ja stworzyc (Q9 i spolka) wiec teraz bialy ma co atakowac
+]
+(;B[op]
+(;W[oo]
+(;B[no]
+(;W[mo]
+(;B[nn]
+(;W[mp]
+(;B[qr]
+(;W[rr]
+(;B[pr]
+(;W[rq]
+(;B[mr]
+(;W[lr]
+(;B[mq]
+(;W[mn]
+(;B[mm]
+C[Sadiker: cz ma też potem s5 wiec ciężko zabić czarne
+Sadiker: jakiegoś babola by musiał zagrać
+kmr44: Ale mimo wszystko i tak czarny chyba prowadzi grubo - caly czasH11 w zapasie
+]
+(;W[kn]
+C[Sadiker: m7 i już
+]
+(;B[lm]
+C[Radziol: na teren z + 20 dla czarnego
+]
+(;W[ko]
+(;B[jp]
+C[Sadiker: Być moze nawet ja bym tego nie przegrał już :)
+Ashi1989: gralbys przeciwko fiszowi - ja nie bylbym tak pewny siebie :D
+]
+(;W[ol]
+C[silent: Hmm P8 nie wymusza na czarnym połączenia po którym S5 może być groźne? 
+Sadiker: o7 wydaje się zacne
+Sadiker: po co komplikować
+Cezary: higaki jest w sumie
+Cezary: w gazie
+kmr44: Bialy ma cos kolo 20 punktow terenu (zakladajac ze wszystkie jego grupy bezwzglednie zyja co nie jest prawda), a czarny ma cos kolo 50. Bialy musi cos zabic i to duzego.
+]
+(;B[om]
+(;W[nl]
+(;B[nm]
+(;W[qn]
+C[Ashi1989: no i jeszcze jest H11 jak Lukan pokazywal
+]
+(;B[jl]
+(;W[in]
+C[kmr44: O, to tak jak ja :D
+kmr44: S7 teraz wyglada spoko, ale jak znam siebie to zagralbym cos ala H8 teraz 
+]
+(;B[nj]
+(;W[gr]
+C[kmr44: O10 to tak jakby deklaracja zwyciestwa, chyba slusznie.
+kmr44: super bezpieczny ruch
+Radziol: bialy poluje na m3
+yakcyll: Ale nie ma jak wyjść chyba
+yakcyll: k2 j2, j2 l2?
+yakcyll: oh, k2 j2 k3 j3 j4
+Radziol: nooo temat jest śliski
+kmr44: czarny moze zagrac G3 i nawet jakby bialy zabil lewy dolny rog, to czarny wezmie caly teren wokol J3 sporo za malo dla bialego
+Radziol: ale g3 powinno zalatwic sprawę
+]
+(;B[gq]
+(;W[fq]
+(;B[eq]
+C[yakcyll: tak to zabawnie
+]
+(;W[lq]
+C[kmr44: no to chyba koniec, myslalem ze bialy zagra cos w stylu counter hane H3 i bedzie walczyl o dol i atakowal carna grupe N3
+]
+(;B[lp]
+(;W[jr]
+(;B[kr]
+C[kmr44: K3 chyba lepsze zamiast L2
+]
+(;W[kq]
+(;B[iq]
+C[Mrrr: bialy od poczatku nie mial na co polowac
+Mrrr: chodzi wiec po osiedlu i szuka, kto na niego krzywo spojrzy, ale nikt
+Mrrr: kazdy spokojnie sobie zyje
+kmr44: tak czy siak, bialy powinien umrzec na dole
+]
+(;W[hq]
+C[kmr44: K2
+]
+(;B[ir]
+(;W[gp]
+C[kmr44: w sensie J2 teraz dla czarnch
+]
+(;B[io]
+(;W[jo]
+(;B[hl]
+(;W[ho]
+(;B[ik]
+(;W[is]
+C[Sadiker: no to ko
+yakcyll: Ojej, co tu się dzieje
+Sadiker: czarny dał sobie skomplikować grę
+]
+(;B[jq]
+C[yakcyll: wotafak
+Ashi1989: \[object Object\]
+Ashi1989: \[object Object\]
+yakcyll: lol
+Ashi1989: \[object Object\]
+]
+(;W[ks]
+C[Ashi1989: czyli ko
+]
+(;B[ms]
+C[kmr44: J1 nie wiem, ale wydawalo mi sie ze bialy mogl po prostu zabic czarnego grajac  K3 , czarne wtedy cos w stylu H10 biale E2,ale i tak czarny by wygrywal, a tak czarny ma ko
+yakcyll: Ale jakie gigantyczne
+Sadiker: ale chyba nie ma takiej groźby by cz musiał odpowiedzieć
+]
+(;W[ls]
+C[Sadiker: jeydne co może wziąć to np L14
+yakcyll: o3?
+]
+(;B[hs]
+C[Ashi1989: za male
+Ashi1989: bo czarny ma H11
+yakcyll: No, jedną
+Sadiker: g1 teraz
+Cezary: a to ko to sukces dla czarnego nie ?
+Cezary: bo nie bylo ko
+yakcyll: To dla białego chyba
+yakcyll: Bo czarny zabijał na czysto
+Cezary: nie bo bialy mogl po rpostu wziac
+]
+(;W[hr]
+C[Ashi1989: ale bez ko czarny umieral
+]
+(;B[js]
+C[Cezary: nie nie jak czarny zrobil tenuki
+yakcyll: im done with this game
+Ashi1989: znaczy bialy
+Cezary: to bialy mogl wziac wszystko na dole
+]
+(;W[eh]
+C[Cezary: z k3
+Ashi1989: pokaz sekwencje :D
+Cezary: \[object Object\]
+Ashi1989: no tak, to prawda
+Ashi1989: czyli ko to duzy sukces :D
+Ashi1989: tak w ogole, nie wiem czy wiesz Cezary
+Ashi1989: ale piotrek poddal zanim umarl
+Ashi1989: wiec wygralem zaklad :D
+]
+(;B[kr]
+C[yakcyll: rofl
+]
+(;W[dg]
+C[Cezary: znowu pauza ?
+Ashi1989: paused?
+Cezary: no przegralem przegralem
+Ashi1989: a jaki jest dopuszczalny powod pauzy? WC?
+yakcyll: Aye.
+Cezary: jak sie gracz musi dobrze ale to naprawde dobrze namyslec
+yakcyll: Ale tylko w byo
+Cezary: to wtedy moze zrobic pauze
+Cezary: no to halo
+yakcyll: Teraz pauza jest prawdopodobnie na wymianę laptopa Higakiego
+yakcyll: Bo net mu ścina
+Ashi1989: a
+Cezary: mhm
+Cezary: no chyba ma jakies problemy marcin
+Ashi1989: to lepiej przed byo ;)
+Cezary: no bo to druga pauza w tej grze
+bartosz: A co w przypadku przegranej przez problemy techiczne niezalezne od gracza?
+Sadiker: c12
+Sadiker: biały dalej nie ma 2 oczu
+yakcyll: Jeśli ruch był wykonany, ale nie przyjęty przez serwer z powodu laga, to wznawiamy
+yakcyll: Jeśli faktycznie się spóźnił z ruchem, to +T
+Ashi1989: po obu stronach jest sedzia, wiec latwo takie cos wylapac :)
+Ashi1989: to duzy plus tego w jaki sposob zostalo lmp zorganizowane :)
+yakcyll: Twoje pozytywne podejście Ashi jest nieocenione
+]
+(;B[ch]
+(;W[cj]
+C[bartosz: Są jakieś zdjęcia jak to wygląda?
+Sadiker: RODO
+Sadiker: :P
+bartosz: Z zamazanymi twarzami oczywiście
+bartosz: Opcojanie paskami na oczach
+Mrrr: a gdzie odbywaja sie gry?
+]
+(;B[dj]
+(;W[bk]
+C[Ashi1989: w warszawie i poznaniu
+yakcyll: ^
+]
+(;B[hi]
+C[yakcyll: Zdjęcia będą wkrótce
+yakcyll: Pewnie między rundami.
+Mrrr: ok, dzieki, ale czy to w prywatnych domach spotkania,czy jak?
+]
+(;W[gk]
+C[Sadiker: teraz to chyba koniec
+Ashi1989: w warszawie tak, w poznaniu nie wiem
+yakcyll: W Poznaniu w klubie Honte
+yakcyll: W Warszawie w mieszkaniu jednego z graczy
+]
+(;B[hj]
+C[silent: W poznaniu w klubie honte z tego co słyszałem
+Cezary: mrr jest z policji :p
+yakcyll: xd
+Cezary: wyczaja gdzie sie gniezdzimy
+]
+(;W[fk]
+C[Mrrr: z policji intergalaktycznej
+yakcyll: Mamy cztery osoby, pomieszczenia wietrzone, dystans zachowany
+Ashi1989: nigdy ich nie znajdziecie!
+yakcyll: Lokator nalegał, żeby przestrzegać zasad higieny
+yakcyll: Więc pilnujemy się.
+]
+(;B[fm]
+C[silent: No adres był gdzieś podany
+silent: W sensie honte
+Ashi1989: jak dystans zachowany? 2metry jak koksik z siasiem grali przy jednym gobanie
+Ashi1989: xD
+yakcyll: No, półtora
+Cezary: piotrek w koncu myje rece po wyjsciu z kibla 
+Sadiker: czyli umyto kamienie przed grą?
+Cezary: :p
+yakcyll: lmao
+Sadiker: i każdy zbiera po grze tylko swój kolor?
+Radziol: Sadiker a co z jeńcami?
+yakcyll: Aż tak daleko nie zaszliśmy niestety, ale mamy zapas środków odkażających do rąk
+Ashi1989: zasady sa takie, ze nie wolno uzywanymi kamieniami przecierac oczu ani dlubac sobie nimi w nosie
+yakcyll: Ani połykać
+Sadiker: a w uchu?
+silent: Jeńcy wyrzucani do śmietnika
+yakcyll: lmao
+yakcyll: A konwencja genewska?
+Cezary: po to graja chinskimi zasadami
+Radziol: to niezgodne z konwencją genewską
+yakcyll: ROFL
+]
+(;W[fl]
+C[Mrrr: swietnie, ze udalo sie zorganizowac mistrzostwa, no i mily gest ze strony gracza z Wawy. Nikt nie zostaje oskarzony w tej galaktyce
+Cezary: haha
+Ashi1989: ta. a za godzine bedzie wjazd na chate
+Ashi1989: oddzial antyterrorystycznny
+]
+(;B[gm]
+(;W[el]
+(;B[dk]
+(;W[em]
+(;B[dm]
+(;W[en]
+C[Ashi1989: i wyroki za dzialanie w zmowie i porozumieniu w celu spowodowanie katastrofy biologicznej 
+Mrrr: nie no, serio, szacun dla organizatorow, ze tak na dwa miejsca daliscie rade
+]
+(;B[cn]
+C[Radziol: brawo Marcin!
+yakcyll: Oby wszystko doszło sprawnie do końca
+Sadiker: Powinno sie udać, chyba ze ktoś węch nagle straci
+Sadiker: albo smak
+Ashi1989: albo rękę
+Sadiker: można grać drugą
+silent: To się nie przyznaje do niczego wtedy ;p
+Ashi1989: a to bez węchu czy smaku nie mozna?
+Ashi1989: :D
+]
+(;W[bm]
+(;B[bn]
+(;W[al]
+(;B[an]
+(;W[am]
+(;B[aj]
+(;W[rl]
+C[yakcyll: Połykanie kamyków traci sens wtedy ;(
+]
+(;B[qj]
+C[Ashi1989: no tak. moj blad
+kmr44: gg
+]
+)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))

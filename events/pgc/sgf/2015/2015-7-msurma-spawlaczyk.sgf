@@ -1,82 +1,209 @@
-(
-  ;BR[1p]CA[UTF-8]DT[2016-01-10]EV[Polish Go Championship 2015]FF[4]GM[1]GN[Round 7 - Board 1]KM[6.50]PB[Mateusz Surma]PC[Warszawa]PW[Sebastian Pawlaczyk]RE[B+R]RU[japanese]ST[2]SZ[19]WR[4d]
-  ;B[pq]
-  ;W[qe]
-  ;B[cp]
-  ;W[dc]
-  ;B[pc]
-  ;W[ep]
-  ;B[eq]
-  ;W[dp]
-  ;B[dq]
-  ;W[co]
-  ;B[fq]
-  ;W[fp]
-  ;B[gp]
-  ;W[cq]
-  ;B[bp]
-  ;W[cr]
-  ;B[bq]
-  ;W[gq]
-  ;B[hq]
-  ;W[gr]
-  ;B[bo]
-  ;W[br]
-  ;B[fr]
-  ;W[hr]
-  ;B[dr]
-  ;W[iq]
-  ;B[hp]
-  ;W[cn]
-  ;B[ip]
-  ;W[jq]
-  ;B[bn]
-  ;W[en]
-  ;B[jp]
-  ;W[es]
-  ;B[ds]
-  ;W[fs]
-  ;B[bs]
-  ;W[gs]
-  ;B[ar]
-  ;W[kq]
-  ;B[fm]
-  ;W[cl]
-  ;B[fn]
-  ;W[em]
-  ;B[fl]
-  ;W[el]
-  ;B[fk]
-  ;W[di]
-  ;B[ce]
-  ;W[cd]
-  ;B[ee]
-  ;W[fd]
-  ;B[cg]
-  ;W[be]
-  ;B[bf]
-  ;W[de]
-  ;B[df]
-  ;W[cf]
-  ;B[cj]
-  ;W[dj]
-  ;B[ce]
-  ;W[dd]
-  ;B[ci]
-  ;W[ef]
-  ;B[eg]
-  ;W[ff]
-  ;B[fg]
-  ;W[cf]
-  ;B[dg]
-  ;W[gf]
-  ;B[bm]
-  ;W[cm]
-  ;B[dk]
-  ;W[fo]
-  ;B[do]
-  ;W[dl]
-  ;B[go]
-  ;W[ek]
-  ;B[fj]
-)
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[5400]OT[5x60 byo-yomi]
+GN[Sebastian Pawlaczyk 4d (white) vs Mateusz Surma 1p (black)]PW[Sebastian Pawlaczyk]PB[Mateusz Surma]WR[4d]BR[1p]DT[2016-01-10]PC[Narnia]RE[B+Resign]
+;B[pq]
+;W[qe]
+;B[cp]
+;W[dc]
+;B[pc]
+;W[ep]C[LMP1 [-\]: Watch us live at: https://www.youtube.com/watch?v=g7jJlYnwur0
+LMP1 [-\]: Results, game records and player profiles: http://mp.go.art.pl
+]
+;B[eq]
+;W[dp]
+;B[dq]
+;W[co]
+;B[fq]
+;W[fp]
+;B[gp]
+;W[cq]
+;B[bp]
+;W[cr]
+;B[bq]
+;W[gq]C[iCloud [10k\]: 1p
+]
+;B[hq]
+;W[gr]C[iCloud [10k\]: why 1p play with 4d?
+]
+;B[bo]
+;W[br]
+;B[fr]
+;W[hr]
+;B[dr]C[LMP1 [-\]: ugh, hope I didn't mess up the order
+dutch2dan [1d?\]: you did :)
+]
+;W[iq]C[LMP1 [-\]: Sorry. Was trying to fix camera
+dutch2dan [1d?\]: np
+Oni [-\]: LMP just record the game
+awesome [3k\]: Did you hear about the Polak who thought his wife was trying to kill him? On her dressing table he found a bottle of "Polish Remover"
+]
+;B[hp]C[LMP1 [-\]: awesome, please spare us your humour
+awesome [3k\]: :)
+]
+;W[cn]
+;B[ip]
+;W[jq]
+;B[bn]
+;W[en]
+;B[jp]C[Punch [1d?\]: *e1 Tesuji* - no work for w
+Weak [5k\]: what's Surma drinking ?
+LMP1 [-\]: excellent question
+atgo [?\]: no sound at video?
+LMP1 [-\]: Black is drinking blackcurrant juice
+Punch [1d?\]: Sake!!!
+Weak [5k\]: ah
+LMP1 [-\]: no sound, bridge players are noisy
+atgo [?\]: :-)
+BubbIes [3d?\]: Why not have sound and if people think ig it too loud they can just mute it then? lol
+]
+;W[es]
+;B[ds]C[Punch [1d?\]: ahh no work!
+]
+;W[fs]
+;B[bs]C[LMP1 [-\]: I'd rather not waste 128kbit to transmit bridge noise
+BubbIes [3d?\]: :(
+]
+;W[gs]C[Punch [1d?\]: j2 
+LMP1 [-\]: instead, we prefer to give you a better quality video
+Oni [-\]: \\o/ link?
+LMP1 [-\]: https://www.youtube.com/watch?v=g7jJlYnwur0
+awesome [3k\]: I thought bridge players had to be silent 
+LMP1 [-\]: you seem to be full of preconceptions, awesome
+Weak [5k\]: why do they do complicate joseki and not simple ?
+]
+;B[ar]
+;W[kq]
+;B[fm]C[barty [1d\]: white start it
+Song [4d\]: only reason is because they like the joseki
+]
+;W[cl]C[Song [4d\]: if they were not ok with it they wouldnt play it...well maybe haha
+barty [1d\]: i dont like avalanche joseki too
+Punch [1d?\]: LMG started :-)
+Burton [6k\]: will there be a pro commentary on these games here at this site?
+BubbIes [3d?\]: Werfeus is pro enough to comment on it for us :D
+]
+;B[fn]C[LMP1 [-\]: Players will probably review after the game, but not specific plans to publis, Burton
+LMP1 [-\]: *publish
+Burton [6k\]: thanks
+Weak [5k\]: Sebastian = werfeus ?
+Werfeus [5d\]: sure
+]
+;W[em]C[BubbIes [3d?\]: lol
+]
+;B[fl]C[awesome [3k\]: this looks good for b
+]
+;W[el]
+;B[fk]C[Werfeus [5d\]: i know big avalanche pretty well unless i play it against someone who knows it pretty well
+Punch [1d?\]: Wow. Game translate here fasted then video o_O
+]
+;W[di]C[Weak [5k\]: avalanche joseki work very well against kyu players when you're dan x)
+]
+;B[ce]C[awesome [3k\]: but then anything works
+]
+;W[cd]C[barty [1d\]: joseki worsk if you understand it
+barty [1d\]: if not there will always be a player who broke it
+]
+;B[ee]
+;W[fd]
+;B[cg]C[Mirador: I see many books on joseki. But is there a single one who indicates errors and the main ways to punish it?
+]
+;W[be]
+;B[bf]
+;W[de]
+;B[df]
+;W[cf]C[Burton [6k\]: i wonder if josekie mistakes can be punished by just playing where the oponent was suposed to play next
+barty [1d\]: hehe no, maybe sometimes :)
+BubbIes [3d?\]: :|
+Mirador: Still did not find this book and memorizing pure joseki patterns is useless without being able to punish mistakes. :(
+]
+;B[cj]C[mayeck [-\]: memorizing joseki patterns is useless anyway
+Mirador: So what do you advise to improve on joseki?
+]
+;W[dj]
+;B[ce]C[mayeck [-\]: id advice improving on something else :)
+Mirador: Ah, I see. :)
+bert [?\]: you will improve on joseki by studying tesuji
+]
+;W[dd]
+;B[ci]
+;W[ef]C[LMP1 [-\]: Black takes a closer look at the board
+LMP1 [-\]: See him taking a look: https://www.youtube.com/watch?v=g7jJlYnwur0
+awesome [3k\]: lol
+Oni [-\]: Mirador lear why move is played in the begining
+]
+;B[eg]
+;W[ff]
+;B[fg]
+;W[cf]
+;B[dg]C[bert [?\]: the reverse is also true: you study joseki to learn tesuji
+Mirador: Thanks for this idea. Any good resource for studying tesuji you might recommend?
+awesome [3k\]: just study bert's sayings
+]
+;W[gf]
+;B[bm]C[LMP1 [-\]: b7 scary, eh?
+bert [?\]: basic collections i recommend, the collection that did it for me is the one in Haruyama&Nagahara Basic Techniques of Go
+]
+;W[cm]
+;B[dk]C[Mirador: Great, thank you! :)
+awesome [3k\]: live small or die big?
+ChopSuey [2d\]: just dead
+Burton [6k\]: is w dead here?
+awesome [3k\]: no
+]
+;W[fo]C[mayeck [-\]: fair chances to die if b insists on killing?
+mayeck [-\]: ie now
+]
+;B[do]C[mayeck [-\]: d5 yes :)
+LMP1 [-\]: d5 placed as gently as always
+Bouton [?\]: game over a
+Punch [1d?\]: Die
+Bouton [?\]: lready
+TytanPracy [?\]: that was fast
+awesome [3k\]: i can't believe it yet
+mayeck [-\]: maybe mateusz is in hurry to get home today
+LMP1 [-\]: remember who's playing on board 2
+Burton [6k\]: as the 6k said,"is w dead here?"
+Ardziuna [1k\]: czy nie może uciec w g5?
+LMP1 [-\]: the game on board 2 looks like a long one
+LMP1 [-\]: they played all moves but four on one side of the board
+]
+;W[dl]
+;B[go]C[mayeck [-\]: g5 :)
+awesome [3k\]: g5 first?
+mayeck [-\]: even worse for w
+LMP1 [-\]: ahh
+Fuseques [-\]: not playing g5...
+]
+;W[ek]
+;B[fj]C[awesome [3k\]: then b would h6?
+LMP2 [-\]: yes, in light of this group dying, we invite you to watch board 2 :)
+Weak [5k\]: already over ?
+awesome [3k\]: I have a feeling w could have lived
+bert [?\]: he will lose this game, but he will survive...
+LMP1 [-\]: White resigned
+awesome [3k\]: thanks for the hard work relaying all that lmp1 :D
+harlej9 [1k\]: thank you LMP1
+Weak [5k\]: white resigned
+LMP1 [-\]: thanks for watching
+LMP1 [-\]: they are reviewing
+LMP1 [-\]: i will enable sound for a while
+bert [?\]: thx
+BubbIes [3d?\]: :D
+LMP1 [-\]: watch the review: https://www.youtube.com/watch?v=g7jJlYnwur0
+LMP1 [-\]: bridge players unusually quiet
+harlej9 [1k\]: even if w didnt play g14 ...b'd have such influence towards the centre the game would be in his favour
+mayeck [-\]: i can hear you clicking on keyboard only
+LMP1 [-\]: this is the gist of Black's comment
+LMP1 [-\]: I will stop clicking now
+LMP1 [-\]: move camera to board 2 later
+LMP1 [-\]: see you folks!
+harlej9 [1k\]: we cannot hear, tell them to shout! :-) haha
+LMP2 [-\]: Mateusz is whispering
+LMP2 [-\]: very polite towards other players
+harlej9 [1k\]: thank you for changing the camera view
+harlej9 [1k\]: what they have right now doesnt look bad for w
+harlej9 [1k\]: r9 now :-)
+smile23 [2k\]: w seems to be dead on the left
+Muttley [2k\]: w busted
+gogonuts [4d\]: what a fast and terrible ending
+])

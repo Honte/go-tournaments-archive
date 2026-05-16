@@ -1,208 +1,318 @@
-(
-  ;BR[2d]CA[UTF-8]DT[2016-01-07]EV[Polish Go Championship 2015]FF[4]GM[1]GN[Round 1 - Board 2]KM[6.50]PB[Kamil Grabowski]PC[Warszawa]PW[Koichiro Habu]RE[B+R]RU[japanese]ST[2]SZ[19]WR[5d]
-  ;B[pq]
-  ;W[dp]
-  ;B[qd]
-  ;W[dc]
-  ;B[nc]
-  ;W[qn]
-  ;B[qp]
-  ;W[pj]
-  ;B[qh]
-  ;W[on]
-  ;B[mp]
-  ;W[ce]
-  ;B[ec]
-  ;W[ed]
-  ;B[fc]
-  ;W[db]
-  ;B[fd]
-  ;W[ee]
-  ;B[jd]
-  ;W[dk]
-  ;B[qk]
-  ;W[pk]
-  ;B[qj]
-  ;W[ph]
-  ;B[pi]
-  ;W[oi]
-  ;B[qi]
-  ;W[oh]
-  ;B[pg]
-  ;W[og]
-  ;B[pf]
-  ;W[pl]
-  ;B[fq]
-  ;W[dq]
-  ;B[iq]
-  ;W[dn]
-  ;B[ci]
-  ;W[cj]
-  ;B[ei]
-  ;W[gi]
-  ;B[ek]
-  ;W[fj]
-  ;B[ej]
-  ;W[dl]
-  ;B[gl]
-  ;W[fl]
-  ;B[el]
-  ;W[fm]
-  ;B[fk]
-  ;W[gk]
-  ;B[em]
-  ;W[en]
-  ;B[fn]
-  ;W[gm]
-  ;B[hl]
-  ;W[fo]
-  ;B[gn]
-  ;W[hm]
-  ;B[dm]
-  ;W[cm]
-  ;B[cn]
-  ;W[cl]
-  ;B[im]
-  ;W[hn]
-  ;B[go]
-  ;W[in]
-  ;B[il]
-  ;W[kn]
-  ;B[co]
-  ;W[do]
-  ;B[gp]
-  ;W[ip]
-  ;B[bm]
-  ;W[bl]
-  ;B[bn]
-  ;W[bp]
-  ;B[bj]
-  ;W[al]
-  ;B[bk]
-  ;W[bo]
-  ;B[hj]
-  ;W[jq]
-  ;B[jr]
-  ;W[ir]
-  ;B[hq]
-  ;W[kr]
-  ;B[jp]
-  ;W[kq]
-  ;B[js]
-  ;W[nq]
-  ;B[hr]
-  ;W[gj]
-  ;B[kp]
-  ;W[op]
-  ;B[io]
-  ;W[jm]
-  ;B[ii]
-  ;W[jj]
-  ;B[ij]
-  ;W[gg]
-  ;B[ig]
-  ;W[fe]
-  ;B[mn]
-  ;W[lo]
-  ;B[ck]
-  ;W[cp]
-  ;B[lp]
-  ;W[mo]
-  ;B[no]
-  ;W[pp]
-  ;B[ln]
-  ;W[jl]
-  ;B[ko]
-  ;W[qq]
-  ;B[lk]
-  ;W[lj]
-  ;B[mj]
-  ;W[li]
-  ;B[nk]
-  ;W[kk]
-  ;B[ll]
-  ;W[lg]
-  ;B[kh]
-  ;W[he]
-  ;B[ie]
-  ;W[hd]
-  ;B[dj]
-  ;W[an]
-  ;B[lh]
-  ;W[mi]
-  ;B[oj]
-  ;W[jf]
-  ;B[kg]
-  ;W[kd]
-  ;B[kf]
-  ;W[jc]
-  ;B[ld]
-  ;W[lc]
-  ;B[ke]
-  ;W[kc]
-  ;B[mc]
-  ;W[bh]
-  ;B[fh]
-  ;W[hi]
-  ;B[ih]
-  ;W[hg]
-  ;B[ch]
-  ;W[bg]
-  ;B[ak]
-  ;W[am]
-  ;B[bi]
-  ;W[dg]
-  ;B[cg]
-  ;W[cf]
-  ;B[dh]
-  ;W[oc]
-  ;B[ob]
-  ;W[pb]
-  ;B[od]
-  ;W[pc]
-  ;B[nb]
-  ;W[md]
-  ;B[le]
-  ;W[oe]
-  ;B[pd]
-  ;W[me]
-  ;B[mf]
-  ;W[ne]
-  ;B[of]
-  ;W[rc]
-  ;B[qc]
-  ;W[qb]
-  ;B[rb]
-  ;W[nl]
-  ;B[mk]
-  ;W[nf]
-  ;B[mg]
-  ;W[mr]
-  ;B[rm]
-  ;W[rn]
-  ;B[qm]
-  ;W[pm]
-  ;B[ah]
-  ;W[ng]
-  ;B[mh]
-  ;W[bf]
-  ;B[er]
-  ;W[ni]
-  ;B[if]
-  ;W[ra]
-  ;B[sb]
-  ;W[sc]
-  ;B[pa]
-  ;W[sa]
-  ;B[rb]
-  ;W[sb]
-  ;B[nd]
-  ;W[pe]
-  ;B[qe]
-  ;W[qf]
-  ;B[qg]
-  ;W[rf]
-  ;B[re]
-  ;W[id]
-  ;B[je]
-)
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[3600]OT[5x30 byo-yomi]
+GN[Koichiro Habu 5d (white) vs Kamil Grabowski 2d (black)]PW[Koichiro Habu]PB[Kamil Grabowski]WR[5d]BR[2d]DT[2016-01-07]PC[The KGS Go Server at http://www.gokgs.com/]C[LMP2 [?\]: we're starting in a moment
+LMP2 [?\]: the players are here
+]RE[B+Resign]
+;B[pq]C[LMP2 [?\]: and we're on
+]
+;W[dp]C[leo1215 [3k\]: a czamu godzina na gracza?
+]
+;B[qd]
+;W[dc]C[LMP2 [?\]: źle wpisałem
+LMP2 [?\]: time is 90 minutes per player
+]
+;B[nc]
+;W[qn]
+;B[qp]
+;W[pj]C[leo1215 [3k\]: ok
+]
+;B[qh]
+;W[on]
+;B[mp]
+;W[ce]
+;B[ec]C[LMP2 [?\]: Kamil slams the stone down!
+]
+;W[ed]
+;B[fc]
+;W[db]
+;B[fd]
+;W[ee]
+;B[jd]C[LMP2 [?\]: it’s a beautiful winter day here in Warsaw 
+LMP2 [?\]: we’re sitting sandwiched between a Bohemian restaurant and some crazy bridge tournament
+LMP2 [?\]: we’ve had some snow in the recent days and the medieval district of Ursynów looks particularly mesmerising
+LMP2 [?\]: its ancient buildings covered in white 
+]
+;W[dk]
+;B[qk]
+;W[pk]
+;B[qj]
+;W[ph]
+;B[pi]
+;W[oi]
+;B[qi]
+;W[oh]
+;B[pg]
+;W[og]
+;B[pf]
+;W[pl]C[gogeo [8k?\]: ooo kamil ma 2d :)
+]
+;B[fq]
+;W[dq]
+;B[iq]
+;W[dn]C[gisel [-\]: d11 jakieś?
+LMP1 [-\]: Z tego co pamiętam zdobył na turnieju Poznaniu w październiku :)
+LMP1 [-\]: * w Poznaniu
+]
+;B[ci]C[gogeo [8k?\]: ok gratulacje... pytanie czy mozna prosic o zdjecie szalonych brydżystów?
+papapishu [1d\]: a jakie zdjęcie mają zrobić?
+gisel [-\]: no, to też brałem pod uwagę, ale wydaje mi się że cięzej tym uciekać - no ale w końcu Maek musiał jakąś zadymę zrobić
+]
+;W[cj]
+;B[ei]C[papapishu [1d\]: f10 
+papapishu [1d\]: białemu to chyba pasuje
+]
+;W[gi]C[LMP2 [?\]: gogeo: zobaczymy co da się zrobić
+]
+;B[ek]C[LMP2 [?\]: sup woodpecker!
+]
+;W[fj]C[LMP2 [?\]: where are you pecking these days?
+]
+;B[ej]
+;W[dl]
+;B[gl]
+;W[fl]
+;B[el]
+;W[fm]
+;B[fk]
+;W[gk]
+;B[em]
+;W[en]
+;B[fn]
+;W[gm]
+;B[hl]
+;W[fo]
+;B[gn]
+;W[hm]C[gisel [-\]: wygląda że niezła walka dla czarnego
+]
+;B[dm]
+;W[cm]
+;B[cn]C[papapishu [1d\]: b7 
+]
+;W[cl]
+;B[im]
+;W[hn]
+;B[go]C[LMP2 [?\]: Black leaves
+LMP2 [?\]: (but white snowflakes)
+LMP2 [?\]: Black returns
+LMP2 [?\]: Black leaves again. I should probably stop.
+gisel [-\]: a Koichi siedzi i myśli?
+LMP1 [-\]: Niewzruszenie :)
+]
+;W[in]C[gisel [-\]: e5 d5 k6 ?
+gisel [-\]: albo k6 od razu?
+papapishu [1d\]: k6 nie boli?
+papapishu [1d\]: ciekawe czy da się jakoś c2 aktywować ;p
+papapishu [1d\]: ale chyba c8 za silne
+]
+;B[il]
+;W[kn]C[gisel [-\]: c2 mało ważne póki co - chociaż zastanawiam się czy maek nie planuje jakoś c5 i użyć aji do wzmocnienia c11
+]
+;B[co]
+;W[do]C[SadPlayer [-\]: no i co teraz?
+SadPlayer [-\]: h4 fajne
+]
+;B[gp]
+;W[ip]
+;B[bm]
+;W[bl]
+;B[bn]
+;W[bp]
+;B[bj]C[LMP2 [?\]: b10 played with some hesitation
+]
+;W[al]
+;B[bk]
+;W[bo]
+;B[hj]C[SadPlayer [-\]: k3 się nie boi?
+]
+;W[jq]
+;B[jr]
+;W[ir]
+;B[hq]
+;W[kr]
+;B[jp]
+;W[kq]
+;B[js]
+;W[nq]
+;B[hr]
+;W[gj]
+;B[kp]C[mayeck [-\]: o3 ma zadatki na losing move
+]
+;W[op]C[mayeck [-\]: chociaż nawet bez o3 cz fajnie stoi
+]
+;B[io]
+;W[jm]
+;B[ii]
+;W[jj]
+;B[ij]
+;W[gg]
+;B[ig]
+;W[fe]
+;B[mn]
+;W[lo]
+;B[ck]
+;W[cp]
+;B[lp]
+;W[mo]C[mayeck [-\]: d10 ważne raczej
+mayeck [-\]: dla obu
+]
+;B[no]
+;W[pp]
+;B[ln]C[gisel [-\]: fajny ruch
+mayeck [-\]: fajny, ale rogu szkoda
+mayeck [-\]: mógł sobie to n6 odpuścić
+gisel [-\]: pewnie kalkuluje - że jak koichi róg ubije
+gisel [-\]: to on mu kamienie w centrum :P
+mayeck [-\]: no właśnie chyba cofam
+mayeck [-\]: dobrze dla cz
+]
+;W[jl]C[mayeck [-\]: te kamienie w centrum to już na nieratowalne wyglądają
+]
+;B[ko]
+;W[qq]C[mayeck [-\]: no siema
+]
+;B[lk]C[SadPlayer [-\]: d10 
+mayeck [-\]: a róg i tak przeżyje zaraz
+]
+;W[lj]C[mayeck [-\]: d12 nie chodzi
+mayeck [-\]: d10*
+]
+;B[mj]C[mayeck [-\]: b12 już lepiej
+mayeck [-\]: ale b12 też żyje
+]
+;W[li]C[mayeck [-\]: czyli ogólnie siema :)
+]
+;B[nk]
+;W[kk]
+;B[ll]
+;W[lg]
+;B[kh]
+;W[he]
+;B[ie]C[mayeck [-\]: j15 bym w j16 
+gisel [-\]: chyba będzie gra na przeżycie białego centrum zaraz
+mayeck [-\]: a jak bi upira się dalej przy zabijaniu to ko
+mayeck [-\]: może
+]
+;W[hd]
+;B[dj]
+;W[an]
+;B[lh]
+;W[mi]
+;B[oj]
+;W[jf]
+;B[kg]
+;W[kd]
+;B[kf]
+;W[jc]
+;B[ld]
+;W[lc]
+;B[ke]
+;W[kc]
+;B[mc]C[mayeck [-\]: ale Kamil egfu natrzaska
+SIscurge [5d\]: Gogo koichiro! :)
+gisel [-\]: dobrze, zrobi 3d, to więcej za niego będę zgarniał na turniejach :P
+]
+;W[bh]
+;B[fh]C[mayeck [-\]: too late Ondrej
+mayeck [-\]: no też tak myślę :P
+mayeck [-\]: ja z koichim nie wygrywam, więc niech maek mu zabierze i rozda potem
+]
+;W[hi]C[SadPlayer [-\]: l11 
+mayeck [-\]: że żyje w sente?
+mayeck [-\]: no nie wiem
+mayeck [-\]: raczej b13/c12, wg gustu
+mayeck [-\]: f12 w ogóle niepotrzebna wymiana
+]
+;B[ih]
+;W[hg]
+;B[ch]C[mayeck [-\]: bo nie wpływa na życie
+mayeck [-\]: ale tracić tez nic nie traci
+]
+;W[bg]
+;B[ak]
+;W[am]
+;B[bi]
+;W[dg]
+;B[cg]
+;W[cf]
+;B[dh]C[SadPlayer [-\]: chyba czas poddać
+]
+;W[oc]
+;B[ob]
+;W[pb]C[LMP2 [?\]: White gives himself a few slaps
+]
+;B[od]
+;W[pc]
+;B[nb]C[SadPlayer [-\]: nie ma jakieś sztuczki w prawym dolnym?
+mayeck [-\]: s3 r2 s5 za słabe?
+]
+;W[md]
+;B[le]C[LMP2 [?\]: some more self-punching by white
+]
+;W[oe]
+;B[pd]
+;W[me]
+;B[mf]
+;W[ne]
+;B[of]C[LMP2 [?\]: on board #4 Mateusz Surma beats Krzysztof Giedrojć by resignation
+]
+;W[rc]C[LMP2 [?\]: the pro seems invincible
+LMP1 [-\]: That's what pros do.
+]
+;B[qc]
+;W[qb]
+;B[rb]
+;W[nl]
+;B[mk]
+;W[nf]
+;B[mg]C[LMP2 [-\]: On board #1, Stanisław Frejlak beats Leszek Sołdan by resignation
+]
+;W[mr]
+;B[rm]
+;W[rn]
+;B[qm]
+;W[pm]
+;B[ah]
+;W[ng]
+;B[mh]
+;W[bf]
+;B[er]
+;W[ni]
+;B[if]C[Seimeitaek [1k?\]: now time to resign
+]
+;W[ra]
+;B[sb]C[LMP2 [-\]: W in byo yomi for a while
+]
+;W[sc]
+;B[pa]
+;W[sa]
+;B[rb]C[LMP2 [-\]: B has 20 minutes left
+]
+;W[sb]
+;B[nd]
+;W[pe]
+;B[qe]
+;W[qf]
+;B[qg]C[SadPlayer [-\]: s14 s15 t15 t16 s16 s13 t14 t13 t16 p19 n18 m18 n19 
+]
+;W[rf]
+;B[re]C[SadPlayer [-\]: a nie nie działa bo p11 martwe
+mayeck [-\]: za długie
+mayeck [-\]: no
+papapishu [1d\]: Sad narysuj
+mayeck [-\]: od razu mów że nie działa
+papapishu [1d\]: mayeck czemu nie grasz w finałach? :P
+]
+;W[id]
+;B[je]C[mayeck [-\]: nie dostałem się na eliminacje
+LMP2 [-\]: White resigns
+mayeck [-\]: :<
+mayeck [-\]: brawo maek
+higaki94 [3d\]: przekaż Maekowi że kozak
+LMP2 [-\]: Black won all four games. All by res.
+papapishu [1d\]: higaki w sensie, że but?
+LMP2 [-\]: maek: "to dobrze"
+LMP2 [-\]: That's all we had for today
+LMP2 [-\]: Next round tomorrow 10 am CET
+PhoenixGT [?\]: black is too strong
+papapishu [1d\]: chcemy teraz!
+])

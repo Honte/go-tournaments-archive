@@ -1,190 +1,378 @@
-(
-  ;BR[1p]CA[UTF-8]DT[2016-01-08]EV[Polish Go Championship 2015]FF[4]GM[1]GN[Round 3 - Board 2]KM[6.50]PB[Mateusz Surma]PC[Warszawa]PW[Kamil Grabowski]RE[B+R]RO[3]RU[japanese]ST[2]SZ[19]WR[2d]
-  ;B[dd]
-  ;W[dp]
-  ;B[pc]
-  ;W[qp]
-  ;B[qe]
-  ;W[fc]
-  ;B[id]
-  ;W[cf]
-  ;B[fd]
-  ;W[cc]
-  ;B[ec]
-  ;W[cd]
-  ;B[op]
-  ;W[mq]
-  ;B[qq]
-  ;W[qm]
-  ;B[pp]
-  ;W[rp]
-  ;B[or]
-  ;W[jq]
-  ;B[rq]
-  ;W[qj]
-  ;B[qh]
-  ;W[gc]
-  ;B[gd]
-  ;W[hc]
-  ;B[eb]
-  ;W[ic]
-  ;B[lc]
-  ;W[jd]
-  ;B[hd]
-  ;W[je]
-  ;B[gg]
-  ;W[jg]
-  ;B[cn]
-  ;W[fp]
-  ;B[cq]
-  ;W[cp]
-  ;B[bp]
-  ;W[bo]
-  ;B[bq]
-  ;W[co]
-  ;B[er]
-  ;W[fr]
-  ;B[eq]
-  ;W[fq]
-  ;B[bn]
-  ;W[an]
-  ;B[cj]
-  ;W[ep]
-  ;B[dq]
-  ;W[ch]
-  ;B[dg]
-  ;W[dh]
-  ;B[gi]
-  ;W[ej]
-  ;B[am]
-  ;W[ao]
-  ;B[bl]
-  ;W[cl]
-  ;B[bg]
-  ;W[cg]
-  ;B[ck]
-  ;W[dl]
-  ;B[bh]
-  ;W[bf]
-  ;B[bi]
-  ;W[pb]
-  ;B[ob]
-  ;W[gk]
-  ;B[ih]
-  ;W[jh]
-  ;B[ij]
-  ;W[il]
-  ;B[ji]
-  ;W[ki]
-  ;B[kj]
-  ;W[li]
-  ;B[dn]
-  ;W[qc]
-  ;B[pd]
-  ;W[rb]
-  ;B[rd]
-  ;W[hf]
-  ;B[hg]
-  ;W[ee]
-  ;B[ed]
-  ;W[gf]
-  ;B[if]
-  ;W[ig]
-  ;B[ie]
-  ;W[hh]
-  ;B[jf]
-  ;W[fg]
-  ;B[kf]
-  ;W[ii]
-  ;B[le]
-  ;W[no]
-  ;B[pj]
-  ;W[pk]
-  ;B[ok]
-  ;W[pi]
-  ;B[oj]
-  ;W[qi]
-  ;B[pl]
-  ;W[qk]
-  ;B[pm]
-  ;W[qn]
-  ;B[nm]
-  ;W[lm]
-  ;B[mn]
-  ;W[ln]
-  ;B[mo]
-  ;W[mk]
-  ;B[dk]
-  ;W[es]
-  ;B[ds]
-  ;W[fs]
-  ;B[bs]
-  ;W[db]
-  ;B[ea]
-  ;W[ek]
-  ;B[fn]
-  ;W[gn]
-  ;B[gm]
-  ;W[em]
-  ;B[en]
-  ;W[fm]
-  ;B[go]
-  ;W[hn]
-  ;B[fo]
-  ;W[ho]
-  ;B[gp]
-  ;W[hq]
-  ;B[lo]
-  ;W[rh]
-  ;B[jo]
-  ;W[mr]
-  ;B[jm]
-  ;W[mm]
-  ;B[kq]
-  ;W[kr]
-  ;B[hp]
-  ;W[ip]
-  ;B[io]
-  ;W[hm]
-  ;B[gq]
-  ;W[gr]
-  ;B[np]
-  ;W[jl]
-  ;B[qg]
-  ;W[rg]
-  ;B[rf]
-  ;W[mf]
-  ;B[me]
-  ;W[pn]
-  ;B[on]
-  ;W[po]
-  ;B[oo]
-  ;W[sq]
-  ;B[sr]
-  ;W[sp]
-  ;B[kp]
-  ;W[ir]
-  ;B[jp]
-  ;W[iq]
-  ;B[de]
-  ;W[df]
-  ;B[nf]
-  ;W[pg]
-  ;B[ph]
-  ;W[ng]
-  ;B[oh]
-  ;W[og]
-  ;B[ql]
-  ;W[rl]
-  ;B[rk]
-  ;W[rm]
-  ;B[oi]
-  ;W[rj]
-  ;B[mh]
-  ;W[ol]
-  ;B[mi]
-  ;W[lg]
-  ;B[mg]
-  ;W[om]
-  ;B[lj]
-)
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[5400]OT[5x60 byo-yomi]
+GN[Kamil Grabowski 2d (white) vs Mateusz Surma 1p (black)]PW[Kamil Grabowski]PB[Mateusz Surma]WR[2d]BR[1p]DT[2016-01-08]EV[Polish Go Championship]RO[3]PC[Narnia]C[LMP2 [-\]: Hello
+]RE[B+Resign]
+;B[dd]
+;W[dp]
+;B[pc]
+;W[qp]
+;B[qe]C[akbnn: ama 2d vs 1p?
+]
+;W[fc]
+;B[id]C[LMP2 [-\]: yes
+akbnn: thanks
+Holub [1d\]: polish championship ?
+LMP2 [-\]: yes
+]
+;W[cf]
+;B[fd]C[akbnn: I have played with japanese 1p byno handi
+akbnn: on 50 moves I lost
+]
+;W[cc]
+;B[ec]
+;W[cd]
+;B[op]
+;W[mq]
+;B[qq]C[Holub [1d\]: Surma seems to be playing nice,calm-not crushing opponents with all the power he has ...
+]
+;W[qm]
+;B[pp]
+;W[rp]C[Egg [10k\]: the power might be concealed beneath the surface
+]
+;B[or]
+;W[jq]
+;B[rq]
+;W[qj]
+;B[qh]
+;W[gc]
+;B[gd]
+;W[hc]C[Korea4K [2d\]: j17
+]
+;B[eb]
+;W[ic]C[Egg [10k\]: is living here good for white ?
+championne [2d\]: looks terrible 
+]
+;B[lc]
+;W[jd]
+;B[hd]
+;W[je]
+;B[gg]
+;W[jg]C[afterbreak [2k?\]: 2d will win! 
+Egg [10k\]: well, se seems to favour him, but se might be wrong
+]
+;B[cn]C[LMP2 [-\]: there is a slim chance SE might be wrong
+patcher [1d\]: black win nw, accordingto se
+Egg [10k\]: :-)
+patcher [1d\]: c6 must be a huge move
+Egg [10k\]: it is, it capture the left side
+afterbreak [2k?\]: Oh, cherr up guy with 2d for not escapin from board guys :P
+]
+;W[fp]
+;B[cq]
+;W[cp]
+;B[bp]C[afterbreak [2k?\]: C12 is point that b wants ;)
+]
+;W[bo]
+;B[bq]
+;W[co]
+;B[er]
+;W[fr]
+;B[eq]
+;W[fq]
+;B[bn]
+;W[an]
+;B[cj]
+;W[ep]C[frostwind [5k\]: w is ahead
+patcher [1d\]: is a4 enough for b ?
+frostwind [5k\]: a4 too passive
+frostwind [5k\]: i'd say, tenuki
+Egg [10k\]: d3 ?
+frostwind [5k\]: something like j12
+]
+;B[dq]
+;W[ch]C[Egg [10k\]: guess life is bigger
+patcher [1d\]: tenuki -> death
+frostwind [5k\]: corner is like 30 pts gote
+frostwind [5k\]: not worth it
+frostwind [5k\]: must mainitain sente
+]
+;B[dg]C[frostwind [5k\]: 0 pts sente is bigger than 30 pts gote
+patcher [1d\]: i guess 1p player disagree :)
+liusasori [3d\]: not at all. if it's 0 points it means you are just wasting ko threat
+Egg [10k\]: lol
+]
+;W[dh]C[liusasori [3d\]: d2 is nice. w show fighting spirit
+PAPANINJA [3k\]: if that would be true no one would answer sente cause its gote to answer it
+liusasori [3d\]: d12*
+]
+;B[gi]C[Egg [10k\]: really nice game 
+liusasori [3d\]: w just have to care about c13 and c15 weakness but doing well so far
+liusasori [3d\]: however, if we look further we can understand he will be destroyed cause he has weakness on both side
+PAPANINJA [3k\]: he will have to care for his right side group too at some point
+]
+;W[ej]
+;B[am]
+;W[ao]
+;B[bl]C[LMP2 [-\]: More information, results, player profiles and game records: http://mp.go.art.pl
+patcher [1d\]: and the top one ! the top w group will allow b to be huge in the upper right ?
+Egg [10k\]: black is gonna live here at b8 ?
+patcher [1d\]: and w has only small 3rd line territory
+Grunman [5k\]: of course b's gonna live
+]
+;W[cl]C[liusasori [3d\]: this 2d beat a 5d in the first round. So I guess he will resist a bit here ;)
+LMP2 [-\]: Yes, Kamil is strong
+patcher [1d\]: d8 ?
+liusasori [3d\]: c8 is very violent
+liusasori [3d\]: already going on all-in
+patcher [1d\]: doesn't d8 just capture ?
+liusasori [3d\]: d8 c9 d9 b9 b10 c7 d7 d6 b is captured
+nhnh: d8, c8 no way out
+LMP2 [-\]: there's a faint trace of a smile on Black's face
+patcher [1d\]: ah, right
+]
+;B[bg]
+;W[cg]C[Holub [1d\]: wś position still looks good ...
+nhnh: d8 c9 d9 b9 b10 c7 d6 
+liusasori [3d\]: c8 was very good move. it completely disturb b's shape and plan
+Egg [10k\]: c9 d8 b12 already live
+]
+;B[ck]C[liusasori [3d\]: nhnh : then b7 and w is connected
+Egg [10k\]: and if b11 then d8 captures
+nhnh: liusa, 1 step wrong
+liusasori [3d\]: sorry i missread your sequence :)
+]
+;W[dl]
+;B[bh]C[LMP2 [-\]: white nods
+nhnh: b7 then e7, whitw all dead
+gogonuts [4d\]: d8 was too much
+]
+;W[bf]C[gogonuts [4d\]: forcing b b12 lost points
+]
+;B[bi]C[gogonuts [4d\]: instead go to ur right away
+Egg [10k\]: white will try to attack with k11 or something like that ?
+]
+;W[pb]C[Egg [10k\]: hm, creative
+gogonuts [4d\]: natural
+LMP2 [-\]: this is a fairly standard move, Egg
+gogonuts [4d\]: just do it before d8
+Egg [10k\]: ok, didn't know that
+liusasori [3d\]: in fact no I didn't missread. after e7 in your sequence w capture both c8 and a7
+]
+;B[ob]C[Egg [10k\]: white can live here in the corner ?
+]
+;W[gk]C[liusasori [3d\]: I clone the game you can come and see
+]
+;B[ih]C[gogonuts [4d\]: g9 is a goid point, but abandoning q18 without testing with p17 first is strange
+LMP2 [-\]: http://senseis.xmp.net/?24ProbeAgainstALowCornerEnclosure
+Egg [10k\]: thanks
+]
+;W[jh]
+;B[ij]
+;W[il]
+;B[ji]
+;W[ki]
+;B[kj]
+;W[li]
+;B[dn]C[liusasori [3d\]: all of a sudden, b has no weakness left and w will suffer
+gogonuts [4d\]: w is pretty good at playing powerful moves, but his sense ot timing is bad
+]
+;W[qc]
+;B[pd]
+;W[rb]
+;B[rd]C[gogonuts [4d\]: w will deliver this game to b without b "dooing" anything
+liusasori [3d\]: Surma recently won against active chinese 9p in a tournament
+gogonuts [4d\]: oops
+PhoenixGT [?\]: in ko
+gogonuts [4d\]: r17 was unplayable
+LMP2 [-\]: black shakes his head in disbelief
+LMP2 [-\]: uh, white
+gogonuts [4d\]: w only had the cosscut
+]
+;W[hf]C[gogonuts [4d\]: i though b disbelieving how bad his opponent played :-)
+Egg [10k\]: white found a kikashi
+LMP2 [-\]: No, B's manners are impeccable
+gogonuts [4d\]: this move is also problematic
+]
+;B[hg]C[gogonuts [4d\]: if b secures d13, the corner becomes a little shaky
+liusasori [3d\]: b will handle it gently
+gogonuts [4d\]: b playing so his opponents lose with the least emotional pain :-)
+]
+;W[ee]C[LMP2 [-\]: Yes. As the games progress, he gently convinces opponents to resign. Very gently.
+]
+;B[ed]C[Egg [10k\]: eh, g16 is connected to g13 ?
+Egg [10k\]: what if white g14 
+Grunman [5k\]: b has now at least 5 groups
+]
+;W[gf]
+;B[if]
+;W[ig]C[LMP2 [-\]: Black takes a close look at the board
+LMP2 [-\]: is he surprised?
+]
+;B[ie]C[LMP2 [-\]: no
+liusasori [3d\]: ouch
+liusasori [3d\]: all of a sudden i understand what b read !
+liusasori [3d\]: j15 very powerful 
+LMP2 [-\]: it appears White understood it as well
+]
+;W[hh]
+;B[jf]C[LMP2 [-\]: White nods uneasily
+liusasori [3d\]: what an exchange !
+]
+;W[fg]C[Egg [10k\]: let me guess, black has 4 groups now ?
+]
+;B[kf]C[twrn [4k\]: 6
+]
+;W[ii]C[Egg [10k\]: well, 4 alive I mean
+twrn [4k\]: 5 groups and a few individuals
+liusasori [3d\]: yes i count 4 group for b
+Egg [10k\]: ok
+Egg [10k\]: black will enter the moyo again ?
+liusasori [3d\]: i think he just need to reduce it slightly
+liusasori [3d\]: top is too big for b
+Egg [10k\]: ah I see
+liusasori [3d\]: maybe he will add a move like l18 to remove all aji ?
+liusasori [3d\]: or l17
+Beef [3d\]: that looks heavy though
+liusasori [3d\]: but tengen look interesting in order to apply pressure on w
+liusasori [3d\]: tengen almost sente against g12
+]
+;B[le]C[liusasori [3d\]: but l17 aji is too important i guess
+liusasori [3d\]: so b protected
+Beef [3d\]: yeah was just about to say m15 or n14 would make more sense
+LMP2 [-\]: white looks at j17 group as if saying goodbye
+liusasori [3d\]: if w add another move at tengen now he will lost initiaive
+]
+;W[no]C[LMP2 [-\]: and swiftly moves on
+Egg [10k\]: white going for the center now
+Beef [3d\]: too many holes in the center
+]
+;B[pj]C[Egg [10k\]: dunno, perhaps there are, but white has to do something
+Beef [3d\]: sure
+]
+;W[pk]C[Beef [3d\]: only hope
+liusasori [3d\]: b gained around 50 points on top
+]
+;B[ok]C[KurataSan [3d\]: w lost already
+]
+;W[pi]C[liusasori [3d\]: whereas w gained around 35 in the center
+]
+;B[oj]
+;W[qi]
+;B[pl]
+;W[qk]
+;B[pm]
+;W[qn]C[rollstory [1d\]: these championships are kinda boring. only exciting is who gets 2nd place
+liusasori [3d\]: no. It's always interesting to try to understand why ama lost to pro
+]
+;B[nm]
+;W[lm]C[liusasori [3d\]: for instance m7. it almost look like a dame
+]
+;B[mn]
+;W[ln]
+;B[mo]C[liusasori [3d\]: b can still reduce with n6 and try to connect with n9
+rollstory [1d\]: yeah..ok, i understand that it is cool to watch a pro kicking ass of amas. 
+]
+;W[mk]C[liusasori [3d\]: and it's even better when it's a top 9p who did it :)
+LMP2 [-\]: rollstory - there's three more ama games broadcasted as well
+LMP2 [-\]: LMP1 has a 4d vs 4d game for example
+rollstory [1d\]: i also watch these ;)
+LMP2 [-\]: Interestingly, the biggest benefit from winning the championship is the right to represent Poland in WAGC or KPMC
+LMP2 [-\]: Mateusz is not allowed to participate in neither of those
+liusasori [3d\]: w around 65 and b around 80
+]
+;B[dk]C[liusasori [3d\]: + sente
+]
+;W[es]
+;B[ds]
+;W[fs]
+;B[bs]C[sinojos [8k\]: rep must be ama?
+LMP2 [-\]: no, pros are not allowed to participate in WAGC/KPMC
+]
+;W[db]C[liusasori [3d\]: it would be strange if a pro win the World Amateur Go Championship no ?
+]
+;B[ea]C[rollstory [1d\]: WAGC= World Amatuer GO Championship
+sinojos [8k\]: ok, didnt see the amatuer part :)
+rollstory [1d\]: what is KPMC?
+]
+;W[ek]
+;B[fn]C[liusasori [3d\]: Korean Prime Minister Cup
+]
+;W[gn]
+;B[gm]C[liusasori [3d\]: both e1 and d18 were nice yose by w
+liusasori [3d\]: but it wont be enough i guess
+liusasori [3d\]: and b still as c18 to reduce corner
+]
+;W[em]
+;B[en]
+;W[fm]
+;B[go]
+;W[hn]C[liusasori [3d\]: Oo
+]
+;B[fo]
+;W[ho]
+;B[gp]
+;W[hq]C[liusasori [3d\]: very not good idea usually
+ofbusy [-\]: i think i would try o18 as w
+ofbusy [-\]: or s14 ..
+]
+;B[lo]
+;W[rh]
+;B[jo]
+;W[mr]C[liusasori [3d\]: s12 was pretty big. W is strong in yose. But b is stronger
+liusasori [3d\]: n2 nice answer as well
+]
+;B[jm]C[liusasori [3d\]: this 2d is very resistant
+]
+;W[mm]C[liusasori [3d\]: o8 ?
+]
+;B[kq]
+;W[kr]
+;B[hp]
+;W[ip]
+;B[io]
+;W[hm]
+;B[gq]
+;W[gr]
+;B[np]
+;W[jl]
+;B[qg]
+;W[rg]
+;B[rf]
+;W[mf]
+;B[me]
+;W[pn]
+;B[on]
+;W[po]
+;B[oo]
+;W[sq]
+;B[sr]
+;W[sp]
+;B[kp]
+;W[ir]
+;B[jp]
+;W[iq]
+;B[de]
+;W[df]
+;B[nf]
+;W[pg]
+;B[ph]C[Eowyn [2d\]: a valiant effort by w. 
+]
+;W[ng]
+;B[oh]
+;W[og]
+;B[ql]
+;W[rl]
+;B[rk]
+;W[rm]
+;B[oi]
+;W[rj]
+;B[mh]
+;W[ol]
+;B[mi]C[LMP2 [-\]: Black brought a fruit salad with him
+LMP2 [-\]: it sits on the table, untouched
+]
+;W[lg]
+;B[mg]
+;W[om]C[LMP2 [-\]: White resigned
+]
+;B[lj]C[LMP2 [-\]: after this move
+LMP2 [-\]: Black and his fruit salad: https://www.facebook.com/PolskieStowarzyszenieGo/photos/a.159611090760633.44776.103237129731363/918816258173442/?type=3&theater
+LMP2 [-\]: they are reviewing now
+LMP2 [-\]: thanks for watching everyone
+LMP2 [-\]: See http://mp.go.art.pl for a full schedule
+LMP2 [-\]: we'll be back tomorrow morning
+LMP2 [-\]: On board #1, Leszek Sołdan resigned to young padawan Sebastian Pawlaczyk
+LMP2 [-\]: after a fiery ko
+LMP2 [-\]: LMP3 and LMP4 still playing
+Mariusz [2k\]: równo to wyglada 
+])

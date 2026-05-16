@@ -23,30 +23,30 @@ stages:
       - starting
     rounds:
       - - kh-kg kh
-        - ls-mp ls
+        - ls-mp ls:W+24.5 sgf:2005/2005-1-lsoldan-mparkola.sgf
         - mb-mr mb
         - jl-dg jl
-      - - kh-jl kh
+      - - kh-jl kh sgf:2005/2005-2-khabu-jlubos.sgf
         - ls-mr ls
         - mb-mp mb
         - dg-kg dg
-      - - kh-mb kh
+      - - kh-mb kh sgf:2005/2005-3-mbazynski-khabu.sgf
         - ls-dg ls
         - kg-mr kg
         - jl-mp jl
-      - - kh-ls kh
+      - - kh-ls kh:W+19.5 sgf:2005/2005-4-khabu-lsoldan.sgf
         - mb-dg mb
         - kg-mp kg
         - mr-jl mr
       - - kh-mp kh
         - mb-jl mb
         - kg-ls kg
-        - mr-dg mr
+        - mr-dg mr sgf:2005/2005-5-mrams-dgogosz.sgf
       - - kh-mr kh
-        - ls-jl ls
+        - ls-jl ls:B+R sgf:2005/2005-6-lsoldan-jlubos.sgf
         - mb-kg mb
         - dg-mp dg
       - - kh-dg kh
-        - ls-mb ls
+        - ls-mb ls:W+R sgf:2005/2005-7-mbazynski-lsoldan.sgf
         - kg-jl kg
         - mr-mp mr

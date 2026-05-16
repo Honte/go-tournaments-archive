@@ -1,7 +1,7 @@
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
-import sgfParser from '@sabaki/sgf';
 import fg from 'fast-glob';
+import { Sgf } from '@tools/sgf';
 import type { PlayerNames, SgfInfo } from './types';
 
 type NormalizedSgfResult = {
@@ -42,7 +42,7 @@ function extractSgfInfo(content: string, filename: string): SgfInfo {
 
   let nodes;
   try {
-    nodes = sgfParser.parse(content);
+    nodes = new Sgf(content).getRoot();
   } catch {
     return {
       path: filename,
@@ -56,7 +56,7 @@ function extractSgfInfo(content: string, filename: string): SgfInfo {
     };
   }
 
-  const data = nodes[0]?.data;
+  const data = nodes.data;
   const metadata: PlayerNames = {
     blackName: data?.PB?.[0] ?? null,
     whiteName: data?.PW?.[0] ?? null,

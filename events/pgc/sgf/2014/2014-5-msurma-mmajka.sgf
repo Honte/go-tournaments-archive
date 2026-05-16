@@ -1,120 +1,234 @@
-(
-  ;BR[7d]CA[UTF-8]DT[2014-12-13]EV[Polish Go Championship 2014]FF[4]GM[1]GN[Round 5 - Board 2]KM[6.50]PB[Mateusz Surma]PC[Warszawa]PW[Marcin Majka]RE[B+R]RU[japanese]ST[2]SZ[19]WR[3d]
-  ;B[pq]
-  ;W[pd]
-  ;B[cp]
-  ;W[po]
-  ;B[pl]
-  ;W[no]
-  ;B[nq]
-  ;W[lo]
-  ;B[pi]
-  ;W[lq]
-  ;B[qf]
-  ;W[ep]
-  ;B[qc]
-  ;W[dn]
-  ;B[eq]
-  ;W[fq]
-  ;B[dq]
-  ;W[fp]
-  ;B[dd]
-  ;W[cf]
-  ;B[fc]
-  ;W[bo]
-  ;B[bp]
-  ;W[di]
-  ;B[qd]
-  ;W[ni]
-  ;B[bd]
-  ;W[gd]
-  ;B[gc]
-  ;W[id]
-  ;B[fj]
-  ;W[fi]
-  ;B[ej]
-  ;W[ei]
-  ;B[gj]
-  ;W[dj]
-  ;B[ij]
-  ;W[ji]
-  ;B[jj]
-  ;W[ki]
-  ;B[kj]
-  ;W[lj]
-  ;B[lk]
-  ;W[mk]
-  ;B[ll]
-  ;W[jl]
-  ;B[im]
-  ;W[il]
-  ;B[jm]
-  ;W[km]
-  ;B[kl]
-  ;W[hl]
-  ;B[el]
-  ;W[dk]
-  ;B[en]
-  ;W[fl]
-  ;B[fm]
-  ;W[gm]
-  ;B[gn]
-  ;W[hn]
-  ;B[hm]
-  ;W[gl]
-  ;B[ho]
-  ;W[in]
-  ;B[jn]
-  ;W[io]
-  ;B[jo]
-  ;W[ip]
-  ;B[jp]
-  ;W[jq]
-  ;B[iq]
-  ;W[hp]
-  ;B[kq]
-  ;W[jr]
-  ;B[kr]
-  ;W[ek]
-  ;B[kp]
-  ;W[qq]
-  ;B[qr]
-  ;W[or]
-  ;B[nr]
-  ;W[pr]
-  ;B[oq]
-  ;W[rr]
-  ;B[qp]
-  ;W[rq]
-  ;B[pp]
-  ;W[nl]
-  ;B[lm]
-  ;W[pm]
-  ;B[mj]
-  ;W[li]
-  ;B[ol]
-  ;W[om]
-  ;B[nk]
-  ;W[ql]
-  ;B[ml]
-  ;W[qk]
-  ;B[rp]
-  ;W[pj]
-  ;B[nm]
-  ;W[qi]
-  ;B[do]
-  ;W[eo]
-  ;B[cn]
-  ;W[dm]
-  ;B[bn]
-  ;W[pe]
-  ;B[qs]
-  ;W[pc]
-  ;B[qb]
-  ;W[hc]
-  ;B[ii]
-  ;W[ih]
-  ;B[hh]
-  ;W[jg]
-  ;B[ob]
-)
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[5400]OT[1x60 byo-yomi]
+GN[Polish Championship 2014 Round 5 Board 2]PW[Marcin Majka]PB[Mateusz Surma]WR[3d]BR[7d]DT[2014-12-13]C[Lesmian [2d\]: biały do boju!
+]RE[B+Resign]
+(;B[qd])
+(;B[pq]
+;W[pd]
+;B[cp]
+;W[po]C[LMP2 [-\]: The games have started
+]
+;B[pl]C[PolskiDan [18k\]: Czarny do boju!
+]
+;W[no]
+;B[nq]
+;W[lo]
+;B[pi]C[Lesmian [2d\]: Z Marcinem, wysłannikiem samego Marsa, nikt nie ma szans!
+]
+;W[lq]
+;B[qf]C[Lesmian [2d\]: byleby tylko kamienie były dobrze odważone
+SadPlayer [-\]: cz już wygrywa :)
+SadPlayer [-\]: chyba że jakies tesuji jest np w p2 na zabicie rogu
+Lesmian [2d\]: e no nie jest źle
+PolskiDan [18k\]: fakt, jest kaplica
+]
+;W[ep]C[Lesmian [2d\]: jako biały spokojnie bym odpowiedział na to kakari górne 
+Lesmian [2d\]: ale jestem spokojnym człowiekiem, Mars natomiast ma temperament :)
+]
+;B[qc]C[SadPlayer [-\]: jako 7d bym zagrał g3 :>
+Lesmian [2d\]: ja bym wziął ostatni róg teraz póki jeszcze można coś w ogóle wziąć :)
+wysek [?\]: na r14 sie raczej nie odpowiada jak sa do wyboru podejscia do komoku
+wysek [?\]: a do tego na dole jest m3-m5. e4 chyba only move:)
+]
+;W[dn]
+;B[eq]
+;W[fq]
+;B[dq]
+;W[fp]C[gisel [4d?\]: d15?
+]
+;B[dd]C[Lesmian [2d\]: czarny chce zabrać wszystkie rogi
+]
+;W[cf]
+;B[fc]
+;W[bo]
+;B[bp]
+;W[di]
+;B[qd]C[gisel [4d?\]: g16?
+qpqpqp [3k\]: omoyo
+qpqpqp [3k\]: incoming
+SadPlayer [-\]: no to tengen
+qpqpqp [3k\]: z tego co wiem,\\omoyo należy unikać
+qpqpqp [3k\]: ale ja się nie znam
+qpqpqp [3k\]: :)
+]
+;W[ni]C[gisel [4d?\]: mojo jest w porządku, skonfundować mateusza i go potem zgnieść w białej wieży ;)
+Lesmian [2d\]: popieram!
+gisel [4d?\]: hmm, trochę zbyt oczywisty ruch?
+Lesmian [2d\]: a potem jeszcze ubić jakiś róg
+tooeye [1d\]: m11 ?
+]
+;B[bd]
+;W[gd]
+;B[gc]C[gisel [4d?\]: oho, Mateusz się nie boi mojo, bierze cały teren, i tak wszystko zniszczy
+]
+;W[id]
+;B[fj]
+;W[fi]C[djo006 [3k\]: alez les noir
+]
+;B[ej]
+;W[ei]C[Benzene [3d\]: why is mateusz board 2?
+Benzene [3d\]: did he not win all his games?
+]
+;B[gj]C[qpqpqp [3k\]: its determined before the championships started
+qpqpqp [3k\]: based on starting position
+qpqpqp [3k\]: and he was a qualifier, because he did not participate in last year's games
+]
+;W[dj]
+;B[ij]C[Benzene [3d\]: i see thx
+wysek2: this question should go to some FAQ of this championship
+]
+;W[ji]C[Benzene [3d\]: ah its round robin
+Gor [2d\]: w can res soon?
+]
+;B[jj]
+;W[ki]
+;B[kj]
+;W[lj]
+;B[lk]
+;W[mk]
+;B[ll]
+;W[jl]C[Rukis [1d\]: and why would he?
+]
+;B[im]
+;W[il]
+;B[jm]C[Rukis [1d\]: h8 be a good move here imo
+]
+;W[km]
+;B[kl]C[Lesmian [2d\]: jak dla mnie czarny wcale nie ma tak wesoło
+]
+;W[hl]C[gogonuts [4d\]: w overpacing
+]
+;B[el]C[elsky [1k\]: over what?
+gogonuts [4d\]: lol
+rinkaio [1k\]: I prefer b
+SIscurge [5d\]: I am afraid you'd really need to have a seriously twisted mind in order to prefere white here ^^
+]
+;W[dk]C[gogonuts [4d\]: n8 good enough
+CakeEater [3d\]: I'm on phone who are the players ?
+Rukis [1d\]: Maric Mjka 3d white Mateusz Surma 7d b
+Benzene [3d\]: black is drakula
+CakeEater [3d\]: Thx
+empirical: this could be interesting with commentary
+rinkaio [1k\]: b is the owner of 4 corners, I prefer him Siscurge. w has more potential but in the end it will not be enough
+Bogdan13x [1k\]: lepsze chyba było 7h
+]
+;B[en]C[Rukis [1d\]: black mid group dies
+Rukis [1d\]: it will be enough
+SIscurge [5d\]: the problem with white's strategy is, that it needs a very deep understanding of go to play like this. Even if the position would be balanced now, it is much harder for white to win
+gogonuts [4d\]: the bigger problem is that its not balanced
+empirical: both top corners aren't given to black either
+gogonuts [4d\]: cant go on an all out hunt with flimsy structures like this
+gogonuts [4d\]: the cut at L7 really overdid it
+]
+;W[fl]C[Rukis [1d\]: just h8 was better
+]
+;B[fm]
+;W[gm]C[Malaria [4k?\]: how about that group, is it alive ?
+Rukis [1d\]: which group? whites or black
+l9xl9 [-\]: yes
+Malaria [4k?\]: anyone smarter perhaps ?
+Rukis [1d\]: well if both f7 and k7 die white will have a nice chunk sized  sides
+Rukis [1d\]: Malaria, which groups?
+Rukis [1d\]: e8, j8 or k7 
+Malaria [4k?\]: that black thing in the middle
+Rukis [1d\]: well atm its not dead, but not alive. I dont see 2 eyes yet
+Malaria [4k?\]: tengen group
+LMP2 [-\]: Time: W: 00:59:00 B: 01:00:00 / Czas: Białe: 00:59:00  Czarne: 01:00:00
+Rukis [1d\]: ty
+empirical: black is slightly surrounded but tides can still turn
+Malaria [4k?\]: guess I will have to watch and learn
+Rukis [1d\]: Most likely, not underminding whites abilities, but black will probably just connect to the right if things get too complicated.
+]
+;B[gn]
+;W[hn]
+;B[hm]
+;W[gl]
+;B[ho]
+;W[in]
+;B[jn]
+;W[io]
+;B[jo]
+;W[ip]
+;B[jp]C[gogonuts [4d\]: b following w inot all-in mode
+Malaria [4k?\]: m6 inmstead of k4 would have made an eye
+rinkaio [1k\]: dead for w
+]
+;W[jq]
+;B[iq]
+;W[hp]
+;B[kq]
+;W[jr]
+;B[kr]C[gogonuts [4d\]: ouch
+]
+;W[ek]C[SadPlayer [-\]: zniszczył mu marzenia
+Malaria [4k?\]: well, it seems there will be no yose in this game
+rinkaio [1k\]: cutted
+]
+;B[kp]C[gogonuts [4d\]: suddenly b making a bid for the lower right quadrant
+]
+;W[qq]
+;B[qr]C[Falcon89 [5k\]: H8 gp too small for B?
+]
+;W[or]C[gogonuts [4d\]: f9 doesnt work
+gogonuts [4d\]: the b stuff below gets captured
+Falcon89 [5k\]: thx  nuts
+Camoulox [4k\]: m4 
+]
+;B[nr]
+;W[pr]
+;B[oq]
+;W[rr]
+;B[qp]
+;W[rq]
+;B[pp]C[Falcon89 [5k\]: can B takes the whole o 5 area?
+gogonuts [4d\]: probably not, but while w avoids that bs center problems will surely be solved
+Falcon89 [5k\]: and takes h8 instead
+]
+;W[nl]C[Falcon89 [5k\]: here goes..
+]
+;B[lm]
+;W[pm]
+;B[mj]
+;W[li]
+;B[ol]
+;W[om]
+;B[nk]C[kmr [1d\]: O9
+]
+;W[ql]
+;B[ml]
+;W[qk]
+;B[rp]
+;W[pj]C[gogonuts [4d\]: b will get good play at the top
+]
+;B[nm]
+;W[qi]C[maltook [2k\]: R1
+]
+;B[do]
+;W[eo]
+;B[cn]
+;W[dm]
+;B[bn]C[gogonuts [4d\]: im surprised that b allowed w  r11
+]
+;W[pe]
+;B[qs]
+;W[pc]
+;B[qb]
+;W[hc]C[Falcon89 [5k\]: w  ambitious now
+]
+;B[ii]
+;W[ih]C[gogonuts [4d\]: q17 was a good sente for w, so r1 was too early imo
+]
+;B[hh]
+;W[jg]
+;B[ob]C[LMP2 [-\]: Result: B+R
+gogonuts [4d\]: thx
+kmr [1d\]: R1 was very big
+LMP2 [-\]: Czarny wygrał przez poddanie
+Maek [3d\]: w+52.5 a on poddal?
+SadPlayer [-\]: lepiej zrezygnować jak jestes na szczycie
+LMP2 [-\]: See you tommorow at 9 am
+LMP2 [-\]: Do zobaczenia jutro o 9
+Falcon89 [5k\]: 9am polish time?
+wysek2: yes, see LMP1 info for schedule
+Falcon89 [5k\]: thx
+]))

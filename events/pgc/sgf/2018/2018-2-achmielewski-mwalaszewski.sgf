@@ -1,244 +1,583 @@
-(
-  ;BR[1d]CA[UTF-8]DT[2018-11-09]EV[Polish Go Championship 2018]FF[4]GM[1]GN[Round 2 - Board 3]KM[6.5]PB[Artur Chmielewski]PC[Poznań]PW[Maksym Wałaszewski]RE[B+R]RU[japanese]SZ[19]WR[2d]
-  ;B[pq]
-  ;W[dp]
-  ;B[dc]
-  ;W[ce]
-  ;B[ed]
-  ;W[oc]
-  ;B[qo]
-  ;W[qd]
-  ;B[fq]
-  ;W[cn]
-  ;B[dr]
-  ;W[hq]
-  ;B[fo]
-  ;W[kq]
-  ;B[mq]
-  ;W[cq]
-  ;B[ho]
-  ;W[io]
-  ;B[hn]
-  ;W[mr]
-  ;B[lr]
-  ;W[lq]
-  ;B[kr]
-  ;W[nr]
-  ;B[jq]
-  ;W[jp]
-  ;B[iq]
-  ;W[ip]
-  ;B[mp]
-  ;W[lo]
-  ;B[hr]
-  ;W[gr]
-  ;B[jr]
-  ;W[hs]
-  ;B[ir]
-  ;W[pp]
-  ;B[op]
-  ;W[oq]
-  ;B[oo]
-  ;W[qp]
-  ;B[qq]
-  ;W[rp]
-  ;B[rq]
-  ;W[po]
-  ;B[mo]
-  ;W[pr]
-  ;B[pn]
-  ;W[ro]
-  ;B[rn]
-  ;W[qn]
-  ;B[qm]
-  ;W[on]
-  ;B[qo]
-  ;W[hp]
-  ;B[gq]
-  ;W[qn]
-  ;B[pm]
-  ;W[rm]
-  ;B[qo]
-  ;W[fr]
-  ;B[er]
-  ;W[qn]
-  ;B[qr]
-  ;W[sn]
-  ;B[sr]
-  ;W[om]
-  ;B[mm]
-  ;W[ol]
-  ;B[mk]
-  ;W[nj]
-  ;B[nd]
-  ;W[od]
-  ;B[nf]
-  ;W[ne]
-  ;B[me]
-  ;W[oe]
-  ;B[mf]
-  ;W[og]
-  ;B[li]
-  ;W[di]
-  ;B[dh]
-  ;W[ch]
-  ;B[cg]
-  ;W[dg]
-  ;B[eh]
-  ;W[ci]
-  ;B[df]
-  ;W[bg]
-  ;B[eg]
-  ;W[jd]
-  ;B[lc]
-  ;W[kc]
-  ;B[ld]
-  ;W[fc]
-  ;B[ic]
-  ;W[lb]
-  ;B[id]
-  ;W[ib]
-  ;B[jb]
-  ;W[kb]
-  ;B[hb]
-  ;W[je]
-  ;B[bd]
-  ;W[ie]
-  ;B[ek]
-  ;W[dl]
-  ;B[dk]
-  ;W[ck]
-  ;B[el]
-  ;W[cl]
-  ;B[nk]
-  ;W[ok]
-  ;B[ni]
-  ;W[mj]
-  ;B[lj]
-  ;W[oj]
-  ;B[nh]
-  ;W[nq]
-  ;B[mn]
-  ;W[os]
-  ;B[rs]
-  ;W[ii]
-  ;B[ig]
-  ;W[lk]
-  ;B[ml]
-  ;W[lh]
-  ;B[kh]
-  ;W[kk]
-  ;B[ki]
-  ;W[ln]
-  ;B[km]
-  ;W[jm]
-  ;B[lm]
-  ;W[fj]
-  ;B[ei]
-  ;W[gp]
-  ;B[fp]
-  ;W[jl]
-  ;B[lp]
-  ;W[fm]
-  ;B[gl]
-  ;W[hd]
-  ;B[gc]
-  ;W[gd]
-  ;B[hc]
-  ;W[fd]
-  ;B[fb]
-  ;W[ej]
-  ;B[gk]
-  ;W[hg]
-  ;B[hh]
-  ;W[ih]
-  ;B[jg]
-  ;W[gh]
-  ;B[hi]
-  ;W[hj]
-  ;B[gi]
-  ;W[gj]
-  ;B[fi]
-  ;W[dj]
-  ;B[ik]
-  ;W[jj]
-  ;B[il]
-  ;W[oh]
-  ;B[hf]
-  ;W[he]
-  ;B[ij]
-  ;W[ec]
-  ;B[eb]
-  ;W[dd]
-  ;B[cc]
-  ;W[cr]
-  ;B[of]
-  ;W[pf]
-  ;B[oi]
-  ;W[pi]
-  ;B[ph]
-  ;W[pg]
-  ;B[ms]
-  ;W[kf]
-  ;B[lg]
-  ;W[em]
-  ;B[cs]
-  ;W[bs]
-  ;B[ds]
-  ;W[br]
-  ;B[be]
-  ;W[cf]
-  ;B[bf]
-  ;W[dg]
-  ;B[ee]
-  ;W[gm]
-  ;B[hm]
-  ;W[go]
-  ;B[gn]
-  ;W[fn]
-  ;B[ji]
-  ;W[eo]
-  ;B[fs]
-  ;W[fk]
-  ;B[fl]
-  ;W[hl]
-  ;B[hk]
-  ;W[im]
-  ;B[jh]
-  ;W[in]
-  ;B[hl]
-  ;W[ff]
-  ;B[cg]
-  ;W[ii]
-  ;B[ih]
-  ;W[dg]
-  ;B[dm]
-  ;W[en]
-  ;B[cg]
-  ;W[ep]
-  ;B[gs]
-  ;W[dg]
-  ;B[pj]
-  ;W[qh]
-  ;B[cg]
-  ;W[jk]
-  ;B[ii]
-  ;W[dg]
-  ;B[qi]
-  ;W[ph]
-  ;B[cg]
-  ;W[kp]
-  ;B[ko]
-  ;W[dg]
-  ;B[ef]
-  ;W[cg]
-  ;B[mb]
-  ;W[nb]
-  ;B[mc]
-  ;W[ma]
-  ;B[gf]
-  ;W[fe]
-  ;B[fg]
-  ;W[jc]
-  ;B[ia]
+(;FF[4]
+GM[1]
+DT[2018-11-09]
+PC[OGS: http://online-go.com/game/review/352709]
+PB[Artur Chmielewski]
+PW[Maksym Wałaszewski]
+BR[1d]
+WR[2d]
+CP[online-go.com]
+TM[0]OT[0 none]
+RE[?]
+SZ[19]
+KM[6.5]
+RU[japanese]
+
+;B[pq]
+;W[dp]C[
+
+-- chat --
+LMP2018-3: Zapraszam na 2 rundę Ligi Mistrzostw Polski w go
+LMP2018-3: 3 deska
+
+]
+
+;B[dc]C[
+
+-- chat --
+LMP2018-3: http://mp.go.art.pl/2018/pl/wyniki - aktualne wyniki 
+
+]
+
+;W[ce]C[
+
+-- chat --
+LMP2018-3: http://mp.go.art.pl/2018/en/results - current results and schedule
+
+]
+
+;B[ed]
+;W[oc]
+;B[qo]
+;W[qd]
+;B[fq]
+;W[cn]
+;B[dr]
+;W[hq]
+;B[fo]
+;W[kq]
+;B[mq]
+;W[cq]
+;B[ho]
+;W[io]
+;B[hn]
+;W[mr]C[
+
+-- chat --
+Sadiker: m2
+
+]
+
+;B[lr]
+;W[lq]
+;B[kr]
+;W[nr]
+;B[jq]
+;W[jp]
+;B[iq]
+;W[ip]
+;B[mp]
+;W[lo]
+;B[hr]
+;W[gr]C[
+
+-- chat --
+Sadiker: j2 musi
+Sadiker: ew j1
+dead_robot: tutaj będzie niezła rąbanina
+dead_robot: nie wiadomo kto kogo
+
+]
+
+;B[jr]
+;W[hs]
+;B[ir]C[
+
+-- chat --
+Sadiker: cz białego
+dead_robot: biały też znajdzie coś do polowania
+LMP2018-3: time left- B: 66min;  W: 66min
+
+]
+
+;W[pp]
+;B[op]C[
+
+-- chat --
+Sadiker: czyli P4 było złe
+
+]
+
+;W[oq]
+;B[oo]
+;W[qp]
+;B[qq]
+;W[rp]
+;B[rq]
+;W[po]C[
+
+-- chat --
+Sadiker: no chyba, ze q6 dziala wtedy nie
+
+]
+
+;B[mo]
+;W[pr]
+;B[pn]
+;W[ro]
+;B[rn]
+;W[qn]
+;B[qm]C[
+
+-- chat --
+LMP2018-3: Koichi przyszedł i wpatruje się z ciekawością
+
+]
+
+;W[on]C[
+
+-- chat --
+LMP2018-3: Maksym dwa razy już chciał zagrać to cięcie, potem wrócił rękę. Za trzecim razem zagrał
+
+]
+
+;B[qo]C[
+
+-- chat --
+kklz: zdaniem bota można grać a można nie grać cięcia :)
+kklz: https://gyazo.com/a05d11b880ba4099da5c532f9e35dca7
+
+]
+
+;W[hp]
+;B[gq]
+;W[qn]
+;B[pm]C[
+
+-- chat --
+kklz: natomiast bot bardzo nie lubi tej groźby ko, którą zagrał biały
+kklz: i już dużo lepiej dla czarnego 
+LMP2018-3: też mi się nie podobał, bo kończyła semeai, ale co ja tam wiem
+
+]
+
+;W[rm]C[
+
+-- chat --
+LMP2018-3: najmocniejsze uderzenie zegara w tej grze jak na razie
+kklz: jakby zamiast tego zagrał G3 to potem ma dużo innych gróźb i w ogóle może zagrać z zewnątrz całą masę forcingów
+kklz: a tak to stracił dużo aji ratując jednego piona
+
+]
+
+;B[qo]
+;W[fr]C[
+
+-- chat --
+kklz: to kolejna groźba na spory minus :)
+kklz: kto transmituje deski?
+LMP2018-3: Poznańscy goiści :D
+LMP2018-3: chociaż w sumie nie tylko poznańscy
+LMP2018-1: Ćśś.
+LMP2018-1: Honte górą.
+kklz: a konkretnie? jacyś stali bywalcy LSG?
+LMP2018-3: LMP1 - Marcin Dzieżyc; LMP2- Artur Barcicki; Ja - Darek Bednarczyk; LMP4, Ewa Biernot
+LMP2018-3: tak, stali bywalcy :P
+kklz: dziękuję bardzo
+
+]
+
+;B[er]
+;W[qn]C[
+
+-- chat --
+LMP2018-3: B: 39min;  W: 50min
+
+]
+
+;B[qr]
+;W[sn]C[
+
+-- chat --
+cehijow: Darek, chcesz jakąś herbatę aby spakować? ;)
+LMP2018-3: priv, a najlepiej do Pauliny
+kklz: :)
+kklz: biały już ma lepiej
+kklz: ogólnie dużo więcej obrotów niż w grze Leszka
+LMP2018-3: Nadal się nie mogę przyzwyczaić do tej analizy botami
+
+]
+
+;B[sr]
+;W[om]
+;B[mm]
+;W[ol]C[
+
+-- chat --
+kklz: dużo lepiej się ogląda gry jednym okiem :)
+kklz: nie trzeba punktów liczyć, żeby wiedzieć co się dzieje
+kklz: jakbym miał darmowy pro komentarz na żywo :)
+
+]
+
+;B[mk]C[
+
+-- chat --
+LMP2018-3: A później ludzie tracą własną orientację, tak jak z GPS w autach ;p
+kklz: pytanie czy to dobrze, czy źle :)
+kklz: ludzie zatracili dużo ważnych umiejętności
+kklz: przez technlogoię
+kklz: np. umiejętność mnożenia w pamięci dużych liczb itp.
+
+]
+
+;W[nj]C[
+
+-- chat --
+kklz: albo umiejętność ręcznego pisania
+
+]
+
+;B[nd]C[
+
+-- chat --
+LMP2018-3: albo walki na miecze 
+
+]
+
+;W[od]C[
+
+-- chat --
+LMP2018-3: Ale akurat żeby grać w go, to liczenie punktów i ocena sytuacji się przydaje
+kklz: zależy od Twoich priorytetów
+kklz: ja nie gram tylko obserwuję gry :)
+LMP2018-3: czemu?
+kklz: no bo mi się nie chce grać :)
+
+]
+
+;B[nf]C[
+
+-- chat --
+kklz: widziałeś mnie kiedyś grającego w go?
+
+]
+
+;W[ne]C[
+
+-- chat --
+LMP2018-3: nie wiem
+kklz: aaa. nie jestem pod kgsowym nickiem.
+
+]
+
+;B[me]C[
+
+-- chat --
+kklz: juggler
+
+]
+
+;W[oe]
+;B[mf]
+;W[og]C[
+
+-- chat --
+LMP2018-3: a to widziałem :P
+LMP2018-3: faktem jest, dawno
+
+]
+
+;B[li]C[
+
+-- chat --
+kklz: podobno jednym z wymaganiam, żeby dany sport się dobrze oglądało jest to, żeby widzowie wiedzieli więcej od grających
+kklz: np. w piłce nożnej każdy kanapowi widz
+kklz: widzi, że ronaldo krzywo kopnął i może powiedzieć "hehe, ale krzywo kopnął"
+kklz: no i teraz dzięki tym botom w go mogę mieć to samo kanapowe uczucie oglądając MP w go :)
+LMP2018-3: dobre :)
+
+]
+
+;W[di]
+;B[dh]
+;W[ch]
+;B[cg]
+;W[dg]
+;B[eh]
+;W[ci]
+;B[df]
+;W[bg]
+;B[eg]C[
+
+-- chat --
+Sadiker: ja bym grał M17
+Sadiker: ko sie nie ma co bac
+LMP2018-3: B: 28min; W: 31min
+
+]
+
+;W[jd]C[
+
+-- chat --
+Sadiker: Chciwo
+
+]
+
+;B[lc]C[
+
+-- chat --
+Sadiker: chyba, ze to policzył i widzi sabaki
+
+]
+
+;W[kc]
+;B[ld]
+;W[fc]
+;B[ic]
+;W[lb]
+;B[id]
+;W[ib]
+;B[jb]
+;W[kb]
+;B[hb]
+;W[je]
+;B[bd]
+;W[ie]
+;B[ek]C[
+
+-- chat --
+Sadiker: cz pomógł
+
+]
+
+;W[dl]C[
+
+-- chat --
+Sadiker: B16 jakieś wolne
+
+]
+
+;B[dk]
+;W[ck]
+;B[el]
+;W[cl]
+;B[nk]
+;W[ok]
+;B[ni]
+;W[mj]
+;B[lj]
+;W[oj]
+;B[nh]
+;W[nq]
+;B[mn]
+;W[os]
+;B[rs]
+;W[ii]
+;B[ig]
+;W[lk]
+;B[ml]
+;W[lh]
+;B[kh]
+;W[kk]
+;B[ki]
+;W[ln]
+;B[km]
+;W[jm]
+;B[lm]C[
+
+-- chat --
+Sadiker: Białemu wszystko się do tej pory udawało ale tu raczej przesadził
+
+]
+
+;W[fj]
+;B[ei]
+;W[gp]
+;B[fp]
+;W[jl]C[
+
+-- chat --
+Sadiker: a jednak nie
+
+]
+
+;B[lp]
+;W[fm]
+;B[gl]C[
+
+-- chat --
+Sadiker: a sam już nie wiem
+
+]
+
+;W[hd]
+;B[gc]C[
+
+-- chat --
+LMP2018-3: Dosyć niepewnie postawiony ten kamień
+
+]
+
+;W[gd]
+;B[hc]
+;W[fd]
+;B[fb]C[
+
+-- chat --
+Sadiker: Jeśli obaj sa w byo to im niezazdroszczę
+
+]
+
+;W[ej]C[
+
+-- chat --
+LMP2018-3: Artur właśnie wszedł w byo
+LMP2018-3: Maksym ma 14min na zegarze
+
+]
+
+;B[gk]
+;W[hg]
+;B[hh]
+;W[ih]
+;B[jg]
+;W[gh]C[
+
+-- chat --
+Sadiker: h10 zamiast h11?
+
+]
+
+;B[hi]
+;W[hj]
+;B[gi]
+;W[gj]
+;B[fi]
+;W[dj]
+;B[ik]
+;W[jj]
+;B[il]
+;W[oh]
+;B[hf]
+;W[he]C[
+
+-- chat --
+Sadiker: J10 K9 L10 L8 H14 miał zagrac
+
+]
+
+;B[ij]
+;W[ec]
+;B[eb]
+;W[dd]
+;B[cc]C[
+
+-- chat --
+Sadiker: c2 chyba
+Sadiker: albo n1
+
+]
+
+;W[cr]C[
+
+-- chat --
+LMP2018-3: jest c2
+Sadiker: no to n1
+
+]
+
+;B[of]
+;W[pf]
+;B[oi]
+;W[pi]C[
+
+-- chat --
+Sadiker: r1 - bedzie bardziej stylowo
+
+]
+
+;B[ph]
+;W[pg]C[
+
+-- chat --
+LMP2018-3: mam wrażenie że całą tą sekwencje Artur gra jako timesuji do policzenia punktów
+
+]
+
+;B[ms]
+;W[kf]C[
+
+-- chat --
+Sadiker: teraz na pewno wygrywa
+Sadiker: chyba ze jakieś tesuji biały wyciagnie
+
+]
+
+;B[lg]
+;W[em]
+;B[cs]
+;W[bs]
+;B[ds]
+;W[br]
+;B[be]
+;W[cf]
+;B[bf]
+;W[dg]C[
+
+-- chat --
+Sadiker: D15
+
+]
+
+;B[ee]
+;W[gm]
+;B[hm]
+;W[go]
+;B[gn]
+;W[fn]
+;B[ji]
+;W[eo]
+;B[fs]
+;W[fk]
+;B[fl]
+;W[hl]
+;B[hk]
+;W[im]
+;B[jh]
+;W[in]
+;B[hl]
+;W[ff]
+;B[cg]
+;W[ii]
+;B[ih]
+;W[dg]
+;B[dm]
+;W[en]
+;B[cg]
+;W[ep]
+;B[gs]
+;W[dg]
+;B[pj]
+;W[qh]
+;B[cg]
+;W[jk]
+;B[ii]
+;W[dg]
+;B[qi]
+;W[ph]
+;B[cg]
+;W[kp]
+;B[ko]
+;W[dg]
+;B[ef]
+;W[cg]
+;B[mb]
+;W[nb]
+;B[mc]
+;W[ma]
+;B[gf]
+;W[fe]
+;B[fg]
+;W[jc]
+;B[ia]C[
+
+-- chat --
+LMP2018-3: Maksym poddał
+LMP2018-3: B+R
+LMP2018-3: dziękujemy za oglądanie rundy 2
+LMP2018-3: runda 3 o 15:00
+
+]
+
 )

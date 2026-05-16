@@ -39,6 +39,7 @@ export function createEndpoints({ basePath, domain }: FrontendEndpointsConfig) {
     SITEMAP: (locale: string) => withBasePath(`/data/sitemap/${locale}.json`),
 
     GAME_SGF: (path: string) => withBasePath(path),
+    GAME_RAW_SGF: (path: string) => withBasePath(path.replace(/\.sgf$/, '.raw.sgf')),
     GAME_THUMB: (path: string | undefined) => (path ? withBasePath(path) : undefined),
     GAME_FILE: (path: string) => `${normalizedDomain}${withBasePath(path)}`,
 

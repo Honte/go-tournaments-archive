@@ -1,195 +1,493 @@
-(
-  ;BR[3d]CA[UTF-8]DT[2014-12-11]EV[Polish Go Championship 2014]FF[4]GM[1]GN[Round 1 - Board 1]KM[6.50]PB[Krzysztof Giedrojć]PC[Warszawa]PW[Mateusz Surma]RE[W+R]RU[japanese]ST[2]SZ[19]WR[7d]
-  ;B[dp]
-  ;W[pp]
-  ;B[cd]
-  ;W[pc]
-  ;B[ec]
-  ;W[cn]
-  ;B[ck]
-  ;W[fq]
-  ;B[fp]
-  ;W[gp]
-  ;B[fo]
-  ;W[cq]
-  ;B[cp]
-  ;W[dq]
-  ;B[eq]
-  ;W[er]
-  ;B[ep]
-  ;W[gr]
-  ;B[go]
-  ;W[hp]
-  ;B[in]
-  ;W[jd]
-  ;B[ie]
-  ;W[hc]
-  ;B[gd]
-  ;W[ce]
-  ;B[dd]
-  ;W[bd]
-  ;B[bc]
-  ;W[dh]
-  ;B[ch]
-  ;W[ci]
-  ;B[cg]
-  ;W[dk]
-  ;B[cj]
-  ;W[dj]
-  ;B[dl]
-  ;W[bi]
-  ;B[cm]
-  ;W[el]
-  ;B[em]
-  ;W[fl]
-  ;B[ei]
-  ;W[di]
-  ;B[gk]
-  ;W[df]
-  ;B[ld]
-  ;W[je]
-  ;B[id]
-  ;W[ic]
-  ;B[jf]
-  ;W[ke]
-  ;B[kc]
-  ;W[jc]
-  ;B[nd]
-  ;W[pe]
-  ;B[ob]
-  ;W[pb]
-  ;B[nf]
-  ;W[pg]
-  ;B[gc]
-  ;W[kf]
-  ;B[nh]
-  ;W[kh]
-  ;B[pi]
-  ;W[qn]
-  ;B[jg]
-  ;W[kg]
-  ;B[li]
-  ;W[ki]
-  ;B[lj]
-  ;W[kj]
-  ;B[kk]
-  ;W[jk]
-  ;B[jj]
-  ;W[if]
-  ;B[ij]
-  ;W[hf]
-  ;B[ge]
-  ;W[ih]
-  ;B[pq]
-  ;W[qq]
-  ;B[oq]
-  ;W[qr]
-  ;B[lq]
-  ;W[fm]
-  ;B[en]
-  ;W[be]
-  ;B[qf]
-  ;W[pf]
-  ;B[rh]
-  ;W[qe]
-  ;B[ql]
-  ;W[jl]
-  ;B[hl]
-  ;W[fg]
-  ;B[kl]
-  ;W[jm]
-  ;B[ln]
-  ;W[lm]
-  ;B[mm]
-  ;W[km]
-  ;B[ml]
-  ;W[jo]
-  ;B[io]
-  ;W[lo]
-  ;B[mo]
-  ;W[kn]
-  ;B[mn]
-  ;W[ip]
-  ;B[eg]
-  ;W[eh]
-  ;B[hm]
-  ;W[ho]
-  ;B[gn]
-  ;W[bn]
-  ;B[bq]
-  ;W[br]
-  ;B[bm]
-  ;W[am]
-  ;B[bl]
-  ;W[bp]
-  ;B[bo]
-  ;W[aq]
-  ;B[co]
-  ;W[ao]
-  ;B[dn]
-  ;W[rg]
-  ;B[qg]
-  ;W[rf]
-  ;B[qh]
-  ;W[mh]
-  ;B[mg]
-  ;W[me]
-  ;B[ne]
-  ;W[lk]
-  ;B[lh]
-  ;W[ll]
-  ;B[mk]
-  ;W[ph]
-  ;B[qi]
-  ;W[rm]
-  ;B[rl]
-  ;W[ik]
-  ;B[hk]
-  ;W[op]
-  ;B[nq]
-  ;W[pm]
-  ;B[pl]
-  ;W[om]
-  ;B[jr]
-  ;W[ns]
-  ;B[nr]
-  ;W[os]
-  ;B[ms]
-  ;W[mr]
-  ;B[qm]
-  ;W[mq]
-  ;B[np]
-  ;W[rn]
-  ;B[mp]
-  ;W[ls]
-  ;B[lr]
-  ;W[ms]
-  ;B[ks]
-  ;W[pr]
-  ;B[lp]
-  ;W[ol]
-  ;B[ok]
-  ;W[hi]
-  ;B[hj]
-  ;W[fj]
-  ;B[ef]
-  ;W[dg]
-  ;B[ff]
-  ;W[gf]
-  ;B[de]
-  ;W[ac]
-  ;B[bb]
-  ;W[lb]
-  ;B[mb]
-  ;W[kb]
-  ;B[lc]
-  ;W[oc]
-  ;B[nc]
-  ;W[oa]
-  ;B[na]
-  ;W[nb]
-  ;B[oo]
-  ;W[po]
-  ;B[ob]
-  ;W[pa]
-)
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[5400]OT[1x60 byo-yomi]
+GN[Polish Championship League 2014 Round 1 Board 1]PW[Mateusz Surma]PB[Krzysztof Giedrojć]WR[7d]BR[3d]DT[2014-12-11]C[Bogdan13x [1k\]: kogo będziecie transmitować /
+Bogdan13x [1k\]: /
+Bogdan13x [1k\]: ?
+]RE[W+Resign]
+;B[dp]
+;W[pp]C[Bogdan13x [1k\]: ok widze
+]
+;B[cd]
+;W[pc]
+;B[ec]C[gfdhff [2k\]: YEY!
+]
+;W[cn]C[spooke [-\]: tylko 1 deska będzie?
+]
+;B[ck]
+;W[fq]
+;B[fp]C[LMP1 [-\]: tak
+]
+;W[gp]
+;B[fo]
+;W[cq]
+;B[cp]
+;W[dq]
+;B[eq]
+;W[er]
+;B[ep]
+;W[gr]
+;B[go]
+;W[hp]
+;B[in]
+;W[jd]
+;B[ie]
+;W[hc]
+;B[gd]C[maltook [2k\]: what level are players?
+alias [6k\]: dan
+Ull [?\]: 3d vs 3d?
+joh2000 [-\]: w7d
+alias [6k\]: b?
+mayeck [5d\]: 3d
+alias [6k\]: ok
+Ull [?\]: thx
+rico [11k\]: Bedzie transmisja video?
+]
+;W[ce]C[LMP1 [-\]: niestety nie
+]
+;B[dd]
+;W[bd]
+;B[bc]
+;W[dh]C[mayeck [5d\]: d12 is a bit strange
+SadPlayer [-\]: czemu tak mało transmisji?:( 
+SadPlayer [-\]: jest szansa ze będzie więcej jutro?
+LMP1 [-\]: z tego co się orientuje, 1 transmiter zachorowal, 2 transmiterka musiala pojechac do pracy, o 3 nic nie wiem
+LMP1 [-\]: tak, ale nie moge obiecac
+]
+;B[ch]C[LMP1 [-\]: konsekwnecja braku transmiterow jest koniecznosc wypelnianie kifu przez zawodnikow. Niektorzy musieli sobie przypomniec jak to sie robi :)
+]
+;W[ci]
+;B[cg]
+;W[dk]
+;B[cj]
+;W[dj]C[SadPlayer [-\]: b11- tak dla jaj
+Bogdan13x [1k\]: to było troche zabawne
+]
+;B[dl]
+;W[bi]
+;B[cm]C[SadPlayer [-\]: czemu cz nie zagrał b11 ?
+]
+;W[el]C[aga [-\]: to jest dobre pytanie
+]
+;B[em]
+;W[fl]C[Bogdan13x [1k\]: może nie chciał grać na 2 lini w swoim moyo
+MikiSayaka [2d\]: Does Poland have 7dan? ( No offense) 
+wysek [?\]: Mateusz Surma is 7d
+Lice [4d?\]: well they have mateusz
+MikiSayaka [2d\]: My little bother ask me do europeans play go and I can't find a suitable answer 
+LMP1 [-\]: please check EGD and rating of Mateusz
+spooke [-\]: http://www.europeangodatabase.eu/EGD/Player_Card.php?key=12837968
+SadPlayer [-\]: LMP1: Wpisz im tam siłę bo ludzie nie przstaną pytać :)
+Tasky [3d\]: game looks good for w in my eyes
+LMP1 [-\]: tak jest ok?
+Bogdan13x [1k\]: tak bardzo dobrze
+Tasky [3d\]: I always thought c4 was a bad move
+wysek [?\]: ten chory transmiter to ja, przepraszam:(
+MikiSayaka [2d\]: Pavol Lisy is the strongest european?
+]
+;B[ei]C[Bogdan13x [1k\]: yes 
+MikiSayaka [2d\]: now europeans local pro only Catalin5p ? 
+Dovery [-\]: pavol too
+]
+;W[di]C[SadPlayer [-\]: fajne moyo cz miał
+MikiSayaka [2d\]: I heard there was a Deut 4p dead in an accident 
+Lice [4d?\]: catalin is a japanese pro
+MikiSayaka [2d\]: oh sorry, saw cheater so much on KGS didn't notice he is a pro lol ( I know the news) 
+Dovery [-\]: hahaha
+]
+;B[gk]
+;W[df]C[Dom [6d\]: ilya is the strongest european
+Lice [4d?\]: nahh
+MikiSayaka [2d\]: Catalin must be the most handsome pro ever
+Bogdan13x [1k\]: :-)
+]
+;B[ld]C[Holub [1d\]: i think pavol on par with ilya :)
+Jazzman [1d\]: Mikisayaka: ther was Hans Pietsch. He was fast german pro
+Jazzman [1d\]: and killed in a robbery in Columbia (?) when promotng go
+TuLy [3k\]: agree with Holub
+]
+;W[je]C[MikiSayaka [2d\]: what an unlucky guy 
+Jazzman [1d\]: http://senseis.xmp.net/?HansPietsch
+]
+;B[id]C[Dom [6d\]: holub, i just say the facts
+]
+;W[ic]
+;B[jf]
+;W[ke]C[goplana [9k\]: EGF #1 is Hwang In-seong, Dom
+Holub [1d\]: what makes you so sure about that fact of yours Dom ? 
+Holub [1d\]: Hwang in-seong ...saying he is an european is like saying pizza is a drink...
+gfdhff [2k\]: true
+MikiSayaka [2d\]: lol
+gfdhff [2k\]: what about drink tastes like pizza?
+]
+;B[kc]
+;W[jc]
+;B[nd]C[Lice [4d?\]: males claim to be females these days and being accepted.. so pizza being a drink isn't that crazy
+MikiSayaka [2d\]: yes :-) 
+Lice [4d?\]: anyway pavol and ali are in china right now, they have been studying 10 hours a day in the past several monthes so i doubt ilya is still at pavol's lvl
+MikiSayaka [2d\]: Nande, your info is funny 
+MikiSayaka [2d\]: full of human emotions , I like it 
+]
+;W[pe]C[Lice [4d?\]: am i nande?
+Holub [1d\]: well...Lice im really looking forward to see pavol´s strenght after his return :) since he has already been insanly strong before he got there :D
+gfdhff [2k\]: maybe he will not return
+Lice [4d?\]: well both pavol and ali won japanese pros a few weeks ago
+Lice [4d?\]: you can check the games online somewhere
+sprouts [2k\]: n13
+Holub [1d\]: also about the accepting pizza as a drink ...we can do that ...but that wont make it a drink ...it will just be accepted..
+victor5 [1k\]: n14
+Lice [4d?\]: but what if we start believeing its a drink?
+sprouts [2k\]: Is that a reference to transsexuals?
+]
+;B[ob]
+;W[pb]
+;B[nf]
+;W[pg]C[gosei [1k\]: p18 very bad
+Holub [1d\]: spourts more like to that about asians becoming europeans...but you can aplly it to that too
+Holub [1d\]: lice really hard queastion...
+SadPlayer [-\]: jak tam innym idzie?
+]
+;B[gc]
+;W[kf]C[LMP1 [-\]: graja, na moje oko w miare rowno na pozostalych deskach
+]
+;B[nh]C[Bogdan13x [1k\]: a czyje oko patrzy i transmituje
+Bogdan13x [1k\]: ?
+LMP1 [-\]: teraz nare, Lukasz z Sasio w poznym fuseki
+]
+;W[kh]C[Bogdan13x [1k\]: cześć Nare
+LMP1 [-\]: czesc
+]
+;B[pi]
+;W[qn]C[BobWhoosta [1d\]: Black is playing in a fiercly aggressive style, but I think white's calm and solid shape will win out.
+gosei [1k\]: b have to kill now
+thepaper [1d\]: so hard to kill that
+SadPlayer [-\]: nie da się zabić 7d
+Bogdan13x [1k\]: 7d never die
+kostuek [?\]: everyone die
+dropstone [6k\]: yup gosei, probably make wj14 weaker
+gosei [1k\]: b can hope for miracle:)
+kostuek [?\]: q3 or p3? or even o3?
+gosei [1k\]: no
+gosei [1k\]: not possible
+oonicks [?\]: o3, mayb q2 is possible?
+gosei [1k\]: or p2
+gosei [1k\]: but if b do ,b will definitly lose
+Bogdan13x [1k\]: in 1999 black have 5d
+oonicks [?\]: if b attacks a w group now chances are he will get gote
+bluedesk: do these guys have kgs accounts?
+oonicks [?\]: so i think better to first have a hold on the bottom
+sheena [?\]: 7d is drakula
+sheena [?\]: 3d is gie
+bluedesk: ok tx
+sheena [?\]: but he doesnt play much on kgs
+G361 [?\]: Salut. ^^
+G361 [?\]: o3
+thepaper [1d\]: or play L10 and pray
+gosei [1k\]: w lead is over 15 points....
+kostuek [?\]: o3 seems kinda easy for w. o3 p3 o4 m3
+funplay [16k?\]: o4?
+kostuek [?\]: o4 is a soft reduction, since b seems behind its no time for soft
+G361 [?\]: 03p3p2q2k3
+radziol: ooo mistrzostwa \\o\\
+]
+;B[jg]
+;W[kg]C[gfdhff [2k\]: /o/
+]
+;B[li]C[gfdhff [2k\]: \\o\\
+gfdhff [2k\]: /o/
+Eowyn [1d\]: b's direction seems right
+]
+;W[ki]C[SadPlayer [-\]: nawet fajny ruch
+Otigg [4k\]:  m10 
+Bogdan13x [1k\]: jako gracz kyu zaczołbym się bać o czarną grupe w centrum
+LMP1 [-\]: gie 28mins, dracula 1h2m
+LMP1 [-\]: Sebastion 35m, Koichi 56m, reszta po rowno (4x mins)
+]
+;B[lj]
+;W[kj]C[SadPlayer [-\]: żeby to atakować to cz by się najpierw musiał slabości w j14 pozbyć
+Bogdan13x [1k\]: 14gniejest lepsze?
+Eowyn [1d\]: There is no easy way to attack both w's group
+oonicks [?\]: jak to łatwo połączyć d11
+SadPlayer [-\]: Znowu transmije na aero2 robią i ich rozłącza co godzinę:(
+]
+;B[kk]
+;W[jk]
+;B[jj]
+;W[if]C[LMP1 [-\]: nie,rozlaczylo lte plusa, a poloczylo z powrotem na hspa+
+LMP1 [-\]: zasieg z 5 kresek spadl na 2 :(
+]
+;B[ij]
+;W[hf]
+;B[ge]
+;W[ih]C[G361 [?\]: tenuki
+SadPlayer [-\]: l8 solidne, ale chyba za wolne
+SadPlayer [-\]: wiec może jakieś p2 /
+LMP1 [-\]: g12 nie jest grozba aby bialy zrobil drugie oko na dole?
+]
+;B[pq]
+;W[qq]C[SadPlayer [-\]: na g12 mozna chyba f13 
+]
+;B[oq]C[SadPlayer [-\]: a ni jednak
+SadPlayer [-\]: czyli sente
+LMP1 [-\]: obecnie dracula sie zastanawia jakie ruchy w kifu zgubil (okolo 4) porownuje z kifu Krzyska
+]
+;W[qr]C[SadPlayer [-\]: a po co kifu jak transmisja jest?
+]
+;B[lq]C[LMP1 [-\]: bo nie ma na wszystkich deskach?
+]
+;W[fm]
+;B[en]C[LMP1 [-\]: w regulaminie 4.3.2 Obsługa zapisu musi być zagwarantowana dla wszystkich graczy.
+LMP1 [-\]: zeby byc zwolnionym
+]
+;W[be]C[guest1655: e13 
+]
+;B[qf]
+;W[pf]
+;B[rh]
+;W[qe]
+;B[ql]
+;W[jl]C[Eowyn [1d\]: imho w endangers himself
+]
+;B[hl]C[sharma [6d\]: black has so much shape defects
+Eowyn [1d\]: yes but i think w doesnt need this kind of deep invasion
+kostuek [?\]: b e9 seems annoying or i missing something
+]
+;W[fg]C[kostuek [?\]: well not anymore
+]
+;B[kl]C[Bogdan13x [1k\]: Czemu nie ma 2 pozycji startowej w tabelce wyników?
+]
+;W[jm]C[SadPlayer [-\]: l5 
+LMP1 [-\]: Majus Misiak nie mógł uczesniczyć w LMP
+Bogdan13x [1k\]: aha
+Eowyn [1d\]: yes b must resist
+SadPlayer [-\]: Leszek go przekupił:)
+gfdhff [2k\]: pilkarski poker
+gfdhff [2k\]: przekupowanie ostro
+guest1656: as i said, black shoudnt exchange e13 and d13 earlier?
+]
+;B[ln]C[LMP1 [-\]: Krzysztof Gierojć has 0.01s main time left
+]
+;W[lm]C[Eowyn [1d\]: hmm maybe f10 or g11 is needed for b
+guest1656: very precise timer
+LMP1 [-\]: :), but now byo
+Shantideva [?\]: :)
+]
+;B[mm]C[LMP1 [-\]: Leszek wygral przez poddanie z Marcinem Majka
+]
+;W[km]
+;B[ml]C[mayeck [5d\]: no nie
+mayeck [5d\]: co za leszcz z higakiego
+mayeck [5d\]: a miał z mateuszem walczyć
+Maek [4d\]: wstyd i hanba
+]
+;W[jo]C[guest1656: k3
+Eowyn [1d\]: k3 seems soft
+LMP1 [-\]: mayeck, kraza tutaj plotki na kgs (popatrz na komentarze powyzej), ze z Leszkiem miales rozmowy :)
+]
+;B[io]C[mayeck [5d\]: chciałem żeby mały leszek zagrał w mistrzostwach w końcu
+mayeck [5d\]: ale pomylił mi się mały z dużym
+]
+;W[lo]C[awesome [3k\]: save h8 now?
+]
+;B[mo]C[awesome [3k\]: or is it safe maybe
+Eowyn [1d\]: h8 safe but also very small 
+]
+;W[kn]C[awesome [3k\]: ok
+Eowyn [1d\]: nevermind i thought you told some other coordinates
+]
+;B[mn]C[Falcon89 [5k\]: Does Mat Surma plays in kgs?
+]
+;W[ip]
+;B[eg]
+;W[eh]C[awesome [3k\]: b k3 looks big and sente, no?
+LMP1 [-\]: Falcon, check drakula account
+]
+;B[hm]C[Eowyn [1d\]: yes but after w connected, it becomes just endgame move because w will not play k3 right now
+kingmango [3d\]: b mkght wanna do something else later, saving possibility of cut
+]
+;W[ho]C[awesome [3k\]: aha
+]
+;B[gn]C[Bogdan13x [1k\]: 2L?
+kostuek [?\]: b4 looks big
+guest1656: k3 bigger
+guest1656: because black's b3 isnt sente
+kostuek [?\]: w k3 isnt sente either
+kotgokot [1k?\]: oh thanks for warning about the polishid tournamentishishid
+P0LAND9D: poland tornament is of best in world
+]
+;W[bn]C[kotgokot [1k?\]: :D
+awesome [3k\]: this was a downer
+]
+;B[bq]
+;W[br]
+;B[bm]C[P0LAND9D: winner of tornament is become King of Poland
+]
+;W[am]C[McMaster [-\]: haha, no
+SadPlayer [-\]: ale teujami rzuca
+]
+;B[bl]
+;W[bp]
+;B[bo]
+;W[aq]
+;B[co]C[Eowyn [1d\]: huge end game by w
+guest1656: shoudnt white play d6 first ?
+kotgokot [1k?\]: a5 
+kotgokot [1k?\]: or s7
+]
+;W[ao]
+;B[dn]C[kotgokot [1k?\]: strange :D
+awesome [3k\]: w got sente
+kotgokot [1k?\]: w may tenuki this
+P0LAND9D: you very strong
+kotgokot [1k?\]: thanks mr poland
+]
+;W[rg]C[P0LAND9D: you of polish descendant
+kotgokot [1k?\]: artem won?
+]
+;B[qg]
+;W[rf]
+;B[qh]
+;W[mh]
+;B[mg]
+;W[me]
+;B[ne]C[SadPlayer [-\]: Słyszalem, że Mateusz ma zamiar z każdym wygrać o tyle ile wynosi róznica wieku miedzy nim a przeciwnikiem
+]
+;W[lk]C[salmon [?\]: lol :D
+SadPlayer [-\]: n17 ?
+salmon [?\]: ale to z mlodszymi przegra?
+]
+;B[lh]C[SadPlayer [-\]: wygra ale o malo
+]
+;W[ll]
+;B[mk]C[salmon [?\]: o 0,5 pewnie
+guest1656: różnica wieku jest zawsze liczbą dodatnią lub równą 0
+SadPlayer [-\]: zero to w sumie jest dodatnie?
+salmon [?\]: zalezy od definicji raczej
+gfdhff [2k\]: a parzyste czy nieparzyste?
+]
+;W[ph]C[McDuck [6k\]: f10 ?
+]
+;B[qi]
+;W[rm]C[SadPlayer [-\]: f10 małe
+McDuck [6k\]: male?\\
+SadPlayer [-\]: small
+]
+;B[rl]C[e3angels1 [-\]: b gets just crushed piecefully
+awesome [3k\]: yes
+awesome [3k\]: peace by peace
+e3angels1 [-\]: oh..lol
+awesome [3k\]: :)
+gfdhff [2k\]: sadplayer i misja propagowania jezyka ojczystego :)
+SadPlayer [-\]: niech się uczą
+]
+;W[ik]C[SadPlayer [-\]: zgodnie z przepowiednią po 3 wojnie światowej Polska ma byc potęgą
+gfdhff [2k\]: :P
+gfdhff [2k\]: a Mateusz królem świata
+]
+;B[hk]C[SadPlayer [-\]: n17 ?
+]
+;W[op]
+;B[nq]
+;W[pm]
+;B[pl]
+;W[om]C[awesome [3k\]: b could probably resign
+Bogdan13x [1k\]: raz by zagra.ł tenuki
+]
+;B[jr]C[LMP1 [-\]: zgodnie z zyczeniem :)
+Bogdan13x [1k\]: nom
+kotgokot [1k?\]: w great in yose
+]
+;W[ns]
+;B[nr]
+;W[os]
+;B[ms]C[LMP1 [-\]: nadal tylko Leszek wygral, pozostale 3 partie sie tocza
+Bogdan13x [1k\]: kiedy udostępnicie przebieg innych parti
+Bogdan13x [1k\]: ?
+Lice [4d?\]: kurwa
+SadPlayer [-\]: Higaki przegrał? Jak to możliwe?
+LMP1 [-\]: z dzisiejszego dnia postaram sie dzis w nocy wpisac (ale nie wiem jak mi bedzie szlo, dawno tego nie robilem)
+]
+;W[mr]
+;B[qm]C[kotgokot [1k?\]: how many pts was n2?
+]
+;W[mq]C[SadPlayer [-\]: ładnie
+SadPlayer [-\]: teraz to nawet ja bym poddał
+]
+;B[np]C[SadPlayer [-\]: n4 ?
+salmon [?\]: resign?
+]
+;W[rn]C[Bogdan13x [1k\]: po n4 czarny łapie 6s
+]
+;B[mp]
+;W[ls]
+;B[lr]
+;W[ms]
+;B[ks]
+;W[pr]C[LMP1 [-\]: Krzysiek malo kiedy poddaje i dosyc pozno zwykle (jeśli już)
+]
+;B[lp]
+;W[ol]
+;B[ok]C[LMP1 [-\]: duzo gra na wysokim handi
+Bogdan13x [1k\]: fakt na wysokim handi warto grać nawet dame
+]
+;W[hi]
+;B[hj]
+;W[fj]
+;B[ef]
+;W[dg]C[guest1656: l18 
+]
+;B[ff]
+;W[gf]
+;B[de]
+;W[ac]
+;B[bb]C[Bogdan13x [1k\]: 17n nie chodzi ?
+LMP1 [-\]: jaka partie w drugiej rundzie na pewno chcielibyscie zobaczyc?
+]
+;W[lb]C[wysek [?\]: Soldan-Nil
+aga [-\]: +1
+]
+;B[mb]
+;W[kb]
+;B[lc]C[Bogdan13x [1k\]: koichiro - Majka lub Mateusza z Łukaszem 
+]
+;W[oc]C[wysek [?\]: 1 czlowiek = 1 glos
+]
+;B[nc]
+;W[oa]C[wysek [?\]: wiec sorry, glos niewazny :D
+]
+;B[na]C[Bogdan13x [1k\]: daje wybór sędziemu 
+]
+;W[nb]C[wysek [?\]: to wtedy sie nic nie zaznacza :p
+antygoista [6k\]: poproszę Sołdan
+SadPlayer [-\]: ja i tak w pracy jestem wiec się wstrzymuje
+Maek [4d\]: chcemy nila
+Bogdan13x [1k\]: wsumie ja też 
+]
+;B[oo]C[Bogdan13x [1k\]: jestem w pracy
+]
+;W[po]
+;B[ob]
+;W[pa]C[LMP1 [-\]: W+R
+Bogdan13x [1k\]: w 3 rundzie bardzo proszę o gre Mateusza z Koichiro 
+LMP1 [-\]: Leszek i Mateusz won, 2 games still in progress
+Bogdan13x [1k\]: jakie dwie gry jak to jest 1 runda
+gfdhff [2k\]: jest 8 graczy?
+LMP1 [-\]: Koichi z Sebesitanem sa w yose, Sasio z Lukaszem w chubanie
+LMP1 [-\]: tak
+gfdhff [2k\]: no to Bogdan nie masz racji
+McDuck [6k\]: game over?
+LMP1 [-\]: yes, White won by resign
+Mogget [1d\]: Dawać tu inne gry, ale już :P
+Bogdan13x [1k\]: nie da się to tak szybko zrobić
+Mogget [1d\]: Wiem, żartowałem
+Mogget [1d\]: Ale bardzo chętnie bym zobaczył pozostałe gry
+SadPlayer [-\]: zrób zdjęcie gobanu Koichiego i wrzuc :)
+LMP1 [-\]: beda na go-l jak wpisze i na jakims polskim serwisie z sgf jesli sobie przypomne adres
+Bogdan13x [1k\]: życzę wszystkim udanej nocki 
+wysek [?\]: jak gdzies wrzucisz to na stronie wrzuce linki do nich
+wysek [?\]: LMP1: czy harmonogram rund na stronie sie zgadza?
+LMP1 [-\]: tak, jutro druga runda startuje o 10, nastepna o 16 (sorry ze nie odpisalem na priva, mam sound off i nie widzialem)
+LMP1 [-\]: zdjecie Diana robi :)
+LMP1 [-\]: Nil +1.5p
+LMP1 [-\]: wygral z Koichi
+wysek [?\]: nice
+])

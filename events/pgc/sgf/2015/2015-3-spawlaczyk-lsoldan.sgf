@@ -1,200 +1,359 @@
-(
-  ;BR[4d]CA[UTF-8]DT[2016-01-08]EV[Polish Go Championship 2015]FF[4]GM[1]GN[Round 3 - Board 1]KM[6.50]PB[Sebastian Pawlaczyk]PC[Warszawa]PW[Leszek Sołdan]RE[B+R]RO[3]RU[japanese]ST[2]SZ[19]US[Michał Parkoła]WR[4d]
-  ;B[qd]
-  ;W[dc]
-  ;B[pq]
-  ;W[oc]
-  ;B[cp]
-  ;W[qo]
-  ;B[pl]
-  ;W[np]
-  ;B[po]
-  ;W[pp]
-  ;B[op]
-  ;W[qp]
-  ;B[oq]
-  ;W[oo]
-  ;B[pn]
-  ;W[qq]
-  ;B[nq]
-  ;W[no]
-  ;B[lq]
-  ;W[rm]
-  ;B[lo]
-  ;W[nm]
-  ;B[ok]
-  ;W[nk]
-  ;B[nj]
-  ;W[mk]
-  ;B[oi]
-  ;W[mj]
-  ;B[mi]
-  ;W[li]
-  ;B[lh]
-  ;W[pj]
-  ;B[oj]
-  ;W[mh]
-  ;B[ni]
-  ;W[ki]
-  ;B[kh]
-  ;W[mg]
-  ;B[kk]
-  ;W[kj]
-  ;B[pf]
-  ;W[md]
-  ;B[jh]
-  ;W[jk]
-  ;B[kd]
-  ;W[og]
-  ;B[pg]
-  ;W[ke]
-  ;B[je]
-  ;W[jf]
-  ;B[kf]
-  ;W[le]
-  ;B[if]
-  ;W[jd]
-  ;B[ie]
-  ;W[id]
-  ;B[hd]
-  ;W[hc]
-  ;B[gc]
-  ;W[ib]
-  ;B[hb]
-  ;W[ic]
-  ;B[gd]
-  ;W[gb]
-  ;B[fb]
-  ;W[ha]
-  ;B[ec]
-  ;W[ce]
-  ;B[cc]
-  ;W[bc]
-  ;B[db]
-  ;W[ch]
-  ;B[pc]
-  ;W[ob]
-  ;B[ep]
-  ;W[qk]
-  ;B[pi]
-  ;W[jq]
-  ;B[hq]
-  ;W[mp]
-  ;B[lr]
-  ;W[lp]
-  ;B[kp]
-  ;W[ko]
-  ;B[jo]
-  ;W[kn]
-  ;B[jn]
-  ;W[jp]
-  ;B[kq]
-  ;W[jm]
-  ;B[im]
-  ;W[jl]
-  ;B[hn]
-  ;W[bp]
-  ;B[cq]
-  ;W[co]
-  ;B[cm]
-  ;W[eo]
-  ;B[fp]
-  ;W[dm]
-  ;B[dl]
-  ;W[em]
-  ;B[cn]
-  ;W[do]
-  ;B[el]
-  ;W[gm]
-  ;B[fl]
-  ;W[gn]
-  ;B[ho]
-  ;W[gl]
-  ;B[cj]
-  ;W[bn]
-  ;B[bm]
-  ;W[gk]
-  ;B[ei]
-  ;W[eh]
-  ;B[dg]
-  ;W[cg]
-  ;B[dh]
-  ;W[ci]
-  ;B[di]
-  ;W[bj]
-  ;B[ck]
-  ;W[dd]
-  ;B[hj]
-  ;W[il]
-  ;B[bb]
-  ;W[cd]
-  ;B[cb]
-  ;W[fe]
-  ;B[df]
-  ;W[bd]
-  ;B[ed]
-  ;W[ii]
-  ;B[ji]
-  ;W[ln]
-  ;B[jj]
-  ;W[lj]
-  ;B[gj]
-  ;W[mq]
-  ;B[mr]
-  ;W[pr]
-  ;B[or]
-  ;W[os]
-  ;B[nr]
-  ;W[qr]
-  ;B[jr]
-  ;W[ri]
-  ;B[qh]
-  ;W[qb]
-  ;B[rc]
-  ;W[bq]
-  ;B[br]
-  ;W[rb]
-  ;B[rh]
-  ;W[rj]
-  ;B[od]
-  ;W[qc]
-  ;B[rd]
-  ;W[pb]
-  ;B[pd]
-  ;W[fk]
-  ;B[hk]
-  ;W[hl]
-  ;B[ik]
-  ;W[bk]
-  ;B[om]
-  ;W[nn]
-  ;B[rn]
-  ;W[qn]
-  ;B[rl]
-  ;W[ql]
-  ;B[qm]
-  ;W[pm]
-  ;B[cf]
-  ;W[bf]
-  ;B[qm]
-  ;W[sm]
-  ;B[sn]
-  ;W[pm]
-  ;B[bg]
-  ;W[bh]
-  ;B[qm]
-  ;W[dj]
-  ;B[sl]
-  ;W[ej]
-  ;B[fj]
-  ;W[ek]
-  ;B[sp]
-  ;W[ee]
-  ;B[fh]
-  ;W[de]
-  ;B[gf]
-  ;W[ar]
-  ;B[cr]
-  ;W[dp]
-  ;B[dq]
-)
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[90]OT[1x60 byo-yomi]
+GN[Sebastian Pawlaczyk 4d (black) vs. Leszek Sołdan 4d (white)]PW[Leszek Sołdan]PB[Sebastian Pawlaczyk]WR[4d]BR[4d]DT[2016-01-08]EV[Polish Championship]RO[3]PC[Warsaw]US[Michał Parkoła]RE[B+Resign]
+(;B[qe])
+(;B[qd]
+;W[dc]
+;B[pq]
+;W[oc]
+;B[cp]
+;W[qo]
+;B[pl]
+;W[np]
+;B[po]
+;W[pp]C[kmr [2d\]: wow, one stone too far to classic Shusaku
+]
+;B[op]
+;W[qp]
+;B[oq]
+;W[oo]
+;B[pn]C[kmr [2d\]: if i remember correctly, black is freat fan of Shusaku, dunno why he didnt Q15 if he had chance ;)
+]
+;W[qq]
+;B[nq]C[LMP1 [-\]: Modern style :P
+kmr [2d\]: just chicken,4dan chicken, but still ;)
+]
+;W[no]
+;B[lq]
+;W[rm]C[kmr [2d\]: S7-R9 and we are back into classic, but i bet white will not S7 lol :)
+]
+;B[lo]
+;W[nm]
+;B[ok]
+;W[nk]
+;B[nj]
+;W[mk]C[LMP1 [-\]: Post lunch sleepiness engulfing your humble commentator.
+LMP1 [-\]: Good thing they're playing fast
+]
+;B[oi]
+;W[mj]
+;B[mi]
+;W[li]
+;B[lh]
+;W[pj]
+;B[oj]
+;W[mh]
+;B[ni]
+;W[ki]
+;B[kh]C[LMP1 [-\]: Black is getting ready to drop da bomb.
+]
+;W[mg]
+;B[kk]
+;W[kj]
+;B[pf]
+;W[md]C[kmr [2d\]: they play very fast, is this recent pro game or what?
+LMP1 [-\]: I wouldn't go that far ;)
+]
+;B[jh]C[kmr [2d\]: imho black is a little bit better, i like his position more
+kmr [2d\]: kurde, strzelają te ruchy jak szachisci blitza na 3 minuty, o co biega?Ile czasu uplynelo od startu rundy?
+]
+;W[jk]C[LMP1 [-\]: Czarny zuzyl 8 min, biały 7
+]
+;B[kd]C[kmr [2d\]: czyli srednio 20 sekund na ruch - niezle :)
+]
+;W[og]
+;B[pg]
+;W[ke]C[YZ1509 [4d\]: Good heavens is Soldan still 4d, he had that rank for over 30 years now
+YZ1509 [4d\]: I remember a night playing 9x9 with him
+]
+;B[je]C[LMP1 [-\]: Not still but again
+LMP1 [-\]: His top grade was 6d
+]
+;W[jf]C[YZ1509 [4d\]: aha, yeah when the years pass upon you, it's hard to remain at the peek of your powers
+kmr [2d\]: its his rating rather rank (his EGF is 2381).His title is 6d ofc.
+]
+;B[kf]
+;W[le]
+;B[if]
+(;W[jg])
+(;W[jd]
+;B[ie]
+;W[id]
+;B[hd]
+;W[hc]C[kmr [2d\]: G17 - No Fear!
+]
+;B[gc]
+;W[ib]
+;B[hb]
+;W[ic]
+;B[gd]C[YZ1509 [4d\]: so they still play taisha in Poland i see
+kmr [2d\]: this taisha was suspicious imho :)
+mrRobot [1k\]: poland is 26 years behind world
+]
+;W[gb]
+;B[fb]
+;W[ha]
+;B[ec]C[gogonuts [4d\]: that was taisha with a full extra tempo for b
+YZ1509 [4d\]: yes with that hasami at q8 it was dubious
+gogonuts [4d\]: but b didn't make much out of that
+]
+;W[ce]
+;B[cc]C[gogonuts [4d\]: m5 took ws next move, but taking ws 2nd next move at n8 instead would have given w little to fight for
+]
+;W[bc]C[kmr [2d\]: black could play R9 after S7 and we would be back to classic
+kmr [2d\]: i think instead O3, black could try P2
+kmr [2d\]: maybe better
+]
+;B[db]C[gogonuts [4d\]: also possible
+]
+;W[ch]C[bert [?\]: c15 was terrible, i fear
+]
+;B[pc]
+;W[ob]
+;B[ep]
+;W[qk]
+;B[pi]C[gogonuts [4d\]: i dont blame c15 su much, because d16 instead would have been so heavy
+gogonuts [4d\]: problem was the greedy capture at g18
+]
+;W[jq]C[YZ1509 [4d\]: b g18 would have been swakward
+kmr [2d\]: yes, it was unexpected - white took one stone for price of weakening D17, not excellent exchange
+gogonuts [4d\]: just answer b g18
+gogonuts [4d\]: but before, w gets a shimari
+]
+;B[hq]
+;W[mp]C[YZ1509 [4d\]: yes, soldan didn't want to play a gote at l17
+YZ1509 [4d\]: deluted mind
+gogonuts [4d\]: deluded or diluted? :-)
+YZ1509 [4d\]: ah is it with a d?
+gogonuts [4d\]: yupp
+YZ1509 [4d\]: so white is still struggling trough the game from that risky taisha
+]
+;B[lr]
+;W[lp]
+;B[kp]C[gogonuts [4d\]: k3 instead of g3 was scandalous
+]
+;W[ko]C[bert [?\]: you don't say
+]
+;B[jo]
+;W[kn]
+;B[jn]C[YZ1509 [4d\]: yes black is obviously a full move ahead
+]
+;W[jp]
+;B[kq]
+;W[jm]C[gogonuts [4d\]: as we saw with the taisha, that doesn't bother w :-)
+]
+;B[im]
+;W[jl]C[YZ1509 [4d\]: yes he still has that huge gyaku yose at move 204 prepared
+bert [?\]: the more moves b makes, the more prisoners there are for w to capture
+]
+;B[hn]C[gogonuts [4d\]: it can be a problem, if you're the lord in your home club
+]
+;W[bp]C[gogonuts [4d\]: you start treating all opponents with disrespect :-)
+YZ1509 [4d\]: ah yes time for the overplay repertoire
+bert [?\]: to my knowledge, leszek is a very nice man
+YZ1509 [4d\]: yes we finish a full bottle of whiskey in our 9x9 night
+]
+;B[cq]C[LMP1 [-\]: *_*
+]
+;W[co]
+;B[cm]C[YZ1509 [4d\]: black knows that this is rubbish
+]
+;W[eo]C[YZ1509 [4d\]: if white links up c5 with k3 yeah maybe it's good
+]
+;B[fp]C[YZ1509 [4d\]: coward
+YZ1509 [4d\]:  e7!
+YZ1509 [4d\]: how old is Sebastian?
+LMP1 [-\]: 20-something
+YZ1509 [4d\]: yes impressed by the triple-aged opponent
+]
+;W[dm]
+;B[dl]C[LMP1 [-\]: There is death in the hane
+YZ1509 [4d\]: now white struggles out again, with black e7 it would have been game over quickly
+]
+;W[em]
+;B[cn]
+;W[do]
+;B[el]
+;W[gm]
+;B[fl]
+;W[gn]
+;B[ho]
+;W[gl]
+;B[cj]
+;W[bn]
+;B[bm]
+;W[gk]C[YZ1509 [4d\]: dôh, such an oldfashioned honte
+]
+;B[ei]
+;W[eh]C[Song [4d\]: aigoo another tournament? 
+YZ1509 [4d\]: white will take the sequence with r2 soon
+YZ1509 [4d\]: Hi there Song, Championship of Poland we are watching
+YZ1509 [4d\]: and the moves are alot harder to predict this time
+Song [4d\]: haha
+Song [4d\]: like always I would imagine
+Song [4d\]: why they play unpredictable ?
+]
+;B[dg]
+;W[cg]
+;B[dh]C[YZ1509 [4d\]: well they have a certain way to avoid the best move
+]
+;W[ci]
+;B[di]
+;W[bj]
+;B[ck]C[Song [4d\]: ah I see
+YZ1509 [4d\]: n3 n2 q2 p2 p1 o2 r2 is huge sente for white
+]
+;W[dd]
+;B[hj]
+;W[il]
+;B[bb]
+;W[cd]
+;B[cb]C[YZ1509 [4d\]: now white has time
+]
+;W[fe]
+;B[df]C[YZ1509 [4d\]: e14 and j11 was miai to that g13 zone
+YZ1509 [4d\]: so white d14 was probably better
+]
+;W[bd]
+;B[ed]C[Song [4d\]: what is f15
+Alaskan [6k\]: isnt it very nice for white to do something on the right side?
+]
+;W[ii]C[Song [4d\]: srry I am back look like I missed
+Song [4d\]: few moves
+Alaskan [6k\]: its big but maybe not sente
+Song [4d\]: mm g10 I think was an option besides f15
+Song [4d\]: for the right side timing needed
+]
+;B[ji]C[Song [4d\]: looks like nice place to annoying right?
+YZ1509 [4d\]: r2 sente or reverse sente from blacks perspective is worth 24 points
+Alaskan [6k\]: b looks ahead no?
+Alaskan [6k\]: 34.5 acc to SE..
+Song [4d\]: mm I would just connect haha
+]
+;W[ln]
+;B[jj]
+;W[lj]C[Song [4d\]: I would say yes b is ahead by 10 points or so
+]
+;B[gj]C[Song [4d\]: it is not clear right now so Ill say even game but better for black
+]
+;W[mq]
+;B[mr]
+;W[pr]C[YZ1509 [4d\]: white is attempting to lure black into the famous gote
+]
+;B[or]
+;W[os]
+;B[nr]C[YZ1509 [4d\]: here it comes ^^
+]
+;W[qr]C[YZ1509 [4d\]: HUGE
+YZ1509 [4d\]: the larch
+]
+;B[jr]
+;W[ri]C[YZ1509 [4d\]: and in the next diagram we'll show ...
+Alaskan [6k\]: Boom S11
+Song [4d\]: this is quite
+Song [4d\]: nice result
+Alaskan [6k\]: I would have played this in the opening
+YZ1509 [4d\]: the larch
+YZ1509 [4d\]: any bets on white taking r18 too
+YZ1509 [4d\]: black is fully schwindled
+Alaskan [6k\]: White is a con-man?
+YZ1509 [4d\]: with w f10 later black will experience g10 to be his gamelosing move 
+]
+;B[qh]
+;W[qb]
+;B[rc]C[YZ1509 [4d\]: i won my bet
+LMP1 [-\]: #yose
+Alaskan [6k\]: Boom, on to R18
+Alaskan [6k\]: W bringing it back
+Song [4d\]: I was wondering if p16 was something for b but I am not sure
+]
+;W[bq]
+;B[br]C[YZ1509 [4d\]: yes black was forced into answering-mode when he showed f4 cowardice, and at that moment the experience of Soldan smelled his chance
+Song [4d\]: b techincally ahead but
+Song [4d\]: white end game seems more promising
+YZ1509 [4d\]: yes with the speed white caught up in the last moves, this game ain't over
+]
+;W[rb]
+;B[rh]C[YZ1509 [4d\]: hmm s12 felt bigger than s18
+]
+;W[rj]
+;B[od]C[Song [4d\]: honestly instead of f10 I think I would have gone s10
+]
+;W[qc]C[Song [4d\]: g10
+]
+;B[rd]C[Song [4d\]: i meant
+]
+;W[pb]
+;B[pd]C[YZ1509 [4d\]: yes f10 and j10 for white
+]
+;W[fk]C[SadPlayer [-\]: f15 to jakaś tragedia była,
+Song [4d\]: mm yea instead of g10 by black I would have just s10
+YZ1509 [4d\]: f9 is now best answered at f10 to kill j11 stone
+]
+;B[hk]
+;W[hl]
+;B[ik]
+;W[bk]
+;B[om]C[Song [4d\]: j9?
+]
+;W[nn]C[YZ1509 [4d\]: yes j9 is meant to help white getting kodate
+Song [4d\]: mm guess is just little thing.. no I was thinking c14 first
+Song [4d\]: but is fine I guess
+YZ1509 [4d\]: b should take a6 before white watri
+]
+(;B[rl])
+(;B[rn]
+;W[qn]
+;B[rl]
+;W[ql]
+;B[qm]
+;W[pm]
+;B[cf]C[Song [4d\]: lol I was going
+]
+;W[bf]
+;B[qm]C[Song [4d\]: to say he might be saving up for ko wherever it may be since I don't see one now
+Song [4d\]: and of course a ko happens
+]
+;W[sm]C[YZ1509 [4d\]: yes black has 2 more at b12 region
+]
+;B[sn]
+;W[pm]
+;B[bg]
+;W[bh]
+;B[qm]C[YZ1509 [4d\]: a6 is his third but then he is run out of suitable ones
+YZ1509 [4d\]: which ones does white have?
+YZ1509 [4d\]: afterall it must be a huge one
+]
+;W[dj]C[YZ1509 [4d\]: probably to small a threat
+]
+;B[sl]
+;W[ej]
+;B[fj]
+;W[ek]C[YZ1509 [4d\]: yes black saw it s2 dies
+Song [4d\]: aigoo
+LMP1 [-\]: There is death in the ko
+]
+;B[sp]
+;W[ee]
+;B[fh]
+;W[de]
+;B[gf]
+;W[ar]
+;B[cr]C[YZ1509 [4d\]: ok, nice messy game
+]
+;W[dp]
+;B[dq]C[Song [4d\]: not sure if b needed ko for the win but it secured victory I would say
+YZ1509 [4d\]: yes if white would have played d14 himself, black would probably have a harder time finding the kodate
+Song [4d\]: seems like
+Song [4d\]: b will win by 25-30 points? something like that amount
+LMP1 [-\]: White resigned
+Song [4d\]: mm after losing ko
+Song [4d\]: w should have resigned there is no way to come back from the loss
+Song [4d\]: it's too big I mean that's nosense 
+LMP1 [-\]: White is know for tanacious fighting to the last stone
+YZ1509 [4d\]: thx for the relay Michal
+Song [4d\]: I will be watching
+Song [4d\]: the 1kyu vs 5d now
+Song [4d\]: ty for the game lmp1
+LMP1 [-\]: My pleasure!
+]))))

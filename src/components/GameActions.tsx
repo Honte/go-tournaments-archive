@@ -5,12 +5,13 @@ import { ExternalButton } from '@/components/ui/ExternalButton';
 import { GameViewerButton } from '@/components/viewer/GameViewerTrigger';
 
 type GameActionProps = {
+  t: Translator;
   props: GameProps;
   showViewer?: boolean;
-  t: Translator;
+  showOriginal?: boolean;
 };
 
-export function GameActions({ props, showViewer, t }: GameActionProps) {
+export function GameActions({ t, props, showViewer, showOriginal = false }: GameActionProps) {
   return (
     <div className="flex gap-2 mt-1">
       {showViewer && props.sgf && <GameViewerButton sgfPath={props.sgf}>{t('game.open')}</GameViewerButton>}
@@ -18,6 +19,11 @@ export function GameActions({ props, showViewer, t }: GameActionProps) {
       {props.sgf && (
         <ExternalButton url={Endpoints.GAME_SGF(props.sgf)} title={t('game.sgf')}>
           SGF
+        </ExternalButton>
+      )}
+      {props.sgf && showOriginal && (
+        <ExternalButton url={Endpoints.GAME_RAW_SGF(props.sgf)} title={t('game.rawSgf')}>
+          {t('game.raw')}
         </ExternalButton>
       )}
       {props.ogs && (

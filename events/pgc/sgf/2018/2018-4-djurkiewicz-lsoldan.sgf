@@ -1,382 +1,599 @@
-(
-  ;BR[2d]CA[UTF-8]EV[Polish Go Championship 2018]FF[4]GM[1]GN[Round 4 - Board 4]KM[6.5]PB[Dawid Jurkiewicz]PC[Poznań]PW[Leszek Sołdan]RE[B+3.5]RU[japanese]SZ[19]WR[4d]
-  ;B[pp]
-  ;W[dd]
-  ;B[dq]
-  ;W[pd]
-  ;B[dn]
-  ;W[qq]
-  ;B[qp]
-  ;W[pq]
-  ;B[op]
-  ;W[nr]
-  ;B[nc]
-  ;W[qf]
-  ;B[pc]
-  ;W[qc]
-  ;B[qb]
-  ;W[oc]
-  ;B[pb]
-  ;W[ob]
-  ;B[od]
-  ;W[nb]
-  ;B[qd]
-  ;W[pe]
-  ;B[rc]
-  ;W[mc]
-  ;B[cf]
-  ;W[fc]
-  ;B[rq]
-  ;W[rr]
-  ;B[or]
-  ;W[oq]
-  ;B[nq]
-  ;W[np]
-  ;B[mq]
-  ;W[rp]
-  ;B[qr]
-  ;W[sq]
-  ;B[pr]
-  ;W[rq]
-  ;B[mr]
-  ;W[qn]
-  ;B[nn]
-  ;W[re]
-  ;B[rd]
-  ;W[di]
-  ;B[ck]
-  ;W[ce]
-  ;B[df]
-  ;W[ch]
-  ;B[gf]
-  ;W[ff]
-  ;B[ed]
-  ;W[ee]
-  ;B[de]
-  ;W[fd]
-  ;B[cd]
-  ;W[ec]
-  ;B[cc]
-  ;W[fh]
-  ;B[gh]
-  ;W[fi]
-  ;B[gi]
-  ;W[gj]
-  ;B[ii]
-  ;W[hj]
-  ;B[jg]
-  ;W[ij]
-  ;B[ji]
-  ;W[jj]
-  ;B[ki]
-  ;W[pk]
-  ;B[ip]
-  ;W[gq]
-  ;B[ep]
-  ;W[go]
-  ;B[ek]
-  ;W[cn]
-  ;B[cm]
-  ;W[jd]
-  ;B[hq]
-  ;W[do]
-  ;B[co]
-  ;W[bn]
-  ;B[bo]
-  ;W[dm]
-  ;B[en]
-  ;W[cl]
-  ;B[dl]
-  ;W[bm]
-  ;B[em]
-  ;W[bk]
-  ;B[cj]
-  ;W[bj]
-  ;B[hn]
-  ;W[jn]
-  ;B[im]
-  ;W[jm]
-  ;B[pn]
-  ;W[qm]
-  ;B[lk]
-  ;W[fl]
-  ;B[gn]
-  ;W[il]
-  ;B[cm]
-  ;W[kj]
-  ;B[lj]
-  ;W[li]
-  ;B[lg]
-  ;W[mi]
-  ;B[nj]
-  ;W[ni]
-  ;B[oj]
-  ;W[kf]
-  ;B[kg]
-  ;W[ng]
-  ;B[ie]
-  ;W[fj]
-  ;B[id]
-  ;W[jc]
-  ;B[fg]
-  ;W[eg]
-  ;B[gg]
-  ;W[nl]
-  ;B[ol]
-  ;W[ok]
-  ;B[nk]
-  ;W[mm]
-  ;B[ml]
-  ;W[nm]
-  ;B[lm]
-  ;W[om]
-  ;B[ln]
-  ;W[ef]
-  ;B[pj]
-  ;W[pl]
-  ;B[ic]
-  ;W[dm]
-  ;B[qj]
-  ;W[ko]
-  ;B[lo]
-  ;W[jq]
-  ;B[gr]
-  ;W[el]
-  ;B[cm]
-  ;W[bg]
-  ;B[bf]
-  ;W[dm]
-  ;B[kl]
-  ;W[in]
-  ;B[cm]
-  ;W[mj]
-  ;B[mk]
-  ;W[dm]
-  ;B[hm]
-  ;W[jl]
-  ;B[cm]
-  ;W[db]
-  ;B[cb]
-  ;W[dm]
-  ;B[nf]
-  ;W[mf]
-  ;B[cm]
-  ;W[ca]
-  ;B[ba]
-  ;W[dm]
-  ;B[mg]
-  ;W[og]
-  ;B[cm]
-  ;W[da]
-  ;B[bl]
-  ;W[bb]
-  ;B[bc]
-  ;W[aa]
-  ;B[be]
-  ;W[al]
-  ;B[cl]
-  ;W[lf]
-  ;B[nh]
-  ;W[oh]
-  ;B[oi]
-  ;W[mh]
-  ;B[lh]
-  ;W[nh]
-  ;B[bi]
-  ;W[jf]
-  ;B[if]
-  ;W[ib]
-  ;B[je]
-  ;W[kb]
-  ;B[of]
-  ;W[pf]
-  ;B[ph]
-  ;W[pg]
-  ;B[me]
-  ;W[ne]
-  ;B[ke]
-  ;W[oe]
-  ;B[le]
-  ;W[rk]
-  ;B[jp]
-  ;W[kp]
-  ;B[kq]
-  ;W[lq]
-  ;B[kr]
-  ;W[lp]
-  ;B[mp]
-  ;W[lr]
-  ;B[no]
-  ;W[jr]
-  ;B[hb]
-  ;W[gb]
-  ;B[hc]
-  ;W[ci]
-  ;B[aj]
-  ;W[rj]
-  ;B[rh]
-  ;W[ri]
-  ;B[qh]
-  ;W[qi]
-  ;B[pi]
-  ;W[nf]
-  ;B[ia]
-  ;W[ja]
-  ;B[jb]
-  ;W[cp]
-  ;B[bp]
-  ;W[ib]
-  ;B[qo]
-  ;W[ro]
-  ;B[jb]
-  ;W[mn]
-  ;B[mo]
-  ;W[ib]
-  ;B[md]
-  ;W[nd]
-  ;B[jb]
-  ;W[bq]
-  ;B[an]
-  ;W[ib]
-  ;B[lc]
-  ;W[lb]
-  ;B[jb]
-  ;W[on]
-  ;B[oo]
-  ;W[ib]
-  ;B[bh]
-  ;W[ah]
-  ;B[ak]
-  ;W[cg]
-  ;B[jb]
-  ;W[fr]
-  ;B[gp]
-  ;W[ib]
-  ;B[ha]
-  ;W[qs]
-  ;B[jb]
-  ;W[hr]
-  ;B[gs]
-  ;W[ps]
-  ;B[ns]
-  ;W[fq]
-  ;B[ir]
-  ;W[ms]
-  ;B[ls]
-  ;W[ks]
-  ;B[rg]
-  ;W[fp]
-  ;B[ho]
-  ;W[iq]
-  ;B[fo]
-  ;W[hp]
-  ;B[kc]
-  ;W[dr]
-  ;B[hq]
-  ;W[is]
-  ;B[er]
-  ;W[fs]
-  ;B[eq]
-  ;W[hs]
-  ;B[ka]
-  ;W[es]
-  ;B[cr]
-  ;W[cs]
-  ;B[bs]
-  ;W[ds]
-  ;B[cq]
-  ;W[br]
-  ;B[ar]
-  ;W[rf]
-  ;B[ms]
-  ;W[as]
-  ;B[la]
-  ;W[mb]
-  ;B[bs]
-  ;W[rs]
-  ;B[os]
-  ;W[as]
-  ;B[fk]
-  ;W[gl]
-  ;B[bs]
-  ;W[bj]
-  ;B[bk]
-  ;W[as]
-  ;B[gk]
-  ;W[hl]
-  ;B[bs]
-  ;W[dj]
-  ;B[dk]
-  ;W[as]
-  ;B[qk]
-  ;W[aq]
-  ;B[rl]
-  ;W[ql]
-  ;B[si]
-  ;W[rm]
-  ;B[hp]
-  ;W[ap]
-  ;B[am]
-  ;W[hi]
-  ;B[hh]
-  ;W[ma]
-  ;B[ja]
-  ;W[ge]
-  ;B[ga]
-  ;W[ih]
-  ;B[ig]
-  ;W[hf]
-  ;B[hg]
-  ;W[he]
-  ;B[fa]
-  ;W[dc]
-  ;B[dg]
-  ;W[fm]
-  ;B[fn]
-  ;W[af]
-  ;B[ae]
-  ;W[ag]
-  ;B[ai]
-  ;W[sl]
-  ;B[oa]
-  ;W[sj]
-  ;B[sh]
-  ;W[gd]
-  ;B[ej]
-  ;W[ei]
-  ;B[kk]
-  ;W[ac]
-  ;B[ad]
-  ;W[km]
-  ;B[dh]
-  ;W[ba]
-  ;B[po]
-  ;W[pm]
-  ;B[ab]
-  ;W[fb]
-  ;B[ea]
-  ;W[ac]
-  ;B[sd]
-  ;W[ab]
-  ;B[rb]
-  ;W[jk]
-  ;B[hk]
-  ;W[eh]
-  ;B[ll]
-  ;W[kn]
-  ;B[ik]
-  ;W[jo]
-  ;B[io]
-  ;W[gc]
-  ;B[gm]
-  ;W[eb]
-  ;B[pa]
-  ;W[na]
-  ;B[se]
-  ;W[sf]
-  ;B[hd]
-  ;W[qe]
-  ;B[qg]
-  ;W[sg]
-  ;B[ao]
-)
+(;FF[4]
+GM[1]
+PC[OGS: http://online-go.com/game/review/352949]
+BR[2d]
+WR[4d]
+CP[online-go.com]
+TM[0]OT[0 none]
+RE[?]
+SZ[19]
+KM[6.5]
+RU[japanese]
+
+;B[pp]
+;W[dd]
+;B[dq]
+;W[pd]
+;B[dn]
+;W[qq]
+;B[qp]
+;W[pq]
+;B[op]
+;W[nr]
+;B[nc]
+;W[qf]
+;B[pc]
+;W[qc]
+;B[qb]
+;W[oc]
+;B[pb]
+;W[ob]
+;B[od]
+;W[nb]
+;B[qd]
+;W[pe]
+;B[rc]
+;W[mc]
+;B[cf]C[
+
+-- chat --
+LMP2018-4: Results and schedule http://mp.go.art.pl/2018/en/results
+
+]
+
+;W[fc]
+;B[rq]
+;W[rr]
+;B[or]
+;W[oq]
+;B[nq]
+;W[np]
+;B[mq]
+;W[rp]
+;B[qr]
+;W[sq]
+;B[pr]
+;W[rq]
+;B[mr]
+;W[qn]
+;B[nn]
+;W[re]
+;B[rd]
+;W[di]
+;B[ck]
+;W[ce]
+;B[df]
+;W[ch]
+;B[gf]
+;W[ff]
+;B[ed]
+;W[ee]
+;B[de]
+;W[fd]
+;B[cd]
+;W[ec]C[
+
+-- chat --
+dead_robot: czarny będzie musiał robić głeboki desant za jakiś czas..
+dead_robot: chociaż nie, za późno
+
+]
+
+;B[cc]
+;W[fh]
+;B[gh]
+;W[fi]
+;B[gi]
+;W[gj]
+;B[ii]
+;W[hj]
+;B[jg]
+;W[ij]
+;B[ji]
+;W[jj]C[
+
+-- chat --
+LMP2018-4: Time left: Black: 39m, White: 1h 9 m
+
+]
+
+;B[ki]
+;W[pk]
+;B[ip]
+;W[gq]
+;B[ep]
+;W[go]
+;B[ek]
+;W[cn]
+;B[cm]
+;W[jd]
+;B[hq]
+;W[do]
+;B[co]
+;W[bn]
+;B[bo]
+;W[dm]
+;B[en]
+;W[cl]
+;B[dl]
+;W[bm]
+;B[em]
+;W[bk]
+;B[cj]
+;W[bj]C[
+
+-- chat --
+LMP2018-4: Time left: Black: 5m, White: 54 m
+
+]
+
+;B[hn]
+;W[jn]
+;B[im]
+;W[jm]
+;B[pn]
+;W[qm]
+;B[lk]
+;W[fl]
+;B[gn]
+;W[il]
+;B[cm]
+;W[kj]
+;B[lj]
+;W[li]
+;B[lg]
+;W[mi]
+;B[nj]
+;W[ni]
+;B[oj]
+;W[kf]
+;B[kg]
+;W[ng]
+;B[ie]
+;W[fj]
+;B[id]
+;W[jc]
+;B[fg]
+;W[eg]
+;B[gg]
+;W[nl]
+;B[ol]
+;W[ok]
+;B[nk]
+;W[mm]
+;B[ml]
+;W[nm]
+;B[lm]
+;W[om]
+;B[ln]
+;W[ef]
+;B[pj]
+;W[pl]
+;B[ic]
+;W[dm]
+;B[qj]
+;W[ko]
+;B[lo]
+;W[jq]
+;B[gr]
+;W[el]
+;B[cm]
+;W[bg]
+;B[bf]
+;W[dm]
+;B[kl]
+;W[in]
+;B[cm]
+;W[mj]
+;B[mk]
+;W[dm]
+;B[hm]
+;W[jl]
+;B[cm]
+;W[db]
+;B[cb]
+;W[dm]C[
+
+-- chat --
+LMP2018-4: Black in byo for some time now
+LMP2018-4: White 34 min
+
+]
+
+;B[nf]
+;W[mf]
+;B[cm]
+;W[ca]
+;B[ba]
+;W[dm]
+;B[mg]
+;W[og]
+;B[cm]
+;W[da]
+;B[bl]
+;W[bb]
+;B[bc]
+;W[aa]
+;B[be]
+;W[al]
+;B[cl]
+;W[lf]
+;B[nh]
+;W[oh]
+;B[oi]
+;W[mh]
+;B[lh]
+;W[nh]
+;B[bi]
+;W[jf]
+;B[if]
+;W[ib]
+;B[je]
+;W[kb]
+;B[of]
+;W[pf]
+;B[ph]
+;W[pg]
+;B[me]
+;W[ne]
+;B[ke]
+;W[oe]
+;B[le]
+;W[rk]
+;B[jp]
+;W[kp]
+;B[kq]
+;W[lq]
+;B[kr]
+;W[lp]
+;B[mp]
+;W[lr]
+;B[no]
+;W[jr]
+;B[hb]
+;W[gb]
+;B[hc]
+;W[ci]
+;B[aj]
+;W[rj]
+(;B[ri]
+)(;B[rh]
+;W[ri]
+;B[qh]
+;W[qi]
+;B[pi]
+;W[nf]
+;B[ia]
+;W[ja]
+;B[jb]
+;W[cp]
+;B[bp]
+;W[ib]
+;B[qo]
+;W[ro]
+;B[jb]
+;W[mn]
+;B[mo]
+;W[ib]
+;B[md]
+;W[nd]
+;B[jb]
+;W[bq]
+;B[an]
+;W[ib]
+;B[lc]
+;W[lb]
+;B[jb]
+;W[on]
+;B[oo]
+;W[ib]
+;B[bh]
+;W[ah]
+;B[ak]
+;W[cg]
+;B[jb]
+;W[fr]
+;B[gp]
+;W[ib]
+;B[ha]
+;W[qs]
+;B[jb]
+;W[hr]
+;B[gs]
+;W[ps]
+;B[ns]
+;W[fq]C[
+
+-- chat --
+Sadiker: g1 pewnie ruch przegrywajacy
+
+]
+
+;B[ir]
+;W[ms]
+;B[ls]
+;W[ks]
+;B[rg]
+;W[fp]
+;B[ho]
+;W[iq]
+;B[fo]
+;W[hp]C[
+
+-- chat --
+dead_robot: o nie
+dead_robot: jak do tego doszo?
+Sadiker: zmaścił strasznie
+
+]
+
+;B[kc]
+;W[dr]C[
+
+-- chat --
+dead_robot: aż oczy łzawią
+
+]
+
+;B[hq]
+;W[is]
+;B[er]
+;W[fs]
+;B[eq]
+;W[hs]
+;B[ka]
+;W[es]
+;B[cr]
+;W[cs]
+;B[bs]
+;W[ds]C[
+
+-- chat --
+infra: 206 k2 i miałby spokój, nie?
+
+]
+
+;B[cq]
+;W[br]
+;B[ar]
+;W[rf]
+;B[ms]
+;W[as]
+;B[la]
+;W[mb]C[
+
+-- chat --
+infra: 207 znaczy
+dead_robot: w ogóle miał kilka okazji by tam to naprawić
+
+]
+
+;B[bs]
+;W[rs]
+;B[os]
+;W[as]
+;B[fk]
+;W[gl]
+;B[bs]C[
+
+-- chat --
+infra: ale dobra gra środkowa, szacun
+
+]
+
+;W[bj]
+;B[bk]
+;W[as]
+;B[gk]
+;W[hl]
+;B[bs]
+;W[dj]C[
+
+-- chat --
+dead_robot: może skopał z powodu czasu
+dead_robot: tak to jest, jak się implementuje czas do takiej gry...
+dead_robot: ...jak go
+
+]
+
+;B[dk]
+;W[as]C[
+
+-- chat --
+Sadiker: ko o gre?
+
+]
+
+;B[qk]
+;W[aq]C[
+
+-- chat --
+LMP2018-4: G17 nie było dobrą groźbą?
+
+]
+
+;B[rl]
+;W[ql]
+;B[si]
+;W[rm]C[
+
+-- chat --
+infra: przy 92. ruchu czarnemu zostało 5 min, a białemu 54.
+
+]
+
+;B[hp]
+;W[ap]
+;B[am]
+;W[hi]
+;B[hh]
+;W[ma]
+;B[ja]
+;W[ge]
+;B[ga]C[
+
+-- chat --
+Sadiker: tak na oko to chyba jednak cz wygrywa
+
+]
+
+;W[ih]
+;B[ig]
+;W[hf]
+;B[hg]
+;W[he]
+;B[fa]
+;W[dc]
+;B[dg]C[
+
+-- chat --
+dead_robot: o parę
+
+]
+
+;W[fm]
+;B[fn]C[
+
+-- chat --
+dead_robot: ale i tak zegary powinno się wycofać...
+
+]
+
+;W[af]C[
+
+-- chat --
+infra: wtedy by grali o mistrzostwo eonu
+dead_robot: wcale nie
+
+]
+
+;B[ae]
+;W[ag]C[
+
+-- chat --
+Sadiker: to by mistrzostwa i miesiac mogły trwac
+
+]
+
+;B[ai]C[
+
+-- chat --
+dead_robot: mogłyby mieć inną formułę i tyle
+Sadiker: ew grajcie ile chcecie ale jak nie skonczycie nie ma obiadu
+dead_robot: ...i przyupominam, o 19 gasimy światło
+infra: to gorsze niż zegary
+Sadiker: Biały ma pewnie nadzieje że S18 zacznie w którymś momencie działać
+dead_robot: święty Shusaku jakoś potrafił grać grę pałacową jednego dnia
+dead_robot: więc nie wiem o co chodzi
+Sadiker: albo w dwa
+
+]
+
+;W[sl]
+;B[oa]
+;W[sj]
+;B[sh]C[
+
+-- chat --
+LMP2018-4: Białemu zaczęło się byo
+dead_robot: to były czasy, świeczki, czerwieniejące uszy, brak komi, nikt nie bluźnił grająć hoshi na start...
+Sadiker: np vs Sakaguchi Sentoku z 1849 trwała 2 dni
+dead_robot: tym lepiej
+Sadiker: i botów nie było
+infra: gra w Meijinie trwała nieco dłużej
+dead_robot: w sumie to dzisiaj chyba w Japonii też są rozgrywane dwudniowe gry 
+
+]
+
+;W[gd]C[
+
+-- chat --
+dead_robot: czy już nie ma takich turniejów?
+
+]
+
+;B[ej]
+;W[ei]C[
+
+-- chat --
+dead_robot: chyba są, jak ostatnio zerkałem na gry jakiegoś japońskiego wymiatacza to były dwudniowe
+
+]
+
+;B[kk]
+;W[ac]
+;B[ad]
+;W[km]
+;B[dh]
+;W[ba]
+;B[po]
+;W[pm]
+;B[ab]
+;W[fb]C[
+
+-- chat --
+infra: t16
+
+]
+
+;B[ea]
+;W[ac]C[
+
+-- chat --
+dead_robot: czy to aby nie ko o grę?
+karolkac04: t16 to nie jest punkt pozniej i tak trzeba dograc
+infra: czarny i tak ma marginalną przewagę
+
+]
+
+;B[sd]
+;W[ab]
+;B[rb]
+;W[jk]
+;B[hk]
+;W[eh]
+;B[ll]
+;W[kn]
+;B[ik]
+;W[jo]C[
+
+-- chat --
+dead_robot: my o tym wiemy, ale on raczej nie
+
+]
+
+;B[io]
+;W[gc]
+;B[gm]
+;W[eb]
+;B[pa]
+;W[na]
+;B[se]
+;W[sf]
+;B[hd]C[
+
+-- chat --
+dead_robot: dla niego wynik będzie prawdopodobnie objawieniem
+
+]
+
+;W[qe]
+;B[qg]
+;W[sg]C[
+
+-- chat --
+karolkac04: gwarantuje ze znaja wynik
+
+]
+
+;B[ao]C[
+
+-- chat --
+dead_robot: przy tylu trupach?
+dead_robot: i w byo od godizny?
+dead_robot: zwłaszcza po takich siurpryzach jakie tu miały miejsce
+LMP2018-4: B+3,5
+
+]
+
+))

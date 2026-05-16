@@ -1,360 +1,1058 @@
-(
-  ;BR[7d]CA[UTF-8]DT[2014-12-14]EV[Polish Go Championship 2014]FF[4]GM[1]GN[Round 7 - Board 2]KM[6.50]PB[Mateusz Surma]PC[Warszawa]PW[Stanisław Frejlak]RE[B+5.5]RO[7]RU[japanese]ST[2]SZ[19]WR[4d]
-  ;B[qd]
-  ;W[dp]
-  ;B[dd]
-  ;W[pp]
-  ;B[lc]
-  ;W[qn]
-  ;B[fq]
-  ;W[co]
-  ;B[dr]
-  ;W[cf]
-  ;B[fd]
-  ;W[dj]
-  ;B[cq]
-  ;W[fo]
-  ;B[pj]
-  ;W[gq]
-  ;B[gr]
-  ;W[fr]
-  ;B[hq]
-  ;W[eq]
-  ;B[gp]
-  ;W[fp]
-  ;B[er]
-  ;W[gq]
-  ;B[bo]
-  ;W[bn]
-  ;B[fq]
-  ;W[qh]
-  ;B[gq]
-  ;W[oh]
-  ;B[od]
-  ;W[oq]
-  ;B[nj]
-  ;W[mh]
-  ;B[lj]
-  ;W[hc]
-  ;B[kh]
-  ;W[rj]
-  ;B[di]
-  ;W[ci]
-  ;B[ch]
-  ;W[dh]
-  ;B[ei]
-  ;W[ej]
-  ;B[cj]
-  ;W[bi]
-  ;B[fj]
-  ;W[ck]
-  ;B[bh]
-  ;W[bj]
-  ;B[dg]
-  ;W[eh]
-  ;B[fi]
-  ;W[fh]
-  ;B[cg]
-  ;W[gh]
-  ;B[hj]
-  ;W[hi]
-  ;B[gk]
-  ;W[ji]
-  ;B[jk]
-  ;W[ki]
-  ;B[mq]
-  ;W[mo]
-  ;B[mm]
-  ;W[ko]
-  ;B[kq]
-  ;W[cd]
-  ;B[de]
-  ;W[bf]
-  ;B[df]
-  ;W[cc]
-  ;B[db]
-  ;W[cb]
-  ;B[he]
-  ;W[ie]
-  ;B[id]
-  ;W[hd]
-  ;B[if]
-  ;W[je]
-  ;B[hf]
-  ;W[jd]
-  ;B[ih]
-  ;W[ik]
-  ;B[ii]
-  ;W[ij]
-  ;B[gl]
-  ;W[il]
-  ;B[jm]
-  ;W[im]
-  ;B[jn]
-  ;W[gm]
-  ;B[fl]
-  ;W[nc]
-  ;B[oc]
-  ;W[nd]
-  ;B[ne]
-  ;W[md]
-  ;B[ld]
-  ;W[me]
-  ;B[le]
-  ;W[mf]
-  ;B[kf]
-  ;W[gb]
-  ;B[jb]
-  ;W[kb]
-  ;B[kc]
-  ;W[nb]
-  ;B[ob]
-  ;W[jc]
-  ;B[ea]
-  ;W[fb]
-  ;B[eb]
-  ;W[ca]
-  ;B[lb]
-  ;W[ib]
-  ;B[bp]
-  ;W[re]
-  ;B[rd]
-  ;W[jh]
-  ;B[jg]
-  ;W[jo]
-  ;B[pm]
-  ;W[qm]
-  ;B[qk]
-  ;W[pl]
-  ;B[ol]
-  ;W[om]
-  ;B[ok]
-  ;W[nm]
-  ;B[rk]
-  ;W[ml]
-  ;B[li]
-  ;W[lh]
-  ;B[kg]
-  ;W[mi]
-  ;B[ll]
-  ;W[jj]
-  ;B[ri]
-  ;W[qi]
-  ;B[qj]
-  ;W[rh]
-  ;B[sj]
-  ;W[oe]
-  ;B[rm]
-  ;W[rn]
-  ;B[pf]
-  ;W[of]
-  ;B[pg]
-  ;W[pe]
-  ;B[qe]
-  ;W[pd]
-  ;B[qc]
-  ;W[ni]
-  ;B[rf]
-  ;W[og]
-  ;B[mk]
-  ;W[nl]
-  ;B[ln]
-  ;W[lo]
-  ;B[fm]
-  ;W[kk]
-  ;B[lk]
-  ;W[io]
-  ;B[cn]
-  ;W[sh]
-  ;B[jl]
-  ;W[kj]
-  ;B[in]
-  ;W[hn]
-  ;B[ho]
-  ;W[go]
-  ;B[hp]
-  ;W[dn]
-  ;B[cm]
-  ;W[dm]
-  ;B[bm]
-  ;W[cl]
-  ;B[sm]
-  ;W[bl]
-  ;B[nr]
-  ;W[am]
-  ;B[pr]
-  ;W[or]
-  ;B[os]
-  ;W[qr]
-  ;B[rr]
-  ;W[pq]
-  ;B[qs]
-  ;W[ps]
-  ;B[lg]
-  ;W[mg]
-  ;B[pr]
-  ;W[hh]
-  ;B[ig]
-  ;W[ps]
-  ;B[ng]
-  ;W[nf]
-  ;B[pr]
-  ;W[ql]
-  ;B[rl]
-  ;W[ps]
-  ;B[ce]
-  ;W[be]
-  ;B[pr]
-  ;W[si]
-  ;B[qq]
-  ;W[mn]
-  ;B[sn]
-  ;W[rp]
-  ;B[ro]
-  ;W[qp]
-  ;B[sp]
-  ;W[sq]
-  ;B[rq]
-  ;W[so]
-  ;B[lm]
-  ;W[hm]
-  ;B[sp]
-  ;W[gj]
-  ;B[gi]
-  ;W[so]
-  ;B[kl]
-  ;W[kn]
-  ;B[sp]
-  ;W[nk]
-  ;B[mj]
-  ;W[so]
-  ;B[pn]
-  ;W[on]
-  ;B[sp]
-  ;W[oi]
-  ;B[oj]
-  ;W[so]
-  ;B[pi]
-  ;W[ph]
-  ;B[sp]
-  ;W[fk]
-  ;B[gj]
-  ;W[so]
-  ;B[fn]
-  ;W[gn]
-  ;B[sp]
-  ;W[ff]
-  ;B[so]
-  ;W[fg]
-  ;B[fe]
-  ;W[en]
-  ;B[ka]
-  ;W[po]
-  ;B[fa]
-  ;W[gd]
-  ;B[fc]
-  ;W[dc]
-  ;B[ec]
-  ;W[ia]
-  ;B[ga]
-  ;W[ha]
-  ;B[gc]
-  ;W[ge]
-  ;B[gf]
-  ;W[em]
-  ;B[ja]
-  ;W[ma]
-  ;B[la]
-  ;W[mb]
-  ;B[ke]
-  ;W[lf]
-  ;B[hb]
-  ;W[gb]
-  ;B[fb]
-  ;W[ic]
-  ;B[hb]
-  ;W[nq]
-  ;B[lr]
-  ;W[gb]
-  ;B[ek]
-  ;W[el]
-  ;B[hb]
-  ;W[pc]
-  ;B[pb]
-  ;W[gb]
-  ;B[dk]
-  ;W[cj]
-  ;B[hb]
-  ;W[qb]
-  ;B[rb]
-  ;W[gb]
-  ;B[kd]
-  ;W[mc]
-  ;B[hb]
-  ;W[ns]
-  ;B[ms]
-  ;W[gb]
-  ;B[bd]
-  ;W[hl]
-  ;B[hb]
-  ;W[qf]
-  ;B[qg]
-  ;W[gb]
-  ;B[ef]
-  ;W[hk]
-  ;B[hb]
-  ;W[rg]
-  ;B[qf]
-  ;W[gb]
-  ;B[jf]
-  ;W[fk]
-  ;B[hb]
-  ;W[qa]
-  ;B[ra]
-  ;W[gb]
-  ;B[bc]
-  ;W[bb]
-  ;B[hb]
-  ;W[rj]
-  ;B[id]
-  ;W[jq]
-  ;B[jr]
-  ;W[iq]
-  ;B[ir]
-  ;W[sk]
-  ;B[mp]
-  ;W[np]
-  ;B[dq]
-  ;W[ep]
-  ;B[bg]
-  ;W[ac]
-  ;B[af]
-  ;W[ad]
-  ;B[lp]
-  ;W[sf]
-  ;B[se]
-  ;W[ao]
-  ;B[cp]
-  ;W[ap]
-  ;B[aq]
-  ;W[an]
-  ;B[ai]
-  ;W[aj]
-  ;B[ah]
-  ;W[ip]
-  ;B[kp]
-  ;W[ae]
-  ;B[ag]
-  ;W[sg]
-  ;B[sr]
-  ;W[oa]
-  ;B[pa]
-  ;W[qb]
-  ;B[na]
-  ;W[hr]
-  ;B[fs]
-  ;W[oa]
-  ;B[qa]
-  ;W[sj]
-  ;B[sq]
-)
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[5400]OT[1x60 byo-yomi]
+GN[Polish Championship League2014, round 7, board 2]PW[Stanisław Frejlak]PB[Mateusz Surma]WR[4d]BR[7d]DT[2014-12-14]EV[Polish Championship League2014]RO[7]C[Lesmian [2d\]: tutaj deska, na której nareszcie ktoś pokona Mateusza
+]RE[B+5.50]
+;B[qd]C[urtok [11k\]: watpie :)
+]
+;W[dp]C[Lesmian [2d\]: no to patrz na to
+Lesmian [2d\]: co się tu będzie działo
+]
+;B[dd]
+;W[pp]
+;B[lc]C[urtok [11k\]: :)
+urtok [11k\]: Staszek pewnie bardzo bedzie chciał wygrać z Mateuszem jak na kongresie w zeszłym roku
+]
+;W[qn]
+;B[fq]C[Lesmian [2d\]: a nie poszlo mu ostatnio?
+Warfreak2 [4d\]: super surma
+]
+;W[co]C[LMP2 [-\]: obaj zawodnicy usmiechnieci od ucha do ucha :)
+Lesmian [2d\]: dobry ruch to musi byc
+Lesmian [2d\]: musze go zaadoptowac
+LMP2 [-\]: ale dziala chyba dopiero od 4d...
+liquid [1k\]: really c5 ?
+liquid [1k\]: really?
+Warfreak2 [4d\]: siasio works in mysterious ways
+LMP2 [-\]: yes, c5 on board
+]
+;B[dr]C[Warfreak2 [4d\]: c8 now?
+Warfreak2 [4d\]: or h3
+Warfreak2 [4d\]: perhaps g3!
+kamil [2d?\]: b2
+Warfreak2 [4d\]: b2 seems fishy
+kamil [2d?\]: so what looks siasy?
+Warfreak2 [4d\]: g3 is my vote
+]
+;W[cf]
+;B[fd]
+;W[dj]
+;B[cq]C[Holub [1d\]: who wins this becomes champion of poland ?
+urtok [11k\]: Lesmian: Staszek z Mateuszem przegrał na kongresie w olsztynie, ale podobno bardzo chciał wygrac. Myśle, ze tutaj Staszek też bedzie chciał bardzo wygrać.
+Lesmian [2d\]: kto by nie chcial :)
+urtok [11k\]: :)
+LMP2 [-\]: not, Mateusz Surma will be champion (results http://mp.go.art.pl/2014/wyniki, already 6 wins, Sasio only 4),
+Warfreak2 [4d\]: this is just the encore
+Lesmian [2d\]: wierzę w Siasia, będzie walczył o każde moku, a nawet o każde dame ;)
+Lesmian [2d\]: albo o każdą damę?
+urtok [11k\]: ja tam nie mam złudze, ze Mateusz wygra :)
+urtok [11k\]: *złudzen
+]
+;W[fo]
+;B[pj]
+;W[gq]
+;B[gr]
+;W[fr]
+;B[hq]
+;W[eq]
+;B[gp]
+;W[fp]C[alvar [2k\]: What happens if Surma loses and Sebastian wins?
+Thera [-\]: Mateusz will be 1st
+alvar [2k\]: doesn't Sebastina win based on starting position?
+alvar [2k\]: *Sebastian
+alvar [2k\]: wins: 6 6
+Thera [-\]: no mati will have bigger sodos
+alvar [2k\]: Sodos: 14 14
+alvar [2k\]: how?
+Warfreak2 [4d\]: sodos will be 14 vs 13
+Warfreak2 [4d\]: sebastian's opponent is only on 2 wins
+]
+;B[er]
+;W[gq]
+;B[bo]C[alvar [2k\]: sorry, my bad
+Warfreak2 [4d\]: also, because mateusz beat sebastian, sebastian's win will add another SODOS point to mateusz
+Warfreak2 [4d\]: so actually would be 15 vs 13
+LMP2 [-\]: yes, mateusz have bigger sodos, but in case of draw, beetween sodos and starting position we have direct comprasion breaker (unfornatly not on www page :()
+LMP2 [-\]: so even then, mateusz won (but sodos wil be bigger)
+]
+;W[bn]
+;B[fq]
+;W[qh]C[Warfreak2 [4d\]: it's a round robin tournament, how can starting position be used as a tiebreak after direct comparison?
+Warfreak2 [4d\]: unless they have a jigo
+]
+;B[gq]
+;W[oh]C[yurei [1k\]: why g3 instead of two ponnukis ?
+Warfreak2 [4d\]: because more liberties for all stones if you connect
+Benzene [3d\]: because g3 is more useful than f1
+yurei [1k\]: i thought ponnuki is 30 points
+Benzene [3d\]: for example after g5  h5 is not atari
+Warfreak2 [4d\]: this way w will never have an atari with g5/h4
+]
+;B[od]
+;W[oq]C[Benzene [3d\]: not o10?
+yurei [1k\]: n12 
+]
+;B[nj]
+;W[mh]C[Benzene [3d\]: r11 important?
+wysek [?\]: well, sometimes you need another breaker, like a starting position, to resolve 
+]
+;B[lj]C[Warfreak2 [4d\]: how can direct comparison not resolve the tie
+Warfreak2 [4d\]: everybody plays everybody
+wysek [?\]: it can
+Warfreak2 [4d\]: how can it not
+wysek [?\]: believe me :)
+LMP2 [-\]: a win b, b win c, c win a
+Warfreak2 [4d\]: ok
+wysek [?\]: and it happens in Poland every 3-4 years
+Warfreak2 [4d\]: i guess when surma is around there is never going to be a tiebreak anyway
+wysek [?\]: this tiebreaker has also been used for places 4-5
+LMP2 [-\]: we hope for next strong players here :)
+]
+;W[hc]C[wysek [?\]: and it is critical. people in 1-4 places qualify for next league
+Warfreak2 [4d\]: you already have a 7d, it should be the UK's turn to have a strong player, we have nobody
+]
+;B[kh]
+;W[rj]C[Benzene [3d\]: oh chi min is strong :p
+LMP2 [-\]: maybe one next for us, and one for you?
+Warfreak2 [4d\]: :-p
+LMP2 [-\]: deal?
+Warfreak2 [4d\]: let's trade, surma for me
+LMP2 [-\]: noooooooooooooooot, he is our :)
+wysek [?\]: what's in there for you?
+]
+;B[di]C[Warfreak2 [4d\]: if oh chimin applies for british citizenship i am sure we will be greatly pleased
+Warfreak2 [4d\]: who is broadcasting, by the way?
+Rukis [1k\]: LMP2 is
+Warfreak2 [4d\]: *slow clap*
+LMP2 [-\]: :)
+]
+;W[ci]
+;B[ch]
+;W[dh]
+;B[ei]
+;W[ej]
+;B[cj]
+;W[bi]
+;B[fj]C[Rukis [1k\]: don't forget about 1,3 and 4.
+]
+;W[ck]
+;B[bh]
+;W[bj]
+;B[dg]
+;W[eh]
+;B[fi]
+;W[fh]C[LMP2 [-\]: white: 0h57m, black 1h12m
+cieldefeu [7k\]: G12?
+]
+;B[cg]
+;W[gh]
+;B[hj]
+;W[hi]
+;B[gk]
+;W[ji]C[Warfreak2 [4d\]: surma the conquerer
+]
+;B[jk]
+;W[ki]
+;B[mq]
+;W[mo]
+;B[mm]
+;W[ko]
+;B[kq]
+;W[cd]
+;B[de]
+;W[bf]
+;B[df]
+;W[cc]
+;B[db]
+;W[cb]
+;B[he]
+;W[ie]C[dudewhatis: hayyyeyyoo
+]
+;B[id]
+;W[hd]
+;B[if]C[Warfreak2 [4d\]: fight!
+Warfreak2 [4d\]: ko?
+]
+;W[je]
+;B[hf]C[Warfreak2 [4d\]: mateusz the monster
+whuang [4d\]: Surma the Computer
+]
+;W[jd]
+;B[ih]
+;W[ik]C[whuang [4d\]: Eh? Fancy tesuji or bluff?
+TheThe [5k\]: bluff
+whuang [4d\]: It looks quite valid, actually
+TheThe [5k\]: bluff usually do
+]
+;B[ii]C[TheThe [5k\]: we shall see
+]
+;W[ij]C[LMP2 [-\]: j10 strong push
+TheThe [5k\]: kamikaze
+]
+;B[gl]C[yurei [1k\]: h12 
+]
+;W[il]C[barty [1d\]: k8 ?
+BlazejS [2k\]: k10
+Lesmian [2d\]: o
+Lesmian [2d\]: Siasio coś upolował
+Lesmian [2d\]: wiedziałem!
+fekand5 [1d\]: m11
+Lesmian [2d\]: teraz tylko dobić zwierzynę, oporządzić
+Lesmian [2d\]: i smacznego
+yurei [1k\]: m11 
+]
+;B[jm]C[yurei [1k\]: white has troubles
+iPwnNoobs [-\]: that tends to happen to people when they play against [7d\]
+BlazejS [2k\]: How much time left?
+]
+;W[im]C[LMP2 [-\]: black 48m, white 26m
+]
+;B[jn]C[yurei [1k\]: h12 k12 g10 ?
+]
+;W[gm]
+;B[fl]C[yurei [1k\]: too late
+Blair [9k\]: Oooo empty triangle...
+BlazejS [2k\]: thx
+LMP2 [-\]: before 7d it's bad shapre, when 7d it's tesuji :)
+]
+;W[nc]C[Kogokhan [1k\]: it's empty only if it does nothing
+]
+;B[oc]
+;W[nd]
+;B[ne]
+;W[md]C[Blair [9k\]: Again... strange game..
+whuang [4d\]: super tesuji L15
+whuang [4d\]: xD
+barty [1d\]: l15 interesting true
+]
+;B[ld]
+;W[me]
+;B[le]C[barty [1d\]: white have problem now
+Kogokhan [1k\]: White has a problem yes. W is playing against Surma
+whuang [4d\]: xD
+]
+;W[mf]C[litchy [2d\]: game looks already over
+]
+;B[kf]C[qpqpqp [3k\]: overstatement. w is famous for comebacks
+barty [1d\]: f18 
+litchy [2d\]: yeah but it looks so settled
+whuang [4d\]: Famous for conbacks, but I don't think Mateusz will let up the pressure
+whuang [4d\]: comebacks*
+]
+;W[gb]C[LMP2 [-\]: black 45m, white 15m
+]
+;B[jb]C[ThiGar [4k\]: who's ahead?
+litchy [2d\]: black obviously
+ThiGar [4k\]: ok
+ThiGar [4k\]: can the d17 weakness help white live?
+]
+;W[kb]
+;B[kc]C[LMP2 [-\]: e.g. e18
+urtok [11k\]: LMP2 jakie maja czasy ?
+bluedesk: l18 was a mistake?
+urtok [11k\]: aaaa
+urtok [11k\]: juz widze :)
+LMP2 [-\]: time: black 43m, white 12m
+urtok [11k\]: dziękuję :)
+ThiGar [4k\]: czasy=crazy?
+]
+;W[nb]C[Rzepa [1k\]: bialy tutaj przezyje?
+LMP2 [-\]: not czas == time (in polish)
+yurei [1k\]: propably LMP2 is crazy
+ThiGar [4k\]: ah, thx!
+stormerevo [7k\]: who is winnin
+whuang [4d\]: xD
+whuang [4d\]: Black is winning
+ThiGar [4k\]: Is o18 sente on the corner?
+]
+;B[ob]C[yurei [1k\]: k17 
+]
+;W[jc]C[bluedesk: wow
+ThiGar [4k\]: good call yurei!
+bluedesk: l18 proves to be a great move, tempo tesuji
+]
+;B[ea]C[whuang [4d\]: woah super tesuji
+whuang [4d\]: E19 xD
+yurei [1k\]: k14 
+yurei [1k\]: no k14 is bad because liberties
+whuang [4d\]: K14 isn't a good move 
+LMP2 [-\]: e19 is threat for c17 group?
+whuang [4d\]: It doesn't do anything really
+ThiGar [4k\]: m18?
+]
+;W[fb]
+;B[eb]
+;W[ca]
+;B[lb]
+;W[ib]
+;B[bp]
+;W[re]
+;B[rd]
+;W[jh]
+;B[jg]C[bluedesk: c18 h12 j13 h9 g10 f7 ???
+bluedesk: sorry
+bluedesk: it starts with h12
+bluedesk: w can kill b now
+inte [?\]: bluedesk, are you related to bluetable?
+bluedesk: newer generation
+LMP2 [-\]: white one minute time left
+]
+;W[jo]C[bluedesk: this is a preparation move for h12, i think
+iPwnNoobs [-\]: yes
+ThiGar [4k\]: only a playr like Aguilar could capture g9 stones
+TurtleDove [3k?\]: and SE :)
+LMP2 [-\]: :)
+SadPlayer [-\]: a w sumie to biale nie prowadzą? Jak dogra jakieś r9 to cz nie bedzie miał co tam zrobić
+humblelife [-\]: m12 and see if b can live independantly before j6?
+TheThe [5k\]: SE w+21
+iPwnNoobs [-\]: k5 really sente against n7 though. i don't think i could kill that group
+humblelife [-\]: indeed, hard to get more than 5 libs for the w group
+Flexible [?\]: It seems like black is winning
+Flexible [?\]: But nobody can trust me with counting :P
+ThiGar [4k\]: well, b stones very efficient
+Flexible [?\]: why is there an empty triangle at the top of the board? O_O
+ThiGar [4k\]: Aesthetics?
+Blair [9k\]: F8 they play easy
+iPwnNoobs [-\]: it's [7d\] tesuji. waiting for white to play d19 so it becomes full triangle and then BLAM his trap is complete
+]
+;B[pm]C[Flexible [?\]: Yes
+]
+;W[qm]
+;B[qk]C[inte [?\]: e19 radiates power all over f19...
+]
+;W[pl]
+;B[ol]
+;W[om]
+;B[ok]
+;W[nm]
+;B[rk]C[gfdhff [2k\]: jeszcze grajo
+gfdhff [2k\]: ja cie pierdziu
+]
+;W[ml]
+;B[li]
+;W[lh]
+;B[kg]C[ThiGar [4k\]: J6
+bluedesk: b in trouble
+]
+;W[mi]C[TheThe [5k\]: not really
+]
+;B[ll]C[bluedesk: either g9 or s9 will die
+kmr [1d\]: i bet both will be alive
+bluedesk: deal
+kmr [1d\]: 1000 KGS bucks?
+]
+;W[jj]C[bluedesk: sure
+ThiGar [4k\]: wow!
+TheThe [5k\]: ok now in trouble
+]
+;B[ri]C[bluedesk: now play h12 
+SadPlayer [-\]: jak Mateusz wszystko wygra to zarobi na tym turnieju całe 2,5 punktów rankingowych
+]
+;W[qi]
+;B[qj]C[kmr [1d\]: szał ^^
+Blair [9k\]: Taa.  
+kmr [1d\]: ale w go nie gra się dla rankingu, to nie kurnik ;)
+LMP2 [-\]: dosyc duzo, mi mowil ze pewnie cos okolo 1.5
+]
+;W[rh]
+;B[sj]
+;W[oe]C[SadPlayer [-\]: sprawdziłem własnie na kalkulatorze
+SadPlayer [-\]: dokładnie 2,56
+LMP2 [-\]: ok, powiem mu po grze :)
+kmr [1d\]: no to powinieneś zaokrąglić do 2,6 :D
+ThiGar [4k\]: How much csaz for the players?
+Lesmian [2d\]: Siasio ciągle walczy 
+Lesmian [2d\]: może mu zabierze z 10
+Lesmian [2d\]: czy ile tam
+LMP2 [-\]: black 27m, white byo (1m per move)
+kmr [1d\]: Siasio zawsze gra do końca, a czasem nawet dłużej ;)
+ThiGar [4k\]: thx
+wysek [?\]: niekoniecznie dokladnie to policzyles, w kalkulatorze na EGD bierze sily bez miejsc po przecinku
+SadPlayer [-\]: no fakt
+]
+;B[rm]
+;W[rn]
+;B[pf]C[LMP2 [-\]: q14 strong put by Mateusz
+]
+;W[of]
+;B[pg]C[TheThe [5k\]: hm
+]
+;W[pe]
+;B[qe]C[TheThe [5k\]: hm
+bluedesk: w is alive in sente so he can play h12
+]
+;W[pd]
+;B[qc]
+;W[ni]C[kmr [1d\]: h12 dont  change anything g12 is dead 
+bluedesk: how do you reply?
+kmr [1d\]: H12 - J13
+bluedesk: h9 
+]
+;B[rf]C[kmr [1d\]: G10
+bluedesk: f7 
+Rzepa [1k\]: o13 nie musi ?
+Rzepa [1k\]: chociaz nie, o13 jakies ko chyba bezsensowne tworzy..
+]
+;W[og]C[kmr [1d\]: F7 - i could push few time but h13 is enough to kill
+bluedesk: how? move please
+iPwnNoobs [-\]: h12 hard to read i think because j10 so short on liberties
+kmr [1d\]: i said - F7-H13
+TurtleDove [3k?\]: f7 need e8 then B has 6 lib vs 5
+bluedesk: h13 e8 and b easy dead, count the liberties
+kmr [1d\]: E8 G13, no you play
+]
+;B[mk]C[tenuk [1d\]: e7 is worth 7 points
+]
+;W[nl]C[kmr [1d\]: Bluedesk, your move
+bluedesk: okay, I accept that h9 is a mistake but w can start with g10
+iPwnNoobs [-\]: i think if white had a stone at j6 he could kill, but i don't think he can do it without it
+bluedesk: h12 j13 g10 
+]
+;B[ln]
+;W[lo]
+;B[fm]C[iPwnNoobs [-\]: that looks like it works blue
+kmr [1d\]: H12 J13 G10 i play H9
+bluedesk: then g11
+Bogdan13x [1k\]: czemu biały tam nie zagrał wcześniej
+]
+;W[kk]
+;B[lk]C[kmr [1d\]: F9
+SadPlayer [-\]: q12 q11 p11 i ko o grę :P
+bluedesk: f7 
+kmr [1d\]: E8
+bluedesk: d8 
+]
+;W[io]C[bluedesk: kmr, your move
+kmr [1d\]: wait, i cgange my play, i respond G10 with G11
+]
+;B[cn]C[kmr [1d\]: change*
+bluedesk: then h9
+kmr [1d\]: G10
+bluedesk: f7 
+qpqpqp [3k\]: i count 4 empty triangles by B
+kmr [1d\]: E8
+]
+;W[sh]C[bluedesk: d8 
+kmr [1d\]: H13
+maciek [2d\]: Mateusz jest juz mistrzem niezależnie od wyniku tej gry?
+wysek [?\]: bluedesk: it's 4 vs 4 liberties with black sente then
+iPwnNoobs [-\]: then you missed a few qpqp
+]
+;B[jl]C[bluedesk: e7 
+kmr [1d\]: G13
+goplana [9k\]: tak, maciek
+maciek [2d\]: dzieki :)
+bluedesk: h8 
+urtok [11k\]: :)
+kmr [1d\]: F13
+bluedesk: f9 and w captures
+]
+;W[kj]C[kmr [1d\]: nope i have breath on E9 :D
+]
+;B[in]C[bluedesk: yes you do, damn...
+bluedesk: okay i give up
+]
+;W[hn]
+;B[ho]C[kmr [1d\]: but  h12,g10 and rest would be good ko threats 
+]
+;W[go]
+;B[hp]C[Kogokhan [1k\]: b captured f5 
+kmr [1d\]: no, its white who killed m9 ^^ ;)
+]
+;W[dn]C[Kogokhan [1k\]: hmm
+Kogokhan [1k\]:  l8 
+Kogokhan [1k\]: b lives
+bluedesk: i still win the initial bet ? :)
+]
+;B[cm]C[kmr [1d\]: Bet will be conculded when game will be over - we will check if both are alive :)
+]
+;W[dm]
+;B[bm]C[Kogokhan [1k\]: b is too calm :)
+Warfreak2 [4d\]: e8 ?
+]
+;W[cl]
+;B[sm]
+;W[bl]C[SIscurge [5d\]: I think w missed a big chance here
+SIscurge [5d\]: C8 to E8 would have made it really messy
+gisel [4d?\]: its unusual for white to retaliate with such move
+]
+;B[nr]C[SIscurge [5d\]: for instance, after E8 white loses the semeai between h10 and h11 just by one liberty, meaning that if they play it out L8 would no longer be sente for black
+]
+;W[am]
+;B[pr]C[TheThe [5k\]: eh?
+Kogokhan [1k\]: this is crazy
+LMP2 [-\]: white playes in byo
+SIscurge [5d\]: b may have really died
+]
+;W[or]
+;B[os]C[Flexible [?\]: Black seems pretty alive :P
+bluedesk: scurge, are you sure that b loses the semeai after e8?
+]
+;W[qr]C[SIscurge [5d\]: black wins the semeai by one liberty
+bluedesk: oh, i see
+SIscurge [5d\]: but it also means that after the throw in at H7 he wont be able to play attari H9
+SIscurge [5d\]: because that would be self attari
+Warfreak2 [4d\]: but b doesn't need to throw in at h7
+Warfreak2 [4d\]: unless you mean w plays out the whole f10 semeai first
+Warfreak2 [4d\]: but b can l8 in sente any time during that
+SIscurge [5d\]: ah that is also true
+SIscurge [5d\]: I didnt realise black can play L8 anytime
+SIscurge [5d\]: got hyped for nothing :D thanks
+Coorchac [5k\]: Jak z czasem?
+LMP2 [-\]: black 7m left, white byo
+SadPlayer [-\]: s2 i niech się biją
+qpqpqp [3k\]: liczy?
+]
+;B[rr]C[qpqpqp [3k\]: \\o/
+]
+;W[pq]
+;B[qs]C[LMP2 [-\]: zyczenia niektorym sie spelniaja :)
+]
+;W[ps]
+;B[lg]C[TheThe [5k\]: this is japanese rules?
+kmr [1d\]: zmarnować zyczenie na coś takiego....jakby mnie marzenia się spełniały to...hehhehe :D
+LMP2 [-\]: yes
+kmr [1d\]: yes Japanese rules
+TheThe [5k\]: cool, 
+]
+;W[mg]
+;B[pr]C[qpqpqp [3k\]: how is it possible that black decided he has more threats
+SadPlayer [-\]: mogłem wybrać pokój na świecie albo s2
+gfdhff [2k\]: ;p
+Coorchac [5k\]: wybrales dobrze.
+kmr [1d\]: black want to test white skills ;)
+]
+;W[hh]
+;B[ig]C[qpqpqp [3k\]: wyleciałeś z konkursu o miss go
+]
+;W[ps]
+;B[ng]C[LMP2 [-\]: black 2m50s time left, white byo (1m per move)
+]
+;W[nf]
+;B[pr]
+;W[ql]
+;B[rl]
+;W[ps]
+;B[ce]
+;W[be]
+;B[pr]
+;W[si]C[dxxd [1k\]: so, was m13->q11 anything (threatens ko)
+dxxd [1k\]: nevermind
+]
+;B[qq]C[TheThe [5k\]: hohoho
+qpqpqp [3k\]: say whaaaat
+Flexible [?\]: Risk
+victor5 [1k\]: the end
+Flexible [?\]: No
+Gorim [2d?\]: no risk
+Flexible [?\]: This will be a fight for the win
+]
+;W[mn]C[Gorim [2d?\]: black connects with t6 or lives with l8
+]
+;B[sn]C[Flexible [?\]: no..
+Flexible [?\]: S4
+robinjo [-\]: hi alias
+]
+;W[rp]C[Flexible [?\]: black and white need to fight for the outcome
+]
+;B[ro]C[alias [6k\]: hi
+]
+;W[qp]
+;B[sp]C[Flexible [?\]: omg
+]
+;W[sq]
+;B[rq]C[robinjo [-\]: OMG
+Flexible [?\]: Mateus might lose this
+]
+;W[so]C[gfdhff [2k\]: s2 to dopiero początek
+Coorchac [5k\]: Hope so.
+qpqpqp [3k\]: l8 now
+]
+;B[lm]C[Michaelz [-\]: just ko this
+urtok [11k\]: noo :)
+Flexible [?\]: Stanislaw sure knows how to mount winning
+Flexible [?\]: a comeback i mean
+Flexible [?\]: XD
+robinjo [-\]: w +
+robinjo [-\]: w+R
+Thera [-\]: p10?
+]
+;W[hm]
+;B[sp]C[Flexible [?\]: White seems to have the advantage for this ko
+]
+;W[gj]C[Flexible [?\]: Wait.. once b 
+victor5 [1k\]: sacrifice
+]
+;B[gi]C[alias [6k\]: neeu
+LMP2 [-\]: both players in byo
+]
+;W[so]C[Coorchac [5k\]: q12
+Kogokhan [1k\]: l8 
+]
+;B[kl]
+;W[kn]
+;B[sp]C[ThiGar [4k\]: o9
+]
+;W[nk]C[Flexible [?\]: ....Bad ko threat
+Kogokhan [1k\]: indeed
+Flexible [?\]: black just got 3 extra threats
+TheThe [5k\]: not too bad
+Flexible [?\]: technically -2 threats
+Kogokhan [1k\]: but w also got additional ko threats
+Flexible [?\]: no
+]
+;B[mj]C[Flexible [?\]: Black is P10 as a ko threat
+victor5 [1k\]: and vf6
+Kogokhan [1k\]: p10 and l7 
+Flexible [?\]: f6 isn't good either
+Flexible [?\]: F6 gives white 4 more threats
+]
+;W[so]C[Flexible [?\]: P10
+alias [6k\]: why p10?
+Flexible [?\]: sente
+alias [6k\]: how?
+lort [3k\]: threatens r12
+Flexible [?\]: black has q13 next
+alias [6k\]: ah
+alias [6k\]: thx
+Flexible [?\]: ^^
+]
+;B[pn]C[SadPlayer [-\]: cz wygrywał bez tego ko
+wysek [?\]: tak, gdzies tak z 3-4 punkty na moje
+lort [3k\]: now w can play it ;p
+qpqpqp [3k\]: ale musiałeś sobie zażyczyć
+]
+;W[on]
+;B[sp]C[wysek [?\]: ciekawe ,czy idzie wg planu czarnego :D
+]
+;W[oi]
+;B[oj]
+;W[so]C[qpqpqp [3k\]: bez sensu
+]
+;B[pi]
+;W[ph]
+;B[sp]C[qpqpqp [3k\]: utrata groźby w l7
+qpqpqp [3k\]: to była
+Lesmian [2d\]: Siasio do boju!
+]
+;W[fk]
+;B[gj]C[tenuk [1d\]: Mateusz ma przynajmniej jedą groźbę więcej
+Warfreak2 [4d\]: t5 connection threatens q5 to kill w group, doesn't it?
+Sanyel [-\]: Seems so
+SadPlayer [-\]: biały ma jeszcze 4 w e8 
+Warfreak2 [4d\]: so why bother with g10
+Lesmian [2d\]: Kiedy Siasio dumnie śpiewa, Mateusz ze strachu zwiewa. "Porąbiemy posiekamy, nawet Surmie żyć nie damy" 
+]
+;W[so]C[Lesmian [2d\]: hej hej po góralsku z przytupem!
+SadPlayer [-\]: Kajko i Kokosz?
+Sanyel [-\]: Because q14 might not be alive then, Warfreak
+kmr [1d\]: d15 gruop seems not to have 2 sure eyes
+Lesmian [2d\]: tak :)
+Warfreak2 [4d\]: ic
+Lesmian [2d\]: piosenki zbójcerzy zapamiętam do śmierci
+Sanyel [-\]: *d14 not q14
+Warfreak2 [4d\]: i guess b has f6 and e5 remaining
+]
+;B[fn]C[Flexible [?\]: black has o6
+SadPlayer [-\]: Niech co..., krwawy Siasio ?
+kmr [1d\]: niech zyje!
+Flexible [?\]: bad ko threat!
+qpqpqp [3k\]: niech żyje!
+Lesmian [2d\]: :)
+Warfreak2 [4d\]: o6 is a bad threat, then w is alive
+Blair [9k\]: Niech zyje..
+]
+;W[gn]
+;B[sp]C[Flexible [?\]: ah.. although it gives wite more threats, black will still live on top and be able to kill the bottom right
+Warfreak2 [4d\]: i guess e5 doesn't work
+Flexible [?\]: Black T5 is sente
+]
+;W[ff]C[ThiGar [4k\]: m14?
+kmr [1d\]: kąśliwy ruch!
+Lesmian [2d\]: mocne siasuji na dobitkę
+Flexible [?\]: F13
+]
+;B[so]C[TheThe [5k\]: wow
+Flexible [?\]: oh jesus
+wysek [?\]: yeah
+qpqpqp [3k\]: woah
+alias [6k\]: wiee
+Warfreak2 [4d\]: f13 now
+Warfreak2 [4d\]: only move
+Flexible [?\]: Black has Q5.. but the top might die.....
+wysek [?\]: the greatest moment to play t5
+mmmd [3k\]: wasn'T that sente by now anyhow ?
+Flexible [?\]: But white can go for thek ill on the top
+Warfreak2 [4d\]: top won't die
+Warfreak2 [4d\]: f13 f15 e8 e14 e7 l19 is alive
+Flexible [?\]: black has alot of sentes
+]
+;W[fg]C[Flexible [?\]: Does black live in gote warpfreak?
+Flexible [?\]: warp*
+odif [3k\]: bq5
+Flexible [?\]: war*
+Blair [9k\]: this is sparta
+Flexible [?\]: I can't type xD
+qpqpqp [3k\]: warpfreak
+Gor [2d\]: the divine move
+tenuk [1d\]: q5 killos
+qpqpqp [3k\]: like star trek version
+iPwnNoobs [-\]: double empty triangle!
+TheThe [5k\]: SE in panic mode, w+110
+]
+;B[fe]C[Blair [9k\]: G14? why not
+]
+;W[en]C[Lesmian [2d\]: ha!
+]
+;B[ka]C[fekand5 [1d\]: l18
+]
+;W[po]C[Lestat [2d\]: ?
+qpqpqp [3k\]: WHAT
+bluedesk: ho boy
+Lesmian [2d\]: po zdobyciu surmowa wyprawimy wielką ucztę na cześć krwawego siasia!
+]
+;B[fa]C[Coorchac [5k\]: ko?
+qpqpqp [3k\]: no ko
+tenuk [1d\]: what b did???
+Muttley [2k\]: b did lived
+bluedesk: nice sentence
+kmr [1d\]: damn, i lost 1000kgs bucks...couldnt believe black will trade G9 group...
+]
+;W[gd]C[TisButMe [1k\]: g16 g15 e17 d17 f17 ?
+]
+;B[fc]C[SadPlayer [-\]: gdzie grać jakby biały nie zagrał q5 ?
+wysek [?\]: q5
+Kogokhan [1k\]: exciting game
+fekand5 [1d\]: over
+Kogokhan [1k\]: w died at top but still great effort
+alias [6k\]: can it get to ko again?
+SadPlayer [-\]: q5 r5 i co dalej?
+Michaelz [-\]: ko
+tenuk [1d\]: ko
+kmr [1d\]: or maybe not yet..there will be ko on top
+wysek [?\]: wyciagasz, p5 atari
+]
+;W[dc]
+;B[ec]C[wysek [?\]: i o4
+Coorchac [5k\]: j19
+Coorchac [5k\]: hehe
+tenuk [1d\]: h19 
+Bogdan13x [1k\]: po co zagrał 5q
+SadPlayer [-\]: q5 r5 o4 o5 i dalej mi wyglada nazywe. Jakoś tego nie widze :)
+alias [6k\]: h19 is the moviesh
+]
+;W[ia]C[bluedesk: ???
+alias [6k\]: say what
+tenuk [1d\]: bo mu wszystko ginęło
+Coorchac [5k\]: ha!
+maciek [2d\]: q5 r5 p5 o6 o4 
+Coorchac [5k\]: I knew
+fekand5 [1d\]: g19
+kmr [1d\]: j19?!
+tenuk [1d\]: musiał grać q5
+bluedesk: j19 is clear death
+iPwnNoobs [-\]: i don't get this
+alias [6k\]: g19 should be the killing move
+]
+;B[ga]C[qpqpqp [3k\]: and you all laughed at e19
+Michaelz [-\]: white died in gote
+bluedesk: not in gote
+SadPlayer [-\]: no w końcu to widze
+tenuk [1d\]: still ko
+LeLEM [3d?\]: still can capture g9
+LeLEM [3d?\]: in exchange
+]
+;W[ha]C[qpax [1d\]: it's not enough
+]
+;B[gc]C[LeLEM [3d?\]: yeah
+Warfreak2 [4d\]: g9 is not an exchange, that was already w's
+SadPlayer [-\]: g15 
+]
+;W[ge]C[tenuk [1d\]: lelem g9 is dead
+LeLEM [3d?\]: yeah yeah
+dxxd [1k\]: resign
+Lesmian [2d\]: Siasio łowca 
+Warfreak2 [4d\]: is mateusz about to lose?
+dxxd [1k\]: no
+Coorchac [5k\]: Hope so.
+gfdhff [2k\]: ale jaja
+Lesmian [2d\]: oczywiście że lus!
+]
+;B[gf]C[fekand5 [1d\]: g14
+Warfreak2 [4d\]: e8
+]
+;W[em]
+;B[ja]
+;W[ma]C[kmr [1d\]: white cant win this multi step ko....
+TheThe [5k\]: can seki?
+Warfreak2 [4d\]: czarne zagrał, i postawe 13 białe kaminie w safari
+Greenwood [7k\]: start the ko
+]
+;B[la]C[qpqpqp [3k\]: lol warfreak can polish
+LMP2 [-\]: t5 already done :-p
+Lesmian [2d\]: w safari?
+kmr [1d\]: dam lol there is no ko
+kmr [1d\]: black 2 eyes
+Warfreak2 [4d\]: no seki, b has external liberties at e8
+]
+;W[mb]C[Warfreak2 [4d\]: w safari.
+Coorchac [5k\]: :D
+]
+;B[ke]
+;W[lf]C[Warfreak2 [4d\]: seki would mean b dead
+Warfreak2 [4d\]: and b is surma
+Warfreak2 [4d\]: so it's not seki
+Lesmian [2d\]: ale jak to było z q5
+]
+;B[hb]C[TheThe [5k\]: lol
+]
+;W[gb]
+;B[fb]C[wysek [?\]: _external_ liberties
+wysek [?\]: awesome
+]
+;W[ic]
+;B[hb]C[dxxd [1k\]: intense game 
+kmr [1d\]: haha forgot that black is cut inG15...but still white cant win this ko i think
+tenuk [1d\]: e8
+Warfreak2 [4d\]: e8 loses directly
+]
+;W[nq]C[qpqpqp [3k\]: he can die gracefully
+Warfreak2 [4d\]: r18 s18 makes a ko to kill the corner
+]
+;B[lr]C[Warfreak2 [4d\]: sort of
+Flexible [?\]: This game is insane xD
+Warfreak2 [4d\]: m2 instead of n2
+Warfreak2 [4d\]: b so confident, he says "have some more threats"
+Flexible [?\]: lol
+]
+;W[gb]C[Flexible [?\]: black dcan't lose this ko
+Flexible [?\]: White can't even go h13
+]
+;B[ek]C[Warfreak2 [4d\]: b is on safari
+Michaelz [-\]: ending of this game is crazy
+]
+;W[el]
+;B[hb]
+;W[pc]C[Lesmian [2d\]: potrzebne kolejne siasuji, dobrze ze jest byo, wtedy o nie latwiej
+LeLEM [3d?\]: is it enough?
+kmr [1d\]: i think black cant afford P18 stones
+]
+;B[pb]C[ThiGar [4k\]: wasen't B13 a better threat?
+tenuk [1d\]: no
+humblelife [-\]: well this is biger than o3 snyesy
+Warfreak2 [4d\]: b13 is not a threat
+]
+;W[gb]C[tenuk [1d\]: must defend p18
+gisel [5d?\]: a bloodbath that only Siasio can create
+fekand5 [1d\]: l13
+]
+;B[dk]C[Warfreak2 [4d\]: i can picture siasiao's anxious smile while he recaptures the ko, which acknowledges he cannot win it
+wysek [?\]: ok, I still dont get W j19, why not h19?
+ThiGar [4k\]: at least R18 is a threat
+]
+;W[cj]C[Muttley [2k\]: "go- a game where two sides strive to create living groups and take territory"
+]
+;B[hb]C[TheThe [5k\]: r18 then?
+Muttley [2k\]: what they don't tell you: "by slaughtering each other's groups"
+TheThe [5k\]: lol
+Coorchac [5k\]: "go - game where Siasio makes the best tesujis when he is byo
+LeLEM [3d?\]: looks like no way W can win this ko^^
+rubicon [3d\]: agreed
+rubicon [3d\]: impossible ko
+Warfreak2 [4d\]: niebanalny
+Coorchac [5k\]: nieosiągalny
+]
+;W[qb]
+;B[rb]C[qpax [1d\]: niebanalne safari
+]
+;W[gb]
+;B[kd]
+;W[mc]
+;B[hb]C[bluedesk: it seems like b wins
+LMP2 [-\]: i must get some additional stones, so some 5 last move maybe was wrong
+Lesmian [2d\]: jest jeszcze szansa
+]
+;W[ns]
+;B[ms]C[Lesmian [2d\]: może Mateusz nie zagra groźby i od razu wypełni ko
+Lesmian [2d\]: także warto je grać!
+Muttley [2k\]: somebody else should really get the stones, not the game relayer
+]
+;W[gb]C[fekand5 [1d\]: k14
+Sanyel [-\]: Or they could exchange prisoners, even if not exactly legal.
+Michaelz [-\]: white is so stubborn
+Warfreak2 [4d\]: prisoner exchanges are tightly regulated by the geneva conventions
+]
+;B[bd]C[Warfreak2 [4d\]: if you can persuade yourself you have a chance to win against egf 7d, you keep playing
+LeLEM [3d?\]: wow nice
+Warfreak2 [4d\]: black threatens to have threats
+LeLEM [3d?\]: yeah 
+]
+;W[hl]C[ThiGar [4k\]: a12
+]
+;B[hb]C[LeLEM [3d?\]: and play yose in the same time
+]
+;W[qf]C[Sanyel [-\]: r14, really?
+SadPlayer [-\]: g18 
+fekand5 [1d\]: g18
+Coorchac [5k\]: 4134
+Coorchac [5k\]: r13
+]
+;B[qg]
+;W[gb]C[LeLEM [3d?\]: black could tenuki and win but this ko looks impossible so...
+humblelife [-\]: what's the count?
+tenuk [1d\]: Siasio może wygrać grę
+]
+;B[ef]C[Lesmian [2d\]: a może mógł móc?
+]
+;W[hk]
+;B[hb]
+;W[rg]
+;B[qf]C[Lesmian [2d\]: Mateusz jest tak pewny zwycięstwa że to aż podejrzane, ja bym się bał Siasia :)
+LeLEM [3d?\]: f9 now?
+]
+;W[gb]C[bluedesk: w needs to get 10 points out of this ko
+wysek [?\]: actually b17 is not a threat, white can go killing k13 group
+fekand5 [1d\]: b17
+Bogdan13x [1k\]: jak czarny wygra to to i zabije grupkę to wygrywa tylko kilkoma punktami
+BlazejS [2k\]: a15
+tenuk [1d\]: Jak Siasio weźmie q18, to wygra
+]
+;B[jf]C[LeLEM [3d?\]: this would be still ko to go on k13
+wysek [?\]: yes it would. just saying b16 did not do anything
+]
+;W[fk]C[LeLEM [3d?\]: B16 yose move
+wysek [?\]: it was probably better to secure some other threat like r19
+]
+;B[hb]C[LeLEM [3d?\]: as black is sure to win this
+tenuk [1d\]: r19
+humblelife [-\]: i agree with wysek actually, b16 yose doesn't change game outcome
+humblelife [-\]: but threats on p18 would change outcome
+alienist [5k\]: b just being polite
+]
+;W[qa]C[Holub [1d\]: what do you mean ?
+]
+;B[ra]C[Lesmian [2d\]: polajt, jasne, to ze strachu!
+Coorchac [5k\]: ze Stachu!
+alienist [5k\]: playing ko w can't win
+]
+;W[gb]
+;B[bc]C[gisel [5d?\]: need to answer this
+wysek [?\]: h13
+Coorchac [5k\]: g13 
+ThiGar [4k\]: G13
+patcher [1k\]: b17 is nice
+qpqpqp [3k\]: up the ante
+Coorchac [5k\]: g13 because b2bomber
+]
+;W[bb]
+;B[hb]C[TheThe [5k\]: p19 
+qpax [1d\]: więc jednak b16 nie było bez znaczenia
+]
+;W[rj]C[Warfreak2 [4d\]: what"!
+Lesmian [2d\]: jeszcze dwie przyzwoite groźby zostały Siasiowi
+Lesmian [2d\]: więc używa tych nieprzyzwoitych
+]
+;B[id]C[wysek [?\]: :(
+qpqpqp [3k\]: gg
+patcher [1k\]: strange not to p19
+]
+;W[jq]C[Coorchac [5k\]: ?
+]
+;B[jr]
+;W[iq]C[Coorchac [5k\]: czo ten Siasio
+Sanyel [-\]: Also strange not to g13
+]
+;B[ir]C[dawdadfff: l
+]
+;W[sk]C[patcher [1k\]: i think b18 was mandatory
+]
+;B[mp]
+;W[np]
+;B[dq]C[Sanyel [-\]: Only locally.
+patcher [1k\]: yes
+humblelife [-\]: it was necessary
+patcher [1k\]: but i w did g13
+SadPlayer [-\]: jakieś 6 punktów bedzie
+patcher [1k\]: there was no threats left
+patcher [1k\]: because of b18
+Sanyel [-\]: Yes there was p19
+]
+;W[ep]C[patcher [1k\]: p19 was not athreat anymore
+patcher [1k\]: because b18 killed
+patcher [1k\]: the top left
+wysek [?\]: right
+Sanyel [-\]: Hum, yes
+ThiGar [4k\]: there were 2 threats lef: P19, then R19
+patcher [1k\]: yes
+patcher [1k\]: but not if g13 instead of b18
+Flexible [?\]: 7d magic
+tenuk [1d\]: b +5,5
+wysek [?\]: W was losing anyway
+]
+;B[bg]C[Flexible [?\]: White did a good job
+]
+;W[ac]C[Flexible [?\]: Intense all the way
+Sanyel [-\]: W+0.5 according to SE
+ThiGar [4k\]: All the more amazing that the final score is quite close
+]
+;B[af]
+;W[ad]
+;B[lp]
+;W[sf]
+;B[se]
+;W[ao]
+;B[cp]C[Coorchac [5k\]: b+6.5 :c
+Kogokhan [1k\]: amazing game
+qpqpqp [3k\]: jigo
+]
+;W[ap]C[Sanyel [-\]: Unfortunately, jigo can't happen I think.
+]
+;B[aq]
+;W[an]
+;B[ai]
+;W[aj]C[qpqpqp [3k\]: if not for the damn commies
+qpqpqp [3k\]: i mean, komi
+salmon [?\]: just joined, wth is this? :O
+]
+;B[ah]C[humblelife [-\]: if they fill all their own eyes, tehn make triple ko on the empty board
+]
+;W[ip]
+;B[kp]
+;W[ae]
+;B[ag]
+;W[sg]
+;B[sr]
+;W[oa]
+;B[pa]
+;W[qb]
+;B[na]
+;W[hr]C[wysek [?\]: really
+LMP2 [-\]: yes
+]
+;B[fs]
+;W[oa]
+;B[qa]C[Coorchac [5k\]: :<
+LMP2 [-\]: siasio said yes!
+Coorchac [5k\]: nie umie sie bawic
+mmmd [3k\]: byoyomi makes for crazy plays ... ^^
+]
+;W[sj]
+;B[sq]C[Warfreak2 [4d\]: too dracula
+LMP2 [-\]: pas, pas
+Lesmian [2d\]: eh
+Muttley [2k\]: b won by a small margin, I guess
+tenuk [1d\]: Siasio mógł wygrać, jakby zamiast j19 zgrał h19
+Coorchac [5k\]: 5,5
+Sanyel [-\]: Should be 5,5
+SadPlayer [-\]: mogli by jeszcze 4 ruchy dograć
+Sanyel [-\]: No trick for the SE here.
+SadPlayer [-\]: by było 361 ruchów
+wysek [?\]: wtedy bylo by ko, ale lepsze dla bi
+LMP2 [-\]: Siasio ask Dracula about h19 ko is better, Dracula answet don't know
+wysek [?\]: haha
+dawdadfff: :D
+tenuk [1d\]: only one step ko
+Warfreak2 [4d\]: congratulations surma
+LMP2 [-\]: black win by 5.5
+Warfreak2 [4d\]: chodz, obalmy se jednego
+urtok [11k\]: :)
+])

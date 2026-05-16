@@ -1,183 +1,865 @@
-(
-  ;BR[4d]CA[UTF-8]DT[2014-12-12]EV[Polish Go Championship 2014]FF[4]GM[1]GN[Round 3 - Board 3]KM[6.50]PB[Koichiro Habu]PC[Warszawa]PW[Mateusz Surma]RE[W+R]RO[3]RU[japanese]ST[2]SZ[19]US[nare]WR[7d]
-  ;B[pc]
-  ;W[pq]
-  ;B[cp]
-  ;W[dd]
-  ;B[qo]
-  ;W[pk]
-  ;B[kq]
-  ;W[qp]
-  ;B[op]
-  ;W[po]
-  ;B[pp]
-  ;W[qq]
-  ;B[pl]
-  ;W[qk]
-  ;B[ok]
-  ;W[oo]
-  ;B[ql]
-  ;W[oj]
-  ;B[ol]
-  ;W[pi]
-  ;B[no]
-  ;W[np]
-  ;B[oq]
-  ;W[qn]
-  ;B[ro]
-  ;W[nn]
-  ;B[mo]
-  ;W[nq]
-  ;B[or]
-  ;W[nr]
-  ;B[qg]
-  ;W[mn]
-  ;B[ln]
-  ;W[lm]
-  ;B[mk]
-  ;W[lo]
-  ;B[nj]
-  ;W[ni]
-  ;B[mi]
-  ;W[nh]
-  ;B[mh]
-  ;W[ng]
-  ;B[kn]
-  ;W[ko]
-  ;B[jo]
-  ;W[mp]
-  ;B[jn]
-  ;W[qe]
-  ;B[pe]
-  ;W[qd]
-  ;B[pf]
-  ;W[qc]
-  ;B[pd]
-  ;W[lc]
-  ;B[mf]
-  ;W[rj]
-  ;B[hc]
-  ;W[mg]
-  ;B[lf]
-  ;W[lj]
-  ;B[mj]
-  ;W[lg]
-  ;B[kg]
-  ;W[kh]
-  ;B[rm]
-  ;W[kf]
-  ;B[jg]
-  ;W[nf]
-  ;B[md]
-  ;W[ne]
-  ;B[nd]
-  ;W[me]
-  ;B[le]
-  ;W[ld]
-  ;B[ke]
-  ;W[jd]
-  ;B[je]
-  ;W[id]
-  ;B[mb]
-  ;W[lb]
-  ;B[rf]
-  ;W[re]
-  ;B[rh]
-  ;W[lh]
-  ;B[ed]
-  ;W[qb]
-  ;B[ob]
-  ;W[hd]
-  ;B[gc]
-  ;W[if]
-  ;B[de]
-  ;W[cd]
-  ;B[ce]
-  ;W[ec]
-  ;B[fd]
-  ;W[qf]
-  ;B[ph]
-  ;W[sf]
-  ;B[sg]
-  ;W[rg]
-  ;B[jb]
-  ;W[jf]
-  ;B[rf]
-  ;W[se]
-  ;B[ma]
-  ;W[be]
-  ;B[bf]
-  ;W[bd]
-  ;B[cg]
-  ;W[eq]
-  ;B[hq]
-  ;W[ip]
-  ;B[jp]
-  ;W[cq]
-  ;B[bq]
-  ;W[dp]
-  ;B[cr]
-  ;W[co]
-  ;B[dq]
-  ;W[dr]
-  ;B[cq]
-  ;W[ep]
-  ;B[cn]
-  ;W[iq]
-  ;B[gr]
-  ;W[kl]
-  ;B[kk]
-  ;W[lk]
-  ;B[ml]
-  ;W[hp]
-  ;B[gp]
-  ;W[hr]
-  ;B[gq]
-  ;W[hn]
-  ;B[ho]
-  ;W[io]
-  ;B[go]
-  ;W[in]
-  ;B[ll]
-  ;W[jl]
-  ;B[mm]
-  ;W[en]
-  ;B[fm]
-  ;W[hl]
-  ;B[km]
-  ;W[bo]
-  ;B[er]
-  ;W[cm]
-  ;B[ck]
-  ;W[rn]
-  ;B[pn]
-  ;W[so]
-  ;B[ik]
-  ;W[il]
-  ;B[dn]
-  ;W[dm]
-  ;B[em]
-  ;W[dk]
-  ;B[cj]
-  ;W[el]
-  ;B[fl]
-  ;W[fk]
-  ;B[gk]
-  ;W[gl]
-  ;B[fn]
-  ;W[gj]
-  ;B[li]
-  ;W[kj]
-  ;B[hk]
-  ;W[fj]
-  ;B[ii]
-  ;W[ij]
-  ;B[hj]
-  ;W[hi]
-  ;B[jj]
-  ;W[ki]
-  ;B[hh]
-  ;W[gi]
-  ;B[ih]
-  ;W[gg]
-)
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[5400]OT[1x60 byo-yomi]
+GN[Polish Championship League 2014, round 3, board 3]PW[Mateusz Surma]PB[Koichiro Habu]WR[7d]BR[4d]DT[2014-12-12]EV[Polish Championship League 2014]RO[3]PC[Warsaw]US[nare]C[andriy: cześć
+andriy: będzie gra mateusza?
+gfdhff [2k\]: odwołana
+LMP1 [-\]: jeszcze 19minut
+maciek [2d\]: hurra!
+maciek [2d\]: swietny wybor gry LMP1! :D
+Lesmian [2d\]: :)
+Lesmian [2d\]: a jakbyście mieli możliwość przekazu drugiej deski, to glosuje za siasiem/soldanem. 
+]RE[W+Resign]
+;B[pc]
+;W[pq]
+;B[cp]
+;W[dd]
+;B[qo]
+;W[pk]C[maciek [2d\]: Mateusz by pewnie teraz czarnymi zagral R11 :)
+]
+;B[kq]
+;W[qp]C[Maek [4d\]: Kto gra? 
+maciek [2d\]: Bialymi Mateusz, czarnym Koichi
+Maek [4d\]: Tx
+maciek [2d\]: P4 prawdopodobnie
+challenge [2d\]: did mateusz lose anything yet? 
+maciek [2d\]: no
+maciek [2d\]: 3 players two ins 
+maciek [2d\]: wins
+maciek [2d\]: results : http://mp.go.art.pl/2014/wyniki
+]
+;B[op]
+;W[po]
+;B[pp]
+;W[qq]C[maciek [2d\]: F14 byloby zabawne )
+]
+;B[pl]C[maciek [2d\]: ostro :)
+]
+;W[qk]C[eyesdown [1k\]: i think matheusz won't loose any game
+]
+;B[ok]C[Lesmian [2d\]: chyba odważna gra ze strony czarnego, biorąc pod uwagę różnicę w sile
+]
+;W[oo]C[maciek [2d\]: roznica sily nie powinna wplywac na wybor ruchow...
+maciek [2d\]: i tez mi sie wydaje ze zaczal maksymalnie agresywnie
+]
+;B[ql]C[Lesmian [2d\]: może chodzi o zademonstrowanie, że "nie boję się". W zasadzie to trzymam kciuki za Koichiego, oby nie była to jednostronna gra!
+]
+;W[oj]C[maciek [2d\]: a mi sie wydaje, ze tak po prostu wyszlo niespecjalnie :)
+maciek [2d\]: chyba Q4 sie nie gra jak nie ma drabinki
+]
+;B[ol]
+;W[pi]C[maciek [2d\]: cofnac w P3 mogl byc lepsze
+]
+;B[no]C[maciek [2d\]: ale kto wie :)
+wysek [?\]: chyba ze jestes twardzielem:)
+maciek [2d\]: bialy na pewno jest zadowolony ze dostal ksztalt w Q11
+]
+;W[np]C[maciek [2d\]: i chyba O4 dziala
+]
+;B[oq]C[maciek [2d\]: :P
+bluedesk: what are the top 3 strongest ranks in poland?
+]
+;W[qn]
+;B[ro]C[maciek [2d\]: Mateusz is strongest
+bluedesk: is it 7d, 4d, 3d?
+Lesmian [2d\]: probably 7d, 4d, 4d etc
+bluedesk: ok
+AndreyL [3d\]: koichiro is polish?
+maciek [2d\]: Kraszek is 5d
+maciek [2d\]: he lives in Poland 15 years or so
+Lesmian [2d\]: yes there is one 5d player but he is inactive 
+sheena [?\]: he has polish citizenship
+sheena [?\]: so i guess he's polish
+maciek [2d\]: Polish and Japanese :)
+sheena [?\]: well if he wasnt, he wouldnt qualify for the ligue...
+]
+;W[nn]
+;B[mo]C[maciek [2d\]: O3
+]
+;W[nq]
+;B[or]C[BobWhoosta [1d\]: Looks like the 4d is going to lose in the first fight.
+wysek [?\]: nice one maciek
+maciek [2d\]: i O2 :)
+]
+;W[nr]
+;B[qg]C[maciek [2d\]: S6 zawsze cos
+mayeck [5d\]: biedny koichi
+Hobbes [1k\]: game over?
+maciek [2d\]: no nie zaczal rewelacyjnie :)
+maciek [2d\]: ale na pewno sie nie podda tak latwo!
+bluedesk: just jump at n10 is good
+maciek [2d\]: N6 chyba
+TurtleDove [3k\]: r15 for the fans
+maciek [2d\]: albo S6
+kostuek [?\]: e4?
+shogo [5k\]: go r15
+maciek [2d\]: S6 :)
+]
+;W[mn]C[wysek [?\]: yeah, s6
+maciek [2d\]: a jednak N6 ;d
+]
+;B[ln]C[jytdtg: b got sente to play r13 result 50/50
+maciek [2d\]: m5 
+maciek [2d\]: result is very good for white
+]
+;W[lm]C[Mogget [1d\]: No nareszcie, jakaś gra na żywo.
+maciek [2d\]: chyba czarny ma szanse zagrac N7
+maciek [2d\]: dlatego gralbym m5 bialymi, no ale skoro Mistrz tak nie zagral to sie myle :)
+bluedesk: problem is l6 n8 o9 m10 
+Mogget [1d\]: Sensei, maciek, sensei :P
+maciek [2d\]: :)
+Kogokhan [1k\]: tough for b
+maciek [2d\]: N7 for the fans!
+mayeck [5d\]: n7 m5 no i co?
+bluedesk: n7 m5?
+maciek [2d\]: n7 m5 l6 
+bluedesk: then yam yam n5
+mayeck [5d\]: żółwika chcesz dać?
+kostuek [?\]: m5 for the shape
+wysek [?\]: p6 pierw moze
+maciek [2d\]: cos trzeba oodac
+maciek [2d\]: inaczej N8 zamyka czarne
+mayeck [5d\]: p2  i s5  już oddał
+maciek [2d\]: te dwa to chyba mniej niz tamte 4
+mayeck [5d\]: ponad 1/3 wszystkich kamieni :)
+maciek [2d\]: p6 najpierw czemu nie chyba bez zbaczenia
+maciek [2d\]: no ja bym ciał :)
+bwv1004 [6k\]: L6
+maciek [2d\]: if u want L6 M5 better
+maciek [2d\]: or maybe not :P
+bwv1004 [6k\]: nope
+bluedesk: l6 n8 o9 m10 is the problem
+maciek [2d\]: thats why black N7!
+Bogdan13x [1k\]: uuu to dziś nie od piątej
+maciek [2d\]: dopiero pierwsze "joseki " graja :D
+Bogdan13x [1k\]: a więc zw
+bluedesk: i would be emotionally lost at this position
+]
+;B[mk]C[bwv1004 [6k\]: haha
+]
+;W[lo]
+;B[nj]C[maciek [2d\]: Koichi poswiecil na calego, czemu nie
+AndreyL [3d\]: nice joseki
+]
+;W[ni]
+;B[mi]
+;W[nh]
+;B[mh]C[wysek [?\]: probably a special variation
+]
+;W[ng]C[maciek [2d\]: L6 or not L6 thats the question
+]
+;B[kn]C[bluedesk: l5 
+Bogdan13x [1k\]: a może ktoś chciał więcej niż yoseki przewiduje
+maciek [2d\]: podobne do tego co mialem na mysli przy N7
+]
+;W[ko]C[maciek [2d\]: biualy wezmie dwa kamyki
+]
+;B[jo]C[wysek [?\]: czarny polozyl wiele kamieni, ktore jeszcze nie zginely. jest postep:)
+gfdhff [2k\]: najpierw będzie cięcie
+gfdhff [2k\]: mateusz i zwykłe dwa kamyczki?
+gfdhff [2k\]: szkoda wydatku energetycznego na położenie takiego ruchu
+mayeck [5d\]: np k6 l7 j6 ?
+mayeck [5d\]: i obie drabinki chodzą
+mayeck [5d\]: jest jakas szansa na transmisję innej gry jeśli koichi podda w ciągu 5 ruchów?
+gfdhff [2k\]: ;\]
+maciek [2d\]: wtedy m4 n4 n5 o5 l4 n5 j5 ...
+maciek [2d\]: nic dobrego dla czarnego :)
+maciek [2d\]: fajne to  k6 l7 j6 
+LMP1 [-\]: niestety nie
+bluedesk: k6 l7 k4 j5 j4 
+]
+;W[mp]C[gfdhff [2k\]: oh
+gfdhff [2k\]: zawiodłem się
+maciek [2d\]: a jednak
+gfdhff [2k\]: smuteczek
+maciek [2d\]: moze czarny mogl uciekac tymi dwoma?
+mayeck [5d\]: nieszczególnie
+]
+;B[jn]C[bluedesk: how do you say holy cow in polish? i may need to refer it later
+mayeck [5d\]: n4 w sumie typowe dla mateusza
+mayeck [5d\]: nie gra najsilniejszego ruchu jak nie musi
+kostuek [?\]: holyje cowji
+bluedesk: really? :)
+maciek [2d\]: na pewno mial powod
+LMP1 [-\]: mi to wyglada ze koichi swoj plan zrealizowal (zamknal bialego w narozniku, tyle ze 7d trudno sie zamyka)
+Bogdan13x [1k\]: 8n?
+OneStone [6d\]: n13 is a good move now
+kostuek [?\]: would i ever lie
+]
+;W[qe]C[OneStone [6d\]: But W can also just play e4 
+maciek [2d\]: tak, zaskakujaco dobrze wyszdle czarny jak na to jak to wygladalo w trakcie wychodzenia :)
+OneStone [6d\]: r15 was not in the planning
+bluedesk: the most common lie is " i never lie"
+OneStone [6d\]: Nah, the most common one is 'I alwasy lie'.
+OneStone [6d\]: I always lie
+bluedesk: that would be a paradox
+OneStone [6d\]: so?
+Mogget [1d\]: Szkoda trochę tej gry, bo Koichiro ma taki fajny, agresywny styl, a przeciw Mateuszowi on nie działa
+bluedesk: you can't say that it is a lie, it is a paradox
+OneStone [6d\]: I am sure it is a lie
+bluedesk: if it is a lie, then you tell the truth sometimes which means that it might be true
+Bogdan13x [1k\]: jak na razie to biały dużo nie zdobył 
+]
+;B[pe]
+;W[qd]C[OneStone [6d\]: r11 is a common move now
+]
+;B[pf]C[OneStone [6d\]: as well as q15 of course
+OneStone [6d\]: q14 should be at q16 
+maciek [2d\]: i think black wants to sacriface corner stone
+bluedesk: that would be a corner stone in the game
+]
+;W[qc]
+;B[pd]C[OneStone [6d\]: q14 is not to eficient now
+OneStone [6d\]: too
+maciek [2d\]: W N13
+bluedesk: m10 first then n13
+challenge [2d\]: how is freijlak doing until now?
+maciek [2d\]: 2 wins
+maciek [2d\]: u find results here http://mp.go.art.pl/2014/wyniki
+challenge [2d\]: thanks
+OneStone [6d\]: n13 is still a great move
+rsun [5d\]: quite a disastrous opening
+]
+;W[lc]C[maciek [2d\]: wow
+bluedesk: holyje cowji
+OneStone [6d\]: m17 is just a little weird
+rsun [5d\]: Heilige Kuh
+maciek [2d\]: blocking the extension
+BobWhoosta [1d\]: Black can almost resign here.
+kostuek [?\]: attack q17
+OneStone [6d\]: r18 s18 q18 is sente
+kostuek [?\]: wich is funny
+maciek [2d\]: not sure
+BobWhoosta [1d\]: But he can hope for some kind of sudden onset narcolepsy and time out.
+maciek [2d\]: r18 s18 q18 s13 ?
+guest1656: k17 
+OneStone [6d\]: n16 is normal I suppose
+BobWhoosta [1d\]: I was thinking N16, but the fighting favors white because he gets N13 naturally.
+]
+;B[mf]C[bluedesk: holyje smokezce
+kostuek [?\]: you got it
+rsun [5d\]: Heiliger Rauch
+LMP1 [-\]: Koichi put strong this stone on board
+Bogdan13x [1k\]: hohoho
+Bogdan13x [1k\]: bedzie się jeszcze działo
+Mogget [1d\]: jakieś s 8 jest sente
+Mogget [1d\]: białego nie da sie zabić
+maciek [2d\]: R12 
+Bogdan13x [1k\]: więc może czarny od samego początku zabija żywą grupę
+LMP1 [-\]: time: black 57m, white 59m
+rsun [5d\]: just push like george bush
+maciek [2d\]: hmm corner is bigger than this group in center
+tenuk [1d\]: s8 łączy albo daje życie
+maciek [2d\]: ta ale chyba lepiej zajac rog niz ratowac te grupe
+maciek [2d\]: R18 zaczyna mi sie podobac :D
+kostuek [?\]: b n7 would be quite big now
+Mogget [1d\]: może Kichiro stara sie wciągnąć białego w walke- żeby odciął q15
+Mogget [1d\]: *Koichiro
+bluedesk: w must be regretting not playing n13 now
+]
+;W[rj]C[maciek [2d\]: tutaj...
+rsun [5d\]: r18
+maciek [2d\]: S8
+KTC1685 [3k\]: r18 bigger, or isnt it?
+maciek [2d\]: i thionk if S8 W still need one move to live Q11
+bluedesk: r18 s18 q18 s14 s13 s8 
+maciek [2d\]: W wont play S14
+maciek [2d\]: but S19 :)
+bluedesk: then b can split off r9 and keep attacking
+maciek [2d\]: will see :)
+kostuek [?\]: hm.. q12?
+maciek [2d\]: q12 nie, S8 laczy
+]
+;B[hc]C[maciek [2d\]: zostawil ten problemik na pozniej :)
+KTC1685 [3k\]: jesus, heavy forecast! :-D
+rsun [5d\]: Scott der Grosse
+TTL [1d\]: 7d > 4d. :/
+maciek [2d\]: what a fight!
+TTL [1d\]: 2hard4b.
+maciek [2d\]: i think W R18 now
+Mogget [1d\]: But blach simply answers q18
+KTC1685 [3k\]: i dont understand your comment rsun, what do you mean with scott der grosse?
+maciek [2d\]: or just C14:D
+kostuek [?\]: j16 for me
+maciek [2d\]: rsun say scott der grosse when the situation is very complicated
+rsun [5d\]: do you understand Heilige Kuh?
+OneStone [6d\]: yes
+KTC1685 [3k\]: yes of course, i am from germany
+maciek [2d\]: R18 now/
+rsun [5d\]: then you can use the same process to understand Scott der Grosse
+OneStone [6d\]: sebstverstaendlich
+]
+;W[mg]C[rsun [5d\]: and also you may need to watch Back to the Future
+bwv1004 [6k\]: sebstverstaendlich what a word wauw
+KTC1685 [3k\]: selbstverständlich
+KTC1685 [3k\]: n13 hurts!
+]
+;B[lf]C[maciek [2d\]: wow
+KTC1685 [3k\]: m13! go on! :-D
+woodpecker [?\]: p18 wasn't better?
+rsun [5d\]: m13 is kiai
+]
+;W[lj]
+;B[mj]
+;W[lg]C[KTC1685 [3k\]: sorry, what? kiai?
+rsun [5d\]: kiai, brother of miai
+maciek [2d\]: :)))
+]
+;B[kg]C[rsun [5d\]: a shobute is sort of a kiai to the extreme
+KTC1685 [3k\]: m12 please!
+TTL [1d\]: I don't understand how B can play m14, even if he loses q17 it looks and feels too terrible not to play m13.
+bluedesk: b cannot be thinking about sacrificing, can he?
+duydoanh [6k\]: L14
+OneStone [6d\]: Man kann nicht wissen wie eine Kuh einen Hasen fängt.
+KTC1685 [3k\]: wer ist die kuh und wer der hase? :-D
+OneStone [6d\]: Was denkst du?
+challenge [2d\]: soviel deutsch bei der polnischen meisterschaft ^^
+woodpecker [?\]: L12
+rsun [5d\]: die Kuh ist selge Ruh
+KTC1685 [3k\]: 7d= Hase
+OneStone [6d\]: hahaha
+maciek [2d\]: a ja stawiam na O14
+OneStone [6d\]: das denke ich auch so.
+]
+;W[kh]C[maciek [2d\]: ):1 :D
+OneStone [6d\]: l12 ist normal
+bluedesk: wiecz needjie to szpeak polske
+woodpecker [?\]: ha, o 14 dopiero jak sprawdzi odpowiedz, cz powinien teraz chyba polaczyc
+KTC1685 [3k\]: terrible shape for b
+Kogokhan [1k\]: This is too dangerous for b. W has easy ways to lives, practically not in danger
+OneStone [6d\]: Jak krowa łapie zająca
+bwv1004 [6k\]: N14
+OneStone [6d\]: m14 was just horrible
+bwv1004 [6k\]: O14 :)
+OneStone [6d\]: he should block at m13 no matter what
+guest1656: Jak krowa łapie zająca?
+duydoanh [6k\]: L11
+challenge [2d\]: if he needs m14 then n14 was really bad
+woodpecker [?\]: a może L11 teraz. Cieżko bedzie sensownie wyciagnac Q15 , a zeby poswiecic za duze
+OneStone [6d\]: How can a cow catch a rabbit
+Kogokhan [1k\]: Good question :)
+kostuek [?\]: why should a cow do such stuff
+maciek [2d\]: How can a cow catch a rabbit? Musi sie przyczaic i jak zajac sie zagapi to go kopytem w glowe :)
+OneStone [6d\]: It's a common philosophical ponderance in our country.
+bluedesk: competition, they both eat grass
+kostuek [?\]: i see
+OneStone [6d\]: True, and kangaroo's do too.
+Mogget [1d\]: Nare, jak tam inne deski, ktoś juz skończył?
+KTC1685 [3k\]: maybe the cow could tempt the rabbit with carrots?
+OneStone [6d\]: speaking about kangaroos: https://www.facebook.com/video.php?v=768973713156693&pnref=story
+Lesmian [2d\]: Poeci zauważyli już dawno, że krowy mają piękne oczy. Oczy w go często wystarczają, nie trzeba łapać :)
+OneStone [6d\]: B is already/again in problems
+LMP1 [-\]: na 4 deskach nadal jest walka, ide popatrzec
+Bogdan13x [1k\]: ej a kto bedzie transmitował
+OneStone [6d\]: l8 looks normal
+OneStone [6d\]: but B has no idea what he is doing or not.
+maciek [2d\]: M12
+maciek [2d\]: najpierw ciac potem myslec
+OneStone [6d\]: What is the point of cutting?
+maciek [2d\]: to cut
+KTC1685 [3k\]: lol
+bluedesk: you can always think later
+woodpecker [?\]: cut-and-die-tesuji
+maciek [2d\]: yeah that's what i said in polish
+maciek [2d\]: cut and think later
+KTC1685 [3k\]: first cut then think?
+LMP1 [-\]: Nill konczy fuseki :), gry Sasia nie rozumiem,Marcin przypuscil ciezki atak na grupe Lukasza
+maciek [2d\]: yes
+Greenwood [7k\]: cut 1st cut later
+Greenwood [7k\]: cut again
+KTC1685 [3k\]: ok, that is the reason why i always lose! i think first and then i cut!
+maciek [2d\]: :))
+bwv1004 [6k\]: hehe
+Elementary [-\]: lol
+maciek [2d\]: see no wu can become at least 2d KGS
+Greenwood [7k\]: black doesn't seem to be fairing to well here
+Mogget [1d\]: Faktycznie, gra Siasia może być najbardziej ciekawa
+KTC1685 [3k\]: thx for your tip! :-D
+maciek [2d\]: u re welcome
+maciek [2d\]: if i think i if i think a bit i play L14
+OneStone [6d\]: s8 makes kind of 1/2 an eye
+Greenwood [7k\]: q12 for white to make 2 eyes for white
+OneStone [6d\]: but I still think l8 is best
+maciek [2d\]: double hane looks cool too
+maciek [2d\]: :D
+Mogget [1d\]: black has to escape somehow
+Greenwood [7k\]: l11
+OneStone [6d\]: l11 is a huge loss
+OneStone [6d\]: l11 k12 
+]
+;B[rm]C[Greenwood [7k\]: ok dokie
+]
+;W[kf]
+;B[jg]C[OneStone [6d\]: s7 is certainly bad too
+OneStone [6d\]: o14 n16 is not yet a big deal BUT B q16 may die
+Bogdan13x [1k\]: czarny nie ma szans tego zabić hwila i zginą mu 2 grupy
+Mogget [1d\]: Black is trying to complicate and attack o12
+OneStone [6d\]: B needs to play r18 s18 q18 ASAP
+OneStone [6d\]: B is trying complicate because he is confused
+Mogget [1d\]: It may be finishing blow
+bwv1004 [6k\]: onestone haha
+]
+;W[nf]
+;B[md]
+;W[ne]
+;B[nd]
+;W[me]
+;B[le]
+;W[ld]
+;B[ke]
+;W[jd]C[kostuek [?\]: brutal
+]
+;B[je]
+;W[id]C[Greenwood [7k\]: still looks very bad for black
+kostuek [?\]: he can come back with a famous o13 kill
+Mogget [1d\]: and black has another group to look after
+kotgokot [1k?\]: k18 for b is ok
+kotgokot [1k?\]: is it?
+Bogdan13x [1k\]: black must cut 12m because can't win score
+Mogget [1d\]: thhen white j15
+kotgokot [1k?\]: who is mateus on kgs?
+PolskiDan [?\]: drakula
+bluedesk: is he a professioanal vampire?
+gogonuts [4d\]: lower right was already awful for b
+OneStone [6d\]: quite fast suddenly
+Mogget [1d\]: no, just amateur
+gogonuts [4d\]: and h17 was much too thin
+LMP1 [-\]: co do gry Sasia i Leszka, Leszek ma bardzo duza grupe bezoczna i stara się o życie ostro atakując
+Mogget [1d\]: biting people for fun
+guest1656: he drinks fake blood only
+Mogget [1d\]: Dzięki Nare
+OneStone [6d\]: r18 s18 q18 anyway
+Mogget [1d\]: Mam nadzieje, że Siasio zaliczy wielkiego killa
+]
+;B[mb]C[wysek [?\]: you are getting boring, OneStone
+maciek [2d\]: :)
+OneStone [6d\]: it's boring to see that he keeps missing those important moves.
+Mogget [1d\]: Why r 18?
+OneStone [6d\]: because it is sente
+PolskiDan [?\]: oo siema Maciek:)
+OneStone [6d\]: and W has to decide how to live
+]
+;W[lb]
+;B[rf]
+;W[re]C[maciek [2d\]: czesc polskidanie :)
+OneStone [6d\]: s14 was bad
+Lesmian [2d\]: why?
+Mogget [1d\]: Is white unconditionaly allive?
+bluedesk: yes
+OneStone [6d\]: because r18 s18 q18 and then B s13 will certainly become sente
+]
+;B[rh]
+;W[lh]C[Lesmian [2d\]: tx
+OneStone [6d\]: But B can now pray for q18 r18 s18 s19 s17 t17 
+OneStone [6d\]: That is actually and interesting problem
+bluedesk: that's seki
+kotgokot [1k?\]: when finals polishid?
+Mogget [1d\]: what is polishid?
+bluedesk: after t17 b plays t18 and w t16 is seki
+maciek [2d\]: nie to co skojarzyles :)
+]
+;B[ed]C[OneStone [6d\]: OK, guys, I have seen enough
+alias [6k\]: no good?
+gogonuts [4d\]: b really needed to finish top right
+gogonuts [4d\]: but e16 looks promising in itself
+Mogget [1d\]: Koichiro really likes to attach
+bwv1004 [6k\]: haha
+]
+;W[qb]
+;B[ob]C[Mogget [1d\]: One Stone was right, r18 was big :)
+bluedesk: may be he read the book "attach and defense"
+alias [6k\]: the game looks so troublesome
+gogonuts [4d\]: r18 was a must
+bwv1004 [6k\]: bluedesk haha
+gogonuts [4d\]: even an "urgent" attachment like e16 cannot be interposed
+bert [2d?\]: b dies here, no?
+alias [6k\]:  how? :S
+Mogget [1d\]: It looks like he is going to die
+duydoanh [6k\]: O17
+guest1656: q13 r14 t13 
+alias [6k\]: yes
+kmlck [3d\]: why didnt b play r18 anyway
+kmlck [3d\]: it was sente
+Mogget [1d\]: I don't know
+bert [2d?\]: n19 o18 r14 q12 r11 
+gogonuts [4d\]: w prob cant kill b there, but w r18 was still depressing
+kmlck [3d\]: e16 bad style
+]
+;W[hd]C[gogonuts [4d\]: i actually approve of e16 locally
+]
+;B[gc]C[maciek [2d\]: maybe black was afraid R18 wasnt sente :)
+kmlck [3d\]: i meant the move order
+]
+;W[if]C[gogonuts [4d\]: but i dont approve of g17
+alias [6k\]: affirmative
+gogonuts [4d\]: why attach, if your going to go back and answer yourself?
+]
+;B[de]C[gogonuts [4d\]: g17 for J14 is terrible for b
+Scrognegne [3d\]: q8 looks nearly dead
+alias [6k\]: lots of weakness 
+gogonuts [4d\]: is b m9 good?
+gogonuts [4d\]: w i mean
+alias [6k\]: why not L10?
+Scrognegne [3d\]: I'd l9
+flurane [4k\]: LMP1, time 4 both?
+Scrognegne [3d\]: m10 induce n8, which is nearly sente and creates an eye
+PolskiDan [?\]: M10 is fine
+Scrognegne [3d\]: m9*
+]
+;W[cd]
+;B[ce]
+;W[ec]
+;B[fd]C[gogonuts [4d\]: w will probably only play simple stuff until he can see a clear final kill
+bluedesk: w p15 kills?
+gogonuts [4d\]: just let b self-destruct
+]
+;W[qf]
+;B[ph]
+;W[sf]C[gogonuts [4d\]: this is the most annoying
+]
+;B[sg]
+;W[rg]
+;B[jb]C[Jazzman [1d\]: ?
+bluedesk: r11 not a threat
+gogonuts [4d\]: t14 was another missed double sente
+maciek [2d\]: W is a nice guy he doesnt want to hurt too much  :)
+Jazzman [1d\]: k18 no threat?
+Mogget [1d\]: and what with the corner, does c18 kill it?
+Welvang [6d\]: that's right
+gogonuts [4d\]: i think w should answer at k14
+gogonuts [4d\]: otherwise b k14 becomes sente
+PolskiDan [?\]: b has too many weaknesses and shit shapes, gonna lose for sure
+gogonuts [4d\]: if it wasnt for those shit shapes, i would be much stronger :-)
+Jazzman [1d\]: probably you should ignore the first threat....sounds plausible :)
+Greenwood [7k\]: haha
+]
+;W[jf]C[Jazzman [1d\]: *not...
+gogonuts [4d\]: reason prevails
+Greenwood [7k\]: if it weren't for the fact that my opponent got to play every time i play, I would be a much stronger player
+]
+;B[rf]
+;W[se]C[bluedesk: this is not a ko anywanys
+victor5 [1k\]: the end
+gogonuts [4d\]: yeah, whats the point? - feels like syssiphus when the other guy keeps ruining things
+maciek [2d\]: S11 makes ko no?
+OneStone [6d\]: just resign
+flurane [4k\]: 1 stone still here?
+gogonuts [4d\]: anyways, b lost t14 sente and also played an expensive ko threat - the position is really going down the drain
+gogonuts [4d\]: must be gone - he would have howled, when w got t14
+Greenwood [7k\]: maybe n17
+]
+;B[ma]C[gogonuts [4d\]: this will live
+gogonuts [4d\]: w prob just back to b15
+Greenwood [7k\]: ok so maybe I had the order backwards, but.
+Bogdan13x [1k\]: 17o and 19p?
+LMP1 [-\]: Leszek przezyl, walka toczy sie nadal
+gogonuts [4d\]: b is threatening to connect
+]
+;W[be]C[gogonuts [4d\]: see
+]
+;B[bf]C[herissondu [4d\]: 19p is too much
+gogonuts [4d\]: depressing enough for b
+herissondu [4d\]: maybe 1p
+]
+;W[bd]
+;B[cg]
+;W[eq]C[Bogdan13x [1k\]: ok thx at now i see
+Pillan [1k\]: almost hopeless game for B
+rsun [5d\]: b can win if w passes out
+gogonuts [4d\]: and nice e3 - e4 instead might have created a sharp battle
+gogonuts [4d\]: giving b another fighting chance is too much honor :-)
+bwv1004 [6k\]: b looks great
+TTL [1d\]: Pic please.
+gogonuts [4d\]: in person?
+bwv1004 [6k\]: on board
+TTL [1d\]: I'd resign as B.
+rsun [5d\]: yeah I also like the black stones on kgs more than the white stones
+wysek [?\]: pictures of players are on the website, http://mp.go.art.pl
+oliolioli [2k\]: looks bad
+oliolioli [2k\]: too many dead or nearly dead groups
+BlazejS [2k\]: How much time left for players?
+LMP1 [-\]: 21m for black, 27 for white
+gogonuts [4d\]: thx for the link
+gogonuts [4d\]: Mateusz has a real no-nonsense look there :-)
+BlazejS [2k\]: Thanks
+]
+;B[hq]C[gogonuts [4d\]: coubnter pincer at c7 the simplest , imo
+gogonuts [4d\]: counter
+gogonuts [4d\]: some risk in d5, although the fingers itch
+Jazzman [1d\]: based on stregth on paper, they could have spare a lot of time just announcing Mateusz polish Champion 2014...
+]
+;W[ip]C[rsun [5d\]: d5 b must push cut
+gogonuts [4d\]: right
+gogonuts [4d\]: nice question
+G361 [?\]: Salut. ^^
+gogonuts [4d\]: w trtying to make d5 doable
+]
+;B[jp]C[rsun [5d\]: this can't be right
+gogonuts [4d\]: h3 felt better at g3 anyways
+gogonuts [4d\]: now d5 should be workable
+gogonuts [4d\]: w may want a safe win, but also has a 7d honor to defend :-)
+]
+;W[cq]
+;B[bq]
+;W[dp]C[gogonuts [4d\]: not a thrill, but the most depressing for b :-)
+]
+;B[cr]
+;W[co]
+;B[dq]C[PolskiDan [?\]: I think he has already shown what 7d strenght mean, W has cut B like a ham 
+bwv1004 [6k\]: go habu san
+]
+;W[dr]
+;B[cq]C[gogonuts [4d\]: he made it look like b cut himself - thats 7d power :-)
+bwv1004 [6k\]: master of attachments
+Jazzman [1d\]: the skill is, to make it look easy :)
+]
+;W[ep]C[gogonuts [4d\]: grace under pressure
+rsun [5d\]: d6 
+gogonuts [4d\]: ok, d6 may be the fianl challenge, but it looks doomed
+rsun [5d\]: the ghost of go seigen can make it work
+alias [6k\]: :P
+gogonuts [4d\]: i dont think b has more than c6, even though thats not enough by far
+]
+;B[cn]
+;W[iq]
+;B[gr]C[rsun [5d\]: I read a sequence where after b d6, b can pull out k13 and k15 stealthily and kill the whole center group
+gogonuts [4d\]: awsome rsun
+gogonuts [4d\]: awe
+]
+;W[kl]C[gogonuts [4d\]: h has had enough
+gogonuts [4d\]: w
+]
+;B[kk]
+;W[lk]
+;B[ml]C[Lesmian [2d\]: black is just having a bad dream, that`s all
+gogonuts [4d\]: w is like a money lender, remining b of back payments
+]
+;W[hp]
+;B[gp]C[Lesmian [2d\]: :)
+]
+;W[hr]
+;B[gq]C[rsun [5d\]: gogo, aja is playing zen now
+]
+;W[hn]C[gogonuts [4d\]: thx
+bwv1004 [6k\]: game has just begun!
+LMP1 [-\]: Marcin Majka won by resign
+gogonuts [4d\]: hes playing zenbs ...
+Mogget [1d\]: Brawo Higaki
+LMP1 [-\]: jak na razie gracze 5-8 vs 1-4 sprawili tylko jedna niespodzianke
+]
+;B[ho]C[maciek [2d\]: Mateusz jest 5 :) jego niespodzianek nie liczysz? ;)
+Mogget [1d\]: Mateusz jest 4
+Mogget [1d\]: dlatego nie ma niespodzianek
+Lesmian [2d\]: chodzi o startową pozycję
+maciek [2d\]: aha bo Mayeck sie wycofał :)
+LMP1 [-\]: nie bo Mayeck nie gra i awansowal na 4
+wysek [?\]: a ta niespodzianka jest wygrana Leszka, malo niespodziewane:)
+]
+;W[io]C[maciek [2d\]: tak tak :)
+rsun [5d\]: gogo, aja escaped
+]
+;B[go]
+;W[in]C[NoSuchAcc [1k\]: Koichi Habu... doesn't sound very Polish.
+Mogget [1d\]: Ja sie spodziewałem, że Higaki wygra
+kotgokot [1k?\]: tsubasa sama
+Mogget [1d\]: i zostałem niemilo zaskoczony
+]
+;B[ll]
+;W[jl]
+;B[mm]C[kotgokot [1k?\]: b totally just died?
+NoSuchAcc [1k\]: nothing is totally just
+kotgokot [1k?\]: :D
+LMP1 [-\]: przed liga liczylem na duzo "niespodzianek" (wtedy Mateusz byl 5) 
+gogonuts [4d\]: fascinating, how the b position keeps getting worse
+maciek [2d\]: :)
+kotgokot [1k?\]: it's like my old friend gargula
+kotgokot [1k?\]: rofln
+gogonuts [4d\]: w back to d6?
+]
+;W[en]C[yurei [1k\]: how to live mr. prime minister
+Aleksandra [?\]: rezygn :(
+]
+;B[fm]
+;W[hl]
+;B[km]C[gogonuts [4d\]: i tremble to criticize a 7d, but d6 was better than e6, imo
+]
+;W[bo]C[tenuk [1d\]: co na innych deskach?
+]
+;B[er]C[LMP1 [-\]: Marcin wygral, na reszcie sie gra
+]
+;W[cm]C[tenuk [1d\]: j2
+gogonuts [4d\]: b needs to kill that group - good luck with that
+rsun [5d\]: lee sedol can kill it
+]
+;B[ck]C[gogonuts [4d\]: e6 did give b a tiny little chance
+LMP1 [-\]: ale jeszcze kifu nie dotarly
+kotgokot [1k?\]: i fear what is b doing
+kotgokot [1k?\]: :(
+Lesmian [2d\]: a co jeśli gracze nie zrobią kifu?
+]
+;W[rn]
+;B[pn]C[Lesmian [2d\]: gra jest unieważniona?
+LMP1 [-\]: moge wpisac jako rezultat 0-0
+]
+;W[so]
+;B[ik]
+;W[il]C[karkki: L10
+alias [6k\]: black is ebloic
+Lesmian [2d\]: właśnie spostrzegłem, że czarny znowu ginie
+Aleksandra [?\]: jak zwykle :)
+gogonuts [4d\]: b needs both p6 and r7 in sente :-)
+Lesmian [2d\]: szkoda. Ale ciężko jest wyobrazić sobie, jak przeciwnik Mateusza ma grać, żeby jakoś mu zagrozić
+Mogget [1d\]: s9 nie daje jakiegoś ko o życie?
+karkki: K12 way better
+Lesmian [2d\]: chyba daje, ale to ko od którego czarny ucierpi gdzie indziej, a biały niewiele traci
+Leonart12 [4k\]: R7 S8 T8
+Leonart12 [4k\]: R7 S9 T8 :))
+Bogdan13x [1k\]: tak ogólnie to biała grupa jest mniejsza i bez oczu aczkolwiek trudno uwierzyć aby biały nie przeżył
+maciek [2d\]: r7 is atari :)
+Lesmian [2d\]: która grupa?
+Lesmian [2d\]: r7 nie daje życia bezwarunkowo
+Aleksandra [?\]: r7 nic nie
+Bogdan13x [1k\]: grópa 8 j
+maciek [2d\]: chyba nic nie daje
+tenuk [1d\]: czarny żyje
+Mogget [1d\]: jak?
+]
+;B[dn]C[maciek [2d\]: wiem jak
+maciek [2d\]: !
+maciek [2d\]: p6 o5 o7 
+maciek [2d\]: yyy
+Aleksandra [?\]: p6 s4 .
+Lesmian [2d\]: nie
+maciek [2d\]: p6 s4  :D
+Aleksandra [?\]: nic nie :D
+maciek [2d\]: no
+Aleksandra [?\]: one eye is dead
+maciek [2d\]: glupi jestem bo juz to liczylem jakies 20 minut temu :)
+Mogget [1d\]: czarny ma ko w s9 lub wyjście w m11
+Aleksandra [?\]: r7 s4 s9 = ko
+Lesmian [2d\]: to jest taka sytuacja, że lepiej tam nie patrzyć, może przeciwnik też nie będzie ;)
+maciek [2d\]: a to S9 to chyba zabija gore?
+]
+;W[dm]C[Lesmian [2d\]: jaką górę?
+Mogget [1d\]: nie, góra ma połączenie w m19
+maciek [2d\]: a jak bialy zagra M19/
+Lesmian [2d\]: no to ko
+tenuk [1d\]: faktycznie ko, ale czarny może uciekać
+]
+;B[em]C[Mogget [1d\]: to p15
+maciek [2d\]: n17 o17 p19 
+Lesmian [2d\]: a może nawet nie ko?
+jytdtg: you can tell b is in trouble by the way he is
+wysek [?\]: m19 o17
+Aleksandra [?\]: d5 
+Lesmian [2d\]: m19 o17
+Lesmian [2d\]: tak
+rsun [5d\]: gogo have you had a fresh coconut before?
+maciek [2d\]: m19 o17 p19 
+Lesmian [2d\]: p19 nie odbiera oka
+Mogget [1d\]: odbiera
+maciek [2d\]: aha
+maciek [2d\]: racja
+Mogget [1d\]: ?
+maciek [2d\]: czyli czarny nie ma tragicznie, tylko bardzo zle :)
+Lesmian [2d\]: dokładnie :)
+PolskiDan [?\]: generalnie czarny ded, kaput, kaplica i krzyż na drogę
+Lesmian [2d\]: ma zapewnione 2-3 punkty dzięki górnej grupie więc luz
+Lesmian [2d\]: ma też z 10 na dole
+Lesmian [2d\]: no i ściana w centrum
+Lesmian [2d\]: no chyba że ubije teraz
+]
+;W[dk]
+;B[cj]C[Lesmian [2d\]: ale by było gdyby ubił~!
+Lesmian [2d\]: do boju!
+yurei [1k\]: e8 
+]
+;W[el]
+;B[fl]
+;W[fk]
+;B[gk]C[Lesmian [2d\]: teraz jakieś tayemne tesuji z japońskich pradawnych ksiąg by się przydało
+Lesmian [2d\]: ruch czerwieniejącego nosa!
+Leonart12 [4k\]: black want kill J8
+]
+;W[gl]
+;B[fn]
+;W[gj]C[Mogget [1d\]: Może ruch dojrzewającej wiśni?
+]
+;B[li]C[Mogget [1d\]: To brzmi ładnie
+Bogdan13x [1k\]: tak dzielnie Koichiro walczy że aż dziw że wcześniejszych gier nie wygrał
+]
+;W[kj]C[tenuk [1d\]: traci groźby do ko?
+Mogget [1d\]: Trochę szkoda, jestesmy trochę mało gościnni dla niego
+Lesmian [2d\]: dlaczego? przecież to własnie jemu kibicuję!
+Mogget [1d\]: Ale przeciwnicy mu nie kibicują
+LMP1 [-\]: Koichi to my, zyje tutaj dluzej od wielu z nas
+]
+;B[hk]C[maciek [2d\]: :D
+Mogget [1d\]: To co, Nare, możemy go lac ? :P
+Aleksandra [?\]: he's doing well :)
+LMP1 [-\]: juz pare razy probowalem, ale za kazdym razem to ja bylem lany :-p
+Aleksandra [?\]: :)
+]
+;W[fj]
+;B[ii]C[Mogget [1d\]: Ja jeszcze nie miałem okazji, chętnie bym spróbował :)
+bluedesk: j10 = The End
+Aleksandra [?\]: l11 h11 g13 ?
+]
+;W[ij]C[tenuk [1d\]: h12
+]
+;B[hj]C[alias [6k\]: h11
+kil [1k\]: whole center died?
+PolskiDan [?\]: k10 wasn't better for B?
+Ootakamoku [3d\]: h11 is the move
+wysek [?\]: PolskiDan: no, it's the same
+kil [1k\]: k10 was same
+]
+;W[hi]
+;B[jj]
+;W[ki]C[yurei [1k\]: resign
+]
+;B[hh]
+;W[gi]C[Lesmian [2d\]: two moves in a row and it would be ok
+kil [1k\]: =)
+kil [1k\]: often would in fights
+Lesmian [2d\]: sometimes i need three ;)
+yurei [1k\]: what two moves?
+LMP1 [-\]: black enter in byo 
+Michaelz [-\]: wierd game for black
+Lesmian [2d\]: j12 and k9
+]
+;B[ih]C[kil [1k\]: p6, o5 would help too
+]
+;W[gg]C[Lesmian [2d\]: add d10 and it is quite a good game for b
+LMP1 [-\]: Mateusz won by resign
+yurei [1k\]: after this two moves it's still better for white
+Bogdan13x [1k\]: 14h
+Mogget [1d\]: Graty dla Mateusza
+Lesmian [2d\]: dzięki za transmisję LMP
+tenuk [1d\]: a inne deski
+Lesmian [2d\]: czy jutro zobaczymy więcej desek? 
+Ootakamoku [3d\]: h14 kinda pulls out something but..
+LMP1 [-\]: jutro czwartej rundy prawdopobnie ja nie bede transmitowal (o10 zaczyna sie takze towarzyszacy) ale przynajmniej jedna deska powinna byc
+LMP1 [-\]: jakies propozycje?
+Bogdan13x [1k\]: yes h14 is bed
+LMP1 [-\]: na razie Mateusz i Marcin wygrali, na pozostalych dwoch toczy sie nadal gra
+Mogget [1d\]: Może Koichiro i Siasio?
+sosna [?\]: mateusz vs lesio?
+Bogdan13x [1k\]: albo Mateusz z Leszkiem
+tenuk [1d\]: ale to chuban?
+Mogget [1d\]: Cały czas jest Mateusz
+Mogget [1d\]: I zawsze wygrywa
+PolskiDan [?\]: bo jest najlepszy
+Bogdan13x [1k\]: a kogo chcesz oglądać 
+sheena [?\]: wlasnie, wynik zbyt przewidywalny
+iluvtora: #ancelinade
+Mogget [1d\]: w sumie, to będe mógł oglądać na żywo
+Mogget [1d\]: więc oglądajcie kogo chcecie :P
+LMP1 [-\]: Stanislaw Frejla won by 4.5 points
+LMP1 [-\]: *Frejlak
+Mogget [1d\]: Siasio na mistrza!
+Mogget [1d\]: Jak bedzie Siasio vs Mateusz, to transmitujcie :P
+Bogdan13x [1k\]: jeszcze musi wygać z Mateuszem
+LMP1 [-\]: Sebastian ma 16m, Krzysztof byo 
+Mogget [1d\]: Jak wygląda gra
+Mogget [1d\]: ?
+])

@@ -1,354 +1,728 @@
-(
-  ;BR[4d]CA[UTF-8]DT[2016-01-08]EV[Polish Go Championship 2015]FF[4]GM[1]GN[Round 2 - Board 1]KM[6.50]PB[Leszek Sołdan]PC[Warszawa]PW[Koichiro Habu]RE[W+17.5]RU[japanese]ST[2]SZ[19]WR[5d]
-  ;B[pq]
-  ;W[dp]
-  ;B[qd]
-  ;W[dc]
-  ;B[nc]
-  ;W[qn]
-  ;B[ql]
-  ;W[qq]
-  ;B[qp]
-  ;W[pp]
-  ;B[rq]
-  ;W[qr]
-  ;B[po]
-  ;W[op]
-  ;B[qo]
-  ;W[rr]
-  ;B[mq]
-  ;W[oo]
-  ;B[pn]
-  ;W[oq]
-  ;B[jq]
-  ;W[hq]
-  ;B[ce]
-  ;W[ci]
-  ;B[cq]
-  ;W[cp]
-  ;B[dq]
-  ;W[fq]
-  ;B[bp]
-  ;W[bo]
-  ;B[bq]
-  ;W[cn]
-  ;B[er]
-  ;W[cd]
-  ;B[de]
-  ;W[fd]
-  ;B[eh]
-  ;W[ei]
-  ;B[fi]
-  ;W[ej]
-  ;B[fh]
-  ;W[gk]
-  ;B[hc]
-  ;W[gb]
-  ;B[he]
-  ;W[gf]
-  ;B[fe]
-  ;W[ge]
-  ;B[gd]
-  ;W[fc]
-  ;B[ch]
-  ;W[hf]
-  ;B[bi]
-  ;W[cj]
-  ;B[bj]
-  ;W[bk]
-  ;B[fj]
-  ;W[fk]
-  ;B[ck]
-  ;W[bh]
-  ;B[ek]
-  ;W[ai]
-  ;B[di]
-  ;W[aj]
-  ;B[dj]
-  ;W[ie]
-  ;B[jd]
-  ;W[lr]
-  ;B[lq]
-  ;W[kr]
-  ;B[jr]
-  ;W[kq]
-  ;B[kp]
-  ;W[mr]
-  ;B[ip]
-  ;W[jo]
-  ;B[jp]
-  ;W[jm]
-  ;B[in]
-  ;W[jn]
-  ;B[ln]
-  ;W[lm]
-  ;B[fr]
-  ;W[gr]
-  ;B[io]
-  ;W[go]
-  ;B[im]
-  ;W[il]
-  ;B[hl]
-  ;W[hk]
-  ;B[gn]
-  ;W[el]
-  ;B[dl]
-  ;W[em]
-  ;B[mm]
-  ;W[ll]
-  ;B[ml]
-  ;W[on]
-  ;B[jl]
-  ;W[ik]
-  ;B[mk]
-  ;W[jk]
-  ;B[lk]
-  ;W[kl]
-  ;B[nn]
-  ;W[pm]
-  ;B[rn]
-  ;W[cg]
-  ;B[dg]
-  ;W[qm]
-  ;B[rm]
-  ;W[ro]
-  ;B[rp]
-  ;W[so]
-  ;B[om]
-  ;W[pl]
-  ;B[pk]
-  ;W[ol]
-  ;B[ok]
-  ;W[nm]
-  ;B[nl]
-  ;W[om]
-  ;B[rk]
-  ;W[ne]
-  ;B[ff]
-  ;W[qj]
-  ;B[qk]
-  ;W[qe]
-  ;B[pd]
-  ;W[nj]
-  ;B[nk]
-  ;W[rd]
-  ;B[rc]
-  ;W[rf]
-  ;B[hd]
-  ;W[gg]
-  ;B[if]
-  ;W[ig]
-  ;B[jf]
-  ;W[ke]
-  ;B[hh]
-  ;W[hg]
-  ;B[je]
-  ;W[mc]
-  ;B[ji]
-  ;W[ii]
-  ;B[ih]
-  ;W[jg]
-  ;B[kf]
-  ;W[jh]
-  ;B[hi]
-  ;W[ki]
-  ;B[ij]
-  ;W[jj]
-  ;B[nd]
-  ;W[le]
-  ;B[me]
-  ;W[lf]
-  ;B[kg]
-  ;W[ii]
-  ;B[nf]
-  ;W[kc]
-  ;B[ji]
-  ;W[kh]
-  ;B[lg]
-  ;W[ib]
-  ;B[qg]
-  ;W[cf]
-  ;B[fg]
-  ;W[df]
-  ;B[ef]
-  ;W[dh]
-  ;B[gh]
-  ;W[gj]
-  ;B[ch]
-  ;W[mg]
-  ;B[lh]
-  ;W[dh]
-  ;B[bd]
-  ;W[bc]
-  ;B[ch]
-  ;W[mo]
-  ;B[mn]
-  ;W[dh]
-  ;B[dd]
-  ;W[cc]
-  ;B[ch]
-  ;W[mp]
-  ;B[ep]
-  ;W[fo]
-  ;B[ko]
-  ;W[dh]
-  ;B[dm]
-  ;W[eo]
-  ;B[ch]
-  ;W[kn]
-  ;B[lo]
-  ;W[dh]
-  ;B[dn]
-  ;W[do]
-  ;B[ch]
-  ;W[kj]
-  ;B[dh]
-  ;W[mf]
-  ;B[oe]
-  ;W[ng]
-  ;B[li]
-  ;W[cl]
-  ;B[dk]
-  ;W[pg]
-  ;B[ni]
-  ;W[qh]
-  ;B[sn]
-  ;W[mb]
-  ;B[nb]
-  ;W[sc]
-  ;B[sb]
-  ;W[sd]
-  ;B[qb]
-  ;AE[cl]AW[ab][cb][bg][rg][ph][al][bm][lp][np]AB[ac][ad][bf][rh][qi][ri][bl][cm][no]
-  ;
-  ;
-  ;AE[qg]AW[qf][nh][lj][eq]AB[pf][oi][mj]
-  ;W[]
-  ;B[fl]
-  ;W[gl]
-  ;B[fm]
-  ;W[en]
-  ;B[gm]
-  ;W[ii]
-  ;B[or]
-  ;W[pr]
-  ;B[ji]
-  ;W[kk]
-  ;B[ma]
-  ;W[lb]
-  ;B[hb]
-  ;W[ic]
-  ;B[id]
-  ;W[ha]
-  ;B[hp]
-  ;W[gp]
-  ;B[md]
-  ;W[la]
-  ;B[fs]
-  ;W[na]
-  ;B[oa]
-  ;W[mh]
-  ;B[mi]
-  ;W[pi]
-  ;B[pj]
-  ;W[af]
-  ;B[be]
-  ;W[sr]
-  ;B[gs]
-  ;W[hs]
-  ;B[is]
-  ;W[hr]
-  ;B[ds]
-  ;W[hm]
-  ;B[hn]
-  ;W[ld]
-  ;B[jc]
-  ;W[jb]
-  ;B[gc]
-  ;W[ec]
-  ;B[sg]
-  ;W[sf]
-  ;B[sh]
-  ;W[ii]
-  ;B[fb]
-  ;W[ga]
-  ;B[ji]
-  ;W[sq]
-  ;B[sp]
-  ;W[ii]
-  ;B[ia]
-  ;W[ja]
-  ;B[ji]
-  ;W[og]
-  ;B[of]
-  ;W[ii]
-  ;B[kb]
-  ;W[ka]
-  ;B[ji]
-  ;W[ap]
-  ;B[aq]
-  ;W[ao]
-  ;B[ks]
-  ;W[ls]
-  ;B[js]
-  ;W[ii]
-  ;B[am]
-  ;W[cl]
-  ;B[bj]
-  ;W[bi]
-  ;B[bl]
-  ;W[an]
-  ;B[ji]
-  ;W[cr]
-  ;B[dr]
-  ;W[ii]
-  ;B[bb]
-  ;W[ba]
-  ;B[ji]
-  ;W[ro]
-  ;B[so]
-  ;W[ii]
-  ;B[fa]
-  ;W[ia]
-  ;B[ji]
-  ;W[ed]
-  ;B[ee]
-  ;W[ii]
-  ;B[re]
-  ;W[se]
-  ;B[ji]
-  ;W[sj]
-  ;B[rj]
-  ;W[ii]
-  ;B[hj]
-  ;W[ma]
-  ;B[cl]
-  ;W[hl]
-  ;B[ji]
-  ;W[ob]
-  ;B[pa]
-  ;W[ii]
-  ;B[ag]
-  ;W[ah]
-  ;B[ji]
-  ;W[rb]
-  ;B[ra]
-  ;W[ii]
-  ;B[ae]
-  ;W[ji]
-  ;B[ag]
-  ;W[qc]
-  ;B[pc]
-  ;W[af]
-  ;B[nr]
-  ;W[nq]
-  ;B[ag]
-  ;W[pb]
-  ;B[oc]
-  ;W[af]
-  ;B[iq]
-  ;W[ag]
-  ;B[ir]
-  ;W[gq]
-  ;B[kd]
-)
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[5400]OT[5x60 byo-yomi]
+GN[Koichiro Habu 5d (white) vs Leszek Sołdan 4d (black)]PW[Koichiro Habu]PB[Leszek Sołdan]WR[5d]BR[4d]DT[2016-01-08]PC[The KGS Go Server at http://www.gokgs.com/]C[LMP1 [-\]: Good morning everyone
+]RE[W+17.50]
+;B[pq]
+;W[dp]C[LMP1 [-\]: The crazy bridge players from yesterday are gone
+]
+;B[qd]
+;W[dc]C[LMP1 [-\]: its nice and quiet here in the Mind Sports Center
+]
+;B[nc]
+;W[qn]C[LMP1 [-\]: just the clicking of stones
+]
+;B[ql]
+;W[qq]
+;B[qp]
+;W[pp]
+;B[rq]
+;W[qr]
+;B[po]
+;W[op]
+;B[qo]
+;W[rr]
+;B[mq]
+;W[oo]
+;B[pn]
+;W[oq]
+;B[jq]C[Seimeitaek [1k?\]: cheers
+Tremolo [3k\]: Who is playing? 
+]
+;W[hq]
+;B[ce]C[Coorchac [3k\]: Leszek Sołdan [4d\] with black, Koichiro Habu [5d\] white. 
+LMP1 [-\]: i've updated the game name for poor Android users
+Tremolo [3k\]: Thank you
+]
+;W[ci]
+;B[cq]
+;W[cp]
+;B[dq]
+;W[fq]C[LMP1 [-\]: Leszek nods gently
+]
+;B[bp]
+;W[bo]
+;B[bq]
+;W[cn]
+;B[er]
+;W[cd]
+;B[de]
+;W[fd]
+;B[eh]
+;W[ei]
+;B[fi]
+;W[ej]
+;B[fh]
+;W[gk]
+;B[hc]C[SIscurge [5d\]: thanks!
+]
+;W[gb]
+;B[he]
+;W[gf]
+;B[fe]C[Werfeus [5d\]: e2 is very small
+]
+;W[ge]
+;B[gd]C[Song [4d\]: mm seems like I am little late
+]
+;W[fc]
+;B[ch]C[Song [4d\]: I would have probably played h14 instead of f17 ...and yes e2 is a bit small
+]
+;W[hf]C[Song [4d\]: ah there is h14 interesting
+]
+;B[bi]
+;W[cj]
+;B[bj]
+;W[bk]
+;B[fj]
+;W[fk]
+;B[ck]C[Song [4d\]: mm thought something like b12 can be option after b attatch but white went back mm
+]
+;W[bh]C[Song [4d\]: seem like white just wants to play moves later
+Song [4d\]: my moves later*
+]
+;B[ek]C[Mariusz [2k\]: ale fajne
+SIscurge [5d\]: hehe
+LMP1 [-\]: here we go with the self-slapping again
+Song [4d\]: I thought my moves were timed decently well but this 5d step to late
+Song [4d\]: this is nice move this e9
+LMP1 [-\]: White seems unhappy
+]
+;W[ai]
+;B[di]
+;W[aj]
+;B[dj]C[Song [4d\]: happy with that?
+kmr [2d\]: d9 instead of b12
+kmr [2d\]: "unhappy", thats what i see LMP1 writed
+Song [4d\]: here's a joke
+Song [4d\]: I misread
+LMP1 [-\]: haha
+]
+;W[ie]C[Kretzsche [3k\]: this is a weird thing to have happened to 5d
+Song [4d\]: I thought you were going crazy this for w is awful
+Song [4d\]: the two moves I said he played a bit too late in my opinion
+]
+;B[jd]C[Song [4d\]: q9 was nice I thought b would b8 I would have done that but this result is perfectly fine
+Song [4d\]: e9*
+]
+;W[lr]
+;B[lq]
+;W[kr]
+;B[jr]
+;W[kq]
+;B[kp]
+;W[mr]C[Song [4d\]: aigoo he want m2? mm
+]
+;B[ip]
+;W[jo]
+;B[jp]
+;W[jm]C[Song [4d\]: l15  or l14 I wouldve played...m2 is bit not to my likeking right now guess white plan to attack it alot
+Grunman [5k\]: Koichiro is a polish Japanese?
+LMP1 [-\]: yup. He's been living in Poland for many years
+Zonked [3d\]: m2 stones are junk.  but surely fun attacking the whole
+Zonked [3d\]: b m6 and take outside if w forcefully cuts? 
+]
+;B[in]C[Song [4d\]: aigoo I was just reading j6
+Zonked [3d\]: ponnuki there in exchange for the heavy group looks good for b
+Song [4d\]: I was also thinking j11 was an option for black
+]
+;W[jn]
+;B[ln]
+;W[lm]C[Song [4d\]: h11  seem interesting
+]
+;B[fr]C[Song [4d\]: mhm b couldve f2 instead of j6 as well that was another option
+]
+;W[gr]
+;B[io]
+;W[go]C[Zonked [3d\]: b too heavy
+Song [4d\]: I was going to say I would have just f5 instead of g2 and w plays it now
+]
+;B[im]C[Song [4d\]: w needs to be a bit more active I rlly dont think w can do much to these stones even if it heavy
+Song [4d\]: and look at blacks stones
+Song [4d\]: I rlly think h11 j11 point is quite nice for both players
+]
+;W[il]C[Zonked [3d\]: nobi once.  then hane
+Zonked [3d\]: white hane right away looks too thin
+]
+;B[hl]
+;W[hk]C[Zonked [3d\]: lolwut...
+Zonked [3d\]: how can w double hane?
+LMP1 [-\]: haha I just doublechecked if my scribing was OK
+LMP1 [-\]: but it seems so
+LMP1 [-\]: Black is hesitating
+Ecto [5k?\]: k8 looks easy and good to me. Am I missing something?
+]
+;B[gn]C[AndEdhel [4k\]: k8 l8?
+Song [4d\]: I would have hane'd as white as well
+Coorchac [3k\]: Why not double hane? I don't see any bigger complicications for white. 
+Coorchac [3k\]: *comlications
+Coorchac [3k\]: *complications lol
+Song [4d\]: complications*
+Song [4d\]: but yes I would also hane
+Song [4d\]: has white
+Zonked [3d\]:  b n7
+Song [4d\]: this is nonsense what black has white most play moves like this
+Song [4d\]: must*
+Zonked [3d\]: how would w answer b n7?
+]
+;W[el]C[AndEdhel [4k\]: with k9?
+badpunman [?\]: he would pick up the board and hit leszek's head with it
+Song [4d\]: ahh I see
+Song [4d\]: mm guess e8 was option I thought of e7
+Song [4d\]: this is quite desperate moves for w
+Zonked [3d\]: this fight makes no sense since b can trivially move out with n7 any time he wants
+Song [4d\]: b will probably need to be a little careful with top left group
+Song [4d\]: don't rlly see or think w is planning all killing b just minimizing what b gained possibly gaining thickness to do think on right and top side of board
+Song [4d\]: if not then w is just desperatly crazy
+]
+;B[dl]
+;W[em]C[Zonked [3d\]: b b13 might be fun
+Song [4d\]: mm I would have just n7
+Zonked [3d\]: as a question
+Zonked [3d\]: d8 first makes sense if planning on n7
+Zonked [3d\]: since d8 only direction to play from once bottom group is safe
+Song [4d\]: b n7 here I was play
+]
+;B[mm]C[LMP1 [-\]: White leaves and comes back with a piece of gingerbread
+LMP1 [-\]: kindly provided by the Polish Go Association
+LMP1 [-\]: the Association told me it spent the whole night baking gingerbread
+]
+;W[ll]
+;B[ml]C[Zonked [3d\]: i can see now where Polish players get their strength from
+LMP1 [-\]: you will notice m8 is an unusually strong move, played after ingesting gingerbread
+]
+;W[on]
+;B[jl]
+;W[ik]C[Zonked [3d\]: poor w shape
+Zonked [3d\]: this hurts
+Camoulox [1k?\]: l7 ?
+Song [4d\]: I would have also m8
+Zonked [3d\]: there was no good answer to n7
+Ecto [5k?\]: L7 captures 3 stones, right?
+Zonked [3d\]: i blame this all on j8 hane
+Camoulox [1k?\]: it does
+Zonked [3d\]: it doesn't
+Zonked [3d\]: can do driving tesuji to prevent capture
+Song [4d\]: mm yes l7 by b
+Song [4d\]: can be played
+Zonked [3d\]: but b should indeed still play l7
+Ecto [5k?\]: Can you write the sequence, sonked? I can't find it
+Ecto [5k?\]: Zonked*
+Zonked [3d\]: real pain trying to write sequences on android.  since can't see board when typing
+Ecto [5k?\]: Ah okay, no worries
+]
+;B[mk]C[Zonked [3d\]: now l7 does capture
+Zonked [3d\]: this nobi removed the driving tesuji
+]
+;W[jk]
+;B[lk]
+;W[kl]C[Song [4d\]: mmm the n6 cut
+]
+;B[nn]
+;W[pm]
+;B[rn]
+;W[cg]C[Song [4d\]: this is not surprising at all to me 
+LMP1 [-\]: White has 34 minutes left, Black: 46 minutes
+]
+;B[dg]
+;W[qm]
+;B[rm]
+;W[ro]
+;B[rp]
+;W[so]
+;B[om]
+;W[pl]
+;B[pk]
+;W[ol]
+;B[ok]
+;W[nm]
+;B[nl]
+;W[om]
+;B[rk]
+;W[ne]
+;B[ff]C[Zonked [3d\]: b13 ko scary
+Song [4d\]: mhm said earlier he needs to be a little careful to me it was obvious white plan after the hane
+Zonked [3d\]: if b can win it he wins it in sente
+Song [4d\]: since I was thinking of the hane myself lol
+]
+;W[qj]C[wade [5d\]: r12/11 seems good
+]
+;B[qk]C[Song [4d\]: he wil
+Song [4d\]: yea just connect
+]
+;W[qe]
+;B[pd]
+;W[nj]C[Song [4d\]: I was not even thinking of peep I thought of something like m15 but it's obvious
+LMP1 [-\]: looks, it's a peep show!
+]
+;B[nk]C[Song [4d\]: white need to do some things around mid top right area
+Song [4d\]: for nice reduction gain sente kill bottom right and white is clearly ahead
+wade [5d\]: o9 is bed
+wade [5d\]: bad*
+Song [4d\]: b being too submissive/passive
+LMP1 [-\]: that's a freudian slip right there
+]
+;W[rd]
+;B[rc]
+;W[rf]C[kmr [2d\]: maybe he feels he leads more than enough, so simplyfying things?
+]
+;B[hd]C[LMP1 [-\]: On board 2, Kamil Grabowski resigns vs Stanisław Frejlak
+Song [4d\]: not way
+Song [4d\]: no way I think the game is a bit even but if white gained some here and live while getting bottom right
+Song [4d\]: I don't see white losing this game
+]
+;W[gg]C[wade [5d\]: playing simple is more than ok but he is losing pts with his simple but not so great moves
+]
+;B[if]C[Song [4d\]: i wonder where black will play
+]
+;W[ig]
+;B[jf]
+;W[ke]
+;B[hh]
+;W[hg]
+;B[je]C[LMP1 [-\]: the bomber is born
+]
+;W[mc]
+;B[ji]
+;W[ii]
+;B[ih]
+;W[jg]
+;B[kf]
+;W[jh]C[Bembelbote [-\]: Sorry if someone asked already but what tournament is this?
+]
+;B[hi]
+;W[ki]C[LMP1 [-\]: this is the Polish Go Championship
+Song [4d\]: seem like white has better end game n5 is nice..capture of bottom right is nice
+LMP1 [-\]: more details: http://mp.go.art.pl
+Bembelbote [-\]: ok, great! Thank you! :-)
+LMP1 [-\]: the page has results, schedule and player profiles
+]
+;B[ij]
+;W[jj]C[LMP1 [-\]: so go check it out, ladies and gentleman, boys and girls
+LMP1 [-\]: hmpf, says black
+]
+;B[nd]
+;W[le]
+;B[me]
+;W[lf]
+;B[kg]
+;W[ii]
+;B[nf]
+;W[kc]C[afterbreak [2k?\]: Jaki wynik siasio vs maek?
+]
+;B[ji]C[LMP1 [-\]: maek poddał
+LMP1 [-\]: omawiają
+]
+;W[kh]C[afterbreak [2k?\]: Ah, achillesowa pieta ;)
+]
+;B[lg]
+;W[ib]
+;B[qg]C[Song [4d\]: ah I thought of n5 first ..oh well
+Slaboumov [4k\]: n5 t6 no?
+Song [4d\]: ??
+]
+;W[cf]C[Slaboumov [4k\]: you want kill all k4 stones? )
+Song [4d\]: n5 I think reduce and gain sente maybe I misread haha oh well
+Song [4d\]: pretty sure you just commited suicide though
+Slaboumov [4k\]: sente yes
+SIscurge [5d\]: B15
+]
+;B[fg]C[Song [4d\]: you think he will b15?
+]
+;W[df]
+;B[ef]C[Slaboumov [4k\]: but what reduce i don't know. it's not a territory
+]
+;W[dh]
+;B[gh]
+;W[gj]
+;B[ch]C[Song [4d\]: reduce the lead white gains 
+Song [4d\]: of course there is no territory for b there
+]
+;W[mg]
+;B[lh]
+;W[dh]
+;B[bd]C[Song [4d\]: I think I would have cut white l10 before answering
+]
+;W[bc]
+;B[ch]C[Slaboumov [4k\]: yes
+]
+;W[mo]
+;B[mn]
+;W[dh]
+;B[dd]
+;W[cc]
+;B[ch]
+;W[mp]C[Song [4d\]: yes this is also another way if using n5 I said much earlier more then 50 moves ago b needs to becareful with top left group guess I was right
+]
+;B[ep]C[Slaboumov [4k\]: l10 another ko for black
+]
+;W[fo]C[Song [4d\]: is b in byo yomi?
+LMP1 [-\]: no
+]
+;B[ko]
+;W[dh]C[LMP1 [-\]: B has 22 minutes
+LMP1 [-\]: W has 11 minutes
+Song [4d\]: l5 does not change much
+Song [4d\]: ok ty
+harlej9 [1k\]: this is difficult for b
+Song [4d\]: I am still looking at l10
+LMP1 [-\]: Black stares at the ceiling, looking for inspiration
+Slaboumov [4k\]: maybe black foget about l10
+Song [4d\]: l10 can be played here
+Song [4d\]: think b will end ko in few moves move
+LMP1 [-\]: he should have eaten his gingerbread earlier
+]
+;B[dm]C[Song [4d\]: it is annoying when white gets s3 but I think will still be close game i b gained alot in p12 area
+Shinjiro [2k?\]: l10 for b big
+Shinjiro [2k?\]: Anyway ko....
+LMP1 [-\]: White has 10 minutes left
+LMP1 [-\]: Black: 17
+LMP1 [-\]: On board 3, the pro prevails
+]
+;W[eo]
+;B[ch]
+;W[kn]
+;B[lo]
+;W[dh]
+;B[dn]
+;W[do]
+;B[ch]
+;W[kj]C[SIscurge [5d\]: go Habu go!
+Song [4d\]: I guess if b connext white will n14..this connect is like a threat itself giving sente is a bit painful
+]
+;B[dh]C[LMP1 [-\]: you'll be pleased, Song
+]
+;W[mf]C[harlej9 [1k\]: i want to see the experssion on b's face ofter he knows this dragon will not die :-) must be so relieved now
+harlej9 [1k\]: haha
+harlej9 [1k\]: *after
+LMP1 [-\]: he seems very focused
+Song [4d\]: if I guessed 7/10 of lee's moves twice I can guess 4-5d's decently well but w played
+Song [4d\]: a bit poor earlier for a few moves
+LMP1 [-\]: Black has now 10 minutes left
+LMP1 [-\]: White: 7 minutes
+Song [4d\]: but yes white getting sente seems too big
+Song [4d\]: s3 is also big
+]
+;B[oe]C[floppy: if you guess 7 out of 10 moves from Lee sedol why are you only 4d and why are you not taking the pro exam?
+harlej9 [1k\]: not as huge as a driveway through q11 area though :-)
+Direktsaft: n11?
+Song [4d\]: I have much to work on
+harlej9 [1k\]: oh, dont be so humble mate
+]
+;W[ng]C[Song [4d\]: is true if not case I would need 4-5 stones again 8-9p players
+Song [4d\]: did 7/10 on lee twice against hsi recent games against ke jie ( think that's how u spelled his name)
+]
+;B[li]
+;W[cl]
+;B[dk]
+;W[pg]C[Direktsaft: more than that
+harlej9 [1k\]: w's trying to trick b
+Direktsaft: just saving his stones
+]
+;B[ni]C[shayn [1d\]: isnt t6 big
+Song [4d\]: yes why?
+Direktsaft: about 18 pts gote
+shayn [1d\]: why nobody play?
+floppy: 8 stones are small
+Direktsaft: no time
+Song [4d\]: I thought q13 might be q12 btw
+Direktsaft: urgent before big
+Song [4d\]: mm yes q12 seems fine to me
+floppy: song you should open a go school
+harlej9 [1k\]: rather a go church :-) lol
+floppy: r12
+]
+;W[qh]
+;B[sn]
+;W[mb]C[Song [4d\]: thi is trade
+Song [4d\]: mhm
+]
+;B[nb]
+;W[sc]
+;B[sb]C[floppy: I guessed 100% of 5d moves so far
+]
+;W[sd]
+;B[qb]C[Song [4d\]: this is too much
+Song [4d\]: m4 still available
+LMP1 [-\]: ok I am lost
+LMP1 [-\]: sorry
+floppy: use edit
+Song [4d\]: seem like white is ahead...why should I open go school?
+Fuseques [-\]: ye u should open
+floppy: you like to teach and are very strong
+Fuseques [-\]: yes
+Song [4d\]: is there
+Song [4d\]: komi
+LMP1 [-\]: 6.5
+Song [4d\]: omo
+Fuseques [-\]: teach us who wins
+Song [4d\]: so about 10-15 points ahead right?
+Fuseques [-\]: tsugoi ne
+LMP1 [-\]: argh
+]
+;AE[cl]AW[ab][cb][bg][rg][ph][al][bm][lp][np]AB[ac][ad][bf][rh][qi][ri][bl][cm][no]C[Song [4d\]: I think I can say white will win the game...
+Song [4d\]: is this
+Song [4d\]: the game?
+LMP1 [-\]: no
+LMP1 [-\]: trying to fix
+LMP1 [-\]: sorry
+Fuseques [-\]: u  comin' to juval
+Fuseques [-\]: yuval* today?
+Song [4d\]: when have I eached? do you mean present moves and such?
+Fuseques [-\]: ata ba le yuval?
+Song [4d\]: what is all of these moves?
+floppy: q14 ko?
+]
+;
+;C[Song [4d\]: teched?*
+Rasd [5d\]: ofer yesh yuval nadir hayom
+Song [4d\]: teached* aigoo my spelling
+LMP1 [-\]: this should be the current position
+Song [4d\]: so this is the game?
+]
+;AE[qg]AW[qf][nh][lj][eq]AB[pf][oi][mj]C[LMP1 [-\]: no
+LMP1 [-\]: I am hopeless now
+LMP1 [-\]: sorry
+LMP1 [-\]: I will give you the final score
+floppy: is there video feed?
+LMP1 [-\]: I'm afraid not
+Song [4d\]: you do not know
+floppy: you should have called ghostbusters
+Song [4d\]: how the game went?
+floppy: I mean harry
+Song [4d\]: anyways well I think white should safetly win because of komi
+LMP1 [-\]: still trying to fix
+]
+;W[]C[harlej9 [1k\]: these 44-5dans from Poland have some magical skills :-)
+]
+;B[fl]C[floppy: 44 5dans is a lot, one could call them alot
+LMP1 [-\]: the board position is correct now
+Song [4d\]: they have a few flaws in there reading and timing I would say
+Song [4d\]: just base on this game
+]
+;W[gl]C[LMP1 [-\]: W in byo
+]
+;B[fm]
+;W[en]
+;B[gm]
+;W[ii]C[harlej9 [1k\]: i was talking about disappearing stones pal
+floppy: song you should offer them some teaching and they will spread the word for your go school
+]
+;B[or]C[Coorchac [3k\]: :d
+Song [4d\]: this is the game?
+LMP1 [-\]: harlej9, you're welcome to come and help us broadcast
+LMP1 [-\]: yes
+Song [4d\]: AIGOO
+Song [4d\]: WHAT
+Song [4d\]: oops srry caps
+harlej9 [1k\]: Im not in Warsaw I'm afraid
+]
+;W[pr]C[Song [4d\]: floppy that make no sense lol
+LMP1 [-\]: ko threat
+]
+;B[ji]C[Song [4d\]: so w no kill bottom right and in danger
+Song [4d\]: aigoo
+]
+;W[kk]
+;B[ma]
+;W[lb]
+;B[hb]C[Song [4d\]: so closer game before w ahead clearly but here seem like
+Song [4d\]: is close
+]
+;W[ic]C[Song [4d\]: aigoo
+jyh: go go
+]
+;B[id]
+;W[ha]C[Song [4d\]: I guess w safetly ahead by komi still
+Firien [?\]: W won by 10
+]
+;B[hp]C[harlej9 [1k\]: Song common, it's w+15 
+]
+;W[gp]C[floppy: song what would lee sedol play as w now?
+Song [4d\]: I said something like that before but IM saying safetly by komi
+harlej9 [1k\]: Lee Song he is called from now on
+kuru [5k\]: 15 t big
+Song [4d\]: I dont think w will lose because of komi
+kuru [5k\]: oh i miss red
+Firien [?\]: W won easy
+Song [4d\]: t15 nothing
+]
+;B[md]C[Song [4d\]: yea that was misread
+LMP1 [-\]: both players in byo yomi
+]
+;W[la]C[floppy: maybe Lee sedol will hear from your skills and invite you as a teacher in his go school!!!
+Song [4d\]: ?^ k
+LMP1 [-\]: can we stop the school thing already please?
+Song [4d\]: yes the school thing is rlly ridiculous now
+Song [4d\]: haha
+]
+;B[fs]C[Song [4d\]: what is that move?
+harlej9 [1k\]: i thought exactly the same
+Song [4d\]: gave white free snete?
+Firien [?\]: many points
+ofbusy [-\]: 2points from hane
+Song [4d\]: g1 is basically sente right?
+]
+;W[na]
+;B[oa]C[floppy: t2
+harlej9 [1k\]: LMP1 be carefull the goban might go ballistic in a minute :-)
+]
+;W[mh]
+;B[mi]
+;W[pi]
+;B[pj]C[harlej9 [1k\]: t2 i big
+]
+;W[af]
+;B[be]
+;W[sr]C[Song [4d\]: mm
+]
+;B[gs]
+;W[hs]
+;B[is]
+;W[hr]
+;B[ds]
+;W[hm]
+;B[hn]C[Song [4d\]: I don't understand b end game
+]
+;W[ld]
+;B[jc]
+;W[jb]
+;B[gc]
+;W[ec]C[floppy: because b is not lee sedol
+Song [4d\]: mm that is better
+]
+;B[sg]
+;W[sf]
+;B[sh]
+;W[ii]
+;B[fb]
+;W[ga]
+;B[ji]C[Song [4d\]: w+15 seems correct
+]
+;W[sq]
+;B[sp]
+;W[ii]C[floppy: d2
+]
+;B[ia]
+;W[ja]
+;B[ji]C[harlej9 [1k\]: not, Song-san said it's very close :-)
+]
+;W[og]
+;B[of]
+;W[ii]C[Song [4d\]: I did not say that
+Song [4d\]: s5 also ko threat
+]
+;B[kb]
+;W[ka]C[LMP1 [-\]: this actually happened on board
+]
+;B[ji]C[LMP1 [-\]: haha
+]
+;W[ap]
+;B[aq]
+;W[ao]C[Song [4d\]: ..
+harlej9 [1k\]: Move 233 Song [4d\]: so closer game before w ahead clearly but here seem like Song [4d\]: is close
+]
+;B[ks]
+;W[ls]
+;B[js]
+;W[ii]
+;B[am]
+;W[cl]
+;B[bj]
+;W[bi]
+;B[bl]
+;W[an]
+;B[ji]
+;W[cr]
+;B[dr]C[Song [4d\]: isnt that around the time moves were edited?
+]
+;W[ii]C[floppy: harlej that was not song but his little brother
+]
+;B[bb]
+;W[ba]
+;B[ji]C[LMP1 [-\]: let's focus on the game please
+]
+;W[ro]
+;B[so]
+;W[ii]
+;B[fa]C[Song [4d\]: the game is like before w ahead by 10-15 like I say before
+]
+;W[ia]
+;B[ji]C[harlej9 [1k\]: the game has been decided for a longer time now
+Song [4d\]: mhm
+]
+;W[ed]
+;B[ee]
+;W[ii]
+;B[re]
+;W[se]
+;B[ji]
+;W[sj]
+;B[rj]
+;W[ii]C[harlej9 [1k\]: is there a website where we can see the scores and a table?
+]
+;B[hj]
+;W[ma]C[LMP1 [-\]: http://mp.go.art.pl
+harlej9 [1k\]: thank you
+]
+;B[cl]
+;W[hl]
+;B[ji]
+;W[ob]
+;B[pa]
+;W[ii]
+;B[ag]
+;W[ah]
+;B[ji]
+;W[rb]
+;B[ra]
+;W[ii]
+;B[ae]
+;W[ji]
+;B[ag]
+;W[qc]
+;B[pc]
+;W[af]
+;B[nr]C[Song [4d\]: guess o3
+]
+;W[nq]
+;B[ag]
+;W[pb]
+;B[oc]
+;W[af]
+;B[iq]
+;W[ag]C[Song [4d\]: should be no more left
+]
+;B[ir]
+;W[gq]
+;B[kd]C[LMP1 [-\]: both pass
+Song [4d\]: 16.5?
+Song [4d\]:  no 17.5
+LMP1 [-\]: the prisoner count might be wrong
+LMP1 [-\]: in the recording
+LMP1 [-\]: because of the editing
+Song [4d\]: yes I see
+LMP1 [-\]: prisoners fill the whole board
+LMP1 [-\]: white has more black prisoners left
+LMP1 [-\]: W+17.5
+Coorchac [3k\]: Congratulations Koichi! 
+LMP1 [-\]: thanks for watching
+Song [4d\]: oh ok I was right
+Song [4d\]: interesting game
+harlej9 [1k\]: congrats Koichi :-)
+LMP1 [-\]: next round in an hour and a half, 3 pm CET
+harlej9 [1k\]: thnak you for broadcasting the game LMP
+chestr [2d\]: l16 nice
+chestr [2d\]:  +++++
+chestr [2d\]: +++++++++++++++++++++
+chestr [2d\]: ++++++++++++++++++++++++++++++
+Song [4d\]: I am surprised white won actually by that amount...guess white played better later after the small mistake early on the left
+Song [4d\]: nice game nice lmp1 bye for now
+chestr [2d\]: (
+chestr [2d\]: _)(*
+chestr [2d\]: 6787980
+chestr [2d\]: bqn    6trguytju
+chestr [2d\]: uuuuuuuuuuuuuuuuuuuu
+chestr [2d\]: uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
+chestr [2d\]: soery
+chestr [2d\]: sorry
+chestr [2d\]: sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+])

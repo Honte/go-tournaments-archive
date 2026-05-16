@@ -1,120 +1,232 @@
-(
-  ;BR[4d]CA[UTF-8]DT[2021-02-21]EV[Polish Go Championship 2020]FF[4]GM[1]GN[Round 6 - Board 2]KM[6.5]PB[Kamil Chwedyna]PC[Warszawa / Poznań / Online]PW[Piotr Dyszczyk]RE[B+R]RU[japanese]SZ[19]WR[1d]
-  ;B[qd]
-  ;W[dp]
-  ;B[dc]
-  ;W[pp]
-  ;B[cn]
-  ;W[fq]
-  ;B[bp]
-  ;W[ce]
-  ;B[fd]
-  ;W[cl]
-  ;B[cq]
-  ;W[co]
-  ;B[do]
-  ;W[bn]
-  ;B[cp]
-  ;W[eo]
-  ;B[dn]
-  ;W[en]
-  ;B[ep]
-  ;W[dq]
-  ;B[bo]
-  ;W[fp]
-  ;B[em]
-  ;W[dm]
-  ;B[bm]
-  ;W[el]
-  ;B[fm]
-  ;W[gn]
-  ;B[fl]
-  ;W[fk]
-  ;B[ek]
-  ;W[dl]
-  ;B[gk]
-  ;W[fj]
-  ;B[ej]
-  ;W[gj]
-  ;B[hl]
-  ;W[hk]
-  ;B[gl]
-  ;W[il]
-  ;B[im]
-  ;W[ik]
-  ;B[hm]
-  ;W[cj]
-  ;B[ei]
-  ;W[ch]
-  ;B[dh]
-  ;W[dg]
-  ;B[cg]
-  ;W[bh]
-  ;B[df]
-  ;W[jm]
-  ;B[hj]
-  ;W[hi]
-  ;B[ij]
-  ;W[fh]
-  ;B[gh]
-  ;W[fi]
-  ;B[fg]
-  ;W[jj]
-  ;B[ii]
-  ;W[hh]
-  ;B[eh]
-  ;W[gi]
-  ;B[jn]
-  ;W[kl]
-  ;B[io]
-  ;W[ig]
-  ;B[ji]
-  ;W[kj]
-  ;B[ki]
-  ;W[lj]
-  ;B[li]
-  ;W[kn]
-  ;B[ko]
-  ;W[jp]
-  ;B[ln]
-  ;W[km]
-  ;B[jo]
-  ;W[lo]
-  ;B[kp]
-  ;W[nq]
-  ;B[bg]
-  ;W[iq]
-  ;B[jq]
-  ;W[ip]
-  ;B[ir]
-  ;W[hr]
-  ;B[hn]
-  ;W[kq]
-  ;B[lq]
-  ;W[mo]
-  ;B[kr]
-  ;W[lg]
-  ;B[ni]
-  ;W[mj]
-  ;B[mi]
-  ;W[od]
-  ;B[pf]
-  ;W[og]
-  ;B[pi]
-  ;W[oj]
-  ;B[oi]
-  ;W[qk]
-  ;B[jg]
-  ;W[jf]
-  ;B[if]
-  ;W[ie]
-  ;B[hf]
-  ;W[he]
-  ;B[gf]
-  ;W[jh]
-  ;B[kg]
-  ;W[kf]
-  ;B[kh]
-  ;W[gc]
-  ;B[gr]
-)
+(;FF[4]
+CA[UTF-8]
+GM[1]
+DT[2021-02-21]
+PC[OGS: https://online-go.com/game/31319581]
+GN[LMP_2020_round_6_board_3]
+PB[fisz]
+PW[shin0e]
+BR[3d]
+WR[3d]
+TM[5400]OT[3x60 byo-yomi]
+RE[B+R]
+SZ[19]
+KM[6.5]
+RU[Japanese]
+C[shin0e: hej ;)
+shin0e: milej gry!
+fisz: Hej!
+fisz: Miłej, równej gry!
+]
+;B[qd]
+(;W[dp]
+C[Moggetyrael: Hej, wyniki po 5-ciu rundach znajdziecie tu: https://mp.go.art.pl/2020/pl/wyniki
+]
+(;B[dc]
+(;W[pp]
+(;B[cn]
+(;W[fq]
+(;B[bp]
+(;W[ce]
+(;B[fd]
+C[Cezary: marzenie piotrka sie ziściło :)
+]
+(;W[cl]
+(;B[cq]
+(;W[co]
+(;B[do]
+C[Cezary: stary trickplay :p
+Cezary: mozna grac jak czarny ma drabine
+Cezary: duzo skomplikowanych wariantow
+Mrrr: myslalem ze to zwykle joseki
+Mrrr: choc zawsze uwazalem je za lepsze dla bialego
+]
+(;W[bn]
+(;B[cp]
+C[Cezary: no tak mowi josekipedia :p
+]
+(;W[eo]
+(;B[dn]
+(;W[en]
+(;B[ep]
+(;W[dq]
+(;B[bo]
+(;W[fp]
+(;B[em]
+C[LMP2020: https://mp.go.art.pl/2020/pl - gry komentuje Lukáš Podpěra
+]
+(;W[dm]
+(;B[bm]
+(;W[el]
+(;B[fm]
+(;W[gn]
+C[Sadiker: tego wariantu nie ma w josekipedi
+]
+(;B[fl]
+(;W[fk]
+(;B[ek]
+(;W[dl]
+(;B[gk]
+(;W[fj]
+(;B[ej]
+C[Mrrr: to jest wariant pod tytulem "krwawa sieczka", dopiero w trakcie eksploracji
+Mrrr: ale na pewno adekwatny do nazwy
+Radziol: hehe
+]
+(;W[gj]
+(;B[hl]
+(;W[hk]
+(;B[gl]
+C[Sadiker: można dopisac ten wariant i dodac w komentarzu że to z pari fisz vs shinoe
+]
+(;W[il]
+(;B[im]
+(;W[ik]
+C[Mrrr: i dodac, ze z mistrzostw polski, zeby nadac mu odpowiednia range
+]
+(;B[hm]
+C[Mrrr: myslalem, ze bialy zaraz sie posypie, ale w zasaadzie wyszedl obronna reka. Teraz chyba E11?
+Sadiker: e11 i pewnie d10 i trzeba liczyć:/
+Mrrr: d8 musi ujsc calo z tej sytuacji, zeby to mialo sens
+Mrrr: jesli e11 nie dziala, to moze jakies bardziej pokojowe odp
+]
+(;W[cj]
+C[Mrrr: np to
+]
+(;B[ei]
+(;W[ch]
+(;B[dh]
+(;W[dg]
+(;B[cg]
+C[Sadiker: największy ból to h10
+]
+(;W[bh]
+C[Mrrr: niby tak, ale czarny nie bardzo jak ma tam zagrac, nawet gdy najpierw wezmie atari E13
+Mrrr: za slaby wydaje sie, zeby ciac
+Mrrr: ale.... fisz pewnie mysli inaczej ;)
+]
+(;B[df]
+C[Mrrr: ostro
+]
+(;W[jm]
+(;B[hj]
+C[Sadiker: k7 to chyba overplay
+Sadiker: e13 było ok
+Cezary: k7 dziwne
+Cezary: bialy sie boi fisza
+Cezary: ze nawet z atari nie wyjdzie 
+Cezary: juz miej tego d13 :p
+Sadiker: f12?
+]
+(;W[hi]
+(;B[ij]
+(;W[fh]
+C[Mrrr: moze da sie to naprawic jeszcze
+]
+(;B[gh]
+(;W[fi]
+C[Sadiker: g11, nie ma co kombinować
+Mrrr: :)
+]
+(;B[fg]
+C[Sadiker: f11 wymusiło f13 w sente
+Mrrr: ale czemu tego atari nie wydluzyl, no czemu?
+Mrrr: na K7 bylby czas
+]
+(;W[jj]
+(;B[ii]
+(;W[hh]
+(;B[eh]
+(;W[gi]
+C[Mrrr: ale bedzie mial kulfona w centrum
+Mrrr: dziesiec kamieni, trzey oddechy i zadnych perspektyw na oko :)
+]
+(;B[jn]
+(;W[kl]
+C[Sadiker: no bidenie wygląda bialy
+Sadiker: biednie
+]
+(;B[io]
+(;W[ig]
+(;B[ji]
+(;W[kj]
+C[Mrrr: B13 to bomba atomowa
+]
+(;B[ki]
+(;W[lj]
+(;B[li]
+(;W[kn]
+(;B[ko]
+(;W[jp]
+(;B[ln]
+(;W[km]
+(;B[jo]
+(;W[lo]
+(;B[kp]
+C[Higaki: Fisz udaje grę na perkusji, ale tylko stopami
+]
+(;W[nq]
+(;B[bg]
+(;W[iq]
+(;B[jq]
+(;W[ip]
+C[LMP2020: Hiaki przegrał szybko i zazdrości innym że jeszcz mogą sobie pograć ;p
+Higaki: wręcz przeciwnie - czekam aż inni też będą mogli iść na kebaba
+LMP2020: xD
+]
+(;B[ir]
+C[Mrrr: pobliska fabryka kebabow sponsoruje wydarzenie? :)
+Higaki: niestety nie, ale to jest sponsoring, o który warto powalczyć!
+]
+(;W[hr]
+(;B[hn]
+C[Mrrr: dla goistow moglyby byc kebaby o japonskich nazwach
+Mrrr: "poprosze ostre tesuji"
+]
+(;W[kq]
+(;B[lq]
+C[LMP2020: B2 bomber na wynos
+]
+(;W[mo]
+(;B[kr]
+(;W[lg]
+(;B[ni]
+(;W[mj]
+(;B[mi]
+(;W[od]
+(;B[pf]
+(;W[og]
+(;B[pi]
+(;W[oj]
+(;B[oi]
+(;W[qk]
+(;B[jg]
+(;W[jf]
+C[Higaki: L13 to podwójna groźba
+]
+(;B[if]
+C[Higaki: ale Fisz nie bawi się podchody i od razu atakuje!
+]
+(;W[ie]
+(;B[hf]
+(;W[he]
+(;B[gf]
+C[Mrrr: przynajmniej tak klucha padła bez miotania sie po planszy, w zasadzie to nawet sukces bialego
+]
+(;W[jh]
+C[Mrrr: wymienic ja na bande gorna
+]
+(;B[kg]
+(;W[kf]
+(;B[kh]
+(;W[gc]
+(;B[gr]
+C[fisz: Dzięki
+shin0e: dzieki za gre ;)
+shin0e: bardzo fajne to d5 :D
+shin0e: ciekaw jestem co powinienem byl na to zagrac ;D
+shin0e: bo zoverplayowalem na milion procent ;d
+fisz: nie wiem
+fisz: gra była równa do K7
+]
+)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
