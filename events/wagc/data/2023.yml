@@ -25,7 +25,7 @@ stages:
       - 4-1 1:W+R round:6 sgf:2023/6-YoshikiKurita-JeongseonKim.sgf
       - 4-6 4:B+R round:4 sgf:2023/4-YoshikiKurita-PongsakarnSornarra.sgf
       - 4-33 4:B+R round:1 sgf:2023/1-YoshikiKurita-ErnestasRomeika.sgf
-      - 5-2 2:W round:2 sgf:2023/2-AlanHuang-ChukunYang.sgf
+      - 5-2 2:W+? round:2 sgf:2023/2-AlanHuang-ChukunYang.sgf
       - 5-14 5:B+1.5 round:5 sgf:2023/5-AlanHuang-ChahineKoleejan.sgf
       - 6-12 6:B+R round:3 sgf:2023/3-PongsakarnSornarra-JanneKosso.sgf
       - 7-1 1:W+R round:4 sgf:2023/4-JonasWelticke-JeongseonKim.sgf

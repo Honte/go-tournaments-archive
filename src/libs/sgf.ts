@@ -8,6 +8,7 @@ export type SgfPlayer = {
   name: string;
   rank?: string;
   country?: string;
+  won?: boolean;
 };
 
 export type SgfData = {
@@ -29,6 +30,7 @@ export type SgfMove = {
 export function loadSgf(content: string, sgfPath?: string): SgfData {
   const root = new Sgf(content).getRoot();
   const moves: SgfMove[] = [];
+  const result = root.data[SgfRootProps.GAME_RESULT]?.[0];
 
   let node = root.children[0];
   while (node) {
@@ -61,12 +63,14 @@ export function loadSgf(content: string, sgfPath?: string): SgfData {
       name: toSingleString(root.data[SgfRootProps.BLACK_NAME])!,
       rank: toSingleString(root.data[SgfRootProps.BLACK_RANK]),
       country: toSingleString(root.data[SgfRootProps.BLACK_TEAM]),
+      won: result?.startsWith('B'),
     },
     white: {
       id: toSingleString(root.data[CustomSgfProps.WHITE_ID]),
       name: toSingleString(root.data[SgfRootProps.WHITE_NAME])!,
       rank: toSingleString(root.data[SgfRootProps.WHITE_RANK]),
       country: toSingleString(root.data[SgfRootProps.WHITE_TEAM]),
+      won: result?.startsWith('W'),
     },
     props: {
       sgf: sgfPath,

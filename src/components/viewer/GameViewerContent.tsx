@@ -1,4 +1,5 @@
 import Board from '@sabaki/go-board';
+import { clsx } from 'clsx';
 import { type ChangeEvent, useCallback, useEffect, useMemo, useState } from 'react';
 import {
   FaBackward,
@@ -297,7 +298,9 @@ function PlayerRow({
           playerId={player.id}
           locale={locale}
           onClick={onNavigate}
-          className="min-w-0 truncate font-semibold"
+          className={clsx('min-w-0 truncate', {
+            'font-semibold': player.won,
+          })}
         >
           <PlayerName player={player} />
         </PlayerLink>

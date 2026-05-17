@@ -84,6 +84,10 @@ export function normalizeSgfResult(rawResult: string | null): NormalizedSgfResul
 
   const value = rawResult.trim();
 
+  if (value === '?' || value.toLowerCase() === 'void') {
+    return { cleanResult: null, resultIssue: null };
+  }
+
   if (!value) {
     return {
       cleanResult: null,
@@ -111,7 +115,7 @@ export function normalizeSgfResult(rawResult: string | null): NormalizedSgfResul
   }
 
   if (!rest) {
-    return { cleanResult: color, resultIssue: null };
+    return { cleanResult: `${color}+?`, resultIssue: null };
   }
 
   if (!rest.startsWith('+') && !rest.startsWith(',')) {
@@ -159,8 +163,14 @@ function normalizeResultValue(result: string): string {
     return 'R';
   }
 
+  if (result.toLowerCase() === 'time') {
+    return 'T';
+  }
+
   if (/^\d+([,.]\d+)?$/.test(result)) {
-    return String(Number(result.replace(',', '.')));
+    const score = Number(result.replace(',', '.'));
+
+    return score === 0 ? '?' : String(score);
   }
 
   return result;

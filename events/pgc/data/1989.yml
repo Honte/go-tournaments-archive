@@ -54,6 +54,6 @@ stages:
     requiredWins: 3
     includePrevious: true
     games:
-      - jk-ls jk
-      - jk-ls ls
-      - jk-ls jk
+      - jk-ls jk:B+R sgf:1989/1989-lsoldan-jkraszek-final-1.sgf
+      - jk-ls ls:B+32.5 sgf:1989/1989-lsoldan-jkraszek-final-2.sgf
+      - jk-ls jk:B+R sgf:1989/1989-lsoldan-jkraszek-final-3.sgf

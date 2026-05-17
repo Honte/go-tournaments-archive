@@ -24,7 +24,7 @@ stages:
       - 10-16 16:W+1.5 round:3 sgf:1988/3-ChiLiangLin-JosteinFlood.sgf
       - 12-15 15:W+R round:2 sgf:1988/2-AndrasGondor-VladimirDanek.sgf
       - 12-19 19:W+R round:3 sgf:1988/3-AndrasGondor-JungHoLim.sgf
-      - 14-7 14 round:3 sgf:1988/3-GillesZemor-LaurentHeiser.sgf
+      - 14-7 14:B+? round:3 sgf:1988/3-GillesZemor-LaurentHeiser.sgf
       - 15-23 15:B+R round:3 sgf:1988/3-VladimirDanek-MattiSiivola.sgf
       - 19-3 3:W+R round:1 sgf:1988/1-JungHoLim-RonaldSchlemper.sgf
       - 22-11 11:W+R round:1 sgf:1988/1-FrankHansen-ValerijSolovjov.sgf

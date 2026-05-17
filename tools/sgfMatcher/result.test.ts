@@ -23,11 +23,24 @@ describe('normalizeSgfResult', () => {
     assert.deepEqual(normalizeSgfResult('White,rEsIgN'), { cleanResult: 'W+R', resultIssue: null });
   });
 
+  it('normalizes time results to T', () => {
+    assert.deepEqual(normalizeSgfResult('B+Time'), { cleanResult: 'B+T', resultIssue: null });
+    assert.deepEqual(normalizeSgfResult('W+time'), { cleanResult: 'W+T', resultIssue: null });
+    assert.deepEqual(normalizeSgfResult('Black,tImE'), { cleanResult: 'B+T', resultIssue: null });
+  });
+
   it('normalizes numeric score results', () => {
     assert.deepEqual(normalizeSgfResult('W+15,5'), { cleanResult: 'W+15.5', resultIssue: null });
     assert.deepEqual(normalizeSgfResult('W+15.50'), { cleanResult: 'W+15.5', resultIssue: null });
     assert.deepEqual(normalizeSgfResult('B,15,5'), { cleanResult: 'B+15.5', resultIssue: null });
     assert.deepEqual(normalizeSgfResult('B+15'), { cleanResult: 'B+15', resultIssue: null });
+  });
+
+  it('normalizes zero score results to unknown margin', () => {
+    assert.deepEqual(normalizeSgfResult('B+0'), { cleanResult: 'B+?', resultIssue: null });
+    assert.deepEqual(normalizeSgfResult('W+0'), { cleanResult: 'W+?', resultIssue: null });
+    assert.deepEqual(normalizeSgfResult('Black+0.0'), { cleanResult: 'B+?', resultIssue: null });
+    assert.deepEqual(normalizeSgfResult('White+0,0'), { cleanResult: 'W+?', resultIssue: null });
   });
 
   it('standardizes comma separators to plus separators', () => {
@@ -45,18 +58,24 @@ describe('normalizeSgfResult', () => {
   });
 
   it('accepts bare color results', () => {
-    assert.deepEqual(normalizeSgfResult('B'), { cleanResult: 'B', resultIssue: null });
-    assert.deepEqual(normalizeSgfResult('b'), { cleanResult: 'B', resultIssue: null });
-    assert.deepEqual(normalizeSgfResult('W'), { cleanResult: 'W', resultIssue: null });
-    assert.deepEqual(normalizeSgfResult('w'), { cleanResult: 'W', resultIssue: null });
-    assert.deepEqual(normalizeSgfResult('Black'), { cleanResult: 'B', resultIssue: null });
-    assert.deepEqual(normalizeSgfResult('blAcK'), { cleanResult: 'B', resultIssue: null });
-    assert.deepEqual(normalizeSgfResult('White'), { cleanResult: 'W', resultIssue: null });
-    assert.deepEqual(normalizeSgfResult('white'), { cleanResult: 'W', resultIssue: null });
+    assert.deepEqual(normalizeSgfResult('B'), { cleanResult: 'B+?', resultIssue: null });
+    assert.deepEqual(normalizeSgfResult('b'), { cleanResult: 'B+?', resultIssue: null });
+    assert.deepEqual(normalizeSgfResult('W'), { cleanResult: 'W+?', resultIssue: null });
+    assert.deepEqual(normalizeSgfResult('w'), { cleanResult: 'W+?', resultIssue: null });
+    assert.deepEqual(normalizeSgfResult('Black'), { cleanResult: 'B+?', resultIssue: null });
+    assert.deepEqual(normalizeSgfResult('blAcK'), { cleanResult: 'B+?', resultIssue: null });
+    assert.deepEqual(normalizeSgfResult('White'), { cleanResult: 'W+?', resultIssue: null });
+    assert.deepEqual(normalizeSgfResult('white'), { cleanResult: 'W+?', resultIssue: null });
   });
 
   it('trims surrounding whitespace', () => {
     assert.deepEqual(normalizeSgfResult('W+R '), { cleanResult: 'W+R', resultIssue: null });
+  });
+
+  it('treats question mark and void results as unknown', () => {
+    assert.deepEqual(normalizeSgfResult('?'), { cleanResult: null, resultIssue: null });
+    assert.deepEqual(normalizeSgfResult('void'), { cleanResult: null, resultIssue: null });
+    assert.deepEqual(normalizeSgfResult('Void'), { cleanResult: null, resultIssue: null });
   });
 
   it('rejects natural-language and spaced result values', () => {
@@ -179,6 +198,80 @@ describe('SGF matcher result handling', () => {
 
     assert.deepEqual(result, { matchedEntries: [], unmatchedSgfs: [sgf] });
     assert.deepEqual(unmatchedEntries[0]?.reasons, ['filename contains spaces']);
+  });
+
+  it('uses the SGF winner color when H9 gives the winner but SGF result is missing', () => {
+    const playersMap = buildPlayersMap([
+      makeH9Player({ place: 1, name: 'Winner', surname: 'Player' }),
+      makeH9Player({ place: 2, name: 'Loser', surname: 'Player' }),
+    ]);
+    const gamesMap = new Map([
+      [
+        '1-2-1',
+        {
+          homePlace: 1,
+          awayPlace: 2,
+          round: 1,
+          winnerPlace: 1,
+          homeColor: undefined,
+          winnerColor: undefined,
+        },
+      ],
+    ]);
+    const sgf: SgfInfo = {
+      path: '2025/1-LoserPlayer-WinnerPlayer.sgf',
+      metadata: { blackName: 'Loser Player', whiteName: 'Winner Player' },
+      fromFilename: { blackName: 'LoserPlayer', whiteName: 'WinnerPlayer' },
+      rawResult: null,
+      cleanResult: null,
+      resultIssue: null,
+      round: 1,
+      corrupted: false,
+    };
+
+    const result = matchSgfs([sgf], playersMap, gamesMap, new Map());
+
+    assert.deepEqual(result, {
+      matchedEntries: ['2-1 1:W+? round:1 sgf:2025/1-LoserPlayer-WinnerPlayer.sgf'],
+      unmatchedSgfs: [],
+    });
+  });
+
+  it('uses the SGF winner color when H9 gives the winner but SGF result is a question mark', () => {
+    const playersMap = buildPlayersMap([
+      makeH9Player({ place: 1, name: 'Winner', surname: 'Player' }),
+      makeH9Player({ place: 2, name: 'Loser', surname: 'Player' }),
+    ]);
+    const gamesMap = new Map([
+      [
+        '1-2-1',
+        {
+          homePlace: 1,
+          awayPlace: 2,
+          round: 1,
+          winnerPlace: 1,
+          homeColor: undefined,
+          winnerColor: undefined,
+        },
+      ],
+    ]);
+    const sgf: SgfInfo = {
+      path: '2025/1-WinnerPlayer-LoserPlayer.sgf',
+      metadata: { blackName: 'Winner Player', whiteName: 'Loser Player' },
+      fromFilename: { blackName: 'WinnerPlayer', whiteName: 'LoserPlayer' },
+      rawResult: '?',
+      cleanResult: null,
+      resultIssue: null,
+      round: 1,
+      corrupted: false,
+    };
+
+    const result = matchSgfs([sgf], playersMap, gamesMap, new Map());
+
+    assert.deepEqual(result, {
+      matchedEntries: ['1-2 1:B+? round:1 sgf:2025/1-WinnerPlayer-LoserPlayer.sgf'],
+      unmatchedSgfs: [],
+    });
   });
 });
 

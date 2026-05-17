@@ -61,7 +61,7 @@ stages:
       - 18-11 11:W+R round:2 sgf:2021/2-OzgurDegirmenci-ShunjiMorikawa.sgf
       - 20-6 6:W+39.5 round:6 sgf:2021/6-StjepanMestrovic-NaiSanChan.sgf
       - 20-40 20:B+9.5 round:3 sgf:2021/3-StjepanMestrovic-JonasEgeberg.sgf
-      - 22-15 15:W+Time round:2 sgf:2021/2-FernandoAguilar-DenisDobranis.sgf
+      - 22-15 15:W+T round:2 sgf:2021/2-FernandoAguilar-DenisDobranis.sgf
       - 22-25 25:W+3.5 round:1 sgf:2021/1-FernandoAguilar-AlessandroPace.sgf
       - 22-27 22:B+R round:3 sgf:2021/3-FernandoAguilar-TimotejSuc.sgf
       - 23-5 5:W+R round:1 sgf:2021/1-DmytroYatsenko-StanislawFrejlak.sgf
