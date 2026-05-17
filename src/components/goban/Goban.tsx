@@ -38,7 +38,6 @@ export function Goban({ className, board, mark, pointer, onClick, onMouseMove }:
   }
 
   return (
-    // oxlint-disable-next-line jsx_a11y/no-static-element-interactions oxlint-disable-next-line jsx_a11y/click-events-have-key-events
     <svg
       className={className}
       xmlns="http://www.w3.org/2000/svg"
