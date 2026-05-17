@@ -179,6 +179,30 @@ function verifyColors(h9Record: H9GameRecord, sgfPlaces: SgfPlaces): boolean {
   return true;
 }
 
+function getSgfResultColor(place: number, sgfPlaces: SgfPlaces): 'B' | 'W' | null {
+  if (sgfPlaces.blackPlace === place) {
+    return 'B';
+  }
+
+  if (sgfPlaces.whitePlace === place) {
+    return 'W';
+  }
+
+  return null;
+}
+
+function getH9ResultColor(color: Color): 'B' | 'W' | null {
+  if (color === 'black') {
+    return 'B';
+  }
+
+  if (color === 'white') {
+    return 'W';
+  }
+
+  return null;
+}
+
 function buildGameString(h9Record: H9GameRecord, sgf: SgfInfo, sgfPlaces: SgfPlaces, props?: string): string {
   const blackPlace = sgfPlaces.blackPlace ?? h9Record.homePlace;
   const whitePlace = blackPlace === h9Record.homePlace ? h9Record.awayPlace : h9Record.homePlace;
@@ -189,11 +213,10 @@ function buildGameString(h9Record: H9GameRecord, sgf: SgfInfo, sgfPlaces: SgfPla
   if (resultStr === null && h9Record.winnerPlace !== null) {
     winnerPlace = h9Record.winnerPlace;
 
-    if (h9Record.homeColor) {
-      const prefix = h9Record.winnerColor === 'black' ? 'B' : 'W';
-      const suffix = sgf.rawResult ? sgf.rawResult.replace(/\s+/g, '_') : '';
+    const resultColor = getSgfResultColor(winnerPlace, sgfPlaces) ?? getH9ResultColor(h9Record.winnerColor);
 
-      resultStr = suffix ? `${prefix}+${suffix}` : `${prefix}+?`;
+    if (resultColor) {
+      resultStr = `${resultColor}+?`;
     }
   }
 
