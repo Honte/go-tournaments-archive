@@ -43,7 +43,7 @@ stages:
       - 18-2 2:W+R round:7 sgf:2009/7-AnttiTormanen-ShinhwanYu.sgf
       - 20-33 20:B+19.5 round:8 sgf:2009/8-BoonPingTeng-MatthewCocke.sgf
       - 20-57 20:B+R round:1 sgf:2009/1-BoonPingTeng-MichaelGalero.sgf
-      - 22-15 15:W+Time round:5 sgf:2009/5-LeszekSoldan-EricLui.sgf
+      - 22-15 15:W+T round:5 sgf:2009/5-LeszekSoldan-EricLui.sgf
       - 22-28 22:B+R round:4 sgf:2009/4-LeszekSoldan-SansarTsolmon.sgf
       - 23-16 16:W+20.5 round:4 sgf:2009/4-JanRamon-DmytroYatsenko.sgf
       - 25-24 25:B+R round:3 sgf:2009/3-DmitrijSurin-RobertJasiek.sgf

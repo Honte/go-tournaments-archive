@@ -16,7 +16,7 @@ stages:
     findSharedPlaces: true
     games:
       - 1-3 1:B+10.5 round:3 sgf:2022/3-BaoxiangBai-ParkYoungWoon.sgf
-      - 1-10 1:B+0 round:4 sgf:2022/4-BaoxiangBai-WanKaoLou.sgf
+      - 1-10 1:B+? round:4 sgf:2022/4-BaoxiangBai-WanKaoLou.sgf
       - 1-17 1:B+R round:1 sgf:2022/1-BaoxiangBai-JieLinXia.sgf
       - 2-1 1:W+R round:5 sgf:2022/5-ChoiHwanYoung-BaoxiangBai.sgf
       - 2-6 2:B+1.5 round:4 sgf:2022/4-ChoiHwanYoung-YuChengLai.sgf
@@ -70,7 +70,7 @@ stages:
       - 19-3 3:W+R round:5 sgf:2022/5-TugkanEren-ParkYoungWoon.sgf
       - 19-9 9:W+R round:1 sgf:2022/1-TugkanEren-FernandoAguilar.sgf
       - 19-23 19:B+7.5 round:3 sgf:2022/3-TugkanEren-PetrCipra.sgf
-      - 20-6 6:W+0 round:6 sgf:2022/6-PeterSmolarik-YuChengLai.sgf
+      - 20-6 6:W+? round:6 sgf:2022/6-PeterSmolarik-YuChengLai.sgf
       - 20-11 11:W+28.5 round:4 sgf:2022/4-PeterSmolarik-ShouKaiLee.sgf
       - 20-40 20:B+52.5 round:2 sgf:2022/2-PeterSmolarik-JeffreydeCastro.sgf
       - 21-14 14:W+R round:6 sgf:2022/6-SofiaMalatesta-YiHanChen.sgf
@@ -89,7 +89,7 @@ stages:
       - 26-16 16:W+7.5 round:6 sgf:2022/6-HiroakiOkawa-BenMantle.sgf
       - 26-37 26:B+R round:3 sgf:2022/3-HiroakiOkawaMarcStoehr.sgf
       - 27-11 11:W+6.5 round:1 sgf:2022/1-LucmanBounoider-ShouKaiLee.sgf
-      - 27-36 27:B+0 round:6 sgf:2022/6-LucmanBounoider-JulioSaquicCanil.sgf
+      - 27-36 27:B+? round:6 sgf:2022/6-LucmanBounoider-JulioSaquicCanil.sgf
       - 27-40 27:B+R round:3 sgf:2022/3-LucmanBounoider-JeffreydeCastro.sgf
       - 28-19 19:W+22.5 round:4 sgf:2022/4-LuisPalacios-TugkanEren.sgf
       - 28-33 28:B+9.5 round:3 sgf:2022/3-LuisPalacios-ManuelAlejandrGomez.sgf

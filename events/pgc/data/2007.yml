@@ -30,10 +30,10 @@ stages:
         - ls-jl ls
         - ms-pc ms
         - kg-rj kg
-      - - kc-kg kc sgf:2007/2007-3-kchwedyna-kgiedrojc.sgf
-        - ls-ms ls sgf:2007/2007-3-lsurma-msurma.sgf
+      - - kc-kg kc:B+? sgf:2007/2007-3-kchwedyna-kgiedrojc.sgf
+        - ls-ms ls:W+? sgf:2007/2007-3-lsurma-msurma.sgf
         - pc-jl pc
-        - mb-rj mb sgf:2007/2007-3-mbazynski-rjachym.sgf
+        - mb-rj mb:W+? sgf:2007/2007-3-mbazynski-rjachym.sgf
       - - kc-pc kc
         - ms-mb ms
         - jl-kg jl
@@ -42,7 +42,7 @@ stages:
         - ls-pc ls
         - kg-mb kg
         - jl-ms jl
-      - - kc-ms kc sgf:2007/2007-6-msurma-kchwedyna.sgf
+      - - kc-ms kc:W+? sgf:2007/2007-6-msurma-kchwedyna.sgf
         - ls-kg ls
         - pc-mb pc
         - jl-rj jl

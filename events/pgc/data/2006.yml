@@ -46,7 +46,7 @@ stages:
         - mb-kh mb
         - pc-kc pc:B+R sgf:2006/2006-6-pcelejewski-kchwedyna.sgf
         - mk-ts mk
-      - - ls-kh ls sgf:2006/2006-7-lsoldan-khabu.sgf
+      - - ls-kh ls:B+? sgf:2006/2006-7-lsoldan-khabu.sgf
         - mb-kg mb
         - pc-mk pc
         - kc-ts kc

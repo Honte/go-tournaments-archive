@@ -27,10 +27,10 @@ stages:
       - 16-21 16:B+R round:5 sgf:1991/5-TeongLokeYeo-HowChingYeat.sgf
       - 19-13 13:W+0.5 round:8 sgf:1991/8-EgbertRittner-JeanMichel.sgf
       - 22-23 22:B+1.5 round:5 sgf:1991/5-RobertMateescu-DoJaeLee.sgf
-      - 22-27 22:B+0 round:4 sgf:1991/4-RobertMateescu-JohnRickard.sgf
-      - 29-31 29:B+0 round:4 sgf:1991/4-MarcGinoux-PrimoGarofalo.sgf
+      - 22-27 22:B+? round:4 sgf:1991/4-RobertMateescu-JohnRickard.sgf
+      - 29-31 29:B+? round:4 sgf:1991/4-MarcGinoux-PrimoGarofalo.sgf
       - 31-23 23:W+15.5 round:8 sgf:1991/8-PrimoGarofalo-DoJaeLee.sgf
-      - 36-32 32:W+0 round:8 sgf:1991/8-OscarBarriga-AlbertoAmador.sgf
+      - 36-32 32:W+? round:8 sgf:1991/8-OscarBarriga-AlbertoAmador.sgf
       - 37-20 20:W+R round:8 sgf:1991/8-NoelMitchell-BernhardScheid.sgf
       - 38-27 27:W+R round:5 sgf:1991/5-AndreRognes-JohnRickard.sgf
       - 40-21 21:W+R round:2 sgf:1991/2-JesusLua-HowChingYeat.sgf
