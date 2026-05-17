@@ -63,14 +63,14 @@ export function loadSgf(content: string, sgfPath?: string): SgfData {
       name: toSingleString(root.data[SgfRootProps.BLACK_NAME])!,
       rank: toSingleString(root.data[SgfRootProps.BLACK_RANK]),
       country: toSingleString(root.data[SgfRootProps.BLACK_TEAM]),
-      won: result.startsWith('B'),
+      won: result?.startsWith('B'),
     },
     white: {
       id: toSingleString(root.data[CustomSgfProps.WHITE_ID]),
       name: toSingleString(root.data[SgfRootProps.WHITE_NAME])!,
       rank: toSingleString(root.data[SgfRootProps.WHITE_RANK]),
       country: toSingleString(root.data[SgfRootProps.WHITE_TEAM]),
-      won: result.startsWith('W'),
+      won: result?.startsWith('W'),
     },
     props: {
       sgf: sgfPath,
