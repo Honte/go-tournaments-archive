@@ -111,7 +111,7 @@ export function normalizeSgfResult(rawResult: string | null): NormalizedSgfResul
   }
 
   if (!rest) {
-    return { cleanResult: color, resultIssue: null };
+    return { cleanResult: `${color}+?`, resultIssue: null };
   }
 
   if (!rest.startsWith('+') && !rest.startsWith(',')) {

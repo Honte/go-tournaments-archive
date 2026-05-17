@@ -45,14 +45,14 @@ describe('normalizeSgfResult', () => {
   });
 
   it('accepts bare color results', () => {
-    assert.deepEqual(normalizeSgfResult('B'), { cleanResult: 'B', resultIssue: null });
-    assert.deepEqual(normalizeSgfResult('b'), { cleanResult: 'B', resultIssue: null });
-    assert.deepEqual(normalizeSgfResult('W'), { cleanResult: 'W', resultIssue: null });
-    assert.deepEqual(normalizeSgfResult('w'), { cleanResult: 'W', resultIssue: null });
-    assert.deepEqual(normalizeSgfResult('Black'), { cleanResult: 'B', resultIssue: null });
-    assert.deepEqual(normalizeSgfResult('blAcK'), { cleanResult: 'B', resultIssue: null });
-    assert.deepEqual(normalizeSgfResult('White'), { cleanResult: 'W', resultIssue: null });
-    assert.deepEqual(normalizeSgfResult('white'), { cleanResult: 'W', resultIssue: null });
+    assert.deepEqual(normalizeSgfResult('B'), { cleanResult: 'B+?', resultIssue: null });
+    assert.deepEqual(normalizeSgfResult('b'), { cleanResult: 'B+?', resultIssue: null });
+    assert.deepEqual(normalizeSgfResult('W'), { cleanResult: 'W+?', resultIssue: null });
+    assert.deepEqual(normalizeSgfResult('w'), { cleanResult: 'W+?', resultIssue: null });
+    assert.deepEqual(normalizeSgfResult('Black'), { cleanResult: 'B+?', resultIssue: null });
+    assert.deepEqual(normalizeSgfResult('blAcK'), { cleanResult: 'B+?', resultIssue: null });
+    assert.deepEqual(normalizeSgfResult('White'), { cleanResult: 'W+?', resultIssue: null });
+    assert.deepEqual(normalizeSgfResult('white'), { cleanResult: 'W+?', resultIssue: null });
   });
 
   it('trims surrounding whitespace', () => {

@@ -193,7 +193,7 @@ function buildGameString(h9Record: H9GameRecord, sgf: SgfInfo, sgfPlaces: SgfPla
       const prefix = h9Record.winnerColor === 'black' ? 'B' : 'W';
       const suffix = sgf.rawResult ? sgf.rawResult.replace(/\s+/g, '_') : '';
 
-      resultStr = suffix ? `${prefix}+${suffix}` : prefix;
+      resultStr = suffix ? `${prefix}+${suffix}` : `${prefix}+?`;
     }
   }
 
