@@ -5,6 +5,9 @@ type ParsedSequence = {
   leaf: SgfNode;
 };
 
+const MOVE_PROPS = ['B', 'W'] as const;
+const MOVE_NODE_PROPS = ['B', 'W', 'MN', 'KO', 'BM', 'DO', 'IT', 'TE'] as const;
+
 export class SgfParser {
   private pos = 0;
   private nextId = 0;
@@ -18,12 +21,12 @@ export class SgfParser {
       throw new Error('Expected SGF game tree');
     }
 
-    const roots = this.peek() === '(' ? this.parseGameTree() : [this.parseUnwrappedGameTree()];
+    const roots = this.peek() === '(' ? this.parseGameTree(true) : [this.parseUnwrappedGameTree()];
 
     this.skipWhitespace();
 
     while (this.peek() === '(') {
-      this.parseGameTree();
+      this.parseGameTree(true);
       this.skipWhitespace();
     }
 
@@ -38,7 +41,7 @@ export class SgfParser {
     return roots[0];
   }
 
-  private parseGameTree(): SgfNode[] {
+  private parseGameTree(splitRootMove: boolean): SgfNode[] {
     this.expect('(');
     this.skipWhitespace();
 
@@ -51,7 +54,7 @@ export class SgfParser {
       const roots: SgfNode[] = [];
 
       while (this.peek() === '(') {
-        roots.push(...this.parseGameTree());
+        roots.push(...this.parseGameTree(splitRootMove));
         this.skipWhitespace();
       }
 
@@ -59,7 +62,7 @@ export class SgfParser {
       return roots;
     }
 
-    const sequence = this.parseSequence();
+    const sequence = this.parseSequence(splitRootMove);
     this.skipWhitespace();
 
     while (this.peek() === '(') {
@@ -73,7 +76,7 @@ export class SgfParser {
   }
 
   private parseUnwrappedGameTree(): SgfNode {
-    const sequence = this.parseSequence();
+    const sequence = this.parseSequence(true);
     this.skipWhitespace();
 
     while (this.peek() === '(') {
@@ -84,13 +87,13 @@ export class SgfParser {
     return sequence.root;
   }
 
-  private parseSequence(): ParsedSequence {
+  private parseSequence(splitRootMove: boolean): ParsedSequence {
     if (this.peek() !== ';') {
       throw new Error(`Expected node at ${this.pos}`);
     }
 
     const root = this.parseNode();
-    let leaf = root;
+    let leaf = splitRootMove ? (this.splitRootMove(root) ?? root) : root;
 
     this.skipWhitespace();
 
@@ -141,8 +144,35 @@ export class SgfParser {
     return node;
   }
 
+  private splitRootMove(root: SgfNode): SgfNode | undefined {
+    const hasRootMove = MOVE_PROPS.some((prop) => root.data[prop]?.length);
+
+    if (!hasRootMove) {
+      return undefined;
+    }
+
+    const data: SgfNode['data'] = {};
+
+    for (const prop of MOVE_NODE_PROPS) {
+      if (root.data[prop]) {
+        data[prop] = root.data[prop];
+        delete root.data[prop];
+      }
+    }
+
+    const child: SgfNode = {
+      id: this.nextId++,
+      parentId: root.id,
+      children: [],
+      data,
+    };
+
+    root.children.push(child);
+    return child;
+  }
+
   private parseChildGameTree(parentId: number): SgfNode[] {
-    const children = this.parseGameTree();
+    const children = this.parseGameTree(false);
 
     for (const child of children) {
       child.parentId = parentId;

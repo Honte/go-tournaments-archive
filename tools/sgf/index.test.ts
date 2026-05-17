@@ -47,8 +47,10 @@ describe('Sgf', () => {
     const sgf = new Sgf('(;B[aa]()(;W[bb])())');
 
     assert.equal(sgf.getRoot().children.length, 1);
-    assert.deepEqual(sgf.getRoot().children[0].data, { W: ['bb'] });
-    assert.equal(sgf.toString(false), '(;B[aa];W[bb])');
+    assert.deepEqual(sgf.getRoot().data, {});
+    assert.deepEqual(sgf.getRoot().children[0].data, { B: ['aa'] });
+    assert.deepEqual(sgf.getRoot().children[0].children[0].data, { W: ['bb'] });
+    assert.equal(sgf.toString(false), '(;;B[aa];W[bb])');
   });
 
   it('accepts SGF collections by preserving the first game tree', () => {
@@ -76,8 +78,63 @@ describe('Sgf', () => {
 
     assert.deepEqual(root.data.C, ['hello] bracket \\ slash']);
     assert.deepEqual(root.data.COPYRIGHT, ['a']);
-    assert.deepEqual(root.data.B, ['cc']);
     assert.deepEqual(root.data.XX, ['one', 'two']);
+    assert.deepEqual(root.children[0].data.B, ['cc']);
+  });
+
+  it('moves root move properties and move annotations to a child node', () => {
+    const sgf = new Sgf('(;FF[4]SZ[19]B[aa]MN[1]KO[]BM[2]DO[]IT[]TE[2];W[bb])');
+    const root = sgf.getRoot();
+    const rootMove = root.children[0];
+    const secondMove = rootMove.children[0];
+
+    assert.deepEqual(root.data, { FF: ['4'], SZ: ['19'] });
+    assert.deepEqual(rootMove.data, {
+      B: ['aa'],
+      MN: ['1'],
+      KO: [''],
+      BM: ['2'],
+      DO: [''],
+      IT: [''],
+      TE: ['2'],
+    });
+    assert.equal(rootMove.parentId, root.id);
+    assert.deepEqual(secondMove.data, { W: ['bb'] });
+    assert.equal(secondMove.parentId, rootMove.id);
+  });
+
+  it('keeps root annotations on root when there is no root move', () => {
+    const sgf = new Sgf('(;MN[1]TE[2];B[aa])');
+    const root = sgf.getRoot();
+
+    assert.deepEqual(root.data, { MN: ['1'], TE: ['2'] });
+    assert.deepEqual(root.children[0].data, { B: ['aa'] });
+    assert.equal(root.children[0].parentId, root.id);
+  });
+
+  it('keeps setup properties on root and does not treat them as moves', () => {
+    const sgf = new Sgf('(;AB[aa][bb]AW[cc]MN[1];B[dd])');
+    const root = sgf.getRoot();
+
+    assert.deepEqual(root.data, { AB: ['aa', 'bb'], AW: ['cc'], MN: ['1'] });
+    assert.deepEqual(root.children[0].data, { B: ['dd'] });
+    assert.equal(root.children[0].parentId, root.id);
+  });
+
+  it('preserves variations under a root move after splitting it into a child node', () => {
+    const sgf = new Sgf('(;B[aa]TE[1](;W[bb])(;W[cc]))');
+    const root = sgf.getRoot();
+    const rootMove = root.children[0];
+
+    assert.deepEqual(root.data, {});
+    assert.deepEqual(rootMove.data, { B: ['aa'], TE: ['1'] });
+    assert.equal(rootMove.parentId, root.id);
+    assert.deepEqual(
+      rootMove.children.map((child) => child.data),
+      [{ W: ['bb'] }, { W: ['cc'] }]
+    );
+    assert.equal(rootMove.children[0].parentId, rootMove.id);
+    assert.equal(rootMove.children[1].parentId, rootMove.id);
   });
 
   it('removes escaped line breaks inside values', () => {
@@ -161,16 +218,17 @@ describe('Sgf', () => {
 
     assert.throws(() => sgf.getLongestBranch(), /Multiple longest branches/);
     assert.throws(() => sgf.stripShorterBranches(), /Multiple longest branches/);
-    assert.equal(sgf.getRoot().children.length, 2);
+    assert.equal(sgf.getRoot().children.length, 1);
+    assert.equal(sgf.getRoot().children[0].children.length, 2);
   });
 
   it('always stringifies as a parenthesized tree', () => {
     const sgf = new Sgf('(;B[aa];W[bb])');
 
-    assert.equal(sgf.toString(false), '(;B[aa];W[bb])');
+    assert.equal(sgf.toString(false), '(;;B[aa];W[bb])');
     assert.equal(sgf.toString().startsWith('('), true);
     assert.equal(sgf.toString(true).startsWith('('), true);
-    assert.match(sgf.toString(true), /\n  ;B\[aa\]\n  ;W\[bb\]\n\)$/);
+    assert.match(sgf.toString(true), /\n  ;\n  ;B\[aa\]\n  ;W\[bb\]\n\)$/);
   });
 
   it('cleans SGFs through the static cleaner', () => {
