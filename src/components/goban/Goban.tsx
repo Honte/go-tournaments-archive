@@ -1,4 +1,5 @@
 import type { default as Board, Sign, Vertex } from '@sabaki/go-board';
+import { clsx } from 'clsx';
 import { MouseEvent, useRef } from 'react';
 import { iterateStones } from '@/libs/goban';
 import type { SgfMove } from '@/libs/sgf';
@@ -13,7 +14,7 @@ export type SgfPointer = SgfMove & {
 export type GobanProps = {
   className?: string;
   board: Board;
-  mark?: Vertex;
+  mark?: SgfMove;
   pointer?: SgfPointer;
   onClick?: (move: SgfMove, svg: SVGSVGElement) => void;
   onMouseMove?: (move: SgfMove, svg: SVGSVGElement) => void;
@@ -99,14 +100,7 @@ export function Goban({ className, board, mark, pointer, onClick, onMouseMove }:
 
       {pointer && <Stone {...pointer} className="opacity-50 pointer-events-none" />}
 
-      {mark && (
-        <circle
-          cx={mark[0] + 1}
-          cy={mark[1] + 1}
-          r=".28"
-          className="fill-transparent stroke-red-500 stroke-[0.1px] pointer-events-none"
-        />
-      )}
+      <Marker move={mark} size={size} />
 
       {pointer?.hint && (
         <>
@@ -144,6 +138,39 @@ function Stone(props: SgfMove & { className?: string }) {
   return <use x={x} y={y} href={`#${sign === -1 ? 'white' : 'black'}`} className={className} />;
 }
 
+function Marker({ move, size }: { move?: SgfMove; size: number }) {
+  if (!move) {
+    return null;
+  }
+
+  if (!isOnBoard(move, size)) {
+    return (
+      <text
+        x="50%"
+        y="50%"
+        className={clsx(
+          'text-[1px] font-semibold stroke-[0.1px] anchor-middle stroke-paint-order tracking-widest pointer-events-none',
+          {
+            'fill-white stroke-black': move.sign <= 0,
+            'fill-black stroke-white': move.sign > 0,
+          }
+        )}
+      >
+        PASS
+      </text>
+    );
+  }
+
+  return (
+    <circle
+      cx={move.vertex[0] + 1}
+      cy={move.vertex[1] + 1}
+      r=".28"
+      className="fill-transparent stroke-red-500 stroke-[0.1px] pointer-events-none"
+    />
+  );
+}
+
 function toKey(move: SgfMove) {
   return `${move.vertex[0]}-${move.vertex[1]}`;
 }
@@ -158,4 +185,8 @@ function getVertex(ev: MouseEvent, size: number): Vertex {
 
 function isSameVertex(a?: Vertex, b?: Vertex) {
   return a && b && a[0] === b[0] && a[1] === b[1];
+}
+
+function isOnBoard(move: SgfMove, size: number) {
+  return move.vertex[0] >= 0 && move.vertex[0] < size && move.vertex[1] >= 0 && move.vertex[1] < size;
 }

@@ -6,8 +6,22 @@ export function sgfToBoard(sgf: string) {
 
   let board = Board.fromDimensions(size);
 
-  for (const { sign, vertex } of moves) {
-    board = board.makeMove(sign, vertex);
+  for (const move of moves) {
+    if ('sign' in move) {
+      board = board.makeMove(move.sign, move.vertex);
+    } else {
+      for (const vertex of move.empty) {
+        board = board.set(vertex, 0);
+      }
+
+      for (const vertex of move.black) {
+        board = board.set(vertex, 1);
+      }
+
+      for (const vertex of move.white) {
+        board = board.set(vertex, -1);
+      }
+    }
   }
 
   return board;

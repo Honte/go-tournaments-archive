@@ -19,7 +19,7 @@ export type SgfData = {
   black: SgfPlayer;
   white: SgfPlayer;
   props?: GameProps;
-  moves: SgfMove[];
+  moves: (SgfMove | SgfEdit)[];
 };
 
 export type SgfMove = {
@@ -27,27 +27,41 @@ export type SgfMove = {
   vertex: Vertex;
 };
 
+export type SgfEdit = {
+  empty: Vertex[];
+  white: Vertex[];
+  black: Vertex[];
+};
+
 export function loadSgf(content: string, sgfPath?: string): SgfData {
   const root = new Sgf(content).getRoot();
-  const moves: SgfMove[] = [];
-  const result = root.data[SgfRootProps.GAME_RESULT]?.[0];
+  const result = toSingleString(root.data[SgfRootProps.GAME_RESULT]);
+  const size = toSingleNumber(root.data[SgfRootProps.BOARD_SIZE]) ?? 19;
 
+  const moves: (SgfMove | SgfEdit)[] = [];
   let node = root.children[0];
   while (node) {
     const move = node.data?.B || node.data?.W;
-    const position = move?.[0];
+    const empty = node.data?.AE;
+    const white = node.data?.AW;
+    const black = node.data?.AB;
 
-    if (position) {
-      const [a, b] = position.split('');
-      const x = a.charCodeAt(0) - 97;
-      const y = b.charCodeAt(0) - 97;
+    if (move) {
+      const position = move?.[0];
+      const vertex: Vertex = position ? moveToVertex(position) : [size, size];
 
       moves.push({
         sign: node.data.W ? -1 : 1,
-        vertex: [x, y],
+        vertex,
       });
-    } else {
-      // TODO handle pass
+    }
+
+    if (empty || white || black) {
+      moves.push({
+        empty: empty?.map(moveToVertex) ?? [],
+        white: white?.map(moveToVertex) ?? [],
+        black: black?.map(moveToVertex) ?? [],
+      });
     }
 
     node = node.children?.[0];
@@ -55,9 +69,9 @@ export function loadSgf(content: string, sgfPath?: string): SgfData {
 
   return {
     title: toSingleString(root.data[SgfRootProps.GAME_NAME]),
-    size: toSingleNumber(root.data[SgfRootProps.BOARD_SIZE]) ?? 19,
+    size,
+    result,
     komi: toSingleNumber(root.data[SgfRootProps.GAME_KOMI]),
-    result: toSingleString(root.data[SgfRootProps.GAME_RESULT]),
     black: {
       id: toSingleString(root.data[CustomSgfProps.BLACK_ID]),
       name: toSingleString(root.data[SgfRootProps.BLACK_NAME])!,
@@ -90,4 +104,12 @@ function toSingleNumber(value?: string[]) {
 
 function toSingleString(value?: string[]) {
   return value?.[0];
+}
+
+function moveToVertex(position: string) {
+  const [a, b] = position.split('');
+  const x = a.charCodeAt(0) - 97;
+  const y = b.charCodeAt(0) - 97;
+
+  return [x, y] as Vertex;
 }

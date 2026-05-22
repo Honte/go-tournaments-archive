@@ -14,7 +14,7 @@ import {
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { between } from '@/libs/math';
-import type { SgfData, SgfMove, SgfPlayer } from '@/libs/sgf';
+import type { SgfData, SgfEdit, SgfMove, SgfPlayer } from '@/libs/sgf';
 import { Goban, type SgfPointer } from '@/components/goban/Goban';
 import { Stone } from '@/components/Stone';
 import { PlayerLink } from '@/components/ui/PlayerLink';
@@ -127,9 +127,23 @@ function GameViewerContent(props: GameViewerContentProps) {
     let state = Board.fromDimensions(sgf.size, sgf.size);
 
     for (let i = 0; i < position; i++) {
-      const { sign, vertex } = sgf.moves[i];
+      const move = sgf.moves[i];
 
-      state = state.makeMove(sign, vertex);
+      if ('vertex' in move) {
+        state = state.makeMove(move.sign, move.vertex);
+      } else {
+        for (const vertex of move.empty) {
+          state = state.set(vertex, 0);
+        }
+
+        for (const vertex of move.black) {
+          state = state.set(vertex, 1);
+        }
+
+        for (const vertex of move.white) {
+          state = state.set(vertex, -1);
+        }
+      }
     }
 
     return state;
@@ -232,7 +246,7 @@ function GameViewerContent(props: GameViewerContentProps) {
       <div className="flex min-h-0 flex-1 items-center justify-center overflow-hidden">
         <Goban
           board={board}
-          mark={sgf.moves[position - 1]?.vertex}
+          mark={getPrevMove(sgf.moves, position)}
           pointer={pointer}
           className="block aspect-square max-h-full max-w-full rounded-md"
           onClick={goToMove}
@@ -312,11 +326,18 @@ function PlayerRow({
   );
 }
 
-function findMove(moves: SgfMove[], boardMove: SgfMove, position: number): SgfMove | undefined {
+function getPrevMove(moves: (SgfMove | SgfEdit)[], position: number): SgfMove | undefined {
+  const prev = moves[position - 1];
+
+  return 'vertex' in prev ? prev : undefined;
+}
+
+function findMove(moves: (SgfMove | SgfEdit)[], boardMove: SgfMove, position: number): SgfMove | undefined {
   return moves.find(
     (move, index) =>
+      'vertex' in move &&
       move.vertex[0] === boardMove.vertex[0] &&
       move.vertex[1] === boardMove.vertex[1] &&
       (boardMove.sign ? move.sign === boardMove.sign : index >= position)
-  );
+  ) as SgfMove | undefined;
 }
