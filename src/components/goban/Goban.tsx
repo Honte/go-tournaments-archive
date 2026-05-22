@@ -1,6 +1,6 @@
 import type { default as Board, Sign, Vertex } from '@sabaki/go-board';
 import { clsx } from 'clsx';
-import { MouseEvent, useRef } from 'react';
+import { type MouseEvent, type WheelEvent, useRef } from 'react';
 import { iterateStones } from '@/libs/goban';
 import type { SgfMove } from '@/libs/sgf';
 import SVG_BLACK from './black.svg';
@@ -18,9 +18,10 @@ export type GobanProps = {
   pointer?: SgfPointer;
   onClick?: (move: SgfMove, svg: SVGSVGElement) => void;
   onMouseMove?: (move: SgfMove, svg: SVGSVGElement) => void;
+  onWheel?: (event: WheelEvent<SVGSVGElement>) => void;
 };
 
-export function Goban({ className, board, mark, pointer, onClick, onMouseMove }: GobanProps) {
+export function Goban({ className, board, mark, pointer, onClick, onMouseMove, onWheel }: GobanProps) {
   const size = board.width; // always assume board is square
   const lastTriggered = useRef<Vertex>(undefined);
 
@@ -43,6 +44,7 @@ export function Goban({ className, board, mark, pointer, onClick, onMouseMove }:
       className={className}
       xmlns="http://www.w3.org/2000/svg"
       viewBox={`0 0 ${size + 1} ${size + 1}`}
+      onWheel={onWheel}
       onMouseMove={(ev) => {
         if (typeof onMouseMove !== 'function') {
           return;

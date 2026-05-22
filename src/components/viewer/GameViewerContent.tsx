@@ -1,6 +1,6 @@
 import Board from '@sabaki/go-board';
 import { clsx } from 'clsx';
-import { type ChangeEvent, useCallback, useEffect, useMemo, useState } from 'react';
+import { type ChangeEvent, useCallback, useEffect, useMemo, useState, type WheelEvent } from 'react';
 import {
   FaBackward,
   FaBackwardFast,
@@ -91,6 +91,20 @@ function GameViewerContent(props: GameViewerContentProps) {
       }
     },
     [maxMove, setPosition, setPlaying]
+  );
+
+  const onBoardWheel = useCallback(
+    (event: WheelEvent<SVGSVGElement>) => {
+      event.preventDefault();
+      event.stopPropagation();
+
+      if (event.deltaY === 0) {
+        return;
+      }
+
+      changePosition(Math.sign(event.deltaY));
+    },
+    [changePosition]
   );
 
   const goToMove = useCallback(
@@ -251,6 +265,7 @@ function GameViewerContent(props: GameViewerContentProps) {
           className="block aspect-square max-h-full max-w-full rounded-md"
           onClick={goToMove}
           onMouseMove={showPointer}
+          onWheel={onBoardWheel}
         />
       </div>
 
@@ -329,7 +344,7 @@ function PlayerRow({
 function getPrevMove(moves: (SgfMove | SgfEdit)[], position: number): SgfMove | undefined {
   const prev = moves[position - 1];
 
-  return 'vertex' in prev ? prev : undefined;
+  return prev && 'vertex' in prev ? prev : undefined;
 }
 
 function findMove(moves: (SgfMove | SgfEdit)[], boardMove: SgfMove, position: number): SgfMove | undefined {
