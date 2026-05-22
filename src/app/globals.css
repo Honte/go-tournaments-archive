@@ -27,6 +27,15 @@
   --color-event-bg: #e5e7eb;
 }
 
+@utility stroke-paint-order {
+  paint-order: stroke fill;
+}
+
+@utility anchor-middle {
+  text-anchor: middle;
+  dominant-baseline: central;
+}
+
 html {
   scrollbar-gutter: stable;
 }
