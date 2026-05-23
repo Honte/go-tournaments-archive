@@ -429,12 +429,14 @@ The matcher accepts:
 
 ```bash
 npm run sgf:match:pgc -- -y 2025
+npm run sgf:match:pgc -- -d
 npm run sgf:match:pgc -- -f
 npm run sgf:match:pgc -- -v
 npm run sgf:match:pgc -- -s
 ```
 
 - `-y` / `--year` limits matching to one year.
+- `-d` / `--dry` prints the matching summary without writing YAML. Combine it with `--force` to recheck already matched SGFs.
 - `-f` / `--force` overwrites existing `sgf:` props.
 - `-v` / `--verbose` prints per-stage matching details.
 - `-s` / `--strict` reports SGF content issues such as the longest branch not being the main branch.

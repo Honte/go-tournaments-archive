@@ -107,3 +107,13 @@ export function printSummary(results: StageResult[]): void {
     }
   }
 }
+
+export function printDryRunReport(logger: Logger, stageResult: StageProcessResult, dry: boolean): void {
+  if (dry && stageResult.matchedEntries.length > 0) {
+    logger.log('Matched entries:');
+
+    for (const entry of stageResult.matchedEntries) {
+      logger.log(`  ${entry}`);
+    }
+  }
+}
