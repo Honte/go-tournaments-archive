@@ -2,14 +2,15 @@ export type SgfNode = {
   id: number;
   parentId?: number;
   children: SgfNode[];
-  data: Record<string, string[]>;
+  data: SgfNodeData;
 };
 
-type SgfNodeDataValueType = string | number | undefined | null;
+type SgfNodeDataChangeValueType = string | number | undefined | null;
 
-export type SgfNodeDataValue =
-  | SgfNodeDataValueType
-  | SgfNodeDataValueType[]
-  | ((current: string[]) => SgfNodeDataValueType | SgfNodeDataValueType[]);
+export type SgfNodeDataChangeValue =
+  | SgfNodeDataChangeValueType
+  | SgfNodeDataChangeValueType[]
+  | ((current: string[]) => SgfNodeDataChangeValueType | SgfNodeDataChangeValueType[]);
 
-export type SgfNodeData = Record<string, SgfNodeDataValue>;
+export type SgfNodeDataChange = Record<string, SgfNodeDataChangeValue>;
+export type SgfNodeData = Record<string, string[]>;

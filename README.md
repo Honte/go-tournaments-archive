@@ -431,11 +431,13 @@ The matcher accepts:
 npm run sgf:match:pgc -- -y 2025
 npm run sgf:match:pgc -- -f
 npm run sgf:match:pgc -- -v
+npm run sgf:match:pgc -- -s
 ```
 
 - `-y` / `--year` limits matching to one year.
 - `-f` / `--force` overwrites existing `sgf:` props.
 - `-v` / `--verbose` prints per-stage matching details.
+- `-s` / `--strict` reports SGF content issues such as the longest branch not being the main branch.
 
 By default, the matcher keeps output compact: it prints a total summary and then lists unmatched games with their
 reasons. Use `--verbose` when you need the full per-stage counts that include found, reused, newly matched, and unmatched

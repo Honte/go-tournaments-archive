@@ -201,6 +201,22 @@ describe('Sgf', () => {
     );
   });
 
+  it('returns the main branch by following the first child', () => {
+    const sgf = new Sgf('(;A[root];B[aa](;W[bb])(;W[dd];B[cc]))');
+    const mainBranch = sgf.getMainBranch();
+    const longestBranch = sgf.getLongestBranch();
+
+    assert.deepEqual(
+      mainBranch.map((node) => node.id),
+      [0, 1, 2]
+    );
+    assert.deepEqual(
+      longestBranch.map((node) => node.id),
+      [0, 1, 3, 4]
+    );
+    assert.equal(mainBranch.length < longestBranch.length, true);
+  });
+
   it('strips shorter branches and rebuilds node lookup', () => {
     const sgf = new Sgf('(;A[root];B[aa](;W[bb];B[cc])(;W[dd]))');
 

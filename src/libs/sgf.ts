@@ -34,12 +34,12 @@ export type SgfEdit = {
 };
 
 export function loadSgf(content: string, sgfPath?: string): SgfData {
-  const root = new Sgf(content).getRoot();
-  const result = toSingleString(root.data[SgfRootProps.GAME_RESULT]);
-  const size = toSingleNumber(root.data[SgfRootProps.BOARD_SIZE]) ?? 19;
+  const sgf = new Sgf(content);
+  const result = sgf.getStringRootProperty(SgfRootProps.GAME_RESULT);
+  const size = sgf.getNumericRootProperty(SgfRootProps.BOARD_SIZE) ?? 19;
 
   const moves: (SgfMove | SgfEdit)[] = [];
-  let node = root.children[0];
+  let node = sgf.getRoot().children[0];
   while (node) {
     const move = node.data?.B || node.data?.W;
     const empty = node.data?.AE;
@@ -68,42 +68,32 @@ export function loadSgf(content: string, sgfPath?: string): SgfData {
   }
 
   return {
-    title: toSingleString(root.data[SgfRootProps.GAME_NAME]),
+    title: sgf.getStringRootProperty(SgfRootProps.GAME_NAME),
     size,
     result,
-    komi: toSingleNumber(root.data[SgfRootProps.GAME_KOMI]),
+    komi: sgf.getNumericRootProperty(SgfRootProps.GAME_KOMI),
     black: {
-      id: toSingleString(root.data[CustomSgfProps.BLACK_ID]),
-      name: toSingleString(root.data[SgfRootProps.BLACK_NAME])!,
-      rank: toSingleString(root.data[SgfRootProps.BLACK_RANK]),
-      country: toSingleString(root.data[SgfRootProps.BLACK_TEAM]),
+      id: sgf.getStringRootProperty(CustomSgfProps.BLACK_ID),
+      name: sgf.getStringRootProperty(SgfRootProps.BLACK_NAME)!,
+      rank: sgf.getStringRootProperty(SgfRootProps.BLACK_RANK),
+      country: sgf.getStringRootProperty(SgfRootProps.BLACK_TEAM),
       won: result?.startsWith('B'),
     },
     white: {
-      id: toSingleString(root.data[CustomSgfProps.WHITE_ID]),
-      name: toSingleString(root.data[SgfRootProps.WHITE_NAME])!,
-      rank: toSingleString(root.data[SgfRootProps.WHITE_RANK]),
-      country: toSingleString(root.data[SgfRootProps.WHITE_TEAM]),
+      id: sgf.getStringRootProperty(CustomSgfProps.WHITE_ID),
+      name: sgf.getStringRootProperty(SgfRootProps.WHITE_NAME)!,
+      rank: sgf.getStringRootProperty(SgfRootProps.WHITE_RANK),
+      country: sgf.getStringRootProperty(SgfRootProps.WHITE_TEAM),
       won: result?.startsWith('W'),
     },
     props: {
       sgf: sgfPath,
-      ai: toSingleString(root.data[CustomSgfProps.GAME_AI]),
-      ogs: toSingleString(root.data[CustomSgfProps.GAME_OGS]),
-      yt: root.data[CustomSgfProps.GAME_YT],
+      ai: sgf.getStringRootProperty(CustomSgfProps.GAME_AI),
+      ogs: sgf.getStringRootProperty(CustomSgfProps.GAME_OGS),
+      yt: sgf.getRootProperty(CustomSgfProps.GAME_YT),
     },
     moves,
   };
-}
-
-function toSingleNumber(value?: string[]) {
-  const num = Number(value?.[0]);
-
-  return isNaN(num) ? undefined : num;
-}
-
-function toSingleString(value?: string[]) {
-  return value?.[0];
 }
 
 function moveToVertex(position: string) {

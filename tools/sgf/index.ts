@@ -1,14 +1,14 @@
 import { MultipleLongestBranchesError } from './errors';
 import { SgfParser } from './parser';
-import type { SgfNode, SgfNodeData } from './schema';
+import type { SgfNode, SgfNodeData, SgfNodeDataChange } from './schema';
 
-export type { SgfNode, SgfNodeData, SgfNodeDataValue } from './schema';
+export type { SgfNode, SgfNodeData, SgfNodeDataChange };
 
 export class Sgf {
   private readonly root: SgfNode;
   private nodes = new Map<number, SgfNode>();
 
-  static clean(content: string, props?: SgfNodeData): string {
+  static clean(content: string, props?: SgfNodeDataChange): string {
     return new Sgf(content).stripShorterBranches().stripComments().updateRootProperties(props).toString(false);
   }
 
@@ -48,7 +48,21 @@ export class Sgf {
     return this;
   }
 
-  updateRootProperties(props?: SgfNodeData): this {
+  getRootProperty(key: string): string[] | undefined {
+    return this.root.data[key];
+  }
+
+  getStringRootProperty(key: string): string | undefined {
+    return this.getRootProperty(key)?.[0];
+  }
+
+  getNumericRootProperty(key: string): number | undefined {
+    const value = this.getStringRootProperty(key);
+
+    return value ? Number(value) : undefined;
+  }
+
+  updateRootProperties(props?: SgfNodeDataChange): this {
     if (!props) {
       return this;
     }
@@ -107,6 +121,18 @@ export class Sgf {
     }
 
     return longest;
+  }
+
+  getMainBranch(): SgfNode[] {
+    const branch: SgfNode[] = [];
+    let current: SgfNode | undefined = this.root;
+
+    while (current) {
+      branch.push(current);
+      current = current.children[0];
+    }
+
+    return branch;
   }
 
   getNode(id: number): SgfNode | undefined {

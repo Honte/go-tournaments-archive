@@ -6,7 +6,7 @@ import type { Game, Stage, Tournament } from '@/schema/data';
 import { CustomSgfProps, SgfRootProps } from '@/schema/sgf';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
-import { Sgf, type SgfNodeData } from '@tools/sgf';
+import { Sgf, type SgfNodeDataChange } from '@tools/sgf';
 import { getStageName } from '@/libs/stage';
 import pkg from '../../package.json';
 
@@ -147,5 +147,5 @@ function getSgfProps(game: Game, tournament: Tournament, stage: Stage, translati
     [CustomSgfProps.GAME_AI]: game.props.ai || null,
     [CustomSgfProps.GAME_YT]: game.props.yt || null,
     [CustomSgfProps.GAME_OGS]: game.props.ogs || null,
-  } satisfies SgfNodeData;
+  } satisfies SgfNodeDataChange;
 }

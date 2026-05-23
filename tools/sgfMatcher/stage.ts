@@ -15,6 +15,7 @@ type StageProcessInput = {
   dataDir: string;
   sgfDir: string;
   force: boolean;
+  strict: boolean;
 };
 
 export async function processStage({
@@ -23,6 +24,7 @@ export async function processStage({
   sgfDir,
   dataDir,
   force,
+  strict,
 }: StageProcessInput): Promise<StageProcessResult> {
   const tournamentFilePath = path.join(dataDir, stage.file);
   const tournamentFileContent = await readFile(tournamentFilePath, 'utf-8');
@@ -50,7 +52,7 @@ export async function processStage({
   }
 
   const pathsToMatch = force ? sgfPaths : sgfPaths.filter((p) => !existingGamesBySgf.has(p));
-  const sgfInfos = await loadSgfInfos(sgfDir, pathsToMatch);
+  const sgfInfos = await loadSgfInfos(sgfDir, pathsToMatch, strict);
 
   const { matchedEntries, unmatchedSgfs } = matchSgfs(sgfInfos, playersMap, gamesMap, existingGamesById, force);
 

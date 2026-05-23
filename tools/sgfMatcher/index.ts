@@ -14,11 +14,13 @@ import { updateYamlDoc } from './yaml';
 
 const {
   force,
+  strict,
   year: yearFilter,
   verbose,
 } = readCliParams({
   year: { type: 'string', short: 'y' },
   force: { type: 'boolean', default: false, short: 'f' },
+  strict: { type: 'boolean', default: false, short: 's' },
   verbose: { type: 'boolean', default: false, short: 'v' },
 });
 
@@ -68,6 +70,7 @@ for (const yamlPath of yamlFiles.sort()) {
       dataDir: DATA_DIR,
       sgfDir: SGF_DIR,
       force,
+      strict,
     });
 
     printStageReport(logger, stageResult);
