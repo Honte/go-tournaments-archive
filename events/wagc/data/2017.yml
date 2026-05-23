@@ -19,5 +19,35 @@ stages:
     findSharedPlaces: true
     games:
       - 1-4 1:B+R round:3 sgf:2017/3-BaoxiangBai-DanielKo.sgf
+      - 1-6 1:B+1.5 round:5 sgf:2017/5-BaoxiangBai-JinungRi.sgf
+      - 1-9 1:B+R round:7 sgf:2017/7-BaoxiangBai-DmitrijSurin.sgf
+      - 1-18 1:B+R round:1 sgf:2017/1-BaoxiangBai-JavierAleksiSavolainen.sgf
+      - 2-1 1:W+R round:6 sgf:2017/6-SangbinLee-BaoxiangBai.sgf
+      - 2-6 2:B+0.5 round:8 sgf:2017/8-SangbinLee-JinungRi.sgf
+      - 2-8 2:B+1.5 round:4 sgf:2017/4-SangbinLee-NaiSanChan.sgf
+      - 2-34 2:B+R round:2 sgf:2017/2-SangbinLee-HallbjornGudmundsson.sgf
       - 3-1 1:W+R round:8 sgf:2017/8-YuChengLai-BaoxiangBai.sgf
+      - 3-2 3:B+R round:7 sgf:2017/7-YuChengLai-SangbinLee.sgf
+      - 3-12 3:B+R round:6 sgf:2017/6-YuChengLai-ViktorLin.sgf
+      - 3-14 3:B+R round:4 sgf:2017/4-YuChengLai-VorawatTanapatsopol.sgf
+      - 4-19 4:B+9.5 round:4 sgf:2017/4-DanielKo-InHangSam.sgf
+      - 5-2 2:W+4.5 round:1 sgf:2017/1-SakamotoShusaku-SangbinLee.sgf
+      - 5-8 5:B+9.5 round:5 sgf:2017/5-SakamotoShusaku-NaiSanChan.sgf
+      - 5-10 5:B+R round:8 sgf:2017/8-SakamotoShusaku-LukasPodpera.sgf
+      - 6-5 6:B+R round:7 sgf:2017/7-JinungRi-SakamotoShusaku.sgf
+      - 6-26 6:B+R round:6 sgf:2017/6-JinungRi-DuyMinhVo.sgf
       - 7-1 1:W+R round:4 sgf:2017/4-CornelBurzo-BaoxiangBai.sgf
+      - 9-10 9:B+2.5 round:6 sgf:2017/6-DmitrijSurin-LukasPodpera.sgf
+      - 10-3 10:B+R round:2 sgf:2017/2-LukasPodpera-YuChengLai.sgf
+      - 11-4 4:W+R round:2 sgf:2017/2-LukasKraemer-DanielKo.sgf
+      - 13-3 3:W+R round:5 sgf:2017/5-KwantaoLi-YuChengLai.sgf
+      - 13-8 8:W+R round:8 sgf:2017/8-KwantaoLi-NaiSanChan.sgf
+      - 14-10 10:W+2.5 round:3 sgf:2017/3-VorawatTanapatsopol-LukasPodpera.sgf
+      - 16-4 4:W+R round:7 sgf:2017/7-FrankJanssen-DanielKo.sgf
+      - 16-11 11:W+16.5 round:1 sgf:2017/1-FrankJanssen-LukasKraemer.sgf
+      - 18-2 2:W+R round:5 sgf:2017/5-JavierAleksiSavolainen-SangbinLee.sgf
+      - 20-2 2:W+R round:3 sgf:2017/3-FabienLips-SangbinLee.sgf
+      - 32-8 8:W+R round:2 sgf:2017/2-FaishalUmarFitrah-NaiSanChan.sgf
+      - 37-1 1:W+R round:2 sgf:2017/2-MilanJadron-BaoxiangBai.sgf
+      - 38-3 3:W+R round:3 sgf:2017/3-BirandAdal-YuChengLai.sgf
+      - 44-6 6:W+R round:1 sgf:2017/1-HaraldoBrown-JinungRi.sgf

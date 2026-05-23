@@ -6,4 +6,13 @@ stages:
       - wins
       - null
     games:
+      - 2-1 1:W+7.5 round:5 sgf:1983/5-HiroshiMiura-XiaochunMa.sgf
       - 3-1 1:W+R round:4 sgf:1983/4-ImamuraFumiaki-XiaochunMa.sgf
+      - 4-3 4:B+R round:5 sgf:1983/5-YangLi-FumiakiImamura.sgf
+      - 6-5 5:W+R round:5 sgf:1983/5-VladimirDanek-ChuljungKim.sgf
+      - 8-7 7:W+R round:5 sgf:1983/5-JimBartyHelmutWiltschek.sgf
+      - 9-1 1:W+3.5 round:2 sgf:1983/2-RonaldSchlemper-XiaochunMa.sgf
+      - 11-12 11:B+32.5 round:6 sgf:1983/6-GunhoChoi-PierreAroutcheff.sgf
+      - 14-13 13:W+22.5 round:6 sgf:1983/6-JohnBlair-JuanAlvarez.sgf
+      - 15-16 15:B+R round:6 sgf:1983/6-CarlosTorres-SergioParimbelli.sgf
+      - 18-17 17:W+R round:6 sgf:1983/6-SangdaeHahn-PingFaiTsang.sgf

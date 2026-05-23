@@ -34,6 +34,7 @@ stages:
       - 5-21 5:B+R round:6 sgf:2012/6-KwangHyokRi-YuanZhou.sgf
       - 8-12 8:B+6.5 round:5 sgf:2012/5-SeizoNakazono-LukasPodpera.sgf
       - 8-15 8:B+R round:1 sgf:2012/1-SeizoNakazono-PanjawatSaechen.sgf
+      - 8-21 21:W+T round:4 sgf:2012/4-SeizoNakazono-YuanZhou.sgf
       - 8-22 8:B+5.5 round:7 sgf:2012/7-SeizoNakazono-PavolLisy.sgf
       - 9-1 1:W+R round:2 sgf:2012/2-YuxiangLou-ZhijianQiao.sgf
       - 10-1 1:W+R round:8 sgf:2012/8-BenjaminTeuber-ZhijianQiao.sgf
@@ -46,3 +47,4 @@ stages:
       - 30-7 7:W+7.5 round:2 sgf:2012/2-SamAitken-JuriKuronen.sgf
       - 31-5 5:W+R round:3 sgf:2012/3-LotharSpiegel-KwangHyokRi.sgf
       - 32-8 8:W+R round:8 sgf:2012/8-DraganPaunic-SeizoNakazono.sgf
+      - 52-5 5:W+R round:1 sgf:2012/1-XiaoyanFang-KwangHyokRi.sgf

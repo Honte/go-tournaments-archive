@@ -43,6 +43,7 @@ stages:
       - 10-2 2:W+R round:3 sgf:2021/3-VjacheslavKajmin-YiTienChan.sgf
       - 10-14 14:W+R round:4 sgf:2021/4-VjacheslavKajmin-LukasKraemer.sgf
       - 10-15 10:B+R round:5 sgf:2021/5-VjacheslavKajmin-DenisDobranis.sgf
+      - 10-21 10:B+R round:1 sgf:2021/1-VjacheslavKajmin-SouzaAlexandredeAmaro.sgf
       - 10-25 10:B+R round:2 sgf:2021/2-VjacheslavKajmin-AlessandroPace.sgf
       - 11-5 5:W+4.5 round:3 sgf:2021/3-ShunjiMorikawa-StanislawFrejlak.sgf
       - 11-7 7:W+1.5 round:4 sgf:2021/4-ShunjiMorikawa-BenjaminDreanGuenaizia.sgf
@@ -65,6 +66,7 @@ stages:
       - 22-25 25:W+3.5 round:1 sgf:2021/1-FernandoAguilar-AlessandroPace.sgf
       - 22-27 22:B+R round:3 sgf:2021/3-FernandoAguilar-TimotejSuc.sgf
       - 23-5 5:W+R round:1 sgf:2021/1-DmytroYatsenko-StanislawFrejlak.sgf
+      - 24-4 4:W+21.5 round:1 sgf:2021/1-ChahineKoleejan-LukasPodpera.sgf
       - 24-11 11:W+R round:5 sgf:2021/5-ChahineKoleejan-ShunjiMorikawa.sgf
       - 24-34 24:B+17.5 round:2 sgf:2021/2-ChahineKoleejan-DanielTome.sgf
       - 25-12 12:W+14.5 round:5 sgf:2021/5-AlessandroPace-CsabaMero.sgf

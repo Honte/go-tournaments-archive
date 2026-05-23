@@ -1,4 +1,4 @@
-(;CA[utf-8]FF[4]ST[2]RU[Japanese]C[Mistakes\:
+(;CA[utf-8]RU[Japanese]GM[1]FF[4]C[Mistakes\:
 
 Player	Move	Loss 	Score
 
@@ -23,7 +23,7 @@ White	114	  7.6	W+3.1 points
 Black	117	  8.5	W+11.7 points
 White	120	  7.3	W+6.1 points
 Black	121	  8.7	W+14.8 points]
-AP[ai-sensei.com]SZ[19]GM[1]EV[WAGC 2025]RO[1]DT[2025-05-18]PB[Alistair Wall]BR[2d]
+AP[ai-sensei.com]SZ[19]ST[2]EV[WAGC 2025]RO[1]DT[2025-05-18]PB[Alistair Wall]BR[2d]
 PW[Mikkel Kragh Mathiesen]WR[2d]KM[6.5]RE[B+R]MULTIGOGM[1]
 ;B[pd];W[dc];B[qp];W[dq];B[np];W[qf];B[ce];W[dh];B[co];W[nc];B[nd];W[md];B[ne];W[pc]
 ;B[qc];W[oc];B[pf];W[pg];B[qe];W[of];B[pe];W[qb];B[rb];W[rc];B[rd];W[sc];B[ed];W[ec]
@@ -33,7 +33,8 @@ PW[Mikkel Kragh Mathiesen]WR[2d]KM[6.5]RE[B+R]MULTIGOGM[1]
 
 This move is 4.8 points worse than the AI move.
 
-Black is ahead by 5.9 points.](;B[kq]C[Mistake!
+Black is ahead by 5.9 points.]
+(;B[kq]C[Mistake!
 
 This move is 4.1 points worse than the AI move.
 
@@ -122,40 +123,22 @@ White is ahead by 4.1 points.]
 This move is 7.3 points worse than the AI move.
 
 White is ahead by 10.7 points.]
-(;W[ic]C[Mistake!
+;W[ic]C[Mistake!
 
 This move is 7.6 points worse than the AI move.
 
 White is ahead by 3.1 points.]
-;B[ag];W[bh]
-(;B[hc]C[Mistake!
+;B[ag];W[bh];B[hc]C[Mistake!
 
 This move is 8.5 points worse than the AI move.
 
 White is ahead by 11.7 points.]
-;W[mj];B[li]
-(;W[jj]C[Mistake!
+;W[mj];B[li];W[jj]C[Mistake!
 
 This move is 7.3 points worse than the AI move.
 
 White is ahead by 6.1 points.]
-(;B[kj]C[Moves after 121 missing])
-(;B[mk]C[I would play here.
-
-White is ahead by 6.1 points.];W[ic];B[ba];W[ca];B[hc]
-;W[em];B[gb];W[ic];B[pi]))
-(;W[mk]C[I would play here.
-
-White is ahead by 13.4 points.];B[ba];W[ca];B[gb];W[ic]
-;B[pi];W[og];B[hc];W[jj];B[ha]))
-(;B[lj]C[I would play here.
-
-White is ahead by 3.2 points.];W[hc];B[kd];W[ld];B[jh]
-;W[kb];B[jb];W[mb];B[ji];W[jr]))
-(;W[mj]C[I would play here.
-
-White is ahead by 10.7 points.];B[ba];W[ca];B[gb];W[ea]
-;B[ha];W[mk];B[eg]))
+;B[kj]C[Moves after 121 missing])
 (;B[lj]C[I would play here.
 
 White is ahead by 3.4 points.];W[ib];B[jh];W[jb];B[ir]

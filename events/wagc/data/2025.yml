@@ -32,6 +32,7 @@ stages:
       - 6-8 8:W+R round:5 sgf:2025/5-LukasPodpera-BenjaminDreanGuenaizia.sgf
       - 7-8 7:B+R round:8 sgf:2025/8-XiaofanXu-BenjaminDreanGuenaizia.sgf
       - 8-4 4:W+R round:7 sgf:2025/7-BenjaminDreanGuenaizia-YuChengLai.sgf
+      - 8-16 8:B+4.5 round:6 sgf:2025/6-BenjaminDreanGuenaizia-WichrichKaruewahanit.sgf
       - 8-21 8:B+32.5 round:3 sgf:2025/3-BenjaminDreanGuenaizia-MilosBojanic.sgf
       - 9-2 2:W+R round:5 sgf:2025/5-ChahineKoleejan-MinoruOzeki.sgf
       - 9-4 4:W+R round:3 sgf:2025/3-ChahineKoleejan-YuChengLai.sgf
@@ -56,6 +57,7 @@ stages:
       - 25-36 25:B+18.5 round:5 sgf:2025/5-CezaryCzernecki-MikkelKraghMathiesen.sgf
       - 27-32 27:B+10.5 round:1 sgf:2025/1-TugkanEren-OlliHella.sgf
       - 29-19 19:W+R round:5 sgf:2025/5-AlistairWall-AndriusPetrauskas.sgf
+      - 29-36 29:B+R round:1 sgf:2025/1-AlistairWall-MikkelKraghMathiesen.sgf
       - 31-36 31:B+R round:6 sgf:2025/6-LucianoSalerno-MikkelKraghMathiesen.sgf
       - 32-15 15:W+23.5 round:2 sgf:2025/2-OlliHella-InHangSam.sgf
       - 34-28 28:W+R round:7 sgf:2025/7-JonasEgeberg-OferZivony.sgf
@@ -63,6 +65,7 @@ stages:
       - 38-17 17:W+97.5 round:2 sgf:2025/2-LillyHu-DavidZitianHe.sgf
       - 40-47 47:W+R round:6 sgf:2025/6-SusanaSanchez-MarcelloPoltronieri.sgf
       - 41-43 43:W+R round:4 sgf:2025/4-GillesEnglebert-HelcioAlexandrePacheco.sgf
+      - 42-29 29:W+? round:8 sgf:2025/8-MarcStoehr-AlistairWall.sgf
       - 42-40 40:W+25.5 round:1 sgf:2025/1-MarcStoehr-SusanaSanchez.sgf
       - 43-25 25:W+18.5 round:2 sgf:2025/2-HelcioAlexandrePacheco-CezaryCzernecki.sgf
       - 43-47 43:B+R round:3 sgf:2025/3-HelcioAlexandrePacheco-MarcelloPoltronieri.sgf

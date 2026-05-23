@@ -1,5 +1,5 @@
-(;CA[utf-8]GM[1]OT[Error: time control missing]RU[Japanese]AP[MultiGo:4.4.4]SZ[19]
-FF[4]GN[2024-05-20]RO[4]DT[2024-05-20]PC[https\://online-go.com/review/1276460]
+(;CA[utf-8]OT[Error: time control missing]RU[Japanese]FF[4]AP[MultiGo:4.4.4]SZ[19]
+GM[1]GN[2024-05-20]RO[4]DT[2024-05-20]PC[https\://online-go.com/review/1276460]
 PB[Ugur Arikan]BR[3d]PW[Cornel Burzo]WR[6d]KM[6.5]RE[W+17.5]MULTIGOGM[1]
 ;B[dp];W[pd];B[pp];W[cc];B[qc];W[qd];B[pc];W[od];B[nb]C[MOYO
 ]
@@ -65,11 +65,7 @@ PB[Ugur Arikan]BR[3d]PW[Cornel Burzo]WR[6d]KM[6.5]RE[W+17.5]MULTIGOGM[1]
 TR[da][ea][fa][ga][oa][of][kg][do][hq][qq][ir][qr];W[bb];B[dc];W[bc];B[dq];W[dr]
 ;B[fq];W[er];B[bi];W[ai];B[dd];W[de];B[aj];W[ak];B[am];W[cg];B[fs];W[bs];B[nn];W[nm]
 ;B[pm];W[pn];B[om];W[nl];B[oi];W[oj];B[cd];W[bd];B[ec];W[ca];B[db];W[go];B[gp];W[la]
-;B[si];W[sj];B[qh];W[oh];B[ra]
-(;W[sc];B[qf])
-(;W[pa];B[sc];W[sb];B[na];W[pa];B[qf];W[nh]
-(;B[sa];W[oa])
-(;B[oa];W[sc]TR[sa]SQ[pa][se])))
+;B[si];W[sj];B[qh];W[oh];B[ra];W[sc];B[qf])
 (;B[lr];W[ir];B[ks];W[iq]TR[do]))
 (;B[lr];W[iq];B[fq];W[er];B[hq]))
 (;B[om];W[rp];B[qq];W[pl];B[cb];W[bb];B[dc];W[cd];B[ba])

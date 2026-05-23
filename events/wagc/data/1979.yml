@@ -10,3 +10,10 @@ stages:
       - 17-30
     games:
       - 1-2 1:B+R round:5 sgf:1979/5-WeipingNie-TsuteChen.sgf
+      - 2-3 2:B+7.5 round:4 sgf:1979/4-TsuteChen-ChaijuiChen.sgf
+      - 5-13 5:B+R round:2 sgf:1979/2-ShangmingKung-RonaldSchlemper.sgf
+      - 6-2 2:W+5.5 round:3 sgf:1979/3-TsuteChen-YonghoLee.sgf
+      - 9-1 1:W+10.5 round:2 sgf:1979/2-HajimeYasunaga-WeipingNie.sgf
+      - 9-24 9:B+R round:1 sgf:1979/1-HajimeYasunaga-LojzeSuc.sgf
+      - 13-28 13:B+6.5 round:1 sgf:1979/1-RonaldSchlemper-NaoshiNarumi.sgf
+      - 27-12 12:W+R round:1 sgf:1979/1-GraemeParmenter-HorstKippe.sgf
