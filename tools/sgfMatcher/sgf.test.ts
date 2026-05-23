@@ -100,6 +100,36 @@ describe('extractSgfInfo', () => {
     assert.deepEqual(result, { matchedEntries: [], unmatchedSgfs: [sgf] });
     assert.deepEqual(unmatchedEntries[0]?.reasons, ['longest branch is not main branch']);
   });
+
+  it('does not report metadata player names as missing when filename names resolve', () => {
+    const sgf = extractSgfInfo(
+      '(;PB[Player Black 7D (AA)]PW[Player White 6D (BB)]RE[B+R];B[aa](;W[bb])(;W[cc];B[dd]))',
+      '2025/1-BlackPlayer-WhitePlayer.sgf',
+      true
+    );
+    const playersMap = buildPlayersMap([
+      makeH9Player({ place: 1, name: 'Black', surname: 'Player' }),
+      makeH9Player({ place: 2, name: 'White', surname: 'Player' }),
+    ]);
+    const gamesMap = new Map([
+      [
+        '1-2-1',
+        {
+          homePlace: 1,
+          awayPlace: 2,
+          round: 1,
+          winnerPlace: 1,
+          homeColor: 'black' as const,
+          winnerColor: 'black' as const,
+        },
+      ],
+    ]);
+
+    const result = matchSgfs([sgf], playersMap, gamesMap, new Map());
+    const unmatchedEntries = buildUnmatchedEntries(result.unmatchedSgfs, playersMap, new Map());
+
+    assert.deepEqual(unmatchedEntries[0]?.reasons, ['longest branch is not main branch']);
+  });
 });
 
 function makeH9Player({ place, name, surname }: { place: number; name: string; surname: string }): H9Player {

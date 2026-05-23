@@ -7,13 +7,6 @@ import { Sgf } from '@tools/sgf';
 import { normalizeSgfResult } from './result';
 import type { PlayerNames, SgfInfo } from './types';
 
-export function resolveNames(sgf: SgfInfo): PlayerNames {
-  return {
-    blackName: sgf.metadata.blackName ?? sgf.fromFilename.blackName,
-    whiteName: sgf.metadata.whiteName ?? sgf.fromFilename.whiteName,
-  };
-}
-
 export async function findSgfs(rootDir: string, lookupDir: string) {
   const pattern = `${rootDir}/${lookupDir}/*.sgf`.replaceAll(path.sep, '/');
   const paths = await fg.glob(pattern);
