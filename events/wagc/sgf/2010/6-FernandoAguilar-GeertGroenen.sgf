@@ -1,11 +1,11 @@
-(;CA[utf-8]ST[2]FF[4]OT[3x30 Byo-yomi ]FG[3:daeada]RU[Japanese]PM[2]C[WAGC 2010
+(;CA[utf-8]FF[4]OT[3x30 Byo-yomi ]FG[3:daeada]RU[Japanese]PM[2]GM[1]C[WAGC 2010
 Ronda 6, 29 de mayo de 2010
 
 Blanco\: Gerardus Groenen 6d, Países Bajos
 Negro\: Fernando Aguilar 7d, Argentina
 
 Comentario de Xianxian Niu 3p, transcrito por Eduardo López Herrero]
-AP[GOWrite:2.3.28]SZ[19]GM[1]GN[Rd 6]EV[31st WAGC]RO[6]DT[2010-05-28 ]PC[Hangzhou]
+AP[GOWrite:2.3.28]SZ[19]ST[2]GN[Rd 6]EV[31st WAGC]RO[6]DT[2010-05-28 ]PC[Hangzhou]
 PB[Fernando Aguilar]BR[7d]PW[Geert Groenen]WR[6d]KM[6.5]TM[3600]MULTIGOGM[1]
 ;B[qd];W[dd];B[pq];W[oc];B[cp];W[qo];B[pe];W[op];B[oq];W[np];B[mq];W[qj];B[mp]
 (;W[mo]C[A Blanco no le conviene rodear esta zona. Sería mejor jugar tenuki. (Ver variante).]
@@ -45,12 +45,10 @@ A fin de cuentas, la partida aparentemente se definió en el yose. Gana Negro po
 ;W[fe];B[ee];W[ge];B[cg];W[de];B[ro];W[rn];B[on];W[om];B[nm];W[nn];B[oo];W[ce];B[be]
 ;W[ch];B[bh];W[gq];B[gp];W[ma];B[na];W[md];B[jm];W[km];B[ac];W[mb];B[od];W[jo];B[iq]
 ;W[ao];B[an];W[ap];B[ol];W[po];B[ml];W[cn];B[dn];W[cp];B[bm];W[sh];B[sg];W[si];B[qi]
-;W[rj];B[mk];W[lm];B[oj]
-(;W[so]C[Blanco podría haber intentado un ko en dos pasos como en la variante.
+;W[rj];B[mk];W[lm];B[oj];W[so]C[Blanco podría haber intentado un ko en dos pasos como en la variante.
 
 Negro gana por medio punto.]
 ;B[rs])
-(;W[rs];B[qs];W[so];B[ss]C[El resultado de la partida depende de las amenazas de ko.]))
 (;W[fk];B[dr];W[bn]))
 (;W[hl];B[me];W[le];B[ki];W[kg];B[gj];W[gk];B[hj];W[fj];B[gi];W[gh]C[La lucha que sigue es complicada, pero Negro sufre escasez de libertades y tiene más que temer que Blanco. Incluso cabe la posibilidad de que muera con un solo ojo tras capturar H11 y J11.]))
 (;B[lj];W[mk];B[kf]C[Es más importante salvar esta piedra y apuntar a las debilidades en torno a G14 que reducir la zona de P8 (que no es muy grande) a costa de mal aji para Negro.]))

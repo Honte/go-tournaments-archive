@@ -1,4 +1,4 @@
-(;CA[Windows-1252]GM[1]ST[2]PM[2]FG[259:]OT[3x30 Byo-yomi ]RU[Japanese]C[WAGC 2010
+(;CA[Windows-1252]PM[2]FG[259:]OT[3x30 Byo-yomi ]RU[Japanese]FF[4]GM[1]C[WAGC 2010
 Hangzhou, China
 Round 2, May 26
 W\: Thomas Hsiang 7d (US)
@@ -7,7 +7,7 @@ Commentary by Michael Redmond 9P
 Transcribed by Chris Garlock
 
 I know both players; Debarre was in Japan recently, I think, studying, though I don't know the details. Hsiang is a longtime friend of my wife and her sisters, so I know him well; he's a strong amateur. When I saw him the night after this game, he was saying that he had a fairly bad case of jetlag.]
-AP[GOWrite:2.3.28]SZ[19]FF[4]GN[Hsiang-Debarre-Redmond]EV[WAGC 2010]RO[2]DT[2010-05-26 ]
+AP[GOWrite:2.3.28]SZ[19]ST[2]GN[Hsiang-Debarre-Redmond]EV[WAGC 2010]RO[2]DT[2010-05-26 ]
 PC[Hangzhou, China]PB[Thomas Debarre]BR[5d]BT[France]PW[Thomas Hsiang]WR[7d]WT[US]
 KM[6.5]TM[3600]RE[W+0.5 ]US[Transcribed by Chris Garlock]AN[Michael Redmond 9P]
 MULTIGOGM[1]
@@ -45,17 +45,10 @@ MULTIGOGM[1]
 ;B[fi];W[ei];B[ej];W[di];B[bl];W[bk]C[W is aware that he has the lead and is playing solidly]
 ;B[gm];W[fm];B[fk];W[jn];B[jm]
 (;W[fl]LB[jb:A]C[very small, unneccessary move; the variation beginning with A is much more valuable]
-;B[jb]LB[lo:A]
-(;W[rm]LB[nk:A][lo:B]C[W has a potential back-up eye in the center at A, so this move actually loses 4 points locally. Playing at B is much better]
+;B[jb]LB[lo:A];W[rm]LB[nk:A][lo:B]C[W has a potential back-up eye in the center at A, so this move actually loses 4 points locally. Playing at B is much better]
 ;B[rn];W[nn]LB[lo:A]C[Also loses points, compared to A. But does set up a potential attack on the center B stones, so if W follows it up correctly, it's feasible]
-;B[no];W[mm];B[on]C[B gained a lot here already]
-(;W[fb]LB[nn:A]C[Taking this one stone is the mistake that make W's play at A a loss]
+;B[no];W[mm];B[on]C[B gained a lot here already];W[fb]LB[nn:A]C[Taking this one stone is the mistake that make W's play at A a loss]
 ;B[gb];W[ea];B[ln]TR[rm][nn]C[Now B has gained an enormous amount in the center; the two marked moves netted B about 10 points profit, erasing W's lead and making the game very close. Subsequent moves omitted; W ended up squeaking to a half-point win in the end.])
-(;W[ln];B[mo];W[kn]
-(;B[md];W[lp]LB[nn:A]C[W gains the points back in this variation, making up for the loss of A])
-(;B[lo];W[ne];B[lg];W[kg];B[md];W[me];B[mf];W[ng];B[mg];W[le];B[go];W[fo]C[And B dies])))
-(;W[lo];B[ln];W[ko];B[mq];W[rn];B[rm];W[sm];B[sl];W[sk];B[ro];W[qn];B[pn];W[qo]
-;B[po];W[sn];B[rp];W[fb]C[Much better than the game]))
 (;W[jb];B[ib];W[hb];B[hc];W[ia];B[ic];W[dn];B[bn];W[lo];B[fl];W[ii])
 (;W[ib];B[jb];W[ja];B[ka]))
 (;W[co]))
