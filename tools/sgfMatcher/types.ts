@@ -14,6 +14,7 @@ export type SgfInfo = {
   rawResult: string | null;
   cleanResult: string | null;
   resultIssue: string | null;
+  contentIssue?: string | null;
   round: number | null;
   corrupted: boolean;
 };

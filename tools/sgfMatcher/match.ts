@@ -43,6 +43,11 @@ export function matchSgfs(
       continue;
     }
 
+    if (sgf.contentIssue) {
+      unmatchedSgfs.push(sgf);
+      continue;
+    }
+
     const localId =
       resolveLocalId(sgf.metadata, sgf.round, playersMap, h9gamesMap) ??
       resolveLocalId(sgf.fromFilename, sgf.round, playersMap, h9gamesMap);

@@ -3,6 +3,7 @@ import { readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { describe, it } from 'node:test';
 import { fileURLToPath } from 'node:url';
+import { MultipleLongestBranchesError } from './errors';
 import { Sgf } from './index';
 
 const fixtureDir = join(dirname(fileURLToPath(import.meta.url)), 'examples');
@@ -216,8 +217,8 @@ describe('Sgf', () => {
   it('throws on equal longest branches before mutating', () => {
     const sgf = new Sgf('(;B[aa](;W[bb])(;W[cc]))');
 
-    assert.throws(() => sgf.getLongestBranch(), /Multiple longest branches/);
-    assert.throws(() => sgf.stripShorterBranches(), /Multiple longest branches/);
+    assert.throws(() => sgf.getLongestBranch(), MultipleLongestBranchesError);
+    assert.throws(() => sgf.stripShorterBranches(), MultipleLongestBranchesError);
     assert.equal(sgf.getRoot().children.length, 1);
     assert.equal(sgf.getRoot().children[0].children.length, 2);
   });

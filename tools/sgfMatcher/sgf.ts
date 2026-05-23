@@ -2,6 +2,8 @@ import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import fg from 'fast-glob';
 import { Sgf } from '@tools/sgf';
+import type { SgfNode } from '@tools/sgf';
+import { MultipleLongestBranchesError } from '@tools/sgf/errors';
 import type { PlayerNames, SgfInfo } from './types';
 
 type NormalizedSgfResult = {
@@ -37,26 +39,46 @@ async function loadSgfInfo(rootDir: string, sgfPath: string) {
   return extractSgfInfo(content, sgfPath);
 }
 
-function extractSgfInfo(content: string, filename: string): SgfInfo {
+export function extractSgfInfo(content: string, filename: string): SgfInfo {
   const { names: fromFilename, round: roundFromFilename } = parseFilename(filename);
 
-  let nodes;
+  let sgf: Sgf | undefined;
   try {
-    nodes = new Sgf(content).getRoot();
-  } catch {
-    return {
-      path: filename,
-      metadata: { blackName: null, whiteName: null },
-      fromFilename,
-      rawResult: null,
-      cleanResult: null,
-      resultIssue: null,
-      round: roundFromFilename,
-      corrupted: true,
-    };
+    sgf = new Sgf(content);
+    sgf.getLongestBranch();
+  } catch (error) {
+    if (sgf && error instanceof MultipleLongestBranchesError) {
+      return buildParsedSgfInfo(filename, fromFilename, roundFromFilename, sgf.getRoot(), 'multiple longest branches');
+    }
+
+    return buildCorruptedSgfInfo(filename, fromFilename, roundFromFilename);
   }
 
-  const data = nodes.data;
+  return buildParsedSgfInfo(filename, fromFilename, roundFromFilename, sgf.getRoot());
+}
+
+function buildCorruptedSgfInfo(filename: string, fromFilename: PlayerNames, roundFromFilename: number | null): SgfInfo {
+  return {
+    path: filename,
+    metadata: { blackName: null, whiteName: null },
+    fromFilename,
+    rawResult: null,
+    cleanResult: null,
+    resultIssue: null,
+    contentIssue: null,
+    round: roundFromFilename,
+    corrupted: true,
+  };
+}
+
+function buildParsedSgfInfo(
+  filename: string,
+  fromFilename: PlayerNames,
+  roundFromFilename: number | null,
+  root: SgfNode,
+  contentIssue: string | null = null
+): SgfInfo {
+  const data = root.data;
   const metadata: PlayerNames = {
     blackName: data?.PB?.[0] ?? null,
     whiteName: data?.PW?.[0] ?? null,
@@ -72,6 +94,7 @@ function extractSgfInfo(content: string, filename: string): SgfInfo {
     rawResult,
     cleanResult,
     resultIssue,
+    contentIssue,
     round: roundFromMetadata ?? roundFromFilename,
     corrupted: false,
   };

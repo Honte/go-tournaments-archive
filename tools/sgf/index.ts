@@ -1,3 +1,4 @@
+import { MultipleLongestBranchesError } from './errors';
 import { SgfParser } from './parser';
 import type { SgfNode, SgfNodeData } from './schema';
 
@@ -94,7 +95,7 @@ export class Sgf {
     leaves.sort((a, b) => b[1] - a[1]);
 
     if (leaves.length > 1 && leaves[0][1] === leaves[1][1]) {
-      throw new Error(`Multiple longest branches found with length ${leaves[0][1] + 1}`);
+      throw new MultipleLongestBranchesError(leaves[0][1] + 1);
     }
 
     const longest = [];

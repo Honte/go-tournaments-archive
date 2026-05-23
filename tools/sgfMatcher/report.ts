@@ -44,6 +44,10 @@ function buildReasons(sgf: SgfInfo, playerLookup: Map<string, number>): string[]
     reasons.push(sgf.resultIssue);
   }
 
+  if (sgf.contentIssue) {
+    reasons.push(sgf.contentIssue);
+  }
+
   return reasons.length > 0 ? reasons : ['no matching game'];
 }
 
