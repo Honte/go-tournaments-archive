@@ -24,28 +24,43 @@ stages:
       - 3-40 3:B+R round:1 sgf:2024/1-MinoruOzeki-CharlieAakerblom.sgf
       - 4-3 3:W+9.5 round:7 sgf:2024/7-PongsakarnSornarra-MinoruOzeki.sgf
       - 4-24 4:B+R round:3 sgf:2024/3-PongsakarnSornarra-DusanMitic.sgf
+      - 6-25 6:B+R round:6 sgf:2024/6-CsabaMero-DenisKaradaban.sgf
+      - 7-11 11:W+? round:1 sgf:2024/1-InHangSam-DanielGourdeau.sgf
       - 7-41 7:B+19.5 round:5 sgf:2024/5-InHangSam-JonRunarMelting.sgf
       - 8-1 1:W+R round:6 sgf:2024/6-NaiSanChan-BaoxiangBai.sgf
       - 8-3 3:W+12.5 round:4 sgf:2024/4-NaiSanChan-MinoruOzeki.sgf
       - 9-3 3:W+R round:8 sgf:2024/8-CornelBurzo-MinoruOzeki.sgf
+      - 9-4 4:W+4.5 round:6 sgf:2024/6-CornelBurzo-PongsakarnSornarra.sgf
+      - 9-11 9:B+R round:5 sgf:2024/5-CornelBurzo-DanielGourdeau.sgf
       - 10-3 3:W+9.5 round:2 sgf:2024/2-LukasPodpera-MinoruOzeki.sgf
+      - 11-4 4:W+? round:8 sgf:2024/8-DanielGourdeau-PongsakarnSornarra.sgf
+      - 11-14 11:B+? round:7 sgf:2024/7-DanielGourdeau-JiaChengTan.sgf
+      - 11-45 11:B+R round:2 sgf:2024/2-DanielGourdeau-JuanFelipeBurgosAndrade.sgf
+      - 12-9 9:W+1.5 round:7 sgf:2024/7-KwantaoLi-CornelBurzo.sgf
+      - 12-25 12:B+R round:8 sgf:2024/8-KwantaoLi-DenisKaradaban.sgf
       - 12-42 12:B+R round:2 sgf:2024/2-KwanTaoLi-AlexanderRix.sgf
       - 13-5 5:W+R round:7 sgf:2024/7-TalMichaeli-ShengChiehLo.sgf
       - 15-5 5:W+2.5 round:2 sgf:2024/2-DavideBernardis-ShengChiehLo.sgf
       - 18-2 2:W+R round:4 sgf:2024/4-GillesvanEeden-JungSeonKim.sgf
+      - 20-25 25:W+R round:7 sgf:2024/7-VladasZaleskas-DenisKaradaban.sgf
       - 20-33 20:B+R round:8 sgf:2024/8-VladasZaleskas-UgurArikan.sgf
       - 22-21 21:W+R round:7 sgf:2024/7-WeiJieTeh-JohannesObenaus.sgf
       - 23-8 8:W+T round:5 sgf:2024/5-ZhiyuanZhang-NaiSanChan.sgf
       - 23-25 23:B+T round:4 sgf:2024/4-ZhiyuanZhang-DenisKaradaban.sgf
+      - 24-11 11:W+3.5 round:6 sgf:2024/6-DusanMitic-DanielGourdeau.sgf
       - 25-3 3:W+R round:3 sgf:2024/3-DenisKaradaban-MinoruOzeki.sgf
       - 25-16 25:B+29.5 round:1 sgf:2024/1-DenisKaradaban-StjepanMestrovic.sgf
+      - 25-43 25:B+R round:5 sgf:2024/5-DenisKaradaban-GregorButala.sgf
       - 26-19 26:B+R round:5 sgf:2024/5-KoichiroHabu-VesaLaatikainen.sgf
       - 27-6 6:W+0.5 round:3 sgf:2024/3-DucAnhPham-CsabaMero.sgf
       - 29-58 29:B+R round:1 sgf:2024/1-DmytroYatsenko-ErnurEmiliev.sgf
       - 31-16 16:W+R round:6 sgf:2024/6-RenaudGaban-StjepanMestrovic.sgf
+      - 31-25 25:W+R round:2 sgf:2024/2-RenaudGaban-DenisKaradaban.sgf
+      - 33-9 9:W+17.5 round:4 sgf:2024/4-UgurArikan-CornelBurzo.sgf
       - 37-15 15:W+R round:1 sgf:2024/1-NikolaTsarigradski-DavideBernardis.sgf
       - 40-11 11:W+30.5 round:4 sgf:2024/4-CharlieAakerblom-DanielGourdeau.sgf
       - 43-38 43:B+23.5 round:1 sgf:2024/1-GregorButala-PascalAlejandroNunezMariot.sgf
+      - 44-9 9:W+42.5 round:1 sgf:2024/1-PeterSmolarik-CornelBurzo.sgf
       - 44-17 17:W+R round:6 sgf:2024/6-PeterSmolarik-HaidarAlimin.sgf
       - 45-14 14:W+R round:3 sgf:2024/3-JuanFelipeBurgosAndrade-JiaChengTan.sgf
       - 46-51 46:B+17.5 round:2 sgf:2024/2-StephenNulty-JoaoFerreira.sgf

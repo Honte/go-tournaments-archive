@@ -1,0 +1,43 @@
+(;CA[windows-1250]FF[4]RU[Simple]C[2012 WAGC Round 4 Yuan Zhou (US) 7d Seizoh Nakazono (Japan) 8d Commentary by So Yokoku 8P (translated by Ting Ting Chen) Transcribed by Chris Garlock The fourth-round contest between the US and Japan turned into a controversial and dramatic slugfest involving a series of severe attacks, both players in overtime, a key losing move in the late middle-game, a ko fight with both players in their last period of overtime and a sudden loss by Japan on time, complicated by a clock dispute that went all the way up to the tournament  chief referee ]
+AP[SmartGo:2.8.3.0]SZ[19]GM[1]EV[2012 WAGC]RO[4]DT[2012-05-14]PB[Seizo Nakazono]
+BR[8d]PW[Yuan Zhou]WR[7d]KM[6.5]RE[W+T]US[Kazunari Furuyama & Chris Garlock]AN[So Yokoku 8p]
+MULTIGOGM[1]
+;B[qd];W[dp];B[cd];W[pp];B[qn];W[ql];B[np];W[pn];B[pm];W[qm];B[pq];W[qo];B[qq];W[on]
+;B[kq]C[this joseki is good for b to take the corner and w gets moyo potential]
+;W[oc];B[ec];W[qg];B[cn];W[fq];B[bp];W[pe];B[jd];W[ci];B[cq];W[iq];B[cg];W[cl];B[en]
+(;W[bn]LB[dq:A]C[A is also possible and big; the game move is ok but not as good as A]
+;B[co];W[qe]C[big];B[ei];W[dh];B[bj];W[cj];B[bi];W[bk];B[ch];W[di];B[dk];W[ek];B[dl]
+;W[ck];B[ej]C[severe attack by b];W[eh];B[fk];W[bd]C[(gasps) this is a little strange]
+;B[cc]C[bad exchange; loses aji];W[df];B[cf];W[de];B[ce]C[black gets an advantage from this sequence]
+;W[fe];B[ob];W[pb];B[nc];W[pc];B[fg];W[fh];B[gg];W[ff];B[hr]C[this is ok];W[ir]
+(;B[gq]C[no good];W[gp];B[fr];W[hq];B[gr];W[fp];B[dq];W[lq]C[now w gets to attack black instead of the other way around; w is thick in this area now]
+;B[lp];W[kr];B[mq];W[lr];B[kp];W[mr];B[nr];W[mo];B[mp];W[io];B[nd];W[fc];B[hc];W[gc]
+;B[hd];W[he];B[hf];W[ie];B[gd];W[fd];B[ge];W[gf];B[hg]
+(;W[jf]LB[je:A]C[this is not correct; shd be at A; see var];B[hi];W[id];B[ic];W[jc]
+C[this is actually not a good cut];B[jb];W[kc];B[kb];W[lc];B[lb];W[gb];B[ha];W[ke]
+;B[nb]C[white can still be attacked, so this was not successful];W[ga];B[hb];W[eb]
+C[necessary to live];B[kg]C[this is a very nice flow for black];W[me];B[oe];W[od]
+;B[ne];W[mf];B[og];W[jg];B[ho]C[very severe move];W[hn];B[go];W[in];B[hk];W[fn]
+;B[fo];W[eo];B[gn];W[gm];B[fm];W[hp];B[fn];W[kn]C[black's attack on w is not successful and he gets nothing]
+;B[db];W[ed];B[ki];W[lg];B[kh];W[ng];B[oh];W[nh];B[ni];W[oi];B[pf];W[qf];B[mi];W[nf]
+;B[of];W[mh];B[pi];W[oj];B[qh]
+(;W[li]LB[rp:A][mj:B]C[the wedge is no good; should play sente endgame at A and then begin to seal off center moyo with B]
+;B[lj];W[lh];B[kk];W[mj]PL[W]LB[mk:A][rp:B]C[this is white's losing move\: the kosumi at B is worth about 15 points and is sente as it threatens the black group. Also, a black atari at A is not sente.]
+(;B[rp]C[this is very big sente, worth about 15 points; this should be the winning move. ]
+;W[lk];B[kj];W[ll]TR[rp]C[even tho w has picked up points in the center, because of the marked move, b has taken the lead now. ]
+;B[ln];W[gl];B[il];W[fl];B[el];W[dn];B[em];W[km];B[mn]C[at this point it's clear that black is going to win; b is ahead by 12-15 points before komi. ]
+;W[hm];B[cm];W[nm];B[rd]C[this move is ok; doesn't lose points];W[pd];B[rb];W[re]
+(;B[rn];W[ro];B[so];W[rm];B[sn];W[sm];B[sp];W[gj]TR[gl];B[gk];W[gi];B[ih];W[rh]
+;B[ri];W[rg];B[qj];W[pk];B[bm];W[dc];B[cb];W[do];B[eq];W[ep];B[dm];W[hj];B[ij];W[ns]
+;B[os];W[ms];B[oq];W[rk];B[jq];W[jr];B[pa];W[qa];B[oa];W[qb];B[nn];W[mm];B[jo];W[jn]
+;B[ip];W[jp];B[eg];W[dg];B[ip];W[is];B[ks];W[jp];B[dd];W[ef];B[ip];W[ib];B[ia];W[jp]
+;B[oo];W[po];B[ip];W[ja];B[ka];W[jp];B[om];W[ko];B[ol];W[lo];B[op];W[nl];B[ea];W[fa]
+;B[da];W[ec];B[hs];W[aj];B[bh];W[mc];B[mb];W[gh];B[hh];W[jh];B[ji];W[ak]C[b will win by 8 points after komi])
+(;B[rg];W[qb];B[rc];W[ra]C[w has been forced to play inside his own territory]))
+(;B[mk];W[rp]))
+(;W[rp];B[rq];W[mj]C[game is about even at this point; still chances for both players]))
+(;W[je];B[kd];W[ke];B[ld]LB[jb:A]C[leaves aji at A];W[jb]))
+(;B[hq];W[hp];B[ip]
+(;W[gp])
+(;W[gq];B[ho];W[gp];B[jq];W[io];B[jp];W[gr];B[er]C[w is not totally alive so b can continue his attack])))
+(;W[dq]C[also possible]))

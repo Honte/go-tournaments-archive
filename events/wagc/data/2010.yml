@@ -37,10 +37,13 @@ stages:
       - 11-4 4:W+R round:4 sgf:2010/4-FredrikBlomback-NaiSanChan.sgf
       - 11-5 5:W+R round:6 sgf:2010/6-FredrikBlomback-OndrejSilt.sgf
       - 12-2 2:W+R round:4 sgf:2010/4-ThomasHsiang-ChenWang.sgf
+      - 13-33 13:B+? round:6 sgf:2010/6-FernandoAguilar-GeertGroenen.sgf
       - 14-16 14:B+R round:5 sgf:2010/5-AlexejLazarev-BohdanZhurakovskyi.sgf
       - 15-1 1:W+R round:4 sgf:2010/4-LeszekSoldan-HongsukSong.sgf
       - 15-32 15:B+3.5 round:3 sgf:2010/3-LeszekSoldan-KamonSantipojana.sgf
       - 17-5 17:B+R round:2 sgf:2010/2-BernhardScheid-OndrejSilt.sgf
+      - 20-12 12:W+0.5 round:2 sgf:2010/2-ThomasDebarre-ThomasHsiang.sgf
+      - 22-13 13:W+R round:2 sgf:2010/2-MarosKral-FernandoAguilar.sgf
       - 23-4 4:W+R round:2 sgf:2010/2-KasperHornbaek-NaiSanChan.sgf
       - 23-8 8:W+R round:6 sgf:2010/6-KasperHornbaek-YoheiSato.sgf
       - 31-12 12:W+R round:3 sgf:2010/3-DavidOrmerod-ThomasHsiang.sgf

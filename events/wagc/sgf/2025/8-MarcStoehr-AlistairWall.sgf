@@ -1,0 +1,76 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]C[Mistakes\:
+
+Player	Move	Loss 	Score
+
+Black	 31	  4.2	W+6.3 points
+Black	 37	  4.1	W+11.1 points
+Black	 53	  4.4	W+17.5 points
+White	 74	  4.9	W+20.7 points
+White	 78	  5.8	W+17 points
+Black	 81	  7.7	W+24.9 points]
+AP[ai-sensei.com]SZ[19]GM[1]EV[WAGC 2025]RO[8]DT[2025-05-21]PB[Marc Stoehr]BR[2d]
+PW[Alistair Wall]WR[2d]KM[6.5]RE[W+?]MULTIGOGM[1]
+;B[dp];W[pd];B[dc];W[pp];B[fq];W[ce];B[fd];W[nc];B[ch];W[cc];B[cb];W[dd];B[bc];W[ec]
+;B[cd];W[db];B[cc];W[ed];B[de];W[ee];B[df];W[ef];B[dg];W[eg];B[md];W[kd];B[nd];W[oc]
+;B[pe];W[qe]
+(;B[od]C[Mistake!
+
+This move is 4.2 points worse than the AI move.
+
+White is ahead by 6.3 points.]
+;W[pf];B[oe];W[qd];B[mc];W[of]
+(;B[mf]C[Mistake!
+
+This move is 4.1 points worse than the AI move.
+
+White is ahead by 11.1 points.]
+;W[kf];B[pc];W[pb];B[ob];W[nb];B[mb];W[oa];B[jc];W[dh];B[di];W[eh];B[cg];W[kc];B[kb]
+;W[lb]
+(;B[lc]C[Mistake!
+
+This move is 4.4 points worse than the AI move.
+
+White is ahead by 17.5 points.]
+;W[jb];B[la];W[ic];B[kg];W[jg];B[lg];W[jh];B[je];W[jd];B[oh];W[bp];B[co];W[bo];B[bn]
+;W[cn];B[cm];W[dn];B[bl];W[an];B[bm]
+(;W[dq]C[Mistake!
+
+This move is 4.9 points worse than the AI move.
+
+White is ahead by 20.7 points.]
+;B[cq];W[cp];B[dr]
+(;W[ep]C[Mistake!
+
+This move is 5.8 points worse than the AI move.
+
+White is ahead by 17.0 points.]
+;B[eq];W[do]
+(;B[dq]C[Mistake!
+
+This move is 7.7 points worse than the AI move.
+
+White is ahead by 24.9 points.]
+;W[dm];B[cj];W[ei];B[ej];W[fj];B[ek];W[fk];B[el];W[gn];B[fl];W[ho];B[hl]C[Moves after 93 missing])
+(;B[ke]C[I would play here.
+
+White is ahead by 17.2 points.];W[ie];B[le];W[jf];B[fp]))
+(;W[do]C[I would play here.
+
+White is ahead by 22.8 points.];B[eq];W[nf];B[ke];W[le]
+;B[me]))
+(;W[cp]C[I would play here.
+
+White is ahead by 25.6 points.];B[dq];W[do];B[ke];W[le]
+;B[jf];W[if]))
+(;B[jb]C[I would play here.
+
+White is ahead by 13.1 points.];W[ma];B[lc];W[la];B[ie]
+;W[lg];B[jg]))
+(;B[eh]C[I would play here.
+
+White is ahead by 7.0 points.];W[jc];B[nf];W[ng];B[mf]
+;W[fh];B[ei];W[kf]))
+(;B[qf]C[I would play here.
+
+White is ahead by 2.1 points.];W[pf];B[oe];W[qg];B[rf]
+;W[qd];B[qh];W[pg];B[rg];W[ng];B[mc];W[kf]))

@@ -18,11 +18,27 @@ stages:
     findSharedPlaces: true
     games:
       - 1-5 1:B+2.5 round:7 sgf:2016/7-BaoxiangBai-SatoshiHiraoka.sgf
+      - 1-9 1:B+R round:4 sgf:2016/4-BaoxiangBai-JunfuDai.sgf
+      - 2-1 1:W+R round:6 sgf:2016/6-KibaekKim-BaoxiangBai.sgf
       - 4-1 1:W+R round:5 sgf:2016/5-AndriiKravets-BaoxiangBai.sgf
       - 4-8 4:B+6.5 round:1 sgf:2016/1-AndriiKravets-CristianPop.sgf
       - 4-10 4:B+19.5 round:2 sgf:2016/2-AndriiKravets-ChiHinChan.sgf
       - 5-10 5:B+R round:8 sgf:2016/8-SatoshiHiraoka-ChiHinChan.sgf
       - 6-7 7:W+11.5 round:4 sgf:2016/4-CsabaMero-DusanMitic.sgf
+      - 8-9 8:B+R round:7 sgf:2016/7-CristianPop-JunfuDai.sgf
+      - 9-5 5:W+R round:6 sgf:2016/6-JunfuDai-SatoshiHiraoka.sgf
+      - 9-17 9:B+R round:2 sgf:2016/2-JunfuDai-StanislawFrejlak.sgf
+      - 9-28 9:B+R round:8 sgf:2016/8-JunfuDai-NelisVets.sgf
+      - 9-32 9:B+R round:1 sgf:2016/1-JunfuDai-LeifAlmrot.sgf
+      - 10-9 9:W+R round:5 sgf:2016/5-ChiHinChan-JunfuDai.sgf
       - 10-14 10:B+R round:7 sgf:2016/7-ChiHinChan-BenjaminLockhart.sgf
       - 14-7 7:W+R round:6 sgf:2016/6-BenjaminLockhart-DusanMitic.sgf
+      - 14-9 9:W+R round:3 sgf:2016/3-BenjaminLockhart-JunfuDai.sgf
+      - 21-6 6:W+R round:1 sgf:2016/1-AndrewSimons-CsabaMero.sgf
+      - 21-36 21:B+11.5 round:8 sgf:2016/8-AndrewSimons-EmilGarcia.sgf
+      - 21-49 21:B+R round:6 sgf:2016/6-AndrewSimons-JohnGibson.sgf
+      - 24-21 24:B+R round:5 sgf:2016/5-JuergenSuntinger-AndrewSimons.sgf
       - 26-14 14:W+R round:4 sgf:2016/4-FuKangChang-BenjaminLockhart.sgf
+      - 40-21 21:W+R round:7 sgf:2016/7-LeonRios-AndrewSimons.sgf
+      - 50-21 21:W+R round:4 sgf:2016/4-GabrielHissaoMakio-AndrewSimons.sgf
+      - 55-21 21:W+R round:2 sgf:2016/2-SupravatPal-AndrewSimons.sgf

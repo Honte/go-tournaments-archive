@@ -1,6 +1,6 @@
 ; TC[W970610]
 ; CL[A]
-; EV[World Amateur Go Championship 1997]
+; EV[19th World Amateur Go Championship 1997]
 ; PC[JP,Sapporo]
 ; KM[5.5]
 ; TM[90]

@@ -1,20 +1,11 @@
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import fg from 'fast-glob';
+import { SgfRootProps } from '@/schema/sgf';
+import type { SgfNode } from '@tools/sgf';
 import { Sgf } from '@tools/sgf';
+import { normalizeSgfResult } from './result';
 import type { PlayerNames, SgfInfo } from './types';
-
-type NormalizedSgfResult = {
-  cleanResult: string | null;
-  resultIssue: string | null;
-};
-
-export function resolveNames(sgf: SgfInfo): PlayerNames {
-  return {
-    blackName: sgf.metadata.blackName ?? sgf.fromFilename.blackName,
-    whiteName: sgf.metadata.whiteName ?? sgf.fromFilename.whiteName,
-  };
-}
 
 export async function findSgfs(rootDir: string, lookupDir: string) {
   const pattern = `${rootDir}/${lookupDir}/*.sgf`.replaceAll(path.sep, '/');
@@ -23,26 +14,26 @@ export async function findSgfs(rootDir: string, lookupDir: string) {
   return paths.map((p) => path.posix.relative(rootDir, p));
 }
 
-export async function loadSgfInfos(rootDir: string, sgfPaths: string[]) {
-  return Promise.all(sgfPaths.map((p) => loadSgfInfo(rootDir, p)));
+export async function loadSgfInfos(rootDir: string, sgfPaths: string[], isStrict = false) {
+  return Promise.all(sgfPaths.map((p) => loadSgfInfo(rootDir, p, isStrict)));
 }
 
 export function hasSgfFilenameSpaces(filename: string): boolean {
   return /\s/.test(path.parse(filename).base);
 }
 
-async function loadSgfInfo(rootDir: string, sgfPath: string) {
+async function loadSgfInfo(rootDir: string, sgfPath: string, isStrict = false) {
   const content = await readFile(path.join(rootDir, sgfPath), 'utf-8');
 
-  return extractSgfInfo(content, sgfPath);
+  return extractSgfInfo(content, sgfPath, isStrict);
 }
 
-function extractSgfInfo(content: string, filename: string): SgfInfo {
+export function extractSgfInfo(content: string, filename: string, isStrict = false): SgfInfo {
   const { names: fromFilename, round: roundFromFilename } = parseFilename(filename);
 
-  let nodes;
+  let sgf: Sgf;
   try {
-    nodes = new Sgf(content).getRoot();
+    sgf = new Sgf(content);
   } catch {
     return {
       path: filename,
@@ -51,129 +42,51 @@ function extractSgfInfo(content: string, filename: string): SgfInfo {
       rawResult: null,
       cleanResult: null,
       resultIssue: null,
+      contentIssue: null,
       round: roundFromFilename,
       corrupted: true,
     };
   }
 
-  const data = nodes.data;
   const metadata: PlayerNames = {
-    blackName: data?.PB?.[0] ?? null,
-    whiteName: data?.PW?.[0] ?? null,
+    blackName: sgf.getStringRootProperty(SgfRootProps.BLACK_NAME) ?? null,
+    whiteName: sgf.getStringRootProperty(SgfRootProps.WHITE_NAME) ?? null,
   };
-  const rawResult = data?.RE?.[0] ?? null;
-  const { cleanResult, resultIssue } = normalizeSgfResult(rawResult);
-  const roundFromMetadata = parseRoundValue(data?.RO?.[0]);
+  const rawResult = sgf.getStringRootProperty(SgfRootProps.GAME_RESULT) ?? null;
+  const roundFromMetadata = parseRoundValue(sgf.getStringRootProperty(SgfRootProps.GAME_ROUND));
 
-  return {
+  const { cleanResult, resultIssue } = normalizeSgfResult(rawResult);
+
+  const output: SgfInfo = {
     path: filename,
     metadata,
     fromFilename,
     rawResult,
     cleanResult,
     resultIssue,
+    contentIssue: null,
     round: roundFromMetadata ?? roundFromFilename,
     corrupted: false,
   };
-}
 
-export function normalizeSgfResult(rawResult: string | null): NormalizedSgfResult {
-  if (rawResult === null) {
-    return { cleanResult: null, resultIssue: null };
+  let longestBranch: SgfNode[];
+  try {
+    longestBranch = sgf.getLongestBranch();
+  } catch {
+    output.contentIssue = 'multiple longest branches';
+    return output;
   }
 
-  const value = rawResult.trim();
+  if (isStrict) {
+    const mainBranch = sgf.getMainBranch();
 
-  if (value === '?' || value.toLowerCase() === 'void') {
-    return { cleanResult: null, resultIssue: null };
+    if (longestBranch.length !== mainBranch.length || longestBranch.at(-1)?.id !== mainBranch.at(-1)?.id) {
+      output.contentIssue = 'longest branch is not main branch';
+      return output;
+    }
   }
 
-  if (!value) {
-    return {
-      cleanResult: null,
-      resultIssue: `invalid result "${rawResult}": expected B+<result> or W+<result>`,
-    };
-  }
-
-  const colorMatch = value.match(/^([A-Za-z]+)(.*)$/);
-
-  if (!colorMatch) {
-    return {
-      cleanResult: null,
-      resultIssue: `invalid result "${rawResult}": expected B+<result> or W+<result>`,
-    };
-  }
-
-  const [, rawColor, rest] = colorMatch;
-  const color = normalizeResultColor(rawColor);
-
-  if (!color) {
-    return {
-      cleanResult: null,
-      resultIssue: `invalid result color "${rawColor}": expected B, W, Black, or White`,
-    };
-  }
-
-  if (!rest) {
-    return { cleanResult: `${color}+?`, resultIssue: null };
-  }
-
-  if (!rest.startsWith('+') && !rest.startsWith(',')) {
-    return {
-      cleanResult: null,
-      resultIssue: `invalid result "${rawResult}": expected + or , separator`,
-    };
-  }
-
-  const result = rest.slice(1);
-
-  if (!result) {
-    return {
-      cleanResult: null,
-      resultIssue: `invalid result "${rawResult}": expected B+<result> or W+<result>`,
-    };
-  }
-
-  if (/\s/.test(result)) {
-    return {
-      cleanResult: null,
-      resultIssue: `invalid result "${rawResult}": result must not contain spaces`,
-    };
-  }
-
-  return { cleanResult: `${color}+${normalizeResultValue(result)}`, resultIssue: null };
-}
-
-function normalizeResultColor(color: string): 'B' | 'W' | null {
-  const normalized = color.toLowerCase();
-
-  if (normalized === 'b' || normalized === 'black') {
-    return 'B';
-  }
-
-  if (normalized === 'w' || normalized === 'white') {
-    return 'W';
-  }
-
-  return null;
-}
-
-function normalizeResultValue(result: string): string {
-  if (result.toLowerCase() === 'resign') {
-    return 'R';
-  }
-
-  if (result.toLowerCase() === 'time') {
-    return 'T';
-  }
-
-  if (/^\d+([,.]\d+)?$/.test(result)) {
-    const score = Number(result.replace(',', '.'));
-
-    return score === 0 ? '?' : String(score);
-  }
-
-  return result;
+  return output;
 }
 
 function parseRoundValue(value: string | undefined): number | null {

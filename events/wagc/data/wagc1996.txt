@@ -1,6 +1,6 @@
 ; TC[W960521]
 ; CL[A]
-; EV[World Amateur Go Championship 1996]
+; EV[18th World Amateur Go Championship 1996]
 ; PC[JP, Omachi]
 ; KM[5.5]
 ; TM[90]

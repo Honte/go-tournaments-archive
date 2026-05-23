@@ -4,7 +4,7 @@ import { parseDocument } from 'yaml';
 import type { H9Player } from '@/libs/h9';
 import { matchSgfs } from './match';
 import { buildUnmatchedEntries } from './report';
-import { normalizeSgfResult } from './sgf';
+import { normalizeSgfResult } from './result';
 import { buildPlayersMap } from './tournament';
 import type { SgfInfo } from './types';
 import { normalizePlayerName } from './utils';

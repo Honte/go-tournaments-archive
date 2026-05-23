@@ -5,3 +5,11 @@ stages:
     scoringColumns:
       - wins
       - null
+    games:
+      - 1-2 1:B+R round:5 sgf:1982/5-TayuanTsao-ChinHuaYang.sgf
+      - 5-6 5:B+4.5 round:5 sgf:1982/5-FernandoAguilar-SidneyKobashigawa.sgf
+      - 7-8 7:B+R round:5 sgf:1982/5-JurgenMattern-RayTomes.sgf
+      - 11-12 11:B+0.5 round:6 sgf:1982/6-ErnstNovak-RobvanZeijst.sgf
+      - 13-14 13:B+R round:6 sgf:1982/6-MichaelLam-MatthewMacfadyen.sgf
+      - 15-16 15:B+2.5 round:6 sgf:1982/6-FrankHansen-FranciscoNakatsui.sgf
+      - 22-21 21:W+13.5 round:6 sgf:1982/6-MattiSiivola-IstvanRigo.sgf

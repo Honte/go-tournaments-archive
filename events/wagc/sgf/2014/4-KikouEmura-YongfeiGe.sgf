@@ -1,9 +1,9 @@
-(;CA[Windows-1252]ST[2]GM[1]FG[259:]PM[2]RU[Simple]C[WAGC Round 4
+(;CA[Windows-1252]GM[1]FG[259:]PM[2]RU[Simple]FF[4]C[WAGC Round 4
 W\: Yongfei Ge 7D (Canada)
 B\: Emura Kiko 7D (Japan)
 Comments/Variations by Yongfei Ge
 Recorded by Chris Garlock]
-AP[GOWrite:2.3.46]SZ[19]FF[4]GN[ ]EV[WAGC]RO[4]DT[2014-07-07]PB[Emura Kiko 7D (Japan)]
+AP[GOWrite:2.3.46]SZ[19]ST[2]GN[ ]EV[WAGC]RO[4]DT[2014-07-07]PB[Emura Kiko 7D (Japan)]
 PW[Yongfei Ge 7D (Canada)]RE[W+2]MULTIGOGM[1]
 ;B[cp];W[pp];B[qd];W[ep];B[eq];W[fq];B[dq];W[gp];B[fo];W[go];B[fr];W[fm];B[gr];W[dc]
 ;B[oc];W[cf];B[qn];W[qk];B[np];W[pn];B[qq];W[pq];B[pm];W[qo];B[rm];W[om];B[ro];W[pl]
@@ -22,11 +22,10 @@ PW[Yongfei Ge 7D (Canada)]RE[W+2]MULTIGOGM[1]
 ;B[bf];W[bg];B[hp];W[ho];B[jr];W[kr];B[ir];W[lq];B[be];W[bc];B[cg];W[ch];B[df];W[bi]
 ;B[ef];W[ff];B[ee];W[cn];B[dn];W[cm];B[el];W[fl];B[fn];W[bk];B[gn];W[hm];B[fp];W[bo]
 ;B[ei];W[fi];B[gm];W[hl];B[fg];W[fh];B[gg];W[gh];B[gl];W[gk];B[em];W[bq];B[fk];W[fj]
-;B[kp];W[kq];B[io];W[jo];B[in];W[hn];B[jn];W[jl];B[nr];W[mo];B[mp];W[lp];B[no]
-(;W[lo]C[it's actually possible for me to kill the invasion but it's complicated and I read out that this simpler way I can just win by a few points and avoid complications.]
+;B[kp];W[kq];B[io];W[jo];B[in];W[hn];B[jn];W[jl];B[nr];W[mo];B[mp];W[lp];B[no];W[lo]
+C[it's actually possible for me to kill the invasion but it's complicated and I read out that this simpler way I can just win by a few points and avoid complications.]
 (;B[ms];W[nn];B[ks];W[cr])
 (;B[os];W[nn]))
-(;W[nn];B[lo];W[mn];B[kn];W[jp];B[ks];W[ls];B[ms];W[js];B[mr];W[ko];B[ln];W[lm]))
 (;B[of];W[mb];B[gf]C[even tho B's group is in great danger, he must fight here to have a chance]))
 (;B[ir];W[jr];B[gn];W[fn];B[hp]))
 (;W[nf];B[of];W[gc];B[ir];W[jr];B[gn];W[fn];B[hp]))

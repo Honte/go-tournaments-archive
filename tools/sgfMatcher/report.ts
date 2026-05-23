@@ -1,8 +1,8 @@
 import type { Logger } from '@tools/sgfMatcher/logger';
 import { buildUnmatchedString } from './entries';
-import { hasSgfFilenameSpaces, resolveNames } from './sgf';
+import { resolveSgfPlaces } from './match';
+import { hasSgfFilenameSpaces } from './sgf';
 import type { ParsedGameEntry, SgfInfo, StageProcessResult, StageResult, UnmatchedEntry } from './types';
-import { normalizePlayerName } from './utils';
 
 export function buildUnmatchedEntries(
   unmatchedSgfs: SgfInfo[],
@@ -22,29 +22,51 @@ function buildReasons(sgf: SgfInfo, playerLookup: Map<string, number>): string[]
   }
 
   const reasons: string[] = [];
-  const names = resolveNames(sgf);
+  const places = resolveSgfPlaces(sgf, playerLookup);
 
   if (hasSgfFilenameSpaces(sgf.path)) {
     reasons.push('filename contains spaces');
   }
 
-  if (names.blackName === null && names.whiteName === null) {
+  if (
+    sgf.metadata.blackName === null &&
+    sgf.metadata.whiteName === null &&
+    sgf.fromFilename.blackName === null &&
+    sgf.fromFilename.whiteName === null
+  ) {
     reasons.push('no player names found');
   }
 
-  if (names.blackName && !playerLookup.has(normalizePlayerName(names.blackName))) {
-    reasons.push(`player "${names.blackName}" not found`);
+  const blackNameReason = buildPlayerNameReason(
+    places.blackPlace,
+    sgf.metadata.blackName ?? sgf.fromFilename.blackName
+  );
+  const whiteNameReason = buildPlayerNameReason(
+    places.whitePlace,
+    sgf.metadata.whiteName ?? sgf.fromFilename.whiteName
+  );
+
+  if (blackNameReason) {
+    reasons.push(blackNameReason);
   }
 
-  if (names.whiteName && !playerLookup.has(normalizePlayerName(names.whiteName))) {
-    reasons.push(`player "${names.whiteName}" not found`);
+  if (whiteNameReason) {
+    reasons.push(whiteNameReason);
   }
 
   if (sgf.resultIssue) {
     reasons.push(sgf.resultIssue);
   }
 
+  if (sgf.contentIssue) {
+    reasons.push(sgf.contentIssue);
+  }
+
   return reasons.length > 0 ? reasons : ['no matching game'];
+}
+
+function buildPlayerNameReason(place: number | null, name: string | null): string | null {
+  return place === null && name ? `player "${name}" not found` : null;
 }
 
 export function printStageReport(logger: Logger, result: StageProcessResult): void {
@@ -82,6 +104,16 @@ export function printSummary(results: StageResult[]): void {
 
     for (const { filename, reasons } of unmatchedEntries) {
       console.log(` ✗ ${filename} - ${reasons.join(', ')}`);
+    }
+  }
+}
+
+export function printDryRunReport(logger: Logger, stageResult: StageProcessResult, dry: boolean): void {
+  if (dry && stageResult.matchedEntries.length > 0) {
+    logger.log('Matched entries:');
+
+    for (const entry of stageResult.matchedEntries) {
+      logger.log(`  ${entry}`);
     }
   }
 }

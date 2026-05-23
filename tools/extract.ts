@@ -9,7 +9,7 @@ import type { Breaker, Game, GameProps } from '@/schema/data';
 import { parseGames } from '@/data/games';
 import { parsePlayers } from '@/data/players';
 import { createTable } from '@/data/table';
-import { Sgf, type SgfNodeData } from './sgf';
+import { Sgf, type SgfNodeDataChange } from './sgf';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const EVENT_DIR = join(__dirname, `../events/${EVENT}`);
@@ -281,7 +281,7 @@ async function getSgf({
   output,
 }: {
   sgfs: string[];
-  props: SgfNodeData;
+  props: SgfNodeDataChange;
   output: string;
 }): Promise<string | null> {
   if (!sgfs?.length) {

@@ -1,0 +1,84 @@
+(;CA[Windows-1252]PM[2]FG[259:]OT[3x30 Byo-yomi ]RU[Japanese]FF[4]GM[1]C[WAGC 2010
+Hangzhou, China
+Round 2, May 26
+W\: Thomas Hsiang 7d (US)
+B\: Thomas Debarre 5d (France)
+Commentary by Michael Redmond 9P
+Transcribed by Chris Garlock
+
+I know both players; Debarre was in Japan recently, I think, studying, though I don't know the details. Hsiang is a longtime friend of my wife and her sisters, so I know him well; he's a strong amateur. When I saw him the night after this game, he was saying that he had a fairly bad case of jetlag.]
+AP[GOWrite:2.3.28]SZ[19]ST[2]GN[Hsiang-Debarre-Redmond]EV[WAGC 2010]RO[2]DT[2010-05-26 ]
+PC[Hangzhou, China]PB[Thomas Debarre]BR[5d]BT[France]PW[Thomas Hsiang]WR[7d]WT[US]
+KM[6.5]TM[3600]RE[W+0.5 ]US[Transcribed by Chris Garlock]AN[Michael Redmond 9P]
+MULTIGOGM[1]
+;B[pd];W[dd];B[qp];W[dq];B[do];W[cm];B[cq];W[gq]C[This is modern variation that's quite popular nowadays. Many amateurs will instinctively hane underneath but this is a mistake (see var)]
+(;B[dp]LB[er:A]C[The game move at A is not the newest variation. This is interesting, because Thomas Hsiang was asking me before the tournament to tell him about new moves, and maybe it's a good thing I didn't, because this move turned out better than the modern variation]
+(;W[er]LB[dr:A][fo:B]C[B's game move at A is conservative and doesn't pressure W; I'd play at B, which has a number of follow-ups (see variations)]
+(;B[dr];W[eq];B[bp];W[cj]LB[dr:A]C[This development illustrates the problem with B's move at A; W got to play on the left and can live on the right anytime.]
+;B[oq];W[qf];B[qi];W[nd];B[pf]
+(;W[qc]LB[pg:A]C[Jumping in the corner at 20 is another innovation we see a lot in recent games. The previous normal joseki, of course, is the hane at A]
+;B[pc];W[pg]LB[of:A]C[If B plays at A, the joseki reverts to the old joseki, which would be bad for B]
+(;B[qe]C[natural counter for B];W[of];B[pe]C[weak for W to allow B to connect underneath; perfect shape for B (see var)]
+(;W[rg];B[og];W[ph];B[nf];W[re];B[rd];W[pi]C[this sequence is being played in a lot of pro games; I'd prefer to play as B but some top players seem to think it's an even fight]
+;B[se]
+(;W[rf]C[connecting is a slow, heavy move (see var)];B[oe];W[ql];B[jc];W[kd];B[jd]
+;W[kf];B[je];W[ke];B[fc];W[kc]LB[pb:A][rf:B]C[All of W's play here is aimed at the hane at A, which will justify W having connected at B]
+;B[df];W[ec];B[fd];W[ee];B[ed];W[de];B[dc];W[cc];B[eb];W[db]LB[ob:A]C[I was suprised to see B start the ko immediately; it would be feasible, instead, for B to protect the corner with the move at A, taking away W's eyes, and wait to start the ko later]
+;B[cb];W[ec];B[pj];W[dc];B[qk];W[nh]
+(;B[ig]LB[ob:A][jf:B]C[Again, I'd like to play at A for the reasons I just mentioned. B is worried about W's turn at B, but it's not urgent because W cannot enclose B]
+;W[pb];B[ob];W[qb];B[qd];W[nb];B[nc];W[oa];B[oc];W[mb];B[mc];W[kb];B[rb];W[rc];B[sc]
+;W[ra];B[sb];W[lc];B[la]C[very interesting move; B's trying to take away W's eyes and take advantage of W's liberty shortage to capture W's 5 stones in the corner. For W, this is a good opportunity to switch to attack the upper side instead (see variation)]
+(;W[lb];B[oh];W[oi];B[ni]LB[ng:A]C[the W atari a A is vulgar but in this case I like it (see var)]
+(;W[oj];B[mh];W[kh];B[pl];W[nj];B[mi];W[ji]C[B has to keep in mind that his group is not 100% alive]
+(;B[gf]C[B needs to play this move to protect his upper side]
+(;W[fg]LB[mj:A]C[It might be better to play the sequence beginning with A to seal B in and force him to live, strengthening W. But the game variation is playable too.]
+;B[gg];W[fh];B[hi];W[mj];B[li];W[jk]C[Jumping is the correct shape now for W];B[kk]
+;W[nl];B[kj];W[jj];B[km];W[ri]C[key point to make eyes for W; very important and good timing, too]
+;B[jl];W[hj];B[gi];W[il];B[im];W[hl]
+(;B[qh]LB[rj:A]C[B is trying to take W's eyes, but W's follow-up is very good and W had no trouble living here. B would be better off starting at ko at A, since B has ko threats on the left side]
+;W[rj];B[qj];W[rk];B[qm];W[rl]TR[pi][oi][nj][oj][mj][nl][ph][pg]C[B would like to cut off the center stones, but W can swap them for the lower right corner (see var)]
+(;B[pm];W[rh]C[So now not only has W lived, but he's gained a lot of territory]
+;B[iq];W[ll]LB[jn:A]C[W shouldn't play this peep; he's already got two eyes and is losing the peep at A]
+;B[kl];W[cr];B[br];W[ds];B[mn]
+(;W[io]LB[co:A]C[W missed a good chance to take away B's eyes at A];B[hm];W[ip]
+;B[hq];W[gp];B[kq];W[ir];B[hr];W[gr];B[jq];W[gl];B[dm];W[dl];B[cn];W[em];B[bm];W[cl]
+;B[fi];W[ei];B[ej];W[di];B[bl];W[bk]C[W is aware that he has the lead and is playing solidly]
+;B[gm];W[fm];B[fk];W[jn];B[jm]
+(;W[fl]LB[jb:A]C[very small, unneccessary move; the variation beginning with A is much more valuable]
+;B[jb]LB[lo:A];W[rm]LB[nk:A][lo:B]C[W has a potential back-up eye in the center at A, so this move actually loses 4 points locally. Playing at B is much better]
+;B[rn];W[nn]LB[lo:A]C[Also loses points, compared to A. But does set up a potential attack on the center B stones, so if W follows it up correctly, it's feasible]
+;B[no];W[mm];B[on]C[B gained a lot here already];W[fb]LB[nn:A]C[Taking this one stone is the mistake that make W's play at A a loss]
+;B[gb];W[ea];B[ln]TR[rm][nn]C[Now B has gained an enormous amount in the center; the two marked moves netted B about 10 points profit, erasing W's lead and making the game very close. Subsequent moves omitted; W ended up squeaking to a half-point win in the end.])
+(;W[jb];B[ib];W[hb];B[hc];W[ia];B[ic];W[dn];B[bn];W[lo];B[fl];W[ii])
+(;W[ib];B[jb];W[ja];B[ka]))
+(;W[co]))
+(;B[qg];W[rh];B[pk];W[pm];B[om];W[pn];B[ol];W[pp];B[on];W[oo];B[no];W[pq];B[mn]
+;W[or]C[Good enough for W]))
+(;B[rj];W[qh];B[si];W[qj];B[dj]))
+(;W[mj];B[li];W[kk]))
+(;B[qm];W[ne];B[lg];W[kg];B[mf];W[ng];B[mg];W[md]C[W can reduce B to one eye and B must run out into the center]))
+(;W[ng];B[of];W[oj]
+(;B[mh];W[mg];B[lg];W[mf];B[lf];W[me];B[le];W[md];B[ld];W[mi]C[Obviously a disaster for B])
+(;B[mg]
+(;W[mh];B[lh];W[mi];B[lg]C[Now it's bad for W])
+(;W[kh]
+(;B[mi];W[pk]C[now this is obviously good for W])
+(;B[pl];W[mi]
+(;B[mh];W[mj];B[nh];W[ok];B[md];W[pk]C[a bad var for B])
+(;B[nj];W[ok];B[mh];W[pk]C[Again, W gains on the right]))))))
+(;W[kh];B[na];W[ma];B[pa];W[qa];B[sd];W[nj];B[pl];W[fe];B[ge];W[gf];B[he];W[hc]
+;B[jb];W[gd];B[gc];W[gb];B[fb];W[fa];B[hd];W[ea];B[gd];W[hb]))
+(;B[ob];W[jf];B[if];W[ig];B[hf]))
+(;W[jc];B[oe];W[ql]))
+(;W[og];B[rg]))
+(;B[of];W[qd]))
+(;W[pg];B[of];W[qc];B[qe];W[pc];B[rf]LB[nd:A][nc:B]C[this is considered good for B because W's stone at A would be better at B and the connection is weak]))
+(;B[fo]
+(;W[cj];B[hp];W[hq];B[ip];W[iq];B[jp];W[kq];B[lo]LB[ch:A]C[B can be satisfied with this result, and be looking at a possible invasion around A])
+(;W[jq];B[ip];W[iq];B[fq];W[fr];B[gp];W[hq];B[ck]C[This is good for B, who has thickness to attack the stone on the left])
+(;W[hp];B[dl];W[dm];B[em];W[cl];B[dk];W[ck];B[dj];W[ci];B[fl]LB[kp:A]C[B gets thickness and is looking to play around A next])))
+(;W[dr];B[bo]LB[ck:A][cr:B]C[A and B are miai];W[cj];B[cr];W[jq]))
+(;B[dr];W[cp]
+(;B[dp];W[eq];B[bp];W[cr];B[co];W[br]C[Sometimes I play this when I'm giving lessons, say with a 3-stone game.])
+(;B[eq];W[dp];B[ep]C[better suji, but still cnsidered a disadvantage for B];W[cr]
+;B[bp];W[co];B[cn];W[bo];B[bn];W[bq];B[dn];W[fo];B[eo];W[fn];B[dm];W[dk]C[It looks like B has done something fancy here but actually it's not a very good position; the W corner is actually quite big and the B group is still under attack])))

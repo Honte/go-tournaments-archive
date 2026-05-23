@@ -3,6 +3,7 @@ import { readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { describe, it } from 'node:test';
 import { fileURLToPath } from 'node:url';
+import { MultipleLongestBranchesError } from './errors';
 import { Sgf } from './index';
 
 const fixtureDir = join(dirname(fileURLToPath(import.meta.url)), 'examples');
@@ -200,6 +201,22 @@ describe('Sgf', () => {
     );
   });
 
+  it('returns the main branch by following the first child', () => {
+    const sgf = new Sgf('(;A[root];B[aa](;W[bb])(;W[dd];B[cc]))');
+    const mainBranch = sgf.getMainBranch();
+    const longestBranch = sgf.getLongestBranch();
+
+    assert.deepEqual(
+      mainBranch.map((node) => node.id),
+      [0, 1, 2]
+    );
+    assert.deepEqual(
+      longestBranch.map((node) => node.id),
+      [0, 1, 3, 4]
+    );
+    assert.equal(mainBranch.length < longestBranch.length, true);
+  });
+
   it('strips shorter branches and rebuilds node lookup', () => {
     const sgf = new Sgf('(;A[root];B[aa](;W[bb];B[cc])(;W[dd]))');
 
@@ -216,8 +233,8 @@ describe('Sgf', () => {
   it('throws on equal longest branches before mutating', () => {
     const sgf = new Sgf('(;B[aa](;W[bb])(;W[cc]))');
 
-    assert.throws(() => sgf.getLongestBranch(), /Multiple longest branches/);
-    assert.throws(() => sgf.stripShorterBranches(), /Multiple longest branches/);
+    assert.throws(() => sgf.getLongestBranch(), MultipleLongestBranchesError);
+    assert.throws(() => sgf.stripShorterBranches(), MultipleLongestBranchesError);
     assert.equal(sgf.getRoot().children.length, 1);
     assert.equal(sgf.getRoot().children[0].children.length, 2);
   });

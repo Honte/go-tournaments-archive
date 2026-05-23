@@ -6,25 +6,33 @@ import { parseDocument } from 'yaml';
 import type { InputTournament, InputTournamentStage } from '@/schema/input';
 import { readCliParams } from '@tools/cli';
 import { createLogger } from '@tools/sgfMatcher/logger';
-import { printStageReport, printSummary } from './report';
+import { printDryRunReport, printStageReport, printSummary } from './report';
 import { findSgfs } from './sgf';
 import { processStage } from './stage';
 import type { StageResult } from './types';
 import { updateYamlDoc } from './yaml';
 
 const {
+  dry,
   force,
+  strict,
   year: yearFilter,
   verbose,
 } = readCliParams({
   year: { type: 'string', short: 'y' },
+  dry: { type: 'boolean', default: false, short: 'd' },
   force: { type: 'boolean', default: false, short: 'f' },
+  strict: { type: 'boolean', default: false, short: 's' },
   verbose: { type: 'boolean', default: false, short: 'v' },
 });
 
 const DATA_DIR = `events/${EVENT}/data`;
 const SGF_DIR = `events/${EVENT}/sgf`;
 const results: StageResult[] = [];
+
+if (dry) {
+  console.log('== DRY RUN ==');
+}
 
 const yamlFiles = await fg.glob(`${DATA_DIR}/*.yml`);
 
@@ -68,11 +76,15 @@ for (const yamlPath of yamlFiles.sort()) {
       dataDir: DATA_DIR,
       sgfDir: SGF_DIR,
       force,
+      strict,
     });
 
     printStageReport(logger, stageResult);
+    printDryRunReport(logger, stageResult, dry);
 
-    yamlModified = updateYamlDoc(doc, json.stages.indexOf(stage), stageResult) || yamlModified;
+    if (!dry) {
+      yamlModified = updateYamlDoc(doc, json.stages.indexOf(stage), stageResult) || yamlModified;
+    }
 
     results.push({
       year,
@@ -93,3 +105,7 @@ for (const yamlPath of yamlFiles.sort()) {
 }
 
 printSummary(results);
+
+if (dry) {
+  console.log('== DRY RUN ==');
+}
