@@ -1,6 +1,6 @@
 ; TC[W980602]
 ; CL[A]
-; EV[World Amateur Go Championship 1998]
+; EV[20th World Amateur Go Championship 1998]
 ; PC[JP,Tokyo]
 ; KM[5.5]
 ; TM[90]

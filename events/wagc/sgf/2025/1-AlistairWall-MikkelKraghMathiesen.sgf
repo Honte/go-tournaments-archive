@@ -1,0 +1,225 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]C[Mistakes\:
+
+Player	Move	Loss 	Score
+
+White	 54	  4.8	B+5.9 points
+Black	 55	  4.1	B+1.8 points
+Black	 69	  7.2	W+1.3 points
+White	 72	  5.7	B+4.6 points
+White	 74	  7.9	B+11.9 points
+Black	 75	 10.9	B+1.0 points
+Black	 79	  7.2	W+4.2 points
+White	 80	  5.7	B+1.5 points
+Black	 83	  6.5	W+1.6 points
+White	 84	  4.4	B+2.8 points
+Black	 87	  4.1	W+3.4 points
+Black	 97	  4.2	W+4.9 points
+Black	107	  8.6	W+16.4 points
+White	108	  7.8	W+8.6 points
+Black	109	  8.5	W+17.1 points
+White	110	 13.0	W+4.1 points
+Black	113	  7.3	W+10.7 points
+White	114	  7.6	W+3.1 points
+Black	117	  8.5	W+11.7 points
+White	120	  7.3	W+6.1 points
+Black	121	  8.7	W+14.8 points]
+AP[ai-sensei.com]SZ[19]GM[1]EV[WAGC 2025]RO[1]DT[2025-05-18]PB[Alistair Wall]BR[2d]
+PW[Mikkel Kragh Mathiesen]WR[2d]KM[6.5]RE[B+R]MULTIGOGM[1]
+;B[pd];W[dc];B[qp];W[dq];B[np];W[qf];B[ce];W[dh];B[co];W[nc];B[nd];W[md];B[ne];W[pc]
+;B[qc];W[oc];B[pf];W[pg];B[qe];W[of];B[pe];W[qb];B[rb];W[rc];B[rd];W[sc];B[ed];W[ec]
+;B[fd];W[fc];B[gd];W[gc];B[fh];W[cl];B[fo];W[fq];B[hq];W[do];B[dn];W[eo];B[dl];W[en]
+;B[cm];W[ck];B[dk];W[cj];B[dj];W[di];B[fj];W[bg];B[hn];W[jq];B[kp]
+(;W[hr]C[Mistake!
+
+This move is 4.8 points worse than the AI move.
+
+Black is ahead by 5.9 points.](;B[kq]C[Mistake!
+
+This move is 4.1 points worse than the AI move.
+
+Black is ahead by 1.8 points.]
+;W[hd];B[pk];W[qk];B[ql];W[rl];B[pl];W[pj];B[oj];W[qj];B[rm];W[oi];B[nj];W[qg]
+(;B[pb]C[Mistake!
+
+This move is 7.2 points worse than the AI move.
+
+White is ahead by 1.3 points.]
+;W[qd];B[cg]
+(;W[ch]C[Mistake!
+
+This move is 5.7 points worse than the AI move.
+
+Black is ahead by 4.6 points.]
+;B[qc]
+(;W[qq]C[Mistake!
+
+This move is 7.9 points worse than the AI move.
+
+Black is ahead by 11.9 points.]
+(;B[rp]C[Mistake!
+
+This move is 10.9 points worse than the AI move.
+
+Black is ahead by 1.0 points.]
+;W[qd];B[bf];W[dg]
+(;B[cf]C[Mistake!
+
+This move is 7.2 points worse than the AI move.
+
+White is ahead by 4.2 points.]
+(;W[ff]C[Mistake!
+
+This move is 5.7 points worse than the AI move.
+
+Black is ahead by 1.5 points.]
+;B[qc];W[bi]
+(;B[ef]C[Mistake!
+
+This move is 6.5 points worse than the AI move.
+
+White is ahead by 1.6 points.]
+(;W[fg]C[Mistake!
+
+This move is 4.4 points worse than the AI move.
+
+Black is ahead by 2.8 points.]
+;B[cc];W[cb]
+(;B[bb]C[Mistake!
+
+This move is 4.1 points worse than the AI move.
+
+White is ahead by 3.4 points.]
+;W[bc];B[cd];W[ab];B[qa];W[ge];B[id];W[he];B[je];W[lf]
+(;B[oh]C[Mistake!
+
+This move is 4.2 points worse than the AI move.
+
+White is ahead by 4.9 points.]
+;W[ni];B[mi];W[nh];B[mh];W[ng];B[mg];W[mf];B[nf];W[kh]
+(;B[jc]C[Mistake!
+
+This move is 8.6 points worse than the AI move.
+
+White is ahead by 16.4 points.]
+(;W[lc]C[Mistake!
+
+This move is 7.8 points worse than the AI move.
+
+White is ahead by 8.6 points.]
+(;B[jg]C[Mistake!
+
+This move is 8.5 points worse than the AI move.
+
+White is ahead by 17.1 points.]
+(;W[lg]C[Mistake!
+
+This move is 13 points worse than the AI move.
+
+White is ahead by 4.1 points.]
+;B[hc];W[hb]
+(;B[ib]C[Mistake!
+
+This move is 7.3 points worse than the AI move.
+
+White is ahead by 10.7 points.]
+(;W[ic]C[Mistake!
+
+This move is 7.6 points worse than the AI move.
+
+White is ahead by 3.1 points.]
+;B[ag];W[bh]
+(;B[hc]C[Mistake!
+
+This move is 8.5 points worse than the AI move.
+
+White is ahead by 11.7 points.]
+;W[mj];B[li]
+(;W[jj]C[Mistake!
+
+This move is 7.3 points worse than the AI move.
+
+White is ahead by 6.1 points.]
+(;B[kj]C[Moves after 121 missing])
+(;B[mk]C[I would play here.
+
+White is ahead by 6.1 points.];W[ic];B[ba];W[ca];B[hc]
+;W[em];B[gb];W[ic];B[pi]))
+(;W[mk]C[I would play here.
+
+White is ahead by 13.4 points.];B[ba];W[ca];B[gb];W[ic]
+;B[pi];W[og];B[hc];W[jj];B[ha]))
+(;B[lj]C[I would play here.
+
+White is ahead by 3.2 points.];W[hc];B[kd];W[ld];B[jh]
+;W[kb];B[jb];W[mb];B[ji];W[jr]))
+(;W[mj]C[I would play here.
+
+White is ahead by 10.7 points.];B[ba];W[ca];B[gb];W[ea]
+;B[ha];W[mk];B[eg]))
+(;B[lj]C[I would play here.
+
+White is ahead by 3.4 points.];W[ib];B[jh];W[jb];B[ir]
+;W[ji];B[cq];W[cr]))
+(;W[mj]C[I would play here.
+
+White is ahead by 17.1 points.];B[li];W[mk];B[jh];W[ki]
+;B[lj];W[ok]))
+(;B[lj]C[I would play here.
+
+White is ahead by 8.6 points.];W[ib];B[jb];W[kd];B[hb]
+;W[hc];B[ic];W[jf]))
+(;W[mj]C[I would play here.
+
+White is ahead by 16.4 points.];B[me];W[mk];B[cq];W[cp]))
+(;B[lj]C[I would play here.
+
+White is ahead by 7.8 points.];W[kd];B[ir];W[em];B[dm]
+;W[cp];B[me];W[ld]))
+(;B[ni]C[I would play here.
+
+White is ahead by 0.7 points.];W[kd];B[oh];W[sk];B[ri]
+;W[rj];B[rh]))
+(;B[he]C[I would play here.
+
+Black is ahead by 0.7 points.];W[qd];B[id];W[hc];B[qc]
+;W[ie];B[if];W[je];B[hf];W[qd];B[ag]))
+(;W[qd]C[I would play here.
+
+White is ahead by 1.6 points.];B[ag];W[qc];B[bh];W[hf]
+;B[fg];W[ni];B[mi];W[mh];B[lh]))
+(;B[qa]C[I would play here.
+
+Black is ahead by 4.9 points.];W[he];B[cb];W[cc];B[bc]
+;W[bd];B[ba];W[ab];B[ac];W[db];B[cd]))
+(;W[qc]C[I would play here.
+
+White is ahead by 4.2 points.];B[bh];W[bi];B[ag];W[ef]
+;B[ff];W[dd];B[eg];W[df];B[de];W[ee]))
+(;B[qc]C[I would play here.
+
+Black is ahead by 3.0 points.];W[em];B[qa];W[dm];B[cq]
+;W[cr];B[dr];W[cp];B[eq];W[bq];B[gq]))
+(;B[qa]C[I would play here.
+
+Black is ahead by 11.9 points.];W[rp];B[ni];W[qo];B[pp]
+;W[rk]))
+(;W[em]C[I would play here.
+
+Black is ahead by 4.0 points.];B[qa];W[dm];B[cq];W[cr]
+;B[dr];W[er];B[dp];W[ds];B[ep]))
+(;W[qc]C[I would play here.
+
+White is ahead by 1.1 points.];B[bh];W[lg];B[he];W[ie]
+;B[id];W[hc];B[lf]))
+(;B[ni]C[I would play here.
+
+Black is ahead by 5.9 points.];W[lf];B[mf];W[mg];B[ng]
+;W[nf];B[me];W[nh]))
+(;B[hd]C[I would play here.
+
+Black is ahead by 5.9 points.];W[jp];B[hc];W[bd];B[cg]
+;W[dg]))
+(;W[hd]C[I would play here.
+
+Black is ahead by 1.1 points.];B[he];W[ie];B[hf];W[jp]
+;B[cg]))

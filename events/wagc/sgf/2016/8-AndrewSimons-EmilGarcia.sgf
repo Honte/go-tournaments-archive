@@ -1,0 +1,90 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]OT[3x30 byo-yomi]AP[CGoban:3]SZ[19]GM[1]EV[37th WAGC]
+RO[8]DT[2016-06-19]PC[Wuxi, China]PB[Andrew Simons]BR[4d]BT[UK]PW[Emil Garcia]WR[5d]
+WT[Mexico]KM[6.5]TM[3600]RE[B+11.5]MULTIGOGM[1]
+;B[pd];W[dc];B[pq];W[eq];B[de];W[dh];B[gd];W[ee];B[ef];W[fe];B[dd];W[fc];B[cc];W[ec]
+;B[ff];W[ge];B[cb];W[kc]C[Uberdude [3d\]\: normally white should cut
+]
+(;B[po]C[Uberdude [3d\]\: rather than defeind i was a bit greedy, trying to play fast paced
+Uberdude [3d\]\: and also using the naughty "if my opponent didn't cut before he probably won't" meta-game rather than trying to play optimal play against a prefect opponent.
+]
+;W[cp];B[jp];W[qf];B[qi]
+(;W[nc];B[pf];W[qc];B[qe];W[pc];B[gq];W[dk]
+(;B[gf]C[Uberdude [3d\]\: i wanted to fix cut in sente, but probably bad
+];W[he]
+(;B[pl]
+(;W[qq];B[or];W[qo];B[qn];W[pr];B[pp]C[Uberdude [3d\]\: q8 misplaced now \:(
+];W[rr]
+(;B[ps];W[qs];B[qr];W[cg]C[Uberdude [3d\]\: bad threat
+];B[cf];W[pr];B[os];W[qp]
+;B[rn];W[sp];B[qr];W[dg]C[Uberdude [3d\]\: little lossy
+];B[df];W[pr];B[fo];W[qr]
+C[Uberdude [3d\]\: i was a bit surprised white though the cut aji was worth ignoring a move vs answering all threats and just living in gote 
+]
+;B[co];W[do]
+(;B[dn];W[cn];B[bo];W[eo];B[cm];W[en];B[bn];W[bp];B[em];W[fn];B[bk];W[fk];B[km]
+;W[lk];B[rd];W[lo];B[ko];W[oq];B[nr];W[lm];B[lp];W[ln];B[kl];W[nk];B[no];W[pk];B[qk]
+;W[pj];B[qj];W[kk];B[il];W[ik];B[hk];W[ij];B[hj];W[hi];B[gi];W[gj];B[gl];W[gh];B[fi]
+;W[fh]C[Uberdude [3d\]\: my misread
+];B[fr]C[Uberdude [3d\]\: got this in sente at some point
+]
+;W[er];B[me];W[pg];B[of];W[qh];B[oh]C[Uberdude [3d\]\: his misread
+];W[bf];B[be]
+;W[kf];B[mc];W[mb]
+(;B[nd];W[oc];B[bh]C[Uberdude [3d\]\: another misread, thought if he connected i could save f11
+]
+;W[bg];B[ke];W[je];B[kg];W[lg];B[lf];W[jf];B[ii];W[hh];B[lh];W[ji];B[jh];W[ih];B[ci]
+;W[di]C[Uberdude [3d\]\: f2 was probably about now
+];B[fa];W[fb];B[da];W[ga];B[ea]
+;W[gp];B[hp];W[fq];B[gr];W[ho];B[ip];W[gb];B[rb];W[rc];B[sc];W[mr];B[nq];W[dl];B[ck]
+;W[dm];B[fl];W[cl];B[bl];W[cn];B[bm];W[ch];B[bi];W[im];B[jm];W[hm];B[hl];W[ek];B[go]
+;W[fp];B[hn];W[gn];B[in];W[gm];B[ap];W[aq];B[ao];W[br];B[ro];W[rp];B[qb]C[Uberdude [3d\]\: something wrong with order round here
+]
+(;W[ol]C[Uberdude [3d\]\: anyway i ignored this to play something top right, we ended up with position as...
+]
+;B[pm];W[pi];B[ph];W[pb];B[qa];W[nh];B[og];W[ni];B[mg];W[jn];B[kn];W[io];B[oi];W[oj]
+;B[mj];W[nj]
+(;B[ml];W[ll];B[mk];W[nm];B[lj];W[nn];B[dj];W[ej];B[cj];W[ae];B[bd];W[lc];B[md]
+;W[ah];B[pa];W[oa];B[na];W[ob];B[kd];W[ld];B[le];W[jd];B[od];W[lb];B[nl];W[om];B[on]
+;W[so];B[sn];W[jk];B[jl];W[ki];B[mh];W[jg];B[kh];W[fs];B[gs];W[es];B[ai]C[Uberdude [3d\]\: those order might be wrong
+]
+;W[mo]C[Uberdude [3d\]\: anyway, this was the exciting stuff
+]
+(;B[mm];W[np];B[oo];W[mp];B[lq]
+(;W[mn];B[mq]C[Uberdude [3d\]\: phew!
+];W[op]C[Uberdude [3d\]\: w did this 2 moves ago
+]
+;B[pn];W[li]C[Uberdude [3d\]\: and played this push whilst deciding whether to go in
+]
+;B[mi];W[hf];B[ng];W[ok];B[ad];W[db];B[kj];W[jo];B[kp]C[Uberdude [3d\]\: b+11.5 in the end
+])
+(;W[op];B[pn]
+(;W[mn];B[mq])
+(;W[mq];B[mn];W[kr];B[lr];W[ls];B[jr];W[js];B[ir];W[kq];B[kp]C[Uberdude [3d\]\: oh, f1 hadn't happened yet
+])))
+(;B[mp]C[Uberdude [3d\]\: just defend silly!
+]))
+(;B[ll];W[ml];B[mm]C[Uberdude [3d\]\: i think he might have had l6 liberty when we did this stuff
+]))
+(;W[pi];B[ph];W[ol]))
+(;B[nb]C[Uberdude [3d\]\: something like this might work, but in byo yomi
+]))
+(;B[cn]C[Uberdude [3d\]\: maybe better
+];W[bp];B[dn];W[eo];B[en];W[fn];B[el]))
+(;B[rp]C[Uberdude [3d\]\: this doesnt work
+];W[qp];B[ro];W[rq];B[qs];W[ps];B[sq]
+;W[rs];B[sr];W[rn];B[rm];W[pn];B[qm];W[oq];B[nq];W[op];B[oo];W[np];B[nr];W[mp];B[on]
+;W[mq];B[mr];W[lr]))
+(;W[cf]C[Uberdude [3d\]\: reviewed with Singapore, he pointed out this is annoyin
+]
+;B[df];W[cg]))
+(;B[kl]))
+(;B[cf]C[Uberdude [3d\]\: honte time?
+];W[qm]C[Uberdude [3d\]\: not clear best place for black to reinforce moyo, but nor is white invasion so amazing if black can solidify the rest, and r13 aji too
+]
+(;B[om])
+(;B[je]C[Uberdude [3d\]\: later black has move like this which the push loses
+]
+;W[id];B[ld];W[lc];B[nd])))
+(;W[nd];B[pf];W[qc];B[qe];W[pc]C[Uberdude [3d\]\: apart from other directions, this should be better for white IMO
+]))
+(;B[cf]))
