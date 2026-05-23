@@ -1,6 +1,7 @@
 'use client';
 
-import { type ElementType, type HTMLAttributes, type JSX, type PropsWithChildren, useRef } from 'react';
+import { clsx } from 'clsx';
+import { type ElementType, type HTMLAttributes, type JSX, type PropsWithChildren, MouseEvent, useRef } from 'react';
 import type { Game, Player } from '@/schema/data';
 import { SHOW_POPOVER_EVENT } from '@/components/GamePopover';
 
@@ -18,7 +19,7 @@ export function GamePopoverTrigger({ as = 'div', game, players, children, ...pro
 
   return (
     <Component
-      onClick={() =>
+      onClick={(ev: MouseEvent) => {
         document.dispatchEvent(
           new CustomEvent(SHOW_POPOVER_EVENT, {
             detail: {
@@ -27,10 +28,13 @@ export function GamePopoverTrigger({ as = 'div', game, players, children, ...pro
               target: ref.current,
             },
           })
-        )
-      }
+        );
+        ev.stopPropagation();
+      }}
       ref={ref}
-      className="underline cursor-pointer"
+      className={clsx('cursor-pointer', {
+        underline: game.props.sgf,
+      })}
       {...props}
     >
       {children}
