@@ -78,7 +78,7 @@ for (const yamlPath of yamlFiles.sort()) {
       continue;
     }
 
-    printStageReport(logger, stageResult, { force, verbose });
+    printStageReport(logger, stageResult);
 
     if (!dry) {
       yamlModified = updateYamlDoc(doc, stageIndex, stageResult) || yamlModified;
