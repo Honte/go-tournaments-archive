@@ -1,0 +1,471 @@
+import { readFile } from 'node:fs/promises';
+import path from 'node:path';
+import type { InputTournamentStage } from '@/schema/input';
+import { type H9Player, buildLocalGameId, parseH9 } from '@/libs/h9';
+import { GAME_REGEX } from '@/data/games';
+import { buildSgfEntryString, type SgfMatchResult } from './entries';
+import {
+  MATCHES_SAME_GAME_AS_OTHER_FILE_REASON,
+  MATCHING_GAME_ALREADY_HAS_SGF_REASON,
+  buildCommonUnmatchedReasons,
+  findDuplicateKeys,
+  formatSgfWinner,
+  getSgfRound,
+} from './match';
+import { loadSgfInfos, parseFilename } from './sgf';
+import {
+  type Color,
+  type H9GameRecord,
+  type ParsedGameEntry,
+  type SgfInfo,
+  type SgfPlaces,
+  type StageAnalysisResult,
+  type UnmatchedEntry,
+  UNKNOWN_PLACE,
+} from './types';
+import { flipColor, normalizePlayerName } from './utils';
+
+const SGF_REGEX = /\bsgf:(\S+)/;
+const ROUND_REGEX = /\bround:(\d+)/;
+
+type ImplicitCandidate = {
+  sgf: SgfInfo;
+  localId: string;
+  h9Record: H9GameRecord;
+  places: SgfPlaces;
+  props?: string;
+};
+
+export async function processImplicitStage({
+  stage,
+  sgfPaths,
+  sgfDir,
+  dataDir,
+  force,
+  strict,
+}: {
+  stage: InputTournamentStage;
+  sgfPaths: string[];
+  dataDir: string;
+  sgfDir: string;
+  force: boolean;
+  strict: boolean;
+}): Promise<StageAnalysisResult> {
+  const tournamentFilePath = path.join(dataDir, stage.file);
+  const tournamentFileContent = await readFile(tournamentFilePath, 'utf-8');
+  const tournament = parseH9(tournamentFileContent);
+
+  const playersMap = buildPlayersMap(tournament.results);
+  const gamesMap = buildGamesMap(tournament.results);
+
+  const existingGamesById = new Map<string, ParsedGameEntry>();
+  const existingGamesBySgf = new Map<string, ParsedGameEntry>();
+  const previousEntries: string[] = [];
+
+  if (Array.isArray(stage.games)) {
+    for (const entry of stage.games) {
+      const result = parseEntry(entry);
+
+      if (!result) {
+        continue;
+      }
+
+      existingGamesById.set(result.id, result);
+      existingGamesBySgf.set(result.sgf, result);
+      previousEntries.push(entry);
+    }
+  }
+
+  const existingSgfs = new Set(existingGamesBySgf.keys());
+  const pathsToMatch = force ? sgfPaths : sgfPaths.filter((p) => !existingSgfs.has(p));
+  const sgfInfos = await loadSgfInfos(sgfDir, pathsToMatch, strict);
+
+  const { matchedEntries, matchedSgfs, unmatchedSgfs, unmatchedEntries } = matchImplicitSgfs({
+    sgfInfos,
+    playersMap,
+    gamesMap,
+    existingGamesById,
+    existingGamesBySgf,
+    force,
+  });
+
+  return {
+    previousEntries,
+    reusedEntries: force ? [] : previousEntries,
+    matchedEntries,
+    unmatchedEntries,
+    totalSgfs: sgfPaths.length,
+    claimedSgfs: [...new Set([...existingSgfs, ...matchedSgfs, ...unmatchedSgfs])],
+  };
+}
+
+export function matchImplicitSgfs({
+  sgfInfos,
+  playersMap,
+  gamesMap,
+  existingGamesById,
+  existingGamesBySgf,
+  force,
+}: {
+  sgfInfos: SgfInfo[];
+  playersMap: Map<string, number>;
+  gamesMap: Map<string, H9GameRecord>;
+  existingGamesById: Map<string, ParsedGameEntry>;
+  existingGamesBySgf: Map<string, ParsedGameEntry>;
+  force: boolean;
+}): { matchedEntries: string[]; unmatchedEntries: UnmatchedEntry[]; matchedSgfs: string[]; unmatchedSgfs: string[] } {
+  const candidates: ImplicitCandidate[] = [];
+  const matchedEntries: string[] = [];
+  const matchedSgfs: string[] = [];
+  const unmatchedEntries: UnmatchedEntry[] = [];
+  const unmatchedSgfs: string[] = [];
+
+  for (const sgf of sgfInfos) {
+    const places = resolveSgfPlaces(sgf, playersMap);
+    const precheckReasons = buildCommonUnmatchedReasons(sgf, {
+      black: places.blackPlace,
+      white: places.whitePlace,
+    });
+
+    if (precheckReasons.length > 0) {
+      unmatchedEntries.push(buildImplicitUnmatchedEntry(sgf, places, existingGamesBySgf, precheckReasons));
+      unmatchedSgfs.push(sgf.path);
+      continue;
+    }
+
+    const localId = resolveLocalId(sgf, getSgfRound(sgf), playersMap, gamesMap);
+
+    if (!localId) {
+      unmatchedEntries.push(buildImplicitUnmatchedEntry(sgf, places, existingGamesBySgf, ['no matching game']));
+      unmatchedSgfs.push(sgf.path);
+      continue;
+    }
+
+    const h9Record = gamesMap.get(localId);
+
+    if (!h9Record) {
+      console.warn(`  Warning: cannot find H9 record for ${localId}: ${sgf.path}`);
+      unmatchedEntries.push(buildImplicitUnmatchedEntry(sgf, places, existingGamesBySgf, ['no matching game']));
+      unmatchedSgfs.push(sgf.path);
+      continue;
+    }
+
+    const yamlGame = existingGamesById.get(localId);
+
+    if (yamlGame && !force) {
+      unmatchedEntries.push(
+        buildImplicitUnmatchedEntry(sgf, places, existingGamesBySgf, [MATCHING_GAME_ALREADY_HAS_SGF_REASON])
+      );
+      unmatchedSgfs.push(sgf.path);
+      continue;
+    }
+
+    if (!verifyColors(h9Record, places)) {
+      console.warn(
+        `  Warning: color mismatch for ${sgf.path} — H9 says place ${h9Record.homePlace} played ${h9Record.homeColor}, SGF disagrees`
+      );
+      unmatchedEntries.push(buildImplicitUnmatchedEntry(sgf, places, existingGamesBySgf, ['no matching game']));
+      unmatchedSgfs.push(sgf.path);
+      continue;
+    }
+
+    candidates.push({ sgf, localId, h9Record, places, props: yamlGame?.props });
+  }
+
+  const duplicateLocalIds = findDuplicateKeys(candidates.map((candidate) => ({ key: candidate.localId })));
+
+  for (const candidate of candidates) {
+    if (duplicateLocalIds.has(candidate.localId)) {
+      unmatchedEntries.push(
+        buildImplicitUnmatchedEntry(candidate.sgf, candidate.places, existingGamesBySgf, [
+          MATCHES_SAME_GAME_AS_OTHER_FILE_REASON,
+        ])
+      );
+      unmatchedSgfs.push(candidate.sgf.path);
+      continue;
+    }
+
+    matchedEntries.push(
+      buildSgfEntryString(
+        buildImplicitMatchResult(candidate.sgf, candidate.places, candidate.props, candidate.h9Record)
+      )
+    );
+    matchedSgfs.push(candidate.sgf.path);
+  }
+
+  return {
+    matchedEntries,
+    matchedSgfs,
+    unmatchedEntries,
+    unmatchedSgfs,
+  };
+}
+
+function parseEntry(entry: string): ParsedGameEntry | null {
+  const gameMatch = entry.match(GAME_REGEX);
+
+  if (!gameMatch) {
+    return null;
+  }
+
+  const { home, away, props } = gameMatch.groups!;
+  const sgfMatch = props?.match(SGF_REGEX);
+
+  if (isNaN(Number(home)) || isNaN(Number(away)) || !sgfMatch) {
+    return null;
+  }
+
+  const roundMatch = props?.match(ROUND_REGEX);
+  const round = roundMatch ? Number(roundMatch[1]) : parseFilename(sgfMatch[1]).round;
+
+  let remaining = props.replace(sgfMatch[0], '');
+  if (roundMatch) {
+    remaining = remaining.replace(roundMatch[0], '');
+  }
+
+  return {
+    id: buildLocalGameId(Number(home), Number(away), round ?? undefined),
+    sgf: sgfMatch[1],
+    round,
+    props: remaining.replace(/\s+/g, ' ').trim(),
+  };
+}
+
+export function buildPlayersMap(results: H9Player[]): Map<string, number> {
+  const lookup = new Map<string, number>();
+
+  for (const player of results) {
+    const fullName = `${player.name} ${player.surname}`;
+    registerPrimaryName(lookup, fullName, player.place);
+  }
+
+  for (const player of results) {
+    const fullName = `${player.name} ${player.surname}`;
+    const reversedName = `${player.surname} ${player.name}`;
+    registerAliasName(lookup, reversedName, player.place, fullName);
+  }
+
+  return lookup;
+}
+
+export function buildGamesMap(results: H9Player[]): Map<string, H9GameRecord> {
+  const map = new Map<string, H9GameRecord>();
+
+  for (const player of results) {
+    for (const game of player.games) {
+      if (!game) {
+        continue;
+      }
+
+      const myPlace = player.place;
+      const opponentPlace = game.opponent;
+      const myColor: Color = game.color;
+      const opponentColor: Color = flipColor(game.color);
+      const localId = buildLocalGameId(myPlace, opponentPlace, game.round);
+
+      if (map.has(localId)) {
+        continue;
+      }
+
+      const isHomePlayer = !myColor || myColor === 'black';
+
+      let winnerPlace: number | null;
+      if (game.result === '+') {
+        winnerPlace = myPlace;
+      } else if (game.result === '-') {
+        winnerPlace = opponentPlace;
+      } else {
+        winnerPlace = null;
+      }
+
+      map.set(localId, {
+        homePlace: isHomePlayer ? myPlace : opponentPlace,
+        awayPlace: isHomePlayer ? opponentPlace : myPlace,
+        round: game.round,
+        winnerPlace,
+        homeColor: isHomePlayer ? myColor : opponentColor,
+        winnerColor: winnerPlace === myPlace ? myColor : opponentColor,
+      });
+    }
+  }
+
+  return map;
+}
+
+export function resolveSgfPlaces(sgf: SgfInfo, playerLookup: Map<string, number>): SgfPlaces {
+  return {
+    blackPlace: lookupPlace(sgf.sgfBlackName, playerLookup) ?? lookupPlace(sgf.filenameBlackName, playerLookup),
+    whitePlace: lookupPlace(sgf.sgfWhiteName, playerLookup) ?? lookupPlace(sgf.filenameWhiteName, playerLookup),
+  };
+}
+
+function buildImplicitUnmatchedEntry(
+  sgf: SgfInfo,
+  places: SgfPlaces,
+  yamlGames: Map<string, ParsedGameEntry>,
+  reasons: string[]
+): UnmatchedEntry {
+  return {
+    filename: sgf.path,
+    line: buildSgfEntryString(buildImplicitMatchResult(sgf, places, yamlGames.get(sgf.path)?.props)),
+    reasons,
+  };
+}
+
+function buildImplicitMatchResult(
+  sgf: SgfInfo,
+  places: SgfPlaces,
+  props?: string,
+  h9Record?: H9GameRecord
+): SgfMatchResult {
+  const black = places.blackPlace ?? h9Record?.homePlace ?? UNKNOWN_PLACE;
+  const white =
+    places.whitePlace ??
+    (h9Record && black === h9Record.homePlace ? h9Record.awayPlace : h9Record?.homePlace) ??
+    UNKNOWN_PLACE;
+  let { winnerPlace, resultStr } = formatSgfWinner(sgf, places);
+
+  if (resultStr === null && h9Record?.winnerPlace !== null && h9Record?.winnerPlace !== undefined) {
+    winnerPlace = h9Record.winnerPlace;
+
+    const resultColor = getSgfResultColor(winnerPlace, places) ?? getH9ResultColor(h9Record.winnerColor);
+
+    if (resultColor) {
+      resultStr = `${resultColor}+?`;
+    }
+  }
+
+  return {
+    black,
+    white,
+    winner: winnerPlace,
+    result: resultStr,
+    round: h9Record?.round ?? getSgfRound(sgf),
+    sgf: sgf.path,
+    props,
+  };
+}
+
+function lookupPlace(name: string | null, playerLookup: Map<string, number>): number | null {
+  return name ? (playerLookup.get(normalizePlayerName(name)) ?? null) : null;
+}
+
+function resolveLocalId(
+  sgf: SgfInfo,
+  round: number | null,
+  playersMap: Map<string, number>,
+  h9gamesMap: Map<string, H9GameRecord>
+): string | null {
+  const places =
+    resolveLocalIdPlaces(sgf.sgfBlackName, sgf.sgfWhiteName, playersMap) ??
+    resolveLocalIdPlaces(sgf.filenameBlackName, sgf.filenameWhiteName, playersMap);
+
+  if (!places) {
+    return null;
+  }
+
+  if (round !== null) {
+    return buildLocalGameId(places[0], places[1], round);
+  }
+
+  const candidates: string[] = [];
+  for (const [key, record] of h9gamesMap) {
+    if (
+      (record.homePlace === places[0] && record.awayPlace === places[1]) ||
+      (record.homePlace === places[1] && record.awayPlace === places[0])
+    ) {
+      candidates.push(key);
+    }
+  }
+
+  if (candidates.length === 1) {
+    return candidates[0];
+  }
+
+  return null;
+}
+
+function resolveLocalIdPlaces(
+  blackName: string | null,
+  whiteName: string | null,
+  playersMap: Map<string, number>
+): [blackPlace: number, whitePlace: number] | null {
+  const blackPlace = lookupPlace(blackName, playersMap);
+  const whitePlace = lookupPlace(whiteName, playersMap);
+
+  return blackPlace !== null && whitePlace !== null ? [blackPlace, whitePlace] : null;
+}
+
+function registerPrimaryName(lookup: Map<string, number>, name: string, place: number): void {
+  const normalized = normalizePlayerName(name);
+
+  if (lookup.has(normalized)) {
+    console.warn(
+      `  Warning: duplicate normalized name "${normalized}" (places ${lookup.get(normalized)} and ${place})`
+    );
+  }
+
+  lookup.set(normalized, place);
+}
+
+function registerAliasName(lookup: Map<string, number>, alias: string, place: number, primaryName: string): void {
+  const normalized = normalizePlayerName(alias);
+  const existingPlace = lookup.get(normalized);
+
+  if (existingPlace !== undefined) {
+    if (existingPlace !== place) {
+      console.warn(
+        `  Warning: skipped normalized name alias "${normalized}" for "${primaryName}" (places ${existingPlace} and ${place})`
+      );
+    }
+
+    return;
+  }
+
+  lookup.set(normalized, place);
+}
+
+function verifyColors(h9Record: H9GameRecord, sgfPlaces: SgfPlaces): boolean {
+  if (!h9Record.homeColor) {
+    return true;
+  }
+
+  const awayColor = flipColor(h9Record.homeColor);
+  const { blackPlace, whitePlace } = sgfPlaces;
+
+  if (blackPlace === h9Record.homePlace || whitePlace === h9Record.homePlace) {
+    const sgfHomeColor: Color = blackPlace === h9Record.homePlace ? 'black' : 'white';
+    return sgfHomeColor === h9Record.homeColor;
+  }
+
+  if (blackPlace === h9Record.awayPlace || whitePlace === h9Record.awayPlace) {
+    const sgfAwayColor: Color = blackPlace === h9Record.awayPlace ? 'black' : 'white';
+    return sgfAwayColor === awayColor;
+  }
+
+  return true;
+}
+
+function getSgfResultColor(place: number, sgfPlaces: SgfPlaces): 'B' | 'W' | null {
+  if (sgfPlaces.blackPlace === place) {
+    return 'B';
+  }
+
+  if (sgfPlaces.whitePlace === place) {
+    return 'W';
+  }
+
+  return null;
+}
+
+function getH9ResultColor(color: Color): 'B' | 'W' | null {
+  if (color === 'black') {
+    return 'B';
+  }
+
+  if (color === 'white') {
+    return 'W';
+  }
+
+  return null;
+}

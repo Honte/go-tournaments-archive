@@ -1,55 +1,32 @@
-import { buildLocalGameId } from '@/libs/h9';
-import { GAME_REGEX } from '@/data/games';
-import { formatSgfWinner, getSgfRound, resolveSgfPlaces } from './match';
-import { parseFilename } from './sgf';
-import { type ParsedGameEntry, type SgfInfo, UNKNOWN_PLACE } from './types';
+export type SgfMatchResult = {
+  black: string | number;
+  white: string | number;
+  winner: string | number;
+  result: string | null;
+  round: number | null;
+  sgf: string;
+  props?: string;
+};
 
 const SGF_REGEX = /\bsgf:(\S+)/;
-const ROUND_REGEX = /\bround:(\d+)/;
 
-export function buildUnmatchedString(sgf: SgfInfo, playerLookup: Map<string, number>, props?: string): string {
-  const places = resolveSgfPlaces(sgf, playerLookup);
-  const { winnerPlace, resultStr } = formatSgfWinner(sgf, places);
-  const round = getSgfRound(sgf);
+export function buildExplicitMatchedString(rawEntry: string, sgfPath: string): string {
+  const sgfProp = `sgf:${sgfPath}`;
 
-  const black = places.blackPlace ?? UNKNOWN_PLACE;
-  const white = places.whitePlace ?? UNKNOWN_PLACE;
-  const winnerPart = resultStr ? `${winnerPlace}:${resultStr}` : String(winnerPlace);
+  if (SGF_REGEX.test(rawEntry)) {
+    return rawEntry.replace(SGF_REGEX, sgfProp);
+  }
+
+  return `${rawEntry} ${sgfProp}`;
+}
+
+export function buildExplicitEntryWithoutSgf(rawEntry: string): string {
+  return rawEntry.replace(SGF_REGEX, '').replace(/\s+/g, ' ').trim();
+}
+
+export function buildSgfEntryString({ black, white, winner, result, round, sgf, props }: SgfMatchResult): string {
+  const winnerPart = result ? `${winner}:${result}` : String(winner);
   const roundPart = round !== null ? ` round:${round}` : '';
 
-  return `${black}-${white} ${winnerPart}${roundPart} sgf:${sgf.path} ${props ?? ''}`.trim();
-}
-
-export function parseEntry(entry: string): ParsedGameEntry | null {
-  const gameMatch = entry.match(GAME_REGEX);
-
-  if (!gameMatch) {
-    return null;
-  }
-
-  const { home, away, props } = gameMatch.groups!;
-  const sgfMatch = props?.match(SGF_REGEX);
-
-  if (isNaN(Number(home)) || isNaN(Number(away)) || !sgfMatch) {
-    return null;
-  }
-
-  const roundMatch = props?.match(ROUND_REGEX);
-  const round = roundMatch ? Number(roundMatch[1]) : parseFilename(sgfMatch[1]).round;
-
-  let remaining = props.replace(sgfMatch[0], '');
-  if (roundMatch) {
-    remaining = remaining.replace(roundMatch[0], '');
-  }
-
-  return {
-    id: buildLocalGameId(Number(home), Number(away), round ?? undefined),
-    sgf: sgfMatch[1],
-    round,
-    props: remaining.replace(/\s+/g, ' ').trim(),
-  };
-}
-
-export function compareEntries(a: string, b: string): number {
-  return a.localeCompare(b, undefined, { numeric: true });
+  return `${black}-${white} ${winnerPart}${roundPart} sgf:${sgf} ${props ?? ''}`.trim();
 }

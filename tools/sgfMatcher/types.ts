@@ -1,4 +1,5 @@
 export const UNKNOWN_PLACE = '?' as const;
+export type UnknownPlace = typeof UNKNOWN_PLACE;
 
 export type Color = 'black' | 'white' | undefined;
 
@@ -54,7 +55,7 @@ export type UnmatchedEntry = {
   reasons: string[];
 };
 
-export type StageProcessResult = {
+export type StageAnalysisResult = {
   previousEntries: string[];
   reusedEntries: string[];
   matchedEntries: string[];

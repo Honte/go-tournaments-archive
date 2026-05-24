@@ -1,43 +1,16 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { makeH9Player } from '@tools/sgfMatcher/mocks';
-import { matchSgfs } from './match';
-import { buildUnmatchedEntries } from './report';
-import { extractSgfInfo } from './sgf';
-import { buildPlayersMap } from './tournament';
+import { extractSgfInfo, hasSgfFilenameSpaces, parseFilename } from './sgf';
 
 describe('extractSgfInfo', () => {
-  it('treats SGFs with multiple longest branches as unmatched', () => {
+  it('treats SGFs with multiple longest branches as content issues', () => {
     const sgf = extractSgfInfo(
       '(;PB[Black Player]PW[White Player]RE[B+R];B[aa](;W[bb])(;W[cc]))',
       '2025/1-BlackPlayer-WhitePlayer.sgf'
     );
-    const playersMap = buildPlayersMap([
-      makeH9Player({ place: 1, name: 'Black', surname: 'Player' }),
-      makeH9Player({ place: 2, name: 'White', surname: 'Player' }),
-    ]);
-    const gamesMap = new Map([
-      [
-        '1-2-1',
-        {
-          homePlace: 1,
-          awayPlace: 2,
-          round: 1,
-          winnerPlace: 1,
-          homeColor: 'black' as const,
-          winnerColor: 'black' as const,
-        },
-      ],
-    ]);
-
-    const result = matchSgfs([sgf], playersMap, gamesMap, new Map(), new Map());
 
     assert.equal(sgf.corrupted, false);
     assert.equal(sgf.contentIssue, 'multiple longest branches');
-    assert.equal(result.matchedEntries.length, 0);
-    assert.equal(result.matchedSgfs.length, 0);
-    assert.equal(result.unmatchedSgfs.length, 1);
-    assert.deepEqual(result.unmatchedEntries[0]?.reasons, ['multiple longest branches']);
   });
 
   it('allows longer side branches when strict mode is disabled', () => {
@@ -45,91 +18,53 @@ describe('extractSgfInfo', () => {
       '(;PB[Black Player]PW[White Player]RE[B+R];B[aa](;W[bb])(;W[cc];B[dd]))',
       '2025/1-BlackPlayer-WhitePlayer.sgf'
     );
-    const playersMap = buildPlayersMap([
-      makeH9Player({ place: 1, name: 'Black', surname: 'Player' }),
-      makeH9Player({ place: 2, name: 'White', surname: 'Player' }),
-    ]);
-    const gamesMap = new Map([
-      [
-        '1-2-1',
-        {
-          homePlace: 1,
-          awayPlace: 2,
-          round: 1,
-          winnerPlace: 1,
-          homeColor: 'black' as const,
-          winnerColor: 'black' as const,
-        },
-      ],
-    ]);
-
-    const result = matchSgfs([sgf], playersMap, gamesMap, new Map(), new Map());
 
     assert.equal(sgf.contentIssue, null);
-    assert.equal(result.matchedEntries.length, 1);
-    assert.deepEqual(result.unmatchedSgfs, []);
   });
 
-  it('treats longer side branches as unmatched in strict mode', () => {
+  it('treats longer side branches as content issues in strict mode', () => {
     const sgf = extractSgfInfo(
       '(;PB[Black Player]PW[White Player]RE[B+R];B[aa](;W[bb])(;W[cc];B[dd]))',
       '2025/1-BlackPlayer-WhitePlayer.sgf',
       true
     );
-    const playersMap = buildPlayersMap([
-      makeH9Player({ place: 1, name: 'Black', surname: 'Player' }),
-      makeH9Player({ place: 2, name: 'White', surname: 'Player' }),
-    ]);
-    const gamesMap = new Map([
-      [
-        '1-2-1',
-        {
-          homePlace: 1,
-          awayPlace: 2,
-          round: 1,
-          winnerPlace: 1,
-          homeColor: 'black' as const,
-          winnerColor: 'black' as const,
-        },
-      ],
-    ]);
-
-    const result = matchSgfs([sgf], playersMap, gamesMap, new Map(), new Map());
-    const unmatchedEntries = buildUnmatchedEntries(result.unmatchedSgfs, playersMap, new Map());
 
     assert.equal(sgf.contentIssue, 'longest branch is not main branch');
-    assert.equal(result.matchedEntries.length, 0);
-    assert.equal(result.matchedSgfs.length, 0);
-    assert.equal(result.unmatchedSgfs.length, 1);
-    assert.deepEqual(unmatchedEntries[0]?.reasons, ['longest branch is not main branch']);
+  });
+});
+
+describe('parseFilename', () => {
+  it('parses year-prefixed league filenames', () => {
+    assert.deepEqual(parseFilename('1997/1997-league-4-kgiedrojc-lsoldan.sgf'), {
+      blackName: 'kgiedrojc',
+      whiteName: 'lsoldan',
+      round: 4,
+      stage: 'league',
+    });
   });
 
-  it('does not report metadata player names as missing when filename names resolve', () => {
-    const sgf = extractSgfInfo(
-      '(;PB[Player Black 7D (AA)]PW[Player White 6D (BB)]RE[B+R];B[aa](;W[bb])(;W[cc];B[dd]))',
-      '2025/1-BlackPlayer-WhitePlayer.sgf',
-      true
-    );
-    const playersMap = buildPlayersMap([
-      makeH9Player({ place: 1, name: 'Black', surname: 'Player' }),
-      makeH9Player({ place: 2, name: 'White', surname: 'Player' }),
-    ]);
-    const gamesMap = new Map([
-      [
-        '1-2-1',
-        {
-          homePlace: 1,
-          awayPlace: 2,
-          round: 1,
-          winnerPlace: 1,
-          homeColor: 'black' as const,
-          winnerColor: 'black' as const,
-        },
-      ],
-    ]);
+  it('parses final filenames with index before player names', () => {
+    assert.deepEqual(parseFilename('1997/1997-final-2-lsoldan-jlubos.sgf'), {
+      blackName: 'lsoldan',
+      whiteName: 'jlubos',
+      round: 2,
+      stage: 'final',
+    });
+  });
 
-    const result = matchSgfs([sgf], playersMap, gamesMap, new Map(), new Map());
+  it('parses final filenames with index after player names', () => {
+    assert.deepEqual(parseFilename('1989/1989-lsoldan-jkraszek-final-1.sgf'), {
+      blackName: 'lsoldan',
+      whiteName: 'jkraszek',
+      round: 1,
+      stage: 'final',
+    });
+  });
+});
 
-    assert.deepEqual(result.unmatchedEntries[0]?.reasons, ['longest branch is not main branch']);
+describe('hasSgfFilenameSpaces', () => {
+  it('detects whitespace in the SGF basename', () => {
+    assert.equal(hasSgfFilenameSpaces('2025/1-BlackPlayer-WhitePlayer copy.sgf'), true);
+    assert.equal(hasSgfFilenameSpaces('2025/1-BlackPlayer-WhitePlayer.sgf'), false);
   });
 });

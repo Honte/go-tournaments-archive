@@ -84,4 +84,91 @@ describe('processExplicitStage', () => {
       await rm(root, { recursive: true, force: true });
     }
   });
+
+  it('reports new SGFs that match an existing YAML game as unmatched in non-force mode', async () => {
+    const root = await mkdtemp(path.join(tmpdir(), 'sgf-matcher-'));
+
+    try {
+      await writeFile(
+        path.join(root, '2025-league-1-bp-wp-copy.sgf'),
+        '(;PB[Black Player]PW[White Player]RE[B+R];B[aa];W[bb])',
+        'utf-8'
+      );
+
+      const tournament: InputTournament = {
+        players: {
+          bp: 'Black Player 1d',
+          wp: 'White Player 1d',
+        },
+        stages: [],
+      };
+
+      const result = await processExplicitStage({
+        tournament,
+        stage: {
+          type: 'league',
+          date: '2025-01-01',
+          rounds: [['bp-wp bp:B+R sgf:2025-league-1-bp-wp.sgf']],
+        },
+        sgfPaths: ['2025-league-1-bp-wp.sgf', '2025-league-1-bp-wp-copy.sgf'],
+        sgfDir: root,
+        force: false,
+        strict: false,
+      });
+
+      assert.deepEqual(result.matchedEntries, []);
+      assert.deepEqual(result.reusedEntries, ['bp-wp bp:B+R sgf:2025-league-1-bp-wp.sgf']);
+      assert.deepEqual(result.unmatchedEntries[0]?.reasons, ['matching game already has sgf']);
+    } finally {
+      await rm(root, { recursive: true, force: true });
+    }
+  });
+
+  it('reopens existing YAML games for duplicate matching in force mode', async () => {
+    const root = await mkdtemp(path.join(tmpdir(), 'sgf-matcher-'));
+
+    try {
+      await writeFile(
+        path.join(root, '2025-league-1-bp-wp.sgf'),
+        '(;PB[Black Player]PW[White Player]RE[B+R];B[aa];W[bb])',
+        'utf-8'
+      );
+      await writeFile(
+        path.join(root, '2025-league-1-bp-wp-copy.sgf'),
+        '(;PB[Black Player]PW[White Player]RE[B+R];B[aa];W[bb])',
+        'utf-8'
+      );
+
+      const tournament: InputTournament = {
+        players: {
+          bp: 'Black Player 1d',
+          wp: 'White Player 1d',
+        },
+        stages: [],
+      };
+
+      const result = await processExplicitStage({
+        tournament,
+        stage: {
+          type: 'league',
+          date: '2025-01-01',
+          rounds: [['bp-wp bp:B+R sgf:2025-league-1-bp-wp.sgf']],
+        },
+        sgfPaths: ['2025-league-1-bp-wp.sgf', '2025-league-1-bp-wp-copy.sgf'],
+        sgfDir: root,
+        force: true,
+        strict: false,
+      });
+
+      assert.deepEqual(result.matchedEntries, []);
+      assert.deepEqual(result.reusedEntries, []);
+      assert.deepEqual(
+        result.unmatchedEntries.map((entry) => entry.reasons),
+        [['matches same game as other file'], ['matches same game as other file']]
+      );
+      assert.deepEqual(result.inlineUpdates, [{ path: ['rounds', 0, 0], value: 'bp-wp bp:B+R' }]);
+    } finally {
+      await rm(root, { recursive: true, force: true });
+    }
+  });
 });

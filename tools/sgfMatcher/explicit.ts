@@ -7,10 +7,27 @@ import type {
 } from '@/schema/input';
 import { GAME_REGEX } from '@/data/games';
 import { getPlayerHash, getPlayerSlug, parsePlayers } from '@/data/players';
-import { formatSgfWinner } from './match';
-import { hasSgfFilenameSpaces, loadSgfInfos, parseFilename } from './sgf';
-import type { InlineGameUpdate, SgfInfo, StageProcessResult, UnmatchedEntry } from './types';
-import { UNKNOWN_PLACE } from './types';
+import {
+  buildExplicitEntryWithoutSgf,
+  buildExplicitMatchedString,
+  buildSgfEntryString,
+  type SgfMatchResult,
+} from './entries';
+import {
+  MATCHES_SAME_GAME_AS_OTHER_FILE_REASON,
+  MATCHING_GAME_ALREADY_HAS_SGF_REASON,
+  buildCommonUnmatchedReasons,
+  findDuplicateKeys,
+  formatSgfWinner,
+} from './match';
+import { loadSgfInfos, parseFilename } from './sgf';
+import {
+  type InlineGameUpdate,
+  type SgfInfo,
+  type StageAnalysisResult,
+  type UnmatchedEntry,
+  UNKNOWN_PLACE,
+} from './types';
 import { normalizePlayerName } from './utils';
 
 type ExplicitStage = InputLeagueStage | InputLadderTableStage | InputRoundRobinTableStage | InputFinalStage;
@@ -31,6 +48,13 @@ type ExplicitPlayerIds = {
   whiteId: string | null;
 };
 
+type ExplicitCandidate = {
+  sgf: SgfInfo;
+  entry: ExplicitGameEntry;
+  players: ExplicitPlayerIds;
+  entryKey: string;
+};
+
 const SGF_REGEX = /\bsgf:(\S+)/;
 
 export async function processExplicitStage({
@@ -47,7 +71,7 @@ export async function processExplicitStage({
   sgfDir: string;
   force: boolean;
   strict: boolean;
-}): Promise<StageProcessResult> {
+}): Promise<StageAnalysisResult> {
   const playersMap = buildYamlPlayersMap(tournament.players);
   const entries = collectExplicitEntries(stage);
   const previousEntries = entries.filter((entry) => entry.sgf).map((entry) => entry.raw);
@@ -55,40 +79,35 @@ export async function processExplicitStage({
   const stageSgfPaths = sgfPaths.filter((path) => isSgfRelevantToStage(stage, path));
   const pathsToMatch = force ? stageSgfPaths : stageSgfPaths.filter((path) => !existingSgfs.has(path));
   const sgfInfos = await loadSgfInfos(sgfDir, pathsToMatch, strict);
+  const matchCandidates: ExplicitCandidate[] = [];
   const matchedEntries: string[] = [];
   const unmatchedEntries: UnmatchedEntry[] = [];
   const inlineUpdates: InlineGameUpdate[] = [];
   const claimedSgfs = new Set(existingSgfs);
-  const matchedEntryPaths = new Set<string>();
+  const clearedEntryPaths = new Set<string>();
 
   for (const sgf of sgfInfos) {
     claimedSgfs.add(sgf.path);
+    const playerIds = resolveExplicitSgfPlayers(sgf, playersMap);
 
-    const precheckReasons = getExplicitUnmatchedReasons(sgf, playersMap);
+    const precheckReasons = getExplicitUnmatchedReasons(sgf, playerIds);
     if (precheckReasons.length > 0) {
-      unmatchedEntries.push(buildExplicitUnmatchedEntry(sgf, playersMap, precheckReasons));
+      unmatchedEntries.push(buildExplicitUnmatchedEntry(sgf, playerIds, precheckReasons));
       continue;
     }
 
     const metadataConflictReason = getMetadataConflictReason(sgf, playersMap);
 
     if (metadataConflictReason) {
-      unmatchedEntries.push(buildExplicitUnmatchedEntry(sgf, playersMap, [metadataConflictReason]));
+      unmatchedEntries.push(buildExplicitUnmatchedEntry(sgf, playerIds, [metadataConflictReason]));
       continue;
     }
 
-    const playerIds = resolveExplicitSgfPlayers(sgf, playersMap);
-
-    if (!playerIds.blackId || !playerIds.whiteId) {
-      unmatchedEntries.push(buildExplicitUnmatchedEntry(sgf, playersMap));
-      continue;
-    }
-
-    const candidates = findMatchingEntries(sgf, playerIds, entries, force);
+    const candidates = findMatchingEntries(sgf, playerIds, entries);
 
     if (candidates.length !== 1) {
       unmatchedEntries.push(
-        buildExplicitUnmatchedEntry(sgf, playersMap, [
+        buildExplicitUnmatchedEntry(sgf, playerIds, [
           candidates.length > 1 ? 'multiple matching games' : 'no matching game',
         ])
       );
@@ -98,15 +117,33 @@ export async function processExplicitStage({
     const entry = candidates[0];
     const entryKey = entry.path.join('.');
 
-    if (matchedEntryPaths.has(entryKey)) {
-      unmatchedEntries.push(buildExplicitUnmatchedEntry(sgf, playersMap, ['duplicate match']));
+    if (entry.sgf && !force) {
+      unmatchedEntries.push(buildExplicitUnmatchedEntry(sgf, playerIds, [MATCHING_GAME_ALREADY_HAS_SGF_REASON]));
       continue;
     }
 
-    const value = updateGameSgf(entry, sgf.path);
-    inlineUpdates.push({ path: entry.path, value });
+    matchCandidates.push({ sgf, entry, players: playerIds, entryKey });
+  }
+
+  const duplicateEntryKeys = findDuplicateKeys(matchCandidates.map((candidate) => ({ key: candidate.entryKey })));
+
+  for (const candidate of matchCandidates) {
+    if (duplicateEntryKeys.has(candidate.entryKey)) {
+      unmatchedEntries.push(
+        buildExplicitUnmatchedEntry(candidate.sgf, candidate.players, [MATCHES_SAME_GAME_AS_OTHER_FILE_REASON])
+      );
+
+      if (force && candidate.entry.sgf && !clearedEntryPaths.has(candidate.entryKey)) {
+        inlineUpdates.push({ path: candidate.entry.path, value: buildExplicitEntryWithoutSgf(candidate.entry.raw) });
+        clearedEntryPaths.add(candidate.entryKey);
+      }
+
+      continue;
+    }
+
+    const value = buildExplicitMatchedString(candidate.entry.raw, candidate.sgf.path);
+    inlineUpdates.push({ path: candidate.entry.path, value });
     matchedEntries.push(value);
-    matchedEntryPaths.add(entryKey);
   }
 
   return {
@@ -228,14 +265,9 @@ function registerPlayerName(lookup: Map<string, string>, name: string, id: strin
 function findMatchingEntries(
   sgf: SgfInfo,
   playerIds: ExplicitPlayerIds,
-  entries: ExplicitGameEntry[],
-  force: boolean
+  entries: ExplicitGameEntry[]
 ): ExplicitGameEntry[] {
   let candidates = entries.filter((entry) => {
-    if (entry.sgf && !force) {
-      return false;
-    }
-
     return (
       (entry.home === playerIds.blackId && entry.away === playerIds.whiteId) ||
       (entry.home === playerIds.whiteId && entry.away === playerIds.blackId)
@@ -261,16 +293,6 @@ function findMatchingEntries(
   }
 
   return candidates;
-}
-
-function updateGameSgf(entry: ExplicitGameEntry, sgfPath: string): string {
-  const sgfProp = `sgf:${sgfPath}`;
-
-  if (entry.sgf) {
-    return entry.raw.replace(SGF_REGEX, sgfProp);
-  }
-
-  return `${entry.raw} ${sgfProp}`;
 }
 
 function resolveExplicitSgfPlayers(sgf: SgfInfo, playerLookup: Map<string, string>): ExplicitPlayerIds {
@@ -323,79 +345,35 @@ function lookupPlayerId(name: string | null, playerLookup: Map<string, string>):
   return name ? (playerLookup.get(normalizePlayerName(name)) ?? null) : null;
 }
 
-function buildExplicitUnmatchedEntry(
-  sgf: SgfInfo,
-  playerLookup: Map<string, string>,
-  fallbackReasons: string[] = []
-): UnmatchedEntry {
-  const reasons = getExplicitUnmatchedReasons(sgf, playerLookup);
-
+function buildExplicitUnmatchedEntry(sgf: SgfInfo, players: ExplicitPlayerIds, reasons: string[]): UnmatchedEntry {
   return {
     filename: sgf.path,
-    line: buildExplicitUnmatchedString(sgf, playerLookup),
-    reasons: reasons.length > 0 ? reasons : fallbackReasons.length > 0 ? fallbackReasons : ['no matching game'],
+    line: buildSgfEntryString(buildExplicitMatchResult(sgf, players)),
+    reasons,
   };
 }
 
-function buildExplicitUnmatchedString(sgf: SgfInfo, playerLookup: Map<string, string>): string {
-  const players = resolveExplicitSgfPlayers(sgf, playerLookup);
+function getExplicitUnmatchedReasons(sgf: SgfInfo, players: ExplicitPlayerIds): string[] {
+  return buildCommonUnmatchedReasons(sgf, {
+    black: players.blackId,
+    white: players.whiteId,
+  });
+}
+
+function buildExplicitMatchResult(sgf: SgfInfo, players: ExplicitPlayerIds): SgfMatchResult {
   const { winnerPlace, resultStr } = formatSgfWinner(sgf, {
     blackPlace: players.blackId ? 1 : null,
     whitePlace: players.whiteId ? 2 : null,
   });
   const black = players.blackId ?? UNKNOWN_PLACE;
   const white = players.whiteId ?? UNKNOWN_PLACE;
-  const winner = winnerPlace === 1 ? black : winnerPlace === 2 ? white : UNKNOWN_PLACE;
-  const winnerPart = resultStr ? `${winner}:${resultStr}` : String(winner);
-  const round = getExplicitStageRound(sgf);
-  const roundPart = round !== null ? ` round:${round}` : '';
 
-  return `${black}-${white} ${winnerPart}${roundPart} sgf:${sgf.path}`.trim();
-}
-
-function getExplicitUnmatchedReasons(sgf: SgfInfo, playerLookup: Map<string, string>): string[] {
-  if (sgf.corrupted) {
-    return ['corrupted SGF'];
-  }
-
-  const reasons: string[] = [];
-  const players = resolveExplicitSgfPlayers(sgf, playerLookup);
-
-  if (hasSgfFilenameSpaces(sgf.path)) {
-    reasons.push('filename contains spaces');
-  }
-
-  if (
-    sgf.sgfBlackName === null &&
-    sgf.sgfWhiteName === null &&
-    sgf.filenameBlackName === null &&
-    sgf.filenameWhiteName === null
-  ) {
-    reasons.push('no player names found');
-  }
-
-  const blackReason = buildPlayerNameReason(players.blackId, sgf.sgfBlackName ?? sgf.filenameBlackName);
-  const whiteReason = buildPlayerNameReason(players.whiteId, sgf.sgfWhiteName ?? sgf.filenameWhiteName);
-
-  if (blackReason) {
-    reasons.push(blackReason);
-  }
-
-  if (whiteReason) {
-    reasons.push(whiteReason);
-  }
-
-  if (sgf.resultIssue) {
-    reasons.push(sgf.resultIssue);
-  }
-
-  if (sgf.contentIssue) {
-    reasons.push(sgf.contentIssue);
-  }
-
-  return reasons;
-}
-
-function buildPlayerNameReason(id: string | null, name: string | null): string | null {
-  return id === null && name ? `player "${name}" not found` : null;
+  return {
+    black,
+    white,
+    winner: winnerPlace === 1 ? black : winnerPlace === 2 ? white : UNKNOWN_PLACE,
+    result: resultStr,
+    round: getExplicitStageRound(sgf),
+    sgf: sgf.path,
+  };
 }

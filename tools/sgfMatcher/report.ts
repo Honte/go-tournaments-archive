@@ -1,69 +1,7 @@
 import type { Logger } from '@tools/sgfMatcher/logger';
-import { buildUnmatchedString } from './entries';
-import { resolveSgfPlaces } from './match';
-import { hasSgfFilenameSpaces } from './sgf';
-import type { ParsedGameEntry, SgfInfo, StageProcessResult, StageResult, UnmatchedEntry } from './types';
+import type { StageAnalysisResult, StageResult } from './types';
 
-export function buildUnmatchedEntries(
-  unmatchedSgfs: SgfInfo[],
-  playersMap: Map<string, number>,
-  yamlGames: Map<string, ParsedGameEntry>
-): UnmatchedEntry[] {
-  return unmatchedSgfs.map((sgf) => ({
-    filename: sgf.path,
-    line: buildUnmatchedString(sgf, playersMap, yamlGames.get(sgf.path)?.props),
-    reasons: buildReasons(sgf, playersMap),
-  }));
-}
-
-function buildReasons(sgf: SgfInfo, playerLookup: Map<string, number>): string[] {
-  if (sgf.corrupted) {
-    return ['corrupted SGF'];
-  }
-
-  const reasons: string[] = [];
-  const places = resolveSgfPlaces(sgf, playerLookup);
-
-  if (hasSgfFilenameSpaces(sgf.path)) {
-    reasons.push('filename contains spaces');
-  }
-
-  if (
-    sgf.sgfBlackName === null &&
-    sgf.sgfWhiteName === null &&
-    sgf.filenameBlackName === null &&
-    sgf.filenameWhiteName === null
-  ) {
-    reasons.push('no player names found');
-  }
-
-  const blackNameReason = buildPlayerNameReason(places.blackPlace, sgf.sgfBlackName ?? sgf.filenameBlackName);
-  const whiteNameReason = buildPlayerNameReason(places.whitePlace, sgf.sgfWhiteName ?? sgf.filenameWhiteName);
-
-  if (blackNameReason) {
-    reasons.push(blackNameReason);
-  }
-
-  if (whiteNameReason) {
-    reasons.push(whiteNameReason);
-  }
-
-  if (sgf.resultIssue) {
-    reasons.push(sgf.resultIssue);
-  }
-
-  if (sgf.contentIssue) {
-    reasons.push(sgf.contentIssue);
-  }
-
-  return reasons.length > 0 ? reasons : ['no matching game'];
-}
-
-function buildPlayerNameReason(place: number | null, name: string | null): string | null {
-  return place === null && name ? `player "${name}" not found` : null;
-}
-
-export function printStageReport(logger: Logger, result: StageProcessResult): void {
+export function printStageReport(logger: Logger, result: StageAnalysisResult): void {
   logger.log(`SGF files found: ${result.totalSgfs}`);
   logger.log(`Previously matched: ${result.previousEntries.length}`);
   logger.log(`Reused entries: ${result.reusedEntries.length}`);
@@ -102,7 +40,7 @@ export function printSummary(results: StageResult[]): void {
   }
 }
 
-export function printDryRunReport(logger: Logger, stageResult: StageProcessResult, dry: boolean): void {
+export function printDryRunReport(logger: Logger, stageResult: StageAnalysisResult, dry: boolean): void {
   if (dry && stageResult.matchedEntries.length > 0) {
     logger.log('Matched entries:');
 
