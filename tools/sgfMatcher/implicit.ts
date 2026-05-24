@@ -3,7 +3,7 @@ import path from 'node:path';
 import type { InputTournamentStage } from '@/schema/input';
 import { type H9Player, buildLocalGameId, parseH9 } from '@/libs/h9';
 import { GAME_REGEX } from '@/data/games';
-import { buildEntryWithoutSgf, buildSgfEntryString, type SgfMatchResult } from './entries';
+import { buildSgfEntryString, type SgfMatchResult } from './entries';
 import {
   MATCHES_SAME_GAME_AS_OTHER_FILE_REASON,
   MATCHING_GAME_ALREADY_HAS_SGF_REASON,
@@ -231,7 +231,7 @@ export function matchImplicitSgfs({
     if (!currentSgfPaths.has(yamlGame.sgf) && !updatedLocalIds.has(localId)) {
       removedEntries.push({
         previousSgf: yamlGame.sgf,
-        entry: buildEntryWithoutSgf(yamlGame.raw),
+        entry: yamlGame.raw,
       });
     }
   }

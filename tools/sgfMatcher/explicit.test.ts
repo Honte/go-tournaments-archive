@@ -176,7 +176,7 @@ describe('matchExplicitSgfs', () => {
     assert.deepEqual(result.removedEntries, [
       {
         previousSgf: '2025-league-1-bp-wp-missing.sgf',
-        entry: 'bp-wp bp:B+R yt:https://example.test',
+        entry: 'bp-wp bp:B+R yt:https://example.test sgf:2025-league-1-bp-wp-missing.sgf',
       },
     ]);
     assert.deepEqual(result.inlineUpdates, [{ path: ['rounds', 0, 0], value: 'bp-wp bp:B+R yt:https://example.test' }]);

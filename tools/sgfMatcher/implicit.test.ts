@@ -280,7 +280,7 @@ describe('matchImplicitSgfs', () => {
     assert.deepEqual(result.removedEntries, [
       {
         previousSgf: '2025/1-BlackPlayer-WhitePlayer-missing.sgf',
-        entry: '1-2 1:B+R round:1',
+        entry: '1-2 1:B+R round:1 sgf:2025/1-BlackPlayer-WhitePlayer-missing.sgf',
       },
     ]);
   });

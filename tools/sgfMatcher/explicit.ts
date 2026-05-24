@@ -196,7 +196,7 @@ export function matchExplicitSgfs({
     ) {
       const value = buildEntryWithoutSgf(entry.raw);
       inlineUpdates.push({ path: entry.path, value });
-      removedEntries.push({ previousSgf: entry.sgf, entry: value });
+      removedEntries.push({ previousSgf: entry.sgf, entry: entry.raw });
       clearedEntryPaths.add(entryKey);
     }
   }
