@@ -10,17 +10,7 @@ export type SgfMatchResult = {
 
 const SGF_REGEX = /\bsgf:(\S+)/;
 
-export function buildExplicitMatchedString(rawEntry: string, sgfPath: string): string {
-  const sgfProp = `sgf:${sgfPath}`;
-
-  if (SGF_REGEX.test(rawEntry)) {
-    return rawEntry.replace(SGF_REGEX, sgfProp);
-  }
-
-  return `${rawEntry} ${sgfProp}`;
-}
-
-export function buildExplicitEntryWithoutSgf(rawEntry: string): string {
+export function buildEntryWithoutSgf(rawEntry: string): string {
   return rawEntry.replace(SGF_REGEX, '').replace(/\s+/g, ' ').trim();
 }
 

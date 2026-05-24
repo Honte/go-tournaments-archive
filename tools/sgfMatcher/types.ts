@@ -38,6 +38,7 @@ export type ParsedGameEntry = {
   sgf: string;
   round: number | null;
   props: string;
+  raw: string;
 };
 
 export type StageResult = {
@@ -46,6 +47,8 @@ export type StageResult = {
   unmatched: number;
   totalSgfs: number;
   reused: number;
+  updated: number;
+  removed: number;
   unmatchedEntries: UnmatchedEntry[];
 };
 
@@ -59,6 +62,8 @@ export type StageAnalysisResult = {
   previousEntries: string[];
   reusedEntries: string[];
   matchedEntries: string[];
+  updatedEntries: UpdatedEntry[];
+  removedEntries: RemovedEntry[];
   unmatchedEntries: UnmatchedEntry[];
   totalSgfs: number;
   claimedSgfs: string[];
@@ -68,4 +73,15 @@ export type StageAnalysisResult = {
 export type InlineGameUpdate = {
   path: (string | number)[];
   value: string;
+};
+
+export type UpdatedEntry = {
+  previousSgf: string;
+  nextSgf: string;
+  entry: string;
+};
+
+export type RemovedEntry = {
+  previousSgf: string;
+  entry: string;
 };

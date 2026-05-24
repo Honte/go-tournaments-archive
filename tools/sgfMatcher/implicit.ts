@@ -3,7 +3,7 @@ import path from 'node:path';
 import type { InputTournamentStage } from '@/schema/input';
 import { type H9Player, buildLocalGameId, parseH9 } from '@/libs/h9';
 import { GAME_REGEX } from '@/data/games';
-import { buildSgfEntryString, type SgfMatchResult } from './entries';
+import { buildEntryWithoutSgf, buildSgfEntryString, type SgfMatchResult } from './entries';
 import {
   MATCHES_SAME_GAME_AS_OTHER_FILE_REASON,
   MATCHING_GAME_ALREADY_HAS_SGF_REASON,
@@ -17,10 +17,12 @@ import {
   type Color,
   type H9GameRecord,
   type ParsedGameEntry,
+  type RemovedEntry,
   type SgfInfo,
   type SgfPlaces,
   type StageAnalysisResult,
   type UnmatchedEntry,
+  type UpdatedEntry,
   UNKNOWN_PLACE,
 } from './types';
 import { flipColor, normalizePlayerName } from './utils';
@@ -76,26 +78,36 @@ export async function processImplicitStage({
     }
   }
 
-  const existingSgfs = new Set(existingGamesBySgf.keys());
-  const pathsToMatch = force ? sgfPaths : sgfPaths.filter((p) => !existingSgfs.has(p));
+  const currentSgfPaths = new Set(sgfPaths);
+  const existingValidSgfs = new Set([...existingGamesBySgf.keys()].filter((p) => currentSgfPaths.has(p)));
+  const pathsToMatch = force ? sgfPaths : sgfPaths.filter((p) => !existingValidSgfs.has(p));
   const sgfInfos = await loadSgfInfos(sgfDir, pathsToMatch, strict);
 
-  const { matchedEntries, matchedSgfs, unmatchedSgfs, unmatchedEntries } = matchImplicitSgfs({
-    sgfInfos,
-    playersMap,
-    gamesMap,
-    existingGamesById,
-    existingGamesBySgf,
-    force,
-  });
+  const { matchedEntries, matchedSgfs, unmatchedSgfs, unmatchedEntries, updatedEntries, removedEntries } =
+    matchImplicitSgfs({
+      sgfInfos,
+      playersMap,
+      gamesMap,
+      existingGamesById,
+      existingGamesBySgf,
+      currentSgfPaths,
+      force,
+    });
 
   return {
     previousEntries,
-    reusedEntries: force ? [] : previousEntries,
+    reusedEntries: force
+      ? []
+      : previousEntries.filter((entry) => {
+          const parsed = parseEntry(entry);
+          return parsed ? existingValidSgfs.has(parsed.sgf) : false;
+        }),
     matchedEntries,
+    updatedEntries,
+    removedEntries,
     unmatchedEntries,
     totalSgfs: sgfPaths.length,
-    claimedSgfs: [...new Set([...existingSgfs, ...matchedSgfs, ...unmatchedSgfs])],
+    claimedSgfs: [...new Set([...existingValidSgfs, ...matchedSgfs, ...unmatchedSgfs])],
   };
 }
 
@@ -105,6 +117,7 @@ export function matchImplicitSgfs({
   gamesMap,
   existingGamesById,
   existingGamesBySgf,
+  currentSgfPaths,
   force,
 }: {
   sgfInfos: SgfInfo[];
@@ -112,13 +125,24 @@ export function matchImplicitSgfs({
   gamesMap: Map<string, H9GameRecord>;
   existingGamesById: Map<string, ParsedGameEntry>;
   existingGamesBySgf: Map<string, ParsedGameEntry>;
+  currentSgfPaths: Set<string>;
   force: boolean;
-}): { matchedEntries: string[]; unmatchedEntries: UnmatchedEntry[]; matchedSgfs: string[]; unmatchedSgfs: string[] } {
+}): {
+  matchedEntries: string[];
+  updatedEntries: UpdatedEntry[];
+  removedEntries: RemovedEntry[];
+  unmatchedEntries: UnmatchedEntry[];
+  matchedSgfs: string[];
+  unmatchedSgfs: string[];
+} {
   const candidates: ImplicitCandidate[] = [];
   const matchedEntries: string[] = [];
+  const updatedEntries: UpdatedEntry[] = [];
+  const removedEntries: RemovedEntry[] = [];
   const matchedSgfs: string[] = [];
   const unmatchedEntries: UnmatchedEntry[] = [];
   const unmatchedSgfs: string[] = [];
+  const updatedLocalIds = new Set<string>();
 
   for (const sgf of sgfInfos) {
     const places = resolveSgfPlaces(sgf, playersMap);
@@ -152,7 +176,7 @@ export function matchImplicitSgfs({
 
     const yamlGame = existingGamesById.get(localId);
 
-    if (yamlGame && !force) {
+    if (yamlGame && currentSgfPaths.has(yamlGame.sgf) && !force) {
       unmatchedEntries.push(
         buildImplicitUnmatchedEntry(sgf, places, existingGamesBySgf, [MATCHING_GAME_ALREADY_HAS_SGF_REASON])
       );
@@ -185,16 +209,37 @@ export function matchImplicitSgfs({
       continue;
     }
 
-    matchedEntries.push(
-      buildSgfEntryString(
-        buildImplicitMatchResult(candidate.sgf, candidate.places, candidate.props, candidate.h9Record)
-      )
+    const matchedEntry = buildSgfEntryString(
+      buildImplicitMatchResult(candidate.sgf, candidate.places, candidate.props, candidate.h9Record)
     );
+    const yamlGame = existingGamesById.get(candidate.localId);
+
+    if (yamlGame && !currentSgfPaths.has(yamlGame.sgf) && yamlGame.sgf !== candidate.sgf.path) {
+      updatedEntries.push({
+        previousSgf: yamlGame.sgf,
+        nextSgf: candidate.sgf.path,
+        entry: matchedEntry,
+      });
+      updatedLocalIds.add(candidate.localId);
+    }
+
+    matchedEntries.push(matchedEntry);
     matchedSgfs.push(candidate.sgf.path);
+  }
+
+  for (const [localId, yamlGame] of existingGamesById) {
+    if (!currentSgfPaths.has(yamlGame.sgf) && !updatedLocalIds.has(localId)) {
+      removedEntries.push({
+        previousSgf: yamlGame.sgf,
+        entry: buildEntryWithoutSgf(yamlGame.raw),
+      });
+    }
   }
 
   return {
     matchedEntries,
+    updatedEntries,
+    removedEntries,
     matchedSgfs,
     unmatchedEntries,
     unmatchedSgfs,
@@ -228,6 +273,7 @@ function parseEntry(entry: string): ParsedGameEntry | null {
     sgf: sgfMatch[1],
     round,
     props: remaining.replace(/\s+/g, ' ').trim(),
+    raw: entry,
   };
 }
 

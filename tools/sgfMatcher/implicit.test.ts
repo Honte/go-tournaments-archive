@@ -1,8 +1,8 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { makeH9Player } from '@tools/sgfMatcher/mocks';
+import { makeH9Player, makeSgfInfo } from '@tools/sgfMatcher/mocks';
 import { buildPlayersMap, matchImplicitSgfs } from './implicit';
-import type { H9GameRecord, ParsedGameEntry, SgfInfo } from './types';
+import type { H9GameRecord, ParsedGameEntry } from './types';
 import { normalizePlayerName } from './utils';
 
 describe('matchImplicitSgfs', () => {
@@ -41,11 +41,14 @@ describe('matchImplicitSgfs', () => {
       gamesMap,
       existingGamesById: new Map(),
       existingGamesBySgf: new Map(),
+      currentSgfPaths: new Set([sgf.path]),
       force: false,
     });
 
     assert.deepEqual(result, {
       matchedEntries: ['4-1 1:W+0.5 round:8 sgf:1995/8-SungkyunPark-HirataHironori.sgf'],
+      updatedEntries: [],
+      removedEntries: [],
       matchedSgfs: ['1995/8-SungkyunPark-HirataHironori.sgf'],
       unmatchedSgfs: [],
       unmatchedEntries: [],
@@ -70,6 +73,7 @@ describe('matchImplicitSgfs', () => {
       gamesMap,
       existingGamesById: new Map(),
       existingGamesBySgf: new Map(),
+      currentSgfPaths: new Set([sgf.path]),
       force: false,
     });
 
@@ -111,6 +115,7 @@ describe('matchImplicitSgfs', () => {
       gamesMap,
       existingGamesById: new Map(),
       existingGamesBySgf: new Map(),
+      currentSgfPaths: new Set([sgf.path]),
       force: false,
     });
 
@@ -135,6 +140,7 @@ describe('matchImplicitSgfs', () => {
       gamesMap,
       existingGamesById: new Map(),
       existingGamesBySgf: new Map(),
+      currentSgfPaths: new Set([sgf.path]),
       force: false,
     });
 
@@ -158,6 +164,7 @@ describe('matchImplicitSgfs', () => {
       gamesMap,
       existingGamesById: new Map(),
       existingGamesBySgf: new Map(),
+      currentSgfPaths: new Set([sgf.path]),
       force: false,
     });
 
@@ -175,6 +182,7 @@ describe('matchImplicitSgfs', () => {
       gamesMap,
       existingGamesById: new Map([['1-2-1', existingGame]]),
       existingGamesBySgf: new Map([[existingGame.sgf, existingGame]]),
+      currentSgfPaths: new Set([existingGame.sgf, sgf.path]),
       force: false,
     });
 
@@ -193,6 +201,7 @@ describe('matchImplicitSgfs', () => {
       gamesMap,
       existingGamesById: new Map(),
       existingGamesBySgf: new Map(),
+      currentSgfPaths: new Set([first.path, second.path]),
       force: false,
     });
 
@@ -215,6 +224,7 @@ describe('matchImplicitSgfs', () => {
       gamesMap,
       existingGamesById: new Map([['1-2-1', existingGame]]),
       existingGamesBySgf: new Map([[existingGame.sgf, existingGame]]),
+      currentSgfPaths: new Set([existing.path, duplicate.path]),
       force: true,
     });
 
@@ -223,6 +233,56 @@ describe('matchImplicitSgfs', () => {
       result.unmatchedEntries.map((entry) => entry.reasons),
       [['matches same game as other file'], ['matches same game as other file']]
     );
+  });
+
+  it('updates a missing existing SGF without force', () => {
+    const { playersMap, gamesMap } = makeSimpleContext();
+    const replacement = makeSgfInfo({ path: '2025/1-BlackPlayer-WhitePlayer-new.sgf' });
+    const existingGame = makeParsedGameEntry('2025/1-BlackPlayer-WhitePlayer-missing.sgf');
+
+    const result = matchImplicitSgfs({
+      sgfInfos: [replacement],
+      playersMap,
+      gamesMap,
+      existingGamesById: new Map([['1-2-1', existingGame]]),
+      existingGamesBySgf: new Map([[existingGame.sgf, existingGame]]),
+      currentSgfPaths: new Set([replacement.path]),
+      force: false,
+    });
+
+    assert.deepEqual(result.matchedEntries, ['1-2 1:B+R round:1 sgf:2025/1-BlackPlayer-WhitePlayer-new.sgf']);
+    assert.deepEqual(result.updatedEntries, [
+      {
+        previousSgf: '2025/1-BlackPlayer-WhitePlayer-missing.sgf',
+        nextSgf: '2025/1-BlackPlayer-WhitePlayer-new.sgf',
+        entry: '1-2 1:B+R round:1 sgf:2025/1-BlackPlayer-WhitePlayer-new.sgf',
+      },
+    ]);
+    assert.deepEqual(result.removedEntries, []);
+  });
+
+  it('removes a missing existing SGF when no replacement is found', () => {
+    const { playersMap, gamesMap } = makeSimpleContext();
+    const existingGame = makeParsedGameEntry('2025/1-BlackPlayer-WhitePlayer-missing.sgf');
+
+    const result = matchImplicitSgfs({
+      sgfInfos: [],
+      playersMap,
+      gamesMap,
+      existingGamesById: new Map([['1-2-1', existingGame]]),
+      existingGamesBySgf: new Map([[existingGame.sgf, existingGame]]),
+      currentSgfPaths: new Set(),
+      force: false,
+    });
+
+    assert.deepEqual(result.matchedEntries, []);
+    assert.deepEqual(result.updatedEntries, []);
+    assert.deepEqual(result.removedEntries, [
+      {
+        previousSgf: '2025/1-BlackPlayer-WhitePlayer-missing.sgf',
+        entry: '1-2 1:B+R round:1',
+      },
+    ]);
   });
 });
 
@@ -297,24 +357,6 @@ function makeParsedGameEntry(sgf: string): ParsedGameEntry {
     sgf,
     round: 1,
     props: '',
-  };
-}
-
-function makeSgfInfo(overrides: Partial<SgfInfo> = {}): SgfInfo {
-  return {
-    path: '2025/1-BlackPlayer-WhitePlayer.sgf',
-    sgfBlackName: 'Black Player',
-    sgfWhiteName: 'White Player',
-    sgfRound: null,
-    filenameBlackName: 'BlackPlayer',
-    filenameWhiteName: 'WhitePlayer',
-    filenameRound: 1,
-    filenameStage: null,
-    rawResult: 'B+R',
-    cleanResult: 'B+R',
-    resultIssue: null,
-    contentIssue: null,
-    corrupted: false,
-    ...overrides,
+    raw: `1-2 1:B+R round:1 sgf:${sgf}`,
   };
 }

@@ -7,26 +7,23 @@ import type {
 } from '@/schema/input';
 import { GAME_REGEX } from '@/data/games';
 import { getPlayerHash, getPlayerSlug, parsePlayers } from '@/data/players';
+import { buildEntryWithoutSgf, buildSgfEntryString, type SgfMatchResult } from './entries';
 import {
-  buildExplicitEntryWithoutSgf,
-  buildExplicitMatchedString,
-  buildSgfEntryString,
-  type SgfMatchResult,
-} from './entries';
-import {
-  MATCHES_SAME_GAME_AS_OTHER_FILE_REASON,
-  MATCHING_GAME_ALREADY_HAS_SGF_REASON,
   buildCommonUnmatchedReasons,
   findDuplicateKeys,
   formatSgfWinner,
+  MATCHES_SAME_GAME_AS_OTHER_FILE_REASON,
+  MATCHING_GAME_ALREADY_HAS_SGF_REASON,
 } from './match';
 import { loadSgfInfos, parseFilename } from './sgf';
 import {
   type InlineGameUpdate,
+  type RemovedEntry,
   type SgfInfo,
   type StageAnalysisResult,
-  type UnmatchedEntry,
   UNKNOWN_PLACE,
+  type UnmatchedEntry,
+  type UpdatedEntry,
 } from './types';
 import { normalizePlayerName } from './utils';
 
@@ -38,6 +35,8 @@ type ExplicitGameEntry = {
   home: string;
   away: string;
   winner: string;
+  result: string | null;
+  props: string;
   round: number | null;
   index: number;
   sgf: string | null;
@@ -72,19 +71,41 @@ export async function processExplicitStage({
   force: boolean;
   strict: boolean;
 }): Promise<StageAnalysisResult> {
+  const pathsToMatch = getExplicitPathsToMatch(stage, sgfPaths, force);
+  const sgfInfos = await loadSgfInfos(sgfDir, pathsToMatch, strict);
+
+  return matchExplicitSgfs({ tournament, stage, sgfPaths, sgfInfos, force });
+}
+
+export function matchExplicitSgfs({
+  tournament,
+  stage,
+  sgfPaths,
+  sgfInfos,
+  force,
+}: {
+  tournament: InputTournament;
+  stage: ExplicitStage;
+  sgfPaths: string[];
+  sgfInfos: SgfInfo[];
+  force: boolean;
+}): StageAnalysisResult {
   const playersMap = buildYamlPlayersMap(tournament.players);
   const entries = collectExplicitEntries(stage);
   const previousEntries = entries.filter((entry) => entry.sgf).map((entry) => entry.raw);
   const existingSgfs = new Set(entries.flatMap((entry) => (entry.sgf ? [entry.sgf] : [])));
   const stageSgfPaths = sgfPaths.filter((path) => isSgfRelevantToStage(stage, path));
-  const pathsToMatch = force ? stageSgfPaths : stageSgfPaths.filter((path) => !existingSgfs.has(path));
-  const sgfInfos = await loadSgfInfos(sgfDir, pathsToMatch, strict);
+  const currentSgfPaths = new Set(stageSgfPaths);
+  const existingValidSgfs = new Set([...existingSgfs].filter((path) => currentSgfPaths.has(path)));
   const matchCandidates: ExplicitCandidate[] = [];
   const matchedEntries: string[] = [];
+  const updatedEntries: UpdatedEntry[] = [];
+  const removedEntries: RemovedEntry[] = [];
   const unmatchedEntries: UnmatchedEntry[] = [];
   const inlineUpdates: InlineGameUpdate[] = [];
-  const claimedSgfs = new Set(existingSgfs);
+  const claimedSgfs = new Set(existingValidSgfs);
   const clearedEntryPaths = new Set<string>();
+  const updatedEntryPaths = new Set<string>();
 
   for (const sgf of sgfInfos) {
     claimedSgfs.add(sgf.path);
@@ -117,7 +138,7 @@ export async function processExplicitStage({
     const entry = candidates[0];
     const entryKey = entry.path.join('.');
 
-    if (entry.sgf && !force) {
+    if (entry.sgf && currentSgfPaths.has(entry.sgf) && !force) {
       unmatchedEntries.push(buildExplicitUnmatchedEntry(sgf, playerIds, [MATCHING_GAME_ALREADY_HAS_SGF_REASON]));
       continue;
     }
@@ -133,28 +154,76 @@ export async function processExplicitStage({
         buildExplicitUnmatchedEntry(candidate.sgf, candidate.players, [MATCHES_SAME_GAME_AS_OTHER_FILE_REASON])
       );
 
-      if (force && candidate.entry.sgf && !clearedEntryPaths.has(candidate.entryKey)) {
-        inlineUpdates.push({ path: candidate.entry.path, value: buildExplicitEntryWithoutSgf(candidate.entry.raw) });
+      if (
+        force &&
+        candidate.entry.sgf &&
+        currentSgfPaths.has(candidate.entry.sgf) &&
+        !clearedEntryPaths.has(candidate.entryKey)
+      ) {
+        inlineUpdates.push({ path: candidate.entry.path, value: buildEntryWithoutSgf(candidate.entry.raw) });
         clearedEntryPaths.add(candidate.entryKey);
       }
 
       continue;
     }
 
-    const value = buildExplicitMatchedString(candidate.entry.raw, candidate.sgf.path);
+    const value = buildSgfEntryString(buildMatchedExplicitEntry(candidate.entry, candidate.sgf.path));
     inlineUpdates.push({ path: candidate.entry.path, value });
     matchedEntries.push(value);
+
+    if (
+      candidate.entry.sgf &&
+      !currentSgfPaths.has(candidate.entry.sgf) &&
+      candidate.entry.sgf !== candidate.sgf.path
+    ) {
+      updatedEntries.push({
+        previousSgf: candidate.entry.sgf,
+        nextSgf: candidate.sgf.path,
+        entry: value,
+      });
+      updatedEntryPaths.add(candidate.entryKey);
+    }
+  }
+
+  for (const entry of entries) {
+    const entryKey = entry.path.join('.');
+
+    if (
+      entry.sgf &&
+      !currentSgfPaths.has(entry.sgf) &&
+      !updatedEntryPaths.has(entryKey) &&
+      !clearedEntryPaths.has(entryKey)
+    ) {
+      const value = buildEntryWithoutSgf(entry.raw);
+      inlineUpdates.push({ path: entry.path, value });
+      removedEntries.push({ previousSgf: entry.sgf, entry: value });
+      clearedEntryPaths.add(entryKey);
+    }
   }
 
   return {
     previousEntries,
-    reusedEntries: force ? [] : previousEntries,
+    reusedEntries: force
+      ? []
+      : entries.filter((entry) => entry.sgf && existingValidSgfs.has(entry.sgf)).map((entry) => entry.raw),
     matchedEntries,
+    updatedEntries,
+    removedEntries,
     unmatchedEntries,
     totalSgfs: stageSgfPaths.length,
     claimedSgfs: [...claimedSgfs],
     inlineUpdates,
   };
+}
+
+function getExplicitPathsToMatch(stage: ExplicitStage, sgfPaths: string[], force: boolean): string[] {
+  const entries = collectExplicitEntries(stage);
+  const existingSgfs = new Set(entries.flatMap((entry) => (entry.sgf ? [entry.sgf] : [])));
+  const stageSgfPaths = sgfPaths.filter((path) => isSgfRelevantToStage(stage, path));
+  const currentSgfPaths = new Set(stageSgfPaths);
+  const existingValidSgfs = new Set([...existingSgfs].filter((path) => currentSgfPaths.has(path)));
+
+  return force ? stageSgfPaths : stageSgfPaths.filter((path) => !existingValidSgfs.has(path));
 }
 
 function isSgfRelevantToStage(stage: ExplicitStage, sgfPath: string): boolean {
@@ -215,7 +284,7 @@ function parseExplicitEntry(
     return null;
   }
 
-  const { home, away, winner, props } = match.groups!;
+  const { home, away, winner, result, props } = match.groups!;
 
   if ([home, away, winner].some((id) => id.toLowerCase() === 'bye')) {
     return null;
@@ -229,9 +298,23 @@ function parseExplicitEntry(
     home,
     away,
     winner,
+    result: result ?? null,
+    props: buildEntryWithoutSgf(props ?? ''),
     round,
     index,
     sgf: sgfMatch?.[1] ?? null,
+  };
+}
+
+function buildMatchedExplicitEntry(entry: ExplicitGameEntry, sgfPath: string): SgfMatchResult {
+  return {
+    black: entry.home,
+    white: entry.away,
+    winner: entry.winner,
+    result: entry.result,
+    round: null,
+    sgf: sgfPath,
+    props: entry.props,
   };
 }
 

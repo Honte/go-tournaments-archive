@@ -1,174 +1,226 @@
 import assert from 'node:assert/strict';
-import { mkdtemp, rm, writeFile } from 'node:fs/promises';
-import { tmpdir } from 'node:os';
-import path from 'node:path';
 import { describe, it } from 'node:test';
 import type { InputTournament } from '@/schema/input';
-import { processExplicitStage } from './explicit';
+import { makeSgfInfo } from '@tools/sgfMatcher/mocks';
+import { matchExplicitSgfs } from './explicit';
 
-describe('processExplicitStage', () => {
-  it('matches explicit games when SGF color order is reversed from the YAML result', async () => {
-    const root = await mkdtemp(path.join(tmpdir(), 'sgf-matcher-'));
+describe('matchExplicitSgfs', () => {
+  it('matches explicit games when SGF color order is reversed from the YAML result', () => {
+    const tournament: InputTournament = {
+      players: {
+        kc: 'Kamil Chwedyna 4d',
+        ak: 'Arkadiusz Kindziuk 1d',
+      },
+      stages: [],
+    };
+    const sgf = makeSgfInfo({
+      path: '2025-league-1-kc-ak.sgf',
+      sgfBlackName: 'Arkadiusz Kindziuk',
+      sgfWhiteName: 'Kamil Chwedyna',
+      filenameBlackName: 'kc',
+      filenameWhiteName: 'ak',
+      filenameRound: 1,
+      filenameStage: 'league',
+      rawResult: 'W+20.5',
+      cleanResult: 'W+20.5',
+    });
 
-    try {
-      await writeFile(
-        path.join(root, '2025-league-1-kc-ak.sgf'),
-        '(;PB[Arkadiusz Kindziuk]PW[Kamil Chwedyna]RE[W+20.5];B[aa];W[bb])',
-        'utf-8'
-      );
+    const result = matchExplicitSgfs({
+      tournament,
+      stage: {
+        type: 'league',
+        date: '2025-01-01',
+        rounds: [['kc-ak kc:B+20.5']],
+      },
+      sgfPaths: [sgf.path],
+      sgfInfos: [sgf],
+      force: false,
+    });
 
-      const tournament: InputTournament = {
-        players: {
-          kc: 'Kamil Chwedyna 4d',
-          ak: 'Arkadiusz Kindziuk 1d',
-        },
-        stages: [],
-      };
-
-      const result = await processExplicitStage({
-        tournament,
-        stage: {
-          type: 'league',
-          date: '2025-01-01',
-          rounds: [['kc-ak kc:B+20.5']],
-        },
-        sgfPaths: ['2025-league-1-kc-ak.sgf'],
-        sgfDir: root,
-        force: false,
-        strict: false,
-      });
-
-      assert.deepEqual(result.matchedEntries, ['kc-ak kc:B+20.5 sgf:2025-league-1-kc-ak.sgf']);
-      assert.deepEqual(result.unmatchedEntries, []);
-    } finally {
-      await rm(root, { recursive: true, force: true });
-    }
+    assert.deepEqual(result.matchedEntries, ['kc-ak kc:B+20.5 sgf:2025-league-1-kc-ak.sgf']);
+    assert.deepEqual(result.unmatchedEntries, []);
   });
 
-  it('treats conflicting SGF metadata and filename players as unmatched', async () => {
-    const root = await mkdtemp(path.join(tmpdir(), 'sgf-matcher-'));
+  it('treats conflicting SGF metadata and filename players as unmatched', () => {
+    const tournament: InputTournament = {
+      players: {
+        bp: 'Black Player 1d',
+        wp: 'White Player 1d',
+        op: 'Other Player 1d',
+      },
+      stages: [],
+    };
+    const sgf = makeSgfInfo({
+      path: '2025-league-1-bp-wp.sgf',
+      sgfBlackName: 'Black Player',
+      sgfWhiteName: 'Other Player',
+      filenameBlackName: 'bp',
+      filenameWhiteName: 'wp',
+      filenameRound: 1,
+      filenameStage: 'league',
+    });
 
-    try {
-      await writeFile(
-        path.join(root, '2025-league-1-bp-wp.sgf'),
-        '(;PB[Black Player]PW[Other Player]RE[B+R];B[aa];W[bb])',
-        'utf-8'
-      );
+    const result = matchExplicitSgfs({
+      tournament,
+      stage: {
+        type: 'league',
+        date: '2025-01-01',
+        rounds: [['bp-wp bp:B+R']],
+      },
+      sgfPaths: [sgf.path],
+      sgfInfos: [sgf],
+      force: false,
+    });
 
-      const tournament: InputTournament = {
-        players: {
-          bp: 'Black Player 1d',
-          wp: 'White Player 1d',
-          op: 'Other Player 1d',
-        },
-        stages: [],
-      };
-
-      const result = await processExplicitStage({
-        tournament,
-        stage: {
-          type: 'league',
-          date: '2025-01-01',
-          rounds: [['bp-wp bp:B+R']],
-        },
-        sgfPaths: ['2025-league-1-bp-wp.sgf'],
-        sgfDir: root,
-        force: false,
-        strict: false,
-      });
-
-      assert.deepEqual(result.matchedEntries, []);
-      assert.equal(result.unmatchedEntries[0]?.filename, '2025-league-1-bp-wp.sgf');
-      assert.deepEqual(result.unmatchedEntries[0]?.reasons, ['metadata player names conflict with filename']);
-    } finally {
-      await rm(root, { recursive: true, force: true });
-    }
+    assert.deepEqual(result.matchedEntries, []);
+    assert.equal(result.unmatchedEntries[0]?.filename, '2025-league-1-bp-wp.sgf');
+    assert.deepEqual(result.unmatchedEntries[0]?.reasons, ['metadata player names conflict with filename']);
   });
 
-  it('reports new SGFs that match an existing YAML game as unmatched in non-force mode', async () => {
-    const root = await mkdtemp(path.join(tmpdir(), 'sgf-matcher-'));
+  it('reports new SGFs that match an existing YAML game as unmatched in non-force mode', () => {
+    const tournament: InputTournament = {
+      players: {
+        bp: 'Black Player 1d',
+        wp: 'White Player 1d',
+      },
+      stages: [],
+    };
+    const sgf = makeSgfInfo({
+      path: '2025-league-1-bp-wp-copy.sgf',
+      filenameBlackName: 'bp',
+      filenameWhiteName: 'wp',
+      filenameStage: 'league',
+    });
 
-    try {
-      await writeFile(
-        path.join(root, '2025-league-1-bp-wp-copy.sgf'),
-        '(;PB[Black Player]PW[White Player]RE[B+R];B[aa];W[bb])',
-        'utf-8'
-      );
+    const result = matchExplicitSgfs({
+      tournament,
+      stage: {
+        type: 'league',
+        date: '2025-01-01',
+        rounds: [['bp-wp bp:B+R sgf:2025-league-1-bp-wp.sgf']],
+      },
+      sgfPaths: ['2025-league-1-bp-wp.sgf', sgf.path],
+      sgfInfos: [sgf],
+      force: false,
+    });
 
-      const tournament: InputTournament = {
-        players: {
-          bp: 'Black Player 1d',
-          wp: 'White Player 1d',
-        },
-        stages: [],
-      };
-
-      const result = await processExplicitStage({
-        tournament,
-        stage: {
-          type: 'league',
-          date: '2025-01-01',
-          rounds: [['bp-wp bp:B+R sgf:2025-league-1-bp-wp.sgf']],
-        },
-        sgfPaths: ['2025-league-1-bp-wp.sgf', '2025-league-1-bp-wp-copy.sgf'],
-        sgfDir: root,
-        force: false,
-        strict: false,
-      });
-
-      assert.deepEqual(result.matchedEntries, []);
-      assert.deepEqual(result.reusedEntries, ['bp-wp bp:B+R sgf:2025-league-1-bp-wp.sgf']);
-      assert.deepEqual(result.unmatchedEntries[0]?.reasons, ['matching game already has sgf']);
-    } finally {
-      await rm(root, { recursive: true, force: true });
-    }
+    assert.deepEqual(result.matchedEntries, []);
+    assert.deepEqual(result.reusedEntries, ['bp-wp bp:B+R sgf:2025-league-1-bp-wp.sgf']);
+    assert.deepEqual(result.unmatchedEntries[0]?.reasons, ['matching game already has sgf']);
   });
 
-  it('reopens existing YAML games for duplicate matching in force mode', async () => {
-    const root = await mkdtemp(path.join(tmpdir(), 'sgf-matcher-'));
+  it('updates a missing existing SGF without force', () => {
+    const tournament: InputTournament = {
+      players: {
+        bp: 'Black Player 1d',
+        wp: 'White Player 1d',
+      },
+      stages: [],
+    };
+    const sgf = makeSgfInfo({
+      path: '2025-league-1-bp-wp-new.sgf',
+      filenameBlackName: 'bp',
+      filenameWhiteName: 'wp',
+      filenameStage: 'league',
+    });
 
-    try {
-      await writeFile(
-        path.join(root, '2025-league-1-bp-wp.sgf'),
-        '(;PB[Black Player]PW[White Player]RE[B+R];B[aa];W[bb])',
-        'utf-8'
-      );
-      await writeFile(
-        path.join(root, '2025-league-1-bp-wp-copy.sgf'),
-        '(;PB[Black Player]PW[White Player]RE[B+R];B[aa];W[bb])',
-        'utf-8'
-      );
+    const result = matchExplicitSgfs({
+      tournament,
+      stage: {
+        type: 'league',
+        date: '2025-01-01',
+        rounds: [['bp-wp bp:B+R sgf:2025-league-1-bp-wp-missing.sgf']],
+      },
+      sgfPaths: [sgf.path],
+      sgfInfos: [sgf],
+      force: false,
+    });
 
-      const tournament: InputTournament = {
-        players: {
-          bp: 'Black Player 1d',
-          wp: 'White Player 1d',
-        },
-        stages: [],
-      };
+    assert.deepEqual(result.matchedEntries, ['bp-wp bp:B+R sgf:2025-league-1-bp-wp-new.sgf']);
+    assert.deepEqual(result.updatedEntries, [
+      {
+        previousSgf: '2025-league-1-bp-wp-missing.sgf',
+        nextSgf: '2025-league-1-bp-wp-new.sgf',
+        entry: 'bp-wp bp:B+R sgf:2025-league-1-bp-wp-new.sgf',
+      },
+    ]);
+    assert.deepEqual(result.removedEntries, []);
+    assert.deepEqual(result.inlineUpdates, [
+      { path: ['rounds', 0, 0], value: 'bp-wp bp:B+R sgf:2025-league-1-bp-wp-new.sgf' },
+    ]);
+  });
 
-      const result = await processExplicitStage({
-        tournament,
-        stage: {
-          type: 'league',
-          date: '2025-01-01',
-          rounds: [['bp-wp bp:B+R sgf:2025-league-1-bp-wp.sgf']],
-        },
-        sgfPaths: ['2025-league-1-bp-wp.sgf', '2025-league-1-bp-wp-copy.sgf'],
-        sgfDir: root,
-        force: true,
-        strict: false,
-      });
+  it('removes a missing existing SGF when no replacement is found', () => {
+    const tournament: InputTournament = {
+      players: {
+        bp: 'Black Player 1d',
+        wp: 'White Player 1d',
+      },
+      stages: [],
+    };
 
-      assert.deepEqual(result.matchedEntries, []);
-      assert.deepEqual(result.reusedEntries, []);
-      assert.deepEqual(
-        result.unmatchedEntries.map((entry) => entry.reasons),
-        [['matches same game as other file'], ['matches same game as other file']]
-      );
-      assert.deepEqual(result.inlineUpdates, [{ path: ['rounds', 0, 0], value: 'bp-wp bp:B+R' }]);
-    } finally {
-      await rm(root, { recursive: true, force: true });
-    }
+    const result = matchExplicitSgfs({
+      tournament,
+      stage: {
+        type: 'league',
+        date: '2025-01-01',
+        rounds: [['bp-wp bp:B+R yt:https://example.test sgf:2025-league-1-bp-wp-missing.sgf']],
+      },
+      sgfPaths: [],
+      sgfInfos: [],
+      force: false,
+    });
+
+    assert.deepEqual(result.matchedEntries, []);
+    assert.deepEqual(result.updatedEntries, []);
+    assert.deepEqual(result.removedEntries, [
+      {
+        previousSgf: '2025-league-1-bp-wp-missing.sgf',
+        entry: 'bp-wp bp:B+R yt:https://example.test',
+      },
+    ]);
+    assert.deepEqual(result.inlineUpdates, [{ path: ['rounds', 0, 0], value: 'bp-wp bp:B+R yt:https://example.test' }]);
+  });
+
+  it('reopens existing YAML games for duplicate matching in force mode', () => {
+    const tournament: InputTournament = {
+      players: {
+        bp: 'Black Player 1d',
+        wp: 'White Player 1d',
+      },
+      stages: [],
+    };
+    const existing = makeSgfInfo({
+      path: '2025-league-1-bp-wp.sgf',
+      filenameBlackName: 'bp',
+      filenameWhiteName: 'wp',
+      filenameStage: 'league',
+    });
+    const copy = makeSgfInfo({
+      path: '2025-league-1-bp-wp-copy.sgf',
+      filenameBlackName: 'bp',
+      filenameWhiteName: 'wp',
+      filenameStage: 'league',
+    });
+
+    const result = matchExplicitSgfs({
+      tournament,
+      stage: {
+        type: 'league',
+        date: '2025-01-01',
+        rounds: [['bp-wp bp:B+R sgf:2025-league-1-bp-wp.sgf']],
+      },
+      sgfPaths: [existing.path, copy.path],
+      sgfInfos: [existing, copy],
+      force: true,
+    });
+
+    assert.deepEqual(result.matchedEntries, []);
+    assert.deepEqual(result.reusedEntries, []);
+    assert.deepEqual(
+      result.unmatchedEntries.map((entry) => entry.reasons),
+      [['matches same game as other file'], ['matches same game as other file']]
+    );
+    assert.deepEqual(result.inlineUpdates, [{ path: ['rounds', 0, 0], value: 'bp-wp bp:B+R' }]);
   });
 });

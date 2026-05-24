@@ -63,11 +63,6 @@ for (const yamlPath of yamlFiles.sort()) {
     );
     const sgfPaths = allSgfPaths.filter((path) => !claimedSgfs.has(path));
 
-    if (!sgfPaths.length) {
-      logger.log('No sgf files found');
-      continue;
-    }
-
     const stageResult = await processStage({
       tournament: json,
       stage,
@@ -78,7 +73,7 @@ for (const yamlPath of yamlFiles.sort()) {
       strict,
     });
 
-    if (!stageResult.totalSgfs) {
+    if (!stageResult.totalSgfs && !stageResult.previousEntries.length) {
       logger.log('No sgf files found');
       continue;
     }
@@ -99,6 +94,8 @@ for (const yamlPath of yamlFiles.sort()) {
       reused: stageResult.reusedEntries.length,
       matched: stageResult.matchedEntries.length,
       unmatched: stageResult.unmatchedEntries.length,
+      updated: stageResult.updatedEntries.length,
+      removed: stageResult.removedEntries.length,
       totalSgfs: stageResult.totalSgfs,
       unmatchedEntries: stageResult.unmatchedEntries,
     });
