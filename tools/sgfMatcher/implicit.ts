@@ -22,7 +22,6 @@ import {
   type SgfPlaces,
   type StageAnalysisResult,
   type UnmatchedEntry,
-  type UpdatedEntry,
   UNKNOWN_PLACE,
 } from './types';
 import { flipColor, normalizePlayerName } from './utils';
@@ -83,16 +82,15 @@ export async function processImplicitStage({
   const pathsToMatch = force ? sgfPaths : sgfPaths.filter((p) => !existingValidSgfs.has(p));
   const sgfInfos = await loadSgfInfos(sgfDir, pathsToMatch, strict);
 
-  const { matchedEntries, matchedSgfs, unmatchedSgfs, unmatchedEntries, updatedEntries, removedEntries } =
-    matchImplicitSgfs({
-      sgfInfos,
-      playersMap,
-      gamesMap,
-      existingGamesById,
-      existingGamesBySgf,
-      currentSgfPaths,
-      force,
-    });
+  const { matchedEntries, matchedSgfs, unmatchedSgfs, unmatchedEntries, removedEntries } = matchImplicitSgfs({
+    sgfInfos,
+    playersMap,
+    gamesMap,
+    existingGamesById,
+    existingGamesBySgf,
+    currentSgfPaths,
+    force,
+  });
 
   return {
     previousEntries,
@@ -103,7 +101,6 @@ export async function processImplicitStage({
           return parsed ? existingValidSgfs.has(parsed.sgf) : false;
         }),
     matchedEntries,
-    updatedEntries,
     removedEntries,
     unmatchedEntries,
     totalSgfs: sgfPaths.length,
@@ -129,7 +126,6 @@ export function matchImplicitSgfs({
   force: boolean;
 }): {
   matchedEntries: string[];
-  updatedEntries: UpdatedEntry[];
   removedEntries: RemovedEntry[];
   unmatchedEntries: UnmatchedEntry[];
   matchedSgfs: string[];
@@ -137,12 +133,11 @@ export function matchImplicitSgfs({
 } {
   const candidates: ImplicitCandidate[] = [];
   const matchedEntries: string[] = [];
-  const updatedEntries: UpdatedEntry[] = [];
   const removedEntries: RemovedEntry[] = [];
   const matchedSgfs: string[] = [];
   const unmatchedEntries: UnmatchedEntry[] = [];
   const unmatchedSgfs: string[] = [];
-  const updatedLocalIds = new Set<string>();
+  const removedLocalIds = new Set<string>();
 
   for (const sgf of sgfInfos) {
     const places = resolveSgfPlaces(sgf, playersMap);
@@ -215,12 +210,11 @@ export function matchImplicitSgfs({
     const yamlGame = existingGamesById.get(candidate.localId);
 
     if (yamlGame && !currentSgfPaths.has(yamlGame.sgf) && yamlGame.sgf !== candidate.sgf.path) {
-      updatedEntries.push({
+      removedEntries.push({
         previousSgf: yamlGame.sgf,
-        nextSgf: candidate.sgf.path,
-        entry: matchedEntry,
+        entry: yamlGame.raw,
       });
-      updatedLocalIds.add(candidate.localId);
+      removedLocalIds.add(candidate.localId);
     }
 
     matchedEntries.push(matchedEntry);
@@ -228,7 +222,7 @@ export function matchImplicitSgfs({
   }
 
   for (const [localId, yamlGame] of existingGamesById) {
-    if (!currentSgfPaths.has(yamlGame.sgf) && !updatedLocalIds.has(localId)) {
+    if (!currentSgfPaths.has(yamlGame.sgf) && !removedLocalIds.has(localId)) {
       removedEntries.push({
         previousSgf: yamlGame.sgf,
         entry: yamlGame.raw,
@@ -238,7 +232,6 @@ export function matchImplicitSgfs({
 
   return {
     matchedEntries,
-    updatedEntries,
     removedEntries,
     matchedSgfs,
     unmatchedEntries,

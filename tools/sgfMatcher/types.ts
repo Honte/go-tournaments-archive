@@ -61,7 +61,6 @@ export type StageAnalysisResult = {
   previousEntries: string[];
   reusedEntries: string[];
   matchedEntries: string[];
-  updatedEntries: UpdatedEntry[];
   removedEntries: RemovedEntry[];
   unmatchedEntries: UnmatchedEntry[];
   totalSgfs: number;
@@ -72,12 +71,6 @@ export type StageAnalysisResult = {
 export type InlineGameUpdate = {
   path: (string | number)[];
   value: string;
-};
-
-export type UpdatedEntry = {
-  previousSgf: string;
-  nextSgf: string;
-  entry: string;
 };
 
 export type RemovedEntry = {

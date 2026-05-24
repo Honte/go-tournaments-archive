@@ -23,7 +23,6 @@ import {
   type StageAnalysisResult,
   UNKNOWN_PLACE,
   type UnmatchedEntry,
-  type UpdatedEntry,
 } from './types';
 import { normalizePlayerName } from './utils';
 
@@ -99,13 +98,12 @@ export function matchExplicitSgfs({
   const existingValidSgfs = new Set([...existingSgfs].filter((path) => currentSgfPaths.has(path)));
   const matchCandidates: ExplicitCandidate[] = [];
   const matchedEntries: string[] = [];
-  const updatedEntries: UpdatedEntry[] = [];
   const removedEntries: RemovedEntry[] = [];
   const unmatchedEntries: UnmatchedEntry[] = [];
   const inlineUpdates: InlineGameUpdate[] = [];
   const claimedSgfs = new Set(existingValidSgfs);
   const clearedEntryPaths = new Set<string>();
-  const updatedEntryPaths = new Set<string>();
+  const removedEntryPaths = new Set<string>();
 
   for (const sgf of sgfInfos) {
     claimedSgfs.add(sgf.path);
@@ -176,12 +174,11 @@ export function matchExplicitSgfs({
       !currentSgfPaths.has(candidate.entry.sgf) &&
       candidate.entry.sgf !== candidate.sgf.path
     ) {
-      updatedEntries.push({
+      removedEntries.push({
         previousSgf: candidate.entry.sgf,
-        nextSgf: candidate.sgf.path,
-        entry: value,
+        entry: candidate.entry.raw,
       });
-      updatedEntryPaths.add(candidate.entryKey);
+      removedEntryPaths.add(candidate.entryKey);
     }
   }
 
@@ -191,7 +188,7 @@ export function matchExplicitSgfs({
     if (
       entry.sgf &&
       !currentSgfPaths.has(entry.sgf) &&
-      !updatedEntryPaths.has(entryKey) &&
+      !removedEntryPaths.has(entryKey) &&
       !clearedEntryPaths.has(entryKey)
     ) {
       const value = buildEntryWithoutSgf(entry.raw);
@@ -207,7 +204,6 @@ export function matchExplicitSgfs({
       ? []
       : entries.filter((entry) => entry.sgf && existingValidSgfs.has(entry.sgf)).map((entry) => entry.raw),
     matchedEntries,
-    updatedEntries,
     removedEntries,
     unmatchedEntries,
     totalSgfs: stageSgfPaths.length,

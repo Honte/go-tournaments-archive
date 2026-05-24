@@ -109,7 +109,7 @@ describe('matchExplicitSgfs', () => {
     assert.deepEqual(result.unmatchedEntries[0]?.reasons, ['matching game already has sgf']);
   });
 
-  it('updates a missing existing SGF without force', () => {
+  it('matches a replacement SGF and removes the stale SGF without force', () => {
     const tournament: InputTournament = {
       players: {
         bp: 'Black Player 1d',
@@ -137,14 +137,12 @@ describe('matchExplicitSgfs', () => {
     });
 
     assert.deepEqual(result.matchedEntries, ['bp-wp bp:B+R sgf:2025-league-1-bp-wp-new.sgf']);
-    assert.deepEqual(result.updatedEntries, [
+    assert.deepEqual(result.removedEntries, [
       {
         previousSgf: '2025-league-1-bp-wp-missing.sgf',
-        nextSgf: '2025-league-1-bp-wp-new.sgf',
-        entry: 'bp-wp bp:B+R sgf:2025-league-1-bp-wp-new.sgf',
+        entry: 'bp-wp bp:B+R sgf:2025-league-1-bp-wp-missing.sgf',
       },
     ]);
-    assert.deepEqual(result.removedEntries, []);
     assert.deepEqual(result.inlineUpdates, [
       { path: ['rounds', 0, 0], value: 'bp-wp bp:B+R sgf:2025-league-1-bp-wp-new.sgf' },
     ]);
@@ -172,7 +170,6 @@ describe('matchExplicitSgfs', () => {
     });
 
     assert.deepEqual(result.matchedEntries, []);
-    assert.deepEqual(result.updatedEntries, []);
     assert.deepEqual(result.removedEntries, [
       {
         previousSgf: '2025-league-1-bp-wp-missing.sgf',

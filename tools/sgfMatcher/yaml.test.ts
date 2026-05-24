@@ -17,7 +17,6 @@ describe('updateYamlDoc', () => {
       previousEntries: [],
       reusedEntries: ['1-2 1:B+R round:1 sgf:2025/game.sgf'],
       matchedEntries: [],
-      updatedEntries: [],
       removedEntries: [],
       unmatchedEntries: [
         {
@@ -44,7 +43,6 @@ describe('updateYamlDoc', () => {
       previousEntries: [],
       reusedEntries: ['1-2 1:B+R round:1 sgf:2025/game.sgf'],
       matchedEntries: ['3-4 3:W+R round:1 sgf:2025/other.sgf'],
-      updatedEntries: [],
       removedEntries: [],
       unmatchedEntries: [],
       totalSgfs: 2,
@@ -65,7 +63,6 @@ describe('updateYamlDoc', () => {
       previousEntries: [],
       reusedEntries: [],
       matchedEntries: ['kg-mf kg:B+R sgf:1997/game.sgf yt:https://example.test'],
-      updatedEntries: [],
       removedEntries: [],
       unmatchedEntries: [
         {
@@ -103,7 +100,6 @@ describe('updateYamlDoc', () => {
       previousEntries: ['1-2 1:B+R round:1 sgf:2025/missing.sgf'],
       reusedEntries: [],
       matchedEntries: [],
-      updatedEntries: [],
       removedEntries: [
         {
           previousSgf: '2025/missing.sgf',

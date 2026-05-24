@@ -47,7 +47,6 @@ describe('matchImplicitSgfs', () => {
 
     assert.deepEqual(result, {
       matchedEntries: ['4-1 1:W+0.5 round:8 sgf:1995/8-SungkyunPark-HirataHironori.sgf'],
-      updatedEntries: [],
       removedEntries: [],
       matchedSgfs: ['1995/8-SungkyunPark-HirataHironori.sgf'],
       unmatchedSgfs: [],
@@ -235,7 +234,7 @@ describe('matchImplicitSgfs', () => {
     );
   });
 
-  it('updates a missing existing SGF without force', () => {
+  it('matches a replacement SGF and removes the stale SGF without force', () => {
     const { playersMap, gamesMap } = makeSimpleContext();
     const replacement = makeSgfInfo({ path: '2025/1-BlackPlayer-WhitePlayer-new.sgf' });
     const existingGame = makeParsedGameEntry('2025/1-BlackPlayer-WhitePlayer-missing.sgf');
@@ -251,14 +250,12 @@ describe('matchImplicitSgfs', () => {
     });
 
     assert.deepEqual(result.matchedEntries, ['1-2 1:B+R round:1 sgf:2025/1-BlackPlayer-WhitePlayer-new.sgf']);
-    assert.deepEqual(result.updatedEntries, [
+    assert.deepEqual(result.removedEntries, [
       {
         previousSgf: '2025/1-BlackPlayer-WhitePlayer-missing.sgf',
-        nextSgf: '2025/1-BlackPlayer-WhitePlayer-new.sgf',
-        entry: '1-2 1:B+R round:1 sgf:2025/1-BlackPlayer-WhitePlayer-new.sgf',
+        entry: '1-2 1:B+R round:1 sgf:2025/1-BlackPlayer-WhitePlayer-missing.sgf',
       },
     ]);
-    assert.deepEqual(result.removedEntries, []);
   });
 
   it('removes a missing existing SGF when no replacement is found', () => {
@@ -276,7 +273,6 @@ describe('matchImplicitSgfs', () => {
     });
 
     assert.deepEqual(result.matchedEntries, []);
-    assert.deepEqual(result.updatedEntries, []);
     assert.deepEqual(result.removedEntries, [
       {
         previousSgf: '2025/1-BlackPlayer-WhitePlayer-missing.sgf',
