@@ -29,22 +29,16 @@ function buildReasons(sgf: SgfInfo, playerLookup: Map<string, number>): string[]
   }
 
   if (
-    sgf.metadata.blackName === null &&
-    sgf.metadata.whiteName === null &&
-    sgf.fromFilename.blackName === null &&
-    sgf.fromFilename.whiteName === null
+    sgf.sgfBlackName === null &&
+    sgf.sgfWhiteName === null &&
+    sgf.filenameBlackName === null &&
+    sgf.filenameWhiteName === null
   ) {
     reasons.push('no player names found');
   }
 
-  const blackNameReason = buildPlayerNameReason(
-    places.blackPlace,
-    sgf.metadata.blackName ?? sgf.fromFilename.blackName
-  );
-  const whiteNameReason = buildPlayerNameReason(
-    places.whitePlace,
-    sgf.metadata.whiteName ?? sgf.fromFilename.whiteName
-  );
+  const blackNameReason = buildPlayerNameReason(places.blackPlace, sgf.sgfBlackName ?? sgf.filenameBlackName);
+  const whiteNameReason = buildPlayerNameReason(places.whitePlace, sgf.sgfWhiteName ?? sgf.filenameWhiteName);
 
   if (blackNameReason) {
     reasons.push(blackNameReason);

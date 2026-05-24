@@ -1,13 +1,14 @@
+import { buildUnmatchedEntries } from '@tools/sgfMatcher/report';
 import { buildLocalGameId } from '@/libs/h9';
 import { hasSgfFilenameSpaces } from './sgf';
 import {
   type Color,
   type H9GameRecord,
   type ParsedGameEntry,
-  type PlayerNames,
   type SgfInfo,
   type SgfPlaces,
   UNKNOWN_PLACE,
+  type UnmatchedEntry,
 } from './types';
 import { flipColor, normalizePlayerName } from './utils';
 
@@ -20,11 +21,14 @@ export function matchSgfs(
   sgfInfos: SgfInfo[],
   playersMap: Map<string, number>,
   h9gamesMap: Map<string, H9GameRecord>,
-  yamlGames: Map<string, ParsedGameEntry>,
+  yamlGamesById: Map<string, ParsedGameEntry>,
+  yamlGamesBySgf: Map<string, ParsedGameEntry>,
   force?: boolean
-): { matchedEntries: string[]; unmatchedSgfs: SgfInfo[] } {
+): { matchedEntries: string[]; unmatchedEntries: UnmatchedEntry[]; matchedSgfs: string[]; unmatchedSgfs: SgfInfo[] } {
   const matchedEntries: string[] = [];
+  const matchedSgfs: string[] = [];
   const matchedGameIds = new Set<string>();
+
   const unmatchedSgfs: SgfInfo[] = [];
 
   for (const sgf of sgfInfos) {
@@ -33,7 +37,7 @@ export function matchSgfs(
       continue;
     }
 
-    if (sgf.corrupted && (force || !hasSgf(yamlGames, sgf.path))) {
+    if (sgf.corrupted && (force || !hasSgf(yamlGamesById, sgf.path))) {
       unmatchedSgfs.push(sgf);
       continue;
     }
@@ -48,9 +52,8 @@ export function matchSgfs(
       continue;
     }
 
-    const localId =
-      resolveLocalId(sgf.metadata, sgf.round, playersMap, h9gamesMap) ??
-      resolveLocalId(sgf.fromFilename, sgf.round, playersMap, h9gamesMap);
+    const round = getSgfRound(sgf);
+    const localId = resolveLocalId(sgf, round, playersMap, h9gamesMap);
 
     if (!localId) {
       unmatchedSgfs.push(sgf);
@@ -71,7 +74,7 @@ export function matchSgfs(
       continue;
     }
 
-    const yamlGame = yamlGames.get(localId);
+    const yamlGame = yamlGamesById.get(localId);
 
     if (yamlGame && !force) {
       continue;
@@ -88,10 +91,16 @@ export function matchSgfs(
     }
 
     matchedEntries.push(buildGameString(h9Record, sgf, sgfPlaces, yamlGame?.props));
+    matchedSgfs.push(sgf.path);
     matchedGameIds.add(localId);
   }
 
-  return { matchedEntries, unmatchedSgfs };
+  return {
+    matchedEntries,
+    matchedSgfs,
+    unmatchedSgfs,
+    unmatchedEntries: buildUnmatchedEntries(unmatchedSgfs, playersMap, yamlGamesBySgf),
+  };
 }
 
 function lookupPlace(name: string | null, playerLookup: Map<string, number>): number | null {
@@ -99,21 +108,16 @@ function lookupPlace(name: string | null, playerLookup: Map<string, number>): nu
 }
 
 function resolveLocalId(
-  names: PlayerNames,
+  sgf: SgfInfo,
   round: number | null,
   playersMap: Map<string, number>,
   h9gamesMap: Map<string, H9GameRecord>
 ): string | null {
-  const places: number[] = [];
+  const places =
+    resolveLocalIdPlaces(sgf.sgfBlackName, sgf.sgfWhiteName, playersMap) ??
+    resolveLocalIdPlaces(sgf.filenameBlackName, sgf.filenameWhiteName, playersMap);
 
-  for (const name of [names.blackName, names.whiteName]) {
-    const place = lookupPlace(name, playersMap);
-    if (place !== null) {
-      places.push(place);
-    }
-  }
-
-  if (places.length < 2) {
+  if (!places) {
     return null;
   }
 
@@ -138,13 +142,26 @@ function resolveLocalId(
   return null;
 }
 
+function resolveLocalIdPlaces(
+  blackName: string | null,
+  whiteName: string | null,
+  playersMap: Map<string, number>
+): [blackPlace: number, whitePlace: number] | null {
+  const blackPlace = lookupPlace(blackName, playersMap);
+  const whitePlace = lookupPlace(whiteName, playersMap);
+
+  return blackPlace !== null && whitePlace !== null ? [blackPlace, whitePlace] : null;
+}
+
 export function resolveSgfPlaces(sgf: SgfInfo, playerLookup: Map<string, number>): SgfPlaces {
   return {
-    blackPlace:
-      lookupPlace(sgf.metadata.blackName, playerLookup) ?? lookupPlace(sgf.fromFilename.blackName, playerLookup),
-    whitePlace:
-      lookupPlace(sgf.metadata.whiteName, playerLookup) ?? lookupPlace(sgf.fromFilename.whiteName, playerLookup),
+    blackPlace: lookupPlace(sgf.sgfBlackName, playerLookup) ?? lookupPlace(sgf.filenameBlackName, playerLookup),
+    whitePlace: lookupPlace(sgf.sgfWhiteName, playerLookup) ?? lookupPlace(sgf.filenameWhiteName, playerLookup),
   };
+}
+
+export function getSgfRound(sgf: SgfInfo): number | null {
+  return sgf.sgfRound ?? sgf.filenameRound;
 }
 
 export function formatSgfWinner(sgf: SgfInfo, places: SgfPlaces): WinnerPart {

@@ -5,13 +5,20 @@ import type { StageProcessResult, UnmatchedEntry } from './types';
 export function updateYamlDoc(doc: Document, stageIndex: number, stageResult: StageProcessResult): boolean {
   const before = doc.toString({ lineWidth: 0 });
   const stagesPath = ['stages', stageIndex];
-  const matched = [...stageResult.reusedEntries, ...stageResult.matchedEntries].sort(compareEntries);
   const unmatched = stageResult.unmatchedEntries.sort((a, b) => compareEntries(a.line, b.line));
 
-  if (matched.length > 0) {
-    doc.setIn([...stagesPath, 'games'], doc.createNode(matched));
+  if (stageResult.inlineUpdates) {
+    for (const update of stageResult.inlineUpdates) {
+      doc.setIn([...stagesPath, ...update.path], update.value);
+    }
   } else {
-    doc.deleteIn([...stagesPath, 'games']);
+    const matched = [...stageResult.reusedEntries, ...stageResult.matchedEntries].sort(compareEntries);
+
+    if (matched.length > 0) {
+      doc.setIn([...stagesPath, 'games'], doc.createNode(matched));
+    } else {
+      doc.deleteIn([...stagesPath, 'games']);
+    }
   }
 
   if (unmatched.length > 0) {

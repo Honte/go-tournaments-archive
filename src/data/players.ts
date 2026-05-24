@@ -145,7 +145,7 @@ export function createPlayersHandler() {
   }
 }
 
-function getPlayerHash(name: string) {
+export function getPlayerHash(name: string) {
   return name
     .toLowerCase()
     .split(' ')
@@ -153,7 +153,7 @@ function getPlayerHash(name: string) {
     .join(' ');
 }
 
-function getPlayerSlug(hash: string) {
+export function getPlayerSlug(hash: string) {
   const parts = hash.split(' ');
 
   return (

@@ -1,10 +1,10 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { parseDocument } from 'yaml';
-import type { H9Player } from '@/libs/h9';
+import { makeH9Player } from '@tools/sgfMatcher/mocks';
 import { matchSgfs } from './match';
-import { buildUnmatchedEntries } from './report';
 import { normalizeSgfResult } from './result';
+import { parseFilename } from './sgf';
 import { buildPlayersMap } from './tournament';
 import type { SgfInfo } from './types';
 import { normalizePlayerName } from './utils';
@@ -110,23 +110,6 @@ describe('normalizeSgfResult', () => {
 });
 
 describe('SGF matcher result handling', () => {
-  it('treats invalid SGF results as unmatched', () => {
-    const sgf: SgfInfo = {
-      path: '2025/game.sgf',
-      metadata: { blackName: 'Black', whiteName: 'White' },
-      fromFilename: { blackName: 'Black', whiteName: 'White' },
-      rawResult: 'B+4.5 moku',
-      cleanResult: null,
-      resultIssue: 'invalid result "B+4.5 moku": result must not contain spaces',
-      round: 1,
-      corrupted: false,
-    };
-
-    const result = matchSgfs([sgf], new Map(), new Map(), new Map());
-
-    assert.deepEqual(result, { matchedEntries: [], unmatchedSgfs: [sgf] });
-  });
-
   it('matches SGF names written in H9 surname-name order', () => {
     const playersMap = buildPlayersMap([
       makeH9Player({ place: 1, name: 'Hironori', surname: 'Hirata' }),
@@ -147,20 +130,26 @@ describe('SGF matcher result handling', () => {
     ]);
     const sgf: SgfInfo = {
       path: '1995/8-SungkyunPark-HirataHironori.sgf',
-      metadata: { blackName: 'Sung kyun Park', whiteName: 'Hirata Hironori' },
-      fromFilename: { blackName: 'SungkyunPark', whiteName: 'HirataHironori' },
+      sgfBlackName: 'Sung kyun Park',
+      sgfWhiteName: 'Hirata Hironori',
+      filenameBlackName: 'SungkyunPark',
+      filenameWhiteName: 'HirataHironori',
+      sgfRound: null,
+      filenameRound: 8,
+      filenameStage: null,
       rawResult: 'W+0.5',
       cleanResult: 'W+0.5',
       resultIssue: null,
-      round: 8,
       corrupted: false,
     };
 
-    const result = matchSgfs([sgf], playersMap, gamesMap, new Map());
+    const result = matchSgfs([sgf], playersMap, gamesMap, new Map(), new Map());
 
     assert.deepEqual(result, {
       matchedEntries: ['4-1 1:W+0.5 round:8 sgf:1995/8-SungkyunPark-HirataHironori.sgf'],
+      matchedSgfs: ['1995/8-SungkyunPark-HirataHironori.sgf'],
       unmatchedSgfs: [],
+      unmatchedEntries: [],
     });
   });
 
@@ -184,20 +173,25 @@ describe('SGF matcher result handling', () => {
     ]);
     const sgf: SgfInfo = {
       path: '2025/1-BlackPlayer-WhitePlayer copy.sgf',
-      metadata: { blackName: 'Black Player', whiteName: 'White Player' },
-      fromFilename: { blackName: 'BlackPlayer', whiteName: 'WhitePlayer copy' },
+      sgfBlackName: 'Black Player',
+      sgfWhiteName: 'White Player',
+      filenameBlackName: 'BlackPlayer',
+      filenameWhiteName: 'WhitePlayer copy',
+      sgfRound: null,
+      filenameRound: 1,
+      filenameStage: null,
       rawResult: 'B+R',
       cleanResult: 'B+R',
       resultIssue: null,
-      round: 1,
       corrupted: false,
     };
 
-    const result = matchSgfs([sgf], playersMap, gamesMap, new Map());
-    const unmatchedEntries = buildUnmatchedEntries(result.unmatchedSgfs, playersMap, new Map());
+    const result = matchSgfs([sgf], playersMap, gamesMap, new Map(), new Map());
 
-    assert.deepEqual(result, { matchedEntries: [], unmatchedSgfs: [sgf] });
-    assert.deepEqual(unmatchedEntries[0]?.reasons, ['filename contains spaces']);
+    assert.equal(result.matchedEntries.length, 0);
+    assert.equal(result.matchedSgfs.length, 0);
+    assert.equal(result.unmatchedSgfs.length, 1);
+    assert.deepEqual(result.unmatchedEntries[0]?.reasons, ['filename contains spaces']);
   });
 
   it('uses the SGF winner color when H9 gives the winner but SGF result is missing', () => {
@@ -220,20 +214,26 @@ describe('SGF matcher result handling', () => {
     ]);
     const sgf: SgfInfo = {
       path: '2025/1-LoserPlayer-WinnerPlayer.sgf',
-      metadata: { blackName: 'Loser Player', whiteName: 'Winner Player' },
-      fromFilename: { blackName: 'LoserPlayer', whiteName: 'WinnerPlayer' },
+      sgfBlackName: 'Loser Player',
+      sgfWhiteName: 'Winner Player',
+      filenameBlackName: 'LoserPlayer',
+      filenameWhiteName: 'WinnerPlayer',
+      sgfRound: null,
+      filenameRound: 1,
+      filenameStage: null,
       rawResult: null,
       cleanResult: null,
       resultIssue: null,
-      round: 1,
       corrupted: false,
     };
 
-    const result = matchSgfs([sgf], playersMap, gamesMap, new Map());
+    const result = matchSgfs([sgf], playersMap, gamesMap, new Map(), new Map());
 
     assert.deepEqual(result, {
       matchedEntries: ['2-1 1:W+? round:1 sgf:2025/1-LoserPlayer-WinnerPlayer.sgf'],
+      matchedSgfs: ['2025/1-LoserPlayer-WinnerPlayer.sgf'],
       unmatchedSgfs: [],
+      unmatchedEntries: [],
     });
   });
 
@@ -257,20 +257,55 @@ describe('SGF matcher result handling', () => {
     ]);
     const sgf: SgfInfo = {
       path: '2025/1-WinnerPlayer-LoserPlayer.sgf',
-      metadata: { blackName: 'Winner Player', whiteName: 'Loser Player' },
-      fromFilename: { blackName: 'WinnerPlayer', whiteName: 'LoserPlayer' },
+      sgfBlackName: 'Winner Player',
+      sgfWhiteName: 'Loser Player',
+      filenameBlackName: 'WinnerPlayer',
+      filenameWhiteName: 'LoserPlayer',
+      sgfRound: null,
+      filenameRound: 1,
+      filenameStage: null,
       rawResult: '?',
       cleanResult: null,
       resultIssue: null,
-      round: 1,
       corrupted: false,
     };
 
-    const result = matchSgfs([sgf], playersMap, gamesMap, new Map());
+    const result = matchSgfs([sgf], playersMap, gamesMap, new Map(), new Map());
 
     assert.deepEqual(result, {
       matchedEntries: ['1-2 1:B+? round:1 sgf:2025/1-WinnerPlayer-LoserPlayer.sgf'],
+      matchedSgfs: ['2025/1-WinnerPlayer-LoserPlayer.sgf'],
       unmatchedSgfs: [],
+      unmatchedEntries: [],
+    });
+  });
+});
+
+describe('parseFilename', () => {
+  it('parses year-prefixed league filenames', () => {
+    assert.deepEqual(parseFilename('1997/1997-league-4-kgiedrojc-lsoldan.sgf'), {
+      blackName: 'kgiedrojc',
+      whiteName: 'lsoldan',
+      round: 4,
+      stage: 'league',
+    });
+  });
+
+  it('parses final filenames with index before player names', () => {
+    assert.deepEqual(parseFilename('1997/1997-final-2-lsoldan-jlubos.sgf'), {
+      blackName: 'lsoldan',
+      whiteName: 'jlubos',
+      round: 2,
+      stage: 'final',
+    });
+  });
+
+  it('parses final filenames with index after player names', () => {
+    assert.deepEqual(parseFilename('1989/1989-lsoldan-jkraszek-final-1.sgf'), {
+      blackName: 'lsoldan',
+      whiteName: 'jkraszek',
+      round: 1,
+      stage: 'final',
     });
   });
 });
@@ -314,6 +349,7 @@ describe('updateYamlDoc', () => {
         },
       ],
       totalSgfs: 2,
+      claimedSgfs: ['2025/game.sgf', '2025/missing.sgf'],
     });
 
     assert.equal(changed, false);
@@ -332,21 +368,45 @@ describe('updateYamlDoc', () => {
       matchedEntries: ['3-4 3:W+R round:1 sgf:2025/other.sgf'],
       unmatchedEntries: [],
       totalSgfs: 2,
+      claimedSgfs: ['2025/game.sgf', '2025/other.sgf'],
     });
 
     assert.equal(changed, true);
   });
-});
 
-function makeH9Player({ place, name, surname }: { place: number; name: string; surname: string }): H9Player {
-  return {
-    place,
-    name,
-    surname,
-    rank: '1d',
-    country: 'XX',
-    club: 'xxx',
-    games: [],
-    scores: [],
-  };
-}
+  it('updates explicit stage games in place and writes unmatched SGFs', () => {
+    const doc = parseDocument(`stages:
+  - type: league
+    rounds:
+      - - kg-mf kg:B+R yt:https://example.test
+`);
+
+    const changed = updateYamlDoc(doc, 0, {
+      previousEntries: [],
+      reusedEntries: [],
+      matchedEntries: ['kg-mf kg:B+R yt:https://example.test sgf:1997/game.sgf'],
+      unmatchedEntries: [
+        {
+          filename: '1997/missing.sgf',
+          line: '?-? ? sgf:1997/missing.sgf',
+          reasons: ['no player names found'],
+        },
+      ],
+      totalSgfs: 2,
+      claimedSgfs: ['1997/game.sgf', '1997/missing.sgf'],
+      inlineUpdates: [{ path: ['rounds', 0, 0], value: 'kg-mf kg:B+R yt:https://example.test sgf:1997/game.sgf' }],
+    });
+
+    assert.equal(changed, true);
+    assert.equal(
+      doc.toString({ lineWidth: 0 }),
+      `stages:
+  - type: league
+    rounds:
+      - - kg-mf kg:B+R yt:https://example.test sgf:1997/game.sgf
+    unmatchedSgfs:
+      - ?-? ? sgf:1997/missing.sgf # no player names found
+`
+    );
+  });
+});

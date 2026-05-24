@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import type { H9Player } from '@/libs/h9';
+import { makeH9Player } from '@tools/sgfMatcher/mocks';
 import { matchSgfs } from './match';
 import { buildUnmatchedEntries } from './report';
 import { extractSgfInfo } from './sgf';
@@ -30,13 +30,14 @@ describe('extractSgfInfo', () => {
       ],
     ]);
 
-    const result = matchSgfs([sgf], playersMap, gamesMap, new Map());
-    const unmatchedEntries = buildUnmatchedEntries(result.unmatchedSgfs, playersMap, new Map());
+    const result = matchSgfs([sgf], playersMap, gamesMap, new Map(), new Map());
 
     assert.equal(sgf.corrupted, false);
     assert.equal(sgf.contentIssue, 'multiple longest branches');
-    assert.deepEqual(result, { matchedEntries: [], unmatchedSgfs: [sgf] });
-    assert.deepEqual(unmatchedEntries[0]?.reasons, ['multiple longest branches']);
+    assert.equal(result.matchedEntries.length, 0);
+    assert.equal(result.matchedSgfs.length, 0);
+    assert.equal(result.unmatchedSgfs.length, 1);
+    assert.deepEqual(result.unmatchedEntries[0]?.reasons, ['multiple longest branches']);
   });
 
   it('allows longer side branches when strict mode is disabled', () => {
@@ -62,7 +63,7 @@ describe('extractSgfInfo', () => {
       ],
     ]);
 
-    const result = matchSgfs([sgf], playersMap, gamesMap, new Map());
+    const result = matchSgfs([sgf], playersMap, gamesMap, new Map(), new Map());
 
     assert.equal(sgf.contentIssue, null);
     assert.equal(result.matchedEntries.length, 1);
@@ -93,11 +94,13 @@ describe('extractSgfInfo', () => {
       ],
     ]);
 
-    const result = matchSgfs([sgf], playersMap, gamesMap, new Map());
+    const result = matchSgfs([sgf], playersMap, gamesMap, new Map(), new Map());
     const unmatchedEntries = buildUnmatchedEntries(result.unmatchedSgfs, playersMap, new Map());
 
     assert.equal(sgf.contentIssue, 'longest branch is not main branch');
-    assert.deepEqual(result, { matchedEntries: [], unmatchedSgfs: [sgf] });
+    assert.equal(result.matchedEntries.length, 0);
+    assert.equal(result.matchedSgfs.length, 0);
+    assert.equal(result.unmatchedSgfs.length, 1);
     assert.deepEqual(unmatchedEntries[0]?.reasons, ['longest branch is not main branch']);
   });
 
@@ -125,22 +128,8 @@ describe('extractSgfInfo', () => {
       ],
     ]);
 
-    const result = matchSgfs([sgf], playersMap, gamesMap, new Map());
-    const unmatchedEntries = buildUnmatchedEntries(result.unmatchedSgfs, playersMap, new Map());
+    const result = matchSgfs([sgf], playersMap, gamesMap, new Map(), new Map());
 
-    assert.deepEqual(unmatchedEntries[0]?.reasons, ['longest branch is not main branch']);
+    assert.deepEqual(result.unmatchedEntries[0]?.reasons, ['longest branch is not main branch']);
   });
 });
-
-function makeH9Player({ place, name, surname }: { place: number; name: string; surname: string }): H9Player {
-  return {
-    place,
-    name,
-    surname,
-    rank: '1d',
-    country: 'XX',
-    club: 'xxx',
-    games: [],
-    scores: [],
-  };
-}

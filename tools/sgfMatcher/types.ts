@@ -2,20 +2,19 @@ export const UNKNOWN_PLACE = '?' as const;
 
 export type Color = 'black' | 'white' | undefined;
 
-export type PlayerNames = {
-  blackName: string | null;
-  whiteName: string | null;
-};
-
 export type SgfInfo = {
   path: string;
-  metadata: PlayerNames;
-  fromFilename: PlayerNames;
+  sgfBlackName: string | null;
+  sgfWhiteName: string | null;
+  sgfRound: number | null;
+  filenameBlackName: string | null;
+  filenameWhiteName: string | null;
+  filenameRound: number | null;
+  filenameStage: string | null;
   rawResult: string | null;
   cleanResult: string | null;
   resultIssue: string | null;
   contentIssue?: string | null;
-  round: number | null;
   corrupted: boolean;
 };
 
@@ -61,4 +60,11 @@ export type StageProcessResult = {
   matchedEntries: string[];
   unmatchedEntries: UnmatchedEntry[];
   totalSgfs: number;
+  claimedSgfs: string[];
+  inlineUpdates?: InlineGameUpdate[];
+};
+
+export type InlineGameUpdate = {
+  path: (string | number)[];
+  value: string;
 };

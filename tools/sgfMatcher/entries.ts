@@ -1,6 +1,6 @@
 import { buildLocalGameId } from '@/libs/h9';
 import { GAME_REGEX } from '@/data/games';
-import { formatSgfWinner, resolveSgfPlaces } from './match';
+import { formatSgfWinner, getSgfRound, resolveSgfPlaces } from './match';
 import { parseFilename } from './sgf';
 import { type ParsedGameEntry, type SgfInfo, UNKNOWN_PLACE } from './types';
 
@@ -10,11 +10,12 @@ const ROUND_REGEX = /\bround:(\d+)/;
 export function buildUnmatchedString(sgf: SgfInfo, playerLookup: Map<string, number>, props?: string): string {
   const places = resolveSgfPlaces(sgf, playerLookup);
   const { winnerPlace, resultStr } = formatSgfWinner(sgf, places);
+  const round = getSgfRound(sgf);
 
   const black = places.blackPlace ?? UNKNOWN_PLACE;
   const white = places.whitePlace ?? UNKNOWN_PLACE;
   const winnerPart = resultStr ? `${winnerPlace}:${resultStr}` : String(winnerPlace);
-  const roundPart = sgf.round !== null ? ` round:${sgf.round}` : '';
+  const roundPart = round !== null ? ` round:${round}` : '';
 
   return `${black}-${white} ${winnerPart}${roundPart} sgf:${sgf.path} ${props ?? ''}`.trim();
 }
