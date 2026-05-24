@@ -3,10 +3,10 @@ import { readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import fg from 'fast-glob';
 import { parseDocument } from 'yaml';
-import type { InputTournament, InputTournamentStage } from '@/schema/input';
+import type { InputTournament } from '@/schema/input';
 import { readCliParams } from '@tools/cli';
 import { createLogger } from '@tools/sgfMatcher/logger';
-import { printDryRunReport, printStageReport, printSummary } from './report';
+import { printStageReport, printSummary } from './report';
 import { findSgfs } from './sgf';
 import { processStage } from './stage';
 import type { StageResult } from './types';
@@ -52,25 +52,19 @@ for (const yamlPath of yamlFiles.sort()) {
   const yamlContent = await readFile(yamlPath, 'utf-8');
   const doc = parseDocument(yamlContent);
   const json = doc.toJSON() as InputTournament;
-  const tournaments = json.stages.filter((s): s is InputTournamentStage => s.type === 'tournament');
-
-  if (!tournaments.length) {
-    logger.error('No tournament stages found.');
-    logger.print(verbose);
-    continue;
-  }
+  const claimedSgfs = new Set<string>();
 
   let yamlModified = false;
 
-  for (const stage of tournaments) {
-    const sgfPaths = await findSgfs(SGF_DIR, stage.dir ?? String(year));
-
-    if (!sgfPaths.length) {
-      logger.log('No sgf files found');
-      continue;
-    }
+  for (const [stageIndex, stage] of json.stages.entries()) {
+    const allSgfPaths = await findSgfs(
+      SGF_DIR,
+      stage.type === 'tournament' ? (stage.dir ?? String(year)) : String(year)
+    );
+    const sgfPaths = allSgfPaths.filter((path) => !claimedSgfs.has(path));
 
     const stageResult = await processStage({
+      tournament: json,
       stage,
       sgfPaths,
       dataDir: DATA_DIR,
@@ -79,11 +73,19 @@ for (const yamlPath of yamlFiles.sort()) {
       strict,
     });
 
+    if (!stageResult.totalSgfs && !stageResult.previousEntries.length) {
+      logger.log('No sgf files found');
+      continue;
+    }
+
     printStageReport(logger, stageResult);
-    printDryRunReport(logger, stageResult, dry);
 
     if (!dry) {
-      yamlModified = updateYamlDoc(doc, json.stages.indexOf(stage), stageResult) || yamlModified;
+      yamlModified = updateYamlDoc(doc, stageIndex, stageResult) || yamlModified;
+    }
+
+    for (const sgf of stageResult.claimedSgfs) {
+      claimedSgfs.add(sgf);
     }
 
     results.push({
@@ -91,6 +93,7 @@ for (const yamlPath of yamlFiles.sort()) {
       reused: stageResult.reusedEntries.length,
       matched: stageResult.matchedEntries.length,
       unmatched: stageResult.unmatchedEntries.length,
+      removed: stageResult.removedEntries.length,
       totalSgfs: stageResult.totalSgfs,
       unmatchedEntries: stageResult.unmatchedEntries,
     });

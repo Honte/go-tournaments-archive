@@ -1,150 +1,25 @@
-import { buildLocalGameId } from '@/libs/h9';
 import { hasSgfFilenameSpaces } from './sgf';
-import {
-  type Color,
-  type H9GameRecord,
-  type ParsedGameEntry,
-  type PlayerNames,
-  type SgfInfo,
-  type SgfPlaces,
-  UNKNOWN_PLACE,
-} from './types';
-import { flipColor, normalizePlayerName } from './utils';
+import { type SgfInfo, type SgfPlaces, UNKNOWN_PLACE, type UnknownPlace } from './types';
+
+export const MATCHING_GAME_ALREADY_HAS_SGF_REASON = 'matching game already has sgf';
+export const MATCHES_SAME_GAME_AS_OTHER_FILE_REASON = 'matches same game as other file';
 
 export type WinnerPart = {
-  winnerPlace: number | typeof UNKNOWN_PLACE;
+  winnerPlace: number | UnknownPlace;
   resultStr: string | null;
 };
 
-export function matchSgfs(
-  sgfInfos: SgfInfo[],
-  playersMap: Map<string, number>,
-  h9gamesMap: Map<string, H9GameRecord>,
-  yamlGames: Map<string, ParsedGameEntry>,
-  force?: boolean
-): { matchedEntries: string[]; unmatchedSgfs: SgfInfo[] } {
-  const matchedEntries: string[] = [];
-  const matchedGameIds = new Set<string>();
-  const unmatchedSgfs: SgfInfo[] = [];
+export type ResolvedSgfPlayers<T> = {
+  black: T | null;
+  white: T | null;
+};
 
-  for (const sgf of sgfInfos) {
-    if (hasSgfFilenameSpaces(sgf.path)) {
-      unmatchedSgfs.push(sgf);
-      continue;
-    }
+export type DuplicateCandidate = {
+  key: string;
+};
 
-    if (sgf.corrupted && (force || !hasSgf(yamlGames, sgf.path))) {
-      unmatchedSgfs.push(sgf);
-      continue;
-    }
-
-    if (sgf.resultIssue) {
-      unmatchedSgfs.push(sgf);
-      continue;
-    }
-
-    if (sgf.contentIssue) {
-      unmatchedSgfs.push(sgf);
-      continue;
-    }
-
-    const localId =
-      resolveLocalId(sgf.metadata, sgf.round, playersMap, h9gamesMap) ??
-      resolveLocalId(sgf.fromFilename, sgf.round, playersMap, h9gamesMap);
-
-    if (!localId) {
-      unmatchedSgfs.push(sgf);
-      continue;
-    }
-
-    if (matchedGameIds.has(localId)) {
-      console.warn(`  Warning: duplicate match for localId ${localId}: ${sgf.path} (already matched)`);
-      unmatchedSgfs.push(sgf);
-      continue;
-    }
-
-    const h9Record = h9gamesMap.get(localId);
-
-    if (!h9Record) {
-      console.warn(`  Warning: cannot find H9 record for ${localId}: ${sgf.path}`);
-      unmatchedSgfs.push(sgf);
-      continue;
-    }
-
-    const yamlGame = yamlGames.get(localId);
-
-    if (yamlGame && !force) {
-      continue;
-    }
-
-    const sgfPlaces = resolveSgfPlaces(sgf, playersMap);
-
-    if (!verifyColors(h9Record, sgfPlaces)) {
-      console.warn(
-        `  Warning: color mismatch for ${sgf.path} — H9 says place ${h9Record.homePlace} played ${h9Record.homeColor}, SGF disagrees`
-      );
-      unmatchedSgfs.push(sgf);
-      continue;
-    }
-
-    matchedEntries.push(buildGameString(h9Record, sgf, sgfPlaces, yamlGame?.props));
-    matchedGameIds.add(localId);
-  }
-
-  return { matchedEntries, unmatchedSgfs };
-}
-
-function lookupPlace(name: string | null, playerLookup: Map<string, number>): number | null {
-  return name ? (playerLookup.get(normalizePlayerName(name)) ?? null) : null;
-}
-
-function resolveLocalId(
-  names: PlayerNames,
-  round: number | null,
-  playersMap: Map<string, number>,
-  h9gamesMap: Map<string, H9GameRecord>
-): string | null {
-  const places: number[] = [];
-
-  for (const name of [names.blackName, names.whiteName]) {
-    const place = lookupPlace(name, playersMap);
-    if (place !== null) {
-      places.push(place);
-    }
-  }
-
-  if (places.length < 2) {
-    return null;
-  }
-
-  if (round !== null) {
-    return buildLocalGameId(places[0], places[1], round);
-  }
-
-  const candidates: string[] = [];
-  for (const [key, record] of h9gamesMap) {
-    if (
-      (record.homePlace === places[0] && record.awayPlace === places[1]) ||
-      (record.homePlace === places[1] && record.awayPlace === places[0])
-    ) {
-      candidates.push(key);
-    }
-  }
-
-  if (candidates.length === 1) {
-    return candidates[0];
-  }
-
-  return null;
-}
-
-export function resolveSgfPlaces(sgf: SgfInfo, playerLookup: Map<string, number>): SgfPlaces {
-  return {
-    blackPlace:
-      lookupPlace(sgf.metadata.blackName, playerLookup) ?? lookupPlace(sgf.fromFilename.blackName, playerLookup),
-    whitePlace:
-      lookupPlace(sgf.metadata.whiteName, playerLookup) ?? lookupPlace(sgf.fromFilename.whiteName, playerLookup),
-  };
+export function getSgfRound(sgf: SgfInfo): number | null {
+  return sgf.sgfRound ?? sgf.filenameRound;
 }
 
 export function formatSgfWinner(sgf: SgfInfo, places: SgfPlaces): WinnerPart {
@@ -163,79 +38,58 @@ export function formatSgfWinner(sgf: SgfInfo, places: SgfPlaces): WinnerPart {
   };
 }
 
-function verifyColors(h9Record: H9GameRecord, sgfPlaces: SgfPlaces): boolean {
-  if (!h9Record.homeColor) {
-    return true;
+export function buildCommonUnmatchedReasons<T>(sgf: SgfInfo, players: ResolvedSgfPlayers<T>): string[] {
+  if (sgf.corrupted) {
+    return ['corrupted SGF'];
   }
 
-  const awayColor = flipColor(h9Record.homeColor);
-  const { blackPlace, whitePlace } = sgfPlaces;
+  const reasons: string[] = [];
 
-  if (blackPlace === h9Record.homePlace || whitePlace === h9Record.homePlace) {
-    const sgfHomeColor: Color = blackPlace === h9Record.homePlace ? 'black' : 'white';
-    return sgfHomeColor === h9Record.homeColor;
+  if (hasSgfFilenameSpaces(sgf.path)) {
+    reasons.push('filename contains spaces');
   }
 
-  if (blackPlace === h9Record.awayPlace || whitePlace === h9Record.awayPlace) {
-    const sgfAwayColor: Color = blackPlace === h9Record.awayPlace ? 'black' : 'white';
-    return sgfAwayColor === awayColor;
+  if (
+    sgf.sgfBlackName === null &&
+    sgf.sgfWhiteName === null &&
+    sgf.filenameBlackName === null &&
+    sgf.filenameWhiteName === null
+  ) {
+    reasons.push('no player names found');
   }
 
-  return true;
+  const blackReason = buildPlayerNameReason(players.black, sgf.sgfBlackName ?? sgf.filenameBlackName);
+  const whiteReason = buildPlayerNameReason(players.white, sgf.sgfWhiteName ?? sgf.filenameWhiteName);
+
+  if (blackReason) {
+    reasons.push(blackReason);
+  }
+
+  if (whiteReason) {
+    reasons.push(whiteReason);
+  }
+
+  if (sgf.resultIssue) {
+    reasons.push(sgf.resultIssue);
+  }
+
+  if (sgf.contentIssue) {
+    reasons.push(sgf.contentIssue);
+  }
+
+  return reasons;
 }
 
-function getSgfResultColor(place: number, sgfPlaces: SgfPlaces): 'B' | 'W' | null {
-  if (sgfPlaces.blackPlace === place) {
-    return 'B';
+export function findDuplicateKeys(candidates: DuplicateCandidate[]): Set<string> {
+  const counts = new Map<string, number>();
+
+  for (const { key } of candidates) {
+    counts.set(key, (counts.get(key) ?? 0) + 1);
   }
 
-  if (sgfPlaces.whitePlace === place) {
-    return 'W';
-  }
-
-  return null;
+  return new Set([...counts.entries()].filter(([, count]) => count > 1).map(([key]) => key));
 }
 
-function getH9ResultColor(color: Color): 'B' | 'W' | null {
-  if (color === 'black') {
-    return 'B';
-  }
-
-  if (color === 'white') {
-    return 'W';
-  }
-
-  return null;
-}
-
-function buildGameString(h9Record: H9GameRecord, sgf: SgfInfo, sgfPlaces: SgfPlaces, props?: string): string {
-  const blackPlace = sgfPlaces.blackPlace ?? h9Record.homePlace;
-  const whitePlace = blackPlace === h9Record.homePlace ? h9Record.awayPlace : h9Record.homePlace;
-  const places = `${blackPlace}-${whitePlace}`;
-
-  let { winnerPlace, resultStr } = formatSgfWinner(sgf, sgfPlaces);
-
-  if (resultStr === null && h9Record.winnerPlace !== null) {
-    winnerPlace = h9Record.winnerPlace;
-
-    const resultColor = getSgfResultColor(winnerPlace, sgfPlaces) ?? getH9ResultColor(h9Record.winnerColor);
-
-    if (resultColor) {
-      resultStr = `${resultColor}+?`;
-    }
-  }
-
-  const winnerPart = resultStr ? `${winnerPlace}:${resultStr}` : String(winnerPlace);
-
-  return `${places} ${winnerPart} round:${h9Record.round} sgf:${sgf.path} ${props || ''}`.trim();
-}
-
-function hasSgf(parsedGamesMap: Map<string, ParsedGameEntry>, sgf: string) {
-  for (const entry of parsedGamesMap.values()) {
-    if (entry.sgf === sgf) {
-      return true;
-    }
-  }
-
-  return false;
+function buildPlayerNameReason<T>(id: T | null, name: string | null): string | null {
+  return id === null && name ? `player "${name}" not found` : null;
 }

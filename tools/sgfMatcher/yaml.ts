@@ -1,17 +1,23 @@
 import { type Document, Scalar, YAMLSeq } from 'yaml';
-import { compareEntries } from './entries';
-import type { StageProcessResult, UnmatchedEntry } from './types';
+import type { StageAnalysisResult, UnmatchedEntry } from './types';
 
-export function updateYamlDoc(doc: Document, stageIndex: number, stageResult: StageProcessResult): boolean {
+export function updateYamlDoc(doc: Document, stageIndex: number, stageResult: StageAnalysisResult): boolean {
   const before = doc.toString({ lineWidth: 0 });
   const stagesPath = ['stages', stageIndex];
-  const matched = [...stageResult.reusedEntries, ...stageResult.matchedEntries].sort(compareEntries);
-  const unmatched = stageResult.unmatchedEntries.sort((a, b) => compareEntries(a.line, b.line));
+  const unmatched = stageResult.unmatchedEntries.sort((a, b) => compareYamlEntryStrings(a.line, b.line));
 
-  if (matched.length > 0) {
-    doc.setIn([...stagesPath, 'games'], doc.createNode(matched));
+  if (stageResult.inlineUpdates) {
+    for (const update of stageResult.inlineUpdates) {
+      doc.setIn([...stagesPath, ...update.path], update.value);
+    }
   } else {
-    doc.deleteIn([...stagesPath, 'games']);
+    const matched = [...stageResult.reusedEntries, ...stageResult.matchedEntries].sort(compareYamlEntryStrings);
+
+    if (matched.length > 0) {
+      doc.setIn([...stagesPath, 'games'], doc.createNode(matched));
+    } else {
+      doc.deleteIn([...stagesPath, 'games']);
+    }
   }
 
   if (unmatched.length > 0) {
@@ -21,6 +27,10 @@ export function updateYamlDoc(doc: Document, stageIndex: number, stageResult: St
   }
 
   return doc.toString({ lineWidth: 0 }) !== before;
+}
+
+function compareYamlEntryStrings(a: string, b: string): number {
+  return a.localeCompare(b, undefined, { numeric: true });
 }
 
 function buildUnmatchedSeq(entries: UnmatchedEntry[]): YAMLSeq<Scalar<string>> {

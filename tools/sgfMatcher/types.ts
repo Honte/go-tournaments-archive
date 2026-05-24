@@ -1,21 +1,21 @@
 export const UNKNOWN_PLACE = '?' as const;
+export type UnknownPlace = typeof UNKNOWN_PLACE;
 
 export type Color = 'black' | 'white' | undefined;
 
-export type PlayerNames = {
-  blackName: string | null;
-  whiteName: string | null;
-};
-
 export type SgfInfo = {
   path: string;
-  metadata: PlayerNames;
-  fromFilename: PlayerNames;
+  sgfBlackName: string | null;
+  sgfWhiteName: string | null;
+  sgfRound: number | null;
+  filenameBlackName: string | null;
+  filenameWhiteName: string | null;
+  filenameRound: number | null;
+  filenameStage: string | null;
   rawResult: string | null;
   cleanResult: string | null;
   resultIssue: string | null;
   contentIssue?: string | null;
-  round: number | null;
   corrupted: boolean;
 };
 
@@ -38,6 +38,7 @@ export type ParsedGameEntry = {
   sgf: string;
   round: number | null;
   props: string;
+  raw: string;
 };
 
 export type StageResult = {
@@ -46,6 +47,7 @@ export type StageResult = {
   unmatched: number;
   totalSgfs: number;
   reused: number;
+  removed: number;
   unmatchedEntries: UnmatchedEntry[];
 };
 
@@ -55,10 +57,23 @@ export type UnmatchedEntry = {
   reasons: string[];
 };
 
-export type StageProcessResult = {
+export type StageAnalysisResult = {
   previousEntries: string[];
   reusedEntries: string[];
   matchedEntries: string[];
+  removedEntries: RemovedEntry[];
   unmatchedEntries: UnmatchedEntry[];
   totalSgfs: number;
+  claimedSgfs: string[];
+  inlineUpdates?: InlineGameUpdate[];
+};
+
+export type InlineGameUpdate = {
+  path: (string | number)[];
+  value: string;
+};
+
+export type RemovedEntry = {
+  previousSgf: string;
+  entry: string;
 };

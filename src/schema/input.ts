@@ -12,6 +12,7 @@ export type InputBaseStage = {
   promoted?: number;
   placeOffset?: number;
   category?: string;
+  unmatchedSgfs?: string[];
 };
 
 export type InputLeagueStage = InputBaseStage & {
@@ -47,7 +48,6 @@ export type InputTournamentStage = InputBaseStage & {
   findSharedPlaces?: boolean;
   sharedPlaces?: string[];
   games?: string[];
-  unmatchedSgfs?: string[];
   customBreakers: Record<string, CustomBreaker>;
 };
 
