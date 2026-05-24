@@ -6,7 +6,7 @@ import { parseDocument } from 'yaml';
 import type { InputTournament } from '@/schema/input';
 import { readCliParams } from '@tools/cli';
 import { createLogger } from '@tools/sgfMatcher/logger';
-import { printDryRunReport, printStageReport, printSummary } from './report';
+import { printStageReport, printSummary } from './report';
 import { findSgfs } from './sgf';
 import { processStage } from './stage';
 import type { StageResult } from './types';
@@ -78,8 +78,7 @@ for (const yamlPath of yamlFiles.sort()) {
       continue;
     }
 
-    printStageReport(logger, stageResult);
-    printDryRunReport(logger, stageResult, dry);
+    printStageReport(logger, stageResult, { force, verbose });
 
     if (!dry) {
       yamlModified = updateYamlDoc(doc, stageIndex, stageResult) || yamlModified;
@@ -94,7 +93,6 @@ for (const yamlPath of yamlFiles.sort()) {
       reused: stageResult.reusedEntries.length,
       matched: stageResult.matchedEntries.length,
       unmatched: stageResult.unmatchedEntries.length,
-      updated: stageResult.updatedEntries.length,
       removed: stageResult.removedEntries.length,
       totalSgfs: stageResult.totalSgfs,
       unmatchedEntries: stageResult.unmatchedEntries,

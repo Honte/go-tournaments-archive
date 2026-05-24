@@ -1,13 +1,29 @@
 import type { Logger } from '@tools/sgfMatcher/logger';
 import type { StageAnalysisResult, StageResult } from './types';
 
-export function printStageReport(logger: Logger, result: StageAnalysisResult): void {
+type StageReportOptions = {
+  force: boolean;
+  verbose: boolean;
+};
+
+export function printStageReport(logger: Logger, result: StageAnalysisResult, options: StageReportOptions): void {
+  const previousEntries = new Set(result.previousEntries);
+
   logger.log(`SGF files found: ${result.totalSgfs}`);
   logger.log(`Previously matched: ${result.previousEntries.length}`);
   logger.log(`Reused entries: ${result.reusedEntries.length}`);
-  logger.log(`Newly matched: ${result.matchedEntries.length}`);
-  logger.log(`Updated: ${result.updatedEntries.length}`, result.updatedEntries.length > 0);
+  logger.log(`Newly matched: ${result.matchedEntries.length}`, result.matchedEntries.length > 0);
+
+  for (const entry of result.matchedEntries) {
+    logger.log(`  ${entry}`, options.verbose || !options.force || !previousEntries.has(entry));
+  }
+
   logger.log(`Removed: ${result.removedEntries.length}`, result.removedEntries.length > 0);
+
+  for (const { entry } of result.removedEntries) {
+    logger.log(`  ${entry}`, true);
+  }
+
   logger.log(`Unmatched: ${result.unmatchedEntries.length}`, result.unmatchedEntries.length > 0);
 
   for (const { filename, reasons } of result.unmatchedEntries) {
@@ -20,7 +36,6 @@ export function printSummary(results: StageResult[]): void {
   let totalMatched = 0;
   let totalUnmatched = 0;
   let totalReused = 0;
-  let totalUpdated = 0;
   let totalRemoved = 0;
 
   for (const r of results) {
@@ -28,13 +43,12 @@ export function printSummary(results: StageResult[]): void {
     totalMatched += r.matched;
     totalUnmatched += r.unmatched;
     totalReused += r.reused;
-    totalUpdated += r.updated;
     totalRemoved += r.removed;
   }
 
   console.log(`=== Summary ===`);
   console.log(
-    `Total: ${totalSgfs} SGFs, ${totalReused} reused, ${totalMatched} matched, ${totalUnmatched} unmatched, ${totalUpdated} updated, ${totalRemoved} removed`
+    `Total: ${totalSgfs} SGFs, ${totalReused} reused, ${totalMatched} matched, ${totalUnmatched} unmatched, ${totalRemoved} removed`
   );
 
   const unmatchedEntries = results.flatMap((r) => r.unmatchedEntries);
@@ -44,16 +58,6 @@ export function printSummary(results: StageResult[]): void {
 
     for (const { filename, reasons } of unmatchedEntries) {
       console.log(` ✗ ${filename} - ${reasons.join(', ')}`);
-    }
-  }
-}
-
-export function printDryRunReport(logger: Logger, stageResult: StageAnalysisResult, dry: boolean): void {
-  if (dry && stageResult.matchedEntries.length > 0) {
-    logger.log('Matched entries:');
-
-    for (const entry of stageResult.matchedEntries) {
-      logger.log(`  ${entry}`);
     }
   }
 }
