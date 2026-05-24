@@ -31,7 +31,7 @@ stages:
         - ms-pc ms
         - kg-rj kg
       - - kc-kg kc:B+? sgf:2007/2007-3-kchwedyna-kgiedrojc.sgf
-        - ls-ms ls:W+? sgf:2007/2007-3-lsurma-msurma.sgf
+        - ls-ms ls:W+? sgf:2007/2007-3-lsoldan-msurma.sgf
         - pc-jl pc
         - mb-rj mb:W+? sgf:2007/2007-3-mbazynski-rjachym.sgf
       - - kc-pc kc
