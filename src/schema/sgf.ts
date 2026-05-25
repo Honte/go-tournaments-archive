@@ -7,6 +7,7 @@ export enum SgfRootProps {
   EVENT_NAME = 'EV',
   EVENT_LOCATION = 'PC',
   GAME_NAME = 'GN',
+  NODE_NAME = 'N',
   GAME_DATE = 'DT',
   GAME_RULES = 'RU',
   GAME_ROUND = 'RO', // in format `round (type)`

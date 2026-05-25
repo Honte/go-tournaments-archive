@@ -3,7 +3,7 @@ import { readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { describe, it } from 'node:test';
 import { fileURLToPath } from 'node:url';
-import { MultipleLongestBranchesError } from './errors';
+import { MultipleGameBranchEndsError, MultipleLongestBranchesError } from './errors';
 import { Sgf } from './index';
 
 const fixtureDir = join(dirname(fileURLToPath(import.meta.url)), 'examples');
@@ -201,6 +201,57 @@ describe('Sgf', () => {
     );
   });
 
+  it('returns the branch to a node by id or node object', () => {
+    const sgf = new Sgf('(;A[root];B[aa](;W[bb];B[cc])(;W[dd]))');
+    const node = sgf.getNode(3)!;
+
+    assert.deepEqual(
+      sgf.getBranchToNode(3).map((item) => item.id),
+      [0, 1, 2, 3]
+    );
+    assert.deepEqual(
+      sgf.getBranchToNode(node).map((item) => item.id),
+      [0, 1, 2, 3]
+    );
+    assert.throws(() => sgf.getBranchToNode(999), /SGF node 999 not found/);
+  });
+
+  it('returns the game branch ending with N[END] over a longer variation', () => {
+    const sgf = new Sgf('(;A[root];B[aa](;W[bb]N[END])(;W[cc];B[dd];W[ee]))');
+    const branch = sgf.getGameBranch();
+
+    assert.deepEqual(
+      branch.map((node) => node.id),
+      [0, 1, 2]
+    );
+    assert.deepEqual(branch.at(-1)?.data.N, ['END']);
+  });
+
+  it('ignores node names other than N[END] when selecting the game branch', () => {
+    const sgf = new Sgf('(;A[root];B[aa](;W[bb]N[NOTE])(;W[cc];B[dd]))');
+
+    assert.deepEqual(
+      sgf.getGameBranch().map((node) => node.id),
+      [0, 1, 3, 4]
+    );
+  });
+
+  it('falls back to the longest branch when there is no N[END]', () => {
+    const sgf = new Sgf('(;A[root];B[aa](;W[bb])(;W[cc];B[dd]))');
+
+    assert.deepEqual(
+      sgf.getGameBranch().map((node) => node.id),
+      sgf.getLongestBranch().map((node) => node.id)
+    );
+  });
+
+  it('throws when multiple nodes are marked as N[END]', () => {
+    const sgf = new Sgf('(;A[root];B[aa](;W[bb]N[END])(;W[cc]N[END]))');
+
+    assert.throws(() => sgf.getGameBranch(), MultipleGameBranchEndsError);
+    assert.throws(() => sgf.stripVariations(), MultipleGameBranchEndsError);
+  });
+
   it('returns the main branch by following the first child', () => {
     const sgf = new Sgf('(;A[root];B[aa](;W[bb])(;W[dd];B[cc]))');
     const mainBranch = sgf.getMainBranch();
@@ -217,10 +268,10 @@ describe('Sgf', () => {
     assert.equal(mainBranch.length < longestBranch.length, true);
   });
 
-  it('strips shorter branches and rebuilds node lookup', () => {
+  it('strips variations and rebuilds node lookup', () => {
     const sgf = new Sgf('(;A[root];B[aa](;W[bb];B[cc])(;W[dd]))');
 
-    sgf.stripShorterBranches();
+    sgf.stripVariations();
 
     assert.deepEqual(
       sgf.getLongestBranch().map((node) => node.id),
@@ -234,9 +285,20 @@ describe('Sgf', () => {
     const sgf = new Sgf('(;B[aa](;W[bb])(;W[cc]))');
 
     assert.throws(() => sgf.getLongestBranch(), MultipleLongestBranchesError);
-    assert.throws(() => sgf.stripShorterBranches(), MultipleLongestBranchesError);
+    assert.throws(() => sgf.stripVariations(), MultipleLongestBranchesError);
     assert.equal(sgf.getRoot().children.length, 1);
     assert.equal(sgf.getRoot().children[0].children.length, 2);
+  });
+
+  it('strips variations to the game branch marker', () => {
+    const sgf = new Sgf('(;A[root];B[aa](;W[bb]N[END];B[cc])(;W[dd];B[ee];W[ff]))');
+
+    sgf.stripVariations();
+
+    assert.equal(sgf.toString(false), '(;A[root];B[aa];W[bb]N[END])');
+    assert.equal(sgf.getNode(3), undefined);
+    assert.equal(sgf.getNode(4), undefined);
+    assert.equal(sgf.getNode(5), undefined);
   });
 
   it('always stringifies as a parenthesized tree', () => {

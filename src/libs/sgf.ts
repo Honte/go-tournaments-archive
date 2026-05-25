@@ -39,8 +39,7 @@ export function loadSgf(content: string, sgfPath?: string): SgfData {
   const size = sgf.getNumericRootProperty(SgfRootProps.BOARD_SIZE) ?? 19;
 
   const moves: (SgfMove | SgfEdit)[] = [];
-  let node = sgf.getRoot().children[0];
-  while (node) {
+  for (const node of sgf.getGameBranch().slice(1)) {
     const move = node.data?.B || node.data?.W;
     const empty = node.data?.AE;
     const white = node.data?.AW;
@@ -63,8 +62,6 @@ export function loadSgf(content: string, sgfPath?: string): SgfData {
         black: black?.map(moveToVertex) ?? [],
       });
     }
-
-    node = node.children?.[0];
   }
 
   return {

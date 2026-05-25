@@ -62,7 +62,7 @@ export async function loadSgfs(tournaments: Tournament[]) {
         white,
         result: game.result,
         winner: game.players[0].won ? 'black' : game.players[1].won ? 'white' : undefined,
-        moves: sgf.getLongestBranch().length - 1,
+        moves: sgf.getGameBranch().length - 1,
       };
 
       games.push(result);
