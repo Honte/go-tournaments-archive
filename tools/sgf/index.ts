@@ -1,4 +1,4 @@
-import { MultipleLongestBranchesError } from './errors';
+import { MultipleGameBranchEndsError, MultipleLongestBranchesError } from './errors';
 import { SgfParser } from './parser';
 import type { SgfNode, SgfNodeData, SgfNodeDataChange } from './schema';
 
@@ -9,7 +9,7 @@ export class Sgf {
   private nodes = new Map<number, SgfNode>();
 
   static clean(content: string, props?: SgfNodeDataChange): string {
-    return new Sgf(content).stripShorterBranches().stripComments().updateRootProperties(props).toString(false);
+    return new Sgf(content).stripVariations().stripComments().updateRootProperties(props).toString(false);
   }
 
   constructor(content: string) {
@@ -29,16 +29,16 @@ export class Sgf {
     return this;
   }
 
-  stripShorterBranches(): this {
-    const longest = this.getLongestBranch();
-    const branchIds = new Set(longest.map((node) => node.id));
+  stripVariations(): this {
+    const gameBranch = this.getGameBranch();
+    const branchIds = new Set(gameBranch.map((node) => node.id));
 
-    for (let i = 0; i < longest.length; i++) {
-      const next = longest[i + 1];
-      longest[i].children = next ? [next] : [];
+    for (let i = 0; i < gameBranch.length; i++) {
+      const next = gameBranch[i + 1];
+      gameBranch[i].children = next ? [next] : [];
     }
 
-    const map = new Map();
+    const map = new Map<number, SgfNode>();
     for (const node of this.iterateNodes()) {
       node.children = node.children.filter((child) => branchIds.has(child.id));
       map.set(node.id, node);
@@ -112,15 +112,71 @@ export class Sgf {
       throw new MultipleLongestBranchesError(leaves[0][1] + 1);
     }
 
-    const longest = [];
-    let current: SgfNode | undefined = leaves[0][0];
+    return this.getBranchToNode(leaves[0][0]);
+  }
+
+  getBranchToNode(node: number | SgfNode): SgfNode[] {
+    let target: SgfNode;
+
+    if (typeof node === 'number') {
+      const found = this.nodes.get(node);
+
+      if (!found) {
+        throw new Error(`SGF node ${node} not found`);
+      }
+
+      target = found;
+    } else {
+      target = node;
+    }
+
+    const branch: SgfNode[] = [];
+    let current: SgfNode | undefined = target;
 
     while (current) {
-      longest.unshift(current);
+      branch.unshift(current);
       current = this.nodes.get(current.parentId!);
     }
 
-    return longest;
+    return branch;
+  }
+
+  getGameBranch(): SgfNode[] {
+    const queue: [node: SgfNode, depth: number][] = [[this.root, 0]];
+    const endNodes: SgfNode[] = [];
+    const leaves: [node: SgfNode, depth: number][] = [];
+
+    while (queue.length) {
+      const [node, depth] = queue.shift()!;
+
+      if (node.data.N?.includes('END')) {
+        endNodes.push(node);
+      }
+
+      if (node.children.length) {
+        for (const child of node.children) {
+          queue.push([child, depth + 1]);
+        }
+      } else {
+        leaves.push([node, depth]);
+      }
+    }
+
+    if (endNodes.length > 1) {
+      throw new MultipleGameBranchEndsError(endNodes.length);
+    }
+
+    if (endNodes.length === 1) {
+      return this.getBranchToNode(endNodes[0]);
+    }
+
+    leaves.sort((a, b) => b[1] - a[1]);
+
+    if (leaves.length > 1 && leaves[0][1] === leaves[1][1]) {
+      throw new MultipleLongestBranchesError(leaves[0][1] + 1);
+    }
+
+    return this.getBranchToNode(leaves[0][0]);
   }
 
   getMainBranch(): SgfNode[] {

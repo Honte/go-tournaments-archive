@@ -13,6 +13,26 @@ describe('extractSgfInfo', () => {
     assert.equal(sgf.contentIssue, 'multiple longest branches');
   });
 
+  it('treats SGFs with multiple N[END] nodes as content issues', () => {
+    const sgf = extractSgfInfo(
+      '(;PB[Black Player]PW[White Player]RE[B+R];B[aa](;W[bb]N[END])(;W[cc]N[END]))',
+      '2025/1-BlackPlayer-WhitePlayer.sgf'
+    );
+
+    assert.equal(sgf.corrupted, false);
+    assert.equal(sgf.contentIssue, 'multiple ends');
+  });
+
+  it('allows longer side branches when a game branch is marked in strict mode', () => {
+    const sgf = extractSgfInfo(
+      '(;PB[Black Player]PW[White Player]RE[B+R];B[aa](;W[bb]N[END])(;W[cc];B[dd]))',
+      '2025/1-BlackPlayer-WhitePlayer.sgf',
+      true
+    );
+
+    assert.equal(sgf.contentIssue, null);
+  });
+
   it('allows longer side branches when strict mode is disabled', () => {
     const sgf = extractSgfInfo(
       '(;PB[Black Player]PW[White Player]RE[B+R];B[aa](;W[bb])(;W[cc];B[dd]))',

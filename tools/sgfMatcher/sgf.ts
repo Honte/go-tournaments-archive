@@ -4,6 +4,7 @@ import fg from 'fast-glob';
 import { SgfRootProps } from '@/schema/sgf';
 import type { SgfNode } from '@tools/sgf';
 import { Sgf } from '@tools/sgf';
+import { MultipleGameBranchEndsError, MultipleLongestBranchesError } from '@tools/sgf/errors';
 import { normalizeSgfResult } from './result';
 import type { SgfInfo } from './types';
 
@@ -80,18 +81,29 @@ export function extractSgfInfo(content: string, filename: string, isStrict = fal
     corrupted: false,
   };
 
-  let longestBranch: SgfNode[];
+  let gameBranch: SgfNode[];
   try {
-    longestBranch = sgf.getLongestBranch();
-  } catch {
-    output.contentIssue = 'multiple longest branches';
-    return output;
+    gameBranch = sgf.getGameBranch();
+  } catch (err) {
+    if (err instanceof MultipleGameBranchEndsError) {
+      output.contentIssue = 'multiple ends';
+      return output;
+    }
+
+    if (err instanceof MultipleLongestBranchesError) {
+      output.contentIssue = 'multiple longest branches';
+      return output;
+    }
+
+    throw err;
   }
 
-  if (isStrict) {
+  const hasGameBranchEnd = gameBranch.at(-1)?.data[SgfRootProps.NODE_NAME]?.includes('END') ?? false;
+
+  if (isStrict && !hasGameBranchEnd) {
     const mainBranch = sgf.getMainBranch();
 
-    if (longestBranch.length !== mainBranch.length || longestBranch.at(-1)?.id !== mainBranch.at(-1)?.id) {
+    if (gameBranch.length !== mainBranch.length || gameBranch.at(-1)?.id !== mainBranch.at(-1)?.id) {
       output.contentIssue = 'longest branch is not main branch';
       return output;
     }
