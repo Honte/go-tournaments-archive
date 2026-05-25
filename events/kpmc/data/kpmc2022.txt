@@ -37,7 +37,7 @@
 26 Neubauer Peter               2d AT  Hipp  14-     49+     9-      30+     17-     37+     3    18   109  46    |16313308
 27 Ohlenbusch Soeren            4d DK  OGK   24-     40+     43+     9-      18-     36+     3    17   110  42    |13749241
 28 Poltronieri Bruno            4d UK  Camb  31-     21-     46+     44+     29+     10-     3    17   101  17    |16086059
-29 Amaro Souza_Alexandre_de     5d BR  Braz  25-     9-      40+     45+     28-     39+     3    16   107  37    |14301749
+29 Amaro Souza_Alexandre_de     5d BR  Braz  25-     9-      40+     45+     28-     39+     3    16   107  37    |19701451
 30 Teh Wei_Jie                  3d MY  xxxx  38+     18-     21-     26-     49+     35+     3    15   111  25    |19374564
 31 Samper_Munoz Juan_Felipe     3d CO  xxxx  28+     22-     36-     43+     23-     44+     3    15   108  18    |16513794
 32 Butala Gregor                5d SI  Ljub  12-     48+     39-     16-     42+     38+     3    15   107  8     |10433016

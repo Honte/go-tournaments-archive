@@ -31,7 +31,7 @@
 18 Velasco Manuel                 5d CA  xxxx  4    26   182  0    4-      38+     31+     19-     8-      29+     30+      |17986672
 19 Zeijst Rob_van                 7d NL  Amst  4    26   181  0    17-     43+     34+     18+     30+     6-      7-       |10337382
 20 Guo Yiming                     7d AU  xxx   4    25   173  0    23+     11-     17-     43+     39+     8-      32+      |12874697
-21 de_Souza Alexandre             5d BR  SPa   4    24   158  0    51+     5-      36+     33+     9-      32+     11-      |14301749
+21 de_Souza Alexandre             5d BR  SPa   4    24   158  0    51+     5-      36+     33+     9-      32+     11-      |19701451
 22 Leong Chee_Weng                5d KH  xxx   4    23   169  0    38+     4-      9-      39-     44+     34+     33+      |20801836
 23 Stoehr Marc                    1d SE  Stoc  4    22   161  0    20-     41+     14-     46+     24-     35+     31+      |13625051
 24 Dubakovic Dragan               3d RS  KGRa  4    22   153  0    47+     28-     27-     42+     23+     12-     37+      |10637451
