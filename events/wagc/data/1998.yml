@@ -41,9 +41,11 @@ stages:
       - 11-19 11:B+R round:7 sgf:1998/7-ZhiqiYu-PierreColmez.sgf
       - 11-29 11:B+R round:1 sgf:1998/1-ZhiqiYu-LeonMatoh.sgf
       - 12-15 15:W+R round:7 sgf:1998/7-AlexejLazarev-EgbertRittner.sgf
+      - 12-26 12:B+10.5 round:4 sgf:1998/4-AlexejLazarev-ZoranMutabzija.sgf
       - 13-3 3:W+R round:5 sgf:1998/5-CsabaMero-WendongZhao.sgf
       - 13-10 10:W+R round:7 sgf:1998/7-CsabaMero-PengChwanOng.sgf
       - 13-18 13:B+4.5 round:4 sgf:1998/4-CsabaMero-DmytroYatsenko.sgf
+      - 13-26 13:B+R round:6 sgf:1998/6-CsabaMero-ZoranMutabzija.sgf
       - 14-2 2:W+R round:1 sgf:1998/1-RenZhouYi-SatoshiHiraoka.sgf
       - 14-25 25:W+R round:4 sgf:1998/4-RenZhouYi-InjuneKang.sgf
       - 15-5 5:W+R round:2 sgf:1998/2-EgbertRittner-YeongsamMun.sgf
@@ -53,20 +55,27 @@ stages:
       - 19-7 19:B+4.5 round:1 sgf:1998/1-PierreColmez-FrankJanssen.sgf
       - 19-15 19:B+R round:5 sgf:1998/5-PierreColmez-EgbertRittner.sgf
       - 21-9 9:W+R round:7 sgf:1998/7-RobertMateescu-RadekNechanicky.sgf
+      - 21-23 23:W+2.5 round:4 sgf:1998/4-RobertMateescu-FranzHuettler.sgf
       - 21-28 21:B+R round:5 sgf:1998/5-RobertMateescu-JanLubos.sgf
       - 21-36 21:B+R round:1 sgf:1998/1-RobertMateescu-JosteinFlood.sgf
       - 22-8 8:W+R round:2 sgf:1998/2-MagnusKylemark-ThomasHsiang.sgf
+      - 23-11 11:W+12.5 round:6 sgf:1998/6-FranzHuettler-ZhiqiYu.sgf
       - 23-39 23:B+R round:2 sgf:1998/2-FranzHuettler-JuanCarlosCarrillo.sgf
+      - 25-12 12:W+11.5 round:5 sgf:1998/5-InjuneKang-AlexejLazarev.sgf
       - 27-5 5:W+38.5 round:1 sgf:1998/1-LeonidEntin-YeongsamMun.sgf
       - 27-25 27:B+R round:7 sgf:1998/7-LeonidEntin-InjuneKang.sgf
       - 28-37 28:B+R round:8 sgf:1998/8-JanLubos-MichaelStaub.sgf
       - 34-28 28:W+R round:2 sgf:1998/2-MiroslavKostolansky-JanLubos.sgf
       - 34-48 34:B+21.5 round:3 sgf:1998/3-MiroslavKostolansky-JeanBrauch.sgf
+      - 35-12 12:W+23.5 round:1 sgf:1998/1-VVeerachoteNgmjarassrivichai-AlexejLazarev.sgf
       - 37-31 31:W+10.5 round:4 sgf:1998/4-MichaelStaub-KazuoWatanabe.sgf
       - 38-16 16:W+13.5 round:2 sgf:1998/2-MijodragStankovic-VesaLaatikainen.sgf
+      - 38-49 38:B+R round:3 sgf:1998/3-MijodragStankovic-HeiryckGonzalezG.sgf
       - 40-13 13:W+R round:2 sgf:1998/2-GiacomoBaizini-CsabaMero.sgf
+      - 41-35 35:W+R round:6 sgf:1998/6-KeremKaraerkek-VVeerachoteNgmjarassrivichai.sgf
       - 42-33 33:W+11.5 round:2 sgf:1998/2-StephanReiser-CesarSanchez.sgf
       - 44-40 40:W+R round:5 sgf:1998/5-GabrielBranco-GiacomoBaizini.sgf
+      - 45-42 42:W+29.5 round:5 sgf:1998/5-HugoScolnik-StephanReiser.sgf
       - 47-48 48:W+R round:7 sgf:1998/7-ChrisRafferty-JeanBrauch.sgf
       - 49-40 40:W+R round:8 sgf:1998/8-HeiryckGonzalezG-GiacomoBaizini.sgf
       - 50-30 30:W+57.5 round:2 sgf:1998/2-ArunSagar-WoeiHawDjap.sgf

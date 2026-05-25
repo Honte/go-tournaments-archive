@@ -22,6 +22,7 @@ stages:
       - 1-28 1:B+R round:2 sgf:2016/2-BaoxiangBai-NelisVets.sgf
       - 1-37 1:B+R round:1 sgf:2016/1-BaoxiangBai-GregorButala.sgf
       - 2-1 1:W+R round:6 sgf:2016/6-KibaekKim-BaoxiangBai.sgf
+      - 2-6 2:B+R round:3 sgf:2016/3-KibaekKim-CsabaMero.sgf
       - 2-49 2:B+R round:1 sgf:2016/1-KibaekKim-JohnGibson.sgf
       - 3-1 1:W+R round:8 sgf:2016/8-ChiaChengHsu-BaoxiangBai.sgf
       - 3-7 3:B+1.5 round:1 sgf:2016/1-ChiaChengHsu-DusanMitic.sgf
@@ -48,6 +49,8 @@ stages:
       - 10-14 10:B+R round:7 sgf:2016/7-ChiHinChan-BenjaminLockhart.sgf
       - 11-7 7:W+R round:8 sgf:2016/8-DmitrijSurin-DusanMitic.sgf
       - 11-15 15:W+R round:2 sgf:2016/2-DmitrijSurin-RafifShidqiFitrah.sgf
+      - 11-18 18:W+0.5 round:4 sgf:2016/4-DmitrijSurin-VorawatTanapatsopol.sgf
+      - 11-26 11:B+R round:6 sgf:2016/6-DmitrijSurin-FuKangChang.sgf
       - 12-2 2:W+R round:8 sgf:2016/8-LukasKraemer-KibaekKim.sgf
       - 12-23 23:W+R round:1 sgf:2016/1-LukasKraemer-YiFeiYue.sgf
       - 12-24 12:B+R round:4 sgf:2016/4-LukasKraemer-JuergenSuntinger.sgf
@@ -59,6 +62,7 @@ stages:
       - 14-9 9:W+R round:3 sgf:2016/3-BenjaminLockhart-JunfuDai.sgf
       - 14-18 14:B+R round:2 sgf:2016/2-BenjaminLockhart-VorawatTanapatsopol.sgf
       - 14-22 14:B+R round:8 sgf:2016/8-BenjaminLockhart-TalMichaeli.sgf
+      - 15-2 2:W+R round:5 sgf:2016/5-RafifShidqiFitrah-KibaekKim.sgf
       - 15-33 15:B+8.5 round:4 sgf:2016/4-RafifShidqiFitrah-EmrePolat.sgf
       - 16-6 6:W+R round:8 sgf:2016/8-LaurentHeiser-CsabaMero.sgf
       - 16-15 16:B+R round:6 sgf:2016/6-LaurentHeiser-RafifShidqiFitrah.sgf
@@ -73,12 +77,14 @@ stages:
       - 18-36 18:B+R round:3 sgf:2016/3-VorawatTanapatsopol-EmilGarcia.sgf
       - 19-4 4:W+R round:8 sgf:2016/8-ChahineKoleejan-AndriiKravets.sgf
       - 19-34 19:B+R round:5 sgf:2016/5-ChahineKoleejan-AndriusPetrauskas.sgf
+      - 20-11 11:W+R round:5 sgf:2016/5-JoanAlemanyFlos-DmitrijSurin.sgf
       - 20-24 20:B+R round:8 sgf:2016/8-JoanAlemanyFlos-JuergenSuntinger.sgf
       - 20-40 20:B+R round:3 sgf:2016/3-JoanAlemanyFlos-LeonRios.sgf
       - 20-48 20:B+R round:2 sgf:2016/2-JoanAlemanyFlos-FilippoGorlero.sgf
       - 21-6 6:W+R round:1 sgf:2016/1-AndrewSimons-CsabaMero.sgf
       - 21-36 21:B+11.5 round:8 sgf:2016/8-AndrewSimons-EmilGarcia.sgf
       - 21-49 21:B+R round:6 sgf:2016/6-AndrewSimons-JohnGibson.sgf
+      - 22-1 1:W+R round:3 sgf:2016/3-TalMichaeli-BaoxiangBai.sgf
       - 22-19 19:W+R round:7 sgf:2016/7-TalMichaeli-ChahineKoleejan.sgf
       - 22-29 22:B+R round:1 sgf:2016/1-TalMichaeli-NhatMinhVo.sgf
       - 22-37 22:B+R round:6 sgf:2016/6-TalMichaeli-GregorButala.sgf
@@ -116,6 +122,7 @@ stages:
       - 34-11 11:W+R round:1 sgf:2016/1-AndriusPetrauskas-DmitrijSurin.sgf
       - 34-20 20:W+R round:6 sgf:2016/6-AndriusPetrauskas-JoanAlemanyFlos.sgf
       - 35-27 27:W+R round:5 sgf:2016/5-SantiagoEspinosaUribe-KeiChonWan.sgf
+      - 35-38 38:W+3.5 round:4 sgf:2016/4-SantiagoEspinosaUribe-PaalSannes.sgf
       - 35-55 35:B+R round:1 sgf:2016/1-SantiagoEspinosaUribe-SupravatPal.sgf
       - 36-38 38:W+T round:2 sgf:2016/2-EmilGarcia-PaalSannes.sgf
       - 36-49 36:B+R round:4 sgf:2016/4-EmilGarcia-JohnGibson.sgf
@@ -123,6 +130,7 @@ stages:
       - 37-42 37:B+R round:5 sgf:2016/5-GregorButala-ArmelDavidWolff.sgf
       - 37-52 37:B+T round:2 sgf:2016/2-GregorButala-BattulgaByambaakhuu.sgf
       - 38-20 20:W+4.5 round:7 sgf:2016/7-PaalSannes-JoanAlemanyFlos.sgf
+      - 38-29 29:W+R round:6 sgf:2016/6-PaalSannes-NhatMinhVo.sgf
       - 38-50 38:B+R round:1 sgf:2016/1-PaalSannes-GabrielHissaoMakio.sgf
       - 39-6 6:W+R round:5 sgf:2016/5-SinVoonChin-CsabaMero.sgf
       - 39-35 35:W+6.5 round:7 sgf:2016/7-SinVoonChin-SantiagoEspinosaUribe.sgf
@@ -140,6 +148,8 @@ stages:
       - 44-43 44:B+R round:5 sgf:2016/5-AmyYimeiSong-MiroslavPoliak.sgf
       - 45-12 12:W+R round:3 sgf:2016/3-AndrewLewisDavies-LukasKraemer.sgf
       - 45-33 33:W+15.5 round:2 sgf:2016/2-AndrewLewisDavies-EmrePolat.sgf
+      - 47-29 29:W+0.5 round:4 sgf:2016/4-ZoranMutabzija-NhatMinhVo.sgf
+      - 47-36 47:B+R round:6 sgf:2016/6-ZoranMutabzija-EmilGarcia.sgf
       - 47-43 43:W+R round:2 sgf:2016/2-ZoranMutabzija-MiroslavPoliak.sgf
       - 47-50 47:B+R round:7 sgf:2016/7-ZoranMutabzija-GabrielHissaoMakio.sgf
       - 48-55 48:B+R round:5 sgf:2016/5-FilippoGorlero-SupravatPal.sgf
@@ -148,8 +158,11 @@ stages:
       - 50-48 48:W+R round:8 sgf:2016/8-GabrielHissaoMakio-FilippoGorlero.sgf
       - 50-54 54:W+0.5 round:2 sgf:2016/2-GabrielHissaoMakio-AnastasiyaIlkevich.sgf
       - 51-16 16:W+R round:3 sgf:2016/3-VascoPimenta-LaurentHeiser.sgf
+      - 52-43 43:W+R round:6 sgf:2016/6-BattulgaByambaakhuu-MiroslavPoliak.sgf
       - 52-45 45:W+R round:7 sgf:2016/7-BattulgaByambaakhuu-AndrewLewisDavies.sgf
+      - 52-47 47:W+R round:3 sgf:2016/3-BattulgaByambaakhuu-ZoranMutabzija.sgf
       - 54-19 19:W+R round:4 sgf:2016/4-AnastasiyaIlkevich-ChahineKoleejan.sgf
       - 54-36 36:W+R round:1 sgf:2016/1-AnastasiyaIlkevich-EmilGarcia.sgf
       - 54-48 48:W+20.5 round:6 sgf:2016/6-AnastasiyaIlkevich-FilippoGorlero.sgf
       - 55-21 21:W+R round:2 sgf:2016/2-SupravatPal-AndrewSimons.sgf
+      - 55-44 44:W+R round:4 sgf:2016/4-SupravatPal-AmyYimeiSong.sgf
