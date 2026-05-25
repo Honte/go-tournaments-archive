@@ -30,6 +30,7 @@ stages:
       - 7-54 7:B+R round:4 sgf:2005/4-ThomasHsiang-ErtugAkkol.sgf
       - 8-9 8:B+R round:3 sgf:2005/3-NaiSanChan-XianyuLi.sgf
       - 11-8 11:B+R round:4 sgf:2005/4-RadekNechanicky-NaiSanChan.sgf
+      - 11-10 10:W+10.5 round:8 sgf:2005/8-RadekNechanicky-YimingGuo.sgf
       - 12-7 7:W+R round:6 sgf:2005/6-DmytroBogatskyy-ThomasHsiang.sgf
       - 13-21 13:B+R round:6 sgf:2005/6-RalphSpiegl-LeonMatoh.sgf
       - 13-34 13:B+R round:3 sgf:2005/3-RalphSpiegl-JaimeRamirezReyes.sgf

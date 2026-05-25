@@ -27,6 +27,7 @@ stages:
       - 6-4 4:W+R round:5 sgf:2010/5-ZhengxunChen-NaiSanChan.sgf
       - 6-11 6:B+R round:8 sgf:2010/8-ZhengxunChen-FredrikBlomback.sgf
       - 6-13 6:B+7.5 round:4 sgf:2010/4-ZhengxunChen-FernandoAguilar.sgf
+      - 7-48 7:B+R round:1 sgf:2010/1-PalBalogh-FrancescaMauri.sgf
       - 8-3 3:W+R round:2 sgf:2010/2-YoheiSato-TaeweonCho.sgf
       - 8-5 5:W+10.5 round:7 sgf:2010/7-YoheiSato-OndrejSilt.sgf
       - 9-7 7:W+3.5 round:2 sgf:2010/2-YuxiangLou-PalBalogh.sgf
@@ -46,6 +47,7 @@ stages:
       - 22-13 13:W+R round:2 sgf:2010/2-MarosKral-FernandoAguilar.sgf
       - 23-4 4:W+R round:2 sgf:2010/2-KasperHornbaek-NaiSanChan.sgf
       - 23-8 8:W+R round:6 sgf:2010/6-KasperHornbaek-YoheiSato.sgf
+      - 28-20 20:W+5.5 round:1 sgf:2010/1-AlainWettach-ThomasDebarre.sgf
       - 31-12 12:W+R round:3 sgf:2010/3-DavidOrmerod-ThomasHsiang.sgf
       - 34-41 41:W+R round:1 sgf:2010/1-BoonPingTeng-TMarkHall.sgf
       - 45-30 30:W+28.5 round:1 sgf:2010/1-JanezJanza-EmilBustamante.sgf
