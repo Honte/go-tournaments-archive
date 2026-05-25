@@ -28,7 +28,7 @@
  19 Qian Wei                    6d AU xxx  6 4 47 374  14-/w 13-/b 36+/w 32+/w 12-/b 18-/w 22+/b 26+/b |14333748
  20 Io Kin-Peng                 5d MO xxx  6 5 47 370  44+/w 33+/b 18+/b 15-/w  8-/w 23+/w  3-/b 35+/b |14550657
  21 Heiser Laurent              6d LU Lux  6 4 46 366   1-/b 17-/w 24+/w 23+/b 28-/w 29-/b 42+/w 31+/b |10249195
- 22 De_Souza Alexandre          5d BR SPa  6 4 44 366  34+/b  6-/w  9-/w 18-/b 46+/w 43+/b 19-/w 30+/b |14301749
+ 22 De_Souza Alexandre          5d BR SPa  6 4 44 366  34+/b  6-/w  9-/w 18-/b 46+/w 43+/b 19-/w 30+/b |19701451
  23 Trairatananusorn Ruechagorn 4d TH xxx  6 5 44 342  25+/w 31+/w 11-/b 21-/w 38+/b 20-/b 45+/b 28+/w |15662097
  24 Chlodek Janusz              4d PL Wodz 6 5 39 329  29-/b 56+/w 21-/b 44+/w 35+/w 31+/w 18-/b 36+/w |10398465
  25 Gonzalez-Zelaya Carlos      3d MX xxx  6 5 39 323  23-/b 49+/w 43+/w 28-/b 31-/b 38+/w 33+/w 32+/b |13625821

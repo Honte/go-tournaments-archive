@@ -11,9 +11,62 @@ stages:
       - 25-32
     games:
       - 1-2 1:B+R round:5 sgf:1980/5-FumiakiImamura-ChaijuiChen.sgf
+      - 1-7 1:B+5.5 round:3 sgf:1980/3-FumiakiImamura-KyungKim.sgf
+      - 1-13 1:B+R round:1 sgf:1980/1-FumiakiImamura-HelmutHasibeder.sgf
+      - 2-8 2:B+R round:3 sgf:1980/3-ChaijuiChen-RonaldSchlemper.sgf
+      - 2-16 16:W+R round:2 sgf:1980/2-ChaijuiChen-ZoranMutabzija.sgf
+      - 2-27 2:B+R round:1 sgf:1980/1-ChaijuiChen-FrankHansen.sgf
       - 3-2 2:W+R round:4 sgf:1980/4-HajimeYasunaga-ChaijuiChen.sgf
+      - 3-6 3:B+R round:3 sgf:1980/3-HajimeYasunaga-KeunseukHan.sgf
       - 3-9 3:B+8.5 round:2 sgf:1980/2-HajimeYasunaga-QunWang.sgf
-      - 4-1 1:W+2.5 round:4 sgf:1980/4-FumiakiImamura-HsiaokuangLiu.sgf
-      - 4-3 4:B+R round:5 sgf:1980/5-HsiaokuangLiu-HajimeYasunaga.sgf
+      - 3-18 3:B+R round:1 sgf:1980/1-HajimeYasunaga-EduardoLopezHerrero.sgf
+      - 4-1 1:W+2.5 round:4 sgf:1980/4-FumiakiImamura-XiaoguangLiu.sgf
+      - 4-3 4:B+R round:5 sgf:1980/5-XiaoguangLiu-HajimeYasunaga.sgf
+      - 4-24 4:B+R round:1 sgf:1980/1-XiaoguangLiu-JeanMichel.sgf
+      - 5-4 4:W+R round:3 sgf:1980/3-KomoriShoji-XiaoguangLiu.sgf
+      - 5-7 5:B+11.5 round:4 sgf:1980/4-KomoriShoji-KyungKim.sgf
+      - 6-5 5:W+R round:5 sgf:1980/5-KeunseukHan-KomoriShoji.sgf
+      - 6-21 6:B+R round:2 sgf:1980/2-KeunseukHan-JurgenMattern.sgf
       - 7-8 7:B+9.5 round:5 sgf:1980/5-KyungKim-RonaldSchlemper.sgf
+      - 8-6 6:W+9.5 round:4 sgf:1980/4-RonaldSchlemper-KeunseukHan.sgf
+      - 8-19 8:B+13.5 round:1 sgf:1980/1-RonaldSchlemper-YoonjungChang.sgf
+      - 8-20 8:B+R round:2 sgf:1980/2-RonaldSchlemper-NedPhipps.sgf
+      - 9-12 9:B+R round:5 sgf:1980/5-QunWang-SeunbeumKang.sgf
+      - 9-29 9:B+R round:1 sgf:1980/1-QunWang-SeJuLee.sgf
+      - 10-7 7:W+10.5 round:2 sgf:1980/2-SangchoulLee-KyungKim.sgf
+      - 10-9 9:W+R round:6 sgf:1980/6-SangchoulLee-WangQun.sgf
+      - 10-14 10:B+R round:4 sgf:1980/4-SangchoulLee-KwokcheungLam.sgf
+      - 10-18 10:B+R round:3 sgf:1980/3-SangchoulLee-EduardoLopezHerrero.sgf
+      - 10-28 10:B+R round:1 sgf:1980/1-SangchoulLee-HanspeterBaumann.sgf
+      - 11-5 5:W+R round:2 sgf:1980/2-TakaoMatsuda-ShojiKomori.sgf
+      - 11-10 10:W+0.5 round:5 sgf:1980/5-TakaoMatsuda-SangchoulLee.sgf
+      - 11-15 11:B+R round:4 sgf:1980/4-TakaoMatsuda-KayokoTsutsumi.sgf
+      - 11-19 11:B+5.5 round:3 sgf:1980/3-TakaoMatsuda-YoonjungChang.sgf
+      - 11-25 11:B+R round:1 sgf:1980/1-TakaoMatsuda-JohnPower.sgf
+      - 12-5 5:W+4.5 round:1 sgf:1980/1-SeunbeumKang-KomoriShoji.sgf
+      - 12-11 11:W+R round:6 sgf:1980/6-SeunbeumKang-TakaoMatsuda.sgf
+      - 12-20 12:B+R round:3 sgf:1980/3-SeunbeumKang-NedPhipps.sgf
+      - 12-25 12:B+R round:2 sgf:1980/2-SeunbeumKang-JohnPower.sgf
+      - 13-9 9:W+10.5 round:4 sgf:1980/4-HelmutHasibeder-QunWang.sgf
+      - 13-21 13:B+13.5 round:3 sgf:1980/3-HelmutHasibeder-JurgenMattern.sgf
+      - 14-1 1:W+R round:2 sgf:1980/2-KwokcheungLam-FumiakiImamura.sgf
+      - 16-12 12:W+R round:4 sgf:1980/4-ZoranMutabzija-SeunbeumKang.sgf
+      - 16-15 16:B+6.5 round:1 sgf:1980/1-ZoranMutabzija-TsutsumiKayoko.sgf
       - 17-7 7:W+R round:1 sgf:1980/1-FernandoAguilar-KyungKim.sgf
+      - 17-9 9:W+R round:3 sgf:1980/3-FernandoAguilar-QunWang.sgf
+      - 19-30 19:B+1.5 round:2 sgf:1980/2-YoonjungChang-TakeshiMatsui.sgf
+      - 22-14 14:W+R round:3 sgf:1980/3-GraemeParmenter-KwokcheungLam.sgf
+      - 22-21 21:W+10.5 round:1 sgf:1980/1-GraemeParmenter-JurgenMattern.sgf
+      - 22-31 22:B+R round:2 sgf:1980/2-GraemeParmenter-JanuszKraszek.sgf
+      - 23-4 4:W+R round:2 sgf:1980/2-MatthewMacfadyen-XiaoguangLiu.sgf
+      - 23-15 15:W+R round:3 sgf:1980/3-MatthewMacfadyen-KayokoTsutsumi.sgf
+      - 23-32 23:B+R round:1 sgf:1980/1-MatthewMacfadyen-VladimirLassak.sgf
+      - 24-16 16:W+5.5 round:3 sgf:1980/3-JeanMichel-ZoranMutabzija.sgf
+      - 26-13 13:W+16.5 round:2 sgf:1980/2-BerndWolter-HelmutHasibeder.sgf
+      - 26-14 14:W+R round:1 sgf:1980/1-BerndWolter-KwokcheungLam.sgf
+      - 27-15 15:W+1.5 round:2 sgf:1980/2-FrankHansen-KayokoTsutsumi.sgf
+      - 28-17 17:W+14.5 round:2 sgf:1980/2-HanspeterBaumann-FernandoAguilar.sgf
+      - 29-18 18:W+6.5 round:2 sgf:1980/2-SeJuLee-EduardoLopezHerrero.sgf
+      - 30-20 20:W+F round:1 sgf:1980/1-TakeshiMatsui-NedPhipps.sgf
+      - 31-6 6:W+8.5 round:1 sgf:1980/1-JanuszKraszek-KeunseukHan.sgf
+      - 32-24 24:W+3.5 round:2 sgf:1980/2-VladimirLassak-JeanMichel.sgf

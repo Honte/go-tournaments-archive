@@ -38,9 +38,11 @@ stages:
       - 10-2 2:W+R round:7 sgf:2014/7-JieLiang-TaeWoongWei.sgf
       - 10-3 3:W+R round:8 sgf:2014/8-JieLiang-WangRuoran.sgf
       - 10-8 8:W+4 round:1 sgf:2014/1-JieLiang-FredrikBlomback.sgf
+      - 10-21 10:B+1.5 round:5 sgf:2014/5-JieLiang-YongfeiGe.sgf
       - 14-1 1:W+21.5 round:7 sgf:2014/7-ThanapolTiawattananont-YiTienChan.sgf
       - 20-42 20:B+R round:4 sgf:2014/4-SuzanneD'Bel-PedroPereira.sgf
       - 21-2 2:W+R round:2 sgf:2014/2-YongfeiGe-TaeWoongWei.sgf
       - 21-32 21:B+R round:1 sgf:2014/1-YongfeiGe-AndriusPetrauskas.sgf
       - 24-14 14:W+14.5 round:6 sgf:2014/6-PeterJadron-ThanapolTiawattananont.sgf
       - 37-3 3:W+19.5 round:1 sgf:2014/1-SangDaeHahn-WangRuoran.sgf
+      - 44-37 37:W+R round:2 sgf:2014/2-FrancisRoads-SangDaeHahn.sgf

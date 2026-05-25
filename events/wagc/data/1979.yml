@@ -10,10 +10,36 @@ stages:
       - 17-30
     games:
       - 1-2 1:B+R round:5 sgf:1979/5-WeipingNie-TsuteChen.sgf
+      - 1-7 1:B+11.5 round:3 sgf:1979/3-WeipingNie-SunkunLim.sgf
+      - 1-17 1:B+R round:1 sgf:1979/1-WeipingNie-ToshikatsuTakamori.sgf
       - 2-3 2:B+7.5 round:4 sgf:1979/4-TsuteChen-ChaijuiChen.sgf
+      - 2-10 2:B+R round:2 sgf:1979/2-TsuteChen-JeromeHubert.sgf
+      - 2-18 2:B+4.5 round:1 sgf:1979/1-TsuteChen-KikuchiYasuro.sgf
+      - 3-8 3:B+7.5 round:3 sgf:1979/3-ChaijuiChen-KangmeanBaek.sgf
+      - 4-1 4:B+10.5 round:4 sgf:1979/4-BunshoMurakami-WeipingNie.sgf
+      - 4-3 3:W+R round:5 sgf:1979/5-BunshoMurakami-ChaijuiChen.sgf
+      - 4-5 4:B+0.5 round:3 sgf:1979/3-MurakamiBunsho-ShangmingKung.sgf
+      - 4-12 4:B+R round:2 sgf:1979/2-BunshoMurakami-HorstKippe.sgf
+      - 5-6 5:B+R round:5 sgf:1979/5-ShangmingKung-LeeYongho.sgf
+      - 5-7 5:B+10.5 round:4 sgf:1979/4-ShangmingKung-SunkunLim.sgf
       - 5-13 5:B+R round:2 sgf:1979/2-ShangmingKung-RonaldSchlemper.sgf
-      - 6-2 2:W+5.5 round:3 sgf:1979/3-TsuteChen-YonghoLee.sgf
+      - 6-2 2:W+5.5 round:3 sgf:1979/3-YonghoLee-TsuteChen.sgf
+      - 6-8 6:B+12.5 round:4 sgf:1979/4-LeeYongho-KangmeanBaek.sgf
+      - 6-21 6:B+R round:1 sgf:1979/1-YonghoLee-YoshikoKamekura.sgf
+      - 7-8 7:B+7.5 round:5 sgf:1979/5-SunkunLim-KangmeanBaek.sgf
+      - 7-15 7:B+R round:2 sgf:1979/2-SunkunLim-PaulSelick.sgf
+      - 7-22 7:B+R round:1 sgf:1979/1-SunkunLim-HelmutWiltschek.sgf
+      - 8-16 8:B+19.5 round:2 sgf:1979/2-KangmeanBaek-ShinaukKang.sgf
+      - 8-23 8:B+7.5 round:1 sgf:1979/1-KangmeanBaek-FernandoAguilar.sgf
       - 9-1 1:W+10.5 round:2 sgf:1979/2-HajimeYasunaga-WeipingNie.sgf
       - 9-24 9:B+R round:1 sgf:1979/1-HajimeYasunaga-LojzeSuc.sgf
+      - 10-25 10:B+R round:1 sgf:1979/1-JeromeHubert-DanielLeiberman.sgf
+      - 11-3 3:W+R round:2 sgf:1979/2-FumiakiImamura-ChaijuiChen.sgf
       - 13-28 13:B+6.5 round:1 sgf:1979/1-RonaldSchlemper-NaoshiNarumi.sgf
+      - 14-6 6:W+R round:2 sgf:1979/2-KyungKim-YonghoLee.sgf
+      - 14-29 14:B+R round:1 sgf:1979/1-KyungKim-HelmutHasibeder.sgf
+      - 16-30 16:B+R round:1 sgf:1979/1-ShinaukKang-SangdaeHahn.sgf
+      - 19-4 4:W+R round:1 sgf:1979/1-ShojiOkazaki-BunshoMurakami.sgf
+      - 20-5 5:W+R round:1 sgf:1979/1-ShigeoMatsuhara-ShangmingKung.sgf
+      - 26-11 11:W+R round:1 sgf:1979/1-JonDiamond-FumiakiImamura.sgf
       - 27-12 12:W+R round:1 sgf:1979/1-GraemeParmenter-HorstKippe.sgf

@@ -40,6 +40,7 @@ stages:
       - 8-6 6:W+R round:8 sgf:1997/8-TomTian-AlexejLazarev.sgf
       - 8-37 8:B+R round:2 sgf:1997/2-TomTian-EricJones.sgf
       - 9-1 1:W+R round:8 sgf:1997/8-YingKan-JunLiu.sgf
+      - 9-5 5:W+1.5 round:3 sgf:1997/3-YingKan-CristianPop.sgf
       - 9-17 9:B+R round:6 sgf:1997/6-YingKan-JurijPljushch.sgf
       - 10-12 10:B+0.5 round:7 sgf:1997/7-JeanMichel-RalphSpiegl.sgf
       - 11-4 4:W+19.5 round:4 sgf:1997/4-HosukYi-ZhihanLin.sgf

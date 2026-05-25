@@ -37,7 +37,7 @@
 31	Garofalo Primo	   1d	IT	xxx	3	3	28  7	12-	13-	36+	29-	24-	37+	32+	23-
 32	Amador Alberto	   2d	ES	xxx	3	3	27  9	35-	14-	24+	17-	34+	21-	31-	36+
 33	Chacon Jose	       3d	MX	xxx	3	3	26  6	9-	19-	39+	28-	37+	20-	29+	25-
-34	Gostelli Patrice   4d	CH	xxx	3	3	24  6	30-	26-	37+	18-	32-	36+	17-	35+
+34	Gosteli Patrice    4d	CH	xxx	3	3	24  6	30-	26-	37+	18-	32-	36+	17-	35+
 35	Yokomaku M	       3d	JP	xxx	2	2	27  4	32+	8-	19-	14-	39+	27-	30-	34-
 36	Barriga Oscar	   2d	CL	xxx	2	2	23  2	27-	18-	31-	13-	40+	34-	38+	32-
 37	Mitchell Noel	   1k	IE	xxx	2	2	23  1	10-	15-	34-	40+	33-	31-	39+	20-

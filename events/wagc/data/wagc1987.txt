@@ -19,7 +19,7 @@
   12 Bogdanov Viktor                 6D SU  xxx    5   34   20 0      20-      25+       8+      11-      26+      10+       9-      18+
   13 Rittner Egbert                  5D DE  xxx    5   34   17 0       2-      32+      17+      16+      11-      19+       6-      22+
   14 Matsuda Takao                   6D US  xxx    4   40   15 0      28+      23+       9+      20+       3-       2-       4-      11-
-  15 Gostelli Patrice                3D CH  xxx    4   33   11 0      32+      19+       1-       2-      22-       6-      31+      23+
+  15 Gosteli Patrice                3D CH  xxx    4   33   11 0      32+      19+       1-       2-      22-       6-      31+      23+
   16 Garcia_de_la_Banda Francisco    4D ES  xxx    4   32   12 0      30+      31+      10-      13-       5-      20+       8-      25+
   17 Westhoff Arend-Jan              4D NL  xxx    4   32   12 0      18-      26+      13-      23+      24+       4-      27+       8-
   18 Wiltschek Helmut                6D AT  xxx    4   32   12 0      17+       6-      31+       7-       9-      24+      22+      12-

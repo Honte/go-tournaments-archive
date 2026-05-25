@@ -38,7 +38,7 @@
  29 Smud Mladen                    3d HR VGor  4 4  33 265   7- 66+ 43+ 15- 50+ 14- 35+ 22- |10398982
  30 Cann Desmond                   5d UK MKes  4 4  33 255  49+ 10- 38- 63+ 43+ 12- 34+ 20- |10262043
  31 Rasmussen Jannik               4d DK KGK   4 4  33 250  64+  7- 47+ 20- 23- 51+ 42+ 21- |10486201
- 32 De_Souza Alexandre             5d BR SPa   4 4  32 263  42+ 50+ 12- 27- 66+ 22+ 11- 25- |14301749
+ 32 De_Souza Alexandre             5d BR SPa   4 4  32 263  42+ 50+ 12- 27- 66+ 22+ 11- 25- |19701451
  33 Lim Surya-Tjahyadi             2d ID xxx   4 4  32 261  37+ 15- 36- 53+ 17- 55+ 45+ 19- |13974840
  34 Simeunovic Zoran               5d BA Bij   4 4  32 261   5- 53+ 28+ 24- 49+ 26- 30- 51+ |10350087
  35 Thanh Tran-Chi                 4d VN Han   4 4  32 257  13- 49+ 24- 55+ 36+ 19- 29- 47+ |12825703

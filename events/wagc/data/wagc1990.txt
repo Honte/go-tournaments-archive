@@ -28,7 +28,7 @@
   21 Flood Jostein                   4D NO  xxx    4   32   12    0       9-      35+      18+      16+       8-      14-      37+      13-
   22 Garcia_de_la_Banda Francisco    4D ES  xxx    4   31   12    0       5-      37+      20-      28+      25+       9-      15-      30+
   23 Shaw Edmund                     4D UK  xxx    4   31   11    0      30+       4-      19+       7-      13-      36+      18-      35+
-  24 Gostelli Patrice                4D CH  xxx    4   31   10    0       1-      39+      16-      34+      17-      33+       7-      29+
+  24 Gosteli Patrice                 4D CH  xxx    4   31   10    0       1-      39+      16-      34+      17-      33+       7-      29+
   25 Hubner Thomas                   4D DD  xxx    4   30   11    0      36+      11-      33+       5-      22-      28+      16-      27+
   26 Bro-Joergensen Ulrik            3D DK  xxx    4   29   10    0      32+       7-      15-      36+      10-      35+      13-      28+
   27 Kurushima Yoshiko               3D JP  xxx    3   30    7    0       4-      14-      37+      33-      38+      29+      12-      25-

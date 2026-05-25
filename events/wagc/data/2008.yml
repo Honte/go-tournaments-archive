@@ -26,6 +26,7 @@ stages:
       - 6-19 6:B+R round:8 sgf:2008/8-CornelBurzo-RaphaelShin.sgf
       - 7-3 3:W+8.5 round:3 sgf:2008/3-MozhengGuan-FernandoAguilar.sgf
       - 7-4 4:W+3.5 round:6 sgf:2008/6-MozhengGuan-NaiSanChan.sgf
+      - 7-20 7:B+2.5 round:7 sgf:2008/7-MozhengGuan-MatthewMacfadyen.sgf
       - 10-27 10:B+R round:6 sgf:2008/6-TsungLinYang-UlrikBroJoergensen.sgf
       - 10-52 10:B+R round:4 sgf:2008/4-TsungLinYang-IanDavis.sgf
       - 11-5 5:W+11.5 round:7 sgf:2008/7-LaurentHeiser-YoshiyukiTsuchimune.sgf

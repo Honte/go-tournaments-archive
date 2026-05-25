@@ -7,9 +7,21 @@ stages:
       - null
     games:
       - 1-2 1:B+R round:5 sgf:1982/5-TayuanTsao-ChinHuaYang.sgf
+      - 3-2 2:W+2.5 round:4 sgf:1982/4-HironoriHirata-ChinHuaYang.sgf
+      - 3-4 3:B+2.5 round:5 sgf:1982/5-HironoriHirata-ChuljungKim.sgf
+      - 4-1 1:W+5.5 round:4 sgf:1982/4-ChuljungKim-TayuanTsao.sgf
       - 5-6 5:B+4.5 round:5 sgf:1982/5-FernandoAguilar-SidneyKobashigawa.sgf
-      - 7-8 7:B+R round:5 sgf:1982/5-JurgenMattern-RayTomes.sgf
+      - 7-8 7:B+R round:5 sgf:1982/5-LutzMattner-RayTomes.sgf
+      - 10-9 9:W+R round:6 sgf:1982/6-MasakiKanno-JonghoonNa.sgf
       - 11-12 11:B+0.5 round:6 sgf:1982/6-ErnstNovak-RobvanZeijst.sgf
       - 13-14 13:B+R round:6 sgf:1982/6-MichaelLam-MatthewMacfadyen.sgf
+      - 14-5 5:W+R round:2 sgf:1982/2-MatthewMacfadyen-FernandoAguilar.sgf
       - 15-16 15:B+2.5 round:6 sgf:1982/6-FrankHansen-FranciscoNakatsui.sgf
+      - 18-17 17:W+24.5 round:6 sgf:1982/6-FranciscoGarciadelaBanda-PaulSelick.sgf
+      - 20-17 17:W+11.5 round:5 sgf:1982/5-MiroslavPoliak-PaulSelick.sgf
+      - 20-19 19:W+R round:6 sgf:1982/6-MiroslavPoliak-FredericDonzet.sgf
       - 22-21 21:W+13.5 round:6 sgf:1982/6-MattiSiivola-IstvanRigo.sgf
+      - 25-26 25:B+R round:5 sgf:1982/5-EduardEkart-MatsJohansson.sgf
+      - 27-25 25:W+R round:4 sgf:1982/4-ChengchuaPang-EduardEkart.sgf
+      - 27-28 27:B+R round:5 sgf:1982/5-ChengchuaPang-EnzoBurlini.sgf
+      - 29-30 29:B+R round:5 sgf:1982/5-NevilleSmythe-StephaneSafrasiantz.sgf
