@@ -99,15 +99,19 @@ stages:
       - 27-12 12:W+R round:2 sgf:2016/2-KeiChonWan-LukasKraemer.sgf
       - 27-19 19:W+R round:6 sgf:2016/6-KeiChonWan-ChahineKoleejan.sgf
       - 27-53 27:B+R round:3 sgf:2016/3-KeiChonWan-LinglinXu.sgf
+      - 28-37 37:W+3.5 round:3 sgf:2016/3-NelisVets-GregorButala.sgf
       - 29-11 11:W+R round:7 sgf:2016/7-NhatMinhVo-DmitrijSurin.sgf
       - 29-26 26:W+F round:3 sgf:2016/3-NhatMinhVo-FuKangChang.sgf
       - 29-31 29:B+1.5 round:2 sgf:2016/2-NhatMinhVo-MerlijnKuin.sgf
+      - 29-36 29:B+3.5 round:5 sgf:2016/5-NhatMinhVo-EmilGarcia.sgf
       - 30-22 22:W+1.5 round:4 sgf:2016/4-ManuelVelasco-TalMichaeli.sgf
       - 30-39 30:B+R round:6 sgf:2016/6-ManuelVelasco-SinVoonChin.sgf
       - 31-17 17:W+R round:5 sgf:2016/5-MerlijnKuin-StanislawFrejlak.sgf
       - 31-25 25:W+0.5 round:1 sgf:2016/1-MerlijnKuin-MattiSiivola.sgf
       - 32-8 8:W+R round:6 sgf:2016/6-LeifAlmrot-CristianPop.sgf
       - 32-14 14:W+R round:5 sgf:2016/5-LeifAlmrot-BenjaminLockhart.sgf
+      - 33-16 16:W+0.5 round:5 sgf:2016/5-EmrePolat-LaurentHeiser.sgf
+      - 33-23 33:B+R round:3 sgf:2016/3-EmrePolat-YiFeiYue.sgf
       - 33-51 33:B+R round:1 sgf:2016/1-EmrePolat-VascoPimenta.sgf
       - 34-11 11:W+R round:1 sgf:2016/1-AndriusPetrauskas-DmitrijSurin.sgf
       - 34-20 20:W+R round:6 sgf:2016/6-AndriusPetrauskas-JoanAlemanyFlos.sgf
@@ -116,6 +120,7 @@ stages:
       - 36-38 38:W+T round:2 sgf:2016/2-EmilGarcia-PaalSannes.sgf
       - 36-49 36:B+R round:4 sgf:2016/4-EmilGarcia-JohnGibson.sgf
       - 37-18 18:W+R round:7 sgf:2016/7-GregorButala-VorawatTanapatsopol.sgf
+      - 37-42 37:B+R round:5 sgf:2016/5-GregorButala-ArmelDavidWolff.sgf
       - 37-52 37:B+T round:2 sgf:2016/2-GregorButala-BattulgaByambaakhuu.sgf
       - 38-20 20:W+4.5 round:7 sgf:2016/7-PaalSannes-JoanAlemanyFlos.sgf
       - 38-50 38:B+R round:1 sgf:2016/1-PaalSannes-GabrielHissaoMakio.sgf
@@ -125,12 +130,14 @@ stages:
       - 40-24 24:W+R round:1 sgf:2016/1-LeonRios-JuergenSuntinger.sgf
       - 40-27 27:W+R round:4 sgf:2016/4-LeonRios-KeiChonWan.sgf
       - 41-27 27:W+8.5 round:7 sgf:2016/7-DavidPollitzer-KeiChonWan.sgf
+      - 41-28 28:W+16.5 round:4 sgf:2016/4-DavidPollitzer-NelisVets.sgf
       - 42-5 5:W+R round:3 sgf:2016/3-ArmelDavidWolff-SatoshiHiraoka.sgf
       - 42-14 14:W+R round:1 sgf:2016/1-ArmelDavidWolff-BenjaminLockhart.sgf
       - 43-13 13:W+R round:1 sgf:2016/1-MiroslavPoliak-JanProkop.sgf
       - 43-42 42:W+2.5 round:4 sgf:2016/4-MiroslavPoliak-ArmelDavidWolff.sgf
       - 44-5 5:W+R round:1 sgf:2016/1-AmyYimeiSong-SatoshiHiraoka.sgf
       - 44-25 25:W+R round:6 sgf:2016/6-AmyYimeiSong-MattiSiivola.sgf
+      - 44-43 44:B+R round:5 sgf:2016/5-AmyYimeiSong-MiroslavPoliak.sgf
       - 45-12 12:W+R round:3 sgf:2016/3-AndrewLewisDavies-LukasKraemer.sgf
       - 45-33 33:W+15.5 round:2 sgf:2016/2-AndrewLewisDavies-EmrePolat.sgf
       - 47-43 43:W+R round:2 sgf:2016/2-ZoranMutabzija-MiroslavPoliak.sgf

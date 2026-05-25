@@ -27,6 +27,8 @@ stages:
       - 4-6 4:B+R round:7 sgf:2005/7-YeonghwiSeo-YasuroKikuchi.sgf
       - 6-1 1:W+6.5 round:4 sgf:2005/4-YasuroKikuchi-YuqingHu.sgf
       - 6-9 6:B+T round:6 sgf:2005/6-YasuroKikuchi-XianyuLi.sgf
+      - 6-19 6:B+12.5 round:8 sgf:2005/8-YasuroKikuchi-FrankJanssen.sgf
+      - 7-2 2:W+11.5 round:3 sgf:2005/3-ThomasHsiang-TaeweonCho.sgf
       - 7-54 7:B+R round:4 sgf:2005/4-ThomasHsiang-ErtugAkkol.sgf
       - 8-9 8:B+R round:3 sgf:2005/3-NaiSanChan-XianyuLi.sgf
       - 11-8 11:B+R round:4 sgf:2005/4-RadekNechanicky-NaiSanChan.sgf
