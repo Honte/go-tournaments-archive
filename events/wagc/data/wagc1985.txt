@@ -24,7 +24,7 @@
   17 Arnold Gunnar_von               2D SE  xxx    4   22   11 0      15-      16+      30+      18-      12-      29+      24+
   18 Diner Leon                      1D MX  xxx    3   26    9 0       4-      28+      24+      17+      11-       8-      16-
   19 Mutabzija Zoran                 5D YU  xxx    3   25    7 0      30+      26+       3-       5-      20+       9-      10-
-  20 Gostelli Patrice                3D CH  xxx    3   24    7 0      25+       2-       9-      24+      19-      15-      31+
+  20 Gosteli Patrice                3D CH  xxx    3   24    7 0      25+       2-       9-      24+      19-      15-      31+
   21 Winkelhofer Petr                5D CS  xxx    3   23    7 0      24+       8-      10-      14-      27+      16-      28+
   22 Siivola Matti                   2D FI  xxx    3   21    5 0       9-      31+      12-      30+      28+      14-      13-
   23 Chen John                       3D AU  xxx    3   19    5 0      10-       5-      27-      25+      24-      32+      29+

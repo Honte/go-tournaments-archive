@@ -6,13 +6,25 @@ stages:
       - wins
       - null
     games:
+      - 1-6 1:B+R round:3 sgf:1983/3-XiaochunMa-VladimirDanek.sgf
+      - 1-17 1:B+R round:1 sgf:1983/1-XiaochunMa-PingFaiTsang.sgf
       - 2-1 1:W+7.5 round:5 sgf:1983/5-HiroshiMiura-XiaochunMa.sgf
+      - 2-4 2:B+R round:4 sgf:1983/4-HiroshiMiura-YangLi.sgf
       - 3-1 1:W+R round:4 sgf:1983/4-ImamuraFumiaki-XiaochunMa.sgf
-      - 4-3 4:B+R round:5 sgf:1983/5-YangLi-FumiakiImamura.sgf
+      - 3-4 3:B+R round:5 sgf:1983/5-FumiakiImamura-LiYang.sgf
       - 6-5 5:W+R round:5 sgf:1983/5-VladimirDanek-ChuljungKim.sgf
       - 8-7 7:W+R round:5 sgf:1983/5-JimBartyHelmutWiltschek.sgf
       - 9-1 1:W+3.5 round:2 sgf:1983/2-RonaldSchlemper-XiaochunMa.sgf
+      - 10-9 9:W+R round:6 sgf:1983/6-MiguelFlusser-RonaldSchlemper.sgf
       - 11-12 11:B+32.5 round:6 sgf:1983/6-GunhoChoi-PierreAroutcheff.sgf
       - 14-13 13:W+22.5 round:6 sgf:1983/6-JohnBlair-JuanAlvarez.sgf
       - 15-16 15:B+R round:6 sgf:1983/6-CarlosTorres-SergioParimbelli.sgf
       - 18-17 17:W+R round:6 sgf:1983/6-SangdaeHahn-PingFaiTsang.sgf
+      - 19-24 19:B+26.5 round:4 sgf:1983/4-MartinDieterich-GinhorChan.sgf
+      - 20-31 20:B+R round:2 sgf:1983/2-RobertoIssacAlaluf-JoseDalisay.sgf
+      - 22-21 21:W+1.5 round:6 sgf:1983/6-PatriceGosteli-AndrasGondor.sgf
+      - 23-20 20:W+R round:4 sgf:1983/4-ChristerLindstedt-RobertoIssacAlaluf.sgf
+      - 23-24 23:B+12.5 round:6 sgf:1983/6-ChristerLindstedt-GinhorChan.sgf
+      - 26-25 25:W+7.5 round:5 sgf:1983/5-YoonbaeKim-JanuszKraszek.sgf
+      - 27-28 27:B+R round:5 sgf:1983/5-MattiSiivola-DagBelsnes.sgf
+      - 29-30 29:B+R round:5 sgf:1983/5-MiloslavJukicDixSandbeck.sgf

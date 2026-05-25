@@ -10,6 +10,57 @@ stages:
       - 17-24
       - 25-32
     games:
+      - 1-5 1:B+R round:3 sgf:1981/3-ZhenzhongShao-XiaoguangLiu.sgf
+      - 1-21 1:B+R round:2 sgf:1981/2-ZhenzhongShao-JanuszKraszek.sgf
       - 2-1 1:W+0.5 round:5 sgf:1981/5-XiaochunMa-ZhenzhongShao.sgf
       - 2-3 2:B+R round:4 sgf:1981/4-XiaochunMa-BunshoMurakami.sgf
+      - 2-8 2:B+R round:3 sgf:1981/3-XiaochunMa-TerenceStacey.sgf
+      - 2-11 2:B+R round:1 sgf:1981/1-XiaochunMa-HironoriHirata.sgf
+      - 2-20 2:B+R round:2 sgf:1981/2-XiaochunMaPatriceGosteli.sgf
+      - 3-4 3:B+10.5 round:5 sgf:1981/5-BunshoMurakami-SangdonPark.sgf
+      - 3-6 3:B+5.5 round:3 sgf:1981/3-BunshoMurakami-YoonsuhPark.sgf
+      - 3-14 3:B+R round:2 sgf:1981/2-BunshoMurakami-PeterGaspari.sgf
+      - 3-17 3:B+R round:1 sgf:1981/1-BunshoMurakami-KarolyVekey.sgf
       - 4-1 1:W+4.5 round:4 sgf:1981/4-SangdonPark-ZhenzhongShao.sgf
+      - 4-7 4:B+R round:3 sgf:1981/3-SangdonPark-RonSnyder.sgf
+      - 4-12 12:W+28.5 round:1 sgf:1981/1-SangdonPark-KeijiShimizu.sgf
+      - 6-5 5:W+R round:5 sgf:1981/5-YoonsuhPark-XiaoguangLiu.sgf
+      - 6-8 6:B+R round:4 sgf:1981/4-YoonsuhPark-TerenceStacey.sgf
+      - 6-10 6:B+39.5 round:2 sgf:1981/2-YoonsuhPark-HaichowChen.sgf
+      - 6-27 6:B+R round:1 sgf:1981/1-YoonsuhPark-EduardoLopezHerrero.sgf
+      - 7-5 5:W+R round:4 sgf:1981/4-RonSnyder-XiaoguangLiu.sgf
+      - 7-8 7:B+R round:5 sgf:1981/5-RonSnyder-TerenceStacey.sgf
+      - 7-15 7:B+R round:2 sgf:1981/2-RonSnyder-HelmutWiltschek.sgf
+      - 7-24 24:W+8.5 round:1 sgf:1981/1-RonSnyder-AndreMoussa.sgf
+      - 9-5 5:W+R round:2 sgf:1981/2-IldooMoon-XiaoguangLiu.sgf
+      - 9-10 10:W+14.5 round:6 sgf:1981/6-IldooMoon-HaichowChen.sgf
+      - 9-17 9:B+R round:3 sgf:1981/3-IldooMoon-KarolyVekey.sgf
+      - 9-22 9:B+R round:1 sgf:1981/1-IldooMoon-MilanKochandrle.sgf
+      - 10-12 10:B+R round:5 sgf:1981/5-HaichowChen-KeijiShimizu.sgf
+      - 10-14 10:B+R round:4 sgf:1981/4-HaichowChen-PeterGaspari.sgf
+      - 11-9 9:W+R round:5 sgf:1981/5-HironoriHirata-IldooMoon.sgf
+      - 11-12 11:B+R round:6 sgf:1981/6-HironoriHirata-KeijiShimizu.sgf
+      - 11-15 11:B+R round:4 sgf:1981/4-HironoriHirata-HelmutWiltschek.sgf
+      - 11-19 11:B+R round:3 sgf:1981/3-HironoriHirata-RobertRehm.sgf
+      - 11-25 11:B+R round:2 sgf:1981/2-HironoriHirata-DixSandbeck.sgf
+      - 13-9 9:W+R round:4 sgf:1981/4-MatthewMacfadyen-IldooMoon.sgf
+      - 13-10 10:W+8.5 round:1 sgf:1981/1-MatthewMacfadyen-HaichowChen.sgf
+      - 13-21 13:B+R round:3 sgf:1981/3-MatthewMacfadyen-JanuszKraszek.sgf
+      - 13-27 13:B+R round:2 sgf:1981/2-MatthewMacfadyen-EduardoLopezHerrero.sgf
+      - 14-28 14:B+4.5 round:1 sgf:1981/1-PeterGaspari-JohnChen.sgf
+      - 15-31 15:B+R round:1 sgf:1981/1-HelmutWiltschek-FranciscoGarciadelaBanda.sgf
+      - 16-8 8:W+4.5 round:2 sgf:1981/2-YoshikoKamekura-TerenceStacey.sgf
+      - 16-12 12:W+0.5 round:4 sgf:1981/4-YoshikoKamekura-KeijiShimizu.sgf
+      - 16-23 16:B+R round:1 sgf:1981/1-YoshikoKamekura-SychingsonJohnson.sgf
+      - 18-1 1:W+R round:1 sgf:1981/1-JurgenMattern-ZhenzhongShao.sgf
+      - 18-10 10:W+3.5 round:3 sgf:1981/3-JurgenMattern-HaichowChen.sgf
+      - 19-4 4:W+R round:2 sgf:1981/2-RobertRehm-SangdonPark.sgf
+      - 22-14 14:W+3.5 round:3 sgf:1981/3-MilanKochandrle-PeterGaspari.sgf
+      - 23-15 15:W+R round:3 sgf:1981/3-SychingsonJohnson-HelmutWiltschek.sgf
+      - 25-20 20:W+28.5 round:1 sgf:1981/1-DixSandbeck-PatriceGosteli.sgf
+      - 26-12 12:W+R round:2 sgf:1981/2-BarryPhease-KeijiShimizu.sgf
+      - 26-19 19:W+R round:1 sgf:1981/1-BarryPhease-RobertRehm.sgf
+      - 28-17 17:W+3.5 round:2 sgf:1981/2-JohnChen-KarolyVekey.sgf
+      - 29-5 5:W+R round:1 sgf:1981/1-PeringeOlsson-XiaoguangLiu.sgf
+      - 30-8 8:W+R round:1 sgf:1981/1-MinoruTaniguchi-TerenceStacey.sgf
+      - 31-24 24:W+4.5 round:2 sgf:1981/2-FranciscoGarciadelaBanda-AndreMoussa.sgf

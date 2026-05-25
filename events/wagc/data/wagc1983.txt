@@ -24,7 +24,7 @@
 19	Dieterich Martin	4d	DE	xxx	3	3	7-	0+	14-	24+	18-	20+
 20	Alaluf Roberto-Issac	3d	AR	xxx	2	2	8-	31+	13-	23+	17-	19-
 21	Gondor Andras	3d	HU	xxx	3	3	6-	30+	16-	17-	23+	22+
-22	Gostelli Patrice	3d	CH	xxx	2	2	13-	26+	15-	18-	24+	21-
+22	Gosteli Patrice	3d	CH	xxx	2	2	13-	26+	15-	18-	24+	21-
 23	Lindstedt Christer	2d	SE	xxx	2	2	11-	27+	12-	20-	21-	24+
 24	Chan Gin-hor	4d	SG	xxx	1	1	10-	28+	9-	19-	22-	23-
 25	Kraszek Janusz	5d	PL	xxx	3	3	9-	17-	30+	27+	26+	?
@@ -33,4 +33,4 @@
 28	Belsnes Dag	1k	NO	xxx	1	1	4-	24-	0+	26-	27-	?
 29	Jukic Miloslav	4d	YU	xxx	2	2	5-	18-	26-	0+	30+	?
 30	Sandbeck Dix	3d	DK	xxx	1	1	14-	21-	25-	31+	29-	?
-31	Dasilay Jose	1d	PH	xxx	0	0	15-	20-	27-	30-	?	?
+31	Dalisay Jose	1d	PH	xxx	0	0	15-	20-	27-	30-	?	?
