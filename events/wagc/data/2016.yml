@@ -159,9 +159,11 @@ stages:
       - 50-48 48:W+R round:8 sgf:2016/8-GabrielHissaoMakio-FilippoGorlero.sgf
       - 50-54 54:W+0.5 round:2 sgf:2016/2-GabrielHissaoMakio-AnastasiyaIlkevich.sgf
       - 51-16 16:W+R round:3 sgf:2016/3-VascoPimenta-LaurentHeiser.sgf
+      - 51-45 45:W+R round:5 sgf:2016/5-VascoPimenta-AndrewLewisDavies.sgf
       - 52-43 43:W+R round:6 sgf:2016/6-BattulgaByambaakhuu-MiroslavPoliak.sgf
       - 52-45 45:W+R round:7 sgf:2016/7-BattulgaByambaakhuu-AndrewLewisDavies.sgf
       - 52-47 47:W+R round:3 sgf:2016/3-BattulgaByambaakhuu-ZoranMutabzija.sgf
+      - 53-50 50:W+R round:6 sgf:2016/6-LinglinXu-GabrielHissaoMakio.sgf
       - 54-19 19:W+R round:4 sgf:2016/4-AnastasiyaIlkevich-ChahineKoleejan.sgf
       - 54-36 36:W+R round:1 sgf:2016/1-AnastasiyaIlkevich-EmilGarcia.sgf
       - 54-48 48:W+20.5 round:6 sgf:2016/6-AnastasiyaIlkevich-FilippoGorlero.sgf
