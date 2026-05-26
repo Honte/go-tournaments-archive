@@ -22,11 +22,14 @@ stages:
       - 1-28 1:B+R round:2 sgf:2016/2-BaoxiangBai-NelisVets.sgf
       - 1-37 1:B+R round:1 sgf:2016/1-BaoxiangBai-GregorButala.sgf
       - 2-1 1:W+R round:6 sgf:2016/6-KibaekKim-BaoxiangBai.sgf
+      - 2-3 2:B+R round:4 sgf:2016/4-KibaekKim-ChiaChengHsu.sgf
       - 2-6 2:B+R round:3 sgf:2016/3-KibaekKim-CsabaMero.sgf
       - 2-49 2:B+R round:1 sgf:2016/1-KibaekKim-JohnGibson.sgf
       - 3-1 1:W+R round:8 sgf:2016/8-ChiaChengHsu-BaoxiangBai.sgf
+      - 3-4 3:B+R round:6 sgf:2016/6-ChiaChengHsu-AndriiKravets.sgf
       - 3-7 3:B+1.5 round:1 sgf:2016/1-ChiaChengHsu-DusanMitic.sgf
       - 3-16 3:B+R round:7 sgf:2016/7-ChiaChengHsu-LaurentHeiser.sgf
+      - 3-30 3:B+R round:3 sgf:2016/3-ChiaChengHsu-ManuelVelasco.sgf
       - 4-1 1:W+R round:5 sgf:2016/5-AndriiKravets-BaoxiangBai.sgf
       - 4-8 4:B+6.5 round:1 sgf:2016/1-AndriiKravets-CristianPop.sgf
       - 4-10 4:B+19.5 round:2 sgf:2016/2-AndriiKravets-ChiHinChan.sgf
@@ -42,6 +45,7 @@ stages:
       - 8-9 8:B+R round:7 sgf:2016/7-CristianPop-JunfuDai.sgf
       - 8-12 8:B+R round:5 sgf:2016/5-CristianPop-LukasKraemer.sgf
       - 8-25 8:B+R round:4 sgf:2016/4-CristianPop-MattiSiivola.sgf
+      - 8-46 8:B+R round:2 sgf:2016/2-CristianPop-EichinAliyev.sgf
       - 9-5 5:W+R round:6 sgf:2016/6-JunfuDai-SatoshiHiraoka.sgf
       - 9-17 9:B+R round:2 sgf:2016/2-JunfuDai-StanislawFrejlak.sgf
       - 9-28 9:B+R round:8 sgf:2016/8-JunfuDai-NelisVets.sgf
@@ -111,6 +115,7 @@ stages:
       - 29-26 26:W+F round:3 sgf:2016/3-NhatMinhVo-FuKangChang.sgf
       - 29-31 29:B+1.5 round:2 sgf:2016/2-NhatMinhVo-MerlijnKuin.sgf
       - 29-36 29:B+3.5 round:5 sgf:2016/5-NhatMinhVo-EmilGarcia.sgf
+      - 30-19 30:B+R round:2 sgf:2016/2-ManuelVelasco-ChahineKoleejan.sgf
       - 30-22 22:W+1.5 round:4 sgf:2016/4-ManuelVelasco-TalMichaeli.sgf
       - 30-39 30:B+R round:6 sgf:2016/6-ManuelVelasco-SinVoonChin.sgf
       - 31-17 17:W+R round:5 sgf:2016/5-MerlijnKuin-StanislawFrejlak.sgf
@@ -149,6 +154,9 @@ stages:
       - 44-43 44:B+R round:5 sgf:2016/5-AmyYimeiSong-MiroslavPoliak.sgf
       - 45-12 12:W+R round:3 sgf:2016/3-AndrewLewisDavies-LukasKraemer.sgf
       - 45-33 33:W+15.5 round:2 sgf:2016/2-AndrewLewisDavies-EmrePolat.sgf
+      - 46-23 23:W+R round:5 sgf:2016/5-EichinAliyev-YiFeiYue.sgf
+      - 46-31 31:W+R round:3 sgf:2016/3-EichinAliyev-MerlijnKuin.sgf
+      - 46-54 46:B+R round:7 sgf:2016/7-EichinAliyev-AnastasiyaIlkevich.sgf
       - 47-29 29:W+0.5 round:4 sgf:2016/4-ZoranMutabzija-NhatMinhVo.sgf
       - 47-36 47:B+R round:6 sgf:2016/6-ZoranMutabzija-EmilGarcia.sgf
       - 47-43 43:W+R round:2 sgf:2016/2-ZoranMutabzija-MiroslavPoliak.sgf

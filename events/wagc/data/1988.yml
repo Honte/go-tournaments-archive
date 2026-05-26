@@ -44,7 +44,7 @@ stages:
       - 13-5 5:W+R round:7 sgf:1988/7-PiersShepperson-TsangPingFai.sgf
       - 13-16 13:B+20.5 round:4 sgf:1988/4-PiersShepperson-JosteinFlood.sgf
       - 13-36 13:B+R round:3 sgf:1988/3-PiersShepperson-PitayaJear.sgf
-      - 14-7 14:B+? round:3 sgf:1988/3-GillesZemor-LaurentHeiser.sgf
+      - 14-7 14:B+0.5 round:3 sgf:1988/3-GillesZemor-LaurentHeiser.sgf
       - 15-13 13:W+14.5 round:8 sgf:1988/8-VladimirDanek-PiersShepperson.sgf
       - 15-23 15:B+R round:3 sgf:1988/3-VladimirDanek-MattiSiivola.sgf
       - 16-6 6:W+T round:5 sgf:1988/5-JosteinFlood-EgbertRittner.sgf
