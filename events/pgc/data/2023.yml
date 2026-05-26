@@ -48,7 +48,7 @@ stages:
         - dj-mw dj:B+R sgf:2023/2023-5-djurkiewicz-mwalaszewski.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/mmGrbGQREBia5xZ6avN9 yt:https://www.youtube.com/watch?v=Ct9SN2E6EkI
       - - jf-kh kh:W+8.5 sgf:2023/2023-6-jfraczak-khabu.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/4X1XflWJRF3h1jgZJydd yt:https://www.youtube.com/watch?v=mSL5Kf_jfr4
         - mm-cc cc:W+R sgf:2023/2023-6-mmajka-cczernecki.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/EPPiuSduRArlowtGyoN6 yt:https://www.youtube.com/watch?v=h3g2HASOBck
-        - ls-dj dj:W+R yt:https://www.youtube.com/watch?v=monRxXo8BCE
+        - ls-dj dj:W+17.5 sgf:2023/2023-6-lsoldan-djurkiewicz.sgf yt:https://www.youtube.com/watch?v=monRxXo8BCE
         - mw-kc mw:B+R sgf:2023/2023-6-mwalaszewski-kcieslak.sgf yt:https://www.youtube.com/watch?v=jO9qo1DVg7I
       - - kh-cc kh:B+4.5 sgf:2023/2023-7-khabu-cczernecki.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/Y0tk7E5LDom356ifBETF yt:https://www.youtube.com/watch?v=3n_G7-i0GyM
         - jf-mm mm:W+R sgf:2023/2023-7-jfraczak-mmajka.sgf yt:https://www.youtube.com/watch?v=y_tGkcUhOto
