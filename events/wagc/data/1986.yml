@@ -22,3 +22,4 @@ stages:
       - 7-6 6:W+R round:3 sgf:1986/3-RonaldSchlemper-JanuszKraszek.sgf
       - 8-5 8:B+R round:5 sgf:1986/5-RadePetrovic-MirngjihnChern.sgf
       - 14-15 14:B+19.5 round:4 sgf:1986/4-RonSnyder-IvanDetkov.sgf
+      - 27-15 15:W+23.5 round:1 sgf:1986/1-WolfgangIsele-IvanDetkov.sgf

@@ -21,6 +21,7 @@ stages:
       - 2-3 2:B+5.5 round:7 sgf:2010/7-ChenWang-TaeweonCho.sgf
       - 2-6 2:B+R round:6 sgf:2010/6-ChenWang-ZhengxunChen.sgf
       - 2-19 2:B+R round:3 sgf:2010/3-ChenWang-OferZivony.sgf
+      - 3-21 3:B+R round:1 sgf:2010/1-TaeweonCho-VesaLaatikainen.sgf
       - 4-1 1:W+R round:6 sgf:2010/6-NaiSanChan-HongsukSong.sgf
       - 4-2 2:W+0.5 round:8 sgf:2010/8-NaiSanChan-ChenWang.sgf
       - 5-1 1:W+8.5 round:8 sgf:2010/8-OndrejSilt-HongsukSong.sgf

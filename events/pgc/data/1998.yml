@@ -28,12 +28,12 @@ stages:
         - jc-mf jc:W+R sgf:1998/1998-league-1-mferenc-jchlodek.sgf
         - jl-kgr jl:B+R sgf:1998/1998-league-1-jlubos-kgrabowski.sgf
       - - ls-kgr ls
-        - kg-jc kg:W sgf:1998/1998-league-2-jchlodek-kgiedrojc.sgf
+        - kg-jc kg:W+? sgf:1998/1998-league-2-jchlodek-kgiedrojc.sgf
         - jl-ku jl:W+6.5 sgf:1998/1998-league-2-kurtnowski-jlubos.sgf
         - mf-dt mf:W+R sgf:1998/1998-league-2-dtargosz-mferenc.sgf
       - - ls-ku ls
         - kg-dt kg:B+24.5 sgf:1998/1998-league-3-kgiedrojc-dtargosz.sgf
-        - jc-jl jc:W sgf:1998/1998-league-3-jlubos-jchlodek.sgf
+        - jc-jl jc:W+? sgf:1998/1998-league-3-jlubos-jchlodek.sgf
         - kgr-mf kgr:W+6.5 sgf:1998/1998-league-3-mferenc-kgrabowski.sgf
       - - ls-jc ls
         - kg-kgr kg
@@ -45,7 +45,7 @@ stages:
         - dt-jc dt:W+R sgf:1998/1998-league-5-jchlodek-dtargosz.sgf
       - - ls-kg ls
         - jc-kgr jc
-        - ku-dt ku:W sgf:1998/1998-league-6-dtargosz-kurtnowski.sgf
+        - ku-dt ku:W+? sgf:1998/1998-league-6-dtargosz-kurtnowski.sgf
         - mf-jl mf
       - - ls-jl ls
         - kg-mf kg

@@ -5,7 +5,7 @@ import { makeSgfInfo } from '@tools/sgfMatcher/mocks';
 import { matchExplicitSgfs } from './explicit';
 
 describe('matchExplicitSgfs', () => {
-  it('matches explicit games when SGF color order is reversed from the YAML result', () => {
+  it('uses SGF winner color and result when matching explicit games', () => {
     const tournament: InputTournament = {
       players: {
         kc: 'Kamil Chwedyna 4d',
@@ -37,7 +37,79 @@ describe('matchExplicitSgfs', () => {
       force: false,
     });
 
-    assert.deepEqual(result.matchedEntries, ['kc-ak kc:B+20.5 sgf:2025-league-1-kc-ak.sgf']);
+    assert.deepEqual(result.matchedEntries, ['kc-ak kc:W+20.5 sgf:2025-league-1-kc-ak.sgf']);
+    assert.deepEqual(result.unmatchedEntries, []);
+  });
+
+  it('does not change the YAML winner when SGF result points to the other player', () => {
+    const tournament: InputTournament = {
+      players: {
+        kc: 'Kamil Chwedyna 4d',
+        ak: 'Arkadiusz Kindziuk 1d',
+      },
+      stages: [],
+    };
+    const sgf = makeSgfInfo({
+      path: '2025-league-1-kc-ak.sgf',
+      sgfBlackName: 'Arkadiusz Kindziuk',
+      sgfWhiteName: 'Kamil Chwedyna',
+      filenameBlackName: 'kc',
+      filenameWhiteName: 'ak',
+      filenameRound: 1,
+      filenameStage: 'league',
+      rawResult: 'B+20.5',
+      cleanResult: 'B+20.5',
+    });
+
+    const result = matchExplicitSgfs({
+      tournament,
+      stage: {
+        type: 'league',
+        date: '2025-01-01',
+        rounds: [['kc-ak kc']],
+      },
+      sgfPaths: [sgf.path],
+      sgfInfos: [sgf],
+      force: false,
+    });
+
+    assert.deepEqual(result.matchedEntries, []);
+    assert.deepEqual(result.unmatchedEntries[0]?.reasons, ['result conflict']);
+  });
+
+  it('does not use filename order to assign winner color when SGF player metadata is missing', () => {
+    const tournament: InputTournament = {
+      players: {
+        kc: 'Kamil Chwedyna 4d',
+        ak: 'Arkadiusz Kindziuk 1d',
+      },
+      stages: [],
+    };
+    const sgf = makeSgfInfo({
+      path: '2025-league-1-ak-kc.sgf',
+      sgfBlackName: null,
+      sgfWhiteName: null,
+      filenameBlackName: 'ak',
+      filenameWhiteName: 'kc',
+      filenameRound: 1,
+      filenameStage: 'league',
+      rawResult: 'B+R',
+      cleanResult: 'B+R',
+    });
+
+    const result = matchExplicitSgfs({
+      tournament,
+      stage: {
+        type: 'league',
+        date: '2025-01-01',
+        rounds: [['kc-ak kc']],
+      },
+      sgfPaths: [sgf.path],
+      sgfInfos: [sgf],
+      force: false,
+    });
+
+    assert.deepEqual(result.matchedEntries, ['kc-ak kc:B+R sgf:2025-league-1-ak-kc.sgf']);
     assert.deepEqual(result.unmatchedEntries, []);
   });
 

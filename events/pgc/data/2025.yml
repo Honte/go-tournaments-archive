@@ -27,7 +27,7 @@ stages:
       - starting
     rounds:
       - - mm-kh kh:W+R sgf:2025/2025-1-mmajka-khabu.sgf yt:https://youtube.com/watch?v=iGdigfWJ2ec
-        - mw-ls mw:B+1.5 yt:https://www.youtube.com/watch?v=T11-0QPEyz4,https://www.youtube.com/watch?v=LI_rOpwIKb0
+        - mw-ls mw:B+1.5 sgf:2025/2025-1-mwalaszewski-lsoldan.sgf yt:https://www.youtube.com/watch?v=T11-0QPEyz4,https://www.youtube.com/watch?v=LI_rOpwIKb0
         - ml-cc cc:W+41.5 sgf:2025/2025-1-mlubinski-cczernecki.sgf yt:https://youtube.com/watch?v=YZ4SYUF-zNM
         - mk-sf sf:W+R sgf:2025/2025-1-mkosz-sfrejlak.sgf yt:https://youtube.com/watch?v=Wnjv0jMY59k
       - - ls-mm mm:W+7.5 sgf:2025/2025-2-lsoldan-mmajka.sgf yt:https://www.youtube.com/live/RHr01aPKEUs,https://www.youtube.com/live/NNLF340yetk,https://www.youtube.com/live/q3oXeEaw474
