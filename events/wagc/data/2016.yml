@@ -33,6 +33,7 @@ stages:
       - 5-3 3:W+5.5 round:2 sgf:2016/2-SatoshiHiraoka-ChiaChengHsu.sgf
       - 5-10 5:B+R round:8 sgf:2016/8-SatoshiHiraoka-ChiHinChan.sgf
       - 5-13 5:B+R round:4 sgf:2016/4-SatoshiHiraoka-JanProkop.sgf
+      - 5-22 5:B+R round:5 sgf:2016/5-SatoshiHiraoka-TalMichaeli.sgf
       - 6-7 7:W+11.5 round:4 sgf:2016/4-CsabaMero-DusanMitic.sgf
       - 6-23 6:B+R round:7 sgf:2016/7-CsabaMero-YiFeiYue.sgf
       - 6-35 6:B+R round:2 sgf:2016/2-CsabaMero-SantiagoEspinosaUribe.sgf

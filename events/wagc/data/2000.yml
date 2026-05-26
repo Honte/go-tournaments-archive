@@ -35,6 +35,7 @@ stages:
       - 7-10 10:W+R round:6 sgf:2000/6-DavidSchoffel-YeeHsunWang.sgf
       - 7-13 7:B+4.5 round:4 sgf:2000/4-DavidSchoffel-AndrejKhmyrov.sgf
       - 7-23 23:W+R round:8 sgf:2000/8-DavidSchoffel-PaiYeeChu.sgf
+      - 8-10 8:B+R round:8 sgf:2000/8-IonFlorescu-YeeHsunWang.sgf
       - 8-29 8:B+R round:1 sgf:2000/1-IonFlorescu-MiroslavPoliak.sgf
       - 9-8 9:B+T round:4 sgf:2000/4-PingqiangZhou-IonFlorescu.sgf
       - 9-26 9:B+R round:6 sgf:2000/6-PingqiangZhou-JosteinFlood.sgf
