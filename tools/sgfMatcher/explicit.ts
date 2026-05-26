@@ -54,6 +54,7 @@ type ExplicitCandidate = {
 };
 
 const SGF_REGEX = /\bsgf:(\S+)/;
+const RESULT_CONFLICT_REASON = 'result conflict';
 
 export async function processExplicitStage({
   tournament,
@@ -135,6 +136,12 @@ export function matchExplicitSgfs({
 
     const entry = candidates[0];
     const entryKey = entry.path.join('.');
+    const sgfResult = getMatchedExplicitSgfResult(entry, sgf, playerIds);
+
+    if (sgfResult && sgfResult.winner !== entry.winner) {
+      unmatchedEntries.push(buildExplicitUnmatchedEntry(sgf, playerIds, [RESULT_CONFLICT_REASON]));
+      continue;
+    }
 
     if (entry.sgf && currentSgfPaths.has(entry.sgf) && !force) {
       unmatchedEntries.push(buildExplicitUnmatchedEntry(sgf, playerIds, [MATCHING_GAME_ALREADY_HAS_SGF_REASON]));
@@ -165,7 +172,7 @@ export function matchExplicitSgfs({
       continue;
     }
 
-    const value = buildSgfEntryString(buildMatchedExplicitEntry(candidate.entry, candidate.sgf.path));
+    const value = buildSgfEntryString(buildMatchedExplicitEntry(candidate.entry, candidate.sgf, candidate.players));
     inlineUpdates.push({ path: candidate.entry.path, value });
     matchedEntries.push(value);
 
@@ -302,16 +309,36 @@ function parseExplicitEntry(
   };
 }
 
-function buildMatchedExplicitEntry(entry: ExplicitGameEntry, sgfPath: string): SgfMatchResult {
+function buildMatchedExplicitEntry(entry: ExplicitGameEntry, sgf: SgfInfo, players: ExplicitPlayerIds): SgfMatchResult {
+  const sgfResult = getMatchedExplicitSgfResult(entry, sgf, players);
+
   return {
     black: entry.home,
     white: entry.away,
     winner: entry.winner,
-    result: entry.result,
+    result: sgfResult?.result ?? entry.result,
     round: null,
-    sgf: sgfPath,
+    sgf: sgf.path,
     props: entry.props,
   };
+}
+
+function getMatchedExplicitSgfResult(
+  entry: ExplicitGameEntry,
+  sgf: SgfInfo,
+  players: ExplicitPlayerIds
+): { winner: string; result: string } | null {
+  if (!sgf.cleanResult || (sgf.cleanResult[0] !== 'B' && sgf.cleanResult[0] !== 'W')) {
+    return null;
+  }
+
+  if (!sgf.sgfBlackName && !sgf.sgfWhiteName) {
+    return { winner: entry.winner, result: sgf.cleanResult.replace(/\+$/, '') };
+  }
+
+  const winner = sgf.cleanResult[0] === 'B' ? players.blackId : players.whiteId;
+
+  return winner ? { winner, result: sgf.cleanResult.replace(/\+$/, '') } : null;
 }
 
 function buildYamlPlayersMap(players: InputTournament['players']): Map<string, string> {
