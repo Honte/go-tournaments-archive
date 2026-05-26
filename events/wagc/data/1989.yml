@@ -14,23 +14,83 @@ stages:
     findSharedPlaces: true
     games:
       - 1-2 1:B+R round:4 sgf:1989/4-ZewuChe-WenheTsai.sgf
+      - 1-10 1:B+R round:8 sgf:1989/8-ZewuChe-StefanBudig.sgf
+      - 2-3 2:B+R round:7 sgf:1989/7-WenheTsai-HironoriHirata.sgf
+      - 2-4 2:B+R round:8 sgf:1989/8-WenheTsai-HakyeongYi.sgf
+      - 2-14 2:B+R round:2 sgf:1989/2-WenheTsai-MarkBoon.sgf
       - 2-18 18:W+2.5 round:5 sgf:1989/5-WenheTsai-HongsooShin.sgf
       - 3-1 1:W+0.5 round:5 sgf:1989/5-HironoriHirata-ZewuChe.sgf
+      - 3-5 3:B+R round:3 sgf:1989/3-HironoriHirata-HelmutHasibeder.sgf
       - 4-1 4:B+R round:7 sgf:1989/7-HakyeongYi-ZewuChe.sgf
+      - 4-3 4:B+R round:4 sgf:1989/4-HakyeongYi-HironoriHirata.sgf
+      - 4-13 4:B+21.5 round:2 sgf:1989/2-HakyeongYi-AndrasGondor.sgf
+      - 5-1 1:W+R round:6 sgf:1989/6-HelmutHasibeder-ZewuChe.sgf
+      - 5-11 5:B+5.5 round:7 sgf:1989/7-HelmutHasibeder-AndreMoussa.sgf
       - 5-27 5:B+R round:2 sgf:1989/2-HelmutHasibeder-PhilipNicolet.sgf
+      - 6-1 1:W+R round:2 sgf:1989/2-LaurentHeiser-ZewuChe.sgf
       - 6-7 7:W+R round:5 sgf:1989/5-LaurentHeiser-JanuszKraszek.sgf
       - 6-8 6:B+R round:8 sgf:1989/8-LaurentHeiser-RadePetrovic.sgf
+      - 6-11 6:B+R round:3 sgf:1989/3-LaurentHeiser-AndreMoussa.sgf
       - 6-14 6:B+1.5 round:7 sgf:1989/7-LaurentHeiser-MarkBoon.sgf
+      - 6-24 6:B+29.5 round:6 sgf:1989/6-LaurentHeiser-MunKangLiu.sgf
+      - 7-2 2:W+R round:6 sgf:1989/6-JanuszKraszek-WenheTsai.sgf
+      - 7-3 3:W+R round:8 sgf:1989/8-JanuszKraszek-HironoriHirata.sgf
+      - 7-13 13:W+R round:1 sgf:1989/1-JanuszKraszek-AndrasGondor.sgf
+      - 7-18 7:B+3.5 round:7 sgf:1989/7-JanuszKraszek-HongsooShin.sgf
+      - 8-4 4:W+14.5 round:5 sgf:1989/5-RadePetrovic-HakyeongYi.sgf
       - 8-5 5:W+R round:1 sgf:1989/1-RadePetrovic-HelmutHasibeder.sgf
+      - 8-18 8:B+6.5 round:6 sgf:1989/6-RadePetrovic-HongsooShin.sgf
+      - 9-4 4:W+27.5 round:6 sgf:1989/6-PetrWinkelhofer-YiHakyeong.sgf
+      - 9-10 10:W+5.5 round:7 sgf:1989/7-PetrWinkelhofer-StefanBudig.sgf
       - 9-11 9:B+4.5 round:4 sgf:1989/4-PetrWinkelhofer-AndreMoussa.sgf
       - 9-28 9:B+R round:1 sgf:1989/1-PetrWinkelhofer-KazuoKawai.sgf
+      - 10-20 10:B+3.5 round:5 sgf:1989/5-StefanBudig-VesaLaatikainen.sgf
       - 10-23 10:B+10.5 round:1 sgf:1989/1-StefanBudig-SunghwaHong.sgf
+      - 11-19 11:B+10.5 round:6 sgf:1989/6-AndreMoussa-MihaiBisca.sgf
+      - 12-8 8:W+4.5 round:4 sgf:1989/4-SangdaeHahn-RadePetrovic.sgf
+      - 12-30 12:B+R round:2 sgf:1989/2-SangdaeHahn-VincentLemaitre.sgf
+      - 14-12 14:B+8.5 round:6 sgf:1989/6-MarkBoon-SangdaeHahn.sgf
+      - 15-1 15:B+R round:3 sgf:1989/3-KinmanLau-ZewuChe.sgf
       - 15-7 7:W+R round:4 sgf:1989/4-KinmanLau-JanuszKraszek.sgf
+      - 15-20 15:B+R round:1 sgf:1989/1-KinmanLau-VesaLaatikainen.sgf
+      - 15-29 15:B+R round:5 sgf:1989/5-KinmanLau-SergioParimbelli.sgf
       - 16-2 2:W+R round:3 sgf:1989/3-AlexejLazarev-WenheTsai.sgf
       - 16-8 8:W+6.5 round:7 sgf:1989/7-AlexejLazarev-RadePetrovic.sgf
+      - 16-9 9:W+5.5 round:5 sgf:1989/5-AlexejLazarev-PetrWinkelhofer.sgf
+      - 16-11 11:W+14.5 round:8 sgf:1989/8-AlexejLazarev-AndreMoussa.sgf
+      - 16-24 16:B+10.5 round:2 sgf:1989/2-AlexejLazarev-MunKangLiu.sgf
       - 16-31 16:B+R round:1 sgf:1989/1-AlexejLazarev-KorsakChairasmisak.sgf
       - 17-5 5:W+R round:5 sgf:1989/5-MalteSchuster-HelmutHasibeder.sgf
+      - 17-9 9:W+R round:8 sgf:1989/8-MalteSchuster-PetrWinkelhofer.sgf
       - 17-10 10:W+R round:6 sgf:1989/6-MalteSchuster-StefanBudig.sgf
       - 17-14 14:W+7.5 round:1 sgf:1989/1-MalteSchuster-MarkBoon.sgf
+      - 17-29 17:B+R round:7 sgf:1989/7-MalteSchuster-SergioParimbelli.sgf
+      - 18-4 4:W+R round:3 sgf:1989/3-HongsooShin-HakyeongYi.sgf
+      - 18-10 18:B+R round:4 sgf:1989/4-HongsooShin-StefanBudig.sgf
+      - 19-25 19:B+R round:5 sgf:1989/5-MihaiBisca-KyleJones.sgf
+      - 20-12 12:W+R round:7 sgf:1989/7-VesaLaatikainen-SangdaeHahn.sgf
+      - 21-5 5:W+R round:8 sgf:1989/8-ChoonHuatLee-HelmutHasibeder.sgf
       - 22-4 4:W+25.5 round:1 sgf:1989/1-JimBarty-HakyeongYi.sgf
+      - 22-13 13:W+6.5 round:7 sgf:1989/7-JimBarty-AndrasGondor.sgf
+      - 22-27 22:B+R round:4 sgf:1989/4-JimBarty-PhilipNicolet.sgf
+      - 22-33 22:B+R round:2 sgf:1989/2-JimBarty-AlbertoAmador.sgf
+      - 23-12 12:W+R round:8 sgf:1989/8-SunghwaHong-SangdaeHahn.sgf
+      - 23-14 14:W+17.5 round:5 sgf:1989/5-SunghwaHong-MarkBoon.sgf
+      - 25-15 25:B+0.5 round:8 sgf:1989/8-KyleJones-KinmanLau.sgf
+      - 25-20 20:W+14.5 round:6 sgf:1989/6-KyleJones-VesaLaatikainen.sgf
+      - 25-28 25:B+1.5 round:4 sgf:1989/4-KyleJones-KazuoKawai.sgf
+      - 26-12 12:W+R round:5 sgf:1989/5-MortenMortensen-SangdaeHahn.sgf
+      - 26-22 22:W+R round:6 sgf:1989/6-MortenMortensen-JimBarty.sgf
+      - 26-36 26:B+20.5 round:3 sgf:1989/3-MortenMortensen-JuanCarlosCarrillo.sgf
+      - 28-17 17:W+R round:2 sgf:1989/2-KazuoKawai-MalteSchuster.sgf
+      - 28-30 28:B+R round:7 sgf:1989/7-KazuoKawai-VincentLemaitre.sgf
+      - 29-19 29:B+24.5 round:2 sgf:1989/2-SergioParimbelli-MihaiBisca.sgf
+      - 29-35 29:B+R round:3 sgf:1989/3-SergioParimbelli-CarlosAsato.sgf
+      - 31-21 21:W+20.5 round:4 sgf:1989/4-KorsakChairasmisak-ChoonHuatLee.sgf
+      - 31-34 31:B+R round:3 sgf:1989/3-KorsakChairasmisak-JuanJoseRivaud.sgf
+      - 32-11 11:W+R round:2 sgf:1989/2-EuisukChung-AndreMoussa.sgf
       - 36-11 11:W+25.5 round:1 sgf:1989/1-JuanCarlosCarrillo-AndreMoussa.sgf
+      - 36-35 35:W+1.5 round:4 sgf:1989/4-JuanCarlosCarrillo-CarlosAsato.sgf
+      - 37-36 36:W+1.5 round:7 sgf:1989/7-FredrikDahl-JuanCarlosCarrillo.sgf
+      - 38-33 33:W+R round:3 sgf:1989/3-LuverneGueco-AlbertoAmador.sgf
+      - 38-37 37:W+R round:4 sgf:1989/4-LuverneGueco-FredrikDahl.sgf

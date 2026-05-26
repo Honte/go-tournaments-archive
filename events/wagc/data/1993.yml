@@ -13,5 +13,10 @@ stages:
       - sodos
     findSharedPlaces: true
     games:
+      - 1-2 2:W+2.5 round:6 sgf:1993/6-YiguoSun-SoonjooSeo.sgf
       - 3-1 1:W+4.5 round:5 sgf:1993/5-HironoriHirata-YiguoSan.sgf
+      - 3-2 3:B+R round:7 sgf:1993/7-HironoriHirata-SoonjooSeo.sgf
       - 5-1 1:W+5.5 round:4 sgf:1993/4-RonaldSchlemper-YiguoSun.sgf
+      - 6-14 6:B+R round:2 sgf:1993/2-YeongsamMun-SangdaeHahn.sgf
+      - 7-4 4:W+3.5 round:3 sgf:1993/3-YingKan-ChunHsunChou.sgf
+      - 8-10 8:B+28.5 round:5 sgf:1993/5-JuneKiBeck-BernhardScheid.sgf

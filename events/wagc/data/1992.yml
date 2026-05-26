@@ -15,12 +15,86 @@ stages:
       - direct
     findSharedPlaces: true
     games:
+      - 1-7 1:B+R round:6 sgf:1992/6-YasuroKikuchi-YingKan.sgf
+      - 1-8 1:B+R round:3 sgf:1992/3-YasuroKikuchi-FrankJanssen.sgf
       - 2-1 1:W+R round:5 sgf:1992/5-YongmanYi-YasuroKikuchi.sgf
+      - 2-8 2:B+R round:8 sgf:1992/8-YongmanYi-FrankJanssen.sgf
+      - 2-16 2:B+R round:2 sgf:1992/2-YongmanYi-CheongTatYeo.sgf
       - 3-1 3:B+0.5 round:7 sgf:1992/7-QiYuHan-YasuroKikuchi.sgf
       - 3-2 2:W+11.5 round:4 sgf:1992/4-QuYuHan-YongmanYi.sgf
+      - 3-5 3:B+R round:6 sgf:1992/6-QiYuHan-MatthewMacfadyen.sgf
+      - 3-9 3:B+11.5 round:3 sgf:1992/3-QiYuHan-AlexejLazarev.sgf
+      - 3-14 3:B+8.5 round:2 sgf:1992/2-HanQiYu-JurgenMattern.sgf
       - 4-1 1:W+26.5 round:8 sgf:1992/8-LaurentHeiser-YasuroKikuchi.sgf
+      - 4-6 4:B+R round:6 sgf:1992/6-LaurentHeiser-YupangKou.sgf
       - 4-7 7:W+9.5 round:4 sgf:1992/4-LaurentHeiser-YingKan.sgf
       - 4-8 4:B+0.5 round:5 sgf:1992/5-LaurentHeiser-FrankJanssen.sgf
+      - 4-9 4:B+2.5 round:7 sgf:1992/7-LaurentHeiser-AlexejLazarev.sgf
+      - 4-13 4:B+R round:1 sgf:1992/1-LaurentHeiser-RalphSpiegl.sgf
+      - 5-2 2:W+R round:3 sgf:1992/3-MatthewMacfadyen-YongmanYi.sgf
+      - 5-7 5:B+R round:8 sgf:1992/8-MatthewMacfadyen-YingKan.sgf
+      - 5-9 5:B+R round:4 sgf:1992/4-MatthewMacfadyen-AlexejLazarev.sgf
+      - 5-28 5:B+R round:2 sgf:1992/2-MatthewMacfadyen-JuanCarlosCarrillo.sgf
+      - 6-12 6:B+R round:1 sgf:1992/1-YupangKou-JosteinFlood.sgf
+      - 7-6 7:B+R round:3 sgf:1992/3-YingKan-YupangKou.sgf
+      - 7-25 7:B+R round:5 sgf:1992/5-YingKan-SorinGherman.sgf
+      - 8-11 8:B+5.5 round:7 sgf:1992/7-FrankJanssen-JoongKiKim.sgf
       - 8-16 8:B+R round:4 sgf:1992/4-FrankJanssen-CheongTatYeo.sgf
+      - 9-21 9:B+15.5 round:5 sgf:1992/5-AlexejLazarev-YoungChang.sgf
+      - 10-1 1:W+R round:1 sgf:1992/1-AndreMoussa-YasuroKikuchi.sgf
+      - 10-3 3:W+R round:8 sgf:1992/8-AndreMoussa-QiYuHan.sgf
       - 10-5 5:W+R round:5 sgf:1992/5-AndreMoussa-MatthewMacfadyen.sgf
+      - 10-15 10:B+R round:7 sgf:1992/7-AndreMoussa-YeongsamMun.sgf
       - 11-6 6:W+R round:5 sgf:1992/5-JoongKiKim-YupangKou.sgf
+      - 11-15 15:W+R round:2 sgf:1992/2-JoongKiKim-YeongsamMun.sgf
+      - 11-20 11:B+R round:4 sgf:1992/4-JoongKiKim-YingMinTse.sgf
+      - 12-14 12:B+3.5 round:5 sgf:1992/5-JosteinFlood-JurgenMattern.sgf
+      - 12-19 12:B+6.5 round:8 sgf:1992/8-JosteinFlood-PetrCipra.sgf
+      - 13-12 13:B+0.5 round:3 sgf:1992/3-RalphSpiegl-JosteinFlood.sgf
+      - 13-23 13:B+2.5 round:5 sgf:1992/5-RalphSpiegl-FranciscoGarciadelaBanda.sgf
+      - 14-15 15:W+R round:4 sgf:1992/4-JurgenMattern-YeongsamMun.sgf
+      - 15-3 3:W+7.5 round:5 sgf:1992/5-YeongsamMun-QiYuHan.sgf
+      - 15-9 9:W+R round:8 sgf:1992/8-YeongsamMun-AlexejLazarev.sgf
+      - 16-14 14:W+20.5 round:8 sgf:1992/8-CheongTatYeo-JurgenMattern.sgf
+      - 16-26 16:B+R round:7 sgf:1992/7-CheongTatYeo-KrzysztofGiedrojc.sgf
+      - 17-8 8:W+R round:1 sgf:1992/1-AndrasGondor-FrankJanssen.sgf
+      - 17-14 14:W+R round:3 sgf:1992/3-AndrasGondor-JurgenMattern.sgf
+      - 17-19 17:B+R round:5 sgf:1992/5-AndrasGondor-PetrCipra.sgf
+      - 17-24 17:B+R round:4 sgf:1992/4-AndrasGondor-VesaLaatikainen.sgf
+      - 18-4 4:W+R round:2 sgf:1992/2-KhosaAriya-LaurentHeiser.sgf
+      - 18-13 13:W+R round:8 sgf:1992/8-KhosaAriya-RalphSpiegl.sgf
+      - 20-9 9:W+R round:1 sgf:1992/1-YingMinTse-AlexejLazarev.sgf
+      - 20-22 20:B+R round:7 sgf:1992/7-YingMinTse-KwongMoonLee.sgf
+      - 21-19 19:W+R round:7 sgf:1992/7-YoungChang-PetrCipra.sgf
+      - 21-34 21:B+R round:6 sgf:1992/6-YoungChang-ChristerLindstedt.sgf
+      - 21-35 21:B+R round:1 sgf:1992/1-YoungChang-StephenReye.sgf
+      - 22-23 22:B+R round:3 sgf:1992/3-KwongMoonLee-FranciscoGarciadelaBanda.sgf
+      - 22-37 22:B+R round:2 sgf:1992/2-KwongMoonLee-CarlosAlmiron.sgf
+      - 23-30 23:B+13.5 round:4 sgf:1992/4-FranciscoGarciadelaBanda-RicardoQuintero.sgf
+      - 24-2 2:W+R round:1 sgf:1992/1-VesaLaatikainen-YongmanYi.sgf
+      - 24-12 12:W+0.5 round:2 sgf:1992/2-VesaLaatikainen-JosteinFlood.sgf
+      - 24-27 24:B+R round:6 sgf:1992/6-VesaLaatikainen-BarryPhease.sgf
+      - 24-32 24:B+R round:8 sgf:1992/8-VesaLaatikainen.sgf
+      - 25-9 9:W+R round:2 sgf:1992/2-SorinGherman-AlexejLazarev.sgf
+      - 25-22 25:B+R round:4 sgf:1992/4-SorinGherman-KwongMoonLee.sgf
+      - 26-7 7:W+R round:2 sgf:1992/2-KrzysztofGiedrojc-YingKan.sgf
+      - 26-22 22:W+R round:5 sgf:1992/5-KrzysztofGiedrojc-KwongMoonLee.sgf
+      - 26-28 26:B+2.5 round:8 sgf:1992/8-KrzysztofGiedrojc-JuanCarlosCarrillo.sgf
+      - 27-25 25:W+R round:3 sgf:1992/3-BarryPhease-SorinGherman.sgf
+      - 28-23 23:W+R round:6 sgf:1992/6-JuanCarlosCarrillo-FranciscoGarciadelaBanda.sgf
+      - 28-27 27:W+R round:4 sgf:1992/4-JuanCarlosCarrillo-BarryPhease.sgf
+      - 29-16 16:W+0.5 round:5 sgf:1992/5-MilanLazarevic-CheongTatYeo.sgf
+      - 29-33 33:W+6.5 round:6 sgf:1992/6-MilanLazarevic-SergeFontaine.sgf
+      - 29-38 29:B+R round:4 sgf:1992/4-MilanLazarevic-EnzoBurlini.sgf
+      - 31-26 26:W+R round:6 sgf:1992/6-AlainWettach-KrzysztofGiedrojc.sgf
+      - 32-28 28:W+0.5 round:5 sgf:1992/5-JanFrederiksen-JuanCarlosCarrillo.sgf
+      - 32-30 32:B+R round:7 sgf:1992/7-JanFrederiksen-RicardoQuintero.sgf
+      - 33-18 18:W+19.5 round:1 sgf:1992/1-SergeFontaine-KhosaAriya.sgf
+      - 33-34 34:W+R round:3 sgf:1992/3-SergeFontaine-ChristerLindstedt.sgf
+      - 35-31 31:W+9.5 round:8 sgf:1992/8-StephenReye-AlainWettach.sgf
+      - 36-30 30:W+R round:1 sgf:1992/1-BeeGiokTan-RicardoQuintero.sgf
+      - 37-39 37:B+20.5 round:8 sgf:1992/8-CarlosAlmiron-NoelMitchell.sgf
+      - 38-35 35:W+2.5 round:6 sgf:1992/6-EnzoBurlini-StephenReye.sgf
+      - 39-36 36:W+R round:7 sgf:1992/7-NoelMitchell-BeeGiokTan.sgf
+      - 40-38 38:W+R round:7 sgf:1992/7-CalixtoCifuentes-EnzoBurlini.sgf
+      - 40-39 39:W+R round:4 sgf:1992/4-CalixtoCifuentes-NoelMitchell.sgf
