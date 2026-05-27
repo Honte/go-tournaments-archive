@@ -1,4 +1,5 @@
 import type { Locale } from '@/i18n/consts';
+import type { SgfRotation } from '@tools/sgf';
 import type { KeysMatching } from '@/libs/types';
 
 export type TournamentDetails = {
@@ -163,6 +164,7 @@ export type Game = {
   players: [black: GamePlayer, white: GamePlayer];
   result: string;
   props: GameProps;
+  rotation?: SgfRotation;
 };
 
 export type GamePlayer = {

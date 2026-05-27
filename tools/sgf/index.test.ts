@@ -187,6 +187,43 @@ describe('Sgf', () => {
     });
   });
 
+  it('does not alter SGF points for default and zero-degree rotation', () => {
+    const content = '(;SZ[19];B[dp];W[])';
+
+    assert.equal(new Sgf(content).rotate().toString(false), content);
+    assert.equal(new Sgf(content).rotate(0).toString(false), content);
+  });
+
+  it('rotates move coordinates clockwise', () => {
+    assert.equal(new Sgf('(;SZ[19];B[dp])').rotate(90).toString(false), '(;SZ[19];B[dd])');
+    assert.equal(new Sgf('(;SZ[19];B[dp])').rotate(180).toString(false), '(;SZ[19];B[pd])');
+    assert.equal(new Sgf('(;SZ[19];B[pq])').rotate(270).toString(false), '(;SZ[19];B[qd])');
+  });
+
+  it('rotates setup and edit coordinates including compressed rectangles', () => {
+    const sgf = new Sgf('(;SZ[19]AB[aa][bb][aa:cc]AW[dd];B[dp];AE[pq]AW[cc])');
+
+    sgf.rotate(90);
+
+    assert.equal(sgf.toString(false), '(;SZ[19]AB[sa][rb][qa:sc]AW[pd];B[dd];AE[cp]AW[qc])');
+  });
+
+  it('preserves pass moves at the board-size coordinate and normalizes other off-board moves to empty', () => {
+    const sgf = new Sgf('(;SZ[19];B[];W[tt])');
+
+    sgf.rotate(90);
+
+    assert.equal(sgf.toString(false), '(;SZ[19];B[];W[tt])');
+  });
+
+  it('rejects rotation ranges that use off-board coordinates', () => {
+    assert.throws(() => new Sgf('(;SZ[19]AB[aa:tt][aa:ts][aa:st])').rotate(90), /Unsupported position: ts/);
+  });
+
+  it('rejects unsupported rotation angles', () => {
+    assert.throws(() => new Sgf('(;SZ[19];B[aa])').rotate(45 as 90), /Unsupported SGF rotation angle: 45/);
+  });
+
   it('returns the unique longest branch as nodes', () => {
     const sgf = new Sgf('(;A[root];B[aa](;W[bb];B[cc])(;W[dd]))');
     const branch = sgf.getLongestBranch();
@@ -318,6 +355,27 @@ describe('Sgf', () => {
     });
 
     assert.equal(output, '(;PW[New]KM[6.5];B[aa];W[bb];B[cc])');
+  });
+
+  it('rotates cleaned SGFs through the static cleaner', () => {
+    const output = Sgf.clean('(;SZ[19]PW[Old]C[root];B[dp])', { PW: 'New' }, 180);
+
+    assert.equal(output, '(;SZ[19]PW[New];B[pd])');
+  });
+
+  it('rotates existing PGC examples so their first move lands in the upper-right board area', () => {
+    const examples = [
+      ['events/pgc/sgf/2025/2025-1-mmajka-khabu.sgf', 180, 'pd'],
+      ['events/pgc/sgf/2025/2025-2-lsoldan-mmajka.sgf', 180, 'pd'],
+      ['events/pgc/sgf/2025/2025-2-cczernecki-mkosz.sgf', 270, 'qd'],
+    ] as const;
+
+    for (const [path, rotation, firstMove] of examples) {
+      const content = readFileSync(join(fixtureDir, '..', '..', '..', path), 'utf-8');
+      const sgf = new Sgf(content).rotate(rotation);
+
+      assert.equal(sgf.getGameBranch()[1].data.B[0], firstMove);
+    }
   });
 
   it('round-trips local SGF examples in compact and pretty formats', () => {

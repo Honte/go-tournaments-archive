@@ -1,21 +1,13 @@
-import { existsSync } from 'node:fs';
 import { readFile } from 'node:fs/promises';
 import { optimize } from 'svgo';
-import { Sgf } from '@tools/sgf';
 import { iterateStones, sgfToBoard } from '@/libs/goban';
 
 const boardSvg = await readFile('./src/components/goban/board.svg', 'utf-8');
 const whiteSvg = await readFile('./src/components/goban/white.svg', 'utf-8');
 const blackSvg = await readFile('./src/components/goban/black.svg', 'utf-8');
 
-export async function generateSvg(sgfFile: string) {
-  if (!existsSync(sgfFile)) {
-    console.log(`File ${sgfFile} not found`);
-    return;
-  }
-
-  const content = await readFile(sgfFile, 'utf-8');
-  const board = sgfToBoard(Sgf.clean(content));
+export async function generateSvg(sgf: string) {
+  const board = sgfToBoard(sgf);
 
   const w = board.width + 1;
   const h = board.height + 1;

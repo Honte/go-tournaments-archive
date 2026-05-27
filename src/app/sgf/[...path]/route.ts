@@ -11,7 +11,7 @@ import { generatePng } from '@tools/png';
 import { Sgf } from '@tools/sgf';
 import { generateSvg } from '@tools/svg';
 import { getTournaments } from '@/data';
-import { loadGameSgfProps } from '@/data/sgfs';
+import { loadGameSgfDetails } from '@/data/sgfs';
 
 const THUMB_SIZE = 128;
 const SGF_DIR = `./events/${EVENT}/sgf`;
@@ -40,7 +40,8 @@ export async function GET(request: NextRequest, props: RouteProps) {
     }
 
     if (details.ext === '.svg') {
-      const svg = await generateSvg(sgfPath);
+      const sgf = await getSgf(sgfPath);
+      const svg = await generateSvg(sgf);
 
       return new Response(svg, {
         headers: { 'Content-Type': 'image/svg+xml' },
@@ -48,8 +49,9 @@ export async function GET(request: NextRequest, props: RouteProps) {
     }
 
     if (details.ext === '.png') {
-      const svg = await generateSvg(sgfPath);
-      const png = await generatePng(svg!, THUMB_SIZE);
+      const sgf = await getSgf(sgfPath);
+      const svg = await generateSvg(sgf);
+      const png = await generatePng(svg, THUMB_SIZE);
 
       return new Response(new Uint8Array(png), {
         headers: { 'Content-Type': 'image/png' },
@@ -57,8 +59,9 @@ export async function GET(request: NextRequest, props: RouteProps) {
     }
 
     if (details.ext === '.jpg') {
-      const svg = await generateSvg(sgfPath);
-      const jpg = await generateJpg(svg!, THUMB_SIZE);
+      const sgf = await getSgf(sgfPath);
+      const svg = await generateSvg(sgf);
+      const jpg = await generateJpg(svg, THUMB_SIZE);
 
       return new Response(new Uint8Array(jpg), {
         headers: { 'Content-Type': 'image/jpeg' },
@@ -125,11 +128,11 @@ async function getSgf(file: string, raw = false) {
   const translations = await loadTranslations(DEFAULT_LOCALE);
   const tournaments = await getTournaments();
   const sgfPath = path.posix.join('/sgf', ...path.relative(SGF_DIR, file).split(path.sep));
-  const sgfProps = await loadGameSgfProps(tournaments, sgfPath, translations);
+  const sgfDetails = await loadGameSgfDetails(tournaments, sgfPath, translations);
 
-  if (!sgfProps) {
+  if (!sgfDetails) {
     throw new Error(`Could not find game for ${sgfPath}`);
   }
 
-  return Sgf.clean(content, sgfProps);
+  return Sgf.clean(content, sgfDetails.props, sgfDetails.rotation);
 }

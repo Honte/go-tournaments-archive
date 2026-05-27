@@ -1,5 +1,6 @@
 import EVENT_CONFIG from '@event/config';
-import type { Game, GamePlayer, GameProps, GamePropsArrayKey } from '@/schema/data';
+import type { Game, GamePlayer, GamePropsArrayKey } from '@/schema/data';
+import { Sgf, type SgfRotation } from '@tools/sgf';
 
 const ARRAY_PROPS: GamePropsArrayKey[] = ['yt'];
 export const GAME_REGEX =
@@ -70,11 +71,16 @@ export function parseGame(string: string, id: string, strict = true): Game {
     }
   }
 
-  return {
+  const game: Game = {
     id,
     players: homePlayer.color === 'white' ? [awayPlayer, homePlayer] : [homePlayer, awayPlayer],
     result,
-    props: (props?.split(' ') ?? ([] as string[])).reduce<GameProps>((map: GameProps, prop: string) => {
+    props: {},
+    rotation: 0,
+  };
+
+  if (props?.length) {
+    for (const prop of props.split(' ')) {
       const pos = prop.indexOf(':');
       const type = prop.slice(0, pos);
       let value = prop.slice(pos + 1);
@@ -83,29 +89,31 @@ export function parseGame(string: string, id: string, strict = true): Game {
         value = `/sgf/${value}`;
 
         if (EVENT_CONFIG.generatePngs) {
-          map.png = value.replace('.sgf', '.png');
+          game.props.png = value.replace('.sgf', '.png');
         }
 
         if (EVENT_CONFIG.generateSvgs) {
-          map.svg = value.replace('.sgf', '.svg');
+          game.props.svg = value.replace('.sgf', '.svg');
         }
 
         if (EVENT_CONFIG.generateJpgs) {
-          map.jpg = value.replace('.sgf', '.jpg');
+          game.props.jpg = value.replace('.sgf', '.jpg');
         }
       }
 
       if (ARRAY_PROPS.includes(type as GamePropsArrayKey) && value.indexOf(',') > 0) {
-        map[type as GamePropsArrayKey] = value.split(',');
+        game.props[type as GamePropsArrayKey] = value.split(',');
       } else if (type === 'round') {
-        map.round = Number(value);
+        game.props.round = Number(value);
+      } else if (type === 'rotate') {
+        game.rotation = parseSgfRotation(value, string);
       } else {
-        (map as Record<string, string>)[type] = value;
+        (game.props as Record<string, string>)[type] = value;
       }
+    }
+  }
 
-      return map;
-    }, {}),
-  };
+  return game;
 }
 
 export function getGameId(repository: Record<string, Game>) {
@@ -116,4 +124,14 @@ export function getGameId(repository: Record<string, Game>) {
   } while (id in repository);
 
   return id;
+}
+
+function parseSgfRotation(value: string, game: string): SgfRotation {
+  const angle = Number(value);
+
+  if (!Sgf.isValidRotation(angle)) {
+    throw new Error(`Unrecognized SGF rotation in ${game}`);
+  }
+
+  return angle as SgfRotation;
 }

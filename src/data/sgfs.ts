@@ -12,7 +12,7 @@ import pkg from '../../package.json';
 
 const EVENT_DIR = `./events/${EVENT}/`;
 
-export async function loadGameSgfProps(tournaments: Tournament[], sgfPath: string, translations: Translations) {
+export async function loadGameSgfDetails(tournaments: Tournament[], sgfPath: string, translations: Translations) {
   for (const tournament of tournaments) {
     for (const id in tournament.games) {
       const game = tournament.games[id];
@@ -27,7 +27,10 @@ export async function loadGameSgfProps(tournaments: Tournament[], sgfPath: strin
         continue;
       }
 
-      return getSgfProps(game, tournament, stage, translations);
+      return {
+        props: getSgfProps(game, tournament, stage, translations),
+        rotation: game.rotation,
+      };
     }
   }
 }
