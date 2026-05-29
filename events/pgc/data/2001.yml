@@ -24,29 +24,29 @@ stages:
     rounds:
       - - jl-mb jl:W+R sgf:2001/2001-1-mbazynski-jlubos.sgf
         - jk-ls jk:W sgf:2001/2001-1-lsoldan-jkraszek.sgf
-        - kg-mw kg:B+R sgf:2001/2001-1-kgiedrojc-mwolak.sgf
+        - kg-mw kg:B+R sgf:2001/2001-1-kgiedrojc-mwolak.sgf rotate:180
         - jc-ww jc:B+R sgf:2001/2001-1-jchlodek-wwoskresinski.sgf
-      - - ls-mw ls:W sgf:2001/2001-2-mwolak-lsoldan.sgf
-        - jl-jc jl:B+R sgf:2001/2001-2-jlubos-jchlodek.sgf
-        - kg-jk kg:W+14.5 sgf:2001/2001-2-jkraszek-kgiedrojc.sgf
+      - - ls-mw ls:W sgf:2001/2001-2-mwolak-lsoldan.sgf rotate:180
+        - jl-jc jl:B+R sgf:2001/2001-2-jlubos-jchlodek.sgf rotate:180
+        - kg-jk kg:W+14.5 sgf:2001/2001-2-jkraszek-kgiedrojc.sgf rotate:180
         - mb-ww mb:W+3.5 sgf:2001/2001-2-wwoskresinski-mbazynski.sgf
       - - ls-jl ls:B sgf:2001/2001-3-lsoldan-jlubos.sgf
-        - jk-mb jk:W+R sgf:2001/2001-3-mbazynski-jkraszek.sgf
-        - ww-kg ww:W+5.5 sgf:2001/2001-3-kgiedrojc-wwoskresinski.sgf
-        - mw-jc mw:W+12.5 sgf:2001/2001-3-jchlodek-mwolak.sgf
-      - - jk-jc jk:B+9.5 sgf:2001/2001-4-jkraszek-jchlodek.sgf
-        - kg-jl kg sgf:2001/2001-4-kgiedrojc-jlubos.sgf
+        - jk-mb jk:W+R sgf:2001/2001-3-mbazynski-jkraszek.sgf rotate:180
+        - ww-kg ww:W+5.5 sgf:2001/2001-3-kgiedrojc-wwoskresinski.sgf rotate:180
+        - mw-jc mw:W+12.5 sgf:2001/2001-3-jchlodek-mwolak.sgf rotate:180
+      - - jk-jc jk:B+9.5 sgf:2001/2001-4-jkraszek-jchlodek.sgf rotate:180
+        - kg-jl kg sgf:2001/2001-4-kgiedrojc-jlubos.sgf rotate:180
         - ww-ls ww:!
         - mw-mb mw sgf:2001/2001-4-mwolak-mbazynski.sgf
       - - ls-jc ls:B+19.5 sgf:2001/2001-5-lsoldan-jchlodek.sgf
         - jl-mw jl:B+R sgf:2001/2001-5-jlubos-mwolak.sgf
         - jk-ww jk:W+11.5 sgf:2001/2001-5-wwoskresinski-jkraszek.sgf
-        - mb-kg mb:W+12.5 sgf:2001/2001-5-kgiedrojc-mbazynski.sgf
-      - - ls-mb ls:W+R sgf:2001/2001-6-mbazynski-lsoldan.sgf
-        - jl-jk jl:W+R sgf:2001/2001-6-jkraszek-jlubos.sgf
-        - kg-jc kg:W+R sgf:2001/2001-6-jchlodek-kgiedrojc.sgf
+        - mb-kg mb:W+12.5 sgf:2001/2001-5-kgiedrojc-mbazynski.sgf rotate:180
+      - - ls-mb ls:W+R sgf:2001/2001-6-mbazynski-lsoldan.sgf rotate:180
+        - jl-jk jl:W+R sgf:2001/2001-6-jkraszek-jlubos.sgf rotate:180
+        - kg-jc kg:W+R sgf:2001/2001-6-jchlodek-kgiedrojc.sgf rotate:180
         - ww-mw ww:W+R sgf:2001/2001-6-mwolak-wwoskresinski.sgf
-      - - ls-kg ls:W+29.5 sgf:2001/2001-7-kgiedrojc-lsoldan.sgf
+      - - ls-kg ls:W+29.5 sgf:2001/2001-7-kgiedrojc-lsoldan.sgf rotate:180
         - jl-ww jl:B+33.5 sgf:2001/2001-7-jlubos-wwoskresinski.sgf
-        - jk-mw jk:B+R sgf:2001/2001-7-jkraszek-mwolak.sgf
+        - jk-mw jk:B+R sgf:2001/2001-7-jkraszek-mwolak.sgf rotate:180
         - jc-mb jc:B+R sgf:2001/2001-7-jchlodek-mbazynski.sgf

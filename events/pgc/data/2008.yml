@@ -24,22 +24,22 @@ stages:
       - direct
       - starting
     rounds:
-      - - ls-kb ls:B+R sgf:2008/2008-1-lsoldan-kbozek.sgf
+      - - ls-kb ls:B+R sgf:2008/2008-1-lsoldan-kbozek.sgf rotate:270
         - ms-mb ms:W+R sgf:2008/2008-1-mbazynski-msurma.sgf
         - kc-pm kc:B+R sgf:2008/2008-1-kchwedyna-pmorawiecki.sgf
         - kh-pc kh:W+R sgf:2008/2008-1-pcelejewski-khabu.sgf
-      - - ls-pm ls:W+R sgf:2008/2008-2-pmorawiecki-lsoldan.sgf
+      - - ls-pm ls:W+R sgf:2008/2008-2-pmorawiecki-lsoldan.sgf rotate:90
         - kc-kb kc:W+R sgf:2008/2008-2-kbozek-kchwedyna.sgf
         - pc-ms pc:W+R sgf:2008/2008-2-msurma-pcelejewski.sgf
         - mb-kh mb:W+3.5 sgf:2008/2008-2-khabu-mbazynski.sgf
       - - ls-ms ls:B+R sgf:2008/2008-3-lsoldan-msurma.sgf
         - kc-kh kc:B+R sgf:2008/2008-3-kchwedyna-khabu.sgf
         - kb-mb kb:W+8.5 sgf:2008/2008-3-mbazynski-kbozek.sgf
-        - pm-pc pm:W+1.5 sgf:2008/2008-3-pcelejewski-pmorawiecki.sgf
+        - pm-pc pm:W+1.5 sgf:2008/2008-3-pcelejewski-pmorawiecki.sgf rotate:90
       - - ms-kc ms:B+R sgf:2008/2008-4-msurma-kchwedyna.sgf
         - kh-ls kh:B+1.5 sgf:2008/2008-4-khabu-lsoldan.sgf
         - pc-kb pc:W+1.5 sgf:2008/2008-4-kbozek-pcelejewski.sgf
-        - mb-pm mb:W+R sgf:2008/2008-4-pmorawiecki-mbazynski.sgf
+        - mb-pm mb:W+R sgf:2008/2008-4-pmorawiecki-mbazynski.sgf rotate:270
       - - ls-pc ls:B+R sgf:2008/2008-5-lsoldan-pcelejewski.sgf
         - ms-pm ms:B+15.5 sgf:2008/2008-5-msurma-pmorawiecki.sgf
         - kc-mb kc:W+R sgf:2008/2008-5-mbazynski-kchwedyna.sgf
@@ -50,5 +50,5 @@ stages:
         - mb-ls mb:B+2.5 sgf:2008/2008-6-mbazynski-lsoldan.sgf
       - - ls-kc ls:W+R sgf:2008/2008-7-kchwedyna-lsoldan.sgf
         - ms-kh ms:B+R sgf:2008/2008-7-msurma-khabu.sgf
-        - pc-mb pc:B+R sgf:2008/2008-7-pcelejewski-mbazynski.sgf
+        - pc-mb pc:B+R sgf:2008/2008-7-pcelejewski-mbazynski.sgf rotate:180
         - kb-pm kb:B+3.5 sgf:2008/2008-7-kbozek-pmorawiecki.sgf

@@ -27,14 +27,14 @@ stages:
       - starting
     rounds:
       - - dj-sf sf:W+R sgf:2020/2020-1-djurkiewicz-sfrejlak.sgf ogs:https://online-go.com/game/31235064
-        - pd-ls ls:W+20.5 sgf:2020/2020-1-pdyszczyk-lsoldan.sgf ogs:https://online-go.com/review/619589
+        - pd-ls ls:W+20.5 sgf:2020/2020-1-pdyszczyk-lsoldan.sgf rotate:180 ogs:https://online-go.com/review/619589
         - mm-mw mm:B+R sgf:2020/2020-1-mmajka-mwalaszewski.sgf ogs:https://online-go.com/game/31235062
         - fish-kac fish:B+42.5 sgf:2020/2020-1-kchwedyna-kcieslak.sgf ogs:https://online-go.com/game/31234786
       - - ls-dj ls:B+R sgf:2020/2020-2-lsoldan-djurkiewicz.sgf ogs:https://online-go.com/game/31256351
         - sf-pd sf:B+R sgf:2020/2020-2-sfrejlak-pdyszczyk.sgf ogs:https://online-go.com/game/31256140
         - kac-mw mw:W+10.5 sgf:2020/2020-2-kcieslak-mwalaszewski.sgf ogs:https://online-go.com/game/31256291
         - mm-fish mm:B+R sgf:2020/2020-2-mmajka-kchwedyna.sgf ogs:https://online-go.com/game/31256422
-      - - dj-mm mm:W+21.5 sgf:2020/2020-3-djurkiewicz-mmajka.sgf ogs:https://online-go.com/review/620170
+      - - dj-mm mm:W+21.5 sgf:2020/2020-3-djurkiewicz-mmajka.sgf rotate:180 ogs:https://online-go.com/review/620170
         - pd-kac kac:W+14.5 sgf:2020/2020-3-pdyszczyk-kcieslak.sgf ogs:https://online-go.com/review/620226
         - mw-sf sf:W+R sgf:2020/2020-3-mwalaszewski-sfrejlak.sgf ogs:https://online-go.com/game/31263270
         - fish-ls fish:B+17.5 sgf:2020/2020-3-kchwedyna-lsoldan.sgf ogs:https://online-go.com/game/31263021
@@ -53,4 +53,4 @@ stages:
       - - dj-pd dj:B+R sgf:2020/2020-7-djurkiewicz-pdyszczyk.sgf ogs:https://online-go.com/game/31325477
         - mw-fish fish:W+R sgf:2020/2020-7-mwalaszewski-kchwedyna.sgf ogs:https://online-go.com/game/31325331
         - kac-mm mm:W+R sgf:2020/2020-7-kcieslak-mmajka.sgf ogs:https://online-go.com/game/31325297
-        - ls-sf sf:W+R sgf:2020/2020-7-lsoldan-sfrejlak.sgf ogs:https://online-go.com/review/621544
+        - ls-sf sf:W+R sgf:2020/2020-7-lsoldan-sfrejlak.sgf rotate:180 ogs:https://online-go.com/review/621544

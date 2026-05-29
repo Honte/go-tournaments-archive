@@ -26,31 +26,31 @@ stages:
       - direct
       - starting
     rounds:
-      - - mm-kh kh:W+R sgf:2025/2025-1-mmajka-khabu.sgf yt:https://youtube.com/watch?v=iGdigfWJ2ec
+      - - mm-kh kh:W+R sgf:2025/2025-1-mmajka-khabu.sgf rotate:180 yt:https://youtube.com/watch?v=iGdigfWJ2ec
         - mw-ls mw:B+1.5 sgf:2025/2025-1-mwalaszewski-lsoldan.sgf yt:https://www.youtube.com/watch?v=T11-0QPEyz4,https://www.youtube.com/watch?v=LI_rOpwIKb0
         - ml-cc cc:W+41.5 sgf:2025/2025-1-mlubinski-cczernecki.sgf yt:https://youtube.com/watch?v=YZ4SYUF-zNM
         - mk-sf sf:W+R sgf:2025/2025-1-mkosz-sfrejlak.sgf yt:https://youtube.com/watch?v=Wnjv0jMY59k
-      - - ls-mm mm:W+7.5 sgf:2025/2025-2-lsoldan-mmajka.sgf yt:https://www.youtube.com/live/RHr01aPKEUs,https://www.youtube.com/live/NNLF340yetk,https://www.youtube.com/live/q3oXeEaw474
+      - - ls-mm mm:W+7.5 sgf:2025/2025-2-lsoldan-mmajka.sgf rotate:180 yt:https://www.youtube.com/live/RHr01aPKEUs,https://www.youtube.com/live/NNLF340yetk,https://www.youtube.com/live/q3oXeEaw474
         - kh-mw mw:W+11.5 sgf:2025/2025-2-khabu-mwalaszewski.sgf yt:https://youtube.com/watch?v=QEqjgMH9bug
         - sf-ml sf:B+R sgf:2025/2025-2-sfrejlak-mlubinski.sgf yt:https://youtube.com/watch?v=p3JrtwKDDoM,https://www.youtube.com/watch?v=x0k4gfZ9lms
-        - cc-mk cc:B+R sgf:2025/2025-2-cczernecki-mkosz.sgf yt:https://youtube.com/watch?v=VN5WCYzjU4g
+        - cc-mk cc:B+R sgf:2025/2025-2-cczernecki-mkosz.sgf rotate:270 yt:https://youtube.com/watch?v=VN5WCYzjU4g
       - - mm-cc cc:W+3.5 sgf:2025/2025-3-mmajka-cczernecki.sgf yt:https://youtube.com/watch?v=Lsw6dpMEuEc
-        - mw-sf sf:W+R sgf:2025/2025-3-mwalaszewski-sfrejlak.sgf yt:https://youtube.com/watch?v=Dc923sRL9Bs
-        - ml-kh kh:W+R sgf:2025/2025-3-mlubinski-khabu.sgf yt:https://youtube.com/watch?v=L7eGXb44RI0
-        - mk-ls ls:W+R sgf:2025/2025-3-mkosz-lsoldan.sgf yt:https://youtube.com/watch?v=oZgKU_r8RGA
+        - mw-sf sf:W+R sgf:2025/2025-3-mwalaszewski-sfrejlak.sgf rotate:90 yt:https://youtube.com/watch?v=Dc923sRL9Bs
+        - ml-kh kh:W+R sgf:2025/2025-3-mlubinski-khabu.sgf rotate:180 yt:https://youtube.com/watch?v=L7eGXb44RI0
+        - mk-ls ls:W+R sgf:2025/2025-3-mkosz-lsoldan.sgf rotate:270 yt:https://youtube.com/watch?v=oZgKU_r8RGA
       - - sf-mm sf:B+R sgf:2025/2025-4-sfrejlak-mmajka.sgf yt:https://youtube.com/watch?v=x_5dXUZWITM
         - cc-mw cc:B+R sgf:2025/2025-4-cczernecki-mwalaszewski.sgf yt:https://youtube.com/watch?v=5e0lM8Kv7AA
-        - ls-ml ls:B+R sgf:2025/2025-4-lsoldan-mlubinski.sgf yt:https://youtube.com/watch?v=eQa68ZkTvbg ai:https://ai-sensei.com/game/QSdijjy2VLU6Y2jB3c9d83a4uoz1/ZYOF4RP33ZmznkgyNGb4
+        - ls-ml ls:B+R sgf:2025/2025-4-lsoldan-mlubinski.sgf rotate:180 yt:https://youtube.com/watch?v=eQa68ZkTvbg ai:https://ai-sensei.com/game/QSdijjy2VLU6Y2jB3c9d83a4uoz1/ZYOF4RP33ZmznkgyNGb4
         - kh-mk kh:B+R sgf:2025/2025-4-khabu-mkosz.sgf yt:https://youtube.com/watch?v=bi1c-MQgapg
-      - - ls-cc cc:W+R sgf:2025/2025-5-lsoldan-cczernecki.sgf yt:https://youtube.com/watch?v=9AqmZgnrzoI
-        - kh-sf sf:W+R sgf:2025/2025-5-khabu-sfrejlak.sgf yt:https://youtube.com/watch?v=bDUIPG6SsME
-        - ml-mw mw:W+7.5 sgf:2025/2025-5-mlubinski-mwalaszewski.sgf yt:https://youtube.com/watch?v=SiUBR7yftoc
+      - - ls-cc cc:W+R sgf:2025/2025-5-lsoldan-cczernecki.sgf rotate:180 yt:https://youtube.com/watch?v=9AqmZgnrzoI
+        - kh-sf sf:W+R sgf:2025/2025-5-khabu-sfrejlak.sgf rotate:270 yt:https://youtube.com/watch?v=bDUIPG6SsME
+        - ml-mw mw:W+7.5 sgf:2025/2025-5-mlubinski-mwalaszewski.sgf rotate:270 yt:https://youtube.com/watch?v=SiUBR7yftoc
         - mk-mm mm:W+R sgf:2025/2025-5-mkosz-mmajka.sgf yt:https://youtube.com/watch?v=WuI477AN4OQ
       - - sf-ls sf:B+R sgf:2025/2025-6-sfrejlak-lsoldan.sgf yt:https://youtube.com/watch?v=TJwAI8_dYUA
-        - cc-kh kh:W+R sgf:2025/2025-6-cczernecki-khabu.sgf yt:https://youtube.com/watch?v=xYugGTw8wDI
-        - mm-ml ml:W+R sgf:2025/2025-6-mmajka-mlubinski.sgf yt:https://youtube.com/watch?v=tPVWnXEL16I ai:https://ai-sensei.com/game/QSdijjy2VLU6Y2jB3c9d83a4uoz1/oy4VSKeQb91rJRAYaqKK
-        - mw-mk mw:B+15.5 sgf:2025/2025-6-mwalaszewski-mkosz.sgf yt:https://youtube.com/watch?v=qATTNM1BGQw
+        - cc-kh kh:W+R sgf:2025/2025-6-cczernecki-khabu.sgf rotate:270 yt:https://youtube.com/watch?v=xYugGTw8wDI
+        - mm-ml ml:W+R sgf:2025/2025-6-mmajka-mlubinski.sgf rotate:270 yt:https://youtube.com/watch?v=tPVWnXEL16I ai:https://ai-sensei.com/game/QSdijjy2VLU6Y2jB3c9d83a4uoz1/oy4VSKeQb91rJRAYaqKK
+        - mw-mk mw:B+15.5 sgf:2025/2025-6-mwalaszewski-mkosz.sgf rotate:270 yt:https://youtube.com/watch?v=qATTNM1BGQw
       - - cc-sf sf:W+R sgf:2025/2025-7-cczernecki-sfrejlak.sgf yt:https://youtube.com/watch?v=9ZAdyxmqmZA
-        - kh-ls kh:B+R sgf:2025/2025-7-khabu-lsoldan.sgf yt:https://youtube.com/watch?v=6EhWwE626sE
-        - mw-mm mw:B+4.5 sgf:2025/2025-7-mwalaszewski-mmajka.sgf yt:https://youtube.com/watch?v=Nz80hgcTDvs
-        - mk-ml mk:B+R sgf:2025/2025-7-mkosz-mlubinski.sgf yt:https://youtube.com/watch?v=7aBAgSIQ0oc
+        - kh-ls kh:B+R sgf:2025/2025-7-khabu-lsoldan.sgf rotate:270 yt:https://youtube.com/watch?v=6EhWwE626sE
+        - mw-mm mw:B+4.5 sgf:2025/2025-7-mwalaszewski-mmajka.sgf rotate:270 yt:https://youtube.com/watch?v=Nz80hgcTDvs
+        - mk-ml mk:B+R sgf:2025/2025-7-mkosz-mlubinski.sgf rotate:270 yt:https://youtube.com/watch?v=7aBAgSIQ0oc

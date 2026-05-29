@@ -41,9 +41,9 @@ stages:
       - - kh-mp kh
         - mb-jl mb
         - kg-ls kg
-        - mr-dg mr:B+? sgf:2005/2005-5-mrams-dgogosz.sgf
+        - mr-dg mr:B+? sgf:2005/2005-5-mrams-dgogosz.sgf rotate:180
       - - kh-mr kh
-        - ls-jl ls:B+R sgf:2005/2005-6-lsoldan-jlubos.sgf
+        - ls-jl ls:B+R sgf:2005/2005-6-lsoldan-jlubos.sgf rotate:180
         - mb-kg mb
         - dg-mp dg
       - - kh-dg kh

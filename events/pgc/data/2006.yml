@@ -22,7 +22,7 @@ stages:
       - sodos
       - starting
     rounds:
-      - - ls-kc ls:W+R sgf:2006/2006-1-kchwedyna-lsoldan.sgf
+      - - ls-kc ls:W+R sgf:2006/2006-1-kchwedyna-lsoldan.sgf rotate:180
         - mb-mk mb
         - kg-pc kg
         - kh-ts kh
@@ -44,7 +44,7 @@ stages:
         - mk-kc mk
       - - ls-kg ls
         - mb-kh mb
-        - pc-kc pc:B+R sgf:2006/2006-6-pcelejewski-kchwedyna.sgf
+        - pc-kc pc:B+R sgf:2006/2006-6-pcelejewski-kchwedyna.sgf rotate:180
         - mk-ts mk
       - - ls-kh ls:B+? sgf:2006/2006-7-lsoldan-khabu.sgf
         - mb-kg mb
