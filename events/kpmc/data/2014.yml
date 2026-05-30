@@ -14,3 +14,32 @@ stages:
       - sos
       - sosos
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:5 sgf:2014/5-WeiTaeWoong-HuYuqing.sgf
+      - 1-5 1:B+R round:6 sgf:2014/6-WeiTaeWoong-LockhartBen.sgf
+      - 1-7 1:B+T round:4 sgf:2014/4-WeiTaeWoong-JuangChengJiun.sgf
+      - 1-19 1:B+R round:1 sgf:2014/1-WeiTaeWoong-YatsenkoDmytro.sgf
+      - 2-7 2:B+R round:6 sgf:2014/6-HuYuqing-JuangChengJiun.sgf
+      - 3-13 3:B+13.5 round:6 sgf:2014/6-TanapatsopolVorawat-TranQuangTue.sgf
+      - 4-9 4:B+R round:6 sgf:2014/6-TsuchimuneYoshiyuki-PodperaLukas.sgf
+      - 4-10 4:B+R round:4 sgf:2014/4-TsuchimuneYoshiyuki-ZhaoJiaRui.sgf
+      - 4-22 4:B+R round:5 sgf:2014/5-TsuchimuneYoshiyuki-StankovicDejan.sgf
+      - 5-8 5:B+1.5 round:5 sgf:2014/5-LockhartBen-SurinDmitrij.sgf
+      - 6-26 6:B+6.5 round:4 sgf:2014/4-EmilBustamante-CastellanoMiguelAngel.sgf
+      - 9-7 7:W+R round:2 sgf:2014/2-PodperaLukas-JuangChengJiun.sgf
+      - 11-5 5:W+T round:3 sgf:2014/3-YongAlvinNg-LockhartBen.sgf
+      - 12-2 2:W+R round:3 sgf:2014/3-DebarreThomas-HuYuqing.sgf
+      - 15-30 15:B+R round:4 sgf:2014/4-KaitschickStefan-MajkaMarcin.sgf
+      - 18-28 18:B+R round:1 sgf:2014/1-ChengKhaiYong-BingJakob.sgf
+      - 19-39 19:B+23.5 round:3 sgf:2014/3-YatsenkoDmytro-PetrauskasAlbertas.sgf
+      - 21-7 7:W+R round:5 sgf:2014/5-SedgwickJames-JuangChengJiun.sgf
+      - 26-33 26:B+R round:5 sgf:2014/5-CastellanoMiguelAngel-KayAndrew.sgf
+      - 27-4 4:W+R round:2 sgf:2014/2-FragmanAmir-TsuchimuneYoshiyuki.sgf
+      - 27-24 27:B+R round:1 sgf:2014/1-FragmanAmir-LaatikainenVesa.sgf
+      - 30-26 26:W+16.5 round:3 sgf:2014/3-MajkaMarcin-CastellanoMiguelAngel.sgf
+      - 32-13 13:W+5.5 round:2 sgf:2014/2-MualimeSebastian-TranQuangTue.sgf
+      - 34-21 21:W+22.5 round:1 sgf:2014/1-TomeDaniel-SedgwickJames.sgf
+      - 36-1 1:W+R round:2 sgf:2014/2-ConnellAndre-WeiTaeWoong.sgf
+      - 38-5 5:W+26.5 round:2 sgf:2014/2-HjartnesTomas-BenLockhart.sgf
+      - 39-28 28:W+R round:6 sgf:2014/6-PetrauskasAlbertas-BingJakob.sgf
+      - 41-38 41:B+R round:1 sgf:2014/1-ShanahanThomas-HjartnesTomas.sgf

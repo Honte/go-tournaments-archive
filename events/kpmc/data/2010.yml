@@ -2,7 +2,7 @@ website: https://kpmc.kbaduk.or.kr/us/2010
 stages:
   - type: tournament
     file: kpmc2010.txt
-    time: 30min + 3x30s japanese    
+    time: 30min + 3x30s japanese
     komi: 6.5
     scoringColumns:
       - wins
@@ -14,3 +14,6 @@ stages:
       - sos
       - sosos
     findSharedPlaces: true
+    games:
+      - 1-5 1:B+9.5 round:7 sgf:2010/7-LeeSangHun-KachanovskyiArtem.sgf
+      - 2-1 1:W+R round:6 sgf:2010/6-TsuchimuneYoshiyuki-LeeSangHun.sgf

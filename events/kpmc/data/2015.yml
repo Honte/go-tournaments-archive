@@ -2,7 +2,7 @@ website: https://kpmc.kbaduk.or.kr/us/2015
 stages:
   - type: tournament
     file: kpmc2015.txt
-    time: 40min + 3x30s japanese  
+    time: 40min + 3x30s japanese
     komi: 6.5
     scoringColumns:
       - wins
@@ -14,3 +14,7 @@ stages:
       - sos
       - sosos
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:5 sgf:2015/5-HuYuqing-KimHeesoo.sgf
+      - 8-2 2:W+R round:6 sgf:2015/6-JyunFuLai-KimHeesoo.sgf
+      - 42-2 2:W+R round:1 sgf:2015/1-GonzalezAaron-KimHeesoo.sgf
