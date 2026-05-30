@@ -66,24 +66,26 @@ export function calculateStats(tournaments: Tournament[], playersHandler: Player
         const playerGames: StatsPlayerGame[] = [];
         let won = 0;
 
-        for (const game of player.games) {
-          if (game) {
-            won += Number(game.won);
+        if ('games' in player && player.games?.length) {
+          for (const game of player.games) {
+            if (game) {
+              won += Number(game.won);
 
-            const globalGame = tournamentGames[game.game];
+              const globalGame = tournamentGames[game.game];
 
-            playerGames.push({
-              id: tournamentPlayersMap[game.opponent].id,
-              country: tournamentPlayers[game.opponent]?.country,
-              rank: tournamentPlayers[game.opponent]?.rank,
-              won: game.won,
-              result: game.result,
-              props: globalGame?.props,
-              color: game.color,
-            });
+              playerGames.push({
+                id: tournamentPlayersMap[game.opponent].id,
+                country: tournamentPlayers[game.opponent]?.country,
+                rank: tournamentPlayers[game.opponent]?.rank,
+                won: game.won,
+                result: game.result,
+                props: globalGame?.props,
+                color: game.color,
+              });
 
-            if (globalGame?.props?.sgf) {
-              globalPlayer.sgfs++;
+              if (globalGame?.props?.sgf) {
+                globalPlayer.sgfs++;
+              }
             }
           }
         }

@@ -89,7 +89,8 @@ function getGameStage(tournament: Tournament, id: string) {
           }
         }
         break;
-      default:
+      case 'round-robin-table':
+      case 'final':
         const gameNo = stage.games.indexOf(id);
 
         if (gameNo >= 0) {

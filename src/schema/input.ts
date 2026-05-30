@@ -21,6 +21,11 @@ export type InputLeagueStage = InputBaseStage & {
   order?: string[];
 };
 
+export type InputClassificationStage = InputBaseStage & {
+  type: 'classification';
+  order: (string | string[])[];
+};
+
 export type InputLadderTableStage = InputBaseStage & {
   type: 'ladder-table';
   order: string[];
@@ -53,6 +58,7 @@ export type InputTournamentStage = InputBaseStage & {
 
 export type InputStage =
   | InputLeagueStage
+  | InputClassificationStage
   | InputLadderTableStage
   | InputFinalStage
   | InputRoundRobinTableStage

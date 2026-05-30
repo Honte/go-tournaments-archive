@@ -1,5 +1,4 @@
-players:
- zmutabzija: Zoran Mutabzija
-top:
- - zmutabzija
-stages: []
+stages:
+ - type: classification
+   order:
+    - Zoran Mutabzija

@@ -1,6 +1,7 @@
 import { Game, LeagueStage, Player, Stage, TournamentDetails } from '@/schema/data';
 import { InputStage } from '@/schema/input';
 import { parseDates } from '@/libs/dates';
+import { loadClassificationStage } from '@/data/classification';
 import { createFinalTable } from '@/data/final';
 import { parseGames } from '@/data/games';
 import { loadH9Tournament } from '@/data/h9tournament';
@@ -25,6 +26,13 @@ export async function parseStage(
         playersMap,
         playersHandler,
         gamesMap,
+        tournamentDetails,
+      });
+    case 'classification':
+      return loadClassificationStage({
+        stage,
+        playersMap,
+        playersHandler,
         tournamentDetails,
       });
     case 'league': {

@@ -59,6 +59,8 @@ export function GamesList({ tournament, translations }: GamesListProps) {
           games: stage.games.filter(gamesFilter),
         });
         break;
+      case 'classification':
+        break;
       default:
         throw new Error('Unrecognized stage type');
     }

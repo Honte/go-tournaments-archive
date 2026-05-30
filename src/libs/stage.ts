@@ -20,6 +20,8 @@ export function getStageNameFromType(type: Stage['type'], translations: Translat
   switch (type) {
     case 'tournament':
       return t('stage.tournament');
+    case 'classification':
+      return t('stage.classification');
     case 'league':
     case 'round-robin-table':
       return t('stage.league');

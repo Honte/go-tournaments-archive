@@ -1,5 +1,4 @@
-players:
- vkuhar: Velimir Kuhar
-top:
- - vkuhar
-stages: []
+stages:
+ - type: classification
+   order:
+    - Velimir Kuhar

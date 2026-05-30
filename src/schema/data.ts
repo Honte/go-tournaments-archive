@@ -36,7 +36,7 @@ export type TournamentItem = {
   hasSgfs?: boolean;
 };
 
-export type Stage = LeagueStage | LadderTableStage | FinalStage | RoundRobinTableStage;
+export type Stage = LeagueStage | LadderTableStage | FinalStage | RoundRobinTableStage | ClassificationStage;
 
 export enum Breaker {
   WINS = 'wins',
@@ -86,6 +86,16 @@ export type LeagueStage = BaseStage & {
   customBreakers?: Record<string, CustomBreaker>;
   order?: string[];
   games?: string[];
+};
+
+export type ClassificationStage = BaseStage & {
+  type: 'classification';
+  order: (string | string[])[];
+  table: {
+    id: string;
+    place: number;
+    index: number;
+  }[];
 };
 
 export type LadderTableStage = BaseStage & {
