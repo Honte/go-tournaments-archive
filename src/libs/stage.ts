@@ -33,3 +33,21 @@ export function getStageNameFromType(type: Stage['type'], translations: Translat
       throw new Error('Unrecognized stage type');
   }
 }
+
+export function parseTop(top?: (string | string[])[]): string[][] {
+  if (!top) {
+    return [];
+  }
+
+  return top.map((row) => {
+    if (!row) {
+      return [];
+    }
+
+    if (Array.isArray(row)) {
+      return row;
+    }
+
+    return row.split(',');
+  });
+}

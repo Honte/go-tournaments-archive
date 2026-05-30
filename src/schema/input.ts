@@ -70,7 +70,7 @@ export type InputTournament = {
   referee?: string;
   website?: string | string[];
   players?: Record<string, string>;
-  top?: string[];
+  top?: (string | string[])[];
   stages: InputStage[];
   displayReversed?: boolean;
   notes?: string | Record<string, string>;

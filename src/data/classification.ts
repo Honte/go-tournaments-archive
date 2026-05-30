@@ -45,7 +45,7 @@ export function loadClassificationStage({
       }
     }
 
-    tournamentDetails.top = winners.map((winner) => winner.join(','));
+    tournamentDetails.top = winners;
   }
 
   return {

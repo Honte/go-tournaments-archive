@@ -297,7 +297,7 @@ export function calculateStats(tournaments: Tournament[], playersHandler: Player
     });
   }
 
-  function upsertMedals(year: number, players: Record<string, Player>, winners?: string[], category?: string) {
+  function upsertMedals(year: number, players: Record<string, Player>, winners?: string[][], category?: string) {
     if (!winners) {
       return;
     }
@@ -305,7 +305,7 @@ export function calculateStats(tournaments: Tournament[], playersHandler: Player
     const edition = String(year);
 
     for (const [index, winner] of winners.entries()) {
-      for (const id of winner.split(',')) {
+      for (const id of winner) {
         const player = players[id];
         const playerStats = upsertPlayer(player);
 

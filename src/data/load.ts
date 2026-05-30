@@ -5,6 +5,7 @@ import fg from 'fast-glob';
 import { parse } from 'yaml';
 import { Game, type Player, Tournament, TournamentDateSpan, TournamentDetails } from '@/schema/data';
 import { InputTournament } from '@/schema/input';
+import { parseTop } from '@/libs/stage';
 import { createPlayersHandler } from '@/data/players';
 import { parseStage } from '@/data/stages';
 
@@ -27,7 +28,7 @@ export async function loadData() {
       year,
       country: json.country,
       location: json.location ?? '',
-      top: json.top ?? [],
+      top: parseTop(json.top),
     };
 
     for (const stageJson of json.stages) {
@@ -100,14 +101,8 @@ function getDateRange(dates: TournamentDateSpan[]) {
   return { start, end };
 }
 
-function replaceFullNamesWithIds(top: string[], idsMap: Record<string, string>) {
-  return top.map((place) =>
-    place
-      .split(',')
-      .map((id) => idsMap[id])
-      .filter(Boolean)
-      .join(',')
-  );
+function replaceFullNamesWithIds(top: string[][], idsMap: Record<string, string>) {
+  return top.map((place) => place.map((id) => idsMap[id]).filter(Boolean));
 }
 
 function createPlayersIdMap(players: Record<string, Player>) {

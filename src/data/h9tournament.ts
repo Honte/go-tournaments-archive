@@ -262,7 +262,7 @@ export async function loadH9Tournament({
 
     for (const category in top) {
       if (top[category].length && !target[category]) {
-        target[category] = top[category].map((pl) => pl.join(','));
+        target[category] = top[category];
       }
     }
   } else if (!tournamentDetails.top.length) {
@@ -275,7 +275,7 @@ export async function loadH9Tournament({
       }
     }
 
-    tournamentDetails.top = winners.map((winner) => winner.join(','));
+    tournamentDetails.top = winners;
   }
 
   if (!tournamentDetails.name) {
