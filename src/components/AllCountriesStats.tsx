@@ -7,7 +7,7 @@ import type { StatsCountry, TableStats } from '@/schema/data';
 import type { Locale, Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { sortTableStats } from '@/libs/sort';
-import { toPercentage } from '@/libs/table';
+import { toNumeric, toPercentage } from '@/libs/table';
 import { StatsTable } from '@/components/table/StatsTable';
 import { CountryLink } from '@/components/ui/CountryLink';
 import { Loader } from '@/components/ui/Loader';
@@ -97,6 +97,7 @@ function AllCountriesStatsContent({ countries, translations }: AllCountriesStats
           EVENT_CONFIG.showBestPlace && {
             accessorKey: 'bestPlace',
             header: t('table.best'),
+            cell: toNumeric,
           },
           {
             accessorKey: 'attended',
