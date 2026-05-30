@@ -17,7 +17,7 @@ export async function parseStage(
   tournamentDetails: TournamentDetails,
   playersHandler: PlayersHandler
 ): Promise<Stage> {
-  const date = parseDates(stage.date);
+  const date = stage.date ? parseDates(stage.date) : undefined;
 
   switch (stage.type) {
     case 'tournament':
