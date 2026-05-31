@@ -8,6 +8,7 @@ export type SgfInfo = {
   sgfBlackName: string | null;
   sgfWhiteName: string | null;
   sgfRound: number | null;
+  sgfOgs: string | null;
   filenameBlackName: string | null;
   filenameWhiteName: string | null;
   filenameRound: number | null;
@@ -36,9 +37,8 @@ export type H9GameRecord = {
 export type ParsedGameEntry = {
   id: string;
   sgf: string;
-  round: number | null;
-  props: string;
   raw: string;
+  props: Record<string, string>;
 };
 
 export type StageResult = {

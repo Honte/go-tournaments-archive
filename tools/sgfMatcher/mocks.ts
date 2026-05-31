@@ -20,6 +20,7 @@ export function makeSgfInfo(overrides: Partial<SgfInfo> = {}): SgfInfo {
     sgfBlackName: 'Black Player',
     sgfWhiteName: 'White Player',
     sgfRound: null,
+    sgfOgs: null,
     filenameBlackName: 'BlackPlayer',
     filenameWhiteName: 'WhitePlayer',
     filenameRound: 1,

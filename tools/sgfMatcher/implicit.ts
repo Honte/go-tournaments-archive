@@ -1,16 +1,17 @@
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import type { InputTournamentStage } from '@/schema/input';
-import { type H9Player, buildLocalGameId, parseH9 } from '@/libs/h9';
+import { buildLocalGameId, type H9Player, parseH9 } from '@/libs/h9';
 import { GAME_REGEX } from '@/data/games';
 import { buildSgfEntryString, type SgfMatchResult } from './entries';
 import {
-  MATCHES_SAME_GAME_AS_OTHER_FILE_REASON,
-  MATCHING_GAME_ALREADY_HAS_SGF_REASON,
   buildCommonUnmatchedReasons,
   findDuplicateKeys,
   formatSgfWinner,
   getSgfRound,
+  MATCHES_SAME_GAME_AS_OTHER_FILE_REASON,
+  MATCHING_GAME_ALREADY_HAS_SGF_REASON,
+  OGS_CONFLICT_REASON,
 } from './match';
 import { loadSgfInfos, parseFilename } from './sgf';
 import {
@@ -21,20 +22,17 @@ import {
   type SgfInfo,
   type SgfPlaces,
   type StageAnalysisResult,
-  type UnmatchedEntry,
   UNKNOWN_PLACE,
+  type UnmatchedEntry,
 } from './types';
-import { flipColor, normalizePlayerName } from './utils';
-
-const SGF_REGEX = /\bsgf:(\S+)/;
-const ROUND_REGEX = /\bround:(\d+)/;
+import { flipColor, normalizePlayerName, parseProps } from './utils';
 
 type ImplicitCandidate = {
   sgf: SgfInfo;
   localId: string;
   h9Record: H9GameRecord;
   places: SgfPlaces;
-  props?: string;
+  props?: Record<string, string>;
 };
 
 export async function processImplicitStage({
@@ -171,6 +169,12 @@ export function matchImplicitSgfs({
 
     const yamlGame = existingGamesById.get(localId);
 
+    if (sgf.sgfOgs && yamlGame?.props?.ogs && sgf.sgfOgs !== yamlGame.props.ogs) {
+      unmatchedEntries.push(buildImplicitUnmatchedEntry(sgf, places, existingGamesBySgf, [OGS_CONFLICT_REASON]));
+      unmatchedSgfs.push(sgf.path);
+      continue;
+    }
+
     if (yamlGame && currentSgfPaths.has(yamlGame.sgf) && !force) {
       unmatchedEntries.push(
         buildImplicitUnmatchedEntry(sgf, places, existingGamesBySgf, [MATCHING_GAME_ALREADY_HAS_SGF_REASON])
@@ -247,26 +251,19 @@ function parseEntry(entry: string): ParsedGameEntry | null {
   }
 
   const { home, away, props } = gameMatch.groups!;
-  const sgfMatch = props?.match(SGF_REGEX);
+  const parsedProps = parseProps(props);
 
-  if (isNaN(Number(home)) || isNaN(Number(away)) || !sgfMatch) {
+  if (isNaN(Number(home)) || isNaN(Number(away)) || !parsedProps.sgf) {
     return null;
   }
 
-  const roundMatch = props?.match(ROUND_REGEX);
-  const round = roundMatch ? Number(roundMatch[1]) : parseFilename(sgfMatch[1]).round;
-
-  let remaining = props.replace(sgfMatch[0], '');
-  if (roundMatch) {
-    remaining = remaining.replace(roundMatch[0], '');
-  }
+  const { round, sgf, ...restProps } = parsedProps;
 
   return {
-    id: buildLocalGameId(Number(home), Number(away), round ?? undefined),
-    sgf: sgfMatch[1],
-    round,
-    props: remaining.replace(/\s+/g, ' ').trim(),
+    id: buildLocalGameId(Number(home), Number(away), round ? Number(round) : (parseFilename(sgf).round ?? undefined)),
     raw: entry,
+    sgf,
+    props: restProps,
   };
 }
 
@@ -354,7 +351,7 @@ function buildImplicitUnmatchedEntry(
 function buildImplicitMatchResult(
   sgf: SgfInfo,
   places: SgfPlaces,
-  props?: string,
+  props?: Record<string, string>,
   h9Record?: H9GameRecord
 ): SgfMatchResult {
   const black = places.blackPlace ?? h9Record?.homePlace ?? UNKNOWN_PLACE;
@@ -374,14 +371,20 @@ function buildImplicitMatchResult(
     }
   }
 
+  const round = h9Record?.round ?? getSgfRound(sgf);
+  const targetProps: Record<string, string | undefined> = {
+    ...props,
+    ogs: sgf.sgfOgs ?? props?.ogs,
+    round: typeof round === 'number' ? String(round) : props?.round,
+  };
+
   return {
     black,
     white,
     winner: winnerPlace,
     result: resultStr,
-    round: h9Record?.round ?? getSgfRound(sgf),
     sgf: sgf.path,
-    props,
+    props: targetProps,
   };
 }
 

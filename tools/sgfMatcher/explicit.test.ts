@@ -181,6 +181,109 @@ describe('matchExplicitSgfs', () => {
     assert.deepEqual(result.unmatchedEntries[0]?.reasons, ['matching game already has sgf']);
   });
 
+  it('adds OGS props extracted from SGF metadata to explicit game entries', () => {
+    const tournament: InputTournament = {
+      players: {
+        bp: 'Black Player 1d',
+        wp: 'White Player 1d',
+      },
+      stages: [],
+    };
+
+    const sgf = makeSgfInfo({
+      path: '2025-league-1-bp-wp.sgf',
+      filenameBlackName: 'bp',
+      filenameWhiteName: 'wp',
+      filenameStage: 'league',
+      sgfOgs: 'https://online-go.com/review/114161',
+    });
+
+    const result = matchExplicitSgfs({
+      tournament,
+      stage: {
+        type: 'league',
+        date: '2025-01-01',
+        rounds: [['bp-wp bp:B+R']],
+      },
+      sgfPaths: [sgf.path],
+      sgfInfos: [sgf],
+      force: false,
+    });
+
+    assert.deepEqual(result.matchedEntries, [
+      'bp-wp bp:B+R sgf:2025-league-1-bp-wp.sgf ogs:https://online-go.com/review/114161',
+    ]);
+  });
+
+  it('preserves matching existing OGS props in explicit game entries', () => {
+    const tournament: InputTournament = {
+      players: {
+        bp: 'Black Player 1d',
+        wp: 'White Player 1d',
+      },
+      stages: [],
+    };
+
+    const sgf = makeSgfInfo({
+      path: '2025-league-1-bp-wp.sgf',
+      filenameBlackName: 'bp',
+      filenameWhiteName: 'wp',
+      filenameStage: 'league',
+      sgfOgs: 'https://online-go.com/review/114161',
+    });
+
+    const result = matchExplicitSgfs({
+      tournament,
+      stage: {
+        type: 'league',
+        date: '2025-01-01',
+        rounds: [
+          ['bp-wp bp:B+R sgf:2025-league-1-bp-wp.sgf yt:https://example.test ogs:https://online-go.com/review/114161'],
+        ],
+      },
+      sgfPaths: [sgf.path],
+      sgfInfos: [sgf],
+      force: true,
+    });
+
+    assert.deepEqual(result.matchedEntries, [
+      'bp-wp bp:B+R sgf:2025-league-1-bp-wp.sgf yt:https://example.test ogs:https://online-go.com/review/114161',
+    ]);
+  });
+
+  it('reports OGS conflicts in explicit game entries', () => {
+    const tournament: InputTournament = {
+      players: {
+        bp: 'Black Player 1d',
+        wp: 'White Player 1d',
+      },
+      stages: [],
+    };
+
+    const sgf = makeSgfInfo({
+      path: '2025-league-1-bp-wp.sgf',
+      filenameBlackName: 'bp',
+      filenameWhiteName: 'wp',
+      filenameStage: 'league',
+      sgfOgs: 'https://online-go.com/review/114161',
+    });
+
+    const result = matchExplicitSgfs({
+      tournament,
+      stage: {
+        type: 'league',
+        date: '2025-01-01',
+        rounds: [['bp-wp bp:B+R sgf:2025-league-1-bp-wp.sgf ogs:https://online-go.com/review/114162']],
+      },
+      sgfPaths: [sgf.path],
+      sgfInfos: [sgf],
+      force: true,
+    });
+
+    assert.deepEqual(result.matchedEntries, []);
+    assert.deepEqual(result.unmatchedEntries[0]?.reasons, ['ogs conflict']);
+  });
+
   it('matches a replacement SGF and removes the stale SGF without force', () => {
     const tournament: InputTournament = {
       players: {
@@ -189,6 +292,7 @@ describe('matchExplicitSgfs', () => {
       },
       stages: [],
     };
+
     const sgf = makeSgfInfo({
       path: '2025-league-1-bp-wp-new.sgf',
       filenameBlackName: 'bp',

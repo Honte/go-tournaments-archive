@@ -44,7 +44,7 @@ stages:
         - sf-fish sf:B+R sgf:2020/2020-4-sfrejlak-kchwedyna.sgf ogs:https://online-go.com/game/31288639
       - - dj-fish dj:B+4.5 sgf:2020/2020-5-djurkiewicz-kchwedyna.sgf ogs:https://online-go.com/game/31295995
         - pd-mw mw:W+R sgf:2020/2020-5-pdyszczyk-mwalaszewski.sgf ogs:https://online-go.com/game/31295947
-        - kac-sf sf:W+31.5 sgf:2020/2020-5-kcieslak-sfrejlak.sgf
+        - kac-sf sf:W+31.5 sgf:2020/2020-5-kcieslak-sfrejlak.sgf ogs:https://online-go.com/game/31295758
         - mm-ls mm:B+48.5 sgf:2020/2020-5-mmajka-lsoldan.sgf ogs:https://online-go.com/game/31295870
       - - mw-dj dj:W+7.5 sgf:2020/2020-6-mwalaszewski-djurkiewicz.sgf ogs:https://online-go.com/review/621415
         - fish-pd fish:B+R sgf:2020/2020-6-kchwedyna-pdyszczyk.sgf ogs:https://online-go.com/game/31319581

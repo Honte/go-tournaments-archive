@@ -3,6 +3,8 @@ import { type SgfInfo, type SgfPlaces, UNKNOWN_PLACE, type UnknownPlace } from '
 
 export const MATCHING_GAME_ALREADY_HAS_SGF_REASON = 'matching game already has sgf';
 export const MATCHES_SAME_GAME_AS_OTHER_FILE_REASON = 'matches same game as other file';
+export const OGS_CONFLICT_REASON = 'ogs conflict';
+export const RESULT_CONFLICT_REASON = 'result conflict';
 
 export type WinnerPart = {
   winnerPlace: number | UnknownPlace;
