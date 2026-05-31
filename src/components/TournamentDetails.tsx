@@ -43,7 +43,7 @@ export function TournamentDetails({ tournament, translations }: TournamentDetail
     details[t('details.website')] = (
       <div className="flex flex-col">
         {(Array.isArray(tournament.website) ? tournament.website : [tournament.website]).map((website) => (
-          <ExternalLink key={website} title={t('details.goToWebsite', String(tournament.year))} url={website} />
+          <ExternalLink key={website} title={t('details.goToWebsite', String(tournament.year))} href={website} />
         ))}
       </div>
     );

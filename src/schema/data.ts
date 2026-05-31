@@ -22,6 +22,7 @@ export type Tournament = TournamentDetails & {
   games: Record<string, Game>;
   stages: Stage[];
   players: Record<string, Player>;
+  hasSgfs: boolean;
 };
 
 export type TournamentDateSpan = {

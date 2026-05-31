@@ -3,6 +3,7 @@ import EVENT_CONFIG from '@event/config';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import fg from 'fast-glob';
+import { notFound } from 'next/navigation';
 import type { NextRequest } from 'next/server';
 import { DEFAULT_LOCALE } from '@/i18n/locales';
 import { loadTranslations } from '@/i18n/server';
@@ -10,8 +11,9 @@ import { generateJpg } from '@tools/jpg';
 import { generatePng } from '@tools/png';
 import { Sgf } from '@tools/sgf';
 import { generateSvg } from '@tools/svg';
+import { createZip } from '@/libs/zip';
 import { getTournaments } from '@/data';
-import { loadGameSgfDetails } from '@/data/sgfs';
+import { loadCleanTournamentSgfs, loadGameSgfDetails } from '@/data/sgfs';
 
 const THUMB_SIZE = 128;
 const SGF_DIR = `./events/${EVENT}/sgf`;
@@ -22,10 +24,15 @@ type RouteProps = {
 
 export async function GET(request: NextRequest, props: RouteProps) {
   const { path: segments } = await props.params;
+
+  if (segments.length === 1 && segments[0].match(/^\d+\.zip$/)) {
+    return serveZip(Number(segments[0].replace('.zip', '')));
+  }
+
   const details = path.parse(path.join(SGF_DIR, ...segments));
 
   if (!path.resolve(details.dir).startsWith(path.resolve(SGF_DIR))) {
-    return new Response('Not Found', { status: 404 });
+    return notFound();
   }
 
   const sgfPath = path.resolve(path.join(details.dir, `${details.name.replace(/\.raw$/, '')}.sgf`));
@@ -68,10 +75,10 @@ export async function GET(request: NextRequest, props: RouteProps) {
       });
     }
 
-    return new Response('Not Found', { status: 404 });
+    return notFound();
   } catch (err) {
     console.error(`Error generating ${segments.join('/')}:`, err);
-    return new Response('Not Found', { status: 404 });
+    return notFound();
   }
 }
 
@@ -83,6 +90,14 @@ export async function generateStaticParams() {
   }
 
   const output = [];
+
+  if (EVENT_CONFIG.generateZips) {
+    for (const tournament of await getTournaments()) {
+      if (tournament.hasSgfs) {
+        output.push({ path: [`${tournament.year}.zip`] });
+      }
+    }
+  }
 
   for (const file of files) {
     const details = path.parse(path.relative(SGF_DIR, file));
@@ -135,4 +150,27 @@ async function getSgf(file: string, raw = false) {
   }
 
   return Sgf.clean(content, sgfDetails.props, sgfDetails.rotation);
+}
+
+async function serveZip(year: number) {
+  const tournaments = await getTournaments();
+  const tournament = tournaments.find((tournament) => tournament.year === year);
+
+  if (!tournament?.hasSgfs) {
+    return notFound();
+  }
+
+  const translations = await loadTranslations(DEFAULT_LOCALE);
+  const files = await loadCleanTournamentSgfs(tournament, translations);
+
+  if (!files.length) {
+    return notFound();
+  }
+
+  return new Response(createZip(files), {
+    headers: {
+      'Content-Type': 'application/zip',
+      'Content-Disposition': `attachment; filename="${EVENT}-${year}-sgfs.zip"`,
+    },
+  });
 }

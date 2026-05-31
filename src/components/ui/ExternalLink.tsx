@@ -1,18 +1,20 @@
-import type { PropsWithChildren } from 'react';
+import type { ComponentProps } from 'react';
 import { twMerge } from 'tailwind-merge';
 
-type ExternalLinkProps = PropsWithChildren<{
-  url: string;
-  title?: string;
-  className?: string;
-}>;
-
-export function ExternalLink({ url, children = url.replace(/^https?:\/\//, ''), title, className }: ExternalLinkProps) {
+export function ExternalLink({
+  href,
+  children = href.replace(/^https?:\/\//, ''),
+  title,
+  className,
+  ...props
+}: ComponentProps<'a'> & { href: string }) {
   return (
     <a
-      href={url}
+      href={href}
       className={twMerge(`underline text-event-primary hover:text-event-hover ${className || ''}`)}
       title={title}
+      aria-label={title}
+      {...props}
     >
       {children}
     </a>

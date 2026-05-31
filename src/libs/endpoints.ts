@@ -36,6 +36,7 @@ export function createEndpoints({ basePath, domain }: FrontendEndpointsConfig) {
     PLAYER_STATS: (slug: string) => withBasePath(`/data/stats/player/${slug}.json`),
     COUNTRY_STATS: (code: string) => withBasePath(`/data/stats/country/${code.toLowerCase()}.json`),
     GAMES_WITH_SGFS: () => withBasePath('/sgf/list.json'),
+    GAMES_ZIP: (year: number | string) => withBasePath(`/sgf/${year}.zip`),
     SITEMAP: (locale: string) => withBasePath(`/data/sitemap/${locale}.json`),
 
     GAME_SGF: (path: string) => withBasePath(path),

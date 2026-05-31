@@ -1,6 +1,7 @@
 import EVENT from '@event';
 import EVENT_CONFIG from '@event/config';
 import fs from 'node:fs/promises';
+import path from 'node:path';
 import type { ApiGameInfo } from '@/schema/api';
 import type { Game, Stage, Tournament } from '@/schema/data';
 import { CustomSgfProps, SgfRootProps } from '@/schema/sgf';
@@ -10,7 +11,8 @@ import { Sgf, type SgfNodeDataChange } from '@tools/sgf';
 import { getStageName } from '@/libs/stage';
 import pkg from '../../package.json';
 
-const EVENT_DIR = `./events/${EVENT}/`;
+const EVENT_DIR = `./events/${EVENT}`;
+const SGF_DIR = `${EVENT_DIR}/sgf`;
 
 export async function loadGameSgfDetails(tournaments: Tournament[], sgfPath: string, translations: Translations) {
   for (const tournament of tournaments) {
@@ -35,6 +37,31 @@ export async function loadGameSgfDetails(tournaments: Tournament[], sgfPath: str
   }
 }
 
+export async function loadCleanTournamentSgfs(tournament: Tournament, translations: Translations) {
+  const promises: Promise<{ path: string; content: string }>[] = [];
+
+  for (const game of Object.values(tournament.games)) {
+    if (!game.props.sgf) {
+      continue;
+    }
+
+    const stage = getGameStage(tournament, game.id);
+
+    if (!stage) {
+      continue;
+    }
+
+    promises.push(
+      fs.readFile(resolveSgfFile(game.props.sgf), 'utf-8').then((content) => ({
+        path: game.props.sgf!,
+        content: Sgf.clean(content, getSgfProps(game, tournament, stage, translations), game.rotation),
+      }))
+    );
+  }
+
+  return Promise.all(promises);
+}
+
 export async function loadSgfs(tournaments: Tournament[]) {
   const games: ApiGameInfo[] = [];
 
@@ -52,7 +79,7 @@ export async function loadSgfs(tournaments: Tournament[]) {
         continue;
       }
 
-      const content = await fs.readFile(`${EVENT_DIR}/${game.props.sgf}`, 'utf-8');
+      const content = await fs.readFile(resolveSgfFile(game.props.sgf), 'utf-8');
       const sgf = new Sgf(content);
       const black = tournament.players[game.players[0].id];
       const white = tournament.players[game.players[1].id];
@@ -73,6 +100,10 @@ export async function loadSgfs(tournaments: Tournament[]) {
   }
 
   return games;
+}
+
+function resolveSgfFile(sgfPath: string) {
+  return path.join(SGF_DIR, sgfPath.replace(/^\/sgf\/?/, ''));
 }
 
 function getGameStage(tournament: Tournament, id: string) {

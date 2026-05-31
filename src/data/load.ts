@@ -69,6 +69,7 @@ export async function loadData() {
       games,
       players,
       stages,
+      hasSgfs: Object.values(games).some((game) => game.props?.sgf),
     });
   }
 

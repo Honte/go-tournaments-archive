@@ -54,7 +54,7 @@ export function Achievements({ player, translations }: AchievementsProps) {
 
   if (player.egd) {
     details[t('details.egd')] = (
-      <ExternalLink url={Endpoints.EGD_PLAYER_LINK(player.egd)} title={t('details.goToEGD')}>
+      <ExternalLink href={Endpoints.EGD_PLAYER_LINK(player.egd)} title={t('details.goToEGD')}>
         {player.egd}
       </ExternalLink>
     );
