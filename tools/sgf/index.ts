@@ -1,8 +1,10 @@
 import { MultipleGameBranchEndsError, MultipleLongestBranchesError } from './errors';
 import { SgfParser } from './parser';
-import type { SgfNode, SgfNodeData, SgfNodeDataChange } from './schema';
+import type { SgfNode, SgfNodeDataChange } from './schema';
+import { stringifySgf, type SgfStringifyLevel } from './stringify';
 
-export type { SgfNode, SgfNodeData, SgfNodeDataChange };
+export type { SgfNode, SgfNodeData, SgfNodeDataChange } from './schema';
+export type { SgfStringifyLevel } from './stringify';
 export type SgfRotation = 0 | 90 | 180 | 270;
 
 const ROTATABLE_PROPS = new Set(['B', 'W', 'AB', 'AW', 'AE']);
@@ -18,7 +20,7 @@ export class Sgf {
       .stripComments()
       .updateRootProperties(props)
       .rotate(rotation)
-      .toString(false);
+      .toString('compact');
   }
 
   static isValidRotation(number: number): number is SgfRotation {
@@ -240,12 +242,8 @@ export class Sgf {
     return this.root;
   }
 
-  toString(pretty = false): string {
-    if (!pretty) {
-      return `(${stringifyCompact(this.root)})`;
-    }
-
-    return ['(', ...stringifyPretty(this.root, 1), ')'].join('\n');
+  toString(level: SgfStringifyLevel = 'compact'): string {
+    return stringifySgf(this.root, level);
   }
 
   *iterateNodes(): Generator<SgfNode> {
@@ -257,55 +255,6 @@ export class Sgf {
       queue.push(...node.children);
     }
   }
-}
-
-function stringifyCompact(node: SgfNode): string {
-  const current = stringifyNode(node);
-
-  if (node.children.length === 0) {
-    return current;
-  }
-
-  if (node.children.length === 1) {
-    return current + stringifyCompact(node.children[0]);
-  }
-
-  return current + node.children.map((child) => `(${stringifyCompact(child)})`).join('');
-}
-
-function stringifyPretty(node: SgfNode, level: number): string[] {
-  const indent = '  '.repeat(level);
-  const lines = [`${indent}${stringifyNode(node)}`];
-
-  if (node.children.length === 1) {
-    lines.push(...stringifyPretty(node.children[0], level));
-  } else {
-    for (const child of node.children) {
-      lines.push(`${indent}(`);
-      lines.push(...stringifyPretty(child, level + 1));
-      lines.push(`${indent})`);
-    }
-  }
-
-  return lines;
-}
-
-function stringifyNode(node: SgfNode): string {
-  let result = ';';
-
-  for (const [identifier, values] of Object.entries(node.data)) {
-    if (!/^[A-Z]+$/.test(identifier) || !values.length) {
-      continue;
-    }
-
-    result += `${identifier}${values.map((value) => `[${escapeValue(value)}]`).join('')}`;
-  }
-
-  return result;
-}
-
-function escapeValue(value: string): string {
-  return value.replace(/\\/g, '\\\\').replace(/\]/g, '\\]');
 }
 
 function rotatePoint(value: string, size: number, angle: SgfRotation): string {
