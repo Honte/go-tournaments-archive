@@ -6,7 +6,8 @@ notes: Nov 1999 - Mar 2000
 stages:
   - type: tournament
     file: ie2000.txt
-    name: top8    
+    name: top8
+    promoted: 2
     notes: Aidan Murphy qualified for top8 but did not participate
     scoringColumns:
       - wins
@@ -26,4 +27,4 @@ stages:
       - null
     breakers:
       - wins
-    findSharedPlaces: true    
+    findSharedPlaces: true

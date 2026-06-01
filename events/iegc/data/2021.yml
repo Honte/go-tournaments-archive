@@ -9,6 +9,7 @@ stages:
     name: top8
     notes: double ladder
     dir: 2021/top8
+    promoted: 2
     scoringColumns:
       - wins
       - place

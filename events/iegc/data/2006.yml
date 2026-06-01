@@ -8,6 +8,7 @@ stages:
     file: ie2006.txt
     notes: Ka Chun Leung forfeited his games, playoff for places 2-3 and 4-5
     dir: 2006/top8
+    promoted: 2
     scoringColumns:
       - wins
       - playoff

@@ -8,6 +8,7 @@ stages:
     file: ie2009.txt
     notes: Stephen Flinter qualified, but withdrew from the competition, wins MacSweeny vs Thai and Cao vs Gallagher count as 0.5 points, playoff for 2-3
     dir: 2009/top8
+    promoted: 2
     scoringColumns:
       - wins
       - playoff

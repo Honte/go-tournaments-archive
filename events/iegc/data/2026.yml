@@ -1,6 +1,6 @@
 top:
-  - xlu
-  - dliu
+  -
+  -
   - prenaut
 notes: medalists on places 1-2 can change - final still ongoing
 stages:
@@ -9,6 +9,7 @@ stages:
     name: top8
     notes: double ladder
     dir: 2026/top8
+    promoted: 2
     scoringColumns:
       - wins
       - place

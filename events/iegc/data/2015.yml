@@ -9,6 +9,7 @@ stages:
     name: top8
     notes: Wins Mitchell vs Kasko, Gibson vs Pszonka and Gibson vs Kasko count as 0.5 points; additional playoff 4-5
     dir: 2015/top8
+    promoted: 2
     scoringColumns:
       - wins
       - playoff

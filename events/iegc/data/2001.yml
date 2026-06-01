@@ -2,7 +2,8 @@ notes: Dec 2000 -  Sep 2001
 stages:
   - type: tournament
     file: ie2001.txt
-    name: top8    
+    name: top8
+    promoted: 2
     scoringColumns:
       - wins
       - null
@@ -21,4 +22,4 @@ stages:
       - null
     breakers:
       - wins
-    findSharedPlaces: true    
+    findSharedPlaces: true

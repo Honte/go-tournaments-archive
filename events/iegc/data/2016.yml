@@ -8,6 +8,7 @@ stages:
     file: ie2016.txt
     name: top8
     dir: 2016/top8
+    promoted: 2
     scoringColumns:
       - wins
       - null

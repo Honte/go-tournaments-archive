@@ -6,7 +6,8 @@ notes: Nov 1998 - Mar 1999
 stages:
   - type: tournament
     file: ie1999.txt
-    name: top8    
+    name: top8
+    promoted: 2
     notes: there was probably playoff 2-3
     scoringColumns:
       - wins
@@ -28,4 +29,4 @@ stages:
       - null
     breakers:
       - wins
-    findSharedPlaces: true       
+    findSharedPlaces: true

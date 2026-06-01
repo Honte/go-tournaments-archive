@@ -9,6 +9,7 @@ stages:
     name: top8
     notes: additional playoff for places 2-3 and 4-5
     dir: 2012/top8
+    promoted: 2
     scoringColumns:
       - wins
       - playoff

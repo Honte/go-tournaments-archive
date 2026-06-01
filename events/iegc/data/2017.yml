@@ -9,6 +9,7 @@ stages:
     name: top8
     notes: additional playoff 2-3
     dir: 2017/top8
+    promoted: 2
     scoringColumns:
       - wins
       - playoff

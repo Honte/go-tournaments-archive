@@ -6,6 +6,7 @@ website: https://www.irish-go.org/national-international/top-8/past-irish-champi
 stages:
   - type: tournament
     file: ie2005.txt
+    promoted: 2
     scoringColumns:
       - wins
       - null
@@ -24,4 +25,4 @@ stages:
       - null
     breakers:
       - wins
-    findSharedPlaces: true    
+    findSharedPlaces: true

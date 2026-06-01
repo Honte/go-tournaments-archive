@@ -9,6 +9,7 @@ stages:
     name: top8
     notes: Gavin Rooney and Paul Kelly qualified but did not play; additional playoff 4-5
     dir: 2014/top8
+    promoted: 2
     scoringColumns:
       - wins
       - playoff

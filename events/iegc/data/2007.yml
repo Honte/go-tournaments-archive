@@ -9,6 +9,7 @@ stages:
     name: top8
     notes: some games were forfeited/not played
     dir: 2007/top8
+    promoted: 2
     scoringColumns:
       - wins
       - null

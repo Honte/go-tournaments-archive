@@ -8,6 +8,7 @@ stages:
     file: ie2008.txt
     notes: playoff for places 1-3 and 4-5
     dir: 2008/top8
+    promoted: 2
     scoringColumns:
       - wins
       - playoff

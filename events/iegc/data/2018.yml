@@ -9,6 +9,7 @@ stages:
     name: top8
     notes: wins Courtney/Hutchinson/Thai/Farrell vs Flinter count as 0.5 points
     dir: 2018/top8
+    promoted: 2
     scoringColumns:
       - wins
       - null

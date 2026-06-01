@@ -9,6 +9,7 @@ stages:
     name: top8
     notes: John Gibson defaulted first 2 games
     dir: 2011/top8
+    promoted: 2
     scoringColumns:
       - wins
       - null

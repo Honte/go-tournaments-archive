@@ -36,6 +36,13 @@ export async function loadH9Tournament({
     customBreakers,
     games,
     notes,
+    time,
+    komi,
+    date,
+    egd,
+    promoted,
+    placeOffset,
+    category,
   } = stage;
 
   const content = await readFile(join(EVENT_DATA_DIR, file), 'utf-8');
@@ -250,8 +257,8 @@ export async function loadH9Tournament({
       }
     }
 
-    if (stage.category && !top[stage.category]) {
-      const categoryTop = (top[stage.category] ||= []);
+    if (category && !top[category]) {
+      const categoryTop = (top[category] ||= []);
 
       for (const player of table) {
         if (player.place <= 3) {
@@ -286,18 +293,20 @@ export async function loadH9Tournament({
     type: 'tournament',
     name,
     egd:
-      (stage.egd ?? tournament.id)
+      (egd ?? tournament.id)
         ? `https://europeangodatabase.eu/EGD/Tournament_Card.php?&key=${tournament.id}`
         : undefined,
     breakers,
     customBreakers,
     rules,
-    time: stage.time ?? (tournament.time ? `AT ${tournament.time} min` : undefined),
-    komi: stage.komi ?? tournament.komi,
+    time: time ?? (tournament.time ? `AT ${tournament.time} min` : undefined),
+    komi: komi ?? tournament.komi,
     table,
     rounds,
     notes,
-    date: parseDates(stage.date ?? tournament.dates?.join(' - ')),
+    date: parseDates(date ?? tournament.dates?.join(' - ')),
+    promoted,
+    placeOffset,
   } satisfies LeagueStage;
 }
 
