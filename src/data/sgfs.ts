@@ -53,7 +53,7 @@ export async function loadCleanTournamentSgfs(tournament: Tournament, translatio
 
     promises.push(
       fs.readFile(resolveSgfFile(game.props.sgf), 'utf-8').then((content) => ({
-        path: game.props.sgf!,
+        path: getTournamentSgfZipPath(game.props.sgf!),
         content: Sgf.clean(content, getSgfProps(game, tournament, stage, translations), game.rotation),
       }))
     );
@@ -104,6 +104,21 @@ export async function loadSgfs(tournaments: Tournament[]) {
 
 function resolveSgfFile(sgfPath: string) {
   return path.join(SGF_DIR, sgfPath.replace(/^\/sgf\/?/, ''));
+}
+
+export function getTournamentSgfZipPath(sgfPath: string) {
+  const segments = sgfPath
+    .replaceAll('\\', '/')
+    .replace(/^\/?sgf\//, '')
+    .replace(/^\/+/, '')
+    .split('/')
+    .filter(Boolean);
+
+  if (segments[0]?.match(/^\d{4}$/)) {
+    segments.shift();
+  }
+
+  return segments.join('-');
 }
 
 function getGameStage(tournament: Tournament, id: string) {

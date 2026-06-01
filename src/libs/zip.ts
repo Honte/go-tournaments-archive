@@ -1,4 +1,3 @@
-import path from 'node:path';
 import { AsyncZipDeflate, strToU8, Zip } from 'fflate';
 
 export function createZip(files: { path: string; content: string }[]) {
@@ -20,7 +19,7 @@ export function createZip(files: { path: string; content: string }[]) {
       };
 
       for (const file of files) {
-        const fileStream = new AsyncZipDeflate(path.basename(file.path));
+        const fileStream = new AsyncZipDeflate(file.path);
 
         zip.add(fileStream);
         fileStream.push(strToU8(file.content), true);
