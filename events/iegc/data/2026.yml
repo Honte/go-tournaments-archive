@@ -1,0 +1,40 @@
+top:
+  -
+  -
+  - prenaut
+notes: medalists on places 1-2 can change - final still ongoing
+stages:
+  - type: tournament
+    file: ie2026.txt
+    name: top8
+    notes: double ladder
+    dir: 2026/top8
+    promoted: 2
+    scoringColumns:
+      - wins
+      - place
+      - null
+      - null
+    breakers:
+      - place
+    findSharedPlaces: true
+    games:
+      - 3-2 2:W+? round:2 sgf:2026/top8/2-PhilippeRenaut-XinqunLu.sgf
+      - 3-2 2:W+R round:5 sgf:2026/top8/5-PhilippeRenaut-XinqunLu.sgf ogs:https://online-go.com/game/86469154
+      - 4-3 3:W+? round:4 sgf:2026/top8/4-LarionSyrotkin-PhilippeRenaut.sgf
+  - type: tournament
+    file: ie2026final.txt
+    name: Final
+    notes: One more game left!
+    dir: 2026/final
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+0.5 round:1 sgf:2026/final/1-XinqunLu-DeweiLiu.sgf ogs:https://online-go.com/game/86634068
+      - 2-1 2:B+6.5 round:2 sgf:2026/final/2-DeweiLiu-XinqunLu.sgf ogs:https://online-go.com/game/87054166

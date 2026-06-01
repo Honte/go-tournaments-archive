@@ -1,0 +1,11 @@
+; CL[A]
+; EV[Irish Championship Final]
+; PC[IE, KGS]
+; DT[2017-11-15,2018-02-26]
+; HA[h9]
+; KM[6.5]
+;.
+;
+1 Renaut Philippe    2d IE  Galw  2    0    0    0       2+ 2- 2+  |10386926
+2 Mitchell Noel      2d IE  Dubl  1    0    0    0       1- 1+ 1-  |10474563
+

@@ -14,7 +14,7 @@ export function Footer({ translations }: { translations: Translations }) {
     <footer className="bg-event-gray text-event-light">
       <div className="container mx-auto max-w-(--breakpoint-2xl) xs:flex items-center p-3">
         <p>
-          <ExternalLink url="https://honte.pl" className="text-event-light hover:text-event-light">
+          <ExternalLink href="https://honte.pl" className="text-event-light hover:text-event-light">
             Honte
           </ExternalLink>{' '}
           &copy; {generationTime.getFullYear()}
@@ -22,7 +22,7 @@ export function Footer({ translations }: { translations: Translations }) {
         <p className="ml-auto text-xs flex items-center gap-2">
           {t('site.lastUpdated', formatDate(generationTime, translations.locale))}
           <ExternalLink
-            url={REPOSITORY_URL}
+            href={REPOSITORY_URL}
             title={t('site.github', REPOSITORY_URL)}
             className="text-white hover:text-black"
           >

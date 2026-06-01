@@ -48,14 +48,14 @@ function getAwarded(tournament: Tournament) {
   if (EVENT_CONFIG.categories?.length && categoriesTop) {
     return Object.entries(categoriesTop).map(([category, top]) => ({
       category,
-      awarded: top.map((ids) => ids.split(',').map((id) => players[id])),
+      awarded: top.map((ids) => ids.map((id) => players[id])),
     }));
   }
 
   return [
     {
       category: undefined,
-      awarded: top.map((ids) => ids.split(',').map((id) => players[id])),
+      awarded: top.map((ids) => ids.map((id) => players[id])),
     },
   ];
 }

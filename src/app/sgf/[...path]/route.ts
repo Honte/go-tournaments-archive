@@ -3,6 +3,7 @@ import EVENT_CONFIG from '@event/config';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import fg from 'fast-glob';
+import { notFound } from 'next/navigation';
 import type { NextRequest } from 'next/server';
 import { DEFAULT_LOCALE } from '@/i18n/locales';
 import { loadTranslations } from '@/i18n/server';
@@ -10,8 +11,9 @@ import { generateJpg } from '@tools/jpg';
 import { generatePng } from '@tools/png';
 import { Sgf } from '@tools/sgf';
 import { generateSvg } from '@tools/svg';
+import { createZip } from '@/libs/zip';
 import { getTournaments } from '@/data';
-import { loadGameSgfProps } from '@/data/sgfs';
+import { loadCleanTournamentSgfs, loadGameSgfDetails } from '@/data/sgfs';
 
 const THUMB_SIZE = 128;
 const SGF_DIR = `./events/${EVENT}/sgf`;
@@ -22,10 +24,15 @@ type RouteProps = {
 
 export async function GET(request: NextRequest, props: RouteProps) {
   const { path: segments } = await props.params;
+
+  if (segments.length === 1 && segments[0].match(/^\d+\.zip$/)) {
+    return serveZip(Number(segments[0].replace('.zip', '')));
+  }
+
   const details = path.parse(path.join(SGF_DIR, ...segments));
 
   if (!path.resolve(details.dir).startsWith(path.resolve(SGF_DIR))) {
-    return new Response('Not Found', { status: 404 });
+    return notFound();
   }
 
   const sgfPath = path.resolve(path.join(details.dir, `${details.name.replace(/\.raw$/, '')}.sgf`));
@@ -40,7 +47,8 @@ export async function GET(request: NextRequest, props: RouteProps) {
     }
 
     if (details.ext === '.svg') {
-      const svg = await generateSvg(sgfPath);
+      const sgf = await getSgf(sgfPath);
+      const svg = await generateSvg(sgf);
 
       return new Response(svg, {
         headers: { 'Content-Type': 'image/svg+xml' },
@@ -48,8 +56,9 @@ export async function GET(request: NextRequest, props: RouteProps) {
     }
 
     if (details.ext === '.png') {
-      const svg = await generateSvg(sgfPath);
-      const png = await generatePng(svg!, THUMB_SIZE);
+      const sgf = await getSgf(sgfPath);
+      const svg = await generateSvg(sgf);
+      const png = await generatePng(svg, THUMB_SIZE);
 
       return new Response(new Uint8Array(png), {
         headers: { 'Content-Type': 'image/png' },
@@ -57,18 +66,19 @@ export async function GET(request: NextRequest, props: RouteProps) {
     }
 
     if (details.ext === '.jpg') {
-      const svg = await generateSvg(sgfPath);
-      const jpg = await generateJpg(svg!, THUMB_SIZE);
+      const sgf = await getSgf(sgfPath);
+      const svg = await generateSvg(sgf);
+      const jpg = await generateJpg(svg, THUMB_SIZE);
 
       return new Response(new Uint8Array(jpg), {
         headers: { 'Content-Type': 'image/jpeg' },
       });
     }
 
-    return new Response('Not Found', { status: 404 });
+    return notFound();
   } catch (err) {
     console.error(`Error generating ${segments.join('/')}:`, err);
-    return new Response('Not Found', { status: 404 });
+    return notFound();
   }
 }
 
@@ -80,6 +90,14 @@ export async function generateStaticParams() {
   }
 
   const output = [];
+
+  if (EVENT_CONFIG.generateZips) {
+    for (const tournament of await getTournaments()) {
+      if (tournament.hasSgfs) {
+        output.push({ path: [`${tournament.year}.zip`] });
+      }
+    }
+  }
 
   for (const file of files) {
     const details = path.parse(path.relative(SGF_DIR, file));
@@ -125,11 +143,34 @@ async function getSgf(file: string, raw = false) {
   const translations = await loadTranslations(DEFAULT_LOCALE);
   const tournaments = await getTournaments();
   const sgfPath = path.posix.join('/sgf', ...path.relative(SGF_DIR, file).split(path.sep));
-  const sgfProps = await loadGameSgfProps(tournaments, sgfPath, translations);
+  const sgfDetails = await loadGameSgfDetails(tournaments, sgfPath, translations);
 
-  if (!sgfProps) {
+  if (!sgfDetails) {
     throw new Error(`Could not find game for ${sgfPath}`);
   }
 
-  return Sgf.clean(content, sgfProps);
+  return Sgf.clean(content, sgfDetails.props, sgfDetails.rotation);
+}
+
+async function serveZip(year: number) {
+  const tournaments = await getTournaments();
+  const tournament = tournaments.find((tournament) => tournament.year === year);
+
+  if (!tournament?.hasSgfs) {
+    return notFound();
+  }
+
+  const translations = await loadTranslations(DEFAULT_LOCALE);
+  const files = await loadCleanTournamentSgfs(tournament, translations);
+
+  if (!files.length) {
+    return notFound();
+  }
+
+  return new Response(createZip(files), {
+    headers: {
+      'Content-Type': 'application/zip',
+      'Content-Disposition': `attachment; filename="${EVENT}-${year}-sgfs.zip"`,
+    },
+  });
 }

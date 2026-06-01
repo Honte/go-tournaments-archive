@@ -2,7 +2,7 @@ import slugify from 'slugify';
 import type { Player } from '@/schema/data';
 
 const PLAYER_REGEX =
-  /^(?<name>[\p{Letter} -]+)(\s+(?<rank>[0-9]{1,2}[dkp])?)?(\s+\((?<country>[A-Z]{2})\))?(\s+|(?<egd>[0-9]+))?$/u;
+  /^(?<name>[\p{Letter} -]+)(\s+(?<rank>[0-9]{1,2}[dkp])?)?(\s+\((?<country>[A-Z]{2})\))?(\s+\|(?<egd>[0-9]+))?$/u;
 
 export type PlayersHandler = ReturnType<typeof createPlayersHandler>;
 
@@ -118,7 +118,11 @@ export function createPlayersHandler() {
     return id;
   }
 
-  function loadPlayer(player: Omit<Player, 'id'>): Player {
+  function loadPlayer(player: Omit<Player, 'id'> | string): Player {
+    if (typeof player === 'string') {
+      return loadPlayer(parsePlayerString(player));
+    }
+
     return {
       ...player,
       id: getPlayerId(player.name, player.egd),

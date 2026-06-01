@@ -1,0 +1,114 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]OT[5x30 byo-yomi]C[roman361 [?\]\: hi, have a good game
+AD26 [1d\]\: Hi Roman. Enjoy the game
+]
+AP[CGoban:3]SZ[19]GM[1]EV[IE 2021]RO[3]DT[2021-02-10]PC[The KGS Go Server at http\://www.gokgs.com/]
+PB[Alex Delogu]BR[1d]PW[Roman Pszonka]KM[6.5]TM[3600]RE[W+Time]MULTIGOGM[1]
+;B[pd]BL[3575.17];W[dp]WL[3592.58];B[qp]BL[3562.27];W[dc]WL[3590.52];B[fq]BL[3553.21]
+;W[dn]WL[3580.92];B[kq]BL[3549.13];W[nc]WL[3566.93];B[pf]BL[3464.32];W[jd]WL[3557.65]
+;B[cf]BL[3371.66];W[ch]WL[3488.33];B[cc]BL[3285.64];W[cb]WL[3472.53];B[cd]BL[3183.41]
+;W[eb]WL[3415.14];B[ee]BL[3144.78];W[fd]WL[3395.71];B[fe]BL[3071.07];W[gd]WL[3392.18]
+;B[eh]BL[3019.22];W[dj]WL[3372.89];B[dl]BL[2849.13];W[ek]WL[3356.68];B[el]BL[2814.42]
+;W[fl]WL[3347.05];B[em]BL[2677.37];W[gn]WL[3185.22]C[rottenhat [?\]\: I'll be honest, I don't like this for black
+]
+;B[fm]BL[2491.94];W[gm]WL[3182.13];B[gl]BL[2486.83];W[fk]WL[3179.44];B[eo]BL[2482.33]
+;W[hl]WL[3107.67];B[fo]BL[2392.61];W[eq]WL[3103.97];B[fr]BL[2361.79];W[cm]WL[3060.53]
+;B[cq]BL[2349.85];W[cp]WL[3051.55];B[dr]BL[2277.97];W[bk]WL[3034.05];B[qj]BL[2186.7]
+;W[pk]WL[2889.07];B[pj]BL[2134.86];W[pp]WL[2817.89];B[pq]BL[2113.79];W[oq]WL[2811.72]
+;B[po]BL[2112.16];W[op]WL[2809.98];B[qq]BL[2086.66];W[iq]WL[2795.28];B[oo]BL[2003.06]
+;W[gp]WL[2743.12];B[fp]BL[1836.55];W[hr]WL[2694.53];B[er]BL[1665.64];W[bq]WL[2684.91]
+;B[br]BL[1664.13];W[dq]WL[2682.26];B[cr]BL[1660.46];W[bp]WL[2678.14];B[ar]BL[1608.43]
+;W[mp]WL[2545.48]C[JohnCo\: N3 is interesting aji here for black
+JohnCo\: The P4 stones lack liberties
+]
+;B[mq]BL[1383.87]C[rottenhat [?\]\: Alex agrees with you
+];W[mr]WL[2521.9]C[niallgo [4k\]\: dans always play clamps, I never play clamps, interesting pattern \:P
+]
+;B[nq]BL[1287.25];W[np]WL[2505.95];B[nr]BL[1242.18];W[or]WL[2495.17];B[lr]BL[1184.37]
+;W[lp]WL[2487.95];B[kp]BL[1154.93];W[lq]WL[2461.42];B[ms]BL[1151.96];W[jr]WL[2446.39]
+;B[kr]BL[1150.47]C[JohnCo\: This fight will be interesting
+];W[mn]WL[2379.57]C[JohnCo\: White has a wall but there is a cut at later G5 which is interesting for black
+]
+;B[kn]BL[1145.12];W[jo]WL[2372];B[ko]BL[1142.31];W[ml]WL[2368.89];B[kl]BL[1137.67]
+;W[mj]WL[2359.38];B[nm]BL[1087.31]C[JohnCo\: White's plan here should be to surround black and force him to play the move L1 to live. Which is just a terrible 1 point gote move
+]
+;W[mm]WL[2311.44]C[rottenhat [?\]\: If only he didn;t have this terrible heavy group to worry about
+]
+;B[kj]BL[1001.19]C[JohnCo\: Black's N3 was the start of a fine conbination
+JohnCo\: L10 is good to not be surrounded
+]
+;W[jk]WL[2197.95];B[kk]BL[967.908];W[pm]WL[2128.43];B[qn]BL[888.451];W[qm]WL[2097.43]
+;B[pr]BL[846.007];W[os]WL[2095.66];B[ns]BL[843.591];W[rn]WL[2085.07];B[ro]BL[841.97]
+;W[pn]WL[2083.46]C[sutex [2k\]\: was o1 necessary when he is out in the middle?
+]
+;B[qo]BL[781.808]C[niallgo [4k\]\: agh
+niallgo [4k\]\: we want ko!
+sutex [2k\]\: haha
+]
+;W[rl]WL[2054.42];B[no]BL[779.626]C[rottenhat [?\]\: Might be too early for a potentially game-losing ko
+niallgo [4k\]\: nonsense
+]
+;W[ln]WL[2010.31]C[JohnCo\: Yes, I think o1 was not really needed. It is revrse sente, but still probably too small
+rottenhat [?\]\: This is painful
+JohnCo\: A move like L12 is possible
+JohnCo\: If white cuts lkac lives with L1
+rottenhat [?\]\: Is black absolutely alive in the bottom right corner?
+niallgo [4k\]\: doesnt look like it
+niallgo [4k\]\: S2 is glaring
+JohnCo\: Yes, black is alive I think
+JohnCo\: white plays F1 then black E1 and four spaces is alive
+]
+;B[nk]BL[572.421]C[rottenhat [?\]\: Your other right, John
+niallgo [4k\]\: bottom riht, not left
+rottenhat [?\]\: I accept that six in the corner lives
+JohnCo\: A bad misread by me
+JohnCo\: I think it might be a ko but really hard to read it accurately
+]
+;W[nl]WL[1851.87]C[JohnCo\: Q1 R1 S2 R2 S3 T2  T3 S1 and maybe ko?
+JohnCo\: If black loses his outside liberties I think he is dead
+]
+;B[rr]BL[453.867]C[rottenhat [?\]\: So he will probably have to take gote to live, and accept being cut in the centre
+rottenhat [?\]\: eh, voila
+]
+;W[nj]WL[1797.96];B[pb]BL[314.062];W[gh]WL[1783.85];B[hf]BL[275.7]C[sutex [2k\]\: ok folks, I'm out of here
+sutex [2k\]\: see ya
+rottenhat [?\]\: Good night
+]
+;W[ob]WL[1762.33];B[qc]BL[270.031];W[ld]WL[1753.05]C[JohnCo\: The L7 cut still exists
+rottenhat [?\]\: Maybe it's not that big
+JohnCo\: P18 seems to say white is not too worried about O10 being attacked
+rottenhat [?\]\: It's almost alive locally, no?
+]
+;B[cl]BL[33.837];W[bl]WL[1748.69]C[rottenhat [?\]\: And black has very little cash
+]
+;OB[5]B[gk]BL[30]C[rottenhat [?\]\: Or time, apparently
+];W[gj]WL[1736.35];OB[5]
+B[hk]BL[30];W[hj]WL[1693.62];OB[5]B[ik]BL[30];W[ij]WL[1689.7];OB[4]B[in]BL[30];W[im]
+WL[1469.26];OB[4]B[go]BL[30];W[ho]WL[1431.91]C[JohnCo\: Black misread probably
+rottenhat [?\]\: Maybe he can get life in sente though?
+JohnCo\: This isn't so bad though as black fixes the L7 cut in sente
+]
+;OB[2]B[cj]BL[30]C[JohnCo\: Time is a huge problem for black. I cannot play well in byo-yomi
+]
+;W[jn]WL[1411.15];OB[2]B[jm]BL[30]C[JohnCo\: C10 was probably just a timesuji but white can ignore it
+]
+;W[io]WL[1251.83];OB[1]B[ci]BL[30];W[ck]WL[1239.26];OB[1]B[dk]BL[30];W[di]WL[1233.85]
+;OB[1]B[dh]BL[30];W[fj]WL[1208.32];OB[1]B[bh]BL[30];W[bi]WL[1191.42];OB[1]B[cg]
+BL[30];W[bj]WL[1190.65];OB[1]B[ch]BL[30]C[rottenhat [?\]\: Clearly Alex has not mastered the timesuji
+JohnCo\: White is alive in sente there
+JohnCo\: on the left
+]
+;W[ks]WL[1126.05];OB[1]B[jh]BL[30];W[ig]WL[1121.76];OB[1]B[lh]BL[30];W[nh]WL[1114.81]
+;OB[1]B[ph]BL[30];W[rj]WL[1103.98]C[JohnCo\: I just noticed white Q9 stones have two eyes
+]
+;OB[1]B[ri]BL[30];W[qk]WL[1102.14];OB[1]B[sj]BL[30];W[sk]WL[1100.66];OB[1]B[rk]
+BL[30];W[kg]WL[1093.46];OB[1]B[jj]BL[30];W[il]WL[1081.97];OB[1]B[jg]BL[30];W[rj]
+WL[1080.11];OB[1]B[mo]BL[30];W[lo]WL[988.446];OB[1]B[rk]BL[30];W[jf]WL[987.548]
+;OB[1]B[if]BL[30];W[rj]WL[985.439];OB[1]B[id]BL[30];W[ic]WL[970.359];OB[1]B[hd]
+BL[30]C[JohnCo\: White is ahead by 15 points from a quick count I just did
+];W[hc]
+WL[964.874];OB[1]B[rk]BL[30];W[hg]WL[949.211]C[roman361 [?\]\: oh... 
+roman361 [?\]\: thanks!
+AD26 [1d\]\: Good game. Thanks
+roman361 [?\]\: intense game
+JohnCo\: Well done guys! A great game
+])

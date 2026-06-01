@@ -1,0 +1,21 @@
+; TC[E230621A]
+; CL[A]
+; EV[6th European Professional Championship]
+; PC[EU, OGS Online]
+; DT[2023-06-21,2023-06-25]
+; HA[h9]
+; KM[6.5]
+; TM[100]
+; CM[ (submitted by erdbeer)]
+;.
+;https://eurogofed.org/epc/2023.html          
+;Pro Championship, 21-25 June 2023, Online on OGS, Fischertime 50/25             
+;# Name Rank Ctry Clb NbW R1 R2 R3 R4 R5
+1 Surma Mateusz        2p PL  Dzim  4  1  4+     5+     0=      3+     2+      |12837968
+2 Tormanen Antti       1p FI  eGo   3  2  6+     3+     0=      4+     1-      |12949310
+3 Jabarin Ali          2p IL  TAv   3  3  8+     2-     6+      1-     4+      |14637810
+4 Frejlak Stanislaw    1p PL  KA    2  4  1-     7+     5+      2-     3-      |12837594
+5 Kravets Andrii       1p UA  Rivn  1  5  7+     1-     4-      0=     0=      |12350261
+6 Simara Jan           1p CZ  Imba  1  5  2-     8+     3-      0=     0=      |10749860
+7 Kachanovskyi Artem   2p UA  Rivn  0  7  5-     4-     0=      0=     0=      |12662870
+8 Le_Calve Tanguy      1p FR  13Ma  0  7  3-     6-     0=      0=     0=      |14962706

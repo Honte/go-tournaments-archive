@@ -9,6 +9,7 @@ const EVENT_CONFIG: EventConfig = {
   hideGamesWithoutSgf: false,
   generateSvgs: false,
   generateJpgs: true,
+  generateZips: true,
 };
 
 export default EVENT_CONFIG;

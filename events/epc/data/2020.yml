@@ -1,0 +1,43 @@
+website: https://www.eurogofed.org/epc/2020.html
+stages:
+  - type: tournament
+    file: epc2020.txt
+    time: 75min + 10 min/25 moves canadian
+    komi: 6.5
+    scoringColumns:
+      - wins
+      - direct
+      - null
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+9.5 round:3 sgf:2020/3-IljaShikshin-AliJabarin.sgf
+      - 1-4 1:B+1.5 round:1 sgf:2020/1-IljaShikshin-AndriiKravets.sgf
+      - 1-7 1:B+R round:7 sgf:2020/7-IljaShikshin-TanguyleCalve.sgf
+      - 1-8 1:B+R round:6 sgf:2020/6-IljaShikshin-ArtemKachanovskyi.sgf
+      - 2-3 2:B+R round:4 sgf:2020/4-AliJabarin-MateuszSurma.sgf
+      - 2-4 2:B+R round:5 sgf:2020/5-AliJabarin-AndriiKravets.sgf
+      - 2-5 2:B+11.5 round:6 sgf:2020/6-AliJabarin-AlexandrDinerstein.sgf
+      - 2-6 6:W+R round:7 sgf:2020/7-AliJabarin-PavolLisy.sgf
+      - 3-1 1:W+R round:5 sgf:2020/5-MateuszSurma-IljaShikshin.sgf
+      - 3-4 3:B+R round:3 sgf:2020/3-MateuszSurma-AndriiKravets.sgf
+      - 3-6 3:B+R round:1 sgf:2020/1-MateuszSurma-PavolLisy.sgf
+      - 4-5 4:B+6.5 round:7 sgf:2020/7-AndriiKravets-AlexandrDinerstein.sgf
+      - 4-6 4:B+R round:6 sgf:2020/6-AndriiKravets-PavolLisy.sgf
+      - 4-8 4:B+2.5 round:2 sgf:2020/2-AndriiKravets-ArtemKachanovskyi.sgf
+      - 5-1 1:W+R round:4 sgf:2020/4-AlexandrDinerstein-IljaShikshin.sgf
+      - 5-3 5:B+R round:2 sgf:2020/2-AlexandrDinerstein-MateuszSurma.sgf
+      - 5-7 7:W+2.5 round:1 sgf:2020/1-AlexandrDinerstein-TanguyleCalve.sgf
+      - 5-8 5:B+R round:3 sgf:2020/3-AlexandrDinerstein-ArtemKachanovskyi.sgf
+      - 6-1 6:B+R round:2 sgf:2020/2-PavolLisy-IljaShikshin.sgf
+      - 6-5 5:W+R round:5 sgf:2020/5-PavolLisy-AlexandrDinerstein.sgf
+      - 6-8 8:W+R round:4 sgf:2020/4-PavolLisy-ArtemKachanovskyi.sgf
+      - 7-2 2:W+R round:2 sgf:2020/2-TanguyleCalve-AliJabarin.sgf
+      - 7-3 3:W+R round:6 sgf:2020/6-TanguyleCalve-MateuszSurma.sgf
+      - 7-4 4:W+R round:4 sgf:2020/4-TanguyleCalve-AndriiKravets.sgf
+      - 7-6 6:W+R round:3 sgf:2020/3-TanguyleCalve-PavolLisy.sgf
+      - 8-2 8:B+R round:1 sgf:2020/1-AndriiKravets-ArtemKachanovskyi.sgf
+      - 8-3 3:W+R round:7 sgf:2020/7-ArtemKachanovskyi-MateuszSurma.sgf
+      - 8-7 7:W+2.5 round:5 sgf:2020/5-ArtemKachanovskyi-TanguyleCalve.sgf

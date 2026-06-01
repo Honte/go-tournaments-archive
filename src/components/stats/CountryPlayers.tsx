@@ -7,7 +7,7 @@ import type { StatsCountry, TableStats } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { sortTableStats } from '@/libs/sort';
-import { toPercentage } from '@/libs/table';
+import { toNumeric, toPercentage } from '@/libs/table';
 import { StatsTable } from '@/components/table/StatsTable';
 import { H2 } from '@/components/ui/H2';
 import { PlayerLink } from '@/components/ui/PlayerLink';
@@ -88,6 +88,7 @@ export function CountryPlayers({ country, translations }: CountryPlayerProps) {
           EVENT_CONFIG.showBestPlace && {
             accessorKey: 'bestPlace',
             header: t('table.best'),
+            cell: toNumeric,
           },
           {
             accessorKey: 'gold',

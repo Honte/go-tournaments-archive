@@ -24,13 +24,13 @@ stages:
     rounds:
       - - kg-ww kg:B
         - ls-ku ls:B
-        - jl-mb jl:B+9.5 sgf:1999/1999-1-jlubos-mbazynski.sgf
+        - jl-mb jl:B+9.5 sgf:1999/1999-1-jlubos-mbazynski.sgf rotate:180
         - mw-jc mw:W
       - - kg-mw kg:W
         - ls-ww ls:W
         - jl-ku jl:W
         - mb-jc mb:B+1.5 sgf:1999/1999-2-mbazynski-jchlodek.sgf
-      - - kg-mb kg:B+R sgf:1999/1999-3-kgiedrojc-mbazynski.sgf
+      - - kg-mb kg:B+R sgf:1999/1999-3-kgiedrojc-mbazynski.sgf rotate:180
         - ls-mw ls:B
         - jl-ww jl:B
         - jc-ku jc:B
@@ -44,7 +44,7 @@ stages:
         - ww-mw ww:W
       - - ls-jc ls:W
         - jl-kg jl:B
-        - mb-ww mb:W+R sgf:1999/1999-6-wwieczorek-mbazynski.sgf
+        - mb-ww mb:W+R sgf:1999/1999-6-wwieczorek-mbazynski.sgf rotate:180
         - ku-mw ku:B
       - - kg-ls kg:W+R sgf:1999/1999-7-lsoldan-kgiedrojc.sgf
         - mb-mw mb:B+9.5 sgf:1999/1999-7-mbazynski-mwolak.sgf

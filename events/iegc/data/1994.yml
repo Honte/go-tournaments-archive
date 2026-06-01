@@ -1,0 +1,36 @@
+notes: data from IGA newsletter No. 10
+top:
+  - nmitchell
+  - jgibson
+  - bgallagher,crafferty
+stages:
+  - type: tournament
+    file: ie1994.txt
+    name: top8
+    time: 60min + 20sec
+    notes: Nov 1993 - Jan 1994, there was supposed to be 3rd place playoff (Gallagher,Rafferty, winner of Flinter vs Murphy) - no available data
+    promoted: 2
+    dir: 1994/top8
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 8-2 2:W+R round:7 sgf:1994/top8/7-BernardPalmer-JohnGibson.sgf
+  - type: tournament
+    file: ie1994final.txt
+    name: Final
+    time: 90min + 20sec
+    notes: February 1994 (first game 2nd feb)
+    dir: 1994/final
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 2-1 1:W+? round:1 sgf:1994/final/1-JohnGibson-NoelMitchell.sgf

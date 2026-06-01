@@ -1,0 +1,77 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]OT[5x60 byo-yomi]C[jameshut [?\]\: Irish final game 2
+jameshut [?\]\: have fun
+irelandgo [?\]\: Have a good game James
+]
+AP[CGoban:3]SZ[19]GM[1]EV[IE 2015 Final]RO[2]DT[2017-01-02]PC[The KGS Go Server at http\://www.gokgs.com/]
+PB[James Hutchinson]PW[Noel Mitchell]KM[6.5]TM[5400]RE[B+13.50]MULTIGOGM[1]
+;B[pd]BL[5387.01];W[dp]WL[5393.98];B[pq]BL[5382.35];W[cc]WL[5387.2];B[fq]BL[5230.29]
+;W[dn]WL[5019.11];B[jp]BL[5198.3];W[po]WL[4981.74];B[pl]BL[5176.36];W[oq]WL[4831.4]
+;B[or]BL[5131.23];W[op]WL[4813.17];B[nr]BL[5125.68];W[qq]WL[4808.06];B[qr]BL[5121.19]
+;W[pp]WL[4798.63];B[pr]BL[5118.78];W[rp]WL[4788.44];B[rq]BL[5036.36];W[qp]WL[4785.85]
+;B[mp]BL[5033.06];W[rr]WL[4782.25];B[rs]BL[5029.85];W[sr]WL[4752.68];B[cl]BL[4672.64]
+;W[ci]WL[4686.35];B[bn]BL[4630.45];W[cq]WL[4678.31];B[el]BL[4497.83];W[fn]WL[4660.66]
+;B[ei]BL[4392.91];W[dg]WL[4580.84];B[gp]BL[4330.93];W[co]WL[4507.43];B[fc]BL[3954.24]
+;W[gl]WL[4331.33];B[dj]BL[3660.55];W[cj]WL[4176.76];B[ck]BL[3538.37];W[ed]WL[3912.41]
+;B[fd]BL[3404.75];W[ee]WL[3843.99];B[jd]BL[3276.73];W[nc]WL[3395.29];B[oc]BL[3042.7]
+;W[nd]WL[3364.35];B[pf]BL[3039.62];W[ld]WL[3361.22];B[kc]BL[3036.74];W[mg]WL[3200.05]
+;B[pi]BL[2914.4];W[qe]WL[3071.77];B[pe]BL[2810.5];W[qc]WL[3011.79];B[qd]BL[2501.47]
+;W[ob]WL[2966.21];B[pb]BL[2404.77];W[pc]WL[2961.53];B[qb]BL[2386.26];W[od]WL[2958.58]
+;B[rc]BL[2382.78];W[pj]WL[2722.74];B[qj]BL[2109.05];W[qi]WL[2715.45];B[oj]BL[2030.16]
+;W[ph]WL[2686];B[pk]BL[2016.69];W[oi]WL[2652.15];B[pj]BL[1948.99];W[og]WL[2639.2]
+;B[qn]BL[1937.73];W[rn]WL[2502.85];B[rm]BL[1888.17];W[sn]WL[2498.68];B[ni]BL[1702.2]
+;W[qg]WL[2459.01];B[oh]BL[1673.25];W[pg]WL[2455.89];B[nf]BL[1401.8];W[ng]WL[2448.14]
+;B[ne]BL[1379.8];W[lf]WL[2106.36];B[qf]BL[1331.83];W[kp]WL[1979.67];B[lp]BL[1295.26]
+;W[ip]WL[1777.36];B[jo]BL[1138.07];W[hp]WL[1717.7];B[go]BL[1088.89];W[ko]WL[1533.02]
+;B[kq]BL[922.579];W[hn]WL[1498.6];B[jq]BL[741.877];W[in]WL[1433.12];B[hr]BL[727.164]
+;W[km]WL[1413.63];B[lc]BL[652.362];W[md]WL[1405.37];B[ke]BL[607.505];W[le]WL[1394.84]
+;B[sm]BL[562.709];W[qo]WL[1380.72];B[db]BL[452.108];W[cb]WL[1376];B[dc]BL[423.084]
+;W[dd]WL[1370.36];B[gn]BL[331.81];W[gm]WL[1356.34];B[di]BL[152.137];W[ch]WL[1344.61]
+;B[bo]BL[134.896];W[bp]WL[1340.34];B[dr]BL[125.087];W[cr]WL[1330.39];B[mb]BL[30.109]
+;W[jg]WL[1220.12];OB[4]B[jj]BL[60];W[ik]WL[1105.93];OB[4]B[if]BL[60];W[lh]WL[1059.24]
+;OB[4]B[ig]BL[60];W[jh]WL[1055.65];OB[4]B[jk]BL[60];W[jl]WL[1039.61];OB[4]B[bk]
+BL[60];W[gf]WL[1032.09];OB[4]B[ge]BL[60];W[bj]WL[935.626];OB[4]B[fk]BL[60];W[rg]
+WL[919.505];OB[4]B[rf]BL[60];W[ri]WL[916.818];OB[4]B[lj]BL[60];W[ih]WL[884.394]
+;OB[4]B[ij]BL[60];W[hk]WL[835.941];OB[4]B[ll]BL[60];W[jn]WL[768.726];OB[2]B[eq]
+BL[60];W[nm]WL[465.016];OB[2]B[nl]BL[60];W[qm]WL[429.291];OB[2]B[ql]BL[60];W[pn]
+WL[421.712];OB[2]B[rk]BL[60];W[kf]WL[373.418];OB[2]B[jf]BL[60];W[kd]WL[287.693]
+;OB[2]B[je]BL[60];W[lo]WL[150.938];OB[2]B[ec]BL[60];W[da]WL[146.059];OB[2]B[ea]
+BL[60];W[ca]WL[144.765];OB[2]B[mm]BL[60];W[hq]WL[115.898];OB[2]B[gr]BL[60];W[fa]
+WL[92.082];OB[2]B[eb]BL[60];W[jc]WL[34.543];OB[2]B[ic]BL[60];OW[5]W[jb]WL[60];OB[2]
+B[ib]BL[60];OW[4]W[he]WL[60];OB[2]B[hd]BL[60];OW[4]W[fe]WL[60];OB[2]B[gd]BL[60]
+;OW[4]W[hf]WL[60];OB[2]B[eg]BL[60];OW[4]W[ef]WL[60];OB[2]B[fg]BL[60];OW[4]W[hg]
+WL[60];OB[2]B[id]BL[60];OW[4]W[gi]WL[60];OB[2]B[dm]BL[60];OW[4]W[dh]WL[60];OB[2]
+B[fi]BL[60];OW[4]W[cn]WL[60];OB[2]B[bm]BL[60];OW[4]W[em]WL[60];OB[2]B[fl]BL[60]
+;OW[4]W[fm]WL[60];OB[2]B[oc]BL[60];OW[4]W[pc]WL[60];OB[2]B[cs]BL[60];OW[4]W[bs]
+WL[60];OB[2]B[ds]BL[60];OW[4]W[ar]WL[60];OB[2]B[ki]BL[60];OW[4]W[kh]WL[60];OB[2]
+B[om]BL[60];OW[4]W[nn]WL[60];OB[2]B[gj]BL[60];OW[4]W[mi]WL[60];OB[2]B[mj]BL[60]
+;OW[4]W[kl]WL[60];OB[2]B[kk]BL[60];OW[4]W[nh]WL[60];OB[2]B[oi]BL[60];OW[4]W[ep]
+WL[60];OB[2]B[fo]BL[60];OW[4]W[eo]WL[60];OB[2]B[iq]BL[60];OW[4]W[gq]WL[60];OB[2]
+B[fp]BL[60];OW[4]W[dq]WL[60];OB[2]B[er]BL[60];OW[4]W[np]WL[60];OB[2]B[nq]BL[60]
+;OW[4]W[gh]WL[60];OB[2]B[mo]BL[60];OW[4]W[ln]WL[60];OB[2]B[pm]BL[60];OW[4]W[mn]
+WL[60];OB[2]B[sj]BL[60];OW[4]W[si]WL[60];OB[2]B[li]BL[60];OW[4]W[lm]WL[60];OB[2]
+B[ml]BL[60];OW[4]W[rj]WL[60];OB[2]B[sk]BL[60];OW[4]W[kb]WL[60];OB[2]B[lb]BL[60]
+;OW[4]W[nb]WL[60];OB[2]B[ja]BL[60];OW[4]W[cm]WL[60];OB[2]B[dl]BL[60];OW[4]W[hj]
+WL[60];OB[2]B[ii]BL[60];OW[4]W[hi]WL[60];OB[2]B[sf]BL[60];OW[4]W[sg]WL[60];OB[2]
+B[ak]BL[60];OW[4]W[aj]WL[60];OB[2]B[ao]BL[60];OW[4]W[ap]WL[60];OB[2]B[gk]BL[60]
+;OW[4]W[pa]WL[60];OB[2]B[qa]BL[60];OW[4]W[oa]WL[60];OB[2]B[ma]BL[60];OW[4]W[ff]
+WL[60];OB[2]B[qc]BL[60];OW[4]W[oc]WL[60];OB[2]B[qn]BL[60];OW[4]W[mh]WL[60];OB[2]
+B[qm]BL[60];OW[4]W[no]WL[60];OB[2]B[on]BL[60];OW[4]W[mc]WL[60];OB[2]B[ka]BL[60]
+;OW[4]W[of]WL[60];OB[2]B[oe]BL[60];OW[4]W[io]WL[60];OB[2]B[qs]BL[60];OW[4]W[sq]
+WL[60];OB[2]B[]BL[60];OW[4]W[fh]WL[60];OB[2]B[eh]BL[60];OW[4]W[]WL[60];OB[2]B[]
+BL[60]TB[gc][hc][jc][sc][rd][sd][re][se][ej][fj][kj][qe][nj][dk][ek][lk][mk][nk]
+[ok][qk][al][bl][ol][rl][sl][am][an][lq][mq][fr][ir][jr][kr][mr][es][fs][gs][hs]
+[is][sa][js][ks][ls][ms][ns][os][ps][fa][ga][ha][ia][la][ra][lr][fb][gb][hb][jb]
+[kb][rb][sb]TW[aa][ba][ab][bb][ac][bc][ad][bd][cd][ae][be][de][af][bf][cf][df][ag]
+[bg][cg][kg][lg][ah][bh][hh][qh][rh][sh][ai][bi][hl][il][hm][im][jm][en][kn][do]
+[ro][cp][sp][aq][bq][rq][br][as][ce][so]C[jameshut [?\]\: thanks Noel
+jameshut [?\]\: tough game
+irelandgo [?\]\: Thanks James, well done
+jameshut [?\]\: thanks
+irelandgo [?\]\: Yes very good
+irelandgo [?\]\: I tried to mix it up but you did well..
+jameshut [?\]\: thanks, was very scary down at the bottom
+irelandgo [?\]\: See you soon!
+jameshut [?\]\: yep, see you later
+jameshut [?\]\: thanks again
+jameshut [?\]\: bye
+])

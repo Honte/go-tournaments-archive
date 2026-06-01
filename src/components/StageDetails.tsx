@@ -18,7 +18,7 @@ export function StageDetails({ stage, translations }: StageDetailsProps) {
   const details: Record<string, ReactNode> = {};
 
   if (stage.egd) {
-    details[t('stage.egd')] = <ExternalLink title={t('stage.goToEGD')} url={stage.egd} />;
+    details[t('stage.egd')] = <ExternalLink title={t('stage.goToEGD')} href={stage.egd} />;
   }
 
   if (stage.rules) {

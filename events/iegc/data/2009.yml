@@ -1,0 +1,37 @@
+top:
+  - idavis
+  - croever
+  - nmitchell
+website: https://www.irish-go.org/national-international/top-8/past-irish-championships/2009-irish-championship-table/
+stages:
+  - type: tournament
+    file: ie2009.txt
+    notes: Stephen Flinter qualified, but withdrew from the competition, wins MacSweeny vs Thai and Cao vs Gallagher count as 0.5 points, playoff for 2-3
+    dir: 2009/top8
+    promoted: 2
+    scoringColumns:
+      - wins
+      - playoff
+      - null
+      - null
+    breakers:
+      - wins
+      - playoff
+    findSharedPlaces: true
+  - type: tournament
+    file: ie2009final.txt
+    name: Final
+    notes: date from the last game
+    dir: 2009/final
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+11.5 round:1 sgf:2009/final/1-IanDavis-ClaasRoever.sgf
+      - 2-1 1:W+R round:3 sgf:2009/final/3-ClaasRoever-IanDavis.sgf
+      - 2-1 2:B+14.5 round:2 sgf:2009/final/2-ClaasRoever-IanDavis.sgf

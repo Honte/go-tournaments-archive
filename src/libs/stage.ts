@@ -20,6 +20,8 @@ export function getStageNameFromType(type: Stage['type'], translations: Translat
   switch (type) {
     case 'tournament':
       return t('stage.tournament');
+    case 'classification':
+      return t('stage.classification');
     case 'league':
     case 'round-robin-table':
       return t('stage.league');
@@ -30,4 +32,22 @@ export function getStageNameFromType(type: Stage['type'], translations: Translat
     default:
       throw new Error('Unrecognized stage type');
   }
+}
+
+export function parseTop(top?: (string | string[])[]): string[][] {
+  if (!top) {
+    return [];
+  }
+
+  return top.map((row) => {
+    if (!row) {
+      return [];
+    }
+
+    if (Array.isArray(row)) {
+      return row;
+    }
+
+    return row.split(',');
+  });
 }

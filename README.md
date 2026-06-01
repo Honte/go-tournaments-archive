@@ -5,9 +5,9 @@ selected at build/dev time with the `EVENT` environment variable. Supports multi
 through locale routes (`/[lang]`) when enabled by the active event config, and tournament data is stored in YAML and H9
 text files under `events/[event-id]/data/` and game records in SGF files under `events/[event-id]/sgf/`.
 
-The site supports tournament lists, edition detail pages, stage standings, game lists with SGF links and generated board
-previews, all-time player statistics, country statistics for international events, and category medal tables for events
-that define age or other categories.
+The site supports tournament lists, edition detail pages, stage standings, game lists with SGF links, per-edition SGF
+ZIP downloads, generated board previews, all-time player statistics, country statistics for international events, and
+category medal tables for events that define age or other categories.
 
 ## Live sites
 
@@ -16,7 +16,7 @@ that define age or other categories.
 - [Polish Youth Go Championships Archive](https://mpj.go.art.pl) (`pygc`)
 - [Polish Women's Go Championships Archive](https://mpk.go.art.pl) (`pwgc`)
 - [Polish Academic Go Championships Archive](https://amp.go.art.pl) (`pagc`)
-- [Korea Prime Minister Cup](https://kpmc.go.art.pl) (`kmpc`)
+- [Korea Prime Minister Cup](https://kpmc.go.art.pl) (`kpmc`)
 
 ## Events
 
@@ -30,6 +30,7 @@ Available event directories:
 | `pwgc`   | Polish Women Go Championships    | Locales `pl`, `en`                                                              |
 | `pagc`   | Polish Academic Go Championships | Locales `pl`, `en`                                                              |
 | `pygc`   | Polish Youth Go Championships    | Locales `pl`, `en`, category stats for `u21`, `u20`, `u18`, `u16`, `u15`, `u12` |
+| `hrgc`   | Croatian Go Championships        | Locales `en`, `pl`                                                              |
 | `wgl`    | Warsaw Go League                 | Locales `pl`, `en`                                                              |
 
 `EVENT` defaults to `pgc`. Event-specific config, translations, colors, logo, data, and SGF files live in
@@ -62,6 +63,8 @@ npm run dev:kpmc
 npm run dev:pwgc
 npm run dev:pagc
 npm run dev:pygc
+npm run dev:hrgc
+npm run dev:wgl
 ```
 
 Useful checks:
@@ -93,7 +96,12 @@ npm run build:kpmc
 npm run build:pwgc
 npm run build:pagc
 npm run build:pygc
+npm run build:hrgc
+npm run build:wgl
 ```
+
+Check event-specific build scripts in `package.json` before relying on them; for example, `build:hrgc` currently exists
+but maps `EVENT` to `kpmc`.
 
 Serve the exported output locally:
 
@@ -135,6 +143,7 @@ Generated data/assets routes:
 - `/data/sitemap/:locale.json` - navigation data.
 - `/data/stats/player/:slug.json` - player stats payload.
 - `/data/stats/country/:code.json` - country stats payload.
+- `/sgf/:year.zip` - ZIP archive of cleaned SGFs for one tournament year when `generateZips` is enabled.
 - `/sgf/.../*.sgf` - cleaned SGF.
 - `/sgf/.../*.raw.sgf` - original SGF.
 - `/sgf/.../*.svg`, `/sgf/.../*.png`, `/sgf/.../*.jpg` - generated board previews when enabled by event config.
@@ -181,6 +190,7 @@ type EventConfig = {
   showCountry?: boolean;
   showBestPlace?: boolean;
   generateSvgs?: boolean;
+  generateZips?: boolean;
   generatePngs?: boolean;
   generateJpgs?: boolean;
   hideGamesWithoutSgf?: boolean;
@@ -197,6 +207,8 @@ Common flags:
 - `showCountry` enables country columns, country medalists, and country stats routes.
 - `showBestPlace` controls best-place display in stats tables.
 - `generateSvgs`, `generatePngs`, `generateJpgs` select preview variants emitted from SGF files during static export.
+- `generateZips` emits `/sgf/:year.zip` archives and shows a ZIP download action next to the games heading for
+  tournaments with linked SGFs.
 - `hideGamesWithoutSgf` hides unlinked games in game lists for SGF-focused archives.
 - `currentEdition` enables the optional homepage banner when the component flag is visible.
 - `categories` enables category medal aggregation and `/:locale/category/:category` pages.
@@ -240,7 +252,8 @@ Top-level fields:
 
 - `location`, `country`, `referee`, `website`, `notes` describe the edition.
 - `players` maps local player IDs to player strings.
-- `top` lists medalists. A comma-separated value means shared medal/place, for example `id3,id4`.
+- `top` lists medalists. Values can use local player IDs, player names, or EGD IDs. A comma-separated value or YAML
+  array means shared medal/place, for example `id3,id4` or `[id3, id4]`.
 - `displayReversed` controls whether stages render newest/last first. Defaults to `true`.
 - `stages` contains one or more stage definitions.
 
@@ -275,6 +288,22 @@ All stage types support:
 Supported breakers are `wins`, `sos`, `mms`, `sodos`, `sosos`, `direct`, `starting`, `rank`, and `score`.
 
 ## Stage types
+
+### `classification`
+
+Final classification without games. Use it when an edition only has a final ranking. `order` accepts player IDs or
+full player strings; nested arrays mark players sharing the same place. If the top-level `top` field is missing,
+medalists are derived from the first three places.
+
+```yaml
+- type: classification
+  date: 1996-10-26 - 1996-10-27
+  order:
+    - id1
+    - - Player Two 1d (PL)
+      - Player Three 2k (DE) |12345
+    - id4
+```
 
 ### `league`
 
@@ -420,9 +449,11 @@ Available SGF tools:
 
 ```bash
 npm run sgf:fix:pgc      # Fix SGF property names for PGC files
-npm run sgf:match:pgc    # Match PGC SGFs to YAML games and write sgf: props
+npm run sgf:match:pgc    # Match PGC SGFs to YAML games and write sgf:/ogs: props
 npm run sgf:match:wagc   # Match WAGC SGFs to imported games
 npm run sgf:match:kpmc   # Match KPMC SGFs to imported games
+npm run sgf:match:pwgc   # Match PWGC SGFs to YAML games
+npm run sgf:match:pagc   # Match PAGC SGFs to YAML games
 ```
 
 The matcher accepts:
@@ -445,9 +476,10 @@ By default, the matcher keeps output compact: it prints a total summary and then
 reasons. Use `--verbose` when you need the full per-stage counts that include found, reused, newly matched, and unmatched
 SGFs.
 
-SGF previews are generated on demand by `src/app/sgf/[...path]/route.ts` and emitted during `next build` through
-`generateStaticParams`. There is no committed preview image build step. Enable output formats per event with
-`generateSvgs`, `generatePngs`, and `generateJpgs`.
+SGF previews and per-edition ZIP downloads are generated on demand by `src/app/sgf/[...path]/route.ts` and emitted
+during `next build` through `generateStaticParams`. There is no committed preview image or ZIP build step. Enable
+output formats per event with `generateSvgs`, `generatePngs`, `generateJpgs`, and `generateZips`. ZIP files contain the
+same cleaned SGF content served by `/sgf/.../*.sgf`.
 
 ## Data and asset tools
 
@@ -486,3 +518,4 @@ Relevant tool modules:
 - YAML tournament data
 - H9 tournament import parser
 - Internal SGF parser with generated board previews via `@sabaki/go-board`, SVGO, Sharp, and Resvg
+- ZIP generation via `fflate`

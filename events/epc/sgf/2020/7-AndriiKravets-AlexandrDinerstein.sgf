@@ -1,0 +1,118 @@
+(;CA[windows-1250]NW[43]NB[34]LT[]RR[Normal]AP[MultiGo:4.4.4]SZ[19]GM[1]GN[breakfast-Nighthawk(B) IGS]
+EV[Internet Go Server game\: breakfast vs Nighthawk]RO[7]DT[2020-09-26]PC[IGS\:  igs.joyjoy.net 6969]
+PB[Andrii Kravets]BR[6d+]PW[Alexandr Dinerstein]WR[3p ]KM[6.5]TM[4500]RE[B+6.5]
+US[Brought to you by IGS PANDANET]CP[
+  Copyright (c) PANDANET Inc. 2020
+  Permission to reproduce this game is given, provided proper credit is given.
+  No warrantee, implied or explicit, is understood.
+  Use of this game is an understanding and agreement of this notice.
+]
+MULTIGOGM[1]
+;B[pd]BL[4466];W[dc]WL[4486];B[pp]BL[4463];W[dp]WL[4469];B[cq]BL[4404];W[qc]WL[4400]
+;B[cp]BL[4348];W[qd]WL[4392];B[do]BL[4340];W[pe]WL[4374];B[ce]BL[4337];W[ed]WL[4318]
+;B[ch]BL[4299];W[qq]WL[4296];B[qp]BL[4182];W[pq]WL[4294];B[nq]BL[4181];W[nr]WL[4287]
+;B[mr]BL[4179];W[oq]WL[4283];B[np]BL[4164];W[op]WL[4282];B[oo]BL[4161];W[no]WL[4255]
+;B[on]BL[4100];W[rp]WL[4252];B[ro]BL[4095];W[rq]WL[4252];B[lo]BL[3919];W[qo]WL[4249]
+;B[nn]BL[3904];W[di]WL[3967];B[ci]BL[3860];W[dk]WL[3946];B[ei]BL[3847];W[ej]WL[3700]
+;B[eh]BL[3730];W[gj]WL[3531];B[hi]BL[3683];W[ik]WL[3342];B[hj]BL[3611];W[hk]WL[3339]
+;B[gk]BL[3611];W[gl]WL[3266];B[fk]BL[3610];W[fj]WL[3239];B[fl]BL[3607];W[fm]WL[3222]
+;B[el]BL[3312];W[hm]WL[3142];B[gn]BL[3162];W[gm]WL[3130];B[dm]BL[3131];W[fh]WL[3104]
+;B[fg]BL[3084];W[gh]WL[3093];B[ji]BL[3071];W[eo]WL[3040];B[dn]BL[3031];W[eg]WL[2881]
+;B[ef]BL[2988];W[dg]WL[2878];B[dh]BL[2987];W[ff]WL[2694];B[gg]BL[2983];W[hh]WL[2686]
+;B[df]BL[2963];W[jj]WL[2643];B[ih]BL[2940];W[hg]WL[2438];B[gf]BL[2935];W[ki]WL[2407]
+;B[kh]BL[2879];W[ig]WL[2382];B[gd]BL[2857];W[li]WL[2277];B[bc]BL[2789];W[hc]WL[2116]
+;B[gc]BL[2766];W[gb]WL[2114];B[hd]BL[2687];W[ic]WL[2026];B[id]BL[2667];W[fb]WL[1902]
+;B[jc]BL[2644];W[jb]WL[1900];B[kb]BL[2642];W[ib]WL[1873];B[kc]BL[2547];W[lh]WL[1670]
+;B[cb]BL[2540];W[db]WL[1656];B[qj]BL[2491];W[qn]WL[1623];B[qm]BL[2391];W[qh]WL[1416]
+;B[jf]BL[2380];W[jg]WL[1365];B[gp]BL[2321];W[io]WL[1258];B[iq]BL[2098];W[fp]WL[1185]
+;B[fq]BL[2066];W[jq]WL[985];B[jp]BL[1998];W[ip]WL[979];B[kq]BL[1995];W[hq]WL[844]
+;B[jr]BL[1990];W[gq]WL[823];B[fr]BL[1767];W[ir]WL[502];B[fo]BL[1754];W[jq]WL[466]
+;B[rn]BL[1711];W[po]WL[455];B[qi]BL[1560];W[rh]WL[427];B[ph]BL[1464];W[pg]WL[409]
+;B[og]BL[1463];W[oh]WL[399];B[pi]BL[1461];W[pf]WL[399];B[oc]BL[1437];W[kr]WL[239]
+;B[iq]BL[1431];W[pm]WL[211];B[ql]BL[1361];W[jq]WL[209];B[ha]BL[1343];W[cd]WL[91]
+;B[be]BL[1297];W[bd]WL[1];B[ad]BL[1295];W[cc]WL[596];B[bb]BL[1287];W[kp]WL[424]
+;B[ea]BL[1267];W[da]WL[331];B[ja]BL[1242];W[hb]WL[322];B[ia]BL[1238];W[mo]WL[267]
+;B[mn]BL[1111];W[mp]WL[265];B[ol]BL[1064];W[fc]WL[263];B[eb]BL[1054];W[fe]WL[249]
+;B[cg]BL[966];W[mc]WL[242];B[le]BL[894];W[pn]WL[241];B[nk]BL[890];W[pl]WL[235];B[pk]
+BL[888];W[ml]WL[226];B[nh]BL[791];W[je]WL[224];B[ie]BL[718];W[if]WL[205];B[hf]BL[713]
+;W[kf]WL[195];B[jd]BL[708];W[om]WL[185];B[mk]BL[604];W[lk]WL[149];B[nd]BL[546];W[rk]
+WL[103];B[rl]BL[488];W[cl]WL[47];B[bm]BL[476];W[cm]WL[43];B[bn]BL[463];W[ep]WL[39]
+;B[en]BL[456];W[go]WL[37];B[ho]BL[447];W[fn]WL[36];B[dq]BL[439];W[go]WL[35];B[nl]
+BL[430];W[nm]WL[33];B[fo]BL[429];W[ae]WL[484];B[af]BL[426];W[go]WL[484];B[iq]BL[409]
+;W[jo]WL[386];B[fo]BL[361];W[ac]WL[384];B[ab]BL[350];W[go]WL[384];B[lj]BL[329];W[ll]
+WL[332];B[fo]BL[325];W[ee]WL[328];B[de]BL[320];W[go]WL[327];B[fi]BL[265];W[gi]WL[324]
+;B[fo]BL[258];W[md]WL[294];B[me]BL[251];W[go]WL[292];B[mq]BL[105];W[lp]WL[289];B[fo]
+BL[98];W[ob]WL[219];B[pb]BL[52];W[pc]WL[214];B[nb]BL[40];W[go]WL[129];B[or]BL[14]
+;W[nc]WL[45];B[od]BL[9];W[oa]WL[44];B[na]BL[5];W[ne]WL[43];B[pa]BL[4];W[ob]WL[43]
+;B[oa]BL[4];W[oe]WL[43];B[ob]BL[4];W[mb]WL[30];B[ma]BL[600];W[lr]WL[8];B[fo]BL[595]
+;W[ld]WL[6];B[ke]BL[513];W[go]WL[5];B[pr]BL[488];W[qr]WL[3];B[fo]BL[487];W[la]WL[568]
+;B[lb]BL[479];W[go]WL[564];B[ns]BL[465];W[ps]WL[561];B[fo]BL[462];W[qb]WL[559];B[ka]
+BL[457];W[go]WL[558];B[dj]BL[433];W[dl]WL[547];B[em]BL[429];W[ek]WL[545];B[fo]BL[425]
+;W[qa]WL[545];B[la]BL[420];W[go]WL[544];B[jq]BL[376];W[lq]WL[541];B[fo]BL[375];W[oj]
+WL[502]C[
+ Picaresque 3d?\: k3 might be the worst move ive seen in a while
+ Picaresque 3d?\: why not m3?
+]
+;B[mi]BL[260]C[
+ kango 3d \: I think both give same number of ko threats,but this way h2 is next threat so leaves g2 connection option
+]
+;W[go]WL[278];B[hr]BL[248]C[
+ Picaresque 3d?\: how same number
+ Picaresque 3d?\: 1 additional threat vs 4
+]
+;W[js]WL[194];B[fo]BL[242];W[kj]WL[190];B[mj]BL[205];W[go]WL[188]C[
+ kango 3d \: yes - so for ko threats m3 better
+]
+;B[ri]BL[147];W[hp]WL[162]C[
+ Picaresque 3d?\: this ko is game deciding
+];B[sh]
+BL[141];W[rg]WL[158]C[
+ Veedee 6d+\: B wins
+];B[sg]BL[138];W[sf]WL[156];B[si]
+BL[134];W[re]WL[151]C[
+ Picaresque 3d?\: probably..
+ Veedee 6d+\: 10+
+];B[bl]
+BL[102];W[bk]WL[148];B[bj]BL[101]C[
+ claire 4d+\: I feel it's more of simplifying the end-game...and make estimation easier maybe?
+]
+;W[so]WL[130];B[sm]BL[575];W[gr]WL[122]C[
+ claire 4d+\: black feels he is sufficiently ahead
+]
+;B[ak]BL[557];W[eq]WL[113];B[er]BL[555];W[ck]WL[107];B[lf]BL[549];W[cn]WL[102];B[co]
+BL[546];W[kg]WL[556];B[cj]BL[535];W[dr]WL[545]C[
+ deathtaxes 3k \: d2 better than f1?
+]
+;B[lg]BL[509];W[jh]WL[506];B[cr]BL[499];W[sp]WL[498];B[sn]BL[470];W[fs]WL[475];B[ds]
+BL[469];W[mh]WL[394]C[
+ siskin 1d?\: One more ko threat
+];B[ng]BL[261];W[mg]WL[203]
+;B[jf]BL[257];W[ii]WL[190];B[je]BL[209];W[ni]WL[143];B[ok]BL[198];W[nf]WL[126];B[oi]
+BL[196];W[gs]WL[121];B[es]BL[195];W[of]WL[118];B[nj]BL[192];W[mf]WL[118];B[tt]BL[186]
+;W[tt]WL[115];B[tt]BL[186]C[
+ Nighthawk 6d+\: Nighthawk dead @ N6
+ breakfast 3p \: breakfast dead @ H18
+ breakfast 3p \: breakfast dead @ H5
+ Nighthawk 6d+\: Nighthawk dead @ M5
+ Nighthawk 6d+\: Nighthawk dead @ O4
+ breakfast 3p \: breakfast dead @ S9
+ breakfast 3p \: breakfast dead @ P10
+ Nighthawk 6d+\: Nighthawk dead @ P2
+ breakfast 3p \: breakfast dead @ D17
+ Nighthawk 6d+\: Nighthawk dead @ O1
+ breakfast 3p \: breakfast dead @ F15
+ breakfast 3p \: breakfast dead @ G6
+ Nighthawk 6d+\: Nighthawk dead @ H2
+ breakfast 3p \: breakfast dead @ H10
+ Nighthawk 6d+\: Nighthawk dead @ N17
+ Nighthawk done
+]
+;OS[a219613832][a2215][a42233o][achilles][agape][Agem][airmail][AliJ93][Andsim90][aquamarine][asachan][Asyura123][ator][autus8][badmoon01][baldur][BenjaminDG][Bensai][BIWAKOTARO][cagoledu13][CaitSith][caramba][carpediem][catfly][changyw][Chemist][Chen0928][Chirotop][chucha][claire][Cobra][CRCgqSEW][CRdjEbpW][CRDwWILp][CRFGGQGE][CRHgGcGX][CRhIVLfP][CRIqRhAF][CRJlpkCc][CRkKqNFc][CRLeXsWw][CRmdvtKi][CROuErtR][CRpDfGwq][CRpPfAid][CRqflcvl][CRscLxLu][CRSUENiY][CRXLupaC][CRYMiigQ][cstone][Daichan55][danschulz][danu][dany][Darkid][DarkOasis][Davbouv][DeadmaN][deathtaxes][deko][den802][despman][direct][EasyGOGO][emp100][enghoe][enoppi][epin][F22][flashback][flmus26][friendpig][Frost][Fruitfly][fujiM][FujiSan][gafers2][ganbatte][GAZIRA][GeorgeH][gerushka][ghim][glocker][Goadv1][Gobler][goldo4141][gooooo][goshima][GreenFrog][GuGu][guta57][h10271921][Haji][HAMUNI][hash5685][hato74][hex6][Hide1949][HIH][hippophile][hirokawa55][hk100425][hkm168][Hoi030][homac3][hotaka1][hrvx55][huffle][hvk3][hwspan][i7137][iHoldKiesi][Ikki][ioda][iogaki][iogo][jackniu][jaguarondi][james19][jansteen][jardim][Jim][jkkkk][joachim][johnzhang][jokobaer][Jrmasakoba][jt0304][ju0422][jwc][KA1212][ka270204][kabateru12][kaij3458][KajinP][kango][kanpeace][kansan][katsu16][kawa221123][kazuA][kinnchann][kinsuke2][Kisei][kitaken][KKiiYY][kmike][kobahaji][kobaktb][Kodaquai][koiyosi][KOJIO][kosumosu][Krainov][Kramer][KrtekHonza][kt2009][kudo0565][kUMEMORI][kumotori20][Lann][Leeuwen07][Liso][Lomis][lorill][m102897][M81111754][m999966k][Machiavel][maddog1][maeno][MagiQ][magomesan][makeinu][matti][Max2020][megajouca][meikai][meme][MeronPanch][mi1719][miao][Michi][Miguldir][Mini][MK513293][mk81][mkmst17][MM123][Mollusque][momoso][MONKEY55][moru2613][Motoo][Moutarde][MS001][ms1819][Mtwana][myoshi][N8326][nadav][nagarujun][nakachan][nana1206][NAo][natihama][Nebilim][nidza92][Nissetufs][NNSS3019][nobu17121][nymt][nzFFDemo][octavian][oga][OKI][OPP7878][orihikaru][Oskari][P2R1952][Palko][Picaresque][piniouf][playgo108][pluksch][po4321ro][Poohsan][pr0kl][Prosto][ptitlou][pulpul][Pyne][QN3781677][R2][Rakugo][rara][Reonarudo][Richmond][Rinhaiho5k][robu][Roln][rsb87924][RUN01][ruruco][s1022][s3513][Sadiker][sakkarin][sakugo][Sakura][Samoht][Sandmann][sasakuma][sasann][schwa2][scurge10][sendan][sergiopc93][shantian][SharkyCut][Shinn555][SHIYUU][ShogiPlayR][shouta][siljan][SINO5][siskin][sj612][Slift][sound552][Sphinx][SportyGuy][SSoS][Star3][STARDUST][SUHSUE][sunao4933][SUZUME][SUZURIN][sw5339][SY][Sylvain][syounansed][szo][taisho84][TAKAchan][TakaH][takakou511][take12345][Take2350][takosen][taxi][taxxcell][ted321][tehutehu][ThomasJ][Timama][TIME][timtam][Titaantje][TK62][tkuc][tkyk123][tm2896][tomichannn][tommylee][tomomasa][tomyaki][toriimoto][tosiki4278][tsaisun016][Tsoy][Tsukasa1][tunatayuu][Tyagyu][TYPP][ukraine1][Uksus][Veedee][vgo][Vinh2000][vnna][vorm][Wade][Wangandy][wellsli][Welvang][Winnow][wl100][x21][Xeremon][XXXXLCR][y5126][yagisan][YAMASAN][YANG][yanochan][yh0653][yo630][yoshi2538][Yoshirou][YOSI3][yossy5][YS77][YU0311][YUI][yukmi][yuuyu][zeku][zeppelin29][zinovenkov]
+TB[ap][ao][an][am][al][aj][ai][ah][ag][ae][ac][aa][bs][br][bq][bp][bi][bh][bo][bg]
+[bf][bd][ba][cs][cf][cd][cc][ca][dr][di][dg][dd][dc][db][da][eg][ed][ec][ff][fe]
+[fd][fc][fb][fa][ge][gb][ga][he][hc][hb][ic][ib][jb][ld][lc][md][ar][mc][mb][ni]
+[nc][oj][oh][pj][qk][rm][rk][rj][sl][sk][sj][kd][as][ee][aq]TW[fo][gp][gn][hs][hr]
+[ho][hn][hl][hj][hi][is][iq][in][im][il][ij][ih][jr][jp][jn][jm][jl][jk][ji][ks]
+[kq][ko][kn][km][kl][kk][kh][ls][lo][ln][lm][ms][mr][mq][mn][mm][ns][nr][nq][np]
+[nn][os][or][oo][on][pr][pp][qs][qp][qg][qe][rs][rr][rf][rd][rc][rb][ra][ss][sr]
+[sq][se][sd][sc][sb][sa][qf][jq])

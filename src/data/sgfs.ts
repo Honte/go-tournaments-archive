@@ -1,6 +1,7 @@
 import EVENT from '@event';
 import EVENT_CONFIG from '@event/config';
 import fs from 'node:fs/promises';
+import path from 'node:path';
 import type { ApiGameInfo } from '@/schema/api';
 import type { Game, Stage, Tournament } from '@/schema/data';
 import { CustomSgfProps, SgfRootProps } from '@/schema/sgf';
@@ -10,9 +11,10 @@ import { Sgf, type SgfNodeDataChange } from '@tools/sgf';
 import { getStageName } from '@/libs/stage';
 import pkg from '../../package.json';
 
-const EVENT_DIR = `./events/${EVENT}/`;
+const EVENT_DIR = `./events/${EVENT}`;
+const SGF_DIR = `${EVENT_DIR}/sgf`;
 
-export async function loadGameSgfProps(tournaments: Tournament[], sgfPath: string, translations: Translations) {
+export async function loadGameSgfDetails(tournaments: Tournament[], sgfPath: string, translations: Translations) {
   for (const tournament of tournaments) {
     for (const id in tournament.games) {
       const game = tournament.games[id];
@@ -27,9 +29,37 @@ export async function loadGameSgfProps(tournaments: Tournament[], sgfPath: strin
         continue;
       }
 
-      return getSgfProps(game, tournament, stage, translations);
+      return {
+        props: getSgfProps(game, tournament, stage, translations),
+        rotation: game.rotation,
+      };
     }
   }
+}
+
+export async function loadCleanTournamentSgfs(tournament: Tournament, translations: Translations) {
+  const promises: Promise<{ path: string; content: string }>[] = [];
+
+  for (const game of Object.values(tournament.games)) {
+    if (!game.props.sgf) {
+      continue;
+    }
+
+    const stage = getGameStage(tournament, game.id);
+
+    if (!stage) {
+      continue;
+    }
+
+    promises.push(
+      fs.readFile(resolveSgfFile(game.props.sgf), 'utf-8').then((content) => ({
+        path: getTournamentSgfZipPath(game.props.sgf!),
+        content: Sgf.clean(content, getSgfProps(game, tournament, stage, translations), game.rotation),
+      }))
+    );
+  }
+
+  return Promise.all(promises);
 }
 
 export async function loadSgfs(tournaments: Tournament[]) {
@@ -49,7 +79,7 @@ export async function loadSgfs(tournaments: Tournament[]) {
         continue;
       }
 
-      const content = await fs.readFile(`${EVENT_DIR}/${game.props.sgf}`, 'utf-8');
+      const content = await fs.readFile(resolveSgfFile(game.props.sgf), 'utf-8');
       const sgf = new Sgf(content);
       const black = tournament.players[game.players[0].id];
       const white = tournament.players[game.players[1].id];
@@ -72,6 +102,25 @@ export async function loadSgfs(tournaments: Tournament[]) {
   return games;
 }
 
+function resolveSgfFile(sgfPath: string) {
+  return path.join(SGF_DIR, sgfPath.replace(/^\/sgf\/?/, ''));
+}
+
+export function getTournamentSgfZipPath(sgfPath: string) {
+  const segments = sgfPath
+    .replaceAll('\\', '/')
+    .replace(/^\/?sgf\//, '')
+    .replace(/^\/+/, '')
+    .split('/')
+    .filter(Boolean);
+
+  if (segments[0]?.match(/^\d{4}$/)) {
+    segments.shift();
+  }
+
+  return segments.join('-');
+}
+
 function getGameStage(tournament: Tournament, id: string) {
   for (const stage of tournament.stages) {
     switch (stage.type) {
@@ -86,7 +135,8 @@ function getGameStage(tournament: Tournament, id: string) {
           }
         }
         break;
-      default:
+      case 'round-robin-table':
+      case 'final':
         const gameNo = stage.games.indexOf(id);
 
         if (gameNo >= 0) {

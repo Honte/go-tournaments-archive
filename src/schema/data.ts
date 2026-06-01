@@ -1,4 +1,5 @@
 import type { Locale } from '@/i18n/consts';
+import type { SgfRotation } from '@tools/sgf';
 import type { KeysMatching } from '@/libs/types';
 
 export type TournamentDetails = {
@@ -11,8 +12,8 @@ export type TournamentDetails = {
   end?: string;
   website?: string | string[];
   referee?: string;
-  top: string[];
-  categoriesTop?: Record<string, string[]>;
+  top: string[][];
+  categoriesTop?: Record<string, string[][]>;
   displayReversed?: boolean;
 };
 
@@ -21,6 +22,7 @@ export type Tournament = TournamentDetails & {
   games: Record<string, Game>;
   stages: Stage[];
   players: Record<string, Player>;
+  hasSgfs: boolean;
 };
 
 export type TournamentDateSpan = {
@@ -35,7 +37,7 @@ export type TournamentItem = {
   hasSgfs?: boolean;
 };
 
-export type Stage = LeagueStage | LadderTableStage | FinalStage | RoundRobinTableStage;
+export type Stage = LeagueStage | LadderTableStage | FinalStage | RoundRobinTableStage | ClassificationStage;
 
 export enum Breaker {
   WINS = 'wins',
@@ -85,6 +87,16 @@ export type LeagueStage = BaseStage & {
   customBreakers?: Record<string, CustomBreaker>;
   order?: string[];
   games?: string[];
+};
+
+export type ClassificationStage = BaseStage & {
+  type: 'classification';
+  order: (string | string[])[];
+  table: {
+    id: string;
+    place: number;
+    index: number;
+  }[];
 };
 
 export type LadderTableStage = BaseStage & {
@@ -163,6 +175,7 @@ export type Game = {
   players: [black: GamePlayer, white: GamePlayer];
   result: string;
   props: GameProps;
+  rotation?: SgfRotation;
 };
 
 export type GamePlayer = {

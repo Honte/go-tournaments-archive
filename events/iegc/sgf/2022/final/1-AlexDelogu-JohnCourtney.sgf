@@ -1,0 +1,482 @@
+(;CA[utf-8]GM[1]OT[5x60 byo-yomi]RU[Japanese]C[John_C\: Hello
+32AD\: Hey John.
+32AD\: Have a good game.
+John_C\: You too
+]
+AP[MultiGo:4.4.4]SZ[19]FF[4]GN[Championship Match 1]EV[IE 2022 Final]RO[1]DT[2022-02-17]
+PC[OGS\: https\://online-go.com/game/41350052]PB[Alex Delogu]BR[1k]PW[John Courtney]
+WR[2d]KM[6.5]TM[5400]RE[W+12.5]MULTIGOGM[1]
+;B[pd]
+(;W[dd]
+(;B[pq]
+(;W[dq]
+(;B[pn]
+(;W[qc]
+(;B[pc]
+(;W[qd]
+(;B[qf]
+(;W[qe]
+(;B[pe]
+(;W[rf]
+(;B[fc]
+(;W[cf]
+(;B[jd]
+(;W[dn]
+(;B[jq]
+(;W[ql]
+(;B[qj]
+(;W[hq]
+(;B[jo]
+(;W[hc]
+(;B[jc]
+(;W[ec]
+(;B[qb]
+(;W[rb]
+(;B[re]
+(;W[pb]
+(;B[rc]
+(;W[qa]
+(;B[rd]
+(;W[qb]
+(;B[rg]
+(;W[pf]
+(;B[qg]
+(;W[nc]
+(;B[nf]
+(;W[pp]C[shinuito\: [object Object\]
+]
+(;B[qq]
+(;W[qp]
+(;B[op]
+(;W[rq]
+(;B[rr]
+(;W[ro]
+(;B[sq]
+(;W[ol]
+(;B[pk]
+(;W[pl]
+(;B[rp]
+(;W[rj]
+(;B[ri]
+(;W[nk]
+(;B[ck]
+(;W[cm]
+(;B[fq]
+(;W[ep]
+(;B[gp]
+(;W[fd]
+(;B[ch]
+(;W[lc]
+(;B[nm]
+(;W[mf]
+(;B[mg]
+(;W[lf]
+(;B[jf]
+(;W[lg]
+(;B[mh]
+(;W[lh]
+(;B[mi]
+(;W[lk]
+(;B[li]
+(;W[ki]
+(;B[kj]C[rottenhat\: Any thoughts, chaps? Reads favourable for white to me — plenty of territory and only one weak group to black's two
+rottenhat\: And W's weak group doesn't look too hard to handle
+]
+(;W[lj]C[jameshut\: I've felt like white's been ahead for a while personally
+jameshut\: Leaning moves at D10 D12 feel like they should really hurt the K17 stick
+]
+(;B[kk]C[rottenhat\: I just tuned in, so I'm catching up
+rottenhat\: But yes, K17 stones are a liability
+]
+(;W[qn]C[jameshut\: But probably white has to live first at the same time
+jameshut\: ah here we go
+jameshut\: should definitely get at least one eye in sente with that
+rottenhat\: Looks pretty safe now. R9 sente too, no?
+jameshut\: black s7 now?
+jameshut\: white R9, T9, with black s7 would probably still only have one eye
+]
+(;B[rm]C[jameshut\: hmm, maybe doesn't get that eye in sente after all...
+jameshut\: not sure
+rottenhat\: S8, maybe?
+jameshut\: Black R7 may produce a ko after S8
+rottenhat\: I'm feeling a bit slow tonight...how does the ko arise?
+shinuito\: howdy
+jameshut\: B R7, W Q7, B S6, W Q5
+jameshut\: ?
+shinuito\: naturally this would be easier to see, with either a review or sharing a variation
+jameshut\: but maybe black can give up the Q6 stone
+jameshut\: true, but that wouldn't give me reading practice ;-)
+rottenhat\: OK, I see what you're getting at
+shinuito\: you can stare at it first for as long as you like, I won't judge
+jameshut\: lol
+shinuito\: but it means I won't have to read coordinates
+rottenhat\: I wish I could see Courtney now...I bet his eyes are bugging out of his head
+jameshut\: lol
+shinuito\: calm and collected is my guess
+rottenhat\: Oh no, I'd say the glasses are off and he has his head in his hands
+rottenhat\: He'll be really concentrating now
+jameshut\: must say, much easier watching this game with the feet up in front of a roaring fire
+rottenhat\: I know. I'm thinking it might be cocktail time
+shinuito\: could also jump on the discord
+]
+(;W[lm]C[rottenhat\: More relaxing when all I can hear is the patter of my fingers on the keys
+]
+(;B[lo]C[rottenhat\: The problem for Alex is that he kind of needs to kill this whole thing
+The Awesome Penguin\: does b R7 kill white's tail?
+jameshut\: Bit of a weakness at N8
+jameshut\: R7 does, but that probably isn't big enough
+The Awesome Penguin\: yeah not right now
+rottenhat\: I think so, but I don't think it's enough
+The Awesome Penguin\: but just wondering if it works
+jameshut\: N8 doesn't work right now, but it might with R7 on the board
+jameshut\: or something like that
+shinuito\: white's probably not that far ahead though
+jameshut\: course you'd have to maybe give up N11 at the minute as well
+]
+(;W[on]
+(;B[oo]
+(;W[kl]
+(;B[ji]
+(;W[kh]C[rottenhat\: I make about 60 for W including komi
+rottenhat\: 50ish for B plus something around P12
+rottenhat\: assuming W gets out of this alive
+rottenhat\: so maybe R6 stones are enough, but B still needs to take care of two groups
+]
+(;B[hg]C[rottenhat\: And that's bound to cost something
+shinuito\: how hard can the black stones on the left be attacked if white has a weak group too?
+jameshut\: Is Plan A to lean on them, and separate them from the top stones?
+]
+(;W[il]C[jameshut\: hmmm, something in the E12 region feels good for black now
+jameshut\: maybe H16 first to remove some bad aji in that region?
+]
+(;B[ij]C[jameshut\: H6 for white now, and surely there's no attack for black?
+rottenhat\: I was thinking H5, but maybe that's too much
+]
+(;W[jr]C[jameshut\: but sure why simplify when you can play K2!
+rottenhat\: Maybe he wants to run Alex's clock down a bit
+jameshut\: That's a long byo yomi
+The Awesome Penguin\: is the byoyomi correct? 1min?
+rottenhat\: Yes, this is the Championship
+rottenhat\: We'll all be in serious trouble if Stephen ever gets to the final
+The Awesome Penguin\: heh
+jameshut\: It was previously 10 stones in 5 minutes
+jameshut\: not sure what that really should be when converted to byo yomi
+]
+(;B[kr]
+(;W[hi]C[rottenhat\: Ah, I think it's fine to have generous time limits for these games. You don't really want them decided by overtime stress
+jameshut\: If white J2, surely black doesn't need to connect at L3 or equivalent
+jameshut\: true
+]
+(;B[hj]C[jameshut\: plus it's much harsher than the British final
+jameshut\: 3 hours each
+jameshut\: plus I think 10 moves in 10 minutes
+jameshut\: somehow Andrew Simons timed out in one of those games...
+rottenhat\: That's almost a Japanese title match
+rottenhat\: It's 3 hours main time at the EGC too, isn't it?
+]
+(;W[gi]C[jameshut\: I thought it was 2, but you could be correct
+]
+(;B[jh]C[rottenhat\: I wonder how much worse I would play with that much time to come up with really bad moves
+]
+(;W[gj]C[jameshut\: Benoit Averty , 5k French Go Player Answered 7 years ago · Author has 72 answers and 431.4K answer views The biggest tournament I've participated in is the European go congress. It is held every year in Europe and there are around 500 players.  The time limits were \:  2h30 per player with 1 min/move in byo-yomi for 4 dans and higher 2h per player with 45 seconds/move in byo-yomi for 4k up to 3d 1h30 per player with 30 seconds/move in byo-yomi for 5k and lower
+rottenhat\: OK, I might scrape into the 2 hours main time section
+jameshut\: really not sure about the H10 move
+]
+(;B[gc]C[jameshut\: ah forgot all about G17, lol
+]
+(;W[gd]
+(;B[hb]
+(;W[hd]C[jameshut\: although does it actually get an eye?
+jameshut\: ah F18
+rottenhat\: Still feels pretty dicey to me...C12 can be attacked quite severely after this,
+jameshut\: wish I was playing, just so I could put F18 on the board, lol
+]
+(;B[gb]
+(;W[hp]
+(;B[ho]C[jameshut\: although maybe G18 is better
+]
+(;W[go]
+(;B[ip]
+(;W[hn]
+(;B[io]
+(;W[fp]
+(;B[hr]
+(;W[gq]
+(;B[gr]
+(;W[fr]
+(;B[iq]
+(;W[eq]
+(;B[bl]C[rottenhat\: I think W should have tenukied there to attack C12
+]
+(;W[bm]
+(;B[bf]C[rottenhat\: That stuff around G4 wasn't that big
+]
+(;W[bg]
+(;B[cg]
+(;W[bh]
+(;B[bi]
+(;W[be]
+(;B[df]
+(;W[ce]C[jameshut\: hmmm, maybe close to 20 points?
+]
+(;B[ek]C[jameshut\: compared with black playing e2 for example?
+rottenhat\: Compared to getting the whole left side?
+rottenhat\: Could B let those stones die?
+jameshut\: well if you get the whole left side
+]
+(;W[gk]C[rottenhat\: You don't think B would have answered?
+]
+(;B[ah]C[jameshut\: true, it's bound to be sente
+]
+(;W[af]
+(;B[am]
+(;W[an]
+(;B[al]
+(;W[bn]C[rottenhat\: Starting to look okay for B now
+jameshut\: not sure about B14
+rottenhat\: Just B13 better?
+]
+(;B[fg]C[The Awesome Penguin\: w can kill top right stones at P14 right?
+jameshut\: E18 must be next
+The Awesome Penguin\: the Q16 stones
+rottenhat\: Yes, but might have to give up M14 stones to get them
+The Awesome Penguin\: ah
+]
+(;W[kb]
+(;B[jb]C[rottenhat\: O15 must be nearly sente, E18 quite desirable
+]
+(;W[eb]
+(;B[ne]C[rottenhat\: R7 still lucrative
+]
+(;W[ke]
+(;B[je]C[rottenhat\: Any minute now I'll crack and check SE
+]
+(;W[pm]
+(;B[po]
+(;W[nn]C[jameshut\: feels like yose is going white's way
+]
+(;B[qo]C[jameshut\: maybe black S6 was better there
+]
+(;W[gs]
+(;B[is]
+(;W[rn]
+(;B[oj]
+(;W[nj]
+(;B[ni]
+(;W[no]
+(;B[np]C[rottenhat\: B can link under with T5, right?
+]
+(;W[rk]C[jameshut\: feels like it
+]
+(;B[kc]
+(;W[ld]C[rottenhat\: Still, W's getting some points with that group
+]
+(;B[me]
+(;W[le]
+(;B[lb]C[rottenhat\: which feels like more than he deserves
+]
+(;W[mb]
+(;B[ka]C[rottenhat\: Well, apparently my counting sucks
+jameshut\: is T18 needed?
+]
+(;W[oc]
+(;B[nd]C[jameshut\: or even T117
+jameshut\: T17
+]
+(;W[sc]
+(;B[mn]
+(;W[mm]
+(;B[mo]
+(;W[om]
+(;B[so]
+(;W[rl]
+(;B[sn]
+(;W[qm]
+(;B[fl]
+(;W[gl]
+(;B[ei]C[jameshut\: white slightly ahead?
+rottenhat\: I cheated and checked SE...do you want to know?
+jameshut\: nope
+jameshut\: \:-)
+rottenhat\: OK, no spoilers
+]
+(;W[fm]C[jameshut\: Is SE accurate here?
+rottenhat\: Yes
+rottenhat\: It's Katago, I think
+jameshut\: ah, not like good old KGS then
+rottenhat\: Ah, the KGS random number generator
+]
+(;B[dl]C[jameshut\: the good old day, when nobody really had the first clue what was going on
+]
+(;W[em]C[rottenhat\: The 6dans did
+]
+(;B[ee]C[rottenhat\: Everyone else was just guessing
+]
+(;W[ed]C[jameshut\: They didn't really though, we just thought they did
+Ashi1989\: It looks like W is ~15points ahead
+Ashi1989\: but I am bad in counting points ;)
+]
+(;B[sj]
+(;W[cl]C[rottenhat\: Surely connecting T7 was better there?
+]
+(;B[bk]C[Ashi1989\: yeah
+Ashi1989\: I think he wanted to protect eventual cut at R11
+jameshut\: than T10?
+rottenhat\: Yes
+jameshut\: T10 is better
+]
+(;W[fh]
+(;B[eh]C[rottenhat\: Enlighten me
+jameshut\: T11 has to be answered at S12
+jameshut\: T7 is 4 points gote
+]
+(;W[ff]C[Ashi1989\: and T10 is 3points gote ;D
+jameshut\: reverse sente
+]
+(;B[eg]C[Ashi1989\: \:D
+rottenhat\: ok
+jameshut\: which is equivalent to 6 points gote
+]
+(;W[ef]C[Ashi1989\: well, T7 is worth more then 4 points, because of T9 and T4 followup
+]
+(;B[de]
+(;W[sm]
+(;B[sp]
+(;W[sk]
+(;B[si]
+(;W[jk]
+(;B[jj]
+(;W[kn]C[rottenhat\: I'm starting to regret this 60 seconds byo-yomi now
+]
+(;B[in]C[jameshut\: don't you know who's won already though?
+]
+(;W[im]C[rottenhat\: yes, but I'm not ruling out a freak accident
+rottenhat\: hard to see where it might come from, mind you
+]
+(;B[ma]
+(;W[na]
+(;B[la]
+(;W[ko]
+(;B[kp]
+(;W[ic]
+(;B[ib]C[jameshut\: I have W+8.5 on my count
+]
+(;W[od]
+(;B[oe]C[rottenhat\: Yeah, Courtney's done it well
+]
+(;W[fa]
+(;B[ik]C[jameshut\: not getting E18 hurt
+rottenhat\: He was my bet for the overall from the start, so I'm feeling pretty good about that
+]
+(;W[jl]
+(;B[jn]C[jameshut\: He's very sharp
+rottenhat\: He did drop a game to Alex in the Top 8 though
+jameshut\: long time setting suits him very well as well
+]
+(;W[hk]C[rottenhat\: I think so
+]
+(;B[jg]C[rottenhat\: Alex is very calm
+jameshut\: Alex plays lots of lovely moves that I'd never think of
+]
+(;W[fe]
+(;B[dg]C[rottenhat\: There's never any headrush with Alex. Even responding to the most obvious forcing move he takes a few seconds just to make sure
+]
+(;W[fk]
+(;B[el]
+(;W[ej]
+(;B[dj]
+(;W[fj]C[jameshut\: a great habit. Every now and again, there's a non obvious chance to get the upper hand
+]
+(;B[gh]C[rottenhat\: Or a chance to avoid making a bad situation even worse
+]
+(;W[fi]
+(;B[he]
+(;W[gf]
+(;B[hf]
+(;W[hh]C[rottenhat\: T17 is nice move...I must remember it in that shape
+]
+(;B[gg]
+(;W[ga]
+(;B[ha]
+(;W[fb]
+(;B[id]
+(;W[ih]
+(;B[jm]
+(;W[mj]
+(;B[oi]
+(;W[qk]
+(;B[pj]
+(;W[ig]
+(;B[if]
+(;W[fs]
+(;B[hs]
+(;W[sd]
+(;B[sf]
+(;W[sb]
+(;B[se]
+(;W[ag]
+(;B[ai]
+(;W[dm]
+(;B[dk]
+(;W[km]
+(;B[ng]
+(;W[mc]
+(;B[kd]
+(;W[ok]
+(;B[kg]
+(;W[ob]
+(;B[ii]
+(;W[]
+(;B[]C[32AD\: Good game. thanks
+John_C\: Thank you for the game
+John_C\: I thought I might have been dead on the right at one point
+John_C\: Evidently katago doesn't think so
+32AD\: I think I should have blocked from the outside.
+John_C\: M5 surprised me a lot
+John_C\: Yes, good point rottenhat
+John_C\: I was thinking L8 instead of M5
+John_C\: Take the shape point and see if I can live
+John_C\: Well even if white lives the game should be equal I think after L8. Black's condition on the left is so much better
+John_C\: Ok, that's for the info Eoghan
+John_C\: I also thought I was ahead early on. But Katago only says I'm 3 points ahead after F16
+John_C\: I was really looking for a way to attack the C9 stones, but I coudn't see a way
+John_C\: [object Object\]
+John_C\: Maybe, getting 7 in that line is huge
+John_C\: [object Object\]
+John_C\: I was thinking of G11 as a potential weakness actually as well as a potential strength
+John_C\: This might be best. The triangle are not 100% alive though
+John_C\: [object Object\]
+John_C\: It makes me wonder if black got some stones around G9 and H7 if white could be dead
+John_C\: I thought I was behind at this point but Katago says I'm +10
+32AD\: I have to head. Thanks again for the game.
+John_C\: Mayeb that is better
+John_C\: B13 is very big
+John_C\: Yes, I think that is better than what I did
+John_C\: I absolutely didn't know if H4 worked when I played it
+John_C\: I was going out on a limb
+John_C\: Ok, goodnight guys
+rottenhat\: Good game, lads. Very enjoyable to watch
+rottenhat\: Well, Katago wouldn't have died
+rottenhat\: You might have
+rottenhat\: White seemed ahead on the board from quite early on
+rottenhat\: L8 would really have staked the game on killing that group
+rottenhat\: I'm sure you already know this, but you swap colours for the second game
+rottenhat\: And nigiri again if there's a third game
+rottenhat\: I thought maybe you should have attacked B's left side group instead of saving the stones around G4, John
+rottenhat\: Start with D10 or D11 maybe
+rottenhat\: It was just that after you got G5 and H6, your potential on the left side seemed really large
+rottenhat\: So I thought you'd attack first, then come back to G4 if it didn't look like you could kill
+rottenhat\: yes, something like that
+rottenhat\: If you can press that two space extension from the fourth line, it's very hard for it to make a base big enough for two eyes
+rottenhat\: And you had some support in the centre with G10 stones
+rottenhat\: you were quite thick
+rottenhat\: Ummm...D11, then kick from either side
+rottenhat\: Yes, maybe
+rottenhat\: Well, I was thinking you would do this a bit later
+rottenhat\: [object Object\]
+rottenhat\: This is when I thought you could tenuki
+rottenhat\: I don't think B can ignore this, so even if you just get B13 and maybe B8 in sente
+rottenhat\: and then go back to G3, you're ahead of the game
+rottenhat\: Anyway, I must turn in
+rottenhat\: Congratulations on your win, I look forward to the next game
+])))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))

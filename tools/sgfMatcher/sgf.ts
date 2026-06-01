@@ -46,6 +46,7 @@ export function extractSgfInfo(content: string, filename: string, isStrict = fal
       sgfBlackName: null,
       sgfWhiteName: null,
       sgfRound: null,
+      sgfOgs: null,
       filenameBlackName,
       filenameWhiteName,
       filenameStage,
@@ -62,6 +63,7 @@ export function extractSgfInfo(content: string, filename: string, isStrict = fal
   const sgfWhiteName = sgf.getStringRootProperty(SgfRootProps.WHITE_NAME) ?? null;
   const rawResult = sgf.getStringRootProperty(SgfRootProps.GAME_RESULT) ?? null;
   const sgfRound = parseRoundValue(sgf.getStringRootProperty(SgfRootProps.GAME_ROUND));
+  const sgfOgs = parseOgsValue(sgf.getStringRootProperty(SgfRootProps.EVENT_LOCATION));
 
   const { cleanResult, resultIssue } = normalizeSgfResult(rawResult);
 
@@ -70,6 +72,7 @@ export function extractSgfInfo(content: string, filename: string, isStrict = fal
     sgfBlackName,
     sgfWhiteName,
     sgfRound,
+    sgfOgs,
     filenameBlackName,
     filenameWhiteName,
     filenameRound,
@@ -120,6 +123,18 @@ function parseRoundValue(value: string | undefined): number | null {
   const match = value.match(/\d+/);
 
   return match ? Number(match[0]) : null;
+}
+
+function parseOgsValue(value: string | undefined): string | null {
+  const match = value?.trim().match(/^OGS:\s*(\S+)$/);
+
+  return match ? normalizeOgsUrl(match[1]) : null;
+}
+
+function normalizeOgsUrl(url: string): string {
+  const reviewMatch = url.match(/^http:\/\/online-go\.com\/game\/review\/(\d+)$/);
+
+  return reviewMatch ? `https://online-go.com/review/${reviewMatch[1]}` : url;
 }
 
 // Parse filename hints such as player names, stage token, and the filename numeric prefix/index.

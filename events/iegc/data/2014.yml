@@ -1,0 +1,36 @@
+website: https://www.irish-go.org/2014-irish-championship-table/
+top:
+  - jhutchinson
+  - rpszonka
+  - nmitchell
+stages:
+  - type: tournament
+    file: ie2014.txt
+    name: top8
+    notes: Gavin Rooney and Paul Kelly qualified but did not play; additional playoff 4-5
+    dir: 2014/top8
+    promoted: 2
+    scoringColumns:
+      - wins
+      - playoff
+      - null
+      - null
+    breakers:
+      - wins
+      - playoff
+    findSharedPlaces: true
+  - type: tournament
+    file: ie2014final.txt
+    name: Final
+    notes: On 31 May 2015 the committee ruled that the two remaining games in the final were to be declared void
+    dir: 2014/final
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 2-1 1:W+1.5 round:1 sgf:2014/final/1-RomanPszonka-JamesHutchinson.sgf

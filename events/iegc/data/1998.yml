@@ -1,0 +1,27 @@
+top:
+ - Noel Mitchell
+ - Stephen Flinter
+ - Chris Rafferty
+stages:
+  - type: classification
+    promoted: 2
+    order:
+      - Noel Mitchell
+      - Stephen Flinter
+      - Chris Rafferty
+      - Brian Gallagher
+      - Bernard Palmer
+      - John Gibson
+      - Pol OGradaigh
+      - Aidan Walsh
+  - type: tournament
+    file: ie1998final.txt
+    name: Final
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: true

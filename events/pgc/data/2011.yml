@@ -33,9 +33,9 @@ stages:
       - - mc-ls ls:W+R sgf:2011/2011-2-mchojnacki-lsoldan.sgf
         - em-kc kc:W+R sgf:2011/2011-2-emos-kchwedyna.sgf
         - rj-kg kg:W+R sgf:2011/2011-2-rjachym-kgiedrojc.sgf
-        - mm-sf sf:W+16.5 sgf:2011/2011-2-mmajka-sfrejlak.sgf
-      - - ls-mm mm:W+13.5 sgf:2011/2011-3-lsoldan-mmajka.sgf
-        - kc-rj kc:B+0.5 sgf:2011/2011-3-kchwedyna-rjachym.sgf
+        - mm-sf sf:W+16.5 sgf:2011/2011-2-mmajka-sfrejlak.sgf rotate:180
+      - - ls-mm mm:W+13.5 sgf:2011/2011-3-lsoldan-mmajka.sgf rotate:180
+        - kc-rj kc:B+0.5 sgf:2011/2011-3-kchwedyna-rjachym.sgf rotate:90
         - kg-em kg:B+R sgf:2011/2011-3-kgiedrojc-emos.sgf
         - sf-mc sf:B+R sgf:2011/2011-3-sfrejlak-mchojnacki.sgf
       - - rj-ls ls:W+0.5 sgf:2011/2011-4-rjachym-lsoldan.sgf
@@ -50,7 +50,7 @@ stages:
         - sf-kc kc:W+14.5 sgf:2011/2011-6-sfrejlak-kchwedyna.sgf
         - mc-rj rj:W+R sgf:2011/2011-6-mchojnacki-rjachym.sgf
         - em-mm mm:W+2.5 sgf:2011/2011-6-emos-mmajka.sgf
-      - - ls-kc ls:B+R sgf:2011/2011-7-lsoldan-kchwedyna.sgf
+      - - ls-kc ls:B+R sgf:2011/2011-7-lsoldan-kchwedyna.sgf rotate:180
         - kg-sf sf:W+R sgf:2011/2011-7-kgiedrojc-sfrejlak.sgf
         - rj-mm rj:B+24.5 sgf:2011/2011-7-rjachym-mmajka.sgf
         - mc-em mc:B+R sgf:2011/2011-7-mchojnacki-emos.sgf

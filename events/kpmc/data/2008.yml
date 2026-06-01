@@ -2,7 +2,7 @@ website: https://kpmc.kbaduk.or.kr/us/2008
 stages:
   - type: tournament
     file: kpmc2008.txt
-    time: 30min + 3x30s japanese  
+    time: 30min + 3x30s japanese
     komi: 6.5
     scoringColumns:
       - wins
@@ -14,3 +14,5 @@ stages:
       - sos
       - sosos
     findSharedPlaces: true
+    unmatchedSgfs:
+      - ?-? ?:B+R round:2 sgf:2008/2-JesseSavo-YuraGrunkovskiy.sgf # player "Jesse SAVO" not found, player "Yura GRUNKOVSKIY" not found

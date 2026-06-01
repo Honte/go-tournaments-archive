@@ -7,7 +7,7 @@ import { PlayerLink } from '@/components/ui/PlayerLink';
 import { PlayerName } from '@/components/ui/PlayerName';
 
 type WinnersTableProps = {
-  results: { year: number; top: string[]; players: Record<string, Player> }[];
+  results: { year: number; top: string[][]; players: Record<string, Player> }[];
   translations: Translations;
 };
 
@@ -40,9 +40,9 @@ export function WinnersTable({ results, translations }: WinnersTableProps) {
             </td>
             {MEDALS.map((index) => (
               <td className="p-1" key={index}>
-                {top[index]
+                {top[index]?.length
                   ? jsxJoin(
-                      top[index].split(',').map((id) => (
+                      top[index].map((id) => (
                         <PlayerLink key={id} playerId={players[id].id} locale={translations.locale}>
                           <PlayerName player={players[id]} />
                         </PlayerLink>

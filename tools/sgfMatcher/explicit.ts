@@ -14,6 +14,8 @@ import {
   formatSgfWinner,
   MATCHES_SAME_GAME_AS_OTHER_FILE_REASON,
   MATCHING_GAME_ALREADY_HAS_SGF_REASON,
+  OGS_CONFLICT_REASON,
+  RESULT_CONFLICT_REASON,
 } from './match';
 import { loadSgfInfos, parseFilename } from './sgf';
 import {
@@ -24,7 +26,7 @@ import {
   UNKNOWN_PLACE,
   type UnmatchedEntry,
 } from './types';
-import { normalizePlayerName } from './utils';
+import { normalizePlayerName, parseProps } from './utils';
 
 type ExplicitStage = InputLeagueStage | InputLadderTableStage | InputRoundRobinTableStage | InputFinalStage;
 
@@ -35,7 +37,7 @@ type ExplicitGameEntry = {
   away: string;
   winner: string;
   result: string | null;
-  props: string;
+  props: Record<string, string>;
   round: number | null;
   index: number;
   sgf: string | null;
@@ -52,9 +54,6 @@ type ExplicitCandidate = {
   players: ExplicitPlayerIds;
   entryKey: string;
 };
-
-const SGF_REGEX = /\bsgf:(\S+)/;
-const RESULT_CONFLICT_REASON = 'result conflict';
 
 export async function processExplicitStage({
   tournament,
@@ -140,6 +139,11 @@ export function matchExplicitSgfs({
 
     if (sgfResult && sgfResult.winner !== entry.winner) {
       unmatchedEntries.push(buildExplicitUnmatchedEntry(sgf, playerIds, [RESULT_CONFLICT_REASON]));
+      continue;
+    }
+
+    if (sgf.sgfOgs && entry.props.ogs && sgf.sgfOgs !== entry.props.ogs) {
+      unmatchedEntries.push(buildExplicitUnmatchedEntry(sgf, playerIds, [OGS_CONFLICT_REASON]));
       continue;
     }
 
@@ -293,7 +297,8 @@ function parseExplicitEntry(
     return null;
   }
 
-  const sgfMatch = props?.match(SGF_REGEX);
+  const parsedProps = parseProps(props);
+  const { sgf, round: _round, ...restProps } = parsedProps;
 
   return {
     path,
@@ -302,10 +307,10 @@ function parseExplicitEntry(
     away,
     winner,
     result: result ?? null,
-    props: buildEntryWithoutSgf(props ?? ''),
+    props: restProps,
     round,
     index,
-    sgf: sgfMatch?.[1] ?? null,
+    sgf: sgf ?? null,
   };
 }
 
@@ -317,9 +322,12 @@ function buildMatchedExplicitEntry(entry: ExplicitGameEntry, sgf: SgfInfo, playe
     white: entry.away,
     winner: entry.winner,
     result: sgfResult?.result ?? entry.result,
-    round: null,
     sgf: sgf.path,
-    props: entry.props,
+    props: {
+      ...entry.props,
+      ogs: sgf.sgfOgs ?? entry.props.ogs,
+      round: null,
+    },
   };
 }
 
@@ -479,7 +487,9 @@ function buildExplicitMatchResult(sgf: SgfInfo, players: ExplicitPlayerIds): Sgf
     white,
     winner: winnerPlace === 1 ? black : winnerPlace === 2 ? white : UNKNOWN_PLACE,
     result: resultStr,
-    round: getExplicitStageRound(sgf),
     sgf: sgf.path,
+    props: {
+      ogs: sgf.sgfOgs,
+    },
   };
 }

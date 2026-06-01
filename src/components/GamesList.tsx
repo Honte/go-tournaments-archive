@@ -2,8 +2,11 @@ import EVENT_CONFIG from '@event/config';
 import type { Tournament } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
+import { Endpoints } from '@/libs/endpoints';
 import { getStageName } from '@/libs/stage';
 import { Game } from '@/components/Game';
+import { Button } from '@/components/ui/Button';
+import { ExternalLink } from '@/components/ui/ExternalLink';
 import { H2 } from '@/components/ui/H2';
 
 type GamesListProps = {
@@ -59,6 +62,8 @@ export function GamesList({ tournament, translations }: GamesListProps) {
           games: stage.games.filter(gamesFilter),
         });
         break;
+      case 'classification':
+        break;
       default:
         throw new Error('Unrecognized stage type');
     }
@@ -72,7 +77,14 @@ export function GamesList({ tournament, translations }: GamesListProps) {
 
   return (
     <div className="my-4">
-      <H2>{t('stage.games')}</H2>
+      <H2 className="flex items-center justify-between gap-3">
+        <span>{t('stage.games')}</span>
+        {EVENT_CONFIG.generateZips && tournament.hasSgfs && (
+          <ExternalLink href={Endpoints.GAMES_ZIP(tournament.year)} download title={t('game.downloadAllSgfs')}>
+            <Button className="text-sm">ZIP</Button>
+          </ExternalLink>
+        )}
+      </H2>
       {list.map((list, index) => (
         <div key={index} className="my-5">
           <h4 className="text-l font-bold border-b-event-dark border-b">

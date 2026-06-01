@@ -10,6 +10,7 @@ export type EventConfig = {
   readonly generateJpgs?: boolean;
   readonly generatePngs?: boolean;
   readonly generateSvgs?: boolean;
+  readonly generateZips?: boolean;
   readonly hideGamesWithoutSgf?: boolean;
   readonly currentEdition?: boolean;
   readonly categories?: string[];

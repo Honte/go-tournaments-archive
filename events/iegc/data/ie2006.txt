@@ -1,0 +1,13 @@
+; CL[A]
+; EV[Irish Championship League 2006]
+; PC[IE,Dublin]
+; TM[0]
+; HA[h9]
+1 Flinter Stephen        1d IE Dub   7 0 0 0  0+  7+  6+  5+  4+  3+  2+
+2 Mitchell Noel          2d IE Dub   5 1 0 0  7+  0+  5+  6+  3+  4-  1-
+3 Davis Ian              2k UK Bel   5 0 0 0  6+  5+  0+  7+  2-  1-  4+
+4 Roever Claas           2k IE Gal   4 1 0 0  5-  6+  7+  0+  1-  2+  3-
+5 Rafferty Chris         2k IE Dub   4 0 0 0  4+  3-  2-  1-  0+  7+  6+
+6 Gallagher Brian        1k IE Dub   2 0 0 0  3-  4-  1-  2-  7+  0+  5-
+7 Atling Paul            4k IE Dub   1 0 0 0  2-  1-  4-  3-  6-  5-  0+
+8 Leung Ka-Chun          1k IE xxx   0 0 0 0  0-  0-  0-  0-  0-  0-  0-

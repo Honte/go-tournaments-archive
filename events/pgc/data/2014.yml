@@ -26,31 +26,31 @@ stages:
       - direct
       - starting
     rounds:
-      - - kg-ms ms:W+R sgf:2014/2014-1-kgiedrojc-msurma.sgf
+      - - kg-ms ms:W+R sgf:2014/2014-1-kgiedrojc-msurma.sgf rotate:180
         - ll-sf sf:W+R
         - kh-sp sp:W+1.5
         - ls-mm ls:B+R
       - - sf-kg sf:B+13.5
         - ms-ll ms:B+R
         - mm-kh mm:B+R
-        - sp-ls sp:B+12.5 sgf:2014/2014-2-spawlaczyk-lsoldan.sgf
+        - sp-ls sp:B+12.5 sgf:2014/2014-2-spawlaczyk-lsoldan.sgf rotate:180
       - - kg-sp sp:W+15.5
         - ll-mm mm:W+R
         - kh-ms ms:W+R sgf:2014/2014-3-khabu-msurma.sgf
         - ls-sf sf:W+4.5
-      - - mm-kg kg:W+R sgf:2014/2014-4-mmajka-kgiedrojc.sgf
+      - - mm-kg kg:W+R sgf:2014/2014-4-mmajka-kgiedrojc.sgf rotate:270
         - sp-ll sp:B+1.5 sgf:2014/2014-4-spawlaczyk-llew.sgf
-        - sf-kh kh:W+R sgf:2014/2014-4-sfrejlak-khabu.sgf
+        - sf-kh kh:W+R sgf:2014/2014-4-sfrejlak-khabu.sgf rotate:180
         - ms-ls ms:B+6.5 sgf:2014/2014-4-msurma-lsoldan.sgf
       - - sf-sp sp:W+R sgf:2014/2014-5-sfrejlak-spawlaczyk.sgf
-        - ms-mm ms:B+R sgf:2014/2014-5-msurma-mmajka.sgf
+        - ms-mm ms:B+R sgf:2014/2014-5-msurma-mmajka.sgf rotate:270
         - kh-ll kh:B+13.5 sgf:2014/2014-5-khabu-llew.sgf
         - ls-kg ls:B+6.5 sgf:2014/2014-5-lsoldan-kgiedrojc.sgf
       - - mm-sf sf:W+R sgf:2014/2014-6-mmajka-sfrejlak.sgf
-        - sp-ms ms:W+R sgf:2014/2014-6-spawlaczyk-msurma.sgf
+        - sp-ms ms:W+R sgf:2014/2014-6-spawlaczyk-msurma.sgf rotate:270
         - kg-kh kh:W+R sgf:2014/2014-6-kgiedrojc-khabu.sgf
         - ll-ls ls:W+18.5 sgf:2014/2014-6-llew-lsoldan.sgf
       - - sp-mm sp:B+R sgf:2014/2014-7-spawlaczyk-mmajka.sgf
         - ms-sf ms:B+5.5 sgf:2014/2014-7-msurma-sfrejlak.sgf
-        - ll-kg ll:B+R sgf:2014/2014-7-llew-kgiedrojc.sgf
+        - ll-kg ll:B+R sgf:2014/2014-7-llew-kgiedrojc.sgf rotate:270
         - ls-kh kh:W+10.5 sgf:2014/2014-7-lsoldan-khabu.sgf

@@ -26,23 +26,23 @@ stages:
       - starting
     rounds:
       - - ls-ww ls:W+35.5 sgf:2009/2009-1-wwoskresinski-lsoldan.sgf
-        - kc-ku kc:W+34.5 sgf:2009/2009-1-kurtnowski-kchwedyna.sgf
+        - kc-ku kc:W+34.5 sgf:2009/2009-1-kurtnowski-kchwedyna.sgf rotate:270
         - rj-kg rj:B+R sgf:2009/2009-1-rjachym-kgiedrojc.sgf
         - kh-ml kh:W+R sgf:2009/2009-1-mlubinski-khabu.sgf
       - - ls-ku ls:B+31.5 sgf:2009/2009-2-lsoldan-kurtnowski.sgf
-        - kc-ww kc:B+12.5 sgf:2009/2009-2-kchwedyna-wwoskresinski.sgf
+        - kc-ww kc:B+12.5 sgf:2009/2009-2-kchwedyna-wwoskresinski.sgf rotate:180
         - rj-kh rj:W+R sgf:2009/2009-2-khabu-rjachym.sgf
-        - kg-ml kg:B+R sgf:2009/2009-2-kgiedrojc-mlubinski.sgf
-      - - ls-ml ls:W+29.5 sgf:2009/2009-3-mlubinski-lsoldan.sgf
-        - rj-kc rj:B+R sgf:2009/2009-3-rjachym-kchwedyna.sgf
+        - kg-ml kg:B+R sgf:2009/2009-2-kgiedrojc-mlubinski.sgf rotate:270
+      - - ls-ml ls:W+29.5 sgf:2009/2009-3-mlubinski-lsoldan.sgf rotate:180
+        - rj-kc rj:B+R sgf:2009/2009-3-rjachym-kchwedyna.sgf rotate:180
         - kg-ku kg:W+60 sgf:2009/2009-3-kurtnowski-kgiedrojc.sgf
         - kh-ww kh:W+1.5 sgf:2009/2009-3-wwoskresinski-khabu.sgf
       - - ls-rj ls:B+R sgf:2009/2009-4-lsoldan-rjachym.sgf
         - kc-ml kc:B+5.5 sgf:2009/2009-4-kchwedyna-mlubinski.sgf
         - kg-ww kg:B+R sgf:2009/2009-4-kgiedrojc-wwoskresinski.sgf
         - kh-ku kh:B+R sgf:2009/2009-4-khabu-kurtnowski.sgf
-      - - ls-kg ls:W+21.5 sgf:2009/2009-5-kgiedrojc-lsoldan.sgf
-        - kc-kh kc:W+12.5 sgf:2009/2009-5-khabu-kchwedyna.sgf
+      - - ls-kg ls:W+21.5 sgf:2009/2009-5-kgiedrojc-lsoldan.sgf rotate:180
+        - kc-kh kc:W+12.5 sgf:2009/2009-5-khabu-kchwedyna.sgf rotate:180
         - rj-ww rj:W+R sgf:2009/2009-5-wwoskresinski-rjachym.sgf
         - ml-ku ml:W+31.5 sgf:2009/2009-5-kurtnowski-mlubinski.sgf
       - - ls-kh ls:B+R sgf:2009/2009-6-lsoldan-khabu.sgf

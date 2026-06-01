@@ -23,7 +23,7 @@ stages:
       - starting
     rounds:
       - - kg-wm kg
-        - ls-mw ls:W+R sgf:2000/2000-1-mwolak-lsoldan.sgf
+        - ls-mw ls:W+R sgf:2000/2000-1-mwolak-lsoldan.sgf rotate:180
         - jc-mb jc
         - jl-ku jl
       - - kg-mw kg
@@ -31,7 +31,7 @@ stages:
         - jc-jl jc
         - ku-mb ku
       - - kg-ku kg
-        - ls-jc ls:W+R sgf:2000/2000-3-jchlodek-lsoldan.sgf
+        - ls-jc ls:W+R sgf:2000/2000-3-jchlodek-lsoldan.sgf rotate:180
         - mb-mw mb
         - jl-wm jl
       - - kg-jc kg

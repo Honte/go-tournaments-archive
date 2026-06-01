@@ -1,0 +1,59 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]OT[5x30 byo-yomi]C[Superhonte [3d?\]\: have a good game!
+goodstyle [?\]\: have a good game
+]
+AP[CGoban:3]SZ[19]GM[1]EV[IE 2021]RO[1]DT[2021-01-27]PC[The KGS Go Server at http\://www.gokgs.com/]
+PB[Matei Garcia]BR[3d]PW[Michael Thai]KM[6.5]TM[3600]RE[W+Resign]MULTIGOGM[1]
+;B[pd]BL[3590.54];W[dp]WL[3595.61];B[qp]BL[3586.63];W[dd]WL[3593.51];B[np]BL[3584.55]
+;W[nc]WL[3586.74];B[pf]BL[3581.6];W[jd]WL[3585.44];B[fq]BL[3579.36];W[cn]WL[3577.77]
+;B[cf]BL[3563.99];W[ci]WL[3572.69];B[cc]BL[3547.01];W[dc]WL[3556.81];B[cd]BL[3544.61]
+;W[de]WL[3555.57];B[df]BL[3455.21];W[ce]WL[3552.99];B[be]BL[3452.63];W[bd]WL[3551.94]
+;B[bc]BL[3450.75];W[bf]WL[3550.74];B[ad]BL[3449.87];W[bg]WL[3549.89];B[ef]BL[3444.7]
+;W[gd]WL[3526.11];B[gf]BL[3231.75];W[fe]WL[3502.68];B[ff]BL[3210.73];W[fi]WL[3376.59]
+;B[if]BL[2959.88];W[je]WL[3238.98];B[jf]BL[2931.54];W[kf]WL[3236.25];B[md]BL[2834.72]
+;W[kg]WL[3221.66];B[hi]BL[2828.55];W[ji]WL[3175.16];B[ih]BL[2784.01];W[jh]WL[3142.91]
+;B[hk]BL[2777.39];W[hg]WL[3119.41];B[hf]BL[2731.97];W[ig]WL[3109.84];B[gh]BL[2729.02]
+;W[jg]WL[3093.09];B[fh]BL[2725.29];W[gj]WL[3091.6];B[hj]BL[2723.02];W[fl]WL[3060.81]
+;B[gk]BL[2581.75];W[fk]WL[3057.17];B[ej]BL[2580.43];W[ei]WL[2993.58];B[mc]BL[2555.95]
+;W[hq]WL[2955];B[hp]BL[2529.29];W[ip]WL[2945.04];B[gp]BL[2512.55];W[iq]WL[2935.67]
+;B[gm]BL[2493.92];W[gl]WL[2898.83];B[hl]BL[2491.43];W[hm]WL[2879.93];B[fm]BL[2487.29]
+;W[em]WL[2869.76];B[fj]BL[2484.22];W[dj]WL[2864.18];B[gi]BL[2471.72];W[gn]WL[2843.32]
+;B[dk]BL[2431.23];W[ck]WL[2827.3];B[cl]BL[2380.63];W[dl]WL[2801.07];B[el]BL[2378.84]
+;W[fn]WL[2796.33];B[dm]BL[2376.5];W[ek]WL[2794.51];B[dl]BL[2374.01];W[dn]WL[2791.57]
+;B[bk]BL[2372.5];W[cj]WL[2789.08];B[dq]BL[2354.42];W[cq]WL[2784.82];B[cr]BL[2351.87]
+;W[eq]WL[2729.7];B[dr]BL[2349.3];W[ep]WL[2728.77];B[er]BL[2331.04];W[bq]WL[2725.28]
+;B[io]BL[2329.84];W[ho]WL[2722.82];B[jo]BL[2316.71];W[gr]WL[2721.65];B[fr]BL[2309.34]
+;W[gq]WL[2704.38];B[ke]BL[2264.48];W[kc]WL[2690.41];B[le]BL[2261.18];W[jl]WL[2688.01]
+;B[jk]BL[2256.66];W[kk]WL[2686.32];B[jj]BL[2255.65];W[kj]WL[2684.9];B[kl]BL[2251.37]
+;W[jm]WL[2587.94];B[ll]BL[2247.91];W[mi]WL[2562.57];B[eh]BL[2225.43];W[gj]WL[2553.24]
+;B[oi]BL[2200.99];W[mk]WL[2549.23];B[nj]BL[2193.6];W[ml]WL[2534.35];B[kn]BL[2144.2]
+;W[mm]WL[2525.36];B[ln]BL[2142.12];W[mj]WL[2508.09];B[lk]BL[2136.23];W[lj]WL[2486.2]
+;B[ol]BL[2133.97];W[ii]WL[2477.07];B[nn]BL[2030.56];W[nf]WL[2352.61];B[mg]BL[1952.61]
+;W[mf]WL[2339.62];B[lf]BL[1943.91];W[lg]WL[2330.39];B[nd]BL[1868.92];W[lp]WL[2301.66]
+;B[kq]BL[1863.57];W[fp]WL[2189.74];B[nh]BL[1817.79];W[ij]WL[2167.24];B[ik]BL[1802.27]
+;W[hh]WL[2160.54];B[hd]BL[1800.38];W[hc]WL[2155.47];B[id]BL[1793.96];W[ic]WL[2152.42]
+;B[ge]BL[1792.02];W[ie]WL[2071.76];B[ee]BL[1736.55];W[db]WL[2003.9];B[fc]BL[1672.45]
+;W[fb]WL[1962.84];B[gc]BL[1458.01];W[gb]WL[1949.01];B[fd]BL[1455.81];W[kp]WL[1893.06]
+;B[mn]BL[1319.76];W[mq]WL[1849.07];B[nq]BL[1315.48];W[mr]WL[1844.39];B[nr]BL[1304.29]
+;W[nb]WL[1841.89];B[mb]BL[1294.78];W[qc]WL[1839.68];B[pc]BL[1283.87];W[pb]WL[1837.45]
+;B[qd]BL[1258.7];W[rb]WL[1803.11];B[rc]BL[1248.65];W[qb]WL[1801.36];B[rd]BL[1241.21]
+;W[ma]WL[1787.46];B[la]BL[1142.3];W[na]WL[1784.76];B[kb]BL[1140.84];W[oc]WL[1700.92]
+;B[jb]BL[1126.53];W[ib]WL[1671.46];B[ec]BL[1110.32];W[eb]WL[1525.38];B[ia]BL[983.222]
+;W[bb]WL[1491.74];B[cb]BL[980.77];W[ca]WL[1489.76];B[da]BL[879.832];W[ha]WL[1454.65]
+;B[ja]BL[871.496];W[ea]WL[1446.41];B[ba]BL[855.542];W[aa]WL[1443.95];B[ab]BL[854.589]
+;W[lc]WL[1383.66];B[lb]BL[849.617];W[ac]WL[1382.22];B[mh]BL[843.565];W[lh]WL[1374.51]
+;B[ab]BL[840.877];W[od]WL[1268.66];B[oe]BL[836.851];W[ac]WL[1262.33];B[cp]BL[834.251]
+;W[bd]WL[1237.63];B[bp]BL[831.549];W[jc]WL[1218.76];B[oa]BL[820.442];W[om]WL[1121.05]
+;B[nm]BL[801.582];W[ok]WL[1114.6];B[pk]BL[794.294];W[pl]WL[1097.3];B[nl]BL[791.517]
+;W[pj]WL[1095.39];B[qk]BL[789.502];W[ob]WL[1002.31];B[sb]BL[786.464];W[bo]WL[946.732]
+;B[aq]BL[779.002];W[qj]WL[922.398];B[ql]BL[770.533];W[nk]WL[891.544];B[oj]BL[427.626]
+;W[og]WL[881.787];B[oh]BL[419.681];W[pg]WL[874.028];B[qi]BL[413.591];W[ne]WL[854.102]
+;B[qg]BL[355.774];W[ph]WL[799.385];B[qh]BL[349.065];W[pi]WL[788.321]C[Superhonte [3d?\]\: agg
+goodstyle [?\]\: thanks matei
+Superhonte [3d?\]\: thanks
+goodstyle [?\]\: intense game
+Superhonte [3d?\]\: yup, you played really well
+Superhonte [3d?\]\: and I did crap at the start
+goodstyle [?\]\: i think u left yourself to attaack very early
+Superhonte [3d?\]\: I thought i'dd turn it around though
+goodstyle [?\]\: i thought u did too
+])

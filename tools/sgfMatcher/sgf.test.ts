@@ -51,6 +51,24 @@ describe('extractSgfInfo', () => {
 
     assert.equal(sgf.contentIssue, 'longest branch is not main branch');
   });
+
+  it('extracts and normalizes OGS review URLs from PC root properties', () => {
+    const sgf = extractSgfInfo(
+      '(;PB[Black Player]PW[White Player]RE[B+R]PC[OGS: http://online-go.com/game/review/114161];B[aa])',
+      '2025/1-BlackPlayer-WhitePlayer.sgf'
+    );
+
+    assert.equal(sgf.sgfOgs, 'https://online-go.com/review/114161');
+  });
+
+  it('ignores ordinary PC root properties when extracting OGS URLs', () => {
+    const sgf = extractSgfInfo(
+      '(;PB[Black Player]PW[White Player]RE[B+R]PC[Gdansk];B[aa])',
+      '2025/1-BlackPlayer-WhitePlayer.sgf'
+    );
+
+    assert.equal(sgf.sgfOgs, null);
+  });
 });
 
 describe('parseFilename', () => {

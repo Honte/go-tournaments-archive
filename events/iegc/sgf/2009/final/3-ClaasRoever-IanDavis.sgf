@@ -1,0 +1,90 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]OT[10/300 Canadian]C[claas [2k\]\: alright, good luck
+]
+AP[CGoban:3]SZ[19]GM[1]EV[IE 2009 Final]RO[3]DT[2009-12-02]PC[The KGS Go Server at http\://www.gokgs.com/]
+PB[Claas Roever]BR[2k]PW[Ian Davis]WR[2d]KM[6.5]TM[5400]RE[W+Resign]MULTIGOGM[1]
+;B[pd]BL[5387.19]C[Javaness [2d\]\: have a good game claas
+];W[qp]WL[5356.18];B[cd]
+BL[5286.29];W[cq]WL[5345.39]C[claas [2k\]\: i know this
+Javaness [2d\]\: you will know the next move then
+]
+;B[dn]BL[5208.24]C[claas [2k\]\: ok
+];W[fp]WL[5328.07]C[claas [2k\]\: I don't remember the whole game though
+Javaness [2d\]\: that's ok
+rorywales [2k\]\: hehe
+]
+;B[lq]BL[5103.95];W[iq]WL[5301.22];B[qq]BL[4966.73];W[pq]WL[5291.95];B[pp]BL[4952.17]
+;W[oq]WL[5273.01];B[qo]BL[4898.65];W[rp]WL[5269.64];B[rq]BL[4863.73];W[ro]WL[5263.13]
+;B[qn]BL[4856.72];W[rn]WL[5241.22];B[op]BL[4819.84];W[qm]WL[4705.81];B[nq]BL[4795.51]
+;W[qr]WL[4650.29];B[rr]BL[4625.42];W[nr]WL[4583.18];B[pr]BL[4547.45];W[or]WL[4579.61]
+C[rorywales [2k\]\: this whole sequence is interesting
+];B[qs]BL[4544.17];W[np]
+WL[4571.69];B[no]BL[4504.33];W[mq]WL[4560.04];B[mp]BL[4464.98];W[nq]WL[4557.71]
+C[markwebb [5k\]\: p5 threat is nasty
+];B[oo]BL[4399.43]C[markwebb [5k\]\: n5 ?
+rorywales [2k\]\: too risky i think
+markwebb [5k\]\: if m3 q6
+rorywales [2k\]\: m4 i think is afer
+rorywales [2k\]\: safer
+rorywales [2k\]\: still not nice for white though
+markwebb [5k\]\: y. 'cos b gives up r5
+]
+;W[lp]WL[4446.44];B[mo]BL[4358.91]C[markwebb [5k\]\: how did cork go?
+rorywales [2k\]\: it was a great tourrnament, 18 players, no heating in the venue though
+rorywales [2k\]\: everyone freezing cold
+rorywales [2k\]\: all due to the flooding in ucc
+]
+;W[kq]WL[4353.72]C[rorywales [2k\]\: wei won
+rorywales [2k\]\: he played some really tough handicap games, he was incredible to watch
+]
+;B[lr]BL[4337.4];W[kr]WL[4345.74];B[lo]BL[4282.2];W[kp]WL[4341.98]C[markwebb [5k\]\: Ah. that's why everyone was wering coats
+markwebb [5k\]\: wearing*
+markwebb [5k\]\: q7 now or k16?
+rorywales [2k\]\: k6?
+rorywales [2k\]\: q7 too early i think
+]
+;B[qk]BL[4094.8];W[pl]WL[4251.37];B[pk]BL[4084.57];W[nl]WL[4217.44];B[om]BL[4069.05]
+;W[ol]WL[4211.95];B[rl]BL[4058.4];W[rm]WL[4201.36];B[ll]BL[4028.28];W[lk]WL[4191.05]
+;B[nj]BL[3967.22];W[kl]WL[4144.39];B[jn]BL[3952.85];W[lm]WL[4134.94];B[ko]BL[3914.84]
+;W[ml]WL[4063.35]C[rorywales [2k\]\: is white pointing to the left?
+];B[pm]BL[3873.68]
+;W[ql]WL[4012.92];B[jl]BL[3805.18];W[jk]WL[3890.98];B[il]BL[3744.2];W[ik]WL[3864.04]
+;B[hl]BL[3692.26];W[fc]WL[3844.24];B[dg]BL[3441.56];W[ic]WL[3774.22];B[mc]BL[3360.87]
+;W[qc]WL[3759.36];B[qd]BL[3350.45];W[pc]WL[3687.92];B[oc]BL[3275.11];W[ob]WL[3613.35]
+;B[nc]BL[3162.87];W[rd]WL[3556.05];B[re]BL[3149.8];W[rc]WL[3553.09];B[hk]BL[2798.7]
+;W[ci]WL[3493.14];B[cj]BL[2725.22];W[dj]WL[3445.23];B[dk]BL[2646.68];W[bj]WL[3217.98]
+;B[ck]BL[2631.13];W[dh]WL[3209.4];B[cg]BL[2417.37];W[ej]WL[3197.04];B[bh]BL[2257.68]
+;W[bi]WL[3085.84];B[ek]BL[2228.58];W[eg]WL[3039.14];B[ef]BL[2096.87];W[fg]WL[3025.32]
+;B[fj]BL[2069.32];W[ff]WL[2972.73];B[fe]BL[1999];W[ee]WL[2963.85];B[df]BL[1990.68]
+;W[ge]WL[2962.71];B[eh]BL[1954.48];W[fi]WL[2949.88];B[eq]BL[1735.06];W[dp]WL[2757.76]
+;B[go]BL[1591.56];W[fo]WL[2727.14];B[gp]BL[1571.97];W[fq]WL[2649.23];B[gq]BL[1566.85]
+;W[gr]WL[2646.18];B[hr]BL[1544.68];W[fr]WL[2644.8];B[hq]BL[1535.67];W[ir]WL[2596.87]
+;B[fn]BL[1345.94];W[nh]WL[2574.73];B[lj]BL[1312.38];W[kj]WL[2555.34];B[li]BL[1308.01]
+;W[oj]WL[2522.09];B[ok]BL[1234.94];W[nk]WL[2493.3];B[ni]BL[1231.18];W[oi]WL[2475.95]
+;B[qh]BL[1165.27];W[ph]WL[2404.04];B[qg]BL[1067.15];W[mg]WL[2390.49];B[lg]BL[1037.9]
+;W[lf]WL[2378.64];B[kg]BL[968.449];W[mf]WL[2340.35];B[mh]BL[952.432]C[markwebb [5k\]\: something is goin to die there
+]
+;W[mj]WL[2335.51];B[mi]BL[936.194];W[ki]WL[2332.99];B[lh]BL[920.142];W[og]WL[2317.59]
+;B[kf]BL[903.242];W[ld]WL[2305.59];B[gh]BL[845.404];W[fh]WL[2255.27];B[kd]BL[691.664]
+;W[lc]WL[2230.35];B[le]BL[637.442];W[me]WL[2226.33];B[ke]BL[634.18];W[md]WL[2221.12]
+;B[he]BL[591.252];W[ih]WL[2168.59];B[gf]BL[505.751];W[fd]WL[2152.71];B[hh]BL[479.251]
+;W[hi]WL[2099.96];B[gi]BL[460.008];W[hg]WL[2018.96];B[ig]BL[216.549];W[gj]WL[1996.08]
+C[master117 [1k\]\: w + R ;)
+];B[kc]BL[61.881];W[lb]WL[1975.21];OB[9]B[jh]BL[201.095]
+;W[ii]WL[1956.71];OB[8]B[id]BL[174.843];W[kb]WL[1867.24];OB[7]B[hf]BL[146.473];W[gg]
+WL[1858.71];OB[6]B[jf]BL[90.915];W[rj]WL[1806.1];OB[5]B[qj]BL[62.075];W[ri]WL[1796.79]
+;OB[4]B[qi]BL[49.183];W[rk]WL[1794.84];OB[3]B[nb]BL[45.818];W[pb]WL[1782.87];OB[2]
+B[of]BL[40.729];W[oe]WL[1757.72];OB[1]B[od]BL[23.215];W[pf]WL[1738.3];OB[10]B[pe]
+BL[300];W[nf]WL[1730.81];OB[9]B[qf]BL[296.238];W[hc]WL[1720.25];OB[8]B[ra]BL[290.906]
+;W[qa]WL[1709.27]C[claas [2k\]\: ok, looks like I loose this badly
+claas [2k\]\: Congratulations
+Javaness [2d\]\: thanks claas
+Javaness [2d\]\: you play like john gibson in the opening
+claas [2k\]\: I played very badly 
+claas [2k\]\: today
+claas [2k\]\: i missed alot
+claas [2k\]\: shit
+Javaness [2d\]\: you had a good game for a long time
+claas [2k\]\: yes, I'm pissed off, I threw it away I think
+Javaness [2d\]\: am i supposed to play S2 in that corner
+Javaness [2d\]\: i never remember it
+])

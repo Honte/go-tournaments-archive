@@ -1,0 +1,37 @@
+website: https://www.irish-go.org/2020-irish-championship-table/
+top:
+  - mgarcia
+  - jhutchinson
+  - adelogu
+stages:
+  - type: tournament
+    file: ie2020.txt
+    name: top8
+    notes: double ladder
+    dir: 2020/top8
+    promoted: 2
+    scoringColumns:
+      - wins
+      - place
+      - null
+      - null
+    breakers:
+      - place
+    findSharedPlaces: true
+    games:
+      - 2-3 2:B+11.5 round:5 sgf:2020/top8/5-JamesHutchinson-AlexDelogu.sgf
+  - type: tournament
+    file: ie2020final.txt
+    name: Final
+    dir: 2020/final
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:1 sgf:2020/final/1-MateiGarcia-JamesHutchinson.sgf
+      - 2-1 1:W+5.5 round:2 sgf:2020/final/2-JamesHutchinson-MateiGarcia.sgf

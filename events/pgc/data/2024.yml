@@ -26,31 +26,31 @@ stages:
       - direct
       - starting
     rounds:
-      - - sf-mm sf:B+R sgf:2024/2024-1-sfrejlak-mmajka.sgf ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/G51DzNwBgA77fbZIiIxm yt:https://youtube.com/watch?v=FhK57HL7ijI
-        - jf-dj jf:B+R sgf:2024/2024-1-jfraczak-djurkiewicz.sgf ai:https://ai-sensei.com/game/tV4AQMflHscsWMEdcBUZUf5Geyy2/vjhcHIpFIsp0ykmfk2kA yt:https://youtube.com/watch?v=DZH6q8iJmbw
-        - ls-cc ls:B+R sgf:2024/2024-1-lsoldan-cczernecki.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/jRc3pSHF8hBK5t4E5DVR yt:https://youtube.com/watch?v=k93iA345LOc
-        - mw-kh mw:B+R sgf:2024/2024-1-mwalaszewski-khabu.sgf ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/rlxkL67Z5Og3mp6lzlvT yt:https://youtube.com/watch?v=HSEUW4BfNLg
-      - - dj-sf sf:W+20.5 sgf:2024/2024-2-djurkiewicz-sfrejlak.sgf ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/s2ZVItwA5PoCwXdF2rlD yt:https://youtube.com/watch?v=OYsRdBrdsMA
+      - - sf-mm sf:B+R sgf:2024/2024-1-sfrejlak-mmajka.sgf rotate:270 ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/G51DzNwBgA77fbZIiIxm yt:https://youtube.com/watch?v=FhK57HL7ijI
+        - jf-dj jf:B+R sgf:2024/2024-1-jfraczak-djurkiewicz.sgf rotate:90 ai:https://ai-sensei.com/game/tV4AQMflHscsWMEdcBUZUf5Geyy2/vjhcHIpFIsp0ykmfk2kA yt:https://youtube.com/watch?v=DZH6q8iJmbw
+        - ls-cc ls:B+R sgf:2024/2024-1-lsoldan-cczernecki.sgf rotate:180 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/jRc3pSHF8hBK5t4E5DVR yt:https://youtube.com/watch?v=k93iA345LOc
+        - mw-kh mw:B+R sgf:2024/2024-1-mwalaszewski-khabu.sgf rotate:270 ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/rlxkL67Z5Og3mp6lzlvT yt:https://youtube.com/watch?v=HSEUW4BfNLg
+      - - dj-sf sf:W+20.5 sgf:2024/2024-2-djurkiewicz-sfrejlak.sgf rotate:270 ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/s2ZVItwA5PoCwXdF2rlD yt:https://youtube.com/watch?v=OYsRdBrdsMA
         - mm-jf jf:W+58.5
-        - kh-ls ls:W+9.5 sgf:2024/2024-2-khabu-lsoldan.sgf ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/QERZF1CDZcIMBPsuBFeK yt:https://youtube.com/watch?v=o7c-jbyNpF0
-        - cc-mw cc:B+R sgf:2024/2024-2-cczernecki-mwalaszewski.sgf ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/XFMWEqrDKWRuRrPenRHA yt:https://youtube.com/watch?v=YosZuNTfS2g
-      - - sf-cc sf:B+15.5 sgf:2024/2024-3-sfrejlak-cczernecki.sgf ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/cA0verQE7mN0iPksiqYc yt:https://www.youtube.com/watch?v=jFRHjlzgRoY
+        - kh-ls ls:W+9.5 sgf:2024/2024-2-khabu-lsoldan.sgf rotate:270 ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/QERZF1CDZcIMBPsuBFeK yt:https://youtube.com/watch?v=o7c-jbyNpF0
+        - cc-mw cc:B+R sgf:2024/2024-2-cczernecki-mwalaszewski.sgf rotate:270 ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/XFMWEqrDKWRuRrPenRHA yt:https://youtube.com/watch?v=YosZuNTfS2g
+      - - sf-cc sf:B+15.5 sgf:2024/2024-3-sfrejlak-cczernecki.sgf rotate:270 ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/cA0verQE7mN0iPksiqYc yt:https://www.youtube.com/watch?v=jFRHjlzgRoY
         - jf-kh kh:W+R
-        - ls-mm ls:B+R sgf:2024/2024-3-lsoldan-mmajka.sgf ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/7MEeaxLe2rYuog8n2tOK yt:https://www.youtube.com/watch?v=5r8WBoBHu2c
-        - mw-dj dj:W+R sgf:2024/2024-3-mwalaszewski-djurkiewicz.sgf ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/TWmy2vOnwIEpfcfvCHyG yt:https://www.youtube.com/watch?v=OANwrVwFmZI
-      - - kh-sf sf:W+19.5 sgf:2024/2024-4-khabu-sfrejlak.sgf ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/d73IY0aPrQAqQFjUAEZt yt:https://youtube.com/watch?v=0zq1aQK3seI
-        - cc-jf cc:B+R sgf:2024/2024-4-cczernecki-jfraczak.sgf ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/BpmLhXziSyhxC36PPITl yt:https://youtube.com/watch?v=ldGgGjCpe-U
-        - dj-ls dj:B+R sgf:2024/2024-4-djurkiewicz-lsoldan.sgf ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/P2HZZXndPxawkKwPT5nD yt:https://youtube.com/watch?v=6eLJuUn7Ft4
+        - ls-mm ls:B+R sgf:2024/2024-3-lsoldan-mmajka.sgf rotate:270 ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/7MEeaxLe2rYuog8n2tOK yt:https://www.youtube.com/watch?v=5r8WBoBHu2c
+        - mw-dj dj:W+R sgf:2024/2024-3-mwalaszewski-djurkiewicz.sgf rotate:90 ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/TWmy2vOnwIEpfcfvCHyG yt:https://www.youtube.com/watch?v=OANwrVwFmZI
+      - - kh-sf sf:W+19.5 sgf:2024/2024-4-khabu-sfrejlak.sgf rotate:270 ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/d73IY0aPrQAqQFjUAEZt yt:https://youtube.com/watch?v=0zq1aQK3seI
+        - cc-jf cc:B+R sgf:2024/2024-4-cczernecki-jfraczak.sgf rotate:90 ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/BpmLhXziSyhxC36PPITl yt:https://youtube.com/watch?v=ldGgGjCpe-U
+        - dj-ls dj:B+R sgf:2024/2024-4-djurkiewicz-lsoldan.sgf rotate:270 ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/P2HZZXndPxawkKwPT5nD yt:https://youtube.com/watch?v=6eLJuUn7Ft4
         - mm-mw mm:B+R sgf:2024/2024-4-mmajka-mwalaszewski.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/R9dQo2ZN6z3PN7oSZN4a yt:https://youtube.com/watch?v=b3VpJKFmU5w
-      - - dj-cc cc:W+T sgf:2024/2024-5-djurkiewicz-cczernecki.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/oWdftiWDVDcJr3dxxo3Y yt:https://youtube.com/watch?v=O1PDbxvz0ms
-        - mm-kh kh:W+R sgf:2024/2024-5-mmajka-khabu.sgf ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/DqNmCoXefPNov9kI7mAo yt:https://youtube.com/watch?v=ga1BVNumn6c
-        - ls-jf jf:W+5.5 sgf:2024/2024-5-lsoldan-jfraczak.sgf ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/dFZDnB8mNPLBEI3S8Pa5 yt:https://youtube.com/watch?v=XN_eww0MOdo
-        - sf-mw sf:B+R sgf:2024/2024-5-sfrejlak-mwalaszewski.sgf ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/V0qwxOwGGNJMvakRaBO4 yt:https://youtube.com/watch?v=JoTt_uvE7JY
-      - - kh-dj kh:B+R sgf:2024/2024-6-khabu-djurkiewicz.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/292SCqHoUa0rbBuRxZnj yt:https://youtube.com/watch?v=xtq54d-gLDY
+      - - dj-cc cc:W+T sgf:2024/2024-5-djurkiewicz-cczernecki.sgf rotate:180 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/oWdftiWDVDcJr3dxxo3Y yt:https://youtube.com/watch?v=O1PDbxvz0ms
+        - mm-kh kh:W+R sgf:2024/2024-5-mmajka-khabu.sgf rotate:90 ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/DqNmCoXefPNov9kI7mAo yt:https://youtube.com/watch?v=ga1BVNumn6c
+        - ls-jf jf:W+5.5 sgf:2024/2024-5-lsoldan-jfraczak.sgf rotate:180 ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/dFZDnB8mNPLBEI3S8Pa5 yt:https://youtube.com/watch?v=XN_eww0MOdo
+        - sf-mw sf:B+R sgf:2024/2024-5-sfrejlak-mwalaszewski.sgf rotate:270 ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/V0qwxOwGGNJMvakRaBO4 yt:https://youtube.com/watch?v=JoTt_uvE7JY
+      - - kh-dj kh:B+R sgf:2024/2024-6-khabu-djurkiewicz.sgf rotate:180 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/292SCqHoUa0rbBuRxZnj yt:https://youtube.com/watch?v=xtq54d-gLDY
         - cc-mm cc:B+R sgf:2024/2024-6-cczernecki-mmajka.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/kx0adWWvLdq66aT1PcGJ yt:https://youtube.com/watch?v=18RxWpWAVj0
-        - sf-ls sf:B+12.5 sgf:2024/2024-6-sfrejlak-lsoldan.sgf ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/C4W3MEry0c8pUdpRxM9B yt:https://youtube.com/watch?v=N3qc3r5SDy8
-        - jf-mw jf:B+16.5 sgf:2024/2024-6-jfraczak-mwalaszewski.sgf ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/ruubRmbqJaNuG0xbQ9s5 yt:https://youtube.com/watch?v=6kixedG_u_I
+        - sf-ls sf:B+12.5 sgf:2024/2024-6-sfrejlak-lsoldan.sgf rotate:270 ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/C4W3MEry0c8pUdpRxM9B yt:https://youtube.com/watch?v=N3qc3r5SDy8
+        - jf-mw jf:B+16.5 sgf:2024/2024-6-jfraczak-mwalaszewski.sgf rotate:270 ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/ruubRmbqJaNuG0xbQ9s5 yt:https://youtube.com/watch?v=6kixedG_u_I
       - - cc-kh cc:B+7.5 sgf:2024/2024-7-cczernecki-khabu.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/bOtbiegcmGZ916xk87MR yt:https://youtube.com/watch?v=oUE8kIMCPo0
-        - mm-dj mm:B+R sgf:2024/2024-7-mmajka-djurkiewicz.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/LJF1cvQqbmItFWXObyFW yt:https://youtube.com/watch?v=0lcstgA60gA
-        - jf-sf sf:W+R sgf:2024/2024-7-jfraczak-sfrejlak.sgf ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/jP3qpBuNhk2NGfEXWXvh yt:https://youtube.com/watch?v=0ZQzCWNcv5Q
-        - mw-ls ls:W+9.5 sgf:2024/2024-7-mwalaszewski-lsoldan.sgf ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/y8U7kWAp2yOW5NAhwf8m yt:https://youtube.com/watch?v=-_CX8FAc2b4
+        - mm-dj mm:B+R sgf:2024/2024-7-mmajka-djurkiewicz.sgf rotate:90 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/LJF1cvQqbmItFWXObyFW yt:https://youtube.com/watch?v=0lcstgA60gA
+        - jf-sf sf:W+R sgf:2024/2024-7-jfraczak-sfrejlak.sgf rotate:90 ai:https://ai-sensei.com/game/QTU7UBmHveYs5AQiCRmEANrdown2/jP3qpBuNhk2NGfEXWXvh yt:https://youtube.com/watch?v=0ZQzCWNcv5Q
+        - mw-ls ls:W+9.5 sgf:2024/2024-7-mwalaszewski-lsoldan.sgf rotate:270 ai:https://ai-sensei.com/game/iTdWZbZ7L5Yu4Lh0v6hEYhfUtvq2/y8U7kWAp2yOW5NAhwf8m yt:https://youtube.com/watch?v=-_CX8FAc2b4

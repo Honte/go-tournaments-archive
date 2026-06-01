@@ -10,7 +10,7 @@ const COMPONENTS: Components = {
   p: ({ children }) => <p className="my-2">{children}</p>,
   ul: ({ children }) => <ul className="list-disc pl-6 my-2">{children}</ul>,
   ol: ({ children }) => <ol className="list-decimal pl-6 my-2">{children}</ol>,
-  a: ({ href, children }) => (href ? <ExternalLink url={href}>{children}</ExternalLink> : children),
+  a: ({ href, children }) => (href ? <ExternalLink href={href}>{children}</ExternalLink> : children),
 };
 
 const SKIP_WHEN_INLINE = ['p'];

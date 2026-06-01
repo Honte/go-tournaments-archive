@@ -1,0 +1,23 @@
+; CL[A]
+; EV[Irish Championship League 2003]
+; TC[T030301E]
+; PC[IE,Dublin]
+; KM[5.5]
+; TM[0]
+; HA[h9]
+;                            Irish Championship League
+;                                       2003
+;
+;Pl     Name             Grade  Club   MM S SOS SSOS  1.   2.   3.   4.   5.
+  1 Mitchell Noel           2d IE Dubl  6 6   1   0    8+ 6+ 7+ 5+ 3+ 4+ 2-  |10474563
+  2 Flinter Stephen         1d IE Dubl  6 6   1   0    5+ 8+ 6+ 7+ 4+ 3- 1+  |10601382
+  3 Gibson John             2k IE Dubl  6 6   0  11    7+ 5+ 8+ 6+ 1- 2+ 4+  |10637385
+  4 Walsh Aidan             2k IE Dubl  3 3   0   7    6+ 7+ 5- 8+ 2- 1- 3-  |12662760
+  5 Gallagher Brian         1k IE Dubl  2 2   0   7    2- 3- 4+ 1- 6- 7- 8+  |10850257
+  6 Rafferty Chris          2k IE Dubl  2 2   0   3    4- 1- 2- 3- 5+ 8+ 0=  |10849256
+  7 Brennan Paul            2k IE Car   1 1   0   2    3- 4- 1- 2- 0= 5+ 0=  |10613295
+  8 Murphy Tom              2k IE Dubl  0 0   0   0    1- 2- 3- 4- 0= 6- 5-  |13413961
+;
+;  1  Noel Mitchell          2d IE Dub   3 3   0   0   3+ 0- 2+ 2- 2+
+;  2 Stephen Flinter         2d IE Dub   2 2   0   0   0- 3+ 1- 1+ 1-
+;  3 John Gibson             1d IE Dub   0 0   0  11   1- 2- 0- 0- 0-  

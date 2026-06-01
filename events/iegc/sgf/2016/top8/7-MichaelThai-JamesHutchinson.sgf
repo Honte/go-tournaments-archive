@@ -1,0 +1,103 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]OT[5x30 byo-yomi]C[jameshut [?\]\: enjoy the game
+goodstyle [2k\]\: good game james
+]
+AP[CGoban:3]SZ[19]GM[1]EV[IE 2016]RO[7]DT[2016-04-24]PC[The KGS Go Server at http\://www.gokgs.com/]
+PB[Michael Thai]BR[2k]PW[James Hutchinson]KM[6.5]TM[3600]RE[W+14.50]MULTIGOGM[1]
+;B[pd]BL[3591.15];W[dd]WL[3590.17];B[qp]BL[3588.42];W[op]WL[3540.39];B[oq]BL[3576.01]
+;W[nq]WL[3533.74];B[pq]BL[3574.94];W[mp]WL[3531.46];B[qn]BL[3573.77];W[ip]WL[3462.99]
+;B[fc]BL[3555.48];W[cf]WL[3284.74];B[db]BL[3548.01];W[cc]WL[3264.51];B[ic]BL[3537.63]
+;W[cp]WL[3190.39];B[pj]BL[3525.3];W[nc]WL[3144.23];B[oc]BL[3519];W[nd]WL[3138.94]
+;B[qf]BL[3510.34];W[kc]WL[3135.19];B[je]BL[3457.37];W[le]WL[3014.91];B[kb]BL[3448.68]
+;W[lb]WL[3003.38];B[jb]BL[3446.56];W[dj]WL[2905.43];B[of]BL[3438.09];W[eq]WL[2882.45]
+;B[lf]BL[3435.86];W[mf]WL[2847.42];B[mg]BL[3430.33];W[kf]WL[2753.17];B[lg]BL[3425.93]
+;W[ke]WL[2749.58];B[kp]BL[3419.65];W[nn]WL[2470.15];B[lo]BL[3412.13];W[mm]WL[2423.58]
+;B[km]BL[3409.7];W[ll]WL[2386.23];B[kl]BL[3405.95];W[lj]WL[2339.19];B[kk]BL[3397.81]
+;W[mi]WL[2301.03];B[mk]BL[3367.45];W[lk]WL[2293.08];B[kg]BL[3366.35];W[kj]WL[2272.85]
+;B[jf]BL[3362.84];W[nf]WL[2174.55];B[ng]BL[3359.54];W[nb]WL[2131.3];B[ob]BL[3322.08]
+;W[jd]WL[2122.69];B[id]BL[3317.95];W[ne]WL[1907.51];B[jc]BL[3268.59];W[kd]WL[1887.52]
+;B[md]BL[3257.28];W[mc]WL[1858.76];B[io]BL[3229.43];W[hp]WL[1814.98];B[lq]BL[3220.13]
+;W[mr]WL[1795.89];B[jp]BL[3205.59];W[ij]WL[1722.14];B[ho]BL[3202.7];W[gp]WL[1701.42]
+;B[hl]BL[3192.24];W[gk]WL[1619.63];B[fm]BL[3164.45];W[qj]WL[1597.65];B[qk]BL[3143.8]
+;W[pk]WL[1572.6];B[ok]BL[3120.28];W[pl]WL[1550.54];B[ql]BL[3119.18];W[pi]WL[1466.35]
+;B[oj]BL[3115.71];W[oi]WL[1463.59];B[qi]BL[3110.88];W[qh]WL[1394.58];B[rj]BL[3108.86]
+;W[oh]WL[1352.44];B[cm]BL[3010.52];W[ck]WL[1266.93];B[bo]BL[3005.96];W[co]WL[1231.32]
+;B[cn]BL[3002.61];W[bp]WL[1227.96];B[an]BL[2997.91];W[rg]WL[1162.69];B[rf]BL[2981.71]
+;W[sf]WL[1159.33];B[se]BL[2968.45];W[sg]WL[1156.04];B[re]BL[2961.5];W[cb]WL[1035.29]
+;B[ir]BL[2876.98];W[hr]WL[1005.5];B[jr]BL[2870.11];W[fe]WL[944.474];B[gg]BL[2845.15]
+;W[fh]WL[813.2];B[fg]BL[2834.82];W[eh]WL[757.277];B[eg]BL[2825.82];W[dg]WL[753.917]
+;B[ee]BL[2823.04];W[ed]WL[736.774];B[fd]BL[2821.63];W[ef]WL[732.079];B[ge]BL[2820.23]
+;W[oa]WL[641.205];B[pa]BL[2810.15];W[na]WL[638.016];B[pb]BL[2809.04];W[or]WL[600.209]
+;B[bl]BL[2798.71];W[bk]WL[562.624];B[ak]BL[2797.1];W[aj]WL[561.042];B[al]BL[2795.57]
+;W[bi]WL[559.505];B[ap]BL[2789.4];W[bq]WL[555.481];B[mj]BL[2774.18];W[li]WL[545.339]
+;B[hi]BL[2749.22];W[hk]WL[509.828];B[jk]BL[2739];W[ii]WL[492.106];B[ik]BL[2702.69]
+;W[hh]WL[440.617];B[pr]BL[2668.83];W[ps]WL[430.301];B[qs]BL[2667.3];W[os]WL[427.457]
+;B[qr]BL[2666.45];W[eb]WL[368.134];B[fb]BL[2663.12];W[da]WL[361.792];B[hs]BL[2630.91]
+;W[gr]WL[352.929];B[ml]BL[2613.23];W[lm]WL[343.768];B[om]BL[2610.67];W[on]WL[293.382]
+;B[pn]BL[2591.41];W[nm]WL[221.464];B[nl]BL[2565.46];W[ff]WL[170.768];B[gf]BL[2561.45]
+;W[de]WL[169.106];B[gh]BL[2558.85];W[gi]WL[166.276];B[hg]BL[2557.02];W[ih]WL[161.988]
+;B[fl]BL[2476.45];W[en]WL[79.46];B[em]BL[2424.22];W[dn]WL[60.182];B[dm]BL[2412.82]
+;W[go]WL[21.427];B[fn]BL[2382.47];OW[5]W[fo]WL[30];B[gn]BL[2352.06];OW[5]W[lr]WL[30]
+;B[ej]BL[2322.05];OW[4]W[fj]WL[30];B[ek]BL[2296.62];OW[4]W[ei]WL[30];B[aq]BL[2284.74]
+;OW[4]W[ar]WL[30];B[ao]BL[2282.57];OW[4]W[cr]WL[30];B[gs]BL[2270.42];OW[4]W[fs]
+WL[30];B[is]BL[2269.01];OW[4]W[kr]WL[30];B[iq]BL[2221.85];OW[4]W[hq]WL[30];B[ec]
+BL[2178.16];OW[4]W[dc]WL[30];B[mo]BL[2105.82];OW[4]W[no]WL[30];B[mq]BL[2088.29]
+;OW[4]W[kq]WL[30];B[jq]BL[2079.68];OW[4]W[lp]WL[30];B[ko]BL[2070.22];OW[4]W[fa]
+WL[30];B[gb]BL[2067.6];OW[4]W[ga]WL[30];B[ha]BL[2066.28];OW[4]W[ea]WL[30];B[hb]
+BL[2061.42];OW[4]W[ig]WL[30];B[if]BL[2059.08];OW[4]W[og]WL[30];B[jg]BL[2034.38]
+;OW[4]W[ri]WL[30];B[pg]BL[2025.5];OW[4]W[qj]WL[30];B[fr]BL[2016.61];OW[4]W[es]WL[30]
+;B[qi]BL[2014.61];OW[4]W[ph]WL[30];B[qj]BL[1985.04];OW[4]W[qg]WL[30];B[pf]BL[1982.24]
+;OW[4]W[si]WL[30];B[nj]BL[1976.26];OW[4]W[ni]WL[30];B[dk]BL[1940.44];OW[4]W[gl]
+WL[30];B[gm]BL[1931.29];OW[4]W[cl]WL[30];B[bm]BL[1919.48];OW[4]W[ci]WL[30];B[ln]
+BL[1906.63];OW[4]W[sj]WL[30];B[sk]BL[1904.18];OW[4]W[po]WL[30];B[qo]BL[1896.73]
+;OW[4]W[oe]WL[30];B[pe]BL[1872.47];OW[4]W[la]WL[30];B[pp]BL[1844.54];OW[4]W[oo]
+WL[30];B[ks]BL[1838.94];OW[4]W[ls]WL[30];B[dl]BL[1829.14];OW[4]W[ka]WL[30];B[ja]
+BL[1825.54];OW[4]W[js]WL[30];B[er]BL[1814.22];OW[4]W[ds]WL[30];B[ks]BL[1812.59]
+;OW[4]W[jj]WL[30];B[jh]BL[1802.58];OW[4]W[js]WL[30];B[eo]BL[1799.3];OW[4]W[do]WL[30]
+;B[ks]BL[1796.84];OW[4]W[il]WL[30];B[hm]BL[1789.47];OW[4]W[js]WL[30];B[dr]BL[1784.77]
+;OW[4]W[cs]WL[30];B[ks]BL[1782.94]C[tible [-\]\: estimator says W+14.5
+];OW[4]W[pm]
+WL[30];B[qm]BL[1774.87];OW[4]W[js]WL[30];B[ca]BL[1767.72];OW[4]W[ba]WL[30];B[ks]
+BL[1765.63];OW[4]W[ol]WL[30];B[om]BL[1763.27];OW[4]W[js]WL[30];B[di]BL[1750.74]
+;OW[4]W[dh]WL[30];B[ks]BL[1747.12];OW[4]W[ol]WL[30];B[pl]BL[1742.59];OW[4]W[js]
+WL[30];B[cj]BL[1709.25];OW[4]W[bj]WL[30];B[ks]BL[1707.2];OW[4]W[rk]WL[30];B[rl]
+BL[1703.85];OW[4]W[js]WL[30];B[br]BL[1691.32];OW[4]W[bs]WL[30];B[ks]BL[1689.5];OW[4]
+W[sl]WL[30];B[sm]BL[1685.66];OW[4]W[js]WL[30];B[ns]BL[1680.93];OW[4]W[nr]WL[30]
+;B[ks]BL[1678.76]C[tible [-\]\: last KO threat? \:)
+];OW[3]W[jn]WL[30]C[tible [-\]\: obviously not 
+]
+;B[kn]BL[1599.73];OW[3]W[js]WL[30];B[ep]BL[1596.57]C[tible [-\]\: nice one
+];OW[2]
+W[fp]WL[30];B[ks]BL[1592.68];OW[1]W[jo]WL[30];B[jm]BL[1582.88];OW[1]W[js]WL[30]
+;B[dq]BL[1578.9];OW[1]W[dp]WL[30];B[ks]BL[1576.12];OW[1]W[in]WL[30];B[hn]BL[1573.86]
+;OW[1]W[js]WL[30];B[rh]BL[1572.41];OW[1]W[sh]WL[30];B[ks]BL[1570.11];OW[1]W[fk]
+WL[30];B[js]BL[1555.41];OW[1]W[]WL[30];B[]BL[1555.41]TB[rc][sn][ia][qa][ra][sa]
+[ib][qb][rb][sb][gc][hc][pc][qc][sc][gd][hd][qd][rd][sd][he][ie][qe][hf][nk][pk]
+[rk][el][il][jl][ol][sl][am][im][pm][rm][bn][in][jn][rn][jo][ro][so][rp][sp][qq]
+[rq][sq][rr][sr][rs][ss]TW[bd][aa][ca][ma][ab][bb][db][mb][ac][bc][lc][ad][cd][ns]
+[ld][md][ae][be][ce][ee][me][af][bf][df][ag][bg][cg][ah][bh][ch][rh][ai][di][fi]
+[hi][cj][gj][hj][eo][ep][np][cq][dq][fq][gq][lq][mq][br][dr][er][fr][as][ms]C[goodstyle [2k\]\: thxs james
+jameshut [9d?\]\: thanks Michael
+tible [-\]\: very nice game 
+jameshut [9d?\]\: Nice game
+jameshut [9d?\]\: I thought it was closer
+tible [-\]\: james! 9d?!?!?
+jameshut [9d?\]\: must practise my counting
+goodstyle [2k\]\: tible u want to start a game?
+goodstyle [2k\]\: same
+jameshut [9d?\]\: 9dan lol
+tible [-\]\: do you want a break or something?
+goodstyle [2k\]\: u moving up!!
+goodstyle [2k\]\: 30mins?
+tible [-\]\: yes \:)
+tible [-\]\: back here 15\:30?
+goodstyle [2k\]\: 15\:30
+tible [-\]\: good
+goodstyle [2k\]\: yep
+tible [-\]\: Thanks!
+jameshut [9d?\]\: cu later guys
+goodstyle [2k\]\: right see u in a bit
+tible [-\]\: later james
+tible [-\]\: take a screenshot
+jameshut [9d?\]\: \:-)
+tible [-\]\: \:)
+])

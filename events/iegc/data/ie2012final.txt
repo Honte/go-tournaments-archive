@@ -1,0 +1,10 @@
+; CL[A]
+; EV[Irish Championship Final]
+; PC[IE, KGS]
+; DT[2012-11-17,2012-11-24]
+; HA[h9]
+; KM[6.5]
+;.
+;
+1 Pszonka Roman      3d IE  Dubl  2    0    0    0       2+/w   2+/b    |10874842
+2 Hutchinson James   1d UK  Belf  0    0    0    0       1-/b   1-/w    |14850187

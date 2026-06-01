@@ -29,28 +29,28 @@ stages:
       - - kh-ls kh:B+R sgf:2016/2016-1-khabu-lsoldan.sgf ogs:https://online-go.com/review/177210
         - kg-mm kg:B+R sgf:2016/2016-1-kgrabowski-mmajka.sgf ogs:https://online-go.com/review/177212
         - sf-gie sf:B+29.5 sgf:2016/2016-1-sfrejlak-kgiedrojc.sgf ogs:https://online-go.com/review/177213
-        - ms-mw ms:B+R sgf:2016/2016-1-msurma-mwalaszewski.sgf ogs:https://online-go.com/review/177211
-      - - ls-kg ls:B+R sgf:2016/2016-2-lsoldan-kgrabowski.sgf ogs:https://online-go.com/review/177393
-        - mm-kh kh:W+R sgf:2016/2016-2-mmajka-khabu.sgf ogs:https://online-go.com/review/177392
-        - gie-ms ms:W+22.5 sgf:2016/2016-2-kgiedrojc-msurma.sgf ogs:https://online-go.com/review/177396
+        - ms-mw ms:B+R sgf:2016/2016-1-msurma-mwalaszewski.sgf rotate:90 ogs:https://online-go.com/review/177211
+      - - ls-kg ls:B+R sgf:2016/2016-2-lsoldan-kgrabowski.sgf rotate:90 ogs:https://online-go.com/review/177393
+        - mm-kh kh:W+R sgf:2016/2016-2-mmajka-khabu.sgf rotate:270 ogs:https://online-go.com/review/177392
+        - gie-ms ms:W+22.5 sgf:2016/2016-2-kgiedrojc-msurma.sgf rotate:90 ogs:https://online-go.com/review/177396
         - mw-sf sf:W+R sgf:2016/2016-2-mwalaszewski-sfrejlak.sgf ogs:https://online-go.com/review/177395
-      - - sf-ls ls:W+2.5 sgf:2016/2016-3-sfrejlak-lsoldan.sgf ogs:https://online-go.com/review/177441
-        - ms-mm ms:B+R sgf:2016/2016-3-msurma-mmajka.sgf ogs:https://online-go.com/review/177440
+      - - sf-ls ls:W+2.5 sgf:2016/2016-3-sfrejlak-lsoldan.sgf rotate:90 ogs:https://online-go.com/review/177441
+        - ms-mm ms:B+R sgf:2016/2016-3-msurma-mmajka.sgf rotate:90 ogs:https://online-go.com/review/177440
         - kh-gie kh:B+R sgf:2016/2016-3-khabu-kgiedrojc.sgf ogs:https://online-go.com/review/177444
-        - kg-mw mw:W+R sgf:2016/2016-3-kgrabowski-mwalaszewski.sgf ogs:https://online-go.com/review/177442
-      - - ls-ms ms:W+R sgf:2016/2016-4-lsoldan-msurma.sgf ogs:https://online-go.com/review/177613
+        - kg-mw mw:W+R sgf:2016/2016-3-kgrabowski-mwalaszewski.sgf rotate:90 ogs:https://online-go.com/review/177442
+      - - ls-ms ms:W+R sgf:2016/2016-4-lsoldan-msurma.sgf rotate:90 ogs:https://online-go.com/review/177613
         - mm-sf mm:B+R sgf:2016/2016-4-mmajka-sfrejlak.sgf ogs:https://online-go.com/review/177614
         - gie-kg kg:W+5.5 sgf:2016/2016-4-kgiedrojc-kgrabowski.sgf ogs:https://online-go.com/review/177616
         - mw-kh kh:W+R sgf:2016/2016-4-mwalaszewski-khabu.sgf ogs:https://online-go.com/review/177615
-      - - sf-kg sf:B+R sgf:2016/2016-5-sfrejlak-kgrabowski.sgf ogs:https://online-go.com/review/177669
+      - - sf-kg sf:B+R sgf:2016/2016-5-sfrejlak-kgrabowski.sgf rotate:270 ogs:https://online-go.com/review/177669
         - ms-kh ms:B+R sgf:2016/2016-5-msurma-khabu.sgf ogs:https://online-go.com/review/177670
         - mm-gie mm:B+R sgf:2016/2016-5-mmajka-kgiedrojc.sgf ogs:https://online-go.com/review/177671
         - ls-mw ls:B+R sgf:2016/2016-5-lsoldan-mwalaszewski.sgf ogs:https://online-go.com/review/177672
-      - - kg-ms ms:W+R sgf:2016/2016-6-kgrabowski-msurma.sgf ogs:https://online-go.com/review/177852
+      - - kg-ms ms:W+R sgf:2016/2016-6-kgrabowski-msurma.sgf rotate:270 ogs:https://online-go.com/review/177852
         - kh-sf sf:W+R sgf:2016/2016-6-khabu-sfrejlak.sgf ogs:https://online-go.com/review/177851
         - gie-ls ls:W+R sgf:2016/2016-6-kgiedrojc-lsoldan.sgf ogs:https://online-go.com/review/177850
         - mw-mm mm:W+R sgf:2016/2016-6-mwalaszewski-mmajka.sgf ogs:https://online-go.com/review/177848
-      - - ms-sf ms:B+R sgf:2016/2016-7-msurma-sfrejlak.sgf ogs:https://online-go.com/review/177895
+      - - ms-sf ms:B+R sgf:2016/2016-7-msurma-sfrejlak.sgf rotate:270 ogs:https://online-go.com/review/177895
         - kg-kh kh:W+R sgf:2016/2016-7-kgrabowski-khabu.sgf ogs:https://online-go.com/review/177899
         - ls-mm mm:W+R sgf:2016/2016-7-lsoldan-mmajka.sgf ogs:https://online-go.com/review/177901
         - gie-mw mw:W+R sgf:2016/2016-7-kgiedrojc-mwalaszewski.sgf ogs:https://online-go.com/review/177900

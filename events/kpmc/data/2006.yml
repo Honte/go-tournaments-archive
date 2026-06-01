@@ -3,7 +3,7 @@ stages:
   - type: tournament
     file: kpmc2006.txt
     time: 60min + 3x30s japanese
-    komi: 6.5    
+    komi: 6.5
     scoringColumns:
       - mms
       - wins
@@ -14,3 +14,31 @@ stages:
       - sos
       - sosos
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:4 sgf:2006/4-UTongHa-HuYuqing.sgf
+      - 1-6 1:B+11.5 round:6 sgf:2006/6-UTongHa-ChenHsienHsu.sgf
+      - 1-7 1:B+R round:2 sgf:2006/2-UTongHa-ShikshinIlja.sgf
+      - 1-9 1:B+R round:8 sgf:2006/8-UTongHa-LuiEric.sgf
+      - 1-14 1:B+23.5 round:3 sgf:2006/3-UTongHa-GroenenGeert.sgf
+      - 2-4 2:B+T round:8 sgf:2006/8-HuYuqing-HiraokaSatoshi.sgf
+      - 2-8 2:B+R round:7 sgf:2006/7-HuYuqing-BaloghPal.sgf
+      - 3-2 2:W+12.5 round:6 sgf:2006/6-NohYongDuck-HuYuqing.sgf
+      - 3-5 3:B+R round:4 sgf:2006/4-NohYongDuck-GeYongfei.sgf
+      - 3-6 3:B+268 round:8 sgf:2006/8-NohYongDuck-ChenHsienHsu.sgf
+      - 4-1 4:B+6.5 round:7 sgf:2006/7-HiraokaSatoshi-UTongHa.sgf
+      - 4-15 4:B+R round:5 sgf:2006/5-HiraokaSatoshi-TsangTung.sgf
+      - 5-1 1:W+R round:5 sgf:2006/5-GeYongfei-UTongHa.sgf
+      - 5-8 5:B+R round:3 sgf:2006/3-GeYongfei-BaloghPal.sgf
+      - 5-14 5:B+R round:7 sgf:2006/7-GeYongfei-GroenenGeert.sgf
+      - 6-11 6:B+4.5 round:5 sgf:2006/5-ChenHsienHsu-PopCristian.sgf
+      - 6-22 6:B+R round:2 sgf:2006/2-ChenHsienHsu-DeSouzaAlexandre.sgf
+      - 7-5 7:B+1.5 round:8 sgf:2006/8-ShikshinIlja-GeYongfei.sgf
+      - 7-6 6:W+15.5 round:7 sgf:2006/7-ShikshinIlja-ChenHsienHsu.sgf
+      - 7-10 10:W+R round:4 sgf:2006/4-ShikshinIlja-SiltOndrej.sgf
+      - 8-14 14:W+R round:4 sgf:2006/4-BaloghPal-GroenenGeert.sgf
+      - 12-5 5:W+10.5 round:6 sgf:2006/6-ZhangXiang-GeYongfei.sgf
+      - 14-2 2:W+R round:5 sgf:2006/5-GroenenGeert-HuYuqing.sgf
+      - 14-4 14:B+R round:2 sgf:2006/2-GroenenGeert-HiraokaSatoshi.sgf
+      - 15-2 2:W+R round:2 sgf:2006/2-TsangTung-HuYuqing.sgf
+      - 17-4 4:W+R round:6 sgf:2006/6-FaridBenMalek-HiraokaSatoshi.sgf
+      - 26-12 12:W+R round:3 sgf:2006/3-SchniderGert-ZhangXiang.sgf

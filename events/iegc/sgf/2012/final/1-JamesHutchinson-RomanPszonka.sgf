@@ -1,0 +1,65 @@
+(;CA[utf-8]ST[2]RU[Japanese]OT[10/300 Canadian]GM[1]AP[CGoban:3]SZ[19]FF[4]EV[IE 2012 Final]
+RO[1]DT[2012-11-17]PC[The KGS Go Server at http\://www.gokgs.com/]PB[James Hutchinson]
+BR[2k]PW[Roman Pszonka]WR[3d]KM[6.5]TM[5400]RE[W+Resign]MULTIGOGM[1]
+;B[pd]BL[5395.37]C[jameshut [2k?\]\: IGA final
+roman361 [3d?\]\: have a good game
+jameshut [2k?\]\: enjoy the game
+roman361 [3d?\]\: IGA final 
+]
+;W[dp]WL[5371.21];B[cd]BL[5385.59];W[pp]WL[5333.68];B[cn]BL[5374.58];W[fp]WL[5311.04]
+;B[dj]BL[5366.61];W[qf]WL[5299.87];B[nd]BL[5347.17];W[ed]WL[5261.42];B[hd]BL[5332.88]
+;W[df]WL[5109.86];B[ee]BL[5225.8];W[de]WL[5095.42];B[dd]BL[5221.53];W[fe]WL[5092.11]
+;B[ec]BL[5218.05];W[ef]WL[5090.71];B[fc]BL[5214.93];W[pj]WL[5078.65];B[nq]BL[5128.64]
+;W[lq]WL[5018.91];B[qq]BL[5117.8];W[qp]WL[4987.39];B[pq]BL[5110.35];W[op]WL[4984.86]
+;B[nr]BL[5103.54];W[mo]WL[4982.28];B[qh]BL[4918.57];W[qj]WL[4872.89];B[qe]BL[4856.87]
+;W[pf]WL[4861.18];B[rf]BL[4853.57];W[rg]WL[4840.13];B[re]BL[4850.44];W[rh]WL[4807.42]
+;B[jq]BL[4709.39];W[lp]WL[4764.66];B[ho]BL[4483.01];W[rq]WL[4758.5];B[rr]BL[4476.79]
+;W[rp]WL[4755.21];B[sr]BL[4475.13];W[fn]WL[4743.41];B[bp]BL[4312];W[cq]WL[4730.96]
+;B[dl]BL[4306.19];W[hq]WL[4725.75];B[ks]BL[4119.07];W[ms]WL[4689.19];B[mr]BL[4088.5]
+;W[lr]WL[4686.43];B[ls]BL[4079.52];W[kr]WL[4683.92];B[js]BL[4067.97];W[jr]WL[4681.35]
+;B[is]BL[4060.01];W[hs]WL[4660.21];B[ns]BL[4043.01];W[ir]WL[4657.24];B[lk]BL[3915.4]
+;W[mg]WL[4624.02];B[jk]BL[3809.84];W[gk]WL[4619.84];B[ki]BL[3640.65];W[kg]WL[4589.24]
+;B[hj]BL[3571.44];W[gj]WL[4580.87];B[ih]BL[3547.65];W[if]WL[4572.32];B[gi]BL[3533.93]
+;W[fi]WL[4526.99];B[hk]BL[3363.89];W[gh]WL[4519.59];B[km]BL[3233.69];W[ml]WL[4513.56]
+;B[mk]BL[3223.91];W[nl]WL[4511.38];B[im]BL[3046.34];W[hi]WL[4499.79];B[ii]BL[3034.19]
+;W[lc]WL[4485.42];B[mc]BL[2914.49];W[ld]WL[4450.55];B[mb]BL[2830.65];W[ci]WL[4424.97]
+;B[cj]BL[2798];W[bj]WL[4422.17];B[bk]BL[2768.48];W[bi]WL[4416.38];B[bq]BL[2686.36]
+;W[br]WL[4410.24];B[cp]BL[2682.88];W[dq]WL[4403.59];B[bf]BL[2677.62];W[di]WL[4383.93]
+;B[ni]BL[2422.26];W[nk]WL[4342.94];B[mi]BL[2406.35];W[jn]WL[4287.73];B[jm]BL[2359.05]
+;W[ic]WL[4253.41];B[hc]BL[2321.19];W[ib]WL[4243.85];B[hb]BL[2312.83];W[ha]WL[4225.73]
+;B[ga]BL[2256.17];W[ia]WL[4210.51];B[gb]BL[2252.89];W[id]WL[4202.43];B[kb]BL[2246.78]
+;W[lb]WL[4199.4];B[la]BL[2243.79];W[oe]WL[4192.68];B[od]BL[2153.79];W[aq]WL[4132.45]
+;B[ap]BL[2136.38];W[ar]WL[4124.17];B[do]BL[2080.44];W[eo]WL[4119.61];B[dm]BL[2029.25]
+;W[ll]WL[4059.09];B[kl]BL[2017.48];W[jo]WL[4043.29];B[io]BL[1850.02];W[hl]WL[4020.96]
+;B[hm]BL[1831.1];W[gl]WL[3987.09];B[il]BL[1820.44];W[oh]WL[3971.66];B[oi]BL[1779.5]
+;W[pi]WL[3952.76];B[me]BL[1747.32];W[he]WL[3916.53];B[le]BL[1667.48];W[ke]WL[3906.91]
+;B[kc]BL[1658.51];W[kd]WL[3903.7];B[ms]BL[1613.3];W[ak]WL[3851.9];B[bl]BL[1609.42]
+;W[al]WL[3847.93];B[am]BL[1588.08];W[aj]WL[3844.62];B[bm]BL[1586.92];W[bg]WL[3825.35]
+;B[cf]BL[1568.05];W[oq]WL[3820.64];B[or]BL[1565.21];W[ce]WL[3816.9];B[be]BL[1559.84]
+;W[cg]WL[3815.55];B[oj]BL[1552.54];W[ok]WL[3810.14];B[hg]BL[1527.49];W[gd]WL[3788.42]
+;B[gg]BL[1519.45];W[fg]WL[3784.47];B[ej]BL[1512.19];W[ne]WL[3747.38];B[md]BL[1509.4]
+;W[mf]WL[3745.38];B[nh]BL[1494.18];W[ng]WL[3731.87];B[ln]BL[1471.89];W[ip]WL[3707.09]
+;B[mn]BL[1462.66];W[nn]WL[3704.64];B[gp]BL[1446.89];W[gq]WL[3699.82];B[lo]BL[1433.45]
+;W[no]WL[3668.37];B[ko]BL[1414.25];W[jp]WL[3469.73];B[ei]BL[1404.11];W[eh]WL[3465.99]
+;B[gf]BL[1330.42];W[ge]WL[3437.63];B[lf]BL[1301.02];W[lg]WL[3395.58];B[kp]BL[1264.84]
+;W[gc]WL[3357.65];B[eb]BL[1139.92];W[af]WL[3301.91];B[bd]BL[1133.37];W[jh]WL[3210.27]
+;B[ji]BL[1088.43];W[hh]WL[3161.99];B[ig]BL[1084.41];W[jg]WL[3152.41];B[kf]BL[1079.42]
+;W[jf]WL[3150.56];B[kq]BL[978.358];W[pe]WL[2954.24];B[qc]BL[722.195];W[sf]WL[2890.73]
+;B[se]BL[718.467];W[sg]WL[2888.82];B[ae]BL[716.361];W[ag]WL[2885.49];B[mm]BL[709.951]
+;W[nm]WL[2882];B[lh]BL[698.252];W[mh]WL[2876.32];B[nj]BL[671.933];W[kh]WL[2871.41]
+;B[li]BL[669.735];W[jc]WL[2778.71];B[je]BL[640.149];W[jd]WL[2755.79];B[sq]BL[634.038]
+;W[sp]WL[2752.67];B[fd]BL[570.879];W[em]WL[2689.04];B[el]BL[556.869];W[dn]WL[2641.48]
+;B[en]BL[550.998];W[fb]WL[2619.07];B[fa]BL[541.843];W[dn]WL[2616.31];B[qg]BL[494.202]
+;W[co]WL[2587.34];B[ri]BL[482.178];W[bn]WL[2584.13]C[jameshut [2k?\]\: thanks Roman
+jameshut [2k?\]\: well played
+roman361 [3d?\]\: thanks
+jameshut [2k?\]\: do you know about next weekend yet?
+roman361 [3d?\]\: yeah, I'm free, 10am would be good time to start
+roman361 [3d?\]\: on Saturday
+jameshut [2k?\]\: ok greta
+jameshut [2k?\]\: yep
+jameshut [2k?\]\: I should be fit to make that
+roman361 [3d?\]\: ok, good 
+jameshut [2k?\]\: cu then
+roman361 [3d?\]\: cu
+])

@@ -1,0 +1,11 @@
+stages:
+ - type: classification
+   order:
+   - Noel Mitchell
+   - Stephen Flinter
+   - Paul Donnelly
+   - Chris Rafferty
+   - John Gibson
+   - Brian Gallagher
+   - Aidan Walsh
+   - Bernard Palmer

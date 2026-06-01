@@ -1,0 +1,37 @@
+top:
+  - prenaut
+  - xlu
+  - jcourtney
+stages:
+  - type: tournament
+    file: ie2024.txt
+    name: top8
+    notes: double ladder
+    dir: 2024/top8
+    promoted: 2
+    scoringColumns:
+      - wins
+      - place
+      - null
+      - null
+    breakers:
+      - place
+    findSharedPlaces: true
+    games:
+      - 3-1 1:W+8.5 round:5 sgf:2024/top8/5-JohnCourtney-PhilippeRenaut.sgf ogs:https://online-go.com/game/62953992
+  - type: tournament
+    file: ie2024final.txt
+    name: Final
+    dir: 2024/final
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:3 sgf:2024/final/3-PhilippeRenaut-XinqunLu.sgf ogs:https://online-go.com/game/63842506
+      - 1-2 2:W+R round:2 sgf:2024/final/2-PhilippeRenaut-XinqunLu.sgf ogs:https://online-go.com/game/63634273
+      - 2-1 1:W+R round:1 sgf:2024/final/1-XinqunLu-PhilippeRenaut.sgf ogs:https://online-go.com/game/63486847

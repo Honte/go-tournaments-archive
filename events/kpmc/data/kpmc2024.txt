@@ -62,7 +62,7 @@
 50 Hu Lilly                            1k AT  Go7   2    20   149  24-/b   39-/b   57+/w   37-/w   54+/b   28-/w   43-/w    |19737641
 51 Kaaden James                        3d AU  xxxx  2    19   147  34-/w   59+/b   30-/w   33-/b   40-/b   54+/w   37-/w    |20649640
 52 Wijaya Wiliam                       2k ID  xxxx  2    18   145  27-/b   54-/w   59+/w   48+/b   35-/b   40-/w   39-/w    |20650641
-53 Camargo Paulo                       5k BR  xxxx  2    18   144  25-/w   60+/b   35-/b   22-/b   45-/w   41-/w   58+/w    |19613913
+53 Camargo Paulo                       5k BR  xxxx  2    18   144  25-/w   60+/b   35-/b   22-/b   45-/w   41-/w   58+/b    |19613913
 54 Azuaje Manuel                       1d VE  xxxx  2    17   146  6-/w    52+/b   34-/b   42-/w   50-/w   51-/b   60+/b    |14349753
 55 Baratbaev Ilim                      2k KG  Seng  2    17   142  20-/b   48-/w   29-/w   49-/b   59+/w   58+/b   46-/w    |19733758
 56 Basinang Sunshine                   5k PH  xxxx  2    16   139  35-/w   45-/b   60+/b   38-/w   36-/b   43-/w   59+/b    |20662642

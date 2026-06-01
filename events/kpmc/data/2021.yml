@@ -4,8 +4,8 @@ stages:
     file: kpmc2021.txt
     time: 60min + 3x30s japanese
     notes:
-     en: Groups of 4 - rounds 1-3, Knock Out 32 - rounds 4-8
-     pl: Grupy po 4 graczy - rundy 1-3, Knock out 32 - rundy 4-8     
+      en: Groups of 4 - rounds 1-3, Knock Out 32 - rounds 4-8
+      pl: Grupy po 4 graczy - rundy 1-3, Knock out 32 - rundy 4-8
     komi: 6.5
     scoringColumns:
       - null
@@ -14,3 +14,100 @@ stages:
     breakers:
       - place
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+1.5 round:8 sgf:2021/8-KimSeungGu-HuangQiuxuan.sgf
+      - 1-12 1:B+R round:2 sgf:2021/2-KimSeungGu-FragmanAmir.sgf
+      - 1-47 1:B+R round:1 sgf:2021/1-KimSeungGu-EngelenGints.sgf
+      - 2-4 2:B+R round:7 sgf:2021/7-HuangQiuxuan-ChernykhAnton.sgf
+      - 2-6 2:B+15.5 round:6 sgf:2021/6-HuangQiuxuan-TengJustin.sgf
+      - 2-18 2:B+R round:4 sgf:2021/4-HuangQiuxuan-ChungChunChen.sgf
+      - 2-26 2:B+R round:2 sgf:2021/2-HuangQiuxuan-SchlattnerFrederic.sgf
+      - 3-1 1:W+R round:7 sgf:2021/7-SornarraPongsakarn-KimSeungGu.sgf
+      - 3-7 3:B+23.5 round:6 sgf:2021/6-SornarraPongsakarn-XieKaikun.sgf
+      - 3-19 3:B+R round:4 sgf:2021/4-SornarraPongsakarn-NakhiengchanhBounmy.sgf
+      - 4-12 4:B+20.5 round:5 sgf:2021/5-ChernykhAnton-FragmanAmir.sgf
+      - 4-20 4:B+R round:4 sgf:2021/4-ChernykhAnton-KaradabanDenis.sgf
+      - 4-39 4:B+R round:2 sgf:2021/2-ChernykhAnton-MajkaMarcin.sgf
+      - 4-55 4:B+R round:1 sgf:2021/1-ChernykhAnton-RakotondrabeDimbyMizan.sgf
+      - 5-1 1:W+R round:6 sgf:2021/6-ChanYiTien-KimSeungGu.sgf
+      - 5-13 5:B+3.5 round:5 sgf:2021/5-ChanYiTien-YoungWoonPark.sgf
+      - 6-14 6:B+T round:5 sgf:2021/5-TengJustin-HanevikHeming.sgf
+      - 6-41 6:B+R round:3 sgf:2021/3-TengJustin-MayerLisa.sgf
+      - 6-57 6:B+44.5 round:2 sgf:2021/2-TengJustin-CarterDylan.sgf
+      - 7-10 10:W+R round:1 sgf:2021/1-XieKaikun-MorikawaShunji.sgf
+      - 7-15 7:B+0.5 round:5 sgf:2021/5-XieKaikun-KrumlOndrej.sgf
+      - 7-62 7:B+2.5 round:2 sgf:2021/2-XieKaikun-KoncsekBarna.sgf
+      - 8-4 4:W+12.5 round:6 sgf:2021/6-SavolainenJavierAleksi-ChernykhAnton.sgf
+      - 8-25 8:B+7.5 round:1 sgf:2021/1-SavolainenJavierAleksi-MettaCarlo.sgf
+      - 8-36 8:B+R round:2 sgf:2021/2-SavolainenJavierAleksi-NederveenGerard.sgf
+      - 9-1 1:W+21.5 round:5 sgf:2021/5-PhamMinhQuang-KimSeungGu.sgf
+      - 9-19 9:B+R round:2 sgf:2021/2-PhamMinhQuang-NakhiengchanhBounmy.sgf
+      - 9-33 9:B+R round:1 sgf:2021/1-PhamMinhQuang-CarmonaPedro.sgf
+      - 10-2 2:W+R round:5 sgf:2021/5-MorikawaShunji-HuangQiuxuan.sgf
+      - 10-27 10:B+R round:4 sgf:2021/4-MorikawaShunji-HutchinsonJames.sgf
+      - 11-3 3:W+R round:5 sgf:2021/5-DobranisDenis-SornarraPongsakarn.sgf
+      - 11-30 11:B+45.5 round:1 sgf:2021/1-DobranisDenis-ZeriouhiTarik.sgf
+      - 12-63 63:W+R round:1 sgf:2021/1-FragmanAmir-MelchertJulio.sgf
+      - 13-24 13:B+R round:1 sgf:2021/1-YoungWoonPark-MestrovicStjepan.sgf
+      - 13-44 13:B+R round:2 sgf:2021/2-YoungWoonPark-SmolarikPeter.sgf
+      - 14-31 31:W+T round:2 sgf:2021/2-HanevikHeming-WeltickeJonas.sgf
+      - 14-32 14:B+T round:4 sgf:2021/4-HanevikHeming-LeeScottSamuel.sgf
+      - 15-43 15:B+R round:2 sgf:2021/2-KrumlOndrej-PerezJamettJorgeWilson.sgf
+      - 16-8 8:W+25.5 round:5 sgf:2021/5-HalimEdwin-SavolainenJavierAleksi.sgf
+      - 17-1 1:W+8.5 round:4 sgf:2021/4-TanJiaCheng-KimSeungGu.sgf
+      - 17-34 17:B+R round:2 sgf:2021/2-TanJiaCheng-MercadoSanchezMario.sgf
+      - 17-50 17:B+R round:1 sgf:2021/1-TanJiaCheng-JanzaJanez.sgf
+      - 18-3 3:W+R round:2 sgf:2021/2-ChungChunChen-SornarraPongsakarn.sgf
+      - 18-56 18:B+24.5 round:1 sgf:2021/1-ChungChunChen-RavjirTungalag.sgf
+      - 19-49 19:B+R round:1 sgf:2021/1-NakhiengchanhBounmy-AndreyukAndrew.sgf
+      - 20-16 20:B+R round:2 sgf:2021/2-KaradabanDenis-HalimEdwin.sgf
+      - 20-38 20:B+R round:1 sgf:2021/1-KaradabanDenis-SatkusSimonas.sgf
+      - 21-12 12:W+8.5 round:4 sgf:2021/4-GudmundssonHallbjorn-FragmanAmir.sgf
+      - 21-39 39:W+R round:1 sgf:2021/1-GudmundssonHallbjorn-MajkaMarcin.sgf
+      - 22-6 22:B+9.5 round:1 sgf:2021/1-MalcokKaan-TengJustin.sgf
+      - 22-7 7:W+14.5 round:4 sgf:2021/4-MalcokKaan-XieKaikun.sgf
+      - 22-41 22:B+R round:2 sgf:2021/2-MalcokKaan-MayerLisa.sgf
+      - 23-5 5:W+R round:4 sgf:2021/4-WongHoward-ChanYiTien.sgf
+      - 23-58 23:B+R round:2 sgf:2021/2-WongHoward-SrivastavaPranjal.sgf
+      - 24-6 6:W+R round:4 sgf:2021/4-MestrovicStjepan-TengJustin.sgf
+      - 24-60 60:W+25.5 round:2 sgf:2021/2-MestrovicStjepan-MathiesenMikkelKragh.sgf
+      - 25-8 8:W+R round:4 sgf:2021/4-MettaCarlo-SavolainenJavierAleksi.sgf
+      - 25-52 25:B+R round:2 sgf:2021/2-MettaCarlo-SalernoLuciano.sgf
+      - 26-15 15:W+R round:4 sgf:2021/4-SchlattnerFrederic-KrumlOndrej.sgf
+      - 27-5 27:B+R round:2 sgf:2021/2-HutchinsonJames-ChanYiTien.sgf
+      - 27-61 27:B+83.5 round:1 sgf:2021/1-HutchinsonJames-WongChunKangVictor.sgf
+      - 28-9 9:W+R round:4 sgf:2021/4-JacimovicMihailo-PhamMinhQuang.sgf
+      - 28-15 15:W+R round:1 sgf:2021/1-JacimovicMihailo-KrumlOndrej.sgf
+      - 29-11 11:W+R round:4 sgf:2021/4-OvsiienkoVsevolod-DobranisDenis.sgf
+      - 29-23 29:B+T round:1 sgf:2021/1-OvsiienkoVsevolod-WongHoward.sgf
+      - 30-16 16:W+34.5 round:4 sgf:2021/4-ZeriouhiTarik-HalimEdwin.sgf
+      - 30-37 30:B+R round:3 sgf:2021/3-ZeriouhiTarik-JorgeMurillo.sgf
+      - 30-53 30:B+R round:2 sgf:2021/2-ZeriouhiTarik-AzarconVinceGerald.sgf
+      - 31-13 13:W+R round:4 sgf:2021/4-WeltickeJonas-YoungWoonPark.sgf
+      - 32-34 34:W+R round:1 sgf:2021/1-LeeScottSamuel-MercadoSanchezMario.sgf
+      - 32-50 32:B+R round:2 sgf:2021/2-LeeScottSamuel-JanzaJanez.sgf
+      - 35-14 14:W+10.5 round:1 sgf:2021/1-StoehrMarc-HanevikHeming.sgf
+      - 35-51 35:B+R round:2 sgf:2021/2-StoehrMarc-EscobarEdgarIvan.sgf
+      - 36-52 36:B+R round:1 sgf:2021/1-NederveenGerard-SalernoLuciano.sgf
+      - 37-11 11:W+R round:2 sgf:2021/2-MurilloJorge-DobranisDenis.sgf
+      - 40-3 3:W+R round:1 sgf:2021/1-PurcellAnthony-SornarraPongsakarn.sgf
+      - 40-56 40:B+0.5 round:2 sgf:2021/2-PurcellAnthony-RavjirTungalag.sgf
+      - 42-29 29:W+R round:2 sgf:2021/2-ContrerasJose-OvsiienkoVsevolod.sgf
+      - 43-59 43:B+T round:1 sgf:2021/1-PerezJamettJorgeWilson-PereiraLaercio.sgf
+      - 45-5 5:W+R round:1 sgf:2021/1-ValeriaSanchez-ChanYiTien.sgf
+      - 45-61 45:B+44.5 round:2 sgf:2021/2-ValeriaSanchez-KangVictorWongChun.sgf
+      - 46-10 10:W+R round:2 sgf:2021/2-CordonetAlbert-MorikawaShunji.sgf
+      - 46-62 46:B+10.5 round:1 sgf:2021/1-CordonetAlbert-KoncsekBarna.sgf
+      - 47-63 47:B+R round:2 sgf:2021/2-EngelenGints-MelchertJulio.sgf
+      - 48-26 26:W+18.5 round:1 sgf:2021/1-FelixRamosJoseAntonio-SchlattnerFrederic.sgf
+      - 48-64 48:B+11.5 round:2 sgf:2021/2-FelixRamosJoseAntonio-TomasiniIan.sgf
+      - 49-33 33:W+3.5 round:2 sgf:2021/2-AndreyukAndrew-CarmonaPedro.sgf
+      - 51-31 31:W+R round:1 sgf:2021/1-EscobarEdgarIvan-WeltickeJonas.sgf
+      - 53-37 37:W+R round:1 sgf:2021/1-AzarconVinceGerald-JorgeMurillo.sgf
+      - 54-16 16:W+48.5 round:1 sgf:2021/1-FengPakTongMadison-HalimEdwin.sgf
+      - 54-38 38:W+21.5 round:2 sgf:2021/2-FengPakTongMadison-SatkusSimonas.sgf
+      - 55-21 21:W+R round:2 sgf:2021/2-RakotondrabeDimbyMizan-GudmundssonHallbjorn.sgf
+      - 57-41 41:W+R round:1 sgf:2021/1-CarterDylan-MayerLisa.sgf
+      - 58-42 42:W+R round:1 sgf:2021/1-SrivastavaPranjal-ContrerasJose.sgf
+      - 60-44 44:W+7.5 round:1 sgf:2021/1-MathiesenMikkelKragh-SmolarikPeter.sgf
+      - 64-2 2:W+113.5 round:1 sgf:2021/1-TomasiniIan-HuangQiuxuan.sgf

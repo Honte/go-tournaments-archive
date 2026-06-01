@@ -1,0 +1,19 @@
+; CL[A]
+; EV[Irish Championship 1999]
+; TC[T981231]
+; PC[IE,Dublin]
+; KM[5.5]
+; TM[0]
+; HA[h9]
+;                        Irish Championship 1999, Dublin
+;                              Nov 1998 - Mar 1999
+;
+;Pl     Name             Grade  Club   MM S SOS SDOS  1. 2. 3. 4. 5. 6. 7.
+  1 Mitchell Noel           2d IE Dubl  7 0   0   0   8+ 6+ 7+ 5+ 2+ 4+ 3+  |10474563
+  2 Flinter Stephen         1d IE Dubl  5 1   0   0   0+ 5+ 0+ 6+ 1- 3- 4+  |10601382
+  3 Gallagher Brian         1k IE Dubl  5 0   0   0   5+ 0+ 6+ 7+ 4- 2+ 1-  |10850257
+  4 Egan Aidan              4k IE xxx   4 0   0   0   6+ 7+ 5- 0+ 3+ 1- 2-  |12050137
+  5 Rafferty Chris          1k IE Dubl  2 0   0   0   3- 2- 4+ 1- 6- 0+ 0=  |10849256
+  6 Gibson John             2k IE Dubl  2 0   0   0   4- 1- 3- 2- 5+ 7- 0+  |10637385
+  7 Palmer Bernard          1k IE Dubl  2 0   0   0   0- 4- 1- 3- 0+ 6+ 0=  |10649386
+  8 Murphy Aidan            5k IE xxx   0 0   0   0   1- 0- 0- 0- 0- 0- 0-  |12674695

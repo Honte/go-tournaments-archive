@@ -24,7 +24,7 @@ for (const file of files) {
 
     if (fixed) {
       toFix++;
-      await writeFile(file, sgf.toString(false), 'utf-8');
+      await writeFile(file, sgf.toString(), 'utf-8');
     } else {
       noFix++;
     }

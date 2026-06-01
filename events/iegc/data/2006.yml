@@ -1,0 +1,34 @@
+top:
+  - nmitchell
+  - sflinter
+  - idavis
+website: https://www.irish-go.org/national-international/top-8/past-irish-championships/2006-irish-championship/
+stages:
+  - type: tournament
+    file: ie2006.txt
+    notes: Ka Chun Leung forfeited his games, playoff for places 2-3 and 4-5
+    dir: 2006/top8
+    promoted: 2
+    scoringColumns:
+      - wins
+      - playoff
+      - null
+      - null
+    breakers:
+      - wins
+      - playoff
+    findSharedPlaces: true
+  - type: tournament
+    file: ie2006final.txt
+    name: Final
+    dir: 2006/final
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+? round:2 sgf:2006/final/2-NoelMitchell-StephenFlinter.sgf

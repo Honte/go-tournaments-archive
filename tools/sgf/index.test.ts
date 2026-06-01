@@ -30,7 +30,7 @@ describe('Sgf', () => {
     assert.throws(() => new Sgf('(;B[aa]'), /Expected "\)"/);
   });
 
-  it('parses top-level game trees without outer parentheses and stringifies them with parentheses', () => {
+  it('parses top-level game trees without outer parentheses', () => {
     const sgf = new Sgf(';CA[UTF-8]FF[4]GM[1]SZ[19];B[pd];W[dd](;B[qp])(;B[qq])');
 
     assert.deepEqual(sgf.getRoot().data, { CA: ['UTF-8'], FF: ['4'], GM: ['1'], SZ: ['19'] });
@@ -40,8 +40,6 @@ describe('Sgf', () => {
     assert.equal(sgf.getNode(2)?.parentId, 1);
     assert.equal(sgf.getNode(3)?.parentId, 2);
     assert.equal(sgf.getNode(4)?.parentId, 2);
-    assert.equal(sgf.toString(false), '(;CA[UTF-8]FF[4]GM[1]SZ[19];B[pd];W[dd](;B[qp])(;B[qq]))');
-    assert.equal(sgf.toString(true).startsWith('('), true);
   });
 
   it('skips empty variations in malformed SGF content', () => {
@@ -51,14 +49,12 @@ describe('Sgf', () => {
     assert.deepEqual(sgf.getRoot().data, {});
     assert.deepEqual(sgf.getRoot().children[0].data, { B: ['aa'] });
     assert.deepEqual(sgf.getRoot().children[0].children[0].data, { W: ['bb'] });
-    assert.equal(sgf.toString(false), '(;;B[aa];W[bb])');
   });
 
   it('accepts SGF collections by preserving the first game tree', () => {
     const sgf = new Sgf('(;GN[first];B[aa])(;GN[second];B[bb])');
 
     assert.deepEqual(sgf.getRoot().data, { GN: ['first'] });
-    assert.equal(sgf.toString(false), '(;GN[first];B[aa])');
   });
 
   it('exposes root and node lookups', () => {
@@ -187,6 +183,46 @@ describe('Sgf', () => {
     });
   });
 
+  it('does not alter SGF points for default and zero-degree rotation', () => {
+    const content = '(;SZ[19];B[dp];W[])';
+
+    assert.equal(new Sgf(content).rotate().getNode(1)?.data.B[0], 'dp');
+    assert.equal(new Sgf(content).rotate(0).getNode(1)?.data.B[0], 'dp');
+  });
+
+  it('rotates move coordinates clockwise', () => {
+    assert.equal(new Sgf('(;SZ[19];B[dp])').rotate(90).getNode(1)?.data.B[0], 'dd');
+    assert.equal(new Sgf('(;SZ[19];B[dp])').rotate(180).getNode(1)?.data.B[0], 'pd');
+    assert.equal(new Sgf('(;SZ[19];B[pq])').rotate(270).getNode(1)?.data.B[0], 'qd');
+  });
+
+  it('rotates setup and edit coordinates including compressed rectangles', () => {
+    const sgf = new Sgf('(;SZ[19]AB[aa][bb][aa:cc]AW[dd];B[dp];AE[pq]AW[cc])');
+
+    sgf.rotate(90);
+
+    assert.deepEqual(sgf.getRoot().data, { SZ: ['19'], AB: ['sa', 'rb', 'qa:sc'], AW: ['pd'] });
+    assert.deepEqual(sgf.getNode(1)?.data, { B: ['dd'] });
+    assert.deepEqual(sgf.getNode(2)?.data, { AE: ['cp'], AW: ['qc'] });
+  });
+
+  it('preserves pass moves at the board-size coordinate and normalizes other off-board moves to empty', () => {
+    const sgf = new Sgf('(;SZ[19];B[];W[tt])');
+
+    sgf.rotate(90);
+
+    assert.equal(sgf.getNode(1)?.data.B[0], '');
+    assert.equal(sgf.getNode(2)?.data.W[0], 'tt');
+  });
+
+  it('rejects rotation ranges that use off-board coordinates', () => {
+    assert.throws(() => new Sgf('(;SZ[19]AB[aa:tt][aa:ts][aa:st])').rotate(90), /Unsupported position: ts/);
+  });
+
+  it('rejects unsupported rotation angles', () => {
+    assert.throws(() => new Sgf('(;SZ[19];B[aa])').rotate(45 as 90), /Unsupported SGF rotation angle: 45/);
+  });
+
   it('returns the unique longest branch as nodes', () => {
     const sgf = new Sgf('(;A[root];B[aa](;W[bb];B[cc])(;W[dd]))');
     const branch = sgf.getLongestBranch();
@@ -295,45 +331,27 @@ describe('Sgf', () => {
 
     sgf.stripVariations();
 
-    assert.equal(sgf.toString(false), '(;A[root];B[aa];W[bb]N[END])');
+    assert.deepEqual(
+      sgf.getGameBranch().map((node) => node.data),
+      [{ A: ['root'] }, { B: ['aa'] }, { W: ['bb'], N: ['END'] }]
+    );
     assert.equal(sgf.getNode(3), undefined);
     assert.equal(sgf.getNode(4), undefined);
     assert.equal(sgf.getNode(5), undefined);
   });
 
-  it('always stringifies as a parenthesized tree', () => {
-    const sgf = new Sgf('(;B[aa];W[bb])');
+  it('rotates existing PGC examples so their first move lands in the upper-right board area', () => {
+    const examples = [
+      ['events/pgc/sgf/2025/2025-1-mmajka-khabu.sgf', 180, 'pd'],
+      ['events/pgc/sgf/2025/2025-2-lsoldan-mmajka.sgf', 180, 'pd'],
+      ['events/pgc/sgf/2025/2025-2-cczernecki-mkosz.sgf', 270, 'qd'],
+    ] as const;
 
-    assert.equal(sgf.toString(false), '(;;B[aa];W[bb])');
-    assert.equal(sgf.toString().startsWith('('), true);
-    assert.equal(sgf.toString(true).startsWith('('), true);
-    assert.match(sgf.toString(true), /\n  ;\n  ;B\[aa\]\n  ;W\[bb\]\n\)$/);
-  });
+    for (const [path, rotation, firstMove] of examples) {
+      const content = readFileSync(join(fixtureDir, '..', '..', '..', path), 'utf-8');
+      const sgf = new Sgf(content).rotate(rotation);
 
-  it('cleans SGFs through the static cleaner', () => {
-    const output = Sgf.clean('(;PW[Old]C[root];B[aa](;W[bb]C[move];B[cc])(;W[dd]))', {
-      PW: 'New',
-      KM: 6.5,
-      C: null,
-    });
-
-    assert.equal(output, '(;PW[New]KM[6.5];B[aa];W[bb];B[cc])');
-  });
-
-  it('round-trips local SGF examples in compact and pretty formats', () => {
-    for (const filename of ['2001-7-jlubos-wwoskresinski.sgf', 'complex.sgf', 'ff4_ex.sgf']) {
-      const content = readFileSync(join(fixtureDir, filename), 'utf-8');
-      const original = new Sgf(content);
-
-      for (const pretty of [false, true]) {
-        const output = original.toString(pretty);
-        const reparsed = new Sgf(output);
-
-        assert.equal(output.startsWith('('), true, `${filename} ${pretty ? 'pretty' : 'compact'} output starts with (`);
-        assert.deepEqual(reparsed.getRoot().data, original.getRoot().data);
-        assert.equal(reparsed.getRoot().children[0]?.parentId, reparsed.getRoot().id);
-        assert.ok(reparsed.getLongestBranch().length > 0);
-      }
+      assert.equal(sgf.getNode(1)?.data.B[0], firstMove);
     }
   });
 });

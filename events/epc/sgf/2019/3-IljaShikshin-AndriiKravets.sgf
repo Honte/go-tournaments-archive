@@ -1,0 +1,22 @@
+(;CA[utf-8]ST[2]RU[Chinese]GM[1]AP[CGoban:3]SZ[19]FF[4]GN[European Pro Championship Ilya Shikshin 3p B - Andrii Kravets 1p W]
+EV[European Pro Championship 2019]EV[EGF Academy March 2019]RO[3]RO[3]DT[2019-03-07]
+PC[Jena - JIGS]PB[Ilja Shikshin]BR[3p]PW[Andrii Kravets]WR[1p]KM[7.5]RE[B+Resign]
+SO[http\://www.eurogofed.org/academy]MULTIGOGM[1]
+;B[pp]C[White\: Andrii Kravets
+Black\: Ilya Shikshin
+Result\: B+Resign
+]N[Andrii Kravets vs Ilya Shikshin]
+;W[dd];B[dp];W[pd];B[dm];W[qn];B[nq];W[qp];B[qq];W[rq];B[qo];W[rp];B[po];W[ro];B[cf]
+;W[fc];B[cd];W[cc];B[bc];W[ce];B[bd];W[de];B[be];W[df];B[cg];W[nc];B[pn];W[qm];B[eh]
+;W[lp];B[jp];W[mq];B[np];W[ln];B[ol];W[jn];B[hp];AB[dn][dq]AE[dm][dp];W[hn];B[ko]
+;W[lo];B[kn];W[km];B[lm];W[iq];B[ip];W[jq];B[hq];W[nl];B[mm];W[nr];B[or];W[mr];B[kp]
+;W[kq];B[ir];W[jr];B[hr];W[pr];B[oq];W[mp];B[lr];W[ls];B[ks];W[nm];B[mn];W[nn];B[no]
+;W[mo];B[kl];W[ns];B[ms];W[qr];B[os];W[ls];B[pm];W[lq];B[ms];W[jm];B[mk];W[nk];B[ls]
+;W[js];B[ql];W[mj];B[ll];W[kj];B[jl];W[il];B[jk];W[hj];B[hk];W[ik];B[jj];W[ji];B[ij]
+;W[ii];B[hi];W[gj];B[ki];W[kh];B[li];W[lj];B[hh];W[ig];B[im];W[hl];B[in];W[fh];B[fg]
+;W[fi];B[hg];W[eg];B[dg];W[ef];B[if];W[jg];B[jf];W[lh];B[hc];W[jc];B[jd];W[kc];B[ff]
+;W[gd];B[dc];W[ec];B[cb];W[ed];B[he];W[fe];B[ge];W[gc];B[ic];W[kb];B[kd];W[gg];B[gf]
+;W[gh];B[lf];W[me];B[gb];W[ib];B[hb];W[eb];B[mf];W[ne];B[ia];W[hm];B[jo];W[jb];B[nf]
+;W[le];B[nh];W[mi];B[kf];W[pk];B[rl];W[og];B[of];W[pg];B[oe];W[pc];B[od];W[mb];B[qf]
+;W[qg];B[qe];W[rd];B[rg];W[rh];B[re];W[sg];B[sf];W[rf];B[ld];W[lc];B[rg];W[sh];B[qd]
+;W[rc];B[qc];W[qb];B[pb];W[qa];B[pa])

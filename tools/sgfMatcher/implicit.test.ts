@@ -3,7 +3,7 @@ import { describe, it } from 'node:test';
 import { makeH9Player, makeSgfInfo } from '@tools/sgfMatcher/mocks';
 import { buildPlayersMap, matchImplicitSgfs } from './implicit';
 import type { H9GameRecord, ParsedGameEntry } from './types';
-import { normalizePlayerName } from './utils';
+import { normalizePlayerName, stringifyProps } from './utils';
 
 describe('matchImplicitSgfs', () => {
   it('matches SGF names written in H9 surname-name order', () => {
@@ -189,6 +189,67 @@ describe('matchImplicitSgfs', () => {
     assert.deepEqual(result.unmatchedEntries[0]?.reasons, ['matching game already has sgf']);
   });
 
+  it('adds OGS props extracted from SGF metadata to implicit game entries', () => {
+    const { playersMap, gamesMap } = makeSimpleContext();
+    const sgf = makeSgfInfo({ sgfOgs: 'https://online-go.com/review/114161' });
+
+    const result = matchImplicitSgfs({
+      sgfInfos: [sgf],
+      playersMap,
+      gamesMap,
+      existingGamesById: new Map(),
+      existingGamesBySgf: new Map(),
+      currentSgfPaths: new Set([sgf.path]),
+      force: false,
+    });
+
+    assert.deepEqual(result.matchedEntries, [
+      '1-2 1:B+R round:1 sgf:2025/1-BlackPlayer-WhitePlayer.sgf ogs:https://online-go.com/review/114161',
+    ]);
+  });
+
+  it('preserves matching existing OGS props in implicit game entries', () => {
+    const { playersMap, gamesMap } = makeSimpleContext();
+    const sgf = makeSgfInfo({ sgfOgs: 'https://online-go.com/review/114161' });
+    const existingGame = makeParsedGameEntry(sgf.path, {
+      yt: 'https://example.test',
+      ogs: 'https://online-go.com/review/114161',
+    });
+
+    const result = matchImplicitSgfs({
+      sgfInfos: [sgf],
+      playersMap,
+      gamesMap,
+      existingGamesById: new Map([['1-2-1', existingGame]]),
+      existingGamesBySgf: new Map([[existingGame.sgf, existingGame]]),
+      currentSgfPaths: new Set([sgf.path]),
+      force: true,
+    });
+
+    assert.deepEqual(result.matchedEntries, [
+      '1-2 1:B+R round:1 sgf:2025/1-BlackPlayer-WhitePlayer.sgf yt:https://example.test ogs:https://online-go.com/review/114161',
+    ]);
+  });
+
+  it('reports OGS conflicts in implicit game entries', () => {
+    const { playersMap, gamesMap } = makeSimpleContext();
+    const sgf = makeSgfInfo({ sgfOgs: 'https://online-go.com/review/114161' });
+    const existingGame = makeParsedGameEntry(sgf.path, { ogs: 'https://online-go.com/review/114162' });
+
+    const result = matchImplicitSgfs({
+      sgfInfos: [sgf],
+      playersMap,
+      gamesMap,
+      existingGamesById: new Map([['1-2-1', existingGame]]),
+      existingGamesBySgf: new Map([[existingGame.sgf, existingGame]]),
+      currentSgfPaths: new Set([sgf.path]),
+      force: true,
+    });
+
+    assert.deepEqual(result.matchedEntries, []);
+    assert.deepEqual(result.unmatchedEntries[0]?.reasons, ['ogs conflict']);
+  });
+
   it('marks every new SGF for the same game unmatched', () => {
     const { playersMap, gamesMap } = makeSimpleContext();
     const first = makeSgfInfo({ path: '2025/1-BlackPlayer-WhitePlayer-a.sgf' });
@@ -347,12 +408,11 @@ function makeH9Record(record: H9GameRecord): H9GameRecord {
   return record;
 }
 
-function makeParsedGameEntry(sgf: string): ParsedGameEntry {
+function makeParsedGameEntry(sgf: string, props: Record<string, string> = {}): ParsedGameEntry {
   return {
     id: '1-2-1',
     sgf,
-    round: 1,
-    props: '',
-    raw: `1-2 1:B+R round:1 sgf:${sgf}`,
+    props,
+    raw: `1-2 1:B+R round:1 sgf:${sgf}${stringifyProps(props)}`,
   };
 }

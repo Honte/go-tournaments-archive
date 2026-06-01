@@ -1,0 +1,14 @@
+
+; TC[T131009B]
+; CL[A]
+; EV[Irish Championship Final]
+; PC[IE, Dublin]
+; DT[2013-10-09,2013-11-14]
+; HA[h9]
+; KM[6.5]
+; TM[120]
+; CM[The legend claims his 16th title (submitted by IrishGo)]
+;.
+;
+1 Mitchell Noel   2d IE  Dubl  2    0    0    0    2+/b   2+/w    |10474563
+2 Pszonka Roman   3d IE  Dubl  0    0    0    0    1-/w   1-/b    |10874842

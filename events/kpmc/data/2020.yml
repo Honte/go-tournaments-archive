@@ -4,8 +4,8 @@ stages:
     file: kpmc2020.txt
     time: 60min + 3x30s japanese
     notes:
-     en: Groups by continents, usually 4 players - rounds 1-3, Knock Out 32 - rounds 4-8
-     pl: Grupy wg kontynentów, zwykle 4 graczy - rundy 1-3, Knock out 32 - rundy 4-8
+      en: Groups by continents, usually 4 players - rounds 1-3, Knock Out 32 - rounds 4-8
+      pl: Grupy wg kontynentów, zwykle 4 graczy - rundy 1-3, Knock out 32 - rundy 4-8
     komi: 6.5
     scoringColumns:
       - wins
@@ -13,3 +13,102 @@ stages:
     breakers:
       - place
     findSharedPlaces: true
+    games:
+      - 1-3 1:B+R round:7 sgf:2020/7-MaTianfang-YoungWoonPark.sgf
+      - 1-26 1:B+R round:2 sgf:2020/2-MaTianfang-DouangboutdySomboun.sgf
+      - 2-1 1:W+1.5 round:8 sgf:2020/8-OzekiMinoru-MaTianfang.sgf
+      - 2-4 2:B+9.5 round:7 sgf:2020/7-OzekiMinoru-LeeEuiHyun.sgf
+      - 2-6 2:B+32.5 round:6 sgf:2020/6-OzekiMinoru-ChowVictor.sgf
+      - 2-10 2:B+R round:5 sgf:2020/5-OzekiMinoru-EerbeekAlexander.sgf
+      - 2-18 2:B+21.5 round:4 sgf:2020/4-OzekiMinoru-LucasNeirynck.sgf
+      - 3-2 2:W+R round:1 sgf:2020/1-YoungWoonPark-OzekiMinoru.sgf
+      - 3-11 3:B+3.5 round:5 sgf:2020/5-YoungWoonPark-WeltickeJonas.sgf
+      - 3-35 3:B+R round:3 sgf:2020/3-YoungWoonPark-TiawattananontThanapol.sgf
+      - 3-48 3:B+R round:2 sgf:2020/2-YoungWoonPark-TsetsegUlziiZoljargal.sgf
+      - 4-12 4:B+R round:5 sgf:2020/5-LeeEuiHyun-HanevikSeverin.sgf
+      - 4-32 4:B+R round:2 sgf:2020/2-LeeEuiHyun-TranQuangTue.sgf
+      - 5-1 1:W+R round:6 sgf:2020/6-LinEvan-MaTianfang.sgf
+      - 5-13 5:B+T round:5 sgf:2020/5-LinEvan-ChernykhAnton.sgf
+      - 5-43 5:B+R round:2 sgf:2020/2-LinEvan-GomesDaSilvaThiagoAugusto.sgf
+      - 6-13 6:B+6.5 round:2 sgf:2020/2-ChowVictor-ChernykhAnton.sgf
+      - 6-22 6:B+6.5 round:4 sgf:2020/4-ChowVictor-HoraJan.sgf
+      - 6-56 6:B+R round:1 sgf:2020/1-VictorChow-PedroCarmona.sgf
+      - 7-3 3:W+R round:6 sgf:2020/6-ChanYiTien-YoungWoonPark.sgf
+      - 7-15 7:B+R round:5 sgf:2020/5-ChanYiTien-BaloghPal.sgf
+      - 7-23 7:B+R round:4 sgf:2020/4-ChanYiTien-RodriguezDiego.sgf
+      - 7-31 7:B+9.5 round:2 sgf:2020/2-ChanYiTien-ChenYilin.sgf
+      - 7-36 7:B+11.5 round:1 sgf:2020/1-ChanYiTien-SamInHang.sgf
+      - 8-4 4:W+R round:6 sgf:2020/6-ZhangBradyBeiMing-LeeEuiHyun.sgf
+      - 8-16 8:B+19.5 round:5 sgf:2020/5-ZhangBradyBeiMing-FrejlakStanislaw.sgf
+      - 8-24 8:B+26.5 round:4 sgf:2020/4-ZhangBradyBeiMing-LotheMaxence.sgf
+      - 8-42 8:B+R round:1 sgf:2020/1-ZhangBradyBeiMing-HectorPaizCastillo.sgf
+      - 9-1 1:W+R round:5 sgf:2020/5-MiticNikola-MaTianfang.sgf
+      - 9-20 9:B+R round:2 sgf:2020/2-MiticNikola-SavolainenJavierAleksi.sgf
+      - 10-16 16:W+R round:1 sgf:2020/1-EerbeekAlexander-FrejlakStanislaw.sgf
+      - 10-37 10:B+7.5 round:3 sgf:2020/3-EerbeekAlexander-IsaksenMathis.sgf
+      - 12-11 11:W+R round:2 sgf:2020/2-HanevikSeverin-WeltickeJonas.sgf
+      - 12-28 12:B+8.5 round:4 sgf:2020/4-HanevikSeverin-ArtigueAlfonso.sgf
+      - 12-51 12:B+R round:1 sgf:2020/1-HanevikSeverin-IlkevichAnastasiya.sgf
+      - 13-56 13:B+11.5 round:3 sgf:2020/3-ChernykhAnton-CarmonaPedro.sgf
+      - 14-6 6:W+R round:5 sgf:2020/5-OvsiienkoVsevolod-ChowVictor.sgf
+      - 14-19 19:W+24.5 round:1 sgf:2020/1-OvsiienkoVsevolod-RenautPhilippe.sgf
+      - 14-40 14:B+R round:2 sgf:2020/2-OvsiienkoVsevolod-ZaleskasVladas.sgf
+      - 15-18 15:B+R round:2 sgf:2020/2-BaloghPal-NeirynckLucas.sgf
+      - 16-32 16:B+R round:4 sgf:2020/4-FrejlakStanislaw-TranQuangTue.sgf
+      - 17-1 1:W+R round:4 sgf:2020/4-RieJaeryong-MaTianfang.sgf
+      - 17-30 30:W+13.5 round:2 sgf:2020/2-RieJaeryong-AguilarFernando.sgf
+      - 18-41 18:B+R round:1 sgf:2020/1-NeirynckLucas-ArikanUgur.sgf
+      - 18-41 18:B+R round:3 sgf:2020/3-NeirynckLucas-ArikanUgur.sgf
+      - 19-3 3:W+T round:4 sgf:2020/4-RenautPhilippe-YoungWoonPark.sgf
+      - 19-53 19:B+R round:2 sgf:2020/2-RenautPhilippe-HertzJeremie.sgf
+      - 20-4 4:W+R round:4 sgf:2020/4-SavolainenJavierAleksi-LeeEuiHyun.sgf
+      - 20-39 20:B+45.5 round:1 sgf:2020/1-SavolainenJavierAleksi-SmolarikPeter.sgf
+      - 21-5 5:W+11.5 round:4 sgf:2020/4-FlorenciaJose-LinEvan.sgf
+      - 21-43 21:B+R round:3 sgf:2020/3-JoseFlorencia-ThiagoAugustoGomesDaSilva.sgf
+      - 22-29 22:B+T round:2 sgf:2020/2-HoraJan-WalchJohn.sgf
+      - 23-8 8:W+70.5 round:2 sgf:2020/2-RodriguezDiego-ZhangBradyBeiMing.sgf
+      - 23-58 23:B+R round:1 sgf:2020/1-DiegoRodriguez-AdrianVillaltaCerdas.sgf
+      - 24-57 24:B+R round:3 sgf:2020/3-LotheMaxence-FurjanicLovro.sgf
+      - 25-9 9:W+3.5 round:4 sgf:2020/4-KoleejanChahine-MiticNikola.sgf
+      - 25-28 25:B+20.5 round:2 sgf:2020/2-KoleejanChahine-ArtigueAlfonso.sgf
+      - 26-10 10:W+4.5 round:4 sgf:2020/4-DouangboutdySomboun-EerbeekAlexander.sgf
+      - 26-33 26:B+3.5 round:1 sgf:2020/1-DouangboutdySomboun-ChungChunChen.sgf
+      - 27-11 11:W+0.5 round:4 sgf:2020/4-LinViktor-WeltickeJonas.sgf
+      - 27-24 27:B+23.5 round:2 sgf:2020/2-LinViktor-LotheMaxence.sgf
+      - 27-57 27:B+R round:1 sgf:2020/1-LinViktor-FurjanicLovro.sgf
+      - 29-13 13:W+12.5 round:4 sgf:2020/4-WalchJohn-ChernykhAnton.sgf
+      - 29-55 29:B+R round:1 sgf:2020/1-WalchJohn-PerezMiguelEscribamo.sgf
+      - 30-14 14:W+6.5 round:4 sgf:2020/4-AguilarFernando-OvsiienkoVsevolod.sgf
+      - 31-15 15:W+9.5 round:4 sgf:2020/4-ChenYilin-BaloghPal.sgf
+      - 33-26 26:W+7.5 round:3 sgf:2020/3-ChungChunChen-DouangboutdySomboun.sgf
+      - 34-32 32:W+2.5 round:3 sgf:2020/3-BenDavidReem-TranQuangTue.sgf
+      - 34-32 32:W+R round:1 sgf:2020/1-BenDavidReem-TranQuangTue.sgf
+      - 35-48 35:B+R round:1 sgf:2020/1-TiawattananontThanapol-TsetsegUlziiZoljargal.sgf
+      - 36-31 31:W+R round:3 sgf:2020/3-SamInHang-ChenYilin.sgf
+      - 37-16 16:W+R round:2 sgf:2020/2-IsaksenMathis-FrejlakStanislaw.sgf
+      - 38-11 11:W+R round:1 sgf:2020/1-PaceAlessandro-WeltickeJonas.sgf
+      - 38-12 12:W+19.5 round:3 sgf:2020/3-PaceAlessandro-HanevikSeverin.sgf
+      - 39-20 20:W+101.5 round:3 sgf:2020/3-SmolarikPeter-SavolainenJavierAleksi.sgf
+      - 39-52 39:B+R round:2 sgf:2020/2-SmolarikPeter-KraljAndrej.sgf
+      - 40-19 19:W+T round:3 sgf:2020/3-ZaleskasVladas-RenautPhilippe.sgf
+      - 40-53 40:B+R round:1 sgf:2020/1-ZaleskasVladas-HertzJeremie.sgf
+      - 42-23 23:W+29.5 round:3 sgf:2020/3-HectorPaizCastillo-DiegoRodriguez.sgf
+      - 42-58 42:B+42.5 round:2 sgf:2020/2-HectorPaizCastillo-AdrianVillaltaCerdas.sgf
+      - 43-59 43:B+R round:1 sgf:2020/1-GomesDaSilvaThiagoAugusto-RiveraOmarAbraham.sgf
+      - 44-17 17:W+R round:3 sgf:2020/3-AvalosKenyiKina-RieJaeryong.sgf
+      - 44-17 17:W+T round:1 sgf:2020/1-AvalosKenyiKina-RieJaeryong.sgf
+      - 44-60 44:B+26.5 round:2 sgf:2020/2-AvalosKenyiKina-AngelGutierrezCarrasco.sgf
+      - 45-28 28:W+52.5 round:3 sgf:2020/3-VasquezAlbujaEdisson-ArtigueAlfonso.sgf
+      - 45-61 45:B+4.5 round:2 sgf:2020/2-VasquezAlbujaEdisson-ReiseneggerRenate.sgf
+      - 46-1 1:W+R round:1 sgf:2020/1-ThalibDanielSufiah-MaTianfang.sgf
+      - 46-33 33:W+2.5 round:2 sgf:2020/2-ThalibDanielSufiah-ChungChunChen.sgf
+      - 49-36 36:W+R round:2 sgf:2020/2-AliminHaidar-SamInHang.sgf
+      - 50-10 10:W+10.5 round:2 sgf:2020/2-PoltronieriBruno-EerbeekAlexander.sgf
+      - 50-37 37:W+R round:1 sgf:2020/1-PoltronieriBruno-IsaksenMathis.sgf
+      - 51-38 38:W+R round:2 sgf:2020/2-IlkevichAnastasiya-PaceAlessandro.sgf
+      - 52-9 9:W+41.5 round:1 sgf:2020/1-KraljAndrej-MiticNikola.sgf
+      - 54-15 15:W+33.5 round:1 sgf:2020/1-HadjixenophontosAlexandros-BaloghPal.sgf
+      - 54-41 41:W+R round:2 sgf:2020/2-HadjixenophontosAlexandros-ArikanUgur.sgf
+      - 55-29 29:W+R round:3 sgf:2020/3-PerezMiguelEscribamo-WalchJohn.sgf
+      - 59-21 21:W+R round:2 sgf:2020/2-OmarAbrahamRivera-JoseFlorencia.sgf
+      - 60-30 30:W+R round:1 sgf:2020/1-AngelGutierrezCarrasco-AguilarFernando.sgf

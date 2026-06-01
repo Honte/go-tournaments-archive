@@ -1,0 +1,32 @@
+top:
+ - nmitchell
+ - sflinter
+ - bgallagher
+notes: Nov 1998 - Mar 1999
+stages:
+  - type: tournament
+    file: ie1999.txt
+    name: top8
+    promoted: 2
+    notes: there was probably playoff 2-3
+    scoringColumns:
+      - wins
+      - playoff
+      - null
+      - null
+    breakers:
+      - wins
+      - playoff
+    findSharedPlaces: true
+  - type: tournament
+    file: ie1999final.txt
+    name: Final
+    notes: exact result of the final is unknown
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: true

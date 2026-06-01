@@ -1,0 +1,36 @@
+website: https://www.eurogofed.org/epc/2018.html
+stages:
+  - type: tournament
+    file: epc2018.txt
+    time: 45min + 25sec Fischer
+    komi: 6.5
+    scoringColumns:
+      - mms
+      - wins
+      - direct
+    breakers:
+      - wins
+      - direct
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:2 sgf:2018/2-PavolLisy-IljaShikshin.sgf
+      - 1-4 1:B+5.5 round:6 sgf:2018/6-PavolLisy-AlexandrDinerstein.sgf
+      - 1-5 1:B+9.5 round:3 sgf:2018/3-PavolLisy-MateuszSurma.sgf
+      - 2-4 2:B+R round:4 sgf:2018/4-IljaShikshin-AlexandrDinerstein.sgf
+      - 2-5 2:B+R round:7 sgf:2018/7-IljaShikshin-MateuszSurma.sgf
+      - 2-6 2:B+6.5 round:1 sgf:2018/1-IljaShikshin-AliJabarin.sgf
+      - 3-1 1:W+R round:1 sgf:2018/1-ArtemKachanovskyi-PavolLisy.sgf
+      - 3-2 2:W+3.5 round:5 sgf:2018/5-ArtemKachanovskyi-IljaShikshin.sgf
+      - 3-7 3:B+R round:7 sgf:2018/7-ArtemKachanovskyi-AndriiKravets.sgf
+      - 4-3 3:W+8.5 round:3 sgf:2018/3-AlexandrDinerstein-ArtemKachanovskyi.sgf
+      - 4-6 4:B+3.5 round:5 sgf:2018/5-AlexandrDinerstein-AliJabarin.sgf
+      - 4-7 4:B+5.5 round:2 sgf:2018/2-AlexandrDinerstein-AndriiKravets.sgf
+      - 5-3 3:W+R round:6 sgf:2018/6-MateuszSurma-ArtemKachanovskyi.sgf
+      - 5-4 4:W+8.5 round:1 sgf:2018/1-MateuszSurma-AlexandrDinerstein.sgf
+      - 5-7 5:B+R round:5 sgf:2018/5-MateuszSurma-AndriiKravets.sgf
+      - 6-1 6:B+1.5 round:7 sgf:2018/7-AliJabarin-PavolLisy.sgf
+      - 6-3 3:W+R round:4 sgf:2018/4-AliJabarin-ArtemKachanovskyi.sgf
+      - 6-5 5:W+R round:2 sgf:2018/2-AliJabarin-MateuszSurma.sgf
+      - 7-1 1:W+R round:4 sgf:2018/4-AndriiKravets-PavolLisy.sgf
+      - 7-2 2:W+10.5 round:6 sgf:2018/6-AndriiKravets-IljaShikshin.sgf
+      - 7-6 6:W+R round:3 sgf:2018/3-AndriiKravets-AliJabarin.sgf

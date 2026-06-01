@@ -22,5 +22,15 @@ export async function processStage(input: StageProcessInput): Promise<StageAnaly
     case 'round-robin-table':
     case 'final':
       return processExplicitStage({ ...input, stage: input.stage });
+    case 'classification':
+      return {
+        previousEntries: [],
+        reusedEntries: [],
+        matchedEntries: [],
+        removedEntries: [],
+        unmatchedEntries: [],
+        totalSgfs: 0,
+        claimedSgfs: [],
+      };
   }
 }

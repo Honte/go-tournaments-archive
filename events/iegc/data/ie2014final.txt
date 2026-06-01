@@ -1,0 +1,11 @@
+; CL[A]
+; EV[Irish Championship Final]
+; PC[IE, KGS]
+; DT[2014-12-26,2014-12-26]
+; HA[h9]
+; KM[6.5]
+;.
+;
+1 Hutchinson James   1d UK  Belf  1    0    0    0       2+    |14850187
+2 Pszonka Roman      3d IE  Dubl  0    0    0    0       1-    |10874842
+

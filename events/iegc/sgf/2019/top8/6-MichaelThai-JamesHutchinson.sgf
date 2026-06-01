@@ -1,0 +1,83 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]OT[5x30 byo-yomi]C[jameshut [4k?\]\: have fun
+]
+AP[CGoban:3]SZ[19]GM[1]EV[IE 2019]RO[6]DT[2019-09-01]PC[The KGS Go Server at http\://www.gokgs.com/]
+PB[Michael Thai]PW[James Hutchinson]WR[4k]KM[6.5]TM[3600]RE[W+Resign]MULTIGOGM[1]
+;B[pd]BL[3595.51]C[goodstyle [?\]\: u2
+];W[dd]WL[3593.42];B[pp]BL[3589.35];W[dq]
+WL[3590.31];B[do]BL[3577.61];W[co]WL[3586.03];B[cn]BL[3567.93];W[cp]WL[3583.23]
+;B[dn]BL[3562.1];W[fq]WL[3580.97];B[cj]BL[3544.16];W[bl]WL[3480.88];B[cl]BL[3434.99]
+;W[qj]WL[3418.79];B[fc]BL[3330.74];W[cf]WL[3388.78];B[jd]BL[3327.18];W[qf]WL[3370.96]
+;B[nd]BL[3297.5];W[rd]WL[3366.95];B[qc]BL[3285.76];W[ph]WL[3363.7];B[db]BL[3270.94]
+;W[cc]WL[3359.96];B[fe]BL[3261.92];W[lc]WL[3179.44];B[ld]BL[3157.7];W[kd]WL[3170.98]
+;B[ke]BL[3062.27];W[kc]WL[3157.59];B[le]BL[2862.94];W[jc]WL[3147.57];B[id]BL[2845]
+;W[nb]WL[3144.18];B[eg]BL[2594.57];W[ch]WL[3037.31];B[ei]BL[2480.81];W[jj]WL[2983.75]
+;B[kk]BL[2475.18];W[mh]WL[2644.65];B[li]BL[2443.03];W[lh]WL[2625.89];B[kh]BL[2430.03]
+;W[il]WL[2618.09];B[ep]BL[2306.96];W[gr]WL[2595.81];B[gp]BL[2303.41];W[in]WL[2584.55]
+;B[ip]BL[2288.41];W[km]WL[2555.44];B[jk]BL[2235.2];W[ik]WL[2543.09];B[lm]BL[2144.89]
+;W[kn]WL[2432.01];B[ll]BL[2069.5];W[kp]WL[2325.79];B[mp]BL[1965.54];W[lq]WL[2260.71]
+;B[mq]BL[1837.94];W[hq]WL[2235.27];B[jq]BL[1721.78];W[kq]WL[2104.41];B[hp]BL[1550.28]
+;W[jr]WL[2045.17];B[jp]BL[1528.25];W[lo]WL[1917.62];B[ir]BL[1514.69];W[mn]WL[1887.56]
+;B[jo]BL[1500.16];W[ln]WL[1870.89];B[ol]BL[1461.62];W[kr]WL[1861.88];B[iq]BL[1413.52]
+;W[mr]WL[1818.14];B[nr]BL[1409.42];W[ls]WL[1811.39];B[js]BL[1354.63];W[gn]WL[1789.11]
+;B[fp]BL[1253.21];W[gl]WL[1772.3];B[ns]BL[1121.55];W[ms]WL[1700.31];B[mi]BL[1051.32]
+;W[nh]WL[1619.28];B[ql]BL[997.247];W[qn]WL[1558.18];B[rk]BL[972.366]C[jameshut [4k?\]\: sorry power cut
+goodstyle [?\]\: no worries
+]
+;W[on]WL[1358.89];B[ri]BL[949.371];W[rj]WL[1347.18];B[sj]BL[946.521];W[rh]WL[1345.54]
+;B[qi]BL[921.311];W[qh]WL[1336.9];B[rc]BL[902.652];W[pi]WL[1325.12];B[si]BL[894.513]
+;W[sh]WL[1323.38];B[sk]BL[892.417];W[of]WL[1295.59];B[re]BL[869.5];W[rf]WL[1288.01]
+;B[qe]BL[840.291];W[qp]WL[1168.11];B[qq]BL[787.389];W[rq]WL[1112.16];B[qr]BL[616.042]
+;W[po]WL[1042.6];B[rp]BL[612.742];W[op]WL[1036.79];B[qo]BL[608.628];W[nq]WL[1025.04]
+;B[oq]BL[597.72];W[np]WL[1016.16];B[nf]BL[594.685];W[oe]WL[983.205];B[nc]BL[583.69]
+;W[ob]WL[936.167];B[ib]BL[576.163];W[jb]WL[909.455];B[mc]BL[573.627];W[mb]WL[900.767]
+;B[pb]BL[540.339];W[ic]WL[818.648];B[hb]BL[536.306];W[hc]WL[788.089];B[gc]BL[531.317]
+;W[ia]WL[770.013];B[ga]BL[502.343];W[la]WL[764.043];B[ng]BL[481.481];W[og]WL[746.385]
+;B[oi]BL[448.612];W[pe]WL[569.359];B[bi]BL[423.528];W[cb]WL[560.522];B[bg]BL[413.413]
+;W[bf]WL[551.004];B[oh]BL[338.299];W[ne]WL[545.67];B[mf]BL[324.216];W[bn]WL[490.729]
+;B[bm]BL[313.519];W[am]WL[487.329];B[cm]BL[310.62];W[bo]WL[396.326];B[eq]BL[302.227]
+;W[er]WL[389.429];B[ii]BL[260.715];W[ij]WL[277.7];B[hi]BL[242.298];W[hd]WL[273.372]
+;B[he]BL[237.38];W[ie]WL[270.083];B[je]BL[236.063];W[ge]WL[267.679];B[hf]BL[233.545]
+;W[gd]WL[265.557];B[gf]BL[166.26];W[oj]WL[225.401];B[ni]BL[161.336];W[or]WL[135.205]
+;B[rn]BL[156.438];W[bh]WL[56.159];B[gq]BL[72.895];W[fr]WL[52.119];B[bk]BL[67.782]
+;W[me]WL[37.671];B[lg]BL[63.988];W[se]WL[8.936];B[qd]BL[60.963];W[sd]WL[4.031];B[sc]
+BL[57.013];W[sf]WL[2.358];B[ca]BL[24.966];OW[5]W[ba]WL[30];B[da]BL[10.23];OW[5]
+W[eb]WL[30];OB[5]B[fb]BL[30];OW[5]W[ea]WL[30];OB[5]B[de]BL[30];OW[5]W[ce]WL[30]
+;OB[5]B[dp]BL[30];OW[5]W[cr]WL[30];OB[5]B[qk]BL[30];OW[5]W[pj]WL[30];OB[5]B[fk]
+BL[30];OW[5]W[gj]WL[30];OB[5]B[fl]BL[30];OW[5]W[gi]WL[30];OB[5]B[gh]BL[30];OW[5]
+W[fm]WL[30];OB[5]B[gk]BL[30];OW[5]W[hj]WL[30];OB[5]B[em]BL[30];OW[5]W[ec]WL[30]
+;OB[5]B[fd]BL[30];OW[5]W[ji]WL[30];OB[5]B[jh]BL[30];OW[5]W[hh]WL[30];OB[5]B[ih]
+BL[30];OW[5]W[fh]WL[30];OB[5]B[gg]BL[30];OW[5]W[fi]WL[30];OB[5]B[eh]BL[30];OW[5]
+W[od]WL[30];OB[5]B[oc]BL[30];OW[5]W[md]WL[30]C[goodstyle [?\]\: thanks james
+jameshut [4k?\]\: thanks Michael
+jameshut [4k?\]\: s18 might live?
+jameshut [4k?\]\: in ko maybe
+goodstyle [?\]\: it does, not enpugh though
+goodstyle [?\]\: even if it lives, still behind
+jameshut [4k?\]\: ah true
+jameshut [4k?\]\: I hadn't really counted
+jameshut [4k?\]\: too busy trying not to die
+goodstyle [?\]\: neither have i but it looks like ur ahead
+jameshut [4k?\]\: tengen was a mistake by me I think
+goodstyle [?\]\: yeah
+jameshut [4k?\]\: L9 worked really well
+jameshut [4k?\]\: I should have gone for L9
+jameshut [4k?\]\: instead of tengen
+goodstyle [?\]\:  thought you be pushing that way but u didnt
+Kev [1k\]\: Good game
+jameshut [4k?\]\: must run it through Lizzie now
+Kev [1k\]\: Thought B8 was weird with C10 being low
+jameshut [4k?\]\: Mateusz Surma did that to be once
+jameshut [4k?\]\: *to me
+goodstyle [?\]\: cause surma is so strong
+jameshut [4k?\]\: although I might have played D10 in fairness
+jameshut [4k?\]\: can't remember
+Kev [1k\]\: I have seen it with D10 i think
+jameshut [4k?\]\: ah that makes sense
+jameshut [4k?\]\: I should give up on trying to remember joseki
+jameshut [4k?\]\: Learn joseki and become two stones weaker...
+goodstyle [?\]\: hahhaha
+goodstyle [?\]\:  thanks for the game james, gonna head off now
+jameshut [4k?\]\: thanks Michael
+jameshut [4k?\]\: all the best
+goodstyle [?\]\: later
+])

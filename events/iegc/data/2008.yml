@@ -1,0 +1,34 @@
+top:
+  - croever
+  - nmitchell
+  - sflinter
+website: https://www.irish-go.org/national-international/top-8/past-irish-championships/2008-irish-championship-table/
+stages:
+  - type: tournament
+    file: ie2008.txt
+    notes: playoff for places 1-3 and 4-5
+    dir: 2008/top8
+    promoted: 2
+    scoringColumns:
+      - wins
+      - playoff
+      - null
+      - null
+    breakers:
+      - wins
+      - playoff
+    findSharedPlaces: true
+  - type: tournament
+    file: ie2008final.txt
+    name: Final
+    dir: 2008/final
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+1.5 round:3 sgf:2008/final/3-ClaasRoever-NoelMitchell.sgf

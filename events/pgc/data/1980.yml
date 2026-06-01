@@ -36,4 +36,4 @@ stages:
       - - jk-wm jk
         - km-wg km
       - - jk-km km
-      - - jk-km jk:W+10.5 sgf:1980/1980-8-Moszczynski-Kraszek.sgf
+      - - jk-km jk:W+10.5 sgf:1980/1980-8-Moszczynski-Kraszek.sgf rotate:180

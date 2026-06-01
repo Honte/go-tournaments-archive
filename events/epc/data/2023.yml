@@ -1,0 +1,28 @@
+website: https://www.eurogofed.org/epc/2023.html
+stages:
+  - type: tournament
+    file: epc2023.txt
+    time: 50min + 25sec fischer
+    komi: 6.5
+    notes: 2 double-elimination groups + playoff for top 4
+    scoringColumns:
+      - wins
+      - place
+    breakers:
+      - place
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:5 sgf:2023/5-MateuszSurma-AnttiTormanen.sgf ogs:https://online-go.com/game/54814008
+      - 1-3 1:B+R round:4 sgf:2023/4-MateuszSurma-AliJabarin.sgf ogs:https://online-go.com/game/54787975
+      - 2-3 2:B+R round:2 sgf:2023/2-AnttiTormanen-AliJabarin.sgf ogs:https://online-go.com/game/54729853
+      - 2-4 2:B+R round:4 sgf:2023/4-AnttiTormanen-StanislawFrejlak.sgf ogs:https://online-go.com/game/54787887
+      - 2-6 2:B+R round:1 sgf:2023/1-AnttiTormanen-JanSimara.sgf ogs:https://online-go.com/game/54702564
+      - 3-4 3:B+2.5 round:5 sgf:2023/5-AliJabarin-StanislawFrejlak.sgf ogs:https://online-go.com/game/54814105
+      - 3-6 3:B+R round:3 sgf:2023/3-AliJabarin-JanSimara.sgf ogs:https://online-go.com/game/54758313
+      - 3-8 3:B+T round:1 sgf:2023/1-AliJabarin-TanguyleCalve.sgf ogs:https://online-go.com/game/54712116
+      - 4-1 1:W+R round:1 sgf:2023/1-StanislawFrejlak-MateuszSurma.sgf ogs:https://online-go.com/game/54702741
+      - 4-5 4:B+8.5 round:3 sgf:2023/3-StanislawFrejlak-AndriiKravets.sgf ogs:https://online-go.com/game/54758102
+      - 5-1 1:W+R round:2 sgf:2023/2-AndriiKravets-MateuszSurma.sgf ogs:https://online-go.com/game/54739241
+      - 6-8 6:B+R round:2 sgf:2023/2-JanSimara-TanguyLeCalve.sgf ogs:https://online-go.com/game/54729894
+      - 7-4 4:W+4.5 round:2 sgf:2023/2-ArtemKachanovskyi-StanislawFrejlak.sgf ogs:https://online-go.com/game/54739078
+      - 7-5 5:W+R round:1 sgf:2023/1-ArtemKachanovskyi-AndriiKravets.sgf ogs:https://online-go.com/game/54713398

@@ -1,0 +1,39 @@
+website: https://www.irish-go.org/2015-irish-championship-table/
+top:
+  - prenaut
+  - jhutchinson
+  - nmitchell
+stages:
+  - type: tournament
+    file: ie2015.txt
+    name: top8
+    notes: Wins Mitchell vs Kasko, Gibson vs Pszonka and Gibson vs Kasko count as 0.5 points; additional playoff 4-5
+    dir: 2015/top8
+    promoted: 2
+    scoringColumns:
+      - wins
+      - playoff
+      - null
+      - null
+    breakers:
+      - wins
+      - playoff
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+T round:7 sgf:2015/top8/7-PhilippeRenaut-JamesHutchinson.sgf
+      - 2-7 2:B+21.5 round:6 sgf:2015/top8/6-JamesHutchinson-ThomasShanahan.sgf
+  - type: tournament
+    file: ie2015final.txt
+    name: Final
+    dir: 2015/final
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:1 sgf:2015/final/1-PhilippeRenaut-JamesHutchinson.sgf
+      - 2-1 1:W+0.5 round:2 sgf:2015/final/2-JamesHutchinson-PhilippeRenaut.sgf

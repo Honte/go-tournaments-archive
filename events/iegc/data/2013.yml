@@ -1,0 +1,40 @@
+website: https://www.irish-go.org/national-international/top-8/past-irish-championships/2013-irish-championship-table/
+top:
+  - nmitchell
+  - rpszonka
+  - croever
+stages:
+  - type: tournament
+    file: ie2013.txt
+    name: top8
+    notes: additional playoff for places 2-3 and 6-7
+    dir: 2013/top8
+    promoted: 2
+    scoringColumns:
+      - wins
+      - playoff
+      - null
+      - null
+    breakers:
+      - wins
+      - playoff
+    findSharedPlaces: true
+    games:
+      - 4-5 4:B+R round:7 sgf:2013/top8/7-RoryWales-JamesHutchinson.sgf
+      - 6-5 5:W+9.5 round:6 sgf:2013/top8/6-EoghanBarry-JamesHutchinson.sgf
+      - 7-5 5:W+R round:5 sgf:2013/top8/5-JustynaKleczar-JamesHutchinson.sgf
+  - type: tournament
+    file: ie2013final.txt
+    name: Final
+    dir: 2013/final
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+21.5 round:1 sgf:2013/final/1-NoelMitchell-RomanPszonka.sgf
+      - 2-1 1:W+1.5 round:2 sgf:2013/final/2-RomanPszonka-NoelMitchell.sgf
