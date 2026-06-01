@@ -1,0 +1,26 @@
+(;CA[windows-1250]ST[1]GM[1]C[2007 WAGC Game 4
+Black - N Micthell (Ireland)
+White - Luis Carvaijo (Costa Rica)]
+AP[glGo:1.3.1]SZ[19]FF[4]GN[2007 WAGC Game 4]RO[4]PB[Noel Mitchell]BR[2 Dan]PW[Luis Cajiao Campos]
+WR[2 Dan]KM[6.5]RE[B+8.5]MULTIGOGM[1]
+;B[pd];W[cq];B[pp];W[dd];B[dp];W[cp];B[do];W[er];B[gp];W[bn];B[dl];W[qn];B[ql];W[qq]
+;B[qp];W[pq];B[op];W[rp];B[ro];W[rq];B[rn];W[nq];B[fc];W[cf];B[jd];W[eb]C[Move 26 is slow by White - Black seizes the advantage.]
+;B[pf];W[pb]C[A bit strange - allows Black to increase outside strength (if plays P17 or Q17 for example).]
+;B[qc]C[Wrong side - outside at P17 better, or else Q17. Black wanted to chase the White stones but better to seal them in.]
+;W[lc];B[jc];W[nc]C[I think White should jump out instead, perhaps at M15 or N15. After this move 32 at O17 Black can seal in White with a move at M15.]
+;B[qb]C[Black misses chance to play M15 and seal in White.];W[le];B[jf];W[lg];B[li]
+;W[kh];B[jj];W[ih];B[fb];W[kb];B[dc];W[cc];B[db];W[cb];B[ed];W[np]C[Important move - a bit dangerous to tenuki after Black move 47 at E16 but White is behind and needs territory somewhere.]
+;B[no];W[mo];B[nn];W[mn];B[nm];W[ip];B[hq];W[iq];B[de]C[This atari sets up approach at C12 to this corner. Alternatively, Black can play atari with cut at C16 and if White extends at D15 a ko arises in the corner after Black B16. Perhaps that would be better for Black to play that way.]
+;W[cd];B[lp];W[ko];B[lo];W[ln];B[kn];W[kp];B[lm];W[mp];B[mm]C[Should play P3 first.]
+;W[oq];B[ch]C[Big point to get before White C11, and has a lot of followup moves against the corner, but P12 is biggertoclose right side.]
+;W[dm];B[em];W[cm];B[el];W[df];B[ef];W[og];B[of];W[ng];B[ph]C[Black peep at N14 now instead would be quite serious for White.]
+;W[ni];B[oj];W[oi];B[pi];W[nj];B[be]C[Now Black gets back to take advantage of White's tenuki earlier.]
+;W[ce];B[bf];W[dh];B[ci];W[ee];B[fe];W[eg];B[ff];W[bd]C[Risky - still only 1 eye in the corner, so connecting at G12 is better.]
+;B[cg];W[dg];B[gh];W[ae];B[bg];W[ab]C[Black would play B19 to keep White to one eye, but there's a lot of aji on the outside. As Black is ahead, I decided to seal white in and make him play another move in the corner.]
+;B[ei];W[ba]C[C19 better.];B[jb];W[ob];B[hn];W[im];B[in];W[jn];B[jm];W[km];B[jl]
+;W[hi];B[hk];W[gj];B[gk];W[di];B[dj];W[qo];B[qm]C[Bad mistake - Q6 instead solves any problems.]
+;W[oo];B[on];W[po];B[bl];W[ki];B[lj];W[kk];B[jk];W[if]C[White now starts a powerful attacking sequence.]
+;B[ie];W[hf];B[fj];W[he];B[hd];W[gd];B[fd];W[hc];B[id];W[ge];B[gc];W[hb];B[ha]C[Probably this move is not necessary - Black can connect out with G13 if needed.]
+;W[ne]C[Moves after 142 omitted. White later started a ko at L6 to capture the Black stones around O7, but it's  avery hard ko for White since Black finishes the ko by capturing at K5 which is practically sente.
+
+Black wins by 8.5 points.])

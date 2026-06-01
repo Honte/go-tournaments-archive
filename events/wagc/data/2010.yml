@@ -51,4 +51,7 @@ stages:
       - 28-20 20:W+5.5 round:1 sgf:2010/1-AlainWettach-ThomasDebarre.sgf
       - 31-12 12:W+R round:3 sgf:2010/3-DavidOrmerod-ThomasHsiang.sgf
       - 34-41 41:W+R round:1 sgf:2010/1-BoonPingTeng-TMarkHall.sgf
+      - 39-52 39:B+R round:4 sgf:2010/4-MariaPuerta-JohnGibson.sgf
       - 45-30 30:W+28.5 round:1 sgf:2010/1-JanezJanza-EmilBustamante.sgf
+      - 52-6 6:W+R round:2 sgf:2010/2-JohnGibson-ZhengxunChen.sgf
+      - 52-45 45:W+0.5 round:8 sgf:2010/8-JohnGibson-JanezJanza.sgf

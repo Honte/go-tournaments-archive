@@ -55,6 +55,7 @@ stages:
       - 23-25 23:B+T round:4 sgf:2007/4-BoonPingTeng-ZoranJankovic.sgf
       - 23-35 23:B+T round:8 sgf:2007/8-BoonPingTeng-CarlosGonzalezZelaya.sgf
       - 25-37 25:B+R round:2 sgf:2007/2-ZoranJankovic-HatimeAraki.sgf
+      - 25-44 25:B+? round:6 sgf:2007/6-ZoranJankovic-NoelMitchell.sgf
       - 27-32 27:B+R round:5 sgf:2007/5-ErikOuchterlony-ThanapolTiawattananont.sgf
       - 29-49 29:B+R round:4 sgf:2007/4-BrunoBorchartt-TugsbilegtTseveenravdan.sgf
       - 30-14 14:W+R round:4 sgf:2007/4-OtsoAlanko-MichalBazynski.sgf
@@ -62,18 +63,22 @@ stages:
       - 31-39 31:B+3.5 round:7 sgf:2007/7-AndriusPetrauskas-DimasCabre.sgf
       - 33-50 33:B+R round:1 sgf:2007/1-PeterJadron-MamyRakotoarisoa.sgf
       - 34-22 22:W+26.5 round:8 sgf:2007/8-HaeTaekChoi-MichaelSzabo.sgf
+      - 34-44 34:B+? round:3 sgf:2007/3-HaeTaekChoi-NoelMitchell.sgf
       - 34-57 34:B+30.5 round:2 sgf:2007/2-HaeTaekChoi-IgnacioFacello.sgf
       - 35-6 6:W+R round:2 sgf:2007/2-CarlosGonzalezZelaya-JingYang.sgf
+      - 37-44 44:W+15.5 round:1 sgf:2007/1-HatimeAraki-NoelMitchell.sgf
       - 37-53 37:B+R round:3 sgf:2007/3-HatimeAraki-OswaldoMoreano.sgf
       - 38-43 38:B+R round:6 sgf:2007/6-SebastienKoch-OysteinVestgaarden.sgf
       - 38-64 38:B+R round:2 sgf:2007/2-SebastienKoch-AshotMargaryan.sgf
       - 41-26 26:W+0.5 round:7 sgf:2007/7-GregorButala-LionelFischer.sgf
+      - 41-44 44:W+R round:5 sgf:2007/5-GregorButala-NoelMitchell.sgf
       - 41-45 41:B+R round:8 sgf:2007/8-GregorButala-VuChungDoan.sgf
       - 41-66 41:B+R round:3 sgf:2007/3-GregorButala-JoseRomero.sgf
       - 42-28 28:W+10.5 round:7 sgf:2007/7-DanielJakadewaPutra-JaimeRamirezReyes.sgf
       - 42-59 42:B+30.5 round:1 sgf:2007/1-DanielJakadewaPutra-CristovaoNeto.sgf
       - 44-11 11:W+19.5 round:2 sgf:2007/2-NoelMitchell-JiaChengTan.sgf
       - 44-36 36:W+R round:7 sgf:2007/7-NoelMitchell-CuongNguyen.sgf
+      - 44-56 44:B+8.5 round:4 sgf:2007/4-NoelMitchell-LuisCajiaoCampos.sgf
       - 45-52 45:B+38.5 round:2 sgf:2007/2-VuChungDoan-AlexandrChakur.sgf
       - 48-40 40:W+22.5 round:8 sgf:2007/8-OferZivony-RitaPocsai.sgf
       - 48-55 48:B+R round:3 sgf:2007/3-OferZivony-SercanOruc.sgf
