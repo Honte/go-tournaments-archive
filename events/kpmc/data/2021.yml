@@ -34,9 +34,9 @@ stages:
       - 6-14 6:B+T round:5 sgf:2021/5-TengJustin-HanevikHeming.sgf
       - 6-41 6:B+R round:3 sgf:2021/3-TengJustin-MayerLisa.sgf
       - 6-57 6:B+44.5 round:2 sgf:2021/2-TengJustin-CarterDylan.sgf
-      - 7-10 10:W+R round:1 sgf:2021/1-XieKaikun-MorikawaShunji.sgf
+      - 7-10 10:W+R round:1 sgf:2021/1-XieKaiKun-MorikawaShunji.sgf
       - 7-15 7:B+0.5 round:5 sgf:2021/5-XieKaikun-KrumlOndrej.sgf
-      - 7-62 7:B+2.5 round:2 sgf:2021/2-XieKaikun-KoncsekBarna.sgf
+      - 7-62 7:B+2.5 round:2 sgf:2021/2-XieKaiKun-KoncsekBarna.sgf
       - 8-4 4:W+12.5 round:6 sgf:2021/6-SavolainenJavierAleksi-ChernykhAnton.sgf
       - 8-25 8:B+7.5 round:1 sgf:2021/1-SavolainenJavierAleksi-MettaCarlo.sgf
       - 8-36 8:B+R round:2 sgf:2021/2-SavolainenJavierAleksi-NederveenGerard.sgf
@@ -65,7 +65,7 @@ stages:
       - 21-12 12:W+8.5 round:4 sgf:2021/4-GudmundssonHallbjorn-FragmanAmir.sgf
       - 21-39 39:W+R round:1 sgf:2021/1-GudmundssonHallbjorn-MajkaMarcin.sgf
       - 22-6 22:B+9.5 round:1 sgf:2021/1-MalcokKaan-TengJustin.sgf
-      - 22-7 7:W+14.5 round:4 sgf:2021/4-MalcokKaan-XieKaikun.sgf
+      - 22-7 7:W+14.5 round:4 sgf:2021/4-MalcokKaan-XieKaiKun.sgf
       - 22-41 22:B+R round:2 sgf:2021/2-MalcokKaan-MayerLisa.sgf
       - 23-5 5:W+R round:4 sgf:2021/4-WongHoward-ChanYiTien.sgf
       - 23-58 23:B+R round:2 sgf:2021/2-WongHoward-SrivastavaPranjal.sgf
