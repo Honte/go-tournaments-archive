@@ -1,0 +1,37 @@
+website: https://www.irish-go.org/national-international/top-8/past-irish-championships/2010-irish-championship-table/
+top:
+  - idavis
+  - jhutchinson
+  - nmitchell
+stages:
+  - type: tournament
+    file: ie2010.txt
+    name: top8
+    dir: 2010/top8
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 1-7 1:B+9.5 round:7 sgf:2010/top8/7-JamesHutchinson-MichaelThai.sgf
+      - 2-1 1:W+4.5 round:6 sgf:2010/top8/6-IanDavis-JamesHutchinson.sgf
+      - 8-1 1:W+R round:5 sgf:2010/top8/5-ColinMacSweeny-JamesHutchinson.sgf
+  - type: tournament
+    file: ie2010final.txt
+    name: Final
+    dir: 2010/final
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+? round:1 sgf:2010/final/1-IanDavis-JamesHutchinson.sgf
+      - 2-1 1:W+? round:2 sgf:2010/final/2-JamesHutchinson-IanDavis.sgf

@@ -1,0 +1,19 @@
+; TC[T260418D]
+; CL[A]
+; EV[Irish Championship]
+; PC[IE, Dublin]
+; DT[2026-04-18,2026-04-27]
+; HA[h9]
+; KM[6.5]
+; TM[82.5]
+; CM[ (submitted by John_Courtney)]
+;.
+;
+1 Liu Dewei         4d IE  Belf 3 1 0 0 5+     4+     2+     0= 0=     |20174374
+2 Lu Xinqun         4d IE  Dubl 3 1 0 0 6+     3+     1-     0= 3+     |19733813
+3 Renaut Philippe   3d IE  Galw 3 3 0 0 7+     2-     5+     4+ 2-     |10386926
+4 Syrotkin Larion   3d UA  Cork 2 4 0 0 8+     1-     6+     3- 0=     |20586236
+5 Courtney John     1d IE  Dubl 1 5 0 0 1-     8+     3-     0= 0=     |17874483
+6 Han Jinrun        1k IE  Belf 1 5 0 0 2-     7+     4-     0= 0=     |20801825
+7 Pszonka Roman     3d IE  Dubl 0 7 0 0 3-     6-     0=     0= 0=     |10874842
+8 Nulty Stephen     1k IE  Dubl 0 7 0 0 4-     5-     0=     0= 0=     |18513352

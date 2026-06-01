@@ -1,0 +1,10 @@
+; CL[A]
+; EV[Irish Championship Final]
+; PC[IE, KGS]
+; HA[h9]
+; KM[6.5]
+;.
+;
+1 Courtney John     1d IE  Dubl  2    0    0    0        2+ 2+  |17874483
+2 Delogu Alex       1k IE  Dubl  0    0    0    0        1- 1-  |16786836
+

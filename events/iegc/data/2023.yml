@@ -1,0 +1,39 @@
+top:
+  - prenaut
+  - xlu
+  - pdyszczyk
+stages:
+  - type: tournament
+    file: ie2023.txt
+    name: top8
+    notes: double ladder
+    dir: 2023/top8
+    scoringColumns:
+      - wins
+      - place
+      - null
+      - null
+    breakers:
+      - place
+    findSharedPlaces: true
+    games:
+      - 1-4 1:B+? round:4 sgf:2023/top8/4-PhilippeRenaut-RomanPszonka.sgf
+      - 1-5 1:B+? round:3 sgf:2023/top8/3-PhilippeRenaut-MateiGarcia.sgf
+      - 2-1 2:B+? round:1 sgf:2023/top8/1-XinqunLu-PhilippeRenaut.sgf
+      - 3-1 1:W+R round:5 sgf:2023/top8/5-PrzemyslawDyszczyk-PhilippeRenaut.sgf ogs:https://online-go.com/game/51530773
+  - type: tournament
+    file: ie2023final.txt
+    name: Final
+    dir: 2023/final
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 1-2 2:W+20.5 round:2 sgf:2023/final/2-PhilippeRenaut-XinqunLu.sgf ogs:https://online-go.com/game/52143581
+      - 2-1 1:W+6.5 round:1 sgf:2023/final/1-XinqunLu-PhilippeRenaut.sgf ogs:https://online-go.com/game/51735612
+      - 2-1 1:W+R round:3 sgf:2023/final/3-XinqunLu-PhilippeRenaut.sgf ogs:https://online-go.com/game/52347829

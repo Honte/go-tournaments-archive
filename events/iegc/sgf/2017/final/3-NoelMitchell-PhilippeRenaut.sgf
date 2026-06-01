@@ -1,0 +1,112 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]OT[5x60 byo-yomi]C[ptitlou [1d\]\: Irish Go Championship - final game
+ptitlou [1d\]\: Have a nice game Noel!
+irelandgo [?\]\: Have a good game!
+]
+AP[CGoban:3]SZ[19]GM[1]EV[IE 2017 Final]RO[3]DT[2018-02-26]PC[The KGS Go Server at http\://www.gokgs.com/]
+PB[Noel Mitchell]PW[Philippe Renaut]WR[1d]KM[6.5]TM[5400]RE[W+13.50]MULTIGOGM[1]
+;B[pd]BL[5375.86];W[dp]WL[5384.6];B[pp]BL[5352.3];W[dc]WL[5371.76];B[pj]BL[5336.87]
+;W[nc]WL[5347.12];B[nd]BL[5153.59];W[md]WL[5336.09];B[ne]BL[5150.22];W[pc]WL[5226.29]
+;B[oc]BL[5127.85];W[ob]WL[5221.49];B[od]BL[5125.58];W[mb]WL[5196.35];B[qc]BL[5108.81]
+;W[pb]WL[5148.43];B[lc]BL[5080.43];W[mc]WL[5143.41];B[de]BL[4849.57];W[ce]WL[5040.34]
+;B[cf]BL[4830.23];W[cd]WL[5037.03];B[df]BL[4801.08];W[ed]WL[5004.38];B[cj]BL[4764.67]
+;W[nq]WL[4951.83];B[kp]BL[4478.4]C[Javaness [1d\]\: I kind of expected C14 to be at F3
+]
+;W[no]WL[4678.18];B[pn]BL[4474.48];W[nm]WL[4641.59];B[pl]BL[4421.44];W[hp]WL[4630.22]
+;B[km]BL[4308.29];W[cl]WL[4300.05];B[ej]BL[4238.18];W[lf]WL[4240.82];B[ng]BL[3922.71]
+;W[qd]WL[4068.36];B[qe]BL[3875.25];W[rd]WL[4065.24];B[re]BL[3864.83];W[rc]WL[4060.8]
+;B[cq]BL[3845.28];W[cp]WL[3781.92];B[dq]BL[3832.02];W[fq]WL[3779.21];B[eq]BL[3631]
+;W[ep]WL[3709.94];B[fr]BL[3628.04];W[ko]WL[3535.76];B[lo]BL[3571.18];W[jo]WL[3476.47]
+;B[ln]BL[3444.61];W[lp]WL[3467.02];B[mp]BL[3434.93];W[lq]WL[3463.59];B[np]BL[3382.1]
+;W[mq]WL[3427.71]C[jameshut [?\]\: this feels good for black
+];B[oq]BL[3139.91]
+;W[gq]WL[3407.03];B[bp]BL[3089.42];W[bo]WL[3396.01];B[bq]BL[3085.54];W[ff]WL[3328.53]
+;B[ic]BL[2577.67];W[gc]WL[3287.58];B[if]BL[2246.13];W[lh]WL[3166.22];B[ih]BL[2099.97]
+;W[qm]WL[3063.48];B[pm]BL[1906.94];W[fh]WL[2759.88];B[dh]BL[1757.01];W[nh]WL[2630.43]
+;B[og]BL[1664.65];W[pi]WL[2540.62];B[oi]BL[1560.01];W[qj]WL[2508.29];B[oj]BL[1432.1]
+;W[ph]WL[2430.47];B[oh]BL[1418.42];W[rk]WL[2419.52];B[rh]BL[1401.7];W[rn]WL[2365.48]
+;B[ql]BL[1390.19];W[rl]WL[2347.38];B[qn]BL[1368.54];W[ri]WL[2282.72];B[qh]BL[1354.38]
+;W[rm]WL[2242.66];B[ro]BL[1333.35];W[rp]WL[2152.83];B[so]BL[1287.01];W[sj]WL[1800.96]
+;B[qi]BL[1273.58];W[qk]WL[1790.31];B[gd]BL[1136.48];W[fd]WL[1636.63];B[ge]BL[1058.7]
+;W[hc]WL[1617.86];B[id]BL[1043.8];W[je]WL[1518.46];B[ie]BL[1029.81];W[ef]WL[1511.37]
+;B[lj]BL[603.074];W[jg]WL[1465.41];B[hi]BL[585.871];W[bk]WL[1445.74];B[el]BL[532.566]
+;W[or]WL[1348.87];B[pr]BL[522.102];W[nr]WL[1345.81];B[gr]BL[498.893];W[hr]WL[1311.71]
+;B[ib]BL[356.523];W[kc]WL[1273.44];B[io]BL[232.054];W[jp]WL[1248.53];B[cn]BL[168.389]
+;W[co]WL[1148.11];B[bn]BL[141.295];W[an]WL[1143.79];B[am]BL[87.893];W[ao]WL[1135.61]
+;OB[4]B[dm]BL[60];W[bm]WL[1119.45];OB[4]B[en]BL[60];W[ip]WL[1042.83];OB[4]B[fo]
+BL[60];W[cm]WL[1031.15];OB[4]B[dn]BL[60];W[fp]WL[1010.86];OB[4]B[in]BL[60];W[pk]
+WL[997.363];OB[4]B[ok]BL[60];W[qo]WL[993.373];OB[4]B[qp]BL[60];W[oo]WL[988.491]
+;OB[4]B[po]BL[60];W[op]WL[985.797];OB[4]B[pq]BL[60];W[mo]WL[970.771];OB[4]B[bj]
+BL[60];W[ig]WL[893.733];OB[4]B[hg]BL[60];W[gh]WL[889.263];OB[4]B[hh]BL[60];W[fj]
+WL[882.725];OB[4]B[fk]BL[60];W[gj]WL[877.145];OB[4]B[ik]BL[60];W[gk]WL[852.455]
+;OB[4]B[gl]BL[60];W[gs]WL[827.928];OB[4]B[er]BL[60];W[jh]WL[783.569];OB[4]B[ji]
+BL[60];W[bf]WL[711.399];OB[4]B[bg]BL[60];W[be]WL[706.207];OB[4]B[al]BL[60];W[ak]
+WL[694.367];OB[4]B[ck]BL[60];W[hb]WL[664.05];OB[4]B[ha]BL[60];W[fb]WL[655.469];OB[4]
+B[fa]BL[60];W[ga]WL[645.197];OB[4]B[gb]BL[60];W[ea]WL[642.496];OB[4]B[aj]BL[60]
+;W[bl]WL[638.049];OB[4]B[am]BL[60];W[al]WL[629.409];OB[4]B[jf]BL[60];W[kf]WL[611.345]
+;OB[4]B[ia]BL[60];W[ga]WL[566.273];OB[4]B[sh]BL[60];W[si]WL[561.66];OB[4]B[lb]BL[60]
+;W[kb]WL[512.918];OB[4]B[ka]BL[60];W[ld]WL[509.055];OB[4]B[la]BL[60];W[ma]WL[495.479]
+;OB[4]B[ja]BL[60];W[ps]WL[480.111];OB[4]B[qs]BL[60];W[os]WL[476.467];OB[4]B[rr]
+BL[60];W[ki]WL[445.501];OB[4]B[kj]BL[60];W[hl]WL[424.503];OB[3]B[gm]BL[60];W[hk]
+WL[417.799];OB[3]B[il]BL[60];W[gf]WL[393.575];OB[3]B[hf]BL[60];W[ag]WL[378.149]
+;OB[3]B[bh]BL[60];W[ap]WL[360.3];OB[3]B[aq]BL[60];W[ml]WL[278.512];OB[3]B[se]BL[60]
+;W[sd]WL[248.54];OB[3]B[jd]BL[60];W[kd]WL[243.857];OB[3]B[ll]BL[60];W[ei]WL[221.974]
+;OB[3]B[di]BL[60];W[hd]WL[214.627];OB[3]B[he]BL[60];W[mg]WL[209.294];OB[3]B[mi]
+BL[60];W[mh]WL[205.393];OB[3]B[fs]BL[60];W[hs]WL[202.666];OB[3]B[mk]BL[60];W[nl]
+WL[184.08];OB[3]B[dl]BL[60];W[am]WL[170.74];OB[3]B[li]BL[60];W[kh]WL[168.001];OB[3]
+B[af]BL[60];W[ae]WL[165.263];OB[3]B[hj]BL[60];W[go]WL[149.707];OB[3]B[gn]BL[60]
+;W[eo]WL[146.719];OB[3]B[fn]BL[60];W[jn]WL[139.41];OB[3]B[jm]BL[60];W[ke]WL[126.131]
+;OB[3]B[ho]BL[60];W[sn]WL[111.541];OB[3]B[hm]BL[60];W[nf]WL[92.143];OB[3]B[of]BL[60]
+;W[mf]WL[87.501];OB[3]B[nk]BL[60];W[ni]WL[84.543];OB[3]B[nj]BL[60];W[dd]WL[75.482]
+;OB[3]B[ah]BL[60];W[eh]WL[70.672];OB[3]B[gi]BL[60];W[fi]WL[67.364];OB[3]B[dg]BL[60]
+;W[gp]WL[64.169];OB[3]B[me]BL[60];W[ol]WL[36.328];OB[3]B[af]BL[60];W[jj]WL[16.894]
+;OB[3]B[ii]BL[60];W[ag]WL[14.689];OB[3]B[fe]BL[60];W[ee]WL[6.824];OB[3]B[af]BL[60]
+;W[sp]WL[4.915];OB[3]B[qo]BL[60];W[ag]WL[3.011];OB[3]B[mn]BL[60];W[nn]WL[0.023]
+;OB[3]B[af]BL[60];OW[5]W[kn]WL[60];OB[3]B[lm]BL[60];OW[5]W[ag]WL[60];OB[3]B[sk]
+BL[60];OW[5]W[sl]WL[60];OB[3]B[af]BL[60];OW[5]W[ek]WL[60];OB[3]B[dk]BL[60];OW[5]
+W[ag]WL[60];OB[3]B[rb]BL[60];OW[5]W[qb]WL[60];OB[3]B[af]BL[60];OW[5]W[on]WL[60]
+;OB[3]B[ag]BL[60];OW[5]W[gg]WL[60];OB[3]B[eg]BL[60];OW[5]W[om]WL[60];OB[3]B[rq]
+BL[60];OW[5]W[mm]WL[60];OB[3]B[ij]BL[60];OW[5]W[do]WL[60];OB[3]B[fg]BL[60];OW[5]
+W[jc]WL[60];OB[3]B[jb]BL[60];OW[5]W[le]WL[60];OB[3]B[]BL[60];OW[5]W[]WL[60]TB[ar]
+[sg][oe][pe][pf][qf][rf][sf][cg][pg][qg][rg][ch][ph][ai][bi][ci][pi][dj][jj][mj]
+[ek][jk][kk][lk][fl][jl][kl][em][fm][im][hn][rp][sp][qq][sq][br][cr][dr][qr][sr]
+[as][bs][cs][ds][es][rs][ss]TW[ks][sa][ms][ns][aa][ba][ca][da][fa][na][oa][pa][qa]
+[ra][ls][ab][bb][cb][db][eb][gb][nb][rb][sb][ac][bc][cc][ec][fc][qc][sc][ad][bd]
+[kg][lg][rj][sk][sm][kp][np][mp][hq][iq][jq][kq][ir][jr][kr][lr][mr][is][js]C[Kev [3k\]\: great game!
+ptitlou [1d\]\: thanks Noel
+irelandgo [?\]\: vERY GOOD. Thanks
+ptitlou [1d\]\: Great game
+irelandgo [?\]\: Yes i lft some bad aji thugh
+irelandgo [?\]\: Well done.
+ptitlou [1d\]\: yes, i was relying on this black territory to somehow shrink at one point
+ptitlou [1d\]\: but it was tough
+ptitlou [1d\]\: and tense
+irelandgo [?\]\: Yes you lived underneath and then destroyed outside too
+ptitlou [1d\]\: yes i guess without the q9 push trick playthe game was ultra close
+irelandgo [?\]\: You alos did wel to counter my possible cuts at top 
+ptitlou [1d\]\: yes the second peep was saving me from the cut so I felt quite ok in this area
+ptitlou [1d\]\: so many things happened in this game
+ptitlou [1d\]\: that was hard to identifiy the best choices
+irelandgo [?\]\: yes so many different areas in play
+ptitlou [1d\]\: that was a very interesting game
+irelandgo [?\]\: Yes, many ways we could both have gone
+ptitlou [1d\]\: I played on a real board to avoid playing too fast as I usually do on screen
+irelandgo [?\]\: I could stare at screen forever on some of the moves...
+ptitlou [1d\]\: I guess a 7d commentary would destroy most of our choices ;-)
+irelandgo [?\]\: I'm sure
+irelandgo [?\]\: Want to look back?
+ptitlou [1d\]\: I am actually quite exhausted. What about doing another evening review ? That could be nice ?
+ptitlou [1d\]\: Like another monday evening ?
+irelandgo [?\]\: OK could do!
+irelandgo [?\]\: Thaks, see you soon.
+ptitlou [1d\]\: Thank you so much Noel, the three games were very exciting
+irelandgo [?\]\: Yes excellent games. How's everything wih you?
+ptitlou [1d\]\: Working too much! I have an IT day job and the restaurant during evening so no time
+ptitlou [1d\]\: But having good craic !!
+ptitlou [1d\]\: and you, always travelling ?
+irelandgo [?\]\: Right. I'm busy too. Last trip was holidays so not always bad
+ptitlou [1d\]\: haha!
+irelandgo [?\]\: See you.
+ptitlou [1d\]\: Well I hope to see you this year! 
+ptitlou [1d\]\: bye
+irelandgo [?\]\: bye
+])

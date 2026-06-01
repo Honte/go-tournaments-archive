@@ -1,0 +1,16 @@
+; TC[T101009I]
+; CL[A]
+; EV[2010 Irish Championship Final]
+; PC[IE, Belfast]
+; DT[2010-10-09,2010-11-27]
+; HA[h9]
+; KM[6.5]
+; TM[120]
+; CM[The Irish Championship final was played on 2 separate days (submitted by IrishGo)]
+;.
+; Irish Championship
+; 03/10/2010
+;
+; Pl Name                   Grd Co Club  NBW  SOS SOSO
+1 Davis Ian          1d IE  Belf  2    0    8    0    2+/b0  2+/w0   |12913769
+2 Hutchinson James   1k UK  Belf  0    4    0    0    1-/w0  1-/b0   |14850187

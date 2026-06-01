@@ -1,0 +1,11 @@
+; CL[A]
+; EV[Irish Championship Final]
+; PC[IE, Dublin]
+; DT[2008-12-11,2009-03-13]
+; TC[T081211A]
+; HA[h9]
+; KM[6.5]
+; TM[0]
+;
+1 Roever Claas    1k IE Galw 2  0    0  0    2-/w0 2+/b0 2+/b0  |10874017
+2 Mitchell Noel   2d IE Dubl 1  0    0  0    1+/b0 1-/w0 1-/w0  |10474563

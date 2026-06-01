@@ -1,0 +1,12 @@
+; CL[A]
+; EV[Irish Championship League 2009]
+; PC[IE,Dublin]
+; TM[0]
+; HA[h9]
+1 Davis Ian          1d UK Bel   4   0 0 0  0=  7+  6+  5+  4-  3+  2-
+2 Roever Claas       1k IE Gal   3   1 0 0  7-  0=  5+  6+  3-  4-  1+
+3 Mitchell Noel      2d IE Dub   3   0 0 0  6-  5+  0=  7+  2+  1-  4-
+4 Cao Tong_Yu        4d IE Cor   2.5 0 0 0  5+  6-  7+  0=  1+  2-  3-
+5 MacSweeny Colin    1k IE Cor   1.5 0 0 0  4-  3-  2-  1-  0=  7+  6+
+6 Thai Michael       1k IE Dub   1   0 0 0  3+  4-  1-  2-  7-  0=  5-
+7 Gallagher Brian    1k IE Dub   0   0 0 0  2-  1-  4-  3-  6-  5-  0=

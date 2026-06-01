@@ -1,0 +1,24 @@
+notes: Dec 2000 -  Sep 2001
+stages:
+  - type: tournament
+    file: ie2001.txt
+    name: top8    
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: true
+  - type: tournament
+    file: ie2001final.txt
+    name: Final
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: true    

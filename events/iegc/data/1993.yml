@@ -1,0 +1,35 @@
+top:
+  - nmitchell
+  - bpalmer
+  - bgallagher
+notes: data from IGA newsletter No. 9
+stages:
+  - type: tournament
+    file: ie1993.txt
+    name: top8
+    notes: November 1992 - January 1993
+    promoted: 1
+    placeOffset: 1
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: true
+  - type: tournament
+    file: ie1993final.txt
+    name: Final
+    notes: February 1993
+    dir: 1993/final
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 2-1 1:W+? round:1 sgf:1993/final/1-BernardPalmer-NoelMitchell.sgf

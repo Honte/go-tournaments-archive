@@ -1,0 +1,29 @@
+top:
+ - nmitchell
+ - sflinter
+ - bgallagher,jgibson
+website: http://belfastgo.yolasite.com/oldtop8.php 
+stages:
+  - type: tournament
+    file: ie2002.txt
+    name: top8
+    notes: a lot of games were not played, no available info about potential 3-4 playoff    
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: true
+  - type: tournament
+    file: ie2002final.txt
+    name: Final
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: true    

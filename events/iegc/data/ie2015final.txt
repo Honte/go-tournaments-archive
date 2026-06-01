@@ -1,0 +1,11 @@
+; CL[A]
+; EV[Irish Championship Final]
+; PC[IE, KGS]
+; DT[2015-10-30,2015-10-30]
+; HA[h9]
+; KM[6.5]
+;.
+;
+1 Renaut Philippe    2d IE  Galw  2    0    0    0       2+  2+  |10386926
+2 Hutchinson James   1d IE  Belf  0    0    0    0       1-  1-  |14850187
+

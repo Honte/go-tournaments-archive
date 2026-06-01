@@ -1,0 +1,11 @@
+; CL[A]
+; EV[Irish Championship Final]
+; PC[IE, KGS]
+; DT[2019-03-01,2019-03-15]
+; HA[h9]
+; KM[6.5]
+;.
+;
+1 Hutchinson James   2d IE  Belf  2    0    0    0       2+  2+  |14850187
+2 Synnott Cian       2k IE  Mayn  0    0    0    0       1-  1-  |12749308
+

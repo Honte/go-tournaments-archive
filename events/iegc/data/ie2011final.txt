@@ -1,0 +1,13 @@
+; TC[T110820F]
+; CL[A]
+; EV[Irish Championship Final]
+; PC[IE, Belfast]
+; DT[2011-08-20,2011-12-10]
+; HA[h9]
+; KM[6.5]
+; TM[120]
+; CM[ (submitted by IrishGo)]
+;.
+;
+1 Hutchinson James   1d UK  Belf  2    0    0    0    2-/b   2+/w   2+/w    |14850187
+2 Davis Ian          1d IE  Belf  1    0    0    0    1+/w   1-/b   1-/b    |12913769

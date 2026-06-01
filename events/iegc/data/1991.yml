@@ -1,0 +1,13 @@
+notes: played in January 1991 - 4 people with semifinal and final (IGA newsletter No. 7)
+stages:
+  - type: tournament
+    file: ie1991final.txt
+    name: Final
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: true

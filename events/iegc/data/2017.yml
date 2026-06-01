@@ -1,0 +1,36 @@
+website: https://www.irish-go.org/2017-irish-championship-table/
+top:
+  - prenaut
+  - nmitchell
+  - sflinter
+stages:
+  - type: tournament
+    file: ie2017.txt
+    name: top8
+    notes: additional playoff 2-3
+    dir: 2017/top8
+    scoringColumns:
+      - wins
+      - playoff
+      - null
+      - null
+    breakers:
+      - wins
+      - playoff
+    findSharedPlaces: true
+  - type: tournament
+    file: ie2017final.txt
+    name: Final
+    dir: 2017/final
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 1-2 2:W+23.5 round:2 sgf:2017/final/2-PhilippeRenaut-NoelMitchell.sgf
+      - 2-1 1:W+13.5 round:3 sgf:2017/final/3-NoelMitchell-PhilippeRenaut.sgf
+      - 2-1 1:W+R round:1 sgf:2017/final/1-NoelMitchell-PhilippeRenaut.sgf

@@ -1,0 +1,11 @@
+; CL[A]
+; EV[Irish Championship Final]
+; PC[IE, KGS]
+; DT[2019-11-02,2019-11-02]
+; HA[h9]
+; KM[6.5]
+;.
+;
+1 Garcia Matei       2k IE  Dubl  2    0    0    0       2- 2+ 2+  |14986807
+2 Hutchinson James   1d IE  Belf  1    0    0    0       1+ 1- 1-  |14850187
+

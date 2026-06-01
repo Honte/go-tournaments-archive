@@ -1,0 +1,23 @@
+; TC[T100116A]
+; CL[A]
+; EV[Irish Championship 2010]
+; PC[IE, Dublin]
+; DT[2010-01-16,2010-02-24]
+; HA[h9]
+; KM[6.5]
+; TM[80]
+; CM[ (submitted by IrishGo)]
+;.
+; Irish Championship League Weekend 1
+; 16/01/2010
+;
+; Pl Name                   Grd Co Club  NBW  SOS SOSO
+1 Hutchinson James   1k UK  Belf  7    6    34   0    5+/w0  3+/b0  6+/b0  4+/w0 8+    2+    7+    |14850187
+2 Davis Ian          1d IE  Belf  6    4    37   0    6+/w0  5+/b0  8+/b0  3+/w0 7+    1-    4+    |12913769
+3 Mitchell Noel      2d IE  Dubl  4    8    18   0    8+/b0  1-/w0  4+/b0  2-/b0 5+/w0 7+    6+    |10474563
+4 Barry Eoghan       3k IE  Dubl  3    5    19   0    7+/b0  8+/w0  3-/w0  1-/b0 6+/w0 5+/b0 2-    |14625974
+5 Gibson John        1k IE  Dubl  2    10   26   0    1-/b0  2-/w0  7+/w0  6+/w0 3-/b0 4-/w0 8+/b0 |10637385
+6 Wales Rory         3k IE  Cork  1    11   25   0    2-/b0  7+/w0  1-/w0  5-/b0 4-/b0 8-    3-    |13533806
+7 Thai Michael       1k IE  Dubl  1    5    34   0    4-/w0  6-/b0  5-/b0  8+/w0 2-    3-    1-    |13925142
+8 MacSweeny Colin    1k IE  Dubl  1    8    22   0    3-/w0  4-/b0  2-/w0  7-/b0 1-    6+    5-/w0 |14998478
+; more games on T100127A  2010-01-27 until 2010-02-24

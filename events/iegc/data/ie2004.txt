@@ -1,0 +1,13 @@
+; CL[A]
+; EV[Irish Championship League 2004]
+; PC[IE,Dublin]
+; TM[0]
+; HA[h9]
+1 Flinter Stephen        1d IE Dub   5   8+  7+  6+  5+  4-  3+  0=
+2 Mitchell Noel          2d IE Dub   5   7+  8+  5+  6+  3-  4+  0=
+3 Deme Olivier           3k IE Dub   4   6-  5+  8+  7+  2+  1-  4-
+4 Brennan Paul           2k IE Car   3   5-  6+  7-  0=  1+  2-  3+
+5 Walsh Aidan            2k IE Dub   3   4+  3-  2-  1-  8+  7+  6-
+6 Gibson John            2k IE Dub   3   3+  4-  1-  2-  7-  8+  5+
+7 Rafferty Chris         2k IE Dub   2   2-  1-  4+  3-  6+  5-  0=
+8 Palmer Bernard         1k IE Dub   0   1-  2-  3-  0=  5-  6-  0=

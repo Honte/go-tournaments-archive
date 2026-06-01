@@ -1,0 +1,29 @@
+top:
+ - nmitchell
+ - sflinter
+ - odeme
+website: https://www.irish-go.org/national-international/top-8/past-irish-championships/2004-irish-championship/
+stages:
+  - type: tournament
+    file: ie2004.txt
+    name: top8
+    notes: It was decided not to have a play-off for places 4-6
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: true
+  - type: tournament
+    file: ie2004final.txt
+    name: Final
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: true    

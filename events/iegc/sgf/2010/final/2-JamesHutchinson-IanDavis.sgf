@@ -1,0 +1,30 @@
+(;CA[utf-8]FF[4]GM[1]PM[2]OT[5x10 byo-yomi]RU[Japanese]FG[259:]AP[GOWrite:2.2.21]
+SZ[19]ST[2]GN[Irish Final Game 2]EV[Irish Final Game 2]RO[2]DT[2010-11-27]PC[Belfast]
+PB[James Hutchinson]BR[1k]PW[Ian Davis]WR[1d]KM[6.5]TM[0.0]MULTIGOGM[1]
+;B[dp];W[pd];B[dc];W[pp];B[nc];W[qf];B[jd]
+(;W[df]C[See normal variation for Kobayashi opening];B[ce];W[cj]C[Go Seigen was fond of this kind of tenuki]
+;B[cf];W[cm];B[gq];W[bp]LB[ec:A]C[bad exchange- now there is no aji in black's corner shape]
+;B[cq];W[ec];B[db];W[hc]
+(;B[ic]C[kick is not necessary];W[hd];B[jf];W[dd];B[cd];W[eb]LB[hg:A]C[heavy move]
+;B[hf];W[gf];B[gg];W[ff];B[nq];W[qn];B[pr];W[pj];B[qq];W[pb]C[interesting];B[ql]
+;W[pl]C[this was not good here, a leaning attack at A];B[pk];W[qk];B[ok];W[oj]
+(;B[rk];W[qj];B[pm];W[ol];B[om];W[nk];B[qm];W[nm];B[oo]C[really soft];W[hg];GOWRITEFG[includePastCount:50]
+L[ch][np][jp]FG[259:]PM[2];B[ig];W[hh];B[dg];W[eg];B[dh];W[on];B[pn];W[nn];B[po]
+;W[bh];B[bg];W[ch];B[cg];W[he]C[no meaning - attack];B[ne];W[nb];B[mb];W[oc];B[mc]
+;W[ma];B[la];W[na];B[ib];W[ng]C[slow];B[mg];W[mh];B[lg];W[nf];B[me];W[lh];B[ih]
+;W[if];B[je];W[ii];B[lo];W[iq];B[kq];W[io];B[go];W[kr];B[lr]LB[lq:A]C[A
+
+];W[kp]
+;B[lp];W[jq];B[lq];W[gr];B[fr];W[hr];B[eq]C[losing move];W[kn];GOWRITEFG[includePastCount:50]
+L[jp][kc][lc][mp]FG[259:]PM[2];B[ln];W[km];B[rj];W[ri];B[hn];W[im];B[hm];W[il];B[bn]
+;W[cn];B[bo];W[co];B[cp];W[bm];B[bq];W[sj];B[sl];W[da];B[cb];W[ca];B[ba];W[ea];B[bb]
+;W[hl];B[ei];W[ji];B[kh];W[ki];B[jh];W[mf];B[lf];W[oe];B[kb];W[ek];B[gb];W[hb];B[ha]
+;W[gc];B[ga];W[de];B[en];W[em];B[fm];W[el];B[fj];W[gk];B[lm];W[ll];B[ko];W[in];B[jr]
+;W[ir];B[ks];W[no];B[np];W[dn];B[eo];W[jp];B[ah];W[bi];B[fb];W[gi];B[eh];W[fh]C[White won by 7.5]
+;GOWRITEFG[includePastCount:64]FG[259:]PM[2])
+(;B[nk];W[rk];B[qj];W[rl];B[nj];W[qi];B[no]C[Black ought to win];GOWRITEFG[includePastCount:8]
+FG[259:]PM[2]SQ[cj][cm]))
+(;B[jc];W[he];B[if]C[fighting alternative];VW[aa:sg]GOWRITEFG[includePastCount:4]
+FG[259:]PM[2]))
+(;W[cf];B[de];W[bd];B[ch];W[df];B[ce];W[be];B[cc];W[ff];B[bg];W[bf];B[gd];W[dh]
+;B[cj];W[ej];B[dl];VW[]GOWRITEFG[includePastCount:17]FG[259:]PM[2]))

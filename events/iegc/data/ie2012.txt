@@ -1,0 +1,23 @@
+; TC[T120114E]
+; CL[A]
+; EV[Irish Championship 2012]
+; PC[IE, Dublin]
+; DT[2012-01-14,2012-02-29]
+; HA[h9]
+; KM[6.5]
+; TM[80]
+; CM[Kick Off weekend for Irish Championship League Some international transfers (submitted by IrishGo)]
+;.
+; IrishChampionshipLeague2012
+; 15/01/2012
+;
+; Pl Name                   Grd Co Club  NBW  SOS SOSO
+1 Pszonka Roman      3d IE  Dubl  6    0    0   0    7+/w0  6+/b0  2-/b0  3+/w0 4+/w0 8+/w0 5+/b0 |10874842
+2 Hutchinson James   1d UK  Belf  5    1    0   0    8+/w0  4-/b0  1+/w0  5+/b0 3-/b0 7+/b0 6+    |14850187
+3 Davis Ian          1d IE  Belf  5    0    0   0    5+/b0  8+/b0  4-/w0  1-/b0 2+/w0 6+    7+/b0 |12913769
+4 MacSweeny Colin    2k IE  Dubl  4    1    0   0    6-/b0  2+/w0  3+/b0  7+/w0 1-/b0 5-/w0 8+/w0 |14998478
+5 Mitchell Noel      2d IE  Dubl  4    0    0   0    3-/w0  7+/b0  6+/b0  2-/w0 8+/b0 4+/b0 1-/w0 |10474563
+6 Kleczar Justyna    3k IE  Cork  3    0    0   0    4+/w0  1-/w0  5-/w0  8+/b0 7+    3-    2-    |13886169
+7 Gociu Tiberiu      2k IE  Belf  1    0    0   0    1-/b0  5-/w0  8+/w0  4-/b0 6-    2-/w0 3-/w0 |12850431
+8 Gibson John        2k IE  Dubl  0    0    0   0    2-/b0  3-/w0  7-/b0  6-/w0 5-/w0 1-/b0 4-/b0 |10637385
+; remainder T120126A 2012-01-26,2012-02-29

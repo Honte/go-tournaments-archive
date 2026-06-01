@@ -1,0 +1,94 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]OT[10/300 Canadian]C[Javaness [2d\]\: have a good game
+claas [2k\]\: have a nice game
+]
+AP[CGoban:3]SZ[19]GM[1]EV[IE 2009 Final]RO[2]DT[2009-11-28]PC[The KGS Go Server at http\://www.gokgs.com/]
+PB[Claas Roever]BR[2k]PW[Ian Davis]WR[2d]KM[6.5]TM[5400]RE[B+14.50]MULTIGOGM[1]
+;B[pd]BL[5388.69];W[qp]WL[5377.7];B[cd]BL[5372.37];W[cq]WL[5310.43];B[dn]BL[5342.14]
+;W[fp]WL[5302.71];B[kq]BL[5242.85];W[iq]WL[5272.29];B[op]BL[5150.57];W[pn]WL[5238.47]
+;B[qq]BL[5133.59];W[rq]WL[5234];B[pq]BL[5126.77];W[ro]WL[5228.7];B[ko]BL[5091.36]
+;W[fc]WL[5217.32];B[ic]BL[4918.45];W[cc]WL[5192.9];B[dc]BL[4869.37];W[dd]WL[5179.18]
+;B[bc]BL[4851.87];W[cb]WL[5171.28];B[ed]BL[4848.32];W[de]WL[5150.17];B[ec]BL[4831.39]
+;W[ce]WL[4802.14];B[bd]BL[4722.87];W[bb]WL[4793.26];B[be]BL[4707.82];W[bf]WL[4784.82]
+;B[ee]BL[4705.24];W[cf]WL[4772.36];B[db]BL[4665.14];W[ac]WL[4753.57];B[ql]BL[4500.63]
+;W[qf]WL[4738.33];B[pf]BL[4478.66];W[pg]WL[4712.5];B[of]BL[4469.49];W[qc]WL[4684.73]
+;B[pc]BL[4456.8];W[qd]WL[4682.25];B[qg]BL[4448.47];W[rf]WL[4677.91];B[qh]BL[4444.89]
+;W[jd]WL[4648.32];B[jc]BL[4353.59];W[ld]WL[4623.09];B[lc]BL[4324.04];W[kc]WL[4605.1]
+;B[kb]BL[4317.08];W[kd]WL[4604.09];B[mc]BL[4312.27];W[id]WL[4600.97];B[hc]BL[4302.63]
+;W[kh]WL[4570.41];B[om]BL[4232.56];W[on]WL[4512.13];B[gq]BL[4205.44];W[fq]WL[4496.17]
+;B[gp]BL[4136.75];W[io]WL[4433.95];B[go]BL[4122.3];W[fo]WL[4408.39];B[gn]BL[4073.67]
+;W[im]WL[4397.87];B[fn]BL[4059.19];W[jq]WL[4361.45];B[rr]BL[3974.84];W[sr]WL[4353.49]
+;B[km]BL[3945.38];W[kr]WL[4339.43];B[lq]BL[3925.74];W[lr]WL[4327.81];B[mq]BL[3890.99]
+;W[jo]WL[4318.16];B[fr]BL[3881.49];W[er]WL[4316.56];B[hr]BL[3879.07];W[eq]WL[4278.93]
+;B[ir]BL[3866.93];W[jr]WL[4276.97];B[ci]BL[3859.07];W[ik]WL[4263.8];B[kj]BL[3850.55]
+;W[ii]WL[4256.06];B[ji]BL[3841.79];W[jj]WL[4247.4];B[jh]BL[3823.61];W[ih]WL[4238.61]
+;B[jg]BL[3819.25];W[ig]WL[4234.02];B[if]BL[3762.2];W[jf]WL[4224.02];B[kf]BL[3759.09]
+;W[hf]WL[4205.51];B[je]BL[3752.03];W[ie]WL[4201.08];B[jf]BL[3735.19];W[hd]WL[4192.37]
+;B[hg]BL[3686.81];W[gf]WL[4187.64];B[hi]BL[3671.11];W[ef]WL[4169.96];B[fb]BL[3506.03]
+;W[kk]WL[4165.06];B[lj]BL[3498.14];W[lk]WL[4132.14];B[mj]BL[3456.59];W[jm]WL[4115.16]
+;B[bo]BL[3427.5];W[co]WL[4085.81];B[cn]BL[3389.6];W[bp]WL[4079.71];B[do]BL[3370.14]
+;W[cp]WL[4077.67];B[es]BL[3367.31];W[ds]WL[4063.87];B[fs]BL[3361.74];W[cr]WL[4060.38]
+;B[pm]BL[3296.87];W[rm]WL[4039.32];B[rl]BL[3267.28];W[qm]WL[4031.68];B[qn]BL[3260.79]
+;W[rn]WL[4020.5];B[nn]BL[3247.82];W[qr]WL[4010.97];B[pr]BL[3244.43];W[mk]WL[4001.84]
+;B[qb]BL[3174.56];W[rb]WL[3998.56];B[pb]BL[3169.57];W[ra]WL[3994.98];B[nk]BL[2945.73]
+;W[hh]WL[3934.05];B[gg]BL[2925.01];W[gh]WL[3924.57];B[fg]BL[2920.78];W[ff]WL[3922.8]
+;B[fh]BL[2900.44];W[fi]WL[3897.55];B[gi]BL[2891.11];W[ij]WL[3895.05];B[ei]BL[2886.16]
+;W[fj]WL[3892.77];B[dg]BL[2879.47];W[df]WL[3876.1];B[dh]BL[2807.81];W[ej]WL[3859.91]
+;B[dj]BL[2803.24];W[eg]WL[3854.88];B[eh]BL[2798.81];W[nl]WL[3831.18];B[ok]BL[2784.78]
+;W[lf]WL[3828.49];B[lg]BL[2777.52];W[mg]WL[3814.59];B[mf]BL[2744.69];W[le]WL[3809.26]
+;B[lh]BL[2736.02];W[rs]WL[3771.68];B[ml]BL[2725.33];W[el]WL[3756.09];B[dk]BL[2700.94]
+;W[nf]WL[3713.78];B[me]BL[2697.89];W[md]WL[3710.48];B[ne]BL[2693.93];W[lb]WL[3697.2]
+;B[mb]BL[2681.92];W[jb]WL[3691.99];B[la]BL[2673.11];W[gc]WL[3688.16];B[hb]BL[2664.76]
+;W[nd]WL[3672.37];B[oe]BL[2652.06];W[fl]WL[3639.66];B[dl]BL[2620.06];W[rg]WL[3618.12]
+;B[rh]BL[1960.71];W[kl]WL[3596.6];B[lm]BL[1939.66];W[ai]WL[3589.28];B[aj]BL[1934.85]
+;W[ah]WL[3584.34];B[bi]BL[1895.17];W[bh]WL[3579.57];B[ch]BL[1892.05];W[cg]WL[3567.63]
+;B[bk]BL[1874.75];W[bn]WL[3560.94];B[bm]BL[1871.93];W[ao]WL[3559.69];B[hm]BL[1802.58]
+;W[hl]WL[3550.26];B[gb]BL[1777.33];W[fe]WL[3532.85];B[mr]BL[1704.5];W[kp]WL[3525.4]
+;B[lp]BL[1692.16];W[jp]WL[3512.43];B[kn]BL[1657.66];W[sl]WL[3504.3];B[sk]BL[1651.92]
+;W[sm]WL[3503.04];B[rj]BL[1626.21];W[em]WL[3495.62];B[en]BL[1620.14];W[am]WL[3436.06]
+;B[bl]BL[1526.89];W[nc]WL[3417.2];B[nb]BL[1508.84];W[ps]WL[3411.86];B[os]BL[1498.93]
+;W[qs]WL[3408.39];B[po]BL[1473.11];W[qo]WL[3404.89];B[oo]BL[1465.42];W[qa]WL[3347.19]
+;B[ca]BL[1413.47];W[ae]WL[3322.43];B[ba]BL[1382.42];W[ad]WL[3319.97];B[al]BL[1335.59]
+;W[ns]WL[3306.2];B[or]BL[1329.2];W[ms]WL[3304.23];B[an]BL[1326.54];W[ll]WL[3278.08]
+;B[mm]BL[1321.14];W[am]WL[3276.36];B[nr]BL[1313.27];W[ls]WL[3273.82];B[sg]BL[1279.14]
+;W[rd]WL[3211.23];B[ek]BL[1237.75];W[fk]WL[3205.86];B[jn]BL[1230.48];W[in]WL[3200.72]
+;B[jl]BL[1223.02];W[jk]WL[3196.64];B[gl]BL[1207.53];W[gk]WL[3194.41];B[gm]BL[1200.71]
+;W[sf]WL[3192.74];B[sh]BL[1184.06];W[pa]WL[3183.03];B[oa]BL[1177.11];W[dp]WL[3179.12]
+;B[fd]BL[1160.45];W[gd]WL[3174.86];B[an]BL[1154.72];W[bo]WL[3151.61];B[qn]BL[1106.55]
+;W[pn]WL[3145.95];B[js]BL[1091.34];W[hp]WL[3143.17];B[hq]BL[1086.87];W[ho]WL[3140.66]
+;B[oc]BL[1056.85];W[dm]WL[3137.15];B[cm]BL[1050.23];W[eo]WL[3127.41];B[qe]BL[859.043]
+;W[re]WL[3120.15];B[pe]BL[851.426];W[am]WL[3118.05];B[sc]BL[831.899];W[sd]WL[3109.79]
+;B[an]BL[819.593];W[ks]WL[3107.76];B[is]BL[816.219];W[am]WL[3106.26];B[hk]BL[807.494]
+;W[hj]WL[3097.66];B[an]BL[804.966];W[gs]WL[3088.63];B[gr]BL[800.748];W[am]WL[3087.55]
+;B[on]BL[785.347];W[an]WL[3075.33];B[qn]BL[782.308];W[bj]WL[3072.51];B[cj]BL[777.914]
+;W[pn]WL[3071.07];B[dr]BL[770.539];W[cs]WL[3065.91];B[qn]BL[767.681];W[rk]WL[3064.29]
+;B[qk]BL[761.57];W[pn]WL[3062.14];B[rc]BL[755.011];W[sb]WL[3059.21];B[qn]BL[752.762]
+;W[ka]WL[3057.75];B[ja]BL[744.901];W[pn]WL[3056.45];B[ag]BL[742.624];W[bg]WL[3054.18]
+;B[qn]BL[702.89];W[na]WL[3051.65];B[ob]BL[691.232];W[pn]WL[3049.37];B[da]BL[645.64]
+;W[qn]WL[3046.55];B[]BL[610.88];W[ke]WL[3023.67];B[mh]BL[593.81];W[]WL[3023.67]
+;B[]BL[593.81]TB[ki][li][mi][ni][oi][pi][qi][ri][si][bj][di][nj][oj][pj][qj][sj]
+[ak][ck][pk][rk][cl][nl][ol][pl][ln][mn][lo][mo][no][mp][np][nq][oq][gs][jb][hs]
+[ea][fa][ga][ha][ia][ka][ma][na][eb][ib][nm][lb][nf][kg][mg][ng][og][pg][kh][nh]
+[oh][ph]TW[sa][bc][rc][sc][bd][cd][be][ge][he][se][ag][gi][hi][gj][hk][il][jl][sn]
+[so][ap][ep][ip][rp][sp][aq][bq][dq][sq][ar][br][dr][rr][as][ss][af][bs]C[Javaness [2d\]\: thanks
+claas [2k\]\: Thanks 
+claas [2k\]\: you got too separated I think
+Javaness [2d\]\: i think i just didn't push enough
+Javaness [2d\]\: soft belly
+claas [2k\]\: and again, it goes all the way
+claas [2k\]\: when can you play again?
+Javaness [2d\]\: Pick a fay next week
+Javaness [2d\]\: -day
+claas [2k\]\: I don't know yet, but I'll let you know
+Javaness [2d\]\: Tuesday maybe?
+claas [2k\]\: no, Tuesday I already know is not good
+claas [2k\]\: Friday onwards as well
+Javaness [2d\]\: Monday?
+Javaness [2d\]\: or Wednesday?
+claas [2k\]\: Monday maybe, I'll find out
+claas [2k\]\: I'll check Wednesday as well
+Javaness [2d\]\: ok
+claas [2k\]\: thanks again, I'm off now for a while at least
+claas [2k\]\: bye
+Javaness [2d\]\: ok
+Javaness [2d\]\: thanks now
+])
