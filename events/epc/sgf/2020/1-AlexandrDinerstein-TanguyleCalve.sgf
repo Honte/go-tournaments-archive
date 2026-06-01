@@ -1,0 +1,74 @@
+(;CA[windows-1250]NW[33]NB[43]LT[]RR[Normal]AP[MultiGo:4.4.4]SZ[19]GM[1]GN[Welvang-breakfast(B) IGS]
+EV[Internet Go Server game\: Welvang vs breakfast]RO[1]DT[2020-09-26]PC[IGS\:  igs.joyjoy.net 6969]
+PB[Alexandr Dinerstein]BR[3p ]PW[Tanguy le Calve]WR[5d ]KM[5.5]TM[4500]RE[W+2.5]
+US[Brought to you by IGS PANDANET]CP[
+  Copyright (c) PANDANET Inc. 2020
+  Permission to reproduce this game is given, provided proper credit is given.
+  No warrantee, implied or explicit, is understood.
+  Use of this game is an understanding and agreement of this notice.
+]
+MULTIGOGM[1]
+;B[pd]BL[4495];W[dp]WL[4493];B[pp]BL[4494];W[dc]WL[4485];B[ce]BL[4493];W[ed]WL[4447]
+;B[cc]BL[4444];W[cb]WL[4434];B[cd]BL[4444];W[bb]WL[4364];B[ch]BL[4436];W[hc]WL[4230]
+;B[nq]BL[4375];W[qf]WL[4226];B[qh]BL[4282];W[nd]WL[4196];B[pf]BL[4276];W[qc]WL[4187]
+;B[pc]BL[4252];W[qd]WL[4185];B[pe]BL[4246];W[rf]WL[4145];B[qg]BL[4187];W[qb]WL[3949]
+;B[fq]BL[4170];W[mp]WL[3909];B[cq]BL[4028];W[dq]WL[3889];B[cp]BL[4026];W[do]WL[3888]
+;B[dr]BL[4026];W[er]WL[3878];B[cr]BL[4026];W[fr]WL[3877];B[gq]BL[4026];W[iq]WL[3873]
+;B[gr]BL[4018];W[eq]WL[3869];B[bn]BL[4018];W[ho]WL[3824];B[lr]BL[3989];W[kq]WL[3759]
+;B[mf]BL[3930];W[di]WL[3708];B[ci]BL[3900];W[dk]WL[3702];B[qo]BL[3699];W[cj]WL[3653]
+;B[eg]BL[3595];W[fh]WL[3566];B[mn]BL[3469];W[ml]WL[3529];B[lq]BL[3381];W[ln]WL[3344]
+;B[kp]BL[3272];W[jo]WL[3256];B[kn]BL[3208];W[ko]WL[3189];B[lm]BL[3206];W[lo]WL[3186]
+;B[mm]BL[3205];W[nh]WL[3151];B[og]BL[3192];W[ol]WL[3132];B[mj]BL[3035];W[mk]WL[2959]
+;B[lj]BL[2804];W[nj]WL[2943];B[lh]BL[2800];W[ql]WL[2388];B[qj]BL[2762];W[kl]WL[2158]
+;B[ll]BL[2755];W[lk]WL[2155];B[kk]BL[2755];W[jl]WL[1337];B[jk]BL[2697];W[nn]WL[1283]
+;B[il]BL[2609];W[jm]WL[1246];B[hk]BL[2583];W[np]WL[1224];B[op]BL[2570];W[kj]WL[1011]
+;B[in]BL[2546];W[jj]WL[985];B[ik]BL[2544];W[jn]WL[976];B[hh]BL[2419];W[jh]WL[930]
+;B[mh]BL[2380];W[jf]WL[875];B[ii]BL[2361];W[df]WL[727];B[cf]BL[2321];W[kh]WL[706]
+;B[eh]BL[2271];W[ei]WL[693];B[fg]BL[2189];W[gh]WL[603];B[gg]BL[2178];W[gj]WL[592]
+;B[ih]BL[2147]C[
+ Mollusque 4d \: so painful for b
+];W[hf]WL[513];B[if]BL[2012]
+;W[ie]WL[498];B[ig]BL[2011];W[ke]WL[491];B[fo]BL[1957];W[en]WL[316];B[fn]BL[1947]
+;W[cn]WL[311];B[bm]BL[1877];W[fm]WL[255];B[hn]BL[1858];W[gn]WL[136];B[go]BL[1857]
+;W[gm]WL[134];B[io]BL[1857];W[hp]WL[29];B[ip]BL[1770];W[jp]WL[26];B[hq]BL[1769]
+;W[im]WL[25];B[gp]BL[1769];W[hm]WL[24];B[ir]BL[1719];W[co]WL[333];B[bo]BL[1717]
+;W[fe]WL[296];B[lf]BL[1715];W[kf]WL[284];B[he]BL[1661];W[gf]WL[272];B[hg]BL[1654]
+;W[lc]WL[262];B[pm]BL[1647];W[om]WL[245];B[pb]BL[1600];W[ae]WL[225];B[id]BL[1556]
+;W[je]WL[224];B[ee]BL[1555];W[fd]WL[209];B[db]BL[1530];W[eb]WL[201];B[gk]BL[1429]
+;W[fk]WL[196];B[be]BL[1248];W[bg]WL[175];B[cg]BL[1197];W[ad]WL[167];B[af]BL[1193]
+;W[bc]WL[134];B[dd]BL[1182];W[ec]WL[124];B[ff]BL[1115];W[ge]WL[122];B[rg]BL[1085]
+;W[qe]WL[111];B[qa]BL[1081];W[ra]WL[110];B[oa]BL[1073];W[pa]WL[109];B[nb]BL[880]
+;W[mb]WL[95];B[md]BL[834];W[me]WL[57];B[le]BL[795];W[ld]WL[55];B[ne]BL[790];W[nc]
+WL[54];B[qa]BL[767];W[sb]WL[50];B[oj]BL[719];W[nk]WL[6];B[pl]BL[687];W[pn]WL[587]
+;B[qn]BL[675];W[pk]WL[585];B[qm]BL[674];W[pj]WL[573];B[qk]BL[661];W[jr]WL[478];B[kr]
+BL[629];W[jq]WL[476];B[js]BL[628];W[gi]WL[472];B[ij]BL[586];W[pi]WL[426];B[oo]BL[532]
+;W[on]WL[373];B[cl]BL[406];W[bk]WL[327];B[dl]BL[295];W[el]WL[306];B[bh]BL[226];W[mq]
+WL[276];B[mr]BL[222];W[ph]WL[195];B[pg]BL[213];W[dh]WL[152];B[dg]BL[211];W[qi]WL[69]
+;B[ri]BL[209];W[ni]WL[67];B[dm]BL[204];W[bl]WL[62];B[cm]BL[193];W[em]WL[61];B[am]
+BL[41];W[ng]WL[44];B[nf]BL[537];W[ds]WL[31];B[cs]BL[535];W[gs]WL[30];B[hs]BL[534]
+;W[ma]WL[14];B[fs]BL[499];W[es]WL[12];B[oh]BL[483];W[oi]WL[11];B[sf]BL[454];W[se]
+WL[10];B[no]BL[448];W[mo]WL[9];B[sg]BL[448];W[po]WL[574];B[qp]BL[431];W[od]WL[532]
+;B[oe]BL[419];W[ai]WL[510];B[bi]BL[374];W[bj]WL[505];B[ah]BL[360];W[lp]WL[442];B[bd]
+BL[357];W[ac]WL[441];B[gl]BL[309];W[aj]WL[433];B[al]BL[284];W[eo]WL[398];B[ck]BL[220]
+;W[fl]WL[346];B[kd]BL[198];W[hd]WL[328];B[oc]BL[126];W[mc]WL[325];B[pa]BL[121];W[kc]
+WL[262];B[na]BL[119];W[gs]WL[248];B[me]BL[114];W[fs]WL[246];B[ak]BL[110];W[dj]WL[245]
+;B[lg]BL[85];W[dn]WL[239];B[li]BL[81];W[kg]WL[209];B[tt]BL[76];W[tt]WL[207];B[tt]
+BL[600]C[
+ breakfast 3p \: breakfast dead @ D14
+ Welvang 5d \: Welvang dead @ J16
+ Welvang 5d \: Welvang dead @ L16
+ breakfast 3p \: breakfast dead @ B13
+ Welvang 5d \: Welvang dead @ D18
+ Welvang 5d \: Welvang dead @ R8
+ Welvang 5d \: Welvang dead @ P10
+ Welvang 5d \: Welvang dead @ N7
+ Welvang 5d \: Welvang dead @ L6
+ Welvang done
+]
+;OS[a10621][a58503140][AliJ93][BenjaminDG][Bgecko][busizuzui][cailloux][Chen0928][chentom][ChriDo][cicero][CJMK][clemens][Clynch][CodyGo1][Cornel][CRWgbvGp][cstone][DeadmaN][deathtaxes][DomDom][Donzet][dtangster][ecore][Esdeth][figrolls][FlorentL][FreddaSWE][Gex][glocker][Gosushi3][grafro][GreenFrog][GRHN333][guta57][hallin][hex6][hiyosimaru][Horus][huffle][hvk3][Hvk5][ibet001][ioda][iogo][ja11335][jaguarondi][jansteen][jm9636][Jna][joachim][jokobaer][josekin][kamelo][kango][kornacker][Krainov][KrtekHonza][lightedge][Lomis][Machiavel][MagiQ][MDZstream][megajouca][meikai][miao][MK168][Mollusque][Mtwana][musashi888][nadav][Nebilim][nelson][nidza92][Nissetufs][nsmt51][OferZivo][oldfisher][OLED77][Once][Oskari][owl][Palko][Picaresque][Pingu007][plw1053][Prosto][ptitlou][QY88][ramyun][rekcart][Roln][Sadiker][sakugo][Samoht][Schegolev][sergiopc93][shennn][ShogiPlayR][siljan][siskin][Slift][songwei][sotabarba][STARDUST][stc3690][team][ThomasJ][tkykjin][tm470913][tsaisun016][tuck][turikichi][Vagrabon][vedmed][Veedee][VERDUGO][Vier][voidptr][Wade][weakstone][Xeremon][yanagisax][Yoshirou]
+TB[bq][bp][bg][bf][df][de][ef][hr][hp][is][ks][ls][ms][ns][ho][nr][os][or][oq][of]
+[ob][ps][pr][qs][qr][qq][ql][rs][rr][rq][rp][ro][rn][rm][rl][rk][rh][ss][sr][sq]
+[sp][so][ao][sn][sm][sl][sk][sj][si][sh][rj][as][ar][aq][ap][pq][an][ag][bs][br]
+TW[ab][aa][ba][ca][db][da][ek][ej][ea][fj][fi][fc][fb][fa][gc][gb][ga][he][hb][ha]
+[id][ic][ib][ia][jd][jc][jb][ja][kp][kn][km][kd][kb][ka][lm][ll][lb][la][mn][mm]
+[nm][ok][oj][re][rd][rc][rb][sd][sc][gd][sa][nl])

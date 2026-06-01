@@ -1,0 +1,23 @@
+(;CA[utf-8]ST[2]RU[Chinese]GM[1]AP[CGoban:3]SZ[19]FF[4]GN[European Pro Championship - Mateusz Surma 2p W - Ilya Shikshin 3p B]
+EV[European Pro Championship 2019]EV[EGF Academy March 2019]RO[2]RO[2]DT[2019-03-08]
+PC[Jena - JIGS]PB[Ilja Shikshin]BR[3p]PW[Mateusz Surma]WR[2p]KM[7.5]RE[W+Resign]
+SO[http\://www.eurogofed.org/academy]MULTIGOGM[1]
+;B[pd]C[White\: Mateusz Surma
+Black\: Ilya Shikshin
+Result\: W+Resign
+]N[Mateusz Surma vs Ilya Shikshin]
+;W[dd];B[qp];W[oq];B[dp];W[cq];B[dq];W[cp];B[do];W[bn];B[pn];W[jq];B[hq];W[qf];B[qh]
+;W[qc];B[qd];W[pc];B[od];W[nb];B[mq];W[hp];B[ip];W[iq];B[ho];W[gp];B[gq];W[mp];B[fp]
+;W[jp];B[io];W[nq];B[lp];W[mo];B[lo];W[lq];B[mr];W[lr];B[mn];W[ln];B[kn];W[lm];B[jo]
+;W[on];B[mm];W[po];B[qo];W[nn];B[pm];W[ml];B[nm];W[om];B[nl];W[ol];B[nk];W[pl];B[pr]
+;W[mc];B[md];W[ld];B[nc];W[lb];B[le];W[kd];B[ke];W[je];B[jf];W[if];B[jg];W[pi];B[ph]
+;W[oi];B[ig];W[ie];B[qi];W[qj];B[mi];W[oh];B[pf];W[hg];B[hh];W[gg];B[cc];W[dc];B[cd]
+;W[ce];B[be];W[bf];B[cf];W[de];B[bg];W[bd];B[af];W[bc];B[cm];W[cn];B[dm];W[gh];B[hi]
+;W[gi];B[gj];W[fj];B[fk];W[nj];B[mk];W[ri];B[rh];W[mj];B[lj];W[li];B[kj];W[ki];B[jj]
+;W[hj];B[gk];W[ji];B[ij];W[ok];B[ll];W[lg];B[rc];W[rb];B[rd];W[bm];B[bl];W[dr];B[er]
+;W[bk];B[al];W[cj];B[dk];W[ch];B[bh];W[bi];B[cg];W[dh];B[ah];W[ad];B[ae];W[df];B[rj]
+;W[rk];B[si];W[rm];B[oo];W[pq];B[qq];W[pp];B[cr];W[br];B[ds];W[bs];B[qk];W[qn];B[pj]
+;W[oj];B[rn];W[ql];B[jd];W[dg];B[kb];W[jc];B[la];W[kc];B[ob];W[oc];B[qb];W[nd];B[pb]
+;W[nc];B[ra];W[kf];B[na];W[ih];B[ii];W[jh];B[jb];W[ib];B[ic];W[id];B[ka];W[ia];B[ma]
+;W[oa];B[pa];W[mb];B[sb];W[nf];B[hc];W[hb];B[fb];W[fc];B[cb];W[bb];B[gc];W[gb];B[ec]
+;W[fd];B[db];W[ba];B[ab];W[da])

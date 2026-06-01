@@ -13,6 +13,7 @@
     "dev:kpmc": "cross-env EVENT=kpmc next dev",
     "dev:hrgc": "cross-env EVENT=hrgc next dev",
     "dev:wgl": "cross-env EVENT=wgl next dev",
+    "dev:epc": "cross-env EVENT=epc next dev",
     "build": "next build",
     "build:pgc": "cross-env EVENT=pgc next build",
     "build:wagc": "cross-env EVENT=wagc next build",
@@ -22,6 +23,7 @@
     "build:kpmc": "cross-env EVENT=kpmc next build",
     "build:hrgc": "cross-env EVENT=kpmc next build",
     "build:wgl": "cross-env EVENT=wgl next build",
+    "build:epc": "cross-env EVENT=epc next build",
     "start": "npx serve@latest out",
     "lint": "oxlint .",
     "extract:mp-db": "cross-env EVENT=pgc tsx tools/extract.ts",
@@ -33,6 +35,7 @@
     "sgf:match:kpmc": "cross-env EVENT=kpmc tsx tools/sgfMatcher/index.ts",
     "sgf:match:pwgc": "cross-env EVENT=pwgc tsx tools/sgfMatcher/index.ts",
     "sgf:match:pagc": "cross-env EVENT=pagc tsx tools/sgfMatcher/index.ts",
+    "sgf:match:epc": "cross-env EVENT=epc tsx tools/sgfMatcher/index.ts",
     "test": "node --import tsx --test \"**/*.test.ts\"",
     "fmt": "oxfmt --check .",
     "fmt:write": "oxfmt --write ."

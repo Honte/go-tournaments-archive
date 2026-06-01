@@ -1,0 +1,17 @@
+; TC[E170208A]
+; CL[A]
+; EV[2nd European Professional Go Championship]
+; PC[RU, Sankt-Peterburg]
+; DT[2017-02-08,2017-02-10]
+; HA[h9]
+; KM[6.5]
+; TM[120]
+; CM[ (submitted by Serpov) tie-break for the 3rd place Dinerstein - Lisy: 0-1]
+;.
+;Pl         Name       Grade  Club   1      2      3      4      5        Pt   SODOS playoff      
+1 Shikshin Ilja         1p RU  16Kz  5+/b   6-/w   3+/b   4+/w   2-/b  0=    3    8  0   |12013342
+2 Surma Mateusz         1p PL  Dzim  3+/w   5-/b   4-/w   6+/b   1+/w  0=    3    7  0   |12837968
+3 Lisy Pavol            1p SK  Vlky  2-/b   4+/b   1-/w   5+/b   6+/w  4+/w  3    6  1   |12686597
+4 Dinerstein Alexandr   3p RU  16Kz  6+/b   3-/w   2+/b   1-/b   5+/w  3-/b  3    6  0   |10313237
+5 Jabarin Ali           1p IL  TAv   1-/w   2+/w   6+/b   3-/w   4-/b  0=    2    4  0   |14637810
+6 Kachanovskyi Artem    1p UA  Rivn  4-/w   1+/b   5-/w   2-/w   3-/b  0=    1    3  0   |12662870

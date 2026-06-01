@@ -1,0 +1,32 @@
+website: https://www.eurogofed.org/epc/2024.html
+stages:
+  - type: tournament
+    file: epc2024.txt
+    time: 60min + 20sec fischer
+    komi: 7.5
+    notes: Chinese rules, additional games for 1st and 3rd place
+    scoringColumns:
+      - wins
+      - playoff
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: false
+    games:
+      - 1-3 3:W+R round:2 sgf:2024/2-MateuszSurma-ArtemKachanovskyi.sgf
+      - 1-4 1:B+5.5 round:3 sgf:2024/3-MateuszSurma-StanislawFrejlak.sgf
+      - 2-1 1:W+4.5 round:1 sgf:2024/1-AndriiKravets-MateuszSurma.sgf
+      - 2-1 1:W+R round:6 sgf:2024/6-AndriiKravets-MateuszSurma.sgf
+      - 2-3 2:B+1.5 round:4 sgf:2024/4-AndriiKravets-ArtemKachanovskyi.sgf
+      - 2-5 2:B+R round:3 sgf:2024/3-AndriiKravets-TanguyleCalve.sgf
+      - 3-4 4:W+R round:5 sgf:2024/5-ArtemKachanovskyi-StanislawFrejlak.sgf
+      - 3-5 3:B+R round:1 sgf:2024/1-ArtemKachanovskyi-TanguyleCalve.sgf
+      - 3-6 3:B+R round:3 sgf:2024/3-ArtemKachanovskyi-AliJabarin.sgf
+      - 4-2 2:W+0.5 round:2 sgf:2024/2-StanislawFrejlak-AndriiKravets.sgf
+      - 4-3 3:W+2.5 round:6 sgf:2024/6-StanislawFrejlak-ArtemKachanovskyi.sgf
+      - 4-5 4:B+R round:4 sgf:2024/4-StanislawFrejlak-TanguyleCalve.sgf
+      - 5-1 1:W+R round:5 sgf:2024/5-TanguyleCalve-MateuszSurma.sgf
+      - 5-6 5:B+R round:2 sgf:2024/2-TanguyleCalve-AliJabarin.sgf
+      - 6-1 1:W+16.5 round:4 sgf:2024/4-AliJabarin-MateuszSurma.sgf
+      - 6-2 2:W+4.5 round:5 sgf:2024/5-AliJabarin-AndriiKravets.sgf
+      - 6-4 4:W+R round:1 sgf:2024/1-AliJabarin-StanislawFrejlak.sgf

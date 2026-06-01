@@ -1,0 +1,115 @@
+(;CA[windows-1250]NW[34]NB[43]LT[]RR[Normal]AP[MultiGo:4.4.4]SZ[19]GM[1]GN[Roln-breakfast(B) IGS]
+EV[Internet Go Server game\: Roln vs breakfast]RO[4]DT[2020-09-27]PC[IGS\:  igs.joyjoy.net 6969]
+PB[Alexandr Dinerstein]BR[3p ]PW[Ilja Shikshin]WR[6d?]KM[0.5]TM[4500]RE[W+Resign]
+US[Brought to you by IGS PANDANET]CP[
+  Copyright (c) PANDANET Inc. 2020
+  Permission to reproduce this game is given, provided proper credit is given.
+  No warrantee, implied or explicit, is understood.
+  Use of this game is an understanding and agreement of this notice.
+]
+MULTIGOGM[1]
+;B[qd]BL[4489];W[dp]WL[4444];B[cd]BL[4486];W[qp]WL[4421];B[oq]BL[4481];W[pn]WL[4410]
+;B[fd]BL[4451];W[oc]WL[4393];B[md]BL[4442];W[oe]WL[4344];B[pf]BL[4441];W[hc]WL[4342]
+;B[pc]BL[4387];W[pb]WL[4332];B[qb]BL[4385];W[dd]WL[4321];B[de]BL[4332];W[dc]WL[4318]
+;B[cc]BL[4328];W[cb]WL[4317];B[bb]BL[4271];W[eb]WL[4314];B[ca]BL[4259];W[kc]WL[4188]
+C[
+ claire 4d+\: why is this game setting to 0.5 komi?
+];B[cn]BL[4158];W[fq]WL[4183]
+;B[lq]BL[4083];W[db]WL[4170];B[cf]BL[4048];W[ee]WL[4168]C[
+ rija 3d \: because of igs, they will adjust the result after the game by adding the komi
+ claire 4d+\: every other matches are set with the right komi...
+ rija 3d \: idk, they talked about that already on the last twich commentary
+ claire 4d+\: hmm
+ rija 3d \: maybe because breakfast as a "p" status
+ rija 3d \: others are all dan on igs
+ rija 3d \: idk
+ claire 4d+\: is the scoring method different if you have a pro account?
+ rija 3d \: maybe they juste did'nt noticed it when they opened the game =)
+ claire 4d+\: They are more accurate count themselves than use the system scoring I guess.
+ rija 3d \: it altready happened so no big deal to adjust in the end
+ rija 3d \: i dont think at these levels you need any scoring tools ahah yes
+]
+;B[hd]BL[3788]C[
+ claire 4d+\: I notice before that igs doesn't actually scoring with Japanese rules but some kind of area scoring...
+]
+;W[ef]WL[4016];B[gc]BL[3770];W[ic]WL[4011];B[hb]BL[3709]C[
+ claire 4d+\: BTW, who would you suppose would win? Ilya is the top pro in EGF and breakfast is actually Korean pro
+]
+;W[ed]WL[4004];B[ib]BL[3699];W[id]WL[3992];B[he]BL[3692];W[jb]WL[3991]C[
+ rija 3d \: Ilya is the favorite for sure
+ rija 3d \: but alexander are is in good shape lately
+]
+;B[hg]BL[3611]C[
+ rija 3d \: i would still cheer for ilya btw
+ claire 4d+\: K18 feels kinda passive and give black freedom toward the center..
+]
+;W[jf]WL[3960];B[ch]BL[3569]C[
+ rija 3d \: strong shape to fight hard
+ claire 4d+\: N16 is sitting in the key point for white shape...
+]
+;W[gf]WL[3912];B[hf]BL[3490];W[fi]WL[3903];B[hi]BL[3469];W[di]WL[3898]C[
+ rija 3d \: are you french btw ?
+]
+;B[dh]BL[3446]C[
+ rija 3d \: your nickname sound like =)
+];W[eh]WL[3854]C[
+ claire 4d+\: ma? no...
+ claire 4d+\: moi?
+ rija 3d \: ah ok =)
+]
+;B[kd]BL[3362]C[
+ rija 3d \: dont like W's poisition...
+ rija 3d \: alexender is really in good shape
+ claire 4d+\: I was wondering if L16 can cut off white..
+ rija 3d \: no but it's bothersome
+ claire 4d+\: if white connect out, it would be another dragon chasing on the other side right?
+]
+;W[ld]WL[3722];B[le]BL[3337];W[lc]WL[3721]C[
+ claire 4d+\: and K15?
+];B[ej]BL[3307]
+;W[fj]WL[3716];B[je]BL[3283];W[me]WL[3713];B[ie]BL[3265];W[lf]WL[3711];B[ke]BL[3259]
+C[
+ rija 3d \: so painfull for w
+];W[pd]WL[3694];B[qc]BL[3257];W[mf]WL[3688]C[
+ claire 4d+\: oh K17...
+]
+;B[dj]BL[3127];W[fl]WL[3642];B[jc]BL[3081]C[
+ claire 4d+\: I didn't read it wrong, right? K17 will instantly make the black group live
+]
+;W[dl]WL[3559];B[ei]BL[3050];W[gh]WL[3557];B[eg]BL[3009];W[fh]WL[3553];B[cl]BL[2918]
+;W[ck]WL[3500];B[dk]BL[2912];W[cj]WL[3499];B[ci]BL[2910];W[ek]WL[3499];B[di]BL[2910]
+;W[cm]WL[3498];B[bl]BL[2909];W[dn]WL[3497];B[bm]BL[2900];W[dm]WL[3496];B[co]BL[2877]
+;W[cp]WL[3495];B[gk]BL[2867];W[fk]WL[3494];B[iq]BL[2735];W[ob]WL[3470];B[qi]BL[2677]
+;W[lp]WL[3367];B[kq]BL[2647];W[qj]WL[3362]C[
+ rija 3d \: w gained nothing with D18 stones
+ rija 3d \: such a pitty
+]
+;B[rj]BL[2525];W[rk]WL[3350];B[qk]BL[2522];W[pj]WL[3349];B[rl]BL[2522];W[ri]WL[3336]
+;B[sk]BL[2521];W[qh]WL[3335]C[
+ deathtaxes 3k \: p18 a bit slow?
+];B[pi]BL[2510]
+;W[oi]WL[3334];B[ph]BL[2509];W[pg]WL[3334];B[oh]BL[2509];W[og]WL[3334];B[nh]BL[2509]
+;W[rg]WL[3329];B[qf]BL[2448];W[qg]WL[3327];B[rf]BL[2434];W[oj]WL[3325]C[
+ rija 3d \: necessay to keep pressure ont black's group
+ rija 3d \: oh finally a chance of ilya
+]
+;B[si]BL[2346];W[rh]WL[3323];B[nk]BL[2089];W[mi]WL[3270];B[qr]BL[1972];W[pl]WL[3263]
+;B[pk]BL[1949];W[ok]WL[3262];B[ol]BL[1949];W[ql]WL[3262];B[rk]BL[1948];W[om]WL[3068]
+;B[nl]BL[1945];W[mj]WL[3068];B[qn]BL[1938];W[po]WL[3007];B[ro]BL[1926];W[rp]WL[2983]
+;B[qm]BL[1915];W[pm]WL[2982];B[sm]BL[1915];W[mq]WL[2920];B[mr]BL[1904];W[mp]WL[2806]
+;B[nq]BL[1902];W[nr]WL[2750];B[or]BL[1894];W[jp]WL[2729];B[kp]BL[1859];W[ko]WL[2725]
+;B[jq]BL[1776];W[ln]WL[2629];B[lk]BL[1687];W[kj]WL[2615];B[jl]BL[1653];W[ij]WL[2607]
+;B[in]BL[1625];W[io]WL[2602];B[ho]BL[1597];W[hp]WL[2575]C[
+ deathtaxes 3k \: run Forest, run!
+]
+;B[lm]BL[1426];W[jn]WL[2445];B[mn]BL[1385];W[np]WL[2442];B[op]BL[1364];W[no]WL[2440]
+;B[ik]BL[1283];W[hj]WL[2350];B[lj]BL[999];W[li]WL[2346];B[ki]BL[990];W[kh]WL[2335]
+;B[ji]BL[987];W[jj]WL[2334];B[ip]BL[276];W[jo]WL[2331];B[im]BL[194];W[hq]WL[2328]
+;B[hr]BL[164];W[gr]WL[2326];B[is]BL[156];W[hn]WL[1538];B[lh]BL[25];W[ii]WL[1467]
+;B[hm]BL[493];W[go]WL[1443];B[gn]BL[487];W[ho]WL[1442]C[
+ bambr 3d+\: w++
+];B[jh]
+BL[411];W[mh]WL[1195];B[hk]BL[399];W[kk]WL[1179];B[mk]BL[356];W[nj]WL[1178];B[kg]
+BL[334];W[ng]WL[1172];B[nn]BL[320];W[oo]WL[1169];B[kl]BL[318];W[nm]WL[1168];B[bp]
+BL[221];W[bq]WL[1164];B[do]BL[218];W[eo]WL[1163];B[ep]BL[216];W[fn]WL[1154];B[bo]
+BL[157];W[cr]WL[1151];OS[a12151203][adavies][Adri][AliJ93][am0315][arcpag][ATLGO][bambr][BenjaminDG][BenjaminP][BigOak][cailloux][Chen0928][chevrons][claire][Cornel][CRWgbvGp][cstone][ct2][d0223][Dallas01][dany][Darkid][deathtaxes][esmeralda][ExplO][F123][f3480184][figrolls][flash36][flashback][Fruitfly][FujiSan][ghim][glocker][go24816][goal99][golf][Gosushi3][guta57][H2O][hage50][homac3][huffle][hulaila][hvk3][ilvi][ioda][iulian2006][jaguarondi][Jambon][james19][jansteen][Jna][joachim][kornacker][Krainov][Krakatau][KrtekHonza][Leeuwen07][Letsgo][ll60][lorill][Lostpath][MA][Madsen99][maligo][mathbatler][Max2020][meikai][Mini][Mollusque][Nebilim][nelson][nidza92][OferZivo][ofg][OLED77][Oskari][ototoi][Palko][pebi][Peter01140][petitesns][Picaresque][pinolo][playgo108][Praeludium][Prosto][ptitlou][RemiCam][rija][Rogue02][Sadiker][Samoht][Sandmann][Scolas][scurge10][sh1234][shennn][ShogiPlayR][ShouTan][siljan][siskin][spark][STARDUST][stc3690][t2re9][taichi61][team][ThomasJ][tibx][Titaantje][tm470913][tobimaru][tokiharu][tomichannn][tommylee][Tonpuchi][tony1212][Tsoy][tzulin0925][Veedee][VERDUGO][vorm][Wade][wan0725][Welvang][Xeremon][xxaxx][YANG][yudaff][zinovenkov][zzbhamuk])

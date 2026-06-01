@@ -1,0 +1,16 @@
+; TC[T240320A]
+; CL[A]
+; EV[7th European Professional Championship 2024]
+; PC[DE, Hamburg-Harburg]
+; DT[2024-03-20,2024-03-23]
+; HA[h9]
+; KM[7.5]
+; TM[100]
+; CM[(submitted by Lukan)]
+;.
+1 Surma Mateusz        3p PL  Dzim  5    4    16   2+   3-   4+   6+   5+   2+    |12837968
+2 Kravets Andrii       1p UA  Rivn  4    3    18   1-   4+   5+   3+   6+   1-    |12350261
+3 Kachanovskyi Artem   2p UA  Rivn  4    2    16   5+   1+   6+   2-   4-   4+    |12662870
+4 Frejlak Stanislaw    1p PL  KA    3    1    18   6+   2-   1-   5+   3+   3-    |12837594
+5 Le_Calve Tanguy      1p FR  13Ma  1    0    16   3-   6+   2-   4-   1-   0=    |14962706
+6 Jabarin Ali          2p IL  TAv   0    0    17   4-   5-   3-   1-   2-   0=    |14637810

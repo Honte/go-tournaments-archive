@@ -1,0 +1,19 @@
+; TC[E190306A]
+; CL[A]
+; EV[4th European Pro Championship]
+; PC[DE, Jena]
+; DT[2019-03-06,2019-03-08]
+; HA[h9]
+; KM[7.5]
+; TM[100]
+; CM[ (submitted by erdbeer)]
+;.
+; Fischer time: 50 minutes/player + 25 seconds/move
+; https://www.eurogofed.org/results/epc/2019.html
+;# Name Rk Ct Cl NbW R1 R2 R3 R4 R5 ID
+1 Kachanovskyi Artem   2p UA  Rivn 4 4+/W   5+/W   3-/W   2+/B   6+/B    |12662870
+2 Shikshin Ilja        3p RU  16Kz 3 6+     3-/B   4+/B   1-/W   5+/W    |12013342
+3 Surma Mateusz        2p PL  Dzim 3 5+/W   2+/W   1+/B   6-/B   4-/W    |12837968
+4 Kravets Andrii       1p UA  Rivn 3 1-/B   6+/W   2-/W   5+/W   3+/B    |12350261
+5 Lisy Pavol           2p SK  Vlky 1 3-/B   1-/B   6+/W   4-/B   2-/B    |12686597
+6 Jabarin Ali          2p IL  TAv  1 2-     4-/B   5-/B   3+/W   1-/W    |14637810
