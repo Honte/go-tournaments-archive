@@ -1,0 +1,4 @@
+interface:
+  display_name: 'SGF Matcher'
+  short_description: 'Match imported SGFs to event data'
+  default_prompt: 'Use $sgf-matcher to match SGF files from an event candidate directory into the archive.'

@@ -16,3 +16,4 @@ stages:
     findSharedPlaces: true
     games:
       - 2-1 1:W+R round:6 sgf:2013/6-LiFu-ParkJaeGeun.sgf
+      - 5-2 2:W+R round:4 sgf:2013/4-EmuraKiko-FuLi.sgf

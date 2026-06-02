@@ -6,9 +6,9 @@ import { Game, GamePlayer, LeagueStage, Player, TableResult, TournamentDetails }
 import { InputTournamentStage } from '@/schema/input';
 import { parseDates } from '@/libs/dates';
 import { H9Game, buildLocalGameId, parseH9 } from '@/libs/h9';
+import { getRankValue } from '@/libs/rank';
 import { getGameId, parseGame } from '@/data/games';
 import type { PlayersHandler } from '@/data/players';
-import { getRankValue } from '@/data/rank';
 
 const EVENT_DATA_DIR = `./events/${EVENT}/data/`;
 

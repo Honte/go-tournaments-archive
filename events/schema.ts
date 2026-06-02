@@ -14,6 +14,7 @@ export type EventConfig = {
   readonly hideGamesWithoutSgf?: boolean;
   readonly currentEdition?: boolean;
   readonly categories?: string[];
+  readonly unknownRanks?: readonly string[];
 };
 
 export type LogoProps = SVGProps<SVGSVGElement> & {

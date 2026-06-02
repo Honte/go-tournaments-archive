@@ -1,5 +1,5 @@
 import type { Game, Player, RoundRobinTableStage } from '@/schema/data';
-import { getRankValue } from '@/data/rank';
+import { getRankValue } from '@/libs/rank';
 
 export function createTableWithoutRounds({
   games,

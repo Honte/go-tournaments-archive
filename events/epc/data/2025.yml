@@ -15,24 +15,24 @@ stages:
       - direct
     findSharedPlaces: false
     games:
-      - 1-3 1:B+3.5 round:4 sgf:2025/4-AndriiKravets-ArtemKachanovskyi.sgf
-      - 1-4 1:B+3.5 round:6 sgf:2025/6-AndriiKravets-StanislawFrejlak.sgf
-      - 2-1 1:W+R round:5 sgf:2025/5-AliJabarin-AndriiKravets.sgf
-      - 2-5 5:W+R round:3 sgf:2025/3-AliJabarin-TanguyleCalve.sgf
-      - 3-2 2:W+R round:6 sgf:2025/6-ArtemKachanovskyi-AliJabarin.sgf
-      - 3-6 3:B+T round:3 sgf:2025/3-ArtemKachanovskyi-JanSimara.sgf
-      - 3-7 3:B+R round:1 sgf:2025/1-TingLi-ArtemKachanovskyi.sgf
-      - 4-2 2:W+12.5 round:1 sgf:2025/1-StanislawFrejlak-AliJabarin.sgf
-      - 4-3 3:W+R round:7 sgf:2025/7-StanislawFrejlak-ArtemKachanovskyi.sgf
-      - 4-6 4:B+R round:5 sgf:2025/5-StanislawFrejlak-JanSimara.sgf
-      - 4-7 4:B+R round:3 sgf:2025/3-StanislawFrejlak-TingLi.sgf
-      - 5-1 5:B+4.5 round:1 sgf:2025/1-TanguyleCalve-AndriiKravets.sgf
-      - 5-3 3:W+R round:2 sgf:2025/2-TanguyleCalve-ArtemKachanovskyi.sgf
-      - 5-4 4:W+R round:4 sgf:2025/4-TanguyleCalve-StanislawFrejlak.sgf
-      - 6-1 1:W+R round:2 sgf:2025/2-JanSimara-AndriiKravets.sgf
-      - 6-2 2:W+R round:4 sgf:2025/4-JanSimara-AliJabarin.sgf
-      - 6-5 6:B+R round:7 sgf:2025/7-JanSimara-TanguyleCalve.sgf
-      - 6-7 6:B+11.5 round:6 sgf:2025/6-JanSimara-TingLi.sgf
-      - 7-1 1:W+R round:7 sgf:2025/7-TingLi-AndriiKravets.sgf
-      - 7-2 2:W+8.5 round:2 sgf:2025/2-TingLi-AliJabarin.sgf
-      - 7-5 5:W+R round:5 sgf:2025/5-TingLi-TanguyleCalve.sgf
+      - 1-3 1:B+3.5 round:4 sgf:2025/4-AndriiKravets-ArtemKachanovskyi.sgf ogs:https://online-go.com/review/1414796
+      - 1-4 1:B+3.5 round:6 sgf:2025/6-AndriiKravets-StanislawFrejlak.sgf ogs:https://online-go.com/review/1415430
+      - 2-1 1:W+R round:5 sgf:2025/5-AliJabarin-AndriiKravets.sgf ogs:https://online-go.com/review/1415285
+      - 2-5 5:W+R round:3 sgf:2025/3-AliJabarin-TanguyleCalve.sgf ogs:https://online-go.com/review/1414710
+      - 3-2 2:W+R round:6 sgf:2025/6-ArtemKachanovskyi-AliJabarin.sgf ogs:https://online-go.com/review/1415412
+      - 3-6 3:B+T round:3 sgf:2025/3-ArtemKachanovskyi-JanSimara.sgf ogs:https://online-go.com/review/1414709
+      - 3-7 3:B+R round:1 sgf:2025/1-TingLi-ArtemKachanovskyi.sgf ogs:https://online-go.com/review/1414160
+      - 4-2 2:W+12.5 round:1 sgf:2025/1-StanislawFrejlak-AliJabarin.sgf ogs:https://online-go.com/review/1414161
+      - 4-3 3:W+R round:7 sgf:2025/7-StanislawFrejlak-ArtemKachanovskyi.sgf ogs:https://online-go.com/review/1415920
+      - 4-6 4:B+R round:5 sgf:2025/5-StanislawFrejlak-JanSimara.sgf ogs:https://online-go.com/review/1415288
+      - 4-7 4:B+R round:3 sgf:2025/3-StanislawFrejlak-TingLi.sgf ogs:https://online-go.com/review/1414711
+      - 5-1 5:B+4.5 round:1 sgf:2025/1-TanguyleCalve-AndriiKravets.sgf ogs:https://online-go.com/review/1414174
+      - 5-3 3:W+R round:2 sgf:2025/2-TanguyleCalve-ArtemKachanovskyi.sgf ogs:https://online-go.com/review/1414299
+      - 5-4 4:W+R round:4 sgf:2025/4-TanguyleCalve-StanislawFrejlak.sgf ogs:https://online-go.com/review/1414844
+      - 6-1 1:W+R round:2 sgf:2025/2-JanSimara-AndriiKravets.sgf ogs:https://online-go.com/review/1414300
+      - 6-2 2:W+R round:4 sgf:2025/4-JanSimara-AliJabarin.sgf ogs:https://online-go.com/review/1414795
+      - 6-5 6:B+R round:7 sgf:2025/7-JanSimara-TanguyleCalve.sgf ogs:https://online-go.com/review/1415921
+      - 6-7 6:B+11.5 round:6 sgf:2025/6-JanSimara-TingLi.sgf ogs:https://online-go.com/review/1415411
+      - 7-1 1:W+R round:7 sgf:2025/7-TingLi-AndriiKravets.sgf ogs:https://online-go.com/review/1415922
+      - 7-2 2:W+8.5 round:2 sgf:2025/2-TingLi-AliJabarin.sgf ogs:https://online-go.com/review/1414294
+      - 7-5 5:W+R round:5 sgf:2025/5-TingLi-TanguyleCalve.sgf ogs:https://online-go.com/review/1415297

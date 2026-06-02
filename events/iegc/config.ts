@@ -10,6 +10,7 @@ const EVENT_CONFIG: EventConfig = {
   generateSvgs: true,
   generateJpgs: true,
   generateZips: true,
+  unknownRanks: ['30k'],
 };
 
 export default EVENT_CONFIG;

@@ -49,12 +49,12 @@ stages:
       - 16-40 16:B+R round:2 sgf:2025/2-WichrichKaruehawanit-SusanaSanchez.sgf
       - 19-25 19:B+R round:7 sgf:2025/7-AndriusPetrauskas-CezaryCzernecki.sgf
       - 20-23 23:W+R round:4 sgf:2025/4-DuyMinhVo-DmytroBogatskyy.sgf
-      - 21-25 21:B+24.5 round:4 sgf:2025/4-MilosBojanic-CezaryCzernecki.sgf
+      - 21-25 21:B+24.5 round:4 sgf:2025/4-MilosBojanic-CezaryCzernecki.sgf ogs:https://online-go.com/review/1469687
       - 24-43 24:B+R round:1 sgf:2025/1-BendeBarcza-HelcioAlexandrePacheco.sgf
-      - 25-13 13:W+6.5 round:1 sgf:2025/1-CezaryCzernecki-AlanHuang.sgf
-      - 25-15 15:W+7.5 round:6 sgf:2025/6-CezaryCzernecki-InHangSam.sgf
-      - 25-27 25:B+2.5 round:3 sgf:2025/3-CezaryCzernecki-TugkanEren.sgf
-      - 25-36 25:B+18.5 round:5 sgf:2025/5-CezaryCzernecki-MikkelKraghMathiesen.sgf
+      - 25-13 13:W+6.5 round:1 sgf:2025/1-CezaryCzernecki-AlanHuang.sgf ogs:https://online-go.com/review/1469084
+      - 25-15 15:W+7.5 round:6 sgf:2025/6-CezaryCzernecki-InHangSam.sgf ogs:https://online-go.com/review/1470216
+      - 25-27 25:B+2.5 round:3 sgf:2025/3-CezaryCzernecki-TugkanEren.sgf ogs:https://online-go.com/review/1469611
+      - 25-36 25:B+18.5 round:5 sgf:2025/5-CezaryCzernecki-MikkelKraghMathiesen.sgf ogs:https://online-go.com/review/1470134
       - 27-32 27:B+10.5 round:1 sgf:2025/1-TugkanEren-OlliHella.sgf
       - 29-19 19:W+R round:5 sgf:2025/5-AlistairWall-AndriusPetrauskas.sgf
       - 29-36 29:B+R round:1 sgf:2025/1-AlistairWall-MikkelKraghMathiesen.sgf
