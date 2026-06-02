@@ -13,6 +13,7 @@ description: Match, import, move, rename, and validate SGF files for go-tourname
    - event files under `events/<event>/data` and `events/<event>/sgf`
 2. Identify the requested event, source SGF directory, target year or stage, and whether files should be moved or copied.
    Use copy/staging if the user has not explicitly approved removing the original source files.
+   Do not modify SGF file contents during matching/import work except for the narrow result-normalization case described below.
 3. Check current matcher support. The built-in matcher reads SGFs already under `events/<event>/sgf`; it does not import arbitrary source directories by itself unless the repo has since added that feature.
 4. Stage candidate SGFs under the relevant archive directory:
    - normal event target: `events/<event>/sgf/<year>/`
@@ -110,6 +111,9 @@ score = player_confidence + round_confidence + date_confidence + color_confidenc
 
 ## Move And Rename Discipline
 
+- Do not edit SGF file contents except for normalizing invalid `RE[...]` result text. The normal SGF-file change during matching/import work is renaming archive copies/files so the matcher can use filename hints.
+- For invalid `RE[...]` values that contain explanatory bracket text, keep the result machine-readable and preserve the note on the last move: for example, change `RE[W+R {moves beyond 216 not known}]` to `RE[W+R]` and add or append `C[moves beyond 216 not known]` on the final move node.
+- When adding a final-move comment, append to any existing `C[...]` instead of replacing it, and escape SGF comment text correctly.
 - Never overwrite an archived SGF unless the user explicitly asks and content comparison proves it is the intended replacement.
 - Prefer `Move-Item -LiteralPath` or `Copy-Item -LiteralPath` on Windows, one exact path at a time.
 - Keep unmatched candidates in the source/candidate directory with a small note or report; do not delete them just because the matcher did not find a hit.
