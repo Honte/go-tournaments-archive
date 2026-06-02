@@ -1,4 +1,4 @@
-import { AsyncZipDeflate, strToU8, Zip } from 'fflate';
+import { AsyncZipDeflate, strToU8, Zip, type Zippable, zipSync } from 'fflate';
 
 export function createZip(files: { path: string; content: string }[]) {
   return new ReadableStream({
@@ -28,4 +28,14 @@ export function createZip(files: { path: string; content: string }[]) {
       zip.end();
     },
   });
+}
+
+export function createZipBuffer(files: { path: string; content: string }[]) {
+  const input: Zippable = {};
+
+  for (const file of files) {
+    input[file.path] = strToU8(file.content);
+  }
+
+  return zipSync(input);
 }

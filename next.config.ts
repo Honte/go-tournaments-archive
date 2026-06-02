@@ -5,7 +5,6 @@ import { NORMALIZED_BASE_PATH } from './src/basePath';
 export default {
   output: 'export',
   basePath: NORMALIZED_BASE_PATH || undefined,
-  staticPageGenerationTimeout: 120,
 
   // pass envs for client builds using legacy API
   // @TODO consider moving to NEXT_PUBLIC_ prefix
@@ -21,5 +20,8 @@ export default {
       '@event/*': `./events/${EVENT}/*`,
     },
   },
-  serverExternalPackages: ['@resvg/resvg-js'],
+  pageExtensions:
+    process.env.NODE_ENV === 'production'
+      ? ['tsx', 'ts', 'jsx', 'js']
+      : ['dev.tsx', 'dev.ts', 'tsx', 'ts', 'jsx', 'js'],
 };
