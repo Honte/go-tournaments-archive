@@ -81,21 +81,8 @@ export async function loadSgfs(tournaments: Tournament[]) {
 
       const content = await fs.readFile(resolveSgfFile(game.props.sgf), 'utf-8');
       const sgf = new Sgf(content);
-      const black = tournament.players[game.players[0].id];
-      const white = tournament.players[game.players[1].id];
 
-      const result: ApiGameInfo = {
-        ...game.props,
-        tournament: tournament.year,
-        stage: tournament.stages.indexOf(stage),
-        black,
-        white,
-        result: game.result,
-        winner: game.players[0].won ? 'black' : game.players[1].won ? 'white' : undefined,
-        moves: sgf.getGameBranch().length - 1,
-      };
-
-      games.push(result);
+      games.push(getGameInfo(sgf, game, tournament, stage));
     }
   }
 
@@ -121,7 +108,7 @@ export function getTournamentSgfZipPath(sgfPath: string) {
   return segments.join('-');
 }
 
-function getGameStage(tournament: Tournament, id: string) {
+export function getGameStage(tournament: Tournament, id: string) {
   for (const stage of tournament.stages) {
     switch (stage.type) {
       case 'tournament':
@@ -148,7 +135,23 @@ function getGameStage(tournament: Tournament, id: string) {
   return undefined;
 }
 
-function getSgfProps(game: Game, tournament: Tournament, stage: Stage, translations: Translations) {
+export function getGameInfo(sgf: Sgf, game: Game, tournament: Tournament, stage: Stage): ApiGameInfo {
+  const black = tournament.players[game.players[0].id];
+  const white = tournament.players[game.players[1].id];
+
+  return {
+    ...game.props,
+    tournament: tournament.year,
+    stage: tournament.stages.indexOf(stage),
+    black,
+    white,
+    result: game.result,
+    winner: game.players[0].won ? 'black' : game.players[1].won ? 'white' : undefined,
+    moves: sgf.getGameBranch().length - 1,
+  };
+}
+
+export function getSgfProps(game: Game, tournament: Tournament, stage: Stage, translations: Translations) {
   const t = getTranslator(translations);
   const black = tournament.players[game.players[0].id];
   const white = tournament.players[game.players[1].id];

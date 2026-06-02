@@ -1,4 +1,6 @@
-import { AsyncZipDeflate, strToU8, Zip } from 'fflate';
+import { AsyncZipDeflate, strToU8, Zip, type Zippable, zipSync } from 'fflate';
+
+const ZIP_MTIME = new Date('1980-01-01T00:00:00Z');
 
 export function createZip(files: { path: string; content: string }[]) {
   return new ReadableStream({
@@ -28,4 +30,14 @@ export function createZip(files: { path: string; content: string }[]) {
       zip.end();
     },
   });
+}
+
+export function createZipBuffer(files: { path: string; content: string }[]) {
+  const input: Zippable = {};
+
+  for (const file of files) {
+    input[file.path] = [strToU8(file.content), { mtime: ZIP_MTIME }];
+  }
+
+  return zipSync(input);
 }
