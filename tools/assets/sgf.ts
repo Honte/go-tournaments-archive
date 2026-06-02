@@ -1,5 +1,5 @@
 import EVENT_CONFIG from '@event/config';
-import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import type { ApiGameInfo } from '@/schema/api';
 import type { Game, Stage, Tournament } from '@/schema/data';
@@ -11,23 +11,28 @@ import { getGameInfo, getSgfProps, getTournamentSgfZipPath } from '@/data/sgfs';
 
 const THUMB_SIZE = 128;
 
-export async function buildSgfAssets(
-  sgfDir: string,
-  outputFile: string,
-  game: Game,
-  stage: Stage,
-  tournament: Tournament,
-  translations: Translations
-): Promise<{
+export type BuildSgfRequest = {
+  sgfDir: string;
+  outputDir: string;
+  game: Game;
+  stage: Stage;
+  tournament: Tournament;
+  translations: Translations;
+};
+
+export type BuildSgfResponse = {
   path: string;
   content: string;
   year: number;
   details: ApiGameInfo;
-}> {
+};
+
+export default async function buildSgfAssets(input: BuildSgfRequest): Promise<BuildSgfResponse> {
+  const { sgfDir, outputDir, game, stage, tournament, translations } = input;
   const sgfYamlPath = game.props.sgf!;
   const relativePath = sgfYamlPath.replace(/^\/sgf\/?/, '');
   const sgfFilePath = path.join(sgfDir, relativePath);
-  const outputPath = path.join(outputFile, relativePath);
+  const outputPath = path.join(outputDir, relativePath);
   const content = await readFile(sgfFilePath, 'utf-8');
   const sgf = new Sgf(content);
   const targetProps = getSgfProps(game, tournament, stage, translations);

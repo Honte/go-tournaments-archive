@@ -1,14 +1,18 @@
 import EVENT from '@event';
 import { mkdir, rm, writeFile } from 'node:fs/promises';
+import { availableParallelism } from 'node:os';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import Piscina from 'piscina';
 import { EVENT_LOCALES } from '@/i18n/locales';
 import { loadTranslations } from '@/i18n/server';
-import { buildSgfAssets } from '@tools/assets/sgf';
+import type { BuildSgfResponse, BuildSgfRequest } from '@tools/assets/sgf';
 import { createZipBuffer } from '@/libs/zip';
 import { getTournaments } from '@/data';
 import { getGameStage } from '@/data/sgfs';
 
 const PUBLIC_SGF_DIR = './public/sgf';
+const SGF_WORKER_PATH = fileURLToPath(new URL('./sgf.ts', import.meta.url));
 
 export async function buildAssets() {
   console.log(`[assets] generating assets for ${EVENT}`);
@@ -20,7 +24,7 @@ export async function buildAssets() {
   const tournaments = await getTournaments();
   const translations = await loadTranslations(EVENT_LOCALES[0]);
 
-  const sgfPromises = [];
+  const sgfTasks: BuildSgfRequest[] = [];
   for (const tournament of tournaments) {
     for (const id in tournament.games) {
       const game = tournament.games[id];
@@ -35,11 +39,18 @@ export async function buildAssets() {
         continue;
       }
 
-      sgfPromises.push(buildSgfAssets(sgfDir, PUBLIC_SGF_DIR, game, stage, tournament, translations));
+      sgfTasks.push({
+        sgfDir,
+        outputDir: PUBLIC_SGF_DIR,
+        game,
+        stage,
+        tournament,
+        translations,
+      });
     }
   }
 
-  const results = await Promise.all(sgfPromises);
+  const results = await buildSgfAssetsInWorkers(sgfTasks);
   const sgfsByYear = Map.groupBy(results, (result) => result.year);
   const list = results.map((result) => result.details);
 
@@ -57,4 +68,42 @@ export async function buildAssets() {
 
 async function handleZip(year: number, files: { path: string; content: string }[]): Promise<void> {
   await writeFile(path.join(PUBLIC_SGF_DIR, `${year}.zip`), createZipBuffer(files));
+}
+
+async function buildSgfAssetsInWorkers(tasks: BuildSgfRequest[]): Promise<BuildSgfResponse[]> {
+  if (tasks.length === 0) {
+    return [];
+  }
+
+  const workerCount = getSgfAssetWorkerCount(tasks.length);
+  console.log(`[assets] generating ${tasks.length} sgfs with ${workerCount} worker${workerCount === 1 ? '' : 's'}`);
+
+  const pool = new Piscina<BuildSgfRequest, BuildSgfResponse>({
+    filename: SGF_WORKER_PATH,
+    minThreads: workerCount,
+    maxThreads: workerCount,
+    execArgv: ['--import', 'tsx'],
+  });
+
+  try {
+    return await Promise.all(tasks.map((task) => pool.run(task)));
+  } finally {
+    await pool.destroy();
+  }
+}
+
+function getSgfAssetWorkerCount(taskCount: number): number {
+  const override = process.env.SGF_ASSET_WORKERS;
+
+  if (override) {
+    const parsed = Number(override);
+
+    if (Number.isInteger(parsed) && parsed > 0) {
+      return Math.min(taskCount, parsed);
+    }
+
+    console.warn(`[assets] ignoring invalid SGF_ASSET_WORKERS value: ${override}`);
+  }
+
+  return Math.min(taskCount, Math.max(1, availableParallelism() - 1));
 }
