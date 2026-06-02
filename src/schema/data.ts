@@ -165,7 +165,7 @@ export type IndexedTablePlayerGame = TablePlayerGame & {
 export type Player = {
   id: string;
   name: string;
-  rank: string;
+  rank?: string;
   country?: string;
   egd?: number;
 };

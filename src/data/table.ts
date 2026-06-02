@@ -1,6 +1,6 @@
 import type { Game, Player, TableResult } from '@/schema/data';
 import { Breaker } from '@/schema/data';
-import { getRankValue } from '@/data/rank';
+import { getRankValue } from '@/libs/rank';
 
 export function createTable({
   gamesMap,

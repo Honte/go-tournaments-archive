@@ -1,8 +1,9 @@
 import slugify from 'slugify';
 import type { Player } from '@/schema/data';
+import { normalizeRank } from '@/libs/rank';
 
 const PLAYER_REGEX =
-  /^(?<name>[\p{Letter} -]+)(\s+(?<rank>[0-9]{1,2}[dkp])?)?(\s+\((?<country>[A-Z]{2})\))?(\s+\|(?<egd>[0-9]+))?$/u;
+  /^(?<name>[\p{Letter} -]+)(\s+(?<rank>[0-9]{1,2}[dkpDKP])?)?(\s+\((?<country>[A-Z]{2})\))?(\s+\|(?<egd>[0-9]+))?$/u;
 
 export type PlayersHandler = ReturnType<typeof createPlayersHandler>;
 
@@ -69,7 +70,7 @@ export function createPlayersHandler() {
 
     return {
       name,
-      rank,
+      rank: normalizeRank(rank),
       country,
       egd: egd ? Number(egd) : undefined,
     };

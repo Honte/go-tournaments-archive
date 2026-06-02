@@ -6,6 +6,7 @@ import { getTranslator } from '@/i18n/translator';
 import { Endpoints } from '@/libs/endpoints';
 import { GameActions } from '@/components/GameActions';
 import { Stone } from '@/components/Stone';
+import { PlayerName } from '@/components/ui/PlayerName';
 import { GameViewerTrigger } from '@/components/viewer/GameViewerTrigger';
 
 type GameProps = {
@@ -56,7 +57,7 @@ export function Game({ className, game, players, translations, title, wide }: Ga
 
 function PlayerRow({ player, t }: { player: GamePlayer & Player; t: Translator }) {
   const color = player.color ? <Stone color={player.color} className={`h-4 inline`} /> : '';
-  const name = player.id === 'BYE' ? 'BYE' : `${player.name} (${player.rank})`;
+  const name = player.id === 'BYE' ? 'BYE' : <PlayerName player={player} />;
 
   return (
     <div className={`flex items-center gap-1 text-l ${player.won ? 'font-bold' : ''}`}>
