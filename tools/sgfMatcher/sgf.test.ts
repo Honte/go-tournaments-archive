@@ -61,6 +61,33 @@ describe('extractSgfInfo', () => {
     assert.equal(sgf.sgfOgs, 'https://online-go.com/review/114161');
   });
 
+  it('extracts OGS review URLs from PC root properties without an OGS prefix', () => {
+    const sgf = extractSgfInfo(
+      '(;PB[Black Player]PW[White Player]RE[B+R]PC[https\\://online-go.com/review/1684893];B[aa])',
+      '2025/1-BlackPlayer-WhitePlayer.sgf'
+    );
+
+    assert.equal(sgf.sgfOgs, 'https://online-go.com/review/1684893');
+  });
+
+  it('normalizes OGS game URLs from PC root properties to https', () => {
+    const sgf = extractSgfInfo(
+      '(;PB[Black Player]PW[White Player]RE[B+R]PC[OGS\\: http\\://online-go.com/game/86469154];B[aa])',
+      '2025/1-BlackPlayer-WhitePlayer.sgf'
+    );
+
+    assert.equal(sgf.sgfOgs, 'https://online-go.com/game/86469154');
+  });
+
+  it('extracts OGS game URLs from escaped PC root properties', () => {
+    const sgf = extractSgfInfo(
+      '(;PB[Black Player]PW[White Player]RE[B+R]PC[OGS\\: https\\://online-go.com/game/86469154];B[aa])',
+      '2025/1-BlackPlayer-WhitePlayer.sgf'
+    );
+
+    assert.equal(sgf.sgfOgs, 'https://online-go.com/game/86469154');
+  });
+
   it('ignores ordinary PC root properties when extracting OGS URLs', () => {
     const sgf = extractSgfInfo(
       '(;PB[Black Player]PW[White Player]RE[B+R]PC[Gdansk];B[aa])',

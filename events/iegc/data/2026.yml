@@ -1,6 +1,6 @@
 top:
-  -
-  -
+  - 
+  - 
   - prenaut
 notes: medalists on places 1-2 can change - final still ongoing
 stages:
@@ -19,9 +19,9 @@ stages:
       - place
     findSharedPlaces: true
     games:
-      - 3-2 2:W+? round:2 sgf:2026/top8/2-PhilippeRenaut-XinqunLu.sgf
+      - 3-2 2:W+? round:2 sgf:2026/top8/2-PhilippeRenaut-XinqunLu.sgf ogs:https://online-go.com/review/1684832
       - 3-2 2:W+R round:5 sgf:2026/top8/5-PhilippeRenaut-XinqunLu.sgf ogs:https://online-go.com/game/86469154
-      - 4-3 3:W+? round:4 sgf:2026/top8/4-LarionSyrotkin-PhilippeRenaut.sgf
+      - 4-3 3:W+? round:4 sgf:2026/top8/4-LarionSyrotkin-PhilippeRenaut.sgf ogs:https://online-go.com/review/1684893
   - type: tournament
     file: ie2026final.txt
     name: Final

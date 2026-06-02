@@ -14,31 +14,31 @@ stages:
       - direct
     findSharedPlaces: false
     games:
-      - 1-4 1:B+1.5 round:7 sgf:2026/7-AndriiKravets-AliJabarin.sgf
-      - 1-7 1:B+R round:3 sgf:2026/3-AndriiKravets-JanSimara.sgf
-      - 1-8 1:B+13.5 round:5 sgf:2026/5-AndriiKravets-TingLi.sgf
-      - 2-1 1:W+19.5 round:2 sgf:2026/2-MateuszSurma-AndriiKravets.sgf
-      - 2-5 2:B+R round:6 sgf:2026/6-MateuszSurma-TanguyleCalve.sgf
-      - 2-7 2:B+R round:4 sgf:2026/4-MateuszSurma-JanSimara.sgf
-      - 3-1 1:W+14.5 round:1 sgf:2026/1-BenjaminDreanGuenaizia.sgf
-      - 3-2 2:W+R round:7 sgf:2026/7-BenjaminDreanGuenaizia-MateuszSurma.sgf
-      - 3-5 3:B+1.5 round:3 sgf:2026/3-BenjaminDreanGuenaizia-TanguyleCalve.sgf
-      - 3-6 3:B+14.5 round:5 sgf:2026/5-BenjaminDreanGuenaizia-StanislawFrejlak.sgf
-      - 4-2 2:W+R round:5 sgf:2026/5-AliJabarin-MateuszSurma.sgf
-      - 4-3 3:W+R round:6 sgf:2026/6-AliJabarin-BenjaminDreanGuenaizia.sgf
-      - 4-7 4:B+R round:1 sgf:2026/1-AliJabarin-JanSimara.sgf
-      - 4-8 4:B+R round:3 sgf:2026/3-AliJabarin-TingLi.sgf
-      - 5-1 1:W+R round:4 sgf:2026/4-TanguyleCalve-AndriiKravets.sgf
-      - 5-4 4:W+R round:2 sgf:2026/2-TanguyleCalve-AliJabarin.sgf
-      - 5-8 5:B+R round:7 sgf:2026/7-TanguyleCalve-TingLi.sgf
-      - 6-1 1:W+2.5 round:6 sgf:2026/6-StanislawFrejlak-AndriiKravets.sgf
-      - 6-2 2:W+R round:3 sgf:2026/3-StanislawFrejlak-MateuszSurma.sgf
-      - 6-4 4:W+R round:4 sgf:2026/4-StanislawFrejlak-AliJabarin.sgf
-      - 6-5 5:W+4.5 round:1 sgf:2026/1-StanislawFrejlak-TanguyleCalve.sgf
-      - 7-3 3:W+R round:2 sgf:2026/2-JanSimara-BenjaminDreanGuenaizia.sgf
-      - 7-5 5:W+4.5 round:5 sgf:2026/5-JanSimara-TanguyleCalve.sgf
-      - 7-6 6:W+R round:7 sgf:2026/7-JanSimara-StanislawFrejlak.sgf
-      - 8-2 2:W+5.5 round:1 sgf:2026/1-TingLi-MateuszSurma.sgf
-      - 8-3 3:W+R round:4 sgf:2026/4-TingLi-BenjaminDreanGuenaizia.sgf
-      - 8-6 6:W+R round:2 sgf:2026/2-TingLi-StanislawFrejlak.sgf
-      - 8-7 7:W+12.5 round:6 sgf:2026/6-TingLi-JanSimara.sgf
+      - 1-4 1:B+1.5 round:7 sgf:2026/7-AndriiKravets-AliJabarin.sgf ogs:https://online-go.com/review/1650687
+      - 1-7 1:B+R round:3 sgf:2026/3-AndriiKravets-JanSimara.sgf ogs:https://online-go.com/review/1648636
+      - 1-8 1:B+13.5 round:5 sgf:2026/5-AndriiKravets-TingLi.sgf ogs:https://online-go.com/review/1649595
+      - 2-1 1:W+19.5 round:2 sgf:2026/2-MateuszSurma-AndriiKravets.sgf ogs:https://online-go.com/review/1647898
+      - 2-5 2:B+R round:6 sgf:2026/6-MateuszSurma-TanguyleCalve.sgf ogs:https://online-go.com/review/1649815
+      - 2-7 2:B+R round:4 sgf:2026/4-MateuszSurma-JanSimara.sgf ogs:https://online-go.com/review/1648908
+      - 3-1 1:W+14.5 round:1 sgf:2026/1-BenjaminDreanGuenaizia.sgf ogs:https://online-go.com/review/1647741
+      - 3-2 2:W+R round:7 sgf:2026/7-BenjaminDreanGuenaizia-MateuszSurma.sgf ogs:https://online-go.com/review/1650613
+      - 3-5 3:B+1.5 round:3 sgf:2026/3-BenjaminDreanGuenaizia-TanguyleCalve.sgf ogs:https://online-go.com/review/1648635
+      - 3-6 3:B+14.5 round:5 sgf:2026/5-BenjaminDreanGuenaizia-StanislawFrejlak.sgf ogs:https://online-go.com/review/1649594
+      - 4-2 2:W+R round:5 sgf:2026/5-AliJabarin-MateuszSurma.sgf ogs:https://online-go.com/review/1649761
+      - 4-3 3:W+R round:6 sgf:2026/6-AliJabarin-BenjaminDreanGuenaizia.sgf ogs:https://online-go.com/review/1649850
+      - 4-7 4:B+R round:1 sgf:2026/1-AliJabarin-JanSimara.sgf ogs:https://online-go.com/review/1647767
+      - 4-8 4:B+R round:3 sgf:2026/3-AliJabarin-TingLi.sgf ogs:https://online-go.com/review/1648646
+      - 5-1 1:W+R round:4 sgf:2026/4-TanguyleCalve-AndriiKravets.sgf ogs:https://online-go.com/review/1648909
+      - 5-4 4:W+R round:2 sgf:2026/2-TanguyleCalve-AliJabarin.sgf ogs:https://online-go.com/review/1647915
+      - 5-8 5:B+R round:7 sgf:2026/7-TanguyleCalve-TingLi.sgf ogs:https://online-go.com/review/1650615
+      - 6-1 1:W+2.5 round:6 sgf:2026/6-StanislawFrejlak-AndriiKravets.sgf ogs:https://online-go.com/review/1649817
+      - 6-2 2:W+R round:3 sgf:2026/3-StanislawFrejlak-MateuszSurma.sgf ogs:https://online-go.com/review/1648634
+      - 6-4 4:W+R round:4 sgf:2026/4-StanislawFrejlak-AliJabarin.sgf ogs:https://online-go.com/review/1649076
+      - 6-5 5:W+4.5 round:1 sgf:2026/1-StanislawFrejlak-TanguyleCalve.sgf ogs:https://online-go.com/review/1647740
+      - 7-3 3:W+R round:2 sgf:2026/2-JanSimara-BenjaminDreanGuenaizia.sgf ogs:https://online-go.com/review/1647899
+      - 7-5 5:W+4.5 round:5 sgf:2026/5-JanSimara-TanguyleCalve.sgf ogs:https://online-go.com/review/1649596
+      - 7-6 6:W+R round:7 sgf:2026/7-JanSimara-StanislawFrejlak.sgf ogs:https://online-go.com/review/1650614
+      - 8-2 2:W+5.5 round:1 sgf:2026/1-TingLi-MateuszSurma.sgf ogs:https://online-go.com/review/1647739
+      - 8-3 3:W+R round:4 sgf:2026/4-TingLi-BenjaminDreanGuenaizia.sgf ogs:https://online-go.com/review/1648910
+      - 8-6 6:W+R round:2 sgf:2026/2-TingLi-StanislawFrejlak.sgf ogs:https://online-go.com/review/1647900
+      - 8-7 7:W+12.5 round:6 sgf:2026/6-TingLi-JanSimara.sgf ogs:https://online-go.com/review/1649816

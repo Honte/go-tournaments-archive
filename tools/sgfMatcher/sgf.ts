@@ -126,15 +126,25 @@ function parseRoundValue(value: string | undefined): number | null {
 }
 
 function parseOgsValue(value: string | undefined): string | null {
-  const match = value?.trim().match(/^OGS:\s*(\S+)$/);
+  const match = value?.trim().match(/(?:https?:\/\/)?(?:www\.)?online-go\.com\/\S+/i);
 
-  return match ? normalizeOgsUrl(match[1]) : null;
+  if (!match) {
+    return null;
+  }
+
+  const url = /^https?:\/\//i.test(match[0]) ? match[0] : `https://${match[0]}`;
+
+  return normalizeOgsUrl(url);
 }
 
 function normalizeOgsUrl(url: string): string {
-  const reviewMatch = url.match(/^http:\/\/online-go\.com\/game\/review\/(\d+)$/);
+  const reviewMatch = url.match(/^https?:\/\/online-go\.com\/game\/review\/(\d+)$/i);
 
-  return reviewMatch ? `https://online-go.com/review/${reviewMatch[1]}` : url;
+  if (reviewMatch) {
+    return `https://online-go.com/review/${reviewMatch[1]}`;
+  }
+
+  return url.replace(/^http:\/\//i, 'https://');
 }
 
 // Parse filename hints such as player names, stage token, and the filename numeric prefix/index.

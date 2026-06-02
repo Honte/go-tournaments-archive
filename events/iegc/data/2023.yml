@@ -18,9 +18,9 @@ stages:
       - place
     findSharedPlaces: true
     games:
-      - 1-4 1:B+? round:4 sgf:2023/top8/4-PhilippeRenaut-RomanPszonka.sgf
-      - 1-5 1:B+? round:3 sgf:2023/top8/3-PhilippeRenaut-MateiGarcia.sgf
-      - 2-1 2:B+? round:1 sgf:2023/top8/1-XinqunLu-PhilippeRenaut.sgf
+      - 1-4 1:B+? round:4 sgf:2023/top8/4-PhilippeRenaut-RomanPszonka.sgf ogs:https://online-go.com/review/1030994
+      - 1-5 1:B+? round:3 sgf:2023/top8/3-PhilippeRenaut-MateiGarcia.sgf ogs:https://online-go.com/review/1030989
+      - 2-1 2:B+? round:1 sgf:2023/top8/1-XinqunLu-PhilippeRenaut.sgf ogs:https://online-go.com/review/1030215
       - 3-1 1:W+R round:5 sgf:2023/top8/5-PrzemyslawDyszczyk-PhilippeRenaut.sgf ogs:https://online-go.com/game/51530773
   - type: tournament
     file: ie2023final.txt
