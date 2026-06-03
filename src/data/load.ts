@@ -31,6 +31,9 @@ export async function loadData() {
       top: parseTop(json.top),
     };
 
+    const stageCountries = new Set<string>();
+    const stageLocations = new Set<string>();
+
     for (const stageJson of json.stages) {
       try {
         const stage = await parseStage(stageJson, players, games, tournamentDetails, playersHandler);
@@ -40,6 +43,14 @@ export async function loadData() {
         }
 
         stages.push(stage);
+
+        if (stage.country) {
+          stageCountries.add(stage.country);
+        }
+
+        if (stage.location) {
+          stageLocations.add(stage.location);
+        }
       } catch (e) {
         console.error(`\nError parsing tournament: ${file}`);
         console.error(e);
@@ -60,6 +71,14 @@ export async function loadData() {
           playersIdMap
         );
       }
+    }
+
+    if (!tournamentDetails.country) {
+      tournamentDetails.country = stageCountries.size === 1 ? stageCountries.values().next().value : undefined;
+    }
+
+    if (!tournamentDetails.location) {
+      tournamentDetails.location = Array.from(stageLocations).join(', ');
     }
 
     tournaments.push({

@@ -1,3 +1,4 @@
+import EVENT_CONFIG from '@event/config';
 import type { ReactNode } from 'react';
 import type { Stage } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
@@ -21,6 +22,20 @@ export function StageDetails({ stage, translations }: StageDetailsProps) {
     details[t('stage.egd')] = <ExternalLink title={t('stage.goToEGD')} href={stage.egd} />;
   }
 
+  if (stage.date?.length) {
+    details[t('stage.date')] = stage.date
+      .map(({ start, end }) => formatRange(start, end, translations.locale))
+      .join(', ');
+  }
+
+  if (stage.location) {
+    details[t('details.location')] = stage.location;
+  }
+
+  if (stage.country && EVENT_CONFIG.showCountry) {
+    details[t('details.country')] = t(`country.${stage.country}`);
+  }
+
   if (stage.rules) {
     details[t('stage.rules')] = stage.rules;
   }
@@ -31,12 +46,6 @@ export function StageDetails({ stage, translations }: StageDetailsProps) {
 
   if (stage.time) {
     details[t('stage.time')] = stage.time;
-  }
-
-  if (stage.date) {
-    details[t('stage.date')] = stage.date
-      .map(({ start, end }) => formatRange(start, end, translations.locale))
-      .join(', ');
   }
 
   if ('breakers' in stage && stage.breakers?.length) {

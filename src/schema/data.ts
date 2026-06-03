@@ -6,7 +6,7 @@ export type TournamentDetails = {
   year: number;
   name?: string | Record<Locale, string>;
   notes?: string | Record<Locale, string>;
-  location: string;
+  location?: string;
   country?: string;
   start?: string;
   end?: string;
@@ -32,7 +32,7 @@ export type TournamentDateSpan = {
 
 export type TournamentItem = {
   year: number;
-  location: string;
+  location?: string;
   country?: string;
   hasSgfs?: boolean;
 };
@@ -70,6 +70,8 @@ export type MandatoryBreakers =
 export type BaseStage = {
   name?: string | Record<Locale, string>;
   notes?: string | Record<Locale, string>;
+  location?: string;
+  country?: string;
   date?: TournamentDateSpan[];
   egd?: string;
   time?: string;
