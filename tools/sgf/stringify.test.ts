@@ -104,19 +104,19 @@ describe('Sgf stringify', () => {
   });
 
   it('cleans SGFs through the static cleaner in compact format', () => {
-    const output = Sgf.clean('(;PW[Old]C[root];B[aa](;W[bb]C[move];B[cc])(;W[dd]))', {
+    const output = Sgf.clean('(;PW[Old]C[root];B[aa]MN[1](;W[bb]C[move]N[END];B[cc])(;W[dd]))', {
       PW: 'New',
       KM: 6.5,
       C: null,
     });
 
-    assert.equal(output, '(;\nPW[New]\nKM[6.5]\n;B[aa];W[bb];B[cc])');
+    assert.equal(output, '(;\nPW[New]\nKM[6.5]\n;B[aa];W[bb])');
   });
 
   it('rotates cleaned SGFs through the static cleaner in compact format', () => {
     const output = Sgf.clean('(;SZ[19]PW[Old]C[root];B[dp])', { PW: 'New' }, 180);
 
-    assert.equal(output, '(;SZ[19]\nPW[New]\n;B[pd])');
+    assert.equal(output, '(;SZ[19]\nPW[New]\nC[root]\n;B[pd])');
   });
 
   it('round-trips local SGF examples in all stringify levels', () => {
