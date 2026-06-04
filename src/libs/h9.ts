@@ -8,8 +8,8 @@ export type H9Tournament = {
   id: string;
   class: 'A' | 'B' | 'C' | 'D';
   name: string;
-  country: string;
-  location: string;
+  country?: string;
+  location?: string;
   dates: string[];
   handicap: number;
   komi: number;
@@ -129,13 +129,10 @@ export function parseH9(input: string): H9Tournament {
     });
   }
 
-  const [country, location] = properties.PC.split(/,\s?/);
-
   return {
     id: properties.TC,
     name: properties.EV,
-    location: location ?? country,
-    country: location ? country : '',
+    ...parseLocation(properties.PC),
     class: properties.CL as H9Tournament['class'],
     dates: properties.DT ? properties.DT.split(',').map((date) => date.trim()) : [],
     handicap: properties.HA ? parseInt(properties.HA.slice(1), 10) : 0,
@@ -168,4 +165,13 @@ function getColumnsWithGames(table: string[][]) {
   }
 
   return results;
+}
+
+function parseLocation(location?: string) {
+  const index = location ? location.indexOf(',') : -1;
+
+  return {
+    country: index >= 0 ? location!.slice(0, index).trim() : undefined,
+    location: index >= 0 ? location!.slice(index + 1).trim() : location?.trim(),
+  };
 }

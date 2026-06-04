@@ -5,7 +5,7 @@ import { join } from 'node:path';
 import { Game, GamePlayer, LeagueStage, Player, TableResult, TournamentDetails } from '@/schema/data';
 import { InputTournamentStage } from '@/schema/input';
 import { parseDates } from '@/libs/dates';
-import { H9Game, buildLocalGameId, parseH9 } from '@/libs/h9';
+import { buildLocalGameId, H9Game, parseH9 } from '@/libs/h9';
 import { getRankValue } from '@/libs/rank';
 import { getGameId, parseGame } from '@/data/games';
 import type { PlayersHandler } from '@/data/players';
@@ -43,6 +43,8 @@ export async function loadH9Tournament({
     promoted,
     placeOffset,
     category,
+    location,
+    country,
   } = stage;
 
   const content = await readFile(join(EVENT_DATA_DIR, file), 'utf-8');
@@ -51,9 +53,6 @@ export async function loadH9Tournament({
   const processedGamesMap = new Map<string, Game>();
   const existingGamesMap = new Map<string, Game>();
   const rounds: string[][] = [];
-
-  tournamentDetails.country ||= tournament.country;
-  tournamentDetails.location ||= tournament.location;
 
   for (const player of tournament.results) {
     const newPlayer = playersHandler.loadPlayer({
@@ -307,6 +306,8 @@ export async function loadH9Tournament({
     date: parseDates(date ?? tournament.dates?.join(' - ')),
     promoted,
     placeOffset,
+    location: location ?? tournament.location,
+    country: country ?? tournament.country,
   } satisfies LeagueStage;
 }
 

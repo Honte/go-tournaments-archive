@@ -2,7 +2,7 @@ import type { GameProps } from '@/schema/data';
 import type { Translator } from '@/i18n/consts';
 import { Endpoints } from '@/libs/endpoints';
 import { ExternalButton } from '@/components/ui/ExternalButton';
-import { GameViewerButton } from '@/components/viewer/GameViewerTrigger';
+import { GameViewerButton } from '@/components/viewer/GameViewerButton';
 
 type GameActionProps = {
   t: Translator;

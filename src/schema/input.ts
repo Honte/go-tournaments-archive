@@ -13,6 +13,8 @@ export type InputBaseStage = {
   placeOffset?: number;
   category?: string;
   unmatchedSgfs?: string[];
+  location?: string;
+  country?: string;
 };
 
 export type InputLeagueStage = InputBaseStage & {

@@ -7,7 +7,7 @@ import { Endpoints } from '@/libs/endpoints';
 import { GameActions } from '@/components/GameActions';
 import { Stone } from '@/components/Stone';
 import { PlayerName } from '@/components/ui/PlayerName';
-import { GameViewerTrigger } from '@/components/viewer/GameViewerTrigger';
+import { GameViewerLink } from '@/components/viewer/GameViewerLink';
 
 type GameProps = {
   game: Game;
@@ -34,9 +34,9 @@ export function Game({ className, game, players, translations, title, wide }: Ga
       })}
     >
       {hasSgf && preview && (
-        <GameViewerTrigger sgfPath={game.props.sgf!} aria-label={gameTitle}>
+        <GameViewerLink sgfPath={game.props.sgf!} aria-label={gameTitle}>
           <img src={Endpoints.GAME_THUMB(preview)} alt={gameTitle} className="size-20" loading="lazy" />
-        </GameViewerTrigger>
+        </GameViewerLink>
       )}
       <div className="flex flex-col">
         <div

@@ -14,3 +14,4 @@ export type SgfNodeDataChangeValue =
 
 export type SgfNodeDataChange = Record<string, SgfNodeDataChangeValue>;
 export type SgfNodeData = Record<string, string[]>;
+export type SgfRotation = 0 | 90 | 180 | 270;

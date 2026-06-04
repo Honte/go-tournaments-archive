@@ -17,7 +17,11 @@ function TableRowComponent<T>({ row, className, ...props }: TableCellProps<T>) {
         }
 
         return (
-          <td key={cell.id} className="py-1 px-2" colSpan={cell.column.columnDef.meta?.span ?? 1}>
+          <td
+            key={cell.id}
+            className={clsx('py-1 px-2', cell.column.columnDef.meta?.className)}
+            colSpan={cell.column.columnDef.meta?.span ?? 1}
+          >
             {flexRender(cell.column.columnDef.cell, cell.getContext())}
           </td>
         );

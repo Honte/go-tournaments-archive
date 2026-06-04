@@ -4,5 +4,6 @@ declare module '@tanstack/react-table' {
   interface ColumnMeta<TData, TValue> {
     skip?: boolean;
     span?: number;
+    className?: string;
   }
 }
