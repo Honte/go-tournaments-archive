@@ -30,6 +30,6 @@ describe('SGF viewer search helpers', () => {
   it('returns an empty relative search when closing with no remaining params', () => {
     const searchParams = new URLSearchParams('sgf=%2Fsgf%2F2025%2Fgame.sgf');
 
-    assert.equal(getClosedViewerSearch(searchParams), '?');
+    assert.equal(getClosedViewerSearch(searchParams), '');
   });
 });

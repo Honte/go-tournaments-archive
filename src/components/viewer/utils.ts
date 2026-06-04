@@ -15,5 +15,5 @@ export function getClosedViewerSearch(searchParams: SearchParamsLike): string {
 
   params.delete('sgf');
 
-  return `?${params.toString()}`;
+  return params.size ? `?${params.toString()}` : '';
 }

@@ -43,7 +43,8 @@ export function GameViewer({ translations }: GameViewerProps) {
       return;
     }
 
-    router.replace(getClosedViewerSearch(searchParams), { scroll: false });
+    // next.js doesn't do well with pushing empty state
+    window.history.pushState(null, '', window.location.pathname + getClosedViewerSearch(searchParams));
   }, [router, searchParams]);
 
   if (!sgfPath) {
@@ -52,7 +53,7 @@ export function GameViewer({ translations }: GameViewerProps) {
 
   return (
     <Suspense fallback={null}>
-      <GameViewerDialog sgfPath={sgfPath} translations={translations} onClose={close} />;
+      <GameViewerDialog sgfPath={sgfPath} translations={translations} onClose={close} />
     </Suspense>
   );
 }
