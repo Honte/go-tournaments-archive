@@ -26,6 +26,7 @@ export function GameViewerModal({ sgfPath, translations, onClose }: GameViewerDi
       }
     };
 
+    (document.activeElement as HTMLElement)?.blur?.();
     document.addEventListener('keydown', onKey);
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';

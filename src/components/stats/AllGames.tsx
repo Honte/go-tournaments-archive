@@ -11,7 +11,7 @@ import { GameActions } from '@/components/GameActions';
 import { StatsTable } from '@/components/table/StatsTable';
 import { Loader } from '@/components/ui/Loader';
 import { PlayerCell } from '@/components/ui/PlayerCell';
-import { GameViewerTrigger } from '@/components/viewer/GameViewerTrigger';
+import { GameViewerLink } from '@/components/viewer/GameViewerLink';
 import { YearLink } from '@/components/YearLink';
 import { useGamesData } from '@/hooks/useGamesData';
 import { useTranslationsData } from '@/hooks/useTranslationsData';
@@ -53,22 +53,28 @@ function AllGamesContent({ games, translations }: AllGamesContentProps) {
               const game = info.row.original;
 
               return (
-                <GameViewerTrigger sgfPath={game.sgf!}>
+                <GameViewerLink sgfPath={game.sgf!} className="max-w-20">
                   <img
                     src={Endpoints.GAME_THUMB(game.jpg!)}
                     alt={t('game.preview', `${game.black.name} vs ${game.white.name}`)}
                     className="size-20 min-w-20 min-h-20"
                     loading="lazy"
                   />
-                </GameViewerTrigger>
+                </GameViewerLink>
               );
             },
             enableSorting: false,
+            meta: {
+              className: 'w-1/100',
+            },
           },
           {
             accessorKey: 'tournament',
             header: t('table.year'),
             cell: (info) => <YearLink locale={translations.locale} year={info.cell.getValue() as number} />,
+            meta: {
+              className: 'w-1/100',
+            },
           },
           {
             accessorKey: 'black.name',

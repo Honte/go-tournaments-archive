@@ -1,9 +1,10 @@
 'use client';
 
 import dynamic from 'next/dynamic';
-import { useCallback, useEffect, useState } from 'react';
+import { useRouter, useSearchParams } from 'next/navigation';
+import { Suspense, useCallback, useEffect, useRef } from 'react';
 import type { Translations } from '@/i18n/consts';
-import { SHOW_GAME_VIEWER_EVENT } from '@/components/viewer/utils';
+import { getClosedViewerSearch } from '@/components/viewer/utils';
 
 const GameViewerDialog = dynamic(
   () => import('@/components/viewer/GameViewerModal').then((mod) => mod.GameViewerModal),
@@ -17,21 +18,41 @@ type GameViewerProps = {
 };
 
 export function GameViewer({ translations }: GameViewerProps) {
-  const [sgfPath, setSgfPath] = useState<string | null>(null);
-  const close = useCallback(() => setSgfPath(null), []);
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const sgfPath = searchParams.get('sgf');
+  const previousSgfPathRef = useRef(sgfPath);
+  const openedFromPageRef = useRef(false);
 
   useEffect(() => {
-    document.addEventListener(SHOW_GAME_VIEWER_EVENT, showListener);
-    return () => document.removeEventListener(SHOW_GAME_VIEWER_EVENT, showListener);
-
-    function showListener(event: Event) {
-      setSgfPath((event as CustomEvent).detail);
+    if (!previousSgfPathRef.current && sgfPath) {
+      openedFromPageRef.current = true;
     }
-  }, []);
+
+    if (!sgfPath) {
+      openedFromPageRef.current = false;
+    }
+
+    previousSgfPathRef.current = sgfPath;
+  }, [sgfPath]);
+
+  const close = useCallback(() => {
+    if (openedFromPageRef.current) {
+      openedFromPageRef.current = false;
+      router.back();
+      return;
+    }
+
+    router.replace(getClosedViewerSearch(searchParams), { scroll: false });
+  }, [router, searchParams]);
 
   if (!sgfPath) {
     return null;
   }
 
-  return <GameViewerDialog sgfPath={sgfPath} translations={translations} onClose={close} />;
+  return (
+    <Suspense fallback={null}>
+      <GameViewerDialog sgfPath={sgfPath} translations={translations} onClose={close} />;
+    </Suspense>
+  );
 }
