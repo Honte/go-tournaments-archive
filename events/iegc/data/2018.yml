@@ -20,6 +20,9 @@ stages:
     findSharedPlaces: true
     games:
       - 1-4 1:B+11.5 round:5 sgf:2018/top8/5-JamesHutchinson-NoelMitchell.sgf
+      - 2-3 3:W+R round:6 sgf:2018/top8/6-CianSynnott-KevinFarrell.sgf ogs:https://online-go.com/game/14598718
+      - 2-5 2:B+14.5 round:5 sgf:2018/top8/5-CianSynnott-TiberiuGociu.sgf ogs:https://online-go.com/game/15037582
+      - 4-5 4:B+R round:7 sgf:2018/top8/7-NoelMitchell-TiberiuGociu.sgf
   - type: tournament
     file: ie2018final.txt
     name: Final

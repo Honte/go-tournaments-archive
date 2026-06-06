@@ -21,6 +21,7 @@ stages:
     findSharedPlaces: true
     games:
       - 1-5 5:W+R round:5 sgf:2019/top8/5-JamesHutchinson-KevinFarrell.sgf
+      - 3-1 1:W+8.5 round:7 sgf:2019/top8/7-RomanPszonka-JamesHutchinson.sgf ogs:https://online-go.com/game/19731692
       - 4-1 1:W+R round:6 sgf:2019/top8/6-MichaelThai-JamesHutchinson.sgf
   - type: tournament
     file: ie2019final.txt
