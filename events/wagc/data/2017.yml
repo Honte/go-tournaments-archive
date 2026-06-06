@@ -39,14 +39,21 @@ stages:
       - 7-1 1:W+R round:4 sgf:2017/4-CornelBurzo-BaoxiangBai.sgf
       - 9-10 9:B+2.5 round:6 sgf:2017/6-DmitrijSurin-LukasPodpera.sgf
       - 10-3 10:B+R round:2 sgf:2017/2-LukasPodpera-YuChengLai.sgf
+      - 10-20 10:B+R round:7 sgf:2017/7-LukasPodpera-FabienLips.sgf
       - 11-4 4:W+R round:2 sgf:2017/2-LukasKraemer-DanielKo.sgf
+      - 12-20 12:B+R round:4 sgf:2017/4-ViktorLin-FabienLips.sgf
       - 13-3 3:W+R round:5 sgf:2017/5-KwantaoLi-YuChengLai.sgf
       - 13-8 8:W+R round:8 sgf:2017/8-KwantaoLi-NaiSanChan.sgf
       - 14-10 10:W+2.5 round:3 sgf:2017/3-VorawatTanapatsopol-LukasPodpera.sgf
+      - 15-20 20:W+T round:5 sgf:2017/5-YujieGong-FabienLips.sgf
       - 16-4 4:W+R round:7 sgf:2017/7-FrankJanssen-DanielKo.sgf
       - 16-11 11:W+16.5 round:1 sgf:2017/1-FrankJanssen-LukasKraemer.sgf
       - 18-2 2:W+R round:5 sgf:2017/5-JavierAleksiSavolainen-SangbinLee.sgf
       - 20-2 2:W+R round:3 sgf:2017/3-FabienLips-SangbinLee.sgf
+      - 20-14 14:W+R round:8 sgf:2017/8-FabienLips-VorawatTanapatsopol.sgf
+      - 20-19 20:B+4.5 round:6 sgf:2017/6-FabienLips-InHangSam.sgf
+      - 20-35 20:B+T round:1 sgf:2017/1-FabienLips-JosteinFlood.sgf
+      - 28-20 20:W+30.5 round:2 sgf:2017/2-SansarTsolmon-FabienLips.sgf
       - 32-8 8:W+R round:2 sgf:2017/2-FaishalUmarFitrah-NaiSanChan.sgf
       - 37-1 1:W+R round:2 sgf:2017/2-MilanJadron-BaoxiangBai.sgf
       - 38-3 3:W+R round:3 sgf:2017/3-BirandAdal-YuChengLai.sgf

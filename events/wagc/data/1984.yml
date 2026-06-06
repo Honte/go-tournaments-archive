@@ -17,6 +17,23 @@ stages:
       - 3-1 1:W+R round:7 sgf:1984/7-HironoriHirata-QunWang.sgf
       - 3-5 3:B+R round:6 sgf:1984/6-HironoriHirata-MatthewMacfadyen.sgf
       - 4-2 2:W+R round:7 sgf:1984/7-RonaldSchlemper-ChanghyeokYoo.sgf
+      - 4-10 4:B+5.5 round:5 sgf:1984/5-RonaldSchlemper-FrankHansen.sgf
       - 6-19 6:B+R round:2 sgf:1984/2-PierreColmez-LiekfooTan.sgf
+      - 7-14 7:B+R round:1 sgf:1984/1-LojzeSuc-LaszloKiskos.sgf
       - 9-1 1:W+15.5 round:2 sgf:1984/2-JanuszKraszek-QunWang.sgf
+      - 9-19 9:B+R round:7 sgf:1984/7-JanuszKraszek-LiekfooTan.sgf
+      - 10-14 10:B+R round:2 sgf:1984/2-FrankHansen-LaszloKiskos.sgf
       - 11-5 5:W+R round:5 sgf:1984/5-StefanBudig-MatthewMacfadyen.sgf
+      - 12-29 12:B+4.5 round:2 sgf:1984/2-GerfriedBeck-RicardoQuintero.sgf
+      - 13-10 13:B+14.5 round:1 sgf:1984/1-HongsooShin-FrankHansen.sgf
+      - 16-6 16:B+8.5 round:1 sgf:1984/1-SeJuLee-PierreColmez.sgf
+      - 16-26 16:B+17.5 round:2 sgf:1984/2-SeJuLee-JorgeSasaki.sgf
+      - 18-28 18:B+R round:2 sgf:1984/2-VladimirDanek-KorsakChairasmisak.sgf
+      - 20-14 14:W+14.5 round:5 sgf:1984/5-FranciscoGarciadelaBanda-LaszloKiskos.sgf
+      - 20-29 20:B+R round:1 sgf:1984/1-FranciscoGarciadelaBanda-RicardoQuintero.sgf
+      - 21-24 24:W+R round:2 sgf:1984/2-LauriPaatero-PhilipNicolet.sgf
+      - 23-26 26:W+10.5 round:1 sgf:1984/1-FranklinBassarsky-JorgeSasaki.sgf
+      - 25-19 25:B+R round:1 sgf:1984/1-KyleJones-LiekfooTan.sgf
+      - 25-22 25:B+17.5 round:5 sgf:1984/5-KyleJones-BeegiokTan.sgf
+      - 26-17 17:W+R round:7 sgf:1984/7-JorgeSasaki-UlfOlsson.sgf
+      - 30-27 27:W+R round:7 sgf:1984/7-KnutRollLund-EnzoBurlini.sgf
