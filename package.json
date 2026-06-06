@@ -18,6 +18,7 @@
     "dev:iegc": "cross-env EVENT=iegc next dev",
     "prebuild": "tsx tools/assets/index.ts",
     "build": "next build",
+    "builder": "tsx tools/builder.ts",
     "build:pgc": "cross-env EVENT=pgc npm run build",
     "build:wagc": "cross-env EVENT=wagc npm run build",
     "build:pwgc": "cross-env EVENT=pwgc npm run build",
@@ -73,6 +74,7 @@
     "yaml": "2.9.0"
   },
   "devDependencies": {
+    "@inquirer/prompts": "8.3.0",
     "@tailwindcss/postcss": "4.3.0",
     "@types/lodash-es": "4.17.12",
     "@types/node": "24.12.4",
