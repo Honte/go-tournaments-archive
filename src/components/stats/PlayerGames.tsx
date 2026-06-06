@@ -13,7 +13,7 @@ import { CountryLink } from '@/components/ui/CountryLink';
 import { H2 } from '@/components/ui/H2';
 import { PlayerCell } from '@/components/ui/PlayerCell';
 import type { PlayerDetails } from '@/components/ui/PlayerName';
-import { GameViewerLink } from '@/components/viewer/GameViewerLink';
+import { GameViewerTrigger } from '@/components/viewer/GameViewerTrigger';
 import { YearLink } from '@/components/YearLink';
 
 type PlayerGamesProps = {
@@ -84,14 +84,14 @@ export function PlayerGames({ player, translations }: PlayerGamesProps) {
             accessorKey: 'img',
             header: null,
             cell: (info) => (
-              <GameViewerLink sgfPath={info.row.original.props.sgf!}>
+              <GameViewerTrigger sgfPath={info.row.original.props.sgf!}>
                 <img
                   src={Endpoints.GAME_THUMB(info.row.original.img)}
                   alt={t('game.preview', `${player.name} vs ${info.row.original.opponent.name}`)}
                   className="size-20 min-w-20 min-h-20"
                   loading="lazy"
                 />
-              </GameViewerLink>
+              </GameViewerTrigger>
             ),
             enableSorting: false,
           },
