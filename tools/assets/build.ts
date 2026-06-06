@@ -13,6 +13,7 @@ import { getGameStage } from '@/data/sgfs';
 
 const PUBLIC_SGF_DIR = './public/sgf';
 const SGF_WORKER_PATH = fileURLToPath(new URL('./sgf.ts', import.meta.url));
+const STATUS_DELAY = 5000;
 
 export async function buildAssets() {
   console.log(`[assets] generating assets for ${EVENT}`);
@@ -85,10 +86,13 @@ async function buildSgfAssetsInWorkers(tasks: BuildSgfRequest[]): Promise<BuildS
     execArgv: ['--import', 'tsx'],
   });
 
+  const interval = setInterval(() => console.log(`[assets] completed ${pool.completed} sgfs`), STATUS_DELAY);
+
   try {
     return await Promise.all(tasks.map((task) => pool.run(task)));
   } finally {
     await pool.destroy();
+    clearInterval(interval);
   }
 }
 
