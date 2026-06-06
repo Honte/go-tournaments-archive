@@ -1,0 +1,14 @@
+website: https://www.eurogofed.org/index.html?id=278
+stages:
+  - type: tournament
+    file: esgc2019.txt
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - mms
+      - sos
+      - sodos
+    findSharedPlaces: false

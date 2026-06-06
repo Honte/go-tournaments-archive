@@ -1,0 +1,23 @@
+; TC[E180822A]
+; CL[A]
+; EV[European Student Championship 2018]
+; PC[SE, Leksand / Sweden]
+; DT[2018-08-22,2018-08-23]
+; HA[h9]
+; KM[6.5]
+; TM[80]
+; CM[Fischertime, 45 minutes basic / 20 seconds per move (submitted by erdbeer)]
+;.
+; European Student Championship
+ 1 Welticke Jonas         6d DE  BN    8    5    27   133  9+/b0   4+/w0   2+/b0   3+/w0   5+/w0    |15786287
+ 2 Podpera Lukas          7d CZ  APWS  7    4    28   128  3+/b0   6+/w0   1-/w0   4+/b0   8+/w0    |13201914
+ 3 Fragman Amir           5d IL  MGC   6    3    28   130  2-/w0   5+/w0   4+/b0   1-/b0   10+/b0   |13625315
+ 4 Obenaus Johannes       6d DE  B     5    2    28   130  5+/b0   1-/b0   3-/w0   2-/w0   11+/w0   |13049795
+ 5 Pace Alessandro        4d IT  Roma  5    2    28   128  4-/w0   3-/b0   6+/b0   8+/w0   1-/b0    |15049650
+ 6 Christenson Anton      2d SE  Stoc  5    3    21   112  7+/w0   2-/b0   5-/w0   11+/b0  12+/w0   |16986156
+ 7 Tomsu Adriana          1d CZ  TFMi  5    3    18   104  6-/b0   8-/w0   12+/b0  10+/w0  9+/w0    |16225396
+ 8 Fisches Zacharias      1d DE  B     4    2    24   114  10-/w0  7+/b0   9+/w0   5-/b0   2-/b0    |15874936
+ 9 Waahlin Lova           2d SE  Stoc  4    2    21   107  1-/w0   11+/b0  8-/b0   12+/w0  7-/b0    |16425849
+10 Losada Juan-Manuel     2k NO  Tron  3    2    19   108  8+/b0   12+/w0  11-/b0  7-/b0   3-/w0    |17833420
+11 Stene Rasmus           3k NO  Tron  2    1    19   108  12-/b0  9-/w0   10+/w0  6-/w0   4-/b0    |16074861
+12 Sachsenhauser Regina   4k DE  ED    2    1    19   98   11+/w0  10-/b0  7-/w0   9-/b0   6-/b0    |15201912

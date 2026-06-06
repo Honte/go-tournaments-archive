@@ -1,0 +1,16 @@
+; TC[T230915A]
+; CL[A]
+; EV[ESGC 2023]
+; PC[RO, Timisoara]
+; DT[2023-09-15,2023-09-16]
+; HA[h9]
+; KM[6.5]
+; TM[85]
+; CM[ (submitted by cristim)]
+;.
+; https://eurogofed.org/results/#esgc
+1 Dobranis Denis        5d RO  ATSU  4    1    4    14   70   4-/w   5+/b   0+     3+/b   2+/w    |15350038
+2 Dobranis Darius       3d RO  ATSU  4    0    4    14   70   3+/w   4+/b   5+/w   0+     1-/b    |15049716
+3 Dovcik Boris          2d SK  Kosi  3    1    3    14   70   2-/b   0+     4+/w   1-/w   5+/b    |19437605
+4 Dobridoreanu Daniel   1d RO  TISA  3    0    3    14   70   1+/b   2-/w   3-/b   5+/w   0+      |18350761
+5 Mesesan Daria-Maria   3k RO  ATSU  1    0    1    14   70   0+     1-/w   2-/b   4-/b   3-/w    |19637189

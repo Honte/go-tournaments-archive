@@ -1,0 +1,24 @@
+; TC[E150918A]
+; CL[A]
+; EV[European Student GO Championship]
+; PC[RO, Cluj-Napoca]
+; DT[2015-09-18,2015-09-20]
+; HA[h9]
+; KM[6.5]
+; TM[90]
+; CM[ (submitted by dr.Toma)]
+;.
+ 1 Marko Peter             4d HU  BuPe  8    4    33   159  7+/b    4+/w    2+/b    3-/w    9+/w     |14513895
+ 2 Lin Viktor              6d AT  Go7   8    4    32   145  8+/b    9+/w    1-/w    5+/b    3+/b     |14501256
+ 3 Surma Mateusz           1p PL  Dzim  7    3    35   156  4-/b    7+/w    6+/w    1+/b    2-/w     |12837968
+ 4 Vashurov Alexandr       5d RU  16Kz  7    3    33   152  3+/w    1-/b    5-/w    8+/b    7+/b     |13062764
+ 5 Seres Julia             1d HU  Fot   6    3    26   115  6-/w    10+/b   4+/b    2-/w    13+/w    |14598991
+ 6 Leung Joanne            2d UK  NoCb  6    3    25   134  5+/b    8+/w    3-/b    7-/w    14+/w    |17037350
+ 7 Kouba Petr              3d CZ  APWS  6    2    33   152  1-/w    3-/b    9+/b    6+/b    4-/w     |14533926
+ 8 Serban Mihai_Valentin   5d RO  Cluj  6    2    25   122  2-/w    6-/b    12+/b   4-/w    11+/b    |13062258
+ 9 Dubiel Marika           2d NL  Amvn  5    2    26   130  11+/b   2-/b    7-/w    12+/w   1-/b     |14301617
+10 Menczel Patrik          4k RO  Cluj  3    3    12   86   13+/b   5-/w    11-/w   14+/b   12+/w    |16433527
+11 Trifu Alice             5k RO  Giar  2    2    16   91   9-/w    14+/w   10+/b   13-/b   8-/w     |13586892
+12 Asaftei Elena           8k RO  CSRB  2    2    16   91   14+/b   13+/w   8-/w    9-/b    10-/b    |16549654
+13 Piloiu Adina           10k RO  Sibi  2    2    13   85   10-/w   12-/b   14+/b   11+/w   5-/b     |16037725
+14 Gherghel Anandu        12k RO  Cluj  0    0    15   82   12-/w   11-/b   13-/w   10-/w   6-/b     |16574096

@@ -1,0 +1,14 @@
+website: https://durhamgo.club/esgc2025/
+stages:
+  - type: tournament
+    file: esgc2025.txt
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - mms
+      - sos
+      - sosos
+    findSharedPlaces: false

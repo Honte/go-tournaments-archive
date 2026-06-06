@@ -1,0 +1,14 @@
+website: https://www.eurogofed.org/index.html?id=437
+stages:
+  - type: tournament
+    file: esgc2024.txt
+    scoringColumns:
+      - mms
+      - sos
+      - sosos
+      - null
+    breakers:
+      - mms
+      - sos
+      - sosos
+    findSharedPlaces: false

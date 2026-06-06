@@ -1,0 +1,13 @@
+website:
+ - https://www.eurogofed.org/results/student/student2005.htm
+ - http://esgc2014.blogspot.fr/
+stages:
+  - type: tournament
+    file: esgc2014.txt
+    scoringColumns:
+      - place
+      - wins
+    breakers:
+      - wins
+      - place
+    findSharedPlaces: false

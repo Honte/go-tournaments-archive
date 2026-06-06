@@ -1,0 +1,29 @@
+; TC[E111015A]
+; CL[A]
+; EV[European Students Championship 2011]
+; PC[CZ, Prague]
+; DT[2011-10-15,2011-10-16]
+; HA[h9]
+; KM[6.5]
+; TM[90]
+; CM[ (submitted by Jana_H)]
+;.
+;
+ 1 Kachanovskyi Artem    7d UA  Rivn  6    5    21   97   6+/w0   4+/b0   7+/b0   2+/b0   5+/w0    |12662870
+ 2 Simara Jan            5d CZ  KVaS  5    4    20   89   12+/w0  9+/b0   3+/b0   1-/w0   8+/b0    |10749860
+ 3 Prokop Jan            5d CZ  SRic  5    4    17   91   8+/w0   10+/b0  2-/w0   14+/b0  4+/b0    |10433654
+ 4 Obenaus Johannes      4d DE  B     4    3    21   92   7+/w0   1-/w0   9+/b0   10+/b0  3-/w0    |13049795
+ 5 Billouet Simon        4d FR  35Re  4    3    19   93   10-/b0  11+/b0  6+/w0   8+/w0   1-/b0    |10462408
+ 6 Marko Peter           4d HU  BuPe  4    3    19   84   1-/b0   13+/b0  5-/b0   12+/w0  9+/w0    |14513895
+ 7 Pawlaczyk Sebastian   2d PL  Jast  4    3    18   87   4-/b0   15+/b0  1-/w0   11+/w0  10+/w0   |14562372
+ 8 Bouwman Gelmer        3d NL  Delf  3    2    19   79   3-/b0   16+/w0  12+/b0  5-/b0   2-/w0    |14598958
+ 9 Kral Maros            3d SK  Kosi  3    2    18   87   11+/b0  2-/w0   4-/w0   15+/b0  6-/b0    |12537041
+10 Conradi Judith        2d DE  B     3    2    18   85   5+/w0   3-/w0   17+/b0  4-/w0   7-/b0    |12850486
+11 Bocle Milena          1d FR  92An  3    2    16   76   9-/w0   5-/w0   13+/b0  7-/b0   16+/w0   |14362018
+12 Metta Carlo           3d IT  Pisa  3    2    14   81   2-/b0   14+/b0  8-/w0   6-/b0   18+/w0   |14713996
+13 Decelle Simon         1k FR  54Na  3    3    12   69   15+/b0  6-/w0   11-/w0  17+/w0  14+/b0   |14933996
+14 Virag Ladislav        4k SK  Kosi  2    2    13   62   18+/b0  12-/w0  16+/b0  3-/w0   13-/w0   |12762750
+15 Papez Martin         14k CZ  Zlin  2    2    11   68   13-/w0  7-/w0   18+/b0  9-/w0   17+/b0   |15762340
+16 Varis Dusan           9k CZ  Zlin  2    2    9    68   17+/b0  8-/b0   14-/w0  18+/w0  11-/b0   |15813941
+17 Pavelka Tomas        20k CZ  APra  1    1    10   60   16-/w0  18+/w0  10-/w0  13-/b0  15-/w0   |16225957
+18 Mraz Sebastian       20k CZ  CeBu  0    0    10   57   14-/w0  17-/b0  15-/w0  16-/b0  12-/b0   |16237958

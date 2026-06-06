@@ -1,0 +1,12 @@
+website: https://www.eurogofed.org/results/student/student2010.htm
+stages:
+  - type: tournament
+    file: esgc2010.txt
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+    breakers:
+      - mms
+      - sos
+    findSharedPlaces: true

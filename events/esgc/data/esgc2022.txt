@@ -1,0 +1,21 @@
+; TC[T220917B]
+; CL[A]
+; EV[European Student Go Championship 2022]
+; PC[DE, Trier]
+; DT[2022-09-17,2022-09-18]
+; HA[h9]
+; KM[6.5]
+; TM[85]
+; CM[Fischer Time: 45`+20./move (submitted by mlanger)]
+;.
+ 1 Ruzicka Martin             4d DE  DA    33   5    33   155  771  4+/b    3+/w    8+/b    2+/b    7+/w     |13037596
+ 2 Grigoriu Elian_Ioan        6d RO  ATAR  32   4    32   155  769  5+/b    6+/w    7+/b    1-/w    8+/b     |15974420
+ 3 Medak Mirta                2d HR  Sred  32   4    32   152  768  10+/w   1-/b    9+/w    7+/b    4+/b     |16525718
+ 4 Papachristopoulos Alexis   2k DE  W     31   3    31   154  759  1-/w    5+/w    11+/b   10+/b   3-/w     |17962076
+ 5 Gerloff Roman              1d DE  HH    31   3    31   153  766  2-/w    4-/b    6+/b    0+      9+/w     |19386257
+ 6 Schaaf Emanuel             1d DE  TR    31   3    31   151  761  8+/w    2-/b    5-/w    11+/b   10+/w    |16550567
+ 7 Donle Isabel               2d DE  B     30   2    30   155  762  9+/b    11+/w   2-/w    3-/w    1-/b     |16837359
+ 8 Petri Jonathan             3k DE  TR    30   2    30   154  767  6-/b    0+      1-/w    9+/b    2-/w     |20149360
+ 9 Thoerner Vanessa           3k DE  PI    29   1    29   152  765  7-/w    10+/b   3-/b    8-/w    5-/b     |16749502
+10 Veltman Paul               3k DE  BN    29   1    29   151  761  3-/b    9-/w    0+      4-/w    6-/b     |18413307
+11 Weber Mathias              7k DE  HAL   29=  1    29   148  750  0+      7-/b    4-/w    6-/w    0=       |18086618

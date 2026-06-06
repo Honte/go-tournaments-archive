@@ -1,0 +1,37 @@
+; TC[E120922A]
+; CL[A]
+; EV[European Students Go Championship]
+; PC[RU, Moscow]
+; DT[2012-09-22,2012-09-23]
+; HA[h9]
+; KM[6.5]
+; TM[80]
+; CM[ (submitted by Serpov)]
+;.
+;Pl Name                  Str    Club  1       2       3       4       5      MM   Pt   SOS SOSOS
+ 1 Shikshin Ilja          7d RU  16Kz  12+     3+      10+     2+      5+      6    5    20   96    |12013342
+ 2 Kashaev Andrej         5d RU  77Mo  13+     11+     4+      1-      10+     5    4    19   100   |12601215
+ 3 Trubicin Stepan        3d RU  78SP  15+     1-      12+     11+     4+      5    4    19   96    |13098096
+ 4 Burnaevskij Igor       4d RU  50Kl  16+     14+     2-      10+     3-      4    3    19   94    |16049671
+ 5 Kairo Hlib             1k UA  Kyiv  10-     24+     16+     7+      1-      4    3    17   87    |13633103
+ 6 Bocle Milena           2d FR  92An  11-     8-      22+     16+     14+     4    3    15   80    |14362018
+ 7 Radaev Kirill          3k RU  66Ek  25+     9+      14+     5-      13+     4    4    15   79    |14749625
+ 8 Bojkov Ivan            2k RU  77Mo  19+     6+      15-     17+     12+     4    4    15   76    |15733245
+ 9 Chernobrovin Sergej    1d RU  10Pt  14-     7-      21+     25+     11+     4    3    13   79    |16462743
+10 Tychko Igor            4d RU  50Fr  5+      15+     1-      4-      2-      3    2    22   92    |14025671
+11 Kotelskij Artem        1k RU  77Mo  6+      2-      13+     3-      9-      3    2    21   84    |15686517
+12 Kuin-Dubiel Marika     1d NL  Amvn  1-      20+     3-      19+     8-      3    2    19   79    |14301617
+13 Pljasunov Vladislav    1d RU  77Mo  2-      17+     11-     15+     7-      3    2    18   84    |14886905
+14 Svjatlovskij Mikhail   1k RU  77Mo  9+      4-      7-      20+     6-      3    2    18   74    |15913106
+15 Klubnikov Georgij      1k RU  78SP  3-      10-     8+      13-     20+     3    2    17   86    |15450193
+16 Batraev Vladimir       1k RU  77Mo  4-      21+     5-      6-      19+     3    2    16   76    |14974432
+17 Popova Marina          6k RU  77Mo  23+     13-     24+     8-      21+     3    3    12   68    |15713247
+18 Solomojchenko Ilja     6k RU  77Mo  20-     22-     23+     24+     25+     3    3    8    58    |15701752
+19 Tishin Alexandr        3k RU  77Mo  8-      23+     25+     12-     16-     2    2    13   72    |15249190
+20 Danilenko Dmitrij      6k RU  77Mo  18+     12-     26+     14-     15-     2    2    12   71    |15433539
+21 Fokina Alexandra       8k RU  77Mo  26+     16-     9-      22+     17-     2    2    12   60    |13849473
+22 Gordeev Giorgij        9k RU  77Mo  24-     18+     6-      21-     26+     2    2    10   58    |15725765
+23 Shapovalova Elena      7k RU  77Mo  17-     19-     18-     26+     24+     2    2    9    56    |15849790
+24 Bedoev Vladimir       10k RU  77Mo  22+     5-      17-     18-     23-     1    1    14   56    |16386095
+25 Kondratenko Julia      9k RU  77Mo  7-      26+     19-     9-      18-     1    1    13   58    |15713753
+26 Vanskij Artemij        7k RU  77Mo  21-     25-     20-     23-     22-     0    0    9    56    |16598659

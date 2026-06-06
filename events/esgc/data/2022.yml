@@ -1,0 +1,15 @@
+website: https://www.eurogofed.org/results/student/student2022.htm
+stages:
+  - type: tournament
+    file: esgc2022.txt
+    scoringColumns:
+      - mms
+      - wins
+      - null
+      - sos
+      - sosos
+    breakers:
+      - mms
+      - sos
+      - sosos
+    findSharedPlaces: false

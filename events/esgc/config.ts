@@ -1,0 +1,15 @@
+import { EventConfig } from '@event/schema';
+
+const EVENT_CONFIG: EventConfig = {
+  id: 'epc',
+  domain: '',
+  locales: ['en'],
+  showCountry: true,
+  showBestPlace: true,
+  generateSvgs: false,
+  generateJpgs: false,
+  generateZips: true,
+  hideGamesWithoutSgf: true,
+};
+
+export default EVENT_CONFIG;
