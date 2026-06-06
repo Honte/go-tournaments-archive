@@ -1,0 +1,40 @@
+; CL[A]
+; EV[European Students Championship]
+; PC[SE, Stockholm]
+; DT[2007-08-06,2007-08-08]
+; TC[E070806]
+; HA[h9]
+; KM[6.5]
+; TM[]
+;
+  1 Papazoglou Benjamin       5d FR 35Re 11 5  59 339  13+/b  8+/w  7+/b  2+/w  4+/b  3-/b |10733712
+  2 Jurek Martin              4d CZ Mik  11 5  58 339   4+/w  5+/b 10+/w  1-/b  9+/b 12+/b |10213753
+  3 Kuin Merlijn              6d NL Amvn 11 5  55 342  14+/w 10-/b 11+/b  8+/w  7+/b  1+/w |10233861
+  4 Alemany Joan              1d ES Bar  10 4  57 325   2-/b 19+/b 15+/w  5+/b  1-/w  9+/w |13437974
+  5 Siukola Mikko             2d FI YliG 10 4  56 336  11+/b  2-/w 14+/b  4-/w 13+/w  8+/b |13913075
+  6 Nemlij Igor               5d RU 16Kz 10 4  53 335   8-/w 17+/b  9-/w 11+/w 10+/b  7+/w |10886359
+  7 Kuehner Christian         3d DE BN  9 3  58 325  12+/w  9+/b  1-/w 18+/b  3-/w  6-/b |13037827
+  8 Fernandez-Villares Javier 2d ES Ubi   9 3  58 320   6+/b  1-/b 13+/w  3-/b 23+/w  5-/w |13050752
+  9 Urtela Mika               3d FI Hels  9 3  57 333  16+/b  7-/w  6+/b 10+/b  2-/w  4-/b |13786795
+ 10 Karlsson John             2d SE Got   9 3  57 324  15+/b  3+/w  2-/b  9-/w  6-/w 16+/b |13486693
+ 11 Marz Manuela              3d DE L  9 3  56 314   5-/w 12+/b  3-/w  6-/b 17+/w 18+/w |13062412
+ 12 Nikula Miika              3d FI Hels  9 3  53 327   7-/b 11-/w 16+/b 15+/w 14+/b  2-/w |13701798
+ 13 Boerjesson Martin         2d SE Kun   9 3  53 309   1-/w 23+/b  8-/b 20+/w  5-/b 14+/w |13837109
+ 14 Weiland Marcus            1d SE Sto   8 2  54 309   3-/b 24+/b  5-/w 17+/w 12-/w 13-/b |12798258
+ 15 Zaloudkova Klara          2d CZ Pra   8 2  51 309  10-/w 16+/w  4-/b 12-/b 18-/b 22+/w |10798106
+ 16 Connor Thomas             2d BE Brug  8 2  50 308   9-/w 15-/b 12-/w 19+/b 21+/b 10-/w |13774849
+ 17 Morales Pablo             1d ES Ten   8 3  49 301  18+/w  6-/w 22+/b 14-/b 11-/b 21+/w |13801073
+ 18 Leppanen Suvi             1k FI Kanp  8 3  48 303  17-/b 21+/w 24+/b  7-/w 15+/w 11-/b |12998821
+ 19 Ritakallio Samuel         1k FI Kanp  8 3  44 266  21+/b  4-/w 20-/b 16-/w 30+/w 25+/w |14286305
+ 20 Kuperberg Denis           3k FR 69CR  8 5  38 232  29+/b 27+/w 19+/w 13-/b 28+/b 30+/w |14001735
+ 21 Rouxel Adrien             1k FR 35Re  7 2  46 275  19-/w 18-/b 25+/b 22+/w 16-/w 17-/b |14037749
+ 22 Nikula Janne              1k FI Hels  7 2  44 265  24-/w 25+/b 17-/w 21-/b 26+/w 15-/b |14037243
+ 23 Bergstroem Kerstin        2k SE Lin   7 3  44 258  27+/b 13-/w 26+/w 24+/w  8-/b 28-/b |13062478
+ 24 Chan Vickie               1k UK WarU  7 2  43 273  22+/b 14-/w 18-/w 23-/b 25-/b  0+   |14637326
+ 25 Engelhardt Jan            1k DE L  7 3  40 245  26+/b 22-/w 21-/w 31+/b 24+/w 19-/b |14301573
+ 26 Joekalda Alo              2k EE Tal   7 3  36 227  25-/w 29+/w 23-/b 27+/b 22-/b 31+/w |14086831
+ 27 Timperi Kalle             2k FI YliG  6 2  35 212  23-/w 20-/b 30+/b 26-/w  0+    0=   |14033536
+ 28 Grimfors Marcus           4k SE Sto   6 4  33 214  31-/w  0+   29+/b 30+/b 20-/w 23+/w |13786157
+ 29 Galinovskij Vasilij       3k BY Min   5 2  32 189  20-/w 26-/b 28-/w  0+   31+/w  0=   |13650802
+ 30 Kolk Martin               5k SE Sto   4 2  35 217   0+   31+/b 27-/w 28-/w 19-/b 20-/b |14274689
+ 31 Lu Xinyi                  5k UK Maid  4 2  32 208  28+/b 30-/w  0+   25-/w 29-/b 26-/b |13550185

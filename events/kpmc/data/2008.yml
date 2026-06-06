@@ -62,6 +62,7 @@ stages:
       - 20-9 9:W+R round:8 sgf:2008/8-LucianCorlan-JiaChengTan.sgf
       - 21-10 10:W+16.5 round:8 sgf:2008/8-HelcioAlexandrePacheco-HinChanLam.sgf
       - 23-42 23:B+R round:1 sgf:2008/1-MaiDuyLe-EricPacheco.sgf
+      - 25-47 47:W+6.5 round:1 sgf:2008/1-FernandoManriqueOchoa-TerenceMcSweeney.sgf
       - 26-3 3:W+R round:1 sgf:2008/1-LeszekSoldan-ZhaoWei.sgf
       - 26-8 26:B+R round:7 sgf:2008/7-LeszekSoldan-FredericDonzet.sgf
       - 27-5 5:W+12.5 round:3 sgf:2008/3-ThanapolTiawattananont-OndrejSilt.sgf

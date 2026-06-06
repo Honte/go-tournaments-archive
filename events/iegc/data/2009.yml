@@ -18,6 +18,8 @@ stages:
       - wins
       - playoff
     findSharedPlaces: true
+    games:
+      - 5-1 1:W+22.5 round:4 sgf:2009/top8/4-ColinMacSweeny-IanDavis.sgf
   - type: tournament
     file: ie2009final.txt
     name: Final

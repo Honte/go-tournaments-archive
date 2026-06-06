@@ -12,37 +12,37 @@
 ; Groups A-P: rounds 1-3, Knock Out 32: rounds 4-8                 
 ; Prepared by Damir Medak                 
 ;Pl Name  Gr Co Club Rt R1 R2 R3 R4 R5 R6 R7 R8 NBW Place Pin
- 1 Kim Seung-Gu                7d KR  xxxx  2700 47+     12+     0+      17+     9+      5+      3+      2+      8  1       |20374134
- 2 Huang Qiuxuan               6d CN  xxxx  2600 64+     26+     0+      18+     10+     6+      4+      1-      7  2       |20398136
- 3 Sornarra Pongsakarn         5d TH  xxxx  2426 40+     18+     0+      19+     11+     7+      1-      0=      6  3       |18949304
- 4 Chernykh Anton              6d RU  50Zh  2656 55+     39+     0+      20+     12+     8+      2-      0=      6  3       |15713467
- 5 Chan Yi-Tien                7d TW  xxxx  2700 45+     27+     0+      23+     13+     1-      0=      0=      5  5       |17225758
+ 1 Kim Seung-Gu                7d KR  xxxx  2700 47+     12+     0=      17+     9+      5+      3+      2+      8  1       |20374134
+ 2 Huang Qiuxuan               6d CN  xxxx  2600 64+     26+     0=      18+     10+     6+      4+      1-      7  2       |20398136
+ 3 Sornarra Pongsakarn         5d TH  xxxx  2426 40+     18+     0=      19+     11+     7+      1-      0=      6  3       |18949304
+ 4 Chernykh Anton              6d RU  50Zh  2656 55+     39+     0=      20+     12+     8+      2-      0=      6  3       |15713467
+ 5 Chan Yi-Tien                7d TW  xxxx  2700 45+     27+     0=      23+     13+     1-      0=      0=      5  5       |17225758
  6 Teng Justin                 5d US  xxx   2480 22-     57+     41+     24+     14+     2-      0=      0=      4  5       |16537532
  7 Xie Kaikun                  6d NZ  xxxx  2528 10-     62+     46+     22+     15+     3-      0=      0=      4  5       |14849164
- 8 Savolainen Javier-Aleksi    5d FI  YliG  2558 25+     36+     0+      25+     16+     4-      0=      0=      5  5       |14001537
- 9 Pham Minh_Quang             5d VN  xxxx  2500 33+     19+     0+      28+     1-      0=      0=      0=      4  9       |20333137
-10 Morikawa Shunji             7d JP  Japa  2696 7+      46+     0+      27+     2-      0=      0=      0=      4  9       |19750456
-11 Dobranis Denis              5d RO  ATSU  2481 30+     37+     0+      29+     3-      0=      0=      0=      4  9       |15350038
+ 8 Savolainen Javier-Aleksi    5d FI  YliG  2558 25+     36+     0=      25+     16+     4-      0=      0=      5  5       |14001537
+ 9 Pham Minh_Quang             5d VN  xxxx  2500 33+     19+     0=      28+     1-      0=      0=      0=      4  9       |20333137
+10 Morikawa Shunji             7d JP  Japa  2696 7+      46+     0=      27+     2-      0=      0=      0=      4  9       |19750456
+11 Dobranis Denis              5d RO  ATSU  2481 30+     37+     0=      29+     3-      0=      0=      0=      4  9       |15350038
 12 Fragman Amir                6d IL  MGC   2542 63+     1-      47+     21+     4-      0=      0=      0=      3  9       |13625315
-13 Young_Woon Park             7d HK  xxxx  2701 24+     44+     0+      31+     5-      0=      0=      0=      4  9       |20325085
+13 Young_Woon Park             7d HK  xxxx  2701 24+     44+     0=      31+     5-      0=      0=      0=      4  9       |20325085
 14 Hanevik Heming              2d NO  Berg  2230 35+     31-     35+     32+     6-      0=      0=      0=      3  9       |14986664
-15 Kruml Ondrej                6d CZ  Imba  2596 28+     43+     0+      26+     7-      0=      0=      0=      4  9       |10886524
+15 Kruml Ondrej                6d CZ  Imba  2596 28+     43+     0=      26+     7-      0=      0=      0=      4  9       |10886524
 16 Halim Edwin                 3d ID  xxxx  2303 54+     20-     38+     30+     8-      0=      0=      0=      3  9       |16950582
-17 Tan Jia-Cheng               6d SG  xxxx  2577 50+     34+     0+      1-      0=      0=      0=      0=      3  17       |10725176
+17 Tan Jia-Cheng               6d SG  xxxx  2577 50+     34+     0=      1-      0=      0=      0=      0=      3  17       |10725176
 18 Chung Chun-Chen             3d MY  xxxx  2284 56+     3-      40+     2-      0=      0=      0=      0=      2  17       |18498238
 19 Nakhiengchanh Bounmy        4d LA  xxxx  2295 49+     9-      33+     3-      0=      0=      0=      0=      2  17       |17601749
-20 Karadaban Denis             5d FR  38Gr  2534 38+     16+     0+      4-      0=      0=      0=      0=      3  17       |15637314
+20 Karadaban Denis             5d FR  38Gr  2534 38+     16+     0=      4-      0=      0=      0=      0=      3  17       |15637314
 21 Gudmundsson Hallbjorn       3d IS  Reyk  2253 39-     55+     39+     12-     0=      0=      0=      0=      2  17       |16937085
-22 Malcok Kaan                 4d TR  Oslo  2400 6+      41+     0+      7-      0=      0=      0=      0=      2  17       |16962264
+22 Malcok Kaan                 4d TR  Oslo  2400 6+      41+     0=      7-      0=      0=      0=      0=      2  17       |16962264
 23 Wong Howard                 5d CA  xxxx  2500 29-     58+     42+     5-      0=      0=      0=      0=      2  17       |20386135
 24 Mestrovic Stjepan           3d HR  VGor  2350 13-     60+     44+     6-      0=      0=      0=      0=      2  17       |12649307
 25 Metta Carlo                 4d IT  Pisa  2391 8-      52+     36+     8-      0=      0=      0=      0=      2  17      |14713996
 26 Schlattner Frederic         1d CH  Zur   2155 48+     2-      48+     15-     0=      0=      0=      0=      2  17       |16350961
 27 Hutchinson James            2d IE  Lisb  2210 61+     5-      45+     10-     0=      0=      0=      0=      2  17       |14850187
 28 Jacimovic Mihailo           3d RS  KGRa  2349 15-     59+     43+     9-      0=      0=      0=      0=      2  17       |16786891
-29 Ovsiienko Vsevolod          4d UA  Kyiv  2476 23+     42+     0+      11-     0=      0=      0=      0=      3  17       |17633902
+29 Ovsiienko Vsevolod          4d UA  Kyiv  2476 23+     42+     0=      11-     0=      0=      0=      0=      3  17       |17633902
 30 Zeriouhi Tarik             11k MA  59Li  940  11-     53+     37+     16-     0=      0=      0=      0=      2  17       |18362289
-31 Welticke Jonas              6d DE  BN    2631 51+     14+     0+      13-     0=      0=      0=      0=      3  17       |15786287
+31 Welticke Jonas              6d DE  BN    2631 51+     14+     0=      13-     0=      0=      0=      0=      3  17       |15786287
 32 Lee Scott_Samuel            3d ZA  xxxx  2251 34-     50+     34+     14-     0=      0=      0=      0=      2  17       |17662095
 33 Carmona Pedro               1k PT  Lis   2051 9-      49+     19-     0=      0=      0=      0=      0=      1  33       |13533652
 34 Mercado-Sanchez Mario       2d MX  xxxx  2175 32+     17-     32-     0=      0=      0=      0=      0=      1  33       |15250279

@@ -21,6 +21,8 @@ stages:
     findSharedPlaces: true
     games:
       - 2-6 2:B+T round:7 sgf:2012/top8/7-JamesHutchinson-JustynaKleczar.sgf
+      - 3-6 3:B+18.5 round:6 sgf:2012/top8/6-IanDavis-JustynaKleczar.sgf
+      - 7-6 6:W+T round:5 sgf:2012/top8/5-TiberiuGociu-JustynaKleczar.sgf
   - type: tournament
     file: ie2012final.txt
     name: Final

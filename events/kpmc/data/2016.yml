@@ -13,3 +13,11 @@ stages:
       - sos
       - sosos
     findSharedPlaces: true
+    games:
+      - 1-9 1:B+R round:2 sgf:2016/2-RundongYang-TanguyLeCalve.sgf
+      - 2-9 2:B+R round:5 sgf:2016/5-YuChengLai-TanguyLeCalve.sgf
+      - 6-25 6:B+R round:1 sgf:2016/1-ShotaAndo-HermanHiddema.sgf
+      - 9-15 9:B+R round:4 sgf:2016/4-TanguyLeCalve-DanielSufiahThalib.sgf
+      - 25-31 25:B+R round:3 sgf:2016/3-HermanHiddema-VesaLaatikainen.sgf
+      - 25-42 25:B+R round:2 sgf:2016/2-HermanHiddema-ChanfaiChang.sgf
+      - 38-25 25:W+R round:4 sgf:2016/4-TashiWalde-HermanHiddema.sgf

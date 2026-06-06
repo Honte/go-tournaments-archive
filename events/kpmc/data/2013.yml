@@ -15,5 +15,15 @@ stages:
       - sosos
     findSharedPlaces: true
     games:
+      - 1-22 1:B+R round:1 sgf:2013/1-JaeGeunPark-EdwinHalim.sgf
       - 2-1 1:W+R round:6 sgf:2013/6-LiFu-ParkJaeGeun.sgf
+      - 2-14 2:B+13.5 round:1 sgf:2013/1-LiFu-KhanhBinhDo.sgf
+      - 2-43 2:B+R round:2 sgf:2013/2-LiFu-GiedriusTumelis.sgf
+      - 3-14 3:B+R round:2 sgf:2013/2-BillLin-KhanhBinhDo.sgf
+      - 3-32 3:B+R round:1 sgf:2013/1-BillLin-WaqiyuddinMohdZaid.sgf
+      - 4-32 4:B+R round:2 sgf:2013/2-ChiHinChan-WaqiyuddinMohdZaid.sgf
       - 5-2 2:W+R round:4 sgf:2013/4-EmuraKiko-FuLi.sgf
+      - 5-26 5:B+R round:2 sgf:2013/2-KikoEmura-KevinPrist.sgf
+      - 6-4 4:W+R round:1 sgf:2013/1-IljaShikshin-ChiHinChan.sgf
+      - 7-1 1:W+R round:2 sgf:2013/2-ShinWeiLin-ParkJaeGeun.sgf
+      - 23-5 5:W+R round:1 sgf:2013/1-JannikRasmussen-KikoEmura.sgf

@@ -1,0 +1,15 @@
+website: https://www.eurogofed.org/results/student/student2008.htm
+stages:
+  - type: tournament
+    file: esgc2005.txt
+    notes: top 3 decided in tie-break
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - mms
+      - sos
+      - sosos
+    findSharedPlaces: false

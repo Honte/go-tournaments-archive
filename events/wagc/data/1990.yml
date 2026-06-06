@@ -25,4 +25,6 @@ stages:
       - 6-4 4:W+R round:5 sgf:1990/5-YingKan-LaurentHeiser.sgf
       - 6-10 6:B+R round:7 sgf:1990/7-YingKan-IgorDetkov.sgf
       - 11-5 5:W+12.5 round:7 sgf:1990/7-HelmutHasibeder-JyhhaoSu.sgf
+      - 12-17 12:B+R round:4 sgf:1990/4-LeszekSoldan-MattiSiivola.sgf
       - 14-7 7:W+20.5 round:1 sgf:1990/1-ZoranMutabzija-SenfengWang.sgf
+      - 16-12 12:W+3.5 round:8 sgf:1990/8-KhosaAriya-LeszekSoldan.sgf

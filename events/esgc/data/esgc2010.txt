@@ -1,0 +1,33 @@
+; TC[E100911A]
+; CL[A]
+; EV[6th European Student Go Championship]
+; PC[DE, Darmstadt]
+; DT[2010-09-11,2010-09-12]
+; HA[h9]
+; KM[6.5]
+; TM[90]
+; CM[ (submitted by mlanger)]
+;.
+; European Student Championship
+ 1 Terwey Matthias      3d DE  MS    16   5    68   6+/b0   3+/w0   9+/b0   2+/w0   8+/b0    |14001592
+ 2 Teuber Benjamin      6d DE  HH    15   4    71   5+/b0   4+/w0   7+/b0   1-/b0   3+/w0    |10437174
+ 3 Brooks William       3d UK  Camb  14   3    68   15+/w0  1-/b0   6+/w0   7+/b0   2-/b0    |10862247
+ 4 Moisio Oiva          3d FI  Kanp  14   3    68   9+/w0   2-/b0   5+/b0   8-/w0   6+/b0    |15233504
+ 5 Kolehmainen Jari     2d FI  Kanp  14   3    65   2-/w0   14+/b0  4-/w0   11+/b0  7+/w0    |14398538
+ 6 Mueller Pascal       2d DE  DA    13   2    69   1-/w0   11+/b0  3-/b0   9+/w0   4-/w0    |13986423
+ 7 Connor Thomas        3d BE  Pant  13   2    68   11+/w0  8+/b0   2-/w0   3-/w0   5-/b0    |13774849
+ 8 Brauner Sebastian    1k DE  DA    13   3    68   10+/b0  7-/w0   12+/w0  4+/b0   1-/w0    |13950849
+ 9 Viitanen Timo        2d FI  Tamp  13   2    67   4-/b0   12+/b0  1-/w0   6-/b0   13+/w0   |14374536
+10 Silber Olga          1k DE  HH    13   3    58   8-/w0   13-/w0  18+/b0  14+/b0  11+/w0   |13449645
+11 Moenkehues Stephan   2d DE  DA    12   1    65   7-/b0   6-/w0   13+/b0  5-/w0   10-/b0   |13937847
+12 Neumann Andreas      1k DE  BO    12   2    60   13+/b0  9-/w0   8-/b0   15-/w0  14+/b0   |14062807
+13 Simic Sasa           1k DE  ME    12   2    60   12-/w0  10+/b0  11-/w0  18+/b0  9-/b0    |13837098
+14 Ausec Luka           2k SI  Kran  11   2    60   18+/b0  5-/w0   15+/b0  10-/w0  12-/w0   |14737206
+15 Weber Denis          1k DE  PF    11   1    58   3-/b0   18-/w0  14-/w0  12+/b0  16-/b0   |15062201
+16 Haas Richard         4k DE  DA    11   4    46   17+/b0  19-/w0  22+/w5  20+/b0  15+/w0   |15250147
+17 Claus Sebastian      4k DE  DA    11   4    42   16-/w0  21+/w1  19+/b0  22+/w6  20+/b0   |14633564
+18 Koehler Axel         2k DE  D     10   1    56   14-/w0  15+/b0  10-/w0  13-/w0  21-/w4   |12949178
+19 Fischer Dennis       4k DE  BO    9    2    45   20-/w0  16+/b0  17-/w0  21+/w2  22-/w6   |13062687
+20 Schulze Joachim      6k DE  LD    8    3    42   19+/b0  22+/w3  21+/w1  16-/w0  17-/w0   |15237167
+21 Waelde Simone        7k DE  DA    5    1    34   22-/w2  17-/b1  20-/b1  19-/b2  18+/b4   |15449324
+22 Wagner David        11k FR  94EF  2    2    22   21+/b2  20-/b3  16-/b5  17-/b6  19+/b6   |13574308

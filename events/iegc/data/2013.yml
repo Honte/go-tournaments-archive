@@ -22,6 +22,8 @@ stages:
     games:
       - 4-5 4:B+R round:7 sgf:2013/top8/7-RoryWales-JamesHutchinson.sgf
       - 6-5 5:W+9.5 round:6 sgf:2013/top8/6-EoghanBarry-JamesHutchinson.sgf
+      - 6-7 6:B+R round:7 sgf:2013/top8/7-EoghanBarry-JustynaKleczar.sgf
+      - 7-4 4:W+3.5 round:6 sgf:2013/top8/6-JustynaKleczar-RoryWales.sgf
       - 7-5 5:W+R round:5 sgf:2013/top8/5-JustynaKleczar-JamesHutchinson.sgf
   - type: tournament
     file: ie2013final.txt

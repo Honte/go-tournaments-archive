@@ -1,0 +1,17 @@
+{
+  "site": {
+    "name": "European Student Go Championships Archive",
+    "acronym": "ESGC",
+    "description": "Archive of all European Student Championships tournaments",
+    "yearDescription": "Results of ESGC %{0}",
+    "allTimeStatsDescription": "All-time statistics of all European Student Go Championships participants",
+    "playerStatsDescription": "Participation statistics of %{0} in all European Student Go Championships events"
+  },
+  "details": {
+    "goToWebsite": "Go to ESGC %{0} website"
+  },
+  "winners": {
+    "title": "Medalists of European Student Go Championships",
+    "first": "European Student Champion"
+  }
+}

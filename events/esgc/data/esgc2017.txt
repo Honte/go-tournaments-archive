@@ -1,0 +1,19 @@
+; TC[E170909A]
+; CL[A]
+; EV[European student go championship 2017]
+; PC[CZ, Cesk Budejovice]
+; DT[2017-09-09,2017-09-10]
+; HA[h9]
+; KM[6.5]
+; TM[82.5]
+; CM[ (submitted by tymak)]
+;.
+1 Vashurov Alexandr      5d RU  16Kz  5    5    14   71   8+/b   4+/w   2+/b   6+/w   3+/b    |13062764
+2 Hamrah Schayan         5d AT  Wien  4    4    15   70   5+/b   3+/b   1-/w   7+/w   6+/w    |15437598
+3 Bouette Valerian       2d FR  93Mo  3    3    15   65   7+/b   2-/w   9+/w   4+/b   1-/w    |14601631
+4 Leung Joanne           2d UK  NoCb  3    3    13   68   0+     1-/b   6+/w   3-/w   9+/b    |17037350
+5 Vrablik Jan            1k CZ  APra  3    3    12   68   2-/w   6-/b   0+     8+/w   7+/b    |16286908
+6 Svjatlovskij Mikhail   4d RU  77Mo  2    2    16   64   9+/w   5+/w   4-/b   1-/b   2-/b    |15913106
+7 Petrashevska Nika      3k UA  Kyiv  2    2    13   67   3-/w   0+     8+/b   2-/b   5-/w    |15786518
+8 Andrei Razvan          2k RO  VaDo  2    2    12   61   1-/w   9+/b   7-/w   5-/b   0+      |14986125
+9 Lisa Sona              2k SK  Kosi  1    1    10   66   6-/b   8-/w   3-/b   0+     4-/w    |16037604

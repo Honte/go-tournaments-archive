@@ -1,0 +1,20 @@
+; TC[E160924A]
+; CL[A]
+; EV[European Student Go Championship]
+; PC[NL, European Go Cultural Centre]
+; DT[2016-09-24,2016-09-25]
+; HA[h9]
+; KM[6.5]
+; TM[80]
+; CM[ (submitted by williamwandel)]
+;.
+ 1 Marko Peter         4d HU  BuPe  4    4    4    16   64   4+/b    6+/w    3-/w    5+/b    2+/w     |14513895
+ 2 Obenaus Johannes    6d DE  B     4    4    4    15   65   5+/b    7+/w    6+/w    3+/b    1-/b     |13049795
+ 3 Ruzicka Martin      4d DE  FR    4    4    4    15   63   8+/w    4+/b    1+/b    2-/w    7+/b     |13037596
+ 4 Bouette Valerian    2d FR  93Mo  3    3    3    11   67   1-/w    3-/w    10+/b   9+/b    6+/w     |14601631
+ 5 Avram Laura         2d RO  Bist  3    3    3    11   65   2-/w    10+/w   8+/b    1-/w    9+/b     |12698620
+ 6 Fisches Zacharias   1k DE  B     2    2    2    12   66   9+/w    1-/b    2-/b    10+/w   4-/b     |15874936
+ 7 Seres Julia         2d HU  Fot   2    2    2    11   64   10+/b   2-/b    9-/b    8+/w    3-/w     |14598991
+ 8 Ahlborn Marieke     1k DE  BN    2    2    2    10   61   3-/b    9+/w    5-/w    7-/b    10+/w    |16286721
+ 9 Leung Joanne        2d UK  NoCb  1    1    1    12   55   6-/b    8-/b    7+/w    4-/w    5-/w     |17037350
+10 Zhang Weishan      20k NL  xxxx  0    0    0    12   55   7-/w    5-/b    4-/w    6-/b    8-/b     |18050439

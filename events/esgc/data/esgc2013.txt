@@ -1,0 +1,26 @@
+; TC[E131005A]
+; CL[A]
+; EV[European Student Go Championship 2013]
+; PC[IT, Trieste]
+; DT[2013-10-05,2013-10-06]
+; HA[h2]
+; KM[6.5]
+; TM[82.5]
+; CM[ (submitted by bert-ts)]
+;.
+ 1 Marko Peter             3d HU  BuPe  36   5    169  838  4+/b    3+/b    2+/w    6+/b    5+/w     |14513895
+ 2 Bouwman Gelmer          3d NL  Delf  35   4    166  831  9+/b    5+/w    1-/b    8+/b    3+/w     |14598958
+ 3 Serban Mihai_Valentin   5d RO  Bist  34   3    170  831  7+/b    1-/w    6+/w    4+/b    2-/b     |13062258
+ 4 Sanow Kevin             4d DE  J     34   3    166  832  1-/w    9+/b    5+/w    3-/w    7+/b     |15874485
+ 5 Sandrini Bastian        4k DE  N     33   2    169  829  6+/w    2-/b    4-/b    9+/w    1-/b     |16201427
+ 6 Klancisar Tim           2k SI  Ljub  33   2    167  833  5-/b    7+/w    3-/b    1-/w    8+/w     |15762967
+ 7 Guennou Moran           1d FR  38Gr  32   1    163  813  3-/w    6-/b    8-/w    10+/b   4-/w     |15049089
+ 8 Brancaccio Andrea       5k IT  Vene  32   2    162  788  10-/w2  11+/w1  7+/b    2-/w    6-/b     |15074356
+ 9 Logar Maja              4k SI  Lju   31   0    161  793  2-/w    4-/w    11-/w   5-/b    10-/b    |14886740
+10 Marini Francesco        9k IT  Vene  30   4    148  755  8+/b2   12+/w   13+/b   7-/w    9+/w     |16598582
+11 Ussardi Gregorio        9k IT  Trev  29   3    144  703  13+/w   8-/b1   9+/b    15+/w5  12-/b    |16498317
+12 Chow Anthony           11k IT  Tren  28   4    135  642  15+/w3  10-/b   0+      16+/w6  11+/w    |16862076
+13 Gerola Alessio         10k IT  Tren  27   2    134  641  11-/b   16+/w5  10-/w   0+      15-/w4   |16386084
+14 Gargari Giorgio        11k IT  Udin  27   1    120  584  0=      0=      0=      0=      16+/w6   |14801820
+15 De_Lazzari Enrico      16k IT  Vene  22   3    111  628  12-/b3  0+      16+/w   11-/b5  13+/b4   |16762592
+16 Sorrentino Francesco   18k IT  Trie  18   1    104  604  0+      13-/b5  15-/b   12-/b6  14-/b6   |16874187

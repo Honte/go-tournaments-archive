@@ -1,0 +1,35 @@
+; CL[A]
+; EV[European Students Championship]
+; PC[FR, Cannes]
+; DT[2008-08-21,2008-08-24]
+; TC[E080821]
+; HA[h9]
+; KM[6.5]
+; TM[]
+;
+  1 Nemlij Igor             5d RU 16Kz 35 5 202 1196  14+  3+  6+  2+  4- 10+ |10886359
+  2 Hora Jan                6d CZ Pra  35 5 201 1201  12+  8+  4+  1-  5+  6+ |10401083
+  3 Salignon Jerome         4d FR 75Pa 35 5 199 1195  15+  1-  9+ 13+  7+  4+ |10825628
+  4 Kuzela Martin           3d CZ Zli  34 4 203 1192  11+ 12+  2- 10+  1+  3- |10250702
+  5 Marz Manuela            3d DE L 34 4 198 1188   8-  9+ 17+  6+  2-  7+ |13062412
+  6 Thao Soulivanh          1d FR 38Gr 33 3 201 1191  10+ 15+  1-  5- 13+  2- |13674903
+  7 Ly Boris                1d FR 92An 33 3 199 1184  13+ 14- 11+  8+  3-  5- |13286801
+  8 Kuperus Sjoerd          2d NL Utre 33 3 198 1186   5+  2- 13-  7- 12+ 16+ |14662351
+  9 Amorin Thomas           1d FR 59Li 33 3 197 1171  16+  5-  3- 17- 11+ 15+ |13698036
+ 10 Desveaux Vivien         1d FR 69CR 33 3 196 1177   6- 18+ 14+  4- 15+  1- |13974279
+ 11 Salgues Camille         2d FR 92Co 33 3 195 1186   4- 17+  7- 12+  9- 14+ |10350241
+ 12 Yarde Wesley            2d NL Eind 32 2 199 1186   2-  4- 16+ 11-  8- 13+ |13913207
+ 13 Fortin Jean             1d FR 75Pa 32 2 198 1187   7- 16+  8+  3-  6- 12- |14249356
+ 14 Chung Siu_Hong          2d NL Gron 32 2 196 1152   1-  7+ 10- 15- 20+ 11- |13662583
+ 15 Zaloudkova Klara        2d CZ Pra  32 2 196 1152   3-  6- 21+ 14+ 10-  9- |10798106
+ 16 Zahonyi Balint          1d HU BuPe 32 2 191 1163   9- 13- 12- 18+ 17+  8- |12598597
+ 17 Daguenet Mathieu        1k FR 92An 31 2 192 1127  18+ 11-  5-  9+ 16- 19- |14386394
+ 18 Bartova Jitka           2k CZ Pra  30 2 179 1070  17- 10- 22+ 16- 19- 24+ |13849748
+ 19 Turlot Quentin          5k FR 38Gr 30 5 167 1022  25+ 22+ 24+ 20- 18+ 17+ |14837823
+ 20 Nubbert Mark            4k UK WSur 30 4 164 1010  23+ 21- 25+ 19+ 14- 26+ |14633729
+ 21 Engelhardt Jan          3k DE L 30 3 163 1007  22- 20+ 15- 23- 26+ 25+ |14301573
+ 22 Creusen Ivo             4k NL Eind 29 3 163  991  21+ 19- 18- 26+ 24+ 23- |14898026
+ 23 Hagondokoff Wladimir    5k FR xxx  28 3 157  978  20- 24- 26- 21+ 25+ 22+ |14813348
+ 24 Bonet Jonathan          9k FR 13Ma 24 3 161  993  26+ 23+ 19- 25+ 22- 18- |14949704
+ 25 Nguyen Trung            8k FR xxx  23 1 163  976  19- 26+ 20- 24- 23- 21- |15025516
+ 26 Rodo Christophe         10 FR 13Ma 21 1 164  971  24- 25- 23+ 22- 21- 20- |14874882

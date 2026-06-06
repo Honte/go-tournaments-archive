@@ -1,0 +1,14 @@
+website: https://www.eurogofed.org/results/student/student2007.htm
+stages:
+  - type: tournament
+    file: esgc2007.txt
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - mms
+      - sos
+      - sosos
+    findSharedPlaces: false

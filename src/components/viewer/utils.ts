@@ -1,19 +1,9 @@
-type SearchParamsLike = {
-  toString(): string;
-};
+export const SHOW_GAME_VIEWER_EVENT = 'show-game-viewer';
 
-export function getOpenViewerSearch(searchParams: SearchParamsLike, sgfPath: string): string {
-  const params = new URLSearchParams(searchParams.toString());
-
-  params.set('sgf', sgfPath);
-
-  return `?${params.toString()}`;
-}
-
-export function getClosedViewerSearch(searchParams: SearchParamsLike): string {
-  const params = new URLSearchParams(searchParams.toString());
-
-  params.delete('sgf');
-
-  return params.size ? `?${params.toString()}` : '';
+export function dispatchGameEvent(sgfPath: string) {
+  document.dispatchEvent(
+    new CustomEvent(SHOW_GAME_VIEWER_EVENT, {
+      detail: sgfPath,
+    })
+  );
 }

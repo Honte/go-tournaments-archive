@@ -22,6 +22,8 @@ stages:
     games:
       - 1-2 1:B+T round:7 sgf:2015/top8/7-PhilippeRenaut-JamesHutchinson.sgf
       - 2-7 2:B+21.5 round:6 sgf:2015/top8/6-JamesHutchinson-ThomasShanahan.sgf
+      - 7-8 7:B+1.5 round:7 sgf:2015/top8/7-ThomasShanahan-TiberiuGociu.sgf
+      - 8-1 1:W+R round:6 sgf:2015/top8/6-TiberiuGociu-PhilippeRenaut.sgf
   - type: tournament
     file: ie2015final.txt
     name: Final

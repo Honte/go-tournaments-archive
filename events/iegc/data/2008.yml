@@ -18,6 +18,9 @@ stages:
       - wins
       - playoff
     findSharedPlaces: true
+    games:
+      - 4-7 4:B+R round:3 sgf:2008/top8/3-IanDavis-BernardPalmer.sgf
+      - 7-2 2:W+R round:1 sgf:2008/top8/1-BernardPalmer-ClaasRoever.sgf
   - type: tournament
     file: ie2008final.txt
     name: Final

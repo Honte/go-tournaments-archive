@@ -1,0 +1,14 @@
+website: https://www.eurogofed.org/results/student/student2023.htm
+stages:
+  - type: tournament
+    file: esgc2023.txt
+    scoringColumns:
+      - wins
+      - direct
+      - null
+      - null
+      - null
+    breakers:
+      - wins
+      - direct
+    findSharedPlaces: false

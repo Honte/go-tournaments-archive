@@ -2,7 +2,6 @@ top:
   - 
   - 
   - prenaut
-notes: medalists on places 1-2 can change - final still ongoing
 stages:
   - type: tournament
     file: ie2026.txt

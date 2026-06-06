@@ -16,4 +16,7 @@ stages:
     findSharedPlaces: true
     games:
       - 1-5 1:B+9.5 round:7 sgf:2010/7-LeeSangHun-KachanovskyiArtem.sgf
+      - 1-23 1:B+R round:2 sgf:2010/2-SanghunLee-MarekKaminski.sgf
       - 2-1 1:W+R round:6 sgf:2010/6-TsuchimuneYoshiyuki-LeeSangHun.sgf
+      - 10-2 2:W+R round:3 sgf:2010/3-OndrejSilt-YoshiyukiTsuchimune.sgf
+      - 11-25 11:B+12.5 round:6 sgf:2010/6-PavolLisy-IanDavis.sgf

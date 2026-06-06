@@ -11,7 +11,7 @@ import { GameActions } from '@/components/GameActions';
 import { StatsTable } from '@/components/table/StatsTable';
 import { Loader } from '@/components/ui/Loader';
 import { PlayerCell } from '@/components/ui/PlayerCell';
-import { GameViewerLink } from '@/components/viewer/GameViewerLink';
+import { GameViewerTrigger } from '@/components/viewer/GameViewerTrigger';
 import { YearLink } from '@/components/YearLink';
 import { useGamesData } from '@/hooks/useGamesData';
 import { useTranslationsData } from '@/hooks/useTranslationsData';
@@ -53,14 +53,14 @@ function AllGamesContent({ games, translations }: AllGamesContentProps) {
               const game = info.row.original;
 
               return (
-                <GameViewerLink sgfPath={game.sgf!} className="max-w-20">
+                <GameViewerTrigger sgfPath={game.sgf!}>
                   <img
                     src={Endpoints.GAME_THUMB(game.jpg!)}
                     alt={t('game.preview', `${game.black.name} vs ${game.white.name}`)}
                     className="size-20 min-w-20 min-h-20"
                     loading="lazy"
                   />
-                </GameViewerLink>
+                </GameViewerTrigger>
               );
             },
             enableSorting: false,

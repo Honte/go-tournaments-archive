@@ -1,10 +1,9 @@
 'use client';
 
 import dynamic from 'next/dynamic';
-import { useRouter, useSearchParams } from 'next/navigation';
-import { Suspense, useCallback, useEffect, useRef } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import type { Translations } from '@/i18n/consts';
-import { getClosedViewerSearch } from '@/components/viewer/utils';
+import { SHOW_GAME_VIEWER_EVENT } from '@/components/viewer/utils';
 
 const GameViewerDialog = dynamic(
   () => import('@/components/viewer/GameViewerModal').then((mod) => mod.GameViewerModal),
@@ -18,42 +17,21 @@ type GameViewerProps = {
 };
 
 export function GameViewer({ translations }: GameViewerProps) {
-  const router = useRouter();
-  const searchParams = useSearchParams();
-  const sgfPath = searchParams.get('sgf');
-  const previousSgfPathRef = useRef(sgfPath);
-  const openedFromPageRef = useRef(false);
+  const [sgfPath, setSgfPath] = useState<string | null>(null);
+  const close = useCallback(() => setSgfPath(null), []);
 
   useEffect(() => {
-    if (!previousSgfPathRef.current && sgfPath) {
-      openedFromPageRef.current = true;
+    document.addEventListener(SHOW_GAME_VIEWER_EVENT, showListener);
+    return () => document.removeEventListener(SHOW_GAME_VIEWER_EVENT, showListener);
+
+    function showListener(event: Event) {
+      setSgfPath((event as CustomEvent).detail);
     }
-
-    if (!sgfPath) {
-      openedFromPageRef.current = false;
-    }
-
-    previousSgfPathRef.current = sgfPath;
-  }, [sgfPath]);
-
-  const close = useCallback(() => {
-    if (openedFromPageRef.current) {
-      openedFromPageRef.current = false;
-      router.back();
-      return;
-    }
-
-    // next.js doesn't do well with pushing empty state
-    window.history.pushState(null, '', window.location.pathname + getClosedViewerSearch(searchParams));
-  }, [router, searchParams]);
+  }, []);
 
   if (!sgfPath) {
     return null;
   }
 
-  return (
-    <Suspense fallback={null}>
-      <GameViewerDialog sgfPath={sgfPath} translations={translations} onClose={close} />
-    </Suspense>
-  );
+  return <GameViewerDialog sgfPath={sgfPath} translations={translations} onClose={close} />;
 }
