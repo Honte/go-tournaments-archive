@@ -1,0 +1,15 @@
+website: https://www.eurogofed.org/results/women/womens2016.htm
+stages:
+  - type: tournament
+    file: ewgc2016.txt
+    notes: Initial Final Ordering was changed (check website)
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: true

@@ -1,0 +1,14 @@
+website: https://www.eurogofed.org/results/women/womens2018.htm
+stages:
+  - type: tournament
+    file: ewgc2018.txt
+    scoringColumns:
+      - mms
+      - sos
+      - sosos
+      - null
+    breakers:
+      - mms
+      - sos
+      - sosos
+    findSharedPlaces: true

@@ -1,0 +1,23 @@
+; CL[A]
+; EV[European Female Championship]
+; PC[RU, Sankt-Peterburg]
+; DT[2007-06-30,2007-07-02]
+; TC[E070630]
+; HA[h9]
+; KM[6.5]
+; TM[90]
+;
+  1 Kovaleva Natalja        4d RU 74Ch  4 4  17  14   4+  6+  3+  2+  5- |10537087
+  2 Nureeva Ajgul           2d RU 16Kz  4 4  15  11  11+  5+  7+  1-  4+ |12062347
+  3 Zaloudkova Klara        2d CZ Pra   4 4  12   8  13+  8+  1- 10+  6+ |10798106
+  4 Simunkova Martina       1d CZ Libe  3 3  15   7   1- 11+  9+  7+  2- |10298904
+  5 Kalsberg Elvina         2d RU 78SP  3 3  14   8  10+  2-  8- 12+  1+ |10750047
+  6 Sharafeeva Guzel        2d RU 16Kz  3 3  14   6   9+  1- 12+  8+  3- |12586134
+  7 Takechi Harumi          2d JP Kaw   3 3  12   5  12+ 13+  2-  4-  8+ |10533028
+  8 Dubiel Marika           1k PL Lubl  2 2  13   3  14+  3-  5+  6-  7- |14301617
+  9 Melkisheva Anastasia    6k RU 74Ch  2 2  11   3   6- 10+  4- 13+ 11- |13898489
+ 10 Hricova Jana            1k CZ Pra   2 2  11   2   5-  9- 11+  3- 14+ |10233509
+ 11 Zakharchenko Marija     2k UA Kyiv  2 2  11   2   2-  4- 10- 14+  9+ |13937638
+ 12 Stojanovic Ivana        6k RS Beo   2 2  10   1   7- 14+  6-  5- 13+ |14333693
+ 13 Fokina Alexandra        9k RU 77Mo  1 1  11   0   3-  7- 14+  9- 12- |13849473
+ 14 Melkisheva Tatjana      16 RU 74Ch  0 0   9   0   8- 12- 13- 11- 10- |13849495

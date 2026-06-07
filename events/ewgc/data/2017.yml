@@ -1,0 +1,12 @@
+website: https://eurogofed.org/index.html/calendar/supporters.html?id=147
+stages:
+  - type: tournament
+    file: ewgc2017.txt
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+    breakers:
+      - mms
+      - sos
+    findSharedPlaces: true

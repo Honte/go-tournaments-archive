@@ -1,0 +1,13 @@
+website: https://www.eurogofed.org/results/women/womens2006.htm
+stages:
+  - type: tournament
+    file: ewgc2006.txt
+    scoringColumns:
+      - mms
+      - wins
+      - null
+      - sos
+    breakers:
+      - wins
+      - sos
+    findSharedPlaces: true

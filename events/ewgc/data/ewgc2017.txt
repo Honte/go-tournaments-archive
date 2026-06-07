@@ -1,0 +1,61 @@
+; TC[E170819A]
+; CL[A]
+; EV[EUROPEAN WOMEN`S GO CHAMPIONSHIP 2017]
+; PC[UA, Odesa]
+; DT[2017-08-19,2017-08-20]
+; HA[h9]
+; KM[6.5]
+; TM[75]
+; CM[EUROPEAN WOMEN`S GO CHAMPIONSHIP 2017, Ukraine, Odesa, 19-20.08.2017, class A (basic time 60 minutes + byoyomi (Canadian) 5min x 20 no limit periods), even games (submitted by VKachanovskyj)]
+;.
+;
+ 1 Marz Manja               3d DE  J     22   5    99   7+/b    2+/b    3+/w    4+/b    5+/w     |13062412
+ 2 Kovaleva Natalia         5d RU  74Ch  21   4    98   6+/w    1-/w    9+/w    3+/b    7+/b     |10537087
+ 3 Pocsai Rita              5d HU  Szen  20   3    101  8+/b    4+/b    1-/b    2-/w    6+/b     |10686346
+ 4 Kalsberg Elvina          4d RU  78Sp  20   3    98   5+/b    3-/w    6+/b    1-/w    9+/w     |10750047
+ 5 Tarasenko Svitlana       3k UA  Kyiv  19   2    99   4-/w    6-/w    7+/w    8+/w    1-/b     |13986654
+ 6 Sharafeeva Guzel         2d RU  16Kz  19   2    98   2-/b    5+/b    4-/w    9+/b    3-/w     |12586134
+ 7 Kubrak Dariia            2k UA  Kyiv  19   2    97   1-/w    10+/b   5-/b    11+/w   2-/w     |15925019
+ 8 Bosnjak Natasa           2k RS  KGra  19   2    92   3-/w    9-/w    10+/w   5-/b    11+/b    |10637506
+ 9 Petrashevska Nika        4k UA  Kyiv  18   2    96   12+/b   8+/b    2-/b    6-/w    4-/b     |15786518
+10 Zhabchyk Tetiana         4k UA  Zdol  18   2    88   11-/w   7-/w    8-/b    13+/w   12+/b    |10833438
+11 Krotovych Yuliia         6k UA  Kyiv  17   3    88   10+/b   12+/w   14+/w   7-/b    8-/w     |12501896
+12 Stojanovic Ivana         4k RS  BGbg  17   1    84   9-/w    11-/b   13-/w   14+/b   10-/w    |14333693
+13 Krushelnytska Polina     7k UA  Rivn  16   3    76   14+/w   15+/b   12+/b   10-/b   16-/b    |16737875
+14 Symonenko Viktoriia      7k UA  Kyiv  15   2    76   13-/b   17+/b   11-/b   12-/w   15+/b    |14733631
+15 Razumova Anna            8k UA  Kyiv  13   2    69   17+/w   13-/w   16-/w   18+/b   14-/w    |17898518
+16 Ruzhanska Kamilla       10k UA  Kyiv  13   4    65   18+/w   19-/w   15+/b   17+/b   13+/w    |14233285
+17 Shevchuk Sofiia          7k UA  Rivn  13   1    64   15-/b   14-/w   18-/b   16-/w   19+/b    |12625602
+18 Redila Yuliia           10k UA  Rivn  12   3    57   16-/b   22+/b   17+/w   15-/w   21+/b    |15349114
+19 Redila Ilona            11k UA  Rivn  11   3    53   21+/b   16+/b   20-/w   23+/w   17-/w    |15862649
+20 Bulakh Yuliia           14k UA  Khar  10   4    45   24+/b   21+/b   19+/b   22-/b   23+/w    |16937943
+21 Mazurok Daria           11k UA  Khar  9    1    50   19-/w   20-/w   22+/b   24-/w   18-/w    |17074904
+22 Malko Olesia            13k UA  Rivn  9    2    47   23+/w   18-/w   21-/w   20+/w   25-/w    |17874241
+23 Silnytska Tetiana       14k UA  Kyiv  8    2    46   22-/b   24+/b   26+/w   19-/b   20-/b    |10801439
+24 Sychinska Yuliia        14k UA  Rivn  8    2    43   20-/w   23-/w   25+/w   21+/b   26-/w    |16849382
+25 Zhykharieva Liliia      16k UA  Kyiv  8    4    37   26+/w   28+/w   24-/b   27+/b   22+/b    |16833058
+26 Viesich Sofiia          15k UA  Kyiv  8    3    35   25-/b   27+/w   23-/b   29+/w   24+/b    |17213713
+27 Bohatyrenko Yelyzaveta  17k UA  Kyiv  6    3    28   29+/b   26-/b   36+/b   25-/w   34+/b    |15349708
+28 Melnyk Anna             18k UA  Kyiv  6    4    26   31+/w   25-/b   30+/w   33+/b   29+/w    |17886517
+29 Andriienkova Kateryna   17k UA  Khme  5    2    29   27-/w   30+/w   31+/b   26-/b   28-/b    |18386258
+30 Mordovets-Tkach Marta   18k UA  Odes  5    3    22   36+/w   29-/b   28-/b   32+/b   35+/w    |18037415
+31 Siver Yekateryna        18k UA  Kyiv  4    2    22   28-/b   33+/w   29-/w   35-/w   40+/w    |17637906
+32 Bohatyrenko Olena       20k UA  Kyiv  4    4    17   40+/w   39+/b   41+/b   30-/w   37+/w    |15325706
+33 Shevchuk Oxana          19k UA  Rivn  4    3    16   45+/b   31-/b   47+/w   28-/w   41+/w    |13286053
+34 Perevalova Oleksandra   20k UA  Kher  4    4    16   38+/w   46+/b   39+/b   36+/b   27-/w    |16950648
+35 Kachanovska Viktoriia   20k UA  Rivn  4    4    13   50+/w   37+/b   46+/w   31+/b   30-/b    |18401647
+36 Hrabarchuk Yeva         19k UA  Kyiv  3    2    18   30-/b   49+/w   27-/w   34-/w   43+/b    |17833519
+37 Lysenko Svitlana        20k UA  Kyiv  3    3    14   42+/w   35-/w   49+/w   38+/w   32-/b    |18413648
+38 Kotsiuruba Sofiia       20k UA  Kyiv  3    3    13   34-/b   43+/b   42+/w   37-/b   44+/b    |18437375
+39 Siver Tetiana           20k UA  Kyiv  3    3    13   44+/b   32-/w   34-/w   42+/b   48+/b    |17998387
+40 Vlasenko Oleksandra     20k UA  Kyiv  3    3    13   32-/b   45+/w   44+/w   46+/b   31-/b    |17825731
+41 Vlasenko Vlada          20k UA  Kyiv  3    3    12   43+/b   47+/w   32-/w   48+/w   33-/b    |17833728
+42 Dimitrova Nina          20k UA  Odes  2    2    11   37-/b   48+/w   38-/b   39-/w   47+/b    |18425649
+43 Chyzhevska Nadiya       20k UA  Done  2    2    10   41-/w   38-/w   50+/w   49+/w   36-/w    |18437650
+44 Redila Sofiia           20k UA  Rivn  2    2    10   39-/w   50+/w   40-/b   47+/b   38-/w    |18449651
+45 Redila Liubov           20k UA  Rivn  2    2    9    33-/w   40-/b   48-/b   50+/b   46+/w    |15825645
+46 Kalmutska Svitlana      20k UA  Kyiv  1    1    14   48+/b   34-/w   35-/b   40-/w   45-/b    |18450652
+47 Rusanovska Nataliia     20k UA  Kyiv  1    1    12   49+/w   41-/b   33-/b   44-/w   42-/w    |18333249
+48 Ihnatenko Anastasiia    20k UA  Kyiv  1    1    11   46-/w   42-/b   45+/w   41-/b   39-/w    |18462653
+49 Krushelnytska Larysa    20k UA  Rivn  1    1    9    47-/b   36-/b   37-/b   43-/b   50+/b    |15498076
+50 Symonenko Nataliia      20k UA  Kyiv  0    0    11   35-/b   44-/b   43-/b   45-/w   49-/w    |15286491

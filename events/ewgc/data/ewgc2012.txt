@@ -1,0 +1,27 @@
+; TC[T120907B]
+; CL[A]
+; EV[European Female Championship]
+; PC[CZ, Brno]
+; DT[2012-09-07,2012-09-09]
+; HA[h9]
+; KM[6.5]
+; TM[82]
+; CM[ (submitted by cieply)]
+;.
+;
+; Pl Name                            Rk Co Club  NBW  SOS SOSOS
+ 1 Wong Vanessa          5d UK  HKng  5    16   76   0    6+/w0   4+/b0   3+/w0   2+/w0   9+/b0    |14349467
+ 2 Pocsai Rita           5d HU  Szen  4    16   74   0    7+/w0   9+/b0   5+/w0   1-/b0   4+/b0    |10686346
+ 3 Kovaleva Natalia      4d RU  74Ch  4    15   67   0    8+/w0   10+/b0  1-/b0   11+/w0  5+/w0    |10537087
+ 4 Marz Manja            3d DE  J     3    16   71   0    12+/w0  1-/w0   6+/b0   9+/b0   2-/w0    |13062412
+ 5 Kalsberg Elvina       3d RU  78SP  3    15   62   0    13+/b0  11+/w0  2-/b0   8+/w0   3-/b0    |10750047
+ 6 Kuin-Dubiel Marika    1d NL  Amvn  3    13   65   0    1-/b0   12+/w0  4-/w0   14+/b0  11+/b0   |14301617
+ 7 Seres Julia           1d HU  Pago  3    11   66   0    2-/b0   14+/w0  9-/w0   12+/b0  10+/b0   |14598991
+ 8 Gauthier Lena         2k DE  B     3    11   63   0    3-/b0   15+/w0  10+/w0  5-/b0   14+/w0   |14050608
+ 9 Avram Laura           2d RO  Bist  2    16   70   0    14+/b0  2-/w0   7+/b0   4-/w0   1-/w0    |12698620
+10 Conradi Judith        2d DE  B     2    13   54   0    15+/b0  3-/w0   8-/b0   13+/w0  7-/w0    |12850486
+11 Bexfield Alison       2d UK  NoCb  2    12   51   0    0+      5-/b0   13+/w0  3-/b0   6-/w0    |10201081
+12 Lassakova Lucia       3k SK  Brat  2    10   49   0    4-/b0   6-/b0   15+/w0  7-/w0   0+       |10274693
+13 Hricova Jana          2k CZ  APmG  2    8    49   0    5-/w0   0+      11-/b0  10-/b0  15+/b0   |10233509
+14 Kadlecova Alzbeta     4k CZ  APra  1    11   51   0    9-/w0   7-/b0   0+      6-/w0   8-/b0    |15425091
+15 Waczulikova Barbora   5k SK  Brat  1    9    42   0    10-/w0  8-/b0   12-/b0  0+      13-/w0   |10650354

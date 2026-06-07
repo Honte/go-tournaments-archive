@@ -1,0 +1,26 @@
+; TC[E160820A]
+; CL[A]
+; EV[European Women Go Championship 2016]
+; PC[BE, Antwerpen]
+; DT[2016-08-20,2016-08-21]
+; HA[h9]
+; KM[6.5]
+; TM[75]
+; CM[Final ranking was made with other tiebreakers: 1. direct comparison, 2. SOS-2, 3. SOS-1 and 4. SOS. But this doesn`t matter for calculation of ratings. (submitted by williamwandel)]
+;.
+ 1 Kovaleva Natalia       5d RU  74Ch  5        5    15   71   10+/b   8+/w    6+/w    2+/w    4+/b     |10537087
+ 2 Shikshina Svetlana     3p RU  16Kz  4        4    17   64   7+/w    5+/w    3+/b    1-/b    12+/b    |10301236
+ 3 Pocsai Rita            4d HU  Szen  4        4    12   67   14+/b   11+/w   2-/w    9+/b    8+/b     |10686346
+ 4 Kalsberg Elvina        3d RU  78SP  3        3    15   64   12+/w   6-/b    11+/w   5+/b    1-/w     |10750047
+ 5 Marz Manja             3d DE  J     3        3    14   67   13+/w   2-/b    7+/w    4-/w    10+/b    |13062412
+ 6 Davis Irina            1k RO  xxxx  3        3    14   65   9+/w    4+/w    1-/b    8-/b    15+/w    |10337261
+ 7 Cornuejols Dominique   1d FR  38Gr  3        3    13   66   2-/b    13+/w   5-/b    11+/w   9+/w     |10913210
+ 8 Avram Laura            2d RO  Bist  3        3    13   63   16+/b   1-/b    14+/w   6+/w    3-/w     |12698620
+ 9 Leung Joanne           2d UK  NoCb  2        2    14   61   6-/b    12+/b   10+/w   3-/w    7-/b     |17037350
+10 Sora Adelina           1d RO  Crai  2        2    12   63   1-/w    16+/b   9-/b    13+/w   5-/w     |10337371
+11 Dubiel Marika          2d NL  Amvn  2        2    11   58   15+/w   3-/b    4-/b    7-/b    16+/w    |14301617
+12 Jemine Marie           1k BE  Lieg  2        2    10   68   4-/b    9-/w    16+/b   14+/b   2-/w     |14586847
+13 Kadlecova Alzbeta      2k CZ  APra  2        2    10   59   5-/b    7-/b    15+/w   10-/b   14+/w    |15425091
+14 Tomsu Adriana          1d CZ  TFMi  1        1    12   53   3-/w    15+/b   8-/b    12-/w   13-/b    |16225396
+15 Fricheteau Catherine  10k BE  Pant  1        1    8    57   11-/b   14-/w   13-/b   16+/w   6-/b     |17401527
+16 Celikkol Senem         4k TR  Izm   0        0    10   54   8-/w    10-/w   12-/w   15-/b   11-/b    |16037945

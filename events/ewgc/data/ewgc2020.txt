@@ -1,0 +1,27 @@
+; TC[E201128A]
+; CL[A]
+; EV[European Women`s Championship 2020 (online)]
+; PC[XX, OGS: https://online-go.com]
+; DT[2020-11-28,2020-12-21]
+; HA[h9]
+; KM[6.5]
+; TM[95]
+; CM[60 min basic, Fischer Time - 30 sec per move (submitted by erdbeer)]
+;.
+;# Name Rank Country Club NBW 1 2 3 4 5 6 7
+ 1 Kovaleva Natalia      5d RU  74Ch  6 1   14+/w   5-/b    9+/b    8+/b    3+/b    2+/b    2+/w     |10537087
+ 2 Marz Manja            3d DE  JIGS  4 2   15+/w   3-/w    10+/b   7+/w    4+/w    1-/w    1-/b     |13062412
+ 3 Burdakova Dina        5d RU  74Ch  6 3   10+/b   2+/b    15+/b   6+/w    1-/w    4+/b    4+/w     |10813187
+ 4 Donle Isabel          1d DE  B     3 4   12+/w   8-/b    16+/b   5+/b    2-/b    3-/w    3-/b     |16837359
+ 5 Kalsberg Elvina       3d RU  78SP  5 5   9+/w    1+/w    14+/w   4-/w    7+/b    6+/b    0=       |10750047
+ 6 Ougier Ariane         4d FR  38Gr  3 6   11+/w   13+/w   7-/w    3-/b    8+/w    5-/w    0=       |15774187
+ 7 Urban Alexandra       2d HU  PaGo  2 7   13-/b   11+/b   6+/b    2-/b    5-/w    0=      0=       |12974863
+ 8 Shalneva Virzhinia    4d RU  50Zh  3 8   16+/b   4+/w    12+/w   1-/w    6-/b    0=      0=       |16325034
+ 9 Medak Mirta           1k HR  Zagr  1 9   5-/b    14+/b   1-/w    0=      0=      0=      0=       |16525718
+10 Seres Julia           2d HU  PaGo  1 9   3-/w    15+/b   2-/w    0=      0=      0=      0=       |14598991
+11 Klochikhina Valeria   2d RU  59So  1 9   6-/b    7-/w    13+/w   0=      0=      0=      0=       |16513068
+12 Avram Laura           2d RO  Cluj  1 9   4-/b    16+/b   8-/b    0=      0=      0=      0=       |12698620
+13 Bartova Jitka         2d FR  67SE  1 13   7+/w    6-/b    11-/b   0=      0=      0=      0=       |13849748
+14 Bocle Milena          2d FR  92An  0 14   1-/b    9-/w    5-/b    0=      0=      0=      0=       |14362018
+15 Melnyk Anna           2k UA  Kyiv  0 14   2-/b    10-/w   3-/w    0=      0=      0=      0=       |17886517
+16 Waahlin Lova          2d SE  Stoc  0 14   8-/w    12-/w   4-/w    0=      0=      0=      0=       |16425849

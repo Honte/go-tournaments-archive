@@ -1,0 +1,40 @@
+; TC[T251004C]
+; CL[A]
+; EV[European Women Championship]
+; PC[CZ, Praha]
+; DT[2025-10-04,2025-10-05]
+; HA[h9]
+; KM[6.5]
+; TM[85]
+; CM[ (submitted by cieply)]
+;.
+;
+ 1 Li Ting                     1p AT  Wien  26   5    26   119  7+/b    11+/w   4+/b    5+/b    9+/w     |14713732
+ 2 Marz Manja                  4d DE  JIGS  25   4    25   120  10+/b   4-/w    7+/w    6+/b    5+/b     |13062412
+ 3 Malko Olesia                4d UA  Rivn  25   4    25   119  15+/b   6+/b    5-/w    8+/b    4+/w     |17874241
+ 4 Cao Ngoc-Trang              2d FR  67SE  24   3    24   123  9+/w    2+/b    1-/w    16+/b   3-/b     |14586693
+ 5 Ougier Ariane               5d FR  92An  24   3    24   121  19+/b   12+/w   3+/b    1-/w    2-/w     |15774187
+ 6 Medak Mirta                 3d HR  Sred  24   3    24   119  13+/b   3-/w    11+/w   2-/w    14+/b    |16525718
+ 7 Chalmovianska Michala       1d SK  Brat  24   3    24   119  1-/w    15+/b   2-/b    20+/w   12+/b    |20398521
+ 8 Bocle Milena                3d FR  38Gr  24   3    24   118  11-/b   16+/w   10+/b   3-/w    13+/b    |14362018
+ 9 Waahlin Lova                2d SE  Berl  24   3    24   118  4-/b    22+/w   12+/b   13+/w   1-/b     |16425849
+10 Szychowiak Marianna         2d PL  Bydg  24   3    24   117  2-/w    19+/b   8-/w    17+/b   11+/w    |16725709
+11 Reisenegger Renate          2d DE  MR    23   2    23   120  8+/w    1-/b    6-/b    26+/w   10-/b    |19625298
+12 Trinks Daniela              2d DE  B     23   2    23   118  14+/w   5-/b    9-/w    15+/b   7-/w     |10249261
+13 Urban-Szalontai Alexandra   2d HU  PaGo  23   2    23   118  6-/w    17+/b   14+/w   9-/b    8-/w     |12974863
+14 Bartova Jitka               3d CZ  APra  23   2    23   114  12-/b   21+/w   13-/b   19+/w   6-/w     |13849748
+15 Podperova Adriana           2d CZ  TFMi  23   2    23   114  3-/w    7-/w    29+/b   12-/w   23+/b    |16225396
+16 Kralikova Zuzana            1d SK  Kosi  23   3    23   113  28+/w   8-/b    21+/b   4-/w    20+/b    |15801764
+17 Vasova Dita                 1d CZ  APmG  23   3    23   112  20+/b   13-/w   27+/w   10-/w   24+/b    |15749921
+18 Bukovska Anezka             1k CZ  Imba  23   3    23   109  22-/w   27-/b   25+/b   21+/w   19+/w    |15874947
+19 Seres Julia                 2d HU  PaGo  22   1    22   116  5-/w    10-/w   23+/b   14-/b   18-/b    |14598991
+20 Klamecka Natalia            2k PL  Wroc  22   2    22   114  17-/w   24+/b   22+/b   7-/b    16-/w    |14033239
+21 Hu Lilly                    1d AT  Go7   22   2    22   112  25+/w   14-/b   16-/w   18-/b   28+/w    |19737641
+22 Kotowski Tereza             1d CZ  TFMi  22   2    22   111  18+/b   9-/b    20-/w   24-/w   29+/w    |15401364
+23 Baturina Raisa              3k UA  Khar  22   3    22   110  26+/b   25+/b   19-/w   27+/w   15-/w    |18398831
+24 Vasilescu Maria             2k RO  Hika  22   3    22   109  0+      20-/w   28+/b   22+/b   17-/w    |17033973
+25 Hricova Jana                1k CZ  APmG  22   2    22   108  21-/b   23-/w   18-/w   29+/b   0+       |10233509
+26 Hu Cherry                   3k AT  Go7   22   3    22   108  23-/w   28+/b   0+      11-/b   27+/w    |19786745
+27 Ghetu Sara_Maria            2k RO  Cluj  21   2    21   110  29+/w   18+/w   17-/b   23-/b   26-/b    |19533602
+28 Grudzinska Emilia           1k PL  Wars  21   1    21   109  16-/b   26-/w   24-/w   0+      21-/b    |10262912
+29 Drogoreanu Thea            10k RO  Hika  20   1    20   107  27-/b   0+      15-/w   25-/w   22-/b    |17686834

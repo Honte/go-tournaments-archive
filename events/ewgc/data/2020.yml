@@ -1,0 +1,11 @@
+website: https://www.eurogofed.org/women/2020.html
+stages:
+  - type: tournament
+    file: ewgc2020.txt
+    notes: 4 groups of 4 (breaker mutual game), best 8 knockout with medals decided by best of 3 match
+    scoringColumns:
+      - wins
+      - place
+    breakers:
+      - place
+    findSharedPlaces: true

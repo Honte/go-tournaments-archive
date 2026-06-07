@@ -1,0 +1,17 @@
+; CL[A]
+; EV[European Female Championship]
+; PC[UK, Port Erin]
+; DT[2006-08-20,2006-08-22]
+; TC[E060820]
+; HA[h9]
+; KM[7.5]
+; TM[75]
+;
+  1 Zaloudkova Klara        1d CZ Pra  13 3  35   5  3+/b 6+/b 2+/w |10798106
+  2 Regan Natasha           1k UK Epsm 12 2  35   5  7+/b 5+/w 1-/b |12301146
+  3 Paterson Sue            2k UK Brtn 12 2  34   4  1-/w 8+/w 5+/b |10201158
+  4 Bexfield Alison         2d UK Ltch 12 2  33   3  5-/b 7+/b 6+/w |10201081
+  5 Doncker Ingrid_de       3k BE Brug 11 1  36   6  4+/w 2-/b 3-/w |10250647
+  6 Marshall Celia          11 UK IoM  11 1  35   5  8+/b 1-/w 4-/b |10774753
+  7 Lee Edwina              4k UK HWyc 11 1  34   4  2-/w 4-/w 8+/b |10649309
+  8 Udo Pita                20 NL Bar  10 0  34   4  6-/w 3-/b 7-/w |13025958

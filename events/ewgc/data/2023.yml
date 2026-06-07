@@ -1,0 +1,16 @@
+website:
+ - https://www.eurogofed.org/results/women/womens2023.htm
+ - http://ewgc.gostrasbourg.fr/
+stages:
+  - type: tournament
+    file: ewgc2023.txt
+    scoringColumns:
+      - mms
+      - sos
+      - sosos
+      - null
+    breakers:
+      - mms
+      - sos
+      - sosos
+    findSharedPlaces: true

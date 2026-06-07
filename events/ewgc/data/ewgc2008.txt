@@ -1,0 +1,30 @@
+; CL[A]
+; EV[European Women Championship]
+; PC[DE, Koblenz]
+; DT[2008-09-12,2008-09-14]
+; TC[E080912]
+; HA[h9]
+; KM[7.5]
+; TM[90]
+;
+  1 Zaloudkova Klara        2d CZ Pra   5 5  15  15   8+/w  5+/b  3+/w  2+/b  4+/w |10798106
+  2 Marz Manuela            4d DE L     4 4  16  11   4+/b  6+/w  7+/b  1-/w  3+/b |13062412
+  3 Avram Laura             2d RO Bist  3 3  16   7   9+/w  8+/b  1-/b  5+/w  2-/w |12698620
+  4 Cao Ngoc-Trang          2k FR 67SE  3 3  14   5   2-/w 12+/b  6+/b 10+/w  1-/b |14586693
+  5 Schmidt Ulrike          3k DE Pfo   3 3  12   4   7+/w  1-/w 12+/b  3-/b 10+/b |13250941
+  6 Leppanen Suvi           1d FI Kanp  3 3  10   3  12+/w  2-/b  4-/w 11+/b  7+/w |12998821
+  7 Hricova Jana            1k CZ Pra   2 2  14   4   5-/b  9+/b  2-/w  8+/w  6-/b |10233509
+  8 Grimm Kirsten           1d DE FR    2 2  12   2   1-/b  3-/w  9+/w  7-/b 12+/b |13049839
+  9 Enghardt Theresa        4k DE L     2 2   8   1   3-/b  7-/w  8-/b 12+/w 11+/b |13862937
+ 10 Griffiths Anna          8k UK Putn  2 1   7   1   0=    0=   11+/w  4-/b  5-/w |10525680
+ 11 Kampa Antonia           4k DE Kob   1 0   7   0   0=    0=   10-/b  6-/w  9-/w |12986798
+ 12 Petri Birgit            7k DE DA    0 0  13   0   6-/b  4-/w  5-/w  9-/b  8-/w |15013196
+
+
+
+
+
+
+
+
+

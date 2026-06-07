@@ -1,0 +1,14 @@
+website: https://www.eurogofed.org/results/women/womens2010.htm
+stages:
+  - type: tournament
+    file: ewgc2010.txt
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - mms
+      - sos
+      - sosos
+    findSharedPlaces: true
