@@ -1,0 +1,31 @@
+; TC[E101016A]
+; CL[A]
+; EV[European Women Championship]
+; PC[FR, Lyon]
+; DT[2010-10-16,2010-10-17]
+; HA[h9]
+; KM[6.5]
+; TM[80]
+; CM[ (submitted by FFG)]
+;.
+;
+ 1 Zhao Pei               6d DE  HB    4    4    18   69    7+/w    3+/b   9+/w    4-/b    2+/b     |10201235
+ 2 Wong Vanessa           4d UK  HKng  4    4    15   74   17+/w   8+/b    6+/w    5+/b    1-/w     |14349467
+ 3 Marz Manja             3d DE  MR    4    4    14   70   14+/b   1-/w    15+/w   6+/b    8+/b     |13062412
+ 4 Kovaleva Natalia       5d RU  74Ch  4    4    13   72   10+/w   6-/b    17+/b   1+/w    11+/w    |10537087
+ 5 Pocsai Rita            4d HU  BuPe  4    4    13   63   15+/b   11+/b   16+/w   2-/w    7+/b     |10686346
+ 6 Bexfield Alison        1d UK  NoCb  3    3    16   65   13+/b   4+/w    2-/b    3-/w    12+/w    |10201081
+ 7 Bocle Milena           3k FR  92An  3    3    14   65   1-/b    14+/w   18+/b   10+/w   5-/w     |14362018
+ 8 Cornuejols Dominique   1k FR  38Gr  3    3    14   64   18+/b   2-/w    12+/w   9+/b    3-/w     |10913210
+ 9 Kalsberg Elvina        3d RU  78SP  3    3    13   66   12+/w   16+/b   1-/b    8-/w    13+/b    |10750047
+10 Putter Annemarie_de    4k NL  Utre  3    3    13   61   4-/b    13+/w   11+/w   7-/b    16+/b    |10613273
+11 Regan Natasha          1k UK  Epsm  2    2    12   61   20+/b   5-/w    10-/b   17+/w   4-/b     |12301146
+12 Vielfaure Charlotte    7k FR  21Di  2    2    12   61   9-/b    19+/w   8-/b    15+/w   6-/b     |12362064
+13 Golay Monique          7k CH  Lau   2    2    11   62   6-/w    10-/b   20+/w   14+/b   9-/w     |13013583
+14 Rioualen Claire        7k FR  44Mn  2    2    11   59   3-/w    7-/b    19+/b   13-/w   17+/b    |13986368
+15 Ishimbaeva Olga        6k RU  78SP  2    2    11   58   5-/w    20+/b   3-/b    12-/b   18+/w    |15486493
+16 Cristiani Myrtille     1k FR  13Ma  2    2    11   55   19+/b   9-/w    5-/b    20+/w   10-/w    |10725935
+17 Mouhounou Sophie       6k FR  91Or  1    1    13   61   2-/b    18+/w   4-/w    11-/b   14-/w    |13762672
+18 Tagnon Nicole          9k FR  75XX  1    1    10   59   8-/w    17-/b   7-/w    19+/b   15-/b    |12698829
+19 Severing Fenja        12k DE  KI    1    1     7   53   16-/w   12-/b   14-/w   18-/w   20+/b    |14701764
+20 Gauthier Julie        11k FR  21Di  0    0     9   52   11-/w   15-/w   13-/b   16-/b   19-/w    |13098371

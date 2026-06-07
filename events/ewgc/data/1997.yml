@@ -1,0 +1,13 @@
+website: https://www.eurogofed.org/results/women/womens1997.htm
+stages:
+  - type: tournament
+    file: ewgc1997.txt
+    scoringColumns:
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - wins
+      - sos
+      - sodos
+    findSharedPlaces: true

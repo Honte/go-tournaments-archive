@@ -1,0 +1,14 @@
+website: https://www.eurogofed.org/results/women/womens2024.htm
+stages:
+  - type: tournament
+    file: ewgc2024.txt
+    scoringColumns:
+      - mms
+      - sos
+      - sosos
+      - null
+    breakers:
+      - mms
+      - sos
+      - sosos
+    findSharedPlaces: true

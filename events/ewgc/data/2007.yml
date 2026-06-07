@@ -1,0 +1,14 @@
+website: https://www.eurogofed.org/results/women/womens2007.htm
+stages:
+  - type: tournament
+    file: ewgc2007.txt
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - wins
+      - sos
+      - sodos
+    findSharedPlaces: true

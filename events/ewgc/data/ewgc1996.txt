@@ -1,0 +1,31 @@
+; CL[A]
+; EV[1st European Women Championship]
+; PC[RU, Moscow]
+; DT[1996-09-05,1996-09-08]
+; TC[E960910]
+; HA[h9]
+; KM[5.5]
+; TM[0]
+;
+  1 Shikshina Svetlana      5d RU 16Kz  6 6  21  21  17+ 15+  2+  8+  3+  7+  |10301236
+  2 Leshcheva Irina         4d RU 78SP  5 5  21  15  16+ 12+  1- 15+  6+  3+  |10550078
+  3 Rapmund Antje           2d DE xxx   4 4  25  14  19+  6+  8+  5+  1-  2-  |10498862
+  4 Guskova Irina           3d RU 66Ek  4 4  22  14  13+  7-  9+ 11+  5+  6-  |10562079
+  5 Gerasimova Elvina       1k RU 78SP  4 4  20  12  14+ 18+  7+  3-  4- 10+  |10750047
+  6 Mazlova Sofia           1d RU 77Mo  4 4  20  11  11+  3- 16+ 18+  2-  4+  |10598082
+  7 Hricova Jana            1d CZ Pra   4 4  20  10  21+  4+  5- 10+ 15+  1-  |10233509
+  8 Simunkova Martina       2d CZ Libe  4 4  19   9  20+ 10+  3-  1- 12+ 16+  |10298904
+  9 Burvenich Claude        1d BE Lil   4 4  18  11  10- 14+  4- 17+ 13+ 11+  |10301786
+ 10 Lobanova Svetlana       4k RU 77Mo  3 3  22  10   9+  8- 12+  7- 14+  5-  |10533083
+ 11 Gorbunova Elizaveta     3k UA Kyiv  3 3  17   5   6- 19+ 17+  4- 20+  9-  |10501084
+ 12 Sulejmanova Dina        1k RU 16Kz  3 3  16   4  22+  2- 10- 19+  8- 15+  |10513085
+ 13 Detkova Farida          7k RU 16Kz  3 3  15   5   4- 20+ 15- 16+  9- 18+  |10525086
+ 14 Kovaleva Natalja        7k RU 74Ch  3 3  13   2   5-  9- 20+ 22+ 10- 21+  |10537087
+ 15 Korthout Anneke         3k NL Tilb  2 2  23   5  18+  1- 13+  2-  7- 12-  |10262846
+ 16 Tokmalaeva Tatjana      5k RU 74Ch  2 2  19   3   2- 21+  6- 13- 17+  8-  |10550089
+ 17 Irgens Cecilie          3k NO Osl   2 2  16   1   1- 22+ 11-  9- 16- 20+  |10574091
+ 18 Kuriene Laimute         1k LT Kaun  2 2  15   2  15-  5- 22+  6- 19+ 13-  |10586092
+ 19 Starikova Maria         8k RU 77Mo  2 2  13   1   3- 11- 21+ 12- 18- 22+  |10225952
+ 20 Solomatina Julia        5k RU 59Pe  1 1  16   1   8- 13- 14- 21+ 11- 17-  |18325912 
+ 21 Siivola Sinikka         12 FI Hels  1 1  12   0   7- 16- 19- 20- 22+ 14-  |10262791
+ 22 Chernej Elizaveta       12 UA Kyiv  0 0  13   0  12- 17- 18- 14- 21- 19-  |10533094

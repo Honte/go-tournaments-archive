@@ -1,0 +1,46 @@
+; TC[E190906A]
+; CL[A]
+; EV[European Women Go Championship 2019]
+; PC[DE, Trier]
+; DT[2019-09-06,2019-09-08]
+; HA[h9]
+; KM[6.5]
+; TM[75]
+; CM[Fischer time, 45 Min + 15./move (submitted by mlanger)]
+;.
+ 1 Ougier Ariane            3d FR  38Gr  31   6    173  1031 9+/b    2+/w    4+/w    3+/b    5+/b    8+/w     |15774187
+ 2 Burdakova Dina           5d RU  77Mo  30   5    174  1023 5+/w    1-/b    16+/b   4+/b    6+/w    3+/b     |10813187
+ 3 Kovaleva Natalia         5d RU  74Ch  29   4    174  1026 10+/w   8+/b    6+/b    1-/w    7+/b    2-/w     |10537087
+ 4 Shalneva Virzhinia       4d RU  50Zh  29   4    172  1017 13+/w   12+/b   1-/b    2-/w    10+/b   7+/w     |16325034
+ 5 Kalsberg Elvina          3d RU  78SP  29   4    171  1011 2-/b    15+/w   11+/b   8+/w    1-/w    16+/b    |10750047
+ 6 Knauf Barbara            3d DE  K     29   4    170  1018 7+/w    11+/b   3-/w    15+/w   2-/b    9+/b     |12850178
+ 7 Dubiel Marika            2d NL  Amvn  28   3    171  1017 6-/b    9+/w    12+/b   10+/b   3-/w    4-/b     |14301617
+ 8 Marz Manja               3d DE  JIGS  28   3    171  1012 17+/b   3-/w    13+/w   5-/b    12+/b   1-/b     |13062412
+ 9 Medak Mirta              2d HR  Zagr  28   3    169  1001 1-/w    7-/b    20+/b   11+/w   13+/b   6-/w     |16525718
+10 Cao Ngoc-Trang           2d FR  67SE  28   3    167  1008 3-/b    16+/b   14+/w   7-/w    4-/w    15+/b    |14586693
+11 Zou Hao-Jiang            4d LU  Luxe  28   3    166  1001 14+/b   6-/w    5-/w    9-/b    19+/w   13+/b    |10413843
+12 Wilms Maike              2d DE  HH    28   3    165  1001 18+/b   4-/w    7-/w    17+/b   8-/w    14+/b    |14950914
+13 Bocle Milena             2d FR  92An  27   2    167  1004 4-/b    17+/w   8-/b    14+/w   9-/w    11-/w    |14362018
+14 Bartova Jitka            2d CZ  APra  27   2    164  988  11-/w   18+/b   10-/b   13-/b   17+/w   12-/w    |13849748
+15 Mayer Lisa               1k AT  Go7   27   3    164  983  19+/w   5-/b    18+/w   6-/b    20+/w   10-/w    |16598648
+16 Donle Isabel             1k DE  B     27   3    163  981  22+/b   10-/w   2-/w    19+/b   18+/b   5-/w     |16837359
+17 Seres Julia              2d HU  PaGo  27   2    162  988  8-/w    13-/b   19+/w   12-/w   14-/b   18+/b    |14598991
+18 Kotowski Tereza          1d CZ  TFMi  26   1    161  968  12-/w   14-/w   15-/b   21+/b   16-/w   17-/w    |15401364
+19 Gauthier Lena            1k DE  J     26   2    160  959  15-/b   20+/w   17-/b   16-/w   11-/b   21+/w    |14050608
+20 Dittmann Jenny           2k DE  KI    26   3    154  936  21+/w   19-/b   9-/w    23+/b   15-/b   22+/b    |16474876
+21 Kralikova Zuzana         3k SK  Kosi  25   3    150  908  20-/b   22+/w   23+/b   18-/w   24+/w   19-/b    |15801764
+22 Nguyen Hoa               3k LU  Lux   24   2    148  888  16-/w   21-/b   24+/w   27+/b   23-/b   20-/w    |14013208
+23 Limbach Yvonne           4k DE  B     24   3    145  853  24+/b   28+/b   21-/w   20-/w   22+/w   25-/w    |14225816
+24 Roelofs Yvonne           4k NL  Utre  24   3    140  837  23-/w   26+/w   22-/b   28+/w   21-/b   27+/b    |10725792
+25 Szychowiak Marianna      7k PL  Bydg  24   6    134  776  26+/b   27+/w   28+/b   29+/w   30+/w   23+/b    |16725709
+26 Klupsch Christina        5k DE  BN    23   3    131  753  25-/w   24-/b   27-/w   33+/w3  28+/b   30+/b    |17633605
+27 Gassenmeier Claudia      5k DE  D     22   2    136  770  28-/w   25-/b   26+/b   22-/w   33+/w4  24-/w    |15801478
+28 Tegtmeier Sarah          5k DE  AC    22   2    127  729  27+/b   23-/w   25-/w   24-/b   26-/w   35+/w9   |10525207
+29 Rieger Angelika          8k DE  TR    22   5    111  571  30+/w   31+/b   32+/w1  25-/b   34+/w6  36+/w9   |16586361
+30 Beer Nicole_de           7k NL  Eind  21   3    126  643  29-/b   32+/w   31+/w1  34+/w6  25-/b   26-/w    |16233217
+31 Bednarska Julia         10k PL  Toru  19   4    95   511  32+/b   29-/w   30-/b1  36+/w9  35+/w9  33+/w1   |16733706
+32 Heiser Yvonne            9k LU  Lux   18   2    97   494  31-/w   30-/b   29-/b1  35+/w9  36+/w9  34-/w4   |13674914
+33 Wang Mei                12k DE  TR    15   2    90   524  34-/w2  35+/w9  36+/w9  26-/b3  27-/b4  31-/b1   |16574547
+34 Ramacher Iris           16k DE  K     13   4    75   511  33+/b2  36+/w8  35+/w8  30-/b6  29-/b6  32+/b4   |18313174
+35 Gerhards Lea            20k DE  TR    1    1    43   528  36+/w   33-/b9  34-/b8  32-/b9  31-/b9  28-/b9   |18050340
+36 Liu Yang                20k DE  TR    0    0    44   511  35-/b   34-/b8  33-/b9  31-/b9  32-/b9  29-/b9   |19398940

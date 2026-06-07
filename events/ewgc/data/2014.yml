@@ -1,0 +1,14 @@
+website: https://www.eurogofed.org/results/women/womens2014.htm
+stages:
+  - type: tournament
+    file: ewgc2014.txt
+    scoringColumns:
+      - null
+      - mms
+      - sos
+      - sodos
+    breakers:
+      - mms
+      - sos
+      - sodos
+    findSharedPlaces: true

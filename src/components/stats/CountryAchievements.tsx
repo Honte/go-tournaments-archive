@@ -51,7 +51,7 @@ export function CountryAchievements({ country, translations }: CountryAchievemen
 
 function listYear(years: string[], locale: string) {
   return jsxJoin(
-    years.map((year) => <YearLink key={year} locale={locale} year={year} />),
+    years.map((year, index) => <YearLink key={index} locale={locale} year={year} />),
     ', '
   );
 }

@@ -1,0 +1,15 @@
+website:
+ - https://www.eurogofed.org/index.html?id=510
+ - https://goweb.cz/european-womens-go-championship-2025/
+stages:
+  - type: tournament
+    file: ewgc2025.txt
+    scoringColumns:
+      - mms
+      - wins
+      - null
+      - sos
+    breakers:
+      - mms
+      - sos
+    findSharedPlaces: true

@@ -1,0 +1,14 @@
+website: https://www.eurogofed.org/results/women/womens1996.htm
+stages:
+  - type: tournament
+    file: ewgc1996.txt
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - wins
+      - sos
+      - sodos
+    findSharedPlaces: true
