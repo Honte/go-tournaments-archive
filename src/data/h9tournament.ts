@@ -93,7 +93,7 @@ export async function loadH9Tournament({
       }
 
       const raw = player.scores[i];
-      const value = Number(raw);
+      const value = parseScore(raw);
 
       if (EVENT_CONFIG.categories?.includes(breaker)) {
         if (raw === '?' || value > 0) {
@@ -325,4 +325,12 @@ function getGameResult(result: H9Game['result'], color: H9Game['color']) {
     case '=':
       return '=';
   }
+}
+
+function parseScore(value?: string): number {
+  if (!value) {
+    return NaN;
+  }
+
+  return Number(value.replace(/[;=S½]$/, '.5'));
 }
