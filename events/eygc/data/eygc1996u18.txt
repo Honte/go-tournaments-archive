@@ -1,0 +1,100 @@
+; CL[A]
+; EV[European Youth Championship]
+; PC[RO, Bayle Felix]
+; DT[1996-03-01,1996-03-03]
+; TC[E960301A]
+; HA[h9]
+; KM[5.5]
+; TM[60]
+;
+  1 Mero Csaba              4d HU BuPe 26 6 170 1173 10+   9+   7+   4-   6+   5+   3+  |10225875
+  2 Shikshina Svetlana      3d RU 16Kz 26 6 170 1166  8+   5+  14+   3+   4-   9+   7+  |10301236
+  3 Dinerstein Alexandr     4d RU 10Pt 25 5 169 1169 15+  10+   6+   2-  12+   4+   1-  |10313237
+  4 Nijhuis Emil            4d NL Amst 25 5 168 1164 20+   6-  11+   1+   2+   3-  10+  |10213027
+  5 Bogackyj Dmytro         5d UA Kyiv 25 5 168 1159 14+   2-  12+  16+   8+   1-   6+  |10250867
+  6 Mutu Catalin            1d RO Drob 24 4 169 1155 17+   4+   3-   7+   1-  18+   5-  |10325238
+  7 Drouot Paul             3d FR 31To 24 4 168 1164 13+  11+   1-   6-  15+   8+   2-  |10337239
+  8 Bajenaru Dragos         2d RO Bucu 24 4 167 1153  2-  17+  13+   9+   5-   7-  11+  |10349240
+  9 Salgues Camille         1d FR 95Va 24 4 166 1149 12+   1-  15+   8-  11+   2-  19+  |10350241
+ 10 Gheorghiu Valentin      1d RO Bucu 23 3 165 1147  1-   3-  20+  12-  16+  13+   4-  |10374243
+ 11 Kuzela Martin           2d CZ Zli  23 3 164 1153 16+   7-   4-  13+   9-  15+   8-  |10250702
+ 12 Jadron Peter            3d SK SBel 23 3 163 1134  9-  16+   5-  10+   3-  19-  18+  |10298651
+ 13 Langsted Andreas        1d DK AAR 23 3 160 1140  7-  18+   8-  11-  17+  10-  15+  |10398245
+ 14 Andrienko Vasilij       1d UA Riv  23 3 160 1131  5-  20+   2-  15-  18-  16+  17+  |10333246
+ 15 Koszegi Diana           1d HU BuPe 22 2 164 1138  3-  19+   9-  14+   7-  11-  13-  |10301247
+ 16 Frehe Renee             1d NL Nijm 22 2 160 1134 11-  12-  17+   5-  10-  14-  20+  |10313248
+ 17 Nechanicky Petr         1d CZ Nym  22 2 157 1114  6-   8-  16-  22+  13-  20+  14-  |10233267
+ 18 Burzo Cornel            2k RO BaMa 22 4 155 1100 19+  13-  23+  20+  14+   6-  12-  |10325249
+ 19 Kovacs Adrian_jr        1k HU BuPe 22 3 151 1062 18-  15-  22-  21+  23+  12+   9-  |10337250
+ 20 Chalupnicek Miroslav    1d CZ Nym  21 1 157 1106  4-  14-  10-  18-  22+  17-  16-  |10225710
+ 21 Popescu Vlad            5k RO xxx  21 6 133  942 29+  26+  28+  19-  24+  23+  22+  |10349251
+ 22 Hodorogea Alexandru     3k RO xxx  20 3 141 1000 26+  23-  19+  17-  20-  27+  21-  |10362253
+ 23 Szilagyi Filip          4k RO Bucu 19 3 140  961 27+  22+  18-  26+  19-  21-  25-  |10374254
+ 24 Florea Ovidiu           7k RO Bist 19 6 124  876 33+  29+  32+  27+  21-  28+  26+  |10398256
+ 25 Dumitrescu Bogdan       7k RO Bucu 19 6 119  865 35+  30+  29+  28-  36+  26+  23+  |10333257
+ 26 Bordea George           4k RO Drob 18 2 134  913 22-  21-  27+  23-  28+  25-  24-  |10301258
+ 27 Castaliu Bogdan         4k RO Bucu 18 2 128  900 23-  28-  26-  24-  31+  22-  30+  |10313259
+ 28 Burzo Sergiu            6k RO BaMa 18 4 128  873 32+  27+  21-  25+  26-  24-  31+  |10325260
+ 29 Suciu Irina             5k RO Bucu 17 2 124  832 21-  24-  25-  31-  32+  30-  37+  |10337261
+ 30 Iugulescu Sergiu_Dan    7k RO Brai 17 4 117  821 31+  25-  36-  32+  38+  29+  27-  |10350263
+ 31 Szilagyi Ana-Maria      6k RO Bucu 17 3 116  838 30-  32-  35+  29+  27-  36+  28-  |10362264
+ 32 Rometi Vlad             6k RO xxx  16 2 119  830 28-  31+  24-  30-  29-  33-  36+  |10374265
+ 33 Danila Marius           8k RO Brai 16 4 110  764 24-  40+  37-  39-  35+  32+  38+  |10398267
+ 34 Shevchuk Mykhailo       8k UA Riv  15 1  88  617 44+  35-   0=   0=   0=   0=   0=  |10333356
+ 35 Covaci Sorin            7k RO Brai 15 2 111  747 25-  34+  31-  36-  33-  37-  42+  |10301269
+ 36 Bulz Ciprian            9k RO xxx  15 4 111  777 46+  41+  30+  35+  25-  31-  32-  |10313270
+ 37 Jauca Marius            9k RO xxx  15 4 104  734 45-  44+  33+  38-  39+  35+  29-  |10325271
+ 38 Jarai Akos              9k HU Pecs 15 4 104  729 41-  39+  45+  37+  30-  42+  33-  |10349273
+ 39 Mihailescu Razvan       9k RO xxx  15 4 102  707 40+  38-  42-  33+  37-  41+  43+  |10350274
+ 40 Banfai Karoly           9k HU BuPe 15 4  98  694 39-  33-  41+  45+  42-  43+  46+  |10362275
+ 41 Lopata Catalin          9k RO BaMa 14 3  99  700 38+  36-  40-  43-  46+  39-  45+  |10374276
+ 42 Virtic Adrian           11 RO xxx  14 5  98  694 50+  43+  39+  46+  40+  38-  35-  |10398278
+ 43 Khvan Alexandr          10 UA Khar 13 3  92  648  0=  42-  51+  41+  50+  40-  39-  |19625947
+ 44 Coltisor Stefan         9k RO xxx  13 0  85  578 34-  37-   0=   0=   0=   0=   0=  |10301280
+ 45 Ichim Ovidiu            10 RO xxx  13 3  97  675 37+  46+  38-  40-  47-  50+  41-  |10313281
+ 46 Meszaros Balazs         9k HU BuPe 13 2  95  683 36-  45-  50+  42-  41-  51+  40-  |10337283
+ 47 Tataran Vlad            11 RO BaMa 13 4  83  597 51+  50-  52-  56+  45+  48-  53+  |10349284
+ 48 Jerca Andrei            13 RO xxx  13 6  76  556 57+  54-  59+  53+  56+  47+  51+  |10350285
+ 49 Kim Elena               11 UA Khar 12 3  76  557  0=  52-  56-  51-  57+  54+  50+  |10362286
+ 50 Amzar Roxana            10 RO xxx  12 2  91  623 42-  47+  46-  52+  43-  45-  49-  |10374287
+ 51 Florea Catalina         11 RO Bucu 12 3  88  585 47-  53+  43-  49+  52+  46-  48-  |10398289
+ 52 Castaliu Stefania       12 RO Bucu 12 4  81  566 54+  49+  47+  50-  51-  53-  58+  |10333290
+ 53 Miclea Dan              13 RO Bucu 11 4  82  558 56+  51-  54+  48-  55+  52+  47-  |10301291
+ 54 Ghetu George            12 RO Brai 11 3  78  537 52-  48+  53-  55-  59+  49-  56+  |10325293
+ 55 Ungureanu Iulia         14 RO xxx  11 5  70  502 60-  57+  58+  54+  53-  56+  61+  |10337294
+ 56 Stefanescu Radu         12 RO xxx  10 2  81  533 53-  58+  49+  47-  48-  55-  54-  |10349295
+ 57 Ilie Ruxandra           13 RO Bucu 10 3  73  479 48-  55-  60+  61+  49-  58-  59+  |10350296
+ 58 Chiriac Maura           14 RO xxx  10 4  68  493 59+  56-  55-  64+  63+  57+  52-  |10362297
+ 59 Coros Florin            14 RO xxx   9 3  70  470 58-  63+  48-  60+  54-  62+  57-  |10374298
+ 60 Tapelea Oana            15 RO xxx   9 4  60  442 55+  66+  57-  59-  61-  70+  63+  |10333301
+ 61 Popescu Cosmin          15 RO xxx   9 4  59  430 66-  70+  64+  57-  60+  63+  55-  |10301302
+ 62 Goran Miruna            16 RO xxx   9 5  54  391 68+  67+  66+  63-  65+  59-  64+  |10325304
+ 63 Vasile Monica           15 RO xxx   8 3  60  422 64+  59-  70+  62+  58-  61-  60-  |10337305
+ 64 Lup Emanuela            15 RO xxx   8 3  57  399 63-  68+  61-  58-  67+  66+  62-  |10349306
+ 65 Belcu Cosmin            18 RO xxx   8 6  46  334 71+  75+  67+  68+  62-  74+  66+  |10350307
+ 66 Marton Katalin          15 HU BuPe  7 2  56  382 61+  60-  62-  67-  70+  64-  65-  |10362308
+ 67 Nedelcu Danut           16 RO xxx   7 3  52  357 70+  62-  65-  66+  64-  68+  69-  |10374309
+ 68 Ivascu Andra            16 RO xxx   7 3  50  345 62-  64-  72+  65-  71+  67-  70+  |10386310
+ 69 Dinculescu Simona       17 RO xxx   7 4  40  301 75-  72-  74+  70-  76+  71+  67+  |10333312
+ 70 Costache Ruxandra       15 RO xxx   6 1  54  377 67-  61-  63-  69+  66-  60-  68-  |10313314
+ 71 Neacsu Marian           18 RO xxx   6 4  43  288 65-  76+  75+  72+  68-  69-  74+  |10325315
+ 72 Bica Ciprian            18 RO xxx   6 4  39  257 74+  69+  68-  71-  82+  78+  73-  |10337316
+ 73 Constantin Razvan       20 RO Brai 6 6  27  213 90+  78-  85+  80+  79+  75+  72+  |10349317
+ 74 Liscu Alexandru         18 RO xxx   5 3  40  262 72-  86+  69-  76+  75+  65-  71-  |10350318
+ 75 Trocan Veronica         18 RO xxx   5 3  39  251 69+  65-  71-  78+  74-  73-  84+  |10362319
+ 76 Ivan Adriana            19 RO xxx   5 4  34  231 80+  71-  81+  74-  69-  82+  79+  |10374320
+ 77 Nita Ana                20 RO xxx   5 5  25  184  0+  79-  80-  89+  86+  81+  78+  |10386321
+ 78 Hodorogea Silvia        20 RO xxx   4 4  33  204 82+  73+  79+  75-  87+  72-  77-  |10301324
+ 79 Stoicescu Orlando       20 RO xxx   4 4  31  194 85+  77+  78-  81+  73-  80+  76-  |10313325
+ 80 Tudor Mariana           20 RO xxx   4 4  28  178 76-  87+  77+  73-  89+  79-  86+  |10325326
+ 81 Gheorghe Catalina       20 RO xxx   4 4  25  173 89+  88+  76-  79-  84+  77-  85+  |10337327
+ 82 Carnu Gabriel           20 RO xxx   4 4  24  188 78-  90+  88+  84+  72-  76-  89+  |10349328
+ 83 Bica Alin               20 RO xxx   4 1   3   19 87+   0=   0=   0=   0=   0=   0=  |10350329
+ 84 Lia Cristian            20 RO xxx   3 3  22  164 88-  91+  86+  82-  81-  87+  75-  |10350340
+ 85 Martin Alexandru        20 RO xxx   3 3  22  161 79-  89+  73-  86-  91+  88+  81-  |10362341
+ 86 Tatarus Andreea         20 RO xxx   3 3  21  176 91+  74-  84-  85+  77-  90+  80-  |10374342
+ 87 Tanase Octavian         20 RO xxx   3 3  19  143 83-  80-  91+  88+  78-  84-  90+  |10333345
+ 88 Buf Roxana              20 RO xxx   3 3  18  151 84+  81-  82-  87-  90+  85-  91+  |10301346
+ 89 Dima Mihai              20 RO Bucu  2 2  21  163 81-  85-  90+  77-  80-  91+  82-  |10313347
+ 90 Badarau Iolanda         20 RO xxx   1 1  21  148 73-  82-  89-  91+  88-  86-  87-  |10325348
+ 91 Paunescu Iulia          20 RO xxx   0 0  18  144 86-  84-  87-  90-  85-  89-  88-  |10337349

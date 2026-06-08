@@ -1,0 +1,107 @@
+; CL[A]
+; EV[European Youth Go Championship]
+; PC[NL, Zadnvoort]
+; DT[2007-03-09,2007-03-11]
+; TC[E070309A]
+; HA[h9]
+; KM[7.5]
+; TM[60]
+;
+  1 Dugin Artem              5d RU 16Kz 26 6 142 142  30+/b  6+/w 13+/w  3+/b  5+/w  4+/b |12049576
+  2 Mitic Dusan              4d RS Nis  25 5 117 142  15+/b 16+/w  3-/b  7+/w 13+/w  5+/b |10649507
+  3 Fidrmuc Ondrej           4d CZ Brn  25 5 115 141  26+/b 25+/b  2+/w  1-/w 14+/b 19+/w |12501247
+  4 Nikishin Oleg            1d RU 16Kz 24 5 112 138  24+/b 40+/w 26+/w 12+/b  6+/w  1-/w |13033075
+  5 Kachanovskyj Artem       3d UA Riv  24 4  93 144  27+/b  7+/b 17+/w  9+/w  1-/b  2-/w |12662870
+  6 Manojlovic Lazar         3d RS KGRa 24 4  92 142  29+/w  1-/b 18+/w  8+/b  4-/b 13+/b |12301652
+  7 Savolainen Javier-Aleksi 1d FI HGK  24 4  91 140  19+/b  5-/w 20+/w  2-/b 26+/w 14+/b |14001537
+  8 Debarre Thomas           4d FR 67SE 24 4  90 137  14+/w 13-/b 25+/b  6-/w 28+/w 15+/w |12950872
+  9 Kravec Andrij            4d UA Riv  24 4  90 137  31+/w 17-/b 27+/w  5-/b 16+/w 10+/b |12350261
+ 10 Gattullo Elia            2k FR 75Pa 23 5 109 133  22+/w 49+/b 24+/b 18+/b 20+/w  9-/w |14250379
+ 11 Podpera Lukas            1k CZ Pra  23 4  86 131  39+/w 26-/b 22+/b 16-/b 37+/w 25+/w |13201914
+ 12 Jabarin Ali              1d IL xxx  23 4  86 129   0=   36+/w 40+/b  4-/w 30+/b 28+/b |14637810
+ 13 Noir Baptiste            3d FR 93Mo 23 3  70 145  20+/w  8+/w  1-/b 17+/b  2-/b  6-/w |12449712
+ 14 Caraivan Alexandru       2d RO Brai 23 3  68 141   8-/b 19+/w 29+/b 15+/w  3-/w  7-/w |12698356
+ 15 Sharafeeva Guzel         2d RU 16Kz 23 3  68 140   2-/w 28+/b 16+/w 14-/b 17+/w  8-/b |12586134
+ 16 Kruml Ondrej             1d CZ Brn  23 3  67 139  28+/w  2-/b 15-/b 11+/w  9-/b 26+/w |10886524
+ 17 Serban Mihai_Valentin    2d RO Bist 23 3  67 137  40+/b  9+/w  5-/b 13-/w 15-/b 27+/w |13062258
+ 18 Seibt David              1d DE B 23 3  65 134  25-/w 31+/b  6-/b 10-/w 35+/w 22+/w |14237289
+ 19 Obenaus Johannes         3d DE B 23 3  64 136   7-/w 14-/b 45+/w 30+/b 27+/w  3-/b |13049795
+ 20 Neyroud Paul             1d FR 31To 23 3  64 134  13-/b 45+/w  7-/b 25+/w 10-/b 21+/w |13662704
+ 21 Kral Maros               2k SK Kosi 22 4  82 126  49+/w 35-/b 39+/w 45+/b 31+/b 20-/b |12537041
+ 22 Berkelmans Wouter        1d NL Amvn 22 3  65 134  10-/b 24+/w 11-/w 38+/b 29+/w 18-/b |12574617
+ 23 Matushkin Alexandr       1d RU 18Iz 22 3  64 130  38+/b 29-/w 31+/w 27-/w 25-/b 37+/b |12362284
+ 24 Lin Viktor               1k AT Wien 22 3  61 130   4-/w 22-/b 10-/w 49+/b 34+/b 36+/b |14501256
+ 25 Prokop Jan               3d CZ Pra  22 2  45 140  18+/b  3-/w  8-/w 20-/b 23+/w 11-/b |10433654
+ 26 Jakobsen Lasse           2d DK EDO 22 2  44 140   3-/w 11+/w  4-/b 35+/b  7-/b 16-/b |12637317
+ 27 Blomback Fredrik         1d SE Sto  22 2  44 138   5-/w 30+/w  9-/b 23+/b 19-/b 17-/b |13937946
+ 28 Mitic Nikola             3d RS Nis  22 2  43 136  16-/b 15-/w 38+/w 29+/b  8-/b 12-/w |10801923
+ 29 Eerbeek Alexander        1d NL Amvn 22 2  43 134   6-/b 23+/b 14-/w 28-/w 22-/b 38+/w |13501356
+ 30 Salignon Jerome          3d FR LTr  22 2  42 136   1-/w 27-/b 36+/b 19-/w 12-/w 32+/w |10825628
+ 31 Avram Laura              1d RO Bist 22 2  42 133   9-/b 18-/w 23-/b 36+/w 21-/w 35+/w |12698620
+ 32 Mankinen Antti           4k FI Lah  21 5  96 118  54+/b 42+/w 58+/b 43+/w 33+/w 30-/b |13837648
+ 33 Lisy Pavol               4k SK DSta 21 5  96 117  48+/w 41+/w 44+/b 54+/b 32-/b 49+/w |12686597
+ 34 Zahonyi Balint           2k HU BuPe 21 3  61 123  43+/w 37-/b 49-/w 39+/b 24-/w 41+/b |12598597
+ 35 Lavi Ron                 1k IL RhA  21 2  43 131  36-/b 21+/w 37+/w 26-/w 18-/b 31-/b |14250467
+ 36 Draws Marek              1k DE H 21 2  42 131  35+/w 12-/b 30-/w 31-/b 40+/b 24-/w |13437908
+ 37 Kachanovskyj Mykhajlo    1k UA Riv  21 2  42 128  45-/b 34+/w 35-/b 40+/w 11-/b 23-/w |12649175
+ 38 Tjupkin Anton            1k RU 16Kz 21 2  41 129  23-/w 39+/b 28-/b 22-/w 45+/w 29-/b |13837527
+ 39 Straeter Jan             1k DE Sae  21 2  40 127  11-/b 38-/w 21-/b 34-/w 43+/b 45+/b |14201297
+ 40 Fragman Amir             4d IL RhA  21 1  20 132  17-/w  4-/b 12-/w 37-/b 36-/w 44+/b |13625315
+ 41 Sos Miroslav             4k CZ Zli  20 4  75 117  53+/w 33-/b 46+/w 42+/b 54+/b 34-/w |12498981
+ 42 Kozelskikh Alexandr      4k RU 77Mo 20 4  74 115  52+/w 32-/b 48+/w 41-/w 53+/b 46+/b |12737219
+ 43 Ardelean Diana           3k RO Bucu 20 3  56 119  34-/b 44+/w 54+/w 32-/b 39-/w 52+/w |14049178
+ 44 Bouwman Gelmer           3k NL Apel 20 3  54 116  58+/w 43-/b 33-/w 52+/b 49+/b 40-/w |14598958
+ 45 Reiter Daniel            1k IL RhA  20 1  21 131  37+/w 20-/b 19-/b 21-/w 38-/b 39-/w |14650812
+ 46 Wohnig Maria             5k DE B 19 4  70 110  51+/b 57+/w 41-/b 58+/w 52+/b 42-/w |13833270
+ 47 Tel Michiel              5k NL Gron 19 4  70 106  64+/w 48+/b 52-/b 53-/w 50+/b 54+/w |14333682
+ 48 Liedholz Yannick         4k DE B 19 3  53 113  33-/b 47-/w 42-/b 51+/b 58+/w 53+/w |14337081
+ 49 Berbecariu Flaviu        2k RO Bist 19 1  21 129  21-/b 10-/w 34+/b 24-/w 44-/w 33-/b |13549074
+ 50 Cernota Tomas            7k CZ Zli  18 5  81 100  63+/w 60+/b 56+/b 57+/w 47-/w 61+/b |12598927
+ 51 Wit Jelger_de            5k NL Alme 18 3  49 105  46-/w 64+/b 53-/b 48-/w 56+/w 58+/b |13933876
+ 52 Statzkowski Matthias     4k DE B 18 2  37 116  42-/b 53+/b 47+/w 44-/w 46-/w 43-/b |14650185
+ 53 Gauthier Lena            4k DE B 18 2  37 114  41-/b 52-/w 51+/w 47+/b 42-/w 48-/b |14050608
+ 54 Dreyer Maximilian        3k DE ED 18 1  17 118  32-/w 58+/b 43-/b 33-/w 41-/w 47-/b |13525413
+ 55 Lenz Heinrich            8k DE P 17 5  76  92  62+/b 63+/b 59-/w 67+/b 61+/w 60+/b |13433915
+ 56 Fuhlendorf Andre         6k DE CAS 17 3  49 101  60-/w 61+/b 50-/w 59+/b 51-/b 57+/w |13886730
+ 57 Mueller Simon            6k DE AC 17 3  47 101  61+/w 46-/b 64+/w 50-/b 60+/w 56-/b |14386691
+ 58 Wasserman Philip         3k IL RhA  17 0   0 115  44-/b 54-/w 32-/w 46-/b 48-/b 51-/w |14662813
+ 59 Kuras Justinas           8k LT Kaun 16 4  58  90  70+/b 62-/w 55+/b 56-/w 69+/b 63+/b |12737571
+ 60 Zeh Sebastian            6k DE ED 16 2  32 100  56+/b 50-/w 61-/w 63+/b 57-/b 55-/w |13033174
+ 61 Golan Eden               6k IL RhA  16 2  31 100  57-/b 56-/w 60+/b 64+/w 55-/b 50-/w |14674814
+ 62 Alimov Anton             8k UA Riv  15 3  44  90  55-/w 59+/b 63-/w 69+/b 67-/w 64+/b |14250280
+ 63 Rosenberger Eylon        7k IL RhA  15 2  30  97  50-/b 55-/w 62+/b 60-/w 64+/b 59-/w |14686815
+ 64 Bocale Dario             5k DE CAS 15 0   0 100  47-/b 51-/w 57-/b 61-/b 63-/w 62-/w |13562934
+ 65 Berkelmans Guus          12 NL Amvn 14 6  73  73  73+/w 75+/b 76+/w 68+/w 70+/b 67+/b |13062720
+ 66 Kluwe Benjamin           10 DE DD 14 4  50  74  74+/b 69+/w 67-/w 70+/b 68+/b  0=   |13850958
+ 67 Tant Bram                9k BE Gen  14 3  40  84  69-/b 76+/w 66+/b 55-/w 62+/b 65-/w |14513851
+ 68 Wyborski Yuval           10 IL RhA  13 3  36  77  76+/b 70+/w 69-/w 65-/b 66-/w 71+/w |14698816
+ 69 Mendle Johannes          9k DE ED 13 2  27  85  67+/w 66-/b 68+/b 62-/w 59-/w 70-/w |13049179
+ 70 Adam Nicole              9k DE B 13 2  24  81  59-/w 68-/b 74+/w 66-/w 65-/w 69+/b |14286294
+ 71 Bouman Liselot           12 NL Alme 12 4  43  66  75+/w 78-/b 79+/w 74+/b 76+/w 68-/b |13937891
+ 72 Blockley Paul            12 UK Worc 12 4  42  63  79-/w 80+/b 75+/w 76-/b 73+/b 74+/w |10949532
+ 73 Machacek Oliver          13 DE B 11 4  39  65  65-/b 83+/w 78+/w 75+/b 72-/w 77+/b |14637194
+ 74 Toma Ruxandra            11 RO Brai 11 2  20  71  66-/w 79+/b 70-/b 71-/w 78+/w 72-/b |10898987
+ 75 Sieracki Christian       11 DE ED 11 2  19  68  71-/b 65-/w 72-/b 73-/w 80+/b 78+/b |13086183
+ 76 Will Martin              10 DE DD 11 1  12  75  68-/w 67-/b 65-/b 72+/w 71-/b  0=   |13813954
+ 77 Mahdal Oldrich           15 CZ NBo  10 5  42  53  86+/w 82+/w 83+/b 80+/b 79+/w 73-/w |14333814
+ 78 Wohnig Denis             13 DE B 10 3  31  64  80+/w 71+/w 73-/b 79+/b 74-/b 75-/w |13474659
+ 79 Brenstein Jan            12 DE P 10 2  20  63  72+/b 74-/w 71-/b 78-/w 77-/b 82+/w |13962806
+ 80 Ulbricht Fabian          13 DE P  9 2  16  59  78-/b 72-/w 82+/b 77-/w 75-/w 83+/w |14598342
+ 81 Bressan Rebekka          16 DE CAS  8 4  26  39  88+/w 90-/b 86+/b 82-/b 84+/w 87+/w |12833348
+ 82 Voronskyj Oleksandr      14 UA Riv   8 2  15  52  83-/b 77-/b 80-/w 81+/w 86+/w 79-/b |14337114
+ 83 Katzer Marvin            14 DE P  8 2  14  51  82+/w 73-/b 77-/w 86-/w 87+/b 80-/b |14513345
+ 84 Leopold Sanne            18 NL Alme  7 5  31  39  85+/w 88+/b 87+/b 90+/w 81-/b 86+/w |14633817
+ 85 Bressan Sarah            18 DE CAS  7 5  24  31  84-/b 89+/w 91+/b 92+/w 90+/b 88+/w |13013693
+ 86 Blokker Ryan             15 NL Amvn  7 2  14  47  77-/b 87+/w 81-/w 83+/b 82-/b 84-/b |14613819
+ 87 Sachsenhauser Florian    16 DE ED  6 2  11  41  90+/w 86-/b 84-/w 88+/b 83-/w 81-/b |13074259
+ 88 Kittlitz Adrian          16 DE ED  6 2   9  37  81-/b 84-/w 90+/b 87-/w 94+/b 85-/b |14598298
+ 89 Dvoracek Mikolas         19 CZ Jes   5 4  15  26  94+/b 85-/b 96+/w 91-/w 92+/w 90+/b |12849078
+ 90 Nevirkovec Oleh          16 UA Riv   5 1   8  39  87-/b 81+/w 88-/w 84-/b 85-/w 89-/w |14533178
+ 91 Vojtisek Jakub           20 CZ NBo   4 4  13  23  97+/b 93+/w 85-/w 89+/b 95-/w 96+/b |14662516
+ 92 Adelsberger Christoph    20 DE ED  4 4  10  22  98+/b 94+/w 95+/w 85-/b 89-/b 97+/w |14525302
+ 93 Runkel Johannes          20 DE ED  4 4   9  17   0+   91-/b 94-/w 97+/w 98+/b 95+/b |14637579
+ 94 Zakrzewski Oskar         19 NL Alme  4 3   7  22  89-/w 92-/b 93+/b 96+/b 88-/w 98+/w |14398912
+ 95 Faase Annabel            20 NL Ensc  3 3   7  17  96-/w 97+/w 92-/b 98+/b 91+/b 93-/w |13925879
+ 96 Ernst Dennis             20 DE CAS  2 2   4  19  95+/b 98+/w 89-/b 94-/w 97-/w 91-/w |14350226
+ 97 Janssen Janet            20 NL Venl  2 2   3  18  91-/w 95-/b 98+/w 93-/b 96+/b 92-/b |14625820
+ 98 Andrusenko Serhij        19 UA Riv   1 0   0  19  92-/w 96-/b 97-/b 95-/w 93-/w 94-/b |14637821

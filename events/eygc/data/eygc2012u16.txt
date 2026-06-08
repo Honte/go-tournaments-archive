@@ -1,0 +1,37 @@
+; TC[E120413B]
+; CL[A]
+; EV[EYGC 2012, Group U16]
+; PC[RU, Sankt-Peterburg]
+; DT[2012-04-13,2012-04-15]
+; HA[h9]
+; KM[7.5]
+; TM[90]
+; CM[European Youth Goe Championship 2012, Group U16 (submitted by Jana_H)]
+;.
+;
+ 1 Mykhaliuk Yurii          3d UA  Rivn  19   5    89   106  7-/b    5+/w    9+/w    8+/w    2+/b    3+/w     |13798235
+ 2 Popov Stepan             3d RU  16Kz  19   5    85   104  10+/w   11+/w   8+/b    4+/b    1-/w    7+/b     |14625897
+ 3 Pitrop Alexandru         2k RO  Boto  18   4    67   103  9+/w    8-/b    11+/w   12+/w   4+/b    1-/b     |15262940
+ 4 Ketelaars Alex           2d NL  Hilv  18   4    66   103  12+/w   7+/w    6+/b    2-/w    3-/w    13+/b    |14913239
+ 5 Khabazov Nikita          3d RU  52NN  18   4    66   101  11-/b   1-/b    16+/w   10+/w   8+/b    9+/w     |13850540
+ 6 Chernykh Anton           3k RU  50Zh  17   4    62   97   18+/w   10+/b   4-/w    9-/b    16+/b   11+/w    |15713467
+ 7 Michaeli Tal             2d IL  TAv   17   3    50   103  1+/w    4-/b    12-/b   15+/w   11+/b   2-/w     |14837603
+ 8 Verteletskyi Vladyslav   2d UA  Rivn  17   3    49   105  13+/b   3+/w    2-/w    1-/b    5-/w    16+/b    |15325145
+ 9 Miljutkin Dmitrij        3d RU  16Kz  17   3    49   104  3-/b    13+/w   1-/b    6+/w    12+/b   5-/b     |14786772
+10 Dobranis Darius          2k RO  Bist  17   3    47   101  2-/b    6-/w    14+/w   5-/b    15+/b   12+/w    |15049716
+11 Glushko Alexandr         1k RU  77Mo  16   2    34   105  5+/w    2-/b    3-/b    13+/b   7-/w    6-/b     |15686297
+12 Fionin Grigorij          1d RU  78SP  16   2    32   102  4-/b    16+/w   7+/w    3-/b    9-/w    10-/b    |16013096
+13 Havelka Samuel           2k CZ  TOst  16   2    30   98   8-/w    9-/b    17+/b   11-/w   14+/w   4-/w     |15662372
+14 Kriese Anton             3k DE  J     16   2    28   87   0=      0=      10-/b   17+/w   13-/b   18+/w    |15050794
+15 Aminov Adel              4k RU  16Kz  15   3    41   90   16-/b   21+/b   18+/w   7-/b    10-/w   17+/w    |14601895
+16 Zuev Daniil              3k RU  77Mo  15   2    29   97   15+/w   12-/b   5-/b    18+/b   6-/w    8-/w     |15013361
+17 Pylypchuk Andrii         5k UA  Rivn  14   3    40   87   21+/w   18+/b   13-/w   14-/b   19+/w   15-/b    |15025175
+18 Heaulme Melissa          3k FR  44NE  14   1    13   90   6-/b    17-/w   15-/b   16-/w   21+/w   14-/b    |14574824
+19 Csoti Sebestyen          7k HU  Buda  13   4    42   69   20+/w   22+/b   21-/w   23+/b   17-/b   24+/w    |14862628
+20 Stecenko Anastasia       7k RU  74Ch  13   4    30   56   19-/b   24+/w   22+/w   21-/b   23+/w   26+/b    |14774716
+21 Lubsanov Maxim           6k RU  50Kr  13   3    28   71   17-/b   15-/w   19+/b   20+/w   18-/b   25+/w    |14998346
+22 Kalimullin Bogdan        8k RU  74Ch  11   3    12   47   24+/b   19-/w   20-/b   25+/w   26+/b   23-/w    |14686364
+23 Malko Yaroslav          11k UA  Rivn  9    4    23   49   26+/w   25+/b   24+/w   19-/w   20-/b   22+/b    |14937670
+24 Pushin Danil             9k RU  18Iz  9    2    3    49   22-/w   20-/b   23-/b   26+/w   25+/b   19-/b    |15262225
+25 Kreiner Franziska       16k DE  B     2    2    2    44   0+      23-/w   26+/b   22-/b   24-/w   21-/b    |16233481
+26 Samsonov Dmitrij        16k RU  78SP  1    1    0    44   23-/b   0+      25-/w   24-/b   22-/w   20-/w    |16013492

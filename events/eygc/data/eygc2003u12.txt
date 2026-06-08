@@ -1,0 +1,94 @@
+; CL[A]
+; EV[European Youth Championship]
+; PC[FR, Cannes]
+; DT[2003-03-14,2003-03-16]
+; TC[E030314B]
+; HA[h9]
+; KM[7.5]
+; TM[70]
+;
+;===  GROUP UNDER 12
+;
+  1 Zajcev Igor                 4k UA Kyiv 16 4  61  76  11+/w  3+/w  4+/b  2+/w  5-/b  |12498376
+  2 Kachanovskyj Artem          4k UA Riv  16 4  58  74   6+/w  5+/b 13+/w  1-/b  4+/w  |12662870
+  3 Sos Miroslav                8k CZ Zli  16 4  58  74   8+/w  1-/b  5+/w  6+/b  7+/b  |12498981
+  4 Podoljak Nikita             5k RU 78SP 15 3  42  74   9+/b 10+/w  1-/w  8+/b  2-/b  |12549273
+  5 Mestrovic Stjepan           6k HR VGor 15 3  42  74  13+/w  2-/w  3-/b 12+/b  1+/w  |12649307
+  6 Morozov Alexej              6k RU 77Mo 15 3  42  74   2-/b  9+/w  7+/b  3-/w  8+/b  |12701612
+  7 Kirillov Vitalij            5k RU 77Mo 14 2  28  73  10-/w 11+/b  6-/w  9+/b  3-/w  |12825274
+  8 Avram Laura                 4k RO Bist 14 2  27  73   3-/b 12+/w 10+/b  4-/w  6-/w  |12698620
+  9 Toma Ruxandra               5k RO Brai 14 2  27  71   4-/w  6-/b 11+/b  7-/w 13+/b  |10898987
+ 10 Ermakov Ilja                5k RU 77Mo 14 2  27  70   7+/b  4-/b  8-/w 13+/w 11-/w  |12674596
+ 11 Saitov Linar                6k RU 16Kz 14 2  26  70   1-/b  7-/w  9-/w 15+/b 10+/b  |13025078
+ 12 Visser Robbert-Jan          9k NL Leid 13 2  23  64  18+/w  8-/b 15-/b  5-/w 16+/w  |12537613
+ 13 Moldovan Raul               4k RO Bist 13 1  12  71   5-/b 16+/w  2-/b 10-/b  9-/w  |12737175
+ 14 Kares Ondrej                13 CZ Jav  12 5  54  54  17+/b 18+/b 16+/w 25+/w 15+/w  |12598718
+ 15 Lisy Pavol                  10 SK Brat 12 2  25  63  16-/b 17+/w 12+/w 11-/w 14-/b  |12686597
+ 16 Westhoff Edwald             10 NL Leid 12 2  24  62  15+/w 13-/b 14-/b 17+/w 12-/b  |12550615
+ 17 Gardus Iulia                10 RO Bist 12 2  21  58  14-/w 15-/b 18+/w 16-/b 20+/w  |12662617
+ 18 Kalinin Kostjantyn          10 UA Kyiv 11 1   9  56  12-/b 14-/w 17-/b 20-/w 21+/b  |12898270
+ 19 Surma Mateusz               15 PL Rydu 10 5  40  40  31+/b 30+/b 22+/w 23+/w 25+/w  |12837968
+ 20 Brauerova Barbora           13 CZ Ost  10 3  28  49  22-/w 25+/b 21+/w 18+/b 17-/b  |12486980
+ 21 Kral Maros                  14 SK Kosi  9 3  26  47  23+/w 22+/b 20-/b 24+/b 18-/w  |12537041
+ 22 Moldovan Mihai              14 RO Bist 9 3  26  45  20+/b 21-/w 19-/b 27+/b 26+/w  |12786169
+ 23 Chita Dan-Ioan              14 RO Bist 9 3  24  43  21-/b 27+/w 26+/w 19-/b 24+/w  |13049256
+ 24 Zulic Kristian              15 HR VGor  8 3  22  40  30+/w 28+/b 31+/b 21-/w 23-/b  |12701975
+ 25 Rus Ionut                   14 RO Bist 8 2  16  48  26+/b 20-/w 27+/w 14-/b 19-/b  |12637614
+ 26 Verteleva Olga              14 UA Kyiv  8 2  15  41  25-/w 31+/w 23-/b 28+/b 22-/b  |12562902
+ 27 Renaud Guilhaume            14 FR 31To  8 2  14  40  28+/w 23-/b 25-/b 22-/w 34+/w  |12798456
+ 28 Mihancea Andrei             14 RO Bist 8 2  13  37  27-/b 24-/w 34+/b 26-/w 31+/w  |12698609
+ 29 Kozhukhov Ivan              18 RU 77Mo  7 5  22  22  75+/w 37+/w 40+/b 51+/b 32+/w  |12886280
+ 30 Toma Theodor                15 RO Brai 7 2  12  37  24-/b 19-/w 32+/b 31-/w 33+/b  |12513754
+ 31 Todoran Mihai               14 RO Bist 7 1   7  41  19-/w 26-/b 24-/w 30+/b 28-/b  |12813284
+ 32 Artigny Julie               17 FR 69CR  6 3  18  32  35+/b 34+/w 30-/w 33+/b 29-/b  |12801426
+ 33 Szychowiak Weronika         17 PL Bydg  6 3  15  28  51+/b 39+/w 35+/b 32-/w 30-/w  |12586497
+ 34 Stozek Adam                 16 PL Wars  6 2  11  33  40+/w 32-/b 28-/w 35+/w 27-/b  |12750023
+ 35 Deac Bianca                 16 RO Bist 6 2   9  27  32-/w 40+/b 33-/w 34-/b 51+/w  |12749176
+ 36 Sapik Marcel                20 CZ Mik   5 5  16  16  80+/b 45+/w 57+/b 43+/w 44+/b  |12949387
+ 37 Virag Michal                18 SK Kosi  5 3  14  26  38-/w 29-/b 49+/b 39+/w 40+/b  |12886401
+ 38 Lopez Pau                   18 ES Sab   5 3  13  22  37+/b 51-/w 47+/w 40-/w 45+/b  |12962697
+ 39 Smagin Ivan                 18 RU 77Mo  5 3  12  23  48+/w 33-/b 51+/w 37-/b 41+/w  |12762849
+ 40 Granado Vitia               16 FR 13Ma  5 1   5  29  34-/b 35-/w 29-/w 38+/b 37-/w  |13050257
+ 41 Serban Mihai_Valentin       20 RO Bist 4 4  13  18  50+/w 64+/b 68+/w 47+/b 39-/b  |13062258
+ 42 Wozniak Aleksandra          20 PL Choc  4 4  12  15  52-/b 63+/w 59+/b 60+/w 64+/b  |12986589
+ 43 Gogosz Dorota               20 PL Choc  4 4  11  16  62+/w 58+/b 52+/w 36-/b 75+/w  |12901581
+ 44 Sachsenhauser Florian       20 DE ED  4 4  11  16  61+/w 65+/b 54+/w 56+/b 36-/w  |13074259
+ 45 Panfilov Ivan               19 RU 77Mo  4 3   9  19  73+/w 36-/b 48+/w 53+/b 38-/w  |12925726
+ 46 Hubalovsky Tomas            20 CZ Pra   4 4   9  12  79+/w 62+/b 55-/b 73+/w 57+/b  |13098261
+ 47 Szychowiak Gracjan          19 PL Bydg  4 3   8  17  64+/w 75+/b 38-/b 41-/w 54+/b  |12686608
+ 48 Visser Maud                 19 NL Leid  4 3   8  17  39-/b 69+/w 45-/b 55+/w 53+/b  |12674563
+ 49 Dvoracek Mikolas            20 CZ Jes   4 4   8  13  76+/b 70+/w 37-/w 75+/b 52+/b  |12849078
+ 50 Panfilova Elena             20 RU 77Mo  4 4   8  12  41-/b 81+/w 77+/b 58+/w 59+/b  |12949728
+ 51 Lavallou Gabriel            17 FR 31To  4 1   5  29  33-/w 38+/b 39-/b 29-/w 35-/b  |12949420
+ 52 Novella Adria               20 ES Sab   3 3   8  16  42+/w 66+/b 43-/b 71+/w 49-/w  |13001263
+ 53 Ochozkova Anna              20 CZ Ost   3 3   7  15  60+/b 74+/b 75+/w 45-/w 48-/w  |12701645
+ 54 Mestrovic Marko             20 HR VGor  3 3   7  15  56+/w 72+/b 44-/b 65+/w 47-/w  |13098162
+ 55 Ernekerova Jana             20 CZ Pra   3 3   7  14  57-/w 76+/b 46+/w 48-/b 71+/w  |13013264
+ 56 Llonch-Serrano Jordi        20 ES Sab   3 3   7  14  54-/b 67+/w 61+/b 44-/w 65+/b  |13025265
+ 57 Wozniak Anna                20 PL Choc  3 3   6  15  55+/b 77+/b 36-/w 68+/b 46-/w  |12950586
+ 58 Larzat Robin                20 FR 69CR  3 3   5  13  68+/b 43-/w 69+/w 50-/b 82+/b  |13049267
+ 59 Westhoff Edger              20 NL Leid  3 3   5  13  71+/w 79+/b 42-/w 74+/b 50-/w  |12798291
+ 60 Gaurean Ioana               20 RO Bist 3 3   5  12  53-/w 80+/w 70+/b 42-/b 73+/w  |12825285
+ 61 Matencio Mireia             20 ES Sab   3 3   5  12  44-/b 78+/b 56-/w 66+/w 67+/b  |13050268
+ 62 Durbak Bohdan               20 UA Kyiv  3 3   4  12  43-/b 46-/w 83+/w 70+/b 69+/w  |13062269
+ 63 Noir Augustin               20 FR 75Pa  3 3   4  10  66-/w 42-/b 80+/b 76+/w 68+/b  |12813207
+ 64 Bernard Celestin            19 FR st    3 2   3  15  47-/b 41-/w 66+/b 79+/w 42-/w  |12550978
+ 65 Novella Daniel              20 ES Sab   2 2   4  14  67+/b 44-/w 72+/w 54-/b 56-/w  |13074270
+ 66 Solomenceva Oleksandra      20 UA Ode   2 2   4  13  63+/b 52-/w 64-/w 61-/b 77+/w  |13086271
+ 67 Baumgartner Meike           20 DE ED  2 2   3  11  65-/w 56-/b 78+/b 72+/w 61-/w  |13033273
+ 68 Lisa Magdalena              19 SK Brat  2 1   2  15  58-/w 73+/b 41-/b 57-/w 63-/w  |12874510
+ 69 Arutjunov Artem             20 RU 77Mo  2 2   2  12  78+/w 48-/b 58-/b 77+/w 62-/b  |13001274
+ 70 Duchesne Lucas              20 FR st    2 2   2  12   0+   49-/b 60-/w 62-/w 79+/b  |13013275
+ 71 Salignon Charlotte          20 FR 38Tr  2 2   2  11  59-/b 83+/w 74+/w 52-/b 55-/b  |12974456
+ 72 Moreno Marc                 20 ES Sab   2 2   2   9   0+   54-/w 65-/b 67-/b 78+/w  |13025276
+ 73 Audouard Emile              19 FR 13Ma  2 1   1  14  45-/b 68-/w 82+/w 46-/b 60-/b  |12886423
+ 74 Zabra-Guillen Miguel-Angel  20 ES Sab   2 2   1   9  83+/b 53-/w 71-/b 59-/w 76+/w  |13049278
+ 75 Corral Alex                 18 ES Sab   2 0   0  22  29-/b 47-/w 53-/b 49-/w 43-/b  |12925682
+ 76 Kolomys Lilija              20 UA Riv   1 1   1  13  49-/w 55-/w 81+/b 63-/b 74-/b  |13050279
+ 77 Granado Lisa                20 FR 13Ma  1 1   1  12  81+/b 57-/w 50-/w 69-/b 66-/b  |13062280
+ 78 Kovtun Dmitrij              20 UA Kyiv  1 1   1  10  69-/b 61-/w 67-/w 81+/b 72-/b  |13074281
+ 79 Melnichuk Bohdana           20 UA Lvi   1 1   0  12  46-/b 59-/w  0+   64-/b 70-/w  |13098283
+ 80 Holoversa Roman             20 UA Riv   1 1   0  11  36-/w 60-/b 63-/w  0=   83+/b  |13033284
+ 81 Romanishin Marija-Khristina 20 UA Lvi   1 1   0   7  77-/w 50-/b 76-/w 78-/w  0+  |13001285
+ 82 Opotjak Solomija            20 UA Lvi   1 0   0   5   0=    0=   73-/b  0=   58-/w  |13013286
+ 83 Puzyrko Oleksandr           20 UA Riv   0 0   0   8  74-/w 71-/b 62-/b  0=   80-/w  |13025287

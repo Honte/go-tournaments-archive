@@ -1,0 +1,69 @@
+; CL[A]
+; EV[European Youth Championship - under 18]
+; PC[SK, Bratislava]
+; DT[1997-03-07,1997-03-09]
+; TC[E970307A]
+; HA[h9]
+; KM[5.5]
+; TM[75]
+;             
+  1 Bogackyj Dmytro       5d UA Kyiv 32 7 203 203   9+  3+  6+  2+ 10+ 12+  5+  |10250867
+  2 Fincke Jonas          3d DE M 30 5 204 143   4+  5+ 11+  1-  7- 10+ 13+  |10537857
+  3 Drouot Paul           4d FR 31To 30 5 204 142  14+  1- 13+  6+ 11+  7+  4-  |10337239
+  4 Nijhuis Emil          5d NL Amst 30 5 202 144   2- 12+  8+ 11- 15+  6+  3+  |10213027
+  5 Kuzela Martin         3d CZ Zli  29 4 203 113  12+  2- 14+ 10-  8+ 11+  1-  |10250702
+  6 Prachar Jan           2d CZ Zli  29 4 203 111   7+  8+  1-  3- 22+  4- 17+  |10274704
+  7 Kuznecov Dmitrij      1d RU 78SP 29 4 199 112   6- 13- 24+ 14+  2+  3- 10+  |10698325
+  8 Gheorghiu Valentin    3d RO Bucu 29 4 199 111  10+  6-  4- 19+  5- 15+ 12+  |10374243
+  9 Mero Csaba            5d HU BuPe 29 4 197 109   1- 15+ 10- 22+ 12- 16+ 11+  |10225875
+ 10 Andrienko Vasilij     1d UA Riv  28 3 204  84   8- 23+  9+  5+  1-  2-  7-  |10333246
+ 11 Koszegi Diana         2d HU BuPe 28 3 203  85  15+ 17+  2-  4+  3-  5-  9-  |10301247
+ 12 Chalupnicek Miroslav  1d CZ Nym  28 3 203  83   5-  4- 18+ 16+  9+  1-  8-  |10225710
+ 13 Kuin Merlijn          1k NL Amvn 28 4 198 110  22+  7+  3- 15- 21+ 14+  2-  |10233861
+ 14 Nechanicky Petr       2d CZ Nym  28 3 197  81   3- 16+  5-  7- 17+ 13- 18+  |10233267
+ 15 Jadron Peter          3d SK SBel 28 3 197  81  11-  9- 25+ 13+  4-  8- 16+  |10298651
+ 16 Hora Jan              1k CZ Pra  27 3 193  80  23+ 14- 17+ 12- 18+  9- 15-  |10401083
+ 17 Mikhajlov Evgenij     1k RU 52NN 27 3 192  80  18+ 11- 16- 23+ 14- 19+  6-  |10633326
+ 18 Frehe Renee           1k NL Nijm 27 3 189  79  17- 19+ 12- 25+ 16- 22+ 14-  |10313248
+ 19 Abrosimov Pavel       1k RU 00oo 27 3 188  79  25- 18- 20+  8- 23+ 17- 22+  |10601327
+ 20 Hodorogea Alexandru   2k RO xxx  27 4 184 104  27+ 22- 19- 21- 24+ 26+ 23+  |10362253
+ 21 Tishchenko Alexandr   3k RU 50Kr 27 5 182 128  26- 30+ 29+ 20+ 13- 27+ 24+  |10613328
+ 22 Kostka Ivan           1k CZ FMi  26 2 193  53  13- 20+ 23+  9-  6- 18- 19-  |10286716
+ 23 Kremenek Jan          1d CZ Zli  26 1 187  25  16- 10- 22- 17- 19- 29+ 20-  |10250713
+ 24 Kulkov Andrej         3k RU 16Kz 26 4 185 102  28+ 29+  7- 26+ 20- 25+ 21-  |10625329
+ 25 Szilagyi Filip        2k RO Bucu 26 3 185  78  19+ 26+ 15- 18- 27- 24- 28+  |10374254
+ 26 Florea Ovidiu         3k RO Bist 26 4 181 102  21+ 25- 27+ 24- 28+ 20- 30+  |10398256
+ 27 Kamenskikh Anton      3k RU 16Kz 26 4 178  98  20- 28+ 26- 31+ 25+ 21- 33+  |10625340
+ 28 Suciu Irina           3k RO Bucu 25 3 176  72  24- 27- 30+ 29+ 26- 32+ 25-  |10337261
+ 29 Virtic Adrian         3k RO xxx  25 3 174  70  30+ 24- 21- 28- 33+ 23- 32+  |10398278
+ 30 Cambal Marek          3k SK Gala 24 2 173  47  29- 21- 28- 33+ 32- 31+ 26-  |10262670
+ 31 Banfai Karoly         5k HU BuPe 24 4 161  88  33+ 32- 34+ 27- 36+ 30- 35+  |10362275
+ 32 Marton Csaba          5k HU BuPe 23 3 165  70  35+ 31+ 33- 34- 30+ 28- 29-  |10362352
+ 33 Nagy Zsolt            5k HU BuPe 23 3 165  66  31- 36+ 32+ 30- 29- 34+ 27-  |10437251
+ 34 Regentik Rastislav    7k SK Gala 22 4 154  86  36+ 35+ 31- 32+ 38+ 33- 37-  |10250680
+ 35 Hrabovsky Juraj       6k SK Gala 22 3 151  61  32- 34- 37+ 36- 39+ 38+ 31-  |10262681
+ 36 Lassu Cyril           6k SK Gala 21 2 152  42  34- 33- 38+ 35+ 31- 37- 39-  |10286683
+ 37 Ungureanu Iulia       9k RO xxx  21 5 141  99  38+ 41+ 35- 39- 40+ 36+ 34+  |10337294
+ 38 Meszaros Balazs       8k HU BuPe 20 3 141  55  37- 39+ 36- 40+ 34- 35- 43+  |10337283
+ 39 Ghetu George          9k RO Brai 20 4 137  77  41+ 38- 40- 37+ 35- 42+ 36+  |10325293
+ 40 Lassakova Lubica      11 SK Brat 18 4 130  72  43+ 44+ 39+ 38- 37- 41+ 42-  |12686927
+ 41 Lup Emanuela          10 RO xxx  18 3 123  47  39- 37- 42+ 43- 45+ 40- 47+  |10349306
+ 42 Lassakova Lucia       13 SK Brat 17 5 121  83  46+ 45+ 41- 44+ 43+ 39- 40+  |10274693
+ 43 Palencar Juraj        12 SK Kosi 17 4 121  66  40- 46+ 44+ 41+ 42- 45+ 38-  |10237678
+ 44 Hospodar Ivan         12 SK Kosi 17 4 110  58  45+ 40- 43- 42- 49+ 46+ 48+  |10249679
+ 45 Marton Katalin        12 HU BuPe 16 3 111  42  44- 42- 46+ 47+ 41- 43- 49+  |10362308
+ 46 Krizan Milos          12 SK Gala 15 2 107  27  42- 43- 45- 49- 47+ 44- 50+  |10313754
+ 47 Kysilka Petr          15 CZ Zli  14 4 101  52  48+ 49+ 50+ 45- 46- 51+ 41-  |10350483
+ 48 Csermenyi Lilia       16 HU BuPe 14 5  93  62  47- 50+ 52+ 51+ 53+ 49+ 44-  |10449263
+ 49 Krizan Matus          14 SK Gala 13 2 101  27  50- 47- 51+ 46+ 44- 48- 45-  |10337756
+ 50 Pagac Jiri            15 CZ Zli  13 3  91  36  49+ 48- 47- 53- 52+ 54+ 46-  |10398487
+ 51 Milian Robert         17 SK Torn 12 4  83  42  52+ 54+ 49- 48- 57+ 47- 55+  |10533589
+ 52 Szalai Balint         17 HU BuPe 12 4  75  36  51- 57+ 48- 55+ 50- 56+ 58+  |10637341
+ 53 Hodorogea Silvia      19 RO xxx  12 6  69  55  55+ 56+ 54+ 50+ 48- 59+ 60+  |10301324
+ 54 Zincu Cristina        18 RO Brai 11 4  66  29  56+ 51- 53- 58+ 60+ 50- 59+  |10649342
+ 55 Scigulinsky Marian    19 SK SBel 10 4  65  29  53- 58+ 57+ 52- 59+ 60+ 51-  |10513954
+ 56 Jadronova Jarmila     19 SK SBel  9 3  64  20  54- 53- 59+ 60+ 58+ 52- 57-  |10550958
+ 57 Stojar Michal         19 CZ Nym   9 3  63  21  60+ 52- 55- 59+ 51- 58- 56+  |10201763
+ 58 Kuban Luboslav        20 SK SBel  8 3  63  21  59+ 55- 60+ 54- 56- 57+ 52-  |10501062
+ 59 Gonciar Stefania      20 RO Brai 6 1  65   6  58- 60+ 56- 57- 55- 53- 54-  |10674345
+ 60 Lacinova Katarina     19 SK SBel  6 0  65   0  57- 59- 58- 56- 54- 55- 53-  |10549957

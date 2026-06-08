@@ -1,0 +1,99 @@
+; CL[A]
+; EV[European Children Championship]
+; PC[CZ, Praha]
+; DT[2002-03-15,2002-03-16]
+; TC[E020315B]
+; HA[h9]
+; KM[7.5]
+; TM[70]
+;
+;===  GROUP UNDER 12
+;
+  1 Kravec Andrij           2k UA Riv  17 5  78  93   6+/w  2+/b  7-/b 10+/w 15+/w  3+/w  |12350261
+  2 Kashaev Andrej          5k RU 77Mo 17 5  77  94   3+/b  1-/w 13+/w  6+/b  7+/b  4+/b  |12601215
+  3 Kachanovskyj Artem      6k UA Riv  16 4  61  95   2-/w 15+/b  8+/b  5+/w  4+/w  1-/b  |12662870
+  4 Prokop Jan              2k CZ Pra  16 4  60  93  13+/b  9+/w  5+/b  7+/w  3-/b  2-/w  |10433654
+  5 Zakharzhevskyy Andriy   4k UA Riv  16 4  59  91  14+/b  8+/w  4-/w  3-/b 11+/w  9+/b  |12337457
+  6 Podoljak Nikita         8k RU 78SP 16 4  57  91   1-/b 22+/b  9+/w  2-/w 10+/b  7+/w  |12549273
+  7 Coman Gabriela          2k RO Brai 15 3  46  95  15+/b 10+/w  1+/w  4-/b  2-/w  6-/b  |12037630
+  8 Zajcev Igor             4k UA Kyiv 15 3  43  90  11+/w  5-/b  3-/w  9-/b 14+/b 13+/b  |12498376
+  9 Cozan Sorin             5k RO Bist 15 3  42  90  18+/w  4-/b  6-/b  8+/w 12+/w  5-/w  |12513369
+ 10 Noir Baptiste           5k FR 75Pa 15 3  41  89  22+/w  7-/b 11+/b  1-/b  6-/w 12+/w  |12449712
+ 11 Kachanovskyj Mykhajlo   7k UA Riv  15 3  41  87   8-/b 18+/w 10-/w 13+/w  5-/b 15+/b  |12649175
+ 12 Anuta Cristian          10 RO Bist 14 4  52  82   0+   17+/w 14+/b 22+/w  9-/b 10-/b  |12074634
+ 13 Berkelmans Wouter       8k NL Amvn 14 2  27  90   4-/w 14+/w  2-/b 11-/b 18+/b  8-/w  |12574617
+ 14 Shevchuk Taras          6k UA Riv  14 2  26  85   5-/w 13-/b 12-/w 16+/b  8-/w 18+/b  |12374263
+ 15 Vertelev Danila         8k UA Kyiv 14 2  25  88   7-/w  3-/w 22+/b 18+/b  1-/b 11-/w  |12574892
+ 16 Kuipers Zachary         11 NL Leid 13 4  44  71  30+/b 32+/b 21+/w 14-/w 17-/w 22+/b  |12550714
+ 17 Palij Andrij            10 UA Riv  13 3  34  73  32+/w 12-/b 18-/b 21-/w 16+/b 24+/w  |12698598
+ 18 Morozov Alexej          6k RU 77Mo 13 1  13  85   9-/b 11-/b 17+/w 15-/w 13-/w 14-/w  |12701612
+ 19 Sos Miroslav            14 CZ Zli  12 6  55  55  38+/w 42+/b 26+/w 43+/b 31+/w 30+/w  |12498981
+ 20 Mestrovic Stjepan       13 HR VGor 12 5  53  63  24+/w 31+/b 30-/b 29+/b 32+/w 21+/w  |12649307
+ 21 Visser Robbert-Jan      12 NL Leid 12 4  45  70  31+/w 30+/w 16-/b 17+/b 22+/w 20-/b  |12537613
+ 22 Vrabete Adrian          5k RO Drob 12 0   0  84  10-/b  6-/w 15-/w 12-/b 21-/b 16-/w  |12398342
+ 23 Brauerova Barbora       15 CZ Ost  11 6  50  50  71+/b 34+/w 42+/w 35+/b 27+/w 26+/b  |12486980
+ 24 Westhoff Edwald         12 NL Leid 11 3  29  64  20-/b 29-/w 35+/b 32+/w 30+/w 17-/b  |12550615
+ 25 Toma Ruxandra           15 RO Brai 10 5  37  46  50+/b 45+/w 34-/w 51+/b 52+/b 46+/w  |10898987
+ 26 Moldovan Alexandra      14 RO Bist 10 4  36  59  53+/w 27+/b 19-/b 37+/w 29+/w 23-/w  |12474374
+ 27 Lisy Pavol              14 SK Brat 10 4  36  57  46+/b 26-/w 38+/b 28+/w 23-/b 35+/w  |12686597
+ 28 Jansen Jori             14 NL Utre 10 4  34  52  42-/w 44+/b 36+/w 27-/b 43+/w 34+/b  |12674970
+ 29 Karailieva Barbora      13 SK BBys 10 3  28  60  44+/w 24+/b 32-/b 20-/w 26-/b 38+/w  |12013298
+ 30 Welvaert Astrid         12 FR 67SE 10 2  22  70  16-/w 21-/b 20+/w 31+/w 24-/b 19-/b  |12637834
+ 31 Veres Dmitrij           12 UA Riv  10 2  18  64  21-/b 20-/w 43+/w 30-/b 19-/b 32+/b  |12637603
+ 32 Lubos Przemyslaw        11 PL Wodz 10 1  10  69  17-/b 16-/w 29+/w 24-/b 20-/b 31-/w  |12074260
+ 33 Sucic Marko-Ferdo       17 HR VGor  9 6  36  36  81+/b 72+/w 49+/w 53+/b 47+/b 42+/w  |12613403
+ 34 Avram Laura             14 RO Bist 9 3  27  57  35-/w 23-/b 25+/b 44+/w 36+/b 28-/w  |12698620
+ 35 Barta Dan               14 RO Bist 9 3  25  57  34+/b 51+/b 24-/w 23-/w 37+/b 27-/b  |12050643
+ 36 Peica Tudor             14 RO Bist 9 3  24  52  37-/b 46+/w 28-/b 41+/w 34-/w 43+/b  |12486386
+ 37 Ermakov Ilja            14 RU 77Mo  9 3  24  51  36+/w 43-/b 51+/w 26-/b 35-/w 44+/b  |12674596
+ 38 Moldovan Raul           14 RO Bist 9 3  23  55  19-/b 52+/w 27-/w 46+/b 42+/b 29-/b  |12737175
+ 39 Hruby Pavel             18 CZ Zli   8 6  35  35  80+/b 65+/w 48+/w 49+/b 55+/w 47+/b  |12762046
+ 40 Fanta Daniel            17 CZ Nym   8 5  31  38  58+/w 60+/b 47-/w 54+/b 59+/w 52+/b  |10837871
+ 41 Tumpa Tajana            16 HR VGor  8 4  28  45  48+/w 49+/b 53+/w 36-/b 45-/b 51+/w  |12498893
+ 42 Gardus Iulia            14 RO Bist 8 2  17  58  28+/b 19-/w 23-/b 50+/w 38-/w 33-/b  |12662617
+ 43 Mihancea Andrei         14 RO Bist 8 2  16  57  52+/b 37+/w 31-/b 19-/w 28-/b 36-/w  |12698609
+ 44 Moldovan Mihai          14 RO Bist 8 2  15  53  29-/b 28-/w 45+/w 34-/b 51+/b 37-/w  |12786169
+ 45 Galinescu Iulia         14 RO Bist 8 2  15  47  51-/w 25-/b 44-/b 52-/w 41+/w 50+/w  |12537371
+ 46 Huruba Madalina         14 RO Bist 8 2  13  51  27-/w 36-/b 59+/w 38-/w 50+/b 25-/b  |12413390
+ 47 Tracichleb Piotr        17 PL Lazi  7 4  23  40  65+/b 71+/w 40+/b 59+/b 33-/w 39-/w  |12701095
+ 48 Kral Maros              16 SK Kosi  7 3  17  39  41-/b 59-/w 39-/b 72+/w 53+/b 54+/w  |12537041
+ 49 Riard Mathieu           16 FR 38Gr  7 3  16  41  72+/b 41-/w 33-/b 39-/w 58+/w 59+/b  |12874268
+ 50 Shevchuk Sofija         15 UA Riv   7 2  14  48  25-/w 53+/b 52+/w 42-/b 46-/w 45-/b  |12625602
+ 51 Tocianuc Vlad           14 RO Bist 7 1   8  52  45+/b 35-/w 37-/b 25-/w 44-/w 41-/b  |12437392
+ 52 Iudean Paul             14 RO Bist 7 1   8  50  43-/w 38-/b 50-/b 45+/b 25-/w 40-/w  |12886269
+ 53 Moldovan Alexandru      14 RO Bist 7 1   6  47  26-/b 50-/w 41-/b 33-/w 48-/w 60+/b  |12425402
+ 54 Kalinin Kostjantyn      18 UA Kyiv  6 4  19  34  57+/w 58+/b 81+/b 40-/w 71+/b 48-/b  |12898270
+ 55 Swierkot Marcin         18 PL Wodz  6 4  19  33  56+/b 81+/w 71+/w 60+/b 39-/b 58-/w  |12513501
+ 56 Rus Ionut               18 RO Bist 6 4  18  30  55-/w 70+/b 57+/b 81+/w 60-/b 61+/w  |12637614
+ 57 Szychowiak Weronika     18 PL Bydg  6 4  16  28  54-/b 80+/w 56-/w 65+/b 72+/b 71+/w  |12586497
+ 58 Tamas Mihai             17 RO Bist 6 3  15  36  40-/b 54-/w 65+/w 71+/b 49-/b 55+/b  |12686619
+ 59 Mircea Andreea_Cristina  16 RO Bist 6 2  13  43  60+/w 48+/b 46-/b 47-/w 40-/b 49-/w  |13737130
+ 60 Lozovskij Leonid        16 RU 78SP  6 2  10  37  59-/b 40-/w 72+/b 55-/w 56+/w 53-/w  |12549812
+ 61 Gatea Mihai             20 RO Brai 5 5  21  27  66+/b 78+/w 62+/w 67+/b 64+/w 56-/b  |12813273
+ 62 Kriz Martin             20 CZ Ost   5 5  17  22  76+/w 63+/b 61-/b 82+/w 80+/b 68+/w  |12825076
+ 63 Kirillov Vitalij        20 RU 77Mo  5 5  16  21   0+   62-/w 88+/b 80+/b 67+/w 70+/b  |12825274
+ 64 Robotic Tea             20 HR VGor  5 5  15  20  75+/b 82+/w 70+/w 74+/w 61-/b 81+/w  |12598014
+ 65 Deac Bianca             17 RO Bist 5 2   7  34  47-/w 39-/b 58-/b 57-/w 81+/b 72+/w  |12749176
+ 66 Braun Marek             20 CZ Libe  4 4  12  21  61-/w 85+/b 79+/w 69+/b 68-/b 75+/w  |12837275
+ 67 Ondrousek Jakub         20 CZ Brn   4 4  11  21  77+/w 88+/b 68+/w 61-/w 63-/b 76+/b  |12733490
+ 68 Tocacs Cristian         19 RO Bist 4 3  10  23  70-/w 73+/b 67-/b 75+/w 66+/w 62-/b  |12849276
+ 69 Visser Maud             20 NL Leid  4 4  10  17  73-/w 83+/b 82+/b 66-/w 78+/b 74+/w  |12674563
+ 70 Ercsei Gabriel          19 RO Bist 4 3   9  25  68+/b 56-/w 64-/b 84+/w 74+/b 63-/w  |12862278
+ 71 Murza Paul              16 RO Bist 4 0   0  42  23-/w 47-/b 55-/b 58-/w 54-/w 57-/b  |12625613
+ 72 Mizgan Darius           16 RO Bist 4 0   0  40  49-/w 33-/b 60-/w 48-/b 57-/w 65-/b  |12633610
+ 73 Uhnak Petr              20 CZ Pra   3 3   9  19  69+/b 68-/w 75-/b 79+/b 84+/w 80-/w  |12874279
+ 74 Kozhukhov Ivan          20 RU 77Mo  3 3   7  20  87+/b 79+/w 80+/w 64-/b 70-/w 69-/b  |12886280
+ 75 Anonymous#0023 Anonymous  20 NL Leid  3 3   7  20  64-/w 76+/b 73+/w 68-/b 87+/w 66-/b  |12686564
+ 76 Toma Theodor            20 RO Brai 3 3   6  18  62-/b 75-/w 83+/w 86+/b 77+/b 67-/w  |12513754
+ 77 Ivanov Vladislav        20 RU 77Mo  3 3   6  14  67-/b 86-/w 78+/b 88+/w 76-/w 82+/b  |12898281
+ 78 Handzlik Monika         20 PL Biel  3 3   5  17  84+/w 61-/b 77-/w 85+/b 69-/w 87+/b  |12801283
+ 79 Szychowiak Gracjan      20 PL Bydg  3 3   5  15  85+/w 74-/b 66-/b 73-/w 88+/b 84+/w  |12686608
+ 80 Stanescu Alin           18 RO Bist 3 1   3  30  39-/w 57-/b 74-/b 63-/w 62-/w 73+/b  |12033648
+ 81 Todoran Mihai           17 RO Bist 3 0   0  37  33-/w 55-/b 54-/w 56-/b 65-/w 64-/b  |12813284
+ 82 Gaurean Ioana           20 RO Bist 2 2   3  20  83+/w 64-/b 69-/w 62-/b 86+/b 77-/w  |12825285
+ 83 Lamatova Katerina       20 CZ Libe  2 2   3  13  82-/b 69-/w 76-/b 87-/w 85+/w 88+/b  |12837286
+ 84 Westhoff Edger          20 NL Leid  2 2   2  15  78-/b 87+/w 86+/w 70-/b 73-/b 79-/b  |12798291
+ 85 Condrea Roxana          20 RO Bist 2 2   2  14  79-/b 66-/w 87+/b 78-/w 83-/b 86+/w  |12633621
+ 86 Hohenberger Patrik      20 CZ Nym   1 1   3  13  88-/w 77+/b 84-/b 76-/w 82-/w 85-/b  |12850123
+ 87 Blanloeil Victor        20 FR 67SE  1 1   2  15  74-/w 84-/b 85-/w 83+/b 75-/b 78-/w  |12849287
+ 88 Pasichnik Vjacheslav    20 UA Riv   1 1   1  18  86+/b 67-/w 63-/w 77-/b 79-/w 83-/w  |12862289

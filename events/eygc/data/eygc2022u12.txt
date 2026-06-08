@@ -1,0 +1,43 @@
+; TC[T220310C]
+; CL[A]
+; EV[European Youth Go Championship, Under 12]
+; PC[CZ, Praha]
+; DT[2022-03-10,2022-03-12]
+; HA[h9]
+; KM[6.5]
+; TM[80]
+; CM[ (submitted by cieply)]
+;.
+; 
+ 1 Barcza Bende                 3k HU  BPPG  8    6    8    35   5+/w    3+/b    4+/w    2+/b    7+/b    8+/b     |19637948
+ 2 Sulak Alper                  1d TR  Ank   7    5    7    35   9+/w    8+/b    7+/b    1-/w    3+/b    4+/w     |18701034
+ 3 Patrascu Alexandru-Nicolas   9k RO  Hika  6    4    6    37   14+/b   1-/w    5+/b    6+/w    2-/w    10+/b    |18513517
+ 4 Dach Bartolomej              6k CZ  BMik  6    4    6    36   6+/w    12+/b   1-/b    11+/w   9+/w    2-/b     |19574280
+ 5 Sicic Jakov                 11k HR  VGor  6    4    6    32   1-/b    19+/w   3-/w    16+/w   13+/b   9+/b     |19098651
+ 6 Sincari Matei               12k RO  VaDo  6    4    6    31   4-/b    16+/w   8+/w    3-/b    14+/b   7+/w     |19025765
+ 7 Rus Serban                  10k RO  ATSU  5    3    5    35   11+/b   10+/b   2-/w    21+/b   1-/w    6-/b     |19349132
+ 8 Ovsiienko Tymofii            8k UA  Kyiv  5    3    5    33   15+/b   2-/w    6-/b    29+/b   11+/w   1-/w     |18662325
+ 9 Bondar Ihnat                11k UA  Kyiv  5    3    5    33   2-/b    17+/b   12+/w   10+/w   4-/b    5-/w     |19650026
+10 Savytskyi Avhust             7k UA  Kyiv  5    3    5    31   13+/b   7-/w    15+/w   9-/b    12+/b   3-/w     |19237185
+11 Volovich Andrew              7k UK  CamC  5    3    5    29   7-/w    14+/w   13+/b   4-/b    8-/b    26+/w    |19549365
+12 Kudla Lukasz                10k UK  Edin  5    3    5    29   17+/w   4-/w    9-/b    15+/b   10-/w   20+/b    |19498798
+13 Sincari Luca                12k RO  VaDo  5    3    5    28   10-/w   22+/b   11-/w   17+/b   5-/w    18+/b    |19013764
+14 Iugulescu Eduard-Andrei     14k RO  Cluj  5    3    5    28   3-/w    11-/b   25+/b   22+/w   6-/w    16+/b    |18549652
+15 Ifj_Kis-Gado Csaba          12k HU  BPPG  5    3    5    27   8-/w    20+/b   10-/b   12-/w   23+/w   17+/b    |18913983
+16 Hu Lilly                    19k AT  Wien  4    3    4    28   24+/w   6-/b    18+/w   5-/b    19+/b   14-/w    |19737641
+17 Grosu Eduard-Gabriel        15k RO  Hika  4    2    4    27   12-/b   9-/w    20+/b   13-/w   27+/b   15-/w    |18474709
+18 Barcza Bora                 20k HU  BPPG  4    3    4    24   19-/b   23+/w   16-/b   25+/w   22+/b   13-/w    |19786371
+19 Ghetu Denis_Mihai           17k RO  Cluj  4    3    4    23   18+/w   5-/b    21-/w   26+/b   16-/w   28+/b    |19525605
+20 Adamek Petr                 20k CZ  APmG  4    3    4    23   25+/b   15-/w   17-/w   30+/b   21+/b   12-/w    |19574940
+21 Oprisan Anastasia_Georgia   19k RO  VaDo  4    3    4    22   22-/w   28+/b   19+/b   7-/w    20-/w   24+/w    |19549420
+22 Bruckner Albert             20k RO  VaDo  4    3    4    21   21+/b   13-/w   24+/b   14-/b   18-/w   32+/w    |19674193
+23 Sincari Maria               23k RO  VaDo  4    4    4    21   26+/b   18-/b   27+/w   24+/w   15-/b   25+/w    |19586413
+24 Derencin Irena              20k HR  GKIN  3    2    3    21   16-/b   27+/w   22-/w   23-/b   28+/w   21-/b    |19798504
+25 Marz Larissa                20k DE  JIGS  3    2    3    21   20-/w   31+/b   14-/w   18-/b   30+/w   23-/b    |18413945
+26 Kis-Gado David              25k HU  BPPG  3    3    3    19   23-/w   30+/w   31+/b   19-/w   29+/b   11-/b    |19737894
+27 Sicic Judita                22k HR  VGor  3    3    3    15   32+/w   24-/b   23-/b   31+/w   17-/w   29+/b    |19486709
+28 Naumenko Sofiia             20k UA  Kyiv  2    2    2    15   30+/b   21-/w   29-/b   32+/w   24-/b   19-/w    |18974648
+29 Pittner Lena                20k DE  B     2    2    2    15   31-/b   32+/b   28+/w   8-/w    26-/w   27-/w    |18213140
+30 Hu Cherry                   28k AT  Wien  2    2    2    14   28-/w   26-/b   32+/w   20-/w   25-/b   31+/b    |19786745
+31 Yeromin Tykhon              20k UA  Kyiv  2    2    2    13   29+/w   25-/w   26-/w   27-/b   32+/b   30-/w    |19833506
+32 Yeromin Tymur               20k UA  Kyiv  0    0    0    15   27-/b   29-/w   30-/b   28-/b   31-/w   22-/b    |19801507

@@ -1,0 +1,51 @@
+; TC[T220310A]
+; CL[A]
+; EV[European Youth Go Championship, Under 20]
+; PC[CZ, Praha]
+; DT[2022-03-10,2022-03-12]
+; HA[h9]
+; KM[6.5]
+; TM[80]
+; CM[ (submitted by cieply)]
+;.
+; 
+ 1 Pittner Arved             5d DE  B     12   6    12   59   12+/w   6+/b    2+/b    3+/b    4+/w    8+/w     |16398371
+ 2 Bernardis Davide          4d IT  Rave  11   5    11   57   17+/w   5+/b    1-/w    18+/w   7+/b    3+/w     |17886946
+ 3 Dobranis Denis            4d RO  ATSU  10   4    10   61   9+/b    7+/b    4+/w    1-/w    5+/w    2-/b     |15350038
+ 4 Gigoi George              2d RO  Hika  10   4    10   57   13+/w   15+/w   3-/b    8+/b    1-/b    10+/w    |17049043
+ 5 Wilhelm Lubin             1d FR  69Ly  10   4    10   56   14+/w   2-/w    16+/b   10+/w   3-/b    11+/b    |18662391
+ 6 Cinar Emre                2d DE  RAT   10   4    10   54   22+/b   1-/w    11-/b   17+/w   9+/b    7+/w     |17050957
+ 7 Robichon Benoit           1d FR  38Gr  9    3    9    58   10+/b   3-/w    12+/b   11+/w   2-/w    6-/b     |17649764
+ 8 Stanciu Antonia           3k RO  Hika  9    4    9    55   21+/w   14+/b   15+/w   4-/w    19+/b   1-/b     |17649830
+ 9 Defer Leon                1k CZ  Imba  9    3    9    54   3-/w    10-/b   20+/b   12+/w   6-/w    19+/b    |16413650
+10 Szychowiak Marianna       2k PL  Bydg  9    3    9    54   7-/w    9+/w    13+/b   5-/b    25+/w   4-/b     |16725709
+11 Donle Isabel              2d DE  B     9    3    9    53   15-/b   23+/b   6+/w    7-/b    14+/w   5-/w     |16837359
+12 Vasova Dita               1d CZ  APmG  9    3    9    52   1-/b    22+/w   7-/w    9-/b    24+/w   16+/b    |15749921
+13 Dusanic Vuk               2k RS  NiSt  9    3    9    51   4-/b    18+/w   10-/w   19-/b   21+/b   17+/w    |17837765
+14 Litovkin Rostislav        2k CZ  APmG  9    3    9    51   5-/b    8-/w    24+/b   16+/w   11-/b   15+/w    |17533230
+15 Popov Robin               2k CZ  TFMi  8    2    8    52   11+/w   4-/b    8-/b    21-/w   23+/b   14-/b    |18386126
+16 Marz Ferdinand            3k DE  JIGS  8    3    8    52   19+/w   17+/b   5-/w    14-/b   20+/b   12-/w    |16213659
+17 Kralik Ondrej             1k SK  Kosi  8    2    8    51   2-/b    16-/w   27+/w   6-/b    18+/w   13-/b    |16350279
+18 Shamoon Spike             4k UK  LonC  8    3    8    50   20+/w   13-/b   23+/w   2-/b    17-/b   25+/b    |17249639
+19 Reti Zoltan               3k HU  PaGo  8    3    8    49   16-/b   25+/w   22+/b   13+/w   8-/w    9-/w     |18237901
+20 Doruch Cyprian            4k PL  Wroc  8    3    8    47   18-/b   21+/w   9-/w    24+/b   16-/w   23+/b    |18725927
+21 Vasilescu Maria           5k RO  Hika  8    3    8    46   8-/b    20-/b   28+/w   15+/b   13-/w   22+/w    |17033973
+22 Smith Edmund              2k UK  Camb  7    1    7    47   6-/w    12-/b   19-/w   25-/b   29+/w   21-/b    |16462028
+23 Simon Peter               5k HU  PaGo  7    2    7    47   24+/b   11-/w   18-/b   26+/w   15-/w   20-/w    |17062617
+24 Mesesan Daria-Maria       6k RO  ATSU  7    2    7    45   23-/w   26+/b   14-/w   20-/w   12-/b   27+/b    |19637189
+25 Heidel David              7k RO  VaDo  7    3    7    44   27+/w   19-/b   26+/b   22+/w   10-/b   18-/w    |18313724
+26 Ungureanu Eduard-Teodor   7k RO  VaDo  7    3    7    36   28+/b   24-/w   25-/w   23-/b   27+/w   30+/b    |18086134
+27 Asanovic Marijan          7k DE  B     5    1    5    39   25-/b   30+/w   17-/b   29-/w   26-/b   24-/w    |17049890
+28 Bednarska Julia           8k PL  Toru  5    2    5    31   26-/w   31-/b   21-/b   32-/w   39+/b   34+/w    |16733706
+29 Baldwin David            10k UK  Ltch  5    4    5    31   34+/w   32+/b   30+/w   27+/b   22-/b   31-/w    |18225053
+30 Chelariu Stefan-Antonio   9k RO  VaDo  5    3    5    29   32+/w   27-/b   29-/b   38+/w   31+/w   26-/w    |18325725
+31 Radulescu Horatiu        10k RO  Cluj  5    4    5    26   37+/b   28+/w   33-/b   35+/w   30-/b   29+/b    |16598098
+32 Marosan Emma              9k RO  Hika  5    3    5    23   30-/b   29-/w   37+/b   28+/b   34-/w   39+/w    |17013051
+33 Volovich Julia           11k UK  Camb  5    5    5    17   36+/b   37-/w   31+/w   40+/b   35+/b   38+/b    |19050075
+34 Oprisan Elena-Alexandra  10k RO  VaDo  4    3    4    24   29-/b   36+/w   35-/w   37+/b   32+/b   28-/b    |18498612
+35 Voicu Alexandru          12k RO  Hika  4    4    4    19   39+/w   38+/b   34+/b   31-/b   33-/w   40+/w    |17086058
+36 Platonycev Ivan          12k CZ  APmG  3    3    3    16   33-/w   34-/b   40+/w   39-/b   38+/w   37+/w    |18449937
+37 Zagon Hanna              10k HU  BPPG  2    1    2    23   31-/w   33+/b   32-/w   34-/w   40-/b   36-/b    |18562203
+38 Bocan Vojtech            13k CZ  APmG  2    2    2    20   40+/b   35-/w   39+/w   30-/b   36-/b   33-/w    |19401327
+39 Fousek Richard           14k CZ  ULou  2    2    2    20   35-/b   40+/w   38-/b   36+/w   28-/w   32-/b    |19725684
+40 Macovei Stefana          13k RO  VaDo  1    1    1    18   38-/w   39-/b   36-/b   33-/w   37+/w   35-/b    |19074759

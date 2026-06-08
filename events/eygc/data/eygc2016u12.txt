@@ -1,0 +1,70 @@
+; TC[E160325B]
+; CL[A]
+; EV[European Youth Go Championship (under 12)]
+; PC[RS, Subotica]
+; DT[2016-03-25,2016-03-27]
+; HA[h9]
+; KM[8]
+; TM[90]
+; CM[ (submitted by Dubakovic)]
+;.
+ 1 Arsinoaia Ioan_Alexandru   2k RO  Tims  14   6    72   411  8+/w    6+/b    5+/w    2+/b    4+/b    3+/w     |16213263
+ 2 Shalneva Virzhinia         2k RU  50Zh  13   5    69   410  13+/b   3+/b    7+/w    1-/w    11+/b   9+/w     |16325034
+ 3 Prikarev Nikita            5k RU  77Mo  12   4    71   405  16+/b   2-/w    8+/b    9+/w    6+/w    1-/b     |16086851
+ 4 Klochikhin Ivan            5k RU  59So  12   4    68   404  10+/b   5-/b    14+/w   7+/b    1-/w    15+/b    |16501078
+ 5 Klochikhina Valeria        2k RU  59So  12   4    68   401  19+/b   4+/w    1-/b    11-/w   10+/b   7+/w     |16513068
+ 6 Krajnov Jaroslav           6k RU  77Mo  12   4    67   402  14+/b   1-/w    17+/w   13+/b   3-/b    8+/b     |16349036
+ 7 Pishchalnikov Artemij      3k RU  59So  11   3    69   394  9+/b    12+/w   2-/b    4-/w    17+/w   5-/b     |16549071
+ 8 Billege Boaz               9k HU  BuPe  11   3    68   397  1-/b    16+/w   3-/w    19+/b   12+/b   6-/w     |17433592
+ 9 Krushelnytska Polina      10k UA  Rivn  11   3    67   404  7-/w    15+/b   10+/w   3-/b    13+/w   2-/b     |16737875
+10 Tarasov Ruslan            12k RU  16Kz  11   3    65   390  4-/w    18+/w   9-/b    14+/b   5-/w    16+/b    |17513705
+11 Marz Ferdinand            12k DE  J     11   3    65   382  12-/b   14-/w   18+/b   5+/b    2-/w    20+/w    |16213659
+12 Smith Edmund               7k UK  MilS  11   3    63   398  11+/w   7-/b    13-/w   15+/b   8-/w    14+/b    |16462028
+13 Dottan Immanuel            8k DE  B     10   2    66   387  2-/w    19+/b   12+/b   6-/w    9-/b    18-/w    |16749106
+14 Kavun Andrii              12k UA  Rivn  10   2    66   379  6-/w    11+/b   4-/b    10-/w   21+/w   12-/w    |17225461
+15 Ovsiienko Vsevolod        14k UA  Kyiv  10   3    64   378  17+/b   9-/w    16+/b   12-/w   18+/b   4-/w     |17633902
+16 Medak Robert              11k HR  Zagr  10   2    62   379  3-/w    8-/b    15-/w   22+/b   19+/w   10-/w    |16501716
+17 Vasilescu Maria           13k RO  CSOV  10   3    59   371  15-/w   23+/w   6-/b    20+/b   7-/b    19+/w    |17033973
+18 Monate Phileas            13k FR  92An  10   3    59   369  20+/w   10-/b   11-/w   23+/b   15-/w   13+/b    |17062540
+19 Rotarita Stefan_Adrian     8k RO  Boto  9    1    62   380  5-/w    13-/w   20+/b   8-/w    16-/b   17-/b    |17837270
+20 Vochescu Alexandra        13k RO  Drob  9    2    57   348  18-/b   21+/w   19-/w   17-/w   23+/b   11-/b    |16886925
+21 Goschler Aron             15k HU  BuPe  9    3    51   316  28+/w   20-/b   22-/w   24+/b   14-/b   25+/w    |16333614
+22 Lysenko Yehor             17k UA  Kyiv  9    5    49   289  27+/b   29+/w   21+/b   16-/w   30+/b   24+/w    |17625608
+23 Stanciu Antonia           15k RO  CSOV  8    2    52   314  29+/w   17-/b   24+/b   18-/w   20-/w   26-/b    |17649830
+24 Ivanov Maxim              16k RU  78SP  8    3    49   291  25+/b   28+/b   23-/w   21-/w   26+/w   22-/b    |17098389
+25 Riedeman Emil             16k NL  Delf  8    3    47   279  24-/w   26-/b   27+/w   29+/b   28+/w   21-/b    |15886607
+26 Vykhrystiuk Oleksandra    18k UA  Rivn  8    5    44   268  30+/w   25+/w   34+/b   28+/b   24-/b   23+/w    |17437508
+27 Kavun Dmytro              17k UA  Rivn  8    4    41   261  22-/w   31+/w   25-/b   44+/b   29+/w   28+/b    |17213460
+28 Miu Stefan                15k RO  Drob  7    1    48   278  21-/b   24-/w   29+/b   26-/w   25-/b   27-/w    |17362345
+29 Volkov Platon             15k RU  78SP  7    1    46   275  23-/b   22-/b   28-/w   25-/w   27-/b   31+/b    |17049307
+30 Medak Stjepan             18k HR  Zagr  7    4    40   230  26-/b   37+/w   33+/b   31+/w   22-/w   32+/w    |17437574
+31 Shalnev Svjatoslav        18k RU  77Mo  6    3    38   220  33+/w   27-/b   45+/w   30-/b   35+/b   29-/w    |17337298
+32 Azbel Alesja              19k RU  78SP  6    4    34   190  36-/b   42+/w   47+/w   34+/w   33+/b   30-/b    |17437068
+33 Mocofan Alexandru_Andrei  18k RO  Drob  6    3    33   199  31-/b   35+/b   30-/w   47+/w   32-/w   45+/b    |17325341
+34 Oprican Andrei            19k RO  Drob  6    4    32   195  38+/b   44+/w   26-/w   32-/b   46+/w   40+/b    |17825159
+35 Krist Tomas               19k CZ  BMik  6    4    32   182  50+/b   33-/w   40+/w   36+/b   31-/w   38+/b    |17533549
+36 Radenkovic Stasa          20k RS  NiPr  6    5    32   178  32+/w   43+/w   37+/b   35-/w   41+/b   39+/b    |17813356
+37 Popescu Melania           19k RO  Drob  5    3    32   182  40+/w   30-/b   36-/w   42+/b   38-/w   47+/b    |17374346
+38 Gajic Nemanja             19k RS  NiPr  5    3    30   172  34-/w   46+/b   39-/w   51+/b   37+/b   35-/w    |17849359
+39 Vazquez_jr Aurelio        20k ES  Nam   5    4    28   155  46-/w   53+/b   38+/b   43+/w   48+/b   36-/w    |17825764
+40 Milojkovic Danica         19k RS  NiPr  5    3    27   176  37-/b   56+/w   35-/b   55+/w   44+/b   34-/w    |17862361
+41 Kristova Veronika         20k CZ  BMik  5    4    27   157  42-/b   50+/w   46+/b   45+/b   36-/w   49+/b    |17586723
+42 Dusanic Vuk               20k RS  NiPr  5    4    26   173  41+/w   32-/b   56+/b   37-/w   54+/w   44+/b    |17837765
+43 Radic Ognjen              19k RS  NiPr  5    3    25   163  44-/w   36-/b   54+/b   39-/b   57+/w   48+/w    |17850360
+44 Zanfir Alexandru_Gabriel  19k RO  Drob  4    2    33   173  43+/b   34-/b   49+/w   27-/w   40-/w   42-/w    |17337342
+45 Nikolic Filip             20k RS  NiPr  4    3    28   165  57+/w   48+/b   31-/b   41-/w   51+/b   33-/w    |17825357
+46 Tomic Jovan               20k RS  NiPr  4    3    27   164  39+/b   38-/w   41-/w   56+/w   34-/b   54+/w    |17898364
+47 Ilic Dimitrije            20k RS  NiPr  4    3    27   162  52+/b   55+/w   32-/b   33-/b   58+/w   37-/w    |17874362
+48 Similaru Bianca           20k RO  Drob  4    3    24   145  59+/b   45-/w   50+/b   49+/w   39-/w   43-/b    |17833167
+49 Milivojevic Aleksandra    20k RS  NiPr  4    3    22   152  54+/w   58+/b   44-/b   48-/b   55+/w   41-/w    |17898375
+50 Vlajkovic Aleksandar      19k RS  NiPr  4    2    22   144  35-/w   41-/b   48-/w   57-/w   60+/b   58+/b    |17313340
+51 Pittner Arwen             20k DE  B     4    3    21   143  55-/b   52+/w   57+/b   38-/w   45-/w   59+/b    |16437201
+52 Zivkovic Marija           20k RS  NiPr  4    3    19   139  47-/w   51-/b   59+/w   54-/b   56+/b   55+/w    |17874769
+53 Jovanovic Iva             20k RS  NiPr  4    3    17   132  56-/b   39-/w   60+/w   58-/b   59+/w   57+/b    |17837358
+54 Popa Florin               20k RO  Drob  3    2    24   139  49-/b   59+/w   43-/w   52+/w   42-/b   46-/b    |17837160
+55 Bojanic Lenka             20k RS  SpSu  3    2    24   136  51+/w   47-/b   58+/w   40-/b   49-/b   52-/b    |17862768
+56 Mesarosova Petra          20k SK  DoSt  3    2    23   135  53+/w   40-/b   42-/w   46-/b   52-/w   60+/b    |17533560
+57 Mihai Alexandru           20k RO  Drob  3    2    22   132  45-/b   60+/w   51-/w   50+/b   43-/b   53-/w    |17850162
+58 Ivanov Kirill             20k RU  78SP  3    2    20   131  60+/b   49-/w   55-/b   53+/w   47-/b   50-/w    |17433581
+59 Bojanic Nevena            20k RS  SpSu  2    1    20   124  48-/w   54-/b   52-/b   60+/w   53-/b   51-/w    |17874780
+60 Stojanovic Stefan         20k RS  SpSu  1    0    19   124  58-/w   57-/b   53-/b   59-/b   50-/w   56-/w    |17886781

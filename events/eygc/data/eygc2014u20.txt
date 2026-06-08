@@ -1,0 +1,24 @@
+; TC[T140301H]
+; CL[A]
+; EV[European Youth Go Championship (under 20)]
+; PC[UK, Bognor Regis]
+; DT[2014-03-01,2014-03-03]
+; HA[h9]
+; KM[7.5]
+; TM[90]
+; CM[ (submitted by geoffkaniuk)]
+;.
+;McMahon Bar 1d  players 12
+;POSN NAME                       GR CO CLU    MMS WIN     SOS  NONE        1         2         3         4         5         6  
+ 1 Podpera Lukas         6d CZ  APWS  36   6    201  0    7+/w0   4+/b0   2+/w0   3+/b0   5+/b0   6+/b0    |13201914
+ 2 Welticke Jonas        4d DE  BN    34   4    203  0    9+/b0   5+/w0   1-/b0   8+/w0   3+/w0   4-/b0    |15786287
+ 3 Le_Calve Tanguy       5d FR  44Na  34   4    202  0    8+/b0   6+/b0   7+/w0   1-/w0   2-/b0   5+/w0    |14962706
+ 4 Vashurov Alexandr     4d RU  16Kz  34   4    201  0    10+/b0  1-/w0   5-/b0   9+/w0   8+/b0   2+/w0    |13062764
+ 5 Karadaban Denis       3d FR  38Gr  33   3    202  0    11+/w0  2-/b0   4+/w0   6+/b0   1-/w0   3-/b0    |15637314
+ 6 Miljutkin Dmitrij     4d RU  16Kz  33   3    199  0    12+/b0  3-/w0   9+/b0   5-/w0   7+/b0   1-/w0    |14786772
+ 7 Lextrait Cesar        2d FR  13Ma  33   3    196  0    1-/b0   10+/w0  3-/b0   11+/w0  6-/w0   12+/b0   |15462271
+ 8 Richard Xavier        1d FR  64Ba  33   3    195  0    3-/w0   12+/w0  10+/b0  2-/b0   4-/w0   11+/b0   |14662076
+ 9 Schomberg Niels       1d DE  MEE   33   3    194  0    2-/w0   11+/b0  6-/w0   4-/b0   12+/w0  10+/b0   |14837075
+10 Kriese Anton          2k DE  J     32   2    194  0    4-/w0   7-/b0   8-/w0   12+/b0  11+/b0  9-/w0    |15050794
+11 Mangin Matthias       6k FR  38GJ  31   1    194  0    5-/b0   9-/w0   12+/b0  7-/b0   10-/w0  8-/w0    |16074157
+12 Moll Lennard          4k NL  DHaa  30   0    195  0    6-/w0   8-/b0   11-/w0  10-/w0  9-/b0   7-/w0    |16749634

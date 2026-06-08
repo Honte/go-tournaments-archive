@@ -1,0 +1,37 @@
+; TC[E211015C]
+; CL[A]
+; EV[European Youth Go Championship - Under 20]
+; PC[XX, Online Go Server]
+; DT[2021-10-15,2021-10-17]
+; HA[h9]
+; KM[6.5]
+; TM[82.5]
+; CM[30x3 byoyomi (submitted by HIGOU)]
+;.
+ 1 Vazquez Oscar                 6d ES  Pant  26   6    26   142  846  12+/w   5+/b    7+/b    2+/b    4+/w    3+/w     |15633673
+ 2 Pittner Arved                 5d DE  B     25   5    25   143  839 13+/w   3+/b    6+/b    1-/w    5+/w    8+/b     |16398371
+ 3 Mezin Savva                   4d RU  77Mo  24   4    24   144  836  8+/b    2-/w    9+/b    11+/w   6+/w    1-/b     |16086840
+ 4 Ougier Guillaume              4d FR  92An  24   4    24   140  835  14+/b   6-/w    8+/w    7+/b    1-/b    9+/w     |15762186
+ 5 Jakovlev-Chernyshev Vasilij   4d RU  77Mo  24   4    24   140  829 15+/b   1-/w    14+/w   10+/b   2-/b    7+/w     |17674305
+ 6 Grigoriu Elian_Ioan           5d RO  ATAR  24   4    24   139  835 9+/b    4+/b    2-/w    14+/w   3-/b    13+/b    |15974420
+ 7 Demenshin Rakhmat             4d RU  50SP  23   3    23   141  821 18+/b   10+/w   1-/w    4-/w    12+/b   5-/b     |16986354
+ 8 Robichon Benoit               1k FR  38Gr  23   3    23   139 822  3-/w    16+/b   4-/b    15+/w   11+/b   2-/w     |17649764
+ 9 Krajnov Anton                 2d RU  77Mo  23   3    23   138 823 6-/w    13+/b   3-/w    16+/b   10+/w   4-/b     |16098852
+10 Dobranis Denis                4d RO  ATSU  23   3    23   136 820 11+/w   7-/b    16+/w   5-/w    9-/b    12+/w    |15350038
+11 Medak Mirta                   2d HR  Sred  23   3    23   134  813  10-/b   12+/w   15+/b   3-/b    8-/w    19+/w    |16525718
+12 Shalneva Virzhinia            3d RU  50Zh  22   2    22   138  813  1-/b    11-/b   17+/w   13+/w   7-/w    10-/b    |16325034
+13 Klochikhina Valeria           2d RU  59So  22   2    22   135  808  2-/b    9-/w    20+/b   12-/b   14+/w   6-/w     |16513068
+14 Gerloff Roman                 1d DE  HH    21   1    21   135  792 4-/w    21+/w   5-/b    6-/b    13-/b   17-/w    |19386257
+15 Lebedev Arkadij               1d RU  50Zh  22   1    21   132  778 5-/w    18+/b   11-/w   8-/b    0=      0=       |18398589
+16 Dusanic Vuk                   2k RS  NiPr  21  2    21   129  767 17+/b   8-/w    10-/b   9-/w    20+/w   0=       |17837765
+17 Jakimova Alena                2k RU  77Mo  21   2    21   124 753 16-/w   20-/b   12-/b   21+/w   19-/w   14+/b    |18374037
+18 Rudova Ljubov                 2k RU  49Ma  22   0    20   125  753  7-/w    15-/w   0=      0=      0=      0=       |17550148
+19 Yildirim Ufuk_Emre            6k TR  Ist   20   5    20   123  665  23+/b   22+/w   21+/b   20+/w   17+/b   11-/b    |17350432
+20 Billege Boaz                  3k HU  xxxx  20   2    20   114 709  21-/b   17+/w   13-/w   19-/b   16-/b   26+/w    |17433592
+21 Goschler Aron                 4k HU  BPBS  20   3    20   114  682  20+/w   14-/b   19-/w   17-/b   23+/b   24+/w    |16333614
+22 Simon Peter                   6k HU  BPXI  20   5    20   83  555  24+/w   19-/b   23+/w   26+/b   27+/b   25+/w    |17062617
+23 Ustjuzhina Veronika           5k RU  49Ma  19   3    19   94  574 19-/w   24+/b   22-/b   25+/w   21-/w   27+/b    |17250497
+24 Mesesan Daria-Maria          10k RO  ATSU  13   2    13   90  539  22-/b   23-/w   26+/b   27+/w   25-/b   21-/b    |19637189
+25 Baldwin David                10k UK  Ltch  13  2    13   81   500 26-/b   0=      27+/w   23-/b   24+/w   22-/b    |18225053
+26 Baratbaev Ilim               14k KG  xxxx  10   3    10   83  535 25+/w   27+/b   24-/w   22-/w   0+      20-/b    |19733758
+27 Inomjonov Burkhonjon         14k KG  Seng  8    1    8    82  515 0+      26-/w   25-/b   24-/b   22-/w   23-/w    |19674963

@@ -1,0 +1,59 @@
+; TC[E130308B]
+; CL[A]
+; EV[European Youth Go Championship (under 16)]
+; PC[HU, Budapest]
+; DT[2013-03-08,2013-03-10]
+; HA[h9]
+; KM[6.5]
+; TM[90]
+; CM[ (submitted by retesz)]
+;.
+;EYGC2013 - U16 - After Round 6
+;Place Name Rank Country Rating Score 1 2 3 4 5 6 Points SODOS SOS SOSOS
+ 1 Popov Stepan               3d RU  16Kz  18   2+/w    9+/b    5+/b    7+/w    4+/b    3-/w    5    84   101  589   |14625897
+ 2 State Silvestru            1d RO  LocB  18   1-/b    15+/b   12+/w   17+/w   3+/w    9+/b    5    77   95   5791  |15362039
+ 3 Kajmin Vjacheslav          2d RU  50Zh  17   7+/w    4-/b    8+/w    5+/w    2-/b    1+/b    4    67   102  587   |14986257
+ 4 Yeroshkin Oleksandr        1d UA  Rivn  17   8+/b    3+/w    7-/b    9+/b    1-/w    10+/b   4    64   98   586   |13649108
+ 5 Miljutkin Dmitrij          3d RU  16Kz  17   12+/w   13+/b   1-/w    3-/b    8+/b    7+/w    4    62   97   591   |14786772
+ 6 Pylypchuk Andrii           5k UA  Rivn  16   10+/b   12-/b   11+/w   8-/w    14+/b   13+/w   4    60   91   555   |15025175
+ 7 Dobranis Darius            2k RO  Bist  16   3-/b    11+/w   4+/w    1-/b    13+/w   5-/b    3    47   99   578   |15049716
+ 8 Fionin Grigorij            4d RU  78SP  16   4-/w    14+/w   3-/b    6+/b    5-/w    12+/b   3    46   97   577   |16013096
+ 9 Verteletskyi Vladyslav     1d UA  Rivn  16   14+/b   1-/w    13+/b   4-/w    12+/w   2-/w    3    45   98   577   |15325145
+10 Fajszi Bulcsu              7k HU  BuPe  15   6-/w    18+/w   15-/b   22+/b   17+/b   4-/w    3    41   89   5391  |16398250
+11 Matolcsi David             6k HU  BuPe  15   22+/w   7-/b    6-/b    14-/w   25+/w   17+/b   3    39   86   5321  |15913953
+12 Havelka Samuel             2k CZ  TOst  15   5-/b    6+/w    2-/b    15+/w   9-/b    8-/w    2    31   98   569   |15662372
+13 Aminov Adel                1d RU  16Kz  15   15+/b   5-/w    9-/w    19+/b   7-/b    6-/b    2    29   94   559   |14601895
+14 Csizmadia Robert           3k HU  BuPe  15   9-/w    8-/b    17-/b   11+/b   6-/w    18+/w   2    29   91   5451  |14925416
+15 Heaulme Melissa            3k FR  44NE  15   13-/w   2-/w    10+/w   12-/b   18-/b   19+/w   2    29   91   543   |14574824
+16 Vavryk Anastasiia         12k UA  Rivn  14   21+/w   27+/b   19-/b   23+/w   24+/b   22+/w   5    61   75   451   |15813369
+17 Tomek Vojtech             10k CZ  TFMi  14   20+/b   22+/w   14+/w   2-/b    10-/w   11-/w   3    411  891  516   |14537864
+18 Vasa Vojtech              10k CZ  APmG  14   19+/w   10-/b   22-/b   24+/w   15+/w   14-/b   3    41   84   511   |15762923
+19 Petrov Daniil             10k RU  78SP  14   18-/b   25+/b   16+/w   13-/w   22+/w   15-/b   3    39   83   506   |15798618
+20 Buhai Calin               10k RO  Bist  131  17-/w   -       -       -       -       -       0    0    69   4191  |14037496
+21 Turan Andras              12k HU  BuPe  13   16-/b   23+/w   27+/b   25-/w   28+/w   26+/b   4    44   70   422   |15837371
+22 Rapai Andras_Noriyuki      9k HU  BuPe  13   11-/b   17-/b   18+/w   10-/w   19-/b   16-/b   1    14   86   5061  |13762254
+23 Praus Jan                 13k CZ  APmG  12   28+/w   21-/b   26+/b   16-/b   27+/w   25+/w   4    44   71   421   |15733916
+24 Tomsu Adriana             12k CZ  TFMi  12   27-/w   29+/w   25+/b   18-/b   16-/w   28+/b   3    32   71   437   |16225396
+25 Pruckoj Evgenij           11k RU  78SP  12   29+/b   19-/w   24-/w   21+/b   11-/b   23-/b   2    23   76   444   |15701136
+26 Kollner Dora              14k HU  BuPe  11   38+/b   28+/b   23-/w   29+/w   31+/b   21-/w   4    36   61   376   |15686792
+27 Toth Viktor               12k HU  BuPe  11   24+/b   16-/w   21-/w   28-/b   23-/b   30+/w   2    21   70   408   |16333251
+28 Jansky Dusan              13k CZ  APmG  10   23-/b   26-/w   29+/b   27+/w   21-/b   24-/w   2    21   69   406   |15862946
+29 Riedeman Marcel           12k NL  Delf  10   25-/w   24-/b   28-/w   26-/b   30-/w   31+/b   1    9    63   381   |14601378
+30 Defer Tristan             16k CZ  Brno  9    31-/w   37+/b   32+/b   38+/w   29+/b   27-/b   4    32   52   325   |16486074
+31 Weigmann Arved            16k DE  P     9    30+/b   32+/b   38+/w   34+/w   26-/w   29-/w   4    31   52   313   |15713379
+32 Meshcherjakova Alexandra  16k RU  50Kr  8    37+/b   31-/w   30-/w   33-/b   39+/w   38+/b   3    20   45   283   |15937713
+33 Jacimovic Mihailo         18k RS  300   7    39-/b   35+/w   36+/w   32+/w   34-/b   37+/b   4    29   42   247   |16786891
+34 Vuk Darko                 18k RS  NiPr  7    41+/b   39+/w   40+/b   31-/b   33+/w   35-/w   4    25   41   235   |16525410
+35 Biro Norbert              18k HU  Hejo  7    36-/w   33-/b   45+/b   41+/w   44+/w   34+/b   4    21   35   205   |16349806
+36 Ulbricht Tobias           17k DE  P     7    35+/b   38-/w   33-/b   37-/w   40+/w   39+/b   3    19   40   248   |15833873
+37 Antonijevic Nemanja       16k RS  BGmp  7    32-/w   30-/w   39-/b   36+/b   38+/b   33-/w   2    14   44   272   |15233119
+38 Kushnir Feliks            15k UA  Rivn  7    26-/w   36+/b   31-/b   30-/b   37-/w   32-/w   1    7    51   294   |15937856
+39 Kupcsok Andras            18k HU  Hejo  6    33+/w   34-/b   37+/w   40+/b   32-/b   36-/w   3    20   42   246   |16350807
+40 Vukas Nikola              18k RS  NiPr  6    43+/b   41+/w   34-/w   39-/w   36-/b   46+/w   3    14   34   204   |16513420
+41 Medak Mirta               18k HR  Zagr  6    34-/w   40-/b   43+/w   35-/b   47+/w   44+/b   3    10   30   1891  |16525718
+42 Balogh Krisztian          20k HU  Hejo  51   -       47+/w   46+/b   44-/w   43+/b   45+/b   4    13   18   1361  |16313814
+43 Szakal Dorina             19k HU  Hejo  5    40-/w   46+/b   41-/b   45+/w   42-/w   47+/b   3    8    251  1601  |16713543
+44 Ujvari Beata              20k HU  Hejo  4    46+/w   45-/b   47+/w   42+/b   35-/b   41-/w   3    91   261  1611  |16786561
+45 Rusz Ferenc               20k HU  Hejo  4    47+/b   44+/w   35-/w   43-/b   46+/b   42-/w   3    8    251  158   |16749546
+46 Cserep Dominika_Sara      19k HU  Sume  3    44-/b   43-/w   42-/w   47+/b   45-/w   40-/b   1    1    251  157   |15650965
+47 Kurucz Henrietta          20k HU  Hejo  1    45-/w   42-/b   44-/b   46-/w   41-/b   43-/w   0    0    271  151   |16774538

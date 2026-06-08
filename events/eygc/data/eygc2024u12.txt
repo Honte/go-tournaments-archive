@@ -1,0 +1,48 @@
+; TC[E240321A]
+; CL[A]
+; EV[European Youth Go Championship 2024 U12]
+; PC[DE, Hamburg-Harburg]
+; DT[2024-03-21,2024-03-23]
+; HA[h9]
+; KM[6.5]
+; TM[85]
+; CM[The tournament was played without handicap, even for the lower boards. (submitted by rillig)]
+;.
+ 1 Dach Bartik            2d CZ  BMik  19   6    19   101  592  10+/w   6+/w    3+/b    2+/b    5+/b    7+/w     |19574280
+ 2 Barcza Bende           2d HU  PaGo  18   5    18   101  593  12+/w   7+/b    4+/b    1-/w    8+/w    3+/w     |19637948
+ 3 Zhang Ryan             3d UK  LonC  17   4    17   101  586  11+/w   9+/b    1-/w    15+/b   4+/w    2-/b     |18913279
+ 4 Sulak Alper            3d TR  Ank   17   4    17   99   587  5+/b    8+/w    2-/w    17+/b   3-/b    10+/w    |18701034
+ 5 Sicic Jakov            4k HR  VGor  17   4    17   98   583  4-/w    16+/b   14+/b   9+/w    1-/w    8+/b     |19098651
+ 6 Mei Litao              3k DE  BB    17   4    17   96   581  16+/w   1-/b    7+/w    8-/b    19+/b   9+/w     |19849720
+ 7 Huang Lilian           3k FR  38GJ  16   3    16   100  575  18+/w   2-/w    6-/b    13+/b   14+/b   1-/b     |19462685
+ 8 Skocic Oliver          1k HR  GKIN  16   3    16   99   580  19+/w   4-/b    11+/b   6+/w    2-/b    5-/w     |19613396
+ 9 Savytskyi Avhust       3k UA  Kyiv  16   3    16   97   574  14+/b   3-/w    13+/w   5-/b    15+/w   6-/b     |19237185
+10 Wille Ole              4k DE  H     16   3    16   96   568  1-/b    17+/w   15-/w   20+/w   11+/b   4-/b     |19613319
+11 Hu Lilly               4k AT  Go7   16   3    16   95   573  3-/b    18+/b   8-/w    12+/w   10-/w   16+/b    |19737641
+12 Gorbulska Violeta      5k UA  Odes  16   3    16   93   550  2-/b    13-/w   23+/b   11-/b   18+/w   15+/b    |19762127
+13 Bruckner Albert        8k RO  VaDo  16   4    16   92   564  20+/w   12+/b   9-/b    7-/w    17+/w   14+/w    |19674193
+14 Papp Szilard_Mihaly    6k SK  Kosi  15   2    15   94   564  9-/w    21+/b   5-/w    16+/b   7-/w    13-/b    |19774953
+15 Hu Cherry              7k AT  Go7   15   3    15   93   557  22+/b   19+/w   10+/b   3-/w    9-/b    12-/w    |19786745
+16 Munteanu Vladimir      6k RO  Meij  15   2    15   93   553  6-/b    5-/w    19+/b   14-/w   22+/b   11-/w    |20325305
+17 Sincari Matei          7k RO  VaDo  15   3    15   92   550  21+/w   10-/b   18+/w   4-/w    13-/b   20+/b    |19025765
+18 Kudla Lukasz           7k UK  Edin  15   2    15   91   555  7-/b    11-/w   17-/b   21+/w   12-/b   19+/w    |19498798
+19 Shamoon Blake          6k UK  NoCb  14   1    14   91   550  8-/b    15-/b   16-/w   23+/w   6-/w    18-/b    |20362078
+20 Lu Yuheng              8k DE  HD    14   2    14   88   521  13-/b   23-/w   22+/w   10-/b   21+/b   17-/w    |19774821
+21 Neubauer Vera          9k AT  Wien  14   2    14   84   514  17-/b   14-/w   25+/b   18-/b   20-/w   24+/w    |19713925
+22 Stam Kyan             10k NL  xxxx  14   3    14   79   491  15-/w   24+/b   20-/b   27+/w   16-/w   25+/w    |20474069
+23 Serbanuta Petru       11k RO  Hika  13   3    13   78   480  25+/w   20+/b   12-/w   19-/b   24-/w   28+/b    |20425526
+24 Renaud-Goud Yann      12k FR  38GJ  13   4    13   74   444  27+/w   22-/w   26+/b   25+/w   23+/b   21-/b    |19749785
+25 Sichkar Tymofii       10k UA  Rivn  12   2    12   75   443  23-/b   27+/w   21-/w   24-/b   26+/w   22-/b    |20198684
+26 Taranu Gruia          14k RO  VaDo  11   4    11   60   371  28+/w   29+/w   24-/w   31+/b   25-/b   27+/b    |19001763
+27 Ghetu Denis_Mihai     12k RO  Cluj  10   1    10   68   399  24-/b   25-/b   29+/w   22-/b   28-/w   26-/w    |19525605
+28 Donner Tarmo          15k DE  M     9    3    9    59   342  26-/b   30+/b   31-/w   29+/w   27+/b   23-/w    |19762754
+29 Ren Mayo              15k NL  xxxx  9    3    9    52   313  30+/w   26-/b   27-/b   28-/b   31+/w   33+/w    |20498071
+30 Chik Rachel           15k UK  CamC  9    4    9    41   243= 29-/b   28-/w   32+/w   33+/b   34+/b   35+/w    |19898021
+31 Kis-Gado David        18k HU  PaGo  7    4    7    43   266  36+/w   33+/b   28+/b   26-/w   29-/b   37+/w    |19737894
+32 Sicic Judita          17k HR  VGor  7    3    7    29=  197= 33-/w   34-/b   30-/b   35+/b   38+/w   36+/b    |19486709
+33 Marz Larissa          18k DE  JIGS  6    3    6    42   224= 32+/b   31-/w   34+/b   30-/w   36+/w   29-/b    |18413945
+34 Zeng-Lussereau Edwin  18k FR  38GJ  6    3    6    30=  192= 35-/b   32+/w   33-/w   37+/b   30-/w   38+/b    |19850985
+35 Gheorghe Ana-Sofia    20k RO  Hika  4    3    4    30=  179  34+/w   36+/b   38+/b   32-/w   37-/w   30-/b    |20186925
+36 Taranu Tudor-Toma     18k RO  VaDo  4    1    4    28=  194= 31-/b   35-/w   37-/w   38+/b   33-/b   32-/w    |19374465
+37 Blumenschein Lui      26k DE  HP    4    4    4    24=  182  0+      38+/w   36+/b   34-/w   35+/b   31-/b    |20350704
+38 Donner Taito          30k DE  M     0=   0    0    25   143= 0=      37-/b   35-/w   36-/w   32-/b   34-/w    |20498302

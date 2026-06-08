@@ -1,0 +1,30 @@
+stages:
+  - type: tournament
+    file: eygc2025u12.txt
+    category: u12
+    name: U12
+    scoringColumns:
+      - mms 
+      - sos
+      - sosos
+      - direct
+    breakers:
+      - mms
+      - sos
+      - sosos      
+    findSharedPlaces: true
+  - type: tournament
+    file: eygc2025u18.txt
+    category: u18
+    name: U18
+    scoringColumns:
+      - mms 
+      - sos
+      - sosos
+      - direct
+    breakers:
+      - mms
+      - sos
+      - sosos 
+      - direct      
+    findSharedPlaces: true    

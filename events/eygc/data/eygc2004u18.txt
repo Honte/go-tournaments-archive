@@ -1,0 +1,192 @@
+; CL[A]
+; EV[European Youth Championship (Under 18)]
+; PC[DE, Koeln]
+; DT[2004-04-30,2004-05-02]
+; KM[7.5]
+; TM[70]
+; HA[h9]
+;
+  1 Silt Ondrej               5d CZ Zli  32 5 154 186   12+/b   6+/b   4+/w   2-/w   3+/w   5+/b  |10337481
+  2 Shikshin Ilja             5d RU 16Kz 32 5 152 183   22+/w  14+/b  11+/b   1+/b   5-/w   4+/w  |12013342
+  3 Nemlij Igor               3d RU 16Kz 31 4 121 184   19+/w   4-/b   6+/w   7+/b   1-/b  11+/w  |10886359
+  4 Dugin Artem               3d RU 16Kz 31 4 119 183   20+/b   3+/w   1-/b  19+/b  11+/w   2-/b  |12049576
+  5 Dugin Timur               4d RU 16Kz 31 4 119 181   30+/w  11-/b  20+/w  12+/b   2+/b   1-/w  |10837354
+  6 Hubert Thomas             3d FR 75Pa 31 4 118 181   13+/b   1-/w   3-/b  21+/w  17+/w  12+/b  |10562827
+  7 Tarumi Jun                3d DE DA 31 4 117 178   11-/w  18+/b  17+/w   3-/w  19+/b   8+/b  |12825945
+  8 Fidrmuc Ondrej            1d CZ Brn  30 4 115 175   35+/w  19-/b  18+/b   9+/w  20+/b   7-/w  |12501247
+  9 Barthel Floris            1d NL Utre 30 4 115 174   17-/w  34+/b  10+/w   8-/b  21+/b  20+/w  |13013715
+ 10 Kashaev Andrej            1d RU 77Mo 30 4 113 173   33+/w  13-/w   9-/b  26+/w  18+/b  19+/b  |12601215
+ 11 Pocsai Rita               4d HU BuPe 30 3  92 186    7+/b   5+/w   2-/w  13+/b   4-/b   3-/b  |10686346
+ 12 Celejewski Pawel          2d PL Choc 30 3  88 182    1-/w  30+/b  13+/w   5-/w  14+/b   6-/w  |12833062
+ 13 Papazoglou Benjamin       3d FR 75Pa 30 3  88 179    6-/w  10+/b  12-/b  11-/w  16+/w  17+/b  |10733712
+ 14 Tormanen Antti            2d FI OGP 30 3  86 177   21+/b   2-/w  19-/w  30+/b  12-/w  15+/w  |12949310
+ 15 Salignon Jerome           1k FR 38Tr 29 4 112 171   27+/w  35+/b  22+/w  20-/b  30+/w  14-/b  |10825628
+ 16 Gogosz Dominik            1k PL Choc 29 4 109 168   28+/b  44+/w  21-/w  36+/b  13-/b  26+/b  |12813064
+ 17 Noir Baptiste             1d FR 75Pa 29 3  88 180    9+/b  21+/w   7-/b  22+/w   6-/b  13-/w  |12449712
+ 18 Curtil Guillaume          1d FR 92Le 29 3  82 173   36+/b   7-/w   8-/w  35+/b  10-/w  28+/b  |12537921
+ 19 Christiani Tobias         2d DK KGK 29 2  60 183    3-/b   8+/w  14+/b   4-/w   7-/w  10-/w  |12813691
+ 20 Fernandez-Villares Javier 2d ES Chi  29 2  58 180    4-/w  22+/b   5-/b  15+/w   8-/w   9-/b  |13050752
+ 21 Jurek Martin              3d CZ Mik  29 2  57 177   14-/w  17-/b  16+/b   6-/b   9-/w  27+/w  |10213753
+ 22 Jakobsen Lasse            2d DK EDO 29 2  56 175    2-/b  20-/w  15-/b  17-/b  27+/w  29+/w  |12637317
+ 23 Grossmann Jasmin          3k DE GP 28 5 130 158   47+/w  48+/b  28-/w  44+/b  32+/w  36+/b  |12974907
+ 24 Welvaert Alexis           2k FR 67SE 28 4 107 160   42-/w  25+/b  44+/w  33-/b  41+/b  35+/w  |12501192
+ 25 Buchholz Thomas           2k DE BN 28 4 106 162   43+/b  24-/w  29-/w  42+/b  34+/w  33+/w  |12998183
+ 26 Prokop Jan                1k CZ Pra  28 3  82 169   29+/b  36+/w  30-/w  10-/b  33+/b  16-/w  |10433654
+ 27 Knauf Barbara             1k DE BN 28 3  82 169   15-/b  28+/w  33+/w  34+/b  22-/b  21-/b  |12850178
+ 28 Brooks William            1k UK Camb 28 3  82 168   16-/w  27-/b  23+/b  32+/w  35+/b  18-/w  |10862247
+ 29 Obenaus Johannes          1k DE B 28 3  81 165   26-/w  33-/b  25+/b  43+/w  36+/w  22-/b  |13049795
+ 30 Simkin Kostyantyn         2d DE M 28 1  28 175    5-/b  12-/w  26+/b  14-/w  15-/b   0=    |12450174
+ 31 Kruml Ondrej              4k CZ Brn  27 5 124 150   45+/b  55+/w  41-/w  54+/b  47+/w  42+/b  |10886524
+ 32 Rumjancev Anton           2k RU 77Mo 27 3  77 160   48+/w  42+/b  35-/w  28-/b  23-/b  44+/b  |12337259
+ 33 Viasu Mihai               1k RO Drob 27 2  56 170   10-/b  29+/w  27-/b  24+/w  26-/w  25-/b  |10798271
+ 34 Dumolard Jun              1k FR 75Pa 27 2  52 165   44+/b   9-/w  36-/b  27-/w  25-/b  43+/w  |13433398
+ 35 Spode Michel              1d DE HH 27 1  27 171    8-/b  15-/w  32+/b  18-/w  28-/w  24-/b  |10937641
+ 36 Caraivan Alexandru        1d RO Brai 27 1  27 169   18-/w  26-/b  34+/w  16-/w  29-/b  23-/w  |12698356
+ 37 Rehman Andrzej            6k PL Krak 26 6 143 143   72+/b  81+/b  52+/w  45+/w  46+/b  41+/w  |13525369
+ 38 Grining Tomasz            6k PL Poli 26 6 141 141   89+/w  64+/b  50+/b  53+/b  45+/w  47+/b  |13098965
+ 39 Celejewski Piotr          6k PL Choc 26 6 139 139   61+/b  73+/w  64+/b  63+/w  53+/b  55+/b  |12801063
+ 40 Zyzak Andrzej             5k PL Wodz 26 5 121 146   51+/w  50+/w  46-/b  55+/b  54+/w  48+/w  |10949763
+ 41 Hennerkes Joshua          3k DE CAS 26 3  76 156   55+/w  43-/w  31+/b  48+/b  24-/w  37-/b  |12798137
+ 42 Ta KimLong                2k DE Ing  26 2  53 161   24+/b  32-/w  43-/b  25-/w  48+/b  31-/w  |13537403
+ 43 Farcas Alexandru          2k RO Tims 26 2  52 161   25-/w  41+/b  42+/w  29-/b  44-/w  34-/b  |12901614
+ 44 Knauf Torsten             1k DE BN 26 1  26 165   34-/w  16-/b  24-/b  23-/w  43+/b  32-/w  |10962963
+ 45 Zinser Theresa            4k DE B 25 3  72 151   31-/w  52+/b  53+/w  37-/b  38-/b  49+/w  |12962510
+ 46 Schiwy Christoph          4k DE E 25 3  72 147   73+/b  53-/w  40+/w  47-/b  37-/w  51+/w  |13533025
+ 47 Kuehnel Sven              3k DE Gla  25 2  49 155   23-/b  54+/b  48-/w  46+/w  31-/b  38-/w  |13033152
+ 48 Berkelmans Wouter         2k NL Amvn 25 1  25 158   32-/b  23-/w  47+/b  41-/w  42-/w  40-/b  |12574617
+ 49 Rodriguez David           7k ES Val  24 5 111 136   80+/b  72+/w  73+/b  59+/w  64+/w  45-/b  |13650296
+ 50 Maidowski Paul            5k DE M 24 3  70 146   63+/w  40-/b  38-/w  52+/w  51-/b  57+/b  |13498287
+ 51 Fodi Zoltan               5k HU BuPe 24 3  69 143   40-/b  60+/w  63-/w  71+/b  50+/w  46-/b  |12813317
+ 52 Urban Alexandra           5k HU BuPe 24 3  68 143   64+/w  45-/w  37-/b  50-/b  71+/b  59+/w  |12974863
+ 53 Zahonyi Balint            4k HU BuPe 24 2  48 149   54-/w  46+/b  45-/b  38-/w  39-/w  63+/b  |12598597
+ 54 Drewing Michael           4k DE M 24 2  48 148   53+/b  47-/w  55+/b  31-/w  40-/b   0=    |13074402
+ 55 Kull Michael              3k DE Ing  24 1  23 152   41-/b  31-/b  54-/w  40-/w  63+/b  39-/w  |12913901
+ 56 Lubos Przemyslaw          8k PL Wodz 23 5 110 133   69+/b  88+/w  72+/w  61+/b  60+/b  64-/w  |12074260
+ 57 Smolarik Peter            7k SK Kosi 23 4  87 133   81+/w  89+/b  61+/w  73-/b  58+/b  50-/w  |12886984
+ 58 Vasile Mihai              7k RO Slob 23 4  83 129   96+/w  59-/b  80+/b  77+/w  57-/w  71+/b  |10798293
+ 59 Weber Julius              6k DE BN 23 3  68 138   71-/b  58+/w  60+/w  49-/b  73+/w  52-/b  |12937793
+ 60 Farcas Andrei             6k RO Tims 23 3  67 137   62+/w  51-/b  59-/b  68+/w  56-/w  67+/b  |13262403
+ 61 Dorobantu Marius          6k RO Slob 23 3  66 138   39-/w  62+/b  57-/b  56-/w  81+/b  68+/w  |10762279
+ 62 Danek Martin              6k CZ Pra  23 3  65 133   60-/b  61-/w  71-/w  78+/b  72+/w  73+/b  |10298475
+ 63 Saitov Linar              5k RU 16Kz 23 2  46 144   50-/b  71+/w  51+/b  39-/b  55-/w  53-/w  |13025078
+ 64 Martin Adrian             5k RO Drob 23 2  44 144   52-/b  38-/w  39-/w  81+/w  49-/b  56+/b  |12837253
+ 65 Langer Jakub              9k CZ KVa  22 5  99 121   75+/w 101+/b  86+/w  96+/b  68-/b  80+/w  |12586849
+ 66 Kares Ondrej              9k CZ Jav  22 5  99 119   93+/b  86-/b  92+/w  88+/w  78+/b  89+/b  |12598718
+ 67 Lukac Martin              8k SK Kosi 22 4  84 129   87+/w  79+/w  68-/b  76+/b  70+/b  60-/w  |12401521
+ 68 Tracichleb Piotr          8k PL Ruda 22 4  83 129   86+/w  96+/b  67+/w  60-/b  65+/w  61-/b  |12701095
+ 69 Zubalik Michal            8k CZ FMi  22 4  81 125   56-/w  77-/b  95+/w  79+/b  86+/b  81+/w  |12613678
+ 70 Danek Michal              8k CZ Pra  22 4  79 120   92-/w  95+/b  96+/w  89+/b  67-/w  75+/b  |10898261
+ 71 Sora Adelina              6k RO Crai 22 2  46 140   59+/w  63-/b  62+/b  51-/w  52-/w  58-/w  |10337371
+ 72 Radu Ancuta               6k RO Slob 22 2  42 138   37-/w  49-/b  56-/b  80+/w  62-/b  77+/w  |12337105
+ 73 Turner Johannes           5k RO Bist 22 1  23 144   46-/w  39-/b  49-/w  57+/w  59-/b  62-/w  |12049609
+ 74 Virag Ladislav            10 SK Kosi 21 5  97 117   84+/w  94+/b  93+/w  86-/b  95+/b  88+/w  |12762750
+ 75 Riard Mathieu             9k FR 38Tr 21 4  79 123   65-/b  93+/w  87+/b  85+/w   0+    70-/w  |12874268
+ 76 Hruby Pavel               9k CZ Zli  21 4  79 122  101+/w  87+/b  79+/w  67-/w  80-/b  86+/w  |12762046
+ 77 Joswig Dennis             8k DE BN 21 3  62 125    0=    69+/w  88+/b  58-/b  89+/w  72-/b  |12801184
+ 78 Piekarczyk Marta          8k PL Pozn 21 3  60 126   88+/b  80-/w  85+/b  62-/w  66-/w  87+/b  |13025628
+ 79 Tracichleb Magda          8k PL Ruda 21 3  58 123   95+/w  67-/b  76-/b  69-/w  94+/w  84+/b  |12737769
+ 80 Bachmann Fynn             7k DE HH 21 2  42 133   49-/w  78+/b  58-/w  72-/b  76+/w  65-/b  |12362768
+ 81 Hitziger Pascal           6k DE Wrz  21 1  20 137   57-/b  37-/w  89+/w  64-/b  61-/w  69-/b  |13062643
+ 82 Jarzyna Lukasz            11 PL Glog 20 5  90 108  100+/b 106+/w 101-/w 105+/b  92+/b  93+/w  |13449469
+ 83 Kovarik Vojtech           11 CZ Pra  20 5  87 106  115+/w 114+/b 100+/b  93-/w 101+/b  94+/b  |12862256
+ 84 Sagaltchik Anton          10 DE B 20 4  74 116   74-/b  99+/w 107+/w  92+/b  85+/b  79-/w  |13498650
+ 85 Divisova Viki             9k CZ Pac  20 3  57 119   94+/w  92+/b  78-/w  75-/b  84-/w  96+/b  |10601954
+ 86 Qian Matthias             8k DE ED 20 2  43 130   68-/b  66+/w  65-/b  74+/w  69-/w  76-/b  |12886258
+ 87 Selaru Dorin              8k RO Tims 20 2  37 122   67-/b  76-/w  75-/w 101+/b  96+/b  78-/w  |12962609
+ 88 Wagner Sergej             7k DE DA 20 1  21 129   78-/w  56-/b  77-/w  66-/b   0+    74-/b  |13074842
+ 89 Anuta Cristian            6k RO Bist 20 0   0 135   38-/b  57-/w  81-/b  70-/w  77-/b  66-/w  |12074634
+ 90 Sukup Jan                 13 CZ Mik  19 6 101 101  104+/w  97+/b 122+/b  98+/w 115+/w 105+/b  |12374153
+ 91 Bursik Adam               13 CZ Mik  19 6 100 100  110+/b 111+/w 113+/w 115+/b  98+/b 100+/w  |12886687
+ 92 Kral Maros                9k SK Kosi 19 2  40 122   70+/b  85-/w  66-/b  84-/w  82-/w 101+/w  |12537041
+ 93 Gebert Rafael             9k DE CAS 19 2  38 122   66-/w  75-/b  74-/b  83+/b  99+/w  82-/b  |13001417
+ 94 Silber Olga               9k DE W 19 2  37 119   85-/b  74-/w  99+/w  95+/b  79-/b  83-/w  |13449645
+ 95 Drillich Stephan          8k DE ED 19 1  18 123   79-/b  70-/w  69-/b  94-/w  74-/w  99+/b  |12962906
+ 96 Draws Marek               7k DE H 19 0   0 129   58-/b  68-/w  70-/b  65-/w  87-/w  85-/w  |13437908
+ 97 Pirvu Andreea             12 RO Brai 18 4  66 101  113-/b  90-/w 112+/w 114+/b 107+/b 106+/b  |12913604
+ 98 Matencio Alex             11 ES Sab  18 3  50 105  106-/b 113+/w 105+/w  90-/b  91-/w 104+/b  |12801162
+ 99 Stacenko Uljana           10 DE GP 18 2  35 112  107+/w  84-/b  94-/b 100+/w  93-/b  95-/w  |13049784
+100 Skuppin Lara              10 DE BS 18 2  34 111   82-/w 107+/b  83-/w  99-/b 106+/w  91-/b  |13498914
+101 Behrens Jan               9k DE Sta  18 1  20 122   76-/b  65-/w  82+/b  87-/w  83-/w  92-/b  |13525754
+102 Owsiany Tomasz            14 PL Swie 17 5  75  89  128-/b 130+/w 118+/b 121+/w 122+/w 113+/b  |12933327
+103 Brauerova Barbora         13 CZ Ost  17 4  62  95  120+/b 122+/w 114-/w 113+/b 105-/w 115+/w  |12486980
+104 Cymbala Tomasz            13 PL Choc 17 4  60  97   90-/b 139+/w 121+/w 110+/b 114+/b  98-/w  |12933580
+105 Engels Sebastian@Ber      12 DE B 17 3  49 106  112+/w 115+/b  98-/b  82-/w 103+/b  90-/w  |13513764
+106 Cernota Tomas             11 CZ Zli  17 2  35 107   98+/w  82-/b 115-/b 107+/w 100-/b  97-/w  |12598927
+107 Jansen Jori               10 NL Utre 17 1  16 107   99-/b 100-/w  84-/b 106-/b  97-/w 114+/w  |12674970
+108 Kaczorowski Marcin        16 PL Kedz 16 6  75  75  153+/w 155+/b 144+/w 127+/b 139+/w 129+/b  |12913582
+109 Ionescu Bogdan            15 RO Brai 16 5  69  85  144+/w 138+/w 139+/b 111+/b 110-/w 119+/b  |12401345
+110 Seibel Georg              13 DE BN 16 3  45  97   91-/w 112-/b 129+/b 104-/w 109+/b 120+/w  |12849485
+111 Blockley Paul             13 UK Worc 16 3  45  95  121+/b  91-/b 120-/w 109-/w 118+/w 122+/b  |10949532
+112 Le_Moual Maxime           13 FR 94Ca 16 3  45  95  105-/b 110+/w  97-/b 122-/w 129+/w 121+/b  |12433817
+113 Eckert Marion             12 DE M 16 2  33 104   97+/w  98-/b  91-/b 103-/w 120+/b 102-/w  |13013176
+114 Conradi Judith            12 DE HH 16 2  32 104  122+/b  83-/w 103+/b  97-/w 104-/w 107-/b  |12850486
+115 Anguila Oscar             11 ES Pal  16 1  17 109   83-/b 105-/w 106+/w  91-/w  90-/b 103-/b  |13562450
+116 Dreyer Maximilian         16 DE ED 15 5  67  82  133+/b 134+/w 126+/b 118-/w 137+/b 127+/w  |13525413
+117 Coggio Maxime             16 FR 75Pa 15 5  65  78  143+/w 137-/b 135+/w 145+/b 126+/b 128+/w  |13474417
+118 Rys Vojtech               15 CZ Pra  15 4  58  91  130+/b 119+/w 102-/w 116+/b 111-/b 125+/w  |13286856
+119 Le_Morvan Eric            15 FR St   15 4  54  85  137+/w 118-/b 130+/w 139+/b 128+/b 109-/w  |13662297
+120 Kralik Jan                13 SK Kosi 15 2  30  94  103-/w 121-/b 111+/b 128+/w 113-/w 110-/b  |12862124
+121 Toma Ruxandra             13 RO Brai 15 2  29  95  111-/w 120+/w 104-/b 102-/b   0+   112-/w  |10898987
+122 Paun Alin                 12 RO Slob 15 1  16 101  114-/w 103-/b  90-/w 112+/b 102-/b 111-/w  |12349106
+123 Nossyrev Mickael          18 FR 67SE 14 6  72  72  167+/w 141+/b 142+/b 135+/b 134+/w 137+/w  |13062940
+124 Radek Jiri                17 CZ Mik  14 5  63  77  141+/w 143+/b 134+/b 125-/w 132+/w 138+/b  |13233913
+125 Alby Helene               17 FR 92Le 14 5  61  76  150+/w 153+/b 136+/w 124+/b 144+/w 118-/b  |12898369
+126 Bartunek Jan              16 CZ Pra  14 4  50  80  154+/b 142+/w 116-/w 130+/b 117-/w 139+/b  |12849265
+127 Kozhukhov Ivan            15 RU 77Mo 14 3  36  81  155+/w 145+/b 128-/b 108-/w 138+/w 116-/b  |12886280
+128 Dietz Tobias              14 DE Tri  14 2  31  90  102+/w 129-/b 127+/w 120-/b 119-/w 117-/b  |13550471
+129 Smolarik Lubomir          14 SK Kosi 14 2  27  88  139-/b 128+/w 110-/w 138+/b 112-/b 108-/w  |12986193
+130 Riepl Korbinian           14 DE ED 14 2  25  86  118-/w 102-/b 119-/b 126-/w 145+/w 133+/b  |12874257
+131 Naimj Ruslan              13 DE HH 14 0   0  75    0=     0=     0=     0=     0-     0=
+132 Lemasson Florent          18 FR 91Or 13 5  54  68  165+/b 166+/w 141+/w 136+/b 124-/b 154+/w  |13513302
+133 Zajicova Marketa          17 CZ Pac  13 4  45  74  116-/w 140+/b 154+/b 153+/w 155+/b 130-/w  |12974940
+134 Mihalovits Ervin          16 HU BuPe 13 3  36  79  136+/w 116-/b 124-/w 155+/b 123-/b 140+/w  |13049036
+135 Bukovska Nada             16 CZ Pra  13 3  35  76  142+/w 144-/b 117-/b 123-/w 154+/b 145+/w  |12801261
+136 Moravec Jiri              16 CZ Ost  13 3  35  75  134-/b 154+/w 125-/b 132-/w 142+/w 144+/b  |12833469
+137 Albrecht Balazs           15 HU BuPe 13 2  27  84  119-/b 117+/w 138-/w 144+/b 116-/w 123-/b  |12486936
+138 Czypek Adam               15 DE E 13 2  25  83  145+/w 109-/b 137+/b 129-/w 127-/b 124-/w  |13598035
+139 Zeh Sebastian             14 DE ED 13 1  14  92  129+/w 104-/b 109-/w 119-/w 108-/b 126-/w  |13033174
+140 Christen Jean-Loup        18 FR 67SE 12 4  43  69  152+/b 133-/w 150+/b 160+/w 153+/w 134-/b  |13450723
+141 Nagaj Dawid               17 PL Choc 12 3  33  74  124-/b 123-/w 132-/b 149+/w 152+/w 153+/b  |12937584
+142 Mendle Johannes           16 DE ED 12 2  22  76  135-/b 126-/b 123-/w 151+/w 136-/b 155+/w  |13049179
+143 Szychowiak Weronika       16 PL Bydg 12 2  22  73  117-/b 124-/w 153-/b 154-/w 151+/b 149+/w  |12586497
+144 Schmidt Maximilian        15 DE ED 12 1  13  85  109-/b 135+/w 108-/b 137-/w 125-/b 136-/w  |12950905
+145 Deac Bianca               15 RO Bist 12 1  11  80  138-/b 127-/w 155+/w 117-/w 130-/b 135-/b  |12749176
+146 Hanzalova Kristyna        20 CZ Pra  11 5  47  56  147+/b 169+/w 167+/w 165-/b 166+/b 156+/w  |13674298
+147 Kaczorowska Justyna       20 PL Kedz 11 5  45  56  146-/w 157+/b 169+/b 170+/w 159+/b 165+/w  |13450470
+148 Omari Welat               20 DE B 11 5  45  56  163+/b 174+/w 164+/b 158+/w 160+/b 150-/w  |13449678
+149 Ochozkova Anna            19 CZ Ost  11 4  36  60  170+/w 167+/b 165+/w 141-/b 161+/w 143-/b  |12701645
+150 Savel Vitezslav           18 CZ Pra  11 3  30  67  125-/b 158+/w 140-/w 152-/b 165+/b 148+/b  |13086381
+151 Messmer Andre             18 FR 67SE 11 3  30  63  166-/b 165+/w 152+/w 142-/b 143-/w 161+/b  |13437721
+152 Bressan Rebekka           18 DE CAS 11 3  29  64  140-/w 170+/b 151-/b 150+/w 141-/b 160+/w  |12833348
+153 Sieracki Christian        16 DE ED 11 1  12  79  108-/b 125-/w 143+/w 133-/b 140-/b 141-/w  |13086183
+154 Rarkowski Sascha          16 DE CAS 11 1  12  78  126-/w 136-/b 133-/w 143+/b 135-/w 132-/b  |12962796
+155 Vitrant Nicolas           15 FR 38Tr 11 0   0  80  127-/b 108-/w 145-/b 134-/w 133-/w 142-/b  |13086238
+156 Engel Roman               20 DE B 10 4  35  56  157-/w 173+/b 163+/b 167+/w 158+/w 146-/b  |13413675
+157 Mihalovits Mate           20 HU BuPe 10 4  35  56  156+/b 147-/w 174+/b 159-/b 163+/w 164+/w  |13013803
+158 Kucharczyk Damian         19 PL Choc 10 3  29  61  161+/w 150-/b 159+/w 148-/b 156-/b 166+/w  |13049971
+159 Buchholz Laura            19 DE BN 10 3  28  59  164+/b 160-/w 158-/b 157+/w 147-/w 167+/b  |13033691
+160 Szychowiak Gracjan        19 PL Bydg 10 3  27  61  169+/w 159+/b 166+/b 140-/b 148-/w 152-/b  |12686608
+161 Timm Arne                 19 DE CAS 10 3  26  58  158-/b 164+/w 170+/b 166+/w 149-/b 151-/w  |10833867
+162 Iglesias Cristina         20 ES Rie   9 4  25  41  182+/b 163-/w 173-/w 176+/b 174+/b 169+/w  |13074897
+163 Brabec Vit                20 CZ Mik   9 3  24  55  148-/w 162+/b 156-/w 173+/b 157-/b 170+/b  |13549316
+164 Tocianuc Paul             19 RO Bist 9 2  16  57  159-/w 161-/b 148-/w 171+/b 170+/w 157-/b  |13633301
+165 May Maximilian            18 DE Kob   9 1  11  68  132-/w 151-/b 149-/b 146+/w 150-/w 147-/b  |13601302
+166 Gaurean Ioana             18 RO Bist 9 1  11  65  151+/w 132-/b 160-/w 161-/b 146-/w 158-/b  |12825285
+167 Kashirskij Andrej         18 RU 77Mo  9 1   8  64  123-/b 149-/w 146-/b 156-/b 169+/w 159-/w  |13062203
+168 Nguyen-Pham Anna          20 DE H  8 4  25  31    0=     0=   172+/w 182+/b 173+/w 174+/b  |13286174
+169 Sachsenhauser Florian     19 DE ED  8 1   7  57  160-/b 146-/b 147-/w 174+/w 167-/b 162-/b  |13074259
+170 Massieye Vincent          18 FR St    8 0   0  61  149-/b 152-/w 161-/w 147-/b 164-/b 163-/w  |13050180
+171 Scheffzuk Claudia         20 DE E  8 0   0  39    0=     0=     0=   164-/w   0=     0=    |13625304
+172 Wohnig Denis              20 DE B  7 5  19  27  184+/w 178+/w 168-/b 181+/b 182+/w 177+/w  |13474659
+173 Stankiewicz Rafal         20 PL Choc  7 1   9  48  174-/b 156-/w 162+/b 163-/w 168-/b 178-/b  |12050082
+174 Achoury Joseph            20 FR 95Ta  7 1   7  53  173+/w 148-/b 157-/w 169-/b 162-/w 168-/w  |13474428
+175 Tataru Emanuel            20 RO Bist 6 1   1  16    0=     0=     0=   184+/b   0=     0=    |13637305
+176 Stumpf Franziska          20 DE K  6 0   0  29    0=     0=     0=   162-/w   0=     0=    |13649306
+177 Tiede Kevin               20 DE H  5 0   0  24    0=     0=     0=     0=     0=   172-/b  |13650307
+178 Schroeder Etienne         20 DE CAS  5 4  15  26  183+/b 172-/b 181-/w 180+/b 184+/w 173+/w  |13525930
+179 Apavaloaie Anda           20 RO Bist 5 0   0  19    0=     0=   182-/w   0=     0=     0=    |13662308
+180 Nguyen John               20 DE H  4 3   9  14    0=     0=   184+/b 178-/w 181+/b 182+/w  |13601203
+181 Tiemann Maikel            20 DE H  4 2   6  19    0=     0=   178+/b 172-/w 180-/w 184+/b  |13698201
+182 Ispas Radu-Cornel         20 RO Drob  4 1   5  36  162-/w   0=   179+/b 168-/w 172-/b 180-/b  |13037189
+183 Fragman Uri               20 IL RhA   3 0   0  10  178-/w   0=     0=     0=     0=     0=    |13686310
+184 Sisman Mircea             20 RO Drob  1 0   0  27  172-/b   0=   180-/w 175-/w 178-/b 181-/w  |13633312

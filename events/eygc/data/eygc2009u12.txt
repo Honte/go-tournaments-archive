@@ -1,0 +1,48 @@
+; CL[A]
+; EV[European Children Go Championship]
+; PC[BA, Banja Luka]
+; DT[2009-03-06,2009-03-08]
+; HA[h9]
+; KM[7.5]
+; TM[75]
+;
+  1 Sidorenko Mikhail       2d RU 50Fr 14 6  67  67  13+/b 10+/w  2+/w  3+/b  7+/w  6+/b  |14925339
+  2 Miljutkin Dmitrij       4k RU 16Kz 13 5  54  68   9+/b  8+/w  1-/b  6+/w 11+/b  5+/w  |14786772
+  3 Medvedev Dmitrij        1k RU 74Ch 12 4  41  65  10-/w 16+/b  5+/b  1-/w  8+/b  7+/b  |14262930
+  4 Csizmadia Robert        11 HU BuPe 11 4  37  58  16+/b  6-/w 14+/b 12-/w 13+/b 11+/w  |14925416
+  5 Jeroshkin Oleksandr     6k UA Riv  11 3  32  68   6+/b 12+/w  3-/w  7-/w  9+/b  2-/b  |13649108
+  6 Serikov Konstantin      4k RU 74Ch 11 3  31  69   5-/w  4+/b 10+/b  2-/b 12+/w  1-/w  |14274931
+  7 Popov Stepan            3k RU 16Kz 11 3  31  68   8-/b 13+/w 12+/w  5+/b  1-/b  3-/w  |14625897
+  8 Ghioc Rares             7k RO Bucu 11 3  31  67   7+/w  2-/b 11+/b  9-/b  3-/w 10+/w  |13674716
+  9 Surma Bartosz           7k PL Rydu 11 3  31  65   2-/w 11-/b 13+/b  8+/w  5-/w 12+/b  |13833039
+ 10 Csoti Sebestyen         10 HU BuPe 10 2  21  67   3+/b  1-/b  6-/w 11-/w 14+/w  8-/b  |14862628
+ 11 Iacob Alexandru         4k RO Brai 10 2  21  66  12-/b  9+/w  8-/w 10+/b  2-/w  4-/b  |12749187
+ 12 Berende Tudor           4k RO Bist 10 2  21  65  11+/w  5-/b  7-/b  4+/b  6-/b  9-/w  |13962025
+ 13 Kamysheva Rada          11 RU 77Mo 10 2  16  63   1-/w  7-/b  9-/w 16+/b  4-/w 15+/b  |15237189
+ 14 Zahonyi Gyorgy          15 HU BuPe  9 4  30  51  15+/w 18+/b  4-/w 19+/b 10-/b 16+/w  |13625436
+ 15 Galic Dragan            15 BA BLu   8 3  21  48  14-/b 19+/w 16-/w 18+/b 17+/b 13-/w  |15237739
+ 16 Koprena Nemanja         14 BA BLu   8 2  15  57   4-/w  3-/w 15+/b 13-/w 18+/w 14-/b  |15201736
+ 17 Cherestes Ioan          17 RO Bucu  7 4  19  34  18-/w 26+/b 27+/w 25+/b 15-/w 19+/b  |15274875
+ 18 Pantic Stefan           15 BA BLu   7 2  14  45  17+/b 14-/w 19+/w 15-/w 16-/b 21-/b  |15233746
+ 19 Gherasim Emilian        15 RO Bist 7 2   8  39  36+/w 15-/b 18-/b 14-/w 20+/b 17-/w  |14913129
+ 20 Dobranis Darius         19 RO Bist 6 5  22  29  21+/b 25+/w 35+/b 27+/b 19-/w 23+/w  |15049716
+ 21 Moldovan Teodor         19 RO Bist 6 5  21  27  20-/w 33+/w 29+/b 26+/b 25+/w 18+/w  |15025714
+ 22 Rigo Peter_Botond       20 HU BuPe  5 5  20  25  28+/w 24+/b 23-/b 31+/w 26+/b 25+/w  |14949495
+ 23 Yashov Kristian         20 BG xxx   5 5  17  23  30+/w 37+/b 22+/w 35+/b 27+/w 20-/b |15349037
+ 24 Dobranis Denis          20 RO Bist 5 5  16  21  31+/b 22-/w 32+/w 28+/b 29+/b 35+/w |15350038
+ 25 State Silvestru         18 RO xxx   4 2   8  32  27+/w 20-/b 26+/w 17-/w 21-/b 22-/b |15362039
+ 26 Berende Daria           18 RO Bist 4 2   6  28  35+/b 17-/w 25-/b 21-/w 22-/w 31+/b  |14933149
+ 27 Nae Alexandru           18 RO Bucu  4 2   6  28  25-/b 35+/w 17-/b 20-/w 23-/b 29+/w  |14525082
+ 28 Trubajic Mladen         20 BA BLu   4 4   6  16  22-/b 40+/w 38+/b 24-/w 39+/b 30+/w  |15213748
+ 29 Vasic Stefan            20 BA xxx   3 3   8  23  32+/w 38+/b 21-/w 30+/b 24-/w 27-/b |15386041
+ 30 Stan Raluca             20 RO xxx   3 3   8  20  23-/b 36+/b 33+/w 29-/w 34+/w 28-/b |15398042
+ 31 Sajic Dusan             20 BA xxx   3 3   6  20  24-/w 39+/b 37+/w 22-/b 32+/b 26-/w |15333043
+ 32 Bacanu Soranna          20 RO Bucu  3 3   6  17  29-/b 34+/w 24-/b 33+/w 31-/w 40+/w |15313045
+ 33 Vucinic Vanja           20 BA xxx   3 3   5  17  39+/w 21-/b 30-/b 32-/b 38+/w 37+/b |15325046
+ 34 Sobot Milos-Marko       20 BA xxx   3 3   4  12  37-/w 32-/b 40+/w 38+/b 30-/b 36+/b |15337047
+ 35 Mitic Maja              18 RS Nis   3 1   2  26  26-/w 27-/b 20-/w 23-/w 36+/b 24-/b  |14525137
+ 36 Iric Mirko              20 BA xxx   2 2   3  19  19-/b 30-/w 39+/b 37+/b 35-/w 34-/w |15349048
+ 37 Dumitru Ana-Gabriela    20 RO Brai 2 2   3  16  34+/b 23-/w 31-/b 36-/w 40+/b 33-/w |15350049
+ 38 Sima Ruxandra           20 RO xxx   2 2   1  14  40+/b 29-/w 28-/w 34-/w 33-/b 39+/b |15374051
+ 39 Ghioc Emilia            20 RO Bucu  1 1   0  14  33-/b 31-/w 36-/w 40+/b 28-/w 38-/w  |14901139
+ 40 Kolakovic Daiana        20 BA xxx   0 0   0  15  38-/w 28-/b 34-/b 39-/w 37-/w 32-/b |15386052

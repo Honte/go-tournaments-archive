@@ -1,0 +1,63 @@
+; TC[T110311A]
+; CL[A]
+; EV[European Youth Goe Championship (under 12)]
+; PC[CZ, Brno]
+; DT[2011-03-11,2011-03-13]
+; HA[h9]
+; KM[7.5]
+; TM[75]
+; CM[ (submitted by cieply)]
+;.
+;
+ 1 Verteleckyj Vladyslav   1k UA  Rivn  18   6    92   547  9+/b    4+/w    7+/b    2+/w    3+/w    5+/b     |15325145
+ 2 Popov Stepan            1d RU  16Kz  17   5    92   539  11+/b   10+/w   3+/b    1-/b    4+/w    6+/w     |14625897
+ 3 Krushelnyckyj Valerij   5k UA  Rivn  16   4    93   541  7+/w    8+/b    2-/w    11+/b   1-/b    4+/w     |15450072
+ 4 State Silvestru         4k RO  LocB  15   3    95   546  5+/w    1-/b    8+/w    6+/w    2-/b    3-/b     |15362039
+ 5 Aminov Adel             4k RU  16Kz  15   3    91   537  4-/b    6-/b    10+/w   9+/w    7+/b    1-/w     |14601895
+ 6 Glushko Alexandr        5k RU  77Mo  15   3    89   540  8-/b    5+/w    9+/w    4-/b    10+/b   2-/b     |15686297
+ 7 Dobranis Darius         3k RO  Bist  15   3    88   524  3-/b    13+/w   1-/w    8+/b    5-/w    9+/b     |15049716
+ 8 Dobranis Denis          4k RO  Bist  14   2    89   535  6+/w    3-/w    4-/b    7-/w    11+/w   10-/b    |15350038
+ 9 Vazquez Oscar           4k ES  Madr  14   2    88   511  1-/w    11+/b   6-/b    5-/b    15+/w   7-/w     |15633673
+10 Pylypchuk Andrij        9k UA  Rivn  14   3    85   503  12+/b   2-/b    5-/b    13+/w   6-/w    8+/w     |15025175
+11 Kamysheva Rada          7k RU  77Mo  14   2    85   502  2-/w    9-/w    12+/b   3-/w    8-/b    14+/b    |15237189
+12 Petrov Danila          11k RU  78SP  13   4    71   438  10-/w   14+/b   11-/w   16+/b   13+/b   15+/b    |15798618
+13 Smith Roella           11k UK  Camb  11   2    71   433  22+/w   7-/b    14-/b   10-/b   12-/w   17+/w    |14713039
+14 Christiaans Colin      12k NL  Eind  11   3    69   416  17+/b   12-/w   13+/w   15-/b   16+/w   11-/w    |15649942
+15 Malko Jaroslav         13k UA  Rivn  11   4    66   410  16+/w   22+/b   17+/b   14+/w   9-/b    12-/w    |14937670
+16 Gorgovan Dragos        13k RO  Brai  10   3    62   379  15-/b   17+/w   22+/b   12-/w   14-/b   18+/w    |15374821
+17 Turan Andras           12k HU  BuPe  10   2    61   374  14-/w   16-/b   15-/w   18+/b   19+/b   13-/b    |15837371
+18 Pavlov Alexandr        13k RU  77Mo  9    2    53   331  19-/b   20-/w   24+/b   17-/w   22+/w   16-/b    |15662295
+19 Bacanu Soranna         15k RO  LocB  9    4    53   310  18+/w   21+/b   20+/b   22+/w   17-/w   23-/b    |15313045
+20 Trifan Albert          15k RO  Brai  9    4    50   298  24+/w   18+/b   19-/w   23+/b   21-/b   22+/w    |15398823
+21 Samajova Kamila        16k CZ  TOst  9    5    43   264  26+/b   19-/w   29+/w   25+/b   20+/w   24+/b    |14913778
+22 Kollner Barnabas       12k HU  BuPe  8    0    59   355  13-/b   15-/w   16-/w   19-/b   18-/b   20-/b    |15633794
+23 Vavryk Anastasija      17k UA  Rivn  8    5    44   261  28+/b   24+/w   25+/w   20-/w   26+/b   19+/w    |15813369
+24 Caragea Bogdan         15k RO  LocB  7    2    46   265  20-/b   23-/b   18-/w   26+/w   30+/b   21-/w    |15737381
+25 State Sebastian        17k RO  LocB  7    4    38   222  34+/b   26+/w   23-/b   21-/w   27+/b   31+/w    |15413035
+26 Kollner Dora           16k HU  BuPe  6    2    42   238  21-/w   25-/b   27+/w   24-/b   23-/w   29+/b    |15686792
+27 Kushnir Feliks         18k UA  Rivn  6    4    32   203  30+/b   34+/w   26-/b   28+/w   25-/w   35+/b    |15937856
+28 Krasnovskij Artem      17k RU  77Mo  6    3    32   202  23-/w   29-/b   35+/w   27-/b   34+/b   30+/w    |15649304
+29 Tymofijenko Pavlo      18k UA  Rivn  5    3    35   189  33+/w   28+/w   21-/b   30-/b   38+/b   26-/w    |15433649
+30 Vasa Vojtech           18k CZ  APmG  5    3    33   206  27-/w   31+/b   34+/b   29+/w   24-/w   28-/b    |15762923
+31 Lacko Adrian           19k SK  Kosi  5    4    29   158  37+/b   30-/w   32+/w   39+/b   36+/b   25-/b    |15949439
+32 Mishchuk Oleksandr     20k UA  Rivn  5    5    23   134  38+/b   37+/w   31-/b   44+/w   40+/b   36+/w    |16086389
+33 Alferenkov Klim        19k RU  77Mo  5    4    20   146  29-/b   39+/w   36-/b   51+/w   47+/b   34+/w    |15950924
+34 Dohnke Timon           17k DE  PM    4    1    32   178  25-/w   27-/b   30-/w   40+/b   28-/w   33-/b    |15874430
+35 Weigmann Arved         19k DE  P     4    3    26   150  40+/b   43+/w   28-/b   36-/w   37+/b   27-/w    |15713379
+36 Plhak Jan              20k CZ  MJes  4    4    23   127  48+/w   50+/b   33+/w   35+/b   31-/w   32-/b    |16098390
+37 Vdovenko Amelia        19k RU  78SP  4    3    22   131  31-/w   32-/b   47+/b   45+/w   35-/w   42+/b    |15725358
+38 Kaufmann Lukas         20k CZ  APmG  4    4    19   134  32-/w   48+/b   51+/b   41+/w   29-/w   40+/b    |15886948
+39 Vasova Dita            20k CZ  APmG  4    4    19   115  51+/w   33-/b   50+/b   31-/w   43+/b   41+/w    |15749921
+40 Pcheljakova Viktoria   19k RU  77Mo  3    2    23   133  35-/w   42+/b   45+/b   34-/w   32-/w   38-/w    |15886794
+41 Smith Kelda            20k UK  Camb  3    3    19   101  49+/w   45-/b   42+/w   38-/b   44+/w   39-/b    |15398207
+42 Korzhynovskyi Bohdan   20k UA  Rivn  3    3    18   115  44+/b   40-/w   41-/b   0+      45+/w   37-/w    |16033391
+43 Pavlova Maria          20k RU  77Mo  3    3    18   111  46+/w   35-/b   44-/b   48+/b   39-/w   47+/w    |15613301
+44 Sindelar Vladimir      20k CZ  APmG  3    3    18   107  42-/w   49+/b   43+/w   32-/b   41-/b   48+/w    |15813743
+45 Broz Ondrej            20k CZ  APmG  3    3    15   115  47+/b   41+/w   40-/w   37-/b   42-/b   52+/w    |15998213
+46 An-Zhan Anna           20k ES  CAT   3    3    11   92   43-/b   47-/w   48-/w   52+/b   49+/b   50+/w    |16062310
+47 Chaika Yevhen          20k UA  Rivn  2    2    20   98   45-/w   46+/b   37-/w   49+/b   33-/w   43-/b    |16001392
+48 Biesiedina Viktoriia   20k UA  Rivn  2    2    17   102  36-/b   38-/w   46+/b   43-/w   52+/w   44-/b    |16025394
+49 Kaliuzhnyi Roman       20k UA  Rivn  2    2    12   98   41-/b   44-/w   52+/b   47-/w   46-/w   51+/w    |16037395
+50 Ruzicka Felix          20k DE  xxx   2    2    12   83   52+/b   36-/w   39-/w   0=      51+/b   46-/b    |16049396
+51 Lahodniuk Danylo       20k UA  Rivn  1    1    17   95   39-/b   52+/w   38-/w   33-/b   50-/w   49-/b    |16050397
+52 Mezhibovskiy Lev       20k RU  xxx   0    0    13   84   50-/w   51-/b   49-/w   46-/w   48-/b   45-/b    |16062398

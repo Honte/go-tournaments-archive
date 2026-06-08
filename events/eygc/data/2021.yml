@@ -1,0 +1,46 @@
+stages:
+  - type: tournament
+    file: eygc2021u12.txt
+    category: u12
+    name: U12
+    scoringColumns:
+      - mms 
+      - wins
+      - null
+      - sos
+      - sosos
+    breakers:
+      - mms
+      - sos
+      - sosos      
+    findSharedPlaces: true
+  - type: tournament
+    file: eygc2021u16.txt
+    category: u16
+    name: U16
+    scoringColumns:
+      - mms 
+      - wins
+      - null
+      - sos
+      - sosos
+    breakers:
+      - mms
+      - sos
+      - sosos     
+    findSharedPlaces: true    
+  - type: tournament
+    file: eygc2021u20.txt
+    category: u20
+    name: U20
+    scoringColumns:
+      - mms 
+      - wins
+      - null
+      - sos
+      - sosos      
+    breakers:
+      - mms
+      - sos
+      - sosos     
+    findSharedPlaces: true

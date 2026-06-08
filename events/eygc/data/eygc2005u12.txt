@@ -1,0 +1,66 @@
+; CL[A]
+; EV[European Youth Go Championship - under 12]
+; PC[SK, Kosice]
+; DT[2005-03-04,2005-03-06]
+; TC[E050304B]
+; HA[h9]
+; KM[7.5]
+; TM[70]
+;
+  1 Serban Mihai_Valentin   6k RO Bist 14 5  61  61  10+/w  3+/b  4+/w  2+/b  5+/w  |13062258
+  2 Chao Joshua             4k NL Eind 13 4  60  46   6+/w 11+/b  5+/b  1-/w  8+/b  |13513841
+  3 Kocherov Oleg           7k RU 52NN 13 4  60  46   8+/b  1-/w  9+/w  6+/b  4+/b  |12862498
+  4 Surma Mateusz           4k PL Rydu 12 3  60  33   7+/w  8+/w  1-/b 12+/b  3-/w  |12837968
+  5 Podoljak Nikita         5k RU 78SP 12 3  60  33  14+/w  9+/b  2-/w  7+/b  1-/b  |12549273
+  6 Toma Theodor            6k RO Brai 12 3  58  32   2-/b 13+/w 10+/b  3-/w  9+/w  |12513754
+  7 Mykhaljuk Jurij         7k UA Riv  12 3  55  31   4-/b 12+/b 11+/w  5-/w 15+/b  |13798235
+  8 Podpera Lukas           11 CZ Pra  11 2  59  21   3-/w  4-/b 13+/b 10+/w  2-/w  |13201914
+  9 Matushkin Alexandr      7k RU 18Iz 11 2  58  21  13+/w  5-/w  3-/b 11+/b  6-/b  |12362284
+ 10 Lisy Pavol              7k SK DSta 11 2  57  20   1-/b 14+/w  6-/w  8-/b 12+/w  |12686597
+ 11 Khabazov Nikita         9k RU 52NN 11 2  56  20  12+/w  2-/w  7-/b  9-/w 14+/b  |13850540
+ 12 Reshetnikov Valerij     7k RU 18Iz 10 1  56  10  11-/b  7-/w 14+/b  4-/w 10-/b  |13713051
+ 13 Berbecariu Flaviu       9k RO Bist 10 1  52   8   9-/b  6-/b  8-/w 15-/w 17+/b  |13549074
+ 14 Kalinin Kostjantyn      7k UA Kyiv 10 1  51   7   5-/b 10-/b 12-/w 19+/b 11-/w  |12898270
+ 15 Vashurov Alexandr       14 RU 16Kz 10 4  47  35  18+/b 16+/b 17+/w 13+/b  7-/w  |13062764
+ 16 Sapik Marcel            14 CZ Mik   9 3  38  21  25+/b 15-/w 20-/b 18+/w 22+/b  |12949387
+ 17 Kral Tomas              15 SK Kosi  8 3  41  21  19+/w 21+/b 15-/b 20+/w 13-/w  |12898402
+ 18 Shevchuk Sofija         14 UA Riv   8 2  40  14  15-/w 20-/b 23+/b 16-/b 19+/w  |12625602
+ 19 Zamotin Danila          15 RU 77Mo  7 2  40  14  17-/b 22+/b 21+/w 14-/w 18-/b  |13074765
+ 20 Ploskirev Anton         15 RU 77Mo  7 2  39  17  21-/b 18+/w 16+/w 17-/b 23-/w  |13250325
+ 21 Bruma Daniela           15 RO Bist 7 2  35  13  20+/w 17-/w 19-/b 24-/b 25+/b  |13586078
+ 22 Smolarikova Katarina    16 SK Kosi  7 3  34  18  23+/b 19-/w 29+/b 25+/b 16-/w  |12901603
+ 23 Gurita Madalin          16 RO Drob  7 3  31  16  22-/w 35+/b 18-/w 29+/w 20+/b  |12813867
+ 24 Kares Martin            18 CZ Jes   7 5  27  27  32+/b 26+/w 30+/b 21+/w 34+/b  |12998810
+ 25 Arutjunov Artem         15 RU 77Mo  6 1  33   5  16-/w 29-/b 31+/b 22-/w 21-/w  |13001274
+ 26 Berende Bogdan          17 RO Bist 6 3  24  12  29-/w 24-/b 40+/w 46+/b 30+/w  |10413513
+ 27 Frent Sergiu            18 RO Bist 6 4  22  17  44+/w 30-/b 36+/b 31+/w 29+/w  |13650318
+ 28 Dvoracek Mikolas        19 CZ Jes   6 5  17  17  51+/b 45+/w 37+/w 34+/b 35+/b  |12849078
+ 29 Trifan Ovidiu           17 RO Bist 5 2  32  12  26+/b 25+/w 22-/w 23-/b 27-/b  |13525897
+ 30 Fragman Uri             18 IL RhA   5 3  27  14  42+/b 27+/w 24-/w 32+/w 26-/b  |13686310
+ 31 Berende Tudor           18 RO Bist 5 3  23  11  39+/b 36+/w 25-/w 27-/b 49+/b  |13962025
+ 32 Botis Dragos            18 RO Bist 5 3  23  11  24-/w 42+/b 38+/w 30-/b 39+/b  |13601324
+ 33 Gatin Bulat             20 RU 16Kz  5 5  16  16  53+/w 44+/b 42+/w 38+/b 37+/w  |13637316
+ 34 Luca Mihai-Iancu        19 RO Bist 4 3  23  10  55+/w 41+/b 35+/b 28-/w 24-/w  |13613325
+ 35 Buhai Fineas            18 RO Bist 4 2  23   6  43+/b 23-/w 34-/w 48+/b 28-/w  |13813305
+ 36 Fulga Robert            18 RO Drob  4 2  22   7  38+/w 31-/b 27-/w 37-/b 47+/b  |12833865
+ 37 Sasarman Iacob          19 RO Bist 4 3  21  10  47+/w 43+/b 28-/b 36+/w 33-/b  |13537084
+ 38 Sasarman Robert         18 RO Bist 4 2  21   7  36-/b 39+/w 32-/b 33-/w 46+/b  |13598904
+ 39 Lisy Daniel             18 SK DSta  4 2  20   6  31-/w 38-/b 45+/b 43+/w 32-/w  |12833623
+ 40 Gatin Marat             20 RU 16Kz  4 4  16  10  54+/w 48+/b 26-/b 52+/w 42+/w  |13437259
+ 41 Salajkova Tereza        20 CZ Mik   4 4  14  10  52+/b 34-/w 54+/b 45+/w 43+/b  |13633873
+ 42 Dragus Paul             18 RO Bist 3 1  20   1  30-/w 32-/w 33-/b 57+/b 40-/b  |13637327
+ 43 Gardus Vlad             18 RO Bist 3 1  19   3  35-/w 37-/w 49+/b 39-/b 41-/w  |13586903
+ 44 Apavaloaie Anda         19 RO Bist 3 2  18   4  27-/b 33-/w 53+/b 47-/w 51+/w  |13662308
+ 45 Valean Rebeca           19 RO Bist 3 2  18   4  49+/w 28-/b 39-/w 41-/b 57+/w  |13633345
+ 46 Smecka Jaroslav         20 CZ Mik   3 3  17   7  50+/w 56+/b 47+/b 26-/w 38-/w  |13698872
+ 47 Smolarik Marek          19 SK Kosi  3 2  16   5  37-/b 51+/w 46-/w 44+/b 36-/w  |13074853
+ 48 Horaicu Alexandru       20 RO Bist 3 3  15   7   0+   40-/w 50+/b 35-/w 52+/b  |13974026
+ 49 Kralik Michal           19 SK Kosi  3 2  15   4  45-/b 52+/w 43-/w 51+/b 31-/w  |13033658
+ 50 Peter Adelina           20 RO Bist 3 3  10   4  46-/b 57+/w 48-/w 56+/b 53+/w  |13986027
+ 51 Mircea Diana            19 RO Bist 2 1  17   2  28-/w 47-/b 55+/b 49-/w 44-/b  |13650329
+ 52 Cristurian Daria        19 RO Bist 2 1  15   1  41-/w 49-/b 56+/w 40-/b 48-/w  |13533905
+ 53 Madaras Marius          20 RO Bist 2 2  14   3  33-/b  0+   44-/w 54+/w 50-/b  |13650340
+ 54 Tolca Ionut             20 RO Bist 2 2  13   3  40-/b 55+/w 41-/w 53-/b  0+    |13825306
+ 55 Dvorackova Eva          20 CZ Jes   2 2  10   2  34-/b 54-/b 51-/w  0+   56+/w  |13049872
+ 56 Costin Mircea           20 RO Bist 1 1  11   1  57+/b 46-/w 52-/b 50-/w 55-/b  |12386308
+ 57 Zahonyi Gyorgy          20 HU BuPe  1 1  10   0  56-/w 50-/b  0+   42-/w 45-/b  |13625436

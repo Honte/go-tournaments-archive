@@ -1,0 +1,76 @@
+; TC[T000303A]
+; CL[B]
+; EV[European Youth Championship 2000]
+; PC[RO, Sinaia]
+; DT[2000-03-03,2000-03-05]
+; TC[T000303A]
+; HA[h9]
+; KM[5.5]
+; TM[60]
+; CM[ (submitted by Flatline)]
+;.
+;
+ 1 Koszegi Diana         5d HU  BuPe  29   6    160  160  19+/b   8+/w    4+/b    3+/w    2+/w    12+/b    |10301247
+ 2 Kulkov Andrej         3d RU  16Kz  28   5    161  132  5+/w    6+/b    16+/w   7+/b    1-/b    13+/w    |10625329
+ 3 Dugin Timur           2d RU  16Kz  28   5    159  130  23+/w   10+/w   11+/b   1-/b    6+/w    4+/b     |10837354
+ 4 Simonov Alexej        2d RU  47Ra  27   4    160  103  18+/b   17+/w   1-/w    9+/b    5+/w    3-/w     |10498906
+ 5 Frehe Renee           2d NL  Arnh  27   4    158  103  2-/b    20+/w   10+/b   11+/w   4-/b    8+/w     |10313248
+ 6 Promyslov Ivan        2d RU  47Vs  27   4    158  102  16+/b   2-/w    15+/b   12+/w   3-/b    19+/w    |10837046
+ 7 Teuber Benjamin       4d DE  HH  27   4    156  102  14-/b   19+/w   8+/b    2-/w    18+/w   9+/b     |10437174
+ 8 Mezhov Oleg           2d RU  77Mo  26   3    158  75   12+/b   1-/b    7-/w    24+/b   21+/w   5-/b     |10837068
+ 9 Sankin Timur          2d RU  47Ki  26   3    157  78   17-/b   13+/w   14+/w   4-/w    11+/b   7-/w     |10801032
+10 Mezhova Olga          2d IL  Hai   26   3    157  76   15+/w   3-/b    5-/w    20+/b   13-/b   17+/b    |10886095
+11 Vdovin Andrij         2d UA  KRih  26   3    157  76   13+/w   14+/b   3-/w    5-/b    9-/w    26+/b    |10562519
+12 Kamenskikh Anton      3d RU  16Kz  26   3    157  75   8-/w    23+/b   17+/b   6-/b    15+/w   1-/w     |10625340
+13 Solomatina Julia      1d RU  77Mo  26   3    155  75   11-/b   9-/b    25+/w   16+/b   10+/w   2-/b     |18325912 
+14 Kokozej Volodymyr     1d UA  Kyiv  26   3    154  76   7+/w    11-/w   9-/b    15-/b   24+/w   18+/w    |10986536
+15 Shevchuk Mykhailo     1d UA  Riv   26   3    154  75   10-/b   24+/w   6-/w    14+/w   12-/b   16+/b    |10333356
+16 Dumitru Alexandru     2k RO  Brai  25   2    157  50   6-/w    18+/b   2-/b    13-/w   20+/w   15-/w    |10386365
+17 Fenech Antoine        1d FR  67Se  25   2    155  51   9+/w    4-/b    12-/w   18-/b   22+/b   10-/w    |10349350
+18 Hollmann Tommy        1k NL  Eind  25   2    155  50   4-/w    16-/w   22+/b   17+/w   7-/b    14-/b    |10413502
+19 Sinca Marius          1d RO  Brai  25   2    153  46   1-/w    7-/b    27-/b   29+/w   23+/w   6-/b     |10313358
+20 Bernathova Anna       3k CZ  Libe  25   3    151  73   21+/w   5-/b    23+/b   10-/w   16-/b   25+/b    |10301984
+21 Lubos Aleksandra      3k PL  Wodz  25   3    145  70   20-/b   25-/b   30+/w   27+/w   8-/b    23+/w    |10674928
+22 Yick Wing-Jim         4k NL  Eind  25   4    144  94   26+/w   28+/b   18-/w   25+/b   17-/w   24+/b    |10549913
+23 Stochita Ionut        2k RO  Brai  24   1    153  24   3-/b    12-/w   20-/w   26+/b   19-/b   21-/b    |10850983
+24 Dumitrescu Bogdan     3k RO  Bucu  24   2    151  48   27+/w   15-/b   26+/b   8-/w    14-/b   22-/w    |10333257
+25 Barisic Nikola        4k BA  BLu   24   3    147  71   30+/b   21+/w   13-/b   22-/w   27+/b   20-/w    |10337129
+26 Shinada Kei           3k BE  Brug  24   2    145  46   22-/b   27+/b   24-/w   23-/w   31+/w   11-/w    |12050830
+27 Hollmann Kirsten      3k NL  Eind  24   2    144  47   24-/b   26-/w   19+/w   21-/b   25-/w   28+/b    |10486509
+28 Magarita Ionut        6k RO  Brai  22   3    134  63   31+/b   22-/w   29-/b   32+/w   33+/b   27-/w    |10925695
+29 Dorobantu Marius      7k RO  Slob  22   4    131  84   32+/w   31+/b   28+/w   19-/b   30-/b   34+/w    |10762279
+30 Radu Stefanita        5k RO  Slob  22   2    131  42   25-/w   32-/b   21-/b   34-/w   29+/w   33+/w    |10750289
+31 Roman Vlad            6k RO  Tims  22   3    127  59   28-/w   29-/w   35+/w   33+/b   26-/b   32+/w    |10950170
+32 Cojocaru Alexandru    6k RO  Crai  21   2    126  40   29-/b   30+/w   33-/w   28-/b   34+/w   31-/b    |10825947
+33 Cotofana Ciprian      8k RO  Slob  20   3    122  56   36+/w   34+/b   32+/b   31-/w   28-/w   30-/b    |10774280
+34 Zhurakovskyj Bohdan  10k UA  Rivn  18   3    116  54   40+/b   33-/w   36+/w   30+/b   32-/b   29-/b    |12374461
+35 Lubos Anna           11k PL  Wodz  17   3    105  50   37+/w   40+/b   31-/b   39-/w   36+/b   38-/b    |10662938
+36 Denysenko Andrij     10k UA  Kyiv  17   2    105  33   33-/b   38+/w   34-/b   37-/w   35-/w   40+/b    |10933560
+37 Beches Alexandru     11k RO  Bist  17   3    99   48   35-/b   41+/w   40+/w   36+/b   38-/w   39-/b    |10313369
+38 Radu Ancuta          12k RO  Slob  17   4    96   62   45+/w   36-/b   39-/b   40+/w   37+/b   35+/w    |12337105
+39 Marcu Ionut          14k RO  Slob  17   6    90   90   44+/w   45+/b   38+/w   35+/b   42+/b   37+/w    |10886975
+40 Korsak Marina        10k UA  Kyiv  16   1    101  15   34-/w   35-/w   37-/b   38-/b   41+/b   36-/w    |10849465
+41 Fedul Nichita        14k RO  Slob  15   4    86   53   42+/w   37-/b   43+/b   45+/b   40-/w   44+/w    |10898976
+42 Popa Cristian        15k RO  Bucu  14   4    82   50   41-/b   48+/w   44+/w   43+/b   39-/w   45+/w    |10986690
+43 Gonciar Stefania     15k RO  Brai  14   4    78   49   47+/w   44+/b   41-/w   42-/w   45+/b   46+/w    |10674345
+44 Sora Adelina         14k RO  Crai  13   2    82   22   39-/b   43-/w   42-/b   48+/w   49+/w   41-/b    |10337371
+45 Pocsai Berta         14k HU  BuPe  12   1    89   12   38-/b   39-/w   46+/b   41-/w   43-/w   42-/b    |10637352
+46 Borcea Gabriel       16k RO  Brai  12   3    70   33   52+/w   49-/b   45-/w   47+/b   48+/w   43-/b    |10701284
+47 Procopie Marcela     16k RO  Brai  12   3    69   32   43-/b   50-/w   49+/w   46-/w   52+/b   48+/b    |10874204
+48 Fogorosi Dan         16k RO  Brai  11   2    73   22   49+/w   42-/b   50+/w   44-/b   46-/b   47-/w    |10737287
+49 Voznytska Kateryna   16k UA  Rivn  11   2    69   22   48-/b   46+/w   47-/b   53+/w   44-/b   50-/w    |12086019
+50 Cita Alexandra       18k RO  BaMa  11   4    64   43   51+/w   47+/b   48-/b   52-/w   55+/w   49+/b    |10925486
+51 Dinu Marian          18k RO  Slob  11   4    58   38   50-/b   55-/w   60+/w   54+/b   53+/b   52+/w    |10837970
+52 Tarziu Sebastian     18k RO  Bist  10   3    63   28   46-/b   59+/w   55+/w   50+/b   47-/w   51-/b    |12098614
+53 Schatz Robert        18k RO  Bist  10   3    55   24   55-/b   57+/w   58+/w   49-/b   51-/w   60+/b    |12050610
+54 Calin Alexandru      20k RO  Slob  10   5    53   42   61+/b   56+/b   57+/w   51-/w   58+/w   55+/b    |12486408
+55 Motoc Mircea         19k RO  Brai  9    3    59   28   53+/w   51+/b   52-/b   62+/w   50-/b   54-/w    |12449349
+56 Motoc Radu           20k RO  Brai  9    4    47   30   64+/b   54-/w   62-/b   61+/b   57+/b   59+/w    |12474352
+57 Nechifor Vladut      19k RO  Brai  8    2    52   15   58+/b   53-/b   54-/b   63+/w   56-/w   61-/w    |12413346
+58 Nicoara Catalin      19k RO  Brai  8    2    50   15   57-/w   62+/b   53-/b   59+/w   54-/b   63-/w    |12362482
+59 Tudone Cosmin        20k RO  Slob  8    3    49   22   60+/b   52-/b   61+/w   58-/b   64+/w   56-/b    |12498409
+60 Petrov Dan-Ionut     20k RO  Brai  8    3    49   20   59-/w   63+/w   51-/b   64+/b   62+/b   53-/w    |12449327
+61 Stoean Silvia        20k RO  Brai  8    3    48   21   54-/w   64+/b   59-/b   56-/w   63+/w   57+/b    |12462351
+62 Aragea Vlad          20k RO  Slob  7    2    47   16   63+/b   58-/w   56+/w   55-/b   60-/w   64-/b    |12433410
+63 Petraru Daniel       20k RO  Slob  7    2    45   14   62-/w   60-/b   64+/w   57-/b   61-/b   58+/b    |12413412
+64 Moraru Mihai         20k RO  Slob  6    1    47   7    56-/w   61-/w   63-/b   60-/w   59-/b   62+/w    |12425413

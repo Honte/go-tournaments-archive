@@ -1,0 +1,30 @@
+website: https://www.eurogofed.org/results/youth/eygc2002.htm
+stages:
+  - type: tournament
+    file: eygc2002u12.txt
+    category: u12
+    name: U12
+    scoringColumns:
+      - mms 
+      - wins
+      - sodos
+      - sos      
+    breakers:
+      - mms
+      - sodos
+      - sos      
+    findSharedPlaces: true
+  - type: tournament
+    file: eygc2002u18.txt
+    category: u18
+    name: U18
+    scoringColumns:
+      - mms 
+      - wins
+      - sodos
+      - sos      
+    breakers:
+      - mms
+      - sodos
+      - sos
+    findSharedPlaces: true

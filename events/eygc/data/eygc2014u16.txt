@@ -1,0 +1,47 @@
+; TC[T140301I]
+; CL[A]
+; EV[European Youth Go Championship (under 16)]
+; PC[UK, Bognor Regis]
+; DT[2014-03-01,2014-03-03]
+; HA[h9]
+; KM[7.5]
+; TM[90]
+; CM[ (submitted by geoffkaniuk)]
+;.
+;McMahon Bar 4k  players 16
+;POSN NAME                       GR CO CLU    MMS WIN     SODOSSOS         1         2         3         4         5         6  
+ 1 Pitrop Alexandru-Petre    2d RO  Boto  32   6    87   177  14+/w0  2+/w0   8+/b0   3+/w0   5+/b0   12+/b0   |15262940
+ 2 Fionin Grigorij           4d RU  78SP  31   5    87   179  15+/w0  1-/b0   9+/w0   4+/b0   6+/w0   3+/b0    |16013096
+ 3 Kajmin Vjacheslav         3d RU  50Zh  30   4    86   179  16+/b0  7+/w0   5+/w0   1-/b0   12+/b0  2-/w0    |14986257
+ 4 Popov Stepan              3d RU  16Kz  30   4    86   176  9-/b0   10+/w0  11+/b0  2-/w0   8+/b0   7+/w0    |14625897
+ 5 Krushelnytskyi Valerii    3d UA  Rivn  30   4    85   177  11+/b0  12+/w0  3-/b0   13+/w0  1-/w0   10+/b0   |15450072
+ 6 Khudoleev Artem           2d RU  77Mo  30   4    83   173  7-/b0   16+/w0  14+/b0  8+/w0   2-/b0   15+/w0   |15249553
+ 7 Chernykh Anton            4d RU  50Zh  29   3    87   175  6+/w0   3-/b0   13-/w0  14+/b0  9+/w0   4-/b0    |15713467
+ 8 Wolf Oliver               4d DE  B     29   3    86   178  10+/b0  9+/w0   1-/w0   6-/b0   4-/w0   13+/b0   |14062609
+ 9 Csizmadia Robert          1k HU  BuPe  29   3    86   175  4+/w0   8-/b0   2-/b0   11+/w0  7-/b0   19+/w0   |14925416
+10 Dobranis Darius           1d RO  Bist  29   3    84   173  8-/w0   4-/b0   16+/w0  15+/b0  13+/b0  5-/w0    |15049716
+11 Law Yu_Kai                1k DE  TR    29   3    83   172  5-/w0   15+/b0  4-/w0   9-/b0   19+/w0  14+/b0   |16513563
+12 Mramorov Andrej           2k RU  77Mo  29   3    82   174  13+/b0  5-/b0   19+/w0  18+/b0  3-/w0   1-/w0    |15949923
+13 Aminov Adel               3d RU  16Kz  28   2    87   174  12-/w0  17+/b0  7+/b0   5-/b0   10-/w0  8-/w0    |14601895
+14 Bousquet Sylvain          5k FR  66Pe  28   2    85   175  1-/b0   20+/w0  6-/w0   7-/w0   17+/b0  11-/w0   |16750426
+15 Sergeant Yves             1d FR  75Op  28   2    84   173  2-/b0   11-/w0  20+/b0  10-/w0  18+/w0  6-/b0    |16974925
+16 Tomsu Adriana             3k CZ  TFMi  28   2    84   171  3-/w0   6-/b0   10-/b0  17-/w0  20+/b0  18+/w0   |16225396
+17 Wagner Gabriel            7k DE  TR    28   3    81   164  19+/b0  13-/w0  18-/w0  16+/b0  14-/w0  22+/w0   |16825468
+18 Praus Jan                 8k CZ  APmG  27   2    85   167  20-/b0  21+/w0  17+/b0  12-/w0  15-/b0  16-/b0   |15733916
+19 Groot Yuki_de             5k NL  Rijs  27   2    83   168  17-/w0  22+/w0  12-/b0  20+/w0  11-/b0  9-/b0    |15050574
+20 Vasa Vojtech              8k CZ  APmG  27   2    81   162  18+/w0  14-/b0  15-/w0  19-/b0  16-/w0  24+/w0   |15762923
+21 Riedeman Marcel          11k NL  Delf  27   3    71   150  22-/w0  18-/b0  23-/w0  25+/b0  26+/w0  28+/w0   |14601378
+22 Smith Roella             12k UK  Camb  26   3    75   156  21+/b0  19-/b0  25+/w0  23-/w0  24+/w0  17-/b0   |14713039
+23 Medak Mirta              14k HR  Zagr  26   5    64   145  28+/b0  24+/b0  21+/b0  22+/b0  25+/w0  0=0      |16525718
+24 Birckner Bruno           12k DE  J     24   1    83   150  25-/w0  23-/w0  26-/w0  28+/w0  22-/b0  20-/b0   |16950604
+25 Olivares-Thibaud Diego   13k FR  38GJ  24   2    77   150  24+/b0  28+/w0  22-/b0  21-/w0  23-/b0  26-/w0   |16086158
+26 Csizmadia Viktoria       16k HU  BuPe  24   5    53   140  31+/b0  27+/b0  24+/b0  30+/w0  21-/b0  25+/b0   |14974421
+27 Lewald Leon              15k DE  ESC   24   4    51   128  32+/w0  26-/w0  28-/b0  33+/w0  31+/w0  30+/w0   |16725137
+28 Bexfield Charlotte       14k UK  Ltch  23   2    75   146  23-/w0  25-/b0  27+/w0  24-/b0  30+/w0  21-/b0   |14901579
+29 Fathallah Marwan         17k FR  38GJ  22   4    45   114  30-/w0  32+/b0  0=0     34+/w0  33+/w0  35+/w0   |16786957
+30 Grosjean Nicolas         17k FR  73Ch  21   3    62   133  29+/b0  31+/w0  32+/w0  26-/b0  28-/b0  27-/b0   |16750327
+31 Hermanns Phillip         16k DE  LAW   20   1    76   124  26-/w0  30-/b0  33-/w0  35+/w0  27-/b0  0=0      |16713136
+32 Kriese Lovis             16k DE  J     20   1    76   122  27-/b0  29-/w0  30-/b0  0=0     35+/w0  33-/w0   |15098798
+33 Morel Aurelien           19k FR  38GJ  20   4    45   121  34+/b0  35+/w0  31+/b0  27-/b0  29-/b0  32+/b0   |16749953
+34 Niederau Lena            18k DE  LAW   19   1    76   109  33-/w0  0=0     35+/w0  29-/b0  0=0     0=0      |16733145
+35 Cramer Lina              19k DE  ????  16   0    90   117  0=0     33-/b0  34-/b0  31-/b0  32-/b0  29-/b0   |17098829

@@ -1,0 +1,50 @@
+website: https://www.eurogofed.org/results/youth/eygc2013.htm
+stages:
+  - type: tournament
+    file: eygc2013u12.txt
+    category: u12
+    name: U12
+    scoringColumns:
+      - mms 
+      - wins
+      - sodos
+      - sos
+      - sosos
+    breakers:
+      - mms
+      - sodos
+      - sos
+      - sosos
+    findSharedPlaces: true
+  - type: tournament
+    file: eygc2013u16.txt
+    category: u16
+    name: U16
+    scoringColumns:
+      - mms 
+      - wins
+      - sodos
+      - sos
+      - sosos
+    breakers:
+      - mms
+      - sodos
+      - sos
+      - sosos
+    findSharedPlaces: true    
+  - type: tournament
+    file: eygc2013u20.txt
+    category: u20
+    name: U20
+    scoringColumns:
+      - mms 
+      - wins
+      - sodos
+      - sos
+      - sosos
+    breakers:
+      - mms
+      - sodos
+      - sos
+      - sosos
+    findSharedPlaces: true

@@ -1,0 +1,45 @@
+website: https://www.eurogofed.org/results/youth/eygc2010.htm
+notes: Changes in categories because age limit at the WYGC was lowered.
+stages:
+  - type: tournament
+    file: eygc2010u12.txt
+    category: u12
+    name: U12
+    scoringColumns:
+      - mms 
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - mms
+      - sos
+      - sosos
+    findSharedPlaces: true
+  - type: tournament
+    file: eygc2010u16.txt
+    category: u16
+    name: U16
+    scoringColumns:
+      - mms 
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - mms
+      - sos
+      - sosos
+    findSharedPlaces: true    
+  - type: tournament
+    file: eygc2010u18.txt
+    category: u18
+    name: U18
+    scoringColumns:
+      - mms 
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - mms
+      - sos
+      - sosos
+    findSharedPlaces: true

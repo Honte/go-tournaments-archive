@@ -1,0 +1,86 @@
+; CL[A]
+; EV[European Youth Championship]
+; PC[PL, Ustron]
+; DT[2001-03-02,2001-03-04]
+; TC[E010302A]
+; HA[h9]
+; KM[7.5]
+; TM[75]
+;
+  1 Balogh Pal              4d HU Debr 25 5 115 139  20+/b 10+/w 17+/w  6-/b  3+/b  7+/w  |10498246
+  2 Koszegi Diana           5d HU BuPe 25 5 114 138  16+/w 11+/b  3-/w 17+/b 10+/b  4+/w  |10301247
+  3 Silt Ondrej             4d CZ Zli  24 4  94 143  19+/w  5+/w  2+/b  7-/b  1-/w 14+/b  |10337481
+  4 Burdakova Dina          2d RU 74Ch 24 4  93 141  10-/w 20+/w 11+/b  5+/w  7+/b  2-/b  |10813187
+  5 Kozlov Mykhajlo         2d UA Riv  24 4  93 141  13+/w  3-/b  8+/w  4-/b 11+/b 12+/w  |12374219
+  6 Frehe Renee             3d NL Nijm 24 4  93 139  11-/w  9+/w 14+/b  1+/w 12-/b 19+/b  |10313248
+  7 Kamenskikh Anton        2d RU 16Kz 24 4  92 141  12+/w  8+/b 25+/w  3+/w  4-/w  1-/b  |10625340
+  8 Dugin Timur             3d RU 16Kz 24 4  88 136  18+/b  7-/w  5-/b 25+/b 17+/w 10+/w  |10837354
+  9 Jurek Martin            1k CZ Mik  23 4  84 130  28+/w  6-/b 18-/b 15+/b 27+/w 17+/w  |10213753
+ 10 Kovaleva Natalja        1d RU 74Ch 23 3  69 143   4+/b  1-/b 21+/w 12+/w  2-/w  8-/b  |10537087
+ 11 Pocsai Rita             1d HU BuPe 23 3  69 142   6+/b  2-/w  4-/w 13+/b  5-/w 20+/b  |10686346
+ 12 Mezhova Olga            2d RU 77Mo 23 3  69 140   7-/b 18+/w 13+/w 10-/b  6+/w  5-/b  |10886095
+ 13 Kokozej Volodymyr       2d UA Kyiv 23 3  66 136   5-/b 19+/w 12-/b 11-/w 18+/w 16+/w  |10986536
+ 14 Fenech Antoine          2d FR 67SE 23 3  65 135  25+/b 17-/b  6-/w 18+/w 16+/b  3-/w  |10349350
+ 15 Lopatjuk Kostjantyn     2k UA Riv  22 4  79 124  34+/b 16-/b 30+/w  9-/w 23+/w 29+/b  |10849190
+ 16 Hollmann Tommy          1k NL Eind 22 3  66 137   2-/b 15+/w 19+/b 20+/w 14-/w 13-/b  |10413502
+ 17 Mezhov Oleg             3d RU 77Mo 22 2  45 142  21+/b 14+/w  1-/b  2-/w  8-/b  9-/b  |10837068
+ 18 Sinca Marius            1d RO Brai 22 2  44 137   8-/w 12-/b  9+/w 14-/b 13-/b 25+/b  |10313358
+ 19 Solomatina Julia        1d RU 77Mo 22 2  42 135   3-/b 13-/b 16-/w 28+/w 21+/b  6-/w  |18325912 
+ 20 Stochita Ionut          1d RO Brai 22 2  41 135   1-/w  4-/b 27+/b 16-/b 25+/w 11-/w  |10850983
+ 21 Lubos Aleksandra        1d PL Wodz 22 2  41 129  17-/w 25-/w 10-/b 27+/b 19-/w 24+/b  |10674928
+ 22 Barisic Nikola          3k BA BLu  21 4  77 118  31+/b 34+/w 24-/w 30+/b 29-/b 28+/w  |10337129
+ 23 Lassakova Lucia         3k SK Brat 21 4  74 116  42+/b 24+/w 28-/w 34+/w 15-/b 27+/b  |10274693
+ 24 Zaloudkova Klara        2k CZ Pra  21 3  61 124  27-/w 23-/b 22+/b 29+/w 28+/b 21-/w  |10798106
+ 25 Ente Lisa               1d DE KI 21 1  22 137  14-/w 21+/b  7-/b  8-/w 20-/b 18-/w  |10862962
+ 26 Csermenyi Orsolya       5k HU BuPe 20 5  91 109  32+/w 31+/w 34-/b 37+/b 30+/b 33+/w  |10698347
+ 27 Shevchuk Mykhailo       2k UA Riv  20 2  41 129  24+/b 30+/b 20-/w 21-/w  9-/b 23-/w  |10333356
+ 28 Zhurakovskyj Bohdan     2k UA Riv  20 2  41 128   9-/b 29+/w 23+/b 19-/b 24-/w 22-/b  |12374461
+ 29 Nicolaie Lucian         2k RO Brai 20 2  40 123  30-/w 28-/b 31+/w 24-/b 22+/w 15-/w  |10601349
+ 30 Bernathova Anna         2k CZ Libe 20 2  39 122  29+/b 27-/w 15-/b 22-/w 26-/w 31+/b  |10301984
+ 31 Yick Wing-Jim           3k NL Eind 19 2  36 117  22-/w 26-/b 29-/b 33+/w 34+/w 30-/w  |10549913
+ 32 Roman Vlad              5k RO BaMa 18 3  50 104  26-/b 33-/w 37-/w 41+/b 36+/b 34+/b  |10950170
+ 33 Kalinina Anna           5k RU 74Ch 18 3  49 105  36-/w 32+/b 42+/w 31-/b 37+/w 26-/b  |12001352
+ 34 Hollmann Kirsten        3k NL Eind 18 1  20 121  15-/w 22-/b 26+/w 23-/b 31-/b 32-/w  |10486509
+ 35 Hola Michal             9k SK BBys 17 6  85  85  53+/b 48+/b 36+/w 49+/b 40+/b 41+/w  |12449965
+ 36 Zakharzhevskij Nikolaj  7k UA Riv  17 4  64  99  33+/b 41+/w 35-/b 42+/b 32-/w 37+/w  |10813198
+ 37 Foldes Adam             7k HU Csom 16 3  48 103  41+/w 42+/w 32+/b 26-/w 33-/b 36-/b  |10913980
+ 38 Smidova Veronika        10 SK Brat 15 5  63  78  57+/b 53+/w 48+/b 40-/w 49+/w 44+/b  |10374485
+ 39 Karailiev Boris         10 SK BBys 15 5  61  74  47-/b 51+/w 57+/b 52+/w 48+/w 49+/b  |12037839
+ 40 Denysenko Andrij        9k UA Kyiv 15 4  54  86  58+/b 49+/w 41-/b 38+/b 35-/w 42+/w  |10933560
+ 41 Turner Johannes         7k RO Bist 15 2  30  98  37-/b 36-/b 40+/w 32-/w 42+/b 35-/b  |12049609
+ 42 Beches Alexandru        5k RO Bist 15 0   0 102  23-/w 37-/b 33-/b 36-/w 41-/w 40-/b  |10313369
+ 43 Brunner Vit             12 CZ Brn  14 6  68  68  55+/w 61+/w 56+/b 46+/b 52+/b 50+/w  |12513842
+ 44 Zyzak Andrzej           11 PL Wodz 14 5  61  76  56+/b 45+/w 53+/w 58+/w 47+/b 38-/w  |10949763
+ 45 Jurkova Ingrid          11 CZ Mik  14 5  61  75  46+/w 44-/b 51+/w 53+/b 58+/b 48+/w  |12362152
+ 46 Beck Patrik             11 SK BBys 13 4  46  74  45-/b 50+/w 55+/w 43-/w 53+/b 58+/w  |12437084
+ 47 Danek Martin            10 CZ Pra  13 3  38  78  39+/w 58+/b 49-/w 48-/b 44-/w 52+/w  |10298475
+ 48 Korsak Marina           9k UA Kyiv 13 2  26  87  49+/b 35-/w 38-/w 47+/w 39-/b 45-/b  |10849465
+ 49 Lubos Anna              8k PL Wodz 13 1  13  88  48-/w 40-/b 47+/b 35-/w 38-/b 39-/w  |10662938
+ 50 Asztalos Peter          12 HU BuPe 12 4  41  68  62+/w 46-/b 61+/w 51+/b 57+/w 43-/b  |12001968
+ 51 Lubos Barbara           11 PL Rybn 12 3  34  75  52+/w 39-/b 45-/b 50-/w 56+/w 55+/b  |10925761
+ 52 Gazdag Balazs           10 HU BuPe 12 2  22  76  51-/b 57+/w 58+/w 39-/b 43-/w 47-/b  |12086360
+ 53 Voznytska Kateryna      9k UA Riv  12 1  11  84  35-/w 38-/b 44-/b 45-/w 46-/w 57+/b  |12086019
+ 54 Divisova Viki           15 CZ Pac  11 6  49  49  69+/b 64+/w 70+/b 60+/b 59+/w 62+/w  |10601954
+ 55 Mazlova Julia           11 RU 77Mo 11 2  20  70  43-/b 56+/w 46-/b 57-/w 61+/b 51-/w  |12486628
+ 56 Csermenyi Zsuzsanna     11 HU BuPe 11 2  19  70  44-/w 55-/b 43-/w 59+/w 51-/b 63+/b  |12013034
+ 57 Romik Piotr             10 PL Wars 11 1  11  77  38-/w 52-/b 39-/w 55+/b 50-/b 53-/w  |10949730
+ 58 Maes Rianne             9k NL Eind 11 0   0  81  40-/w 47-/w 52-/b 44-/b 45-/w 46-/b  |10725308
+ 59 Smigowska Agnieszka     14 PL Wodz 10 4  35  57  64+/b 63+/w 60+/w 56-/b 54-/b 61+/w  |12098372
+ 60 Lassakova Vladimira     14 SK Brat  9 3  23  53  70+/w 62+/b 59-/b 54-/w 63-/w 64+/b  |10201697
+ 61 Waczulikova Barbora     13 SK Brat  9 2  18  65  63+/w 43-/b 50-/b 62+/b 55-/w 59-/b  |10650354
+ 62 Baev Vitalij            13 RU 77Mo  9 2  17  58  50-/b 60-/w 63+/b 61-/w 64+/w 54-/b  |12633126
+ 63 Zhmak Ivan              13 RU 77Mo  9 2  16  55  61-/b 59-/b 62-/w 69+/w 60+/b 56-/w  |12601589
+ 64 Smidova Alexandra       14 SK Brat  8 2  13  52  59-/w 54-/b 69+/w 70+/b 62-/b 60-/w  |10301489
+ 65 Crisan Bogdan           18 RO BaMa  7 5  26  33  74+/b 67+/w 72+/b 66+/w 70+/w 69-/b  |12550857
+ 66 Swierkot Katarzyna      18 PL Wodz  7 5  23  30  68+/b 72+/w 67+/w 65-/b 73+/b 75+/w  |12001374
+ 67 Bazynski Jan            17 PL Wars  7 4  21  35  72+/w 65-/b 66-/b 71+/w 69+/b 70+/w  |10925728
+ 68 Leyrer Adam             18 HU XXXX  7 5  14  21  66-/w 73+/b 71+/b 72+/w 75+/w 76+/b  |12613590
+ 69 Pajak Dawid             15 PL Wodz  7 2  13  48  54-/w 70+/b 64-/b 63-/b 67-/w 65+/w  |12386319
+ 70 Piwiec Arkadiusz        14 PL Wars  6 0   0  49  60-/b 69-/w 54-/w 64-/w 65-/b 67-/b  |10862852
+ 71 Palij Alexandr          20 UA Riv   4 4   8  22  75+/w 76+/b 68-/w 67-/b 74+/b 73+/w  |12625591
+ 72 Hedes Raluca            16 RO xxx   4 0   0  31  67-/b 66-/b 65-/w 68-/b 76-/w 74-/w  |12637592
+ 73 Voznicova Hana          20 CZ Pra   3 3   5  23  76+/w 68-/w 75+/b 74+/b 66-/w 71-/b  |12613381
+ 74 Puhachov Ilja           20 UA Kyiv  2 2   5  21  65-/w 75-/b 76+/b 73-/w 71-/w 72+/b  |12649593
+ 75 Cotoiu Alexandru        20 RO Brai 2 2   3  24  71-/b 74+/w 73-/w 76+/w 68-/b 66-/b  |12649362
+ 76 Malinowska Justyna      20 PL xxx   1 1   4  22  73-/b 71-/w 74-/w 75-/b 72+/b 68-/w  |12650594
+

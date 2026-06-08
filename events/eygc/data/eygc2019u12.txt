@@ -1,0 +1,164 @@
+; TC[T190502A]
+; CL[A]
+; EV[European Youth Go Championship Under12]
+; PC[RU, Moscow]
+; DT[2019-05-02,2019-05-04]
+; HA[h9]
+; KM[6.5]
+; TM[75]
+; CM[ (submitted by Serpov)]
+;.
+  1 Ovsiienko Vsevolod       1d UA  Kyiv  18   5    18   101  84   10+/b    9+/w     2+/w     4+/w     3-/b     5+/b      |17633902
+  2 Pishchalnikov Artemij    1d RU  59So  18   5    18   101  83   12+/w    7+/b     1-/b     11+/w    4+/b     3+/w      |16549071
+  3 Igonin Alexej            2k RU  77Mo  17   4    17   101  66   7-/b     21+/w    14+/b    8+/w     1+/w     2-/b      |17837105
+  4 Khusainov Askar          2k RU  16Kz  17   4    17   100  64   21+/w    5+/b     8+/w     1-/b     2-/w     18+/b     |17525706
+  5 Lavrov Egor              1d RU  77Mo  17   4    17   99   64   16+/b    4-/w     12+/b    6+/b     9+/w     1-/w      |17886462
+  6 Gimadiev Artur           1k RU  16Kz  17   4    17   98   64   13+/w    8-/b     15+/b    5-/w     11+/b    9+/b      |17849073
+  7 Boldeanu Dragos          1d RO  Brai  17   4    17   97   63   3+/w     2-/w     16+/b    9-/b     17+/b    12+/w     |16750349
+  8 Xing Yuze                1d DE  HD    17   4    17   97   63   11+/w    6+/w     4-/b     3-/b     24+/w    10+/b     |18525012
+  9 Rotarita Stefan_Adrian   1k RO  U12   16   3    16   101  49   15+/b    1-/b     13+/w    7+/w     5-/b     6-/w      |17837270
+ 10 Tarasov Ruslan           2k RU  16Kz  16   3    16   96   45   1-/w     14-/b    19+/w    23+/b    13+/b    8-/w      |17513705
+ 11 Touzot Cyan              2k FR  75Op  16   3    16   96   44   8-/b     18+/w    25+/w    2-/b     6-/w     19+/b     |17086542
+ 12 Chirkov Andrej           4k RU  50Lj  16   3    16   96   44   2-/b     20+/w    5-/w     32+/w    14+/b    7-/b      |18301580
+ 13 Ivanov Nikolaj           5k RU  78SP  16   3    16   94   45   6-/b     22+/b    9-/b     20+/w    10-/w    17+/w     |18037283
+ 14 Shchepaniuk Oleksandr    6k UA  Kyiv  16   4    16   93   60   19+/b    10+/w    3-/w     16+/b    12-/w    27+/b     |18062924
+ 15 Melnyk Anna              5k UA  Kyiv  16   3    16   92   44   9-/w     23+/b    6-/w     17-/w    22+/b    16+/b     |17886517
+ 16 Bugaj Antoni             3k PL  Wars  15   2    15   95   29   5-/w     17+/b    7-/w     14-/w    30+/b    15-/w     |17898078
+ 17 Shalnev Svjatoslav       6k RU  50Zh  15   3    15   93   45   29+/w    16-/w    18+/b    15+/b    7-/w     13-/b     |17337298
+ 18 Shpakovskij Vjacheslav   6k RU  77Mo  15   3    15   91   43   28+/w    11-/b    17-/w    27+/b    20+/b    4-/w      |18633098
+ 19 Bondarenko Vitalij       9k RU  77Mo  15   3    15   90   42   14-/w    28+/b    10-/b    26+/b    23+/w    11-/w     |17937348
+ 20 Medak Stjepan            7k HR  Zagr  15   3    15   89   42   27+/b    12-/b    26+/w    13-/b    18-/w    24+/b     |17437574
+ 21 Makarov Kirill           5k RU  49Ma  15   2    15   88   26   4-/b     3-/b     23-/w    24-/w    41+/w    25+/b     |18674458
+ 22 Ponomareva Radmila      11k RU  18Iz  15   4    15   87   55   33+/b    13-/w    30+/w    25+/b    15-/w    26+/w     |18513462
+ 23 Bignov Rustam            7k RU  74Ch  14   2    14   90   29   26+/b    15-/w    21+/b    10-/w    19-/b    31-/w     |18225405
+ 24 Ilichev Andrej          12k RU  77Mo  14   4    14   88   56   36+/b    31+/w    28+/w    21+/b    8-/b     20-/w     |18625178
+ 25 Salamatova Elizaveta     9k RU  59So  14   3    14   87   41   34+/w    27+/w    11-/b    22-/w    29+/b    21-/w     |17962395
+ 26 Ponomarev Lev            8k RU  18Iz  14   2    14   86   27   23-/w    29+/b    20-/b    19-/w    32+/w    22-/b     |18501461
+ 27 Kovalevskaja Valeria     8k RU  50Zh  14   2    14   85   25   20-/w    25-/b    42+/b    18-/w    33+/w    14-/w     |17849106
+ 28 Borisova Maria           9k RU  74Ch  14   2    14   84   26   18-/b    19-/w    24-/b    30-/w    35+/b    33+/b     |17598075
+ 29 Gushchin Roman          10k RU  18Iz  14   2    14   83   27   17-/b    26-/w    32-/b    31+/w    25-/w    34+/w     |18437815
+ 30 Solodnikov Vladimir     14k RU  77Mo  14   4    14   82   52   43+/w    33+/w    22-/b    28+/b    16-/w    32+/b     |17837468
+ 31 Lysenko Gleb            11k RU  77Mo  14   4    14   80   52   37+/w    24-/b    35+/w    29-/b    39+/w    23+/b     |18633175
+ 32 Khabibullina Diana      12k RU  16Kz  13   3    13   82   38   49+/b    34+/w    29+/w    12-/b    26-/b    30-/w     |17962780
+ 33 Travkin Dmitrij          9k RU  50Lj  13   2    13   82   25   22-/w    30-/b    40+/w    34+/b    27-/b    28-/w     |18349584
+ 34 Rozanov Mikhail         10k RU  66Ek  13   2    13   79   25   25-/b    32-/b    39+/w    33-/w    36+/w    29-/b     |18501934
+ 35 Rudik Pavel             12k RU  77Mo  13   4    13   76   48   47+/b    38+/w    31-/b    40+/b    28-/w    41+/w     |18637861
+ 36 Kojushev Bogdan         11k RU  77Mo  13   3    13   73   34   24-/w    40-/b    51+/b    48+/w    34-/b    42+/w     |18650093
+ 37 Gimaletdinova Azalia    11k RU  16Kz  13   3    13   70   33   31-/b    39-/w    47-/b    54+/w    48+/b    40+/w     |17649731
+ 38 Hrabarchuk Yeva         13k UA  Kyiv  13   5    13   69   56   57+/w    35-/b    50+/w    43+/b    47+/w    39+/b     |17833519
+ 39 Pavlinskij Ernest       11k RU  77Mo  12   3    12   76   36   41+/w    37+/b    34-/b    47+/w    31-/b    38-/w     |17850437
+ 40 Zinoviev Mykhailo       12k UA  Khar  12   3    12   74   35   56+/b    36+/w    33-/b    35-/w    44+/w    37-/b     |18333832
+ 41 Zabolotnaja Sofia       12k RU  27Kh  12   3    12   73   33   39-/b    56+/w    49+/b    42+/w    21-/b    35-/b     |17413429
+ 42 Kristensen David        12k DK  KGK   12   3    12   71   32   48+/b    49+/w    27-/w    41-/b    54+/b    36-/b     |18525364
+ 43 Sgibneva Sofia          12k RU  77Mo  12   3    12   69   31   30-/b    54+/w    48-/w    38-/w    52+/b    60+/w     |17474754
+ 44 Zatickij Mikhail        13k RU  78SP  12   4    12   66   43   50-/w    66+/w    45+/b    49+/b    40-/b    51+/w     |18949469
+ 45 Postnikov Mikhail       14k RU  78SP  12   4    12   64   42   55-/b    58+/w    44-/w    57+/w    50+/b    48+/b     |17533527
+ 46 Shalnev Vladislav       15k RU  50Zh  12   6    12   59   59   74+/b    68+/w    59+/w    56+/w    49+/b    47+/b     |18686063
+ 47 Podbolotov Daniil       12k RU  74Ch  11   2    11   74   24   35-/w    50+/b    37+/w    39-/b    38-/b    46-/w     |18025876
+ 48 Dmitriev Fedor          12k RU  18Iz  11   2    11   71   21   42-/w    65+/b    43+/b    36-/b    37-/w    45-/w     |18798428
+ 49 Ganieva Vita            11k RU  18Iz  11   1    11   71   10   32-/w    42-/b    41-/w    44-/w    46-/w    63+/b     |18786427
+ 50 Kudrjashov Alexandr     13k RU  74Ch  11   3    11   68   32   44+/b    47-/w    38-/b    55+/b    45-/w    59+/w     |18001698
+ 51 Malko Pavel             12k RU  78SP  11   3    11   65   30   54-/w    52+/b    36-/w    66+/b    55+/w    44-/b     |17925259
+ 52 Ponomarev Daniil        15k RU  18Iz  11   4    11   62   39   61+/b    51-/w    58+/b    65+/w    43-/w    55+/b     |18733429
+ 53 Almukhametov Marat      15k RU  16Kz  11   5    11   55   45   67+/b    59-/b    69+/w    73+/w    65+/b    54+/b     |17998761
+ 54 Makarov Nikita          13k RU  27Kh  10   2    10   68   20   51+/b    43-/b    65+/w    37-/b    42-/w    53-/w     |17833013
+ 55 Kalimullin Ilnur        14k RU  16Kz  10   3    10   65   32   45+/w    57+/b    56+/b    50-/w    51-/b    52-/w     |18201403
+ 56 Smirnova Alisa          11k RU  52Ar  10   1    10   65   9    40-/w    41-/b    55-/w    46-/b    62-/w    67+/b     |18549564
+ 57 Bignova Oxana           12k RU  74Ch  10   2    10   63   18   38-/b    55-/w    63+/w    45-/b    60-/b    86+/w     |18386346
+ 58 Rasolko Vlad            14k BY  Mins  10   3    10   61   28   60+/w    45-/b    52-/w    62-/b    69+/b    66+/w     |17498459
+ 59 Kokhtarev Dmitrij       15k RU  77Mo  10   4    10   58   35   88+/b    53+/w    46-/b    75+/w    66+/b    50-/b     |17462753
+ 60 Urmanche Kamil          14k RU  16Kz  10   3    10   58   28   58-/b    73-/b    74+/w    64+/w    57+/w    43-/b     |18662061
+ 61 Romanenko Maria         14k RU  77Mo  10   3    10   56S  25S  52-/w    63-/b    62-/b    80+/w    76+/w    65+/b     |18637520
+ 62 Korobov Artem           15k RU  50Zh  10   5    10   56   46   94+/b    67+/w    61+/w    58+/w    56+/b    64-/b     |18962405
+ 63 Kolomiec Viktoria       16k RU  50Zh  10   4    10   55S  34S  77+/w    61+/w    57-/b    76+/b    75+/w    49-/w     |18949403
+ 64 Arsentjev Grigorij      15k RU  77Mo  10   4    10   53   35   73-/w    78+/b    68+/b    60-/b    74+/b    62+/w     |17849469
+ 65 Kukolev Demid           13k RU  52NN  9    1    9    62   9    66+/b    48-/w    54-/b    52-/b    53-/w    61-/w     |18325560
+ 66 Tukmeeva Alisa          13k RU  16Kz  9    1    9    60S  8S   65-/w    44-/b    76+/b    51-/w    59-/w    58-/b     |17974781
+ 67 Vershinin Matvej        16k RU  18Iz  9    3    9    55   24   53-/w    62-/b    82+/b    79+/w    73+/b    56-/w     |18601627
+ 68 Gaptrakhimova Majja     15k RU  18Iz  9    3    9    54   23   79+/w    46-/b    64-/w    91+/b    71-/w    80+/b     |18698625
+ 69 Petryk Danylo           15k UA  Kyiv  9    3    9    52S  23   76-/w    89+/b    53-/b    78+/b    58-/w    81+/w     |18601594
+ 70 Touzot Soren            17k FR  75Op  9    5    9    44   36   84-/w    110+/b   103+/b   77+/w    79+/b    75+/w     |19037128
+ 71 Timoshenko Mikhail      17k RU  74Ch  9    5    9    41   35   101-/w   107+/b   117+/b   90+/w    68+/b    74+/b     |17925270
+ 72 Abzalilov Kirill        18k RU  16Kz  9    6    9    39   39   116+/b   106+/w   92+/w    102+/b   88+/w    73+/b     |18998375
+ 73 Igonin Ivan             15k RU  77Mo  8    2    8    57   20   64+/b    60+/w    75-/b    53-/b    67-/w    72-/w     |17913148
+ 74 Ledovskaja Ellina       16k RU  18Iz  8    2    8    56   15   46-/w    79+/b    60-/b    88+/b    64-/w    71-/w     |18474819
+ 75 Ponomareva Margarita    16k RU  18Iz  8    3    8    52   23   83+/b    88+/w    73+/w    59-/b    63-/b    70-/b     |19037810
+ 76 Azmukhametov Dinar      15k RU  16Kz  8S   2    8    52   17   69+/b    77+/b    66-/w    63-/w    61-/b    0=        |17913764
+ 77 Luferchik Ilja          15k BY  MDDM  8    2    8    49S  14   63-/b    76-/w    80-/w    70-/b    98+/b    94+/b     |17433460
+ 78 Glushkov Grigorij       16k RU  74Ch  8    3    8    49   22   92+/b    64-/w    81+/b    69-/w    93+/w    83-/w     |18986561
+ 79 Semenova Alena          16k RU  74Ch  8    2    8    48   13   68-/b    74-/w    104+/b   67-/b    70-/w    93+/w     |18562973
+ 80 Kamaletdinov Emil       17k RU  16Kz  8    4    8    47   28   118+/w   96+/b    77+/b    61-/b    84+/w    68-/w     |18649675
+ 81 Dusanic Uros            17k RS  NiPr  8    4    8    46   29   102+/b   97+/w    78-/w    85+/b    82+/w    69-/b     |18425638
+ 82 Kirillin Mark           18k RU  16Kz  8    4    8    45   28   103+/b   92+/w    67-/w    83+/b    81-/b    90+/w     |19049536
+ 83 Shundikova Varvara      17k RU  59So  8    3    8    44   21   75-/w    93-/b    95+/b    82-/w    105+/w   78+/b     |18713189
+ 84 Ovsiienko Tymofii       17k UA  Kyiv  8    4    8    43   28   70+/b    91-/w    102+/w   101+/w   80-/b    89+/b     |18662325
+ 85 Fedoseev Alexandr       16k RU  18Iz  8    3    8    43   21   89-/w    90-/b    87+/w    81-/w    101+/b   91+/b     |18998496
+ 86 Khazeev Albert          19k RU  16Kz  8    5    8    42   32   105+/b   118+/b   90+/w    89+/w    91+/b    57-/b     |18674678
+ 87 Nikonorova Ekaterina    18k RU  78SP  8    5    8    41   33   100+/w   103+/w   85-/b    96+/b    106+/w   88+/b     |17674437
+ 88 Rusanov Andrej          15k RU  27Kh  7    1    7    50   7    59-/w    75-/b    93+/b    74-/w    72-/b    87-/w     |18033895
+ 89 Vasjutinskij Kirill     17k RU  50Do  7    2    7    47   15   85+/b    69-/w    91-/w    86-/b    95+/w    84-/w     |18474731
+ 90 Podojnikov Fedor        18k RU  50Zh  7    3    7    46   21   111+/w   85+/w    86-/b    71-/b    92+/w    82-/b     |18933519
+ 91 Sgibneva Julia          17k RU  77Mo  7    3    7    45   20   117+/w   84+/b    89+/b    68-/w    86-/w    85-/w     |17513045
+ 92 Shirobokova Anastasia   17k RU  18Iz  7    2    7    45   13   78-/w    82-/b    72-/b    99+/w    90-/b    113+/w    |18901498
+ 93 Kolobyncev Alexandr     17k RU  74Ch  7    3    7    43   20   112+/b   83+/w    88-/w    104+/w   78-/b    79-/b     |18513968
+ 94 Kulbeda Sofia           17k RU  77Mo  7    3    7    43   18   62-/w    95-/b    109+/w   108+/b   104+/b   77-/w     |18633483
+ 95 Regos Hunor             18k HU  BPXI  7    4    7    41   26   98+/b    94+/w    83-/w    107+/w   89-/b    109+/b    |19249098
+ 96 Timoshenko Viktor       17k RU  74Ch  7    3    7    40   17   97-/b    80-/w    123+/b   87-/w    108+/w   105+/b    |17986276
+ 97 Mukhin Ilja             17k RU  18Iz  7    3    7    39   18   96+/w    81-/b    101-/b   98-/w    119+/b   103+/w    |18725432
+ 98 Jundunova Janzhina      19k RU  77Mo  7    4    7    38   23   95-/w    130+/w   106+/b   97+/b    77-/w    104+/w    |18750149
+ 99 Savytskyi Avhust        19k UA  Kyiv  7    5    7    34   27   126+/w   111+/b   118+/w   92-/b    116+/w   101+/w    |19237185
+100 Sgibneva Ekaterina      18k RU  77Mo  7    4    7    34   21   87-/b    132+/w   116-/b   121+/w   110+/b   102+/w    |17525046
+101 Erlikh Emilia           17k RU  59So  6    2    6    45   16   71+/b    104-/w   97+/w    84-/b    85-/w    99-/b     |17986397
+102 Makarova Emilia         17k RU  27Kh  6    2    6    44   12   81-/w    108+/b   84-/b    72-/w    114+/w   100-/b    |18374367
+103 Davydovich Roman        17k RU  18Iz  6    2    6    42   10   82-/w    87-/b    70-/w    117+/w   126+/b   97-/b     |18598987
+104 Serjapin Artem          17k RU  74Ch  6    2    6    41   12   106+/w   101+/b   79-/w    93-/b    94-/w    98-/b     |18386621
+105 Khamuza Igor            18k RU  77Mo  6    3    6    39   16   86-/w    113+/b   120+/w   116+/b   83-/b    96-/w     |18698064
+106 Kojushev Roman          20k RU  77Mo  6    2    6    39   9    104-/b   72-/b    98-/w    124+/w   87-/b    138+/w    |19025952
+107 Kozlova Daria           18k RU  66Ek  6    3    6    38   16   120+/w   71-/w    112+/b   95-/b    109-/b   123+/b    |18513935
+108 Korotovskikh Kirill     18k RU  74Ch  6    3    6    37   17   109+/b   102-/w   110+/b   94-/w    96-/b    125+/w    |19250352
+109 Skripkin Timofej        19k RU  50Kl  6    3    6    35   15   108-/w   122+/w   94-/b    130+/b   107+/w   95-/w     |18625706
+110 Semakina Alena          18k RU  59So  6    3    6    35   13   133+/b   70-/w    108-/w   131+/b   100-/w   119+/b    |18401174
+111 Pugone Alisia           18k RU  10Pt  6    3    6    33   14   90-/b    99-/w    124-/b   135+/w   122+/w   120+/b    |18662809
+112 Ovchinnikova Maria      18k RU  18Iz  6    2    6    33   10   93-/w    117-/b   107-/w   119-/w   124+/b   121+/b    |18701419
+113 Paramonova Alisa        19k RU  74Ch  6    4    6    32   19   125+/b   105-/w   132+/b   120+/w   117+/w   92-/b     |18913796
+114 Chernova Anastasia      20k RU  50Zh  6    5    6    25S  19S  154+/w   146+/b   134+/b   118+/w   102-/b   116+/w    |19033872
+115 Osman Igor              20k RU  50So  6    5    6    25   21   131-/w   153+/b   127+/b   128+/w   118+/b   117+/w    |18998529
+116 Shikalov Egor           18k RU  18Iz  5    2    5    40   12   72-/w    121+/b   100+/w   105-/w   99-/b    114-/b    |18762436
+117 Vojtovich Ksenia        17k RU  27Kh  5    1    5    40   6    91-/b    112+/w   71-/w    103-/b   113-/b   115-/b    |18274982
+118 Sergeeva Sofia          17k RU  74Ch  5    1    5    39   4    80-/b    86-/w    99-/b    114-/b   115-/w   140+/w    |18537970
+119 Bugaj Zofia             19k PL  Pias  5    3    5    32   14   122-/b   127+/w   142+/w   112+/b   97-/w    110-/w    |18201546
+120 Okhotina Anna           18k RU  59So  5    2    5    32   8    107-/b   134+/w   105-/b   113-/b   133+/w   111-/w    |18637630
+121 Ukhov Alexej            19k RU  74Ch  5    3    5    31   13   136+/w   116-/w   122+/b   100-/b   130+/b   112-/w    |18525958
+122 Turuk Vasilij           20k RU  74Ch  5    3    5    30   13   119+/w   109-/b   121-/w   137+/w   111-/b   133+/b    |18933794
+123 Poljarus Denis          20k RU  78SP  5    4    5    29   16   145+/w   135+/b   96-/w    129+/b   131+/b   107-/w    |19049316
+124 Rudik Denis             20k RU  59So  5    4    5    27   15   153+/w   136+/b   111+/w   106-/b   112-/w   131+/w    |18613056
+125 Plakhtienko Veronika    19k RU  50Kr  5    3    5    27   11   113-/w   131-/b   139+/w   144+/b   134+/w   108-/b    |19013874
+126 Vajnapel Elizaveta      19k RU  77Mo  5    3    5    27   11   99-/b    142-/w   143+/b   132+/w   103-/w   136+/b    |19062230
+127 Elovego Alexandr        20k RU  78SP  5    4    5    26   15   143+/w   119-/b   115-/w   141+/b   135+/b   130+/w    |19037315
+128 Sergeeva Anna           19k RU  74Ch  5    3    5    26   12   130-/b   133-/w   138+/w   115-/b   139+/b   134+/w    |18901564
+129 Ramazanova Karina       20k RU  16Kz  5    4    5    20   12   142-/b   151+/w   145+/b   123-/w   137+/b   143+/w    |18774140
+130 Kristensen Oliver       19k DK  KGK   4    2    4    32   9    128+/w   98-/b    133+/b   109-/w   121-/w   127-/b    |18550367
+131 Eliseeva Tatjana        20k RU  39Ka  4    3    4    31   15   115+/b   125+/w   137+/b   110-/w   123-/w   124-/b    |18637608
+132 Smirnov Savelij         19k RU  52NN  4    2    4    29   7    135+/w   100-/b   113-/w   126-/b   140-/w   147+/b    |18598283
+133 Mudarisova Lejla        19k RU  16Kz  4    2    4    28   8    110-/w   128+/b   130-/w   142+/b   120-/b   122-/w    |19074561
+134 Vajnapel Eva            19k RU  77Mo  4    2    4    28   7    149+/w   120-/b   114-/w   136+/b   125-/b   128-/b    |19062219
+135 Marz Leopold            19k DE  J     4    2    4    26   6    132-/b   123-/w   149+/b   111-/b   127-/w   145+/w    |18274872
+136 Kaminskij Andrej        19k RU  77Mo  4    2    4    25   6    121-/b   124-/w   146+/b   134-/w   145+/b   126-/w    |19050845
+137 Repina Arina            20k RU  59So  4    3    4    24   10   144+/b   138+/w   131-/w   122-/b   129-/w   146+/b    |18637058
+138 Kudrjashova Anna        20k RU  74Ch  4    3    4    23   8    148+/w   137-/b   128-/b   151+/w   142+/w   106-/b    |18562962
+139 Novikova Daria          20k RU  77Mo  4    4    4    22   12   150+/b   147+/w   125-/b   146+/w   128-/w   144+/w    |19201831
+140 Zinovenkov Anton        20k BY  Mins  4    4    4    20   12   141+/b   144-/w   153+/w   143+/b   132+/b   118-/b    |19298829
+141 Nooijens Collin         19k NL  xxxx  4    4    4    20   11   140-/w   152+/b   147+/w   127-/w   144+/b   142+/b    |19213832
+142 Brenishter Gleb         20k RU  50Zh  3    2    3    27   10   129+/w   126+/b   119-/b   133-/w   138-/b   141-/w    |19001213
+143 Konev Vladislav         20k RU  27Kh  3    2    3    25   6    127-/b   149+/b   126-/w   140-/w   150+/w   129-/b    |18762843
+144 Gimadieva Ruslana       20k RU  16Kz  3    2    3    24   7    137-/w   140+/b   148+/b   125-/w   141-/w   139-/b    |19033542
+145 Marz Larissa            20k DE  J     3    2    3    23S  5S   123-/b   154+/b   129-/w   148+/w   136-/w   135-/b    |18413945
+146 Bogdanova Sofia         20k RU  50So  3    2    3    23   5    147+/b   114-/w   136-/w   139-/b   152+/b   137-/w    |18937523
+147 Fedorov Petr            20k RU  77Mo  3    2    3    20   5    146-/w   139-/b   141-/b   0+       148+/w   132-/w    |19062857
+148 Ivannikova Alisa        20k RU  50Zh  3    2    3    18   5    138-/b   150+/w   144-/w   145-/b   147-/b   152+/w    |19037876
+149 Klimova Renata          20k RU  50Po  3    2    3    18   4    134-/b   143-/w   135-/w   150-/w   0+       151+/b    |19274475
+150 Ajdanaleev Daniel       20k RU  16Kz  3    3    3    16   6    139-/w   148-/b   152+/w   149+/b   143-/b   153+/w    |19086540
+151 Polskaja Taisia         20k RU  77Mo  2    2    2    17S  3S   152-/w   129-/b   154+/w   138-/b   153+/w   149-/w    |19237834
+152 Grinchenko Ksenija      20k RU  50So  2    2    2    16   3    151+/b   141-/w   150-/b   153+/b   146-/w   148-/b    |19233830
+153 Smirnova Nelli          20k RU  78SP  1    0    1    22   0    124-/b   115-/w   140-/b   152-/w   151-/b   150-/b    |19250253
+154 Novokhatskaja Marina    20k RU  77Mo  2S   0    1    14   0    114-/b   145-/w   151-/b   0=       0=       0=        |19001972

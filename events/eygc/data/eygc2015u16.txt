@@ -1,0 +1,63 @@
+; TC[E150313B]
+; CL[A]
+; EV[European Youth Go Championship (under 16)]
+; PC[NL, Zandvoort]
+; DT[2015-03-13,2015-03-15]
+; HA[h9]
+; KM[6.5]
+; TM[80]
+; CM[Played with Ing timing rules (penalty points for each overtime) (submitted by Herman Hiddema)]
+;.
+ 1 Kajmin Vjacheslav            3d RU  50Zh  23   5    108  131  9+/w    3+/b    8+/w    2-/w    4+/b    6+/b     |14986257
+ 2 Krushelnytskyi Valerii       3d UA  Rivn  23   5    107  130  15+/b   4+/w    6+/w    1+/b    3-/w    7+/b     |15450072
+ 3 Popov Stepan                 5d RU  16Kz  23   5    106  129  6+/b    1-/w    15+/w   7+/b    2+/b    5+/b     |14625897
+ 4 State Silvestru              2d RO  Bucu  22   4    82   128  13+/b   2-/b    5+/w    8+/w    1-/w    14+/b    |15362039
+ 5 Walka Johannes               3d DE  S     21   3    62   128  7-/w    11+/b   4-/b    9+/b    8+/w    3-/w     |16898431
+ 6 Shakhov Kim                  1d RU  77Mo  21   3    61   130  3-/w    9+/b    2-/b    11+/w   13+/b   1-/w     |16762284
+ 7 Dobricyn Mikhail             3k RU  77Mo  21   3    61   128  5+/b    8-/w    13+/b   3-/w    10+/b   2-/w     |15913920
+ 8 Chernykh Anton               4d RU  50Zh  21   3    61   127  14+/w   7+/b    1-/b    4-/b    5-/b    15+/w    |15713467
+ 9 Ougier Guillaume             1d FR  92An  21   3    58   123  1-/b    6-/w    20+/b   5-/w    12+/w   13+/w    |15762186
+10 Schaaf Emanuel               5k DE  TR    20   4    76   117  20+/w   12-/w   16+/b   15+/b   7-/w    17+/b    |16550567
+11 Pylypchuk Andrii             3k UA  Rivn  20   3    57   118  12+/b   5-/w    17+/w   6-/b    16-/w   20+/b    |15025175
+12 Samajova Kamila              5k CZ  TOst  20   3    56   117  11-/w   10+/b   14-/w   21+/w   9-/b    16+/b    |14913778
+13 Galunov Jakov                3k IL  Hai   20   2    39   124  4-/w    17+/b   7-/w    14+/b   6-/w    9-/b     |16233976
+14 Dobranis Darius              1d RO  Bist  20   2    39   122  8-/b    15-/w   12+/b   13-/w   17+/b   4-/w     |15049716
+15 Mramorov Andrej              2d RU  77Mo  20   2    38   125  2-/w    14+/b   3-/b    10-/w   19+/b   8-/b     |15949923
+16 Zemor Solal                  5k FR  33Bo  19   4    73   113  19+/w   21+/b   10-/w   20+/b   11+/b   12-/w    |15849867
+17 Arsentjev Egor               3k RU  77Mo  19   2    35   115  21+/b   13-/w   11-/b   19+/w   14-/w   10-/w    |16037285
+18 Vavryk Anastasiia            7k UA  Rivn  18   5    79   97   24+/b   19-/b   23+/w   25+/w   22+/w   21+/w    |15813369
+19 Defer Tristan                6k CZ  Brno  18   3    51   109  16-/b   18+/w   21+/w   17-/b   15-/w   23+/b    |16486074
+20 Groot Yuki_de                5k NL  Rijs  18   2    33   113  10-/b   23+/b   9-/w    16-/w   21+/b   11-/w    |15050574
+21 Weigmann Arved_Ben_Gerhard   4k DE  P     17   0    0    112  17-/w   16-/w   19-/b   12-/b   20-/w   18-/b    |15713379
+22 State Sebastian             11k RO  Bucu  16   5    71   89   34+/b   28+/w   24+/w   23+/b   18-/b   25+/b    |15413035
+23 Malko Yaroslav               7k UA  Rivn  16   2    30   100  25+/b   20-/w   18-/b   22-/w   24+/b   19-/w    |14937670
+24 Morel Aurelien               9k FR  38GJ  15   3    40   90   18-/w   25+/b   22-/b   34+/w   23-/w   27+/b    |16749953
+25 Kollner Barnabas             8k HU  BuPe  15   2    26   91   23-/w   24-/w   29+/b   18-/b   27+/b   22-/w    |15633794
+26 Olivares-Thibaud Diego      11k FR  38GJ  14   5    58   71   39+/b   34+/w   27-/w   30+/b   31+/w   32+/b    |16086158
+27 Medak Mirta                 12k HR  Zagr  13   4    51   81   33+/w   32+/w   26+/b   28+/b   25-/w   24-/w    |16525718
+28 Fathallah Marwan            11k FR  38GJ  13   3    35   76   29+/w   22-/b   34-/b   27-/w   39+/b   30+/w    |16786957
+29 Riedeman Marcel              8k NL  Delf  13   3    34   74   28-/b   30+/w   25-/w   31-/b   36+/w   34+/b    |14601378
+30 Tudosie Catalina_Bianca      9k RO  Drob  12   3    36   76   31+/w   29-/b   33+/b   26-/w   34+/w   28-/b    |16274456
+31 Terry Alex                  10k UK  Bung  12   3    35   73   30-/b   33-/w   32+/b   29+/w   26-/b   38+/w    |17233348
+32 Malkiewicz Wojciech         12k PL  Toru  12   3    32   71   40+/w   27-/b   31-/w   36+/b   33+/b   26-/w    |16562128
+33 Smith Roella                11k UK  Camb  12   3    32   69   27-/b   31+/b   30-/w   40+/w   32-/w   39+/w    |14713039
+34 Bexfield Charlotte          10k UK  Ltch  12   1    13   83   22-/w   26-/b   28+/w   24-/b   30-/b   29-/w    |14901579
+35 Semmler Roman               18k DE  J     10   4    33   53   50+/b   44+/w   41+/w   38-/w   37-/b   40+/b    |17362048
+36 Grosjean Nicolas            14k FR  73Ch  10   3    30   65   38+/b   40+/b   39+/w   32-/w   29-/b   37-/w    |16750327
+37 Ukhov Matvii                13k UA  Rivn  10   3    30   59   41-/w   38+/w   40-/b   39-/b   35+/w   36+/b    |16774571
+38 Kollner Dora                14k HU  BuPe  10   3    26   58   36-/w   37-/b   50+/w   35+/b   40+/w   31-/b    |15686792
+39 Csizmadia Viktoria          13k HU  BuPe  10   2    19   68   26-/w   41+/b   36-/b   37+/w   28-/w   33-/b    |14974421
+40 Hermanns Phillip            13k DE  LGW   10   1    10   64   32-/b   36-/w   37+/w   33-/b   38-/b   35-/w    |16713136
+41 Defer Leon                  13k CZ  Brno  9    3    25   53   37+/b   39-/w   35-/b   42-/w   47+/w   43+/b    |16413650
+42 Mangin Elian                16k FR  38GJ  8    5    36   44   46+/b   51+/w   47+/w   41+/b   43-/w   44+/b    |16833432
+43 Fathallah Ahmed-Bilal       18k FR  38CA  8    5    35   44   48+/b   46+/w   44+/b   50+/w   42+/b   41-/w    |16749964
+44 Bednarska Julia             16k PL  Toru  8    3    19   45   47+/b   35-/b   43-/w   48+/w   50+/b   42-/w    |16733706
+45 Feldhaus Tim                20k DE  LGW   7    5    24=  30=  49+/b   48-/w   0+      53+/w   51+/w   52+/b    |17025712
+46 Smith Kelda                 17k UK  Camb  7    3    13=  36=  42-/w   43-/b   51+/b   47-/w   53+/b   50+/b    |15398207
+47 Crott Tabea                 15k DE  LGW   7    2    13   44   44-/w   50-/w   42-/b   46+/b   41-/b   48+/b    |17037361
+48 Ghica Anthony               19k UK  Nmkt  6    3    18   41   43-/w   45+/b   52+/w   44-/b   49+/b   47-/w    |15786452
+49 Donle Isabel                20k DE  P     6    4    17=  30=  45-/w   0+      53+/b   52+/b   48-/w   51+/w    |16837359
+50 Niederau Lena               16k DE  LGW   6    1    7    50   35-/w   47+/b   38-/b   43-/b   44-/w   46-/w    |16733145
+51 Janssen Joep                20k NL  Alme  5    2    9    37   52+/w   42-/b   46-/w   0+      45-/b   49-/b    |16713576
+52 Simon Finn-Luca             20k DE  LGW   5    2    6=   30=  51-/b   53+/w   48-/b   49-/w   0+      45-/w    |17037713
+53 Janssen Eva                 20k NL  Alme  2=   1    1=   27=  0+      52-/b   49-/w   45-/b   46-/w   0=       |15249663

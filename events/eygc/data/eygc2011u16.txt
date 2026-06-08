@@ -1,0 +1,59 @@
+; TC[T110311B]
+; CL[A]
+; EV[European Youth Goe Championship (under 16)]
+; PC[CZ, Brno]
+; DT[2011-03-11,2011-03-13]
+; HA[h9]
+; KM[7.5]
+; TM[75]
+; CM[ (submitted by cieply)]
+;.
+;
+ 1 Surma Mateusz          5d PL  Rydu  25   6    135  804  11+/b   4+/b    3+/w    2+/b    5+/w    7+/w     |12837968
+ 2 Wong Vanessa           4d UK  HKng  24   5    133  800  10+/b   6+/w    14+/b   1-/w    3+/w    8+/w     |14349467
+ 3 Vashurov Alexandr      4d RU  16Kz  23   4    137  792  9+/w    5+/b    1-/b    4+/w    2-/b    12+/w    |13062764
+ 4 Toma Theodor           1d RO  Brai  23   4    135  802  8+/b    1-/w    7+/b    3-/b    11+/w   5+/b     |12513754
+ 5 Mykhaljuk Jurij        2d UA  Rivn  22   3    135  802  12+/w   3-/w    6+/b    10+/b   1-/b    4-/w     |13798235
+ 6 Hamrah Schayan         1d AT  Gote  22   3    133  789  7+/w    2-/b    5-/w    9+/b    8-/b    10+/b    |15437598
+ 7 Mladenova Magdalena    1d BG  Sofi  22   3    132  792  6-/b    13+/w   4-/w    14+/b   10+/w   1-/b     |14950485
+ 8 Ketelaars Alex         2d NL  Hilv  22   3    131  786  4-/w    14-/b   13+/b   12+/w   6+/w    2-/b     |14913239
+ 9 Welticke Jonas         1k DE  BN    22   3    125  774  3-/b    10-/w   19+/b   6-/w    14+/w   11+/b    |15786287
+10 Miljutkin Dmitrij      1k RU  16Kz  21   2    133  790  2-/w    9+/b    11+/b   5-/w    7-/b    6-/w     |14786772
+11 Moennikes Florian      1k DE  KI    21   2    132  776  1-/w    12+/b   10-/w   15+/b   4-/b    9-/w     |15098259
+12 Melkisheva Anastasia   1k RU  74Ch  21   2    129  779  5-/b    11-/w   15+/w   8-/b    13+/b   3-/b     |13898489
+13 Boviz Dominik          2k HU  Szfv  21   3    125  757  15+/b   7-/b    8-/w    16+/w   12-/w   14+/w    |14225926
+14 Nae Alexandru          2k RO  LocB  20   2    131  761  16+/b   8+/w    2-/w    7-/w    9-/b    13-/b    |14525082
+15 Anonymous#0025 Anonymous 2k DE  B     20   2    119  720  13-/w   16+/w   12-/b   11-/w   17-/b   18+/b    |15033260
+16 Babicka Katerina       3k CZ  Usti  20   3    115  695  14-/w   15-/b   18+/w   13-/b   20+/b   17+/w    |15225804
+17 Csizmadia Robert       5k HU  BuPe  18   3    111  652  19+/w   18-/b   21+/b   20-/w   15+/w   16-/b    |14925416
+18 Havelka Samuel         6k CZ  TOst  18   4    108  652  21+/b   17+/w   16-/b   19+/w   22+/b   15-/w    |15662372
+19 Kriese Anton           4k DE  Jena  18   2    108  644  17-/b   20+/w   9-/w    18-/b   21-/w   22+/w    |15050794
+20 Zuev Daniil            6k RU  77Mo  18   4    101  618  22+/w   19-/b   24+/w   17+/b   16-/w   21+/w    |15013361
+21 Iacob Alexandru        5k RO  Brai  17   2    101  608  18-/w   22-/b   17-/w   23+/w   19+/b   20-/b    |12749187
+22 Axente Cristina        7k RO  LocB  15   2    98   585  20-/b   21+/w   23-/b   24+/w   18-/w   19-/b    |15313980
+23 Ruzicka Martin         9k DE  FR    14   3    82   502  24-/b   28+/w   22+/w   21-/b   25+/b   26-/w    |13037596
+24 Albrecht Gabor         9k HU  Buda  13   2    85   497  23+/w   25+/w   20-/b   22-/b   26-/b   27-/w    |13413730
+25 Antonov Nikolaj       10k RU  77Mo  13   3    73   449  27+/w   24-/b   28+/w   26-/b   23-/w   29+/w    |15450479
+26 Junek Martin          12k CZ  Brno  13   5    73   449  28-/b   29+/w   27+/b   25+/w   24+/w   23+/b    |14313783
+27 Kralik Michal         10k SK  Kosi  12   2    70   428  25-/b   30-/b   26-/w   28+/w   29-/w   24+/b    |13033658
+28 Zahonyi Gyorgy        11k HU  BuPe  11   2    72   407  26+/w   23-/b   25-/b   27-/b   30+/w   31-/w    |13625436
+29 Yashov Kristian       13k BG  Sofi  10   3    67   372  30-/w   26-/b   32+/w   31+/w   27+/b   25-/b    |15349037
+30 Salajkova Tereza      13k CZ  BMik  10   3    58   347  29+/b   27+/w   31-/b   32-/w   28-/b   34+/b    |13633873
+31 Tomek Vojtech         15k CZ  TFMi  10   5    51   327  32+/w   37+/b   30+/w   29-/b   33+/b   28+/b    |14537864
+32 Podperova Anna        15k CZ  APWS  9    4    47   299  31-/b   34+/w   29-/b   30+/b   37+/w   33+/w    |13686563
+33 Praus Jan             16k CZ  APmG  6    2    41   244  37-/w   35+/b   38-/w   34+/b   31-/w   32-/b    |15733916
+34 Dohnalkova Adela      17k CZ  MJes  6    3    40   252  39+/w   32-/b   37+/b   33-/w   38+/b   30-/w    |14350820
+35 Kubita Mikulas        18k CZ  APWS  6    4    30   191  38+/b   33-/w   39+/b   36-/w   44+/w   37+/b    |15486372
+36 Solnicka Marketa      19k CZ  Brno  6    4    23   124  0=      0=      41+/w   35+/b   40+/b   38+/w    |15450369
+37 Garrido Elena         17k ES  Sevi  5    2    42   243  33+/b   31-/w   34-/w   38+/b   32-/b   35-/w    |15301583
+38 Bonackyj Oleksandr    17k UA  Rivn  5    2    34   206  35-/w   39+/b   33+/b   37-/w   34-/w   36-/b    |15325112
+39 Zolotarjov Valentyn   17k UA  Rivn  5    2    30   178  34-/b   38-/w   35-/w   40-/b   43+/b   0+       |14637832
+40 Dvorackova Eva        19k CZ  MJes  5    4    24   137  41-/b   45+/b   43+/b   39+/w   36-/w   46+/w    |13049872
+41 Kucera Lukas          19k CZ  APmG  5    4    24   124  40+/w   42-/w   36-/b   0+      46+/w   44+/b    |15701906
+42 Kovarik Frantisek     19k CZ  Brno  5    2    12   68   45+/w   41+/b   0=      0=      0=      0=       |13733368
+43 Drbal Cenek           20k CZ  APmG  4    4    20   135  0+      44+/b   40-/w   46+/b   39-/w   45+/b    |15798926
+44 Sandarrubia Jaime     20k ES  Sevi  3    3    21   135  46+/b   43-/w   0+      45+/w   35-/b   41-/w    |15750801
+45 Vernyhora Maksym      19k UA  Rivn  3    2    20   117  42-/b   40-/w   46+/w   44-/b   0+      43-/w    |14725480
+46 Kralikova Zuzana      20k SK  Kosi  1    1    20   129  44-/w   0+      45-/b   43-/w   41-/b   40-/b    |15801764
+
+

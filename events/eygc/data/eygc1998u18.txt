@@ -1,0 +1,61 @@
+; CL[A]
+; EV[European Youth Championship]
+; PC[FR, Cannes]
+; DT[1998-02-27,1998-03-01]
+; TC[E980227A]
+; HA[h9]
+; KM[5.5]
+; TM[60]
+;
+  1 Bogackyj Dmytro      6d UA Kyiv 26 7 164 164   2+  17+   5+  15+   3+   4+   9+  |10250867
+  2 Koszegi Diana        4d HU BuPe 25 6 159 133   1-  19+  23+  17+  14+   6+  11+  |10301247
+  3 Kuzela Martin        3d CZ Zli  24 5 163 114  13+  12+   6+  14+   1-  11-   7+  |10250702
+  4 Kuin Merlijn         1d NL Amvn 24 5 160 112  26+  14-  13+  16+   7+   1-   6+  |10233861
+  5 Galchenko Mykhajlo   3d UA Kyiv 24 5 160 111  19+   9+   1-  18+   6-  27+   8+  |10433236
+  6 Langsted Andreas     3d DK AAR 23 4 163  90  23+   7+   3-  21+   5+   2-   4-  |10398245
+  7 Andrienko Vasilij    3d UA Riv  23 4 161  90  15+   6-   8+  10+   4-  18+   3-  |10333246
+  8 Prachar Jan          3d CZ Zli  23 4 159  89   9-  30+   7-  13+  12+  10+   5-  |10274704
+  9 Kamenskikh Anton     3d RU 16Kz 23 4 159  87   8+   5-  15-  31+  16+  14+   1-  |10625340
+ 10 Kulkov Andrej        3d RU 16Kz 23 4 158  90  16-  11+  12+   7-  17+   8-  20+  |10625329
+ 11 Fenech Antoine       2k FR 67SE 23 5 157 109  21+  10-  24+  30+  15+   3+   2-  |10349350
+ 12 Mikhajlov Evgenij    3d RU 52NN 23 4 157  87  24+   3-  10-  20+   8-  15+  16+  |10633326
+ 13 Hora Jan             2d CZ Pra  23 4 156  85   3-  24+   4-   8-  33+  21+  18+  |10401083
+ 14 Chalupnicek Miroslav 1d CZ Nym  22 3 162  68  20+   4+  18+   3-   2-   9-  22-  |10225710
+ 15 Florea Ovidiu        1k RO Bist 22 3 160  65   7-  28+   9+   1-  11-  12-  27+  |10398256
+ 16 Nechanicky Petr      3d CZ Nym  22 3 158  66  10+  18-  25+   4-   9-  17+  12-  |10233267
+ 17 Frehe Renee          1k NL Nijm 22 3 157  61  30+   1-  31+   2-  10-  16-  28+  |10313248
+ 18 Tishchenko Alexandr  3d RU 50Kr 22 3 156  64  31+  16+  14-   5-  22+   7-  13-  |10613328
+ 19 Bordea George        1k RO Drob 22 3 155  62   5-   2-  21-  26+  31+  20-  25+  |10301258
+ 20 Balogh Pal           1d HU Debr 22 3 153  64  14-  23-  26+  12-  25+  19+  10-  |10498246
+ 21 Paramonov Denis      2k RU 74Ch 22 4 150  81  11-  37+  19+   6-  30+  13-  23+  |10801175
+ 22 Banfai Karoly        4k HU BuPe 22 6 145 123  29+  34+  32+  23+  18-  30+  14+  |10362275
+ 23 Abrosimov Pavel      3d RU 00oo 21 2 154  41   6-  20+   2-  22-  27-  34+  21-  |10601327
+ 24 Ghetu George         1k RO Brai 21 2 152  41  12-  13-  11-  25-  26+  28-  31+  |10325293
+ 25 Kovacs Adrian_jr     2k HU BuPe 21 3 149  62  28-  27+  16-  24+  20-  31+  19-  |10337250
+ 26 Kostka Ivan          2d CZ FMi  21 2 149  40   4-  31-  20-  19-  24-  32+  30+  |10286716
+ 27 Gorbunova Elizaveta  3k UA Kyiv 21 4 148  81  37+  25-  29+  28+  23+   5-  15-  |10501084
+ 28 Millier Jonathan     2k FR 75Pa 21 3 148  63  25+  15-  30-  27-  29+  24+  17-  |10550507
+ 29 Tataran Vlad         3k RO BaMa 21 4 142  78  22-  36+  27-  32+  28-  33+  35+  |10349284
+ 30 Berceanu Cristian    1k RO Drob 20 1 154  21  17-   8-  28+  11-  21-  22-  26-  |10786402
+ 31 Danila Marius        1k RO Brai 20 1 152  21  18-  26+  17-   9-  19-  25-  24-  |10398267
+ 32 Honore Daniel        4k FR 69TJ 20 4 141  77  36+  33+  22-  29-  35+  26-  34+  |10337591
+ 33 Sinca Marius         4k RO Brai 20 4 139  75  38+  32-  34+  35+  13-  29-  36+  |10313358
+ 34 Rousteau Cedric      4k FR 94EP 19 3 139  56  35+  22-  33-  38+  36+  23-  32-  |10549275
+ 35 Marton Csaba         4k HU BuPe 19 3 132  52  34-  38+  37+  33-  32-  39+  29-  |10362352
+ 36 Mariani Alberto      4k IT Mila 19 3 132  52  32-  29-  40+  37+  34-  38+  33-  |10513294
+ 37 Demjanov Pavel       2k RU 77Mo 18 0 131   0  27-  21-  35-  36-  39-  40-  38-  |10898074
+ 38 Blockley Thomas      5k UK Worc 18 3 127  50  33-  35-  39+  34-  40+  36-  37+  |10213170
+ 39 Csermenyi Lilia      9k HU BuPe 16 5 105  68  40+  41+  38-  44+  37+  35-  42+  |10449263
+ 40 Balazs Menavos       8k HU BuPe 16 4 105  52  39-  43+  36-  41+  38-  37+  44+  |10813176
+ 41 Nador Zsofia         11 HU BuPe 13 4  81  38  44+  39-  43+  40-  42-  45+  47+  |10837178
+ 42 Balba Iulia          15 RO Brai 11 6  75  59  43+  45+  44+  47+  41+  48+  39-  |10701273
+ 43 Marton Katalin       12 HU BuPe 11 3  71  22  42-  40-  41-  45-  44+  50+  49+  |10362308
+ 44 Hyman Paul           12 UK Brck 10 2  83  16  41-  46+  42-  39-  43-  49+  40-  |10549693
+ 45 Malyshko Alexandr    16 UA Kyiv  9 5  56  32  48+  42-  49+  43+  52+  41-  51+  |10849179
+ 46 Momier Tudal         15 FR xxx   9 4  41  15  49+  44-  47-  50+  48-  51+  52+  |10762103
+ 47 Krjachko Vladimir    16 UA Kyiv  8 4  52  24  50+  48+  46+  42-  51-  52+  41-  |10850180
+ 48 Ratnikov Alexandr    16 UA Riv   8 4  48  20  45-  47-  52+  51+  46+  42-  50+  |10874182
+ 49 Vusatyj Sergej       16 UA Riv   7 3  50  11  46-  51+  45-  52+  50+  44-  43-  |10886183
+ 50 Kloz Olexander       17 UA Kyiv  5 2  47   4  47-  52+  51+  46-  49-  43-  48-  |10898184
+ 51 Pavlichenko Dmitrij  19 UA Kyiv  3 2  42   7  52+  49-  50-  48-  47+  46-  45-  |10833185
+ 52 Prykhodko Igor       20 UA Kyiv  0 0  40   0  51-  50-  48-  49-  45-  47-  46-  |10801186

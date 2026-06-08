@@ -1,0 +1,63 @@
+; TC[E211015B]
+; CL[A]
+; EV[European Youth Go Championship - Under 16]
+; PC[XX, Online Go Server]
+; DT[2021-10-15,2021-10-17]
+; HA[h9]
+; KM[6.5]
+; TM[82.5]
+; CM[30x3 byoyomi (submitted by HIGOU)]
+;.
+ 1 Muromcev Alexandr        5d RU  77Mo  26   5    26   146  876  7+/w    4-/b    14+/w   6+/b    8+/w    3+/w     |18486897
+ 2 Lavrov Egor              4d RU  77Mo  26   5    26   143 859  9-/w    21+/b   16+/b   4+/w    3+/b    5+/w     |17886462
+ 3 Ovsiienko Vsevolod       4d UA  Kyiv  25   4    25   149  871 10+/w   13+/b   4+/w    5+/b    2-/w    1-/b     |17633902
+ 4 Igonin Alexej            3d RU  77Mo  25   4    25   148  869  15+/b   1+/w    3-/b    2-/b    10+/w   7+/w     |17837105
+ 5 Bernardis Davide         4d IT  Rave  25   4    25   145  868  14+/b   9+/b    8+/w    3-/w    15+/w   2-/b     |17886946
+ 6 Khusainov Askar          3d RU  16Kz  25   4    25   143  870  13-/w   7+/b    18+/b   1-/w    9+/w    8+/b     |17525706
+ 7 Prikarev Nikita          2d RU  77Mo  24   3    24   146  859  1-/b    6-/w    11+/w   16+/b   13+/w   4-/b     |16086851
+ 8 Malko Olesia             1d UA  Rivn  24   3    24   146  857  11+/w   18+/w   5-/b    10+/b   1-/b    6-/w     |17874241
+ 9 Boldeanu Dragos          2d RO  ATAR  24   3    24   145  842 2+/b    5-/w    17-/b   14+/w   6-/b    19+/w    |16750349
+10 Klochikhin Ivan          2d RU  59So  24   3    24   144  859  3-/b    12+/b   13+/w   8-/w    4-/b    17+/w    |16501078
+11 Nagornov Oleg            3d RU  77Mo  24   3    24   137  844 8-/b    16-/w   7-/b    22+/w   18+/b   15+/w    |17825456
+12 Grosu Robert-Andrei      2k RO  Hika  24   5    24   135  817  20+/b   10-/w   24+/w   19+/b   14+/w   13+/b    |18362278
+13 Xing Yuze                2d DE  HD    23   2    23   145  853  6+/b    3-/w    10-/b   17+/w   7-/b    12-/w    |18525012
+14 Galimov Alexandr         2d RU  74Ch  23   2    23   144  853 5-/w    15+/w   1-/b    9-/b    12-/b   18+/w    |19033861
+15 Rotarita Stefan_Adrian   1d RO  Boto  23   2    23   140 848  4-/w    14-/b   21+/w   18+/w   5-/b    11-/b    |17837270
+16 Melnyk Anna              1d UA  Kyiv  23   2    23   140  834  18-/b   11+/b   2-/w    7-/w    17-/w   23+/b    |17886517
+17 Shchepaniuk Oleksandr    1k UA  Kyiv  23   4    23   136  833 22+/w   23+/b   9+/w    13-/b   16+/b   10-/b    |18062924
+18 Pishchalnikov Artemij    3d RU  59So  22   1    22   142  850 16+/w   8-/b    6-/w    15-/b   11-/w   14-/b    |16549071
+19 Cobbold Scott            1k UK  Wans  23   2    22   131  780 0=      0=      22+/b   12-/w   20+/b   9-/b     |19213315
+20 Krushelnytska Polina     1k UA  Rivn  22   3    22   130 778 12-/w   22-/b   23+/w   21+/b   19-/w   25+/b    |16737875
+21 Krajnov Jaroslav         1d RU  77Mo  21  1    21   132  786= 0=      2-/w    15-/b   20-/w   23-/w   24+/b    |16349036
+22 Kralik Ondrej            2k SK  Kosi  21   2    21   130  766= 17-/b   20+/w   19-/w   11-/b   25-/b   27+/w    |16350279
+23 Stefanovych Dmytro       3k UA  Rivn  21   3    21   129 782  25+/b   17-/w   20-/b   24+/w   21+/b   16-/w    |17813246
+24 Nikulin Maxim            4k RU  49Ma  20   3    20   122 732 29+/w   25+/w   12-/b   23-/b   26+/w   21-/w    |18625816
+25 Vlahovic Karlo           4k HR  VGor  20   3    20   121  732 23-/w   24-/b   26+/w   27+/b   22+/w   20-/w    |18637256
+26 Kushnerik Roman          6k UA  Odes  19   4    19   109  656 33+/b   27+/w   25-/b   28+/w   24-/b   31+/w    |18013413
+27 Crvelin Roko             5k HR  Vrba  18   3    18   111  667  31+/w   26-/b   29+/b   25-/w   30+/b   22-/b    |18262739
+28 Baldea Matei_Stefan      8k RO  ATSU  18   5    18   99   609  39+/b   30+/w   35+/w   26-/b   34+/b   29+/w    |17962461
+29 Krasivskyi Ivan          6k UA  Khar  17   2    17   106  636 24-/b   33+/w   27-/w   30+/b   31-/b   28-/b    |19225184
+30 Sychinska Yuliia         7k UA  Rivn  17   3    17   101  616  35+/w   28-/b   33+/b   29-/w   27-/w   34+/b    |16849382
+31 Petrashevskyi Danylo     7k UA  Kyiv  17   3    17   100  625  27-/b   34-/w   39+/b   33+/w   29+/w   26-/b    |18533592
+32 Doronina Maryna          9k UA  Rivn  17   5    17   90   567 34-/b   37+/w   40+/w   36+/b   39+/w   33+/b    |18601165
+33 Simon Zsofia             5k HU  BPPG  16   1    16   103  603  26-/w   29-/b   30-/w   31-/b   35+/b   32-/w    |17486623
+34 Koran Ladislav_jr        9k CZ  CPis  16   4    16   100  580  32+/w   31+/b   36+/b   35+/w   28-/w   30-/w    |18413098
+35 Tifrea Bogdan_Stefan     7k RO  ATSU  16   2    16   97   579 30-/b   36+/w   28-/b   34-/b   33-/w   38+/w    |17937458
+36 Prydatkevych Petro       8k UA  Tern  15   2    15   93   554  37+/w   35-/b   34-/w   32-/w   38-/b   39+/b    |18533614
+37 Antropov Vladimir        9k RU  49Ma  15   3    15   87  528 36-/b   32-/b   41+/w   39-/w   42+/w   40+/w    |18301437
+38 Kovalchuk Bohdan        10k UA  Rivn  15   5    15   83  517  46+/b   41+/w   42+/w   40+/b   36+/w   35-/b    |17433295
+39 Urmanche Kamil           8k RU  16Kz  14   1    14   96   557 28-/w   40-/b   31-/w   37+/b   32-/b   36-/w    |18662061
+40 Sardarov Mark           10k RU  77Mo  14   3    14   88   514  41+/b   39+/w   32-/b   38-/w   43+/w   37-/b    |19262826
+41 Sladetic Teo            10k HR  Zagr  14   3    14   82  479  40-/w   38-/b   37-/b   44+/w   45+/b   42+/w    |18298742
+42 Kudla Hanna             10k UK  Edin  13  2    13   79   471 0=      46+/w   38-/b   43+/w   37-/b   41-/b    |18250045
+43 Zderic Tonka            12k HR  Vrba  13   4    13   74  452 44+/w   45+/b   46+/w   42-/b   40-/b   47+/w    |18286741
+44 Oncel Ayse_Nil          11k TR  Ist   13   3    13   71   426 43-/b   47-/w   45+/w   41-/b   48+/w   46+/b    |19286806
+45 Kudla Jan               11k UK  Edin  12   3    12   70   424  47+/b   43-/w   44-/b   46+/w   41-/w   50+/b    |18298049
+46 Kanbolat Asha_Acin      10k TR  Ist   11   0    11   77  445  38-/w   42-/b   43-/b   45-/b   47-/w   44-/w    |18301206
+47 Derencin Antun          13k HR  GKIN  11   3    11   67   399 45-/w   44+/b   48-/b   50+/w   46+/b   43-/b    |18501901
+48 Shapin Pavel            15k RU  39Ka  10   4    10   55   315  50+/w   51+/b   47+/w   49-/b   44-/b   52+/w    |18201590
+49 Siwy Adam               18k PL  Szcz  9    6    9    43  267 52+/w   53+/b   50+/b   48+/w   51+/w   0+       |19725508
+50 Procek Danijel          15k HR  VGrd  8    2    8    51  314 48-/b   52+/w   49-/w   47-/b   53+/b   45-/w    |18798615
+51 Suc Enej                16k SI  Ljub  8    2    7    38  237 0=      48-/w   0=      52+/b   49-/b   53+/w    |19398456
+52 Ergun Ege               17k TR  Ank   6    2    6    43  267 49-/b   50-/b   53+/w   51-/w   0+      48-/b    |19650961
+53 Antepli Dina            19k TR  Ist   3   1    3    35  224 0=      49-/w   52-/b   0+      50-/w   51-/b    |19486082

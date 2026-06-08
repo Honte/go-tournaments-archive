@@ -1,0 +1,29 @@
+; TC[E130308C]
+; CL[A]
+; EV[European Youth Go Championship (under 20)]
+; PC[HU, Budapest]
+; DT[2013-03-08,2013-03-10]
+; HA[h9]
+; KM[6.5]
+; TM[90]
+; CM[ (submitted by retesz)]
+;.
+;EYGC2013 - U20 - After Round 6
+;Place Name Club Level Rating Score 1 2 3 4 5 6 Points SODOS SOS SOSOS
+ 1 Lisy Pavol          6d SK  DoSt  8    5+/w    2+/b    3+/w    4+/b    9+/w    6+/b    6    33   33   198   |12686597
+ 2 Jabarin Ali         6d IL  TAv   7    7+/b    1-/w    8+/w    6+/b    3+/b    5+/b    5    26   34   193   |14637810
+ 3 Podpera Lukas       6d CZ  APWS  6    6+/b    4+/w    1-/b    5+/b    2-/w    10+/w   4    20   35   192   |13201914
+ 4 Vashurov Alexandr   5d RU  16Kz  6    8+/b    3-/b    7+/w    1-/w    13+/w   11+/w   4    18   32   173   |13062764
+ 5 Welticke Jonas      4d DE  BN    5    1-/b    12+/w   9+/b    3-/w    7+/b    2-/w    3    13   34   183   |15786287
+ 6 Boviz Dominik       3d HU  Szfv  5    3-/w    15+/b   12+/b   2-/w    8+/b    1-/w    3    12   33   175   |14225926
+ 7 Kouba Petr          3d CZ  APWS  5    2-/w    14+/b   4-/b    15+/w   5-/w    9+/b    3    11   29   174   |14533926
+ 8 Branchard Antoine   2d FR  69Ly  5    4-/w    10+/b   2-/b    14+/w   6-/w    16+/b   3    11   29   168   |15050079
+ 9 Caha Frantisek      5k CZ  APWS  4    13+/w   11+/b   5-/w    10+/b   1-/b    7-/w    3    12   30   169   |15686935
+10 Albrecht Gabor      9k HU  Buda  4    11+/b   8-/w    15+/b   9-/w    14+/b   3-/b    3    11   26   163   |13413730
+11 Savo Jerry          2k FI  Haya  4    10-/w   9-/w    13+/b   16+/w   12+/b   4-/b    3    11   25   153   |15086775
+12 Carrere Colin       5k FR  38Gr  4    16+/b   5-/b    6-/w    17+/w   11-/w   0+      3    8    22   154   |15649315
+13 Sebok Attila       10k HU  Cson  4    9-/b    17+/w   11-/w   0+      4-/b    15+/w   3    8    22   150   |16325804
+14 Mastan Diana        6k RO  Bist  4    0+      7-/w    16+/b   8-/b    10-/w   17+/b   3    8    22   146   |14649250
+15 Calon Ruben         5k NL  Eind  3    17+/b   6-/w    10-/w   7-/b    0+      13-/b   2    4    22   151   |14650834
+16 Breznay Xaver      13k HU  BuPe  3    12-/w   0+      14-/w   11-/b   17+/b   8-/w    2    4    21   138   |16550149
+17 Toth Szilvia       18k HU  BuPe  2    15-/w   13-/b   0+      12-/b   16-/w   14-/w   1    1    19   128   |16386491

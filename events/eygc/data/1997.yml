@@ -1,0 +1,31 @@
+website: https://www.eurogofed.org/results/youth/eygc1997.htm
+stages:
+  - type: tournament
+    file: eygc1997u12.txt
+    category: u12
+    name: U12
+    notes: After drawing the lots it was decided that the second place in the team for the WYGC was for Marius Sinca (RO) and reserve player for the WYGC is Vasili Shvedov (RU)
+    scoringColumns:
+      - mms 
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - mms
+      - sos
+      - sodos
+    findSharedPlaces: true
+  - type: tournament
+    file: eygc1997u18.txt
+    category: u18
+    name: U18
+    scoringColumns:
+      - mms 
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - mms
+      - sos
+      - sodos
+    findSharedPlaces: true
