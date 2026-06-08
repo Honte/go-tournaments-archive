@@ -305,6 +305,10 @@ export function calculateStats(tournaments: Tournament[], playersHandler: Player
     const edition = String(year);
 
     for (const [index, winner] of winners.entries()) {
+      if (!winner?.length) {
+        continue;
+      }
+
       for (const id of winner) {
         const player = players[id];
         const playerStats = upsertPlayer(player);

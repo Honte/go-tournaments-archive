@@ -245,23 +245,28 @@ export async function loadH9Tournament({
     const target = (tournamentDetails.categoriesTop ||= {});
 
     for (const player of table) {
+      if (category) {
+        player.categories ||= {};
+        player.categories[category] = player.place;
+      }
+
       for (const category of EVENT_CONFIG.categories) {
         const place = Number(player.categories?.[category]);
 
         if (!isNaN(place) && place <= 3) {
-          const categoryTop = (top[category] ||= []);
+          const categoryTop = (top[category] ||= [[], [], []]);
 
-          (categoryTop[place - 1] ||= []).push(player.id);
+          categoryTop[place - 1].push(player.id);
         }
       }
     }
 
     if (category && !top[category]) {
-      const categoryTop = (top[category] ||= []);
+      const categoryTop = (top[category] ||= [[], [], []]);
 
       for (const player of table) {
         if (player.place <= 3) {
-          (categoryTop[player.place - 1] ||= []).push(player.id);
+          categoryTop[player.place - 1].push(player.id);
         }
       }
     }
@@ -272,10 +277,10 @@ export async function loadH9Tournament({
       }
     }
   } else if (!tournamentDetails.top.length) {
-    const winners: string[][] = [];
+    const winners: string[][] = [[], [], []];
     for (const player of table) {
       if (player.place <= 3) {
-        (winners[player.place - 1] ||= []).push(player.id);
+        winners[player.place - 1].push(player.id);
       } else {
         break;
       }
