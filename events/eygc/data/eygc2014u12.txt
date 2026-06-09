@@ -1,0 +1,54 @@
+; TC[T140301J]
+; CL[A]
+; EV[European Youth Go Championship (under 12)]
+; PC[UK, Bognor Regis]
+; DT[2014-03-01,2014-03-03]
+; HA[h9]
+; KM[7.5]
+; TM[90]
+; CM[ (submitted by geoffkaniuk)]
+;.
+;McMahon Bar 8k  players 16
+;POSN NAME                       GR CO CLU    MMS WIN     SODOSSOS         1         2         3         4         5         6  
+ 1 Vazquez Oscar           2d ES  NamB  28   6    64   154  6+/w0   4+/b0   3+/w0   2+/b0   11+/w0  7+/b0    |15633673
+ 2 Dobranis Denis          2k RO  Bist  27   5    64   152  15+/b0  7+/w0   8+/b0   1-/w0   14+/b0  4+/w0    |15350038
+ 3 Pittner Arved           2k DE  B     26   4    71   155  5+/b0   9+/w0   1-/b0   4-/w0   8+/b0   12+/w0   |16398371
+ 4 Dobricyn Mikhail        4k RU  77Mo  26   4    69   154  13+/b0  1-/w0   15+/w0  3+/b0   6+/w0   2-/b0    |15913920
+ 5 Galunov Jakov           7k RU  78SP  26   4    67   148  3-/w0   15+/b0  12+/w0  6-/b0   18+/w0  11+/w0   |16233976
+ 6 Selby Oscar             7k UK  Epsm  25   3    74   153  1-/b0   18+/b0  7+/w0   5+/w0   4-/b0   9-/w0    |14701874
+ 7 Arsentjev Egor          5k RU  77Mo  25   3    73   153  12+/w0  2-/b0   6-/b0   17+/w0  10+/b0  1-/w0    |16037285
+ 8 Mezin Savva             9k RU  77Mo  25   3    73   151  14+/w0  11+/b0  2-/w0   10-/b0  3-/w0   13+/w0   |16086840
+ 9 Shalneva Virzhinia      8k RU  50Zh  25   3    73   148  10+/w0  3-/b0   11-/w0  13-/w0  17+/b0  6+/b0    |16325034
+10 Schaaf Emanuel_Jun      5k DE  TR    25   3    73   147  9-/b0   13-/w0  16+/b0  8+/w0   7-/w0   14+/b0   |16550567
+11 Scribe Isaac            3k FR  07Au  25   3    72   151  17+/b0  8-/w0   9+/b0   14+/w0  1-/b0   5-/b0    |15801159
+12 Zemor Solal             9k FR  33Bo  25   3    71   148  7-/b0   17+/w0  5-/b0   15+/w0  13+/b0  3-/b0    |15849867
+13 Khafizov Andzhej        8k RU  16Kz  24   2    80   150  4-/w0   10+/b0  14-/w0  9+/b0   12-/w0  8-/b0    |16033875
+14 Poljakov Pavel          5k RU  50Kr  24   2    78   150  8-/b0   16+/w0  13+/b0  11-/b0  2-/w0   10-/w0   |16449598
+15 Kollner Barnabas        7k HU  BuPe  24   2    75   149  2-/w0   5-/w0   4-/b0   12-/b0  22+/b0  18+/b0   |15633794
+16 Krajnov Anton           9k RU  77Mo  24   3    68   140  18-/w0  14-/b0  10-/w0  20+/w0  19+/b0  17+/w0   |16098852
+17 Csizmadia Miklos        7k HU  BuPe  23   1    83   147  11-/w0  12-/b0  18+/w0  7-/b0   9-/w0   16-/b0   |16237463
+18 Vasova Dita             9k CZ  APmG  23   2    77   145  16+/b0  6-/w0   17-/b0  19+/w0  5-/b0   15-/w0   |15749921
+19 Sulimov Vladimir       11k RU  50Kr  23   4    50   127  20+/b0  21+/w0  27+/w0  18-/b0  16-/w0  24+/w0   |16049462
+20 Wong Aidan             10k UK  Camb  22   2    69   130  19-/w0  22-/w0  21-/w0  16-/b0  24+/w0  23+/w0   |17033830
+21 Malkiewicz Wojciech    12k PL  Toru  22   4    50   125  24+/b0  19-/b0  20+/b0  22-/w0  23+/w0  25+/w0   |16562128
+22 Krajnov Jaroslav       13k RU  77Mo  22   5    40   124  23+/b0  20+/b0  24+/w0  21+/b0  15-/w0  31+/w0   |16349036
+23 Gysson Jyrgen          13k EE  Tart  20   3    55   121  22-/w0  24+/b0  25+/w0  27+/w0  21-/b0  20-/b0   |16998630
+24 Smith Edmund           12k UK  MilS  19   1    77   126  21-/w0  23-/w0  22-/b0  31+/w0  20-/b0  19-/b0   |16462028
+25 Syrochev Vladimir      14k RU  16Kz  19   3    52   111  27-/w0  32+/w0  23-/b0  26+/w0  29+/w0  21-/b0   |15901930
+26 Fathallah Ismael       18k FR  38CA  18   5    23   102  33+/b0  30+/w0  36+/w0  25-/b0  27+/b0  29+/b0   |16801741
+27 Medak Robert           16k HR  Zagr  17   2    66   112  25+/b0  28+/w0  19-/b0  23-/b0  26-/w0  0=0      |16501716
+28 Fahrutdinov Amir       16k RU  16Kz  17   2    59   97   32-/w0  27-/b0  29-/w0  30-/w0  36+/w0  38+/w0   |16798870
+29 Szychowiak Marianna    17k PL  Bydg  17   3    51   105  31-/b0  33+/w0  28+/b0  32+/w0  25-/b0  26-/w0   |16725709
+30 Smith Kelda            17k UK  Camb  17   3    50   100  36-/w0  26-/b0  34+/w0  28+/b0  31+/b0  33-/w0   |15398207
+31 Rieger Angelika        17k DE  TR    17   3    49   107  29+/w0  36+/w0  32+/w0  24-/b0  30-/w0  22-/b0   |16586361
+32 Riedeman Emil          17k NL  Delf  17   3    45   98   28+/b0  25-/b0  31-/b0  29-/b0  40+/w0  37+/w0   |15886607
+33 Jacob Pepijn           18k NL  xxxx  17   4    33   98   26-/w0  29-/b0  38+/w0  34+/b0  35+/w0  30+/b0   |17013645
+34 Marz Ferdinand         19k DE  J     16   4    23   87   37+/b0  40+/w0  30-/b0  33-/w0  39+/w0  41+/w0   |16213659
+35 Semmler Gregor         20k DE  J     16   5    8    85   42+/w0  38+/b0  37+/w0  36+/b0  33-/b0  40+/w0   |16850724
+36 Fathallah Ahmed-Bilal  18k FR  38CA  15   2    60   98   30+/b0  31-/b0  26-/b0  35-/w0  28-/b0  39+/w0   |16749964
+37 Crott Tabea            19k DE  LAW   15   3    36   85   34-/w0  42+/w0  35-/b0  39+/b0  41+/w0  32-/b0   |17037361
+38 Morel Thibault         20k FR  38GJ  14   3    36   86   39+/w0  35-/w0  33-/b0  41+/b0  42+/w0  28-/b0   |16937965
+39 Arnhold Moritz         20k DE  J     13   2    55   85   38-/b0  41+/w0  40+/b0  37-/w0  34-/b0  36-/b0   |16849723
+40 Morel Adam             20k FR  38EB  13   2    53   85   41+/w0  34-/b0  39-/w0  42+/w0  32-/b0  35-/b0   |16933961
+41 Kajmina Julia          20k RU  50oo  12   1    71   82   40-/b0  39-/b0  42+/b0  38-/w0  37-/b0  34-/b0   |16774890
+42 Bexfield Hilary        20k UK  Ltch  11   0    90   81   35-/b0  37-/b0  41-/w0  40-/b0  38-/b0  0=0      |16725731

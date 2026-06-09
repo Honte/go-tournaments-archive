@@ -1,0 +1,31 @@
+website: https://www.eurogofed.org/results/youth/eygc2008.htm
+name: 13th European Youth Go Championship
+stages:
+  - type: tournament
+    file: eygc2008u12.txt
+    category: u12
+    name: U12
+    scoringColumns:
+      - mms 
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - mms
+      - sos
+      - sosos
+    findSharedPlaces: true
+  - type: tournament
+    file: eygc2008u18.txt
+    category: u18
+    name: U18
+    scoringColumns:
+      - mms 
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - mms
+      - sos
+      - sosos
+    findSharedPlaces: true

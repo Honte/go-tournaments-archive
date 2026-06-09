@@ -1,4 +1,5 @@
 website: https://www.eurogofed.org/results/student/student2010.htm
+name: 6th European Student Go Championship
 stages:
   - type: tournament
     file: esgc2010.txt

@@ -1,0 +1,76 @@
+; TC[E130308A]
+; CL[A]
+; EV[European Youth Go Championship (under 12)]
+; PC[HU, Budapest]
+; DT[2013-03-08,2013-03-10]
+; HA[h9]
+; KM[6.5]
+; TM[90]
+; CM[ (submitted by retesz)]
+;.
+;EYGC2013 - U12 - After Round 6
+;Place Name Rank Country Rating Score 1 2 3 4 5 6 Points SODOS SOS SOSOS
+ 1 Krushelnytskyi Valerii   1d UA  Rivn  15   4+/w    3+/b    6+/b    2+/w    8+/w    10+/b   6    77   77   454   |15450072
+ 2 Kulishov Valerij         2k RU  77Mo  14   11+/w   9+/b    7+/w    1-/b    6+/b    3+/w    5    62   77   449   |15750251
+ 3 Shakhov Kim              5k RU  77Mo  13   16+/b   1-/w    10+/w   5+/w    4+/b    2-/b    4    49   78   448   |16762284
+ 4 Arsentjev Egor           8k RU  77Mo  13   1-/b    11+/w   12+/b   16+/b   3-/w    7+/w    4    47   75   445   |16037285
+ 5 Mramorov Andrej          4k RU  77Mo  13   10+/w   7-/b    15+/w   3-/b    11+/w   8+/b    4    47   72   439   |15949923
+ 6 Dobranis Denis           3k RO  Bist  13   17+/b   8+/b    1-/w    12+/w   2-/w    18+/b   4    46   75   438   |15350038
+ 7 Merzljakov Zakhar        7k RU  74Ch  12   19+/w   5+/w    2-/b    8-/w    9+/b    4-/b    3    36   75   439   |15613763
+ 8 Dobricyn Mikhail         6k RU  77Mo  12   18+/b   6-/w    19+/w   7+/b    1-/b    5-/w    3    34   75   438   |15913920
+ 9 Pittner Arved            6k DE  B     12   12+/b   2-/w    16-/w   18+/w   7-/w    17+/b   3    34   71   434   |16398371
+10 Khafizov Andzhej        11k RU  16Kz  12   5-/b    18+/w   3-/b    19+/b   16+/w   1-/w    3    33   74   439   |16033875
+11 Christiaans Colin       10k NL  Eind  12   2-/b    4-/b    13+/w   17+/w   5-/b    19+/w   3    33   73   429   |15649942
+12 Csizmadia Miklos        12k HU  BuPe  12   9-/w    24+/b   4-/w    6-/b    22+/b   16+/b   3    31   69   421   |16237463
+13 Misca Matei             13k RO  Bist  11   15+/w   19-/b   11-/b   14+/w   17-/b   22+/w   3    32   66   399   |16237452
+14 Zhezhuk Andrii          13k UA  Rivn  11   24-/b   21+/w   17-/w   13-/b   23+/w   20+/b   3    30   62   376   |15986861
+15 Nitu Mircea             13k RO  LocB  11   13-/b   22+/w   5-/b    27+/w   18-/w   24+/b   3    29   64   388   |15674725
+16 Kollner Barnabas        11k HU  BuPe  11   3-/w    17+/b   9+/b    4-/w    10-/b   12-/w   2    23   73   437   |15633794
+17 Mezin Savva             11k RU  77Mo  11   6-/w    16-/w   14+/b   11-/b   13+/w   9-/w    2    22   70   420   |16086840
+18 State Sebastian         12k RO  LocB  11   8-/w    10-/b   24+/w   9-/b    15+/b   6-/w    2    21   70   425   |15413035
+19 Galunov Jakov           12k RU  78SP  11   7-/b    13+/w   8-/b    10-/w   24+/w   11-/b   2    21   69   429   |16233976
+20 Sulimov Vladimir        15k RU  50Kr  10   27+/w   33+/b   23-/b   28+/b   21+/w   14-/w   4    36   57   338   |16049462
+21 Ekler_Szabo Botond      14k HU  BuPe  10   23+/w   14-/b   28+/w   22-/w   20-/b   25+/b   3    28   59   345   |15949659
+22 Vasova Dita             14k CZ  APmG  10   28+/w   15-/b   33+/w   21+/b   12-/w   13-/b   3    27   61   364   |15749921
+23 Moldovan Tudor          14k RO  Bist  10   21-/b   30+/w   20+/w   24-/b   14-/b   28+/w   3    27   58   348   |16413342
+24 Kuksinov Oleg           13k RU  50Kr  10   14+/w   12-/w   18-/b   23+/w   19-/b   15-/w   2    21   66   392   |15498736
+25 Malkiewicz Wojciech     17k PL  Toru  9    36+/w   26+/b   30+/b   32+/w   27+/w   21-/w   5    41   51   302   |16562128
+26 Redila Yuliia           17k UA  Rivn  9    29+/b   25-/w   42+/b   30+/w   31+/w   32+/b   5    38   47   278   |15349114
+27 Lepskyi Maksym          15k UA  Rivn  9    20-/b   37+/w   32+/w   15-/b   25-/b   33+/w   3    23   53   319   |15974860
+28 Redila Ilona            14k UA  Rivn  9    22-/b   32+/w   21-/b   20-/w   33+/b   23-/b   2    16   56   336   |15862649
+29 Hrbek Michal            17k CZ  xxx   8    26-/w   47+/b   41+/b   37+/b   32-/w   35+/b   4    25   42   251   |16462589
+30 Goschler Aron           16k HU  BuPe  8    31+/w   23-/b   25-/w   26-/b   49+/b   36+/w   3    20   48   280   |16333614
+31 Shalneva Virzhinia      16k RU  50Zh  8    30-/b   42+/w   37+/b   33-/w   26-/b   43+/w   3    19   44   271   |16325034
+32 Hordoan Andrei          15k RO  Bist  8    37+/w   28-/b   27-/b   25-/b   29+/b   26-/w   2    15   51   295   |16450346
+33 Petringel Tudor         14k RO  Bist  8    54+/w   20-/w   22-/b   31+/b   28-/w   27-/b   2    12   50   297   |16013569
+34 Balakshina Karina       19k RU  78SP  7    40+/b   49+/b   36+/w   43+/b   35-/w   41+/w   5    30   37   226   |15813809
+35 Medak Robert            18k HR  Zagr  7    50+/w   36-/b   44+/b   42+/w   34+/b   29-/w   4    23   38   230   |16501716
+36 Stankovic Vladan        17k RS  NiPr  7    25-/b   35+/w   34-/b   41+/w   37+/b   30-/b   3    20   44   258   |16513409
+37 Toth Nikoletta          15k HU  BuPe  7    32-/b   27-/b   31-/w   29-/w   36-/w   42+/w   1    6    46   276   |16301615
+38 Fahrutdinov Amir        20k RU  16Kz  6    61+/w   39+/b   50+/w   40-/b   55+/b   49+/w   5    23   29   175   |16798870
+39 Defer Leon              20k CZ  Brno  6    55+/b   38-/w   60+/w   46+/b   45+/w   47+/w   5    22   28   162   |16413650
+40 Fajszi Csongor          19k HU  BuPe  6    34-/w   63+/b   45+/b   38+/w   43-/b   44+/w   4    19   32   187   |16437058
+41 Ukhov Matvii            18k UA  Rivn  6    49+/w   43+/b   29-/w   36-/b   44+/w   34-/b   3    16   38   231   |16774571
+42 Gherghel Anandu         17k RO  Cluj  6    43+/w   31-/b   26-/w   35-/b   48+/w   37-/b   2    11   42   241   |16574096
+43 Goschler Levente        17k HU  BuPe  6    42-/b   41-/w   46+/b   34-/w   40+/w   31-/b   2    11   38   219   |16449059
+44 Seidl Jakub             20k CZ  APmG  5    48+/w   50+/b   35-/w   47+/b   41-/b   40-/b   3    15   34   198   |16549698
+45 Liashkevych Tymofii     20k UA  Rivn  5    59+/w   52+/b   40-/w   56+/w   39-/b   55+/b   4    15   27   157   |16713697
+46 Aminov Almir            18k RU  16Kz  5    63+/w   62+/b   43-/w   39-/w   54+/b   57+/w   4    14   26   162   |16050903
+47 Pelekh Vitalii          19k UA  Rivn  5    57+/b   29-/w   56+/b   44-/w   53+/w   39-/b   3    12   31   175   |16762570
+48 Dohnke Timon            19k DE  PM    5    44-/b   57+/w   49-/b   50+/w   42-/b   59+/w   3    12   28   192   |15874430
+49 Kubyshkin Herman        18k UA  Rivn  5    41-/b   34-/w   48+/w   52+/b   30-/w   38-/b   2    9    36   205   |16313682
+50 Panas Arsen             18k UA  Rivn  5    35-/b   44-/w   38-/b   48-/b   51+/w   52+/w   2    8    31   177.5  |16749568
+51 Szychowiak Marianna     20k PL  Bydg  4    58+/b   56-/w   54+/b   55-/w   50-/b   60+/b   3    10.5  231  138   |16725709
+52 Jozsa Reka              20k HU  Sume  4    53+/b   45-/w   59+/b   49-/w   61+/w   50-/b   3    10   25   161   |15649964
+53 Sevagin Stepan          20k RU  50oo  4    52-/w   59-/b   57+/w   60+/b   47-/b   0+      3    10   22   150   |16733871
+54 Repasi David            20k HU  Hejo  4    33-/b   0+      51-/w   62+/b   46-/w   61+/w   3    9    26   169.5  |16701872
+55 Farkas Zsanett          20k HU  Hejo  4    39-/w   64+/b   62+/b   51+/b   38-/w   45-/w   3    9    26   147.5  |16713873
+56 Merman Iosif            20k RU  00oo  4    64+/w   51+/b   47-/w   45-/b   57-/w   62+/w   3    9    23   147.5  |16725874
+57 Simon Viktor            19k HU  Sume  4    47-/w   48-/b   53-/b   63+/w   56+/b   46-/b   2    7    26   152   |15613961
+58 Krushelnytska Polina    20k UA  XXXX  3.5  51-/w   0=      0=      0=      0=      0=       0    0    9    531   |16737875
+59 Varga Vivien            20k HU  Sume  3    45-/b   53+/w   52-/w   61-/b   0+      48-/b   2    6    23   147   |15637963
+60 Honti Mate              20k HU  Hejo  3    62-/w   61+/b   39-/b   53-/w   63+/b   51-/w   2    6    23   139.5  |16749876
+61 Demianiuk Zlata         20k UA  XXXX  3    38-/b   60-/w   64+/w   59+/w   52-/b   54-/b   2    5    22   144   |16774879
+62 Biesiedina Viktoriia    20k UA  Rivn  3    60+/b   46-/w   55-/w   54-/w   64+/b   56-/b   2    5    22   142   |16025394
+63 Lukianchuk Maksym       20k UA  Rivn  3    46-/b   40-/w   0+      57-/b   60-/w   64+/b   2    4    22   147   |16798705
+64 Kajmina Julia           20k RU  50oo  2    56-/b   55-/w   61-/b   0+      62-/w   63-/w   1    1    18   133   |16774890

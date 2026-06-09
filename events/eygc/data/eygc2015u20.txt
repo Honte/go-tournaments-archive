@@ -1,0 +1,30 @@
+; TC[E150313C]
+; CL[A]
+; EV[European Youth Go Championship (under 20)]
+; PC[NL, Zandvoort]
+; DT[2015-03-13,2015-03-15]
+; HA[h9]
+; KM[6.5]
+; TM[80]
+; CM[ (submitted by Herman Hiddema)]
+;.
+ 1 Lisy Pavol                 1p SK  DoSt  39   6    220  1320 6+/w    5+/b    3+/b    2+/w    4+/w    7+/b     |12686597
+ 2 Podpera Lukas              6d CZ  APWS  38   5    221  1311 9+/b    4+/w    8+/b    1-/b    3+/w    6+/w     |13201914
+ 3 Le_Calve Tanguy            6d FR  44Na  37   4    221  1307 10+/b   7+/w    1-/w    6+/b    2-/b    5+/b     |14962706
+ 4 Hamrah Schayan             5d AT  Gote  37   4    219  1284 13+/w   2-/b    7+/b    5+/w    1-/b    14+/w    |15437598
+ 5 Fionin Grigorij            6d RU  78SP  36   3    220  1306 8+/w    1-/w    11+/b   4-/b    9+/b    3-/w     |16013096
+ 6 Vashurov Alexandr          5d RU  16Kz  36   3    220  1285 1-/b    15+/w   9+/w    3-/w    11+/b   2-/b     |13062764
+ 7 Boviz Dominik              4d HU  Szfv  36   3    219  1296 11+/w   3-/b    4-/w    13+/b   8+/b    1-/w     |14225926
+ 8 Arsenov Timofej            2d RU  77Mo  36   3    216  1259 5-/b    10+/w   2-/w    16+/b   7-/w    13+/b    |15725864
+ 9 Lextrait Cesar             3d FR  13Ma  36   3    215  1293 2-/w    13+/b   6-/b    12+/w   5-/w    11+/b    |15462271
+10 Melkisheva Anastasia       3d RU  74Ch  36   3    207  1256 3-/w    8-/b    14+/b   11-/w   18+/w   12+/b    |13898489
+11 Ougier Ariane              1k FR  92An  35   2    215  1293 7-/b    12+/w   5-/w    10+/b   6-/w    9-/w     |15774187
+12 Tomsu Adriana              3k CZ  TFMi  35   3    212  1215 14+/w   11-/b   15+/b   9-/b    17+/w   10-/w    |16225396
+13 Csizmadia Robert           2d HU  BuPe  35   2    205  1251 4-/b    9-/w    17+/b   7-/w    20+/b   8-/w     |14925416
+14 Andrei Razvan_Constantin   2k RO  VaDo  35   3    199  1218 12-/b   19+/w   10-/w   18+/b   15+/b   4-/b     |14986125
+15 Mastan Diana               3k RO  Bist  35   3    193  1208 16+/b   6-/b    12-/w   20+/w   14-/w   19+/b    |14649250
+16 Bousquet Sylvain           3k FR  66Pe  35   3    187  1178 15-/w   17-/b   20+/b   8-/w    19+/w   18+/w    |16750426
+17 Mangin Matthias            4k FR  38Gr  35   4    186  1187 18+/b   16+/w   13-/w   19+/b   12-/b   20+/w    |16074157
+18 Praus Jan                  7k CZ  APmG  29   1    193  1169 17-/w   20+/b   19-/w   14-/w   10-/b   16-/b    |15733916
+19 Birckner Bruno            10k DE  J     27   2    194  1154 20+/w   14-/b   18+/b   17-/w   16-/b   15-/w    |16950604
+20 Lewald Leon               10k DE  LGW   25   0    196  1158 19-/b   18-/w   16-/w   15-/b   13-/w   17-/b    |16725137

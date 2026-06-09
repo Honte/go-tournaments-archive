@@ -1,0 +1,77 @@
+; CL[A]
+; EV[European Children Championship]
+; PC[RU, Sankt-Peterburg]
+; DT[2006-03-23,2006-03-26]
+; TC[E060323B]
+; HA[h9]
+; KM[7.5]
+; TM[75]
+;
+  1 Surma Mateusz           1k PL Wodz 17 5  74  90  16+ 20+  3-  5+  9+  4+ |12837968
+  2 Chao Joshua             3k NL Eind 17 5  74  90  14+ 10+  4+  3- 16+  9+ |13513841
+  3 Matushkin Alexandr      2k RU 18Iz 16 4  63  95  15+  7+  1+  2+  4-  6- |12362284
+  4 Podpera Lukas           3k CZ Pra  16 4  62  96  11+  8+  2-  6+  3+  1- |13201914
+  5 Lisy Pavol              7k SK DSta 16 4  59  91  10- 15+  8+  1- 11+  7+ |12686597
+  6 Woo Chun-yin            3k UK xxxx 16 4  59  90   8- 13+  7+  4- 15+  3+ |13933436
+  7 Volkov Leonid           5k RU 78SP 15 3  44  92   9+  3-  6- 14+  8+  5- |13213805
+  8 Mykhaljuk Jurij         6k UA Riv  15 3  44  91   6+  4-  5- 12+  7- 16+ |13798235
+  9 Toma Theodor            3k RO Brai 15 3  43  92   7- 12+ 14+ 11+  1-  2- |12513754
+ 10 Berbecariu Flaviu       4k RO Bist 15 3  43  89   5+  2- 11- 15- 20+ 14+ |13549074
+ 11 Vashurov Alexandr       7k RU 16Kz 15 3  41  88   4- 23+ 10+  9-  5- 15+ |13062764
+ 12 Gorokhov Nikita         10 RU 52NN 14 3  39  83  13+  9- 23+  8- 14- 18+ |13874542
+ 13 Gatin Bulat             10 RU 16Kz 14 3  36  80  12-  6- 26+ 16- 24+ 20+ |13637316
+ 14 Khabazov Nikita         7k RU 52NN 14 2  28  90   2- 16+  9-  7- 12+ 10- |13850540
+ 15 Melkisheva Anastasia    7k RU 74Ch 14 2  27  90   3-  5- 24+ 10+  6- 11- |13898489
+ 16 Zakharchenko Marija     9k UA Kyiv 14 2  27  90   1- 14- 20+ 13+  2-  8- |13937638
+ 17 Gatin Marat             14 RU 16Kz 13 6  64  64  30+ 36+ 19+ 32+ 26+ 23+ |13437259
+ 18 Shevchuk Sofija         13 UA Riv  13 5  61  75  21+ 19+ 22+ 24+ 23+ 12- |12625602
+ 19 Sadovaja Daria          12 RU 52NN 13 4  47  73  22+ 18- 17- 26+ 21+ 24+ |13801546
+ 20 Smirnova Elizaveta      10 RU 74Ch 13 2  23  83  26+  1- 16- 23+ 10- 13- |13886796
+ 21 Kajro Glib              13 UA Kyiv 12 4  41  67  18- 34+ 31+ 22+ 19- 28+ |13633103
+ 22 Krjukov Nikolaj         12 RU 78SP 12 3  31  69  19- 31+ 18- 21- 28+ 26+ |12898534
+ 23 Mamedly Samira          10 AZ xxx  12 1  12  80  24+ 11- 12- 20- 18- 17- |14025286
+ 24 Bakhtizin Amin          10 AZ xxx  12 1  11  77  23- 26+ 15- 18- 13- 19- |14398274
+ 25 Alimov Anton            15 UA Riv  11 5  46  55  39+ 35- 29+ 34+ 36+ 31+ |14250280
+ 26 Mamedly Zamira          10 AZ xxx  11 0   0  77  20- 24- 13- 19- 17- 22- |14013285
+ 27 Buhai Fineas            17 RO Bist 10 6  47  47  46+ 42+ 38+ 39+ 34+ 36+ |13813305
+ 28 Lozovskij Leonid        15 RU 78SP 10 4  37  61  40+ 30+ 35+ 31+ 22- 21- |12549812
+ 29 Protopopov Daniil       15 RU 18Iz 10 4  35  55  33- 43+ 25- 30+ 35+ 32+ |13833831
+ 30 Rjabov Vladimir         14 RU 74Ch 10 3  25  58  17- 28- 39+ 29- 33+ 40+ |14249928
+ 31 Ruzhanskyj Kostjantyn   13 UA Kyiv 10 2  18  63  36+ 22- 21- 28- 32+ 25- |14249279
+ 32 Sakhnenko Anastasia     15 RU 74Ch  9 3  25  58  42+ 33+ 36+ 17- 31- 29- |13813492
+ 33 Barabanov Vjacheslav    15 RU 74Ch  9 3  25  53  29+ 32- 34- 43+ 30- 37+ |14049167
+ 34 Uleev Pavel             15 RU 18Iz  9 3  24  57  43+ 21- 33+ 25- 27- 38+ |13849825
+ 35 Koposov Denis           15 RU 18Iz  9 3  24  53  47+ 25+ 28- 36- 29- 43+ |13801832
+ 36 Vazhinskij Gleb         13 RU 74Ch  9 1   9  62  31- 17- 32- 35+ 25- 27- |13874487
+ 37 Berende Tudor           18 RO Bist 8 5  30  39  53+ 46+ 47+ 45+ 43+ 33- |13962025
+ 38 Surma Bartosz           17 PL Wodz  8 4  27  46  52+ 40+ 27- 47+ 39+ 34- |13833039
+ 39 Surasheva Alina         15 RU 74Ch  8 2  13  52  25- 47+ 30- 27- 38- 42+ |13825493
+ 40 Rjabov Georgij          15 RU 74Ch  8 2  13  48  28- 38- 43- 42+ 47+ 30- |13274085
+ 41 Malkov Pavel            18 RU 18Iz  7 4  23  36  45+ 52+ 42- 46- 44+ 47+ |13886829
+ 42 Chipyshev Lev           16 RU 74Ch  7 2  13  48  32- 27- 41+ 40- 46+ 39- |14286932
+ 43 Fragman Uri             15 IL RhA   7 1   8  53  34- 29- 40+ 33- 37- 35- |13686310
+ 44 Novichkova Alla         20 RU 18Iz  6 5  22  29  61+ 57+ 53+ 52+ 41- 48+ |13725052
+ 45 Ruzhanska Kamila        18 UA Kyiv  6 3  16  36  41- 53+ 46+ 37- 48- 52+ |14233285
+ 46 Medvedev Dmitrij        17 RU 74Ch  6 2  12  43  27- 37- 45- 41+ 42- 51+ |14262930
+ 47 Utkin Igor              15 RU 18Iz  6 0   0  48  35- 39- 37- 38- 40- 41- |13849836
+ 48 Yan Xiaolun             20 UA Kyiv  5 4  18  29  51+ 63+ 52- 57+ 45+ 44- |13925659
+ 49 Stepasjuk Vasilisa      20 RU 00oo  5 5  18  23  65+ 61+ 50+ 51- 56+ 55+ |14301276
+ 50 Gorokhova Alexandra     20 RU 52NN  5 5  16  21  60+ 62+ 49- 63+ 57+ 58+ |14325278
+ 51 Fedosov Ivan            20 RU 74Ch  5 4  15  26  48- 68+ 55+ 49+ 53+ 46- |14237927
+ 52 Shtefan Ilja            18 RU 74Ch  5 2   9  36  38- 41- 48+ 44- 55+ 45- |14233934
+ 53 Galjabar Denys          18 UA Riv   5 2   8  33  37- 45- 44- 56+ 51- 54+ |14225431
+ 54 Kilin Oleg              20 RU 18Iz  4 4  11  20  58+ 56- 66+ 61+ 60+ 53- |14349280
+ 55 Zubov Evgenij           20 RU 74Ch  4 3  10  25  56+ 59+ 51- 62+ 52- 49- |14350281
+ 56 Voronskyj Oleksandr     20 UA Riv   4 3  10  24  55- 54+ 58+ 53- 49- 59+ |14337114
+ 57 Antonova Alexandra      20 RU 00oo  4 3   7  23  68+ 44- 63+ 48- 50- 61+ |14374283
+ 58 Parunov Sergej          20 RU 00oo  3 3   7  20  54- 65+ 56- 64+ 62+ 50- |14386284
+ 59 Kopotev Pavel           20 RU 00oo  3 3   6  17  64+ 55- 60- 67+ 63+ 56- |14398285
+ 60 Vozzhennikova Sofia     20 RU 74Ch  3 3   6  17  50- 64- 59+ 68+ 54- 66+ |14074170
+ 61 Khokhrjakov Kirill      20 RU 00oo  3 2   4  23  44- 49- 64+ 54- 65+ 57- |14333286
+ 62 Brzhezinskaja Jana      20 RO xxx   3 3   4  16  67+ 50- 68+ 55- 58- 65+ |14301287
+ 63 Zhujkova Alina          20 RU 18Iz  3 2   3  20  66+ 48- 57- 50- 59- 67+ |14325289
+ 64 Bochkanov Nikita        20 RO xxx   2 2   4  14  59- 60+ 61- 58- 67- 68+ |14337290
+ 65 Radomyslskij Mark       20 RU 78SP  2 2   3  17  49- 58- 67+ 66+ 61- 62- |14349291
+ 66 Kornjakov Dmitrij       20 RU 00oo  2 2   2  14  63- 67+ 54- 65- 68+ 60- |14362293
+ 67 Lekomceva Ekaterina     20 RU 78SP  1 1   2  15  62- 66- 65- 59- 64+ 63- |14374294
+ 68 Vinokurov Alexandr      20 RU 78SP  1 0   0  19  57- 51- 62- 60- 66- 64- |14386295

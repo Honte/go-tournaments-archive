@@ -1,0 +1,44 @@
+name: 31st European Youth Go Championship
+stages:
+  - type: tournament
+    file: eygc2026u12.txt
+    category: u12
+    name: U12
+    scoringColumns:
+      - mms 
+      - sos
+      - sosos
+      - wins
+    breakers:
+      - mms
+      - sos
+      - sosos      
+    findSharedPlaces: true
+  - type: tournament
+    file: eygc2026u16.txt
+    category: u16
+    name: U16
+    scoringColumns:
+      - mms 
+      - sos
+      - sosos
+      - wins
+    breakers:
+      - mms
+      - sos
+      - sosos      
+    findSharedPlaces: true    
+  - type: tournament
+    file: eygc2026u21.txt
+    category: u21
+    name: U21
+    scoringColumns:
+      - mms 
+      - sos
+      - sosos
+      - wins
+    breakers:
+      - mms
+      - sos
+      - sosos      
+    findSharedPlaces: true    

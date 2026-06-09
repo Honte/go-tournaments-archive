@@ -1,4 +1,5 @@
 website: https://durhamgo.club/esgc2025/
+name: 19th European Student Go Championship
 stages:
   - type: tournament
     file: esgc2025.txt

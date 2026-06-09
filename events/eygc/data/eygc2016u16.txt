@@ -1,0 +1,55 @@
+; TC[E160325A]
+; CL[A]
+; EV[European Youth Go Championship (under 16)]
+; PC[RS, Subotica]
+; DT[2016-03-25,2016-03-27]
+; HA[h9]
+; KM[8]
+; TM[90]
+; CM[ (submitted by Dubakovic)]
+;.
+ 1 Kajmin Vjacheslav         5d RU  50Zh  23   6    124  733  12+/b   7+/w    2+/b    3+/w    4+/b    11+/w    |14986257
+ 2 Krushelnytskyi Valerii    3d UA  Rivn  22   5    123  735  14+/b   8+/b    1-/w    16+/w   5+/w    3+/w     |15450072
+ 3 Shakhov Kim               3d RU  77Mo  21   4    127  730  10+/b   6+/w    5+/w    1-/b    8+/w    2-/b     |16762284
+ 4 Vazquez Oscar             3d ES  Nam   21   4    125  726  13+/w   5-/b    7+/b    6+/w    1-/w    9+/b     |15633673
+ 5 Djepov Sinan              5d BG  Slvp  21   4    123  740  9+/w    4+/w    3-/b    14+/b   2-/b    8+/w     |17486205
+ 6 Pittner Arved             2d DE  B     21   4    119  727  15+/b   3-/b    9+/w    4-/b    20+/w   7+/w     |16398371
+ 7 Dobranis Denis            3d RO  Bist  20   3    123  715  17+/b   1-/b    4-/w    18+/w   12+/w   6-/b     |15350038
+ 8 State Silvestru           2d RO  Bucu  20   3    122  724  11+/b   2-/w    21+/w   10+/w   3-/b    5-/b     |15362039
+ 9 Grigoriu Elian_Ioan       2d RO  Galt  20   3    121  718  5-/b    16+/b   6-/b    17+/w   10+/w   4-/w     |15974420
+10 Mezin Savva               2k RU  77Mo  20   3    119  720  3-/w    15+/b   11+/w   8-/b    9-/b    18+/w    |16086840
+11 Arsentjev Egor            2k RU  77Mo  20   3    118  713  8-/w    25+/b   10-/b   15+/w   14+/w   1-/b     |16037285
+12 Mramorov Andrej           1d RU  77Mo  20   3    117  703  1-/w    14-/w   23+/b   21+/b   7-/b    17+/b    |15949923
+13 Krajnov Anton             2k RU  77Mo  20   3    116  706  4-/b    18-/w   16-/w   19+/w   15+/b   14+/b    |16098852
+14 Schaaf Emanuel_Jun        1k DE  TR    19   2    122  712  2-/w    12+/b   18+/b   5-/w    11-/b   13-/w    |16550567
+15 Galunov Jakov             2k IL  Hai   19   2    117  695  6-/w    10-/w   22+/b   11-/b   13-/w   20+/b    |16233976
+16 Zemor Solal               3k FR  33Bo  19   3    117  688  19+/b   9-/w    13+/b   2-/b    17-/w   26+/w    |15849867
+17 Poljakov Pavel            2k RU  50Kr  19   2    115  706  7-/w    21-/b   20+/w   9-/b    16+/b   12-/w    |16449598
+18 Rusanovskyi Dmytro        4k UA  Kyiv  19   3    115  703  22+/w   13+/b   14-/w   7-/b    21+/b   10-/b    |15974046
+19 Gigoi George              5k RO  CSOV  19   3    110  670  16-/w   20-/w   25+/w   13-/b   23+/b   22+/w    |17049043
+20 Groot Yuki_de             5k NL  Rijs  18   2    114  684  21-/w   19+/b   17-/b   22+/w   6-/b    15-/w    |15050574
+21 Semmler Gregor            6k DE  J     18   2    114  684  20+/b   17+/w   8-/b    12-/w   18-/w   24-/b    |16850724
+22 Vasova Dita               5k CZ  APmG  18   2    109  668  18-/b   26+/w   15-/w   20-/b   25+/w   19-/b    |15749921
+23 Vavryk Anastasiia         6k UA  Rivn  18   4    105  631  31+/b   27+/w   12-/w   24+/b   19-/w   25+/w    |15813369
+24 Rusanovskyi Yevhen        7k UA  Kyiv  18   4    101  622  25-/b   31+/w   26+/b   23-/w   29+/b   21+/w    |15937042
+25 Medak Mirta               5k HR  Zagr  17   2    109  638  24+/w   11-/w   19-/b   28+/w   22-/b   23-/b    |16525718
+26 Vasa Vojtech              6k CZ  APmG  17   3    103  610  28+/b   22-/b   24-/w   27+/w   30+/b   16-/b    |15762923
+27 Kollner Barnabas          8k HU  BuPe  16   3    97   579  33+/w   23-/b   29+/w   26-/b   28+/b   30-/w    |15633794
+28 Semmler Roman             7k DE  J     16   2    95   591  26-/w   29-/b   31+/w   25-/b   27-/w   33+/w    |17362048
+29 Dogaru Alexandru_Teodor   9k RO  Bucu  16   4    94   565  30+/b   28+/w   27-/b   31+/b   24-/w   34+/w    |16037802
+30 Kazmirenko Anton          9k UA  Irpi  16   4    91   552  29-/w   34+/b   32+/w   33+/b   26-/w   27+/b    |16813049
+31 Nitu Mircea               7k RO  CSOV  15   1    97   569  23-/w   24-/b   28-/b   29-/w   33+/b   32-/w    |15674725
+32 Pelekh Vitalii           10k UA  Rivn  15   4    83   506  34+/w   33+/b   30-/b   36+/w   35-/w   31+/b    |16762570
+33 State Sebastian           8k RO  Bucu  14   1    91   547  27-/b   32-/w   34+/b   30-/w   31-/w   28-/b    |15413035
+34 Tudosie Catalina_Bianca  10k RO  Drob  13   2    84   495  32-/b   30-/w   33-/w   38+/w   36+/b   29-/b    |16274456
+35 Ukhov Matvii             11k UA  Rivn  13   5    70   409  38+/w   39+/b   36-/b   37+/w   32+/b   40+/w    |16774571
+36 Defer Leon               12k CZ  Brno  12   4    73   429  40+/w   38+/b   35+/w   32-/b   34-/w   37+/b    |16413650
+37 Bailesteanu Alexandru    13k RO  Drob  11   3    64   377  39-/w   40+/b   38+/b   35-/b   42+/w   36-/w    |16949031
+38 Stankovic Vladan         11k RS  NiPr  11   1    63   401  35-/b   36-/w   37-/w   34-/b   40-/b   45+/w    |16513409
+39 Mihaiu Andrei            13k RO  CSOV  11   3    61   350  37+/b   35-/w   41-/w   40-/b   43+/b   0+       |17349893
+40 Kushnir Marian           12k UA  Rivn  10   3    65   375  36-/b   37-/w   44+/b   39+/w   38+/w   35-/b    |17449509
+41 Minaiev Mykyta           17k UA  Kyiv  10   6    45   285  44+/w   45+/b   39+/b   43+/w   0+      42+/b    |17425903
+42 Goschler Levente         17k HU  BuPe  7    3    45   288  43-/w   44+/b   0+      45+/b   37-/b   41-/w    |16449059
+43 Lisy Jan                 18k SK  DoSt  7    4    45   285  42+/b   0+      45+/w   41-/b   39-/w   44+/b    |14549370
+44 Ilic Nikola              15k RS  NiPr  7    1    44   289  41-/b   42-/w   40-/w   0+      45-/b   43-/w    |17833354
+45 Danculea Codrin          18k RO  CSOV  4    2    45   287  0+      41-/w   43-/b   42-/w   44+/w   38-/b    |17413495

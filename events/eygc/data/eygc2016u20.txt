@@ -1,0 +1,35 @@
+; TC[E160325C]
+; CL[A]
+; EV[European Youth Go Championship (under 20)]
+; PC[RS, Subotica]
+; DT[2016-03-25,2016-03-27]
+; HA[h9]
+; KM[6.5]
+; TM[80]
+; CM[ (submitted by Dubakovic)]
+;.
+ 1 Fionin Grigorij         6d RU  78SP  7    5    35   198  9+/w    4+/b    8+/w    2+/b    5-/w    3+/b     |16013096
+ 2 Frejlak Stanislaw       5d PL  Wars  7    5    34   198  10+/w   7+/b    3+/w    1-/w    9+/b    5+/b     |12837594
+ 3 Boviz Dominik           6d HU  Szfv  6    4    36   188  6+/w    5+/b    2-/b    14+/w   4+/b    1-/w     |14225926
+ 4 Popov Stepan            4d RU  16Kz  6    4    33   197  8+/w    1-/w    12+/b   6+/b    3-/w    7+/b     |14625897
+ 5 Chernykh Anton          4d RU  50Zh  6    4    32   192  12+/w   3-/w    19+/b   7+/w    1+/b    2-/w     |15713467
+ 6 Yeroshkin Oleksandr     2d UA  Rivn  6    4    30   182  3-/b    13+/w   10+/b   4-/w    17+/w   8+/b     |13649108
+ 7 Ruzicka Martin          4d DE  FR    5    3    34   184  11+/b   2-/w    9+/w    5-/b    10+/b   4-/w     |13037596
+ 8 Dobranis Darius         1d RO  Bist  5    3    32   176  4-/b    15+/w   1-/b    11+/w   12+/b   6-/w     |15049716
+ 9 Jacimovic Mihailo       3d RS  KGRa  5    3    31   171  1-/b    11+/w   7-/b    20+/w   2-/w    15+/b    |16786891
+10 Goncalves Simao         2d LU  Lux  5    3    30   173  2-/b    14+/b   6-/w    16+/w   7-/w    13+/b    |17074981
+11 Csizmadia Robert        2k HU  BuPe  5    3    24   167  7-/w    9-/b    24+/b   8-/b    19+/w   12+/w    |14925416
+12 Tomsu Adriana           1d CZ  TFMi  4    2    30   172  5-/b    16+/w   4-/w    13+/b   8-/w    11-/b    |16225396
+13 Calon Ruben             2k NL  Eind  4    3    27   159  18+/w   6-/b    15+/b   12-/w   16+/b   10-/w    |14650834
+14 Jansky Dusan            4k CZ  APmG  4    3    24   154  19+/b   10-/w   17+/b   3-/b    15-/w   24+/w    |15862946
+15 Defer Tristan           4k CZ  Brno  4    3    24   153  20+/b   8-/b    13-/w   21+/w   14+/b   9-/w     |16486074
+16 Petrashevska Nika       6k UA  Kyiv  4    3    24   151  17+/w   12-/b   18+/b   10-/b   13-/w   21+/w    |15786518
+17 Smolarikova Sona        3k SK  Kosi  4    3    24   137  16-/b   22+/w   14-/w   18+/b   6-/b    19+/b    |16037604
+18 Vlad Gabriela_Viorica   4k RO  CSOV  4    3    21   131  13-/b   23+/b   16-/w   17-/w   0+      20+/w    |15725380
+19 Bukovska Anezka         6k CZ  APmG  3    2    23   137  14-/w   21+/b   5-/w    25+/b   11-/b   17-/w    |15874947
+20 Lisy Daniel            11k SK  DSta  3    3    20   120  15-/w   25+/w   22+/b   9-/b    23+/w   18-/b    |12833623
+21 Antonijevic Nemanja    12k RS  BGmp  3    3    19   120  0+      19-/w   23+/b   15-/b   22+/w   16-/b    |15233119
+22 Vuk Darko              10k RS  NiPr  3    3    15   109  24+/w   17-/b   20-/w   0+      21-/b   25+/b    |16525410
+23 Waczulikova Kristina   11k SK  Brat  3    3    15   106  25+/b   18-/w   21-/w   24+/b   20-/b   0+       |13001659
+24 Kollner Dora           13k HU  BuPe  2    2    17   109  22-/b   0+      11-/w   23-/w   25+/w   14-/b    |15686792
+25 Dimitrov Viktor        20k BG  xxxx  1    1    14   104  23-/w   20-/b   0+      19-/w   24-/b   22-/w    |17898782

@@ -1,0 +1,109 @@
+; TC[E180329C]
+; CL[A]
+; EV[23rd European Youth Go Championship 2018 (U12)]
+; PC[UA, Kyiv]
+; DT[2018-03-29,2018-03-31]
+; HA[h9]
+; KM[7.5]
+; TM[80]
+; CM[ (submitted by Julia K)]
+;.
+ 1 Rotarita Stefan_Adrian   2k RO  Boto  14   5    78   438  64   12+/b   4+/w    6+/b    2+/b    3-/w    5+/b     |17837270
+ 2 Pishchalnikov Artemij    1k RU  59So  14   5    77   442  63   3+/b    8+/b    7+/w    1-/w    4+/b    10+/b    |16549071
+ 3 Gimadiev Artur           4k RU  16Kz  14   5    73   445  59   2-/w    21+/b   16+/w   7+/b    1+/b    6+/w     |17849073
+ 4 Lavrov Egor              3k RU  77Mo  13   4    74   444  46   15+/b   1-/b    14+/w   9+/w    2-/w    8+/b     |17886462
+ 5 Khusainov Askar          2k RU  16Kz  13   4    72   439  46   11-/b   15+/w   10+/w   6+/b    14+/b   1-/w     |17525706
+ 6 Ovsiienko Vsevolod       4k UA  Kyiv  12   3    75   431  34   21+/b   9+/b    1-/w    5-/w    13+/b   3-/b     |17633902
+ 7 Tarasov Ruslan           3k RU  16Kz  12   3    74   426  34   17+/b   11+/w   2-/b    3-/w    10-/w   16+/w    |17513705
+ 8 Boldeanu Dragos          3k RO  Brai  12   3    72   436  34   14+/b   2-/w    11+/w   15-/b   16+/b   4-/w     |16750349
+ 9 Krajnov Jaroslav         2k RU  77Mo  12   3    72   424  35   10+/b   6-/w    12+/w   4-/b    15+/w   13-/w    |16349036
+10 Bugaj Antoni             6k PL  Wars  12   3    71   431  32   9-/w    22+/w   5-/b    21+/b   7+/b    2-/w     |17898078
+11 Malko Olesia             8k UA  Rivn  12   3    70   424  35   5+/w    7-/b    8-/b    16-/b   18+/w   14+/w    |17874241
+12 Li Shizhao               5k DE  W     12   3    67   431  30   1-/w    25+/b   9-/b    14-/b   21+/w   15+/b    |17813389
+13 Shchepaniuk Oleksandr   12k UA  Kyiv  12   5    65   401  53   23+/w   26+/b   18+/b   17+/w   6-/w    9+/b     |18062924
+14 Melnyk Anna              9k UA  Kyiv  11   2    73   415  23   8-/w    19+/b   4-/b    12+/w   5-/w    11-/b    |17886517
+15 Stefanovych Dmytro       9k UA  Rivn  11   2    72   422  22   4-/w    5-/b    22+/b   8+/w    9-/b    12-/w    |17813246
+16 Lysenko Yehor           11k UA  Kyiv  11   3    70   419  32   26+/w   17+/b   3-/b    11+/w   8-/w    7-/b     |17625608
+17 Kushnerik Roman          8k UA  Odes  11   2    65   395  19   7-/w    16-/w   25+/b   13-/b   22+/b   20-/w    |18013413
+18 Kovalevskaja Valeria    11k RU  50Zh  11   3    63   385  29   22-/b   29+/w   13-/w   19+/b   11-/b   21+/w    |17849106
+19 Pushnia Yurii           12k UA  Kyiv  11   4    60   387  38   24+/b   14-/w   26+/w   18-/w   25+/b   22+/w    |17649907
+20 Onyshchuk Bohuslav      13k UA  Rivn  11   4    56   361  38   25-/w   27-/b   30+/w   23+/w   26+/b   17+/b    |18274619
+21 Pasichnyk Danylo        10k UA  Rivn  10   1    71   410  10   6-/w    3-/w    23+/b   10-/w   12-/b   18-/b    |17801245
+22 Medak Stjepan           11k HR  Zagr  10   2    65   396  20   18+/w   10-/b   15-/w   25+/b   17-/w   19-/b    |17437574
+23 Semeshchuk Andrii       13k UA  Rivn  10   3    61   366  28   13-/b   24+/w   21-/w   20-/b   27+/b   26+/b    |18262618
+24 Kholod Ustin            13k UA  Odes  10   3    56   358  26   19-/w   23-/b   27+/b   26-/w   29+/b   25+/w    |18049416
+25 Stelbacky Mojmir        11k SK  Pora  9    1    65   369  11   20+/b   12-/w   17-/w   22-/w   19-/w   24-/b    |16886408
+26 Kovalchuk Bohdan        10k UA  Rivn  9    1    65   368  10   16-/b   13-/w   19-/b   24+/b   20-/w   23-/w    |17433295
+27 Zinoviev Mykhailo       14k UA  Khar  9    4    53   309  33   37+/b   20+/w   24-/w   32+/b   23-/w   31+/b    |18333832
+28 Kaznodii Yaroslav       15k UA  Rivn  9    5    44   275  37   33+/w   34-/b   37+/b   30+/w   35+/b   29+/w    |18362839
+29 Siver Yekateryna        14k UA  Kyiv  8    2    54   305  16   30+/b   18-/b   32-/w   31+/w   24-/w   28-/b    |17637906
+30 Simon Zsofia            13k HU  BPSD  8    2    52   285  16   29-/w   31+/b   20-/b   28-/b   32+/w   33-/w    |17486623
+31 Faifura Orest           15k UA  Rivn  8    3    47   282  22   35+/b   30-/w   33+/b   29-/b   34+/w   27-/w    |18262629
+32 Kharchuk Anatolii       16k UA  Rivn  8    4    43   278  26   46+/b   37+/w   29+/b   27-/w   30-/b   34+/w    |18413153
+33 Kristensen_Cruz David   15k DK  KGK   8    4    41   257  24   28-/b   38+/w   31-/w   56+/b   37+/w   30+/b    |18525364
+34 Naumenko Roman          16k UA  Kyiv  7    4    43   244  27   45+/b   28+/w   35+/b   40+/w   31-/b   32-/b    |18498975
+35 Pittner Arwen           15k DE  B     7    3    39   241  15   31-/w   55+/b   34-/w   45+/b   28-/w   38+/b    |16437201
+36 Crvelin Roko            17k HR  Zagr  7    5    31   191  25   41-/b   57+/w   48+/w   55+/b   39+/b   40+/w    |18262739
+37 Azmukhametov Dinar      15k RU  16Kz  6    1    46   252  6    27-/w   32-/b   28-/w   38+/b   33-/b   39-/w    |17913764
+38 Vlasenko Oleksandra     17k UA  Kyiv  6    3    36   232  15   39+/b   33-/b   55+/w   37-/w   45+/b   35-/w    |17825731
+39 Zaiets Orest            17k UA  Rivn  6    3    35   201  16   38-/w   63+/b   40-/b   41+/w   36-/w   37+/b    |18433085
+40 Mychko Artem            18k UA  Rivn  6    4    34   196  20   57+/b   58+/b   39+/w   34-/b   42+/w   36-/b    |18662259
+41 Hrabarchuk Yeva         18k UA  Kyiv  6    4    31   184  20   36+/w   47+/b   45-/w   39-/b   74+/b   46+/w    |17833519
+42 Rudyk Tymofii           19k UA  Kyiv  6    5    31   179  25   43+/b   50+/w   47+/w   59+/b   40-/b   45+/w    |18286125
+43 Datsko Olha             18k UA  IFra  6    5    26   159  20   42-/w   82+/b   57+/b   61+/w   56+/w   51+/w    |18550829
+44 Ziubin Arsenii          19k UA  Kyiv  6    6    25   140  25   88+/b   54+/w   67+/b   47+/w   60+/w   49+/b    |17250706
+45 Doronina Maryna         17k UA  Rivn  5    2    37   210  11   34-/w   46+/b   41+/b   35-/w   38-/w   42-/b    |18601165
+46 Novosad Pavlo           17k UA  Tern  5    2    30   199  7    32-/w   45-/w   56-/b   71+/w   55+/b   41-/b    |17249287
+47 Lebid Vladyslav         17k UA  Rivn  5    3    30   160  12   50+/b   41-/w   42-/b   44-/b   73+/w   58+/b    |18674260
+48 Ivliev Oleksandr        20k UA  Kyiv  5    4    28   153  16   71+/w   52+/w   36-/b   62+/b   49-/b   59+/w    |18501593
+49 Baturina Raisa          20k UA  Khar  5    5    26   137= 20   68+/b   64+/b   81+/w   58+/b   48+/w   44-/w    |18398831
+50 Arsentjev Grigorij      18k RU  77Mo  5    3    25   157  10   47-/w   42-/b   61-/b   79+/w   75+/b   56+/w    |17849469
+51 Petrashevskyi Danyl     20k UA  Kyiv  5    5    24   134  18   66+/w   91+/b   70+/b   53+/w   59+/w   43-/b    |18533592
+52 Sladetic Teo            18k HR  Zagr  5    4    23   161  14   85+/w   48-/b   63+/w   60-/w   57+/b   55+/b    |18298742
+53 Liubinets Liubomyr      18k UA  IFra  5    4    23   137= 14   65-/b   72+/w   77+/w   51-/b   61+/b   60+/b    |18586821
+54 Boldyriev Nikita        20k UA  Rivn  5    5    22   124= 16   94+/w   44-/b   72+/b   78+/w   64+/b   62+/w    |18649587
+55 Zahoroichuk Anastasiia  17k UA  Rivn  4    1    34   191  4    56+/b   35-/w   38-/b   36-/w   46-/w   52-/w    |18250628
+56 Kotsiuruba Sofiia       18k UA  Kyiv  4    2    32   180  9    55-/w   62+/b   46+/w   33-/w   43-/b   50-/b    |18437375
+57 Chernova Mariia         17k UA  Kyiv  4    2    29   146  5    40-/w   36-/b   43-/w   80+/b   52-/w   93+/b    |18562819
+58 Sokur Artem             18k UA  Kyiv  4    2    27   164  7    62+/b   40-/w   59-/b   49-/w   70+/b   47-/w    |18598591
+59 Radchenko Vladyslava    18k UA  Rivn  4    3    27   152= 11   72+/b   65+/w   58+/w   42-/w   51-/b   48-/b    |18633164
+60 Stanitska Arina         20k UA  Rivn  4    4    26   128  15   79+/w   80+/w   65+/b   52+/b   44-/b   53-/w    |18625167
+61 Fenchak Anastasiia      19k UA  Kyiv  4    4    25   126  14   69+/b   85+/b   50+/w   43-/b   53-/w   83+/b    |18413978
+62 Nychypor Dana           18k UA  Rivn  4    2    24   144  6    58-/w   56-/w   78+/b   48-/w   83+/b   54-/b    |18698163
+63 Oliinyk Anna            18k UA  Kyiv  4    3    23   141= 8    87+/b   39-/w   52-/b   64-/w   72+/w   70+/b    |18574138
+64 Sandara Maksym          20k UA  Rivn  4    4    22   126  12   90+/b   49-/w   76+/w   63+/b   54-/w   81+/b    |17533428
+65 Oliinyk Kateryna        19k UA  Kyiv  4    3    21   135= 10   53+/w   59-/b   60-/w   74-/b   86+/w   76+/w    |18550136
+66 Yanush Denys            20k UA  IFra  4    4    20   119= 12   51-/b   75-/w   82+/b   84+/w   77+/w   74+/w    |18574820
+67 Zavadskyi Ivan          19k UA  Kyiv  4    4    19   128= 10   76+/b   86+/w   44-/w   70-/w   85+/b   73+/b    |18333843
+68 Zabihailo Anna          20k UA  Kyiv  4    4    17=  120  9=   49-/w   88+/b   96+/b   73-/w   71+/b   75+/w    |18437980
+69 Troian Arsenii          20k UA  Kyiv  4    4    15   112  8    61-/w   76-/b   97+/b   89+/w   87+/w   80+/b    |18298126
+70 Terletskyi Volodymyr    20k UA  Tern  3    3    23   131  10   83+/w   71+/b   51-/w   67+/b   58-/w   63-/w    |18586623
+71 Korolkov Maksym         19k UA  Khar  3    2    22   130  5    48-/b   70-/w   84+/w   46-/b   68-/w   89+/b    |18662589
+72 Sabadyshyn Vladyslav    19k UA  Tern  3    2    21=  125= 3=   59-/w   53-/b   54-/w   96+/b   63-/b   86+/w    |18649290
+73 Voznyi Andrii           20k UA  Tern  3    3    21   123= 9    75+/b   78-/w   87+/w   68+/b   47-/b   67-/w    |18525617
+74 Yeroshkina Polina       20k UA  Rivn  3    3    21   119  8    93+/b   81-/w   92+/b   65+/w   41-/w   66-/b    |16998729
+75 Malukhin Kyryl          20k UA  Rivn  3    3    21   118= 9    73-/w   66+/b   91+/b   77+/w   50-/w   68-/b    |18633263
+76 Pochyhailo Veronika     20k UA  IFra  3    3    21   111  9    67-/w   69+/w   64-/b   92+/w   78+/b   65-/b    |18674590
+77 Ovsiienko Tymofii       20k UA  Kyiv  3    3    20   114= 8    82+/w   84+/w   53-/b   75-/b   66-/b   87+/b    |18662325
+78 Yakibchuk Kyrylo        19k UA  Kyiv  3    3    19   121  7    89+/w   73+/b   62-/w   54-/b   76-/w   88+/b    |18549597
+79 Hrebenshchykov Dmytro   20k UA  Kyiv  3    3    18   121  6    60-/b   89+/w   85+/w   50-/b   80-/w   91+/b    |18550598
+80 Zderic Tonka            19k HR  Zagr  3    3    18   119= 6    98+/w   60-/b   86+/w   57-/w   79+/b   69-/w    |18286741
+81 Ovcharenko Anastasiia   20k UA  Kyiv  3    3    18   116  6    97+/w   74+/b   49-/b   83-/w   90+/b   64-/w    |18501604
+82 Parfeniuk Sofiia        20k UA  Rivn  3    3    18   111= 5    77-/b   43-/w   66-/w   99+/b   92+/b   85+/w    |18649169
+83 Kristensen_Cruz Oliver  20k DK  KGK   3    3    16   119  5    70-/b   97+/b   98+/w   81+/b   62-/w   61-/w    |18550367
+84 Kholodov Andrii         20k UA  Rivn  3    3    15=  106  5=   92+/w   77-/b   71-/b   66-/b   0+/w    90+/w    |18601264
+85 Rudko Vladyslav         18k UA  Tern  2    1    21   116  2    52-/b   61-/w   79-/b   94+/b   67-/w   82-/b    |18613287
+86 Tereshchuk Davyd        20k UA  Krem  2    2    17=  107= 3=   96+/w   67-/b   80-/b   91+/w   65-/b   72-/b    |18537618
+87 Surmachevskyi Arsenii   20k UA  IFra  2    2    17   109  3    63-/w   90+/w   73-/b   98+/b   69-/b   77-/w    |18533823
+88 Baturina Olha           20k UA  Khar  2    2    17   108= 2    44-/w   68-/w   90-/b   0+      98+/b   78-/w    |18437914
+89 Zotkin Mykhailo         20k UA  Khar  2    2    16   96=  3    78-/b   79-/b   99+/w   69-/b   94+/w   71-/w    |18686591
+90 Pohorelov Oleksii       20k UA  Odes  2    2    16   93=  4    64-/w   87-/b   88+/w   95+/b   81-/w   84-/b    |18613430
+91 Uzkykh Mykyta           20k UA  Khar  2    2    15   105  2    99+/b   51-/w   75-/w   86-/b   0+      79-/w    |18698592
+92 Ostapenko Nadiia        20k UA  Kyiv  2    2    15   103= 3    84-/b   93+/w   74-/w   76-/b   82-/w   98+/w    |18633593
+93 Boda Oleksandr          20k UA  IFra  2    2    14   97   3    74-/w   92-/b   94-/b   97+/w   0+/w    57-/w    |18637586
+94 Petryk Danylo           20k UA  Kyiv  2    2    13   102  3    54-/b   98-/b   93+/w   85-/w   89-/b   97+/w    |18601594
+95 Kushanov Roman          20k UA  Kyiv  2    0    4    30   0    0=      0=      0=      90-/w   0-/b    0=       |18625596
+96 Markovych Solomiia      20k UA  Tern  1=   1    13   81=  1    86-/b   99+/w   68-/w   72-/w   0-/b    0=       |18637597
+97 Redila Sofiia           20k UA  Rivn  1    1    15   85=  1    81-/b   83-/w   69-/w   93-/b   99+/w   94-/b    |18449651
+98 Tereshchuk Tetiana      20k UA  Krem  1    1    14   96   2    80-/b   94+/w   83-/b   87-/w   88-/w   92-/b    |18550620
+99 Terletska Alina         20k UA  Tern  1    1    9=   86=  0    91-/w   96-/b   89-/b   82-/w   97-/b   0+       |18513627

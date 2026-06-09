@@ -1,0 +1,38 @@
+; CL[A]
+; EV[European Youth Championship - under 12]
+; PC[RO, Bayle Felix]
+; DT[1996-03-01,1996-03-03]
+; TC[E960301B]
+; HA[h9]
+; KM[5.5]
+; TM[60]
+; 
+  1 Fenech Antoine          1k FR 67SE  7 7  30 206  24+  3+ 11+  2+  8+  5+  4+  |10349350
+  2 Mutu Cosmin             5k RO Drob  5 5  35 196   4+  6+  7+  1- 19+  3+  5-  |10350351
+  3 Marton Csaba            7k HU BuPe  5 5  32 187  21+  1- 10+  7+ 13+  2- 12+  |10362352
+  4 Cristescu Dan           9k RO Drob  5 5  30 195   2- 17+ 14+ 16+  9+  8+  1-  |10386354
+  5 Shevchuk Mykhailo       8k UA Riv   5 5  28 187  28- 21+  6+ 15+ 12+  1-  2+  |10333356
+  6 Coros Mihai             14 RO xxx   5 5  27 190  15+  2-  5- 18+ 17+ 11+  9+  |10301357
+  7 Sinca Marius            7k RO Brai 5 5  27 180  19+  0+  2-  3- 15+ 10+  8+  |10313358
+  8 Dudau Sever             14 RO xxx   4 4  33 190  13+ 10+  9+ 12+  1-  4-  7-  |10325359
+  9 Hodorogea Bogdan        16 RO xxx   4 4  28 184  20+ 14+  8- 11+  4- 16+  6-  |10337360
+ 10 Popa Vlad               18 RO xxx   4 4  27 178  18+  8-  3- 20+ 14+  7- 22+  |10349361
+ 11 Vermes Lili             17 HU BuPe  4 4  27 170  17+ 26+  1-  9- 22+  6- 18+  |10350362
+ 12 Grigorescu Vlad         16 RO xxx   4 4  24 185  27+ 28+ 16+  8-  5- 13+  3-  |10374364
+ 13 Dumitru Alexandru       20 RO Brai 4 4  24 175   8- 18+ 27+ 22+  3- 12- 16+  |10386365
+ 14 Jerca Flavia            15 RO xxx   4 4  22 180  25+  9-  4- 28+ 10- 17+ 15+  |10333367
+ 15 Patrasciuc Claudiu      18 RO Bist 3 3  26 166   6- 25+ 26+  5-  7- 19+ 14-  |10301368
+ 16 Bica Alin               20 RO xxx   3 3  24 172   0+ 20+ 12-  4- 24+  9- 13-  |10350329
+ 17 Beches Alexandru        20 RO Bist 3 3  23 173  11-  4-  0+ 27+  6- 14- 28+  |10313369
+ 18 Hossu Raluca            20 RO xxx   3 3  23 172  10- 13- 24+  6- 28+ 20+ 11-  |10325370
+ 19 Sora Adelina            20 RO Crai  3 3  22 167   7- 22- 25+ 26+  2- 15- 27+  |10337371
+ 20 Hossu Alexandra         20 RO xxx   3 3  21 162   9- 16- 21+ 10- 26+ 18- 25+  |10349372
+ 21 Soava Paul              20 RO xxx   3 3  20 168   3-  5- 20- 25-  0+ 28+ 24+  |10362374
+ 22 Acrisor Robert          20 RO Bucu  3 3  20 165  26- 19+ 28+ 13- 11- 25+ 10-  |10374375
+ 23 Castaliu Stefania       12 RO Bucu  3 0   5  27   0-  0-  0-  0-  0-  0-  0-
+ 24 Dumitru Eugen           20 RO xxx   2 2  21 156   1- 27- 18-  0+ 16- 26+ 21-  |10386376
+ 25 Miclea Eliza            20 RO xxx   2 2  21 150  14- 15- 19- 21+ 27+ 22- 20-  |10333378
+ 26 Luta Diana              20 RO xxx   2 2  19 156  22+ 11- 15- 19- 20- 24-  0+  |10301379
+ 27 Dragomir Mihai          20 RO xxx   2 2  19 154  12- 24+ 13- 17- 25-  0+ 19-  |10313380
+ 28 Dragomir Marius         20 RO xxx   1 1  25 160   5+ 12- 22- 14- 18- 21- 17-  |10325381
+

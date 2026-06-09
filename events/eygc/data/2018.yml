@@ -1,0 +1,50 @@
+name: 23rd European Youth Go Championship
+stages:
+  - type: tournament
+    file: eygc2018u12.txt
+    category: u12
+    name: U12
+    scoringColumns:
+      - mms 
+      - wins
+      - sos
+      - sosos
+      - sodos
+    breakers:
+      - mms
+      - sos
+      - sosos
+      - sodos      
+    findSharedPlaces: true
+  - type: tournament
+    file: eygc2018u16.txt
+    category: u16
+    name: U16
+    scoringColumns:
+      - mms 
+      - wins
+      - sos
+      - sosos
+      - sodos
+    breakers:
+      - mms
+      - sos
+      - sosos
+      - sodos      
+    findSharedPlaces: true    
+  - type: tournament
+    file: eygc2018u20.txt
+    category: u20
+    name: U20
+    scoringColumns:
+      - mms 
+      - wins
+      - sos
+      - sosos
+      - sodos      
+    breakers:
+      - mms
+      - sos
+      - sosos
+      - sodos      
+    findSharedPlaces: true

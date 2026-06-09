@@ -1,0 +1,75 @@
+; CL[A]
+; EV[European Youth Championship]
+; PC[RU, Sankt-Peterburg]
+; DT[2006-03-23,2006-03-26]
+; TC[E060323A]
+; HA[h9]
+; KM[7.5]
+; TM[75]
+;
+  1 Shikshin Ilja            6d RU 16Kz 27 6 146 146  20+ 16+  9+  2+  4+  3+ |12013342
+  2 Pocsai Rita              4d HU BuPe 26 5 123 150  12+  6+  4+  1-  5+ 10+ |10686346
+  3 Debarre Thomas           1d FR 67SE 25 4  96 147   8- 14+  5+ 18+  9+  1- |12950872
+  4 Fidrmuc Ondrej           3d CZ Brn  25 4  95 148  19+  7+  2- 11+  1-  9+ |12501247
+  5 Dugin Artem              4d RU 16Kz 25 4  95 146  18+ 10+  3-  7+  2- 12+ |12049576
+  6 Lopatjuk Kostjantyn      2d UA Riv  25 4  94 144  21+  2-  7- 20+  8+ 11+ |10849190
+  7 Kachanovskyj Artem       1d UA Riv  24 3  72 146  11+  4-  6+  5- 12- 18+ |12662870
+  8 Prokop Jan               3d CZ Pra  24 3  72 144   3+  9- 18- 13+  6- 19+ |10433654
+  9 Tormanen Antti           4d FI Hels 24 3  71 148  14+  8+  1- 15+  3-  4- |12949310
+ 10 Caraivan Alexandru       1d RO Brai 24 3  70 145  13+  5- 11- 21+ 15+  2- |12698356
+ 11 Kashaev Andrej           1d RU 77Mo 24 3  70 144   7- 20+ 10+  4- 18+  6- |12601215
+ 12 Noir Baptiste            2d FR 93Mo 24 3  69 143   2- 15- 24+ 19+  7+  5- |12449712
+ 13 Sharafeeva Guzel         1d RU 16Kz 24 3  69 140  10- 18- 16+  8- 21+ 20+ |12586134
+ 14 Obenaus Johannes         2d DE B    24 3  66 138   9-  3- 19- 27+ 25+ 15+ |13049795
+ 15 Savo Jesse               1k FI Haya 23 3  69 141  26+ 12+ 21+  9- 10- 14- |13801634
+ 16 Manakhov Evgenij         1k RU 74Ch 23 3  67 141  17+  1- 13- 26+ 19- 25+ |12849529
+ 17 Serban Mihai_Valentin    1k RO Bist 23 3  64 132  16- 29+ 20- 25- 27+ 24+ |13062258
+ 18 Kravec Andrij            1d UA Riv  23 2  48 146   5- 13+  8+  3- 11-  7- |12350261
+ 19 Fragman Amir             1d IL RhA  23 2  47 143   4- 21- 14+ 12- 16+  8- |13625315
+ 20 Berkelmans Wouter        1d NL Amvn 23 2  45 145   1- 11- 17+  6- 24+ 13- |12574617
+ 21 Brooks William           2d UK Camb 23 2  45 141   6- 19+ 15- 10- 13- 22+ |10862247
+ 22 Trubicin Stepan          4k RU 78SP 22 5 103 126  36+ 32+ 29+ 28+ 26+ 21- |13098096
+ 23 Nikishin Oleg            3k RU 16Kz 22 4  82 125  28- 30+ 32+ 24- 29+ 27+ |13033075
+ 24 Saitov Linar             2k RU 16Kz 22 3  65 135  29+ 26+ 12- 23+ 20- 17- |13025078
+ 25 Eerbeek Alexander        2k NL Utre 22 3  63 131  27- 36+ 28+ 17+ 14- 16- |13501356
+ 26 Vasile Mihai             1k RO Slob 22 2  42 132  15- 24- 27+ 16- 22- 28+ |10798293
+ 27 Zakharzhevskij Nikolaj   2k UA Riv  21 2  43 134  25+ 28+ 26- 14- 17- 23- |10813198
+ 28 Savolainen Javier-Aleksi 2k FI HGK  21 2  41 128  23+ 27- 25- 22- 36+ 26- |14001537
+ 29 Kachanovskyj Mykhajlo    2k UA Riv  21 2  39 128  24- 17- 22- 34+ 23- 32+ |12649175
+ 30 Kocherov Oleg            5k RU 52NN 20 4  73 114  39+ 23- 43+ 36- 33+ 34+ |12862498
+ 31 Sivashov Nikolaj         5k RU 74Ch 20 4  72 110  34- 33- 38+ 39+ 43+ 36+ |12886148
+ 32 Morozov Alexej           4k RU 77Mo 20 3  55 120  35+ 22- 23- 43+ 34+ 29- |12701612
+ 33 Tjupkin Anton            6k RU 16Kz 19 4  73 111  38- 31+ 42+ 35+ 30- 40+ |13837527
+ 34 Solovjeva Olga           5k RU 52NN 19 3  56 117  31+ 43+ 36+ 29- 32- 30- |12301267
+ 35 Podoljak Nikita          5k RU 78SP 19 3  52 109  32- 39- 41+ 33- 40+ 38+ |12549273
+ 36 Linev Alexandr           3k RU 78SP 19 1  20 124  22- 25- 34- 30+ 28- 31- |14025935
+ 37 Kozelskikh Alexandr      8k RU 77Mo 18 5  80  97  50+ 40- 44+ 41+ 45+ 43+ |12737219
+ 38 Avram Laura              6k RO Bist 18 3  54 110  33+ 41- 31- 42+ 39+ 35- |12698620
+ 39 Mankinen Antti           6k FI Lah  18 3  52 110  30- 35+ 45+ 31- 38- 41+ |13837648
+ 40 Wohnig Maria             8k DE B    17 4  64 102  44+ 37+ 49+ 45+ 35- 33- |13833270
+ 41 Sakhnenko Alexandr       7k RU 74Ch 17 3  51 106  42+ 38+ 35- 37- 44+ 39- |13862486
+ 42 Pakarinen Aleksi         6k FI Hels 17 2  30 100  41- 45+ 33- 38- 50+ 44- |13925076
+ 43 Matveev Anton            5k RU 78SP 17 1  16 113  45+ 34- 30- 32- 31- 37- |14037936
+ 44 Karpov Mikhail           8k RU 78SP 16 3  46  98  40- 50+ 37- 47+ 41- 42+ |12098482
+ 45 Bakhtizina Laura         5k AZ xxx  16 0   0 102  43- 42- 39- 40- 37- 47- |14001284
+ 46 Reshetnikov Valerij      11 RU 18Iz 15 5  68  82  48+ 49- 53+ 51+ 47+ 50+ |13713051
+ 47 Donnet Helene            10 FR 75Pa 15 4  59  90  49+ 48+ 50+ 44- 46- 45+ |13986346
+ 48 Uralskij Evsej           10 RU 78SP 15 4  50  80  46- 47- 51+ 53+ 52+ 49+ |12850530
+ 49 Nosov Gleb               9k RU 78SP 14 2  28  89  47- 46+ 40- 50- 51+ 48- |12633742
+ 50 Melkishev Alexandr       8k RU 74Ch 14 1  14  95  37- 44- 47- 49+ 42- 46- |13850485
+ 51 Blinov Evgenij           11 RU 74Ch 13 3  32  76  53+ 52+ 48- 46- 49- 57+ |14298647
+ 52 Ruzhanskyj Roman         13 UA Kyiv 12 4  37  65  61+ 51- 54+ 59+ 48- 53+ |14233274
+ 53 Wohnig Denis             12 DE B 11 2  17  72  51- 61+ 46- 48- 55+ 52- |13474659
+ 54 Szychowiak Weronika      16 PL Bydg 10 5  42  54  60+ 57+ 52- 61+ 59+ 55+ |12586497
+ 55 Lenz Heinrich            16 DE P  9 4  34  55  57+ 59+ 61+ 58+ 53- 54- |13433915
+ 56 Szychowiak Gracjan       17 PL Byto  9 5  26  35  63+ 58+ 57- 65+ 64+ 59+ |12686608
+ 57 Khajdarov Kamil          15 RU 78SP  9 3  21  53  55- 54- 56+ 62+ 61+ 51- |12650748
+ 58 Smirnov Arsenij          15 RU 74Ch  9 3  11  37  59- 56- 63+ 55- 62+ 64+ |13986940
+ 59 Grigorchuk Mikhail       15 RU 74Ch  8 2  17  57  58+ 55- 60+ 52- 54- 56- |14298768
+ 60 Berende Bogdan           16 RO Bist 8 3   7  28  54- 63+ 59- 64- 66+ 65+ |10413513
+ 61 Margarjan Sofia          14 AM xxx   8 1   1  52  52- 53- 55- 54- 57- 66+ |14325267
+ 62 Brenstein Jan            20 DE P  4 4  10  28  65+ 64+ 66+ 57- 58- 63+ |13962806
+ 63 Antonova Olga            18 RU 00oo  4 1   2  33  56- 60- 58- 66- 65+ 62- |14337268
+ 64 Mykhaljuk Julia          20 UA Riv   3 3  11  33  66+ 62- 65+ 60+ 56- 58- |14349269
+ 65 Tizik Alexandr           20 RU 77Mo  2 1   1  29  62- 66+ 64- 56- 63- 60- |14350270
+ 66 Lenz Friederike          20 DE P  1 1   4  29  64- 65- 62- 63+ 60- 61- |14362271

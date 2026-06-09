@@ -1,0 +1,32 @@
+name: 29th European Youth Go Championship
+stages:
+  - type: tournament
+    file: eygc2024u12.txt
+    category: u12
+    name: U12
+    scoringColumns:
+      - mms 
+      - wins
+      - null
+      - sos
+      - sosos
+    breakers:
+      - mms
+      - sos
+      - sosos   
+    findSharedPlaces: true
+  - type: tournament
+    file: eygc2024u18.txt
+    category: u18
+    name: U18
+    scoringColumns:
+      - mms 
+      - wins
+      - null
+      - sos
+      - sosos
+    breakers:
+      - mms
+      - sos
+      - sosos    
+    findSharedPlaces: true    

@@ -1,0 +1,70 @@
+; CL[A]
+; EV[European Children Championship 2000]
+; PC[RO, Sinaia]
+; DT[2000-03-03,2000-03-05]
+; TC[E000303B]
+; HA[h9]
+; KM[5.5]
+; TM[60]
+;
+  1 Shikshin Ilja           2k RU 16Kz 14 6  67  67  13+/w  2+/b  3+/w  4+/b  9+/b  5+/w  |12013342
+  2 Glushchenko Mykola      1d UA Kyiv 13 5  69  55  11+/b  1-/w  6+/w  5+/b  3+/w  7+/w  |10813451
+  3 Pocsai Rita             2k HU BuPe 12 4  70  43  10+/w  5+/w  1-/b  7+/b  2-/b  6+/b  |10686346
+  4 Lopatjuk Kostjantyn     3k UA Riv  12 4  67  42   8+/b  7+/w  9+/b  1-/w  6-/w 10+/w  |10849190
+  5 Dugin Artem             1k RU 16Kz 11 3  71  32   6+/w  3-/b 12+/w  2-/w  8+/b  1-/b  |12049576
+  6 Prokop Jan              7k CZ Pra  11 3  68  32   5-/b 11+/w  2-/b 10+/w  4+/b  3-/w  |10433654
+  7 Nicolaie Lucian         2k RO Brai 11 3  68  31  12+/b  4-/b  8+/w  3-/w 11+/w  2-/b  |10601349
+  8 Zakharzhevskij Nikolaj  10 UA Riv  11 3  62  28   4-/w 13+/b  7-/b 15+/w  5-/w  9+/b  |10813198
+  9 Coman Gabriela          13 RO Brai 10 3  65  28  15+/w 10+/b  4-/w 13+/b  1-/w  8-/w  |12037630
+ 10 Kravec Andrij           9k UA Riv  10 2  64  19   3-/b  9-/w 11+/w  6-/b 13+/w  4-/b  |12350261
+ 11 Vasile Mihai            12 RO Slob 10 2  64  19   2-/w  6-/b 10-/b 12+/w  7-/b 14+/w  |10798293
+ 12 Zakharzhevskyy Andriy   11 UA Riv  10 2  57  16   7-/w 14-/b  5-/b 11-/b 17+/w 13+/w  |12337457
+ 13 Bosnjak Natasa          6k BA BLu   9 1  64   9   1-/b  8-/w 14+/w  9-/w 10-/b 12-/b  |10637506
+ 14 Shevchuk Taras          15 UA Riv   9 4  53  34  17+/w 12+/w 13-/b 16+/b 15+/b 11-/b  |12374263
+ 15 Turner Johannes         14 RO Bist 9 3  52  22   9-/b 16+/w 17+/w  8-/b 14-/w 18+/b  |12049609
+ 16 Ehorovici Radu          16 RO Crai  8 4  42  24  25+/w 15-/b 22+/w 14-/w 21+/b 17+/b  |12333310
+ 17 Cozan Sorin             15 RO Bist 7 2  48  12  14-/b 21+/w 15-/b 22+/w 12-/b 16-/w  |12513369
+ 18 Paun Alin               18 RO Slob 7 5  33  24  42+/b 23+/w 21+/b 31+/b 25+/w 15-/w  |12349106
+ 19 Petrache Ionut          19 RO Slob 7 6  29  29  26+/w 33+/b 32+/b 24+/w 31+/w 22+/b  |12350107
+ 20 Ghita Catalin           18 RO Crai  7 5  26  21  32+/b 31+/w 44+/w 25-/b 34+/b 21+/w  |12313312
+ 21 Anuta Cristian          16 RO Bist 6 2  41  12  22+/w 17-/b 18-/w 23+/b 16-/w 20-/b  |12074634
+ 22 Parau Alexandra         16 RO Bist 6 2  38  10  21-/b 25+/w 16-/b 17-/b 27+/w 19-/w  |12049631
+ 23 Predescu Adriana        18 RO Crai  6 4  31  18  33+/w 18-/b 26+/b 21-/w 32+/b 25+/b  |12825890
+ 24 Lubos Przemyslaw        19 PL Wodz  6 5  30  23  29+/b 32+/w 27+/b 19-/b 26+/w 31+/b  |12074260
+ 25 Dan Horia               16 RO Bist 5 1  38   7  16-/b 22-/b 31-/w 20+/w 18-/b 23-/w  |12425369
+ 26 Tarziu Beatrice         18 RO Bist 5 3  33  14  19-/b 28+/w 23-/w 30+/b 24-/b 35+/w  |12033637
+ 27 Ehorovici Andrea        18 RO Crai  5 3  27  11  31-/b 42+/w 24-/w 35+/b 22-/b 34+/w  |12349315
+ 28 Ionescu Bogdan          19 RO Brai 5 4  23  14  50+/w 26-/b 33+/w 34-/b 47+/w 32+/w  |12401345
+ 29 Cerchia Angel-Ionut     19 RO Brai 5 4  23  13  24-/w 57+/b 45+/b 32-/w 33+/w 36+/b  |12313367
+ 30 Florescu Madalina       20 RO Slob 5 5  22  17  47+/w 38+/b 46+/b 26-/w 43+/w 39+/b  |12449371
+ 31 Nicoara Voicu           18 RO Bist 4 2  37  10  27+/w 20-/b 25+/b 18-/w 19-/b 24-/w  |12086635
+ 32 Saveski Mihai           17 RO Bist 4 1  36   5  20-/w 24-/b 19-/w 29+/b 23-/w 28-/b  |12450372
+ 33 Moldovan Alexandra      18 RO Bist 4 2  28   5  23-/b 19-/w 28-/b 59+/w 29-/b 42+/w  |12474374
+ 34 Barbiero Marco          20 IT Mila  4 4  27  15  49+/w 36+/b 48+/b 28+/w 20-/w 27-/b  |12486375
+ 35 Zajcev Igor             20 UA Riv   4 4  23  13  41+/w 43+/b 42+/b 27-/w 46+/w 26-/b  |12498376
+ 36 Rusu Mihai              20 RO Bist 4 4  22  13  37+/b 34-/w 55+/b 45+/w 40+/b 29-/w  |12401378
+ 37 Vermesan Alexandru      20 RO Bist 4 4  20  12  36-/w 47+/b 49+/b 42+/w 39-/w 43+/b  |12413379
+ 38 Micle Cristian          20 RO Bist 4 4  19  12  40+/b 30-/w 52-/b 55+/w 44+/b 46+/w  |12425380
+ 39 Stanescu Alin           20 RO Bist 4 4  19  11   0+   48-/w 59+/b 52+/w 37+/b 30-/w  |12033648
+ 40 Toma Ruxandra           20 RO Brai 4 4  18  10  38-/w 54+/b 58+/w 44+/b 36-/w 48+/b  |10898987
+ 41 Cadis Adrian            20 RO Bist 4 4  16   9  35-/b 53+/w 43-/w 54+/b 52+/b 45+/w  |12437381
+ 42 Suciu Andreea           18 RO Bist 3 1  27   3  18-/w 27-/b 35-/w 37-/b 51+/w 33-/b  |12449382
+ 43 Vlas Tudor              20 RO Bist 3 3  22   9  56+/b 35-/w 41+/b 48+/w 30-/b 37-/w  |12462384
+ 44 Hedes Roxana            20 RO Bist 3 3  21   6  54+/w 58+/b 20-/b 40-/w 38-/w 56+/b  |12049642
+ 45 Iancu George            20 RO Slob 3 3  20   7  60+/w 51+/b 29-/w 36-/b 50+/b 41-/b  |12474385
+ 46 Peica Tudor             20 RO Bist 3 3  20   7  53+/b 55+/w 30-/w 51+/b 35-/b 38-/b  |12486386
+ 47 Goci Raluca             20 RO Bist 3 3  20   6  30-/b 37-/w 60+/w 49+/b 28-/b 52+/w  |12498387
+ 48 Fetti Adrian            20 RO Bist 3 3  19   8  57+/w 39+/b 34-/w 43-/b 53+/b 40-/w  |12401389
+ 49 Huruba Madalina         20 RO Bist 3 3  17   6  34-/b 56+/w 37-/w 47-/w 55+/b 57+/b  |12413390
+ 50 Danci Marian            20 RO Bist 3 3  15   5  28-/b 52-/w 56+/w 61+/b 45-/w 54+/b  |12425391
+ 51 Tocianuc Vlad           20 RO Bist 3 3  14   5  52+/b 45-/w 61+/b 46-/w 42-/b 53+/w  |12437392
+ 52 Stoev Alexej            20 UA Riv   2 2  21   7  51-/w 50+/b 38+/w 39-/b 41-/w 47-/b  |12450394
+ 53 Kuksov Platon           20 UA Riv   2 2  17   4  46-/w 41-/b 57+/w 58+/b 48-/w 51-/b  |12462395
+ 54 Sulumete Mihai          20 RO Bist 2 2  17   3  44-/b 40-/w  0+   41-/w 59+/b 50-/w  |12474396
+ 55 Sora Cristian           20 RO Crai  2 2  16   2  61+/w 46-/b 36-/w 38-/b 49-/w  0+    |12486397
+ 56 Zarna Gabriela          20 RO Slob 2 2  15   3  43-/w 49-/b 50-/b 60+/b 58+/w 44-/w  |12498398
+ 57 Tocacs Alexandra        20 RO Bist 2 2  15   2  48-/b 29-/w 53-/b  0+   61+/w 49-/w  |12413401
+ 58 Moldovan Alexandru      20 RO Bist 2 2  14   3  59+/b 44-/w 40-/b 53-/w 56-/b 60+/w  |12425402
+ 59 Cerbu Cristina          20 RO Bist 2 2  14   2  58-/w 60+/b 39-/w 33-/b 54-/w 61+/b  |12437403
+ 60 Pop Anamaria            20 RO Bist 1 1  12   0  45-/b 59-/w 47-/b 56-/w  0+   58-/b  |12001649
+ 61 Albu Petru              20 RO Brai 1 1  12   0  55-/b  0+   51-/w 50-/w 57-/b 59-/w  |12450405

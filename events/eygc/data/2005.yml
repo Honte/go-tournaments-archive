@@ -1,0 +1,31 @@
+website: https://www.eurogofed.org/results/youth/eygc2005.htm
+name: 10th European Youth Go Championship
+stages:
+  - type: tournament
+    file: eygc2005u12.txt
+    category: u12
+    name: U12
+    scoringColumns:
+      - mms 
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - mms
+      - sos
+      - sodos
+    findSharedPlaces: true
+  - type: tournament
+    file: eygc2005u18.txt
+    category: u18
+    name: U18
+    scoringColumns:
+      - mms 
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - mms
+      - sos
+      - sodos
+    findSharedPlaces: true

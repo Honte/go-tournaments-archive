@@ -1,0 +1,32 @@
+website: https://www.eurogofed.org/results/youth/eygc1998.htm
+name: 3rd European Youth Go Championship
+stages:
+  - type: tournament
+    file: eygc1998u12.txt
+    category: u12
+    name: U12
+    notes: Second place, which gives also the right to play in the WYGC, was shared by Natali Kovaleva and Tommy Hollmann. Natali Kovaleva won the draw and Tommy so was reserve for China.
+    scoringColumns:
+      - mms 
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - mms
+      - sos
+      - sodos
+    findSharedPlaces: true
+  - type: tournament
+    file: eygc1998u18.txt
+    category: u18
+    name: U18
+    scoringColumns:
+      - mms 
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - mms
+      - sos
+      - sodos
+    findSharedPlaces: true

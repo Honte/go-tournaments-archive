@@ -1,0 +1,41 @@
+; TC[E150313A]
+; CL[A]
+; EV[European Youth Go Championship (under 12)]
+; PC[NL, Zandvoort]
+; DT[2015-03-13,2015-03-15]
+; HA[h9]
+; KM[6.5]
+; TM[80]
+; CM[Played with Ing timing rules (penalty points for each overtime) (submitted by Herman Hiddema)]
+;.
+ 1 Dobranis Denis          1d RO  Bist  15   6    75   75   5+/b    13+/w   3+/b    2+/b    4+/w    8+/w     |15350038
+ 2 Pittner Arved           2d DE  B     14   5    60   75   6+/b    8+/w    10+/b   1-/w    3+/w    5+/w     |16398371
+ 3 Shalneva Virzhinia      2k RU  50Zh  13   4    49   78   9+/w    4+/b    1-/w    5+/w    2-/b    6+/b     |16325034
+ 4 Klochikhina Valeria     7k RU  59So  13   4    46   74   14+/b   3-/w    6+/w    8+/b    1-/b    12+/w    |16513068
+ 5 Tripp Leo               6k DE  B     12   3    34   76   1-/w    14+/w   7+/b    3-/b    10+/w   2-/b     |17033016
+ 6 Csizmadia Miklos        7k HU  BuPe  12   3    34   74   2-/w    9+/b    4-/b    12+/w   13+/b   3-/w     |16237463
+ 7 Krajnov Jaroslav        9k RU  77Mo  12   3    34   69   13-/w   11+/b   5-/w    9+/w    8-/b    10+/b    |16349036
+ 8 Mezin Savva             5k RU  77Mo  12   3    33   75   18+/w   2-/b    13+/b   4-/w    7+/w    1-/b     |16086840
+ 9 Semmler Gregor          8k DE  J     12   3    32   69   3-/b    6-/w    17+/w   7-/b    11+/b   13+/w    |16850724
+10 Pelekh Vitalii         10k UA  Rivn  11   3    32   70   12+/b   18+/b   2-/w    11+/w   5-/b    7-/w     |16762570
+11 Marz Ferdinand         12k DE  J     11   3    31   66   16+/w   7-/w    14+/b   10-/b   9-/w    15+/b    |16213659
+12 Fathallah Ismael       12k FR  38CA  11   3    30   66   10-/w   21+/b   18+/w   6-/b    14+/b   4-/b     |16801741
+13 Krajnov Anton           6k RU  77Mo  11   2    22   73   7+/b    1-/b    8-/w    16+/w   6-/w    9-/b     |16098852
+14 Gysson Jyrgen          11k EE  Tart  11   2    19   66   4-/w    5-/b    11-/w   18+/b   12-/w   20+/b    |16998630
+15 Szychowiak Marianna    15k PL  Bydg  10   4    35   56   27+/b   16-/b   24+/w   17+/b   18+/w   11-/w    |16725709
+16 Rieger Angelika        16k DE  TR    10   3    28   60   11-/b   15+/w   21+/w   13-/b   20+/w   17-/b    |16586361
+17 Medak Robert           14k HR  Zagr  10   3    27   58   21-/w   20+/b   9-/b    15-/w   25+/b   16+/w    |16501716
+18 Smith Edmund           10k UK  MilS  10   1    9    64   8-/b    10-/w   12-/b   14-/w   15-/b   21+/w    |16462028
+19 Hrbkova Marta          15k CZ  APmG  9    4    30   46   24-/w   27+/w   22+/b   25-/b   23+/w   26+/b    |16949471
+20 Bailesteanu Alexandru  12k RO  Drob  9    3    24   55   25+/b   17-/w   27+/w   21+/b   16-/b   14-/w    |16949031
+21 Fakhrutdinov Amir      15k RU  16Kz  9    2    18   58   17+/b   12-/w   16-/b   20-/w   24+/w   18-/b    |16798870
+22 Monate Phileas         17k FR  92An  8    5    27   36   23+/w   29+/b   19-/w   27+/b   28+/b   31+/w    |17062540
+23 Arnhold Moritz         18k DE  J     8    4    26   43   22-/b   26+/w   25+/w   24+/b   19-/b   30+/w    |16849723
+24 Morel Thibault         16k FR  38GJ  8    3    24   51   19+/b   25+/w   15-/b   23-/w   21-/b   27+/w    |16937965
+25 Vochescu Alexandra     12k RO  Drob  8    2    16   51   20-/w   24-/b   23-/b   19+/w   17-/w   0+       |16886925
+26 Gabrielse Tristan      18k NL  xxxx  7    4    15   32   29+/w   23-/b   28+/w   30+/b   31+/w   19-/w    |17037647
+27 Riedeman Emil          15k NL  Delf  7    1    6    50   15-/w   19-/b   20-/b   22-/w   0+      24-/b    |15886607
+28 Morel Adam             19k FR  38EB  5    4    14   29   30+/w   31+/b   26-/b   0+      22-/w   29+/b    |16933961
+29 Medak Stjepan          19k HR  Zagr  5    2    7    29   26-/b   22-/w   0+      31-/b   30+/w   28-/w    |17437574
+30 Kajmina Julia          20k RU  50oo  3    2    4    29   28-/b   0+      31+/w   26-/w   29-/b   23-/b    |16774890
+31 Kok Joop               20k NL  xxxx  2    2    6    29   0+      28-/w   30-/b   29+/w   26-/b   22-/b    |17437695

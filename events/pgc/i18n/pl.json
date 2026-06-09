@@ -8,12 +8,6 @@
     "allTimeStatsDescription": "Lista wszech czasów wszystkich uczestników mistrzostw Polski w Go",
     "playerStatsDescription": "Statystyki gracza %{0} we wszystkich rozegranych edycjach mistrzostw Polski w Go"
   },
-  "currentEdition": {
-    "website": "https://mp.go.art.pl/2025/pl",
-    "title": "Bieżące Mistrzostwa Polski w Go!",
-    "subtitle": "Gdańsk, 8 - 11 listopada 2025",
-    "tooltip": "Przejdź na stronę Mistrzostw"
-  },
   "details": {
     "goToWebsite": "Przejdź na stronę MP %{0}"
   },

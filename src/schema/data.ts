@@ -13,8 +13,10 @@ export type TournamentDetails = {
   website?: string | string[];
   referee?: string;
   top: string[][];
+  categories?: string[];
   categoriesTop?: Record<string, string[][]>;
   displayReversed?: boolean;
+  announcement?: boolean | string | Record<Locale, string>;
 };
 
 export type Tournament = TournamentDetails & {

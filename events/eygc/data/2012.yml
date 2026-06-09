@@ -1,0 +1,45 @@
+website: https://www.eurogofed.org/results/youth/eygc2012.htm
+name: 17th European Youth Go Championship
+stages:
+  - type: tournament
+    file: eygc2012u12.txt
+    category: u12
+    name: U12
+    scoringColumns:
+      - mms 
+      - wins
+      - sodos
+      - sos
+    breakers:
+      - mms
+      - sodos
+      - sos
+    findSharedPlaces: true
+  - type: tournament
+    file: eygc2012u16.txt
+    category: u16
+    name: U16
+    scoringColumns:
+      - mms 
+      - wins
+      - sodos
+      - sos
+    breakers:
+      - mms
+      - sodos
+      - sos
+    findSharedPlaces: true    
+  - type: tournament
+    file: eygc2012u20.txt
+    category: u20
+    name: U20
+    scoringColumns:
+      - mms 
+      - wins
+      - sodos
+      - sos
+    breakers:
+      - mms
+      - sodos
+      - sos
+    findSharedPlaces: true

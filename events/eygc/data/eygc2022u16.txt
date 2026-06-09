@@ -1,0 +1,55 @@
+; TC[T220310B]
+; CL[A]
+; EV[European Youth Go Championship, Under 16]
+; PC[CZ, Praha]
+; DT[2022-03-10,2022-03-12]
+; HA[h9]
+; KM[6.5]
+; TM[80]
+; CM[ (submitted by cieply)]
+;.
+; 
+ 1 Ovsiienko Vsevolod       4d UA  Kyiv  13   6    13   65   11+/w   3+/b    4+/w    2+/w    6+/b    10+/b    |17633902
+ 2 Xing Yuze                2d DE  HD    12   5    12   66   9+/b    7+/w    6+/w    1-/b    5+/b    3+/b     |18525012
+ 3 Melnyk Anna              1d UA  Kyiv  11   4    11   66   12+/w   1-/w    10+/b   8+/b    4+/b    2-/w     |17886517
+ 4 Grosu Robert-Andrei      1k RO  Hika  11   4    11   65   14+/w   5+/b    1-/b    13+/b   3-/w    9+/w     |18362278
+ 5 Malko Olesia             2d UA  Rivn  11   4    11   62   15+/b   4-/w    9+/w    7+/b    2-/w    8+/b     |17874241
+ 6 Rotarita Stefan_Adrian   1d RO  Boto  11   4    11   62   17+/b   8+/w    2-/b    22+/b   1-/w    7+/w     |17837270
+ 7 Bugaj Antoni             2k PL  Wars  10   3    10   64   13+/w   2-/b    11+/b   5-/w    14+/w   6-/b     |17898078
+ 8 Boldeanu Dragos          2d RO  ATAR  10   3    10   62   10+/w   6-/b    15+/w   3-/w    11+/b   5-/w     |16750349
+ 9 Wong Lea                 4k UK  LGCr  10   3    10   62   2-/w    16+/w   5-/b    17+/b   13+/w   4-/b     |19350793
+10 Stefanovych Dmytro       2k UA  Rivn  10   3    10   61   8-/b    21+/w   3-/w    18+/b   12+/b   1-/w     |17813246
+11 Medak Stjepan            1k HR  Zagr  10   3    10   59   1-/b    18+/w   7-/w    24+/b   8-/w    17+/w    |17437574
+12 Lysenko Yehor            4k UA  Kyiv  10   3    10   59   3-/b    14+/b   13-/b   16+/w   10-/w   19+/w    |17625608
+13 Zhang Penhui             1d HU  BPBS  10   3    10   58   7-/b    19+/b   12+/w   4-/w    9-/b    25+/w    |18962680
+14 Komin Jan                5k CZ  APWS  10   3    10   58   4-/b    12-/w   20+/w   15+/w   7-/b    16+/b    |19637596
+15 Vlahovic Karlo           4k HR  VGor  9    2    9    56   5-/w    17+/w   8-/b    14-/b   25-/b   22+/w    |18637256
+16 Simon Zsofia             6k HU  BPPG  9    3    9    56   20+/w   9-/b    21+/w   12-/b   18+/b   14-/w    |17486623
+17 Crvelin Roko             4k HR  Vrba  9    2    9    55   6-/w    15-/b   27+/w   9-/w    22+/b   11-/b    |18262739
+18 Tifrea Bogdan_Stefan     6k RO  ATSU  9    3    9    54   24+/b   11-/b   19+/w   10-/w   16-/w   21+/b    |17937458
+19 Koran Ladislav_jr        7k CZ  CPis  9    3    9    54   23+/b   13-/w   18-/b   20+/b   21+/w   12-/b    |18413098
+20 Makany Zalan             8k HU  PaGo  9    3    9    52   16-/b   24+/w   14-/b   19-/w   26+/w   23+/b    |19762952
+21 Baldea Matei_Stefan      7k RO  MEIJ  8    2    8    53   22+/w   10-/b   16-/b   23+/w   19-/b   18-/w    |17962461
+22 Hadzhyiev Viktor         7k UA  Kyiv  8    2    8    51   21-/b   31+/w   23+/b   6-/w    17-/w   15-/b    |19513736
+23 Sladetic Teo             6k HR  Zagr  8    2    8    50   19-/w   26+/b   22-/w   21-/b   24+/w   20-/w    |18298742
+24 Seman Oliver             8k SK  Kosi  8    2    8    49   18-/w   20-/b   31+/b   11-/w   23-/b   27+/w    |19713243
+25 Zderic Tonka             9k HR  Vrba  8    5    8    45   29+/w   30+/b   32+/w   31+/b   15+/w   13-/b    |18286741
+26 Petre Edvin-Matei       10k RO  Hika  8    4    8    43   32+/b   23-/w   28+/b   27+/w   20-/b   31+/w    |18625728
+27 Naumenko Roman           9k UA  Kyiv  7    2    7    45   31-/w   28+/w   17-/b   26-/b   29+/w   24-/b    |18498975
+28 Hrdina Dominik          10k SK  Brat  7    3    7    40   30+/w   27-/b   26-/w   33+/b   31+/b   29-/w    |18525584
+29 Ghetu Sara_Maria        11k RO  Cluj  7    4    7    40   25-/b   34+/w   30+/w   32+/b   27-/b   28+/b    |19533602
+30 Thaller Emile           10k FR  38GJ  7    3    7    38   28-/b   25-/w   29-/b   34+/w   32+/b   33+/w    |18537420
+31 Vlasenko Oleksandra      9k UA  Kyiv  6    1    6    46   27+/b   22-/b   24-/w   25-/w   28-/w   26-/b    |17825731
+32 Pittner Arwen           10k DE  B     6    2    6    38   26-/w   33+/b   25-/b   29-/w   30-/w   36+/b    |16437201
+33 Derencin Antun          12k HR  GKIN  5    3    5    32   34+/b   32-/w   39+/w   28-/w   35+/b   30-/b    |18501901
+34 Macovei Maria           12k RO  VaDo  5    3    5    27   33-/w   29-/b   35+/w   30-/b   37+/b   41+/w    |19062164
+35 Tomesz Bence            16k HU  BPPG  3    3    3    19   43+/w   38+/b   34-/b   36+/w   33-/w   40-/w    |19601186
+36 Ilic Ana                15k RS  NiPr  3    3    3    18   41+/w   39-/b   40+/b   35-/b   43+/w   32-/w    |17233073
+37 Popovic Dimitrije       15k RS  NiPr  3    3    3    17   39-/w   41+/b   38-/w   43+/b   34-/w   42+/w    |19001389
+38 Baker Lawrence          17k UK  Oxfd  3    3    3    15   40+/b   35-/w   37+/b   39-/w   41-/b   43+/w    |19013093
+39 Kolar Jakub             17k CZ  APmG  4    3    3    14   37+/b   36+/w   33-/b   38+/b   0=      0=       |19525341
+40 Ilic Kosta              18k RS  NiPr  3    3    3    14   38-/w   43+/b   36-/w   41+/w   42-/b   35+/b    |18098586
+41 Bondar Yana             16k UA  Kyiv  2    2    2    17   36-/b   37-/w   43+/w   40-/b   38+/w   34-/b    |19686601
+42 Grosser Filip           20k CZ  KVaG  3    1    1    6    0=      0=      0=      0=      40+/w   37-/b    |19586941
+43 Lostun Stefania         21k RO  VaDo  0    0    0    17   35-/b   40-/w   41-/b   37-/w   36-/b   38-/b    |19433843
+

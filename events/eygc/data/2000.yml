@@ -1,0 +1,31 @@
+website: https://www.eurogofed.org/results/youth/eygc2000.htm
+name: 5th European Youth Go Championship
+stages:
+  - type: tournament
+    file: eygc2000u12.txt
+    category: u12
+    name: U12
+    scoringColumns:
+      - mms 
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - mms
+      - sos
+      - sodos
+    findSharedPlaces: true
+  - type: tournament
+    file: eygc2000u18.txt
+    category: u18
+    name: U18
+    scoringColumns:
+      - mms 
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - mms
+      - sos
+      - sodos
+    findSharedPlaces: true

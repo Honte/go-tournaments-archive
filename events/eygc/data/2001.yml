@@ -1,0 +1,31 @@
+website: https://www.eurogofed.org/results/youth/eygc2001.htm
+name: 6th European Youth Go Championship
+stages:
+  - type: tournament
+    file: eygc2001u12.txt
+    category: u12
+    name: U12
+    scoringColumns:
+      - mms 
+      - wins
+      - sodos
+      - sos      
+    breakers:
+      - mms
+      - sodos
+      - sos      
+    findSharedPlaces: true
+  - type: tournament
+    file: eygc2001u18.txt
+    category: u18
+    name: U18
+    scoringColumns:
+      - mms 
+      - wins
+      - sodos
+      - sos      
+    breakers:
+      - mms
+      - sodos
+      - sos
+    findSharedPlaces: true

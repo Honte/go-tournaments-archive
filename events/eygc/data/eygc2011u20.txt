@@ -1,0 +1,34 @@
+; TC[T110311C]
+; CL[A]
+; EV[European Youth Goe Championship (under 20)]
+; PC[CZ, Brno]
+; DT[2011-03-11,2011-03-13]
+; HA[h9]
+; KM[7.5]
+; TM[75]
+; CM[ (submitted by cieply)]
+;.
+;
+ 1 Lisy Pavol             5d SK  Vita  27   6    144  875  3+/b    4+/w    2+/b    7+/w    6+/w    8+/b     |12686597
+ 2 Jabarin Ali            6d IL  TAv   25   4    147  869  7+/b    6+/b    1-/w    5+/w    3+/w    4-/b     |14637810
+ 3 Kraemer Lukas          4d DE  BN    25   4    147  866  1-/w    8+/w    5+/w    4+/b    2-/b    6+/b     |14698739
+ 4 Mitic Nikola           5d RS  NISt  25   4    146  873  8+/b    1-/b    6+/w    3-/w    7+/b    2+/w     |10801923
+ 5 Podpera Lukas          4d CZ  APWS  24   3    139  840  6-/w    7+/w    3-/b    2-/b    9+/w    10+/b    |13201914
+ 6 Lin Viktor             5d AT  Gote  23   2    148  848  5+/b    2-/w    4-/b    9+/w    1-/b    3-/w     |14501256
+ 7 Ruzhanskyj Roman       2d UA  Kyiv  23   2    145  845  2-/w    5-/b    8+/w    1-/b    4-/w    11+/b    |14233274
+ 8 Eerbeek Alexander      4d NL  Vink  23   2    142  837  4-/w    3-/b    7-/b    10+/w   11+/w   1-/w     |13501356
+ 9 Bartonek Tomas         2k CZ  TOst  22   4    125  764  12+/w   10+/b   11+/w   6-/b    5-/b    15+/b    |15349279
+10 Albrecht Domonkos      2k HU  Buda  21   3    128  760  11+/b   9-/w    13+/w   8-/b    12+/w   5-/w     |12686245
+11 Kouba Petr             1k CZ  APWS  21   2    127  767  10-/w   12+/b   9-/b    13+/w   8-/b    7-/w     |14533926
+12 Vernimmen Suzanne      3k NL  Gron  19   2    118  685  9-/b    11-/w   14+/w   15+/b   10-/b   13-/w    |14837097
+13 Tolgyesi Renato        5k HU  BuPe  19   4    109  656  14+/w   15+/w   10-/b   11-/b   16+/w   12+/b    |13050037
+14 Garcia-Roig Jordi      5k ES  CAT   18   3    92   555  13-/b   17+/w   12-/b   18+/w   15-/w   16+/b    |15237981
+15 Perez Miguel           6k ES  Sevi  17   3    104  601  16+/w   13-/b   17+/b   12-/w   14+/b   9-/w     |15733267
+16 Brinda Jan            10k CZ  TFMi  13   3    87   487  15-/b   18+/w   19+/b   17+/w   13-/b   14-/w    |15649370
+17 Stefan Alexander      10k DE  B     13   3    70   440  18+/b   14-/b   15-/w   16-/b   20+/w   23+/w    |15249465
+18 Toma Ruxandra         12k RO  Brai  11   3    67   402  17-/w   16-/b   21+/w   14-/b   22+/b   0+       |10898987
+19 Dvoracek Mikolas      15k CZ  MJes  9    4    45   308  21-/b   20+/w   16-/w   0+      23+/b   22+/b    |12849078
+20 Cajka Jakub           16k CZ  Brno  8    4    45   291  22+/w   19-/b   0+      23+/w   17-/b   21+/b    |14513235
+21 Sajvaldova Zuzana     16k CZ  Brno  8    4    43   288  19+/w   23+/b   18-/b   22+/w   0+      20-/w    |15750427
+22 Smolarikova Katarina  16k SK  Kosi  5    1    43   288  20-/b   0+      23-/w   21-/b   18-/w   19-/w    |12901603
+23 Palij Oleh            19k UA  Riv   3    2    45   291  0+      21-/w   22+/b   20-/b   19-/w   17-/b    |15350148

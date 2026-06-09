@@ -1,0 +1,47 @@
+; TC[E180329A]
+; CL[A]
+; EV[23rd European Youth Go Championship 2018 - under 20 (EYGC`18-U20)]
+; PC[UA, Kyiv]
+; DT[2018-03-29,2018-03-31]
+; HA[h9]
+; KM[7.5]
+; TM[80]
+; CM[ (submitted by Julia K)]
+;.
+ 1 Djepov Sinan             5d BG  Slvp  22   5    125  730  103  10+/b   6+/b    3+/b    2-/w    5+/w    9+/b     |17486205
+ 2 Pankoke Matias           5d DE  OL    22   5    124  738  103  8+/b    16+/w   5+/b    1+/b    3-/w    4+/w     |15933973
+ 3 Grigoriu Elian_Ioan      4d RO  ATAR  21   4    124  738  81   15+/b   4+/b    1-/w    13+/w   2+/b    6-/b     |15974420
+ 4 Vazquez Oscar            5d ES  Nam   21   4    124  729  81   9+/b    3-/w    15+/b   6+/w    7+/b    2-/b     |15633673
+ 5 Krushelnytskyi Valerii   5d UA  Rivn  21   4    124  728  80   12+/b   7+/b    2-/w    8+/w    1-/b    13+/w    |15450072
+ 6 Dobranis Darius          2d RO  Bist  21   4    122  738  79   13+/b   1-/w    14+/w   4-/b    8+/b    3+/w     |15049716
+ 7 Goncalves Simao          3d PT  Lis   21   4    120  721  78   14+/b   5-/w    16+/b   10+/w   4-/w    11+/w    |17074981
+ 8 Teissier Samuel          1d FR  84Av  20   3    121  715  57   2-/w    17+/b   18+/b   5-/b    6-/w    15+/w    |17533032
+ 9 Mramorov Andrej          2d RU  77Mo  20   3    119  727  57   4-/w    14-/b   17+/w   15+/b   13+/b   1-/w     |15949923
+10 Malko Yaroslav           1d UA  Rivn  20   3    117  717  55   1-/w    22+/b   13-/b   7-/b    17+/w   16+/w    |14937670
+11 Csizmadia Robert         3d HU  BPMG  20   3    115  711  56   16-/b   15-/w   22+/w   14+/w   12+/b   7-/b     |14925416
+12 Verteletskyi Vladyslav   1d UA  Rivn  20   3    115  708  55   5-/w    13-/w   24+/b   16+/w   11-/w   14+/b    |15325145
+13 Rusanovskyi Dmytro       2k UA  Kyiv  19   2    123  721  40   6-/w    12+/b   10+/w   3-/b    9-/w    5-/b     |15974046
+14 Defer Tristan            1k CZ  Brno  19   2    121  697  39   7-/w    9+/w    6-/b    11-/b   19+/w   12-/w    |16486074
+15 Tomsu Adriana            1d CZ  TFMi  19   2    120  710  38   3-/w    11+/b   4-/w    9-/w    20+/b   8-/b     |16225396
+16 Medak Mirta              2k HR  Zagr  19   2    120  706  37   11+/w   2-/b    7-/w    12-/b   22+/b   10-/b    |16525718
+17 Petrashevska Nika        3k UA  Kyiv  19   3    114  682  54   18+/w   8-/w    9-/b    23+/b   10-/b   20+/w    |15786518
+18 Starodubcev Timofej      2k RU  77Mo  19   3    111  668  54   17-/b   19+/w   8-/w    20-/b   21+/b   22+/w    |17937546
+19 Weigmann Arved           4k DE  P     19   4    106  655  68   23+/w   18-/b   21+/w   22+/b   14-/b   27+/w    |15713379
+20 Betesh Zaki              4k UK  CHuS  18   3    107  658  52   24-/b   23+/w   26+/b   18+/w   15-/w   17-/b    |17633286
+21 Hrinchenko Semen         4k UA  Khar  18   3    105  645  50   22-/w   26+/w   19-/b   24+/b   18-/w   23+/b    |17001589
+22 Kralikova Zuzana         4k SK  Kosi  17   1    115  674  18   21+/b   10-/w   11-/b   19-/w   16-/w   18-/b    |15801764
+23 Defer Leon               5k CZ  Brno  17   2    107  623  33   19-/b   20-/b   27+/w   17-/w   25+/b   21-/w    |16413650
+24 Rusanovskyi Yevhen       5k UA  Kyiv  17   3    105  619  51   20+/w   25+/b   12-/w   21-/w   27-/b   26+/b    |15937042
+25 Bradbury Tom             5k UK  CHuS  17   3    95   583  45   26-/b   24-/w   28+/b   29+/w   23-/w   30+/b    |17374786
+26 Berezhniak Maksym        5k UA  Rivn  16   2    101  597  32   25+/w   21-/b   20-/w   28-/w   29+/b   24-/w    |16398679
+27 Antonijevic Nemanja      6k RS  BGmp  16   3    96   570  44   28-/b   29+/w   23-/b   32+/w   24+/w   19-/b    |15233119
+28 Ruzhanska Kamilla        7k UA  Kyiv  16   4    92   540  60   27+/w   31+/b   25-/w   26+/b   30+/w   29-/b    |14233285
+29 Bexfield Charlotte       7k UK  Ltch  15   3    93   539  44   30+/b   27-/b   31+/w   25-/b   26-/w   28+/w    |14901579
+30 Redila Yuliia            9k UA  Rivn  14   3    85   466  37   29-/w   33+/b   32+/w   31+/b   28-/b   25-/w    |15349114
+31 Kollner Dora             9k HU  BPXI  14   3    70   435  25   32+/b   28-/w   29-/b   30-/w   35+/b   36+/w    |15686792
+32 Shvetsov Mykyta         10k UA  Khar  12   3    67   412  23   31-/w   34+/w   30-/b   27-/b   37+/b   0+       |17601408
+33 Nolan Jack              12k UK  CHuS  11   3    49   326  18   34-/b   30-/w   35+/w   36-/b   0+      37+/w    |17486370
+34 Goschler Levente        13k HU  BPBS  11   5    47   308  35   33+/w   32-/b   0+      37+/w   36+/w   35+/b    |16449059
+35 Gascoyne Daniel         14k UK  CHuS  7    2    49   311  7    36-/b   37+/w   33-/b   0+      31-/w   34-/w    |17498371
+36 Simic Matko             17k HR  Zagr  6    4    49   311  24   35+/w   0+      37+/b   33+/w   34-/b   31-/b    |18337924
+37 Ihnatenko Anastasiia    19k UA  Kyiv  1    1    47   308  0    0+      35-/b   36-/w   34-/b   32-/w   33-/b    |18462653

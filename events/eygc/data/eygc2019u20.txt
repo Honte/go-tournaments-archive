@@ -1,0 +1,53 @@
+; TC[T190502C]
+; CL[A]
+; EV[European Youth Go Championship Under 20]
+; PC[RU, Moscow]
+; DT[2019-05-02,2019-05-04]
+; HA[h9]
+; KM[6.5]
+; TM[75]
+; CM[ (submitted by Serpov)]
+;.
+ 1 Chernykh Anton                6d RU  50Zh  26   5    26   147  122  13+/b   5+/w    3-/b    9+/w    7+/b    4+/w     |15713467
+ 2 Fionin Grigorij               6d RU  78SP  26   5    26   145  120  17+/w   4-/b    14+/w   6+/b    3+/w    9+/b     |16013096
+ 3 Grigoriu Elian_Ioan           5d DE  JIGS  25   4    25   151  100  8+/w    6+/b    1+/w    4+/w    2-/b    5-/w     |15974420
+ 4 Jakovlev-Chernyshev Vasilij   3d RU  23So  25   4    25   151  100  11+/b   2+/w    7+/w    3-/b    5+/b    1-/b     |17674305
+ 5 Popov Stepan                  5d RU  16Kz  25   4    25   145  94   19+/w   1-/b    8+/w    17+/b   4-/w    3+/b     |14625897
+ 6 Zemor Solal                   3d FR  33Bo  25   4    25   145  94   10+/b   3-/w    15+/b   2-/w    13+/w   8+/b     |15849867
+ 7 Kajmin Vjacheslav             6d RU  77Mo  25   4    25   144  93   14+/b   9+/w    4-/b    13+/w   1-/w    16+/b    |14986257
+ 8 Mramorov Andrej               3d RU  77Mo  24   3    24   146  71   3-/b    12+/w   5-/b    14+/w   10+/b   6-/w     |15949923
+ 9 Galunov Jakov                 3d IL  TAv   24   3    24   146  69   15+/b   7-/b    19+/w   1-/b    11+/w   2-/w     |16233976
+10 Gudkov Semen                  1d RU  50PP  24   3    24   142  70   6-/w    14-/b   12+/b   15+/w   8-/w    13+/b    |17386094
+11 Tingajkin Artem               1d RU  49Ma  24   3    24   140  68   4-/w    13-/b   16+/b   19+/w   9-/b    15+/b    |17237495
+12 Cinar Emre                    1d DE  RAT   24   4    24   136  88   16+/w   8-/b    10-/w   27+/b   19+/b   14+/w    |17050957
+13 Dobranis Darius               3d RO  Bist  23   2    23   146  46   1-/w    11+/w   21+/b   7-/b    6-/b    10-/w    |15049716
+14 Csizmadia Robert              2d HU  BPMG  23   2    23   145  46   7-/w    10+/w   2-/b    8-/b    22+/w   12-/b    |14925416
+15 Khafizov Andzhej              1d RU  16Kz  23   2    23   143  46   9-/w    17+/b   6-/w    10-/b   18+/b   11-/w    |16033875
+16 Arsentjev Egor                1d RU  77Mo  23   3    23   141  68   12-/b   18+/w   11-/w   21+/w   17+/b   7-/w     |16037285
+17 Medak Mirta                   2d HR  Zagr  23   2    23   141  44   2-/b    15-/w   23+/b   5-/w    16-/w   20+/w    |16525718
+18 Gimaletdinov Sagit            1d RU  16Kz  23   3    23   133  65   21-/b   16-/b   25+/w   20+/b   15-/w   19+/w    |17637730
+19 Gorbunov Robert               2d RU  78SP  22   1    22   142  22   5-/b    21+/w   9-/b    11-/b   12-/w   18-/b    |17225450
+20 Kollner Barnabas              1k HU  BPXI  22   3    22   133  65   23-/b   22+/w   24+/b   18-/w   21+/w   17-/b    |15633794
+21 Donle Isabel                  1k DE  B     22   2    22   133  43   18+/w   19-/b   13-/w   16-/b   20-/b   27+/w    |16837359
+22 Lubsanov Maxim                2k RU  50Kr  22   4    22   130  85   25+/w   20-/b   26+/b   23+/w   14-/b   24+/w    |14998346
+23 Knjazev Timofej               3k RU  49Ma  22   4    22   127  82   20+/w   24+/b   17-/w   22-/b   30+/w   25+/b    |17213493
+24 Lifanov Nikolaj               2k RU  77Mo  21   2    21   128  41   27+/b   23-/w   20-/w   25-/b   26+/w   22-/b    |17386534
+25 Vasova Dita                   2k CZ  APmG  21   3    21   127  60   22-/b   29+/w   18-/b   24+/w   27+/b   23-/w    |15749921
+26 Ratnikov Leonid               4k RU  77Mo  21   4    21   119  76   28+/b   27+/w   22-/w   30+/w   24-/b   31+/b    |16533748
+27 Weigmann Arved                2k DE  P     20   1    20   128  19   24-/w   26-/b   29+/b   12-/w   25-/w   21-/b    |15713379
+28 Bindjukov Andrej              6k RU  27Kh  20   4    20   110  71   26-/w   31-/b   32+/b   34+/w   29+/b   30+/w    |17037163
+29 Borisova Daria                4k RU  74Ch  19   3    19   115  54   30+/b   25-/b   27-/w   31+/b   28-/w   32+/w    |15698782
+30 Antonijevic Nemanja           5k RS  BGmp  18   2    18   116  34   29-/w   34+/b   31+/w   26-/b   23-/b   28-/b    |15233119
+31 Vdovenko Amelia               6k RU  78SP  18   3    18   112  54   32+/b   28+/w   30-/b   29-/w   34+/b   26-/w    |15725358
+32 Senin Viktor                  6k RU  78SP  18   3    18   105  48   31-/w   35+/b   28-/w   33+/w   38+/w   29-/b    |16298975
+33 Adrjushchenko Kristina        8k RU  74Ch  17   4    17   97   63   35-/b   36+/w   37+/w   32-/b   39+/b   34+/w    |16001986
+34 Novoselova Polina             7k RU  43Ki  16   2    16   104  31   39+/b   30-/w   35+/w   28-/b   31-/w   33-/b    |18737147
+35 Lobanov Nikolaj               6k RU  52NN  16   3    16   86   37   33+/w   32-/w   34-/b   38-/b   0+      42+/b    |16386183
+36 Khokhlov Anatolij             9k RU  77Mo  16   4    16   77   45   40-/b   33-/b   41+/w   37+/b   43+/w   38+/w    |16450709
+37 Tkacheva Daria               10k RU  63Sa  16   4    16   77   44   38+/b   39+/w   33-/b   36-/w   41+/b   43+/w    |17950724
+38 Sakhabutdinova Ljajsan       10k RU  16Kz  15   3    15   96   46   37-/w   40+/b   39+/w   35+/w   32-/b   36-/b    |16201075
+39 Riedeman Marcel               8k NL  Delf  15   2    15   83   19   34-/w   37-/b   38-/b   42+/w   33-/w   0+       |14601378
+40 Zulaev Denis                 13k RU  50So  15   5    15   64   49   36+/w   38-/w   0+      43+/b   42+/b   41+/b    |18086761
+41 Goschler Levente             12k HU  BPBS  12   3    12   65   18   42+/w   43+/b   36-/b   0+      37-/w   40-/w    |16449059
+42 Krylov Jaroslav              19k RU  40Ka  5    2    5    64   6    41-/b   0+      43+/w   39-/b   40-/w   35-/w    |19062362
+43 Tilljabaev Sajjod            20k RU  50Po  2    1    2    65   1    0+      41-/w   42-/b   40-/w   36-/b   37-/b    |19249472

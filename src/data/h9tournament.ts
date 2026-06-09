@@ -93,7 +93,7 @@ export async function loadH9Tournament({
       }
 
       const raw = player.scores[i];
-      const value = Number(raw);
+      const value = parseScore(raw);
 
       if (EVENT_CONFIG.categories?.includes(breaker)) {
         if (raw === '?' || value > 0) {
@@ -245,23 +245,28 @@ export async function loadH9Tournament({
     const target = (tournamentDetails.categoriesTop ||= {});
 
     for (const player of table) {
+      if (category) {
+        player.categories ||= {};
+        player.categories[category] = player.place;
+      }
+
       for (const category of EVENT_CONFIG.categories) {
         const place = Number(player.categories?.[category]);
 
         if (!isNaN(place) && place <= 3) {
-          const categoryTop = (top[category] ||= []);
+          const categoryTop = (top[category] ||= [[], [], []]);
 
-          (categoryTop[place - 1] ||= []).push(player.id);
+          categoryTop[place - 1].push(player.id);
         }
       }
     }
 
     if (category && !top[category]) {
-      const categoryTop = (top[category] ||= []);
+      const categoryTop = (top[category] ||= [[], [], []]);
 
       for (const player of table) {
         if (player.place <= 3) {
-          (categoryTop[player.place - 1] ||= []).push(player.id);
+          categoryTop[player.place - 1].push(player.id);
         }
       }
     }
@@ -271,11 +276,23 @@ export async function loadH9Tournament({
         target[category] = top[category];
       }
     }
+
+    // update list of categories used in the tournament
+    const list = (tournamentDetails.categories ||= []);
+    if (category && !list.includes(category)) {
+      list.push(category);
+    }
+
+    for (const category of EVENT_CONFIG.categories) {
+      if (scoringColumns?.includes(category) && !list.includes(category)) {
+        list.push(category);
+      }
+    }
   } else if (!tournamentDetails.top.length) {
-    const winners: string[][] = [];
+    const winners: string[][] = [[], [], []];
     for (const player of table) {
       if (player.place <= 3) {
-        (winners[player.place - 1] ||= []).push(player.id);
+        winners[player.place - 1].push(player.id);
       } else {
         break;
       }
@@ -320,4 +337,12 @@ function getGameResult(result: H9Game['result'], color: H9Game['color']) {
     case '=':
       return '=';
   }
+}
+
+function parseScore(value?: string): number {
+  if (!value) {
+    return NaN;
+  }
+
+  return Number(value.replace(/[;=S½]$/, '.5'));
 }

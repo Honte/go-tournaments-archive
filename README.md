@@ -194,7 +194,6 @@ type EventConfig = {
   generatePngs?: boolean;
   generateJpgs?: boolean;
   hideGamesWithoutSgf?: boolean;
-  currentEdition?: boolean;
   categories?: string[];
 };
 ```
@@ -210,7 +209,6 @@ Common flags:
 - `generateZips` emits `/sgf/:year.zip` archives and shows a ZIP download action next to the games heading for
   tournaments with linked SGFs.
 - `hideGamesWithoutSgf` hides unlinked games in game lists for SGF-focused archives.
-- `currentEdition` enables the optional homepage banner when the component flag is visible.
 - `categories` enables category medal aggregation and `/:locale/category/:category` pages.
 
 ## Tournament data

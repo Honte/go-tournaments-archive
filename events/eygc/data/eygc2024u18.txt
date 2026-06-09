@@ -1,0 +1,62 @@
+; TC[E240321B]
+; CL[A]
+; EV[European Youth Go Championship 2024 U18]
+; PC[DE, Hamburg-Harburg]
+; DT[2024-03-21,2024-03-23]
+; HA[h9]
+; KM[6.5]
+; TM[85]
+; CM[ (submitted by rillig)]
+;.
+ 1 Xing Yuze                      5d DE  HD    26   6    26   143  846  9+/b    3+/w    4+/w    2+/b    5+/b    8+/w     |18525012
+ 2 Medak Stjepan                  3d HR  Vrba  25   5    25   144  838  13+/w   6+/b    7+/w    1-/w    3+/b    4+/b     |17437574
+ 3 Komin Jan                      2d CZ  APWS  24   4    24   142  830  17+/w   1-/b    10+/b   11+/w   2-/w    9+/b     |19637596
+ 4 Grosu Robert-Andrei            3d RO  Hika  24   4    24   141  836  10+/b   14+/w   1-/b    16+/b   7+/w    2-/w     |18362278
+ 5 Malko Olesia                   3d UA  Rivn  24   4    24   140  829  6-/w    15+/b   9+/w    14+/b   1-/w    10+/w    |17874241
+ 6 Bugaj Antoni                   2d PL  Wars  24   4    24   139  832  5+/b    2-/w    8-/w    22+/b   12+/b   7+/b     |17898078
+ 7 Makany Zalan                   1k HU  PaGo  23   3    23   142  835  11+/w   12+/b   2-/b    8+/b    4-/b    6-/w     |19762952
+ 8 Rotarita Stefan_Adrian         2d RO  VaDo  23   3    23   140  829  14-/b   17+/w   6+/b    7-/w    11+/w   1-/b     |17837270
+ 9 Dottan Adam                    2d DE  B     23   3    23   139  816  1-/w    16+/w   5-/b    18+/b   21+/w   3-/w     |17650138
+10 Marz Ferdinand                 1d DE  JIGS  23   3    23   137  823  4-/w    23+/b   3-/w    15+/w   14+/b   5-/b     |16213659
+11 Melnyk Anna                    2d UA  Kyiv  23   3    23   136  823  7-/b    21+/w   12+/w   3-/b    8-/b    15+/w    |17886517
+12 Crvelin Roko                   3d HR  Zagr  23   3    23   135  816  15+/b   7-/w    11-/b   20+/w   6-/w    16+/b    |18262739
+13 Timperi Alexander              1d FI  OGP   23   3    23   131  805  2-/b    20-/b   22-/w   25+/w   18+/b   14+/w    |18650236
+14 Petrashevskyi Danylo           1d UA  Kyiv  22   2    22   138  823  8+/w    4-/b    20+/w   5-/w    10-/w   13-/b    |18533592
+15 Chernova Mariia                1d UA  Kyiv  22   2    22   133  801  12-/w   5-/w    25+/b   10-/b   26+/w   11-/b    |18562819
+16 Petryk Danylo                  2k UA  Kyiv  22   3    22   132  804  28+/w   9-/b    17+/b   4-/w    20+/b   12-/w    |18601594
+17 Vlahovic Karlo                 1k HR  VGor  22   2    22   131  791  3-/b    8-/b    16-/w   26-/b   24+/w   21+/w    |18637256
+18 Sladetic Teo                   1k HR  Zagr  22   3    22   128  788  20-/w   28+/b   21+/b   9-/w    13-/w   23+/b    |18298742
+19 Shamoon Spike                  3k UK  NoCb  22   4    22   123  766  24+/w   25-/b   23-/b   29+/b   22+/w   20+/w    |17249639
+20 Valot Raphael                  2k FR  25Be  21   2    21   134  787  18+/b   13+/w   14-/b   12-/b   16-/w   19-/b    |19650345
+21 Patrascu Alexandru_Nicolas     1k RO  GoGo  21   2    21   131  793  25+/w   11-/b   18-/w   23+/w   9-/b    17-/b    |18513517
+22 Colson Mathias                 3k FR  38GJ  21   3    21   131  775  23-/w   24+/b   13+/b   6-/w    19-/b   25+/b    |18986759
+23 Zinoviev Mykhailo              3k UA  Khar  21   3    21   129  780  22+/b   10-/w   19+/w   21-/b   25+/w   18-/w    |18333832
+24 Siwy Adam                      3k PL  Szcz  21   3    21   123  751  19-/b   22-/w   29+/w   28+/w   17-/b   26+/b    |19725508
+25 Krasivskyi Ivan                1k UA  Khar  20   1    20   130  778  21-/b   19+/w   15-/w   13-/b   23-/b   22-/w    |19225184
+26 Rieger Angelika                5k DE  TR    20   4    20   123  737  27+/b   30+/w   28+/b   17+/w   15-/b   24-/w    |16586361
+27 Sarafolean Alessia-Ana-Maria   6k RO  Hika  20   5    20   113  685  26-/w   34+/w   31+/b   30+/b   28+/w   29+/b    |18450586
+28 Hadzhiiev Viktor               2k UA  Kyiv  19   0    19   124  730  16-/b   18-/w   26-/w   24-/b   27-/b   31-/w    |19513736
+29 Ghetu Sara_Maria               4k RO  Cluj  19   2    19   119  688  30-/b   31+/w   24-/b   19-/w   32+/b   27-/w    |19533602
+30 Zeng-Lussereau Eliot           5k FR  38GJ  19   3    19   113  670  29+/w   26-/b   32+/w   27-/w   31-/b   33+/w    |17349849
+31 Leissen Bastian                5k DE  MZ    19   4    19   111  672  32+/w   29-/b   27-/w   35+/b   30+/w   28+/b    |19674743
+32 Chernova Vira                  6k UA  Kyiv  18   3    18   105  634  31-/b   35+/w   30-/b   33+/b   29-/w   36+/w    |18962647
+33 Wunderer Daniel                7k ES  Pedr  17   3    17   99   589  35-/b   36+/w   34+/b   32-/w   37+/w   30-/b    |20598369
+34 Chalmovianska Michala          8k SK  Brat  17   4    17   95   562  36+/w   27-/b   33-/w   38+/w   35+/b   37+/b    |20398521
+35 Paret Leonard                  7k FR  38GJ  16   2    16   98   582  33+/w   32-/b   36-/b   31-/w   34-/w   39+/w    |19574258
+36 Leissen Eva                    8k DE  MZ    15   2    15   94   559  34-/b   33-/b   35+/w   37-/w   39+/b   32-/b    |19625749
+37 ifj_Kis-Gado Csaba            11k HU  PaGo  14   4    14   84   510  38+/w   43+/b   39+/w   36+/b   33-/b   34-/w    |18913983
+38 Pittner Arwen                 10k DE  B     13   2    13   74   459  37-/b   39-/w   43+/w   34-/b   40-/w   44+/b    |16437201
+39 Marz Leopold                  12k DE  JIGS  12   3    12   78   482  44+/w   38+/b   37-/b   41+/w   36-/w   35-/b    |18274872
+40 Freitag Lukas                 13k DE  JIGS  12   4    12   63   377  43-/w   42-/b   44+/b   46+/w   38+/b   41+/b    |20149327
+41 Goncalves Nicolas             12k FR  63Ce  11   4    11   63   387  45+/b   44+/w   42+/w   39-/b   43+/b   40-/w    |20498016
+42 Ispirescu Mihaela             15k RO  Hika  11   5    11   60   353  46+/b   40+/w   41-/b   45+/w   44+/w   43+/b    |20162098
+43 Grigorescu Ioana              13k RO  Hika  10   2    10   70   413  40+/b   37-/w   38-/b   44+/b   41-/w   42-/w    |16033798
+44 Wunderer Anaid                11k ES  Pedr  9    0    9    69   408  39-/b   41-/b   40-/w   43-/w   42-/b   38-/w    |20513372
+45 Barcza Bora                   15k HU  PaGo  9    3    9    47   250  41-/w   47+/b   46-/b   42-/b   49+/w   50+/w    |19786371
+46 Thaller Eugene                16k FR  38GJ  9    4    9    41   263  42-/w   48+/w   45+/w   40-/b   51+/b   52+/b    |20174649
+47 Gomez Benoit                  18k FR  38GJ  7    4    7    27   199  48+/b   45-/w   51+/b   52+/w   50+/w   49-/b    |19898219
+48 Kleinle Malou                 17k DE  JIGS  7    3    7    27   193  47-/w   46-/b   50+/b   49-/w   52+/b   51+/w    |19598689
+49 Hildt Milana                  20k DE  HH    6    5    6    28   198  50+/w   51+/b   52+/w   48+/b   45-/b   47+/w    |19598612
+50 van_Vliet Jonna_Deva          19k DE  OL    3    1    3    31   195  49-/b   52+/w   48-/w   51-/w   47-/b   45-/b    |20501547
+51 Boichenko Alina               19k UA  Odes  2    2    2    32   188  52+/b   49-/w   47-/w   50+/b   46-/w   48-/b    |20349681
+52 Pittner Lena                  24k DE  B     0    0    0    34   186  51-/w   50-/b   49-/b   47-/b   48-/w   46-/w    |18213140

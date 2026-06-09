@@ -1,0 +1,45 @@
+name: 25th European Youth Go Championship
+stages:
+  - type: tournament
+    file: eygc2020u12.txt
+    category: u12
+    name: U12
+    scoringColumns:
+      - mms 
+      - wins
+      - null
+      - sos
+      - sosos
+    breakers:
+      - mms
+      - sos
+      - sosos 
+    findSharedPlaces: true
+  - type: tournament
+    file: eygc2020u16.txt
+    category: u16
+    name: U16
+    scoringColumns:
+      - mms 
+      - sos
+      - sosos
+      - null      
+    breakers:
+      - mms
+      - sos
+      - sosos      
+    findSharedPlaces: true    
+  - type: tournament
+    file: eygc2020u20.txt
+    category: u20
+    name: U20
+    scoringColumns:
+      - mms 
+      - sos
+      - sosos
+      - null      
+    breakers:
+      - mms
+      - sos
+      - sosos    
+    findSharedPlaces: true
