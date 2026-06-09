@@ -5,7 +5,7 @@ import { getTranslator } from '@/i18n/translator';
 import { CategoryLink } from '@/components/category/CategoryLink';
 import { H1 } from '@/components/ui/H1';
 import { H2 } from '@/components/ui/H2';
-import { WinnersTable } from '@/components/WinnersTable';
+import { WinnersTable, type WinnersTableProps } from '@/components/WinnersTable';
 
 export type WinnersProps = {
   tournaments: Tournament[];
@@ -51,7 +51,7 @@ function TotalWinners({ tournaments, translations }: WinnersProps) {
 }
 
 function getCategoryTop(tournaments: Tournament[], category: string) {
-  const results = [];
+  const results: WinnersTableProps['results'] = [];
 
   for (const tournament of tournaments) {
     if (tournament.categoriesTop?.[category]) {
@@ -59,6 +59,12 @@ function getCategoryTop(tournaments: Tournament[], category: string) {
         year: tournament.year,
         top: tournament.categoriesTop[category],
         players: tournament.players,
+      });
+    } else if (tournament.categories?.includes(category) && tournament.announcement) {
+      results.push({
+        year: tournament.year,
+        announcement: tournament.announcement,
+        website: Array.isArray(tournament.website) ? tournament.website[0] : tournament.website,
       });
     }
   }

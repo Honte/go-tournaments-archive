@@ -7,7 +7,7 @@ import { jsxJoin } from '@/libs/join';
 import { PlayerLink } from '@/components/ui/PlayerLink';
 import { PlayerName } from '@/components/ui/PlayerName';
 
-type WinnersTableProps = {
+export type WinnersTableProps = {
   results: (Result | Announcement)[];
   translations: Translations;
 };
@@ -20,7 +20,7 @@ type Result = {
 
 type Announcement = {
   announcement: boolean | string | Record<string, string>;
-  website: string;
+  website?: string;
   year: number;
 };
 
@@ -93,8 +93,12 @@ function TournamentAnnouncementRow({
 }) {
   const { announcement, year, website } = tournament;
   const t = getTranslator(translations);
-  const title =
-    (typeof announcement === 'object' ? announcement[translations.locale] : announcement) ?? t('site.eventName');
+  const content =
+    (typeof announcement === 'object'
+      ? announcement[translations.locale]
+      : typeof announcement === 'string'
+        ? announcement
+        : undefined) ?? t('site.eventName');
 
   return (
     <tr className="group text-center bg-event-primary text-white hover:bg-event-hover hover:text-white transition-colors duration-500">
@@ -108,10 +112,14 @@ function TournamentAnnouncementRow({
         </Link>
       </td>
       <td colSpan={3} className="text-center underline-offset-2 p-1">
-        <a href={website} className="cursor-pointer flex gap-2 items-center justify-center">
-          {title}
-          <LuExternalLink />
-        </a>
+        {website ? (
+          <a href={website} className="cursor-pointer flex gap-2 items-center justify-center">
+            {content}
+            <LuExternalLink />
+          </a>
+        ) : (
+          content
+        )}
       </td>
     </tr>
   );
