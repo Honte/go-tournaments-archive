@@ -56,6 +56,11 @@ for (const yamlPath of yamlFiles.sort()) {
 
   let yamlModified = false;
 
+  if (!json.stages?.length) {
+    logger.log('No stages found in YAML');
+    continue;
+  }
+
   for (const [stageIndex, stage] of json.stages.entries()) {
     const allSgfPaths = await findSgfs(
       SGF_DIR,

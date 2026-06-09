@@ -8,12 +8,6 @@
     "allTimeStatsDescription": "All-time statistics of all Polish Go Championships participants",
     "playerStatsDescription": "Participation statistics of %{0} in all Polish Go Championships events"
   },
-  "currentEdition": {
-    "website": "https://mp.go.art.pl/2025/en",
-    "title": "Current Polish Go Championship!",
-    "subtitle": "Gdańsk, 8 - 11 November 2025",
-    "tooltip": "Go to championship's website"
-  },
   "details": {
     "goToWebsite": "Go to PGC %{0} website"
   },

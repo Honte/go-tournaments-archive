@@ -73,7 +73,11 @@ export type InputTournament = {
   website?: string | string[];
   players?: Record<string, string>;
   top?: (string | string[])[];
-  stages: InputStage[];
+  stages?: InputStage[];
   displayReversed?: boolean;
   notes?: string | Record<string, string>;
+  start?: string;
+  end?: string;
+  announcement?: boolean | string | Record<string, string>;
+  categories?: string[];
 };

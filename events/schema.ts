@@ -12,7 +12,6 @@ export type EventConfig = {
   readonly generateSvgs?: boolean;
   readonly generateZips?: boolean;
   readonly hideGamesWithoutSgf?: boolean;
-  readonly currentEdition?: boolean;
   readonly categories?: string[];
   readonly unknownRanks?: readonly string[];
 };

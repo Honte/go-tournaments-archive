@@ -28,33 +28,36 @@ export async function loadData() {
       year,
       country: json.country,
       location: json.location ?? '',
+      categories: json.categories ?? [],
       top: parseTop(json.top),
     };
 
     const stageCountries = new Set<string>();
     const stageLocations = new Set<string>();
 
-    for (const stageJson of json.stages) {
-      try {
-        const stage = await parseStage(stageJson, players, games, tournamentDetails, playersHandler);
+    if (json.stages?.length) {
+      for (const stageJson of json.stages) {
+        try {
+          const stage = await parseStage(stageJson, players, games, tournamentDetails, playersHandler);
 
-        if (stage.date) {
-          dates.push(...stage.date);
+          if (stage.date) {
+            dates.push(...stage.date);
+          }
+
+          stages.push(stage);
+
+          if (stage.country) {
+            stageCountries.add(stage.country);
+          }
+
+          if (stage.location) {
+            stageLocations.add(stage.location);
+          }
+        } catch (e) {
+          console.error(`\nError parsing tournament: ${file}`);
+          console.error(e);
+          console.log();
         }
-
-        stages.push(stage);
-
-        if (stage.country) {
-          stageCountries.add(stage.country);
-        }
-
-        if (stage.location) {
-          stageLocations.add(stage.location);
-        }
-      } catch (e) {
-        console.error(`\nError parsing tournament: ${file}`);
-        console.error(e);
-        console.log();
       }
     }
 

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { LuExternalLink } from 'react-icons/lu';
 import type { Player } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
@@ -7,8 +8,20 @@ import { PlayerLink } from '@/components/ui/PlayerLink';
 import { PlayerName } from '@/components/ui/PlayerName';
 
 type WinnersTableProps = {
-  results: { year: number; top: string[][]; players: Record<string, Player> }[];
+  results: (Result | Announcement)[];
   translations: Translations;
+};
+
+type Result = {
+  year: number;
+  top: string[][];
+  players: Record<string, Player>;
+};
+
+type Announcement = {
+  announcement: boolean | string | Record<string, string>;
+  website: string;
+  year: number;
 };
 
 const MEDALS = [0, 1, 2];
@@ -27,34 +40,79 @@ export function WinnersTable({ results, translations }: WinnersTableProps) {
         </tr>
       </thead>
       <tbody>
-        {results.map(({ year, top, players }) => (
-          <tr key={year} className="text-center even:bg-gray-200 hover:bg-gray-300">
-            <td className="p-2">
-              <Link
-                className="sm:text-xl font-bold text-event-primary underline hover:text-event-hover"
-                href={`/${translations.locale}/${year}`}
-                prefetch={false}
-              >
-                {year}
-              </Link>
-            </td>
-            {MEDALS.map((index) => (
-              <td className="p-1" key={index}>
-                {top[index]?.length
-                  ? jsxJoin(
-                      top[index].map((id) => (
-                        <PlayerLink key={id} playerId={players[id].id} locale={translations.locale}>
-                          <PlayerName player={players[id]} />
-                        </PlayerLink>
-                      )),
-                      ', '
-                    )
-                  : '-'}
-              </td>
-            ))}
-          </tr>
-        ))}
+        {results.map((result) =>
+          'announcement' in result ? (
+            <TournamentAnnouncementRow key={result.year} tournament={result} translations={translations} />
+          ) : (
+            <TournamentMedalistsRow key={result.year} result={result} translations={translations} />
+          )
+        )}
       </tbody>
     </table>
+  );
+}
+
+function TournamentMedalistsRow({ result, translations }: { result: Result; translations: Translations }) {
+  const { year, top, players } = result;
+
+  return (
+    <tr className="text-center even:bg-gray-200 hover:bg-gray-300">
+      <td className="p-2">
+        <Link
+          className="sm:text-xl font-bold text-event-primary underline hover:text-event-hover"
+          href={`/${translations.locale}/${year}`}
+          prefetch={false}
+        >
+          {year}
+        </Link>
+      </td>
+      {MEDALS.map((index) => (
+        <td className="p-1" key={index}>
+          {top[index]?.length
+            ? jsxJoin(
+                top[index].map((id) => (
+                  <PlayerLink key={id} playerId={players[id].id} locale={translations.locale}>
+                    <PlayerName player={players[id]} />
+                  </PlayerLink>
+                )),
+                ', '
+              )
+            : '-'}
+        </td>
+      ))}
+    </tr>
+  );
+}
+
+function TournamentAnnouncementRow({
+  tournament,
+  translations,
+}: {
+  tournament: Announcement;
+  translations: Translations;
+}) {
+  const { announcement, year, website } = tournament;
+  const t = getTranslator(translations);
+  const title =
+    (typeof announcement === 'object' ? announcement[translations.locale] : announcement) ?? t('site.eventName');
+
+  return (
+    <tr className="group text-center bg-event-primary text-white hover:bg-event-hover hover:text-white transition-colors duration-500">
+      <td className="p-2">
+        <Link
+          className="sm:text-xl font-bold text-current underline hover:text-current"
+          href={`/${translations.locale}/${year}`}
+          prefetch={false}
+        >
+          {year}
+        </Link>
+      </td>
+      <td colSpan={3} className="text-center underline-offset-2 p-1">
+        <a href={website} className="cursor-pointer flex gap-2 items-center justify-center">
+          {title}
+          <LuExternalLink />
+        </a>
+      </td>
+    </tr>
   );
 }

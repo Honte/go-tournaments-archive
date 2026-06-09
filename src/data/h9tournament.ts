@@ -276,6 +276,18 @@ export async function loadH9Tournament({
         target[category] = top[category];
       }
     }
+
+    // update list of categories used in the tournament
+    const list = (tournamentDetails.categories ||= []);
+    if (category && !list.includes(category)) {
+      list.push(category);
+    }
+
+    for (const category of EVENT_CONFIG.categories) {
+      if (scoringColumns?.includes(category) && !list.includes(category)) {
+        list.push(category);
+      }
+    }
   } else if (!tournamentDetails.top.length) {
     const winners: string[][] = [[], [], []];
     for (const player of table) {
