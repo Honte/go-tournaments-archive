@@ -1,3 +1,4 @@
+name: 31st European Youth Go Championship
 stages:
   - type: tournament
     file: eygc2026u12.txt

@@ -1,3 +1,4 @@
+name: 23rd European Youth Go Championship
 stages:
   - type: tournament
     file: eygc2018u12.txt

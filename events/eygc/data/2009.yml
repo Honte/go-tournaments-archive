@@ -1,4 +1,5 @@
 website: https://www.eurogofed.org/results/youth/eygc2009.htm
+name: 14th European Youth Go Championship
 stages:
   - type: tournament
     file: eygc2009u12.txt

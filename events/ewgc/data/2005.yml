@@ -1,4 +1,6 @@
 website: https://www.eurogofed.org/results/women/womens2005.htm
+notes: No additional breakers so 3 gold medalists for this edition.
+name: 3rd European Women`s Championship
 stages:
   - type: tournament
     file: ewgc2005.txt

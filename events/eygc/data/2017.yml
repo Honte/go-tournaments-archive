@@ -1,4 +1,5 @@
 website: https://www.eurogofed.org/results/youth/eygc2017.htm
+name: 22nd European Youth Go Championship
 stages:
   - type: tournament
     file: eygc2017u12.txt
@@ -35,10 +36,10 @@ stages:
     scoringColumns:
       - mms 
       - wins
-      - sodos
       - sos
+      - sosos
     breakers:
       - mms
-      - sodos
       - sos
+      - sosos
     findSharedPlaces: true

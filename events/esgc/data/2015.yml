@@ -1,4 +1,5 @@
 website: https://www.eurogofed.org/results/student/student2015.htm
+name: 11th European Student Go Championship
 stages:
   - type: tournament
     file: esgc2015.txt

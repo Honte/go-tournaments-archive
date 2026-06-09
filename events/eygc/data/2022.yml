@@ -1,3 +1,4 @@
+name: 27th European Youth Go Championship
 stages:
   - type: tournament
     file: eygc2022u12.txt

@@ -1,4 +1,5 @@
 website: https://www.eurogofed.org/results/youth/eygc2010.htm
+name: 15th European Youth Go Championship
 notes: Changes in categories because age limit at the WYGC was lowered.
 stages:
   - type: tournament
@@ -7,9 +8,9 @@ stages:
     name: U12
     scoringColumns:
       - mms 
-      - wins
       - sos
       - sosos
+      - null
     breakers:
       - mms
       - sos
@@ -21,9 +22,9 @@ stages:
     name: U16
     scoringColumns:
       - mms 
-      - wins
       - sos
       - sosos
+      - null
     breakers:
       - mms
       - sos
@@ -35,9 +36,9 @@ stages:
     name: U18
     scoringColumns:
       - mms 
-      - wins
       - sos
       - sosos
+      - null
     breakers:
       - mms
       - sos

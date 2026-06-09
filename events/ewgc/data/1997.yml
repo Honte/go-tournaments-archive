@@ -1,4 +1,5 @@
 website: https://www.eurogofed.org/results/women/womens1997.htm
+name: 2nd European Women`s Championship
 stages:
   - type: tournament
     file: ewgc1997.txt

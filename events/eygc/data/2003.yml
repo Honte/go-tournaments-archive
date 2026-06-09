@@ -1,4 +1,5 @@
 website: https://www.eurogofed.org/results/youth/eygc2003.htm
+name: 8th European Youth Go Championship
 stages:
   - type: tournament
     file: eygc2003u12.txt

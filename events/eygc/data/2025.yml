@@ -1,3 +1,4 @@
+name: 30th European Youth Go Championship
 stages:
   - type: tournament
     file: eygc2025u12.txt

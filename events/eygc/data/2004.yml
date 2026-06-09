@@ -1,4 +1,5 @@
 website: https://www.eurogofed.org/results/youth/eygc2004.htm
+name: 9th European Youth Go Championship
 stages:
   - type: tournament
     file: eygc2004u12.txt

@@ -1,4 +1,5 @@
 website: https://www.eurogofed.org/results/youth/eygc2011.htm
+name: 16th European Youth Go Championship
 stages:
   - type: tournament
     file: eygc2011u12.txt

@@ -1,3 +1,4 @@
+name: 24th European Youth Go Championship
 stages:
   - type: tournament
     file: eygc2019u12.txt
@@ -7,12 +8,12 @@ stages:
       - mms 
       - wins
       - null
-      - sodos
       - sos
+      - sodos
     breakers:
       - mms
-      - sodos
       - sos
+      - sodos
     findSharedPlaces: true
   - type: tournament
     file: eygc2019u16.txt
@@ -22,12 +23,12 @@ stages:
       - mms 
       - wins
       - null
-      - sodos
       - sos
+      - sodos
     breakers:
       - mms
-      - sodos
       - sos
+      - sodos
     findSharedPlaces: true    
   - type: tournament
     file: eygc2019u20.txt
@@ -37,10 +38,10 @@ stages:
       - mms 
       - wins
       - null
-      - sodos
       - sos
+      - sodos
     breakers:
       - mms
-      - sodos
       - sos
+      - sodos
     findSharedPlaces: true

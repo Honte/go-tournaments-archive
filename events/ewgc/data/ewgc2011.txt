@@ -23,4 +23,4 @@
 10 Trifu Alice             5k RO  Giar  2    9    59   0    3-/b0   11+/w0  4-/b0   8-/w0   12+/b0   |13586892
 11 Dam Judith_van         15k NL  Amst  1    7    44   0    0=      10-/b0  5-/w0   12+/b0  7-/w0    |14537270
 12 Vlad Gabriela_Viorica  15k RO  Sibi  0    10   53   0    8-/b0   4-/w0   9-/b0   11-/w0  10-/w0   |15725380
-13 Coman Gabriela          6k RO  Brai  0    3    11   0    6-/w0   0-      0-      0-      0-       |12037630
+13 Coman Gabriela          6k RO  Brai  0    3    11   0    6-/w0   0=      0=      0=      0=       |12037630

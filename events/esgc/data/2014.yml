@@ -1,6 +1,7 @@
 website:
  - https://www.eurogofed.org/results/student/student2005.htm
  - http://esgc2014.blogspot.fr/
+name: 10th European Student Go Championship 
 stages:
   - type: tournament
     file: esgc2014.txt

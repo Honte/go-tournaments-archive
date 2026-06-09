@@ -1,3 +1,4 @@
+name: 29th European Youth Go Championship
 stages:
   - type: tournament
     file: eygc2024u12.txt

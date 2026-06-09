@@ -1,6 +1,7 @@
 website:
  - https://www.eurogofed.org/results/women/womens2023.htm
  - http://ewgc.gostrasbourg.fr/
+name: 21st European Women`s Championship
 stages:
   - type: tournament
     file: ewgc2023.txt

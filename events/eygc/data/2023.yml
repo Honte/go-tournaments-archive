@@ -1,3 +1,4 @@
+name: 28th European Youth Go Championship
 stages:
   - type: tournament
     file: eygc2023u12.txt
