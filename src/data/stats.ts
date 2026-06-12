@@ -48,7 +48,7 @@ export function calculateStats(tournaments: Tournament[], playersHandler: Player
     const tournamentPlayersMap: Record<string, StatsPlayer> = {
       BYE: players.BYE,
     };
-    for (const pid in tournamentPlayers) {
+    for (const pid of getStatsPlayerIds(tournament)) {
       const player = upsertPlayer(tournamentPlayers[pid]);
       const country = tournamentPlayers[pid].country;
 
@@ -61,6 +61,10 @@ export function calculateStats(tournaments: Tournament[], playersHandler: Player
     }
 
     for (const stage of stages) {
+      if (stage.excluded) {
+        continue;
+      }
+
       for (const player of stage.table) {
         const globalPlayer = tournamentPlayersMap[player.id];
         const playerGames: StatsPlayerGame[] = [];
@@ -295,6 +299,47 @@ export function calculateStats(tournaments: Tournament[], playersHandler: Player
       totalWon: 0,
       results: [],
     });
+  }
+
+  function getStatsPlayerIds(tournament: Tournament): Set<string> {
+    const ids = new Set<string>();
+    let hasIncludedStages = false;
+
+    for (const stage of tournament.stages) {
+      if (stage.excluded) {
+        continue;
+      }
+
+      hasIncludedStages = true;
+
+      for (const player of stage.table) {
+        ids.add(player.id);
+      }
+    }
+
+    if (!hasIncludedStages) {
+      for (const id in tournament.players) {
+        ids.add(id);
+      }
+    }
+
+    for (const place of tournament.top) {
+      for (const id of place) {
+        ids.add(id);
+      }
+    }
+
+    if (tournament.categoriesTop) {
+      for (const category in tournament.categoriesTop) {
+        for (const place of tournament.categoriesTop[category]) {
+          for (const id of place) {
+            ids.add(id);
+          }
+        }
+      }
+    }
+
+    return ids;
   }
 
   function upsertMedals(year: number, players: Record<string, Player>, winners?: string[][], category?: string) {

@@ -45,6 +45,7 @@ export async function loadH9Tournament({
     category,
     location,
     country,
+    excluded,
   } = stage;
 
   const content = await readFile(join(EVENT_DATA_DIR, file), 'utf-8');
@@ -242,7 +243,6 @@ export async function loadH9Tournament({
 
   if (EVENT_CONFIG.categories?.length) {
     const top: Record<string, string[][]> = {};
-    const target = (tournamentDetails.categoriesTop ||= {});
 
     for (const player of table) {
       if (category) {
@@ -271,9 +271,13 @@ export async function loadH9Tournament({
       }
     }
 
-    for (const category in top) {
-      if (top[category].length && !target[category]) {
-        target[category] = top[category];
+    if (!excluded) {
+      const target = (tournamentDetails.categoriesTop ||= {});
+
+      for (const category in top) {
+        if (top[category].length && !target[category]) {
+          target[category] = top[category];
+        }
       }
     }
 
@@ -288,7 +292,7 @@ export async function loadH9Tournament({
         list.push(category);
       }
     }
-  } else if (!tournamentDetails.top.length) {
+  } else if (!excluded && !tournamentDetails.top.length) {
     const winners: string[][] = [[], [], []];
     for (const player of table) {
       if (player.place <= 3) {
@@ -325,6 +329,7 @@ export async function loadH9Tournament({
     placeOffset,
     location: location ?? tournament.location,
     country: country ?? tournament.country,
+    excluded,
   } satisfies LeagueStage;
 }
 
