@@ -1,8 +1,9 @@
+import EVENT_CONFIG from '@event/config';
 import { mapValues } from 'lodash-es';
 import { notFound } from 'next/navigation';
 import type { NextRequest } from 'next/server';
-import { Endpoints } from '@/libs/endpoints';
 import { getTournaments } from '@/data';
+import { NORMALIZED_BASE_PATH } from '@/basePath';
 
 type PageProps = {
   params: Promise<{ year: string }>;
@@ -34,10 +35,10 @@ export async function GET(request: NextRequest, props: PageProps) {
         ...game,
         props: {
           ...game.props,
-          sgf: Endpoints.GAME_FILE(game.props.sgf),
-          svg: game.props.svg ? Endpoints.GAME_FILE(game.props.svg) : undefined,
-          png: game.props.png ? Endpoints.GAME_FILE(game.props.png) : undefined,
-          jpg: game.props.jpg ? Endpoints.GAME_FILE(game.props.jpg) : undefined,
+          sgf: getFilePath(game.props.sgf),
+          svg: game.props.svg ? getFilePath(game.props.svg) : undefined,
+          png: game.props.png ? getFilePath(game.props.png) : undefined,
+          jpg: game.props.jpg ? getFilePath(game.props.jpg) : undefined,
         },
       };
     }),
@@ -50,4 +51,8 @@ export async function generateStaticParams() {
   return tournaments.map((tournament) => ({
     year: `${tournament.year}.json`,
   }));
+}
+
+function getFilePath(path: string) {
+  return `${EVENT_CONFIG.domain || ''}${NORMALIZED_BASE_PATH}${path}`;
 }

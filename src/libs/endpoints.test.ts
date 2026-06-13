@@ -18,19 +18,12 @@ describe('normalizeBasePath', () => {
 });
 
 describe('FrontendEndpoints', () => {
-  const endpoints = createEndpoints({
-    basePath: '/archive',
-    domain: 'https://example.org/',
-  });
+  const endpoints = createEndpoints('/archive');
 
   it('adds basePath to JSON endpoints', () => {
     assert.equal(endpoints.I18N('pl'), '/archive/data/i18n/pl.json');
     assert.equal(endpoints.PLAYER_STATS('jan-kowalski'), '/archive/data/stats/player/jan-kowalski.json');
     assert.equal(endpoints.COUNTRY_STATS('PL'), '/archive/data/stats/country/pl.json');
     assert.equal(endpoints.SITEMAP('en'), '/archive/data/sitemap/en.json');
-  });
-
-  it('adds domain and basePath to game paths', () => {
-    assert.equal(endpoints.GAME_FILE('/sgf/2025/game.sgf'), 'https://example.org/archive/sgf/2025/game.sgf');
   });
 });

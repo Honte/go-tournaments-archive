@@ -1,19 +1,8 @@
-import EVENT_CONFIG from '@event/config';
 import { NORMALIZED_BASE_PATH } from '@/basePath';
 
-type FrontendEndpointsConfig = {
-  basePath: string;
-  domain?: string;
-};
+export const Endpoints = createEndpoints(NORMALIZED_BASE_PATH);
 
-export const Endpoints = createEndpoints({
-  basePath: NORMALIZED_BASE_PATH,
-  domain: EVENT_CONFIG.domain,
-});
-
-export function createEndpoints({ basePath, domain }: FrontendEndpointsConfig) {
-  const normalizedDomain = normalizeDomain(domain);
-
+export function createEndpoints(basePath: string) {
   function withBasePath(path: string) {
     if (!basePath || !path.startsWith('/') || isExternalPath(path)) {
       return path;
@@ -42,12 +31,7 @@ export function createEndpoints({ basePath, domain }: FrontendEndpointsConfig) {
     GAME_SGF: (path: string) => withBasePath(path),
     GAME_RAW_SGF: (path: string) => withBasePath(path.replace(/\.sgf$/, '.raw.sgf')),
     GAME_THUMB: (path: string | undefined) => (path ? withBasePath(path) : undefined),
-    GAME_FILE: (path: string) => `${normalizedDomain}${withBasePath(path)}`,
   } as const;
-}
-
-function normalizeDomain(value: string | undefined) {
-  return value?.replace(/\/+$/, '') ?? '';
 }
 
 function isExternalPath(path: string) {
