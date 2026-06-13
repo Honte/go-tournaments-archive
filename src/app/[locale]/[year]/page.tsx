@@ -26,7 +26,7 @@ type PageProps = {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { year, locale } = await params;
 
-  const translations = await loadTranslations(locale);
+  const translations = await loadTranslations(EVENT_CONFIG, locale);
   const tournament = await getTournament(Number(year));
   const t = getTranslator(translations);
 
@@ -58,7 +58,7 @@ export default async function Edition(props: PageProps) {
     return notFound();
   }
 
-  const translations = await loadTranslations(locale);
+  const translations = await loadTranslations(EVENT_CONFIG, locale);
   const tournament = await getTournament(Number(year));
   const years = await getAvailableTournaments();
   const description = await getTournamentDescription(EVENT_CONFIG, year, locale);

@@ -19,7 +19,7 @@ type PageProps = {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { code, locale } = await params;
 
-  const translations = await loadTranslations(locale);
+  const translations = await loadTranslations(EVENT_CONFIG, locale);
   const t = getTranslator(translations);
   const name = t(`country.${code.toUpperCase()}`);
 
@@ -36,7 +36,7 @@ export default async function CountryStatsPage({ params }: PageProps) {
 
   const { locale, code } = await params;
 
-  const translations = await loadTranslations(locale);
+  const translations = await loadTranslations(EVENT_CONFIG, locale);
   const t = getTranslator(translations);
   const country = await getCountryStats(code.toUpperCase());
   const name = t(`country.${code.toUpperCase()}`);

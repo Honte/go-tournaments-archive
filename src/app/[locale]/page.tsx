@@ -17,7 +17,7 @@ type PageProps = {
 
 export default async function Home({ params }: PageProps) {
   const { locale } = await params;
-  const translations = await loadTranslations(locale);
+  const translations = await loadTranslations(EVENT_CONFIG, locale);
   const tournaments = (await getTournaments()).toSorted((a, b) => b.id - a.id);
   const attendants = await getTopAttendants(10);
   const medalists = await getPlayerMedalists();

@@ -22,7 +22,7 @@ type PageProps = {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug, locale } = await params;
 
-  const translations = await loadTranslations(locale);
+  const translations = await loadTranslations(EVENT_CONFIG, locale);
   const player = await getPlayerStats(slug);
   const t = getTranslator(translations);
 
@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function PlayerStatsPage({ params }: PageProps) {
   const { locale, slug } = await params;
 
-  const translations = await loadTranslations(locale);
+  const translations = await loadTranslations(EVENT_CONFIG, locale);
   const player = await getPlayerStats(slug);
 
   if (!player) {

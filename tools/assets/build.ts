@@ -22,7 +22,7 @@ export async function buildAssets(event: EventConfig) {
 
   const sgfDir = `./events/${event.id}/sgf`;
   const tournaments = await getTournaments();
-  const translations = await loadTranslations(event.locales[0]);
+  const translations = await loadTranslations(event);
 
   const sgfTasks: BuildSgfRequest[] = [];
   for (const tournament of tournaments) {

@@ -27,7 +27,7 @@ export async function generateMetadata(props: RootLayoutProps): Promise<Metadata
     return notFound();
   }
 
-  const translations = await loadTranslations(locale);
+  const translations = await loadTranslations(EVENT_CONFIG, locale);
   const t = getTranslator(translations);
 
   return {
@@ -51,7 +51,7 @@ export default async function RootLayout({ params, children }: RootLayoutProps) 
     return notFound();
   }
 
-  const translations = await loadTranslations(locale);
+  const translations = await loadTranslations(EVENT_CONFIG, locale);
 
   return (
     <html lang={locale} className="min-h-full bg-event-light">

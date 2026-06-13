@@ -8,7 +8,7 @@ import { Endpoints } from '@/libs/endpoints';
 import '../globals.css';
 
 export async function generateMetadata(): Promise<Metadata> {
-  const translations = await loadTranslations(EVENT_CONFIG.locales[0]);
+  const translations = await loadTranslations(EVENT_CONFIG);
   const t = getTranslator(translations);
 
   return {

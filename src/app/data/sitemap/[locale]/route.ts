@@ -22,7 +22,7 @@ export async function GET(_: Request, props: PageProps) {
   }
 
   const tournaments = await getTournamentList();
-  const translations = await loadTranslations(locale);
+  const translations = await loadTranslations(EVENT_CONFIG, locale);
 
   return Response.json(getSitemap(EVENT_CONFIG, tournaments, translations));
 }

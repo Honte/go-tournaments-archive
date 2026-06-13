@@ -20,7 +20,7 @@ type PageProps = {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale, category } = await params;
 
-  const translations = await loadTranslations(locale);
+  const translations = await loadTranslations(EVENT_CONFIG, locale);
   const t = getTranslator(translations);
   const name = t(`categories.full.${category}`);
 
@@ -37,7 +37,7 @@ export default async function CategoryStats({ params }: PageProps) {
 
   const { locale, category } = await params;
 
-  const translations = await loadTranslations(locale);
+  const translations = await loadTranslations(EVENT_CONFIG, locale);
   const stats = await getCategoryStats(category);
   const t = getTranslator(translations);
   const name = t(`categories.full.${category}`);

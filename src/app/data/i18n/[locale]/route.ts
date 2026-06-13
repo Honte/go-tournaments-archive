@@ -19,7 +19,7 @@ export async function GET(_: Request, props: PageProps) {
     return notFound();
   }
 
-  return Response.json(await loadTranslations(locale));
+  return Response.json(await loadTranslations(EVENT_CONFIG, locale));
 }
 
 export function generateStaticParams() {

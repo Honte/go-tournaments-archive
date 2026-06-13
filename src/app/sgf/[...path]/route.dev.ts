@@ -137,7 +137,7 @@ async function getSgf(file: string, raw = false) {
     return content;
   }
 
-  const translations = await loadTranslations(EVENT_CONFIG.locales[0]);
+  const translations = await loadTranslations(EVENT_CONFIG);
   const tournaments = await getTournaments();
   const sgfPath = path.posix.join('/sgf', ...path.relative(SGF_DIR, file).split(path.sep));
   const sgfDetails = await loadGameSgfDetails(EVENT_CONFIG, tournaments, sgfPath, translations);
@@ -157,7 +157,7 @@ async function serveZip(year: number) {
     return notFound();
   }
 
-  const translations = await loadTranslations(EVENT_CONFIG.locales[0]);
+  const translations = await loadTranslations(EVENT_CONFIG);
   const files = await loadCleanTournamentSgfs(EVENT_CONFIG, tournament, translations);
 
   if (!files.length) {
