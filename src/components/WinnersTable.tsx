@@ -10,6 +10,7 @@ import { PlayerName } from '@/components/ui/PlayerName';
 export type WinnersTableProps = {
   results: (Result | Announcement)[];
   translations: Translations;
+  showCountry?: boolean;
 };
 
 type Result = {
@@ -26,7 +27,7 @@ type Announcement = {
 
 const MEDALS = [0, 1, 2];
 
-export function WinnersTable({ results, translations }: WinnersTableProps) {
+export function WinnersTable({ results, translations, showCountry }: WinnersTableProps) {
   const t = getTranslator(translations);
 
   return (
@@ -44,7 +45,12 @@ export function WinnersTable({ results, translations }: WinnersTableProps) {
           'announcement' in result ? (
             <TournamentAnnouncementRow key={result.year} tournament={result} translations={translations} />
           ) : (
-            <TournamentMedalistsRow key={result.year} result={result} translations={translations} />
+            <TournamentMedalistsRow
+              key={result.year}
+              result={result}
+              translations={translations}
+              showCountry={showCountry}
+            />
           )
         )}
       </tbody>
@@ -52,7 +58,15 @@ export function WinnersTable({ results, translations }: WinnersTableProps) {
   );
 }
 
-function TournamentMedalistsRow({ result, translations }: { result: Result; translations: Translations }) {
+function TournamentMedalistsRow({
+  result,
+  translations,
+  showCountry,
+}: {
+  result: Result;
+  translations: Translations;
+  showCountry?: boolean;
+}) {
   const { year, top, players } = result;
 
   return (
@@ -72,7 +86,7 @@ function TournamentMedalistsRow({ result, translations }: { result: Result; tran
             ? jsxJoin(
                 top[index].map((id) => (
                   <PlayerLink key={id} playerId={players[id].id} locale={translations.locale}>
-                    <PlayerName player={players[id]} />
+                    <PlayerName player={players[id]} showCountry={showCountry} />
                   </PlayerLink>
                 )),
                 ', '

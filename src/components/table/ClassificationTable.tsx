@@ -8,9 +8,10 @@ type ClassificationTableProps = {
   stage: ClassificationStage;
   players: Record<string, Player>;
   translations: Translations;
+  showCountry?: boolean;
 };
 
-export function ClassificationTable({ stage, players, translations }: ClassificationTableProps) {
+export function ClassificationTable({ stage, players, translations, showCountry }: ClassificationTableProps) {
   const t = getTranslator(translations);
   return (
     <table className="table-auto border-separate border-spacing-x-0 border-spacing-y-0.5">
@@ -30,7 +31,7 @@ export function ClassificationTable({ stage, players, translations }: Classifica
               <td className="p-1 text-center">{isShared ? `(${index + 1})` : place}</td>
               <td>
                 <PlayerLink playerId={player.id} locale={translations.locale} className="p-1">
-                  <PlayerName player={player} />
+                  <PlayerName player={player} showCountry={showCountry} />
                 </PlayerLink>
               </td>
             </tr>

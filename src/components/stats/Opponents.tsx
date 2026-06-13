@@ -13,6 +13,7 @@ import { PlayerCell } from '@/components/ui/PlayerCell';
 type OpponentsProps = {
   translations: Translations;
   player: ApiPlayerStats;
+  showCountry?: boolean;
 };
 
 type OpponentRow = {
@@ -27,7 +28,7 @@ type OpponentRow = {
   country: string;
 };
 
-export function Opponents({ player, translations }: OpponentsProps) {
+export function Opponents({ player, translations, showCountry }: OpponentsProps) {
   const t = getTranslator(translations);
 
   const data = useMemo(() => {
@@ -83,7 +84,14 @@ export function Opponents({ player, translations }: OpponentsProps) {
         {
           accessorKey: 'firstName',
           header: t('table.firstName'),
-          cell: (info) => <PlayerCell player={info.row.original} locale={translations.locale} includeRank={false} />,
+          cell: (info) => (
+            <PlayerCell
+              player={info.row.original}
+              locale={translations.locale}
+              showRank={false}
+              showCountry={showCountry}
+            />
+          ),
           meta: { span: 2 },
         },
         {
@@ -109,7 +117,7 @@ export function Opponents({ player, translations }: OpponentsProps) {
           cell: toPercentage,
         },
       ] as ColumnDef<OpponentRow>[],
-    [translations, t]
+    [translations, t, showCountry]
   );
 
   return (

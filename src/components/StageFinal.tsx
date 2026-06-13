@@ -8,9 +8,10 @@ type StageFinalProps = {
   stage: FinalStage;
   players: Record<string, Player>;
   translations: Translations;
+  showCountry?: boolean;
 };
 
-export function StageFinal({ stage, players, translations }: StageFinalProps) {
+export function StageFinal({ stage, players, translations, showCountry }: StageFinalProps) {
   const t = getTranslator(translations);
   const {
     requiredWins,
@@ -33,13 +34,13 @@ export function StageFinal({ stage, players, translations }: StageFinalProps) {
       <div className="bg-gray-200 p-2 my-2 md:p-3 text-lg flex items-center text-center gap-2">
         <strong>
           <PlayerLink playerId={winnerPlayer.id} locale={translations.locale}>
-            <PlayerName player={winnerPlayer} />
+            <PlayerName player={winnerPlayer} showCountry={showCountry} />
           </PlayerLink>
         </strong>
         <span>&ndash;</span>
         <span>
           <PlayerLink playerId={loserPlayer.id} locale={translations.locale}>
-            <PlayerName player={loserPlayer} />
+            <PlayerName player={loserPlayer} showCountry={showCountry} />
           </PlayerLink>
         </span>
         <strong>{result}</strong>

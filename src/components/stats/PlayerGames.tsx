@@ -127,8 +127,8 @@ export function PlayerGames({ player, translations, showCountry }: PlayerGamesPr
               <PlayerCell
                 player={info.row.original.opponent}
                 locale={translations.locale}
-                includeRank={false}
-                includeCountry={false}
+                showRank={false}
+                showCountry={false}
               />
             ),
             meta: { span: 2 },

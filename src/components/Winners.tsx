@@ -10,24 +10,30 @@ export type WinnersProps = {
   tournaments: Tournament[];
   translations: Translations;
   categories?: string[];
+  showCountry?: boolean;
 };
 
-export function Winners({ tournaments, translations, categories }: WinnersProps) {
+export function Winners({ tournaments, translations, categories, showCountry }: WinnersProps) {
   const t = getTranslator(translations);
 
   return (
     <div>
       <H1>{t('winners.title')}</H1>
       {categories?.length ? (
-        <CategoryWinners tournaments={tournaments} translations={translations} categories={categories} />
+        <CategoryWinners
+          tournaments={tournaments}
+          translations={translations}
+          categories={categories}
+          showCountry={showCountry}
+        />
       ) : (
-        <TotalWinners tournaments={tournaments} translations={translations} />
+        <WinnersTable results={tournaments} translations={translations} showCountry={showCountry} />
       )}
     </div>
   );
 }
 
-function CategoryWinners({ tournaments, translations, categories }: WinnersProps) {
+function CategoryWinners({ tournaments, translations, categories, showCountry }: WinnersProps) {
   const t = getTranslator(translations);
 
   return (
@@ -39,15 +45,15 @@ function CategoryWinners({ tournaments, translations, categories }: WinnersProps
               {t(`categories.full.${category}`)}
             </CategoryLink>{' '}
           </H2>
-          <WinnersTable results={getCategoryTop(tournaments, category)} translations={translations} />
+          <WinnersTable
+            results={getCategoryTop(tournaments, category)}
+            translations={translations}
+            showCountry={showCountry}
+          />
         </div>
       ))}
     </div>
   );
-}
-
-function TotalWinners({ tournaments, translations }: WinnersProps) {
-  return <WinnersTable translations={translations} results={tournaments} />;
 }
 
 function getCategoryTop(tournaments: Tournament[], category: string) {

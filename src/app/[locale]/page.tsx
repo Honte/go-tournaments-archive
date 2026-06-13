@@ -32,7 +32,7 @@ export default async function Home({ params }: PageProps) {
           <Winners translations={translations} tournaments={tournaments} categories={EVENT_CONFIG.categories} />
         </div>
         {EVENT_CONFIG.showCountry && <CountryMedalists countries={countryMedals} translations={translations} />}
-        <Medalists translations={translations} players={medalists} />
+        <Medalists translations={translations} players={medalists} showCountry={EVENT_CONFIG.showCountry} />
         <Attendants translations={translations} players={attendants} />
         <TotalStats translations={translations} stats={totalStats} />
       </div>

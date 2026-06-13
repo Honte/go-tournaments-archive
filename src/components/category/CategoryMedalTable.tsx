@@ -11,9 +11,10 @@ export type CategoryMedalTableProps = {
   category: string;
   stats: StatsCategory;
   translations: Translations;
+  showCountry?: boolean;
 };
 
-export function CategoryMedalTable({ category, stats, translations }: CategoryMedalTableProps) {
+export function CategoryMedalTable({ category, stats, translations, showCountry }: CategoryMedalTableProps) {
   const medalists = getCategoryMedalists(stats);
   const t = getTranslator(translations);
 
@@ -26,7 +27,7 @@ export function CategoryMedalTable({ category, stats, translations }: CategoryMe
         toKey={(player) => player.id}
         toName={(player) => (
           <PlayerLink playerId={player.id} locale={translations.locale}>
-            <PlayerName player={player} showRank={false} />
+            <PlayerName player={player} showRank={false} showCountry={showCountry} />
           </PlayerLink>
         )}
       />

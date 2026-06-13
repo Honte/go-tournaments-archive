@@ -25,11 +25,12 @@ import { GameControlButton } from '@/components/viewer/GameControlButton';
 type GameViewerContentProps = {
   sgf: SgfData;
   translations: Translations;
+  showCountry?: boolean;
   onClose: () => void;
 };
 
 function GameViewerContent(props: GameViewerContentProps) {
-  const { sgf, translations, onClose } = props;
+  const { sgf, translations, showCountry, onClose } = props;
   const t = getTranslator(translations);
   const [position, setPosition] = useState(sgf.moves.length);
   const [playing, setPlaying] = useState(false);
@@ -247,6 +248,7 @@ function GameViewerContent(props: GameViewerContentProps) {
           locale={translations.locale}
           onNavigate={onClose}
           prisoners={board.getCaptures(1)}
+          showCountry={showCountry}
         />
         <PlayerRow
           player={sgf.white}
@@ -254,6 +256,7 @@ function GameViewerContent(props: GameViewerContentProps) {
           locale={translations.locale}
           onNavigate={onClose}
           prisoners={board.getCaptures(-1)}
+          showCountry={showCountry}
         />
       </div>
 
@@ -310,13 +313,15 @@ function PlayerRow({
   player,
   color,
   locale,
-  onNavigate,
   prisoners,
+  showCountry,
+  onNavigate,
 }: {
   player: SgfPlayer;
   color: 'black' | 'white';
   locale: string;
   prisoners?: number;
+  showCountry?: boolean;
   onNavigate: () => void;
 }) {
   return (
@@ -331,10 +336,10 @@ function PlayerRow({
             'font-semibold': player.won,
           })}
         >
-          <PlayerName player={player} />
+          <PlayerName player={player} showCountry={showCountry} />
         </PlayerLink>
       ) : (
-        <PlayerName player={player} />
+        <PlayerName player={player} showCountry={showCountry} />
       )}
       <span className="ml-auto font-semibold">{prisoners ?? 0}</span>
     </div>

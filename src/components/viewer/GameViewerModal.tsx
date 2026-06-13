@@ -12,10 +12,11 @@ import { useSgfData } from '@/hooks/useSgfData';
 type GameViewerDialogProps = {
   sgfPath: string;
   translations: Translations;
+  showCountry?: boolean;
   onClose: () => void;
 };
 
-export function GameViewerModal({ sgfPath, translations, onClose }: GameViewerDialogProps) {
+export function GameViewerModal({ sgfPath, translations, onClose, showCountry }: GameViewerDialogProps) {
   const t = getTranslator(translations);
   const { data, isPending } = useSgfData(sgfPath);
 
@@ -64,7 +65,7 @@ export function GameViewerModal({ sgfPath, translations, onClose }: GameViewerDi
               <Loader />
             </div>
           ) : (
-            <GameViewerContent sgf={data} translations={translations} onClose={onClose} />
+            <GameViewerContent sgf={data} translations={translations} onClose={onClose} showCountry={showCountry} />
           )}
 
           <footer className="flex shrink-0 items-center justify-between gap-3 border-t border-event-soft px-2 md:px-4 py-2 md:py-3">

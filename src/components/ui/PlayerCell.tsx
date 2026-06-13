@@ -4,15 +4,15 @@ import { PlayerDetails, PlayerName } from '@/components/ui/PlayerName';
 export type PlayerCellProps = {
   player: PlayerDetails;
   locale: string;
-  includeRank?: boolean;
-  includeCountry?: boolean;
+  showRank?: boolean;
+  showCountry?: boolean;
 };
 
-export function PlayerCell({ player, locale, includeRank, includeCountry }: PlayerCellProps) {
+export function PlayerCell({ player, locale, showRank, showCountry }: PlayerCellProps) {
   return (
     <div className="text-left">
       <PlayerLink playerId={player.id} locale={locale}>
-        <PlayerName player={player} showRank={includeRank} showCountry={includeCountry} />
+        <PlayerName player={player} showRank={showRank} showCountry={showCountry} />
       </PlayerLink>
     </div>
   );

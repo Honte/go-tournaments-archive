@@ -14,9 +14,10 @@ const GameViewerDialog = dynamic(
 
 type GameViewerProps = {
   translations: Translations;
+  showCountry?: boolean;
 };
 
-export function GameViewer({ translations }: GameViewerProps) {
+export function GameViewer({ translations, showCountry }: GameViewerProps) {
   const [sgfPath, setSgfPath] = useState<string | null>(null);
   const close = useCallback(() => setSgfPath(null), []);
 
@@ -33,5 +34,5 @@ export function GameViewer({ translations }: GameViewerProps) {
     return null;
   }
 
-  return <GameViewerDialog sgfPath={sgfPath} translations={translations} onClose={close} />;
+  return <GameViewerDialog sgfPath={sgfPath} translations={translations} showCountry={showCountry} onClose={close} />;
 }

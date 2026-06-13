@@ -39,7 +39,7 @@ function PlayerStatsContent({ player, translations, showCountry }: PlayerStatsCo
         <PlayerEvents player={player} translations={translations} showCountry={showCountry} />
         <PlayerGames player={player} translations={translations} showCountry={showCountry} />
       </div>
-      <Opponents player={player} translations={translations} />
+      <Opponents player={player} translations={translations} showCountry={showCountry} />
     </div>
   );
 }

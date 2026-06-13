@@ -106,8 +106,8 @@ function AllPlayersStatsContent({ players, translations, showCountry, showBestPl
               <PlayerCell
                 player={info.row.original}
                 locale={translations.locale}
-                includeRank={false}
-                includeCountry={false}
+                showRank={false}
+                showCountry={false}
               />
             ),
             meta: { span: 2 },

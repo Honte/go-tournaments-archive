@@ -10,9 +10,10 @@ import { PlayerName } from './ui/PlayerName';
 type MedalistsProps = {
   players: StatsPlayer[];
   translations: Translations;
+  showCountry?: boolean;
 };
 
-export function Medalists({ players, translations }: MedalistsProps) {
+export function Medalists({ players, translations, showCountry }: MedalistsProps) {
   const t = getTranslator(translations);
 
   return (
@@ -24,7 +25,7 @@ export function Medalists({ players, translations }: MedalistsProps) {
         toKey={(player) => player.id}
         toName={(player) => (
           <PlayerLink playerId={player.id} locale={translations.locale}>
-            <PlayerName player={player} showRank={false} />
+            <PlayerName player={player} showRank={false} showCountry={showCountry} />
           </PlayerLink>
         )}
       />

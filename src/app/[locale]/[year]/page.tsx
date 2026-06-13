@@ -107,7 +107,8 @@ export default async function Edition(props: PageProps) {
         tournament={tournament}
         translations={translations}
         hideGamesWithoutSgf={EVENT_CONFIG.hideGamesWithoutSgf}
-        hasZips={EVENT_CONFIG.generateZips}
+        showZips={EVENT_CONFIG.generateZips}
+        showCountry={EVENT_CONFIG.showCountry}
       />
     </>
   );

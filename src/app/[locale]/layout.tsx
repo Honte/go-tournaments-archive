@@ -64,7 +64,7 @@ export default async function RootLayout({ params, children }: RootLayoutProps) 
             </main>
             <Footer translations={translations} />
           </div>
-          <Client locale={locale} />
+          <Client locale={locale} event={EVENT_CONFIG} />
         </QueryProvider>
       </body>
     </html>

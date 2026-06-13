@@ -16,9 +16,10 @@ type GameProps = {
   players: Record<string, Player>;
   translations: Translations;
   wide?: boolean;
+  showCountry?: boolean;
 };
 
-export function Game({ className, game, players, translations, title, wide }: GameProps) {
+export function Game({ className, game, players, translations, title, wide, showCountry }: GameProps) {
   const t = getTranslator(translations);
   const [home, away] = useMemo(() => game.players.map((p) => ({ ...players[p.id], ...p })), [game, players]);
   const hasSgf = game.props.sgf;
@@ -45,9 +46,9 @@ export function Game({ className, game, players, translations, title, wide }: Ga
             'max-xs:flex-col gap-1 sm:items-center': !hasSgf,
           })}
         >
-          <PlayerRow t={t} player={home} />
+          <PlayerRow t={t} player={home} showCountry={showCountry} />
           {!hasSgf && wide && <div className="max-xs:hidden">&ndash;</div>}
-          <PlayerRow t={t} player={away} />
+          <PlayerRow t={t} player={away} showCountry={showCountry} />
         </div>
         {hasProps && <GameActions props={game.props} t={t} showViewer={true} />}
       </div>
@@ -55,9 +56,9 @@ export function Game({ className, game, players, translations, title, wide }: Ga
   );
 }
 
-function PlayerRow({ player, t }: { player: GamePlayer & Player; t: Translator }) {
+function PlayerRow({ player, t, showCountry }: { player: GamePlayer & Player; t: Translator; showCountry?: boolean }) {
   const color = player.color ? <Stone color={player.color} className={`h-4 inline`} /> : '';
-  const name = player.id === 'BYE' ? 'BYE' : <PlayerName player={player} />;
+  const name = player.id === 'BYE' ? 'BYE' : <PlayerName player={player} showCountry={showCountry} />;
 
   return (
     <div className={`flex items-center gap-1 text-l ${player.won ? 'font-bold' : ''}`}>

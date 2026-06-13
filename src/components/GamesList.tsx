@@ -12,7 +12,8 @@ type GamesListProps = {
   tournament: Tournament;
   translations: Translations;
   hideGamesWithoutSgf?: boolean;
-  hasZips?: boolean;
+  showZips?: boolean;
+  showCountry?: boolean;
 };
 
 type GameGroup = {
@@ -22,7 +23,7 @@ type GameGroup = {
   komi?: number;
 };
 
-export function GamesList({ tournament, translations, hideGamesWithoutSgf, hasZips }: GamesListProps) {
+export function GamesList({ tournament, translations, hideGamesWithoutSgf, showZips, showCountry }: GamesListProps) {
   const { stages, games, players } = tournament;
   const t = getTranslator(translations);
   const gamesFilter = hideGamesWithoutSgf ? (game: string) => !!games[game]?.props?.sgf : () => true;
@@ -80,7 +81,7 @@ export function GamesList({ tournament, translations, hideGamesWithoutSgf, hasZi
     <div className="my-4">
       <H2 className="flex items-center justify-between gap-3">
         <span>{t('stage.games')}</span>
-        {hasZips && tournament.hasSgfs && (
+        {showZips && tournament.hasSgfs && (
           <ExternalLink href={Endpoints.GAMES_ZIP(tournament.year)} download title={t('game.downloadAllSgfs')}>
             <Button className="text-sm">ZIP</Button>
           </ExternalLink>
@@ -102,6 +103,7 @@ export function GamesList({ tournament, translations, hideGamesWithoutSgf, hasZi
                 players={players}
                 title={`${t('site.acronym')} ${tournament.year} - ${list.name} - ${t('table.game', String(gameIndex + 1))}`}
                 wide={true}
+                showCountry={showCountry}
               />
             ))}
           </div>

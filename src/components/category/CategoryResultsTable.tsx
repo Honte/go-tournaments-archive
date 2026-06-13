@@ -17,6 +17,7 @@ export type CategoryResultsTableProps = {
   category: string;
   stats: StatsCategory;
   translations: Translations;
+  showCountry?: boolean;
 };
 
 type SummaryRow = {
@@ -29,7 +30,7 @@ type SummaryRow = {
 };
 type MedalKey = KeysMatching<SummaryRow, StatsCategoryPlayer[]>;
 
-export function CategoryResultsTable({ translations, stats }: CategoryResultsTableProps) {
+export function CategoryResultsTable({ translations, stats, showCountry }: CategoryResultsTableProps) {
   const [includeUnsure, setIncludeUnsure] = useState(true);
   const t = getTranslator(translations);
 
@@ -71,12 +72,12 @@ export function CategoryResultsTable({ translations, stats }: CategoryResultsTab
       jsxJoin(
         info.row.original[key].map((p) => (
           <PlayerLink key={p.id} playerId={p.id} locale={translations.locale}>
-            <PlayerName player={p} />
+            <PlayerName player={p} showCountry={showCountry} />
           </PlayerLink>
         )),
         ', '
       ),
-    [translations.locale]
+    [translations.locale, showCountry]
   );
 
   const columns = useMemo(

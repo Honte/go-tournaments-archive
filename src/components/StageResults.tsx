@@ -30,11 +30,13 @@ export function StageResults({ stage, games, players, translations, showCountry 
     case 'ladder-table':
       return <TableLadder stage={stage} players={players} translations={translations} games={games} />;
     case 'final':
-      return <StageFinal stage={stage} translations={translations} players={players} />;
+      return <StageFinal stage={stage} translations={translations} players={players} showCountry={showCountry} />;
     case 'round-robin-table':
       return <TableWithoutRounds stage={stage} players={players} translations={translations} games={games} />;
     case 'classification':
-      return <ClassificationTable stage={stage} players={players} translations={translations} />;
+      return (
+        <ClassificationTable stage={stage} players={players} translations={translations} showCountry={showCountry} />
+      );
     default:
       throw new Error('Unrecognized stage type');
   }

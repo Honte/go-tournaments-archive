@@ -1,5 +1,3 @@
-import EVENT_CONFIG from '@event/config';
-
 export type PlayerDetails = {
   id: string;
   name?: string;
@@ -14,7 +12,7 @@ export type PlayerNameProps = {
   showCountry?: boolean;
 };
 
-export function PlayerName({ player, showRank = true, showCountry = EVENT_CONFIG.showCountry }: PlayerNameProps) {
+export function PlayerName({ player, showRank = true, showCountry = false }: PlayerNameProps) {
   const { name, rank } = player;
 
   if (showCountry) {

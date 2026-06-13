@@ -46,8 +46,18 @@ export default async function CategoryStats({ params }: PageProps) {
     <Content>
       <Title>{name}</Title>
       <div className="flex max-sm:flex-col-reverse gap-4">
-        <CategoryResultsTable category={category} stats={stats} translations={translations} />
-        <CategoryMedalTable category={category} translations={translations} stats={stats} />
+        <CategoryResultsTable
+          category={category}
+          stats={stats}
+          translations={translations}
+          showCountry={EVENT_CONFIG.showCountry}
+        />
+        <CategoryMedalTable
+          category={category}
+          translations={translations}
+          stats={stats}
+          showCountry={EVENT_CONFIG.showCountry}
+        />
       </div>
     </Content>
   );

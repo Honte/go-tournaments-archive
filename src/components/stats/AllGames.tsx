@@ -84,8 +84,8 @@ function AllGamesContent({ games, translations, showCountry }: AllGamesContentPr
               <PlayerCell
                 player={info.row.original.black}
                 locale={translations.locale}
-                includeRank={false}
-                includeCountry={false}
+                showRank={false}
+                showCountry={false}
               />
             ),
           },
@@ -104,8 +104,8 @@ function AllGamesContent({ games, translations, showCountry }: AllGamesContentPr
               <PlayerCell
                 player={info.row.original.white}
                 locale={translations.locale}
-                includeRank={false}
-                includeCountry={false}
+                showRank={false}
+                showCountry={false}
               />
             ),
           },
