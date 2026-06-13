@@ -1,17 +1,18 @@
+import EVENT_CONFIG from '@event/config';
 import '@event/colors.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import { PropsWithChildren } from 'react';
-import { EVENT_LOCALES, isEventLocale } from '@/i18n/locales';
+import { isEventLocale } from '@/i18n/locales';
 import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
 import { Endpoints } from '@/libs/endpoints';
 import { Client } from '@/components/Client';
 import { Footer } from '@/components/Footer';
+import '../globals.css';
 import { Header } from '@/components/Header';
 import { QueryProvider } from '@/components/QueryProvider';
-import '../globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -21,9 +22,11 @@ type RootLayoutProps = PropsWithChildren<{
 
 export async function generateMetadata(props: RootLayoutProps): Promise<Metadata> {
   const { locale } = await props.params;
-  if (!isEventLocale(locale)) {
+
+  if (!isEventLocale(EVENT_CONFIG, locale)) {
     return notFound();
   }
+
   const translations = await loadTranslations(locale);
   const t = getTranslator(translations);
 
@@ -38,14 +41,16 @@ export async function generateMetadata(props: RootLayoutProps): Promise<Metadata
 }
 
 export async function generateStaticParams() {
-  return EVENT_LOCALES.map((locale) => ({ locale }));
+  return EVENT_CONFIG.locales.map((locale) => ({ locale }));
 }
 
 export default async function RootLayout({ params, children }: RootLayoutProps) {
   const { locale } = await params;
-  if (!isEventLocale(locale)) {
+
+  if (!isEventLocale(EVENT_CONFIG, locale)) {
     return notFound();
   }
+
   const translations = await loadTranslations(locale);
 
   return (

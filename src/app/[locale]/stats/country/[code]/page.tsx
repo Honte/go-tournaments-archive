@@ -2,7 +2,6 @@ import EVENT_CONFIG from '@event/config';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import type { Locale } from '@/i18n/consts';
-import { DEFAULT_LOCALE, EVENT_LOCALES } from '@/i18n/locales';
 import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
 import { getAllCountriesStats, getCountryStats } from '@/data';
@@ -59,12 +58,12 @@ export async function generateStaticParams() {
   const codes = Object.keys(countries);
 
   if (!codes.length) {
-    codes.push(DEFAULT_LOCALE);
+    codes.push(EVENT_CONFIG.locales[0]);
   }
 
   return codes
     .map((code) =>
-      EVENT_LOCALES.map((locale) => ({
+      EVENT_CONFIG.locales.map((locale) => ({
         locale,
         code: code.toLowerCase(),
       }))

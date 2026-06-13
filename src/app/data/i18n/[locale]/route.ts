@@ -1,6 +1,7 @@
+import EVENT_CONFIG from '@event/config';
 import { notFound } from 'next/navigation';
 import type { Locale } from '@/i18n/consts';
-import { EVENT_LOCALES, isEventLocale } from '@/i18n/locales';
+import { isEventLocale } from '@/i18n/locales';
 import { loadTranslations } from '@/i18n/server';
 
 type PageProps = {
@@ -14,7 +15,7 @@ export async function GET(_: Request, props: PageProps) {
   const check = localeParam.match(/^([a-z]{2})\.json$/);
   const locale = check?.[1] as Locale | undefined;
 
-  if (!isEventLocale(locale)) {
+  if (!isEventLocale(EVENT_CONFIG, locale)) {
     return notFound();
   }
 
@@ -22,5 +23,5 @@ export async function GET(_: Request, props: PageProps) {
 }
 
 export function generateStaticParams() {
-  return EVENT_LOCALES.map((locale) => ({ locale: `${locale}.json` }));
+  return EVENT_CONFIG.locales.map((locale) => ({ locale: `${locale}.json` }));
 }

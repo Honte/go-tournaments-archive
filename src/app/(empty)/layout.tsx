@@ -1,14 +1,14 @@
+import EVENT_CONFIG from '@event/config';
 import '@event/colors.css';
 import type { Metadata } from 'next';
 import { PropsWithChildren } from 'react';
-import { DEFAULT_LOCALE } from '@/i18n/locales';
 import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
 import { Endpoints } from '@/libs/endpoints';
 import '../globals.css';
 
 export async function generateMetadata(): Promise<Metadata> {
-  const translations = await loadTranslations(DEFAULT_LOCALE);
+  const translations = await loadTranslations(EVENT_CONFIG.locales[0]);
   const t = getTranslator(translations);
 
   return {
@@ -23,7 +23,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function RootLayout({ children }: PropsWithChildren) {
   return (
-    <html className="size-full bg-event-light" lang={DEFAULT_LOCALE}>
+    <html className="size-full bg-event-light" lang={EVENT_CONFIG.locales[0]}>
       <body>{children}</body>
     </html>
   );

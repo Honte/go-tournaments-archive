@@ -5,7 +5,6 @@ import path from 'node:path';
 import fg from 'fast-glob';
 import { notFound } from 'next/navigation';
 import type { NextRequest } from 'next/server';
-import { DEFAULT_LOCALE } from '@/i18n/locales';
 import { loadTranslations } from '@/i18n/server';
 import { generateJpg, generatePng } from '@tools/img';
 import { Sgf } from '@tools/sgf';
@@ -139,7 +138,7 @@ async function getSgf(file: string, raw = false) {
     return content;
   }
 
-  const translations = await loadTranslations(DEFAULT_LOCALE);
+  const translations = await loadTranslations(EVENT_CONFIG.locales[0]);
   const tournaments = await getTournaments();
   const sgfPath = path.posix.join('/sgf', ...path.relative(SGF_DIR, file).split(path.sep));
   const sgfDetails = await loadGameSgfDetails(EVENT_CONFIG, tournaments, sgfPath, translations);
@@ -159,7 +158,7 @@ async function serveZip(year: number) {
     return notFound();
   }
 
-  const translations = await loadTranslations(DEFAULT_LOCALE);
+  const translations = await loadTranslations(EVENT_CONFIG.locales[0]);
   const files = await loadCleanTournamentSgfs(EVENT_CONFIG, tournament, translations);
 
   if (!files.length) {

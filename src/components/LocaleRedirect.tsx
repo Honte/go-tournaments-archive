@@ -1,9 +1,10 @@
 'use client';
 
+import EVENT_CONFIG from '@event/config';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 import type { Locale } from '@/i18n/consts';
-import { DEFAULT_LOCALE, isEventLocale } from '@/i18n/locales';
+import { isEventLocale } from '@/i18n/locales';
 import Loading from '@/app/loading';
 
 function pickLocale(): Locale {
@@ -12,11 +13,12 @@ function pickLocale(): Locale {
   for (const tag of candidates) {
     const primary = tag.split('-')[0]?.toLowerCase();
 
-    if (isEventLocale(primary)) {
+    if (isEventLocale(EVENT_CONFIG, primary)) {
       return primary;
     }
   }
-  return DEFAULT_LOCALE;
+
+  return EVENT_CONFIG.locales[0];
 }
 
 export function LocaleRedirect() {

@@ -1,7 +1,7 @@
+import EVENT_CONFIG from '@event/config';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import type { Locale } from '@/i18n/consts';
-import { EVENT_LOCALES } from '@/i18n/locales';
 import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
 import { getStageName } from '@/libs/stage';
@@ -41,7 +41,7 @@ export async function generateStaticParams() {
 
   return tournaments
     .map((tournament) =>
-      EVENT_LOCALES.map((locale) => ({
+      EVENT_CONFIG.locales.map((locale) => ({
         locale,
         year: String(tournament.year),
       }))

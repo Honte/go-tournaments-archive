@@ -1,5 +1,5 @@
+import EVENT_CONFIG from '@event/config';
 import { notFound } from 'next/navigation';
-import { DEFAULT_LOCALE } from '@/i18n/locales';
 import { getAllCountriesStats, getCountryStats } from '@/data';
 
 type PageProps = {
@@ -31,7 +31,7 @@ export async function generateStaticParams() {
   const codes = Object.keys(countries);
 
   if (!codes.length) {
-    codes.push(DEFAULT_LOCALE);
+    codes.push(EVENT_CONFIG.locales[0]);
   }
 
   return codes.map((code) => ({ code: `${code.toLowerCase()}.json` }));
