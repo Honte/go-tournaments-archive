@@ -1,4 +1,3 @@
-import EVENT from '@event';
 import EVENT_CONFIG from '@event/config';
 import fs from 'node:fs/promises';
 import path from 'node:path';
@@ -14,7 +13,7 @@ import { getTournaments } from '@/data';
 import { loadCleanTournamentSgfs, loadGameSgfDetails } from '@/data/sgfs';
 
 const THUMB_SIZE = 128;
-const SGF_DIR = `./events/${EVENT}/sgf`;
+const SGF_DIR = `./events/${EVENT_CONFIG.id}/sgf`;
 
 type RouteProps = {
   params: Promise<{ path: string[] }>;
@@ -168,7 +167,7 @@ async function serveZip(year: number) {
   return new Response(createZip(files), {
     headers: {
       'Content-Type': 'application/zip',
-      'Content-Disposition': `attachment; filename="${EVENT}-${year}-sgfs.zip"`,
+      'Content-Disposition': `attachment; filename="${EVENT_CONFIG.id}-${year}-sgfs.zip"`,
     },
   });
 }

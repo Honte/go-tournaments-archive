@@ -1,13 +1,12 @@
-import EVENT from '@event';
 import { existsSync } from 'node:fs';
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
+import type { EventConfig } from '@/schema/event';
 
-const DATA_PATH = `./events/${EVENT}/data`;
-
-export async function getTournamentDescription(year: string | number, locale: string) {
-  const translated = join(DATA_PATH, `${year}.${locale}.md`);
-  const generic = join(DATA_PATH, `${year}.md`);
+export async function getTournamentDescription(event: EventConfig, year: string | number, locale: string) {
+  const eventData = `./events/${event.id}/data`;
+  const translated = join(eventData, `${year}.${locale}.md`);
+  const generic = join(eventData, `${year}.md`);
 
   if (existsSync(translated)) {
     return readFile(translated, 'utf-8');

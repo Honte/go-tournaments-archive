@@ -61,7 +61,7 @@ export default async function Edition(props: PageProps) {
   const translations = await loadTranslations(locale);
   const tournament = await getTournament(Number(year));
   const years = await getAvailableTournaments();
-  const description = await getTournamentDescription(year, locale);
+  const description = await getTournamentDescription(EVENT_CONFIG, year, locale);
 
   if (!tournament) {
     return notFound();

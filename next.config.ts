@@ -15,7 +15,6 @@ export default {
 
   turbopack: {
     resolveAlias: {
-      '@event': `./events/index.ts`,
       '@event/schema': `./events/schema.ts`,
       '@event/*': `./events/${EVENT}/*`,
     },
