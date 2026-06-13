@@ -464,6 +464,7 @@ npm run sgf:match:pgc -- -v
 npm run sgf:match:pgc -- -s
 ```
 
+- `-e` / `--event` selects the event to match (by default uses EVENT env var).
 - `-y` / `--year` limits matching to one year.
 - `-d` / `--dry` prints the matching summary without writing YAML. Combine it with `--force` to recheck already matched SGFs.
 - `-f` / `--force` overwrites existing `sgf:` props.
@@ -485,17 +486,14 @@ These scripts are for one-off data maintenance:
 
 ```bash
 npm run extract:mp-db    # Extract PGC data from MySQL and convert to YAML
-npm run build:templates  # Build SGF templates for PGC games
 ```
 
 Relevant tool modules:
 
 - `tools/extract.ts` imports legacy MySQL data.
-- `tools/templates.ts` creates SGF templates.
-- `tools/fix.ts` normalizes SGF property names.
 - `tools/sgfMatcher/` matches SGF files back to games and writes YAML.
 - `tools/sgf/` parses, cleans, and stringifies SGF files before serving.
-- `tools/svg.ts`, `tools/png.ts`, `tools/jpg.ts` generate board previews.
+- `tools/svg.ts`, `tools/img.ts` generate board previews.
 
 ## Adding a new event
 
