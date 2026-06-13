@@ -26,7 +26,7 @@ export function CategoryMedalTable({ category, stats, translations }: CategoryMe
         toKey={(player) => player.id}
         toName={(player) => (
           <PlayerLink playerId={player.id} locale={translations.locale}>
-            <PlayerName player={player} includeRank={false} />
+            <PlayerName player={player} showRank={false} />
           </PlayerLink>
         )}
       />

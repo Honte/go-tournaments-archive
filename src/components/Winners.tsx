@@ -1,4 +1,3 @@
-import EVENT_CONFIG from '@event/config';
 import type { Tournament } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
@@ -10,16 +9,17 @@ import { WinnersTable, type WinnersTableProps } from '@/components/WinnersTable'
 export type WinnersProps = {
   tournaments: Tournament[];
   translations: Translations;
+  categories?: string[];
 };
 
-export function Winners({ tournaments, translations }: WinnersProps) {
+export function Winners({ tournaments, translations, categories }: WinnersProps) {
   const t = getTranslator(translations);
 
   return (
     <div>
       <H1>{t('winners.title')}</H1>
-      {EVENT_CONFIG.categories?.length ? (
-        <CategoryWinners tournaments={tournaments} translations={translations} />
+      {categories?.length ? (
+        <CategoryWinners tournaments={tournaments} translations={translations} categories={categories} />
       ) : (
         <TotalWinners tournaments={tournaments} translations={translations} />
       )}
@@ -27,12 +27,12 @@ export function Winners({ tournaments, translations }: WinnersProps) {
   );
 }
 
-function CategoryWinners({ tournaments, translations }: WinnersProps) {
+function CategoryWinners({ tournaments, translations, categories }: WinnersProps) {
   const t = getTranslator(translations);
 
   return (
     <div className="flex flex-col gap-4">
-      {EVENT_CONFIG.categories?.map((category) => (
+      {categories?.map((category) => (
         <div key={category}>
           <H2>
             <CategoryLink category={category} locale={translations.locale}>

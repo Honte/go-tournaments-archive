@@ -1,4 +1,3 @@
-import EVENT_CONFIG from '@event/config';
 import type { ReactNode } from 'react';
 import type { Tournament } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
@@ -12,9 +11,10 @@ import { Markdown } from '@/components/ui/Markdown';
 type TournamentDetailsProps = {
   tournament: Tournament;
   translations: Translations;
+  showCountry?: boolean;
 };
 
-export function TournamentDetails({ tournament, translations }: TournamentDetailsProps) {
+export function TournamentDetails({ tournament, translations, showCountry }: TournamentDetailsProps) {
   const t = getTranslator(translations);
   const details: Record<string, ReactNode> = {};
 
@@ -27,7 +27,7 @@ export function TournamentDetails({ tournament, translations }: TournamentDetail
     details[t('details.location')] = tournament.location;
   }
 
-  if (tournament.country && EVENT_CONFIG.showCountry) {
+  if (tournament.country && showCountry) {
     details[t('details.country')] = t(`country.${tournament.country}`);
   }
 

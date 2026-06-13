@@ -29,7 +29,7 @@ export default async function Home({ params }: PageProps) {
       <Hero translations={translations} />
       <div className="xl:grid xl:grid-cols-4 xl:gap-4">
         <div className="xl:col-span-3 xl:row-span-5">
-          <Winners translations={translations} tournaments={tournaments} />
+          <Winners translations={translations} tournaments={tournaments} categories={EVENT_CONFIG.categories} />
         </div>
         {EVENT_CONFIG.showCountry && <CountryMedalists countries={countryMedals} translations={translations} />}
         <Medalists translations={translations} players={medalists} />

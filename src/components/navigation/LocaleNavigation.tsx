@@ -1,24 +1,24 @@
 'use client';
 
-import EVENT_CONFIG from '@event/config';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 export type LocaleNavigationProps = {
+  locales: string[];
   locale: string;
 };
 
-export function LocaleNavigation({ locale }: LocaleNavigationProps) {
+export function LocaleNavigation({ locale, locales }: LocaleNavigationProps) {
   const pathname = usePathname();
   const regex = new RegExp(`^/${locale}`);
 
-  if (EVENT_CONFIG.locales.length <= 1) {
+  if (locales.length <= 1) {
     return null;
   }
 
   return (
     <div className="flex gap-3 text-sm text-event-light ml-auto">
-      {EVENT_CONFIG.locales.map((nextLocale) => (
+      {locales.map((nextLocale) => (
         <Link
           key={nextLocale}
           className={nextLocale === locale ? 'font-bold' : 'underline'}

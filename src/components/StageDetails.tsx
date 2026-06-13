@@ -1,4 +1,3 @@
-import EVENT_CONFIG from '@event/config';
 import type { ReactNode } from 'react';
 import type { Stage } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
@@ -12,9 +11,10 @@ import { Markdown } from '@/components/ui/Markdown';
 type StageDetailsProps = {
   stage: Stage;
   translations: Translations;
+  showCountry?: boolean;
 };
 
-export function StageDetails({ stage, translations }: StageDetailsProps) {
+export function StageDetails({ stage, translations, showCountry }: StageDetailsProps) {
   const t = getTranslator(translations);
   const details: Record<string, ReactNode> = {};
 
@@ -32,7 +32,7 @@ export function StageDetails({ stage, translations }: StageDetailsProps) {
     details[t('details.location')] = stage.location;
   }
 
-  if (stage.country && EVENT_CONFIG.showCountry) {
+  if (stage.country && showCountry) {
     details[t('details.country')] = t(`country.${stage.country}`);
   }
 

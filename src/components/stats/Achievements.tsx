@@ -1,4 +1,3 @@
-import EVENT_CONFIG from '@event/config';
 import type { ReactNode } from 'react';
 import type { ApiPlayerStats } from '@/schema/api';
 import type { Translations } from '@/i18n/consts';
@@ -12,18 +11,20 @@ import { YearLink } from '@/components/YearLink';
 type AchievementsProps = {
   player: ApiPlayerStats;
   translations: Translations;
+  categories?: string[];
+  showBestPlace?: boolean;
 };
 
 const MEDALS = ['first', 'second', 'third'] as const;
 
-export function Achievements({ player, translations }: AchievementsProps) {
+export function Achievements({ player, translations, categories, showBestPlace }: AchievementsProps) {
   const t = getTranslator(translations);
   const details: Record<string, ReactNode> = {};
 
   let hasMedals = false;
   for (const [index, medal] of MEDALS.entries()) {
-    if (EVENT_CONFIG.categories?.length) {
-      for (const category of EVENT_CONFIG.categories) {
+    if (categories?.length) {
+      for (const category of categories) {
         const achievements = player.categoriesMedals[category][index];
 
         if (achievements.length) {
@@ -43,7 +44,7 @@ export function Achievements({ player, translations }: AchievementsProps) {
     }
   }
 
-  if (EVENT_CONFIG.showBestPlace && !hasMedals) {
+  if (showBestPlace && !hasMedals) {
     details[t('table.bestPlace')] = player.bestPlace;
   }
 

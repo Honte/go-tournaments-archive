@@ -1,4 +1,3 @@
-import EVENT_CONFIG from '@event/config';
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
 import type { ApiPlayerStats } from '@/schema/api';
@@ -19,6 +18,7 @@ import { YearLink } from '@/components/YearLink';
 type PlayerGamesProps = {
   player: ApiPlayerStats;
   translations: Translations;
+  showCountry?: boolean;
 };
 
 type GameRow = {
@@ -34,7 +34,7 @@ type GameRow = {
   props: GameProps;
 };
 
-export function PlayerGames({ player, translations }: PlayerGamesProps) {
+export function PlayerGames({ player, translations, showCountry }: PlayerGamesProps) {
   const t = getTranslator(translations);
   const data = useMemo(() => {
     const games: GameRow[] = [];
@@ -138,7 +138,7 @@ export function PlayerGames({ player, translations }: PlayerGamesProps) {
             header: t('table.lastName'),
             meta: { skip: true },
           },
-          EVENT_CONFIG.showCountry && {
+          showCountry && {
             accessorKey: 'opponent.country',
             header: t('table.country'),
             cell: (info) => <CountryLink code={info.row.original.opponent.country} translations={translations} />,
@@ -155,7 +155,7 @@ export function PlayerGames({ player, translations }: PlayerGamesProps) {
           },
         ] as ColumnDef<GameRow>[]
       ).filter(Boolean),
-    [t, player.name, translations]
+    [t, player.name, translations, showCountry]
   );
 
   if (!data.length) {

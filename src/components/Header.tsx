@@ -1,15 +1,16 @@
 import Link from 'next/link';
-import type { Translations } from '@/i18n/consts';
+import type { Locale, Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { Endpoints } from '@/libs/endpoints';
 import { LocaleNavigation } from '@/components/navigation/LocaleNavigation';
 import { SideNavigation } from '@/components/navigation/SideNavigation';
 
 type TopBarProps = {
+  locales: Locale[];
   translations: Translations;
 };
 
-export function Header({ translations }: TopBarProps) {
+export function Header({ translations, locales }: TopBarProps) {
   const t = getTranslator(translations);
   const locale = translations.locale;
 
@@ -35,7 +36,7 @@ export function Header({ translations }: TopBarProps) {
             {t('navigation.archiveLabel', t('site.acronym'))}
           </span>
         </Link>
-        <LocaleNavigation locale={locale} />
+        <LocaleNavigation locale={locale} locales={locales} />
       </div>
     </header>
   );

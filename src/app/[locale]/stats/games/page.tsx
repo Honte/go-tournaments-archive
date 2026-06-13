@@ -1,3 +1,4 @@
+import EVENT_CONFIG from '@event/config';
 import type { Metadata } from 'next';
 import type { Locale } from '@/i18n/consts';
 import { loadTranslations } from '@/i18n/server';
@@ -33,7 +34,7 @@ export default async function AllGamesPage({ params }: PageProps) {
   return (
     <Content>
       <Title>{t('site.gamesListTitle')}</Title>
-      <AllGames locale={translations.locale} />
+      <AllGames locale={translations.locale} showCountry={EVENT_CONFIG.showCountry} />
     </Content>
   );
 }

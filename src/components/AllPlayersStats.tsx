@@ -1,6 +1,5 @@
 'use client';
 
-import EVENT_CONFIG from '@event/config';
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
 import type { StatsPlayer, TableStats } from '@/schema/data';
@@ -18,11 +17,15 @@ import { useTranslationsData } from '@/hooks/useTranslationsData';
 type AllPlayersStatsProps = {
   players: Record<string, StatsPlayer>;
   locale: Locale;
+  showBestPlace?: boolean;
+  showCountry?: boolean;
 };
 
 type AllPlayersStatsContentProps = {
   players: Record<string, StatsPlayer>;
   translations: Translations;
+  showBestPlace?: boolean;
+  showCountry?: boolean;
 };
 
 type PlayerRow = TableStats & {
@@ -35,17 +38,24 @@ type PlayerRow = TableStats & {
   sgfs: number;
 };
 
-export function AllPlayersStats({ players, locale }: AllPlayersStatsProps) {
+export function AllPlayersStats({ players, locale, showCountry, showBestPlace }: AllPlayersStatsProps) {
   const { data: translations } = useTranslationsData(locale);
 
   if (!translations) {
     return <Loader />;
   }
 
-  return <AllPlayersStatsContent players={players} translations={translations} />;
+  return (
+    <AllPlayersStatsContent
+      players={players}
+      translations={translations}
+      showCountry={showCountry}
+      showBestPlace={showBestPlace}
+    />
+  );
 }
 
-function AllPlayersStatsContent({ players, translations }: AllPlayersStatsContentProps) {
+function AllPlayersStatsContent({ players, translations, showCountry, showBestPlace }: AllPlayersStatsContentProps) {
   const t = getTranslator(translations);
 
   const data = useMemo(
@@ -107,7 +117,7 @@ function AllPlayersStatsContent({ players, translations }: AllPlayersStatsConten
             header: t('table.lastName'),
             meta: { skip: true },
           },
-          EVENT_CONFIG.showCountry && {
+          showCountry && {
             accessorKey: 'country',
             header: t('table.country'),
             cell: (info) =>
@@ -118,7 +128,7 @@ function AllPlayersStatsContent({ players, translations }: AllPlayersStatsConten
                 ', '
               ),
           },
-          EVENT_CONFIG.showBestPlace && {
+          showBestPlace && {
             accessorKey: 'bestPlace',
             header: t('table.best'),
             cell: toNumeric,
@@ -162,7 +172,7 @@ function AllPlayersStatsContent({ players, translations }: AllPlayersStatsConten
           },
         ] as ColumnDef<PlayerRow>[]
       ).filter(Boolean),
-    [t, translations, hasSgfs]
+    [t, translations, hasSgfs, showCountry, showBestPlace]
   );
 
   return <StatsTable columns={columns} data={data} />;

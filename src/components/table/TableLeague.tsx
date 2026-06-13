@@ -1,6 +1,5 @@
 'use client';
 
-import EVENT_CONFIG from '@event/config';
 import type { Game, LeagueStage, Player } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
@@ -15,9 +14,10 @@ type TableLeagueProps = {
   players: Record<string, Player>;
   games: Record<string, Game>;
   translations: Translations;
+  showCountry?: boolean;
 };
 
-export function TableLeague({ stage, players, games, translations }: TableLeagueProps) {
+export function TableLeague({ stage, players, games, translations, showCountry }: TableLeagueProps) {
   const t = getTranslator(translations);
   const { breakers, table, rounds, customBreakers } = stage;
   const visibleBreakers = (breakers ?? []).filter(
@@ -37,7 +37,7 @@ export function TableLeague({ stage, players, games, translations }: TableLeague
             <th className="p-1">{t('table.place')}</th>
             <th className="p-1 text-left">{t('table.name')}</th>
             <th className="p-1">{t('table.rank')}</th>
-            {EVENT_CONFIG.showCountry && <th className="p-1">{t('table.country')}</th>}
+            {showCountry && <th className="p-1">{t('table.country')}</th>}
             {rounds.map((round, index) => (
               <th className="p-1" key={index}>
                 {t('table.round', String(index + 1))}
@@ -64,7 +64,7 @@ export function TableLeague({ stage, players, games, translations }: TableLeague
                   </PlayerLink>
                 </td>
                 <td className="p-1">{player.rank}</td>
-                {EVENT_CONFIG.showCountry && (
+                {showCountry && (
                   <td className="p-1">
                     <CountryLink code={player.country} translations={translations} />
                   </td>

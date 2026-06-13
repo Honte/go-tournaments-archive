@@ -1,6 +1,5 @@
 'use client';
 
-import EVENT_CONFIG from '@event/config';
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
 import type { StatsCountry, TableStats } from '@/schema/data';
@@ -16,11 +15,13 @@ import { useTranslationsData } from '@/hooks/useTranslationsData';
 type AllCountriesStatsProps = {
   countries: Record<string, StatsCountry>;
   locale: Locale;
+  showBestPlace?: boolean;
 };
 
 type AllCountriesStatsContentProps = {
   countries: Record<string, StatsCountry>;
   translations: Translations;
+  showBestPlace?: boolean;
 };
 
 type CountryRow = TableStats & {
@@ -29,17 +30,17 @@ type CountryRow = TableStats & {
   players: number;
 };
 
-export function AllCountriesStats({ countries, locale }: AllCountriesStatsProps) {
+export function AllCountriesStats({ countries, locale, showBestPlace }: AllCountriesStatsProps) {
   const { data: translations } = useTranslationsData(locale);
 
   if (!translations) {
     return <Loader />;
   }
 
-  return <AllCountriesStatsContent countries={countries} translations={translations} />;
+  return <AllCountriesStatsContent countries={countries} translations={translations} showBestPlace={showBestPlace} />;
 }
 
-function AllCountriesStatsContent({ countries, translations }: AllCountriesStatsContentProps) {
+function AllCountriesStatsContent({ countries, translations, showBestPlace }: AllCountriesStatsContentProps) {
   const t = getTranslator(translations);
 
   const data = useMemo(
@@ -94,7 +95,7 @@ function AllCountriesStatsContent({ countries, translations }: AllCountriesStats
               />
             ),
           },
-          EVENT_CONFIG.showBestPlace && {
+          showBestPlace && {
             accessorKey: 'bestPlace',
             header: t('table.best'),
             cell: toNumeric,
@@ -138,7 +139,7 @@ function AllCountriesStatsContent({ countries, translations }: AllCountriesStats
           },
         ] as ColumnDef<CountryRow>[]
       ).filter(Boolean),
-    [t, translations]
+    [t, translations, showBestPlace]
   );
 
   return <StatsTable columns={columns} data={data} />;

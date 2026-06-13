@@ -10,17 +10,17 @@ export type PlayerDetails = {
 
 export type PlayerNameProps = {
   player: Omit<PlayerDetails, 'id'>;
-  includeRank?: boolean;
-  includeCountry?: boolean;
+  showRank?: boolean;
+  showCountry?: boolean;
 };
 
-export function PlayerName({ player, includeRank = true, includeCountry = EVENT_CONFIG.showCountry }: PlayerNameProps) {
+export function PlayerName({ player, showRank = true, showCountry = EVENT_CONFIG.showCountry }: PlayerNameProps) {
   const { name, rank } = player;
 
-  if (includeCountry) {
+  if (showCountry) {
     const country = getCountry(player);
 
-    if (country && includeRank && rank) {
+    if (country && showRank && rank) {
       return `${name}, ${rank} (${country})`;
     }
 
@@ -29,7 +29,7 @@ export function PlayerName({ player, includeRank = true, includeCountry = EVENT_
     }
   }
 
-  return includeRank && rank ? `${name} (${rank})` : player.name;
+  return showRank && rank ? `${name} (${rank})` : player.name;
 }
 
 function getCountry(player: { country?: string; countries?: Iterable<string> }) {

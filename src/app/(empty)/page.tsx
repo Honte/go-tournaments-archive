@@ -1,5 +1,6 @@
+import EVENT_CONFIG from '@event/config';
 import { LocaleRedirect } from '@/components/LocaleRedirect';
 
 export default function RootPage() {
-  return <LocaleRedirect />;
+  return <LocaleRedirect locales={EVENT_CONFIG.locales} />;
 }

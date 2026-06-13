@@ -48,7 +48,7 @@ export default async function CountryStatsPage({ params }: PageProps) {
   return (
     <Content>
       <Title>{name}</Title>
-      <CountryStats code={code.toUpperCase()} locale={locale} />
+      <CountryStats code={code.toUpperCase()} locale={locale} showBestPlace={EVENT_CONFIG.showBestPlace} />
     </Content>
   );
 }

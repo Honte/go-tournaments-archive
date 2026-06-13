@@ -1,3 +1,4 @@
+import EVENT_CONFIG from '@event/config';
 import type { Metadata } from 'next';
 import type { Locale } from '@/i18n/consts';
 import { loadTranslations } from '@/i18n/server';
@@ -35,7 +36,12 @@ export default async function Stats({ params }: PageProps) {
   return (
     <Content>
       <Title>{t('site.allTimeStatsTitle')}</Title>
-      <AllPlayersStats players={players} locale={locale} />
+      <AllPlayersStats
+        players={players}
+        locale={locale}
+        showCountry={EVENT_CONFIG.showCountry}
+        showBestPlace={EVENT_CONFIG.showBestPlace}
+      />
     </Content>
   );
 }

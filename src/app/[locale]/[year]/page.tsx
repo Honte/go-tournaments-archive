@@ -75,8 +75,13 @@ export default async function Edition(props: PageProps) {
       <TopNavigation locale={locale} years={years} current={Number(year)} />
 
       <div className="sm:flex sm:gap-8 my-1">
-        <TournamentDetails tournament={tournament} translations={translations} />
-        <Awarded tournament={tournament} translations={translations} />
+        <TournamentDetails tournament={tournament} translations={translations} showCountry={EVENT_CONFIG.showCountry} />
+        <Awarded
+          tournament={tournament}
+          translations={translations}
+          categories={EVENT_CONFIG.categories}
+          showCountry={EVENT_CONFIG.showCountry}
+        />
       </div>
 
       <TournamentDescription content={description} />
@@ -87,12 +92,23 @@ export default async function Edition(props: PageProps) {
           <h2 className="text-xl font-bold pb-1 my-2 border-b-event-dark border-b-2">
             {getStageName(stage, translations)}
           </h2>
-          <StageDetails stage={stage} translations={translations} />
-          <StageResults stage={stage} games={games} players={players} translations={translations} />
+          <StageDetails stage={stage} translations={translations} showCountry={EVENT_CONFIG.showCountry} />
+          <StageResults
+            stage={stage}
+            games={games}
+            players={players}
+            translations={translations}
+            showCountry={EVENT_CONFIG.showCountry}
+          />
         </div>
       ))}
 
-      <GamesList tournament={tournament} translations={translations} />
+      <GamesList
+        tournament={tournament}
+        translations={translations}
+        hideGamesWithoutSgf={EVENT_CONFIG.hideGamesWithoutSgf}
+        hasZips={EVENT_CONFIG.generateZips}
+      />
     </>
   );
 }

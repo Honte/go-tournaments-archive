@@ -1,4 +1,3 @@
-import EVENT_CONFIG from '@event/config';
 import { Fragment } from 'react';
 import type { Tournament } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
@@ -11,11 +10,13 @@ import { PlayerName } from '@/components/ui/PlayerName';
 type AwardedProps = {
   tournament: Tournament;
   translations: Translations;
+  categories?: string[];
+  showCountry?: boolean;
 };
 
-export function Awarded({ tournament, translations }: AwardedProps) {
+export function Awarded({ tournament, categories, translations, showCountry }: AwardedProps) {
   const t = getTranslator(translations);
-  const awarded = getAwarded(tournament);
+  const awarded = getAwarded(tournament, categories);
 
   return (
     <div className="flex-1 flex flex-col">
@@ -28,7 +29,7 @@ export function Awarded({ tournament, translations }: AwardedProps) {
                 {jsxJoin(
                   players.map((p) => (
                     <PlayerLink key={p.id} playerId={p.id} locale={translations.locale}>
-                      <PlayerName player={p} />
+                      <PlayerName player={p} showCountry={showCountry} />
                     </PlayerLink>
                   )),
                   ', '
@@ -42,10 +43,10 @@ export function Awarded({ tournament, translations }: AwardedProps) {
   );
 }
 
-function getAwarded(tournament: Tournament) {
+function getAwarded(tournament: Tournament, categories?: string[]) {
   const { top, players, categoriesTop } = tournament;
 
-  if (EVENT_CONFIG.categories?.length && categoriesTop) {
+  if (categories?.length && categoriesTop) {
     return Object.entries(categoriesTop).map(([category, top]) => ({
       category,
       awarded: top.map((ids) => ids.map((id) => players[id])),

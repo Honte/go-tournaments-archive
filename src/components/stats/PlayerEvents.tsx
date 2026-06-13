@@ -1,6 +1,5 @@
 'use client';
 
-import EVENT_CONFIG from '@event/config';
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
 import type { ApiPlayerStats } from '@/schema/api';
@@ -17,6 +16,7 @@ import { YearLink } from '@/components/YearLink';
 type PlayerEventsProps = {
   player: ApiPlayerStats;
   translations: Translations;
+  showCountry?: boolean;
 };
 
 type EventRow = {
@@ -32,7 +32,7 @@ type EventRow = {
   wonPercent: number;
 };
 
-export function PlayerEvents({ player, translations }: PlayerEventsProps) {
+export function PlayerEvents({ player, translations, showCountry }: PlayerEventsProps) {
   const t = getTranslator(translations);
 
   const data = useMemo(() => {
@@ -89,7 +89,7 @@ export function PlayerEvents({ player, translations }: PlayerEventsProps) {
             accessorKey: 'rank',
             header: t('table.rank'),
           },
-          EVENT_CONFIG.showCountry &&
+          showCountry &&
             hasMultipleCountries && {
               accessorKey: 'country',
               header: t('table.country'),
@@ -118,7 +118,7 @@ export function PlayerEvents({ player, translations }: PlayerEventsProps) {
           },
         ] as ColumnDef<EventRow>[]
       ).filter(Boolean),
-    [translations, hasMultipleNames, hasMultipleCountries, t]
+    [translations, hasMultipleNames, hasMultipleCountries, showCountry, t]
   );
 
   return (

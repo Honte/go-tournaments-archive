@@ -12,7 +12,7 @@ export function PlayerCell({ player, locale, includeRank, includeCountry }: Play
   return (
     <div className="text-left">
       <PlayerLink playerId={player.id} locale={locale}>
-        <PlayerName player={player} includeRank={includeRank} includeCountry={includeCountry} />
+        <PlayerName player={player} showRank={includeRank} showCountry={includeCountry} />
       </PlayerLink>
     </div>
   );

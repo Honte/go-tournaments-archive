@@ -58,7 +58,12 @@ export default async function PlayerStatsPage({ params }: PageProps) {
         )}
       </header>
 
-      <Achievements player={player} translations={translations} />
+      <Achievements
+        player={player}
+        translations={translations}
+        categories={EVENT_CONFIG.categories}
+        showBestPlace={EVENT_CONFIG.showBestPlace}
+      />
       <PlayerStats slug={slug} locale={locale} />
     </Content>
   );

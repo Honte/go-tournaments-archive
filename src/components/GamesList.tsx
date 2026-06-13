@@ -1,4 +1,3 @@
-import EVENT_CONFIG from '@event/config';
 import type { Tournament } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
@@ -12,6 +11,8 @@ import { H2 } from '@/components/ui/H2';
 type GamesListProps = {
   tournament: Tournament;
   translations: Translations;
+  hideGamesWithoutSgf?: boolean;
+  hasZips?: boolean;
 };
 
 type GameGroup = {
@@ -21,10 +22,10 @@ type GameGroup = {
   komi?: number;
 };
 
-export function GamesList({ tournament, translations }: GamesListProps) {
+export function GamesList({ tournament, translations, hideGamesWithoutSgf, hasZips }: GamesListProps) {
   const { stages, games, players } = tournament;
   const t = getTranslator(translations);
-  const gamesFilter = EVENT_CONFIG.hideGamesWithoutSgf ? (game: string) => !!games[game]?.props?.sgf : () => true;
+  const gamesFilter = hideGamesWithoutSgf ? (game: string) => !!games[game]?.props?.sgf : () => true;
 
   const list = stages.toReversed().reduce<GameGroup[]>((list, stage) => {
     const name = getStageName(stage, translations);
@@ -79,7 +80,7 @@ export function GamesList({ tournament, translations }: GamesListProps) {
     <div className="my-4">
       <H2 className="flex items-center justify-between gap-3">
         <span>{t('stage.games')}</span>
-        {EVENT_CONFIG.generateZips && tournament.hasSgfs && (
+        {hasZips && tournament.hasSgfs && (
           <ExternalLink href={Endpoints.GAMES_ZIP(tournament.year)} download title={t('game.downloadAllSgfs')}>
             <Button className="text-sm">ZIP</Button>
           </ExternalLink>

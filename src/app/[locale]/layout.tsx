@@ -57,7 +57,7 @@ export default async function RootLayout({ params, children }: RootLayoutProps) 
     <html lang={locale} className="min-h-full bg-event-light">
       <body className={`${inter.className} min-h-dvh flex flex-col text-event-dark`}>
         <QueryProvider>
-          <Header translations={translations} />
+          <Header translations={translations} locales={EVENT_CONFIG.locales} />
           <div className="flex-1 flex flex-col">
             <main className="flex-1 flex flex-col container max-w-(--breakpoint-2xl) mx-auto p-4 w-full">
               {children}

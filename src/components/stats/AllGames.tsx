@@ -1,6 +1,5 @@
 'use client';
 
-import EVENT_CONFIG from '@event/config';
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
 import type { ApiGameInfo } from '@/schema/api';
@@ -18,14 +17,16 @@ import { useTranslationsData } from '@/hooks/useTranslationsData';
 
 type AllGamesProps = {
   locale: Locale;
+  showCountry?: boolean;
 };
 
 type AllGamesContentProps = {
   games: ApiGameInfo[];
   translations: Translations;
+  showCountry?: boolean;
 };
 
-export function AllGames({ locale }: AllGamesProps) {
+export function AllGames({ locale, showCountry }: AllGamesProps) {
   const translationsData = useTranslationsData(locale);
   const gamesData = useGamesData();
 
@@ -37,10 +38,10 @@ export function AllGames({ locale }: AllGamesProps) {
     return <p>No data</p>;
   }
 
-  return <AllGamesContent games={gamesData.data} translations={translationsData.data} />;
+  return <AllGamesContent games={gamesData.data} translations={translationsData.data} showCountry={showCountry} />;
 }
 
-function AllGamesContent({ games, translations }: AllGamesContentProps) {
+function AllGamesContent({ games, translations, showCountry }: AllGamesContentProps) {
   const t = getTranslator(translations);
   const columns = useMemo<ColumnDef<ApiGameInfo>[]>(
     () =>
@@ -92,7 +93,7 @@ function AllGamesContent({ games, translations }: AllGamesContentProps) {
             accessorKey: 'black.rank',
             header: t('table.rank'),
           },
-          EVENT_CONFIG.showCountry && {
+          showCountry && {
             accessorKey: 'black.country',
             header: t('table.country'),
           },
@@ -112,7 +113,7 @@ function AllGamesContent({ games, translations }: AllGamesContentProps) {
             accessorKey: 'white.rank',
             header: t('table.rank'),
           },
-          EVENT_CONFIG.showCountry && {
+          showCountry && {
             accessorKey: 'white.country',
             header: t('table.country'),
           },
@@ -132,7 +133,7 @@ function AllGamesContent({ games, translations }: AllGamesContentProps) {
           },
         ] as ColumnDef<ApiGameInfo>[]
       ).filter(Boolean),
-    [t, translations.locale]
+    [t, translations.locale, showCountry]
   );
 
   return <StatsTable data={games} columns={columns} />;

@@ -1,4 +1,3 @@
-import EVENT_CONFIG from '@event/config';
 import type { ReactNode } from 'react';
 import type { StatsCountry } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
@@ -11,11 +10,12 @@ import { YearLink } from '@/components/YearLink';
 type CountryAchievementsProps = {
   country: StatsCountry;
   translations: Translations;
+  showBestPlace?: boolean;
 };
 
 const MEDALS = ['first', 'second', 'third'] as const;
 
-export function CountryAchievements({ country, translations }: CountryAchievementsProps) {
+export function CountryAchievements({ country, translations, showBestPlace }: CountryAchievementsProps) {
   const t = getTranslator(translations);
   const details: Record<string, ReactNode> = {};
 
@@ -33,7 +33,7 @@ export function CountryAchievements({ country, translations }: CountryAchievemen
     }
   }
 
-  if (EVENT_CONFIG.showBestPlace && !hasMedals) {
+  if (showBestPlace && !hasMedals) {
     details[t('table.bestPlace')] = country.bestPlace;
   }
 

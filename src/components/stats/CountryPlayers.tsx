@@ -1,6 +1,5 @@
 'use client';
 
-import EVENT_CONFIG from '@event/config';
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
 import type { StatsCountry, TableStats } from '@/schema/data';
@@ -15,6 +14,7 @@ import { PlayerLink } from '@/components/ui/PlayerLink';
 type CountryPlayerProps = {
   country: StatsCountry;
   translations: Translations;
+  showBestPlace?: boolean;
 };
 
 type CountryPlayerRow = TableStats & {
@@ -22,7 +22,7 @@ type CountryPlayerRow = TableStats & {
   name: string;
 };
 
-export function CountryPlayers({ country, translations }: CountryPlayerProps) {
+export function CountryPlayers({ country, translations, showBestPlace }: CountryPlayerProps) {
   const t = getTranslator(translations);
 
   const data = useMemo(() => {
@@ -85,7 +85,7 @@ export function CountryPlayers({ country, translations }: CountryPlayerProps) {
               </PlayerLink>
             ),
           },
-          EVENT_CONFIG.showBestPlace && {
+          showBestPlace && {
             accessorKey: 'bestPlace',
             header: t('table.best'),
             cell: toNumeric,
@@ -125,7 +125,7 @@ export function CountryPlayers({ country, translations }: CountryPlayerProps) {
           },
         ] as ColumnDef<CountryPlayerRow>[]
       ).filter(Boolean),
-    [translations, t]
+    [translations, t, showBestPlace]
   );
 
   return (

@@ -13,14 +13,16 @@ import { useTranslationsData } from '@/hooks/useTranslationsData';
 type CountryStatsProps = {
   code: string;
   locale: Locale;
+  showBestPlace?: boolean;
 };
 
 type CountryStatsContentProps = {
   country: StatsCountry;
   translations: Translations;
+  showBestPlace?: boolean;
 };
 
-export function CountryStats({ code, locale }: CountryStatsProps) {
+export function CountryStats({ code, locale, showBestPlace }: CountryStatsProps) {
   const { data: translations } = useTranslationsData(locale);
   const { data: country } = useCountryStatsData(code);
 
@@ -28,14 +30,14 @@ export function CountryStats({ code, locale }: CountryStatsProps) {
     return <Loader />;
   }
 
-  return <CountryStatsContent country={country} translations={translations} />;
+  return <CountryStatsContent country={country} translations={translations} showBestPlace={showBestPlace} />;
 }
 
-function CountryStatsContent({ country, translations }: CountryStatsContentProps) {
+function CountryStatsContent({ country, translations, showBestPlace }: CountryStatsContentProps) {
   return (
     <div className="flex flex-col gap-2">
-      <CountryAchievements country={country} translations={translations} />
-      <CountryPlayers country={country} translations={translations} />
+      <CountryAchievements country={country} translations={translations} showBestPlace={showBestPlace} />
+      <CountryPlayers country={country} translations={translations} showBestPlace={showBestPlace} />
       <CountryEvents country={country} translations={translations} />
       <CountryOpponents country={country} translations={translations} />
     </div>
