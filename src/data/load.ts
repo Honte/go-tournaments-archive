@@ -1,4 +1,5 @@
 import EVENT from '@event';
+import EVENT_CONFIG from '@event/config';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import fg from 'fast-glob';
@@ -82,6 +83,24 @@ export async function loadData() {
 
     if (!tournamentDetails.location) {
       tournamentDetails.location = Array.from(stageLocations).join(', ');
+    }
+
+    for (const gameId in games) {
+      const game = games[gameId];
+
+      if (game.props.sgf) {
+        if (EVENT_CONFIG.generatePngs) {
+          game.props.png = game.props.sgf.replace('.sgf', '.png');
+        }
+
+        if (EVENT_CONFIG.generateSvgs) {
+          game.props.svg = game.props.sgf.replace('.sgf', '.svg');
+        }
+
+        if (EVENT_CONFIG.generateJpgs) {
+          game.props.jpg = game.props.sgf.replace('.sgf', '.jpg');
+        }
+      }
     }
 
     tournaments.push({

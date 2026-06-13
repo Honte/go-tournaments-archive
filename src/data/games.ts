@@ -1,4 +1,3 @@
-import EVENT_CONFIG from '@event/config';
 import type { Game, GamePlayer, GamePropsArrayKey } from '@/schema/data';
 import { Sgf, type SgfRotation } from '@tools/sgf';
 
@@ -87,18 +86,6 @@ export function parseGame(string: string, id: string, strict = true): Game {
 
       if (type === 'sgf') {
         value = `/sgf/${value}`;
-
-        if (EVENT_CONFIG.generatePngs) {
-          game.props.png = value.replace('.sgf', '.png');
-        }
-
-        if (EVENT_CONFIG.generateSvgs) {
-          game.props.svg = value.replace('.sgf', '.svg');
-        }
-
-        if (EVENT_CONFIG.generateJpgs) {
-          game.props.jpg = value.replace('.sgf', '.jpg');
-        }
       }
 
       if (ARRAY_PROPS.includes(type as GamePropsArrayKey) && value.indexOf(',') > 0) {
