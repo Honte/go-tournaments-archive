@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import type { Game, Player, Tournament, TournamentDetails } from '@/schema/data';
+import type { EventConfig } from '@/schema/event';
 import { loadClassificationStage } from '@/data/classification';
 import { createPlayersHandler } from '@/data/players';
 import { calculateStats } from '@/data/stats';
@@ -34,7 +35,7 @@ describe('calculateStats', () => {
       },
     };
 
-    const stats = calculateStats([createTournament(players, games)], playersHandler);
+    const stats = calculateStats(creteEventConfig(), [createTournament(players, games)], playersHandler);
 
     assert.deepEqual(
       stats.players[players.a.id].results.map((result) => result.stage.name),
@@ -91,6 +92,13 @@ describe('loadClassificationStage', () => {
     assert.deepEqual(tournamentDetails.top, [['explicit-winner']]);
   });
 });
+
+function creteEventConfig(): EventConfig {
+  return {
+    id: 'test',
+    locales: ['en'],
+  };
+}
 
 function createTournament(players: Record<string, Player>, games: Record<string, Game>): Tournament {
   return {

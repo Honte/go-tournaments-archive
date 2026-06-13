@@ -1,5 +1,5 @@
 import { readFile } from 'node:fs/promises';
-import type { LogoProps } from '../schema';
+import type { LogoProps } from '@/schema/event';
 
 export async function Logo({ mode: _mode, ...props }: LogoProps) {
   const logo = await readFile('./events/hrgc/logo.png', 'base64');

@@ -75,7 +75,6 @@ export function parseGame(string: string, id: string, strict = true): Game {
     players: homePlayer.color === 'white' ? [awayPlayer, homePlayer] : [homePlayer, awayPlayer],
     result,
     props: {},
-    rotation: 0,
   };
 
   if (props?.length) {

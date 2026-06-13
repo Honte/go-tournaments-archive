@@ -3,7 +3,7 @@ import { NORMALIZED_BASE_PATH } from '@/basePath';
 
 type FrontendEndpointsConfig = {
   basePath: string;
-  domain: string;
+  domain?: string;
 };
 
 export const Endpoints = createEndpoints({

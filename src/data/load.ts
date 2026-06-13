@@ -1,17 +1,16 @@
-import EVENT from '@event';
-import EVENT_CONFIG from '@event/config';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import fg from 'fast-glob';
 import { parse } from 'yaml';
 import { Game, type Player, Tournament, TournamentDateSpan, TournamentDetails } from '@/schema/data';
+import type { EventConfig } from '@/schema/event';
 import { InputTournament } from '@/schema/input';
 import { parseTop } from '@/libs/stage';
 import { createPlayersHandler } from '@/data/players';
 import { parseStage } from '@/data/stages';
 
-export async function loadData() {
-  const files = await fg.glob(`./events/${EVENT}/data/*.yml`);
+export async function loadData(event: EventConfig) {
+  const files = await fg.glob(`./events/${event.id}/data/*.yml`);
   const playersHandler = createPlayersHandler();
   const tournaments: Tournament[] = [];
 
@@ -39,7 +38,7 @@ export async function loadData() {
     if (json.stages?.length) {
       for (const stageJson of json.stages) {
         try {
-          const stage = await parseStage(stageJson, players, games, tournamentDetails, playersHandler);
+          const stage = await parseStage(event, stageJson, players, games, tournamentDetails, playersHandler);
 
           if (stage.date) {
             dates.push(...stage.date);
@@ -89,15 +88,17 @@ export async function loadData() {
       const game = games[gameId];
 
       if (game.props.sgf) {
-        if (EVENT_CONFIG.generatePngs) {
+        game.path = `./events/${event.id}/sgf/${game.props.sgf}`;
+
+        if (event.generatePngs) {
           game.props.png = game.props.sgf.replace('.sgf', '.png');
         }
 
-        if (EVENT_CONFIG.generateSvgs) {
+        if (event.generateSvgs) {
           game.props.svg = game.props.sgf.replace('.sgf', '.svg');
         }
 
-        if (EVENT_CONFIG.generateJpgs) {
+        if (event.generateJpgs) {
           game.props.jpg = game.props.sgf.replace('.sgf', '.jpg');
         }
       }

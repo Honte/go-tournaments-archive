@@ -1,5 +1,5 @@
-import EVENT_CONFIG from '@event/config';
 import type { TournamentItem } from '@/schema/data';
+import type { EventConfig } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 
@@ -17,7 +17,7 @@ export type NavigationGroup = {
   indented?: boolean;
 };
 
-export function getSitemap(tournaments: TournamentItem[], translations: Translations) {
+export function getSitemap(event: EventConfig, tournaments: TournamentItem[], translations: Translations) {
   const locale = translations.locale;
   const t = getTranslator(translations);
 
@@ -36,7 +36,7 @@ export function getSitemap(tournaments: TournamentItem[], translations: Translat
     },
   ];
 
-  if (EVENT_CONFIG.showCountry) {
+  if (event.showCountry) {
     main.push({
       key: 'countries',
       href: `/${locale}/stats/country`,
@@ -54,12 +54,12 @@ export function getSitemap(tournaments: TournamentItem[], translations: Translat
 
   groups.push({ key: 'main', links: main });
 
-  if (EVENT_CONFIG.categories?.length) {
+  if (event.categories?.length) {
     groups.push({
       key: 'categories',
       label: t('navigation.categories'),
       indented: true,
-      links: EVENT_CONFIG.categories.map((category) => ({
+      links: event.categories.map((category) => ({
         key: `category-${category}`,
         href: `/${locale}/category/${category}`,
         label: t(`categories.short.${category}`),
@@ -74,7 +74,7 @@ export function getSitemap(tournaments: TournamentItem[], translations: Translat
       indented: true,
       links: tournaments.toReversed().map((tournament) => {
         const location =
-          EVENT_CONFIG.showCountry && tournament.country
+          event.showCountry && tournament.country
             ? `${tournament.location}, ${tournament.country}`
             : tournament.location;
 

@@ -180,6 +180,7 @@ export type Game = {
   players: [black: GamePlayer, white: GamePlayer];
   result: string;
   props: GameProps;
+  path?: string;
   rotation?: SgfRotation;
 };
 

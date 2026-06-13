@@ -1,9 +1,10 @@
+import EVENT_CONFIG from '@event/config';
 import type { ApiPlayerResult, ApiPlayerStats } from '@/schema/api';
 import { loadData } from '@/data/load';
 import { calculateStats } from '@/data/stats';
 
-const { tournaments, playersHandler } = await loadData();
-const stats = calculateStats(tournaments, playersHandler);
+const { tournaments, playersHandler } = await loadData(EVENT_CONFIG);
+const stats = calculateStats(EVENT_CONFIG, tournaments, playersHandler);
 
 export async function getTournaments() {
   return tournaments;

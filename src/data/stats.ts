@@ -1,4 +1,3 @@
-import EVENT_CONFIG from '@event/config';
 import type {
   Game,
   Player,
@@ -13,16 +12,17 @@ import type {
   StatsPlayerResult,
   Tournament,
 } from '@/schema/data';
+import type { EventConfig } from '@/schema/event';
 import type { PlayersHandler } from '@/data/players';
 
-export function calculateStats(tournaments: Tournament[], playersHandler: PlayersHandler): Stats {
+export function calculateStats(event: EventConfig, tournaments: Tournament[], playersHandler: PlayersHandler): Stats {
   const players: Record<string, StatsPlayer> = {};
   const countries: Record<string, StatsCountry> = {};
   const categories: Record<string, StatsCategory> = {};
   const games: Record<string, Game> = {};
 
-  if (EVENT_CONFIG.categories?.length) {
-    for (const category of EVENT_CONFIG.categories) {
+  if (event.categories?.length) {
+    for (const category of event.categories) {
       categories[category] = {
         tournaments: [],
         category,
@@ -123,8 +123,8 @@ export function calculateStats(tournaments: Tournament[], playersHandler: Player
           });
         }
 
-        if (EVENT_CONFIG.categories?.length) {
-          for (const category of EVENT_CONFIG.categories) {
+        if (event.categories?.length) {
+          for (const category of event.categories) {
             if ('categories' in player && player?.categories?.[category]) {
               (tournamentCategories[category] ||= []).push({
                 id: globalPlayer.id,
@@ -139,8 +139,8 @@ export function calculateStats(tournaments: Tournament[], playersHandler: Player
       }
     }
 
-    if (EVENT_CONFIG.categories?.length) {
-      for (const category of EVENT_CONFIG.categories) {
+    if (event.categories?.length) {
+      for (const category of event.categories) {
         upsertMedals(year, tournamentPlayers, categoriesTop?.[category], category);
       }
 
@@ -261,7 +261,7 @@ export function calculateStats(tournaments: Tournament[], playersHandler: Player
       egd: playerData?.egd,
       name: playerData?.lastUsedName,
       medals: [[], [], []],
-      categoriesMedals: (EVENT_CONFIG.categories || []).reduce<Record<string, StatsMedals>>((acc, category) => {
+      categoriesMedals: (event.categories || []).reduce<Record<string, StatsMedals>>((acc, category) => {
         acc[category] = [[], [], []];
 
         return acc;

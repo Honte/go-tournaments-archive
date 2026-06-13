@@ -1,4 +1,4 @@
-import type { LogoProps } from '../schema';
+import type { LogoProps } from '@/schema/event';
 
 const STROKE_WHEN_SAME = 1.587;
 const STROKE_WHEN_DIFFERENT = 3.175;

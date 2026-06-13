@@ -142,7 +142,7 @@ async function getSgf(file: string, raw = false) {
   const translations = await loadTranslations(DEFAULT_LOCALE);
   const tournaments = await getTournaments();
   const sgfPath = path.posix.join('/sgf', ...path.relative(SGF_DIR, file).split(path.sep));
-  const sgfDetails = await loadGameSgfDetails(tournaments, sgfPath, translations);
+  const sgfDetails = await loadGameSgfDetails(EVENT_CONFIG, tournaments, sgfPath, translations);
 
   if (!sgfDetails) {
     throw new Error(`Could not find game for ${sgfPath}`);
@@ -160,7 +160,7 @@ async function serveZip(year: number) {
   }
 
   const translations = await loadTranslations(DEFAULT_LOCALE);
-  const files = await loadCleanTournamentSgfs(tournament, translations);
+  const files = await loadCleanTournamentSgfs(EVENT_CONFIG, tournament, translations);
 
   if (!files.length) {
     return notFound();

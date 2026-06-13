@@ -1,5 +1,3 @@
-import { normalizeRank } from '@/libs/rank';
-
 const PROPERTY_REGEX = /(?<key>[A-Z]+)\[(?<value>.*)]/;
 const GAME_REGEX = /(?<opponent>\d+)(?<result>[+=-])(?<modifier>!)?(\/(?<color>[wb])(?<handicap>\d)?)?/;
 const FIRST_GAME_COLUMN = 6; // after place, surname, name, rank, country, club
@@ -120,7 +118,7 @@ export function parseH9(input: string): H9Tournament {
       place: Number(place),
       name: name.replace(/_/g, ' '),
       surname: surname.replace(/_/g, ' '),
-      rank: normalizeRank(rank),
+      rank: rank?.toLowerCase(),
       country,
       club,
       games,

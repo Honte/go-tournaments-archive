@@ -1,19 +1,3 @@
-import EVENT_CONFIG from '@event/config';
-
-export function normalizeRank(rank?: string) {
-  if (!rank) {
-    return undefined;
-  }
-
-  const normalized = rank.toLowerCase();
-
-  if (EVENT_CONFIG?.unknownRanks?.includes(normalized)) {
-    return undefined;
-  }
-
-  return normalized;
-}
-
 export function getRankValue(rank?: string) {
   if (!rank) {
     return 0;

@@ -1,4 +1,5 @@
 import EVENT from '@event';
+import EVENT_CONFIG from '@event/config';
 import { mkdir, rm, writeFile } from 'node:fs/promises';
 import { availableParallelism } from 'node:os';
 import path from 'node:path';
@@ -6,7 +7,7 @@ import { fileURLToPath } from 'node:url';
 import Piscina from 'piscina';
 import { EVENT_LOCALES } from '@/i18n/locales';
 import { loadTranslations } from '@/i18n/server';
-import type { BuildSgfResponse, BuildSgfRequest } from '@tools/assets/sgf';
+import type { BuildSgfRequest, BuildSgfResponse } from '@tools/assets/sgf';
 import { createZipBuffer } from '@/libs/zip';
 import { getTournaments } from '@/data';
 import { getGameStage } from '@/data/sgfs';
@@ -41,6 +42,7 @@ export async function buildAssets() {
       }
 
       sgfTasks.push({
+        event: EVENT_CONFIG,
         sgfDir,
         outputDir: PUBLIC_SGF_DIR,
         game,

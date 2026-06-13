@@ -1,3 +1,4 @@
+import EVENT_CONFIG from '@event/config';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -9,7 +10,7 @@ const TEMPLATES_DIR = join(__dirname, '../templates');
 buildTemplates();
 
 async function buildTemplates() {
-  const { tournaments } = await loadData();
+  const { tournaments } = await loadData(EVENT_CONFIG);
 
   for (const tournament of tournaments) {
     const { players, games, stages, year, location } = tournament;
