@@ -8,6 +8,7 @@ import { InputTournament } from '@/schema/input';
 import { parseTop } from '@/libs/stage';
 import { createPlayersHandler } from '@/data/players';
 import { parseStage } from '@/data/stages';
+import { calculateStats } from '@/data/stats';
 
 export async function loadData(event: EventConfig) {
   const files = await fg.glob(`./events/${event.id}/data/*.yml`);
@@ -120,6 +121,7 @@ export async function loadData(event: EventConfig) {
   return {
     tournaments,
     playersHandler,
+    stats: calculateStats(event, tournaments, playersHandler),
   };
 }
 

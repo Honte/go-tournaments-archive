@@ -1,10 +1,8 @@
 import EVENT_CONFIG from '@event/config';
 import type { ApiPlayerResult, ApiPlayerStats } from '@/schema/api';
 import { loadData } from '@/data/load';
-import { calculateStats } from '@/data/stats';
 
-const { tournaments, playersHandler } = await loadData(EVENT_CONFIG);
-const stats = calculateStats(EVENT_CONFIG, tournaments, playersHandler);
+const { tournaments, stats } = await loadData(EVENT_CONFIG);
 
 export async function getTournaments() {
   return tournaments;
@@ -19,7 +17,7 @@ export async function getTournamentList() {
     year: t.year,
     location: t.location,
     country: t.country,
-    hasSgfs: Object.values(t.games).some((game) => game.props.sgf),
+    hasSgfs: t.hasSgfs,
   }));
 }
 
