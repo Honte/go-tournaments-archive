@@ -1,4 +1,4 @@
-import type { LogoProps } from '@event/schema';
+import type { LogoProps } from '../schema';
 
 export function Logo({ color = 'black', mode, ...props }: LogoProps) {
   const viewBox = mode === 'logo' ? '0 0 200 48' : '-4 -4 56 56';

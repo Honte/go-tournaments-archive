@@ -1,5 +1,5 @@
-import type { LogoProps } from '@event/schema';
 import { readFile } from 'node:fs/promises';
+import type { LogoProps } from '../schema';
 
 export async function Logo({ mode, ...props }: LogoProps) {
   if (mode === 'favicon' || props.color === 'white') {

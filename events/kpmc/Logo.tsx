@@ -1,4 +1,4 @@
-import type { LogoProps } from '@event/schema';
+import type { LogoProps } from '../schema';
 
 export function Logo({ mode = 'logo', ...props }: LogoProps) {
   const faviconProps = mode === 'favicon' ? { width: 120, height: 75.742 } : {};
