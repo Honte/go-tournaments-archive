@@ -206,7 +206,7 @@ export type GameProps = {
 export type GamePropsArrayKey = KeysMatching<GameProps, string[]>;
 export type StatsMedals = [gold: string[], silver: string[], bronze: string[]];
 
-export type StatsPlayerGame = {
+export type PlayerGame = {
   id: string; // opponent id
   country?: string; // opponent country
   rank?: string; // opponent rank
@@ -216,53 +216,56 @@ export type StatsPlayerGame = {
   props?: GameProps;
 };
 
-export type StatsPlayerResult = {
-  year: number;
-  stage: Pick<Stage, 'name' | 'type'>;
-  place: number;
-  finalPlace: number;
-  games: StatsPlayerGame[];
-  won: number;
-  name: string;
-  rank: string;
-  country?: string;
-};
-
-export type StatsPlayer = {
+export type PlayerStats = {
   id: string;
   egd?: number;
   name: string;
-  countries: string[];
   medals: StatsMedals;
   categoriesMedals: Record<string, StatsMedals>;
-  years: number[];
-  results: StatsPlayerResult[];
-  score: number;
+  country: string[];
+  results: PlayerResult[];
   bestPlace: number;
   totalGames: number;
   totalWon: number;
-  sgfs: number;
+  totalAttended: number;
+  totalSgfs: number;
+  opponents: Record<string, string>;
+  score: number;
 };
 
-export type StatsCountryResult = {
+export type PlayerResult = {
+  year: number;
+  place: number;
+  name: string;
+  rank?: string;
+  country?: string;
+  stages: PlayerStageResult[];
+};
+
+export type PlayerStageResult = Pick<Stage, 'name' | 'type'> & {
+  place: number;
+  games: PlayerGame[];
+};
+
+export type CountryResult = {
   year: number;
   bestPlace: number;
   totalWon: number;
   totalGames: number;
-  results: (StatsPlayerResult & { id: string; name: string })[];
+  results: (PlayerResult & { id: string })[];
 };
 
-export type StatsCountry = {
+export type CountryStats = {
   country: string;
   medals: StatsMedals;
   score: number;
-  years: Record<number, StatsCountryResult>;
+  years: Record<number, CountryResult>;
   bestPlace: number;
   totalGames: number;
   totalWon: number;
 };
 
-export type StatsCategoryPlayer = {
+export type CategoryPlayer = {
   id: string;
   name: string;
   rank: string;
@@ -270,20 +273,20 @@ export type StatsCategoryPlayer = {
   place: number | '?';
 };
 
-export type StatsCategory = {
+export type CategoryStats = {
   category: string;
   tournaments: {
     year: number;
-    results: StatsCategoryPlayer[];
+    results: CategoryPlayer[];
   }[];
 };
 
 export type Stats = {
   summary: StatsSummary;
   games: Record<string, Game>;
-  players: Record<string, StatsPlayer>;
-  countries: Record<string, StatsCountry>;
-  categories: Record<string, StatsCategory>;
+  players: Record<string, PlayerStats>;
+  countries: Record<string, CountryStats>;
+  categories: Record<string, CategoryStats>;
 };
 
 export type StatsSummary = {

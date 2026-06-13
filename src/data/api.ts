@@ -1,5 +1,5 @@
-import type { ApiGameInfo, ApiPlayerStats } from '@/schema/api';
-import type { StatsCountry } from '@/schema/data';
+import type { ApiGameInfo } from '@/schema/api';
+import type { PlayerStats, CountryStats } from '@/schema/data';
 import type { Locale, Translations } from '@/i18n/consts';
 import { Endpoints } from '@/libs/endpoints';
 import type { NavigationGroup } from '@/data/sitemap';
@@ -9,11 +9,11 @@ export function fetchTranslations(locale: Locale) {
 }
 
 export function fetchPlayerStats(slug: string) {
-  return get<ApiPlayerStats>(Endpoints.PLAYER_STATS(slug));
+  return get<PlayerStats>(Endpoints.PLAYER_STATS(slug));
 }
 
 export function fetchCountryStats(code: string) {
-  return get<StatsCountry>(Endpoints.COUNTRY_STATS(code));
+  return get<CountryStats>(Endpoints.COUNTRY_STATS(code));
 }
 
 export function fetchSitemap(locale: Locale) {

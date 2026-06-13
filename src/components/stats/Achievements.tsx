@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import type { ApiPlayerStats } from '@/schema/api';
+import type { PlayerStats } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
@@ -9,7 +9,7 @@ import { H2 } from '@/components/ui/H2';
 import { YearLink } from '@/components/YearLink';
 
 type AchievementsProps = {
-  player: ApiPlayerStats;
+  player: PlayerStats;
   translations: Translations;
   categories?: string[];
   showBestPlace?: boolean;

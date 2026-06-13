@@ -2,8 +2,7 @@
 
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
-import type { ApiPlayerStats } from '@/schema/api';
-import type { Stage } from '@/schema/data';
+import type { PlayerStats, Stage } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { getStageName } from '@/libs/stage';
@@ -14,7 +13,7 @@ import { H2 } from '@/components/ui/H2';
 import { YearLink } from '@/components/YearLink';
 
 type PlayerEventsProps = {
-  player: ApiPlayerStats;
+  player: PlayerStats;
   translations: Translations;
   showCountry?: boolean;
 };
@@ -23,7 +22,7 @@ type EventRow = {
   year: number;
   stage: Pick<Stage, 'name' | 'type'>;
   name: string;
-  rank: string;
+  rank?: string;
   place: number;
   games: number;
   country?: string;

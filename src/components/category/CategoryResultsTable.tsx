@@ -1,7 +1,7 @@
 'use client';
 import type { ColumnDef, SortingFn } from '@tanstack/react-table';
 import { useCallback, useMemo, useState } from 'react';
-import type { StatsCategory, StatsCategoryPlayer } from '@/schema/data';
+import type { CategoryStats, CategoryPlayer } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
@@ -15,20 +15,20 @@ import { YearLink } from '@/components/YearLink';
 
 export type CategoryResultsTableProps = {
   category: string;
-  stats: StatsCategory;
+  stats: CategoryStats;
   translations: Translations;
   showCountry?: boolean;
 };
 
 type SummaryRow = {
   year: number;
-  gold: StatsCategoryPlayer[];
-  silver: StatsCategoryPlayer[];
-  bronze: StatsCategoryPlayer[];
+  gold: CategoryPlayer[];
+  silver: CategoryPlayer[];
+  bronze: CategoryPlayer[];
   players: number;
   hasUnsure?: boolean;
 };
-type MedalKey = KeysMatching<SummaryRow, StatsCategoryPlayer[]>;
+type MedalKey = KeysMatching<SummaryRow, CategoryPlayer[]>;
 
 export function CategoryResultsTable({ translations, stats, showCountry }: CategoryResultsTableProps) {
   const [includeUnsure, setIncludeUnsure] = useState(true);
@@ -38,7 +38,7 @@ export function CategoryResultsTable({ translations, stats, showCountry }: Categ
     const result: SummaryRow[] = [];
 
     for (const tournament of stats.tournaments) {
-      const byPlace: Partial<Record<StatsCategoryPlayer['place'], StatsCategoryPlayer[]>> = {};
+      const byPlace: Partial<Record<CategoryPlayer['place'], CategoryPlayer[]>> = {};
 
       for (const player of tournament.results) {
         (byPlace[player.place] ||= []).push(player);

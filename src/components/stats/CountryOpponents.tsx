@@ -2,7 +2,7 @@
 
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
-import type { StatsCountry } from '@/schema/data';
+import type { CountryStats } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { toPercentage } from '@/libs/table';
@@ -11,7 +11,7 @@ import { CountryLink } from '@/components/ui/CountryLink';
 import { H2 } from '@/components/ui/H2';
 
 type CountryOpponentsProps = {
-  country: StatsCountry;
+  country: CountryStats;
   translations: Translations;
 };
 
@@ -34,22 +34,24 @@ export function CountryOpponents({ country, translations }: CountryOpponentsProp
       const yearData = country.years[year];
 
       for (const result of yearData.results) {
-        for (const game of result.games) {
-          if (!game.country) {
-            continue;
+        for (const stage of result.stages) {
+          for (const game of stage.games) {
+            if (!game.country) {
+              continue;
+            }
+
+            const target = (countries[game.country] ||= {
+              code: game.country,
+              name: t(`country.${game.country}`),
+              games: 0,
+              won: 0,
+              lost: 0,
+              wonPercent: 0,
+            });
+
+            target.games++;
+            target.won += Number(game.won);
           }
-
-          const target = (countries[game.country] ||= {
-            code: game.country,
-            name: t(`country.${game.country}`),
-            games: 0,
-            won: 0,
-            lost: 0,
-            wonPercent: 0,
-          });
-
-          target.games++;
-          target.won += Number(game.won);
         }
       }
     }

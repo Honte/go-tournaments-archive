@@ -1,7 +1,6 @@
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
-import type { ApiPlayerStats } from '@/schema/api';
-import type { GameProps } from '@/schema/data';
+import type { GameProps, PlayerStats } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { Endpoints } from '@/libs/endpoints';
@@ -16,7 +15,7 @@ import { GameViewerTrigger } from '@/components/viewer/GameViewerTrigger';
 import { YearLink } from '@/components/YearLink';
 
 type PlayerGamesProps = {
-  player: ApiPlayerStats;
+  player: PlayerStats;
   translations: Translations;
   showCountry?: boolean;
 };
@@ -25,9 +24,9 @@ type GameRow = {
   img?: string;
   year: number;
   color: 'white' | 'black';
-  rank: string;
+  rank?: string;
   won: boolean;
-  opponent: PlayerDetails;
+  opponent: Omit<PlayerDetails, 'country'> & { country?: string };
   opponentFirstName: string;
   opponentLastName: string;
   result: string;

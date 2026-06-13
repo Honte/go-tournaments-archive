@@ -36,14 +36,27 @@ describe('calculateStats', () => {
     };
 
     const stats = calculateStats(creteEventConfig(), [createTournament(players, games)], playersHandler);
+    const alice = stats.players[players.a.id];
 
     assert.deepEqual(
-      stats.players[players.a.id].results.map((result) => result.stage.name),
+      alice.results.map((result) => result.year),
+      [2025]
+    );
+    assert.deepEqual(
+      alice.results.flatMap((result) => result.stages.map((stage) => stage.name)),
       ['Main']
     );
+    assert.deepEqual(alice.country, ['PL']);
+    assert.deepEqual(alice.opponents, { [players.b.id]: 'Bob Smith' });
+    assert.equal(alice.totalAttended, 1);
+    assert.equal(alice.bestPlace, 1);
+    assert.equal(alice.totalGames, 2);
+    assert.equal(alice.totalWon, 2);
+    assert.equal(alice.score, 10_000);
+    assert.equal(alice.totalSgfs, 1);
     assert.equal(stats.players[players.c.id], undefined);
     assert.deepEqual(Object.keys(stats.countries).sort(), ['DE', 'PL']);
-    assert.equal(stats.summary.players, 3);
+    assert.equal(stats.summary.players, 2);
     assert.equal(stats.summary.playedGames, 2);
     assert.equal(stats.summary.sgfs, 1);
     assert.equal(stats.summary.streams, 1);
@@ -126,6 +139,13 @@ function createTournament(players: Record<string, Player>, games: Record<string,
                 won: true,
                 result: 'B+R',
                 index: 2,
+              },
+              {
+                game: 'bye',
+                opponent: 'BYE',
+                won: true,
+                result: 'BYE',
+                index: 0,
               },
             ],
             won: ['b'],

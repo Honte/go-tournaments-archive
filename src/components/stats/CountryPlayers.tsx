@@ -2,7 +2,7 @@
 
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
-import type { StatsCountry, TableStats } from '@/schema/data';
+import type { CountryStats, TableStats } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { sortTableStats } from '@/libs/sort';
@@ -12,7 +12,7 @@ import { H2 } from '@/components/ui/H2';
 import { PlayerLink } from '@/components/ui/PlayerLink';
 
 type CountryPlayerProps = {
-  country: StatsCountry;
+  country: CountryStats;
   translations: Translations;
   showBestPlace?: boolean;
 };
@@ -57,8 +57,11 @@ export function CountryPlayers({ country, translations, showBestPlace }: Country
         if (result.place === 3) {
           player.bronze++;
         }
-        player.games += result.games.length;
-        player.won += result.won;
+
+        for (const stage of result.stages) {
+          player.games += stage.games.length;
+          player.won += stage.games.reduce((total, game) => total + Number(game.won), 0);
+        }
       }
     }
 

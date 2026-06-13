@@ -1,4 +1,4 @@
-import type { StatsCategory } from '@/schema/data';
+import type { CategoryStats } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { getCategoryMedalists } from '@/libs/category';
@@ -9,7 +9,7 @@ import { PlayerName } from '@/components/ui/PlayerName';
 
 export type CategoryMedalTableProps = {
   category: string;
-  stats: StatsCategory;
+  stats: CategoryStats;
   translations: Translations;
   showCountry?: boolean;
 };

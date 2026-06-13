@@ -2,7 +2,7 @@
 
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
-import type { StatsCountry, TableStats } from '@/schema/data';
+import type { CountryStats, TableStats } from '@/schema/data';
 import type { Locale, Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { sortTableStats } from '@/libs/sort';
@@ -13,13 +13,13 @@ import { Loader } from '@/components/ui/Loader';
 import { useTranslationsData } from '@/hooks/useTranslationsData';
 
 type AllCountriesStatsProps = {
-  countries: Record<string, StatsCountry>;
+  countries: Record<string, CountryStats>;
   locale: Locale;
   showBestPlace?: boolean;
 };
 
 type AllCountriesStatsContentProps = {
-  countries: Record<string, StatsCountry>;
+  countries: Record<string, CountryStats>;
   translations: Translations;
   showBestPlace?: boolean;
 };

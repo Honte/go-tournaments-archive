@@ -1,6 +1,6 @@
 'use client';
 
-import type { ApiPlayerStats } from '@/schema/api';
+import type { PlayerStats } from '@/schema/data';
 import type { Locale, Translations } from '@/i18n/consts';
 import { Opponents } from '@/components/stats/Opponents';
 import { PlayerGames } from '@/components/stats/PlayerGames';
@@ -16,7 +16,7 @@ type PlayerStatsProps = {
 };
 
 type PlayerStatsContentProps = {
-  player: ApiPlayerStats;
+  player: PlayerStats;
   translations: Translations;
   showCountry?: boolean;
 };

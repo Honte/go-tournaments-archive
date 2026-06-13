@@ -2,8 +2,7 @@ export type PlayerDetails = {
   id: string;
   name?: string;
   rank?: string;
-  country?: string;
-  countries?: Iterable<string>;
+  country?: string | Iterable<string>;
 };
 
 export type PlayerNameProps = {
@@ -30,13 +29,13 @@ export function PlayerName({ player, showRank = true, showCountry = false }: Pla
   return showRank && rank ? `${name} (${rank})` : player.name;
 }
 
-function getCountry(player: { country?: string; countries?: Iterable<string> }) {
-  if (player.countries) {
-    return Array.from(new Set(player.countries)).join(', ');
+function getCountry(player: { country?: string | Iterable<string> }) {
+  if (typeof player.country === 'string') {
+    return player.country;
   }
 
   if (player.country) {
-    return player.country;
+    return Array.from(new Set(player.country)).join(', ');
   }
 
   return undefined;

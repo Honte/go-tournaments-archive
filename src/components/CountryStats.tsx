@@ -1,6 +1,6 @@
 'use client';
 
-import type { StatsCountry } from '@/schema/data';
+import type { CountryStats } from '@/schema/data';
 import type { Locale, Translations } from '@/i18n/consts';
 import { CountryAchievements } from '@/components/stats/CountryAchievements';
 import { CountryEvents } from '@/components/stats/CountryEvents';
@@ -17,7 +17,7 @@ type CountryStatsProps = {
 };
 
 type CountryStatsContentProps = {
-  country: StatsCountry;
+  country: CountryStats;
   translations: Translations;
   showBestPlace?: boolean;
 };

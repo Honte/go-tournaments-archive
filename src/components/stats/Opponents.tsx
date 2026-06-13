@@ -2,7 +2,7 @@
 
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
-import type { ApiPlayerStats } from '@/schema/api';
+import type { PlayerStats } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { toPercentage } from '@/libs/table';
@@ -12,7 +12,7 @@ import { PlayerCell } from '@/components/ui/PlayerCell';
 
 type OpponentsProps = {
   translations: Translations;
-  player: ApiPlayerStats;
+  player: PlayerStats;
   showCountry?: boolean;
 };
 

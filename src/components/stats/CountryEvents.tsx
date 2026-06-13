@@ -2,7 +2,7 @@
 
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
-import type { StatsCountry } from '@/schema/data';
+import type { CountryStats } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { toPercentage } from '@/libs/table';
@@ -12,7 +12,7 @@ import { PlayerLink } from '@/components/ui/PlayerLink';
 import { YearLink } from '@/components/YearLink';
 
 type CountryEventsProps = {
-  country: StatsCountry;
+  country: CountryStats;
   translations: Translations;
 };
 
@@ -20,7 +20,7 @@ type CountryEventRow = {
   year: number;
   id: string;
   name: string;
-  rank: string;
+  rank?: string;
   place: number;
   games: number;
   won: number;
@@ -38,19 +38,22 @@ export function CountryEvents({ country, translations }: CountryEventsProps) {
       const yearData = country.years[year];
 
       for (const result of yearData.results) {
-        const games = result.games.length;
+        for (const stage of result.stages) {
+          const games = stage.games.length;
+          const won = stage.games.reduce((acc, game) => acc + Number(game.won), 0);
 
-        list.push({
-          year: Number(year),
-          id: result.id,
-          name: result.name,
-          rank: result.rank,
-          place: result.place,
-          games,
-          won: result.won,
-          lost: games - result.won,
-          wonPercent: result.won / games,
-        });
+          list.push({
+            year: Number(year),
+            id: result.id,
+            name: result.name,
+            rank: result.rank,
+            place: stage.place,
+            games,
+            won,
+            lost: games - won,
+            wonPercent: won / games,
+          });
+        }
       }
     }
 

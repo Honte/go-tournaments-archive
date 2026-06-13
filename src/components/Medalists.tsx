@@ -1,4 +1,4 @@
-import type { StatsPlayer } from '@/schema/data';
+import type { PlayerStats } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { AllPlayersStatsLink } from '@/components/AllPlayersStatsLink';
@@ -8,7 +8,7 @@ import { PlayerLink } from '@/components/ui/PlayerLink';
 import { PlayerName } from './ui/PlayerName';
 
 type MedalistsProps = {
-  players: StatsPlayer[];
+  players: PlayerStats[];
   translations: Translations;
   showCountry?: boolean;
 };

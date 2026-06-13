@@ -1,4 +1,4 @@
-import type { StatsCountry } from '@/schema/data';
+import type { CountryStats } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { AllCountriesStatsLink } from '@/components/AllCountriesStatsLink';
@@ -7,7 +7,7 @@ import { CountryLink } from '@/components/ui/CountryLink';
 import { H1 } from '@/components/ui/H1';
 
 type CountryMedalistsProps = {
-  countries: StatsCountry[];
+  countries: CountryStats[];
   translations: Translations;
 };
 

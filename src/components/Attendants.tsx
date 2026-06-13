@@ -1,4 +1,4 @@
-import type { StatsPlayer } from '@/schema/data';
+import type { PlayerStats } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { AllPlayersStatsLink } from '@/components/AllPlayersStatsLink';
@@ -6,7 +6,7 @@ import { H1 } from '@/components/ui/H1';
 import { PlayerLink } from '@/components/ui/PlayerLink';
 
 type AttendantsProps = {
-  players: StatsPlayer[];
+  players: PlayerStats[];
   translations: Translations;
 };
 
@@ -23,7 +23,7 @@ export function Attendants({ players, translations }: AttendantsProps) {
               <PlayerLink playerId={p.id} locale={translations.locale}>
                 {p.name}
               </PlayerLink>{' '}
-              - {p.years.length}
+              - {p.totalAttended}
             </li>
           ))}
         </ol>

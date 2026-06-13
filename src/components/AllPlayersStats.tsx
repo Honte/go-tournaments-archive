@@ -2,7 +2,7 @@
 
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
-import type { StatsPlayer, TableStats } from '@/schema/data';
+import type { PlayerStats, TableStats } from '@/schema/data';
 import type { Locale, Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
@@ -15,14 +15,14 @@ import { PlayerCell } from '@/components/ui/PlayerCell';
 import { useTranslationsData } from '@/hooks/useTranslationsData';
 
 type AllPlayersStatsProps = {
-  players: Record<string, StatsPlayer>;
+  players: Record<string, PlayerStats>;
   locale: Locale;
   showBestPlace?: boolean;
   showCountry?: boolean;
 };
 
 type AllPlayersStatsContentProps = {
-  players: Record<string, StatsPlayer>;
+  players: Record<string, PlayerStats>;
   translations: Translations;
   showBestPlace?: boolean;
   showCountry?: boolean;
@@ -63,7 +63,7 @@ function AllPlayersStatsContent({ players, translations, showCountry, showBestPl
       Object.values(players)
         .filter((p) => p.id !== 'BYE')
         .map<PlayerRow>((p) => {
-          const { id, name, medals, years, totalGames, totalWon, bestPlace, countries, sgfs } = p;
+          const { id, name, medals, totalAttended, totalGames, totalWon, bestPlace, country: countries, totalSgfs } = p;
           const [firstName, lastName] = (name ?? '').split(' ');
           const [gold, silver, bronze] = medals;
 
@@ -81,12 +81,12 @@ function AllPlayersStatsContent({ players, translations, showCountry, showBestPl
             gold: gold.length,
             silver: silver.length,
             bronze: bronze.length,
-            attended: years.length,
+            attended: totalAttended,
             games: totalGames,
             won: totalWon,
             lost: totalGames - totalWon,
             wonPercent: totalWon / totalGames,
-            sgfs,
+            sgfs: totalSgfs,
           };
         })
         .sort(sortTableStats),
