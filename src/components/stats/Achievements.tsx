@@ -3,7 +3,6 @@ import type { ReactNode } from 'react';
 import type { ApiPlayerStats } from '@/schema/api';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
-import { Endpoints } from '@/libs/endpoints';
 import { jsxJoin } from '@/libs/join';
 import { Details } from '@/components/Details';
 import { ExternalLink } from '@/components/ui/ExternalLink';
@@ -54,7 +53,7 @@ export function Achievements({ player, translations }: AchievementsProps) {
 
   if (player.egd) {
     details[t('details.egd')] = (
-      <ExternalLink href={Endpoints.EGD_PLAYER_LINK(player.egd)} title={t('details.goToEGD')}>
+      <ExternalLink href={getEgdProfileLink(player.egd)} title={t('details.goToEGD')}>
         {player.egd}
       </ExternalLink>
     );
@@ -81,4 +80,8 @@ function listYear(years: string[], locale: string) {
     years.map((year) => <YearLink key={year} locale={locale} year={year} />),
     ', '
   );
+}
+
+function getEgdProfileLink(pin: number) {
+  return `https://europeangodatabase.eu/EGD/Player_Card.php?&key=${pin}`;
 }

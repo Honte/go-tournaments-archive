@@ -43,8 +43,6 @@ export function createEndpoints({ basePath, domain }: FrontendEndpointsConfig) {
     GAME_RAW_SGF: (path: string) => withBasePath(path.replace(/\.sgf$/, '.raw.sgf')),
     GAME_THUMB: (path: string | undefined) => (path ? withBasePath(path) : undefined),
     GAME_FILE: (path: string) => `${normalizedDomain}${withBasePath(path)}`,
-
-    EGD_PLAYER_LINK: (egd: number) => `https://europeangodatabase.eu/EGD/Player_Card.php?&key=${egd}`,
   } as const;
 }
 
