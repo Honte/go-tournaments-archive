@@ -42,7 +42,6 @@
     "start": "npx serve@latest out",
     "lint": "oxlint .",
     "extract:mp-db": "cross-env EVENT=pgc tsx tools/extract.ts",
-    "build:templates": "cross-env EVENT=pgc tsx tools/templates.ts",
     "sgf:match": "tsx tools/sgfMatcher/index.ts",
     "sgf:match:pgc": "cross-env EVENT=pgc tsx tools/sgfMatcher/index.ts",
     "sgf:match:wagc": "cross-env EVENT=wagc tsx tools/sgfMatcher/index.ts",
