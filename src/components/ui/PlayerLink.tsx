@@ -6,9 +6,14 @@ type PlayerLinkProps = Omit<ComponentProps<typeof Link>, 'href'> &
   PropsWithChildren<{
     playerId: string;
     locale: string;
+    hasStats?: boolean;
   }>;
 
-export function PlayerLink({ playerId, locale, children, className, ...props }: PlayerLinkProps) {
+export function PlayerLink({ playerId, hasStats = true, locale, children, className, ...props }: PlayerLinkProps) {
+  if (!hasStats) {
+    return <span className={className}>{children}</span>;
+  }
+
   return (
     <Link
       href={`/${locale}/stats/${playerId}`}

@@ -30,7 +30,12 @@ export function ClassificationTable({ stage, players, translations, showCountry 
             <tr key={index} className="even:bg-gray-200 hover:bg-gray-300">
               <td className="p-1 text-center">{isShared ? `(${index + 1})` : place}</td>
               <td>
-                <PlayerLink playerId={player.id} locale={translations.locale} className="p-1">
+                <PlayerLink
+                  playerId={player.id}
+                  hasStats={player.hasStats}
+                  locale={translations.locale}
+                  className="p-1"
+                >
                   <PlayerName player={player} showCountry={showCountry} />
                 </PlayerLink>
               </td>

@@ -173,6 +173,7 @@ export type Player = {
   rank?: string;
   country?: string;
   egd?: number;
+  hasStats?: boolean;
 };
 
 export type Game = {

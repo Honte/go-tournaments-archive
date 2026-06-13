@@ -59,7 +59,7 @@ export function TableLeague({ stage, players, games, translations, showCountry }
                 {hasSharedPlaces && <td className="p-1">{result.index}</td>}
                 <td className="p-1">{i === 0 || result.place !== table[i - 1].place ? result.place : ''}</td>
                 <td className="p-1 text-left">
-                  <PlayerLink playerId={player.id} locale={translations.locale}>
+                  <PlayerLink playerId={player.id} locale={translations.locale} hasStats={player.hasStats}>
                     {player.name}
                   </PlayerLink>
                 </td>

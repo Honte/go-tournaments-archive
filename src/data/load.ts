@@ -118,10 +118,21 @@ export async function loadData(event: EventConfig) {
 
   tournaments.sort((a, b) => a.year - b.year);
 
+  const stats = calculateStats(event, tournaments, playersHandler);
+
+  // decorate every player entry with `hasStats` flag
+  for (const tournament of tournaments) {
+    for (const id in tournament.players) {
+      const player = tournament.players[id];
+
+      player.hasStats = id in stats.players;
+    }
+  }
+
   return {
     tournaments,
     playersHandler,
-    stats: calculateStats(event, tournaments, playersHandler),
+    stats,
   };
 }
 
