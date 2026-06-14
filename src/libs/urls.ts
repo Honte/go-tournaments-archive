@@ -1,71 +1,117 @@
-import { normalizeBasePath } from '@/libs/basePath';
-
-export function faviconUrl(basePath?: string) {
-  return withBasePath(basePath, '/favicon.svg');
+export function homeUrl(eventPrefix: string | undefined, locale: string) {
+  return joinPaths(eventPrefix, `/${locale}`);
 }
 
-export function appleIconUrl(basePath?: string) {
-  return withBasePath(basePath, '/apple-icon.png');
+export function tournamentUrl(eventPrefix: string | undefined, locale: string, year: number | string) {
+  return joinPaths(eventPrefix, `/${locale}/${year}`);
 }
 
-export function logoBlackUrl(basePath?: string) {
-  return withBasePath(basePath, '/logo-black.svg');
+export function categoryUrl(eventPrefix: string | undefined, locale: string, category: string) {
+  return joinPaths(eventPrefix, `/${locale}/category/${category}`);
 }
 
-export function logoWhiteUrl(basePath?: string) {
-  return withBasePath(basePath, '/logo-white.svg');
+export function playerUrl(eventPrefix: string | undefined, locale: string, playerId: string) {
+  return joinPaths(eventPrefix, `/${locale}/stats/${playerId}`);
 }
 
-export function i18nUrl(basePath: string | undefined, locale: string) {
-  return withBasePath(basePath, `/data/i18n/${locale}.json`);
+export function countryUrl(eventPrefix: string | undefined, locale: string, code: string) {
+  return joinPaths(eventPrefix, `/${locale}/stats/country/${code.toLowerCase()}`);
 }
 
-export function playerStatsUrl(basePath: string | undefined, slug: string) {
-  return withBasePath(basePath, `/data/stats/player/${slug}.json`);
+export function allPlayersStatsUrl(eventPrefix: string | undefined, locale: string) {
+  return joinPaths(eventPrefix, `/${locale}/stats`);
 }
 
-export function countryStatsUrl(basePath: string | undefined, code: string) {
-  return withBasePath(basePath, `/data/stats/country/${code.toLowerCase()}.json`);
+export function allCountryStatsUrl(eventPrefix: string | undefined, locale: string) {
+  return joinPaths(eventPrefix, `/${locale}/stats/country`);
 }
 
-export function gamesWithSgfsUrl(basePath?: string) {
-  return withBasePath(basePath, '/sgf/list.json');
+export function allGameStatsUrl(eventPrefix: string | undefined, locale: string) {
+  return joinPaths(eventPrefix, `/${locale}/stats/games`);
 }
 
-export function gamesZipUrl(basePath: string | undefined, year: number | string) {
-  return withBasePath(basePath, `/sgf/${year}.zip`);
+export function faviconUrl(basePath: string | undefined, eventPrefix: string | undefined) {
+  return joinPaths(basePath, eventPrefix, '/favicon.svg');
 }
 
-export function sitemapUrl(basePath: string | undefined, locale: string) {
-  return withBasePath(basePath, `/data/sitemap/${locale}.json`);
+export function appleIconUrl(basePath: string | undefined, eventPrefix: string | undefined) {
+  return joinPaths(basePath, eventPrefix, '/apple-icon.png');
 }
 
-export function gameSgfUrl(basePath: string | undefined, path: string) {
-  return withBasePath(basePath, path);
+export function logoBlackUrl(basePath: string | undefined, eventPrefix: string | undefined) {
+  return joinPaths(basePath, eventPrefix, '/logo-black.svg');
 }
 
-export function rawGameSgfUrl(basePath: string | undefined, path: string) {
-  return withBasePath(basePath, path.replace(/\.sgf$/, '.raw.sgf'));
+export function logoWhiteUrl(basePath: string | undefined, eventPrefix: string | undefined) {
+  return joinPaths(basePath, eventPrefix, '/logo-white.svg');
 }
 
-export function gameThumbUrl(basePath: string | undefined, path?: string) {
-  return path ? withBasePath(basePath, path) : undefined;
+export function i18nUrl(basePath: string | undefined, eventPrefix: string | undefined, locale: string) {
+  return joinPaths(basePath, eventPrefix, `/data/i18n/${locale}.json`);
 }
 
-function withBasePath(basePath: string | undefined, path: string) {
-  const normalizedBasePath = normalizeBasePath(basePath);
+export function playerStatsDataUrl(basePath: string | undefined, eventPrefix: string | undefined, slug: string) {
+  return joinPaths(basePath, eventPrefix, `/data/stats/player/${slug}.json`);
+}
 
-  if (!normalizedBasePath || !path.startsWith('/') || isExternalPath(path)) {
-    return path;
+export function countryStatsDataUrl(basePath: string | undefined, eventPrefix: string | undefined, code: string) {
+  return joinPaths(basePath, eventPrefix, `/data/stats/country/${code.toLowerCase()}.json`);
+}
+
+export function tournamentDataUrl(
+  basePath: string | undefined,
+  eventPrefix: string | undefined,
+  year: number | string
+) {
+  return joinPaths(basePath, eventPrefix, `/data/${year}.json`);
+}
+
+export function gamesWithSgfsUrl(basePath: string | undefined, eventPrefix: string | undefined) {
+  return joinPaths(basePath, eventPrefix, '/sgf/list.json');
+}
+
+export function gamesZipUrl(basePath: string | undefined, eventPrefix: string | undefined, year: number | string) {
+  return joinPaths(basePath, eventPrefix, `/sgf/${year}.zip`);
+}
+
+export function sitemapUrl(basePath: string | undefined, eventPrefix: string | undefined, locale: string) {
+  return joinPaths(basePath, eventPrefix, `/data/sitemap/${locale}.json`);
+}
+
+export function gameSgfUrl(basePath: string | undefined, eventPrefix: string | undefined, path: string) {
+  return joinPaths(basePath, eventPrefix, path);
+}
+
+export function rawGameSgfUrl(basePath: string | undefined, eventPrefix: string | undefined, path: string) {
+  return joinPaths(basePath, eventPrefix, path.replace(/\.sgf$/, '.raw.sgf'));
+}
+
+export function gameThumbUrl(basePath: string | undefined, eventPrefix: string | undefined, path?: string) {
+  return path ? joinPaths(basePath, eventPrefix, path) : undefined;
+}
+
+export function joinPaths(...paths: (string | undefined)[]) {
+  let result = '';
+
+  for (const path of paths) {
+    if (!path || path === '/') {
+      continue;
+    }
+
+    result += normalizePath(path);
   }
 
-  if (path === normalizedBasePath || path.startsWith(`${normalizedBasePath}/`)) {
-    return path;
-  }
-
-  return `${normalizedBasePath}${path}`;
+  return result;
 }
 
-function isExternalPath(path: string) {
-  return path.startsWith('//') || /^[a-z][a-z0-9+.-]*:/i.test(path);
+export function normalizeBasePath(basePath?: string) {
+  if (!basePath || basePath === '/') {
+    return '';
+  }
+
+  return normalizePath(basePath);
+}
+
+function normalizePath(path: string) {
+  return `/${path.replace(/^\/+|\/+$/g, '')}`;
 }

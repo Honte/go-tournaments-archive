@@ -1,7 +1,7 @@
-import EVENT_CONFIG from '@event/config';
 import { mapValues } from 'lodash-es';
 import { notFound } from 'next/navigation';
 import type { NextRequest } from 'next/server';
+import { loadDefaultEvent } from '@/events';
 import { gameSgfUrl } from '@/libs/urls';
 import { getTournaments } from '@/data';
 
@@ -17,8 +17,10 @@ export async function GET(request: NextRequest, props: PageProps) {
     return notFound();
   }
 
+  const event = await loadDefaultEvent();
   const tournaments = await getTournaments();
   const tournament = tournaments.find((t) => String(t.year) === check[1]);
+  const getFilePath = (path: string) => `${event.domain ?? ''}${gameSgfUrl(event.basePath, event.prefix, path)}`;
 
   if (!tournament) {
     return notFound();
@@ -51,8 +53,4 @@ export async function generateStaticParams() {
   return tournaments.map((tournament) => ({
     year: `${tournament.year}.json`,
   }));
-}
-
-function getFilePath(path: string) {
-  return `${EVENT_CONFIG.domain || ''}${gameSgfUrl(EVENT_CONFIG.basePath, path)}`;
 }

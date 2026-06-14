@@ -1,4 +1,4 @@
-import EVENT_CONFIG from '@event/config';
+import { loadDefaultEvent } from '@/events';
 import { buildAssets } from '@tools/assets/build';
 
-await buildAssets(EVENT_CONFIG);
+await buildAssets(await loadDefaultEvent());

@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import type { PlayerStats } from '@/schema/data';
+import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
@@ -9,27 +10,26 @@ import { H2 } from '@/components/ui/H2';
 import { YearLink } from '@/components/YearLink';
 
 type AchievementsProps = {
+  event: EventContext;
   player: PlayerStats;
   translations: Translations;
-  categories?: string[];
-  showBestPlace?: boolean;
 };
 
 const MEDALS = ['first', 'second', 'third'] as const;
 
-export function Achievements({ player, translations, categories, showBestPlace }: AchievementsProps) {
+export function Achievements({ event, player, translations }: AchievementsProps) {
   const t = getTranslator(translations);
   const details: Record<string, ReactNode> = {};
 
   let hasMedals = false;
   for (const [index, medal] of MEDALS.entries()) {
-    if (categories?.length) {
-      for (const category of categories) {
+    if (event.categories?.length) {
+      for (const category of event.categories) {
         const achievements = player.categoriesMedals[category][index];
 
         if (achievements.length) {
           details[t(`winners.${medal}In`, t(`categories.short.${category}`))] = (
-            <AchievementYears years={achievements} locale={translations.locale} />
+            <AchievementYears event={event} years={achievements} locale={translations.locale} />
           );
           hasMedals = true;
         }
@@ -38,13 +38,15 @@ export function Achievements({ player, translations, categories, showBestPlace }
       const achievements = player.medals[index];
 
       if (achievements.length) {
-        details[t(`winners.${medal}`)] = <AchievementYears years={achievements} locale={translations.locale} />;
+        details[t(`winners.${medal}`)] = (
+          <AchievementYears event={event} years={achievements} locale={translations.locale} />
+        );
         hasMedals = true;
       }
     }
   }
 
-  if (showBestPlace && !hasMedals) {
+  if (event.showBestPlace && !hasMedals) {
     details[t('table.bestPlace')] = player.bestPlace;
   }
 
@@ -68,17 +70,17 @@ export function Achievements({ player, translations, categories, showBestPlace }
   );
 }
 
-function AchievementYears(props: { years: string[]; locale: string }) {
+function AchievementYears({ event, years, locale }: { event: EventContext; years: string[]; locale: string }) {
   return (
     <span className="text-wrap">
-      {listYear(props.years.toReversed(), props.locale)} ({props.years.length})
+      {listYear(event, years.toReversed(), locale)} ({years.length})
     </span>
   );
 }
 
-function listYear(years: string[], locale: string) {
+function listYear(event: EventContext, years: string[], locale: string) {
   return jsxJoin(
-    years.map((year) => <YearLink key={year} locale={locale} year={year} />),
+    years.map((year) => <YearLink event={event} key={year} locale={locale} year={year} />),
     ', '
   );
 }

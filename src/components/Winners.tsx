@@ -1,4 +1,5 @@
 import type { Tournament } from '@/schema/data';
+import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { CategoryLink } from '@/components/category/CategoryLink';
@@ -7,49 +8,39 @@ import { H2 } from '@/components/ui/H2';
 import { WinnersTable, type WinnersTableProps } from '@/components/WinnersTable';
 
 export type WinnersProps = {
+  event: EventContext;
   tournaments: Tournament[];
   translations: Translations;
-  categories?: string[];
-  showCountry?: boolean;
 };
 
-export function Winners({ tournaments, translations, categories, showCountry }: WinnersProps) {
+export function Winners({ event, tournaments, translations }: WinnersProps) {
   const t = getTranslator(translations);
 
   return (
     <div>
       <H1>{t('winners.title')}</H1>
-      {categories?.length ? (
-        <CategoryWinners
-          tournaments={tournaments}
-          translations={translations}
-          categories={categories}
-          showCountry={showCountry}
-        />
+      {event.categories?.length ? (
+        <CategoryWinners event={event} tournaments={tournaments} translations={translations} />
       ) : (
-        <WinnersTable results={tournaments} translations={translations} showCountry={showCountry} />
+        <WinnersTable event={event} results={tournaments} translations={translations} />
       )}
     </div>
   );
 }
 
-function CategoryWinners({ tournaments, translations, categories, showCountry }: WinnersProps) {
+function CategoryWinners({ event, tournaments, translations }: WinnersProps) {
   const t = getTranslator(translations);
 
   return (
     <div className="flex flex-col gap-4">
-      {categories?.map((category) => (
+      {event.categories?.map((category) => (
         <div key={category}>
           <H2>
-            <CategoryLink category={category} locale={translations.locale}>
+            <CategoryLink event={event} category={category} locale={translations.locale}>
               {t(`categories.full.${category}`)}
             </CategoryLink>{' '}
           </H2>
-          <WinnersTable
-            results={getCategoryTop(tournaments, category)}
-            translations={translations}
-            showCountry={showCountry}
-          />
+          <WinnersTable event={event} results={getCategoryTop(tournaments, category)} translations={translations} />
         </div>
       ))}
     </div>

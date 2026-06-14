@@ -1,6 +1,7 @@
 'use client';
 
 import type { Game, IndexedTablePlayerGame, LadderTableStage, Player } from '@/schema/data';
+import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { GameCell } from '@/components/GameCell';
@@ -8,13 +9,14 @@ import { GoResultsTable } from '@/components/table/GoResultsTable';
 import { PlayerLink } from '@/components/ui/PlayerLink';
 
 type TableLadderProps = {
+  event: EventContext;
   stage: LadderTableStage;
   players: Record<string, Player>;
   games: Record<string, Game>;
   translations: Translations;
 };
 
-export function TableLadder({ stage, players, games, translations }: TableLadderProps) {
+export function TableLadder({ event, stage, players, games, translations }: TableLadderProps) {
   const t = getTranslator(translations);
   const { table, rounds, playoffs } = stage;
   const playoffsColumns = playoffs.length ? Math.max(...table.map((p) => p.playoffs.length)) : 0;
@@ -52,7 +54,11 @@ export function TableLadder({ stage, players, games, translations }: TableLadder
                 {hasSharedPlaces && <td className="p-1">{result.index}</td>}
                 <td className="p-1">{i === 0 || result.place !== table[i - 1].place ? result.place : ''}</td>
                 <td className="p-1 text-left">
-                  <PlayerLink playerId={player.id} locale={translations.locale} hasStats={player.hasStats}>
+                  <PlayerLink
+                    event={event}
+                    playerId={player.hasStats ? player.id : undefined}
+                    locale={translations.locale}
+                  >
                     {player.name}
                   </PlayerLink>
                 </td>

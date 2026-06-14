@@ -1,29 +1,30 @@
 import type { GameProps } from '@/schema/data';
+import type { EventContext } from '@/schema/event';
 import type { Translator } from '@/i18n/consts';
 import { gameSgfUrl, rawGameSgfUrl } from '@/libs/urls';
 import { ExternalButton } from '@/components/ui/ExternalButton';
 import { GameViewerButton } from '@/components/viewer/GameViewerTrigger';
 
 type GameActionProps = {
+  event: EventContext;
   t: Translator;
   props: GameProps;
-  basePath?: string;
   showViewer?: boolean;
   showOriginal?: boolean;
 };
 
-export function GameActions({ t, props, basePath, showViewer, showOriginal = false }: GameActionProps) {
+export function GameActions({ event, t, props, showViewer, showOriginal = false }: GameActionProps) {
   return (
     <div className="flex gap-2 mt-1">
       {showViewer && props.sgf && <GameViewerButton sgfPath={props.sgf}>{t('game.open')}</GameViewerButton>}
 
       {props.sgf && (
-        <ExternalButton url={gameSgfUrl(basePath, props.sgf)} title={t('game.sgf')}>
+        <ExternalButton url={gameSgfUrl(event.basePath, event.prefix, props.sgf)} title={t('game.sgf')}>
           SGF
         </ExternalButton>
       )}
       {props.sgf && showOriginal && (
-        <ExternalButton url={rawGameSgfUrl(basePath, props.sgf)} title={t('game.rawSgf')}>
+        <ExternalButton url={rawGameSgfUrl(event.basePath, event.prefix, props.sgf)} title={t('game.rawSgf')}>
           {t('game.raw')}
         </ExternalButton>
       )}

@@ -1,16 +1,11 @@
-import EVENT_CONFIG from '@event/config';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import { loadDefaultEvent } from '@/events';
 import type { Locale } from '@/i18n/consts';
 import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
-import { jsxJoin } from '@/libs/join';
 import { getAllPlayersStats, getPlayerStats } from '@/data';
-import { PlayerStats } from '@/components/PlayerStats';
-import { Achievements } from '@/components/stats/Achievements';
-import { Content } from '@/components/ui/Content';
-import { CountryLink } from '@/components/ui/CountryLink';
-import { Title } from '@/components/ui/Title';
+import { PlayerPage } from '@/components/pages/PlayerPage';
 
 type PageProps = {
   params: Promise<{
@@ -22,7 +17,8 @@ type PageProps = {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug, locale } = await params;
 
-  const translations = await loadTranslations(EVENT_CONFIG, locale);
+  const event = await loadDefaultEvent();
+  const translations = await loadTranslations(event, locale);
   const player = await getPlayerStats(slug);
   const t = getTranslator(translations);
 
@@ -32,50 +28,28 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-export default async function PlayerStatsPage({ params }: PageProps) {
+export default async function Page({ params }: PageProps) {
   const { locale, slug } = await params;
 
-  const translations = await loadTranslations(EVENT_CONFIG, locale);
+  const event = await loadDefaultEvent();
+  const translations = await loadTranslations(event, locale);
   const player = await getPlayerStats(slug);
 
   if (!player) {
     return notFound();
   }
 
-  return (
-    <Content>
-      <header className="flex flex-col">
-        <Title>{player.name}</Title>
-        {EVENT_CONFIG.showCountry && player.country && (
-          <h2 className="text-xl text-center font-bold">
-            {jsxJoin(
-              player.country
-                .filter(Boolean)
-                .map((country) => <CountryLink key={country} translations={translations} code={country} full={true} />),
-              ', '
-            )}
-          </h2>
-        )}
-      </header>
-
-      <Achievements
-        player={player}
-        translations={translations}
-        categories={EVENT_CONFIG.categories}
-        showBestPlace={EVENT_CONFIG.showBestPlace}
-      />
-      <PlayerStats slug={slug} locale={locale} basePath={EVENT_CONFIG.basePath} />
-    </Content>
-  );
+  return <PlayerPage event={event} translations={translations} player={player} />;
 }
 
 export async function generateStaticParams() {
+  const event = await loadDefaultEvent();
   const players = await getAllPlayersStats();
 
   return Object.keys(players)
     .filter((key) => key !== 'BYE')
     .map((slug) =>
-      EVENT_CONFIG.locales.map((locale) => ({
+      event.locales.map((locale) => ({
         locale,
         slug,
       }))

@@ -1,4 +1,5 @@
 import type { CountryStats } from '@/schema/data';
+import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { AllCountriesStatsLink } from '@/components/AllCountriesStatsLink';
@@ -7,11 +8,12 @@ import { CountryLink } from '@/components/ui/CountryLink';
 import { H1 } from '@/components/ui/H1';
 
 type CountryMedalistsProps = {
+  event: EventContext;
   countries: CountryStats[];
   translations: Translations;
 };
 
-export function CountryMedalists({ countries, translations }: CountryMedalistsProps) {
+export function CountryMedalists({ event, countries, translations }: CountryMedalistsProps) {
   const t = getTranslator(translations);
 
   return (
@@ -21,9 +23,9 @@ export function CountryMedalists({ countries, translations }: CountryMedalistsPr
         translations={translations}
         results={countries}
         toKey={(item) => item.country}
-        toName={(item) => <CountryLink translations={translations} code={item.country} full={true} />}
+        toName={(item) => <CountryLink event={event} translations={translations} code={item.country} full={true} />}
       />
-      <AllCountriesStatsLink translations={translations} />
+      <AllCountriesStatsLink event={event} translations={translations} />
     </div>
   );
 }

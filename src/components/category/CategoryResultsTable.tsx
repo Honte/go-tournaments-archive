@@ -1,7 +1,8 @@
 'use client';
 import type { ColumnDef, SortingFn } from '@tanstack/react-table';
 import { useCallback, useMemo, useState } from 'react';
-import type { CategoryStats, CategoryPlayer } from '@/schema/data';
+import type { CategoryPlayer, CategoryStats } from '@/schema/data';
+import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
@@ -14,10 +15,10 @@ import { Toggle } from '@/components/ui/Toggle';
 import { YearLink } from '@/components/YearLink';
 
 export type CategoryResultsTableProps = {
+  event: EventContext;
   category: string;
   stats: CategoryStats;
   translations: Translations;
-  showCountry?: boolean;
 };
 
 type SummaryRow = {
@@ -30,7 +31,7 @@ type SummaryRow = {
 };
 type MedalKey = KeysMatching<SummaryRow, CategoryPlayer[]>;
 
-export function CategoryResultsTable({ translations, stats, showCountry }: CategoryResultsTableProps) {
+export function CategoryResultsTable({ event, translations, stats }: CategoryResultsTableProps) {
   const [includeUnsure, setIncludeUnsure] = useState(true);
   const t = getTranslator(translations);
 
@@ -71,13 +72,13 @@ export function CategoryResultsTable({ translations, stats, showCountry }: Categ
     (key) => (info) =>
       jsxJoin(
         info.row.original[key].map((p) => (
-          <PlayerLink key={p.id} playerId={p.id} locale={translations.locale}>
-            <PlayerName player={p} showCountry={showCountry} />
+          <PlayerLink key={p.id} event={event} playerId={p.id} locale={translations.locale}>
+            <PlayerName player={p} showCountry={event.showCountry} />
           </PlayerLink>
         )),
         ', '
       ),
-    [translations.locale, showCountry]
+    [translations.locale, event]
   );
 
   const columns = useMemo(
@@ -87,7 +88,7 @@ export function CategoryResultsTable({ translations, stats, showCountry }: Categ
           {
             accessorKey: 'year',
             header: t('table.year'),
-            cell: (info) => <YearLink year={info.row.original.year} locale={translations.locale} />,
+            cell: (info) => <YearLink event={event} year={info.row.original.year} locale={translations.locale} />,
           },
           {
             accessorKey: 'gold',
@@ -113,7 +114,7 @@ export function CategoryResultsTable({ translations, stats, showCountry }: Categ
           },
         ] as ColumnDef<SummaryRow>[]
       ).filter(Boolean),
-    [t, translations.locale, sortByFirstPlayer, renderPlayers]
+    [t, translations.locale, sortByFirstPlayer, renderPlayers, event]
   );
 
   return (

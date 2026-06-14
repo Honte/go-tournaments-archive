@@ -3,6 +3,7 @@
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
 import type { CountryStats, TableStats } from '@/schema/data';
+import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { sortTableStats } from '@/libs/sort';
@@ -12,9 +13,9 @@ import { H2 } from '@/components/ui/H2';
 import { PlayerLink } from '@/components/ui/PlayerLink';
 
 type CountryPlayerProps = {
+  event: EventContext;
   country: CountryStats;
   translations: Translations;
-  showBestPlace?: boolean;
 };
 
 type CountryPlayerRow = TableStats & {
@@ -22,7 +23,7 @@ type CountryPlayerRow = TableStats & {
   name: string;
 };
 
-export function CountryPlayers({ country, translations, showBestPlace }: CountryPlayerProps) {
+export function CountryPlayers({ event, country, translations }: CountryPlayerProps) {
   const t = getTranslator(translations);
 
   const data = useMemo(() => {
@@ -83,12 +84,17 @@ export function CountryPlayers({ country, translations, showBestPlace }: Country
             accessorKey: 'name',
             header: t('table.player'),
             cell: (info) => (
-              <PlayerLink playerId={info.row.original.id} locale={translations.locale} className="block text-left">
+              <PlayerLink
+                event={event}
+                playerId={info.row.original.id}
+                locale={translations.locale}
+                className="block text-left"
+              >
                 {info.row.original.name}
               </PlayerLink>
             ),
           },
-          showBestPlace && {
+          event.showBestPlace && {
             accessorKey: 'bestPlace',
             header: t('table.best'),
             cell: toNumeric,
@@ -128,7 +134,7 @@ export function CountryPlayers({ country, translations, showBestPlace }: Country
           },
         ] as ColumnDef<CountryPlayerRow>[]
       ).filter(Boolean),
-    [translations, t, showBestPlace]
+    [translations, t, event]
   );
 
   return (

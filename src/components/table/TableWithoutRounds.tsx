@@ -1,19 +1,21 @@
 'use client';
 
 import type { Game, Player, RoundRobinTableStage } from '@/schema/data';
+import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { GamePopoverTrigger } from '@/components/GamePopoverTrigger';
 import { PlayerLink } from '@/components/ui/PlayerLink';
 
 type TableWithoutRoundsProps = {
+  event: EventContext;
   stage: RoundRobinTableStage;
   players: Record<string, Player>;
   games: Record<string, Game>;
   translations: Translations;
 };
 
-export function TableWithoutRounds({ stage, players, games, translations }: TableWithoutRoundsProps) {
+export function TableWithoutRounds({ event, stage, players, games, translations }: TableWithoutRoundsProps) {
   const t = getTranslator(translations);
   const { table } = stage;
 
@@ -41,7 +43,11 @@ export function TableWithoutRounds({ stage, players, games, translations }: Tabl
               <tr key={result.id} className="text-center even:bg-gray-200">
                 <td className="p-1">{i === 0 || result.place !== table[i - 1].place ? result.place : ''}</td>
                 <td className="p-1 text-left">
-                  <PlayerLink playerId={player.id} hasStats={player.hasStats} locale={translations.locale}>
+                  <PlayerLink
+                    event={event}
+                    playerId={player.hasStats ? player.id : undefined}
+                    locale={translations.locale}
+                  >
                     {player.name}
                   </PlayerLink>
                 </td>

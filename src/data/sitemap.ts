@@ -1,7 +1,15 @@
 import type { TournamentItem } from '@/schema/data';
-import type { EventConfig } from '@/schema/event';
+import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
+import {
+  allCountryStatsUrl,
+  allGameStatsUrl,
+  allPlayersStatsUrl,
+  categoryUrl,
+  homeUrl,
+  tournamentUrl,
+} from '@/libs/urls';
 
 export type NavigationLink = {
   key: string;
@@ -17,7 +25,7 @@ export type NavigationGroup = {
   indented?: boolean;
 };
 
-export function getSitemap(event: EventConfig, tournaments: TournamentItem[], translations: Translations) {
+export function getSitemap(event: EventContext, tournaments: TournamentItem[], translations: Translations) {
   const locale = translations.locale;
   const t = getTranslator(translations);
 
@@ -26,12 +34,12 @@ export function getSitemap(event: EventConfig, tournaments: TournamentItem[], tr
   const main: NavigationLink[] = [
     {
       key: 'home',
-      href: `/${locale}`,
+      href: homeUrl(event.prefix, locale),
       label: t('navigation.home.anchor'),
     },
     {
       key: 'stats',
-      href: `/${locale}/stats`,
+      href: allPlayersStatsUrl(event.prefix, locale),
       label: t('site.allTimeStatsLink'),
     },
   ];
@@ -39,7 +47,7 @@ export function getSitemap(event: EventConfig, tournaments: TournamentItem[], tr
   if (event.showCountry) {
     main.push({
       key: 'countries',
-      href: `/${locale}/stats/country`,
+      href: allCountryStatsUrl(event.prefix, locale),
       label: t('site.allTimeStatsByCountryLink'),
     });
   }
@@ -47,7 +55,7 @@ export function getSitemap(event: EventConfig, tournaments: TournamentItem[], tr
   if (tournaments.some((tournament) => tournament.hasSgfs)) {
     main.push({
       key: 'games',
-      href: `/${locale}/stats/games`,
+      href: allGameStatsUrl(event.prefix, locale),
       label: t('site.gamesListLink'),
     });
   }
@@ -61,7 +69,7 @@ export function getSitemap(event: EventConfig, tournaments: TournamentItem[], tr
       indented: true,
       links: event.categories.map((category) => ({
         key: `category-${category}`,
-        href: `/${locale}/category/${category}`,
+        href: categoryUrl(event.prefix, locale, category),
         label: t(`categories.short.${category}`),
       })),
     });
@@ -80,7 +88,7 @@ export function getSitemap(event: EventConfig, tournaments: TournamentItem[], tr
 
         return {
           key: `tournament-${tournament.year}`,
-          href: `/${locale}/${tournament.year}`,
+          href: tournamentUrl(event.prefix, locale, tournament.year),
           label: String(tournament.year),
           description: location,
         };

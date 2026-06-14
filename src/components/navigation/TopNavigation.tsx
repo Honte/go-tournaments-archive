@@ -3,7 +3,9 @@
 import { throttle } from 'lodash-es';
 import { useRouter } from 'next/navigation';
 import { useEffect, useMemo, useRef, useState } from 'react';
+import type { EventContext } from '@/schema/event';
 import { between } from '@/libs/math';
+import { tournamentUrl } from '@/libs/urls';
 import { YearsNavigation } from '@/components/navigation/YearsNavigation';
 
 const CAPTURE: AddEventListenerOptions = { capture: true };
@@ -13,12 +15,13 @@ const THROTTLE = 200;
 const DELAY = 500;
 
 export type TopNavigationProps = {
+  event: EventContext;
   years: number[];
   locale: string;
   current: number;
 };
 
-export function TopNavigation({ years, locale, current }: TopNavigationProps) {
+export function TopNavigation({ event, years, locale, current }: TopNavigationProps) {
   const router = useRouter();
   const elRef = useRef<HTMLDivElement | null>(null);
   const delayRef = useRef<number | null>(null);
@@ -35,7 +38,7 @@ export function TopNavigation({ years, locale, current }: TopNavigationProps) {
     if (shouldRedirect) {
       delayRef.current = window.setTimeout(() => {
         if (next !== current) {
-          router.push(`/${locale}/${next}`);
+          router.push(tournamentUrl(event.prefix, locale, next));
         }
         setShouldRedirect(false);
       }, DELAY);
@@ -46,7 +49,7 @@ export function TopNavigation({ years, locale, current }: TopNavigationProps) {
         clearTimeout(delayRef.current);
       }
     };
-  }, [current, index, locale, router, shouldRedirect, years]);
+  }, [current, index, locale, router, shouldRedirect, years, event]);
 
   const onWheel = useMemo(
     () =>
@@ -131,7 +134,7 @@ export function TopNavigation({ years, locale, current }: TopNavigationProps) {
 
   return (
     <div ref={elRef} className="cursor-grab">
-      <YearsNavigation years={years} current={years[index]} locale={locale} />
+      <YearsNavigation event={event} years={years} current={years[index]} locale={locale} />
     </div>
   );
 }

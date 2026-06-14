@@ -3,6 +3,7 @@
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
 import type { PlayerStats } from '@/schema/data';
+import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { toPercentage } from '@/libs/table';
@@ -11,9 +12,9 @@ import { H2 } from '@/components/ui/H2';
 import { PlayerCell } from '@/components/ui/PlayerCell';
 
 type OpponentsProps = {
+  event: EventContext;
   translations: Translations;
   player: PlayerStats;
-  showCountry?: boolean;
 };
 
 type OpponentRow = {
@@ -28,7 +29,7 @@ type OpponentRow = {
   country: string;
 };
 
-export function Opponents({ player, translations, showCountry }: OpponentsProps) {
+export function Opponents({ event, translations, player }: OpponentsProps) {
   const t = getTranslator(translations);
 
   const data = useMemo(() => {
@@ -85,12 +86,7 @@ export function Opponents({ player, translations, showCountry }: OpponentsProps)
           accessorKey: 'firstName',
           header: t('table.firstName'),
           cell: (info) => (
-            <PlayerCell
-              player={info.row.original}
-              locale={translations.locale}
-              showRank={false}
-              showCountry={showCountry}
-            />
+            <PlayerCell event={event} player={info.row.original} locale={translations.locale} showRank={false} />
           ),
           meta: { span: 2 },
         },
@@ -117,7 +113,7 @@ export function Opponents({ player, translations, showCountry }: OpponentsProps)
           cell: toPercentage,
         },
       ] as ColumnDef<OpponentRow>[],
-    [translations, t, showCountry]
+    [translations, t, event]
   );
 
   return (

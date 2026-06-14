@@ -1,6 +1,7 @@
 'use client';
 
 import type { Game, LeagueStage, Player } from '@/schema/data';
+import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { Breaker as BreakerComponent } from '@/components/Breaker';
@@ -10,14 +11,14 @@ import { CountryLink } from '@/components/ui/CountryLink';
 import { PlayerLink } from '@/components/ui/PlayerLink';
 
 type TableLeagueProps = {
+  event: EventContext;
   stage: LeagueStage;
   players: Record<string, Player>;
   games: Record<string, Game>;
   translations: Translations;
-  showCountry?: boolean;
 };
 
-export function TableLeague({ stage, players, games, translations, showCountry }: TableLeagueProps) {
+export function TableLeague({ event, stage, players, games, translations }: TableLeagueProps) {
   const t = getTranslator(translations);
   const { breakers, table, rounds, customBreakers } = stage;
   const visibleBreakers = (breakers ?? []).filter(
@@ -37,7 +38,7 @@ export function TableLeague({ stage, players, games, translations, showCountry }
             <th className="p-1">{t('table.place')}</th>
             <th className="p-1 text-left">{t('table.name')}</th>
             <th className="p-1">{t('table.rank')}</th>
-            {showCountry && <th className="p-1">{t('table.country')}</th>}
+            {event.showCountry && <th className="p-1">{t('table.country')}</th>}
             {rounds.map((round, index) => (
               <th className="p-1" key={index}>
                 {t('table.round', String(index + 1))}
@@ -59,14 +60,18 @@ export function TableLeague({ stage, players, games, translations, showCountry }
                 {hasSharedPlaces && <td className="p-1">{result.index}</td>}
                 <td className="p-1">{i === 0 || result.place !== table[i - 1].place ? result.place : ''}</td>
                 <td className="p-1 text-left">
-                  <PlayerLink playerId={player.id} locale={translations.locale} hasStats={player.hasStats}>
+                  <PlayerLink
+                    event={event}
+                    playerId={player.hasStats ? player.id : undefined}
+                    locale={translations.locale}
+                  >
                     {player.name}
                   </PlayerLink>
                 </td>
                 <td className="p-1">{player.rank}</td>
-                {showCountry && (
+                {event.showCountry && (
                   <td className="p-1">
-                    <CountryLink code={player.country} translations={translations} />
+                    <CountryLink event={event} code={player.country} translations={translations} />
                   </td>
                 )}
                 {result.games.map((game, index) =>

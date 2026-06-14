@@ -7,12 +7,12 @@
   "ignorePatterns": [".gitattributes", ".idea", ".next", "out", "node_modules", "events/*/data", "events/*/sgf"],
   "sortImports": {
     "newlinesBetween": false,
-    "internalPattern": ["@/", "@event", "@event/"],
+    "internalPattern": ["@/", "@tools/"],
     "groups": [
-      "event",
       "builtin",
       "external",
       "schema",
+      "setup",
       "i18n",
       "tools",
       "libs",
@@ -25,8 +25,8 @@
     ],
     "customGroups": [
       {
-        "groupName": "event",
-        "elementNamePattern": ["@event", "@event/**"]
+        "groupName": "setup",
+        "elementNamePattern": ["@/env", "@/events"]
       },
       {
         "groupName": "i18n",

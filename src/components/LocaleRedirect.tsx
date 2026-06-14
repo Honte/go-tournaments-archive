@@ -2,18 +2,20 @@
 
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
+import type { EventContext } from '@/schema/event';
+import { homeUrl } from '@/libs/urls';
 import Loading from '@/app/loading';
 
 type LocaleRedirectProps = {
-  locales: string[];
+  event: EventContext;
 };
 
-export function LocaleRedirect({ locales }: LocaleRedirectProps) {
+export function LocaleRedirect({ event }: LocaleRedirectProps) {
   const router = useRouter();
 
   useEffect(() => {
-    router.replace(`/${pickLocale(locales)}`);
-  }, [router, locales]);
+    router.replace(homeUrl(event.prefix, pickLocale(event.locales)));
+  }, [router, event]);
 
   return <Loading />;
 }

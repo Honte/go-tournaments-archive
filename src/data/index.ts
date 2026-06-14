@@ -1,7 +1,7 @@
-import EVENT_CONFIG from '@event/config';
+import { loadDefaultEvent } from '@/events';
 import { loadData } from '@/data/load';
 
-const { tournaments, stats } = await loadData(EVENT_CONFIG);
+const { tournaments, stats } = await loadData(await loadDefaultEvent());
 
 export async function getTournaments() {
   return tournaments;

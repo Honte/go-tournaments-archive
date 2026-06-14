@@ -1,6 +1,7 @@
 import { clsx } from 'clsx';
 import { useMemo } from 'react';
 import { type Game, type GamePlayer, type Player } from '@/schema/data';
+import type { EventContext } from '@/schema/event';
 import type { Translations, Translator } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { gameThumbUrl } from '@/libs/urls';
@@ -10,17 +11,16 @@ import { PlayerName } from '@/components/ui/PlayerName';
 import { GameViewerTrigger } from '@/components/viewer/GameViewerTrigger';
 
 type GameProps = {
+  event: EventContext;
   game: Game;
   title: string;
   className?: string;
   players: Record<string, Player>;
   translations: Translations;
-  basePath?: string;
   wide?: boolean;
-  showCountry?: boolean;
 };
 
-export function Game({ className, game, players, translations, title, basePath, wide, showCountry }: GameProps) {
+export function Game({ event, className, game, players, translations, title, wide }: GameProps) {
   const t = getTranslator(translations);
   const [home, away] = useMemo(() => game.players.map((p) => ({ ...players[p.id], ...p })), [game, players]);
   const hasSgf = game.props.sgf;
@@ -37,7 +37,12 @@ export function Game({ className, game, players, translations, title, basePath, 
     >
       {hasSgf && preview && (
         <GameViewerTrigger sgfPath={game.props.sgf!} aria-label={gameTitle}>
-          <img src={gameThumbUrl(basePath, preview)} alt={gameTitle} className="size-20" loading="lazy" />
+          <img
+            src={gameThumbUrl(event.basePath, event.prefix, preview)}
+            alt={gameTitle}
+            className="size-20"
+            loading="lazy"
+          />
         </GameViewerTrigger>
       )}
       <div className="flex flex-col">
@@ -47,11 +52,11 @@ export function Game({ className, game, players, translations, title, basePath, 
             'max-xs:flex-col gap-1 sm:items-center': !hasSgf,
           })}
         >
-          <PlayerRow t={t} player={home} showCountry={showCountry} />
+          <PlayerRow t={t} player={home} showCountry={event.showCountry} />
           {!hasSgf && wide && <div className="max-xs:hidden">&ndash;</div>}
-          <PlayerRow t={t} player={away} showCountry={showCountry} />
+          <PlayerRow t={t} player={away} showCountry={event.showCountry} />
         </div>
-        {hasProps && <GameActions props={game.props} t={t} basePath={basePath} showViewer={true} />}
+        {hasProps && <GameActions event={event} props={game.props} t={t} showViewer={true} />}
       </div>
     </div>
   );

@@ -22,16 +22,21 @@ category medal tables for events that define age or other categories.
 
 Available event directories:
 
-| Event ID | Archive                          | Notes                                                                           |
-| -------- | -------------------------------- | ------------------------------------------------------------------------------- |
-| `pgc`    | Polish Go Championships          | Default event, locales `pl`, `en`                                               |
-| `wagc`   | World Amateur Go Championships   | Locales `en`, `pl`, country stats                                               |
-| `kpmc`   | Korea Prime Minister Cup         | Locales `en`, `pl`, country stats                                               |
-| `pwgc`   | Polish Women Go Championships    | Locales `pl`, `en`                                                              |
-| `pagc`   | Polish Academic Go Championships | Locales `pl`, `en`                                                              |
-| `pygc`   | Polish Youth Go Championships    | Locales `pl`, `en`, category stats for `u21`, `u20`, `u18`, `u16`, `u15`, `u12` |
-| `hrgc`   | Croatian Go Championships        | Locales `en`, `pl`                                                              |
-| `wgl`    | Warsaw Go League                 | Locales `pl`, `en`                                                              |
+| Event ID | Archive                           | Notes                                                                            |
+| -------- | --------------------------------- | -------------------------------------------------------------------------------- |
+| `epc`    | European Pro Go Championships     | Locales `en`, `pl`                                                               |
+| `esgc`   | European Student Go Championships | Locale `en`, country stats                                                       |
+| `ewgc`   | European Women Go Championships   | Locale `en`, country stats                                                       |
+| `eygc`   | European Youth Championships      | Locale `en`, country stats, category stats for `u21`, `u20`, `u18`, `u16`, `u12` |
+| `hrgc`   | Croatian Go Championships         | Locales `en`, `pl`                                                               |
+| `iegc`   | Irish Go Championships            | Locale `en`                                                                      |
+| `kpmc`   | Korea Prime Minister Cup          | Locales `en`, `pl`, country stats                                                |
+| `pagc`   | Polish Academic Go Championships  | Locales `pl`, `en`                                                               |
+| `pgc`    | Polish Go Championships           | Default event, locales `pl`, `en`                                                |
+| `pwgc`   | Polish Women Go Championships     | Locales `pl`, `en`                                                               |
+| `pygc`   | Polish Youth Go Championships     | Locales `pl`, `en`, category stats for `u21`, `u20`, `u18`, `u16`, `u15`, `u12`  |
+| `wagc`   | World Amateur Go Championships    | Locales `en`, `pl`, country stats                                                |
+| `wgl`    | Warsaw Go League                  | Locales `pl`, `en`                                                               |
 
 `EVENT` defaults to `pgc`. Event-specific config, translations, colors, logo, data, and SGF files live in
 `events/[event-id]/`.
@@ -65,6 +70,11 @@ npm run dev:pagc
 npm run dev:pygc
 npm run dev:hrgc
 npm run dev:wgl
+npm run dev:epc
+npm run dev:esgc
+npm run dev:ewgc
+npm run dev:eygc
+npm run dev:iegc
 ```
 
 Useful checks:
@@ -98,6 +108,11 @@ npm run build:pagc
 npm run build:pygc
 npm run build:hrgc
 npm run build:wgl
+npm run build:epc
+npm run build:esgc
+npm run build:ewgc
+npm run build:eygc
+npm run build:iegc
 ```
 
 Check event-specific build scripts in `package.json` before relying on them; for example, `build:hrgc` currently exists
@@ -119,6 +134,14 @@ Build for a subdirectory deployment:
 ```bash
 BASE_PATH=/archive npm run build
 ```
+
+Some first-class scripts build selected events with an event-name base path, for example:
+
+```bash
+npm run build:epcx
+```
+
+That command builds `EVENT=epc` with `BASE_PATH=epc`, so public URLs are emitted below `/epc`.
 
 ## App routes
 
@@ -148,6 +171,10 @@ Generated data/assets routes:
 - `/sgf/.../*.raw.sgf` - original SGF.
 - `/sgf/.../*.svg`, `/sgf/.../*.png`, `/sgf/.../*.jpg` - generated board previews when enabled by event config.
 - `/favicon.svg`, `/apple-icon.png`, `/logo-black.svg`, `/logo-white.svg` - generated event branding assets.
+
+When editing static route handlers, keep `generateStaticParams()` values local to the route segment. For example,
+`src/app/data/[year]/route.ts` should return `year: '2026.json'`, not a public URL such as `/archive/data/2026.json`.
+Base paths are added by Next.js and by shared URL helpers at the point where public links or fetch URLs are produced.
 
 ## Project layout
 
@@ -184,9 +211,8 @@ Each event has `events/[event-id]/config.ts` exporting an `EventConfig`:
 ```ts
 type EventConfig = {
   id: string;
-  domain: string;
+  domain?: string;
   locales: ['pl', 'en'];
-  defaultCountry?: string;
   showCountry?: boolean;
   showBestPlace?: boolean;
   generateSvgs?: boolean;
@@ -195,6 +221,7 @@ type EventConfig = {
   generateJpgs?: boolean;
   hideGamesWithoutSgf?: boolean;
   categories?: string[];
+  unknownRanks?: string[];
 };
 ```
 
@@ -202,7 +229,7 @@ Common flags:
 
 - `locales` defines which locale-prefixed routes and translation JSON files are generated for the event. The first item
   is the default locale used by root redirects and default metadata.
-- `defaultCountry` is applied to players/tournaments without an explicit country.
+- `domain` is used when generated tournament JSON needs absolute asset URLs.
 - `showCountry` enables country columns, country medalists, and country stats routes.
 - `showBestPlace` controls best-place display in stats tables.
 - `generateSvgs`, `generatePngs`, `generateJpgs` select preview variants emitted from SGF files during static export.
@@ -210,6 +237,7 @@ Common flags:
   tournaments with linked SGFs.
 - `hideGamesWithoutSgf` hides unlinked games in game lists for SGF-focused archives.
 - `categories` enables category medal aggregation and `/:locale/category/:category` pages.
+- `unknownRanks` lists rank strings that should be treated as unknown during rank parsing for the event.
 
 ## Tournament data
 

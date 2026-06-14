@@ -89,7 +89,7 @@ export async function loadData(event: EventConfig) {
       const game = games[gameId];
 
       if (game.props.sgf) {
-        game.path = `./events/${event.id}/sgf/${game.props.sgf}`;
+        game.path = `./events/${event.id}/${game.props.sgf}`;
 
         if (event.generatePngs) {
           game.props.png = game.props.sgf.replace('.sgf', '.png');

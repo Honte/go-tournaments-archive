@@ -4,7 +4,7 @@ import { readdir, readFile, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { input, select } from '@inquirer/prompts';
-import { normalizeBasePath } from '@/libs/basePath';
+import { normalizeBasePath } from '@/libs/urls';
 
 type BasePathMode = 'empty' | 'event' | 'custom';
 type BuilderState = {

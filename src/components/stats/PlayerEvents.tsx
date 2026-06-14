@@ -3,6 +3,7 @@
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
 import type { PlayerStats, Stage } from '@/schema/data';
+import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { getStageName } from '@/libs/stage';
@@ -13,9 +14,9 @@ import { H2 } from '@/components/ui/H2';
 import { YearLink } from '@/components/YearLink';
 
 type PlayerEventsProps = {
+  event: EventContext;
   player: PlayerStats;
   translations: Translations;
-  showCountry?: boolean;
 };
 
 type EventRow = {
@@ -31,7 +32,7 @@ type EventRow = {
   wonPercent: number;
 };
 
-export function PlayerEvents({ player, translations, showCountry }: PlayerEventsProps) {
+export function PlayerEvents({ event, player, translations }: PlayerEventsProps) {
   const t = getTranslator(translations);
 
   const data = useMemo(() => {
@@ -73,7 +74,9 @@ export function PlayerEvents({ player, translations, showCountry }: PlayerEvents
           {
             accessorKey: 'year',
             header: t('table.year'),
-            cell: (info) => <YearLink locale={translations.locale} year={info.cell.getValue() as number} />,
+            cell: (info) => (
+              <YearLink event={event} locale={translations.locale} year={info.cell.getValue() as number} />
+            ),
           },
           {
             accessorKey: 'stage',
@@ -88,11 +91,13 @@ export function PlayerEvents({ player, translations, showCountry }: PlayerEvents
             accessorKey: 'rank',
             header: t('table.rank'),
           },
-          showCountry &&
+          event.showCountry &&
             hasMultipleCountries && {
               accessorKey: 'country',
               header: t('table.country'),
-              cell: (info) => <CountryLink code={info.row.original.country} translations={translations} />,
+              cell: (info) => (
+                <CountryLink event={event} code={info.row.original.country} translations={translations} />
+              ),
             },
           {
             accessorKey: 'place',
@@ -117,7 +122,7 @@ export function PlayerEvents({ player, translations, showCountry }: PlayerEvents
           },
         ] as ColumnDef<EventRow>[]
       ).filter(Boolean),
-    [translations, hasMultipleNames, hasMultipleCountries, showCountry, t]
+    [translations, hasMultipleNames, hasMultipleCountries, event, t]
   );
 
   return (

@@ -3,7 +3,7 @@ import { availableParallelism } from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Piscina from 'piscina';
-import type { EventConfig } from '@/schema/event';
+import type { EventContext } from '@/schema/event';
 import { loadTranslations } from '@/i18n/server';
 import type { BuildSgfRequest, BuildSgfResponse } from '@tools/assets/sgf';
 import { createZipBuffer } from '@/libs/zip';
@@ -14,7 +14,7 @@ const PUBLIC_SGF_DIR = './public/sgf';
 const SGF_WORKER_PATH = fileURLToPath(new URL('./sgf.ts', import.meta.url));
 const STATUS_DELAY = 5000;
 
-export async function buildAssets(event: EventConfig) {
+export async function buildAssets(event: EventContext) {
   console.log(`[assets] generating assets for ${event.id}`);
   const start = Date.now();
 

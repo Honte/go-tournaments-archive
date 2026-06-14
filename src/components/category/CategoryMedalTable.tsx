@@ -1,4 +1,5 @@
 import type { CategoryStats } from '@/schema/data';
+import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { getCategoryMedalists } from '@/libs/category';
@@ -8,13 +9,13 @@ import { PlayerLink } from '@/components/ui/PlayerLink';
 import { PlayerName } from '@/components/ui/PlayerName';
 
 export type CategoryMedalTableProps = {
+  event: EventContext;
   category: string;
   stats: CategoryStats;
   translations: Translations;
-  showCountry?: boolean;
 };
 
-export function CategoryMedalTable({ category, stats, translations, showCountry }: CategoryMedalTableProps) {
+export function CategoryMedalTable({ event, category, stats, translations }: CategoryMedalTableProps) {
   const medalists = getCategoryMedalists(stats);
   const t = getTranslator(translations);
 
@@ -26,8 +27,8 @@ export function CategoryMedalTable({ category, stats, translations, showCountry 
         results={medalists}
         toKey={(player) => player.id}
         toName={(player) => (
-          <PlayerLink playerId={player.id} locale={translations.locale}>
-            <PlayerName player={player} showRank={false} showCountry={showCountry} />
+          <PlayerLink event={event} playerId={player.id} locale={translations.locale}>
+            <PlayerName player={player} showRank={false} showCountry={event.showCountry} />
           </PlayerLink>
         )}
       />

@@ -1,11 +1,12 @@
 import { useQuery } from '@tanstack/react-query';
+import type { EventContext } from '@/schema/event';
 import type { Locale } from '@/i18n/consts';
 import { fetchSitemap } from '@/data/api';
 
-export function useSitemapData(basePath: string | undefined, locale: Locale) {
+export function useSitemapData(event: EventContext, locale: Locale) {
   return useQuery({
-    queryKey: ['sitemap', basePath, locale],
-    queryFn: () => fetchSitemap(basePath, locale),
+    queryKey: ['sitemap', event.basePath, event.prefix, locale],
+    queryFn: () => fetchSitemap(event.basePath, event.prefix, locale),
     staleTime: Infinity,
     enabled: typeof window !== 'undefined',
   });

@@ -3,6 +3,7 @@
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
 import type { CountryStats } from '@/schema/data';
+import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { toPercentage } from '@/libs/table';
@@ -11,6 +12,7 @@ import { CountryLink } from '@/components/ui/CountryLink';
 import { H2 } from '@/components/ui/H2';
 
 type CountryOpponentsProps = {
+  event: EventContext;
   country: CountryStats;
   translations: Translations;
 };
@@ -24,7 +26,7 @@ type CountryOpponentRow = {
   wonPercent: number;
 };
 
-export function CountryOpponents({ country, translations }: CountryOpponentsProps) {
+export function CountryOpponents({ event, country, translations }: CountryOpponentsProps) {
   const t = getTranslator(translations);
 
   const data = useMemo(() => {
@@ -75,6 +77,7 @@ export function CountryOpponents({ country, translations }: CountryOpponentsProp
             header: t('table.country'),
             cell: (info) => (
               <CountryLink
+                event={event}
                 code={info.row.original.code}
                 translations={translations}
                 className="block text-left"
@@ -101,7 +104,7 @@ export function CountryOpponents({ country, translations }: CountryOpponentsProp
           },
         ] as ColumnDef<CountryOpponentRow>[]
       ).filter(Boolean),
-    [translations, t]
+    [translations, t, event]
   );
 
   return (

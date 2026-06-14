@@ -3,6 +3,7 @@
 import { autoUpdate, useFloating } from '@floating-ui/react';
 import { useCallback, useEffect, useState } from 'react';
 import type { Game, Player } from '@/schema/data';
+import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { Game as GameComponent } from '@/components/Game';
 
@@ -16,12 +17,11 @@ type PopoverState = {
 };
 
 type GamePopoverProps = {
+  event: EventContext;
   translations: Translations;
-  basePath?: string;
-  showCountry?: boolean;
 };
 
-export function GamePopover({ translations, basePath, showCountry }: GamePopoverProps) {
+export function GamePopover({ event, translations }: GamePopoverProps) {
   const [state, setState] = useState<PopoverState | null>(null);
   const { refs, floatingStyles, elements } = useFloating({
     whileElementsMounted: autoUpdate,
@@ -87,12 +87,11 @@ export function GamePopover({ translations, basePath, showCountry }: GamePopover
             )}
             <div className="p-4">
               <GameComponent
+                event={event}
                 game={state.game}
                 title={state.title ?? ''}
                 players={state.players}
                 translations={translations}
-                basePath={basePath}
-                showCountry={showCountry}
                 wide={false}
               />
             </div>

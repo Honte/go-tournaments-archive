@@ -1,5 +1,6 @@
 import { createElement } from 'react';
 import type { LogoProps } from '@/schema/event';
+import { EVENT } from '@/env';
 import { generatePng } from '@tools/img';
 
 const APPLE_ICON_SIZE = 180;
@@ -29,7 +30,7 @@ async function renderLogo(options: LogoProps) {
   // use import this way to avoid false error by next.js
   const { renderToReadableStream } = await import('react-dom/server');
 
-  const { Logo } = await import('@event/Logo');
+  const { Logo } = await import(`../../events/${EVENT}/Logo`);
 
   // use this way to allow the component to do some async stuff (e.g. load png)
   const stream = await renderToReadableStream(createElement(Logo, options));

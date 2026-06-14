@@ -3,6 +3,7 @@
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
 import type { CountryStats } from '@/schema/data';
+import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { toPercentage } from '@/libs/table';
@@ -12,6 +13,7 @@ import { PlayerLink } from '@/components/ui/PlayerLink';
 import { YearLink } from '@/components/YearLink';
 
 type CountryEventsProps = {
+  event: EventContext;
   country: CountryStats;
   translations: Translations;
 };
@@ -28,7 +30,7 @@ type CountryEventRow = {
   wonPercent: number;
 };
 
-export function CountryEvents({ country, translations }: CountryEventsProps) {
+export function CountryEvents({ event, country, translations }: CountryEventsProps) {
   const t = getTranslator(translations);
 
   const data = useMemo(() => {
@@ -67,13 +69,20 @@ export function CountryEvents({ country, translations }: CountryEventsProps) {
           {
             accessorKey: 'year',
             header: t('table.year'),
-            cell: (info) => <YearLink locale={translations.locale} year={info.cell.getValue() as number} />,
+            cell: (info) => (
+              <YearLink event={event} locale={translations.locale} year={info.cell.getValue() as number} />
+            ),
           },
           {
             accessorKey: 'name',
             header: t('table.player'),
             cell: (info) => (
-              <PlayerLink playerId={info.row.original.id} locale={translations.locale} className="block text-left">
+              <PlayerLink
+                event={event}
+                playerId={info.row.original.id}
+                locale={translations.locale}
+                className="block text-left"
+              >
                 {info.row.original.name}
               </PlayerLink>
             ),
@@ -105,7 +114,7 @@ export function CountryEvents({ country, translations }: CountryEventsProps) {
           },
         ] as ColumnDef<CountryEventRow>[]
       ).filter(Boolean),
-    [translations, t]
+    [translations, t, event]
   );
 
   return (

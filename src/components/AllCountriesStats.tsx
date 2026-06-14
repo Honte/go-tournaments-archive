@@ -3,6 +3,7 @@
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
 import type { CountryStats, TableStats } from '@/schema/data';
+import type { EventContext } from '@/schema/event';
 import type { Locale, Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { sortTableStats } from '@/libs/sort';
@@ -13,16 +14,15 @@ import { Loader } from '@/components/ui/Loader';
 import { useTranslationsData } from '@/hooks/useTranslationsData';
 
 type AllCountriesStatsProps = {
+  event: EventContext;
   countries: Record<string, CountryStats>;
   locale: Locale;
-  basePath?: string;
-  showBestPlace?: boolean;
 };
 
 type AllCountriesStatsContentProps = {
+  event: EventContext;
   countries: Record<string, CountryStats>;
   translations: Translations;
-  showBestPlace?: boolean;
 };
 
 type CountryRow = TableStats & {
@@ -31,17 +31,17 @@ type CountryRow = TableStats & {
   players: number;
 };
 
-export function AllCountriesStats({ countries, locale, basePath, showBestPlace }: AllCountriesStatsProps) {
-  const { data: translations } = useTranslationsData(basePath, locale);
+export function AllCountriesStats({ event, countries, locale }: AllCountriesStatsProps) {
+  const { data: translations } = useTranslationsData(event, locale);
 
   if (!translations) {
     return <Loader />;
   }
 
-  return <AllCountriesStatsContent countries={countries} translations={translations} showBestPlace={showBestPlace} />;
+  return <AllCountriesStatsContent event={event} countries={countries} translations={translations} />;
 }
 
-function AllCountriesStatsContent({ countries, translations, showBestPlace }: AllCountriesStatsContentProps) {
+function AllCountriesStatsContent({ event, countries, translations }: AllCountriesStatsContentProps) {
   const t = getTranslator(translations);
 
   const data = useMemo(
@@ -89,6 +89,7 @@ function AllCountriesStatsContent({ countries, translations, showBestPlace }: Al
             header: t('table.country'),
             cell: ({ row }) => (
               <CountryLink
+                event={event}
                 translations={translations}
                 code={row.original.country}
                 full={true}
@@ -96,7 +97,7 @@ function AllCountriesStatsContent({ countries, translations, showBestPlace }: Al
               />
             ),
           },
-          showBestPlace && {
+          event.showBestPlace && {
             accessorKey: 'bestPlace',
             header: t('table.best'),
             cell: toNumeric,
@@ -140,7 +141,7 @@ function AllCountriesStatsContent({ countries, translations, showBestPlace }: Al
           },
         ] as ColumnDef<CountryRow>[]
       ).filter(Boolean),
-    [t, translations, showBestPlace]
+    [t, translations, event]
   );
 
   return <StatsTable columns={columns} data={data} />;

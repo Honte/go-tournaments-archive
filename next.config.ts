@@ -1,4 +1,4 @@
-import { BASE_PATH, EVENT } from './events/env';
+import { BASE_PATH, EVENT } from '@/env';
 
 /** @type {import('next').NextConfig} */
 export default {
@@ -12,11 +12,6 @@ export default {
     BASE_PATH,
   },
 
-  turbopack: {
-    resolveAlias: {
-      '@event/*': `./events/${EVENT}/*`,
-    },
-  },
   pageExtensions:
     process.env.NODE_ENV === 'production'
       ? ['tsx', 'ts', 'jsx', 'js']
