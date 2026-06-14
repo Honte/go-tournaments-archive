@@ -34,15 +34,19 @@ stages:
       - 6-7 6:B+9.5 round:4 sgf:2014/4-LukasPodpera-DmitrijSurin.sgf
       - 6-31 6:B+R round:2 sgf:2014/2-LukasPodpera-DominiqueVersyck.sgf
       - 7-8 7:B+R round:5 sgf:2014/5-DmitrijSurin-FredrikBlomback.sgf
+      - 8-27 8:B+R round:3 sgf:2014/3-FredrikBlomback-OysteinVestgaarden.sgf
       - 9-21 21:W+2 round:4 sgf:2014/4-KikouEmura-YongfeiGe.sgf
       - 10-2 2:W+R round:7 sgf:2014/7-JieLiang-TaeWoongWei.sgf
       - 10-3 3:W+R round:8 sgf:2014/8-JieLiang-WangRuoran.sgf
+      - 10-6 10:B+? round:6 sgf:2014/6-JieLiang-LukasPodpera.sgf
       - 10-8 8:W+4 round:1 sgf:2014/1-JieLiang-FredrikBlomback.sgf
       - 10-21 10:B+1.5 round:5 sgf:2014/5-JieLiang-YongfeiGe.sgf
       - 14-1 1:W+21.5 round:7 sgf:2014/7-ThanapolTiawattananont-YiTienChan.sgf
+      - 16-32 16:B+R round:3 sgf:2014/3-ArneSteenOhlenbusch-AndriusPetrauskas.sgf
       - 20-42 20:B+R round:4 sgf:2014/4-SuzanneD'Bel-PedroPereira.sgf
       - 21-2 2:W+R round:2 sgf:2014/2-YongfeiGe-TaeWoongWei.sgf
       - 21-32 21:B+R round:1 sgf:2014/1-YongfeiGe-AndriusPetrauskas.sgf
+      - 23-37 23:B+? round:7 sgf:2014/7-AmirFragman-SangDaeHahn.sgf
       - 24-14 14:W+14.5 round:6 sgf:2014/6-PeterJadron-ThanapolTiawattananont.sgf
       - 30-49 30:B+R round:2 sgf:2014/2-ZhijieBei-JohnGibson.sgf
       - 37-3 3:W+19.5 round:1 sgf:2014/1-SangDaeHahn-WangRuoran.sgf

@@ -23,6 +23,7 @@ stages:
       - 2-5 2:B+2.5 round:5 sgf:2012/5-HyunjoonLee-KwangHyokRi.sgf
       - 2-6 2:B+R round:7 sgf:2012/7-HyunjoonLee-PalBalogh.sgf
       - 2-8 2:B+13.5 round:3 sgf:2012/3-HyunjoonLee-SeizoNakazono.sgf
+      - 2-50 2:B+R round:1 sgf:2012/1-HyunjoonLee-NadeenPrem.sgf
       - 3-2 2:W+2.5 round:8 sgf:2012/8-ChengHsunChen-HyunjoonLee.sgf
       - 3-4 3:B+6.5 round:7 sgf:2012/7-ChengHsunChen.sgf
       - 3-10 3:B+R round:6 sgf:2012/6-ChengHsunChen.sgf
@@ -44,7 +45,9 @@ stages:
       - 21-3 3:W+R round:2 sgf:2012/2-YuanZhou-ChengHsunChen.sgf
       - 21-30 21:B+R round:5 sgf:2012/5-YuanZhou-SamAitken.sgf
       - 24-18 18:W+R round:4 sgf:2012/4-XianyuLi-LongYangLi.sgf
+      - 29-8 8:W+? round:2 sgf:2012/2-AlexanderEerbeek-SeizoNakazono.sgf
       - 30-7 7:W+7.5 round:2 sgf:2012/2-SamAitken-JuriKuronen.sgf
       - 31-5 5:W+R round:3 sgf:2012/3-LotharSpiegel-KwangHyokRi.sgf
       - 32-8 8:W+R round:8 sgf:2012/8-DraganPaunic-SeizoNakazono.sgf
+      - 36-21 21:W+R round:1 sgf:2012/1-PaalSannes-YuanZhou.sgf
       - 52-5 5:W+R round:1 sgf:2012/1-XiaoyanFang-KwangHyokRi.sgf
