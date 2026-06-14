@@ -411,12 +411,17 @@ academic archives.
   scoringColumns:
     - wins
     - sos
+    - votes
+  columns:
+    - votes
   findSharedPlaces: true
   customBreakers:
-    sos:
+    votes:
+      order: desc
+      hidden: false
       translations:
-        en: SOS
-        pl: SOS
+        en: Votes
+        pl: Głosy
 ```
 
 Useful `tournament` fields:

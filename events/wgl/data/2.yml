@@ -2,7 +2,7 @@ website: https://roundsboard.com/tournaments/warszawska-liga-go-sezon-2
 stages:
   - type: tournament
     file: wgl_02_2024.txt
-    komi: 6.5    
+    komi: 6.5
     scoringColumns:
       - null
       - wins
@@ -13,4 +13,6 @@ stages:
       - mms
       - sos
       - sosos
+    columns:
+      - wins
     findSharedPlaces: true

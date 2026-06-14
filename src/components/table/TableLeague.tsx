@@ -20,7 +20,7 @@ type TableLeagueProps = {
 
 export function TableLeague({ event, stage, players, games, translations }: TableLeagueProps) {
   const t = getTranslator(translations);
-  const { breakers, table, rounds, customBreakers } = stage;
+  const { breakers, columns, table, rounds, customBreakers } = stage;
   const visibleBreakers = (breakers ?? []).filter(
     (b) => b !== 'direct' && b !== 'rank' && !customBreakers?.[b]?.hidden
   );
@@ -44,9 +44,14 @@ export function TableLeague({ event, stage, players, games, translations }: Tabl
                 {t('table.round', String(index + 1))}
               </th>
             ))}
-            {visibleBreakers.map((breaker, index) => (
-              <th className="p-1" key={index}>
+            {visibleBreakers.map((breaker) => (
+              <th className="p-1" key={`breaker-${breaker}`}>
                 <BreakerComponent translations={translations} breaker={breaker} customBreakers={customBreakers} />
+              </th>
+            ))}
+            {columns?.map((column) => (
+              <th className="p-1" key={`column-${column}`}>
+                <BreakerComponent translations={translations} breaker={column} customBreakers={customBreakers} />
               </th>
             ))}
           </tr>
@@ -82,8 +87,13 @@ export function TableLeague({ event, stage, players, games, translations }: Tabl
                   )
                 )}
                 {visibleBreakers.map((breaker) => (
-                  <td className="p-1" key={breaker}>
+                  <td className="p-1" key={`breaker-${breaker}`}>
                     {result.breakers[breaker]}
+                  </td>
+                ))}
+                {columns?.map((column) => (
+                  <td className="p-1" key={`column-${column}`}>
+                    {result.breakers[column] ?? ''}
                   </td>
                 ))}
               </tr>

@@ -9,6 +9,7 @@ export type InputBaseStage = {
   komi?: number;
   rules?: string;
   breakers?: Breaker[];
+  columns?: string[];
   promoted?: number;
   placeOffset?: number;
   category?: string;

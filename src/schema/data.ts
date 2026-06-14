@@ -90,6 +90,7 @@ export type LeagueStage = BaseStage & {
   rounds: string[][];
   table: TableResult[];
   breakers?: Breaker[];
+  columns?: string[];
   customBreakers?: Record<string, CustomBreaker>;
   order?: string[];
   games?: string[];

@@ -28,6 +28,7 @@ export async function loadH9Tournament({
     name,
     file,
     breakers,
+    columns,
     scoringColumns,
     rules,
     findSharedPlaces = false,
@@ -317,6 +318,7 @@ export async function loadH9Tournament({
         ? `https://europeangodatabase.eu/EGD/Tournament_Card.php?&key=${tournament.id}`
         : undefined,
     breakers,
+    columns,
     customBreakers,
     rules,
     time: time ?? (tournament.time ? `AT ${tournament.time} min` : undefined),
