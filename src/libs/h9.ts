@@ -118,7 +118,7 @@ export function parseH9(input: string): H9Tournament {
       place: Number(place),
       name: name.replace(/_/g, ' '),
       surname: surname.replace(/_/g, ' '),
-      rank: rank?.toLowerCase(),
+      rank: normalizeRank(rank),
       country,
       club,
       games,
@@ -172,4 +172,16 @@ function parseLocation(location?: string) {
     country: index >= 0 ? location!.slice(0, index).trim() : undefined,
     location: index >= 0 ? location!.slice(index + 1).trim() : location?.trim(),
   };
+}
+
+function normalizeRank(rank?: string) {
+  if (!rank) {
+    return rank;
+  }
+
+  if (rank.match(/^\d\d$/)) {
+    return `${rank}k`;
+  }
+
+  return rank.toLowerCase();
 }
