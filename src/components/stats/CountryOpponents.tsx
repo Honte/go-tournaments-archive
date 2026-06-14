@@ -38,7 +38,7 @@ export function CountryOpponents({ event, country, translations }: CountryOppone
       for (const result of yearData.results) {
         for (const stage of result.stages) {
           for (const game of stage.games) {
-            if (!game.country) {
+            if (!game.country || game.country === country.country) {
               continue;
             }
 
@@ -66,7 +66,7 @@ export function CountryOpponents({ event, country, translations }: CountryOppone
     }
 
     return list.sort((a, b) => a.name.localeCompare(b.name));
-  }, [country.years, t]);
+  }, [country, t]);
 
   const columns = useMemo<ColumnDef<CountryOpponentRow>[]>(
     () =>
