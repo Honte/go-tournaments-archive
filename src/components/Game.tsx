@@ -3,7 +3,7 @@ import { useMemo } from 'react';
 import { type Game, type GamePlayer, type Player } from '@/schema/data';
 import type { Translations, Translator } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
-import { Endpoints } from '@/libs/endpoints';
+import { gameThumbUrl } from '@/libs/urls';
 import { GameActions } from '@/components/GameActions';
 import { Stone } from '@/components/Stone';
 import { PlayerName } from '@/components/ui/PlayerName';
@@ -15,11 +15,12 @@ type GameProps = {
   className?: string;
   players: Record<string, Player>;
   translations: Translations;
+  basePath?: string;
   wide?: boolean;
   showCountry?: boolean;
 };
 
-export function Game({ className, game, players, translations, title, wide, showCountry }: GameProps) {
+export function Game({ className, game, players, translations, title, basePath, wide, showCountry }: GameProps) {
   const t = getTranslator(translations);
   const [home, away] = useMemo(() => game.players.map((p) => ({ ...players[p.id], ...p })), [game, players]);
   const hasSgf = game.props.sgf;
@@ -36,7 +37,7 @@ export function Game({ className, game, players, translations, title, wide, show
     >
       {hasSgf && preview && (
         <GameViewerTrigger sgfPath={game.props.sgf!} aria-label={gameTitle}>
-          <img src={Endpoints.GAME_THUMB(preview)} alt={gameTitle} className="size-20" loading="lazy" />
+          <img src={gameThumbUrl(basePath, preview)} alt={gameTitle} className="size-20" loading="lazy" />
         </GameViewerTrigger>
       )}
       <div className="flex flex-col">
@@ -50,7 +51,7 @@ export function Game({ className, game, players, translations, title, wide, show
           {!hasSgf && wide && <div className="max-xs:hidden">&ndash;</div>}
           <PlayerRow t={t} player={away} showCountry={showCountry} />
         </div>
-        {hasProps && <GameActions props={game.props} t={t} showViewer={true} />}
+        {hasProps && <GameActions props={game.props} t={t} basePath={basePath} showViewer={true} />}
       </div>
     </div>
   );

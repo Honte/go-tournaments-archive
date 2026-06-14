@@ -5,7 +5,7 @@ import { useMemo } from 'react';
 import type { ApiGameInfo } from '@/schema/api';
 import type { Locale, Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
-import { Endpoints } from '@/libs/endpoints';
+import { gameThumbUrl } from '@/libs/urls';
 import { GameActions } from '@/components/GameActions';
 import { StatsTable } from '@/components/table/StatsTable';
 import { Loader } from '@/components/ui/Loader';
@@ -17,18 +17,20 @@ import { useTranslationsData } from '@/hooks/useTranslationsData';
 
 type AllGamesProps = {
   locale: Locale;
+  basePath?: string;
   showCountry?: boolean;
 };
 
 type AllGamesContentProps = {
   games: ApiGameInfo[];
   translations: Translations;
+  basePath?: string;
   showCountry?: boolean;
 };
 
-export function AllGames({ locale, showCountry }: AllGamesProps) {
-  const translationsData = useTranslationsData(locale);
-  const gamesData = useGamesData();
+export function AllGames({ locale, basePath, showCountry }: AllGamesProps) {
+  const translationsData = useTranslationsData(basePath, locale);
+  const gamesData = useGamesData(basePath);
 
   if (translationsData.isPending || gamesData.isPending) {
     return <Loader />;
@@ -38,10 +40,17 @@ export function AllGames({ locale, showCountry }: AllGamesProps) {
     return <p>No data</p>;
   }
 
-  return <AllGamesContent games={gamesData.data} translations={translationsData.data} showCountry={showCountry} />;
+  return (
+    <AllGamesContent
+      games={gamesData.data}
+      translations={translationsData.data}
+      basePath={basePath}
+      showCountry={showCountry}
+    />
+  );
 }
 
-function AllGamesContent({ games, translations, showCountry }: AllGamesContentProps) {
+function AllGamesContent({ games, translations, basePath, showCountry }: AllGamesContentProps) {
   const t = getTranslator(translations);
   const columns = useMemo<ColumnDef<ApiGameInfo>[]>(
     () =>
@@ -56,7 +65,7 @@ function AllGamesContent({ games, translations, showCountry }: AllGamesContentPr
               return (
                 <GameViewerTrigger sgfPath={game.sgf!}>
                   <img
-                    src={Endpoints.GAME_THUMB(game.jpg!)}
+                    src={gameThumbUrl(basePath, game.jpg!)}
                     alt={t('game.preview', `${game.black.name} vs ${game.white.name}`)}
                     className="size-20 min-w-20 min-h-20"
                     loading="lazy"
@@ -128,12 +137,12 @@ function AllGamesContent({ games, translations, showCountry }: AllGamesContentPr
           {
             accessorKey: 'props',
             header: null,
-            cell: (info) => <GameActions props={info.row.original} t={t} showViewer={true} />,
+            cell: (info) => <GameActions props={info.row.original} t={t} basePath={basePath} showViewer={true} />,
             enableSorting: false,
           },
         ] as ColumnDef<ApiGameInfo>[]
       ).filter(Boolean),
-    [t, translations.locale, showCountry]
+    [t, translations.locale, basePath, showCountry]
   );
 
   return <StatsTable data={games} columns={columns} />;

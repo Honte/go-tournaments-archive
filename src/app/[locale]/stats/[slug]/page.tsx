@@ -64,7 +64,7 @@ export default async function PlayerStatsPage({ params }: PageProps) {
         categories={EVENT_CONFIG.categories}
         showBestPlace={EVENT_CONFIG.showBestPlace}
       />
-      <PlayerStats slug={slug} locale={locale} />
+      <PlayerStats slug={slug} locale={locale} basePath={EVENT_CONFIG.basePath} />
     </Content>
   );
 }

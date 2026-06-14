@@ -3,7 +3,7 @@ import { useMemo } from 'react';
 import type { GameProps, PlayerStats } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
-import { Endpoints } from '@/libs/endpoints';
+import { gameThumbUrl } from '@/libs/urls';
 import { GameActions } from '@/components/GameActions';
 import { Stone } from '@/components/Stone';
 import { StatsTable } from '@/components/table/StatsTable';
@@ -17,6 +17,7 @@ import { YearLink } from '@/components/YearLink';
 type PlayerGamesProps = {
   player: PlayerStats;
   translations: Translations;
+  basePath?: string;
   showCountry?: boolean;
 };
 
@@ -33,7 +34,7 @@ type GameRow = {
   props: GameProps;
 };
 
-export function PlayerGames({ player, translations, showCountry }: PlayerGamesProps) {
+export function PlayerGames({ player, translations, basePath, showCountry }: PlayerGamesProps) {
   const t = getTranslator(translations);
   const data = useMemo(() => {
     const games: GameRow[] = [];
@@ -85,7 +86,7 @@ export function PlayerGames({ player, translations, showCountry }: PlayerGamesPr
             cell: (info) => (
               <GameViewerTrigger sgfPath={info.row.original.props.sgf!}>
                 <img
-                  src={Endpoints.GAME_THUMB(info.row.original.img)}
+                  src={gameThumbUrl(basePath, info.row.original.img)}
                   alt={t('game.preview', `${player.name} vs ${info.row.original.opponent.name}`)}
                   className="size-20 min-w-20 min-h-20"
                   loading="lazy"
@@ -149,12 +150,12 @@ export function PlayerGames({ player, translations, showCountry }: PlayerGamesPr
           {
             accessorKey: 'props',
             header: null,
-            cell: (info) => <GameActions props={info.row.original.props} t={t} />,
+            cell: (info) => <GameActions props={info.row.original.props} t={t} basePath={basePath} />,
             enableSorting: false,
           },
         ] as ColumnDef<GameRow>[]
       ).filter(Boolean),
-    [t, player.name, translations, showCountry]
+    [t, player.name, translations, basePath, showCountry]
   );
 
   if (!data.length) {

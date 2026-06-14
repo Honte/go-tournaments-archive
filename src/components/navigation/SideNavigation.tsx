@@ -10,14 +10,15 @@ import { useSitemapData } from '@/hooks/useSitemapData';
 
 export type SideNavigationProps = {
   locale: Locale;
+  basePath?: string;
   strings: {
     open: string;
     close: string;
   };
 };
 
-export function SideNavigation({ locale, strings }: SideNavigationProps) {
-  const { data: sitemap, isPending } = useSitemapData(locale);
+export function SideNavigation({ locale, basePath, strings }: SideNavigationProps) {
+  const { data: sitemap, isPending } = useSitemapData(basePath, locale);
   const [open, setOpen] = useState(false);
 
   useEffect(() => {

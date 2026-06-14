@@ -34,7 +34,7 @@ export default async function AllGamesPage({ params }: PageProps) {
   return (
     <Content>
       <Title>{t('site.gamesListTitle')}</Title>
-      <AllGames locale={translations.locale} showCountry={EVENT_CONFIG.showCountry} />
+      <AllGames locale={translations.locale} basePath={EVENT_CONFIG.basePath} showCountry={EVENT_CONFIG.showCountry} />
     </Content>
   );
 }

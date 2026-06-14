@@ -39,6 +39,7 @@ export default async function Stats({ params }: PageProps) {
       <AllPlayersStats
         players={players}
         locale={locale}
+        basePath={EVENT_CONFIG.basePath}
         showCountry={EVENT_CONFIG.showCountry}
         showBestPlace={EVENT_CONFIG.showBestPlace}
       />

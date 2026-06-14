@@ -41,7 +41,12 @@ export default async function Stats({ params }: PageProps) {
   return (
     <Content>
       <Title>{t('site.allTimeStatsByCountryTitle')}</Title>
-      <AllCountriesStats countries={countries} locale={locale} showBestPlace={EVENT_CONFIG.showBestPlace} />
+      <AllCountriesStats
+        countries={countries}
+        locale={locale}
+        basePath={EVENT_CONFIG.basePath}
+        showBestPlace={EVENT_CONFIG.showBestPlace}
+      />
     </Content>
   );
 }

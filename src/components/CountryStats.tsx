@@ -13,6 +13,7 @@ import { useTranslationsData } from '@/hooks/useTranslationsData';
 type CountryStatsProps = {
   code: string;
   locale: Locale;
+  basePath?: string;
   showBestPlace?: boolean;
 };
 
@@ -22,9 +23,9 @@ type CountryStatsContentProps = {
   showBestPlace?: boolean;
 };
 
-export function CountryStats({ code, locale, showBestPlace }: CountryStatsProps) {
-  const { data: translations } = useTranslationsData(locale);
-  const { data: country } = useCountryStatsData(code);
+export function CountryStats({ code, locale, basePath, showBestPlace }: CountryStatsProps) {
+  const { data: translations } = useTranslationsData(basePath, locale);
+  const { data: country } = useCountryStatsData(basePath, code);
 
   if (!translations || !country) {
     return <Loader />;

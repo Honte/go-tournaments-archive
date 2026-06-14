@@ -12,13 +12,14 @@ import { useSgfData } from '@/hooks/useSgfData';
 type GameViewerDialogProps = {
   sgfPath: string;
   translations: Translations;
+  basePath?: string;
   showCountry?: boolean;
   onClose: () => void;
 };
 
-export function GameViewerModal({ sgfPath, translations, onClose, showCountry }: GameViewerDialogProps) {
+export function GameViewerModal({ sgfPath, translations, basePath, onClose, showCountry }: GameViewerDialogProps) {
   const t = getTranslator(translations);
-  const { data, isPending } = useSgfData(sgfPath);
+  const { data, isPending } = useSgfData(basePath, sgfPath);
 
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
@@ -72,7 +73,7 @@ export function GameViewerModal({ sgfPath, translations, onClose, showCountry }:
             <Button type="button" onClick={onClose}>
               {t('navigation.close')}
             </Button>
-            {data?.props && <GameActions props={data.props} t={t} showOriginal={true} />}
+            {data?.props && <GameActions props={data.props} t={t} basePath={basePath} showOriginal={true} />}
           </footer>
         </section>
       </div>

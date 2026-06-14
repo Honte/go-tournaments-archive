@@ -12,7 +12,7 @@ type ClientProps = {
 };
 
 export function Client({ locale, event }: ClientProps) {
-  const { data: translations } = useTranslationsData(locale);
+  const { data: translations } = useTranslationsData(event.basePath, locale);
 
   if (!translations) {
     return null;
@@ -20,8 +20,8 @@ export function Client({ locale, event }: ClientProps) {
 
   return (
     <>
-      <GamePopover translations={translations} showCountry={event.showCountry} />
-      <GameViewer translations={translations} showCountry={event.showCountry} />
+      <GamePopover translations={translations} basePath={event.basePath} showCountry={event.showCountry} />
+      <GameViewer translations={translations} basePath={event.basePath} showCountry={event.showCountry} />
     </>
   );
 }

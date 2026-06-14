@@ -17,10 +17,11 @@ type PopoverState = {
 
 type GamePopoverProps = {
   translations: Translations;
+  basePath?: string;
   showCountry?: boolean;
 };
 
-export function GamePopover({ translations, showCountry }: GamePopoverProps) {
+export function GamePopover({ translations, basePath, showCountry }: GamePopoverProps) {
   const [state, setState] = useState<PopoverState | null>(null);
   const { refs, floatingStyles, elements } = useFloating({
     whileElementsMounted: autoUpdate,
@@ -90,6 +91,7 @@ export function GamePopover({ translations, showCountry }: GamePopoverProps) {
                 title={state.title ?? ''}
                 players={state.players}
                 translations={translations}
+                basePath={basePath}
                 showCountry={showCountry}
                 wide={false}
               />

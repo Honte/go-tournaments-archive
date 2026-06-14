@@ -106,6 +106,7 @@ export default async function Edition(props: PageProps) {
       <GamesList
         tournament={tournament}
         translations={translations}
+        basePath={EVENT_CONFIG.basePath}
         hideGamesWithoutSgf={EVENT_CONFIG.hideGamesWithoutSgf}
         showZips={EVENT_CONFIG.generateZips}
         showCountry={EVENT_CONFIG.showCountry}

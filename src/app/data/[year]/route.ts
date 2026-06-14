@@ -2,8 +2,8 @@ import EVENT_CONFIG from '@event/config';
 import { mapValues } from 'lodash-es';
 import { notFound } from 'next/navigation';
 import type { NextRequest } from 'next/server';
+import { gameSgfUrl } from '@/libs/urls';
 import { getTournaments } from '@/data';
-import { NORMALIZED_BASE_PATH } from '@/basePath';
 
 type PageProps = {
   params: Promise<{ year: string }>;
@@ -54,5 +54,5 @@ export async function generateStaticParams() {
 }
 
 function getFilePath(path: string) {
-  return `${EVENT_CONFIG.domain || ''}${NORMALIZED_BASE_PATH}${path}`;
+  return `${EVENT_CONFIG.domain || ''}${gameSgfUrl(EVENT_CONFIG.basePath, path)}`;
 }

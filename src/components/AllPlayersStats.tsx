@@ -17,6 +17,7 @@ import { useTranslationsData } from '@/hooks/useTranslationsData';
 type AllPlayersStatsProps = {
   players: Record<string, PlayerStats>;
   locale: Locale;
+  basePath?: string;
   showBestPlace?: boolean;
   showCountry?: boolean;
 };
@@ -38,8 +39,8 @@ type PlayerRow = TableStats & {
   sgfs: number;
 };
 
-export function AllPlayersStats({ players, locale, showCountry, showBestPlace }: AllPlayersStatsProps) {
-  const { data: translations } = useTranslationsData(locale);
+export function AllPlayersStats({ players, locale, basePath, showCountry, showBestPlace }: AllPlayersStatsProps) {
+  const { data: translations } = useTranslationsData(basePath, locale);
 
   if (!translations) {
     return <Loader />;

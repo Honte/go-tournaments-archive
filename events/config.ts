@@ -1,4 +1,10 @@
 import type { EventConfig } from '@/schema/event';
-import EVENT from './index';
+import { normalizeBasePath } from '@/libs/basePath';
+import { EVENT, BASE_PATH } from './env';
 
-export default (await import(`./${EVENT}/config.ts`)).default as EventConfig;
+const { default: config } = (await import(`./${EVENT}/config.ts`)) as { default: EventConfig };
+
+export default {
+  ...config,
+  basePath: normalizeBasePath(config.basePath ?? BASE_PATH),
+} as EventConfig;

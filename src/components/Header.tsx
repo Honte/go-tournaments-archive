@@ -1,16 +1,17 @@
 import Link from 'next/link';
 import type { Locale, Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
-import { Endpoints } from '@/libs/endpoints';
+import { logoWhiteUrl } from '@/libs/urls';
 import { LocaleNavigation } from '@/components/navigation/LocaleNavigation';
 import { SideNavigation } from '@/components/navigation/SideNavigation';
 
 type TopBarProps = {
   locales: Locale[];
   translations: Translations;
+  basePath?: string;
 };
 
-export function Header({ translations, locales }: TopBarProps) {
+export function Header({ translations, locales, basePath }: TopBarProps) {
   const t = getTranslator(translations);
   const locale = translations.locale;
 
@@ -19,6 +20,7 @@ export function Header({ translations, locales }: TopBarProps) {
       <div className="container mx-auto max-w-(--breakpoint-2xl) flex h-12 items-center gap-3 px-4">
         <SideNavigation
           locale={translations.locale}
+          basePath={basePath}
           strings={{
             open: t('navigation.openMenu'),
             close: t('navigation.closeMenu'),
@@ -31,7 +33,7 @@ export function Header({ translations, locales }: TopBarProps) {
           prefetch={false}
         >
           <span className="sr-only">{t('navigation.home.anchor')}</span>
-          <img src={Endpoints.LOGO_WHITE()} alt="" className="h-4 xs:h-5 shrink-0" />
+          <img src={logoWhiteUrl(basePath)} alt="" className="h-4 xs:h-5 shrink-0" />
           <span className="text-base xs:text-lg font-semibold truncate">
             {t('navigation.archiveLabel', t('site.acronym'))}
           </span>

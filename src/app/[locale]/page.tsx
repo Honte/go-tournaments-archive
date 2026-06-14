@@ -26,7 +26,7 @@ export default async function Home({ params }: PageProps) {
 
   return (
     <>
-      <Hero translations={translations} />
+      <Hero translations={translations} basePath={EVENT_CONFIG.basePath} />
       <div className="xl:grid xl:grid-cols-4 xl:gap-4">
         <div className="xl:col-span-3 xl:row-span-5">
           <Winners translations={translations} tournaments={tournaments} categories={EVENT_CONFIG.categories} />
