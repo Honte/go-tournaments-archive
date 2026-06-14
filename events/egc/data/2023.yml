@@ -1,0 +1,14 @@
+website: 
+ - https://www.eurogofed.org/egc/2023.html
+ - https://www.egc2023.de/
+notes: 5 rounds of double ladder until quarters + 3 rounds KO 
+stages:
+  - type: tournament
+    file: egc2023.txt
+    time: 80min + 40sec Fischer
+    scoringColumns:
+      - wins
+      - place
+    breakers:
+      - place
+    findSharedPlaces: true

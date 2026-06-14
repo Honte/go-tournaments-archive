@@ -1,0 +1,37 @@
+; TC[E211123A]
+; CL[A]
+; EV[Online European Championship 2021]
+; PC[XX, OGS: https://online-go.com]
+; DT[2021-11-23,2021-12-05]
+; HA[h9]
+; KM[6.5]
+; TM[120]
+; CM[ (submitted by erdbeer)]
+;.
+; Chinese rules Fischertime, 60/30              
+; https://eurogofed.org/egc/2021.html               
+;# Name Rank Cntry Clb NBW Pre 1 Pre 2 Pre 3 R1 QF SF SF SF F/3rd pl F/3rd pl F/3rd pl
+ 1 Shikshin Ilja              4p RU  16Kz  6 1   -       -       -       13+     8+      3+      3+      -       2+      2+      -        |12013342
+ 2 Kachanovskyi Artem         2p UA  Rivn  4 2   -       -       -       15+     7+      4+      4-      4+      1-      1-      -        |12662870
+ 3 Jabarin Ali                2p IL  TAv   4 3   -       -       -       12+     5+      1-      1-      -       4+      4-      4+       |14637810
+ 4 Lisy Pavol                 2p SK  Vlky  4 4   -       -       -       9+      6+      2-      2+      2-      3-      3+      3-       |12686597
+ 5 Podpera Lukas              7d CZ  APWS  4 5   19+     13+     20+     16+     3-      -       -       -       -       -       -        |13201914
+ 6 Le_Calve Tanguy            1p FR  44Na  1 5   -       -       -       11+     4-      -       -       -       -       -       -        |14962706
+ 7 Mitic Nikola               7d RS  NiSt  3 5   23+     24+     15-     14+     2-      -       -       -       -       -       -        |10801923
+ 8 Drean-Guenaizia Benjamin   6d FR  29Co  1 5   -       -       -       10+     1-      -       -       -       -       -       -        |14513532
+ 9 Frejlak Stanislaw          1p PL  Wars  2 9   11+     18+    0+       4-      -       -       -       -       -       -       -        |12837594
+10 Mitic Dusan                7d RS  NiSt  2 9   12+     21-     22+     8-      -       -       -       -       -       -       -        |10649507
+11 Campagnie Remi             6d FR  91Or  1 9   9-      17-     18+     6-      -       -       -       -       -       -       -        |15449269
+12 Welticke Jonas             6d DE  BN    2 9   10-     22+     21+     3-      -       -       -       -       -       -       -        |15786287
+13 Blomback Fredrik           6d SE  Stoc  2 9   20+     5-      19+     1-      -       -       -       -       -       -       -        |13937946
+14 Kravets Andrii             1p UA  Rivn  0 9   -       -       -       7-      -       -       -       -       -       -       -        |12350261
+15 Lin Viktor                 6d AT  Go7   2 9   24-     23+     7+      2-      -       -       -       -       -       -       -        |14501256
+16 Chernykh Anton             6d RU  50Zh  0 9   -       -       -       5-      -       -       -       -       -       -       -        |15713467
+17 Zeijst Rob_van             7d NL  Amst  1 17   18-     11+     0-       -       -       -       -       -       -       -       -        |10337382
+18 Kraemer Lukas              6d DE  BN    1 17  17+     9-      11-     -       -       -       -       -       -       -       -        |14698739
+19 Kajmin Vjacheslav          6d RU  77Mo  0 17   5-      20-     13-     -       -       -       -       -       -       -       -        |14986257
+20 Fragman Amir               6d IL  MGC   1 17   13-     19+     5-      -       -       -       -       -       -       -       -        |13625315
+21 Vazquez Oscar              6d ES  Pant  1 17   22-     10+     12-     -       -       -       -       -       -       -       -        |15633673
+22 Neirynck Lucas             5d BE  75Ju  1 17   21+     12-     10-     -       -       -       -       -       -       -       -        |14898301
+23 Burzo Cornel               6d RO  BaMa  0 17   7-      15-     24-     -       -       -       -       -       -       -       -        |10325249
+24 Burnaevskij Igor           6d RU  50Kg  2 17   15+     7-      23+     -       -       -       -       -       -       -       -        |16049671

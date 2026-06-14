@@ -1,0 +1,44 @@
+; TC[E240728A]
+; CL[A]
+; EV[European Championship 2024]
+; PC[FR, Toulouse]
+; DT[2024-07-28,2024-08-04]
+; HA[h9]
+; KM[6.5]
+; TM[160]
+; CM[https://www.eurogofed.org/egc/2024.html (submitted by erdbeer)]
+;.
+; European Championship, 28.7.- 4.8.2024, Toulouse, Chinese Rules, Fischertime 80/40             
+;# Name  Rank Country Club NbW 1 2 3 4 5 6 7 8
+ 1 Kravets Andrii             1p UA  Rivn  6 1   25+     14+     9+      -       -       8+      4+      2+       |12350261
+ 2 Debarre Thomas             7d FR  67SE  6 2   26+     9-      17+     14+     10+     6+      3+      1-       |12950872
+ 3 Blomback Fredrik           7d SE  Stoc  6 3   11+     4-      21+     16+     9+      5+      2-      4+       |13937946
+ 4 Karadaban Denis            6d FR  38Gr  4 4   30+     3+      10+     -       -       7+      1-      3-       |15637314
+ 5 Surma Mateusz              3p PL  Dzim  3 5   27+     20+     8+      -       -       3-      -       -        |12837968
+ 6 Jabarin Ali                2p IL  TAv   3 5   29+     24+     7+      -       -       2-      -       -        |14637810
+ 7 Burzo Cornel               6d RO  BaMa  3 5   19+     23+     6-      -       12+     4-      -       -        |10325249
+ 8 Neirynck Lucas             6d BE  75Ju  3 5   17+     15+     5-      -       11+     1-      -       -        |14898301
+ 9 Labouret Florent           5d FR  38Gr  2 9   22+     2+      1-      -       3-      -       -       -        |16486184
+10 Kraemer Lukas              6d DE  BN    2 9   13+     16+     4-      -       2-      -       -       -        |14698739
+11 Dobranis Denis             6d RO  ATSU  3 9   3-      30+     24+     13+     8-      -       -       -        |15350038
+12 Vazquez Ashe               7d ES  Pant  3 9   14-     25+     20+     15+     7-      -       -       -        |15633673
+13 Campagnie Remi             6d FR  xxxx  2 13   10-     32+     23+     11-     -       -       -       -        |15449269
+14 Woo Ho_Yeung               6d UK  Nott  2 13  12+     1-      18+     2-      -       -       -       -        |16598450
+15 Podpera Lukas              7d CZ  APWS  2 13   28+     8-      22+     12-     -       -       -       -        |13201914
+16 Dai Junfu                  8d FR  91Or  2 13   32+     10-     19+     3-      -       -       -       -        |10349537
+17 Le_Calve Tanguy            1p FR  13Ma  1 17   8-      28+     2-      -       -       -       -       -        |14962706
+18 Welticke Jonas             6d DE  BN    1 17   20-     27+     14-     -       -       -       -       -        |15786287
+19 Boviz Dominik              6d HU  MGE   1 17   7-      31+     16-     -       -       -       -       -        |14225926
+20 Pankoke Matias             6d DE  OS    1 17   18+     5-      12-     -       -       -       -       -        |15933973
+21 Bernardis Davide           6d IT  Rave  1 17   24-     29+     3-      -       -       -       -       -        |17886946
+22 Frejlak Stanislaw          1p PL  Tubi  1 17   9-      26+     15-     -       -       -       -       -        |12837594
+23 Kachanovskyi Artem         3p UA  Rivn  1 17   31+     7-      13-     -       -       -       -       -        |12662870
+24 Zeijst Rob_van             7d NL  Amst  1 17   21+     6-      11-     -       -       -       -       -        |10337382
+25 Xing Yuze                  5d DE  HD    0 25   1-      12-     -       -       -       -       -       -        |18525012
+26 Zhurakovskyi Bohdan        6d UA  Rivn  0 25   2-      22-     -       -       -       -       -       -        |12374461
+27 Spiegel Lothar             5d AT  Go7   0 25   5-      18-     -       -       -       -       -       -        |13750836
+28 Bohatskyi Dmytro           6d UA  Kyiv  0 25   15-     17-     -       -       -       -       -       -        |10250867
+29 Ovsiienko Vsevolod         6d UA  Kyiv  0 25   6-      21-     -       -       -       -       -       -        |17633902
+30 Drean-Guenaizia Benjamin   7d FR  13Ma  0 25   4-      11-     -       -       -       -       -       -        |14513532
+31 Tu Linh_Vu                 5d FR  92An  0 25   23-     19-     -       -       -       -       -       -        |17862130
+32 Robichon Benoit            3d FR  38Gr  0 25   16-     13-     -       -       -       -       -       -        |17649764

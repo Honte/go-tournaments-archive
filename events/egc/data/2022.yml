@@ -1,0 +1,13 @@
+website: 
+ - https://www.eurogofed.org/egc/2022.html
+notes: 5 rounds of double ladder until quarters + 3 rounds KO 
+stages:
+  - type: tournament
+    file: egc2022.txt
+    time: 80min + 40sec Fischer
+    scoringColumns:
+      - wins
+      - place
+    breakers:
+      - place
+    findSharedPlaces: true

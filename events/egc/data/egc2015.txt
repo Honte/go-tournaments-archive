@@ -1,0 +1,35 @@
+; TC[E150801A]
+; CL[A]
+; EV[European Championship 2016]
+; PC[CZ, Liberec]
+; DT[2015-07-26,2015-08-02]
+; HA[h9]
+; KM[7.5]
+; TM[210]
+; CM[ (submitted by cieply)]
+;.
+;
+   1 Fan Hui                        2p FR  33Bo     6     1   23+/w   13+/b    6-/b    9+/b    7+/w      4+      2+ |12633346
+   2 Jabarin Ali                    1p IL  TAv      5     2   13-/b   23+/w   15+/w   11+/b    6+/w      3+      1- |14637810
+   3 Shikshin Ilja                  1p RU  16Kz     6     3   21+/b    9+/w   10+/b   12+/b    8+/w      2-      4+ |12013342
+   4 Debarre Thomas                 6d FR  67SE     4     4   16-/w   20+/b   18+/b    8+/b    5+/w      1-      3- |12950872
+   5 Lisy Pavol                     1p SK  DoSt     4     5   20+/w   16+/b    8+/b    6+/w    4-/b      0=      0= |12686597
+   6 Kachanovskyi Artem             7d UA  Rivn     3     5   19+/w    7+/b    1+/w    5-/b    2-/b      0=      0= |12662870
+   7 Surma Mateusz                  1p PL  Dzim     3     5   15+/b    6-/w   13+/w   10+/w    1-/b      0=      0= |12837968
+   8 Dinerstein Alexandr            3p RU  16Kz     2     5   24+/b   18+/b    5-/w    4-/w    3-/b      0=      0= |10313237
+   9 Lin Viktor                     6d AT  Go7      2     9   11+/b    3-/b   14+/w    1-/w      0=      0=      0= |14501256
+  10 Pop Cristian                   7d RO  CSRB     2     9   17+/w   14+/b    3-/w    7-/b      0=      0=      0= |10333389
+  11 Taranu Catalin                 5p RO  Bucu     2     9    9-/w   21+/b   17+/b    2-/w      0=      0=      0= |10586785
+  12 Surin Dmitrij                  6d RU  78SP     2     9   18-/w   24+/b   16+/b    3-/w      0=      0=      0= |10825254
+  13 Mitic Dusan                    6d RS  NiSt     1    13    2+/w    1-/w    7-/b      0=      0=      0=      0= |10649507
+  14 Burzo Cornel                   6d RO  BaMa     1    13   22+/w   10-/w    9-/b      0=      0=      0=      0= |10325249
+  15 Le_Calve Tanguy                6d FR  44Na     1    13    7-/w   19+/b    2-/b      0=      0=      0=      0= |14962706
+  16 Kravets Andrii                 6d UA  Rivn     1    13    4+/b    5-/w   12-/w      0=      0=      0=      0= |12350261
+  17 Bajenaru Dragos                6d RO  Bucu     1    13   10-/b   22+/b   11-/w      0=      0=      0=      0= |10349240
+  18 Silt Ondrej                    6d CZ  AKun     1    13   12+/b    8-/w    4-/w      0=      0=      0=      0= |10337481
+  19 Podpera Lukas                  6d CZ  APWS     0    19    6-/b   15-/w      0=      0=      0=      0=      0= |13201914
+  20 Drean-Guenaizia Benjamin       6d FR  29Co     0    19    5-/b    4-/w      0=      0=      0=      0=      0= |14513532
+  21 Prokop Jan                     5d CZ  SRic     0    19    3-/w   11-/w      0=      0=      0=      0=      0= |10433654
+  22 Mero Csaba                     6d HU  BuPe     0    19   14-/b   17-/w      0=      0=      0=      0=      0= |10225875
+  23 Simara Jan                     6d CZ  KVaS     0    19    1-/b    2-/b      0=      0=      0=      0=      0= |10749860
+  24 Sankin Timur                   6d RU  77Mo     0    19    8-/w   12-/w      0=      0=      0=      0=      0= |10801032

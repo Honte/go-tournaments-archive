@@ -1,0 +1,19 @@
+; TC[E110801A]
+; CL[A]
+; EV[European Championship 2011]
+; PC[FR, Bordeaux]
+; DT[2011-08-03,2011-08-06]
+; HA[h9]
+; KM[7.5]
+; TM[195]
+; CM[2.5 hours basic time + 1 minute byoyomi (submitted by FFG)]
+;.
+   1 Shikshin Ilja                  7d RU  16Kz     3     1      0=   8+/w0   3+/b0   2+/w0 |12013342
+   2 Taranu Catalin                 5p RO  Bucu     2     2      0=   7+/w0   4+/b0   1-/b0 |10586785
+   3 Kachanovskyi Artem             7d UA  Rivn     2     3      0=   5+/w0   1-/w0   4+/w0 |12662870
+   4 Dinerstein Alexandr            3p RU  16Kz     1     4      0=   6+/w0   2-/w0   3-/b0 |10313237
+   5 Silt Ondrej                    6d CZ  AKun     0     5      0=   3-/b0      0=      0= |10337481
+   6 Mitic Dusan                    6d RS  NiSt     0     5      0=   4-/b0      0=      0= |10649507
+   7 Burzo Cornel                   6d RO  BaMa     1     5      9+   2-/b0      0=      0= |10325249
+   8 Debarre Thomas                 6d FR  67SE     0     5      0=   1-/b0      0=      0= |12950872
+   9 Surin Dmitrij                  5d RU  78SP     0     9      7-      0=      0=      0= |10825254

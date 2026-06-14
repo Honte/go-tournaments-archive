@@ -1,0 +1,45 @@
+; TC[E220724A]
+; CL[A]
+; EV[European Championship 2022]
+; PC[RO, Vatra Dornei]
+; DT[2022-07-24,2022-08-31]
+; HA[h9]
+; KM[6.5]
+; TM[120]
+; CM[ (submitted by erdbeer)]
+;.
+; Japanese rules, 6.5 Komi, always Nigiri; Fischer Time, 80 min basic, 40 sec additional per move             
+;https://eurogofed.org/egc/2022.html             
+;# Name Rank Ctry Clb NbW R1 R2 R3 R4 R5 QF SF F
+ 1 Drean-Guenaizia Benjamin   6d FR  29Co  6   1  26+     15+     2-      -       12+     6+      3+      2+       |14513532
+ 2 Kachanovskyi Artem         2p UA  Rivn  5   2  25+     11+     1+      -       -       5+      4+      1-       |12662870
+ 3 Blomback Fredrik           6d SE  Stoc  5   3  32+     10+     9+      -       -       7+      1-      4+       |13937946
+ 4 Mitic Nikola               7d RS  NiSt  5   4  15-     26+     18+     13+     9+      8+      2-      3-       |10801923
+ 5 Vazquez Oscar              6d ES  Pant  3   5  30+     18+     6-      -       10+     2-      -       -        |15633673
+ 6 Jabarin Ali                2p IL  TAv   3   5  29+     17+     5+      -       -       1-      -       -        |14637810
+ 7 Kravets Andrii             1p UA  Rivn  3   5  28+     12+     8-      -       11+     3-      -       -        |12350261
+ 8 Frejlak Stanislaw          1p PL  Wars  3   5  27+     16+     7+      -       -       4-      -       -        |12837594
+ 9 Podpera Lukas              7d CZ  APWS  2   9  31+     19+     3-      -       4-      -       -       -        |13201914
+10 Le_Calve Tanguy            1p FR  44Na  3   9  24+     3-      20+     14+     5-      -       -       -        |14962706
+11 Zhurakovskyi Bohdan        5d UA  Rivn  3   9  13+     2-      21+     15+     7-      -       -       -        |12374461
+12 Bohatskyi Dmytro           6d UA  Kyiv  3   9  20+     7-      24+     16+     1-      -       -       -        |10250867
+13 Kruml Ondrej               6d CZ  Imba  2  13  11-     25+     17+     4-      -       -       -       -        |10886524
+14 Krushelnytskyi Valerii     6d UA  K     2  13  16-     27+     19+     10-     -       -       -       -        |15450072
+15 Labouret Florent           5d FR  38Gr  2  13  4+      1-      22+     11-     -       -       -       -        |16486184
+16 Grigoriu Elian_Ioan        6d RO  ATAR  2  13  14+     8-      23+     12-     -       -       -       -        |15974420
+17 Prokop Jan                 6d CZ  Imba  1  17  21+     6-      13-     -       -       -       -       -        |10433654
+18 Pop Cristian               7d RO  VaDo  1  17  22+     5-      4-      -       -       -       -       -        |10333389
+19 Burzo Cornel               6d RO  BaMa  1  17  23+     9-      14-     -       -       -       -       -        |10325249
+20 Boviz Dominik              6d HU  MGE   1  17  12-     28+     10-     -       -       -       -       -        |14225926
+21 Simara Jan                 6d CZ  xxxx  1  17  17-     29+     11-     -       -       -       -       -        |10749860
+22 Habu Koichiro              5d PL  Krak  1  17  18-     30+     15-     -       -       -       -       -        |10837827
+23 Pankoke Matias             6d DE  OS    1  17  19-     31+     16-     -       -       -       -       -        |15933973
+24 Pace Alessandro            5d IT  Roma  1  17  10-     32+     12-     -       -       -       -       -        |15049650
+25 Ovsiienko Vsevolod         4d UA  Kyiv  0  25  2-      13-     -       -       -       -       -       -        |17633902
+26 Danek Vladimir             5d CZ  APra  0  25  1-      4-      -       -       -       -       -       -        |10213016
+27 Dobranis Denis             4d RO  ATSU  0  25  8-      14-     -       -       -       -       -       -        |15350038
+28 Fenech Antoine             4d FR  67SE  0  25  7-      20-     -       -       -       -       -       -        |10349350
+29 Schomberg Niels            4d DE  DA    0  25  6-      21-     -       -       -       -       -       -        |14837075
+30 Fragman Amir               6d IL  MGC   0  25  5-      22-     -       -       -       -       -       -        |13625315
+31 Ruzicka Martin             4d DE  DA    0  25  9-      23-     -       -       -       -       -       -        |13037596
+32 Savolainen Javier-Aleksi   6d FI  YliG  0  25  3-      24-     -       -       -       -       -       -        |14001537

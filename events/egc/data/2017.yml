@@ -1,0 +1,11 @@
+website: https://www.eurogofed.org/egc/2017.html
+notes: 4 rounds of double ladder until quarters + 3 rounds KO 
+stages:
+  - type: tournament
+    file: egc2017.txt
+    scoringColumns:
+      - wins
+      - place
+    breakers:
+      - place
+    findSharedPlaces: true

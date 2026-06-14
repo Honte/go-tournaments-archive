@@ -1,0 +1,12 @@
+website: https://www.eurogofed.org/egc/2018.html
+notes: 5 rounds of double ladder until quarters + 3 rounds KO 
+stages:
+  - type: tournament
+    file: egc2018.txt
+    time: 90min + 45sec Fischer
+    scoringColumns:
+      - wins
+      - place
+    breakers:
+      - place
+    findSharedPlaces: true

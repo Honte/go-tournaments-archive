@@ -1,0 +1,11 @@
+website: https://www.eurogofed.org/results/congress/egc2015.htm
+notes: 4 rounds of preliminary + 3 rounds KO 
+stages:
+  - type: tournament
+    file: egc2015.txt
+    scoringColumns:
+      - wins
+      - place
+    breakers:
+      - place
+    findSharedPlaces: true

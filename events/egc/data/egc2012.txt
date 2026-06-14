@@ -1,0 +1,22 @@
+; TC[E120729A]
+; CL[A]
+; EV[European Championship 2012]
+; PC[DE, Bonn]
+; DT[2012-08-01,2012-08-04]
+; HA[h9]
+; KM[6.5]
+; TM[112.5]
+; CM[Adjusted time < 3k : 112.5             3d - 3k: 143.5               > 2d : 255 (submitted by Ago)]
+;.
+; Main 2012
+   1 Simara Jan                     6d CZ  KVaS     4     1      9+   8+/w0   3+/b0   2+/b0 |10749860
+   2 Shikshin Ilja                  7d RU  16Kz     2     2      0=   7+/b0   4+/w0   1-/w0 |12013342
+   3 Lisy Pavol                     5d SK  DoSt     3     3     11+   5+/w0   1-/w0   4+/w0 |12686597
+   4 Debarre Thomas                 6d FR  67SE     1     4      0=   6+/w0   2-/b0   3-/b0 |12950872
+   5 Silt Ondrej                    6d CZ  AKun     2     5      0=   3-/b0   7+/w0   6+/b0 |10337481
+   6 Tormanen Antti                 6d FI  eGo      1     6      0=   4-/b0   8+/b0   5-/w0 |12949310
+   7 Surma Mateusz                  6d PL  Dzim     2     7     10+   2-/w0   5-/b0   8+/w0 |12837968
+   8 Burzo Cornel                   6d RO  BaMa     0     8      0=   1-/b0   6-/w0   7-/b0 |10325249
+   9 Zhao Pei                       6d DE  F        0     9      1-      0=      0=      0= |10201235
+  10 Pop Cristian                   7d RO  Bucu     0     9      7-      0=      0=      0= |10333389
+  11 Florescu Ion                   6d RO  Meij     0     9      3-      0=      0=      0= |10998163

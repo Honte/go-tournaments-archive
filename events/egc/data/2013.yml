@@ -1,0 +1,11 @@
+website: https://www.eurogofed.org/results/congress/egc2013.htm
+notes: After 7 rounds of Open best 6 europeans qualified to quarterfinal and next 4 played a relagation game. Best 8 played 3 rounds to determine places (KO)
+stages:
+  - type: tournament
+    file: egc2013.txt
+    scoringColumns:
+      - wins
+      - place
+    breakers:
+      - place
+    findSharedPlaces: true

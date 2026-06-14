@@ -1,0 +1,42 @@
+; TC[E190727A]
+; CL[A]
+; EV[EGC European Championship 2019]
+; PC[BE, Brussels]
+; DT[2019-07-21,2019-07-28]
+; HA[h9]
+; KM[6.5]
+; TM[112.5]
+; CM[ (submitted by mlanger)]
+;.
+   1 Shikshin Ilja                  3p RU  16Kz     6     1   15+/b   13+/w   10+/b      0=      0=    5+/w      3+      2+ |12013342
+   2 Kachanovskyi Artem             2p UA  Rivn     6     2   23+/b    3-/w   18+/w     14+   10+/b    8+/w      4+      1- |12662870
+   3 Podpera Lukas                  7d CZ  APWS     5     3   30+/w    2+/b   12+/b      0=      0=    6+/w      1-      4+ |13201914
+   4 Frejlak Stanislaw              7d PL  Wars     5     4   19+/b   10-/w   21+/b     13+   12+/w    7+/w      2-      3- |12837594
+   5 Lin Viktor                     6d AT  Go7      4     5   18+/w    7-/b   23+/w     16+   11+/b    1-/b      0=      0= |14501256
+   6 Jabarin Ali                    2p IL  TAv      3     5   14+/b   24+/w    7-/b      0=    9+/w    3-/b      0=      0= |14637810
+   7 Lisy Pavol                     2p SK  Vlky     3     5   25+/b    5+/w    6+/w      0=      0=    4-/b      0=      0= |12686597
+   8 Surma Mateusz                  2p PL  Dzim     3     5   26+/b   22+/w   11+/w      0=      0=    2-/b      0=      0= |12837968
+   9 Welticke Jonas                 6d DE  BN       3     9   21+/w   11-/b   19+/w     15+    6-/b      0=      0=      0= |15786287
+  10 Kajmin Vjacheslav              6d RU  77Mo     2     9   31+/b    4+/b    1-/w      0=    2-/w      0=      0=      0= |14986257
+  11 Mitic Dusan                    7d RS  NiSt     2     9   27+/w    9+/w    8-/b      0=    5-/w      0=      0=      0= |10649507
+  12 Le_Calve Tanguy                1p FR  44Na     2     9   28+/b   20+/w    3-/w      0=    4-/b      0=      0=      0= |14962706
+  13 Campagnie Remi                 6d FR  91Or     2    13   29+/b    1-/b   17+/w      4-      0=      0=      0=      0= |15449269
+  14 Vazquez Oscar                  5d ES  Nam      2    13    6-/w   32+/b   20+/b      2-      0=      0=      0=      0= |15633673
+  15 Fenech Antoine                 4d FR  67SE     2    13    1-/w   29+/w   22+/b     14-      0=      0=      0=      0= |10349350
+  16 Burzo Cornel                   7d RO  BaMa     2    13   20-/w   28+/w   24+/b      5-      0=      0=      0=      0= |10325249
+  17 Chernykh Anton                 6d RU  50Zh     1    17   22-/w   26+/w   13-/b      0=      0=      0=      0=      0= |15713467
+  18 Boviz Dominik                  6d HU  MGE      1    17    5-/b   25+/w    2-/b      0=      0=      0=      0=      0= |14225926
+  19 Neirynck Lucas                 5d BE  Pant     1    17    4-/w   31+/b    9-/b      0=      0=      0=      0=      0= |14898301
+  20 Kulkov Andrej                  6d RU  16Kz     1    17   16+/b   12-/b   14-/w      0=      0=      0=      0=      0= |10625329
+  21 Dinerstein Alexandr            3p RU  16Kz     1    17    9-/b   27+/w    4-/w      0=      0=      0=      0=      0= |10313237
+  22 Drean-Guenaizia Benjamin       6d FR  83SA     1    17   17+/b    8-/b   15-/w      0=      0=      0=      0=      0= |14513532
+  23 Obenaus Johannes               6d DE  B        1    17    2-/w   30+/b    5-/b      0=      0=      0=      0=      0= |13049795
+  24 Surin Dmitrij                  6d RU  78SP     1    17   32+/b    6-/b   16-/w      0=      0=      0=      0=      0= |10825254
+  25 Pankoke Matias                 5d DE  OL       0    25    7-/w   18-/b      0=      0=      0=      0=      0=      0= |15933973
+  26 Grigoriu Elian_Ioan            5d DE  JIGS     0    25    8-/w   17-/b      0=      0=      0=      0=      0=      0= |15974420
+  27 Kraemer Lukas                  6d DE  BN       0    25   11-/b   21-/b      0=      0=      0=      0=      0=      0= |14698739
+  28 Shakhov Kim                    5d RU  77Mo     0    25   12-/w   16-/b      0=      0=      0=      0=      0=      0= |16762284
+  29 Mero Csaba                     6d HU  BPMG     0    25   13-/w   15-/b      0=      0=      0=      0=      0=      0= |10225875
+  30 Sankin Timur                   6d RU  77Mo     0    25    3-/b   23-/w      0=      0=      0=      0=      0=      0= |10801032
+  31 Pop Cristian                   7d RO  VaDo     0    25   10-/w   19-/w      0=      0=      0=      0=      0=      0= |10333389
+  32 Mitic Nikola                   7d RS  NiSt     0    25   24-/w   14-/w      0=      0=      0=      0=      0=      0= |10801923
