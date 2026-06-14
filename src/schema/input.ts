@@ -9,6 +9,7 @@ export type InputBaseStage = {
   komi?: number;
   rules?: string;
   breakers?: Breaker[];
+  columns?: string[];
   promoted?: number;
   placeOffset?: number;
   category?: string;
@@ -16,6 +17,7 @@ export type InputBaseStage = {
   location?: string;
   country?: string;
   excluded?: boolean;
+  collapsed?: boolean;
 };
 
 export type InputLeagueStage = InputBaseStage & {

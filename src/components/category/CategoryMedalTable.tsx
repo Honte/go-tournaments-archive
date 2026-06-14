@@ -4,7 +4,7 @@ import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { getCategoryMedalists } from '@/libs/category';
 import { MedalTable } from '@/components/MedalTable';
-import { H2 } from '@/components/ui/H2';
+import { H1 } from '@/components/ui/H1';
 import { PlayerLink } from '@/components/ui/PlayerLink';
 import { PlayerName } from '@/components/ui/PlayerName';
 
@@ -21,7 +21,7 @@ export function CategoryMedalTable({ event, category, stats, translations }: Cat
 
   return (
     <div className="flex-1 flex-col">
-      <H2>{t('details.awardedIn', t(`categories.short.${category}`))}</H2>
+      <H1>{t('details.awardedIn', t(`categories.short.${category}`))}</H1>
       <MedalTable
         translations={translations}
         results={medalists}

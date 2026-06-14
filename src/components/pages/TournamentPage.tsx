@@ -1,12 +1,10 @@
 import type { Tournament } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
-import { getStageName } from '@/libs/stage';
 import { Awarded } from '@/components/Awarded';
 import { GamesList } from '@/components/GamesList';
 import { TopNavigation } from '@/components/navigation/TopNavigation';
-import { StageDetails } from '@/components/StageDetails';
-import { StageResults } from '@/components/StageResults';
+import { StageSection } from '@/components/StageSection';
 import { TournamentAnnouncement } from '@/components/TournamentAnnouncement';
 import { TournamentDescription } from '@/components/TournamentDescription';
 import { TournamentDetails } from '@/components/TournamentDetails';
@@ -36,13 +34,14 @@ export function TournamentPage({ event, tournament, translations, years, descrip
       <TournamentAnnouncement tournament={tournament} translations={translations} />
 
       {stagesToDisplay.map((stage, index) => (
-        <div key={index} className="my-4">
-          <h2 className="text-xl font-bold pb-1 my-2 border-b-event-dark border-b-2">
-            {getStageName(stage, translations)}
-          </h2>
-          <StageDetails event={event} stage={stage} translations={translations} />
-          <StageResults event={event} stage={stage} games={games} players={players} translations={translations} />
-        </div>
+        <StageSection
+          key={index}
+          event={event}
+          stage={stage}
+          games={games}
+          players={players}
+          translations={translations}
+        />
       ))}
 
       <GamesList event={event} tournament={tournament} translations={translations} />

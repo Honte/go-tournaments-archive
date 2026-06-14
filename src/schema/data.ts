@@ -82,6 +82,7 @@ export type BaseStage = {
   promoted?: number;
   placeOffset?: number;
   excluded?: boolean;
+  collapsed?: boolean;
 };
 
 export type LeagueStage = BaseStage & {
@@ -89,6 +90,7 @@ export type LeagueStage = BaseStage & {
   rounds: string[][];
   table: TableResult[];
   breakers?: Breaker[];
+  columns?: string[];
   customBreakers?: Record<string, CustomBreaker>;
   order?: string[];
   games?: string[];
@@ -259,6 +261,7 @@ export type CountryResult = {
 export type CountryStats = {
   country: string;
   medals: StatsMedals;
+  categoriesMedals: Record<string, StatsMedals>;
   score: number;
   years: Record<number, CountryResult>;
   bestPlace: number;

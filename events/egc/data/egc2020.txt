@@ -1,0 +1,44 @@
+; TC[E200924A]
+; CL[A]
+; EV[Online European Championship 2020]
+; PC[XX, OGS: https://online-go.com]
+; DT[2020-09-24,2020-11-02]
+; HA[h9]
+; KM[6.5]
+; TM[120]
+; CM[Fischer Time, 60 minutes basic, 30 sec per additional move (submitted by erdbeer)]
+;.
+; https://eurogofed.org/egc/2020.html#brackets
+;# Name Rank Country Club NBW 1 2 3 4 5 6 7 8 9 10
+ 1 Shikshin Ilja              3p RU  16Kz  6 1   0=      0=      9+/w    5+/w    4+/w    4-/b    4+/w    2+/w    2-/b    2+/w     |12013342
+ 2 Jabarin Ali                2p IL  TAv   5 2   0=      0=      16+/b   8+/w    3-/b    3+/w    3+/w    1-/b    1+/w    1-/b     |14637810
+ 3 Kachanovskyi Artem         2p UA  Rivn  5 3   0=      0=      13+/w   7+/w    2+/w    2-/b    2-/b    4+/w    4+/b    0=       |12662870
+ 4 Surma Mateusz              2p PL  Dzim  3 4   0=      0=      12+/w   6+/w    1-/b    1+/w    1-/b    3-/b    3-/w    0=       |12837968
+ 5 Kravets Andrii             1p UA  Rivn  1 5   0=      0=      10+/w   1-/b    0=      0=      0=      0=      0=      0=       |12350261
+ 6 Chernykh Anton             7d RU  50Zh  2 5   0=      19+/w   11+/b   4-/b    0=      0=      0=      0=      0=      0=       |15713467
+ 7 Le_Calve Tanguy            1p FR  44Na  2 5   0=      22+/w   14+/b   3-/b    0=      0=      0=      0=      0=      0=       |14962706
+ 8 Drean-Guenaizia Benjamin   6d FR  83SA  2 5   0=      23+/w   15+/b   2-/b    0=      0=      0=      0=      0=      0=       |14513532
+ 9 Campagnie Remi             6d FR  91Or  2 9   25+/w   17+/b   1-/b    0=      0=      0=      0=      0=      0=      0=       |15449269
+10 Neirynck Lucas             5d BE  75Ju  2 9   26+/w   18+/b   5-/b    0=      0=      0=      0=      0=      0=      0=       |14898301
+11 Frejlak Stanislaw          7d PL  Wars  0 9   0=      0=      6-/w    0=      0=      0=      0=      0=      0=      0=       |12837594
+12 Mitic Nikola               7d RS  NiSt  1 9   0=      20+/w   4-/b    0=      0=      0=      0=      0=      0=      0=       |10801923
+13 Vazquez Oscar              6d ES  Pant  2 9   29+/w   21+/b   3-/b    0=      0=      0=      0=      0=      0=      0=       |15633673
+14 Lin Viktor                 6d AT  Go7   0 9   0=      0=      7-/w    0=      0=      0=      0=      0=      0=      0=       |14501256
+15 Podpera Lukas              7d CZ  APWS  0 9   0=      0=      8-/w    0=      0=      0=      0=      0=      0=      0=       |13201914
+16 Kraemer Lukas              6d DE  BN    2 9   32+/b   24+/b   2-/w    0=      0=      0=      0=      0=      0=      0=       |14698739
+17 Mero Csaba                 7d HU  BPMG  0 17   0=      9-/w    0=      0=      0=      0=      0=      0=      0=      0=       |10225875
+18 Dinerstein Alexandr        3p RU  16Kz  0 17   0=      10-/w   0=      0=      0=      0=      0=      0=      0=      0=       |10313237
+19 Fragman Amir               6d IL  MGC   1 17   27+/w   6-/b    0=      0=      0=      0=      0=      0=      0=      0=       |13625315
+20 Kajmin Vjacheslav          6d RU  77Mo  1 17   28+/w   12-/b   0=      0=      0=      0=      0=      0=      0=      0=       |14986257
+21 Burzo Cornel               6d RO  BaMa  0 17   0=      13-/w   0=      0=      0=      0=      0=      0=      0=      0=       |10325249
+22 Krushelnytskyi Valerii     5d UA  Rivn  1 17   30+/b   7-/b    0=      0=      0=      0=      0=      0=      0=      0=       |15450072
+23 Savolainen Javier-Aleksi   5d FI  YliG  1 17   31+/b   8-/b    0=      0=      0=      0=      0=      0=      0=      0=       |14001537
+24 Mitic Dusan                7d RS  NiSt  0 17   0=      16-/w   0=      0=      0=      0=      0=      0=      0=      0=       |10649507
+25 Zatonskikh Anton           6d RU  27Kh  0 25   9-/b    0=      0=      0=      0=      0=      0=      0=      0=      0=       |12486639
+26 Djepov Sinan               5d BG  SlvP  0 25   10-/b   0=      0=      0=      0=      0=      0=      0=      0=      0=       |17486205
+27 Pankoke Matias             5d DE  Olde  0 25   19-/b   0=      0=      0=      0=      0=      0=      0=      0=      0=       |15933973
+28 Kruml Ondrej               5d CZ  Imba  0 25   20-/b   0=      0=      0=      0=      0=      0=      0=      0=      0=       |10886524
+29 Burnaevskij Igor           6d RU  77Mo  0 25   13-/b   0=      0=      0=      0=      0=      0=      0=      0=      0=       |16049671
+30 Grigoriu Elian_Ioan        5d RO  ATAR  0 25   22-/w   0=      0=      0=      0=      0=      0=      0=      0=      0=       |15974420
+31 Sankin Timur               6d RU  77Mo  0 25   23-/w   0=      0=      0=      0=      0=      0=      0=      0=      0=       |10801032
+32 Hamrah Schayan             5d AT  Wien  0 25   16-/w   0=      0=      0=      0=      0=      0=      0=      0=      0=       |15437598

@@ -1,0 +1,44 @@
+; TC[E230723A]
+; CL[A]
+; EV[European Championship 2023]
+; PC[DE, Markkleeberg, Leipzig]
+; DT[2023-07-23,2023-07-30]
+; HA[h9]
+; KM[6.5]
+; TM[160]
+; CM[ (submitted by erdbeer)]
+;.
+;23-30-July 2023, Leipzig Fischertime 80/40, Chinese rules, European nigiri             
+;# Name  Rank Country Club NbW 1 2 3 4 5 6 7 8
+ 1 Kravets Andrii             1p UA  Rivn  7 1   30+     8-      22+     13+      9+     6+      3+      2+       |12350261
+ 2 Jabarin Ali                2p IL  TAv   5 2   19+     11+     3-      -       12+     8+      4+      1-       |14637810
+ 3 Vazquez Ashe               7d ES  Pant  5 3   22+     14+     2+      -       -       7+      1-      4+       |15633673
+ 4 Blomback Fredrik           6d SE  Stoc  4 4   23+     17+     6-      -       11+     5+      2-      3-       |13937946
+ 5 Kachanovskyi Artem         2p UA  Rivn  3 5   24+     18+     9+      -       -       4-      -       -        |12662870
+ 6 Frejlak Stanislaw          1p PL  KA    3 5   32+     12+     4+      -       -       1-      -       -        |12837594
+ 7 Debarre Thomas             7d FR  67SE  4 5   27+     9-     23+     15+     10+      3-      -       -        |12950872
+ 8 Welticke Jonas             6d DE  BN    3 5   21+     1+      10+     -       -       2-      -       -        |15786287
+ 9 Le_Calve Tanguy            1p FR  13Ma  2 9   16+     7+      5-      -       1-      -       -       -        |14962706
+10 Krushelnytskyi Valerii     6d UA  Rivn  2 9   20+     13+     8-      -       7-      -       -       -        |15450072
+11 Burzo Cornel               6d RO  BaMa  3 9   26+     2-      21+     14+     4-      -       -       -        |10325249
+12 Campagnie Remi             6d FR  67SE  3 9   15+     6-      24+     16+     2-      -       -       -        |15449269
+13 Podpera Lukas              7d CZ  APWS  2 13   31+     10-     19+     1-      -       -       -       -        |13201914
+14 Simara Jan                 1p CZ  Imba  2 13   29+     3-      20+     11-     -       -       -       -        |10749860
+15 Boviz Dominik              6d HU  MGE   2 13   12-     32+     18+     7-      -       -       -       -        |14225926
+16 Pankoke Matias             6d DE  OS    2 13   9-      27+     17+     12-     -       -       -       -        |15933973
+17 Drean-Guenaizia Benjamin   7d FR  13Ma  1 17   28+     4-      16-     -       -       -       -       -        |14513532
+18 Mero Csaba                 6d HU  PaGo  1 17   25+     5-      15-     -       -       -       -       -        |10225875
+19 Dobranis Denis             5d RO  ATSU  1 17   2-      26+     13-     -       -       -       -       -        |15350038
+20 Teuber Benjamin            6d DE  HH    1 17   10-     31+     14-     -       -       -       -       -        |10437174
+21 Grigoriu Elian_Ioan        6d RO  ATAR  1 17   8-      30+     11-     -       -       -       -       -        |15974420
+22 Bohatskyi Dmytro           6d UA  Kyiv  1 17   3-      29+     1-      -       -       -       -       -        |10250867
+23 Obenaus Johannes           6d DE  B     1 17   4-      28+     7-      -       -       -       -       -        |13049795
+24 Ruzicka Martin             5d DE  DA    1 17   5-      25+     12-     -       -       -       -       -        |13037596
+25 Neirynck Lucas             6d BE  75Ju  0 25   18-     24-     -       -       -       -       -       -        |14898301
+26 Zhurakovskyi Bohdan        6d UA  Rivn  0 25   11-     19-     -       -       -       -       -       -        |12374461
+27 Savolainen Javier-Aleksi   6d FI  YliG  0 25   7-      16-     -       -       -       -       -       -        |14001537
+28 Fragman Amir               6d IL  MGC   0 25   17-     23-     -       -       -       -       -       -        |13625315
+29 Groenen Geert              6d NL  DHaa  0 25   14-     22-     -       -       -       -       -       -        |10501216
+30 Bernardis Davide           5d IT  Rave  0 25   1-      21-     -       -       -       -       -       -        |17886946
+31 Ovsiienko Vsevolod         5d UA  Kyiv  0 25   13-     20-     -       -       -       -       -       -        |17633902
+32 Kacwin Christopher         5d DE  D     0 25   6-      15-     -       -       -       -       -       -        |14262149

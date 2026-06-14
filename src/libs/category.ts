@@ -6,6 +6,11 @@ export type CategoryMedalist = {
   medals: StatsMedals;
 };
 
+export type CategoryCountryMedalist = {
+  country: string;
+  medals: StatsMedals;
+};
+
 export function getCategoryMedalists(stats: CategoryStats): CategoryMedalist[] {
   const medalists: Record<string, CategoryMedalist> = {};
 
@@ -19,6 +24,30 @@ export function getCategoryMedalists(stats: CategoryStats): CategoryMedalist[] {
         };
 
         medalists[player.id].medals[player.place - 1].push(String(tournament.year));
+      }
+    }
+  }
+
+  return Object.values(medalists).sort(
+    (a, b) =>
+      b.medals[0].length - a.medals[0].length ||
+      b.medals[1].length - a.medals[1].length ||
+      b.medals[2].length - a.medals[2].length
+  );
+}
+
+export function getCategoryCountryMedalists(stats: CategoryStats): CategoryCountryMedalist[] {
+  const medalists: Record<string, CategoryCountryMedalist> = {};
+
+  for (const tournament of stats.tournaments) {
+    for (const player of tournament.results) {
+      if (player.country && typeof player.place === 'number' && player.place <= 3) {
+        medalists[player.country] ||= {
+          country: player.country,
+          medals: [[], [], []],
+        };
+
+        medalists[player.country].medals[player.place - 1].push(String(tournament.year));
       }
     }
   }

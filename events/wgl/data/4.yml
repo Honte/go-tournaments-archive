@@ -2,7 +2,7 @@ website: https://roundsboard.com/tournaments/warszawska-liga-go-sezon-4
 stages:
   - type: tournament
     file: wgl_04_2025.txt
-    komi: 6.5    
+    komi: 6.5
     scoringColumns:
       - null
       - wins
@@ -13,4 +13,6 @@ stages:
       - mms
       - sos
       - sosos
+    columns:
+      - wins
     findSharedPlaces: true

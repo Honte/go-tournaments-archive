@@ -1,0 +1,17 @@
+{
+  "site": {
+    "name": "European Go Championships Archive",
+    "acronym": "EGC",
+    "description": "Archive of all European Championships tournaments",
+    "yearDescription": "Results of EGC %{0}",
+    "allTimeStatsDescription": "All-time statistics of all European Go Championships participants",
+    "playerStatsDescription": "Participation statistics of %{0} in all European Go Championships events"
+  },
+  "details": {
+    "goToWebsite": "Go to EGC %{0} website"
+  },
+  "winners": {
+    "title": "Medalists of European Go Championships",
+    "first": "European Champion"
+  }
+}

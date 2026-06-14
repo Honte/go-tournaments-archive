@@ -31,6 +31,7 @@ stages:
       - 7-48 7:B+R round:1 sgf:2010/1-PalBalogh-FrancescaMauri.sgf
       - 8-3 3:W+R round:2 sgf:2010/2-YoheiSato-TaeweonCho.sgf
       - 8-5 5:W+10.5 round:7 sgf:2010/7-YoheiSato-OndrejSilt.sgf
+      - 8-13 8:B+R round:5 sgf:2010/5-YoheiSato-FernandoAguilar.sgf
       - 9-7 7:W+3.5 round:2 sgf:2010/2-YuxiangLou-PalBalogh.sgf
       - 9-13 9:B+17.5 round:8 sgf:2010/8-YuxiangLou-FernandoAguilar.sgf
       - 10-4 4:W+4.5 round:7 sgf:2010/7-YongfeiGe-NaiSanChan.sgf

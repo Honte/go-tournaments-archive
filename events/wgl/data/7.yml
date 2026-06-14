@@ -2,14 +2,16 @@ website: https://roundsboard.com/tournaments/warszawska-liga-go-sezon-7
 stages:
   - type: tournament
     file: wgl_07_2026.txt
-    komi: 6.5    
+    komi: 6.5
     scoringColumns:
       - mms
       - sos
       - sodos
-      - wins      
+      - wins
     breakers:
       - mms
       - sos
       - sodos
+    columns:
+      - wins
     findSharedPlaces: true

@@ -1,0 +1,14 @@
+website: https://www.eurogofed.org/egc/2021.html
+notes: 3 rounds of round robin for players seeded 9-24 and 4 rounds KO (semifinal & finals best of 3)
+stages:
+  - type: tournament
+    file: egc2021.txt
+    time: 60min + 30sec Fischer
+    notes: Chinese Rules, Nigiri in all games, except in the second game of a best of three series
+    komi: 7.5
+    scoringColumns:
+      - wins
+      - place
+    breakers:
+      - place
+    findSharedPlaces: true

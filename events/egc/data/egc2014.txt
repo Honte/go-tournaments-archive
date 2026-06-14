@@ -1,0 +1,22 @@
+; TC[E140806A]
+; CL[A]
+; EV[MLily-WeiqiTV 58th European Go Congress - European Championship 2014]
+; PC[RO, Sibiu]
+; DT[2014-08-06,2014-08-09]
+; HA[h9]
+; KM[6.5]
+; TM[112.5]
+; CM[ (submitted by viorel.arsinoaia)]
+;.
+ 1 Fan Hui                      2p FR  75Op 3 1  0=     7+/w    4+/b   2+/w   |12633346
+ 2 Dinerstein Alexandr          3p RU  16Kz 2 2  0=     5+/b    3+/w   1-/b   |10313237
+ 3 Shikshin Ilja                7d RU  16Kz 2 3  0=     8+/b    2-/b   4+/b   |12013342  
+ 4 Jabarin Ali                  1p IL  TAv  2 4  11+/b  6+/b    1-/w   3-/w   |14637810
+ 5 Lisy Pavol                   1p SK  DoSt 3 5  10+/w  2-/w    8+/b   6+/w   |12686597
+ 6 Kachanovskyi Artem           6d UA  Rivn 1 6  0=     4-/w    7+/b   5-/b   |12662870
+ 7 Mero Csaba                   6d HU  BuPe 2 7  9+/b   1-/b    6-/w   8+/b   |10225875
+ 8 Podpera Lukas                6d CZ  APWS 1 8  12+/w  3-/w    5-/w   7-/w   |13201914
+ 9 Pop Cristian                 7d RO  CSRB 0 9  7-/w   0=      0=     0=     |10333389
+10 Burzo Cornel                 6d RO  BaMa 0 9  5-/b   0=      0=     0=     |10325249
+11 Silt Ondrej                  6d CZ  AKGY 0 9  4-/w   0=      0=     0=     |10337481
+12 Mitic Dusan                  6d RS  NiSt 0 9  8-/b   0=      0=     0=     |10649507    

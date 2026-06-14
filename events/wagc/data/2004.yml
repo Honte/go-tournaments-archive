@@ -29,24 +29,78 @@ stages:
       - 5-9 5:B+T round:6 sgf:2004/6-SeizoNakazono-LaurentHeiser.sgf
       - 6-3 3:W+R round:7 sgf:2004/7-XianyuLi-LiFu.sgf
       - 6-8 6:B+R round:3 sgf:2004/3-XianyuLi-TedNing.sgf
+      - 7-10 7:B+R round:6 sgf:2004/6-LingYingTong-RadekNechanicky.sgf
+      - 7-13 7:B+R round:8 sgf:2004/8-LingYingTong-FelixvonArnim.sgf
       - 7-14 7:B+R round:5 sgf:2004/5-LingYingTong-DmytroYatsenko.sgf
       - 10-2 2:W+13.5 round:4 sgf:2004/4-RadekNechanicky-YuChengLai.sgf
+      - 10-8 8:W+R round:8 sgf:2004/8-RadekNechanicky-TedNing.sgf
+      - 10-38 10:B+R round:2 sgf:2004/2-RadekNechanicky-ChoonHuatLee.sgf
       - 11-1 1:W+R round:3 sgf:2004/3-DmitrijSurin-KangwukYi.sgf
+      - 11-9 9:W+R round:8 sgf:2004/8-DmitrijSurin-LaurentHeiser.sgf
       - 12-5 5:W+R round:8 sgf:2004/8-DianaKoszegi-SeizoNakazono.sgf
+      - 12-8 12:B+0.5 round:5 sgf:2004/5-DianaKoszegi-TedNing.sgf
       - 12-9 9:W+8.5 round:1 sgf:2004/1-DianaKoszegi-LaurentHeiser.sgf
+      - 13-11 13:B+6.5 round:4 sgf:2004/4-FelixvonArnim-DmitrijSurin.sgf
+      - 13-31 13:B+R round:5 sgf:2004/5-FelixvonArnim-ColinGrierson.sgf
+      - 14-6 6:W+15.5 round:8 sgf:2004/8-DmytroYatsenko-XianyuLi.sgf
       - 15-60 15:B+53.5 round:1 sgf:2004/1-GustavFahl-ShibaShaw.sgf
+      - 16-14 16:B+R round:3 sgf:2004/3-LeonMatoh-DmytroYatsenko.sgf
+      - 16-47 16:B+R round:7 sgf:2004/7-LeonMatoh-OswaldoMoreano.sgf
+      - 19-59 19:B+R round:2 sgf:2004/2-PeterBrouwer-AlfredoValenzuela.sgf
+      - 20-12 12:W+R round:7 sgf:2004/7-AlexanderRix-DianaKoszegi.sgf
       - 21-45 21:B+29.5 round:4 sgf:2004/4-FernandoManriqueOchoa-DraganPaunic.sgf
+      - 22-25 22:B+6.5 round:8 sgf:2004/8-EduardoLopezHerrero-MichaelWinkler.sgf
+      - 22-33 22:B+11.5 round:3 sgf:2004/3-EduardoLopezHerrero-RitBenjarit.sgf
+      - 22-64 22:B+R round:2 sgf:2004/2-EduardoLopezHerrero-EdgarIvanEscobar.sgf
+      - 23-48 23:B+R round:3 sgf:2004/3-ZhiyiBensonLai-NarendraSowal.sgf
       - 25-18 25:B+R round:2 sgf:2004/2-MichaelWinkler-LucretiuCalota.sgf
+      - 27-18 18:W+26.5 round:8 sgf:2004/8-JanRamon-LucretiuCalota.sgf
+      - 27-20 20:W+R round:4 sgf:2004/4-JanRamon-AlexanderRix.sgf
+      - 28-15 15:W+R round:4 sgf:2004/4-ZoranMutabzija-GustavFahl.sgf
+      - 29-34 34:W+20.5 round:7 sgf:2004/7-PeterJadron-TonyPurcell.sgf
       - 30-31 31:W+3.5 round:2 sgf:2004/2-FatihSulak-ColinGrierson.sgf
+      - 31-23 23:W+R round:7 sgf:2004/7-ColinGrierson-ZhiyiBensonLai.sgf
       - 32-53 32:B+R round:1 sgf:2004/1-TimoPuha-SansarTsolmon.sgf
+      - 33-24 24:W+11.5 round:6 sgf:2004/6-RitBenjarit-JanuszKraszek.sgf
       - 33-46 33:B+R round:8 sgf:2004/8-RitBenjarit-AlbertasPetrauskas.sgf
       - 34-27 27:W+R round:1 sgf:2004/1-TonyPurcell-JanRamon.sgf
       - 35-4 4:W+R round:2 sgf:2004/2-JosteinFlood-BernardHelmstetter.sgf
+      - 35-26 26:W+T round:5 sgf:2004/5-JosteinFlood-NikolaJevtic.sgf
+      - 36-11 11:W+18.5 round:2 sgf:2004/2-NoelMitchell-DmitrijSurin.sgf
+      - 37-19 19:W+37.5 round:7 sgf:2004/7-AnhTuanTran-PeterBrouwer.sgf
+      - 38-7 7:W+R round:4 sgf:2004/4-ChoonHuatLee-LingYingTong.sgf
+      - 39-63 39:B+113.5 round:2 sgf:2004/2-DimasCabre-RosaMariaGomar.sgf
+      - 40-25 25:W+R round:5 sgf:2004/5-AntonioFernandezCaballero-MichaelWinkler.sgf
       - 40-29 29:W+3.5 round:3 sgf:2004/3-AntonioFernandezCaballero-PeterJadron.sgf
+      - 41-42 41:B+1.5 round:8 sgf:2004/8-JosefRenner-CarlosGonzalezZelaya.sgf
+      - 41-62 41:B+R round:1 sgf:2004/1-JosefRenner-FouadTehhani.sgf
       - 42-32 32:W+17.5 round:7 sgf:2004/7-CarlosGonzalezZelaya-TimoPuha.sgf
+      - 43-41 41:W+R round:3 sgf:2004/3-HenriJoitiIamashita-JosefRenner.sgf
+      - 43-46 46:W+10.5 round:6 sgf:2004/6-HenriJoitiIamashita-AlbertasPetrauskas.sgf
+      - 44-36 36:W+6.5 round:1 sgf:2004/1-ShlomoRaikin-NoelMitchell.sgf
+      - 45-49 49:W+2.5 round:1 sgf:2004/1-DraganPaunic-AlexandrSuponev.sgf
       - 47-51 51:W+11.5 round:1 sgf:2004/1-OswaldoMoreano-AbelRakotoarisoa.sgf
       - 48-47 48:B+11.5 round:2 sgf:2004/2-NarendraSowal-OswaldoMoreano.sgf
+      - 49-52 52:W+2.5 round:7 sgf:2004/7-AlexandrSuponev-AlfonsoPerez.sgf
+      - 49-55 49:B+R round:5 sgf:2004/5-AlexandrSuponev-PaulEdwards.sgf
+      - 50-29 29:W+R round:1 sgf:2004/1-GionataSoletti-PeterJadron.sgf
+      - 50-39 39:W+R round:4 sgf:2004/4-GionataSoletti-DimasCabre.sgf
+      - 51-17 17:W+R round:3 sgf:2004/3-AbelRakotoarisoa-GeertGroenen.sgf
+      - 52-28 28:W+24.5 round:1 sgf:2004/1-AlfonsoPerez-ZoranMutabzija.sgf
+      - 53-27 27:W+26.5 round:6 sgf:2004/6-SansarTsolmon-JanRamon.sgf
+      - 54-26 26:W+R round:1 sgf:2004/1-EdisonOng-NikolaJevtic.sgf
+      - 54-44 44:W+R round:7 sgf:2004/7-EdisonOng-ShlomoRaikin.sgf
+      - 54-61 54:B+19.5 round:4 sgf:2004/4-EdisonOng-DavitHarutyunyan.sgf
+      - 55-24 24:W+R round:1 sgf:2004/1-PaulEdwards-JanuszKraszek.sgf
+      - 56-19 19:W+R round:3 sgf:2004/3-AugustoUnten-PeterBrouwer.sgf
       - 56-30 30:W+34.5 round:5 sgf:2004/5-AugustoUnten-FatihSulak.sgf
+      - 57-21 21:W+53.5 round:2 sgf:2004/2-JoseTelesMenezes-FernandoManriqueOchoa.sgf
+      - 57-59 57:B+5.5 round:6 sgf:2004/6-JoseTelesMenezes-AlfredoValenzuela.sgf
       - 58-36 36:W+44.5 round:4 sgf:2004/4-EricPacheco-NoelMitchell.sgf
+      - 58-55 55:W+25.5 round:6 sgf:2004/6-EricPacheco-PaulEdwards.sgf
+      - 60-59 59:W+47.5 round:4 sgf:2004/4-ShibaShaw-AlfredoValenzuela.sgf
       - 61-37 37:W+R round:2 sgf:2004/2-DavitHarutyunyan-AnhTuanTran.sgf
       - 62-42 42:W+5.5 round:3 sgf:2004/3-FouadTehhani-CarlosGonzalezZelaya.sgf
+      - 63-60 60:W+33.5 round:5 sgf:2004/5-RosaMariaGomar-ShibaShaw.sgf
+      - 64-46 46:W+R round:3 sgf:2004/3-EdgarIvanEscobar-AlbertasPetrauskas.sgf
+      - 64-63 63:W+2.5 round:6 sgf:2004/6-EdgarIvanEscobar-RosaMariaGomar.sgf

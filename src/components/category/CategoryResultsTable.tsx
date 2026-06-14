@@ -1,5 +1,6 @@
 'use client';
 import type { ColumnDef, SortingFn } from '@tanstack/react-table';
+import { clsx } from 'clsx';
 import { useCallback, useMemo, useState } from 'react';
 import type { CategoryPlayer, CategoryStats } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
@@ -8,7 +9,7 @@ import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
 import type { KeysMatching } from '@/libs/types';
 import { StatsTable } from '@/components/table/StatsTable';
-import { H2 } from '@/components/ui/H2';
+import { H1 } from '@/components/ui/H1';
 import { PlayerLink } from '@/components/ui/PlayerLink';
 import { PlayerName } from '@/components/ui/PlayerName';
 import { Toggle } from '@/components/ui/Toggle';
@@ -19,6 +20,7 @@ export type CategoryResultsTableProps = {
   category: string;
   stats: CategoryStats;
   translations: Translations;
+  className?: string;
 };
 
 type SummaryRow = {
@@ -31,7 +33,7 @@ type SummaryRow = {
 };
 type MedalKey = KeysMatching<SummaryRow, CategoryPlayer[]>;
 
-export function CategoryResultsTable({ event, translations, stats }: CategoryResultsTableProps) {
+export function CategoryResultsTable({ event, translations, stats, className }: CategoryResultsTableProps) {
   const [includeUnsure, setIncludeUnsure] = useState(true);
   const t = getTranslator(translations);
 
@@ -118,8 +120,8 @@ export function CategoryResultsTable({ event, translations, stats }: CategoryRes
   );
 
   return (
-    <div className="flex-2 flex-col">
-      <H2>{t('stats.summary')}</H2>
+    <div className={clsx('flex-2 flex-col', className)}>
+      <H1>{t('stats.summary')}</H1>
       <StatsTable data={data} columns={columns} />
       {hasUnsure && (
         <div className="flex p-2">

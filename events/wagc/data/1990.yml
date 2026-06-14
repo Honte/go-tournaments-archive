@@ -19,12 +19,20 @@ stages:
     games:
       - 1-2 1:B+R round:4 sgf:1990/4-HaoChang-GwanwookAnn.sgf
       - 1-3 1:B+2.5 round:6 sgf:1990/6-HaoChang-HiroshiMiura.sgf
+      - 2-40 2:B+R round:1 sgf:1990/1-GwanwookAnn-JurgenMattern.sgf
       - 3-2 2:W+R round:7 sgf:1990/7-HiroshiMiura-GwanwookAnn.sgf
       - 3-9 3:B+R round:5 sgf:1990/5-HiroshiMiura-ChalresHuh.sgf
       - 5-8 8:W+4.5 round:2 sgf:1990/2-JyhhaoSu-FrankJanssen.sgf
       - 6-4 4:W+R round:5 sgf:1990/5-YingKan-LaurentHeiser.sgf
       - 6-10 6:B+R round:7 sgf:1990/7-YingKan-IgorDetkov.sgf
+      - 10-18 18:W+4.5 round:1 sgf:1990/1-IgorDetkov-PierreColmez.sgf
       - 11-5 5:W+12.5 round:7 sgf:1990/7-HelmutHasibeder-JyhhaoSu.sgf
+      - 11-28 11:B+19.5 round:1 sgf:1990/1-HelmutHasibeder-DavidCoughlin.sgf
       - 12-17 12:B+R round:4 sgf:1990/4-LeszekSoldan-MattiSiivola.sgf
       - 14-7 7:W+20.5 round:1 sgf:1990/1-ZoranMutabzija-SenfengWang.sgf
       - 16-12 12:W+3.5 round:8 sgf:1990/8-KhosaAriya-LeszekSoldan.sgf
+      - 24-1 1:W+R round:1 sgf:1990/1-PatriceGosteli-HaoChang.sgf
+      - 26-32 26:B+10.5 round:1 sgf:1990/1-UlrikBroJoergensen-ZoltanKelemen.sgf
+      - 35-13 13:W+R round:1 sgf:1990/1-BjoernHallin-BrianSong.sgf
+      - 37-15 15:W+R round:1 sgf:1990/1-MarcoVajani-YingMinTse.sgf
+      - 39-19 19:W+R round:1 sgf:1990/1-NoelMitchell-SorinGherman.sgf
