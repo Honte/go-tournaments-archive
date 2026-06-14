@@ -3,10 +3,9 @@ import type { CountryStats } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
-import { jsxJoin } from '@/libs/join';
 import { Details } from '@/components/Details';
+import { AchievementYears } from '@/components/stats/AchievementYears';
 import { H2 } from '@/components/ui/H2';
-import { YearLink } from '@/components/YearLink';
 
 type CountryAchievementsProps = {
   event: EventContext;
@@ -21,16 +20,27 @@ export function CountryAchievements({ event, country, translations }: CountryAch
   const details: Record<string, ReactNode> = {};
 
   let hasMedals = false;
-  for (const [index, category] of MEDALS.entries()) {
-    const achievements = country.medals[index];
+  for (const [index, medal] of MEDALS.entries()) {
+    if (event.categories?.length) {
+      for (const category of event.categories) {
+        const achievements = country.categoriesMedals[category][index];
 
-    if (achievements.length) {
-      details[t(`winners.${category}`)] = (
-        <span className="text-wrap">
-          {listYear(event, achievements.toReversed(), translations.locale)} ({achievements.length})
-        </span>
-      );
-      hasMedals = true;
+        if (achievements.length) {
+          details[t(`winners.${medal}In`, t(`categories.short.${category}`))] = (
+            <AchievementYears event={event} years={achievements} locale={translations.locale} />
+          );
+          hasMedals = true;
+        }
+      }
+    } else {
+      const achievements = country.medals[index];
+
+      if (achievements.length) {
+        details[t(`winners.${medal}`)] = (
+          <AchievementYears event={event} years={achievements} locale={translations.locale} />
+        );
+        hasMedals = true;
+      }
     }
   }
 
@@ -47,12 +57,5 @@ export function CountryAchievements({ event, country, translations }: CountryAch
       <H2>{t('stats.achievements')}</H2>
       <Details details={details} />
     </div>
-  );
-}
-
-function listYear(event: EventContext, years: string[], locale: string) {
-  return jsxJoin(
-    years.map((year, index) => <YearLink event={event} key={index} locale={locale} year={year} />),
-    ', '
   );
 }

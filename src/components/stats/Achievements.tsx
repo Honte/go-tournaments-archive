@@ -3,11 +3,10 @@ import type { PlayerStats } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
-import { jsxJoin } from '@/libs/join';
 import { Details } from '@/components/Details';
+import { AchievementYears } from '@/components/stats/AchievementYears';
 import { ExternalLink } from '@/components/ui/ExternalLink';
 import { H2 } from '@/components/ui/H2';
-import { YearLink } from '@/components/YearLink';
 
 type AchievementsProps = {
   event: EventContext;
@@ -67,21 +66,6 @@ export function Achievements({ event, player, translations }: AchievementsProps)
       <H2>{t('stats.achievements')}</H2>
       <Details details={details} />
     </div>
-  );
-}
-
-function AchievementYears({ event, years, locale }: { event: EventContext; years: string[]; locale: string }) {
-  return (
-    <span className="text-wrap">
-      {listYear(event, years.toReversed(), locale)} ({years.length})
-    </span>
-  );
-}
-
-function listYear(event: EventContext, years: string[], locale: string) {
-  return jsxJoin(
-    years.map((year) => <YearLink event={event} key={year} locale={locale} year={year} />),
-    ', '
   );
 }
 

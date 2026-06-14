@@ -241,6 +241,14 @@ export function calculateStats(event: EventConfig, tournaments: Tournament[], pl
     categories,
   };
 
+  function setupCategoriesMedals() {
+    return (event.categories || []).reduce<Record<string, StatsMedals>>((acc, category) => {
+      acc[category] = [[], [], []];
+
+      return acc;
+    }, {});
+  }
+
   function upsertPlayer(player: Player | string): PlayerStats {
     const id = typeof player === 'string' ? player : player.id;
     const playerData = playersHandler.getPlayer(id)!;
@@ -250,11 +258,7 @@ export function calculateStats(event: EventConfig, tournaments: Tournament[], pl
       egd: playerData?.egd,
       name: playerData?.lastUsedName,
       medals: [[], [], []],
-      categoriesMedals: (event.categories || []).reduce<Record<string, StatsMedals>>((acc, category) => {
-        acc[category] = [[], [], []];
-
-        return acc;
-      }, {}),
+      categoriesMedals: setupCategoriesMedals(),
       country: [],
       results: [],
       bestPlace: Infinity,
@@ -322,6 +326,7 @@ export function calculateStats(event: EventConfig, tournaments: Tournament[], pl
     return (countries[country] ||= {
       country,
       medals: [[], [], []],
+      categoriesMedals: setupCategoriesMedals(),
       totalGames: 0,
       totalWon: 0,
       bestPlace: Infinity,
@@ -363,7 +368,13 @@ export function calculateStats(event: EventConfig, tournaments: Tournament[], pl
         }
 
         if (player.country) {
-          upsertCountry(player.country).medals[index].push(edition);
+          const countryStats = upsertCountry(player.country);
+
+          countryStats.medals[index].push(edition);
+
+          if (category) {
+            countryStats.categoriesMedals[category][index].push(edition);
+          }
         }
       }
     }

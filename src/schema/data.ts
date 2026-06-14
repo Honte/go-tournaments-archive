@@ -260,6 +260,7 @@ export type CountryResult = {
 export type CountryStats = {
   country: string;
   medals: StatsMedals;
+  categoriesMedals: Record<string, StatsMedals>;
   score: number;
   years: Record<number, CountryResult>;
   bestPlace: number;
