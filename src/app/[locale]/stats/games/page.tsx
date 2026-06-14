@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { loadDefaultEvent } from '@/events';
 import type { Locale } from '@/i18n/consts';
 import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
@@ -15,7 +16,8 @@ type PageProps = {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale } = await params;
 
-  const translations = await loadTranslations(locale);
+  const event = await loadDefaultEvent();
+  const translations = await loadTranslations(event, locale);
   const t = getTranslator(translations);
 
   return {
@@ -27,13 +29,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function AllGamesPage({ params }: PageProps) {
   const { locale } = await params;
 
-  const translations = await loadTranslations(locale);
+  const event = await loadDefaultEvent();
+  const translations = await loadTranslations(event, locale);
   const t = getTranslator(translations);
 
   return (
     <Content>
       <Title>{t('site.gamesListTitle')}</Title>
-      <AllGames locale={translations.locale} />
+      <AllGames event={event} locale={translations.locale} />
     </Content>
   );
 }

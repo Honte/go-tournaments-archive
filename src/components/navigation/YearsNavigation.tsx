@@ -2,14 +2,17 @@
 
 import clsx from 'clsx';
 import Link from 'next/link';
+import type { EventContext } from '@/schema/event';
+import { tournamentUrl } from '@/libs/urls';
 
 export type YearsNavigationProps = {
+  event: EventContext;
   locale: string;
   years: number[];
   current: number;
 };
 
-export function YearsNavigation({ locale, years, current }: YearsNavigationProps) {
+export function YearsNavigation({ event, locale, years, current }: YearsNavigationProps) {
   // Whole years needs to be displayed on the sides because if they were removed from DOM while touched, touch events would stop firing
   // Instead, I'm hiding the ones which shouldn't be there
   return (
@@ -20,7 +23,7 @@ export function YearsNavigation({ locale, years, current }: YearsNavigationProps
             {years.map((year) => (
               <Link
                 key={year}
-                href={`/${locale}/${year}`}
+                href={tournamentUrl(event.prefix, locale, year)}
                 className={clsx('text-event-primary hover:text-event-hover font-bold underline', {
                   hidden: year >= current,
                 })}
@@ -36,7 +39,7 @@ export function YearsNavigation({ locale, years, current }: YearsNavigationProps
             {years.map((year) => (
               <Link
                 key={year}
-                href={`/${locale}/${year}`}
+                href={tournamentUrl(event.prefix, locale, year)}
                 className={clsx('text-event-primary hover:text-event-hover font-bold underline', {
                   hidden: year <= current,
                 })}

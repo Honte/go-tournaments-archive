@@ -1,6 +1,6 @@
-import EVENT_CONFIG from '@event/config';
 import type { ReactNode } from 'react';
-import type { StatsCountry } from '@/schema/data';
+import type { CountryStats } from '@/schema/data';
+import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
@@ -9,13 +9,14 @@ import { H2 } from '@/components/ui/H2';
 import { YearLink } from '@/components/YearLink';
 
 type CountryAchievementsProps = {
-  country: StatsCountry;
+  event: EventContext;
+  country: CountryStats;
   translations: Translations;
 };
 
 const MEDALS = ['first', 'second', 'third'] as const;
 
-export function CountryAchievements({ country, translations }: CountryAchievementsProps) {
+export function CountryAchievements({ event, country, translations }: CountryAchievementsProps) {
   const t = getTranslator(translations);
   const details: Record<string, ReactNode> = {};
 
@@ -26,14 +27,14 @@ export function CountryAchievements({ country, translations }: CountryAchievemen
     if (achievements.length) {
       details[t(`winners.${category}`)] = (
         <span className="text-wrap">
-          {listYear(achievements.toReversed(), translations.locale)} ({achievements.length})
+          {listYear(event, achievements.toReversed(), translations.locale)} ({achievements.length})
         </span>
       );
       hasMedals = true;
     }
   }
 
-  if (EVENT_CONFIG.showBestPlace && !hasMedals) {
+  if (event.showBestPlace && !hasMedals) {
     details[t('table.bestPlace')] = country.bestPlace;
   }
 
@@ -49,9 +50,9 @@ export function CountryAchievements({ country, translations }: CountryAchievemen
   );
 }
 
-function listYear(years: string[], locale: string) {
+function listYear(event: EventContext, years: string[], locale: string) {
   return jsxJoin(
-    years.map((year, index) => <YearLink key={index} locale={locale} year={year} />),
+    years.map((year, index) => <YearLink event={event} key={index} locale={locale} year={year} />),
     ', '
   );
 }

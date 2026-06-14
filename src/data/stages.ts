@@ -1,4 +1,5 @@
 import { Game, LeagueStage, Player, Stage, TournamentDetails } from '@/schema/data';
+import type { EventConfig } from '@/schema/event';
 import { InputStage } from '@/schema/input';
 import { parseDates } from '@/libs/dates';
 import { loadClassificationStage } from '@/data/classification';
@@ -11,6 +12,7 @@ import { createLadderTable } from '@/data/tableLadder';
 import { createTableWithoutRounds } from '@/data/tableWithoutRounds';
 
 export async function parseStage(
+  event: EventConfig,
   stage: InputStage,
   playersMap: Record<string, Player>,
   gamesMap: Record<string, Game>,
@@ -22,6 +24,7 @@ export async function parseStage(
   switch (stage.type) {
     case 'tournament':
       return loadH9Tournament({
+        event,
         stage,
         playersMap,
         playersHandler,

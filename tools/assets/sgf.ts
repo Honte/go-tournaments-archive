@@ -1,8 +1,8 @@
-import EVENT_CONFIG from '@event/config';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import type { ApiGameInfo } from '@/schema/api';
 import type { Game, Stage, Tournament } from '@/schema/data';
+import type { EventConfig } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { generateJpg, generatePng } from '@tools/img';
 import { Sgf } from '@tools/sgf';
@@ -12,6 +12,7 @@ import { getGameInfo, getSgfProps, getTournamentSgfZipPath } from '@/data/sgfs';
 const THUMB_SIZE = 128;
 
 export type BuildSgfRequest = {
+  event: EventConfig;
   sgfDir: string;
   outputDir: string;
   game: Game;
@@ -28,14 +29,14 @@ export type BuildSgfResponse = {
 };
 
 export default async function buildSgfAssets(input: BuildSgfRequest): Promise<BuildSgfResponse> {
-  const { sgfDir, outputDir, game, stage, tournament, translations } = input;
+  const { event, sgfDir, outputDir, game, stage, tournament, translations } = input;
   const sgfYamlPath = game.props.sgf!;
   const relativePath = sgfYamlPath.replace(/^\/sgf\/?/, '');
   const sgfFilePath = path.join(sgfDir, relativePath);
   const outputPath = path.join(outputDir, relativePath);
   const content = await readFile(sgfFilePath, 'utf-8');
   const sgf = new Sgf(content);
-  const targetProps = getSgfProps(game, tournament, stage, translations);
+  const targetProps = getSgfProps(event, game, tournament, stage, translations);
   const cleaned = Sgf.clean(content, targetProps, game.rotation);
 
   const svg = await generateSvg(cleaned);
@@ -44,9 +45,9 @@ export default async function buildSgfAssets(input: BuildSgfRequest): Promise<Bu
   await Promise.all([
     saveFile(outputPath, cleaned),
     saveFile(outputPath.replace(/\.sgf$/, '.raw.sgf'), content),
-    EVENT_CONFIG.generateSvgs && saveFile(outputPath.replace(/\.sgf$/, '.svg'), svg),
-    EVENT_CONFIG.generatePngs && saveFile(outputPath.replace(/\.sgf$/, '.png'), generatePng(svg, THUMB_SIZE)),
-    EVENT_CONFIG.generateJpgs && saveFile(outputPath.replace(/\.sgf$/, '.jpg'), generateJpg(svg, THUMB_SIZE)),
+    event.generateSvgs && saveFile(outputPath.replace(/\.sgf$/, '.svg'), svg),
+    event.generatePngs && saveFile(outputPath.replace(/\.sgf$/, '.png'), generatePng(svg, THUMB_SIZE)),
+    event.generateJpgs && saveFile(outputPath.replace(/\.sgf$/, '.jpg'), generateJpg(svg, THUMB_SIZE)),
   ]);
 
   return {

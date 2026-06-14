@@ -1,7 +1,8 @@
 'use client';
 import type { ColumnDef, SortingFn } from '@tanstack/react-table';
 import { useCallback, useMemo, useState } from 'react';
-import type { StatsCategory, StatsCategoryPlayer } from '@/schema/data';
+import type { CategoryPlayer, CategoryStats } from '@/schema/data';
+import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
@@ -14,22 +15,23 @@ import { Toggle } from '@/components/ui/Toggle';
 import { YearLink } from '@/components/YearLink';
 
 export type CategoryResultsTableProps = {
+  event: EventContext;
   category: string;
-  stats: StatsCategory;
+  stats: CategoryStats;
   translations: Translations;
 };
 
 type SummaryRow = {
   year: number;
-  gold: StatsCategoryPlayer[];
-  silver: StatsCategoryPlayer[];
-  bronze: StatsCategoryPlayer[];
+  gold: CategoryPlayer[];
+  silver: CategoryPlayer[];
+  bronze: CategoryPlayer[];
   players: number;
   hasUnsure?: boolean;
 };
-type MedalKey = KeysMatching<SummaryRow, StatsCategoryPlayer[]>;
+type MedalKey = KeysMatching<SummaryRow, CategoryPlayer[]>;
 
-export function CategoryResultsTable({ translations, stats }: CategoryResultsTableProps) {
+export function CategoryResultsTable({ event, translations, stats }: CategoryResultsTableProps) {
   const [includeUnsure, setIncludeUnsure] = useState(true);
   const t = getTranslator(translations);
 
@@ -37,7 +39,7 @@ export function CategoryResultsTable({ translations, stats }: CategoryResultsTab
     const result: SummaryRow[] = [];
 
     for (const tournament of stats.tournaments) {
-      const byPlace: Partial<Record<StatsCategoryPlayer['place'], StatsCategoryPlayer[]>> = {};
+      const byPlace: Partial<Record<CategoryPlayer['place'], CategoryPlayer[]>> = {};
 
       for (const player of tournament.results) {
         (byPlace[player.place] ||= []).push(player);
@@ -70,13 +72,13 @@ export function CategoryResultsTable({ translations, stats }: CategoryResultsTab
     (key) => (info) =>
       jsxJoin(
         info.row.original[key].map((p) => (
-          <PlayerLink key={p.id} playerId={p.id} locale={translations.locale}>
-            <PlayerName player={p} />
+          <PlayerLink key={p.id} event={event} playerId={p.id} locale={translations.locale}>
+            <PlayerName player={p} showCountry={event.showCountry} />
           </PlayerLink>
         )),
         ', '
       ),
-    [translations.locale]
+    [translations.locale, event]
   );
 
   const columns = useMemo(
@@ -86,7 +88,7 @@ export function CategoryResultsTable({ translations, stats }: CategoryResultsTab
           {
             accessorKey: 'year',
             header: t('table.year'),
-            cell: (info) => <YearLink year={info.row.original.year} locale={translations.locale} />,
+            cell: (info) => <YearLink event={event} year={info.row.original.year} locale={translations.locale} />,
           },
           {
             accessorKey: 'gold',
@@ -112,7 +114,7 @@ export function CategoryResultsTable({ translations, stats }: CategoryResultsTab
           },
         ] as ColumnDef<SummaryRow>[]
       ).filter(Boolean),
-    [t, translations.locale, sortByFirstPlayer, renderPlayers]
+    [t, translations.locale, sortByFirstPlayer, renderPlayers, event]
   );
 
   return (

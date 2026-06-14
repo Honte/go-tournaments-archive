@@ -15,6 +15,7 @@ export type InputBaseStage = {
   unmatchedSgfs?: string[];
   location?: string;
   country?: string;
+  excluded?: boolean;
 };
 
 export type InputLeagueStage = InputBaseStage & {

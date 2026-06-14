@@ -1,26 +1,23 @@
-import EVENT_CONFIG from '@event/config';
-
 export type PlayerDetails = {
   id: string;
   name?: string;
   rank?: string;
-  country?: string;
-  countries?: Iterable<string>;
+  country?: string | Iterable<string>;
 };
 
 export type PlayerNameProps = {
   player: Omit<PlayerDetails, 'id'>;
-  includeRank?: boolean;
-  includeCountry?: boolean;
+  showRank?: boolean;
+  showCountry?: boolean;
 };
 
-export function PlayerName({ player, includeRank = true, includeCountry = EVENT_CONFIG.showCountry }: PlayerNameProps) {
+export function PlayerName({ player, showRank = true, showCountry = false }: PlayerNameProps) {
   const { name, rank } = player;
 
-  if (includeCountry) {
+  if (showCountry) {
     const country = getCountry(player);
 
-    if (country && includeRank && rank) {
+    if (country && showRank && rank) {
       return `${name}, ${rank} (${country})`;
     }
 
@@ -29,16 +26,16 @@ export function PlayerName({ player, includeRank = true, includeCountry = EVENT_
     }
   }
 
-  return includeRank && rank ? `${name} (${rank})` : player.name;
+  return showRank && rank ? `${name} (${rank})` : player.name;
 }
 
-function getCountry(player: { country?: string; countries?: Iterable<string> }) {
-  if (player.countries) {
-    return Array.from(new Set(player.countries)).join(', ');
+function getCountry(player: { country?: string | Iterable<string> }) {
+  if (typeof player.country === 'string') {
+    return player.country;
   }
 
   if (player.country) {
-    return player.country;
+    return Array.from(new Set(player.country)).join(', ');
   }
 
   return undefined;

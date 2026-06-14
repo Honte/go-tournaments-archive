@@ -1,4 +1,5 @@
-import type { StatsPlayer } from '@/schema/data';
+import type { PlayerStats } from '@/schema/data';
+import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { AllPlayersStatsLink } from '@/components/AllPlayersStatsLink';
@@ -8,11 +9,12 @@ import { PlayerLink } from '@/components/ui/PlayerLink';
 import { PlayerName } from './ui/PlayerName';
 
 type MedalistsProps = {
-  players: StatsPlayer[];
+  event: EventContext;
+  players: PlayerStats[];
   translations: Translations;
 };
 
-export function Medalists({ players, translations }: MedalistsProps) {
+export function Medalists({ event, players, translations }: MedalistsProps) {
   const t = getTranslator(translations);
 
   return (
@@ -23,12 +25,12 @@ export function Medalists({ players, translations }: MedalistsProps) {
         results={players}
         toKey={(player) => player.id}
         toName={(player) => (
-          <PlayerLink playerId={player.id} locale={translations.locale}>
-            <PlayerName player={player} includeRank={false} />
+          <PlayerLink event={event} playerId={player.id} locale={translations.locale}>
+            <PlayerName player={player} showRank={false} showCountry={event.showCountry} />
           </PlayerLink>
         )}
       />
-      <AllPlayersStatsLink translations={translations} />
+      <AllPlayersStatsLink event={event} translations={translations} />
     </div>
   );
 }

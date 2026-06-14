@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { DEFAULT_LOCALE } from '@/i18n/locales';
+import { loadDefaultEvent } from '@/events';
 import { getAllCountriesStats, getCountryStats } from '@/data';
 
 type PageProps = {
@@ -27,11 +27,12 @@ export async function GET(_: Request, props: PageProps) {
 }
 
 export async function generateStaticParams() {
+  const event = await loadDefaultEvent();
   const countries = await getAllCountriesStats();
   const codes = Object.keys(countries);
 
   if (!codes.length) {
-    codes.push(DEFAULT_LOCALE);
+    codes.push(event.locales[0]);
   }
 
   return codes.map((code) => ({ code: `${code.toLowerCase()}.json` }));

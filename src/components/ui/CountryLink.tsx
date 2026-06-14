@@ -1,17 +1,20 @@
 import { clsx } from 'clsx';
 import Link from 'next/link';
 import type { ComponentProps, PropsWithChildren } from 'react';
+import type { EventContext } from '@/schema/event';
 import { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
+import { countryUrl } from '@/libs/urls';
 
 export type CountryLinkProps = Omit<ComponentProps<typeof Link>, 'href'> &
   PropsWithChildren<{
+    event: EventContext;
+    translations: Translations;
     code?: string;
     full?: boolean;
-    translations: Translations;
   }>;
 
-export function CountryLink({ code, translations, full = false, className, ...props }: CountryLinkProps) {
+export function CountryLink({ event, code, translations, full = false, className, ...props }: CountryLinkProps) {
   if (!code) {
     return null;
   }
@@ -21,7 +24,7 @@ export function CountryLink({ code, translations, full = false, className, ...pr
 
   return (
     <Link
-      href={`/${translations.locale}/stats/country/${code.toLowerCase()}`}
+      href={countryUrl(event.prefix, translations.locale, code)}
       className={clsx('underline underline-offset-2 hover:text-event-hover', className)}
       prefetch={false}
       title={name}

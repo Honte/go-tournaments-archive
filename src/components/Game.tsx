@@ -1,15 +1,17 @@
 import { clsx } from 'clsx';
 import { useMemo } from 'react';
 import { type Game, type GamePlayer, type Player } from '@/schema/data';
+import type { EventContext } from '@/schema/event';
 import type { Translations, Translator } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
-import { Endpoints } from '@/libs/endpoints';
+import { gameThumbUrl } from '@/libs/urls';
 import { GameActions } from '@/components/GameActions';
 import { Stone } from '@/components/Stone';
 import { PlayerName } from '@/components/ui/PlayerName';
 import { GameViewerTrigger } from '@/components/viewer/GameViewerTrigger';
 
 type GameProps = {
+  event: EventContext;
   game: Game;
   title: string;
   className?: string;
@@ -18,7 +20,7 @@ type GameProps = {
   wide?: boolean;
 };
 
-export function Game({ className, game, players, translations, title, wide }: GameProps) {
+export function Game({ event, className, game, players, translations, title, wide }: GameProps) {
   const t = getTranslator(translations);
   const [home, away] = useMemo(() => game.players.map((p) => ({ ...players[p.id], ...p })), [game, players]);
   const hasSgf = game.props.sgf;
@@ -35,7 +37,12 @@ export function Game({ className, game, players, translations, title, wide }: Ga
     >
       {hasSgf && preview && (
         <GameViewerTrigger sgfPath={game.props.sgf!} aria-label={gameTitle}>
-          <img src={Endpoints.GAME_THUMB(preview)} alt={gameTitle} className="size-20" loading="lazy" />
+          <img
+            src={gameThumbUrl(event.basePath, event.prefix, preview)}
+            alt={gameTitle}
+            className="size-20"
+            loading="lazy"
+          />
         </GameViewerTrigger>
       )}
       <div className="flex flex-col">
@@ -45,19 +52,19 @@ export function Game({ className, game, players, translations, title, wide }: Ga
             'max-xs:flex-col gap-1 sm:items-center': !hasSgf,
           })}
         >
-          <PlayerRow t={t} player={home} />
+          <PlayerRow t={t} player={home} showCountry={event.showCountry} />
           {!hasSgf && wide && <div className="max-xs:hidden">&ndash;</div>}
-          <PlayerRow t={t} player={away} />
+          <PlayerRow t={t} player={away} showCountry={event.showCountry} />
         </div>
-        {hasProps && <GameActions props={game.props} t={t} showViewer={true} />}
+        {hasProps && <GameActions event={event} props={game.props} t={t} showViewer={true} />}
       </div>
     </div>
   );
 }
 
-function PlayerRow({ player, t }: { player: GamePlayer & Player; t: Translator }) {
+function PlayerRow({ player, t, showCountry }: { player: GamePlayer & Player; t: Translator; showCountry?: boolean }) {
   const color = player.color ? <Stone color={player.color} className={`h-4 inline`} /> : '';
-  const name = player.id === 'BYE' ? 'BYE' : <PlayerName player={player} />;
+  const name = player.id === 'BYE' ? 'BYE' : <PlayerName player={player} showCountry={showCountry} />;
 
   return (
     <div className={`flex items-center gap-1 text-l ${player.won ? 'font-bold' : ''}`}>

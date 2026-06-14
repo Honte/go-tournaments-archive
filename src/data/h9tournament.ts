@@ -1,8 +1,7 @@
-import EVENT from '@event';
-import EVENT_CONFIG from '@event/config';
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { Game, GamePlayer, LeagueStage, Player, TableResult, TournamentDetails } from '@/schema/data';
+import type { EventConfig } from '@/schema/event';
 import { InputTournamentStage } from '@/schema/input';
 import { parseDates } from '@/libs/dates';
 import { buildLocalGameId, H9Game, parseH9 } from '@/libs/h9';
@@ -10,15 +9,15 @@ import { getRankValue } from '@/libs/rank';
 import { getGameId, parseGame } from '@/data/games';
 import type { PlayersHandler } from '@/data/players';
 
-const EVENT_DATA_DIR = `./events/${EVENT}/data/`;
-
 export async function loadH9Tournament({
+  event,
   stage,
   playersMap,
   playersHandler,
   gamesMap,
   tournamentDetails,
 }: {
+  event: EventConfig;
   stage: InputTournamentStage;
   playersMap: Record<string, Player>;
   playersHandler: PlayersHandler;
@@ -45,9 +44,10 @@ export async function loadH9Tournament({
     category,
     location,
     country,
+    excluded,
   } = stage;
 
-  const content = await readFile(join(EVENT_DATA_DIR, file), 'utf-8');
+  const content = await readFile(join(`./events/${event.id}/data/`, file), 'utf-8');
   const tournament = parseH9(content);
   const table: TableResult[] = [];
   const processedGamesMap = new Map<string, Game>();
@@ -58,7 +58,7 @@ export async function loadH9Tournament({
     const newPlayer = playersHandler.loadPlayer({
       name: `${player.name} ${player.surname}`,
       country: player.country,
-      rank: player.rank,
+      rank: player.rank && event.unknownRanks?.includes(player.rank) ? undefined : player.rank,
       egd: player.egd,
     });
 
@@ -95,7 +95,7 @@ export async function loadH9Tournament({
       const raw = player.scores[i];
       const value = parseScore(raw);
 
-      if (EVENT_CONFIG.categories?.includes(breaker)) {
+      if (event.categories?.includes(breaker)) {
         if (raw === '?' || value > 0) {
           (tableEntry.categories ||= {})[breaker] = raw === '?' ? raw : value;
         }
@@ -240,9 +240,8 @@ export async function loadH9Tournament({
     }
   }
 
-  if (EVENT_CONFIG.categories?.length) {
+  if (event.categories?.length) {
     const top: Record<string, string[][]> = {};
-    const target = (tournamentDetails.categoriesTop ||= {});
 
     for (const player of table) {
       if (category) {
@@ -250,7 +249,7 @@ export async function loadH9Tournament({
         player.categories[category] = player.place;
       }
 
-      for (const category of EVENT_CONFIG.categories) {
+      for (const category of event.categories) {
         const place = Number(player.categories?.[category]);
 
         if (!isNaN(place) && place <= 3) {
@@ -271,9 +270,13 @@ export async function loadH9Tournament({
       }
     }
 
-    for (const category in top) {
-      if (top[category].length && !target[category]) {
-        target[category] = top[category];
+    if (!excluded) {
+      const target = (tournamentDetails.categoriesTop ||= {});
+
+      for (const category in top) {
+        if (top[category].length && !target[category]) {
+          target[category] = top[category];
+        }
       }
     }
 
@@ -283,12 +286,12 @@ export async function loadH9Tournament({
       list.push(category);
     }
 
-    for (const category of EVENT_CONFIG.categories) {
+    for (const category of event.categories) {
       if (scoringColumns?.includes(category) && !list.includes(category)) {
         list.push(category);
       }
     }
-  } else if (!tournamentDetails.top.length) {
+  } else if (!excluded && !tournamentDetails.top.length) {
     const winners: string[][] = [[], [], []];
     for (const player of table) {
       if (player.place <= 3) {
@@ -325,6 +328,7 @@ export async function loadH9Tournament({
     placeOffset,
     location: location ?? tournament.location,
     country: country ?? tournament.country,
+    excluded,
   } satisfies LeagueStage;
 }
 

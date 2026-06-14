@@ -1,4 +1,4 @@
-import { EventConfig } from '@event/schema';
+import type { EventConfig } from '@/schema/event';
 
 const EVENT_CONFIG: EventConfig = {
   id: 'pwgc',

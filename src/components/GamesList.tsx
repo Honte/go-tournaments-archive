@@ -1,15 +1,16 @@
-import EVENT_CONFIG from '@event/config';
 import type { Tournament } from '@/schema/data';
+import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
-import { Endpoints } from '@/libs/endpoints';
 import { getStageName } from '@/libs/stage';
+import { gamesZipUrl } from '@/libs/urls';
 import { Game } from '@/components/Game';
 import { Button } from '@/components/ui/Button';
 import { ExternalLink } from '@/components/ui/ExternalLink';
 import { H2 } from '@/components/ui/H2';
 
 type GamesListProps = {
+  event: EventContext;
   tournament: Tournament;
   translations: Translations;
 };
@@ -21,10 +22,10 @@ type GameGroup = {
   komi?: number;
 };
 
-export function GamesList({ tournament, translations }: GamesListProps) {
+export function GamesList({ event, tournament, translations }: GamesListProps) {
   const { stages, games, players } = tournament;
   const t = getTranslator(translations);
-  const gamesFilter = EVENT_CONFIG.hideGamesWithoutSgf ? (game: string) => !!games[game]?.props?.sgf : () => true;
+  const gamesFilter = event.hideGamesWithoutSgf ? (game: string) => !!games[game]?.props?.sgf : () => true;
 
   const list = stages.toReversed().reduce<GameGroup[]>((list, stage) => {
     const name = getStageName(stage, translations);
@@ -79,8 +80,12 @@ export function GamesList({ tournament, translations }: GamesListProps) {
     <div className="my-4">
       <H2 className="flex items-center justify-between gap-3">
         <span>{t('stage.games')}</span>
-        {EVENT_CONFIG.generateZips && tournament.hasSgfs && (
-          <ExternalLink href={Endpoints.GAMES_ZIP(tournament.year)} download title={t('game.downloadAllSgfs')}>
+        {event.generateZips && tournament.hasSgfs && (
+          <ExternalLink
+            href={gamesZipUrl(event.basePath, event.prefix, tournament.year)}
+            download
+            title={t('game.downloadAllSgfs')}
+          >
             <Button className="text-sm">ZIP</Button>
           </ExternalLink>
         )}
@@ -94,6 +99,7 @@ export function GamesList({ tournament, translations }: GamesListProps) {
           <div className="max-md:flex max-md:flex-col md:grid md:grid-cols-2 gap-4 py-2 xl:py-4">
             {list.games.map((game, gameIndex) => (
               <Game
+                event={event}
                 className="w-full"
                 key={game}
                 game={games[game]}

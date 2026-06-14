@@ -1,4 +1,4 @@
-import type { LogoProps } from '@event/schema';
+import type { LogoProps } from '@/schema/event';
 
 export function Logo({ color = 'black', mode = 'logo', ...props }: LogoProps) {
   const isWhite = color === 'white' || color === '#fff' || color === '#ffffff';

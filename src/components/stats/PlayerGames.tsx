@@ -1,11 +1,10 @@
-import EVENT_CONFIG from '@event/config';
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
-import type { ApiPlayerStats } from '@/schema/api';
-import type { GameProps } from '@/schema/data';
+import type { GameProps, PlayerStats } from '@/schema/data';
+import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
-import { Endpoints } from '@/libs/endpoints';
+import { gameThumbUrl } from '@/libs/urls';
 import { GameActions } from '@/components/GameActions';
 import { Stone } from '@/components/Stone';
 import { StatsTable } from '@/components/table/StatsTable';
@@ -17,7 +16,8 @@ import { GameViewerTrigger } from '@/components/viewer/GameViewerTrigger';
 import { YearLink } from '@/components/YearLink';
 
 type PlayerGamesProps = {
-  player: ApiPlayerStats;
+  event: EventContext;
+  player: PlayerStats;
   translations: Translations;
 };
 
@@ -25,16 +25,16 @@ type GameRow = {
   img?: string;
   year: number;
   color: 'white' | 'black';
-  rank: string;
+  rank?: string;
   won: boolean;
-  opponent: PlayerDetails;
+  opponent: Omit<PlayerDetails, 'country'> & { country?: string };
   opponentFirstName: string;
   opponentLastName: string;
   result: string;
   props: GameProps;
 };
 
-export function PlayerGames({ player, translations }: PlayerGamesProps) {
+export function PlayerGames({ event, player, translations }: PlayerGamesProps) {
   const t = getTranslator(translations);
   const data = useMemo(() => {
     const games: GameRow[] = [];
@@ -86,7 +86,7 @@ export function PlayerGames({ player, translations }: PlayerGamesProps) {
             cell: (info) => (
               <GameViewerTrigger sgfPath={info.row.original.props.sgf!}>
                 <img
-                  src={Endpoints.GAME_THUMB(info.row.original.img)}
+                  src={gameThumbUrl(event.basePath, event.prefix, info.row.original.img)}
                   alt={t('game.preview', `${player.name} vs ${info.row.original.opponent.name}`)}
                   className="size-20 min-w-20 min-h-20"
                   loading="lazy"
@@ -98,7 +98,9 @@ export function PlayerGames({ player, translations }: PlayerGamesProps) {
           {
             accessorKey: 'year',
             header: t('table.year'),
-            cell: (info) => <YearLink locale={translations.locale} year={info.cell.getValue() as number} />,
+            cell: (info) => (
+              <YearLink event={event} locale={translations.locale} year={info.cell.getValue() as number} />
+            ),
           },
           {
             accessorKey: 'rank',
@@ -125,10 +127,11 @@ export function PlayerGames({ player, translations }: PlayerGamesProps) {
             header: t('table.firstName'),
             cell: (info) => (
               <PlayerCell
+                event={event}
                 player={info.row.original.opponent}
                 locale={translations.locale}
-                includeRank={false}
-                includeCountry={false}
+                showRank={false}
+                showCountry={false}
               />
             ),
             meta: { span: 2 },
@@ -138,10 +141,12 @@ export function PlayerGames({ player, translations }: PlayerGamesProps) {
             header: t('table.lastName'),
             meta: { skip: true },
           },
-          EVENT_CONFIG.showCountry && {
+          event.showCountry && {
             accessorKey: 'opponent.country',
             header: t('table.country'),
-            cell: (info) => <CountryLink code={info.row.original.opponent.country} translations={translations} />,
+            cell: (info) => (
+              <CountryLink event={event} code={info.row.original.opponent.country} translations={translations} />
+            ),
           },
           {
             accessorKey: 'opponent.rank',
@@ -150,12 +155,12 @@ export function PlayerGames({ player, translations }: PlayerGamesProps) {
           {
             accessorKey: 'props',
             header: null,
-            cell: (info) => <GameActions props={info.row.original.props} t={t} />,
+            cell: (info) => <GameActions event={event} props={info.row.original.props} t={t} />,
             enableSorting: false,
           },
         ] as ColumnDef<GameRow>[]
       ).filter(Boolean),
-    [t, player.name, translations]
+    [t, player.name, translations, event]
   );
 
   if (!data.length) {

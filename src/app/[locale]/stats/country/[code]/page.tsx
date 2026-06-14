@@ -1,8 +1,7 @@
-import EVENT_CONFIG from '@event/config';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import { loadDefaultEvent } from '@/events';
 import type { Locale } from '@/i18n/consts';
-import { DEFAULT_LOCALE, EVENT_LOCALES } from '@/i18n/locales';
 import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
 import { getAllCountriesStats, getCountryStats } from '@/data';
@@ -20,7 +19,8 @@ type PageProps = {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { code, locale } = await params;
 
-  const translations = await loadTranslations(locale);
+  const event = await loadDefaultEvent();
+  const translations = await loadTranslations(event, locale);
   const t = getTranslator(translations);
   const name = t(`country.${code.toUpperCase()}`);
 
@@ -31,13 +31,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function CountryStatsPage({ params }: PageProps) {
-  if (!EVENT_CONFIG.showCountry) {
+  const event = await loadDefaultEvent();
+
+  if (!event.showCountry) {
     return notFound();
   }
 
   const { locale, code } = await params;
-
-  const translations = await loadTranslations(locale);
+  const translations = await loadTranslations(event, locale);
   const t = getTranslator(translations);
   const country = await getCountryStats(code.toUpperCase());
   const name = t(`country.${code.toUpperCase()}`);
@@ -49,22 +50,23 @@ export default async function CountryStatsPage({ params }: PageProps) {
   return (
     <Content>
       <Title>{name}</Title>
-      <CountryStats code={code.toUpperCase()} locale={locale} />
+      <CountryStats event={event} code={code.toUpperCase()} locale={locale} />
     </Content>
   );
 }
 
 export async function generateStaticParams() {
+  const event = await loadDefaultEvent();
   const countries = await getAllCountriesStats();
   const codes = Object.keys(countries);
 
   if (!codes.length) {
-    codes.push(DEFAULT_LOCALE);
+    codes.push(event.locales[0]);
   }
 
   return codes
     .map((code) =>
-      EVENT_LOCALES.map((locale) => ({
+      event.locales.map((locale) => ({
         locale,
         code: code.toLowerCase(),
       }))

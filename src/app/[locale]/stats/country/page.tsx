@@ -1,6 +1,6 @@
-import EVENT_CONFIG from '@event/config';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import { loadDefaultEvent } from '@/events';
 import type { Locale } from '@/i18n/consts';
 import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
@@ -18,7 +18,8 @@ type PageProps = {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale } = await params;
 
-  const translations = await loadTranslations(locale);
+  const event = await loadDefaultEvent();
+  const translations = await loadTranslations(event, locale);
   const t = getTranslator(translations);
 
   return {
@@ -28,20 +29,22 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function Stats({ params }: PageProps) {
-  if (!EVENT_CONFIG.showCountry) {
+  const event = await loadDefaultEvent();
+
+  if (!event.showCountry) {
     return notFound();
   }
 
   const { locale } = await params;
 
-  const translations = await loadTranslations(locale);
+  const translations = await loadTranslations(event, locale);
   const countries = await getAllCountriesStats();
   const t = getTranslator(translations);
 
   return (
     <Content>
       <Title>{t('site.allTimeStatsByCountryTitle')}</Title>
-      <AllCountriesStats countries={countries} locale={locale} />
+      <AllCountriesStats event={event} countries={countries} locale={locale} />
     </Content>
   );
 }

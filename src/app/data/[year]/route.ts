@@ -1,7 +1,8 @@
 import { mapValues } from 'lodash-es';
 import { notFound } from 'next/navigation';
 import type { NextRequest } from 'next/server';
-import { Endpoints } from '@/libs/endpoints';
+import { loadDefaultEvent } from '@/events';
+import { gameSgfUrl } from '@/libs/urls';
 import { getTournaments } from '@/data';
 
 type PageProps = {
@@ -16,8 +17,10 @@ export async function GET(request: NextRequest, props: PageProps) {
     return notFound();
   }
 
+  const event = await loadDefaultEvent();
   const tournaments = await getTournaments();
   const tournament = tournaments.find((t) => String(t.year) === check[1]);
+  const getFilePath = (path: string) => `${event.domain ?? ''}${gameSgfUrl(event.basePath, event.prefix, path)}`;
 
   if (!tournament) {
     return notFound();
@@ -34,10 +37,10 @@ export async function GET(request: NextRequest, props: PageProps) {
         ...game,
         props: {
           ...game.props,
-          sgf: Endpoints.GAME_FILE(game.props.sgf),
-          svg: game.props.svg ? Endpoints.GAME_FILE(game.props.svg) : undefined,
-          png: game.props.png ? Endpoints.GAME_FILE(game.props.png) : undefined,
-          jpg: game.props.jpg ? Endpoints.GAME_FILE(game.props.jpg) : undefined,
+          sgf: getFilePath(game.props.sgf),
+          svg: game.props.svg ? getFilePath(game.props.svg) : undefined,
+          png: game.props.png ? getFilePath(game.props.png) : undefined,
+          jpg: game.props.jpg ? getFilePath(game.props.jpg) : undefined,
         },
       };
     }),

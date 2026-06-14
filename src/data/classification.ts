@@ -35,7 +35,7 @@ export function loadClassificationStage({
     }
   }
 
-  if (!tournamentDetails.top.length) {
+  if (!stage.excluded && !tournamentDetails.top.length) {
     const winners: string[][] = [];
     for (const player of table) {
       if (player.place <= 3) {

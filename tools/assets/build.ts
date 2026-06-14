@@ -1,12 +1,11 @@
-import EVENT from '@event';
 import { mkdir, rm, writeFile } from 'node:fs/promises';
 import { availableParallelism } from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Piscina from 'piscina';
-import { EVENT_LOCALES } from '@/i18n/locales';
+import type { EventContext } from '@/schema/event';
 import { loadTranslations } from '@/i18n/server';
-import type { BuildSgfResponse, BuildSgfRequest } from '@tools/assets/sgf';
+import type { BuildSgfRequest, BuildSgfResponse } from '@tools/assets/sgf';
 import { createZipBuffer } from '@/libs/zip';
 import { getTournaments } from '@/data';
 import { getGameStage } from '@/data/sgfs';
@@ -15,15 +14,15 @@ const PUBLIC_SGF_DIR = './public/sgf';
 const SGF_WORKER_PATH = fileURLToPath(new URL('./sgf.ts', import.meta.url));
 const STATUS_DELAY = 5000;
 
-export async function buildAssets() {
-  console.log(`[assets] generating assets for ${EVENT}`);
+export async function buildAssets(event: EventContext) {
+  console.log(`[assets] generating assets for ${event.id}`);
   const start = Date.now();
 
   await rm(PUBLIC_SGF_DIR, { recursive: true, force: true });
 
-  const sgfDir = `./events/${EVENT}/sgf`;
+  const sgfDir = `./events/${event.id}/sgf`;
   const tournaments = await getTournaments();
-  const translations = await loadTranslations(EVENT_LOCALES[0]);
+  const translations = await loadTranslations(event);
 
   const sgfTasks: BuildSgfRequest[] = [];
   for (const tournament of tournaments) {
@@ -41,6 +40,7 @@ export async function buildAssets() {
       }
 
       sgfTasks.push({
+        event,
         sgfDir,
         outputDir: PUBLIC_SGF_DIR,
         game,

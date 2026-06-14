@@ -1,13 +1,16 @@
 import Link from 'next/link';
 import { LuExternalLink } from 'react-icons/lu';
 import type { Player } from '@/schema/data';
+import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
+import { tournamentUrl } from '@/libs/urls';
 import { PlayerLink } from '@/components/ui/PlayerLink';
 import { PlayerName } from '@/components/ui/PlayerName';
 
 export type WinnersTableProps = {
+  event: EventContext;
   results: (Result | Announcement)[];
   translations: Translations;
 };
@@ -26,7 +29,7 @@ type Announcement = {
 
 const MEDALS = [0, 1, 2];
 
-export function WinnersTable({ results, translations }: WinnersTableProps) {
+export function WinnersTable({ event, results, translations }: WinnersTableProps) {
   const t = getTranslator(translations);
 
   return (
@@ -42,9 +45,14 @@ export function WinnersTable({ results, translations }: WinnersTableProps) {
       <tbody>
         {results.map((result) =>
           'announcement' in result ? (
-            <TournamentAnnouncementRow key={result.year} tournament={result} translations={translations} />
+            <TournamentAnnouncementRow
+              key={result.year}
+              event={event}
+              tournament={result}
+              translations={translations}
+            />
           ) : (
-            <TournamentMedalistsRow key={result.year} result={result} translations={translations} />
+            <TournamentMedalistsRow key={result.year} event={event} result={result} translations={translations} />
           )
         )}
       </tbody>
@@ -52,7 +60,15 @@ export function WinnersTable({ results, translations }: WinnersTableProps) {
   );
 }
 
-function TournamentMedalistsRow({ result, translations }: { result: Result; translations: Translations }) {
+function TournamentMedalistsRow({
+  event,
+  result,
+  translations,
+}: {
+  event: EventContext;
+  result: Result;
+  translations: Translations;
+}) {
   const { year, top, players } = result;
 
   return (
@@ -60,7 +76,7 @@ function TournamentMedalistsRow({ result, translations }: { result: Result; tran
       <td className="p-2">
         <Link
           className="sm:text-xl font-bold text-event-primary underline hover:text-event-hover"
-          href={`/${translations.locale}/${year}`}
+          href={tournamentUrl(event.prefix, translations.locale, year)}
           prefetch={false}
         >
           {year}
@@ -71,8 +87,8 @@ function TournamentMedalistsRow({ result, translations }: { result: Result; tran
           {top[index]?.length
             ? jsxJoin(
                 top[index].map((id) => (
-                  <PlayerLink key={id} playerId={players[id].id} locale={translations.locale}>
-                    <PlayerName player={players[id]} />
+                  <PlayerLink key={id} event={event} playerId={players[id].id} locale={translations.locale}>
+                    <PlayerName player={players[id]} showCountry={event.showCountry} />
                   </PlayerLink>
                 )),
                 ', '
@@ -85,9 +101,11 @@ function TournamentMedalistsRow({ result, translations }: { result: Result; tran
 }
 
 function TournamentAnnouncementRow({
+  event,
   tournament,
   translations,
 }: {
+  event: EventContext;
   tournament: Announcement;
   translations: Translations;
 }) {
@@ -105,7 +123,7 @@ function TournamentAnnouncementRow({
       <td className="p-2">
         <Link
           className="sm:text-xl font-bold text-current underline hover:text-current"
-          href={`/${translations.locale}/${year}`}
+          href={tournamentUrl(event.prefix, translations.locale, year)}
           prefetch={false}
         >
           {year}

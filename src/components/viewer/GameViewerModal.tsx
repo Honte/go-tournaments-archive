@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { FaXmark } from 'react-icons/fa6';
+import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { GameActions } from '@/components/GameActions';
@@ -10,14 +11,15 @@ import GameViewerContent from '@/components/viewer/GameViewerContent';
 import { useSgfData } from '@/hooks/useSgfData';
 
 type GameViewerDialogProps = {
+  event: EventContext;
   sgfPath: string;
   translations: Translations;
   onClose: () => void;
 };
 
-export function GameViewerModal({ sgfPath, translations, onClose }: GameViewerDialogProps) {
+export function GameViewerModal({ event, sgfPath, translations, onClose }: GameViewerDialogProps) {
   const t = getTranslator(translations);
-  const { data, isPending } = useSgfData(sgfPath);
+  const { data, isPending } = useSgfData(event, sgfPath);
 
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
@@ -64,14 +66,14 @@ export function GameViewerModal({ sgfPath, translations, onClose }: GameViewerDi
               <Loader />
             </div>
           ) : (
-            <GameViewerContent sgf={data} translations={translations} onClose={onClose} />
+            <GameViewerContent event={event} sgf={data} translations={translations} onClose={onClose} />
           )}
 
           <footer className="flex shrink-0 items-center justify-between gap-3 border-t border-event-soft px-2 md:px-4 py-2 md:py-3">
             <Button type="button" onClick={onClose}>
               {t('navigation.close')}
             </Button>
-            {data?.props && <GameActions props={data.props} t={t} showOriginal={true} />}
+            {data?.props && <GameActions event={event} props={data.props} t={t} showOriginal={true} />}
           </footer>
         </section>
       </div>

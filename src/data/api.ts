@@ -1,27 +1,27 @@
-import type { ApiGameInfo, ApiPlayerStats } from '@/schema/api';
-import type { StatsCountry } from '@/schema/data';
+import type { ApiGameInfo } from '@/schema/api';
+import type { PlayerStats, CountryStats } from '@/schema/data';
 import type { Locale, Translations } from '@/i18n/consts';
-import { Endpoints } from '@/libs/endpoints';
+import { countryStatsDataUrl, gamesWithSgfsUrl, i18nUrl, playerStatsDataUrl, sitemapUrl } from '@/libs/urls';
 import type { NavigationGroup } from '@/data/sitemap';
 
-export function fetchTranslations(locale: Locale) {
-  return get<Translations>(Endpoints.I18N(locale));
+export function fetchTranslations(basePath: string | undefined, eventPrefix: string | undefined, locale: Locale) {
+  return get<Translations>(i18nUrl(basePath, eventPrefix, locale));
 }
 
-export function fetchPlayerStats(slug: string) {
-  return get<ApiPlayerStats>(Endpoints.PLAYER_STATS(slug));
+export function fetchPlayerStats(basePath: string | undefined, eventPrefix: string | undefined, slug: string) {
+  return get<PlayerStats>(playerStatsDataUrl(basePath, eventPrefix, slug));
 }
 
-export function fetchCountryStats(code: string) {
-  return get<StatsCountry>(Endpoints.COUNTRY_STATS(code));
+export function fetchCountryStats(basePath: string | undefined, eventPrefix: string | undefined, code: string) {
+  return get<CountryStats>(countryStatsDataUrl(basePath, eventPrefix, code));
 }
 
-export function fetchSitemap(locale: Locale) {
-  return get<NavigationGroup[]>(Endpoints.SITEMAP(locale));
+export function fetchSitemap(basePath: string | undefined, eventPrefix: string | undefined, locale: Locale) {
+  return get<NavigationGroup[]>(sitemapUrl(basePath, eventPrefix, locale));
 }
 
-export function fetchGames() {
-  return get<ApiGameInfo[]>(Endpoints.GAMES_WITH_SGFS());
+export function fetchGames(basePath?: string, eventPrefix?: string) {
+  return get<ApiGameInfo[]>(gamesWithSgfsUrl(basePath, eventPrefix));
 }
 
 async function get<T>(path: string) {

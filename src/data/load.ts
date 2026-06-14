@@ -1,16 +1,17 @@
-import EVENT from '@event';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import fg from 'fast-glob';
 import { parse } from 'yaml';
 import { Game, type Player, Tournament, TournamentDateSpan, TournamentDetails } from '@/schema/data';
+import type { EventConfig } from '@/schema/event';
 import { InputTournament } from '@/schema/input';
 import { parseTop } from '@/libs/stage';
 import { createPlayersHandler } from '@/data/players';
 import { parseStage } from '@/data/stages';
+import { calculateStats } from '@/data/stats';
 
-export async function loadData() {
-  const files = await fg.glob(`./events/${EVENT}/data/*.yml`);
+export async function loadData(event: EventConfig) {
+  const files = await fg.glob(`./events/${event.id}/data/*.yml`);
   const playersHandler = createPlayersHandler();
   const tournaments: Tournament[] = [];
 
@@ -38,7 +39,7 @@ export async function loadData() {
     if (json.stages?.length) {
       for (const stageJson of json.stages) {
         try {
-          const stage = await parseStage(stageJson, players, games, tournamentDetails, playersHandler);
+          const stage = await parseStage(event, stageJson, players, games, tournamentDetails, playersHandler);
 
           if (stage.date) {
             dates.push(...stage.date);
@@ -84,6 +85,26 @@ export async function loadData() {
       tournamentDetails.location = Array.from(stageLocations).join(', ');
     }
 
+    for (const gameId in games) {
+      const game = games[gameId];
+
+      if (game.props.sgf) {
+        game.path = `./events/${event.id}/${game.props.sgf}`;
+
+        if (event.generatePngs) {
+          game.props.png = game.props.sgf.replace('.sgf', '.png');
+        }
+
+        if (event.generateSvgs) {
+          game.props.svg = game.props.sgf.replace('.sgf', '.svg');
+        }
+
+        if (event.generateJpgs) {
+          game.props.jpg = game.props.sgf.replace('.sgf', '.jpg');
+        }
+      }
+    }
+
     tournaments.push({
       ...tournamentDetails,
       ...getDateRange(dates),
@@ -97,9 +118,21 @@ export async function loadData() {
 
   tournaments.sort((a, b) => a.year - b.year);
 
+  const stats = calculateStats(event, tournaments, playersHandler);
+
+  // decorate every player entry with `hasStats` flag
+  for (const tournament of tournaments) {
+    for (const id in tournament.players) {
+      const player = tournament.players[id];
+
+      player.hasStats = id in stats.players;
+    }
+  }
+
   return {
     tournaments,
     playersHandler,
+    stats,
   };
 }
 

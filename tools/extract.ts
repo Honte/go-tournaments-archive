@@ -1,4 +1,3 @@
-import EVENT from '@event';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { dirname, join, parse } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -12,7 +11,7 @@ import { createTable } from '@/data/table';
 import { Sgf, type SgfNodeDataChange } from './sgf';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const EVENT_DIR = join(__dirname, `../events/${EVENT}`);
+const EVENT_DIR = join(__dirname, `../events/pgc`);
 
 extractFromDatabase({
   host: 'localhost',

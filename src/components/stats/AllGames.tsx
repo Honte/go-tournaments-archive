@@ -1,12 +1,12 @@
 'use client';
 
-import EVENT_CONFIG from '@event/config';
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
 import type { ApiGameInfo } from '@/schema/api';
+import type { EventContext } from '@/schema/event';
 import type { Locale, Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
-import { Endpoints } from '@/libs/endpoints';
+import { gameThumbUrl } from '@/libs/urls';
 import { GameActions } from '@/components/GameActions';
 import { StatsTable } from '@/components/table/StatsTable';
 import { Loader } from '@/components/ui/Loader';
@@ -17,17 +17,19 @@ import { useGamesData } from '@/hooks/useGamesData';
 import { useTranslationsData } from '@/hooks/useTranslationsData';
 
 type AllGamesProps = {
+  event: EventContext;
   locale: Locale;
 };
 
 type AllGamesContentProps = {
+  event: EventContext;
   games: ApiGameInfo[];
   translations: Translations;
 };
 
-export function AllGames({ locale }: AllGamesProps) {
-  const translationsData = useTranslationsData(locale);
-  const gamesData = useGamesData();
+export function AllGames({ event, locale }: AllGamesProps) {
+  const translationsData = useTranslationsData(event, locale);
+  const gamesData = useGamesData(event);
 
   if (translationsData.isPending || gamesData.isPending) {
     return <Loader />;
@@ -37,10 +39,10 @@ export function AllGames({ locale }: AllGamesProps) {
     return <p>No data</p>;
   }
 
-  return <AllGamesContent games={gamesData.data} translations={translationsData.data} />;
+  return <AllGamesContent event={event} games={gamesData.data} translations={translationsData.data} />;
 }
 
-function AllGamesContent({ games, translations }: AllGamesContentProps) {
+function AllGamesContent({ event, games, translations }: AllGamesContentProps) {
   const t = getTranslator(translations);
   const columns = useMemo<ColumnDef<ApiGameInfo>[]>(
     () =>
@@ -55,7 +57,7 @@ function AllGamesContent({ games, translations }: AllGamesContentProps) {
               return (
                 <GameViewerTrigger sgfPath={game.sgf!}>
                   <img
-                    src={Endpoints.GAME_THUMB(game.jpg!)}
+                    src={gameThumbUrl(event.basePath, event.prefix, game.jpg!)}
                     alt={t('game.preview', `${game.black.name} vs ${game.white.name}`)}
                     className="size-20 min-w-20 min-h-20"
                     loading="lazy"
@@ -71,7 +73,9 @@ function AllGamesContent({ games, translations }: AllGamesContentProps) {
           {
             accessorKey: 'tournament',
             header: t('table.year'),
-            cell: (info) => <YearLink locale={translations.locale} year={info.cell.getValue() as number} />,
+            cell: (info) => (
+              <YearLink event={event} locale={translations.locale} year={info.cell.getValue() as number} />
+            ),
             meta: {
               className: 'w-1/100',
             },
@@ -81,10 +85,11 @@ function AllGamesContent({ games, translations }: AllGamesContentProps) {
             header: t('table.black'),
             cell: (info) => (
               <PlayerCell
+                event={event}
                 player={info.row.original.black}
                 locale={translations.locale}
-                includeRank={false}
-                includeCountry={false}
+                showRank={false}
+                showCountry={false}
               />
             ),
           },
@@ -92,7 +97,7 @@ function AllGamesContent({ games, translations }: AllGamesContentProps) {
             accessorKey: 'black.rank',
             header: t('table.rank'),
           },
-          EVENT_CONFIG.showCountry && {
+          event.showCountry && {
             accessorKey: 'black.country',
             header: t('table.country'),
           },
@@ -101,10 +106,11 @@ function AllGamesContent({ games, translations }: AllGamesContentProps) {
             header: t('table.white'),
             cell: (info) => (
               <PlayerCell
+                event={event}
                 player={info.row.original.white}
                 locale={translations.locale}
-                includeRank={false}
-                includeCountry={false}
+                showRank={false}
+                showCountry={false}
               />
             ),
           },
@@ -112,7 +118,7 @@ function AllGamesContent({ games, translations }: AllGamesContentProps) {
             accessorKey: 'white.rank',
             header: t('table.rank'),
           },
-          EVENT_CONFIG.showCountry && {
+          event.showCountry && {
             accessorKey: 'white.country',
             header: t('table.country'),
           },
@@ -127,12 +133,12 @@ function AllGamesContent({ games, translations }: AllGamesContentProps) {
           {
             accessorKey: 'props',
             header: null,
-            cell: (info) => <GameActions props={info.row.original} t={t} showViewer={true} />,
+            cell: (info) => <GameActions event={event} props={info.row.original} t={t} showViewer={true} />,
             enableSorting: false,
           },
         ] as ColumnDef<ApiGameInfo>[]
       ).filter(Boolean),
-    [t, translations.locale]
+    [t, translations.locale, event]
   );
 
   return <StatsTable data={games} columns={columns} />;

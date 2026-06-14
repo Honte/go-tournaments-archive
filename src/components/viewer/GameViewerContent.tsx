@@ -11,6 +11,7 @@ import {
   FaPause,
   FaPlay,
 } from 'react-icons/fa6';
+import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { between } from '@/libs/math';
@@ -23,13 +24,14 @@ import { Slider } from '@/components/ui/Slider';
 import { GameControlButton } from '@/components/viewer/GameControlButton';
 
 type GameViewerContentProps = {
+  event: EventContext;
   sgf: SgfData;
   translations: Translations;
   onClose: () => void;
 };
 
 function GameViewerContent(props: GameViewerContentProps) {
-  const { sgf, translations, onClose } = props;
+  const { event, sgf, translations, onClose } = props;
   const t = getTranslator(translations);
   const [position, setPosition] = useState(sgf.moves.length);
   const [playing, setPlaying] = useState(false);
@@ -242,6 +244,7 @@ function GameViewerContent(props: GameViewerContentProps) {
 
       <div className="flex shrink-0 flex-col gap-1">
         <PlayerRow
+          event={event}
           player={sgf.black}
           color="black"
           locale={translations.locale}
@@ -249,6 +252,7 @@ function GameViewerContent(props: GameViewerContentProps) {
           prisoners={board.getCaptures(1)}
         />
         <PlayerRow
+          event={event}
           player={sgf.white}
           color="white"
           locale={translations.locale}
@@ -307,12 +311,14 @@ function isKeyboardInputTarget(target: EventTarget | null): boolean {
 }
 
 function PlayerRow({
+  event,
   player,
   color,
   locale,
-  onNavigate,
   prisoners,
+  onNavigate,
 }: {
+  event: EventContext;
   player: SgfPlayer;
   color: 'black' | 'white';
   locale: string;
@@ -322,20 +328,17 @@ function PlayerRow({
   return (
     <div className="flex items-center gap-2 text-sm">
       <Stone color={color} className="size-5" />
-      {player.id ? (
-        <PlayerLink
-          playerId={player.id}
-          locale={locale}
-          onClick={onNavigate}
-          className={clsx('min-w-0 truncate', {
-            'font-semibold': player.won,
-          })}
-        >
-          <PlayerName player={player} />
-        </PlayerLink>
-      ) : (
-        <PlayerName player={player} />
-      )}
+      <PlayerLink
+        event={event}
+        playerId={player.id}
+        locale={locale}
+        onClick={onNavigate}
+        className={clsx('min-w-0 truncate', {
+          'font-semibold': player.won,
+        })}
+      >
+        <PlayerName player={player} showCountry={event.showCountry} />
+      </PlayerLink>
       <span className="ml-auto font-semibold">{prisoners ?? 0}</span>
     </div>
   );

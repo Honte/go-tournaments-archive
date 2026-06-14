@@ -1,15 +1,11 @@
-import EVENT_CONFIG from '@event/config';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import { loadDefaultEvent } from '@/events';
 import type { Locale } from '@/i18n/consts';
-import { DEFAULT_LOCALE, EVENT_LOCALES } from '@/i18n/locales';
 import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
 import { getCategoryStats } from '@/data';
-import { CategoryMedalTable } from '@/components/category/CategoryMedalTable';
-import { CategoryResultsTable } from '@/components/category/CategoryResultsTable';
-import { Content } from '@/components/ui/Content';
-import { Title } from '@/components/ui/Title';
+import { CategoryPage } from '@/components/pages/CategoryPage';
 
 type PageProps = {
   params: Promise<{
@@ -21,7 +17,8 @@ type PageProps = {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale, category } = await params;
 
-  const translations = await loadTranslations(locale);
+  const event = await loadDefaultEvent();
+  const translations = await loadTranslations(event, locale);
   const t = getTranslator(translations);
   const name = t(`categories.full.${category}`);
 
@@ -32,42 +29,36 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function CategoryStats({ params }: PageProps) {
-  if (!EVENT_CONFIG.categories?.length) {
+  const event = await loadDefaultEvent();
+
+  if (!event.categories?.length) {
     return notFound();
   }
 
   const { locale, category } = await params;
 
-  const translations = await loadTranslations(locale);
+  const translations = await loadTranslations(event, locale);
   const stats = await getCategoryStats(category);
-  const t = getTranslator(translations);
-  const name = t(`categories.full.${category}`);
 
-  return (
-    <Content>
-      <Title>{name}</Title>
-      <div className="flex max-sm:flex-col-reverse gap-4">
-        <CategoryResultsTable category={category} stats={stats} translations={translations} />
-        <CategoryMedalTable category={category} translations={translations} stats={stats} />
-      </div>
-    </Content>
-  );
+  return <CategoryPage event={event} translations={translations} stats={stats} category={category} />;
 }
 
 export async function generateStaticParams() {
-  if (!EVENT_CONFIG.categories?.length) {
+  const event = await loadDefaultEvent();
+
+  if (!event.categories?.length) {
     return [
       {
         category: 'none',
-        locale: DEFAULT_LOCALE,
+        locale: event.locales[0],
       },
     ];
   }
 
   const pages = [];
 
-  for (const locale of EVENT_LOCALES) {
-    for (const category of EVENT_CONFIG.categories) {
+  for (const locale of event.locales) {
+    for (const category of event.categories) {
       pages.push({ locale, category });
     }
   }

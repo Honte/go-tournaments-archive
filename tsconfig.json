@@ -3,10 +3,7 @@
     "paths": {
       "@/*": ["./src/*"],
       "@tools/*": ["./tools/*"],
-      "@event": ["./events/index.ts"],
-      "@event/schema": ["./events/schema.ts"],
-      "@event/config": ["./events/config.ts"],
-      "@event/*": ["./events/pgc/*"]
+      "@events/*": ["./events/*"]
     },
     "lib": ["dom", "dom.iterable", "esnext"],
     "types": ["node"],

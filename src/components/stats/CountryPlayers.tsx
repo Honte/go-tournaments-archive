@@ -1,9 +1,9 @@
 'use client';
 
-import EVENT_CONFIG from '@event/config';
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
-import type { StatsCountry, TableStats } from '@/schema/data';
+import type { CountryStats, TableStats } from '@/schema/data';
+import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { sortTableStats } from '@/libs/sort';
@@ -13,7 +13,8 @@ import { H2 } from '@/components/ui/H2';
 import { PlayerLink } from '@/components/ui/PlayerLink';
 
 type CountryPlayerProps = {
-  country: StatsCountry;
+  event: EventContext;
+  country: CountryStats;
   translations: Translations;
 };
 
@@ -22,7 +23,7 @@ type CountryPlayerRow = TableStats & {
   name: string;
 };
 
-export function CountryPlayers({ country, translations }: CountryPlayerProps) {
+export function CountryPlayers({ event, country, translations }: CountryPlayerProps) {
   const t = getTranslator(translations);
 
   const data = useMemo(() => {
@@ -57,8 +58,11 @@ export function CountryPlayers({ country, translations }: CountryPlayerProps) {
         if (result.place === 3) {
           player.bronze++;
         }
-        player.games += result.games.length;
-        player.won += result.won;
+
+        for (const stage of result.stages) {
+          player.games += stage.games.length;
+          player.won += stage.games.reduce((total, game) => total + Number(game.won), 0);
+        }
       }
     }
 
@@ -80,12 +84,17 @@ export function CountryPlayers({ country, translations }: CountryPlayerProps) {
             accessorKey: 'name',
             header: t('table.player'),
             cell: (info) => (
-              <PlayerLink playerId={info.row.original.id} locale={translations.locale} className="block text-left">
+              <PlayerLink
+                event={event}
+                playerId={info.row.original.id}
+                locale={translations.locale}
+                className="block text-left"
+              >
                 {info.row.original.name}
               </PlayerLink>
             ),
           },
-          EVENT_CONFIG.showBestPlace && {
+          event.showBestPlace && {
             accessorKey: 'bestPlace',
             header: t('table.best'),
             cell: toNumeric,
@@ -125,7 +134,7 @@ export function CountryPlayers({ country, translations }: CountryPlayerProps) {
           },
         ] as ColumnDef<CountryPlayerRow>[]
       ).filter(Boolean),
-    [translations, t]
+    [translations, t, event]
   );
 
   return (

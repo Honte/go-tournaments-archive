@@ -1,25 +1,17 @@
-import EVENT from './events';
-import { NORMALIZED_BASE_PATH } from './src/basePath';
+import { BASE_PATH, EVENT } from '@/env';
 
 /** @type {import('next').NextConfig} */
 export default {
   output: 'export',
-  basePath: NORMALIZED_BASE_PATH || undefined,
+  basePath: BASE_PATH,
 
   // pass envs for client builds using legacy API
   // @TODO consider moving to NEXT_PUBLIC_ prefix
   env: {
     EVENT,
-    BASE_PATH: NORMALIZED_BASE_PATH,
+    BASE_PATH,
   },
 
-  turbopack: {
-    resolveAlias: {
-      '@event': `./events/index.ts`,
-      '@event/schema': `./events/schema.ts`,
-      '@event/*': `./events/${EVENT}/*`,
-    },
-  },
   pageExtensions:
     process.env.NODE_ENV === 'production'
       ? ['tsx', 'ts', 'jsx', 'js']

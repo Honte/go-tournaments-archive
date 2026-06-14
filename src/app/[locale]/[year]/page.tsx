@@ -1,20 +1,12 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import { loadDefaultEvent } from '@/events';
 import type { Locale } from '@/i18n/consts';
-import { EVENT_LOCALES } from '@/i18n/locales';
 import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
-import { getStageName } from '@/libs/stage';
 import { getAvailableTournaments, getTournament, getTournaments } from '@/data';
 import { getTournamentDescription } from '@/data/description';
-import { Awarded } from '@/components/Awarded';
-import { GamesList } from '@/components/GamesList';
-import { TopNavigation } from '@/components/navigation/TopNavigation';
-import { StageDetails } from '@/components/StageDetails';
-import { StageResults } from '@/components/StageResults';
-import { TournamentAnnouncement } from '@/components/TournamentAnnouncement';
-import { TournamentDescription } from '@/components/TournamentDescription';
-import { TournamentDetails } from '@/components/TournamentDetails';
+import { TournamentPage } from '@/components/pages/TournamentPage';
 
 type PageProps = {
   params: Promise<{
@@ -26,7 +18,8 @@ type PageProps = {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { year, locale } = await params;
 
-  const translations = await loadTranslations(locale);
+  const event = await loadDefaultEvent();
+  const translations = await loadTranslations(event, locale);
   const tournament = await getTournament(Number(year));
   const t = getTranslator(translations);
 
@@ -37,11 +30,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export async function generateStaticParams() {
+  const event = await loadDefaultEvent();
   const tournaments = await getTournaments();
 
   return tournaments
     .map((tournament) =>
-      EVENT_LOCALES.map((locale) => ({
+      event.locales.map((locale) => ({
         locale,
         year: String(tournament.year),
       }))
@@ -58,41 +52,23 @@ export default async function Edition(props: PageProps) {
     return notFound();
   }
 
-  const translations = await loadTranslations(locale);
+  const event = await loadDefaultEvent();
+  const translations = await loadTranslations(event, locale);
   const tournament = await getTournament(Number(year));
   const years = await getAvailableTournaments();
-  const description = await getTournamentDescription(year, locale);
+  const description = await getTournamentDescription(event, year, locale);
 
   if (!tournament) {
     return notFound();
   }
 
-  const { games, players, stages, displayReversed = true } = tournament;
-  const stagesToDisplay = displayReversed ? stages.toReversed() : stages;
-
   return (
-    <>
-      <TopNavigation locale={locale} years={years} current={Number(year)} />
-
-      <div className="sm:flex sm:gap-8 my-1">
-        <TournamentDetails tournament={tournament} translations={translations} />
-        <Awarded tournament={tournament} translations={translations} />
-      </div>
-
-      <TournamentDescription content={description} />
-      <TournamentAnnouncement tournament={tournament} translations={translations} />
-
-      {stagesToDisplay.map((stage, index) => (
-        <div key={index} className="my-4">
-          <h2 className="text-xl font-bold pb-1 my-2 border-b-event-dark border-b-2">
-            {getStageName(stage, translations)}
-          </h2>
-          <StageDetails stage={stage} translations={translations} />
-          <StageResults stage={stage} games={games} players={players} translations={translations} />
-        </div>
-      ))}
-
-      <GamesList tournament={tournament} translations={translations} />
-    </>
+    <TournamentPage
+      event={event}
+      tournament={tournament}
+      description={description}
+      translations={translations}
+      years={years}
+    />
   );
 }

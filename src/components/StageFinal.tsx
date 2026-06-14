@@ -1,16 +1,18 @@
 import type { FinalStage, Player } from '@/schema/data';
+import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { PlayerLink } from '@/components/ui/PlayerLink';
 import { PlayerName } from '@/components/ui/PlayerName';
 
 type StageFinalProps = {
+  event: EventContext;
   stage: FinalStage;
   players: Record<string, Player>;
   translations: Translations;
 };
 
-export function StageFinal({ stage, players, translations }: StageFinalProps) {
+export function StageFinal({ event, stage, players, translations }: StageFinalProps) {
   const t = getTranslator(translations);
   const {
     requiredWins,
@@ -32,14 +34,14 @@ export function StageFinal({ stage, players, translations }: StageFinalProps) {
       </p>
       <div className="bg-gray-200 p-2 my-2 md:p-3 text-lg flex items-center text-center gap-2">
         <strong>
-          <PlayerLink playerId={winnerPlayer.id} locale={translations.locale}>
-            <PlayerName player={winnerPlayer} />
+          <PlayerLink event={event} playerId={winnerPlayer.id} locale={translations.locale}>
+            <PlayerName player={winnerPlayer} showCountry={event.showCountry} />
           </PlayerLink>
         </strong>
         <span>&ndash;</span>
         <span>
-          <PlayerLink playerId={loserPlayer.id} locale={translations.locale}>
-            <PlayerName player={loserPlayer} />
+          <PlayerLink event={event} playerId={loserPlayer.id} locale={translations.locale}>
+            <PlayerName player={loserPlayer} showCountry={event.showCountry} />
           </PlayerLink>
         </span>
         <strong>{result}</strong>

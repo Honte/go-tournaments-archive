@@ -1,6 +1,6 @@
-import EVENT_CONFIG from '@event/config';
 import { Fragment } from 'react';
 import type { Tournament } from '@/schema/data';
+import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
@@ -9,13 +9,14 @@ import { PlayerLink } from '@/components/ui/PlayerLink';
 import { PlayerName } from '@/components/ui/PlayerName';
 
 type AwardedProps = {
+  event: EventContext;
   tournament: Tournament;
   translations: Translations;
 };
 
-export function Awarded({ tournament, translations }: AwardedProps) {
+export function Awarded({ event, tournament, translations }: AwardedProps) {
   const t = getTranslator(translations);
-  const awarded = getAwarded(tournament);
+  const awarded = getAwarded(tournament, event.categories);
 
   return (
     <div className="flex-1 flex flex-col">
@@ -27,8 +28,8 @@ export function Awarded({ tournament, translations }: AwardedProps) {
               <li key={index} className="my-1">
                 {jsxJoin(
                   players.map((p) => (
-                    <PlayerLink key={p.id} playerId={p.id} locale={translations.locale}>
-                      <PlayerName player={p} />
+                    <PlayerLink key={p.id} event={event} playerId={p.id} locale={translations.locale}>
+                      <PlayerName player={p} showCountry={event.showCountry} />
                     </PlayerLink>
                   )),
                   ', '
@@ -42,10 +43,10 @@ export function Awarded({ tournament, translations }: AwardedProps) {
   );
 }
 
-function getAwarded(tournament: Tournament) {
+function getAwarded(tournament: Tournament, categories?: string[]) {
   const { top, players, categoriesTop } = tournament;
 
-  if (EVENT_CONFIG.categories?.length && categoriesTop) {
+  if (categories?.length && categoriesTop) {
     return Object.entries(categoriesTop).map(([category, top]) => ({
       category,
       awarded: top.map((ids) => ids.map((id) => players[id])),

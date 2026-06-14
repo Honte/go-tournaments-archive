@@ -1,9 +1,9 @@
 'use client';
 
-import EVENT_CONFIG from '@event/config';
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
-import type { StatsPlayer, TableStats } from '@/schema/data';
+import type { PlayerStats, TableStats } from '@/schema/data';
+import type { EventContext } from '@/schema/event';
 import type { Locale, Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
@@ -16,12 +16,14 @@ import { PlayerCell } from '@/components/ui/PlayerCell';
 import { useTranslationsData } from '@/hooks/useTranslationsData';
 
 type AllPlayersStatsProps = {
-  players: Record<string, StatsPlayer>;
+  event: EventContext;
+  players: Record<string, PlayerStats>;
   locale: Locale;
 };
 
 type AllPlayersStatsContentProps = {
-  players: Record<string, StatsPlayer>;
+  event: EventContext;
+  players: Record<string, PlayerStats>;
   translations: Translations;
 };
 
@@ -35,17 +37,17 @@ type PlayerRow = TableStats & {
   sgfs: number;
 };
 
-export function AllPlayersStats({ players, locale }: AllPlayersStatsProps) {
-  const { data: translations } = useTranslationsData(locale);
+export function AllPlayersStats({ event, players, locale }: AllPlayersStatsProps) {
+  const { data: translations } = useTranslationsData(event, locale);
 
   if (!translations) {
     return <Loader />;
   }
 
-  return <AllPlayersStatsContent players={players} translations={translations} />;
+  return <AllPlayersStatsContent event={event} players={players} translations={translations} />;
 }
 
-function AllPlayersStatsContent({ players, translations }: AllPlayersStatsContentProps) {
+function AllPlayersStatsContent({ event, players, translations }: AllPlayersStatsContentProps) {
   const t = getTranslator(translations);
 
   const data = useMemo(
@@ -53,7 +55,7 @@ function AllPlayersStatsContent({ players, translations }: AllPlayersStatsConten
       Object.values(players)
         .filter((p) => p.id !== 'BYE')
         .map<PlayerRow>((p) => {
-          const { id, name, medals, years, totalGames, totalWon, bestPlace, countries, sgfs } = p;
+          const { id, name, medals, totalAttended, totalGames, totalWon, bestPlace, country: countries, totalSgfs } = p;
           const [firstName, lastName] = (name ?? '').split(' ');
           const [gold, silver, bronze] = medals;
 
@@ -71,12 +73,12 @@ function AllPlayersStatsContent({ players, translations }: AllPlayersStatsConten
             gold: gold.length,
             silver: silver.length,
             bronze: bronze.length,
-            attended: years.length,
+            attended: totalAttended,
             games: totalGames,
             won: totalWon,
             lost: totalGames - totalWon,
             wonPercent: totalWon / totalGames,
-            sgfs,
+            sgfs: totalSgfs,
           };
         })
         .sort(sortTableStats),
@@ -94,10 +96,11 @@ function AllPlayersStatsContent({ players, translations }: AllPlayersStatsConten
             header: t('table.firstName'),
             cell: (info) => (
               <PlayerCell
+                event={event}
                 player={info.row.original}
                 locale={translations.locale}
-                includeRank={false}
-                includeCountry={false}
+                showRank={false}
+                showCountry={false}
               />
             ),
             meta: { span: 2 },
@@ -107,18 +110,18 @@ function AllPlayersStatsContent({ players, translations }: AllPlayersStatsConten
             header: t('table.lastName'),
             meta: { skip: true },
           },
-          EVENT_CONFIG.showCountry && {
+          event.showCountry && {
             accessorKey: 'country',
             header: t('table.country'),
             cell: (info) =>
               jsxJoin(
                 info.row.original.countries.map((code) => (
-                  <CountryLink key={code} translations={translations} code={code} />
+                  <CountryLink event={event} key={code} translations={translations} code={code} />
                 )),
                 ', '
               ),
           },
-          EVENT_CONFIG.showBestPlace && {
+          event.showBestPlace && {
             accessorKey: 'bestPlace',
             header: t('table.best'),
             cell: toNumeric,
@@ -162,7 +165,7 @@ function AllPlayersStatsContent({ players, translations }: AllPlayersStatsConten
           },
         ] as ColumnDef<PlayerRow>[]
       ).filter(Boolean),
-    [t, translations, hasSgfs]
+    [t, translations, hasSgfs, event]
   );
 
   return <StatsTable columns={columns} data={data} />;

@@ -2,7 +2,8 @@
 
 import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
-import type { StatsCountry } from '@/schema/data';
+import type { CountryStats } from '@/schema/data';
+import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { toPercentage } from '@/libs/table';
@@ -12,7 +13,8 @@ import { PlayerLink } from '@/components/ui/PlayerLink';
 import { YearLink } from '@/components/YearLink';
 
 type CountryEventsProps = {
-  country: StatsCountry;
+  event: EventContext;
+  country: CountryStats;
   translations: Translations;
 };
 
@@ -20,7 +22,7 @@ type CountryEventRow = {
   year: number;
   id: string;
   name: string;
-  rank: string;
+  rank?: string;
   place: number;
   games: number;
   won: number;
@@ -28,7 +30,7 @@ type CountryEventRow = {
   wonPercent: number;
 };
 
-export function CountryEvents({ country, translations }: CountryEventsProps) {
+export function CountryEvents({ event, country, translations }: CountryEventsProps) {
   const t = getTranslator(translations);
 
   const data = useMemo(() => {
@@ -38,19 +40,22 @@ export function CountryEvents({ country, translations }: CountryEventsProps) {
       const yearData = country.years[year];
 
       for (const result of yearData.results) {
-        const games = result.games.length;
+        for (const stage of result.stages) {
+          const games = stage.games.length;
+          const won = stage.games.reduce((acc, game) => acc + Number(game.won), 0);
 
-        list.push({
-          year: Number(year),
-          id: result.id,
-          name: result.name,
-          rank: result.rank,
-          place: result.place,
-          games,
-          won: result.won,
-          lost: games - result.won,
-          wonPercent: result.won / games,
-        });
+          list.push({
+            year: Number(year),
+            id: result.id,
+            name: result.name,
+            rank: result.rank,
+            place: stage.place,
+            games,
+            won,
+            lost: games - won,
+            wonPercent: won / games,
+          });
+        }
       }
     }
 
@@ -64,13 +69,20 @@ export function CountryEvents({ country, translations }: CountryEventsProps) {
           {
             accessorKey: 'year',
             header: t('table.year'),
-            cell: (info) => <YearLink locale={translations.locale} year={info.cell.getValue() as number} />,
+            cell: (info) => (
+              <YearLink event={event} locale={translations.locale} year={info.cell.getValue() as number} />
+            ),
           },
           {
             accessorKey: 'name',
             header: t('table.player'),
             cell: (info) => (
-              <PlayerLink playerId={info.row.original.id} locale={translations.locale} className="block text-left">
+              <PlayerLink
+                event={event}
+                playerId={info.row.original.id}
+                locale={translations.locale}
+                className="block text-left"
+              >
                 {info.row.original.name}
               </PlayerLink>
             ),
@@ -102,7 +114,7 @@ export function CountryEvents({ country, translations }: CountryEventsProps) {
           },
         ] as ColumnDef<CountryEventRow>[]
       ).filter(Boolean),
-    [translations, t]
+    [translations, t, event]
   );
 
   return (

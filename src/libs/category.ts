@@ -1,4 +1,4 @@
-import type { StatsCategory, StatsMedals } from '@/schema/data';
+import type { CategoryStats, StatsMedals } from '@/schema/data';
 
 export type CategoryMedalist = {
   id: string;
@@ -6,7 +6,7 @@ export type CategoryMedalist = {
   medals: StatsMedals;
 };
 
-export function getCategoryMedalists(stats: StatsCategory): CategoryMedalist[] {
+export function getCategoryMedalists(stats: CategoryStats): CategoryMedalist[] {
   const medalists: Record<string, CategoryMedalist> = {};
 
   for (const tournament of stats.tournaments) {

@@ -1,4 +1,3 @@
-import EVENT from '@event';
 import { readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import fg from 'fast-glob';
@@ -13,12 +12,14 @@ import type { StageResult } from './types';
 import { updateYamlDoc } from './yaml';
 
 const {
+  event,
   dry,
   force,
   strict,
   year: yearFilter,
   verbose,
 } = readCliParams({
+  event: { type: 'string', short: 'e', default: process.env.EVENT },
   year: { type: 'string', short: 'y' },
   dry: { type: 'boolean', default: false, short: 'd' },
   force: { type: 'boolean', default: false, short: 'f' },
@@ -26,8 +27,13 @@ const {
   verbose: { type: 'boolean', default: false, short: 'v' },
 });
 
-const DATA_DIR = `events/${EVENT}/data`;
-const SGF_DIR = `events/${EVENT}/sgf`;
+if (!event) {
+  console.error('Event is missing');
+  process.exit(1);
+}
+
+const DATA_DIR = `events/${event}/data`;
+const SGF_DIR = `events/${event}/sgf`;
 const results: StageResult[] = [];
 
 if (dry) {
@@ -48,7 +54,7 @@ for (const yamlPath of yamlFiles.sort()) {
     continue;
   }
 
-  const logger = createLogger(`=== ${EVENT.toUpperCase()} ${year} ===`);
+  const logger = createLogger(`=== ${event.toUpperCase()} ${year} ===`);
   const yamlContent = await readFile(yamlPath, 'utf-8');
   const doc = parseDocument(yamlContent);
   const json = doc.toJSON() as InputTournament;

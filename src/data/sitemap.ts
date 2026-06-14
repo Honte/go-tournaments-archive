@@ -1,7 +1,15 @@
-import EVENT_CONFIG from '@event/config';
 import type { TournamentItem } from '@/schema/data';
+import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
+import {
+  allCountryStatsUrl,
+  allGameStatsUrl,
+  allPlayersStatsUrl,
+  categoryUrl,
+  homeUrl,
+  tournamentUrl,
+} from '@/libs/urls';
 
 export type NavigationLink = {
   key: string;
@@ -17,7 +25,7 @@ export type NavigationGroup = {
   indented?: boolean;
 };
 
-export function getSitemap(tournaments: TournamentItem[], translations: Translations) {
+export function getSitemap(event: EventContext, tournaments: TournamentItem[], translations: Translations) {
   const locale = translations.locale;
   const t = getTranslator(translations);
 
@@ -26,20 +34,20 @@ export function getSitemap(tournaments: TournamentItem[], translations: Translat
   const main: NavigationLink[] = [
     {
       key: 'home',
-      href: `/${locale}`,
+      href: homeUrl(event.prefix, locale),
       label: t('navigation.home.anchor'),
     },
     {
       key: 'stats',
-      href: `/${locale}/stats`,
+      href: allPlayersStatsUrl(event.prefix, locale),
       label: t('site.allTimeStatsLink'),
     },
   ];
 
-  if (EVENT_CONFIG.showCountry) {
+  if (event.showCountry) {
     main.push({
       key: 'countries',
-      href: `/${locale}/stats/country`,
+      href: allCountryStatsUrl(event.prefix, locale),
       label: t('site.allTimeStatsByCountryLink'),
     });
   }
@@ -47,21 +55,21 @@ export function getSitemap(tournaments: TournamentItem[], translations: Translat
   if (tournaments.some((tournament) => tournament.hasSgfs)) {
     main.push({
       key: 'games',
-      href: `/${locale}/stats/games`,
+      href: allGameStatsUrl(event.prefix, locale),
       label: t('site.gamesListLink'),
     });
   }
 
   groups.push({ key: 'main', links: main });
 
-  if (EVENT_CONFIG.categories?.length) {
+  if (event.categories?.length) {
     groups.push({
       key: 'categories',
       label: t('navigation.categories'),
       indented: true,
-      links: EVENT_CONFIG.categories.map((category) => ({
+      links: event.categories.map((category) => ({
         key: `category-${category}`,
-        href: `/${locale}/category/${category}`,
+        href: categoryUrl(event.prefix, locale, category),
         label: t(`categories.short.${category}`),
       })),
     });
@@ -74,13 +82,13 @@ export function getSitemap(tournaments: TournamentItem[], translations: Translat
       indented: true,
       links: tournaments.toReversed().map((tournament) => {
         const location =
-          EVENT_CONFIG.showCountry && tournament.country
+          event.showCountry && tournament.country
             ? `${tournament.location}, ${tournament.country}`
             : tournament.location;
 
         return {
           key: `tournament-${tournament.year}`,
-          href: `/${locale}/${tournament.year}`,
+          href: tournamentUrl(event.prefix, locale, tournament.year),
           label: String(tournament.year),
           description: location,
         };

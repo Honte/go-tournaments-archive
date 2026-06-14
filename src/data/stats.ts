@@ -1,28 +1,28 @@
-import EVENT_CONFIG from '@event/config';
 import type {
+  CountryResult,
+  CountryStats,
   Game,
   Player,
+  PlayerGame,
+  PlayerResult,
+  PlayerStats,
   Stats,
-  StatsCategory,
-  StatsCategoryPlayer,
-  StatsCountry,
-  StatsCountryResult,
+  CategoryStats,
+  CategoryPlayer,
   StatsMedals,
-  StatsPlayer,
-  StatsPlayerGame,
-  StatsPlayerResult,
   Tournament,
 } from '@/schema/data';
+import type { EventConfig } from '@/schema/event';
 import type { PlayersHandler } from '@/data/players';
 
-export function calculateStats(tournaments: Tournament[], playersHandler: PlayersHandler): Stats {
-  const players: Record<string, StatsPlayer> = {};
-  const countries: Record<string, StatsCountry> = {};
-  const categories: Record<string, StatsCategory> = {};
+export function calculateStats(event: EventConfig, tournaments: Tournament[], playersHandler: PlayersHandler): Stats {
+  const players: Record<string, PlayerStats> = {};
+  const countries: Record<string, CountryStats> = {};
+  const categories: Record<string, CategoryStats> = {};
   const games: Record<string, Game> = {};
 
-  if (EVENT_CONFIG.categories?.length) {
-    for (const category of EVENT_CONFIG.categories) {
+  if (event.categories?.length) {
+    for (const category of event.categories) {
       categories[category] = {
         tournaments: [],
         category,
@@ -40,43 +40,31 @@ export function calculateStats(tournaments: Tournament[], playersHandler: Player
   let streams = 0;
   let relays = 0;
 
-  upsertPlayer('BYE');
-
   for (const tournament of tournaments) {
-    const { year, players: tournamentPlayers, stages, top, games: tournamentGames, categoriesTop } = tournament;
-    const tournamentCategories: Record<string, StatsCategoryPlayer[]> = {};
-    const tournamentPlayersMap: Record<string, StatsPlayer> = {
-      BYE: players.BYE,
-    };
-    for (const pid in tournamentPlayers) {
-      const player = upsertPlayer(tournamentPlayers[pid]);
-      const country = tournamentPlayers[pid].country;
-
-      tournamentPlayersMap[pid] = player;
-      player.years.push(year);
-
-      if (country && !player.countries.includes(country)) {
-        player.countries.push(country);
-      }
-    }
+    const { year, players, stages, top, games: tournamentGames, categoriesTop } = tournament;
+    const tournamentCategories: Record<string, CategoryPlayer[]> = {};
 
     for (const stage of stages) {
+      if (stage.excluded) {
+        continue;
+      }
+
       for (const player of stage.table) {
-        const globalPlayer = tournamentPlayersMap[player.id];
-        const playerGames: StatsPlayerGame[] = [];
-        let won = 0;
+        const tournamentPlayer = players[player.id];
+        const playerStats = upsertPlayer(tournamentPlayer);
+        const playerResult = upsertPlayerResult(playerStats, tournamentPlayer, year);
+        const playerGames: PlayerGame[] = [];
 
         if ('games' in player && player.games?.length) {
           for (const game of player.games) {
-            if (game) {
-              won += Number(game.won);
-
+            if (game && game.opponent) {
               const globalGame = tournamentGames[game.game];
+              const opponent = players[game.opponent];
 
               playerGames.push({
-                id: tournamentPlayersMap[game.opponent].id,
-                country: tournamentPlayers[game.opponent]?.country,
-                rank: tournamentPlayers[game.opponent]?.rank,
+                id: opponent?.id ?? 'BYE',
+                country: players[game.opponent]?.country,
+                rank: players[game.opponent]?.rank,
                 won: game.won,
                 result: game.result,
                 props: globalGame?.props,
@@ -84,46 +72,45 @@ export function calculateStats(tournaments: Tournament[], playersHandler: Player
               });
 
               if (globalGame?.props?.sgf) {
-                globalPlayer.sgfs++;
+                playerStats.totalSgfs++;
+              }
+
+              if (opponent?.id) {
+                playerStats.opponents[opponent.id] = opponent.name;
               }
             }
           }
         }
 
-        const tournamentPlayer = tournamentPlayers[player.id];
+        const stageResult = {
+          type: stage.type,
+          name: stage.name,
+          place: player.place,
+          games: playerGames,
+        };
+
+        playerResult.stages.push(stageResult);
+
+        const finalPlace = player.place > (stage.promoted ?? 0) ? player.place + (stage.placeOffset ?? 0) : Infinity;
+
+        playerResult.place = Math.min(playerResult.place, finalPlace);
+        playerStats.bestPlace = Math.min(playerStats.bestPlace, finalPlace);
+
+        upsertPlayerCountry(playerStats, tournamentPlayer.country);
+
         const name = tournamentPlayer.name;
         const country = tournamentPlayer.country;
         const rank = tournamentPlayer.rank ?? '';
-        const result: StatsPlayerResult = {
-          year,
-          stage: {
-            type: stage.type,
-            name: stage.name,
-          },
-          place: player.place,
-          finalPlace: player.place > (stage.promoted ?? 0) ? player.place + (stage.placeOffset ?? 0) : Infinity,
-          games: playerGames,
-          name,
-          rank,
-          won,
-          country,
-        };
-
-        globalPlayer.results.push(result);
 
         if (country) {
-          upsertCountryYear(country, year).results.push({
-            ...result,
-            id: globalPlayer.id,
-            name: globalPlayer.name,
-          });
+          upsertCountryPlayerResult(country, year, playerStats, playerResult);
         }
 
-        if (EVENT_CONFIG.categories?.length) {
-          for (const category of EVENT_CONFIG.categories) {
+        if (event.categories?.length) {
+          for (const category of event.categories) {
             if ('categories' in player && player?.categories?.[category]) {
               (tournamentCategories[category] ||= []).push({
-                id: globalPlayer.id,
+                id: playerStats.id,
                 name,
                 rank,
                 country,
@@ -135,9 +122,9 @@ export function calculateStats(tournaments: Tournament[], playersHandler: Player
       }
     }
 
-    if (EVENT_CONFIG.categories?.length) {
-      for (const category of EVENT_CONFIG.categories) {
-        upsertMedals(year, tournamentPlayers, categoriesTop?.[category], category);
+    if (event.categories?.length) {
+      for (const category of event.categories) {
+        upsertMedals(year, players, categoriesTop?.[category], category);
       }
 
       for (const category in tournamentCategories) {
@@ -147,7 +134,7 @@ export function calculateStats(tournaments: Tournament[], playersHandler: Player
         });
       }
     } else {
-      upsertMedals(year, tournamentPlayers, top);
+      upsertMedals(year, players, top);
     }
 
     for (const id in tournamentGames) {
@@ -199,12 +186,15 @@ export function calculateStats(tournaments: Tournament[], playersHandler: Player
     const player = players[id];
     const [gold, silver, bronze] = player.medals;
 
+    player.totalAttended = player.results.length;
     player.score = gold.length * 10_000 + silver.length * 100 + bronze.length;
+    player.results.sort((a, b) => a.year - b.year);
 
     for (const result of player.results) {
-      player.totalGames += result.games.length;
-      player.totalWon += result.won;
-      player.bestPlace = Math.min(player.bestPlace, result.finalPlace);
+      for (const stage of result.stages) {
+        player.totalGames += stage.games.length;
+        player.totalWon += stage.games.reduce((total, game) => total + Number(game.won), 0);
+      }
     }
   }
 
@@ -218,9 +208,12 @@ export function calculateStats(tournaments: Tournament[], playersHandler: Player
       const yearStats = stats.years[year];
 
       for (const result of yearStats.results) {
-        yearStats.totalGames += result.games.length;
-        yearStats.totalWon += result.won;
-        yearStats.bestPlace = Math.min(yearStats.bestPlace, result.finalPlace);
+        yearStats.bestPlace = Math.min(yearStats.bestPlace, result.place);
+
+        for (const stage of result.stages) {
+          yearStats.totalGames += stage.games.length;
+          yearStats.totalWon += stage.games.reduce((total, game) => total + Number(game.won), 0);
+        }
       }
 
       stats.totalWon += yearStats.totalWon;
@@ -248,7 +241,7 @@ export function calculateStats(tournaments: Tournament[], playersHandler: Player
     categories,
   };
 
-  function upsertPlayer(player: Player | string): StatsPlayer {
+  function upsertPlayer(player: Player | string): PlayerStats {
     const id = typeof player === 'string' ? player : player.id;
     const playerData = playersHandler.getPlayer(id)!;
 
@@ -257,23 +250,75 @@ export function calculateStats(tournaments: Tournament[], playersHandler: Player
       egd: playerData?.egd,
       name: playerData?.lastUsedName,
       medals: [[], [], []],
-      categoriesMedals: (EVENT_CONFIG.categories || []).reduce<Record<string, StatsMedals>>((acc, category) => {
+      categoriesMedals: (event.categories || []).reduce<Record<string, StatsMedals>>((acc, category) => {
         acc[category] = [[], [], []];
 
         return acc;
       }, {}),
-      countries: [],
-      years: [],
+      country: [],
       results: [],
-      score: 0,
       bestPlace: Infinity,
       totalGames: 0,
       totalWon: 0,
-      sgfs: 0,
+      totalAttended: 0,
+      totalSgfs: 0,
+      opponents: {},
+      score: 0,
     });
   }
 
-  function upsertCountry(country: string): StatsCountry {
+  function upsertPlayerCountry(playerStats: PlayerStats, country?: string) {
+    if (country && !playerStats.country.includes(country)) {
+      playerStats.country.push(country);
+    }
+  }
+
+  function upsertPlayerResult(playerStats: PlayerStats, player: Player, year: number): PlayerResult {
+    const previous = playerStats.results.find((event) => event.year === year);
+
+    if (previous) {
+      return previous;
+    }
+
+    const newResult: PlayerResult = {
+      year,
+      place: Infinity,
+      name: player.name,
+      rank: player.rank,
+      country: player.country,
+      stages: [],
+    };
+
+    playerStats.results.push(newResult);
+
+    return newResult;
+  }
+
+  function upsertCountryPlayerResult(
+    country: string,
+    year: number,
+    playerStats: PlayerStats,
+    playerResult: PlayerResult
+  ) {
+    const countryStats = upsertCountry(country);
+    const yearsStats = upsertCountryYear(countryStats, year);
+
+    const previousEntry = yearsStats.results.find((result) => result.id === playerStats.id);
+
+    if (previousEntry) {
+      return Object.assign(previousEntry, playerResult);
+    }
+
+    const newEntry = {
+      ...playerResult,
+      id: playerStats.id,
+    };
+
+    yearsStats.results.push(newEntry);
+    return newEntry;
+  }
+
+  function upsertCountry(country: string): CountryStats {
     return (countries[country] ||= {
       country,
       medals: [[], [], []],
@@ -285,10 +330,8 @@ export function calculateStats(tournaments: Tournament[], playersHandler: Player
     });
   }
 
-  function upsertCountryYear(country: string, year: number): StatsCountryResult {
-    const stats = upsertCountry(country);
-
-    return (stats.years[year] ||= {
+  function upsertCountryYear(countryStats: CountryStats, year: number): CountryResult {
+    return (countryStats.years[year] ||= {
       year,
       bestPlace: Infinity,
       totalGames: 0,

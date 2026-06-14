@@ -2,6 +2,7 @@
 
 import dynamic from 'next/dynamic';
 import { useCallback, useEffect, useState } from 'react';
+import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { SHOW_GAME_VIEWER_EVENT } from '@/components/viewer/utils';
 
@@ -13,10 +14,11 @@ const GameViewerDialog = dynamic(
 );
 
 type GameViewerProps = {
+  event: EventContext;
   translations: Translations;
 };
 
-export function GameViewer({ translations }: GameViewerProps) {
+export function GameViewer({ event, translations }: GameViewerProps) {
   const [sgfPath, setSgfPath] = useState<string | null>(null);
   const close = useCallback(() => setSgfPath(null), []);
 
@@ -33,5 +35,5 @@ export function GameViewer({ translations }: GameViewerProps) {
     return null;
   }
 
-  return <GameViewerDialog sgfPath={sgfPath} translations={translations} onClose={close} />;
+  return <GameViewerDialog event={event} sgfPath={sgfPath} translations={translations} onClose={close} />;
 }
