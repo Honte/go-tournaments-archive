@@ -16,6 +16,7 @@ export type InputBaseStage = {
   location?: string;
   country?: string;
   excluded?: boolean;
+  collapsed?: boolean;
 };
 
 export type InputLeagueStage = InputBaseStage & {

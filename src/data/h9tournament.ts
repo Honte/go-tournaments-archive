@@ -45,6 +45,7 @@ export async function loadH9Tournament({
     location,
     country,
     excluded,
+    collapsed,
   } = stage;
 
   const content = await readFile(join(`./events/${event.id}/data/`, file), 'utf-8');
@@ -329,6 +330,7 @@ export async function loadH9Tournament({
     location: location ?? tournament.location,
     country: country ?? tournament.country,
     excluded,
+    collapsed,
   } satisfies LeagueStage;
 }
 

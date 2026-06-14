@@ -82,6 +82,7 @@ export type BaseStage = {
   promoted?: number;
   placeOffset?: number;
   excluded?: boolean;
+  collapsed?: boolean;
 };
 
 export type LeagueStage = BaseStage & {
