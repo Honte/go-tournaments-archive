@@ -180,6 +180,7 @@ export type Player = {
 
 export type Game = {
   id: string;
+  stage: number;
   players: [black: GamePlayer, white: GamePlayer];
   result: string;
   props: GameProps;

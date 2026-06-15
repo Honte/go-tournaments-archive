@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import type { ApiGameInfo } from '@/schema/api';
-import type { Game, Stage, Tournament } from '@/schema/data';
+import type { Game, Tournament } from '@/schema/data';
 import type { EventConfig } from '@/schema/event';
 import { CustomSgfProps, SgfRootProps } from '@/schema/sgf';
 import type { Translations } from '@/i18n/consts';
@@ -23,14 +23,8 @@ export async function loadGameSgfDetails(
         continue;
       }
 
-      const stage = getGameStage(tournament, id);
-
-      if (!stage) {
-        continue;
-      }
-
       return {
-        props: getSgfProps(event, game, tournament, stage, translations),
+        props: getSgfProps(event, game, tournament, translations),
         rotation: game.rotation,
       };
     }
@@ -45,16 +39,10 @@ export async function loadCleanTournamentSgfs(event: EventConfig, tournament: To
       continue;
     }
 
-    const stage = getGameStage(tournament, game.id);
-
-    if (!stage) {
-      continue;
-    }
-
     promises.push(
       fs.readFile(game.path, 'utf-8').then((content) => ({
         path: getTournamentSgfZipPath(game.props.sgf!),
-        content: Sgf.clean(content, getSgfProps(event, game, tournament, stage, translations), game.rotation),
+        content: Sgf.clean(content, getSgfProps(event, game, tournament, translations), game.rotation),
       }))
     );
   }
@@ -73,16 +61,10 @@ export async function loadSgfs(tournaments: Tournament[]) {
         continue;
       }
 
-      const stage = getGameStage(tournament, id);
-
-      if (!stage) {
-        continue;
-      }
-
       const content = await fs.readFile(game.path, 'utf-8');
       const sgf = new Sgf(content);
 
-      games.push(getGameInfo(sgf, game, tournament, stage));
+      games.push(getGameInfo(sgf, game, tournament));
     }
   }
 
@@ -104,41 +86,14 @@ export function getTournamentSgfZipPath(sgfPath: string) {
   return segments.join('-');
 }
 
-export function getGameStage(tournament: Tournament, id: string) {
-  for (const stage of tournament.stages) {
-    switch (stage.type) {
-      case 'tournament':
-      case 'ladder-table':
-      case 'league':
-        for (const round of stage.rounds) {
-          const gameNo = round.indexOf(id);
-
-          if (gameNo >= 0) {
-            return stage;
-          }
-        }
-        break;
-      case 'round-robin-table':
-      case 'final':
-        const gameNo = stage.games.indexOf(id);
-
-        if (gameNo >= 0) {
-          return stage;
-        }
-    }
-  }
-
-  return undefined;
-}
-
-export function getGameInfo(sgf: Sgf, game: Game, tournament: Tournament, stage: Stage): ApiGameInfo {
+export function getGameInfo(sgf: Sgf, game: Game, tournament: Tournament): ApiGameInfo {
   const black = tournament.players[game.players[0].id];
   const white = tournament.players[game.players[1].id];
 
   return {
     ...game.props,
     tournament: tournament.year,
-    stage: tournament.stages.indexOf(stage),
+    stage: game.stage,
     black,
     white,
     result: game.result,
@@ -147,16 +102,11 @@ export function getGameInfo(sgf: Sgf, game: Game, tournament: Tournament, stage:
   };
 }
 
-export function getSgfProps(
-  event: EventConfig,
-  game: Game,
-  tournament: Tournament,
-  stage: Stage,
-  translations: Translations
-) {
+export function getSgfProps(event: EventConfig, game: Game, tournament: Tournament, translations: Translations) {
   const t = getTranslator(translations);
   const black = tournament.players[game.players[0].id];
   const white = tournament.players[game.players[1].id];
+  const stage = tournament.stages[game.stage];
   const stageName = stage && getStageName(stage, translations);
   const roundName = stage && game.props.round ? `${game.props.round} (${stageName})` : undefined;
   const gameName = [

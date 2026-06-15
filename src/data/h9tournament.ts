@@ -1,29 +1,22 @@
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
-import { Game, GamePlayer, LeagueStage, Player, TableResult, TournamentDetails } from '@/schema/data';
-import type { EventConfig } from '@/schema/event';
-import { InputTournamentStage } from '@/schema/input';
+import type { Game, GamePlayer, LeagueStage, TableResult } from '@/schema/data';
+import type { InputTournamentStage } from '@/schema/input';
 import { parseDates } from '@/libs/dates';
 import { buildLocalGameId, H9Game, parseH9 } from '@/libs/h9';
 import { getRankValue } from '@/libs/rank';
 import { getGameId, parseGame } from '@/data/games';
-import type { PlayersHandler } from '@/data/players';
+import type { ParseStageProps } from '@/data/stages';
 
 export async function loadH9Tournament({
   event,
   stage,
+  stageIndex,
   playersMap,
   playersHandler,
   gamesMap,
   tournamentDetails,
-}: {
-  event: EventConfig;
-  stage: InputTournamentStage;
-  playersMap: Record<string, Player>;
-  playersHandler: PlayersHandler;
-  gamesMap: Record<string, Game>;
-  tournamentDetails: TournamentDetails;
-}): Promise<LeagueStage> {
+}: Omit<ParseStageProps, 'stage'> & { stage: InputTournamentStage }): Promise<LeagueStage> {
   const {
     name,
     file,
@@ -117,7 +110,7 @@ export async function loadH9Tournament({
   if (games?.length) {
     for (const gameString of games) {
       const id = getGameId(gamesMap);
-      const game = parseGame(gameString, id, false);
+      const game = parseGame(gameString, id, stageIndex, false);
       const blackPlace = Number(game.players[0].id);
       const whitePlace = Number(game.players[1].id);
       const localId = buildLocalGameId(blackPlace, whitePlace, game.props.round);
@@ -174,6 +167,7 @@ export async function loadH9Tournament({
 
           parsedGame = {
             id: getGameId(gamesMap),
+            stage: stageIndex,
             players: [isCurrentBlack ? playerA : playerB, isCurrentBlack ? playerB : playerA],
             result: getGameResult(game.result, game.color),
             props: {},

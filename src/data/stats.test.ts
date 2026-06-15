@@ -17,6 +17,7 @@ describe('calculateStats', () => {
     const games: Record<string, Game> = {
       g1: {
         id: 'g1',
+        stage: 0,
         players: [
           { id: 'a', won: true },
           { id: 'b', won: false },
@@ -26,6 +27,7 @@ describe('calculateStats', () => {
       },
       g2: {
         id: 'g2',
+        stage: 0,
         players: [
           { id: 'b', won: true },
           { id: 'c', won: false },

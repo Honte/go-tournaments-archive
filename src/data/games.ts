@@ -7,12 +7,12 @@ export const GAME_REGEX =
 const STRICT_GAME_RESULT_REGEX = /^(?<color>[BW])(\+(?<score>([RT?]|\d+([,.]5)?)))?$/i;
 const LOOSE_GAME_RESULT_REGEX = /^(?<color>[BW])(\+(?<score>\S+))?$/i;
 
-export function parseGames(repository: Record<string, Game>, games: string[], round?: number) {
+export function parseGames(repository: Record<string, Game>, games: string[], stage: number, round?: number) {
   const ids = [];
 
   for (const [index, string] of games.entries()) {
     const id = getGameId(repository);
-    const game = parseGame(string, id, true);
+    const game = parseGame(string, id, stage, true);
 
     if (round) {
       game.props.round = round;
@@ -26,7 +26,7 @@ export function parseGames(repository: Record<string, Game>, games: string[], ro
   return ids;
 }
 
-export function parseGame(string: string, id: string, strict = true): Game {
+export function parseGame(string: string, id: string, stage: number, strict = true): Game {
   const parsed = string.match(GAME_REGEX);
 
   if (!parsed) {
@@ -72,6 +72,7 @@ export function parseGame(string: string, id: string, strict = true): Game {
 
   const game: Game = {
     id,
+    stage,
     players: homePlayer.color === 'white' ? [awayPlayer, homePlayer] : [homePlayer, awayPlayer],
     result,
     props: {},

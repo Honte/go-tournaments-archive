@@ -1,7 +1,7 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import type { ApiGameInfo } from '@/schema/api';
-import type { Game, Stage, Tournament } from '@/schema/data';
+import type { Game, Tournament } from '@/schema/data';
 import type { EventConfig } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { generateJpg, generatePng } from '@tools/img';
@@ -16,7 +16,6 @@ export type BuildSgfRequest = {
   sgfDir: string;
   outputDir: string;
   game: Game;
-  stage: Stage;
   tournament: Tournament;
   translations: Translations;
 };
@@ -29,14 +28,14 @@ export type BuildSgfResponse = {
 };
 
 export default async function buildSgfAssets(input: BuildSgfRequest): Promise<BuildSgfResponse> {
-  const { event, sgfDir, outputDir, game, stage, tournament, translations } = input;
+  const { event, sgfDir, outputDir, game, tournament, translations } = input;
   const sgfYamlPath = game.props.sgf!;
   const relativePath = sgfYamlPath.replace(/^\/sgf\/?/, '');
   const sgfFilePath = path.join(sgfDir, relativePath);
   const outputPath = path.join(outputDir, relativePath);
   const content = await readFile(sgfFilePath, 'utf-8');
   const sgf = new Sgf(content);
-  const targetProps = getSgfProps(event, game, tournament, stage, translations);
+  const targetProps = getSgfProps(event, game, tournament, translations);
   const cleaned = Sgf.clean(content, targetProps, game.rotation);
 
   const svg = await generateSvg(cleaned);
@@ -54,7 +53,7 @@ export default async function buildSgfAssets(input: BuildSgfRequest): Promise<Bu
     year: tournament.year,
     path: getTournamentSgfZipPath(sgfYamlPath),
     content: cleaned,
-    details: getGameInfo(sgf, game, tournament, stage),
+    details: getGameInfo(sgf, game, tournament),
   };
 }
 

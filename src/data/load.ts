@@ -37,9 +37,17 @@ export async function loadData(event: EventConfig): Promise<EventData> {
     const stageLocations = new Set<string>();
 
     if (json.stages?.length) {
-      for (const stageJson of json.stages) {
+      for (const [stageIndex, stageJson] of json.stages.entries()) {
         try {
-          const stage = await parseStage(event, stageJson, players, games, tournamentDetails, playersHandler);
+          const stage = await parseStage({
+            event,
+            stage: stageJson,
+            stageIndex,
+            playersMap: players,
+            gamesMap: games,
+            tournamentDetails,
+            playersHandler,
+          });
 
           if (stage.date) {
             dates.push(...stage.date);

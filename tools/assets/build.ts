@@ -8,7 +8,6 @@ import { loadTranslations } from '@/i18n/server';
 import type { BuildSgfRequest, BuildSgfResponse } from '@tools/assets/sgf';
 import { createZipBuffer } from '@/libs/zip';
 import { getTournaments } from '@/data';
-import { getGameStage } from '@/data/sgfs';
 
 const PUBLIC_SGF_DIR = './public/sgf';
 const SGF_WORKER_PATH = fileURLToPath(new URL('./sgf.ts', import.meta.url));
@@ -33,18 +32,11 @@ export async function buildAssets(event: EventContext) {
         continue;
       }
 
-      const stage = getGameStage(tournament, id);
-
-      if (!stage) {
-        continue;
-      }
-
       sgfTasks.push({
         event,
         sgfDir,
         outputDir: PUBLIC_SGF_DIR,
         game,
-        stage,
         tournament,
         translations,
       });
