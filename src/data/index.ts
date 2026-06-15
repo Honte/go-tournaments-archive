@@ -1,4 +1,6 @@
+import type { EventSummary } from '@/schema/data';
 import type { EventConfig, EventData } from '@/schema/event';
+import { loadTournamentDescription } from '@/data/description';
 import { loadData } from '@/data/load';
 
 const dataCache = new Map<string, Promise<EventData>>();
@@ -28,8 +30,18 @@ export async function getTournaments(event: EventConfig) {
 
 export async function getTournament(event: EventConfig, year: number) {
   const { tournaments } = await getData(event);
+  const tournament = tournaments.find((t) => t.year === year);
 
-  return tournaments.find((t) => t.year === year);
+  if (!tournament) {
+    return undefined;
+  }
+
+  const description = await loadTournamentDescription(event, year);
+
+  return {
+    ...tournament,
+    description,
+  };
 }
 
 export async function getTournamentList(event: EventConfig) {
@@ -107,4 +119,26 @@ export async function getCategoryStats(event: EventConfig, category: string) {
   const { stats } = await getData(event);
 
   return stats.categories[category];
+}
+
+export async function getEventSummary(event: EventConfig): Promise<EventSummary> {
+  const { stats } = await loadData(event);
+
+  const playersSummaries = Object.values(stats.players).map((player) => ({
+    ...player,
+    results: undefined,
+    opponents: undefined,
+  }));
+
+  const countriesSummaries = Object.values(stats.countries).map((country) => ({
+    ...country,
+    years: undefined,
+  }));
+
+  return {
+    attendants: playersSummaries.sort((a, b) => b.totalAttended - a.totalAttended).slice(0, 10),
+    medalists: playersSummaries.filter((player) => player.score > 0).sort((a, b) => b.score - a.score),
+    countryMedals: countriesSummaries.filter((country) => country.score > 0).sort((a, b) => b.score - a.score),
+    totalStats: stats.summary,
+  };
 }

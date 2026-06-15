@@ -7,7 +7,7 @@ import type { EventContext } from '@/schema/event';
 import { loadTranslations } from '@/i18n/server';
 import type { BuildSgfRequest, BuildSgfResponse } from '@tools/assets/sgf';
 import { createZipBuffer } from '@/libs/zip';
-import { getTournaments } from '@/data';
+import { loadData } from '@/data/load';
 
 const SGF_WORKER_PATH = fileURLToPath(new URL('./sgf.ts', import.meta.url));
 const STATUS_DELAY = 5000;
@@ -18,7 +18,7 @@ export async function buildAssets(event: EventContext) {
 
   const sgfDir = `./events/${event.id}/sgf`;
   const outputDir = path.join('./public', event.prefix || '', 'sgf');
-  const tournaments = await getTournaments(event);
+  const { tournaments } = await loadData(event);
   const translations = await loadTranslations(event);
 
   await rm(outputDir, { recursive: true, force: true });

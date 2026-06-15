@@ -1,4 +1,4 @@
-import type { CountryStats } from '@/schema/data';
+import type { CountrySummary } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
@@ -9,7 +9,7 @@ import { H1 } from '@/components/ui/H1';
 
 type CountryMedalistsProps = {
   event: EventContext;
-  countries: CountryStats[];
+  countries: CountrySummary[];
   translations: Translations;
 };
 

@@ -4,8 +4,7 @@ import { loadDefaultEvent } from '@/events';
 import type { Locale } from '@/i18n/consts';
 import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
-import { getAvailableTournaments, getTournament, getTournaments } from '@/data';
-import { getTournamentDescription } from '@/data/description';
+import { getAvailableTournaments, getTournament, getTournamentList } from '@/data';
 import { TournamentPage } from '@/components/pages/TournamentPage';
 
 type PageProps = {
@@ -31,7 +30,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export async function generateStaticParams() {
   const event = await loadDefaultEvent();
-  const tournaments = await getTournaments(event);
+  const tournaments = await getTournamentList(event);
 
   return tournaments
     .map((tournament) =>
@@ -56,19 +55,10 @@ export default async function Edition(props: PageProps) {
   const translations = await loadTranslations(event, locale);
   const tournament = await getTournament(event, Number(year));
   const years = await getAvailableTournaments(event);
-  const description = await getTournamentDescription(event, year, locale);
 
   if (!tournament) {
     return notFound();
   }
 
-  return (
-    <TournamentPage
-      event={event}
-      tournament={tournament}
-      description={description}
-      translations={translations}
-      years={years}
-    />
-  );
+  return <TournamentPage event={event} tournament={tournament} translations={translations} years={years} />;
 }

@@ -1,9 +1,7 @@
-import { mapValues } from 'lodash-es';
 import { notFound } from 'next/navigation';
 import type { NextRequest } from 'next/server';
 import { loadDefaultEvent } from '@/events';
-import { gameSgfUrl } from '@/libs/urls';
-import { getTournaments } from '@/data';
+import { getTournament, getTournaments } from '@/data';
 
 type PageProps = {
   params: Promise<{ year: string }>;
@@ -18,33 +16,14 @@ export async function GET(request: NextRequest, props: PageProps) {
   }
 
   const event = await loadDefaultEvent();
-  const tournaments = await getTournaments(event);
-  const tournament = tournaments.find((t) => String(t.year) === check[1]);
-  const getFilePath = (path: string) => `${event.domain ?? ''}${gameSgfUrl(event.basePath, event.prefix, path)}`;
+  const year = Number(check[1]);
+  const tournament = await getTournament(event, year);
 
   if (!tournament) {
     return notFound();
   }
 
-  return Response.json({
-    ...tournament,
-    games: mapValues(tournament.games, (game) => {
-      if (!game.props.sgf) {
-        return game;
-      }
-
-      return {
-        ...game,
-        props: {
-          ...game.props,
-          sgf: getFilePath(game.props.sgf),
-          svg: game.props.svg ? getFilePath(game.props.svg) : undefined,
-          png: game.props.png ? getFilePath(game.props.png) : undefined,
-          jpg: game.props.jpg ? getFilePath(game.props.jpg) : undefined,
-        },
-      };
-    }),
-  });
+  return Response.json(tournament);
 }
 
 export async function generateStaticParams() {

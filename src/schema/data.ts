@@ -27,6 +27,10 @@ export type Tournament = TournamentDetails & {
   hasSgfs: boolean;
 };
 
+export type TournamentWithDescription = Tournament & {
+  description?: string | Record<Locale, string>;
+};
+
 export type TournamentDateSpan = {
   start: string;
   end: string;
@@ -220,21 +224,24 @@ export type PlayerGame = {
   props?: GameProps;
 };
 
-export type PlayerStats = {
+export type PlayerSummary = {
   id: string;
   egd?: number;
   name: string;
   medals: StatsMedals;
   categoriesMedals: Record<string, StatsMedals>;
   country: string[];
-  results: PlayerResult[];
   bestPlace: number;
   totalGames: number;
   totalWon: number;
   totalAttended: number;
   totalSgfs: number;
-  opponents: Record<string, string>;
   score: number;
+};
+
+export type PlayerStats = PlayerSummary & {
+  results: PlayerResult[];
+  opponents: Record<string, string>;
 };
 
 export type PlayerResult = {
@@ -259,15 +266,18 @@ export type CountryResult = {
   results: (PlayerResult & { id: string })[];
 };
 
-export type CountryStats = {
+export type CountrySummary = {
   country: string;
   medals: StatsMedals;
   categoriesMedals: Record<string, StatsMedals>;
   score: number;
-  years: Record<number, CountryResult>;
   bestPlace: number;
   totalGames: number;
   totalWon: number;
+};
+
+export type CountryStats = CountrySummary & {
+  years: Record<number, CountryResult>;
 };
 
 export type CategoryPlayer = {
@@ -305,6 +315,13 @@ export type StatsSummary = {
   analysis: number;
   players: number;
   black: number;
+};
+
+export type EventSummary = {
+  attendants: PlayerSummary[];
+  medalists: PlayerSummary[];
+  countryMedals: CountrySummary[];
+  totalStats: StatsSummary;
 };
 
 export type TableStats = {

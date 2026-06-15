@@ -1,10 +1,14 @@
+import type { Locale } from '@/i18n/consts';
 import { Markdown } from '@/components/ui/Markdown';
 
 type TournamentDescriptionProps = {
-  content?: string;
+  description?: string | Record<Locale, string>;
+  locale: Locale;
 };
 
-export function TournamentDescription({ content }: TournamentDescriptionProps) {
+export function TournamentDescription({ description, locale }: TournamentDescriptionProps) {
+  const content = description && typeof description === 'object' ? description[locale] : description;
+
   if (!content) {
     return null;
   }

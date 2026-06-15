@@ -1,4 +1,4 @@
-import type { CountryStats, PlayerStats, StatsSummary, Tournament } from '@/schema/data';
+import type { EventSummary, Tournament } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { Attendants } from '@/components/Attendants';
@@ -12,21 +12,11 @@ export type HomePageProps = {
   event: EventContext;
   translations: Translations;
   tournaments: Tournament[];
-  totalStats: StatsSummary;
-  attendants: PlayerStats[];
-  medalists: PlayerStats[];
-  countryMedals: CountryStats[];
+  summary: EventSummary;
 };
 
-export function HomePage({
-  event,
-  translations,
-  tournaments,
-  totalStats,
-  attendants,
-  medalists,
-  countryMedals,
-}: HomePageProps) {
+export function HomePage({ event, translations, tournaments, summary }: HomePageProps) {
+  const { totalStats, medalists, attendants, countryMedals } = summary;
   return (
     <>
       <Hero event={event} translations={translations} />

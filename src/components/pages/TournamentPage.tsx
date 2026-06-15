@@ -1,4 +1,4 @@
-import type { Tournament } from '@/schema/data';
+import type { TournamentWithDescription } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { Awarded } from '@/components/Awarded';
@@ -11,14 +11,13 @@ import { TournamentDetails } from '@/components/TournamentDetails';
 
 type TournamentPageProps = {
   event: EventContext;
-  tournament: Tournament;
-  description?: string;
+  tournament: TournamentWithDescription;
   years: number[];
   translations: Translations;
 };
 
-export function TournamentPage({ event, tournament, translations, years, description }: TournamentPageProps) {
-  const { year, games, players, stages, displayReversed = true } = tournament;
+export function TournamentPage({ event, tournament, translations, years }: TournamentPageProps) {
+  const { year, games, players, stages, displayReversed = true, description } = tournament;
   const stagesToDisplay = displayReversed ? stages.toReversed() : stages;
 
   return (
@@ -30,7 +29,7 @@ export function TournamentPage({ event, tournament, translations, years, descrip
         <Awarded event={event} tournament={tournament} translations={translations} />
       </div>
 
-      <TournamentDescription content={description} />
+      <TournamentDescription description={description} locale={translations.locale} />
       <TournamentAnnouncement tournament={tournament} translations={translations} />
 
       {stagesToDisplay.map((stage, index) => (

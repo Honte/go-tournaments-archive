@@ -1,4 +1,4 @@
-import type { PlayerStats } from '@/schema/data';
+import type { PlayerSummary } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
@@ -8,7 +8,7 @@ import { PlayerLink } from '@/components/ui/PlayerLink';
 
 type AttendantsProps = {
   event: EventContext;
-  players: PlayerStats[];
+  players: PlayerSummary[];
   translations: Translations;
 };
 
