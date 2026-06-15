@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const event = await loadDefaultEvent();
   const translations = await loadTranslations(event, locale);
-  const tournament = await getTournament(Number(year));
+  const tournament = await getTournament(event, Number(year));
   const t = getTranslator(translations);
 
   return {
@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export async function generateStaticParams() {
   const event = await loadDefaultEvent();
-  const tournaments = await getTournaments();
+  const tournaments = await getTournaments(event);
 
   return tournaments
     .map((tournament) =>
@@ -54,8 +54,8 @@ export default async function Edition(props: PageProps) {
 
   const event = await loadDefaultEvent();
   const translations = await loadTranslations(event, locale);
-  const tournament = await getTournament(Number(year));
-  const years = await getAvailableTournaments();
+  const tournament = await getTournament(event, Number(year));
+  const years = await getAvailableTournaments(event);
   const description = await getTournamentDescription(event, year, locale);
 
   if (!tournament) {

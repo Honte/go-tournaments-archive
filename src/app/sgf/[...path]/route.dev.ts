@@ -93,7 +93,7 @@ export async function generateStaticParams() {
   const output = [];
 
   if (event.generateZips) {
-    for (const tournament of await getTournaments()) {
+    for (const tournament of await getTournaments(event)) {
       if (tournament.hasSgfs) {
         output.push({ path: [`${tournament.year}.zip`] });
       }
@@ -143,7 +143,7 @@ async function getSgf(event: EventContext, file: string, raw = false) {
 
   const sgfDir = `./events/${event.id}/sgf`;
   const translations = await loadTranslations(event);
-  const tournaments = await getTournaments();
+  const tournaments = await getTournaments(event);
   const sgfPath = path.posix.join('/sgf', ...path.relative(sgfDir, file).split(path.sep));
   const sgfDetails = await loadGameSgfDetails(event, tournaments, sgfPath, translations);
 
@@ -155,7 +155,7 @@ async function getSgf(event: EventContext, file: string, raw = false) {
 }
 
 async function serveZip(event: EventContext, year: number) {
-  const tournaments = await getTournaments();
+  const tournaments = await getTournaments(event);
   const tournament = tournaments.find((tournament) => tournament.year === year);
 
   if (!tournament?.hasSgfs) {

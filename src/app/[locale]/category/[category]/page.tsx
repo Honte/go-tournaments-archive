@@ -38,7 +38,7 @@ export default async function CategoryStats({ params }: PageProps) {
   const { locale, category } = await params;
 
   const translations = await loadTranslations(event, locale);
-  const stats = await getCategoryStats(category);
+  const stats = await getCategoryStats(event, category);
 
   return <CategoryPage event={event} translations={translations} stats={stats} category={category} />;
 }

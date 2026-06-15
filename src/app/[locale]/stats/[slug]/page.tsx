@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const event = await loadDefaultEvent();
   const translations = await loadTranslations(event, locale);
-  const player = await getPlayerStats(slug);
+  const player = await getPlayerStats(event, slug);
   const t = getTranslator(translations);
 
   return {
@@ -33,7 +33,7 @@ export default async function Page({ params }: PageProps) {
 
   const event = await loadDefaultEvent();
   const translations = await loadTranslations(event, locale);
-  const player = await getPlayerStats(slug);
+  const player = await getPlayerStats(event, slug);
 
   if (!player) {
     return notFound();
@@ -44,7 +44,7 @@ export default async function Page({ params }: PageProps) {
 
 export async function generateStaticParams() {
   const event = await loadDefaultEvent();
-  const players = await getAllPlayersStats();
+  const players = await getAllPlayersStats(event);
 
   return Object.keys(players)
     .filter((key) => key !== 'BYE')

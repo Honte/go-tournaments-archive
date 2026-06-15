@@ -17,7 +17,8 @@ export async function GET(_: Request, props: PageProps) {
     return notFound();
   }
 
-  const stats = await getCountryStats(code);
+  const event = await loadDefaultEvent();
+  const stats = await getCountryStats(event, code);
 
   if (!stats) {
     return notFound();
@@ -28,7 +29,7 @@ export async function GET(_: Request, props: PageProps) {
 
 export async function generateStaticParams() {
   const event = await loadDefaultEvent();
-  const countries = await getAllCountriesStats();
+  const countries = await getAllCountriesStats(event);
   const codes = Object.keys(countries);
 
   if (!codes.length) {

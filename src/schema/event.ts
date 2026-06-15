@@ -1,4 +1,5 @@
 import type { SVGProps } from 'react';
+import type { Stats, Tournament } from '@/schema/data';
 import type { Locale } from '@/i18n/consts';
 
 export type EventConfig = {
@@ -19,6 +20,11 @@ export type EventConfig = {
 export type EventContext = EventConfig & {
   readonly basePath?: string;
   readonly prefix?: string;
+};
+
+export type EventData = {
+  tournaments: Tournament[];
+  stats: Stats;
 };
 
 export type LogoProps = SVGProps<SVGSVGElement> & {

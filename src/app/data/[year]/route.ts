@@ -18,7 +18,7 @@ export async function GET(request: NextRequest, props: PageProps) {
   }
 
   const event = await loadDefaultEvent();
-  const tournaments = await getTournaments();
+  const tournaments = await getTournaments(event);
   const tournament = tournaments.find((t) => String(t.year) === check[1]);
   const getFilePath = (path: string) => `${event.domain ?? ''}${gameSgfUrl(event.basePath, event.prefix, path)}`;
 
@@ -48,7 +48,8 @@ export async function GET(request: NextRequest, props: PageProps) {
 }
 
 export async function generateStaticParams() {
-  const tournaments = await getTournaments();
+  const event = await loadDefaultEvent();
+  const tournaments = await getTournaments(event);
 
   return tournaments.map((tournament) => ({
     year: `${tournament.year}.json`,

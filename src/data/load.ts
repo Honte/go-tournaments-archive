@@ -2,15 +2,15 @@ import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import fg from 'fast-glob';
 import { parse } from 'yaml';
-import { Game, type Player, Tournament, TournamentDateSpan, TournamentDetails } from '@/schema/data';
-import type { EventConfig } from '@/schema/event';
-import { InputTournament } from '@/schema/input';
+import type { Game, Player, Tournament, TournamentDateSpan, TournamentDetails } from '@/schema/data';
+import type { EventConfig, EventData } from '@/schema/event';
+import type { InputTournament } from '@/schema/input';
 import { parseTop } from '@/libs/stage';
 import { createPlayersHandler } from '@/data/players';
 import { parseStage } from '@/data/stages';
 import { calculateStats } from '@/data/stats';
 
-export async function loadData(event: EventConfig) {
+export async function loadData(event: EventConfig): Promise<EventData> {
   const files = await fg.glob(`./events/${event.id}/data/*.yml`);
   const playersHandler = createPlayersHandler();
   const tournaments: Tournament[] = [];
@@ -131,7 +131,6 @@ export async function loadData(event: EventConfig) {
 
   return {
     tournaments,
-    playersHandler,
     stats,
   };
 }

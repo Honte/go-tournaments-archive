@@ -38,7 +38,7 @@ export default async function Stats({ params }: PageProps) {
   const { locale } = await params;
 
   const translations = await loadTranslations(event, locale);
-  const countries = await getAllCountriesStats();
+  const countries = await getAllCountriesStats(event);
   const t = getTranslator(translations);
 
   return (

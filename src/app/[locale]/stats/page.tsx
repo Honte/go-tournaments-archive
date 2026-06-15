@@ -32,7 +32,7 @@ export default async function Stats({ params }: PageProps) {
 
   const event = await loadDefaultEvent();
   const translations = await loadTranslations(event, locale);
-  const players = await getAllPlayersStats();
+  const players = await getAllPlayersStats(event);
   const t = getTranslator(translations);
 
   return (

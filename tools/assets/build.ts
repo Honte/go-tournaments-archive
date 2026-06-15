@@ -21,7 +21,7 @@ export async function buildAssets(event: EventContext) {
   await rm(PUBLIC_SGF_DIR, { recursive: true, force: true });
 
   const sgfDir = `./events/${event.id}/sgf`;
-  const tournaments = await getTournaments();
+  const tournaments = await getTournaments(event);
   const translations = await loadTranslations(event);
 
   const sgfTasks: BuildSgfRequest[] = [];

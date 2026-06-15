@@ -40,7 +40,7 @@ export default async function CountryStatsPage({ params }: PageProps) {
   const { locale, code } = await params;
   const translations = await loadTranslations(event, locale);
   const t = getTranslator(translations);
-  const country = await getCountryStats(code.toUpperCase());
+  const country = await getCountryStats(event, code.toUpperCase());
   const name = t(`country.${code.toUpperCase()}`);
 
   if (!country) {
@@ -57,7 +57,7 @@ export default async function CountryStatsPage({ params }: PageProps) {
 
 export async function generateStaticParams() {
   const event = await loadDefaultEvent();
-  const countries = await getAllCountriesStats();
+  const countries = await getAllCountriesStats(event);
   const codes = Object.keys(countries);
 
   if (!codes.length) {

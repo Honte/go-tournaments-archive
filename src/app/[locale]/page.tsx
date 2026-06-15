@@ -14,11 +14,11 @@ export default async function Home({ params }: PageProps) {
   const { locale } = await params;
   const event = await loadDefaultEvent();
   const translations = await loadTranslations(event, locale);
-  const tournaments = (await getTournaments()).toSorted((a, b) => b.id - a.id);
-  const attendants = await getTopAttendants(10);
-  const medalists = await getPlayerMedalists();
-  const countryMedals = await getCountryMedals();
-  const totalStats = await getTotalStats();
+  const tournaments = (await getTournaments(event)).toSorted((a, b) => b.id - a.id);
+  const attendants = await getTopAttendants(event, 10);
+  const medalists = await getPlayerMedalists(event);
+  const countryMedals = await getCountryMedals(event);
+  const totalStats = await getTotalStats(event);
 
   return (
     <HomePage
