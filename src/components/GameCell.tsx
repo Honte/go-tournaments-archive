@@ -20,7 +20,7 @@ export function GameCell({ entry, games, players, as, ...props }: GameCellProps)
 
 function getResult(entry: IndexedTablePlayerGame) {
   if (entry.opponent === 'BYE') {
-    return entry.won ? '++' : '--';
+    return entry.won ? '0+' : '0-'; // display with 0 to ensure that highlighter picks it up
   }
 
   return `${entry.index}${entry.won ? '+' : '-'}${entry.result === '!' ? '!' : ''}`;
