@@ -125,7 +125,7 @@ export async function loadData(event: EventConfig) {
     for (const id in tournament.players) {
       const player = tournament.players[id];
 
-      player.hasStats = id in stats.players;
+      player.hasStats = player.id in stats.players;
     }
   }
 
