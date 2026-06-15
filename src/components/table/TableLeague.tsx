@@ -76,7 +76,11 @@ export function TableLeague({ event, stage, players, games, translations }: Tabl
                 <td className="p-1">{player.rank}</td>
                 {event.showCountry && (
                   <td className="p-1">
-                    <CountryLink event={event} code={player.country} translations={translations} />
+                    {player.hasStats ? (
+                      <CountryLink event={event} code={player.country} translations={translations} />
+                    ) : (
+                      player.country
+                    )}
                   </td>
                 )}
                 {result.games.map((game, index) =>

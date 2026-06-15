@@ -54,6 +54,7 @@ export async function loadH9Tournament({
   const table: TableResult[] = [];
   const processedGamesMap = new Map<string, Game>();
   const existingGamesMap = new Map<string, Game>();
+  const tournamentPlaceMap = new Map<number, TableResult>();
   const rounds: string[][] = [];
 
   for (const player of tournament.results) {
@@ -85,6 +86,7 @@ export async function loadH9Tournament({
       games: [],
     };
 
+    tournamentPlaceMap.set(player.place, tableEntry);
     table.push(tableEntry);
 
     for (let i = 0; i < player.scores.length; i++) {
@@ -131,7 +133,7 @@ export async function loadH9Tournament({
   }
 
   for (const player of tournament.results) {
-    const current = table[player.place - 1];
+    const current = tournamentPlaceMap.get(player.place)!;
     const currentId = current.id;
 
     for (let round = 0; round < player.games.length; round++) {
@@ -143,7 +145,8 @@ export async function loadH9Tournament({
       }
 
       const localId = buildLocalGameId(player.place, game.opponent, game.round);
-      const opponentId = table[game.opponent - 1]?.id ?? 'BYE';
+      const opponent = tournamentPlaceMap.get(game.opponent);
+      const opponentId = opponent?.id ?? 'BYE';
 
       if (game.result === '+') {
         current.won.push(opponentId);
@@ -192,7 +195,7 @@ export async function loadH9Tournament({
         won: game.result === '+',
         opponent: opponentId,
         result: processed.result,
-        index: game.opponent,
+        index: opponent?.index ?? 0,
       });
     }
   }
