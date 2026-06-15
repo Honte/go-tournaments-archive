@@ -4,7 +4,7 @@ import { loadDefaultEvent } from '@/events';
 import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
 import { appleIconUrl, faviconUrl } from '@/libs/urls';
-import '../globals.css';
+import '@/globals.css';
 
 export async function generateMetadata(): Promise<Metadata> {
   const event = await loadDefaultEvent();

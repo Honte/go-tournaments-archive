@@ -5,9 +5,7 @@ import type { Locale } from '@/i18n/consts';
 import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
 import { getAllCountriesStats } from '@/data';
-import { AllCountriesStats } from '@/components/AllCountriesStats';
-import { Content } from '@/components/ui/Content';
-import { Title } from '@/components/ui/Title';
+import { AllCountriesPage } from '@/components/pages/AllCountriesPage';
 
 type PageProps = {
   params: Promise<{
@@ -28,7 +26,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-export default async function Stats({ params }: PageProps) {
+export default async function Page({ params }: PageProps) {
   const event = await loadDefaultEvent();
 
   if (!event.showCountry) {
@@ -39,12 +37,6 @@ export default async function Stats({ params }: PageProps) {
 
   const translations = await loadTranslations(event, locale);
   const countries = await getAllCountriesStats(event);
-  const t = getTranslator(translations);
 
-  return (
-    <Content>
-      <Title>{t('site.allTimeStatsByCountryTitle')}</Title>
-      <AllCountriesStats event={event} countries={countries} locale={locale} />
-    </Content>
-  );
+  return <AllCountriesPage event={event} countries={countries} translations={translations} />;
 }

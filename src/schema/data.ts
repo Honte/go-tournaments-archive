@@ -267,7 +267,7 @@ export type CountryResult = {
 };
 
 export type CountrySummary = {
-  country: string;
+  code: string;
   medals: StatsMedals;
   categoriesMedals: Record<string, StatsMedals>;
   score: number;

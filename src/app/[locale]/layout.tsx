@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import { PropsWithChildren } from 'react';
 import { loadDefaultEvent } from '@/events';
@@ -7,13 +6,7 @@ import { isEventLocale } from '@/i18n/locales';
 import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
 import { appleIconUrl, faviconUrl } from '@/libs/urls';
-import { Client } from '@/components/Client';
-import { Footer } from '@/components/Footer';
-import '../globals.css';
-import { Header } from '@/components/Header';
-import { QueryProvider } from '@/components/QueryProvider';
-
-const inter = Inter({ subsets: ['latin'] });
+import { Layout } from '@/components/pages/Layout';
 
 type RootLayoutProps = PropsWithChildren<{
   params: Promise<{ locale: string }>;
@@ -57,19 +50,8 @@ export default async function RootLayout({ params, children }: RootLayoutProps) 
   const translations = await loadTranslations(event, locale);
 
   return (
-    <html lang={locale} className="min-h-full bg-event-light">
-      <body className={`${inter.className} min-h-dvh flex flex-col text-event-dark`}>
-        <QueryProvider>
-          <Header event={event} translations={translations} />
-          <div className="flex-1 flex flex-col">
-            <main className="flex-1 flex flex-col container max-w-(--breakpoint-2xl) mx-auto p-4 w-full">
-              {children}
-            </main>
-            <Footer translations={translations} />
-          </div>
-          <Client locale={locale} event={event} />
-        </QueryProvider>
-      </body>
-    </html>
+    <Layout event={event} translations={translations}>
+      {children}
+    </Layout>
   );
 }

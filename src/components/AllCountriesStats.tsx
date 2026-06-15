@@ -47,7 +47,7 @@ function AllCountriesStatsContent({ event, countries, translations }: AllCountri
   const data = useMemo(
     () =>
       Object.values(countries)
-        .map<CountryRow>(({ country, medals, years, totalGames, totalWon, bestPlace }) => {
+        .map<CountryRow>(({ code, medals, years, totalGames, totalWon, bestPlace }) => {
           const [gold, silver, bronze] = medals;
 
           const players = new Set<string>();
@@ -58,8 +58,8 @@ function AllCountriesStatsContent({ event, countries, translations }: AllCountri
           }
 
           return {
-            country,
-            name: t(`country.${country}`),
+            country: code,
+            name: t(`country.${code}`),
             bestPlace,
             players: players.size,
             attended: Object.keys(years).length,

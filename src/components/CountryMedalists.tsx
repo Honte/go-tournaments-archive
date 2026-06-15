@@ -22,8 +22,8 @@ export function CountryMedalists({ event, countries, translations }: CountryMeda
       <MedalTable
         translations={translations}
         results={countries}
-        toKey={(item) => item.country}
-        toName={(item) => <CountryLink event={event} translations={translations} code={item.country} full={true} />}
+        toKey={(item) => item.code}
+        toName={(item) => <CountryLink event={event} translations={translations} code={item.code} full={true} />}
       />
       <AllCountriesStatsLink event={event} translations={translations} />
     </div>

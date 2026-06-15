@@ -1,6 +1,6 @@
 @import 'tailwindcss';
 
-@config "../../tailwind.config.js";
+@config "../tailwind.config.js";
 
 @utility faded-left {
   @apply relative before:bg-linear-to-r before:h-full before:left-0 before:absolute before:z-10 before:from-event-light before:to-transparent before:pointer-events-none;

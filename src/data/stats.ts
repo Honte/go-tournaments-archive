@@ -322,9 +322,9 @@ export function calculateStats(event: EventConfig, tournaments: Tournament[], pl
     return newEntry;
   }
 
-  function upsertCountry(country: string): CountryStats {
-    return (countries[country] ||= {
-      country,
+  function upsertCountry(code: string): CountryStats {
+    return (countries[code] ||= {
+      code,
       medals: [[], [], []],
       categoriesMedals: setupCategoriesMedals(),
       totalGames: 0,
