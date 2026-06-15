@@ -9,7 +9,6 @@ import type { BuildSgfRequest, BuildSgfResponse } from '@tools/assets/sgf';
 import { createZipBuffer } from '@/libs/zip';
 import { getTournaments } from '@/data';
 
-const PUBLIC_SGF_DIR = './public/sgf';
 const SGF_WORKER_PATH = fileURLToPath(new URL('./sgf.ts', import.meta.url));
 const STATUS_DELAY = 5000;
 
@@ -17,11 +16,12 @@ export async function buildAssets(event: EventContext) {
   console.log(`[assets] generating assets for ${event.id}`);
   const start = Date.now();
 
-  await rm(PUBLIC_SGF_DIR, { recursive: true, force: true });
-
   const sgfDir = `./events/${event.id}/sgf`;
+  const outputDir = path.join('./public', event.prefix || '', 'sgf');
   const tournaments = await getTournaments(event);
   const translations = await loadTranslations(event);
+
+  await rm(outputDir, { recursive: true, force: true });
 
   const sgfTasks: BuildSgfRequest[] = [];
   for (const tournament of tournaments) {
@@ -35,7 +35,7 @@ export async function buildAssets(event: EventContext) {
       sgfTasks.push({
         event,
         sgfDir,
-        outputDir: PUBLIC_SGF_DIR,
+        outputDir,
         game,
         tournament,
         translations,
@@ -47,20 +47,20 @@ export async function buildAssets(event: EventContext) {
   const sgfsByYear = Map.groupBy(results, (result) => result.year);
   const list = results.map((result) => result.details);
 
-  await mkdir(PUBLIC_SGF_DIR, { recursive: true });
-  await writeFile(path.join(PUBLIC_SGF_DIR, 'list.json'), JSON.stringify(list));
+  await mkdir(outputDir, { recursive: true });
+  await writeFile(path.join(outputDir, 'list.json'), JSON.stringify(list));
 
   const zipPromises = [];
   for (const [year, files] of sgfsByYear) {
-    zipPromises.push(handleZip(year, files));
+    zipPromises.push(handleZip(outputDir, year, files));
   }
   await Promise.all(zipPromises);
 
   console.log(`[assets] completed in ${Date.now() - start}ms`);
 }
 
-async function handleZip(year: number, files: { path: string; content: string }[]): Promise<void> {
-  await writeFile(path.join(PUBLIC_SGF_DIR, `${year}.zip`), createZipBuffer(files));
+async function handleZip(outputDir: string, year: number, files: { path: string; content: string }[]): Promise<void> {
+  await writeFile(path.join(outputDir, `${year}.zip`), createZipBuffer(files));
 }
 
 async function buildSgfAssetsInWorkers(tasks: BuildSgfRequest[]): Promise<BuildSgfResponse[]> {
