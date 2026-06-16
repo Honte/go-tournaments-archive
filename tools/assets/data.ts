@@ -42,9 +42,9 @@ export async function buildDataAssets(
     ...Object.values(stats.countries).map((countryStats) =>
       writeJson(outputDir, path.join('stats', 'country', `${countryStats.code.toLowerCase()}.json`), countryStats)
     ),
-    ...(event.categories ?? []).map((category) => {
-      writeJson(outputDir, path.join('stats', 'category', `${category}.json`), stats.categories[category]);
-    }),
+    ...(event.categories ?? []).map((category) =>
+      writeJson(outputDir, path.join('stats', 'category', `${category}.json`), stats.categories[category])
+    ),
   ]);
 
   console.log('[assets] completed jsons');
