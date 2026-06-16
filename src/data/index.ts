@@ -85,36 +85,6 @@ export async function getCountryStats(event: EventConfig, country: string) {
   return stats.countries[country];
 }
 
-export async function getPlayerMedalists(event: EventConfig) {
-  const { stats } = await getData(event);
-
-  return Object.values(stats.players)
-    .filter((p) => p.score > 0)
-    .sort((a, b) => b.score - a.score);
-}
-
-export async function getCountryMedals(event: EventConfig) {
-  const { stats } = await getData(event);
-
-  return Object.values(stats.countries)
-    .filter((p) => p.score > 0)
-    .sort((a, b) => b.score - a.score);
-}
-
-export async function getTopAttendants(event: EventConfig, limit: number) {
-  const { stats } = await getData(event);
-
-  return Object.values(stats.players)
-    .sort((a, b) => b.totalAttended - a.totalAttended)
-    .slice(0, limit);
-}
-
-export async function getTotalStats(event: EventConfig) {
-  const { stats } = await getData(event);
-
-  return stats.summary;
-}
-
 export async function getCategoryStats(event: EventConfig, category: string) {
   const { stats } = await getData(event);
 
@@ -122,23 +92,7 @@ export async function getCategoryStats(event: EventConfig, category: string) {
 }
 
 export async function getEventSummary(event: EventConfig): Promise<EventSummary> {
-  const { stats } = await loadData(event);
+  const { summary } = await loadData(event);
 
-  const playersSummaries = Object.values(stats.players).map((player) => ({
-    ...player,
-    results: undefined,
-    opponents: undefined,
-  }));
-
-  const countriesSummaries = Object.values(stats.countries).map((country) => ({
-    ...country,
-    years: undefined,
-  }));
-
-  return {
-    attendants: playersSummaries.sort((a, b) => b.totalAttended - a.totalAttended).slice(0, 10),
-    medalists: playersSummaries.filter((player) => player.score > 0).sort((a, b) => b.score - a.score),
-    countryMedals: countriesSummaries.filter((country) => country.score > 0).sort((a, b) => b.score - a.score),
-    totalStats: stats.summary,
-  };
+  return summary;
 }

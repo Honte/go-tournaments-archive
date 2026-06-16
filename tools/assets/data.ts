@@ -2,7 +2,6 @@ import { mkdir, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import type { EventContext, EventData } from '@/schema/event';
 import type { Locale, Translations } from '@/i18n/consts';
-import { getEventSummary } from '@/data';
 import { loadTournamentDescription } from '@/data/description';
 import { getSitemap } from '@/data/sitemap';
 
@@ -12,13 +11,13 @@ export async function buildDataAssets(
   allTranslations: Record<Locale, Translations>
 ): Promise<void> {
   const outputDir = path.join('./public', event.prefix || '', 'data');
-  const { tournaments, stats } = data;
+  const { tournaments, stats, summary } = data;
 
   await rm(outputDir, { recursive: true, force: true });
 
   await Promise.all([
     writeJson(outputDir, 'tournaments.json', tournaments),
-    getEventSummary(event).then((summary) => writeJson(outputDir, path.join('stats', 'summary.json'), summary)),
+    writeJson(outputDir, path.join('stats', 'summary.json'), summary),
     writeJson(outputDir, path.join('stats', 'players.json'), stats.players),
     writeJson(outputDir, path.join('stats', 'countries.json'), stats.countries),
     ...tournaments.map(async (tournament) =>
