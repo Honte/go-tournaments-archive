@@ -1,6 +1,6 @@
 import { Game, LeagueStage, Player, Stage, TournamentDetails } from '@/schema/data';
 import type { EventConfig } from '@/schema/event';
-import { InputStage } from '@/schema/input';
+import { type InputStage } from '@/schema/input';
 import { parseDates } from '@/libs/dates';
 import { loadClassificationStage } from '@/data/classification';
 import { createFinalTable } from '@/data/final';
@@ -11,14 +11,25 @@ import { createTable } from '@/data/table';
 import { createLadderTable } from '@/data/tableLadder';
 import { createTableWithoutRounds } from '@/data/tableWithoutRounds';
 
-export async function parseStage(
-  event: EventConfig,
-  stage: InputStage,
-  playersMap: Record<string, Player>,
-  gamesMap: Record<string, Game>,
-  tournamentDetails: TournamentDetails,
-  playersHandler: PlayersHandler
-): Promise<Stage> {
+export type ParseStageProps = {
+  event: EventConfig;
+  stage: InputStage;
+  stageIndex: number;
+  playersMap: Record<string, Player>;
+  playersHandler: PlayersHandler;
+  gamesMap: Record<string, Game>;
+  tournamentDetails: TournamentDetails;
+};
+
+export async function parseStage({
+  event,
+  stage,
+  stageIndex,
+  playersMap,
+  gamesMap,
+  tournamentDetails,
+  playersHandler,
+}: ParseStageProps): Promise<Stage> {
   const date = stage.date ? parseDates(stage.date) : undefined;
 
   switch (stage.type) {
@@ -26,6 +37,7 @@ export async function parseStage(
       return loadH9Tournament({
         event,
         stage,
+        stageIndex,
         playersMap,
         playersHandler,
         gamesMap,
@@ -39,7 +51,7 @@ export async function parseStage(
         tournamentDetails,
       });
     case 'league': {
-      const rounds = stage.rounds.map((round, index) => parseGames(gamesMap, round, index + 1));
+      const rounds = stage.rounds.map((round, index) => parseGames(gamesMap, round, stageIndex, index + 1));
 
       return {
         ...stage,
@@ -55,8 +67,8 @@ export async function parseStage(
       } satisfies LeagueStage;
     }
     case 'ladder-table': {
-      const rounds = stage.rounds.map((round, index) => parseGames(gamesMap, round, index + 1));
-      const playoffs = stage.playoffs ? parseGames(gamesMap, stage.playoffs) : [];
+      const rounds = stage.rounds.map((round, index) => parseGames(gamesMap, round, stageIndex, index + 1));
+      const playoffs = stage.playoffs ? parseGames(gamesMap, stage.playoffs, stageIndex) : [];
 
       return {
         ...stage,
@@ -72,7 +84,7 @@ export async function parseStage(
       };
     }
     case 'final': {
-      const games = parseGames(gamesMap, stage.games);
+      const games = parseGames(gamesMap, stage.games, stageIndex);
 
       return {
         ...stage,
@@ -86,7 +98,7 @@ export async function parseStage(
       };
     }
     case 'round-robin-table': {
-      const games = parseGames(gamesMap, stage.games);
+      const games = parseGames(gamesMap, stage.games, stageIndex);
 
       return {
         ...stage,

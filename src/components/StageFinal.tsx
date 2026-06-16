@@ -1,18 +1,21 @@
-import type { FinalStage, Player } from '@/schema/data';
+import type { FinalStage, Game, Player } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
+import { Stone } from '@/components/Stone';
 import { PlayerLink } from '@/components/ui/PlayerLink';
 import { PlayerName } from '@/components/ui/PlayerName';
+import { GameViewerButton } from '@/components/viewer/GameViewerTrigger';
 
 type StageFinalProps = {
   event: EventContext;
   stage: FinalStage;
+  games: Record<string, Game>;
   players: Record<string, Player>;
   translations: Translations;
 };
 
-export function StageFinal({ event, stage, players, translations }: StageFinalProps) {
+export function StageFinal({ event, stage, games, players, translations }: StageFinalProps) {
   const t = getTranslator(translations);
   const {
     requiredWins,
@@ -26,13 +29,14 @@ export function StageFinal({ event, stage, players, translations }: StageFinalPr
     : '';
   const winnerPlayer = players[winner.id];
   const loserPlayer = players[loser.id];
+  const sgfGames = stage.games.map((game) => games[game]).filter((game): game is Game => !!game?.props.sgf);
 
   return (
-    <>
+    <div className="flex flex-col gap-2">
       <p>
         {t('stage.requiredWins', String(requiredWins))} {includePrevious ? t('stage.includePreviousWins') : ''}
       </p>
-      <div className="bg-gray-200 p-2 my-2 md:p-3 text-lg flex items-center text-center gap-2">
+      <div className="text-lg flex items-center gap-2 flex-wrap">
         <strong>
           <PlayerLink event={event} playerId={winnerPlayer.id} locale={translations.locale}>
             <PlayerName player={winnerPlayer} showCountry={event.showCountry} />
@@ -47,6 +51,29 @@ export function StageFinal({ event, stage, players, translations }: StageFinalPr
         <strong>{result}</strong>
         {prev && <span>{prev}</span>}
       </div>
-    </>
+      {sgfGames.length > 0 && (
+        <div className="flex flex-wrap gap-2">
+          {sgfGames.map((game) => (
+            <FinalSgfGame key={game.id} game={game} players={players} />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function FinalSgfGame({ game, players }: { game: Game; players: Record<string, Player> }) {
+  const winner = game.players.find((player) => player.won);
+
+  if (!winner) {
+    return null;
+  }
+
+  return (
+    <GameViewerButton sgfPath={game.props.sgf!} className="flex text-sm items-center px-3 py-1">
+      <span className="mr-1">{players[winner.id]?.name}:</span>
+      {winner.color && <Stone color={winner.color} className="size-4" />}
+      {winner.score ? `+${winner.score}` : '+?'}
+    </GameViewerButton>
   );
 }

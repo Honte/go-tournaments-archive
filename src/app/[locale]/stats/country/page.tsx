@@ -2,12 +2,9 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { loadDefaultEvent } from '@/events';
 import type { Locale } from '@/i18n/consts';
-import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
-import { getAllCountriesStats } from '@/data';
-import { AllCountriesStats } from '@/components/AllCountriesStats';
-import { Content } from '@/components/ui/Content';
-import { Title } from '@/components/ui/Title';
+import { getAllCountriesStats, getTranslations } from '@/data/serverApi';
+import { AllCountriesPage } from '@/components/pages/AllCountriesPage';
 
 type PageProps = {
   params: Promise<{
@@ -19,7 +16,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { locale } = await params;
 
   const event = await loadDefaultEvent();
-  const translations = await loadTranslations(event, locale);
+  const translations = await getTranslations(event, locale);
   const t = getTranslator(translations);
 
   return {
@@ -28,7 +25,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-export default async function Stats({ params }: PageProps) {
+export default async function Page({ params }: PageProps) {
   const event = await loadDefaultEvent();
 
   if (!event.showCountry) {
@@ -37,14 +34,8 @@ export default async function Stats({ params }: PageProps) {
 
   const { locale } = await params;
 
-  const translations = await loadTranslations(event, locale);
-  const countries = await getAllCountriesStats();
-  const t = getTranslator(translations);
+  const translations = await getTranslations(event, locale);
+  const countries = await getAllCountriesStats(event);
 
-  return (
-    <Content>
-      <Title>{t('site.allTimeStatsByCountryTitle')}</Title>
-      <AllCountriesStats event={event} countries={countries} locale={locale} />
-    </Content>
-  );
+  return <AllCountriesPage event={event} countries={countries} translations={translations} />;
 }

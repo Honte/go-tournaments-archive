@@ -14,7 +14,7 @@ export function GameViewerTrigger({ sgfPath, children, className, ...props }: Ga
   return (
     <button
       type="button"
-      className={`block cursor-pointer border-0 bg-transparent outline-none p-0 ${className ?? ''}`}
+      className={`block cursor-pointer border-0 outline-none p-0 ${className ?? ''}`}
       onClick={() => dispatchGameEvent(sgfPath)}
       {...props}
     >

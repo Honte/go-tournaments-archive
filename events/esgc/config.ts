@@ -1,7 +1,7 @@
 import type { EventConfig } from '@/schema/event';
 
 const EVENT_CONFIG: EventConfig = {
-  id: 'epc',
+  id: 'esgc',
   domain: '',
   locales: ['en'],
   showCountry: true,

@@ -1,11 +1,10 @@
 import { notFound } from 'next/navigation';
-import { getAllPlayersStats, getPlayerStats } from '@/data';
+import { loadDefaultEvent } from '@/events';
+import { getPlayerStats } from '@/data/serverApi';
 
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
-
-export const dynamic = 'force-static';
 
 export async function GET(_: Request, props: PageProps) {
   const { slug: slugParam } = await props.params;
@@ -16,19 +15,12 @@ export async function GET(_: Request, props: PageProps) {
     return notFound();
   }
 
-  const stats = await getPlayerStats(slug);
+  const event = await loadDefaultEvent();
+  const stats = await getPlayerStats(event, slug);
 
   if (!stats) {
     return notFound();
   }
 
   return Response.json(stats);
-}
-
-export async function generateStaticParams() {
-  const players = await getAllPlayersStats();
-
-  return Object.keys(players)
-    .filter((slug) => slug !== 'BYE')
-    .map((slug) => ({ slug: `${slug}.json` }));
 }

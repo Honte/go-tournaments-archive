@@ -2,12 +2,9 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { loadDefaultEvent } from '@/events';
 import type { Locale } from '@/i18n/consts';
-import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
-import { getAllCountriesStats, getCountryStats } from '@/data';
-import { CountryStats } from '@/components/CountryStats';
-import { Content } from '@/components/ui/Content';
-import { Title } from '@/components/ui/Title';
+import { getAllCountriesStats, getCountryStats, getTranslations } from '@/data/serverApi';
+import { CountryPage } from '@/components/pages/CountryPage';
 
 type PageProps = {
   params: Promise<{
@@ -20,7 +17,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { code, locale } = await params;
 
   const event = await loadDefaultEvent();
-  const translations = await loadTranslations(event, locale);
+  const translations = await getTranslations(event, locale);
   const t = getTranslator(translations);
   const name = t(`country.${code.toUpperCase()}`);
 
@@ -30,7 +27,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-export default async function CountryStatsPage({ params }: PageProps) {
+export default async function Page({ params }: PageProps) {
   const event = await loadDefaultEvent();
 
   if (!event.showCountry) {
@@ -38,26 +35,19 @@ export default async function CountryStatsPage({ params }: PageProps) {
   }
 
   const { locale, code } = await params;
-  const translations = await loadTranslations(event, locale);
-  const t = getTranslator(translations);
-  const country = await getCountryStats(code.toUpperCase());
-  const name = t(`country.${code.toUpperCase()}`);
+  const translations = await getTranslations(event, locale);
+  const country = await getCountryStats(event, code.toLowerCase());
 
   if (!country) {
     return notFound();
   }
 
-  return (
-    <Content>
-      <Title>{name}</Title>
-      <CountryStats event={event} code={code.toUpperCase()} locale={locale} />
-    </Content>
-  );
+  return <CountryPage event={event} translations={translations} country={country} />;
 }
 
 export async function generateStaticParams() {
   const event = await loadDefaultEvent();
-  const countries = await getAllCountriesStats();
+  const countries = await getAllCountriesStats(event);
   const codes = Object.keys(countries);
 
   if (!codes.length) {

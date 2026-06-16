@@ -10,7 +10,7 @@ export function Details({ details }: DetailsProps) {
       {Object.entries(details).map(([label, detail]) => (
         <Fragment key={label}>
           <dt className="font-bold after:content-[':'] sm:text-nowrap">{label}</dt>
-          <dd className="max-md:mb-2">{detail}</dd>
+          <dd className="max-md:mb-2 wrap-break-word">{detail}</dd>
         </Fragment>
       ))}
     </dl>

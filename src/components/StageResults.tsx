@@ -23,7 +23,7 @@ export function StageResults({ event, stage, games, players, translations }: Sta
     case 'ladder-table':
       return <TableLadder event={event} stage={stage} players={players} translations={translations} games={games} />;
     case 'final':
-      return <StageFinal event={event} stage={stage} translations={translations} players={players} />;
+      return <StageFinal event={event} stage={stage} players={players} translations={translations} games={games} />;
     case 'round-robin-table':
       return (
         <TableWithoutRounds event={event} stage={stage} players={players} translations={translations} games={games} />

@@ -2,15 +2,15 @@ import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import fg from 'fast-glob';
 import { parse } from 'yaml';
-import { Game, type Player, Tournament, TournamentDateSpan, TournamentDetails } from '@/schema/data';
-import type { EventConfig } from '@/schema/event';
-import { InputTournament } from '@/schema/input';
+import type { Game, Player, Tournament, TournamentDateSpan, TournamentDetails } from '@/schema/data';
+import type { EventConfig, EventData } from '@/schema/event';
+import type { InputTournament } from '@/schema/input';
 import { parseTop } from '@/libs/stage';
 import { createPlayersHandler } from '@/data/players';
 import { parseStage } from '@/data/stages';
 import { calculateStats } from '@/data/stats';
 
-export async function loadData(event: EventConfig) {
+export async function loadData(event: EventConfig): Promise<EventData> {
   const files = await fg.glob(`./events/${event.id}/data/*.yml`);
   const playersHandler = createPlayersHandler();
   const tournaments: Tournament[] = [];
@@ -37,9 +37,17 @@ export async function loadData(event: EventConfig) {
     const stageLocations = new Set<string>();
 
     if (json.stages?.length) {
-      for (const stageJson of json.stages) {
+      for (const [stageIndex, stageJson] of json.stages.entries()) {
         try {
-          const stage = await parseStage(event, stageJson, players, games, tournamentDetails, playersHandler);
+          const stage = await parseStage({
+            event,
+            stage: stageJson,
+            stageIndex,
+            playersMap: players,
+            gamesMap: games,
+            tournamentDetails,
+            playersHandler,
+          });
 
           if (stage.date) {
             dates.push(...stage.date);
@@ -125,14 +133,30 @@ export async function loadData(event: EventConfig) {
     for (const id in tournament.players) {
       const player = tournament.players[id];
 
-      player.hasStats = id in stats.players;
+      player.hasStats = player.id in stats.players;
     }
   }
 
+  const playersSummaries = Object.values(stats.players).map((player) => ({
+    ...player,
+    results: undefined,
+    opponents: undefined,
+  }));
+
+  const countriesSummaries = Object.values(stats.countries).map((country) => ({
+    ...country,
+    years: undefined,
+  }));
+
   return {
     tournaments,
-    playersHandler,
     stats,
+    summary: {
+      attendants: playersSummaries.sort((a, b) => b.totalAttended - a.totalAttended).slice(0, 10),
+      medalists: playersSummaries.filter((player) => player.score > 0).sort((a, b) => b.score - a.score),
+      countryMedals: countriesSummaries.filter((country) => country.score > 0).sort((a, b) => b.score - a.score),
+      totalStats: stats.summary,
+    },
   };
 }
 

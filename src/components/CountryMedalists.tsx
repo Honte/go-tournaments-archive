@@ -1,4 +1,4 @@
-import type { CountryStats } from '@/schema/data';
+import type { CountrySummary } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
@@ -9,7 +9,7 @@ import { H1 } from '@/components/ui/H1';
 
 type CountryMedalistsProps = {
   event: EventContext;
-  countries: CountryStats[];
+  countries: CountrySummary[];
   translations: Translations;
 };
 
@@ -22,8 +22,8 @@ export function CountryMedalists({ event, countries, translations }: CountryMeda
       <MedalTable
         translations={translations}
         results={countries}
-        toKey={(item) => item.country}
-        toName={(item) => <CountryLink event={event} translations={translations} code={item.country} full={true} />}
+        toKey={(item) => item.code}
+        toName={(item) => <CountryLink event={event} translations={translations} code={item.code} full={true} />}
       />
       <AllCountriesStatsLink event={event} translations={translations} />
     </div>
