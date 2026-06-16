@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { loadDefaultEvent } from '@/events';
-import { getTournament } from '@/data';
+import { getTournament } from '@/data/serverApi';
 
 type PageProps = {
   params: Promise<{ year: string }>;

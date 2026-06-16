@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { loadDefaultEvent } from '@/events';
-import { getCountryStats } from '@/data';
+import { getCountryStats } from '@/data/serverApi';
 
 type PageProps = {
   params: Promise<{ code: string }>;

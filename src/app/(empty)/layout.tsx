@@ -1,14 +1,14 @@
 import type { Metadata } from 'next';
 import { PropsWithChildren } from 'react';
 import { loadDefaultEvent } from '@/events';
-import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
 import { appleIconUrl, faviconUrl } from '@/libs/urls';
+import { getTranslations } from '@/data/serverApi';
 import '@/globals.css';
 
 export async function generateMetadata(): Promise<Metadata> {
   const event = await loadDefaultEvent();
-  const translations = await loadTranslations(event);
+  const translations = await getTranslations(event);
   const t = getTranslator(translations);
 
   return {

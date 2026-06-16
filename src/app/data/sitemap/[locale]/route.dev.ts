@@ -3,7 +3,7 @@ import { loadDefaultEvent } from '@/events';
 import type { Locale } from '@/i18n/consts';
 import { isEventLocale } from '@/i18n/locales';
 import { loadTranslations } from '@/i18n/server';
-import { getTournamentList } from '@/data';
+import { getTournamentList } from '@/data/serverApi';
 import { getSitemap } from '@/data/sitemap';
 
 type PageProps = {

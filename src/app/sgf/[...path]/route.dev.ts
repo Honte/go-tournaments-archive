@@ -10,7 +10,7 @@ import { generateJpg, generatePng } from '@tools/img';
 import { Sgf } from '@tools/sgf';
 import { generateSvg } from '@tools/svg';
 import { createZip } from '@/libs/zip';
-import { getTournaments } from '@/data';
+import { getTournaments } from '@/data/serverApi';
 import { loadCleanTournamentSgfs, loadGameSgfDetails } from '@/data/sgfs';
 
 const THUMB_SIZE = 128;

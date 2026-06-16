@@ -2,9 +2,8 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { loadDefaultEvent } from '@/events';
 import type { Locale } from '@/i18n/consts';
-import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
-import { getAvailableTournaments, getTournament, getTournamentList } from '@/data';
+import { getAvailableTournaments, getTournament, getTournamentList, getTranslations } from '@/data/serverApi';
 import { TournamentPage } from '@/components/pages/TournamentPage';
 
 type PageProps = {
@@ -18,7 +17,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { year, locale } = await params;
 
   const event = await loadDefaultEvent();
-  const translations = await loadTranslations(event, locale);
+  const translations = await getTranslations(event, locale);
   const tournament = await getTournament(event, Number(year));
   const t = getTranslator(translations);
 
@@ -52,7 +51,7 @@ export default async function Edition(props: PageProps) {
   }
 
   const event = await loadDefaultEvent();
-  const translations = await loadTranslations(event, locale);
+  const translations = await getTranslations(event, locale);
   const tournament = await getTournament(event, Number(year));
   const years = await getAvailableTournaments(event);
 

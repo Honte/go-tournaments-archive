@@ -2,9 +2,8 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { loadDefaultEvent } from '@/events';
 import type { Locale } from '@/i18n/consts';
-import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
-import { getAllCountriesStats, getCountryStats } from '@/data';
+import { getAllCountriesStats, getCountryStats, getTranslations } from '@/data/serverApi';
 import { CountryPage } from '@/components/pages/CountryPage';
 
 type PageProps = {
@@ -18,7 +17,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { code, locale } = await params;
 
   const event = await loadDefaultEvent();
-  const translations = await loadTranslations(event, locale);
+  const translations = await getTranslations(event, locale);
   const t = getTranslator(translations);
   const name = t(`country.${code.toUpperCase()}`);
 
@@ -36,7 +35,7 @@ export default async function Page({ params }: PageProps) {
   }
 
   const { locale, code } = await params;
-  const translations = await loadTranslations(event, locale);
+  const translations = await getTranslations(event, locale);
   const country = await getCountryStats(event, code.toLowerCase());
 
   if (!country) {

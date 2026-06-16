@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { loadDefaultEvent } from '@/events';
-import { getPlayerStats } from '@/data';
+import { getPlayerStats } from '@/data/serverApi';
 
 type PageProps = {
   params: Promise<{ slug: string }>;

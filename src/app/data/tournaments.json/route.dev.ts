@@ -1,5 +1,5 @@
 import { loadDefaultEvent } from '@/events';
-import { getTournaments } from '@/data';
+import { getTournaments } from '@/data/serverApi';
 
 export async function GET() {
   const event = await loadDefaultEvent();

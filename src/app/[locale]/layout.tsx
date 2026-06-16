@@ -3,9 +3,9 @@ import { notFound } from 'next/navigation';
 import { PropsWithChildren } from 'react';
 import { loadDefaultEvent } from '@/events';
 import { isEventLocale } from '@/i18n/locales';
-import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
 import { appleIconUrl, faviconUrl } from '@/libs/urls';
+import { getTranslations } from '@/data/serverApi';
 import { Layout } from '@/components/pages/Layout';
 
 type RootLayoutProps = PropsWithChildren<{
@@ -20,7 +20,7 @@ export async function generateMetadata(props: RootLayoutProps): Promise<Metadata
     return notFound();
   }
 
-  const translations = await loadTranslations(event, locale);
+  const translations = await getTranslations(event, locale);
   const t = getTranslator(translations);
 
   return {
@@ -47,7 +47,7 @@ export default async function RootLayout({ params, children }: RootLayoutProps) 
     return notFound();
   }
 
-  const translations = await loadTranslations(event, locale);
+  const translations = await getTranslations(event, locale);
 
   return (
     <Layout event={event} translations={translations}>

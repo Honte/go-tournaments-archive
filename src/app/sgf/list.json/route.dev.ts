@@ -1,5 +1,5 @@
 import { loadDefaultEvent } from '@/events';
-import { getTournaments } from '@/data';
+import { getTournaments } from '@/data/serverApi';
 import { loadSgfs } from '@/data/sgfs';
 
 export const dynamic = 'force-static';

@@ -1,7 +1,6 @@
 import { loadDefaultEvent } from '@/events';
 import type { Locale } from '@/i18n/consts';
-import { loadTranslations } from '@/i18n/server';
-import { getEventSummary, getTournaments } from '@/data';
+import { getEventSummary, getTournaments, getTranslations } from '@/data/serverApi';
 import { HomePage } from '@/components/pages/HomePage';
 
 type PageProps = {
@@ -13,7 +12,7 @@ type PageProps = {
 export default async function Home({ params }: PageProps) {
   const { locale } = await params;
   const event = await loadDefaultEvent();
-  const translations = await loadTranslations(event, locale);
+  const translations = await getTranslations(event, locale);
   const tournaments = (await getTournaments(event)).toSorted((a, b) => b.id - a.id);
   const summary = await getEventSummary(event);
 

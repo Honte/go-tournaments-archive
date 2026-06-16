@@ -1,5 +1,5 @@
 import { loadDefaultEvent } from '@/events';
-import { getAllCountriesStats } from '@/data';
+import { getAllCountriesStats } from '@/data/serverApi';
 
 export async function GET() {
   const event = await loadDefaultEvent();
