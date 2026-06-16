@@ -8,8 +8,6 @@ type PageProps = {
   params: Promise<{ locale: string }>;
 };
 
-export const dynamic = 'force-static';
-
 export async function GET(_: Request, props: PageProps) {
   const { locale: localeParam } = await props.params;
   const check = localeParam.match(/^([a-z]{2})\.json$/);
@@ -21,10 +19,4 @@ export async function GET(_: Request, props: PageProps) {
   }
 
   return Response.json(await loadTranslations(event, locale));
-}
-
-export async function generateStaticParams() {
-  const event = await loadDefaultEvent();
-
-  return event.locales.map((locale) => ({ locale: `${locale}.json` }));
 }

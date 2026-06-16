@@ -13,3 +13,12 @@ export async function loadTranslations(event: EventConfig, locale?: Locale): Pro
 
   return translations as Translations;
 }
+
+export async function loadAllTranslations(event: EventConfig) {
+  const translations = await Promise.all(event.locales.map((locale) => loadTranslations(event, locale)));
+
+  return translations.reduce((acc, translation) => ({ ...acc, [translation.locale]: translation }), {}) as Record<
+    Locale,
+    Translations
+  >;
+}

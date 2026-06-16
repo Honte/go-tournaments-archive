@@ -10,8 +10,6 @@ type PageProps = {
   params: Promise<{ locale: string }>;
 };
 
-export const dynamic = 'force-static';
-
 export async function GET(_: Request, props: PageProps) {
   const event = await loadDefaultEvent();
   const { locale: localeParam } = await props.params;
@@ -26,10 +24,4 @@ export async function GET(_: Request, props: PageProps) {
   const translations = await loadTranslations(event, locale);
 
   return Response.json(getSitemap(event, tournaments, translations));
-}
-
-export async function generateStaticParams() {
-  const event = await loadDefaultEvent();
-
-  return event.locales.map((locale) => ({ locale: `${locale}.json` }));
 }

@@ -6,8 +6,6 @@ type PageProps = {
   params: Promise<{ category: string }>;
 };
 
-export const dynamic = 'force-static';
-
 export async function GET(_: Request, props: PageProps) {
   const { category: categoryParam } = await props.params;
   const check = categoryParam.match(/^(.+)\.json$/);
@@ -25,14 +23,4 @@ export async function GET(_: Request, props: PageProps) {
   }
 
   return Response.json(categoryStats);
-}
-
-export async function generateStaticParams() {
-  const event = await loadDefaultEvent();
-
-  if (!event.categories?.length) {
-    return [{ category: 'none.json' }];
-  }
-
-  return event.categories.map((category) => ({ category: `${category}.json` }));
 }
