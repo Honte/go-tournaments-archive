@@ -1,5 +1,6 @@
 import { mkdir, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
+import type { Tournament } from '@/schema/data';
 import type { EventContext, EventData } from '@/schema/event';
 import type { Locale, Translations } from '@/i18n/consts';
 import { loadTournamentDescription } from '@/data/description';
@@ -20,12 +21,7 @@ export async function buildDataAssets(
     writeJson(outputDir, path.join('stats', 'summary.json'), summary),
     writeJson(outputDir, path.join('stats', 'players.json'), stats.players),
     writeJson(outputDir, path.join('stats', 'countries.json'), stats.countries),
-    ...tournaments.map(async (tournament) =>
-      writeJson(outputDir, `${tournament.year}.json`, {
-        ...tournament,
-        description: await loadTournamentDescription(event, tournament.year),
-      })
-    ),
+    ...tournaments.map((tournament) => writeTournament(outputDir, event, tournament)),
     ...event.locales.map((locale) =>
       writeJson(outputDir, path.join('i18n', `${locale}.json`), allTranslations[locale])
     ),
@@ -48,6 +44,13 @@ export async function buildDataAssets(
   ]);
 
   console.log('[assets] completed jsons');
+}
+
+async function writeTournament(outputDir: string, event: EventContext, tournament: Tournament) {
+  return writeJson(outputDir, `${tournament.year}.json`, {
+    ...tournament,
+    description: await loadTournamentDescription(event, tournament.year),
+  });
 }
 
 async function writeJson(outputDir: string, file: string, data: unknown): Promise<void> {

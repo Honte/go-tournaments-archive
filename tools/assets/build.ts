@@ -6,11 +6,18 @@ import { loadData } from '@/data/load';
 
 export async function buildAssets(event: EventContext) {
   console.log(`[assets] generating assets for ${event.id}`);
-  const start = Date.now();
 
-  const [data, allTranslations] = await Promise.all([loadData(event), loadAllTranslations(event)]);
+  try {
+    const start = Date.now();
 
-  await Promise.all([buildDataAssets(event, data, allTranslations), buildSgfsAssets(event, data, allTranslations)]);
+    const [data, allTranslations] = await Promise.all([loadData(event), loadAllTranslations(event)]);
 
-  console.log(`[assets] completed in ${Date.now() - start}ms`);
+    await Promise.all([buildDataAssets(event, data, allTranslations), buildSgfsAssets(event, data, allTranslations)]);
+
+    console.log(`[assets] completed in ${Date.now() - start}ms`);
+  } catch (err) {
+    console.log(`[assets] failed to generate assets for ${event.id}`);
+    console.error(err);
+    throw err;
+  }
 }
