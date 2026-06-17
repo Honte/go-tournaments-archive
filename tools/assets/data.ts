@@ -6,12 +6,18 @@ import type { Locale, Translations } from '@/i18n/consts';
 import { loadTournamentDescription } from '@/data/description';
 import { getSitemap } from '@/data/sitemap';
 
-export async function buildDataAssets(
-  event: EventContext,
-  data: EventData,
-  allTranslations: Record<Locale, Translations>
-): Promise<void> {
-  const outputDir = path.join('./public', event.prefix || '', 'data');
+export type BuildDataRequest = {
+  event: EventContext;
+  data: EventData;
+  allTranslations: Record<Locale, Translations>;
+  outputDir: string;
+};
+
+export async function buildDataAssets(tasks: BuildDataRequest[]): Promise<void> {
+  await Promise.all(tasks.map(buildEventDataAssets));
+}
+
+async function buildEventDataAssets({ event, data, allTranslations, outputDir }: BuildDataRequest): Promise<void> {
   const { tournaments, stats, summary } = data;
 
   await rm(outputDir, { recursive: true, force: true });
@@ -43,7 +49,7 @@ export async function buildDataAssets(
     ),
   ]);
 
-  console.log('[assets] completed jsons');
+  console.log(`[assets] completed ${event.id} jsons`);
 }
 
 async function writeTournament(outputDir: string, event: EventContext, tournament: Tournament) {

@@ -21,6 +21,7 @@ export type BuildSgfRequest = {
 };
 
 export type BuildSgfResponse = {
+  event: string;
   path: string;
   content: string;
   year: number;
@@ -50,6 +51,7 @@ export default async function buildSgfAssets(input: BuildSgfRequest): Promise<Bu
   ]);
 
   return {
+    event: event.id,
     year: tournament.year,
     path: getTournamentSgfZipPath(sgfYamlPath),
     content: cleaned,

@@ -175,7 +175,7 @@ async function readDataAssetFromDisk<T>(event: EventContext, file: string): Prom
   const assetPath = path.join(PUBLIC_DIR, event.prefix || '', 'data', file);
 
   try {
-    return JSON.parse(await readFile(assetPath, 'utf-8')) as T;
+    return JSON.parse(await readFile(/*turbopackIgnore: true*/ assetPath, 'utf-8')) as T;
   } catch (error) {
     if ((error as NodeJS.ErrnoException)?.code === 'ENOENT') {
       throw new Error(
