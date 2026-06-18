@@ -1,12 +1,11 @@
 import { createElement } from 'react';
-import type { LogoProps } from '@/schema/event';
-import { EVENT } from '@/env';
+import type { EventContext, LogoProps } from '@/schema/event';
 import { generatePng } from '@tools/img';
 
 const APPLE_ICON_SIZE = 180;
 
-export async function createAppleIconRoute() {
-  const svg = await renderLogo({ color: 'black', mode: 'favicon' });
+export async function createAppleIconRoute(event: EventContext) {
+  const svg = await renderLogo(event, { color: 'black', mode: 'favicon' });
   const png = await generatePng(svg, APPLE_ICON_SIZE);
 
   return new Response(new Uint8Array(png), {
@@ -14,23 +13,23 @@ export async function createAppleIconRoute() {
   });
 }
 
-export async function createLogoRoute(color: string) {
-  return new Response(await renderLogo({ color, mode: 'logo' }), {
+export async function createLogoRoute(event: EventContext, color: string) {
+  return new Response(await renderLogo(event, { color, mode: 'logo' }), {
     headers: { 'Content-Type': 'image/svg+xml' },
   });
 }
 
-export async function createFaviconRoute() {
-  return new Response(await renderLogo({ color: 'black', mode: 'favicon' }), {
+export async function createFaviconRoute(event: EventContext) {
+  return new Response(await renderLogo(event, { color: 'black', mode: 'favicon' }), {
     headers: { 'Content-Type': 'image/svg+xml' },
   });
 }
 
-async function renderLogo(options: LogoProps) {
+async function renderLogo(event: EventContext, options: LogoProps) {
   // use import this way to avoid false error by next.js
   const { renderToReadableStream } = await import('react-dom/server');
 
-  const { Logo } = await import(`../../events/${EVENT}/Logo`);
+  const { Logo } = await import(`../../events/${event.id}/Logo`);
 
   // use this way to allow the component to do some async stuff (e.g. load png)
   const stream = await renderToReadableStream(createElement(Logo, options));
