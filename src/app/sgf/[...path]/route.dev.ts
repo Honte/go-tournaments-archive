@@ -144,7 +144,7 @@ async function getSgf(event: EventContext, file: string, raw = false) {
   const sgfDir = `./events/${event.id}/sgf`;
   const translations = await loadTranslations(event);
   const tournaments = await getTournaments(event);
-  const sgfPath = path.posix.join('/sgf', ...path.relative(sgfDir, file).split(path.sep));
+  const sgfPath = path.posix.join(...path.relative(sgfDir, file).split(path.sep));
   const sgfDetails = await loadGameSgfDetails(event, tournaments, sgfPath, translations);
 
   if (!sgfDetails) {

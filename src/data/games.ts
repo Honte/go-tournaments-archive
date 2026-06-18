@@ -82,11 +82,7 @@ export function parseGame(string: string, id: string, stage: number, strict = tr
     for (const prop of props.split(' ')) {
       const pos = prop.indexOf(':');
       const type = prop.slice(0, pos);
-      let value = prop.slice(pos + 1);
-
-      if (type === 'sgf') {
-        value = `/sgf/${value}`;
-      }
+      const value = prop.slice(pos + 1);
 
       if (ARRAY_PROPS.includes(type as GamePropsArrayKey) && value.indexOf(',') > 0) {
         game.props[type as GamePropsArrayKey] = value.split(',');

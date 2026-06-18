@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { loadDefaultEvent } from '@/events';
-import { getCountryStats } from '@/data/serverApi';
+import { getAllCountriesStats, getCountryStats } from '@/data/serverApi';
 
 type PageProps = {
   params: Promise<{ code: string }>;
@@ -23,4 +23,13 @@ export async function GET(_: Request, props: PageProps) {
   }
 
   return Response.json(stats);
+}
+
+export async function generateStaticParams() {
+  const event = await loadDefaultEvent();
+  const stats = await getAllCountriesStats(event);
+
+  return Object.values(stats).map((country) => ({
+    code: `${country.code.toLowerCase()}.json`,
+  }));
 }

@@ -47,15 +47,15 @@ export function logoWhiteUrl(basePath: string | undefined, eventPrefix: string |
 }
 
 export function i18nUrl(basePath: string | undefined, eventPrefix: string | undefined, locale: string) {
-  return joinPaths(basePath, eventPrefix, `/data/i18n/${locale}.json`);
+  return joinPaths(basePath, 'data', eventPrefix, `i18n/${locale}.json`);
 }
 
 export function playerStatsDataUrl(basePath: string | undefined, eventPrefix: string | undefined, slug: string) {
-  return joinPaths(basePath, eventPrefix, `/data/stats/player/${slug}.json`);
+  return joinPaths(basePath, 'data', eventPrefix, `stats/player/${slug}.json`);
 }
 
 export function countryStatsDataUrl(basePath: string | undefined, eventPrefix: string | undefined, code: string) {
-  return joinPaths(basePath, eventPrefix, `/data/stats/country/${code.toLowerCase()}.json`);
+  return joinPaths(basePath, 'data', eventPrefix, `stats/country/${code.toLowerCase()}.json`);
 }
 
 export function tournamentDataUrl(
@@ -63,31 +63,31 @@ export function tournamentDataUrl(
   eventPrefix: string | undefined,
   year: number | string
 ) {
-  return joinPaths(basePath, eventPrefix, `/data/${year}.json`);
+  return joinPaths(basePath, 'data', eventPrefix, `${year}.json`);
 }
 
 export function gamesWithSgfsUrl(basePath: string | undefined, eventPrefix: string | undefined) {
-  return joinPaths(basePath, eventPrefix, '/sgf/list.json');
+  return joinPaths(basePath, 'sgf', eventPrefix, 'list.json');
 }
 
 export function gamesZipUrl(basePath: string | undefined, eventPrefix: string | undefined, year: number | string) {
-  return joinPaths(basePath, eventPrefix, `/sgf/${year}.zip`);
+  return joinPaths(basePath, 'sgf', eventPrefix, `${year}.zip`);
 }
 
 export function sitemapUrl(basePath: string | undefined, eventPrefix: string | undefined, locale: string) {
-  return joinPaths(basePath, eventPrefix, `/data/sitemap/${locale}.json`);
+  return joinPaths(basePath, 'data', eventPrefix, `sitemap/${locale}.json`);
 }
 
 export function gameSgfUrl(basePath: string | undefined, eventPrefix: string | undefined, path: string) {
-  return joinPaths(basePath, eventPrefix, path);
+  return joinPaths(basePath, 'sgf', eventPrefix, path);
 }
 
 export function rawGameSgfUrl(basePath: string | undefined, eventPrefix: string | undefined, path: string) {
-  return joinPaths(basePath, eventPrefix, path.replace(/\.sgf$/, '.raw.sgf'));
+  return joinPaths(basePath, 'sgf', eventPrefix, path.replace(/\.sgf$/, '.raw.sgf'));
 }
 
 export function gameThumbUrl(basePath: string | undefined, eventPrefix: string | undefined, path?: string) {
-  return path ? joinPaths(basePath, eventPrefix, path) : undefined;
+  return path ? joinPaths(basePath, 'sgf', eventPrefix, path) : undefined;
 }
 
 export function joinPaths(...paths: (string | undefined)[]) {

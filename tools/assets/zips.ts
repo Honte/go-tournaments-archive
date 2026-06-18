@@ -12,7 +12,7 @@ type BuildZipRequest = {
 export async function buildZips(events: EventContext[], results: BuildSgfResponse[]) {
   const zipTasks: BuildZipRequest[] = [];
   const outputPathMap = events.reduce<Record<string, string>>((agg, event) => {
-    agg[event.id] = path.join('./public', event.prefix || '', 'sgf');
+    agg[event.id] = path.join('./public/sgf', event.prefix || '');
 
     return agg;
   }, {});

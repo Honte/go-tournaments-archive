@@ -20,3 +20,11 @@ export async function GET(_: Request, props: PageProps) {
 
   return Response.json(await loadTranslations(event, locale));
 }
+
+export async function generateStaticParams() {
+  const event = await loadDefaultEvent();
+
+  return event.locales.map((locale) => ({
+    locale: `${locale}.json`,
+  }));
+}

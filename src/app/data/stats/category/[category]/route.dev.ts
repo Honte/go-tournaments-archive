@@ -24,3 +24,11 @@ export async function GET(_: Request, props: PageProps) {
 
   return Response.json(categoryStats);
 }
+
+export async function generateStaticParams() {
+  const event = await loadDefaultEvent();
+
+  return (event.categories || ['none']).map((category) => ({
+    category: `${category}.json`,
+  }));
+}

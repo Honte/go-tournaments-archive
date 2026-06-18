@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { loadDefaultEvent } from '@/events';
-import { getTournament } from '@/data/serverApi';
+import { getTournament, getTournaments } from '@/data/serverApi';
 
 type PageProps = {
   params: Promise<{ year: string }>;
@@ -23,4 +23,13 @@ export async function GET(_: Request, props: PageProps) {
   }
 
   return Response.json(tournament);
+}
+
+export async function generateStaticParams() {
+  const event = await loadDefaultEvent();
+  const tournaments = await getTournaments(event);
+
+  return tournaments.map((tournament) => ({
+    year: `${tournament.year}.json`,
+  }));
 }
