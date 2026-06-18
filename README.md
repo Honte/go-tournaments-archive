@@ -5,9 +5,9 @@ selected at build/dev time with the `EVENT` environment variable. Supports multi
 through locale routes (`/[lang]`) when enabled by the active event config, and tournament data is stored in YAML and H9
 text files under `events/[event-id]/data/` and game records in SGF files under `events/[event-id]/sgf/`.
 
-The site supports tournament lists, edition detail pages, stage standings, game lists with SGF links, per-edition SGF
-ZIP downloads, generated board previews, all-time player statistics, country statistics for international events, and
-category medal tables for events that define age or other categories.
+The site supports tournament lists, edition detail pages, stage standings, game lists with SGF links, an all-games SGF
+browser, per-edition SGF ZIP downloads, generated board previews, all-time player statistics, country statistics for
+international events, and category medal tables for events that define age or other categories.
 
 ## Live sites
 
@@ -24,6 +24,7 @@ Available event directories:
 
 | Event ID | Archive                           | Notes                                                                            |
 | -------- | --------------------------------- | -------------------------------------------------------------------------------- |
+| `egc`    | European Go Championships         | Locale `en`, country stats                                                       |
 | `epc`    | European Pro Go Championships     | Locales `en`, `pl`                                                               |
 | `esgc`   | European Student Go Championships | Locale `en`, country stats                                                       |
 | `ewgc`   | European Women Go Championships   | Locale `en`, country stats                                                       |
@@ -70,6 +71,7 @@ npm run dev:pagc
 npm run dev:pygc
 npm run dev:hrgc
 npm run dev:wgl
+npm run dev:egc
 npm run dev:epc
 npm run dev:esgc
 npm run dev:ewgc
@@ -91,10 +93,10 @@ npm run test         # Run tests
 The app uses `output: 'export'`, so `npm run build` emits static files to `out/`. The `public/index.php` file is also
 copied into the export for PHP-based static hosting setups that need a root redirect to the best supported locale.
 
-Build the default event:
+Build PGC explicitly:
 
 ```bash
-npm run build
+npm run build:pgc
 ```
 
 Build a specific event:
@@ -108,11 +110,17 @@ npm run build:pagc
 npm run build:pygc
 npm run build:hrgc
 npm run build:wgl
+npm run build:egc
 npm run build:epc
 npm run build:esgc
 npm run build:ewgc
 npm run build:eygc
 npm run build:iegc
+npm run build:wglx
+npm run build:epcx
+npm run build:esgcx
+npm run build:ewgcx
+npm run build:iegcx
 ```
 
 Check event-specific build scripts in `package.json` before relying on them; for example, `build:hrgc` currently exists
@@ -124,10 +132,16 @@ Serve the exported output locally:
 npm run start
 ```
 
+`npm run build` runs `prebuild` first. The prebuild step generates data JSON, cleaned SGFs, raw SGFs, configured board
+previews, and ZIP files into `public/data` and `public/sgf`; `next build` then exports static pages into `out/`. Use an
+event-specific build script or set `EVENT` when calling raw `npm run build` so the prebuilt assets and exported pages
+target the same archive.
+
 Environment variables:
 
 - `EVENT` selects the event directory. Defaults to `pgc`.
 - `BASE_PATH` sets the static deployment subdirectory and Next.js `basePath`. Use this when serving the exported site below a path instead of the domain root, for example `/archive`.
+- `SGF_ASSET_WORKERS` optionally caps the number of worker threads used while generating SGF assets.
 
 Build for a subdirectory deployment:
 
@@ -157,24 +171,29 @@ Main static pages:
 - `/:locale/stats/:slug` - individual player statistics, achievements, events, and opponents.
 - `/:locale/stats/country` - all-time country table when `showCountry` is enabled.
 - `/:locale/stats/country/:code` - individual country statistics.
+- `/:locale/stats/games` - filterable browser of games that have linked SGFs.
 - `/:locale/category/:category` - category medal/results page when the event defines `categories`.
 
-Generated data/assets routes:
+Generated data/assets:
 
+- `/data/tournaments.json` - tournament list for the active event.
 - `/data/:year.json` - tournament data for one year.
 - `/data/i18n/:locale.json` - merged base and event translations.
 - `/data/sitemap/:locale.json` - navigation data.
+- `/data/stats/summary.json` - aggregate event summary for the home page.
+- `/data/stats/players.json` - all player stats keyed by player slug.
 - `/data/stats/player/:slug.json` - player stats payload.
+- `/data/stats/countries.json` - all country stats keyed by country code.
 - `/data/stats/country/:code.json` - country stats payload.
+- `/data/stats/category/:category.json` - category stats payload when the event defines `categories`.
 - `/sgf/:year.zip` - ZIP archive of cleaned SGFs for one tournament year when `generateZips` is enabled.
 - `/sgf/.../*.sgf` - cleaned SGF.
 - `/sgf/.../*.raw.sgf` - original SGF.
 - `/sgf/.../*.svg`, `/sgf/.../*.png`, `/sgf/.../*.jpg` - generated board previews when enabled by event config.
 - `/favicon.svg`, `/apple-icon.png`, `/logo-black.svg`, `/logo-white.svg` - generated event branding assets.
 
-When editing static route handlers, keep `generateStaticParams()` values local to the route segment. For example,
-`src/app/data/[year]/route.ts` should return `year: '2026.json'`, not a public URL such as `/archive/data/2026.json`.
-Base paths are added by Next.js and by shared URL helpers at the point where public links or fetch URLs are produced.
+Production data and SGF files are prebuilt into `public/`. Development-only route handlers named `route.dev.ts` serve
+equivalent JSON and SGF responses during `next dev`.
 
 ## Project layout
 
@@ -195,14 +214,15 @@ src/
   i18n/             # Locale types, active event locale helpers, server loader, translator
   libs/             # Shared utilities: dates, H9 parser, SGF/goban parser, sorting, math
   schema/           # Input and normalized data types
+public/             # Root hosting files plus generated data/SGF assets from prebuild
 tools/              # One-off extraction, SGF cleanup/matching, preview generation helpers
 ```
 
 Aliases:
 
 - `@/*` maps to `src/*`.
-- `@event` maps to the active event ID (`events/index.ts`).
-- `@event/*` maps to `events/[active-event]/*`.
+- `@tools/*` maps to `tools/*`.
+- `@events/*` maps to `events/*`.
 
 ## Event configuration
 
@@ -480,11 +500,14 @@ Available SGF tools:
 
 ```bash
 npm run sgf:fix:pgc      # Fix SGF property names for PGC files
+npm run sgf:match        # Match using EVENT or -e/--event
 npm run sgf:match:pgc    # Match PGC SGFs to YAML games and write sgf:/ogs: props
 npm run sgf:match:wagc   # Match WAGC SGFs to imported games
 npm run sgf:match:kpmc   # Match KPMC SGFs to imported games
 npm run sgf:match:pwgc   # Match PWGC SGFs to YAML games
 npm run sgf:match:pagc   # Match PAGC SGFs to YAML games
+npm run sgf:match:epc    # Match EPC SGFs to imported games
+npm run sgf:match:iegc   # Match IEGC SGFs to imported games
 ```
 
 The matcher accepts:
@@ -508,10 +531,10 @@ By default, the matcher keeps output compact: it prints a total summary and then
 reasons. Use `--verbose` when you need the full per-stage counts that include found, reused, newly matched, and unmatched
 SGFs.
 
-SGF previews and per-edition ZIP downloads are generated on demand by `src/app/sgf/[...path]/route.ts` and emitted
-during `next build` through `generateStaticParams`. There is no committed preview image or ZIP build step. Enable
-output formats per event with `generateSvgs`, `generatePngs`, `generateJpgs`, and `generateZips`. ZIP files contain the
-same cleaned SGF content served by `/sgf/.../*.sgf`.
+SGF previews and per-edition ZIP downloads are generated by `tools/assets/` during `npm run prebuild` into
+`public/sgf`. Development uses `src/app/sgf/[...path]/route.dev.ts` for on-demand responses. Enable output formats per
+event with `generateSvgs`, `generatePngs`, `generateJpgs`, and `generateZips`. ZIP files contain the same cleaned SGF
+content served by `/sgf/.../*.sgf`.
 
 ## Data and asset tools
 
@@ -519,10 +542,12 @@ These scripts are for one-off data maintenance:
 
 ```bash
 npm run extract:mp-db    # Extract PGC data from MySQL and convert to YAML
+npm run builder          # Interactive build helper for selecting EVENT and BASE_PATH
 ```
 
 Relevant tool modules:
 
+- `tools/assets/` prebuilds `public/data` and `public/sgf` before static export.
 - `tools/extract.ts` imports legacy MySQL data.
 - `tools/sgfMatcher/` matches SGF files back to games and writes YAML.
 - `tools/sgf/` parses, cleans, and stringifies SGF files before serving.
