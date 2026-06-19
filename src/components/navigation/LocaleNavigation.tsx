@@ -12,7 +12,7 @@ export function LocaleNavigation({ locale, locales }: LocaleNavigationProps) {
   const pathname = usePathname();
   const regex = new RegExp(`^/${locale}`);
 
-  if (locales.length <= 1) {
+  if (locales.length <= 1 || !pathname) {
     return null;
   }
 
