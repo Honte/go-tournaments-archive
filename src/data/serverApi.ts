@@ -172,7 +172,7 @@ async function readDataAsset<T>(event: EventContext, file: string): Promise<T> {
 }
 
 async function readDataAssetFromDisk<T>(event: EventContext, file: string): Promise<T> {
-  const assetPath = path.join(PUBLIC_DIR, 'data', event.prefix || '', file);
+  const assetPath = path.join(/*turbopackIgnore: true*/ PUBLIC_DIR, 'data', event.prefix || '', file);
 
   try {
     return JSON.parse(await readFile(/*turbopackIgnore: true*/ assetPath, 'utf-8')) as T;
