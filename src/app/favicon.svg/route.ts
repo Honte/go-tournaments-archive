@@ -1,5 +1,5 @@
 import { loadDefaultEvent } from '@/events';
-import { serveFavicon } from '@/routes/icons';
+import { serveFavicon } from '@/routes/serverIcons';
 
 export const dynamic = 'force-static';
 

@@ -1,5 +1,5 @@
 import { loadDefaultEvent } from '@/events';
-import { serveAppleIconRoute } from '@/routes/icons';
+import { serveAppleIconRoute } from '@/routes/serverIcons';
 
 export const dynamic = 'force-static';
 

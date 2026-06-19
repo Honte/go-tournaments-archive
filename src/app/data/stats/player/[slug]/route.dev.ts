@@ -1,35 +1,14 @@
-import { notFound } from 'next/navigation';
 import { loadDefaultEvent } from '@/events';
-import { getAllPlayersStats, getPlayerStats } from '@/data/serverApi';
+import { getPlayerStatsOptions, servePlayerStats } from '@/routes/servePlayerStats';
 
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
 export async function GET(_: Request, props: PageProps) {
-  const { slug: slugParam } = await props.params;
-  const check = slugParam.match(/^(.+)\.json$/);
-  const slug = check?.[1];
-
-  if (!slug) {
-    return notFound();
-  }
-
-  const event = await loadDefaultEvent();
-  const stats = await getPlayerStats(event, slug);
-
-  if (!stats) {
-    return notFound();
-  }
-
-  return Response.json(stats);
+  return servePlayerStats(await loadDefaultEvent(), (await props.params).slug);
 }
 
 export async function generateStaticParams() {
-  const event = await loadDefaultEvent();
-  const stats = await getAllPlayersStats(event);
-
-  return Object.values(stats).map((players) => ({
-    slug: `${players.id}.json`,
-  }));
+  return getPlayerStatsOptions(await loadDefaultEvent());
 }

@@ -1,10 +1,8 @@
 import { loadDefaultEvent } from '@/events';
-import { getAllPlayersStats } from '@/data/serverApi';
+import { serveAllPlayersStats } from '@/routes/serveAllPlayersStats';
 
 export const dynamic = 'force-static';
 
 export async function GET() {
-  const event = await loadDefaultEvent();
-
-  return Response.json(await getAllPlayersStats(event));
+  return serveAllPlayersStats(await loadDefaultEvent());
 }
