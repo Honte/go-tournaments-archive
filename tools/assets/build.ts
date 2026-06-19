@@ -4,7 +4,7 @@ import type { EventContext } from '@/schema/event';
 import { loadAllTranslations } from '@/i18n/server';
 import { buildDataAssets, type BuildDataRequest } from '@tools/assets/data';
 import type { BuildSgfRequest } from '@tools/assets/sgf';
-import { buildSgfAssetsInWorkers } from '@tools/assets/sgfs';
+import { buildSgfAssetsInWorkers, buildSgfLists } from '@tools/assets/sgfs';
 import { buildZips } from '@tools/assets/zips';
 import { loadData } from '@/data/load';
 
@@ -54,5 +54,5 @@ export async function buildAssets(events: EventContext[]) {
 
   const [sgfs] = await Promise.all([buildSgfAssetsInWorkers(sgfTasks), buildDataAssets(dataTasks)]);
 
-  await buildZips(events, sgfs);
+  await Promise.all([buildSgfLists(events, PUBLIC_SGF_DIR, sgfs), buildZips(events, sgfs)]);
 }

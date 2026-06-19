@@ -1,10 +1,24 @@
+import { writeFile } from 'node:fs/promises';
 import { availableParallelism } from 'node:os';
+import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Piscina from 'piscina';
+import type { EventContext } from '@/schema/event';
 import type { BuildSgfRequest, BuildSgfResponse } from '@tools/assets/sgf';
 
 const SGF_WORKER_PATH = fileURLToPath(new URL('./sgf.ts', import.meta.url));
 const STATUS_DELAY = 5000;
+
+export function buildSgfLists(events: EventContext[], outputDir: string, results: BuildSgfResponse[]) {
+  return Promise.all(
+    events.map((event) => {
+      const targetDir = path.join(outputDir, event.prefix || '');
+      const games = results.filter((sgf) => sgf.event === event.id).map((sgf) => sgf.details);
+
+      return writeFile(path.join(targetDir, 'list.json'), JSON.stringify(games));
+    })
+  );
+}
 
 export async function buildSgfAssetsInWorkers(tasks: BuildSgfRequest[]): Promise<BuildSgfResponse[]> {
   if (tasks.length === 0) {
