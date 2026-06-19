@@ -1,4 +1,22 @@
-import { BASE_PATH, EVENT } from '@/env';
+import { BASE_PATH, EVENT, IS_DEVELOPMENT } from '@/env';
+
+const pageExtensions = ['tsx', 'ts'];
+
+if (EVENT) {
+  pageExtensions.push('single.tsx', 'single.ts');
+} else {
+  pageExtensions.push('multi.tsx', 'multi.ts');
+}
+
+if (IS_DEVELOPMENT) {
+  pageExtensions.push('dev.tsx', 'dev.ts');
+
+  if (EVENT) {
+    pageExtensions.push('single.dev.tsx', 'single.dev.ts');
+  } else {
+    pageExtensions.push('multi.dev.tsx', 'multi.dev.ts');
+  }
+}
 
 /** @type {import('next').NextConfig} */
 export default {
@@ -12,8 +30,5 @@ export default {
     BASE_PATH,
   },
 
-  pageExtensions:
-    process.env.NODE_ENV === 'production'
-      ? ['tsx', 'ts', 'jsx', 'js']
-      : ['dev.tsx', 'dev.ts', 'tsx', 'ts', 'jsx', 'js'],
+  pageExtensions,
 };

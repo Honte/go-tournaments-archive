@@ -2,7 +2,7 @@ import { EVENT } from '@/env';
 import { loadAllEvents, loadEvent } from '@/events';
 import { buildAssets } from '@tools/assets/build';
 
-const events = process.env.EVENT ? [await loadEvent(EVENT)] : await loadAllEvents();
+const events = EVENT ? [await loadEvent(EVENT)] : await loadAllEvents();
 
 try {
   console.log(`[assets] generating assets for ${events.length > 1 ? `${events.length} events` : events[0].id}`);

@@ -7,7 +7,7 @@ import { BASE_PATH, EVENT } from './env';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export function loadDefaultEvent() {
-  return loadEvent(EVENT);
+  return loadEvent(EVENT || 'pgc');
 }
 
 export async function loadEvent(eventId: string, prefix?: string): Promise<EventContext> {
