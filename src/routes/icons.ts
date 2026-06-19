@@ -4,7 +4,7 @@ import { generatePng } from '@tools/img';
 
 const APPLE_ICON_SIZE = 180;
 
-export async function createAppleIconRoute(event: EventContext) {
+export async function serveAppleIconRoute(event: EventContext) {
   const svg = await renderLogo(event, { color: 'black', mode: 'favicon' });
   const png = await generatePng(svg, APPLE_ICON_SIZE);
 
@@ -13,13 +13,13 @@ export async function createAppleIconRoute(event: EventContext) {
   });
 }
 
-export async function createLogoRoute(event: EventContext, color: string) {
+export async function serveLogo(event: EventContext, color: string) {
   return new Response(await renderLogo(event, { color, mode: 'logo' }), {
     headers: { 'Content-Type': 'image/svg+xml' },
   });
 }
 
-export async function createFaviconRoute(event: EventContext) {
+export async function serveFavicon(event: EventContext) {
   return new Response(await renderLogo(event, { color: 'black', mode: 'favicon' }), {
     headers: { 'Content-Type': 'image/svg+xml' },
   });

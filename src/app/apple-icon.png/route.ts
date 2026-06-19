@@ -1,5 +1,8 @@
 import { loadDefaultEvent } from '@/events';
-import { createAppleIconRoute } from '@/libs/icons';
+import { serveAppleIconRoute } from '@/routes/icons';
 
 export const dynamic = 'force-static';
-export const GET = async () => createAppleIconRoute(await loadDefaultEvent());
+
+export async function GET() {
+  return serveAppleIconRoute(await loadDefaultEvent());
+}

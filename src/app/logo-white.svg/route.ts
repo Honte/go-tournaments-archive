@@ -1,5 +1,8 @@
 import { loadDefaultEvent } from '@/events';
-import { createLogoRoute } from '@/libs/icons';
+import { serveLogo } from '@/routes/icons';
 
-export const GET = async () => createLogoRoute(await loadDefaultEvent(), 'white');
 export const dynamic = 'force-static';
+
+export async function GET() {
+  return serveLogo(await loadDefaultEvent(), 'white');
+}

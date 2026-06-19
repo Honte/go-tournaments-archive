@@ -1,5 +1,8 @@
 import { loadDefaultEvent } from '@/events';
-import { createFaviconRoute } from '@/libs/icons';
+import { serveFavicon } from '@/routes/icons';
 
 export const dynamic = 'force-static';
-export const GET = async () => createFaviconRoute(await loadDefaultEvent());
+
+export async function GET() {
+  return serveFavicon(await loadDefaultEvent());
+}
