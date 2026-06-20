@@ -19,7 +19,7 @@ export async function CountryPage({ event, locale, code }: CountryPageProps) {
   }
 
   const translations = await getTranslations(event, locale);
-  const country = await getCountryStats(event, code.toLowerCase());
+  const country = await getCountryStats(event, code.toUpperCase());
 
   if (!country) {
     return notFound();
