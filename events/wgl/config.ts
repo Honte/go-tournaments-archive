@@ -2,6 +2,7 @@ import type { EventConfig } from '@/schema/event';
 
 const EVENT_CONFIG: EventConfig = {
   id: 'wgl',
+  scope: 'local',
   domain: '',
   locales: ['pl', 'en'],
   showCountry: false,

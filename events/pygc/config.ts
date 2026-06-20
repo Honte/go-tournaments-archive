@@ -2,6 +2,7 @@ import type { EventConfig } from '@/schema/event';
 
 const EVENT_CONFIG: EventConfig = {
   id: 'pygc',
+  scope: 'national',
   domain: 'https://mpj.go.art.pl',
   locales: ['pl', 'en'],
   showCountry: false,

@@ -2,8 +2,11 @@ import type { SVGProps } from 'react';
 import type { EventSummary, Stats, Tournament } from '@/schema/data';
 import type { Locale } from '@/i18n/consts';
 
+export type EventScope = 'global' | 'european' | 'national' | 'local';
+
 export type EventConfig = {
   readonly id: string;
+  readonly scope: EventScope;
   readonly domain?: string;
   readonly locales: [Locale, ...Locale[]];
   readonly showCountry?: boolean;

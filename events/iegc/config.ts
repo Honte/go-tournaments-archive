@@ -2,6 +2,7 @@ import type { EventConfig } from '@/schema/event';
 
 const EVENT_CONFIG: EventConfig = {
   id: 'iegc',
+  scope: 'national',
   domain: '',
   locales: ['en'],
   showCountry: false,

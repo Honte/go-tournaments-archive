@@ -2,6 +2,7 @@ import type { EventConfig } from '@/schema/event';
 
 const EVENT_CONFIG: EventConfig = {
   id: 'esgc',
+  scope: 'european',
   domain: '',
   locales: ['en'],
   showCountry: true,

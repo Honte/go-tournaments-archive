@@ -2,6 +2,7 @@ import type { EventConfig } from '@/schema/event';
 
 const EVENT_CONFIG: EventConfig = {
   id: 'pgc',
+  scope: 'national',
   domain: 'https://mp.go.art.pl',
   locales: ['pl', 'en'],
   showCountry: false,

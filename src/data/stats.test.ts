@@ -111,6 +111,7 @@ describe('loadClassificationStage', () => {
 function creteEventConfig(): EventConfig {
   return {
     id: 'test',
+    scope: 'local',
     locales: ['en'],
   };
 }

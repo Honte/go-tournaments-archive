@@ -2,6 +2,7 @@ import type { EventConfig } from '@/schema/event';
 
 const EVENT_CONFIG: EventConfig = {
   id: 'pagc',
+  scope: 'national',
   domain: 'https://amp.go.art.pl',
   locales: ['pl', 'en'],
   showCountry: false,
