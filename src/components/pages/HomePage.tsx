@@ -41,3 +41,7 @@ export async function HomePage({ event, locale }: HomePageProps) {
     </>
   );
 }
+
+export async function getHomePageOptions(event: EventContext) {
+  return event.locales.map((locale) => ({ locale }));
+}

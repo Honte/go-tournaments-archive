@@ -24,7 +24,7 @@ export function CountryLink({ event, code, translations, full = false, className
 
   return (
     <Link
-      href={countryUrl(event.prefix, translations.locale, code)}
+      href={countryUrl(event, translations.locale, code)}
       className={clsx('underline underline-offset-2 hover:text-event-hover', className)}
       prefetch={false}
       title={name}

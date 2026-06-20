@@ -81,11 +81,7 @@ export function GamesList({ event, tournament, translations }: GamesListProps) {
       <H2 className="flex items-center justify-between gap-3">
         <span>{t('stage.games')}</span>
         {event.generateZips && tournament.hasSgfs && (
-          <ExternalLink
-            href={gamesZipUrl(event.basePath, event.prefix, tournament.year)}
-            download
-            title={t('game.downloadAllSgfs')}
-          >
+          <ExternalLink href={gamesZipUrl(event, tournament.year)} download title={t('game.downloadAllSgfs')}>
             <Button className="text-sm">ZIP</Button>
           </ExternalLink>
         )}

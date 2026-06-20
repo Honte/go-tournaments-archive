@@ -27,13 +27,13 @@ export function Header({ event, translations }: TopBarProps) {
           }}
         />
         <Link
-          href={homeUrl(event.prefix, locale)}
+          href={homeUrl(event, locale)}
           className="flex items-center gap-2 md:gap-3 min-w-0"
           title={t('navigation.home.title')}
           prefetch={false}
         >
           <span className="sr-only">{t('navigation.home.anchor')}</span>
-          <img src={logoWhiteUrl(event.basePath, event.prefix)} alt="" className="h-4 xs:h-5 shrink-0" />
+          <img src={logoWhiteUrl(event)} alt="" className="h-4 xs:h-5 shrink-0" />
           <span className="text-base xs:text-lg font-semibold truncate">
             {t('navigation.archiveLabel', t('site.acronym'))}
           </span>

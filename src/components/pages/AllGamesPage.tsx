@@ -32,3 +32,7 @@ export async function getAllGamesMetadata({ event, locale }: AllGamesPageProps) 
     description: t('site.gamesListDescription'),
   };
 }
+
+export async function getAllGamesPageOptions(event: EventContext) {
+  return event.locales.map((locale) => ({ locale }));
+}

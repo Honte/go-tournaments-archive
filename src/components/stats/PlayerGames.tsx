@@ -86,7 +86,7 @@ export function PlayerGames({ event, player, translations }: PlayerGamesProps) {
             cell: (info) => (
               <GameViewerTrigger sgfPath={info.row.original.props.sgf!}>
                 <img
-                  src={gameThumbUrl(event.basePath, event.prefix, info.row.original.img)}
+                  src={gameThumbUrl(event, info.row.original.img)}
                   alt={t('game.preview', `${player.name} vs ${info.row.original.opponent.name}`)}
                   className="size-20 min-w-20 min-h-20"
                   loading="lazy"

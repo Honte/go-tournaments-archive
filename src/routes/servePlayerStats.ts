@@ -19,7 +19,7 @@ export async function servePlayerStats(event: EventContext, slugParam?: string) 
   return Response.json(stats);
 }
 
-export async function getPlayerStatsOptions(event: EventContext) {
+export async function getPlayerStatsRouteOptions(event: EventContext) {
   const stats = await getAllPlayersStats(event);
 
   return Object.values(stats).map((players) => ({

@@ -19,7 +19,7 @@ export async function serveTournament(event: EventContext, yearParam?: string) {
   return Response.json(tournament);
 }
 
-export async function getTournamentOptions(event: EventContext) {
+export async function getTournamentRouteOptions(event: EventContext) {
   const tournaments = await getTournaments(event);
 
   return tournaments.map((tournament) => ({

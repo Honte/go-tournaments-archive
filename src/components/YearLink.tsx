@@ -11,7 +11,7 @@ type YearLinkProps = {
 export function YearLink({ event, year, locale }: YearLinkProps) {
   return (
     <Link
-      href={tournamentUrl(event.prefix, locale, year)}
+      href={tournamentUrl(event, locale, year)}
       className="underline text-event-primary hover:text-event-hover"
       prefetch={false}
     >

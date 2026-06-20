@@ -20,7 +20,7 @@ export async function serveSitemap(event: EventContext, localeParam?: string) {
   return Response.json(getSitemap(event, tournaments, translations));
 }
 
-export async function getSitemapOptions(event: EventContext) {
+export async function getSitemapRouteOptions(event: EventContext) {
   return event.locales.map((locale) => ({
     locale: `${locale}.json`,
   }));

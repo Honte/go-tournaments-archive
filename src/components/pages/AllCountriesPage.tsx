@@ -38,3 +38,7 @@ export async function getAllCountriesPageMetadata({ event, locale }: AllCountrie
     description: t('site.allTimeStatsByCountryDescription'),
   };
 }
+
+export async function getAllCountriesPageOptions(event: EventContext) {
+  return event.locales.map((locale) => ({ locale }));
+}

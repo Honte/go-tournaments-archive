@@ -19,7 +19,7 @@ export async function serveCategoryStats(event: EventContext, categoryParam?: st
   return Response.json(categoryStats);
 }
 
-export function getCategoryStatsOptions(event: EventContext) {
+export function getCategoryStatsRouteOptions(event: EventContext) {
   return (event.categories || ['none']).map((category) => ({
     category: `${category}.json`,
   }));

@@ -18,7 +18,7 @@ export function PlayerLink({ event, playerId, locale, children, className, ...pr
 
   return (
     <Link
-      href={playerUrl(event.prefix, locale, playerId)}
+      href={playerUrl(event, locale, playerId)}
       className={clsx('underline underline-offset-2 hover:text-event-hover', className)}
       prefetch={false}
       {...props}

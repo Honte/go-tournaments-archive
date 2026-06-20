@@ -34,12 +34,12 @@ export function getSitemap(event: EventContext, tournaments: TournamentItem[], t
   const main: NavigationLink[] = [
     {
       key: 'home',
-      href: homeUrl(event.prefix, locale),
+      href: homeUrl(event, locale),
       label: t('navigation.home.anchor'),
     },
     {
       key: 'stats',
-      href: allPlayersStatsUrl(event.prefix, locale),
+      href: allPlayersStatsUrl(event, locale),
       label: t('site.allTimeStatsLink'),
     },
   ];
@@ -47,7 +47,7 @@ export function getSitemap(event: EventContext, tournaments: TournamentItem[], t
   if (event.showCountry) {
     main.push({
       key: 'countries',
-      href: allCountryStatsUrl(event.prefix, locale),
+      href: allCountryStatsUrl(event, locale),
       label: t('site.allTimeStatsByCountryLink'),
     });
   }
@@ -55,7 +55,7 @@ export function getSitemap(event: EventContext, tournaments: TournamentItem[], t
   if (tournaments.some((tournament) => tournament.hasSgfs)) {
     main.push({
       key: 'games',
-      href: allGameStatsUrl(event.prefix, locale),
+      href: allGameStatsUrl(event, locale),
       label: t('site.gamesListLink'),
     });
   }
@@ -69,7 +69,7 @@ export function getSitemap(event: EventContext, tournaments: TournamentItem[], t
       indented: true,
       links: event.categories.map((category) => ({
         key: `category-${category}`,
-        href: categoryUrl(event.prefix, locale, category),
+        href: categoryUrl(event, locale, category),
         label: t(`categories.short.${category}`),
       })),
     });
@@ -88,7 +88,7 @@ export function getSitemap(event: EventContext, tournaments: TournamentItem[], t
 
         return {
           key: `tournament-${tournament.year}`,
-          href: tournamentUrl(event.prefix, locale, tournament.year),
+          href: tournamentUrl(event, locale, tournament.year),
           label: String(tournament.year),
           description: location,
         };

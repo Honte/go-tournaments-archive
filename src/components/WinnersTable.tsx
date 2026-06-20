@@ -76,7 +76,7 @@ function TournamentMedalistsRow({
       <td className="p-2">
         <Link
           className="sm:text-xl font-bold text-event-primary underline hover:text-event-hover"
-          href={tournamentUrl(event.prefix, translations.locale, year)}
+          href={tournamentUrl(event, translations.locale, year)}
           prefetch={false}
         >
           {year}
@@ -123,7 +123,7 @@ function TournamentAnnouncementRow({
       <td className="p-2">
         <Link
           className="sm:text-xl font-bold text-current underline hover:text-current"
-          href={tournamentUrl(event.prefix, translations.locale, year)}
+          href={tournamentUrl(event, translations.locale, year)}
           prefetch={false}
         >
           {year}

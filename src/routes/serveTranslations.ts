@@ -15,7 +15,7 @@ export async function serveTranslations(event: EventContext, localeParam?: strin
   return Response.json(await loadTranslations(event, locale));
 }
 
-export async function getTranslationsOptions(event: EventContext) {
+export async function getTranslationsRouteOptions(event: EventContext) {
   return event.locales.map((locale) => ({
     locale: `${locale}.json`,
   }));

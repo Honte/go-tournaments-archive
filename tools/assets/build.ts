@@ -22,8 +22,8 @@ export async function buildAssets(events: EventContext[]) {
     events.map(async (event) => {
       const [data, allTranslations] = await Promise.all([loadData(event), loadAllTranslations(event)]);
       const sgfDir = `./events/${event.id}/sgf`;
-      const sgfOutputDir = path.join(PUBLIC_SGF_DIR, event.prefix || '');
-      const dataOutputDir = path.join(PUBLIC_DATA_DIR, event.prefix || '');
+      const sgfOutputDir = path.join(PUBLIC_SGF_DIR, event.withPrefix ? event.id : '');
+      const dataOutputDir = path.join(PUBLIC_DATA_DIR, event.withPrefix ? event.id : '');
       const translations = allTranslations[event.locales[0]];
 
       await mkdir(sgfOutputDir, { recursive: true });

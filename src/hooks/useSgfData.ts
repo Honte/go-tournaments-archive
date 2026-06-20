@@ -5,10 +5,10 @@ import { gameSgfUrl } from '@/libs/urls';
 
 export function useSgfData(event: EventContext, sgfPath: string) {
   return useQuery({
-    queryKey: ['sgf', event.basePath, event.prefix, sgfPath],
+    queryKey: ['sgf', event.id, sgfPath],
     queryFn: sgfPath
       ? async () => {
-          const response = await fetch(gameSgfUrl(event.basePath, event.prefix, sgfPath));
+          const response = await fetch(gameSgfUrl(event, sgfPath));
           const content = await response.text();
 
           return loadSgf(content, sgfPath);

@@ -10,11 +10,12 @@ export type LocaleNavigationProps = {
 
 export function LocaleNavigation({ locale, locales }: LocaleNavigationProps) {
   const pathname = usePathname();
-  const regex = new RegExp(`^/${locale}`);
 
   if (locales.length <= 1 || !pathname) {
     return null;
   }
+
+  const regex = new RegExp(`/${locale}(/|$)`);
 
   return (
     <div className="flex gap-3 text-sm text-event-light ml-auto">
@@ -22,7 +23,7 @@ export function LocaleNavigation({ locale, locales }: LocaleNavigationProps) {
         <Link
           key={nextLocale}
           className={nextLocale === locale ? 'font-bold' : 'underline'}
-          href={pathname.replace(regex, `/${nextLocale}`)}
+          href={pathname.replace(regex, `/${nextLocale}$1`)}
           prefetch={false}
           aria-current={nextLocale === locale ? 'true' : undefined}
         >

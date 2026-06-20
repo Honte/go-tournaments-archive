@@ -19,7 +19,7 @@ export async function serveCountryStats(event: EventContext, codeParam?: string)
   return Response.json(stats);
 }
 
-export async function getCountryStatsOptions(event: EventContext) {
+export async function getCountryStatsRouteOptions(event: EventContext) {
   const stats = await getAllCountriesStats(event);
 
   return Object.values(stats).map((country) => ({

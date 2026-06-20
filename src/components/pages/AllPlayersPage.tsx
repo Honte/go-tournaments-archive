@@ -33,3 +33,7 @@ export async function getAllPlayersPageMetadata({ event, locale }: AllPlayersPag
     description: t('site.allTimeStatsDescription'),
   };
 }
+
+export async function getAllPlayersPageOptions(event: EventContext) {
+  return event.locales.map((locale) => ({ locale }));
+}

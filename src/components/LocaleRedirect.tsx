@@ -14,7 +14,7 @@ export function LocaleRedirect({ event }: LocaleRedirectProps) {
   const router = useRouter();
 
   useEffect(() => {
-    router.replace(homeUrl(event.prefix, pickLocale(event.locales)));
+    router.replace(homeUrl(event, pickLocale(event.locales)));
   }, [router, event]);
 
   return <Loading />;

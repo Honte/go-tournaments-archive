@@ -19,7 +19,7 @@ export type EventConfig = {
 
 export type EventContext = EventConfig & {
   readonly basePath?: string;
-  readonly prefix?: string;
+  readonly withPrefix?: boolean;
 };
 
 export type EventData = {

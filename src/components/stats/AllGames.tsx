@@ -57,7 +57,7 @@ function AllGamesContent({ event, games, translations }: AllGamesContentProps) {
               return (
                 <GameViewerTrigger sgfPath={game.sgf!}>
                   <img
-                    src={gameThumbUrl(event.basePath, event.prefix, game.jpg!)}
+                    src={gameThumbUrl(event, game.jpg!)}
                     alt={t('game.preview', `${game.black.name} vs ${game.white.name}`)}
                     className="size-20 min-w-20 min-h-20"
                     loading="lazy"
