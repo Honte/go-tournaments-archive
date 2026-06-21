@@ -19,15 +19,15 @@ export function getEventConfigurations(configuration: ArchiveConfiguration) {
     if ('title' in item) {
       for (const child of item.events) {
         results.push({
-          ...child,
-          ...item.config,
           ...configuration.config,
+          ...item.config,
+          ...child,
         });
       }
     } else {
       results.push({
-        ...item,
         ...configuration.config,
+        ...item,
       });
     }
   }

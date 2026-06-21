@@ -31,13 +31,13 @@ export type ArchiveConfiguration = {
   locales?: [Locale, ...Locale[]];
   events: (EventConfiguration | EventGroup)[];
   basePath?: string;
-  config?: EventConfig;
+  config?: Omit<EventConfig, 'prefix'>;
 };
 
 export type EventGroup = {
   title: LocalizedString;
   events: EventConfiguration[];
-  config?: EventConfig;
+  config?: Omit<EventConfig, 'prefix'>;
 };
 
 export type EventConfiguration = EventConfig & {
