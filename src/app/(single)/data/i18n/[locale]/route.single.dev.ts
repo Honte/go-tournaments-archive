@@ -1,4 +1,4 @@
-import { loadDefaultEvent } from '@/events';
+import { loadSingleEvent } from '@/events';
 import { getTranslationsRouteOptions, serveTranslations } from '@/routes/serveTranslations';
 
 type PageProps = {
@@ -6,9 +6,9 @@ type PageProps = {
 };
 
 export async function GET(_: Request, props: PageProps) {
-  return serveTranslations(await loadDefaultEvent(), (await props.params).locale);
+  return serveTranslations(await loadSingleEvent(), (await props.params).locale);
 }
 
 export async function generateStaticParams() {
-  return getTranslationsRouteOptions(await loadDefaultEvent());
+  return getTranslationsRouteOptions(await loadSingleEvent());
 }

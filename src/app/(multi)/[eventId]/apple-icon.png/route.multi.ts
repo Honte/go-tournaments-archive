@@ -1,4 +1,4 @@
-import { loadEvent } from '@/events';
+import { loadEventFromPrefix } from '@/events';
 import { loadEventOptions } from '@/libs/next';
 import { serveAppleIconRoute } from '@/routes/serverIcons';
 
@@ -10,7 +10,7 @@ type RouteProps = {
 
 export async function GET(_: Request, { params }: RouteProps) {
   const { eventId } = await params;
-  const event = await loadEvent(eventId);
+  const event = await loadEventFromPrefix(eventId);
 
   return serveAppleIconRoute(event);
 }

@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { LuExternalLink } from 'react-icons/lu';
 import type { Player } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
-import type { Translations } from '@/i18n/consts';
+import type { LocalizedString, Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
 import { tournamentUrl } from '@/libs/urls';
@@ -22,7 +22,7 @@ type Result = {
 };
 
 type Announcement = {
-  announcement: boolean | string | Record<string, string>;
+  announcement: boolean | LocalizedString;
   website?: string;
   year: number;
 };

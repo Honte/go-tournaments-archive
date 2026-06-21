@@ -1,4 +1,4 @@
-import { loadDefaultEvent } from '@/events';
+import { loadSingleEvent } from '@/events';
 import { getTournamentRouteOptions, serveTournament } from '@/routes/serveTournament';
 
 type PageProps = {
@@ -6,9 +6,9 @@ type PageProps = {
 };
 
 export async function GET(_: Request, props: PageProps) {
-  return serveTournament(await loadDefaultEvent(), (await props.params).year);
+  return serveTournament(await loadSingleEvent(), (await props.params).year);
 }
 
 export async function generateStaticParams() {
-  return getTournamentRouteOptions(await loadDefaultEvent());
+  return getTournamentRouteOptions(await loadSingleEvent());
 }

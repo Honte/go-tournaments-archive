@@ -1,34 +1,30 @@
-import { BASE_PATH, EVENT, IS_DEVELOPMENT } from '@/env';
+import { normalizeBasePath } from '@/libs/urls';
+import { getEventConfigurations, IS_DEVELOPMENT, loadConfiguration } from '@/configuration';
 
-const pageExtensions = ['tsx', 'ts'];
+export default async function getConfig() {
+  const configuration = await loadConfiguration();
+  const totalEvents = getEventConfigurations(configuration).length;
+  const pageExtensions = ['tsx', 'ts'];
 
-if (EVENT) {
-  pageExtensions.push('single.tsx', 'single.ts');
-} else {
-  pageExtensions.push('multi.tsx', 'multi.ts');
-}
-
-if (IS_DEVELOPMENT) {
-  pageExtensions.push('dev.tsx', 'dev.ts');
-
-  if (EVENT) {
-    pageExtensions.push('single.dev.tsx', 'single.dev.ts');
+  if (totalEvents === 1) {
+    pageExtensions.push('single.tsx', 'single.ts');
   } else {
-    pageExtensions.push('multi.dev.tsx', 'multi.dev.ts');
+    pageExtensions.push('multi.tsx', 'multi.ts');
   }
+
+  if (IS_DEVELOPMENT) {
+    pageExtensions.push('dev.tsx', 'dev.ts');
+
+    if (totalEvents === 1) {
+      pageExtensions.push('single.dev.tsx', 'single.dev.ts');
+    } else {
+      pageExtensions.push('multi.dev.tsx', 'multi.dev.ts');
+    }
+  }
+
+  return {
+    output: 'export',
+    basePath: normalizeBasePath(configuration.basePath),
+    pageExtensions,
+  };
 }
-
-/** @type {import('next').NextConfig} */
-export default {
-  output: 'export',
-  basePath: BASE_PATH,
-
-  // pass envs for client builds using legacy API
-  // @TODO consider moving to NEXT_PUBLIC_ prefix
-  env: {
-    EVENT,
-    BASE_PATH,
-  },
-
-  pageExtensions,
-};

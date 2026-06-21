@@ -1,10 +1,10 @@
 import { existsSync } from 'node:fs';
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
-import type { EventConfig } from '@/schema/event';
+import type { EventDefinition } from '@/schema/event';
 import type { Locale } from '@/i18n/consts';
 
-export async function loadTournamentDescription(event: EventConfig, year: string | number) {
+export async function loadTournamentDescription(event: EventDefinition, year: string | number) {
   const generic = await readDescription(event, `${year}.md`);
   const localized = new Map<Locale, string>();
 
@@ -29,7 +29,7 @@ export async function loadTournamentDescription(event: EventConfig, year: string
   return descriptions;
 }
 
-async function readDescription(event: EventConfig, file: string) {
+async function readDescription(event: EventDefinition, file: string) {
   const path = join(`./events/${event.id}/data`, file);
 
   if (!existsSync(path)) {

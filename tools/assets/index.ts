@@ -1,8 +1,9 @@
-import { EVENT } from '@/env';
-import { loadAllEvents, loadEvent } from '@/events';
+import { loadConfiguredEvents } from '@/events';
 import { buildAssets } from '@tools/assets/build';
+import { loadConfiguration } from '@/configuration';
 
-const events = EVENT ? [await loadEvent(EVENT)] : await loadAllEvents();
+const configuration = await loadConfiguration();
+const events = (await loadConfiguredEvents(configuration)).filter((event) => !event.external);
 
 try {
   console.log(`[assets] generating assets for ${events.length > 1 ? `${events.length} events` : events[0].id}`);

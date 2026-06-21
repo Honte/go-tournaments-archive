@@ -1,0 +1,8 @@
+events:
+  - id: ${EVENT}
+basePath: ${BASE_PATH}
+config:
+  generateSvgs: false,
+  generatePngs: false,
+  generateJpgs: true,
+  generateZips: true,

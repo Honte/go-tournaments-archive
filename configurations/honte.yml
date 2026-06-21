@@ -1,0 +1,55 @@
+title: Go Tournaments Archives
+events:
+  - title: Global Tournaments
+    events:
+      - id: wagc
+        external: true
+        prefix: wagc
+        domain: https://wagc.go.art.pl
+      - id: kpmc
+        external: true
+        prefix: kpmc
+        domain: https://kpmc.go.art.pl
+  - title: European Tournaments
+    events:
+      - id: egc
+        prefix: egc
+      - id: epc
+        prefix: epc
+      - id: ewgc
+        prefix: ewgc
+      - id: eygc
+        prefix: eygc
+      - id: esgc
+        prefix: esgc
+  - title: National Tournaments
+    events:
+      - id: pgc
+        external: true
+        prefix: pgc
+        domain: https://mp.go.art.pl
+      - id: pwgc
+        external: true
+        prefix: pwgc
+        domain: https://mpk.go.art.pl
+      - id: pygc
+        external: true
+        prefix: pygc
+        domain: https://mpj.go.art.pl
+      - id: pagc
+        external: true
+        prefix: pagc
+        domain: https://amp.go.art.pl
+      - id: iegc
+        prefix: iegc
+      - id: hrgc
+        prefix: hrgc
+  - title: Local Tournaments
+    events:
+      - id: wgl
+        prefix: wgl
+config:
+  generateSvgs: false,
+  generatePngs: false,
+  generateJpgs: true,
+  generateZips: true,

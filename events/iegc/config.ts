@@ -1,16 +1,11 @@
-import type { EventConfig } from '@/schema/event';
+import type { EventDefinition } from '@/schema/event';
 
-const EVENT_CONFIG: EventConfig = {
+const EVENT_CONFIG: EventDefinition = {
   id: 'iegc',
-  scope: 'national',
-  domain: '',
   locales: ['en'],
   showCountry: false,
   showBestPlace: true,
   hideGamesWithoutSgf: true,
-  generateSvgs: true,
-  generateJpgs: true,
-  generateZips: true,
   unknownRanks: ['30k'],
 };
 

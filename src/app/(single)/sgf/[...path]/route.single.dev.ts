@@ -1,5 +1,5 @@
 import type { NextRequest } from 'next/server';
-import { loadDefaultEvent } from '@/events';
+import { loadSingleEvent } from '@/events';
 import { serveSgfAsset, getSgfAssetOptions } from '@/routes/serveSgfAsset';
 import { serveSgfsZip } from '@/routes/serveSgfsZip';
 
@@ -9,7 +9,7 @@ type RouteProps = {
 
 export async function GET(_: NextRequest, props: RouteProps) {
   const { path: segments } = await props.params;
-  const event = await loadDefaultEvent();
+  const event = await loadSingleEvent();
 
   if (segments.length === 1 && segments[0].match(/^\d+\.zip$/)) {
     return serveSgfsZip(event, Number(segments[0].replace(/\.zip$/, '')));
@@ -19,5 +19,5 @@ export async function GET(_: NextRequest, props: RouteProps) {
 }
 
 export async function generateStaticParams() {
-  return getSgfAssetOptions(await loadDefaultEvent());
+  return getSgfAssetOptions(await loadSingleEvent());
 }

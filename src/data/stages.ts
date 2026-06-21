@@ -1,5 +1,5 @@
 import { Game, LeagueStage, Player, Stage, TournamentDetails } from '@/schema/data';
-import type { EventConfig } from '@/schema/event';
+import type { EventDefinition } from '@/schema/event';
 import { type InputStage } from '@/schema/input';
 import { parseDates } from '@/libs/dates';
 import { loadClassificationStage } from '@/data/classification';
@@ -12,7 +12,7 @@ import { createLadderTable } from '@/data/tableLadder';
 import { createTableWithoutRounds } from '@/data/tableWithoutRounds';
 
 export type ParseStageProps = {
-  event: EventConfig;
+  event: EventDefinition;
   stage: InputStage;
   stageIndex: number;
   playersMap: Record<string, Player>;

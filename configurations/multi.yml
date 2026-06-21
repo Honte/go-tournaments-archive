@@ -1,0 +1,34 @@
+events:
+  - id: wagc
+    prefix: wagc
+  - id: kpmc
+    prefix: kpmc
+  - id: egc
+    prefix: egc
+  - id: epc
+    prefix: epc
+  - id: ewgc
+    prefix: ewgc
+  - id: eygc
+    prefix: eygc
+  - id: esgc
+    prefix: esgc
+  - id: pgc
+    prefix: pgc
+  - id: pwgc
+    prefix: pwgc
+  - id: pygc
+    prefix: pygc
+  - id: pagc
+    prefix: pagc
+  - id: iegc
+    prefix: iegc
+  - id: hrgc
+    prefix: hrgc
+  - id: wgl
+    prefix: wgl
+config:
+  generateSvgs: false,
+  generatePngs: false,
+  generateJpgs: true,
+  generateZips: true,

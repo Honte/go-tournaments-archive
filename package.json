@@ -5,6 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "next dev",
+    "dev:honte": "cross-env CONFIG=honte next dev",
+    "dev:europe": "cross-env CONFIG=europe next dev",
+    "dev:poland": "cross-env CONFIG=poland next dev",
     "dev:pgc": "cross-env EVENT=pgc next dev",
     "dev:wagc": "cross-env EVENT=wagc next dev",
     "dev:pwgc": "cross-env EVENT=pwgc next dev",
@@ -22,6 +25,7 @@
     "prebuild": "tsx tools/assets/index.ts",
     "build": "next build",
     "builder": "tsx tools/builder.ts",
+    "build:honte": "cross-env CONFIG=honte npm run build",
     "build:pgc": "cross-env EVENT=pgc npm run build",
     "build:wagc": "cross-env EVENT=wagc npm run build",
     "build:pwgc": "cross-env EVENT=pwgc npm run build",
@@ -76,7 +80,8 @@
     "slugify": "1.6.9",
     "svgo": "4.0.1",
     "tailwind-merge": "3.6.0",
-    "yaml": "2.9.0"
+    "yaml": "2.9.0",
+    "yaml-env-defaults": "2.0.5"
   },
   "devDependencies": {
     "@inquirer/prompts": "8.5.2",
@@ -100,5 +105,10 @@
   },
   "engines": {
     "node": ">=24.0.0"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true,
+    "sharp@0.34.5": true,
+    "sharp@0.35.2": true
   }
 }

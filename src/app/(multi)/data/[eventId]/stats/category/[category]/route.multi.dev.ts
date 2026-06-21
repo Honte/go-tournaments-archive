@@ -1,4 +1,4 @@
-import { loadEvent } from '@/events';
+import { loadEventFromPrefix } from '@/events';
 import { loadAllOptions } from '@/libs/next';
 import { getCategoryStatsRouteOptions, serveCategoryStats } from '@/routes/serveCategoryStats';
 
@@ -11,7 +11,7 @@ type RouteProps = {
 
 export async function GET(_: Request, { params }: RouteProps) {
   const { eventId, category } = await params;
-  const event = await loadEvent(eventId);
+  const event = await loadEventFromPrefix(eventId);
 
   return serveCategoryStats(event, category);
 }

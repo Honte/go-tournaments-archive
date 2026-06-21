@@ -9,12 +9,12 @@ import type {
   Tournament,
   TournamentWithDescription,
 } from '@/schema/data';
-import type { EventConfig, EventContext, EventData } from '@/schema/event';
-import { IS_PRODUCTION } from '@/env';
+import type { EventDefinition, EventContext, EventData } from '@/schema/event';
 import type { Locale, Translations } from '@/i18n/consts';
 import { loadTranslations } from '@/i18n/server';
 import { loadTournamentDescription } from '@/data/description';
 import { loadData } from '@/data/load';
+import { IS_PRODUCTION } from '@/configuration';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const PUBLIC_DIR = join(__dirname, '../../public');
@@ -22,7 +22,7 @@ const PUBLIC_DIR = join(__dirname, '../../public');
 const dataCache = new Map<string, Promise<EventData>>();
 const dataAssetCache = new Map<string, Promise<unknown>>();
 
-async function getData(event: EventConfig) {
+async function getData(event: EventDefinition) {
   const cached = dataCache.get(event.id);
 
   if (cached) {
@@ -174,7 +174,7 @@ async function readDataAsset<T>(event: EventContext, file: string): Promise<T> {
 }
 
 async function readDataAssetFromDisk<T>(event: EventContext, file: string): Promise<T> {
-  const assetPath = join(/*turbopackIgnore: true*/ PUBLIC_DIR, 'data', event.withPrefix ? event.id : '', file);
+  const assetPath = join(/*turbopackIgnore: true*/ PUBLIC_DIR, 'data', event.prefix || '', file);
 
   try {
     return JSON.parse(await readFile(/*turbopackIgnore: true*/ assetPath, 'utf-8')) as T;

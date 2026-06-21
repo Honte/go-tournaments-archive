@@ -1,4 +1,4 @@
-import { loadEvent } from '@/events';
+import { loadEventFromPrefix } from '@/events';
 import { loadEventOptions } from '@/libs/next';
 import { serveSgfList } from '@/routes/serveSgfList';
 
@@ -10,7 +10,7 @@ type RouteProps = {
 
 export async function GET(_: Request, props: RouteProps) {
   const { eventId } = await props.params;
-  const event = await loadEvent(eventId);
+  const event = await loadEventFromPrefix(eventId);
 
   return serveSgfList(event);
 }

@@ -1,0 +1,19 @@
+title: European Go Championships Archives
+events:
+  - id: egc
+    prefix: egc
+  - id: epc
+    prefix: epc
+  - id: ewgc
+    prefix: ewgc
+  - id: eygc
+    prefix: eygc
+  - id: esgc
+    prefix: esgc
+basePath: ${BASE_PATH}
+config:
+  links:
+    - website: https://www.eurogofed.org/
+      title: European Go Federation
+      tooltip: Visit European Go Federation website
+      place: top

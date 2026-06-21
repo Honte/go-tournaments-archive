@@ -12,7 +12,7 @@ const STATUS_DELAY = 5000;
 export function buildSgfLists(events: EventContext[], outputDir: string, results: BuildSgfResponse[]) {
   return Promise.all(
     events.map((event) => {
-      const targetDir = event.withPrefix ? path.join(outputDir, event.id) : outputDir;
+      const targetDir = path.join(outputDir, event.prefix || '');
       const games = results.filter((sgf) => sgf.event === event.id).map((sgf) => sgf.details);
 
       return writeFile(path.join(targetDir, 'list.json'), JSON.stringify(games));

@@ -1,15 +1,10 @@
-import type { EventConfig } from '@/schema/event';
+import type { EventDefinition } from '@/schema/event';
 
-const EVENT_CONFIG: EventConfig = {
+const EVENT_CONFIG: EventDefinition = {
   id: 'egc',
-  scope: 'european',
-  domain: '',
   locales: ['en'],
   showCountry: true,
   showBestPlace: true,
-  generateSvgs: false,
-  generateJpgs: true,
-  generateZips: true,
   hideGamesWithoutSgf: true,
 };
 

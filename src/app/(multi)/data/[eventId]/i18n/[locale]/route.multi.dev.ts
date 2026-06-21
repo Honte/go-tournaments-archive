@@ -1,4 +1,4 @@
-import { loadEvent } from '@/events';
+import { loadEventFromPrefix } from '@/events';
 import { loadAllOptions } from '@/libs/next';
 import { getTranslationsRouteOptions, serveTranslations } from '@/routes/serveTranslations';
 
@@ -11,7 +11,7 @@ type PageProps = {
 
 export async function GET(_: Request, { params }: PageProps) {
   const { eventId, locale } = await params;
-  const event = await loadEvent(eventId);
+  const event = await loadEventFromPrefix(eventId);
 
   return serveTranslations(event, locale);
 }

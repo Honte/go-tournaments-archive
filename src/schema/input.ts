@@ -1,8 +1,9 @@
 import { Breaker, type CustomBreaker } from '@/schema/data';
+import type { LocalizedString } from '@/i18n/consts';
 
 export type InputBaseStage = {
-  name?: string | Record<string, string>;
-  notes?: string | Record<string, string>;
+  name?: LocalizedString;
+  notes?: LocalizedString;
   date: string | string[];
   egd?: string;
   time?: string;
@@ -78,9 +79,9 @@ export type InputTournament = {
   top?: (string | string[])[];
   stages?: InputStage[];
   displayReversed?: boolean;
-  notes?: string | Record<string, string>;
+  notes?: LocalizedString;
   start?: string;
   end?: string;
-  announcement?: boolean | string | Record<string, string>;
+  announcement?: boolean | LocalizedString;
   categories?: string[];
 };

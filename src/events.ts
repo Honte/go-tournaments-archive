@@ -1,35 +1,51 @@
-import { dirname, join } from 'node:path';
-import { fileURLToPath } from 'node:url';
-import fg from 'fast-glob';
-import type { EventConfig, EventContext } from '@/schema/event';
-import { BASE_PATH, EVENT } from './env';
+import type { ArchiveConfiguration, EventContext, EventDefinition } from '@/schema/event';
+import { getEventConfigurations, loadConfiguration } from '@/configuration';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-
-export function loadDefaultEvent() {
-  return loadEvent(EVENT || 'pgc', false);
-}
-
-export async function loadEvent(eventId: string, withPrefix = true): Promise<EventContext> {
-  const { default: config } = (await import(`../events/${eventId}/config.ts`)) as { default: EventConfig };
+export async function loadSingleEvent(): Promise<EventContext> {
+  const config = await loadConfiguration();
+  const [eventConfig] = getEventConfigurations(config);
+  const definition = await loadEventDefinition(eventConfig.id);
 
   return {
-    ...config,
-    basePath: BASE_PATH,
-    withPrefix,
+    ...definition,
+    ...eventConfig,
   };
 }
 
-export async function loadAllEvents(): Promise<EventContext[]> {
-  const ids = await findAllEvents();
+export async function loadConfiguredEvents(config: ArchiveConfiguration): Promise<EventContext[]> {
+  const eventConfigs = getEventConfigurations(config);
 
-  return Promise.all(ids.map((id) => loadEvent(id)));
+  return Promise.all(
+    eventConfigs.map(async (eventConfig) => {
+      const definition = await loadEventDefinition(eventConfig.id);
+
+      return {
+        ...definition,
+        ...eventConfig,
+      };
+    })
+  );
 }
 
-export async function findAllEvents() {
-  const files = await fg.glob(`*/config.ts`, {
-    cwd: join(__dirname, '../events'),
-  });
+export async function loadEventFromPrefix(eventPrefix: string): Promise<EventContext> {
+  const config = await loadConfiguration();
+  const eventConfigs = getEventConfigurations(config);
+  const targetEvent = eventConfigs.find((event) => event.prefix === eventPrefix);
 
-  return files.map(dirname).sort();
+  if (!targetEvent) {
+    throw new Error(`Event not found: ${eventPrefix}`);
+  }
+
+  const definition = await loadEventDefinition(targetEvent.id);
+
+  return {
+    ...definition,
+    ...targetEvent,
+  };
+}
+
+async function loadEventDefinition(eventId: string): Promise<EventDefinition> {
+  const configModule = await import(`../events/${eventId}/config.ts`);
+
+  return configModule.default as EventDefinition;
 }

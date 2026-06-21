@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { PropsWithChildren } from 'react';
-import { loadDefaultEvent } from '@/events';
+import { loadSingleEvent } from '@/events';
 import { BaseLayout } from '@/components/pages/BaseLayout';
 import { EventLayout, getEventLayoutMetadata } from '@/components/pages/EventLayout';
 
@@ -9,7 +9,7 @@ type RootLayoutProps = PropsWithChildren<{
 }>;
 
 export default async function RootLayout({ params, children }: RootLayoutProps) {
-  const event = await loadDefaultEvent();
+  const event = await loadSingleEvent();
   const { locale } = await params;
 
   return (
@@ -22,14 +22,14 @@ export default async function RootLayout({ params, children }: RootLayoutProps) 
 }
 
 export async function generateMetadata(props: RootLayoutProps): Promise<Metadata> {
-  const event = await loadDefaultEvent();
+  const event = await loadSingleEvent();
   const { locale } = await props.params;
 
   return getEventLayoutMetadata({ event, locale });
 }
 
 export async function generateStaticParams() {
-  const event = await loadDefaultEvent();
+  const event = await loadSingleEvent();
 
   return event.locales.map((locale) => ({ locale }));
 }

@@ -1,13 +1,14 @@
-import type { Locale } from '@/i18n/consts';
+import type { Locale, LocalizedString } from '@/i18n/consts';
+import { getString } from '@/i18n/utils';
 import { Markdown } from '@/components/ui/Markdown';
 
 type TournamentDescriptionProps = {
-  description?: string | Record<Locale, string>;
+  description?: LocalizedString;
   locale: Locale;
 };
 
 export function TournamentDescription({ description, locale }: TournamentDescriptionProps) {
-  const content = description && typeof description === 'object' ? description[locale] : description;
+  const content = getString(description, locale);
 
   if (!content) {
     return null;

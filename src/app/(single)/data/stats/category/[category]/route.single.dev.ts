@@ -1,4 +1,4 @@
-import { loadDefaultEvent } from '@/events';
+import { loadSingleEvent } from '@/events';
 import { getCategoryStatsRouteOptions, serveCategoryStats } from '@/routes/serveCategoryStats';
 
 type PageProps = {
@@ -6,9 +6,9 @@ type PageProps = {
 };
 
 export async function GET(_: Request, props: PageProps) {
-  return serveCategoryStats(await loadDefaultEvent(), (await props.params).category);
+  return serveCategoryStats(await loadSingleEvent(), (await props.params).category);
 }
 
 export async function generateStaticParams() {
-  return getCategoryStatsRouteOptions(await loadDefaultEvent());
+  return getCategoryStatsRouteOptions(await loadSingleEvent());
 }

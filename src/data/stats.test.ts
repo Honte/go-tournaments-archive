@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import type { Game, Player, Tournament, TournamentDetails } from '@/schema/data';
-import type { EventConfig } from '@/schema/event';
+import type { EventDefinition } from '@/schema/event';
 import { loadClassificationStage } from '@/data/classification';
 import { createPlayersHandler } from '@/data/players';
 import { calculateStats } from '@/data/stats';
@@ -108,10 +108,9 @@ describe('loadClassificationStage', () => {
   });
 });
 
-function creteEventConfig(): EventConfig {
+function creteEventConfig(): EventDefinition {
   return {
     id: 'test',
-    scope: 'local',
     locales: ['en'],
   };
 }
