@@ -22,8 +22,8 @@ export async function Logo({ mode, ...props }: LogoProps) {
           <path d="M0 0h219v121H0z" />
         </clipPath>
       </defs>
-      <g clip-path="url(#wgl-a)">
-        <g clip-path="url(#wgl-b)" fill="currentColor" transform="translate(18 18)">
+      <g clipPath="url(#wgl-a)">
+        <g clipPath="url(#wgl-b)" fill="currentColor" transform="translate(18 18)">
           <path fill="#f7d35a" d="M29.24 17.56A11.68 11.68 0 1 1 17.56 5.88a11.7 11.7 0 0 1 11.68 11.68" />
           <path fill="#dc4939" d="M48.23 36.55a11.68 11.68 0 1 1-11.68-11.68 11.7 11.7 0 0 1 11.68 11.68" />
           <path d="m71.8 49.6.66-2.05h4.56l.7 2.05h4.19l-5.38-13.64h-3.66L67.73 49.6Zm2.88-8.98 1.33 3.91h-2.57Z" />
