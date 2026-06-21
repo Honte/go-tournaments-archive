@@ -18,9 +18,9 @@ export type EventConfig = {
   readonly generateSvgs?: boolean;
   readonly generateZips?: boolean;
   readonly external?: boolean;
-  readonly domain?: string;
-  readonly basePath?: string;
-  readonly prefix?: string;
+  readonly domain?: string; // must be provided if external is true
+  readonly basePath?: string; // acquired from top-level archive configuration
+  readonly prefix?: string; // must be unique across configuration
   readonly links?: (EventLink | EventLinkGroup)[];
 };
 
@@ -31,18 +31,17 @@ export type ArchiveConfiguration = {
   locales?: [Locale, ...Locale[]];
   events: (EventConfiguration | EventGroup)[];
   basePath?: string;
-  config?: Omit<EventConfig, 'prefix'>;
+  config?: EventConfigurationOverrides;
 };
 
 export type EventGroup = {
   title: LocalizedString;
   events: EventConfiguration[];
-  config?: Omit<EventConfig, 'prefix'>;
+  config?: EventConfigurationOverrides;
 };
 
-export type EventConfiguration = EventConfig & {
-  id: string;
-};
+export type EventConfiguration = Omit<EventConfig, 'basePath'> & { id: EventDefinition['id'] };
+export type EventConfigurationOverrides = Omit<EventConfig, 'prefix' | 'basePath'>;
 
 export type EventLink = {
   website: LocalizedString;
@@ -53,7 +52,8 @@ export type EventLink = {
 
 export type EventLinkGroup = {
   title: LocalizedString;
-  links: EventLink[];
+  links: Omit<EventLink, 'place'>[];
+  place?: 'top' | 'middle' | 'bottom';
 };
 
 export type EventData = {

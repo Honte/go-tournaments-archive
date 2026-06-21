@@ -1,5 +1,5 @@
 import { readYamlEnv } from 'yaml-env-defaults';
-import type { ArchiveConfiguration, EventConfiguration } from '@/schema/event';
+import type { ArchiveConfiguration, EventConfig, EventDefinition } from '@/schema/event';
 
 export const CONFIG = process.env.CONFIG || (process.env.EVENT ? 'single' : 'multi');
 export const IS_DEVELOPMENT = process.env.NODE_ENV === 'development';
@@ -13,7 +13,7 @@ export function loadConfiguration() {
 }
 
 export function getEventConfigurations(configuration: ArchiveConfiguration) {
-  const results: EventConfiguration[] = [];
+  const results: (EventConfig & { id: EventDefinition['id'] })[] = [];
 
   for (const item of configuration.events) {
     if ('title' in item) {
@@ -22,12 +22,14 @@ export function getEventConfigurations(configuration: ArchiveConfiguration) {
           ...configuration.config,
           ...item.config,
           ...child,
+          basePath: configuration.basePath,
         });
       }
     } else {
       results.push({
         ...configuration.config,
         ...item,
+        basePath: configuration.basePath,
       });
     }
   }
