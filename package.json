@@ -23,7 +23,7 @@
     "lint": "oxlint .",
     "extract:mp-db": "tsx tools/extract.ts",
     "sgf:match": "tsx tools/sgfMatcher/index.ts",
-    "sgf:match:pgc": "tools/sgfMatcher/index.ts --event pgc",
+    "sgf:match:pgc": "tsx tools/sgfMatcher/index.ts --event pgc",
     "sgf:match:wagc": "tsx tools/sgfMatcher/index.ts --event wagc",
     "sgf:match:kpmc": "tsx tools/sgfMatcher/index.ts --event kpmc",
     "sgf:match:pwgc": "tsx tools/sgfMatcher/index.ts --event pwgc",
