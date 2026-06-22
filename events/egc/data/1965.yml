@@ -1,0 +1,28 @@
+website: https://www.eurogofed.org/results/congress/egc1965.htm
+name: European Championship 1965
+top:
+ - Juergen Mattern
+ - Max Rebattu
+ - Jurgen Dueball
+stages:
+  - type: tournament
+    file: egc1965.txt
+    name: Championship Group
+    notes: Recreated from cross table. Games order can be different.
+    promoted: 3
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true   
+  - type: tournament
+    file: egc1965playoff.txt
+    name: Playoff
+    notes: |
+      Top 3 played additional games for a championship (because they had the same number of wins)\
+      Second playoff held in Berlin in december.
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true   

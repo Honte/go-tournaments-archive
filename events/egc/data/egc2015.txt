@@ -1,6 +1,6 @@
 ; TC[E150801A]
 ; CL[A]
-; EV[European Championship 2016]
+; EV[European Championship 2015]
 ; PC[CZ, Liberec]
 ; DT[2015-07-26,2015-08-02]
 ; HA[h9]

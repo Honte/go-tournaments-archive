@@ -1,0 +1,16 @@
+website: https://www.eurogofed.org/results/congress/egc1963.htm
+name: European Championship 1963
+notes: There was a rule that if last years champion and another player place first with equal scores, the champion would keep his title without any play-off.
+stages:
+  - type: tournament
+    file: egc1963.txt
+    name: Championship Group
+    notes: Recreated from cross table. Games order can be different.
+    scoringColumns:    
+      - wins
+      - place
+    breakers:
+      - wins
+      - place
+    findSharedPlaces: true   
+

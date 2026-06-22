@@ -1,0 +1,27 @@
+website: https://www.eurogofed.org/results/congress/egc1979.htm
+name: European Championship 1979
+top :
+     - Juergen Mattern
+     - Ronald Schlemper
+     - Robert Rehm
+stages:
+  - type: tournament
+    file: egc1979.txt
+    name: Championship Group
+    notes: Recreated from cross table. Games order can be different.
+    promoted: 3
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true
+  - type: tournament
+    file: egc1979playoff.txt
+    name: Playoff
+    notes: Top 3 played additional games for a championship (because they had the same number of wins)
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true	   
+

@@ -1,0 +1,26 @@
+website: https://www.eurogofed.org/results/congress/egc1961.htm
+name: European Championship 1961
+top:
+ - wvalvensleben
+ - Gunter Ciessow
+ - Leonhard Grebe
+stages:
+  - type: tournament
+    file: egc1961.txt
+    name: Championship Group
+    notes: Recreated from cross table. Games order can be different.
+    promoted: 2
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true   
+  - type: tournament
+    file: egc1961playoff.txt
+    name: Playoff
+    notes: Top 2 played additional game for a championship (because they had the same number of wins) 
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true   

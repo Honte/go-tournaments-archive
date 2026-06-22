@@ -1,0 +1,20 @@
+; EV[European Go Congress 1989 - Main tournament]
+; PC[YU, Nis]
+; DT[1989-07-23,1989-08-05]
+;Pl Name                   Gr Cy  MM   1    2    3    4    5    6    7    8    9   10 Pt SOS SODOS
+   1 Macfadyen Matthew              6d UK  xxx     27     8   255   201     2      0+      0+      2+      0+      0-     11+      7+      0+      0-      9+
+   2 Sakhabutdinov Rustam           5d SU  xxx     26     7   253   173     6      0+      0+      1-      0+      0+      7-      0+      3+      0+      0-
+   3 Solovjev Valerij               6d SU  xxx     26     7   250   172     7     10-      0+      0+      0+      0+      0-      0+      2-     16+     15+
+   4 Petrovic Rade                  5d YU  xxx     26     7   245   171     8      0-      0+      0+      6+      0+      9+      0-      8+      0-      7+
+   5 Janssen Frank                  5d NL  xxx     26     7   245   170     9      0+      0-      0+      0+      0-      0+      9-      0+      8+      0+
+   6 Detkov Ivan                    6d SU  xxx     26     7   242   168    10      0+     13+      0-      4-      0+      0-      0+     14+      0+     12+
+   7 Wimmer Manfred                 6d AT  xxx     25     6   256   149    12     14+      0+      0-      0+      0+      2+      1-      9+      0-      4-
+   8 Lazarev Alexej                 6d SU  xxx     25     6   255   149    13      0+      0+      0+      0+      0+      0-      0-      4-      5-      0+
+   9 Bogdanov Viktor                6d SU  xxx     25     6   251   149    14      0-      0+     13+      0+     16+      4-      5+      7-      0+      1-
+  10 Muller Martin                  5d AT  xxx     25     6   249   147    15      3+      0-      0+      0-      0+      0+     16+     12-      0+      0-
+  11 Rehm Robert                    5d NL  xxx     25     6   247   143    16      0+      0+      0+      0-      0+      1-     12-      0-      0+      0+
+  12 Sajfullin Ruslan               5d SU  xxx     25     6   246   145    17      0-      0+      0+      0+      0-     13+     11+     10+      0-      6-
+  13 Shepperson Piers               4d UK  xxx     25     6   246   144    18      0+      6-      9-      0+      0+     12-      0+      0+     14+      0-
+  14 Popov Igor                     5d SU  xxx     25     6   245   145    19      7-      0+      0+      0-      0+      0+      0+      6-     13-      0+
+  15 Goddard Tony                   5d UK  xxx     25     6   245   140    20      0+      0+      0-      0-      0+      0+      0+      0-      0+      3-
+  16 Danek Vladimir                 5d CS  xxx     25     6   243   141    21      0+      0-      0+      0+      9-      0+     10-      0+      3-      0+

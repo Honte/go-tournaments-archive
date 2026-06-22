@@ -1,0 +1,20 @@
+; EV[European Go Congress 1985 - Main tournament]
+; PC[NL, Terschelling]
+; DT[1985-07-20,1985-08-02]
+;Pl Name                  Gr Cy  MM Pt   1    2    3    4    5    6    7    8    9  SOS SODOS
+   1 Schlemper Ronald               7d NL  xxx     28     9   221   221     1     13+     11+      3+      8+      2+      9+      4+     10+     12+
+   2 Colmez Pierre                  6d FR  xxx     26     7   224   170     2     14+      5+     16+     11+      1-      4+      3-      9+      8+
+   3 Macfadyen Matthew              6d UK  xxx     26     7   222   169     3      0+      0+      1-     16+     15+     11+      2+      5+      4-
+   4 Moussa Andre                   5d FR  xxx     25     6   224   146     4     12-      0+      5+      6+     10+      2-      1-      0+      3+
+   5 Aaij Rene                      4d NL  xxx     25     6   217   140     5     15+      2-      4-      0+      0+      0+     13+      3-     11+
+   6 Michel Jean                    4d FR  xxx     25     6   211   139     6      0-      0+      0+      4-     12-      0+     14+     13+     10+
+   7 Rehm Robert                    5d NL  xxx     25     6   210   138     7      0+      0+      8-     15-      0+     13-      0+      0+      9+
+   8 Muller Cas                     5d NL  xxx     24     5   222   120     8      0+      0+      7+      1-      9-     14+     10-      0+      2-
+   9 Kraszek Janusz                 5d PL  xxx     24     5   222   119     9     11-      0+      0+     13+      8+      1-     12+      2-      7-
+  10 Schoffel David                 5d DE  xxx     24     5   220   119    10      0-      0+      0+     12+      4-     15+      8+      1-      6-
+  11 Eijkhout Michiel               4d NL  xxx     24     5   220   115    11      9+      1-      0+      2-      0+      3-      0+      0+      5-
+  12 Vermaseren Jos                 4d NL  xxx     24     5   219   119    12      4+     16-      0+     10-      6+      0+      9-      0+      1-
+  13 Gooskens Mark                  4d NL  xxx     24     5   217   115    13      1-      0+      0+      9-      0+      7+      5-      6-      0+
+  14 Pocsai Tibor                   4d HU  xxx     24     5   213   116    14      2-      0-      0+      0+      0+      8-      6-      0+      0+
+  15 Budig Stefan                   4d DE  xxx     24     5   212   114    15      5-      0+      0+      7+      3-     10-      0-      0+      0+
+  16 Puijt Erik                     4d NL  xxx     24     5   212   114    15      0+     12+      2-      3-      0-      0-      0+      0+      0+

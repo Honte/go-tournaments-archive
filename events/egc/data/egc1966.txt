@@ -1,0 +1,9 @@
+; EV[European Go Congress 1966 - Championship Group]
+; PC[UK, London]
+; DT[1966-08-06,1966-08-20]
+   1 Mattern Juergen               30k DE  xxx      7      2+      6+      5-      4+      3-      2-      6+      5+      4+      3+
+   2 Wimmer Manfred                30k AT  xxx      7      1-      5+      3+      6+      4-      1+      5+      3-      6+      4+
+   3 Rebattu Max                   30k NL  xxx    6.5      6+      4+      2-      5+      1+      6+      4-      2+      5=      1-
+   4 Mutabzija Zoran               30k YU  xxx      5      5-      3-      6+      1-      2+      5+      3+      6+      1-      2-
+   5 Vries Henk_de                 30k NL  xxx    4.5      4+      2-      1+      3-      6+      4-      2-      1-      3=      6+
+   6 Marseille Walter              30k US  xxx      0      3-      1-      4-      2-      5-      3-      1-      4-      2-      5-

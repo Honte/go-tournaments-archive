@@ -1,0 +1,24 @@
+; CL[A]
+; EV[40th European Go Congress (rounds 1-5)]
+; PC[IT, Abano di Terme]
+; DT[1996-07-21,1996-08-03]
+; HA[h9]
+; KM[5.5]
+; TM[2h30]
+;                
+   1 Guo Juan                       5p NL  Hilv    44    10   402   402     1      0+      0+     13+      0+      0+      2+      3+     12+      9+      8+ |10298013
+   2 Zeijst Rob_van                 7d NL  Apel    42     8   406   321     2      0-      0+     14+      5+      0+      1-     10+      4+      3+     11+ |10337382
+   3 Heiser Laurent                 6d LU  Lux     41     7   404   277     4      0+      4+      0-      0+      0+      6+      1-      0+      2-      0+ |10249195
+   4 Colmez Pierre                  5d FR  75Pa    41     7   399   276     5      9+      3-      0+     11-      0+      0+      0+      2-     14+      0+ |10237018
+   5 Zhao Pei                       5d DE  Sie     41     7   398   276     6     14+      0-     15+      2-      0+      0-      0+      0+      0+      0+ |10201235
+   6 Gherman Sorin                  6d RO  Bucu    41     7   397   275     7      7+     13-      0+      0+      0+      3-      0+      0+      0-      9+ |10362385
+   7 Eeden Gilles_van               5d NL  Nijm    41     7   393   274     8      6-      0+      8+      0-      0+      0-      0+      0+      0+      0+ |10201598
+   8 Gerlach Christoph              5d DE  H       40     6   400   235    11      0+     10-      7-      0+      0-      0+      0+     13+     12+      1- |10225017
+   9 Pop Cristian                   5d RO  VaDo    40     6   400   235    11      4-      0+      0-      0+      0+     11+     13+      0+      1-      6- |10333389
+  10 Schoffel David                 6d DE  BN      40     6   398   236    13      0+      8+      0-     12+     11+      0-      2-      0-      0+      0+ |10274198
+  11 Mateescu Robert                6d RO  Bucu    40     6   398   235    14     12+      0-      0+      4+     10-      9-      0+      0+      0+      2- |10486817
+  12 Rehm Robert                    5d NL  Alkm    40     6   397   233    15     11-      0+      0+     10-      0+      0+      0+      1-      8-      0+ |10237601
+  13 Janssen Frank                  6d NL  Amvn    40     6   396   233    16      0+      6+      1-      0+      0-      0+      9-      8-      0+      0+ |10298596
+  14 Danek Vladimir                 6d CZ  Pra     40     6   395   232    17      5-      0+      2-      0+      0-      0+     16+      0+      4-      0+ |10213016
+  15 Heshe Thomas                   5d DK  AAR     40     7   390   271    18      0+      0+      5-      0+      0+      0+      0-      0-      0+      0+ |10413194
+  16 Boon Mark                      6d NL  Amst    40     6   389   229    19      0-      0+      0+      0+      0-      0-     14-      0+      0+      0+ |10262604

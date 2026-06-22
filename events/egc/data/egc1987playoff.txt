@@ -1,0 +1,7 @@
+; EV[European Go Congress 1987 - Playoff]
+; PC[FR, Grenoble]
+; DT[1987-08-08,1987-08-08]
+  1 Macfadyen Matthew     6d UK xxx 2 1 3+ 2+    
+  2 Lazarev Alexej        6d SU xxx 1 2 4+ 1-
+  3 Donzet Frederic       5d FR xxx 1 3 1- 0=
+  4 Zeijst Rob_van        6d NL xxx 0 3 2- 0=

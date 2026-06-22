@@ -1,7 +1,7 @@
 ; TC[E211123A]
 ; CL[A]
 ; EV[Online European Championship 2021]
-; PC[XX, OGS: https://online-go.com]
+; PC[EU, OGS: https://online-go.com]
 ; DT[2021-11-23,2021-12-05]
 ; HA[h9]
 ; KM[6.5]

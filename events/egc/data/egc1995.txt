@@ -1,0 +1,21 @@
+; EV[40th European Go Congress 1995 - Main tournament]
+; PC[PL, Tuchola]
+; DT[1995-07-22,1995-08-05]
+;
+;Pl  Name                Cy   Gr    1    2    3    4    5    6    7    8    9   10    MM Pt  SOS SODOS
+   1 Guo Juan                       7D NL  xxx     33    10   294   294     1      0+      0+      0+      3+      0+      0+      0+      2+      5+      4+
+   2 Gerlach Christoph              5D DE  xxx     30     7   301   205     4      0+     10+      0+      0-     13+      5+      4+      1-      7+      0-
+   3 Colmez Pierre                  5D FR  xxx     30     7   295   200     5      0+      0+     16+      1-      0+      0+      0-      9-      0+     14+
+   4 Seailles Jeff                  5D FR  xxx     30     7   293   203     6      0-      0+      0+     11+      8+      7+      2-     12+     10+      1-
+   5 Macfadyen Matthew              6D UK  xxx     30     7   291   200     7      0+      0+     11+      0-      6+      2-      0+      0+      1-     16+
+   6 Groot Matti                    4D NL  xxx     30     7   290   200     8     13+     15+      0-      0+      5-      0+     12-      0+      0+      0+
+   7 Danek Vladimir                 5D CZ  xxx     30     7   288   197     9      0+      0-      0+      0+      0+      4-      0+      0+      2-      0+
+   8 Muller Cas                     5D NL  xxx     30     7   287   200    10      0-      0+      0+     16+      4-     14-      0+      0+      0+      0+
+   9 Bisca Mihai                    5D RO  xxx     30     7   283   197    11     12+      0-      0+      0+      0+      0-      0+      3+      0-     10+
+  10 Ghioc Constantin               4D RO  xxx     29     6   292   171    12      0+      2-      0+     15+      0+      0-     13+     14+      4-      9-
+  11 Crasmaru Marcel                5D RO  xxx     29     6   286   165    13      0+      0+      5-      4-      0+      0+      0+      0+      0-      0-
+  12 Firnhaber Marco                4D DE  xxx     29     6   285   168    14      9-      0+      0+      0-      0+      0+      6+      4-     13-      0+
+  13 Schuster Malte                 5D DE  xxx     29     6   285   164    15      6-      0+      0+      0+      2-      0+     10-      0+     12+      0-
+  14 Rehm Robert                    5D NL  xxx     29     6   284   169    16      0+      0-      0-      0+     16+      8+      0+     10-      0+      3-
+  15 Pliushch Yurii                 5D UA  xxx     29     6   284   168    17      0+      6-      0+     10-      0-      0+      0+      0-      0+      0+
+  16 Matoh Leon                     5D SI  xxx     29     6   284   165    18      0+      0+      3-      8-     14-      0+      0+      0+      0+      5-

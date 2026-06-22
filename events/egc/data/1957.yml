@@ -1,0 +1,11 @@
+website: https://www.eurogofed.org/results/congress/egc1957.htm
+location: Cuxhaven
+country: DE
+notes: The player with the highest "Class" after the tournament was the first European Champion.
+stages:
+ - type: classification
+   date: 1957-07-28 - 1957-08-11
+   order:
+   - Fritz Dueball (DE)
+   - Fritz John (DE)
+   - X Grebe (DE)

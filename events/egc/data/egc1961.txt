@@ -1,0 +1,9 @@
+; EV[European Go Congress 1961 - Championship Group]
+; PC[AT, Baden bei Wien]
+; DT[1961-07-30,1961-08-13]
+   1 Alvensleben Wichard_von       30k DE  xxx      4      2-      6+      5+      4+      3+
+   2 Ciessow Gunter                30k DE  xxx      4      1+      5+      3+      6-      4+
+   3 Grebe Leonhard                30k DE  xxx    2.5      6+      4+      2-      5=      1-
+   4 Susan Friedrich               30k AU  xxx      2      5+      3-      6+      1-      2-
+   5 John Fritz                    30k DE  xxx    1.5      4-      2-      1-      3=      6+
+   6 Gruenauer Wilhelm             30k AU  xxx      1      3-      1-      4-      2+      5-

@@ -1,0 +1,12 @@
+; EV[European Go Congress 1974 - Championship Group]
+; PC[YU, Zagreb]
+; DT[1974-07-14,1974-07-26]
+   1 Wimmer Manfred                30k AT  xxx      8      0=      9+      8+      7+      6+      5+      4+      3+      2+
+   2 Kitsos Michael                30k GR  xxx      5      9+      7+      5-      3-      0=      8+      6+      4+      1-
+   3 Goddard Tony                  30k UK  xxx      4      8-      6-      4-      2+      9+      7+      5+      1-      0=
+   4 Prescott Paul                 30k UK  xxx      4      7-      5+      3+      0=      8-      6+      1-      2-      9+
+   5 Bizjak Igor                   30k YU  xxx      4      6-      4-      2+      9+      7+      1-      3-      0=      8+
+   6 Vries Henk_de                 30k NL  xxx      4      5+      3+      0=      8+      1-      4-      2-      9+      7-
+   7 Zanten Rob_van                30k NL  xxx      4      4+      2-      9+      1-      5-      3-      0=      8+      6+
+   8 Isele Wolfgang                30k DE  xxx      2      3+      0=      1-      6-      4+      2-      9-      7-      5-
+   9 Primoz Pecenko                30k YU  xxx      1      2-      1-      7-      5-      3-      0=      8+      6-      4-

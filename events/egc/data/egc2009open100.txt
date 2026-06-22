@@ -1,0 +1,114 @@
+; TC[E090727B]
+; CL[A]
+; EV[European Go Congress 2009 - Main Tournament - 1st week]
+; PC[NL, Groningen]
+; DT[2009-07-27,2009-08-07]
+; HA[h9]
+; KM[7.5]
+; TM[150]
+; CM[ (submitted by andreengels)]
+;.
+; EGC 2009 Main Tournament                                                                                               
+; 26/07/2009                                                                                                             
+;                                                                                                                        
+; Pl Name                    Grd  Co Club  MMS  SOS  EXT                                                                   
+   1 Kim Eunkuk                     7d KR  Seo     42     8   408    51  14+/b0  10+/w0   7+/b0   5-/w0  28+/b0  11+/w0   3+/b0   6+/w0   2+/b0   4-/w0 |15425102
+   2 Hwang In-seong                 7d KR  B       42     8   408    44  37+/b0   8+/w0   6+/b0   3-/w0  14+/w0   4+/b0   5+/b0  15+/w0   1-/w0  13+/w0 |14201286
+   3 Kim Joon-sang                  7d KR  Seo     42     8   407    51  30+/w0  11+/w0   4+/b0   2+/b0   5-/b0   9+/w0   1-/w0  13+/b0  26+/b0   7+/b0 |15033370
+   4 Oh Chi_Min                     7d KR  Ber     42     8   403    36  27+/b0  26+/b0   3-/w0  17+/w0  12+/w0   2-/w0  29+/b0  11+/w0  10+/b0   1+/b0 |15213374
+   5 Jun Sang-youn                  7d KR  Seo     41     7   407    57  61+/w0   9+/b0  13+/b0   1+/b0   3+/w0   6-/b0   2-/w0   7-/w0  20+/w0  17+/b0 |15498153
+   6 Dinerstein Alexandr            3p RU  16Kz    41     7   404    42  19+/w0  17+/b0   2-/w0  27+/b0  10+/b0   5+/w0  28+/w0   1-/b0   7-/w0  16+/w0 |10313237
+   7 Taranu Catalin                 5p RO  Bucu    41     7   402    30  29+/w0  59+/b0   1-/w0  12-/b0  62+/w0  14+/b0   8+/w0   5+/b0   6+/b0   3-/w0 |10586785
+   8 Mero Csaba                     6d HU  BuPe    41     7   400    67  31+/w0   2-/b0  16+/w0  26+/w0   9-/b0  63+/w0   7-/b0  21+/w0  18+/b0  10+/w0 |10225875
+   9 Pop Cristian                   7d RO  Bucu    41     7   397    21  32+/b0   5-/w0  49+/b0  59+/w0   8+/w0   3-/b0  10-/b0  60+/b0  15+/w0  23+/b0 |10333389
+  10 Zeijst Rob_van                 7d NL  Toky    40     6   403    30  34+/w0   1-/b0      0+  19+/w0   6-/w0  16+/b0   9+/w0  14+/w0   4-/w0   8-/b0 |10337382
+  11 Zhang Yanqi                    6d CN  Han     40     6   400    53  39+/w0   3-/b0  60+/w0  30+/b0  29+/w0   1-/b0  12+/w0   4-/b0  16-/b0  36+/w0 |10998416
+  12 Debarre Thomas                 5d FR  67Se    40     6   399   116  13-/w0  48+/b0  18+/w0   7+/w0   4-/b0  39+/w0  11-/b0  41+/b0  17-/w0  33+/b0 |12950872
+  13 Chang_Yuan Jung                1p TW  Taic    40     6   398    23  12+/b0  15+/w0   5-/w0  28-/b0      0+  34+/w0  30+/b0   3-/w0  29+/w0   2-/b0 |15449104
+  14 Burzo Cornel                   6d RO  BaMa    40     6  397=    64   1-/w0  55+/b0  32+/w0  64+/w0   2-/b0   7-/w0  40+/b0  10-/b0  38+/b0  35+/b0 |10325249
+  15 Noguchi Motoki                 6d JP  37To    40     6  396=    69  28+/w0  13-/b0  58+/w0  29-/b0  33+/w0  17+/b0  23+/w0   2-/b0   9-/b0  39+/b0 |12874356
+  16 Savolainen Javier-Aleksi       4d FI  HGK     40     7   396   138  67+/w0  61+/b0   8-/b0  71+/b0  18+/w0  10-/w0  22+/w0  19+/b0  11+/w0   6-/b0 |14001537
+  17 Shikshin Ilja                  7d RU  16Kz    40     6   396    22  22+/b0   6-/w0      0+   4-/b0  58+/b0  15-/w0  69+/w0  32+/b0  12+/b0   5-/w0 |12013342
+  18 Teuber Benjamin                6d DE  HH      40     6   392    12  26-/w0  68+/b0  12-/b0  65+/b0  16-/b0  46+/w0  36+/w0  30+/w0   8-/w0  27+/b0 |10437174
+  19 Fenech Antoine                 5d FR  67Se    40     6  391=    71   6-/b0  36+/w0  31+/w0  10-/b0  52+/b0  28-/w0      0+  16-/w0  40+/w0  30+/b0 |10349350
+  20 Jabarin Ali                    5d IL  TAv     40     7   390    56  48-/w0  79+/b0  38+/b0  31-/b0  65+/w0  35+/w0  27+/w0  28+/b0   5-/b0  29+/w0 |14637810
+  21 Simara Jan                     5d CZ  Zli     40     6   389    61  59-/w0  49-/w0  72+/b0  50+/w0  27-/b0  42+/b0  31+/w0   8-/b0  32+/w0  28+/b0 |10749860
+  22 Mitic Nikola                   5d RS  Nis     40     6  385=    39  17-/w0  50+/b0  27-/w0      0-  66+/b0  43+/w0  16-/b0      0+  62+/w0  26+/w0 |10801923
+  23 Shiu Chang-li                  6d TW  Taip   39=     5   371    24      0=      0=      0=      0+      0+  27+/w0  15-/b0  24+/b0  25+/b0   9-/w0 |15450105
+  24 Eijkhout Michiel               6d NL  Leid   39=     4   356     5      0=      0=      0=      0=      0=      0+  76+/w0  23-/w0  80+/b0  51+/b0 |10486410
+  25 Uno Shigehiko                  5d JP  Tok    39=     4  354=    13      0=      0=      0=      0=      0=      0+      0+  51+/b0  23-/w0  53+/w0 |10413964
+  26 Janssen Frank                  6d NL  Alme    39     5   399    56  18+/b0   4-/w0  40+/w0   8-/b0  35+/w0  29-/w0  62+/b0  42+/b0   3-/w0  22-/b0 |10298596
+  27 Mitic Dusan                    5d RS  Nis     39     5  398=    92   4-/w0  44+/w0  22+/b0   6-/w0  21+/w0  23-/b0  20-/b0  74+/b0  41+/b0  18-/w0 |10649507
+  28 Groenen Geert                  6d NL  Dha     39     5  397=    48  15-/b0  41+/w0  90+/b0  13+/w0   1-/w0  19+/b0   6-/b0  20-/w0  64+/b0  21-/w0 |10501216
+  29 Bogackyj Dmytro                6d UA  Kyiv    39     5   397    59   7-/b0      0+  34+/w0  15+/w0  11-/b0  26+/b0   4-/w0  33+/w0  13-/b0  20-/b0 |10250867
+  30 Galchenko Mykhajlo             5d UA  Kyiv    39     5  396=    93   3-/b0  52+/w0  39+/b0  11-/w0  42+/w0  31+/b0  13-/w0  18-/b0  37+/b0  19-/w0 |10433236
+  31 Pomstra Willem-Koen            5d NL  Arnh    39     5   392    52   8-/b0  35+/w0  19-/b0  20+/w0      0+  30-/w0  21-/b0  47+/w0  33-/w0  77+/b0 |10249602
+  32 Lin Viktor                     5d AT  Wien    39     5   391    67   9-/w0  38+/w0  14-/b0  62-/b0  45+/w0  68+/b0  63+/w0  17-/w0  21-/b0  74+/b0 |14501256
+  33 Brouwer Peter                  5d NL  Amst    39     6   387    48  88+/b0  58-/b0  94+/w0  61+/w0  15-/b0  44+/w0  34+/w0  29-/b0  31+/b0  12-/w0 |10986514
+  34 Radmacher Bernd                5d DE  Mee     39     5  386=    57  10-/b0  65+/w0  29-/b0      0+  36+/w0  13-/b0  33-/b0  84+/b0  35-/w0  76+/w0 |10333675
+  35 Manojlovic Lazar               4d RS  KGRa    39     6   386    92  43+/w0  31-/b0  73+/w0      0+  26-/b0  20-/b0      0+  69+/b0  34+/b0  14-/w0 |12301652
+  36 Salignon Jerome                4d FR  13Ma    39     6   385   103  63+/w0  19-/b0      0+  40+/w0  34-/b0      0+  18-/b0      0+  60+/w0  11-/b0 |10825628
+  37 Jasiek Robert                  5d DE  B       39     5   385    47   2-/w0      0-      0+  42-/b0  46-/w0  59+/w0  45+/b0      0+  30-/w0  70+/w0 |10213203
+  38 Serban Mihai_Valentin          4d RO  Bist    39     6  384=    93  66+/w0  32-/b0  20-/w0      0+  40-/b0      0+  46+/b0  63+/w0  14-/w0  69+/b0 |13062258
+  39 Nemlij Igor                    5d RU  16Kz    39     5   383    39  11-/b0      0+  30-/w0      0+  60+/w0  12-/b0  41-/w0      0+  58+/b0  15-/w0 |10886359
+  40 Yoshihara Kazuo                6d JP  Chi     39     6   383    15      0+      0+  26-/b0  36-/b0  38+/w0      0+  14-/w0      0+  19-/b0  67+/w0 |14550074
+  41 Stodte Christian               4d DE  HH      39     6   380    85      0+  28-/b0      0+  58-/b0      0+      0+  39+/b0  12-/w0  27-/w0  65+/b0 |10425107
+  42 Bojanic Milos                  5d RS  Beo     39     6  379=    32      0-      0+  44+/w0  37+/w0  30-/b0  21-/w0  73+/b0  26-/w0      0+  64+/w0 |10337085
+  43 Giedrojc Krzysztof             4d PL  Wars    39     6   378    42  35-/b0  47+/w0  87+/b0      0-      0+  22-/b0      0-      0+      0+  62+/w0 |10437834
+  44 Verhagen Rudi                  5d NL  Ensc    39     6   377    33      0+  27-/b0  42-/b0      0+      0+  33-/b0  66+/w0  58-/b0      0+      0+ |10213610
+  45 Knauf Torsten                  3d DE  SU      39     7  376=    92      0+  89+/b0  61-/w0  88+/b0  32-/b0  65+/b0  37-/w0  66+/w0      0+  60+/w0 |10962963
+  46 Lajunen Pekka                  3d FI  Hels    39     7  376=    90      0+      0-  97+/b0  87+/w0  37+/b0  18-/b0  38-/w0      0+      0+  59+/w0 |13874630
+  47 Milczewski Peter_von           3d DE  M       39     7   375    92      0+  43-/b0      0+      0-      0+      0+  61+/w0  31-/b0  68+/b0  58+/w0 |10250207
+  48 Koster Bram                    4d NL  Utre    39     5   370    30  20+/b0  12-/w0      0-      0+      0+      0-  70+/w0      0=  81+/b0      0= |12862817
+  49 Lin Hsiaotung                  6d TW  Taip   38=     3   360    14  62+/w0  21+/b0   9-/w0  63-/b0  70+/b0      0=      0=      0=      0=      0= |15001910
+  50 Kai Naoyuki                    6d JP  Yok    38=     3   358     4  73+/b0  22-/w0      0+  21-/b0  64+/b0      0=      0=      0=      0=      0= |10449824
+  51 Wei Hongyu                     5d CN  Che    38=     3   355    12      0=      0=      0=      0=      0=      0+      0+  25-/w0      0+  24-/w0 |15462106
+  52 Kaper Erik                     4d NL  Amst   38=     3   354    38      0+  30-/b0      0+      0+  19-/w0      0=      0=      0=      0=      0= |10386970
+  53 Matushkin Alexandr             3d RU  18Iz   38=     5   354    12      0=      0=      0=      0+  85-/w0      0+      0+      0+  78+/b0  25-/b0 |12362284
+  54 Cernuda Ignacio                4d ES  Mad    38=     3   350     0      0=      0=      0=      0=      0=  74-/b0      0+  80-/w0      0+      0+ |10598720
+  55 Kaitschick Stefan              5d DE  HH     38=     2  343=    12      0+  14-/w0      0+      0=      0=      0=      0=      0=      0=      0= |10249514
+  56 Ohlenbusch Arne_Steen          3d DK  xxx    38=     3  334=     8      0=      0=      0=      0=      0=      0=      0=      0+      0+      0+ |13701237
+  57 Riedeman Dick                  3d NL  Delf   38=     3   332     7      0=      0=      0=      0=      0=      0=      0=      0+      0+      0+ |10425426
+  58 Urtela Mika                    4d FI  Hels    38     5  388=    90  89+/b0  33+/w0  15-/b0  41+/w0  17-/w0  67+/b0  60-/b0  44+/w0  39-/w0  47-/b0 |13786795
+  59 Audouard Pierre                5d FR  13Ma    38     4  386=    66  21+/b0   7-/w0      0+   9-/b0  63-/w0  37-/b0  84-/w0      0+      0+  46-/b0 |10437284
+  60 Jipp Thomas                    4d DE  HH      38     5   386    79  69+/b0  71+/w0  11-/b0      0+  39-/b0      0+  58+/w0   9-/w0  36-/b0  45-/b0 |12001825
+  61 Lopatjuk Kostjantyn            5d UA  Riv     38     4   385    36   5-/b0  16-/w0  45+/b0  33-/b0      0+  69-/w0  47-/b0  78-/w0      0+      0+ |10849190
+  62 Brunner Vit                    4d CZ  Brno    38     5  384=    86  49-/b0      0+      0+  32+/w0   7-/b0      0+  26-/w0  67+/w0  22-/b0  43-/b0 |12513842
+  63 Jacenko Dmytro                 5d UA  Kyiv    38     5  381=    29  36-/b0      0+      0+  49+/w0  59+/b0   8-/b0  32-/b0  38-/b0  77-/w0      0+ |10286870
+  64 Berben Tobias                  4d DE  HH      38     5  380=    75      0-  76+/w0      0+  14-/b0  50-/w0  72+/b0  75+/b0      0+  28-/w0  42-/b0 |10662729
+  65 Miyazaki Nobuyoshi             5d JP  Oka     38     5   380    24  79+/b0  34-/b0      0+  18-/w0  20-/b0  45-/w0      0+      0+      0+  41-/w0 |12598509
+  66 Billouet Simon                 4d FR  35Re    38     5  379=    50  38-/b0      0-      0+  75+/b0  22-/w0      0+  44-/b0  45-/b0      0+      0+ |10462408
+  67 Drost Andreas                  4d NL  Leid    38     5   378    52  16-/b0  72-/b0      0+      0+  71+/b0  58-/w0      0+  62-/b0      0+  40-/b0 |10525218
+  68 Siivola Matti                  5d FI  HGK     38     5   378    25      0+  18-/w0      0-  84+/b0  90+/b0  32-/w0      0-      0+  47-/w0      0+ |10286782
+  69 Rehm Robert                    5d NL  Amst    38     5   378    22  60-/w0  94-/w0      0+      0+      0+  61+/b0  17-/b0  35-/w0  84+/b0  38-/w0 |10237601
+  70 Paga Pierre                    3d FR  75Op    38     6  377=    95      0+      0-  83+/w0  73+/b0  49-/w0      0+  48-/b0      0+  71+/w0  37-/b0 |13901283
+  71 Goetzfried Andreas             4d LU  Lux     38     5   375    32      0+  60-/b0      0+  16-/w0  67-/w0  84-/w0      0+      0+  70-/b0      0+ |14033206
+  72 Holappa Antti                  3d FI  PoGo    38     6   374    76      0+  67+/w0  21-/w0      0-      0+  64-/w0      0+      0-      0+      0+ |12386869
+  73 Siukola Mikko                  4d FI  YliG    38     5   374    41  50-/w0      0+  35-/b0  70-/w0      0+      0+  42-/w0      0-      0+      0+ |13913075
+  74 Eerbeek Alexander              3d NL  xxx     38     6   372    57      0-      0-      0+      0+      0+  54+/w0      0+  27-/w0      0+  32-/w0 |13501356
+  75 Hall T_Mark                    4d UK  Lndn    38     5   372    30      0-      0-      0+  66-/w0  80+/b0      0+  64-/w0      0-      0+      0+ |10286023
+  76 Gonze Francois                 3d BE  LlN     38     6  370=    67      0+  64-/b0      0+      0-      0+  85+/b0  24-/b0      0+      0+  34-/b0 |14613654
+  77 Lisy Pavol                     1d SK  DSta    38     8   370   112      0+      0+  82+/b0      0+  88-/b0      0+      0+  93+/b0  63+/b0  31-/w0 |12686597
+  78 Jong Merijn_de                 2d NL  Utre    38     7   370    86      0+  82+/b0      0-      0+  91-/b0      0+      0+  61+/b0  53-/w0      0+ |10449472
+  79 Vos Dave_de                    4d NL  Tilb    38     5  369=    28  65-/w0  20-/w0      0-      0-      0+  81-/b0      0+      0+      0+      0+ |10249613
+  80 Kral Maros                     2d SK  Kosi    38     7  367=    78      0-      0+      0+      0+  75-/w0      0+      0+  54+/b0  24-/w0  96+/b0 |12537041
+  81 Salom Ludek                    2d CZ  Pra     38     7   366    74      0+      0-      0+      0+  87-/w0  79+/w0  85+/w0      0+  48-/w0      0+ |10586103
+  82 Kuroda Hideo                   3d JP  Tok     38     6  363=    18      0-  78-/w0  77-/w0      0+      0+      0+  93-/b0      0+  92+/b0  95+/w0 |14037375
+  83 Petri Klaus                    3d DE  DA      38     5  352=    11      0-      0+  70-/b0      0-      0=      0+      0+      0+      0=  86+/b0 |10662157
+  84 Kraemer Lukas                  3d DE  BN     37=     5  369=    86      0+      0-      0+  68-/w0      0+  71+/b0  59+/b0  34-/w0  69-/w0      0= |14698739
+  85 Lewerenz Bernd                 2d DE  KI     37=     6   357    38      0=      0+      0+      0+  53+/b0  76-/w0  81-/b0      0-      0+      0+ |12549064
+  86 Rovio Teemu                    2d FI  Kanp   37=     6   357    33      0-      0+      0+      0-      0+      0=      0+      0+      0+  83-/w0 |10298783
+  87 Fujii Nobuhisa                 5d JP  Osa    37=     2  355=     0  94+/b0      0-  43-/w0  46-/b0  81+/b0      0=      0=      0=      0=      0= |14333506
+  88 Urabe Yoshimichi               4d JP  Kam    37=     2   354    12  33-/w0      0-      0+  45-/w0  77+/w0      0=      0=      0=      0=      0= |15037374
+  89 Chang Hsiao-Yin                5d TW  Tai    37=     2   353     4  58-/w0  45-/w0      0+      0-      0+      0=      0=      0=      0=      0= |15037418
+  90 Imamura Toru                   4d FR  38Gr   37=     2  352=    31      0+      0-  28-/w0      0+  68-/w0      0=      0=      0=      0=      0= |10549407
+  91 Mallon Willem                  4d NL  Eind   37=     2   350    12      0-      0-      0+      0-  78+/w0      0=      0=      0=      0=      0= |10250801
+  92 Jevtic Nikola                  4d RS  KGRa   37=     2   348     0      0=      0=      0=      0=      0=      0-      0-      0+  82-/w0      0+ |10374089
+  93 Ohlenbusch Soeren              3d DE  Hei    37=     3  346=     9      0=      0=      0=      0=      0=  95+/b0  82+/w0  77-/w0      0-      0+ |13749241
+  94 Gelderen Vincent_van           4d NL  Rott   37=     1  345=    26  87-/w0  69+/b0  33-/b0      0=      0=      0=      0=      0=      0=      0= |10201609
+  95 Ambagts Zjev                   3d NL  Dha    37=     3   345    12      0=      0=      0=      0=      0=  93-/w0  98+/b0      0+      0+  82-/b0 |10433423
+  96 Ente Lisa                      3d DE  H      37=     3  343=     3      0=      0=      0=      0=      0=  98+/b0      0-      0+      0+  80-/w0 |10862962
+  97 Sekiguchi Kiyoshi              3d JP  Yok    37=     3   343    16      0-      0+  46-/w0      0+      0+      0=      0=      0=      0=      0= |12325654
+  98 Garcia_de_la_Banda Juan        3d ES  tfe    37=     3  342=     6      0=      0=      0=      0=      0=  96-/w0  95-/w0      0+      0+      0+ |10533710
+  99 Marko Peter                    2d HU  BuPe   37=     4  332=    27      0+      0-      0+      0+      0+      0=      0=      0=      0=      0= |14513895
+ 100 Kashevnik Mikhail              2d RU  78SP   37=     3   325    14      0=      0=      0=      0=      0=      0=      0+      0+      0+      0= |10225028

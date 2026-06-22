@@ -1,0 +1,10 @@
+location: Altenmarkt
+country: AT
+website: https://www.eurogofed.org/results/congress/egc1958.htm
+stages:
+ - type: classification
+   date: 1958-08-03 - 1958-08-16
+   order:
+   - Fritz Dueball (DE)
+   - Dr Lenz (DE)
+   - Fritz John (DE)

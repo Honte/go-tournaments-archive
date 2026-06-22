@@ -1,0 +1,5 @@
+; EV[European Go Congress 1976 - Championship Group]
+; PC[UK, Cambridge]
+; DT[1976-08-21,1976-08-21]
+   1 Merissert Patrick              4d FR  xxx      1        2+
+   2 Goddard Tony                   4d UK  xxx      0        1-

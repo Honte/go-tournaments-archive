@@ -1,0 +1,20 @@
+; EV[European Go Congress 1992 - Main tournament]
+; PC[UK, Canterbury]
+; DT[1992-07-25,1992-08-08]            
+;  NO  NAME                 CY          GR    1    2    3    4    5    6    7    8    9   10     WIN   MMS   CUSS
+   1 Lazarev Alexej                 6D RU  xxx     10     7    77     4      0+      0+     12+      4+      2+      3+      0-      0-     10+      6-
+   2 Eeden Gilles_van               5D NL  xxx     10     7    74     5      0+     14+      0+      0+      1-      5+      3+      0-      4-      8+
+   3 Groenen Geert                  4D NL  xxx     10     7    74     5      0+      0+      0+      0+      8+      1-      2-      5+      0-     12+
+   4 Janssen Frank                  6D NL  xxx     10     7    71     7     13+      0+      0+      1-      0-      7+      0+      8+      2+      0-
+   5 Eijkhout Michiel               5D NL  xxx     10     7    67     8      0-      0+      0+     12+      0+      2-      6+      3-     11+     10+
+   6 Rittner Egbert                 5D DE  xxx     10     7    66     9     10+      0+      0-      9-      0+      0+      5-      0+     15+      1+
+   7 Bogdanov Viktor                6D RU  xxx     10     7    64    10      0+      0-      0+      0-      0+      4-      0+      0+      0+     14+
+   8 Florescu Ion                   5D RO  xxx      9     6    70    11      0+      0+      0+      0+      3-      0-     11+      4-      0+      2-
+   9 Rehm Robert                    5D NL  xxx      9     6    68    12      0+      0-      0+      6+     13+     11+      0-     10-     16+      0-
+  10 Gherman Sorin                  5D RO  xxx      9     6    65    13      6-      0+      0+      0-      0+     12+      0+      9+      1-      5-
+  11 Olsson Ulf                     4D SE  xxx      9     6    65    13      0+      0-      0+      0+      0+      9-      8-      0+      5-      0+
+  12 Macfadyen Matthew              6D UK  xxx      9     6    64    15      0+      0+      1-      5-      0+     10-      0+      0+     13+      3-
+  13 Gerlach Christoph              4D DE  xxx      9     6    64    15      4-      0+      0+      0+      9-      0+      0+      0-     12-      0+
+  14 Roads Francis                  4D UK  xxx      9     4    63    17      0=      2-      0+      0=      0+      0=      0+      0+      0=      7-
+  15 Taranu Catalin                 4D RO  xxx      9     6    59    18      0-      0+      0-      0+     16-      0+      0+      0+      6-      0+
+  16 Schmid Gerhard                 3D DE  xxx      9     7    59    18      0+      0-      0+      0+     15+      0-      0+      0+      9-      0+

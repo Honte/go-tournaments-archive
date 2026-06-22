@@ -3,9 +3,26 @@ notes: After 7 rounds of Open best 6 europeans qualified to quarterfinal and nex
 stages:
   - type: tournament
     file: egc2013.txt
+    name: Championship
     scoringColumns:
       - wins
       - place
     breakers:
       - place
     findSharedPlaces: true
+  - type: tournament
+    file: egc2013open100.txt
+    name: EGC Open
+    notes: Top 100 players of main tournament. Games against other players changed to 0+ and 0-
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+    breakers:
+      - mms
+      - sos
+    columns:
+      - wins
+    excluded: true
+    collapsed: true    
+    findSharedPlaces: true    

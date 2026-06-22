@@ -1,0 +1,7 @@
+; EV[European Go Congress 1984 - Main tournament]
+; PC[CH, Porrentruy]
+; DT[1984-08-04,1984-08-04]
+  1 Macfadyen Matthew     6d UK xxx 2 1 3+ 2+ 
+  2 Colmez Pierre         4d FR xxx 1 2 4+ 1-
+  3 Rittner Egbert        4d DE xxx 0 3 1- 0=
+  4 Rehm Robert           5d NL xxx 0 3 2- 0=

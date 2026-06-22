@@ -1,0 +1,110 @@
+; CL[A]
+; EV[43rd European Go Congress (rounds 1-5)]
+; PC[SK, Podbanske]
+; DT[1999-07-25,1999-08-07]
+; HA[h9]
+; KM[7.5]
+; TM[3h15]
+;
+;
+; comment: pl201 professed a wrong grade 1k
+   1 Dinerstein Alexandr              6d RU  16Kz    33    10   295   295   68+/w    3+/b   15+/b   13+/w    5+/b   19+/w   14+/w    2+/b    4+/w    6+/w |10313237
+   2 Florescu Ion                     6d RO  Pits    31     8   297   235   17+/b   14-/w   51+/b   22+/b   23+/w    8+/w    3+/b    1-/w    5+/b   11+/w |10998163
+   3 Surin Dmitrij                    5d RU  37Iv    31     8   296   232   42+/b    1-/w   36+/w    9+/b   30+/b   17+/b    2-/w   10+/w   16+/b    4+/w |10825254
+   4 Lee Hyuk                         7d KR  77Mo    30     7   297   204   12+/w   37+/b   14-/b    6+/w   49+/b    7+/b   13+/w    9+/w    1-/b    3-/b |10413216
+   5 Soldan Leszek                    6d PL  Wars    30     7   294   201   44+/b   51+/b   21+/w   18+/w    1-/w   13-/b   29+/b    7+/b    2-/w   24+/w |10449560
+   6 Danek Vladimir                   6d CZ  Pra     30     7   288   196   15-/b   96+/w   84+/w    4-/b   48+/w   20+/b   18+/w   14+/b   13+/w    1-/b |10213016
+   7 Groenen Geert                    5d NL  Leid    30     7   287   198    9+/b   15-/w   85+/b   62+/b   18+/b    4-/w   31+/b    5-/w   21+/w   13+/w |10501216
+   8 Bogackyj Dmytro                  6d UA  Kyiv    30     7   287   197   20-/w   55+/b   31+/b   39+/w   15+/w    2-/b    9-/b   60+/w   18+/b   14+/w |10250867
+   9 Galchenko Mykhajlo               4d UA  Kyiv    30     7   285   194    7-/w      0+   63+/b    3-/w   57+/b   30+/w    8+/w    4-/b   15+/b   22+/b |10433236
+  10 Khmyrov Andrej                   6d RU  77Mo    30     7   281   195   63+/b   60-/w   30-/w   94+/b   56+/b   32+/w   15+/w    3-/b   17+/b   16+/w |10898019
+  11 Kaper Erik                       4d NL  Amst    29     4   256   110      0=      0=      0=      0=      0=   53+/b   44+/w   64+/w   34+/b    2-/b |10386970
+  12 Holecek David                    4d CZ  Pra     29     4   256   111    4-/b   70+/w   61+/b   49+/w   14+/w      0=      0=      0=      0=      0= |10250504
+  13 Gerlach Christoph                6d DE  H       29     6   296   173   40+/w   36+/b   20+/w    1-/b   16+/b    5+/w    4-/b   19+/w    6-/b    7-/b |10225017
+  14 Pocsai Tibor                     5d HU  BuPe    29     6   294   171   67+/w    2+/b    4+/w   32+/w   12-/b   65+/b    1-/b    6-/w   29+/b    8-/b |10425217
+  15 Laatikainen Vesa                 5d FI  HGK     29     6   293   170    6+/w    7+/b    1-/w   52+/b    8-/b   64+/w   10-/b   40+/b    9-/w   54+/w |10201015
+  16 Nagy Bela                        4d RO  BaMa    29     6   292   173   22+/b   30+/b   18-/w   25+/w   13-/w   26+/b   24+/b   17+/w    3-/w   10-/b |10386409
+  17 Tautorat Guido                   4d DE  J       29     6   289   168    2-/w   45+/b   95+/b   20+/b   32+/w    3-/w   22+/b   16-/b   10-/w   42+/w |10274231
+  18 Dach Karel                       4d CZ  Plz     29     6   288   168   55+/w   62+/b   16+/b    5-/b    7-/w   50+/w    6-/b   25+/w    8-/w   46+/b |10298508
+  19 Pljushch Jurij                   5d UA  Kyiv    29     6   287   168   32-/b   46+/w   33+/w   34+/b   60+/w    1-/b   23+/w   13-/b   24-/b   38+/w |10449230
+  20 Eijkhout Michiel                 5d NL  Leid    29     6   286   169    8+/b   31+/w   13-/b   17-/w   35+/w    6-/w   43+/b   21-/b   50+/b   40+/b |10486410
+  21 Jasiek Robert                    5d DE  B       29     6   286   169   25+/b   95+/b    5-/b   30-/w   24-/w   35+/b   26+/w   20+/w    7-/b   31+/w |10213203
+  22 Gomenjuk Andrej                  5d RU  77Mo    29     6   286   167   16-/w   77+/b   35+/b    2-/w   41+/b   37+/w   17-/w   33+/b   31+/b    9-/w |10237865
+  23 Cheburakhov Andrej               4d RU  77Mo    29     6   283   168   60-/b   27+/w   66+/w   26+/b    2-/b   33+/w   19-/b   34-/w   41+/w   35+/b |10413832
+  24 Teuber Benjamin                  4d DE  HB      29     6   280   167   36-/w   84-/b   77+/w   63+/b   21+/b   60+/w   16-/w   30+/b   19+/w    5-/b |10437174
+  25 Gheorghiu Valentin               5d RO  Bucu    29     6   278   163   21-/w   69+/w   28+/b   16-/b   33-/b   94+/w   62+/b   18-/b   61+/b   32+/w |10374243
+  26 Verhagen Rudi                    5d NL  Ensc    29     6   278   163   35-/b   38+/b   56+/w   23-/w      0+   16-/w   21-/b   65+/w   39+/w   34+/w |10213610
+  27 Radmacher Bernd                  3d DE  RAT     28     6   266   160      0+   23-/b   58-/b   89+/w      0=   52+/b      0+   54+/w   46-/b   78+/b |10333675
+  28 Habu Koichiro                    5d PL  Krak    28     4   261   108   37-/b   44+/w   25-/w      0+   64-/b   42+/w   66+/w      0=      0=      0= |10837827
+  29 Giedrojc Krzysztof               5d PL  Wars    28     3   256    82      0=      0=      0=      0=      0=   54+/b    5-/w   79+/b   14-/w   53+/b |10437834
+  30 Jacenko Dmytro                   5d UA  Kyiv    28     5   288   141   50+/b   16-/w   10+/b   21+/b    3-/w    9-/b   38+/w   24-/w   32-/w   91+/b |10286870
+  31 Burzo Cornel                     4d RO  BaMa    28     5   285   138   56+/b   20-/b    8-/w   71+/w   34+/b   36+/b    7-/w   32+/b   22-/w   21-/b |10325249
+  32 Omori Hirobumi                   5d JP  Yok     28     5   285   140   19+/w   33+/b   34+/w   14-/b   17-/b   10-/b   65+/w   31-/w   30+/b   25-/b |10798062
+  33 Pomstra Willem-Koen              5d NL  Tilb    28     5   281   138   46+/b   32-/w   19-/b   82+/w   25+/w   23-/b   50+/b   22-/w   38-/b   73+/w |10249602
+  34 Nijhuis Emil                     5d NL  Amst    28     5   281   137   85+/w   64+/b   32-/b   19-/w   31-/w   69+/w   39+/b   23+/b   11-/w   26-/b |10213027
+  35 Rehm Robert                      5d NL  Alkm    28     5   281   137   26+/w   49-/b   22-/w   73+/b   20-/b   21-/w   95+/b   43+/w   64+/b   23-/w |10237601
+  36 Mezhov Sergej                    4d RU  77Mo    28     5   280   137   24+/b   13-/w    3-/b   75+/w   58+/b   31-/w   64-/b   76+/w   40-/w   72+/b |10850026
+  37 Siivola Matti                    5d FI  HGK     28     5   278   136   28+/w    4-/w   57+/b   60-/b   38+/b   22-/b   40-/w   59-/w      0+   62+/w |10286782
+  38 Rutgers_Van_der_Loeff Arnoud     3d NL  Leid    28     6   277   163   94+/b   26-/w   42+/b   84+/w   37-/w   41+/b   30-/b   63+/w   33+/w   19-/b |10437427
+  39 Sannes Paal                      3d NO  Osl     28     6   277   163   41+/w   50+/b   64+/w    8-/b   65-/w   59+/b   34-/w   94+/b   26-/b   67+/w |10233047
+  40 Mutabzija Zoran                  5d HR  Zagr    28     5   277   135   13-/b   61-/w   43+/w   57-/w      0+   82+/b   37+/b   15-/w   36+/b   20-/w |10249041
+  41 Sora Sorin                       3d RO  Crai    28     6   276   162   39-/b   72+/w   96+/b   44+/b   22-/w   38-/w   82+/w   45+/b   23-/b   61+/b |10374408
+  42 Ramlow Uwe                       3d DE  F       28     6   275   159    3-/w      0+   38-/w   96+/b   45+/w   28-/b   70+/w   67+/b   60+/w   17-/b |10225248
+  43 Zandveld Peter                   4d NL  Amst    28     5   274   134   51-/w   48-/b   40-/b   99+/w   61+/w   63+/w   20-/w   35-/b   76+/b   66+/w |10250823
+  44 Jankovic Zoran                   5d YU  Kra     28     5   271   128    5-/w   28-/b      0+   41-/w   97+/w      0+   11-/b   50-/w   98+/b   65+/b |10301082
+  45 Grzeschniok Anton                3d DE  F       28     6   270   158      0+   17-/w   71-/b      0+   42-/b   74+/w   73+/w   41-/w   68+/b   64+/w |10250218
+  46 Almukhametov Ildar               4d RU  16Kz    28     5   269   129   33-/w   19-/b      0+   65-/w   69-/b      0+      0+   62+/w   27+/w   18-/w |10849036
+  47 Meyer Friedhelm                  3d DE  F       28     6   263   155      0+   66-/w   82-/b      0+   63-/w   71+/w   97+/b   48-/b   94+/w   60+/b |10237260
+  48 Kuzela Martin                    3d CZ  Zli     28     5   262   134      0+   43+/w   62-/w   61+/b    6-/b   95+/w   60-/b   47+/w      0=      0= |10250702
+  49 Kai Naoyuki                      6d JP  Yok     28     2   252    55      0=   35+/w   60+/b   12-/b    4-/w      0=      0=      0=      0=      0= |10449824
+  50 Uemura Yoshiyuki                 4d FR  75Pa    27     4   273   108   30-/w   39-/w   97+/b   66+/b   62+/w   18-/b   33-/w   44+/b   20-/w      0= |10550617
+  51 Urziceanu Valentin               4d RO  Bucu    27     2   255    54   43+/b    5-/w    2-/w      0-   86+/b      0=      0=      0=      0=      0= |10486839
+  52 Gubas Xaver                      4d SK  Brat    27     3   255    77      0=      0=      0=   15-/w      0-   27-/w   86-/b      0+   87+/b      0+ |10498807
+  53 Mechura Jan                      4d CZ  Plz     27     2   254    54      0=      0=      0=      0=      0=   11-/w   54-/b   86+/w   59+/b   29-/w |10237502
+  54 Poll Fiete-Onno                  4d DE  FCP     27     2   254    53      0=      0=      0=      0=      0=   29-/w   53+/w   27-/b      0+   15-/b |10413106
+  55 Dach Zbynek                      4d CZ  Plz     27     2   254    52   18-/b    8-/w      0+   58-/w   74+/b      0=      0=      0=      0=      0= |10233872
+  56 Uno Shigehiko                    5d JP  Lon     27     2   253    51   31-/w      0+   26-/b   85+/w   10-/w      0=      0=      0=      0=      0= |10413964
+  57 Hora Jan                         3d CZ  Pra     27     3   250    82   71+/w   68+/b   37-/w   40+/b    9-/w      0=      0=      0=      0=      0= |10401083
+  58 Prokop Marek                     3d CZ  Pra     27     3   247    82   61-/b      0+   27+/w   55+/b   36-/w      0=      0=      0=      0=      0= |10262703
+  59 Cieply Martin                    3d CZ  Ost     27     3   246    81      0=      0=      0=      0=      0=   39-/w   87+/b   37+/b   53-/w   86+/b |10801967
+  60 Jipp Thomas                      4d DE  HH      27     4   287   115   23+/w   10+/b   49-/w   37+/w   19-/b   24-/b   48+/w    8-/b   42-/b   47-/w |12001825
+  61 Pedersen Torben                  3d DK  KGK     27     5   279   136   58+/w   40+/b   12-/w   48-/w   43-/b   75+/b   69+/b   66+/b   25-/w   41-/w |10401842
+  62 Simeunovic Zoran                 5d BA  BLu     27     4   278   107   66+/b   18-/w   48+/b    7-/w   50-/b      0+   25-/w   46-/b   79+/w   37-/b |10350087
+  63 Chlodek Janusz                   4d PL  Wodz    27     4   277   105   10-/w   65+/b    9-/w   24-/w   47+/b   43-/b      0+   38-/b   78-/w   99+/b |10398465
+  64 Shepperson Piers                 5d UK  Lndn    27     4   277   106      0+   34-/w   39-/b   95+/w   28+/w   15-/b   36+/w   11-/b   35-/w   45-/b |10201026
+  65 Berben Tobias                    3d DE  HH      27     5   273   132      0+   63-/w      0+   46+/b   39+/b   14-/w   32-/b   26-/b   74+/w   44-/w |10662729
+  66 Holecek Jiri                     4d CZ  Pra     27     4   273   106   62-/w   47+/b   23-/b   50-/w      0+   67+/b   28-/b   61-/w   99+/w   43-/b |10225501
+  67 Katscher Michael                 5d DE  HH      27     4   271   107   14-/b   85-/w      0-   68+/w   75+/b   66-/w   83+/b   42-/w   69+/w   39-/b |12013826
+  68 Barisic Dragan                   5d BA  BLu     27     4   271   101    1-/b   57-/w   75-/w   67-/b   70-/w      0+      0+   95+/w   45-/w      0+ |10398091
+  69 Ekholm Erik                      2d SE  Sto     27     6   269   158      0+   25-/b   98+/b   77+/w   46+/w   34-/b   61-/w   75+/b   67-/b      0+ |10313061
+  70 Wieczorek Wojciech               3d PL  Zory    27     5   268   131   82+/w   12-/b      0-   74-/w   68+/b   99+/w   42-/b      0+   72-/b   96+/w |10325469
+  71 Hilbert David                    3d AT  Graz    27     5   267   131   57-/b      0+   45+/w   31-/b   94-/w   47-/b      0+   78-/w      0+  100+/b |10486861
+  72 Simunkova Martina                2d CZ  Libe    27     6   266   157      0+   41-/b      0-      0+   84+/b   77-/w      0+  100+/w   70+/w   36-/w |10298904
+  73 Fahl Gustav                      1d SE  Sto     27     7   265   181      0+      0+   88+/b   35-/w      0+      0+   45-/b   97+/w   82+/w   33-/b |10386068
+  74 Frehe Renee                      1d NL  Nijm    27     7   265   182      0+   83+/w  100+/w   70+/b   55-/w   45-/b      0+      0+   65-/b      0+ |10313248
+  75 Stodte Christian                 2d DE  HH      27     6   265   156   83+/b   88+/w   68+/b   36-/b   67-/w   61-/w      0+   69-/w      0+      0+ |10425107
+  76 Silt Ondrej                      2d CZ  Zli     27     6   259   152   97-/b      0+      0+      0-      0+      0+   77+/b   36-/b   43-/w      0+ |10337481
+  77 Fittges Klaus                    3d DE  DA      27     4   259   103      0+   22-/w   24-/b   69-/b      0+   72+/b   76-/w      0+      0=      0= |10698523
+  78 Schober Thomas                   2d DE  KA      27     6   257   152      0+      0-      0-      0+   96+/w      0+   94-/w   71+/b   63+/b   27-/w |10898932
+  79 Mezhov Oleg                      1d RU  77Mo    27     7   254   175      0-      0+      0+      0+      0+      0+      0+   29-/w   62-/b      0+ |10837068
+  80 Karailiev Peter_Petkov           1k SK  BBys    27     8   250   198      0+      0+      0+   86-/w      0+   98-/w      0+      0+      0+      0+ |10733371
+  81 Bayle Virgile                    2d FR  75Pa    27     6   248   151   88-/b      0-      0-      0-      0+      0+      0+      0+      0+   98+/w |10286078
+  82 Gatz Lars-Olaf                   3d DE  Str     26     4   267   107   70-/b   89+/w   47+/w   33-/b   85+/b   40-/w   41-/b   83+/w   73-/b      0= |10233894
+  83 Engels Andre                     2d NL  Eind    26     5   257   129   75-/w   74-/b      0+      0+      0+      0+   67-/w   82-/b      0+      0= |10501106
+  84 Gaspari Peter                    4d SI  Lju     26     1   255    29   95-/w   24+/w    6-/b   38-/b   72-/w      0=      0=      0=      0=      0= |10333620
+  85 Bogackyj Arkadij                 5d UA  Kyiv    26     1   254    27   34-/b   67+/b    7-/w   56-/b   82-/w      0=      0=      0=      0=      0= |10298871
+  86 Trinks Daniela                   2d DE  HH      26     4   251   106      0=      0=      0=   80+/b   51-/w   90+/w   52+/w   53-/b      0+   59-/w |10249261
+  87 Neumann Norbert                  2d DE  B       26     3   237    77      0=      0=      0=      0=      0=      0+   59-/w   90+/b   52-/w      0+ |10449109
+  88 Butala Gregor                    2d SI  Ljub    26     3   237    78   81+/w   75-/b   73-/w      0+      0+      0=      0=      0=      0=      0= |10433016
+  89 Peters Taco                      2d NL  Ensc    26     3   235    75      0+   82-/b      0+   27-/b      0+      0=      0=      0=      0=      0= |10262824
+  90 Jones Alison                     2d UK  Wan     26     3   232    74      0=      0=      0=      0=      0=   86-/b      0+   87-/w      0+      0+ |10201081
+  91 Spruit Nico                      3d NL  Amst    26     0   226     0      0=      0=      0=      0=      0=      0=      0=      0=      0=   30-/w |10233608
+  92 Verhagen Ronald                  1d NL  Alme    26     4   222    97      0+      0-      0+  100+/w      0+      0=      0=      0=      0=      0= |10274836
+  93 Ghost R_K                        3d NL  Amst    26     0   222     0      0-      0=      0=      0=      0=      0=      0=      0=      0=      0=
+  94 Kroll Harald                     3d DE  F       26     4   274   104   38-/w      0+      0+   10-/w   71+/b   25-/b   78+/b   39-/w   47-/b      0- |10250273
+  95 Hayashi Takehiko                 5d JP  xxx     26     3   270    76   84+/b   21-/w   17-/w   64-/b      0+   48-/b   35-/w   68-/b  100-/w      0+ |10401963
+  96 Pons Joan                        3d ES  Bar     26     4   266   100  100+/b    6-/b   41-/w   42-/w   78-/b      0+   99-/w      0+      0+   70-/b |10386013
+  97 Steffens Siegmar                 2d DE  DD      26     5   264   127   76+/w      0+   50-/w      0+   44-/b      0+   47-/w   73-/b      0-      0+ |10313182
+  98 Meyer Juergen                    2d DE  H       26     5   261   127      0-      0+   69-/w      0-      0+   80+/b      0+      0+   44-/w   81-/b |10298530
+  99 Weber Helmut                     2d DE  BN      26     5   261   126      0-      0+      0+   43-/b      0+   70-/b   96+/b      0+   66-/b   63-/w |10274528
+ 100 Rueten-Budde Jan                 3d DE  HH      26     4   259   100   96-/w      0-   74-/b   92-/b      0+      0+      0+   72-/b   95+/b   71-/w |10437581

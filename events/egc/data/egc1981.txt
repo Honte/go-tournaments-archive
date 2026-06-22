@@ -1,0 +1,28 @@
+; EV[European Go Congress 1981 - Main tournament]
+; PC[AT, Linz]
+; DT[1981-07-25,1981-08-09]
+;Pl Name                Str Co     1    2    3    4    5    6    7    8    9   Pt  SOS   SODOS
+   1 Zeijst Rob_van                 5d NL  xxx      8  45.5      8+     22+      6+      3+      2+     13+     14+      4-      9+
+   2 Hasibeder Helmut               5d AT  xxx      7    49      5+     14+     13+     12+      1-      7+      8+      3-      4+
+   3 Rehm Robert                    5d NL  xxx      6  48.5     21+     23+      7+      1-      4-      9+      5+      2+      6-
+   4 Donzet Frederic                4d FR  xxx      6    48     15+     13-     16+      6+      3+     14-      7+      1+      2-
+   5 Mattner Lutz                   5d DE  xxx      6    45      2-     18+      8+     11+      7-     10+      3-     16+     15+
+   6 Muller Cas                     4d NL  xxx      6    43     20+      9+      1-      4-     24+      8-     17+     13+      3+
+   7 Novak Ernst                    4d AT  xxx      5    49     10+     11+      3-     15+      5+      2-      4-      8+     12-
+   8 Michel Jean                    4d FR  xxx      5    46      1-     19+      5-     20+     15+      6+      2-      7-     16+
+   9 Moussa Andre                   4d FR  xxx      5    45     12+      6-     15-     19+     11+      3-     13+     14+      1-
+  10 Koopman Rob                    4d NL  xxx      5  36.5      7-     24+     22+     13-     12+      5-     16-      0+     14+
+  11 Garcia de_la_Banda             4d ES  xxx      5    36     24+      7-     14+      5-      9-     17-     21+     19+     13+
+  12 Hansen Frank                   5d DK  xxx      5    36      9-     20+     23+      2-     10-     16-     22+     24+      7+
+  13 Diamond Jon                    6d UK  xxx      4    50     17+      4+      2-     10+     16+      1-      9-      6-     11-
+  14 Vries Henk_de                  4d NL  xxx      4  46.5     18+      2-     11-     17+     23+      4+      1-      9-     10-
+  15 Zschintzsch Hans               4d DE  xxx      4    40      4-     17+      9+      7-      8-     19-     24+     18+      5-
+  16 Suc Lojze                      4d YU  xxx      4    39     23-     21+      4-     22+     13-     12+     10+      5-      8-
+  17 Bizjak Igor                    4d YU  xxx      4    36     13-     15-     19+     14-     20+     11+      6-      0+     24-
+  18 Baumann Hans-Peter             4d CH  xxx      4    30     14-      5-     21+     23-     22-     24+     20+     15-     19+
+  19 Petrovic Rade                  4d YU  xxx      3    35     22-      8-     17-      9-     21+     15+     23+     11-     18-
+  20 Mumme Thorsten                 3d DE  xxx      3    34      6-     12-     24+      8-     17-     21-     18-     22+     23+
+  21 Sudhoff Horst                  4d DE  xxx      3    32      3-     16-     18-     24-     19-     20+     11-     23+     22+
+  22 Hall T_Mark                    4d UK  xxx    2.5  37.5     19+      1-     10-     16-     18+     23=     12-     20-     21-
+  23 Macfadyen Matthew              5d UK  xxx    2.5  34.5     16+      3-     12-     18+     14-     22=     19-     21-     20-
+  24 Aroutcheff Pierre              3d FR  xxx      2    39     11-     10-     20-     21+      6-     18-     15-     12-     17+

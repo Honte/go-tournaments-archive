@@ -1,0 +1,17 @@
+website: https://www.eurogofed.org/results/congress/egc1981.htm
+name: European Championship 1981
+stages:
+  - type: tournament
+    file: egc1981.txt
+    name: Championship Group
+    scoringColumns:
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - wins
+      - sos
+      - sodos
+    findSharedPlaces: true
+	   
+

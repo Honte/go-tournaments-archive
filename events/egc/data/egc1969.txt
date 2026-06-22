@@ -1,0 +1,13 @@
+; EV[European Go Congress 1969 - Championship Group]
+; PC[YU, Ljubljana]
+; DT[1969-08-03,1969-08-16]
+   1 Wimmer Manfred                30k AT  xxx      8     10+      9+      8+      7+      6+      5-      4+      3+      2+
+   2 Mattern Juergen               30k DE  xxx    7.5      9=      7+      5+      3+     10+      8+      6+      4+      1-
+   3 Mutabzija Zoran               30k YU  xxx      6      8+      6=      4=      2-      9+      7+      5+      1-     10+
+   4 Rebattu Max                   30k NL  xxx    5.5      7+      5+      3=     10+      8+      6-      1-      2-      9+
+   5 Vries Henk_de                 30k NL  xxx    5.5      6+      4-      2-      9=      7+      1+      3-     10+      8+
+   6 Ekart Eduard                  30k YU  xxx    4.5      5-      3=     10+      8+      1-      4+      2-      9+      7-
+   7 Katscher Michael              30k DE  xxx      3      4-      2-      9+      1-      5-      3-     10+      8-      6+
+   8 Skrob Ernst                   30k AT  xxx      3      3-     10+      1-      6-      4-      2-      9+      7+      5-
+   9 Goddard Tony                  30k UK  xxx      2      2=      1-      7-      5=      3-     10+      8-      6-      4-
+  10 Pecenko Primoz                30k YU  xxx      0      1-      8-      6-      4-      2-      9-      7-      5-      3-

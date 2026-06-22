@@ -1,0 +1,15 @@
+; EV[European Go Congress 1975 - Championship Group]
+; PC[DE, Krems]
+; DT[1975-07-25,1975-08-05]
+   1 Mattern            Juergen      5d  DE xxxx  8    2+     3+     5+     6+     7+     8+     10+    11+
+   2 Wimmer             Manfred      5d  AT xxxx  7    1-     6+     3+     7+     8+     4+     5+     9+
+   3 Merissert          Patrick      4d  FR xxxx  5    7-     1-     2-     8+     4+     5+     11+    12+
+   4 Wiltschek          Helmut       4d  AT xxxx  5    6+     10+    7+     9+     3-     2-     12+    5-
+   5 Rehm               Robert       4d  NL xxxx  4    9+     7-     1-     12+    11+    3-     2-     4+
+   6 Vries              Henk_de      4d  NL xxxx  4    4-     2-     11+    1-     9+     12+    8+     10-
+   7 Katscher           Michael      5d  DE xxxx  4    3+     5+     4-     2-     1-     10+    9+     8-
+   8 Novak              Ernst        4d  AT xxxx  3    10+    11-    12+    3-     2-     1-     6-     7+
+   9 Sudhoff            Horst        4d  DE xxxx  2    5-     12+    10-    4-     6-     11+    7-     2-
+  10 Kitsos             Michael      4d  GR xxxx  2    8-     4-     9+     11-    12-    7-     1-     6+
+  11 Bates              Jim          3d  UK xxxx  2    12-    8+     6-     10+    5-     9-     3-     1-
+  12 Grebe              Leonhard     4d  DE xxxx  2    11+    9-     8-     5-     10+    6-     4-     3-

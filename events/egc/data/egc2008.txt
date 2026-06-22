@@ -1,0 +1,24 @@
+; CL[A]
+; EV[52nd European Go Congress, 1st week]
+; PC[SE, Leksand]
+; DT[2008-07-27,2008-08-09]
+; HA[h9]
+; KM[7.5]
+; TM[150]
+;
+   1 Taranu Catalin                 5p RO  Bucu    36     7   354     5      0+      0-      0+   7-/b0      0+  13+/w0   9+/w0   3+/b0      0-   5+/b0 |10586785
+   2 Dinerstein Alexandr            3p RU  16Kz    36     7   353     7      0-      0-      0+      0+   8+/b0      0+   6+/b0      0+      0+      0- |10313237
+   3 Shikshin Ilja                  7d RU  16Kz    36     7   349     8   6+/w0      0-  10+/w0      0+      0-  14+/b0      0+   1-/w0      0+   8+/b0 |12013342
+   4 Balogh Pal                     6d HU  Debr    36     7   346     9   8+/w0      0-      0+      0-      0+      0+  16+/b0   5-/w0      0+      0+ |10498246
+   5 Mero Csaba                     6d HU  BuPe    35     6   353    11      0+      0-      0+  13+/b0      0-      0+      0+   4+/b0      0-   1-/w0 |10225875
+   6 Oh Lluis                       6d ES  Bar     35     6   348    14   3-/b0      0+      0+  11+/w0   7+/b0      0-   2-/w0      0+   9+/b0      0- |14898345
+   7 Silt Ondrej                    6d CZ  KVa     35     6   346    15      0-      0+  14+/b0   1+/w0   6-/w0      0-      0+      0+   8-/b0      0+ |10337481
+   8 Shikshina Svetlana             3p RU  16Kz    35     6   345    16   4-/b0      0+      0-      0+   2-/w0      0+      0+      0+   7+/w0   3-/w0 |10301236
+   9 Debarre Thomas                 5d FR  67SE    35     6   344    17  11+/b0  15-/w0      0-      0+      0+      0+   1-/b0      0+   6-/w0      0+ |12950872
+  10 Soldan Leszek                  5d PL  Wars    35     6   340    19  13-/w0      0+   3-/b0      0+      0-      0+  11-/b0      0+      0+      0+ |10449560
+  11 Radmacher Bernd                5d DE  Mee     35     6   340    19   9-/w0      0+      0+   6-/b0  13-/b0      0+  10+/w0  16+/b0      0-      0+ |10333675
+  12 Tautorat Guido                 4d DE  J       35     7   338    21      0-      0+      0+      0-      0+      0+  15+/w0      0-      0+      0+ |10274231
+  13 Blomback Fredrik               4d SE  Sto     34     5   349    26  10+/b0      0+      0-   5-/w0  11+/w0   1-/b0      0+      0-  14-/w0      0+ |13937946
+  14 Kulkov Andrej                  6d RU  16Kz    34     5   346    27      0-      0+   7-/w0      0+      0+   3-/w0      0-      0+  13+/b0      0- |10625329
+  15 Corlan Lucian                  5d RO  Bucu    34     5   346    27      0+   9+/b0      0-      0-      0+      0-  12-/b0      0+      0+      0- |12586750
+  16 Tormanen Antti                 5d FI  OGP     34     5   345    29      0+      0-      0+      0+      0-      0+   4-/w0  11-/w0      0-      0+ |12949310

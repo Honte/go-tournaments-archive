@@ -1,0 +1,12 @@
+website: https://www.eurogofed.org/results/congress/egc1977.htm
+name: European Championship 1977
+stages:
+  - type: tournament
+    file: egc1977.txt
+    name: Championship Group
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true   
+

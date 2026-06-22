@@ -1,0 +1,20 @@
+; EV[European Go Congress 1987 - Main tournament]
+; PC[FR, Grenoble]
+; DT[1987-07-25,1987-08-08]
+;Pl Name                   Gr Cy  MM   1    2    3    4    5    6    7    8   9  W
+   1 Macfadyen Matthew              6d UK  xxx     26     6     1      0+      0+     12+      3-      7-     15+      0+      6+      0=
+   2 Lazarev Alexej                 6d SU  xxx     27     7     2      0+     12-     16+      0+     13+     14+      6+      7+      0=
+   3 Donzet Frederic                5d FR  xxx     26     6     3     11+      4+      5+      1+      6-      8-      0+     13+      0=
+   4 Zeijst Rob_van                 6d NL  xxx     26     6     3      0+      3-      0+      9+      0+      6+      5-      8+      0=
+   5 Solovjev Valerij               6d SU  xxx     26     7     5     16+      0+      3-     15+     14-      0+      4+     12+      7+
+   6 Heiser Laurent                 5d LU  xxx     25     6     6     10+      0+      0+      8+      3+      4-      2-      1-     13+
+   7 Colmez Pierre                  5d FR  xxx     25     6     6      0+      9-      0+      0+      1+      0+      8+      2-      5-
+   8 Kraszek Janusz                 6d PL  xxx     25     6     6      0+     13+      0+      6-     12+      3+      7-      4-      0+
+   9 Aaij Rene                      4d NL  xxx     25     6     6      0+      7+      0-      4-      0-      0+      0+      0+     12+
+  10 Muller Martin                  4d AT  xxx     25     6     6      6-      0+      0+      0+      0-     12-      0+     14+     15+
+  11 Janssen Frank                  5d NL  xxx     25     6     6      3-      0+      0-      0+      0-      0+     16+      0+      0+
+  12 Moussa Andre                   5d FR  xxx     24     5    12      0+      2+      1-      0+      8-     10+      0+      5-      9-
+  13 Koopman Rob                    4d NL  xxx     24     5    12     15+      8-      0+      0+      2-      0+     14+      3-      6-
+  14 Rittner Egbert                 5d DE  xxx     24     5    12      0-      0+      0+      0+      5+      2-     13-     10-      0+
+  15 Mutabzija Zoran                5d YU  xxx     24     5    12     13-      0+      0+      5-      0+      1-      0+      0+     10-
+  16 Pietsch Hans                   4d DE  xxx     24     5    12      5-      0+      2-      0+      0-      0+     11-      0+      0+

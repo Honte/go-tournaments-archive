@@ -1,0 +1,111 @@
+; TC[E100725A]
+; CL[A]
+; EV[Zhuyeqing Tea 54th European Go Congress 2010 Main Tournament]
+; PC[FI, Tampere]
+; DT[2010-07-25,2010-08-07]
+; HA[h9]
+; KM[6.5]
+; TM[195]
+; CM[European Go Championship 2010 - 1st week (submitted by Vesa)]
+;.
+; Zhuyeqing Tea 54th European Go Congress Main
+   1 Shikshin Ilja                  7d RU  16Kz    32     8   309  12+/w0   4+/b0  10+/b0   6+/w0   5+/w0  11+/b0   2-/w0   8+/b0   3-/b0   9+/b0 |12013342
+   2 Kachanovskyj Artem             6d UA  Rivn    32     8   307  16+/w0  27+/w0   3+/b0   5-/b0  13+/w0   7+/b0   1+/b0  11+/w0  10+/b0   4-/w0 |12662870
+   3 Kim Chaelim                    7d KR  Inch    32     8   304  31+/w0  13+/b0   2-/w0  25+/b0   9-/b0  23+/w0   6+/b0   7+/w0   1+/w0   5+/b0 |15850571
+   4 Kim Jung-hyeop                 7d KR  Bru     32     8   299  70+/b0   1-/w0  43+/b0  41+/w0   6+/b0  10+/w0   5-/b0   9+/w0  21+/w0   2+/b0 |15001371
+   5 Kang Kyeong-nang               7d KR  Seou    31     7   307  41+/w0   7+/b0  11+/b0   2+/w0   1-/b0   9+/w0   4+/w0  10-/b0  18+/b0   3-/w0 |14733873
+   6 Taranu Catalin                 5p RO  Bucu    31     7   302  22+/b0  18+/b0  14+/w0   1-/b0   4-/w0  57+/w0   3-/w0  19+/b0  25+/w0  12+/b0 |10586785
+   7 Burzo Cornel                   6d RO  BaMa    31     7   299   9+/b0   5-/w0  28+/b0  53+/w0  24+/w0   2-/w0  12+/b0   3-/b0  50+/b0  11+/w0 |10325249
+   8 Pop Cristian                   7d RO  Bucu    31     7   295  15-/w0 100+/b0  26+/b0  12-/w0  29+/b0  22+/w0  14+/b0   1-/w0  23+/b0  10+/w0 |10333389
+   9 Dinerstein Alexandr            3p RU  16Kz    30     6   305   7-/w0  45+/b0  27+/b0  15+/w0   3+/w0   5-/b0  16+/w0   4-/b0  14+/b0   1-/w0 |10313237
+  10 Jabarin Ali                    5d IL  TAv     30     6   304  24+/w0  42+/b0   1-/w0  16+/b0  37+/w0   4-/b0  21+/b0   5+/w0   2-/w0   8-/b0 |14637810
+  11 Mero Csaba                     6d HU  BuPe    30     6   301  32+/w0  15+/b0   5-/w0  78+/b0  12+/w0   1-/w0  17+/b0   2-/b0  26+/w0   7-/b0 |10225875
+  12 Tormanen Antti                 6d FI  PoGo    30     6   301   1-/b0  23+/w0  19+/w0   8+/b0  11-/b0  20+/w0   7-/w0  80+/b0  15+/b0   6-/w0 |12949310
+  13 Matsumura Naoki                6d JP  Yoka    30     6   296  26+/w0   3-/w0  34+/b0  22+/b0   2-/b0  17-/b0  44+/w0  18-/w0  43+/w0  25+/b0 |15862572
+  14 Zeijst Rob_van                 7d NL  Toky    30     6   295  48+/w0  17+/b0   6-/b0  24-/w0  25+/b0  43+/b0   8-/w0  20+/w0   9-/w0  28+/b0 |10337382
+  15 Surin Dmitrij                  6d RU  78SP    30     6   294   8+/b0  11-/w0  40+/b0   9-/b0  17-/w0  64+/w0  33+/b0  29+/w0  12-/w0  60+/b0 |10825254
+  16 Silt Ondrej                    6d CZ  Kunr    30     6   293   2-/b0  29+/w0  30+/b0  10-/w0  73+/w0  24+/b0   9-/b0  23-/w0  22+/w0  32+/b0 |10337481
+  17 Kaitschick Stefan              5d DE  HH      30     6   293  19+/b0  14-/w0  22-/b0  49+/w0  15+/b0  13+/w0  11-/w0  21-/b0  87+/b0  33+/b0 |10249514
+  18 Teuber Benjamin                6d DE  HH      30     6   288  74+/b0   6-/w0  53-/b0  21-/w0      0+  70+/b0  22+/w0  13+/b0   5-/w0  23+/b0 |10437174
+  19 Radmacher Bernd                5d DE  MEE     30     6   288  17-/w0  47+/b0  12-/b0      0+  23-/b0  46+/w0  31+/b0   6-/w0  41+/b0  24+/w0 |10333675
+  20 Li Martin                      5d SE  Borl    30     7   287  50+/b0  28-/w0      0+  34+/w0  26+/w0  12-/b0  24+/w0  14-/b0  44+/w0  38+/b0 |10498631
+  21 Debarre Thomas                 5d FR  67SE    30     7   286      0=  33+/w0 100+/b0  18+/b0  42+/w0  41+/b0  10-/w0  17+/w0   4-/b0  26+/b0 |12950872
+  22 Savolainen Javier-Aleksi       5d FI  HGK     29     5   295   6-/w0  44+/b0  17+/w0  13-/w0  36+/b0   8-/b0  18-/b0  67+/w0  16-/b0  42+/w0 |14001537
+  23 Kuronen Juri                   4d FI  PoGo    29     6   292      0+  12-/b0  58+/w0  70+/b0  19+/w0   3-/b0  43+/w0  16+/b0   8-/w0  18-/w0 |15386382
+  24 Corlan Lucian                  5d RO  Bucu    29     5   291  10-/b0      0+  42+/w0  14+/b0   7-/b0  16-/w0  20-/b0  70+/w0  31+/w0  19-/b0 |12586750
+  25 Mitic Nikola                   5d RS  NISt    29     5   291  27-/b0      0+  70+/w0   3-/w0  14-/w0  38+/b0  53+/w0  28+/b0   6-/b0  13-/w0 |10801923
+  26 Kai Naoyuki                    6d JP  Yok     29     5   289  13-/b0  71+/w0   8-/w0      0+  20-/b0  36+/w0  42+/b0  41+/w0  11-/b0  21-/w0 |10449824
+  27 Blomback Fredrik               5d SE  Stoc    29     5   288  25+/w0   2-/b0   9-/w0  37-/w0  86+/b0  82+/b0  29-/b0  30-/w0  47+/b0  54+/w0 |13937946
+  28 Kosso Janne                    4d FI  OGP     29     6   288      0+  20+/b0   7-/w0  40-/b0  75+/b0  72+/w0  30+/b0  25-/w0  35+/w0  14-/w0 |13001615
+  29 Nyyssonen Juuso                4d FI  Teng    29     6   288      0+  16-/b0  39+/b0  32+/w0   8-/w0  73+/b0  27+/w0  15-/b0  33-/w0  44+/b0 |14374074
+  30 Maatta Janne                   4d FI  OGP     29     6   287  65+/b0  46+/w0  16-/w0  47+/b0  40-/b0  35+/w0  28-/w0  27+/b0  32-/b0  56+/w0 |14086248
+  31 Fenech Antoine                 5d FR  67Se    29     5   285   3-/b0  43-/w0  74+/w0  46+/b0  41-/b0  45+/b0  19-/w0  86+/w0  24-/b0  52+/w0 |10349350
+  32 Chwedyna Kamil                 4d PL  Kedz    29     5   285  11-/b0  40-/w0      0+  29-/b0  45-/w0  79+/w0  34+/w0  57+/b0  30+/w0  16-/w0 |13513786
+  33 Oancea Petru                   4d RO  Bucu    29     6   285  71-/w0  21-/b0      0+  79+/w0  49+/w0  37+/b0  15-/w0  36+/b0  29+/b0  17-/w0 |10313402
+  34 Drost Andreas                  4d NL  Leid    29     6   282  85+/w0  74+/b0  13-/w0  20-/b0  35-/w0  49+/b0  32-/b0      0+  76+/w0  41+/b0 |10525218
+  35 Manojlovic Lazar               5d RS  KGRa    29     5   280  42-/w0  53-/b0      0+  36-/w0  34+/b0  30-/b0  46+/w0  76+/b0  28-/b0  45+/w0 |12301652
+  36 Jasiek Robert                  5d DE  B       29     6   279      0+  70-/w0  77+/w0  35+/b0  22-/w0  26-/b0  39+/b0  33-/w0  71+/b0  51+/w0 |10213203
+  37 Visala Kari                    3d FI  PoGo    29     7   279  91+/b0      0+  75+/w0  27+/b0  10-/b0  33-/w0  47-/w0  73+/b0  57+/w0  58+/b0 |10962864
+  38 Eerbeek Alexander              4d NL  Vink    29     6   278      0-  54+/b0  50+/b0  42-/b0      0+  25-/w0  84+/w0  47+/b0  45+/b0  20-/w0 |13501356
+  39 Sannes Paal                    4d NO  Oslo    29     6   275      0+  41-/w0  29-/w0  84+/b0      0+  53-/b0  36-/w0      0+  75+/w0  43+/b0 |10233047
+  40 Imamura Toru                   4d FR  38Gr    29     4   258      0+  32+/b0  15-/w0  28+/w0  30+/w0      0=      0=      0=      0=      0= |10549407
+  41 Lin Viktor                     5d AT  Gote    28     4   294   5-/b0  39+/b0  48+/w0   4-/b0  31+/w0  21-/w0  87+/w0  26-/b0  19-/w0  34-/w0 |14501256
+  42 Yoshihara Kazuo                6d JP  Chi     28     4   289  35+/b0  10-/w0  24-/b0  38+/w0  21-/b0  48+/w0  26-/w0  44-/b0  46+/w0  22-/b0 |14550074
+  43 Knauf Torsten                  4d DE  SU      28     5   288      0+  31+/b0   4-/w0  65+/b0  53+/w0  14-/w0  23-/b0  74+!w0  13-/b0  39-/w0 |10962963
+  44 Berben Tobias                  4d DE  HH      28     5   282      0+  22-/w0  49-/b0 100+/w0  71+/b0  55+/w0  13-/b0  42+/w0  20-/b0  29-/w0 |10662729
+  45 Hella Tuomas                   3d FI  PoGo    28     6   282  94+/w0   9-/w0  60+/b0      0+  32+/b0  31-/w0  72+/w0  51+/b0  38-/w0  35-/b0 |14050531
+  46 Paatero Lauri                  4d FI  HGK     28     5   280  76+/b0  30-/b0  56+/w0  31-/w0      0+  19-/b0  35-/b0  81+/w0  42-/b0  73+/w0 |10362649
+  47 Janov Daniil                   4d RU  47oo    28     5   278      0+  19-/w0      0+  30-/w0  72-/b0      0+  37+/b0  38-/w0  27-/w0  76+/b0 |10498851
+  48 Verhagen Rudi                  5d NL  Ensc    28     4   276  14-/b0  72+/w0  41-/b0  73-/w0  78+/b0  42-/b0  51-/w0  56-/w0      0+  77+/b0 |10213610
+  49 Ainali Ville                   3d FI  OGP     28     6   276      0+      0+  44+/w0  17-/b0  33-/b0  34-/w0      0+  64+/w0  54-/b0  82+/w0 |13033614
+  50 Seibt David                    4d DE  B       28     5   275  20-/w0      0+  38-/w0  52-/b0      0+  71+/w0  82+/b0  75+/w0   7-/w0      0= |14237289
+  51 Sora Sorin                     4d RO  Crai    28     5   274      0-      0-  90+/b0  85+/w0  65-/w0  52+/b0  48+/b0  45-/w0  77+/w0  36-/b0 |10374408
+  52 Holappa Antti                  3d FI  PoGo    28     6   273  81-/b0      0+      0+  50+/w0  55-/b0  51-/w0      0+  62+/w0  74+!w0  31-/b0 |12386869
+  53 Nikula Miika                   4d FI  YliG    28     4   272  77+/b0  35+/w0  18+/w0   7-/b0  43-/b0  39+/w0  25-/b0      0=      0=      0= |13701798
+  54 Landgraf Marc                  3d DE  DD      28     6   272  87+!b0  38-/w0  59-/w0      0+      0+      0+  86-/b0  82+/w0  49+/w0  27-/b0 |14898136
+  55 Negi Yohei                     3d UK  Dund    28     6   272      0-  95+/w0  61+/b0  76+/w0  52+/w0  44-/b0  75-/b0      0+  58-/w0  84+/b0 |14825129
+  56 Kettenring Thomas              3d DE  M       28     6   271      0+      0+  46-/b0  71-/b0      0-      0+  63+/w0  48+/b0  59+/w0  30-/b0 |10786798
+  57 Avram Laura                    2d RO  Bist    28     7   271      0+      0+      0+  80+/b0      0+   6-/b0  78+/b0  32-/w0  37-/b0  79+/w0 |12698620
+  58 Kuroda Hideo                   3d JP  Tok     28     6   270  83+/w0      0+  23-/b0  74-/w0      0+  61-/b0      0+      0+  55+/b0  37-/w0 |14037375
+  59 Doganay Kivanc                 3d SE  Vast    28     6   269      0-  88+/b0  54+/b0  72-/w0      0-      0+  79+/b0      0+  56-/b0  87+/w0 |13637635
+  60 Milu Mihai                     3d RO  Camp    28     6   268      0+      0-  45-/w0      0+      0+      0+  76-/w0  84+/b0  80+/w0  15-/w0 |10374452
+  61 Budahn Michael                 3d DE  B       28     6   267  90+/w0  75-/b0  55-/w0  66+/b0      0+  58+/w0  80-/b0  78+/w0  86+/b0      0= |13013605
+  62 Metta Carlo                    2d IT  Pisa    28     7   261  88-/w0      0+      0+      0+  81-/b0      0+      0+  52-/b0      0+  96+/w0 |14713996
+  63 Nevala Mikko                   1d FI  OGP     28     8   260      0+      0+      0+  89-/b0      0+  93+/w0  56-/b0      0+  81+/b0  80+/w0 |14574032
+  64 Yonemura Kenji                 4d JP  Tok     28     3   255      0=      0=      0=      0=      0=  15-/b0  66+/w0  49-/b0  88+/w0  83+/b0
+  65 Kato Takehiko                  6d JP  Fuj     28     3   254  30-/w0  85+/b0  72+/b0  43-/w0  51+/b0      0=      0=      0=      0=      0= |13749186
+  66 Kelomaki Jouko                 2d FI  YliG    28     6   252      0=      0+      0+  61-/w0      0+      0+  64-/b0      0+  72+/w0      0= |15201923
+  67 Melcer Florian                 3d FR  75Op    28     4   247      0=      0=      0=      0=      0=  83+/w0  69+/b0  22-/b0      0+  71+/w0
+  68 Petri Klaus                    3d DE  DA      28     4   242      0=      0=      0=      0=      0=      0+  70-/b0      0+      0+  93+/w0
+  69 Savo Jesse                     3d FI  Haya    28     4   242      0=      0=      0=      0=      0=      0+  67-/w0      0+  70+/w0  75+/b0
+  70 Salignon Jerome                5d FR  13Ma    27     3   288   4-/w0  36+/b0  25-/b0  23-/w0  74+/b0  18-/w0  68+/w0  24-/b0  69-/b0  94-/w0 |10825628
+  71 Zandveld Peter                 4d NL  Amst    27     4   279  33+/b0  26-/b0  78-/w0  56+/w0  44-/w0  50-/b0      0+  89+/b0  36-/w0  67-/b0 |10250823
+  72 Marz Manja                     4d DE  MR      27     4   277  73+/w0  48-/b0  65-/w0  59+/b0  47+/w0  28-/b0  45-/b0  77-/w0  66-/b0      0+ |13062412
+  73 Tamura Akira                   4d AU  Bri     27     4   277  72-/b0      0+      0+  48+/b0  16-/b0  29-/w0  74-/b0  37-/w0  92+/w0  46-/b0 |14025374
+  74 Tang Chingshu                  5d TW  Kaos    27     3   276  18-/w0  34-/w0  31-/b0  58+/b0  70-/w0      0+  73+/w0  43-!b0  52-!b0      0= |15874573
+  75 Damberg Victor                 3d SE  Upps    27     5   276      0+  61+/w0  37-/b0      0+  28-/w0      0+  55+/w0  50-/b0  39-/b0  69-/w0 |13413037
+  76 Lajunen Pekka                  4d FI  HGK     27     4   275  46-/w0  82-/b0      0+  55-/b0      0+      0+  60+/b0  35-/w0  34-/b0  47-/w0 |13874630
+  77 Kyung Kwang_Soo                6d KR  Seo     27     4   272  53-/w0      0+  36-/b0      0- 100-/w0  85+/w0      0+  72+/b0  51-/b0  48-/w0 |12762310
+  78 Jantunen Markku                3d FI  Kanp    27     5   272      0+      0+  71+/b0  11-/w0  48-/w0  89+/b0  57-/w0  61-/b0  83-/w0      0+ |10233784
+  79 Mattila Ilkka                  2d FI  OGP     27     6   271      0+      0+      0+  33-/b0      0+  32-/b0  59-/w0      0+  98+/w0  57-/b0 |13462460
+  80 Simons Andrew                  2d UK  Camb    27     6   271      0+      0+  97+/b0  57-/w0  85+/w0      0+  61+/w0  12-/w0  60-/b0  63-/b0 |14337147
+  81 Ouchterlony Erik               3d SE  Link    27     5   270  52+/w0      0-      0+  86-/w0  62+/w0  87-/b0      0+  46-/b0  63-/w0      0+ |12350184
+  82 Crosby Matthew                 3d UK  Edin    27     5   269      0+  76+/w0      0-      0+      0+  27-/w0  50-/w0  54-/b0      0+  49-/b0 |13701501
+  83 Marz Michael                   3d DE  MR      27     5   268  58-/b0      0+      0-  92+/b0      0-  67-/b0      0+      0+  78+/b0  64-/w0 |10225347
+  84 Khandov Alexej                 2d RU  78SP    27     6   268      0+      0+      0+  39-/w0      0+      0+  38-/b0  60-/w0  89+/b0  55-/w0 |10825342
+  85 Jipp Thomas                    4d DE  HH      27     4   267  34-/b0  65-/w0      0+  51-/b0  80-/b0  77-/b0  94+/w0      0+      0+      0= |12001825
+  86 Marko Peter                    3d HU  BuPe    27     5   267      0+      0-      0+  81+/b0  27-/w0      0+  54+/w0  31-/b0  61-/w0      0= |14513895
+  87 Puha Timo                      3d FI  Kanp    27     5   267  54-!w0      0=      0+      0+      0+  81+/w0  41-/b0      0+  17-/w0  59-/b0 |10737914
+  88 Moisio Oiva                    2d FI  Kanp    27     6   264  62+/b0  59-/w0  91+/b0      0-      0+      0-      0+      0+  64-/b0      0+ |15233504
+  89 Zaloudkova Klara               2d CZ  APra    27     6   264      0+      0+      0-  63+/w0      0+  78-/w0      0+  71-/w0  84-/w0      0+ |10798106
+  90 Hershberger Matthew            3d US  New     27     5   263  61-/b0      0+  51-/w0      0+      0-      0-  91-/b0      0+      0+      0+ |15886574
+  91 Takeda Yasushi                 3d JP  Iwa     27     5   263  37-/w0      0-  88-/w0      0-      0+      0+  90+/w0  92-/b0      0+      0+ |10786149
+  92 Camernik Luka                  2d SI  Ljub    27     6   262      0+      0-  95+/b0  83-/w0  96-/b0      0+      0+  91+/w0  73-/b0      0+ |14825954
+  93 Serres Etienne                 1d FR  42Se    27     7   262      0-      0+      0+  95+/w0      0+  63-/b0  97+/b0      0+      0+  68-/b0 |10474684
+  94 Sekiguchi Kiyoshi              3d JP  Yok     27     5   261  45-/b0      0-      0-  99-/b0      0+      0+  85-/b0      0+      0+  70+/b0 |12325654
+  95 Izaki Masao                    2d JP  Kyo     27     6   261      0+  55-/b0  92-/w0  93-/b0      0+  99-/w0      0+      0+      0+      0+ |10474970
+  96 Staedtler Andre                2d DE  KS      27     6   260      0-      0+      0-      0+  92+/w0      0+      0-      0+      0+  62-/b0 |14313772
+  97 Hauenstein Andreas             2d CH  Bas     27     6   259      0+      0+  80-/w0      0-      0-      0+  93-/w0      0+      0+      0+ |10249910
+  98 Mueller Pascal                 2d DE  WI      27     6   259      0-      0+      0+      0-      0-      0+      0+  99+/w0  79-/b0      0+ |13986423
+  99 Kacprzyk Agnieszka             1d PL  Bebn    27     7   258      0-      0+      0+  94+/w0      0-  95+/b0      0+  98-/b0      0+      0+ |13625524
+ 100 Wu Ci-Yang                     6d TW  Hual    27     2   257      0+   8-/w0  21-/w0  44-/b0  77+/b0      0=      0=      0=      0=      0= |15833576
