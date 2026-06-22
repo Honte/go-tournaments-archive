@@ -1,0 +1,30 @@
+; TC[T190516A]
+; CL[A]
+; EV[5th European Pro Qualification 2019]
+; PC[FR, Strasbourg]
+; DT[2019-05-16,2019-05-19]
+; HA[h9]
+; KM[7.5]
+; TM[140]
+; CM[Fischer Time: 75 minutes basic, 20 seconds additional per move (submitted by erdbeer)]
+;.
+;
+; https://www.eurogofed.org/proqualification/index_2019.html
+;
+;Pl Name               Lvl Ctry Cl  P    1       2       3       4       5       6
+   1 Le_Calve Tanguy                6d FR  44Na     5     1      0+      3-     11+      6+      4+      2+ |14962706
+   2 Podpera Lukas                  7d CZ  APWS     4     2     12+      4+       0=     7+      3+      1- |13201914
+   3 Frejlak Stanislaw              7d PL  Wars     3     3     15+      1+       0=     8+      2-      0= |12837594
+   4 Boviz Dominik                  6d HU  MGE      3     3     13+      2-      9+      5+      1-      0= |14225926
+   5 Burzo Cornel                   7d RO  BaMa     2     5     16+     10+       0=     4-       0=     0= |10325249
+   6 Lin Viktor                     6d AT  Go7      2     5     14+      8+       0=     1-       0=     0= |14501256
+   7 Kajmin Vjacheslav              5d RU  77Mo     2     5      0-     15+     10+      2-       0=     0= |14986257
+   8 Kruml Ondrej                   5d CZ  Brno     2     5      0+      6-     12+      3-       0=     0= |10886524
+   9 Chernykh Anton                 6d RU  50Zh     1     9      0-     14+      4-       0=      0=     0= |15713467
+  10 Zeijst Rob_van                 6d NL  Apel     1     9     11+      5-      7-       0=      0=     0= |10337382
+  11 Campagnie Remi                 5d FR  xxxx     1     9     10-     16+      1-       0=      0=     0= |15449269
+  12 Fragman Amir                   5d IL  MGC      1     9      2-     13+      8-       0=      0=     0= |13625315
+  13 Welticke Jonas                 6d DE  BN       0    13      4-     12-       0=      0=      0=     0= |15786287
+  14 Djepov Sinan                   5d BG  SlvP     0    13      6-      9-       0=      0=      0=     0= |17486205
+  15 Vazquez Oscar                  5d ES  Nam      0    13      3-      7-       0=      0=      0=     0= |15633673
+  16 Hamrah Schayan                 5d AT  Wien     0    13      5-     11-       0=      0=      0=     0= |15437598

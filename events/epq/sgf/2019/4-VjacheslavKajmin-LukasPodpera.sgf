@@ -1,0 +1,166 @@
+(;CA[utf-8]FF[4]ST[2]RU[Chinese]AP[CGoban:3]SZ[19]GM[1]GN[EGF Pro qualification round 4 - Viacheslav Kaymin 6d (B) - Lukas Podpera 7d (W)]
+EV[EGF Pro qualification round 4 - Viacheslav Kaymin 6d (B) - Lukas Podpera 7d (W) ]
+RO[4]DT[2019-05-18]PC[The KGS Go Server at http\://www.gokgs.com/]PB[Kajmin Vjacheslav ]
+BR[6d]PW[Podpera Lukas ]WR[7d]KM[7.5]RE[W+14.5]MULTIGOGM[1]
+
+(;B[on])
+(;B[pp];W[qd];B[dc];W[cp];B[ep];W[eq];B[dp];W[dq];B[co];W[bp];B[fp];W[bo];B[cn]
+;W[gr];B[od];W[oc];B[nc];W[pc];B[nd];W[qf];B[jd];W[ce];B[cg];W[ee];B[fd];W[dh];B[ch]
+;W[di];B[dg];W[eg];B[ci];W[dj];B[df];W[ef];B[de];W[ed];B[dd];W[ec];B[fh];W[eh];B[cq]
+C[sloth [3d\]\: IIRC white is supposed to push at e16 when black plays the empty triangle, but i don't like the game position for black either.
+]
+;W[cr];B[nq]C[tam1998 [1d\]\: i think i like black so far....
+];W[rp]C[Shamash [?\]\: W seems better, more points and erasing black's potential with d10
+]
+;B[rn]C[SAlexander [?\]\: S6 is a funny looking move
+];W[qq];B[pq];W[rr]C[Shamash [?\]\: fine for w, the right side was not what w was looking for anyway because of r14
+tam1998 [1d\]\: w doesnt actually have that many more points... upper right plus lower left plus komi i count about 35 points. black upper left is 20, plus whatever the upper side yields. although after this corner invasion, it feels like black has a need to get some more points from attacking the white stick...
+]
+;B[qn];W[pr];B[or];W[lb];B[mb];W[ld]C[Shamash [?\]\: w will make points on the upper side too now =)
+]
+;B[le]C[Shamash [?\]\: points before everything else, that's Podpera's style 
+Jakobicek [-\]\: what is the status of the bottom right corner if black plays first?
+SAlexander [?\]\: ko at least right?
+Jakobicek [-\]\: sure...
+]
+;W[ic]C[Jakobicek [-\]\: but i am not sure if white can live unconditionally by playing r2, i dont think so, at least not locally
+samoht [2d?\]\: shamash, E17 to D10 doesnt really look like points first?
+tam1998 [1d\]\: no, white cant live unconditionally, its ko
+SpeqtR [1k\]\: white have 3 corners and 1 so strong and 1 plastic but easy group
+SpeqtR [1k\]\: who is leading?))
+Muttley [-\]\: white
+Jakobicek [-\]\: can w stick ever get into trouble?
+Muttley [-\]\: not if gets home early and does its homework
+Muttley [-\]\: I wouldn't try to kill it as black at least until I had cut the group at j17 and built thickness around h8-k12
+Muttley [-\]\: currently, its just easily alive and not likely to be in any particular trouble, but any grroup without a base or eyes can die
+Muttley [-\]\: 61.5 50 but white has played for territory early
+Muttley [-\]\: r10 looks balanced to me
+Muttley [-\]\: j18 if you like mess
+Shamash [?\]\: e7 was blak's doing, Podpera would play of course the correct sequence, but if he has choice, he will choose the points
+Shamash [?\]\: in manycase at last
+]
+;B[jc];W[jb];B[ib]C[Muttley [-\]\: gote sequence
+Muttley [-\]\: I think this is too direct
+Shamash [?\]\: W will be happy to live with a ponuki on this side
+SpeqtR [1k\]\: agree
+Muttley [-\]\: w may be considering n16
+Muttley [-\]\: n15 I mean
+sum [3d\]\: c13 was joseki mistake trying to make territory on left side, which was of little value bec open from b5. Instead B pincer must have  been high.
+]
+;W[kc]C[sum [3d\]\: d10 at f15 was better to prevent d14 
+];B[ja];W[kb];B[hb];W[me]
+C[Muttley [-\]\: I would have left the top alone as black on the grounds black didn't have a good move there
+Muttley [-\]\: unless the ko is worth playing
+]
+;B[kd];W[lf];B[ke];W[md];B[mf];W[ne];B[mg];W[of]C[hajasama\: so now white got a huge corner and black got some strenght to attack the white stick - is that right? 
+]
+;B[id]C[Muttley [-\]\: no
+];W[ka]C[Muttley [-\]\: w take gote to secure cash required
+Muttley [-\]\: there we go
+Muttley [-\]\: otherwise b connected under
+Shamash [?\]\: like i said, Podpera likes points =)
+Muttley [-\]\: indeed
+Muttley [-\]\: I'd take gote for that, to be fair, but its not a given
+]
+;B[fj]C[Muttley [-\]\: but yes, now w does have to live
+hajasama\: ok, but general idea is the same. Black needs to kill the stick otherwise falls behind. 
+]
+;W[ge]C[Muttley [-\]\: no, black needs to make enough profit from attacking it
+Muttley [-\]\: killing it is all in
+]
+;B[gd]C[Shamash [?\]\: the stick will not die
+Shamash [?\]\: but black has to buid the center, not easy
+hajasama\: but can black make such profit? Only the center is left....
+ben0 [6d\]\: that's the kind of game where I feel better as black
+]
+;W[gi];B[fi]C[hajasama\: what is the score estimate? 
+Shamash [?\]\: "would be simpliest to just take the ponuki and make the stick 100% alive...but how about no, let's kill black and let my groupe weaker than before" Lukas Podpera
+]
+;W[gg];B[hi]C[hajasama\: \:D
+];W[jg];B[kg];W[jf];B[kf];W[ji];B[pd];W[qe];B[qc];W[qb]
+;B[rc];W[rb];B[pg];W[oe];B[qh];W[el];B[ek];W[dk];B[fl];W[pi];B[og];W[qi];B[ri];W[rj]
+;B[rg];W[si];B[sh];W[rh];B[pb];W[ob];B[ri];W[nh];B[sj];W[ng];B[oi];W[oh];B[ph];W[pk]
+;B[rk];W[nj];B[dl];W[cl];B[dm];W[he]C[hajasama\: now white must connect to through the center...
+]
+;B[hd];W[qk];B[qj];W[pj];B[ps];W[qs];B[qr]C[Muttley [-\]\: w allive thourgh miai
+]
+;W[rl]C[bromba [1k\]\: isn't this ko too early?
+];B[rs];W[rj];B[nb];W[pa];B[qj]
+;W[cm]C[Shamash [?\]\: "let's kill all blak's stones on the right" Lukas Podpera
+Muttley [-\]\: black's alive in ko
+Shamash [?\]\: ko is enough
+]
+;B[em]C[Shamash [?\]\: black has no points outside the c17 corner
+];W[rj];B[oa]
+C[Shamash [?\]\: and the s1 corner
+];W[na]C[Muttley [-\]\: bottom right
+];B[qj]
+C[HappyLook [9d\]\: And center
+Muttley [-\]\: and top
+Shamash [?\]\: ...yeah anyway
+Muttley [-\]\: \:D
+]
+;W[db]C[Muttley [-\]\: small but significant, they add up
+HappyLook [9d\]\: And potential on bottom
+]
+;B[rj]C[Shamash [?\]\: how did w lose the down corner ? =o What did he gain ?
+hotfridge [1k\]\: he gained s8 stone..
+]
+;W[cc];B[cd];W[bc];B[eb];W[ca];B[bd];W[fb]C[Shamash [?\]\: oh..
+Shamash [?\]\: so not gained that much
+Warfreak2 [3d\]\: goooo lukan!
+Shamash [?\]\: come on lukas, dont lose here already
+]
+;B[hr];W[hq];B[ir];W[gq];B[iq];W[ad];B[ae];W[ac];B[bj]C[Shamash [?\]\: 58 for black, 61 for W, close game
+]
+;W[ko];B[kp];W[lo];B[lp];W[on]C[Shamash [?\]\: buid the center, not easy
+];B[bn]
+;W[bk];B[cj];W[ck];B[li]C[Warfreak2 [3d\]\: w a12 nice yose
+Warfreak2 [3d\]\: i guess a11 is better
+]
+;W[be];B[af];W[bf];B[ag];W[ah];B[bg];W[aj];B[cf]C[Warfreak2 [3d\]\: or is there a L+D problem? this way b is alive in gote, but i'm not sure about b14
+]
+;W[ak];B[be];W[mh]C[Warfreak2 [3d\]\: i think if w a12 instead of b14, there's a ko
+]
+;B[lh];W[nf];B[lg];W[lk];B[mm]C[tappaiyok [?\]\: this game feels good for white to me
+]
+;W[mn];B[km];W[ml]C[tappaiyok [?\]\: black only made good points at the bottom and now maybe in the middle
+]
+;B[lm];W[nm];B[no];W[nn];B[gh];W[ql];B[kk];W[sm];B[sn];W[po]C[Shamash [?\]\: it's smell the kill 
+]
+;B[qo]C[tappaiyok [?\]\: at the very least it will force black to capture the stones inside
+]
+;W[qp]C[tappaiyok [?\]\: and that is couple of points
+Shamash [?\]\: oh no, nevermind
+Shamash [?\]\: just bif yose
+Shamash [?\]\: big
+]
+;B[sq];W[sp];B[pn];W[oo];B[pm]C[tappaiyok [?\]\: can he do that? what about wT2?
+]
+;W[om]C[tappaiyok [?\]\: can't that be a seki or something?
+];B[ro];W[op]C[tappaiyok [?\]\: nvm
+]
+;B[so];W[oq];B[rq];W[np];B[mp]C[tappaiyok [?\]\: wN3 looked nice, I wonder
+];W[jp]
+C[tappaiyok [?\]\: maybe same
+EGF4 [?\]\: Podpera  10\:33   Kaymin    2\:36
+];B[jq]
+;W[mo]C[tappaiyok [?\]\: J4 first?
+];B[mq]C[tappaiyok [?\]\: I guess I can't be a pro, yet
+]
+;W[rf];B[qg];W[sf];B[sg];W[ho];B[lj];W[mk];B[hg];W[hf];B[fg];W[gf];B[ig];W[ih];B[ii]
+;W[if];B[hh];W[jh]C[Shamash [?\]\: who is ahead ?
+sagesse [-\]\: white
+];B[hn];W[jk]
+;B[kj];W[jj];B[go];W[hk]C[Shamash [?\]\: cool
+];B[gs];W[fr];B[hl];W[il];B[gk];W[hm]
+;B[gm];W[im];B[in];W[jn];B[kl];W[io];B[gn];W[hj];B[gb];W[fc];B[gj];W[fs];B[hs];W[ip]
+;B[gp];W[hp];B[ao];W[bq];B[ij];W[ik];B[fa];W[ea];B[ga];W[gc];B[hc];W[ia];B[jm];W[bm]
+;B[mi];W[ni];B[pl];W[ol];B[pf];W[pe];B[ap];W[aq];B[an];W[kn];B[am];W[al];B[gl];W[sl]
+;B[fq];W[mj];B[ki];W[ff];B[kh];W[ai];B[ej];W[fe];B[ll];W[ln];B[qm];W[jl];B[sk];W[ie]
+;B[rm];W[je];B[bh];W[ei];B[bi];W[ja];B[ha]C[EGF4 [?\]\: W+14,5
+Shamash [?\]\: gg
+tappaiyok [?\]\: gg
+Shamash [?\]\: not even close
+Milos [6k\]\: \\o/
+]))

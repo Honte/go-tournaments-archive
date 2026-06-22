@@ -1,0 +1,1421 @@
+(;CA[utf-8]FF[4]ST[2]RU[Chinese]C[EGF2 [?\]\: nigiri now
+EGF2 [?\]\: tanguy takes black
+]
+AP[CGoban:3]SZ[19]GM[1]GN[EGF Pro Quali round 2 Stanislaw Frejlak (w) vs Tanguy Le Calvé (b)]
+EV[EGF Pro Quali round 2 Stanislaw Frejlak (w) vs Tanguy Le Calvé (b)]RO[2]DT[2019-05-17]
+PC[The KGS Go Server at http\://www.gokgs.com/]PB[Tanguy Le Calve]BR[6d]PW[Stanislaw Frejlak]
+WR[7d]KM[7.5]RE[W+R]US[Lorenz Trippel]AN[Lorenz Trippel]MULTIGOGM[1]
+;B[qc];W[dp];B[pq];W[dc];B[ce]C[EGF2 [?\]\: Results and pairings\: https\://eurogofed.org/proqualification/index_2019.html
+]
+;W[ed]C[aniela [2k\]\: what is the time limit?
+ogolony [-\]\: e16 is no longer slow?
+yakcyll [4k\]\: 75min + 20sec per move
+Jupiter15k [6d\]\: even if it was slow, it is considered slow as Black (cause of the komi) \:)
+Shamash [?\]\: Stanislaw is 7d, tanguy is 6d
+]
+;B[cn]C[EGF2 [?\]\: photo of this game and the place https\://www.instagram.com/p/BxjhQEnCbV-/
+Laman [1d?\]\: wow, a cool venue
+]
+;W[fq]C[cezary\: Isnt staś 7d ?
+Jupiter15k [6d\]\: the scribe reversed
+];B[cp]
+C[cezary\: i think you can still change it in options -> rules
+cezary\: btw Lorenz, why dont you come to Zurich go club next wednesday are you around?
+gfdhfff [3k\]\: i will come
+cezary\: sure
+]
+;W[cq];B[bq];W[co];B[bp]C[cezary\: more than welcome
+];W[do];B[bo];W[cr]C[EGF2 [?\]\: yes will try to come to the club more \:)
+]
+;B[cl];W[qo];B[qp]C[cezary\: awesome \:)
+];W[po];B[nq];W[qk]C[cezary\: bring mr. Bitzi with you if you may ;p
+EGF2 [?\]\: and li yue!
+EGF2 [?\]\: she is the strongest player in zurich
+cezary\: i hoped for even game, but this starts to be like christmas \:D
+Jupiter15k [6d\]\: k17 has became the biggest point for both \:)
+Shamash [?\]\: maybe just enclose the corner with o16 ? 
+]
+;B[hd]C[Shamash [?\]\: nevermind
+Shamash [?\]\: i'm too slack
+Jupiter15k [6d\]\: o16 seemed good as well \:)
+Jupiter15k [6d\]\: but then W m17 would be annoying I guess
+Jupiter15k [6d\]\: d14 to make a leaning attack and keep B low seems good
+Shamash [?\]\: c16 just take profit like a boss/bot ?
+Jupiter15k [6d\]\: bot are not as passive as you may think ^^
+Jupiter15k [6d\]\: and the reinforcment at d15 would be too good working well with c8
+ben0 [6d\]\: so far so good
+ben0 [6d\]\: tanguy likes this kind of opening
+Shamash [?\]\: i thought the bot strategy was take the points and invade everywhere without respect or shame
+]
+;W[nc]C[Jupiter15k [6d\]\: l17?
+ben0 [6d\]\: if pincer, I prefer m17
+Jupiter15k [6d\]\: yes but afraid of k17 then
+Jupiter15k [6d\]\: but possible
+ben0 [6d\]\: yup, more fight
+]
+;B[kc]C[ben0 [6d\]\: mild tanguy
+cezary1\: my leela says 40% for black now
+Jupiter15k [6d\]\: and before l17? and what was the good move?
+ben0 [6d\]\: very close still then, good
+cezary1\: and l17 was leelas choice too
+Jupiter15k [6d\]\: but B played AI op haha
+ben0 [6d\]\: the only move I do not agree with b so far is h16
+Jupiter15k [6d\]\: maybe didn't like r17 and c8
+ben0 [6d\]\: i would have played d13
+Shamash [?\]\: but tanguy is 7D now =p
+ben0 [6d\]\: they mixed up both ranks
+Shamash [?\]\: i know ahah
+]
+;W[pd]C[cezary1\: leela also disagrees with h16 
+Shamash [?\]\: what would leela play instead ?
+cezary1\: it would like to play d13
+Jupiter15k [6d\]\: I think I finally got h16 intention\: if W d14 then B cut with d15 and fight, since the ladder is good for B
+Shamash [?\]\: ben0 plays like leela, congrats
+]
+;B[qd];W[pf]C[Jupiter15k [6d\]\: I think now B focus on getting sente to finally get d13
+]
+;B[qe]C[Jupiter15k [6d\]\: d13 is the only move for Leela in every situation Shamash  lol
+Shamash [?\]\: ooooh
+]
+;W[qf]C[Shamash [?\]\: i wanted to play b17 for black xD
+];B[pe];W[oe];B[of];W[ne]
+;B[og]C[cezary1\: bot prefered o14 here
+cezary1\: but this seems also fine only 1% less
+]
+;W[qh]C[cezary1\: bot wants to play p18 and then tenuki
+cezary1\: what do you think about this ?
+cezary1\: p18 n14 e14 
+Shamash [?\]\: i'm sure inseong would prefer o14 too (give presure, take away one liberty)
+Jupiter15k [6d\]\: I think it's b intention 
+Jupiter15k [6d\]\: but maybe not e14 in the end
+cezary1\: in o14 variation leela sacrifices whole p15 and captures l17 and c15 
+ben0 [6d\]\: I like q10 here
+ben0 [6d\]\: block then q12
+cezary1\: leela gives this 10%+ for white after these two
+cezary1\: aha, but it will not respond to q10 by r10
+cezary1\: but by s15
+]
+;B[ob];W[le]C[ben0 [6d\]\: i see
+ben0 [6d\]\: well then q12 now seems not bad
+ben0 [6d\]\: m15 looks super sow
+ben0 [6d\]\: slow
+cezary1\: leela would like to see n14 kosumi
+cezary1\: instead of this
+cezary1\: 2.1% difference 
+KyamiRefur [2d\]\: hello \:)
+cezary1\: intetestingly now it is fine for her to play your exchange ben0
+HisokaH [4d?\]\: you mean "it" instead of "her" \:D
+HisokaH [4d?\]\: oyo KyamiRefur
+cezary1\: it her yeah \:D
+JEGO [9k\]\: more powerful Black Q12?
+]
+;B[oi]C[KyamiRefur [2d\]\: oyo hiso \:D
+ben0 [6d\]\: i also dont like p11
+Shamash [?\]\: Ah elle est arrivée
+ben0 [6d\]\: these tobi all around to the center are sloooooooooooow
+HisokaH [4d?\]\: oyo benounet
+HisokaH [4d?\]\: ouais... tobi vers le centre... \:p
+JEGO [9k\]\: nos so slow because cutting move possible 
+JEGO [9k\]\: r11 en coupe noire est t'elle possible?
+]
+;W[mg]C[Jupiter15k [6d\]\: oui
+Shamash [?\]\: Kyky, rémi a perdu de cb du coup hier contre rob ?
+Blacko [9k\]\: 1.5
+EGF2 [?\]\: 38 minutes for Tanguy, 54 minutes for Stanislaw
+Jupiter15k [6d\]\: what about o10?
+Jupiter15k [6d\]\: making sort of miai btw r11 and m10
+KyamiRefur [2d\]\: 1.5 rija
+cezary1\: o10 q12 
+Jupiter15k [6d\]\: that bot too smart
+cezary1\: r11 doesnt really work
+cezary1\: \:(
+Jupiter15k [6d\]\: if that doesn't work leela wouldn't play q12
+]
+;B[pk]C[Shamash [?\]\: ah du coup c bien ce que je disais, hier je préférais noir <3
+cezary1\: locally leela liked m10 the most
+cezary1\: which looks crazy doesnt it
+Shamash [?\]\: for black ?
+KyamiRefur [2d\]\: Les bots n'étaient pas de ton avis ;)
+]
+;W[ql]C[Shamash [?\]\: dont like this attach, it's looks like removing the weaknesses of W on the side
+Jupiter15k [6d\]\: n10?
+]
+;B[mj]C[Jupiter15k [6d\]\: pas le choix Shamash
+Shamash [?\]\: comme quoi ça sert à rien de se baser sur les bots vu que les joueurs ne jouent pas comme eux kyky <3 le go est une aventure humaine avant tout, nah
+Shamash [?\]\: black seems a little bit too cramped, no ?
+JEGO [9k\]\: blanc a du coup un groupe faible maintenant
+]
+;W[df]C[Jupiter15k [6d\]\: finally lol
+KyamiRefur [2d\]\: t'as raison, surtout rester sur ses positions pour progresser ;)
+Jupiter15k [6d\]\: but maybe W should have defended one more time his grp around m15
+cezary1\: this was best
+Jupiter15k [6d\]\: we'll see if he can handle that
+cezary1\: siasio is the fight master
+]
+;B[cg]C[JEGO [9k\]\: then O18 white?
+Shamash [?\]\: ce n'est pas rester sur ses positions c'est avoir une opinion affirmée =)
+Gonzalate [5d?\]\: aloors
+Gonzalate [5d?\]\: où on en est par ici
+mogget [?\]\: I dont like this position for stanislaw, but im not a fighting master, so what can I know?
+KyamiRefur [2d\]\: oh yes, gonzalate est réveillée
+ben0 [6d\]\: on en est à stas est mou
+Jupiter15k [6d\]\: les retardataires ne sont pas admis désolé…
+ben0 [6d\]\: mais tanguy est super mou
+Gonzalate [5d?\]\: tu veux dire, Gonzalate a enfin vérifié l'heure de la ronde et vu avec surprise que c'était pas 10h30
+Gonzalate [5d?\]\: ah
+Gonzalate [5d?\]\: des japonais donc
+KyamiRefur [2d\]\: ahah
+ben0 [6d\]\: c'est ca
+KyamiRefur [2d\]\: ptit café ? \:D
+Gonzalate [5d?\]\: \:)
+Jupiter15k [6d\]\: Stan n'est pas mou voyons, c'est le Iyama Yuta style, "la force tranquile"
+KyamiRefur [2d\]\: l'attaque du groupe au nord devrais donner un peu de peps \:D
+Gonzalate [5d?\]\: je trouve noir un peu plus confort
+JEGO [9k\]\: blanc K15 serait pas mal pour mettre la pression aussi
+domie [2k\]\: K15 c'est trop cool
+KyamiRefur [2d\]\: hello marc 
+JEGO [9k\]\: salut kyami
+]
+;W[ic]C[Gonzalate [5d?\]\: ouch
+KyamiRefur [2d\]\: ça a l'air pas mal, ça ou o18 ?
+KyamiRefur [2d\]\: ah 
+JEGO [9k\]\: vrai J17 un peu plus dur
+Gonzalate [5d?\]\: tsuke en l15 ?
+KyamiRefur [2d\]\: ça a l'air facile pour noir là non ?
+Jupiter15k [6d\]\: Oui mais je serais pas serein sur le groupe blanc
+ben0 [6d\]\: j'aime pas ce coup
+EGF3 [?\]\: je vote aussi pour L15
+EGF3 [?\]\: allez tanguy !
+Gonzalate [5d?\]\: c'est qui scribe aujourd'hui?
+Gonzalate [5d?\]\: Ailian?
+KyamiRefur [2d\]\: juste j16 non ?
+domie [2k\]\: ça se passe où cette petite sauterie au fait ?
+Gonzalate [5d?\]\: à stras
+Jupiter15k [6d\]\: strasbourg
+domie [2k\]\: ok
+KyamiRefur [2d\]\: "stras", ça sonne paillettes et tapis rouge
+Gonzalate [5d?\]\: j16 ça donne trop de choix à blanc pour ce qu'il veut faire
+fitomarina [4k\]\: Can you comment in English or otherwis
+fitomarina [4k\]\: E
+Gonzalate [5d?\]\: ah yes sorry
+domie [2k\]\: femme de communication Camille
+fitomarina [4k\]\: Talk private?
+Gonzalate [5d?\]\: sorry, everytime we get a french player we can't help it \:) we'll make an effort
+ben0 [6d\]\: bah non
+domie [2k\]\: but fitomarina we were speaking about you, that's why we were talking french
+ben0 [6d\]\: on peut autant parler français qu'anglais ici
+]
+;B[ke]C[KyamiRefur [2d\]\: je suis moins à l'aise pour sortir des absurdités en anglais
+JEGO [9k\]\: this is fight now
+fitomarina [4k\]\: Oh. But i am not gay...
+]
+;W[kf]C[domie [2k\]\: lol
+yakcyll [4k\]\: it's more that there are others that would probably be interested in your comments or want to chime in
+yakcyll [4k\]\: it's a public chat after all
+yakcyll [4k\]\: don't exclude everybody else
+Jupiter15k [6d\]\: B won't catch the grp but can attack it with l10 to be safe with his grp
+domie [2k\]\: 晚安
+Jupiter15k [6d\]\: and gain influence which will enable him to play H3 maybe
+ben0 [6d\]\: bref
+ben0 [6d\]\: du coup j'aime bien noir à nouveau là
+KyamiRefur [2d\]\: idem
+JEGO [9k\]\: k15 noir normalement
+KyamiRefur [2d\]\: l'échange j17 pour l15 k15 est pas ouf j'ai l'impression pour le global
+Shamash [?\]\: ahahah they still talk in french and does'nt care at all ahahahaahha
+Paragon [12k?\]\: Siasio!
+KyamiRefur [2d\]\: je débute trop en kibbitz pour passer à l'anglais
+Shamash [?\]\: ah novice que tu es
+cezary1\: well, nothing less expected form french, but i guess kibitz in all languages is ok i dont mind
+Gonzalate [5d?\]\: this sequence is really anoying 
+domie [2k\]\: yes french people are bad guys (there are some exceptions)
+Shamash [?\]\: you are the bad guy
+KyamiRefur [2d\]\: girls ?
+KyamiRefur [2d\]\: 8)
+HisokaH [4d?\]\: Focus on the game ? \:)
+ben0 [6d\]\: milena is a very bad girl
+Shamash [?\]\: girls just wanna to have fun
+Gonzalate [5d?\]\: eh
+KyamiRefur [2d\]\: ahah
+ben0 [6d\]\: ah on voit qu'hiso est belge, il veut parler de la partie
+Jupiter15k [6d\]\: is there another move than k15?
+HisokaH [4d?\]\: \:D
+ben0 [6d\]\: ce faible
+Shamash [?\]\: mdr
+Gonzalate [5d?\]\: so, black nobi seems a reasonable choice
+ben0 [6d\]\: k15 only choice
+KyamiRefur [2d\]\: bah on attend le créatif nobi, donc y'a pas grand chose à dire la
+Jupiter15k [6d\]\: yes lol
+Gonzalate [5d?\]\: maybe he's considering l16??
+Gonzalate [5d?\]\: but beurk
+Jupiter15k [6d\]\: maybe gone to the toilet
+Shamash [?\]\: nobi de baptiste il parait, non c pas ça ici ? lol
+Shamash [?\]\: tous les nobi sont des nobi de baptiste
+Whithak [5k\]\: & what would be the continuation for w?
+ben0 [6d\]\: resignation
+Shamash [?\]\: h17
+KyamiRefur [2d\]\: la forme c'est m16 mais o18 parait cool non ?
+Shamash [?\]\: non
+Shamash [?\]\: =)
+domie [2k\]\: nobi wan kenobi
+Gonzalate [5d?\]\: I'd say black would play somethign to stabilize its group on the right no?
+KyamiRefur [2d\]\: merci pour l'argumentaire shamash
+Gonzalate [5d?\]\: I mean it seems quite ok but..
+Shamash [?\]\: de rien kyky c'est toujours un plaisir
+Shamash [?\]\: <3 love love 
+Jupiter15k [6d\]\: spoil\: K15 H17 K14 L13 J12 L11 
+Gonzalate [5d?\]\: and then some stone around K4
+Gonzalate [5d?\]\: maybe
+cezary1\: leela wants black to connect with o18
+Gonzalate [5d?\]\: it feels empty over there \:D
+Jupiter15k [6d\]\: hum ok not j12 but l10
+Jupiter15k [6d\]\: o18 now??
+cezary1\: after k15 h17 
+KyamiRefur [2d\]\: ah x)
+Jupiter15k [6d\]\: seems good otherwise B will have 2 weak groups
+domie [2k\]\: bon il vient ce nobi ?
+KyamiRefur [2d\]\:  \\o/ allez tanguy !
+JEGO [9k\]\: yes L16 a good move 
+KyamiRefur [2d\]\: large le temps d'aller se faire un café apparement
+JEGO [9k\]\: y a moyen pour noir de contre attaquer la position blanche
+JEGO [9k\]\: je vais me faire un café
+cezary1\: how much time left for players ?
+Shamash [?\]\: si tanguy win franchement, y a moyen d'espérer le voir pro
+EGF2 [?\]\: Tanguy\: 19\:21 Stanislaw\: 44 min
+JEGO [9k\]\: oui espérons, Tanguy est de mon club, il sera le premier pro francais ^^
+Shamash [?\]\: stanislaw joue vite dis donc
+KyamiRefur [2d\]\: si tanguy blitz seul, par contre, y'a moyen que ça n'aide pas bcp
+Shamash [?\]\: tanguy n'est pas de ton club, tanguy est à toute la france =D
+KyamiRefur [2d\]\: made in Nantes \:D
+zefciu\: Czy jak druga połowa kibiców zacznie gadać po polsku, to Francuzi się opamiętają?
+]
+;B[hc]C[Coorchac [2d?\]\: Myślę, że nie ma tylu kibiów z Polski
+cezary1\: a niech gadaja
+cezary1\: co to szkodzi \:)
+Dumbled0re [5k\]\: no k15....
+JEGO [9k\]\: haaha un coup créatif enfin !
+Shamash [?\]\: olala y a un type qui parle dans sa langue, booooo
+yakcyll [4k\]\: zefciu o/
+Jupiter15k [6d\]\: mais que… je quitte l'écran 1s des yeux et ceci arrive
+comfyditch [1k\]\: why are  so mahy of you using French?  w's name idicate he's a Frenchman.
+KyamiRefur [2d\]\: méfiez vous, joueurs français. Shamash a une collection de poupées vaudou et il est apparement possesif
+cezary1\: l16 for w
+ben0 [6d\]\: euh
+ben0 [6d\]\: yeah
+ben0 [6d\]\: ofc
+ben0 [6d\]\: tanguyyyyyyy
+ben0 [6d\]\: kestufou
+Jupiter15k [6d\]\: mdr
+baduk [?\]\: są i to wielu 
+prosody [9k?\]\: que des bêtises \:D
+comfyditch [1k\]\: doesnt
+EGF3 [?\]\: \:'( 
+KyamiRefur [2d\]\: strange move \:)
+cezary1\: black was thinking so long
+cezary1\: he couldnve played anything else than a mistake
+EGF3 [?\]\: rare move
+cezary1\: since everything except k15 was one
+Shamash [?\]\: nah j'ai des poupées vaudou que pour les filles =) #creepy
+yakcyll [4k\]\: podobno tanguy ścina gruszki zimą \:thinking\:
+Coorchac [2d?\]\: \:0
+comfyditch [1k\]\: toughguy move
+Shamash [?\]\: lol
+ben0 [6d\]\: il a vraiment peur
+ben0 [6d\]\: ca se voit dans ses coups
+Shamash [?\]\: ouai
+Jupiter15k [6d\]\: ben tu ferais atari quel sens là x) ?
+JEGO [9k\]\: not at all if white push black push in advance
+KyamiRefur [2d\]\: l16
+mogget [?\]\: No a ja słyszałem, że jak się gruszki ścina tanguy to trzeba uważać na palce
+ben0 [6d\]\: l16
+ben0 [6d\]\: direct
+Shamash [?\]\: le kiai du 7d doit être impressionnant
+JEGO [9k\]\: J15 H15 ETC
+KyamiRefur [2d\]\: si ben le dit \:p
+cezary1\: h17 is -8% move
+cezary1\: dawaj stas to ponuki rob \:d
+KyamiRefur [2d\]\: first mistake in the game
+prosody [9k?\]\: but not last!
+Jupiter15k [6d\]\: je pense aussi l16 parce que k15 marche pas\: K15 L16 J16 J18 K18 K17 
+KyamiRefur [2d\]\: sure ^^
+yakcyll [4k\]\: the one to lose will be the last one to make a mistake most likely
+yakcyll [4k\]\: long way to go
+KyamiRefur [2d\]\: yes yak \:)
+Jupiter15k [6d\]\: who's the favorite to become pro? I think Stanislaw is, then 2nd is Cornel
+KyamiRefur [2d\]\: always give the opponent time to make his own mistakes
+Gonzalate [5d?\]\: I'd say Cornel first
+Jupiter15k [6d\]\: so if Tanguy can win, he will be the next one \:)
+ben0 [6d\]\: atm cornel yeah
+prosody [9k?\]\: gravity of the mistake matters- he's only the last one to make a mistake because he lost before the opponent made another
+mogget [?\]\: The first one is Stanislaw, the second one is also stanislaw if he has a bad tournament
+comfyditch [1k\]\: isnt le Calve supposed to be some sort of basic genius?
+Gonzalate [5d?\]\: "some sort of basic genius"
+JEGO [9k\]\: H17 is a real pro move ^^
+Gonzalate [5d?\]\: pas mal ça
+prosody [9k?\]\: aren't all strong go players?
+Shamash [?\]\: what about Podpera ?
+ben0 [6d\]\: podpera is good
+ben0 [6d\]\: but he has no chance
+Gonzalate [5d?\]\: EGF3, what do you think about this move now?
+Gonzalate [5d?\]\: how can white punish ?
+ben0 [6d\]\: somehow he always fails the exam
+Shamash [?\]\: psychologie issues ?
+comfyditch [1k\]\: Yes. extremely capable and original  in multiple disciplines
+Shamash [?\]\: for me it's most like \: 1 Stanislaw, 2 Podpera, 3 cornel
+Gonzalate [5d?\]\: l16 ?
+EGF3 [?\]\: hmm L16 doit être le meilleur coup mais K15 me paraît déjà suffisant
+Gonzalate [5d?\]\: ou k15?
+Gonzalate [5d?\]\: aha
+Jupiter15k [6d\]\: k15 marche pas 
+EGF3 [?\]\: atari, connexion, L10 et blanc est content
+Jupiter15k [6d\]\: oui mais noir bien vivant après
+ben0 [6d\]\: the fact that stas takes so much time to play is good news
+ben0 [6d\]\: bad move incoming
+Coorchac [2d?\]\: Może napiszę to po polsku, co by nie rozsiewać plotek dalej - Siasio pojechał na ten turniej trochę niezbyt zdrów, więc zobaczymy jak to będzie \:<
+Gonzalate [5d?\]\: it's quite a bad advertisment "think long and play a mistake"
+ogolony [-\]\: a co mu jest?
+yakcyll [4k\]\: tasuki go zmęczył na warszawskim.
+Coorchac [2d?\]\: Nic poważnego, coś złapał, ale przeziębienia osłabiają jakość gry u niego mocno
+mogget [?\]\: Coorchac, zapomniałeś dodać Tanguy
+yakcyll [4k\]\: wowzers
+prosody [9k?\]\: move fast, die fast. move slow, die slow
+]
+;W[kd]C[Jupiter15k [6d\]\: d17 not alive yet also
+Gonzalate [5d?\]\: jajaj
+cezary1\: boom
+Jupiter15k [6d\]\: l16 remove the eyes \:)
+ben0 [6d\]\: shit
+ben0 [6d\]\: he played good
+Shamash [?\]\: of course, he is the favorite
+Gonzalate [5d?\]\: so EGF, what kind of face is Tanguy having right now?
+Gonzalate [5d?\]\: or doing, making
+prosody [9k?\]\: making
+Gonzalate [5d?\]\: thanks
+prosody [9k?\]\: no problem
+Shamash [?\]\: yes, more details on the players please
+mogget [?\]\: Wczoraj po Siasiu nie było widać, że jest osłabiony - wręcz przeciwnie
+prosody [9k?\]\: let that english degree have some purpose haha
+Gonzalate [5d?\]\: describe his despair 
+EGF2 [?\]\: Focused, hand supporting the head slightly, beautiful eyes and great posture
+cezary1\: no dokladnie
+prosody [9k?\]\: oooh
+Coorchac [2d?\]\: \:3
+prosody [9k?\]\: that calls for fangics
+prosody [9k?\]\: fanfics
+cezary1\: moze jakeis zachodnie apteki zachodnie lekarstwa i zachodnie powietrze
+cezary1\: wiecie jak jest
+cezary1\: poczul moc
+EGF2 [?\]\: Stanislaw is as focused, his hand moving in front of his mouth, the head slightly inclined
+Gonzalate [5d?\]\: so he...knows what he is doing
+]
+;B[id]C[Gonzalate [5d?\]\: hopa
+Gonzalate [5d?\]\: nooo
+];W[lc]C[cezary1\: interestingly leela
+cezary1\: o yea
+cezary1\: this is the move
+JEGO [9k\]\: haha
+Gonzalate [5d?\]\: oh my
+mogget [?\]\: NIc tak nie poprawia zdrowia jak zabicie przeciwnika w pierwszej rundzie i wyssanie jego sił życiowych'
+Coorchac [2d?\]\: xD
+]
+;B[jc]C[cezary1\: this is another mistake
+Coorchac [2d?\]\: uh, "iksde" na kgs jest obrzydliwe
+Laman [1d?\]\: mogget\: \:D
+ogolony [-\]\: mam nadzieje że zabił go tylko na desce
+Gonzalate [5d?\]\: I feel like drinking champain through the eyes
+comfyditch [1k\]\: looks like a lot of work to capure 1 b stone
+cezary1\: nice observation comfy
+JEGO [9k\]\: l15 black?
+mogget [?\]\: It is really good for Stanislaw
+cezary1\: now leela says s15
+ben0 [6d\]\: yup
+ben0 [6d\]\: big
+mogget [?\]\: Like he has no problems now
+prosody [9k?\]\: their eyes meet for a fraction of a second, before stanislaw's are drawn sheepishly back to the board. what was his opponent thinking? blushing, he thought intently of his strategy.
+ben0 [6d\]\: c16 big aswell
+Coorchac [2d?\]\: We need to stop right now
+yakcyll [4k\]\: xd
+Jupiter15k [6d\]\: c16 was thinking the same
+mogget [?\]\: But they would be such a cute couple
+prosody [9k?\]\: "intense go game" is the peak ship dynamic
+EGF2 [?\]\: Stanislaw has his hand all over his face now, in an intense thinking stance, he is still looking at this local situation with great determination.
+prosody [9k?\]\: would his hand falter? would his trembling lip reveal his true feelings?
+yakcyll [4k\]\: O Hesus grande, stop.
+prosody [9k?\]\: xD
+Coorchac [2d?\]\: xD
+Gonzalate [5d?\]\: so
+EGF2 [?\]\: Tanguy leaves his post, walking around a bit and looking at some other games. But always with an eye on the board.
+]
+;W[cf]C[Gonzalate [5d?\]\: is this that terrible for black eventually ?
+];B[bf]
+;W[de]C[prosody [9k?\]\: and the other eye looking into his rival's- nay, into his very heart
+EGF2 [?\]\: Tanguy\: 17 min. Stan\: 31 min
+Gonzalate [5d?\]\: ah ça craint il va bientôt faire nimp en time press
+cezary\: hahaha prosody
+cezary\: you crazy
+mogget [?\]\: Finally some TIME
+ben0 [6d\]\: bon après ca reste encore très très ouvert hein
+prosody [9k?\]\: It's not crazy, I'm just jocularly shipping two people whom I don't know
+prosody [9k?\]\: wait
+prosody [9k?\]\: okay maybe it is
+yakcyll [4k\]\: \: t h i n k i n g \:
+ben0 [6d\]\: blanc est juste plus solide
+ben0 [6d\]\: mais aux points ca va
+Gonzalate [5d?\]\: yeah I've a bad feeling about the center though
+Gonzalate [5d?\]\: top 
+Jupiter15k [6d\]\: h3?
+cezary\: they know themselves very little too, and very little did they know their future is bound together
+Gonzalate [5d?\]\: g3!
+prosody [9k?\]\: de par ma très faible expérience, ç'a l'air chaud pour noir quand même
+]
+;B[bd];W[cd];B[be];W[bc]C[Shamash [?\]\: tanguy est très bon en blitz, il devrait pas s'effondrer en byo quand même
+]
+;B[cb]C[Gonzalate [5d?\]\: bim allez
+];W[cc]C[ben0 [6d\]\: c'est très different d'être en blitz ou d'être en byo en partie lente
+]
+;B[je]C[Gonzalate [5d?\]\: hhhh
+Gonzalate [5d?\]\: c11?
+EGF2 [?\]\: After this move, Stanislaw let a "tss" get out
+Shamash [?\]\: ah bon...
+Jupiter15k [6d\]\: doubtful
+cezary\: leela says c9 with 78%
+cezary\: also likes s15 with 78,3
+KyamiRefur [2d\]\: tanguy est bon en blitz quand l'adversaire est en blitz
+Gonzalate [5d?\]\: putain jy ai pensé
+Gonzalate [5d?\]\: pardon
+Coorchac [2d?\]\: (chyba jednak mu się wyrwało "ccc")
+EGF3 [?\]\: wow S15, that's interesting
+prosody [9k?\]\: C'est génial le mélange de langues dans le chat quand même il y a pas ça sur ogs c'est moins festif
+cezary\: myslisz ze chcial ten kamien \:p ?
+cezary\: na pewno chcial
+cezary\: kurde jakbysmy stasia nie znali
+cezary\: \:D
+Drzeryja\: SIASIO! DO BOJU!!!!! 
+EGF2 [?\]\: Tanguy has a look at Schayan and Remi who are laughing briefly in their game
+Coorchac [2d?\]\: myślę, że on już my sli nad zabiciem całej tej grupy xD
+Shamash [?\]\: c tanguy qui provoque ce déferlement de joie
+cezary\: ciekawe czy mysli nad zabiciem tego r17
+cezary\: bo ten ruch w s15 naprawde ciekawy
+Gonzalate [5d?\]\: I guess Stas will go for C9
+Gonzalate [5d?\]\: unless they're japanesed again (no offense)
+cezary\: what does that mean ?
+yakcyll [4k\]\: C9 attachment? How does it work?
+EGF3 [?\]\: qu'est-ce que tu as contre les Japonais toi ! \:-)
+Gonzalate [5d?\]\: \:-)
+Shamash [?\]\: japaneses are great players
+Gonzalate [5d?\]\: moi aussi je joue japonais pff
+EGF2 [?\]\: Stanislaw is looing at the C9 area, one hand on his cheek
+Shamash [?\]\: on est tous japonais
+prosody [9k?\]\: moi je joue dans mon coin
+Gonzalate [5d?\]\: let's say japanese don't play like koreans \:D
+prosody [9k?\]\: wishing he could brush tanguy's cheek instead
+Shamash [?\]\: but korean learned from japanese
+cezary\: c9 d8 d6 d13  c7 b6 b8 b7 d9 leela gives me something like this
+prosody [9k?\]\: didn't koreans learn from the chinese before the japanese did?
+Shamash [?\]\: but chinese learned from japanese as well
+cezary\: if black goes c9 d8 d6 d9 then apparently there's tesuji at d10 
+prosody [9k?\]\: well the chinese did create the game to begin with
+]
+;W[kj]C[Dumbled0re [5k\]\: the game was created by itself
+Gonzalate [5d?\]\: wooo
+Gonzalate [5d?\]\: nice
+Gonzalate [5d?\]\: et du coup noir peut jouer s14?
+Gonzalate [5d?\]\: \:D
+cezary\: s15 and c9 is 80%
+cezary\: l10 is 66
+cezary\: maybe stas is afraid that his upper group will die ?
+cezary\: but any local move, leela doesnt like, it accepts only d13
+Coorchac [2d?\]\: what a chicken
+Gonzalate [5d?\]\: I think he's trying to put preasure on the black group to attack on the left with more flexibility
+comfyditch [1k\]\: so was the world and indeed the whole of the universe, disregarding momentarily all qiuestions concerning  with the concreteness of reality
+yakcyll [4k\]\: coorchac xd
+cezary\: i guess there's no real attack at p11 since he can play q12 
+cezary\: he, black
+]
+;B[ki]C[Gonzalate [5d?\]\: ha
+cezary\: ok we back at 80% for white
+yakcyll [4k\]\: conditional 80%
+yakcyll [4k\]\: a new mountain range emerges
+Warfreak2 [3d\]\: gooo siasio!
+cezary\: but you know, white is afraid of his group in the upper side
+yakcyll [4k\]\: understandable
+yakcyll [4k\]\: this match is played by humans after all
+prosody [9k?\]\: go players are not human naymore
+prosody [9k?\]\: any more
+yakcyll [4k\]\: i'd be walking on the ceiling from nerves
+cezary\: next qualifications are in two years time right ?
+Coorchac [2d?\]\: kurde Tanguy serio ścina gruszki zimą ;|
+]
+;W[ji]C[mogget [?\]\: yeah
+];B[kh]C[prosody [9k?\]\: dur de ne pas vouloir K10, c'est la double coupe et tengen à la fois
+Gonzalate [5d?\]\: suddenly I like black again
+JEGO [9k\]\: c'est l'encerclement de blanc
+]
+;W[jf];B[jh]C[ben0 [6d\]\: yup
+ben0 [6d\]\: looks ok for b this fight
+ben0 [6d\]\: problem is the left group
+]
+;W[if]C[Shamash [?\]\: blanc est entrain de dire\: t'es pas vivant mec
+mogget [?\]\: Siasio is trying to kill, but there is nothing to kill yet
+JEGO [9k\]\: F
+JEGO [9k\]\: vIVANT SI f17  noir
+Deejay [?\]\: is it a good exchange? theses k11 l10 stones look lonely
+cezary\: not so
+cezary\: -20% swing 
+ben0 [6d\]\: yeah
+mogget [?\]\: J 14 is not that improstant for white
+]
+;B[jj]C[ben0 [6d\]\: feels like it
+Gonzalate [5d?\]\: allez làààà
+comfyditch [1k\]\: time?
+ben0 [6d\]\: and I like that move as well
+Shamash [?\]\: come on tanguy, you can do it
+ben0 [6d\]\: good good
+EGF2 [?\]\: Tanguy\: 11.47  Stan 23 min
+]
+;W[gb]C[Shamash [?\]\: allez là !
+Gonzalate [5d?\]\: oupsy
+ben0 [6d\]\: k14 was the mistake I feel
+Shamash [?\]\: y a du spectacle
+JEGO [9k\]\: yes
+JEGO [9k\]\: M18
+EGF2 [?\]\: Tanguy pass the 10 min mark
+Deejay [?\]\: K10 painful for white
+JEGO [9k\]\: c'est vivant mais faut pas tarder
+Deejay [?\]\:  Hope white can get some profit on the top
+cezary\: bot kazal grac d13  dla czarnego zamiast tego k10 
+cezary\: i teraz f17 
+Shamash [?\]\: noir a l'air quand même confortable avec k10
+cezary\: reszta ma bardzo slabe noty
+Shamash [?\]\: h3 noir fera du bien après pour noir
+]
+;B[hb]C[Gonzalate [5d?\]\: il a tout luu
+EGF2 [?\]\: 8\:41 for Tanguy
+Dumbled0re [5k\]\: la victoire lui feras du bien \:)
+cezary\: i teraz ucieczka z tego atari w k11 znowu spowrotem 80% przewagi dla czarnego
+cezary\: tfu tfu
+EGF2 [?\]\: Stan still has 23 minutes
+cezary\: dla biaelgo \:)
+Coorchac [2d?\]\: uff
+cezary\: jeszcze ten ruch sie podobae12 
+yakcyll [4k\]\: Musi jeszcze tylko znaleźć K11.
+]
+;W[ii]C[yakcyll [4k\]\: #nice
+Deejay [?\]\: uff
+];B[ih]C[Coorchac [2d?\]\: \:>
+Gonzalate [5d?\]\: ça va finir en carnage cette histoire
+ben0 [6d\]\: déjà il semble plus confortable là
+ben0 [6d\]\: il joue les formes rapidement
+cezary\: skomplikowana walka no
+Gonzalate [5d?\]\: il a besoin de temps aussi
+cezary\: leela mowi ze biale maja wieksze szanse zeby sobie poradzic
+EGF2 [?\]\: Tanguy has now 8\:53, a good occasion to remind you that it is Fischer time
+Gonzalate [5d?\]\: it's +20 ?
+EGF2 [?\]\: Not sure about the specifics
+yakcyll [4k\]\: Aye, +20s per move.
+]
+;W[hi]C[Deejay [?\]\: Na ilu playoutach sprawdzasz ceazry?
+ben0 [6d\]\: l9 now it looks ok
+ben0 [6d\]\: but Im a bit worried on a double attack
+ben0 [6d\]\: top and left group
+Coorchac [2d?\]\: trzech, może czterech, co będzie  RAM marnował
+cezary\: w zasadzie to jestem troche glupi w to
+]
+;B[kk]C[Shamash [?\]\: pk stanislaw fait bouger h11 en fait ?
+cezary\: ale lece na 4 1080 ti
+cezary\: 4 karty
+ben0 [6d\]\: parce que laisser un ponnuki au centre c'est gros
+cezary\: chociaz jakos wolno to dziala jak na moj gust \:)
+Deejay [?\]\: xD no to kilkanaście tysięcy powinno być
+Shamash [?\]\: ah ouai, je trouvais que c t grossir des pierres pouvelles
+yakcyll [4k\]\: Fischer's p.funny; I was under the impression that as the game progresses in chess, it gets less complicated, so it makes sense to have less time for it, but in go, it rarely gets to yose by the time those additions make a difference
+cezary\: tak tak
+Shamash [?\]\: poubelles*
+cezary\: teraz c11 ma 12k odwiedzin
+yakcyll [4k\]\: Używasz Lizzie?
+cezary\: c9 10
+cezary\: g14  ma 2k
+cezary\: tak
+yakcyll [4k\]\: By default Lizzie nie wykorzystuje wszystkich kart, tylko używa domyślnych ustaleń
+Deejay [?\]\: Ja lecę na jednej 1060 6gb
+yakcyll [4k\]\: lz potrzebuje wyspecyfikować, które karty wykorzystać
+cezary\: juz zmienilem \:)
+ben0 [6d\]\: c11 looks ok for w
+yakcyll [4k\]\: to hm
+cezary\: chyba ze trzeba cos jeszcze zmienic oprocz tej komendy ktora odpala leele ?
+yakcyll [4k\]\: Chyba nie, to powinno wystarczyć. Rzucę okiem
+EGF2 [?\]\: 19\:48 for Stanislaw, who go under 20 min
+comfyditch [1k\]\: remember when c9 looked like the move?
+]
+;W[gf];B[ge];W[he]C[yakcyll [4k\]\: Aye, ten engine-command to wszystko.
+cezary\: no musialem to zmienic bo nie mam tych kart na lokalu \:)
+Shamash [?\]\: time to live
+Deejay [?\]\: Looks good for white. He will have time to attack b left group
+cezary\: ten ruch -16.5
+cezary\: leela bardzo chce zagrac tam na tej lewej bandzie
+comfyditch [1k\]\: b  is stronger in the center and 
+cezary\: i chyba chce oddac ta grupe na gorze po prostu
+]
+;B[fc];W[fb];B[eb];W[ec]C[cezary\: time ?
+EGF2 [?\]\: Stanislaw 17\:34
+EGF2 [?\]\: Tanguy 4\:04
+cezary\: thanks
+Gonzalate [5d?\]\: olala
+]
+;B[db]C[ben0 [6d\]\: je suis pas sur je pige là
+lucien [2k\]\: c11 now?
+hotfridge [1k\]\: ooh underneath
+Deejay [?\]\: ?
+]
+;W[gc];B[fa]C[Gonzalate [5d?\]\: mais il va mourir
+ben0 [6d\]\: je suis pas convaincu
+ben0 [6d\]\: non
+ben0 [6d\]\: mais 
+ben0 [6d\]\: c11 gonna be painfuuuuuuuuuuuul
+EGF3 [?\]\: c'est un peu rare ce qu'il fait, non ? \:-)
+cezary\: this whole sequence turned game by 40% for according to leela
+ben0 [6d\]\: ouais
+ben0 [6d\]\: 40% for ?
+yakcyll [4k\]\: 40%!
+cezary\: white
+ben0 [6d\]\: oh
+]
+;W[gd]C[yakcyll [4k\]\: Wait what
+];B[ga]C[Coorchac [2d?\]\: \:0
+];W[fe]C[Gonzalate [5d?\]\: eh
+yakcyll [4k\]\: Turned the game means what in this context
+]
+;B[bb]C[ben0 [6d\]\: b18
+ben0 [6d\]\: yeah
+ben0 [6d\]\: well
+Deejay [?\]\: Still w get to play first on left
+ben0 [6d\]\: ah actuallly b is sente
+yakcyll [4k\]\: Yeah, but there is no attack now
+vaurien [1k\]\: pourquoi blanc a pas pris en f16 ?
+ben0 [6d\]\: i thought he needs to add a move
+ben0 [6d\]\: then it's ok yup
+cezary\: now its black+70%
+Gonzalate [5d?\]\: great
+ben0 [6d\]\: yeah yeah yeah
+Deejay [?\]\: \:(
+Coorchac [2d?\]\: \:<
+ben0 [6d\]\: c11 for b now
+EGF3 [?\]\: wow
+ben0 [6d\]\: gooooood
+Gonzalate [5d?\]\: but the time..
+ptitlou [1d\]\: yes why g16?
+EGF2 [?\]\: 5\:02 Tanguy
+liusasori [-\]\: fisher time
+EGF2 [?\]\: 16\:10 Stan
+ben0 [6d\]\: c11 then no more weak groups
+vaurien [1k\]\: time is nothingg >> Fischer
+cezary\: i think stas didnt see this underneath connection
+yakcyll [4k\]\: 20s is not a lot.
+Gonzalate [5d?\]\: we know it's fisher and we also know it's Tanguy
+cezary\: or thought its going to be bad
+prosody [9k?\]\: stop! fisher time
+yakcyll [4k\]\: xd
+vaurien [1k\]\: Fischer is nice to manage to me =)
+]
+;W[lq]C[Gonzalate [5d?\]\: oh
+];B[qi]C[Gonzalate [5d?\]\: can't black add a move around d11 and threaten the stones in h11?
+Deejay [?\]\: Terrible result for white in upper left
+]
+;W[ri]C[ben0 [6d\]\: it's small, milena
+];B[jq]C[ben0 [6d\]\: too many moves he would need, for only 3 stones
+KyamiRefur [2d\]\: oh
+praeludium [4d\]\: ben0 why arent you playing 
+JEGO [9k\]\: Pincer is normal here
+ben0 [6d\]\: I want to give a chance to other players
+]
+;W[pc]C[ben0 [6d\]\: I just wasnt sure I would be in Europe at the time
+ben0 [6d\]\: so I didnt registered
+praeludium [4d\]\: ok, sad
+]
+;B[pb];W[re]C[Coorchac [2d?\]\: EGF2, how uch time do they have?
+Coorchac [2d?\]\: *much
+ben0 [6d\]\: turns out I came back yesterday, but shit happens \:D
+Shamash [?\]\: oh
+EGF2 [?\]\: tanguy 3\:30 and stanislav 11\:10
+Coorchac [2d?\]\: thanks!
+]
+;B[rd];W[hq]C[Gonzalate [5d?\]\: they're both super flat everywhere
+Shamash [?\]\: Dommage, si toi et thomas avaient joué pour devenir pro avec tanguy, on aurait eu plus de chance d'avoir un pro français =/
+Shamash [?\]\: aviez*
+ben0 [6d\]\: ca n'interesse pas thomas, et moi pas particulièrement non plus mais ça reste un tournoi très sympa
+]
+;B[kp]C[KyamiRefur [2d\]\: ça fonctionne pas en ratio par nationalité
+Shamash [?\]\: ben là on a 2 ukrainiens et bientot ptetre 2 polonais lol
+JEGO [9k\]\: noir est en avance ?
+ben0 [6d\]\: noir est bien, oui, Marc
+ben0 [6d\]\: tout va bien, respire
+KyamiRefur [2d\]\: ahah \:D
+JEGO [9k\]\: je pense aussi, le coup l4 est fort
+KyamiRefur [2d\]\: ça parait tout à fait jouable pour les 2
+Coorchac [2d?\]\: cezary, jak tam procenciki?
+cezary\: ten ruch czarnego -8.5 dla czarnego
+cezary\: i s14 38.5%
+]
+;W[lp];B[lo]C[cezary\: czarny chce grac ko
+ben0 [6d\]\: noir est en avance aux pts
+cezary\: tfu, leela chce grac ko na gorze
+cezary\: i zrobic drugie w s7 
+ben0 [6d\]\: et n'a pas particulièrement de groupe faible
+JEGO [9k\]\: haha hané à la tete de 2 pierres
+ben0 [6d\]\: et là il attaque blanc
+Kolo [6k\]\: który jest Siasio i jak mu idzie? ;D
+cezary\: i m3 zostawic
+ben0 [6d\]\: mais blanc  est très solide partout aussi
+ben0 [6d\]\: s'il pouvait trouver un moment pour jouer a17, ca serait le rêve
+ben0 [6d\]\: trouzemille pts et tout est solide
+KyamiRefur [2d\]\: trouze mille points, white resign
+Gonzalate [5d?\]\: Nojean le retrouzmille
+cezary\: aa w ogole \:)
+cezary\: czarny mogl wymienic wczesniej h13 h14 w sente
+cezary\: i tego nie zrobil
+cezary\: a ja mialem to na planszy ciagle
+Gonzalate [5d?\]\: Cornel and Anton won so far
+cezary\: troche to zmienia wszytko
+cezary\: wg leeli
+cezary\: mowi ze s14 to 60% dla bialego
+Shamash [?\]\: faut que tanguy tienne son avance jusqu'au bout
+Coorchac [2d?\]\: Kolo. Siasio biały
+cezary\: o4 to 52%
+cezary\: to nie jest tak zle
+Coorchac [2d?\]\: aaa szło mu dobrze po czym postanowił troszkę poodawać, chojny chłopak
+Kolo [6k\]\: dzięki
+Whithak [5k\]\: la partie est encore jeune
+Gonzalate [5d?\]\: mais le leela polonais préfère blanc
+JEGO [9k\]\: ils parlent dans quelle langue?
+Kolo [6k\]\: to nieładnie z jego strony \:(
+ben0 [6d\]\: en espagnol
+JEGO [9k\]\: lol
+Coorchac [2d?\]\: O tłumaczą co piszemy, czas na gruszki
+Coorchac [2d?\]\: Tanguy naprawdę ścina gruszki zimą
+Kolo [6k\]\: \:D
+ben0 [6d\]\: tu peux faire un effort de déduction je pense
+cezary\: black forgot exchange h13 h14 in sente earlier
+]
+;W[jr]C[JEGO [9k\]\: oui une langue slave
+cezary\: and i have 
+ben0 [6d\]\: polonais
+JEGO [9k\]\: ah
+ben0 [6d\]\: stanislaw est polonais
+Whithak [5k\]\: at which point? cezary?
+Kolo [6k\]\: POLAND STRONG
+Coorchac [2d?\]\: xDD
+prosody [9k?\]\: polan can of into pro
+JEGO [9k\]\: oui logique donc , poland play go
+ben0 [6d\]\: keep calm, Kolo
+Paragon [12k?\]\: Chłopaki jak to wygląda? Wydaje mi się, że czarny jest do przodu, powiedzcie, że się mylę \:D
+prosody [9k?\]\: BE STRONK
+ben0 [6d\]\: Poland getting ass kicked
+cezary\: teraz sie okaze
+]
+;B[ir]C[Kolo [6k\]\: I'm very calm and relaxed <3
+];W[kr];B[iq]C[U [-\]\: you guys will be disappointed when stan is eliminated
+]
+;W[mo]C[prosody [9k?\]\: shhhhh don't speak of the polish butt
+Kolo [6k\]\: yes we will be \:(
+Coorchac [2d?\]\: Yeah, We would
+cezary\: we will not accept his back into the country
+U [-\]\: yeah eh can try again in a couple years
+cezary\: if he doesnt come back as pro
+U [-\]\:  this time is cornel time
+ben0 [6d\]\: you already got one
+]
+;B[hp]C[Coorchac [2d?\]\: His whole family will be deportated
+Coorchac [2d?\]\: sooo
+ben0 [6d\]\: ok it is Surma, but still, be happy
+cezary\: but he emigrated to russia
+Coorchac [2d?\]\: he better became
+Pufa\: Tanguy est en train de perdre, mais il a encore une chance!
+]
+;W[hr]C[Kolo [6k\]\: one pro is not enough
+cezary\: poland deserves this pro title
+Laman [1d?\]\: and why are you supplying Russia with pros?
+Kolo [6k\]\: two pros is twice more
+cezary\: since what they have done in this transantlantic shizzle
+cezary\: to mateusz
+Gonzalate [5d?\]\: yaaa let's not bring this topic here
+Coorchac [2d?\]\: Kolo, that's some hard math you got there
+cezary\: \:D
+Gonzalate [5d?\]\: so, what are black options now?
+]
+;B[hs]C[Coorchac [2d?\]\: resign maybe?
+Gonzalate [5d?\]\: na
+Kolo [6k\]\: it's friday, don't count on me being smarter than thie basic math ;)
+cezary\: leela is fixed on playing m13 m14 exchangfe
+]
+;W[ko];B[ln];W[jp];B[ip]C[Gonzalate [5d?\]\: hh
+];W[kq]C[Gonzalate [5d?\]\: kesskispass
+JEGO [9k\]\: mauvais échange pour noir
+cezary\: f4 
+Jupiter15k [6d\]\: merci pour votre expertise Jean-Pierre
+]
+;B[fp]C[U [-\]\: by the way, surma's account was not 100% accurate and clears AGA players of the accusations a lot of europeans were throwing around
+yakcyll [4k\]\: O, cześć Kolo!
+U [-\]\: stuff posted today
+Kolo [6k\]\: siemano
+]
+;W[eq]C[JEGO [9k\]\: Myślę, że tanguy jest na topie
+U [-\]\: AGA players wanted a rematch. it was mostyl surma's fault the ref changed it to a time loss
+Laman [1d?\]\: let's not poison it here with the Transatlantic stuff
+U [-\]\: well if theyre going to spread lies in here it should be corrected
+yakcyll [4k\]\: il pourrait bien être
+]
+;B[fn]C[JEGO [9k\]\: nadal istnieje duże centrum do dzielenia się
+Kolo [6k\]\: what exactly is 'lie'? an opinion, that it was unfair towards Mateusz is a 'lie'?
+Shamash [?\]\: so U if you complain too, the statement of the ref would be harsher for you ? logic
+Laman [1d?\]\: whatever. many guys deserve the title. but there can be only one
+ben0 [6d\]\: sérieusement
+yakcyll [4k\]\: yo, chill with the transatlantic
+ben0 [6d\]\: 3min je pars
+ben0 [6d\]\: et ca
+]
+;W[dn]C[Coorchac [2d?\]\: Sooo maybe we can come back to this game?
+];B[dm]C[U [-\]\: yes because it was his fault he didnt reveal his technical issues.
+Shamash [?\]\: yes
+U [-\]\: so nothing was "done" to him
+samoht [2d?\]\: i dont see "many" which are better than the Rest; and a profi should be
+ogolony [-\]\: so what they gonna do in next game to prevent lags?
+Shamash [?\]\: black doing great
+cezary\: whats the time and how players look ?
+yakcyll [4k\]\: the thing here is, being a pro will allow whoever wins this tourney to accelerate their improvement
+Coorchac [2d?\]\: EGF2, how is it with times?
+yakcyll [4k\]\: so it's less about who fits the title better, but who will make better use of it
+Kolo [6k\]\: if referee changed his decisions few times, it was not so obvious, so any _opinion_ can not be called _lie_
+yakcyll [4k\]\: please
+yakcyll [4k\]\: do not discuss transatlantic here
+U [-\]\: because new information came in kolo
+Whithak [5k\]\: good one yakcyll
+yakcyll [4k\]\: outrage helps nobody
+EGF2 [?\]\: tanguy 1\:26 stanislav 3\:10
+Coorchac [2d?\]\: huh
+]
+;W[bn]C[yakcyll [4k\]\: and we're not here to proliferate it
+];B[cm];W[br];B[ar]
+C[samoht [2d?\]\: yakcill, the title dont give you money or time
+U [-\]\: well they shouldnt spread lies that surma was wronged
+Shamash [?\]\: but opporunities
+yakcyll [4k\]\: exactly
+Kolo [6k\]\: I know the story, but calling any opinion in this matter a 'lie' is not good
+yakcyll [4k\]\: not much, but enough
+yakcyll [4k\]\: kolo
+Laman [1d?\]\: can someone start banning?
+Coorchac [2d?\]\: ban everyone
+U [-\]\: its not an opinion when its untrue
+Shamash [?\]\: lol bun them all
+Copernicus [2d?\]\: you're banned
+w2d [2k\]\: juts put them on your ignore list
+Shamash [?\]\: burn them all
+Gonzalate [5d?\]\: enough
+Coorchac [2d?\]\: where is Deanearys  when we need her
+Gonzalate [5d?\]\: let's focus on the game here and now
+aniela [2k\]\: white still has not enough
+Gonzalate [5d?\]\: white is dying 
+Kolo [6k\]\: I would love to focus on the game, but I can't understand moves of high dan players ^^
+Kolo [6k\]\: I only count on Cezary's info \:D
+ben0 [6d\]\: no worries, they also cant
+Dream [3d\]\: white needs e4 to live i think
+Terrorist [4d\]\: ------------- Shut up and concentrate on the game  -----------------
+Dream [3d\]\: which is painful
+U [-\]\: i wouldnt trust cezary at this point
+]
+;W[go]C[yuki [4d\]\: A5 probably
+];B[gp];W[fo]C[Gonzalate [5d?\]\: wouw that's the spirit
+Gonzalate [5d?\]\: black jumps out and white lives and then cuuut
+Copernicus [2d?\]\: go commando tanguy
+samoht [2d?\]\: think like a pro ;--)
+]
+;B[in];W[gn]C[ben0 [6d\]\: j'ai l'impression qu'il y avait plus sévère quand même
+Shamash [?\]\: looks like W forgot about making points on this game
+Gonzalate [5d?\]\: n4 c'est sévère non?
+yakcyll [4k\]\: Siasio is a fighter
+]
+;B[fm]C[yakcyll [4k\]\: If you're good at attacking, points come by themselves
+]
+;W[gm]C[vaurien [1k\]\: l6 d'abord non ?
+Kolo [6k\]\: killing J3 group is points
+Kolo [6k\]\: it's probably impossible, but still
+ben0 [6d\]\: n4 c'est pas mal ouais
+cezary\: l6 95% for black
+yakcyll [4k\]\: If he'll manage to do it, yeah
+Shamash [?\]\: ok but here, points didn't respond the call 
+Gonzalate [5d?\]\: noir se renforce et après bim couic
+Kolo [6k\]\: that would be lovely
+Coorchac [2d?\]\: \:<
+ben0 [6d\]\: good
+Gonzalate [5d?\]\: j8 ça marche ou pas
+ben0 [6d\]\: and not much places left to mess up for tanguy
+U [-\]\: cezar youre a liar and a bot number spitter? thats like really bad
+ben0 [6d\]\: smells good
+Coorchac [2d?\]\: U could you please stop?
+cezary\: U, yes
+]
+;B[kn]C[U [-\]\: oh and a guest
+];W[np]C[Gonzalate [5d?\]\: waaaa
+U [-\]\: thats liek 3 strikes of being scummy person
+vaurien [1k\]\: sisi Tanguy
+cezary\: come on, make that number a 5 at least
+Kolo [6k\]\: scummy
+]
+;B[mq]C[Kolo [6k\]\: I like this word
+yakcyll [4k\]\: ohboyherewegoagain.jpeg
+]
+;W[mp]C[U [-\]\: nah you dont deserve the attention, you just being a sad lonely 15 kyu
+JEGO [9k\]\: white under pressure
+ben0 [6d\]\: then f8
+ben0 [6d\]\: or even cut directly if he feels like it
+cezary\: so leave me be what a guy cant believe, really \:)
+Coorchac [2d?\]\: Someone here has some issues
+]
+;B[mr]C[vaurien [1k\]\: pas de s4 d'abord ?
+Gonzalate [5d?\]\: eh
+ben0 [6d\]\: mouarf
+Coorchac [2d?\]\: EGF2, times?
+Gonzalate [5d?\]\: I guess tanguy counted ?
+ben0 [6d\]\: j'espère
+Gonzalate [5d?\]\: mais quand même
+Gonzalate [5d?\]\: pas serein là
+Terrorist [4d\]\: what language is that?
+vaurien [1k\]\: chelou
+Pufa\: baguette
+ben0 [6d\]\: non mais ca va ca va
+ben0 [6d\]\: c'est gros
+Gonzalate [5d?\]\: hope so
+ben0 [6d\]\: en point il est très bien
+Kolo [6k\]\: unfortunately I would say, that Siasio is loosing big
+Kolo [6k\]\: fortunately, I can't count at all
+ben0 [6d\]\: et blanc a 0 potentiel
+Gonzalate [5d?\]\: true
+]
+;W[fl]C[Shamash [?\]\: niveau point c'est tranquille pour noir
+];B[em]C[Gonzalate [5d?\]\: e7!
+Gonzalate [5d?\]\: yes
+EGF2 [?\]\: i notice now s16 is actually at t16
+]
+;AB[sd]AE[rd]C[Gonzalate [5d?\]\: ah
+ben0 [6d\]\: -45%, shit
+Gonzalate [5d?\]\: hahaha
+ben0 [6d\]\: \:)
+Coorchac [2d?\]\: xD
+Shamash [?\]\: like japanese says \: rich man shouldn't pick a fight
+Kolo [6k\]\: Siasio strong
+]
+;W[bh]C[Pufa\: so go borrowed some of chess rules
+ben0 [6d\]\: yeah
+];B[bg]C[Gonzalate [5d?\]\: last hope for white
+ben0 [6d\]\: desparate moves incoming
+Shamash [?\]\: tanguy consolide son avance 
+Jupiter15k [6d\]\: now W is playing seriously… \:)
+ftyfth [8d?\]\: i think losing this game is beter in draw later
+]
+;W[ci]C[Coorchac [2d?\]\: EGF2, how much time do they have?
+Gonzalate [5d?\]\: as would the super famous french player Astrid say, faut béton faut béton
+]
+;B[ac]C[ben0 [6d\]\: a17 tanguy
+ben0 [6d\]\: good
+ben0 [6d\]\: good
+praythuong [6k\]\: the game really starts now
+yakcyll [4k\]\: ben0 lol
+yakcyll [4k\]\: sounds like a villain
+Copernicus [2d?\]\: it does?
+vaurien [1k\]\: hihi ^^
+yakcyll [4k\]\: preparing a world domination plan
+ben0 [6d\]\: w is going to play a5
+yakcyll [4k\]\: \:d
+ben0 [6d\]\: i guarantee it
+]
+;W[hl]C[Gonzalate [5d?\]\: e11 donne envie
+Gonzalate [5d?\]\: pourtant ça fait rien
+ben0 [6d\]\: ok then now b10 and game oveeeeeeeer
+]
+;B[dj]C[ben0 [6d\]\: or this
+];W[di]C[Shamash [?\]\: B+15 
+ogolony [-\]\: when will the next Pro Qualification take place?
+cezary\: in 2 years
+]
+;B[fj]C[Copernicus [2d?\]\: I'll start practicing then
+EGF2 [?\]\: the next pro qualification is not yet announced
+Gonzalate [5d?\]\: joli tobi yes yes
+cezary\: aha, then im repeating some rumours
+cezary\: thanks for clarification
+Copernicus [2d?\]\: I'll stop practicing then
+Shamash [?\]\: ben0 tu viens au stage fédéral ? =D
+]
+;W[ei]C[ben0 [6d\]\: ca depend
+];B[fk]C[Gonzalate [5d?\]\: sexy nobi
+ben0 [6d\]\: mais si je suis dans le coin j'y passerai forcément au moins le weekend
+]
+;W[jm]C[praythuong [6k\]\: e5 cut is nice?
+Shamash [?\]\: cool
+];B[jn]C[Gonzalate [5d?\]\: connecte fait pas le con
+Gonzalate [5d?\]\: bien
+Shamash [?\]\: W trying to find where his points are
+]
+;W[fi];B[gi]C[Gonzalate [5d?\]\: s5 et fini non?
+Gonzalate [5d?\]\: ou s4 plus sex
+Shamash [?\]\: grave
+]
+;W[hh]C[Coorchac [2d?\]\: how has game Shayan vs Remi ended?
+ogolony [-\]\: Cezary, gdzie biały strzelił największego babola?
+vaurien [1k\]\: b10 also
+Gonzalate [5d?\]\: not over yet, no results on the page (?)
+]
+;B[fs]C[Coorchac [2d?\]\: thx
+yakcyll [4k\]\: SStrzelam, że F18
+Gonzalate [5d?\]\: tellement coréen ce yose
+]
+;W[fr];B[es];W[eo]C[ben0 [6d\]\: ouh ca fait mal
+Dream [3d\]\: hurts to watch
+Gonzalate [5d?\]\: s4 allez
+Jupiter15k [6d\]\: clearly lol
+Shamash [?\]\: où sont les points de blanc sérieux, il a 15 points de retard et je vois pas où il peut les faire
+]
+;B[gj]C[Gonzalate [5d?\]\: il veut tuer argh
+ben0 [6d\]\: non
+Gonzalate [5d?\]\: don't try Tanguy, just win
+ben0 [6d\]\: c'est du yose
+Gonzalate [5d?\]\: ok
+Dumbled0re [5k\]\: Na il met juste la pression
+]
+;W[ik]C[ben0 [6d\]\: g12 aussi va faire mal à blanc
+];B[bj]C[Gonzalate [5d?\]\: i'd play o7 in order to make everything 300% safe
+Shamash [?\]\: game over
+ben0 [6d\]\: faut juste éviter les coupes à la con vers m8 etc
+ben0 [6d\]\: mais ca semble pas marcher
+Jupiter15k [6d\]\: le coup que tu voulais ben \:)
+]
+;W[ll]C[Gonzalate [5d?\]\: aaaah
+];B[kl]C[Kolo [6k\]\: Siasio strong
+ben0 [6d\]\: ca marche pas
+Gonzalate [5d?\]\: y a pas un semeai là
+ben0 [6d\]\: resign soon
+Shamash [?\]\: lol desesperate
+Gonzalate [5d?\]\: ah tu geta
+ben0 [6d\]\: nope just capture with o7
+ben0 [6d\]\: yup
+]
+;W[ro]C[Gonzalate [5d?\]\: s'gros ça
+];B[rp]C[Shamash [?\]\: même avec le meilleur yose du monde ça risque d'être compliqué pour blanc
+]
+;W[sp];B[sq]C[Gonzalate [5d?\]\: p7 c'est sente dans 'lidée
+Gonzalate [5d?\]\: ou o7 mieux
+Jupiter15k [6d\]\: p8 meilleure
+]
+;W[so]C[Jupiter15k [6d\]\: o8 pardon
+];B[qq]C[ben0 [6d\]\: doesnt matter anyway
+ben0 [6d\]\: game over
+EGF2 [?\]\: Tanguy 49 sec Stan 15 sec
+Gonzalate [5d?\]\: ogo
+]
+;W[nl]C[ben0 [6d\]\: j7
+Gonzalate [5d?\]\: connect et basta
+Shamash [?\]\: ah l'avantage du temps s'inverse
+Gonzalate [5d?\]\: m9 ou quoi n'importe
+Gonzalate [5d?\]\: allez
+EGF2 [?\]\: Tanguy 20 sec Stan 34
+ben0 [6d\]\: j7 threatens the connection
+Jupiter15k [6d\]\: mon coup \:)
+ptitlou [1d\]\: le grand dragon noir ne peut pas mourir ?
+Gonzalate [5d?\]\: m9 non en fait
+]
+;B[il]C[ben0 [6d\]\: oh
+Gonzalate [5d?\]\: ça va finir en semeai
+Shamash [?\]\: et là imaginez tanguy tombe au temps mdr
+Coorchac [2d?\]\: Siasio wants to kill whole dragon?
+Shamash [?\]\: à la debarre
+ben0 [6d\]\: j'espère que c'est pas un tesuji hongrois ça
+Gonzalate [5d?\]\: ça y ressemble fort
+Kolo [6k\]\: looks like mistakes are possible here, very good
+rubik [5d?\]\: thx haha
+]
+;W[hk]C[ben0 [6d\]\: ca semble bon
+Jupiter15k [6d\]\: lol 
+Gonzalate [5d?\]\: ouf
+Gonzalate [5d?\]\: s'il perd au temps je lui rase là tête
+Shamash [?\]\: coucou thomas xD tu te remets de tes problèmes de pendule ? ahah
+]
+;B[lk]C[Gonzalate [5d?\]\: m7?
+];W[pi]C[Jupiter15k [6d\]\: sans mauvais jeu de mots, il est temps de devenir "le maître des horloges"
+rubik [5d?\]\: on verra ce week-end \:)
+]
+;B[nm]C[ben0 [6d\]\: sinon g12 quand il veut
+Gonzalate [5d?\]\: il a peur de mourir là ou quoi
+]
+;W[mm];B[mn]C[Dumbled0re [5k\]\: oui un peu
+Gonzalate [5d?\]\: ah ça marche
+Gonzalate [5d?\]\: génial
+]
+;W[ol]C[ben0 [6d\]\: oui bah il lit quand même parfois hein
+Gonzalate [5d?\]\: haha
+Shamash [?\]\: ça donne des points à blanc là
+Gonzalate [5d?\]\: bah o6
+]
+;B[pj]C[yakcyll [4k\]\: Co z o6?
+];W[qj]C[cezary\: o kurde
+cezary\: po czarnego b10 
+Coorchac [2d?\]\: co tam?
+cezary\: leela zmienila zdanie
+Coorchac [2d?\]\: \:000
+yakcyll [4k\]\: lolwtf
+cezary\: czekajcie dogram reszte 
+yakcyll [4k\]\: Czyli równa gra na razie?
+]
+;B[nn]C[Gonzalate [5d?\]\: mais ça a pas l'air vivant en fait tout ça
+];W[op]
+C[vaurien [1k\]\: ils sont ou les deux yeux de noir ?
+];B[pl]C[Gonzalate [5d?\]\: enfin y a un petit potentiel de mort
+]
+;W[pm]C[ben0 [6d\]\: ou ?
+cezary\: na przyklad po o8 dala bialemu 80 
+cezary\: dogrywam daleh
+yakcyll [4k\]\: !
+Gonzalate [5d?\]\: pour noir au centre si jamais il fait un yose sans faire gaffe
+]
+;B[nj]C[Coorchac [2d?\]\: !!
+Gonzalate [5d?\]\: bon là ça va
+];W[om]C[ben0 [6d\]\: j7 et tranquille
+Gonzalate [5d?\]\: le leela polonais donnait 80% blanc à o8
+ben0 [6d\]\: ou ptet n12 meilleur
+]
+;B[lm]C[yakcyll [4k\]\: https\://www.youtube.com/watch?v=KNJ1B_2b17s
+];W[ml];B[mh]
+C[Gonzalate [5d?\]\: allez serein
+Gonzalate [5d?\]\: j7 sente blanc quand même
+]
+;W[im]C[Coorchac [2d?\]\: yakcyll\: xD
+prosody [9k?\]\: hou là je suis restée sur le stream trop longtemps je comprends plus ce qui se passe ici
+domie [2k\]\: is Tanguy winning ?
+Gonzalate [5d?\]\: je perds la sereinitude
+]
+;B[jl]C[Shamash [?\]\: crève pas mtn tanguy sérieux
+prosody [9k?\]\: ç'a pas l'air très jojo pour noir là, je me trompe ?
+ben0 [6d\]\: bah
+ben0 [6d\]\: je compte 12 pts devant sur plateau
+Gonzalate [5d?\]\: m13 ça devient
+]
+;W[lg]C[Gonzalate [5d?\]\: ah
+Kolo [6k\]\: Siasio has nice ko threats
+];B[ph]C[ben0 [6d\]\: il a du mal géré le centre
+Kolo [6k\]\: no idea, if it will be useful, but it's nice to have
+cezary\: w+98% all of a sudden
+yakcyll [4k\]\: LOL
+Jupiter15k [6d\]\: lol
+ben0 [6d\]\: wow
+prosody [9k?\]\: ah oui gros coins
+ben0 [6d\]\: when did it shift ?
+Gonzalate [5d?\]\: on avait dit béton tanguy
+Shamash [?\]\: try the ko ?
+praythuong [6k\]\: b K5 then H6, then H5, 1 eye easy
+cezary\: after b10 
+vaurien [1k\]\: \:o
+ben0 [6d\]\: i see
+cezary\: black b10 then white k9 was 80%
+]
+;W[qi]C[Gonzalate [5d?\]\: oh
+Gonzalate [5d?\]\: r13 et vit
+praythuong [6k\]\: sorry , im wrong
+]
+;B[qg]C[Jupiter15k [6d\]\: quand j'ai dit o8 c'était pas censé faire si mal
+]
+;W[rg];B[pg]C[Gonzalate [5d?\]\: aah
+];W[rf]C[ben0 [6d\]\: so I guess instead of b10 o7 was a winning move
+ben0 [6d\]\: b was already alive so b10 wasnt needed
+]
+;B[nh]C[Kolo [6k\]\: ohh
+Kolo [6k\]\: I hoped W will play there
+Gonzalate [5d?\]\: pfuf
+Copernicus [2d?\]\: b+10.5
+]
+;W[oq]C[ben0 [6d\]\: b11 énorme aussi du coup
+];B[or]C[Gonzalate [5d?\]\: now leela again for black?
+Shamash [?\]\: stanislaw est quand même très confiant dans son yose
+cezary\: hehe 
+cezary\: no
+]
+;W[rd]C[cezary\: white+95 roughly
+GoDave89 [5d?\]\: lol
+Gonzalate [5d?\]\: mmh
+Jupiter15k [6d\]\: clairement, il prend son temps xD
+Jupiter15k [6d\]\: c10 seems big
+RegeleLeu [3k\]\: a castigat cornel sau nu? multumesc
+Jupiter15k [6d\]\: oh he played
+]
+;B[gh]C[Gonzalate [5d?\]\: je compte super serré
+];W[ao]C[yakcyll [4k\]\: How, when and why
+Gonzalate [5d?\]\: attends mais
+Gonzalate [5d?\]\: c'est super cuit en fait
+]
+;B[aq];W[gg];B[rc]C[Gonzalate [5d?\]\: je comprends rien
+Jupiter15k [6d\]\: tu comprends pas quoi
+vaurien [1k\]\: H6 
+prosody [9k?\]\: la vie la mort
+]
+;W[ms]C[prosody [9k?\]\: les petits enfants
+prosody [9k?\]\: et sans doute le croate
+GoDave89 [5d?\]\: ah, finally N1 ^^^
+Gonzalate [5d?\]\: the top right, I didnt get it
+cezary\: funny thing is that leela doesnt see b7 b8 a6 tesuji
+ogolony [-\]\: m1?
+]
+;B[qr]C[Jupiter15k [6d\]\: cezary\: bc it dossn't work?
+GoDave89 [5d?\]\: no, N1 is better than M1
+tam1998 [1d\]\: b7 b can answer at a6 though
+]
+;W[ks]C[Jupiter15k [6d\]\: \:/
+Wheerus [3d\]\: B7 a6
+];B[is]C[cezary\: yeah
+Jupiter15k [6d\]\: yes a6
+]
+;W[os]C[cezary\: so this is the move leela doesnt see
+Kolo [6k\]\: ^^
+];B[ps]C[Gonzalate [5d?\]\: c'est gros tout ça
+Shamash [?\]\: strong yose de la part du joueur polonais
+ben0 [6d\]\: ouais
+]
+;W[ns]C[Jupiter15k [6d\]\: c'est Lee Chang-Ho au Yose ce type 
+];B[nr]C[prosody [9k?\]\: stronk
+ben0 [6d\]\: du coup c'est vraiment b10 qui le met dans la mouise
+Gonzalate [5d?\]\: je suis vers 36 pour blanc
+]
+;W[ls]C[martin3141 [2d\]\: can white get an under the stones with b7?
+ben0 [6d\]\: il a pas du voir que l'attaque au centre allait faire aussi mal
+Gonzalate [5d?\]\: et 37 noir
+Dumbled0re [5k\]\: qui l'eut cru
+cezary\: @martin no because of a6
+]
+;B[sr]C[Kolo [6k\]\: sente, lovely
+prosody [9k?\]\: so blanc gagne par komi?
+Gonzalate [5d?\]\: so it's quite close
+Shamash [?\]\: ça va se jouer à 1 ou 05
+Kolo [6k\]\: now it seems like it's black that has no points
+]
+;W[cj]C[Gonzalate [5d?\]\: but the 
+Gonzalate [5d?\]\: yeah this
+Jupiter15k [6d\]\: W gained more than 10 points in endgame lol
+Kolo [6k\]\: I told you, Siasio strong
+Shamash [?\]\: so strong endgame
+Gorim [3k\]\: soon to be 1p 
+Gorim [3k\]\: I hope\:P
+Jupiter15k [6d\]\: that move is tricky…
+]
+;B[bk]C[cezary\: siasio is used to come from behind
+Kolo [6k\]\: I'm weak so I know about strong
+martin3141 [2d\]\: I see
+ogolony [-\]\: Fuseki and chuban don't matter. yose is important ;)
+yakcyll [4k\]\: kolo xd
+]
+;W[bi]C[Gonzalate [5d?\]\: depending on the top now
+ben0 [6d\]\: a13
+Shamash [?\]\: t'as le sente tanguy, trouve des points
+]
+;B[fh];W[dg]C[Jupiter15k [6d\]\: b7 is needed
+prosody [9k?\]\: N18?
+Shamash [?\]\: on aura ptetre un lukas vs tanguy en demi finale
+]
+;B[el]C[Tichu [4d?\]\: if b7 was needed why didn't white use it then?
+Wheerus [3d\]\: Tanguy a l'air en retard
+Gonzalate [5d?\]\: ouais
+]
+;W[dk];B[bm]C[Jupiter15k [6d\]\: bc he doesn't have time to --'
+Shamash [?\]\: Lukas a dévoré son adversaire à coté =o
+]
+;W[qa]C[Jupiter15k [6d\]\: ah oué + 20
+Coorchac [2d?\]\: cezary, jak tam?
+JustHrew [2d\]\: Whoa, what's this move?
+cezary\: 98 dla stasia
+prosody [9k?\]\: dominik a fait quelques erreurs et lukas a pas fait de quartier
+Coorchac [2d?\]\: <3
+]
+;B[nb]C[cezary\: o18 s18 l18 k18 m18 leela mowila to
+Jupiter15k [6d\]\: Stan is the reincarnation of Lee Chang-Ho awaken in endgame lol
+]
+;W[mb]C[yakcyll [4k\]\: Co to za l&d
+yakcyll [4k\]\: Wymusi seki w rogu?
+];B[pa]
+C[Kolo [6k\]\: ubije ubije \:D
+cezary\: leela juz wariuje bo co nie zagra to bialy wygra
+Shamash [?\]\: Stanislaw remind me of Antii, strong yose player who come back and win a lost game
+]
+;W[ra]C[bromba [1k\]\: żyje
+hotfridge [1k\]\: wut?
+Gonzalate [5d?\]\: mince c'est beau ça
+]
+;B[md]C[hotfridge [1k\]\: please someone explain this move.
+hotfridge [1k\]\: s19?
+prosody [9k?\]\: good
+Gonzalate [5d?\]\: t18 if black makes and eye
+ben0 [6d\]\: aiming at t18
+Wheerus [3d\]\: Dead ?
+]
+;W[mc]C[Gonzalate [5d?\]\: zut
+];B[me]C[Gonzalate [5d?\]\: il peut pas écraser ?
+hotfridge [1k\]\: thanks that pretty nice move then
+Gonzalate [5d?\]\: avec s18
+]
+;W[nd]C[Shamash [?\]\: même s'il s'en sort il va perdre encore des points
+Gonzalate [5d?\]\: ah nan ça marchepas
+JustHrew [2d\]\: Wow
+ben0 [6d\]\: partie finie
+ben0 [6d\]\: \:(
+Gonzalate [5d?\]\: \:(
+prosody [9k?\]\: \:(
+Kolo [6k\]\: so the upper corner is white already?
+Kolo [6k\]\: \:)
+EGF2 [?\]\: Tanguy resigned
+Gonzalate [5d?\]\: \:(((((
+Shamash [?\]\: le 7D l'emporte, ça sent la belle demi finale ça
+Coorchac [2d?\]\: \:)
+JustHrew [2d\]\: Yea, it's dead
+hotfridge [1k\]\: wow that ending
+Gorim [3k\]\: rrrrekt
+Coorchac [2d?\]\: Wooow
+JustHrew [2d\]\: Very amazing kill
+Kolo [6k\]\: SIASIO STRONG
+Coorchac [2d?\]\: Siasio strooong
+ogolony [-\]\: Dobrze, bo zaraz fajrant mam
+Gorim [3k\]\: when is next round?
+Shamash [?\]\: congrats, wonderfull
+Drzeryja\: HUUUUUURRRRRAAA!
+EGF2 [?\]\: 2 pm
+Coorchac [2d?\]\: 14\:30
+baduk [?\]\: I piekny koniec \:D
+EGF2 [?\]\: 2\:30 yes
+Shamash [?\]\: franchement c magnifique
+Jupiter15k [6d\]\: quand je disais "la force tranquille" j'avais bon mdr
+ogolony [-\]\: what was the proper answer to R19?
+yakcyll [4k\]\: #nicela
+JustHrew [2d\]\: S19 for ko, I guess
+dfeldmann [4d\]\: s19?
+yakcyll [4k\]\: Siasiek stronk
+vaurien [1k\]\: gg both
+Jupiter15k [6d\]\: rr18 i guess
+Jupiter15k [6d\]\: for the answer
+vaurien [1k\]\: thank ya EGF2
+Coorchac [2d?\]\: yes, thanks EGF2 \:)
+dfeldmann [4d\]\: r18 is seki
+prosody [9k?\]\: thank you EGF2
+Jupiter15k [6d\]\: I know
+Jupiter15k [6d\]\: just to live 
+praythuong [6k\]\: what if b O19 next?
+JEGO [9k\]\: who won?
+JustHrew [2d\]\: o19 t18 
+dfeldmann [4d\]\: yes (but is . loses points
+cezary\: nice
+JustHrew [2d\]\: You
+cezary\: b10 losing move for black
+JustHrew [2d\]\: You're gonna lose points anyway in a ko
+Pufa\: There's no ko
+JustHrew [2d\]\: At some point, you gotta ignore a threat
+cezary\: thanks egf2 for transmition
+JustHrew [2d\]\: We're talking hypothetical response to r19, not in game move
+Jupiter15k [6d\]\: exactly
+Jupiter15k [6d\]\: how frustrating it would be to play again Stan, he let his opponent thinking he wins until the end 
+cezary\: this is standard
+cezary\: vs stasio
+cezary\: i lost like this against him numerous times \:)
+Ashitaka [?\]\: \:D
+cezary\: i think he'd won against me while winning dame's a few times too
+cezary\: but you know what they say, stonger always lucky \:)
+])

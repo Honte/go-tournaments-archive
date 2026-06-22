@@ -1,0 +1,20 @@
+; TC[T230225F]
+; CL[A]
+; EV[7th European Pro Qualification 2023]
+; PC[CZ, Brno]
+; DT[2023-02-25,2023-03-12]
+; HA[h9]
+; KM[6.5]
+; TM[82.5]
+; CM[ (submitted by erdbeer)]
+;.
+;Pro Qualification Quarterfinal, Brno, 25/26 February, Fischertime 80/40, best of three mode, 4 winners go to halffinal  
+;# Name Rank Ctry Clb NbW R1 R2 R3
+   1 Simara Jan                     6d CZ  Imba     6     1      5-      5+      5+      3+      3-      3+      2-      2+      2+ |10749860
+   2 Podpera Lukas                  7d CZ  APWS     5     2      7-      7+      7+      4+      4+      0=      1+      1-      1- |13201914
+   3 Teuber Benjamin                6d DE  HH       3     3      6-      6+      6+      1-      1+      1-      0=      0=      0= |10437174
+   4 Boviz Dominik                  6d HU  MGE      2     3      8+      8+      0=      2-      2-      0=      0=      0=      0= |14225926
+   5 Vazquez Oscar                  6d ES  Pant     1     5      1+      1-      1-      0=      0=      0=      0=      0=      0= |15633673
+   6 Burzo Cornel                   6d RO  BaMa     1     5      3+      3-      3-      0=      0=      0=      0=      0=      0= |10325249
+   7 Grigoriu Elian_Ioan            6d RO  ATAR     1     5      2+      2-      2-      0=      0=      0=      0=      0=      0= |15974420
+   8 Prokop Jan                     6d CZ  Imba     0     5      4-      4-      0=      0=      0=      0=      0=      0=      0= |10433654

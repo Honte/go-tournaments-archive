@@ -1,0 +1,81 @@
+website: https://www.eurogofed.org/proqualification/index_2025.html
+stages:
+  - type: tournament
+    file: epq2025.txt
+    time: 45 min + 20 sec Fischer
+    scoringColumns:
+      - wins
+      - direct
+      - sodos
+      - null
+    breakers:
+      - wins
+      - direct
+    findSharedPlaces: true
+    games:
+      - 1-4 4:W+24.5 round:11 sgf:2025/11-BenjaminDreanGuenaizia-AsheVazquez.sgf ogs:https://online-go.com/review/1415423
+      - 1-5 1:B+R round:9 sgf:2025/9-BenjaminDreanGuenaizia-VsevolodOvsiienko.sgf ogs:https://online-go.com/review/1414839
+      - 1-6 1:B+13.5 round:7 sgf:2025/7-BenjaminDreanGuenaizia-JonasWelticke.sgf ogs:https://online-go.com/review/1414290
+      - 1-8 1:B+5.5 round:5 sgf:2025/5-BenjaminDreanGuenaizia-MatiasPankoke.sgf ogs:https://online-go.com/review/1413716
+      - 1-9 1:B+R round:3 sgf:2025/3-BenjaminDreanGuenaizia-ViktorLin.sgf ogs:https://online-go.com/review/1413189
+      - 1-11 1:B+R round:1 sgf:2025/1-BenjaminDrean-Guenaizia-YuzeXing.sgf ogs:https://online-go.com/review/1412501
+      - 2-1 1:W+R round:10 sgf:2025/10-LukasPodpera-BenjaminDreanGuenaizia.sgf ogs:https://online-go.com/review/1415283
+      - 2-3 2:B+R round:3 sgf:2025/3-LukasPodpera-RemiCampagnie.sgf ogs:https://online-go.com/review/1413188
+      - 2-4 2:B+R round:9 sgf:2025/9-LukasPodpera-AsheVazquez.sgf ogs:https://online-go.com/review/1414838
+      - 2-7 7:W+10.5 round:5 sgf:2025/5-LukasPodpera-LucasNeirynck.sgf ogs:https://online-go.com/review/1413715
+      - 2-10 2:B+R round:7 sgf:2025/7-LukasPodpera-BenjaminTeuber.sgf ogs:https://online-go.com/review/1414289
+      - 2-12 2:B+R round:1 sgf:2025/1-LukasPodpera-DominikBoviz.sgf ogs:https://online-go.com/review/1412500
+      - 3-1 3:B+3.5 round:4 sgf:2025/4-RemiCampagnie-BenjaminDreanGuenaizia.sgf ogs:https://online-go.com/review/1413580
+      - 3-5 5:W+R round:2 sgf:2025/2-RemiCampagnie-VsevolodOvsiienko.sgf ogs:https://online-go.com/review/1413031
+      - 3-6 3:B+R round:11 sgf:2025/11-RemiCampagnie-JonasWelticke.sgf ogs:https://online-go.com/review/1415427
+      - 3-8 3:B+R round:9 sgf:2025/9-RemiCampagnie-MatiasPankoke.sgf ogs:https://online-go.com/review/1414843
+      - 3-12 3:B+7.5 round:6 sgf:2025/6-RemiCampagnie-DominikBoviz.sgf ogs:https://online-go.com/review/1414169
+      - 4-3 3:W+R round:8 sgf:2025/8-AsheVazquez-RemiCampagnie.sgf ogs:https://online-go.com/review/1414703
+      - 4-8 4:B+R round:10 sgf:2025/10-AsheVazquez-MatiasPankoke.sgf ogs:https://online-go.com/review/1415278
+      - 4-9 4:B+R round:6 sgf:2025/6-AsheVazquez-ViktorLin.sgf ogs:https://online-go.com/review/1414168
+      - 4-11 11:W+R round:2 sgf:2025/2-AsheVazquez-YuzeXing.sgf ogs:https://online-go.com/review/1413028
+      - 4-12 4:B+T round:4 sgf:2025/4-AsheVazquez-DominikBoviz.sgf ogs:https://online-go.com/review/1413578
+      - 5-2 2:W+16.5 round:8 sgf:2025/8-VsevolodOvsiienko-LukasPodpera.sgf ogs:https://online-go.com/review/1414708
+      - 5-4 4:W+2.5 round:7 sgf:2025/7-VsevolodOvsiienko-AsheVazquez.sgf ogs:https://online-go.com/review/1414288
+      - 5-6 5:B+13.5 round:5 sgf:2025/5-VsevolodOvsiienko-JonasWelticke.sgf ogs:https://online-go.com/review/1413714
+      - 5-8 5:B+3.5 round:3 sgf:2025/3-VsevolodOvsiienko-MatiasPankoke.sgf ogs:https://online-go.com/review/1413187
+      - 5-9 5:B+R round:1 sgf:2025/1-VsevolodOvsiienko-ViktorLin.sgf ogs:https://online-go.com/review/1412499
+      - 5-11 5:B+7.5 round:10 sgf:2025/10-VsevolodOvsiienko-YuzeXing.sgf ogs:https://online-go.com/review/1415279
+      - 6-2 6:B+R round:6 sgf:2025/6-JonasWelticke-LukasPodpera.sgf ogs:https://online-go.com/review/1414172
+      - 6-4 6:B+R round:3 sgf:2025/3-JonasWelticke-AsheVazquez.sgf ogs:https://online-go.com/review/1413185
+      - 6-8 8:W+10.5 round:1 sgf:2025/1-JonasWelticke-MatiasPankoke.sgf ogs:https://online-go.com/review/1412497
+      - 6-9 9:W+34.5 round:10 sgf:2025/10-JonasWelticke-ViktorLin.sgf ogs:https://online-go.com/review/1415281
+      - 6-10 10:W+16.5 round:4 sgf:2025/4-JonasWelticke-BenjaminTeuber.sgf ogs:https://online-go.com/review/1413583
+      - 6-11 6:B+39.5 round:8 sgf:2025/8-JonasWelticke-YuzeXing.sgf ogs:https://online-go.com/review/1414705
+      - 7-1 1:W+20.5 round:6 sgf:2025/6-LucasNeirynck-BenjaminDreanGuenaizia.sgf ogs:https://online-go.com/review/1414171
+      - 7-3 7:B+R round:10 sgf:2025/10-LucasNeirynck-RemiCampagnie.sgf ogs:https://online-go.com/review/1415282
+      - 7-4 4:W+0.5 round:1 sgf:2025/1-LucasNeirynck-AsheVazquez.sgf ogs:https://online-go.com/review/1412496
+      - 7-5 7:B+R round:4 sgf:2025/4-LucasNeirynck-VsevolodOvsiienko.sgf ogs:https://online-go.com/review/1413582
+      - 7-6 6:W+R round:2 sgf:2025/2-LucasNeirynck-JonasWelticke.sgf ogs:https://online-go.com/review/1413034
+      - 7-12 7:B+R round:8 sgf:2025/8-LucasNeirynck-DominikBoviz.sgf ogs:https://online-go.com/review/1414704
+      - 8-2 2:W+R round:4 sgf:2025/4-MatiasPankoke-LukasPodpera.sgf ogs:https://online-go.com/review/1413581
+      - 8-7 8:B+13.5 round:11 sgf:2025/11-MatiasPankoke-LucasNeirynck.sgf ogs:https://online-go.com/review/1415428
+      - 8-9 8:B+R round:8 sgf:2025/8-MatiasPankoke-ViktorLin.sgf ogs:https://online-go.com/review/1414706
+      - 8-10 8:B+R round:2 sgf:2025/2-MatiasPankoke-BenjaminTeuber.sgf ogs:https://online-go.com/review/1413033
+      - 8-11 11:W+R round:6 sgf:2025/6-MatiasPankoke-YuzeXing.sgf ogs:https://online-go.com/review/1414170
+      - 9-2 2:W+R round:2 sgf:2025/2-ViktorLin-LukasPodpera.sgf ogs:https://online-go.com/review/1413030
+      - 9-3 3:W+R round:7 sgf:2025/7-ViktorLin-RemiCampagnie.sgf ogs:https://online-go.com/review/1414293
+      - 9-7 9:B+3.5 round:9 sgf:2025/9-ViktorLin-LucasNeirynck.sgf ogs:https://online-go.com/review/1414842
+      - 9-10 9:B+R round:11 sgf:2025/11-ViktorLin-BenjaminTeuber.sgf ogs:https://online-go.com/review/1415426
+      - 9-11 11:W+R round:4 sgf:2025/4-ViktorLin-YuzeXing.sgf ogs:https://online-go.com/review/1413579
+      - 10-1 1:W+R round:8 sgf:2025/8-BenjaminTeuber-BenjaminDreanGuenaizia.sgf ogs:https://online-go.com/review/1414707
+      - 10-3 3:W+8.5 round:1 sgf:2025/1-BenjaminTeuber-RemiCampagnie.sgf ogs:https://online-go.com/review/1412498
+      - 10-4 4:W+10.5 round:5 sgf:2025/5-BenjaminTeuber-AsheVazquez.sgf ogs:https://online-go.com/review/1413713
+      - 10-5 5:W+R round:6 sgf:2025/6-BenjaminTeuber-VsevolodOvsiienko.sgf ogs:https://online-go.com/review/1414173
+      - 10-7 10:B+23.5 round:3 sgf:2025/3-BenjaminTeuber-LucasNeirynck.sgf ogs:https://online-go.com/review/1413186
+      - 10-12 10:B+3.5 round:10 sgf:2025/10-BenjaminTeuber-DominikBoviz.sgf ogs:https://online-go.com/review/1415280
+      - 11-2 2:W+4.5 round:11 sgf:2025/11-YuzeXing-LukasPodpera.sgf ogs:https://online-go.com/review/1415424
+      - 11-3 3:W+R round:5 sgf:2025/5-YuzeXing-RemiCampagnie.sgf ogs:https://online-go.com/review/1413717
+      - 11-7 7:W+8.5 round:7 sgf:2025/7-YuzeXing-LucasNeirynck.sgf ogs:https://online-go.com/review/1414291
+      - 11-10 10:W+22.5 round:9 sgf:2025/9-YuzeXing-BenjaminTeuber.sgf ogs:https://online-go.com/review/1414840
+      - 11-12 12:W+R round:3 sgf:2025/3-YuzeXing-DominikBoviz.sgf ogs:https://online-go.com/review/1413190
+      - 12-1 1:W+10.5 round:2 sgf:2025/2-DominikBoviz-BenjaminDreanGuenaizia.sgf ogs:https://online-go.com/review/1413029
+      - 12-5 5:W+R round:11 sgf:2025/11-DominikBoviz-VsevolodOvsiienko.sgf ogs:https://online-go.com/review/1415425
+      - 12-6 6:W+R round:9 sgf:2025/9-DominikBoviz-JonasWelticke.sgf ogs:https://online-go.com/review/1414841
+      - 12-8 12:B+11.5 round:7 sgf:2025/7-DominikBoviz-MatiasPankoke.sgf ogs:https://online-go.com/review/1414292
+      - 12-9 9:W+24.5 round:5 sgf:2025/5-DominikBoviz-ViktorLin.sgf ogs:https://online-go.com/review/1413719

@@ -1,1 +1,1 @@
-export { Logo } from '../epc/Logo';
+export { Logo } from '../egc/Logo';

@@ -1,0 +1,26 @@
+; TC[T250210A]
+; CL[A]
+; EV[Lanke Cup 8th European Professional Qualification]
+; PC[AT, Vienna]
+; DT[2025-02-10,2025-02-15]
+; HA[h9]
+; KM[7.5]
+; TM[85]
+; CM[Fischer time 45/20 (submitted by HIGOU)]
+;.
+; Benjamin Drean-Guenaizia became the 10th European Professional player
+; The round robin table with links to all games available at: https://eurogofed.org/proqualification/index_2025.html
+;
+; Pl Name                            Rk Co Club  NBW  SDCSODOS
+ 1 Drean-Guenaizia Benjamin   7d FR  13Ma  9    0    42   0    11+     12+     9+      3-      8+      7+      6+      10+     5+      2+      4-       |14513532
+ 2 Podpera Lukas              7d CZ  APWS  8    1    39   0    12+     9+      3+      8+      7-      6-      10+     5+      4+      1-      11+      |13201914
+ 3 Campagnie Remi             6d FR  67SE  8    0    38   0    10+     5-      2-      1+      11+     12+     9+      4+      8+      7-      6+       |15449269
+ 4 Vazquez Ashe               7d ES  Pant  7    1    35   0    7+      11-     6-      12+     10+     9+      5+      3-      2-      8+      1+       |15633673
+ 5 Ovsiienko Vsevolod         6d UA  Kyiv  7    0    30   0    9+      3+      8+      7-      6+      10+     4-      2-      1-      11+     12+      |17633902
+ 6 Welticke Jonas             6d DE  BN    5    1    25   0    8-      7+      4+      10-     5-      2+      1-      11+     12+     9-      3-       |15786287
+ 7 Neirynck Lucas             6d BE  75Ju  5    0    28   0    4-      6-      10-     5+      2+      1-      11+     12+     9-      3+      8-       |14898301
+ 8 Pankoke Matias             6d DE  OS    4    2    18   0    6+      10+     5-      2-      1-      11-     12-     9+      3-      4-      7+       |15933973
+ 9 Lin Viktor                 6d AT  xxxx  4    1    16   0    5-      2-      1-      11-     12+     4-      3-      8-      7+      6+      10+      |14501256
+10 Teuber Benjamin            6d DE  C     4    0    15   0    3-      8-      7+      6+      4-      5-      2-      1-      11+     12+     9-       |10437174
+11 Xing Yuze                  6d DE  HD    3    0    15   0    1-      4+      12-     9+      3-      8+      7-      6-      10-     5-      2-       |18525012
+12 Boviz Dominik              6d HU  MGE   2    0    7    0    2-      1-      11+     4-      9-      3-      8+      7-      6-      10-     5-       |14225926

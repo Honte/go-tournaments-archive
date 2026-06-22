@@ -1,0 +1,21 @@
+website: https://www.eurogofed.org/proqualification/index_2017.html
+stages:
+  - type: tournament
+    file: epq2017.txt
+    notes: 3 rounds Double ladder + 3 rounds KO, played in 2 different locations on 2 different weekends
+    scoringColumns:
+      - wins
+      - place
+    breakers:
+      - place
+    columns:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:6 sgf:2017/6-AndriiKravets-ViktorLin.sgf
+      - 1-6 1:B+3.5 round:4 sgf:2017/4-AndriiKravets-CornelBurzo.sgf
+      - 3-2 2:W+0.5 round:5 sgf:2017/5-RobvanZeijst-ViktorLin.sgf
+      - 3-8 3:B+R round:4 sgf:2017/4-RobvanZeijst-OscarVazquez.sgf
+      - 4-1 1:W+T round:5 sgf:2017/5-JonasWelticke-AndriiKravets.sgf
+      - 4-7 4:B+5.5 round:4 sgf:2017/4-JonasWelticke-LukasPodpera.sgf
+      - 5-2 2:W+6.5 round:4 sgf:2017/4-CsabaMero-ViktorLin.sgf

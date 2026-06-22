@@ -1,0 +1,394 @@
+(;CA[utf-8]FF[4]ST[2]RU[Chinese]OT[1x30 byo-yomi]AP[CGoban:3]SZ[19]GM[1]GN[EPQ 2021 (Lukas Podpera (W) - Remi Campagnie (B)]
+GC[Semi Final game 2 (Best of three)]EV[6th European Pro Qualification]RO[8]DT[2021-10-29]
+PC[The KGS Go Server at http\://www.gokgs.com/]PB[Remi Campagnie]BR[6d]PW[Lukas Podpera]
+WR[7d]KM[7.5]TM[3600]RE[W+R]US[Harry van der Krogt]MULTIGOGM[1]
+;B[pd];W[dc];B[pp];W[dq];B[ce];W[cn];B[ed];W[ec];B[fd];W[gc];B[dp];W[ep];B[cq];W[cp]
+;B[do];W[co];B[eq];W[dr];B[fp];W[eo];B[dn];W[fq];B[cm];W[bm];B[bl]C[RaduStefan [3d\]\: Is this on?
+]
+;W[dm];B[en];W[cl]C[flogo [3d\]\: It's a joseki in lower left ?
+];B[er]C[RaduStefan [3d\]\: first game was won by lukan?
+light85 [1d\]\: Given it was white's corner, I suppose it's a fair result?
+]
+;W[fr];B[fo];W[es];B[ep]C[flogo [3d\]\: seems terrible for black
+];W[hq];B[cr]C[dartagaluc [4d\]\: This is so good for white
+]
+;W[ds];B[ip]C[flogo [3d\]\: it's a game over \: D
+flogo [3d\]\: gg Lukas final
+RaduStefan [3d\]\: what was B thinking I wonder...
+kobaa [?\]\: well on the positive side, its till early opening and all of whites stones are crammed on 2 corners 
+]
+;W[hp];B[ho]C[seequ [2d?\]\: no big mistakes yet so should be fine surely
+];W[iq]
+;B[jp];W[jq]C[flogo [3d\]\: you would pick black or white here if you ave to play ?
+tap1998 [3d?\]\: how can it not be L4?
+seequ [2d?\]\: I'd pick either
+seequ [2d?\]\: I'd prefer W but logically the game has to be even
+light85 [1d\]\: According to AI, it is.
+Whirly [4d\]\: I think double hane is possible
+Whirly [4d\]\: if w takes the stone b would have g3
+nidza92 [?\]\: never seen this var
+flogo [3d\]\: double hane ?!
+nidza92 [?\]\: double hane seems good yeah
+flogo [3d\]\: seems not so good 
+Whirly [4d\]\: why so?
+flogo [3d\]\: L3 L2 M2 M3 L4 N2 K2 L1 G3 G2 G4 J2 this ?
+flogo [3d\]\: what do you have in mind
+flogo [3d\]\: (i took the stone as white)
+nidza92 [?\]\: black can take d2 stones if white take m2 stone
+Nantoka [4d\]\: just atari at C1 at any point of that fuseki, so you can squeeze and kill everything
+flogo [3d\]\: ah yes
+Nantoka [4d\]\: *of that variation
+flogo [3d\]\: ok i see
+Whirly [4d\]\: l3 l2 m2 m3 l4 n2 g3 g2 f1 g1 c1 f1 k2 m1 h2 g4 h1 g3 j2 
+nidza92 [?\]\: g3 g2 f1 g1 c1 f1 h2
+flogo [3d\]\: thx
+flogo [3d\]\: mabe
+flogo [3d\]\: whate can foce at G4 before
+flogo [3d\]\: force
+flogo [3d\]\: L3 L2 G4  ?
+Ten [1p\]\: That lower-left corner is still annoying, c1-f1-b4 is hard to kill cleanly
+Nantoka [4d\]\: after n4 w will need to come back at k2, still doesn't seem terrible to me
+Ten [1p\]\: The b8 stone still surprisingly has use for black
+TomiP [?\]\: *takes out binoculars* nope, don't see it
+]
+;B[kq]C[Whirly [4d\]\: flogo I guess you are right about g4
+flogo [3d\]\: i dunno, just a proposal \:/
+Whirly [4d\]\: yeah but idk how b can counter that
+flogo [3d\]\: hard yes
+]
+;W[kr]C[flogo [3d\]\: so maybe double hane is too much ?.
+flogo [3d\]\: let's see here
+]
+;B[lr]C[Nantoka [4d\]\: we shall see soon
+flogo [3d\]\: woh
+albatros [7d\]\: L1 works?
+Whirly [4d\]\: why not g4?
+flogo [3d\]\: now i guess
+flogo [3d\]\: if whitez K1 maybe too passive
+albatros [7d\]\: Oh, g4 strong
+flogo [3d\]\: yes G4
+Whirly [4d\]\: is b going to take the side and let w break out?
+Nantoka [4d\]\: Kaymin after seeing your youtube channel I became a huge fan, I shall root for you on every future tournament
+Whirly [4d\]\: link?
+Whirly [4d\]\: I didn't know he had one
+albatros [7d\]\: No, black might give up the stone on the 2nd line
+albatros [7d\]\: To increase the wall
+flogo [3d\]\: and build center
+flogo [3d\]\: black has to rely on center to win now 
+Whirly [4d\]\: seems bad if he just blocks the center and gives the stone
+albatros [7d\]\: Wait, I found something
+SIscurge [5d\]\: there is a squeez and death
+albatros [7d\]\: g4 g5 and capturing stone is no good
+flogo [3d\]\: what's next ?
+Whirly [4d\]\: oh how b punishes?
+vaurien [2d?\]\: Go Remi !
+albatros [7d\]\: Because of K2 M1 j2 h2 h1
+Whirly [4d\]\: ah right!
+Whirly [4d\]\: nice one
+flogo [3d\]\: H1 and white F1 ?
+Ten [1p\]\: What?
+SIscurge [5d\]\: works for w no ? \:D
+albatros [7d\]\: Hi 10
+ratatouile [-\]\: f1 then atari at g2
+ratatouile [-\]\: It does seem to work
+flogo [3d\]\: i dont see the trouble for white
+Ten [1p\]\: j2 h2 h1, answer g1? \:D
+Whirly [4d\]\: wait
+ratatouile [-\]\: f1 in that case, right, Ten?
+albatros [7d\]\: Oh.. right
+Whirly [4d\]\: it doesn't work
+flogo [3d\]\: yes H1 F1
+Whirly [4d\]\: good try though
+]
+;W[gp]C[flogo [3d\]\: OH
+flogo [3d\]\: he found G4
+ratatouile [-\]\: h1 f1 g2, flogo?
+albatros [7d\]\: He found it earlier, I suppose. He was checking the adji
+flogo [3d\]\: ok
+Whirly [4d\]\: did remi find it though?>
+flogo [3d\]\: yes ratatouille
+flogo [3d\]\: maybe not f1
+Ten [1p\]\: Looks like a nice corner for white now, but game's just starting
+flogo [3d\]\: black was tricky btw
+flogo [3d\]\: not easy sequence
+Whirly [4d\]\: I'll check the stream
+Nantoka [4d\]\: would J6 here actually worsen the shape here or is it added value for the centre?
+Whirly [4d\]\: they are in this position
+Ten [1p\]\: Nantoka, tough question, you're giving two peeps instead of one then
+nidza92 [?\]\: didnt see g4. if white takes m2 next this has to be bad for white right
+nidza92 [?\]\: bad for black *
+Yakami [5d?\]\: Yes bad for black =)
+albatros [7d\]\: Yeah, we suppose
+Yakami [5d?\]\: (according to overlord)
+ratatouile [-\]\: Depends on corner aji, I think Ten found something earlier?
+Nantoka [4d\]\: indeed, but I'm wondering if m3 continuation is actually forced after this. If yes, J6 would make no sense over G5
+seequ [2d?\]\: how bad is bad?
+Ten [1p\]\: nidza92, definitely bad
+cezary [5d\]\: checked with kata apparently nothing bad happend so far
+cezary [5d\]\: g5 is -3 points
+]
+;B[go]C[Whirly [4d\]\: so just L4?
+cezary [5d\]\: yeah
+Yakami [5d?\]\: Yes but the variation it propsed was like l4 g5 g7 g6 e7 
+Whirly [4d\]\: but now it's bad
+]
+;W[lq];B[kp]C[cezary [5d\]\: but l4 continuation it's way outside of that i know about go
+]
+;W[mr]C[cezary [5d\]\: is*
+nidza92 [?\]\: this is what happens when you play the most complicated joseki in deciding game
+nidza92 [?\]\: and you dont know variations
+Nantoka [4d\]\: yet you're still strong enough to continue the game evenly
+Ten [1p\]\: I think I know most of the relevant variations and I still wouldn't want to play this
+]
+;B[lp];W[mq]C[nidza92 [?\]\: not evenly for sure
+Ten [1p\]\: I mean, for fear of messing up
+cezary [5d\]\: remi prefers to become pro bravely or not at all
+cezary [5d\]\: style points for remi
+Fanshawe [2d?\]\: well, if messing up can look like this, I sure understand your lack of interest in playing this, Antti \:)
+cezary [5d\]\: still a playable game for both, no ?
+Fanshawe [2d?\]\: should be
+Yakami [5d?\]\: yeah nothing is decided
+cezary [5d\]\: the only thing that is bad for remi so far is that it looks like a game lukas likes to play
+Ten [1p\]\: I imagine Remi will go for the c1+b4 stuff soon enough, he must have researched that to play this
+Ten [1p\]\: That'll be yet another fun reading battle in the same corner
+Ten [1p\]\: For us observers, of course
+light85 [1d\]\: k2 m1 g2 
+Fanshawe [2d?\]\: hmm, is there any reason for B to hurrry with that?
+Fanshawe [2d?\]\: will W actually spend a move there to remove the aji, I mean?
+Ten [1p\]\: Something like white c11 will basically fix the corner
+Fanshawe [2d?\]\: ah
+Ten [1p\]\: That's just how messed-up the situation there is
+Fanshawe [2d?\]\: gosh, that's messed up indeed
+Ten [1p\]\: Well, of course even in the worst case it's just like a ko life for black, so in that sense it can be ignored
+Ten [1p\]\: The ko makes a bigger difference when the h3 group is not settled yet
+]
+;B[gr]C[ratatouile [-\]\: Hm?
+Whirly [4d\]\: just h2
+Whirly [4d\]\: doesn't work for black
+Ten [1p\]\: Literally just h2, I think, yes
+Ten [1p\]\: Everything else seems to fail
+Whirly [4d\]\: I read this earlier when checking g4
+PondTurtle [1k?\]\: O.o
+]
+;W[hr];B[jr]C[Whirly [4d\]\: what is Remi doing?
+liusasori [5d\]\: losing with style
+Sztygrys [?\]\: not killing w
+cezary [5d\]\: there was this game in may between shin jinseo and lee wonyoung with the aji in the corner used nicely
+cezary [5d\]\: http\://www.go4go.net/go/games/sgfview/96898
+Whirly [4d\]\: I have an idea I think
+]
+;W[ks]C[Sztygrys [?\]\: But still it is ok for b
+Whirly [4d\]\: ah
+flogo [3d\]\: what's happened ?
+Whirly [4d\]\: now this idea is gone
+RaduStefan [3d\]\: what happens if B H1
+MaLa [?\]\: nothing
+Ten [1p\]\: L1 is nice shape, black cannot even try to set up trouble with j1
+Whirly [4d\]\: yeah but even if he played m1 it was only some squeese potential for black
+Whirly [4d\]\: but l1 is sharp
+PondTurtle [1k?\]\: if B ends with big moyo that is Lukan's kind of game
+]
+;B[is]C[flogo [3d\]\: is there a trick for blmack here ?
+];W[hs]C[flogo [3d\]\: or nothing ? 
+liusasori [5d\]\: i don't see anything
+]
+;B[bp]C[liusasori [5d\]\: look like a waste pf threats
+liusasori [5d\]\: so the corner is ko right ? 
+Whirly [4d\]\: seems so
+Nantoka [4d\]\: white C8 actually has to be careful, B4 right away is a probe to see if white chooses ko or kill in the corner
+liusasori [5d\]\: but I dislike w having a ponuki in front of c15 wall
+Whirly [4d\]\: how can w kill?
+Nantoka [4d\]\: B2
+flogo [3d\]\: white can just le tblack live gote and take sente
+flogo [3d\]\: like playin in center or attacking top ?
+]
+;W[br]C[Nantoka [4d\]\: Ilya showed a variation to kill on stream
+];B[fs]C[Nantoka [4d\]\: ok
+]
+(;W[cs]C[flogo [3d\]\: ok
+Nantoka [4d\]\: ?? wait no
+flogo [3d\]\: ???
+liusasori [5d\]\: lul
+cezary [5d\]\: he?
+])
+(;W[gs];B[cs]C[flogo [3d\]\: omg
+Nantoka [4d\]\: fiu
+jlt [1d\]\: !!
+cezary [5d\]\: jeesus \:D
+]
+;W[fs]C[flogo [3d\]\: my heart broke
+ratatouile [-\]\: That gave me a jolt
+];B[bq]
+C[EGF2 [-\]\: Sorry
+Whirly [4d\]\: oh yeah I misread
+Nantoka [4d\]\: EGF2 toying with our minds
+Ten [1p\]\: A3 to kill the corner, but then fun ensues
+flogo [3d\]\: i woiuld ha elet black live samll and got and pley like O5 or top to attack
+flogo [3d\]\: gote*
+]
+;W[aq];B[bo]C[YoungPro [?\]\: why would one waste all possible ajis knowing that right now nothing works, black should just continue with the game and wait for a chance
+Nantoka [4d\]\: A6 better than B6 here?
+Mougno [1k\]\: seems very dead to me for b .. \:(
+Yakami [5d?\]\: a dead cockroach might still freak you out 
+]
+;W[an]C[Mougno [1k\]\: haha
+Ten [1p\]\: Been there, done that...
+Ten [1p\]\: Japan and its insects
+Fanshawe [2d?\]\: Japan's not the worst, certainly
+Ten [1p\]\: True
+Fanshawe [2d?\]\: at least your cockroaches don't fly, I don't think
+Ten [1p\]\: They do
+Fanshawe [2d?\]\: oh, okay
+Fanshawe [2d?\]\: do they also bite?
+Sztygrys [?\]\: cockroaches are the worst
+Ten [1p\]\: Not as far as I know
+Fanshawe [2d?\]\: still better then Australia then
+Ten [1p\]\: I'm staying clear of Australia already just for the spiders
+Fanshawe [2d?\]\: my mom used to have a lot of Australian students and they would show her letters from home (that was before email)
+ratatouile [-\]\: ...Australian cockroaches bite?
+Sztygrys [?\]\: and fly
+]
+;B[ci]C[Fanshawe [2d?\]\: the letters *always* contained the question "what sort of insects do they have there and how bad do their stings hurt?"
+ratatouile [-\]\: Fly is normal
+ratatouile [-\]\: Bite...haven't seen one
+Ten [1p\]\: Haha
+ratatouile [-\]\: And never, I hope
+ratatouile [-\]\: never will*
+Fanshawe [2d?\]\: my policy is only ever going to Australia in the summer (their winter, I mean)
+Ten [1p\]\: In Finland we just have mosquitos, and horse flies in the north
+MaLa [?\]\: in finland horses fly!
+Ten [1p\]\: And they don't even transmit anything
+Fanshawe [2d?\]\: are horse flies like dragon flies?
+]
+;W[fl]C[Ten [1p\]\: They're huge flies that bite
+Fanshawe [2d?\]\: ouch, that's worse
+Nantoka [4d\]\: with horse teeth
+Yakami [5d?\]\: In Finland I'd be mostly scared of the inhabitants
+Fanshawe [2d?\]\: Yaka, how rude!
+Yakami [5d?\]\: ^_^
+Fanshawe [2d?\]\: the ones I know are all very nice people \:)
+Prisme [1d\]\: it turns out black can gain something out of this ! 
+]
+;B[mp]C[Fanshawe [2d?\]\: well, W also got a somewhat useful move
+flogo [3d\]\: O5 instead of F8 would have been better ?
+]
+;W[qj]C[Furi74 [1d\]\: F8 looked looked mandatory? you dont want black to enclose you there
+flogo [3d\]\: yeah probably
+flogo [3d\]\: the goban still oepened like with this R10
+PondTurtle [1k?\]\: Ai actually wanted to let B live and get W C11 I found that interesting
+Furi74 [1d\]\: corner is just cash, big cash but just cash, no potential
+bartosz [3d\]\: looks very good for white
+flogo [3d\]\: pond thats was my idea o_O
+flogo [3d\]\: you scerd me
+]
+;B[ql]C[PondTurtle [1k?\]\: TBH I would kill there too but getting both C11 and N4 is nice for W
+]
+;W[qf]C[flogo [3d\]\: yes
+];B[nq];W[nr];B[oq];W[nc];B[nd];W[md];B[ne];W[pc];B[qc]
+;W[oc];B[pf]C[Mougno [1k\]\: does katago says that game is over or it's still like 70% ?
+PondTurtle [1k?\]\: lemme check....
+]
+;W[qe];B[qd];W[pg]C[PondTurtle [1k?\]\: 4 pt lead for W
+Fanshawe [2d?\]\: probably too early to be really over?
+Mougno [1k\]\: 4 points is not much...
+]
+;B[pe]C[Mougno [1k\]\: even for them
+Fanshawe [2d?\]\: it's probably more than that in human play, though
+Mougno [1k\]\: yep
+Fanshawe [2d?\]\: the AI is probably better in using all the B influence, so for AI it's worth more
+PondTurtle [1k?\]\: as human this looks like hard game for B
+]
+;W[qh]C[PondTurtle [1k?\]\: my guess is AI could bank on making the left bottom semedori?
+PondTurtle [1k?\]\: That is what it often does to me  \:-D
+Mougno [1k\]\: yes it's the point, but not now. I wonder what Remi will play now...
+Mougno [1k\]\: I wouldn't know what to do
+PondTurtle [1k?\]\: well top side seems like only part of the board where something can happen
+PondTurtle [1k?\]\: if W adds stone there it is big so I figure B has to play something like L16 or J17?
+]
+;B[cc]C[PondTurtle [1k?\]\: or start there...
+Nantoka [4d\]\: I feel like a lot can happen around j9 too
+PondTurtle [1k?\]\: Nantoka can you explain?
+Nantoka [4d\]\: since black has some forcing moves on C6 group left, black might gain a wall from the H8 side. If paired with some variation on the top, black might get to play another kind of wall around k15 facing the centre. That way P9 keima would become humongous, and a fighting might start inside the moyo
+Nantoka [4d\]\: and a fight* might start
+PondTurtle [1k?\]\: I thought you mean something like that, W group on the right being very strong makes such line of play difficult for B too I think
+]
+;W[gd]C[Nantoka [4d\]\: that's why I think J9 area will be a key to this development, according to how well black will manage to make use of C8's weaknesses
+]
+;B[fc];W[fb];B[dd];W[gf];B[cb]C[PondTurtle [1k?\]\: that was sexy move, expanding while reducing
+PondTurtle [1k?\]\: almost like problem solution from book
+]
+;W[ld]C[ratatouile [-\]\: I wanna attach at g8 now, for some reason
+gisel [?\]\: Who won yesterday? Remi or Lukas?
+]
+;B[ng]C[Fanshawe [2d?\]\: Lukas
+];W[mf];B[og];W[oj]C[bartosz [3d\]\: yesterday game was amazing \:D
+Ten [1p\]\: Looks like Lukan has counted, since he's playing so tightly
+SIscurge [5d\]\: To me it looks like b is about 20 behind
+SIscurge [5d\]\: that is quite a lot since nothing happend, so i guess he has some invisible points somewhere
+SIscurge [5d\]\: how much time do they have left?
+Ten [1p\]\: I'd be surprised if it was more than 10
+Ten [1p\]\: Which is still a lot, of course
+EGF2 [-\]\: B\:29 W\:25
+flogo [3d\]\: this is the hardest thing in go, "how to win a won game"
+flogo [3d\]\: generally we lost a won game \: D
+]
+;B[lh];W[kf]C[wade [6d\]\: B9 looks super annoying for w to deal with after b throw in at a2
+]
+;B[ar];W[as];B[bk];W[hl]C[Ten [1p\]\: I'd think winning a lost game is generally harder \:)
+TytanPracy [?\]\: G8
+]
+;B[ck]C[Naphthalin [?\]\: can someone explain how B isn't already hopelessly behind here?
+]
+;W[em];B[dl];W[cm];B[fg]C[wade [6d\]\: He is, but if w blunders that c7 group somehow the game will turn
+jlt [1d\]\: Hard to blunder now that all the exchanges on the bottom have been made.
+]
+;W[ol];B[qn]C[Naphthalin [?\]\: black has something like 12 liberties in the lower left, hard to imagine that the c7 group gets that low
+Naphthalin [?\]\: probably even less
+]
+;W[mg];B[mh];W[ni]C[PondTurtle [1k?\]\: What do they have on the clock?
+EGF2 [-\]\: B\:20 W\:21
+]
+;B[nh];W[lj];B[kg];W[jf];B[kj];W[kk];B[jk];W[jj];B[ki];W[jl];B[ik];W[il];B[ij]C[Fanshawe [2d?\]\: like this W should be able to avoid a semedori
+]
+;W[kl]C[Fanshawe [2d?\]\: but B has gained some points around E13
+light85 [1d\]\: black shouldn't give atari l8 first?
+SIscurge [5d\]\: I think black may resign, unfortunately not enough points and nothing to attack
+]
+;B[eb]C[flogo [3d\]\: SE says W++
+flogo [3d\]\: but it's SE ¯\\_(ツ)_/¯ 
+];W[gb]
+C[Naphthalin [?\]\: SE ca
+Naphthalin [?\]\: n't deal with chinese rules
+];B[gg]
+;W[ff];B[ef]C[hvk [-\]\: p2 
+];W[rk];B[or];W[sn];B[rm];W[sm];B[so];W[rl];B[rn];W[sl]
+;B[qo];W[fj];B[hf];W[he];B[fe];W[ge];B[re];W[rf];B[ph];W[qg];B[pb];W[ob];B[qb];W[eh]
+;B[ei];W[fi];B[fh];W[di];B[ej];W[dj];B[ek]
+(;W[dh])
+(;W[dk];B[dh];W[el];B[eg];W[fk];B[eh];W[nn]C[PondTurtle [1k?\]\: hmmm
+PondTurtle [1k?\]\: White won?
+Blacko [5k\]\: no
+PondTurtle [1k?\]\: Well I count over 10pts, they would have to play K1 or something now....
+Blacko [5k\]\: white might be winning, but hasn't won yet
+]
+;B[gm]C[PondTurtle [1k?\]\: Ok I will word it more precicely\: something really weird and unlikely would have to happen for B to win
+PondTurtle [1k?\]\: On this board in late endgame with little aji anywhere
+PondTurtle [1k?\]\: bamboo?
+]
+;W[hm];B[lm];W[ln];B[kn];W[mm];B[lo];W[mn];B[km];W[ll]C[GoDave89 [4d\]\: Lukan-mode ^^
+]
+;B[mj]C[PondTurtle [1k?\]\: This was his kind of game. Early lead you hold onto with solid moves. Also he is probably careful since yesterday he lost due to some slight overplays
+]
+;W[mi];B[li];W[lk];B[om];W[pl];B[qk];W[pk];B[qm];W[rj]C[GoDave89 [4d\]\: huh?
+GoDave89 [4d\]\: Lukan has not lost a single game so far \:D
+PondTurtle [1k?\]\: I meant to say he almost lost
+PondTurtle [1k?\]\: or at very least it was very difficult at one point
+]
+;B[me];W[le];B[on];W[cj];B[bj];W[dl];B[al];W[oa];B[no];W[nm];B[rd];W[pi];B[if];W[ie]
+;B[jg];W[hi];B[ii];W[hh];B[ns];W[ls]C[EGF2 [-\]\: Black resigns
+PondTurtle [1k?\]\: Thank you EGF2 and both players! Congrats to Lukan for making it to Finals!
+Naphthalin [?\]\: thank you EGF2!
+EGF2 [-\]\: Thanks for the comments! \:)
+Milos [5k\]\: \\o/ \\o/
+hvk [-\]\: TY EGF
+])))

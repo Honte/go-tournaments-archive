@@ -1,0 +1,26 @@
+; TC[T150306A]
+; CL[A]
+; EV[2nd European Pro Qualification 2015]
+; PC[IT, Pisa]
+; DT[2015-03-06,2015-03-08]
+; HA[h9]
+; KM[6.5]
+; TM[114]
+; CM[ (submitted by carlo86)]
+;.
+   1 Surma Mateusz                  7d PL  Dzim     4     1   15+   10+    6+    2+    0=    0= |12837968
+   2 Shikshin Ilja                  7d RU  16Kz     5     1   16+   12+    8+    1-    5+    3+ |12013342
+   3 Burzo Cornel                   6d RO  BaMa     4     3   10-   15+   12+    8+    4+    2- |10325249
+   4 Debarre Thomas                 6d FR  67SE     3     4   12-   16+   10+    6+    3-    0= |12950872
+   5 Kravets Andrii                 6d UA  Rivn     3     4   13+    6-   11+    7+    2-    0= |12350261
+   6 Pop Cristian                   7d RO  CSRB     2     6    9+    5+    1-    4-    0=    0= |10333389
+   7 Bajenaru Dragos                6d RO  Bucu     2     6   14+    8-    9+    5-    0=    0= |10349240
+   8 Kachanovskyi Artem             6d UA  Rivn     2     6   11+    7+    2-    3-    0=    0= |12662870
+   9 Lin Viktor                     6d AT  Go7      1     9    6-   13+    7-    0=    0=    0= |14501256
+  10 Mero Csaba                     6d HU  BuPe     1     9    3+    1-    4-    0=    0=    0= |10225875
+  11 Mitic Dusan                    6d RS  NiSt     1     9    8-   14+    5-    0=    0=    0= |10649507
+  12 Silt Ondrej                    6d CZ  AKun     1     9    4+    2-    3-    0=    0=    0= |10337481
+  13 Zhao Pei                       6d DE  F        0    13    5-    9-    0=    0=    0=    0= |10201235
+  14 Podpera Lukas                  6d CZ  APWS     0    13    7-   11-    0=    0=    0=    0= |13201914
+  15 Sankin Timur                   6d RU  77Mo     0    13    1-    3-    0=    0=    0=    0= |10801032
+  16 Zhurakovskyi Bohdan            6d UA  Rivn     0    13    2-    4-    0=    0=    0=    0= |12374461
