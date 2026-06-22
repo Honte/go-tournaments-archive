@@ -11,4 +11,6 @@ stages:
       - place
     breakers:
       - place
+    columns:
+      - wins    
     findSharedPlaces: true

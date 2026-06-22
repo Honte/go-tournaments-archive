@@ -1,0 +1,13 @@
+website: https://www.eurogofed.org/results/congress/egc1964.htm
+name: European Championship 1964
+stages:
+  - type: tournament
+    file: egc1964.txt
+    name: Championship Group
+    notes: Recreated from cross table. Games order can be different.
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true   
+

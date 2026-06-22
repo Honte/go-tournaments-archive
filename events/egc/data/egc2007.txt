@@ -1,0 +1,24 @@
+; CL[A]
+; EV[51st European Go Congress, 1st week]
+; PC[AT, Villach]
+; DT[2007-07-15,2007-07-28]
+; HA[h9]
+; KM[7.5]
+; TM[150]
+;
+   1 Shikshin Ilja                  6d RU  16Kz    31     7   303   207     4      0+   6+/b0  12+/w0      0-      0+   4+/w0      0-   2-/w0      0+      0+ |12013342
+   2 Dinerstein Alexandr            1p RU  16Kz    31     7   303   205     5      0+      0-      0+   3+/b0  12+/b0      0-      0+   1+/b0  10+/b0      0- |10313237
+   3 Pop Cristian                   7d RO  Bucu    30     6   298   177     8  12-/b0      0+   9+/w0   2-/w0      0+      0+   7+/w0      0-   4+/b0      0- |10333389
+   4 Balogh Pal                     6d HU  Debr    30     6   297   175     9      0+   8+/w0  13-/w0      0+      0+   1-/b0   6+/w0      0-   3-/w0  12+/b0 |10498246
+   5 Laatikainen Vesa               5d FI  HGK     30     6   297   172    10  10+/w0      0+      0-      0-      0-      0+      0+      0+      0+      0- |10201015
+   6 Silt Ondrej                    6d CZ  KVa     30     6   295   174    11      0+   1-/w0   8+/b0      0-   9+/b0      0+   4-/b0  10-/w0      0+      0+ |10337481
+   7 Burzo Cornel                   6d RO  Slob    30     6   295   171    12      0-      0+      0-      0+   8+/b0  13+/b0   3-/b0      0+  12+/w0      0- |10325249
+   8 Mero Csaba                     6d HU  BuPe    30     6   293   173    15      0+   4-/b0   6-/w0  10+/b0   7-/w0      0+      0+  11-/w0      0+      0+ |10225875
+   9 Schuetze Bernd                 4d DE  B       30     6   293   172    16  14+/w0      0-   3-/b0      0+   6-/w0      0+      0+  12-/b0      0+      0+ |12674145
+  10 Soldan Leszek                  5d PL  Wars    30     6   292   171    17   5-/b0      0-      0+   8-/w0      0+      0+  15+/w0   6+/b0   2-/w0      0+ |10449560
+  11 Papazoglou Benjamin            5d FR  35Re    30     6   290   170    18  16-/b0      0+      0-      0+      0-      0+  13+/w0   8+/b0      0-      0+ |10733712
+  12 Danek Vladimir                 5d CZ  Pra     29     5   297   146    21   3+/w0      0+   1-/b0  16+/w0   2-/w0      0+      0-   9+/w0   7-/b0   4-/w0 |10213016
+  13 Siivola Matti                  5d FI  HGK     29     5   295   144    22      0+      0+   4+/b0      0-      0-   7-/w0  11-/b0      0-      0+      0+ |10286782
+  14 Schnider Gert                  5d AT  Wien    29     5   291   142    24   9-/b0      0+      0-      0-      0+      0+      0-  15+/w0      0+      0- |10513129
+  15 Radmacher Bernd                4d DE  xxx     29     5   291   141    25      0+      0-      0-      0-      0+  16+/w0  10-/b0  14-/b0      0+      0+ |10333675
+  16 Tormanen Antti                 4d FI  OGP     29     5   291   141    25  11+/w0      0+      0-  12-/b0      0-  15-/b0      0+      0+      0+      0- |12949310

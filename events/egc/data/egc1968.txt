@@ -1,0 +1,13 @@
+; EV[European Go Congress 1968 - Championship Group]
+; PC[DE, West Berlin]
+; DT[1968-07-28,1968-08-11]
+   1 Mattern Juergen               30k DE  xxx      8     10+      9+      8+      7+      6+      5+      4+      3-      2+
+   2 Mutabzija Zoran               30k YU  xxx      7      9+      7+      5+      3+     10+      8-      6+      4+      1-
+   3 Dueball Juergen               30k DE  xxx      7      8+      6+      4-      2-      9+      7+      5+      1+     10+
+   4 Wimmer Manfred                30k AT  xxx      5      7-      5-      3+     10+      8+      6+      1-      2-      9+
+   5 Ekart Eduard                  30k YU  xxx      5      6-      4+      2-      9+      7+      1-      3-     10+      8+
+   6 Vries Henk_de                 30k NL  xxx      5      5+      3-     10+      8+      1-      4-      2-      9+      7+
+   7 Goddard Tony                  30k UK  xxx      4      4+      2-      9+      1-      5-      3-     10+      8+      6-
+   8 Diamond Jon                   30k UK  xxx      3      3-     10+      1-      6-      4-      2+      9+      7-      5-
+   9 Katscher Michael              30k DE  xxx      1      2-      1-      7-      5-      3-     10+      8-      6-      4-
+  10 Grebe Leonhard                30k DE  xxx      0      1-      8-      6-      4-      2-      9-      7-      5-      3-

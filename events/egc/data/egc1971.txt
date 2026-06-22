@@ -1,0 +1,10 @@
+; EV[European Go Congress 1971 - Championship Group]
+; PC[UK, Bristol]
+; DT[1971-08-21,1971-09-04]
+   1 Mutabzija Zoran               30k YU  xxx      5    12      0=      7+      6+      5+      4+      3+      2-
+   2 Vries Henk_de                 30k NL  xxx      4    12      7+      0=      5-      6+      3+      4-      1+
+   3 Rebattu Max                   30k NL  xxx      4     8      6+      5+      0=      7+      2-      1-      4+
+   4 Wiltschek Helmut              30k DE  xxx      3     8      5+      6+      7-      0=      1-      2+      3-
+   5 Goddard Tony                  30k UK  xxx      2     5      4-      3-      2+      1-      0=      7+      6-
+   6 Ekart Eduard                  30k YU  xxx      2     3      3-      4-      1-      2-      7+      0=      5+
+   7 Diamond Jon                   30k UK  xxx      1     3      2-      1-      4+      3-      6-      5-      0=

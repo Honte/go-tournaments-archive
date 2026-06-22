@@ -1,0 +1,13 @@
+; EV[European Go Congress 1978 - Championship Group]
+; PC[FR, Paris]
+; DT[1978-07-22,1978-08-05]
+   1 Hasibeder Helmut               5d AT  xxx      9     10+      9+      8+      7+      6+      5+      4+      3+      2+
+   2 Rebattu Max                    5d NL  xxx      8      9+      7+      5+      3+     10+      8+      6+      4+      1-
+   3 Macfadyen Matthew              5d UK  xxx      7      8+      6+      4+      2-      9+      7+      5+      1-     10+
+   4 Schlemper Ronald               4d NL  xxx      5      7-      5+      3-     10+      8+      6+      1-      2-      9+
+   5 Isele Wolfgang                 5d DE  xxx      4      6+      4-      2-      9-      7+      1-      3-     10+      8+
+   6 Hubert Jerome                  4d FR  xxx      4      5-      3-     10+      8+      1-      4-      2-      9+      7+
+   7 Moussa Andre                   4d FR  xxx    2.5      4+      2-      9-      1-      5-      3-     10+      8=      6-
+   8 Beck Gerfried                  4d AT  xxx    2.5      3-     10+      1-      6-      4-      2-      9+      7=      5-
+   9 Kippe Horst                    4d DE  xxx      2      2-      1-      7+      5+      3-     10-      8-      6-      4-
+  10 Castledine Brian               4d UK  xxx      1      1-      8-      6-      4-      2-      9+      7-      5-      3-

@@ -1,0 +1,17 @@
+website: https://www.eurogofed.org/results/congress/egc1982.htm
+name: European Championship 1982
+stages:
+  - type: tournament
+    file: egc1982.txt
+    name: Championship Group
+    scoringColumns:
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - wins
+      - sos
+      - sodos
+    findSharedPlaces: true
+	   
+

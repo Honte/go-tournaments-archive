@@ -1,0 +1,24 @@
+; CL[A]
+; EV[48th European Go Congress (rounds 1-5)]
+; PC[PL, Tuchola]
+; DT[2004-07-25,2004-08-07]
+; HA[h9]
+; KM[7.5]
+; TM[3h15]
+;
+   1 Dinerstein Alexandr            1p RU  16Kz    33     9   304   273     2      0+   8+/w0   7+/w0      0-      0+   3+/w0   5+/w0  14+/b0   2+/b0      0+ |10313237
+   2 Taranu Catalin                 5p RO  Bucu    31     7   307   210     3      0+   5+/b0   3+/b0      0+      0-      0-  16+/b0   6+/b0   1-/w0      0+ |10586785
+   3 Pop Cristian                   7d RO  Bist    31     7   305   208     5      0+  13+/b0   2-/w0  15+/w0      0+   1-/b0      0+   5+/w0      0-   6+/b0 |10333389
+   4 Radmacher Bernd                4d DE  Mee     30     7   268   193     7      0+   6-/w0      0+      0+      0=      0=      0+      0+      0+      0+ |10333675
+   5 Miyakawa Wataru                7d FR  69CR    30     6   304   176     8      0+   2-/w0      0+      0+  10+/b0      0+   1-/b0   3-/b0  14+/w0      0- |10233014
+   6 Shikshina Svetlana             1p RU  16Kz    30     6   300   179    10  14-/w0   4+/b0   8-/b0      0+      0+   7+/b0      0+   2-/w0  10+/b0   3-/w0 |10301236
+   7 Kulkov Andrej                  6d RU  16Kz    30     6   299   172    11  16+/b0      0+   1-/b0      0+      0-   6-/w0      0+      0+      0-      0+ |10625329
+   8 Nechanicky Radek               6d CZ  Nym     30     6   296   174    12  12+/b0   1-/b0   6+/w0      0-      0+  16-/w0      0+      0-      0+      0+ |10250196
+   9 Shikshin Ilja                  5d RU  16Kz    30     6   296   172    14      0+      0-      0-      0+      0+      0-      0+  13+/w0      0-      0+ |12013342
+  10 Seailles Jeff                  6d FR  13Ma    30     6   294   173    15      0+      0+      0-      0+   5-/w0  15+/w0      0-      0+   6-/w0      0+ |10350538
+  11 Silt Ondrej                    5d CZ  Zli     30     6   292   173    17      0+      0+      0-      0+      0-      0+  14-/w0  15-/w0      0+      0+ |10337481
+  12 Soldan Leszek                  6d PL  Wars    30     6   290   171    18   8-/w0      0+  15-/b0      0+      0+      0-      0+      0-      0+      0+ |10449560
+  13 Danek Vladimir                 6d CZ  Pra     30     6   289   170    19      0+   3-/w0      0-      0-      0+      0+      0+   9-/b0      0+  14+/w0 |10213016
+  14 Koszegi Diana                  6d HU  Szfv    29     5   298   144    22   6+/b0      0-      0-      0+      0+      0+  11+/b0   1-/w0   5-/b0  13-/b0 |10301247
+  15 Hora Jan                       5d CZ  Pra     29     5   296   146    23      0-      0+  12+/w0   3-/b0      0+  10-/b0      0+  11+/b0      0-      0- |10401083
+  16 Groenen Geert                  6d NL  DHaa    29     5   293   142    24   7-/w0      0+      0-      0+      0+   8+/b0   2-/w0      0-      0-      0+ |10501216

@@ -1,0 +1,33 @@
+website: https://www.eurogofed.org/proqualification/index_2021.html
+stages:
+  - type: tournament
+    file: epq2021.txt
+    time: 60 min + 30 sec Fischer
+    notes: KO, best of 3 in every round
+    scoringColumns:
+      - wins
+      - place
+    breakers:
+      - place
+    columns:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:11 sgf:2021/11-StanislawFrejlak-LukasPodpera.sgf
+      - 1-2 2:W+6.5 round:9 sgf:2021/9-StanislawFrejlak-LukasPodpera.sgf
+      - 1-4 1:B+R round:8 sgf:2021/8-StanislawFrejlak-AntonChernykh.sgf
+      - 1-5 1:B+R round:5 sgf:2021/5-StanislawFrejlak-OscarVazquez.sgf
+      - 2-1 1:W+0.5 round:10 sgf:2021/10-LukasPodpera-StanislawFrejlak.sgf
+      - 2-3 2:B+R round:7 sgf:2021/7-LukasPodpera-RemiCampagnie.sgf
+      - 3-2 2:W+R round:8 sgf:2021/8-RemiCampagnie-LukasPodpera.sgf
+      - 4-1 1:W+0.5 round:7 sgf:2021/7-AntonChernykh-StanislawFrejlak.sgf
+      - 5-1 1:W+R round:6 sgf:2021/6-OscarVazquez-StanislawFrejlak.sgf
+      - 6-2 2:W+2.5 round:5 sgf:2021/5-JonasWelticke-LukasPodpera.sgf
+      - 7-3 3:W+2.5 round:4 sgf:2021/4-AmirFragman-RemiCampagnie.sgf
+      - 8-4 4:W+0.5 round:4 sgf:2021/4-BenjaminDreanGuenaizia-AntonChernykh.sgf
+      - 9-6 6:W+R round:3 sgf:2021/3-CornelBurzo-JonasWelticke.sgf
+      - 10-5 5:W+2.5 round:3 sgf:2021/3-VjacheslavKajmin-OscarVazquez.sgf
+      - 10-5 10:B+R round:1 sgf:2021/1-VjacheslavKajmmin-OscarVazquez.sgf
+      - 12-7 7:W+0.5 round:2 sgf:2021/2-RobvanZeijst-AmirFragman.sgf
+      - 15-2 2:W+R round:1 sgf:2021/1-ElianIoanGrigoriu-LukasPodpera.sgf
+      - 16-1 1:W+R round:2 sgf:2021/2-AlexandrMuromcev-StanislawFrejlak.sgf

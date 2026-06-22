@@ -1,0 +1,28 @@
+; EV[European Go Congress 1980 - Main tournament]
+; PC[YU, Mali Losinj]
+; DT[1980-08-03,1980-08-16]
+;Pl Name                 Str Co     1    2    3    4    5    6    7    8    9   Pt  SOS  SOSOS 
+   1 Mattern Juergen                6d DE  xxx      8    50   424     11+     20+      4+      3+      2-      5+      8+      7+      6+
+   2 Macfadyen Matthew              5d UK  xxx      8    47   412     21+      6+     14+     18+      1+      3-      7+      4+      8+
+   3 Moussa Andre                   4d FR  xxx      7  51.5 396.5      9+     13+      7+      1-     11+      2+      4-      5+     12+
+   4 Zeijst Rob_van                 4d NL  xxx      6  50.5   406     16+     12+      1-     14+      7+     17+      3+      2-      5-
+   5 Hasibeder Helmut               5d AT  xxx      6    48 405.5     18+     14-      8+      6+     15+      1-      9+      3-      4+
+   6 Novak Ernst                    4d AT  xxx      5    49 396.5      8+      2-     17+      5-     16+      7-     15+      9+      1-
+   7 Beck Gerfried                  4d AT  xxx      5  48.5 401.5     22+     15+      3-     11+      4-      6+      2-      1-     16+
+   8 Isele Wolfgang                 5d DE  xxx      5    48 373.5      6-     21+      5-     10+     13+     12+      1-     16+      2-
+   9 Wolter Berndt                  4d DE  xxx      5  36.5   376      3-     24+     11-     22+     18+     15+      5-      6-     14+
+  10 Mutabzija Zoran                5d YU  xxx      5    32 354.5     14-     18-     21+      8-     12-     24+     20+     15+     17+
+  11 Mattner Lutz                   4d DE  xxx    4.5  42.5   351      1-     19+      9+      7-      3-     23+     17-     13=     21+
+  12 Rebattu Max                    5d NL  xxx    4.5  40.5   367     23+      4-     20=     16-     10+      8-     18+     17+      3-
+  13 Hubert Jerome                  4d FR  xxx    4.5    33   349     24+      3-     15-     21+      8-     19-     22+     11=     20+
+  14 Rehm Robert                    5d NL  xxx      4    42 354.5     10+      5+      2-      4-     17-     16-     24+     19+      9-
+  15 Pirani Adam                    4d UK  xxx      4    40 354.5     17+      7-     13+     20+      5-      9-      6-     10-     23+
+  16 Michel Jean                    4d FR  xxx      4  39.5 374.5      4-     23+     18-     12+      6-     14+     19+      8-      7-
+  17 Stacey Terry                   4d UK  xxx      4    39 356.5     15-     22+      6-     19+     14+      4-     11+     12-     10-
+  18 Bizjak Igor                    5d YU  xxx      4    38 347.5      5-     10+     16+      2-      9-     20-     12-     24+     22+
+  19 Suc Lojze                      4d YU  xxx      4  28.5 329.5     20-     11-     23+     17-     22+     13+     16-     14-     24+
+  20 Flajs Andrej                   4d YU  xxx    3.5    39   326     19+      1-     12=     15-     23-     18+     10-     21+     13-
+  21 Ekart Eduard                   4d YU  xxx      3  34.5   336      2-      8-     10-     13-     24+     22+     23+     20-     11-
+  22 Budig Stefan                   4d DE  xxx      2  31.5   321      7-     17-     24+      9-     19-     21-     13-     23+     18-
+  23 Wirtz Alfons                   4d DE  xxx      2  29.5 329.5     12-     16-     19-     24+     20+     11-     21-     22-     15-
+  24 Kuhar Velimir                  4d YU  xxx      0  33.5 305.5     13-      9-     22-     23-     21-     10-     14-     18-     19-

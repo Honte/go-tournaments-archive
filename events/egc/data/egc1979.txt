@@ -1,0 +1,24 @@
+; EV[European Go Congress 1979 - Championship Group]
+; PC[DE, Koenigswinter]
+; DT[1979-07-25,1979-08-05]
+;.
+   1 Mattern Juergen                6d DE  xxxx     7      2-      3-      4+      7+      8+     10+     13+      5+      9+
+   2 Schlemper Ronald               5d NL  xxxx     7      1+      5-      3-     10+      4+     12+     16+      7+     11+
+   3 Rehm Robert                    4d NL  xxxx     7     10+      1+      2+     11+      5+     17+     18+      4-      6-
+   4 Rebattu Max                    5d NL  xxxx     6     11+      6+      1-      5-      2-     18+     15+      3+     12+
+   5 Macfadyen Matthew              5d UK  xxxx     6      9-      2+      6+      4+      3-      7+     14+      1-     13+
+   6 Zeijst Rob_van                 4d NL  xxxx     6     14+      4-      5-     17-      7+      8+     19+     18+      3+
+   7 Isele Wolfgang                 5d DE  xxxx     5     12+     13+     10+      1-      6-      5-     17+      2-     20+
+   8 Stacey Terry                  30k UK  xxxx     5     19+     10+      9+     13-      1-      6-     12+     14-     16+
+   9 Kitsos Michael                30k DE  xxxx     5      5+     17-      8-     15+     18+     16+     10-     11+      1-
+  10 Hasibeder Helmut               5d AT  xxxx     4      3-      8-      7-      2-     14+      1-      9+     13+     15+
+  11 Hubert Jerome                  4d FR  xxxx     4      4-     19+     15+      3-     16+     14-     20+      9-      2-
+  12 Beck Gerfried                  4d AT  xxxx     4      7-     18+     14-     20+     15+      2-      8-     19+      4-
+  13 Novak Ernst                   30k AT  xxxx     4     16+      7-     18-      8+     17+     20+      1-     10-      5-
+  14 Vries Henk_de                  4d NL  xxxx     4      6-     16-     12+     18-     10-     11+      5-      8+     17+
+  15 Hansen Frank                  30k DK  xxxx     4     17+     20+     11-      9-     12-     19+      4-     16+     10-
+  16 Koopman Rob                    3d NL  xxxx     3     13-     14+     20+     19+     11-      9-      2-     15-      8-
+  17 Muller Cas                     4d NL  xxxx     3     15-      9+     19+      6+     13-      3-      7-     20-     14-
+  18 Kippe Horst                   30k DE  xxxx     2     20-     12-     13+     14+      9-      4-      3-      6-     19-
+  19 Bizjak Igor                   30k YU  xxxx     2      8-     11-     17-     16-     20+     15-      6-     12-     18+
+  20 Wolter Berndt                 30k DE  xxxx     2     18+     15-     16-     12-     19-     13-     11-     17+      7-

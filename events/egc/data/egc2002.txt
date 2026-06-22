@@ -1,0 +1,24 @@
+; CL[A]
+; EV[46th European Go Congress (rounds 1-5)]
+; PC[HR, Zagreb]
+; DT[2002-07-21,2002-08-03]
+; HA[h9]
+; KM[7.5]
+; TM[3h15]
+;
+   1 Dinerstein Alexandr            1p RU  16Kz    44    10   404   404     1      0+      0+   7+/b0   9+/b0   3+/w0  13+/w0   2+/b0    5+/b   4+/w0   6+/b0 |10313237
+   2 Bogackyj Dmytro                6d UA  Kyiv    42     8   400   315     2      0+    4-/w      0+   6+/b0      0+  15+/w0   1-/w0    7+/b   8+/b0      0+ |10250867
+   3 Galchenko Mykhajlo             5d UA  Kyiv    41     7   404   280     3   5+/b0   12+/b  10+/w0   4+/w0   1-/b0      0+      0-      0-      0+   8+/w0 |10433236
+   4 Shikshina Svetlana             1p RU  16Kz    41     7   404   278     4      0+    2+/b   6+/w0   3-/b0      0-      0+  11+/w0    9+/w   1-/b0      0+ |10301236
+   5 Gerlach Christoph              6d DE  H       41     7   398   273     6   3-/w0   13-/b      0+      0+      0+      0+  10+/b0    1-/w   7+/b0   9+/w0 |10225017
+   6 Nechanicky Radek               6d CZ  Nym     40     6   403   236     7      0+    8+/w   4-/b0   2-/w0      0+   7-/w0      0+      0+  12+/w0   1-/w0 |10250196
+   7 Mero Csaba                     6d HU  BuPe    40     6   401   234     8  16+/b0      0+   1-/w0      0+  13-/b0   6+/b0  15+/b0    2-/w   5-/w0      0+ |10225875
+   8 Cheburakhov Andrej             5d RU  77Mo    40     6   400   238     9  14+/b0    6-/b      0-      0+      0+  12+/b0  13+/w0      0+   2-/w0   3-/b0 |10413832
+   9 Kulkov Andrej                  6d RU  16Kz    40     6   400   233    10      0+      0+  15+/w0   1-/w0      0+      0-      0+    4-/b  10+/w0   5-/b0 |10625329
+  10 Shikshin Ilja                  5d RU  16Kz    40     6   394   233    11      0+   11+/w   3-/b0      0+  15-/w0      0+   5-/w0      0+   9-/b0      0+ |12013342
+  11 Firnhaber Marco                5d DE  B       40     6   391   230    12      0+   10-/b  13-/w0      0+      0+      0+   4-/b0   12-/w      0+      0+ |10398179
+  12 Nagy Bela                      5d RO  BaMa    40     6   389   228    13      0+    3-/w      0+  13-/b0      0+   8-/w0      0+   11+/b   6-/b0  15+/b0 |10386409
+  13 Burzo Cornel                   5d RO  BaMa    40     6   388   238    14      0+    5+/w  11+/b0  12+/w0   7+/w0   1-/b0   8-/b0   15+/b      0=      0= |10325249
+  14 Mezhov Oleg                    4d RU  77Mo    40     6   382   227    15   8-/w0      0-      0-      0+      0+      0-      0+      0+      0+      0+ |10837068
+  15 Jacenko Dmytro                 5d UA  Kyiv    39     5   395   193    17      0+      0+   9-/b0  16+/w0  10+/b0   2-/b0   7-/w0   13-/w      0+  12-/w0 |10286870
+  16 Skochko Vasyl                  4d UA  Kyiv    39     5   389   192    19   7-/w0      0+      0+  15-/b0      0-      0-      0+      0-      0+      0+ |10237876

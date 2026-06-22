@@ -1,0 +1,5 @@
+; EV[European Go Congress 1961 - Championship Group]
+; PC[AT, Baden bei Wien]
+; DT[1961-08-13,1961-08-13]
+   1 Alvensleben Wichard_von       30k DE  xxx      1      2+
+   2 Ciessow Gunter                30k DE  xxx      0      1-

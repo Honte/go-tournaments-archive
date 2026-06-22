@@ -1,0 +1,31 @@
+website: https://www.eurogofed.org/proqualification/index_2016.html
+stages:
+  - type: tournament
+    file: epq2016.txt
+    time: 90 minutes per player, Canadian byoyomi (10min/25moves)
+    notes: 3 rounds Double ladder + 3 rounds KO
+    scoringColumns:
+      - wins
+      - place
+    breakers:
+      - place
+    columns:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+7.5 round:6 sgf:2016/6-ArtemKachanovskyi-AndriiKravets.sgf
+      - 1-3 1:B+R round:5 sgf:2016/5-ArtemKachanovskyi-CornelBurzo.sgf
+      - 1-16 1:B+5.5 round:1 sgf:2016/1-ArtemKachanovskyi-ZhaoPei.sgf
+      - 2-10 2:B+4.5 round:3 sgf:2016/3-AndriiKravets-DmitrijSurin.sgf
+      - 3-7 3:B+16.5 round:4 sgf:2016/4-CornelBurzo-GrigorijFionin.sgf
+      - 3-14 3:B+R round:1 sgf:2016/1-CornelBurzo-LukasKraemer.sgf
+      - 4-2 2:W+R round:5 sgf:2016/5-BenjaminDreanGuenaizia-AndriiKravets.sgf
+      - 4-6 4:B+R round:4 sgf:2016/4-BenjaminDreanGuenaizia-ViktorLin.sgf
+      - 5-2 2:W+2.5 round:4 sgf:2016/4-ThomasDebarre-AndriiKravets.sgf
+      - 5-15 5:B+8.5 round:1 sgf:2016/1-ThomasDebarre-JanHora.sgf
+      - 6-9 6:B+1.5 round:3 sgf:2016/3-ViktorLin-LukasPodpera.sgf
+      - 8-1 1:W+8.5 round:4 sgf:2016/4-TanguyLeCalve-ArtemKachanovskyi.sgf
+      - 8-12 8:B+T round:3 sgf:2016/3-TanguyLeCalve-JuriKuronen.sgf
+      - 9-3 3:W+R round:2 sgf:2016/2-LukasPodpera-CornelBurzo.sgf
+      - 11-4 4:W+4.5 round:2 sgf:2016/2-CsabaMero-BenjaminDreanGuenaizia.sgf
+      - 12-5 5:W+R round:2 sgf:2016/2-JuriKuronen-ThomasDebarre.sgf

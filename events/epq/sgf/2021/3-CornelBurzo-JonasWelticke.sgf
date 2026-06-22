@@ -1,0 +1,326 @@
+(;CA[utf-8]FF[4]ST[2]RU[Chinese]OT[1x30 byo-yomi]AP[CGoban:3]SZ[19]GM[1]GN[EPQ ( Cornel Burzo - Jonas Welticke)]
+GC[1 (Best of three, deciding game)]EV[6th European Pro Qualification]RO[3]DT[2021-10-26]
+PC[Leksand, Sweden]PB[Cornel Burzo]BR[6d]PW[Jonas Welticke]WR[6d]KM[7.5]TM[3600]
+RE[W+R]US[Harry van der Krogt]MULTIGOGM[1]
+;B[jj]C[anarchia [-\]\: Great!
+];W[dq]C[atomix [2d\]\: Cornel trolling
+it [-\]\: after w has only one corner b has won, no?
+]
+;B[cd]C[Muttley [-\]\: definitely
+Clynch [3d\]\: Tengen
+Fred8 [?\]\: B won by 9.5pts with same opening in their first game
+]
+;W[pc];B[co]C[SIscurge [5d\]\: his opponent is famous for playing mirror go, so thats why he plays tengen. Kinda feels like shooting yourself in the leg though, perhaps could have prepared antoher fuseki
+]
+;W[qp];B[ep];W[eq];B[fp];W[gq]C[Muttley [-\]\: maybe, but this fuseki is starting to work for black
+Muttley [-\]\: Cornel plays better when he feels like he is behind, imho
+]
+;B[pe];W[qe];B[qf];W[qd];B[pg]C[SIscurge [5d\]\: perhaps
+Nevaeh [?\]\: hi
+atomix [2d\]\: it's also strategy to compensate for opponent having studied AI opennings
+]
+;W[nc];B[op]C[Muttley [-\]\: ... what if they have studied how AI replies to tengen?
+]
+;W[oq];B[pp];W[pq];B[qo]C[Grrr [5d\]\: I tried to study how AI reacts to white's mirror Go, it is quite fascinating
+Muttley [-\]\: welcome to my world, Grrr \:)
+tymak [1d?\]\: actually tengen is really small loss and when your opponent is famous for mirror go, it is worth
+Grrr [5d\]\: It often creates a whole board fight that culminates in the middle, leading to a worthless center
+Muttley [-\]\: Thanks for the heads up as an approach, I study AI in various things, but hadn't considered it for mane go, that's great
+Grrr [5d\]\: *not worthless, my bad; a meaningful center ofc such that b's first move there is severe
+atomix [2d\]\: i just find it incredible that a top player would often choose mirror go
+atomix [2d\]\: seems like that really hurts your potential to learn
+Coreon [3d\]\: Yes, it's actually surprising that even strong players are confused by mirror Go
+Muttley [-\]\: that makes sense though, Grrr, the influence calc is skewed by the centre stone
+]
+;W[np]C[Muttley [-\]\: atomix, not at all, a past Japanese player was famous for playing mirror go and figuring out when it was best to break it
+]
+;B[qq]C[Coreon [3d\]\: BadukDoctor made a Video about his game with Jonas in the KPMC, he explains why he played poorly against mirror Go
+Grrr [5d\]\: white's mirror go might be not optimal, it however often negates blacks opening preparations
+]
+;W[rp];B[qr]C[Coreon [3d\]\: I think it helps a lot understandig its strengths and weaknesses
+]
+;W[ro]C[SIscurge [5d\]\: but even AI loses to mirror sometimes, I think mirror go just breaks go
+]
+;B[qn]C[Muttley [-\]\: I don't like seeing users play it endlessly against 8d/9d bots for sure
+]
+;W[pr];B[nq];W[nr];B[mq];W[no];B[on]C[SIscurge [5d\]\: Some patterns can be broken, but if you enter mirror situation in a not prepared position, you are just doomed. Even if you manage to break it somewhat efficiently then you ll be behind in most cases on points and for sure on time.
+SIscurge [5d\]\: So to me it feels kinda unhonorable to play mirror go. Also if many ppl played it it would severely limit fuseki patterns
+]
+;W[mr]C[Grrr [5d\]\: I would not agree on that SIscurge; mirror Go is a way to force the opponent to play a game he is uncomfortable with, and oneself is comfortable with
+Ten [1p\]\: Eh, I don't see how any strategy within the game could be dishonourable
+Ten [1p\]\: Outside the game, sure, but not within
+Grrr [5d\]\: if one does not like mirror go he has to prepare in advance against it to get stronger
+]
+;B[lq]C[SIscurge [5d\]\: I am just presenting my opinion, not saying it is correct \:)
+Muttley [-\]\: Yes, both, all the same, I get what Siscurge means
+Ten [1p\]\: Ok, I'll switch my 'could' to 'should' \:D
+Hakudoshi [1d\]\: some players like trick moves cant blame em
+]
+;W[rr]C[Muttley [-\]\: To be honest, this game doesn't look a lot like mirror go
+Muttley [-\]\: but that's just my opinion as well \:))
+]
+;B[lo]C[anarchia [-\]\: White e15
+Muttley [-\]\: is this the right direction for black?
+Muttley [-\]\: I mean, miai
+]
+;W[nn];B[om];W[nm]C[anarchia [-\]\: Wow, he is pulling them out
+];B[ol];W[lm]C[Muttley [-\]\: of course
+Hakudoshi [1d\]\: Swimming in the center with tengen!
+Muttley [-\]\: you don't get both m5 and o6 as black
+Coreon [3d\]\: doesn't look comfortable for w now
+RaduStefan [3d\]\: B's position seems better already. 
+RaduStefan [3d\]\: B will gain by attacking W in the center. 
+Hellhuman [2d\]\: is there a table with current results?
+Hakudoshi [1d\]\: its so hard to kill id rather be white
+Grrr [5d\]\: m7 looks so normal though it is a mistake according to AI
+Coreon [3d\]\: https\://www.eurogofed.org/proqualification/index_2021.html
+RaduStefan [3d\]\: What is AI prefference instead of M7?
+Grrr [5d\]\: pushing along O8 as long as b allows
+flogo [3d\]\: hard fight for white, no ?
+SIscurge [5d\]\: it always looks hard for white when b has tengen, but in my experience its usually not so clear cut
+SIscurge [5d\]\: if w settles the group efficiently then he has done nothing wrong and perhaps tengen will be in strange spot
+anarchia [-\]\: Black needs to keep initiative
+Coreon [3d\]\: w's only hope is to keep the lower black group weak imho
+katapliksi [2k?\]\: i love tengen!
+RaduStefan [3d\]\: N9?
+anarchia [-\]\: That’s why black should strengthen m3
+Grrr [5d\]\: white L4 will hurt black, G4 looks good
+anarchia [-\]\: I would k5
+Muttley [-\]\: g4 is an AI choice for sure here
+]
+;B[ho]C[Muttley [-\]\: thing about AI is, they don't care if a move is vulgar, if it works, it work
+Grrr [5d\]\: yes, I like about AI that they do not hesitate to play forcing moves right away
+]
+;W[kp];B[hq]C[nidza92 [?\]\: quarterfinal start this afternoon or tmrw?
+Juli15 [-\]\: 3 pm today
+SIscurge [5d\]\: juli are you in Sweden? \:D
+Juli15 [-\]\: fortunately not \:D
+SIscurge [5d\]\: \:)
+]
+;W[fq]C[Muttley [-\]\: g4 is a no brainer, surely now
+Fredda [8d\]\: what about h4
+anarchia [-\]\: Another no brainer ;-)
+flogo [3d\]\: i'd play l5
+Muttley [-\]\: heh, h4 feels like bad aji and slack move under tewari to me
+Muttley [-\]\: not that I can give a tewari sequence here
+]
+;B[kq]C[nidza92 [?\]\: i dont get how f3 will be better than g2
+];W[hp]C[tursas [2d?\]\: Cornel's loss yesterday was a bit painful
+Coreon [3d\]\: why?
+]
+;B[ip]C[Coreon [3d\]\: I didnt see the sgf yet
+];W[gp]C[tursas [2d?\]\: he was ahead by a small margin for a long time but made a 0.5p blunder in late yose
+]
+;B[in]C[tursas [2d?\]\: lost by 0.5
+];W[go]C[SIscurge [5d\]\: wow, w really doesnt like his group T_T
+]
+;B[od]C[nidza92 [?\]\: i like how cornel surrounds it at p16 line
+Coreon [3d\]\: haha, 0.5 Point Blunder sounds like an oxymoron
+Mikho [?\]\: I love the sound of it. 0.5p blunder \:)
+tursas [2d?\]\: took a stone which Jonas couldnt connect instead of connecting a ko
+RaduStefan [3d\]\: W seems overconcentrated isn't he?
+tursas [2d?\]\: taking a ko*
+Hakudoshi [1d\]\: The board looks like a all consuming black hole
+Hakudoshi [1d\]\: Lonely star ship at O7
+]
+;W[oo];B[po];W[mk];B[oj];W[li];B[oc];W[qh];B[ob];W[rf]C[ben0 [8d\]\: this is already a massacre
+Radly [8k\]\: R13
+]
+;B[ph];W[qg];B[pf]C[SIscurge [5d\]\: strange to play p18, it kinda solves whites problem
+Coreon [3d\]\: is cutting at p18 bigger than letting white connect R12?
+]
+;W[kh];B[kk];W[ni];B[qi];W[ri]C[Coreon [3d\]\: is there a commentary on twith for this?
+]
+;B[rj]C[Coreon [3d\]\: *twitch
+];W[rh];B[ih]C[vojtago [1k?\]\: twitch.tv/europeangofederation
+Coreon [3d\]\: ty
+]
+;W[hm]C[GoDave89 [4d\]\: Go Jonas, save my channel points \:P
+Nantoka [4d\]\: our channel points
+]
+;B[jl]C[Coreon [3d\]\: I always bet against the player I root for and it works pretty good \:D
+GoDave89 [4d\]\: usually I do too
+]
+;W[ng]C[GoDave89 [4d\]\: but today I believe in the chaos \:P
+];B[jf]C[joris104 [2d\]\: Feels like Black has no points \:-/
+]
+;W[lk];B[le]C[jordo\: Can White tenuki?
+];W[ko]C[Coreon [3d\]\: is white even alive?
+joris104 [2d\]\: Dragons never die
+joris104 [2d\]\: They just become a part of you
+seequ [2d?\]\: is black alive?
+]
+;B[kn];W[ln];B[lp];W[pi];B[qj];W[oi];B[rn]C[SIscurge [5d\]\: relentless they survive
+Grrr [5d\]\: w can tenuki i guess
+]
+;W[hc];B[qb];W[rc];B[lg];W[kj];B[mh]C[EGF2 [-\]\: W\:25 B\:39 minutes
+];W[mi];B[jc]
+;W[ec];B[dc];W[ed];B[df]C[liusasori [5d\]\: m12 and k11 are sente for w so he can easily build another eye there
+]
+;W[hf];B[cl]C[jordo\: White will play C12, any bets?
+];W[cp];B[bp];W[bq];B[dp];W[cq]
+;B[ff];W[eb];B[fn]C[PondTurtle [1k?\]\: This looks good for B
+];W[gn];B[fm]C[coconut [1k\]\: deep invasion possible for B ? ... c9 ?
+coconut [1k\]\: for w I meant
+seequ [2d?\]\: possible or not, Jonas will do it
+Muttley [-\]\: allowing b to take the left wasn't good for white for sure
+coconut [1k\]\: \:)
+]
+;W[ch]C[sum [4d\]\: game dead close but B more options to make territoriy after W left invasion
+ratatouile [-\]\: And there goes white
+PondTurtle [1k?\]\: There is some wakness in top left group so it makes sense
+]
+;B[cg]C[PondTurtle [1k?\]\: W is going to try to leverage that
+PondTurtle [1k?\]\: like any good player would \:-)
+sum [4d\]\: think all participants weaker than existing EGF pros
+Muttley [-\]\: I'd count first and see if I could win by living and reducing
+]
+;W[cj]C[Muttley [-\]\: that's pretty self-evident, sum
+PondTurtle [1k?\]\: sum are you sure about that? Podpera had positive record against Le Calve back when he lost to him in Finals
+Muttley [-\]\: else they would have qualified in previous tournaments instead of the existing ones
+sum [4d\]\: sure would be exaggeration, mostly my feeling
+Coreon [3d\]\: Tanguy became really strong lately against the other Pros
+PondTurtle [1k?\]\: That is why I like this best of 3 format, less noise in results
+ratatouile [-\]\: Not necessarily Muttley, winning one tourney over another doesn't mean they'd the player would be stronger on average
+Muttley [-\]\: also, they have had training since becoming pros, so you'd expect them to improve more
+PondTurtle [1k?\]\: Though everyone playing everyone and person with least losses passing would be even better
+ratatouile [-\]\: I do agree that they are stronger though
+]
+;B[bh];W[bi];B[dh];W[di];B[ci]C[ratatouile [-\]\: mean that the*
+sum [4d\]\: W cannot win ko with so many weaknesses
+Muttley [-\]\: sure,but it is irrelevant
+sum [4d\]\: Cornel
+sum [4d\]\: Cornel
+sum [4d\]\: sorry, his weakness is ko fight
+PondTurtle [1k?\]\: There is some wakness in left bottom grp too, if black gets strong in the center they might get to harras E17 later? This seems complex to me
+sum [4d\]\: wrong time to think, if want ko, count threats before
+PondTurtle [1k?\]\: B seems to have more, no?
+]
+;W[pj]C[daniug [3d\]\: Hai Cornel!
+];B[pk];W[ch];B[si]C[PondTurtle [1k?\]\: bottom right corner, the W group in the right center, even D18 which also gets pts, If I had to bet money now I would place them on Cornel but hey I know nothing about this game \:-D
+]
+;W[sh];B[sj];W[re];B[ci]C[atomix [2d\]\: are the games played live?
+Sztygrys [?\]\: yes
+RaduStefan [3d\]\: time left?
+EGF2 [-\]\: W\:13 B\:37
+nuborn [1d?\]\: Hi EGF2, is there a nigiri for every game?
+RaduStefan [3d\]\: thank you
+EGF2 [-\]\: No, only first and now third game
+PondTurtle [1k?\]\: Katago says B leads by 8btw
+nuborn [1d?\]\: Alright, thanks
+sum [4d\]\: KataGo agrees to me? Good!\:)
+PondTurtle [1k?\]\: It also things that B L7 and WL8 are more important than the ko
+PondTurtle [1k?\]\: and playing ko is about 3pts mistake
+PondTurtle [1k?\]\: which I guess is to do with life of that grP?
+PondTurtle [1k?\]\: or both of them even?
+]
+;W[kl];B[jk];W[jn];B[im];W[ch];B[ps];W[or];B[ci];W[iq];B[jq];W[ir]C[sum [4d\]\: what, wasting threat?!
+]
+;B[hl];W[ch];B[rg];W[sg];B[ci];W[gl]C[sum [4d\]\: loss-making threats
+];B[ei];W[ch]
+C[sum [4d\]\: oh
+];B[dj];W[ci];B[dk];W[hk];B[il]C[PondTurtle [1k?\]\: woah
+PondTurtle [1k?\]\: I mean B can do local kill now even if W at B13 but can they hold that?
+]
+;W[eh]C[Muttley [-\]\: white can sac the c11 stones
+Muttley [-\]\: d13 f12 f11 h12 is the tesuji, according to AI
+Muttley [-\]\: it's a pretty impressive line, all told
+]
+;B[dg];W[bg];B[bf];W[hn];B[io]
+(;W[ag])
+(;W[ah];B[bk];W[ck]C[PondTurtle [1k?\]\: going for local kill rally?
+PondTurtle [1k?\]\: or just getting forcing moves in
+martin97 [-\]\: not sure what jonas is planning
+martin97 [-\]\: but he needs something
+PondTurtle [1k?\]\: yeah, W made game even by getting L8,
+]
+;B[el];W[aj];B[bl];W[bj];B[ge]C[martin97 [-\]\: i would be curious to know what cornel was afraid of here
+martin97 [-\]\: or if he just believes that he wins like this
+EGF2 [-\]\: W\:1 B\:35
+]
+;W[he]C[atomix [2d\]\: coreal actually behind now by 2-3 points
+atomix [2d\]\: cornel
+PondTurtle [1k?\]\: that's still perfectly winnable I think even on their level
+PondTurtle [1k?\]\: for B I mean
+martin97 [-\]\: plenty uncertainty left
+martin97 [-\]\: and jonas doesnt have too much time
+martin97 [-\]\: but well this might actually simplify quickly
+]
+;B[hd];W[id];B[gd];W[ic];B[gc];W[gb];B[fb];W[ha]C[atomix [2d\]\: not sure why cornel is not using his 35 minutes
+atomix [2d\]\: cause this is turning worse and worse for him
+]
+;B[jb];W[fc];B[ib];W[hb];B[jd];W[ie]C[PondTurtle [1k?\]\: Maybe he feels desperation? This game decides who goes forth in qualifications
+]
+;B[gg];W[gm]C[cheater [8d\]\: I think cornel thinks he's ahead
+RaduStefan [3d\]\: B is confortable ahead
+SIscurge [5d\]\: There were several mistakes in endgame in the previous games, so perhaps he wants to save time for that
+SIscurge [5d\]\: Id play a14 before its too late
+cheater [8d\]\: For who \:D
+atomix [2d\]\: w ahead by 8 points now according to kata
+SIscurge [5d\]\: \:D for black, i d feel cheated if w got it
+PondTurtle [1k?\]\: Well it is def sente so it makes sense
+HumblePlay [3d\]\: there is a cheater already among pros \:D
+]
+;B[gk]C[atomix [2d\]\: letting w live on the left side feel like a big decision and he made it pretty quick
+atomix [2d\]\: maybe using at least a few more minutes would have helped
+PondTurtle [1k?\]\: robot says C18 now for W
+]
+;W[fi];B[ej];W[fk]C[Fenring [1d\]\: could you please avoid giving the estimates and move from the IA? thanks
+PondTurtle [1k?\]\: if you mind, ok
+martin97 [-\]\: occasionally is ok for me but not all the time
+PondTurtle [1k?\]\: Well that one makes sense even to me too, since B D18 is sente
+sum [4d\]\: B f19 any chance?
+PondTurtle [1k?\]\: I wonder about this though isF8 sente somehow so W plans to connect?
+PondTurtle [1k?\]\: doesn't look it to me. sum\: W would be able to live via C18 maybe still?
+PondTurtle [1k?\]\: oh I see there is a ladder that connects W thanks to E12 that is cool
+sum [4d\]\: otherwise W+4 at least
+RaduStefan [3d\]\: If B really will think he's behind, he can still open up a huge Ko in the upper left corner by playing F19 instead of D18. 
+sum [4d\]\: B missing l7 really hurt
+]
+;B[gj];W[fj];B[hj];W[fl]C[jordo\: B5?
+Felim\: D5?
+SIscurge [5d\]\: how do you make it ko in top left?
+PondTurtle [1k?\]\: D18 is still total sente
+SIscurge [5d\]\: ah i see a17
+PondTurtle [1k?\]\: as well as A14
+SIscurge [5d\]\: a15 sente too in theory
+PondTurtle [1k?\]\: isn't that up to two pts worse?
+SIscurge [5d\]\: yes but it helps with the ko in top left maybe
+RaduStefan [3d\]\: Yep, A17. 
+jordo\: A15 is absolute sente on top group. F19 will kill without ko afterwards
+RaduStefan [3d\]\: Probably this is why B didn't play D18 up to this point
+SIscurge [5d\]\: actually if b get a15, isnt it just dead?
+SIscurge [5d\]\: because then b can connect a15 a13 f19 c18 d18 d19 b17 b18 a18 c17 d16 b16 d19 c19 a17 
+]
+;B[fh];W[cb]C[RaduStefan [3d\]\: A15 only triggers another ko, so more or less the same?
+]
+;B[db];W[da];B[bc];W[bb];B[ab]C[SIscurge [5d\]\: you mean that white wouldnt have answered a15 at a13?
+PondTurtle [1k?\]\: now W can probably just capture for life and win no? I am not good at counting but it looks that way to me
+]
+;W[fa]C[RaduStefan [3d\]\: I mean that if B played A15 then A13 and C18 would have been more or less a similar avenue, both threatening to generate a ko. 
+RaduStefan [3d\]\: A15 now maybe?
+matthiasgg [2d\]\: b lost the ko possibility
+PondTurtle [1k?\]\: now B5 looks huge for both
+]
+;B[nh];W[oh];B[og]C[sittinduck [3d\]\: w+10
+ogolony [-\]\: b5 
+];W[pb];B[pa];W[je]
+;B[ke];W[kg];B[lf];W[dm];B[dl];W[gh];B[eg];W[hg]C[PondTurtle [1k?\]\: woah, B died in the center....
+PondTurtle [1k?\]\: I know I was asked not ot share AI insights all the time but this one is bonkers
+EGF2 [-\]\: Black resigns
+benuch [1d\]\: gg
+PondTurtle [1k?\]\: Congrats to Jonas
+Grrr [5d\]\: thanks EGF2!
+PondTurtle [1k?\]\: thanks both players, this was cool game to watch
+martin97 [-\]\: congrats jonas!
+hvk [-\]\: GG
+EGF2 [-\]\: Thank you for the nice comments
+hvk [-\]\: TY
+tursas [2d?\]\: cool game
+Imran [3d\]\: what is this tournament ?
+Hellhuman [2d\]\: Did Oscar ein?
+Hellhuman [2d\]\: Win
+Spinoza [1k\]\: yes
+tursas [2d?\]\: jonas-lukas next. gona b fun
+tursas [2d?\]\: Imran\: european pro qualification
+]))

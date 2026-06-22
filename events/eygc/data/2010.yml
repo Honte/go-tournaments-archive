@@ -16,6 +16,7 @@ stages:
       - sos
       - sosos
     findSharedPlaces: true
+    collapsed: true
   - type: tournament
     file: eygc2010u16.txt
     category: u16
@@ -29,11 +30,13 @@ stages:
       - mms
       - sos
       - sosos
-    findSharedPlaces: true    
+    findSharedPlaces: true  
+    collapsed: true    
   - type: tournament
     file: eygc2010u18.txt
     category: u18
-    name: U18
+    name: U18 section
+    notes: It's formally not European Championship so do not count to medals and other statistics.
     scoringColumns:
       - mms 
       - sos
@@ -44,3 +47,5 @@ stages:
       - sos
       - sosos
     findSharedPlaces: true
+    collapsed: true
+    excluded: true

@@ -1,0 +1,20 @@
+; EV[European Go Congress 1984 - Main tournament]
+; PC[CH, Porrentruy]
+; DT[1984-07-21,1984-08-04]
+;Pl Name                  Str Co  Win   1    2    3    4    5    6    7    8    9  
+   1 Macfadyen Matthew              6d UK  xxx      6     1      0-      6-      0+      0+      0+      7+      0-      8+     13+
+   2 Colmez Pierre                  4d FR  xxx      6     2      0+      0-      9+      8+     10+      0-      5+      6+      4-
+   3 Rittner Egbert                 4d DE  xxx      6     3      8-      0+      0+     13+      9+      0-      4+      0-     11+
+   4 Rehm Robert                    5d NL  xxx      6     3      0+      8-      0+     12+      0-     13+      3-      0+      2+
+   5 Westhoff Gerald                3d NL  xxx      6     7      0-     11+      0+      0+     15+     12+      2-     10-      0+
+   6 Pocsai Tibor                   3d HU  xxx      6     7      0+      1+     15-      0+      0-     16+      0+      2-      0+
+   7 Baumann Hans_Peter             4d CH  xxx      6     7      0-      0-      0+      0+      0+      1-      0+      0+      0+
+   8 Stankovic Miodrag              4d YU  xxx      5    10      3+      4+      0-      2-     11-      0+     15+      1-     16+
+   9 Lenz Karl-Friedrich            6d DE  xxx      5    10      0+     12+      2-      0+      3-     10+      0+      0-      0-
+  10 Kraszek Janusz                 5d PL  xxx      5    10     13-      0+      0+     15+      2-      9-     12+      5+      0-
+  11 Michel Jean                    4d FR  xxx      5    10     12-      5-      0+      0+      8+      0+      0-      0+      3-
+  12 Budig Stefan                   4d DE  xxx      5    10     11+      9-     16+      4-      0+      5-     10-      0+      0+
+  13 Winkelhofer Petr               5d CZ  xxx      5    10     10+      0-      0+      3-      0+      4-      0+      0+      1-
+  14 Claasen Tony                   2d NL  xxx      6    16      0-      0+      0+      0+      0+      0-      0+      0-      0+
+  15 Aaij Rene                      3d NL  xxx      5    17      0+      0+      6+     10-      5-      0+      8-     16-      0+
+  16 Aroutcheff Pierre              3d FR  xxx      5    17      0+      0+     12-      0-      0+      6-      0+     15+      8-

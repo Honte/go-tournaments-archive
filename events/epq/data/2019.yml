@@ -1,0 +1,33 @@
+website: https://www.eurogofed.org/proqualification/index_2019.html
+stages:
+  - type: tournament
+    file: epq2019.txt
+    time: 75 min + 20 sec Fischer
+    notes: 3 rounds Double ladder + 3 rounds KO
+    scoringColumns:
+      - wins
+      - place
+    breakers:
+      - place
+    columns:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+3.5 round:6 sgf:2019/6-TanguyLeCalve-LukasPodpera.sgf
+      - 1-3 3:W+R round:2 sgf:2019/2-TanguyLeCalve-StanislawFrejlak.sgf
+      - 1-4 1:B+27.5 round:5 sgf:2019/5-TanguyLeCalve-DominikBoviz.sgf
+      - 1-6 1:B+3.5 round:4 sgf:2019/4-TanguyLeCalve-ViktorLin.sgf
+      - 3-2 2:W+6.5 round:5 sgf:2019/5-StanislawFrejlak-LukasPodpera.sgf
+      - 3-15 3:B+R round:1 sgf:2019/1-StanislawFrejlak-OscarVazquez.sgf
+      - 4-2 2:W+R round:2 sgf:2019/2-DominikBoviz-LukasPodpera.sgf
+      - 5-4 4:W+R round:4 sgf:2019/4-CornelBurzo-DominikBoviz.sgf
+      - 7-2 2:W+14.5 round:4 sgf:2019/4-VjacheslavKajmin-LukasPodpera.sgf
+      - 7-10 7:B+R round:3 sgf:2019/3-VjacheslavKajmin-RobvanZeijst.sgf
+      - 8-3 3:W+4.5 round:4 sgf:2019/4-OndrejKruml-StanislawFrejlak.sgf
+      - 8-6 6:W+0.5 round:2 sgf:2019/2-OndrejKruml-ViktorLin.sgf
+      - 9-4 4:W+2.5 round:3 sgf:2019/3-AntonChernykh-DominikBoviz.sgf
+      - 10-5 5:W+R round:2 sgf:2019/2-RobvanZeijst-CornelBurzo.sgf
+      - 10-11 10:B+1.5 round:1 sgf:2019/1-RobvanZeijst-RemiCampagnie.sgf
+      - 11-1 1:W+R round:3 sgf:2019/3-RemiCampagnie-TanguyLeCalve.sgf
+      - 12-8 8:W+7.5 round:3 sgf:2019/3-AmirFragman-OndrejKruml.sgf
+      - 13-4 4:W+R round:1 sgf:2019/1-JonasWelticke-DominikBoviz.sgf

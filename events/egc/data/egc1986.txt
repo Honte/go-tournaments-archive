@@ -1,0 +1,20 @@
+; EV[European Go Congress 1986 - Main tournament]
+; PC[HU, Budapest]
+; DT[1986-07-19,1986-08-02]
+;pl name                 gr  cy MM SOS   1    2    3    4    5    6    7    8    9   pnt
+   1 Schlemper Ronald               6d NL  xxx     28     9   226     1      3+     15+     14+      2+      6+      5+      7+      9+      4+
+   2 Janssen Frank                  5d NL  xxx     27     8   221     2      0+      0+      0+      1-      5+      0+      4+      8+      6+
+   3 Donzet Frederic                5d FR  xxx     26     7   219     3      1-      0+      0+     16+      4-     13+      0+      5+     12+
+   4 Rittner Egbert                 4d DE  xxx     25     6   225     4      0+     12+      8-      0+      3+      6+      2-      7+      1-
+   5 Macfadyen Matthew              6d UK  xxx     25     6   224     5      0+      0+     16+      0+      2-      1-      0+      3-     14+
+   6 Lazarev Alexej                 6d SU  xxx     25     6   222     6      0+      0+      0+      8+      1-      4-      0+     10+      2-
+   7 Danek Vladimir                 5d CS  xxx     25     6   218     7      0+     16-      0+      0+      0+      8+      1-      4-      0+
+   8 Moussa Andre                   5d FR  xxx     25     6   218     7      0+      0+      4+      6-      0+      7-      0+      2-      0+
+   9 Westhoff Gerald                6d NL  xxx     25     6   215     9     13-      0-      0+      0+      0+      0+      0+      1-     15+
+  10 Petrovic Rade                  5d YU  xxx     25     6   212    10      0+      0-      0+      0-      0+      0+      0+      6-      0+
+  11 Nilov Georgij                  6d SU  xxx     25     6   208    11      0-      0+      0+      0-     13-      0+      0+      0+      0+
+  12 Wimmer Manfred                 7d AT  xxx     24     5   218    12      0-      4-      0+      0+     16+      0-     13+      0+      3-
+  13 Budig Stefan                   4d DE  xxx     24     5   217    13      9+     14-      0-      0+     11+      3-     12-      0+      0+
+  14 Kraszek Janusz                 5d PL  xxx     24     5   216    14      0+     13+      1-      0+      0-      0-      0+      0+      5-
+  15 Colmez Pierre                  5d FR  xxx     24     5   216    14      0+      1-      0+      0-      0+      0-      0+     16+      9-
+  16 Heiser Laurent                 4d LU  xxx     24     5   215    16      0+      7+      5-      3-     12-      0+      0+     15-      0+

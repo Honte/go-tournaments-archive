@@ -13,6 +13,7 @@ stages:
       - mms
       - sos    
     findSharedPlaces: true
+    collapsed: true
   - type: tournament
     file: eygc2022u16.txt
     category: u16
@@ -25,7 +26,8 @@ stages:
     breakers:
       - mms
       - sos   
-    findSharedPlaces: true    
+    findSharedPlaces: true
+    collapsed: true    
   - type: tournament
     file: eygc2022u20.txt
     category: u20
@@ -39,3 +41,4 @@ stages:
       - mms
       - sos   
     findSharedPlaces: true
+    collapsed: true

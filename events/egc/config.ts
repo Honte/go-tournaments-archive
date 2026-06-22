@@ -6,6 +6,7 @@ const EVENT_CONFIG: EventDefinition = {
   showCountry: true,
   showBestPlace: true,
   hideGamesWithoutSgf: true,
+  unknownRanks: ['30k'],
 };
 
 export default EVENT_CONFIG;

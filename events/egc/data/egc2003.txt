@@ -1,0 +1,24 @@
+; CL[A]
+; EV[47th European Go Congress (rounds 1-5)]
+; PC[RU, Sankt-Peterburg]
+; DT[2003-07-20,2003-08-02]
+; HA[h9]
+; KM[7.5]
+; TM[3h15]
+;
+   1 Dinerstein Alexandr            1p RU  16Kz    31     7   294   203     5    5-/w      0+      0-      0+      0+   4+/b0    9-/w   12+/w      0+   3+/b0 |10313237
+   2 Lazarev Alexej                 6d RU  10Pt    31     7   293   202     6    9-/w  15+/b0      0+   12+/b      0-      0+      0-      0+   11+/w      0+ |10374386
+   3 Burzo Cornel                   5d RO  BaMa    30     6   300   174     9      0-      0+      0+    5+/b      0+      0-      0-   13+/w    9+/b   1-/w0 |10325249
+   4 Galchenko Mykhajlo             5d UA  Kyiv    30     6   300   174     9      0+      0-   16+/b   14+/w      0-   1-/w0      0+      0+    5+/b      0- |10433236
+   5 Shikshin Ilja                  5d RU  16Kz    30     6   297   174    13    1+/b   6+/b0      0-    3-/w      0+      0+   10+/b      0-    4-/w      0+ |12013342
+   6 Danek Vladimir                 6d CZ  Pra     30     6   293   173    15      0+   5-/w0      0+      0-      0+      0-      0+      0-      0+   9+/b0 |10213016
+   7 Vanderstappen Filip            5d NL  Leid    30     6   284   167    18      0-      0-      0-      0+      0+      0+      0-      0+   14+/b  16+/b0 |10250603
+   8 Hubert Jerome                  4d FR  75Pa    30     7   276   191    19      0-      0+      0-      0-      0+      0+      0+      0+      0+  13+/w0 |10549627
+   9 Bogackyj Dmytro                6d UA  Kyiv    29     5   299   147    20    2+/b      0-      0-      0+      0+      0+    1+/b      0-    3-/w   6-/w0 |10250867
+  10 Surin Dmitrij                  6d RU  37Iv    29     5   299   145    21      0+  11+/b0      0-      0+      0+      0-    5-/w      0-      0+      0- |10825254
+  11 Dugin Timur                    4d RU  16Kz    29     5   296   144    22   14+/b  10-/w0      0+      0-      0+  16+/w0      0-      0+    2-/b      0- |10837354
+  12 Groenen Geert                  6d NL  DHaa    29     5   293   140    23      0+      0-      0+    2-/w   16-/b      0+      0+    1-/b   15-/w      0+ |10501216
+  13 Sakhabutdinov Rustam           5d RU  77Mo    29     5   291   144    24   15+/w      0-      0-      0+      0-      0+   16+/w    3-/b      0+   8-/b0 |10349394
+  14 Cheburakhov Andrej             5d RU  77Mo    29     5   290   141    25   11-/w      0+      0+    4-/b      0+      0-      0-      0+    7-/w      0+ |10413832
+  15 Jacenko Dmytro                 5d UA  Kyiv    29     5   287   138    26   13-/b   2-/w0      0+      0-      0+      0-      0+      0+   12+/b      0- |10286870
+  16 Heshe Thomas                   5d DK  KGK     29     6   286   168    27      0+      0+    4-/w      0+   12+/w  11-/b0   13-/b      0+      0+   7-/w0 |10413194

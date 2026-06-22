@@ -1,0 +1,21 @@
+; EV[European Go Congress 1994 - Main tournament]
+; PC[NL, Maastricht]
+; DT[1994-07-22,1994-08-05]
+;
+; Pl Name                Cy  Gr    1    2    3    4    5    6    7    8    9   10  MM Pt SOS SODOS
+   1 Guo Juan                       6D NL  xxx     29     9   261   234     1      0+      0+     16+      0+      4+      0+      2-      8+      0+      0+
+   2 Wimmer Manfred                 6D AT  xxx     27     7   261   180     3      0-      0+      0+     16+      6+     14+      1+     10-      0-     11+
+   3 Mateescu Robert                6D RO  xxx     27     7   254   174     6      0+      0-      0+     11-     12-      0+      0+     16+     14+      7+
+   4 Eeden Gilles_van               5D NL  xxx     26     6   260   153     7      0+      5+     14+      0+      1-      0-      0-      9-      0+      0+
+   5 Schoffel David                 6D DE  xxx     26     6   258   153     8     11+      4-      0+      7+     15+      0+     10-      0-      9-      0+
+   6 Florescu Ion                   5D RO  xxx     26     6   256   151     9      8+      0-      9+      0+      2-      0-      0+      0-      0+      0+
+   7 Dickhut Franz-Josef            6D DE  xxx     26     6   256   150    10      0+     15-      8+      5-      0+     12+      0+      0-      0+      3-
+   8 Westhoff Gerald                5D NL  xxx     26     6   256   149    11      6-      0+      7-      0+      0+     16+     15+      1-      0-     14+
+   9 Basca Mihai                    5D RO  xxx     26     7   254   175    13      0+     12+      6-      0+      0+     15-      0+      4+      5+      0-
+  10 Taranu Catalin                 6D RO  xxx     26     6   254   151    14     16-      0+      0-      0+      0+     13+      5+      2+      0-      0-
+  11 Gerlach Christoph              5D DE  xxx     26     6   254   151    14      5-      0+      0+      3+     14-      0-      0+     12+     15+      2-
+  12 Soldan Leszek                  6D PL  xxx     26     6   252   150    16      0-      9-      0+      0+      3+      7-     13+     11-      0+     15+
+  13 Solovjev Valerij               6D RU  xxx     26     6   247   145    17      0-      0+      0+     14-      0+     10-     12-      0+      0+      0+
+  14 Colmez Pierre                  5D FR  xxx     25     5   260   127    18      0+      0+      4-     13+     11+      2-      0+      0-      3-      8-
+  15 Groenen Geert                  5D NL  xxx     25     5   257   125    19      0+      7+      0-      0+      5-      9+      8-      0+     11-     12-
+  16 Lazarev Alexej                 6D RU  xxx     25     5   257   123    20     10+      0+      1-      2-      0+      8-      0+      3-      0-      0+

@@ -1,0 +1,20 @@
+; EV[European Go Congress 1990 - Main tournament]
+; PC[AT, Vienna]
+; DT[1990-07-22,1990-08-05]
+; Pl Name               Gr Cy    1    2    3    4    5    6    7    8    9   10  W MM SOS SODOS
+   1 Zeijst Rob_van                 6d NL  xxx     33     9   302   271     1      0+      0+      9+      0+      0+      2+      3-      0+      4+      6+
+   2 Pietsch Hans                   5d DE  xxx     32     8   303   238     3      0+     13+      0+      0+     10+      1-      0-     11+     16+      4+
+   3 Mattern Juergen                5d DE  xxx     31     7   308   214     4     15+      6+      0-      0+      0+      0+      1+      4-     13+      0-
+   4 Heiser Laurent                 5d LU  xxx     31     7   305   209     5      0-      0+      6+      0+      0+      0+     10+      3+      1-      2-
+   5 Wimmer Manfred                 6d AT  xxx     31     7   300   208     7     10-      0+      0-      0+      0+     11-      7+      0+      0+      9+
+   6 Bogdanov Viktor                6d SU  xxx     31     7   296   201     8      0+      3-      4-      0+      0+      0+      0+      0+     10+      1-
+   7 Gherman Sorin                  4d RO  xxx     31     7   295   203    10      0-      0+      0+      0-      0+      0+      5-      0+      0+     10+
+   8 Mueller M                      5d CH  xxx     31     7   290   202    12     11+      0-      0-      0-      0+      0+      0+      0+      0+     13+
+   9 Rittner Egbert                 5d DE  xxx     30     6   306   180    13      0+     12+      1-      0+      0+     14+      0+     10-      0-      5-
+  10 Janssen Frank                  5d NL  xxx     30     6   304   179    14      5+      0+      0+     14+      2-      0+      4-      9+      6-      7-
+  11 Pocsai Tibor                   5d HU  xxx     30     6   301   176    15      8-      0+      0+      0-      0+      5+     14+      2-      0-      0+
+  12 Lazarev Alexej                 6d SU  xxx     30     6   299   178    16      0+      9-      0+      0+      0-      0+     13-      0+      0+      0-
+  13 Moussa Andre                   5d FR  xxx     30     6   298   175    17      0+      2-      0+      0+      0-      0+     12+      0+      3-      8-
+  14 Macfadyen Matthew              6d UK  xxx     30     6   297   176    18      0+      0+      0+     10-     16+      9-     11-      0+      0-      0+
+  15 Colmez Pierre                  5d FR  xxx     30     6   297   173    19      3-      0+      0+      0+      0-      0+      0+     16-      0+      0-
+  16 Eijkhout Michiel               4d NL  xxx     30     6   296   174    20      0+      0-      0+      0+     14-      0+      0+     15+      2-      0-

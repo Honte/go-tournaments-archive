@@ -1,0 +1,13 @@
+website: https://www.eurogofed.org/results/congress/egc1960.htm
+name: European Championship 1960
+stages:
+  - type: tournament
+    file: egc1960.txt
+    name: Championship Group
+    notes: Recreated from cross table. Games order can be different.
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true   
+

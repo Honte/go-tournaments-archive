@@ -14,7 +14,8 @@ stages:
       - mms
       - sodos
       - sos      
-    findSharedPlaces: true
+    findSharedPlaces: false
+    collapsed: true
   - type: tournament
     file: eygc2003u18.txt
     category: u18
@@ -28,4 +29,5 @@ stages:
       - mms
       - sodos
       - sos
-    findSharedPlaces: true
+    findSharedPlaces: false
+    collapsed: true

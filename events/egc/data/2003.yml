@@ -1,0 +1,42 @@
+website: https://www.eurogofed.org/results/congress/egc2003.htm
+notes: Places in European Championship based on EGC main tournament
+name: European Championship 2003
+stages:
+  - type: tournament
+    file: egc2003.txt
+    notes: For statistics best 16 europeans and games between them are shown. Games against other players changed to 0+ and 0-
+    name: Championship
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sodos
+      - open
+    breakers:
+      - mms
+      - sos
+      - sodos
+    columns:
+      - wins
+      - open
+    findSharedPlaces: true
+  - type: tournament
+    file: egc2003open100.txt
+    name: EGC Open
+    notes: Top 100 players of main tournament. Games against other players changed to 0+ and 0-
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - mms
+      - sos
+      - sodos
+    columns:
+      - wins
+    excluded: true
+    collapsed: true    
+    findSharedPlaces: true 
+	   
+

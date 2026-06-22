@@ -1,0 +1,24 @@
+; CL[A]
+; EV[49th European Go Congress, Main Tournament, first week]
+; PC[CZ, Praha]
+; DT[2005-07-24,2005-08-06]
+; HA[h9]
+; KM[6.5]
+; TM[120]
+;
+   1 Dinerstein Alexandr            1p RU  16Kz    32     8   306   244     1    4+/b      0+      0+    3+/w    2+/b      0-      0+      0-      0+      0+ |10313237
+   2 Taranu Catalin                 5p RO  Bucu    31     7   301   207     7      0+   12+/w      0+    7+/b    1-/w      0-      0-      0+      0+      0+ |10586785
+   3 Shikshin Ilja                  6d RU  16Kz    31     7   300   207     8   15+/b      0+      0+    1-/b      0-      0+      0-      0+    7+/w      0+ |12013342
+   4 Zhao Pei                       6d DE  F       30     6   301   175    13    1-/w      0+      0+   10+/b   14+/b      0+      0-      0+      0-      0- |10201235
+   5 Shikshina Svetlana             1p RU  16Kz    30     6   298   174    15      0+      0+    7-/w      0-      0+      0-      0+   12+/b   11+/w      0- |10301236
+   6 Silt Ondrej                    6d CZ  KVa     30     6   296   174    16      0+      0-      0+      0-      0-      0+      0+      0+      0-      0+ |10337481
+   7 Colmez Pierre                  5d FR  75Pa    30     6   296   173    17      0+   16+/w    5+/b    2-/w      0-   11+/b    8-/w      0+    3-/b      0+ |10237018
+   8 Pop Cristian                   7d RO  Bucu    30     6   295   174    18      0+      0-      0-      0+      0+   14+/w    7+/b      0-      0-   15+/b |10333389
+   9 Gerlach Christoph              6d DE  H       30     6   294   172    20   11+/b      0-      0+      0-      0-      0+      0+      0-      0+      0+ |10225017
+  10 Kulkov Andrej                  6d RU  16Kz    30     6   292   172    22   12-/b      0+      0+    4-/w      0-      0+      0+      0+      0-   16+/b |10625329
+  11 Jasiek Robert                  5d DE  B       30     6   286   168    25    9-/w      0+      0-      0+      0+    7-/w      0+   15+/w    5-/b      0+ |10213203
+  12 Heiser Laurent                 6d LU  Lux     29     5   294   141    27   10+/w    2-/b      0+      0-      0+      0+      0-    5-/w      0+      0- |10249195
+  13 Soldan Leszek                  5d PL  Wars    29     5   292   143    29      0-      0-      0+      0+      0-      0+      0+      0-      0+      0- |10449560
+  14 Corlan Lucian                  4d RO  Bucu    29     5   292   142    30      0-      0+      0+      0+    4-/w    8-/b      0-      0+      0+      0- |12586750
+  15 Nemlij Igor                    5d RU  16Kz    29     5   291   144    31    3-/w      0+      0-      0+      0-      0+      0+   11-/b      0+    8-/w |10886359
+  16 Dach Zbynek                    4d CZ  Plz     29     5   291   140    32      0+    7-/b      0-      0+      0+      0-      0-      0+      0+   10-/w |10233872

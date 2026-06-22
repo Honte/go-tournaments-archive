@@ -1,0 +1,111 @@
+; TC[E140727A]
+; CL[A]
+; EV[MLily-WeiqiTV 58th European Go Congress - Main Tournament]
+; PC[RO, Sibiu]
+; DT[2014-07-27,2014-08-09]
+; HA[h9]
+; KM[6.5]
+; TM[112.5]
+; CM[ (submitted by viorel.arsinoaia)]
+;.
+;            
+   1 Tong Yulin                     4p CN  Shan    35    10   315   13+/w   10+/b    5+/b    8+/b    2+/w    3+/w    4+/w   20+/b   18+/b   21+/w |13701391
+   2 Wang Chen                      7d CN  Shan    34     9   314   23+/w   17+/b    3+/b    6+/w    1-/b   21+/w    5+/w    8+/b   12+/w   25+/b |15025956
+   3 Sui Zexiang                    7d CN  Shan    33     8   313   26+/w   38+/b    2-/w   37+/b    9+/w    1-/b   13+/w    5+/b   14+/b    8+/w |17313021
+   4 Fan Hui                        2p FR  33Bo    33     8   312   19+/b    7+/w    8-/w   39+/b   11+/b    6+/w    1-/b   17+/w   16+/b    7+/w |12633346
+   5 Kim Young-Sam                  7d KR  BIBA    32     7   314   24+/b    9+/b    1-/w   41+/w   16+/w    8+/w    2-/b    3-/w   11+/b   29+/b |16213560
+   6 Shikshin Ilja                  7d RU  16Kz    32     7   312   15+/b   22+/w   11+/w    2-/b   10+/w    4-/b    9+/b   37+/b    7-/b   16+/b |12013342
+   7 Dinerstein Alexandr            3p RU  16Kz    32     7   311   20+/w    4-/b   14+/w   17+/b    8-/b   24+/w   16+/w    9+/b    6+/w    4-/b |10313237
+   8 Oh Chi_Min                     7d KR  Ber     31     6   318   37+/w   16+/b    4+/b    1-/w    7+/w    5-/b   18+/b    2-/w   19+/w    3-/b |15213374
+   9 Lisy Pavol                     1p SK  DoSt    31     6   310   30+/b    5-/w   34+/w   22+/b    3-/b   12+/w    6-/w    7-/w   37+/b   10+/w |12686597
+  10 Kachanovskyi Artem             6d UA  Rivn    31     6   309   28+/b    1-/w   19+/w   23+/b    6-/b   26+/w   11+/b   16-/w   17+/b    9-/b |12662870
+  11 Pop Cristian                   7d RO  CSRB    31     6   307   18+/b   39+/w    6-/b   36+/b    4-/w   28+/b   10-/w   21+/w    5-/w   19+/b |10333389
+  12 Surma Mateusz                  7d PL  Dzim    31     6   304   39-/w   18+/w   16-/b   32+/b   27+/w    9-/b   40+/w   13+/b    2-/b   26+/w |12837968
+  13 Burzo Cornel                   6d RO  BaMa    31     6   304    1-/b   28+/w   41-/w   66+/b   56+/w   17+/w    3-/b   12-/w   40+/b   20+/w |10325249
+  14 Noguchi Motoki                 7d FR  38Gr    31     6   300   38-/w   26+/b    7-/b   42+/w   24-/w   65+/b   39+/b   23+/w    3-/w   18+/w |12874356
+  15 Blomback Fredrik               6d SE  Stoc    31     6   299    6-/w   25+/b   27-/w   34-/b   47+/b   29+/b   37-/w   33+/w   38+/w   22+/w |13937946
+  16 Jabarin Ali                    1p IL  TAv     30     5   311   31+/w    8-/w   12+/w   27+/b    5-/b   40+/b    7-/b   10+/b    4-/w    6-/w |14637810
+  17 Mero Csaba                     6d HU  BuPe    30     5   306   40+/b    2-/w   56+/b    7-/w   34+/w   13-/b   86+/b    4-/b   10-/w   37+/b |10225875
+  18 Mitic Nikola                   6d RS  NiSt    30     5   306   11-/w   12-/b   91+/b   29+/w   41+/b   23+/w    8-/w   22+/b    1-/w   14-/b |10801923
+  19 Kravets Andrii                 6d UA  Rivn    30     5   303    4-/w   20+/b   10-/b   28-/w   89+/w   45+/b   27+/w   26+/w    8-/b   11-/w |12350261
+  20 Lin Viktor                     6d AT  Gote    30     5   303    7-/b   19-/w   51-/w   75+/b   42+/b   41+/w   24+/b    1-/w   31+/w   13-/b |14501256
+  21 Kraemer Lukas                  5d DE  BN      30     6   303   33+/b   56-/w   71+/w   64+/w   39+/b    2-/b   38+/w   11-/b   27+/w    1-/b |14698739
+  22 Silt Ondrej                    6d CZ  AKGY    30     5   302   25+/w    6-/b   57+/w    9-/w   36-/b   43+/b   31+/b   18-/w   30+/w   15-/b |10337481
+  23 Mitic Dusan                    6d RS  NiSt    30     5   301    2-/b   40+/w   64+/b   10-/w   58+/b   18-/b   25+/w   14-/b   29-/w   60+/w |10649507
+  24 Zhao Pei                       6d DE  F       30     5   301    5-/w   30-/b   49+/w   31+/b   14+/b    7-/b   20-/w   83+/w   25-/w   59+/b |10201235
+  25 Drean-Guenaizia Benjamin       6d FR  29Co    30     5   300   22-/b   15-/w   66-/w   72+/b   32+/b   30+/w   23-/b   43+/w   24+/b    2-/w |14513532
+  26 Fu Yaqi                        6d SE  Sto     30     5   300    3-/b   14-/w      0+   46+/w   37+/w   10-/b   28+/w   19-/b   45+/w   12-/b |16962154
+  27 Kuronen Juri                   6d FI  eGo     30     6   297   35+/w   45+/b   15+/b   16-/w   12-/b   64+/w   19-/b   44+/w   21-/b   43+/w |15386382
+  28 Le_Calve Tanguy                6d FR  44Na    30     5   297   10-/w   13-/b   76+/w   19+/b   38+/b   11-/w   26-/b   30-/b   83+/b   40+/w |14962706
+  29 Ouyang Yizhuo                  5d CN  Shan    30     6   295   47+/b   57-/b   33+/w   18-/b   92+/w   15-/w   69+/w   64+/b   23+/b    5-/w |17301053
+  30 Teuber Benjamin                6d DE  HH      30     5   294    9-/w   24+/w   37-/b   51+/b   40-/b   25-/b      0+   28+/w   22-/b   45+/w |10437174
+  31 Sankin Timur                   6d RU  77Mo    30     5   293   16-/b   37-/w   90+/b   24-/w   91+/w   34+/b   22-/w   39+/w   20-/b   42+/b |10801032
+  32 Groenen Geert                  6d NL  DHaa    30     6   290   57-/w      0+   44+/b   12-/w   25-/w   60+/b   43-/w   86+/b   46+/b   47+/b |10501216
+  33 Lazarev Alexej                 6d RU  10Pt    30     6   290   21-/w      0+   29-/b   93+/w   46+/b   37-/w   35+/b   15-/b   65+/w   44+/w |10374386
+  34 Spiegel Lothar                 5d AT  Gote    30     6   290      0+   48+/w    9-/b   15+/w   17-/b   31-/w   59-/w      0+   86+/w   38+/b |13750836
+  35 Wong Vanessa                   5d UK  HKng    30     6   287   27-/b      0+   42-/b   81+/b   43-/w   53+/w   33-/w   69+/b   68+/w   48+/w |14349467
+  36 Che Tong                       6d CN  Beij    30     4   267   73+/b   44+/w   38+/b   11-/w   22+/w      0=      0=      0=      0=      0= |17333052
+  37 Podpera Lukas                  6d CZ  APWS    29     4   308    8-/b   31+/b   30+/w    3-/w   26-/b   33+/b   15+/b    6-/w    9-/w   17-/w |13201914
+  38 Simara Jan                     6d CZ  KVaS    29     4   302   14+/b    3-/w   36-/w   45+/b   28-/w   44+/b   21-/b   59+/w   15-/b   34-/w |10749860
+  39 Obenaus Johannes               5d DE  B       29     4   301   12+/b   11-/b   58+/w    4-/w   21-/w   62+/b   14-/w   31-/b   60-/b   83+/w |13049795
+  40 Campagnie Remi                 5d FR  35Re    29     4   296   17-/w   23-/b  100+/b   65+/w   30+/w   16-/w   12-/b   42+/b   13-/w   28-/b |15449269
+  41 Ditzhuijzen Zeno_van           5d NL  Utre    29     5   292   67+/b   65+/w   13+/b    5-/b   18-/w   20-/b   83-/b   60-/w   94+/w   79+/b |12698972
+  42 Kruml Ondrej                   5d CZ  Brno    29     5   292   58-/b   88+/w   35+/w   14-/b   20-/w      0+   50+/w   40-/w   54+/b   31-/w |10886524
+  43 Kurita Shigeru                 5d JP  Toky    29     5   292   70+/w   58-/w   67+/b   56-/w   35+/b   22-/w   32+/b   25-/b   82+/w   27-/b |16233613
+  44 Yoshihara Kazuo                5d JP  Chib    29     5   291   88+/b   36-/b   32-/w   55+/w   71+/b   38-/w   68+/w   27-/b   49+/w   33-/b |14550074
+  45 Shinichi Inakazu               5d JP  Toky    29     5   290   89+/b   27-/w   48+/b   38-/w  100+/b   19-/w   82+/w   49+/b   26-/b   30-/b |17337023
+  46 Danek Vladimir                 5d CZ  APra    29     5   288   64-/w   92+/b   61+/w   26-/b   33-/w   59-/b   94+/w   73+/b   32-/w   80+/b |10213016
+  47 Cheburakhov Andrej             5d RU  77Mo    29     5   286   29-/w      0+   65-/b   69+/b   15-/w   83-/w      0+   70+/b   51+/w   32-/w |10413832
+  48 Danel Thomas                   5d FR  59Li    29     5   286      0+   34-/b   45-/w   91-/w   68+/b   72+/w   49-/b   52+/w   67+/w   35-/b |14913701
+  49 Savo Jesse                     4d FI  Haya    29     6   285   74+/b   50+/w   24-/b  100-/w      0+   51+/b   48+/w   45-/w   44-/b   72+/b |13801634
+  50 Paga Pierre                    5d UK  CLon    29     5   282   66-/w   49-/b   72-/w      0+      0+   52+/w   42-/b   54-/w   77+/b   69+/b |13901283
+  51 Fenech Antoine                 5d FR  67SE    29     5   281      0=   73+/w   20+/b   30-/w   64-/b   49-/w      0+   74+/b   47-/b   68+/b |10349350
+  52 Seibt David                    4d DE  B       29     6   280  100-/b      0+   69-/w   78+/w   74+/b   50-/b   79+/w   48-/b   76+/w   66+/b |14237289
+  53 Siukola Mikko                  4d FI  YliG    29     6   280   93-/b      0+      0+   61-/b   55+/b   35-/b   77+/w   67-/w   75+/b   65+/b |13913075
+  54 Boviz Dominik                  4d HU  Szfv    29     6   279      0+   66-/b   68-/w      0+      0+   69-/b   75+/w   50+/b   42-/w   67+/b |14225926
+  55 Marko Peter                    4d HU  BuPe    29     6   277      0+   71-/b      0+   44-/b   53-/w      0+   74-/w   84+/b      0+   64+/w |14513895
+  56 Yang Jun                       5d CN  Xian    29     3   269   61+/w   21+/b   17-/w   43+/b   13-/b      0=      0=      0=      0=      0= |17362015
+  57 Papazoglou Benjamin            5d FR  35Re    29     3   267   32+/b   29+/w   22-/b   58-/w   66+/w      0=      0=      0=      0=      0= |10733712
+  58 Wu Lirui                       7d CN  Beij    29     3   266   42+/w   43+/b   39-/b   57+/b   23-/w      0=      0=      0=      0=      0= |17349024
+  59 Zhang Huanhao                  5d CN  Tang    29     3   266      0=      0=      0=      0=      0=   46+/w   34+/b   38-/b   64+/w   24-/w |17362059
+  60 Gong Zirui                     5d CN  Xuch    29     3   264      0=      0=      0=      0=      0=   32-/w      0+   41+/b   39+/w   23-/b |17349068
+  61 Fukasaka Fuko                  5d JP  Toky    29     3   261   56-/b      0+   46-/b   53+/w   67+/b      0=      0=      0=      0=      0= |17350025
+  62 Kang Hwan-kuk                  4d DE  F       29     3   247      0=      0=      0=      0+      0+   39-/w  100+/b      0=      0=      0= |12037432
+  63 Serban Mihai_Valentin          5d RO  Cluj    29     1   244      0=      0=      0=      0=      0=   98+/w      0=      0=      0=      0= |13062258
+  64 Wang Shifang                   5d CN  Harb    28     4   292   46+/b   90+/w   23-/w   21-/b   51+/w   27-/b   65+/w   29-/w   59-/b   55-/b |17337012
+  65 Jasiek Robert                  5d DE  B       28     4   289   71+/w   41-/b   47+/w   40-/b   90+/w   14-/w   64-/b   76+/b   33-/b   53-/w |10213203
+  66 Wolff Armel-David              4d CH  Kogo    28     5   287   50+/b   54+/w   25+/b   13-/w   57-/b   86-/w      0+   82-/b      0+   52-/w |10598610
+  67 Wei Hongtai                    5d CN  Taiy    28     4   285   41-/w   70+/b   43-/w   96+/b   61-/w   68-/b      0+   53+/b   48-/b   54-/w |17350014
+  68 Zivony Ofer                    4d IL  Jer     28     5   285   92-/w      0+   54+/b   73+/w   48-/w   67+/w   44-/b   72+/b   35-/b   51-/w |14225607
+  69 Karadaban Denis                4d FR  38Gr    28     5   284      0+   91-/w   52+/b   47-/w      0+   54+/w   29-/b   35-/w      0+   50-/w |15637314
+  70 Li Yue                         5d CH  Zuri    28     4   281   43-/b   67-/w   97+/w   89-/b      0-   95+/b   78+/b   47-/w   79-/b   85+/w |15250059
+  71 Yu Changmin                    5d CN  Shen    28     4   281   65-/b   55+/w   21-/b      0+   44-/w   82-/b   76-/w      0+   80-/w      0+ |16998069
+  72 Pace Alessandro                3d IT  Roma    28     6   281      0+      0+   50+/b   25-/w      0+   48-/b      0+   68-/w   78+/b   49-/w |15049650
+  73 Welticke Jonas                 5d DE  BN      28     4   280   36-/w   51-/b   75+/w   68-/b   82-/w   94-/b      0+   46-/w      0+      0+ |15786287
+  74 Liang Zhijie                   4d CN  Beij    28     5   277   49-/w      0-      0+      0+   52-/w      0+   55+/b   51-/w   81-/w      0+ |16974078
+  75 Urabe Yoshimichi               3d JP  Kama    28     6   276      0+      0+   73-/b   20-/w   84+/w      0+   54-/b      0+   53-/w      0+ |15037374
+  76 Michaeli Tal                   3d IL  TAv     28     6   274      0+      0+   28-/b      0+   88-/w      0+   71+/b   65-/w   52-/b      0+ |14837603
+  77 Lieberum Christopher           4d DE  OL      28     5   273      0-      0+   93-/w      0-      0+      0+   53-/b   87+/w   50-/w      0+ |15774473
+  78 Krushelnytskyi Valerii         3d UA  Rivn    28     6   273   81-/b      0+      0+   52-/b   80+/w      0+   70-/w      0+   72-/w      0+ |15450072
+  79 Naddef Jean_Loup               3d FR  91Or    28     6   273      0+      0-      0-      0+      0+   81+/w   52-/b      0+   70+/w   41-/w |14233054
+  80 Mueller Pascal                 4d DE  DA      28     5   272      0-   96-/b      0-      0+   78-/b      0+      0+      0+   71+/b   46-/w |13986423
+  81 Knauf Torsten                  3d DE  SU      28     6   271   78+/w      0+      0+   35-/w   96-/w   79-/b      0+      0+   74+/b      0= |10962963
+  82 Lips Fabien                    3d FR  75Al    28     6   268      0+      0+      0-      0+   73+/b   71+/w   45-/b   66+/w   43-/b      0= |13798631
+  83 Calota Lucretiu                5d RO  Brsv    28     2   267      0=      0=      0=      0=      0=   47+/b   41+/w   24-/b   28-/w   39-/b |10350395
+  84 Lysiuk Dmytro                  3d UA  Kyiv    28     6   267      0+      0-      0-      0+   75-/b      0+      0+   55-/w      0+      0+ |10874435
+  85 Blanchard Benjamin             3d FR  75Al    28     6   266      0-      0-      0+      0-      0+      0+      0+      0+  100+/b   70-/b |14913206
+  86 Cioata Daniel                  5d RO  Pits    28     2   265      0=      0=      0=      0=      0=   66+/b   17-/w   32-/w   34-/b      0+ |10325392
+  87 Grzeschniok Anton              3d DE  F       28     6   265   91-/b      0+      0-   88-/b      0+      0+      0+   77-/b      0+      0+ |10250218
+  88 Chen Dunfeng                   5d CN  Fuji    28     2   261   44-/w   42-/b      0-   87+/w   76+/b      0=      0=      0=      0=      0= |17374027
+  89 Kovaleva Natalia               5d RU  74Ch    28     2   261   45-/w      0-      0+   70+/w   19-/b      0=      0=      0=      0=      0= |10537087
+  90 Donzet Frederic                5d FR  67SE    28     2   260      0+   64-/b   31-/w      0+   65-/b      0=      0=      0=      0=      0= |10333895
+  91 Budahn Michael                 4d DE  B       28     3   260   87+/w   69+/b   18-/w   48+/b   31-/b      0=      0=      0=      0=      0= |13013605
+  92 Fujino Kenji                   4d JP  Toky    28     3   255   68+/b   46-/w      0+      0+   29-/b      0=      0=      0=      0=      0= |17313054
+  93 Imamura-Cornuejols Toru        4d FR  38Gr    28     3   255   53+/w  100-/w   77+/b   33-/b      0+      0=      0=      0=      0=      0= |10549407
+  94 You Xiaochuan                  4d CN  Beij    28     3   254      0=      0=      0=      0=      0=   73+/w   46-/b      0+   41-/b      0+ |14386163
+  95 Su Chang                       4d CN  Zhan    28     3   250      0=      0=      0=      0=      0=   70-/w      0+      0-      0+  100+/w |17398062
+  96 Pitrop Alexandru-Petre         3d RO  Boto    28     4   248      0+   80+/w      0+   67-/w   81+/b      0=      0=      0=      0=      0= |15262940
+  97 Csizmadia Gyorgy               3d HU  BuPe    28     4   245      0+      0+   70-/b      0+      0+      0=      0=      0=      0=      0= |12698928
+  98 Huang Aja                      4d UK  Lndn    28     2   243      0=      0=      0=      0+      0+   63-/b      0=      0=      0=      0= |17374016
+  99 Noir Baptiste                  3d FR  93Mo    28     3   237      0=      0+      0-      0+      0+      0=      0=      0=      0=      0= |12449712
+ 100 Verhagen Rudi                  4d NL  Ensc    27     4   283   52+/w   93+/b   40-/w   49+/b   45-/w      0-   62-/w      0+   85-/w   95-/b |10213610

@@ -15,6 +15,7 @@ stages:
       - sos
       - sosos
     findSharedPlaces: true
+    collapsed: true
   - type: tournament
     file: eygc1996u18.txt
     category: u18
@@ -29,3 +30,4 @@ stages:
       - sos
       - sosos
     findSharedPlaces: true
+    collapsed: true

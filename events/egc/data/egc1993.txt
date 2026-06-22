@@ -1,0 +1,20 @@
+; EV[European Go Congress 1993 - Main tournament]
+; PC[CZ, Prague]
+; DT[1993-07-24,1993-08-07]
+; Pl Name                   Cy   Gr   1    2    3    4    5    6    7    8    9   10  MM  Pt CUSS
+   1 Zeijst Rob_van                 7D NL  xxx     29    10   264     1      0+      0+      0+      0+      5+      0+      2+      7+      4+      6+
+   2 Guo Juan                       6D NL  xxx     27     8   257     3      0+      0+     13+      0+      0+      0+      1-      4-     14+      0+
+   3 Lazarev Alexej                 6D RU  xxx     27     8   254     4      0+      0+      9+      6+      0-      0+      4-      0+      7+      5+
+   4 Zhao Pei                       5D DE  xxx     26     7   254     5      0+     11+      0+      0-      0+     16+      3+      2+      1-      0-
+   5 Heiser Laurent                 6D LU  xxx     26     7   253     6      0+      0+      8+      7+      1-      0+      6-     10+     15+      3-
+   6 Catalin Taranu                 5D RO  xxx     26     7   253     6      0+      0+      0+      3-      0+     13+      5+      0-      0+      1-
+   7 MacFadyen Matthew              6D UK  xxx     26     7   252     8      0+      0+     14+      5-      0+      0+      8+      1-      3-      0+
+   8 Danek Vladimir                 6D CZ  xxx     26     7   249     9      0+      0+      5-      0+      0+      0+      7-     13-      0+      0+
+   9 Ledovskoy Yuri                 6D UA  xxx     26     7   246    11      0+     16+      3-      0+      0-      0+     13-      0+      0+      0+
+  10 Colmez Pierre                  5D FR  xxx     26     7   244    12      0+     15-      0-      0+      0+      0+      0+      5-      0+     14+
+  11 Janssen Frank                  6D NL  xxx     26     7   242    13      0+      4-      0-      0+      0+      0-      0+      0+      0+     13+
+  12 Groot Matti                    4D NL  xxx     26     7   239    15      0-      0+      0-      0-      0+      0+      0+      0+      0+     15+
+  13 Donzet Frederic                5D FR  xxx     25     6   248    16      0+      0+      2-      0+      0+      6-      9+      8+      0-     11-
+  14 Gerlach Christoph              6D DE  xxx     25     6   247    17      0+      0+      7-      0+     16-      0+      0+      0+      2-     10-
+  15 Crasmaru Marcel                5D RO  xxx     25     6   247    17      0+     10+      0-      0+      0-      0+      0+      0+      5-     12-
+  16 Groenen Geert                  5D NL  xxx     25     6   246    19      0+      9-      0+      0+     14+      4-      0+      0=      0=      0=

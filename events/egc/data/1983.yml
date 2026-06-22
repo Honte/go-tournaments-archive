@@ -1,0 +1,16 @@
+website: https://www.eurogofed.org/results/congress/egc1983.htm
+name: European Championship 1983
+stages:
+  - type: tournament
+    file: egc1983.txt
+    notes: Top places only
+    name: Championship
+    scoringColumns:
+      - wins
+      - place
+    breakers:
+      - wins
+      - place
+    findSharedPlaces: true
+	   
+

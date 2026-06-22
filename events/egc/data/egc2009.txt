@@ -1,0 +1,30 @@
+; TC[E090727B]
+; CL[A]
+; EV[European Go Congress 2009 - Main Tournament - 1st week]
+; PC[NL, Groningen]
+; DT[2009-07-27,2009-08-07]
+; HA[h9]
+; KM[7.5]
+; TM[150]
+; CM[ (submitted by andreengels)]
+;.
+; EGC 2009 Main Tournament                                                                                               
+; 26/07/2009                                                                                                             
+;                                                                                                                        
+; Pl Name                    Grd  Co Club  MMS  SOS  EXT                                                                   
+   1 Dinerstein Alexandr            3p RU  16Kz    41     7   404    42     6  11+/w0   9+/b0      0-      0+   5+/b0      0+      0+      0-   2-/w0   8+/w0 |10313237
+   2 Taranu Catalin                 5p RO  Bucu    41     7   402    30     7      0+      0+      0-   6-/b0      0+   7+/b0   3+/w0      0+   1+/b0      0- |10586785
+   3 Mero Csaba                     6d HU  BuPe    41     7   400    67     8      0+      0-   8+/w0  16+/w0   4-/b0      0+   2-/b0  13+/w0  10+/b0   5+/w0 |10225875
+   4 Pop Cristian                   7d RO  Bucu    41     7   397    21     9      0+      0-      0+      0+   3+/w0      0-   5-/b0      0+      0+      0+ |10333389
+   5 Zeijst Rob_van                 7d NL  Toky    40     6   403    30    10      0+      0-      0+  11+/w0   1-/w0   8+/b0   4+/w0   7+/w0      0-   3-/b0 |10337382
+   6 Debarre Thomas                 5d FR  67Se    40     6   399   116    12      0-      0+  10+/w0   2+/w0      0-      0+      0-      0+   9-/w0      0+ |12950872
+   7 Burzo Cornel                   6d RO  BaMa    40     6  397=    64    14      0-      0+      0+      0+      0-   2-/w0      0+   5-/b0      0+      0+ |10325249
+   8 Savolainen Javier-Aleksi       4d FI  HGK     40     7   396   138    16      0+      0+   3-/b0      0+  10+/w0   5-/w0  14+/w0  11+/b0      0+   1-/b0 |14001537
+   9 Shikshin Ilja                  7d RU  16Kz    40     6   396    22    17  14+/b0   1-/w0      0+      0-      0+      0-      0+      0+   6+/b0      0- |12013342
+  10 Teuber Benjamin                6d DE  HH      40     6   392    12    18  16-/w0      0+   6-/b0      0+   8-/b0      0+      0+      0+   3-/w0      0+ |10437174
+  11 Fenech Antoine                 5d FR  67Se    40     6  391=    71    19   1-/b0      0+      0+   5-/b0      0+      0-      0+   8-/w0      0+      0+ |10349350
+  12 Jabarin Ali                    5d IL  TAv     40     7   390    56    20      0-      0+      0+      0-      0+      0+      0+      0+      0-      0+ |14637810
+  13 Simara Jan                     5d CZ  Zli     40     6   389    61    21      0-      0-      0+      0+      0-      0+      0+   3-/b0      0+      0+ |10749860
+  14 Mitic Nikola                   5d RS  Nis     40     6  385=    39    22   9-/w0      0+      0-      0-      0+      0+   8-/b0      0+      0+  16+/w0 |10801923
+  15 Eijkhout Michiel               6d NL  Leid   39=     4   356     5    24      0=      0=      0=      0=      0=      0+      0+      0-      0+      0+ |10486410
+  16 Janssen Frank                  6d NL  Alme    39     5   399    56    26  10+/b0      0-      0+   3-/b0      0+      0-      0+      0+      0-  14-/b0 |10298596

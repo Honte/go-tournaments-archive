@@ -1,0 +1,20 @@
+; EV[European Go Congress 1991 - Main tournament]
+; PC[BE, Namur]
+; DT[1991-07-27,1991-08-11]
+; Pl Name                            Rk Co Club  MMS  NBW    SOSSODOS  
+   1 Lazarev Alexej                 6D SU  xxx     27     8   258   203     2     12+      6+      2+      0-      0+      0+     11+      0-      9+      5+
+   2 Danek Vladimir                 5D CS  xxx     26     7   254   174     5      0+     10+      1-      5+      0+      0-     12+      8+      0-      7+
+   3 Heiser Laurent                 6D LU  xxx     26     7   250   169     6      0+      7+      0-      0+     10+      0-      6-      0+     16+      8+
+   4 Janssen Frank                  6D NL  xxx     26     7   249   169     7      0+      0+      0+      0+      0-     11-      0-     10+      0+     12+
+   5 Eeden Gilles_van               4D NL  xxx     26     7   248   169     8      0+      0+      0-      2-      0+      0+      0+      0+      6+      1-
+   6 Sajfullin Ruslan               5D SU  xxx     26     7   247   170     9      0+      1-      0-      0+      0+     16+      3+      0+      5-      0+
+   7 Schuster Malte                 5D DE  xxx     25     6   254   151    10      0+      3-     12+      8+      0+      0-      9-      0+      0+      2-
+   8 Calota Lucretiu                4D RO  xxx     25     6   249   147    11     15+     14+     11-      7-      0+      0+      0+      2-      0+      3-
+   9 Florescu Ion                   4D RO  xxx     25     6   249   145    12      0-      0+      0-      0+      0+     14+      7+     11+      1-      0-
+  10 Gerlach Christoph              4D DE  xxx     25     6   248   145    13     16+      2-     14+      0+      3-     13-      0+      4-      0+      0+
+  11 Bogdanov Viktor                6D SU  xxx     25     6   247   145    14      0+      0+      8+      0-      0+      4+      1-      9-      0-      0+
+  12 Cipra Petr                     4D CS  xxx     25     6   247   143    15      1-      0+      7-      0+      0+      0+      2-     14+     13+      4-
+  13 Muller Cas                     5D NL  xxx     25     6   245   145    16      0+      0-      0+      0-      0+     10+      0+      0-     12-      0+
+  14 Boon Mark                      5D NL  xxx     25     6   243   143    17      0+      8-     10-      0+      0+      9-      0+     12-      0+      0+
+  15 Gherman Sorin                  5D RO  xxx     25     6   242   142    18      8-      0+      0+      0-      0-      0-      0+      0+      0+      0+
+  16 Gondor Andras                  5D HU  xxx     25     6   242   142    18     10-      0+      0-      0+      0+      6-      0+      0+      3-      0+

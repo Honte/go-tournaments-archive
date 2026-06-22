@@ -1,0 +1,27 @@
+; TC[E140523A]
+; CL[A]
+; EV[1st European Pro Qualification 2014]
+; PC[EU, Strasbourg - Amsterdam - Vienna]
+; DT[2014-05-23,2014-06-20]
+; HA[h9]
+; KM[7.5]
+; TM[114]
+; CM[In Strasbourg the first 2 rounds of the 1st european pro qualification have been played. Round 3-4 was in Amsterdam and 5-6 in Vienna. (submitted by erdbeer)]
+;.
+; Pl Name             Rk Co  Club NBW   R1      R2
+   1 Lisy Pavol                     7d SK  DoSt     4     1      8+     10+      6+      4+      0=      0= |12686597
+   2 Jabarin Ali                    6d IL  TAv      5     1     11-     16+     10+      6+      5+      3+ |14637810
+   3 Podpera Lukas                  6d CZ  APWS     4     3      6-     14+      9+      7+      4+      2- |13201914
+   4 Burzo Cornel                   6d RO  BaMa     3     4     16+     11+      5+      1-      3-      0= |10325249
+   5 Surma Mateusz                  6d PL  Dzim     3     4     12+      9+      4-      8+      2-      0= |12837968
+   6 Debarre Thomas                 6d FR  67SE     2     6      3+      7+      1-      2-      0=      0= |12950872
+   7 Pop Cristian                   7d RO  CSRB     2     6     14+      6-     12+      3-      0=      0= |10333389
+   8 Teuber Benjamin                6d DE  HH       2     6      1-     13+     11+      5-      0=      0= |10437174
+   9 Mero Csaba                     6d HU  BuPe     1     9     15+      5-      3-      0=      0=      0= |10225875
+  10 Simara Jan                     6d CZ  KVaS     1     9     13+      1-      2-      0=      0=      0= |10749860
+  11 Blomback Fredrik               6d SE  Stoc     1     9      2+      4-      8-      0=      0=      0= |13937946
+  12 Hora Jan                       6d CZ  APra     1     9      5-     15+      7-      0=      0=      0= |10401083
+  13 Lin Viktor                     6d AT  Gote     0    13     10-      8-      0=      0=      0=      0= |14501256
+  14 Sankin Timur                   7d RU  77Mo     0    13      7-      3-      0=      0=      0=      0= |10801032
+  15 Mitic Dusan                    6d RS  NiSt     0    13      9-     12-      0=      0=      0=      0= |10649507
+  16 Kuronen Juri                   6d FI  eGo      0    13      4-      2-      0=      0=      0=      0= |15386382

@@ -1,0 +1,15 @@
+; EV[European Go Congress 1977 - Championship Group]
+; PC[NL, Rijswijk]
+; DT[1977-07-23,1977-08-06]
+;Pl Name                 Str Co    1    2    3    4    5    6    7    8    9    10   11  Pt 
+   1 Isele Wolfgang                 4d DE  xxx      9      9+      7+     11+     10+      4+      8+      3-      0=      5+      6+      2+
+   2 Hasibeder Helmut               5d AT  xxx    8.5      5+     10+      0=      9+      3+     11+      6+      4+      8+      7=      1-
+   3 Schlemper Ronald               4d NL  xxx      8      7+      0=      5-      6+      2-      9+      1+     11+     10+      4+      8+
+   4 Macfadyen Matthew              4d UK  xxx      6     10+      6+      8+      7+      1-      5-      0=      2-      9+      3-     11+
+   5 Moussa Andre                   4d FR  xxx    5.5      2-      8+      3+     11=     10+      4+      9-      7-      1-      0=      6+
+   6 Astasjkin Valery               5d RU  xxx      4      0=      4-      9+      3-     11+     10-      2-      8+      7+      1-      5-
+   7 Rehm Robert                    4d NL  xxx      4      3-      1-     10+      4-      8=      0=     11+      5+      6-      2=      9-
+   8 Bizjak Igor                    4d YU  xxx    3.5     11+      5-      4-      0=      7=      1-     10+      6-      2-      9+      3-
+   9 Katscher Michael               5d DE  xxx      3      1-     11+      6-      2-      0=      3-      5+     10-      4-      8-      7+
+  10 Castledine Brian               4d UK  xxx      3      4-      2-      7-      1-      5-      6+      8-      9+      3-     11+      0=
+  11 Wolter Berndt                  4d DE  xxx    0.5      8-      9-      1-      5=      6-      2-      7-      3-      0=     10-      4-

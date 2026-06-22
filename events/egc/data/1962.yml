@@ -1,0 +1,31 @@
+website: https://www.eurogofed.org/results/congress/egc1962.htm
+name: European Championship 1962
+notes: There was a rule that if last years champion and another player place first with equal scores, the champion would keep his title without any play-off.
+stages:
+  - type: tournament
+    file: egc1962.txt
+    name: Championship Group
+    notes: | 
+        Recreated from cross table. Games order can be different.\
+        Games against 2 USA players excluded
+    scoringColumns:    
+      - wins
+      - place
+    breakers:
+      - wins
+      - place
+    findSharedPlaces: true  
+  - type: tournament
+    file: egc1962open.txt
+    name: Championship Group - Open
+    notes: For the Open tournament a play-off was necessary and was won by Deuball.
+    scoringColumns:
+      - wins
+      - null
+      - place
+    breakers:
+      - wins
+    excluded: true
+    collapsed: true    
+    findSharedPlaces: true	       
+

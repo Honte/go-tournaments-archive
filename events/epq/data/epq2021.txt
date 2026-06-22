@@ -1,0 +1,27 @@
+; TC[T211025A]
+; CL[A]
+; EV[6th European Pro Qualification 2021]
+; PC[SE, Leksand]
+; DT[2021-10-25,2021-10-31]
+; HA[h9]
+; KM[6.5]
+; TM[90]
+; CM[Chinese Rules, Fischer time with 60 minutes basic time and 30 seconds additional per move https://eurogofed.org/proqualification/index_2021.html (submitted by erdbeer)]
+;.
+;# Name Rank Country Club NBW # 1.1 # 1.2 # 1.3 # 2.1 # 2.2 # 2.3 # 3.1 # 3.2 # 4.1 # 4.2 # 4.3
+   1 Frejlak Stanislaw              7d PL  Wars     8     1     16+     16+      0=      5-      5+      5+      4+      4+      2-      2+      2+ |12837594
+   2 Podpera Lukas                  7d CZ  APWS     7     2     15+     15+      0=      6+      6+      0=      3+      3+      1+      1-      1- |13201914
+   3 Campagnie Remi                 6d FR  91Or     4     3     11+     11+      0=      7+      7+      0=      2-      2-      0=      0=      0= |15449269
+   4 Chernykh Anton                 6d RU  50Zh     4     3     13+     13+      0=      8+      8+      0=      1-      1-      0=      0=      0= |15713467
+   5 Vazquez Oscar                  6d ES  Pant     3     5     10-     10+     10+      1+      1-      1-      0=      0=      0=      0=      0= |15633673
+   6 Welticke Jonas                 6d DE  BN       2     5      9-      9+      9+      2-      2-      0=      0=      0=      0=      0=      0= |15786287
+   7 Fragman Amir                   6d IL  MGC      2     5     12+     12+      0=      3-      3-      0=      0=      0=      0=      0=      0= |13625315
+   8 Drean-Guenaizia Benjamin       6d FR  29Co     2     5     14+     14+      0=      4-      4-      0=      0=      0=      0=      0=      0= |14513532
+   9 Burzo Cornel                   6d RO  BaMa     1     9      6+      6-      6-      0=      0=      0=      0=      0=      0=      0=      0= |10325249
+  10 Kajmin Vjacheslav              6d RU  77Mo     1     9      5+      5-      5-      0=      0=      0=      0=      0=      0=      0=      0= |14986257
+  11 Boviz Dominik                  6d HU  EMGE     0     9      3-      3-      0=      0=      0=      0=      0=      0=      0=      0=      0= |14225926
+  12 Zeijst Rob_van                 7d NL  Amst     0     9      7-      7-      0=      0=      0=      0=      0=      0=      0=      0=      0= |10337382
+  13 Teuber Benjamin                6d DE  HH       0     9      4-      4-      0=      0=      0=      0=      0=      0=      0=      0=      0= |10437174
+  14 Neirynck Lucas                 6d BE  75Ju     0     9      8-      8-      0=      0=      0=      0=      0=      0=      0=      0=      0= |14898301
+  15 Grigoriu Elian_Ioan            5d RO  ATAR     0     9      2-      2-      0=      0=      0=      0=      0=      0=      0=      0=      0= |15974420
+  16 Muromcev Alexandr              5d RU  77Mo     0     9      1-      1-      0=      0=      0=      0=      0=      0=      0=      0=      0= |18486897

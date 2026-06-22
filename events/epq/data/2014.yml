@@ -1,0 +1,35 @@
+website: https://www.eurogofed.org/proqualification/index_2014.html
+stages:
+  - type: tournament
+    file: epq2014.txt
+    time: 90 minutes per player, Canadian byoyomi
+    notes: Double ladder, played in 3 different locations on 3 different weekends
+    scoringColumns:
+      - wins
+      - place
+    breakers:
+      - place
+    columns:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 1-4 1:B+7.5 round:4 sgf:2014/4-PavolLisy-CornelBurzo.sgf
+      - 1-6 1:B+R round:3 sgf:2014/3-PavolLisy-ThomasDebarre.sgf
+      - 1-10 1:B+R round:2 sgf:2014/2-PavolLisy-JanSimara.sgf
+      - 2-3 2:B+1.5 round:6 sgf:2014/6-AliJabarin-LukasPodpera.sgf
+      - 2-5 2:B+R round:5 sgf:2014/5-AliJabarin-MateuszSurma.sgf
+      - 3-4 3:B+3.5 round:5 sgf:2014/5-LukasPodpera-CornelBurzo.sgf
+      - 3-7 3:B+0.5 round:4 sgf:2014/4-LukasPodpera-CristianPop.sgf
+      - 3-9 3:B+R round:3 sgf:2014/3-LukasPodpera-CsabaMero.sgf
+      - 4-5 4:B+R round:3 sgf:2014/3-CornelBurzo-MateuszSurma.sgf
+      - 4-16 4:B+R round:1 sgf:2014/1-CornelBurzo-JuriKuronen.sgf
+      - 5-8 5:B+R round:4 sgf:2014/4-MateuszSurma-BenjaminTeuber.sgf
+      - 5-9 5:B+R round:2 sgf:2014/2-MateuszSurma-CsabaMero.sgf
+      - 5-12 5:B+? round:1 sgf:2014/1-MateuszSurma-JanHora.sgf
+      - 6-3 6:B+R round:1 sgf:2014/1-ThomasDebarre-LukasPodpera.sgf
+      - 6-7 6:B+R round:2 sgf:2014/2-ThomasDebarre-CristianPop.sgf
+      - 8-1 1:W+R round:1 sgf:2014/1-BenjaminTeuber-PavolLisy.sgf
+      - 11-2 11:B+? round:1 sgf:2014/1-FredrikBlomback-AliJabarin.sgf
+      - 11-4 4:W+2.5 round:2 sgf:2014/2-FredrikBlomback-CornelBurzo.sgf
+      - 14-7 7:W+? round:1 sgf:2014/1-TimurSankin-CristianPop.sgf
+      - 15-9 9:W+T round:1 sgf:2014/1-DusanMitic-CsabaMero.sgf

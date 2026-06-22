@@ -1,0 +1,240 @@
+(;CA[utf-8]ST[2]RU[Chinese]GM[1]AP[CGoban:3]SZ[19]FF[4]GN[5th Pro qualification 2019 - Round 3 -- Rob van Zeijst 7d (W) - Viacheslav Kaymin 5d (B)]
+EV[5th Pro qualification 2019]RO[3]DT[2019-05-17]PC[Strasbourg]PB[Vjacheslav Kajmin]
+BR[5d]PW[Rob van Zeijst]WR[7d]KM[7.5]RE[B+R]US[Tony Claasen]MULTIGOGM[1]
+;B[pd];W[dc];B[cp];W[pq];B[po];W[qo];B[pp];W[qp];B[oq];W[pn];B[qq];W[pr];B[rq];W[or]
+;B[np]C[XXXX [3k\]\: KO!
+Gonzalate [5d?\]\: (Vjacheslav Kajmin)
+];W[nq]C[EGF1 [?\]\: no
+]
+;B[qn];W[op];B[oo];W[no];B[on];W[mp];B[pm];W[eq]C[EGF1 [?\]\: the way I wrote the name is correct
+EGF1 [?\]\: I wrote this way on request of the player himself \:)
+]
+;B[hp];W[do];B[dp];W[ep];B[eo];W[co];B[bo];W[bn];B[bp];W[fo];B[en];W[dm]C[Laman [1d?\]\: damn ambiguous transliterations \:)
+]
+;B[dr]C[Gonzalate [5d?\]\: well it's more european 
+Gonzalate [5d?\]\: I guess
+]
+;W[er];B[dq];W[gq];B[em];W[dl];B[el];W[dk];B[go];W[hq];B[ip];W[jr]C[Jakobicek [-\]\: what is the status of the corner if white plays first there? is there some kind of ko?
+Jakobicek [-\]\: or only seki?
+Shamash [?\]\: carpenter square with one turn at b5 is alive no ?
+asdfn\: Not sure
+asdfn\: I only know normal carpenter squares end up in ko
+]
+;B[ek];W[dj];B[ej];W[di]C[Laman [1d?\]\: https\://senseis.xmp.net/?ShapesRelatedToTheCarpentersSquare#toc9
+Jakobicek [-\]\: i checked the available literautre
+Jakobicek [-\]\: apparently it is seki
+Jakobicek [-\]\: http\://www.go4go.net/go/carpenter_square_11
+Jakobicek [-\]\: unless black wants to make mess
+]
+;B[qf];W[ei];B[jq]C[Uberdude [6d\]\: this game is so confused of the style
+Uberdude [6d\]\: lower right is 1960s joseki
+Uberdude [6d\]\: lower lieft is 2019 joseki (or not)
+sloth [3d\]\: it's all about the first corner stone
+Uberdude [6d\]\: locally speaking g3 is often h3 attach, though with that double ponnuki i don;t kow
+sloth [3d\]\: look at the age of the players who put the first stone in each corner
+]
+;W[iq];B[jp];W[kr];B[ce];W[cd]C[wolokom [5k\]\: Is any of them more corean style?
+]
+;B[de];W[ed];B[ch];W[ff];B[bj];W[bk]C[wolokom [5k\]\: How played the austrian`s
+Hellhuman [?\]\: Is there no broadcast on twitch for this round?
+EGF1 [?\]\: I am not sure
+EGF1 [?\]\: let me check
+Laman [1d?\]\: should come up eventually
+Laman [1d?\]\: i bet they didn't expect the players to be this fast
+wolokom [5k\]\: is b2 nessecery? or is it for ko?
+Jakobicek [-\]\: apparently black can live there even if white plays first
+Jakobicek [-\]\:  https\://senseis.xmp.net/?ShapesRelatedToTheCarpentersSquare#toc9
+]
+;B[be]C[Jakobicek [-\]\: for us kyu players, yes b2 is necessary \:)
+Hellhuman [?\]\: isnt it even a ko without b5 b6 exchange?
+Hellhuman [?\]\: so this should be fine
+]
+;W[bd]C[Jakobicek [-\]\: yes it is ko... without the leg
+];B[ci]C[Hellhuman [?\]\: so, an additional lack should help to stand the position - l o l
+Hellhuman [?\]\: leg* 
+Jakobicek [-\]\: with carpenter square things are not so simple, for instance even with two legs but without the d4 stone, there is still something for white if i remember
+wolokom [5k\]\: b7 is slow  k 16?
+wolokom [5k\]\: w is not alive a problem but i
+Olivia [3d\]\: L16?
+wolokom [5k\]\: to provide not to be overconcentrated k or o?
+]
+;W[bg]C[wolokom [5k\]\: nasty bad style i guess
+wolokom [5k\]\: but huge
+iceweasel [-\]\: b12?
+wolokom [5k\]\: b12 and b alive huge enaph?
+Jakobicek [-\]\: b12 now? i must say that b13 is way above my level, is this an attempt to make black play some moves on the inside while white makes a wall in sente?
+wolokom [5k\]\: it looks so 
+wolokom [5k\]\: but b coud say i make two moves 
+Jakobicek [-\]\: can black afford e13 first?
+Jakobicek [-\]\: nah that is bad idea
+FightorDie [8k\]\: not good , i think
+Jakobicek [-\]\: yes you do not want to give white f13
+Jakobicek [-\]\: that said d13 will always be white's privilige if black just plays b12 here
+wolokom [5k\]\: 12 points are not much
+Olivia [3d\]\: 12?
+wolokom [5k\]\: or 21
+Olivia [3d\]\: it's closer to 30
+wolokom [5k\]\: if you get more
+wolokom [5k\]\: thx olivia
+]
+;B[cg];W[cj];B[eg]C[bubba [1d\]\: is there a web page for this tournament?
+];W[bi]
+;B[bh]C[TheRealRio [?\]\: https\://eurogofed.org/proqualification/index_2019.html
+]
+;W[aj]C[TheRealRio [?\]\: Think it is what you want.
+];B[fg]C[bubba [1d\]\: thank you
+]
+;W[gi];B[gf];W[gn];B[fn];W[hn];B[im]C[Jakobicek [-\]\: so who do you like better here?
+]
+;W[gl]C[Uberdude [6d\]\: I don't know the Russian chap, but Rob is a nice guy
+Uberdude [6d\]\: Had some nice dicussions at the KPMC last year
+]
+;B[hl]C[bubba [1d\]\: not sure how this is going to work out for white
+attofaas [?\]\: h9
+bubba [1d\]\: runs the risk of just connecting over dame
+]
+;W[in]C[FightorDie [8k\]\: w wants j4 , in real
+bubba [1d\]\: is anyone by chance running an AI on the side here?
+bubba [1d\]\: wondering how good a GPU I need to run a go bot
+Dream [3d\]\: the small network #157, you can run on CPU just fine
+]
+;B[gk]C[bubba [1d\]\: ah..okay thanks
+Dream [3d\]\: for the more recent ones, you need a good gpu
+Uberdude [6d\]\: with a £200 GPU you can beat ptos
+Uberdude [6d\]\: pros
+bubba [1d\]\: My computer is about 10 years old now...finally upgrading
+bubba [1d\]\: figured I'd check what kind of GPU is worthwhile
+Dream [3d\]\: #157 is already 6d though
+]
+;W[kn]C[Uberdude [6d\]\: I got a 1060 3GB
+bubba [1d\]\: ah okay...and good enough, Uberdude?
+bubba [1d\]\: I was looking at either a 1660 or 1650
+bubba [1d\]\: couldn't figure if the 1650 was enough
+]
+;B[jm];W[jn];B[fp];W[gm]C[Uberdude [6d\]\: enough to review your games sure
+];B[hj]
+C[Uberdude [6d\]\: and beat pros most of the time
+Dream [3d\]\: well, to beat pros, time settings matter a lot
+Dream [3d\]\: the bots still read ladders rather slow
+Dream [3d\]\: so in blitz, it is not so hard to win
+]
+;W[ll]C[Uberdude [6d\]\: so what to think of top left sequence? I feel w b11 gote sad
+]
+;B[hi];W[hh]C[Uberdude [6d\]\: still some future attack possiblity though which he is working on now
+bubba [1d\]\: agreed
+]
+;B[ih]C[Uberdude [6d\]\: i will ask my macbook cpu ai
+bubba [1d\]\: splitting attack here though?
+Uberdude [6d\]\: that's definitely the plan
+bubba [1d\]\: can't figure the bottom left
+bubba [1d\]\: less than ko with E1?
+Uberdude [6d\]\: seki at worse for b
+]
+;W[ig]C[Olivia [3d\]\: if white B2 than B3 is seki 
+];B[gh]
+(;W[hg])
+(;W[fj];B[hg];W[fk]C[EGF1 [?\]\: black sacrifices his stones
+subsab\: hard to believe
+]
+;B[fc]C[Uberdude [6d\]\: did white now f10 first?
+EGF1 [?\]\: yes
+];W[ge];B[fd]
+;W[hf]C[sgrastar [3k?\]\: huh... so black tried to trade away a liability for huge potential... creative
+sgrastar [3k?\]\: unlikely to work out, but creative
+]
+;B[dd];W[gg];B[fq]C[Lilou [-\]\: who want betwenn cornel and rvz?
+joachim [?\]\: Cornel won
+Lilou [-\]\: ty
+]
+;W[hh]C[sgrastar [3k?\]\: it seems he's making a serious bid for the pro rank
+igaz1\: \:
+]
+;B[fr];W[ec];B[hg];W[fe];B[gf]C[Uberdude [6d\]\: when black atari g12 i expected white to f10
+]
+;W[if];B[jc];W[gg];B[cc];W[bc];B[gf];W[lc];B[hd];W[gg];B[cb];W[bb];B[gf];W[ee];B[ld]
+;W[md]C[fungo11 [5k\]\: so your wife wouldn't let you compete in this next year?
+]
+;B[kd];W[nc];B[ob];W[gg];B[gj];W[fi];B[gf];W[mf];B[gg];W[id];B[ic]
+(;W[gd])
+(;W[he];B[lf];W[lg];B[kg];W[kf];B[le];W[mg];B[hc];W[kc]C[EGF1 [?\]\: Martin, alles geht hier gut.. es macht spass
+EGF1 [?\]\: erste kurze nachricht wurde bereits veröffentlicht
+EGF1 [?\]\: mehr folgt
+]
+;B[je];W[ie];B[jd];W[jh];B[jf];W[ii];B[hh];W[jg];B[eb];W[db];B[me];W[ne];B[od];W[nd]
+;B[kb];W[lb];B[ka]C[igaz1\: ,
+];W[ik];B[ij]C[jlm [1k\]\: b looks way ahead, assumihg g13 and j17 are in fact alive
+HappyLook [9d\]\: ye, B is well ahead. tbh this game looks over
+]
+;W[jk];B[jj]C[jlm [1k\]\: i would think w resigns here
+];W[kk];B[of];W[oc];B[pc]
+;W[nb]C[Nealo [5k\]\: I think I'm missing something because black left side group looks in danger to me
+jlm [1k\]\: y, looks dangerous, but don't see how w kills. a12?
+HappyLook [9d\]\: k11 and a12 are miai
+HappyLook [9d\]\: and there is 100% eye at c14 
+Nealo [5k\]\: oh ok
+Nealo [5k\]\: Yeah I think I was reading that White would threaten the eye in sente and then connect K11
+]
+;B[pb]C[jlm [1k\]\: so why is w still playing?
+Nealo [5k\]\: but I don't think I read it right
+]
+;W[nf]C[Nealo [5k\]\: ah I see it now
+Nealo [5k\]\: thanks for pointing it out \:)
+HappyLook [9d\]\: Well, this is the last chance, losers bracket. W lost for sure, but sometimes you just can't admit it and play until the end, hoping for opponents mistake
+jlm [1k\]\: c'est la vie
+Nealo [5k\]\: Black looks to be at least 15 points ahead
+asdfn\: I'd say even more after something like q11
+Nealo [5k\]\: Yeah, that's not even counting any territory around there, just solid territory
+fitomarina [4k\]\: Maybe White is from US and hopes for win on Time...
+Nealo [5k\]\: ohhh shots fired!
+SpeqtR [1k\]\: for left lack middle group need 1 stone for live or no?
+jlm [1k\]\: no, h10 alive with miai
+jlm [1k\]\: k11 or a12, as happy pointed out earlier
+HappyLook [9d\]\: fitomarina, hehe... Sad and evil joke. But well deserved by AGA pros 
+Nealo [5k\]\: Yeah I was just asking about it. White A12, Black K11 and White cannot poke out the 2nd eye
+kmr [1k\]\: actually its live game with Fisher time +20 sec per move, so its extremely unlikely to lose on time
+asdfn\: Though...
+]
+;B[pi]C[Nealo [5k\]\: like if then White plays B14 C14 is sente because of the throw-in I think
+asdfn\: How much time does each player have now, EGF1?
+Nealo [5k\]\: oh no nm
+Nealo [5k\]\: oh yeah it is sente, white need to connect under or somethin
+]
+;W[pk]C[asdfn\: White's really persistent
+Nealo [5k\]\: oh man, White have so few points
+asdfn\: Maybe just p9 to simplify the game?
+]
+;B[qk];W[ql];B[qj];W[pl];B[oj];W[nk]C[SpeqtR [1k\]\: Очков 15-20 выигрывает Вячеслав
+]
+;B[fb];W[oe];B[og];W[pe];B[qe]C[kmr [1k\]\: black leads a lot, i guess white will resign soon.
+]
+;W[hk];B[qr];W[nm];B[bm];W[cn];B[an]C[mogget [?\]\: Poor Rob
+];W[rl];B[rk]C[mogget [?\]\: I was rooting for him, not to win all but at least semifinal \:(
+]
+;W[nh];B[rm]C[TytanPracy [?\]\: E14?
+sdg [2d\]\: по мнению лилы E14 проблемы создает
+]
+;W[sk];B[sj];W[sm];B[sl]C[tam1998 [1d\]\: this move O.o rob admitting that he lacks points
+]
+;W[la];B[ia];W[sk];B[sn];W[sl];B[pj];W[qm];B[rn];W[om];B[pn];W[nn];B[rp];W[nj];B[cm]
+;W[dn];B[ji];W[gr];B[lp];W[gp];B[ho];W[gs]C[Dream [3d\]\: how to live after e14? i dont see it
+]
+;B[fs]C[asdfn\: You mean before k11?
+];W[kp]C[Dream [3d\]\: yes
+];B[kq];W[lq];B[ko]
+;W[lo];B[ah]C[Dream [3d\]\: for instance, e14 after c7
+];W[al];B[am]C[EGF1 [?\]\: white resigns
+HappyLook [9d\]\: GG Slava
+asdfn\: Hmmm
+asdfn\: I can't find a living move o.O
+asdfn\: Does this mean e14 really kills?
+Dream [3d\]\: there is a ko after b plays a13
+Dream [3d\]\: with f8 cut
+Dream [3d\]\: or a12, doesnt matter
+asdfn\: Ye
+asdfn\: Yeah*
+asdfn\: I guess Rob missed the game changing move
+Dream [3d\]\: dunno if there are ko threats
+Dream [3d\]\: b has a lot of local threats
+Dream [3d\]\: and b loses left side if he loses the ko
+Dream [3d\]\: *w
+])))

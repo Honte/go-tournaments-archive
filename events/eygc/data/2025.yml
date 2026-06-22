@@ -14,6 +14,7 @@ stages:
       - sos
       - sosos      
     findSharedPlaces: true
+    collapsed: true
   - type: tournament
     file: eygc2025u18.txt
     category: u18
@@ -28,4 +29,5 @@ stages:
       - sos
       - sosos 
       - direct      
-    findSharedPlaces: true    
+    findSharedPlaces: true
+    collapsed: true    
