@@ -15,6 +15,7 @@ stages:
       - sos
       - sosos   
     findSharedPlaces: true
+    collapsed: true
   - type: tournament
     file: eygc2024u18.txt
     category: u18
@@ -29,4 +30,23 @@ stages:
       - mms
       - sos
       - sosos    
-    findSharedPlaces: true    
+    findSharedPlaces: true
+    collapsed: true    
+  - type: tournament
+    file: eygc2024u18.txt
+    category: u21
+    name: European Youth Go Congress - U21
+    notes: It's formally not European Championship so do not count to medals and other statistics.
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos    
+    findSharedPlaces: true
+    collapsed: true
+    excluded: true    
