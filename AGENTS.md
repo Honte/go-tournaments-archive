@@ -4,14 +4,16 @@ Guidance for coding agents working in this repository.
 
 ## Project Overview
 
-This is a static Next.js archive for multiple Go tournament sites. The active archive is selected with the `EVENT`
-environment variable and defaults to `pgc`.
+This is a static Next.js archive for one or more Go tournament sites. The running archive is selected by a configuration
+preset under `configurations/`.
 
 The app combines:
 
 - event-specific config, translations, colors, data, and SGF files under `events/[event-id]/`
+- archive-level single-event and multi-event presets under `configurations/`
 - shared Next.js App Router routes and UI under `src/`
 - data loading, H9 parsing, standings, stats, and SGF helpers under `src/data`, `src/libs`, and `tools/`
+- a prebuild asset pipeline under `tools/assets/` that writes production JSON, SGFs, previews, and ZIPs to `public/`
 
 Use the current code and `package.json` as the source of truth. Some older docs or notes may lag behind the actual
 scripts.
@@ -24,16 +26,16 @@ scripts.
 - `src/libs/` - shared utilities including H9 parsing, SGF helpers, dates, sorting, category logic, and endpoints.
 - `src/schema/` - normalized and input data types.
 - `src/i18n/` - locale constants, translation loading, and server helpers.
+- `configurations/` - archive-level presets that decide event grouping, route prefixes, and shared asset flags.
 - `events/[event-id]/` - per-event `config.ts`, `Logo.tsx`, `colors.css`, i18n JSON, YAML/H9 data, and SGF files.
+- `public/` - root hosting files plus generated `data/` and `sgf/` assets created by `npm run prebuild`.
 - `tools/` - extraction, templates, SGF cleanup, SGF matcher, and the internal SGF parser used by tooling.
 
 Path aliases:
 
 - `@/*` -> `src/*`
 - `@tools/*` -> `tools/*`
-- `@event` -> `events/index.ts`
-- `@event/schema` -> `events/schema.ts`
-- `@event/*` -> the active event directory at build/dev time
+- `@events/*` -> `events/*`
 
 ## Commands
 
@@ -47,32 +49,62 @@ Development servers:
 
 ```bash
 npm run dev
+npm run dev:honte
+npm run dev:europe
+npm run dev:poland
 npm run dev:pgc
 npm run dev:wagc
 npm run dev:kpmc
-npm run dev:pwgc
-npm run dev:pagc
-npm run dev:pygc
-npm run dev:hrgc
-npm run dev:wgl
+```
+
+Use explicit environment variables for the same modes, or for events without convenience scripts:
+
+```bash
+EVENT=epc npm run dev
+CONFIG=europe npm run dev
 ```
 
 Static builds:
 
 ```bash
 npm run build
+npm run build:honte
+npm run build:europe
+npm run build:poland
 npm run build:pgc
-npm run build:wagc
 npm run build:kpmc
-npm run build:pwgc
-npm run build:pagc
-npm run build:pygc
-npm run build:hrgc
-npm run build:wgl
 ```
 
-Check event-specific build scripts before relying on them; for example, the current `build:hrgc` entry exists but maps
-`EVENT` to `kpmc` in `package.json`.
+Use explicit environment variables for the same modes, or for builds without convenience scripts:
+
+```bash
+EVENT=wagc npm run build
+CONFIG=europe npm run build
+```
+
+Check `package.json` before relying on convenience scripts; only frequently used events and presets have dedicated
+commands.
+
+Build helpers:
+
+```bash
+npm run builder
+```
+
+Configuration selection:
+
+- `CONFIG=<name>` loads `configurations/<name>.yml`.
+- If `CONFIG` is not set and `EVENT=<event-id>` is set, the app loads `configurations/single.yml`.
+- If neither `CONFIG` nor `EVENT` is set, the app loads `configurations/multi.yml`.
+
+Route mode is based on the resolved preset: one configured event enables `*.single.*` route files, and multiple
+configured events enable `*.multi.*` route files. Single-event public pages and assets use `/:locale`, `/data/...`, and
+`/sgf/...`; multi-event pages and assets use `/:eventPrefix/:locale`, `/data/:eventPrefix/...`, and
+`/sgf/:eventPrefix/...`.
+
+`npm run build` runs `prebuild` first. Single-event builds write root `public/data` and `public/sgf` assets; multi-event
+builds write `public/data/<prefix>` and `public/sgf/<prefix>` assets. Preset entries marked `external: true` appear in
+selectors but are skipped for internal routes and generated assets.
 
 Checks:
 
@@ -100,7 +132,7 @@ directly, for example `.\node_modules\.bin\tsc.cmd --noEmit` on Windows.
 - Linting uses Oxlint with type-aware checks.
 - Tests use `node:test` and `node:assert/strict`.
 - Keep changes scoped. This repo has large data and SGF trees; avoid unrelated reformatting or bulk edits.
-- Do not edit generated output in `.next/` or `out/`.
+- Do not edit generated output in `.next/`, `out/`, `public/data/`, or `public/sgf/`.
 
 ## Event And Data Notes
 
@@ -114,8 +146,8 @@ Each event lives under `events/[event-id]/` and usually contains:
 - optional H9 `.txt` files in `data/`
 - optional SGF files under `sgf/`
 
-Tournament YAML files are parsed through `src/data/load.ts` and `src/data/stages.ts`. Stage types include `tournament`,
-`league`, `ladder-table`, `round-robin-table`, and `final`.
+Tournament YAML files are parsed through `src/data/load.ts` and `src/data/stages.ts`. Stage types include
+`classification`, `tournament`, `league`, `ladder-table`, `round-robin-table`, and `final`.
 
 The `tournament` stage imports H9 text files through the H9 parser in `src/libs/h9.ts` and related loading code in
 `src/data/h9tournament.ts`. H9 player places are important because SGF matching and imported game IDs rely on them.
@@ -134,12 +166,15 @@ SGF files live under `events/[event-id]/sgf/`, usually grouped by year.
 Relevant tooling:
 
 ```bash
+npm run sgf:match
 npm run sgf:fix:pgc
 npm run sgf:match:pgc
 npm run sgf:match:wagc
 npm run sgf:match:kpmc
 npm run sgf:match:pwgc
 npm run sgf:match:pagc
+npm run sgf:match:epc
+npm run sgf:match:iegc
 ```
 
 Matcher flags include:
@@ -153,8 +188,9 @@ Matcher flags include:
 The internal SGF parser is in `tools/sgf/`. The matcher is in `tools/sgfMatcher/`. Be conservative with matcher output
 contracts: small wording and formatting details are often part of the expected behavior.
 
-Normal site SGF routes are handled in `src/app/sgf/[...path]/route.ts`. Cleaned SGFs, raw SGFs, and generated preview
-formats are exposed through that route depending on event config.
+Production SGF assets are generated by `tools/assets/` into `public/sgf` or `public/sgf/<prefix>` for multi-event
+presets. Development SGF responses are handled by the single-event and multi-event `route.*.dev.ts` handlers. Cleaned
+SGFs, raw SGFs, preview formats, and ZIPs are exposed depending on event or preset config.
 
 ## Frontend Notes
 
@@ -179,5 +215,5 @@ Choose the smallest useful validation for the change:
 - Formatting-sensitive changes: run `npm run fmt` or `npm run fmt:write` for touched files.
 - SGF parser or matcher changes: run focused `npm run test`, then a relevant matcher command such as
   `npm run sgf:match:wagc -- --year 1995 --dry --force` when the changed rule needs end-to-end confirmation.
-- Static route or build output changes: run the relevant event build, for example `npm run build:pgc` or
-  `npm run build:wagc`.
+- Static route or build output changes: run the relevant build, for example `npm run build:pgc`,
+  `EVENT=wagc npm run build`, or `CONFIG=poland npm run build`.

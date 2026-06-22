@@ -6,8 +6,8 @@ export function usePlayerStatsData(event: EventContext, slug: string) {
   const normalizedSlug = slug.toLowerCase();
 
   return useQuery({
-    queryKey: ['stats', event.basePath, event.prefix, 'player', normalizedSlug],
-    queryFn: () => fetchPlayerStats(event.basePath, event.prefix, normalizedSlug),
+    queryKey: ['stats', event.id, 'player', normalizedSlug],
+    queryFn: () => fetchPlayerStats(event, normalizedSlug),
     staleTime: Infinity,
     enabled: typeof window !== 'undefined',
   });

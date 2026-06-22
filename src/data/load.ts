@@ -3,14 +3,14 @@ import path from 'node:path';
 import fg from 'fast-glob';
 import { parse } from 'yaml';
 import type { Game, Player, Tournament, TournamentDateSpan, TournamentDetails } from '@/schema/data';
-import type { EventConfig, EventData } from '@/schema/event';
+import type { EventContext, EventData } from '@/schema/event';
 import type { InputTournament } from '@/schema/input';
 import { parseTop } from '@/libs/stage';
 import { createPlayersHandler } from '@/data/players';
 import { parseStage } from '@/data/stages';
 import { calculateStats } from '@/data/stats';
 
-export async function loadData(event: EventConfig): Promise<EventData> {
+export async function loadData(event: EventContext): Promise<EventData> {
   const files = await fg.glob(`./events/${event.id}/data/*.yml`);
   const playersHandler = createPlayersHandler();
   const tournaments: Tournament[] = [];
@@ -97,7 +97,7 @@ export async function loadData(event: EventConfig): Promise<EventData> {
       const game = games[gameId];
 
       if (game.props.sgf) {
-        game.path = `./events/${event.id}/${game.props.sgf}`;
+        game.path = `./events/${event.id}/sgf/${game.props.sgf}`;
 
         if (event.generatePngs) {
           game.props.png = game.props.sgf.replace('.sgf', '.png');

@@ -1,66 +1,26 @@
-import { mkdir, rm, writeFile } from 'node:fs/promises';
+import { writeFile } from 'node:fs/promises';
 import { availableParallelism } from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Piscina from 'piscina';
-import type { EventContext, EventData } from '@/schema/event';
-import type { Locale, Translations } from '@/i18n/consts';
+import type { EventContext } from '@/schema/event';
 import type { BuildSgfRequest, BuildSgfResponse } from '@tools/assets/sgf';
-import { createZipBuffer } from '@/libs/zip';
 
 const SGF_WORKER_PATH = fileURLToPath(new URL('./sgf.ts', import.meta.url));
 const STATUS_DELAY = 5000;
 
-export async function buildSgfsAssets(
-  event: EventContext,
-  data: EventData,
-  allTranslations: Record<Locale, Translations>
-) {
-  const sgfDir = `./events/${event.id}/sgf`;
-  const outputDir = path.join('./public', event.prefix || '', 'sgf');
-  const translations = allTranslations[event.locales[0]];
+export function buildSgfLists(events: EventContext[], outputDir: string, results: BuildSgfResponse[]) {
+  return Promise.all(
+    events.map((event) => {
+      const targetDir = path.join(outputDir, event.prefix || '');
+      const games = results.filter((sgf) => sgf.event === event.id).map((sgf) => sgf.details);
 
-  await rm(outputDir, { recursive: true, force: true });
-
-  const sgfTasks: BuildSgfRequest[] = [];
-  for (const tournament of data.tournaments) {
-    for (const id in tournament.games) {
-      const game = tournament.games[id];
-
-      if (!game.props.sgf) {
-        continue;
-      }
-
-      sgfTasks.push({
-        event,
-        sgfDir,
-        outputDir,
-        game,
-        tournament,
-        translations,
-      });
-    }
-  }
-
-  const results = await buildSgfAssetsInWorkers(sgfTasks);
-  const sgfsByYear = Map.groupBy(results, (result) => result.year);
-  const list = results.map((result) => result.details);
-
-  await mkdir(outputDir, { recursive: true });
-  await writeFile(path.join(outputDir, 'list.json'), JSON.stringify(list));
-
-  const zipPromises = [];
-  for (const [year, files] of sgfsByYear) {
-    zipPromises.push(handleZip(outputDir, year, files));
-  }
-  await Promise.all(zipPromises);
+      return writeFile(path.join(targetDir, 'list.json'), JSON.stringify(games));
+    })
+  );
 }
 
-async function handleZip(outputDir: string, year: number, files: { path: string; content: string }[]): Promise<void> {
-  await writeFile(path.join(outputDir, `${year}.zip`), createZipBuffer(files));
-}
-
-async function buildSgfAssetsInWorkers(tasks: BuildSgfRequest[]): Promise<BuildSgfResponse[]> {
+export async function buildSgfAssetsInWorkers(tasks: BuildSgfRequest[]): Promise<BuildSgfResponse[]> {
   if (tasks.length === 0) {
     return [];
   }
@@ -79,6 +39,9 @@ async function buildSgfAssetsInWorkers(tasks: BuildSgfRequest[]): Promise<BuildS
 
   try {
     return await Promise.all(tasks.map((task) => pool.run(task)));
+  } catch (err) {
+    console.log(`[assets] failed to process sgfs`);
+    throw err;
   } finally {
     await pool.destroy();
     clearInterval(interval);

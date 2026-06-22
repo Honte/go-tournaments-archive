@@ -37,12 +37,7 @@ export function Game({ event, className, game, players, translations, title, wid
     >
       {hasSgf && preview && (
         <GameViewerTrigger sgfPath={game.props.sgf!} aria-label={gameTitle}>
-          <img
-            src={gameThumbUrl(event.basePath, event.prefix, preview)}
-            alt={gameTitle}
-            className="size-20"
-            loading="lazy"
-          />
+          <img src={gameThumbUrl(event, preview)} alt={gameTitle} className="size-20" loading="lazy" />
         </GameViewerTrigger>
       )}
       <div className="flex flex-col">

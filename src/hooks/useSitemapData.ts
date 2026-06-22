@@ -5,8 +5,8 @@ import { fetchSitemap } from '@/data/api';
 
 export function useSitemapData(event: EventContext, locale: Locale) {
   return useQuery({
-    queryKey: ['sitemap', event.basePath, event.prefix, locale],
-    queryFn: () => fetchSitemap(event.basePath, event.prefix, locale),
+    queryKey: ['sitemap', event.id, locale],
+    queryFn: () => fetchSitemap(event, locale),
     staleTime: Infinity,
     enabled: typeof window !== 'undefined',
   });

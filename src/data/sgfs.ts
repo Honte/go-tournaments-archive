@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import type { ApiGameInfo } from '@/schema/api';
 import type { Game, Tournament } from '@/schema/data';
-import type { EventConfig } from '@/schema/event';
+import type { EventDefinition, EventContext } from '@/schema/event';
 import { CustomSgfProps, SgfRootProps } from '@/schema/sgf';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
@@ -10,7 +10,7 @@ import { getStageName } from '@/libs/stage';
 import pkg from '../../package.json';
 
 export async function loadGameSgfDetails(
-  event: EventConfig,
+  event: EventDefinition,
   tournaments: Tournament[],
   sgfPath: string,
   translations: Translations
@@ -31,7 +31,11 @@ export async function loadGameSgfDetails(
   }
 }
 
-export async function loadCleanTournamentSgfs(event: EventConfig, tournament: Tournament, translations: Translations) {
+export async function loadCleanTournamentSgfs(
+  event: EventDefinition,
+  tournament: Tournament,
+  translations: Translations
+) {
   const promises: Promise<{ path: string; content: string }>[] = [];
 
   for (const game of Object.values(tournament.games)) {
@@ -102,7 +106,7 @@ export function getGameInfo(sgf: Sgf, game: Game, tournament: Tournament): ApiGa
   };
 }
 
-export function getSgfProps(event: EventConfig, game: Game, tournament: Tournament, translations: Translations) {
+export function getSgfProps(event: EventContext, game: Game, tournament: Tournament, translations: Translations) {
   const t = getTranslator(translations);
   const black = tournament.players[game.players[0].id];
   const white = tournament.players[game.players[1].id];

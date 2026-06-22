@@ -19,12 +19,12 @@ export function GameActions({ event, t, props, showViewer, showOriginal = false 
       {showViewer && props.sgf && <GameViewerButton sgfPath={props.sgf}>{t('game.open')}</GameViewerButton>}
 
       {props.sgf && (
-        <ExternalButton url={gameSgfUrl(event.basePath, event.prefix, props.sgf)} title={t('game.sgf')}>
+        <ExternalButton url={gameSgfUrl(event, props.sgf)} title={t('game.sgf')}>
           SGF
         </ExternalButton>
       )}
       {props.sgf && showOriginal && (
-        <ExternalButton url={rawGameSgfUrl(event.basePath, event.prefix, props.sgf)} title={t('game.rawSgf')}>
+        <ExternalButton url={rawGameSgfUrl(event, props.sgf)} title={t('game.rawSgf')}>
           {t('game.raw')}
         </ExternalButton>
       )}

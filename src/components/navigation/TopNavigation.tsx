@@ -38,7 +38,7 @@ export function TopNavigation({ event, years, locale, current }: TopNavigationPr
     if (shouldRedirect) {
       delayRef.current = window.setTimeout(() => {
         if (next !== current) {
-          router.push(tournamentUrl(event.prefix, locale, next));
+          router.push(tournamentUrl(event, locale, next));
         }
         setShouldRedirect(false);
       }, DELAY);

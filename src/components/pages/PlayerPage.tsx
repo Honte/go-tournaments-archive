@@ -1,7 +1,9 @@
-import type { PlayerStats as Stats } from '@/schema/data';
+import { notFound } from 'next/navigation';
 import type { EventContext } from '@/schema/event';
-import type { Translations } from '@/i18n/consts';
+import type { Locale } from '@/i18n/consts';
+import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
+import { getAllPlayersStats, getPlayerStats, getTranslations } from '@/data/serverApi';
 import { PlayerStats } from '@/components/PlayerStats';
 import { Achievements } from '@/components/stats/Achievements';
 import { Content } from '@/components/ui/Content';
@@ -10,11 +12,18 @@ import { Title } from '@/components/ui/Title';
 
 type PlayerPageProps = {
   event: EventContext;
-  translations: Translations;
-  player: Stats;
+  locale: Locale;
+  slug: string;
 };
 
-export function PlayerPage({ event, player, translations }: PlayerPageProps) {
+export async function PlayerPage({ event, locale, slug }: PlayerPageProps) {
+  const translations = await getTranslations(event, locale);
+  const player = await getPlayerStats(event, slug);
+
+  if (!player) {
+    return notFound();
+  }
+
   return (
     <Content>
       <header className="flex flex-col">
@@ -34,7 +43,32 @@ export function PlayerPage({ event, player, translations }: PlayerPageProps) {
       </header>
 
       <Achievements event={event} player={player} translations={translations} />
-      <PlayerStats event={event} slug={player.id} locale={translations.locale} />
+      <PlayerStats event={event} slug={player.id} locale={locale} />
     </Content>
   );
+}
+
+export async function getPlayerPageMetadata({ event, locale, slug }: PlayerPageProps) {
+  const translations = await getTranslations(event, locale);
+  const player = await getPlayerStats(event, slug);
+  const t = getTranslator(translations);
+
+  return {
+    title: player ? `${t('site.playerStatsTitle', player.name ?? '')} - ${t('site.name')}` : t('site.name'),
+    description: player ? t('site.playerStatsDescription', player.name ?? '') : t('site.description'),
+  };
+}
+
+export async function getPlayerPageOptions(event: EventContext) {
+  const players = await getAllPlayersStats(event);
+
+  return Object.keys(players)
+    .filter((key) => key !== 'BYE')
+    .map((slug) =>
+      event.locales.map((locale) => ({
+        locale,
+        slug,
+      }))
+    )
+    .flat();
 }

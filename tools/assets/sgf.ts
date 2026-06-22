@@ -2,7 +2,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import type { ApiGameInfo } from '@/schema/api';
 import type { Game, Tournament } from '@/schema/data';
-import type { EventConfig } from '@/schema/event';
+import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { generateJpg, generatePng } from '@tools/img';
 import { Sgf } from '@tools/sgf';
@@ -12,7 +12,7 @@ import { getGameInfo, getSgfProps, getTournamentSgfZipPath } from '@/data/sgfs';
 const THUMB_SIZE = 128;
 
 export type BuildSgfRequest = {
-  event: EventConfig;
+  event: EventContext;
   sgfDir: string;
   outputDir: string;
   game: Game;
@@ -21,6 +21,7 @@ export type BuildSgfRequest = {
 };
 
 export type BuildSgfResponse = {
+  event: string;
   path: string;
   content: string;
   year: number;
@@ -50,6 +51,7 @@ export default async function buildSgfAssets(input: BuildSgfRequest): Promise<Bu
   ]);
 
   return {
+    event: event.id,
     year: tournament.year,
     path: getTournamentSgfZipPath(sgfYamlPath),
     content: cleaned,

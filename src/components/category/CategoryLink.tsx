@@ -14,7 +14,7 @@ export type CategoryLinkProps = Omit<ComponentProps<typeof Link>, 'href'> &
 export function CategoryLink({ event, category, locale, children, className, ...props }: CategoryLinkProps) {
   return (
     <Link
-      href={categoryUrl(event.prefix, locale, category)}
+      href={categoryUrl(event, locale, category)}
       className={clsx('underline underline-offset-2 hover:text-event-hover', className)}
       prefetch={false}
       {...props}

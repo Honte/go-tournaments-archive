@@ -12,10 +12,14 @@ import type {
   StatsMedals,
   Tournament,
 } from '@/schema/data';
-import type { EventConfig } from '@/schema/event';
+import type { EventDefinition } from '@/schema/event';
 import type { PlayersHandler } from '@/data/players';
 
-export function calculateStats(event: EventConfig, tournaments: Tournament[], playersHandler: PlayersHandler): Stats {
+export function calculateStats(
+  event: EventDefinition,
+  tournaments: Tournament[],
+  playersHandler: PlayersHandler
+): Stats {
   const players: Record<string, PlayerStats> = {};
   const countries: Record<string, CountryStats> = {};
   const categories: Record<string, CategoryStats> = {};

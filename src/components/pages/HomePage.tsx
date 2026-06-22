@@ -1,6 +1,8 @@
-import type { EventSummary, Tournament } from '@/schema/data';
+import { notFound } from 'next/navigation';
 import type { EventContext } from '@/schema/event';
-import type { Translations } from '@/i18n/consts';
+import type { Locale } from '@/i18n/consts';
+import { isEventLocale } from '@/i18n/locales';
+import { getEventSummary, getTournaments, getTranslations } from '@/data/serverApi';
 import { Attendants } from '@/components/Attendants';
 import { CountryMedalists } from '@/components/CountryMedalists';
 import { Hero } from '@/components/Hero';
@@ -10,13 +12,20 @@ import { Winners } from '@/components/Winners';
 
 export type HomePageProps = {
   event: EventContext;
-  translations: Translations;
-  tournaments: Tournament[];
-  summary: EventSummary;
+  locale: Locale;
 };
 
-export function HomePage({ event, translations, tournaments, summary }: HomePageProps) {
+export async function HomePage({ event, locale }: HomePageProps) {
+  if (!isEventLocale(event, locale)) {
+    return notFound();
+  }
+
+  const translations = await getTranslations(event, locale);
+  const tournaments = (await getTournaments(event)).toSorted((a, b) => b.id - a.id);
+  const summary = await getEventSummary(event);
+
   const { totalStats, medalists, attendants, countryMedals } = summary;
+
   return (
     <>
       <Hero event={event} translations={translations} />
@@ -31,4 +40,8 @@ export function HomePage({ event, translations, tournaments, summary }: HomePage
       </div>
     </>
   );
+}
+
+export async function getHomePageOptions(event: EventContext) {
+  return event.locales.map((locale) => ({ locale }));
 }

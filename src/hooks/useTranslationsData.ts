@@ -5,8 +5,8 @@ import { fetchTranslations } from '@/data/api';
 
 export function useTranslationsData(event: EventContext, locale: Locale) {
   return useQuery({
-    queryKey: ['i18n', event.basePath, event.prefix, locale],
-    queryFn: () => fetchTranslations(event.basePath, event.prefix, locale),
+    queryKey: ['i18n', event.id, locale],
+    queryFn: () => fetchTranslations(event, locale),
     staleTime: Infinity,
     enabled: typeof window !== 'undefined',
   });

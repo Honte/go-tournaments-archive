@@ -6,8 +6,8 @@ export function useCountryStatsData(event: EventContext, code: string) {
   const normalizedCode = code.toLowerCase();
 
   return useQuery({
-    queryKey: ['stats', event.basePath, event.prefix, 'country', normalizedCode],
-    queryFn: () => fetchCountryStats(event.basePath, event.prefix, normalizedCode),
+    queryKey: ['stats', event.id, 'country', normalizedCode],
+    queryFn: () => fetchCountryStats(event, normalizedCode),
     staleTime: Infinity,
     enabled: typeof window !== 'undefined',
   });

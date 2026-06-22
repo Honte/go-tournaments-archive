@@ -1,0 +1,57 @@
+title:
+  pl: 'Archiwum polskich turniejów Go'
+  en: 'Polish Go Tournaments Archives'
+locales:
+  - pl
+  - en
+events:
+  - title:
+      pl: Mistrzostwa
+      en: Championships
+    events:
+      - id: pgc
+        prefix: mp
+      - id: pwgc
+        prefix: mpk
+      - id: pygc
+        prefix: mpj
+      - id: pagc
+        prefix: amp
+  - title:
+      pl: Klubowe
+      en: Clubs
+    events:
+      - id: wgl
+        prefix: wgl
+config:
+  generateSvgs: false,
+  generatePngs: false,
+  generateJpgs: true,
+  generateZips: true,
+  links:
+    - website: https://go.art.pl
+      title:
+        pl: Go w Polsce
+        en: Go in Poland
+      tooltip:
+        pl: Odwiedź stronę Go w Polsce
+        en: Visit Go in Poland website
+      place: middle
+    - website:
+        pl: https://psg.go.art.pl/pl
+        en: https://psg.go.art.pl/en
+      title:
+        pl: PSG
+        en: PGA
+      tooltip:
+        pl: Odwiedź stronę Polskiego Stowarzyszenia Go
+        en: Visit Polish Go Association website
+      place: middle
+    - website: https://kursgo.pl
+      title:
+        pl: Kurs Go
+        en: Learn Go
+      tooltip:
+        pl: Naucz się grać w Go
+        en: Learn how to play Go
+      place: middle

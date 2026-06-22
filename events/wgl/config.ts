@@ -1,14 +1,11 @@
-import type { EventConfig } from '@/schema/event';
+import type { EventDefinition } from '@/schema/event';
 
-const EVENT_CONFIG: EventConfig = {
+const EVENT_CONFIG: EventDefinition = {
   id: 'wgl',
-  domain: '',
   locales: ['pl', 'en'],
   showCountry: false,
   showBestPlace: true,
   hideGamesWithoutSgf: true,
-  generateSvgs: false,
-  generateJpgs: true,
 };
 
 export default EVENT_CONFIG;

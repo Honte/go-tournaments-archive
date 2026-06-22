@@ -1,5 +1,6 @@
 import { readFile } from 'node:fs/promises';
-import path from 'node:path';
+import { join, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import type {
   CategoryStats,
   CountryStats,
@@ -8,19 +9,20 @@ import type {
   Tournament,
   TournamentWithDescription,
 } from '@/schema/data';
-import type { EventConfig, EventContext, EventData } from '@/schema/event';
+import type { EventDefinition, EventContext, EventData } from '@/schema/event';
 import type { Locale, Translations } from '@/i18n/consts';
 import { loadTranslations } from '@/i18n/server';
 import { loadTournamentDescription } from '@/data/description';
 import { loadData } from '@/data/load';
+import { IS_PRODUCTION } from '@/configuration';
 
-const IS_PRODUCTION = process.env.NODE_ENV === 'production';
-const PUBLIC_DIR = path.join(process.cwd(), 'public');
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const PUBLIC_DIR = join(__dirname, '../../public');
 
 const dataCache = new Map<string, Promise<EventData>>();
 const dataAssetCache = new Map<string, Promise<unknown>>();
 
-async function getData(event: EventConfig) {
+async function getData(event: EventDefinition) {
   const cached = dataCache.get(event.id);
 
   if (cached) {
@@ -86,7 +88,7 @@ export async function getAvailableTournaments(event: EventContext) {
 
 export async function getAllPlayersStats(event: EventContext) {
   if (IS_PRODUCTION) {
-    return readDataAsset<Record<string, PlayerStats>>(event, path.join('stats', 'players.json'));
+    return readDataAsset<Record<string, PlayerStats>>(event, join('stats', 'players.json'));
   }
 
   const { stats } = await getData(event);
@@ -96,7 +98,7 @@ export async function getAllPlayersStats(event: EventContext) {
 
 export async function getPlayerStats(event: EventContext, playerId: string) {
   if (IS_PRODUCTION) {
-    return readDataAsset<PlayerStats>(event, path.join('stats', 'player', `${playerId}.json`));
+    return readDataAsset<PlayerStats>(event, join('stats', 'player', `${playerId}.json`));
   }
 
   const players = await getAllPlayersStats(event);
@@ -106,7 +108,7 @@ export async function getPlayerStats(event: EventContext, playerId: string) {
 
 export async function getAllCountriesStats(event: EventContext) {
   if (IS_PRODUCTION) {
-    return readDataAsset<Record<string, CountryStats>>(event, path.join('stats', 'countries.json'));
+    return readDataAsset<Record<string, CountryStats>>(event, join('stats', 'countries.json'));
   }
 
   const { stats } = await getData(event);
@@ -116,7 +118,7 @@ export async function getAllCountriesStats(event: EventContext) {
 
 export async function getCountryStats(event: EventContext, country: string) {
   if (IS_PRODUCTION) {
-    return readDataAsset<CountryStats>(event, path.join('stats', 'country', `${country.toLowerCase()}.json`));
+    return readDataAsset<CountryStats>(event, join('stats', 'country', `${country.toLowerCase()}.json`));
   }
 
   const countries = await getAllCountriesStats(event);
@@ -126,7 +128,7 @@ export async function getCountryStats(event: EventContext, country: string) {
 
 export async function getCategoryStats(event: EventContext, category: string) {
   if (IS_PRODUCTION) {
-    return readDataAsset<CategoryStats>(event, path.join('stats', 'category', `${category}.json`));
+    return readDataAsset<CategoryStats>(event, join('stats', 'category', `${category}.json`));
   }
 
   const { stats } = await getData(event);
@@ -136,7 +138,7 @@ export async function getCategoryStats(event: EventContext, category: string) {
 
 export async function getEventSummary(event: EventContext): Promise<EventSummary> {
   if (IS_PRODUCTION) {
-    return readDataAsset<EventSummary>(event, path.join('stats', 'summary.json'));
+    return readDataAsset<EventSummary>(event, join('stats', 'summary.json'));
   }
 
   const { summary } = await getData(event);
@@ -146,7 +148,7 @@ export async function getEventSummary(event: EventContext): Promise<EventSummary
 
 export async function getTranslations(event: EventContext, locale?: Locale): Promise<Translations> {
   if (IS_PRODUCTION) {
-    return readDataAsset<Translations>(event, path.join('i18n', `${locale ?? event.locales[0]}.json`));
+    return readDataAsset<Translations>(event, join('i18n', `${locale ?? event.locales[0]}.json`));
   }
 
   return loadTranslations(event, locale);
@@ -154,7 +156,7 @@ export async function getTranslations(event: EventContext, locale?: Locale): Pro
 
 async function readDataAsset<T>(event: EventContext, file: string): Promise<T> {
   const normalizedFile = file.replaceAll('\\', '/');
-  const cacheKey = `${event.id}:${event.prefix ?? ''}:${normalizedFile}`;
+  const cacheKey = `${event.id}:${normalizedFile}`;
   const cached = dataAssetCache.get(cacheKey);
 
   if (cached) {
@@ -172,10 +174,10 @@ async function readDataAsset<T>(event: EventContext, file: string): Promise<T> {
 }
 
 async function readDataAssetFromDisk<T>(event: EventContext, file: string): Promise<T> {
-  const assetPath = path.join(PUBLIC_DIR, event.prefix || '', 'data', file);
+  const assetPath = join(/*turbopackIgnore: true*/ PUBLIC_DIR, 'data', event.prefix || '', file);
 
   try {
-    return JSON.parse(await readFile(assetPath, 'utf-8')) as T;
+    return JSON.parse(await readFile(/*turbopackIgnore: true*/ assetPath, 'utf-8')) as T;
   } catch (error) {
     if ((error as NodeJS.ErrnoException)?.code === 'ENOENT') {
       throw new Error(

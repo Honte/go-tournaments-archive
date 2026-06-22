@@ -1,7 +1,8 @@
-import type { CategoryStats } from '@/schema/data';
+import { notFound } from 'next/navigation';
 import type { EventContext } from '@/schema/event';
-import type { Translations } from '@/i18n/consts';
+import type { Locale } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
+import { getCategoryStats, getTranslations } from '@/data/serverApi';
 import { CategoryCountryMedalTable } from '@/components/category/CategoryCountryMedalTable';
 import { CategoryMedalTable } from '@/components/category/CategoryMedalTable';
 import { CategoryResultsTable } from '@/components/category/CategoryResultsTable';
@@ -10,12 +11,17 @@ import { Title } from '@/components/ui/Title';
 
 type CategoryPageProps = {
   event: EventContext;
-  translations: Translations;
-  stats: CategoryStats;
+  locale: Locale;
   category: string;
 };
 
-export function CategoryPage({ event, category, stats, translations }: CategoryPageProps) {
+export async function CategoryPage({ event, locale, category }: CategoryPageProps) {
+  if (!event.categories?.length) {
+    return notFound();
+  }
+
+  const translations = await getTranslations(event, locale);
+  const stats = await getCategoryStats(event, category);
   const t = getTranslator(translations);
   const name = t(`categories.full.${category}`);
 
@@ -35,4 +41,36 @@ export function CategoryPage({ event, category, stats, translations }: CategoryP
       </div>
     </Content>
   );
+}
+
+export async function getCategoryPageMetadata({ event, locale, category }: CategoryPageProps) {
+  const translations = await getTranslations(event, locale);
+  const t = getTranslator(translations);
+  const name = t(`categories.full.${category}`);
+
+  return {
+    title: `${t('site.categoryStatsTitle', name)} - ${t('site.name')}`,
+    description: t('site.categoryStatsDescription', name),
+  };
+}
+
+export function getCategoryPageOptions(event: EventContext) {
+  if (!event.categories?.length) {
+    return [
+      {
+        category: 'none',
+        locale: event.locales[0],
+      },
+    ];
+  }
+
+  const pages = [];
+
+  for (const locale of event.locales) {
+    for (const category of event.categories) {
+      pages.push({ locale, category });
+    }
+  }
+
+  return pages;
 }

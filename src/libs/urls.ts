@@ -1,93 +1,99 @@
-export function homeUrl(eventPrefix: string | undefined, locale: string) {
-  return joinPaths(eventPrefix, `/${locale}`);
+import type { EventContext } from '@/schema/event';
+
+export function multiHomeUrl(locale?: string) {
+  return locale ? `/?locale=${locale}` : '/';
 }
 
-export function tournamentUrl(eventPrefix: string | undefined, locale: string, year: number | string) {
-  return joinPaths(eventPrefix, `/${locale}/${year}`);
+export function homeUrl(event: EventContext, locale: string) {
+  if (event.external && event.domain) {
+    return `${event.domain}/${locale}`;
+  }
+
+  return joinPaths(event.prefix, `/${locale}`);
 }
 
-export function categoryUrl(eventPrefix: string | undefined, locale: string, category: string) {
-  return joinPaths(eventPrefix, `/${locale}/category/${category}`);
+export function tournamentUrl(event: EventContext, locale: string, year: number | string) {
+  return joinPaths(event.prefix, `/${locale}/${year}`);
 }
 
-export function playerUrl(eventPrefix: string | undefined, locale: string, playerId: string) {
-  return joinPaths(eventPrefix, `/${locale}/stats/${playerId}`);
+export function categoryUrl(event: EventContext, locale: string, category: string) {
+  return joinPaths(event.prefix, `/${locale}/category/${category}`);
 }
 
-export function countryUrl(eventPrefix: string | undefined, locale: string, code: string) {
-  return joinPaths(eventPrefix, `/${locale}/stats/country/${code.toLowerCase()}`);
+export function playerUrl(event: EventContext, locale: string, playerId: string) {
+  return joinPaths(event.prefix, `/${locale}/stats/${playerId}`);
 }
 
-export function allPlayersStatsUrl(eventPrefix: string | undefined, locale: string) {
-  return joinPaths(eventPrefix, `/${locale}/stats`);
+export function countryUrl(event: EventContext, locale: string, code: string) {
+  return joinPaths(event.prefix, `/${locale}/stats/country/${code.toLowerCase()}`);
 }
 
-export function allCountryStatsUrl(eventPrefix: string | undefined, locale: string) {
-  return joinPaths(eventPrefix, `/${locale}/stats/country`);
+export function allPlayersStatsUrl(event: EventContext, locale: string) {
+  return joinPaths(event.prefix, `/${locale}/stats`);
 }
 
-export function allGameStatsUrl(eventPrefix: string | undefined, locale: string) {
-  return joinPaths(eventPrefix, `/${locale}/stats/games`);
+export function allCountryStatsUrl(event: EventContext, locale: string) {
+  return joinPaths(event.prefix, `/${locale}/stats/country`);
 }
 
-export function faviconUrl(basePath: string | undefined, eventPrefix: string | undefined) {
-  return joinPaths(basePath, eventPrefix, '/favicon.svg');
+export function allGameStatsUrl(event: EventContext, locale: string) {
+  return joinPaths(event.prefix, `/${locale}/stats/games`);
 }
 
-export function appleIconUrl(basePath: string | undefined, eventPrefix: string | undefined) {
-  return joinPaths(basePath, eventPrefix, '/apple-icon.png');
+export function faviconUrl(event: EventContext) {
+  return joinPaths(event.basePath, event.prefix, '/favicon.svg');
 }
 
-export function logoBlackUrl(basePath: string | undefined, eventPrefix: string | undefined) {
-  return joinPaths(basePath, eventPrefix, '/logo-black.svg');
+export function appleIconUrl(event: EventContext) {
+  return joinPaths(event.basePath, event.prefix, '/apple-icon.png');
 }
 
-export function logoWhiteUrl(basePath: string | undefined, eventPrefix: string | undefined) {
-  return joinPaths(basePath, eventPrefix, '/logo-white.svg');
+export function logoBlackUrl(event: EventContext) {
+  return joinPaths(event.basePath, event.prefix, '/logo-black.svg');
 }
 
-export function i18nUrl(basePath: string | undefined, eventPrefix: string | undefined, locale: string) {
-  return joinPaths(basePath, eventPrefix, `/data/i18n/${locale}.json`);
+export function logoWhiteUrl(event: EventContext) {
+  return joinPaths(event.basePath, event.prefix, '/logo-white.svg');
 }
 
-export function playerStatsDataUrl(basePath: string | undefined, eventPrefix: string | undefined, slug: string) {
-  return joinPaths(basePath, eventPrefix, `/data/stats/player/${slug}.json`);
+export function i18nUrl(event: EventContext, locale: string) {
+  return joinPaths(event.basePath, 'data', event.prefix, `i18n/${locale}.json`);
 }
 
-export function countryStatsDataUrl(basePath: string | undefined, eventPrefix: string | undefined, code: string) {
-  return joinPaths(basePath, eventPrefix, `/data/stats/country/${code.toLowerCase()}.json`);
+export function playerStatsDataUrl(event: EventContext, slug: string) {
+  return joinPaths(event.basePath, 'data', event.prefix, `stats/player/${slug}.json`);
 }
 
-export function tournamentDataUrl(
-  basePath: string | undefined,
-  eventPrefix: string | undefined,
-  year: number | string
-) {
-  return joinPaths(basePath, eventPrefix, `/data/${year}.json`);
+export function countryStatsDataUrl(event: EventContext, code: string) {
+  return joinPaths(event.basePath, 'data', event.prefix, `stats/country/${code.toLowerCase()}.json`);
 }
 
-export function gamesWithSgfsUrl(basePath: string | undefined, eventPrefix: string | undefined) {
-  return joinPaths(basePath, eventPrefix, '/sgf/list.json');
+export function tournamentDataUrl(basePath: string | undefined, event: EventContext, year: number | string) {
+  return joinPaths(basePath, 'data', event.prefix, `${year}.json`);
 }
 
-export function gamesZipUrl(basePath: string | undefined, eventPrefix: string | undefined, year: number | string) {
-  return joinPaths(basePath, eventPrefix, `/sgf/${year}.zip`);
+export function gamesWithSgfsUrl(event: EventContext) {
+  return joinPaths(event.basePath, 'sgf', event.prefix, 'list.json');
 }
 
-export function sitemapUrl(basePath: string | undefined, eventPrefix: string | undefined, locale: string) {
-  return joinPaths(basePath, eventPrefix, `/data/sitemap/${locale}.json`);
+export function gamesZipUrl(event: EventContext, year: number | string) {
+  return joinPaths(event.basePath, 'sgf', event.prefix, `${year}.zip`);
 }
 
-export function gameSgfUrl(basePath: string | undefined, eventPrefix: string | undefined, path: string) {
-  return joinPaths(basePath, eventPrefix, path);
+export function sitemapUrl(event: EventContext, locale: string) {
+  return joinPaths(event.basePath, 'data', event.prefix, `sitemap/${locale}.json`);
 }
 
-export function rawGameSgfUrl(basePath: string | undefined, eventPrefix: string | undefined, path: string) {
-  return joinPaths(basePath, eventPrefix, path.replace(/\.sgf$/, '.raw.sgf'));
+export function gameSgfUrl(event: EventContext, path: string) {
+  return joinPaths(event.basePath, 'sgf', event.prefix, path);
 }
 
-export function gameThumbUrl(basePath: string | undefined, eventPrefix: string | undefined, path?: string) {
-  return path ? joinPaths(basePath, eventPrefix, path) : undefined;
+export function rawGameSgfUrl(event: EventContext, path: string) {
+  return joinPaths(event.basePath, 'sgf', event.prefix, path.replace(/\.sgf$/, '.raw.sgf'));
+}
+
+export function gameThumbUrl(event: EventContext, path?: string) {
+  return path ? joinPaths(event.basePath, 'sgf', event.prefix, path) : undefined;
 }
 
 export function joinPaths(...paths: (string | undefined)[]) {

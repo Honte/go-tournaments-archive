@@ -23,7 +23,7 @@ export function YearsNavigation({ event, locale, years, current }: YearsNavigati
             {years.map((year) => (
               <Link
                 key={year}
-                href={tournamentUrl(event.prefix, locale, year)}
+                href={tournamentUrl(event, locale, year)}
                 className={clsx('text-event-primary hover:text-event-hover font-bold underline', {
                   hidden: year >= current,
                 })}
@@ -39,7 +39,7 @@ export function YearsNavigation({ event, locale, years, current }: YearsNavigati
             {years.map((year) => (
               <Link
                 key={year}
-                href={tournamentUrl(event.prefix, locale, year)}
+                href={tournamentUrl(event, locale, year)}
                 className={clsx('text-event-primary hover:text-event-hover font-bold underline', {
                   hidden: year <= current,
                 })}

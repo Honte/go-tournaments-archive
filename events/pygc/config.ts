@@ -1,14 +1,11 @@
-import type { EventConfig } from '@/schema/event';
+import type { EventDefinition } from '@/schema/event';
 
-const EVENT_CONFIG: EventConfig = {
+const EVENT_CONFIG: EventDefinition = {
   id: 'pygc',
-  domain: 'https://mpj.go.art.pl',
   locales: ['pl', 'en'],
   showCountry: false,
   showBestPlace: false,
   hideGamesWithoutSgf: true,
-  generateSvgs: true,
-  generateJpgs: true,
   categories: ['u21', 'u20', 'u18', 'u16', 'u15', 'u12'],
 };
 

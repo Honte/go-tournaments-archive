@@ -1,11 +1,11 @@
-import type { Locale } from '@/i18n/consts';
+import type { Locale, LocalizedString } from '@/i18n/consts';
 import type { SgfRotation } from '@tools/sgf';
 import type { KeysMatching } from '@/libs/types';
 
 export type TournamentDetails = {
   year: number;
-  name?: string | Record<Locale, string>;
-  notes?: string | Record<Locale, string>;
+  name?: LocalizedString;
+  notes?: LocalizedString;
   location?: string;
   country?: string;
   start?: string;
@@ -16,7 +16,7 @@ export type TournamentDetails = {
   categories?: string[];
   categoriesTop?: Record<string, string[][]>;
   displayReversed?: boolean;
-  announcement?: boolean | string | Record<Locale, string>;
+  announcement?: boolean | LocalizedString;
 };
 
 export type Tournament = TournamentDetails & {
@@ -28,7 +28,7 @@ export type Tournament = TournamentDetails & {
 };
 
 export type TournamentWithDescription = Tournament & {
-  description?: string | Record<Locale, string>;
+  description?: LocalizedString;
 };
 
 export type TournamentDateSpan = {
@@ -74,8 +74,8 @@ export type MandatoryBreakers =
 
 // Then modify the BaseStage type to use the enum
 export type BaseStage = {
-  name?: string | Record<Locale, string>;
-  notes?: string | Record<Locale, string>;
+  name?: LocalizedString;
+  notes?: LocalizedString;
   location?: string;
   country?: string;
   date?: TournamentDateSpan[];
