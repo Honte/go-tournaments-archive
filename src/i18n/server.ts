@@ -1,4 +1,5 @@
-import fs from 'node:fs/promises';
+import { existsSync } from 'node:fs';
+import { readFile } from 'node:fs/promises';
 import { merge } from 'lodash-es';
 import type { EventDefinition } from '@/schema/event';
 import type { Locale, Translations } from '@/i18n/consts';
@@ -6,7 +7,13 @@ import type { Locale, Translations } from '@/i18n/consts';
 export async function loadTranslations(event: EventDefinition, locale?: Locale): Promise<Translations> {
   const requestedLocale = locale ?? event.locales[0];
   const baseTranslations = await loadBaseTranslations(locale);
-  const eventTranslations = JSON.parse(await fs.readFile(`./events/${event.id}/i18n/${requestedLocale}.json`, 'utf-8'));
+  const filePath = `./events/${event.id}/i18n/${requestedLocale}.json`;
+
+  if (!existsSync(filePath)) {
+    return baseTranslations;
+  }
+
+  const eventTranslations = JSON.parse(await readFile(`./events/${event.id}/i18n/${requestedLocale}.json`, 'utf-8'));
   const translations = merge({}, baseTranslations, eventTranslations);
 
   translations.locale = requestedLocale;
@@ -16,7 +23,7 @@ export async function loadTranslations(event: EventDefinition, locale?: Locale):
 
 export async function loadBaseTranslations(locale?: Locale): Promise<Translations> {
   const requestedLocale = locale ?? 'en';
-  const baseTranslations = JSON.parse(await fs.readFile(`./src/i18n/${requestedLocale}.json`, 'utf-8'));
+  const baseTranslations = JSON.parse(await readFile(`./src/i18n/${requestedLocale}.json`, 'utf-8'));
 
   baseTranslations.locale = requestedLocale;
 
