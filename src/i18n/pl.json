@@ -33,7 +33,9 @@
     "closeMenu": "Zamknij menu",
     "archiveLabel": "Archiwum %{0}",
     "categories": "Kategorie",
-    "tournaments": "Turnieje"
+    "tournaments": "Turnieje",
+    "otherEvents": "Inne wydarzenia",
+    "allEvents": "Wszystkie wydarzenia"
   },
   "details": {
     "header": "Informacje",

@@ -2,7 +2,7 @@
 
 import { clsx } from 'clsx';
 import Link from 'next/link';
-import { useCallback, useEffect, useState } from 'react';
+import { Fragment, useCallback, useEffect, useState } from 'react';
 import type { EventContext } from '@/schema/event';
 import type { Locale } from '@/i18n/consts';
 import { Hamburger } from '@/components/ui/Hamburger';
@@ -61,11 +61,11 @@ export function SideNavigation({ event, locale, strings }: SideNavigationProps) 
         )}
       >
         <nav className="flex-1 overflow-y-auto p-2">
-          <div className="flex flex-col gap-2 overflow-y-auto">
+          <div className="flex flex-col overflow-y-auto">
             {sitemap?.map((group) => (
-              <div key={group.key}>
+              <Fragment key={group.key}>
                 {group.label && (
-                  <h3 className="text-xs uppercase tracking-wide text-event-dark mt-2 mb-1 first:mt-0 pl-2">
+                  <h3 className="text-xs uppercase tracking-wide text-event-dark mt-2 first:mt-0 mb-1 pl-2">
                     {group.label}
                   </h3>
                 )}
@@ -78,6 +78,7 @@ export function SideNavigation({ event, locale, strings }: SideNavigationProps) 
                     <li key={link.key}>
                       <Link
                         href={link.href}
+                        title={link.tooltip}
                         prefetch={false}
                         onClick={closeMenu}
                         className={clsx(
@@ -94,7 +95,7 @@ export function SideNavigation({ event, locale, strings }: SideNavigationProps) 
                     </li>
                   ))}
                 </ul>
-              </div>
+              </Fragment>
             ))}
           </div>
         </nav>

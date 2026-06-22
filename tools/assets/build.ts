@@ -1,6 +1,7 @@
 import { mkdir, rm } from 'node:fs/promises';
 import path from 'node:path';
-import type { EventContext } from '@/schema/event';
+import type { ArchiveConfiguration } from '@/schema/event';
+import { loadConfiguredEvents } from '@/events';
 import { loadAllTranslations } from '@/i18n/server';
 import { buildDataAssets, type BuildDataRequest } from '@tools/assets/data';
 import type { BuildSgfRequest } from '@tools/assets/sgf';
@@ -11,7 +12,9 @@ import { loadData } from '@/data/load';
 const PUBLIC_SGF_DIR = './public/sgf';
 const PUBLIC_DATA_DIR = './public/data';
 
-export async function buildAssets(events: EventContext[]) {
+export async function buildAssets(configuration: ArchiveConfiguration) {
+  const allEvents = await loadConfiguredEvents(configuration);
+  const events = allEvents.filter((event) => !event.external);
   const sgfTasks: BuildSgfRequest[] = [];
   const dataTasks: BuildDataRequest[] = [];
 
@@ -29,7 +32,13 @@ export async function buildAssets(events: EventContext[]) {
       await mkdir(sgfOutputDir, { recursive: true });
       await mkdir(dataOutputDir, { recursive: true });
 
-      dataTasks.push({ event, data, allTranslations, outputDir: dataOutputDir });
+      dataTasks.push({
+        event,
+        data,
+        allTranslations,
+        outputDir: dataOutputDir,
+        otherEvents: allEvents.filter((other) => other.id !== event.id),
+      });
 
       for (const tournament of data.tournaments) {
         for (const id in tournament.games) {

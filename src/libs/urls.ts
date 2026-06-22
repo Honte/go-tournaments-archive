@@ -1,5 +1,9 @@
 import type { EventContext } from '@/schema/event';
 
+export function multiHomeUrl(locale?: string) {
+  return locale ? `/?locale=${locale}` : '/';
+}
+
 export function homeUrl(event: EventContext, locale: string) {
   if (event.external && event.domain) {
     return `${event.domain}/${locale}`;

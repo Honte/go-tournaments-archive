@@ -33,7 +33,9 @@
     "closeMenu": "Close menu",
     "archiveLabel": "%{0} Archive",
     "categories": "Categories",
-    "tournaments": "Tournaments"
+    "tournaments": "Tournaments",
+    "otherEvents": "Other events",
+    "allEvents": "All events"
   },
   "details": {
     "header": "About",

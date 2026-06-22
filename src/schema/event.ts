@@ -43,17 +43,19 @@ export type EventGroup = {
 export type EventConfiguration = Omit<EventConfig, 'basePath'> & { id: EventDefinition['id'] };
 export type EventConfigurationOverrides = Omit<EventConfig, 'prefix' | 'basePath'>;
 
+export type EventLinkPlace = 'top' | 'middle' | 'bottom';
+
 export type EventLink = {
   website: LocalizedString;
   title: LocalizedString;
   tooltip?: LocalizedString;
-  place?: 'top' | 'middle' | 'bottom';
+  place?: EventLinkPlace;
 };
 
 export type EventLinkGroup = {
   title: LocalizedString;
   links: Omit<EventLink, 'place'>[];
-  place?: 'top' | 'middle' | 'bottom';
+  place?: EventLinkPlace;
 };
 
 export type EventData = {

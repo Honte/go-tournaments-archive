@@ -1,13 +1,16 @@
 import type { TournamentItem } from '@/schema/data';
-import type { EventContext } from '@/schema/event';
-import type { Translations } from '@/i18n/consts';
+import type { EventContext, EventLinkPlace } from '@/schema/event';
+import type { Locale, Translations } from '@/i18n/consts';
+import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
+import { getString } from '@/i18n/utils';
 import {
   allCountryStatsUrl,
   allGameStatsUrl,
   allPlayersStatsUrl,
   categoryUrl,
   homeUrl,
+  multiHomeUrl,
   tournamentUrl,
 } from '@/libs/urls';
 
@@ -16,6 +19,7 @@ export type NavigationLink = {
   href: string;
   label: string;
   description?: string;
+  tooltip?: string;
 };
 
 export type NavigationGroup = {
@@ -25,11 +29,21 @@ export type NavigationGroup = {
   indented?: boolean;
 };
 
-export function getSitemap(event: EventContext, tournaments: TournamentItem[], translations: Translations) {
+export async function buildSitemap(
+  event: EventContext,
+  tournaments: TournamentItem[],
+  translations: Translations,
+  otherEvents?: EventContext[]
+) {
   const locale = translations.locale;
   const t = getTranslator(translations);
 
   const groups: NavigationGroup[] = [];
+  const links = collectLinks(event, locale);
+
+  if (links.top.length) {
+    groups.push(...links.top);
+  }
 
   const main: NavigationLink[] = [
     {
@@ -43,6 +57,14 @@ export function getSitemap(event: EventContext, tournaments: TournamentItem[], t
       label: t('site.allTimeStatsLink'),
     },
   ];
+
+  if (otherEvents?.length) {
+    main.unshift({
+      key: 'multi-home',
+      href: multiHomeUrl(locale),
+      label: t('navigation.allEvents'),
+    });
+  }
 
   if (event.showCountry) {
     main.push({
@@ -61,6 +83,10 @@ export function getSitemap(event: EventContext, tournaments: TournamentItem[], t
   }
 
   groups.push({ key: 'main', links: main });
+
+  if (links.middle.length) {
+    groups.push(...links.middle);
+  }
 
   if (event.categories?.length) {
     groups.push({
@@ -96,5 +122,115 @@ export function getSitemap(event: EventContext, tournaments: TournamentItem[], t
     });
   }
 
+  if (links.bottom.length) {
+    groups.push(...links.bottom);
+  }
+
+  if (otherEvents?.length) {
+    groups.push({
+      key: 'other-events',
+      label: t('navigation.otherEvents'),
+      links: await collectOtherEventLinks(otherEvents, locale),
+      indented: true,
+    });
+  }
+
   return groups;
+}
+
+function collectLinks(event: EventContext, locale: Locale) {
+  const result: Record<EventLinkPlace, NavigationGroup[]> = {
+    top: [],
+    middle: [],
+    bottom: [],
+  };
+
+  if (!event.links) {
+    return result;
+  }
+
+  const defaults: Partial<Record<EventLinkPlace, NavigationGroup>> = {};
+  for (const linkEntry of event.links) {
+    if ('links' in linkEntry) {
+      const target = result[linkEntry.place ?? 'bottom'];
+      const groupLabel = getString(linkEntry.title, locale);
+
+      if (!groupLabel) {
+        continue;
+      }
+
+      const links: NavigationLink[] = [];
+      for (const linkChild of linkEntry.links) {
+        const href = getString(linkChild.website, locale);
+        const label = getString(linkChild.title, locale, href);
+
+        if (!href || !label) {
+          continue;
+        }
+
+        links.push({
+          key: href,
+          href,
+          label,
+          tooltip: getString(linkChild.tooltip, locale),
+        });
+      }
+
+      if (!links.length) {
+        continue;
+      }
+
+      target.push({
+        key: groupLabel,
+        label: groupLabel,
+        links,
+        indented: true,
+      });
+    } else {
+      const href = getString(linkEntry.website, locale);
+      const label = getString(linkEntry.title, locale, href);
+
+      if (!href || !label) {
+        continue;
+      }
+
+      const place = linkEntry.place ?? 'bottom';
+      let target = defaults[place];
+
+      if (!target) {
+        target = {
+          key: place,
+          links: [],
+          indented: false,
+        };
+        result[place].push(target);
+        defaults[place] = target;
+      }
+
+      target.links.push({
+        key: href,
+        href,
+        label,
+        tooltip: getString(linkEntry.tooltip, locale),
+      });
+    }
+  }
+
+  return result;
+}
+
+async function collectOtherEventLinks(events: EventContext[], locale: Locale) {
+  return Promise.all(
+    events.map(async (event) => {
+      const translations = await loadTranslations(event, locale);
+      const t = getTranslator(translations);
+
+      return {
+        key: `event-${event.id}`,
+        href: homeUrl(event, locale),
+        label: t('site.acronym'),
+        description: t('site.name'),
+      };
+    })
+  );
 }

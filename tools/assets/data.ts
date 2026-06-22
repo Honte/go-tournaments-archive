@@ -4,20 +4,27 @@ import type { Tournament } from '@/schema/data';
 import type { EventContext, EventData } from '@/schema/event';
 import type { Locale, Translations } from '@/i18n/consts';
 import { loadTournamentDescription } from '@/data/description';
-import { getSitemap } from '@/data/sitemap';
+import { buildSitemap } from '@/data/sitemap';
 
 export type BuildDataRequest = {
   event: EventContext;
   data: EventData;
   allTranslations: Record<Locale, Translations>;
   outputDir: string;
+  otherEvents?: EventContext[];
 };
 
 export async function buildDataAssets(tasks: BuildDataRequest[]): Promise<void> {
   await Promise.all(tasks.map(buildEventDataAssets));
 }
 
-async function buildEventDataAssets({ event, data, allTranslations, outputDir }: BuildDataRequest): Promise<void> {
+async function buildEventDataAssets({
+  event,
+  data,
+  allTranslations,
+  outputDir,
+  otherEvents,
+}: BuildDataRequest): Promise<void> {
   const { tournaments, stats, summary } = data;
 
   await rm(outputDir, { recursive: true, force: true });
@@ -31,11 +38,11 @@ async function buildEventDataAssets({ event, data, allTranslations, outputDir }:
     ...event.locales.map((locale) =>
       writeJson(outputDir, path.join('i18n', `${locale}.json`), allTranslations[locale])
     ),
-    ...event.locales.map((locale) =>
+    ...event.locales.map(async (locale) =>
       writeJson(
         outputDir,
         path.join('sitemap', `${locale}.json`),
-        getSitemap(event, tournaments, allTranslations[locale])
+        await buildSitemap(event, tournaments, allTranslations[locale], otherEvents)
       )
     ),
     ...Object.values(stats.players)
