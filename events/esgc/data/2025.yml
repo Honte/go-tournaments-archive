@@ -1,4 +1,6 @@
-website: https://durhamgo.club/esgc2025/
+website:
+  - https://durhamgo.club/esgc2025/
+  - https://www.britgo.org/news/2025/esgc
 name: 19th European Student Go Championship
 stages:
   - type: tournament
@@ -12,4 +14,12 @@ stages:
       - mms
       - sos
       - sosos
+    columns:
+      - wins       
     findSharedPlaces: false
+    games:
+      - 1-2 1:B+11.5 round:1 sgf:2025/1-OndrejKralik-FredericSchlattner.sgf ogs:https://online-go.com/review/1553558
+      - 3-1 1:W+R round:4 sgf:2025/4-MihailoJacimovic-OndrejKralik.sgf ogs:https://online-go.com/review/1554079
+      - 3-4 4:W+R round:2 sgf:2025/2-MihailoJacimovic-AdrianaPodperova.sgf ogs:https://online-go.com/review/1553595
+      - 4-1 1:W+12.5 round:3 sgf:2025/3-AdrianaPodperova-OndrejKralik.sgf ogs:https://online-go.com/review/1553674
+      - 6-1 1:W+R round:5 sgf:2025/5-PavolAlmasi-OndrejKralik.sgf ogs:https://online-go.com/review/1554094

@@ -5,11 +5,13 @@ stages:
     file: esgc2024.txt
     scoringColumns:
       - mms
+      - wins
       - sos
       - sosos
-      - null
     breakers:
       - mms
       - sos
       - sosos
-    findSharedPlaces: false
+    columns:
+      - wins       
+    findSharedPlaces: true

@@ -1,0 +1,574 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]OT[1x30 byo-yomi]C[Cookiex [-\]\: which board is this one? the guy with the glasses or the guy in the blue shirt?
+]
+AP[CGoban:3]SZ[19]GM[1]GN[European Student Go Championships 2009]EV[European Student Go Championships 2009]
+RO[4]DT[2009-09-26]PC[PL, Warsaw]PB[Balogh Pal]BR[6d]PW[Tarumi Jun]WR[5d]KM[6.5]
+TM[3600]RE[W+Time]MULTIGOGM[1]
+;B[dp]C[grafzahl [8k?\]\: blue shirt ;)
+Cookiex [-\]\: hehe ok \:p
+schwing [1k\]\: left guy is Jun
+]
+;W[pd];B[dd];W[pq];B[po]C[schwing [1k\]\: of course he is, he has w \:D
+grafzahl [8k?\]\: ^^
+Cookiex [-\]\: do any of them play on kgs?
+playgo [1k\]\: where is this tournament being played ?
+Cookiex [-\]\: poland
+grafzahl [8k?\]\: a lil bit logic and observation cant be bad ;)
+schwing [1k\]\: jun is Pinguschaf
+Korken [2d\]\: check out the opening of the other board \:-)
+]
+;W[oo]C[schwing [1k\]\: if we can trust senseis.xmp, Pal Balogh is macisajt
+Cookiex [-\]\: oh cool, i thought macisajt would be an arabian dude for some reason \:p
+nidza92 [-\]\: macisajt is kind of cheese in hungarian
+schwing [1k\]\: sajtburger is cheeseburger in Hugary, no?
+liso [4d\]\: yes
+liso [4d\]\: but burger is not a hungarian word
+liso [4d\]\: sajt is cheese
+IGoofy [1d\]\: is a hungry word
+]
+;B[on]C[grafzahl [8k?\]\: xD
+grafzahl [8k?\]\: bad jokes \:P
+];W[op];B[nn];W[pn]
+;B[pm];W[qn];B[qm];W[ro];B[rm]C[gomicha [2d\]\: Jun promised a very good game.
+Sleeptryn [4d\]\: black giving a lot of terriroty
+Sleeptryn [4d\]\: does he really want influence that much?
+gomicha [2d\]\: Pal was not really amused by his poor game against Manja, which he finally won in the endgame
+gomicha [2d\]\: Dunno about Pal, I do know that Jun gratefully takes territory ;)
+grafzahl [8k?\]\: hmm  is that next to jun a beamer for that game?   eurogo?
+gomicha [2d\]\: there is a projector (German\: beamer), but it's switched off
+]
+;W[mp]C[grafzahl [8k?\]\: ok 
+Ecto [4k\]\: How can black be happy with this? He gets a small wall facing a white corner for so much territory
+Sleeptryn [4d\]\: this variayion should only be played when infleunce is very important...
+Sleeptryn [4d\]\: which I can't say it is....
+llII [1d\]\: this move is quite slow, isn´t it?
+Gresil [7k\]\: as long as he gets the wall in sente and gets to extend from it, it's okay, i think
+Sleeptryn [4d\]\: with Q-16 looming there
+Sleeptryn [4d\]\: white wprobably better off playing R_13 than N-4
+pebarefoot [-\]\: I don't see javaness watching Pal . is Ian at the tourny ?
+Cookiex [-\]\: lets pretend its whites turn, how would black respond if white peeped at p8?
+playgo [1k\]\: white would not peep...
+Cookiex [-\]\: lets pretend
+playgo [1k\]\: why ?
+Cookiex [-\]\: because i wouldn't know how to respond to it
+Cookiex [-\]\: and i'm curious
+Cookiex [-\]\: i think black should fix something about this shape now... so thats why i'm wondering
+Cookiex [-\]\: white won't cut straight away, because the ladder works for black, but if black omits another move... the peep would get quite annoying later on in the game
+CBlue [1k?\]\: go, parubaru
+Cookiex [-\]\: so i'm wondering if black tenuki, how would he respond to the peep at p8 later in the game?
+TeeSushi [3d\]\: just take an extension at the top should be enough
+kentia [7k\]\: r14, i would play
+Cookiex [-\]\: r14 seems too far
+TeeSushi [3d\]\: yes r14 seems ok
+Cookiex [-\]\: i wouldn't want to get pincered at q11 there
+TeeSushi [3d\]\: i dont think  a pincer there is good for white
+kentia [7k\]\: pincher is not a problem with that wall?
+Gresil [7k\]\: beware of the pinscher 
+]
+;B[qf];W[nd]C[Cookiex [-\]\: he didn't pinch \:(
+TeeSushi [3d\]\: o16 is kinda unexpected
+Cookiex [-\]\: q11 seems like a propper pinch to me
+TeeSushi [3d\]\: no black is to strong there to play q11
+miao [5d\]\: yes
+miao [5d\]\: p13 or sth
+playgo [1k\]\: m17 possible
+Cookiex [-\]\: sth?
+TeeSushi [3d\]\: r14 q11 p14 o16 o11 
+martin3141 [2k\]\: I expected w to play q14, q13, r15
+miao [5d\]\: something
+Cookiex [-\]\: touching on top doesn't seem like a good shape for white, and it allows black to gain thickness
+Cookiex [-\]\: i'd dismiss that move in a heartbeat
+dfbdfb\: i have a question for senior KGS members - why can't i rewing moves here? why do i have to clone separately?
+Cookiex [-\]\: this is a DEMO game
+playgo [1k\]\: there is a view of line button
+dfbdfb\: seems like a really bad UI decision
+kentia [7k\]\: it is
+Cookiex [-\]\: it isn't
+Cookiex [-\]\: a demo game is meant to demonstrate
+Cookiex [-\]\: so if people could go back moves
+Cookiex [-\]\: and look at variations
+kentia [7k\]\: this interface is plain bad
+Cookiex [-\]\: theres no point
+dfbdfb\: so i cannot rewind if i want to demonstrate? uh
+Cookiex [-\]\: you aren't the one demonstrating
+playgo [1k\]\: sure you can
+dfbdfb\: how?
+Cookiex [-\]\: clone it
+playgo [1k\]\: just use the off line button
+dfbdfb\: look above, doh
+playgo [1k\]\: under options
+dfbdfb\: i said without this cloning circus...
+Cookiex [-\]\: this game isn't your demonstration, so its only natural that you can't control the moves
+playgo [1k\]\: yup, that`s nt a clone
+dfbdfb\: cookie, i cdon
+dfbdfb\: i don't want to control, just rewind moves
+Gresil [7k\]\: this guest is just trolling, don't feed him.
+dfbdfb\: yeah sure, the standard KGS reply
+dogtagnan [4d\]\: he has a point
+dfbdfb\: sigh
+Cookiex [-\]\: that would just defeat the whole purpose of demonstrating
+dfbdfb\: oh, how so?
+Gresil [7k\]\: he says "without this cloning circus". he is trolling.
+Cookiex [-\]\: if you could rewind moves in a demo game, how would people be able to demonstrate stuff? not everyone would see the same thing
+kentia [7k\]\: so what
+Cookiex [-\]\: that would defeat the whole point of demonstrating
+dfbdfb\: you demonstrate at the latest move which is broadcast, obviously
+l9xl9 [?\]\: imo this isn't really a demo, it's a replay
+gorga [1k\]\: you would ofc be able to forward also cookiex...
+dogtagnan [4d\]\: its a broadcast
+dfbdfb\: where people are in their clients is their business
+Cookiex [-\]\: but thats not the point of a demonstration...
+dfbdfb\: ok
+Cookiex [-\]\: imagine someone is demonstrating something and everyone was just doing something else
+Cookiex [-\]\: that would defeat the whole point of a demonstration
+dogtagnan [4d\]\: what about all the people not in this game _
+playgo [1k\]\: correct, so you can do whatever you want in your own client
+Cookiex [-\]\: thats why you can't control the moves
+dfbdfb\: such is being in a cloned game, cookie?
+dogtagnan [4d\]\: they are also doing something else \:)
+kentia [7k\]\: in every chess interface i have seen you can always move back and forward during a transmitted game
+Cookiex [-\]\: in a cloned game, you are just taking control of your own demonstration
+]
+;B[of]C[Cookiex [-\]\: this isn't a game, this is a relay
+Cookiex [-\]\: a demonstration of a game played somewhere else
+dfbdfb\: i don't think this dumb interface is defendable, but i rest the case
+Cookiex [-\]\: if you want to go back moves, view offline or clone the game
+Gresil [7k\]\: this is also not the place to post feedback regarding KGS features, so can it.
+playgo [1k\]\: write a better one please
+Cookiex [-\]\: and stop complaining
+IGoofy [1d\]\: cloning is free and easy
+gorga [1k\]\: the ones interested in following the demo live will just not hit forward cookiez
+gorga [1k\]\: *backward
+Cookiex [-\]\: yes gorga
+]
+;W[mf]C[gorga [1k\]\: why not let ppl choose?
+Cookiex [-\]\: because it defeats the purpose
+Cookiex [-\]\: demonstration...
+kentia [7k\]\: oh please
+dfbdfb\: cookie is on a mission \:)
+gorga [1k\]\: ppl can still enjoy the demonstration if they want
+Cookiex [-\]\: i can't help that you people are too dumb to understand the meaning of demonstration
+Cookiex [-\]\: if you allow people to choose, it would not be a demonstration anymore
+dogtagnan [4d\]\: the meaning of demonstration is that everyone has to watch it ? \:)
+Pempu [3d\]\: you must think black&white
+kentia [7k\]\: it's just a relay..
+Cookiex [-\]\: because people would just go about their business while the one in control is trying to explain stuff
+BenSenTen [?\]\: you people???
+BenSenTen [?\]\: u r a real cookie
+dogtagnan [4d\]\: then why is it not broadcast on all tv channels also ?
+Pempu [3d\]\: it's well known that kgs is a bit backwards. 
+gorga [1k\]\: sure it would still be a demonstration, and most people would follow it live if it was interesting
+dogtagnan [4d\]\: it shouldnt be possible to watch a soap while someone is demonstrating stuff in a kgs game 
+Cookiex [-\]\: but if you're looking at a sequence, and someone is explaining something else... how does that not defeat the purpose of a demonstration? \:s
+dogtagnan [4d\]\: that would completely defeat the purpose
+playgo [1k\]\: n14 seems to try to make black defend his right side
+dogtagnan [4d\]\: but u can still do it cookie, just it is less convenient now... \:)
+gorga [1k\]\: letting people leave the demonstration if they want doesn't remove the demonstration for the others
+Cookiex [-\]\: ofcourse you can do it, but it defeats the purpose of a demonstration... which is what this is
+playgo [1k\]\: which would give white the time to play a kakari in the upper left
+Pempu [3d\]\: you are stuck on the definition of demonstration here 
+Cookiex [-\]\: so its completely justified that you can't go back moves, if you want to go back you should make your own demonstration...
+kentia [7k\]\: just look at what hemmy said about the kgs inteface on the gosensations.com interview..
+dogtagnan [4d\]\: ok i think u shd stop now for ur own sake
+playgo [1k\]\: but black can also decide to play tenuki of course
+dogtagnan [4d\]\: and for the sake of those who want to follow the demonstration \:)
+csaba [7d\]\: at playgo\: n14 is a key point, i think if black gets the chance to play there one would feel like taking black
+broiler [6d?\]\: how much time do they have now?
+Pempu [3d\]\: I feel that black wont defend the right side 
+csaba [7d\]\: at Pempu\: i think he plays d10...
+Hellhuman [4k\]\: EuroGoTV, time?
+Pempu [3d\]\: He likes sanrensei?-)
+csaba [7d\]\: or f17
+Furash [4k\]\: wasnt s7 too slow?
+Pempu [3d\]\: S7 was almost vital 
+csaba [7d\]\: at Furash\: there might be a point in that
+Furash [4k\]\: s6 keeps sente, s7 is not
+kozis [10k?\]\: R4 ????
+csaba [7d\]\: usually u take sente with s6
+Pempu [3d\]\: without S7 the whole sequence in that corner would feel pretty useless. 
+madcow [1d\]\: this  game is too slow
+csaba [7d\]\: the exchange for n4 may be a bit better for w
+Pempu [3d\]\: ah S6 fixes stuff 
+csaba [7d\]\: the meaning of s7 is
+csaba [7d\]\: that now w can not cut at p7
+playgo [1k\]\: p7 o8 p8 p9 q8 q9 etc
+csaba [7d\]\: (captured in loose ladder
+Pempu [3d\]\: csaba thanks for these comments. I'm sure many people will appreciate these. Keep em coming =)
+csaba [7d\]\: )
+Furash [4k\]\: what if white played n4 to r14 area?
+kozis [10k?\]\: B r4 W s4 or r3
+Chilltime [2k\]\: time of the players?
+nidza92 [-\]\: i dont think n14 is good. l16 would be better imo
+csaba [7d\]\: Pal likes to play moves like s7, i know it pretty well \:-)
+dfbdfb\: why is that?
+csaba [7d\]\: hmm.
+Chilltime [2k\]\: like solid territory?
+csaba [7d\]\: at nindza
+csaba [7d\]\: may be also an option
+nidza92 [-\]\: no
+gomicha [2d\]\: Time\: Jun's used 10 minutes, Pal 31 minutes
+eurogotv [-\]\: live TV broadcast of this game on http\://eurogotv.com/index.php?menu=Live&channel=EuroGoTV-Poland
+nidza92 [-\]\: reason is if b now defends n14 will be better placed at l16
+dfbdfb\: typical \:)
+csaba [7d\]\: yes, but at l16 black does not defend the side, because w invasion is not so severe
+broiler [6d?\]\: thank you, Micha
+csaba [7d\]\: but still, l16 is a good move too, i think
+nidza92 [-\]\: true but still some invasion possible, i just dont like moves like n14
+nidza92 [-\]\: matter of style
+madcow [1d\]\: i like N14
+broiler [6d?\]\: i'd play n14, too, so it must be bad
+Pempu [3d\]\: me too 
+csaba [7d\]\: nindza is right, this point it is all about style
+csaba [7d\]\: i think
+kentia [7k\]\: k17 or something
+Cookiex [-\]\: did black fall asleep?
+Epom [8k\]\: yes
+Epom [8k\]\: he is not on the board
+gomicha [2d\]\: what do you mean?
+Epom [8k\]\: he is going to the toilet or something
+gomicha [2d\]\: no, check Eurogotv
+Epom [8k\]\: ohh
+Epom [8k\]\: ok
+Epom [8k\]\: ^^
+gomicha [2d\]\: sun shining at his face, maybe he gets sleepy
+gomicha [2d\]\: ;)
+grafzahl [8k?\]\: hmm maybe forgotten thats his turn?
+joachim [?\]\: its not uncommon for Pa to think long and playing the rest of the game in 10 min \:-)
+eurogotv [-\]\: live TV broadcast of this game on http\://eurogotv.com/index.php?menu=Live&channel=EuroGoTV-Poland
+csaba [7d\]\: at kentia\: k17 is also a nice move, but i would be more modest to play only as far as j17
+kentia [7k\]\: ok
+patcher [1k\]\: how long has b been thinking on this move
+patcher [1k\]\: ?
+meuns [1k\]\: i really prefer w here \:)
+csaba [7d\]\: to keep a good extension to m17
+nidza92 [-\]\: o12 is my guess
+Orandajinn [2k\]\: he made his move
+meuns [1k\]\: what is jun's kgs nickname ?
+gomicha [2d\]\: pinguschaf
+meuns [1k\]\: thx
+nidza92 [-\]\: seems to me q13 and then q11 might be severe
+dfbdfb\: at the points of being called names again -- how do i copy text from this chat window? standard cmd + c doesn't seem to work, right click does nothing
+dfbdfb\: thx in advance
+csaba [7d\]\: j17 is a nice move indeed
+dfbdfb\: is there a java trick to it?
+meuns [1k\]\: is g17 a better shape ?
+csaba [7d\]\: like that w has a good extension at j17
+csaba [7d\]\: so n14 will work well
+meuns [1k\]\: ok
+csaba [7d\]\: o12 is also a nice move, but i like speedy game more...
+claudel [1d\]\: so B plays F17
+meuns [1k\]\: but with j17 f17 e17 f16 d14 f14 m17, b is really surrounded and w will get a lot of influence on the outside \:'(
+grafzahl [8k?\]\: dfbdbfb hmm macs are to stupid for that \:P
+dfbdfb\: i see \:(
+dfbdfb\: no eurogotv for me then
+csaba [7d\]\: on f17 you just play m17 i think
+grafzahl [8k?\]\: hmm copy paste by hand ?\:P 
+dfbdfb\: no thanks \:)
+grafzahl [8k?\]\: pen and paper ? \:P
+dfbdfb\: screenshot + ocr ;)
+meuns [1k\]\: and give a double pincer ?
+csaba [7d\]\: yes
+gomicha [2d\]\: Unix\: mark and then shift+insert
+madcow [1d\]\: oh, they are so slow
+csaba [7d\]\: kosumi out at e15...
+gomicha [2d\]\: or middle mouse button
+madcow [1d\]\: we have already analyzed and decided that W wins
+dfbdfb\: gomi, there is no insert not middle mouse \:)
+meuns [1k\]\: ok
+gomicha [2d\]\: ok, get a keyboard first, then type....
+noxcuse\: what are the remaining times?
+csaba [7d\]\: me2
+csaba [7d\]\: sorry \:-)
+meuns [1k\]\: haha
+gomicha [2d\]\: Jun\: 50 minutes left, Pal\: 10 minutes left
+dfbdfb\: wow
+grafzahl [8k?\]\: ui
+dfbdfb\: boresuji
+Sleeptryn [4d\]\: huh
+Sleeptryn [4d\]\: black still hasdn't moved
+Sleeptryn [4d\]\: ?
+wojtek85 [1d\]\: Pal wainting for byo?
+dfbdfb\: lulling his opponent into sleep
+pebarefoot [-\]\: e's stunned
+Orandajinn [2k\]\: how much byo yomi time do they have
+csaba [7d\]\: he is actually thinking this cases
+gomicha [2d\]\: 30 seconds one time
+]
+;B[ic]C[gomicha [2d\]\: a move!
+csaba [7d\]\: even if it does noit seem so
+csaba [7d\]\: you see \:-)
+kentia [7k\]\: good call
+csaba [7d\]\: kentia was very close
+Ecto [4k\]\: Lower left big?
+Sleeptryn [4d\]\: nice move
+gomicha [2d\]\: both left
+Sleeptryn [4d\]\: but worth 30 min?
+csaba [7d\]\: yes. a good move worth anything \:-)
+deft [3d\]\: if B had moved one space more to the right the N15 ladder would be OK
+claudel [1d\]\: maybe he's a slow thinker ;)
+csaba [7d\]\: actually he is much faster then me
+eurogotv [-\]\: live TV broadcast of this game on http\://eurogotv.com/index.php?menu=Live&channel=EuroGoTV-Poland
+noxcuse\: 50 min for 10 moves ^^
+deft [3d\]\: parubaru played a whole game in the world amateur championship using less than 2 min on his clock...
+csaba [7d\]\: but this point you need to be totally focused
+meuns [1k\]\: lol
+meuns [1k\]\: 2min...
+csaba [7d\]\: this is deciding game of the tournament i guess
+meuns [1k\]\: mega blitz ?
+meuns [1k\]\: how many move ?
+meuns [1k\]\: \:p
+deft [3d\]\: 1h30 thinking time, but he didn't need more than 2 min
+gomicha [2d\]\: jun is just having some water
+gomicha [2d\]\: he expected Pal to wait until byoyomi ;)
+gomicha [2d\]\: so j17 came surprisungly early
+gomicha [2d\]\: for him
+csaba [7d\]\: \:-)
+deft [3d\]\: he was doing all his thinking in his opponents time, so the 2 minutes were just for moving his hand between the bowl, the clock and the board
+csaba [7d\]\: Pal plays when he feels he is focused.
+Cannon [1k\]\: WHAT IS THIS?
+Koffein [-\]\: this is "go"
+csaba [7d\]\: psichology \:-)
+Cannon [1k\]\: haha
+gomicha [2d\]\: special service from pal
+Cannon [1k\]\: no really, what is student go?
+meuns [1k\]\: expensive in time... \:)
+]
+;W[qe]C[csaba [7d\]\: but there is one importanint thing\:
+csaba [7d\]\: he does not do this to disturb the opponent
+csaba [7d\]\: he is doing it for himself...
+]
+;B[rf]C[Orandajinn [2k\]\: ..
+meuns [1k\]\: there is a huge yose around r5, white corner is small \:s
+Orandajinn [2k\]\: pal balogh... is cool
+Orandajinn [2k\]\: \:D
+gomicha [2d\]\: no talking about yose?
+Reuven [-\]\: yose? i only see move 23 o_O
+meuns [1k\]\: not yose after 50min ? \:D
+csaba [7d\]\: \:-)
+meuns [1k\]\: 0\:-)
+gomicha [2d\]\: Jun is very self-confident, very determined
+EuroGoTV1 [-\]\: white 44, black 8 mins left
+eurogotv [-\]\: live TV broadcast of this game on http\://eurogotv.com/index.php?menu=Live&channel=EuroGoTV-Poland
+cjr [-\]\: what is the byo-yomi?
+Cannon [1k\]\: what is this tournament?
+meuns [1k\]\: canadian ?
+gomicha [2d\]\: 30 seconds, one time
+gomicha [2d\]\: European Student Go Championship
+meuns [1k\]\: really ? \:s
+]
+;W[pg]C[meuns [1k\]\: 1*30s is hard
+csaba [7d\]\: very strong tournament indeed
+meuns [1k\]\: where is dai junfu ? \:)
+gomicha [2d\]\: in holland?
+Cannon [1k\]\: why student go?
+]
+;B[pf]C[noxcuse\: how can play a game in real life in 2min if one can barely do it online?
+meuns [1k\]\: he was a student in France \:)
+Cannon [1k\]\: is this only for university students?
+gomicha [2d\]\: but moved to Holland, did he not?
+]
+;W[pi]C[meuns [1k\]\: good question
+nidza92 [-\]\: next year its any1 16 yo+
+nidza92 [-\]\: up to 27
+nidza92 [-\]\: so i am going too
+Ecto [4k\]\: Is this invasion too early?
+gomicha [2d\]\: looks quite severe, does it not?
+meuns [1k\]\: s14 seems heavy now \:)
+deft [3d\]\: somehow it looks a little unreasonable
+csaba [7d\]\: at Ecto\: no, this is only way to play for w
+VincentV [2d?\]\: anyone got the official tournament page so I can blog about it?
+Ecto [4k\]\: okay, thanks \:)
+csaba [7d\]\: w has to attack
+gomicha [2d\]\: Results at\:
+gomicha [2d\]\: http\://go.art.pl/n/2009/09/akademickie-mistrzostwa-europy-2009-0
+EuroGoTV1 [-\]\: its polish, english\: http\://esgc2009.go.art.pl/
+VincentV [2d?\]\: thx
+cjr [-\]\: is there an age limit for the students too?
+gomicha [2d\]\: no results on the english page though ;)
+EuroGoTV1 [-\]\: Opened to all european full time students (age range 18 - 29 on August 1st), registered by 1st Sept 2009 (to register you are supposed to use form on this page) 
+deft [3d\]\: n15 o15 o14 m15 n13 m14 o12 is very simple, but seems to give W some problems
+just9x9 [-\]\: both are 3\:0?
+gomicha [2d\]\: yep
+just9x9 [-\]\: thx
+csaba [7d\]\: at deft\: this cut seems to be an overplay, i think...
+noxcuse\: so assuming u can move in 2 seconds it means within 2minutes you can make 60 moves, so you have to win at move 120
+nidza92 [-\]\: if u hold ur hand on the clock u can do it in 1sec
+Cannon [1k\]\: this is so weak
+Malingo [4d\]\: you must only use one hand in go
+Cannon [1k\]\: in korea, china and japan
+just9x9 [-\]\: in chess as well
+Cannon [1k\]\: at this age they would have been around 4p
+noxcuse\: i thought u have to press the clock with the same hand that you use to place the stone
+just9x9 [-\]\: yes thats correect
+martin3141 [2k\]\: looks very difficult to find a good response now
+Cannon [1k\]\: I mean
+Cannon [1k\]\: at 30 you should be at least 6p in asia
+Cannon [1k\]\: they are lacking so much
+csaba [7d\]\: at martin\: yes, w is severe now
+cjr [-\]\: O12 a natural choice
+EuroGoTV1 [-\]\: black entered byo-yomi
+cjr [-\]\: black has lots of liberties \:)
+]
+;B[me]C[meuns [1k\]\: hehe
+csaba [7d\]\: wow \:-)
+wojtek85 [1d\]\: oops
+csaba [7d\]\: me wrong?
+deft [3d\]\: O12 gives W too many options
+deft [3d\]\: this is what I would have played
+Cannon [1k\]\: the european standards are so low
+Cannon [1k\]\: in asia
+deft [3d\]\: (so it's probably weak ;-)
+nidza92 [-\]\: bravo for asia
+Cannon [1k\]\: at this age they would have been professionals already and have 2 kids
+cjr [-\]\: yes, and you say O12 is weak, so it's probably strong \:)
+EuroGoTV1 [-\]\: W+Time
+Cannon [1k\]\: and 4 wives
+meuns [1k\]\: cannon sucks really with this troll...
+cjr [-\]\: are you serious?
+just9x9 [-\]\: really eurogotv? DONT JOKE
+grafzahl [8k?\]\: yeah
+just9x9 [-\]\: sry for caps
+noxcuse\: lol
+EuroGoTV1 [-\]\: yes
+Orandajinn [2k\]\: are you serious...?
+grafzahl [8k?\]\: W just slap Pal for playing out of time \:D 
+pebarefoot [-\]\: crazy
+Cookiex [-\]\: did w just won? \:|
+Cookiex [-\]\: or is it just a silly joke?
+qsorix [9k\]\: how can it be W+Time if black has played the last move?
+EuroGoTV1 [-\]\: yes, white won (by time)
+noxcuse\: whyt was whites move?
+Bruno [1d\]\: eurogotv dont make jokes
+Kuros [7k\]\: yeah why is it white's move then
+Kuros [7k\]\: \:p
+grafzahl [8k?\]\: watch stream
+IGoofy [1d\]\: seems like intension
+just9x9 [-\]\: well b moved but to late probably and eurogotv relayed the move
+grafzahl [8k?\]\: to muc htime between move and hitting the clock
+EuroGoTV1 [-\]\: black played, but time end (byo-yomi)
+csaba [7d\]\: what a pitty
+qsorix [9k\]\: ok, thanks
+Bruno [1d\]\: black was ahead
+csaba [7d\]\: should have been an interesting fight
+Bruno [1d\]\: why blitz?
+csaba [7d\]\: i am frustreted \:-(
+Orandajinn [2k\]\: \:(
+just9x9 [-\]\: how much was time? b wasted so much time in fuseki?
+just9x9 [-\]\: only move 27...
+Bruno [1d\]\: go is not a game for turtles
+EuroGoTV1 [-\]\: one hour per player (1x30s byo-yomi)
+noxcuse\: to lose in under 30 moves is like %$§%§§$%
+just9x9 [-\]\: wowo, didnt he realise that byoyomi started?
+Bruno [1d\]\: he was eating breakfast?
+noxcuse\: didn t they use the clocks that say annoying the last seconds?
+dfbdfb\: lol mac is one of the most used OS in asia -- "get a keyboard" doesn't cut it \:)
+dfbdfb\: is KGS is to become more popular for asian players
+EuroGoTV1 [-\]\: notice, but, last move played about 28-29 sec byo-yomi, but dont press clock corectly
+noxcuse\: is he crying at least?
+EuroGoTV1 [-\]\: and time finish
+just9x9 [-\]\: dont press clock correctly and lose?
+just9x9 [-\]\: omg
+qsorix [9k\]\: lame
+EuroGoTV1 [-\]\: yes
+grafzahl [8k?\]\: hm dont exist annother room to discuss ?  
+Furin [-\]\:  notice, but, last move played about 28-29 sec byo-yomi, but dont press clock corectly     JOKE!!
+Bruno [1d\]\: he know Go but he dont know how to press a button
+Bruno [1d\]\: sht
+sparkle\: words cannot describe how i feel about this game
+Pacman1 [3k\]\: N 15 ? KO!
+dfbdfb\: lol
+dfbdfb\: let them finish the game now, out of record
+noxcuse\: omfg
+sparkle\: .....makes me moist just thinking about the hard caress of the stones on my fingers
+EuroGoTV1 [-\]\: they analyze now
+dfbdfb\: i see
+EuroGoTV1 [-\]\: you can show it at stream video
+JustPlay\: how did b waste his first hour?
+grafzahl [8k?\]\: yeah but .. next to the 2nd board? 
+EuroGoTV1 [-\]\: *look
+just9x9 [-\]\: poor maci
+falloutti [1k?\]\: what
+falloutti [1k?\]\: i opened this game like 1 hour ago
+sparkle\: how do ytou guys feel?
+falloutti [1k?\]\: and they barely started?
+sparkle\: ive started
+just9x9 [-\]\: they finished falloutti \:)
+dfbdfb\: kgs doesn't allow copying text to clipboard at mac, so i cannot look EuroGo
+sparkle\: ill fall outa you
+falloutti [1k?\]\: wha?
+sparkle\: and then back in
+just9x9 [-\]\: b+time
+falloutti [1k?\]\: .....
+sparkle\: yea u
+just9x9 [-\]\: sry w+time
+JustPlay\: w+time i think
+bulldog [3k\]\: try to use CTRL instead of CMD
+falloutti [1k?\]\: lol \:--D
+EuroGoTV1 [-\]\: W+T
+sparkle\: hubba hubba'
+falloutti [1k?\]\: i'd laugh if I won a game like this
+sparkle\: \:P
+Sleeptryn [4d\]\: rh
+just9x9 [-\]\: maci didnt press the clock correctly when entering his first byoyomi period
+sparkle\: ur winning me with that talk
+Sleeptryn [4d\]\: eh
+Sleeptryn [4d\]\: game finished?
+sparkle\: u on crack
+grafzahl [8k?\]\: yeah
+Mikki [2k\]\: wha
+Sleeptryn [4d\]\: black lost on time?
+Sleeptryn [4d\]\: ??!!??!
+grafzahl [8k?\]\: yes
+sparkle\: i like crack
+Mikki [2k\]\: -_-
+sparkle\: big hairy ones
+just9x9 [-\]\: ust9x9 [-\]\: maci (black) didnt press the clock correctly when entering his first byoyomi period
+Sleeptryn [4d\]\: \:S
+sparkle\: the more sweat the better
+Sleeptryn [4d\]\: can't see what black spent 30 minutes thinking about now!
+sparkle\: in on la plummers crack right now
+sparkle\: speak to me grafzahl...... i need your thoughts
+dfbdfb\: bulldog\: that works!!
+csaba [7d\]\: at Sleeptryn\: i think he was reading the fight after n15. 
+dfbdfb\: thanks
+sparkle\: im craving them
+csaba [7d\]\: pitty we did not see the result of it...
+dfbdfb\: Euro said they are still analyzing, so perhaps they'll play it out
+sparkle\: y is no1 moving???????
+sparkle\: BBBBBOOOORRRRRIIINNNGGGGG
+gomicha [2d\]\: sparkle, it's over!
+csaba [7d\]\: anyway, thanks for broadcasting, bye
+martin3141 [2k\]\: game finished
+sparkle\: oh \:( that makes me sad
+meuns [1k\]\: finished ?
+meuns [1k\]\: really ?
+meuns [1k\]\: why !
+Cero11 [?\]\: who won?
+gomicha [2d\]\: black ran out of time
+gomicha [2d\]\: white won
+meuns [1k\]\: ?
+sparkle\: yeh \:( cause i thought we were just getting started
+meuns [1k\]\: are you joking ?
+gomicha [2d\]\: no
+katepetl\: not again a problem with the clock???
+gomicha [2d\]\: no
+meuns [1k\]\: can't be possible
+meuns [1k\]\: it's white turn...
+gomicha [2d\]\: no
+gomicha [2d\]\: black n15 came too late
+Rstones [5d\]\: is this over?
+katepetl\: yes, it seems black lost on time in byo yomi
+liso [4d\]\: but why is black's move last?
+katepetl\: because it came too late
+gomicha [2d\]\: it was played too late
+CBlue [1k?\]\: so b pressed the clock while he still had time, but the keypress didnt work?
+Buggy [5k\]\: game is ended ?
+katepetl\: what a pity it ended this way
+liso [4d\]\: i never have seen balogh pal looses on time \:D
+EuroGoTV1 [-\]\: no problem with clock, Pal just dont press button in time
+CBlue [1k?\]\: o_O
+KonGo [5k\]\: so he lost cause of time?
+EuroGoTV1 [-\]\: yes, result W+T
+gomicha [2d\]\: Jun is quite upset
+gomicha [2d\]\: he wanted a longer game...
+grafzahl [8k?\]\: yes
+])

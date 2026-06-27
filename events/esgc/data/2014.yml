@@ -1,14 +1,26 @@
 website:
- - https://www.eurogofed.org/results/student/student2005.htm
- - http://esgc2014.blogspot.fr/
-name: 10th European Student Go Championship 
+  - https://www.eurogofed.org/results/student/student2005.htm
+  - http://esgc2014.blogspot.fr/
+name: 10th European Student Go Championship
 stages:
   - type: tournament
+    notes: first 3 rounds groups round-robin, after this KO for medals
     file: esgc2014.txt
     scoringColumns:
-      - place
       - wins
+      - place
     breakers:
-      - wins
       - place
-    findSharedPlaces: false
+      - wins
+    findSharedPlaces: true
+    games:
+      - 1-4 1:B+R round:4 sgf:2014/4-ViktorLin-DenisKaradaban.sgf
+      - 2-1 1:W+12.5 round:5 sgf:2014/5-MihaiValentinSerban-ViktorLin.sgf
+      - 3-2 2:W+0.5 round:4 sgf:2014/4-JohannesObenaus-MihaiValentinSerban.sgf
+      - 3-5 3:B+37.5 round:3 sgf:2014/3-JohannesObenaus-HaohanLi.sgf
+      - 4-3 3:W+10.5 round:5 sgf:2014/5-DenisKaradaban-JohannesObenaus.sgf
+      - 6-12 6:B+R round:2 sgf:2014/2-MoranGuennou-ThibaudTezenas.sgf
+      - 7-2 2:W+R round:3 sgf:2014/3-ViktorIvanov-MihaiValentinSerban.sgf
+      - 7-11 7:B+R round:1 sgf:2014/1-ViktorIvanov-NicolasShao.sgf
+      - 9-1 1:W+R round:2 sgf:2014/2-LoicLefebvre-ViktorLin.sgf
+      - 9-6 6:W+R round:1 sgf:2014/1-LoicLefebvre-MoranGuennou.sgf
