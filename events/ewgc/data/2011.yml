@@ -13,3 +13,9 @@ stages:
       - sos
       - sosos
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:4 sgf:2011/4-RitaPocsai-LauraAvram.sgf
+      - 1-4 1:B+R round:5 sgf:2011/5-RitaPocsai-CristianaCiora.sgf
+      - 1-5 1:B+R round:1 sgf:2011/1-RitaPocsai-LarisaPopescu.sgf
+      - 3-1 1:W+R round:2 sgf:2011/2-AdelinaSora-RitaPocsai.sgf
+      - 8-1 1:W+R round:3 sgf:2011/3-UlrikeSchmidt-RitaPocsai.sgf

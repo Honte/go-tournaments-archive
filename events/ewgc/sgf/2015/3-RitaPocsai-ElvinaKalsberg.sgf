@@ -1,0 +1,55 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]C[European Womens Go Championship 2015, round 3 Commentary by Pavol Lisy 1p]
+AP[CGoban:3]SZ[19]GM[1]RO[3]DT[2015-07-11]PC[The KGS Go Server at http\://www.gokgs.com/]
+PB[Rita Pocsai]BR[4d]PW[Elvina Kalsberg]WR[3d]KM[6.5]RE[B+R]MULTIGOGM[1]
+;B[dp];W[pd];B[cd];W[pq];B[ec]
+(;W[fq]C[It is unusual to approach from this side against black's shimari];B[cn]
+;W[ip]
+(;B[qn];W[po];B[rp];W[pl];B[pn];W[on]
+(;B[qq];W[pp]C[This is the proper answer White is slightly better like this];B[om]
+;W[pm];B[nn];W[oo];B[rn]TR[om][nn]C[Black is alive in the corner and his stones are light now. Those exchanges were good for black.]
+;W[ok];B[nm];W[mp];B[mk];W[rl]C[This move is not sente. But the hane at R2 (for white in sente) is very big. ]
+;B[pr]C[This move is very big];W[or];B[qr]
+(;W[lo]C[This move is a little bit slow. Keima at M6 would have been better.];B[lm]
+C[This move is easy to find and it is a good shape for black];W[qg]C[Now that black's group in center got stronger this move is reasonable]
+;B[kd]
+(;W[bd];B[ce];W[cm]C[White is making black stronger.];B[dn];W[bn];B[bo];W[dj];B[ch]
+;W[bj];B[ci];W[bl];B[an]C[The shape for white is not very good. Therefore white should start a ko at 2]
+(;W[id];B[jf];W[kc];B[lc];W[jc];B[ld];W[gc]CR[gc][jc][kc][id][bj][dj][bl][cm][bn]
+C[White will have to live with both groups now.];B[bm]LB[am:A]C[White missed the timing of A7]
+;W[ck];B[dl];W[fj];B[ei];W[ej];B[fb];W[gb];B[he];W[lb];B[mb];W[ka];B[hj]C[This is the right way to attack.]
+;W[fi];B[eh];W[em];B[dm]
+(;W[hk];B[gk];W[gj];B[gl];W[hi];B[ij];W[ii];B[gh];W[fh];B[gg];W[el];B[fp]C[It is hard to answer this move.]
+(;W[hl];B[hm]
+(;W[jj]C[This atari is making bad exchanges for white.];B[ik];W[il];B[jk];W[jl]
+;B[kk];W[gm];B[gq]LB[gn:A]C[Black made a good choice not to exchange atari. There's aji later.]
+;W[hq]C[This move is aji-keshi (no aji any more)];B[gr]C[White lived in the center, but black got big profit on the bottom. Black is leading now.]
+;W[pb];B[ph];W[qh];B[pe]
+(;W[mc]C[Take this one stone is not enough for white.];B[od];W[oc];B[qd];W[pc];B[oe]
+;W[nd];B[pg];W[qf];B[qe];W[pi];B[oi];W[pj];B[go];W[gn];B[gi]C[This move was too big. All the aji in the center is removed now. Black is comfortably ahead. 
+
+End of comments.]
+;W[ne];B[ng];W[ni];B[nh];W[mf];B[lg];W[fg];B[ir];W[jr];B[jq];W[kr];B[iq];W[kq];B[gf]
+;W[cg];B[be];W[nj];B[li];W[bg];B[dg];W[df];B[cf];W[eg];B[dh];W[bh];B[bi];W[ai];B[ef]
+;W[fc];B[eb];W[jp];B[hp];W[is];B[hr];W[lj];B[kj];W[mh];B[mg];W[rc];B[rd];W[rf];B[rm]
+;W[sl];B[hn];W[en];B[eo];W[dk];B[os];W[nr];B[fn];W[fm];B[cl];W[al];B[rb];W[qc];B[sc]
+;W[kf];B[lf];W[ke];B[je];W[le];B[kg];W[me];B[jd];W[qb];B[nb];W[nc];B[mi];W[mj];B[lk]
+;W[in];B[nk];W[oj];B[ol];W[oh];B[og];W[qm];B[kn];W[im];B[ho];W[ff];B[ee];W[ki];B[lh]
+;W[sn];B[so];W[sm];B[sq];W[io];B[ko];W[kp];B[no];W[np];B[kl];W[ie];B[if];W[hd];B[fe]
+;W[gd];B[ge]C[ White resigned.
+])
+(;W[od]C[White could play here and try to capture black in the center.]))
+(;W[il]C[Empty triangle is good now. White doesn't make bad exchanges.];B[jj];W[gm]))
+(;W[ji]C[White can play here, as the ladder doesn't work for black. Endanger black's group on top]
+;B[jj];W[kj];B[il];W[gi]
+(;B[kl];W[lh];B[nc];W[gp]C[This would be good for white.])
+(;B[ki]C[A complicated fight, but hard for white.])))
+(;W[gl]C[This is an option];B[gk];W[el]C[White could have also played like this.]))
+(;W[am];B[bm];W[cc];B[dc];W[bn]C[Black does not have a good ko threat and has to connect.]
+;B[ao]C[White's shape is more flexible and black's shape is more heavy.]))
+(;W[ci]C[This is the vital point, white could simply play here]))
+(;W[ln]C[It is not so easy to find a good move for black.]))
+(;B[om];W[pm];B[oo];W[nn];B[pp];W[op];B[qo];W[no];B[oq];W[po];B[pr];W[qp];B[qq]
+;W[pp];B[np];W[oo];B[rr];W[nq];B[or];W[mp]C[This variation is considered locally good for black. Black could have played like this.]))
+(;B[po]TR[ip]C[Black might also play here now, because of the distance of White's stone.]))
+(;W[cn]C[Approach from this side is very common nowadays.];B[fq];W[bp];B[cl];W[cq]
+;B[co];W[bo];B[dn];W[dm];B[cm];W[bn];B[em];W[lp];B[dj];W[jd]C[One of the most popular fusekis nowadays]))

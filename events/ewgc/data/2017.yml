@@ -10,4 +10,12 @@ stages:
     breakers:
       - mms
       - sos
+    columns:
+      - wins       
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+3.5 round:2 sgf:2017/2-ManjaMarz-NataliaKovaleva.sgf
+      - 1-4 1:B+1.5 round:4 sgf:2017/4-ManjaMarz-ElvinaKalsberg.sgf
+      - 3-1 1:W+R round:3 sgf:2017/3-RitaPocsai-ManjaMarz.sgf
+      - 3-6 3:B+16.5 round:5 sgf:2017/5-RitaPocsai-GuzelSharafeeva.sgf
+      - 6-2 2:W+16.5 round:1 sgf:2017/1-GuzelSharafeeva-NataliaKovaleva.sgf

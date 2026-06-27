@@ -9,31 +9,31 @@
 ; CM[ (submitted by Serpov)]
 ;.
 ;Pl         Name           Grade   Club MM0   1       2       3       4       5      MMS   SOS SODOS    
- 1 Burdakova Dina           4d RU  77Mo  2    10+/b   6+/w    4+/b    5+/b    3+/b    7    24   24    |10813187
- 2 Kovaleva Natalia         4d RU  74Ch  2    8+/b    3-/w    10+/b   7+/b    4+/w    6    24   19    |10537087
- 3 Nureeva Ajgul            2d RU  16Kz  2    19+/b   2+/b    5-/b    8+/w    1-/w    5    26   14    |12062347
- 4 Marz Manja               3d DE  J     2    17+/w   7+/w    1-/w    9+/w    2-/b    5    26   13    |13062412
- 5 Kalsberg Elvina          2d RU  78SP  2    18+/w   9+/b    3+/w    1-/w    7-/b    5    25   13    |10750047
- 6 Sharafeeva Guzel         1d RU  16Kz  2    11+/b   1-/b    8-/b    15+/w   12+/w   5    24   12    |12586134
- 7 Bocle Milena             2d FR  92An  2    12+/b   4-/b    17+/b   2-/w    5+/w    5    23   12    |14362018
- 8 Krushinskaja Anna        1k RU  54No  2    2-/w    19+/b   6+/w    3-/b    10+/w   5    23   12    |15298602
- 9 Khlepetina Anastasia     1k RU  66Ek  2    13+/b   5-/w    18+/b   4-/b    11+/b   5    21   11    |15637039
-10 Mazlova Sofia            2k RU  77Mo  2    1-/w    11+/b   2-/w    14+/w   8-/b    4    26   8     |10598082
-11 Koshkina Daria           3k RU  76Ja  2    6-/w    10-/w   13+/b   17+/w   9-/w    4    21   7     |14937934
-12 Martin Rose-Marguerite   5k CH  Kogo  2    7-/w    17-/w   19+/b   18+/b   6-/b    4    19   6     |14774254
-13 Malinic Natasa           5k BA  Banj  2    9-/w    18-/b   11-/w   25+/w   17+/w   4    17   5     |16213384
-14 Markova Maria            5k RU  02Uf  0    24+/b   16+/w   23+/b   10-/b   18+/b   4    15   11    |15650074
-15 Krupnik Anna             4k RU  77Mo  0    23+/w   22+/w   20+/b   6-/b    19+/b   4    15   10    |15274215
-16 Volodchenko Natalia      3k RU  16Kz  0    28+/w   14-/b   24+/w   22+/w   25+/w   4    10   6     |12050346
-17 Putter Annemarie_de      2k NL  Utre  2    4-/b    12+/b   7-/w    11-/b   13-/b   3    22   4     |10613273
-18 Bosnjak Natasa           2k RS  KGra  2    5-/b    13+/w   9-/w    12-/w   14-/w   3    22   4     |10637506
-19 Butyrskikh Anna          3k RU  66Ek  2    3-/w    8-/w    12-/w   20+/w   15-/w   3    21   3     |15025120
-20 Ishimbaeva Olga          7k RU  78SP  0    27+/w   21+/b   15-/w   19-/b   22+/b   3    13   6     |15486493
-21 Popova Marina            4k RU  77Mo  0    25+/w   20-/w   22-/w   23+/b   24+/w   3    11   6     |15713247
-22 Borisova Daria          11k RU  74Ch  0    26+/b   15-/b   21+/b   16-/b   20-/w   2    16   5     |15698782
-23 Negri Ekaterina         10k RU  77Mo  0    15-/b   26+/w   14-/w   21-/w   27+/w   2    14   3     |16798287
-24 Nevolina Maria          10k RU  74Ch  0    14-/w   28+/b   16-/b   26+/w   21-/b   2    13   2     |16050980
-25 Romanova Karina          8k RU  63To  0    21-/b   27+/b   28+/b   13-/b   16-/b   2    12   1     |16874957
-26 Maslova Svetlana         7k RU  50Pd  0    22-/w   23-/b   27+/b   24-/b   28+/b   2    7    1     |14049893
-27 Zernovaja Beata         11k RU  16Kz  0    20-/b   25-/w   26-/w   28+/w   23-/b   1    9    0     |16074894
-28 Stoljar Nadezhda         8k RU  63To  0    16-/b   24-/w   25-/w   27-/b   26-/w   0    11   0     |17225538
+ 1 Burdakova Dina           4d RU  77Mo  2    10+/b   6+/w    4+/b    5+/b    3+/b    7    24   24  5  |10813187
+ 2 Kovaleva Natalia         4d RU  74Ch  2    8+/b    3-/w    10+/b   7+/b    4+/w    6    24   19  4  |10537087
+ 3 Nureeva Ajgul            2d RU  16Kz  2    19+/b   2+/b    5-/b    8+/w    1-/w    5    26   14  3  |12062347
+ 4 Marz Manja               3d DE  J     2    17+/w   7+/w    1-/w    9+/w    2-/b    5    26   13  3  |13062412
+ 5 Kalsberg Elvina          2d RU  78SP  2    18+/w   9+/b    3+/w    1-/w    7-/b    5    25   13  3  |10750047
+ 6 Sharafeeva Guzel         1d RU  16Kz  2    11+/b   1-/b    8-/b    15+/w   12+/w   5    24   12  3  |12586134
+ 7 Bocle Milena             2d FR  92An  2    12+/b   4-/b    17+/b   2-/w    5+/w    5    23   12  3  |14362018
+ 8 Krushinskaja Anna        1k RU  54No  2    2-/w    19+/b   6+/w    3-/b    10+/w   5    23   12  3  |15298602
+ 9 Khlepetina Anastasia     1k RU  66Ek  2    13+/b   5-/w    18+/b   4-/b    11+/b   5    21   11  3  |15637039
+10 Mazlova Sofia            2k RU  77Mo  2    1-/w    11+/b   2-/w    14+/w   8-/b    4    26   8   2  |10598082
+11 Koshkina Daria           3k RU  76Ja  2    6-/w    10-/w   13+/b   17+/w   9-/w    4    21   7   2  |14937934
+12 Martin Rose-Marguerite   5k CH  Kogo  2    7-/w    17-/w   19+/b   18+/b   6-/b    4    19   6   2  |14774254
+13 Malinic Natasa           5k BA  Banj  2    9-/w    18-/b   11-/w   25+/w   17+/w   4    17   5   2  |16213384
+14 Markova Maria            5k RU  02Uf  0    24+/b   16+/w   23+/b   10-/b   18+/b   4    15   11  4  |15650074
+15 Krupnik Anna             4k RU  77Mo  0    23+/w   22+/w   20+/b   6-/b    19+/b   4    15   10  4  |15274215
+16 Volodchenko Natalia      3k RU  16Kz  0    28+/w   14-/b   24+/w   22+/w   25+/w   4    10   6   4  |12050346
+17 Putter Annemarie_de      2k NL  Utre  2    4-/b    12+/b   7-/w    11-/b   13-/b   3    22   4   1  |10613273
+18 Bosnjak Natasa           2k RS  KGra  2    5-/b    13+/w   9-/w    12-/w   14-/w   3    22   4   1  |10637506
+19 Butyrskikh Anna          3k RU  66Ek  2    3-/w    8-/w    12-/w   20+/w   15-/w   3    21   3   1  |15025120
+20 Ishimbaeva Olga          7k RU  78SP  0    27+/w   21+/b   15-/w   19-/b   22+/b   3    13   6   3  |15486493
+21 Popova Marina            4k RU  77Mo  0    25+/w   20-/w   22-/w   23+/b   24+/w   3    11   6   3  |15713247
+22 Borisova Daria          11k RU  74Ch  0    26+/b   15-/b   21+/b   16-/b   20-/w   2    16   5   2  |15698782
+23 Negri Ekaterina         10k RU  77Mo  0    15-/b   26+/w   14-/w   21-/w   27+/w   2    14   3   2  |16798287
+24 Nevolina Maria          10k RU  74Ch  0    14-/w   28+/b   16-/b   26+/w   21-/b   2    13   2   2  |16050980
+25 Romanova Karina          8k RU  63To  0    21-/b   27+/b   28+/b   13-/b   16-/b   2    12   1   2  |16874957
+26 Maslova Svetlana         7k RU  50Pd  0    22-/w   23-/b   27+/b   24-/b   28+/b   2    7    1   2  |14049893
+27 Zernovaja Beata         11k RU  16Kz  0    20-/b   25-/w   26-/w   28+/w   23-/b   1    9    0   1  |16074894
+28 Stoljar Nadezhda         8k RU  63To  0    16-/b   24-/w   25-/w   27-/b   26-/w   0    11   0   0  |17225538

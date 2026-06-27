@@ -1,6 +1,6 @@
 website:
- - https://www.eurogofed.org/results/women/womens2023.htm
- - http://ewgc.gostrasbourg.fr/
+  - https://www.eurogofed.org/results/women/womens2023.htm
+  - http://ewgc.gostrasbourg.fr/
 name: 21st European Women`s Championship
 stages:
   - type: tournament
@@ -9,9 +9,23 @@ stages:
       - mms
       - sos
       - sosos
-      - null
+      - wins
     breakers:
       - mms
       - sos
       - sosos
+    columns:
+      - wins       
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:3 sgf:2023/3-TingLi-ArianeOugier.sgf ogs:https://online-go.com/review/1074029
+      - 1-5 1:B+R round:4 sgf:2023/4-TingLi-ManjaMarz.sgf ogs:https://online-go.com/review/1074397
+      - 1-6 1:B+24.5 round:5 sgf:2023/5-TingLi-RenateReisenegger.sgf ogs:https://online-go.com/review/1074549
+      - 2-4 2:B+13.5 round:5 sgf:2023/5-ArianeOugier-BarbaraKnauf.sgf ogs:https://online-go.com/review/1074547
+      - 3-1 1:W+R round:2 sgf:2023/2-NgocTrangCao-TingLi.sgf ogs:https://online-go.com/review/1073952
+      - 4-7 4:B+R round:4 sgf:2023/4-BarbaraKnauf-MilenaBocle.sgf ogs:https://online-go.com/review/1074438
+      - 4-8 4:B+R round:3 sgf:2023/3-BarbaraKnauf-JitkaBartova.sgf ogs:https://online-go.com/review/1074032
+      - 5-3 3:W+7.5 round:1 sgf:2023/1-ManjaMarz-NgocTrangCao.sgf ogs:https://online-go.com/review/1073852
+      - 8-2 2:W+2.5 round:2 sgf:2023/2-JitkaBartova-ArianeOugier.sgf ogs:https://online-go.com/review/1073954
+      - 8-7 7:W+18.5 round:5 sgf:2023/5-JitkaBartova-MilenaBocle.sgf ogs:https://online-go.com/review/1074589
+      - 9-3 3:W+2.5 round:5 sgf:2023/5-IsabelDonle-NgocTrangCao.sgf ogs:https://online-go.com/review/1074585

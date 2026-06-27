@@ -7,9 +7,11 @@ stages:
       - mms
       - sos
       - sosos
-      - null
+      - wins
     breakers:
       - mms
       - sos
       - sosos
+    columns:
+      - wins       
     findSharedPlaces: true

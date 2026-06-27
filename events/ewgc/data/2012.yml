@@ -13,3 +13,6 @@ stages:
       - sos
       - sosos
     findSharedPlaces: true
+    games:
+      - 1-9 1:B+R round:5 sgf:2012/5-VanessaWong-LauraAvram.sgf
+      - 2-1 1:W+6.5 round:4 sgf:2012/4-RitaPocsai-VanessaWong.sgf

@@ -7,9 +7,17 @@ stages:
       - mms
       - sos
       - sosos
-      - null
+      - wins
     breakers:
       - mms
       - sos
       - sosos
+    columns:
+      - wins       
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:3 sgf:2015/3-RitaPocsai-ElvinaKalsberg.sgf
+      - 1-4 1:B+R round:5 sgf:2015/5-RitaPocsai-LauraAvram.sgf
+      - 4-3 3:W+6.5 round:2 sgf:2015/2-LauraAvram-NataliaKovaleva.sgf
+      - 6-1 1:W+R round:4 sgf:2015/4-ManjaMarz-RitaPocsai.sgf
+      - 6-3 6:B+R round:3 sgf:2015/3-ManjaMarz-NataliaKovaleva.sgf

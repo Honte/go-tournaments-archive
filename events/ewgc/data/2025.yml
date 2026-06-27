@@ -1,6 +1,6 @@
 website:
- - https://www.eurogofed.org/index.html?id=510
- - https://goweb.cz/european-womens-go-championship-2025/
+  - https://www.eurogofed.org/index.html?id=510
+  - https://goweb.cz/european-womens-go-championship-2025/
 name: 23rd European Women`s Championship
 stages:
   - type: tournament
@@ -13,4 +13,37 @@ stages:
     breakers:
       - mms
       - sos
+    columns:
+      - wins       
     findSharedPlaces: true
+    games:
+      - 1-4 1:B+R round:3 sgf:2025/3-TingLi-NgocTrangCao.sgf ogs:https://online-go.com/review/1549512
+      - 1-5 1:B+R round:4 sgf:2025/4-TingLi-ArianeOugier.sgf ogs:https://online-go.com/review/1549865
+      - 1-7 1:B+R round:1 sgf:2025/1-TingLi-MichalaChalmovianska.sgf ogs:https://online-go.com/review/1549276
+      - 2-5 2:B+1.5 round:5 sgf:2025/5-ManjaMarz-ArianeOugier.sgf ogs:https://online-go.com/review/1550003
+      - 2-6 2:B+R round:4 sgf:2025/4-ManjaMarz-MirtaMedak.sgf ogs:https://online-go.com/review/1549851
+      - 2-10 2:B+R round:1 sgf:2025/1-ManjaMarz-MariannaSzychowiak.sgf ogs:https://online-go.com/review/1549236
+      - 3-6 3:B+R round:2 sgf:2025/2-OlesiaMalko-MirtaMedak.sgf ogs:https://online-go.com/review/1549393
+      - 3-8 3:B+R round:4 sgf:2025/4-OlesiaMalko-MilenaBocle.sgf ogs:https://online-go.com/review/1549849
+      - 3-15 3:B+R round:1 sgf:2025/1-OlesiaMalko-AdrianaPodperova.sgf ogs:https://online-go.com/review/1549235
+      - 4-2 4:B+R round:2 sgf:2025/2-NgocTrangCao-ManjaMarz.sgf ogs:https://online-go.com/review/1549396
+      - 4-3 3:W+R round:5 sgf:2025/5-NgocTrangCao-OlesiaMalko.sgf ogs:https://online-go.com/review/1550025
+      - 4-16 4:B+R round:4 sgf:2025/4-NgocTrangCao-ZuzanaKralikova.sgf ogs:https://online-go.com/review/1549866
+      - 5-3 5:B+R round:3 sgf:2025/3-ArianeOugier-OlesiaMalko.sgf ogs:https://online-go.com/review/1549513
+      - 5-19 5:B+R round:1 sgf:2025/1-ArianeOugier-JuliaSeres.sgf ogs:https://online-go.com/review/1549277
+      - 6-14 6:B+? round:5 sgf:2025/5-MirtaMedak-JitkaBartova.sgf ogs:https://online-go.com/review/1550004
+      - 7-2 2:W+R round:3 sgf:2025/3-MichalaChalmovianska-ManjaMarz.sgf ogs:https://online-go.com/review/1549500
+      - 7-12 7:B+? round:5 sgf:2025/5-MichalaChalmovianska-DanielaTrinks.sgf ogs:https://online-go.com/review/1550023
+      - 8-11 11:W+R round:1 sgf:2025/1-MilenaBocle-RenateReisenegger.sgf ogs:https://online-go.com/review/1549266
+      - 8-13 8:B+R round:5 sgf:2025/5-MilenaBocle-AlexandraUrbanSzalontai.sgf ogs:https://online-go.com/review/1550026
+      - 9-1 1:W+R round:5 sgf:2025/5-LovaWaahlin-TingLi.sgf ogs:https://online-go.com/review/1550024
+      - 9-12 9:B+R round:3 sgf:2025/3-LovaWaahlin-DanielaTrinks.sgf ogs:https://online-go.com/review/1549506
+      - 11-1 1:W+12.5 round:2 sgf:2025/2-RenateReisenegger-TingLi.sgf ogs:https://online-go.com/review/1549397
+      - 11-6 6:W+R round:3 sgf:2025/3-RenateReisenegger-MirtaMedak.sgf ogs:https://online-go.com/review/1549504
+      - 12-5 5:W+R round:2 sgf:2025/2-DanielaTrinks-ArianeOugier.sgf ogs:https://online-go.com/review/1549398
+      - 13-9 9:W+R round:4 sgf:2025/4-AlexandraUrbanSzalontai-LovaWaahlin.sgf ogs:https://online-go.com/review/1549868
+      - 14-12 12:W+R round:1 sgf:2025/1-JitkaBartova-DanielaTrinks.sgf ogs:https://online-go.com/review/1549265
+      - 14-13 13:W+R round:3 sgf:2025/3-JitkaBartova-AlexandraUrbanSzalontai.sgf ogs:https://online-go.com/review/1549508
+      - 16-8 8:W+2.5 round:2 sgf:2025/2-ZuzanaKralikova-MilenaBocle.sgf ogs:https://online-go.com/review/1549395
+      - 21-14 14:W+R round:2 sgf:2025/2-LillyHu-JitkaBartova.sgf ogs:https://online-go.com/review/1549394
+      - 26-11 11:W+21.5 round:4 sgf:2025/4-CherryHu-RenateReisenegger.sgf ogs:https://online-go.com/review/1549869

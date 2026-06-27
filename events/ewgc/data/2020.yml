@@ -9,4 +9,45 @@ stages:
       - place
     breakers:
       - place
+    columns:
+      - wins       
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:6 sgf:2020/6-NataliaKovaleva-ManjaMarz.sgf ogs:https://online-go.com/game/29331379
+      - 1-3 1:B+R round:5 sgf:2020/5-NataliaKovaleva-DinaBurdakova.sgf ogs:https://online-go.com/game/29220493
+      - 1-5 5:W+10.5 round:2 sgf:2020/2-NataliaKovaleva-ElvinaKalsberg.sgf ogs:https://online-go.com/game/28796918
+      - 1-8 1:B+6.5 round:4 sgf:2020/4-NataliaKovaleva-VirzhiniaShalneva.sgf ogs:https://online-go.com/game/29065557
+      - 1-9 1:B+R round:3 sgf:2020/3-NataliaKovaleva-MirtaMedak.sgf ogs:https://online-go.com/game/28945851
+      - 2-1 1:W+22.5 round:7 sgf:2020/7-ManjaMarz-NataliaKovaleva.sgf ogs:https://online-go.com/game/29360004
+      - 2-10 2:B+R round:3 sgf:2020/3-ManjaMarz-JuliaSeres.sgf ogs:https://online-go.com/game/28974886
+      - 3-2 3:B+R round:2 sgf:2020/2-DinaBurdakova-ManjaMarz.sgf ogs:https://online-go.com/game/28887085
+      - 3-4 3:B+R round:6 sgf:2020/6-DinaBurdakova-IsabelDonle.sgf ogs:https://online-go.com/game/29301590
+      - 3-10 3:B+R round:1 sgf:2020/1-DinaBurdakova-JuliaSeres.sgf ogs:https://online-go.com/game/28718997
+      - 3-15 3:B+R round:3 sgf:2020/3-DinaBurdakova-AnnaMelnyk.sgf ogs:https://online-go.com/game/28985807
+      - 4-2 2:W+R round:5 sgf:2020/5-IsabelDonle-ManjaMarz.sgf ogs:https://online-go.com/game/29241798
+      - 4-3 3:W+R round:7 sgf:2020/7-IsabelDonle-DinaBurdakova.sgf ogs:https://online-go.com/game/29310189
+      - 4-5 4:B+6.5 round:4 sgf:2020/4-IsabelDonle-ElvinaKalsberg.sgf ogs:https://online-go.com/game/29120327
+      - 4-8 8:W+R round:2 sgf:2020/2-IsabelDonle-VirzhiniaShalneva.sgf ogs:https://online-go.com/game/28861567
+      - 4-16 4:B+R round:3 sgf:2020/3-IsabelDonle-LovaWaahlin.sgf ogs:https://online-go.com/game/28953938
+      - 5-6 5:B+R round:6 sgf:2020/6-ElvinaKalsberg-ArianeOugier.sgf ogs:https://online-go.com/game/29360032
+      - 5-7 5:B+R round:5 sgf:2020/5-ElvinaKalsberg-AlexandraUrban.sgf ogs:https://online-go.com/game/29242425
+      - 6-3 3:W+R round:4 sgf:2020/4-ArianeOugier-DinaBurdakova.sgf ogs:https://online-go.com/game/29091242
+      - 7-2 2:W+R round:4 sgf:2020/4-AlexandraUrban-ManjaMarz.sgf ogs:https://online-go.com/game/29058546
+      - 7-6 7:B+R round:3 sgf:2020/3-AlexandraUrban-ArianeOugier.sgf ogs:https://online-go.com/game/28975406
+      - 7-11 7:B+R round:2 sgf:2020/2-AlexandraUrban-ValeriaKlochikhina.sgf ogs:https://online-go.com/game/28831502
+      - 7-13 13:W+28.5 round:1 sgf:2020/1-AlexandraUrban-JitkaBartova.sgf ogs:https://online-go.com/game/28689412
+      - 8-6 6:W+R round:5 sgf:2020/5-VirzhiniaShalneva-ArianeOugier.sgf ogs:https://online-go.com/game/29248074
+      - 8-7 7:W+? round:6 sgf:2020/6-VirzhiniaShalneva-AlexandraUrban.sgf ogs:https://online-go.com/game/29330112
+      - 8-16 8:B+R round:1 sgf:2020/1-VirzhiniaShalneva-LovaWaahlin.sgf ogs:https://online-go.com/game/28716565
+      - 9-5 5:W+9.5 round:1 sgf:2020/1-MirtaMedak-ElvinaKalsberg.sgf ogs:https://online-go.com/game/28711768
+      - 9-14 9:B+11.5 round:2 sgf:2020/2-MirtaMedak-MilenaBocle.sgf ogs:https://online-go.com/game/28867206
+      - 10-15 10:B+R round:2 sgf:2020/2-JuliaSeres-AnnaMelnyk.sgf ogs:https://online-go.com/game/28807021
+      - 11-6 6:W+R round:1 sgf:2020/1-ValeriaKlochikhina-ArianeOugier.sgf ogs:https://online-go.com/game/28738931
+      - 12-4 4:W+3.5 round:1 sgf:2020/1-LauraAvram-IsabelDonle.sgf ogs:https://online-go.com/game/28710861
+      - 12-8 8:W+R round:3 sgf:2020/3-LauraAvram-VirzhiniaShalneva.sgf ogs:https://online-go.com/game/28915146
+      - 12-16 12:B+R round:2 sgf:2020/2-LauraAvram-LovaWaahlin.sgf ogs:https://online-go.com/game/28834988
+      - 13-6 6:W+R round:2 sgf:2020/2-JitkaBartova-ArianeOugier.sgf ogs:https://online-go.com/game/28767755
+      - 13-11 11:W+3.5 round:3 sgf:2020/3-JitkaBartova-ValeriaKlochikhina.sgf ogs:https://online-go.com/game/28978120
+      - 14-1 1:W+4.5 round:1 sgf:2020/1-MilenaBocle-NataliaKovaleva.sgf ogs:https://online-go.com/game/28710162
+      - 14-5 5:W+7.5 round:3 sgf:2020/3-MilenaBocle-ElvinaKalsberg.sgf ogs:https://online-go.com/game/28920040
+      - 15-2 2:W+R round:1 sgf:2020/1-AnnaMelnyk-ManjaMarz.sgf ogs:https://online-go.com/game/28681663
