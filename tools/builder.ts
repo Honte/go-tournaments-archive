@@ -5,12 +5,14 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { input, select } from '@inquirer/prompts';
 import { normalizeBasePath } from '@/libs/urls';
+import { getConfigurations } from '@/configuration';
 
 type BasePathMode = 'empty' | 'event' | 'custom';
 type BuilderState = {
-  event: string;
-  basePath: string;
-  basePathMode: BasePathMode;
+  configuration?: string;
+  event?: string;
+  basePath?: string;
+  basePathMode?: BasePathMode;
 };
 
 const ROOT_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -37,24 +39,41 @@ try {
 }
 
 async function promptForBuild(): Promise<BuilderState> {
+  const configurations = await getConfigurations();
   const events = await getEvents();
   const state = await readState();
   const eventIds = events.map(({ id }) => id);
   const defaultEvent = eventIds.includes(state.event ?? '') ? state.event! : eventIds[0];
+  const choices = [
+    ...configurations.map((configuration) => ({
+      name: `${configuration} (configuration)`,
+      value: `configuration:${configuration}`,
+    })),
+    ...events.map(({ id, siteName }) => ({
+      name: `${id} (${siteName})`,
+      value: `event:${id}`,
+    })),
+  ];
 
   console.log('Build archive\n');
 
-  const event = await select({
-    message: 'Event:',
-    choices: events.map(({ id, siteName }) => ({
-      name: `${id} (${siteName})`,
-      value: id,
-    })),
-    default: defaultEvent,
-    pageSize: events.length,
+  const target = await select({
+    message: 'Archive:',
+    choices,
+    default: getDefaultTarget(state, choices, defaultEvent),
+    pageSize: choices.length,
     loop: true,
     theme: SELECT_THEME,
   });
+
+  if (target.startsWith('configuration:')) {
+    return {
+      ...state,
+      configuration: target.replace('configuration:', ''),
+    };
+  }
+
+  const event = target.replace('event:', '');
 
   const basePathMode = await select<BasePathMode>({
     message: 'Base Path:',
@@ -83,6 +102,26 @@ async function promptForBuild(): Promise<BuilderState> {
     basePathMode,
     basePath: await resolveBasePath(basePathMode, event, state?.event === event ? state.basePath : event),
   };
+}
+
+function getDefaultTarget(state: BuilderState, choices: { value: string }[], defaultEvent: string): string {
+  const choiceValues = new Set(choices.map(({ value }) => value));
+
+  if (state.configuration) {
+    const configurationTarget = `configuration:${state.configuration}`;
+
+    if (choiceValues.has(configurationTarget)) {
+      return configurationTarget;
+    }
+  }
+
+  const eventTarget = `event:${defaultEvent}`;
+
+  if (choiceValues.has(eventTarget)) {
+    return eventTarget;
+  }
+
+  return choices[0].value;
 }
 
 async function getEvents() {
@@ -116,9 +155,12 @@ async function getEventSiteName(event: string) {
   return event;
 }
 
-async function readState(): Promise<Partial<BuilderState>> {
+async function readState(): Promise<BuilderState> {
   try {
-    return JSON.parse(await readFile(STATE_PATH, 'utf-8')) as Partial<BuilderState>;
+    const state = JSON.parse(await readFile(STATE_PATH, 'utf-8')) as BuilderState & { target?: string };
+
+    delete state.target;
+    return state;
   } catch {
     return {};
   }
@@ -157,16 +199,28 @@ function isPromptExit(error: unknown): boolean {
   );
 }
 
-async function runBuild({ event, basePath }: BuilderState): Promise<void> {
-  console.log(`[builder] EVENT=${event} BASE_PATH=${basePath || '(empty)'}`);
+async function runBuild(state: BuilderState): Promise<void> {
+  const env = { ...process.env };
+
+  if (state.configuration) {
+    env.CONFIG = state.configuration;
+    delete env.EVENT;
+    delete env.BASE_PATH;
+
+    console.log(`[builder] CONFIG=${state.configuration}`);
+  } else if (state.event) {
+    env.EVENT = state.event;
+    env.BASE_PATH = state.basePath ?? '';
+    delete env.CONFIG;
+
+    console.log(`[builder] EVENT=${state.event} BASE_PATH=${state.basePath || '(empty)'}`);
+  } else {
+    throw new Error('No build target selected.');
+  }
 
   const child = spawn('npm run build', {
     cwd: ROOT_DIR,
-    env: {
-      ...process.env,
-      EVENT: event,
-      BASE_PATH: basePath,
-    },
+    env,
     shell: true,
     stdio: 'inherit',
   });
