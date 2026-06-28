@@ -55,3 +55,4 @@ config:
   generatePngs: false
   generateJpgs: true
   generateZips: true
+  trailingSlash: true

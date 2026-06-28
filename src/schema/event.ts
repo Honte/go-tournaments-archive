@@ -31,6 +31,7 @@ export type ArchiveConfiguration = {
   locales?: [Locale, ...Locale[]];
   events: (EventConfiguration | EventGroup)[];
   basePath?: string;
+  trailingSlash?: boolean;
   config?: EventConfigurationOverrides;
 };
 
