@@ -57,10 +57,19 @@ export async function EventSelectorPage({ configuration }: EventSelectorPageProp
     groups.push(otherGroup);
   }
 
+  const hasSingleLocale =
+    eventsWithTranslations.every((entry) => entry.event.locales.length === 1) &&
+    (!configuration.locales || configuration.locales.length === 1);
+
   return (
     <Content>
       <div className="mx-auto flex w-full max-w-(--breakpoint-2xl) flex-col gap-8 p-4 sm:p-6">
-        <EventSelector groups={groups} title={configuration.title} locales={configuration.locales} />
+        <EventSelector
+          groups={groups}
+          title={configuration.title}
+          locales={configuration.locales}
+          hasSingleLocale={hasSingleLocale}
+        />
       </div>
     </Content>
   );

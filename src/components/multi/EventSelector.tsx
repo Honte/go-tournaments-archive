@@ -11,9 +11,10 @@ type EventSelectorProps = {
   title?: LocalizedString;
   groups: EventEntryGroup[];
   locales?: Locale[];
+  hasSingleLocale?: boolean;
 };
 
-export function EventSelector({ title, groups, locales }: EventSelectorProps) {
+export function EventSelector({ title, groups, locales, hasSingleLocale }: EventSelectorProps) {
   const locale = (useSearchParams()?.get('locale') ?? locales?.[0] ?? 'en') as Locale;
 
   return (
@@ -37,7 +38,13 @@ export function EventSelector({ title, groups, locales }: EventSelectorProps) {
         {getString(title, locale, 'Go Tournaments Archives')}
       </h1>
       {groups.map((group, index) => (
-        <EventGroup key={index} title={group.title} events={group.events} locale={locale} />
+        <EventGroup
+          key={index}
+          title={group.title}
+          events={group.events}
+          locale={locale}
+          hasSingleLocale={hasSingleLocale}
+        />
       ))}
     </>
   );
