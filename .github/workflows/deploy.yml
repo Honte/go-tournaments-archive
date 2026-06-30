@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: pgc
     env:
-      EVENT: pgc
+      CONFIG: pgc
     steps:
       - uses: actions/checkout@v4
 
@@ -77,7 +77,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: pygc
     env:
-      EVENT: pygc
+      CONFIG: pygc
       SSH_PATH: '/usr/home/${{ secrets.SSH_USER }}/domains/${{ vars.SSH_HOST }}/public_nodejs/archive'
     steps:
       - uses: actions/checkout@v4
