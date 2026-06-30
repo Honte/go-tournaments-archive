@@ -4,8 +4,9 @@ stages:
     file: eygc2024u12.txt
     category: u12
     name: U12
+    dir: 2024/u12
     scoringColumns:
-      - mms 
+      - mms
       - wins
       - null
       - sos
@@ -13,15 +14,23 @@ stages:
     breakers:
       - mms
       - sos
-      - sosos   
+      - sosos
+    columns:
+      - wins       
     findSharedPlaces: true
     collapsed: true
+    games:
+      - 1-2 1:B+22.5 round:4 sgf:2024/u12/4-BartikDach-BendeBarcza.sgf ogs:https://online-go.com/review/1240377
+      - 1-3 1:B+18.5 round:3 sgf:2024/u12/3-BartikDach-RyanZhang.sgf ogs:https://online-go.com/review/1240231
+      - 1-5 1:B+R round:5 sgf:2024/u12/5-BartikDach-JakovSicic.sgf ogs:https://online-go.com/review/1240844
+      - 7-1 1:W+R round:6 sgf:2024/u12/6-LilianHuang-BartikDach.sgf ogs:https://online-go.com/review/1240995
   - type: tournament
     file: eygc2024u18.txt
     category: u18
     name: U18
+    dir: 2024/u18
     scoringColumns:
-      - mms 
+      - mms
       - wins
       - null
       - sos
@@ -29,13 +38,23 @@ stages:
     breakers:
       - mms
       - sos
-      - sosos    
+      - sosos
+    columns:
+      - wins       
     findSharedPlaces: true
-    collapsed: true    
+    collapsed: true
+    games:
+      - 1-2 1:B+10.5 round:4 sgf:2024/u18/4-YuzeXing-StjepanMedak.sgf ogs:https://online-go.com/review/1240378
+      - 1-5 1:B+16.5 round:5 sgf:2024/u18/5-YuzeXing-OlesiaMalko.sgf ogs:https://online-go.com/review/1240845
+      - 2-3 2:B+16.5 round:5 sgf:2024/u18/5-StjepanMedak-JanKomin.sgf ogs:https://online-go.com/review/1240846
+      - 2-4 2:B+4.5 round:6 sgf:2024/u18/6-StjepanMedak-RobertAndreiGrosu.sgf ogs:https://online-go.com/review/1240996
+      - 4-1 1:W+10.5 round:3 sgf:2024/u18/3-RobertAndreiGrosu.sgf ogs:https://online-go.com/review/1240230
+      - 8-1 1:W+25.5 round:6 sgf:2024/u18/6-StefanAdrianRotarita-YuzeXing.sgf ogs:https://online-go.com/review/1240997
   - type: tournament
-    file: eygc2024u18.txt
+    file: eygc2024u21.txt
     category: u21
     name: European Youth Go Congress - U21
+    dir: 2024/u21
     notes: It's formally not European Championship so do not count to medals and other statistics.
     scoringColumns:
       - wins
@@ -46,7 +65,12 @@ stages:
     breakers:
       - wins
       - sos
-      - sosos    
+      - sosos
     findSharedPlaces: true
     collapsed: true
-    excluded: true    
+    excluded: true
+    games:
+      - 1-7 1:B+? round:6 sgf:2024/u21/6-BenoitRobichon-AntoniaStanciu.sgf ogs:https://online-go.com/review/1240994
+      - 2-1 2:B+2.5 round:3 sgf:2024/u21/3-ArvedPittner-BenoitRobichon.sgf ogs:https://online-go.com/review/1240229
+      - 2-3 3:W+R round:4 sgf:2024/u21/4-ArvedPittner-DenisDobranis.sgf ogs:https://online-go.com/review/1240379
+      - 6-1 1:W+R round:5 sgf:2024/u21/5-LucasHofmann-BenoitRobichon.sgf ogs:https://online-go.com/review/1240847

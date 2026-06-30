@@ -27,6 +27,7 @@
     "sgf:match:epq": "tsx tools/sgfMatcher/index.ts --event epq",
     "sgf:match:epc": "tsx tools/sgfMatcher/index.ts --event epc",
     "sgf:match:esgc": "tsx tools/sgfMatcher/index.ts --event esgc",
+    "sgf:match:eygc": "tsx tools/sgfMatcher/index.ts --event eygc",
     "sgf:match:ewgc": "tsx tools/sgfMatcher/index.ts --event ewgc",
     "sgf:match:wagc": "tsx tools/sgfMatcher/index.ts --event wagc",
     "sgf:match:kpmc": "tsx tools/sgfMatcher/index.ts --event kpmc",

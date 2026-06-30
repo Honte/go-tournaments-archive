@@ -5,8 +5,9 @@ stages:
     file: eygc2011u12.txt
     category: u12
     name: U12
+    dir: 2011/u12
     scoringColumns:
-      - mms 
+      - mms
       - wins
       - sos
       - sosos
@@ -14,14 +15,17 @@ stages:
       - mms
       - sos
       - sosos
+    columns:
+      - wins       
     findSharedPlaces: true
     collapsed: true
   - type: tournament
     file: eygc2011u16.txt
     category: u16
     name: U16
+    dir: 2011/u16
     scoringColumns:
-      - mms 
+      - mms
       - wins
       - sos
       - sosos
@@ -29,14 +33,24 @@ stages:
       - mms
       - sos
       - sosos
-    findSharedPlaces: true 
-    collapsed: true    
+    columns:
+      - wins       
+    findSharedPlaces: true
+    collapsed: true
+    games:
+      - 1-2 1:B+R round:4 sgf:2011/u16/4-MateuszSurma-VanessaWong.sgf
+      - 1-4 1:B+R round:2 sgf:2011/u16/2-MateuszSurma-TheodorToma.sgf
+      - 1-11 1:B+R round:1 sgf:2011/u16/1-MateuszSurma-FlorianMoennikes.sgf
+      - 3-1 1:W+26.5 round:3 sgf:2011/u16/3-AlexandrVashurov-MateuszSurma.sgf
+      - 5-1 1:W+R round:5 sgf:2011/u16/5-JurijMykhaljuk-MateuszSurma.sgf
+      - 7-1 1:W+R round:6 sgf:2011/u16/6-MagdalenaMladenova-MateuszSurma.sgf
   - type: tournament
     file: eygc2011u20.txt
     category: u20
     name: U20
+    dir: 2011/u20
     scoringColumns:
-      - mms 
+      - mms
       - wins
       - sos
       - sosos
@@ -44,5 +58,20 @@ stages:
       - mms
       - sos
       - sosos
+    columns:
+      - wins       
     findSharedPlaces: true
     collapsed: true
+    games:
+      - 1-2 1:B+T round:3 sgf:2011/u20/3-PavolLisy-AliJabarin.sgf
+      - 1-8 1:B+R round:6 sgf:2011/u20/6-PavolLisy-AlexanderEerbeek.sgf
+      - 2-4 4:W+16.5 round:6 sgf:2011/u20/6-AliJabarin-NikolaMitic.sgf
+      - 2-6 2:B+2.5 round:2 sgf:2011/u20/2-AliJabarin-ViktorLin.sgf
+      - 2-7 2:B+R round:1 sgf:2011/u20/1-AliJabarin-RomanRuzhanskyj.sgf
+      - 3-2 2:W+R round:5 sgf:2011/u20/5-LukasKraemer-AliJabarin.sgf
+      - 4-1 1:W+R round:2 sgf:2011/u20/2-NikolaMitic-PavolLisy.sgf
+      - 5-2 2:W+4.5 round:4 sgf:2011/u20/4-LukasPodpera-AliJabarin.sgf
+      - 6-1 1:W+R round:5 sgf:2011/u20/5-ViktorLin-PavolLisy.sgf
+      - 6-4 4:W+R round:3 sgf:2011/u20/3-ViktorLin-NikolaMitic.sgf
+      - 6-5 6:B+7.5 round:1 sgf:2011/u20/1-ViktorLin-LukasPodpera.sgf
+      - 7-1 1:W+20.5 round:4 sgf:2011/u20/4-RomanRuzhanskyj-PavolLisy.sgf

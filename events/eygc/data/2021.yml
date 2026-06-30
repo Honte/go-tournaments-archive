@@ -4,8 +4,9 @@ stages:
     file: eygc2021u12.txt
     category: u12
     name: U12
+    dir: 2021/u12
     scoringColumns:
-      - mms 
+      - mms
       - wins
       - null
       - sos
@@ -13,15 +14,165 @@ stages:
     breakers:
       - mms
       - sos
-      - sosos      
+      - sosos
+    columns:
+      - wins
     findSharedPlaces: true
     collapsed: true
+    games:
+      - 1-2 1:B+2.5 round:4 sgf:2021/u12/4-Vjacheslav_Shpakovskij-Ruslan_Tarasov.sgf ogs:https://online-go.com/game/37885979
+      - 1-3 1:B+50.5 round:6 sgf:2021/u12/6-Vjacheslav_Shpakovskij-Artur_Gimadiev.sgf ogs:https://online-go.com/game/37913351
+      - 1-13 1:B+42.5 round:2 sgf:2021/u12/2-Vjacheslav_Shpakovskij-Lev_Ponomarev.sgf ogs:https://online-go.com/game/37858451
+      - 2-3 2:B+3.5 round:3 sgf:2021/u12/3-Ruslan_Tarasov-Artur_Gimadiev.sgf ogs:https://online-go.com/game/37878933
+      - 2-6 2:B+35.5 round:2 sgf:2021/u12/2-Ruslan_Tarasov-Alexandr_Osipovskij.sgf ogs:https://online-go.com/game/37858155
+      - 2-8 2:B+16.5 round:6 sgf:2021/u12/6-Ruslan_Tarasov-Alper_Sulak.sgf ogs:https://online-go.com/game/37913204
+      - 3-5 3:B+R round:2 sgf:2021/u12/2-Artur_Gimadiev-Andrej_Ilichev.sgf ogs:https://online-go.com/game/37858360
+      - 3-12 3:B+R round:1 sgf:2021/u12/1-Artur_Gimadiev-Mikhail_Rozanov.sgf ogs:https://online-go.com/game/37851782
+      - 4-1 1:W+17.5 round:3 sgf:2021/u12/3-Kirill_Makarov-Vjacheslav_Shpakovskij.sgf ogs:https://online-go.com/game/37878876
+      - 4-2 2:W+R round:5 sgf:2021/u12/5-Kirill_Makarov-Ruslan_Tarasov.sgf ogs:https://online-go.com/game/37906680
+      - 4-11 4:B+R round:1 sgf:2021/u12/1-Kirill_Makarov-Vladislav_Vinokurov.sgf ogs:https://online-go.com/game/37851603
+      - 5-1 1:W+20.5 round:5 sgf:2021/u12/5-Andrej_Ilichev-Vjacheslav_Shpakovskij.sgf ogs:https://online-go.com/game/37906857
+      - 5-10 5:B+R round:6 sgf:2021/u12/6-Andrej_Ilichev-Stjepan_Medak.sgf ogs:https://online-go.com/game/37913399
+      - 5-13 5:B+34.5 round:4 sgf:2021/u12/4-Andrej_Ilichev-Lev_Ponomarev.sgf ogs:https://online-go.com/game/37885993
+      - 5-15 5:B+R round:1 sgf:2021/u12/1-Andrej_Ilichev-Kirill_Abzalilov.sgf ogs:https://online-go.com/game/37851865
+      - 6-3 3:W+39.5 round:5 sgf:2021/u12/5-Alexandr_Osipovskij-Artur_Gimadiev.sgf ogs:https://online-go.com/game/37906774
+      - 6-7 6:B+14.5 round:4 sgf:2021/u12/4-Alexandr_Osipovskij-Radmila_Ponomareva.sgf ogs:https://online-go.com/game/37886054
+      - 6-12 6:B+1.5 round:3 sgf:2021/u12/3-Alexandr_Osipovskij-Mikhail_Rozanov.sgf ogs:https://online-go.com/game/37878955
+      - 7-2 2:W+27.5 round:1 sgf:2021/u12/1-Radmila_Ponomareva-Ruslan_Tarasov.sgf ogs:https://online-go.com/game/37851899
+      - 7-9 9:W+35.5 round:5 sgf:2021/u12/5-Radmila_Ponomareva-Tymoteusz_Barcicki.sgf ogs:https://online-go.com/game/37906904
+      - 8-6 6:W+59.5 round:1 sgf:2021/u12/1-Alper_Sulak-Alexandr_Osipovskij.sgf ogs:https://online-go.com/game/37851861
+      - 8-7 7:W+54.5 round:2 sgf:2021/u12/2-Alper_Sulak-Radmila_Ponomareva.sgf ogs:https://online-go.com/game/37858302
+      - 8-13 8:B+64.5 round:5 sgf:2021/u12/5-Alper_Sulak-Lev_Ponomarev.sgf ogs:https://online-go.com/game/37906727
+      - 9-1 1:W+11.5 round:1 sgf:2021/u12/1-Tymoteusz_Barcicki-Vjacheslav_Shpakovskij.sgf ogs:https://online-go.com/game/37851787
+      - 9-4 4:W+R round:6 sgf:2021/u12/6-Tymoteusz_Barcicki-Kirill_Makarov.sgf ogs:https://online-go.com/game/37913383
+      - 9-14 14:W+R round:3 sgf:2021/u12/3-Tymoteusz_Barcicki-Mariia_Chernova.sgf ogs:https://online-go.com/game/37878976
+      - 10-7 7:W+7.5 round:3 sgf:2021/u12/3-Stjepan_Medak-Radmila_Ponomareva.sgf ogs:https://online-go.com/game/37878837
+      - 10-14 10:B+14.5 round:5 sgf:2021/u12/5-Stjepan_Medak-Mariia_Chernova.sgf ogs:https://online-go.com/game/37906797
+      - 10-15 10:B+28.5 round:2 sgf:2021/u12/2-Stjepan_Medak-Kirill_Abzalilov.sgf ogs:https://online-go.com/game/37858827
+      - 11-5 5:W+R round:3 sgf:2021/u12/3-Vladislav_Vinokurov-Andrej_Ilichev.sgf ogs:https://online-go.com/game/37878907
+      - 11-8 8:W+2.5 round:4 sgf:2021/u12/4-Vladislav_Vinokurov-Alper_Sulak.sgf ogs:https://online-go.com/game/37885967
+      - 11-23 11:B+19.5 round:5 sgf:2021/u12/5-Vladislav_Vinokurov-Tadeas_Grosser.sgf ogs:https://online-go.com/game/37906809
+      - 12-10 10:W+7.5 round:4 sgf:2021/u12/4-Mikhail_Rozanov-Stjepan_Medak.sgf ogs:https://online-go.com/game/37886084
+      - 12-16 12:B+46.5 round:2 sgf:2021/u12/2-Mikhail_Rozanov-Lucas_Lin.sgf ogs:https://online-go.com/game/37858152
+      - 13-10 13:B+39.5 round:1 sgf:2021/u12/1-Lev_Ponomarev-Stjepan_Medak.sgf ogs:https://online-go.com/game/37853422
+      - 13-12 12:W+R round:6 sgf:2021/u12/6-Lev_Ponomarev-Mikhail_Rozanov.sgf ogs:https://online-go.com/game/37913435
+      - 13-21 13:B+56.5 round:3 sgf:2021/u12/3-Lev_Ponomarev-Margarita_Ponomareva.sgf ogs:https://online-go.com/game/37879295
+      - 14-3 3:W+12.5 round:4 sgf:2021/u12/4-Mariia_Chernova-Artur_Gimadiev.sgf ogs:https://online-go.com/game/37886224
+      - 14-4 4:W+34.5 round:2 sgf:2021/u12/2-Mariia_Chernova-Kirill_Makarov.sgf ogs:https://online-go.com/game/37858073
+      - 14-11 11:W+4.5 round:6 sgf:2021/u12/6-Mariia_Chernova-Vladislav_Vinokurov.sgf ogs:https://online-go.com/game/37913400
+      - 14-16 14:B+10.5 round:1 sgf:2021/u12/1-Mariia_Chernova-Lucas_Lin.sgf ogs:https://online-go.com/game/37851557
+      - 15-4 4:W+65.5 round:4 sgf:2021/u12/4-KirillAbzalilov-KirillMakarov.sgf ogs:https://online-go.com/game/37886228
+      - 15-17 17:W+35.5 round:5 sgf:2021/u12/5-KirillAbzalilov-MarkKirillin.sgf ogs:https://online-go.com/game/37906856
+      - 15-18 15:B+57.5 round:3 sgf:2021/u12/3-KirillAbzalilov-BendeBarcza.sgf ogs:https://online-go.com/game/37878992
+      - 16-9 9:W+38.5 round:4 sgf:2021/u12/4-Lucas_Lin-Tymoteusz_Barcicki.sgf ogs:https://online-go.com/game/37886189
+      - 16-17 16:B+60.5 round:3 sgf:2021/u12/3-Lucas_Lin-Mark_Kirillin.sgf ogs:https://online-go.com/game/37879344
+      - 16-21 16:B+26.5 round:6 sgf:2021/u12/6-Lucas_Lin-Margarita_Ponomareva.sgf ogs:https://online-go.com/game/37913744
+      - 17-6 6:W+30.5 round:6 sgf:2021/u12/6-Mark_Kirillin-Alexandr_Osipovskij.sgf ogs:https://online-go.com/game/37913432
+      - 17-11 11:W+25.5 round:2 sgf:2021/u12/2-Mark_Kirillin-Vladislav_Vinokurov.sgf ogs:https://online-go.com/game/37858138
+      - 17-20 17:B+6.5 round:4 sgf:2021/u12/4-Mark_Kirillin-Danylo_Petryk.sgf ogs:https://online-go.com/game/37886110
+      - 18-7 7:W+R round:6 sgf:2021/u12/6-Bende_Barcza-Radmila_Ponomareva.sgf ogs:https://online-go.com/game/37913524
+      - 18-16 18:B+7.5 round:5 sgf:2021/u12/5-Bende_Barcza-Lucas_Lin.sgf ogs:https://online-go.com/game/37907080
+      - 18-20 20:W+24.5 round:1 sgf:2021/u12/1-Bende_Barcza-Danylo_Petryk.sgf ogs:https://online-go.com/game/37851637
+      - 19-18 18:W+11.5 round:4 sgf:2021/u12/4-Jan_Komin-Bende_Barcza.sgf ogs:https://online-go.com/game/37886415
+      - 19-20 19:B+40.5 round:5 sgf:2021/u12/5-Jan_Komin-Danylo_Petryk.sgf ogs:https://online-go.com/game/37906957
+      - 19-22 19:B+19.5 round:3 sgf:2021/u12/3-Jan_Komin-Bohuslav_Onyshchuk.sgf ogs:https://online-go.com/game/37879029
+      - 20-8 8:W+87.5 round:3 sgf:2021/u12/3-Danylo_Petryk-Alper_Sulak.sgf ogs:https://online-go.com/game/37878806
+      - 20-9 9:W+138.5 round:2 sgf:2021/u12/2-Danylo_Petryk-Tymoteusz_Barcicki.sgf ogs:https://online-go.com/game/37858112
+      - 20-27 20:B+32.5 round:6 sgf:2021/u12/6-Danylo_Petryk-Andrew_Volovich.sgf ogs:https://online-go.com/game/37913352
+      - 21-19 21:B+R round:1 sgf:2021/u12/1-Margarita_Ponomareva-Jan_Komin.sgf ogs:https://online-go.com/game/37852603
+      - 21-28 21:B+R round:2 sgf:2021/u12/2-Margarita_Ponomareva-Sarp_Ege_Yilmaz.sgf ogs:https://online-go.com/game/37858481
+      - 22-18 18:W+R round:2 sgf:2021/u12/2-Bohuslav_Onyshchuk-Bende_Barcza.sgf ogs:https://online-go.com/game/37858532
+      - 22-21 21:W+R round:5 sgf:2021/u12/5-Bohuslav_Onyshchuk-Margarita_Ponomareva.sgf ogs:https://online-go.com/game/37906940
+      - 22-24 22:B+25.5 round:1 sgf:2021/u12/1-Bohuslav_Onyshchuk-Ozgur_Iscimen.sgf ogs:https://online-go.com/game/37851553
+      - 23-19 19:W+R round:6 sgf:2021/u12/6-Tadeas_Grosser-Jan_Komin.sgf ogs:https://online-go.com/game/37913380
+      - 23-21 23:B+17.5 round:4 sgf:2021/u12/4-Tadeas_Grosser-Margarita_Ponomareva.sgf ogs:https://online-go.com/game/37885982
+      - 23-25 23:B+16.5 round:2 sgf:2021/u12/2-Tadeas_Grosser-Tymofii_Ovsiienko.sgf ogs:https://online-go.com/game/37858133
+      - 23-28 23:B+27.5 round:3 sgf:2021/u12/3-Tadeas_Grosser-Sarp_Ege_Yilmaz.sgf ogs:https://online-go.com/game/37878858
+      - 24-19 19:W+67.5 round:2 sgf:2021/u12/2-Ozgur_Iscimen-Jan_Komin.sgf ogs:https://online-go.com/game/37857954
+      - 24-26 26:W+33.5 round:5 sgf:2021/u12/5-Ozgur_Iscimen-Alexander_Timperi.sgf ogs:https://online-go.com/game/37906739
+      - 24-33 24:B+R round:4 sgf:2021/u12/4-Ozgur_Iscimen-Anastasia_A_Chernova.sgf ogs:https://online-go.com/game/37887036
+      - 25-22 22:W+27.5 round:6 sgf:2021/u12/6-Tymofii_Ovsiienko-Bohuslav_Onyshchuk.sgf ogs:https://online-go.com/game/37913373
+      - 25-24 25:B+138.5 round:3 sgf:2021/u12/3-Tymofii_Ovsiienko-Ozgur_Iscimen.sgf ogs:https://online-go.com/game/37878999
+      - 25-28 25:B+R round:5 sgf:2021/u12/5-Tymofii_Ovsiienko-Sarp_Ege_Yilmaz.sgf ogs:https://online-go.com/game/37906799
+      - 25-33 25:B+R round:1 sgf:2021/u12/1-Tymofii_Ovsiienko-Anastasia_A_Chernova.sgf ogs:https://online-go.com/game/37852207
+      - 26-15 15:W+25.5 round:6 sgf:2021/u12/6-Alexander_Timperi-Kirill_Abzalilov.sgf ogs:https://online-go.com/game/37913591
+      - 26-30 26:B+R round:3 sgf:2021/u12/3-Alexander_Timperi-Lukasz_Kudla.sgf ogs:https://online-go.com/game/37879016
+      - 26-31 26:B+9.5 round:4 sgf:2021/u12/4-Alexander_Timperi-Alexandru_Ionut_Crihan.sgf ogs:https://online-go.com/game/37886254
+      - 27-12 12:W+99.5 round:5 sgf:2021/u12/5-Andrew_Volovich-Mikhail_Rozanov.sgf ogs:https://online-go.com/game/37907006
+      - 27-25 27:B+66.5 round:4 sgf:2021/u12/4-Andrew_Volovich-Tymofii_Ovsiienko.sgf ogs:https://online-go.com/game/37886196
+      - 27-26 27:B+R round:2 sgf:2021/u12/2-Andrew_Volovich-Alexander_Timperi.sgf ogs:https://online-go.com/game/37858499
+      - 28-17 17:W+44.5 round:1 sgf:2021/u12/1-SarpEgeYilmaz-MarkKirillin.sgf ogs:https://online-go.com/game/37852090
+      - 28-22 22:W+14.5 round:4 sgf:2021/u12/4-SarpEgeYilmaz-BohuslavOnyshchuk.sgf ogs:https://online-go.com/game/37886262
+      - 29-23 23:W+24.5 round:1 sgf:2021/u12/1-Kocas_Kuzey_Kanbolat-Tadeas_Grosser.sgf ogs:https://online-go.com/game/37851784
+      - 29-28 29:B+13.5 round:6 sgf:2021/u12/6-Kocas_Kuzey_Kanbolat-Sarp_Ege_Yilmaz.sgf ogs:https://online-go.com/game/37913369
+      - 29-35 29:B+R round:4 sgf:2021/u12/4-Kocas_Kuzey_Kanbolat-Albek_Kanbolat.sgf ogs:https://online-go.com/game/37886120
+      - 30-24 24:W+R round:6 sgf:2021/u12/6-Lukasz_Kudla-Ozgur_Iscimen.sgf ogs:https://online-go.com/game/37913392
+      - 30-31 30:B+4.5 round:5 sgf:2021/u12/5-Lukasz_Kudla-Alexandru_Ionut_Crihan.sgf ogs:https://online-go.com/game/37906953
+      - 30-32 30:B+R round:4 sgf:2021/u12/4-Lukasz_Kudla-Lukas_Rak.sgf ogs:https://online-go.com/game/37886112
+      - 30-36 30:B+19.5 round:2 sgf:2021/u12/2-Lukasz_Kudla-Vira_Chernova.sgf ogs:https://online-go.com/game/37858417
+      - 31-29 31:B+45.5 round:2 sgf:2021/u12/2-Alexandru_Ionut_Crihan-Kocas_Kuzey_Kanbolat.sgf ogs:https://online-go.com/game/37858249
+      - 31-35 31:B+49.5 round:3 sgf:2021/u12/3-Alexandru_Ionut_Crihan-Albek_Kanbolat.sgf ogs:https://online-go.com/game/37878948
+      - 31-36 31:B+29.5 round:6 sgf:2021/u12/6-Alexandru_Ionut_Crihan-Vira_Chernova.sgf ogs:https://online-go.com/game/37913441
+      - 32-29 32:B+10.5 round:3 sgf:2021/u12/3-Lukas_Rak-Kocas_Kuzey_Kanbolat.sgf ogs:https://online-go.com/game/37878834
+      - 32-31 31:W+48.5 round:1 sgf:2021/u12/1-Lukas_Rak-Alexandru_Ionut_Crihan.sgf ogs:https://online-go.com/game/37851726
+      - 32-33 32:B+24.5 round:6 sgf:2021/u12/6-Lukas_Rak-Anastasia_A_Chernova.sgf ogs:https://online-go.com/game/37913208
+      - 33-27 27:W+R round:3 sgf:2021/u12/3-Anastasia_A_Chernova-Andrew_Volovich.sgf ogs:https://online-go.com/game/37879261
+      - 33-29 29:W+16.5 round:5 sgf:2021/u12/5-Anastasia_A_Chernova-Kocas_Kuzey_Kanbolat.sgf ogs:https://online-go.com/game/37907007
+      - 34-38 34:B+57.5 round:2 sgf:2021/u12/2-MaximDunaev-MaxymRudyk.sgf ogs:https://online-go.com/game/37858121
+      - 34-39 34:B+26.5 round:4 sgf:2021/u12/4-MaximDunaev-LejlaMudarisova.sgf ogs:https://online-go.com/game/37886203
+      - 34-40 34:B+51.5 round:3 sgf:2021/u12/3-MaximDunaev-VioletaGorbulska.sgf ogs:https://online-go.com/game/37879122
+      - 35-30 30:W+18.5 round:1 sgf:2021/u12/1-Albek_Kanbolat-Lukasz_Kudla.sgf ogs:https://online-go.com/game/37851633
+      - 35-33 33:W+R round:2 sgf:2021/u12/2-Albek_Kanbolat-Anastasia_A_Chernova.sgf ogs:https://online-go.com/game/37859834
+      - 35-36 36:W+54.5 round:5 sgf:2021/u12/5-Albek_Kanbolat-Vira_Chernova.sgf ogs:https://online-go.com/game/37907198
+      - 35-42 35:B+26.5 round:6 sgf:2021/u12/6-Albek_Kanbolat-Eliot_Zeng_Lussereau.sgf ogs:https://online-go.com/game/37913347
+      - 36-34 36:B+16.5 round:1 sgf:2021/u12/1-Vira_Chernova-Maxim_Dunaev.sgf ogs:https://online-go.com/game/37851611
+      - 36-37 37:W+14.5 round:4 sgf:2021/u12/4-Vira_Chernova-Csaba_Ifj_Kis_Gado.sgf ogs:https://online-go.com/game/37886375
+      - 37-32 32:W+88.5 round:5 sgf:2021/u12/5-Csaba_Ifj_Kis_Gado-Lukas_Rak.sgf ogs:https://online-go.com/game/37906862
+      - 37-34 34:W+125.5 round:6 sgf:2021/u12/6-Csaba_Ifj_Kis_Gado-Maxim_Dunaev.sgf ogs:https://online-go.com/game/37913386
+      - 38-39 38:B+20.5 round:5 sgf:2021/u12/5-Maxym_Rudyk-Lejla_Mudarisova.sgf ogs:https://online-go.com/game/37906921
+      - 38-41 38:B+63.5 round:1 sgf:2021/u12/1-Maxym_Rudyk-Egor_Dunaev.sgf ogs:https://online-go.com/game/37851780
+      - 38-43 38:B+19.5 round:3 sgf:2021/u12/3-Maxym_Rudyk-Daniel_Ajdanaleev.sgf ogs:https://online-go.com/game/37878751
+      - 39-32 32:W+0.5 round:2 sgf:2021/u12/2-Lejla_Mudarisova-Lukas_Rak.sgf ogs:https://online-go.com/game/37858272
+      - 39-40 39:B+17.5 round:1 sgf:2021/u12/1-Lejla_Mudarisova-Violeta_Gorbulska.sgf ogs:https://online-go.com/game/37852624
+      - 39-46 39:B+5.5 round:6 sgf:2021/u12/6-Lejla_Mudarisova-Serban_Rus.sgf ogs:https://online-go.com/game/37913518
+      - 40-38 38:W+20.5 round:6 sgf:2021/u12/6-VioletaGorbulska-MaxymRudyk.sgf ogs:https://online-go.com/game/37913320
+      - 40-43 40:B+21.5 round:2 sgf:2021/u12/2-VioletaGorbulska-DanielAjdanaleev.sgf ogs:https://online-go.com/game/37858619
+      - 40-46 40:B+25.5 round:4 sgf:2021/u12/4-VioletaGorbulska-SerbanRus.sgf ogs:https://online-go.com/game/37886377
+      - 41-39 39:W+29.5 round:3 sgf:2021/u12/3-EgorDunaev-LejlaMudarisova.sgf ogs:https://online-go.com/game/37878940
+      - 41-44 41:B+143.5 round:6 sgf:2021/u12/6-EgorDunaev-SarpOzturk.sgf ogs:https://online-go.com/game/37913309
+      - 41-45 41:B+5.5 round:5 sgf:2021/u12/5-EgorDunaev-JakovSicic.sgf ogs:https://online-go.com/game/37906713
+      - 41-49 41:B+74.5 round:2 sgf:2021/u12/2-EgorDunaev-EduardIugulescu.sgf ogs:https://online-go.com/game/37858047
+      - 42-34 34:W+25.5 round:5 sgf:2021/u12/5-Eliot_Zeng_Lussereau-Maxim_Dunaev.sgf ogs:https://online-go.com/game/37906849
+      - 42-36 36:W+11.5 round:3 sgf:2021/u12/3-Eliot_Zeng_Lussereau-Vira_Chernova.sgf ogs:https://online-go.com/game/37879139
+      - 42-44 42:B+115.5 round:4 sgf:2021/u12/4-Eliot_Zeng_Lussereau-Sarp_Ozturk.sgf ogs:https://online-go.com/game/37886154
+      - 43-41 41:W+6.5 round:4 sgf:2021/u12/4-Daniel_Ajdanaleev-Egor_Dunaev.sgf ogs:https://online-go.com/game/37886042
+      - 43-47 43:B+51.5 round:1 sgf:2021/u12/1-Daniel_Ajdanaleev-Mihail_Patrascuta.sgf ogs:https://online-go.com/game/37851901
+      - 43-49 43:B+18.5 round:6 sgf:2021/u12/6-Daniel_Ajdanaleev-Eduard_Iugulescu.sgf ogs:https://online-go.com/game/37913276
+      - 44-37 37:W+71.5 round:3 sgf:2021/u12/3-Sarp_Ozturk-Csaba_Ifj_Kis_Gado.sgf ogs:https://online-go.com/game/37878957
+      - 44-40 40:W+105.5 round:5 sgf:2021/u12/5-Sarp_Ozturk-Violeta_Gorbulska.sgf ogs:https://online-go.com/game/37906933
+      - 45-38 38:W+R round:4 sgf:2021/u12/4-Jakov_Sicic-Maxym_Rudyk.sgf ogs:https://online-go.com/game/37886147
+      - 45-47 45:B+25.5 round:3 sgf:2021/u12/3-Jakov_Sicic-Mihail_Patrascuta.sgf ogs:https://online-go.com/game/37879132
+      - 45-48 45:B+25.5 round:6 sgf:2021/u12/6-Jakov_Sicic-Danay_Aytaliev.sgf ogs:https://online-go.com/game/37913430
+      - 46-45 46:B+R round:2 sgf:2021/u12/2-SerbanRus-JakovSicic.sgf ogs:https://online-go.com/game/37858158
+      - 46-47 46:B+11.5 round:5 sgf:2021/u12/5-Serban_Rus-Mihail_Patrascuta.sgf ogs:https://online-go.com/game/37906782
+      - 47-49 47:B+144.5 round:4 sgf:2021/u12/4-Mihail_Patrascuta-Eduard_Iugulescu.sgf ogs:https://online-go.com/game/37886003
+      - 47-50 47:B+51.5 round:2 sgf:2021/u12/2-Mihail_Patrascuta-Andrej_Nikulin.sgf ogs:https://online-go.com/game/37858583
+      - 47-51 47:B+28.5 round:6 sgf:2021/u12/6-Mihail_Patrascuta-Daniil_Krajnov.sgf ogs:https://online-go.com/game/37913397
+      - 48-27 27:W+17.5 round:1 sgf:2021/u12/1-Danay_Aytaliev-Andrew_Volovich.sgf ogs:https://online-go.com/game/37852662
+      - 48-50 48:B+105.5 round:4 sgf:2021/u12/4-Danay_Aytaliev-Andrej_Nikulin.sgf ogs:https://online-go.com/game/37886529
+      - 49-48 48:W+41.5 round:5 sgf:2021/u12/5-Eduard_Iugulescu-Danay_Aytaliev.sgf ogs:https://online-go.com/game/37906837
+      - 49-51 49:B+9.5 round:1 sgf:2021/u12/1-Eduard_Iugulescu-Daniil_Krajnov.sgf ogs:https://online-go.com/game/37852010
+      - 50-43 43:W+109.5 round:5 sgf:2021/u12/5-Andrej_Nikulin-Daniel_Ajdanaleev.sgf ogs:https://online-go.com/game/37907179
+      - 50-46 46:W+R round:1 sgf:2021/u12/1-Andrej_Nikulin-Serban_Rus.sgf ogs:https://online-go.com/game/37852668
+      - 50-49 49:W+6.5 round:3 sgf:2021/u12/3-Andrej_Nikulin-Eduard_Iugulescu.sgf ogs:https://online-go.com/game/37882718
+      - 51-48 48:W+139.5 round:2 sgf:2021/u12/2-Daniil_Krajnov-Danay_Aytaliev.sgf ogs:https://online-go.com/game/37858188
   - type: tournament
     file: eygc2021u16.txt
     category: u16
     name: U16
+    dir: 2021/u16
     scoringColumns:
-      - mms 
+      - mms
       - wins
       - null
       - sos
@@ -29,22 +180,250 @@ stages:
     breakers:
       - mms
       - sos
-      - sosos     
+      - sosos
+    columns:
+      - wins
     findSharedPlaces: true
-    collapsed: true    
+    collapsed: true
+    games:
+      - 1-6 1:B+21.5 round:4 sgf:2021/u16/4-Alexandr_Muromcev-Askar_Khusainov.sgf ogs:https://online-go.com/game/37886205
+      - 2-3 2:B+R round:5 sgf:2021/u16/5-Egor_Lavrov-Vsevolod_Ovsiienko.sgf ogs:https://online-go.com/game/37906920
+      - 2-16 2:B+R round:3 sgf:2021/u16/3-Egor_Lavrov-Anna_Melnyk.sgf ogs:https://online-go.com/game/37878919
+      - 2-21 2:B+R round:2 sgf:2021/u16/2-Egor_Lavrov-Jaroslav_Krajnov.sgf ogs:https://online-go.com/game/37858210
+      - 3-1 1:W+R round:6 sgf:2021/u16/6-Vsevolod_Ovsiienko-Alexandr_Muromcev.sgf ogs:https://online-go.com/game/37913362
+      - 3-5 3:B+R round:4 sgf:2021/u16/4-Vsevolod_Ovsiienko-Davide_Bernardis.sgf ogs:https://online-go.com/game/37886070
+      - 3-13 3:B+6.5 round:2 sgf:2021/u16/2-Vsevolod_Ovsiienko-Yuze_Xing.sgf ogs:https://online-go.com/game/37858225
+      - 4-3 3:W+R round:3 sgf:2021/u16/3-Alexej_Igonin-Vsevolod_Ovsiienko.sgf ogs:https://online-go.com/game/37878970
+      - 4-15 4:B+17.5 round:1 sgf:2021/u16/1-Alexej_Igonin-Stefan_Adrian_Rotarita.sgf ogs:https://online-go.com/game/37851981
+      - 5-2 2:W+0.5 round:6 sgf:2021/u16/6-Davide_Bernardis-Egor_Lavrov.sgf ogs:https://online-go.com/game/37913312
+      - 5-9 5:B+R round:2 sgf:2021/u16/2-Davide_Bernardis-Dragos_Boldeanu.sgf ogs:https://online-go.com/game/37858166
+      - 5-14 5:B+5.5 round:1 sgf:2021/u16/1-Davide_Bernardis-Alexandr_Galimov.sgf ogs:https://online-go.com/game/37851741
+      - 6-7 6:B+R round:2 sgf:2021/u16/2-Askar_Khusainov-Nikita_Prikarev.sgf ogs:https://online-go.com/game/37858212
+      - 6-8 6:B+R round:6 sgf:2021/u16/6-Askar_Khusainov-Olesia_Malko.sgf ogs:https://online-go.com/game/37913488
+      - 6-18 6:B+0.5 round:3 sgf:2021/u16/3-Askar_Khusainov-Artemij_Pishchalnikov.sgf ogs:https://online-go.com/game/37879009
+      - 7-16 7:B+8.5 round:4 sgf:2021/u16/4-Nikita_Prikarev-Anna_Melnyk.sgf ogs:https://online-go.com/game/37886180
+      - 8-1 1:W+11.5 round:5 sgf:2021/u16/5-Olesia_Malko-Alexandr_Muromcev.sgf ogs:https://online-go.com/game/37906863
+      - 8-5 5:W+R round:3 sgf:2021/u16/3-Olesia_Malko-Davide_Bernardis.sgf ogs:https://online-go.com/game/37878941
+      - 8-10 8:B+6.5 round:4 sgf:2021/u16/4-Olesia_Malko-Ivan_Klochikhin.sgf ogs:https://online-go.com/game/37886498
+      - 9-2 9:B+R round:1 sgf:2021/u16/1-DragosBoldeanu-EgorLavrov.sgf ogs:https://online-go.com/game/37851692
+      - 9-6 6:W+1.5 round:5 sgf:2021/u16/5-Dragos_Boldeanu-Askar_Khusainov.sgf ogs:https://online-go.com/game/37907082
+      - 9-17 17:W+7.5 round:3 sgf:2021/u16/3-DragosBoldeanu-OleksandrShchepaniuk.sgf ogs:https://online-go.com/game/37878969
+      - 10-3 3:W+R round:1 sgf:2021/u16/1-Ivan_Klochikhin-Vsevolod_Ovsiienko.sgf ogs:https://online-go.com/game/37852476
+      - 10-4 4:W+6.5 round:5 sgf:2021/u16/5-Ivan_Klochikhin-Alexej_Igonin.sgf ogs:https://online-go.com/game/37906861
+      - 10-12 10:B+9.5 round:2 sgf:2021/u16/2-Ivan_Klochikhin-Robert_Andrei_Grosu.sgf ogs:https://online-go.com/game/37858352
+      - 11-7 7:W+14.5 round:3 sgf:2021/u16/3-Oleg_Nagornov-Nikita_Prikarev.sgf ogs:https://online-go.com/game/37878843
+      - 11-8 8:W+7.5 round:1 sgf:2021/u16/1-Oleg_Nagornov-Olesia_Malko.sgf ogs:https://online-go.com/game/37852210
+      - 11-18 11:B+R round:5 sgf:2021/u16/5-Oleg_Nagornov-Artemij_Pishchalnikov.sgf ogs:https://online-go.com/game/37906673
+      - 12-13 12:B+15.5 round:6 sgf:2021/u16/6-Robert_Andrei_Grosu-Yuze_Xing.sgf ogs:https://online-go.com/game/37913702
+      - 12-19 12:B+R round:4 sgf:2021/u16/4-RobertAndreiGrosu-ScottCobbold.sgf ogs:https://online-go.com/game/37886183
+      - 12-20 12:B+9.5 round:1 sgf:2021/u16/1-Robert_Andrei_Grosu-Polina_Krushelnytska.sgf ogs:https://online-go.com/game/37852196
+      - 13-6 13:B+R round:1 sgf:2021/u16/1-Yuze_Xing-Askar_Khusainov.sgf ogs:https://online-go.com/game/37852011
+      - 13-7 7:W+25.5 round:5 sgf:2021/u16/5-Yuze_Xing-Nikita_Prikarev.sgf ogs:https://online-go.com/game/37907314
+      - 13-10 10:W+6.5 round:3 sgf:2021/u16/3-Yuze_Xing-Ivan_Klochikhin.sgf ogs:https://online-go.com/game/37879048
+      - 14-1 1:W+15.5 round:3 sgf:2021/u16/3-Alexandr_Galimov-Alexandr_Muromcev.sgf ogs:https://online-go.com/game/37878986
+      - 14-9 9:W+26.5 round:4 sgf:2021/u16/4-Alexandr_Galimov-Dragos_Boldeanu.sgf ogs:https://online-go.com/game/37886141
+      - 14-12 12:W+10.5 round:5 sgf:2021/u16/5-Alexandr_Galimov-Robert_Andrei_Grosu.sgf ogs:https://online-go.com/game/37906968
+      - 15-5 5:W+15.5 round:5 sgf:2021/u16/5-Stefan_Adrian_Rotarita-Davide_Bernardis.sgf ogs:https://online-go.com/game/37906852
+      - 15-11 11:W+10.5 round:6 sgf:2021/u16/6-Stefan_Adrian_Rotarita-Oleg_Nagornov.sgf ogs:https://online-go.com/game/37913416
+      - 15-14 14:W+40.5 round:2 sgf:2021/u16/2-StefanAdrianRotarita-AlexandrGalimov.sgf ogs:https://online-go.com/game/37858236
+      - 16-11 16:B+R round:2 sgf:2021/u16/2-Anna_Melnyk-Oleg_Nagornov.sgf ogs:https://online-go.com/game/37858204
+      - 16-18 18:W+R round:1 sgf:2021/u16/1-Anna_Melnyk-Artemij_Pishchalnikov.sgf ogs:https://online-go.com/game/37851559
+      - 16-23 16:B+R round:6 sgf:2021/u16/6-Anna_Melnyk-Dmytro_Stefanovych.sgf ogs:https://online-go.com/game/37913413
+      - 17-10 10:W+R round:6 sgf:2021/u16/6-Oleksandr_Shchepaniuk-Ivan_Klochikhin.sgf ogs:https://online-go.com/game/37913384
+      - 17-13 13:W+0.5 round:4 sgf:2021/u16/4-Oleksandr_Shchepaniuk-Yuze_Xing.sgf ogs:https://online-go.com/game/37886267
+      - 17-16 17:B+4.5 round:5 sgf:2021/u16/5-Oleksandr_Shchepaniuk-Anna_Melnyk.sgf ogs:https://online-go.com/game/37906890
+      - 17-23 17:B+13.5 round:2 sgf:2021/u16/2-Oleksandr_Shchepaniuk-Dmytro_Stefanovych.sgf ogs:https://online-go.com/game/37858230
+      - 18-8 8:W+R round:2 sgf:2021/u16/2-ArtemijPishchalnikov-OlesiaMalko.sgf ogs:https://online-go.com/game/37858303
+      - 18-14 14:W+8.5 round:6 sgf:2021/u16/6-ArtemijPishchalnikov-AlexandrGalimov.sgf ogs:https://online-go.com/game/37913449
+      - 18-15 15:W+1.5 round:4 sgf:2021/u16/4-ArtemijPishchalnikov-StefanAdrianRotarita.sgf ogs:https://online-go.com/game/37886174
+      - 19-9 9:W+R round:6 sgf:2021/u16/6-ScottCobbold-DragosBoldeanu.sgf ogs:https://online-go.com/game/37913526
+      - 19-20 19:B+R round:5 sgf:2021/u16/5-ScottCobbold-PolinaKrushelnytska.sgf ogs:https://online-go.com/game/37907033
+      - 19-22 19:B+31.5 round:3 sgf:2021/u16/3-ScottCobbold-OndrejKralik.sgf ogs:https://online-go.com/game/37879057
+      - 20-21 20:B+R round:4 sgf:2021/u16/4-Polina_Krushelnytska-Jaroslav_Krajnov.sgf ogs:https://online-go.com/game/37886440
+      - 20-22 22:W+5.5 round:2 sgf:2021/u16/2-Polina_Krushelnytska-Ondrej_Kralik.sgf ogs:https://online-go.com/game/37857949
+      - 20-25 20:B+R round:6 sgf:2021/u16/6-Polina_Krushelnytska-Karlo_Vlahovic.sgf ogs:https://online-go.com/game/37913465
+      - 21-15 15:W+3.5 round:3 sgf:2021/u16/3-Jaroslav_Krajnov-Stefan_Adrian_Rotarita.sgf ogs:https://online-go.com/game/37879024
+      - 21-24 21:B+R round:6 sgf:2021/u16/6-Jaroslav_Krajnov-Maxim_Nikulin.sgf ogs:https://online-go.com/game/37913595
+      - 22-11 11:W+20.5 round:4 sgf:2021/u16/4-Ondrej_Kralik-Oleg_Nagornov.sgf ogs:https://online-go.com/game/37886146
+      - 22-17 17:W+34.5 round:1 sgf:2021/u16/1-Ondrej_Kralik-Oleksandr_Shchepaniuk.sgf ogs:https://online-go.com/game/37851772
+      - 22-25 25:W+R round:5 sgf:2021/u16/5-Ondrej_Kralik-Karlo_Vlahovic.sgf ogs:https://online-go.com/game/37906661
+      - 23-20 20:W+9.5 round:3 sgf:2021/u16/3-Dmytro_Stefanovych-Polina_Krushelnytska.sgf ogs:https://online-go.com/game/37878993
+      - 23-21 23:B+18.5 round:5 sgf:2021/u16/5-Dmytro_Stefanovych-Jaroslav_Krajnov.sgf ogs:https://online-go.com/game/37906924
+      - 23-25 23:B+20.5 round:1 sgf:2021/u16/1-Dmytro_Stefanovych-Karlo_Vlahovic.sgf ogs:https://online-go.com/game/37851644
+      - 24-12 12:W+12.5 round:3 sgf:2021/u16/3-Maxim_Nikulin-Robert_Andrei_Grosu.sgf ogs:https://online-go.com/game/37879008
+      - 24-23 23:W+R round:4 sgf:2021/u16/4-Maxim_Nikulin-Dmytro_Stefanovych.sgf ogs:https://online-go.com/game/37886027
+      - 25-24 24:W+1.5 round:2 sgf:2021/u16/2-Karlo_Vlahovic-Maxim_Nikulin.sgf ogs:https://online-go.com/game/37858462
+      - 25-27 25:B+21.5 round:4 sgf:2021/u16/4-Karlo_Vlahovic-Roko_Crvelin.sgf ogs:https://online-go.com/game/37886191
+      - 26-24 24:W+R round:5 sgf:2021/u16/5-Roman_Kushnerik-Maxim_Nikulin.sgf ogs:https://online-go.com/game/37907110
+      - 26-25 25:W+9.5 round:3 sgf:2021/u16/3-Roman_Kushnerik-Karlo_Vlahovic.sgf ogs:https://online-go.com/game/37879003
+      - 26-33 26:B+35.5 round:1 sgf:2021/u16/1-Roman_Kushnerik-Zsofia_Simon.sgf ogs:https://online-go.com/game/37851812
+      - 27-22 22:W+104.5 round:6 sgf:2021/u16/6-Roko_Crvelin-Ondrej_Kralik.sgf ogs:https://online-go.com/game/37913294
+      - 27-26 26:W+19.5 round:2 sgf:2021/u16/2-Roko_Crvelin-Roman_Kushnerik.sgf ogs:https://online-go.com/game/37858596
+      - 27-29 27:B+R round:3 sgf:2021/u16/3-Roko_Crvelin-Ivan_Krasivskyi.sgf ogs:https://online-go.com/game/37878900
+      - 27-30 27:B+8.5 round:5 sgf:2021/u16/5-Roko_Crvelin-Yuliia_Sychinska.sgf ogs:https://online-go.com/game/37906743
+      - 28-26 26:W+73.5 round:4 sgf:2021/u16/4-Matei_Stefan_Baldea-Roman_Kushnerik.sgf ogs:https://online-go.com/game/37886212
+      - 28-34 28:B+62.5 round:5 sgf:2021/u16/5-Matei_Stefan_Baldea-Ladislav_jr_Koran.sgf ogs:https://online-go.com/game/37906785
+      - 28-39 28:B+R round:1 sgf:2021/u16/1-Matei_Stefan_Baldea-Kamil_Urmanche.sgf ogs:https://online-go.com/game/37851758
+      - 29-24 24:W+0.5 round:1 sgf:2021/u16/1-Ivan_Krasivskyi-Maxim_Nikulin.sgf ogs:https://online-go.com/game/37851979
+      - 29-28 28:W+43.5 round:6 sgf:2021/u16/6-Ivan_Krasivskyi-Matei_Stefan_Baldea.sgf ogs:https://online-go.com/game/37913407
+      - 29-30 29:B+59.5 round:4 sgf:2021/u16/4-Ivan_Krasivskyi-Yuliia_Sychinska.sgf ogs:https://online-go.com/game/37886335
+      - 29-31 31:W+9.5 round:5 sgf:2021/u16/5-Ivan_Krasivskyi-Danylo_Petrashevskyi.sgf ogs:https://online-go.com/game/37906835
+      - 30-28 28:W+28.5 round:2 sgf:2021/u16/2-Yuliia_Sychinska-Matei_Stefan_Baldea.sgf ogs:https://online-go.com/game/37858203
+      - 30-33 30:B+R round:3 sgf:2021/u16/3-Yuliia_Sychinska-Zsofia_Simon.sgf ogs:https://online-go.com/game/37879369
+      - 31-26 26:W+35.5 round:6 sgf:2021/u16/6-Danylo_Petrashevskyi-Roman_Kushnerik.sgf ogs:https://online-go.com/game/37913412
+      - 31-27 27:W+55.5 round:1 sgf:2021/u16/1-Danylo_Petrashevskyi-Roko_Crvelin.sgf ogs:https://online-go.com/game/37851547
+      - 31-39 31:B+44.5 round:3 sgf:2021/u16/3-Danylo_Petrashevskyi-Kamil_Urmanche.sgf ogs:https://online-go.com/game/37878971
+      - 32-33 32:B+34.5 round:6 sgf:2021/u16/6-Maryna_Doronina-Zsofia_Simon.sgf ogs:https://online-go.com/game/37913433
+      - 32-34 34:W+60.5 round:1 sgf:2021/u16/1-Maryna_Doronina-Ladislav_jr_Koran.sgf ogs:https://online-go.com/game/37851761
+      - 32-36 32:B+50.5 round:4 sgf:2021/u16/4-Maryna_Doronina-Petro_Prydatkevych.sgf ogs:https://online-go.com/game/37886632
+      - 33-29 29:W+R round:2 sgf:2021/u16/2-Zsofia_Simon-Ivan_Krasivskyi.sgf ogs:https://online-go.com/game/37858257
+      - 33-31 31:W+52.5 round:4 sgf:2021/u16/4-Zsofia_Simon-Danylo_Petrashevskyi.sgf ogs:https://online-go.com/game/37886190
+      - 33-35 33:B+R round:5 sgf:2021/u16/5-Zsofia_Simon-Bogdan_Stefan_Tifrea.sgf ogs:https://online-go.com/game/37906813
+      - 34-30 30:W+18.5 round:6 sgf:2021/u16/6-Ladislav_jr_Koran-Yuliia_Sychinska.sgf ogs:https://online-go.com/game/37913371
+      - 34-31 34:B+37.5 round:2 sgf:2021/u16/2-Ladislav_jr_Koran-Danylo_Petrashevskyi.sgf ogs:https://online-go.com/game/37858082
+      - 34-36 34:B+0.5 round:3 sgf:2021/u16/3-Ladislav_jr_Koran-Petro_Prydatkevych.sgf ogs:https://online-go.com/game/37878952
+      - 35-28 28:W+34.5 round:3 sgf:2021/u16/3-Bogdan_Stefan_Tifrea-Matei_Stefan_Baldea.sgf ogs:https://online-go.com/game/37878888
+      - 35-30 30:W+2.5 round:1 sgf:2021/u16/1-Bogdan_Stefan_Tifrea-Yuliia_Sychinska.sgf ogs:https://online-go.com/game/37851965
+      - 35-34 34:W+R round:4 sgf:2021/u16/4-Bogdan_Stefan_Tifrea-Ladislav_jr_Koran.sgf ogs:https://online-go.com/game/37886071
+      - 36-35 35:W+16.5 round:2 sgf:2021/u16/2-Petro_Prydatkevych-Bogdan_Stefan_Tifrea.sgf ogs:https://online-go.com/game/37858213
+      - 36-38 38:W+55.5 round:5 sgf:2021/u16/5-Petro_Prydatkevych-Bohdan_Kovalchuk.sgf ogs:https://online-go.com/game/37906870
+      - 36-39 36:B+0.5 round:6 sgf:2021/u16/6-Petro_Prydatkevych-Kamil_Urmanche.sgf ogs:https://online-go.com/game/37913508
+      - 37-32 32:W+40.5 round:2 sgf:2021/u16/2-Vladimir_Antropov-Maryna_Doronina.sgf ogs:https://online-go.com/game/37858606
+      - 37-36 36:W+27.5 round:1 sgf:2021/u16/1-Vladimir_Antropov-Petro_Prydatkevych.sgf ogs:https://online-go.com/game/37851614
+      - 38-35 35:W+20.5 round:6 sgf:2021/u16/6-Bohdan_Kovalchuk-Bogdan_Stefan_Tifrea.sgf ogs:https://online-go.com/game/37913431
+      - 38-40 38:B+R round:4 sgf:2021/u16/4-Bohdan_Kovalchuk-Mark_Sardarov.sgf ogs:https://online-go.com/game/37886202
+      - 38-46 38:B+62.5 round:1 sgf:2021/u16/1-Bohdan_Kovalchuk-Asha_Acin_Kanbolat.sgf ogs:https://online-go.com/game/37851525
+      - 39-32 32:W+73.5 round:5 sgf:2021/u16/5-Kamil_Urmanche-Maryna_Doronina.sgf ogs:https://online-go.com/game/37906942
+      - 39-37 39:B+R round:4 sgf:2021/u16/4-Kamil_Urmanche-Vladimir_Antropov.sgf ogs:https://online-go.com/game/37885890
+      - 39-40 40:W+47.5 round:2 sgf:2021/u16/2-KamilUrmanche-MarkSardarov.sgf ogs:https://online-go.com/game/37858190
+      - 40-32 32:W+31.5 round:3 sgf:2021/u16/3-Mark_Sardarov-Maryna_Doronina.sgf ogs:https://online-go.com/game/37879075
+      - 40-37 37:W+23.5 round:6 sgf:2021/u16/6-Mark_Sardarov-Vladimir_Antropov.sgf ogs:https://online-go.com/game/37913463
+      - 40-41 40:B+29.5 round:1 sgf:2021/u16/1-Mark_Sardarov-Teo_Sladetic.sgf ogs:https://online-go.com/game/37852163
+      - 41-37 37:W+33.5 round:3 sgf:2021/u16/3-Teo_Sladetic-Vladimir_Antropov.sgf ogs:https://online-go.com/game/37878856
+      - 41-38 38:W+6.5 round:2 sgf:2021/u16/2-Teo_Sladetic-Bohdan_Kovalchuk.sgf ogs:https://online-go.com/game/37858441
+      - 41-45 41:B+R round:5 sgf:2021/u16/5-Teo_Sladetic-Jan_Kudla.sgf ogs:https://online-go.com/game/37906875
+      - 42-37 37:W+3.5 round:5 sgf:2021/u16/5-Hanna_Kudla-Vladimir_Antropov.sgf ogs:https://online-go.com/game/37906916
+      - 42-38 38:W+R round:3 sgf:2021/u16/3-Hanna_Kudla-Bohdan_Kovalchuk.sgf ogs:https://online-go.com/game/37879235
+      - 42-41 41:W+R round:6 sgf:2021/u16/6-Hanna_Kudla-Teo_Sladetic.sgf ogs:https://online-go.com/game/37913521
+      - 43-40 40:W+1.5 round:5 sgf:2021/u16/5-Tonka_Zderic-Mark_Sardarov.sgf ogs:https://online-go.com/game/37907042
+      - 43-42 42:W+11.5 round:4 sgf:2021/u16/4-Tonka_Zderic-Hanna_Kudla.sgf ogs:https://online-go.com/game/37886167
+      - 43-45 43:B+49.5 round:2 sgf:2021/u16/2-Tonka_Zderic-Jan_Kudla.sgf ogs:https://online-go.com/game/37858484
+      - 44-41 41:W+R round:4 sgf:2021/u16/4-Ayse_Nil_Oncel-Teo_Sladetic.sgf ogs:https://online-go.com/game/37885837
+      - 44-43 43:W+42.5 round:1 sgf:2021/u16/1-Ayse_Nil_Oncel-Tonka_Zderic.sgf ogs:https://online-go.com/game/37851732
+      - 44-45 44:B+10.5 round:3 sgf:2021/u16/3-Ayse_Nil_Oncel-Jan_Kudla.sgf ogs:https://online-go.com/game/37879001
+      - 44-46 44:B+76.5 round:6 sgf:2021/u16/6-Ayse_Nil_Oncel-Asha_Acin_Kanbolat.sgf ogs:https://online-go.com/game/37913337
+      - 45-47 45:B+5.5 round:1 sgf:2021/u16/1-Jan_Kudla-Antun_Derencin.sgf ogs:https://online-go.com/game/37851952
+      - 46-42 42:W+93.5 round:2 sgf:2021/u16/2-Asha_Acin_Kanbolat-Hanna_Kudla.sgf ogs:https://online-go.com/game/37858281
+      - 46-43 43:W+R round:3 sgf:2021/u16/3-Asha_Acin_Kanbolat-Tonka_Zderic.sgf ogs:https://online-go.com/game/37878988
+      - 46-45 45:W+17.5 round:4 sgf:2021/u16/4-Asha_Acin_Kanbolat-Jan_Kudla.sgf ogs:https://online-go.com/game/37886188
+      - 47-43 43:W+15.5 round:6 sgf:2021/u16/6-Antun_Derencin-Tonka_Zderic.sgf ogs:https://online-go.com/game/37913511
+      - 47-44 47:B+R round:2 sgf:2021/u16/2-Antun_Derencin-Ayse_Nil_Oncel.sgf ogs:https://online-go.com/game/37858251
+      - 47-46 47:B+22.5 round:5 sgf:2021/u16/5-Antun_Derencin-Asha_Acin_Kanbolat.sgf ogs:https://online-go.com/game/37906878
+      - 47-48 48:W+0.5 round:3 sgf:2021/u16/3-Antun_Derencin-Pavel_Shapin.sgf ogs:https://online-go.com/game/37878870
+      - 48-44 44:W+47.5 round:5 sgf:2021/u16/5-PavelShapin-AyseNilOncel.sgf ogs:https://online-go.com/game/37906584
+      - 48-49 49:W+15.5 round:4 sgf:2021/u16/4-PavelShapin-AdamSiwy.sgf ogs:https://online-go.com/game/37886055
+      - 48-51 48:B+6.5 round:2 sgf:2021/u16/2-PavelShapin-EnejSuc.sgf ogs:https://online-go.com/game/37858468
+      - 49-50 49:B+96.5 round:3 sgf:2021/u16/3-Adam_Siwy-Danijel_Procek.sgf ogs:https://online-go.com/game/37879071
+      - 49-53 49:B+123.5 round:2 sgf:2021/u16/2-Adam_Siwy-Dina_Antepli.sgf ogs:https://online-go.com/game/37858311
+      - 50-45 45:W+171.5 round:6 sgf:2021/u16/6-Danijel_Procek-Jan_Kudla.sgf ogs:https://online-go.com/game/37913537
+      - 50-47 47:W+102.5 round:4 sgf:2021/u16/4-Danijel_Procek-Antun_Derencin.sgf ogs:https://online-go.com/game/37886139
+      - 50-48 48:W+286.5 round:1 sgf:2021/u16/1-Danijel_Procek-Pavel_Shapin.sgf ogs:https://online-go.com/game/37852361
+      - 50-53 50:B+R round:5 sgf:2021/u16/5-Danijel_Procek-Dina_Antepli.sgf ogs:https://online-go.com/game/37906660
+      - 51-52 51:B+73.5 round:4 sgf:2021/u16/4-Enej_Suc-Ege_Ergun.sgf ogs:https://online-go.com/game/37886312
+      - 52-48 48:W+141.5 round:6 sgf:2021/u16/6-Ege_Ergun-Pavel_Shapin.sgf ogs:https://online-go.com/game/37914005
+      - 52-49 49:W+106.5 round:1 sgf:2021/u16/1-Ege_Ergun-Adam_Siwy.sgf ogs:https://online-go.com/game/37852034
+      - 52-50 50:W+44.5 round:2 sgf:2021/u16/2-Ege_Ergun-Danijel_Procek.sgf ogs:https://online-go.com/game/37858178
+      - 52-53 52:B+33.5 round:3 sgf:2021/u16/3-Ege_Ergun-Dina_Antepli.sgf ogs:https://online-go.com/game/37878777
   - type: tournament
     file: eygc2021u20.txt
     category: u20
     name: U20
+    dir: 2021/u20
     scoringColumns:
-      - mms 
+      - mms
       - wins
       - null
       - sos
-      - sosos      
+      - sosos
     breakers:
       - mms
       - sos
-      - sosos     
+      - sosos
+    columns:
+      - wins
     findSharedPlaces: true
     collapsed: true
+    games:
+      - 1-2 1:B+R round:4 sgf:2021/u20/4-OscarVazquez-ArvedPittner.sgf ogs:https://online-go.com/game/37885912
+      - 1-5 1:B+R round:2 sgf:2021/u20/2-OscarVazquez-VasilijJakovlevChernyshev.sgf ogs:https://online-go.com/game/37858060
+      - 1-7 1:B+R round:3 sgf:2021/u20/3-OscarVazquez-RakhmatDemenshin.sgf ogs:https://online-go.com/game/37879005
+      - 2-3 2:B+R round:2 sgf:2021/u20/2-ArvedPittner-SavvaMezin.sgf ogs:https://online-go.com/game/37858200
+      - 2-6 2:B+0.5 round:3 sgf:2021/u20/3-ArvedPittner-ElianIoanGrigoriu.sgf ogs:https://online-go.com/game/37878873
+      - 2-8 2:B+R round:6 sgf:2021/u20/6-ArvedPittner-BenoitRobichon.sgf ogs:https://online-go.com/game/37913370
+      - 3-1 1:W+7.5 round:6 sgf:2021/u20/6-SavvaMezin-OscarVazquez.sgf ogs:https://online-go.com/game/37913447
+      - 3-8 3:B+11.5 round:1 sgf:2021/u20/1-SavvaMezin-BenoitRobichon.sgf ogs:https://online-go.com/game/37852182
+      - 4-1 1:W+R round:5 sgf:2021/u20/5-GuillaumeOugier-OscarVazquez.sgf ogs:https://online-go.com/game/37906817
+      - 4-7 4:B+R round:4 sgf:2021/u20/4-GuillaumeOugier-RakhmatDemenshin.sgf ogs:https://online-go.com/game/37886173
+      - 4-14 4:B+R round:1 sgf:2021/u20/1-GuillaumeOugier-RomanGerloff.sgf ogs:https://online-go.com/game/37851942
+      - 5-2 2:W+R round:5 sgf:2021/u20/5-VasilijJakovlevChernyshev-ArvedPittner.sgf ogs:https://online-go.com/game/37906884
+      - 5-10 5:B+T round:4 sgf:2021/u20/4-VasilijJakovlevChernyshev-DenisDobranis.sgf ogs:https://online-go.com/game/37886182
+      - 5-15 5:B+23.5 round:1 sgf:2021/u20/1-VasilijJakovlevChernyshev-ArkadijLebedev.sgf ogs:https://online-go.com/game/37851927
+      - 6-3 3:W+R round:5 sgf:2021/u20/5-ElianIoanGrigoriu-SavvaMezin.sgf ogs:https://online-go.com/game/37906839
+      - 6-4 6:B+R round:2 sgf:2021/u20/2-ElianIoanGrigoriu-GuillaumeOugier.sgf ogs:https://online-go.com/game/37858012
+      - 6-9 6:B+21.5 round:1 sgf:2021/u20/1-ElianIoanGrigoriu-AntonKrajnov.sgf ogs:https://online-go.com/game/37852107
+      - 6-13 6:B+R round:6 sgf:2021/u20/6-ElianIoanGrigoriu-ValeriaKlochikhina.sgf ogs:https://online-go.com/game/37913401
+      - 7-5 5:W+2.5 round:6 sgf:2021/u20/6-RakhmatDemenshin-VasilijJakovlevChernyshev.sgf ogs:https://online-go.com/game/37913410
+      - 7-12 7:B+9.5 round:5 sgf:2021/u20/5-RakhmatDemenshin-VirzhiniaShalneva.sgf ogs:https://online-go.com/game/37906853
+      - 7-18 7:B+R round:1 sgf:2021/u20/1-RakhmatDemenshin-LjubovRudova.sgf ogs:https://online-go.com/game/37851918
+      - 8-4 4:W+R round:3 sgf:2021/u20/3-BenoitRobichon-GuillaumeOugier.sgf ogs:https://online-go.com/game/37878842
+      - 8-11 8:B+R round:5 sgf:2021/u20/5-BenoitRobichon-MirtaMedak.sgf ogs:https://online-go.com/game/37906850
+      - 8-16 8:B+R round:2 sgf:2021/u20/2-BenoitRobichon-VukDosanic.sgf ogs:https://online-go.com/game/37858119
+      - 9-4 4:W+R round:6 sgf:2021/u20/6-AntonKrajnov-GuillaumeOugier.sgf ogs:https://online-go.com/game/37913332
+      - 9-13 9:B+R round:2 sgf:2021/u20/2-AntonKrajnov-ValeriaKlochikhina.sgf ogs:https://online-go.com/game/37858541
+      - 9-16 9:B+R round:4 sgf:2021/u20/4-AntonKrajnov-VukDusanic.sgf ogs:https://online-go.com/game/37886378
+      - 10-7 7:W+R round:2 sgf:2021/u20/2-DenisDobranis-RakhmatDemenshin.sgf ogs:https://online-go.com/game/37858243
+      - 10-9 9:W+R round:5 sgf:2021/u20/5-DenisDobranis-AntonKrajnov.sgf ogs:https://online-go.com/game/37906910
+      - 11-3 3:W+R round:4 sgf:2021/u20/4-MirtaMedak-SavvaMezin.sgf ogs:https://online-go.com/game/37885913
+      - 11-10 10:W+R round:1 sgf:2021/u20/1-MirtaMedak-DenisDobranis.sgf ogs:https://online-go.com/game/37852008
+      - 11-15 11:B+18.5 round:3 sgf:2021/u20/3-MirtaMedak-ArkadijLebedev.sgf ogs:https://online-go.com/game/37878867
+      - 12-1 1:W+R round:1 sgf:2021/u20/1-VirzhiniaShalneva-OscarVazquez.sgf ogs:https://online-go.com/game/37851954
+      - 12-10 10:W+R round:6 sgf:2021/u20/6-VirzhiniaShalneva-DenisDobranis.sgf ogs:https://online-go.com/game/37913475
+      - 12-11 11:W+R round:2 sgf:2021/u20/2-VirzhiniaShalneva-MirtaMedak.sgf ogs:https://online-go.com/game/37858099
+      - 13-2 2:W+R round:1 sgf:2021/u20/1-ValeriaKlochikhina-ArvedPittner.sgf ogs:https://online-go.com/game/37852459
+      - 13-12 12:W+4.5 round:4 sgf:2021/u20/4-ValeriaKlochikhina-VirzhiniaShalneva.sgf ogs:https://online-go.com/game/37886273
+      - 13-20 13:B+R round:3 sgf:2021/u20/3-ValeriaKlochikhina-BoazBillege.sgf ogs:https://online-go.com/game/37879667
+      - 14-5 5:W+R round:3 sgf:2021/u20/3-RomanGerloff-VasilijJakovlevChernyshev.sgf ogs:https://online-go.com/game/37878895
+      - 14-6 6:W+28.5 round:4 sgf:2021/u20/4-RomanGerloff-ElianIoanGrigoriu.sgf ogs:https://online-go.com/game/37885973
+      - 14-13 13:W+R round:5 sgf:2021/u20/5-RomanGerloff-ValeriaKlochikhina.sgf ogs:https://online-go.com/game/37906919
+      - 15-8 8:W+4.5 round:4 sgf:2021/u20/4-ArkadijLebedev-BenoitRobichon.sgf ogs:https://online-go.com/game/37885997
+      - 16-10 10:W+R round:3 sgf:2021/u20/3-VukDosanic-DenisDobranis.sgf ogs:https://online-go.com/game/37878966
+      - 16-17 16:B+6.5 round:1 sgf:2021/u20/1-Vukusanic-AlenaJakimova.sgf ogs:https://online-go.com/game/37852020
+      - 17-12 12:W+33.5 round:3 sgf:2021/u20/3-AlenaJakimova-VirzhiniaShalneva.sgf ogs:https://online-go.com/game/37878913
+      - 17-14 17:B+R round:6 sgf:2021/u20/6-AlenaJakimova-RomanGerloff.sgf ogs:https://online-go.com/game/37913334
+      - 17-20 20:W+8.5 round:2 sgf:2021/u20/2-AlenaJakimova-BoazBillege.sgf ogs:https://online-go.com/game/37858116
+      - 19-11 11:W+R round:6 sgf:2021/u20/6-UfukEmreYildirim-MirtaMedak.sgf ogs:https://online-go.com/game/37913387
+      - 19-17 19:B+R round:5 sgf:2021/u20/5-UfukEmreYildirim-AlenaJakimova.sgf ogs:https://online-go.com/game/37906895
+      - 19-21 19:B+R round:3 sgf:2021/u20/3-UfukEmreYildirim-AronGoschler.sgf ogs:https://online-go.com/game/37878939
+      - 19-23 19:B+R round:1 sgf:2021/u20/1-UfukEmreYildirim-VeronikaUstjuzhina.sgf ogs:https://online-go.com/game/37851969
+      - 20-16 16:W+36.5 round:5 sgf:2021/u20/5-BoazBillege-VukDusanic.sgf ogs:https://online-go.com/game/37906873
+      - 20-19 19:W+R round:4 sgf:2021/u20/4-BoazBillege-UfukEmreYildirim.sgf ogs:https://online-go.com/game/37886123
+      - 20-21 21:W+R round:1 sgf:2021/u20/1-BoazBillege-AronGoschler.sgf ogs:https://online-go.com/game/37852110
+      - 21-14 14:W+2.5 round:2 sgf:2021/u20/2-AronGoschler-RomanGerloff.sgf ogs:https://online-go.com/game/37858194
+      - 21-17 17:W+37.5 round:4 sgf:2021/u20/4-AronGoschler-AlenaJakimova.sgf ogs:https://online-go.com/game/37886318
+      - 21-23 21:B+R round:5 sgf:2021/u20/5-AronGoschler-VeronikaUstjuzhina.sgf ogs:https://online-go.com/game/37907015
+      - 22-19 19:W+52.5 round:2 sgf:2021/u20/2-PeterSimon-UfukEmreYildirim.sgf ogs:https://online-go.com/game/37858065
+      - 22-26 22:B+62.5 round:4 sgf:2021/u20/4-PeterSimon-IlimBaratbaev.sgf ogs:https://online-go.com/game/37886009
+      - 22-27 22:B+28.5 round:5 sgf:2021/u20/5-PeterSimon-BurkhonjonInomjonov.sgf ogs:https://online-go.com/game/37906869
+      - 23-22 22:W+62.5 round:3 sgf:2021/u20/3-VeronikaUstjuzhina-PeterSimon.sgf ogs:https://online-go.com/game/37879042
+      - 23-24 23:B+38.5 round:2 sgf:2021/u20/2-VeronikaUstjuzhina-DariaMariaMesesan.sgf ogs:https://online-go.com/game/37858488
+      - 23-27 23:B+55.5 round:6 sgf:2021/u20/6-VeronikaUstjuzhina-BurkhonjonInomjonov.sgf ogs:https://online-go.com/game/37913395
+      - 24-21 21:W+10.5 round:6 sgf:2021/u20/6-DariaMariaMesesan-AronGoschler.sgf ogs:https://online-go.com/game/37913617
+      - 24-22 22:W+R round:1 sgf:2021/u20/1-DariaMariaMesesan-PeterSimon.sgf ogs:https://online-go.com/game/37852139
+      - 24-25 25:W+36.5 round:5 sgf:2021/u20/5-DariaMariaMesesan-DavidBaldwin.sgf ogs:https://online-go.com/game/37906906
+      - 24-26 24:B+R round:3 sgf:2021/u20/3-DariaMariaMesesan-IlimBaratbaev.sgf ogs:https://online-go.com/game/37878821
+      - 25-22 22:W+20.5 round:6 sgf:2021/u20/6-DavidBaldwin-PeterSimon.sgf ogs:https://online-go.com/game/37913499
+      - 25-23 23:W+105.5 round:4 sgf:2021/u20/4-DavidBaldwin-VeronikaUstjuzhina.sgf ogs:https://online-go.com/game/37886114
+      - 26-20 20:W+81.5 round:6 sgf:2021/u20/6-IlimBaratbaev-BoazBillege.sgf ogs:https://online-go.com/game/37913398
+      - 26-27 26:B+53.5 round:2 sgf:2021/u20/2-IlimBaratbaev-BurkhonjonInomjonov.sgf ogs:https://online-go.com/game/37858090
+      - 27-24 24:W+25.5 round:4 sgf:2021/u20/4-BurkhonjonInomjonov-DariaMariaMesesan.sgf ogs:https://online-go.com/game/37886032
+      - 27-25 25:W+39.5 round:3 sgf:2021/u20/3-BurkhonjonInomjonov-DavidBaldwin.sgf ogs:https://online-go.com/game/37878762

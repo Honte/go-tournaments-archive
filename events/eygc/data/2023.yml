@@ -4,8 +4,9 @@ stages:
     file: eygc2023u12.txt
     category: u12
     name: U12
+    dir: 2023/u12
     scoringColumns:
-      - mms 
+      - mms
       - wins
       - null
       - sos
@@ -13,15 +14,18 @@ stages:
     breakers:
       - mms
       - sos
-      - sosos     
+      - sosos
+    columns:
+      - wins       
     findSharedPlaces: true
     collapsed: true
   - type: tournament
     file: eygc2023u16.txt
     category: u16
     name: U16
+    dir: 2023/u16
     scoringColumns:
-      - mms 
+      - mms
       - wins
       - null
       - sos
@@ -29,22 +33,34 @@ stages:
     breakers:
       - mms
       - sos
-      - sosos     
+      - sosos
+    columns:
+      - wins       
     findSharedPlaces: true
-    collapsed: true    
+    collapsed: true
+    games:
+      - 1-4 1:B+r round:5 sgf:2023/u16/5-VsevolodOvsiienko-AnnaMelnyk.sgf ogs:https://online-go.com/review/1046250
+      - 5-1 1:W+R round:4 sgf:2023/u16/4-RobertAndreiGrosu-VsevolodOvsiienko.sgf ogs:https://online-go.com/review/1045746
   - type: tournament
     file: eygc2023u20.txt
     category: u20
     name: U20
+    dir: 2023/u20
     scoringColumns:
-      - mms 
+      - mms
       - wins
       - null
       - sos
-      - sosos      
+      - sosos
     breakers:
       - mms
       - sos
-      - sosos     
+      - sosos
+    columns:
+      - wins       
     findSharedPlaces: true
     collapsed: true
+    games:
+      - 1-2 1:B+8.5 round:3 sgf:2023/u20/3-DenisDobranis-ArvedPittner.sgf ogs:https://online-go.com/review/1045600
+      - 2-7 2:B+R round:1 sgf:2023/u20/1-ArvedPittner-VukDusanic.sgf ogs:https://online-go.com/review/1045073
+      - 3-1 1:W+16.5 round:2 sgf:2023/u20/2-UfukEmreYildirim-DenisDobranis.sgf ogs:https://online-go.com/review/1045197

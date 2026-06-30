@@ -4,6 +4,7 @@ stages:
     file: eygc2019u12.txt
     category: u12
     name: U12
+    dir: 2019/u12 
     scoringColumns:
       - mms 
       - wins
@@ -14,12 +15,15 @@ stages:
       - mms
       - sos
       - sodos
+    columns:
+      - wins       
     findSharedPlaces: true
     collapsed: true
   - type: tournament
     file: eygc2019u16.txt
     category: u16
     name: U16
+    dir: 2019/u16
     scoringColumns:
       - mms 
       - wins
@@ -30,12 +34,15 @@ stages:
       - mms
       - sos
       - sodos
+    columns:
+      - wins       
     findSharedPlaces: true
     collapsed: true    
   - type: tournament
     file: eygc2019u20.txt
     category: u20
     name: U20
+    dir: 2019/u20 
     scoringColumns:
       - mms 
       - wins
@@ -46,5 +53,7 @@ stages:
       - mms
       - sos
       - sodos
+    columns:
+      - wins       
     findSharedPlaces: true
     collapsed: true

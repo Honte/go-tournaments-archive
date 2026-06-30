@@ -1,11 +1,13 @@
+website: https://eygc2020.hgos.hr/
 name: 25th European Youth Go Championship
 stages:
   - type: tournament
     file: eygc2020u12.txt
     category: u12
     name: U12
+    dir: 2020/u12
     scoringColumns:
-      - mms 
+      - mms
       - wins
       - null
       - sos
@@ -13,36 +15,76 @@ stages:
     breakers:
       - mms
       - sos
-      - sosos 
+      - sosos
+    columns:
+      - wins       
     findSharedPlaces: true
     collapsed: true
+    games:
+      - 1-2 2:W+F round:6 sgf:2020/u12/6-AskarKhusainov-VsevolodOvsiienko.sgf
+      - 3-1 1:W+R round:4 sgf:2020/u12/4-EgorLavrov-VsevolodOvsiienko.sgf
+      - 7-1 1:W+24.5 round:2 sgf:2020/u12/2-AlexejIgonin-VsevolodOvsiienko.sgf
+      - 8-1 1:W+R round:3 sgf:2020/u12/3-StefanAdrianRotarita-VsevolodOvsiienko.sgf
+      - 9-1 1:W+R round:1 sgf:2020/u12/1-CyanTouzot-VsevolodOvsiienko.sgf
+      - 10-1 1:W+63.5 round:5 sgf:2020/u12/5-RobertAndreiGrosu-VsevolodOvsiienko.sgf
+      - 39-35 35:W+33.5 round:4 sgf:2020/u12/4-MartaBernardis-EduardGabrielGrosu.sgf
+      - 39-41 39:B+96.5 round:3 sgf:2020/u12/3-MartaBernardis-CsabaifjKisGado.sgf
+      - 39-45 39:B+121.5 round:5 sgf:2020/u12/5-MartaBernardis-MihaelLojdl.sgf
+      - 44-39 39:W+23.5 round:6 sgf:2020/u12/6-MateiSincari-MartaBernardis.sgf
+      - 46-39 39:W+15.5 round:2 sgf:2020/u12/2-FrankaLjubetic-MartaBernardis.sgf
+      - 51-39 39:W+12.5 round:1 sgf:2020/u12/1-ArturSalihovic-MartaBernardis.sgf
   - type: tournament
     file: eygc2020u16.txt
     category: u16
     name: U16
+    dir: 2020/u16
     scoringColumns:
-      - mms 
+      - mms
       - sos
       - sosos
-      - null      
+      - wins
     breakers:
       - mms
       - sos
-      - sosos      
+      - sosos
+    columns:
+      - wins       
     findSharedPlaces: true
-    collapsed: true    
+    collapsed: true
+    games:
+      - 2-1 1:W+13.5 round:2 sgf:2020/u16/2-AlexandrMuromcev-LinhVuTu.sgf
+      - 3-1 1:W+7.5 round:4 sgf:2020/u16/4-DavideBernardis-LinhVuTu.sgf
+      - 3-2 2:W+30.5 round:5 sgf:2020/u16/5-DavideBernardis-AlexandrMuromcev.sgf
+      - 3-6 3:B+R round:3 sgf:2020/u16/3-DavideBernardis-VirzhiniaShalneva.sgf
+      - 3-9 3:B+12.5 round:6 sgf:2020/u16/6-DavideBernardis-IvanKlochikhin.sgf
+      - 3-12 3:B+R round:2 sgf:2020/u16/2-DavideBernardis-JaroslavKrajnov.sgf
+      - 4-1 4:B+6.5 round:5 sgf:2020/u16/5-RakhmatDemenshin-LinhVuTu.sgf
+      - 4-2 2:W+R round:6 sgf:2020/u16/6-RakhmatDemenshin-AlexandrMuromcev.sgf
+      - 5-1 1:W+t round:3 sgf:2020/u16/3-ArtemijPishchalnikov-LinhVuTu.sgf
+      - 7-1 1:W+R round:1 sgf:2020/u16/1-ValeriaKlochikhina-LinhVuTu.sgf
+      - 13-3 3:W+10.5 round:1 sgf:2020/u16/1-OlesiaMalko-DavideBernardis.sgf
   - type: tournament
     file: eygc2020u20.txt
     category: u20
     name: U20
+    dir: 2020/u20
     scoringColumns:
-      - mms 
+      - mms
       - sos
       - sosos
-      - null      
+      - wins
     breakers:
       - mms
       - sos
-      - sosos    
+      - sosos
+    columns:
+      - wins       
     findSharedPlaces: true
     collapsed: true
+    games:
+      - 1-2 1:B+9.5 round:4 sgf:2020/u20/4-AntonChernykh-SinanDjepov.sgf
+      - 1-3 1:B+1.5 round:6 sgf:2020/u20/6-AntonChernykh-ElianIoanGrigoriu.sgf
+      - 2-3 2:B+R round:3 sgf:2020/u20/3-SinanDjepov-ElianIoanGrigoriu.sgf
+      - 5-1 1:W+12.5 round:5 sgf:2020/u20/5-SavvaMezin-AntonChernykh.sgf
+      - 8-1 1:W+11.5 round:2 sgf:2020/u20/2-VasilijJakovlevChernyshev-AntonChernykh.sgf
+      - 10-1 1:W+t round:1 sgf:2020/u20/1-SamuelTeissier-AntonChernykh.sgf

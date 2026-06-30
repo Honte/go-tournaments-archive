@@ -11,52 +11,51 @@
 ; Under16
 ;
 ; Pl Name                   Grd Co Club  MMS  SOS SOSOS
- 1 Surma Mateusz         4d PL  Rydu  34   195  1167 0    8+/w0   5-/b0   2+/w0   6+/w0   4+/b0   3+/b0    |12837968
- 2 Wong Vanessa          4d UK  HKo   33   196  1167 0    4+/w0   7+/w0   1-/b0   5+/b0   3-/b0   6+/w0    |14349467
- 3 Mykhaljuk Jurij       2d UA  Rivn  33   196  1165 0    6+/b0   9+/w0   5+/w0   4-/b0   2+/w0   1-/w0    |13798235
- 4 Podpera Lukas         4d CZ  APWS  33   196  1164 0    2-/b0   8+/b0   7+/w0   3+/w0   1-/w0   5+/b0    |13201914
- 5 Matushkin Alexandr    4d RU  18Iz  32   196  1161 0    10+/b0  1+/w0   3-/b0   2-/w0   8+/w0   4-/w0    |12362284
- 6 Khabazov Nikita       2d RU  52NN  32   193  1141 0    3-/w0   13+/w0  10+/b0  1-/b0   9+/w0   2-/b0    |13850540
- 7 Vashurov Alexandr     4d RU  16Kz  32   191  1146 0    9+/w0   2-/b0   4-/b0   8-/w0   12+/b0  10+/w0   |13062764
- 8 Lisy Pavol            3d SK  DSta  32   190  1147 0    1-/b0   4-/w0   15+/w0  7+/b0   5-/b0   12+/w0   |12686597
- 9 Frejlak Stanislaw     2d PL  Wars  32   189  1137 0    7-/b0   3-/b0   12+/w0  10+/w0  6-/b0   11+/w0   |12837594
-10 Toma Theodor          1d RO  Brai  31   188  1133 0    5-/w0   11+/b0  6-/w0   9-/b0   15+/b0  7-/b0    |12513754
-11 Mladenova Magdalena   2k BG  Sofi  31   182  1094 0    15+/b0  10-/w0  13+/w0  12-/b0  14+/b0  9-/b0    |14950485
-12 Boviz Dominik         3k HU  Szfv  30   187  1100 0    13+/b0  14+/w0  9-/b0   11+/w0  7-/w0   8-/b0    |14225926
-13 Berbecariu Flaviu     3k RO  Bist  30   177  1080 0    12-/w0  6-/b0   11-/b0  16-/b0  18+/w0  15+/w0   |13549074
-14 Cherestes Andrei      4k RO  Bucu  30   171  1054 0    16+/w0  12-/b0  22+/b0  15+/w0  11-/w0  18+/b0   |14998863
-15 Ketelaars Alex        2k NL  Hilv  29   182  1077 0    11-/w0  16+/b0  8-/b0   14-/b0  10-/w0  13-/b0   |14913239
-16 Cobeli Stefan         4k RO  VaDo  28   169  1027 0    14-/b0  15-/w0  18-/b0  13+/w0  22+/w0  19-/b0   |14937109
-17 Ciora Cristiana       6k RO  Giar  28   156  959  0    22-/b0  18-/w0  23+/w0  25+/w0  19+/b0  20+/b0   |13225410
-18 Kriese Anton          5k DE  J  27   167  980  0    0-     17+/b0  16+/w0  19+/w0  13-/b0  14-/w0   |15050794
-19 Nae Alexandru         6k RO  Bucu  27   163  968  0    21+/b0  22-/w0  20+/w0  18-/b0  17-/w0  16+/w0   |14525082
-20 Retiere Thomas        7k FR  44Na  27   157  943  0    25+/w0  21+/w0  19-/b0  22+/b0  23+/b0  17-/w0   |15401705
-21 Ghioc Rares           6k RO  Bucu  27   152  933  0    19-/w0  20-/b0  27+/w0  23-/b0  26+/w0  22+/b0   |13674716
-22 Iacob Alexandru       6k RO  Brai  26   167  968  0    17+/w0  19+/b0  14-/w0  20-/w0  16-/b0  21-/w0   |12749187
-23 Dascalu Denis         8k RO  VaDo  25   155  899  0    26+/w0  25+/b0  17-/b0  21+/w0  20-/w0  24-/b0   |15237871
-24 Suciu Alexandru       8k RO  Bucu  25   138  831  0    29+/w0  28+/b0  30+/w0  26+/b0  27+/b0  23+/w0   |14949869
-25 Mastan Diana          8k RO  Bist  24   150  890  0    20-/b0  23-/w0  26-/w0  17-/b0  28-/b0  27+/w0   |14649250
-26 Goerling Oliver       8k DE  B  24   146  875  0    23-/b0  27+/w0  25+/b0  24-/w0  21-/b0  29+/b0   |15025263
-27 Andrei Razvan        10k RO  VaDo  23   145  852  0    28+/w0  26-/b0  21-/b0  29+/w0  24-/w0  25-/b0   |14986125
-28 Albrecht Gabor       10k HU  Buda  23   131  795  0    27-/b0  24-/w0  29-/b0  31+/b0  25+/w0  33+/w0   |13413730
-29 Axente Cristina      11k RO  Bucu  22   135  791  0    24-/b0  30+/w0  28+/w0  27-/b0  32+/b0  26-/w0   |15313980
-30 Zahonyi Gyorgy       12k HU  BuPe  21   119  715  0    32-/w0  29-/b0  24-/b0  33+/w0  31+/b0  34+/w0   |13625436
-31 Fat Florina          15k RO  Bist  19   113  666  0    33+/b0  32+/b0  36+/w0  28-/w0  30-/w0  35+/b0   |14633256
-32 Stefan Alexander     14k DE  B  19   112  677  0    30+/b0  31-/w0  33-/b0  34+/b0  29-/w0  36+/w0   |15249465
-33 Bounegru Florin      15k RO  Brai  18   114  675  0    31-/w0  34+/b0  32+/w0  30-/b0  35+/w0  28-/b0   |13733148
-34 Dadavi Bianca        17k RO  Bucu  16   103  596  0    37+/b0  33-/w0  39+/b0  32-/w0  42+/w0  30-/b0   |15649271
-35 Costache Mihaela     17k RO  Bucu  16   97   562  0    41+/b0  38+/b0  42+/w0  37+/w0  33-/b0  31-/w0   |15625269
-36 Stan Raluca          17k RO  Bucu  16   93   566  0    42+/w0  43+/b0  31-/b0  45+/w0  39+/w0  32-/b0   |15398042
-37 Samer Gabriela       18k RO  Bucu  16   83   534  0    34-/w0  45+/b0  43+/b0  35-/b0  46+/w0  44+/b0   |15637512
-38 Raita Anca           17k RO  Bucu  16   80   526  0    45+/b0  35-/w0  47+/b0  41+/b0  44+/w0  43+/w0   |15650514
-39 Patruti Petra        18k RO  Bucu  15   83   539  0    44+/b0  41+/w0  34-/w0  43+/b0  36-/b0  47+/w0   |15649513
-40 Dinescu Maria        19k RO  Bucu  15   76   504  0    43-/w0  47+/b0  41+/w0  44-/b0  45+/b0  46+/w0   |15662724
-41 Jurubita Geanin      18k RO  Brai  14   87   504  0    35-/w0  39-/b0  40-/b0  38-/w0  47+/w0  42+/b0   |15633607
-42 Baboi Catalin        19k RO  Bucu  14   85   542  0    36-/b0  44+/w0  35-/b0  48+/w0  34-/b0  41-/w0   |15425025
-43 Moise Adrian         20k RO  Brai  13   88   492  0    40+/b0  36-/w0  37-/w0  39-/w0  48+/b0  38-/b0   |15601608
-44 Ursache Ionut        20k RO  Brai  13   86   484  0    39-/w0  42-/b0  48+/b0  40+/w0  38-/b0  37-/w0   |13937198
-45 Stefanov Valentin    20k RO  Brai  13   85   484  0    38-/w0  37-/w0  46+/b0  36-/b0  40-/w0  48+/w0   |15649612
-46 Costache Alexandru_Eduard 20k RO  Brai  12   75   464  0    0=     48+/w0  45-/w0  47+/b0  37-/b0  40-/b0   |14662659
-47 Incrosnatu Diana     20k RO  Brai  11   82   478  0    48+/b0  40-/w0  38-/w0  46-/w0  41-/b0  39-/b0   |14925229
-48 Dana Razvan          20k RO  Brai  10   76   502  0    47-/w0  46-/b0  44-/w0  42-/b0  43-/w0  45-/b0   |15662614
-
+   1 Surma Mateusz                  4d PL  Rydu    34   195  1167     5   8+/w0   5-/b0   2+/w0   6+/w0   4+/b0   3+/b0 |12837968
+   2 Wong Vanessa                   4d UK  HKo     33   196  1167     4   4+/w0   7+/w0   1-/b0   5+/b0   3-/b0   6+/w0 |14349467
+   3 Mykhaljuk Jurij                2d UA  Rivn    33   196  1165     4   6+/b0   9+/w0   5+/w0   4-/b0   2+/w0   1-/w0 |13798235
+   4 Podpera Lukas                  4d CZ  APWS    33   196  1164     4   2-/b0   8+/b0   7+/w0   3+/w0   1-/w0   5+/b0 |13201914
+   5 Matushkin Alexandr             4d RU  18Iz    32   196  1161     3  10+/b0   1+/w0   3-/b0   2-/w0   8+/w0   4-/w0 |12362284
+   6 Khabazov Nikita                2d RU  52NN    32   193  1141     3   3-/w0  13+/w0  10+/b0   1-/b0   9+/w0   2-/b0 |13850540
+   7 Vashurov Alexandr              4d RU  16Kz    32   191  1146     3   9+/w0   2-/b0   4-/b0   8-/w0  12+/b0  10+/w0 |13062764
+   8 Lisy Pavol                     3d SK  DSta    32   190  1147     3   1-/b0   4-/w0  15+/w0   7+/b0   5-/b0  12+/w0 |12686597
+   9 Frejlak Stanislaw              2d PL  Wars    32   189  1137     3   7-/b0   3-/b0  12+/w0  10+/w0   6-/b0  11+/w0 |12837594
+  10 Toma Theodor                   1d RO  Brai    31   188  1133     2   5-/w0  11+/b0   6-/w0   9-/b0  15+/b0   7-/b0 |12513754
+  11 Mladenova Magdalena            2k BG  Sofi    31   182  1094     3  15+/b0  10-/w0  13+/w0  12-/b0  14+/b0   9-/b0 |14950485
+  12 Boviz Dominik                  3k HU  Szfv    30   187  1100     3  13+/b0  14+/w0   9-/b0  11+/w0   7-/w0   8-/b0 |14225926
+  13 Berbecariu Flaviu              3k RO  Bist    30   177  1080     2  12-/w0   6-/b0  11-/b0  16-/b0  18+/w0  15+/w0 |13549074
+  14 Cherestes Andrei               4k RO  Bucu    30   171  1054     4  16+/w0  12-/b0  22+/b0  15+/w0  11-/w0  18+/b0 |14998863
+  15 Ketelaars Alex                 2k NL  Hilv    29   182  1077     1  11-/w0  16+/b0   8-/b0  14-/b0  10-/w0  13-/b0 |14913239
+  16 Cobeli Stefan                  4k RO  VaDo    28   169  1027     2  14-/b0  15-/w0  18-/b0  13+/w0  22+/w0  19-/b0 |14937109
+  17 Ciora Cristiana                6k RO  Giar    28   156   959     4  22-/b0  18-/w0  23+/w0  25+/w0  19+/b0  20+/b0 |13225410
+  18 Kriese Anton                   5k DE  J       27   167   980     3      0-  17+/b0  16+/w0  19+/w0  13-/b0  14-/w0 |15050794
+  19 Nae Alexandru                  6k RO  Bucu    27   163   968     3  21+/b0  22-/w0  20+/w0  18-/b0  17-/w0  16+/w0 |14525082
+  20 Retiere Thomas                 7k FR  44Na    27   157   943     4  25+/w0  21+/w0  19-/b0  22+/b0  23+/b0  17-/w0 |15401705
+  21 Ghioc Rares                    6k RO  Bucu    27   152   933     3  19-/w0  20-/b0  27+/w0  23-/b0  26+/w0  22+/b0 |13674716
+  22 Iacob Alexandru                6k RO  Brai    26   167   968     2  17+/w0  19+/b0  14-/w0  20-/w0  16-/b0  21-/w0 |12749187
+  23 Dascalu Denis                  8k RO  VaDo    25   155   899     3  26+/w0  25+/b0  17-/b0  21+/w0  20-/w0  24-/b0 |15237871
+  24 Suciu Alexandru                8k RO  Bucu    25   138   831     6  29+/w0  28+/b0  30+/w0  26+/b0  27+/b0  23+/w0 |14949869
+  25 Mastan Diana                   8k RO  Bist    24   150   890     1  20-/b0  23-/w0  26-/w0  17-/b0  28-/b0  27+/w0 |14649250
+  26 Goerling Oliver                8k DE  B       24   146   875     3  23-/b0  27+/w0  25+/b0  24-/w0  21-/b0  29+/b0 |15025263
+  27 Andrei Razvan                 10k RO  VaDo    23   145   852     2  28+/w0  26-/b0  21-/b0  29+/w0  24-/w0  25-/b0 |14986125
+  28 Albrecht Gabor                10k HU  Buda    23   131   795     3  27-/b0  24-/w0  29-/b0  31+/b0  25+/w0  33+/w0 |13413730
+  29 Axente Cristina               11k RO  Bucu    22   135   791     3  24-/b0  30+/w0  28+/w0  27-/b0  32+/b0  26-/w0 |15313980
+  30 Zahonyi Gyorgy                12k HU  BuPe    21   119   715     3  32-/w0  29-/b0  24-/b0  33+/w0  31+/b0  34+/w0 |13625436
+  31 Fat Florina                   15k RO  Bist    19   113   666     4  33+/b0  32+/b0  36+/w0  28-/w0  30-/w0  35+/b0 |14633256
+  32 Stefan Alexander              14k DE  B       19   112   677     3  30+/b0  31-/w0  33-/b0  34+/b0  29-/w0  36+/w0 |15249465
+  33 Bounegru Florin               15k RO  Brai    18   114   675     3  31-/w0  34+/b0  32+/w0  30-/b0  35+/w0  28-/b0 |13733148
+  34 Dadavi Bianca                 17k RO  Bucu    16   103   596     3  37+/b0  33-/w0  39+/b0  32-/w0  42+/w0  30-/b0 |15649271
+  35 Costache Mihaela              17k RO  Bucu    16    97   562     4  41+/b0  38+/b0  42+/w0  37+/w0  33-/b0  31-/w0 |15625269
+  36 Stan Raluca                   17k RO  Bucu    16    93   566     4  42+/w0  43+/b0  31-/b0  45+/w0  39+/w0  32-/b0 |15398042
+  37 Samer Gabriela                18k RO  Bucu    16    83   534     4  34-/w0  45+/b0  43+/b0  35-/b0  46+/w0  44+/b0 |15637512
+  38 Raita Anca                    17k RO  Bucu    16    80   526     5  45+/b0  35-/w0  47+/b0  41+/b0  44+/w0  43+/w0 |15650514
+  39 Patruti Petra                 18k RO  Bucu    15    83   539     4  44+/b0  41+/w0  34-/w0  43+/b0  36-/b0  47+/w0 |15649513
+  40 Dinescu Maria                 19k RO  Bucu    15    76   504     4  43-/w0  47+/b0  41+/w0  44-/b0  45+/b0  46+/w0 |15662724
+  41 Jurubita Geanin               18k RO  Brai    14    87   504     2  35-/w0  39-/b0  40-/b0  38-/w0  47+/w0  42+/b0 |15633607
+  42 Baboi Catalin                 19k RO  Bucu    14    85   542     2  36-/b0  44+/w0  35-/b0  48+/w0  34-/b0  41-/w0 |15425025
+  43 Moise Adrian                  20k RO  Brai    13    88   492     2  40+/b0  36-/w0  37-/w0  39-/w0  48+/b0  38-/b0 |15601608
+  44 Ursache Ionut                 20k RO  Brai    13    86   484     2  39-/w0  42-/b0  48+/b0  40+/w0  38-/b0  37-/w0 |13937198
+  45 Stefanov Valentin             20k RO  Brai    13    85   484     2  38-/w0  37-/w0  46+/b0  36-/b0  40-/w0  48+/w0 |15649612
+  46 Costache Alexandru_Eduard     20k RO  Brai    12    75   464     2      0=  48+/w0  45-/w0  47+/b0  37-/b0  40-/b0 |14662659
+  47 Incrosnatu Diana              20k RO  Brai    11    82   478     1  48+/b0  40-/w0  38-/w0  46-/w0  41-/b0  39-/b0 |14925229
+  48 Dana Razvan                   20k RO  Brai    10    76   502     0  47-/w0  46-/b0  44-/w0  42-/b0  43-/w0  45-/b0 |15662614
