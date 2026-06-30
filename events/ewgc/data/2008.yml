@@ -12,4 +12,17 @@ stages:
       - mms
       - sos
       - sodos
+    columns:
+      - wins       
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:4 sgf:2008/4-KlaraZaloudkova-ManuelaMarz.sgf
+      - 2-3 2:B+5.5 round:5 sgf:2008/5-ManuelaMarz-LauraAvram.sgf
+      - 2-4 2:B+5 round:1 sgf:2008/1-ManuelaMarz-NgocTrangCao.sgf
+      - 2-7 2:B+R round:3 sgf:2008/3-ManuelaMarz-JanaHricova.sgf
+      - 3-1 1:W+R round:3 sgf:2008/3-LauraAvram-KlaraZaloudkova.sgf
+      - 4-1 1:W+13 round:5 sgf:2008/5-NgocTrangCao-KlaraZaloudkova.sgf
+      - 4-6 4:B+R round:3 sgf:2008/3-NgocTrangCao-SuviLeppanen.sgf
+      - 5-1 1:W+30.5 round:2 sgf:2008/2-UlrikeSchmidt-KlaraZaloudkova.sgf
+      - 5-3 3:W+27.5 round:4 sgf:2008/4-UlrikeSchmidt-LauraAvram.sgf
+      - 6-2 2:W+R round:2 sgf:2008/2-SuviLeppanen-ManuelaMarz.sgf

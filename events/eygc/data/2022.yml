@@ -4,6 +4,7 @@ stages:
     file: eygc2022u12.txt
     category: u12
     name: U12
+    dir: 2022/u12 
     scoringColumns:
       - mms 
       - wins
@@ -11,13 +12,16 @@ stages:
       - sos
     breakers:
       - mms
-      - sos    
+      - sos
+    columns:
+      - wins       
     findSharedPlaces: true
     collapsed: true
   - type: tournament
     file: eygc2022u16.txt
     category: u16
     name: U16
+    dir: 2022/u16 
     scoringColumns:
       - mms 
       - wins
@@ -25,13 +29,16 @@ stages:
       - sos
     breakers:
       - mms
-      - sos   
+      - sos
+    columns:
+      - wins       
     findSharedPlaces: true
     collapsed: true    
   - type: tournament
     file: eygc2022u20.txt
     category: u20
     name: U20
+    dir: 2022/u20 
     scoringColumns:
       - mms 
       - wins
@@ -39,6 +46,8 @@ stages:
       - sos    
     breakers:
       - mms
-      - sos   
+      - sos 
+    columns:
+      - wins       
     findSharedPlaces: true
     collapsed: true

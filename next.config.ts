@@ -26,5 +26,6 @@ export default async function getConfig() {
     output: 'export',
     basePath: normalizeBasePath(configuration.basePath),
     pageExtensions,
+    trailingSlash: configuration.trailingSlash,
   };
 }

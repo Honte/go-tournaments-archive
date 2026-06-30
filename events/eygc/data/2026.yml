@@ -4,44 +4,98 @@ stages:
     file: eygc2026u12.txt
     category: u12
     name: U12
+    dir: 2026/u12
     scoringColumns:
-      - mms 
+      - mms
       - sos
       - sosos
       - wins
     breakers:
       - mms
       - sos
-      - sosos      
+      - sosos
+    columns:
+      - wins       
     findSharedPlaces: true
     collapsed: true
+    games:
+      - 1-6 1:B+R round:3 sgf:2026/u12/3-LarionSyrotkin-ArenDenktas.sgf ogs:https://online-go.com/review/1665708
+      - 2-1 2:B+0.5 round:6 sgf:2026/u12/6-DenysLototskyi-LarionSyrotkin.sgf ogs:https://online-go.com/review/1666667
+      - 3-1 1:W+R round:2 sgf:2026/u12/2-SzilardMihalyPapp-LarionSyrotkin.sgf ogs:https://online-go.com/review/1665153
+      - 3-2 2:W+15.5 round:5 sgf:2026/u12/5-SzilardMihalyPapp-DenysLototskyi.sgf ogs:https://online-go.com/review/1666480
+      - 4-1 1:W+18.5 round:4 sgf:2026/u12/4-TanTan-LarionSyrotkin.sgf ogs:https://online-go.com/review/1665961
+      - 7-1 1:W+27.5 round:1 sgf:2026/u12/1-GruiaTaranu-LarionSyrotkin.sgf ogs:https://online-go.com/review/1664945
   - type: tournament
     file: eygc2026u16.txt
     category: u16
     name: U16
+    dir: 2026/u16
     scoringColumns:
-      - mms 
+      - mms
       - sos
       - sosos
       - wins
     breakers:
       - mms
       - sos
-      - sosos      
+      - sosos
+    columns:
+      - wins       
     findSharedPlaces: true
-    collapsed: true    
+    collapsed: true
+    games:
+      - 1-3 1:B+R round:4 sgf:2026/u16/4-BartikDach-JanKomin.sgf ogs:https://online-go.com/review/1665957
+      - 1-7 1:B+7.5 round:3 sgf:2026/u16/3-BartikDach-BendeBarcza.sgf ogs:https://online-go.com/review/1665706
+      - 1-11 1:B+R round:1 sgf:2026/u16/1-BartikDach-ErenDenktas.sgf ogs:https://online-go.com/review/1664943
+      - 2-1 2:B+12.5 round:5 sgf:2026/u16/5-StjepanMedak-BartikDach.sgf ogs:https://online-go.com/review/1666476
+      - 2-4 2:B+R round:2 sgf:2026/u16/2-StjepanMedak-RyanZhang.sgf ogs:https://online-go.com/review/1665150
+      - 2-10 2:B+R round:1 sgf:2026/u16/1-StjepanMedak-SaraMariaGhetu.sgf ogs:https://online-go.com/review/1664942
+      - 3-2 3:B+R round:3 sgf:2026/u16/3-JanKomin-StjepanMedak.sgf ogs:https://online-go.com/review/1665705
+      - 3-8 3:B+16.5 round:5 sgf:2026/u16/5-JanKomin-OliverSkocic.sgf ogs:https://online-go.com/review/1666479
+      - 4-1 1:W+R round:6 sgf:2026/u16/6-RyanZhang-BartikDach.sgf ogs:https://online-go.com/review/1666665
+      - 4-7 4:B+R round:5 sgf:2026/u16/5-RyanZhang-BendeBarcza.sgf ogs:https://online-go.com/review/1666478
+      - 5-1 1:W+R round:2 sgf:2026/u16/2-AlexandruNicolasPatrascu-BartikDach.sgf ogs:https://online-go.com/review/1665152
+      - 5-7 7:W+R round:4 sgf:2026/u16/4-AlexandruNicolasPatrascu-BendeBarcza.sgf ogs:https://online-go.com/review/1665960
+      - 7-3 3:W+1.5 round:6 sgf:2026/u16/6-BendeBarcza-JanKomin.sgf ogs:https://online-go.com/review/1666666
+      - 7-12 7:B+R round:1 sgf:2026/u16/1-BendeBarcza-TymoteuszBarcicki.sgf ogs:https://online-go.com/review/1664944
+      - 8-2 2:W+22.5 round:6 sgf:2026/u16/6-OliverSkocic-StjepanMedak.sgf ogs:https://online-go.com/review/1666664
+      - 8-7 7:W+R round:2 sgf:2026/u16/2-OliverSkocic-BendeBarcza.sgf ogs:https://online-go.com/review/1665151
+      - 11-4 4:W+R round:3 sgf:2026/u16/3-ErenDenktas-RyanZhang.sgf ogs:https://online-go.com/review/1665707
+      - 14-2 14:B+R round:4 sgf:2026/u16/4-JakovSicic-StjepanMedak.sgf ogs:https://online-go.com/review/1665958
   - type: tournament
     file: eygc2026u21.txt
     category: u21
     name: U21
+    dir: 2026/u21
     scoringColumns:
-      - mms 
+      - mms
       - sos
       - sosos
       - wins
     breakers:
       - mms
       - sos
-      - sosos      
+      - sosos
+    columns:
+      - wins       
     findSharedPlaces: true
-    collapsed: true    
+    collapsed: true
+    games:
+      - 1-3 1:B+R round:2 sgf:2026/u21/2-YuzeXing-RokoCrvelin.sgf ogs:https://online-go.com/review/1665147
+      - 1-4 1:B+R round:3 sgf:2026/u21/3-YuzeXing-OlesiaMalko.sgf ogs:https://online-go.com/review/1665702
+      - 1-5 1:B+R round:5 sgf:2026/u21/5-YuzeXing-OndrejKralik.sgf ogs:https://online-go.com/review/1666471
+      - 1-7 1:B+R round:6 sgf:2026/u21/6-YuzeXing-DanylPetrashevskyi.sgf ogs:https://online-go.com/review/1666661
+      - 2-1 1:W+14.5 round:4 sgf:2026/u21/4-DavideBernardis-YuzeXing.sgf ogs:https://online-go.com/review/1665954
+      - 2-7 2:B+R round:2 sgf:2026/u21/2-DavideBernardis-DanylPetrashevskyi.sgf ogs:https://online-go.com/review/1665148
+      - 3-2 2:W+R round:6 sgf:2026/u21/6-RokoCrvelin-DavideBernardis.sgf ogs:https://online-go.com/review/1666662
+      - 3-10 3:B+R round:3 sgf:2026/u21/3-RokoCrvelin-TeoSladetic.sgf ogs:https://online-go.com/review/1665704
+      - 4-2 2:W+31.5 round:5 sgf:2026/u21/5-OlesiaMalko-DavideBernardis.sgf ogs:https://online-go.com/review/1666472
+      - 5-2 2:W+3.5 round:3 sgf:2026/u21/3-OndrejKralik-DavideBernardis.sgf ogs:https://online-go.com/review/1665703
+      - 5-8 5:B+5.5 round:6 sgf:2026/u21/6-OndrejKralik-OliverSeman.sgf ogs:https://online-go.com/review/1666663
+      - 5-9 5:B+R round:2 sgf:2026/u21/2-OndrejKralik-LiviuBalasoiu.sgf ogs:https://online-go.com/review/1665149
+      - 7-3 3:W+R round:5 sgf:2026/u21/5-DanylPetrashevskyi-RokoCrvelin.sgf ogs:https://online-go.com/review/1666474
+      - 8-2 2:W+R round:1 sgf:2026/u21/1-OliverSeman-DavideBernardis.sgf ogs:https://online-go.com/review/1664939
+      - 9-3 3:W+R round:4 sgf:2026/u21/4-LiviuBalasoiu-RokoCrvelin.sgf ogs:https://online-go.com/review/1665956
+      - 10-1 1:W+R round:1 sgf:2026/u21/1-TeoSladetic-YuzeXing.sgf ogs:https://online-go.com/review/1664938
+      - 11-5 5:W+27.5 round:4 sgf:2026/u21/4-StefanAdrianRotarita-OndrejKralik.sgf ogs:https://online-go.com/review/1665955
+      - 12-5 5:W+7.5 round:1 sgf:2026/u21/1-KarloVlahovic-OndrejKralik.sgf ogs:https://online-go.com/review/1664941

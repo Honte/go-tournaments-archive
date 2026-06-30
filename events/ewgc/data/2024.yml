@@ -7,9 +7,22 @@ stages:
       - mms
       - sos
       - sosos
-      - null
+      - wins
     breakers:
       - mms
       - sos
       - sosos
+    columns:
+      - wins       
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:3 sgf:2024/3-TingLi-ManjaMarz.sgf ogs:https://online-go.com/review/1333572
+      - 1-10 1:B+R round:2 sgf:2024/2-TingLi-MirtaMedak.sgf ogs:https://online-go.com/review/1333462
+      - 2-6 2:B+R round:5 sgf:2024/5-ManjaMarz-AdrianaPodperova.sgf ogs:https://online-go.com/review/1334026
+      - 2-7 2:B+R round:2 sgf:2024/2-ManjaMarz-RenateReisenegger.sgf ogs:https://online-go.com/review/1333458
+      - 3-1 1:W+R round:4 sgf:2024/4-OlesiaMalko-TingLi.sgf ogs:https://online-go.com/review/1333920
+      - 4-1 1:W+5.5 round:5 sgf:2024/5-RitaPocsai-TingLi.sgf ogs:https://online-go.com/review/1334024
+      - 4-3 3:W+R round:3 sgf:2024/3-RitaPocsai-OlesiaMalko.sgf ogs:https://online-go.com/review/1333574
+      - 4-9 4:B+30.5 round:1 sgf:2024/1-RitaPocsai-AlisonBexfield.sgf ogs:https://online-go.com/review/1333338
+      - 5-2 2:W+R round:4 sgf:2024/4-JuliaSeres-ManjaMarz.sgf ogs:https://online-go.com/review/1333922
+      - 11-1 1:W+R round:1 sgf:2024/1-ZuzanaKralikova-TingLi.sgf ogs:https://online-go.com/review/1332958

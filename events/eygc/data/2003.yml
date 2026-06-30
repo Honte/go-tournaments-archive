@@ -5,21 +5,7 @@ stages:
     file: eygc2003u12.txt
     category: u12
     name: U12
-    scoringColumns:
-      - mms 
-      - wins
-      - sodos
-      - sos      
-    breakers:
-      - mms
-      - sodos
-      - sos      
-    findSharedPlaces: false
-    collapsed: true
-  - type: tournament
-    file: eygc2003u18.txt
-    category: u18
-    name: U18
+    dir: 2003/u12
     scoringColumns:
       - mms 
       - wins
@@ -29,5 +15,25 @@ stages:
       - mms
       - sodos
       - sos
+    columns:
+      - wins       
+    findSharedPlaces: false
+    collapsed: true
+  - type: tournament
+    file: eygc2003u18.txt
+    category: u18
+    name: U18
+    dir: 2003/u18
+    scoringColumns:
+      - mms 
+      - wins
+      - sodos
+      - sos      
+    breakers:
+      - mms
+      - sodos
+      - sos
+    columns:
+      - wins       
     findSharedPlaces: false
     collapsed: true

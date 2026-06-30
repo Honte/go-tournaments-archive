@@ -9,55 +9,55 @@
 ; CM[ (submitted by Jana_H)]
 ;.           
 ;
- 1 Kajmin Vjacheslav         5d RU  50Zh  27   5    154  909  11+/b   10+/w   4+/w    3-/w    7+/b    6+/b     |14986257
- 2 Fionin Grigorij           6d RU  78SP  27   5    152  908  9+/w    7-/b    12+/b   13+/b   5+/w    3+/b     |16013096
- 3 Chernykh Anton            5d RU  50Zh  26   4    157  907  12+/w   5+/b    7+/w    1+/b    6-/b    2-/w     |15713467
- 4 Pankoke Matias            4d DE  OL    26   4    152  903  14+/b   8+/w    1-/b    6-/b    9+/w    11+/w    |15933973
- 5 Ruzicka Martin            4d DE  FR    26   4    151  906  15+/w   3-/w    14+/b   10+/w   2-/b    8+/b     |13037596
- 6 Grigoriu Elian_Ioan       3d RO  Galt  26   4    151  903  8-/b    15+/b   20+/w   4+/w    3+/w    1-/w     |15974420
- 7 Djepov Sinan              5d BG  Slvp  26   4    151  899  13+/w   2+/w    3-/b    19+/b   1-/w    18+/b    |17486205
- 8 Popov Stepan              5d RU  16Kz  25   3    151  901  6+/w    4-/b    13-/b   16+/b   10+/w   5-/w     |14625897
- 9 Khudoleev Artem           4d RU  77Mo  25   3    150  899  2-/b    14-/w   15+/w   12+/b   4-/b    13+/w    |15249553
-10 Pitrop Alexandru_Petre    4d RO  Boto  25   3    150  892  17+/w   1-/b    16+/w   5-/b    8-/b    15+/w    |15262940
-11 Bantla Chafiq             3d DE  DIN   25   3    148  892  1-/w    16-/b   21+/w   14+/w   13+/b   4-/b     |16501639
-12 Jacimovic Mihailo         3d RS  KGRa  25   3    148  887  3-/b    17+/b   2-/w    9-/w    22+/w   16+/b    |16786891
-13 Yeroshkin Oleksandr       2d UA  Rivn  24   2    151  897  7-/b    19+/b   8+/w    2-/w    11-/w   9-/b     |13649108
-14 Csizmadia Robert          2d HU  BuPe  24   2    149  886  4-/w    9+/b    5-/w    11-/b   18-/b   19+/w    |14925416
-15 Goncalves Simao           2d PT  Luxe  24   2    147  881  5-/b    6-/w    9-/b    23+/b   19+/w   10-/b    |17074981
-16 Ougier Ariane             1d FR  92An  24   3    146  879  21+/b   11+/w   10-/b   8-/w    20+/b   12-/w    |15774187
-17 Law Yu-Kai                2d DE  TR    24   2    143  865  10-/b   12-/w   19-/b   18-/w   21+/w   20+/b    |16513563
-18 Garand Franck             2k FR  75Op  24   5    140  849  23+/w   24+/w   22+/b   17+/b   14+/w   7-/w     |17886572
-19 Bonjean Robin             1d FR  34Mo  23   2    145  883  20+/b   13-/w   17+/w   7-/w    15-/b   14-/b    |18050824
-20 Dobranis Darius           1d RO  Bist  23   2    142  864  19-/w   22+/b   6-/b    21+/b   16-/w   17-/w    |15049716
-21 Tomsu Adriana             1d CZ  TFMi  23   2    140  850  16-/w   25+/b   11-/b   20-/w   17-/b   22+/w    |16225396
-22 Ougier Guillaume          1d FR  92An  22   2    139  835  24+/b   20-/w   18-/w   25+/w   12-/b   21-/b    |15762186
-23 Brachet Alois             1k FR  84Av  22   3    134  802 18-/b   30+/w   24+/b   15-/w   25-/w   29+/w    |15849152
-24 Lob Guillaume             1k CH  Kogo  22   2    133  800 22-/w   18-/b   23-/w   28+/b   26-/b   25+/b    |16501628
-25 Mezouar Abdallah          1k FR  69Ly  22   3    132  801 28+/w   21-/w   26+/b   22-/b   23+/b   24-/w    |17813059
-26 Moccelin Angelino         3k FR  84Av  22   4    128  761  33+/b   28+/w   25-/w   29+/b   24+/w   27-/b    |15874210
-27 Malko Yaroslav            4k UA  Rivn  22   5    120  726  30-/b   40+/w   35+/b   32+/w   34+/b   26+/w    |14937670
-28 Defer Tristan             2k CZ  Brno  21   2    127 761 25-/b   26-/b   30+/w   24-/w   32-/b   34+/w    |16486074
-29 Vasa Vojtech              4k CZ  APmG  21   4    126 748 31+/b   33+/w   32+/w   26-/w   30+/b   23-/b    |15762923
-30 Bousquet Sylvain          2k FR  38Gr  21   3    124  749  27+/w   23-/b   28-/b   35+/w   29-/w   36+/b    |16750426
-31 Benheddi Yassine          4k FR  75Op  21   4    117 718  29-/w   35-/b   39+/b   36+/w   33+/w   32+/b    |17449487
-32 Mangin Matthias           3k FR  38Gr  20  2    123  721  0=      34+/w   29-/b   27-/b   28+/w   31-/w    |16074157
-33 Capik Justin              3k FR  38GJ  20   2    122  728 26-/w   29-/b   37+/w   34-/w   31-/b   35+/w    |17601782
-34 Delasnerie Ronan          4k FR  56Lo  20   3    121 724 37+/w   32-/b   36+/w   33+/b   27-/w   28-/b    |16849206
-35 Bukovska Anezka           4k CZ  APmG  19   3    122  715 36+/b   31+/w   27-/w   30-/b   37+/w   33-/b    |15874947
-36 Medak Mirta               4k HR  Zagr  19   2    119  699  35-/w   37+/b   34-/b   31-/b   38+/w   30-/w    |16525718
-37 Weigmann Arved            4k DE  P     19   2    113  693 34-/b   36-/w   33-/b   39+/w   35-/b   42+/w    |15713379
-38 Birckner Bruno            8k DE  J     19   5    101  609 46+/b   43+/w   42+/b   40+/w   36-/b   41+/w    |16950604
-39 Bexfield Charlotte        5k UK  Ltch  18   2    105 625  40-/b   42-/w   31-/w   37-/b   44+/w   43+/b    |14901579
-40 Bedouet Theo              6k FR  92An  17  2    107 611 39+/w   27-/b   43+/b   38-/b   41-/w   0=       |17674789
-41 Jumelin Macha             8k FR  38Gr  17  4    94  563  45+/b   46+/w   0=      42+/w   40+/b   38-/b    |17562237
-42 Olivares-Thibaud Diego    7k FR  38GJ  17   3    103 603  43+/w   39+/b   38-/w   41-/b   45+/w   37-/b    |16086158
-43 Smith Roella              6k UK  Camb  16   1    100 585  42-/b   38-/b   40-/w   44-/w   46+/b   39-/w    |14713039
-44 Bolan Ovidiu_Andrei      12k RO  Miov  15   5    83   489  47+/w   45+/w   46+/b   43+/b   39-/b   49+/w    |17801278
-45 Tudosie Catalina_Bianca  10k RO  Drob  14   3    88  470 41-/w   44-/b   48+/b   46+/w   42-/b   47+/b    |16274456
-46 Perez Gautier             8k FR  75Op  14   1    84  512 38-/w   41-/b   44-/w   45-/b   43-/w   52+/b    |17350938
-47 Bradbury Tom             13k UK  CHuS  13   4    58   358 44-/b   48+/w   49+/b   50+/w   51+/b   45-/w    |17374786
-48 Haynes Jacob             14k UK  CHuS  12   4    47   331 49+/w   47-/b   45-/w   51+/b   52+/w   50+/b    |17462368
-49 Weber Mathias            13k DE  BN    8    2    52   321  48-/b   51+/w   47-/w   52+/b   50-/b   44-/b    |18086618
-50 Andrys Timon             20k FR  38Gr  5    4    44   290  51+/b   52+/w   0+      47-/b   49+/w   48-/w    |18286895
-51 Scholz Alena             18k DE  J     4    1    44   290  50-/w   49-/b   52-/b   48-/w   47-/w   0+       |18298896
-52 von_Buenau Ken           20k DE  J     3    2    45   316 0+      50-/b   51+/w   49-/w   48-/b   46-/w    |18233897
+ 1 Kajmin Vjacheslav         5d RU  50Zh  27   5    154  909  11+   10+   4+    3-    7+    6+     |14986257
+ 2 Fionin Grigorij           6d RU  78SP  27   5    152  908  9+    7-    12+   13+   5+    3+     |16013096
+ 3 Chernykh Anton            5d RU  50Zh  26   4    157  907  12+   5+    7+    1+    6-    2-     |15713467
+ 4 Pankoke Matias            4d DE  OL    26   4    152  903  14+   8+    1-    6-    9+    11+    |15933973
+ 5 Ruzicka Martin            4d DE  FR    26   4    151  906  15+   3-    14+   10+   2-    8+     |13037596
+ 6 Grigoriu Elian_Ioan       3d RO  Galt  26   4    151  903  8-    15+   20+   4+    3+    1-     |15974420
+ 7 Djepov Sinan              5d BG  Slvp  26   4    151  899  13+   2+    3-    19+   1-    18+    |17486205
+ 8 Popov Stepan              5d RU  16Kz  25   3    151  901  6+    4-    13-   16+   10+   5-     |14625897
+ 9 Khudoleev Artem           4d RU  77Mo  25   3    150  899  2-    14-   15+   12+   4-    13+    |15249553
+10 Pitrop Alexandru_Petre    4d RO  Boto  25   3    150  892  17+   1-    16+   5-    8-    15+    |15262940
+11 Bantla Chafiq             3d DE  DIN   25   3    148  892  1-    16-   21+   14+   13+   4-     |16501639
+12 Jacimovic Mihailo         3d RS  KGRa  25   3    148  887  3-    17+   2-    9-    22+   16+    |16786891
+13 Yeroshkin Oleksandr       2d UA  Rivn  24   2    151  897  7-    19+   8+    2-    11-   9-     |13649108
+14 Csizmadia Robert          2d HU  BuPe  24   2    149  886  4-    9+    5-    11-   18-   19+    |14925416
+15 Goncalves Simao           2d PT  Luxe  24   2    147  881  5-    6-    9-    23+   19+   10-    |17074981
+16 Ougier Ariane             1d FR  92An  24   3    146  879  21+   11+   10-   8-    20+   12-    |15774187
+17 Law Yu-Kai                2d DE  TR    24   2    143  865  10-   12-   19-   18-   21+   20+    |16513563
+18 Garand Franck             2k FR  75Op  24   5    140  849  23+   24+   22+   17+   14+   7-     |17886572
+19 Bonjean Robin             1d FR  34Mo  23   2    145  883  20+   13-   17+   7-    15-   14-    |18050824
+20 Dobranis Darius           1d RO  Bist  23   2    142  864  19-   22+   6-    21+   16-   17-    |15049716
+21 Tomsu Adriana             1d CZ  TFMi  23   2    140  850  16-   25+   11-   20-   17-   22+    |16225396
+22 Ougier Guillaume          1d FR  92An  22   2    139  835  24+   20-   18-   25+   12-   21-    |15762186
+23 Brachet Alois             1k FR  84Av  22   3    134  802  18-   30+   24+   15-   25-   29+    |15849152
+24 Lob Guillaume             1k CH  Kogo  22   2    133  800  22-   18-   23-   28+   26-   25+    |16501628
+25 Mezouar Abdallah          1k FR  69Ly  22   3    132  801  28+   21-   26+   22-   23+   24-    |17813059
+26 Moccelin Angelino         3k FR  84Av  22   4    128  761  33+   28+   25-   29+   24+   27-    |15874210
+27 Malko Yaroslav            4k UA  Rivn  22   5    120  726  30-   40+   35+   32+   34+   26+    |14937670
+28 Defer Tristan             2k CZ  Brno  21   2    127  761  25-   26-   30+   24-   32-   34+    |16486074
+29 Vasa Vojtech              4k CZ  APmG  21   4    126  748  31+   33+   32+   26-   30+   23-    |15762923
+30 Bousquet Sylvain          2k FR  38Gr  21   3    124  749  27+   23-   28-   35+   29-   36+    |16750426
+31 Benheddi Yassine          4k FR  75Op  21   4    117  718  29-   35-   39+   36+   33+   32+    |17449487
+32 Mangin Matthias           3k FR  38Gr  20   2    123  721  0=    34+   29-   27-   28+   31-    |16074157
+33 Capik Justin              3k FR  38GJ  20   2    122  728  26-   29-   37+   34-   31-   35+    |17601782
+34 Delasnerie Ronan          4k FR  56Lo  20   3    121  724  37+   32-   36+   33+   27-   28-    |16849206
+35 Bukovska Anezka           4k CZ  APmG  19   3    122  715  36+   31+   27-   30-   37+   33-    |15874947
+36 Medak Mirta               4k HR  Zagr  19   2    119  699  35-   37+   34-   31-   38+   30-    |16525718
+37 Weigmann Arved            4k DE  P     19   2    113  693  34-   36-   33-   39+   35-   42+    |15713379
+38 Birckner Bruno            8k DE  J     19   5    101  609  46+   43+   42+   40+   36-   41+    |16950604
+39 Bexfield Charlotte        5k UK  Ltch  18   2    105  625  40-   42-   31-   37-   44+   43+    |14901579
+40 Bedouet Theo              6k FR  92An  17   2    107  611  39+   27-   43+   38-   41-   0=     |17674789
+41 Jumelin Macha             8k FR  38Gr  17   4    94   563  45+   46+   0=    42+   40+   38-    |17562237
+42 Olivares-Thibaud Diego    7k FR  38GJ  17   3    103  603  43+   39+   38-   41-   45+   37-    |16086158
+43 Smith Roella              6k UK  Camb  16   1    100  585  42-   38-   40-   44-   46+   39-    |14713039
+44 Bolan Ovidiu_Andrei      12k RO  Miov  15   5    83   489  47+   45+   46+   43+   39-   49+    |17801278
+45 Tudosie Catalina_Bianca  10k RO  Drob  14   3    88   470  41-   44-   48+   46+   42-   47+    |16274456
+46 Perez Gautier             8k FR  75Op  14   1    84   512  38-   41-   44-   45-   43-   52+    |17350938
+47 Bradbury Tom             13k UK  CHuS  13   4    58   358  44-   48+   49+   50+   51+   45-    |17374786
+48 Haynes Jacob             14k UK  CHuS  12   4    47   331  49+   47-   45-   51+   52+   50+    |17462368
+49 Weber Mathias            13k DE  BN    8    2    52   321  48-   51+   47-   52+   50-   44-    |18086618
+50 Andrys Timon             20k FR  38Gr  5    4    44   290  51+   52+   0+    47-   49+   48-    |18286895
+51 Scholz Alena             18k DE  J     4    1    44   290  50-   49-   52-   48-   47-   0+     |18298896
+52 von_Buenau Ken           20k DE  J     3    2    45   316  0+    50-   51+   49-   48-   46-    |18233897

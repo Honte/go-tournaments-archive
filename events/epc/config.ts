@@ -2,7 +2,7 @@ import type { EventDefinition } from '@/schema/event';
 
 const EVENT_CONFIG: EventDefinition = {
   id: 'epc',
-  locales: ['en', 'pl'],
+  locales: ['en'],
   showCountry: false,
   showBestPlace: true,
   hideGamesWithoutSgf: true,

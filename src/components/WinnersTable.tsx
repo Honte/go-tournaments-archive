@@ -33,7 +33,7 @@ export function WinnersTable({ event, results, translations }: WinnersTableProps
   const t = getTranslator(translations);
 
   return (
-    <table className="w-full border-collapse sm:table-fixed">
+    <table className="w-full border-collapse table-fixed">
       <thead className="border-b-gray-300 border-b">
         <tr>
           <th className="sm:w-24 md:w-36">{t('winners.year')}</th>
@@ -83,7 +83,7 @@ function TournamentMedalistsRow({
         </Link>
       </td>
       {MEDALS.map((index) => (
-        <td className="p-1" key={index}>
+        <td className="p-1 wrap-break-word hyphens-auto" key={index}>
           {top[index]?.length
             ? jsxJoin(
                 top[index].map((id) => (
@@ -129,7 +129,7 @@ function TournamentAnnouncementRow({
           {year}
         </Link>
       </td>
-      <td colSpan={3} className="text-center underline-offset-2 p-1">
+      <td colSpan={3} className="wrap-break-word text-center underline-offset-2 p-1">
         {website ? (
           <a href={website} className="cursor-pointer flex gap-2 items-center justify-center">
             {content}

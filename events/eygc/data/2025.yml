@@ -4,30 +4,73 @@ stages:
     file: eygc2025u12.txt
     category: u12
     name: U12
+    dir: 2025/u12
     scoringColumns:
-      - mms 
+      - mms
       - sos
       - sosos
-      - direct
+      - wins
     breakers:
       - mms
       - sos
-      - sosos      
+      - sosos
+    columns:
+      - wins       
     findSharedPlaces: true
     collapsed: true
+    games:
+      - 1-5 1:B+45.5 round:6 sgf:2025/u12/6-BendeBarcza-LillyHu.sgf ogs:https://online-go.com/review/1427260
+      - 1-8 1:B+R round:2 sgf:2025/u12/2-BendeBarcza-LitaoMei.sgf ogs:https://online-go.com/review/1426119
+      - 2-1 1:W+25.5 round:1 sgf:2025/u12/1-DenysLototskyi-BendeBarcza.sgf ogs:https://online-go.com/review/1426006
+      - 2-3 2:B+R round:5 sgf:2025/u12/5-DenysLototskyi-RyanZhang.sgf ogs:https://online-go.com/review/1427109
+      - 3-1 1:W+R round:4 sgf:2025/u12/4-RyanZhang-BendeBarcza.sgf ogs:https://online-go.com/review/1426670
+      - 3-5 3:B+48.5 round:2 sgf:2025/u12/2-RyanZhang-LillyHu.sgf ogs:https://online-go.com/review/1426120
+      - 4-1 1:W+27.5 round:5 sgf:2025/u12/5-LarionSyrotkin-BendeBarcza.sgf ogs:https://online-go.com/review/1427108
+      - 4-3 3:W+R round:3 sgf:2025/u12/3-LarionSyrotkin-RyanZhang.sgf ogs:https://online-go.com/review/1426501
+      - 6-2 2:W+18.5 round:6 sgf:2025/u12/6-SzilardMihalyPapp-DenysLototskyi.sgf ogs:https://online-go.com/review/1427261
+      - 6-3 3:W+59.5 round:1 sgf:2025/u12/1-SzilardMihalyPapp-RyanZhang.sgf ogs:https://online-go.com/review/1426007
+      - 7-1 1:W+R round:3 sgf:2025/u12/3-LukaszKudla-BendeBarcza.sgf ogs:https://online-go.com/review/1426502
+      - 8-4 4:W+91.5 round:4 sgf:2025/u12/4-LitaoMei-LarionSyrotkin.sgf ogs:https://online-go.com/review/1426671
   - type: tournament
     file: eygc2025u18.txt
     category: u18
     name: U18
+    dir: 2025/u18
     scoringColumns:
-      - mms 
+      - mms
       - sos
       - sosos
-      - direct
+      - wins
     breakers:
       - mms
       - sos
-      - sosos 
-      - direct      
+      - sosos
+    columns:
+      - wins       
     findSharedPlaces: true
-    collapsed: true    
+    collapsed: true
+    games:
+      - 1-3 1:B+R round:4 sgf:2025/u18/4-OlesiaMalko-StjepanMedak.sgf ogs:https://online-go.com/review/1426665
+      - 1-7 1:B+R round:6 sgf:2025/u18/6-OlesiaMalko-RokoCrvelin.sgf ogs:https://online-go.com/review/1427256
+      - 1-15 1:B+R round:1 sgf:2025/u18/1-OlesiaMalko-AlexandruNicolasPatrascu.sgf ogs:https://online-go.com/review/1426005
+      - 2-1 1:W+0.5 round:3 sgf:2025/u18/3-RobertAndreiGrosu-OlesiaMalko.sgf ogs:https://online-go.com/review/1426498
+      - 2-4 2:B+R round:6 sgf:2025/u18/6-RobertAndreiGrosu-JanKomin.sgf ogs:https://online-go.com/review/1427258
+      - 2-7 2:B+9.5 round:2 sgf:2025/u18/2-RobertAndreiGrosu-RokoCrvelin.sgf ogs:https://online-go.com/review/1426117
+      - 3-7 3:B+R round:5 sgf:2025/u18/5-StjepanMedak-RokoCrvelin.sgf ogs:https://online-go.com/review/1427105
+      - 3-9 3:B+R round:1 sgf:2025/u18/1-StjepanMedak-DanylPetrashevskyi.sgf ogs:https://online-go.com/review/1426002
+      - 3-10 3:B+R round:6 sgf:2025/u18/6-StjepanMedak-KarloVlahovic.sgf ogs:https://online-go.com/review/1427257
+      - 4-1 4:B+5.5 round:5 sgf:2025/u18/5-JanKomin-OlesiaMalko.sgf ogs:https://online-go.com/review/1427104
+      - 4-3 3:W+R round:2 sgf:2025/u18/2-JanKomin-StjepanMedak.sgf ogs:https://online-go.com/review/1426115
+      - 4-13 4:B+15.5 round:4 sgf:2025/u18/4-JanKomin-MariiaChernova.sgf ogs:https://online-go.com/review/1426669
+      - 5-1 1:W+22.5 round:2 sgf:2025/u18/2-AntoniBugaj-OlesiaMalko.sgf ogs:https://online-go.com/review/1426118
+      - 6-2 2:W+2.5 round:5 sgf:2025/u18/5-BartikDach-RobertAndreiGrosu.sgf ogs:https://online-go.com/review/1427106
+      - 6-8 8:W+R round:2 sgf:2025/u18/2-BartikDach-StefanAdrianRotarita.sgf ogs:https://online-go.com/review/1426116
+      - 7-8 7:B+R round:4 sgf:2025/u18/4-RokoCrvelin-StefanAdrianRotarita.sgf ogs:https://online-go.com/review/1426666
+      - 8-3 3:W+1.5 round:3 sgf:2025/u18/3-StefanAdrianRotarita-StjepanMedak.sgf ogs:https://online-go.com/review/1426497
+      - 8-5 5:W+49.5 round:6 sgf:2025/u18/6-StefanAdrianRotarita-AntoniBugaj.sgf ogs:https://online-go.com/review/1427259
+      - 8-12 8:B+R round:5 sgf:2025/u18/5-StefanAdrianRotarita-AdamSiwy.sgf ogs:https://online-go.com/review/1427107
+      - 9-2 2:W+R round:4 sgf:2025/u18/4-DanylPetrashevskyi-RobertAndreiGrosu.sgf ogs:https://online-go.com/review/1426668
+      - 10-2 2:W+R round:1 sgf:2025/u18/1-KarloVlahovic-RobertAndreiGrosu.sgf ogs:https://online-go.com/review/1426004
+      - 10-4 4:W+16.5 round:3 sgf:2025/u18/3-KarloVlahovic-JanKomin.sgf ogs:https://online-go.com/review/1426499
+      - 13-5 5:W+11.5 round:3 sgf:2025/u18/3-MariiaChernova-AntoniBugaj.sgf ogs:https://online-go.com/review/1426500
+      - 14-6 6:W+R round:1 sgf:2025/u18/1-OliverSkocic-BartikDach.sgf ogs:https://online-go.com/review/1426003

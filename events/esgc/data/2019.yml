@@ -12,4 +12,6 @@ stages:
       - mms
       - sos
       - sodos
+    columns:
+      - wins       
     findSharedPlaces: false

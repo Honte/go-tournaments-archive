@@ -6,9 +6,10 @@ import type { EventEntry } from '@/components/multi/schema';
 
 type EventCardProps = EventEntry & {
   locale: Locale;
+  hasSingleLocale?: boolean;
 };
 
-export function EventCard({ event, name, locale }: EventCardProps) {
+export function EventCard({ event, name, locale, hasSingleLocale }: EventCardProps) {
   let eventLocale = locale;
   let eventName = getString(name, eventLocale);
 
@@ -24,19 +25,21 @@ export function EventCard({ event, name, locale }: EventCardProps) {
         className="flex flex-1 cursor-pointer flex-col items-center justify-center gap-4 p-6 text-center hover:bg-event-bg"
       >
         <img src={logoBlackUrl(event)} alt="" className="h-16 w-full max-w-48 object-contain" />
-        <h3 className="text-base font-bold leading-snug">{eventName}</h3>
+        <h3 className="text-base font-bold leading-snug min-h-[2lh]">{eventName}</h3>
       </Link>
-      <nav className="flex items-center justify-center gap-2 border-t border-event-soft p-3">
-        {event.locales.map((locale) => (
-          <Link
-            key={locale}
-            href={homeUrl(event, locale)}
-            className="min-w-10 rounded-sm bg-event-bg px-3 py-1 text-center text-sm font-bold hover:bg-event-soft"
-          >
-            {locale.toUpperCase()}
-          </Link>
-        ))}
-      </nav>
+      {!hasSingleLocale && (
+        <nav className="flex items-center justify-center gap-2 border-t border-event-soft p-3">
+          {event.locales.map((locale) => (
+            <Link
+              key={locale}
+              href={homeUrl(event, locale)}
+              className="min-w-10 rounded-sm bg-event-bg px-3 py-1 text-center text-sm font-bold hover:bg-event-soft"
+            >
+              {locale.toUpperCase()}
+            </Link>
+          ))}
+        </nav>
+      )}
     </article>
   );
 }

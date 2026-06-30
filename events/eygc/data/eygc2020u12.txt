@@ -8,67 +8,67 @@
 ; TM[82.5]
 ; CM[ (submitted by HIGOU)]
 ;.
- 1 Ovsiienko Vsevolod           2d UA  Kyiv  15   5    15   82   487  9+/w    7+/b    8+/b    3+/w    10+/b   2-/w     |17633902
- 2 Khusainov Askar              3d RU  16Kz  15   5    15   78   481  10+/b   8-/b    24+/w   11+/w   9+/w    1+/b     |17525706
- 3 Lavrov Egor                  2d RU  77Mo  14   4    14   82   479  13+/w   12+/b   4+/b    1-/b    8+/w    6-/b     |17886462
- 4 Gimadiev Artur               1d RU  16Kz  14   4    14   79   479  14+/w   6+/b    3-/w    10-/w   15+/b   8+/b     |17849073
- 5 Tarasov Ruslan               1d RU  16Kz  14   4    14   79   478  12-/b   14+/w   7+/w    8-/b    11+/b   9+/w     |17513705
- 6 Xing Yuze                    2d DE  HD    14   4    14   79   473  11+/b   4-/w    18+/w   9-/b    12+/b   3+/w     |18525012
- 7 Igonin Alexej                1d RU  77Mo  14   4    14   79   468  15+/b   1-/w    5-/b    18+/w   13+/b   10+/w    |17837105
- 8 Rotarita Stefan_Adrian       2k RO  Boto  13   3    13   84   473  16+/b   2+/w    1-/w    5+/w    3-/b    4-/w     |17837270
- 9 Touzot Cyan                  3k FR  75Op  13   3    13   82   469  1-/b    16+/w   15+/w   6+/w    2-/b    5-/b     |17086542
-10 Grosu Robert-Andrei          4k RO  Hika  13   3    13   82   468  2-/w    23+/b   12+/w   4+/b    1-/w    7-/b     |18362278
-11 Melnyk Anna                  3k UA  Kyiv  13   3    13   80   455  6-/w    17+/b   13+/b   2-/b    5-/w    19+/w    |17886517
-12 Stefanovych Dmytro           4k UA  Rivn  13   3    13   79   465  5+/w    3-/w    10-/b   20+/b   6-/w    17+/b    |17813246
-13 Shalnev Svjatoslav           5k RU  50Zh  13   3    13   76   452  3-/b    27+/b   11-/w   17+/w   7-/w    16+/b    |17337298
-14 Ponomareva Radmila           7k RU  18Iz  13   3    13   74   442  4-/b    5-/b    21-/w   26+/b   23+/w   15+/w    |18513462
-15 Medak Stjepan                5k HR  Zagr  12   2    12   78   457  7-/w    19+/w   9-/b    16+/b   4-/w    14-/b    |17437574
-16 Crvelin Roko                 8k HR  Vrba  12   2    12   73   457  8-/w    9-/b    28+/b   15-/w   20+/w   13-/w    |18262739
-17 Chernova Mariia              8k UA  Kyiv  12   3    12   73   442  20+/b   11-/w   29+/b   13-/b   18+/w   12-/w    |18562819
-18 Timperi Alexander           11k UK  IClg  12   3    12   71   429  23+/w   29+/w   6-/b    7-/b    17-/b   30+/b    |18650236
-19 Abzalilov Kirill            12k RU  16Kz  12   3    12   70   435  28+/w   15-/b   20-/w   21+/b   24+/w   11-/b    |18998375
-20 Siver Yekateryna            12k UA  Kyiv  12   3    12   70   423  17-/w   31+/w   19+/b   12-/w   16-/b   25+/b    |17637906
-21 Touzot Soren                14k FR  75Op  12   5    12   69   405  30+/b   22+/w   14+/b   19-/w   26+/w   23+/b    |19037128
-22 Doronina Maryna             13k UA  Rivn  12   4    12   63   398  25-/w   21-/b   33+/w   31+/b   28+/w   24+/b    |18601165
-23 Tolos Darius                10k RO  Cara  11   2    11   71   430  18-/b   10-/w   25+/b   28+/w   14-/b   21-/w    |18301701
-24 Petryk Danylo               12k UA  Kyiv  11   3    11   71   410  26+/w   25+/b   2-/b    29+/w   19-/b   22-/w    |18601594
-25 Shalnev Vladislav           14k RU  50Zh  11   3    11   67   394  22+/b   24-/w   23-/w   34+/b   27+/w   20-/w    |18686063
-26 Petre Edvin-Matei           13k RO  Hika  11   3    11   66   396  24-/b   34+/w   27+/b   14-/w   21-/b   33+/w    |18625728
-27 Regos Hunor                 10k HU  BPPG  11   2    11   65   395  29-/b   13-/w   26-/w   32+/w   25-/b   28+/b    |19249098
-28 Sladetic Teo                12k HR  Zagr  10   1    10   67   405  19-/b   33+/w   16-/w   23-/b   22-/b   27-/w    |18298742
-29 Savytskyi Avhust            13k UA  Kyiv  10   1    10   66   402  27+/w   18-/b   17-/w   24-/b   30-/b   31-/w    |19237185
-30 Naumenko Roman              12k UA  Kyiv  10   3    10   61   365  21-/w   32-/b   36+/b   33+/b   29+/w   18-/w    |18498975
-31 Patrascu Alexandru-Nicolas  14k RO  Hika  10   3    10   61   358  36+/w   20-/b   32+/b   22-/w   33-/w   29+/b    |18513517
-32 Arsentjev Grigorij          16k RU  77Mo  10   3    10   53   332  33-/b   30+/w   31-/w   27-/b   43+/w   38+/b    |17849469
-33 Ovsiienko Tymofii           14k UA  Kyiv  9    2    9    63   371  32+/w   28-/b   22-/b   30-/w   31+/b   26-/b    |18662325
-34 Pilipovic Fran              14k HR  Zagr  10   0    8    54   325  0=      26-/b   0=      25-/w   0=      0=       |18649301
-35 Grosu Eduard-Gabriel        18k RO  Hika  8    5    8    40   232  40+/w   38+/b   44-/w   39+/w   47+/b   37+/b    |18474709
-36 Klanjcic Paula              17k HR  Jast  8    2    7    43   264  31-/b   37+/b   30-/w   44+/w   0=      0=       |18949854
-37 Sincari Luca                18k RO  VaDo  7    3    7    42   240  45+/b   36-/w   43+/w   38-/w   40+/b   35-/w    |19013764
-38 Chernova Vira               16k UA  Kyiv  7    4    7    41   241  49+/b   35-/w   50+/w   37+/b   44+/b   32-/w    |18962647
-39 Bernardis Marta             18k IT  Rave  7    5    7    38   216  51+/b   46+/w   41+/w   35-/b   45+/w   44+/b    |18062286
-40 Kristensen Oliver           18k DK  KGK   7    4    7    38   215  35-/b   42+/w   52+/w   45+/b   37-/w   50+/b    |18550367
-41 ifj_Kis-Gado Csaba          18k HU  BPPG  7    5    7    33   189  58+/b   48+/w   39-/b   46+/w   57+/b   47+/w    |18913983
-42 Volovich Andrew             20k UK  CamC  7    5    7    31   200  55+/w   40-/b   56+/b   52+/w   48+/b   43+/b    |19549365
-43 Patrascuta Mihail           18k RO  Hika  6    3    6    41   220  46+/b   45+/w   37-/b   62+/w   32-/b   42-/w    |19349902
-44 Sincari Matei               17k RO  VaDo  6    3    6    40   229  48+/b   49+/w   35+/b   36-/b   38-/w   39-/w    |19025765
-45 Lojdl Mihael                17k HR  Jast  6    2    6    37   224  37-/w   43-/b   49+/b   40-/w   39-/b   51+/b    |18650940
-46 Ljubetic Franka             18k HR  Jast  6    3    6    34   191  43-/w   39-/b   59+/w   41-/b   49+/b   53+/w    |18601517
-47 Baker Lawrence              18k UK  Oxfd  6    4    6    33   185  61+/w   50+/w   58+/b   51+/w   35-/w   41-/b    |19013093
-48 Delic Sara                  20k HR  Jast  5    2    5    34   189  44-/w   41-/b   55+/b   49+/w   42-/w   54-/w    |19262309
-49 Marz Leopold                19k DE  J     5    1    5    33   211  38-/w   44-/b   45-/w   48-/b   46-/w   60+/w    |18274872
-50 Delic Dora                  18k HR  Jast  5    3    5    33   180  53+/w   47-/b   38-/b   54+/w   63+/b   40-/w    |19001620
-51 Salihovic Artur             19k HR  Inse  5    3    5    32   186  39-/w   54+/b   61+/w   47-/b   52+/b   45-/w    |19062054
-52 Militaru David              18k RO  Hika  5    3    5    32   179  56+/w   62+/b   40-/b   42-/b   51-/w   55+/w    |19413361
-53 Ghetu Sara_Maria            20k RO  Cluj  5    3    5    24   172  50-/b   56-/w   64+/w   57+/b   55+/b   46-/b    |19533602
-54 Macovei Maria               20k RO  VaDo  5    4    5    23   166  64+/b   51-/w   63+/w   50-/b   59+/w   48+/b    |19062164
-55 Kleinle Malou               19k DE  xxxx  4    2    4    29   170  42-/b   57+/w   48-/w   61+/b   53-/w   52-/b    |19598689
-56 Sanda Noa                   20k HR  VGrd  4    2    4    26   160  52-/b   53+/b   42-/w   58-/w   60-/b   64+/w    |18786614
-57 Matusa_Popovic Janne        20k HR  xxxx  4    3    4    26   154  59+/w   55-/b   60+/b   53-/w   41-/w   63+/b    |19450706
-58 Suc Enej                    19k SI  Ljub  5    2    4    24   141  41-/w   60+/b   47-/w   56+/b   0=      0=       |19398456
-59 Marz Larissa                20k DE  J     4    3    4    22   155  57-/b   64+/w   46-/b   60+/w   54-/b   61+/w    |18413945
-60 Ghetu Denis_Mihai           20k RO  Cluj  3    2    3    25   152  63+/b   58-/w   57-/w   59-/b   56+/w   49-/b    |19525605
-61 Peter Maia                  20k RO  Cluj  3    1    3    23   161  47-/b   63-/w   51-/b   55-/w   64+/b   59-/b    |19501603
-62 Pilipovic Damjan            19k HR  Vrba  5    0    3    23   145  0=      52-/w   0=      43-/b   0=      0=       |19313019
-63 Pittner Lena                20k DE  B     3    2    3    21   154  60-/w   61+/b   54-/b   64+/b   50-/w   57-/w    |18213140
-64 Kokotovic Karlo             20k HR  Vuko  1    0    1    24   139  54-/w   59-/b   53-/b   63-/w   61-/w   56-/b    |19074627
+ 1 Ovsiienko Vsevolod           2d UA  Kyiv  15   5    15   82   487  9+    7+    8+    3+    10+   2-     |17633902
+ 2 Khusainov Askar              3d RU  16Kz  15   5    15   78   481  10+   8-    24+   11+   9+    1+     |17525706
+ 3 Lavrov Egor                  2d RU  77Mo  14   4    14   82   479  13+   12+   4+    1-    8+    6-     |17886462
+ 4 Gimadiev Artur               1d RU  16Kz  14   4    14   79   479  14+   6+    3-    10-   15+   8+     |17849073
+ 5 Tarasov Ruslan               1d RU  16Kz  14   4    14   79   478  12-   14+   7+    8-    11+   9+     |17513705
+ 6 Xing Yuze                    2d DE  HD    14   4    14   79   473  11+   4-    18+   9-    12+   3+     |18525012
+ 7 Igonin Alexej                1d RU  77Mo  14   4    14   79   468  15+   1-    5-    18+   13+   10+    |17837105
+ 8 Rotarita Stefan_Adrian       2k RO  Boto  13   3    13   84   473  16+   2+    1-    5+    3-    4-     |17837270
+ 9 Touzot Cyan                  3k FR  75Op  13   3    13   82   469  1-    16+   15+   6+    2-    5-     |17086542
+10 Grosu Robert-Andrei          4k RO  Hika  13   3    13   82   468  2-    23+   12+   4+    1-    7-     |18362278
+11 Melnyk Anna                  3k UA  Kyiv  13   3    13   80   455  6-    17+   13+   2-    5-    19+    |17886517
+12 Stefanovych Dmytro           4k UA  Rivn  13   3    13   79   465  5+    3-    10-   20+   6-    17+    |17813246
+13 Shalnev Svjatoslav           5k RU  50Zh  13   3    13   76   452  3-    27+   11-   17+   7-    16+    |17337298
+14 Ponomareva Radmila           7k RU  18Iz  13   3    13   74   442  4-    5-    21-   26+   23+   15+    |18513462
+15 Medak Stjepan                5k HR  Zagr  12   2    12   78   457  7-    19+   9-    16+   4-    14-    |17437574
+16 Crvelin Roko                 8k HR  Vrba  12   2    12   73   457  8-    9-    28+   15-   20+   13-    |18262739
+17 Chernova Mariia              8k UA  Kyiv  12   3    12   73   442  20+   11-   29+   13-   18+   12-    |18562819
+18 Timperi Alexander           11k UK  IClg  12   3    12   71   429  23+   29+   6-    7-    17-   30+    |18650236
+19 Abzalilov Kirill            12k RU  16Kz  12   3    12   70   435  28+   15-   20-   21+   24+   11-    |18998375
+20 Siver Yekateryna            12k UA  Kyiv  12   3    12   70   423  17-   31+   19+   12-   16-   25+    |17637906
+21 Touzot Soren                14k FR  75Op  12   5    12   69   405  30+   22+   14+   19-   26+   23+    |19037128
+22 Doronina Maryna             13k UA  Rivn  12   4    12   63   398  25-   21-   33+   31+   28+   24+    |18601165
+23 Tolos Darius                10k RO  Cara  11   2    11   71   430  18-   10-   25+   28+   14-   21-    |18301701
+24 Petryk Danylo               12k UA  Kyiv  11   3    11   71   410  26+   25+   2-    29+   19-   22-    |18601594
+25 Shalnev Vladislav           14k RU  50Zh  11   3    11   67   394  22+   24-   23-   34+   27+   20-    |18686063
+26 Petre Edvin-Matei           13k RO  Hika  11   3    11   66   396  24-   34+   27+   14-   21-   33+    |18625728
+27 Regos Hunor                 10k HU  BPPG  11   2    11   65   395  29-   13-   26-   32+   25-   28+    |19249098
+28 Sladetic Teo                12k HR  Zagr  10   1    10   67   405  19-   33+   16-   23-   22-   27-    |18298742
+29 Savytskyi Avhust            13k UA  Kyiv  10   1    10   66   402  27+   18-   17-   24-   30-   31-    |19237185
+30 Naumenko Roman              12k UA  Kyiv  10   3    10   61   365  21-   32-   36+   33+   29+   18-    |18498975
+31 Patrascu Alexandru-Nicolas  14k RO  Hika  10   3    10   61   358  36+   20-   32+   22-   33-   29+    |18513517
+32 Arsentjev Grigorij          16k RU  77Mo  10   3    10   53   332  33-   30+   31-   27-   43+   38+    |17849469
+33 Ovsiienko Tymofii           14k UA  Kyiv  9    2    9    63   371  32+   28-   22-   30-   31+   26-    |18662325
+34 Pilipovic Fran              14k HR  Zagr  10   0    8    54   325  0=    26-   0=    25-   0=    0=     |18649301
+35 Grosu Eduard-Gabriel        18k RO  Hika  8    5    8    40   232  40+   38+   44-   39+   47+   37+    |18474709
+36 Klanjcic Paula              17k HR  Jast  8    2    7    43   264  31-   37+   30-   44+   0=    0=     |18949854
+37 Sincari Luca                18k RO  VaDo  7    3    7    42   240  45+   36-   43+   38-   40+   35-    |19013764
+38 Chernova Vira               16k UA  Kyiv  7    4    7    41   241  49+   35-   50+   37+   44+   32-    |18962647
+39 Bernardis Marta             18k IT  Rave  7    5    7    38   216  51+   46+   41+   35-   45+   44+    |18062286
+40 Kristensen Oliver           18k DK  KGK   7    4    7    38   215  35-   42+   52+   45+   37-   50+    |18550367
+41 ifj_Kis-Gado Csaba          18k HU  BPPG  7    5    7    33   189  58+   48+   39-   46+   57+   47+    |18913983
+42 Volovich Andrew             20k UK  CamC  7    5    7    31   200  55+   40-   56+   52+   48+   43+    |19549365
+43 Patrascuta Mihail           18k RO  Hika  6    3    6    41   220  46+   45+   37-   62+   32-   42-    |19349902
+44 Sincari Matei               17k RO  VaDo  6    3    6    40   229  48+   49+   35+   36-   38-   39-    |19025765
+45 Lojdl Mihael                17k HR  Jast  6    2    6    37   224  37-   43-   49+   40-   39-   51+    |18650940
+46 Ljubetic Franka             18k HR  Jast  6    3    6    34   191  43-   39-   59+   41-   49+   53+    |18601517
+47 Baker Lawrence              18k UK  Oxfd  6    4    6    33   185  61+   50+   58+   51+   35-   41-    |19013093
+48 Delic Sara                  20k HR  Jast  5    2    5    34   189  44-   41-   55+   49+   42-   54-    |19262309
+49 Marz Leopold                19k DE  J     5    1    5    33   211  38-   44-   45-   48-   46-   60+    |18274872
+50 Delic Dora                  18k HR  Jast  5    3    5    33   180  53+   47-   38-   54+   63+   40-    |19001620
+51 Salihovic Artur             19k HR  Inse  5    3    5    32   186  39-   54+   61+   47-   52+   45-    |19062054
+52 Militaru David              18k RO  Hika  5    3    5    32   179  56+   62+   40-   42-   51-   55+    |19413361
+53 Ghetu Sara_Maria            20k RO  Cluj  5    3    5    24   172  50-   56-   64+   57+   55+   46-    |19533602
+54 Macovei Maria               20k RO  VaDo  5    4    5    23   166  64+   51-   63+   50-   59+   48+    |19062164
+55 Kleinle Malou               19k DE  xxxx  4    2    4    29   170  42-   57+   48-   61+   53-   52-    |19598689
+56 Sanda Noa                   20k HR  VGrd  4    2    4    26   160  52-   53+   42-   58-   60-   64+    |18786614
+57 Matusa_Popovic Janne        20k HR  xxxx  4    3    4    26   154  59+   55-   60+   53-   41-   63+    |19450706
+58 Suc Enej                    19k SI  Ljub  5    2    4    24   141  41-   60+   47-   56+   0=    0=     |19398456
+59 Marz Larissa                20k DE  J     4    3    4    22   155  57-   64+   46-   60+   54-   61+    |18413945
+60 Ghetu Denis_Mihai           20k RO  Cluj  3    2    3    25   152  63+   58-   57-   59-   56+   49-    |19525605
+61 Peter Maia                  20k RO  Cluj  3    1    3    23   161  47-   63-   51-   55-   64+   59-    |19501603
+62 Pilipovic Damjan            19k HR  Vrba  5    0    3    23   145  0=    52-   0=    43-   0=    0=     |19313019
+63 Pittner Lena                20k DE  B     3    2    3    21   154  60-   61+   54-   64+   50-   57-    |18213140
+64 Kokotovic Karlo             20k HR  Vuko  1    0    1    24   139  54-   59-   53-   63-   61-   56-    |19074627

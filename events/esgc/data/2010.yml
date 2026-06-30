@@ -10,4 +10,11 @@ stages:
     breakers:
       - mms
       - sos
+    columns:
+      - wins       
     findSharedPlaces: true
+    games:
+      - 1-8 1:B+41.5 round:5 sgf:2010/5-MatthiasTerwey-SebastianBrauner.sgf
+      - 2-1 1:W+12.5 round:4 sgf:2010/4-BenjaminTeuber-MatthiasTerwey.sgf
+      - 2-7 2:B+R round:3 sgf:2010/3-BenjaminTeuber-ThomasConnor.sgf
+      - 4-2 2:W+R round:2 sgf:2010/2-OivaMoisio-BenjaminTeuber.sgf

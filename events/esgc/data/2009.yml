@@ -7,8 +7,24 @@ stages:
       - mms
       - sos
       - sosos
+      - wins
     breakers:
       - mms
       - sos
       - sosos
+    columns:
+      - wins       
     findSharedPlaces: false
+    games:
+      - 1-3 1:B+R round:2 sgf:2009/2-JunTarumi-IgorNemlij.sgf
+      - 1-5 1:B+R round:3 sgf:2009/3-JunTarumi-MartinReindl.sgf
+      - 1-11 1:B+16.5 round:6 sgf:2009/6-JunTarumi-AnnaProkopova.sgf
+      - 2-1 1:W+T round:4 sgf:2009/4-PalBalogh-JunTarumi.sgf
+      - 2-9 2:B+R round:1 sgf:2009/1-PalBalogh-MatthiasTerwey.sgf
+      - 4-1 1:W+R round:1 sgf:2009/1-KamilChwedyna-JunTarumi.sgf
+      - 4-2 2:W+R round:5 sgf:2009/5-KamilChwedyna-PalBalogh.sgf
+      - 4-3 3:W+R round:6 sgf:2009/6-KamilChwedyna-IgorNemlij.sgf
+      - 6-2 2:W+13.5 round:3 sgf:2009/3-ManuelaMarz-PalBalogh.sgf
+      - 7-2 2:W+6.5 round:2 sgf:2009/2-LucianCorlan-PalBalogh.sgf
+      - 7-4 4:W+R round:4 sgf:2009/4-LucianCorlan-KamilChwedyna.sgf
+      - 8-1 1:W+6.5 round:5 sgf:2009/5-RitaPocsai-JunTarumi.sgf

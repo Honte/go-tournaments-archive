@@ -5,13 +5,14 @@ stages:
     file: eygc1996u12.txt
     category: u12
     name: U12
+    dir: 1996/u12
     scoringColumns:
       - mms 
       - wins
       - sos
       - sosos
     breakers:
-      - mms
+      - wins
       - sos
       - sosos
     findSharedPlaces: true
@@ -20,6 +21,7 @@ stages:
     file: eygc1996u18.txt
     category: u18
     name: U18
+    dir: 1996/u18
     scoringColumns:
       - mms 
       - wins
@@ -29,5 +31,7 @@ stages:
       - mms
       - sos
       - sosos
+    columns:
+      - wins       
     findSharedPlaces: true
     collapsed: true

@@ -11,78 +11,78 @@
 ; Under12
 ;
 ; Pl Name                   Grd Co Club  MMS  SOS SOSOS
- 1 Ng Anson                  2d UK  HKng  26   21   118  0    10+/b0  3+/b0   2+/w0   6+/w0   4+/b0   5-/w0    |15701378
- 2 Pitrop Alexandru          4k RO  Boto  25   21   113  0    11+/w0  12+/b0  1-/b0   7+/w0   3+/w0   4-/w0    |15262940
- 3 State Silvestru           6k RO  LocB  25   21   113  0    12+/b0  1-/w0   11+/w0  5+/b0   2-/b0   9+/w0    |15362039
- 4 Wolf Oliver               1k DE  B     25   18   120  0    6-/b0   17+/w0  10+/b0  8+/w0   1-/w0   2+/b0    |14062609
- 5 Popov Stepan              1d RU  16Kz  25   18   115  0    8+/w0   13+/b0  6-/b0   3-/w0   17+/w0  1+/b0    |14625897
- 6 Sidorenko Mikhail         3d RU  50Fr  25   17   72   0    4+/w0   7+/b0   5+/w0   1-/b0   0=     0=      |14925339
- 7 Verteleckyj Vladyslav     9k UA  Rivn  25   15   117  0    17+/b0  6-/w0   13+/b0  2-/b0   8+/w0   10+/w0   |15325145
- 8 Berende Tudor             7k RO  Bist  24   18   107  0    5-/b0   20+/w0  9+/w0   4-/b0   7-/b0   13+/w0   |13962025
- 9 Krushelnyckyj Valerij     9k UA  Rivn  24   15   114  0    18+/w0  14+/b0  8-/b0   10+/w0  13+/b0  3-/b0    |15450072
-10 Dobranis Darius           9k RO  Bist  23   23   100  0    1-/w0   11+/b0  4-/w0   9-/b0   16+/w0  7-/b0    |15049716
-11 Khudoleev Artem           8k RU  77Mo  23   19   114  0    2-/b0   10-/w0  3-/b0   14+/w0  18-/w0  15+/w0   |15249553
-12 Csoti Sebestyen           6k HU  Buda  23   19   111  0    3-/w0   2-/w0   17-/b0  18+/b0  15-/b0  23+/w0   |14862628
-13 Heaulme Melissa           7k FR  44NE  23   18   104  0    14+/b0  5-/w0   7-/w0   17+/b0  9-/w0   8-/b0    |14574824
-14 Csizmadia Robert          5k HU  BuPe  23   18   96   0    13-/w0  9-/w0   16-/b0  11-/b0  24+/w0  18+/b0   |14925416
-15 Cherestes Ioan           10k RO  Bucu  23   15   106  0    21+/w0  19+/b0  20+/w0  16+/b0  12+/w0  11-/b0   |15274875
-16 Jacuk Anatolij           11k UA  Rivn  23   12   115  0    20+/b0  18+/w0  14+/w0  15-/w0  10-/b0  17+/w0   |14886927
-17 Haja Daniel               5k RO  VaDo  22   20   100  0    7-/w0   4-/b0   12+/w0  13-/w0  5-/b0   16-/b0   |15037594
-18 Dobranis Denis           10k RO  Bist  22   16   102  0    9-/b0   16-/b0  21+/w0  12-/w0  11+/b0  14-/w0   |15350038
-19 Pylypchuk Andrij         13k UA  Rivn  22   14   115  0    23+/b0  15-/w0  26+/b0  20+/w0  22+/w0  21+/b0   |15025175
-20 Yashov Kristian          10k BG  Sofi  20   23   95   0    16-/w0  8-/b0   15-/b0  19-/b0  23-/w0  22-/w0   |15349037
-21 Sorokin Andrej           12k RU  77Mo  20   19   103  0    15-/b0  22+/w0  18-/b0  23-/w0  26+/b0  19-/w0   |15449731
-22 Buhai Calin              14k RO  Bist  20   18   108  0    30+/w0  21-/b0  24-/w0  25+/w0  19-/b0  20+/b0   |14037496
-23 Encean Mihnea            14k RO  Bist  20   18   107  0    19-/w0  24+/b0  25-/w0  21+/b0  20+/b0  12-/b0   |15333780
-24 Zin Iryna                14k UA  Rivn  20   16   118  0    26+/w0  23-/w0  22+/b0  27+/b0  14-/b0  28+/w0   |14813931
-25 Sikidin Jurij            13k UA  Rivn  19   16   120  0    28+/w0  26+/b0  23+/b0  22-/b0  27+/b0  30+/w0   |14913492
-26 Moldovan Teodor          17k RO  Bist  18   22   104  0    24-/b0  25-/w0  19-/w0  30+/b0  21-/w0  27-/w0   |15025714
-27 Dinu Ansira              16k RO  Giar  18   19   119  0    29+/w0  30+/b0  28+/b0  24-/w0  25-/w0  26+/b0   |14937153
-28 Ionascu Iulia            17k RO  Bist  17   23   112  0    25-/b0  34+/w0  27-/w0  31+/b0  39+/w0  24-/b0   |15337146
-29 Sima Ruxandra            17k RO  LocB  17   22   116  0    27-/b0  43+/w0  41+/w0  33-/b0  32+/w0  35+/w0   |15374051
-30 Groot Yuki_de            15k NL  DHaa  17   20   112  0    22-/b0  27-/w0  35+/b0  26-/w0  33+/b0  25-/b0   |15050574
-31 Lupo Sergiu              17k RO  Giar  17   19   131  0    45+/w0  39+/b0  32+/w0  28-/w0  38+/b0  33+/w0   |15337619
-32 Berbecariu Bianca_Crina  17k RO  Bist  16   20   120  0    49+/w0  35+/w0  31-/b0  34+/b0  29-/b0  39+/w0   |14613709
-33 Encean Teodor            17k RO  Bist  16   19   122  0    40+/b0  42+/b0  34+/w0  29+/w0  30-/w0  31-/b0   |15374150
-34 Bacanu Soranna           18k RO  LocB  16   19   118  0    42+/w0  28-/b0  33-/b0  32-/w0  43+/b0  44+/w0   |15313045
-35 Gorgovan Dragos          17k RO  Brai  16   18   118  0    39+/w0  32-/b0  30-/w0  37+/b0  44+/w0  29-/b0   |15374821
-36 Mihaiu Ionut             17k RO  Bist  16   16   129  0    46+/w0  45+/b0  39-/b0  40+/w0  42+/b0  41+/w0   |15386129
-37 Moldovan Roxana          18k RO  Bist  15   17    95  0    0=     52+/b0  43+/w0  35-/w0  41-/b0  47+/w0   |12674607
-38 Berlinschi Alexandru     19k RO  LocB  15   24   111  0    41-/b0  48+/w0  47+/w0  51+/b0  31-/w0  54+/b0   |15437026
-39 Riedeman Marcel          17k NL  Delf  15   23   112  0    35-/b0  31-/w0  36+/w0  61+/b0  28-/b0  32-/b0   |14601378
-40 Maftei Ana-Maria         19k RO  Giar  15   22   104  0    33-/w0  51-/w0  50+/b0  36-/b0  61+/b0  52+/w0   |15350621
-41 Kozulja Mykhajlo         19k UA  Rivn  15   20   109  0    38+/w0  69+/b0  29-/b0  57+/w0  37+/w0  36-/b0   |14637843
-42 Becheanu Luca            17k RO  Brai  15   20   109  0    34-/b0  33-/w0  51+/w0  44-/b0  36-/w0  45+/b0   |15313826
-43 Trifan Albert            18k RO  Brai  15   20   106  0    44+/w0  29-/b0  37-/b0  54+/b0  34-/w0  51+/w0   |15398823
-44 Moldovan Ioana           18k RO  Bist  15   16   113  0    43-/b0  57+/w0  52+/w0  42+/w0  35-/b0  34-/b0   |15798376
-45 Weigmann Arved           19k DE  P     14   22   103  0    31-/b0  36-/w0  57-/b0  55+/w0  53+/b0  42-/w0   |15713379
-46 State Sebastian          19k RO  LocB  14   22    94  0    36-/b0  55+/w0  54-/b0  65+/w0  51-/w0  58+/b0   |15413035
-47 Vlad Gabriela_Viorica    19k RO  Sibi  14   20   112  0    53+/b0  59+/w0  38-/b0  49+/w0  50+/w0  37-/b0   |15725380
-48 Dambu Diana              19k RO  Bist  14   19   98   0    56+/w0  38-/b0  66+/b0  52-/w0  65+/b0  61+/w0   |15313782
-49 Caragea Bogdan           19k RO  LocB  14   19   98   0    32-/b0  66+/w0  63-/w0  47-/b0  67+/b0  59+/b0   |15737381
-50 Craciun-Bunda Alexandru  19k RO  LocB  14   18   104  0    62+/w0  60+/b0  40-/w0  63+/b0  47-/b0  56+/w0   |15633728
-51 Singeorzan Cristina      19k RO  Bist  14   17   126  0    59+/w0  40+/b0  42-/b0  38-/w0  46+/b0  43-/b0   |15301781
-52 Dumitru Ana-Gabriela     19k RO  LocB  14   17   106  0    64+/b0  37-/w0  44-/b0  48+/b0  60+/w0  40-/b0   |15350049
-53 Mihai Sara               19k RO  LocB  14   15   105  0    47-/w0  71+/b0  68+/w0  58+/b0  45-/w0  60+/b0   |15613510
-54 Mastan Adina             19k RO  Bist  14   15   119  0    75+/b0  58+/b0  46+/w0  43-/w0  57+/b0  38-/w0   |14974498
-55 Badiu Anca               19k RO  Bist  14   13   102  0    67+/b0  46-/b0  72+/w0  45-/b0  69+/w0  57+/w0   |15749382
-56 Armanchi Beatrice        19k RO  Giar  13   14   83   0    48-/b0  0=     73+/w0  70+/w0  62+/b0  50-/b0   |15325640
-57 Crit Andreea             20k RO  LocB  13   19   104  0    60+/w0  44-/b0  45+/w0  41-/b0  54-/w0  55-/b0   |15674516
-58 Bystrjakova Anna         20k UA  Rivn  13   19   93   0    65+/b0  54-/w0  67+/w0  53-/w0  64+/b0  46-/w0   |15462084
-59 Scutaru Laura_Maria      20k RO  Brai  13   18   98   0    51-/b0  47-/b0  65-/w0  71+/w0  63+/b0  49-/w0   |14937230
-60 Viziteu Florin           20k RO  Giar  13   17   99   0    57-/b0  50-/w0  70+/b0  64+/w0  52-/b0  53-/w0   |14949154
-61 Nitu Mircea              19k RO  LocB  13   16   108  0    68+/w0  63+/b0  64+/b0  39-/w0  40-/w0  48-/b0   |15674725
-62 Ghioc Emilia             20k RO  Bucu  13   16   82   0    50-/b0  68-/b0  74+/w0  66+/w0  56-/w0  71+/w0   |14901139
-63 Porca Diana              20k RO  Bist  13   15   95   0    71+/b0  61-/w0  49+/b0  50-/w0  59-/w0  74+/b0   |15301132
-64 Socaci-Kontz Diana       20k RO  Bist  13   14   99   0    52-/w0  72+/b0  61-/w0  60-/b0  58-/w0  68+/b0   |15286986
-65 Vaipan Bogdan            20k RO  Giar  13   14   109  0    58-/w0  73+/b0  59+/b0  46-/b0  48-/w0  72+/w0   |14962156
-66 Cimuca Raul_Marinel      20k RO  Giar  13   13   100  0    70+/b0  49-/b0  48-/w0  62-/b0  72+/b0  75+/w0   |15025813
-67 Benea Denisa             20k RO  Giar  13   12   98   0    55-/w0  75+/b0  58-/b0  72+/w0  49-/w0  73+/w0   |15333637
-68 Badea Ana                20k RO  Giar  12   14   77   0    61-/b0  62+/w0  53-/b0  0=     70+/w0  64-/w0   |15762384
-69 Armanchi Denisa          20k RO  Giar  12   11   79   0    73+/b0  41-/w0  0=     75+/w0  55-/b0  70-/b0   |15386635
-70 Kucheruk Vlada           20k UA  Rivn  12   14   79   0    66-/w0  74+/b0  60-/w0  56-/b0  68-/b0  69+/w0   |15774385
-71 Vasilescu Luciana        20k RO  Giar  12   13   95   0    63-/w0  53-/w0  75+/w0  59-/b0  73+/b0  62-/b0   |15374634
-72 Iordache Andreea         20k RO  LocB  11   16   77   0    74+/b0  64-/w0  55-/b0  67-/b0  66-/w0  65-/b0   |15786386
-73 Morea Matei              20k RO  LocB  11   15   74   0    69-/w0  65-/w0  56-/b0  74+/b0  71-/w0  67-/b0   |15625720
-74 Ciora Ruxandra           20k RO  Giar  11   10   92   0    72-/w0  70-/w0  62-/b0  73-/w0  75+/b0  63-/w0   |15333802
-75 Craciun-Bunda Theodora   20k RO  LocB  10   15   74   0    54-/w0  67-/w0  71-/b0  69-/b0  74-/w0  66-/b0   |15613730
+   1 Ng Anson                       2d UK  HKng    26    21   118     5  10+/b0   3+/b0   2+/w0   6+/w0   4+/b0   5-/w0 |15701378
+   2 Pitrop Alexandru               4k RO  Boto    25    21   113     4  11+/w0  12+/b0   1-/b0   7+/w0   3+/w0   4-/w0 |15262940
+   3 State Silvestru                6k RO  LocB    25    21   113     4  12+/b0   1-/w0  11+/w0   5+/b0   2-/b0   9+/w0 |15362039
+   4 Wolf Oliver                    1k DE  B       25    18   120     4   6-/b0  17+/w0  10+/b0   8+/w0   1-/w0   2+/b0 |14062609
+   5 Popov Stepan                   1d RU  16Kz    25    18   115     4   8+/w0  13+/b0   6-/b0   3-/w0  17+/w0   1+/b0 |14625897
+   6 Sidorenko Mikhail              3d RU  50Fr    25    17    72     3   4+/w0   7+/b0   5+/w0   1-/b0      0=      0= |14925339
+   7 Verteleckyj Vladyslav          9k UA  Rivn    25    15   117     4  17+/b0   6-/w0  13+/b0   2-/b0   8+/w0  10+/w0 |15325145
+   8 Berende Tudor                  7k RO  Bist    24    18   107     3   5-/b0  20+/w0   9+/w0   4-/b0   7-/b0  13+/w0 |13962025
+   9 Krushelnyckyj Valerij          9k UA  Rivn    24    15   114     4  18+/w0  14+/b0   8-/b0  10+/w0  13+/b0   3-/b0 |15450072
+  10 Dobranis Darius                9k RO  Bist    23    23   100     2   1-/w0  11+/b0   4-/w0   9-/b0  16+/w0   7-/b0 |15049716
+  11 Khudoleev Artem                8k RU  77Mo    23    19   114     2   2-/b0  10-/w0   3-/b0  14+/w0  18-/w0  15+/w0 |15249553
+  12 Csoti Sebestyen                6k HU  Buda    23    19   111     2   3-/w0   2-/w0  17-/b0  18+/b0  15-/b0  23+/w0 |14862628
+  13 Heaulme Melissa                7k FR  44NE    23    18   104     2  14+/b0   5-/w0   7-/w0  17+/b0   9-/w0   8-/b0 |14574824
+  14 Csizmadia Robert               5k HU  BuPe    23    18    96     2  13-/w0   9-/w0  16-/b0  11-/b0  24+/w0  18+/b0 |14925416
+  15 Cherestes Ioan                10k RO  Bucu    23    15   106     5  21+/w0  19+/b0  20+/w0  16+/b0  12+/w0  11-/b0 |15274875
+  16 Jacuk Anatolij                11k UA  Rivn    23    12   115     4  20+/b0  18+/w0  14+/w0  15-/w0  10-/b0  17+/w0 |14886927
+  17 Haja Daniel                    5k RO  VaDo    22    20   100     1   7-/w0   4-/b0  12+/w0  13-/w0   5-/b0  16-/b0 |15037594
+  18 Dobranis Denis                10k RO  Bist    22    16   102     2   9-/b0  16-/b0  21+/w0  12-/w0  11+/b0  14-/w0 |15350038
+  19 Pylypchuk Andrij              13k UA  Rivn    22    14   115     5  23+/b0  15-/w0  26+/b0  20+/w0  22+/w0  21+/b0 |15025175
+  20 Yashov Kristian               10k BG  Sofi    20    23    95     0  16-/w0   8-/b0  15-/b0  19-/b0  23-/w0  22-/w0 |15349037
+  21 Sorokin Andrej                12k RU  77Mo    20    19   103     2  15-/b0  22+/w0  18-/b0  23-/w0  26+/b0  19-/w0 |15449731
+  22 Buhai Calin                   14k RO  Bist    20    18   108     3  30+/w0  21-/b0  24-/w0  25+/w0  19-/b0  20+/b0 |14037496
+  23 Encean Mihnea                 14k RO  Bist    20    18   107     3  19-/w0  24+/b0  25-/w0  21+/b0  20+/b0  12-/b0 |15333780
+  24 Zin Iryna                     14k UA  Rivn    20    16   118     4  26+/w0  23-/w0  22+/b0  27+/b0  14-/b0  28+/w0 |14813931
+  25 Sikidin Jurij                 13k UA  Rivn    19    16   120     5  28+/w0  26+/b0  23+/b0  22-/b0  27+/b0  30+/w0 |14913492
+  26 Moldovan Teodor               17k RO  Bist    18    22   104     1  24-/b0  25-/w0  19-/w0  30+/b0  21-/w0  27-/w0 |15025714
+  27 Dinu Ansira                   16k RO  Giar    18    19   119     4  29+/w0  30+/b0  28+/b0  24-/w0  25-/w0  26+/b0 |14937153
+  28 Ionascu Iulia                 17k RO  Bist    17    23   112     3  25-/b0  34+/w0  27-/w0  31+/b0  39+/w0  24-/b0 |15337146
+  29 Sima Ruxandra                 17k RO  LocB    17    22   116     4  27-/b0  43+/w0  41+/w0  33-/b0  32+/w0  35+/w0 |15374051
+  30 Groot Yuki_de                 15k NL  DHaa    17    20   112     2  22-/b0  27-/w0  35+/b0  26-/w0  33+/b0  25-/b0 |15050574
+  31 Lupo Sergiu                   17k RO  Giar    17    19   131     5  45+/w0  39+/b0  32+/w0  28-/w0  38+/b0  33+/w0 |15337619
+  32 Berbecariu Bianca_Crina       17k RO  Bist    16    20   120     4  49+/w0  35+/w0  31-/b0  34+/b0  29-/b0  39+/w0 |14613709
+  33 Encean Teodor                 17k RO  Bist    16    19   122     4  40+/b0  42+/b0  34+/w0  29+/w0  30-/w0  31-/b0 |15374150
+  34 Bacanu Soranna                18k RO  LocB    16    19   118     3  42+/w0  28-/b0  33-/b0  32-/w0  43+/b0  44+/w0 |15313045
+  35 Gorgovan Dragos               17k RO  Brai    16    18   118     3  39+/w0  32-/b0  30-/w0  37+/b0  44+/w0  29-/b0 |15374821
+  36 Mihaiu Ionut                  17k RO  Bist    16    16   129     5  46+/w0  45+/b0  39-/b0  40+/w0  42+/b0  41+/w0 |15386129
+  37 Moldovan Roxana               18k RO  Bist    15    17    95     3      0=  52+/b0  43+/w0  35-/w0  41-/b0  47+/w0 |12674607
+  38 Berlinschi Alexandru          19k RO  LocB    15    24   111     4  41-/b0  48+/w0  47+/w0  51+/b0  31-/w0  54+/b0 |15437026
+  39 Riedeman Marcel               17k NL  Delf    15    23   112     2  35-/b0  31-/w0  36+/w0  61+/b0  28-/b0  32-/b0 |14601378
+  40 Maftei Ana-Maria              19k RO  Giar    15    22   104     3  33-/w0  51-/w0  50+/b0  36-/b0  61+/b0  52+/w0 |15350621
+  41 Kozulja Mykhajlo              19k UA  Rivn    15    20   109     4  38+/w0  69+/b0  29-/b0  57+/w0  37+/w0  36-/b0 |14637843
+  42 Becheanu Luca                 17k RO  Brai    15    20   109     2  34-/b0  33-/w0  51+/w0  44-/b0  36-/w0  45+/b0 |15313826
+  43 Trifan Albert                 18k RO  Brai    15    20   106     3  44+/w0  29-/b0  37-/b0  54+/b0  34-/w0  51+/w0 |15398823
+  44 Moldovan Ioana                18k RO  Bist    15    16   113     3  43-/b0  57+/w0  52+/w0  42+/w0  35-/b0  34-/b0 |15798376
+  45 Weigmann Arved                19k DE  P       14    22   103     2  31-/b0  36-/w0  57-/b0  55+/w0  53+/b0  42-/w0 |15713379
+  46 State Sebastian               19k RO  LocB    14    22    94     3  36-/b0  55+/w0  54-/b0  65+/w0  51-/w0  58+/b0 |15413035
+  47 Vlad Gabriela_Viorica         19k RO  Sibi    14    20   112     4  53+/b0  59+/w0  38-/b0  49+/w0  50+/w0  37-/b0 |15725380
+  48 Dambu Diana                   19k RO  Bist    14    19    98     4  56+/w0  38-/b0  66+/b0  52-/w0  65+/b0  61+/w0 |15313782
+  49 Caragea Bogdan                19k RO  LocB    14    19    98     3  32-/b0  66+/w0  63-/w0  47-/b0  67+/b0  59+/b0 |15737381
+  50 Craciun-Bunda Alexandru       19k RO  LocB    14    18   104     4  62+/w0  60+/b0  40-/w0  63+/b0  47-/b0  56+/w0 |15633728
+  51 Singeorzan Cristina           19k RO  Bist    14    17   126     3  59+/w0  40+/b0  42-/b0  38-/w0  46+/b0  43-/b0 |15301781
+  52 Dumitru Ana-Gabriela          19k RO  LocB    14    17   106     3  64+/b0  37-/w0  44-/b0  48+/b0  60+/w0  40-/b0 |15350049
+  53 Mihai Sara                    19k RO  LocB    14    15   105     4  47-/w0  71+/b0  68+/w0  58+/b0  45-/w0  60+/b0 |15613510
+  54 Mastan Adina                  19k RO  Bist    14    15   119     4  75+/b0  58+/b0  46+/w0  43-/w0  57+/b0  38-/w0 |14974498
+  55 Badiu Anca                    19k RO  Bist    14    13   102     4  67+/b0  46-/b0  72+/w0  45-/b0  69+/w0  57+/w0 |15749382
+  56 Armanchi Beatrice             19k RO  Giar    13    14    83     3  48-/b0      0=  73+/w0  70+/w0  62+/b0  50-/b0 |15325640
+  57 Crit Andreea                  20k RO  LocB    13    19   104     2  60+/w0  44-/b0  45+/w0  41-/b0  54-/w0  55-/b0 |15674516
+  58 Bystrjakova Anna              20k UA  Rivn    13    19    93     3  65+/b0  54-/w0  67+/w0  53-/w0  64+/b0  46-/w0 |15462084
+  59 Scutaru Laura_Maria           20k RO  Brai    13    18    98     2  51-/b0  47-/b0  65-/w0  71+/w0  63+/b0  49-/w0 |14937230
+  60 Viziteu Florin                20k RO  Giar    13    17    99     2  57-/b0  50-/w0  70+/b0  64+/w0  52-/b0  53-/w0 |14949154
+  61 Nitu Mircea                   19k RO  LocB    13    16   108     3  68+/w0  63+/b0  64+/b0  39-/w0  40-/w0  48-/b0 |15674725
+  62 Ghioc Emilia                  20k RO  Bucu    13    16    82     3  50-/b0  68-/b0  74+/w0  66+/w0  56-/w0  71+/w0 |14901139
+  63 Porca Diana                   20k RO  Bist    13    15    95     3  71+/b0  61-/w0  49+/b0  50-/w0  59-/w0  74+/b0 |15301132
+  64 Socaci-Kontz Diana            20k RO  Bist    13    14    99     2  52-/w0  72+/b0  61-/w0  60-/b0  58-/w0  68+/b0 |15286986
+  65 Vaipan Bogdan                 20k RO  Giar    13    14   109     3  58-/w0  73+/b0  59+/b0  46-/b0  48-/w0  72+/w0 |14962156
+  66 Cimuca Raul_Marinel           20k RO  Giar    13    13   100     3  70+/b0  49-/b0  48-/w0  62-/b0  72+/b0  75+/w0 |15025813
+  67 Benea Denisa                  20k RO  Giar    13    12    98     3  55-/w0  75+/b0  58-/b0  72+/w0  49-/w0  73+/w0 |15333637
+  68 Badea Ana                     20k RO  Giar    12    14    77     2  61-/b0  62+/w0  53-/b0      0=  70+/w0  64-/w0 |15762384
+  69 Armanchi Denisa               20k RO  Giar    12    11    79     2  73+/b0  41-/w0      0=  75+/w0  55-/b0  70-/b0 |15386635
+  70 Kucheruk Vlada                20k UA  Rivn    12    14    79     2  66-/w0  74+/b0  60-/w0  56-/b0  68-/b0  69+/w0 |15774385
+  71 Vasilescu Luciana             20k RO  Giar    12    13    95     2  63-/w0  53-/w0  75+/w0  59-/b0  73+/b0  62-/b0 |15374634
+  72 Iordache Andreea              20k RO  LocB    11    16    77     1  74+/b0  64-/w0  55-/b0  67-/b0  66-/w0  65-/b0 |15786386
+  73 Morea Matei                   20k RO  LocB    11    15    74     1  69-/w0  65-/w0  56-/b0  74+/b0  71-/w0  67-/b0 |15625720
+  74 Ciora Ruxandra                20k RO  Giar    11    10    92     1  72-/w0  70-/w0  62-/b0  73-/w0  75+/b0  63-/w0 |15333802
+  75 Craciun-Bunda Theodora        20k RO  LocB    10    15    74     0  54-/w0  67-/w0  71-/b0  69-/b0  74-/w0  66-/b0 |15613730

@@ -1,0 +1,445 @@
+(;CA[utf-8]GM[1]OT[30 fischer]RU[Japanese]C[balaura\: Hallo, Isabel
+balaura\: ein gutes Spiel!
+]
+AP[MultiGo:4.4.4]SZ[19]FF[4]GN[R1]RO[1]DT[2020-11-29]PC[OGS\: https\://online-go.com/game/28710861]
+PB[Laura Avram]BR[4k]PW[Isabel Donle]WR[?]KM[6.5]TM[3600]RE[W+3.5]MULTIGOGM[1]
+;B[qd]
+(;W[dp]
+(;B[pp]
+(;W[dc]
+(;B[de]
+(;W[ce]
+(;B[cf]
+(;W[cd]C[S_Alexander\: boom
+]
+(;B[cn]C[S_Alexander\: let's watch?
+S_Alexander\: this is the right game right?
+]
+(;W[df]C[muttpunk\: hola
+💖 KoBa 💖\: ooh 2 games at the same time?
+]
+(;B[dg]
+(;W[ef]C[isibboi\: So much Go this December \:)
+b3n\: How strong is W?
+]
+(;B[cg]C[S_Alexander\: it says Isabel Donle (1d, Germany)
+b3n\: Thanks \:)
+]
+(;W[fq]C[isibboi\: Black is 2d, so it should be an interesting game
+AdrianAbrahams\: [object Object\]
+]
+(;B[eg]C[redskinny\: does ogs not allow for correct rank
+💖 KoBa 💖\: ogs only has ogs ranks 
+💖 KoBa 💖\: our glicko2 system doesnt allow manually setting the ranks
+vaurien\: ogs can make good ranks if players play ranked games ;)à 
+redskinny\: ah
+]
+(;W[od]
+(;B[ff]
+(;W[ee]C[S_Alexander\: so, anyone has the photos of players to set the mood?
+b3n\: Any reason not to play F15 immediately?
+VincentPrei\: yeah, if B plays G16 f.e., then later Black may play E16 instead and squeeze white
+]
+(;B[ld]C[b3n\: Makes sense thanks
+taatelikakku\: if b spent 2 moves to capture e15 and w got 2 tenukis? good for w?
+VincentPrei\: I think the thickness would be too much, but it's good to consider it
+]
+(;W[pg]
+(;B[oe]
+(;W[ne]
+(;B[of]
+(;W[pd]
+(;B[qf]
+(;W[pe]
+(;B[pf]
+(;W[qe]C[VincentPrei\: locally this is amazing for white
+]
+(;B[re]C[VincentPrei\: AlphaGo pretty much refuted this joseki for Black
+]
+(;W[rd]
+(;B[nd]
+(;W[rf]
+(;B[rg]
+(;W[se]
+(;B[qg]
+(;W[fe]
+(;B[ge]
+(;W[gd]
+(;B[fd]C[💖 KoBa 💖\: tho top corners are huge for w o.o
+]
+(;W[ed]C[VincentPrei\: yeah, white is ahead by a lot 
+]
+(;B[he]
+(;W[hd]
+(;B[id]C[lukas.kramer.739\: indeed
+]
+(;W[ic]
+(;B[jd]C[lukas.kramer.739\: d7 feels shining to me
+]
+(;W[qm]C[lukas.kramer.739\: also r7
+lukas.kramer.739\: wow
+pancake\: Is there a website for the event? 
+💖 KoBa 💖\: https\://www.eurogofed.org/women/2020.html
+pancake\: Thanks!
+]
+(;B[qk]C[💖 KoBa 💖\: r7 looks great to limit what b can do with the influence
+pancake\: What's the follow up? I'd guess Q9.
+]
+(;W[pk]
+(;B[pj]C[VincentPrei\: I think J17 is a bit sloppy. Don't see a reason to not cut  J15. Black would not get to connect his influence then. But white is still fine, I guess
+]
+(;W[ok]
+(;B[ql]C[pancake\: Vincent, wouldn't white have to do the same afterwards though?
+pancake\: White J15, Black G13 -ish, then J17 I mean
+VincentPrei\: I would continue with K16 J17 K17 and use O15 aji after
+VincentPrei\: I don't mind sacrifizing G16 and H16 if I can break the moyo
+]
+(;W[pm]
+(;B[nq]C[pancake\: I feel like white just gets weak stones on the outside, rather than breaking the moyo.
+vaurien\: only O15 Q13 are weak to me..
+pancake\: I mean in Vincent's variation. 
+]
+(;W[oj]C[S_Alexander\: what a strange looking position
+]
+(;B[pi]C[pancake\: Was P10 careless? Instead, could white have cut at R10 before?
+]
+(;W[nm]
+(;B[nc]C[VincentPrei\: [object Object\]
+VincentPrei\: [object Object\]
+VincentPrei\: I thought something like this
+VincentPrei\: but doesn't matter now, since white managed to effortlessly reduce the moyo anyway
+pancake\: Interesting!
+]
+(;W[dm]
+(;B[cq]
+(;W[cp]
+(;B[bp]
+(;W[bo]
+(;B[bq]
+(;W[bn]
+(;B[er]
+(;W[fr]
+(;B[eq]
+(;W[ep]
+(;B[dq]
+(;W[go]
+(;B[pb]C[NeonLights\: isn't G5 a bit too honest
+pancake\: I was thinking the same, but it might be necessary because of B6 (instead of B5)
+pancake\: C5*
+]
+(;W[qc]
+(;B[ck]C[VincentPrei\: I think G5 is strong. I feel like B should have cut at F4 before playing D3, because the F3 stones are a bit weak and there is aji around C7
+]
+(;W[lq]C[pancake\: M3 feels huge.
+pancake\: Almost sente
+💖 KoBa 💖\: yeah, this game feels really good for w now ^^
+VincentPrei\: yeah, but C9 was also huge
+]
+(;B[lp]C[VincentPrei\: because now B can save C7 and a move at C10 was kinda sente for white before because of the F13 cut
+pancake\: You're right. A move in that area by white would have also been sente.
+]
+(;W[kp]
+(;B[lo]C[VincentPrei\: I don't see why white played R17 instead of R18 though. looks like worse endgame to me
+]
+(;W[kq]C[VincentPrei\: is there a tactic I am missing?
+]
+(;B[mq]C[pancake\: I was thinking the same.
+]
+(;W[rp]
+(;B[ro]C[pancake\: White seems to be in good shape here if she just plays R5. She's good in terms of territory and has no weaknesses across the board.
+VincentPrei\: [object Object\]
+]
+(;W[qp]
+(;B[qo]C[pancake\: Apparently white has other plans. 
+pancake\: Cut here?
+pancake\: [object Object\]
+VincentPrei\: yeah
+pancake\: [object Object\]
+pancake\: But still very good for white..
+]
+(;W[po]C[VincentPrei\: maybe B just needs to sac the 2 stones and live in the corner?
+VincentPrei\: [object Object\]
+VincentPrei\: but w is not unhappy to be alive with all his stones
+VincentPrei\: and T3 will be good endgame later
+VincentPrei\: *her
+pancake\: See my variation. But there's more to it..
+pancake\: [object Object\]
+pancake\: Not too bad for black. It seems like white missed an opportunity. The variation you showed with R5 seemed best.
+VincentPrei\: [object Object\]
+]
+(;B[rm]C[pancake\: Black chooses one of the trouble variations..
+pancake\: [object Object\]
+Ajibaba\: with b q3 w would happily take the  2 štones
+pancake\: So either way white is happy
+]
+(;W[rn]C[VincentPrei\: pancake's variation looks very good for white and I don't see how B can resist
+Ajibaba\: agreed
+]
+(;B[qn]
+(;W[pn]
+(;B[sn]
+(;W[sp]
+(;B[so]C[vaurien\: [object Object\]
+]
+(;W[pq]
+(;B[op]
+(;W[rr]C[pancake\: I feel like this is giving black better prospects. The white group in the center remains weak.
+yyk8556\: [object Object\]
+yyk8556\: [object Object\]
+VincentPrei\: if you go back to the position before S4 and compare to now, bascially B took some points at the side, white took some in the corner, but white lost sente and the white group in the center got weaker
+VincentPrei\: so I think B caught up a bit now
+]
+(;B[qq]C[VincentPrei\: In the "alive in the corner" variation, I think white should exchange O5 before T2
+]
+(;W[qr]C[VincentPrei\: B has to answer. If she goes for a kill, it will be seki after N4
+]
+(;B[pr]
+(;W[rq]C[pancake\: What if b answers at Q8?
+]
+(;B[or]C[pancake\: Oh nvm, that doesn't work
+]
+(;W[sr]
+(;B[lr]
+(;W[kr]
+(;B[mr]
+(;W[no]C[pancake\: O5 N5 L8-ish and white seems fine
+]
+(;B[ns]C[💖 KoBa 💖\: its seems a bit sad to make life like this \:<
+]
+(;W[lm]C[VincentPrei\: yeah, I think white is better again now
+VincentPrei\: but black can finally take her profit at C7
+pancake\: Is C7 even the right move in that area?
+VincentPrei\: what else to play locally?
+pancake\: [object Object\]
+pancake\: Good enough?
+]
+(;B[fp]C[VincentPrei\: seems reasonable
+VincentPrei\: maybe don't exchange 5-6
+]
+(;W[fo]C[pancake\: [object Object\]
+pancake\: Follow up
+pancake\: Since white still has the slide, black is not gaining that much territory.
+pancake\: slide = monkey jump*
+VincentPrei\: [object Object\]
+VincentPrei\: then K17 or something in the center, I guess
+]
+(;B[ko]C[pancake\: F9 after might be strong
+VincentPrei\: L5 is interesting
+VincentPrei\: still trying to pressure O7 group or reduce the lower side
+VincentPrei\: seems big
+]
+(;W[mp]
+(;B[km]
+(;W[kl]C[pancake\: [object Object\]
+]
+(;B[iq]C[VincentPrei\: [object Object\]
+VincentPrei\: L7 L8 really bad exchange for B in that variation
+pancake\: White could D9 instead of 9 in that variation. Try to capture on a large scale.
+VincentPrei\: seems a bit risky with all the cuts in white's position
+pancake\: On the other hand, there seems to be a lot of aji left in the cuts
+VincentPrei\: i feel like white can be calm here
+vaurien\: yup
+]
+(;W[ip]C[pancake\: [object Object\]
+VincentPrei\: Squeeze looks good for W
+]
+(;B[hq]C[pancake\: [object Object\]
+VincentPrei\: yeah, I was thinking about that too
+]
+(;W[jo]
+(;B[gp]
+(;W[dk]C[VincentPrei\: [object Object\]
+]
+(;B[cj]C[pancake\: Is g1 something later?
+]
+(;W[cl]C[VincentPrei\: L2 is too far away, I think
+pancake\: Nah, can't be.
+]
+(;B[jl]C[VincentPrei\: [object Object\]
+VincentPrei\: but W feels better
+]
+(;W[jk]
+(;B[kk]
+(;W[ll]
+(;B[ik]
+(;W[jj]
+(;B[ij]
+(;W[ji]
+(;B[hl]
+(;W[ii]
+(;B[hi]
+(;W[dj]C[pancake\: Just take the stones, become thick. Should be enough for white I believe.
+]
+(;B[ci]C[VincentPrei\: [object Object\]
+]
+(;W[jc]
+(;B[kc]C[💖 KoBa 💖\: only 8 points for b on left?
+]
+(;W[fc]
+(;B[el]C[VincentPrei\: we don't know who will get the hanes yet
+]
+(;W[dl]C[VincentPrei\: 8 is like the minimum B can get
+]
+(;B[co]
+(;W[dn]C[VincentPrei\: [object Object\]
+]
+(;B[jm]
+(;W[hp]
+(;B[gq]
+(;W[jq]
+(;B[ir]
+(;W[kn]
+(;B[hh]
+(;W[jg]
+(;B[mh]
+(;W[sg]
+(;B[mj]
+(;W[lj]
+(;B[mk]
+(;W[lk]
+(;B[bm]
+(;W[cm]
+(;B[bl]
+(;W[fm]
+(;B[qb]C[pancake\: F6 was unnecessary..
+pancake\: [object Object\]
+]
+(;W[rb]
+(;B[jb]
+(;W[ib]
+(;B[kb]
+(;W[qa]
+(;B[oc]
+(;W[si]
+(;B[rh]
+(;W[sh]
+(;B[rj]
+(;W[lg]
+(;B[ni]
+(;W[bf]
+(;B[bg]
+(;W[be]
+(;B[ia]
+(;W[hb]
+(;B[ha]
+(;W[ga]
+(;B[ja]
+(;W[gb]
+(;B[oo]
+(;W[nn]
+(;B[jn]
+(;W[ln]
+(;B[np]
+(;W[mo]
+(;B[pl]
+(;W[ol]
+(;B[on]
+(;W[om]
+(;B[ao]
+(;W[do]
+(;B[an]
+(;W[mg]
+(;B[ng]
+(;W[oi]
+(;B[oh]
+(;W[gk]
+(;B[gj]
+(;W[fj]C[VincentPrei\: white is slightly ahead before komi, if I am counting correctly
+]
+(;B[fi]C[💖 KoBa 💖\: black has played really fast compared to w o.o
+]
+(;W[if]
+(;B[hf]C[pancake\: Black is actually catching up a lot in endgame.
+]
+(;W[fk]C[pancake\: N14 seems biggest.
+VincentPrei\: [object Object\]
+]
+(;B[gl]
+(;W[fl]
+(;B[lh]
+(;W[kh]
+(;B[mf]
+(;W[lf]
+(;B[le]
+(;W[ei]
+(;B[eh]
+(;W[in]
+(;B[hm]
+(;W[im]
+(;B[il]
+(;W[hn]
+(;B[di]
+(;W[gm]
+(;B[hj]
+(;W[hg]
+(;B[gg]
+(;W[ig]
+(;B[ie]
+(;W[js]C[VincentPrei\: now I think white should play my variation
+]
+(;B[gr]
+(;W[pc]
+(;B[oa]
+(;W[ag]
+(;B[ah]
+(;W[af]
+(;B[ej]
+(;W[ek]
+(;B[li]
+(;W[nj]
+(;B[ki]
+(;W[kj]
+(;B[ih]
+(;W[jh]
+(;B[kf]
+(;W[kg]
+(;B[jf]C[VincentPrei\: [object Object\]
+]
+(;W[ml]
+(;B[qs]
+(;W[rs]
+(;B[ps]
+(;W[is]
+(;B[hs]
+(;W[nk]
+(;B[ri]
+(;W[mi]
+(;B[mj]
+(;W[sj]
+(;B[sk]
+(;W[sf]
+(;B[pa]
+(;W[ra]
+(;B[ls]
+(;W[ei]C[VincentPrei\: e11 was bigger than M1
+]
+(;B[ks]
+(;W[jr]
+(;B[ej]
+(;W[ke]
+(;B[je]
+(;W[ei]C[pancake\: White easily wins this ko.
+VincentPrei\: yes
+]
+(;B[sd]
+(;W[sc]
+(;B[ej]
+(;W[bh]
+(;B[ai]
+(;W[ei]
+(;B[nh]
+(;W[ej]
+(;B[gh]
+(;W[qq]C[VincentPrei\: done
+]
+(;B[mi]
+(;W[mk]C[VincentPrei\: w +3.5?
+]
+(;B[]
+(;W[]C[balaura\: vielen Dank
+alt78\: Gg
+isibboi\: Congrats Isabel
+chairmaker\: gg
+💖 KoBa 💖\: gg!
+vaurien\: gg =)
+]))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))

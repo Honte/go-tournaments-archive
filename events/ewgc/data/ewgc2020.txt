@@ -1,7 +1,7 @@
 ; TC[E201128A]
 ; CL[A]
 ; EV[European Women`s Championship 2020 (online)]
-; PC[XX, OGS: https://online-go.com]
+; PC[XO, Online Go Server]
 ; DT[2020-11-28,2020-12-21]
 ; HA[h9]
 ; KM[6.5]
@@ -15,8 +15,8 @@
  4 Donle Isabel          1d DE  B     3 4   12+/w   8-/b    16+/b   5+/b    2-/b    3-/w    3-/b     |16837359
  5 Kalsberg Elvina       3d RU  78SP  5 5   9+/w    1+/w    14+/w   4-/w    7+/b    6+/b    0=       |10750047
  6 Ougier Ariane         4d FR  38Gr  3 6   11+/w   13+/w   7-/w    3-/b    8+/w    5-/w    0=       |15774187
- 7 Urban Alexandra       2d HU  PaGo  2 7   13-/b   11+/b   6+/b    2-/b    5-/w    0=      0=       |12974863
- 8 Shalneva Virzhinia    4d RU  50Zh  3 8   16+/b   4+/w    12+/w   1-/w    6-/b    0=      0=       |16325034
+ 7 Urban Alexandra       2d HU  PaGo  2 7   13-/b   11+/b   6+/b    2-/b    5-/w    8+      0=       |12974863
+ 8 Shalneva Virzhinia    4d RU  50Zh  3 8   16+/b   4+/w    12+/w   1-/w    6-/b    7-      0=       |16325034
  9 Medak Mirta           1k HR  Zagr  1 9   5-/b    14+/b   1-/w    0=      0=      0=      0=       |16525718
 10 Seres Julia           2d HU  PaGo  1 9   3-/w    15+/b   2-/w    0=      0=      0=      0=       |14598991
 11 Klochikhina Valeria   2d RU  59So  1 9   6-/b    7-/w    13+/w   0=      0=      0=      0=       |16513068

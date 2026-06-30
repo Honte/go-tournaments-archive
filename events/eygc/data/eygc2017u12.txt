@@ -9,95 +9,95 @@
 ; CM[ (submitted by Jana_H)]
 ;.        
 ;
- 1 Klochikhin Ivan          4k RU  59So  18   6    96   96   6+/w    5+/b    2+/w    4+/b    3+/b    9+/w     |16501078
- 2 Rotarita Stefan_Adrian   5k RO  Boto  17   5    76   94   3+/b    9+/w    1-/b    14+/w   8+/b    5+/w     |17837270
- 3 Krushelnytska Polina     8k UA  Rivn  16   4    59   94   2-/w    16+/b   13+/b   6+/w    1-/w    7+/b     |16737875
- 4 Krajnov Jaroslav         4k RU  77Mo  16   4    59   93   11+/b   10+/b   8+/w    1-/w    5-/b    13+/w    |16349036
- 5 Ovsiienko Vsevolod       9k UA  Kyiv  16   4    58   93   20+/b   1-/w    14+/b   11+/w   4+/w    2-/b     |17633902
- 6 Touzot Cyan              8k FR  75Op  16   4    58   92   1-/b    18+/w   10+/w   3-/b    11+/b   8+/w     |17086542
- 7 Fakhrutdinov Amir        8k RU  16Kz  15   3    44   89   15+/b   13-/w   9+/b    8-/w    10+/b   3-/w     |16798870
- 8 Prikarev Nikita          1k RU  77Mo  15   3    43   92   16+/w   15+/b   4-/b    7+/b    2-/w    6-/b     |16086851
- 9 Bernardis Davide         2k IT  Rave  15   3    42   92   14+/w   2-/b    7-/w    16+/b   15+/w   1-/b     |17886946
-10 Pishchalnikov Artemij    1k RU  59So  15   3    42   89   13+/b   4-/w    6-/b    12+/w   7-/w    14+/w    |16549071
-11 Gimadiev Artur           8k RU  16Kz  15   3    40   88   4-/w    20+/b   19+/b   5-/b    6-/w    15+/w    |17849073
-12 Lavrov Egor             10k RU  77Mo  14   3    38   77   19-/b   23-/w   18+/b   10-/b   21+/w   20+/w    |17886462
-13 Dottan Immanuel          5k DE  B     14   2    28   89   10-/w   7+/b    3-/w    15-/w   20+/b   4-/b     |16749106
-14 Tarasov Ruslan           7k RU  16Kz  14   2    27   90   9-/b    19+/w   5-/w    2-/b    16+/w   10-/b    |17513705
-15 Han George               4k UK  NoCb  14   2    27   87   7-/w    8-/w    20+/w   13+/b   9-/b    11-/b    |18050241
-16 Marz Ferdinand           6k DE  J     14   2    24   84   8-/b    3-/w    23+/w   9-/w    14-/b   18+/b    |16213659
-17 Rieger Angelika         12k DE  TR    13   4    40   63   22-/w   21-/b   29+/b   23+/w   25+/b   24+/b    |16586361
-18 Bugaj Antoni            11k PL  Wars  13   3    36   80   23+/b   6-/b    12-/w   21+/w   19+/b   16-/w    |17898078
-19 Kralik Ondrej           10k SK  Kosi  13   2    25   80   12+/w   14-/b   11-/w   20-/b   18-/w   22+/b    |16350279
-20 Khusainov Askar          6k RU  16Kz  13   1    13   86   5-/w    11-/w   15-/b   19+/w   13-/w   12-/b    |17525706
-21 Lysenko Yehor           14k UA  Kyiv  12   4    44   71   30+/w   17+/w   22+/b   18-/b   12-/b   23+/b    |17625608
-22 Morel Adam              13k FR  38GJ  11   3    34   69   17+/b   25+/w   21-/w   24-/w   23+/b   19-/w    |16933961
-23 Skrjabin Andrej         11k RU  77Mo  11   1    14   77   18-/w   12+/b   16-/b   17-/b   22-/w   21-/w    |17401769
-24 Medak Stjepan           15k HR  Zag   10   5    48   61   28+/w   27+/w   25+/b   22+/b   29+/b   17-/w    |17437574
-25 Dottan Adam             14k DE  B     10   3    26   60   29+/w   22-/b   24-/w   31+/b   17-/w   27+/b    |17650138
-26 Brahim Augustin         17k FR  93Mo  9    5    34   42   36+/w   31-/b   41+/b   58+/b   35+/w   29+/w    |17225483
-27 Malko Olesia            16k UA  Rivn  9    4    33   53   31+/w   24-/b   34+/w   30+/b   28+/b   25-/w    |17874241
-28 Voino Volodymyr         17k UA  Rivn  9    3    24   52   24-/b   32+/w   30+/w   29-/b   27-/w   34+/b    |17850239
-29 Shalnev Svjatoslav      16k RU  77Mo  9    2    18   60   25-/b   30+/b   17-/w   28+/w   24-/w   26-/b    |17337298
-30 Durand Laouen           15k FR  34Mo  9    2    15   54   21-/b   29-/w   28-/b   27-/w   37+/w   31+/b    |17262971
-31 Oprican Andrei          16k RO  Drob  8    3    24   52   27-/b   26+/w   32+/b   25-/w   34+/b   30-/w    |17825159
-32 Makahon Petro           16k UA  Odes  8    3    21   45   37+/b   28-/b   31-/w   34-/w   36+/w   35+/b    |18001412
-33 Pittner Arwen           19k DE  B     7    5    28   34   44+/b   41-/w   48+/w   39+/b   58+/w   43+/b    |16437201
-34 Khabibullina Diana      16k RU  16Kz  7    3    22   48   35+/b   37+/w   27-/b   32+/b   31-/w   28-/w    |17962780
-35 Kudla Jan               17k PL  Pias  7    3    20   44   34-/w   45+/w   37+/b   36+/b   26-/b   32-/w    |18298049
-36 Law Miao-Yan            19k DE  TR    7    3    17   41   26-/b   42+/w   58+/w   35-/w   32-/b   44+/b    |16786143
-37 Krist Tomas             16k CZ  BMik  7    2    12   43   32-/w   34-/b   35-/w   43+/b   30-/b   41+/w    |17533549
-38 Pagny Marley            20k FR  38GJ  6    5    23   29   65+/w   40+/b   60+/b   42-/b   63+/b   58+/w    |18233831
-39 Servant Preston         20k FR  38GJ  6    5    21   28   90+/w   50+/b   54+/b   33-/w   60+/w   51+/b    |18201832
-40 Leretaille Gaetan       20k FR  38Gj  6    5    21   27   82+/b   38-/w   50+/b   75+/b   47+/w   53+/w    |18225218
-41 Kholod Ustin            17k UA  Odes  6    3    19   41   43-/w   33+/b   26-/w   45+/b   42+/b   37-/b    |18049416
-42 Kristova Veronika       19k CZ  BMik  6    4    19   32   51+/w   36-/b   86+/b   38+/w   41-/w   52+/w    |17586723
-43 Vazquez_jr Aurelio      18k ES  Nam   6    3    17   36   41+/b   58-/w   45+/w   37-/w   46+/b   33-/w    |17825764
-44 Mordovets-Tkach Marta   19k UA  Odes  6    4    17   31   33-/w   52+/b   75+/w   59+/b   53+/b   36-/w    |18037415
-45 Azmukhametov Dinar      18k RU  16Kz  6    3    13   32   53+/w   35-/b   43-/b   41-/w   85+/w   49+/b    |17913764
-46 Nichilo Yendy           20k FR  38Gr  5    4    18   29   55+/b   47-/w   66+/b   57+/b   43-/w   61+/w    |18225834
-47 Lacrabere Nathan        19k CH  Lau   5    4    17   28   78+/w   46+/b   49+/b   53-/w   40-/b   66+/w    |18013930
-48 Modeste Ethan           20k FR  38Gr  5    4    16   28   79+/b   66+/w   33-/b   54+/w   52-/b   62+/w    |18237835
-49 Nichilo Tony            20k FR  38Gr  5    4    16   27   80+/b   62+/w   47-/w   56+/b   59+/w   45-/w    |18249836
-50 Aumeier Frederick       20k FR  38Gr  5    4    15   27   74+/b   39-/w   40-/w   71+/w   80+/b   59+/b    |18250837
-51 Bezy Clement            20k FR  38Gr  5    4    15   27   42-/b   81+/w   61+/b   64+/w   62+/b   39-/w    |18274839
-52 Charbonnier Axel        20k FR  38Gr  5    4    15   27   89+/b   44-/w   69+/b   72+/w   48+/w   42-/b    |18286840
-53 Billon Leo              18k FR  38EB  5    3    14   32   45-/b   55+/w   64+/b   47+/b   44-/w   40-/b    |17225934
-54 Kudla Hanna             20k PL  Wars  5    4    13   24   88+/w   69+/b   39-/w   48-/b   75+/b   60+/w    |18250045
-55 De_Jong-Ropers Quentin  20k FR  38Gr  5    4    12   22   46-/w   53-/b   89+/b   84+/w   76+/b   63+/w    |18298841
-56 Delamarche Theo         20k FR  38Gr  5    4    12   21   76+/b   84+/w   59-/w   49-/w   91+/b   69+/w    |18233842
-57 Kuttlein Angele         20k FR  38Gr  5    4    12   21   87+/w   60-/b   78+/b   46-/w   90+/b   64+/w    |18201843
-58 Bugaj Zofia             19k PL  Pias  5    2    10   39   72+/w   43+/b   36-/b   26-/w   33-/b   38-/b    |18201546
-59 Joguet Malo             20k FR  38Gr  4    3    13   29   73+/w   63+/b   56+/b   44-/w   49-/b   50-/w    |18225845
-60 Puerto Alonso_Oliveira  20k FR  38Gr  4    3    12   29   81+/b   57+/w   38-/w   73+/b   39-/b   54-/b    |18237846
-61 Ngeta Norsilia          20k FR  38Gr  4    3    12   26   70+/w   64-/b   51-/w   67+/b   65+/w   46-/b    |18249847
-62 Delamarche Manon        20k FR  38Gr  4    3    11   26   67+/w   49-/b   77+/w   70+/b   51-/w   48-/b    |18262849
-63 Morand Clara            20k FR  38Gr  4    3    11   26   83+/b   59-/w   67+/b   65+/b   38-/w   55-/b    |18274850
-64 Roux-Buisson Solal      20k FR  38Gr  4    3    10   25   92+/b   61+/w   53-/w   51-/b   70+/w   57-/b    |18286851
-65 Khioudj Allyah          20k FR  38Gr  4    3    10   24   38-/b   68+/w   84+/b   63-/w   61-/b   76+/b    |18298852
-66 Arias Camilo            20k FR  38Gr  4    3    9    24   85+/w   48-/b   46-/w   83+/w   78+/b   47-/b    |18233853
-67 Tete Emilie             20k FR  38Gr  4    3    9    21   62-/b   83+/w   63-/w   61-/w   81+/b   78+/w    |18201854
-68 Sarrasi Anaelle         20k FR  38Gr  4    3    9    20   75-/w   65-/b   82+/w   81+/b   69-/b   85+/b    |18225856
-69 Zorman Eliot            20k FR  38Gr  4    3    8    23   91+/b   54-/w   52-/w   90+/b   68+/w   56-/b    |18237857
-70 Barthelemy Inouk        20k FR  38Gr  4    3    8    20   61-/b   80+/w   90+/w   62-/w   64-/b   83+/w    |18250859
-71 Malavasi Valentine      20k FR  38Gr  4    3    8    20   84-/b   74-/w   80+/w   50-/b   88+/b   77+/w    |18262860
-72 Bedar Kais              20k FR  38Gr  4    2    6    18   58-/b   79+/w   87+/b   52-/b   0=      0=       |18274861
-73 Bedar Djibri            20k FR  38Gr  4    2    5    15   59-/b   82+/w   88+/w   60-/w   0=      0=       |18286862
-74 Hermann Emile           20k FR  38Gr  4    1    4    13   50-/w   71+/b   0=      0=      0=      0=       |18298863
-75 Teka Shekina            20k FR  38Gr  3    2    7    27   68+/b   77+/w   44-/b   40-/w   54-/w   79-/b    |18233864
-76 Mihoub Sami             20k FR  38Gr  3    2    6    22   56-/w   88-/b   79+/b   77+/b   55-/w   65-/w    |18201865
-77 Santonacci Nina         20k FR  38Gr  3    2    6    20   86+/w   75-/b   62-/b   76-/w   82+/b   71-/b    |18225867
-78 Hamidi Killyan          20k FR  38Gr  3    2    5    23   47-/b   89+/w   57-/w   86+/b   66-/w   67-/b    |18249869
-79 Vernier Marius          20k FR  38Gr  3    2    5    19   48-/w   72-/b   76-/w   89-/b   0+      75+/w    |18250870
-80 Delamarche Jules        20k FR  38Gr  3    2    4    22   49-/w   70-/b   71-/b   91+/w   50-/w   88+/b    |18262871
-81 Marz Leopold            20k DE  J     3    2    4    21   60-/w   51-/b   91+/b   68-/w   67-/w   89+/w    |18274872
-82 Vrigneaud Pierre        20k FR  38Gr  3    2    4    21   40-/w   73-/b   68-/b   92+/b   77-/w   90+/w    |18286873
-83 Kechchab Nedjma         20k FR  38Gr  3    2    4    20   63-/w   67-/b   92+/w   66-/b   89+/w   70-/b    |18298874
-84 Zeng-lussereau Eliot    20k FR  38EB  3    1    4    20   71+/w   56-/b   65-/w   55-/b   0=      0=       |17349849
-85 Kouamela Ancelin        20k FR  38Gr  3    1    2    18   66-/b   0=      0=      88+/w   45-/b   68-/w    |18233875
-86 Philippe Saima          20k FR  38Gr  3    1    2    16   77-/b   91+/w   42-/w   78-/w   0=      0=       |18201876
-87 Rerbal Jamyne           20k FR  38Gr  3    0    0    13   57-/b   0=      72-/w   0=      0=      0=       |18237879
-88 Addad Maria             20k FR  38Gr  2    1    3    22   54-/b   76+/w   73-/b   85-/b   71-/w   80-/w    |18237890
-89 Zahraoui Kyss           20k FR  38Gr  2    1    3    22   52-/w   78-/b   55-/w   79+/w   83-/b   81-/b    |18249891
-90 Vernier Solal           20k FR  38Gr  2    1    2    24   39-/b   92+/w   70-/b   69-/w   57-/w   82-/b    |18250892
-91 El_Ajoutti Lina         20k FR  38Gr  2    1    1    19   69-/w   86-/b   81-/w   80-/b   56-/w   0+       |18262893
-92 Hoppenot Timothee       20k FR  38Gr  2    0    0    14   64-/w   90-/b   83-/b   82-/w   0=      0=       |18274894
+ 1 Klochikhin Ivan          4k RU  59So  18   6    96   96   6+    5+    2+    4+    3+    9+     |16501078
+ 2 Rotarita Stefan_Adrian   5k RO  Boto  17   5    76   94   3+    9+    1-    14+   8+    5+     |17837270
+ 3 Krushelnytska Polina     8k UA  Rivn  16   4    59   94   2-    16+   13+   6+    1-    7+     |16737875
+ 4 Krajnov Jaroslav         4k RU  77Mo  16   4    59   93   11+   10+   8+    1-    5-    13+    |16349036
+ 5 Ovsiienko Vsevolod       9k UA  Kyiv  16   4    58   93   20+   1-    14+   11+   4+    2-     |17633902
+ 6 Touzot Cyan              8k FR  75Op  16   4    58   92   1-    18+   10+   3-    11+   8+     |17086542
+ 7 Fakhrutdinov Amir        8k RU  16Kz  15   3    44   89   15+   13-   9+    8-    10+   3-     |16798870
+ 8 Prikarev Nikita          1k RU  77Mo  15   3    43   92   16+   15+   4-    7+    2-    6-     |16086851
+ 9 Bernardis Davide         2k IT  Rave  15   3    42   92   14+   2-    7-    16+   15+   1-     |17886946
+10 Pishchalnikov Artemij    1k RU  59So  15   3    42   89   13+   4-    6-    12+   7-    14+    |16549071
+11 Gimadiev Artur           8k RU  16Kz  15   3    40   88   4-    20+   19+   5-    6-    15+    |17849073
+12 Lavrov Egor             10k RU  77Mo  14   3    38   77   19-   23-   18+   10-   21+   20+    |17886462
+13 Dottan Immanuel          5k DE  B     14   2    28   89   10-   7+    3-    15-   20+   4-     |16749106
+14 Tarasov Ruslan           7k RU  16Kz  14   2    27   90   9-    19+   5-    2-    16+   10-    |17513705
+15 Han George               4k UK  NoCb  14   2    27   87   7-    8-    20+   13+   9-    11-    |18050241
+16 Marz Ferdinand           6k DE  J     14   2    24   84   8-    3-    23+   9-    14-   18+    |16213659
+17 Rieger Angelika         12k DE  TR    13   4    40   63   22-   21-   29+   23+   25+   24+    |16586361
+18 Bugaj Antoni            11k PL  Wars  13   3    36   80   23+   6-    12-   21+   19+   16-    |17898078
+19 Kralik Ondrej           10k SK  Kosi  13   2    25   80   12+   14-   11-   20-   18-   22+    |16350279
+20 Khusainov Askar          6k RU  16Kz  13   1    13   86   5-    11-   15-   19+   13-   12-    |17525706
+21 Lysenko Yehor           14k UA  Kyiv  12   4    44   71   30+   17+   22+   18-   12-   23+    |17625608
+22 Morel Adam              13k FR  38GJ  11   3    34   69   17+   25+   21-   24-   23+   19-    |16933961
+23 Skrjabin Andrej         11k RU  77Mo  11   1    14   77   18-   12+   16-   17-   22-   21-    |17401769
+24 Medak Stjepan           15k HR  Zag   10   5    48   61   28+   27+   25+   22+   29+   17-    |17437574
+25 Dottan Adam             14k DE  B     10   3    26   60   29+   22-   24-   31+   17-   27+    |17650138
+26 Brahim Augustin         17k FR  93Mo  9    5    34   42   36+   31-   41+   58+   35+   29+    |17225483
+27 Malko Olesia            16k UA  Rivn  9    4    33   53   31+   24-   34+   30+   28+   25-    |17874241
+28 Voino Volodymyr         17k UA  Rivn  9    3    24   52   24-   32+   30+   29-   27-   34+    |17850239
+29 Shalnev Svjatoslav      16k RU  77Mo  9    2    18   60   25-   30+   17-   28+   24-   26-    |17337298
+30 Durand Laouen           15k FR  34Mo  9    2    15   54   21-   29-   28-   27-   37+   31+    |17262971
+31 Oprican Andrei          16k RO  Drob  8    3    24   52   27-   26+   32+   25-   34+   30-    |17825159
+32 Makahon Petro           16k UA  Odes  8    3    21   45   37+   28-   31-   34-   36+   35+    |18001412
+33 Pittner Arwen           19k DE  B     7    5    28   34   44+   41-   48+   39+   58+   43+    |16437201
+34 Khabibullina Diana      16k RU  16Kz  7    3    22   48   35+   37+   27-   32+   31-   28-    |17962780
+35 Kudla Jan               17k PL  Pias  7    3    20   44   34-   45+   37+   36+   26-   32-    |18298049
+36 Law Miao-Yan            19k DE  TR    7    3    17   41   26-   42+   58+   35-   32-   44+    |16786143
+37 Krist Tomas             16k CZ  BMik  7    2    12   43   32-   34-   35-   43+   30-   41+    |17533549
+38 Pagny Marley            20k FR  38GJ  6    5    23   29   65+   40+   60+   42-   63+   58+    |18233831
+39 Servant Preston         20k FR  38GJ  6    5    21   28   90+   50+   54+   33-   60+   51+    |18201832
+40 Leretaille Gaetan       20k FR  38Gj  6    5    21   27   82+   38-   50+   75+   47+   53+    |18225218
+41 Kholod Ustin            17k UA  Odes  6    3    19   41   43-   33+   26-   45+   42+   37-    |18049416
+42 Kristova Veronika       19k CZ  BMik  6    4    19   32   51+   36-   86+   38+   41-   52+    |17586723
+43 Vazquez_jr Aurelio      18k ES  Nam   6    3    17   36   41+   58-   45+   37-   46+   33-    |17825764
+44 Mordovets-Tkach Marta   19k UA  Odes  6    4    17   31   33-   52+   75+   59+   53+   36-    |18037415
+45 Azmukhametov Dinar      18k RU  16Kz  6    3    13   32   53+   35-   43-   41-   85+   49+    |17913764
+46 Nichilo Yendy           20k FR  38Gr  5    4    18   29   55+   47-   66+   57+   43-   61+    |18225834
+47 Lacrabere Nathan        19k CH  Lau   5    4    17   28   78+   46+   49+   53-   40-   66+    |18013930
+48 Modeste Ethan           20k FR  38Gr  5    4    16   28   79+   66+   33-   54+   52-   62+    |18237835
+49 Nichilo Tony            20k FR  38Gr  5    4    16   27   80+   62+   47-   56+   59+   45-    |18249836
+50 Aumeier Frederick       20k FR  38Gr  5    4    15   27   74+   39-   40-   71+   80+   59+    |18250837
+51 Bezy Clement            20k FR  38Gr  5    4    15   27   42-   81+   61+   64+   62+   39-    |18274839
+52 Charbonnier Axel        20k FR  38Gr  5    4    15   27   89+   44-   69+   72+   48+   42-    |18286840
+53 Billon Leo              18k FR  38EB  5    3    14   32   45-   55+   64+   47+   44-   40-    |17225934
+54 Kudla Hanna             20k PL  Wars  5    4    13   24   88+   69+   39-   48-   75+   60+    |18250045
+55 De_Jong-Ropers Quentin  20k FR  38Gr  5    4    12   22   46-   53-   89+   84+   76+   63+    |18298841
+56 Delamarche Theo         20k FR  38Gr  5    4    12   21   76+   84+   59-   49-   91+   69+    |18233842
+57 Kuttlein Angele         20k FR  38Gr  5    4    12   21   87+   60-   78+   46-   90+   64+    |18201843
+58 Bugaj Zofia             19k PL  Pias  5    2    10   39   72+   43+   36-   26-   33-   38-    |18201546
+59 Joguet Malo             20k FR  38Gr  4    3    13   29   73+   63+   56+   44-   49-   50-    |18225845
+60 Puerto Alonso_Oliveira  20k FR  38Gr  4    3    12   29   81+   57+   38-   73+   39-   54-    |18237846
+61 Ngeta Norsilia          20k FR  38Gr  4    3    12   26   70+   64-   51-   67+   65+   46-    |18249847
+62 Delamarche Manon        20k FR  38Gr  4    3    11   26   67+   49-   77+   70+   51-   48-    |18262849
+63 Morand Clara            20k FR  38Gr  4    3    11   26   83+   59-   67+   65+   38-   55-    |18274850
+64 Roux-Buisson Solal      20k FR  38Gr  4    3    10   25   92+   61+   53-   51-   70+   57-    |18286851
+65 Khioudj Allyah          20k FR  38Gr  4    3    10   24   38-   68+   84+   63-   61-   76+    |18298852
+66 Arias Camilo            20k FR  38Gr  4    3    9    24   85+   48-   46-   83+   78+   47-    |18233853
+67 Tete Emilie             20k FR  38Gr  4    3    9    21   62-   83+   63-   61-   81+   78+    |18201854
+68 Sarrasi Anaelle         20k FR  38Gr  4    3    9    20   75-   65-   82+   81+   69-   85+    |18225856
+69 Zorman Eliot            20k FR  38Gr  4    3    8    23   91+   54-   52-   90+   68+   56-    |18237857
+70 Barthelemy Inouk        20k FR  38Gr  4    3    8    20   61-   80+   90+   62-   64-   83+    |18250859
+71 Malavasi Valentine      20k FR  38Gr  4    3    8    20   84-   74-   80+   50-   88+   77+    |18262860
+72 Bedar Kais              20k FR  38Gr  4    2    6    18   58-   79+   87+   52-   0=    0=     |18274861
+73 Bedar Djibri            20k FR  38Gr  4    2    5    15   59-   82+   88+   60-   0=    0=     |18286862
+74 Hermann Emile           20k FR  38Gr  4    1    4    13   50-   71+   0=    0=    0=    0=     |18298863
+75 Teka Shekina            20k FR  38Gr  3    2    7    27   68+   77+   44-   40-   54-   79-    |18233864
+76 Mihoub Sami             20k FR  38Gr  3    2    6    22   56-   88-   79+   77+   55-   65-    |18201865
+77 Santonacci Nina         20k FR  38Gr  3    2    6    20   86+   75-   62-   76-   82+   71-    |18225867
+78 Hamidi Killyan          20k FR  38Gr  3    2    5    23   47-   89+   57-   86+   66-   67-    |18249869
+79 Vernier Marius          20k FR  38Gr  3    2    5    19   48-   72-   76-   89-   0+    75+    |18250870
+80 Delamarche Jules        20k FR  38Gr  3    2    4    22   49-   70-   71-   91+   50-   88+    |18262871
+81 Marz Leopold            20k DE  J     3    2    4    21   60-   51-   91+   68-   67-   89+    |18274872
+82 Vrigneaud Pierre        20k FR  38Gr  3    2    4    21   40-   73-   68-   92+   77-   90+    |18286873
+83 Kechchab Nedjma         20k FR  38Gr  3    2    4    20   63-   67-   92+   66-   89+   70-    |18298874
+84 Zeng-lussereau Eliot    20k FR  38EB  3    1    4    20   71+   56-   65-   55-   0=    0=     |17349849
+85 Kouamela Ancelin        20k FR  38Gr  3    1    2    18   66-   0=    0=    88+   45-   68-    |18233875
+86 Philippe Saima          20k FR  38Gr  3    1    2    16   77-   91+   42-   78-   0=    0=     |18201876
+87 Rerbal Jamyne           20k FR  38Gr  3    0    0    13   57-   0=    72-   0=    0=    0=     |18237879
+88 Addad Maria             20k FR  38Gr  2    1    3    22   54-   76+   73-   85-   71-   80-    |18237890
+89 Zahraoui Kyss           20k FR  38Gr  2    1    3    22   52-   78-   55-   79+   83-   81-    |18249891
+90 Vernier Solal           20k FR  38Gr  2    1    2    24   39-   92+   70-   69-   57-   82-    |18250892
+91 El_Ajoutti Lina         20k FR  38Gr  2    1    1    19   69-   86-   81-   80-   56-   0+     |18262893
+92 Hoppenot Timothee       20k FR  38Gr  2    0    0    14   64-   90-   83-   82-   0=    0=     |18274894

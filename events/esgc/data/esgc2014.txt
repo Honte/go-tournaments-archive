@@ -9,19 +9,19 @@
 ; CM[ (submitted by FFG)]
 ;.
 ;
- 1 Lin Viktor              6d AT  Gote  1 5 12+b0   9+w0    6+w0    5+b0    2+w0     |14501256
- 2 Serban Mihai_Valentin   5d RO  Cluj  2 4 16+w0   11+b0   7+w0    3+w0    1-b0     |13062258
- 3 Obenaus Johannes        5d DE  B     3 4 15+w0   10+w0   4+b0    2-b0    5+w0     |13049795
- 4 Li Haohan               2d CN  31To  4 3 10+b0   15+b0   3-w0    7+w0    8+w0     |17262927
- 5 Karadaban Denis         4d FR  38Gr  5 4 14+b0   13+w0   8+w0    1-w0    3-b0     |15637314
- 6 Guennou Moran           1k FR  38Gr  6 3 9+w0    12+b0   1-b0    8-w0    11+w0    |15049089
- 7 Ivanov Viktor           2d RU  78SP  7 3 11+b0   16+w0   2-b0    4-b0    9+w0     |15762351
- 8 Michaeli Tal            3d IL  TAv   8 3 13+w0   14+w0   5-b0    6+b0    4-b0     |14837603
- 9 Lefebvre Loic           2k FR  38Gr  9 2 6-b0    1-b0    12+w0   10+w0   7-b0     |16786198
-10 Robert Ludwig           3k FR  31To 10 2  4-w0    3-b0    15+w0   9-b0    13+w0    |17074629
-11 Shao Nicolas            3k FR  31To 11 2  7-w0    2-w0    16+b0   12+w0   6-b0     |15433253
-12 Tezenas Thibaud         5k FR  38Gr 12 1  1-w0    6-w0    9-b0    11-b0   15+b0    |17325396
-13 Parcoit David           4k FR  31To 13 1  8-b0    5-b0    14-w0   15+w0   10-b0    |16333064
-14 Brouard David           8k FR  31To 14 1  5-w0    8-b0    13+b0   0=      0=       |10433071
-15 Volat Ludovic          20k FR  31To 15 0  3-b0    4-w0    10-b0   13-b0   12-w0    |17337397
-16 Corcessin Julien        9k FR  91Or 16 0  2-b0    7-b0    11-w0   0=      0=       |14249389
+   1 Lin Viktor                     6d AT  Gote     5     1   12+b0    9+w0    6+w0    4+b0    2+w0 |14501256
+   2 Serban Mihai_Valentin          5d RO  Cluj     4     2   16+w0   11+b0    7+w0    3+w0    1-b0 |13062258
+   3 Obenaus Johannes               5d DE  B        4     3   15+w0   10+w0    5+b0    2-b0    4+w0 |13049795
+   4 Karadaban Denis                4d FR  38Gr     3     4   14+b0   13+w0    8+w0    1-w0    3-b0 |15637314
+   5 Li Haohan                      2d CN  31To     4     5   10+b0   15+b0    3-w0    7+w0    8+w0 |17262927
+   6 Guennou Moran                  1k FR  38Gr     3     6    9+w0   12+b0    1-b0    8-w0   11+w0 |15049089
+   7 Ivanov Viktor                  2d RU  78SP     3     6   11+b0   16+w0    2-b0    5-b0    9+w0 |15762351
+   8 Michaeli Tal                   3d IL  TAv      3     6   13+w0   14+w0    4-b0    6+b0    5-b0 |14837603
+   9 Lefebvre Loic                  2k FR  38Gr     2     9    6-b0    1-b0   12+w0   10+w0    7-b0 |16786198
+  10 Robert Ludwig                  3k FR  31To     2     9    5-w0    3-b0   15+w0    9-b0   13+w0 |17074629
+  11 Shao Nicolas                   3k FR  31To     2     9    7-w0    2-w0   16+b0   12+w0    6-b0 |15433253
+  12 Tezenas Thibaud                5k FR  38Gr     1    12    1-w0    6-w0    9-b0   11-b0   15+b0 |17325396
+  13 Parcoit David                  4k FR  31To     1    12    8-b0    4-b0   14-w0   15+w0   10-b0 |16333064
+  14 Brouard David                  8k FR  31To     1    12    4-w0    8-b0   13+b0      0=      0= |10433071
+  15 Volat Ludovic                 20k FR  31To     0    15    3-b0    5-w0   10-b0   13-b0   12-w0 |17337397
+  16 Corcessin Julien               9k FR  91Or     0    15    2-b0    7-b0   11-w0      0=      0= |14249389

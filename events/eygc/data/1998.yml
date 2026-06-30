@@ -5,6 +5,7 @@ stages:
     file: eygc1998u12.txt
     category: u12
     name: U12
+    dir: 1998/u12
     notes: Second place, which gives also the right to play in the WYGC, was shared by Natali Kovaleva and Tommy Hollmann. Natali Kovaleva won the draw and Tommy so was reserve for China.
     scoringColumns:
       - mms 
@@ -15,12 +16,15 @@ stages:
       - mms
       - sos
       - sodos
+    columns:
+      - wins       
     findSharedPlaces: true
     collapsed: true
   - type: tournament
     file: eygc1998u18.txt
     category: u18
     name: U18
+    dir: 1998/u18
     scoringColumns:
       - mms 
       - wins
@@ -30,5 +34,7 @@ stages:
       - mms
       - sos
       - sodos
+    columns:
+      - wins       
     findSharedPlaces: true
     collapsed: true

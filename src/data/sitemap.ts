@@ -4,6 +4,7 @@ import type { Locale, Translations } from '@/i18n/consts';
 import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
 import { getString } from '@/i18n/utils';
+import { isFakeCountry } from '@/libs/country';
 import {
   allCountryStatsUrl,
   allGameStatsUrl,
@@ -108,7 +109,7 @@ export async function buildSitemap(
       indented: true,
       links: tournaments.toReversed().map((tournament) => {
         const location =
-          event.showCountry && tournament.country
+          event.showCountry && tournament.country && !isFakeCountry(tournament.country)
             ? `${tournament.location}, ${tournament.country}`
             : tournament.location;
 

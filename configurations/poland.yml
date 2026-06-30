@@ -24,10 +24,10 @@ events:
       - id: wgl
         prefix: wgl
 config:
-  generateSvgs: false,
-  generatePngs: false,
-  generateJpgs: true,
-  generateZips: true,
+  generateSvgs: false
+  generatePngs: false
+  generateJpgs: true
+  generateZips: true
   links:
     - website: https://go.art.pl
       title:

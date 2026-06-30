@@ -12,4 +12,9 @@ stages:
       - mms
       - sos
       - sosos
+    columns:
+      - wins       
     findSharedPlaces: false
+    games:
+      - 3-10 10:W+R round:2 sgf:2007/2-MerlijnKuin-JohnKarlsson.sgf
+      - 14-3 3:W+R round:1 sgf:2007/1-MarcusWeiland-MerlijnKuin.sgf

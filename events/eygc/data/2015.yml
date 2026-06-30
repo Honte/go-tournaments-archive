@@ -5,8 +5,9 @@ stages:
     file: eygc2015u12.txt
     category: u12
     name: U12
+    dir: 2015/u12
     scoringColumns:
-      - mms 
+      - mms
       - wins
       - sodos
       - sos
@@ -14,14 +15,17 @@ stages:
       - mms
       - sodos
       - sos
+    columns:
+      - wins       
     findSharedPlaces: true
     collapsed: true
   - type: tournament
     file: eygc2015u16.txt
     category: u16
     name: U16
+    dir: 2015/u16
     scoringColumns:
-      - mms 
+      - mms
       - wins
       - sodos
       - sos
@@ -29,14 +33,24 @@ stages:
       - mms
       - sodos
       - sos
+    columns:
+      - wins       
     findSharedPlaces: true
-    collapsed: true    
+    collapsed: true
+    games:
+      - 1-3 1:B+13.5 round:2 sgf:2015/u16/2-VjacheslavKajmin-StepanPopov.sgf
+      - 2-1 2:B+3.5 round:4 sgf:2015/u16/4-ValeriiKrushelnytskyi-VjacheslavKajmin.sgf
+      - 3-2 3:B+R round:5 sgf:2015/u16/5-StepanPopov-ValeriiKrushelnytskyi.sgf
+      - 3-5 3:B+R round:6 sgf:2015/u16/6-StepanPopov-JohannesWalka.sgf
+      - 3-6 3:B+R round:1 sgf:2015/u16/1-StepanPopov-KimShakhov.sgf
+      - 6-2 2:W+R round:3 sgf:2015/u16/3-KimShakhov-ValeriiKrushelnytskyi.sgf
   - type: tournament
     file: eygc2015u20.txt
     category: u20
     name: U20
+    dir: 2015/u20
     scoringColumns:
-      - mms 
+      - mms
       - wins
       - sos
       - sosos
@@ -44,5 +58,14 @@ stages:
       - mms
       - sos
       - sosos
+    columns:
+      - wins       
     findSharedPlaces: true
     collapsed: true
+    games:
+      - 1-3 1:B+R round:3 sgf:2015/u20/3-PavolLisy-TanguyLeCalve.sgf
+      - 1-5 1:B+3.5 round:2 sgf:2015/u20/2-PavolLisy-GrigorijFionin.sgf
+      - 1-7 1:B+37.5 round:6 sgf:2015/u20/6-PavolLisy-DominikBoviz.sgf
+      - 2-1 1:W+R round:4 sgf:2015/u20/4-LukasPodpera-PavolLisy.sgf
+      - 4-1 1:W+R round:5 sgf:2015/u20/5-SchayanHamrah-PavolLisy.sgf
+      - 6-1 1:W+13.5 round:1 sgf:2015/u20/1-AlexandrVashurov-PavolLisy.sgf

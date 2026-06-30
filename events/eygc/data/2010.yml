@@ -6,46 +6,68 @@ stages:
     file: eygc2010u12.txt
     category: u12
     name: U12
+    dir: 2010/u12
     scoringColumns:
-      - mms 
+      - mms
       - sos
       - sosos
-      - null
+      - wins
     breakers:
       - mms
       - sos
       - sosos
+    columns:
+      - wins       
     findSharedPlaces: true
     collapsed: true
+    games:
+      - 1-4 1:B+R round:5 sgf:2010/u12/5-AnsonNg-OliverWolf.sgf
+      - 5-1 5:B+R round:6 sgf:2010/u12/6-StepanPopov-AnsonNg.sgf
+      - 5-6 6:W+? round:3 sgf:2010/u12/3-StepanPopov-MikhailSidorenko.sgf
+      - 6-1 1:W+10 round:4 sgf:2010/u12/4-MikhailSidorenko-AnsonNg.sgf
+      - 6-7 6:B+R round:2 sgf:2010/u12/2-MikhailSidorenko-VladyslavVerteleckyj.sgf
   - type: tournament
     file: eygc2010u16.txt
     category: u16
     name: U16
+    dir: 2010/u16
     scoringColumns:
-      - mms 
+      - mms
       - sos
       - sosos
-      - null
+      - wins
     breakers:
       - mms
       - sos
       - sosos
-    findSharedPlaces: true  
-    collapsed: true    
+    columns:
+      - wins       
+    findSharedPlaces: true
+    collapsed: true
+    games:
+      - 1-3 1:B+R round:6 sgf:2010/u16/6-MateuszSurma-JurijMykhaljuk.sgf
+      - 2-1 1:W+11 round:3 sgf:2010/u16/3-VanessaWong-MateuszSurma.sgf
+      - 2-3 3:W+R round:5 sgf:2010/u16/5-VanessaWong-JurijMykhaljuk.sgf
+      - 3-4 4:W+0.5 round:4 sgf:2010/u16/4-JurijMykhaljuk-LukasPodpera.sgf
+      - 4-2 2:W+5 round:1 sgf:2010/u16/1-LukasPodpera-VanessaWong.sgf
+      - 7-2 2:W+R round:2 sgf:2010/u16/2-AlexandrVashurov-VanessaWong.sgf
   - type: tournament
     file: eygc2010u18.txt
     category: u18
     name: U18 section
+    dir: 2010/u18
     notes: It's formally not European Championship so do not count to medals and other statistics.
     scoringColumns:
-      - mms 
+      - mms
       - sos
       - sosos
-      - null
+      - wins
     breakers:
       - mms
       - sos
       - sosos
+    columns:
+      - wins       
     findSharedPlaces: true
     collapsed: true
     excluded: true
