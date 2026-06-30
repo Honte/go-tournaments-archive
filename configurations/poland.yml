@@ -11,12 +11,20 @@ events:
     events:
       - id: pgc
         prefix: mp
+        external: true
+        domain: https://mp.go.art.pl
       - id: pwgc
         prefix: mpk
+        external: true
+        domain: https://mpk.go.art.pl
       - id: pygc
         prefix: mpj
+        external: true
+        domain: https://mpj.go.art.pl
       - id: pagc
         prefix: amp
+        external: true
+        domain: https://amp.go.art.pl
   - title:
       pl: Klubowe
       en: Clubs

@@ -12,6 +12,7 @@ jobs:
       matrix:
         config:
           - europe
+          - poland
     uses: ./.github/workflows/_build-from-config.yml
     with:
       config: ${{ matrix.config }}
