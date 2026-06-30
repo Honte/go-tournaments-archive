@@ -1,0 +1,77 @@
+name: Release Assets
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-defaults:
+    name: Build ${{ matrix.config }} artifact
+    strategy:
+      fail-fast: false
+      matrix:
+        config:
+          - europe
+          - poland
+    uses: ./.github/workflows/_build-from-config.yml
+    with:
+      config: ${{ matrix.config }}
+
+  publish-release-assets:
+    name: Publish release assets
+    needs: build-defaults
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      RELEASE_TAG: latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: release-artifacts
+
+      - name: Check release exists
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release view "$RELEASE_TAG" >/dev/null
+
+      - name: Prepare release bundles
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+
+          artifact_dirs=(release-artifacts/*)
+          if [ "${#artifact_dirs[@]}" -eq 0 ]; then
+            echo "No build artifacts were downloaded."
+            exit 1
+          fi
+
+          for artifact_dir in "${artifact_dirs[@]}"; do
+            [ -d "$artifact_dir" ] || continue
+            asset_name="$(basename "$artifact_dir").zip"
+            (cd "$artifact_dir" && zip -qr "../${asset_name}" .)
+          done
+
+      - name: Publish release assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          assets=(release-artifacts/*.zip)
+
+          if [ "${#assets[@]}" -eq 0 ]; then
+            echo "No release bundles were prepared."
+            exit 1
+          fi
+
+          gh release upload "$RELEASE_TAG" "${assets[@]}" --clobber
+
+      - name: Move latest tag
+        run: |
+          set -euo pipefail
+          git tag --force "$RELEASE_TAG" "$GITHUB_SHA"
+          git push --force origin "refs/tags/${RELEASE_TAG}"

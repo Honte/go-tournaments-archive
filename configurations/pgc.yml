@@ -1,0 +1,72 @@
+events:
+  - id: pgc
+    domain: https://mp.go.art.pl
+config:
+  generateSvgs: false
+  generatePngs: false
+  generateJpgs: true
+  generateZips: true
+  links:
+    - title:
+        pl: Gra Go
+        en: Game of Go
+      place: bottom
+      links:
+        - website: https://go.art.pl
+          title:
+            pl: Go w Polsce
+            en: Go in Poland
+          tooltip:
+            pl: Odwiedź stronę Go w Polsce
+            en: Visit Go in Poland website
+        - website:
+            pl: https://psg.go.art.pl/pl
+            en: https://psg.go.art.pl/en
+          title:
+            pl: Polskie Stowarzyszenie Go
+            en: Polish Go Association
+          tooltip:
+            pl: Odwiedź stronę Polskiego Stowarzyszenia Go
+            en: Visit Polish Go Association website
+        - website: https://kursgo.pl
+          title:
+            pl: Kurs Go
+            en: Learn Go
+          tooltip:
+            pl: Naucz się grać w Go
+            en: Learn how to play Go
+    - title:
+        pl: Inne wydarzenia
+        en: Other events
+      place: bottom
+      links:
+        - website:
+            pl: https://mpk.go.art.pl/pl
+            en: https://mpk.go.art.pl/en
+          title:
+            pl: MPK
+            en: PWGC
+          description: &mpk
+            pl: Mistrzostwa Polski Kobiet
+            en: Polish Women Go Championships
+          tooltip: *mpk
+        - website:
+            pl: https://mpj.go.art.pl/pl
+            en: https://mpj.go.art.pl/en
+          title:
+            pl: MPJ
+            en: PYGC
+          description: &mpj
+            pl: Mistrzostwa Polski Juniorów
+            en: Polish Youth Go Championships
+          tooltip: *mpj
+        - website:
+            pl: https://amp.go.art.pl/pl
+            en: https://amp.go.art.pl/en
+          title:
+            pl: AMP
+            en: PAGC
+          description: &amp
+            pl: Akademickie Mistrzostwa Polski
+            en: Polish Academic Go Championships
+          tooltip: *amp

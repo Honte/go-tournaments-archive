@@ -174,6 +174,7 @@ function collectLinks(event: EventContext, locale: Locale) {
           href,
           label,
           tooltip: getString(linkChild.tooltip, locale),
+          description: getString(linkChild.description, locale),
         });
       }
 
@@ -213,6 +214,7 @@ function collectLinks(event: EventContext, locale: Locale) {
         href,
         label,
         tooltip: getString(linkEntry.tooltip, locale),
+        description: getString(linkEntry.description, locale),
       });
     }
   }
