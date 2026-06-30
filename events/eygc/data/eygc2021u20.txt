@@ -1,7 +1,7 @@
 ; TC[E211015C]
 ; CL[A]
 ; EV[European Youth Go Championship - Under 20]
-; PC[XX, Online Go Server]
+; PC[XO, Online Go Server]
 ; DT[2021-10-15,2021-10-17]
 ; HA[h9]
 ; KM[6.5]

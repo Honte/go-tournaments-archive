@@ -1,7 +1,7 @@
 ; TC[E201128A]
 ; CL[A]
 ; EV[European Women`s Championship 2020 (online)]
-; PC[XX, OGS: https://online-go.com]
+; PC[XO, Online Go Server]
 ; DT[2020-11-28,2020-12-21]
 ; HA[h9]
 ; KM[6.5]
