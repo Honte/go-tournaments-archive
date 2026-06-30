@@ -51,6 +51,7 @@ export type EventLink = {
   title: LocalizedString;
   tooltip?: LocalizedString;
   place?: EventLinkPlace;
+  description?: LocalizedString;
 };
 
 export type EventLinkGroup = {
