@@ -12,7 +12,7 @@ events:
     prefix: eygc
   - id: esgc
     prefix: esgc
-basePath: ${BASE_PATH}
+basePath: /archives
 config:
   generateSvgs: false
   generatePngs: false

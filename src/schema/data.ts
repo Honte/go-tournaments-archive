@@ -179,6 +179,8 @@ export type Player = {
   rank?: string;
   country?: string;
   egd?: number;
+  original?: string;
+  nickname?: string[];
   hasStats?: boolean;
 };
 
@@ -228,6 +230,8 @@ export type PlayerSummary = {
   id: string;
   egd?: number;
   name: string;
+  original?: string;
+  nickname?: string[];
   medals: StatsMedals;
   categoriesMedals: Record<string, StatsMedals>;
   country: string[];

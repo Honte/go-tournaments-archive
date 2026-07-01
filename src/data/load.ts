@@ -6,13 +6,14 @@ import type { Game, Player, Tournament, TournamentDateSpan, TournamentDetails } 
 import type { EventContext, EventData } from '@/schema/event';
 import type { InputTournament } from '@/schema/input';
 import { parseTop } from '@/libs/stage';
+import { readEventPlayersFile } from '@/data/eventPlayers';
 import { createPlayersHandler } from '@/data/players';
 import { parseStage } from '@/data/stages';
 import { calculateStats } from '@/data/stats';
 
 export async function loadData(event: EventContext): Promise<EventData> {
   const files = await fg.glob(`./events/${event.id}/data/*.yml`);
-  const playersHandler = createPlayersHandler();
+  const playersHandler = createPlayersHandler(await readEventPlayersFile(event.id));
   const tournaments: Tournament[] = [];
 
   for (const file of files) {

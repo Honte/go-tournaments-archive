@@ -5,6 +5,7 @@ import { parseDocument } from 'yaml';
 import type { InputTournament } from '@/schema/input';
 import { readCliParams } from '@tools/cli';
 import { createLogger } from '@tools/sgfMatcher/logger';
+import { readEventPlayersFile } from '@/data/eventPlayers';
 import { printStageReport, printSummary } from './report';
 import { findSgfs } from './sgf';
 import { processStage } from './stage';
@@ -34,6 +35,7 @@ if (!event) {
 
 const DATA_DIR = `events/${event}/data`;
 const SGF_DIR = `events/${event}/sgf`;
+const eventPlayers = await readEventPlayersFile(event);
 const results: StageResult[] = [];
 
 if (dry) {
@@ -82,6 +84,7 @@ for (const yamlPath of yamlFiles.sort()) {
       sgfDir: SGF_DIR,
       force,
       strict,
+      eventPlayers,
     });
 
     if (!stageResult.totalSgfs && !stageResult.previousEntries.length) {

@@ -21,6 +21,8 @@
     "start": "npx serve@latest out",
     "lint": "oxlint .",
     "extract:mp-db": "tsx tools/extract.ts",
+    "players:update": "tsx tools/players/build.ts",
+    "players:egd": "tsx tools/players/egd.ts",
     "sgf:match": "tsx tools/sgfMatcher/index.ts",
     "sgf:match:pgc": "tsx tools/sgfMatcher/index.ts --event pgc",
     "sgf:match:epq": "tsx tools/sgfMatcher/index.ts --event epq",

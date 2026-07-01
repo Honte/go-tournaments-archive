@@ -260,7 +260,9 @@ export function calculateStats(
     return (players[id] ||= {
       id,
       egd: playerData?.egd,
-      name: playerData?.lastUsedName,
+      name: playerData?.displayName ?? playerData?.lastUsedName ?? id,
+      original: playerData?.originalName,
+      nickname: playerData ? [...playerData.nickname] : undefined,
       medals: [[], [], []],
       categoriesMedals: setupCategoriesMedals(),
       country: [],

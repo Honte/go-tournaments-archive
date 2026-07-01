@@ -49,6 +49,8 @@
     "referee": "Sędzia",
     "awarded": "Medaliści",
     "awardedIn": "Medaliści %{0}",
+    "original": "Zapis oryginalny",
+    "nickname": "Pseudonim",
     "egd": "Profil EGD",
     "goToEGD": "Zobacz profil gracza w bazie European Go Database"
   },

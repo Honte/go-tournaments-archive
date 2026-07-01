@@ -64,6 +64,26 @@ describe('calculateStats', () => {
     assert.equal(stats.summary.streams, 1);
     assert.deepEqual(Object.keys(stats.games).sort(), ['g1', 'g2']);
   });
+
+  it('uses display names from players.yml and falls back to last tournament names', () => {
+    const playersHandler = createPlayersHandler([
+      {
+        id: 'alice',
+        name: 'Alice Display',
+        original: 'Alice Nowak',
+        nickname: [],
+      },
+    ]);
+    const players = playersHandler.loadJson({
+      a: 'Alice Nowak 1d (PL)',
+      b: 'Bob Smith 1k (DE)',
+      c: 'Carol Lee 2k (FR)',
+    });
+    const stats = calculateStats(creteEventConfig(), [createTournament(players, {})], playersHandler);
+
+    assert.equal(stats.players[players.a.id].name, 'Alice Display');
+    assert.equal(stats.players[players.b.id].name, 'Bob Smith');
+  });
 });
 
 describe('loadClassificationStage', () => {
