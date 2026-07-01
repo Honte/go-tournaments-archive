@@ -2,6 +2,7 @@ import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import type { InputTournamentStage } from '@/schema/input';
 import { buildLocalGameId, type H9Player, parseH9 } from '@/libs/h9';
+import type { EventPlayer } from '@/data/eventPlayers';
 import { GAME_REGEX } from '@/data/games';
 import { buildSgfEntryString, type SgfMatchResult } from './entries';
 import {
@@ -42,6 +43,7 @@ export async function processImplicitStage({
   dataDir,
   force,
   strict,
+  eventPlayers,
 }: {
   stage: InputTournamentStage;
   sgfPaths: string[];
@@ -49,12 +51,13 @@ export async function processImplicitStage({
   sgfDir: string;
   force: boolean;
   strict: boolean;
+  eventPlayers: EventPlayer[];
 }): Promise<StageAnalysisResult> {
   const tournamentFilePath = path.join(dataDir, stage.file);
   const tournamentFileContent = await readFile(tournamentFilePath, 'utf-8');
   const tournament = parseH9(tournamentFileContent);
 
-  const playersMap = buildPlayersMap(tournament.results);
+  const playersMap = buildPlayersMap(tournament.results, eventPlayers);
   const gamesMap = buildGamesMap(tournament.results);
 
   const existingGamesById = new Map<string, ParsedGameEntry>();
@@ -267,7 +270,7 @@ function parseEntry(entry: string): ParsedGameEntry | null {
   };
 }
 
-export function buildPlayersMap(results: H9Player[]): Map<string, number> {
+export function buildPlayersMap(results: H9Player[], eventPlayers: EventPlayer[] = []): Map<string, number> {
   const lookup = new Map<string, number>();
 
   for (const player of results) {
@@ -279,6 +282,24 @@ export function buildPlayersMap(results: H9Player[]): Map<string, number> {
     const fullName = `${player.name} ${player.surname}`;
     const reversedName = `${player.surname} ${player.name}`;
     registerAliasName(lookup, reversedName, player.place, fullName);
+  }
+
+  for (const player of results) {
+    const eventPlayer = findEventPlayer(player, eventPlayers);
+
+    if (!eventPlayer) {
+      continue;
+    }
+
+    const fullName = `${player.name} ${player.surname}`;
+
+    for (const alias of [
+      eventPlayer.name,
+      ...(eventPlayer.original ? [eventPlayer.original] : []),
+      ...eventPlayer.nickname,
+    ]) {
+      registerAliasName(lookup, alias, player.place, fullName);
+    }
   }
 
   return lookup;
@@ -465,6 +486,28 @@ function registerAliasName(lookup: Map<string, number>, alias: string, place: nu
   }
 
   lookup.set(normalized, place);
+}
+
+function findEventPlayer(player: H9Player, eventPlayers: EventPlayer[]): EventPlayer | undefined {
+  if (player.egd) {
+    const byEgd = eventPlayers.find((eventPlayer) => eventPlayer.egd === player.egd);
+
+    if (byEgd) {
+      return byEgd;
+    }
+  }
+
+  const fullName = normalizePlayerName(`${player.name} ${player.surname}`);
+  const reversedName = normalizePlayerName(`${player.surname} ${player.name}`);
+
+  return eventPlayers.find((eventPlayer) =>
+    [eventPlayer.name, ...(eventPlayer.original ? [eventPlayer.original] : []), ...eventPlayer.nickname].some(
+      (name) => {
+        const normalized = normalizePlayerName(name);
+        return normalized === fullName || normalized === reversedName;
+      }
+    )
+  );
 }
 
 function verifyColors(h9Record: H9GameRecord, sgfPlaces: SgfPlaces): boolean {

@@ -5,8 +5,9 @@ import type {
   InputRoundRobinTableStage,
   InputTournament,
 } from '@/schema/input';
+import type { EventPlayer } from '@/data/eventPlayers';
 import { GAME_REGEX } from '@/data/games';
-import { getPlayerHash, getPlayerSlug, parsePlayers } from '@/data/players';
+import { createPlayersHandler, getPlayerHash, getPlayerSlug } from '@/data/players';
 import { buildEntryWithoutSgf, buildSgfEntryString, type SgfMatchResult } from './entries';
 import {
   buildCommonUnmatchedReasons,
@@ -62,6 +63,7 @@ export async function processExplicitStage({
   sgfDir,
   force,
   strict,
+  eventPlayers,
 }: {
   tournament: InputTournament;
   stage: ExplicitStage;
@@ -69,11 +71,12 @@ export async function processExplicitStage({
   sgfDir: string;
   force: boolean;
   strict: boolean;
+  eventPlayers: EventPlayer[];
 }): Promise<StageAnalysisResult> {
   const pathsToMatch = getExplicitPathsToMatch(stage, sgfPaths, force);
   const sgfInfos = await loadSgfInfos(sgfDir, pathsToMatch, strict);
 
-  return matchExplicitSgfs({ tournament, stage, sgfPaths, sgfInfos, force });
+  return matchExplicitSgfs({ tournament, stage, sgfPaths, sgfInfos, force, eventPlayers });
 }
 
 export function matchExplicitSgfs({
@@ -82,14 +85,16 @@ export function matchExplicitSgfs({
   sgfPaths,
   sgfInfos,
   force,
+  eventPlayers,
 }: {
   tournament: InputTournament;
   stage: ExplicitStage;
   sgfPaths: string[];
   sgfInfos: SgfInfo[];
   force: boolean;
+  eventPlayers?: EventPlayer[];
 }): StageAnalysisResult {
-  const playersMap = buildYamlPlayersMap(tournament.players);
+  const playersMap = buildYamlPlayersMap(tournament.players, eventPlayers);
   const entries = collectExplicitEntries(stage);
   const previousEntries = entries.filter((entry) => entry.sgf).map((entry) => entry.raw);
   const existingSgfs = new Set(entries.flatMap((entry) => (entry.sgf ? [entry.sgf] : [])));
@@ -349,17 +354,36 @@ function getMatchedExplicitSgfResult(
   return winner ? { winner, result: sgf.cleanResult.replace(/\+$/, '') } : null;
 }
 
-function buildYamlPlayersMap(players: InputTournament['players']): Map<string, string> {
+function buildYamlPlayersMap(
+  players: InputTournament['players'],
+  eventPlayers: EventPlayer[] = []
+): Map<string, string> {
   const lookup = new Map<string, string>();
-  const parsedPlayers = parsePlayers(players ?? {});
+  const playersHandler = createPlayersHandler(eventPlayers);
+  const parsedPlayers = playersHandler.loadJson(players ?? {});
 
   for (const [id, player] of Object.entries(parsedPlayers)) {
+    const playerData = playersHandler.getPlayer(player.id);
     const hash = getPlayerHash(player.name);
 
     registerPlayerName(lookup, id, id);
     registerPlayerName(lookup, player.name, id);
     registerPlayerName(lookup, hash, id);
     registerPlayerName(lookup, getPlayerSlug(hash), id);
+
+    if (playerData) {
+      const aliases = [
+        ...(playerData.displayName ? [playerData.displayName] : []),
+        ...(playerData.lastUsedName ? [playerData.lastUsedName] : []),
+        ...(playerData.originalName ? [playerData.originalName] : []),
+        ...playerData.names,
+        ...playerData.nickname,
+      ];
+
+      for (const alias of aliases) {
+        registerPlayerName(lookup, alias, id);
+      }
+    }
   }
 
   return lookup;

@@ -20,6 +20,10 @@ export function Achievements({ event, player, translations }: AchievementsProps)
   const t = getTranslator(translations);
   const details: Record<string, ReactNode> = {};
 
+  if (player.original?.length) {
+    details[t('details.original')] = player.original;
+  }
+
   let hasMedals = false;
   for (const [index, medal] of MEDALS.entries()) {
     if (event.categories?.length) {
@@ -59,6 +63,10 @@ export function Achievements({ event, player, translations }: AchievementsProps)
         {player.egd}
       </ExternalLink>
     );
+  }
+
+  if (player.nickname?.length) {
+    details[t('details.nickname')] = player.nickname.join(', ');
   }
 
   return (

@@ -54,6 +54,59 @@ describe('matchImplicitSgfs', () => {
     });
   });
 
+  it('matches SGF names using players.yml nicknames', () => {
+    const playersMap = buildPlayersMap(
+      [
+        makeH9Player({ place: 1, name: 'Stanislaw', surname: 'Frejlak' }),
+        makeH9Player({ place: 2, name: 'White', surname: 'Player' }),
+      ],
+      [
+        {
+          id: 'sfrejlak',
+          name: 'Stanisław Frejlak',
+          egd: 12837594,
+          original: 'Stanislaw Frejlak',
+          nickname: ['siasio'],
+        },
+      ]
+    );
+    const gamesMap = new Map([
+      [
+        '1-2-1',
+        makeH9Record({
+          homePlace: 1,
+          awayPlace: 2,
+          round: 1,
+          winnerPlace: 1,
+          homeColor: 'black',
+          winnerColor: 'black',
+        }),
+      ],
+    ]);
+    const sgf = makeSgfInfo({
+      path: '2025/1-siasio-WhitePlayer.sgf',
+      sgfBlackName: 'siasio',
+      sgfWhiteName: 'White Player',
+      filenameBlackName: 'siasio',
+      filenameWhiteName: 'WhitePlayer',
+      filenameRound: 1,
+      rawResult: 'B+R',
+      cleanResult: 'B+R',
+    });
+
+    const result = matchImplicitSgfs({
+      sgfInfos: [sgf],
+      playersMap,
+      gamesMap,
+      existingGamesById: new Map(),
+      existingGamesBySgf: new Map(),
+      currentSgfPaths: new Set([sgf.path]),
+      force: false,
+    });
+
+    assert.deepEqual(result.matchedEntries, ['1-2 1:B+R round:1 sgf:2025/1-siasio-WhitePlayer.sgf']);
+  });
+
   it('treats SGF filenames with spaces as unmatched', () => {
     const { playersMap, gamesMap } = makeSimpleContext();
     const sgf = makeSgfInfo({

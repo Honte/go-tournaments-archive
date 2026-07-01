@@ -1,0 +1,232 @@
+players:
+  - id: akacprzyk
+    name: Agnieszka Kacprzyk
+    egd: 13625524
+  - id: alubos
+    name: Aleksandra Lubos
+    egd: 10674928
+  - id: asanojca
+    name: Andrzej Sanojca
+  - id: akindziuk
+    name: Arkadiusz Kindziuk
+    egd: 10901715
+  - id: achmielewski
+    name: Artur Chmielewski
+    egd: 15350841
+  - id: cczernecki
+    name: Cezary Czernecki
+    egd: 14813139
+  - id: dtargosz
+    name: Dariusz Targosz
+    egd: 10313468
+  - id: djurkiewicz
+    name: Dawid Jurkiewicz
+    egd: 15650283
+  - id: dblaszczyk
+    name: Diana Błaszczyk
+    egd: 13674386
+  - id: dgogosz
+    name: Dominik Gogosz
+    egd: 12813064
+  - id: egrudzinska
+    name: Emilia Grudzińska
+    egd: 10262912
+  - id: emos
+    name: Ewa Moś
+    egd: 13533047
+  - id: gszymborski
+    name: Gerard Szymborski
+    egd: 10401853
+  - id: ggrygierzec
+    name: Grzegorz Grygierzec
+    egd: 10986261
+  - id: jstraszewski
+    name: Jakub Straszewski
+    egd: 12813625
+  - id: jfraczak
+    name: Jan Frączak
+    egd: 16298964
+  - id: jfrejlak
+    name: Jan Frejlak
+    egd: 12801591
+  - id: jkonieczny
+    name: Jan Konieczny
+  - id: jlubos
+    name: Jan Lubos
+    egd: 10337613
+  - id: jchlodek
+    name: Janusz Chłodek
+    egd: 10398465
+  - id: jkraszek
+    name: Janusz Kraszek
+    egd: 10637924
+  - id: jkotorowicz
+    name: Jerzy Kotorowicz
+  - id: jmazur
+    name: Jerzy Mazur
+    egd: 12050478
+  - id: jrybka
+    name: Jerzy Rybka
+    egd: 10437702
+  - id: jsacharewicz
+    name: Jerzy Sacharewicz
+  - id: kchwedyna
+    name: Kamil Chwedyna
+    egd: 13513786
+  - id: kgrabowski2
+    name: Kamil Grabowski
+    egd: 15849361
+  - id: kcieslak
+    name: Karol Cieślak
+    egd: 14649228
+  - id: kkoenig
+    name: Katarzyna Koenig
+    egd: 10449890
+  - id: kzuk-rybicka
+    name: Katarzyna Żuk-Rybicka
+  - id: khabu
+    name: Koichiro Habu
+    egd: 10837827
+  - id: kbozek
+    name: Krzysztof Bożek
+    egd: 12874290
+  - id: kgiedrojc
+    name: Krzysztof Giedrojć
+    egd: 10437834
+  - id: kgrabowski
+    name: Krzysztof Grabowski
+    egd: 10633359
+  - id: kkarczewski
+    name: Krzysztof Karczewski
+    egd: 12474924
+  - id: kmoszczynski
+    name: Krzysztof Moszczyński
+    egd: 12574034
+  - id: kszymczyk
+    name: Krzysztof Szymczyk
+    egd: 10274715
+  - id: kurtnowski
+    name: Krzysztof Urtnowski
+    egd: 10650926
+  - id: ldabrowski
+    name: Leszek Dabrowski
+  - id: ldziumowicz
+    name: Leszek Dziumowicz
+    egd: 12474561
+  - id: lsoldan
+    name: Leszek Sołdan
+    egd: 10449560
+  - id: llew
+    name: Łukasz Lew
+    egd: 12913120
+  - id: mgorski
+    name: Maciej Górski
+  - id: mlubinski
+    name: Maciej Lubiński
+    egd: 12449547
+  - id: mmisiak
+    name: Majus Misiak
+    egd: 16225132
+  - id: mwalaszewski
+    name: Maksym Wałaszewski
+    egd: 15050673
+  - id: mbankowski
+    name: Marcin Bańkowski
+  - id: mkosz
+    name: Marcin Kosz
+    egd: 18774954
+  - id: mmajka
+    name: Marcin Majka
+    egd: 14713413
+    nickname: higaki
+  - id: mwolak
+    name: Marcin Wolak
+    egd: 10498235
+  - id: mkaminski
+    name: Marek Kamiński
+    egd: 13913823
+  - id: mkopyt
+    name: Marek Kopyt
+    egd: 10737408
+  - id: mferenc
+    name: Mariusz Ferenc
+    egd: 10386607
+  - id: mchojnacki
+    name: Mateusz Chojnacki
+    egd: 14237498
+  - id: mklobukowski
+    name: Mateusz Kłobukowski
+    egd: 12301619
+  - id: msurma
+    name: Mateusz Surma
+    egd: 12837968
+    nickname: drakula
+  - id: mbazynski
+    name: Michał Bażyński
+    egd: 10733943
+  - id: mparkola
+    name: Michał Parkoła
+    egd: 12833458
+  - id: mrams
+    name: Michał Rams
+    egd: 12425314
+  - id: pbanas
+    name: Paweł Banas
+  - id: pcelejewski
+    name: Paweł Celejewski
+    egd: 12833062
+  - id: pmorawiecki
+    name: Paweł Morawiecki
+    egd: 12898721
+  - id: pdyszczyk
+    name: Piotr Dyszczyk
+    egd: 13862035
+  - id: pwysocki
+    name: Piotr Wysocki
+    egd: 13633917
+  - id: rjachym
+    name: Radosław Jachym
+    egd: 13074435
+  - id: rzablocki
+    name: Robert Zabłocki
+    egd: 12013419
+  - id: rpozaroszczyk
+    name: Roman Pozaroszczyk
+    egd: 12850739
+  - id: rpszonka
+    name: Roman Pszonka
+    egd: 10874842
+  - id: rzygowski
+    name: Ryszard Zygowski
+    egd: 12486914
+  - id: spawlaczyk
+    name: Sebastian Pawlaczyk
+    egd: 14562372
+  - id: sfrejlak
+    name: Stanisław Frejlak
+    egd: 12837594
+    nickname: siasio
+  - id: smajerski
+    name: Stanisław Majerski
+  - id: tparuszewski
+    name: Tomasz Paruszewski
+    egd: 10425701
+  - id: tslazok
+    name: Tomasz Ślązok
+    egd: 13049432
+  - id: wgrzywinski
+    name: Waldemar Grzywiński
+  - id: wdobosiewicz
+    name: Włodzimierz Dobosiewicz
+  - id: wgrudzinski
+    name: Włodzimierz Grudziński
+    egd: 12674024
+  - id: wmalinowski
+    name: Włodzimierz Malinowski
+    egd: 10749409
+  - id: wwieczorek
+    name: Wojciech Wieczorek
+    egd: 10325469
+  - id: wwoskresinski
+    name: Wojciech Woskresiński
+    egd: 10974260

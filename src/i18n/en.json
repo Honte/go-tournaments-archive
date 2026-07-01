@@ -49,6 +49,8 @@
     "referee": "Referee",
     "awarded": "Medalists",
     "awardedIn": "Medalists Of %{0}",
+    "original": "Native name",
+    "nickname": "Nickname",
     "egd": "EGD Profile",
     "goToEGD": "Open player's profile in European Go Database"
   },

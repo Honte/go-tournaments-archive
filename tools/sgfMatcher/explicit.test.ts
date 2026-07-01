@@ -41,6 +41,48 @@ describe('matchExplicitSgfs', () => {
     assert.deepEqual(result.unmatchedEntries, []);
   });
 
+  it('matches explicit SGF names using players.yml nicknames', () => {
+    const tournament: InputTournament = {
+      players: {
+        sf: 'Stanislaw Frejlak 2p |12837594',
+        wp: 'White Player 1d',
+      },
+      stages: [],
+    };
+    const sgf = makeSgfInfo({
+      path: '2025-league-1-siasio-wp.sgf',
+      sgfBlackName: 'siasio',
+      sgfWhiteName: 'White Player',
+      filenameBlackName: 'siasio',
+      filenameWhiteName: 'wp',
+      filenameRound: 1,
+      filenameStage: 'league',
+    });
+
+    const result = matchExplicitSgfs({
+      tournament,
+      stage: {
+        type: 'league',
+        date: '2025-01-01',
+        rounds: [['sf-wp sf:B+R']],
+      },
+      sgfPaths: [sgf.path],
+      sgfInfos: [sgf],
+      force: false,
+      eventPlayers: [
+        {
+          id: 'sfrejlak',
+          name: 'Stanisław Frejlak',
+          egd: 12837594,
+          original: 'Stanislaw Frejlak',
+          nickname: ['siasio'],
+        },
+      ],
+    });
+
+    assert.deepEqual(result.matchedEntries, ['sf-wp sf:B+R sgf:2025-league-1-siasio-wp.sgf']);
+  });
+
   it('does not change the YAML winner when SGF result points to the other player', () => {
     const tournament: InputTournament = {
       players: {

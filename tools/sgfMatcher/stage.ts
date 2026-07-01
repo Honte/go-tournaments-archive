@@ -1,4 +1,5 @@
 import type { InputStage, InputTournament } from '@/schema/input';
+import type { EventPlayer } from '@/data/eventPlayers';
 import { processExplicitStage } from './explicit';
 import { processImplicitStage } from './implicit';
 import type { StageAnalysisResult } from './types';
@@ -11,6 +12,7 @@ type StageProcessInput = {
   sgfDir: string;
   force: boolean;
   strict: boolean;
+  eventPlayers: EventPlayer[];
 };
 
 export async function processStage(input: StageProcessInput): Promise<StageAnalysisResult> {

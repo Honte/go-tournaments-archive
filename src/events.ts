@@ -44,7 +44,7 @@ export async function loadEventFromPrefix(eventPrefix: string): Promise<EventCon
   };
 }
 
-async function loadEventDefinition(eventId: string): Promise<EventDefinition> {
+export async function loadEventDefinition(eventId: string): Promise<EventDefinition> {
   const configModule = await import(`../events/${eventId}/config.ts`);
 
   return configModule.default as EventDefinition;
