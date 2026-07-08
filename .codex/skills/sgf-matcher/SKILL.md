@@ -20,14 +20,14 @@ description: Match, import, move, rename, and validate SGF files for go-tourname
    - tournament stages with `dir:`: use that stage directory instead of the plain year
    - keep unmatched or uncertain files in a candidate/inbox directory
 5. Run the dry matcher before writing YAML:
-   - `npm run sgf:match:<event> -- --year <year> --dry`
+   - `npm run sgf <event> -- --year <year> --dry`
    - add `--force` when replacing stale or previously matched `sgf:` props
    - add `--strict` when branch-selection or variation issues matter
 6. For each matched candidate, derive the archive filename from the event convention and matcher evidence.
    Rename the SGF file and update the matching `sgf:` path together; do not leave YAML pointing at the old name.
 7. Rerun the dry matcher after every move/rename batch. Only run the real matcher when the dry output shows the expected matched, reused, removed, and unmatched state.
 8. Run the write pass:
-   - `npm run sgf:match:<event> -- --year <year>`
+   - `npm run sgf <event> -- --year <year>`
    - include `--force` only when the dry force output is already understood
 9. Finish with the smallest useful validation:
    - matcher dry rerun for SGF/data work
@@ -39,18 +39,12 @@ description: Match, import, move, rename, and validate SGF files for go-tourname
 Use the scripts in the current `package.json` as the source of truth. Known matcher scripts currently include:
 
 ```powershell
-npm run sgf:match -- --year <year> --dry
-npm run sgf:match:pgc -- --year <year> --dry
-npm run sgf:match:wagc -- --year <year> --dry
-npm run sgf:match:kpmc -- --year <year> --dry
-npm run sgf:match:pwgc -- --year <year> --dry
-npm run sgf:match:pagc -- --year <year> --dry
-npm run sgf:match:epc -- --year <year> --dry
-npm run sgf:match:iegc -- --year <year> --dry
+npm run sgf <event> -- --year <year> --dry
 ```
 
 Matcher flags:
 
+- `<event>`, `--event <event>`, or `-e <event>`: select the event. If none is passed, the matcher uses `EVENT`.
 - `--year <year>` / `-y <year>`: process one event year.
 - `--dry` / `-d`: report without writing YAML.
 - `--force` / `-f`: rebuild or overwrite existing `sgf:` matches.

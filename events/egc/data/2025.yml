@@ -1,10 +1,10 @@
-website: 
- - https://www.eurogofed.org/egc/2025.html
- - https://www.egc2025.pl/en/
-notes: 5 rounds of double ladder until quarters + 3 rounds KO 
+website: https://www.eurogofed.org/egc/2025.html
+notes: 5 rounds of double ladder until quarters + 3 rounds KO
 stages:
   - type: tournament
     file: egc2025.txt
+    name: Championship
+    dir: 2025/ec
     time: 60min + 30sec fischer, for Semi Final and Finals  80min + 40sec Fischer
     scoringColumns:
       - wins
@@ -12,5 +12,41 @@ stages:
     breakers:
       - place
     columns:
-      - wins    
+      - wins
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:8 sgf:2025/ec/8-MateuszSurma-ValeriiKrushelnytskyi.sgf ogs:https://online-go.com/review/1508832
+      - 1-3 1:B+R round:7 sgf:2025/ec/7-MateuszSurma-ArtemKachanovskyi.sgf ogs:https://online-go.com/review/1508181
+      - 1-13 1:B+1.5 round:2 sgf:2025/ec/2-MateuszSurma-CornelBurzo.sgf ogs:https://online-go.com/review/1505464
+      - 2-4 2:B+9.5 round:7 sgf:2025/ec/7-ValeriiKrushelnytskyi-StanislawFrejlak.sgf ogs:https://online-go.com/review/1508180
+      - 2-5 2:B+5.5 round:2 sgf:2025/ec/2-ValeriiKrushelnytskyi-BenjaminDreanGuenaizia.sgf ogs:https://online-go.com/review/1505461
+      - 2-7 2:B+5.5 round:6 sgf:2025/ec/6-ValeriiKrushelnytskyi-FredrikBlomback.sgf ogs:https://online-go.com/review/1507594
+      - 3-2 2:W+10.5 round:3 sgf:2025/ec/3-ArtemKachanovskyi-ValeriiKrushelnytskyi.sgf ogs:https://online-go.com/review/1506005
+      - 3-8 3:B+5.5 round:6 sgf:2025/ec/6-ArtemKachanovskyi-AndriiKravets.sgf ogs:https://online-go.com/review/1507596
+      - 4-3 3:W+R round:8 sgf:2025/ec/8-StanislawFrejlak-ArtemKachanovskyi.sgf ogs:https://online-go.com/review/1508833
+      - 4-6 4:B+8.5 round:6 sgf:2025/ec/6-StanislawFrejlak-ThomasDebarre.sgf ogs:https://online-go.com/review/1507593
+      - 4-12 4:B+7.5 round:3 sgf:2025/ec/3-StanislawFrejlak-TanguyleCalve.sgf ogs:https://online-go.com/review/1506004
+      - 5-1 1:W+2.5 round:6 sgf:2025/ec/6-BenjaminDreanGuenaizia-MateuszSurma.sgf ogs:https://online-go.com/review/1507595
+      - 5-14 5:B+R round:4 sgf:2025/ec/4-BenjaminDreanGuenaizia-DavideBernardis.sgf ogs:https://online-go.com/review/1506565
+      - 5-19 5:B+R round:1 sgf:2025/ec/1-BenjaminDreanGuenaizia-AlexanderEerbeek.sgf ogs:https://online-go.com/review/1505003
+      - 5-20 5:B+R round:3 sgf:2025/ec/3-BenjaminDreanGuenaizia-XingYuze.sgf ogs:https://online-go.com/review/1506043
+      - 6-7 7:W+R round:2 sgf:2025/ec/2-ThomasDebarre-FredrikBlomback.sgf ogs:https://online-go.com/review/1505463
+      - 6-11 6:B+R round:5 sgf:2025/ec/5-ThomasDebarre-LukasPodpera.sgf ogs:https://online-go.com/review/1507039
+      - 6-16 6:B+R round:4 sgf:2025/ec/4-ThomasDebarre-DenisDobranis.sgf ogs:https://online-go.com/review/1506563
+      - 7-10 7:B+R round:5 sgf:2025/ec/5-FredrikBlomback-JanSimara.sgf ogs:https://online-go.com/review/1507038
+      - 8-7 8:B+R round:3 sgf:2025/ec/3-AndriiKravets-FredrikBlomback.sgf ogs:https://online-go.com/review/1506008
+      - 8-21 8:B+R round:2 sgf:2025/ec/2-AndriiKravets-HoYeungWoo.sgf ogs:https://online-go.com/review/1505462
+      - 9-3 3:W+R round:5 sgf:2025/ec/5-ElianIoanGrigoriu-ArtemKachanovskyi.sgf ogs:https://online-go.com/review/1507040
+      - 9-4 4:W+2.5 round:2 sgf:2025/ec/2-ElianIoanGrigoriu-StanislawFrejlak.sgf ogs:https://online-go.com/review/1505460
+      - 10-13 10:B+R round:4 sgf:2025/ec/4-JanSimara-CornelBurzo.sgf ogs:https://online-go.com/review/1506562
+      - 11-1 1:W+9.5 round:3 sgf:2025/ec/3-LukasPodpera-MateuszSurma.sgf ogs:https://online-go.com/review/1506007
+      - 12-5 5:W+R round:5 sgf:2025/ec/5-TanguyleCalve-BenjaminDreanGuenaizia.sgf ogs:https://online-go.com/review/1507041
+      - 13-22 13:B+1.5 round:3 sgf:2025/ec/3-CornelBurzo-RemiCampagnie.sgf ogs:https://online-go.com/review/1506009
+      - 14-18 14:B+R round:3 sgf:2025/ec/3-DavideBernardis-VsevolodOvsiienko.sgf ogs:https://online-go.com/review/1506044
+      - 15-9 9:W+R round:4 sgf:2025/ec/4-KoichiroHabu-ElianIoanGrigoriu.sgf ogs:https://online-go.com/review/1506564
+      - 18-3 3:W+R round:2 sgf:2025/ec/2-VsevolodOvsiienko-ArtemKachanovskyi.sgf ogs:https://online-go.com/review/1505467
+      - 19-6 6:W+R round:3 sgf:2025/ec/3-AlexanderEerbeek-ThomasDebarre.sgf ogs:https://online-go.com/review/1506010
+      - 19-26 19:B+0.5 round:2 sgf:2025/ec/2-AlexanderEerbeek-ThomasDanel.sgf ogs:https://online-go.com/review/1505456
+      - 27-4 4:W+R round:1 sgf:2025/ec/1-CezaryCzernecki-StanislawFrejlak.sgf ogs:https://online-go.com/review/1505009
+      - 28-8 8:W+0.5 round:1 sgf:2025/ec/1-RobertAndreiGrosu-AndriiKravets.sgf ogs:https://online-go.com/review/1505001
+      - 30-20 20:W+R round:2 sgf:2025/ec/2-FrankJanssen-XingYuze.sgf ogs:https://online-go.com/review/1505455

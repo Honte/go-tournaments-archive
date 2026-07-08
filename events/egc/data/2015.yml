@@ -1,11 +1,38 @@
 website: https://www.eurogofed.org/results/congress/egc2015.htm
-notes: 4 rounds of preliminary + 3 rounds KO 
+notes: 4 rounds of preliminary + 3 rounds KO
 stages:
   - type: tournament
     file: egc2015.txt
+    name: Championship
+    dir: 2015/ec
     scoringColumns:
       - wins
       - place
     breakers:
       - place
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:7 sgf:2015/ec/7-HuiFan-AliJabarin.sgf
+      - 1-6 6:W+12.5 round:3 sgf:2015/ec/3-HuiFan-ArtemKachanovskyi.sgf
+      - 1-9 1:B+R round:4 sgf:2015/ec/4-HuiFan-ViktorLin.sgf
+      - 3-2 2:W+R round:6 sgf:2015/ec/6-IljaShikshin-AliJabarin.sgf
+      - 3-10 3:B+15 round:3 sgf:2015/ec/3-IljaShikshin-CristianPop.sgf
+      - 3-12 3:B+27.5 round:4 sgf:2015/ec/4-IljaShikshin-DmitrijSurin.sgf
+      - 3-21 3:B+R round:1 sgf:2015/ec/1-IljaShikshin-JanProkop.sgf
+      - 4-1 1:W+4 round:6 sgf:2015/ec/6-ThomasDebarre-HuiFan.sgf
+      - 4-3 3:W+R round:7 sgf:2015/ec/7-ThomasDebarre-IljaShikshin.sgf
+      - 5-4 4:W+2.5 round:5 sgf:2015/ec/5-PavolLisy-ThomasDebarre.sgf
+      - 5-8 5:B+5.5 round:3 sgf:2015/ec/3-PavolLisy-AlexandrDinerstein.sgf
+      - 5-16 5:B+R round:2 sgf:2015/ec/2-PavolLisy-AndriiKravets.sgf
+      - 6-2 2:W+2.5 round:5 sgf:2015/ec/5-ArtemKachanovskyi-AliJabarin.sgf
+      - 6-5 5:W+R round:4 sgf:2015/ec/4-ArtemKachanovskyi-PavolLisy.sgf
+      - 6-7 6:B+R round:2 sgf:2015/ec/2-ArtemKachanovskyi-MateuszSurma.sgf
+      - 7-1 1:W+R round:5 sgf:2015/ec/5-MateuszSurma-HuiFan.sgf
+      - 8-3 3:W+R round:5 sgf:2015/ec/5-AlexandrDinerstein-IljaShikshin.sgf
+      - 8-18 8:B+R round:2 sgf:2015/ec/2-AlexandrDinerstein-OndrejSilt.sgf
+      - 9-3 3:W+R round:2 sgf:2015/ec/2-ViktorLin-IljaShikshin.sgf
+      - 9-11 9:B+1.5 round:1 sgf:2015/ec/1-ViktorLin-CatalinTaranu.sgf
+      - 10-7 7:W+R round:4 sgf:2015/ec/4-CristianPop-MateuszSurma.sgf
+      - 13-7 7:W+R round:3 sgf:2015/ec/3-DusanMitic-MateuszSurma.sgf
+      - 20-5 5:W+R round:1 sgf:2015/ec/1-BenjaminDreanGuenaizia-PavolLisy.sgf
+      - 23-1 1:W+R round:1 sgf:2015/ec/1-JanSimara-HuiFan.sgf

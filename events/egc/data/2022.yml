@@ -4,6 +4,8 @@ notes: 5 rounds of double ladder until quarters + 3 rounds KO
 stages:
   - type: tournament
     file: egc2022.txt
+    name: Championship
+    dir: 2022/ec
     time: 80min + 40sec Fischer
     scoringColumns:
       - wins

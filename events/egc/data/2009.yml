@@ -6,6 +6,7 @@ stages:
     file: egc2009.txt
     notes: For statistics best 16 europeans and games between them are shown. Games against other players changed to 0+ and 0-
     name: Championship
+    dir: 2009/ec
     scoringColumns:
       - mms
       - wins
@@ -20,9 +21,19 @@ stages:
       - wins
       - open
     findSharedPlaces: true
+    games:
+      - 1-5 1:B+1 round:5 sgf:2009/ec/5-AlexandrDinerstein-RobvanZeijst.sgf
+      - 2-1 2:B+R round:9 sgf:2009/ec/9-CatalinTaranu-AlexandrDinerstein.sgf
+      - 3-4 4:W+1 round:5 sgf:2009/ec/5-CsabaMero-CristianPop.sgf
+      - 4-5 5:W+7 round:7 sgf:2009/ec/7-CristianPop-RobvanZeijst.sgf
+      - 5-3 3:W+R round:10 sgf:2009/ec/10-RobvanZeijst-CsabaMero.sgf
+      - 7-5 5:W+R round:8 sgf:2009/ec/8-CornelBurzo-RobvanZeijst.sgf
+      - 8-1 1:W+11 round:10 sgf:2009/ec/10-JavierAleksiSavolainen-AlexandrDinerstein.sgf
+      - 9-6 9:B+R round:9 sgf:2009/ec/9-IljaShikshin-ThomasDebarre.sgf
   - type: tournament
     file: egc2009open100.txt
     name: EGC Open
+    dir: 2009/open
     notes: Top 100 players of main tournament. Games against other players changed to 0+ and 0-
     scoringColumns:
       - mms
@@ -36,7 +47,35 @@ stages:
     columns:
       - wins
     excluded: true
-    collapsed: true    
-    findSharedPlaces: true 
-	   
-
+    collapsed: true
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:9 sgf:2009/open/9-EunkukKim-InseongHwang.sgf
+      - 1-3 1:B+1 round:7 sgf:2009/open/7-EunkukKim-JoonsangKim.sgf
+      - 1-7 1:B+R round:3 sgf:2009/open/3-EunkukKim-CatalinTaranu.sgf
+      - 1-14 1:B+R round:1 sgf:2009/open/1-EunkukKim-CornelBurzo.sgf
+      - 1-28 1:B+R round:5 sgf:2009/open/5-EunkukKim-GeertGroenen.sgf
+      - 2-4 2:B+R round:6 sgf:2009/open/6-InseongHwang-ChiMinOh.sgf
+      - 2-5 2:B+3 round:7 sgf:2009/open/7-InseongHwang-SangyounJun.sgf
+      - 2-6 2:B+1 round:3 sgf:2009/open/3-InseongHwang-AlexandrDinerstein.sgf
+      - 3-2 3:B+R round:4 sgf:2009/open/4-JoonSangKim-InseongHwang.sgf
+      - 3-4 3:B+7 round:3 sgf:2009/open/3-JoonsangKim-ChiMinOh.sgf
+      - 3-5 5:W+5 round:5 sgf:2009/open/5-JoonsangKim-SangyounJun.sgf
+      - 3-7 3:B+T round:10 sgf:2009/open/10-JoonsangKim-CatalinTaranu.sgf
+      - 4-1 4:B+R round:10 sgf:2009/open/10-ChiMinOh-EunkukKim.sgf
+      - 4-10 4:B+R round:9 sgf:2009/open/9-ChiMinOh-RobvanZeijst.sgf
+      - 4-26 4:B+R round:2 sgf:2009/open/2-ChiMinOh-FrankJanssen.sgf
+      - 5-1 5:B+R round:4 sgf:2009/open/4-SangyounJun-EunkukKim.sgf
+      - 5-6 6:W+R round:6 sgf:2009/open/6-SangyounJun-AlexandrDinerstein.sgf
+      - 6-1 1:W+11 round:8 sgf:2009/open/8-AlexandrDinerstein-EunkukKim.sgf
+      - 7-5 7:B+R round:8 sgf:2009/open/8-CatalinTaranu-SangyounJun.sgf
+      - 8-2 2:W+11 round:2 sgf:2009/open/2-CsabaMero-InseongHwang.sgf
+      - 9-3 3:W+R round:6 sgf:2009/open/6-CristianPop-JoonsangKim.sgf
+      - 10-1 1:W+R round:2 sgf:2009/open/2-RobvanZeijst-EunkukKim.sgf
+      - 13-12 13:B+11 round:1 sgf:2009/open/1-JungChangYuan-ThomasDebarre.sgf
+      - 15-2 2:W+R round:8 sgf:2009/open/8-MotokiNoguchi-InseongHwang.sgf
+      - 15-29 29:W+R round:4 sgf:2009/open/4-MotokiNoguchi-DmytroBogackyj.sgf
+      - 28-6 6:W+R round:7 sgf:2009/open/7-GeertGroenen-AlexandrDinerstein.sgf
+      - 39-11 11:W+8 round:1 sgf:2009/open/1-IgorNemlij-YanqiZhang.sgf
+      - 39-12 12:W+25 round:6 sgf:2009/open/6-IgorNemlij-ThomasDebarre.sgf
+      - 64-14 14:W+15 round:4 sgf:2009/open/4-TobiasBerben-CornelBurzo.sgf

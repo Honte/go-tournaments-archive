@@ -1,0 +1,766 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]OT[3x60 byo-yomi]C[xDragon [?\]\: someone said that board 1 would be fan vs debarre?
+EGC2013a [?\]\: 1st board is Surma Mateusz vs Kravets Andrii
+xDragon [?\]\: ah
+Theo2015 [3k\]\: will there be a livestream? \:)
+xDragon [?\]\: http\://egc2013.go.art.pl/page/live
+Theo2015 [3k\]\: ty
+JonSnow [4d\]\: please tell me board 3 is fan vs debarre
+royu [5d\]\: nice stream, hope we see someone flip a go board
+xDragon [?\]\: it is
+JeansebL [5d\]\: seems redundant to have the game here, and a camera that films the board from above, I'd rather see the players...
+Gorim [1d\]\: the transmission is made from those cameras
+Gorim [1d\]\: to not disturb players
+Gorim [1d\]\: wise and good for the players, not so good for specatcors\:p
+blurb1\: someone from eurogotv extra would be nice
+blurb1\: for the players and room
+Reym [-\]\: yes it's not the same without eurogotv
+JeansebL [5d\]\: Ah I understand Gorim, thanks
+JeansebL [5d\]\: Although I'm pretty sure a good scribe does not really disturb the players \:P
+Reym [-\]\: in all other pro tournament there is a referee recording the game and they seem ok with it
+JeansebL [5d\]\: exactly \:)
+]
+AP[CGoban:3]SZ[19]GM[1]GN[57th European Go Congress, Round 3]EV[57th European Go Congress]
+RO[3]DT[2013-07-30]PC[Olsztyn, Poland]PB[Kravets Andrii]BR[6d]PW[Surma Mateusz]
+WR[6d]KM[6.5]TM[9000]RE[W+R]MULTIGOGM[1]
+;B[dc];W[cp]C[Zahlman [1k\]\: maybe they couldn't find a properly trained scribe?
+]
+;B[pd];W[pp];B[ce]C[JeansebL [5d\]\: yeah, scribing is harder than it seems, especially when it gets fast \:)
+EGC2013a [?\]\: Actually, transmitting from room is a lot easier then from the stream, its all about convenience and comfort of players
+Zahlman [1k\]\: so, r14? or wedge?
+]
+;W[nc]C[Zahlman [1k\]\: ooh, inside approach
+Zahlman [1k\]\: pincer?
+Eduardo [2k\]\: pincer!
+Eduardo [2k\]\: yeah
+Eduardo [2k\]\: l16
+WVoron [5d\]\: bet on black
+toved2 [10k\]\: K17
+zife [4d?\]\: fyi this is the most common continuation
+zife [4d?\]\: r14 q18 n17 
+Zahlman [1k\]\: not convinced l16 is a good pincer choice, since after the boring continuation, l18 is undermining what b tried to build in top left
+Zahlman [1k\]\: zife\: ah that contact has really gotten popular now
+toved2 [10k\]\: E4
+zife [4d?\]\: hardly anyone plays the wedge these days
+zife [4d?\]\: idk why
+]
+;B[kc];W[qf]C[Eduardo [2k\]\: i prefer l16 \:/
+toved2 [10k\]\: P16
+Theo2015 [3k\]\: ?
+]
+;B[nd];W[md]C[Eduardo [2k\]\: standard here
+Theo2015 [3k\]\: yes this is
+];B[ne]
+C[Theo2015 [3k\]\: i was confused about p16 lol, probably a typo?
+];W[pc]C[gobugobu [7d\]\: p17 would be bad now because after p18 p16 n18, B l17 is in the wrong place.
+gobugobu [7d\]\: so B must play r17 p17 r16 
+gobugobu [7d\]\: after that maybe n15 n14 l16 k16 l15 m17 n17 q13 
+Eduardo [2k\]\: b will play p17
+yw [?\]\: r17 p17 r16 n15 q13 
+Eduardo [2k\]\: n17 too
+]
+;B[qc];W[oc];B[rd];W[me];B[mf]C[mozarto [?\]\: hi! are fan hui and thomas debarre playing on this table?
+Theo2015 [3k\]\: no
+blurb1\: at c
+]
+;W[od]C[Theo2015 [3k\]\: ^
+mozarto [?\]\: thanks!
+];B[oe];W[pe]C[Mate9p\: ко-ко
+]
+;B[qd];W[lc];B[og]C[Mate9p\: gg
+Zahlman [1k\]\: ugly...
+];W[ph];B[kd]C[Zahlman [1k\]\: q14 r15 r13 q13 p14 s13 s14 r12 s15, the zoku-est of sujis I'm sure
+]
+;W[le]C[pressure [2d\]\: is it joseki?
+Zahlman [1k\]\: you mean my line, or what they are doing, or what
+pressure [2d\]\: what has been played
+Zahlman [1k\]\: I sure don't recognize it, but it looks reasonable, if ugly
+Zahlman [1k\]\: can't really argue with the moves, just how the fight flows
+]
+;B[jf]C[clicisclic [5k\]\: hello, is there a place on the congress website to know who is playing on wich table? not to have to ask every day... by the way...
+clicisclic [5k\]\: ... can someone tell me who is playing here?
+Zahlman [1k\]\: you can see that much by looking at the game window carefully
+Lesmian [1d\]\: Mateusz Surma (b) and Andrii Kravets (w)
+clicisclic [5k\]\: not with the app
+Lesmian [1d\]\: no, Surma i white... \:)
+clicisclic [5k\]\: tx lesmian
+Lesmian [1d\]\: sorry, Surma is white
+Mate9p\: w-res?
+gobugobu [7d\]\: k14 looks inconsistent
+Zahlman [1k\]\: treating o15 lightly, lol
+gobugobu [7d\]\: I really don't like s16 - I have never understood this move in the first place, even though it is joseki.
+gobugobu [7d\]\: It just allows W to cut in sente.
+Zahlman [1k\]\: if the corner can live, it seems worthwhile. and yeah s16 looked strange to me
+Eduardo [2k\]\: s16 is yose lose?
+gobugobu [7d\]\: yose? what are you talking about?
+gobugobu [7d\]\: This is about initiative
+Zahlman [1k\]\: in tewari, imagine the exchange of q15 for s16. b was cut, but has an easier time in the corner in exchange
+Eduardo [2k\]\: i mean that s16 dont make me sense xd 
+Mate9p\: m14.
+Zahlman [1k\]\: anyway, w really can't do anything besides m14 now yeah?
+gisel [3d\]\: l13 ?
+Zahlman [1k\]\: oh, maybe that can connect because of b's thinness?
+pressure [2d\]\: why k14 inconsistent gobugobu?
+Zahlman [1k\]\: l13 m14 l14 l15 o14 p14 o13, yeah, b can't manage that
+Zahlman [1k\]\: nice find gisel
+fuzhou [5d\]\: n13 ?
+]
+;W[rf]C[Zahlman [1k\]\: !
+Eduardo [2k\]\: \:o
+Zahlman [1k\]\: sente against the corner, I'm pretty sure
+gisel [3d\]\: and Surma as always, doesnt make any of predicted moves \:P
+Zahlman [1k\]\: b doesn't dare m14 to exchange
+fuzhou [5d\]\: nice
+PL [3k?\]\: n14 was probably wrong move
+Zahlman [1k\]\: yeah if b replies in the corner, it's so passive... basically free for w, makes n14 look like bad timing
+gobugobu [7d\]\: I don't know either of these players, but they don't seem to be contenders for the top spots.
+Threeeye [5d\]\: s18 only move next no?
+Zahlman [1k\]\: I think so
+Threeeye [5d\]\: ehm mateusz is definetly contender for top spot
+Mate9p\: s14?
+gisel [3d\]\: Surma is pretty strong he trained in Korea, I dont know Kravets
+PL [3k?\]\: the only reasonable move for black is to resign
+Anivia [5k?\]\: Mateusz 100% aims at top8
+Zahlman [1k\]\: q18 doesn't live does it?
+Threeeye [5d\]\: and andrii got ukraine champion
+gisel [3d\]\: and Ilya so far lost one game
+PL [3k?\]\: Mateusz Surma can give u handicalps gobugobu
+Zahlman [1k\]\: who beat ilya?
+Threeeye [5d\]\: viktor lin beat ilya
+Zahlman [1k\]\: I don't know that name...
+Threeeye [5d\]\: lol
+pressure [2d\]\: the playoffs dont make any sense to me
+royu [5d\]\: PL, I think you're wrong and that gobu is stronger than both player
+Anivia [5k?\]\: Mateusz is sttronger than 7d KGS, that's for sure
+PL [3k?\]\: of course\:)
+Gorim [1d\]\: there are many blitz/unserious dan players on kgs
+Gorim [1d\]\: so I wouldn't concern myself with those ranks too much
+PL [3k?\]\: kibitz will see who is Surma very soon\:)
+Zahlman [1k\]\: b still thinking about this move?
+pressure [2d\]\: surma is from poland or czech republic?
+PL [3k?\]\: Korea
+PL [3k?\]\: and Poland
+tommyray [1d?\]\: Poland, he just train in Korea
+pressure [2d\]\: thanks
+pressure [2d\]\: but what do you mean by train?
+pressure [2d\]\: being insei?
+Zahlman [1k\]\: korean equivalent
+Pische [1d\]\: no, he drives trains
+]
+;B[qj]C[Lesmian [1d\]\: \:)
+pressure [2d\]\: funny
+Zahlman [1k\]\: !
+psymore\: b overdoing stuff
+PL [3k?\]\: black decided to die everywhere?
+Zahlman [1k\]\: how...
+tommyray [1d?\]\: \:)
+pressure [2d\]\: there is much difference between being insei and training in some kind of a summer camp
+gisel [3d\]\: wow, this is surely unexpected as well
+Zahlman [1k\]\: fireworks now... ?
+Zahlman [1k\]\: I guess p11 is scaredy cat option
+gisel [3d\]\: pressure, Surma has been studying go in korea for over two years by now I think, maybe more
+Gorim [1d\]\: from what I know he is an "korean equivalent of insei"
+Gorim [1d\]\: but only players from the highest group in the school are called i***** in Korea
+Gorim [1d\]\: and he isn't in the highest class
+Gorim [1d\]\: so dunno what name he should have;p
+Zahlman [1k\]\: yeonggusaeng, or however you pretend to spell it
+gobugobu [7d\]\: I don't think any of these players can give me handicap - even at my age  still score in the top 10.
+Mapma\: strange move s16
+gobugobu [7d\]\: w can kill with r18 s18 q18 s19 t17 
+gobugobu [7d\]\: B can only live with s18 q18 t17 
+]
+;W[pj]C[PL [3k?\]\: what a read gobu! thanks!
+gobugobu [7d\]\: So W wants to play to safeguard his weakest surrounding group first, which is q12 
+Zahlman [1k\]\: w doesn't kill with s18 directly?
+psymore\: and attach b weak  lone stone?  \:/
+gobugobu [7d\]\: The best way is to prevent getting encircled in sente. q10 is the best to satisfy that aim.
+psymore\: zahlman, dont be greedy, it wont run away \:)
+lockhart [5d?\]\: who is black who is white?
+psymore\: ah ok
+lockhart [5d?\]\: im on the app sorry
+]
+;B[pk];W[oj]C[Zahlman [1k\]\: besides, psymore, this makes m14 more painful later \:)
+PL [3k?\]\: White is Mateusz Surma, black is Kravets Andrii
+lockhart [5d?\]\: ah go mateusz!
+keepcalm [6k\]\: R6
+PL [3k?\]\: \:)
+psymore\: m14? i wanna n12
+pressure [2d\]\: it seems that all kgs high dans know mateusz
+GoldRoger7 [2d\]\: b can't defend both side no ?
+Zahlman [1k\]\: all three sides \:)
+royu [5d\]\: when you look at artem, cornel, antii etc.. all these guys capped at around 7d
+PL [3k?\]\: how old is Mateusz?
+Zahlman [1k\]\: ooh n12 neat idea \:)
+]
+;B[lg]C[pressure [2d\]\: antii is 6d not 7d
+pressure [2d\]\: 2615 rank
+royu [5d\]\: unless surma is much stronger, it's not likely he is stronger than gobu 
+Zahlman [1k\]\: ok, nom nom nom corner time
+psymore\: tiger?
+GoldRoger7 [2d\]\: 7D kgs
+]
+;W[pb]C[paps [4d?\]\: Did eurogotv changed there cameras? Images are horrible!!
+royu [5d\]\: imo, gobu gives the best commentary on kgs and is pretty much always spot-on \:) 
+gisel [3d\]\: there is no eurogotv there
+]
+;B[qb]C[Zahlman [1k\]\: what is b hoping for?
+PL [3k?\]\: there is big difference beetween playing a serious agme on EGC or playing fast games on KGS
+keepcalm [6k\]\: N18 defense needed?
+paps [4d?\]\: ah! ok, it makes a big difference!
+PL [3k?\]\: l18 
+Lesmian [1d\]\: PL, do you think gobugobu is not able to play a serious game? I do not get your point
+gisel [3d\]\: those are only some webcams installed there by organisers I think, but yeah, quality is not good
+Pische [1d\]\: the main difference is that spectators talk about the game and not about the sexual activities of their mothers 
+PL [3k?\]\: i didnt say a word about gobu
+]
+;W[kb];B[jb];W[lb]C[royu [5d\]\: you said w can give gobu handi
+Reym [-\]\: w r19 kills?
+PL [3k?\]\: ok u right royu
+Lesmian [1d\]\: ok, i am sorry then. I thought you were continuing prattle about 2 handi Mateusz could give him
+pressure [2d\]\: i can give gobu handi as well but it doesnt mean that im going to beat him \:)
+PL [3k?\]\: not 2, 3 or 4...
+keepcalm [6k\]\: black should save R10 group now
+]
+;B[pa];W[oa]C[phi [3d\]\: is Mateusz Surma the player who lost last year in playoffs by 2,5 points against Ilya?
+]
+;B[qa]C[Zahlman [1k\]\: eh, b living now?
+keepcalm [6k\]\: T18 doesn't kill?
+royu [5d\]\: w taking a look at l14 or l13 now
+royu [5d\]\: k15 also a consideration
+gisel [3d\]\: yeah phi, thats correct
+phi [3d\]\: thanks
+phi [3d\]\: black living is not a success here \:-)
+Zahlman [1k\]\: whole thing is still a mess...
+Muttley [2k\]\: N13 not a consideration for w?
+keepcalm [6k\]\: can white R9?
+phi [3d\]\: W j18
+phi [3d\]\: or J17
+phi [3d\]\: my call is W j17
+dash [2d\]\: players?
+royu [5d\]\: k15 feels like the right move
+GoldRoger7 [2d\]\: w= surma mateusz b=kravets andrii
+royu [5d\]\: plus ladder is in favor of w at c4
+gobugobu [7d\]\: Before I mentioned that w should play r18 s18 q18 - that way B has fewer liberties
+gobugobu [7d\]\: I think that would have finished the game immediately
+]
+;W[ld]C[royu [5d\]\: agree
+pressure [2d\]\: what?
+gobugobu [7d\]\: This is terrible for W
+rollstory [2k\]\: both live 
+royu [5d\]\: i don't get m16... 
+keepcalm [6k\]\: alive but slow. K15 should have saved m16
+phi [3d\]\: preparation to make use of outside black weaknesses
+rollstory [2k\]\: but w gets sente...
+phi [3d\]\: and living
+Muttley [2k\]\: makes N17 eye so O19 not a threat and now wants to cut b
+gobugobu [7d\]\: however if B plays j16, w s18 s19 t18 or so and B o19 doesn't work because of n19 p18 o18 p19 l19 
+phi [3d\]\: this is not terrible for white...
+phi [3d\]\: his is far away from terrible....
+Muttley [2k\]\: however, won't b crawl at N19 to fight a ko?
+grrrr [2d\]\: t16 kills
+phi [3d\]\: n19 is not a ko
+phi [3d\]\: n19 n18 o19 p18 
+phi [3d\]\: black need to defendcorner
+phi [3d\]\: m16 was a wonderful move
+]
+;B[qi]C[phi [3d\]\: the only not weak black group is upper left shimari
+];W[oh]
+C[phi [3d\]\: how this is terrible for white?
+rollstory [2k\]\: weak?
+phi [3d\]\: yes
+Mapma\: black resign
+phi [3d\]\: alll black stones are underattack because of tone of aji
+gfdhff [2k\]\: Drakula, Drakula ;D
+Mapma\: attacking only white
+]
+;B[qn]C[Maek [3d\]\: s18 kills?
+Mapma\: attack only black
+phi [3d\]\: upper right black group need a move to live
+Threeeye [5d\]\: s18
+rollstory [2k\]\: but sente is qiet important now
+Mapma\: t18
+Threeeye [5d\]\: t18 doesnt kill
+rollstory [2k\]\: t18 ko?
+Threeeye [5d\]\: t18 alive
+Lesmian [1d\]\: s18 does
+Threeeye [5d\]\: not even ko
+leszczyn [-\]\: t16 kill, doesnt it?
+phi [3d\]\: yes
+Threeeye [5d\]\: nah
+Threeeye [5d\]\: liberty problem then
+daftclair [9k\]\: upper right live/dead is about 40 points delta, right? seems like that would be worth a move
+phi [3d\]\: t16 kills
+gisel [3d\]\: t16 still doesnt kill i guess
+Threeeye [5d\]\: t16 t17 s18 s25
+phi [3d\]\: s18 kills too
+Threeeye [5d\]\: s15
+Threeeye [5d\]\: so its alive
+Threeeye [5d\]\: s18 also complicated
+leszczyn [-\]\: s15, t15
+Threeeye [5d\]\: q14
+Threeeye [5d\]\: t15 q14
+CageyS [2d?\]\: I like neither position- maybe b's is even worse
+Threeeye [5d\]\: s18 should be ko
+phi [3d\]\: t16 doeasnt kill
+rollstory [2k\]\: to kill the top right corner is around 20moku big, right?
+Threeeye [5d\]\: much more
+Threeeye [5d\]\: the white group is then alive
+Nande [2d\]\: i thought u r participating in this tournament ?
+Threeeye [5d\]\: yea i kind of am
+Threeeye [5d\]\: i just messed up
+]
+;W[dj]C[rollstory [2k\]\: w´s group is killable?
+Threeeye [5d\]\: hmm
+Threeeye [5d\]\: lol
+rollstory [2k\]\: how?
+]
+;B[nq];W[oo]C[pressure [2d\]\: dead 7-point shape nah?
+gisel [3d\]\: w's group is just not yet alive
+gisel [3d\]\: of course q10 group i mean
+Mukti [4d\]\: T16-T17-S18-S15-T15. i am still koking for way for b to extricate but he seems dead to me.
+Threeeye [5d\]\: ko not enough ? O.o
+phi [3d\]\: t16 s15 
+Threeeye [5d\]\: mukti
+phi [3d\]\: there is no ko
+Kanin [6d\]\: this games loks very good for black
+Threeeye [5d\]\: there is a ko
+Threeeye [5d\]\: on s18
+]
+;B[kp]C[Threeeye [5d\]\: t16 doesnt do nothing
+daftclair [9k\]\: so o19 p18 o18 n17 n18?
+Threeeye [5d\]\: just read guys pls...
+Mukti [4d\]\: Show me the sequence please, or show me what's wrong with the one I posted.
+gisel [3d\]\: Mukti,  black capture at t14 t15 q14 and black lives
+Threeeye [5d\]\: ok
+Threeeye [5d\]\: gisel said
+gisel [3d\]\: thats not really hard to read \:)
+Mukti [4d\]\: Got it.
+Mukti [4d\]\: Blind spot
+gobugobu [7d\]\: Why doesn't W play s18 ?
+leszczyn [-\]\: the game becomes really difficult for white then...
+Threeeye [5d\]\: but why doesnt he start the ko now
+Threeeye [5d\]\: ehm s18 for w is wrong dude
+Threeeye [5d\]\: t16...
+Threeeye [5d\]\: wtf
+gobugobu [7d\]\: I don't see a ko, just a dead group
+Threeeye [5d\]\: i meant the other way round im sorry -.-
+Threeeye [5d\]\: ehm
+Threeeye [5d\]\: no its ko
+Threeeye [5d\]\: because s15 sente
+Threeeye [5d\]\: at every moment
+Threeeye [5d\]\: so its s18 t18
+leszczyn [-\]\: gobugobu\: how to kill?
+Threeeye [5d\]\: if s19
+Threeeye [5d\]\: then s15
+gobugobu [7d\]\: s18 t18 s19 s15 t15 t16 s17 s12 q13 t14 and ko
+gobugobu [7d\]\: But that is a terrible ko for B
+]
+;W[eq]C[Mate8p [?\]\: gg
+phi [3d\]\: gobugobu why u dont play even ranked games?
+gobugobu [7d\]\: besides it strengthens W's group around p12 
+gobugobu [7d\]\: I do
+phi [3d\]\: no i didnt
+phi [3d\]\: no u didnt
+]
+;B[nl]C[Mate8p [?\]\: h3?
+gobugobu [7d\]\: W should play q7 r7 q8 instead of e3 or play r3 to make eyes for one weak group
+gisel [3d\]\: its sad, but it seems Mateusz has got himself in big trouble
+phi [3d\]\: dont panic
+phi [3d\]\: Mateusz is the only one here who reads it out
+phi [3d\]\: dont trust KGS kibitz, trust Mateusz's moves
+Kanin [6d\]\: but to be fair, the ret of us have two more games o focus on, he only has this one
+phi [3d\]\: Kanin\:))
+Mate8p [?\]\: n5?
+gobugobu [7d\]\: I don't only have this account, phi
+gobugobu [7d\]\: I've played 2i, etc.
+]
+;W[lj]C[Wagaboo [2k\]\: n12 
+];B[qq]C[phi [3d\]\: yeah...my second account is "tartrate"
+gobugobu [7d\]\: W can also play t16 t17 s18 s15 t15 t14 t15 but then B q14 r15 r13 is devastating
+Mate8p [?\]\: r2?
+pressure [2d\]\: is it possible to see such a long sequences as quoted above comfortably on kgs?
+royu [5d\]\: my real name is kanye west, shrug
+phi [3d\]\: gobugobu is a troll
+Mate8p [?\]\: h3-big
+gobugobu [7d\]\: no phi, but why don't you something useful? Attacking people personally is a serious flaw in your personality. You crave superiority for some reason.
+phi [3d\]\: i just watching a game
+michiko123\: i think.. cut black o15 grup is good for white... mmmm... maybe cut in l13 
+gobugobu [7d\]\: If you want to address your personality disorder, I can recommend Eckhart Tolle's book The Power of Now and awakening to your Life's Purpose.
+Mate8p [?\]\: r2-bad
+]
+;W[ok]C[gobugobu [7d\]\: r3 is a great move - W is a bit in trouble
+];B[ol]C[gobugobu [7d\]\: However, next if p8 r9 q8 s9, B's group in the top right will die
+]
+;W[pl]C[Mate8p [?\]\: sorry-r3
+Threeeye [5d\]\: ah im sorry gobugo
+gobugobu [7d\]\: q8 looks like the wrong cut
+Threeeye [5d\]\: playing s15 directly is bad
+]
+;B[qk]C[Threeeye [5d\]\: but playing q 14
+Threeeye [5d\]\: then r13
+Threeeye [5d\]\: and after cut atari 
+Threeeye [5d\]\: then s15 is sente later
+Threeeye [5d\]\: so its ko
+Threeeye [5d\]\: but black has first to strengthen white
+Threeeye [5d\]\: so its really flower too
+Gorim [1d\]\: Gobugobu is this Eckhart a Buddhist or does he try to sell these ideas under a different name?\:P
+gobugobu [7d\]\:  I don't understand your analysis. I never said that B or W should play s15 directly.
+Threeeye [5d\]\: i said that after s18 t18 black should play s15
+Threeeye [5d\]\: but he should first exchange the other moves
+gobugobu [7d\]\: I am not sure if he is a Buddhist. But he is pretty famous.
+gobugobu [7d\]\: ic
+Pische [1d\]\: gobugobu, what should I do with my life? should I move to Canada for work or remain in Italy? 
+gobugobu [7d\]\: The problem is that B gets into liberty problems then
+lama\: I would go for Canada, Pische
+gobugobu [7d\]\: Yes, Pische, that is my problem too, being in Tokyo.
+lama\: what business are you in?
+gobugobu [7d\]\: Various
+Pische [1d\]\: cinema
+Kanin [6d\]\: they have cinema in canada?
+Pische [1d\]\: a lot of it actually, and a lot of TV too
+Reym [-\]\: baduk tv!
+Reym [-\]\: you should open one in canada or italy
+Pische [1d\]\: that would be awesome
+lama\: what are you by education gobu?
+]
+;W[mo]C[gobugobu [7d\]\: Physicist
+jakotaki [1d\]\: PhD ?
+lama\: come to Switzerland, we have the LHC \:))
+]
+;B[mj];W[mi];B[np]C[blacklabel [1d\]\: oh b made alive at top?
+gobugobu [7d\]\: Not PhD
+WVoron [5d\]\: on top ko?
+WVoron [5d\]\: gobu?
+gobugobu [7d\]\: I am a technical translator and court interpreter of Japanese now
+Kanin [6d\]\: wow
+Kanin [6d\]\: that's quite impressive
+gobugobu [7d\]\: if o5 q7 is good
+Kanin [6d\]\: so I guess you will be translating some go books too? \:P
+]
+;W[no]C[phi [3d\]\: gobugobu is just perfect star of kgs kibitz
+gobugobu [7d\]\: but maybe B tries to be more 'efficient' and play o4 o5 n9 
+Kanin [6d\]\: translator to/from what language btw?
+gobugobu [7d\]\: No, Kanin, I write them.
+EGC2013a [?\]\: Time left - B 1h34m, W 1h35min
+lama\: you write books? sweet \:))
+]
+;B[lk]C[gobugobu [7d\]\: Japanese into various European languages
+pressure [2d\]\: could you focus on the game please?
+gobugobu [7d\]\: m9 must be bad
+pressure [2d\]\: why bad?
+]
+;W[pm]C[royu [5d\]\: i am impressed with w
+blacklabel [1d\]\: w is a risky side too, he looks many libs, but
+blacklabel [1d\]\: anyway, quite a mess
+]
+;B[rn]C[gobugobu [7d\]\: m9 is messy
+phi [3d\]\: white is a favourite of being best european player in this tournament, he is not risky, he reads
+gobugobu [7d\]\: should have been at q7 but, of course, n10 was bad too
+gobugobu [7d\]\: no, phi he is not at all
+Bjondro [8k\]\: n9 and what then for b?
+lockhart [5d?\]\: actually he is
+phi [3d\]\: and Mateusz will surely be the youngest player in top ten in this tournament
+gobugobu [7d\]\: not even close. Maybe he will be in the top 10, but i seriously dount it.
+]
+;W[mk]C[gobugobu [7d\]\: doubt
+phi [3d\]\: howold is Mateusz? 15?
+Bjondro [8k\]\: yep n9
+gobugobu [7d\]\: n9 is too good
+tommyray [1d?\]\: 18 or 19 yo
+phi [3d\]\: timr going so fast..
+gobugobu [7d\]\: hmmm, 18 or 19 is not that impressive
+dfgddfgf\: nothing is impressive to me anymore since there are 12 yo pros
+dfgddfgf\: who are amazing
+]
+;B[ml];W[ko]C[pressure [2d\]\: i found short interview with mateusz http\://intergofed.org/13-igf-news-feed/190-korea-prime-minister-cup-interview-with-mateusz-surma-poland.html
+]
+;B[li];W[kj];B[nk]C[lama\: can w afford all these moves?
+Kanin [6d\]\: well, dfgddfgf, sometimes a 20-something player at pro level who studied the game mostly by themselves is equally impressive as a 12 yo pro who is a product of a tough training regime with teachers since the age of 3
+]
+;W[mh]C[Kanin [6d\]\: back to the game, black's shape does seem a little roken at first sight
+Kanin [6d\]\: broken*
+]
+;B[ki]C[pressure [2d\]\: what was the best non-asian player in the history? or the biggest ,,success" of non-asian go?
+dfgddfgf\: redmond?
+Kanin [6d\]\: I guess that would be redmond
+]
+;W[jj]C[WackOu [2d\]\: There was one American 9p
+Kanin [6d\]\: is*
+WackOu [2d\]\: Redmond
+pressure [2d\]\: really 9p? 
+Kanin [6d\]\: yep
+WackOu [2d\]\: Redmond's still alive? Oh, ok
+zife [4d?\]\: redmond's like... 50?
+pressure [2d\]\: wow nice
+Kanin [6d\]\: hehe, he is like nont even 50
+]
+;B[ji]C[zife [4d?\]\: Michael Redmond (born May 25, 1963)
+gobugobu [7d\]\: Redmond is 49 I think
+zife [4d?\]\: ha!
+Kanin [6d\]\: he is alive and well, always preciding as a judge over the amateur par go champs in tkoyo
+gobugobu [7d\]\: ok, so 50
+gobugobu [7d\]\: I met him for the first time when he was 18
+phi [3d\]\: white need o14 soon?
+]
+;W[kl]C[phi [3d\]\: ah no he kills here\:) nice\:)
+Korf [1k\]\: isn't m13 better than o14?
+phi [3d\]\: maybe Korf\:)
+pressure [2d\]\: i just read that he reached semifinals of gosei - isnt it only for japanese players tourmantent?
+phi [3d\]\: ask gobugobu
+BAM0 [3d\]\: he is jap pro
+gobugobu [7d\]\: Redmond is a member of the Nihon Kiin, so he qualifies as a Japanese player, regardless of nationality
+WackOu [2d\]\: I wonder who is the strongest player Europe has produced
+pressure [2d\]\: ty gobugobu
+gobugobu [7d\]\: Maybe, Dinerchtein is the strongest in general
+gobugobu [7d\]\: Although he is not a European products
+gobugobu [7d\]\: product
+gobugobu [7d\]\: He is a Korean product
+zife [4d?\]\: so, ilya I guess?
+gobugobu [7d\]\: Ilya is also a Korean product
+WackOu [2d\]\: Dinerchtein? I thought he took part in Go Congress tournament not long ago, and came second or something
+pressure [2d\]\: who won team championship?
+gobugobu [7d\]\: Ilya is probably stronger now, yes
+WackOu [2d\]\: Also, there are some dead European pro players, like that german 5p
+royu [5d\]\: b m7 or l7 here?
+gobugobu [7d\]\: 4p, who became 7p post-mortem
+gobugobu [7d\]\: Hans Pietsch
+phi [3d\]\: noidea what black now...resign might be the best choice
+urtok [8k\]\: polacy \:)
+]
+;B[km]C[urtok [8k\]\: chodźcie komentować do polskiego pokoju \:)
+BAM0 [3d\]\: Dinerchtein is 7 times Euro champ
+urtok [8k\]\: przynajmniej komentarze po polsku będą \:)
+Korf [1k\]\: Czech team won the team championship \:)
+gobugobu [7d\]\: k7 m7 k6 q6 
+gobugobu [7d\]\: W should just play k7 maybe he is afraid of l6 k6 m5 
+]
+;W[lm]C[gobugobu [7d\]\: but k7 l6 k5 k6 j8 
+Mapma\: black resign
+gobugobu [7d\]\: m8 k8 m6 n7 q6 
+gobugobu [7d\]\: B looks fine
+]
+;B[ll];W[jl];B[ln]C[gobugobu [7d\]\: if n7 q6 
+];W[mm];B[mn]C[Maek [3d\]\: n6?
+]
+;W[nm];B[om];W[nn];B[pn]C[gobugobu [7d\]\: n6 was wrong
+lama\: did they have to play this out? 
+gobugobu [7d\]\: just q6 n6 p7 was better
+lama\: often a signal that one can do something should be enough for the other one to pick another route...
+WVoron [5d\]\: really?
+lama\: or this is how i see the pro games
+gobugobu [7d\]\: n6 o6 exchange is a loss for B
+keepcalm [6k\]\: R14 group dead?
+gobugobu [7d\]\: yes, really
+WVoron [5d\]\: dont sure
+Gorim [1d\]\: keepcalm, just wnite o14
+XRF [1d\]\: P14
+XRF [1d\]\: O14
+keepcalm [6k\]\: oh
+]
+;W[ii]C[WVoron [5d\]\: l13
+];B[ih]C[pressure [2d\]\: white clear lead?
+];W[kg]C[lama\: the speed of white moves tells he planned all this before...
+WVoron [5d\]\: this was good point
+royu [5d\]\: or under time pressure now
+westdock\: W very strong
+pressure [2d\]\: no time pressure
+lama\: is he under a time pressure? 
+pressure [2d\]\: he has more than a hour
+XRF [1d\]\: L6
+lama\: L6 does not do anything
+XRF [1d\]\: M12 then
+grrrr [2d\]\: are you blind? L6 occupies L6!
+westdock\: it also connects black stones!
+XRF [1d\]\: thanks, grrrr
+westdock\: a double-purpose move!
+EGC2013a [?\]\: Time left - W 1h22m, B 1h16m
+WVoron [5d\]\: k4 big
+XRF [1d\]\: and westdock
+pressure [2d\]\: l6 makes bent four in the corner
+XRF [1d\]\: O12?
+lama\: @XRF\: random moves generator?
+]
+;B[ij];W[jm]C[Marek [5d\]\: Mateusz ! Mateusz ! Mateusz ! 
+];B[hi]C[pressure [2d\]\: n13 ?
+XRF [1d\]\: O14 now
+Marek [5d\]\: still s18...
+]
+;W[lp]C[XRF [1d\]\: actually M12 is better than O14
+urtok [8k\]\: M12
+ZyBeX86 [10k?\]\: what if black n13?
+WVoron [5d\]\: n13 m12
+ZyBeX86 [10k?\]\: i see now
+XRF [1d\]\: white wins
+ZyBeX86 [10k?\]\: game seems chaotic but nice \:D
+pressure [2d\]\: m4 huge but what is the status of q12 group?
+ZyBeX86 [10k?\]\: q12 is alive i think - or maybe we don't see something
+pressure [2d\]\: ok thank you
+AlGebr [2d\]\: q12 is connected
+ZyBeX86 [10k?\]\: I need to make my rank solid again \:D
+ZyBeX86 [10k?\]\: it seems strange that a 10k? helps a 2d \:P
+okion [3k\]\: w res?
+ZyBeX86 [10k?\]\: why?
+WVoron [5d\]\: sure q12 alive
+ZyBeX86 [10k?\]\: q12 alive but what will happen in lower left?
+WVoron [5d\]\: with 3 stones o15
+ZyBeX86 [10k?\]\: and lower right seems open for conflict
+royu [5d\]\: too hard for b now
+okion [3k\]\: m3 why n`t?
+]
+;B[mg];W[lh]C[pressure [2d\]\: m3 l3 k4 k3 
+];B[kq]C[gisel [3d\]\: nick egc(guo juan) is making commentary on this game
+]
+;W[lq];B[lr];W[mr];B[kr];W[nr]C[szabla\: and what she's opinion?
+];B[hq];W[gr];B[hr]
+;W[gq]C[jakotaki [1d\]\: w+res
+];B[hp]C[gfdhff [2k\]\: VTKA BOLS
+];W[cg];B[co];W[cm]
+;B[bp];W[cq];B[bq];W[br];B[cn];W[dm];B[bm];W[bl];B[ao];W[am];B[bn];W[aq];B[en]C[gobugobu [7d\]\: B is just falling apart
+]
+;W[fo]C[gobugobu [7d\]\: well, egc's comments are not all that interesting
+];B[em]
+C[gobugobu [7d\]\: w k4 k3 j4 kills later
+];W[dk]C[chrpa [1d\]\: go Mateusz
+];B[eo]
+C[royu [5d\]\: g6
+WVoron [5d\]\: g5?
+];W[go]C[phi [3d\]\: black so many gropus...
+WVoron [5d\]\: oops
+WVoron [5d\]\: now what groope live?
+pressure [2d\]\: \:)
+gobugobu [7d\]\: I doubt that e7 d9 was a good exchange
+pressure [2d\]\: white really strong
+WVoron [5d\]\: black also not weak
+pressure [2d\]\: sure
+pressure [2d\]\: it just shows how white strong is
+gobugobu [7d\]\: B can play p2 p3 q2 to threaten to link up at o1 before actually defending at k5 k6 j5 
+pressure [2d\]\: nice
+pressure [2d\]\: force before defending
+phi [3d\]\: who is better here gobugobu?
+phi [3d\]\: black or white?
+royu [5d\]\: w impressive this game
+ZyBeX86 [10k?\]\: Mateusz is great \:D
+ZyBeX86 [10k?\]\: GO POLAND \:D
+royu [5d\]\: b can consider resign even
+phi [3d\]\: Fan Hui vs Mateusz Surma will be very cool game
+embe [7k?\]\: EGC, do you know, how much time do they have?
+EGC2013a [?\]\: I will in a minute
+embe [7k?\]\: thank you
+EGC2013a [?\]\: Time left - W 1h4min, B 34min
+embe [7k?\]\: ty
+]
+;B[hm];W[gm];B[gl];W[fm]C[gobugobu [7d\]\: I think W is better
+];B[el]C[gobugobu [7d\]\: k4 looks good now
+gobugobu [7d\]\: but f8 e9 h8 might be good enough
+]
+;W[fl];B[dl];W[cl];B[ek];W[ei]C[gobugobu [7d\]\: e10 ?
+Mapma\: black must to resign
+]
+;B[io]C[gobugobu [7d\]\: j5 is a fighting move
+];W[qp];B[rp];W[jo];B[jp];W[ef]C[phi [3d\]\: gobugobu why e14? can u explain?
+gobugobu [7d\]\: not to you, phi
+]
+;B[fd]C[gobugobu [7d\]\: f9 e10 f10 d6 d11 d4 d3 e4 and B lives - so this is the problem for W
+]
+;W[pq]C[gbt [2k\]\: is B dead on the left, if white plays around f10 ?
+];B[ep]C[gbt [2k\]\: ok now it changed
+]
+;W[dp];B[fi];W[eh]C[szabla\: White keep sente
+];B[ar]C[Kanin [6d\]\: killllll
+Kanin [6d\]\: w should f9
+Kanin [6d\]\: and kill
+Kanin [6d\]\: would be lovely
+Kanin [6d\]\: but maybe a little scary
+szabla\: \:)
+gbt [2k\]\: W need to prevent B living in corner first
+XXpericoXX [3d\]\: f9 c2
+]
+;W[dr];B[bs];W[as]C[szabla\: rezonable
+];B[bj]C[Gorim [1d\]\: resign probe
+gobugobu [7d\]\: B seems to have blundered around d4 
+gobugobu [7d\]\: so before j5, B should have played p2 p3 q2 
+gobugobu [7d\]\: after that e4 was not necessary - B was alive already
+]
+;W[cj];B[ar];W[cr];B[ej];W[bf]C[szabla\: then J18
+qgo [3k\]\:  l 14
+];B[gs]C[gobugobu [7d\]\: g1 looks small now
+vogelfrei [1d\]\: very
+Kanin [6d\]\: but, gobugobu, w would have answere p2 with Q2, no?
+Kanin [6d\]\: never mind me, I'm too tired
+Kanin [6d\]\: *goes off to bed*
+gobugobu [7d\]\: this is before w plays r4 s4 q3 
+]
+;W[rq]C[Marek [5d\]\: very big
+gobugobu [7d\]\: The difference would have been 5-6 points in (half) sente
+Huldioho [7k\]\: g1 is not threatening w life?
+Marek [5d\]\: no
+vogelfrei [1d\]\: no
+Marek [5d\]\: W is ok
+]
+;B[es]C[Huldioho [7k\]\: \:)
+];W[fr]C[boybee\: Czy t16 działa?
+];B[fs];W[hn]C[Marek [5d\]\: tak - tam czarny w każdej chwili może stracic róg.
+gobugobu [7d\]\: j6 h8 j7 g9 and W is connected
+XXpericoXX [3d\]\: in sente
+vogelfrei [1d\]\: b can tenui now
+gobugobu [7d\]\: yes he can, but g9 will become sente
+pressure [2d\]\: lower right corner impressive considering how weak was white here
+vogelfrei [1d\]\: well play g9
+]
+;B[dg]C[vogelfrei [1d\]\: then tenuki
+gobugobu [7d\]\: l14 is big
+ooooo [?\]\: What about s17/s18/t18? Still too small? Or black is alive for tricks around s12?
+]
+;W[df];B[cf];W[bg];B[fg];W[eg];B[sq];W[rr]C[pressure [2d\]\: alive
+];B[kf];W[lf]
+;B[kh];W[ng];B[jg];W[nf];B[ff];W[rb]C[pressure [2d\]\: now tricks are gone?
+Marek [5d\]\: W+
+pressure [2d\]\: \:)
+lama\: here we go
+Nirvanc [6k\]\: obvious =)
+Marek [5d\]\: Was realy fast
+szabla\: \:)
+EGC2013a [?\]\: W+R
+Nirvanc [6k\]\: ty =)$
+Backflash [6k?\]\: oh wow
+Marek [5d\]\: Great !
+chrpa [1d\]\: congrats to Mateusy
+stoup [2k\]\: c'est Fan hui ou thomas qui a gagné la partie ?
+phi [3d\]\: what a kill!
+fitzefatze [1k?\]\: thanks EGC
+vogelfrei [1d\]\: all great ideas are obvious. not all obvious ideas are great \:/
+chrpa [1d\]\: tx
+phi [3d\]\: brawo Mateusz!!!
+Nirvanc [6k\]\: c'est fan
+Dimitri [12k\]\: fan
+Nirvanc [6k\]\: par abandon
+twelvetoes [4k?\]\: .
+twelvetoes [4k?\]\: will someone let me know if i get disconnected fromt he internet
+Liso66 [?\]\: egc do you know result of 4. board? 
+gobugobu [7d\]\: You have disconnected your brain 
+gobugobu [7d\]\: of course after o14, B should play s12 to keep two eyes
+gobugobu [7d\]\: although that would stil leave a ko
+phi [3d\]\: gobugobu you are so rude person
+vogelfrei [1d\]\: nah the troll attempt was rude and got wiped out
+gobugobu [7d\]\: what is your problem now again, phi. I already pointed out that you can deal with your personality problem by reading books by Eckhart Tolle.
+vogelfrei [1d\]\: Tolle is dolle \:P
+gobugobu [7d\]\: sehr schoen, vogel
+vogelfrei [1d\]\: war ne gute fähre vor 10 jahren
+gobugobu [7d\]\: So B will resign now
+vogelfrei [1d\]\: i failed to understand the exchanges in this corner
+gobugobu [7d\]\: verstehe ich nicht
+Ootakamoku [2d\]\: these guys do too much fancy reading
+vogelfrei [1d\]\: naja da war ein fluss, ich kam nicht rüber, tolle war fährman, hey danke, und ciao ;D
+gobugobu [7d\]\: war ne gute fähre vor 10 jahren - was meinst das?
+gobugobu [7d\]\: Ich habe es nicht gewusst
+vogelfrei [1d\]\: wird zu OT.. hast ddu nicht lusst zu clonen und  die ecke oben kommentieren, was im lauf des spiels da passiert ist ^^ \:P
+gobugobu [7d\]\: Ich bin in der Deutsche Jugendliga
+gobugobu [7d\]\: wo bist du?
+vogelfrei [1d\]\: hier
+gobugobu [7d\]\: Vogelfrei, warum bist du nicht da?
+vogelfrei [1d\]\: axo
+vogelfrei [1d\]\: weil ich abgelenkt war \:(
+gobugobu [7d\]\: Du hattest mir etwas gefragt oder?
+vogelfrei [1d\]\: ja sry moderne telekomunikation und so
+Florian [1d\]\: b i counting ko threads?
+boybee\: there is no ko
+])

@@ -1,0 +1,118 @@
+(;CA[utf-8]FF[4]ST[2]RU[AGA]OT[3x60 byo-yomi]AP[CGoban:3]SZ[19]GM[1]GN[European Championship 2015 (top 24) - r3, Dusan Mitic (b) vs. Mateusz Surma (w)]
+RO[3]DT[2015-07-28]PC[The KGS Go Server at http\://www.gokgs.com/]PB[Dusan Mitic]
+BR[6d]PW[Mateusz Surma]WR[1p]KM[7.5]TM[9000]RE[W+R]MULTIGOGM[1]
+;B[qd];W[dc];B[pq]C[maciek [2d\]\: hi \:)
+];W[od];B[cp];W[eq];B[de]C[maciek [2d\]\: r5
+]
+;W[qo]C[maciek [2d\]\: that was a definition of "the only one move"
+maciek [2d\]\: black should play k10
+maciek [2d\]\: if black play pincer and white pincer and black another pincer - white cant play fourth pincer - this is my fuseki analize here
+kmr [1d\]\: white stones on the lower part of board is fav pattern of Dosaku, black can surrender just now ;)
+maciek [2d\]\: no ides why but i feel G4 is best move
+iphone4 [3d\]\: dusan will play shusaku
+maciek [2d\]\: because left side is most promising for black
+maciek [2d\]\: or d5 \:)
+maciek [2d\]\: but this is a kind of opening Mateusz loves
+]
+;B[op];W[jq]C[kmr [1d\]\: black could play Q5 instead D15, then white would probably extend around K3, and then black kakari on top, i think it would be a bit better for black
+]
+;B[gp]C[maciek [2d\]\: oh i predicted G4! good day
+kmr [1d\]\: ^^
+kmr [1d\]\: i predict white win \:)
+iphone4 [3d\]\: I predicted shusaku move P4 \:)
+]
+;W[eo]C[starstruck [3d\]\: Is that DSAUN!?!?!!
+maciek [2d\]\: black must d6
+gogonuts [4d\]\: agree
+slim76 [1k\]\: 10 groups after 12 moves... I wouldn't like to play like this
+gogonuts [4d\]\: its all ok
+gogonuts [4d\]\: still fair
+]
+;B[dn];W[cg];B[cc];W[gc];B[fd];W[cb];B[gd]C[maciek [2d\]\: wrong order by black?
+]
+;W[ce];B[hc];W[dd];B[df];W[cf];B[eb];W[qc]C[PonnukiGo [2d\]\: D6 not good now
+]
+;B[qk];W[rd];B[qe];W[re];B[pc];W[qb];B[qp];W[mq];B[dq];W[er];B[db];W[cd]C[maciek [2d\]\: black must tetris at q16
+]
+;B[jp];W[iq];B[kq];W[ip];B[kp];W[mo];B[io]C[liusasori [4d\]\: q16 is horrible shape however those cutting stones seem important (reverse the leading on the top for the one who play q16)
+NightShift [6d\]\: b can just play r14
+NightShift [6d\]\: nicer shape and can have n17 kikashi after
+NightShift [6d\]\: q16 would be super aggressive, but i guess possible
+liusasori [4d\]\: so w move should be r14 here?
+NightShift [6d\]\: i think so
+NightShift [6d\]\: q16 seems very gote
+liusasori [4d\]\: but very thick as well
+NightShift [6d\]\: i wonder if p17 could be a move
+NightShift [6d\]\: for w
+liusasori [4d\]\: r14 seems better because the b cannot build on the right
+]
+;W[ho]C[NightShift [6d\]\: i guess the board will look quite different before they get up there anyway \:p
+NightShift [6d\]\: checked a pro game db, w almost always chooses r14 locally, b varies between r14 and q16
+liusasori [4d\]\: counting the fact w r14 would reduce the scale of the b attack on n5 it seems the move here imo
+maciek [2d\]\: thx guys, complete analizys of tetris idea \:D
+liusasori [4d\]\: you are welcome x)
+maciek [2d\]\: how black answer if W r14
+NightShift [6d\]\: i guess there could be a lot of plans
+NightShift [6d\]\: totally depends on surrounding posn
+maciek [2d\]\: all i can imagine here is n17
+]
+;B[hp];W[kr];B[lr];W[jr];B[lq];W[mr]C[woodpecker [?\]\: I don't like w position
+woodpecker [?\]\: w don't do well with taking territory in the opening, hope he will get more power in the center soon and fight
+]
+;B[ls];W[go];B[fp];W[ep];B[in];W[fo];B[ln];W[oo]C[kmr [1d\]\: i think totally otherwise, white have much more secure territory than black, actually black has only little territory around G18 and some in lower left corner (there is bad aji at C5), and small lower right corner.Black only hope is white weak group in lower right
+]
+;B[np];W[ok];B[no];W[om];B[qm]C[EGC2015d [-\]\: W 1\:52 left, B 1\:35
+bleen [1d\]\: they start with 2,5 right?
+EGC2015d [-\]\: Yes.
+bleen [1d\]\: how is the byoyomi this year?
+bleen [1d\]\: 3x30secs?
+EGC2015d [-\]\: 3x1 min.
+bleen [1d\]\: ah
+bleen [1d\]\: cool
+bleen [1d\]\: i'd love to participate
+bleen [1d\]\: need to work \:/
+maciek [2d\]\: c8 looks excellent
+]
+;W[bn]C[casqwrcc\: close
+maciek [2d\]\: b6 looks better than excellent
+EGC2015d [-\]\: both players are now away from the board
+gogonuts [4d\]\: cannot b7, as c6 works for w
+]
+;B[cn];W[bo];B[co];W[cl];B[dl]C[maciek [2d\]\: after W r14 black can resign \:)
+bleen [1d\]\: resign always so decisive move
+]
+;W[cm];B[dm];W[dk];B[ek];W[dj];B[fl];W[ej];B[fj];W[fi];B[gj];W[gi];B[hj]C[HardScore [2d\]\: r14
+]
+;W[po];B[pi]C[HardScore [2d\]\: q5 was big but wasn't it a bit heavy ?
+pastlink [?\]\: if I had played it everyone would have said "overplay"
+]
+;W[oi];B[oh];W[ni];B[pj];W[nn]C[kmr [1d\]\: up to H10 black got thickness facing G5 group, and white solid terrain, black in big trouble imho
+]
+;B[mn];W[mm];B[lm];W[ml];B[pd]C[maciek [2d\]\: tetris! finally!
+];W[qf];B[oc]C[kmr [1d\]\: black is so much overconcentrated around L6 and J8 that it looks like impossible for him to win, i predict W+R in less than 100 moves ;).GO SURMA!!! \:)
+Intet [2d\]\: i agree point diff is not big but w played better i dont like b result
+]
+;W[ll];B[nh];W[li];B[mh];W[nc];B[pf];W[qg];B[nd];W[mc];B[pb];W[jc];B[rh];W[rg];B[md]
+;W[ld];B[le];W[kd];B[rb];W[rc];B[qa]C[hitaus [2k\]\: S6 seems like a sente
+];W[sf]
+C[woodpecker [?\]\: L18
+woodpecker [?\]\: attack top group
+];B[nb];W[mb];B[mi];W[mj]
+;B[lj];W[kj];B[ro];W[jm];B[jn];W[km];B[kn];W[hb];B[gb];W[ib];B[ma]C[woodpecker [?\]\: @maciek\: do you understand why black played o18? seems like waste of aji
+]
+;W[la];B[na];W[oa];B[ob]C[EGC2015d [-\]\: Mateusz 56 minutes left, Dusan 49minutes left
+]
+;W[hd]C[maciek [2d\]\: black o18?
+maciek [2d\]\: because of atari \:)
+];B[fc];W[he]
+C[maciek [2d\]\: oh its o19
+];B[ff]C[maciek [2d\]\: i dont understand \:)
+];W[ee]
+;B[hf];W[if];B[hg];W[hi];B[ig];W[jf];B[jg];W[oe];B[nf];W[lf];B[ne];W[kg];B[lh]C[casqwrcc\: mulitple deaths i see
+]
+;W[kh]C[EGC2015d [-\]\: W+R
+maciek [2d\]\: hurra \:)
+EGC2015d [-\]\: Thanks for watching, see you!
+daniug [2d\]\: go mateusz
+hgffdx\: thx EGC
+])

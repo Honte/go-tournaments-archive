@@ -3,6 +3,8 @@ notes: 5 rounds of double ladder until quarters + 3 rounds KO
 stages:
   - type: tournament
     file: egc2018.txt
+    name: Championship
+    dir: 2018/ec
     time: 90min + 45sec Fischer
     scoringColumns:
       - wins

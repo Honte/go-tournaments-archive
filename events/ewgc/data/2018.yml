@@ -13,5 +13,7 @@ stages:
       - sos
       - sosos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
+    games:
+      - 5-1 1:W+R round:5 sgf:2018/5-ManjaMarz-NataliaKovaleva.sgf

@@ -20,7 +20,7 @@ const {
   year: yearFilter,
   verbose,
 } = readCliParams({
-  event: { type: 'string', short: 'e', default: process.env.EVENT },
+  event: { type: 'string', short: 'e', positional: true, default: process.env.EVENT },
   year: { type: 'string', short: 'y' },
   dry: { type: 'boolean', default: false, short: 'd' },
   force: { type: 'boolean', default: false, short: 'f' },

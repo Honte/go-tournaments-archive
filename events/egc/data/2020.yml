@@ -3,6 +3,8 @@ notes: Players seeded 17-32 started from 1st round, 9-16 from 2nd round and 1-8 
 stages:
   - type: tournament
     file: egc2020.txt
+    name: Championship
+    dir: 2020/ec
     time: 60min + 30sec Fischer
     notes: Japanese Rules
     komi: 6.5

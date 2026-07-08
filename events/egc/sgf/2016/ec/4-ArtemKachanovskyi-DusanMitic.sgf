@@ -1,0 +1,440 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]OT[3x60 byo-yomi]AP[CGoban:3]SZ[19]GM[1]GN[60th Polymetal European Go Congress, Round 4, Mitic Dusan - Kachanovskyi Artem]
+EV[European Go Championship]RO[4]DT[2016-07-28]PC[Russia, St.Petersburg, Azimut hotel]
+PB[Kachanovskyi Artem]BR[1p]PW[Mitic Dusan]WR[6d]KM[6.5]TM[150]RE[B+R]MULTIGOGM[1]
+;B[qd];W[dc];B[pp]C[GodofGo [6d\]\: who is b and w?
+liusasori [3d\]\: Hello, Who are the players ?
+egc6 [?\]\:  Mitic Dusan - Kachanovskyi Artem
+]
+;W[dp]C[rubicon [-\]\: what are the standings?
+];B[ce];W[oc];B[ld]C[ais [2d\]\: you can see it on the panel upper timer
+]
+;W[of];B[qg]C[rubicon [-\]\: i mean, the positions, who is winning, 2nd, etc?
+ais [2d\]\: Or you can open Options and push on the button Info
+U [-\]\: go artem!
+ais [2d\]\: rubicon I think everyone got you here
+rubicon [-\]\: nvm, i found them\: http\://egc2016.ru/en/congress/results/main
+U [-\]\: everyone except ais apparently
+]
+;W[id];B[mf]C[Standard [5d\]\: when did artypoo get 1p?
+vaurien [1d?\]\: yhis year
+]
+;W[pe];B[qe];W[oh]C[vaurien [1d?\]\: http\://eurogofed.org/index.html?id=42
+Thundergod [6d\]\: artypoo?
+vaurien [1d?\]\: artem i think
+]
+;B[pi]C[KoyoToya [-\]\: I'm assuming Artem is b?
+ito9 [5k\]\: yes
+gogonuts [3d\]\: not easy for w to attack with his crumply shape
+nidza92 [-\]\: this is one of most common shapes ever
+sdfgs\: i don't know how to fix the w shape
+sdfgs\: q16+o15 is so annoying
+]
+;W[oi];B[pj];W[lh]C[sdfgs\: b k14 seems to fail with w l15, and b l14 suffers a bit from k13?
+gogonuts [3d\]\: still, k14 seems to be the desirable point
+]
+;B[jf]C[gogonuts [3d\]\: L15 hard to play for w as counter
+sdfgs\: i thought l15 k15 l16 etc are too good for w
+KoyoToya [-\]\: No if w l15 b play lightly
+gogonuts [3d\]\: cutting past J16 would be satisfactory for b
+sdfgs\: can you show how? i don't see it @koy
+]
+;W[jc]C[sdfgs\: playing lightly does not seem to make sense considering b is attacking the w right group
+KoyoToya [-\]\: By lightly i mean
+KoyoToya [-\]\: He can leave those two stones
+KoyoToya [-\]\: While cutting through to separate j16
+urtok [8k\]\: egc, will be broadcast USTREAM?
+gogonuts [3d\]\: k17 looks like a good answer
+egc6 [?\]\: urtok, we are working on it
+urtok [8k\]\: transmision -> http\://www.ustream.tv/channel/eurogotv-russias-show 
+urtok [8k\]\: egc6, OK
+]
+;B[ie]C[wade [5d\]\: where can i see the pairings?
+zima [1k\]\: http\://gofederation.ru/tournaments/40835574
+]
+;W[he]C[wade [5d\]\: thanks
+];B[hd];W[ge];B[kc];W[jd]C[gogonuts [3d\]\: was L17 without atari first too fancy?
+gogonuts [3d\]\: k16 is poison for bs shape
+go95211 [6k\]\: y not k15?
+go95211 [6k\]\: instead k16?
+apina [1d\]\: beautiful shape
+t2t [1k\]\: i like these shapes too
+go95211 [6k\]\: aha
+]
+;B[hc];W[ke];B[kf]C[go95211 [6k\]\: what about now?
+];W[le];B[me];W[lf];B[lg];W[mg]
+;B[kg]C[Epithany [6k\]\: N16?
+];W[md]C[Epithany [6k\]\: Black split into 4 groups ... not a trivial reading exercise
+t2t [1k\]\: depends on what you call a group
+t2t [1k\]\: and what is considered to be dead already
+Epithany [6k\]\: A group is 2 or more stones in close proximity I would suggest
+]
+;B[mc];W[nd]C[Satori1000 [4k\]\: k18?
+];B[mh]C[Epithany [6k\]\: None ofthe Black groups were dead already
+Weishenme [4d\]\: L16 also an option
+Weishenme [4d\]\: or K15 , even better
+]
+;W[kb];B[ng]C[Epithany [6k\]\: L18 bad choice i feel
+redreoicy [4d\]\: w probably play q12 for sente
+redreoicy [4d\]\: then can reinforce top left
+lastlo\: b must ignore q12 
+Bojanic\: if w plays in upper left after q12, then b can play O10
+redreoicy [4d\]\: b will not ignore q12
+Bojanic\: I would risk fight and play w q12 - p10 - n10
+Epithany [6k\]\: I think that B can ignore Q12 in order to play upper left
+KurataSan [2d\]\: q12 feels not so good for w
+KurataSan [2d\]\: yet he doesn't have too much of a choice
+]
+;W[fd]C[KurataSan [2d\]\: ah maybe he has
+];B[og]C[redreoicy [4d\]\: this way w doesn't make bad exchange
+KurataSan [2d\]\: l18 was really good tho
+apina [1d\]\: maybe he didn't believe, it's sente
+Epithany [6k\]\: Big Black wall
+]
+;W[nq]C[KurataSan [2d\]\: it was a sente
+];B[pq]C[KurataSan [2d\]\: but a heavy one
+apina [1d\]\: it looks like it, but if it was, why not play it?
+KurataSan [2d\]\: cause it's heavy
+redreoicy [4d\]\: because exchanging q12 for r12, and then white lost a lot of the aji there
+KurataSan [2d\]\: idk how to explain lol
+redreoicy [4d\]\: why save the stones if you don't have any aji left
+KurataSan [2d\]\: ye kind of
+]
+;W[no];B[on]C[redreoicy [4d\]\: play f16 black had to add a move capturing
+];W[nn]
+C[Epithany [6k\]\: still aji around Q13
+];B[om];W[jp]C[Epithany [6k\]\: B has K18 also?
+]
+;B[nb];W[ob];B[jb]C[gosei [2d\]\: this was obvious!
+U [-\]\: this is gonna be a game of a lot of counting and invading by whoever is behind
+sdfgs\: l16 m17 j18 k19 j19 j17 l19 k18 k19 k15 k18 works for w tho
+Epithany [6k\]\: thx
+redreoicy [4d\]\: black will play m18
+redreoicy [4d\]\: and connect under
+gosei [2d\]\: h17 can live later....
+redreoicy [4d\]\: l16 m18 m17 l19
+sdfgs\: my variation should include the o17 p16 exchange, but b still dies
+KurataSan [2d\]\: o18 was a disaster for w
+KurataSan [2d\]\: completely
+redreoicy [4d\]\: white is fine
+redreoicy [4d\]\: l16 and black doesn't have much
+KurataSan [2d\]\: l16 doesn't work for w
+KurataSan [2d\]\: what do you mean 
+redreoicy [4d\]\: l16 and what can black do
+KurataSan [2d\]\: l16 m17 
+KurataSan [2d\]\: what do you do as w?
+redreoicy [4d\]\: then j18
+KurataSan [2d\]\: j18 k19 
+redreoicy [4d\]\: j19
+gosei [2d\]\: its bad for white in any case...
+KurataSan [2d\]\: j17 
+redreoicy [4d\]\: you can play it out, but h18 and m18 are miai no matter what
+KurataSan [2d\]\: after j17 what do you do as w?
+redreoicy [4d\]\: take the 2 stones
+redreoicy [4d\]\: just skip to where i fill k18 and then black's move is?
+U [-\]\: i think after the tombastone squeeve o17 makes it 2 libs to 2 for w
+U [-\]\: 2 libs to 3 i mean
+KurataSan [2d\]\: k18
+redreoicy [4d\]\: k19
+KurataSan [2d\]\: b move is h18
+KurataSan [2d\]\: which is working
+sdfgs\: can you guys post a sequence?
+U [-\]\: kurata might want to play it out on your own
+]
+;W[lb];B[lc]C[KurataSan [2d\]\: see? w read it as well
+gosei [2d\]\: yes
+gosei [2d\]\: p18 is just careless
+KurataSan [2d\]\: yep
+U [-\]\: now i dont know what youre talking abnout
+KurataSan [2d\]\: probably losing move
+KurataSan [2d\]\: this game is pretty much over \:/
+sdfgs\: what's the sequence kur was talking about?
+redreoicy [4d\]\: hmm misread
+ptibouton [4d\]\: euh, why not b k15 ?
+redreoicy [4d\]\: white could make a bad ko
+KurataSan [2d\]\: \:p
+KurataSan [2d\]\: right
+ptibouton [4d\]\: k15 now
+KurataSan [2d\]\: terrible ko
+gosei [2d\]\: black is greedy
+]
+;W[je]C[ptibouton [4d\]\: b missed it
+Epithany [6k\]\: White seems to play moves that allow Black posibilities
+KurataSan [2d\]\: wait why didn't b just k15
+gosei [2d\]\: hemust have aplan
+dalejlama [2d\]\: nah its ok
+dalejlama [2d\]\: j18 now
+dalejlama [2d\]\: hmm or maybe its not\:PP
+KurataSan [2d\]\: black could have gotten sente
+KoyoToya [-\]\: Still will
+]
+;B[nc]C[gosei [2d\]\: i dont understand black if he cant kill everything
+sdfgs\: so what is the reason w did not play l16?
+KurataSan [2d\]\: it was killing him
+sdfgs\: how?
+KurataSan [2d\]\: do you want the full sequence?
+sdfgs\: yes
+redreoicy [4d\]\: tombstone squeeze worked for black
+redreoicy [4d\]\: be sure not to exchange o17
+redreoicy [4d\]\: exchange o17 would make it fail
+KurataSan [2d\]\: i think it's dead now
+KurataSan [2d\]\: idk why b played what he did
+SIscurge [4d\]\: this looks finished ? \:/
+KurataSan [2d\]\: maybe he reads something else (probably)
+redreoicy [4d\]\: o17 is live
+gosei [2d\]\: i really hope there is something for black ...
+KurataSan [2d\]\: oh oops
+KurataSan [2d\]\: yes
+KurataSan [2d\]\: my bad
+KurataSan [2d\]\: anyways it's over
+redreoicy [4d\]\: you should hope white has something
+U [-\]\: when i made my prediction erlier i didnt count on everything dyng
+gosei [2d\]\: just because white played to fast once
+KurataSan [2d\]\: i think it might be the shortest game in the history of egc
+gosei [2d\]\: also happened to ilya
+U [-\]\: i set out my board to replay this game on it, it cant end now
+gosei [2d\]\: \:)
+KurataSan [2d\]\: lol
+liusasori [3d\]\: p16 j18 j14 m19 w all dead on top
+liusasori [3d\]\: so w has to j18 b p16 
+liusasori [3d\]\: then j14
+redreoicy [4d\]\: that's not really an option though
+redreoicy [4d\]\: p16 captures o16 is a squeeze
+liusasori [3d\]\: but w is gote and b has much more influence$
+blackhawk [1d\]\: j18 p16 c13?
+]
+;W[ib];B[od]C[redreoicy [4d\]\: i guess it's the only way to keep playing
+ptibouton [4d\]\: c16 
+]
+;W[ci]C[redreoicy [4d\]\: b j14 is sente then i think
+gosei [2d\]\: right side at least 80
+]
+;B[cc];W[cb]C[SIscurge [4d\]\: actually this may be playable
+gosei [2d\]\: black win 100 %
+gosei [2d\]\: but maybe fight will appear?
+sdfgs\: s17 lives?
+blackhawk [1d\]\: no
+sdfgs\: how you kill?
+]
+;B[bb]C[Gelya [1k\]\: s17 r17 r18 s19
+];W[bc];B[cd];W[ba];B[ab];W[eb]C[gosei [2d\]\: hmmmmm
+sdfgs\: s19 is a typo or not?
+gosei [2d\]\: good for white
+gosei [2d\]\: locally
+Gelya [1k\]\: b is ok for sure
+Gelya [1k\]\: right side is huge
+sdfgs\: s17 r17 r18 s19 p19 o19 s18 seems alive
+Gelya [1k\]\: yeah
+gosei [2d\]\: white hopes are rising
+Gelya [1k\]\: but what if black simply cut
+sdfgs\: s17 r17 r18 s18 p19 o19 t18 seems alive, too
+Gelya [1k\]\: yup
+Gelya [1k\]\: seems alive
+sdfgs\: so at least w can connect 2 stones i think
+]
+;B[bh]C[gosei [2d\]\: s17 doesnt work
+gosei [2d\]\: I think
+gosei [2d\]\: s17 o19
+sdfgs\: then r18 looks like a vital point
+KurataSan [2d\]\: no
+KurataSan [2d\]\: it's long dead
+gosei [2d\]\: just kosumi yeah
+gosei [2d\]\: live broadcoast on youtube starts!
+sdfgs\: kur, im sorry for being so stupid, but i need a sequence to understand you
+gosei [2d\]\: they will comment this game\:)
+gosei [2d\]\: wonder how kim reacts
+sdfgs\: gosei, i guess s17 o19 r18 s19 is dead
+goliad [5k\]\: aij  with W q12 later..
+gosei [2d\]\: yes this works for blac
+sdfgs\: after that i get a shape reducible to bent 4
+gosei [2d\]\: exzactly
+sdfgs\: well, im glad we worked that out, even tho kur was not cooperating
+gosei [2d\]\: \:)
+gosei [2d\]\: hard to find such a move in a game
+gosei [2d\]\: but artem should do it
+sdfgs\: doubtless
+Proucht [2d\]\: he already found it
+gosei [2d\]\: sure
+]
+;W[bi];B[bf]C[kruemel [3d\]\: for all people at home\: we have a youtube chanel where this game is currently explained and discussed by  Kim YoungSam (previous korean amateur champion) and Manja Marz (a 3d asking questions for the game)
+Bojanic\: could you post YT link?
+]
+;W[pd];B[ne]C[bert [?\]\: i second that
+ptibouton [4d\]\: d6 is huge for w
+dixxa\: https\://www.youtube.com/watch?v=0fnvs8PDDfk
+]
+;W[qc];B[rc];W[rb];B[rd];W[sb];B[qb];W[pb];B[pc]C[Proucht [2d\]\: ty
+ptibouton [4d\]\: c12 
+Uberdude [3d\]\: why is youngsam commenting this game and not playing this round?
+]
+;W[oo];B[po];W[qc]C[svasdvas\: https\://www.youtube.com/watch?v=0fnvs8PDDfk
+];B[cq]
+;W[dq];B[cp];W[cn];B[bn];W[qa];B[cm];W[dn];B[bl]C[gosei [2d\]\: good question
+Proucht [2d\]\: according to http\://gofederation.ru/tournaments/40835574
+Proucht [2d\]\: kim youngsam is paired with someone
+Proucht [2d\]\: maybe he finished his game, or he will play a bit later
+]
+;W[ml]C[Proucht [2d\]\: (paired with remi campagnie)
+];B[hq];W[ph]C[U [-\]\: humm
+]
+;B[qh];W[jq];B[fq]C[urtok [8k\]\: egc6, cristian pop win or lost ?
+];W[cr];B[br]
+;W[dm];B[dl];W[el];B[dr];W[er];B[cs];W[eq];B[fr];W[es];B[gn];W[dk];B[cl];W[fm];B[eo]
+;W[do];B[io]C[DJhGO [-\]\: christian has a bye
+];W[hr]C[DJhGO [-\]\: he is in the quarterfinals already
+apina [1d\]\: but he still plays in main tournament
+urtok [8k\]\: yes, main tournament me interesting
+]
+;B[fp]C[sykta [3k\]\: b living is enough ?
+U [-\]\: id imagine so
+Meruem92 [3d\]\: look at that right side
+Meruem92 [3d\]\: i'd say yes
+]
+;W[im];B[ir];W[hp];B[gr]C[KoyoToya [-\]\: Ko I'm thinking
+];W[ho];B[jr];W[ok];B[pk]
+;W[ol];B[pl];W[li];B[pg];W[kr];B[gp];W[or]C[ptibouton [4d\]\: w should try j12 
+]
+;B[pr]C[Amr [7k\]\: where is w from?
+Bojanic\: Serbia
+Amr [7k\]\: j12?
+];W[cg];B[bg]
+;W[jh]C[Gelya [1d\]\: W leads
+];B[gm]C[U [-\]\: really?
+KurataSan [2d\]\: no
+namtg [2k\]\: g8 h7 h8 j6 
+namtg [2k\]\: j5 helps b a lot
+Gelya [1d\]\: SE says W leads))
+U [-\]\: SE also killed 2 of blacks groups. all hail se
+]
+;W[ip];B[gl]C[KoyoToya [-\]\: Se is God, with the power give and take life at a whim
+]
+;W[fk]C[U [-\]\: ohh. one of those moves i wouldnt play in a game
+];B[en];W[em]
+;B[bd]C[zima [1k\]\: b is ahead
+ptibouton [4d\]\: j9 
+zima [1k\]\: b has about 65, w about 50 + something in center
+]
+;W[oj];B[lr]C[skwisgaar [3d\]\: no way b loses this
+lastlo\: not realy
+];W[ks];B[mr]
+C[sykta [3k\]\: where do you count 50 for w ?
+WVoron [4d\]\: n2 really work?
+gosei [2d\]\: its trade
+RomaBatman [3d\]\: o2 
+RomaBatman [3d\]\: n4 
+WVoron [4d\]\: n4 nithing
+WVoron [4d\]\: o*
+skwisgaar [3d\]\: cut and o2 miai
+sykta [3k\]\: o2 l3 miai ?
+gosei [2d\]\: this is the intention
+WVoron [4d\]\: o2 l3 dont work
+zima [1k\]\: it was 41 points + 2 + komi, but after this invade I dont sure
+sykta [3k\]\: l3 m4 l4 then ?
+sdfgs\: o2 n4 m4 p1 b connect?
+sykta [3k\]\: what for w now ?
+WVoron [4d\]\: o2 only
+WVoron [4d\]\: to have chance in game
+]
+;W[nr];B[mp];W[lp];B[mi];W[mj];B[lj]C[Gelya [1d\]\: n3 o4 what next for b?
+Meruem92 [3d\]\: b is keeping it as aji
+Meruem92 [3d\]\: to cut around o7 or doing something around l7 i guess
+Meruem92 [3d\]\: l5 peep is definitely sente now
+]
+;W[kj];B[lk];W[kk]C[Zonked [3d\]\: l5 peep ignored, continuation is 10 points in gote
+Zonked [3d\]\: so double gote for 10 points, probably not sente
+]
+;B[nm];W[mm];B[mk]C[sykta [3k\]\: maybe m2 is related to m10
+ptibouton [4d\]\: mmm, i don't like what's b doing
+Zonked [3d\]\: is there a ladder here?
+ptibouton [4d\]\: seem's it gives w a chance
+Zonked [3d\]\: cant w just o10?
+Meruem92 [3d\]\: there's a something, or a nothing here
+ptibouton [4d\]\: i would play o10 also
+]
+;W[nj]C[Zonked [3d\]\: he o5 stones die?
+Meruem92 [3d\]\: k8 is as far as black can go now...
+sykta [3k\]\: b has a tesuji
+]
+;B[np];W[mq];B[op]C[Zonked [3d\]\: m5
+Zonked [3d\]\: I thought b would n6 ratehr than p4, maybe it didnt work tho
+]
+;W[lo]C[lastlo\: n6 
+gosei [2d\]\: collapse
+];B[eg]C[ptibouton [4d\]\: w finally can hope for something at the end
+]
+;W[dg]C[gosei [2d\]\: n6doesnt work,or too small maybe?
+ptibouton [4d\]\: funny
+lastlo\: n6 work
+U [-\]\: i think so but w probably jsut gives up 3 stones
+LBreeze\: o8 to take n7 or o6 
+]
+;B[ei]C[U [-\]\: been a tough game for w all game. even since that p18..
+Zonked [3d\]\: n6 doesnt work anymore
+]
+;W[di];B[ej];W[ek]C[Zonked [3d\]\: nvm, it does
+gosei [2d\]\: \:)
+];B[gi]C[SIscurge [4d\]\: somehow it feels like dusan got much stronger during the last year
+]
+;W[hh]C[Zonked [3d\]\: could be just that he became luckier
+Zonked [3d\]\: b might get cought overplaying here
+skwisgaar [3d\]\: k8 look gud
+]
+;B[ee];W[ef];B[ff];W[df]C[Uberdude [3d\]\: dusan's rating has gone up from under 2600 to 2650 in lsat year
+Hellhuman [2d?\]\: Who is w?
+]
+;B[if]C[gdfttr\: dusan mitic
+];W[gg]C[DJhGO [-\]\: i am just shodan but why is o8 not played?
+Zonked [3d\]\: because its a ladder
+Zonked [3d\]\: the o6 stones can be killed tho
+Zonked [3d\]\: but you ca just n6 directly for that
+Meruem92 [3d\]\: maybe b's trying to find a way to make miai of the ladder in m8 and connecting g11 to g7
+DJhGO [-\]\: but white can just catch the m10 stones
+Meruem92 [3d\]\: still, this position is confusing...b could've ended the game far more simply
+]
+;B[ed]C[Zonked [3d\]\: dying in the center is usually not the easiest way to win
+gosei [2d\]\: if he dous he loses,the game is quite close
+Meruem92 [3d\]\: artem has a different definition of the word "simple"
+Zonked [3d\]\: artem style has changed over the past two years
+Zonked [3d\]\: he used to play the most boring games ever, now his games are quite alot more interesting
+egc6 [?\]\: Time\: Mitic Dusan 4 min- Kachanovskyi Artem 59 min
+egc6 [?\]\: after biomi 3*1 min
+bert [?\]\: f15, i presume
+Meruem92 [3d\]\: you presume correctly, i presume
+]
+;W[fc]C[bert [?\]\: hmmh, how presumptous can one get
+];B[fe];W[fg]C[tuquedenne [3d\]\: \:)
+tuquedenne [3d\]\: it's pretty close, isn't it?
+]
+;B[gk]C[Zonked [3d\]\: brave men wedge
+];W[gj];B[hj]C[Zonked [3d\]\: wedge + cut looks like super bad aji for w
+]
+;W[fj];B[ik]C[Zonked [3d\]\: but might work \:)
+];W[hi];B[ii]C[Zonked [3d\]\: oh, b didnt dear connect ferom other side
+]
+;W[ll]C[Zonked [3d\]\: j11 was naive
+];B[jl];W[jm]C[skwisgaar [3d\]\: b losed some pointses
+tuquedenne [3d\]\: I'd say he'll still win by a few points
+]
+;B[hg];W[gf];B[ih];W[gh]C[bert [?\]\: p1 looks big
+skwisgaar [3d\]\: p1 is not senter
+bert [?\]\: how so?
+bert [?\]\: p1 tenuki m3
+]
+;B[kh]C[aBot [-\]\: bert.. go check again
+];W[ki];B[ji];W[pf];B[qf];W[ps];B[qs]
+C[bert [?\]\: but ok, i missread. p1, o1 q1 and then can tenuki
+];W[ns]
+(;B[bo])
+(;B[os];W[bo];B[co];W[ps];B[kl];W[km];B[os];W[an];B[bm];W[ps];B[jj];W[nk];B[os]
+;W[ds];B[cr];W[ps]C[Zonked [3d\]\: I think w has too many threats
+Zonked [3d\]\: b will have to back down
+]
+;B[ja];W[ic];B[os];W[bk];B[ck];W[cj];B[bp];W[ps];B[mb];W[ia];B[os];W[al];B[ao];W[ps]
+;B[hb];W[ka];B[os];W[ah];B[ps];W[il];B[ha];W[gb];B[lq]C[sykta [3k\]\: gg
+];W[ms]
+;B[js];W[kq];B[jk]C[egc6 [?\]\: B+R
+U [-\]\: nice game from artem
+U [-\]\: led whol time
+tuquedenne [3d\]\: congrats artem!
+tuquedenne [3d\]\: so the first quarter final will be Artem vs Ilya
+Proucht [2d\]\: ty egc
+]))

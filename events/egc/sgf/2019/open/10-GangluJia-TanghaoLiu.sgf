@@ -1,0 +1,80 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]OT[3x60 byo-yomi]AP[CGoban:3]SZ[19]GM[1]GN[EGC2019, Brussels, Belgium\: MAIN B2 R10 Black player Jia Ganglu 2p White player Liu Tanghao 6d]
+RO[10]DT[2019-08-03]PC[EGC2019, Brussels, Belgium]PB[Jia Ganglu]BR[2p]PW[Liu Tanghao]
+WR[6d]KM[6.5]TM[9000]RE[B+R]US[laurent calmus]MULTIGOGM[1]
+
+(;B[pd];W[dp];B[pp])
+(;B[pp];W[dd];B[dp];W[qd];B[oc];W[pe]C[EuroGoTV2 [-\]\: sorry the game needed to be scribbed at the scribe point of view not black point of view
+]
+;B[cc];W[cd];B[dc];W[ec];B[eb];W[fb];B[fc];W[ed];B[gb];W[db];B[fa];W[cb];B[cn]C[EuroGoTV1 [-\]\: live video and sgf player of this game on http\://EuroGoTV.com/2
+]
+;W[qq];B[qp];W[pq];B[nq];W[oq];B[op];W[nr];B[bf];W[be];B[rq];W[rr];B[or];W[pr];B[mr]
+;W[os];B[mq];W[no];B[pm];W[qk];B[ol];W[ok];B[nk];W[oj]C[comments [?\]\: SE says that Black leads bij about 70 points
+rats [2d\]\: in SE we trust
+]
+;B[nj];W[ni];B[oi]C[comments [?\]\: Amen
+Boris2\: not interesting what SE says, but what LZ says
+]
+;W[nl];B[pi];W[qj];B[qi];W[rm]C[comments [?\]\: Would you understand life better with LZ holding your hand, Boris?
+]
+;B[np]C[comments [?\]\: W O7 is slightly sente-ish.
+comments [?\]\: but so is O12
+comments [?\]\: W ideally wants to capture P8 stone os the Q11 stones.
+]
+;W[mi];B[lj];W[oh]C[comments [?\]\: Obviously W wants to capture B's stones. Question is how can B live?
+comments [?\]\: The first move that come to mind is R13 because that enables S10 ans s12 combi later.
+]
+;B[ri]C[comments [?\]\: However, I don't think B can live by itself. He needs some help attacking W's group on the right.
+comments [?\]\: B is aiming at S8 next
+comments [?\]\: W R7 feels natural, but B will play Q8 then, robbing W of its eye shap'.
+dash [-\]\: Q8 -> R7?
+dash [-\]\: ah no, b can escape
+]
+;W[rj]C[comments [?\]\: Now r14 looks normal
+EuroGoTV1 [-\]\: live video and sgf player of this game on http\://EuroGoTV.com/2
+comments [?\]\: Once B gained some libs, he can play q10/Q9, R6
+]
+;B[qg]C[comments [?\]\: I guess R14/Q14 was too easy for W. So B wants a more undefined move
+]
+;W[ph];B[qf];W[of]C[snowmen [1d\]\: Black loosing Semeai??
+comments [?\]\: Not yet
+comments [?\]\: Bu B was planning to play S16 - that is impossible
+]
+;B[qm];W[rl];B[rn];W[qn];B[pn];W[ro];B[qo];W[sn]C[snowmen [1d\]\: just have played thr semeai out. My result was Ko, but black has no ko thraed.
+]
+;B[rp];W[sk]C[snowmen [1d\]\: but I did not play white r6
+snowmen [1d\]\: this is also clearly a ko
+Nirvanc [2k\]\: even is black loses the ko / his group, he has so much outside influence
+r0n1n [?\]\: if a move is added at m9 , that is
+Nirvanc [2k\]\: oh yeah, I forgot it, was looking around M17...
+Nirvanc [2k\]\: I get it why i'm still 2k 
+]
+;B[ng];W[og];B[rd];W[re];B[rc];W[qe];B[qc];W[mj];B[mk];W[lk];B[ml];W[ll];B[mm];W[lm]
+C[megaschaf [3k\]\: Speed mode?
+comments [?\]\: I don't think I am getting it.
+]
+;B[kj];W[kh];B[ne];W[nf];B[oe];W[pf]C[Nirvanc [2k\]\: K8
+];B[le];W[me];B[md];W[mf]
+;B[kd];W[ln];B[mo];W[mn];B[nm];W[il]C[megaschaf [3k\]\: J10
+];B[ij];W[fq];B[gk]
+;W[gm];B[hq];W[dm];B[cm];W[dl];B[bk];W[ih];B[dj];W[ej];B[hh];W[di];B[cj];W[hg]C[EuroGoTV1 [-\]\: live video and sgf player of this game on http\://EuroGoTV.com/2
+]
+;B[ek];W[fj];B[fk];W[hj]C[EuroGoTV2 [-\]\: still 59 min for B and 100 min for W
+]
+;B[hl];W[im];B[hm];W[hn];B[hk];W[ik];B[gj];W[hi];B[in];W[ho];B[jm];W[jn];B[io];W[jl]
+;B[jo];W[hp];B[kn];W[jj];B[iq];W[gi];B[dk];W[dq];B[cq];W[ep];B[dr];W[gq];B[eq];W[er]
+;B[eo];W[dq];B[kl];W[ii];B[eq];W[ip];B[jq];W[dq];B[se];W[sf];B[eq];W[lo];B[jp];W[dq]
+;B[sd];W[rf];B[eq];W[nc];B[fp];W[ob];B[pb];W[od];B[pc];W[mc];B[jc];W[na];B[ra];W[hc]
+;B[hd];W[id];B[ic];W[gd];B[he];W[gc];B[hb];W[ge];B[ie];W[ch];B[bh];W[cg];B[ci];W[ei]
+;B[bg];W[cf];B[sr];W[rs];B[ms];W[ns];B[kk];W[km]C[snowmen [1d\]\: w res
+EuroGoTV2 [-\]\: I was disturbed and I did not see the last moves ...
+megaschaf [3k\]\:  Is it over?
+EuroGoTV2 [-\]\: yes the two players are reviewing the game
+EuroGoTV2 [-\]\: I assume W res
+EuroGoTV2 [-\]\: after some ko threats
+Maro [4k\]\: thanks
+EuroGoTV2 [-\]\: sorry for the last moves \:(
+]
+;B[lp];W[jn];B[ld];W[nd];B[jm];W[sb];B[rb];W[jn];B[bc]C[EuroGoTV2 [-\]\: so this is the final moves then W res
+megaschaf [3k\]\: Is there another game today?
+]
+;W[bb]))

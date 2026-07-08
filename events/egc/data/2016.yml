@@ -1,11 +1,35 @@
 website: https://www.eurogofed.org/results/congress/egc2016.htm
-notes: 4 rounds of preliminary + 3 rounds KO 
+notes: 4 rounds of preliminary + 3 rounds KO
 stages:
   - type: tournament
+    name: Championship
     file: egc2016.txt
+    dir: 2016/ec
     scoringColumns:
       - wins
       - place
     breakers:
       - place
     findSharedPlaces: true
+    games:
+      - 1-4 1:B+R round:6 sgf:2016/ec/6-IljaShikshin-MateuszSurma.sgf
+      - 1-14 1:B+R round:1 sgf:2016/ec/1-IljaShikshin-BenjaminTeuber.sgf
+      - 2-1 1:W+R round:7 sgf:2016/ec/7-AliJabarin-IljaShikshin.sgf
+      - 2-3 2:B+R round:2 sgf:2016/ec/2-AliJabarin-LukasPodpera.sgf
+      - 2-8 2:B+R round:3 sgf:2016/ec/3-AliJabarin-ArtemKachanovskyi.sgf
+      - 3-2 2:W+R round:6 sgf:2016/ec/6-LukasPodpera-AliJabarin.sgf
+      - 3-6 3:B+4.5 round:5 sgf:2016/ec/5-LukasPodpera-CristianPop.sgf
+      - 4-1 4:B+R round:3 sgf:2016/ec/3-MateuszSurma-IljaShikshin.sgf
+      - 4-3 3:W+R round:7 sgf:2016/ec/7-MateuszSurma-LukasPodpera.sgf
+      - 5-2 2:W+2.5 round:5 sgf:2016/ec/5-PavolLisy-AliJabarin.sgf
+      - 5-9 5:B+R round:4 sgf:2016/ec/4-PavolLisy-StanislawFrejlak.sgf
+      - 5-12 5:B+R round:2 sgf:2016/ec/2-PavolLisy-DusanMitic.sgf
+      - 7-4 4:W+14.5 round:5 sgf:2016/ec/5-GrigorijFionin-MateuszSurma.sgf
+      - 8-1 1:W+R round:5 sgf:2016/ec/5-ArtemKachanovskyi-IljaShikshin.sgf
+      - 8-12 8:B+R round:4 sgf:2016/ec/4-ArtemKachanovskyi-DusanMitic.sgf
+      - 8-17 8:B+R round:1 sgf:2016/ec/1-ArtemKachanovskyi-TimurSankin.sgf
+      - 9-2 2:W+R round:1 sgf:2016/ec/1-StanislawFrejlak-AliJabarin.sgf
+      - 10-4 4:W+R round:2 sgf:2016/ec/2-CatalinTaranu-MateuszSurma.sgf
+      - 10-7 7:W+1.5 round:4 sgf:2016/ec/4-CatalinTaranu-GrigorijFionin.sgf
+      - 11-3 3:W+R round:4 sgf:2016/ec/4-JonasWelticke-LukasPodpera.sgf
+      - 12-16 12:B+R round:3 sgf:2016/ec/3-DusanMitic-DmitrijSurin.sgf

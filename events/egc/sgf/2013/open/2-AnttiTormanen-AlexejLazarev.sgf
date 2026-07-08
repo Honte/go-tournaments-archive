@@ -1,0 +1,954 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]OT[3x60 byo-yomi]AP[CGoban:3]SZ[19]GM[1]GN[57th European Go Congress, 2nd round]
+RO[2]DT[2013-07-29]PC[Olsztyn, Poland]PB[Tormanen Antti]BR[6d]PW[Lazarev Alexej]
+WR[6d]KM[6.5]TM[9000]RE[B+5.5]US[thera]MULTIGOGM[1]
+;B[dc];W[pc];B[cp];W[ep];B[pq];W[qo];B[eq]C[flurane [4k\]\: suomen poika, hakka päällä!
+Ootakamoku [2d\]\: cant find a single high dan tygem game with this opening
+keysersoze [?\]\: how do you search?
+Ootakamoku [2d\]\: http\://tygem.fuseki.info/
+keysersoze [?\]\: thanks
+pivoglotov [?\]\: because it's 100500d opening
+]
+;W[fq];B[dq];W[fp];B[cn];W[mq];B[op];W[jp]C[Artemy [5k?\]\: Please tell me who are who in this board? 
+fbp [7d\]\: i saw this opening before
+fbp [7d\]\: many times
+]
+;B[qp]C[Ootakamoku [2d\]\: w lazarev alexej (6d) b antti törmänen (6d)
+fbp [7d\]\: maybe d17 and q17 stones is a bit unusual
+]
+;W[po]C[Artemy [5k?\]\: Thank you! 
+];B[rp]C[Ootakamoku [2d\]\: fbp, the first move that wasnt found in the database, was black q3
+Ootakamoku [2d\]\: always q4 on this board instead
+fbp [7d\]\: yeah q3 is a bit strange theorywise
+Ootakamoku [2d\]\: no clue why tho \:P
+fbp [7d\]\: indeed
+]
+;W[qe]C[Ootakamoku [2d\]\: b r10 here too rushed?
+];B[kc]C[fbp [7d\]\: maybe a little bit
+fbp [7d\]\: value of q5 stones are quite low
+fbp [7d\]\: since black already protect corner at s4
+fbp [7d\]\: so black rather play on open side
+fbp [7d\]\: i expect white to approach upperleft
+goren2 [2k\]\: w c15 or d15?
+fbp [7d\]\: usually c15 in this kind of opening where both are going for cash
+goren2 [2k\]\: ok
+fbp [7d\]\: if d15 then black will attach under again
+]
+;W[ce];B[ed];W[ci]C[fbp [7d\]\: now b will o17
+Ootakamoku [2d\]\: too greedy to kick w stone first?
+fbp [7d\]\: at c16?
+Ootakamoku [2d\]\: ya
+fbp [7d\]\: that only helps white
+Ootakamoku [2d\]\: ah, because b might wnt to to play d14 or c13 later?
+fbp [7d\]\: yes
+keysersoze [?\]\: is invading on the right possible?
+Ootakamoku [2d\]\: o17 just looks gigantic tho
+keysersoze [?\]\: to attack the 2 stones?
+Gorim [1d\]\: c9 also nice?
+Ootakamoku [2d\]\: c9 bad I think, very boring to extend from c6
+Gorim [1d\]\: but guess o17 better
+Ootakamoku [2d\]\: c8 are only few points, and not much interest to either, n17 or o17 are huge in comparison, as they are relevant to g17 aji, and efficiency of top right corner
+dxxd [1d\]\: if c9, I quit go \:) 
+Ootakamoku [2d\]\: basically, the whole left side is flat anyways, so expanding it only adds 4-6 points, and that applies to both players
+sagesse [-\]\: c9 is impossible
+Ootakamoku [2d\]\: topside on the other hand isnt flat for either player, so the common ground to stronger base and enlarge framework is very valuable.
+]
+;B[nc]C[MooDoGo [3k\]\: at what point will c6 be interresting?
+Ootakamoku [2d\]\: moodogo, right before yose starts
+MooDoGo [3k\]\: invasion at c 13?
+Ootakamoku [2d\]\: you asking when it will be interesting?
+MooDoGo [3k\]\: yes -> timing
+MooDoGo [3k\]\: maybe invasion first?
+]
+;W[jd]C[Ootakamoku [2d\]\: hard to say, since it depends what black wants in that area
+Gorim [1d\]\: play something on the right side or k16?
+Gorim [1d\]\: oh, k16
+Gorim [1d\]\: \:P
+Ootakamoku [2d\]\: like, here, since w decides to flatten top, invasion at c13 becomes maybe more likely, as b d14 loses value
+MooDoGo [3k\]\: thanks
+MooDoGo [3k\]\: k16 changes something for the left side
+Ootakamoku [2d\]\: also, if white flattens top, b might opt to play c16 instead of c13
+]
+;B[jc];W[id];B[le]C[Ootakamoku [2d\]\: say like w j17, when b c16 looks a bit more interesting
+Lopa\: j16 early , first q10
+Ootakamoku [2d\]\: anwyays, right side looks more interesting than the left side, atleast for now
+Ootakamoku [2d\]\: depends a bit what happens in topleft
+]
+;W[jg]C[Gorim [1d\]\: j17 or h17?
+Gorim [1d\]\: or allow disconetcion?
+gobugobu [7d\]\: I think B will do something on the left side, e.g. c13 
+MooDoGo [3k\]\: k11?
+]
+;B[qj]C[Gorim [1d\]\: hmmm this is quite senteish\:P
+gobugobu [7d\]\: r10 looks ok, but I now want to play j17 because then b c13 becomes an overplay
+gobugobu [7d\]\: B q7 looks quite severe but I can't be bothered defending q5 - But I guess I should
+Lopa\: n5
+gobugobu [7d\]\: n5 o6 q9 is a possibility
+]
+;W[ql];B[oj];W[qh]C[Shinichi56 [-\]\: go alexej go !
+pivoglotov [?\]\: goog choice )
+pivoglotov [?\]\: good
+Shinichi56 [-\]\: he was cool guy in china
+daveminion [?\]\: go antti
+gobugobu [7d\]\: why is Antti only 6d?
+Gorim [1d\]\: because he hasn't advanced to 7d yet
+Gorim [1d\]\: ;)
+gobugobu [7d\]\: b p8 looks most normal
+Gorim [1d\]\: probably not enough games with other 6-7 dan players to bump his gor ranking enough
+medical [2k\]\: how does p8 affect white connecting under? can't really figure out all the details there\:)
+gobugobu [7d\]\: really? Is that the reason? Because his actual strength is quite close to pro. However, in truth he is fluctuating a lot.
+]
+;B[ol]C[goren2 [2k\]\: is he stronger than you gobugo?
+illuvatar [5k\]\: why cant we see timing?
+]
+;W[om]C[blurb1\: http\://gooften.net/
+];B[nm]C[Ootakamoku [2d\]\: antti played a koren pro a few days ago, was a very entertaining game
+Ootakamoku [2d\]\: eventually antti tried to kill a hoshi + keima shimari, without having any stones nearby (but wall on all sides).
+Ootakamoku [2d\]\: the minor flaws in the walls provded to be too much tho
+]
+;W[pl]C[Trumelunki [3d\]\: is this not helping black?
+Ootakamoku [2d\]\: this does give w connection under
+Ootakamoku [2d\]\: so looks like w just wants to settle the group, even if he has to give b some center thickness
+Ootakamoku [2d\]\: b p10 quite suprising tho, would have expected r13 instead, since b already has o17 in place too
+]
+;B[ok];W[on];B[nn];W[ro]C[dxxd [1d\]\: uh, nice b
+];B[hr]C[gooooo [-\]\: ouch
+Eilinen [-\]\: Hm?
+dxxd [1d\]\: this is standard 
+illuvatar [5k\]\: j3?
+Ootakamoku [2d\]\: j3 and then exchange has been good for b already
+Ootakamoku [2d\]\: basically b is asking, w do you have the courage to play g2 or f2 to cut off my exit?
+Ootakamoku [2d\]\: which ofcourse is a very difficult comittment for w right now
+myrtle [4d\]\: h3 seems only move i think, g2 looks overplay here
+Ootakamoku [2d\]\: ya, which makes h3 nice timing for b
+]
+;W[gr];B[hp]C[myrtle [4d\]\: hehe proves me wrong \:p
+Shinichi56 [-\]\: h5 l3 
+Ootakamoku [2d\]\: or provdes w already slightly desperate
+myrtle [4d\]\: let's hope so... go Antii!
+]
+;W[ho]C[WVoron [5d\]\: h5
+];B[go]C[myrtle [4d\]\: anti wants a ponnuki
+dxxd [1d\]\: seems b's game
+Akarion [-\]\: black's having some fun ))
+Ootakamoku [2d\]\: g4 j5 h3 h6 j4 
+Shinichi56 [-\]\: is antti young and strong?
+myrtle [4d\]\: ponnuki so he can attack c13 weakness and k13 group even more fiercely \:)
+medical [2k\]\: a new wall here and more targets on top appear
+pivoglotov [?\]\: old and weak )
+Shinichi56 [-\]\: i see \:)
+Ootakamoku [2d\]\: antti is old, something like 20 years already
+]
+;W[hq];B[io]C[M15 [1k\]\: more like 23?
+zife [4d?\]\: 24 iirc
+myrtle [4d\]\: 24, pfft, past it, next game
+Ootakamoku [2d\]\: ok, so ancient already
+Ootakamoku [2d\]\: is w seriously contemplating nobi here?
+Ootakamoku [2d\]\: it like has to be overplay
+myrtle [4d\]\: maybe he can
+myrtle [4d\]\: b cant j3 after
+myrtle [4d\]\: can only j4 after i guess
+Mokki [3d\]\: sure b can J3
+WVoron [5d\]\: h6
+WVoron [5d\]\: only
+Ootakamoku [2d\]\: h6 j4 j3 is the continuation
+Ootakamoku [2d\]\: but w is left with weakneses after that
+WVoron [5d\]\: so big
+myrtle [4d\]\: not afraid of h6 j3 j4 g3 g4 h3 etc ?
+myrtle [4d\]\: yes i think h6 is needed
+Ootakamoku [2d\]\: myrtle, that is not possible
+myrtle [4d\]\: thats my point oota, to mokki
+Ootakamoku [2d\]\: ah
+Eilinen [-\]\: if w h6, b just j3?
+Trumelunki [3d\]\: black gets ponnuki, can't help it
+Ootakamoku [2d\]\: w can play h6, its a possible move sure, but, after b j4 its difficult to continue
+Ootakamoku [2d\]\: with no outside support and b strong on all sides
+myrtle [4d\]\: h6 j4 j3 seems better cos b will play another move and aji nicer than ponnuki
+]
+;W[ip]C[Ootakamoku [2d\]\: myrtle, but b will get thickness
+];B[hn]C[Ootakamoku [2d\]\: because b k5 will be sente too
+myrtle [4d\]\: right oota, i like b either way
+Ootakamoku [2d\]\: w k5 normal here afaik
+Ootakamoku [2d\]\: to remove b j3 aji
+Trumelunki [3d\]\: why leave aji at j3?
+myrtle [4d\]\: good qn trumelunki....
+Ootakamoku [2d\]\: in this sequence w gets k5, which is maybe slightly more usefull way to remove the j3 aji, compared to w h6, where b gets k5
+myrtle [4d\]\: but is j4 directly better than j3 directly?
+Ootakamoku [2d\]\: myrtle, I looked up this position, and j3 is never played (instead of j4)
+sagesse [-\]\: first give black that wall on the right, now ponnuki.. seems like white is as good as lost
+Ootakamoku [2d\]\: tho maybe it would be ok here, as w k5 isnt all that much fun to play here
+myrtle [4d\]\: hmm i wonder why j4 is better then
+Lopa\: k5
+illuvatar [5k\]\: l5
+fru123sb [6k\]\: what will b use this centre thickness for?
+Ootakamoku [2d\]\: j16 and c15 both slightly weak
+myrtle [4d\]\: fru - attacking k13 and using c13 weakness
+Lopa\: or l5
+chrpa [1d\]\: good question fru
+dxxd [1d\]\: the point is that b doesn't have to do that much
+Trumelunki [3d\]\: black will obviously attack at c13 next, so white needs to defend
+dxxd [1d\]\: w doesn't have that muhc territory
+Trumelunki [3d\]\: white has points
+Ootakamoku [2d\]\: b style is to almost never go for points early in the game
+Ootakamoku [2d\]\: he loves thickness
+Trumelunki [3d\]\: my feeling is that j4 makes black more solid, j5 and o6 are virtually connected
+EGC2013b [?\]\: W\: 1\:42 B\: 1\:46 time left
+Mokki [3d\]\: so what is the move to defend whites position on the upper side?
+Mokki [3d\]\: D13?
+myrtle [4d\]\: just playing k11 next for b is already quite a lot of profit gained while attacking and that's only one move
+Ootakamoku [2d\]\: its frustrating sometimes to look at anttis games, seeing how he is behind in territory, and no clear way to use his thickness, and when u ask him he says he is leading, as the required points just magically materialize in yose from the thickness
+WVoron [5d\]\: k5 i think
+Ootakamoku [2d\]\: w might rush here, and play d13 or so
+]
+;W[ir]C[Ootakamoku [2d\]\: oh wow
+Trumelunki [3d\]\: so I would have played j3, which makes it easier to move in to center
+WVoron [5d\]\: ...
+Trumelunki [3d\]\: Ok, j4 was mistake
+myrtle [4d\]\: i think its not so unclear that b can use his thickness in this game
+Trumelunki [3d\]\: if white needs to play j2
+myrtle [4d\]\: w has weak groups
+gooooo [-\]\: ootakamoku, and still you are 2d, for me it's even more magic hiding \:D
+Ootakamoku [2d\]\: myrtle, I agree
+myrtle [4d\]\: antti must smile at j2
+dxxd [1d\]\: myrtle, was thiking the same
+myrtle [4d\]\: j2 and j4 can't be worth two whole moves
+]
+;B[cd];W[de]C[Ootakamoku [2d\]\: trumelunki, he probably played j4 as a reflex move, since its the standard continuation here, and didnt count on how useless w k5 would be on this board
+WVoron [5d\]\: so b+
+Trumelunki [3d\]\: ooh, I was 100% sure black would not play here \:)
+myrtle [4d\]\: e11? k11?
+myrtle [4d\]\: trumelunki, c16 is pushing towards thickness from afaaaaaaaar
+Ootakamoku [2d\]\: c16 indeed very suprising
+Goleath [2k\]\: thought for sure C16 was out of the question... \:P Damn it! back to reading
+]
+;B[gd]C[Mokki [3d\]\: b happy just to force white to play dame while getting points
+]
+;W[ic]C[daveminion [?\]\: I don't understand c16...
+Ootakamoku [2d\]\: antti has a tendency to play super honte, when he is happy with the board sitaution, c16 could be that kind of move
+Mokki [3d\]\: c16 is worth a lot of points
+Mokki [3d\]\: you win games with points
+Ootakamoku [2d\]\: antti just so sure of his own win, after w j2, that he just takes the simple route
+daveminion [?\]\: hope so
+Ootakamoku [2d\]\: f14?
+Trumelunki [3d\]\: c9 next to stay consistent \:)
+]
+;B[hg];W[ke]C[illuvatar [5k\]\: l15 very nice i tink
+Ootakamoku [2d\]\: annoying move, I would be so tempted to say to w "you cant afford to play there, and play something like b c9..
+Ootakamoku [2d\]\: but I guess just b m14
+daveminion [?\]\: l16 sente and c9??
+goren2 [2k\]\: n15
+myrtle [4d\]\: l16 looks good to me
+dxxd [1d\]\: n16 seems quite nice for w if b doesn't defend properly
+myrtle [4d\]\: not sure i will take sente after though \:)
+Madzilla [3d\]\: L16 is sort of push-from-behind move, I think it's best to avoid
+myrtle [4d\]\: it encourages l14 which allows j14 though
+Ootakamoku [2d\]\: l16 is ok if intention is to grab sente tho
+Madzilla [3d\]\: what's wrong with M14?
+Ootakamoku [2d\]\: madzilla, slightly more aji in b position?
+]
+;B[kd]C[Ootakamoku [2d\]\: w l14 obv
+royu [5d\]\: l16 is obvious move
+myrtle [4d\]\: w00t
+]
+;W[kf]C[Madzilla [3d\]\: J14 first?
+myrtle [4d\]\: i would j14 but maybe its impatient
+goren2 [2k\]\: p15
+royu [5d\]\: good eye goren2
+Ootakamoku [2d\]\: I feel b plays l16 to get sente
+Madzilla [3d\]\: I would J14 now because maybe later W will be able to resist with e.g. H15
+royu [5d\]\: c9 also very natural here
+Ootakamoku [2d\]\: lets move to left side
+goren2 [2k\]\: tks
+Madzilla [3d\]\: and then C13 next
+myrtle [4d\]\: seems wrong to leave this part of the board at the mo
+Madzilla [3d\]\: C9 feels like extending from thickness
+myrtle [4d\]\: the w and b groups are still deciding who is strongest locally
+Ootakamoku [2d\]\: myrtle, which followup is bigger, white or black?
+Ootakamoku [2d\]\: iif b plays c9
+myrtle [4d\]\: n16 i would expect
+royu [5d\]\: b is not in danger
+myrtle [4d\]\: b is not in danger, but he cant attack if w plays next locally
+]
+;B[pd];W[qd]C[dxxd [1d\]\: wants sente badly
+dxxd [1d\]\: haha
+];B[pb];W[qb];B[oc]
+C[myrtle [4d\]\: wow
+];W[qc]C[Ootakamoku [2d\]\: oh wow.. 
+Ootakamoku [2d\]\: how can w play r18?
+myrtle [4d\]\: i thought r18 is typical kyu move
+Madzilla [3d\]\: maybe it's not so bad here?
+myrtle [4d\]\: antti should not lose, this guy is too friendly
+myrtle [4d\]\: yeah maybe not too bad
+myrtle [4d\]\: but certainly kinda friendly \:)
+]
+;B[ji]C[goren2 [2k\]\: there will be a big center
+goren2 [2k\]\: for b
+myrtle [4d\]\: this attack seems nice
+]
+;W[lf]C[myrtle [4d\]\: game totally in antti's pace
+myrtle [4d\]\: i expect him to get c9 later too
+myrtle [4d\]\: maybe now
+goren2 [2k\]\: i think l5 looks ok
+Gorim [1d\]\: mabe d10 instead of c9?
+daveminion [?\]\: Well if the game continue like this b will win the game
+]
+;B[me]C[myrtle [4d\]\: i still dream of invading side gorim \:)
+goren2 [2k\]\: hehehe
+myrtle [4d\]\: feels like w needs to find some way to be active soon
+daveminion [?\]\: w have to do something special
+goren2 [2k\]\: b will play l5 or l6, and capture like 20 points in the center
+Ootakamoku [2d\]\: well, l6 would be oveprlay right now
+myrtle [4d\]\: l5 just yose imo
+Ootakamoku [2d\]\: hard to find a move for w here, need to neutralize center somehow, in an active way
+Ootakamoku [2d\]\: w m11?
+myrtle [4d\]\: m11? still feels bad
+myrtle [4d\]\: heh same idea, maybe its ok \:P
+]
+;W[mf]C[daveminion [?\]\: ???
+myrtle [4d\]\: wowzer, surely antti cant play so solid he answers this
+goren2 [2k\]\: m 11 will make b solid around that area in sente?
+Ootakamoku [2d\]\: how about c9 now
+myrtle [4d\]\: yeah i like c9 now
+goren2 [2k\]\: m4
+myrtle [4d\]\: maybe antti like q12 or something fun \:p
+myrtle [4d\]\: q13*
+dash [2d\]\: players?
+Ootakamoku [2d\]\: w paid full price to settle his m14 group,, see now reason to continue to attack it
+myrtle [4d\]\: right
+]
+;B[nf];W[ng]C[Eskil [-\]\: dash\: w=Alexsej Lazarev 6d, b=Antti Törmänen 6d
+myrtle [4d\]\: antti does like his solid shapes
+dxxd [1d\]\: or this was just good sente to take before tenuki
+EGC2013b [?\]\: top group http\://egc2013.go.art.pl/supergroup.htm
+]
+;B[of]C[pivoglotov [?\]\: thx egc \:)
+Ootakamoku [2d\]\: annoying for w to continue here
+Ootakamoku [2d\]\: feels like b robbing w if w keeps answering
+]
+;W[li]C[Ootakamoku [2d\]\: and now.. how to prove that b p14 was good?
+];B[lj]C[dash [2d\]\: c9?
+]
+;W[mj];B[lk];W[ki];B[jj];W[cl]C[M15 [1k\]\: c8 big
+goren2 [2k\]\: d12  for b now
+dash [2d\]\: b13?
+Ootakamoku [2d\]\: how is it possible that w could get c8 before b had time for c9
+Ootakamoku [2d\]\: I so do not understand that
+Shinichi56 [-\]\: because b tried to make points with his thickness, so it was gote ;)
+Ootakamoku [2d\]\: start crazy fight with c12?
+]
+;B[be];W[bf];B[bd]C[Ootakamoku [2d\]\: lol, b claiming he has won
+dxxd [1d\]\: it's becuase of p14
+dxxd [1d\]\: I think q16 wanted sente, but p14 forgot the plan? I don't know
+medical [2k\]\: b has three corners + few extra points. what does w got? \:)
+kjkhhhhkk\: b also has a big moyo
+]
+;W[cg];B[cm];W[dl]C[myrtle [4d\]\: these guys are gote masters
+myrtle [4d\]\: both so honest
+diva [3d\]\: gote master haha i find that description too funny
+]
+;B[if]C[rollstory [2k\]\: but it fits well ^^
+myrtle [4d\]\: well for one of them (the one winning) it's an awesome plan. nice and simple
+Ootakamoku [2d\]\: its a bit humiliating imo, if you lose by playing a calm and reasonable game, especially in a tournament
+mozarto [?\]\: hello ! how are b and w please ?
+Ootakamoku [2d\]\: tho awesome if you can win using that style \:)
+Eskil [-\]\: mozarto\: w=Alexsej Lazarev 6d, b=Antti Törmänen 6d
+mozarto [?\]\: thanks!
+]
+;W[ie]C[rollstory [2k\]\: yeah...much more comfortable than a huge fight
+Eskil [-\]\: s11?
+Ootakamoku [2d\]\: hmm, doing a quick count, I have b winning by 5 points.
+Ootakamoku [2d\]\: after komi
+Ootakamoku [2d\]\: and thats assuming most of the center is dame
+myrtle [4d\]\: i find it hard to count games like this, e.g. h8 area
+Ootakamoku [2d\]\: I only counted b 6 points in k7 area, rest of the center as dame
+Trumelunki [3d\]\: maybe black can exchange m4 for m3, is that any good?
+myrtle [4d\]\: i was thinking the time for that is if w plays l6
+myrtle [4d\]\: otherwise it makes l2 value smaller
+myrtle [4d\]\: o2*
+Eskil [-\]\: I cant stop looking around s11, s10 for large endgame. When do you think something is played there?
+Lesmian [1d\]\: when the endgame become small, not earlier
+goantti [?\]\: I would first attack around O12 and maybe get a stone for going in to S13. But O2 looks bigger...
+]
+;B[gb]C[daveminion [?\]\: I count b wins by 3 points (after komi)
+Ootakamoku [2d\]\: g18 sente against j17?
+Trumelunki [3d\]\: this really biggest?
+myrtle [4d\]\: yose by move 8*, so early
+Ootakamoku [2d\]\: well, it removes an eye from the w group, while grabbing poits
+Mukti [4d\]\: B expects it to be sente.
+]
+;W[hb]C[Ootakamoku [2d\]\: apparently they both agree on it too \:P
+daveminion [?\]\: k18??
+medical [2k\]\: I suspected w would call that
+Mukti [4d\]\: I would also answer, it seems pretty much sente.
+Ootakamoku [2d\]\: but this exchange was already good for b
+Ootakamoku [2d\]\: b f8 too lazy?
+Backflash [6k?\]\: f8 what for?
+Backflash [6k?\]\: i mean why now?
+medical [2k\]\: perhaps w's strategy is to give all the hard plays to b so his time will run out
+Ootakamoku [2d\]\: nothing to attack, and it looks like a reasonable size gote
+Ootakamoku [2d\]\: b l5 maybe, to threatten m3 m4 l3 l4 n2 continuation?
+myrtle [4d\]\: i would hate to play this game out in a tournie
+myrtle [4d\]\: so much counting...
+Backflash [6k?\]\: medical our hair will turn grey before time runs out here
+medical [2k\]\: egc2013, how are the times btw?
+medical [2k\]\: backflash, you might be correct. they do have lots of it.
+medical [2k\]\: perhaps moves on the right side before l5?
+]
+;B[ph]C[medical [2k\]\: otherwise w gets to do a sente sequence and then the right side starts to be worthy of a gote for him too
+Backflash [6k?\]\: yup
+]
+;W[qg]C[Backflash [6k?\]\: o12?
+wharrgarbl\: the mob demands a kill
+];B[jb];W[ge]
+;B[ff]C[Ootakamoku [2d\]\: is antti annoyed?
+SoSerious [1d\]\: why annoyed?
+Ootakamoku [2d\]\: his moves feel a bit.. forcefull
+fbp [7d\]\: black feels he dont have enough maybe
+myrtle [4d\]\: this move looks very shapy
+daveminion [?\]\: hmm.....   maybe he really wants to kill white
+Mukti [4d\]\: G17 to make ko?
+Mukti [4d\]\: W has tons of internal threats.
+medical [2k\]\: if b closes w in with life, it must be profitable for b \:)
+medical [2k\]\: what could b lose in that situation?
+]
+;W[nh]C[Ootakamoku [2d\]\: sente?
+medical [2k\]\: hm. sente life doesn't sound probable
+Ootakamoku [2d\]\: true, just that last few moves look like attack with intent to kill
+Ootakamoku [2d\]\: like q12 exchange, it costs some yose I think
+medical [2k\]\: yeah, I do agree with that
+Ootakamoku [2d\]\: unless f14 is worth alot more than I thought it was
+fbp [7d\]\: yes q12 was very damaging
+fbp [7d\]\: could s13 before
+Shinichi56 [-\]\: b can kill?
+fbp [7d\]\: doubt it
+fbp [7d\]\: b has around 45+potential in middle
+]
+;B[rl]C[fbp [7d\]\: w has around 45+komi
+fbp [7d\]\: this move is also minus ...
+Ootakamoku [2d\]\: ya, b paying more to keep w cut
+fbp [7d\]\: but g17 free ko
+fbp [7d\]\: to alive big
+fbp [7d\]\: not realistic at all to try and kill
+]
+;W[rk];B[qk]C[Backflash [6k?\]\: s10?
+Backflash [6k?\]\: oh, no
+Backflash [6k?\]\: so b gets s10 then?
+fbp [7d\]\: best to take it i think
+]
+;W[rm];B[jh]C[eureka [5k\]\: How much time do they have left?
+dxxd [1d\]\: yeah, go for the kill
+Backflash [6k?\]\: no kill
+Ootakamoku [2d\]\: well, w is cut now
+Backflash [6k?\]\: yea, cut
+Ootakamoku [2d\]\: so I guess w starts the ko
+]
+;W[gc]C[Backflash [6k?\]\: just noticed =\\
+];B[fc];W[hd];B[hc]C[Ootakamoku [2d\]\: and b has made w thick everywhere, hard to find ko threats
+Ootakamoku [2d\]\: especially since w gets to live in style if he wins ko
+]
+;W[pi]C[fbp [7d\]\: w have many locals
+Ootakamoku [2d\]\: yup
+];B[pg];W[gc]C[fbp [7d\]\: b created some aji at o5 also
+Ootakamoku [2d\]\: I can only find threats that cost points \:(
+fbp [7d\]\: maybe d10?
+Ootakamoku [2d\]\: d10 costs something too, no?
+Ootakamoku [2d\]\: b8 yose etc
+fbp [7d\]\: yes but not that bad
+Ootakamoku [2d\]\: how about l5 as a threat?
+fbp [7d\]\: gote
+Ootakamoku [2d\]\: even with m3 continuation?
+fbp [7d\]\: yes
+Ootakamoku [2d\]\: ok
+dxxd [1d\]\: j3
+Ootakamoku [2d\]\: b has a ko for 100 points, yet seems unlikely b will even gain 5 points from this ko
+]
+;B[dj]C[fbp [7d\]\: we'll see
+fbp [7d\]\: also stressfull for w
+Backflash [6k?\]\: take ?
+Ootakamoku [2d\]\: w happy if b takes now
+wharrgarbl\: two moves in the center is not enough compensation for black, then..?
+Backflash [6k?\]\: w doesnt have anything big to threat? so ignore?
+Ootakamoku [2d\]\: w has local threats
+Ootakamoku [2d\]\: like r11
+Ootakamoku [2d\]\: or p11, depending how many threats u want
+]
+;W[cj];B[hc]C[fbp [7d\]\: maybe q14?
+fbp [7d\]\: but probably p11
+fbp [7d\]\: its many
+Ootakamoku [2d\]\: this game could become really interesting, if b counts that he cant win if he only gets the gain from a non loss making threat
+fbp [7d\]\: if b make 20 or so in center i think he was fine
+]
+;W[gf];B[gg];W[gc]C[fbp [7d\]\: but if he lose this ko, white f18 will be huge
+Ootakamoku [2d\]\: b f16?
+Backflash [6k?\]\: the second he loses the ko b plays f18? or to goteish?
+fbp [7d\]\: maybe m4?
+Ootakamoku [2d\]\: backflash, the second he loses ko, he plays his followup to the ko threat he has played
+]
+;B[jo]C[Backflash [6k?\]\: right, because they are playing ko, haha
+fbp [7d\]\: so b says enough
+]
+;W[fd];B[kp]C[fbp [7d\]\: but why didnt he play this first
+Ootakamoku [2d\]\: still suprised b didnt play f16 before giving up on ko
+fbp [7d\]\: so b can expect to make around 25 in center
+]
+;W[kq]C[fbp [7d\]\: so b around 65
+];B[jq];W[iq];B[lq]C[fbp [7d\]\: will be close
+Ootakamoku [2d\]\: next sente on s10
+]
+;W[kr];B[lp]C[Gorim [1d\]\: yeah and then a monkey jump
+];W[lr]C[Ootakamoku [2d\]\: naa, skip monkey jump for now
+Gorim [1d\]\: this game is so one sided
+]
+;B[fb]C[Gorim [1d\]\: Antti in shape;p
+Ootakamoku [2d\]\: f18 before s10? oh..
+fbp [7d\]\: s10 might not be sente
+Ootakamoku [2d\]\: big followup tho
+fbp [7d\]\: but f18 was absolutely huge
+Ootakamoku [2d\]\: hmm, ok
+Ootakamoku [2d\]\: w g8? or can find for s10 first?
+]
+;W[gl]C[Backflash [6k?\]\: for some reason i wanted to play g9
+Backflash [6k?\]\: maybe because of d10
+fbp [7d\]\:  considering that Lazarev dont even have enough egf points to be solid 5d
+fbp [7d\]\: this game is not one-sided at all
+fbp [7d\]\: its rather quite close
+Backflash [6k?\]\: he played better in russian championship i think
+]
+;B[jf];W[je]C[ankou [3k\]\: Lazarev is past his prime as a player.
+Shinichi56 [-\]\: he played better 10 years ago
+Ootakamoku [2d\]\: I dont understand b latest move again \:(
+Backflash [6k?\]\: everyone played better 10 years ago if youa re older than 24
+EGC2013b [?\]\: W\: 0\:59 B\: 0\:47
+Gorim [1d\]\: also players were just weaker in the past
+Ootakamoku [2d\]\: backflash, I somehow doubt that, I didnt even know the rules 4 years ago, yet Im over 30
+Gorim [1d\]\: I have a 1k player in my city
+Backflash [6k?\]\: really/
+Gorim [1d\]\: he was a egf 3d in the past
+dxxd [1d\]\: whole community in europe is getting stronger
+Gorim [1d\]\: but he is 100% sure that he plays better now then when he was a 3d
+wharrgarbl\: well that explains it; I'm not weak, I'm just a time traveller
+Backflash [6k?\]\: haha
+goBum [3k\]\: sooo is there a video? \:>
+Eilinen [-\]\: Hmm which one is ahead?
+Backflash [6k?\]\: on egc site i guess
+Backflash [6k?\]\: wierd how eurogotv doesnt scribe it
+EGC2013b [?\]\: http\://egc2013.go.art.pl/page/live
+fbp [7d\]\: after w o2 he can play n5 in yose
+goBum [3k\]\: thx \:v
+fbp [7d\]\: e2 is big yose as well
+Gorim [1d\]\: Eilnen Antti ahead\:)
+Backflash [6k?\]\: curse you egc, its no fun without seeing players
+goBum [3k\]\: b o r i n g
+EGC2013b [?\]\: I know.. I also don't see them \:(
+Backflash [6k?\]\: we plebs like too see players sweat and nervous
+]
+;B[kg]C[goBum [3k\]\: i'd rather look at the board here
+MacGyver [?\]\: l13 played
+MacGyver [?\]\: ok
+westdock\: EGC, are you broadcasting based on video?
+zum [3d?\]\: we must see the playes, go is like soccer
+EGC2013b [?\]\: yes
+MacGyver [?\]\: like soccer, but less acting
+westdock\: I'm sure this could be automated \:)
+Backflash [6k?\]\: more acting if you know where to look
+Gorim [1d\]\: it can/could westdock
+MacGyver [?\]\: ;)
+Gorim [1d\]\: there was a program some time ago that could do that I think
+sinoid [3k\]\: macgyber, you sure about that? *slams down stone real hard*
+EGC2013b [?\]\: probably ;) but how would answer your questions?\:P
+Backflash [6k?\]\: westdock should be possible, not very hard since stones are b&w
+zum [3d?\]\: 0s and 1s
+goBum [3k\]\: who said go is not contact sport?! *slaps move near the stone*
+fbp [7d\]\: this move is gote?
+MacGyver [?\]\: lot of contact in go (tsuke)
+Ootakamoku [2d\]\: I was thinking its an attempt to intimidate w
+Backflash [6k?\]\: shouldnt it be answered with p11?
+rollstory [2k\]\: i think if w tenuki b can make a ko
+rollstory [2k\]\: to kill
+pivoglotov [?\]\: печалька короче
+Backflash [6k?\]\: да не
+Ootakamoku [2d\]\: tenuki m13 n13 h14 f15 e15 h15 j18 but.. that sequence feels a bit naive
+sinoid [3k\]\: how do you figure that?
+westdock\: EGC, for answering questions, a Markov-chain generator trained on KGS kibbitz would be perfect
+Backflash [6k?\]\: бодренько еще
+Ootakamoku [2d\]\: problem is w has h14 sente always
+Ootakamoku [2d\]\: so I really dont understand how b could ever get an attack on w
+Ootakamoku [2d\]\: hmm, maybe b can actually cut at n13 if w tenuki now
+Ootakamoku [2d\]\: not directly but
+rollstory [2k\]\: maybe instead of h14  b plays f 15
+Ootakamoku [2d\]\: so w m13 here?
+Backflash [6k?\]\: since everything here is a gote why not p11 and forget about this plkace?
+Backflash [6k?\]\: place*
+Backflash [6k?\]\: im blind
+Backflash [6k?\]\: as usual
+illuvatar [5k\]\: h14?
+Backflash [6k?\]\: on the birght note, someone tryed to free eagels in moscow zoo, eagels didnt want to be free and stayed in cages by free will
+gooooo [-\]\: how much time do they have left?
+]
+;W[lg];B[kh]C[eureka [5k\]\: "W\: 0\:59 B\: 0\:47" after move 126 above
+];W[lh]
+C[gooooo [-\]\: 59min or 59s? \:D
+Ootakamoku [2d\]\: min \:)
+];B[el]C[Ootakamoku [2d\]\: well, instead win for b if this works at all
+]
+;W[fm]C[Ootakamoku [2d\]\: tho I cant see how it would work \:(
+Backflash [6k?\]\: f10?
+]
+;B[em];W[fn]C[Ootakamoku [2d\]\: b8 b9 f8 g7 f5 e6 e5 d7 and urm.. good luck
+];B[gk]
+C[RBerenguel [5k?\]\: ¿?
+Lopa\: b win many points 
+rollstory [2k\]\: may somebody explain g9? g9 looks like pushing w into b´s center territory
+Backflash [6k?\]\: w is cut
+Ootakamoku [2d\]\: g9 threattens b f5
+rollstory [2k\]\: but b can´t cut imediatly...f5 e6 e5 d7 d6 e9
+Ootakamoku [2d\]\: hence w cannot fight it
+Mukti [4d\]\: H8 works
+Mukti [4d\]\: Seems like only move to me.
+Ootakamoku [2d\]\: if you add a move there as w.. say even nobi h8.. it becomes.. h8 f8 g7 f5 e6 e5 d7 d6 
+rollstory [2k\]\: thats why i didn´t see h8
+Ootakamoku [2d\]\: its a grose sequence that follows, but I wouldnt be 100% convinced w can make it
+Mukti [4d\]\: After that sequence w can cut and capture b in damezumari
+Ootakamoku [2d\]\: mukti, yes but what about b e9 sente.. threattening c9
+Mukti [4d\]\: C9 seems small to me...
+Ootakamoku [2d\]\: so you ggeta g9 cutting stone, and give away c8 stones?
+Mukti [4d\]\: No, why?
+]
+;W[hl]C[Mukti [4d\]\: C9 can just be captured.
+Trumelunki [3d\]\: now f8 right?
+Mukti [4d\]\: Or you mean d9 instead of e9 in sente?
+Ootakamoku [2d\]\: lol, how? now after d7 lib is lost by w
+Ootakamoku [2d\]\: not*
+]
+;B[hk]C[Mukti [4d\]\: I do not see the problem if BE9 and then C9 w just defends...
+Backflash [6k?\]\: this ended peacefully =\\
+Ootakamoku [2d\]\: instead of h9.. f8 g7 f5 e6 e5 d7 d6 f9 e9 f10 c9.. then what?
+Mukti [4d\]\: I have to get a board , these coordinates are so cumbersome. Lt me check.
+Ootakamoku [2d\]\: you can nobi down as w, but then b can just keep pushing ahead
+rollstory [2k\]\: haha...i know that feeling
+rollstory [2k\]\: cordinates are freaking me out
+Ootakamoku [2d\]\: as after w nobi down to b8, b needs to take a lib, and if he does, then atari sequence will pull b out
+wharrgarbl\: would love a feature that plays kibbitz sequence as animation on the board
+Backflash [6k?\]\: question of habbit
+Mukti [4d\]\: Then b8, Ootakamoku
+Ootakamoku [2d\]\: b8 e10
+Ootakamoku [2d\]\: then?
+Backflash [6k?\]\: yea, kgs doesnt bring new features, its written in tos
+Ootakamoku [2d\]\: you need to take a lib now, or c8 is captured
+Ootakamoku [2d\]\: if you do I can escape with forcing moves
+Ootakamoku [2d\]\: unless I missed something
+Mukti [4d\]\: I agree
+Mukti [4d\]\: B can just extricate himself.
+Ootakamoku [2d\]\: ya
+Ootakamoku [2d\]\: but its very ugly sequence \:P
+daveminion [?\]\: well I think Antti see that. He just wanna ask w to resign. \:D
+Ootakamoku [2d\]\: daveminion, did you notice my private messages?
+MooDoGo [3k\]\: the game can be cloned in a known room and you can quickly kibbitz
+MooDoGo [3k\]\: let me know in with room
+Gorim [1d\]\: i got b +4 with one sided for white yose
+Gorim [1d\]\: so res appropriate\:P
+]
+;W[hm]C[Backflash [6k?\]\: for some reason i didnt excpect empty triangle
+Ootakamoku [2d\]\: I wonder why b still hesitant about playing f5
+Ootakamoku [2d\]\: oh, now cant
+Backflash [6k?\]\: why why why???
+]
+;B[il];W[im];B[jm]C[Trumelunki [3d\]\: back to big yose i think
+pivoglotov [?\]\: я бы уже давно соеденил, или у лазарева хитрый план, или стальные...
+Kasparadi [7k\]\: f5 nothing. white connecting or eating f8
+Backflash [6k?\]\: f5 e6 e5 d6 d7 d5 d4  eh?
+Kasparadi [7k\]\: f5 e6 e5 d7
+MooDoGo [3k\]\: b141 f5 e6 e5 d7 -> miai d6 or e9
+Trumelunki [3d\]\: f5 does not work currently, but about any black move around e9 restores it, so white wants to play something here
+]
+;W[jn]C[Lopa\: n4-n5-k8-j9-k6
+];B[km]C[Lopa\: k8
+Ootakamoku [2d\]\: nobi before k8?
+Ootakamoku [2d\]\: depends on b response, might want j9 instead
+Michaelz [2k\]\: how about n4 before?
+Zairex [1k\]\: s10 loks big
+Lopa\: k8-l6
+Madzilla [3d\]\: k8 j9 l6 j6 f8 isn't very attractive for W
+Backflash [6k?\]\: can w force something to play j9?
+]
+;W[do]C[MooDoGo [3k\]\: can w play l5 and break through the centre?
+iluvbd [?\]\: antii studied in japan for a while, correct?
+SoSerious [1d\]\: yes
+Lopa\: k4 mistake first n4
+]
+;B[en];W[fo];B[fl]C[fbp [7d\]\: c5 and b6 huge
+Backflash [6k?\]\: what is better?
+]
+;W[er];B[dr];W[co];B[bo];W[bn];B[bp];W[bm]C[ronnyss [4k\]\: b7 sort of sente?
+]
+;B[br]C[Backflash [6k?\]\: apparently
+];W[hf];B[ig]C[ronnyss [4k\]\: e10
+Backflash [6k?\]\: f10?
+CrusaderGo [-\]\: n4 
+Darchik [3d\]\: p2
+kjkhhhhkk\: who's leading?
+Backflash [6k?\]\: no idea
+CrusaderGo [-\]\: b
+CrusaderGo [-\]\: but
+CrusaderGo [-\]\: w wins
+Madzilla [3d\]\: pfff
+Gorim [1d\]\: n4?
+illuvatar [5k\]\: s10 
+zaboomafoo [3k\]\: e10
+CrusaderGo [-\]\: s10 passive
+Backflash [6k?\]\: basically w has no time for yose
+]
+;W[mo]C[Backflash [6k?\]\: by time i mean sente moves
+Madzilla [3d\]\: it looks very close to me
+ronnyss [4k\]\: w has big yose
+Backflash [6k?\]\: w cant play all of it
+daveminion [?\]\: ? black just atari j6 and white?
+Madzilla [3d\]\: H6 G7 O2?
+Backflash [6k?\]\: h6 is busy
+]
+;B[mp];W[no]C[CrusaderGo [-\]\: lol
+];B[ln]C[Backflash [6k?\]\: take that n4!
+Madzilla [3d\]\: well, you should be able to figure out that I meant J6 \:P
+ronnyss [4k\]\: loosing sente now
+]
+;W[nq]C[CrusaderGo [-\]\: no
+];B[or]C[CrusaderGo [-\]\: now w in sente
+Backflash [6k?\]\: lost p2 though =\\
+Ootakamoku [2d\]\: w s10
+zaboomafoo [3k\]\: e10
+Ootakamoku [2d\]\: oh, not
+Ootakamoku [2d\]\: e12
+Madzilla [3d\]\: this didn't feel like the best endgame sequence for B...
+Backflash [6k?\]\: e12 f12 and?
+CrusaderGo [-\]\: f12 
+CrusaderGo [-\]\: q
+CrusaderGo [-\]\: w*
+Ootakamoku [2d\]\: no need to play so violently, lets just ask a bit there, and them move so s10
+Ootakamoku [2d\]\: tho maybe s10 directly is just better
+]
+;W[ei];B[dk];W[ck]C[EGC2013b [?\]\: W\: byo B\: 25
+];B[in]C[Naab [3k\]\: errr, how did this happen?
+]
+;W[gm]C[Naab [3k\]\: ain't white ahead
+];B[rj]C[Ootakamoku [2d\]\: looks like 0.5 point game to me
+Naab [3k\]\: I see
+minimalist [3k\]\: Where is the EGC now?
+Ootakamoku [2d\]\: poland
+Madzilla [3d\]\: P18 is very big
+]
+;W[sl]C[minimalist [3k\]\: thx
+Backflash [6k?\]\: byo =\\
+EGC2013b [?\]\: Olsztyn, Poland
+minimalist [3k\]\: thx
+zaboomafoo [3k\]\: b so happy to get that in
+daveminion [?\]\: ok b wins
+]
+;B[ob];W[fj];B[fk]C[CrusaderGo [-\]\: t12 
+Backflash [6k?\]\: monkey jump to make it humiliating
+CrusaderGo [-\]\: b lose
+Ootakamoku [2d\]\: daveminion, you should play some ranked games on kgs, to get a rank.
+]
+;W[nr];B[np]C[daveminion [?\]\: tnx oota \:D
+];W[oo];B[ns];W[ms];B[os];W[sp];B[sq]
+C[gooooo [-\]\: who's ahead? \:-)
+];W[so]C[zaboomafoo [3k\]\: close game
+];B[rq]
+C[Backflash [6k?\]\: firendship as usual
+zaboomafoo [3k\]\: b ahead
+pivoglotov [?\]\: nooooo
+Ootakamoku [2d\]\: also, maybe look for the kgs room named sauna, you can usually find all the finnish players there
+Backflash [6k?\]\: isnt h11 needed?
+]
+;W[pe]C[Ootakamoku [2d\]\: how big do you consider h11 to be?
+];B[od]C[Backflash [6k?\]\: 4 pts
+CrusaderGo [-\]\: к сожалению Алексей не дотянул
+zaboomafoo [3k\]\: try g11
+CrusaderGo [-\]\: скорбим(
+]
+;W[gi]C[First [2d?\]\: it's over 9000
+darbi [-\]\: f15 ?
+Ootakamoku [2d\]\: backflash, its funny how often something looks big, but when you start counting the actual point value you notice is actually rather small
+Deft1 [6k\]\: couldn't w have taken q16 with q14 first as sente on the q13 stones?
+Backflash [6k?\]\: its 3 pts then?
+Naab [3k\]\: close to 5 points moves are starting to seem quite big already
+Ootakamoku [2d\]\: dno, depends does it work with w j9 or not
+chrpa [1d\]\: its more than to prevent monkey jump
+rsun [4d\]\: is b ten 8d?
+Deft1 [6k\]\: nah, nvrmind
+Ootakamoku [2d\]\: rsun, tien on kgs
+]
+;B[fe];W[gd]C[rsun [4d\]\: yeah, I mixed up with his kaya account
+CrusaderGo [-\]\: ешщт мукн ыекщтп
+CrusaderGo [-\]\: тиен очень силен
+Ootakamoku [2d\]\: right
+fbp [7d\]\: its very close
+]
+;B[fh]C[Backflash [6k?\]\: is kaya alive?
+rsun [4d\]\: yes
+CrusaderGo [-\]\: d11 
+zaboomafoo [3k\]\: ya
+rsun [4d\]\: 700 accounts open
+Ootakamoku [2d\]\: I dont think I remember the last time tien won a game by more than 10 points, unless by accident
+zaboomafoo [3k\]\: d11
+nb5\: yes always at least 4 people at kaya ^^
+CrusaderGo [-\]\: g10*
+]
+;W[gj]C[zaboomafoo [3k\]\: d12
+Ootakamoku [2d\]\: I would want to say antti is just overconfident in his yose and and score counting, but maybe its just confidence.
+]
+;B[an];W[bl]C[First [2d?\]\: finnish players are always strong
+Ootakamoku [2d\]\: naa, we are just luckier than most
+]
+;B[sg]C[Ootakamoku [2d\]\: gief ko
+rsun [4d\]\: so when are you guys planning to conquer norway and sweden?
+Ootakamoku [2d\]\: as soon as they become civilized enough to be worth the land they occupy
+apina [1d\]\: are there something we want to conquer?
+zaboomafoo [3k\]\: I would hope they take lituania first
+Backflash [6k?\]\: who needs them? honestly? you cant even have hunting rifle there
+]
+;W[rf];B[qa];W[ra];B[pa];W[sb]C[kurii [3d\]\: this game seems pretty close..
+ankou [3k\]\: e1 I guess
+Ootakamoku [2d\]\: I would so love to hear anttis oppinion on this game, like if he considered the game in the bag all the way trough (after w j2)
+]
+;B[mk];W[eg]C[zaboomafoo [3k\]\: e12
+];B[fg]C[rsun [4d\]\: se is right
+beekeeper [4k\]\: Does anyone know how Ilya Shikshin did today?
+EdhelDil [3k\]\: e12 
+Naab [3k\]\: se is correct?
+Ootakamoku [2d\]\: beekeeper, well, he lost yesterday, so very likely he won today
+Naab [3k\]\: how could this have happened
+Lopa\: в6
+Backflash [6k?\]\: Ootakamoku  to whom?
+Lopa\: вd6
+]
+;W[ik]C[zaboomafoo [3k\]\: se gives b some points at j11 area
+];B[jl]C[Backflash [6k?\]\: and w at t12
+Ootakamoku [2d\]\: e9 e10 d11 e9 d6 d7 h10 
+]
+;W[hj]C[Ootakamoku [2d\]\: something of black dies now
+Ootakamoku [2d\]\: whaat.. how can he skip the throwin?
+klausP [7d?\]\: no
+]
+;B[ij]C[yuuki [1k\]\: http\://egc2013.go.art.pl/EGC2013_main.html << You can see the pairings here
+]
+;W[ib]C[Ootakamoku [2d\]\: what am I missreading now?
+];B[ja]C[zaboomafoo [3k\]\: g4 now
+Ootakamoku [2d\]\: why doesnt w e9 capture 2 stones?
+]
+;W[nj]C[yuuki [1k\]\: Shikshin played Chen Yibin 5d
+goantti [?\]\: black F11
+Ootakamoku [2d\]\: right..
+Ootakamoku [2d\]\: thx
+fbp [7d\]\: e9 e10 d11 e9 d7 f11 
+fbp [7d\]\: gg
+]
+;B[di]C[EGC2013d [?\]\: Ilya won
+];W[dh];B[ek];W[eh]C[beekeeper [4k\]\: Thanks
+]
+;B[es]C[Ootakamoku [2d\]\: w needs to do something, he is losing
+Ootakamoku [2d\]\: seriously, why does w just keep playing normal yose?
+rsun [4d\]\: the board is small
+zaboomafoo [3k\]\: n7
+daveminion [?\]\: cause w has noting to do
+]
+;W[fr]C[Ootakamoku [2d\]\: s11?
+Backflash [6k?\]\: why not f1?
+];B[ef]C[Trumelunki [3d\]\: s11 and ko
+Ootakamoku [2d\]\: ya, its a bad ko for w obv, but doesnt really matter
+]
+;W[df]C[Trumelunki [3d\]\: that's something at least
+];B[oi]C[zaboomafoo [3k\]\: s11 w, you must
+]
+;W[qi];B[ni]C[First [2d?\]\: B+9.5
+];W[mi]C[klausP [7d?\]\: i count black winning - did someone else bother to count?
+rsun [4d\]\: se bothered
+klausP [7d?\]\: lol
+]
+;B[sj];W[gp]C[dfgfdf\: ko
+];B[ko]C[Ootakamoku [2d\]\: klausp, I got the same result, black ahead by a few, and SE looks right and agrees aswell
+Backflash [6k?\]\: w in byo, thats why normal yose
+rsun [4d\]\: there should be a suggest-opponent-to-resign button on kgs
+dxxd [1d\]\: lol
+Ootakamoku [2d\]\: hmm, ok, SE more confused now, but was right a moment ago
+x0000 [-\]\: b+2
+klausP [7d?\]\: but game is not on kgs
+Backflash [6k?\]\: rsun, we have that, first line move
+zife [4d?\]\: pass*
+rsun [4d\]\: sure, just in general
+]
+;W[sf];B[af];W[ag];B[ae]C[dxxd [1d\]\: you can take the result slip..and push it towards the opponent \:D
+Ootakamoku [2d\]\: rsun, there is, its the pass button
+]
+;W[kj];B[kk]C[NoWin4You\: h5 soon
+];W[mn];B[mm];W[nk];B[nl];W[ho];B[gn]C[nb5\: what about with double up to force resign, like in backgammon?
+Karnesun [7d\]\: who knows results by Artem and Kravec?
+]
+;W[fs];B[ds]C[Backflash [6k?\]\: b won 4-5?
+];W[oe];B[ne]C[rinpa [1d\]\: They had such a button in one of the Korean servers. It was very irritating because some opponents started clicking on it in fuseki.
+]
+;W[sh]C[Ootakamoku [2d\]\: rsun, also, there is another that I have used a few times, its the resign button, when opponent didnt resign, I resigned myself.
+]
+;B[rh]C[sinnensis [2k\]\: artem won
+Karnesun [7d\]\: thanks
+dxxd [1d\]\: artem was on board C
+Karnesun [7d\]\: Kravets?
+]
+;W[rg];B[ri];W[ga]C[mdm [2k\]\: that's cheating, ootaka
+];B[fa];W[pf]C[apina [1d\]\: that's bad behaviour, not cheating
+q15p17r14 [2d\]\: I wouldn't call it cheating, but it is against the TOS
+]
+;B[sk];W[rl]C[Backflash [6k?\]\: it is?
+];B[ha]C[bolbi [-\]\: yes
+Ootakamoku [2d\]\: depends if its ranked game or not
+]
+;W[ia]C[Backflash [6k?\]\: still surprises me - someone actually read tos
+Gorim [1d\]\: a7 bigger
+Mariusz [2k\]\: Antti chce wygrać o 0,5
+x0000 [-\]\: B+4 now, w can't win
+]
+;B[am]C[MacGyver [?\]\: h12 point
+q15p17r14 [2d\]\: Yes. It will give other players artificially high ranks. rapyuta was banned for repeatedly doing this
+SoSerious [1d\]\: who is rapyuta?
+bobstep [2d?\]\: 8d got banned for doing that
+GetStrong [2d\]\: xD
+q15p17r14 [2d\]\: A strong 8d who always played blitz
+Backflash [6k?\]\: kgs bans, its like baning by nickname
+]
+;W[al];B[ao]C[dxxd [1d\]\: and random weaklings kept creating accounts to play him even \:)
+bobstep [2d?\]\: nice guy, would play anyone regardless of rank
+nb5\: stll strange to prohibit this, u can still lose easy without violating tos
+]
+;W[ee];B[dd]C[darbi [-\]\: h12 
+];W[hi];B[ih]C[zampa [-\]\: rapyuta was crazy strong.
+zampa [-\]\: wasn't his other acc 9d uberstrong?
+zampa [-\]\: and uberstrong*
+EdhelDil [3k\]\: named?
+NoWin4You\: w will soon have an antti climatic awakening
+]
+;W[hp];B[ga]C[zampa [-\]\: oh i dont recall..
+q15p17r14 [2d\]\: I think he was KGS 9d strength, but he always became 8d because of the resigns. \:)
+Backflash [6k?\]\: b2 bomber settles it
+]
+;W[bh];B[oq]C[SoSerious [1d\]\: will be rapid tournament broadcasted?
+];W[mr];B[jk]
+;W[sg];B[pj]C[Backflash [6k?\]\: rapid wha..?
+];W[ej];B[ik]C[klausP [7d?\]\: looks like a save win after all
+eureka [5k\]\: counting
+Backflash [6k?\]\: +6
+Backflash [6k?\]\: se doesnt lie last move
+bobstep [2d?\]\: b won all 3 broadcast games
+First [2d?\]\: so what
+klausP [7d?\]\: someone knows the result of Debarre - Tarumi?
+darbi [-\]\: it is he third game in the main tournament ?
+apina [1d\]\: second
+darbi [-\]\: thx
+EGC2013b [?\]\: B+5,5
+Reym [-\]\: thanks!
+klausP [7d?\]\: thanks for transmitting
+EdhelDil [3k\]\: komi is 7.5?
+pivoglotov [?\]\: thanks
+EdhelDil [3k\]\: 6.5
+EdhelDil [3k\]\: (komi)
+daveminion [?\]\: is the game over?
+Ootakamoku [2d\]\: yes
+daveminion [?\]\: who wins?
+])

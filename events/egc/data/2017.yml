@@ -3,6 +3,8 @@ notes: 4 rounds of double ladder until quarters + 3 rounds KO
 stages:
   - type: tournament
     file: egc2017.txt
+    name: Championship
+    dir: 2017/ec
     scoringColumns:
       - wins
       - place
