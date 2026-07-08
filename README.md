@@ -537,28 +537,26 @@ root metadata, and emits compact SGF output. Raw SGFs remain available through `
 Available SGF tools:
 
 ```bash
-npm run sgf:fix:pgc      # Fix SGF property names for PGC files
-npm run sgf:match        # Match using EVENT or -e/--event
-npm run sgf:match:pgc    # Match PGC SGFs to YAML games and write sgf:/ogs: props
-npm run sgf:match:wagc   # Match WAGC SGFs to imported games
-npm run sgf:match:kpmc   # Match KPMC SGFs to imported games
-npm run sgf:match:pwgc   # Match PWGC SGFs to YAML games
-npm run sgf:match:pagc   # Match PAGC SGFs to YAML games
-npm run sgf:match:epc    # Match EPC SGFs to imported games
-npm run sgf:match:iegc   # Match IEGC SGFs to imported games
+npm run sgf        # Match SGFs to event
 ```
 
 The matcher accepts:
 
 ```bash
-npm run sgf:match:pgc -- -y 2025
-npm run sgf:match:pgc -- -d
-npm run sgf:match:pgc -- -f
-npm run sgf:match:pgc -- -v
-npm run sgf:match:pgc -- -s
+npm run sgf <event>
+npm run sgf -- --event <event>
+npm run sgf -- -e <event>
+EVENT=<event> npm run sgf
+npm run sgf <event> -- --year 2025
+npm run sgf <event> -- -y 2025
+npm run sgf <event> -- --dry
+npm run sgf <event> -- --force
+npm run sgf <event> -- --verbose
+npm run sgf <event> -- --strict
 ```
 
-- `-e` / `--event` selects the event to match (by default uses EVENT env var).
+- The first positional argument selects the event to match. By default, `sgf` uses the `EVENT` env variable when no positional event nor `-e` / `--event` option is passed.
+- Use npm's `--` separator before matcher options such as `--year` or `--dry`.
 - `-y` / `--year` limits matching to one year.
 - `-d` / `--dry` prints the matching summary without writing YAML. Combine it with `--force` to recheck already matched SGFs.
 - `-f` / `--force` overwrites existing `sgf:` props.

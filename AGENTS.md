@@ -166,15 +166,7 @@ SGF files live under `events/[event-id]/sgf/`, usually grouped by year.
 Relevant tooling:
 
 ```bash
-npm run sgf:match
-npm run sgf:fix:pgc
-npm run sgf:match:pgc
-npm run sgf:match:wagc
-npm run sgf:match:kpmc
-npm run sgf:match:pwgc
-npm run sgf:match:pagc
-npm run sgf:match:epc
-npm run sgf:match:iegc
+npm run sgf
 ```
 
 Matcher flags include:
@@ -214,6 +206,6 @@ Choose the smallest useful validation for the change:
 - Shared TypeScript/UI changes: run `npm run lint`; add `npm run test` when behavior is covered by tests.
 - Formatting-sensitive changes: run `npm run fmt` or `npm run fmt:write` for touched files.
 - SGF parser or matcher changes: run focused `npm run test`, then a relevant matcher command such as
-  `npm run sgf:match:wagc -- --year 1995 --dry --force` when the changed rule needs end-to-end confirmation.
+  `npm run sgf wagc -- --year 1995 --dry --force` when the changed rule needs end-to-end confirmation.
 - Static route or build output changes: run the relevant build, for example `npm run build:pgc`,
   `EVENT=wagc npm run build`, or `CONFIG=poland npm run build`.
