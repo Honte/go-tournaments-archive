@@ -25,6 +25,7 @@
     "players:egd": "tsx tools/players/egd.ts",
     "sgf:match": "tsx tools/sgfMatcher/index.ts",
     "sgf:match:pgc": "tsx tools/sgfMatcher/index.ts --event pgc",
+    "sgf:match:egc": "tsx tools/sgfMatcher/index.ts --event egc",
     "sgf:match:epq": "tsx tools/sgfMatcher/index.ts --event epq",
     "sgf:match:epc": "tsx tools/sgfMatcher/index.ts --event epc",
     "sgf:match:esgc": "tsx tools/sgfMatcher/index.ts --event esgc",

@@ -9,8 +9,8 @@
 ; CM[ (submitted by viorel.arsinoaia)]
 ;.
  1 Fan Hui                      2p FR  75Op 3 1  0=     7+/w    4+/b   2+/w   |12633346
- 2 Dinerstein Alexandr          3p RU  16Kz 2 2  0=     5+/b    3+/w   1-/b   |10313237
- 3 Shikshin Ilja                7d RU  16Kz 2 3  0=     8+/b    2-/b   4+/b   |12013342  
+ 2 Dinerstein Alexandr          3p RU  16Kz 2 2  0=     5+/b    3+/b   1-/b   |10313237
+ 3 Shikshin Ilja                7d RU  16Kz 2 3  0=     8+/b    2-/w   4+/b   |12013342  
  4 Jabarin Ali                  1p IL  TAv  2 4  11+/b  6+/b    1-/w   3-/w   |14637810
  5 Lisy Pavol                   1p SK  DoSt 3 5  10+/w  2-/w    8+/b   6+/w   |12686597
  6 Kachanovskyi Artem           6d UA  Rivn 1 6  0=     4-/w    7+/b   5-/b   |12662870

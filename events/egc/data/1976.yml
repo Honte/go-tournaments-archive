@@ -8,6 +8,7 @@ stages:
   - type: tournament
     file: egc1976.txt
     name: Championship Group
+    dir: 1976/ec
     notes: Recreated from cross table. Games order can be different.
     promoted: 2
     scoringColumns:
@@ -18,6 +19,7 @@ stages:
   - type: tournament
     file: egc1976playoff.txt
     name: Playoff
+    dir: 1976/playoff
     notes: Top 2 played additional game for a championship (because they had the same number of wins) 
     scoringColumns:
       - wins

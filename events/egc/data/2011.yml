@@ -4,15 +4,24 @@ stages:
   - type: tournament
     file: egc2011.txt
     name: Championship
+    dir: 2011/ec
     scoringColumns:
       - wins
       - place
     breakers:
       - place
     findSharedPlaces: true
+    games:
+      - 1-3 1:B+R round:3 sgf:2011/ec/3-IljaShikshin-ArtemKachanovskyi.sgf
+      - 2-1 1:W+21.5 round:4 sgf:2011/ec/4-CatalinTaranu-IljaShikshin.sgf
+      - 2-4 2:B+R round:3 sgf:2011/ec/3-CatalinTaranu-AlexandrDinerstein.sgf
+      - 4-3 3:W+4.5 round:4 sgf:2011/ec/4-AlexandrDinerstein-ArtemKachanovskyi.sgf
+      - 5-3 3:W+R round:2 sgf:2011/ec/2-OndrejSilt-ArtemKachanovskyi.sgf
+      - 8-1 1:W+R round:2 sgf:2011/ec/2-ThomasDebarre-IljaShikshin.sgf
   - type: tournament
     file: egc2011open100.txt
     name: EGC Open
+    dir: 2011/open
     notes: Top 100 players of main tournament. Games against other players changed to 0+ and 0-
     scoringColumns:
       - mms
@@ -28,5 +37,34 @@ stages:
     columns:
       - wins
     excluded: true
-    collapsed: true    
-    findSharedPlaces: true    
+    collapsed: true
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+5.5 round:7 sgf:2011/open/7-YoungsamKim-IljaShikshin.sgf
+      - 1-3 1:B+1.5 round:5 sgf:2011/open/5-YoungsamKim-CatalinTaranu.sgf
+      - 1-4 1:B+R round:3 sgf:2011/open/3-YoungsamKim-SangYounJeon.sgf
+      - 2-7 2:B+R round:1 sgf:2011/open/1-IljaShikshin-DusanMitic.sgf
+      - 2-14 2:B+R round:6 sgf:2011/open/6-IljaShikshin-CristianPop.sgf
+      - 2-32 2:B+R round:4 sgf:2011/open/4-IljaShikshin-KazuoYoshihara.sgf
+      - 3-5 3:B+7.5 round:7 sgf:2011/open/7-CatalinTaranu-OndrejSilt.sgf
+      - 3-10 3:B+11.5 round:4 sgf:2011/open/4-CatalinTaranu-ThomasDebarre.sgf
+      - 3-55 3:B+R round:1 sgf:2011/open/1-CatalinTaranu-FredrikBlomback.sgf
+      - 4-3 3:W+0.5 round:6 sgf:2011/open/6-SangYounJeon-CatalinTaranu.sgf
+      - 5-1 1:W+7.5 round:4 sgf:2011/open/4-OndrejSilt-YoungsamKim.sgf
+      - 5-2 5:B+R round:2 sgf:2011/open/2-OndrejSilt-IljaShikshin.sgf
+      - 5-11 5:B+R round:3 sgf:2011/open/3-OndrejSilt-AlexandrDinerstein.sgf
+      - 6-12 6:B+15.5 round:7 sgf:2011/open/7-ArtemKachanovskyi-PalBalogh.sgf
+      - 7-1 1:W+0.5 round:6 sgf:2011/open/6-DusanMitic-YoungsamKim.sgf
+      - 9-4 4:W+R round:5 sgf:2011/open/5-CornelBurzo-SangYounJeon.sgf
+      - 10-9 10:B+R round:3 sgf:2011/open/3-ThomasDebarre-CornelBurzo.sgf
+      - 10-14 10:B+1.5 round:2 sgf:2011/open/2-ThomasDebarre-CristianPop.sgf
+      - 11-2 2:W+R round:5 sgf:2011/open/5-AlexandrDinerstein-IljaShikshin.sgf
+      - 11-19 11:B+R round:4 sgf:2011/open/4-AlexandrDinerstein-TimurSankin.sgf
+      - 11-25 11:B+R round:2 sgf:2011/open/2-AlexandrDinerstein-DmytroBohatskyi.sgf
+      - 13-5 5:W+R round:6 sgf:2011/open/6-JanSimara-OndrejSilt.sgf
+      - 14-9 9:W+2.5 round:7 sgf:2011/open/7-CristianPop-CornelBurzo.sgf
+      - 14-16 14:B+R round:5 sgf:2011/open/5-CristianPop-CsabaMero.sgf
+      - 16-3 3:W+15.5 round:3 sgf:2011/open/3-CsabaMero-CatalinTaranu.sgf
+      - 25-20 25:B+9.5 round:1 sgf:2011/open/1-DmytroBohatskyi-SvetlanaShikshina.sgf
+      - 28-11 11:W+R round:1 sgf:2011/open/1-BenjaminTeuber-AlexandrDinerstein.sgf
+      - 41-3 3:W+R round:2 sgf:2011/open/2-NaoyukiKai-CatalinTaranu.sgf

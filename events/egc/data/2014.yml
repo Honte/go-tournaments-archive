@@ -4,15 +4,24 @@ stages:
   - type: tournament
     file: egc2014.txt
     name: Championship
+    dir: 2014/ec
     scoringColumns:
       - wins
       - place
     breakers:
       - place
     findSharedPlaces: true
+    games:
+      - 1-4 1:B+R round:3 sgf:2014/ec/3-HuiFan-AliJabarin.sgf
+      - 2-1 1:W+R round:4 sgf:2014/ec/4-AlexandrDinerstein-HuiFan.sgf
+      - 2-3 2:B+R round:3 sgf:2014/ec/3-AlexandrDinerstein-IljaShikshin.sgf
+      - 2-5 2:B+1.5 round:2 sgf:2014/ec/2-AlexandrDinerstein-PavolLisy.sgf
+      - 3-4 3:B+R round:4 sgf:2014/ec/4-IljaShikshin-AliJabarin.sgf
+      - 4-6 4:B+1.5 round:2 sgf:2014/ec/2-AliJabarin-ArtemKachanovskyi.sgf
   - type: tournament
     file: egc2014open100.txt
     name: EGC Open
+    dir: 2014/open
     notes: Top 100 players of main tournament. Games against other players changed to 0+ and 0-
     scoringColumns:
       - mms
@@ -24,5 +33,28 @@ stages:
     columns:
       - wins
     excluded: true
-    collapsed: true    
-    findSharedPlaces: true    
+    collapsed: true
+    findSharedPlaces: true
+    games:
+      - 1-5 1:B+R round:3 sgf:2014/open/3-YulinTong-YoungSamKim.sgf
+      - 1-8 1:B+R round:4 sgf:2014/open/4-YulinTong-ChiMinOh.sgf
+      - 1-10 1:B+R round:2 sgf:2014/open/2-YulinTong-ArtemKachanovskyi.sgf
+      - 1-18 1:B+R round:9 sgf:2014/open/9-YulinTong-NikolaMitic.sgf
+      - 1-20 1:B+R round:8 sgf:2014/open/8-YulinTong-ViktorLin.sgf
+      - 2-1 1:W+R round:5 sgf:2014/open/5-ChenWang-YulinTong.sgf
+      - 3-1 1:W+5.5 round:6 sgf:2014/open/6-ZexiangSui-YulinTong.sgf
+      - 4-39 4:B+R round:4 sgf:2014/open/4-HuiFan-JohannesObenaus.sgf
+      - 6-2 2:W+R round:4 sgf:2014/open/4-IljaShikshin-ChenWang.sgf
+      - 6-4 4:W+R round:6 sgf:2014/open/6-IljaShikshin-HuiFan.sgf
+      - 6-9 6:B+? round:7 sgf:2014/open/7-IljaShikshin-PavolLisy.sgf
+      - 7-4 4:W+3.5 round:2 sgf:2014/open/2-AlexandrDinerstein-HuiFan.sgf
+      - 7-8 8:W+R round:5 sgf:2014/open/5-AlexandrDinerstein-ChiMinOh.sgf
+      - 8-4 8:B+R round:3 sgf:2014/open/3-ChiMinOh-HuiFan.sgf
+      - 10-6 6:W+R round:5 sgf:2014/open/5-ArtemKachanovskyi-IljaShikshin.sgf
+      - 10-11 10:B+R round:7 sgf:2014/open/7-ArtemKachanovskyi-CristianPop.sgf
+      - 11-6 6:W+R round:3 sgf:2014/open/3-CristianPop-IljaShikshin.sgf
+      - 12-9 9:W+R round:6 sgf:2014/open/6-MateuszSurma-PavolLisy.sgf
+      - 13-1 1:W+R round:1 sgf:2014/open/1-CornelBurzo-YulinTong.sgf
+      - 16-7 7:W+1.5 round:7 sgf:2014/open/7-AliJabarin-AlexandrDinerstein.sgf
+      - 20-7 7:W+R round:1 sgf:2014/open/1-ViktorLin-AlexandrDinerstein.sgf
+      - 21-1 1:W+R round:10 sgf:2014/open/10-LukasKraemer-YulinTong.sgf

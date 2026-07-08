@@ -6,6 +6,7 @@ stages:
     file: egc2010.txt
     notes: For statistics best 16 europeans and games between them are shown. Games against other players changed to 0+ and 0-
     name: Championship
+    dir: 2010/ec
     scoringColumns:
       - mms
       - wins
@@ -18,9 +19,22 @@ stages:
       - wins
       - open
     findSharedPlaces: true
+    games:
+      - 1-5 1:B+6.5 round:8 sgf:2010/ec/8-IljaShikshin-CristianPop.sgf
+      - 1-8 1:B+9.5 round:6 sgf:2010/ec/6-IljaShikshin-CsabaMero.sgf
+      - 2-1 2:B+R round:7 sgf:2010/ec/7-ArtemKachanovskyj-IljaShikshin.sgf
+      - 2-7 2:B+R round:9 sgf:2010/ec/9-ArtemKachanovskyj-AliJabarin.sgf
+      - 3-1 1:W+2.5 round:4 sgf:2010/ec/4-CatalinTaranu-IljaShikshin.sgf
+      - 3-14 3:B+R round:2 sgf:2010/ec/2-CatalinTaranu-BenjaminTeuber.sgf
+      - 4-6 4:B+0.5 round:1 sgf:2010/ec/1-CornelBurzo-AlexandrDinerstein.sgf
+      - 9-1 1:W+R round:1 sgf:2010/ec/1-AnttiTormanen-IljaShikshin.sgf
+      - 9-8 9:B+4.5 round:5 sgf:2010/ec/5-AnttiTormanen-CsabaMero.sgf
+      - 10-3 3:W+3.5 round:3 sgf:2010/ec/3-RobvanZeijst-CatalinTaranu.sgf
+      - 12-6 6:W+R round:7 sgf:2010/ec/7-OndrejSilt-AlexandrDinerstein.sgf
   - type: tournament
     file: egc2010open100.txt
     name: EGC Open
+    dir: 2010/open
     notes: Top 100 players of main tournament (from 457). Games against other players changed to 0+ and 0-
     scoringColumns:
       - mms
@@ -32,5 +46,15 @@ stages:
     columns:
       - wins
     excluded: true
-    collapsed: true    
+    collapsed: true
     findSharedPlaces: true
+    games:
+      - 1-3 3:W+2.5 round:9 sgf:2010/open/9-IljaShikshin-ChaelimKim.sgf
+      - 2-5 5:W+R round:4 sgf:2010/open/4-ArtemKachanovskyj-KyeongnangKang.sgf
+      - 3-5 3:B+R round:10 sgf:2010/open/10-ChaelimKim-KyeongnangKang.sgf
+      - 4-2 4:B+0.5 round:10 sgf:2010/open/10-JunghyeopKim-ArtemKachanovskyj.sgf
+      - 5-1 1:W+R round:5 sgf:2010/open/5-KyeongnangKang-IljaShikshin.sgf
+      - 5-7 5:B+R round:2 sgf:2010/open/2-KyeongnangKang-CornelBurzo.sgf
+      - 5-10 10:W+R round:8 sgf:2010/open/8-KyeongnangKang-AliJabarin.sgf
+      - 5-11 5:B+3.5 round:3 sgf:2010/open/3-KyeongnangKang-CsabaMero.sgf
+      - 9-5 5:W+3.5 round:6 sgf:2010/open/6-AlexandrDinerstein-KyeongnangKang.sgf

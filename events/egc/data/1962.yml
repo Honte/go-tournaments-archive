@@ -5,6 +5,7 @@ stages:
   - type: tournament
     file: egc1962.txt
     name: Championship Group
+    dir: 1962/ec
     notes: | 
         Recreated from cross table. Games order can be different.\
         Games against 2 USA players excluded
@@ -18,6 +19,7 @@ stages:
   - type: tournament
     file: egc1962open.txt
     name: Championship Group - Open
+    dir: 1962/open
     notes: For the Open tournament a play-off was necessary and was won by Deuball.
     scoringColumns:
       - wins

@@ -8,6 +8,7 @@ stages:
   - type: tournament
     file: egc1980.txt
     name: Championship Group
+    dir: 1980/ec
     promoted: 2
     scoringColumns:
       - wins
@@ -21,6 +22,7 @@ stages:
   - type: tournament
     file: egc1980playoff.txt
     name: Playoff
+    dir: 1980/playoff
     notes: Top 2 played additional game for a championship (because they had the same number of wins)
     scoringColumns:
       - wins

@@ -4,15 +4,30 @@ stages:
   - type: tournament
     file: egc2013.txt
     name: Championship
+    dir: 2013/ec
     scoringColumns:
       - wins
       - place
     breakers:
       - place
     findSharedPlaces: true
+    games:
+      - 1-8 1:B+R round:2 sgf:2013/ec/2-HuiFan-DusanMitic.sgf
+      - 2-1 1:W+16.5 round:4 sgf:2013/ec/4-PavolLisy-HuiFan.sgf
+      - 2-6 2:B+R round:2 sgf:2013/ec/2-PavolLisy-IljaShikshin.sgf
+      - 3-1 1:W+R round:3 sgf:2013/ec/3-MateuszSurma-HuiFan.sgf
+      - 3-5 3:B+8.5 round:2 sgf:2013/ec/2-MateuszSurma-AnttiTormanen.sgf
+      - 4-2 2:W+R round:3 sgf:2013/ec/3-ThomasDebarre-PavolLisy.sgf
+      - 4-3 3:W+21.5 round:4 sgf:2013/ec/4-ThomasDebarre-MateuszSurma.sgf
+      - 4-7 4:B+3.5 round:2 sgf:2013/ec/2-ThomasDebarre-ArtemKachanovskyi.sgf
+      - 5-6 5:B+R round:4 sgf:2013/ec/4-AnttiTormanen-IljaShikshin.sgf
+      - 5-8 5:B+R round:3 sgf:2013/ec/3-AnttiTormanen-DusanMitic.sgf
+      - 9-7 7:W+11.5 round:1 sgf:2013/ec/1-AlexandrDinerstein-ArtemKachanovskyi.sgf
+      - 10-8 8:W+6.5 round:1 sgf:2013/ec/1-AndriiKravets-DusanMitic.sgf
   - type: tournament
     file: egc2013open100.txt
     name: EGC Open
+    dir: 2013/open
     notes: Top 100 players of main tournament. Games against other players changed to 0+ and 0-
     scoringColumns:
       - mms
@@ -24,5 +39,26 @@ stages:
     columns:
       - wins
     excluded: true
-    collapsed: true    
-    findSharedPlaces: true    
+    collapsed: true
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:5 sgf:2013/open/5-HuiFan-AnttiTormanen.sgf
+      - 1-4 1:B+R round:4 sgf:2013/open/4-HuiFan-MateuszSurma.sgf
+      - 1-14 1:B+11.5 round:2 sgf:2013/open/2-HuiFan-LukasPodpera.sgf
+      - 2-20 2:B+5.5 round:2 sgf:2013/open/2-AnttiTormanen-AlexejLazarev.sgf
+      - 3-1 1:W+14.5 round:6 sgf:2013/open/6-PavolLisy-HuiFan.sgf
+      - 3-2 2:W+2.5 round:4 sgf:2013/open/4-PavolLisy-AnttiTormanen.sgf
+      - 4-9 9:W+R round:6 sgf:2013/open/6-MateuszSurma-IljaShikshin.sgf
+      - 6-2 2:W+R round:6 sgf:2013/open/6-OndrejSilt-AnttiTormanen.sgf
+      - 6-3 3:W+R round:7 sgf:2013/open/7-OndrejSilt-PavolLisy.sgf
+      - 8-1 1:W+R round:3 sgf:2013/open/3-ThomasDebarre-HuiFan.sgf
+      - 9-1 1:W+R round:7 sgf:2013/open/7-IljaShikshin-HuiFan.sgf
+      - 9-12 9:B+16.5 round:5 sgf:2013/open/5-IljaShikshin-ArtemKachanovskyi.sgf
+      - 12-2 2:W+8.5 round:3 sgf:2013/open/3-ArtemKachanovskyi-AnttiTormanen.sgf
+      - 12-22 12:B+4.5 round:2 sgf:2013/open/2-ArtemKachanovskyi-DusanMitic.sgf
+      - 13-4 4:W+R round:3 sgf:2013/open/3-AndriiKravets-MateuszSurma.sgf
+      - 13-17 13:B+7.5 round:1 sgf:2013/open/1-AndriiKravets-BenjaminPapazoglou.sgf
+      - 13-46 13:B+R round:7 sgf:2013/open/7-AndriiKravets-RemiCampagnie.sgf
+      - 23-1 1:W+R round:1 sgf:2013/open/1-LukasKraemer-HuiFan.sgf
+      - 43-8 8:W+6.5 round:4 sgf:2013/open/4-WonTaeKim-ThomasDebarre.sgf
+      - 46-7 7:W+6.5 round:5 sgf:2013/open/5-RemiCampagnie-AlexandrDinerstein.sgf

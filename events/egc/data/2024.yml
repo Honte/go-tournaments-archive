@@ -1,10 +1,12 @@
-website: 
- - https://www.eurogofed.org/egc/2024.html
- - https://egc2024.org/en/index.html
-notes: 5 rounds of double ladder until quarters + 3 rounds KO 
+website:
+  - https://www.eurogofed.org/egc/2024.html
+  - https://egc2024.org/en/index.html
+notes: 5 rounds of double ladder until quarters + 3 rounds KO
 stages:
   - type: tournament
     file: egc2024.txt
+    name: Championship
+    dir: 2024/ec
     time: 80min + 40sec Fischer
     scoringColumns:
       - wins
@@ -12,3 +14,31 @@ stages:
     breakers:
       - place
     findSharedPlaces: true
+    games:
+      - 2-1 1:W+4.5 round:8 sgf:2024/ec/8-ThomasDebarre-AndriiKravets.sgf ogs:https://online-go.com/review/1311081
+      - 2-10 2:B+13.5 round:5 sgf:2024/ec/5-ThomasDebarre-LukasKraemer.sgf ogs:https://online-go.com/review/1309360
+      - 3-2 2:W+2.5 round:7 sgf:2024/ec/7-FredrikBlomback-ThomasDebarre.sgf ogs:https://online-go.com/review/1310551
+      - 3-4 3:B+R round:2 sgf:2024/ec/2-FredrikBlomback-DenisKaradaban.sgf ogs:https://online-go.com/review/1307831
+      - 3-4 3:B+R round:8 sgf:2024/ec/8-FredrikBlomback-DenisKaradaban.sgf ogs:https://online-go.com/review/1311082
+      - 3-16 3:B+R round:4 sgf:2024/ec/4-FredrikBlomback-JunfuDai.sgf ogs:https://online-go.com/review/1309413
+      - 4-1 1:W+R round:7 sgf:2024/ec/7-DenisKaradaban-AndriiKravets.sgf ogs:https://online-go.com/review/1310540
+      - 5-3 3:W+4.5 round:6 sgf:2024/ec/6-MateuszSurma-FredrikBlomback.sgf ogs:https://online-go.com/review/1309874
+      - 5-27 5:B+R round:1 sgf:2024/ec/1-MateuszSurma-LotharSpiegel.sgf ogs:https://online-go.com/review/1307343
+      - 6-2 2:W+0.5 round:6 sgf:2024/ec/6-AliJabarin-ThomasDebarre.sgf ogs:https://online-go.com/review/1309875
+      - 6-29 6:B+R round:1 sgf:2024/ec/1-AliJabarin-VsevolodOvsiienko.sgf ogs:https://online-go.com/review/1307344
+      - 7-4 4:W+R round:6 sgf:2024/ec/6-CornelBurzo-DenisKaradaban.sgf ogs:https://online-go.com/review/1309876
+      - 7-6 6:W+R round:3 sgf:2024/ec/3-CornelBurzo-AliJabarin.sgf ogs:https://online-go.com/review/1308294
+      - 8-1 1:W+3.5 round:6 sgf:2024/ec/6-LucasNeirynck-AndriiKravets.sgf ogs:https://online-go.com/review/1309873
+      - 8-5 5:W+R round:3 sgf:2024/ec/3-LucasNeirynck-MateuszSurma.sgf ogs:https://online-go.com/review/1308295
+      - 10-13 10:B+1.5 round:1 sgf:2024/ec/1-LukasKraemer-RemiCampagnie.sgf ogs:https://online-go.com/review/1307346
+      - 11-8 8:W+R round:5 sgf:2024/ec/5-DenisDobranis-LucasNeirynck.sgf ogs:https://online-go.com/review/1309359
+      - 12-7 7:W+2.5 round:5 sgf:2024/ec/5-AsheVazquez-CornelBurzo.sgf ogs:https://online-go.com/review/1309358
+      - 12-25 12:B+R round:2 sgf:2024/ec/2-AsheVazquez-YuzeXing.sgf ogs:https://online-go.com/review/1307829
+      - 13-11 11:W+2.5 round:4 sgf:2024/ec/4-RemiCampagnie-DenisDobranis.sgf ogs:https://online-go.com/review/1308773
+      - 14-1 1:W+9.5 round:2 sgf:2024/ec/2-HoYeungWoo-AndriiKravets.sgf ogs:https://online-go.com/review/1307826
+      - 14-2 2:W+R round:4 sgf:2024/ec/4-HoYeungWoo-ThomasDebarre.sgf ogs:https://online-go.com/review/1308774
+      - 15-12 12:W+0.5 round:4 sgf:2024/ec/4-LukasPodpera-AsheVazquez.sgf ogs:https://online-go.com/review/1308775
+      - 17-2 2:W+R round:3 sgf:2024/ec/3-TanguyLeCalve-ThomasDebarre.sgf ogs:https://online-go.com/review/1308293
+      - 22-15 15:W+R round:3 sgf:2024/ec/3-StanislawFrejlak-LukasPodpera.sgf ogs:https://online-go.com/review/1308292
+      - 30-11 11:W+3.5 round:2 sgf:2024/ec/2-BenjaminDreanGuenaizia-DenisDobranis.sgf ogs:https://online-go.com/review/1307827
+      - 31-23 23:W+R round:1 sgf:2024/ec/1-LinhVuTu-ArtemKachanovskyi.sgf ogs:https://online-go.com/review/1307345

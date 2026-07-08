@@ -1,10 +1,12 @@
-website: 
- - https://www.eurogofed.org/egc/2023.html
- - https://www.egc2023.de/
-notes: 5 rounds of double ladder until quarters + 3 rounds KO 
+website:
+  - https://www.eurogofed.org/egc/2023.html
+  - https://www.egc2023.de/
+notes: 5 rounds of double ladder until quarters + 3 rounds KO
 stages:
   - type: tournament
     file: egc2023.txt
+    name: Championship
+    dir: 2023/ec
     time: 80min + 40sec Fischer
     scoringColumns:
       - wins
@@ -12,3 +14,38 @@ stages:
     breakers:
       - place
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+1.5 round:8 sgf:2023/ec/8-AndriiKravets-AliJabarin.sgf ogs:https://online-go.com/review/1115433
+      - 1-6 1:B+7.5 round:6 sgf:2023/ec/6-AndriiKravets-StanislawFrejlak.sgf ogs:https://online-go.com/review/1114186
+      - 1-9 1:B+10.5 round:5 sgf:2023/ec/5-AndriiKravets-TanguyLeCalve.sgf ogs:https://online-go.com/review/1113663
+      - 1-13 1:B+25.5 round:4 sgf:2023/ec/4-AndriiKravets-LukasPodpera.sgf ogs:https://online-go.com/review/1113028
+      - 2-4 2:B+3.5 round:7 sgf:2023/ec/7-AliJabarin-FredrikBlomback.sgf ogs:https://online-go.com/review/1114850
+      - 2-12 2:B+R round:5 sgf:2023/ec/5-AliJabarin-RemiCampagnie.sgf ogs:https://online-go.com/review/1113656
+      - 3-1 1:W+R round:7 sgf:2023/ec/7-AsheVazquez-AndriiKravets.sgf ogs:https://online-go.com/review/1114844
+      - 3-2 3:B+0.5 round:3 sgf:2023/ec/3-AsheVazquez-AliJabarin.sgf ogs:https://online-go.com/review/1112487
+      - 3-22 3:B+R round:1 sgf:2023/ec/1-AsheVazquez-DmytroBohatskyi.sgf ogs:https://online-go.com/review/1111479
+      - 4-3 3:W+R round:8 sgf:2023/ec/8-FredrikBlomback-AsheVazquez.sgf ogs:https://online-go.com/review/1115434
+      - 4-11 4:B+R round:5 sgf:2023/ec/5-FredrikBlomback-CornelBurzo.sgf ogs:https://online-go.com/review/1113658
+      - 5-4 4:W+R round:6 sgf:2023/ec/6-ArtemKachanovskyi-FredrikBlomback.sgf ogs:https://online-go.com/review/1114212
+      - 5-9 5:B+R round:3 sgf:2023/ec/3-ArtemKachanovskyi-TanguyLeCalve.sgf ogs:https://online-go.com/review/1112486
+      - 5-18 5:B+7.5 round:2 sgf:2023/ec/2-ArtemKachanovskyi-CsabaMero.sgf ogs:https://online-go.com/review/1111976
+      - 6-4 6:B+R round:3 sgf:2023/ec/3-StanislawFrejlak.sgf ogs:https://online-go.com/review/1112492
+      - 6-32 6:B+R round:1 sgf:2023/ec/1-StanislawFrejlak-ChristopherKacwin.sgf ogs:https://online-go.com/review/1111476
+      - 7-3 3:W+11.5 round:6 sgf:2023/ec/6-ThomasDebarre-AsheVazquez.sgf ogs:https://online-go.com/review/1114185
+      - 7-10 7:B+R round:5 sgf:2023/ec/5-ThomasDebarre-ValeriiKrushelnytskyi.sgf ogs:https://online-go.com/review/1113664
+      - 7-15 7:B+R round:4 sgf:2023/ec/4-ThomasDebarre-DominikBoviz.sgf ogs:https://online-go.com/review/1113027
+      - 8-2 2:W+0.5 round:6 sgf:2023/ec/6-JonasWelticke-AliJabarin.sgf ogs:https://online-go.com/review/1114210
+      - 8-21 8:B+15.5 round:1 sgf:2023/ec/1-JonasWelticke-ElianIoanGrigoriu.sgf ogs:https://online-go.com/review/1111489
+      - 10-8 8:W+R round:3 sgf:2023/ec/3-ValeriiKrushelnytskyi-JonasWelticke.sgf ogs:https://online-go.com/review/1112489
+      - 10-13 10:B+1.5 round:2 sgf:2023/ec/2-ValeriiKrushelnytskyi-LukasPodpera.sgf ogs:https://online-go.com/review/1111977
+      - 14-11 11:W+R round:4 sgf:2023/ec/4-JanSimara-CornelBurzo.sgf ogs:https://online-go.com/review/1113026
+      - 14-20 14:B+R round:3 sgf:2023/ec/3-JanSimara-BenjaminTeuber.sgf ogs:https://online-go.com/review/1112496
+      - 16-12 12:W+R round:4 sgf:2023/ec/4-MatiasPankoke-RemiCampagnie.sgf ogs:https://online-go.com/review/1113025
+      - 17-4 4:W+R round:2 sgf:2023/ec/2-BenjaminDreanGuenaizia-FredrikBlomback.sgf ogs:https://online-go.com/review/1111975
+      - 17-16 16:W+R round:3 sgf:2023/ec/3-BenjaminDreanGuenaizia-MatiasPankoke.sgf ogs:https://online-go.com/review/1112495
+      - 19-26 19:B+R round:2 sgf:2023/ec/2-DenisDobranis-BohdanZhurakovskyi.sgf ogs:https://online-go.com/review/1111978
+      - 20-31 20:B+R round:2 sgf:2023/ec/2-BenjaminTeuber-VsevolodOvsiienko.sgf ogs:https://online-go.com/review/1111981
+      - 23-4 4:W+R round:1 sgf:2023/ec/1-JohannesObenaus-FredrikBlomback.sgf ogs:https://online-go.com/review/1111482
+      - 23-28 23:B+0.5 round:2 sgf:2023/ec/2-JohannesObenaus-AmirFragman.sgf ogs:https://online-go.com/review/1111979
+      - 28-17 17:W+R round:1 sgf:2023/ec/1-AmirFragman-BenjaminDreanGuenaizia.sgf ogs:https://online-go.com/review/1111478
+      - 30-1 1:W+R round:1 sgf:2023/ec/1-DavideBernardis-AndriiKravets.sgf ogs:https://online-go.com/review/1111492
