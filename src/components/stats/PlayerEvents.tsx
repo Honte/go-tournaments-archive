@@ -21,6 +21,7 @@ type PlayerEventsProps = {
 
 type EventRow = {
   year: number;
+  categories?: string[];
   stage: Pick<Stage, 'name' | 'type'>;
   name: string;
   rank?: string;
@@ -46,6 +47,7 @@ export function PlayerEvents({ event, player, translations }: PlayerEventsProps)
         results.push({
           year: event.year,
           name: event.name,
+          categories: stage.categories,
           stage: {
             name: stage.name,
             type: stage.type,
@@ -77,6 +79,14 @@ export function PlayerEvents({ event, player, translations }: PlayerEventsProps)
             cell: (info) => (
               <YearLink event={event} locale={translations.locale} year={info.cell.getValue() as number} />
             ),
+          },
+          event.categories?.length && {
+            accessorKey: 'categories',
+            header: t('table.category'),
+            cell: (info) =>
+              info.row.original.categories?.length
+                ? info.row.original.categories.map((category) => t(`categories.short.${category}`)).join(', ')
+                : '-',
           },
           {
             accessorKey: 'stage',
