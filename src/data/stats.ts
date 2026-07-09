@@ -86,9 +86,17 @@ export function calculateStats(
           }
         }
 
-        const playerCategories = event.categories?.filter(
-          (category) => 'categories' in player && player.categories?.[category]
-        );
+        const playerCategories: Record<string, number | '?'> = {};
+
+        if (event.categories?.length && 'categories' in player && player.categories) {
+          for (const category of event.categories) {
+            const place = player.categories[category];
+
+            if (place) {
+              playerCategories[category] = place;
+            }
+          }
+        }
 
         const stageResult = {
           type: stage.type,

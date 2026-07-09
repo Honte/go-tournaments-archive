@@ -24,8 +24,8 @@ export function playerUrl(event: EventContext, locale: string, playerId: string)
   return joinPaths(event.prefix, `/${locale}/stats/${playerId}`);
 }
 
-export function countryUrl(event: EventContext, locale: string, code: string) {
-  return joinPaths(event.prefix, `/${locale}/stats/country/${code.toLowerCase()}`);
+export function countryUrl(event: EventContext, locale: string, code: string, category?: string) {
+  return joinPaths(event.prefix, `/${locale}/stats/country/${code.toLowerCase()}`, category);
 }
 
 export function allPlayersStatsUrl(event: EventContext, locale: string) {

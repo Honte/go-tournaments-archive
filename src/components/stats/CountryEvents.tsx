@@ -16,6 +16,7 @@ type CountryEventsProps = {
   event: EventContext;
   country: CountryStats;
   translations: Translations;
+  showCategories?: boolean;
 };
 
 type CountryEventRow = {
@@ -24,14 +25,19 @@ type CountryEventRow = {
   id: string;
   name: string;
   rank?: string;
-  place: number;
+  place: number | '?';
   games: number;
   won: number;
   lost: number;
   wonPercent: number;
 };
 
-export function CountryEvents({ event, country, translations }: CountryEventsProps) {
+export function CountryEvents({
+  event,
+  country,
+  translations,
+  showCategories = Boolean(event.categories?.length),
+}: CountryEventsProps) {
   const t = getTranslator(translations);
 
   const data = useMemo(() => {
@@ -50,7 +56,7 @@ export function CountryEvents({ event, country, translations }: CountryEventsPro
             id: result.id,
             name: result.name,
             rank: result.rank,
-            categories: stage.categories,
+            categories: showCategories && stage.categories ? Object.keys(stage.categories) : undefined,
             place: stage.place,
             games,
             won,
@@ -62,7 +68,7 @@ export function CountryEvents({ event, country, translations }: CountryEventsPro
     }
 
     return list.sort((a, b) => a.year - b.year);
-  }, [country]);
+  }, [country, showCategories]);
 
   const columns = useMemo<ColumnDef<CountryEventRow>[]>(
     () =>
@@ -75,14 +81,15 @@ export function CountryEvents({ event, country, translations }: CountryEventsPro
               <YearLink event={event} locale={translations.locale} year={info.cell.getValue() as number} />
             ),
           },
-          event.categories?.length && {
-            accessorKey: 'categories',
-            header: t('table.category'),
-            cell: (info) =>
-              info.row.original.categories?.length
-                ? info.row.original.categories.map((category) => t(`categories.short.${category}`)).join(', ')
-                : '-',
-          },
+          showCategories &&
+            event.categories?.length && {
+              accessorKey: 'categories',
+              header: t('table.category'),
+              cell: (info) =>
+                info.row.original.categories?.length
+                  ? info.row.original.categories.map((category) => t(`categories.short.${category}`)).join(', ')
+                  : '-',
+            },
           {
             accessorKey: 'name',
             header: t('table.player'),
@@ -124,7 +131,7 @@ export function CountryEvents({ event, country, translations }: CountryEventsPro
           },
         ] as ColumnDef<CountryEventRow>[]
       ).filter(Boolean),
-    [translations, t, event]
+    [translations, t, event, showCategories]
   );
 
   return (

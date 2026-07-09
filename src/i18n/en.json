@@ -192,6 +192,9 @@
       "analysis": "AI analysis"
     }
   },
+  "categories": {
+    "all": "All categories"
+  },
   "country": {
     "AD": "Andorra",
     "AE": "United Arab Emirates",

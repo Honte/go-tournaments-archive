@@ -21,7 +21,7 @@ type PlayerEventsProps = {
 
 type EventRow = {
   year: number;
-  categories?: string[];
+  categories?: Record<string, number | '?'>;
   stage: Pick<Stage, 'name' | 'type'>;
   name: string;
   rank?: string;
@@ -83,10 +83,7 @@ export function PlayerEvents({ event, player, translations }: PlayerEventsProps)
           event.categories?.length && {
             accessorKey: 'categories',
             header: t('table.category'),
-            cell: (info) =>
-              info.row.original.categories?.length
-                ? info.row.original.categories.map((category) => t(`categories.short.${category}`)).join(', ')
-                : '-',
+            cell: (info) => formatCategories(info.row.original.categories, t),
           },
           {
             accessorKey: 'stage',
@@ -141,4 +138,10 @@ export function PlayerEvents({ event, player, translations }: PlayerEventsProps)
       <StatsTable data={data} columns={columns} />
     </div>
   );
+}
+
+function formatCategories(categories: Record<string, number | '?'> | undefined, t: (key: string) => string) {
+  const keys = Object.keys(categories ?? {});
+
+  return keys.length ? keys.map((category) => t(`categories.short.${category}`)).join(', ') : '-';
 }

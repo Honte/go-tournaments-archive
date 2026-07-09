@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import type { Game, Player, Tournament, TournamentDetails } from '@/schema/data';
 import type { EventDefinition } from '@/schema/event';
+import { filterCountryStatsByCategory, getCountryAvailableCategories } from '@/libs/countryStats';
 import { loadClassificationStage } from '@/data/classification';
 import { createPlayersHandler } from '@/data/players';
 import { calculateStats } from '@/data/stats';
@@ -112,8 +113,55 @@ describe('calculateStats', () => {
     const playerStage = stats.players[players.a.id].results[0].stages[0];
     const countryStage = stats.countries.PL.years[2025].results.find((result) => result.id === players.a.id)?.stages[0];
 
-    assert.deepEqual(playerStage.categories, ['u16', 'u12']);
-    assert.deepEqual(countryStage?.categories, ['u16', 'u12']);
+    assert.deepEqual(playerStage.categories, { u16: 1, u12: '?' });
+    assert.deepEqual(countryStage?.categories, { u16: 1, u12: '?' });
+  });
+
+  it('derives available country categories and filters country stats by category', () => {
+    const playersHandler = createPlayersHandler();
+    const players = playersHandler.loadJson({
+      a: 'Alice Nowak 1d (PL)',
+      b: 'Bob Smith 1k (DE)',
+      c: 'Carol Lee 2k (FR)',
+    });
+    const stats = calculateStats(
+      {
+        ...creteEventConfig(),
+        categories: ['u21', 'u16', 'u12'],
+      },
+      [
+        createTournament(
+          players,
+          {},
+          {
+            a: { u12: '?', u16: 1 },
+            b: { u16: 2 },
+          },
+          {
+            u16: [['a'], ['b']],
+            u12: [['a']],
+          }
+        ),
+      ],
+      playersHandler
+    );
+    const country = stats.countries.PL;
+    const filtered = filterCountryStatsByCategory(country, 'u16');
+
+    assert.deepEqual(getCountryAvailableCategories(country, ['u21', 'u16', 'u12']), ['u16', 'u12']);
+    assert.deepEqual(filtered.medals, [['2025'], [], []]);
+    assert.equal(filtered.bestPlace, 1);
+    assert.equal(filtered.totalGames, 2);
+    assert.equal(filtered.totalWon, 2);
+    assert.deepEqual(Object.keys(filtered.years), ['2025']);
+    assert.deepEqual(
+      filtered.years[2025].results.map((result) => result.id),
+      [players.a.id]
+    );
+    assert.deepEqual(
+      filtered.years[2025].results[0].stages.map((stage) => stage.categories),
+      [{ u16: 1 }]
+    );
   });
 });
 
@@ -169,13 +217,15 @@ function creteEventConfig(): EventDefinition {
 function createTournament(
   players: Record<string, Player>,
   games: Record<string, Game>,
-  playerCategories: Record<string, Record<string, number | '?'>> = {}
+  playerCategories: Record<string, Record<string, number | '?'>> = {},
+  categoriesTop?: Record<string, string[][]>
 ): Tournament {
   return {
     id: 2025,
     year: 2025,
     location: 'Warsaw',
     top: [['a'], ['b']],
+    categoriesTop,
     games,
     players,
     hasSgfs: true,

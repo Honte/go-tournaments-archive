@@ -1,8 +1,10 @@
 'use client';
 
+import { useMemo } from 'react';
 import type { CountryStats } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Locale, Translations } from '@/i18n/consts';
+import { filterCountryStatsByCategory } from '@/libs/countryStats';
 import { CountryAchievements } from '@/components/stats/CountryAchievements';
 import { CountryEvents } from '@/components/stats/CountryEvents';
 import { CountryOpponents } from '@/components/stats/CountryOpponents';
@@ -15,15 +17,17 @@ type CountryStatsProps = {
   event: EventContext;
   code: string;
   locale: Locale;
+  category?: string;
 };
 
 type CountryStatsContentProps = {
   event: EventContext;
   country: CountryStats;
   translations: Translations;
+  category?: string;
 };
 
-export function CountryStats({ event, code, locale }: CountryStatsProps) {
+export function CountryStats({ event, code, locale, category }: CountryStatsProps) {
   const { data: translations } = useTranslationsData(event, locale);
   const { data: country } = useCountryStatsData(event, code);
 
@@ -31,16 +35,21 @@ export function CountryStats({ event, code, locale }: CountryStatsProps) {
     return <Loader />;
   }
 
-  return <CountryStatsContent event={event} country={country} translations={translations} />;
+  return <CountryStatsContent event={event} country={country} translations={translations} category={category} />;
 }
 
-function CountryStatsContent({ event, country, translations }: CountryStatsContentProps) {
+function CountryStatsContent({ event, country, translations, category }: CountryStatsContentProps) {
+  const filteredCountry = useMemo(
+    () => (category ? filterCountryStatsByCategory(country, category) : country),
+    [country, category]
+  );
+
   return (
     <div className="flex flex-col gap-2">
-      <CountryAchievements event={event} country={country} translations={translations} />
-      <CountryPlayers event={event} country={country} translations={translations} />
-      <CountryEvents event={event} country={country} translations={translations} />
-      <CountryOpponents event={event} country={country} translations={translations} />
+      <CountryAchievements event={event} country={filteredCountry} translations={translations} />
+      <CountryPlayers event={event} country={filteredCountry} translations={translations} />
+      <CountryEvents event={event} country={filteredCountry} translations={translations} showCategories={!category} />
+      <CountryOpponents event={event} country={filteredCountry} translations={translations} />
     </div>
   );
 }

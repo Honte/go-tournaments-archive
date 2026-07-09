@@ -192,6 +192,9 @@
       "analysis": "Analiz AI"
     }
   },
+  "categories": {
+    "all": "Wszystkie kategorie"
+  },
   "country": {
     "AD": "Andora",
     "AE": "Zjednoczone Emiraty Arabskie",
