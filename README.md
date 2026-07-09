@@ -592,10 +592,10 @@ responses. Enable output formats per event or preset with `generateSvgs`, `gener
 These scripts are for one-off data maintenance:
 
 ```bash
-npm run extract:mp-db    # Extract PGC data from MySQL and convert to YAML
-npm run builder          # Interactive build helper for selecting EVENT and BASE_PATH
-npm run players:update -- --event <event> # Add missing event-player registry entries
-npm run players:egd -- --event <event>    # Enrich an event-player registry from EGD data
+npm run extract:mp-db          # Extract PGC data from MySQL and convert to YAML
+npm run builder                # Interactive build helper for selecting EVENT and BASE_PATH
+npm run players:update <event> # Add missing event-player registry entries
+npm run players:egd <event>    # Enrich an event-player registry from EGD data
 ```
 
 Relevant tool modules:

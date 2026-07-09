@@ -4,7 +4,7 @@ import { collectEventPlayers, requireEventId } from './common';
 import { updateEventPlayersFile } from './file';
 
 const { event } = readCliParams({
-  event: { type: 'string', short: 'e', default: process.env.EVENT },
+  event: { type: 'string', positional: true, short: 'e', default: process.env.EVENT },
 });
 
 const targetEvent = await loadEventDefinition(requireEventId(event));

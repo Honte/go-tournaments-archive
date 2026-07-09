@@ -6,7 +6,7 @@ import { enrichPlayersWithEgd, ensureEgdArchive, readEgdPlayersFromZip } from '.
 import { updateEventPlayersFile } from './file';
 
 const { event, force } = readCliParams({
-  event: { type: 'string', short: 'e', default: process.env.EVENT },
+  event: { type: 'string', positional: true, short: 'e', default: process.env.EVENT },
   force: { type: 'boolean', short: 'f', default: false },
 });
 
