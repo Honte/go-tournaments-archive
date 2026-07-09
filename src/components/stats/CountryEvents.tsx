@@ -20,6 +20,7 @@ type CountryEventsProps = {
 
 type CountryEventRow = {
   year: number;
+  categories?: string[];
   id: string;
   name: string;
   rank?: string;
@@ -49,6 +50,7 @@ export function CountryEvents({ event, country, translations }: CountryEventsPro
             id: result.id,
             name: result.name,
             rank: result.rank,
+            categories: stage.categories,
             place: stage.place,
             games,
             won,
@@ -72,6 +74,14 @@ export function CountryEvents({ event, country, translations }: CountryEventsPro
             cell: (info) => (
               <YearLink event={event} locale={translations.locale} year={info.cell.getValue() as number} />
             ),
+          },
+          event.categories?.length && {
+            accessorKey: 'categories',
+            header: t('table.category'),
+            cell: (info) =>
+              info.row.original.categories?.length
+                ? info.row.original.categories.map((category) => t(`categories.short.${category}`)).join(', ')
+                : '-',
           },
           {
             accessorKey: 'name',

@@ -86,11 +86,16 @@ export function calculateStats(
           }
         }
 
+        const playerCategories = event.categories?.filter(
+          (category) => 'categories' in player && player.categories?.[category]
+        );
+
         const stageResult = {
           type: stage.type,
           name: stage.name,
           place: player.place,
           games: playerGames,
+          categories: playerCategories,
         };
 
         playerResult.stages.push(stageResult);

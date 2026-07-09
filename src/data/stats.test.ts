@@ -84,6 +84,37 @@ describe('calculateStats', () => {
     assert.equal(stats.players[players.a.id].name, 'Alice Display');
     assert.equal(stats.players[players.b.id].name, 'Bob Smith');
   });
+
+  it('preserves category memberships on player and country stage results', () => {
+    const playersHandler = createPlayersHandler();
+    const players = playersHandler.loadJson({
+      a: 'Alice Nowak 1d (PL)',
+      b: 'Bob Smith 1k (DE)',
+      c: 'Carol Lee 2k (FR)',
+    });
+    const stats = calculateStats(
+      {
+        ...creteEventConfig(),
+        categories: ['u21', 'u16', 'u12'],
+      },
+      [
+        createTournament(
+          players,
+          {},
+          {
+            a: { u12: '?', u16: 1 },
+            b: { u16: 2 },
+          }
+        ),
+      ],
+      playersHandler
+    );
+    const playerStage = stats.players[players.a.id].results[0].stages[0];
+    const countryStage = stats.countries.PL.years[2025].results.find((result) => result.id === players.a.id)?.stages[0];
+
+    assert.deepEqual(playerStage.categories, ['u16', 'u12']);
+    assert.deepEqual(countryStage?.categories, ['u16', 'u12']);
+  });
 });
 
 describe('loadClassificationStage', () => {
@@ -135,7 +166,11 @@ function creteEventConfig(): EventDefinition {
   };
 }
 
-function createTournament(players: Record<string, Player>, games: Record<string, Game>): Tournament {
+function createTournament(
+  players: Record<string, Player>,
+  games: Record<string, Game>,
+  playerCategories: Record<string, Record<string, number | '?'>> = {}
+): Tournament {
   return {
     id: 2025,
     year: 2025,
@@ -173,6 +208,7 @@ function createTournament(players: Record<string, Player>, games: Record<string,
             won: ['b'],
             lost: [],
             breakers: createBreakers(1),
+            ...(playerCategories.a ? { categories: playerCategories.a } : {}),
           },
           {
             id: 'b',
@@ -190,6 +226,7 @@ function createTournament(players: Record<string, Player>, games: Record<string,
             won: [],
             lost: ['a'],
             breakers: createBreakers(0),
+            ...(playerCategories.b ? { categories: playerCategories.b } : {}),
           },
         ],
       },

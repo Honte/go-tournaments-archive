@@ -92,6 +92,7 @@
   "table": {
     "year": "Rok",
     "code": "Kod",
+    "category": "Kategoria",
     "stage": "Etap",
     "place": "Miejsce",
     "country": "Kraj",

@@ -92,6 +92,7 @@
   "table": {
     "year": "Year",
     "code": "Code",
+    "category": "Category",
     "stage": "Stage",
     "place": "Place",
     "country": "Country",
