@@ -28,9 +28,9 @@ export function Achievements({ event, player, translations }: AchievementsProps)
   for (const [index, medal] of MEDALS.entries()) {
     if (event.categories?.length) {
       for (const category of event.categories) {
-        const achievements = player.categoriesMedals[category][index];
+        const achievements = player.categoriesMedals[category]?.[index];
 
-        if (achievements.length) {
+        if (achievements?.length) {
           details[t(`winners.${medal}In`, t(`categories.short.${category}`))] = (
             <AchievementYears event={event} years={achievements} locale={translations.locale} />
           );

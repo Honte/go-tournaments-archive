@@ -17,6 +17,7 @@ type PlayerEventsProps = {
   event: EventContext;
   player: PlayerStats;
   translations: Translations;
+  showCategories?: boolean;
 };
 
 type EventRow = {
@@ -33,7 +34,12 @@ type EventRow = {
   wonPercent: number;
 };
 
-export function PlayerEvents({ event, player, translations }: PlayerEventsProps) {
+export function PlayerEvents({
+  event,
+  player,
+  translations,
+  showCategories = Boolean(event.categories?.length),
+}: PlayerEventsProps) {
   const t = getTranslator(translations);
 
   const data = useMemo(() => {
@@ -47,7 +53,7 @@ export function PlayerEvents({ event, player, translations }: PlayerEventsProps)
         results.push({
           year: event.year,
           name: event.name,
-          categories: stage.categories,
+          categories: showCategories && stage.categories ? stage.categories : undefined,
           stage: {
             name: stage.name,
             type: stage.type,
@@ -64,7 +70,7 @@ export function PlayerEvents({ event, player, translations }: PlayerEventsProps)
     }
 
     return results.sort((a, b) => b.year - a.year);
-  }, [player]);
+  }, [player, showCategories]);
 
   const hasMultipleNames = new Set(data.map((row) => row.name)).size > 1;
   const hasMultipleCountries = new Set(data.map((row) => row.country)).size > 1;
@@ -80,11 +86,12 @@ export function PlayerEvents({ event, player, translations }: PlayerEventsProps)
               <YearLink event={event} locale={translations.locale} year={info.cell.getValue() as number} />
             ),
           },
-          event.categories?.length && {
-            accessorKey: 'categories',
-            header: t('table.category'),
-            cell: (info) => formatCategories(info.row.original.categories, t),
-          },
+          showCategories &&
+            event.categories?.length && {
+              accessorKey: 'categories',
+              header: t('table.category'),
+              cell: (info) => formatCategories(info.row.original.categories, t),
+            },
           {
             accessorKey: 'stage',
             header: t('table.stage'),
@@ -129,7 +136,7 @@ export function PlayerEvents({ event, player, translations }: PlayerEventsProps)
           },
         ] as ColumnDef<EventRow>[]
       ).filter(Boolean),
-    [translations, hasMultipleNames, hasMultipleCountries, event, t]
+    [translations, hasMultipleNames, hasMultipleCountries, event, t, showCategories]
   );
 
   return (

@@ -3,6 +3,7 @@ import { describe, it } from 'node:test';
 import type { Game, Player, Tournament, TournamentDetails } from '@/schema/data';
 import type { EventDefinition } from '@/schema/event';
 import { filterCountryStatsByCategory, getCountryAvailableCategories } from '@/libs/countryStats';
+import { filterPlayerStatsByCategory, getPlayerAvailableCategories } from '@/libs/playerStats';
 import { loadClassificationStage } from '@/data/classification';
 import { createPlayersHandler } from '@/data/players';
 import { calculateStats } from '@/data/stats';
@@ -160,6 +161,70 @@ describe('calculateStats', () => {
     );
     assert.deepEqual(
       filtered.years[2025].results[0].stages.map((stage) => stage.categories),
+      [{ u16: 1 }]
+    );
+  });
+
+  it('derives available player categories and filters player stats by category', () => {
+    const playersHandler = createPlayersHandler();
+    const players = playersHandler.loadJson({
+      a: 'Alice Nowak 1d (PL)',
+      b: 'Bob Smith 1k (DE)',
+      c: 'Carol Lee 2k (FR)',
+    });
+    const stats = calculateStats(
+      {
+        ...creteEventConfig(),
+        categories: ['u21', 'u16', 'u12'],
+      },
+      [
+        createTournament(
+          players,
+          {
+            g1: {
+              id: 'g1',
+              stage: 0,
+              players: [
+                { id: 'a', won: true },
+                { id: 'b', won: false },
+              ],
+              result: 'B+R',
+              props: { sgf: '2025/g1.sgf' },
+            },
+          },
+          {
+            a: { u12: '?', u16: 1 },
+            b: { u16: 2 },
+          },
+          {
+            u16: [['a'], ['b']],
+            u12: [['a']],
+          }
+        ),
+      ],
+      playersHandler
+    );
+    const player = stats.players[players.a.id];
+    const filtered = filterPlayerStatsByCategory(player, 'u16');
+
+    assert.deepEqual(getPlayerAvailableCategories(player, ['u21', 'u16', 'u12']), ['u16', 'u12']);
+    assert.deepEqual(filtered.medals, [['2025'], [], []]);
+    assert.deepEqual(filtered.categoriesMedals, { u16: [['2025'], [], []] });
+    assert.deepEqual(filtered.country, ['PL']);
+    assert.equal(filtered.bestPlace, 1);
+    assert.equal(filtered.totalAttended, 1);
+    assert.equal(filtered.totalGames, 2);
+    assert.equal(filtered.totalWon, 2);
+    assert.equal(filtered.totalSgfs, 1);
+    assert.equal(filtered.score, 10_000);
+    assert.deepEqual(filtered.opponents, { [players.b.id]: 'Bob Smith' });
+    assert.deepEqual(
+      filtered.results.map((result) => result.year),
+      [2025]
+    );
+    assert.equal(filtered.results[0].place, 1);
+    assert.deepEqual(
+      filtered.results[0].stages.map((stage) => stage.categories),
       [{ u16: 1 }]
     );
   });

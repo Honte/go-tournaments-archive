@@ -20,8 +20,8 @@ export function categoryUrl(event: EventContext, locale: string, category: strin
   return joinPaths(event.prefix, `/${locale}/category/${category}`);
 }
 
-export function playerUrl(event: EventContext, locale: string, playerId: string) {
-  return joinPaths(event.prefix, `/${locale}/stats/${playerId}`);
+export function playerUrl(event: EventContext, locale: string, playerId: string, category?: string) {
+  return joinPaths(event.prefix, `/${locale}/stats/${playerId}`, category);
 }
 
 export function countryUrl(event: EventContext, locale: string, code: string, category?: string) {
