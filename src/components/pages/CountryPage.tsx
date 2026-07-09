@@ -17,11 +17,7 @@ type CountryPageProps = {
 };
 
 export async function CountryPage({ event, locale, code, category }: CountryPageProps) {
-  if (!event.showCountry) {
-    return notFound();
-  }
-
-  if (category && !event.categories?.includes(category)) {
+  if (!event.showCountry || (category && !event.categories?.includes(category))) {
     return notFound();
   }
 
@@ -59,6 +55,10 @@ export async function CountryPage({ event, locale, code, category }: CountryPage
 }
 
 export async function getCountryPageMetadata({ event, locale, code, category }: CountryPageProps) {
+  if (!event.showCountry || (category && !event.categories?.includes(category))) {
+    return notFound();
+  }
+
   const translations = await getTranslations(event, locale);
   const t = getTranslator(translations);
   const name = t(`country.${code.toUpperCase()}`);

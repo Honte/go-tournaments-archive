@@ -74,8 +74,17 @@ export async function PlayerPage({ event, locale, slug, category }: PlayerPagePr
 }
 
 export async function getPlayerPageMetadata({ event, locale, slug, category }: PlayerPageProps) {
+  if (category && !event.categories?.includes(category)) {
+    return notFound();
+  }
+
   const translations = await getTranslations(event, locale);
   const player = await getPlayerStats(event, slug);
+
+  if (!player) {
+    return notFound();
+  }
+
   const t = getTranslator(translations);
   const name = player && category ? `${player.name} - ${t(`categories.full.${category}`)}` : player?.name;
 
