@@ -260,6 +260,7 @@ export type PlayerResult = {
 export type PlayerStageResult = Pick<Stage, 'name' | 'type'> & {
   place: number;
   games: PlayerGame[];
+  categories?: Record<string, number | '?'>;
 };
 
 export type CountryResult = {

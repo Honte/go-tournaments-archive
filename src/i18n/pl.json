@@ -92,6 +92,7 @@
   "table": {
     "year": "Rok",
     "code": "Kod",
+    "category": "Kategoria",
     "stage": "Etap",
     "place": "Miejsce",
     "country": "Kraj",
@@ -190,6 +191,9 @@
       "streams": "Transmisji wideo",
       "analysis": "Analiz AI"
     }
+  },
+  "categories": {
+    "all": "Wszystkie kategorie"
   },
   "country": {
     "AD": "Andora",

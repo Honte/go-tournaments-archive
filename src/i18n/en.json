@@ -92,6 +92,7 @@
   "table": {
     "year": "Year",
     "code": "Code",
+    "category": "Category",
     "stage": "Stage",
     "place": "Place",
     "country": "Country",
@@ -190,6 +191,9 @@
       "streams": "Games streamed",
       "analysis": "AI analysis"
     }
+  },
+  "categories": {
+    "all": "All categories"
   },
   "country": {
     "AD": "Andorra",

@@ -86,11 +86,24 @@ export function calculateStats(
           }
         }
 
+        const playerCategories: Record<string, number | '?'> = {};
+
+        if (event.categories?.length && 'categories' in player && player.categories) {
+          for (const category of event.categories) {
+            const place = player.categories[category];
+
+            if (place) {
+              playerCategories[category] = place;
+            }
+          }
+        }
+
         const stageResult = {
           type: stage.type,
           name: stage.name,
           place: player.place,
           games: playerGames,
+          categories: playerCategories,
         };
 
         playerResult.stages.push(stageResult);

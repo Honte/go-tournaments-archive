@@ -25,11 +25,12 @@ Available event directories:
 | Event ID | Archive                           | Notes                                                                            |
 | -------- | --------------------------------- | -------------------------------------------------------------------------------- |
 | `egc`    | European Go Championships         | Locale `en`, country stats                                                       |
-| `epc`    | European Pro Go Championships     | Locales `en`, `pl`                                                               |
+| `epc`    | European Pro Go Championships     | Locale `en`                                                                      |
+| `epq`    | European Pro Qualification        | Locale `en`                                                                      |
 | `esgc`   | European Student Go Championships | Locale `en`, country stats                                                       |
 | `ewgc`   | European Women Go Championships   | Locale `en`, country stats                                                       |
 | `eygc`   | European Youth Championships      | Locale `en`, country stats, category stats for `u21`, `u20`, `u18`, `u16`, `u12` |
-| `hrgc`   | Croatian Go Championships         | Locales `en`, `pl`                                                               |
+| `hrgc`   | Croatian Go Championships         | Locale `en`                                                                      |
 | `iegc`   | Irish Go Championships            | Locale `en`                                                                      |
 | `kpmc`   | Korea Prime Minister Cup          | Locales `en`, `pl`, country stats                                                |
 | `pagc`   | Polish Academic Go Championships  | Locales `pl`, `en`                                                               |
@@ -137,9 +138,9 @@ Serve the exported output locally:
 npm run start
 ```
 
-`npm run build` runs `prebuild` first. The prebuild step generates data JSON, cleaned SGFs, raw SGFs, configured board
-previews, and ZIP files into `public/data` and `public/sgf`; `next build` then exports static pages into `out/`. Single
-event builds write root data and SGF assets such as `public/data/tournaments.json` and `public/sgf/list.json`.
+`npm run build` runs `prebuild` first. The prebuild step generates data JSON, cleaned SGFs, and raw SGFs, plus configured
+board previews and ZIP files, into `public/data` and `public/sgf`; `next build` then exports static pages into `out/`.
+Single-event builds write root data and SGF assets such as `public/data/tournaments.json` and `public/sgf/list.json`.
 Multi-event builds write per-event assets such as `public/data/<prefix>/tournaments.json` and
 `public/sgf/<prefix>/list.json`. Preset entries marked `external: true` appear in selectors but are skipped for internal
 routes and generated assets.
@@ -148,8 +149,8 @@ Environment variables:
 
 - `CONFIG` selects a configuration preset from `configurations/<name>.yml`.
 - `EVENT` selects the event directory only through the default `single.yml` fallback when `CONFIG` is not set.
-- `BASE_PATH` sets the static deployment subdirectory and Next.js `basePath`. Use this when serving the exported site
-  below a path instead of the domain root, for example `/archive`.
+- `BASE_PATH` is substituted into the selected configuration preset. It sets the static deployment subdirectory and
+  Next.js `basePath` only when that preset uses `${BASE_PATH}`, such as `single.yml`.
 - `SGF_ASSET_WORKERS` optionally caps the number of worker threads used while generating SGF assets.
 
 Build for a subdirectory deployment:
@@ -158,17 +159,13 @@ Build for a subdirectory deployment:
 BASE_PATH=/archive EVENT=pgc npm run build
 ```
 
-Build a named preset below a subdirectory when that preset supports `${BASE_PATH}`:
-
-```bash
-BASE_PATH=/europe CONFIG=europe npm run build
-```
+Named presets can instead define a fixed `basePath`; for example, `europe.yml` builds under `/archives`.
 
 ## App routes
 
-The route examples below are shown without a base path. When `BASE_PATH` is set, public routes and generated
-data/assets are served below that prefix, for example `/archive/pl` in single-event mode or `/archive/pgc/pl` in
-multi-event mode.
+The route examples below are shown without a base path. When the selected preset defines `basePath`, public routes and
+generated data/assets are served below that prefix, for example `/archive/pl` in single-event mode or
+`/archive/pgc/pl` in multi-event mode.
 
 Single-event mode serves one archive at the root. Multi-event mode serves the selector at `/`, redirects
 `/:eventPrefix` to that event's best locale, and serves event pages below the configured prefix.
@@ -184,9 +181,13 @@ Main static pages:
 - `/:locale/stats` or `/:eventPrefix/:locale/stats` - all-time player table.
 - `/:locale/stats/:slug` or `/:eventPrefix/:locale/stats/:slug` - individual player statistics, achievements, events,
   and opponents.
+- `/:locale/stats/:slug/:category` or `/:eventPrefix/:locale/stats/:slug/:category` - category-scoped player
+  statistics when the event defines `categories`.
 - `/:locale/stats/country` or `/:eventPrefix/:locale/stats/country` - all-time country table when `showCountry` is
   enabled.
 - `/:locale/stats/country/:code` or `/:eventPrefix/:locale/stats/country/:code` - individual country statistics.
+- `/:locale/stats/country/:code/:category` or `/:eventPrefix/:locale/stats/country/:code/:category` - category-scoped
+  country statistics when the event defines `categories`.
 - `/:locale/stats/games` or `/:eventPrefix/:locale/stats/games` - filterable browser of games that have linked SGFs.
 - `/:locale/category/:category` or `/:eventPrefix/:locale/category/:category` - category medal/results page when the
   event defines `categories`.
@@ -213,8 +214,8 @@ Generated data/assets:
 - `/favicon.svg`, `/apple-icon.png`, `/logo-black.svg`, `/logo-white.svg`, or the same files below `/:eventPrefix/` -
   generated event branding assets.
 
-Production data and SGF files are prebuilt into `public/`. Development-only route handlers named `route.dev.ts` serve
-equivalent JSON and SGF responses during `next dev`.
+Production data and SGF files are prebuilt into `public/`. Development-only `route.*.dev.ts` handlers serve equivalent
+JSON and SGF responses during `next dev`.
 
 ## Project layout
 
@@ -225,8 +226,7 @@ events/
     config.ts
     Logo.tsx
     colors.css
-    i18n/pl.json
-    i18n/en.json
+    i18n/<locale>.json
     data/
     sgf/
 src/
@@ -253,7 +253,7 @@ Each event has `events/[event-id]/config.ts` exporting an `EventDefinition`:
 ```ts
 type EventDefinition = {
   id: string;
-  locales: ['pl', ...string[]];
+  locales: [Locale, ...Locale[]]; // `Locale` is `en` or `pl`
   showCountry?: boolean;
   showBestPlace?: boolean;
   hideGamesWithoutSgf?: boolean;
@@ -262,7 +262,7 @@ type EventDefinition = {
 };
 ```
 
-Archive presets in `configurations/*.yml` can add per-event or shared `EventConfig` fields:
+Archive presets in `configurations/*.yml` can add per-event or shared event configuration fields:
 
 ```ts
 type EventConfig = {
@@ -272,7 +272,6 @@ type EventConfig = {
   generateZips?: boolean;
   external?: boolean;
   domain?: string;
-  basePath?: string;
   prefix?: string;
   links?: (EventLink | EventLinkGroup)[];
 };
@@ -291,7 +290,9 @@ Common flags:
 - `prefix` controls the public route segment and generated asset subdirectory in multi-event presets.
 - `external` keeps an event visible in selector data but skips internal route/static asset generation.
 - `domain` is used for external selector links and absolute URLs.
-- `basePath` is an event-level URL prefix used by generated data and asset URLs.
+- `basePath` belongs to the top-level archive preset, not an event entry or shared `config`; it is propagated to each
+  resolved event for generated data and asset URLs.
+- `trailingSlash` also belongs to the top-level archive preset and controls Next.js static route output.
 - `links` adds extra event navigation links.
 - `generateSvgs`, `generatePngs`, `generateJpgs` select preview variants emitted from SGF files during prebuild.
 - `generateZips` emits `/sgf/:year.zip` or `/sgf/:eventPrefix/:year.zip` archives and shows a ZIP download action next
@@ -356,7 +357,20 @@ players:
 
 Supported ranks use `Xk`, `Xd`, or `Xp`, for example `5k`, `1d`, `2p`.
 
-Player IDs are local to the YAML file. Cross-tournament player stats are linked by normalized name slug.
+Player keys in tournament YAML are local to one edition. The loader maintains event-wide player identities, using EGD
+numbers when present and player names otherwise. Add an optional `events/[event-id]/players.yml` registry when a player
+needs a stable ID, canonical display name, country, historical original name, or SGF-matcher nickname:
+
+```yaml
+players:
+  - id: jane-smith
+    name: Jane Smith
+    country: PL
+    egd: 12345
+    original: Jane A. Smith
+    nickname:
+      - GoJane
+```
 
 ## Stage fields
 
@@ -578,8 +592,10 @@ responses. Enable output formats per event or preset with `generateSvgs`, `gener
 These scripts are for one-off data maintenance:
 
 ```bash
-npm run extract:mp-db    # Extract PGC data from MySQL and convert to YAML
-npm run builder          # Interactive build helper for selecting EVENT and BASE_PATH
+npm run extract:mp-db          # Extract PGC data from MySQL and convert to YAML
+npm run builder                # Interactive build helper for selecting EVENT and BASE_PATH
+npm run players:update <event> # Add missing event-player registry entries
+npm run players:egd <event>    # Enrich an event-player registry from EGD data
 ```
 
 Relevant tool modules:
