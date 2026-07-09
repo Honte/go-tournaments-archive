@@ -44,6 +44,10 @@ export async function CategoryPage({ event, locale, category }: CategoryPageProp
 }
 
 export async function getCategoryPageMetadata({ event, locale, category }: CategoryPageProps) {
+  if (!event.showCountry || !event.categories?.includes(category)) {
+    return notFound();
+  }
+
   const translations = await getTranslations(event, locale);
   const t = getTranslator(translations);
   const name = t(`categories.full.${category}`);

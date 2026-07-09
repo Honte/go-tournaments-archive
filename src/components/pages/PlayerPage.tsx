@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import type { PlayerStats as PlayerStatsData } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Locale } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
@@ -33,7 +34,7 @@ export async function PlayerPage({ event, locale, slug, category }: PlayerPagePr
 
   const categories = getPlayerAvailableCategories(player, event.categories ?? []);
 
-  if (category && !categories.includes(category)) {
+  if (category && (categories.length < 2 || !categories.includes(category))) {
     return notFound();
   }
 
@@ -110,6 +111,11 @@ export async function getPlayerPageOptions(event: EventContext) {
 
 export async function getPlayerCategoryPageOptions(event: EventContext) {
   const players = await getAllPlayersStats(event);
+
+  return getPlayerCategoryPageOptionsFromStats(event, players);
+}
+
+export function getPlayerCategoryPageOptionsFromStats(event: EventContext, players: Record<string, PlayerStatsData>) {
   const pages: { locale: Locale; slug: string; category: string }[] = [];
 
   for (const player of Object.values(players)) {
@@ -117,7 +123,13 @@ export async function getPlayerCategoryPageOptions(event: EventContext) {
       continue;
     }
 
-    for (const category of getPlayerAvailableCategories(player, event.categories ?? [])) {
+    const categories = getPlayerAvailableCategories(player, event.categories ?? []);
+
+    if (categories.length < 2) {
+      continue;
+    }
+
+    for (const category of categories) {
       for (const locale of event.locales) {
         pages.push({
           locale,

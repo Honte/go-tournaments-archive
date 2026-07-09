@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import type { CountryStats as CountryStatsData } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Locale } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
@@ -32,7 +33,7 @@ export async function CountryPage({ event, locale, code, category }: CountryPage
   const name = t(`country.${country.code.toUpperCase()}`);
   const categories = getCountryAvailableCategories(country, event.categories ?? []);
 
-  if (category && !categories.includes(category)) {
+  if (category && (categories.length < 2 || !categories.includes(category))) {
     return notFound();
   }
 
@@ -90,10 +91,24 @@ export async function getCountryPageOptions(event: EventContext) {
 
 export async function getCountryCategoryPageOptions(event: EventContext) {
   const countries = await getAllCountriesStats(event);
+
+  return getCountryCategoryPageOptionsFromStats(event, countries);
+}
+
+export function getCountryCategoryPageOptionsFromStats(
+  event: EventContext,
+  countries: Record<string, CountryStatsData>
+) {
   const pages: { locale: Locale; code: string; category: string }[] = [];
 
   for (const country of Object.values(countries)) {
-    for (const category of getCountryAvailableCategories(country, event.categories ?? [])) {
+    const categories = getCountryAvailableCategories(country, event.categories ?? []);
+
+    if (categories.length < 2) {
+      continue;
+    }
+
+    for (const category of categories) {
       for (const locale of event.locales) {
         pages.push({
           locale,

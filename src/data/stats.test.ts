@@ -7,6 +7,8 @@ import { filterPlayerStatsByCategory, getPlayerAvailableCategories } from '@/lib
 import { loadClassificationStage } from '@/data/classification';
 import { createPlayersHandler } from '@/data/players';
 import { calculateStats } from '@/data/stats';
+import { getCountryCategoryPageOptionsFromStats } from '@/components/pages/CountryPage';
+import { getPlayerCategoryPageOptionsFromStats } from '@/components/pages/PlayerPage';
 
 describe('calculateStats', () => {
   it('skips excluded stages for player and country stats while keeping global games', () => {
@@ -226,6 +228,49 @@ describe('calculateStats', () => {
     assert.deepEqual(
       filtered.results[0].stages.map((stage) => stage.categories),
       [{ u16: 1 }]
+    );
+  });
+
+  it('generates category stats subpages only for players and countries with multiple categories', () => {
+    const playersHandler = createPlayersHandler();
+    const players = playersHandler.loadJson({
+      a: 'Alice Nowak 1d (PL)',
+      b: 'Bob Smith 1k (DE)',
+    });
+    const event = {
+      ...creteEventConfig(),
+      categories: ['u21', 'u16', 'u12'],
+    };
+    const stats = calculateStats(
+      event,
+      [
+        createTournament(
+          players,
+          {},
+          {
+            a: { u16: 1, u12: '?' },
+            b: { u16: 2 },
+          },
+          {
+            u16: [['a'], ['b']],
+            u12: [['a']],
+          }
+        ),
+      ],
+      playersHandler
+    );
+
+    assert.deepEqual(
+      getPlayerCategoryPageOptionsFromStats(event, stats.players)
+        .map(({ slug, category }) => `${slug}/${category}`)
+        .sort(),
+      [`${players.a.id}/u12`, `${players.a.id}/u16`]
+    );
+    assert.deepEqual(
+      getCountryCategoryPageOptionsFromStats(event, stats.countries)
+        .map(({ code, category }) => `${code}/${category}`)
+        .sort(),
+      ['pl/u12', 'pl/u16']
     );
   });
 });
