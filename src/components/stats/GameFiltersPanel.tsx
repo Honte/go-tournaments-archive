@@ -46,6 +46,10 @@ export function GameFiltersPanel({ id, model, onChange, onClear, translations }:
     yt: t('gamesFilter.hasYoutube'),
     ai: t('gamesFilter.hasAi'),
   };
+  const colorOptions = [
+    { value: 'black', label: t('gamesFilter.black'), count: facets.playerColor.black },
+    { value: 'white', label: t('gamesFilter.white'), count: facets.playerColor.white },
+  ];
   const sortOptions = getSortOptions(t);
   const groupOptions = getGroupOptions(t, grouping);
   const focalSelected = Boolean(state.player || state.country);
@@ -81,6 +85,20 @@ export function GameFiltersPanel({ id, model, onChange, onClear, translations }:
               name="country"
             />
           )}
+
+          <GameFacetSelect
+            id="game-player-color"
+            label={t('gamesFilter.playerColor')}
+            options={colorOptions}
+            value={state.playerColor ?? null}
+            onChange={(playerColor) =>
+              patch({ playerColor: playerColor === 'black' || playerColor === 'white' ? playerColor : undefined })
+            }
+            placeholder={t('gamesFilter.anyColor')}
+            noOptionsMessage={t('gamesFilter.noOptions')}
+            name="playerColor"
+            searchable={false}
+          />
 
           <RankRange
             id="game-player-rank"

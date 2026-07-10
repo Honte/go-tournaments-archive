@@ -4,6 +4,7 @@ import type { Player } from '@/schema/data';
 export const GAME_RESULT_TYPES = ['resignation', 'points', 'time', 'other'] as const;
 export const GAME_MEDIA = ['ogs', 'yt', 'ai'] as const;
 export const GAME_WINNERS = ['black', 'white', 'player', 'opponent'] as const;
+export const PLAYER_COLORS = ['black', 'white'] as const;
 export const GAME_SORTS = [
   'year-desc',
   'year-asc',
@@ -28,6 +29,7 @@ export const GAME_GROUPS = [
 export type GameResultType = (typeof GAME_RESULT_TYPES)[number];
 export type GameMedia = (typeof GAME_MEDIA)[number];
 export type GameWinner = (typeof GAME_WINNERS)[number];
+export type PlayerColor = (typeof PLAYER_COLORS)[number];
 export type GameSort = (typeof GAME_SORTS)[number];
 export type GameGroup = (typeof GAME_GROUPS)[number];
 
@@ -37,6 +39,7 @@ export type GameBrowserState = {
   opponent?: string;
   opponentCountry?: string;
   category?: string;
+  playerColor?: PlayerColor;
   playerRankMin?: string;
   playerRankMax?: string;
   opponentRankMin?: string;
@@ -98,6 +101,7 @@ export type GameBrowserModel = {
     opponent: GameFacet;
     opponentCountry: GameFacet;
     category: GameFacet;
+    playerColor: Record<PlayerColor, number>;
     year: GameFacet;
     result: Record<GameResultType, number>;
     komi: GameFacet;
@@ -123,8 +127,7 @@ export type GameBrowserOptions = {
 };
 
 type SearchParamsReader = Pick<URLSearchParams, 'get' | 'getAll'>;
-type PlayerColor = 'black' | 'white';
-type FacetKey = 'player' | 'country' | 'opponent' | 'opponentCountry';
+type FacetKey = 'player' | 'country' | 'opponent' | 'opponentCountry' | 'playerColor';
 
 type OrientedGame = {
   game: ApiGameInfo;
@@ -147,6 +150,7 @@ const QUERY_KEYS = [
   'opponent',
   'opponentCountry',
   'category',
+  'playerColor',
   'playerRankMin',
   'playerRankMax',
   'opponentRankMin',
@@ -170,6 +174,7 @@ export function parseGameBrowserState(params: SearchParamsReader): GameBrowserSt
   const komi = uniqueKomi(params.getAll('komi'));
   const media = uniqueKnown(params.getAll('has'), GAME_MEDIA);
   const winner = params.get('winner');
+  const playerColor = params.get('playerColor');
   const sort = params.get('sort');
   const group = params.get('group');
 
@@ -179,6 +184,7 @@ export function parseGameBrowserState(params: SearchParamsReader): GameBrowserSt
     opponent: readString(params, 'opponent'),
     opponentCountry: readString(params, 'opponentCountry')?.toUpperCase(),
     category: readString(params, 'category'),
+    playerColor: isKnown(playerColor, PLAYER_COLORS) ? playerColor : undefined,
     playerRankMin: normalizeRank(params.get('playerRankMin')),
     playerRankMax: normalizeRank(params.get('playerRankMax')),
     opponentRankMin: normalizeRank(params.get('opponentRankMin')),
@@ -202,6 +208,7 @@ export function serializeGameBrowserState(state: GameBrowserState, source: URLSe
   setString(params, 'opponent', state.opponent);
   setString(params, 'opponentCountry', state.opponentCountry?.toUpperCase());
   setString(params, 'category', state.category);
+  setString(params, 'playerColor', state.playerColor);
   setString(params, 'playerRankMin', normalizeRank(state.playerRankMin));
   setString(params, 'playerRankMax', normalizeRank(state.playerRankMax));
   setString(params, 'opponentRankMin', normalizeRank(state.opponentRankMin));
@@ -264,6 +271,7 @@ export function getActiveGameFilterCount(state: GameBrowserState) {
     state.opponent,
     state.opponentCountry,
     state.category,
+    state.playerColor,
     state.playerRankMin || state.playerRankMax,
     state.opponentRankMin || state.opponentRankMax,
     state.years.length > 0,
@@ -327,6 +335,7 @@ export function deriveGameBrowserModel(
         Boolean(normalizedState.player || normalizedState.country)
       ),
       category: buildCategoryFacet(games, normalizedState, categoryLabel, hasCategories),
+      playerColor: buildColorFacetCounts(games, normalizedState, 'playerColor'),
       year: buildYearFacet(games, normalizedState),
       result: buildResultFacetCounts(games, normalizedState),
       komi: buildKomiFacet(games, normalizedState),
@@ -356,6 +365,7 @@ export function normalizeGameBrowserState(
     komi: uniqueKomi(requested.komi).filter((komi) => komiValues.has(komi)),
     media: uniqueKnown(requested.media, GAME_MEDIA),
     winner: isKnown(requested.winner, GAME_WINNERS) ? requested.winner : undefined,
+    playerColor: isKnown(requested.playerColor, PLAYER_COLORS) ? requested.playerColor : undefined,
     sort: isKnown(requested.sort, GAME_SORTS) ? requested.sort : DEFAULT_GAME_BROWSER_STATE.sort,
     group: isKnown(requested.group, GAME_GROUPS) ? requested.group : DEFAULT_GAME_BROWSER_STATE.group,
     years: uniqueNumbers(requested.years.map(String))
@@ -679,12 +689,12 @@ function buildResultFacetCounts(games: readonly ApiGameInfo[], state: GameBrowse
 function buildKomiFacet(games: readonly ApiGameInfo[], state: GameBrowserState): GameFacet {
   const counts = new Map<string, number>();
 
-  for (const game of games) {
-    if (game.komi === undefined || !matchesGlobalFilters(game, { ...state, komi: [] })) {
+  for (const match of filterGameRecords(games, { ...state, komi: [] })) {
+    if (match.game.komi === undefined) {
       continue;
     }
 
-    const komi = formatKomi(game.komi);
+    const komi = formatKomi(match.game.komi);
     counts.set(komi, (counts.get(komi) ?? 0) + 1);
   }
 
@@ -702,6 +712,16 @@ function buildWinnerFacetCounts(games: readonly ApiGameInfo[], state: GameBrowse
   return Object.fromEntries(
     GAME_WINNERS.map((winner) => [winner, filterGameRecords(games, { ...state, winner }).length])
   ) as Record<GameWinner, number>;
+}
+
+function buildColorFacetCounts(
+  games: readonly ApiGameInfo[],
+  state: GameBrowserState,
+  facet: 'playerColor'
+) {
+  return Object.fromEntries(
+    PLAYER_COLORS.map((color) => [color, filterGameRecords(games, { ...state, [facet]: color }).length])
+  ) as Record<PlayerColor, number>;
 }
 
 function countFacet(games: readonly ApiGameInfo[], state: GameBrowserState, facet: FacetKey) {
@@ -743,6 +763,8 @@ function getFacetValue(orientation: OrientedGame, facet: FacetKey) {
       return orientation.opponent.id;
     case 'opponentCountry':
       return orientation.opponent.country?.toUpperCase();
+    case 'playerColor':
+      return orientation.playerColor;
   }
 }
 
@@ -799,6 +821,9 @@ function matchesOrientation(orientation: OrientedGame, state: GameBrowserState, 
     state.opponentCountry &&
     orientation.opponent.country?.toUpperCase() !== state.opponentCountry.toUpperCase()
   ) {
+    return false;
+  }
+  if (ignoredFacet !== 'playerColor' && state.playerColor && orientation.playerColor !== state.playerColor) {
     return false;
   }
   if (state.winner === 'player' && orientation.game.winner !== orientation.playerColor) {

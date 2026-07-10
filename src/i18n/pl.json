@@ -167,6 +167,8 @@
     "anyOpponent": "Dowolny przeciwnik",
     "anyOpponentCountry": "Dowolny kraj przeciwnika",
     "noOptions": "Brak pasujących opcji",
+    "playerColor": "Kolor gracza",
+    "anyColor": "Dowolny kolor",
     "playerRank": "Ranking gracza",
     "opponentRank": "Ranking przeciwnika",
     "minimum": "Minimum",

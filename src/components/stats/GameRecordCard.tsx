@@ -100,7 +100,7 @@ function GamePreview({
     <img
       src={gameThumbUrl(event, preview)}
       alt=""
-      className="h-full max-w-full object-contain transition-transform duration-200 group-hover:scale-[1.02]"
+      className="h-full max-w-full object-contain transition-transform duration-200 group-hover:scale-[1.02] overflow-visible"
       loading="lazy"
     />
   ) : (
@@ -111,7 +111,7 @@ function GamePreview({
     <GameViewerTrigger
       sgfPath={game.sgf}
       aria-label={label}
-      className="group flex size-24 shrink-0 items-center justify-center overflow-hidden focus-visible:ring-2 focus-visible:ring-event-primary focus-visible:ring-inset"
+      className="group flex size-24 shrink-0 items-center justify-center overflow-hidden focus-visible:ring-2 focus-visible:ring-event-primary focus-visible:ring-inset overflow-visible"
     >
       {content}
     </GameViewerTrigger>

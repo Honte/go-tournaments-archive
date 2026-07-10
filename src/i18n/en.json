@@ -167,6 +167,8 @@
     "anyOpponent": "Any opponent",
     "anyOpponentCountry": "Any opponent country",
     "noOptions": "No matching options",
+    "playerColor": "Player color",
+    "anyColor": "Any color",
     "playerRank": "Player rank",
     "opponentRank": "Opponent rank",
     "minimum": "Minimum",

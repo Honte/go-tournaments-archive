@@ -247,6 +247,15 @@ describe('game filtering and facets', () => {
     assert.deepEqual(selectedMedia.facets.media, { ogs: 2, yt: 1, ai: 0 });
   });
 
+  it('updates komi counts from the current orientation filter state', () => {
+    const model = deriveGameBrowserModel(games, state({ player: 'a', country: 'PL' }));
+    const selected = deriveGameBrowserModel(games, state({ player: 'a', country: 'PL', komi: ['0.5'] }));
+
+    assert.equal(model.filteredCount, 2);
+    assert.deepEqual(toCounts(model.facets.komi.options), { '0.5': 1, '6.5': 1 });
+    assert.deepEqual(toCounts(selected.facets.komi.options), { '0.5': 1, '6.5': 1 });
+  });
+
   it('builds self-excluding winner counts for colors and focal roles', () => {
     const model = deriveGameBrowserModel(games, state({ player: 'a', winner: 'black' }));
 
@@ -409,24 +418,28 @@ function createGames(): ApiGameInfo[] {
       result: 'B+R',
       winner: 'black',
       moves: 100,
+      komi: 6.5,
       ogs: '1',
     }),
     game('g2', 2021, player('c', 'Carol', '5d', 'FR'), player('a', 'Alice New', '2d', 'DE'), {
       result: 'W+T',
       winner: 'white',
       moves: 150,
+      komi: 7.5,
       yt: 'video-2',
     }),
     game('g3', 2022, player('d', 'Dan', '5k', 'PL'), player('e', 'Eve', '4k', 'PL'), {
       result: 'B+2.5',
       winner: 'black',
       moves: 200,
+      komi: 7.5,
       ai: 'analysis-3',
     }),
     game('g4', 2023, player('b', 'Bob', '3d', 'DE'), player('a', 'Alice New', '3d', 'PL'), {
       result: 'W+0.5',
       winner: 'white',
       moves: 100,
+      komi: 0.5,
       ogs: '4',
       yt: ['video-4'],
     }),
@@ -442,7 +455,7 @@ function game(
   tournament: number,
   black: Player,
   white: Player,
-  details: Pick<ApiGameInfo, 'result' | 'winner' | 'moves'> & Pick<ApiGameInfo, 'ogs' | 'yt' | 'ai'>
+  details: Pick<ApiGameInfo, 'result' | 'winner' | 'moves'> & Partial<Pick<ApiGameInfo, 'ogs' | 'yt' | 'ai' | 'komi'>>
 ): ApiGameInfo {
   return {
     sgf: `${id}.sgf`,
