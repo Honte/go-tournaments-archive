@@ -15,7 +15,7 @@ import {
   getActiveGameFilterCount,
 } from '@/components/stats/allGamesModel';
 import { GameDualRange } from '@/components/stats/GameDualRange';
-import { GameFacetSelect } from '@/components/stats/GameFacetSelect';
+import { GameFacetSelect, GameMultiFacetSelect } from '@/components/stats/GameFacetSelect';
 import { GameYearSelect } from '@/components/stats/GameYearSelect';
 import { Button } from '@/components/ui/Button';
 import { Toggle } from '@/components/ui/Toggle';
@@ -153,7 +153,7 @@ export function GameFiltersPanel({ id, model, onChange, onClear, translations }:
           <GameYearSelect
             id="game-year"
             label={t('gamesFilter.year')}
-            years={facets.year.options.map((option) => Number(option.value))}
+            years={facets.year.options}
             selectedYears={state.years}
             placeholder={t('gamesFilter.anyYear')}
             noOptionsMessage={t('gamesFilter.noOptions')}
@@ -206,13 +206,35 @@ export function GameFiltersPanel({ id, model, onChange, onClear, translations }:
             searchable={false}
           />
 
-          <ToggleGroup
-            legend={t('gamesFilter.resultType')}
-            values={GAME_RESULT_TYPES}
-            selected={state.results}
-            labels={resultLabels}
-            onChange={(results) => patch({ results })}
+          <GameMultiFacetSelect
+            id="game-result"
+            label={t('gamesFilter.resultType')}
+            options={GAME_RESULT_TYPES.map((result) => ({
+              value: result,
+              label: resultLabels[result],
+              count: facets.result[result],
+            }))}
+            values={state.results}
+            onChange={(results) => patch({ results: results.filter(isGameResultType) })}
+            placeholder={t('gamesFilter.anyResult')}
+            noOptionsMessage={t('gamesFilter.noOptions')}
+            name="result"
+            searchable={false}
           />
+
+          {facets.komi.visible && (
+            <GameMultiFacetSelect
+              id="game-komi"
+              label={t('gamesFilter.komi')}
+              options={facets.komi.options}
+              values={state.komi}
+              onChange={(komi) => patch({ komi })}
+              placeholder={t('gamesFilter.anyKomi')}
+              noOptionsMessage={t('gamesFilter.noOptions')}
+              name="komi"
+              searchable={false}
+            />
+          )}
 
           <ToggleGroup
             legend={t('gamesFilter.media')}
@@ -434,4 +456,8 @@ function getGroupOptions(t: Translator, grouping: GameBrowserModel['grouping']):
 
 function isGameWinner(value: string): value is GameWinner {
   return value === 'black' || value === 'white' || value === 'player' || value === 'opponent';
+}
+
+function isGameResultType(value: string): value is GameResultType {
+  return value === 'resignation' || value === 'points' || value === 'time' || value === 'other';
 }

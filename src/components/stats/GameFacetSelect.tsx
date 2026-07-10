@@ -5,6 +5,7 @@ import { memo, useCallback, useMemo } from 'react';
 import Select, {
   createFilter,
   type FormatOptionLabelMeta,
+  type MultiValue,
   type SingleValue,
   type StylesConfig,
   type ThemeConfig,
@@ -33,11 +34,16 @@ export type GameFacetSelectProps = {
   clearable?: boolean;
 };
 
+export type GameMultiFacetSelectProps = Omit<GameFacetSelectProps, 'value' | 'onChange' | 'clearable'> & {
+  values: readonly string[];
+  onChange: (values: string[]) => void;
+};
+
 const filterOption = createFilter<GameFacetOption>({
   stringify: ({ data }) => `${data.label} ${data.value} ${data.search ?? ''}`,
 });
 
-const styles: StylesConfig<GameFacetOption, false> = {
+const styles: StylesConfig<GameFacetOption, boolean> = {
   control: (base) => ({
     ...base,
     backgroundColor: 'white',
@@ -60,6 +66,18 @@ const styles: StylesConfig<GameFacetOption, false> = {
   dropdownIndicator: (base) => ({
     ...base,
     cursor: 'pointer',
+  }),
+  multiValue: (base) => ({
+    ...base,
+    backgroundColor: 'var(--color-event-bg)',
+  }),
+  multiValueRemove: (base) => ({
+    ...base,
+    cursor: 'pointer',
+    '&:hover': {
+      backgroundColor: 'var(--color-event-gray)',
+      color: 'white',
+    },
   }),
 };
 
@@ -156,6 +174,73 @@ export const GameFacetSelect = memo(function GameFacetSelect({
         isClearable={clearable}
         isSearchable={searchable}
         isDisabled={disabled}
+        hideSelectedOptions={false}
+        menuPlacement="auto"
+        styles={styles}
+        theme={theme}
+      />
+    </div>
+  );
+});
+
+export const GameMultiFacetSelect = memo(function GameMultiFacetSelect({
+  id,
+  label,
+  options,
+  values,
+  onChange,
+  placeholder,
+  noOptionsMessage,
+  name,
+  disabled = false,
+  className,
+  showCounts = true,
+  searchable = true,
+}: GameMultiFacetSelectProps) {
+  const inputId = `${id}-input`;
+  const labelId = `${id}-label`;
+  const selectedOptions = useMemo(
+    () => options.filter((option) => values.includes(option.value)),
+    [options, values]
+  );
+  const visibleOptions = useMemo(
+    () => options.filter((option) => option.count > 0 || values.includes(option.value)),
+    [options, values]
+  );
+  const handleChange = useCallback(
+    (next: MultiValue<GameFacetOption>) => {
+      onChange(next.map((option) => option.value));
+    },
+    [onChange]
+  );
+
+  return (
+    <div className={clsx('min-w-0', className, disabled && 'opacity-60')}>
+      <label id={labelId} htmlFor={inputId} className="mb-1 block text-sm font-semibold text-event-dark">
+        {label}
+      </label>
+      <Select<GameFacetOption, true>
+        id={id}
+        instanceId={id}
+        inputId={inputId}
+        aria-labelledby={labelId}
+        aria-live="polite"
+        name={name}
+        options={visibleOptions}
+        value={selectedOptions}
+        onChange={handleChange}
+        placeholder={placeholder}
+        noOptionsMessage={noOptionsMessage ? () => noOptionsMessage : undefined}
+        getOptionLabel={showCounts ? getOptionLabel : (option) => option.label}
+        getOptionValue={getOptionValue}
+        formatOptionLabel={showCounts ? formatOptionLabel : undefined}
+        filterOption={filterOption}
+        isOptionDisabled={isOptionDisabled}
+        isMulti={true}
+        isClearable={true}
+        isSearchable={searchable}
+        isDisabled={disabled}
+        closeMenuOnSelect={false}
         hideSelectedOptions={false}
         menuPlacement="auto"
         styles={styles}

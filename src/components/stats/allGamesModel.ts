@@ -45,6 +45,7 @@ export type GameBrowserState = {
   movesMin?: number;
   movesMax?: number;
   results: GameResultType[];
+  komi: string[];
   winner?: GameWinner;
   media: GameMedia[];
   sort: GameSort;
@@ -54,6 +55,7 @@ export type GameBrowserState = {
 export const DEFAULT_GAME_BROWSER_STATE: GameBrowserState = {
   years: [],
   results: [],
+  komi: [],
   media: [],
   sort: 'year-desc',
   group: 'none',
@@ -97,6 +99,8 @@ export type GameBrowserModel = {
     opponentCountry: GameFacet;
     category: GameFacet;
     year: GameFacet;
+    result: Record<GameResultType, number>;
+    komi: GameFacet;
     winner: Record<GameWinner, number>;
     media: Record<GameMedia, number>;
   };
@@ -153,6 +157,7 @@ const QUERY_KEYS = [
   'movesMin',
   'movesMax',
   'result',
+  'komi',
   'winner',
   'has',
   'sort',
@@ -162,6 +167,7 @@ const QUERY_KEYS = [
 export function parseGameBrowserState(params: SearchParamsReader): GameBrowserState {
   const years = uniqueNumbers(params.getAll('year'));
   const results = uniqueKnown(params.getAll('result'), GAME_RESULT_TYPES);
+  const komi = uniqueKomi(params.getAll('komi'));
   const media = uniqueKnown(params.getAll('has'), GAME_MEDIA);
   const winner = params.get('winner');
   const sort = params.get('sort');
@@ -181,6 +187,7 @@ export function parseGameBrowserState(params: SearchParamsReader): GameBrowserSt
     movesMin: readNumber(params, 'movesMin'),
     movesMax: readNumber(params, 'movesMax'),
     results,
+    komi,
     winner: isKnown(winner, GAME_WINNERS) ? winner : undefined,
     media,
     sort: isKnown(sort, GAME_SORTS) ? sort : DEFAULT_GAME_BROWSER_STATE.sort,
@@ -209,6 +216,10 @@ export function serializeGameBrowserState(state: GameBrowserState, source: URLSe
     if (state.results.includes(result)) {
       params.append('result', result);
     }
+  }
+
+  for (const komi of uniqueKomi(state.komi).toSorted(compareKomi)) {
+    params.append('komi', komi);
   }
 
   if (state.winner) {
@@ -258,6 +269,7 @@ export function getActiveGameFilterCount(state: GameBrowserState) {
     state.years.length > 0,
     state.movesMin !== undefined || state.movesMax !== undefined,
     state.results.length > 0,
+    state.komi.length > 0,
     state.winner,
     state.media.length > 0,
     state.sort !== DEFAULT_GAME_BROWSER_STATE.sort,
@@ -316,6 +328,8 @@ export function deriveGameBrowserModel(
       ),
       category: buildCategoryFacet(games, normalizedState, categoryLabel, hasCategories),
       year: buildYearFacet(games, normalizedState),
+      result: buildResultFacetCounts(games, normalizedState),
+      komi: buildKomiFacet(games, normalizedState),
       winner: buildWinnerFacetCounts(games, normalizedState),
       media: buildMediaFacetCounts(games, normalizedState),
     },
@@ -333,11 +347,13 @@ export function normalizeGameBrowserState(
   const countries = getCountries(games);
   const categories = getCategories(games);
   const years = new Set(games.map((game) => game.tournament));
+  const komiValues = new Set(games.flatMap((game) => (game.komi === undefined ? [] : [formatKomi(game.komi)])));
   const countriesEnabled = options.countriesEnabled ?? true;
   const categoriesEnabled = options.categoriesEnabled ?? true;
   const state: GameBrowserState = {
     ...requested,
     results: uniqueKnown(requested.results, GAME_RESULT_TYPES),
+    komi: uniqueKomi(requested.komi).filter((komi) => komiValues.has(komi)),
     media: uniqueKnown(requested.media, GAME_MEDIA),
     winner: isKnown(requested.winner, GAME_WINNERS) ? requested.winner : undefined,
     sort: isKnown(requested.sort, GAME_SORTS) ? requested.sort : DEFAULT_GAME_BROWSER_STATE.sort,
@@ -648,6 +664,40 @@ function buildMediaFacetCounts(games: readonly ApiGameInfo[], state: GameBrowser
   ) as Record<GameMedia, number>;
 }
 
+function buildResultFacetCounts(games: readonly ApiGameInfo[], state: GameBrowserState) {
+  return Object.fromEntries(
+    GAME_RESULT_TYPES.map((result) => [
+      result,
+      filterGameRecords(games, {
+        ...state,
+        results: [result],
+      }).length,
+    ])
+  ) as Record<GameResultType, number>;
+}
+
+function buildKomiFacet(games: readonly ApiGameInfo[], state: GameBrowserState): GameFacet {
+  const counts = new Map<string, number>();
+
+  for (const game of games) {
+    if (game.komi === undefined || !matchesGlobalFilters(game, { ...state, komi: [] })) {
+      continue;
+    }
+
+    const komi = formatKomi(game.komi);
+    counts.set(komi, (counts.get(komi) ?? 0) + 1);
+  }
+
+  const values = new Set([...counts.keys(), ...state.komi]);
+
+  return {
+    visible: values.size > 1,
+    options: [...values]
+      .map((komi) => ({ value: komi, label: komi, count: counts.get(komi) ?? 0 }))
+      .toSorted((left, right) => compareKomi(left.value, right.value)),
+  };
+}
+
 function buildWinnerFacetCounts(games: readonly ApiGameInfo[], state: GameBrowserState) {
   return Object.fromEntries(
     GAME_WINNERS.map((winner) => [winner, filterGameRecords(games, { ...state, winner }).length])
@@ -710,6 +760,9 @@ function matchesGlobalFilters(game: ApiGameInfo, state: GameBrowserState) {
     return false;
   }
   if (state.results.length && !state.results.includes(getGameResultType(game.result))) {
+    return false;
+  }
+  if (state.komi.length && (game.komi === undefined || !state.komi.includes(formatKomi(game.komi)))) {
     return false;
   }
   if ((state.winner === 'black' || state.winner === 'white') && game.winner !== state.winner) {
@@ -1078,6 +1131,18 @@ function isKnown<T extends string>(value: string | null | undefined, values: rea
 
 function uniqueKnown<T extends string>(values: readonly string[], known: readonly T[]): T[] {
   return known.filter((value) => values.includes(value));
+}
+
+function uniqueKomi(values: readonly string[]) {
+  return [...new Set(values.map((value) => Number(value)).filter(Number.isFinite).map(formatKomi))];
+}
+
+function formatKomi(komi: number) {
+  return Number.isInteger(komi) ? String(komi) : String(komi).replace(/\.0+$/, '');
+}
+
+function compareKomi(left: string, right: string) {
+  return Number(left) - Number(right);
 }
 
 function uniqueNumbers(values: readonly string[]) {

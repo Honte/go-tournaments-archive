@@ -1,17 +1,18 @@
 'use client';
 
 import { useMemo } from 'react';
-import Select, { type MultiValue, type StylesConfig, type ThemeConfig } from 'react-select';
+import Select, { type FormatOptionLabelMeta, type MultiValue, type StylesConfig, type ThemeConfig } from 'react-select';
 
 type YearOption = {
   value: number;
   label: string;
+  count: number;
 };
 
 export type GameYearSelectProps = {
   id: string;
   label: string;
-  years: readonly number[];
+  years: readonly { value: string; label: string; count: number }[];
   selectedYears: readonly number[];
   placeholder: string;
   noOptionsMessage: string;
@@ -41,6 +42,10 @@ const styles: StylesConfig<YearOption, true> = {
   multiValueRemove: (base) => ({
     ...base,
     cursor: 'pointer',
+    '&:hover': {
+      backgroundColor: 'var(--color-event-gray)',
+      color: 'white',
+    },
   }),
 };
 
@@ -67,6 +72,14 @@ const theme: ThemeConfig = (base) => ({
   },
 });
 
+function getOptionLabel(option: YearOption) {
+  return `${option.label} (${option.count})`;
+}
+
+function formatOptionLabel(option: YearOption, meta: FormatOptionLabelMeta<YearOption>) {
+  return meta.context === 'menu' ? getOptionLabel(option) : option.label;
+}
+
 export function GameYearSelect({
   id,
   label,
@@ -79,7 +92,10 @@ export function GameYearSelect({
   const inputId = `${id}-input`;
   const labelId = `${id}-label`;
   const options = useMemo<YearOption[]>(
-    () => years.toSorted((left, right) => right - left).map((year) => ({ value: year, label: String(year) })),
+    () =>
+      years
+        .map((year) => ({ value: Number(year.value), label: year.label, count: year.count }))
+        .toSorted((left, right) => right.value - left.value),
     [years]
   );
   const selected = useMemo(
@@ -106,6 +122,8 @@ export function GameYearSelect({
         }
         placeholder={placeholder}
         noOptionsMessage={() => noOptionsMessage}
+        getOptionLabel={getOptionLabel}
+        formatOptionLabel={formatOptionLabel}
         isMulti={true}
         isClearable={true}
         isSearchable={true}
