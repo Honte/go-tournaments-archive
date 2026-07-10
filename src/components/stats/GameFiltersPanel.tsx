@@ -28,7 +28,7 @@ export type GameFiltersPanelProps = {
   onClear: () => void;
 };
 
-const columnClassName = 'min-w-0 space-y-4 rounded-md border border-event-soft bg-event-light/35 p-3';
+const columnClassName = 'min-w-0 space-y-4 p-3';
 
 export function GameFiltersPanel({ id, model, onChange, onClear, translations }: GameFiltersPanelProps) {
   const t = getTranslator(translations);
@@ -257,7 +257,7 @@ export function GameFiltersPanel({ id, model, onChange, onClear, translations }:
           type="button"
           onClick={onClear}
           disabled={!activeCount}
-          className="ml-auto text-sm disabled:cursor-default disabled:opacity-50"
+          className="ml-auto leading-8 disabled:cursor-default disabled:opacity-50"
         >
           {t('gamesFilter.clearAll')}
         </Button>
