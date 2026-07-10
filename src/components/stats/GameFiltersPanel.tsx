@@ -28,8 +28,6 @@ export type GameFiltersPanelProps = {
   onClear: () => void;
 };
 
-const inputClassName =
-  'min-h-9 w-full rounded-sm border border-event-soft bg-white px-2 py-1 text-sm text-event-dark focus:border-event-primary focus:outline-none focus:ring-1 focus:ring-event-primary';
 const columnClassName = 'min-w-0 space-y-4 rounded-md border border-event-soft bg-event-light/35 p-3';
 
 export function GameFiltersPanel({ id, model, onChange, onClear, translations }: GameFiltersPanelProps) {
@@ -141,7 +139,9 @@ export function GameFiltersPanel({ id, model, onChange, onClear, translations }:
               onChange={(opponentRankMin, opponentRankMax) => patch({ opponentRankMin, opponentRankMax })}
             />
           ) : (
-            <p className="text-sm text-event-dark/70">{t('gamesFilter.selectPlayerOrCountry')}</p>
+            <p className="text-sm text-event-dark/70">
+              {t(facets.country.visible ? 'gamesFilter.selectPlayerOrCountry' : 'gamesFilter.selectPlayer')}
+            </p>
           )}
         </section>
 
@@ -153,12 +153,25 @@ export function GameFiltersPanel({ id, model, onChange, onClear, translations }:
           <GameYearSelect
             id="game-year"
             label={t('gamesFilter.year')}
-            years={domains.years}
+            years={facets.year.options.map((option) => Number(option.value))}
             selectedYears={state.years}
             placeholder={t('gamesFilter.anyYear')}
             noOptionsMessage={t('gamesFilter.noOptions')}
             onChange={(years) => patch({ years })}
           />
+
+          {facets.category.visible && (
+            <GameFacetSelect
+              id="game-category"
+              label={t('gamesFilter.category')}
+              options={facets.category.options}
+              value={state.category ?? null}
+              onChange={(category) => patch({ category: category ?? undefined })}
+              placeholder={t('gamesFilter.anyCategory')}
+              noOptionsMessage={t('gamesFilter.noOptions')}
+              name="category"
+            />
+          )}
 
           <MovesRange
             id="game-moves"
@@ -172,6 +185,27 @@ export function GameFiltersPanel({ id, model, onChange, onClear, translations }:
             onChange={(movesMin, movesMax) => patch({ movesMin, movesMax })}
           />
 
+          <GameFacetSelect
+            id="game-winner"
+            label={t('gamesFilter.winner')}
+            options={[
+              { value: 'black', label: t('gamesFilter.black'), count: facets.winner.black },
+              { value: 'white', label: t('gamesFilter.white'), count: facets.winner.white },
+              ...(state.player
+                ? [
+                    { value: 'player', label: t('gamesFilter.player'), count: facets.winner.player },
+                    { value: 'opponent', label: t('gamesFilter.opponent'), count: facets.winner.opponent },
+                  ]
+                : []),
+            ]}
+            value={state.winner ?? null}
+            onChange={(winner) => patch({ winner: winner && isGameWinner(winner) ? winner : undefined })}
+            placeholder={t('gamesFilter.anyWinner')}
+            noOptionsMessage={t('gamesFilter.noOptions')}
+            name="winner"
+            searchable={false}
+          />
+
           <ToggleGroup
             legend={t('gamesFilter.resultType')}
             values={GAME_RESULT_TYPES}
@@ -180,51 +214,43 @@ export function GameFiltersPanel({ id, model, onChange, onClear, translations }:
             onChange={(results) => patch({ results })}
           />
 
-          <SelectField
-            id="game-winner"
-            label={t('gamesFilter.winner')}
-            value={state.winner ?? ''}
-            options={[
-              { value: '', label: t('gamesFilter.anyWinner') },
-              { value: 'black', label: t('gamesFilter.black') },
-              { value: 'white', label: t('gamesFilter.white') },
-              ...(state.player
-                ? [
-                    { value: 'player', label: t('gamesFilter.player') },
-                    { value: 'opponent', label: t('gamesFilter.opponent') },
-                  ]
-                : []),
-            ]}
-            onChange={(winner) => patch({ winner: isGameWinner(winner) ? winner : undefined })}
-          />
-
           <ToggleGroup
             legend={t('gamesFilter.media')}
             values={GAME_MEDIA}
             selected={state.media}
             labels={mediaLabels}
+            counts={facets.media}
+            disableZero={true}
             onChange={(media) => patch({ media })}
           />
         </section>
       </div>
 
       <div className="mt-4 flex flex-wrap items-end gap-4 border-t border-event-soft pt-4">
-        <SelectField
+        <GameFacetSelect
           id="game-sort"
           label={t('gamesFilter.sort')}
           value={state.sort}
-          options={sortOptions}
+          options={sortOptions.map((option) => ({ ...option, count: 1 }))}
           className="min-w-56 flex-1 sm:max-w-sm"
-          onChange={(sort) => patch({ sort: sort as GameSort })}
+          onChange={(sort) => sort && patch({ sort: sort as GameSort })}
+          name="sort"
+          showCounts={false}
+          searchable={false}
+          clearable={false}
         />
 
-        <SelectField
+        <GameFacetSelect
           id="game-group"
           label={t('gamesFilter.group')}
           value={state.group}
-          options={groupOptions}
+          options={groupOptions.map((option) => ({ ...option, count: 1 }))}
           className="min-w-56 flex-1 sm:max-w-sm"
-          onChange={(group) => patch({ group: group as GameGroup })}
+          onChange={(group) => group && patch({ group: group as GameGroup })}
+          name="group"
+          showCounts={false}
+          searchable={false}
+          clearable={false}
         />
 
         <Button
@@ -338,12 +364,16 @@ function ToggleGroup<T extends string>({
   values,
   selected,
   labels,
+  counts,
+  disableZero,
   onChange,
 }: {
   legend: string;
   values: readonly T[];
   selected: readonly T[];
   labels: Record<T, string>;
+  counts?: Partial<Record<T, number>>;
+  disableZero?: boolean;
   onChange: (selected: T[]) => void;
 }) {
   return (
@@ -354,44 +384,17 @@ function ToggleGroup<T extends string>({
           <Toggle
             key={value}
             checked={selected.includes(value)}
+            disabled={disableZero && counts?.[value] === 0 && !selected.includes(value)}
             onChange={(checked) =>
               onChange(checked ? [...selected, value] : selected.filter((selectedValue) => selectedValue !== value))
             }
           >
             {labels[value]}
+            {counts?.[value] !== undefined ? ` (${counts[value]})` : ''}
           </Toggle>
         ))}
       </div>
     </fieldset>
-  );
-}
-
-function SelectField({
-  id,
-  label,
-  value,
-  options,
-  className,
-  onChange,
-}: {
-  id: string;
-  label: string;
-  value: string;
-  options: readonly { value: string; label: string }[];
-  className?: string;
-  onChange: (value: string) => void;
-}) {
-  return (
-    <label htmlFor={id} className={`flex flex-col min-w-0 ${className ?? ''}`}>
-      <span className="mb-1 block text-sm font-semibold">{label}</span>
-      <select id={id} className={inputClassName} value={value} onChange={(event) => onChange(event.target.value)}>
-        {options.map((option) => (
-          <option key={option.value} value={option.value}>
-            {option.label}
-          </option>
-        ))}
-      </select>
-    </label>
   );
 }
 
@@ -421,6 +424,11 @@ function getGroupOptions(t: Translator, grouping: GameBrowserModel['grouping']):
       value: 'opponent-country' as const,
       label: t('gamesFilter.groupOpponentCountry'),
     },
+    grouping.countryPlayer && {
+      value: 'country-player' as const,
+      label: t('gamesFilter.groupCountryPlayer'),
+    },
+    grouping.category && { value: 'category' as const, label: t('gamesFilter.groupCategory') },
   ].filter((option): option is { value: GameGroup; label: string } => Boolean(option));
 }
 

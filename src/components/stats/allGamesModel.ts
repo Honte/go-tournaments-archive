@@ -16,7 +16,14 @@ export const GAME_SORTS = [
   'rank-gap-asc',
   'rank-gap-desc',
 ] as const;
-export const GAME_GROUPS = ['none', 'opponent-player', 'opponent-country', 'year'] as const;
+export const GAME_GROUPS = [
+  'none',
+  'opponent-player',
+  'opponent-country',
+  'country-player',
+  'year',
+  'category',
+] as const;
 
 export type GameResultType = (typeof GAME_RESULT_TYPES)[number];
 export type GameMedia = (typeof GAME_MEDIA)[number];
@@ -29,6 +36,7 @@ export type GameBrowserState = {
   country?: string;
   opponent?: string;
   opponentCountry?: string;
+  category?: string;
   playerRankMin?: string;
   playerRankMax?: string;
   opponentRankMin?: string;
@@ -87,17 +95,25 @@ export type GameBrowserModel = {
     country: GameFacet;
     opponent: GameFacet;
     opponentCountry: GameFacet;
+    category: GameFacet;
+    year: GameFacet;
+    winner: Record<GameWinner, number>;
+    media: Record<GameMedia, number>;
   };
   domains: GameBrowserDomains;
   grouping: {
     opponentPlayer: boolean;
     opponentCountry: boolean;
+    countryPlayer: boolean;
+    category: boolean;
   };
 };
 
 export type GameBrowserOptions = {
   countriesEnabled?: boolean;
+  categoriesEnabled?: boolean;
   countryLabel?: (country: string) => string;
+  categoryLabel?: (category: string) => string;
   unknownCountryLabel?: string;
   locale?: string;
 };
@@ -126,6 +142,7 @@ const QUERY_KEYS = [
   'country',
   'opponent',
   'opponentCountry',
+  'category',
   'playerRankMin',
   'playerRankMax',
   'opponentRankMin',
@@ -155,6 +172,7 @@ export function parseGameBrowserState(params: SearchParamsReader): GameBrowserSt
     country: readString(params, 'country')?.toUpperCase(),
     opponent: readString(params, 'opponent'),
     opponentCountry: readString(params, 'opponentCountry')?.toUpperCase(),
+    category: readString(params, 'category'),
     playerRankMin: normalizeRank(params.get('playerRankMin')),
     playerRankMax: normalizeRank(params.get('playerRankMax')),
     opponentRankMin: normalizeRank(params.get('opponentRankMin')),
@@ -176,6 +194,7 @@ export function serializeGameBrowserState(state: GameBrowserState, source: URLSe
   setString(params, 'country', state.country?.toUpperCase());
   setString(params, 'opponent', state.opponent);
   setString(params, 'opponentCountry', state.opponentCountry?.toUpperCase());
+  setString(params, 'category', state.category);
   setString(params, 'playerRankMin', normalizeRank(state.playerRankMin));
   setString(params, 'playerRankMax', normalizeRank(state.playerRankMax));
   setString(params, 'opponentRankMin', normalizeRank(state.opponentRankMin));
@@ -233,6 +252,7 @@ export function getActiveGameFilterCount(state: GameBrowserState) {
     state.country,
     state.opponent,
     state.opponentCountry,
+    state.category,
     state.playerRankMin || state.playerRankMax,
     state.opponentRankMin || state.opponentRankMax,
     state.years.length > 0,
@@ -252,10 +272,13 @@ export function deriveGameBrowserModel(
 ): GameBrowserModel {
   const playerMeta = getPlayerMeta(games);
   const countriesEnabled = options.countriesEnabled ?? true;
+  const categoriesEnabled = options.categoriesEnabled ?? true;
   const countryLabel = options.countryLabel ?? ((country: string) => country);
-  const state = normalizeGameBrowserState(games, requestedState, { countriesEnabled });
+  const categoryLabel = options.categoryLabel ?? ((category: string) => category);
+  const hasCategories = categoriesEnabled && Boolean(getCategories(games).size);
+  const state = normalizeGameBrowserState(games, requestedState, { countriesEnabled, categoriesEnabled });
   const matches = sortGameRecords(filterGameRecords(games, state), state.sort);
-  const grouping = getGameGroupEligibility(state, countriesEnabled);
+  const grouping = getGameGroupEligibility(state, countriesEnabled, hasCategories);
   const normalizedState = groupingForState(state, grouping);
   const normalizedMatches =
     normalizedState === state ? matches : sortGameRecords(filterGameRecords(games, normalizedState), state.sort);
@@ -268,6 +291,7 @@ export function deriveGameBrowserModel(
     groups: groupGameRecords(normalizedMatches, normalizedState, {
       playerMeta,
       countryLabel,
+      categoryLabel,
       unknownCountryLabel: options.unknownCountryLabel ?? '?',
       locale: options.locale,
     }),
@@ -290,6 +314,10 @@ export function deriveGameBrowserModel(
         countriesEnabled,
         Boolean(normalizedState.player || normalizedState.country)
       ),
+      category: buildCategoryFacet(games, normalizedState, categoryLabel, hasCategories),
+      year: buildYearFacet(games, normalizedState),
+      winner: buildWinnerFacetCounts(games, normalizedState),
+      media: buildMediaFacetCounts(games, normalizedState),
     },
     domains: getGameBrowserDomains(games),
     grouping,
@@ -299,12 +327,14 @@ export function deriveGameBrowserModel(
 export function normalizeGameBrowserState(
   games: readonly ApiGameInfo[],
   requested: GameBrowserState,
-  options: { countriesEnabled?: boolean } = {}
+  options: { countriesEnabled?: boolean; categoriesEnabled?: boolean } = {}
 ): GameBrowserState {
   const players = getPlayers(games);
   const countries = getCountries(games);
+  const categories = getCategories(games);
   const years = new Set(games.map((game) => game.tournament));
   const countriesEnabled = options.countriesEnabled ?? true;
+  const categoriesEnabled = options.categoriesEnabled ?? true;
   const state: GameBrowserState = {
     ...requested,
     results: uniqueKnown(requested.results, GAME_RESULT_TYPES),
@@ -323,6 +353,10 @@ export function normalizeGameBrowserState(
 
   if (!state.player || !players.has(state.player)) {
     state.player = undefined;
+  }
+
+  if (!categoriesEnabled || !state.category || !categories.has(state.category)) {
+    state.category = undefined;
   }
 
   if ((state.winner === 'player' || state.winner === 'opponent') && !state.player) {
@@ -379,7 +413,10 @@ export function normalizeGameBrowserState(
     state.opponentRankMax = undefined;
   }
 
-  return groupingForState(state, getGameGroupEligibility(state, countriesEnabled));
+  return groupingForState(
+    state,
+    getGameGroupEligibility(state, countriesEnabled, categoriesEnabled && Boolean(categories.size))
+  );
 }
 
 export function filterGameRecords(games: readonly ApiGameInfo[], state: GameBrowserState): GameMatch[] {
@@ -450,12 +487,14 @@ export function getRankLevel(rank?: string) {
   }
 }
 
-export function getGameGroupEligibility(state: GameBrowserState, countriesEnabled = true) {
+export function getGameGroupEligibility(state: GameBrowserState, countriesEnabled = true, categoriesEnabled = false) {
   return {
     opponentPlayer: Boolean((state.player || state.country) && !state.opponent),
     opponentCountry: Boolean(
       countriesEnabled && (state.player || state.country) && !state.opponent && !state.opponentCountry
     ),
+    countryPlayer: Boolean(countriesEnabled && state.country && !state.player),
+    category: categoriesEnabled,
   };
 }
 
@@ -544,6 +583,77 @@ function buildCountryFacet(
   };
 }
 
+function buildCategoryFacet(
+  games: readonly ApiGameInfo[],
+  state: GameBrowserState,
+  categoryLabel: (category: string) => string,
+  visible: boolean
+): GameFacet {
+  if (!visible) {
+    return { visible: false, options: [] };
+  }
+
+  const counts = new Map<string, number>();
+
+  for (const match of filterGameRecords(games, { ...state, category: undefined })) {
+    if (match.game.category) {
+      counts.set(match.game.category, (counts.get(match.game.category) ?? 0) + 1);
+    }
+  }
+
+  const values = new Set(counts.keys());
+  if (state.category) {
+    values.add(state.category);
+  }
+
+  return {
+    visible: true,
+    options: [...values]
+      .map((category) => ({
+        value: category,
+        label: categoryLabel(category),
+        count: counts.get(category) ?? 0,
+      }))
+      .toSorted((left, right) => left.label.localeCompare(right.label) || left.value.localeCompare(right.value)),
+  };
+}
+
+function buildYearFacet(games: readonly ApiGameInfo[], state: GameBrowserState): GameFacet {
+  const counts = new Map<number, number>();
+
+  for (const match of filterGameRecords(games, { ...state, years: [] })) {
+    const year = match.game.tournament;
+    counts.set(year, (counts.get(year) ?? 0) + 1);
+  }
+
+  const values = new Set([...counts.keys(), ...state.years]);
+
+  return {
+    visible: true,
+    options: [...values]
+      .map((year) => ({ value: String(year), label: String(year), count: counts.get(year) ?? 0 }))
+      .toSorted((left, right) => Number(right.value) - Number(left.value)),
+  };
+}
+
+function buildMediaFacetCounts(games: readonly ApiGameInfo[], state: GameBrowserState) {
+  return Object.fromEntries(
+    GAME_MEDIA.map((medium) => [
+      medium,
+      filterGameRecords(games, {
+        ...state,
+        media: state.media.includes(medium) ? state.media : [...state.media, medium],
+      }).length,
+    ])
+  ) as Record<GameMedia, number>;
+}
+
+function buildWinnerFacetCounts(games: readonly ApiGameInfo[], state: GameBrowserState) {
+  return Object.fromEntries(
+    GAME_WINNERS.map((winner) => [winner, filterGameRecords(games, { ...state, winner }).length])
+  ) as Record<GameWinner, number>;
+}
+
 function countFacet(games: readonly ApiGameInfo[], state: GameBrowserState, facet: FacetKey) {
   const counts = new Map<string, number>();
 
@@ -587,6 +697,9 @@ function getFacetValue(orientation: OrientedGame, facet: FacetKey) {
 }
 
 function matchesGlobalFilters(game: ApiGameInfo, state: GameBrowserState) {
+  if (state.category && game.category !== state.category) {
+    return false;
+  }
   if (state.years.length && !state.years.includes(game.tournament)) {
     return false;
   }
@@ -707,6 +820,7 @@ function groupGameRecords(
   options: {
     playerMeta: Map<string, PlayerMeta>;
     countryLabel: (country: string) => string;
+    categoryLabel: (category: string) => string;
     unknownCountryLabel: string;
     locale?: string;
   }
@@ -718,11 +832,10 @@ function groupGameRecords(
   const groups = new Map<string, { label: string; games: ApiGameInfo[] }>();
 
   for (const match of matches) {
-    const value = getGroupValue(match, state.group);
-    const label = getGroupLabel(match, state.group, value, options);
-    const group = groups.get(value) ?? { label, games: [] };
+    const details = getGroupDetails(match, state.group, state, options);
+    const group = groups.get(details.key) ?? { label: details.label, games: [] };
     group.games.push(match.game);
-    groups.set(value, group);
+    groups.set(details.key, group);
   }
 
   return [...groups]
@@ -734,34 +847,64 @@ function groupGameRecords(
     .map(([key, group]) => ({ key, label: group.label, games: group.games }));
 }
 
-function getGroupValue(match: GameMatch, group: Exclude<GameGroup, 'none'>) {
-  switch (group) {
-    case 'opponent-player':
-      return match.opponent.id;
-    case 'opponent-country':
-      return match.opponent.country?.toUpperCase() ?? '__unknown__';
-    case 'year':
-      return String(match.game.tournament);
-  }
-}
-
-function getGroupLabel(
+function getGroupDetails(
   match: GameMatch,
   group: Exclude<GameGroup, 'none'>,
-  value: string,
+  state: GameBrowserState,
   options: {
     playerMeta: Map<string, PlayerMeta>;
     countryLabel: (country: string) => string;
+    categoryLabel: (category: string) => string;
     unknownCountryLabel: string;
   }
 ) {
   switch (group) {
     case 'opponent-player':
-      return options.playerMeta.get(value)?.label ?? match.opponent.name;
+      return {
+        key: match.opponent.id,
+        label: options.playerMeta.get(match.opponent.id)?.label ?? match.opponent.name,
+      };
     case 'opponent-country':
-      return value === '__unknown__' ? options.unknownCountryLabel : options.countryLabel(value);
+      const country = match.opponent.country?.toUpperCase() ?? '__unknown__';
+      return {
+        key: country,
+        label: country === '__unknown__' ? options.unknownCountryLabel : options.countryLabel(country),
+      };
+    case 'country-player': {
+      const selectedCountry = state.country?.toUpperCase();
+      const isSameCountryPair =
+        selectedCountry &&
+        match.player.country?.toUpperCase() === selectedCountry &&
+        match.opponent.country?.toUpperCase() === selectedCountry;
+
+      if (isSameCountryPair) {
+        const players = [match.player, match.opponent]
+          .map((player) => ({
+            id: player.id,
+            label: options.playerMeta.get(player.id)?.label ?? player.name,
+          }))
+          .toSorted((left, right) => left.label.localeCompare(right.label) || left.id.localeCompare(right.id));
+
+        return {
+          key: `pair:${players.map((player) => player.id).join('|')}`,
+          label: `${players[0].label} vs ${players[1].label}`,
+        };
+      }
+
+      return {
+        key: `player:${match.player.id}`,
+        label: options.playerMeta.get(match.player.id)?.label ?? match.player.name,
+      };
+    }
     case 'year':
-      return value;
+      return { key: String(match.game.tournament), label: String(match.game.tournament) };
+    case 'category': {
+      const category = match.game.category ?? '__unknown__';
+      return {
+        key: category,
+        label: category === '__unknown__' ? options.unknownCountryLabel : options.categoryLabel(category),
+      };
+    }
   }
 }
 
@@ -802,6 +945,10 @@ function getCountries(games: readonly ApiGameInfo[]) {
       .filter((country): country is string => Boolean(country))
       .map((country) => country.toUpperCase())
   );
+}
+
+function getCategories(games: readonly ApiGameInfo[]) {
+  return new Set(games.map((game) => game.category).filter((category): category is string => Boolean(category)));
 }
 
 function comparePrimary(left: ApiGameInfo, right: ApiGameInfo, sort: GameSort) {
@@ -862,7 +1009,9 @@ function groupingForState(
 ): GameBrowserState {
   if (
     (state.group === 'opponent-player' && !eligibility.opponentPlayer) ||
-    (state.group === 'opponent-country' && !eligibility.opponentCountry)
+    (state.group === 'opponent-country' && !eligibility.opponentCountry) ||
+    (state.group === 'country-player' && !eligibility.countryPlayer) ||
+    (state.group === 'category' && !eligibility.category)
   ) {
     return { ...state, group: 'none' };
   }

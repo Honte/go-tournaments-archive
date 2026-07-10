@@ -60,11 +60,13 @@ function AllGamesContent({ event, games, translations }: AllGamesContentProps) {
     const translate = getTranslator(translations);
     return {
       countriesEnabled: event.showCountry,
+      categoriesEnabled: Boolean(event.categories?.length),
       countryLabel: (country) => translate(`country.${country}`),
+      categoryLabel: (category) => translate(`categories.short.${category}`),
       unknownCountryLabel: translate('gamesFilter.other'),
       locale: translations.locale,
     };
-  }, [event.showCountry, translations]);
+  }, [event.categories, event.showCountry, translations]);
   const model = useMemo(
     () => deriveGameBrowserModel(games, requestedState, modelOptions),
     [games, modelOptions, requestedState]
@@ -75,9 +77,11 @@ function AllGamesContent({ event, games, translations }: AllGamesContentProps) {
     () =>
       model.groups.map((group) => ({
         ...group,
-        label: group.label ? `${t('gamesFilter.versus', group.label)} (${group.games.length})` : undefined,
+        label: group.label
+          ? `${['opponent-player', 'opponent-country'].includes(model.state.group) ? t('gamesFilter.versus', group.label) : group.label} (${group.games.length})`
+          : undefined,
       })),
-    [model.groups, t]
+    [model.groups, model.state.group, t]
   );
 
   useEffect(() => {
@@ -148,7 +152,7 @@ function AllGamesContent({ event, games, translations }: AllGamesContentProps) {
       )}
 
       {model.filteredCount > 0 ? (
-        <VirtualGameRecordGrid event={event} groups={groups} translations={translations} />
+        <VirtualGameRecordGrid key={model.state.group} event={event} groups={groups} translations={translations} />
       ) : (
         <div className="flex flex-1 flex-col items-center justify-center gap-3 py-12 text-center">
           <p>{t('gamesFilter.noMatches')}</p>

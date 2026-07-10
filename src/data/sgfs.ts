@@ -103,6 +103,7 @@ export function getGameInfo(sgf: Sgf, game: Game, tournament: Tournament): ApiGa
     stage: game.stage,
     stageName: tournament.stages.length > 1 ? stage.name : undefined,
     stageType: tournament.stages.length > 1 ? stage.type : undefined,
+    category: stage?.category,
     black,
     white,
     result: game.result,

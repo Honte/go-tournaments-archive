@@ -20,7 +20,7 @@ describe('game browser URL state', () => {
     const parsed = parseGameBrowserState(
       new URLSearchParams(
         'player=a&country=de&opponent=b&opponentCountry=pl&playerRankMin=5K&year=2023&year=2020&movesMax=200' +
-          '&result=time&result=resignation&winner=opponent&has=yt&has=ogs&sort=moves-desc&group=year'
+          '&category=u18&result=time&result=resignation&winner=opponent&has=yt&has=ogs&sort=moves-desc&group=year'
       )
     );
     const serialized = serializeGameBrowserState(
@@ -35,6 +35,7 @@ describe('game browser URL state', () => {
     assert.deepEqual(serialized.getAll('result'), ['resignation', 'time']);
     assert.deepEqual(serialized.getAll('has'), ['ogs', 'yt']);
     assert.equal(serialized.get('winner'), 'opponent');
+    assert.equal(serialized.get('category'), 'u18');
     assert.equal(serialized.get('group'), 'year');
     assert.deepEqual(parseGameBrowserState(serialized), parsed);
   });
@@ -235,6 +236,47 @@ describe('game filtering and facets', () => {
     assert.equal(selectedOpponent?.count, 0);
     assert.equal(toCounts(model.facets.opponent.options).c, 1);
   });
+
+  it('updates year and media counts from the current filter state', () => {
+    const playerModel = deriveGameBrowserModel(games, state({ player: 'a', years: [2023] }));
+    const mediaOptions = deriveGameBrowserModel(games, state({ player: 'a' }));
+    const selectedMedia = deriveGameBrowserModel(games, state({ player: 'a', media: ['ogs'] }));
+
+    assert.deepEqual(toCounts(playerModel.facets.year.options), { 2020: 1, 2021: 1, 2023: 1 });
+    assert.deepEqual(mediaOptions.facets.media, { ogs: 2, yt: 2, ai: 0 });
+    assert.deepEqual(selectedMedia.facets.media, { ogs: 2, yt: 1, ai: 0 });
+  });
+
+  it('builds self-excluding winner counts for colors and focal roles', () => {
+    const model = deriveGameBrowserModel(games, state({ player: 'a', winner: 'black' }));
+
+    assert.deepEqual(model.facets.winner, { black: 1, white: 2, player: 3, opponent: 0 });
+  });
+
+  it('retains a selected year with zero matches from unrelated filters', () => {
+    const model = deriveGameBrowserModel(games, state({ player: 'a', years: [2020], results: ['time'] }));
+
+    assert.equal(model.filteredCount, 0);
+    assert.deepEqual(toCounts(model.facets.year.options), { 2020: 0, 2021: 1 });
+  });
+
+  it('filters and facets categories only when category data is enabled', () => {
+    const categorized = createGames().map((record, index) => ({
+      ...record,
+      category: index < 2 ? 'junior' : 'open',
+    }));
+    const model = deriveGameBrowserModel(categorized, state({ player: 'a', category: 'junior' }), {
+      categoriesEnabled: true,
+      categoryLabel: (category) => category.toUpperCase(),
+    });
+
+    assert.deepEqual(toCounts(model.facets.category.options), { junior: 2, open: 1 });
+    assert.deepEqual(
+      model.games.map((record) => record.sgf),
+      ['g2.sgf', 'g1.sgf']
+    );
+    assert.equal(model.facets.category.options[0]?.label, 'JUNIOR');
+  });
 });
 
 describe('dependent normalization, sorting, and grouping', () => {
@@ -276,14 +318,26 @@ describe('dependent normalization, sorting, and grouping', () => {
     assert.deepEqual(getGameGroupEligibility(state({ player: 'a' })), {
       opponentPlayer: true,
       opponentCountry: true,
+      countryPlayer: false,
+      category: false,
     });
     assert.deepEqual(getGameGroupEligibility(state({ player: 'a', opponent: 'b' })), {
       opponentPlayer: false,
       opponentCountry: false,
+      countryPlayer: false,
+      category: false,
+    });
+    assert.deepEqual(getGameGroupEligibility(state({ country: 'PL' })), {
+      opponentPlayer: true,
+      opponentCountry: true,
+      countryPlayer: true,
+      category: false,
     });
 
     const byOpponent = deriveGameBrowserModel(games, state({ player: 'a', group: 'opponent-player' }));
     const byCountry = deriveGameBrowserModel(games, state({ country: 'PL', group: 'opponent-country' }));
+    const byCountryPlayer = deriveGameBrowserModel(games, state({ country: 'PL', group: 'country-player' }));
+    const byYear = deriveGameBrowserModel(games, state({ group: 'year' }));
     const invalidGroup = deriveGameBrowserModel(games, state({ player: 'a', opponent: 'b', group: 'opponent-player' }));
 
     assert.deepEqual(
@@ -301,7 +355,38 @@ describe('dependent normalization, sorting, and grouping', () => {
       ]
     );
     assert.equal(byCountry.groups.flatMap((group) => group.games).length, byCountry.filteredCount);
+    assert.deepEqual(
+      byCountryPlayer.groups.map((group) => [group.label, group.games.length]),
+      [
+        ['Alice New', 2],
+        ['Dan vs Eve', 1],
+      ]
+    );
+    assert.deepEqual(
+      byYear.groups.map((group) => group.label),
+      ['2023', '2022', '2021', '2020']
+    );
     assert.equal(invalidGroup.state.group, 'none');
+  });
+
+  it('groups category records when categories are available', () => {
+    const categorized = createGames().map((record, index) => ({
+      ...record,
+      category: index % 2 === 0 ? 'junior' : 'open',
+    }));
+    const model = deriveGameBrowserModel(categorized, state({ group: 'category' }), {
+      categoriesEnabled: true,
+      categoryLabel: (category) => category.toUpperCase(),
+    });
+
+    assert.equal(getGameGroupEligibility(state(), true, true).category, true);
+    assert.deepEqual(
+      model.groups.map((group) => [group.label, group.games.length]),
+      [
+        ['JUNIOR', 2],
+        ['OPEN', 2],
+      ]
+    );
   });
 });
 

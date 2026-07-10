@@ -9,6 +9,7 @@ export type ApiGameInfo = Omit<GameProps, 'sgf'> & {
   komi?: number;
   stageName?: LocalizedString;
   stageType?: Stage['type'];
+  category?: string;
   black: Player;
   white: Player;
   winner?: 'black' | 'white';

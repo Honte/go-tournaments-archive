@@ -2,6 +2,7 @@
 
 import { useWindowVirtualizer } from '@tanstack/react-virtual';
 import { useEffect, useLayoutEffect, useMemo, useRef, useState, type RefObject } from 'react';
+import { FaChevronRight } from 'react-icons/fa6';
 import type { ApiGameInfo } from '@/schema/api';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
@@ -21,7 +22,7 @@ export type VirtualGameRecordGridProps = {
 };
 
 type VirtualRow =
-  | { type: 'heading'; key: string; label: string }
+  | { type: 'heading'; key: string; groupKey: string; label: string; collapsed: boolean }
   | { type: 'games'; key: string; games: ApiGameInfo[] };
 
 const ROW_GAP = 16;
@@ -30,7 +31,8 @@ export function VirtualGameRecordGrid({ event, groups, translations }: VirtualGa
   const t = getTranslator(translations);
   const listRef = useRef<HTMLDivElement>(null);
   const columnCount = useResponsiveColumnCount();
-  const rows = useMemo(() => packRows(groups, columnCount), [columnCount, groups]);
+  const [collapsedGroups, setCollapsedGroups] = useState<ReadonlySet<string>>(() => new Set());
+  const rows = useMemo(() => packRows(groups, columnCount, collapsedGroups), [collapsedGroups, columnCount, groups]);
   const scrollMargin = useScrollMargin(listRef, rows.length);
   const rowVirtualizer = useWindowVirtualizer({
     count: rows.length,
@@ -70,7 +72,30 @@ export function VirtualGameRecordGrid({ event, groups, translations }: VirtualGa
             style={{ transform: `translateY(${virtualRow.start - scrollMargin}px)` }}
           >
             {row.type === 'heading' ? (
-              <h2 className="border-b border-event-dark pb-1 text-lg font-bold">{row.label}</h2>
+              <h2>
+                <button
+                  type="button"
+                  className="flex w-full cursor-pointer items-center gap-2 border-b border-event-dark pb-1 text-left text-lg font-bold hover:text-event-hover focus-visible:ring-2 focus-visible:ring-event-primary"
+                  aria-expanded={!row.collapsed}
+                  onClick={() =>
+                    setCollapsedGroups((current) => {
+                      const next = new Set(current);
+                      if (next.has(row.groupKey)) {
+                        next.delete(row.groupKey);
+                      } else {
+                        next.add(row.groupKey);
+                      }
+                      return next;
+                    })
+                  }
+                >
+                  <FaChevronRight
+                    aria-hidden={true}
+                    className={`shrink-0 transition-transform duration-200 ${row.collapsed ? '' : 'rotate-90'}`}
+                  />
+                  {row.label}
+                </button>
+              </h2>
             ) : (
               <div role="presentation" className="grid grid-cols-1 items-stretch gap-4 md:grid-cols-2 xl:grid-cols-3">
                 {row.games.map((game) => (
@@ -87,12 +112,20 @@ export function VirtualGameRecordGrid({ event, groups, translations }: VirtualGa
   );
 }
 
-function packRows(groups: readonly GameRecordGroup[], columnCount: number): VirtualRow[] {
+function packRows(
+  groups: readonly GameRecordGroup[],
+  columnCount: number,
+  collapsedGroups: ReadonlySet<string>
+): VirtualRow[] {
   const rows: VirtualRow[] = [];
 
   for (const group of groups) {
     if (group.label) {
-      rows.push({ type: 'heading', key: `heading:${group.key}`, label: group.label });
+      const collapsed = collapsedGroups.has(group.key);
+      rows.push({ type: 'heading', key: `heading:${group.key}`, groupKey: group.key, label: group.label, collapsed });
+      if (collapsed) {
+        continue;
+      }
     }
 
     for (let index = 0; index < group.games.length; index += columnCount) {

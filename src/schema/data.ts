@@ -75,6 +75,7 @@ export type MandatoryBreakers =
 // Then modify the BaseStage type to use the enum
 export type BaseStage = {
   name?: LocalizedString;
+  category?: string;
   notes?: LocalizedString;
   location?: string;
   country?: string;

@@ -28,6 +28,9 @@ export type GameFacetSelectProps = {
   name?: string;
   disabled?: boolean;
   className?: string;
+  showCounts?: boolean;
+  searchable?: boolean;
+  clearable?: boolean;
 };
 
 const filterOption = createFilter<GameFacetOption>({
@@ -110,6 +113,9 @@ export const GameFacetSelect = memo(function GameFacetSelect({
   name,
   disabled = false,
   className,
+  showCounts = true,
+  searchable = true,
+  clearable = true,
 }: GameFacetSelectProps) {
   const inputId = `${id}-input`;
   const labelId = `${id}-label`;
@@ -142,13 +148,13 @@ export const GameFacetSelect = memo(function GameFacetSelect({
         onChange={handleChange}
         placeholder={placeholder}
         noOptionsMessage={noOptionsMessage ? () => noOptionsMessage : undefined}
-        getOptionLabel={getOptionLabel}
+        getOptionLabel={showCounts ? getOptionLabel : (option) => option.label}
         getOptionValue={getOptionValue}
-        formatOptionLabel={formatOptionLabel}
+        formatOptionLabel={showCounts ? formatOptionLabel : undefined}
         filterOption={filterOption}
         isOptionDisabled={isOptionDisabled}
-        isClearable={true}
-        isSearchable={true}
+        isClearable={clearable}
+        isSearchable={searchable}
         isDisabled={disabled}
         hideSelectedOptions={false}
         menuPlacement="auto"

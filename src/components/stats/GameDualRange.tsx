@@ -36,6 +36,7 @@ const thumbClassName = `pointer-events-none absolute inset-x-0 top-1/2 z-10 h-4 
   [&::-webkit-slider-thumb]:cursor-grab
   [&::-webkit-slider-thumb]:appearance-none
   [&::-webkit-slider-thumb]:[-webkit-appearance:none]
+  [&::-webkit-slider-thumb]:-mt-2
   [&::-webkit-slider-thumb]:rounded-full
   [&::-webkit-slider-thumb]:border-2
   [&::-webkit-slider-thumb]:border-event-primary
