@@ -41,6 +41,10 @@ stages:
       - 24-23 24:B+25.5 round:5 sgf:1985/5-StigTjur-JohnChen.sgf
       - 25-20 20:W+13.5 round:1 sgf:1985/1-ChuiOnnCheong-PatriceGosteli.sgf
       - 25-23 23:W+R round:4 sgf:1985/4-ChuiOnnCheong.sgf
+      - 26-13 13:W+9.5 round:6 sgf:1985/6-LeszekSoldan-HelmutHasibeder.sgf
+      - 26-16 16:W+R round:4 sgf:1985/4-LeszekSoldan-BarryPhease.sgf
+      - 26-19 19:W+3.5 round:2 sgf:1985/2-LeszekSoldan-ZoranMutabzija.sgf
+      - 26-27 26:B+35.5 round:1 sgf:1985/1-LeszekSoldan-FranciscoGarciadelaBanda.sgf
       - 26-30 26:B+R round:5 sgf:1985/5-LeszekSoldan-BeeGiokTan.sgf
       - 27-21 21:W+R round:5 sgf:1985/5-FranciscoGarciadelaBanda-PetrWinkelhofer.sgf
       - 28-31 28:B+8.5 round:4 sgf:1985/4-SergioParimbelli-HoracioPernia.sgf

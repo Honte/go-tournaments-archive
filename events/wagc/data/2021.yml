@@ -33,6 +33,7 @@ stages:
       - 4-5 4:B+22.5 round:6 sgf:2021/6-LukasPodpera-StanislawFrejlak.sgf
       - 4-25 4:B+R round:4 sgf:2021/4-LukasPodpera-AlessandroPace.sgf
       - 5-1 5:B+5.5 round:4 sgf:2021/4-StanislawFrejlak-TianfangMa.sgf
+      - 5-16 5:B+1.5 round:2 sgf:2021/2-StanislawFrejlak-QiyouWu.sgf
       - 6-1 1:W+R round:5 sgf:2021/5-NaiSanChan-TianfangMa.sgf
       - 6-3 6:B+0.5 round:2 sgf:2021/2-NaiSanChan-DabeenKim.sgf
       - 7-4 4:W+11.5 round:2 sgf:2021/2-BenjaminDreanGuenaizia-LukasPodpera.sgf

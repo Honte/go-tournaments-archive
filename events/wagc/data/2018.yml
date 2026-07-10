@@ -28,11 +28,14 @@ stages:
       - 3-11 3:B+16.5 round:4 sgf:2018/4-ChenWang-CsabaMero.sgf
       - 4-1 1:W+30.5 round:8 sgf:2018/8-StanislawFrejlak-YiTienChan.sgf
       - 4-11 4:B+15.5 round:7 sgf:2018/7-StanislawFrejlak-CsabaMero.sgf
+      - 4-18 4:B+R round:6 sgf:2018/6-StanislawFrejlak-XinLei.sgf
       - 4-34 4:B+R round:3 sgf:2018/3-StanislawFrejlak-JanProkop.sgf
+      - 4-36 4:B+R round:1 sgf:2018/1-StanislawFrejlak-ThiagoShimadaRamos.sgf
       - 5-3 3:W+R round:6 sgf:2018/6-FukashiMurakami-ChenWang.sgf
       - 5-14 5:B+4.5 round:4 sgf:2018/4-FukashiMurakami-YongfeiGe.sgf
       - 5-24 5:B+R round:7 sgf:2018/7-FukashiMurakami-LotharSpiegel.sgf
       - 5-49 5:B+R round:1 sgf:2018/1-FukashiMurakami-VasylSkochko.sgf
+      - 7-4 4:W+3.5 round:5 sgf:2018/5-DusanMitic-StanislawFrejlak.sgf
       - 8-18 8:B+22.5 round:8 sgf:2018/8-JoseFlorencia-XinLei.sgf
       - 8-47 8:B+R round:4 sgf:2018/4-JoseFlorencia-OlafurSigurdarson.sgf
       - 9-1 1:W+8.5 round:7 sgf:2018/7-JieHuiKwa-YiTienChan.sgf
@@ -43,6 +46,7 @@ stages:
       - 12-14 12:B+4.5 round:7 sgf:2018/7-DmitrijSurin-YongfeiGe.sgf
       - 13-5 5:W+9.5 round:8 sgf:2018/8-CheukTungLo-FukashiMurakami.sgf
       - 13-23 13:B+R round:7 sgf:2018/7-CheukTungLo-CristianPop.sgf
+      - 14-4 14:B+? round:2 sgf:2018/2-YongfeiGe-StanislawFrejlak.sgf
       - 14-9 9:W+2.5 round:6 sgf:2018/6-YongfeiGe-JieHuiKwa.sgf
       - 15-7 7:W+19.5 round:4 sgf:2018/4-FaishalUmarFitrah-DusanMitic.sgf
       - 15-37 15:B+R round:2 sgf:2018/2-FaishalUmarFitrah-ChanFaiTang.sgf

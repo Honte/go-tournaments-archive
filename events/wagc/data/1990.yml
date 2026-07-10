@@ -19,20 +19,84 @@ stages:
     games:
       - 1-2 1:B+R round:4 sgf:1990/4-HaoChang-GwanwookAnn.sgf
       - 1-3 1:B+2.5 round:6 sgf:1990/6-HaoChang-HiroshiMiura.sgf
+      - 1-4 1:B+R round:3 sgf:1990/3-HaoChang-LaurentHeiser.sgf
+      - 1-16 1:B+12.5 round:2 sgf:1990/2-HaoChang-KhosaAriya.sgf
+      - 2-4 2:B+5.5 round:8 sgf:1990/8-GwanwookAnn-LaurentHeiser.sgf
+      - 2-5 2:B+R round:5 sgf:1990/5-GwanwookAnn-JyhhaoSu.sgf
+      - 2-6 2:B+R round:3 sgf:1990/3-GwanwookAnn-YingKan.sgf
       - 2-40 2:B+R round:1 sgf:1990/1-GwanwookAnn-JurgenMattern.sgf
       - 3-2 2:W+R round:7 sgf:1990/7-HiroshiMiura-GwanwookAnn.sgf
       - 3-9 3:B+R round:5 sgf:1990/5-HiroshiMiura-ChalresHuh.sgf
       - 5-8 8:W+4.5 round:2 sgf:1990/2-JyhhaoSu-FrankJanssen.sgf
       - 6-4 4:W+R round:5 sgf:1990/5-YingKan-LaurentHeiser.sgf
       - 6-10 6:B+R round:7 sgf:1990/7-YingKan-IgorDetkov.sgf
+      - 6-18 6:B+R round:6 sgf:1990/6-YingKan-PierreColmez.sgf
+      - 6-20 6:B+R round:2 sgf:1990/2-YingKan-PetrWinkelhofer.sgf
+      - 7-3 3:W+6.5 round:3 sgf:1990/3-SenfengWang-HiroshiMiura.sgf
+      - 7-24 7:B+R round:7 sgf:1990/7-SenfengWang-PatriceGosteli.sgf
+      - 7-26 7:B+R round:2 sgf:1990/2-SenfengWang-UlrikBroJoergensen.sgf
+      - 8-3 3:W+2.5 round:8 sgf:1990/8-FrankJanssen-HiroshiMiura.sgf
+      - 8-11 8:B+4.5 round:3 sgf:1990/3-FrankJanssen-HelmutHasibeder.sgf
+      - 8-14 8:B+24.5 round:7 sgf:1990/7-FrankJanssen-ZoranMutabzija.sgf
+      - 9-1 1:W+R round:7 sgf:1990/7-CharlesHuh-HaoChang.sgf
+      - 9-5 5:W+R round:8 sgf:1990/8-CharlesHuh-JyhhaoSu.sgf
+      - 9-8 9:B+R round:4 sgf:1990/4-CharlesHuh-FrankJanssen.sgf
+      - 9-22 9:B+38.5 round:6 sgf:1990/6-CharlesHuh-FranciscoGarciadelaBanda.sgf
+      - 10-3 3:W+26.5 round:4 sgf:1990/4-IgorDetkov-HiroshiMiura.sgf
+      - 10-17 10:B+R round:6 sgf:1990/6-IgorDetkov-MattiSiivola.sgf
       - 10-18 18:W+4.5 round:1 sgf:1990/1-IgorDetkov-PierreColmez.sgf
+      - 10-31 10:B+21.5 round:2 sgf:1990/2-IgorDetkov-EnriqueBurzyn.sgf
       - 11-5 5:W+12.5 round:7 sgf:1990/7-HelmutHasibeder-JyhhaoSu.sgf
+      - 11-7 7:W+10.5 round:5 sgf:1990/5-HelmutHasibeder-SenfengWang.sgf
       - 11-28 11:B+19.5 round:1 sgf:1990/1-HelmutHasibeder-DavidCoughlin.sgf
       - 12-17 12:B+R round:4 sgf:1990/4-LeszekSoldan-MattiSiivola.sgf
+      - 13-5 5:W+R round:6 sgf:1990/6-BrianSong-JyhhaoSu.sgf
+      - 13-23 13:B+R round:5 sgf:1990/5-BrianSong-EdmundShaw.sgf
       - 14-7 7:W+20.5 round:1 sgf:1990/1-ZoranMutabzija-SenfengWang.sgf
+      - 14-20 14:B+R round:8 sgf:1990/8-ZoranMutabzija-PetrWinkelhofer.sgf
+      - 14-30 14:B+4.5 round:3 sgf:1990/3-ZoranMutabzija-CarlosTorres.sgf
       - 16-12 12:W+3.5 round:8 sgf:1990/8-KhosaAriya-LeszekSoldan.sgf
+      - 16-21 16:B+7.5 round:4 sgf:1990/4-KhosaAriya-JosteinFlood.sgf
+      - 17-24 17:B+3.5 round:5 sgf:1990/5-MattiSiivola-PatriceGosteli.sgf
+      - 18-11 11:W+8.5 round:8 sgf:1990/8-PierreColmez-HelmutHasibeder.sgf
+      - 19-4 4:W+6.5 round:7 sgf:1990/7-SorinGherman-LaurentHeiser.sgf
+      - 19-9 9:W+R round:2 sgf:1990/2-SorinGherman-CharlesHuh.sgf
+      - 19-16 19:B+R round:5 sgf:1990/5-SorinGherman-KhosaAriya.sgf
+      - 19-30 19:B+R round:4 sgf:1990/4-SorinGherman-CarlosTorres.sgf
+      - 20-11 11:W+0.5 round:4 sgf:1990/4-PetrWinkelhofer-HelmutHasibeder.sgf
+      - 20-17 20:B+R round:7 sgf:1990/7-PetrWinkelhofer-MattiSiivola.sgf
+      - 20-18 18:W+4.5 round:5 sgf:1990/5-PetrWinkelhofer-PierreColmez.sgf
+      - 20-22 20:B+14.5 round:3 sgf:1990/3-PetrWinkelhofer-FranciscoGarciadelaBanda.sgf
+      - 22-15 15:W+R round:7 sgf:1990/7-FranciscoGarciadelaBanda-YingMinTse.sgf
+      - 22-25 22:B+7.5 round:5 sgf:1990/5-FranciscoGarciadelaBanda-ThomasHubner.sgf
+      - 23-35 23:B+R round:8 sgf:1990/8-EdmundShaw-BjoernHallin.sgf
       - 24-1 1:W+R round:1 sgf:1990/1-PatriceGosteli-HaoChang.sgf
+      - 24-16 16:W+21.5 round:3 sgf:1990/3-PatriceGosteli-KhosaAriya.sgf
+      - 25-5 5:W+R round:4 sgf:1990/4-ThomasHubner-JyhhaoSu.sgf
+      - 25-16 16:W+18.5 round:7 sgf:1990/7-ThomasHubner-KhosaAriya.sgf
+      - 26-15 15:W+16.5 round:3 sgf:1990/3-UlrikBroJoergensen-YingMinTse.sgf
       - 26-32 26:B+10.5 round:1 sgf:1990/1-UlrikBroJoergensen-ZoltanKelemen.sgf
+      - 27-29 27:B+19.5 round:6 sgf:1990/6-YoshikoKurushima-TeonglokeYeo.sgf
+      - 28-22 22:W+5.5 round:4 sgf:1990/4-DavidCoughlin-FranciscoGarciadelaBanda.sgf
+      - 28-31 28:B+12.5 round:7 sgf:1990/7-DavidCoughlin-EnriqueBurzyn.sgf
+      - 29-24 24:W+R round:8 sgf:1990/8-TeonglokeYeo-PatriceGosteli.sgf
+      - 29-35 29:B+R round:4 sgf:1990/4-TeonglokeYeo-BjoernHallin.sgf
+      - 29-36 29:B+6.5 round:2 sgf:1990/2-TeonglokeYeo-EdmondTan.sgf
+      - 30-23 23:W+17.5 round:1 sgf:1990/1-CarlosTorres-EdmundShaw.sgf
+      - 30-34 30:B+R round:5 sgf:1990/5-CarlosTorres-NevilleSmythe.sgf
+      - 31-35 35:W+19.5 round:3 sgf:1990/3-EnriqueBurzyn-BjoernHallin.sgf
+      - 32-31 31:W+3.5 round:5 sgf:1990/5-ZoltanKelemen-EnriqueBurzyn.sgf
+      - 32-33 33:W+1.5 round:2 sgf:1990/2-ZoltanKelemen-MichelWettach.sgf
+      - 32-34 32:B+R round:6 sgf:1990/6-ZoltanKelemen-NevilleSmythe.sgf
+      - 33-24 24:W+8.5 round:6 sgf:1990/6-MichelWettach-PatriceGosteli.sgf
+      - 33-25 25:W+R round:3 sgf:1990/3-MichelWettach-ThomasHubner.sgf
+      - 34-39 34:B+5.5 round:3 sgf:1990/3-NevilleSmythe-NoelMitchell.sgf
       - 35-13 13:W+R round:1 sgf:1990/1-BjoernHallin-BrianSong.sgf
+      - 35-26 26:W+3.5 round:6 sgf:1990/6-BjoernHallin-UlrikBroJoergensen.sgf
+      - 36-39 36:B+R round:7 sgf:1990/7-EdmondTan-NoelMitchell.sgf
       - 37-15 15:W+R round:1 sgf:1990/1-MarcoVajani-YingMinTse.sgf
+      - 38-28 28:W+R round:2 sgf:1990/2-CarlosSegura-DavidCoughlin.sgf
+      - 38-39 38:B+? round:8 sgf:1990/8-CarlosSegura-NoelMitchell.sgf
       - 39-19 19:W+R round:1 sgf:1990/1-NoelMitchell-SorinGherman.sgf
+      - 39-24 24:W+R round:2 sgf:1990/2-NoelMitchell-PatriceGosteli.sgf
+      - 39-37 37:W+18.5 round:6 sgf:1990/6-NoelMitchell-MarcoVajani.sgf

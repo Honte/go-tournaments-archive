@@ -44,7 +44,7 @@ export async function CategoryPage({ event, locale, category }: CategoryPageProp
 }
 
 export async function getCategoryPageMetadata({ event, locale, category }: CategoryPageProps) {
-  if (!event.showCountry || !event.categories?.includes(category)) {
+  if (!event.categories?.includes(category)) {
     return notFound();
   }
 

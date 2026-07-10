@@ -121,15 +121,18 @@ export function CategoryResultsTable({ event, translations, stats, className }: 
 
   return (
     <div className={clsx('flex-2 flex-col', className)}>
-      <H1>{t('stats.summary')}</H1>
+      <H1
+        actions={
+          hasUnsure ? (
+            <Toggle checked={includeUnsure} onChange={setIncludeUnsure}>
+              {t('stats.includeUnsurePlayers')}
+            </Toggle>
+          ) : undefined
+        }
+      >
+        {t('stats.summary')}
+      </H1>
       <StatsTable data={data} columns={columns} />
-      {hasUnsure && (
-        <div className="flex p-2">
-          <Toggle checked={includeUnsure} onChange={setIncludeUnsure} className="ml-auto">
-            {t('stats.includeUnsurePlayers')}
-          </Toggle>
-        </div>
-      )}
     </div>
   );
 }
