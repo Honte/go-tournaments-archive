@@ -72,6 +72,10 @@ function AllGamesContent({ event, games, translations }: AllGamesContentProps) {
     [games, modelOptions, requestedState]
   );
   const activeCount = getActiveGameFilterCount(model.state);
+  const titleCount =
+    model.filteredCount === model.totalCount
+      ? String(model.totalCount)
+      : t('gamesFilter.count', String(model.filteredCount), String(model.totalCount));
   const [filtersOpen, setFiltersOpen] = useState(() => activeCount > 0);
   const groups = useMemo<GameRecordGroup[]>(
     () =>
@@ -138,7 +142,7 @@ function AllGamesContent({ event, games, translations }: AllGamesContentProps) {
           </button>
         }
       >
-        {t('site.gamesListTitle')} ({t('gamesFilter.count', String(model.filteredCount), String(model.totalCount))})
+        {t('site.gamesListTitle')} ({titleCount})
       </H1>
 
       {filtersOpen && (
