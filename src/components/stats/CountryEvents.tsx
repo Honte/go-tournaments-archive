@@ -1,7 +1,7 @@
 'use client';
 
 import type { ColumnDef } from '@tanstack/react-table';
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import type { CountryStats } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
@@ -10,6 +10,7 @@ import { toPercentage } from '@/libs/table';
 import { StatsTable } from '@/components/table/StatsTable';
 import { H2 } from '@/components/ui/H2';
 import { PlayerLink } from '@/components/ui/PlayerLink';
+import { Toggle } from '@/components/ui/Toggle';
 import { YearLink } from '@/components/YearLink';
 
 type CountryEventsProps = {
@@ -32,43 +33,32 @@ type CountryEventRow = {
   wonPercent: number;
 };
 
+type CountryEventRowsOptions = {
+  country: CountryStats;
+  showBestOnly: boolean;
+  hasCategories: boolean;
+  showCategories: boolean;
+};
+
 export function CountryEvents({
   event,
   country,
   translations,
   showCategories = Boolean(event.categories?.length),
 }: CountryEventsProps) {
+  const [showBestOnly, setShowBestOnly] = useState(true);
   const t = getTranslator(translations);
 
-  const data = useMemo(() => {
-    const list: CountryEventRow[] = [];
-
-    for (const year in country.years) {
-      const yearData = country.years[year];
-
-      for (const result of yearData.results) {
-        for (const stage of result.stages) {
-          const games = stage.games.length;
-          const won = stage.games.reduce((acc, game) => acc + Number(game.won), 0);
-
-          list.push({
-            year: Number(year),
-            id: result.id,
-            name: result.name,
-            rank: result.rank,
-            categories: showCategories && stage.categories ? Object.keys(stage.categories) : undefined,
-            place: stage.place,
-            games,
-            won,
-            lost: games - won,
-            wonPercent: won / games,
-          });
-        }
-      }
-    }
-
-    return list.sort((a, b) => a.year - b.year);
-  }, [country, showCategories]);
+  const data = useMemo(
+    () =>
+      getCountryEventRows({
+        country,
+        showBestOnly,
+        hasCategories: Boolean(event.categories?.length),
+        showCategories,
+      }),
+    [country, event.categories?.length, showBestOnly, showCategories]
+  );
 
   const columns = useMemo<ColumnDef<CountryEventRow>[]>(
     () =>
@@ -136,8 +126,74 @@ export function CountryEvents({
 
   return (
     <div className="my-2 flex-1">
-      <H2>{t('stats.events')}</H2>
+      <H2
+        actions={
+          <Toggle checked={showBestOnly} onChange={setShowBestOnly}>
+            {t('stats.bestParticipantsOnly')}
+          </Toggle>
+        }
+      >
+        {t('stats.events')}
+      </H2>
       <StatsTable data={data} columns={columns} />
     </div>
   );
+}
+
+export function getCountryEventRows({ country, showBestOnly, hasCategories, showCategories }: CountryEventRowsOptions) {
+  const list: CountryEventRow[] = [];
+
+  for (const year in country.years) {
+    const yearData = country.years[year];
+    const bestCategoryPlaces: Record<string, number> = {};
+    const bestPlace = yearData.results[0]?.place;
+
+    if (showBestOnly && hasCategories) {
+      for (const result of yearData.results) {
+        for (const stage of result.stages) {
+          for (const [category, place] of Object.entries(stage.categories ?? {})) {
+            if (typeof place === 'number') {
+              bestCategoryPlaces[category] = Math.min(bestCategoryPlaces[category] ?? Infinity, place);
+            }
+          }
+        }
+      }
+    }
+
+    for (const result of yearData.results) {
+      if (showBestOnly && !hasCategories && result.place !== bestPlace) {
+        break;
+      }
+
+      for (const stage of result.stages) {
+        if (
+          showBestOnly &&
+          hasCategories &&
+          !Object.entries(stage.categories ?? {}).some(
+            ([category, place]) => typeof place === 'number' && place === bestCategoryPlaces[category]
+          )
+        ) {
+          continue;
+        }
+
+        const games = stage.games.length;
+        const won = stage.games.reduce((acc, game) => acc + Number(game.won), 0);
+
+        list.push({
+          year: Number(year),
+          id: result.id,
+          name: result.name,
+          rank: result.rank,
+          categories: showCategories && stage.categories ? Object.keys(stage.categories) : undefined,
+          place: stage.place,
+          games,
+          won,
+          lost: games - won,
+          wonPercent: won / games,
+        });
+      }
+    }
+  }
+
+  return list.sort((a, b) => a.year - b.year);
 }

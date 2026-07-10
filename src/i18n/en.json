@@ -177,6 +177,7 @@
     "countries": "Medal standings",
     "attendants": "Top %{0} participants",
     "achievements": "Achievements",
+    "bestParticipantsOnly": "Best participants only",
     "includeUnsurePlayers": "Include unconfirmed players",
     "total": {
       "title": "Archive in numbers",

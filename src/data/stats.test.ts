@@ -231,6 +231,32 @@ describe('calculateStats', () => {
     );
   });
 
+  it('sorts country results for each year by overall place', () => {
+    const playersHandler = createPlayersHandler();
+    const players = playersHandler.loadJson({
+      a: 'Alice Nowak 1d (PL)',
+      b: 'Bob Smith 1k (PL)',
+    });
+    const tournament = createTournament(players, {});
+    const stage = tournament.stages[0];
+
+    if (stage.type !== 'league') {
+      throw new Error('Expected a league test fixture');
+    }
+
+    stage.table.reverse();
+
+    const stats = calculateStats(creteEventConfig(), [tournament], playersHandler);
+
+    assert.deepEqual(
+      stats.countries.PL.years[2025].results.map(({ id, place }) => [id, place]),
+      [
+        [players.a.id, 1],
+        [players.b.id, 2],
+      ]
+    );
+  });
+
   it('generates category stats subpages only for players and countries with multiple categories', () => {
     const playersHandler = createPlayersHandler();
     const players = playersHandler.loadJson({

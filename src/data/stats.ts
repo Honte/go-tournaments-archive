@@ -224,6 +224,8 @@ export function calculateStats(
     for (const year in stats.years) {
       const yearStats = stats.years[year];
 
+      yearStats.results.sort((a, b) => a.place - b.place);
+
       for (const result of yearStats.results) {
         yearStats.bestPlace = Math.min(yearStats.bestPlace, result.place);
 

@@ -1,10 +1,8 @@
-import { clsx } from 'clsx';
-import type { PropsWithChildren } from 'react';
+import type { ComponentProps } from 'react';
+import { Header } from '@/components/ui/Header';
 
-type H1Props = PropsWithChildren<{
-  className?: string;
-}>;
+type H1Props = Omit<ComponentProps<typeof Header>, 'level'>;
 
-export function H1({ children, className }: H1Props) {
-  return <h1 className={clsx('text-2xl font-bold pb-1 my-3 border-b-event-dark border-b-2', className)}>{children}</h1>;
+export function H1(props: H1Props) {
+  return <Header level={1} {...props} />;
 }

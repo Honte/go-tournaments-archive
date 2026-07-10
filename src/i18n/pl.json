@@ -177,6 +177,7 @@
     "countries": "Klasyfikacja medalowa",
     "attendants": "Top %{0} uczestników",
     "achievements": "Osiągnięcia",
+    "bestParticipantsOnly": "Tylko najlepsi uczestnicy",
     "includeUnsurePlayers": "Uwzględnij niepewnych graczy",
     "total": {
       "title": "Archiwum w liczbach",
