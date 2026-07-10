@@ -17,6 +17,7 @@ stages:
     games:
       - 1-3 1:B+7.5 round:5 sgf:2023/5-JeongseonKim-YuChengLai.sgf
       - 1-5 1:B+R round:7 sgf:2023/7-JeongseonKim-AlanHuang.sgf
+      - 1-24 1:B+R round:3 sgf:2023/3-JeongseonKim-KarlIrwin.sgf
       - 2-4 2:B+R round:7 sgf:2023/7-ChukunYang-YoshikiKurita.sgf
       - 2-8 2:B+R round:4 sgf:2023/4-ChukunYang-JieHuiKwa.sgf
       - 2-31 2:B+R round:1 sgf:2023/1-ChukunYang-FredericSchlattner.sgf
@@ -49,7 +50,10 @@ stages:
       - 21-20 20:W+7.5 round:4 sgf:2023/4-BenjaminBlanchard-JianxiChen.sgf
       - 23-35 23:B+R round:2 sgf:2023/2-BendeBarcza-SantiagoLaplagne.sgf
       - 24-13 13:W+22.5 round:6 sgf:2023/6-KarlIrwin-ManuelVelasco.sgf
+      - 24-15 15:W+R round:4 sgf:2023/4-KarlIrwin-AmirFragman.sgf
       - 24-21 21:W+R round:7 sgf:2023/7-KarlIrwin-BenjaminBlanchard.sgf
+      - 24-41 24:B+R round:1 sgf:2023/1-KarlIrwin-RenateReisenegger.sgf
+      - 25-24 24:W+? round:5 sgf:2023/5-DraganDubakovic-KarlIrwin.sgf
       - 25-41 25:B+8.5 round:3 sgf:2023/3-DraganDubakovic-RenateReisenegger.sgf
       - 28-21 21:W+R round:3 sgf:2023/3-JanFraczak-BenjaminBlanchard.sgf
       - 29-12 12:W+0.5 round:1 sgf:2023/1-MirtaMedak-JanneKosso.sgf

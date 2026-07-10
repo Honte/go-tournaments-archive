@@ -38,7 +38,9 @@ stages:
       - 6-2 2:W+8.5 round:2 sgf:2003/2-AlexejLazarev-CheonghwanKim.sgf
       - 8-2 2:W+R round:4 sgf:2003/4-YiChengShin-CheonghwanKim.sgf
       - 9-7 9:B+R round:1 sgf:2003/1-VesaLaatikainen-SuhkjooYoon.sgf
+      - 13-1 1:W+R round:5 sgf:2003/5-LeszekSoldan-SatoshiHiraoka.sgf
       - 14-12 12:W+7.5 round:3 sgf:2003/3-JunghoonLee-CornelBurzo.sgf
       - 18-1 1:W+R round:2 sgf:2003/2-RaphaelShin-SatoshiHiraoka.sgf
       - 20-2 2:W+R round:3 sgf:2003/3-BernhardScheid-CheonghwanKim.sgf
       - 31-2 2:W+R round:1 sgf:2003/1-GoranSiska-CheonghwanKim.sgf
+      - 34-13 13:W+9.5 round:2 sgf:2003/2-TorbenPedersen-LeszekSoldan.sgf

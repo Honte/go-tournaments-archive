@@ -19,7 +19,9 @@ stages:
       - 2-22 2:B+R round:3 sgf:1996/3-HironoriHirata-LeszekSoldan.sgf
       - 3-7 3:B+5.5 round:3 sgf:1996/3-YongmanYi-MyeongseonChoe.sgf
       - 3-8 3:B+R round:7 sgf:1996/7-YongmanYi-ViktorBogdanov.sgf
+      - 3-9 3:B+R round:2 sgf:1996/2-YongmanYi-ZhiqiYu.sgf
       - 4-1 1:W+T round:5 sgf:1996/5-YingKan-JunLiu.sgf
+      - 4-13 4:B+R round:2 sgf:1996/2-YingKan-LaurentHeiser.sgf
       - 5-7 5:B+R round:4 sgf:1996/4-ThomasFaulKo-MyeongseonChoe.sgf
       - 8-7 7:W+R round:1 sgf:1996/1-ViktorBogdanov-MyeongseonChoe.sgf
       - 9-1 1:W+? round:7 sgf:1996/7-ZhiqiYu-JunLiu.sgf
@@ -27,6 +29,7 @@ stages:
       - 11-27 11:B+R round:1 sgf:1996/1-PierreColmez-UlfOlsson.sgf
       - 12-33 12:B+R round:1 sgf:1996/1-KasperHornbaek-KorsakChairasmisak.sgf
       - 16-26 26:W+R round:1 sgf:1996/1-FranzHuettler-EnzoPedrini.sgf
+      - 17-45 17:B+R round:2 sgf:1996/2-AlainWettach-RafaelTorresMiranda.sgf
       - 18-2 18:B+R round:2 sgf:1996/2-GillesvanEeden-HironoriHirata.sgf
       - 18-4 4:W+R round:3 sgf:1996/3-GillesvanEeden-YingKan.sgf
       - 19-6 19:B+R round:4 sgf:1996/4-MatthewMacfadyen-HsiangJenHuang.sgf
@@ -36,4 +39,6 @@ stages:
       - 30-13 13:W+R round:7 sgf:1996/7-EduardoLopezHerrero-LaurentHeiser.sgf
       - 32-14 14:W+R round:1 sgf:1996/1-MattiSiivola-SayBoonNg.sgf
       - 35-9 9:W+R round:1 sgf:1996/1-KeeSoonTiong-ZhiqiYu.sgf
+      - 41-28 28:W+35.5 round:2 sgf:1996/2-PabloSaez-NoelMitchell.sgf
+      - 43-39 43:B+R round:2 sgf:1996/2-KeremKaraerkek-NevilleSmythe.sgf
       - 45-34 34:W+R round:1 sgf:1996/1-RafaelTorresMiranda-GaborSzabics.sgf

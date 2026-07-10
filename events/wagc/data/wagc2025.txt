@@ -28,7 +28,7 @@
 15 Sam In-Hang                   5d MO  xxxx  5    37   284  0    9-/b0   32+/w0  22+/b0  18+/w0  5-/b0   25+/w0  11-/w0  21+/b0   |15013834
 16 Karuehawanit Wichrich         6d TH  xxxx  5    35   287  0    35+/w0  40+/b0  1-/w0   10-/b0  26+/w0  8-/w0   22+/b0  24+/b0   |17362378
 17 He David_Zitian               5d AU  xxx   5    34   268  0    8-/w0   38+/w0  39+/w0  7-/b0   30+/b0  9-/b0   29+/w0  28+/w0   |20786832
-18 Lee Shou-Wei                  5d MY  xxx   5    32   257  0    5-/b0   47+/w0  40+/w0  15-/b0  42+/w0  21+/w0  13-/b0  30+/b0   |18498832
+18 Lee Shou-Wei                  5d MY  xxx   5    32   257  0    5-/b0   47+/w0  40+/w0  15-/b0  42+/w0  21+/w0  13-/b0  30+/b0   |20933704
 19 Petrauskas Andrius            4d LT  Viln  5    27   254  0    22-/w0  52+/b0  48+/w0  12-/b0  29+/w0  14-/b0  25+/b0  34+/w0   |12733589
 20 Vo Duy_Minh                   4d VN  xxxx  4    36   273  0    2-/w0   30+/b0  37+/w0  23-/b0  31+/b0  28+/b0  10-/w0  12-/w0   |18425132
 21 Bojanic Milos                 4d RS  BGmp  4    34   268  0    28+/w0  48+/b0  8-/w0   25+/b0  11-/w0  18-/b0  27+/b0  15-/w0   |10337085
