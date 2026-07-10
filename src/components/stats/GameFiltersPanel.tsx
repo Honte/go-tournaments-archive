@@ -86,6 +86,18 @@ export function GameFiltersPanel({ id, model, onChange, onClear, translations }:
             />
           )}
 
+          <RankRange
+            id="game-player-rank"
+            label={t('gamesFilter.playerRank')}
+            ranks={domains.ranks}
+            minimum={state.playerRankMin}
+            maximum={state.playerRankMax}
+            minimumLabel={t('gamesFilter.minimum')}
+            maximumLabel={t('gamesFilter.maximum')}
+            anyLabel={t('gamesFilter.anyRank')}
+            onChange={(playerRankMin, playerRankMax) => patch({ playerRankMin, playerRankMax })}
+          />
+
           <GameFacetSelect
             id="game-player-color"
             label={t('gamesFilter.playerColor')}
@@ -98,18 +110,6 @@ export function GameFiltersPanel({ id, model, onChange, onClear, translations }:
             noOptionsMessage={t('gamesFilter.noOptions')}
             name="playerColor"
             searchable={false}
-          />
-
-          <RankRange
-            id="game-player-rank"
-            label={t('gamesFilter.playerRank')}
-            ranks={domains.ranks}
-            minimum={state.playerRankMin}
-            maximum={state.playerRankMax}
-            minimumLabel={t('gamesFilter.minimum')}
-            maximumLabel={t('gamesFilter.maximum')}
-            anyLabel={t('gamesFilter.anyRank')}
-            onChange={(playerRankMin, playerRankMax) => patch({ playerRankMin, playerRankMax })}
           />
         </section>
 
@@ -211,9 +211,9 @@ export function GameFiltersPanel({ id, model, onChange, onClear, translations }:
               { value: 'white', label: t('gamesFilter.white'), count: facets.winner.white },
               ...(state.player
                 ? [
-                    { value: 'player', label: t('gamesFilter.player'), count: facets.winner.player },
-                    { value: 'opponent', label: t('gamesFilter.opponent'), count: facets.winner.opponent },
-                  ]
+                  { value: 'player', label: t('gamesFilter.player'), count: facets.winner.player },
+                  { value: 'opponent', label: t('gamesFilter.opponent'), count: facets.winner.opponent },
+                ]
                 : []),
             ]}
             value={state.winner ?? null}
@@ -348,7 +348,7 @@ function RankRange({
       onCommit={(lowerIndex, upperIndex) =>
         onChange(
           lowerIndex === 0 ? undefined : ranks[lowerIndex],
-          upperIndex === lastIndex ? undefined : ranks[upperIndex]
+          upperIndex === lastIndex ? undefined : ranks[upperIndex],
         )
       }
     />
@@ -392,7 +392,7 @@ function MovesRange({
       onCommit={(lowerValue, upperValue) =>
         onChange(
           lowerValue === domainMinimum ? undefined : lowerValue,
-          upperValue === domainMaximum ? undefined : upperValue
+          upperValue === domainMaximum ? undefined : upperValue,
         )
       }
     />
