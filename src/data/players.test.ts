@@ -13,6 +13,8 @@ players:
     nickname:
       - alpha-go
       - aplayer
+    pastNames:
+      - Beta Player
 `);
 
     assert.deepEqual(players, [
@@ -23,6 +25,7 @@ players:
         egd: undefined,
         original: 'Alpha Original',
         nickname: ['alpha-go', 'aplayer'],
+        pastNames: ['Beta Player'],
       },
     ]);
   });
@@ -53,7 +56,15 @@ describe('createPlayersHandler', () => {
         country: 'JP',
         original: '藤原佐為',
         nickname: ['sai'],
+        pastNames: []
       },
+      {
+        id: 'beta',
+        name: 'Beta Player',
+        egd: 456,
+        nickname: [],
+        pastNames: ['Alpha Player']
+      }
     ]);
     const configuredPlayer = playersHandler.getPlayer('sai')!;
 
@@ -62,7 +73,7 @@ describe('createPlayersHandler', () => {
     assert.deepEqual([...configuredPlayer.names], ['Fujiwara no Sai', '藤原佐為']);
 
     const player = playersHandler.loadPlayer('Fujiwara Sai 10p |123');
-    const loadedPlayer = playersHandler.getPlayer('sai')!;
+    const sai = playersHandler.getPlayer('sai')!;
 
     assert.equal(player.id, 'sai');
     assert.equal(player.name, 'Fujiwara Sai');
@@ -70,6 +81,10 @@ describe('createPlayersHandler', () => {
     assert.equal(player.egd, 123);
     assert.equal(player.original, '藤原佐為');
     assert.deepEqual(player.nickname, ['sai']);
-    assert.deepEqual([...loadedPlayer.names], ['Fujiwara no Sai', '藤原佐為', 'Fujiwara Sai']);
+    assert.deepEqual([...sai.names], ['Fujiwara no Sai', '藤原佐為', 'Fujiwara Sai']);
+
+    const beta = playersHandler.getPlayer('beta')!;
+
+    assert.deepEqual([...beta.names], ['Beta Player', 'Alpha Player']);
   });
 });
