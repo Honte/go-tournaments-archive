@@ -1,4 +1,6 @@
 import type {
+  CategoryPlayer,
+  CategoryStats,
   CountryResult,
   CountryStats,
   Game,
@@ -6,11 +8,10 @@ import type {
   PlayerGame,
   PlayerResult,
   PlayerStats,
+  Stage,
   Stats,
-  CategoryStats,
-  CategoryPlayer,
   StatsMedals,
-  Tournament,
+  Tournament
 } from '@/schema/data';
 import type { EventDefinition } from '@/schema/event';
 import type { PlayersHandler } from '@/data/players';
@@ -59,29 +60,27 @@ export function calculateStats(
         const playerResult = upsertPlayerResult(playerStats, tournamentPlayer, year);
         const playerGames: PlayerGame[] = [];
 
-        if ('games' in player && player.games?.length) {
-          for (const game of player.games) {
-            if (game && game.opponent) {
-              const globalGame = tournamentGames[game.game];
-              const opponent = players[game.opponent];
+        for (const game of iteratePlayerGames(player)) {
+          if (game && game.opponent) {
+            const globalGame = tournamentGames[game.game];
+            const opponent = players[game.opponent];
 
-              playerGames.push({
-                id: opponent?.id ?? 'BYE',
-                country: players[game.opponent]?.country,
-                rank: players[game.opponent]?.rank,
-                won: game.won,
-                result: game.result,
-                props: globalGame?.props,
-                color: game.color,
-              });
+            playerGames.push({
+              id: opponent?.id ?? 'BYE',
+              country: players[game.opponent]?.country,
+              rank: players[game.opponent]?.rank,
+              won: game.won,
+              result: game.result,
+              props: globalGame?.props,
+              color: game.color,
+            });
 
-              if (globalGame?.props?.sgf) {
-                playerStats.totalSgfs++;
-              }
+            if (globalGame?.props?.sgf) {
+              playerStats.totalSgfs++;
+            }
 
-              if (opponent?.id) {
-                playerStats.opponents[opponent.id] = opponent.name;
-              }
+            if (opponent?.id) {
+              playerStats.opponents[opponent.id] = opponent.name;
             }
           }
         }
@@ -398,6 +397,20 @@ export function calculateStats(
           }
         }
       }
+    }
+  }
+}
+
+function* iteratePlayerGames(result: Stage['table'][0]) {
+  if ('games' in result && result.games?.length) {
+    for (const game of result.games) {
+      yield game;
+    }
+  }
+
+  if ('playoffs' in result && result.playoffs?.length) {
+    for (const game of result.playoffs) {
+      yield game;
     }
   }
 }
