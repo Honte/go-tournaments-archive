@@ -13,6 +13,7 @@ events:
   - id: esgc
     prefix: esgc
 basePath: /archives
+trailingSlash: true
 config:
   generateSvgs: false
   generatePngs: false
