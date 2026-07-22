@@ -76,6 +76,7 @@ describe('matchExplicitSgfs', () => {
           egd: 12837594,
           original: 'Stanislaw Frejlak',
           nickname: ['siasio'],
+          pastNames: [],
         },
       ],
     });

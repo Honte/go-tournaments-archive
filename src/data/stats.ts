@@ -11,7 +11,7 @@ import type {
   Stage,
   Stats,
   StatsMedals,
-  Tournament
+  Tournament,
 } from '@/schema/data';
 import type { EventDefinition } from '@/schema/event';
 import type { PlayersHandler } from '@/data/players';

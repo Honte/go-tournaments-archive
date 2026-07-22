@@ -56,15 +56,15 @@ describe('createPlayersHandler', () => {
         country: 'JP',
         original: '藤原佐為',
         nickname: ['sai'],
-        pastNames: []
+        pastNames: [],
       },
       {
         id: 'beta',
         name: 'Beta Player',
         egd: 456,
         nickname: [],
-        pastNames: ['Alpha Player']
-      }
+        pastNames: ['Alpha Player'],
+      },
     ]);
     const configuredPlayer = playersHandler.getPlayer('sai')!;
 
