@@ -25,6 +25,7 @@ describe('enrichPlayersWithEgd', () => {
         id: 'hshindo',
         name: 'Hikaru Shindo',
         nickname: [],
+        pastNames: [],
       },
     ];
 
@@ -45,6 +46,7 @@ describe('enrichPlayersWithEgd', () => {
         name: 'Hikaru Shindo',
         egd: 10000002,
         nickname: [],
+        pastNames: [],
       },
     ];
 
@@ -64,12 +66,13 @@ describe('enrichPlayersWithEgd', () => {
         name: 'Hikaru Shindo',
         country: 'FR',
         nickname: [],
+        pastNames: [],
       },
     ];
 
     const result = enrichPlayersWithEgd(players, [{ pin: 10000002, name: 'Shindo Hikaru', country: 'JP' }], {
       includeCountry: true,
-      savedPlayers: [{ id: 'hshindo', name: 'Hikaru Shindo', country: 'FR', nickname: [] }],
+      savedPlayers: [{ id: 'hshindo', name: 'Hikaru Shindo', country: 'FR', nickname: [], pastNames: [] }],
     });
 
     assert.deepEqual(result.countryMismatches, ['Hikaru Shindo (saved FR, EGD JP)']);
@@ -83,6 +86,7 @@ describe('enrichPlayersWithEgd', () => {
         name: 'Hikaru Shindo',
         country: 'FR',
         nickname: [],
+        pastNames: [],
       },
     ];
 

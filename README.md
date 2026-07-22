@@ -11,6 +11,7 @@ international events, and category medal tables for events that define age or ot
 
 ## Live sites
 
+- [European Go Championships Archives](https://eurogofed.org/archives/) (`egc`, `epc`, `epq`, `esgc`, `ewgc` and `eygc`)
 - [World Amateur Go Championships Archive](https://wagc.go.art.pl) (`wagc`)
 - [Polish Go Championships Archive](https://mp.go.art.pl) (`pgc`)
 - [Polish Youth Go Championships Archive](https://mpj.go.art.pl) (`pygc`)

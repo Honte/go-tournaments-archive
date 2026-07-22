@@ -76,6 +76,7 @@ describe('calculateStats', () => {
         name: 'Alice Display',
         original: 'Alice Nowak',
         nickname: [],
+        pastNames: [],
       },
     ]);
     const players = playersHandler.loadJson({

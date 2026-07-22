@@ -82,8 +82,8 @@ players:
   - id: kkoenig
     name: Katarzyna Koenig
     egd: 10449890
-  - id: kzuk-rybicka
-    name: Katarzyna Żuk-Rybicka
+    pastNames:
+      - Katarzyna Żuk-Rybicka
   - id: khabu
     name: Koichiro Habu
     egd: 10837827

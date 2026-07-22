@@ -182,6 +182,13 @@ export function createPlayersHandler(eventPlayers: EventPlayer[] = []) {
     if (player.egd) {
       playersByEgd.set(player.egd, playerData);
     }
+
+    if (player.pastNames?.length) {
+      for (const name of player.pastNames) {
+        playerData.names.add(name);
+        registerPlayerHash(playerData, name);
+      }
+    }
   }
 
   function registerPlayerHash(player: PlayerData, string?: string, shouldHash = true): void {
