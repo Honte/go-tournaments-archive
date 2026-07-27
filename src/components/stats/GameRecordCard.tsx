@@ -100,7 +100,7 @@ function GamePreview({
     <img
       src={gameThumbUrl(event, preview)}
       alt=""
-      className="h-full max-w-full object-contain transition-transform duration-200 group-hover:scale-[1.02] overflow-visible"
+      className="h-full max-w-full object-contain transition-transform duration-200 group-hover:scale-[1.05] border-event-dark border-2 rounded-sm overflow-hidden size-full bg-event-light"
       loading="lazy"
     />
   ) : (
