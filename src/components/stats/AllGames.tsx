@@ -63,7 +63,7 @@ function AllGamesContent({ event, games, translations }: AllGamesContentProps) {
       categoriesEnabled: Boolean(event.categories?.length),
       countryLabel: (country) => translate(`country.${country}`),
       categoryLabel: (category) => translate(`categories.short.${category}`),
-      unknownCountryLabel: translate('gamesFilter.other'),
+      unknownCountryLabel: translate('gamesFilter.unknown'),
       locale: translations.locale,
     };
   }, [event.categories, event.showCountry, translations]);
@@ -81,11 +81,9 @@ function AllGamesContent({ event, games, translations }: AllGamesContentProps) {
     () =>
       model.groups.map((group) => ({
         ...group,
-        label: group.label
-          ? `${['opponent-player', 'opponent-country'].includes(model.state.group) ? t('gamesFilter.versus', group.label) : group.label} (${group.games.length})`
-          : undefined,
+        label: group.label ? `${group.label} (${group.games.length})` : undefined,
       })),
-    [model.groups, model.state.group, t]
+    [model.groups]
   );
 
   useEffect(() => {

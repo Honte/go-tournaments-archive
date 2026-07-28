@@ -1,9 +1,9 @@
 import type { ApiGameInfo } from '@/schema/api';
 import type { Player } from '@/schema/data';
 
-export const GAME_RESULT_TYPES = ['resignation', 'points', 'time', 'other'] as const;
+export const GAME_RESULT_TYPES = ['resignation', 'points', 'time', 'other', 'unknown'] as const;
 export const GAME_MEDIA = ['ogs', 'yt', 'ai'] as const;
-export const GAME_WINNERS = ['black', 'white', 'player', 'opponent'] as const;
+export const GAME_WINNERS = ['black', 'white', 'player', 'player-opponent', 'country', 'country-opponent'] as const;
 export const PLAYER_COLORS = ['black', 'white'] as const;
 export const GAME_SORTS = [
   'year-desc',
@@ -385,10 +385,6 @@ export function normalizeGameBrowserState(
     state.category = undefined;
   }
 
-  if ((state.winner === 'player' || state.winner === 'opponent') && !state.player) {
-    state.winner = undefined;
-  }
-
   if (!countriesEnabled || !state.country || !countries.has(state.country.toUpperCase())) {
     state.country = undefined;
   } else {
@@ -397,6 +393,14 @@ export function normalizeGameBrowserState(
 
   if (state.player && state.country && !hasStructuralMatch(games, { player: state.player, country: state.country })) {
     state.country = undefined;
+  }
+
+  if ((state.winner === 'player' || state.winner === 'player-opponent') && !state.player) {
+    state.winner = undefined;
+  }
+
+  if ((state.winner === 'country' || state.winner === 'country-opponent') && !state.country) {
+    state.winner = undefined;
   }
 
   if (!state.player) {
@@ -472,6 +476,10 @@ export function sortGameRecords(matches: readonly GameMatch[], sort: GameSort): 
 export function getGameResultType(result?: string): GameResultType {
   const normalized = result?.trim().toUpperCase() ?? '';
 
+  if (/^[BW]\+\?$/.test(normalized)) {
+    return 'unknown';
+  }
+
   if (/^[BW]\+R$/.test(normalized)) {
     return 'resignation';
   }
@@ -520,7 +528,7 @@ export function getGameGroupEligibility(state: GameBrowserState, countriesEnable
       countriesEnabled && (state.player || state.country) && !state.opponent && !state.opponentCountry
     ),
     countryPlayer: Boolean(countriesEnabled && state.country && !state.player),
-    category: categoriesEnabled,
+    category: categoriesEnabled && !state.category,
   };
 }
 
@@ -675,14 +683,10 @@ function buildMediaFacetCounts(games: readonly ApiGameInfo[], state: GameBrowser
 }
 
 function buildResultFacetCounts(games: readonly ApiGameInfo[], state: GameBrowserState) {
+  const context = getGameFacetContext(state);
+
   return Object.fromEntries(
-    GAME_RESULT_TYPES.map((result) => [
-      result,
-      filterGameRecords(games, {
-        ...state,
-        results: [result],
-      }).length,
-    ])
+    GAME_RESULT_TYPES.map((result) => [result, filterGameRecords(games, { ...context, results: [result] }).length])
   ) as Record<GameResultType, number>;
 }
 
@@ -701,7 +705,7 @@ function buildKomiFacet(games: readonly ApiGameInfo[], state: GameBrowserState):
   const values = new Set([...counts.keys(), ...state.komi]);
 
   return {
-    visible: values.size > 1,
+    visible: new Set(games.map((game) => game.komi)).size > 1,
     options: [...values]
       .map((komi) => ({ value: komi, label: komi, count: counts.get(komi) ?? 0 }))
       .toSorted((left, right) => compareKomi(left.value, right.value)),
@@ -709,16 +713,25 @@ function buildKomiFacet(games: readonly ApiGameInfo[], state: GameBrowserState):
 }
 
 function buildWinnerFacetCounts(games: readonly ApiGameInfo[], state: GameBrowserState) {
+  const context = getGameFacetContext(state);
+
   return Object.fromEntries(
-    GAME_WINNERS.map((winner) => [winner, filterGameRecords(games, { ...state, winner }).length])
+    GAME_WINNERS.map((winner) => [winner, filterGameRecords(games, { ...context, winner }).length])
   ) as Record<GameWinner, number>;
 }
 
-function buildColorFacetCounts(
-  games: readonly ApiGameInfo[],
-  state: GameBrowserState,
-  facet: 'playerColor'
-) {
+function getGameFacetContext(state: GameBrowserState): GameBrowserState {
+  return {
+    ...DEFAULT_GAME_BROWSER_STATE,
+    player: state.player,
+    country: state.country,
+    opponent: state.opponent,
+    opponentCountry: state.opponentCountry,
+    playerColor: state.playerColor,
+  };
+}
+
+function buildColorFacetCounts(games: readonly ApiGameInfo[], state: GameBrowserState, facet: 'playerColor') {
   return Object.fromEntries(
     PLAYER_COLORS.map((color) => [color, filterGameRecords(games, { ...state, [facet]: color }).length])
   ) as Record<PlayerColor, number>;
@@ -826,11 +839,14 @@ function matchesOrientation(orientation: OrientedGame, state: GameBrowserState, 
   if (ignoredFacet !== 'playerColor' && state.playerColor && orientation.playerColor !== state.playerColor) {
     return false;
   }
-  if (state.winner === 'player' && orientation.game.winner !== orientation.playerColor) {
+  if (
+    (state.winner === 'player' || state.winner === 'country') &&
+    orientation.game.winner !== orientation.playerColor
+  ) {
     return false;
   }
   if (
-    state.winner === 'opponent' &&
+    (state.winner === 'player-opponent' || state.winner === 'country-opponent') &&
     orientation.game.winner !== (orientation.playerColor === 'black' ? 'white' : 'black')
   ) {
     return false;
@@ -965,7 +981,7 @@ function getGroupDetails(
 
         return {
           key: `pair:${players.map((player) => player.id).join('|')}`,
-          label: `${players[0].label} vs ${players[1].label}`,
+          label: `${players[0].label}, ${players[1].label}`,
         };
       }
 
@@ -1159,7 +1175,14 @@ function uniqueKnown<T extends string>(values: readonly string[], known: readonl
 }
 
 function uniqueKomi(values: readonly string[]) {
-  return [...new Set(values.map((value) => Number(value)).filter(Number.isFinite).map(formatKomi))];
+  return [
+    ...new Set(
+      values
+        .map((value) => Number(value))
+        .filter(Number.isFinite)
+        .map(formatKomi)
+    ),
+  ];
 }
 
 function formatKomi(komi: number) {

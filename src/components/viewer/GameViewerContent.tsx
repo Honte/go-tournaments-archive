@@ -231,7 +231,7 @@ function GameViewerContent(props: GameViewerContentProps) {
   }, [goBack, goBackTen, goForwardTen, goNext, goToEnd, goToStart, togglePlay]);
 
   return (
-    <div className="flex min-h-0 flex-1 flex-col gap-2 p-2 md:p-2 md:px-4">
+    <div className="flex min-h-0 flex-1 flex-col gap-2 p-2 md:px-4">
       <div className="flex shrink-0 items-center justify-between text-sm font-semibold">
         <span>
           {t('game.komi')}: {sgf.komi ?? '?'}

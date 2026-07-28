@@ -40,6 +40,7 @@ export function GameFiltersPanel({ id, model, onChange, onClear, translations }:
     points: t('gamesFilter.points'),
     time: t('gamesFilter.time'),
     other: t('gamesFilter.other'),
+    unknown: t('gamesFilter.unknown'),
   };
   const mediaLabels: Record<GameMedia, string> = {
     ogs: t('gamesFilter.hasOgs'),
@@ -53,6 +54,42 @@ export function GameFiltersPanel({ id, model, onChange, onClear, translations }:
   const sortOptions = getSortOptions(t);
   const groupOptions = getGroupOptions(t, grouping);
   const focalSelected = Boolean(state.player || state.country);
+  const playerLabel = facets.player.options.find((option) => option.value === state.player)?.label;
+  const opponentLabel = facets.opponent.options.find((option) => option.value === state.opponent)?.label;
+  const countryLabel = state.country ? t(`country.${state.country}`) : undefined;
+  const opponentCountryLabel = state.opponentCountry ? t(`country.${state.opponentCountry}`) : undefined;
+  const winnerOptions = [
+    { value: 'black', label: t('gamesFilter.black'), count: facets.winner.black },
+    { value: 'white', label: t('gamesFilter.white'), count: facets.winner.white },
+    ...(state.player
+      ? [
+          {
+            value: 'player',
+            label: t('gamesFilter.playerWinner', playerLabel ?? t('gamesFilter.player')),
+            count: facets.winner.player,
+          },
+          {
+            value: 'player-opponent',
+            label: opponentLabel ?? t('gamesFilter.opponentWinner', playerLabel ?? t('gamesFilter.player')),
+            count: facets.winner['player-opponent'],
+          },
+        ]
+      : []),
+    ...(state.country
+      ? [
+          {
+            value: 'country',
+            label: t('gamesFilter.countryPlayerWinner', countryLabel!),
+            count: facets.winner.country,
+          },
+          {
+            value: 'country-opponent',
+            label: opponentCountryLabel ?? t('gamesFilter.countryOpponentWinner', countryLabel!),
+            count: facets.winner['country-opponent'],
+          },
+        ]
+      : []),
+  ];
 
   return (
     <section id={id} className="rounded-md border border-event-soft bg-white p-3 shadow-sm md:p-4">
@@ -110,6 +147,7 @@ export function GameFiltersPanel({ id, model, onChange, onClear, translations }:
             noOptionsMessage={t('gamesFilter.noOptions')}
             name="playerColor"
             searchable={false}
+            allowZeroCountOptions={true}
           />
         </section>
 
@@ -206,22 +244,14 @@ export function GameFiltersPanel({ id, model, onChange, onClear, translations }:
           <GameFacetSelect
             id="game-winner"
             label={t('gamesFilter.winner')}
-            options={[
-              { value: 'black', label: t('gamesFilter.black'), count: facets.winner.black },
-              { value: 'white', label: t('gamesFilter.white'), count: facets.winner.white },
-              ...(state.player
-                ? [
-                  { value: 'player', label: t('gamesFilter.player'), count: facets.winner.player },
-                  { value: 'opponent', label: t('gamesFilter.opponent'), count: facets.winner.opponent },
-                ]
-                : []),
-            ]}
+            options={winnerOptions}
             value={state.winner ?? null}
             onChange={(winner) => patch({ winner: winner && isGameWinner(winner) ? winner : undefined })}
             placeholder={t('gamesFilter.anyWinner')}
             noOptionsMessage={t('gamesFilter.noOptions')}
             name="winner"
             searchable={false}
+            allowZeroCountOptions={true}
           />
 
           <GameMultiFacetSelect
@@ -238,6 +268,7 @@ export function GameFiltersPanel({ id, model, onChange, onClear, translations }:
             noOptionsMessage={t('gamesFilter.noOptions')}
             name="result"
             searchable={false}
+            allowZeroCountOptions={true}
           />
 
           {facets.komi.visible && (
@@ -348,7 +379,7 @@ function RankRange({
       onCommit={(lowerIndex, upperIndex) =>
         onChange(
           lowerIndex === 0 ? undefined : ranks[lowerIndex],
-          upperIndex === lastIndex ? undefined : ranks[upperIndex],
+          upperIndex === lastIndex ? undefined : ranks[upperIndex]
         )
       }
     />
@@ -392,7 +423,7 @@ function MovesRange({
       onCommit={(lowerValue, upperValue) =>
         onChange(
           lowerValue === domainMinimum ? undefined : lowerValue,
-          upperValue === domainMaximum ? undefined : upperValue,
+          upperValue === domainMaximum ? undefined : upperValue
         )
       }
     />
@@ -473,9 +504,16 @@ function getGroupOptions(t: Translator, grouping: GameBrowserModel['grouping']):
 }
 
 function isGameWinner(value: string): value is GameWinner {
-  return value === 'black' || value === 'white' || value === 'player' || value === 'opponent';
+  return (
+    value === 'black' ||
+    value === 'white' ||
+    value === 'player' ||
+    value === 'player-opponent' ||
+    value === 'country' ||
+    value === 'country-opponent'
+  );
 }
 
 function isGameResultType(value: string): value is GameResultType {
-  return value === 'resignation' || value === 'points' || value === 'time' || value === 'other';
+  return value === 'resignation' || value === 'points' || value === 'time' || value === 'other' || value === 'unknown';
 }

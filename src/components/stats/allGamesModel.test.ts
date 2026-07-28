@@ -20,7 +20,7 @@ describe('game browser URL state', () => {
     const parsed = parseGameBrowserState(
       new URLSearchParams(
         'player=a&country=de&opponent=b&opponentCountry=pl&playerRankMin=5K&year=2023&year=2020&movesMax=200' +
-          '&category=u18&result=time&result=resignation&winner=opponent&has=yt&has=ogs&sort=moves-desc&group=year'
+          '&category=u18&result=time&result=resignation&winner=player-opponent&has=yt&has=ogs&sort=moves-desc&group=year'
       )
     );
     const serialized = serializeGameBrowserState(
@@ -34,21 +34,21 @@ describe('game browser URL state', () => {
     assert.deepEqual(serialized.getAll('year'), ['2023', '2020']);
     assert.deepEqual(serialized.getAll('result'), ['resignation', 'time']);
     assert.deepEqual(serialized.getAll('has'), ['ogs', 'yt']);
-    assert.equal(serialized.get('winner'), 'opponent');
+    assert.equal(serialized.get('winner'), 'player-opponent');
     assert.equal(serialized.get('category'), 'u18');
     assert.equal(serialized.get('group'), 'year');
     assert.deepEqual(parseGameBrowserState(serialized), parsed);
   });
 
-  it('parses global-color and focal-role winner values', () => {
-    for (const winner of ['black', 'white', 'player', 'opponent'] as const) {
+  it('parses global-color, player-relative, and country-relative winner values', () => {
+    for (const winner of ['black', 'white', 'player', 'player-opponent', 'country', 'country-opponent'] as const) {
       assert.equal(parseGameBrowserState(new URLSearchParams(`winner=${winner}`)).winner, winner);
     }
   });
 
   it('falls back to defaults for unknown enum values', () => {
     const parsed = parseGameBrowserState(
-      new URLSearchParams('result=unknown&has=video&winner=draw&sort=random&group=player')
+      new URLSearchParams('result=unsupported&has=video&winner=draw&sort=random&group=player')
     );
 
     assert.deepEqual(parsed.results, []);
@@ -79,6 +79,9 @@ describe('game result and rank normalization', () => {
     assert.equal(getGameResultType('W+0.5'), 'points');
     assert.equal(getGameResultType('Void'), 'other');
     assert.equal(getGameResultType('B+Resign'), 'other');
+    assert.equal(getGameResultType('W+F'), 'other');
+    assert.equal(getGameResultType('B+?'), 'unknown');
+    assert.equal(getGameResultType(), 'other');
   });
 
   it('uses a contiguous kyu, dan, and professional rank ladder', () => {
@@ -131,11 +134,13 @@ describe('game filtering and facets', () => {
     );
   });
 
-  it('distinguishes global winner colors from focal player and opponent wins', () => {
+  it('distinguishes global, player-relative, and country-relative winner values', () => {
     const blackWins = deriveGameBrowserModel(games, state({ winner: 'black' }));
     const whiteWins = deriveGameBrowserModel(games, state({ winner: 'white' }));
     const aliceWins = deriveGameBrowserModel(games, state({ player: 'a', winner: 'player' }));
-    const opponentsBeatBob = deriveGameBrowserModel(games, state({ player: 'b', winner: 'opponent' }));
+    const opponentsBeatBob = deriveGameBrowserModel(games, state({ player: 'b', winner: 'player-opponent' }));
+    const polishPlayersWin = deriveGameBrowserModel(games, state({ country: 'PL', winner: 'country' }));
+    const polishOpponentsWin = deriveGameBrowserModel(games, state({ country: 'PL', winner: 'country-opponent' }));
     const invalidFocalWinner = deriveGameBrowserModel(games, state({ winner: 'player' }));
 
     assert.deepEqual(
@@ -153,6 +158,14 @@ describe('game filtering and facets', () => {
     assert.deepEqual(
       opponentsBeatBob.games.map((game) => game.sgf),
       ['g4.sgf', 'g1.sgf']
+    );
+    assert.deepEqual(
+      polishPlayersWin.games.map((game) => game.sgf),
+      ['g4.sgf', 'g3.sgf', 'g1.sgf']
+    );
+    assert.deepEqual(
+      polishOpponentsWin.games.map((game) => game.sgf),
+      ['g3.sgf']
     );
     assert.equal(invalidFocalWinner.state.winner, undefined);
     assert.equal(invalidFocalWinner.filteredCount, games.length);
@@ -247,6 +260,20 @@ describe('game filtering and facets', () => {
     assert.deepEqual(selectedMedia.facets.media, { ogs: 2, yt: 1, ai: 0 });
   });
 
+  it('builds result and winner options from the full focal context', () => {
+    const model = deriveGameBrowserModel(games, state({ player: 'a', years: [2020], media: ['ogs'] }));
+
+    assert.deepEqual(model.facets.result, { resignation: 1, points: 1, time: 1, other: 0, unknown: 0 });
+    assert.deepEqual(model.facets.winner, {
+      black: 1,
+      white: 2,
+      player: 3,
+      'player-opponent': 0,
+      country: 3,
+      'country-opponent': 0,
+    });
+  });
+
   it('updates komi counts from the current orientation filter state', () => {
     const model = deriveGameBrowserModel(games, state({ player: 'a', country: 'PL' }));
     const selected = deriveGameBrowserModel(games, state({ player: 'a', country: 'PL', komi: ['0.5'] }));
@@ -256,10 +283,25 @@ describe('game filtering and facets', () => {
     assert.deepEqual(toCounts(selected.facets.komi.options), { '0.5': 1, '6.5': 1 });
   });
 
+  it('only hides komi when every unfiltered game has the same value', () => {
+    const filtered = deriveGameBrowserModel(games, state({ years: [2020] }));
+    const uniformGames = games.map((game) => ({ ...game, komi: 6.5 }));
+
+    assert.equal(filtered.facets.komi.visible, true);
+    assert.equal(deriveGameBrowserModel(uniformGames, state()).facets.komi.visible, false);
+  });
+
   it('builds self-excluding winner counts for colors and focal roles', () => {
     const model = deriveGameBrowserModel(games, state({ player: 'a', winner: 'black' }));
 
-    assert.deepEqual(model.facets.winner, { black: 1, white: 2, player: 3, opponent: 0 });
+    assert.deepEqual(model.facets.winner, {
+      black: 1,
+      white: 2,
+      player: 3,
+      'player-opponent': 0,
+      country: 3,
+      'country-opponent': 0,
+    });
   });
 
   it('retains a selected year with zero matches from unrelated filters', () => {
@@ -368,7 +410,7 @@ describe('dependent normalization, sorting, and grouping', () => {
       byCountryPlayer.groups.map((group) => [group.label, group.games.length]),
       [
         ['Alice New', 2],
-        ['Dan vs Eve', 1],
+        ['Dan, Eve', 1],
       ]
     );
     assert.deepEqual(
@@ -395,6 +437,23 @@ describe('dependent normalization, sorting, and grouping', () => {
         ['JUNIOR', 2],
         ['OPEN', 2],
       ]
+    );
+  });
+
+  it('clears category grouping when a category is selected', () => {
+    const categorized = createGames().map((record, index) => ({
+      ...record,
+      category: index % 2 === 0 ? 'junior' : 'open',
+    }));
+    const model = deriveGameBrowserModel(categorized, state({ category: 'junior', group: 'category' }), {
+      categoriesEnabled: true,
+    });
+
+    assert.equal(getGameGroupEligibility(state({ category: 'junior' }), true, true).category, false);
+    assert.equal(model.state.group, 'none');
+    assert.deepEqual(
+      model.groups.flatMap((group) => group.games).map((game) => game.sgf),
+      ['g3.sgf', 'g1.sgf']
     );
   });
 });

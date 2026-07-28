@@ -32,6 +32,7 @@ export type GameFacetSelectProps = {
   showCounts?: boolean;
   searchable?: boolean;
   clearable?: boolean;
+  allowZeroCountOptions?: boolean;
 };
 
 export type GameMultiFacetSelectProps = Omit<GameFacetSelectProps, 'value' | 'onChange' | 'clearable'> & {
@@ -134,13 +135,14 @@ export const GameFacetSelect = memo(function GameFacetSelect({
   showCounts = true,
   searchable = true,
   clearable = true,
+  allowZeroCountOptions = false,
 }: GameFacetSelectProps) {
   const inputId = `${id}-input`;
   const labelId = `${id}-label`;
   const selectedOption = useMemo(() => options.find((option) => option.value === value) ?? null, [options, value]);
   const visibleOptions = useMemo(
-    () => options.filter((option) => option.count > 0 || option.value === value),
-    [options, value]
+    () => (allowZeroCountOptions ? options : options.filter((option) => option.count > 0 || option.value === value)),
+    [allowZeroCountOptions, options, value]
   );
   const handleChange = useCallback(
     (option: SingleValue<GameFacetOption>) => {
@@ -170,7 +172,7 @@ export const GameFacetSelect = memo(function GameFacetSelect({
         getOptionValue={getOptionValue}
         formatOptionLabel={showCounts ? formatOptionLabel : undefined}
         filterOption={filterOption}
-        isOptionDisabled={isOptionDisabled}
+        isOptionDisabled={allowZeroCountOptions ? undefined : isOptionDisabled}
         isClearable={clearable}
         isSearchable={searchable}
         isDisabled={disabled}
@@ -196,16 +198,15 @@ export const GameMultiFacetSelect = memo(function GameMultiFacetSelect({
   className,
   showCounts = true,
   searchable = true,
+  allowZeroCountOptions = false,
 }: GameMultiFacetSelectProps) {
   const inputId = `${id}-input`;
   const labelId = `${id}-label`;
-  const selectedOptions = useMemo(
-    () => options.filter((option) => values.includes(option.value)),
-    [options, values]
-  );
+  const selectedOptions = useMemo(() => options.filter((option) => values.includes(option.value)), [options, values]);
   const visibleOptions = useMemo(
-    () => options.filter((option) => option.count > 0 || values.includes(option.value)),
-    [options, values]
+    () =>
+      allowZeroCountOptions ? options : options.filter((option) => option.count > 0 || values.includes(option.value)),
+    [allowZeroCountOptions, options, values]
   );
   const handleChange = useCallback(
     (next: MultiValue<GameFacetOption>) => {
@@ -235,7 +236,7 @@ export const GameMultiFacetSelect = memo(function GameMultiFacetSelect({
         getOptionValue={getOptionValue}
         formatOptionLabel={showCounts ? formatOptionLabel : undefined}
         filterOption={filterOption}
-        isOptionDisabled={isOptionDisabled}
+        isOptionDisabled={allowZeroCountOptions ? undefined : isOptionDisabled}
         isMulti={true}
         isClearable={true}
         isSearchable={searchable}
