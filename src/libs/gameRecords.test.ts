@@ -13,7 +13,7 @@ import {
   parseGameBrowserState,
   serializeGameBrowserState,
   type GameBrowserState,
-} from '@/components/stats/allGamesModel';
+} from '@/libs/gameRecords';
 
 describe('game browser URL state', () => {
   it('round-trips canonical state and preserves unrelated query parameters', () => {

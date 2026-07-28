@@ -11,17 +11,17 @@ import Select, {
   type ThemeConfig,
 } from 'react-select';
 
-export type GameFacetOption = {
+export type FacetOption = {
   value: string;
   label: string;
   count: number;
   search?: string;
 };
 
-export type GameFacetSelectProps = {
+export type FacetSelectProps = {
   id: string;
   label: string;
-  options: readonly GameFacetOption[];
+  options: readonly FacetOption[];
   value: string | null;
   onChange: (value: string | null) => void;
   placeholder?: string;
@@ -35,16 +35,16 @@ export type GameFacetSelectProps = {
   allowZeroCountOptions?: boolean;
 };
 
-export type GameMultiFacetSelectProps = Omit<GameFacetSelectProps, 'value' | 'onChange' | 'clearable'> & {
+export type MultiFacetSelectProps = Omit<FacetSelectProps, 'value' | 'onChange' | 'clearable'> & {
   values: readonly string[];
   onChange: (values: string[]) => void;
 };
 
-const filterOption = createFilter<GameFacetOption>({
+const filterOption = createFilter<FacetOption>({
   stringify: ({ data }) => `${data.label} ${data.value} ${data.search ?? ''}`,
 });
 
-const styles: StylesConfig<GameFacetOption, boolean> = {
+const styles: StylesConfig<FacetOption, boolean> = {
   control: (base) => ({
     ...base,
     backgroundColor: 'white',
@@ -105,23 +105,23 @@ const theme: ThemeConfig = (base) => ({
   },
 });
 
-function getOptionLabel(option: GameFacetOption) {
+function getOptionLabel(option: FacetOption) {
   return `${option.label} (${option.count})`;
 }
 
-function getOptionValue(option: GameFacetOption) {
+function getOptionValue(option: FacetOption) {
   return option.value;
 }
 
-function formatOptionLabel(option: GameFacetOption, meta: FormatOptionLabelMeta<GameFacetOption>) {
+function formatOptionLabel(option: FacetOption, meta: FormatOptionLabelMeta<FacetOption>) {
   return meta.context === 'menu' ? getOptionLabel(option) : option.label;
 }
 
-function isOptionDisabled(option: GameFacetOption) {
+function isOptionDisabled(option: FacetOption) {
   return option.count <= 0;
 }
 
-export const GameFacetSelect = memo(function GameFacetSelect({
+export const FacetSelect = memo(function FacetSelect({
   id,
   label,
   options,
@@ -136,7 +136,7 @@ export const GameFacetSelect = memo(function GameFacetSelect({
   searchable = true,
   clearable = true,
   allowZeroCountOptions = false,
-}: GameFacetSelectProps) {
+}: FacetSelectProps) {
   const inputId = `${id}-input`;
   const labelId = `${id}-label`;
   const selectedOption = useMemo(() => options.find((option) => option.value === value) ?? null, [options, value]);
@@ -145,7 +145,7 @@ export const GameFacetSelect = memo(function GameFacetSelect({
     [allowZeroCountOptions, options, value]
   );
   const handleChange = useCallback(
-    (option: SingleValue<GameFacetOption>) => {
+    (option: SingleValue<FacetOption>) => {
       onChange(option?.value ?? null);
     },
     [onChange]
@@ -156,7 +156,7 @@ export const GameFacetSelect = memo(function GameFacetSelect({
       <label id={labelId} htmlFor={inputId} className="mb-1 block text-sm font-semibold text-event-dark">
         {label}
       </label>
-      <Select<GameFacetOption, false>
+      <Select<FacetOption, false>
         id={id}
         instanceId={id}
         inputId={inputId}
@@ -185,7 +185,7 @@ export const GameFacetSelect = memo(function GameFacetSelect({
   );
 });
 
-export const GameMultiFacetSelect = memo(function GameMultiFacetSelect({
+export const MultiFacetSelect = memo(function MultiFacetSelect({
   id,
   label,
   options,
@@ -199,7 +199,7 @@ export const GameMultiFacetSelect = memo(function GameMultiFacetSelect({
   showCounts = true,
   searchable = true,
   allowZeroCountOptions = false,
-}: GameMultiFacetSelectProps) {
+}: MultiFacetSelectProps) {
   const inputId = `${id}-input`;
   const labelId = `${id}-label`;
   const selectedOptions = useMemo(() => options.filter((option) => values.includes(option.value)), [options, values]);
@@ -209,7 +209,7 @@ export const GameMultiFacetSelect = memo(function GameMultiFacetSelect({
     [allowZeroCountOptions, options, values]
   );
   const handleChange = useCallback(
-    (next: MultiValue<GameFacetOption>) => {
+    (next: MultiValue<FacetOption>) => {
       onChange(next.map((option) => option.value));
     },
     [onChange]
@@ -220,7 +220,7 @@ export const GameMultiFacetSelect = memo(function GameMultiFacetSelect({
       <label id={labelId} htmlFor={inputId} className="mb-1 block text-sm font-semibold text-event-dark">
         {label}
       </label>
-      <Select<GameFacetOption, true>
+      <Select<FacetOption, true>
         id={id}
         instanceId={id}
         inputId={inputId}

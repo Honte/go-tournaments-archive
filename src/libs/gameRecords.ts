@@ -3,9 +3,9 @@ import type { Player } from '@/schema/data';
 
 export const GAME_RESULT_TYPES = ['resignation', 'points', 'time', 'other', 'unknown'] as const;
 export const GAME_MEDIA = ['ogs', 'yt', 'ai'] as const;
-export const GAME_WINNERS = ['black', 'white', 'player', 'player-opponent', 'country', 'country-opponent'] as const;
-export const PLAYER_COLORS = ['black', 'white'] as const;
-export const GAME_SORTS = [
+const GAME_WINNERS = ['black', 'white', 'player', 'player-opponent', 'country', 'country-opponent'] as const;
+const PLAYER_COLORS = ['black', 'white'] as const;
+const GAME_SORTS = [
   'year-desc',
   'year-asc',
   'moves-desc',
@@ -17,19 +17,12 @@ export const GAME_SORTS = [
   'rank-gap-asc',
   'rank-gap-desc',
 ] as const;
-export const GAME_GROUPS = [
-  'none',
-  'opponent-player',
-  'opponent-country',
-  'country-player',
-  'year',
-  'category',
-] as const;
+const GAME_GROUPS = ['none', 'opponent-player', 'opponent-country', 'country-player', 'year', 'category'] as const;
 
 export type GameResultType = (typeof GAME_RESULT_TYPES)[number];
 export type GameMedia = (typeof GAME_MEDIA)[number];
 export type GameWinner = (typeof GAME_WINNERS)[number];
-export type PlayerColor = (typeof PLAYER_COLORS)[number];
+type PlayerColor = (typeof PLAYER_COLORS)[number];
 export type GameSort = (typeof GAME_SORTS)[number];
 export type GameGroup = (typeof GAME_GROUPS)[number];
 
@@ -64,25 +57,25 @@ export const DEFAULT_GAME_BROWSER_STATE: GameBrowserState = {
   group: 'none',
 };
 
-export type GameFacetOption = {
+type GameFacetOption = {
   value: string;
   label: string;
   count: number;
   search?: string;
 };
 
-export type GameFacet = {
+type GameFacet = {
   visible: boolean;
   options: GameFacetOption[];
 };
 
-export type GameBrowserGroupResult = {
+type GameBrowserGroupResult = {
   key: string;
   label?: string;
   games: ApiGameInfo[];
 };
 
-export type GameBrowserDomains = {
+type GameBrowserDomains = {
   ranks: string[];
   years: number[];
   movesMin?: number;
@@ -250,7 +243,7 @@ export function serializeGameBrowserState(state: GameBrowserState, source: URLSe
   return params;
 }
 
-export function clearGameBrowserSearchParams(source: URLSearchParams) {
+function clearGameBrowserSearchParams(source: URLSearchParams) {
   const params = new URLSearchParams(source);
 
   for (const key of QUERY_KEYS) {
@@ -258,10 +251,6 @@ export function clearGameBrowserSearchParams(source: URLSearchParams) {
   }
 
   return params;
-}
-
-export function getGameBrowserStateKey(state: GameBrowserState) {
-  return serializeGameBrowserState(state).toString();
 }
 
 export function getActiveGameFilterCount(state: GameBrowserState) {
@@ -467,7 +456,7 @@ export function filterGameRecords(games: readonly ApiGameInfo[], state: GameBrow
   return matches;
 }
 
-export function sortGameRecords(matches: readonly GameMatch[], sort: GameSort): GameMatch[] {
+function sortGameRecords(matches: readonly GameMatch[], sort: GameSort): GameMatch[] {
   return matches.toSorted(
     (left, right) => comparePrimary(left.game, right.game, sort) || compareStable(left.game, right.game, sort)
   );
@@ -532,7 +521,7 @@ export function getGameGroupEligibility(state: GameBrowserState, countriesEnable
   };
 }
 
-export function getGameBrowserDomains(games: readonly ApiGameInfo[]): GameBrowserDomains {
+function getGameBrowserDomains(games: readonly ApiGameInfo[]): GameBrowserDomains {
   const ranks = new Set<string>();
   const years = games.map((game) => game.tournament);
   const moves = games.map((game) => game.moves);

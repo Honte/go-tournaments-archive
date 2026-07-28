@@ -7,7 +7,7 @@ import type { ApiGameInfo } from '@/schema/api';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
-import { GameRecordCard } from '@/components/stats/GameRecordCard';
+import { GameRecordCard } from '@/components/gameRecords/GameRecordCard';
 
 export type GameRecordGroup = {
   key: string;

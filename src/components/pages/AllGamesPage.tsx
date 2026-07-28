@@ -3,7 +3,7 @@ import type { EventContext } from '@/schema/event';
 import type { Locale } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { getTranslations } from '@/data/serverApi';
-import { AllGames } from '@/components/stats/AllGames';
+import { AllGames } from '@/components/gameRecords/AllGames';
 import { Content } from '@/components/ui/Content';
 import { Loader } from '@/components/ui/Loader';
 

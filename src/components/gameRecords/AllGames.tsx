@@ -1,21 +1,14 @@
 'use client';
 
-import { useSearchParams } from 'next/navigation';
-import { useCallback, useEffect, useMemo } from 'react';
+import { useCallback, useMemo } from 'react';
 import type { ApiGameInfo } from '@/schema/api';
 import type { EventContext } from '@/schema/event';
 import type { Locale, Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
-import {
-  DEFAULT_GAME_BROWSER_STATE,
-  deriveGameBrowserModel,
-  parseGameBrowserState,
-  serializeGameBrowserState,
-  type GameBrowserOptions,
-  type GameBrowserState,
-} from '@/components/stats/allGamesModel';
-import { GameFiltersPanel } from '@/components/stats/GameFiltersPanel';
-import { VirtualGameRecordGrid, type GameRecordGroup } from '@/components/stats/VirtualGameRecordGrid';
+import { DEFAULT_GAME_BROWSER_STATE, type GameBrowserOptions } from '@/libs/gameRecords';
+import { GameFiltersPanel } from '@/components/gameRecords/GameFiltersPanel';
+import { useGameBrowserUrlState } from '@/components/gameRecords/useGameBrowserUrlState';
+import { VirtualGameRecordGrid, type GameRecordGroup } from '@/components/gameRecords/VirtualGameRecordGrid';
 import { Button } from '@/components/ui/Button';
 import { H1 } from '@/components/ui/H1';
 import { Loader } from '@/components/ui/Loader';
@@ -49,9 +42,7 @@ export function AllGames({ event, locale }: AllGamesProps) {
 }
 
 function AllGamesContent({ event, games, translations }: AllGamesContentProps) {
-  const searchParams = useSearchParams();
   const t = getTranslator(translations);
-  const requestedState = useMemo(() => parseGameBrowserState(searchParams), [searchParams]);
   const modelOptions = useMemo<GameBrowserOptions>(() => {
     const translate = getTranslator(translations);
     return {
@@ -63,10 +54,7 @@ function AllGamesContent({ event, games, translations }: AllGamesContentProps) {
       locale: translations.locale,
     };
   }, [event.categories, event.showCountry, translations]);
-  const model = useMemo(
-    () => deriveGameBrowserModel(games, requestedState, modelOptions),
-    [games, modelOptions, requestedState]
-  );
+  const { commitState, model } = useGameBrowserUrlState(games, modelOptions);
   const titleCount =
     model.filteredCount === model.totalCount
       ? String(model.totalCount)
@@ -78,30 +66,6 @@ function AllGamesContent({ event, games, translations }: AllGamesContentProps) {
         label: group.label ? `${group.label} (${group.games.length})` : undefined,
       })),
     [model.groups]
-  );
-
-  useEffect(() => {
-    const current = new URLSearchParams(searchParams.toString());
-    const canonical = serializeGameBrowserState(model.state, current);
-
-    if (canonical.toString() !== current.toString()) {
-      updateBrowserUrl(canonical, 'replace');
-    }
-  }, [model.state, searchParams]);
-
-  const commitState = useCallback(
-    (requested: GameBrowserState) => {
-      const normalized = deriveGameBrowserModel(games, requested, modelOptions).state;
-      const current = new URLSearchParams(window.location.search);
-      const next = serializeGameBrowserState(normalized, current);
-
-      if (next.toString() !== current.toString()) {
-        const scrollTop = window.scrollY;
-        updateBrowserUrl(next, 'push');
-        preserveWindowScroll(scrollTop);
-      }
-    },
-    [games, modelOptions]
   );
 
   const clearAll = useCallback(
@@ -134,21 +98,4 @@ function AllGamesContent({ event, games, translations }: AllGamesContentProps) {
       )}
     </>
   );
-}
-
-function updateBrowserUrl(params: URLSearchParams, method: 'push' | 'replace') {
-  const query = params.toString();
-  const url = `${window.location.pathname}${query ? `?${query}` : ''}${window.location.hash}`;
-
-  if (method === 'push') {
-    window.history.pushState(null, '', url);
-  } else {
-    window.history.replaceState(null, '', url);
-  }
-}
-
-function preserveWindowScroll(scrollTop: number) {
-  requestAnimationFrame(() => {
-    requestAnimationFrame(() => window.scrollTo(0, scrollTop));
-  });
 }

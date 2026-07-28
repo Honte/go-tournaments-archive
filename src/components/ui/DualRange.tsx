@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState, type KeyboardEvent } from 'react';
 
-export type GameDualRangeProps = {
+export type DualRangeProps = {
   id: string;
   label: string;
   minimum: number;
@@ -51,7 +51,7 @@ const thumbClassName = `pointer-events-none absolute inset-x-0 top-1/2 z-10 h-4 
   focus-visible:[&::-webkit-slider-thumb]:ring-event-primary
   focus-visible:[&::-webkit-slider-thumb]:ring-offset-1`;
 
-export function GameDualRange({
+export function DualRange({
   id,
   label,
   minimum,
@@ -63,7 +63,7 @@ export function GameDualRange({
   formatValue = String,
   disabled = false,
   onCommit,
-}: GameDualRangeProps) {
+}: DualRangeProps) {
   const normalizedLower = clamp(Math.min(lowerValue, upperValue), minimum, maximum);
   const normalizedUpper = clamp(Math.max(lowerValue, upperValue), minimum, maximum);
   const [draft, setDraft] = useState<[number, number]>([normalizedLower, normalizedUpper]);

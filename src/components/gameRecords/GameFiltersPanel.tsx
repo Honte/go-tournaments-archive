@@ -15,12 +15,13 @@ import {
   type GameSort,
   type GameWinner,
   getActiveGameFilterCount,
-} from '@/components/stats/allGamesModel';
-import { GameDualRange } from '@/components/stats/GameDualRange';
-import { GameFacetSelect, GameMultiFacetSelect } from '@/components/stats/GameFacetSelect';
-import { GameYearSelect } from '@/components/stats/GameYearSelect';
-import { Button } from '@/components/ui/Button';
-import { Toggle } from '@/components/ui/Toggle';
+} from '@/libs/gameRecords';
+import { FilterToggleGroup } from '@/components/gameRecords/FilterToggleGroup';
+import { GameBrowserToolbar } from '@/components/gameRecords/GameBrowserToolbar';
+import { GameYearSelect } from '@/components/gameRecords/GameYearSelect';
+import { MovesRange } from '@/components/gameRecords/MovesRange';
+import { RankRange } from '@/components/gameRecords/RankRange';
+import { FacetSelect, MultiFacetSelect } from '@/components/ui/FacetSelect';
 
 export type GameFiltersPanelProps = {
   model: GameBrowserModel;
@@ -37,6 +38,7 @@ export function GameFiltersPanel({ model, onChange, onClear, translations }: Gam
   const t = getTranslator(translations);
   const { state, facets, domains, grouping } = model;
   const activeCount = getActiveGameFilterCount(state);
+  const [expanded, setExpanded] = useState(() => activeCount > 0);
   const hiddenFilterCount =
     activeCount -
     [
@@ -44,7 +46,9 @@ export function GameFiltersPanel({ model, onChange, onClear, translations }: Gam
       state.sort !== DEFAULT_GAME_BROWSER_STATE.sort,
       state.group !== DEFAULT_GAME_BROWSER_STATE.group,
     ].filter(Boolean).length;
-  const [expanded, setExpanded] = useState(() => activeCount > 0);
+  const disclosureLabel = `${t(expanded ? 'gamesFilter.showLess' : 'gamesFilter.showMore')}${
+    !expanded && hiddenFilterCount > 0 ? ` (${hiddenFilterCount})` : ''
+  }`;
   const patch = (values: Partial<GameBrowserState>) => onChange({ ...state, ...values });
   const resultLabels: Record<GameResultType, string> = {
     resignation: t('gamesFilter.resignation'),
@@ -101,66 +105,12 @@ export function GameFiltersPanel({ model, onChange, onClear, translations }: Gam
         ]
       : []),
   ];
-  const disclosureLabel = `${t(expanded ? 'gamesFilter.showLess' : 'gamesFilter.showMore')}${
-    !expanded && hiddenFilterCount > 0 ? ` (${hiddenFilterCount})` : ''
-  }`;
-  const renderSortAndActions = () => (
-    <>
-      <GameFacetSelect
-        id="game-sort"
-        label={t('gamesFilter.sort')}
-        value={state.sort}
-        options={sortOptions.map((option) => ({ ...option, count: 1 }))}
-        className="min-w-56 flex-1 sm:max-w-sm"
-        onChange={(sort) => sort && patch({ sort: sort as GameSort })}
-        name="sort"
-        showCounts={false}
-        searchable={false}
-        clearable={false}
-      />
-
-      <GameFacetSelect
-        id="game-group"
-        label={t('gamesFilter.group')}
-        value={state.group}
-        options={groupOptions.map((option) => ({ ...option, count: 1 }))}
-        className="min-w-56 flex-1 sm:max-w-sm"
-        onChange={(group) => group && patch({ group: group as GameGroup })}
-        name="group"
-        showCounts={false}
-        searchable={false}
-        clearable={false}
-      />
-
-      <div className="ml-auto flex items-end">
-        <div className="flex items-center gap-2 leading-8">
-          <Button
-            type="button"
-            aria-controls={ADVANCED_FILTERS_ID}
-            aria-expanded={expanded}
-            onClick={() => setExpanded((open) => !open)}
-          >
-            {disclosureLabel}
-          </Button>
-          <Button
-            type="button"
-            onClick={onClear}
-            disabled={!activeCount}
-            className="disabled:cursor-default disabled:opacity-50"
-          >
-            {t('gamesFilter.clear')}
-            {activeCount > 0 ? ` (${activeCount})` : ''}
-          </Button>
-        </div>
-      </div>
-    </>
-  );
 
   return (
     <section id={FILTER_PANEL_ID} className="rounded-md border border-event-soft bg-white p-3 shadow-sm md:p-4">
       {!expanded && (
         <div className="flex max-sm:flex-col flex-wrap gap-4">
-          <GameFacetSelect
+          <FacetSelect
             id="game-player"
             label={t('gamesFilter.player')}
             options={facets.player.options}
@@ -171,7 +121,18 @@ export function GameFiltersPanel({ model, onChange, onClear, translations }: Gam
             name="player"
             className="min-w-56 flex-1 sm:max-w-sm"
           />
-          {renderSortAndActions()}
+          <GameBrowserToolbar
+            activeCount={activeCount}
+            disclosureLabel={disclosureLabel}
+            expanded={expanded}
+            groupOptions={groupOptions}
+            onClear={onClear}
+            onPatch={patch}
+            onToggle={() => setExpanded((open) => !open)}
+            sortOptions={sortOptions}
+            state={state}
+            t={t}
+          />
         </div>
       )}
 
@@ -186,7 +147,7 @@ export function GameFiltersPanel({ model, onChange, onClear, translations }: Gam
                 {t('gamesFilter.playerFilters')}
               </h2>
 
-              <GameFacetSelect
+              <FacetSelect
                 id="game-player"
                 label={t('gamesFilter.player')}
                 options={facets.player.options}
@@ -198,7 +159,7 @@ export function GameFiltersPanel({ model, onChange, onClear, translations }: Gam
               />
 
               {facets.country.visible && (
-                <GameFacetSelect
+                <FacetSelect
                   id="game-country"
                   label={t('gamesFilter.country')}
                   options={facets.country.options}
@@ -222,7 +183,7 @@ export function GameFiltersPanel({ model, onChange, onClear, translations }: Gam
                 onChange={(playerRankMin, playerRankMax) => patch({ playerRankMin, playerRankMax })}
               />
 
-              <GameFacetSelect
+              <FacetSelect
                 id="game-player-color"
                 label={t('gamesFilter.playerColor')}
                 options={colorOptions}
@@ -247,7 +208,7 @@ export function GameFiltersPanel({ model, onChange, onClear, translations }: Gam
               </h2>
 
               {facets.opponent.visible && (
-                <GameFacetSelect
+                <FacetSelect
                   id="game-opponent"
                   label={t('gamesFilter.opponent')}
                   options={facets.opponent.options}
@@ -260,7 +221,7 @@ export function GameFiltersPanel({ model, onChange, onClear, translations }: Gam
               )}
 
               {facets.opponentCountry.visible && (
-                <GameFacetSelect
+                <FacetSelect
                   id="game-opponent-country"
                   label={t('gamesFilter.opponentCountry')}
                   options={facets.opponentCountry.options}
@@ -310,7 +271,7 @@ export function GameFiltersPanel({ model, onChange, onClear, translations }: Gam
               />
 
               {facets.category.visible && (
-                <GameFacetSelect
+                <FacetSelect
                   id="game-category"
                   label={t('gamesFilter.category')}
                   options={facets.category.options}
@@ -334,7 +295,7 @@ export function GameFiltersPanel({ model, onChange, onClear, translations }: Gam
                 onChange={(movesMin, movesMax) => patch({ movesMin, movesMax })}
               />
 
-              <GameFacetSelect
+              <FacetSelect
                 id="game-winner"
                 label={t('gamesFilter.winner')}
                 options={winnerOptions}
@@ -347,7 +308,7 @@ export function GameFiltersPanel({ model, onChange, onClear, translations }: Gam
                 allowZeroCountOptions={true}
               />
 
-              <GameMultiFacetSelect
+              <MultiFacetSelect
                 id="game-result"
                 label={t('gamesFilter.resultType')}
                 options={GAME_RESULT_TYPES.map((result) => ({
@@ -365,7 +326,7 @@ export function GameFiltersPanel({ model, onChange, onClear, translations }: Gam
               />
 
               {facets.komi.visible && (
-                <GameMultiFacetSelect
+                <MultiFacetSelect
                   id="game-komi"
                   label={t('gamesFilter.komi')}
                   options={facets.komi.options}
@@ -378,7 +339,7 @@ export function GameFiltersPanel({ model, onChange, onClear, translations }: Gam
                 />
               )}
 
-              <ToggleGroup
+              <FilterToggleGroup
                 legend={t('gamesFilter.media')}
                 values={GAME_MEDIA}
                 selected={state.media}
@@ -394,142 +355,21 @@ export function GameFiltersPanel({ model, onChange, onClear, translations }: Gam
 
       {expanded && (
         <div className="mt-4 flex max-sm:flex-col flex-wrap gap-4 border-t border-event-soft pt-4">
-          {renderSortAndActions()}
+          <GameBrowserToolbar
+            activeCount={activeCount}
+            disclosureLabel={disclosureLabel}
+            expanded={expanded}
+            groupOptions={groupOptions}
+            onClear={onClear}
+            onPatch={patch}
+            onToggle={() => setExpanded((open) => !open)}
+            sortOptions={sortOptions}
+            state={state}
+            t={t}
+          />
         </div>
       )}
     </section>
-  );
-}
-
-type RankRangeProps = {
-  id: string;
-  label: string;
-  ranks: readonly string[];
-  minimum?: string;
-  maximum?: string;
-  minimumLabel: string;
-  maximumLabel: string;
-  anyLabel: string;
-  onChange: (minimum?: string, maximum?: string) => void;
-};
-
-function RankRange({
-  id,
-  label,
-  ranks,
-  minimum,
-  maximum,
-  minimumLabel,
-  maximumLabel,
-  anyLabel,
-  onChange,
-}: RankRangeProps) {
-  const lastIndex = Math.max(0, ranks.length - 1);
-  const minimumIndex = minimum ? ranks.indexOf(minimum) : 0;
-  const maximumIndex = maximum ? ranks.indexOf(maximum) : lastIndex;
-
-  return (
-    <GameDualRange
-      id={id}
-      label={label}
-      minimum={0}
-      maximum={lastIndex}
-      lowerValue={minimumIndex >= 0 ? minimumIndex : 0}
-      upperValue={maximumIndex >= 0 ? maximumIndex : lastIndex}
-      lowerLabel={`${label}: ${minimumLabel}`}
-      upperLabel={`${label}: ${maximumLabel}`}
-      formatValue={(index) => ranks[index] ?? anyLabel}
-      disabled={ranks.length < 2}
-      onCommit={(lowerIndex, upperIndex) =>
-        onChange(
-          lowerIndex === 0 ? undefined : ranks[lowerIndex],
-          upperIndex === lastIndex ? undefined : ranks[upperIndex]
-        )
-      }
-    />
-  );
-}
-
-type MovesRangeProps = {
-  id: string;
-  label: string;
-  minimum?: number;
-  maximum?: number;
-  domainMinimum?: number;
-  domainMaximum?: number;
-  minimumLabel: string;
-  maximumLabel: string;
-  onChange: (minimum?: number, maximum?: number) => void;
-};
-
-function MovesRange({
-  id,
-  label,
-  minimum,
-  maximum,
-  domainMinimum = 0,
-  domainMaximum = 0,
-  minimumLabel,
-  maximumLabel,
-  onChange,
-}: MovesRangeProps) {
-  return (
-    <GameDualRange
-      id={id}
-      label={label}
-      minimum={domainMinimum}
-      maximum={domainMaximum}
-      lowerValue={minimum ?? domainMinimum}
-      upperValue={maximum ?? domainMaximum}
-      lowerLabel={`${label}: ${minimumLabel}`}
-      upperLabel={`${label}: ${maximumLabel}`}
-      disabled={domainMinimum >= domainMaximum}
-      onCommit={(lowerValue, upperValue) =>
-        onChange(
-          lowerValue === domainMinimum ? undefined : lowerValue,
-          upperValue === domainMaximum ? undefined : upperValue
-        )
-      }
-    />
-  );
-}
-
-function ToggleGroup<T extends string>({
-  legend,
-  values,
-  selected,
-  labels,
-  counts,
-  disableZero,
-  onChange,
-}: {
-  legend: string;
-  values: readonly T[];
-  selected: readonly T[];
-  labels: Record<T, string>;
-  counts?: Partial<Record<T, number>>;
-  disableZero?: boolean;
-  onChange: (selected: T[]) => void;
-}) {
-  return (
-    <fieldset>
-      <legend className="mb-1 text-sm font-semibold">{legend}</legend>
-      <div className="flex flex-wrap gap-x-3 gap-y-2 rounded-sm border border-event-soft bg-white px-2 py-2">
-        {values.map((value) => (
-          <Toggle
-            key={value}
-            checked={selected.includes(value)}
-            disabled={disableZero && counts?.[value] === 0 && !selected.includes(value)}
-            onChange={(checked) =>
-              onChange(checked ? [...selected, value] : selected.filter((selectedValue) => selectedValue !== value))
-            }
-          >
-            {labels[value]}
-            {counts?.[value] !== undefined ? ` (${counts[value]})` : ''}
-          </Toggle>
-        ))}
-      </div>
-    </fieldset>
   );
 }
 
