@@ -97,22 +97,13 @@ function GamePreview({
   t: Translator;
 }) {
   const content = preview ? (
-    <img
-      src={gameThumbUrl(event, preview)}
-      alt=""
-      className="h-full max-w-full object-contain transition-transform duration-200 group-hover:scale-[1.05] border-event-dark border-2 rounded-sm overflow-hidden size-full bg-event-light"
-      loading="lazy"
-    />
+    <img src={gameThumbUrl(event, preview)} alt="" className="h-full max-w-full object-contain" loading="lazy" />
   ) : (
     <PreviewPlaceholder label={t('game.open')} />
   );
 
   return (
-    <GameViewerTrigger
-      sgfPath={game.sgf}
-      aria-label={label}
-      className="group flex size-24 shrink-0 items-center justify-center overflow-hidden focus-visible:ring-2 focus-visible:ring-event-primary focus-visible:ring-inset overflow-visible"
-    >
+    <GameViewerTrigger sgfPath={game.sgf} aria-label={label} className="flex size-24 shrink-0">
       {content}
     </GameViewerTrigger>
   );
