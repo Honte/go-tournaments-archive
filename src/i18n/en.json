@@ -152,6 +152,9 @@
   },
   "gamesFilter": {
     "filter": "Filter",
+    "showMore": "Show more",
+    "showLess": "Show less",
+    "clear": "Clear",
     "clearAll": "Clear filters",
     "playerFilters": "Player",
     "opponentFilters": "Opponent",

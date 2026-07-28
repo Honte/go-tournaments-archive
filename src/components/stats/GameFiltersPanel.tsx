@@ -1,8 +1,10 @@
 'use client';
 
+import { useState } from 'react';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import {
+  DEFAULT_GAME_BROWSER_STATE,
   GAME_MEDIA,
   GAME_RESULT_TYPES,
   type GameBrowserModel,
@@ -21,19 +23,28 @@ import { Button } from '@/components/ui/Button';
 import { Toggle } from '@/components/ui/Toggle';
 
 export type GameFiltersPanelProps = {
-  id: string;
   model: GameBrowserModel;
   translations: Translations;
   onChange: (state: GameBrowserState) => void;
   onClear: () => void;
 };
 
-const columnClassName = 'min-w-0 space-y-4 p-3';
+const columnClassName = 'min-w-0 space-y-4';
+const FILTER_PANEL_ID = 'game-record-filters';
+const ADVANCED_FILTERS_ID = `${FILTER_PANEL_ID}-advanced`;
 
-export function GameFiltersPanel({ id, model, onChange, onClear, translations }: GameFiltersPanelProps) {
+export function GameFiltersPanel({ model, onChange, onClear, translations }: GameFiltersPanelProps) {
   const t = getTranslator(translations);
   const { state, facets, domains, grouping } = model;
   const activeCount = getActiveGameFilterCount(state);
+  const hiddenFilterCount =
+    activeCount -
+    [
+      state.player,
+      state.sort !== DEFAULT_GAME_BROWSER_STATE.sort,
+      state.group !== DEFAULT_GAME_BROWSER_STATE.group,
+    ].filter(Boolean).length;
+  const [expanded, setExpanded] = useState(() => activeCount > 0);
   const patch = (values: Partial<GameBrowserState>) => onChange({ ...state, ...values });
   const resultLabels: Record<GameResultType, string> = {
     resignation: t('gamesFilter.resignation'),
@@ -90,15 +101,65 @@ export function GameFiltersPanel({ id, model, onChange, onClear, translations }:
         ]
       : []),
   ];
+  const disclosureLabel = `${t(expanded ? 'gamesFilter.showLess' : 'gamesFilter.showMore')}${
+    !expanded && hiddenFilterCount > 0 ? ` (${hiddenFilterCount})` : ''
+  }`;
+  const renderSortAndActions = () => (
+    <>
+      <GameFacetSelect
+        id="game-sort"
+        label={t('gamesFilter.sort')}
+        value={state.sort}
+        options={sortOptions.map((option) => ({ ...option, count: 1 }))}
+        className="min-w-56 flex-1 sm:max-w-sm"
+        onChange={(sort) => sort && patch({ sort: sort as GameSort })}
+        name="sort"
+        showCounts={false}
+        searchable={false}
+        clearable={false}
+      />
+
+      <GameFacetSelect
+        id="game-group"
+        label={t('gamesFilter.group')}
+        value={state.group}
+        options={groupOptions.map((option) => ({ ...option, count: 1 }))}
+        className="min-w-56 flex-1 sm:max-w-sm"
+        onChange={(group) => group && patch({ group: group as GameGroup })}
+        name="group"
+        showCounts={false}
+        searchable={false}
+        clearable={false}
+      />
+
+      <div className="ml-auto flex items-end">
+        <div className="flex items-center gap-2 leading-8">
+          <Button
+            type="button"
+            aria-controls={ADVANCED_FILTERS_ID}
+            aria-expanded={expanded}
+            onClick={() => setExpanded((open) => !open)}
+          >
+            {disclosureLabel}
+          </Button>
+          <Button
+            type="button"
+            onClick={onClear}
+            disabled={!activeCount}
+            className="disabled:cursor-default disabled:opacity-50"
+          >
+            {t('gamesFilter.clear')}
+            {activeCount > 0 ? ` (${activeCount})` : ''}
+          </Button>
+        </div>
+      </div>
+    </>
+  );
 
   return (
-    <section id={id} className="rounded-md border border-event-soft bg-white p-3 shadow-sm md:p-4">
-      <div className="grid grid-cols-1 items-start gap-4 lg:grid-cols-3">
-        <section aria-labelledby={`${id}-player-heading`} className={columnClassName}>
-          <h2 id={`${id}-player-heading`} className="border-b border-event-soft pb-2 text-base font-bold">
-            {t('gamesFilter.playerFilters')}
-          </h2>
-
+    <section id={FILTER_PANEL_ID} className="rounded-md border border-event-soft bg-white p-3 shadow-sm md:p-4">
+      {!expanded && (
+        <div className="flex max-sm:flex-col flex-wrap gap-4">
           <GameFacetSelect
             id="game-player"
             label={t('gamesFilter.player')}
@@ -108,231 +169,234 @@ export function GameFiltersPanel({ id, model, onChange, onClear, translations }:
             placeholder={t('gamesFilter.anyPlayer')}
             noOptionsMessage={t('gamesFilter.noOptions')}
             name="player"
+            className="min-w-56 flex-1 sm:max-w-sm"
           />
+          {renderSortAndActions()}
+        </div>
+      )}
 
-          {facets.country.visible && (
-            <GameFacetSelect
-              id="game-country"
-              label={t('gamesFilter.country')}
-              options={facets.country.options}
-              value={state.country ?? null}
-              onChange={(country) => patch({ country: country ?? undefined })}
-              placeholder={t('gamesFilter.anyCountry')}
-              noOptionsMessage={t('gamesFilter.noOptions')}
-              name="country"
-            />
-          )}
+      {expanded && (
+        <div id={ADVANCED_FILTERS_ID}>
+          <div className="grid grid-cols-1 items-start gap-4 lg:grid-cols-3">
+            <section aria-labelledby={`${FILTER_PANEL_ID}-player-heading`} className={columnClassName}>
+              <h2
+                id={`${FILTER_PANEL_ID}-player-heading`}
+                className="border-b border-event-soft pb-2 text-base font-bold"
+              >
+                {t('gamesFilter.playerFilters')}
+              </h2>
 
-          <RankRange
-            id="game-player-rank"
-            label={t('gamesFilter.playerRank')}
-            ranks={domains.ranks}
-            minimum={state.playerRankMin}
-            maximum={state.playerRankMax}
-            minimumLabel={t('gamesFilter.minimum')}
-            maximumLabel={t('gamesFilter.maximum')}
-            anyLabel={t('gamesFilter.anyRank')}
-            onChange={(playerRankMin, playerRankMax) => patch({ playerRankMin, playerRankMax })}
-          />
+              <GameFacetSelect
+                id="game-player"
+                label={t('gamesFilter.player')}
+                options={facets.player.options}
+                value={state.player ?? null}
+                onChange={(player) => patch({ player: player ?? undefined })}
+                placeholder={t('gamesFilter.anyPlayer')}
+                noOptionsMessage={t('gamesFilter.noOptions')}
+                name="player"
+              />
 
-          <GameFacetSelect
-            id="game-player-color"
-            label={t('gamesFilter.playerColor')}
-            options={colorOptions}
-            value={state.playerColor ?? null}
-            onChange={(playerColor) =>
-              patch({ playerColor: playerColor === 'black' || playerColor === 'white' ? playerColor : undefined })
-            }
-            placeholder={t('gamesFilter.anyColor')}
-            noOptionsMessage={t('gamesFilter.noOptions')}
-            name="playerColor"
-            searchable={false}
-            allowZeroCountOptions={true}
-          />
-        </section>
+              {facets.country.visible && (
+                <GameFacetSelect
+                  id="game-country"
+                  label={t('gamesFilter.country')}
+                  options={facets.country.options}
+                  value={state.country ?? null}
+                  onChange={(country) => patch({ country: country ?? undefined })}
+                  placeholder={t('gamesFilter.anyCountry')}
+                  noOptionsMessage={t('gamesFilter.noOptions')}
+                  name="country"
+                />
+              )}
 
-        <section aria-labelledby={`${id}-opponent-heading`} className={columnClassName}>
-          <h2 id={`${id}-opponent-heading`} className="border-b border-event-soft pb-2 text-base font-bold">
-            {t('gamesFilter.opponentFilters')}
-          </h2>
+              <RankRange
+                id="game-player-rank"
+                label={t('gamesFilter.playerRank')}
+                ranks={domains.ranks}
+                minimum={state.playerRankMin}
+                maximum={state.playerRankMax}
+                minimumLabel={t('gamesFilter.minimum')}
+                maximumLabel={t('gamesFilter.maximum')}
+                anyLabel={t('gamesFilter.anyRank')}
+                onChange={(playerRankMin, playerRankMax) => patch({ playerRankMin, playerRankMax })}
+              />
 
-          {facets.opponent.visible && (
-            <GameFacetSelect
-              id="game-opponent"
-              label={t('gamesFilter.opponent')}
-              options={facets.opponent.options}
-              value={state.opponent ?? null}
-              onChange={(opponent) => patch({ opponent: opponent ?? undefined })}
-              placeholder={t('gamesFilter.anyOpponent')}
-              noOptionsMessage={t('gamesFilter.noOptions')}
-              name="opponent"
-            />
-          )}
+              <GameFacetSelect
+                id="game-player-color"
+                label={t('gamesFilter.playerColor')}
+                options={colorOptions}
+                value={state.playerColor ?? null}
+                onChange={(playerColor) =>
+                  patch({ playerColor: playerColor === 'black' || playerColor === 'white' ? playerColor : undefined })
+                }
+                placeholder={t('gamesFilter.anyColor')}
+                noOptionsMessage={t('gamesFilter.noOptions')}
+                name="playerColor"
+                searchable={false}
+                allowZeroCountOptions={true}
+              />
+            </section>
 
-          {facets.opponentCountry.visible && (
-            <GameFacetSelect
-              id="game-opponent-country"
-              label={t('gamesFilter.opponentCountry')}
-              options={facets.opponentCountry.options}
-              value={state.opponentCountry ?? null}
-              onChange={(opponentCountry) => patch({ opponentCountry: opponentCountry ?? undefined })}
-              placeholder={t('gamesFilter.anyOpponentCountry')}
-              noOptionsMessage={t('gamesFilter.noOptions')}
-              name="opponentCountry"
-            />
-          )}
+            <section aria-labelledby={`${FILTER_PANEL_ID}-opponent-heading`} className={columnClassName}>
+              <h2
+                id={`${FILTER_PANEL_ID}-opponent-heading`}
+                className="border-b border-event-soft pb-2 text-base font-bold"
+              >
+                {t('gamesFilter.opponentFilters')}
+              </h2>
 
-          {focalSelected ? (
-            <RankRange
-              id="game-opponent-rank"
-              label={t('gamesFilter.opponentRank')}
-              ranks={domains.ranks}
-              minimum={state.opponentRankMin}
-              maximum={state.opponentRankMax}
-              minimumLabel={t('gamesFilter.minimum')}
-              maximumLabel={t('gamesFilter.maximum')}
-              anyLabel={t('gamesFilter.anyRank')}
-              onChange={(opponentRankMin, opponentRankMax) => patch({ opponentRankMin, opponentRankMax })}
-            />
-          ) : (
-            <p className="text-sm text-event-dark/70">
-              {t(facets.country.visible ? 'gamesFilter.selectPlayerOrCountry' : 'gamesFilter.selectPlayer')}
-            </p>
-          )}
-        </section>
+              {facets.opponent.visible && (
+                <GameFacetSelect
+                  id="game-opponent"
+                  label={t('gamesFilter.opponent')}
+                  options={facets.opponent.options}
+                  value={state.opponent ?? null}
+                  onChange={(opponent) => patch({ opponent: opponent ?? undefined })}
+                  placeholder={t('gamesFilter.anyOpponent')}
+                  noOptionsMessage={t('gamesFilter.noOptions')}
+                  name="opponent"
+                />
+              )}
 
-        <section aria-labelledby={`${id}-game-heading`} className={columnClassName}>
-          <h2 id={`${id}-game-heading`} className="border-b border-event-soft pb-2 text-base font-bold">
-            {t('gamesFilter.gameFilters')}
-          </h2>
+              {facets.opponentCountry.visible && (
+                <GameFacetSelect
+                  id="game-opponent-country"
+                  label={t('gamesFilter.opponentCountry')}
+                  options={facets.opponentCountry.options}
+                  value={state.opponentCountry ?? null}
+                  onChange={(opponentCountry) => patch({ opponentCountry: opponentCountry ?? undefined })}
+                  placeholder={t('gamesFilter.anyOpponentCountry')}
+                  noOptionsMessage={t('gamesFilter.noOptions')}
+                  name="opponentCountry"
+                />
+              )}
 
-          <GameYearSelect
-            id="game-year"
-            label={t('gamesFilter.year')}
-            years={facets.year.options}
-            selectedYears={state.years}
-            placeholder={t('gamesFilter.anyYear')}
-            noOptionsMessage={t('gamesFilter.noOptions')}
-            onChange={(years) => patch({ years })}
-          />
+              {focalSelected ? (
+                <RankRange
+                  id="game-opponent-rank"
+                  label={t('gamesFilter.opponentRank')}
+                  ranks={domains.ranks}
+                  minimum={state.opponentRankMin}
+                  maximum={state.opponentRankMax}
+                  minimumLabel={t('gamesFilter.minimum')}
+                  maximumLabel={t('gamesFilter.maximum')}
+                  anyLabel={t('gamesFilter.anyRank')}
+                  onChange={(opponentRankMin, opponentRankMax) => patch({ opponentRankMin, opponentRankMax })}
+                />
+              ) : (
+                <p className="text-sm text-event-dark/70">
+                  {t(facets.country.visible ? 'gamesFilter.selectPlayerOrCountry' : 'gamesFilter.selectPlayer')}
+                </p>
+              )}
+            </section>
 
-          {facets.category.visible && (
-            <GameFacetSelect
-              id="game-category"
-              label={t('gamesFilter.category')}
-              options={facets.category.options}
-              value={state.category ?? null}
-              onChange={(category) => patch({ category: category ?? undefined })}
-              placeholder={t('gamesFilter.anyCategory')}
-              noOptionsMessage={t('gamesFilter.noOptions')}
-              name="category"
-            />
-          )}
+            <section aria-labelledby={`${FILTER_PANEL_ID}-game-heading`} className={columnClassName}>
+              <h2
+                id={`${FILTER_PANEL_ID}-game-heading`}
+                className="border-b border-event-soft pb-2 text-base font-bold"
+              >
+                {t('gamesFilter.gameFilters')}
+              </h2>
 
-          <MovesRange
-            id="game-moves"
-            label={t('gamesFilter.moves')}
-            minimum={state.movesMin}
-            maximum={state.movesMax}
-            domainMinimum={domains.movesMin}
-            domainMaximum={domains.movesMax}
-            minimumLabel={t('gamesFilter.minimum')}
-            maximumLabel={t('gamesFilter.maximum')}
-            onChange={(movesMin, movesMax) => patch({ movesMin, movesMax })}
-          />
+              <GameYearSelect
+                id="game-year"
+                label={t('gamesFilter.year')}
+                years={facets.year.options}
+                selectedYears={state.years}
+                placeholder={t('gamesFilter.anyYear')}
+                noOptionsMessage={t('gamesFilter.noOptions')}
+                onChange={(years) => patch({ years })}
+              />
 
-          <GameFacetSelect
-            id="game-winner"
-            label={t('gamesFilter.winner')}
-            options={winnerOptions}
-            value={state.winner ?? null}
-            onChange={(winner) => patch({ winner: winner && isGameWinner(winner) ? winner : undefined })}
-            placeholder={t('gamesFilter.anyWinner')}
-            noOptionsMessage={t('gamesFilter.noOptions')}
-            name="winner"
-            searchable={false}
-            allowZeroCountOptions={true}
-          />
+              {facets.category.visible && (
+                <GameFacetSelect
+                  id="game-category"
+                  label={t('gamesFilter.category')}
+                  options={facets.category.options}
+                  value={state.category ?? null}
+                  onChange={(category) => patch({ category: category ?? undefined })}
+                  placeholder={t('gamesFilter.anyCategory')}
+                  noOptionsMessage={t('gamesFilter.noOptions')}
+                  name="category"
+                />
+              )}
 
-          <GameMultiFacetSelect
-            id="game-result"
-            label={t('gamesFilter.resultType')}
-            options={GAME_RESULT_TYPES.map((result) => ({
-              value: result,
-              label: resultLabels[result],
-              count: facets.result[result],
-            }))}
-            values={state.results}
-            onChange={(results) => patch({ results: results.filter(isGameResultType) })}
-            placeholder={t('gamesFilter.anyResult')}
-            noOptionsMessage={t('gamesFilter.noOptions')}
-            name="result"
-            searchable={false}
-            allowZeroCountOptions={true}
-          />
+              <MovesRange
+                id="game-moves"
+                label={t('gamesFilter.moves')}
+                minimum={state.movesMin}
+                maximum={state.movesMax}
+                domainMinimum={domains.movesMin}
+                domainMaximum={domains.movesMax}
+                minimumLabel={t('gamesFilter.minimum')}
+                maximumLabel={t('gamesFilter.maximum')}
+                onChange={(movesMin, movesMax) => patch({ movesMin, movesMax })}
+              />
 
-          {facets.komi.visible && (
-            <GameMultiFacetSelect
-              id="game-komi"
-              label={t('gamesFilter.komi')}
-              options={facets.komi.options}
-              values={state.komi}
-              onChange={(komi) => patch({ komi })}
-              placeholder={t('gamesFilter.anyKomi')}
-              noOptionsMessage={t('gamesFilter.noOptions')}
-              name="komi"
-              searchable={false}
-            />
-          )}
+              <GameFacetSelect
+                id="game-winner"
+                label={t('gamesFilter.winner')}
+                options={winnerOptions}
+                value={state.winner ?? null}
+                onChange={(winner) => patch({ winner: winner && isGameWinner(winner) ? winner : undefined })}
+                placeholder={t('gamesFilter.anyWinner')}
+                noOptionsMessage={t('gamesFilter.noOptions')}
+                name="winner"
+                searchable={false}
+                allowZeroCountOptions={true}
+              />
 
-          <ToggleGroup
-            legend={t('gamesFilter.media')}
-            values={GAME_MEDIA}
-            selected={state.media}
-            labels={mediaLabels}
-            counts={facets.media}
-            disableZero={true}
-            onChange={(media) => patch({ media })}
-          />
-        </section>
-      </div>
+              <GameMultiFacetSelect
+                id="game-result"
+                label={t('gamesFilter.resultType')}
+                options={GAME_RESULT_TYPES.map((result) => ({
+                  value: result,
+                  label: resultLabels[result],
+                  count: facets.result[result],
+                }))}
+                values={state.results}
+                onChange={(results) => patch({ results: results.filter(isGameResultType) })}
+                placeholder={t('gamesFilter.anyResult')}
+                noOptionsMessage={t('gamesFilter.noOptions')}
+                name="result"
+                searchable={false}
+                allowZeroCountOptions={true}
+              />
 
-      <div className="mt-4 flex flex-wrap items-end gap-4 border-t border-event-soft pt-4">
-        <GameFacetSelect
-          id="game-sort"
-          label={t('gamesFilter.sort')}
-          value={state.sort}
-          options={sortOptions.map((option) => ({ ...option, count: 1 }))}
-          className="min-w-56 flex-1 sm:max-w-sm"
-          onChange={(sort) => sort && patch({ sort: sort as GameSort })}
-          name="sort"
-          showCounts={false}
-          searchable={false}
-          clearable={false}
-        />
+              {facets.komi.visible && (
+                <GameMultiFacetSelect
+                  id="game-komi"
+                  label={t('gamesFilter.komi')}
+                  options={facets.komi.options}
+                  values={state.komi}
+                  onChange={(komi) => patch({ komi })}
+                  placeholder={t('gamesFilter.anyKomi')}
+                  noOptionsMessage={t('gamesFilter.noOptions')}
+                  name="komi"
+                  searchable={false}
+                />
+              )}
 
-        <GameFacetSelect
-          id="game-group"
-          label={t('gamesFilter.group')}
-          value={state.group}
-          options={groupOptions.map((option) => ({ ...option, count: 1 }))}
-          className="min-w-56 flex-1 sm:max-w-sm"
-          onChange={(group) => group && patch({ group: group as GameGroup })}
-          name="group"
-          showCounts={false}
-          searchable={false}
-          clearable={false}
-        />
+              <ToggleGroup
+                legend={t('gamesFilter.media')}
+                values={GAME_MEDIA}
+                selected={state.media}
+                labels={mediaLabels}
+                counts={facets.media}
+                disableZero={true}
+                onChange={(media) => patch({ media })}
+              />
+            </section>
+          </div>
+        </div>
+      )}
 
-        <Button
-          type="button"
-          onClick={onClear}
-          disabled={!activeCount}
-          className="ml-auto leading-8 disabled:cursor-default disabled:opacity-50"
-        >
-          {t('gamesFilter.clearAll')}
-        </Button>
-      </div>
+      {expanded && (
+        <div className="mt-4 flex max-sm:flex-col flex-wrap gap-4 border-t border-event-soft pt-4">
+          {renderSortAndActions()}
+        </div>
+      )}
     </section>
   );
 }

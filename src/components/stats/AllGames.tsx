@@ -1,8 +1,7 @@
 'use client';
 
 import { useSearchParams } from 'next/navigation';
-import { useCallback, useEffect, useMemo, useState } from 'react';
-import { FaChevronRight } from 'react-icons/fa6';
+import { useCallback, useEffect, useMemo } from 'react';
 import type { ApiGameInfo } from '@/schema/api';
 import type { EventContext } from '@/schema/event';
 import type { Locale, Translations } from '@/i18n/consts';
@@ -10,7 +9,6 @@ import { getTranslator } from '@/i18n/translator';
 import {
   DEFAULT_GAME_BROWSER_STATE,
   deriveGameBrowserModel,
-  getActiveGameFilterCount,
   parseGameBrowserState,
   serializeGameBrowserState,
   type GameBrowserOptions,
@@ -34,8 +32,6 @@ type AllGamesContentProps = {
   games: ApiGameInfo[];
   translations: Translations;
 };
-
-const FILTER_PANEL_ID = 'game-record-filters';
 
 export function AllGames({ event, locale }: AllGamesProps) {
   const translationsData = useTranslationsData(event, locale);
@@ -71,12 +67,10 @@ function AllGamesContent({ event, games, translations }: AllGamesContentProps) {
     () => deriveGameBrowserModel(games, requestedState, modelOptions),
     [games, modelOptions, requestedState]
   );
-  const activeCount = getActiveGameFilterCount(model.state);
   const titleCount =
     model.filteredCount === model.totalCount
       ? String(model.totalCount)
       : t('gamesFilter.count', String(model.filteredCount), String(model.totalCount));
-  const [filtersOpen, setFiltersOpen] = useState(() => activeCount > 0);
   const groups = useMemo<GameRecordGroup[]>(
     () =>
       model.groups.map((group) => ({
@@ -122,36 +116,11 @@ function AllGamesContent({ event, games, translations }: AllGamesContentProps) {
 
   return (
     <>
-      <H1
-        actions={
-          <button
-            type="button"
-            className="inline-flex cursor-pointer items-center gap-1 text-sm underline underline-offset-2 hover:text-event-hover focus-visible:ring-2 focus-visible:ring-event-primary"
-            aria-controls={FILTER_PANEL_ID}
-            aria-expanded={filtersOpen}
-            onClick={() => setFiltersOpen((open) => !open)}
-          >
-            <FaChevronRight
-              aria-hidden={true}
-              className={`transition-transform duration-200 ${filtersOpen ? 'rotate-90' : ''}`}
-            />
-            {t('gamesFilter.filter')}
-            {activeCount > 0 ? ` (${activeCount})` : ''}
-          </button>
-        }
-      >
+      <H1>
         {t('site.gamesListTitle')} ({titleCount})
       </H1>
 
-      {filtersOpen && (
-        <GameFiltersPanel
-          id={FILTER_PANEL_ID}
-          model={model}
-          translations={translations}
-          onChange={commitState}
-          onClear={clearAll}
-        />
-      )}
+      <GameFiltersPanel model={model} translations={translations} onChange={commitState} onClear={clearAll} />
 
       {model.filteredCount > 0 ? (
         <VirtualGameRecordGrid key={model.state.group} event={event} groups={groups} translations={translations} />
