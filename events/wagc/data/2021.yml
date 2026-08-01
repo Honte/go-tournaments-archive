@@ -38,9 +38,12 @@ stages:
       - 6-3 6:B+0.5 round:2 sgf:2021/2-NaiSanChan-DabeenKim.sgf
       - 7-4 4:W+11.5 round:2 sgf:2021/2-BenjaminDreanGuenaizia-LukasPodpera.sgf
       - 7-21 7:B+R round:3 sgf:2021/3-BenjaminDreanGuenaizia-SouzaAlexandredeAmaro.sgf
+      - 7-25 7:B+R round:6 sgf:2021/6-BenjaminDreanGuenaizia-AlessandroPace.sgf
       - 8-13 8:B+1.5 round:5 sgf:2021/5-WichrichKaruehawanit-RickyZhao.sgf
       - 9-1 1:W+R round:1 sgf:2021/1-DucAnhPham-TianfangMa.sgf
       - 9-13 9:B+R round:6 sgf:2021/6-DucAnhPham-RickyZhao.sgf
+      - 9-16 9:B+15.5 round:3 sgf:2021/3-DucAnhPham-QiyouWu.sgf
+      - 9-40 9:B+R round:2 sgf:2021/2-DucAnhPham-JonasEgeberg.sgf
       - 10-2 2:W+R round:3 sgf:2021/3-VjacheslavKajmin-YiTienChan.sgf
       - 10-14 14:W+R round:4 sgf:2021/4-VjacheslavKajmin-LukasKraemer.sgf
       - 10-15 10:B+R round:5 sgf:2021/5-VjacheslavKajmin-DenisDobranis.sgf
@@ -53,15 +56,26 @@ stages:
       - 12-15 12:B+R round:3 sgf:2021/3-CsabaMero-DenisDobranis.sgf
       - 12-22 12:B+R round:6 sgf:2021/6-CsabaMero-FernandoAguilar.sgf
       - 13-12 13:B+3.5 round:4 sgf:2021/4-RickyZhao-CsabaMero.sgf
+      - 13-23 13:B+R round:3 sgf:2021/3-RickyZhao-DmytroYatsenko.sgf
+      - 14-4 4:W+18.5 round:5 sgf:2021/5-LukasKraemer-LukasPodpera.sgf
       - 14-11 11:W+T round:6 sgf:2021/6-LukasKraemer-ShunjiMorikawa.sgf
       - 14-13 13:W+12.5 round:1 sgf:2021/1-LukasKraemer-RickyZhao.sgf
       - 16-8 8:W+R round:1 sgf:2021/1-QiyouWu-WichrichKaruehawanit.sgf
       - 16-24 16:B+R round:6 sgf:2021/6-QiyouWu-ChahineKoleejan.sgf
+      - 16-30 16:B+R round:5 sgf:2021/5-QiyouWu-JanRamon.sgf
       - 17-6 6:W+R round:1 sgf:2021/1-AmirFragman-NaiSanChan.sgf
+      - 17-8 8:W+15.5 round:3 sgf:2021/3-AmirFragman-WichrichKaruehawanit.sgf
+      - 17-26 17:B+17.5 round:2 sgf:2021/2-AmirFragman-ShouXuanLee.sgf
       - 17-30 17:B+14.5 round:4 sgf:2021/4-AmirFragman-JanRamon.sgf
+      - 18-6 6:W+R round:3 sgf:2021/3-OzgurDegirmenci-NaiSanChan.sgf
       - 18-10 10:W+R round:6 sgf:2021/6-OzgurDegirmenci-VjacheslavKajmin.sgf
       - 18-11 11:W+R round:2 sgf:2021/2-OzgurDegirmenci-ShunjiMorikawa.sgf
+      - 18-47 18:B+R round:1 sgf:2021/1-OzgurDegirmenci-ScottSamuelLee.sgf
+      - 19-9 9:W+3.5 round:5 sgf:2021/5-LucasChunTengYeo-DucAnhPham.sgf
+      - 19-14 14:W+14.5 round:3 sgf:2021/3-LucasChunTengYeo-LukasKraemer.sgf
       - 20-6 6:W+39.5 round:6 sgf:2021/6-StjepanMestrovic-NaiSanChan.sgf
+      - 20-14 14:W+R round:2 sgf:2021/2-StjepanMestrovic-LukasKraemer.sgf
+      - 20-17 20:B+32.5 round:5 sgf:2021/5-StjepanMestrovic-AmirFragman.sgf
       - 20-40 20:B+9.5 round:3 sgf:2021/3-StjepanMestrovic-JonasEgeberg.sgf
       - 22-15 15:W+T round:2 sgf:2021/2-FernandoAguilar-DenisDobranis.sgf
       - 22-25 25:W+3.5 round:1 sgf:2021/1-FernandoAguilar-AlessandroPace.sgf
@@ -69,20 +83,81 @@ stages:
       - 23-5 5:W+R round:1 sgf:2021/1-DmytroYatsenko-StanislawFrejlak.sgf
       - 24-4 4:W+21.5 round:1 sgf:2021/1-ChahineKoleejan-LukasPodpera.sgf
       - 24-11 11:W+R round:5 sgf:2021/5-ChahineKoleejan-ShunjiMorikawa.sgf
+      - 24-21 24:B+R round:4 sgf:2021/4-ChahineKoleejan-SouzaAlexandredeAmaro.sgf
       - 24-34 24:B+17.5 round:2 sgf:2021/2-ChahineKoleejan-DanielTome.sgf
       - 25-12 12:W+14.5 round:5 sgf:2021/5-AlessandroPace-CsabaMero.sgf
+      - 26-18 18:W+34.5 round:5 sgf:2021/5-ShouXuanLee-OzgurDegirmenci.sgf
+      - 26-19 19:W+66.5 round:6 sgf:2021/6-ShouXuanLee-LucasChunTengYeo.sgf
+      - 26-23 26:B+R round:4 sgf:2021/4-ShouXuanLee-DmytroYatsenko.sgf
+      - 26-29 29:W+25.5 round:1 sgf:2021/1-ShouXuanLee-MijodragStankovic.sgf
+      - 26-44 26:B+R round:3 sgf:2021/3-ShouXuanLee-AlexanderHuber.sgf
+      - 27-33 27:B+R round:1 sgf:2021/1-TimotejSuc-AlexKent.sgf
       - 28-2 2:W+R round:1 sgf:2021/1-DavidMitchell-YiTienChan.sgf
+      - 28-19 19:W+9.5 round:4 sgf:2021/4-DavidMitchell-LucasChunTengYeo.sgf
+      - 28-25 25:W+R round:3 sgf:2021/3-DavidMitchell-AlessandroPace.sgf
+      - 28-37 37:W+6.5 round:6 sgf:2021/6-DavidMitchell-DimitrisKatsouris.sgf
+      - 28-41 28:B+21.5 round:5 sgf:2021/5-DavidMitchell-PeterSmolarik.sgf
+      - 30-20 20:W+12.5 round:1 sgf:2021/1-JanRamon-StjepanMestrovic.sgf
+      - 30-35 35:W+R round:3 sgf:2021/3-JanRamon-OlliErvelae.sgf
+      - 30-46 30:B+19.5 round:2 sgf:2021/2-JanRamon-JesusRoldan.sgf
+      - 31-18 18:W+27.5 round:4 sgf:2021/4-GavinRooney-OzgurDegirmenci.sgf
+      - 31-21 21:W+6.5 round:5 sgf:2021/5-GavinRooney-SouzaAlexandredeAmaro.sgf
+      - 31-28 28:W+11.5 round:2 sgf:2021/2-GavinRooney-DavidMitchell.sgf
       - 31-35 31:B+R round:1 sgf:2021/1-GavinRooney-OlliErvelae.sgf
       - 32-22 22:W+R round:4 sgf:2021/4-RicardoQuintero-FernandoAguilar.sgf
+      - 32-33 33:W+16.5 round:5 sgf:2021/5-RicardoQuintero-AlexKent.sgf
+      - 32-45 32:B+25.5 round:6 sgf:2021/6-RicardoQuintero-MamyRakotoarisoa.sgf
       - 33-8 8:W+R round:4 sgf:2021/4-AlexKent-WichrichKaruehawanit.sgf
+      - 33-17 17:W+9.5 round:6 sgf:2021/6-AlexKent-AmirFragman.sgf
       - 33-50 33:B+21.5 round:3 sgf:2021/3-AlexKent-LorenzTrippel.sgf
+      - 34-32 34:B+R round:1 sgf:2021/1-DanielTome-RicardoQuintero.sgf
+      - 36-21 21:W+R round:6 sgf:2021/6-HallbjornGudmundsson-SouzaAlexandredeAmaro.sgf
+      - 36-40 40:W+R round:1 sgf:2021/1-HallbjornGudmundsson-JonasEgeberg.sgf
       - 36-44 44:W+R round:2 sgf:2021/2-HallbjornGudmundsson-AlexanderHuber.sgf
+      - 36-46 36:B+R round:4 sgf:2021/4-HallbjornGudmundsson-JesusRoldan.sgf
+      - 36-49 36:B+28.5 round:3 sgf:2021/3-HallbjornGudmundsson-RamosJoseAntonioFelix.sgf
+      - 37-16 16:W+32.5 round:4 sgf:2021/4-DimitrisKatsouris-QiyouWu.sgf
       - 37-29 29:W+R round:2 sgf:2021/2-DimitrisKatsouris-MijodragStankovic.sgf
+      - 37-43 43:W+R round:1 sgf:2021/1-DimitrisKatsouris-AlbujaEdissonVasquez.sgf
+      - 38-32 32:W+12.5 round:2 sgf:2021/2-DolgorsurenBatmunkh-RicardoQuintero.sgf
+      - 38-36 36:W+R round:5 sgf:2021/5-DolgorsurenBatmunkh-HallbjornGudmundsson.sgf
+      - 38-43 38:B+63.5 round:4 sgf:2021/4-DolgorsurenBatmunkh-AlbujaEdissonVasquez.sgf
+      - 38-49 38:B+12.5 round:1 sgf:2021/1-DolgorsurenBatmunkh-RamosJoseAntonioFelix.sgf
       - 38-55 38:B+69.5 round:3 sgf:2021/3-DolgorsurenBatmunkh-ZhenYangLim.sgf
       - 39-47 39:B+R round:5 sgf:2021/5-IljaBusko-ScottSamuelLee.sgf
+      - 41-21 21:W+81.5 round:2 sgf:2021/2-PeterSmolarik-SouzaAlexandredeAmaro.sgf
+      - 41-32 32:W+8.5 round:3 sgf:2021/3-PeterSmolarik-RicardoQuintero.sgf
+      - 41-38 38:W+7.5 round:6 sgf:2021/6-PeterSmolarik-DolgorsurenBatmunkh.sgf
       - 42-15 15:W+39.5 round:4 sgf:2021/4-ErnestasRomeika-DenisDobranis.sgf
       - 43-19 19:W+R round:2 sgf:2021/2-AlbujaEdissonVasquez-LucasChunTengYeo.sgf
+      - 43-30 30:W+11.5 round:6 sgf:2021/6-AlbujaEdissonVasquez-JanRamon.sgf
       - 45-22 22:W+R round:5 sgf:2021/5-MamyRakotoarisoa-FernandoAguilar.sgf
+      - 45-31 31:W+R round:3 sgf:2021/3-MamyRakotoarisoa-GavinRooney.sgf
+      - 46-37 37:W+R round:5 sgf:2021/5-JesusRoldan-DimitrisKatsouris.sgf
+      - 46-53 46:B+R round:1 sgf:2021/1-JesusRoldan-RamonNunez.sgf
+      - 47-41 41:W+3.5 round:4 sgf:2021/4-ScottSamuelLee-PeterSmolarik.sgf
+      - 48-54 48:B+53.5 round:6 sgf:2021/6-DamirGaneyev-RodrigoCaceresPerez.sgf
+      - 48-55 48:B+38.5 round:4 sgf:2021/4-DamirGaneyev-ZhenYangLim.sgf
+      - 48-56 48:B+127.5 round:2 sgf:2021/2-DamirGaneyev-EdgarIvanEscobar.sgf
+      - 49-51 51:W+6.5 round:4 sgf:2021/4-RamosJoseAntonioFelix-MatiasNavia.sgf
+      - 49-54 49:B+44.5 round:2 sgf:2021/2-RamosJoseAntonioFelix-RodrigoCaceresPerez.sgf
+      - 49-55 49:B+55.5 round:5 sgf:2021/5-RamosJoseAntonioFelix-ZhenYangLim.sgf
+      - 50-53 50:B+T round:4 sgf:2021/4-LorenzTrippel-RamonNunez.sgf
+      - 51-33 33:W+R round:2 sgf:2021/2-MatiasNavia-AlexKent.sgf
       - 51-43 43:W+R round:5 sgf:2021/5-MatiasNavia-AlbujaEdissonVasquez.sgf
+      - 51-46 46:W+47.5 round:6 sgf:2021/6-MatiasNavia-JesusRoldan.sgf
+      - 51-47 47:W+R round:3 sgf:2021/3-MatiasNavia-ScottSamuelLee.sgf
+      - 51-56 51:B+49.5 round:1 sgf:2021/1-MatiasNavia-EdgarIvanEscobar.sgf
+      - 53-39 39:W+8.5 round:2 sgf:2021/2-RamonNunez-IljaBusko.sgf
+      - 53-47 47:W+R round:6 sgf:2021/6-RamonNunez-ScottSamuelLee.sgf
+      - 54-45 45:W+26.5 round:4 sgf:2021/4-RodrigoCaceresPerez-MamyRakotoarisoa.sgf
+      - 54-46 46:W+57.5 round:3 sgf:2021/3-RodrigoCaceresPerez-JesusRoldan.sgf
+      - 54-57 54:B+R round:1 sgf:2021/1-RodrigoCaceresPerez-CelesteAbat.sgf
+      - 55-45 45:W+54.5 round:2 sgf:2021/2-ZhenYangLim-MamyRakotoarisoa.sgf
+      - 55-57 57:W+17.5 round:6 sgf:2021/6-ZhenYangLim-CelesteAbat.sgf
+      - 56-49 49:W+42.5 round:6 sgf:2021/6-EdgarIvanEscobar-RamosJoseAntonioFelix.sgf
       - 56-53 53:W+51.5 round:3 sgf:2021/3-EdgarIvanEscobar-RamonNunez.sgf
+      - 56-54 54:W+60.5 round:5 sgf:2021/5-EdgarIvanEscobar-RodrigoCaceresPerez.sgf
+      - 56-57 56:B+R round:4 sgf:2021/4-EdgarIvanEscobar-CelesteAbat.sgf
+      - 57-37 37:W+R round:3 sgf:2021/3-CelesteAbat-DimitrisKatsouris.sgf
       - 57-53 53:W+R round:5 sgf:2021/5-CelesteAbat-RamonNunez.sgf

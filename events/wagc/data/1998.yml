@@ -68,6 +68,8 @@ stages:
       - 22-8 8:W+R round:2 sgf:1998/2-MagnusKylemark-ThomasHsiang.sgf
       - 23-11 11:W+12.5 round:6 sgf:1998/6-FranzHuettler-ZhiqiYu.sgf
       - 23-39 23:B+R round:2 sgf:1998/2-FranzHuettler-JuanCarlosCarrillo.sgf
+      - 24-31 24:B+R round:6 sgf:1998/6-TMarkHall-KazuoWatanabe.sgf
+      - 24-36 24:B+R round:4 sgf:1998/4-TMarkHall-JosteinFlood.sgf
       - 25-12 12:W+11.5 round:5 sgf:1998/5-InjuneKang-AlexejLazarev.sgf
       - 27-5 5:W+38.5 round:1 sgf:1998/1-LeonidEntin-YeongsamMun.sgf
       - 27-25 27:B+R round:7 sgf:1998/7-LeonidEntin-InjuneKang.sgf
