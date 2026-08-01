@@ -27,6 +27,7 @@ stages:
       - 11-6 6:W+6.5 round:7 sgf:1985/7-MyungChulShin-AndreMoussa.sgf
       - 11-13 11:B+3.5 round:3 sgf:1985/3-MyungChulShin-HelmutHasibeder.sgf
       - 12-17 12:B+R round:5 sgf:1985/5-JamesBates-GunnarvonArnold.sgf
+      - 12-25 12:B+8.5 round:2 sgf:1985/2-JamesBates-ChuiOnnCheong.sgf
       - 13-4 4:W+14.5 round:5 sgf:1985/5-HelmutHasibeder-KingHwaPerng.sgf
       - 13-12 13:B+R round:1 sgf:1985/1-HelmutHasibeder-JamesBater.sgf
       - 14-21 14:B+R round:4 sgf:1985/4-ErikPuyt-PetrWinkelhofer.sgf

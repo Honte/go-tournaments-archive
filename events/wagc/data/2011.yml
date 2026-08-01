@@ -73,6 +73,7 @@ stages:
       - 33-43 33:B+19.5 round:5 sgf:2011/5-DavideMinieri-AlexSelby.sgf
       - 33-47 33:B+34.5 round:2 sgf:2011/2-DavideMinieri-KhadbaatarDeleg.sgf
       - 34-27 27:W+R round:2 sgf:2011/2-LorenzTrippel-JohnKarlsson.sgf
+      - 34-43 34:B+9.5 round:3 sgf:2011/3-LorenzTrippel-AlexSelby.sgf
       - 35-29 29:W+33.5 round:6 sgf:2011/6-MiroslavSmid-ZoranMutabzija.sgf
       - 35-38 38:W+R round:1 sgf:2011/1-MiroslavSmid-JanRamon.sgf
       - 35-45 35:B+R round:7 sgf:2011/7-MiroslavSmid-NevilleSmythe.sgf
