@@ -1,0 +1,78 @@
+(;CA[windows-1250]NW[27]NB[34]LT[]RR[Normal]C[
+ Fargo 2k+\: 95 Enjoy
+]AP[MultiGo:4.4.4]
+SZ[19]GM[1]GN[Fargo-CLNavia(B) IGS]EV[WAGC 2021]RO[3]DT[2021-06-06]PC[IGS\:  igs.joyjoy.net 6969]
+PB[Matias Navia]BR[6d?]PW[Scott Samuel Lee]WR[2k+]KM[6.5]TM[3600]RE[W+Resign]US[Brought to you by IGS PANDANET]
+CP[
+  Copyright (c) PANDANET Inc. 2021
+  Permission to reproduce this game is given, provided proper credit is given.
+  No warrantee, implied or explicit, is understood.
+  Use of this game is an understanding and agreement of this notice.
+]
+MULTIGOGM[1]
+;B[pd]BL[3594];W[dq]WL[3598]C[
+ CLNavia 6d?\: 95 you too
+];B[pq]BL[3590];W[dc]
+WL[3594];B[de]BL[3582];W[cg]WL[3592];B[cc]BL[3578];W[cb]WL[3590];B[cd]BL[3576];W[gc]
+WL[3590];B[dg]BL[3563]C[
+ Mai4ke1 7k \: This seems to be the WAGC match
+];W[ch]
+WL[3583];B[cf]BL[3543];W[cl]WL[3576];B[qk]BL[3534];W[nc]WL[3574];B[lc]BL[3518];W[qf]
+WL[3567];B[nd]BL[3507];W[od]WL[3546];B[oc]BL[3490];W[oe]WL[3544];B[pc]BL[3438];W[md]
+WL[3540];B[nb]BL[3433];W[ne]WL[3538];B[jq]BL[3384];W[pp]WL[3534];B[op]BL[3365];W[qq]
+WL[3532];B[po]BL[3359];W[qp]WL[3531];B[oq]BL[3355];W[qo]WL[3530];B[pn]BL[3352];W[rm]
+WL[3524];B[do]BL[3323];W[gq]WL[3521];B[cq]BL[3319];W[cr]WL[3518];B[eq]BL[3292];W[er]
+WL[3514];B[ep]BL[3255];W[pl]WL[3481];B[ol]BL[3107];W[pk]WL[3473];B[ok]BL[3092];W[pj]
+WL[3461];B[pm]BL[3043];W[ql]WL[3278];B[gp]BL[2994];W[hp]WL[3269];B[hq]BL[2992];W[go]
+WL[3265];B[gr]BL[2976];W[fp]WL[3259];B[fq]BL[2973];W[iq]WL[3258];B[gp]BL[2969];W[jp]
+WL[3252];B[fo]BL[2957];W[kq]WL[3247];B[bq]BL[2939];W[cp]WL[3202];B[dp]BL[2931];W[bo]
+WL[3196];B[bn]BL[2918];W[cn]WL[3168];B[jr]BL[2896];W[bp]WL[3130];B[dr]BL[2880]C[
+ iaznab 1k+\: c5 rather than b4?
+]
+;W[ir]WL[3113];B[kr]BL[2877];W[lq]WL[3103];B[lr]BL[2875]C[
+ kango 3d \: definitely - leaving b b7 and c10 is inviting trouble
+]
+;W[ko]WL[3027];B[bm]BL[2868];W[co]WL[3023]C[
+ iaznab 1k+\: b7 has no good answer
+]
+;B[cm]BL[2866];W[dn]WL[3020];B[dm]BL[2864];W[en]WL[3016];B[fm]BL[2849];W[em]WL[3013]
+;B[el]BL[2841];W[dl]WL[3008];B[bl]BL[2834];W[ek]WL[2924];B[ck]BL[2812];W[fl]WL[2922]
+;B[dh]BL[2782];W[cj]WL[2868]C[
+ iaznab 1k+\: c10?
+];B[bj]BL[2757];W[dk]WL[2860]
+;B[bk]BL[2713]C[
+ iaznab 1k+\: c11 seems best
+ kango 3d \: yes - b could then try d10, but seems w can handle it
+ iaznab 1k+\: d12 I think was a mistake
+]
+;W[di]WL[2516];B[bi]BL[2701]C[
+ kango 3d \: something like d10 could have been interesting instead of d12
+]
+;W[ci]WL[2508];B[bg]BL[2685]C[
+ kango 3d \: running katago - says d12 was best at the time
+]
+;W[mr]WL[2482];B[nr]BL[2678];W[mq]WL[2466];B[ms]BL[2675]C[
+ kango 3d \: katago indicates w+24 now
+]
+;W[no]WL[2421];B[oo]BL[2650];W[nm]WL[2402];B[om]BL[2647];W[mk]WL[2285];B[nj]BL[2575]
+;W[li]WL[2254];B[qr]BL[2573];W[rr]WL[2252];B[ps]BL[2571];W[mb]WL[2241];B[mc]BL[2562]
+;W[ob]WL[2241];B[nd]BL[2560];W[ef]WL[2236];B[ee]BL[2528];W[nc]WL[2217];B[na]BL[2506]
+;W[ma]WL[2211];B[nd]BL[2502];W[df]WL[2160];B[bh]BL[2469];W[nc]WL[2157];B[qn]BL[2405]
+;W[oa]WL[2139];B[ro]BL[2389];W[gn]WL[2081];B[ic]BL[2382];W[he]WL[2069];B[je]BL[2377]
+;W[kd]WL[2006];B[kc]BL[2290];W[jd]WL[1999];B[hb]BL[2255];W[gb]WL[1914];B[id]BL[2247]
+;W[ie]WL[1912];B[ld]BL[2245];W[ke]WL[1912];B[le]BL[2239];W[lf]WL[1911];B[jf]BL[2228]
+;W[kf]WL[1909];B[gf]BL[2217];W[jg]WL[1609];B[if]BL[2207];W[hf]WL[1605];B[ig]BL[2205]
+;W[hg]WL[1596];B[ih]BL[2203];W[hh]WL[1576];B[me]BL[2195];W[mf]WL[876];B[nd]BL[2193]
+;W[bf]WL[776];B[ce]BL[2180];W[md]WL[770];B[eb]BL[2128];W[nd]WL[703];B[gd]BL[2119]
+;W[hd]WL[604];B[hc]BL[2107];W[jc]WL[597];B[fc]BL[2096];W[ha]WL[596];B[fg]BL[2077]
+;W[ei]WL[589];B[fh]BL[2073];W[gi]WL[570];B[fi]BL[2063];W[fj]WL[568];B[ii]BL[2034]
+;W[kk]WL[543];B[fn]BL[2011];W[gm]WL[537];B[gl]BL[2005];W[gk]WL[521];B[hl]BL[1999]
+;W[io]WL[395];B[hj]BL[1955];W[gj]WL[362];B[jj]BL[1951];W[jk]WL[320];B[hi]BL[1927]
+;W[hk]WL[266];B[gh]BL[1896];W[rn]WL[242];B[rq]BL[1892];W[rd]WL[234];B[ik]BL[1863]
+;W[il]WL[231];B[kh]BL[1823];W[lh]WL[213];B[nn]BL[1780];W[mn]WL[209];B[mm]BL[1774]
+;W[lm]WL[198];B[ml]BL[1767];W[ll]WL[197];B[nl]BL[1763];W[ni]WL[187];B[mj]BL[1714]
+;W[mi]WL[174];B[jl]BL[1684];W[im]WL[163];B[lj]BL[1676];W[kj]WL[159];B[kg]BL[1671]
+;W[ki]WL[149];B[re]BL[1660];W[qe]WL[147];B[rc]BL[1658];W[qd]WL[146];B[qb]BL[1651]
+;W[ra]WL[139];B[nf]BL[1616];W[pe]WL[106];B[oi]BL[1597];W[oj]WL[101];B[pi]BL[1594]
+;W[qi]WL[100];B[qh]BL[1585];W[ri]WL[91];B[rk]BL[1563];W[qj]WL[77];B[rh]BL[1560]
+;W[ph]WL[46];OS[AUMitchell][kango][Mai4ke1][MARUIKA15][Ozeki][PGOH20103][RoseDuke][sighar][WAGCST05][ysayuri])

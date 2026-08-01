@@ -1,0 +1,74 @@
+(;CA[windows-1250]NW[34]NB[34]LT[]RR[Normal]C[
+ KZGaneyev 6d?\: 390 Hi!
+ GTPerez 6d?\: 390 Hi
+ GTPerez 6d?\: 390 Good Game
+ KZGaneyev 6d?\: 390 Good game and good luck!
+]
+AP[MultiGo:4.4.4]SZ[19]GM[1]GN[GTPerez-KZGaneyev(B) IGS]EV[WAGC 2021]RO[6]DT[2021-06-09]
+PC[IGS\:  igs.joyjoy.net 6969]PB[Damir Ganeyev]BR[6d?]PW[Rodrigo Caceres Perez]
+WR[6d?]KM[6.5]TM[3600]RE[B+53.5]US[Brought to you by IGS PANDANET]CP[
+  Copyright (c) PANDANET Inc. 2021
+  Permission to reproduce this game is given, provided proper credit is given.
+  No warrantee, implied or explicit, is understood.
+  Use of this game is an understanding and agreement of this notice.
+]
+MULTIGOGM[1]
+;B[qd]BL[3580];W[dd]WL[3593];B[pq]BL[3572];W[dq]WL[3578];B[oc]BL[3569];W[ck]WL[3570]
+;B[do]BL[3516];W[co]WL[3559];B[dp]BL[3508];W[cp]WL[3557];B[eq]BL[3502];W[dn]WL[3526]
+;B[cq]BL[3464];W[dr]WL[3520];B[er]BL[3463];W[en]WL[3489];B[cr]BL[3457];W[po]WL[3408]
+;B[qo]BL[3438];W[qn]WL[3385];B[qp]BL[3436];W[pn]WL[3376];B[nq]BL[3435];W[qj]WL[3369]
+;B[qh]BL[3434];W[qf]WL[3361];B[oh]BL[3425];W[of]WL[3354];B[mh]BL[3421];W[mf]WL[3336]
+;B[pe]BL[3381];W[pf]WL[3334];B[kh]BL[3253];W[oj]WL[3312];B[oi]BL[3223];W[nj]WL[3274]
+;B[kf]BL[3213];W[ke]WL[3235];B[lf]BL[3210];W[me]WL[3069];B[le]BL[3198];W[md]WL[3018]
+;B[ld]BL[3162];W[lc]WL[2996];B[kc]BL[3064];W[lb]WL[2956];B[kb]BL[3041];W[nc]WL[2940]
+;B[od]BL[3014];W[ob]WL[2896];B[pb]BL[3002];W[nb]WL[2859];B[ng]BL[2955];W[oe]WL[2800]
+;B[qc]BL[2793];W[qe]WL[2692];B[rg]BL[2665];W[pd]WL[2645];B[re]BL[2593];W[rf]WL[2639]
+;B[sf]BL[2582];W[rb]WL[2487];B[rc]BL[2536];W[nd]WL[2442];B[pc]BL[2516];W[nf]WL[2439]
+;B[cc]BL[2436];W[dc]WL[2406];B[cd]BL[2434];W[ce]WL[2405];B[be]BL[2433];W[cf]WL[2389]
+;B[bf]BL[2432];W[cg]WL[2370];B[bg]BL[2418];W[bh]WL[2352];B[db]BL[2398];W[eb]WL[2351]
+;B[cb]BL[2397];W[fc]WL[2343];B[ch]BL[2311];W[bi]WL[2338];B[de]BL[2250];W[dg]WL[2302]
+;B[ee]BL[2242];W[gd]WL[2268];B[fd]BL[2157];W[ec]WL[2252];B[ge]BL[2155];W[hd]WL[2152]
+;B[he]BL[2149];W[id]WL[2102];B[gb]BL[2031];W[gc]WL[2025];B[je]BL[2017];W[ie]WL[1999]
+;B[if]BL[2015];W[hf]WL[1993];B[gf]BL[2012];W[hg]WL[1992];B[gg]BL[2011];W[hh]WL[1969]
+;B[dh]BL[1975];W[eg]WL[1948];B[eh]BL[1972];W[ed]WL[1693];B[fg]BL[1942];W[fe]WL[1625]
+;B[ef]BL[1939];W[ib]WL[1588];B[jc]BL[1872];W[hb]WL[1511];B[ic]BL[1868];W[jb]WL[1373]
+;B[la]BL[1756];W[ma]WL[1336];B[ja]BL[1548];W[ka]WL[1186];B[jp]BL[1528];W[gp]WL[1121]
+;B[hc]BL[1481];W[ga]WL[1089];B[la]BL[1477];W[ff]WL[1041];B[df]BL[1464];W[ka]WL[1040]
+;B[hq]BL[1457];W[la]WL[1033];B[gq]BL[1444];W[fp]WL[990];B[ri]BL[1417];W[mp]WL[980]
+;B[mq]BL[1415];W[lo]WL[975];B[kp]BL[1410];W[lp]WL[956];B[lq]BL[1408];W[lj]WL[926]
+;B[ji]BL[1393];W[hj]WL[917];B[jk]BL[1387];W[gl]WL[863];B[ek]BL[1358];W[ej]WL[857]
+;B[dj]BL[1345];W[fj]WL[842];B[dk]BL[1335];W[il]WL[729];B[cl]BL[1308];W[bl]WL[717]
+;B[bk]BL[1280];W[bm]WL[570];B[cj]BL[1228];W[cm]WL[556];B[rj]BL[1222];W[rk]WL[554]
+;B[kj]BL[1173];W[li]WL[532];B[lh]BL[1164];W[qk]WL[522];B[lk]BL[1159];W[mk]WL[521]
+;B[ll]BL[1159];W[ml]WL[520];B[lm]BL[1150];W[mm]WL[494];B[mn]BL[1148];W[no]WL[467]
+;B[ln]BL[1127];W[nn]WL[454];B[gi]BL[1094];W[hi]WL[341];B[gj]BL[1092];W[gk]WL[239]
+;B[fm]BL[1070];W[fl]WL[207];B[gn]BL[975];W[hn]WL[140];B[ho]BL[965];W[go]WL[51];B[gh]
+BL[879];W[in]WL[29];B[np]BL[847];W[mo]WL[22];B[fk]BL[841];W[bq]WL[18];B[br]BL[839]
+;W[bp]WL[22];B[el]BL[830];W[em]WL[25];B[ik]BL[825];W[hk]WL[28];B[mi]BL[824];W[mj]
+WL[28];B[rn]BL[823];W[rm]WL[28];B[ro]BL[822];W[pa]WL[20];B[qa]BL[817];W[oa]WL[22]
+;B[qb]BL[816];W[ko]WL[20];B[hp]BL[810];W[ep]WL[16];B[ds]BL[809];W[eo]WL[28];B[al]
+BL[794];W[dq]WL[24];B[sl]BL[785];W[rl]WL[19];B[sk]BL[777];W[sm]WL[29];B[sj]BL[776]
+;W[am]WL[25];B[ak]BL[775];W[fd]WL[20];B[ea]BL[757];W[fa]WL[5];B[da]BL[751];W[ar]
+WL[22];B[fq]BL[735];W[ig]WL[26];B[jf]BL[732];W[fb]WL[20];B[jl]BL[712];W[im]WL[29]
+;B[pp]BL[689];W[op]WL[20];B[oq]BL[688];W[oo]WL[28];B[jm]BL[684];W[jn]WL[29];B[kn]
+BL[678];W[jo]WL[23];B[ij]BL[674];W[jh]WL[19];B[ki]BL[672];W[pi]WL[26];B[ph]BL[671]
+;W[qi]WL[30];B[bs]BL[661];W[jd]WL[20];B[kd]BL[660];W[aq]WL[25];B[dr]BL[660];W[dp]
+WL[30];B[jg]BL[657];W[ih]WL[25];B[mg]BL[656];W[ni]WL[26];B[io]BL[650];W[dm]WL[19]
+;B[dl]BL[648];W[sn]WL[29];B[so]BL[645];W[pe]WL[26];B[qg]BL[642];W[tt]WL[19];B[ii]
+BL[640];W[gm]WL[10];B[tt]BL[631];W[tt]WL[29];B[tt]BL[631]C[
+ KZGaneyev 6d?\: KZGaneyev dead @ G6
+ KZGaneyev 6d?\: KZGaneyev dead @ F7
+ KZGaneyev 6d?\: KZGaneyev dead @ F10
+ KZGaneyev 6d?\: KZGaneyev dead @ B11
+ KZGaneyev 6d?\: KZGaneyev dead @ K19
+ KZGaneyev 6d?\: KZGaneyev dead @ S18
+ KZGaneyev done
+]
+;OS[ATSUO][Chucks][CRdlWfiL][CRFGGQGE][Daisuke24][den802][frank1115][futomi][hatuko][hirokawa55][Jimmychiou][kiya55][LeonKim][narusyu][nonimporta][pa1635][rytyakita][s554989][Starykh][ULTRAMAN55][xinwen][ZALeeScott]
+TB[lr][lg][ms][ns][nr][os][or][ps][pr][qs][qr][qq][rs][rr][rq][ei][rp][rh][rb][ra]
+[ss][sr][sq][sp][si][sh][sg][se][sd][sc][sb][sa][rd][aj][ai][ah][ag][af][ae][ad]
+[ac][ab][aa][bj][bi][bh][bd][bc][bb][ba][cs][ck][ci][cg][cf][ce][ca][di][dg][es]
+[ej][mr][eg][fs][fr][fj][fi][fh][gs][gr][hs][hr][is][ir][iq][ip][js][jr][jq][jj]
+[ks][kr][kq][km][kl][kk][kg][ke][ls]TW[ap][ao][an][bo][bn][cn][do][fo][fn][fm][gn]
+[gb][hm][hl][ha][ja][mc][mb][nm][nl][nk][ne][na][on][om][ol][ok][pm][pl][pk][pj]
+[qm][ia][ql])

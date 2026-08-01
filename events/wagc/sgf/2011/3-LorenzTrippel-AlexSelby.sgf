@@ -1,0 +1,36 @@
+(;CA[utf-8]ST[2]RU[Japanese]GM[1]AP[CGoban:3]SZ[19]FF[4]EV[WAGC 2011]RO[3]PB[Lorenz Trippel]
+PW[Alex Selby]KM[6.5]RE[B+9.50]SO[BGJ 157]MULTIGOGM[1]
+;B[dp];W[pq];B[cd];W[pd];B[ed];W[cj];B[cl];W[cg];B[dh];W[ch];B[dj];W[di];B[ei];W[ci]
+;B[dk]
+(;W[ef];B[jq]
+(;W[ip]C[Bad
+];B[jp];W[in];B[jm]C[Good, though K5 normal
+];W[ko]LB[eh:A][fi:B]
+[jo:C]C[Overplay
+];B[jo];W[jn];B[kn];W[lo]
+(;B[kl]C[Should be L7
+];W[hm];B[hq];W[ln];B[km];W[hk];B[ij];W[hj];B[hi];W[ik];B[ii]
+;W[jk];B[ml];W[kj];B[po]
+(;W[np];B[ol];W[mj];B[qq];W[qr];B[qp];W[lq];B[pi];W[cq];B[dq];W[cp]
+(;B[cn]C[Dangerous. W may play F3.
+]
+(;W[bn];B[co];W[bo];B[cr];W[br]
+(;B[eh]C[Should play M2
+];W[dr];B[er];W[cs];B[be];W[dg];B[gn];W[io];B[kr];W[or]
+;B[bk];W[gi]C[Should be F10 (E10?)
+
+];B[gh];W[gf];B[gd];W[ck];B[gl];W[gm];B[bl]
+;W[ej];B[fl];W[fj]C[Should play D8 first
+Game notation ends here
+])
+(;B[lr]))
+(;W[fq]))
+(;B[do]C[Safer
+]))
+(;W[om]C[This would be a good idea
+]))
+(;B[km]))
+(;W[nc]C[Better
+]))
+(;W[eh]C[Normal technique
+];B[fi];W[eg]))

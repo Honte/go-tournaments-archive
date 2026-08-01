@@ -1,0 +1,72 @@
+(;CA[windows-1250]NW[34]NB[34]LT[]RR[Normal]C[
+ SGChun 6d?\: 361 hello, have a nice game
+ DEKramer 6d?\: 361 Good game \:)
+]
+AP[MultiGo:4.4.4]SZ[19]GM[1]GN[DEKramer-SGChun(B) IGS]EV[WAGC 2021]RO[3]DT[2021-06-06]
+PC[IGS\:  igs.joyjoy.net 6969]PB[Lucas Chun Teng Yeo]BR[6d?]PW[Lukas Kraemer]WR[6d?]
+KM[6.5]TM[3600]RE[W+14.5]US[Brought to you by IGS PANDANET]CP[
+  Copyright (c) PANDANET Inc. 2021
+  Permission to reproduce this game is given, provided proper credit is given.
+  No warrantee, implied or explicit, is understood.
+  Use of this game is an understanding and agreement of this notice.
+]
+MULTIGOGM[1]
+;B[qd]BL[3589];W[dp]WL[3597];B[dc]BL[3586];W[pp]WL[3593];B[qq]BL[3579];W[qp]WL[3577]
+;B[pq]BL[3576];W[op]WL[3575];B[nr]BL[3575];W[oc]WL[3567];B[pe]BL[3561];W[ce]WL[3565]
+;B[fd]BL[3528];W[kd]WL[3558];B[ql]BL[3476];W[hc]WL[3516];B[cd]BL[3206];W[de]WL[3514]
+;B[gb]BL[3168];W[fq]WL[3487];B[dh]BL[3133];W[fe]WL[3474];B[gd]BL[3033];W[cj]WL[3471]
+;B[cg]BL[2878];W[fh]WL[3395];B[dj]BL[2856];W[dk]WL[3393];B[ej]BL[2851];W[ci]WL[3392]
+;B[eh]BL[2809];W[fg]WL[3255];B[gj]BL[2563];W[ie]WL[3047];B[ge]BL[2332];W[ed]WL[2977]
+;B[ec]BL[2319];W[be]WL[2810];B[bg]BL[2118];W[ff]WL[2790];B[id]BL[1973];W[je]WL[2458]
+;B[bd]BL[1962];W[dl]WL[2444];B[hf]BL[1872];W[hh]WL[2432];B[ij]BL[1864];W[jh]WL[2405]
+;B[ig]BL[1755];W[ih]WL[2400];B[kf]BL[1737];W[hk]WL[2186];B[hj]BL[1723];W[fk]WL[2171]
+;B[gi]BL[1591];W[hg]WL[2163];B[gh]BL[1585];W[gg]WL[2157];B[if]BL[1549];W[ki]WL[2030]
+;B[kj]BL[1496];W[lj]WL[2022];B[kk]BL[1494];W[jf]WL[2011];B[jg]BL[1487];W[kg]WL[2010]
+;B[lg]BL[1478];W[kh]WL[2009];B[lf]BL[1375];W[md]WL[1974];B[me]BL[1115];W[nd]WL[1946]
+;B[lk]BL[1089];W[mj]WL[1897];B[mh]BL[1081];W[mi]WL[1873];B[oj]BL[783];W[nh]WL[1822]
+;B[ni]BL[713];W[ok]WL[1797];B[pk]BL[543];W[ol]WL[1735];B[oi]BL[462];W[mk]WL[1708]
+;B[ml]BL[459];W[nl]WL[1683];B[mm]BL[456];W[qm]WL[1612];B[rm]BL[405];W[pm]WL[1572]
+;B[gk]BL[314];W[gl]WL[1563];B[im]BL[247];W[rq]WL[1424];B[rr]BL[245];W[or]WL[1412]
+;B[oq]BL[236];W[nq]WL[1408];B[pr]BL[213];W[mr]WL[1407];B[np]BL[191];W[ns]WL[1057]
+;B[rp]BL[168];W[ro]WL[1009];B[sq]BL[163];W[mp]WL[1006];B[hl]BL[11];W[no]WL[959]
+;B[cq]BL[24];W[cp]WL[913];B[dq]BL[9];W[eq]WL[815];B[bp]BL[28];W[bo]WL[814];B[br]
+BL[30];W[ap]WL[805];B[aq]BL[28];W[bq]WL[802];B[lh]BL[5];W[li]WL[793];B[bp]BL[28]
+;W[qj]WL[759];B[pj]BL[11];W[bq]WL[757];B[pc]BL[11];W[ar]WL[752];B[ic]BL[6];W[pb]
+WL[652];B[qb]BL[28];W[of]WL[573];B[ng]BL[1];W[oe]WL[558];B[qg]BL[15];W[pd]WL[544]
+;B[od]BL[27];W[he]WL[495];B[pd]BL[2];W[hd]WL[490];B[hb]BL[5];W[gf]WL[487];B[ne]
+BL[2];W[io]WL[444];B[gm]BL[10];W[nb]WL[419];B[go]BL[1];W[hp]WL[394];B[jn]BL[2];W[rn]
+WL[368];B[rl]BL[22];W[qa]WL[365];B[ra]BL[28];W[pa]WL[364];B[rb]BL[2];W[jb]WL[357]
+;B[ib]BL[17];W[gc]WL[307];B[lc]BL[3];W[ld]WL[290];B[kc]BL[2];W[fc]WL[288];B[fb]
+BL[28];W[lb]WL[101];B[mc]BL[0];W[mb]WL[95];B[jc]BL[0];W[nc]WL[78];B[jo]BL[7];W[jp]
+WL[75];B[kp]BL[29];W[kq]WL[74];B[jq]BL[28];W[ip]WL[73];B[lo]BL[8];W[lp]WL[71];B[ko]
+BL[29];W[fl]WL[48];B[fm]BL[12];W[ad]WL[8];B[ac]BL[28];W[ae]WL[4];B[bc]BL[24];W[kb]
+WL[28];B[dm]BL[20];W[cm]WL[22];B[dn]BL[28];W[cn]WL[14];B[gp]BL[3];W[gq]WL[28];B[eo]
+BL[20];W[ch]WL[14];B[df]BL[10];W[bh]WL[27];B[ah]BL[23];W[ai]WL[28];B[ag]BL[29];W[hn]
+WL[23];B[hm]BL[27];W[sm]WL[3];B[sl]BL[22];W[pl]WL[22];B[qk]BL[23];W[mn]WL[8];B[ln]
+BL[16];W[nm]WL[29];B[ep]BL[3];W[do]WL[3];B[fp]BL[15];W[hq]WL[10];B[em]BL[6];W[gn]
+WL[9];B[fn]BL[28];W[ia]WL[22];B[ha]BL[28];W[ja]WL[29];B[jj]BL[8];W[mo]WL[8];B[ps]
+BL[18];W[os]WL[21];B[in]BL[20];W[ho]WL[27];B[nj]BL[6];W[sn]WL[28];B[sp]BL[21];W[le]
+WL[17];B[oh]BL[17];W[eg]WL[21];B[dg]BL[27];W[ck]WL[8];B[ef]BL[27];W[ee]WL[22];B[fj]
+BL[20];W[di]WL[8];B[ei]BL[29];W[el]WL[29];B[hi]BL[27];W[nk]WL[29];B[ii]BL[28];W[ek]
+WL[30];B[ji]BL[30];W[ke]WL[28];B[dd]BL[27];W[jd]WL[28];B[fi]BL[29];W[so]WL[27];B[cf]
+BL[28];W[af]WL[29];B[bf]BL[28];W[tt]WL[25];B[tt]BL[29]C[
+ DEKramer 6d?\: 55 Thank you
+]
+;W[tt]WL[30]C[
+ SGChun 6d?\: 55 thanks
+ SGChun 6d?\: SGChun dead @ P14
+ DEKramer 6d?\: DEKramer dead @ H9
+ SGChun 6d?\: SGChun dead @ R10
+ DEKramer 6d?\: DEKramer dead @ K3
+ SGChun 6d?\: SGChun dead @ D3
+ SGChun 6d?\: SGChun dead @ B2
+ SGChun done
+]
+;OS[Ambition][ATSUO][AUMitchell][CAWu][Dika][esmeralda][Fargo][HAMUNI][Hayaigo][HERAKLES][Highland][HiplayGO][ilvi][Invoker][JeffChang][JollyRiver][JPKiin02][kango][kidu24][kjh97][leubao][Lomis][Martin][Matrixofgo][Meruem92][mihajlo][Mito][NZKoleejan][PGOH20103][phuocdinh][piiko][raz][RoseDuke][RUS37][Starykh][USZhao][WAGCST08][Zaphodius]
+TB[aa][bb][ba][cc][cb][ca][db][da][en][eb][ea][fo][fa][ga][hk][il][jm][ik][jl][jk]
+[kn][km][kl][lm][ll][mg][mf][nh][nf][og][of][oe][pi][ph][pf][qs][qr][qj][qi][qh]
+[qf][qe][qc][rs][rq][rk][rj][ri][rh][rg][re][rd][ab][rc][ss][sr][sk][sj][si][sh]
+[sg][sf][se][sd][sc][sb][sa][rf][pg]TW[as][aq][ao][an][am][al][ak][aj][bs][br][bp]
+[bn][bm][bl][bk][bj][bi][cr][cq][co][cl][ds][dr][dq][es][er][fs][fr][fd][gs][gr]
+[ge][gd][hs][hr][hf][is][ir][iq][ig][if][js][jr][jq][jg][ks][kr][ka][ls][lr][lq]
+[ms][mq][ma][nr][np][nn][na][oo][on][om][ob][oa][po][pn][qo][cs][la][qn])
