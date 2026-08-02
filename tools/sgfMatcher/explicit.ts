@@ -328,8 +328,9 @@ function buildMatchedExplicitEntry(entry: ExplicitGameEntry, sgf: SgfInfo, playe
   const sgfResult = getMatchedExplicitSgfResult(entry, sgf, players);
 
   return {
-    black: entry.home,
-    white: entry.away,
+    home: entry.home,
+    away: entry.away,
+    black: sgf.sgfBlackName && players.black ? players.black : undefined,
     winner: entry.winner,
     result: sgfResult?.result ?? entry.result,
     sgf: sgf.path,
@@ -487,8 +488,9 @@ function buildExplicitMatchResult(sgf: SgfInfo, players: ExplicitPlayerIds): Sgf
   const white = players.white ?? UNKNOWN_PLACE;
 
   return {
-    black,
-    white,
+    home: black,
+    away: white,
+    black: sgf.sgfBlackName && players.black ? players.black : undefined,
     winner: winnerPlace === null ? null : winnerPlace === 1 ? black : winnerPlace === 2 ? white : UNKNOWN_PLACE,
     result: resultStr,
     sgf: sgf.path,

@@ -36,7 +36,7 @@ describe('matchImplicitSgfs', () => {
       force: false,
     });
 
-    assert.deepEqual(result.matchedEntries, ['1-2 jigo round:1 sgf:2025/1-BlackPlayer-WhitePlayer.sgf']);
+    assert.deepEqual(result.matchedEntries, ['1-2 jigo black:1 round:1 sgf:2025/1-BlackPlayer-WhitePlayer.sgf']);
     assert.deepEqual(result.unmatchedEntries, []);
   });
 

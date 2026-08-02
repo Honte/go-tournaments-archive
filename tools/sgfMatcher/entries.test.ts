@@ -3,10 +3,17 @@ import { describe, it } from 'node:test';
 import { buildSgfEntryString } from './entries';
 
 describe('buildSgfEntryString jigo', () => {
-  it('writes the explicit YAML jigo syntax', () => {
+  it('writes the explicit YAML jigo syntax with the parsed black player', () => {
     assert.equal(
-      buildSgfEntryString({ black: 1, white: 2, winner: null, result: '0', sgf: '2025/draw.sgf' }),
-      '1-2 jigo sgf:2025/draw.sgf'
+      buildSgfEntryString({
+        home: 1,
+        away: 2,
+        black: 1,
+        winner: null,
+        result: '0',
+        sgf: '2025/draw.sgf',
+      }),
+      '1-2 jigo black:1 sgf:2025/draw.sgf'
     );
   });
 });

@@ -402,8 +402,9 @@ function buildImplicitMatchResult(
   };
 
   return {
-    black,
-    white,
+    home: black,
+    away: white,
+    black: sgf.sgfBlackName && places.blackPlace ? places.blackPlace : undefined,
     winner: winnerPlace,
     result: resultStr,
     sgf: sgf.path,

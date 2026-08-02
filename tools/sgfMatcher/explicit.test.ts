@@ -35,7 +35,43 @@ describe('matchExplicitSgfs', () => {
       force: false,
     });
 
-    assert.deepEqual(result.matchedEntries, ['bp-wp jigo sgf:2025-league-1-bp-wp.sgf']);
+    assert.deepEqual(result.matchedEntries, ['bp-wp jigo black:bp sgf:2025-league-1-bp-wp.sgf']);
+    assert.deepEqual(result.unmatchedEntries, []);
+  });
+
+  it('uses SGF metadata to set black for a jigo without changing the YAML player order', () => {
+    const tournament: InputTournament = {
+      players: {
+        bp: 'Black Player 1d',
+        wp: 'White Player 1d',
+      },
+      stages: [],
+    };
+    const sgf = makeSgfInfo({
+      path: '2025-league-1-bp-wp.sgf',
+      sgfBlackName: 'Black Player',
+      sgfWhiteName: 'White Player',
+      filenameBlackName: 'bp',
+      filenameWhiteName: 'wp',
+      filenameRound: 1,
+      filenameStage: 'league',
+      rawResult: 'Jigo',
+      cleanResult: '0',
+    });
+
+    const result = matchExplicitSgfs({
+      tournament,
+      stage: {
+        type: 'league',
+        date: '2025-01-01',
+        rounds: [['wp-bp jigo']],
+      },
+      sgfPaths: [sgf.path],
+      sgfInfos: [sgf],
+      force: false,
+    });
+
+    assert.deepEqual(result.matchedEntries, ['wp-bp jigo black:bp sgf:2025-league-1-bp-wp.sgf']);
     assert.deepEqual(result.unmatchedEntries, []);
   });
 
