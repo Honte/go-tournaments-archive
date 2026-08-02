@@ -16,7 +16,34 @@ export function createTableWithoutRounds({
     const {
       players: [home, away],
       result,
+      draw,
     } = gamesMap[id];
+    if (draw) {
+      for (const [player, opponent] of [
+        [home, away],
+        [away, home],
+      ] as const) {
+        const entry = (results[player.id] ||= {
+          id: player.id,
+          place: 0,
+          score: 0,
+          games: [],
+          rank: getRankValue(playersMap[player.id].rank),
+        });
+
+        entry.games.push({
+          color: player.color,
+          opponent: opponent.id,
+          won: false,
+          drawn: true,
+          result,
+          game: id,
+        });
+        entry.score += 0.5;
+      }
+      continue;
+    }
+
     const winner = home.won ? home : away;
     const loser = home.won ? away : home;
 
@@ -30,6 +57,7 @@ export function createTableWithoutRounds({
       color: winner.color,
       opponent: loser.id,
       won: true,
+      drawn: false,
       result,
       game: id,
     });
@@ -44,6 +72,7 @@ export function createTableWithoutRounds({
       color: loser.color,
       opponent: winner.id,
       won: false,
+      drawn: false,
       result,
       game: id,
     });

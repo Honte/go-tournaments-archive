@@ -22,6 +22,7 @@ type CountryOpponentRow = {
   name: string;
   games: number;
   won: number;
+  drawn: number;
   lost: number;
   wonPercent: number;
 };
@@ -47,12 +48,14 @@ export function CountryOpponents({ event, country, translations }: CountryOppone
               name: t(`country.${game.country}`),
               games: 0,
               won: 0,
+              drawn: 0,
               lost: 0,
               wonPercent: 0,
             });
 
             target.games++;
             target.won += Number(game.won);
+            target.drawn += Number(game.drawn);
           }
         }
       }
@@ -61,12 +64,13 @@ export function CountryOpponents({ event, country, translations }: CountryOppone
     const list = Object.values(countries);
 
     for (const player of list) {
-      player.lost = player.games - player.won;
+      player.lost = player.games - player.won - player.drawn;
       player.wonPercent = player.won / player.games;
     }
 
     return list.sort((a, b) => a.name.localeCompare(b.name));
   }, [country, t]);
+  const hasDraws = data.some((opponent) => opponent.drawn > 0);
 
   const columns = useMemo<ColumnDef<CountryOpponentRow>[]>(
     () =>
@@ -93,6 +97,10 @@ export function CountryOpponents({ event, country, translations }: CountryOppone
             accessorKey: 'won',
             header: t('table.won'),
           },
+          hasDraws && {
+            accessorKey: 'drawn',
+            header: t('table.drawn'),
+          },
           {
             accessorKey: 'lost',
             header: t('table.lost'),
@@ -104,7 +112,7 @@ export function CountryOpponents({ event, country, translations }: CountryOppone
           },
         ] as ColumnDef<CountryOpponentRow>[]
       ).filter(Boolean),
-    [translations, t, event]
+    [translations, t, event, hasDraws]
   );
 
   return (

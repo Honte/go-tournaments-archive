@@ -46,7 +46,30 @@ export function createLadderTable({
       const {
         players: [a, b],
         result,
+        draw,
       } = gamesMap[game];
+
+      if (draw) {
+        map[a.id].games[index] = {
+          color: a.color,
+          opponent: b.id,
+          index: map[b.id]?.index ?? 0,
+          won: false,
+          drawn: true,
+          result,
+          game,
+        };
+        map[b.id].games[index] = {
+          color: b.color,
+          opponent: a.id,
+          index: map[a.id]?.index ?? 0,
+          won: false,
+          drawn: true,
+          result,
+          game,
+        };
+        continue;
+      }
 
       const winner = a.won ? a : b;
       const loser = a.won ? b : a;
@@ -56,6 +79,7 @@ export function createLadderTable({
         opponent: loser.id,
         index: map[loser.id]?.index ?? 0,
         won: true,
+        drawn: false,
         result,
         game,
       };
@@ -64,6 +88,7 @@ export function createLadderTable({
         opponent: winner.id,
         index: map[winner.id]?.index ?? 0,
         won: false,
+        drawn: false,
         result,
         game,
       };
@@ -74,7 +99,30 @@ export function createLadderTable({
     const {
       players: [a, b],
       result,
+      draw,
     } = gamesMap[game];
+
+    if (draw) {
+      map[a.id].playoffs.push({
+        color: a.color,
+        opponent: b.id,
+        index: map[b.id].index,
+        won: false,
+        drawn: true,
+        result,
+        game,
+      } as IndexedTablePlayerGame);
+      map[b.id].playoffs.push({
+        color: b.color,
+        opponent: a.id,
+        index: map[a.id].index,
+        won: false,
+        drawn: true,
+        result,
+        game,
+      } as IndexedTablePlayerGame);
+      continue;
+    }
 
     const winner = a.won ? a : b;
     const loser = a.won ? b : a;
@@ -84,6 +132,7 @@ export function createLadderTable({
       opponent: loser.id,
       index: map[loser.id].index,
       won: true,
+      drawn: false,
       result,
       game,
     } as IndexedTablePlayerGame);
@@ -92,6 +141,7 @@ export function createLadderTable({
       opponent: winner.id,
       index: map[winner.id].index,
       won: false,
+      drawn: false,
       result,
       game,
     } as IndexedTablePlayerGame);

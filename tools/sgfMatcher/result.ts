@@ -1,3 +1,5 @@
+import { isDrawResult, JIGO } from '@/libs/games';
+
 type NormalizedSgfResult = {
   cleanResult: string | null;
   resultIssue: string | null;
@@ -12,6 +14,10 @@ export function normalizeSgfResult(rawResult: string | null): NormalizedSgfResul
 
   if (value === '?' || value.toLowerCase() === 'void') {
     return { cleanResult: null, resultIssue: null };
+  }
+
+  if (isDrawResult(value)) {
+    return { cleanResult: JIGO, resultIssue: null };
   }
 
   if (!value) {

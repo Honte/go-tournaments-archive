@@ -1,12 +1,12 @@
 website: https://www.eurogofed.org/results/congress/egc1985.htm
 notes: |
-       Places in European Championship based on EGC main tournament.\
-       2nd was Matthew Macfadyen after a play-off with Pierre Colmez
+  Places in European Championship based on EGC main tournament.\
+  2nd was Matthew Macfadyen after a play-off with Pierre Colmez
 name: European Championship 1985
 top:
-    - Ronald Schlemper
-    - Matthew Macfadyen
-    - Pierre Colmez
+  - Ronald Schlemper
+  - Matthew Macfadyen
+  - Pierre Colmez
 stages:
   - type: tournament
     file: egc1985.txt
@@ -27,6 +27,8 @@ stages:
       - wins
       - open
     findSharedPlaces: true
+    games:
+      - 3-1 3:B+R round:3 sgf:1985/ec/3-MatthewMacfadyen-RonaldSchlemper.sgf
   - type: tournament
     file: egc1985open100.txt
     name: EGC Open
@@ -44,7 +46,7 @@ stages:
     columns:
       - wins
     excluded: true
-    collapsed: true    
-    findSharedPlaces: true 
-	   
-
+    collapsed: true
+    findSharedPlaces: true
+    games:
+      - 23-22 22:W+0.5 round:4 sgf:1985/open/4-FrankJanssen-EddyShaw.sgf

@@ -6,6 +6,7 @@ import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { gameThumbUrl } from '@/libs/urls';
 import { GameActions } from '@/components/GameActions';
+import { GameResultLabel } from '@/components/GameResultLabel';
 import { Stone } from '@/components/Stone';
 import { StatsTable } from '@/components/table/StatsTable';
 import { CountryLink } from '@/components/ui/CountryLink';
@@ -24,9 +25,10 @@ type PlayerGamesProps = {
 type GameRow = {
   img?: string;
   year: number;
-  color: 'white' | 'black';
+  color?: 'white' | 'black';
   rank?: string;
   won: boolean;
+  drawn: boolean;
   opponent: Omit<PlayerDetails, 'country'> & { country?: string };
   opponentFirstName: string;
   opponentLastName: string;
@@ -60,9 +62,10 @@ export function PlayerGames({ event, player, translations }: PlayerGamesProps) {
           games.push({
             img: game.props.jpg ?? game.props.png ?? game.props.svg,
             year: event.year,
-            color: game.color!,
+            color: game.color,
             rank: event.rank,
             won: game.won,
+            drawn: game.drawn,
             opponent,
             opponentFirstName,
             opponentLastName,
@@ -109,18 +112,22 @@ export function PlayerGames({ event, player, translations }: PlayerGamesProps) {
           {
             accessorKey: 'color',
             header: t('table.gameColor'),
-            cell: (info) => <Stone color={info.row.original.color} className="size-4 mx-auto" />,
+            cell: (info) =>
+              info.row.original.color ? <Stone color={info.row.original.color} className="size-4 mx-auto" /> : '?',
           },
           {
             accessorKey: 'won',
             header: t('table.gameWon'),
             cell: (info) => (
-              <span className={info.cell.getValue() ? 'font-semibold' : ''}>{info.cell.getValue() ? '✓' : 'X'}</span>
+              <span className={info.cell.getValue() ? 'font-semibold' : ''}>
+                {info.cell.getValue() ? '✓' : info.row.original.drawn ? '=' : 'X'}
+              </span>
             ),
           },
           {
             accessorKey: 'result',
             header: t('table.gameResult'),
+            cell: (info) => <GameResultLabel result={info.row.original.result} t={t} />,
           },
           {
             accessorKey: 'opponentFirstName',

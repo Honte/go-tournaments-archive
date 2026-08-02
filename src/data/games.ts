@@ -1,9 +1,10 @@
 import type { Game, GamePlayer, GamePropsArrayKey } from '@/schema/data';
 import { Sgf, type SgfRotation } from '@tools/sgf';
+import { JIGO } from '@/libs/games';
 
 const ARRAY_PROPS: GamePropsArrayKey[] = ['yt'];
 export const GAME_REGEX =
-  /(?<home>[a-z0-9]+)-(?<away>[a-z0-9]+) (?<winner>[a-z0-9]+)(:(?<result>[?a-zA-Z!0-9+,.:]+))?( (?<props>.+))?/i;
+  /^(?<home>[a-z0-9]+)-(?<away>[a-z0-9]+) (?:(?<draw>jigo)|(?<winner>[a-z0-9]+)(:(?<result>[?a-zA-Z!0-9+,.:]+))?)( (?<props>.+))?$/i;
 const STRICT_GAME_RESULT_REGEX = /^(?<color>[BW])(\+(?<score>([RT?]|\d+([,.]5)?)))?$/i;
 const LOOSE_GAME_RESULT_REGEX = /^(?<color>[BW])(\+(?<score>\S+))?$/i;
 
@@ -33,22 +34,29 @@ export function parseGame(string: string, id: string, stage: number, strict = tr
     throw new Error(`Could not parse game ${string})`);
   }
 
-  const { home, away, winner, result, props } = parsed.groups!;
+  const { home, away, draw, winner, result, props } = parsed.groups!;
+  const drawn = Boolean(draw);
+
+  if (!drawn && winner !== home && winner !== away) {
+    throw new Error(`Unrecognized game winner in ${string}`);
+  }
 
   const homePlayer = {
     id: home,
-    won: winner === home,
+    won: !drawn && winner === home,
   } as GamePlayer;
 
   const awayPlayer = {
     id: away,
-    won: winner === away,
+    won: !drawn && winner === away,
   } as GamePlayer;
 
   const winnerPlayer = home === winner ? homePlayer : awayPlayer;
   const loserPlayer = home === winner ? awayPlayer : homePlayer;
 
-  if (result === '!') {
+  if (drawn) {
+    // A jigo has no winner and no color-dependent result.
+  } else if (result === '!') {
     winnerPlayer.score = '!';
   } else if (result) {
     const gameResult = result.match(strict ? STRICT_GAME_RESULT_REGEX : LOOSE_GAME_RESULT_REGEX);
@@ -74,7 +82,8 @@ export function parseGame(string: string, id: string, stage: number, strict = tr
     id,
     stage,
     players: homePlayer.color === 'white' ? [awayPlayer, homePlayer] : [homePlayer, awayPlayer],
-    result,
+    result: drawn ? JIGO : result,
+    draw: drawn,
     props: {},
   };
 
@@ -90,6 +99,9 @@ export function parseGame(string: string, id: string, stage: number, strict = tr
         game.props.round = Number(value);
       } else if (type === 'rotate') {
         game.rotation = parseSgfRotation(value, string);
+      } else if (type === 'black' || type === 'white') {
+        setPlayerColor(homePlayer, awayPlayer, type, value, string);
+        game.players = homePlayer.color === 'white' ? [awayPlayer, homePlayer] : [homePlayer, awayPlayer];
       } else {
         (game.props as Record<string, string>)[type] = value;
       }
@@ -117,4 +129,28 @@ function parseSgfRotation(value: string, game: string): SgfRotation {
   }
 
   return angle as SgfRotation;
+}
+
+function setPlayerColor(
+  homePlayer: GamePlayer,
+  awayPlayer: GamePlayer,
+  color: 'black' | 'white',
+  id: string,
+  game: string
+) {
+  const player = homePlayer.id === id ? homePlayer : awayPlayer.id === id ? awayPlayer : null;
+
+  if (!player) {
+    throw new Error(`Unrecognized ${color} player in ${game}`);
+  }
+
+  const opponent = player === homePlayer ? awayPlayer : homePlayer;
+  const opponentColor = color === 'black' ? 'white' : 'black';
+
+  if ((player.color && player.color !== color) || (opponent.color && opponent.color !== opponentColor)) {
+    throw new Error(`Conflicting player color in ${game}`);
+  }
+
+  player.color = color;
+  opponent.color = opponentColor;
 }

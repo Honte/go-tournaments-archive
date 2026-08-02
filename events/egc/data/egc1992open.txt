@@ -3,9 +3,9 @@
 ;Main Tournament              
 ;
 ;  NO  NAME                 CY          GR    1    2    3    4    5    6    7    8    9   10     WIN   MMS   CUSS
-   1 Matsutomo T                    6D JP  xxx     11     8    75     21+      4-     46+     10+     27+     11+     12+     16+      2+      3-
-   2 Miyakawa W                     6D JP  xxx     11     8    75      8+     14+      6-     47+     29+      3+      4+      5+      1-      7+
-   3 Zhang S                        6D CN  xxx     11     8    72     22+     12+      5-     13+      7+      2-     29+      4+      6+      1+
+   1 Matsutomo Takashi              6D JP  xxx     11     8    75     21+      4-     46+     10+     27+     11+     12+     16+      2+      3-
+   2 Miyakawa Wataru                6D JP  xxx     11     8    75      8+     14+      6-     47+     29+      3+      4+      5+      1-      7+
+   3 Zhang Shutai                   6D CN  xxx     11     8    72     22+     12+      5-     13+      7+      2-     29+      4+      6+      1+
    4 Lazarev Alexej                 6D RU  xxx     10     7    77     60+      1+     15+      7+      5+      6+      2-      3-     13+      9-
    5 Eeden Gilles_van               5D NL  xxx     10     7    74     30+     17+      3+     27+      4-      8+      6+      2-      7-     11+
    6 Groenen Geert                  4D NL  xxx     10     7    74     29+     51+      2+     78+     11+      4-      5-      8+      3-     15+
@@ -23,7 +23,7 @@
   18 Taranu Catalin                 4D RO  xxx      9     6    59     20-     49+     44-     22+     19-     38+     48+     26+      9-     29+
   19 Schmid Gerhard                 3D DE  xxx      9     7    59     65+     80-     62+     41+     18+     28-     32+     44+     12-     30+
   20 Muller M                       5D CH  xxx      9     6    57     18+     15-     24-     55+     30-     46-     61+     48+     35+     26+
-  21 Ye Z                           4D CN  xxx      9     6    57      1-     36-     63+     57+     50+      9-     27-     78+     34+     32+
+  21 Ye Zhong-Xiao                  4D CN  xxx      9     6    57      1-     36-     63+     57+     50+      9-     27-     78+     34+     32+
   22 Heshe Thomas                   4D DK  xxx      9     6    54      3-     46-     70+     18-     55+     45-     96+     79+     37+     12+
   23 Kai N                          6D JP  xxx    8.5     3  62.5     61+     10+     11-     16-     45+      0=      0=      0=      0=      0=
   24 Mutabzija Zoran                5D HR  xxx    8.5     5  59.5     43+     28-     20+     29-     32+     44-     15-     36+     40+      0=
@@ -35,11 +35,11 @@
   30 Nishimura C                    5D JP  xxx      8     5    59      5-     33+     43+     14-     20+     16-     78+     28-     46+     19-
   31 Kanayama M                     1D JP  xxx      8     1    58      0=      7-     58+      0=      0=      0=      0=      0=      0=      0=
   32 Verhagen Rudi                  4D NL  xxx      8     5    56     26-     96+      7-     39+     24-     49+     19-     58+     33+     21-
-  33 Feldmann D                     3D FR  xxx      8     6    55     38+     30-     54+     75+     10-     81+     36+     15-     32-     47+
+  33 Feldmann Denis                 3D FR  xxx      8     6    55     38+     30-     54+     75+     10-     81+     36+     15-     32-     47+
   34 Popma R                        3D NL  xxx      8     6    55     93+     48+     16-     80-     69+     56+     45+     17-     21-     44+
-  35 Claasen T                      4D NL  xxx      8     5    54     46+      9-     10-     36-     62+     78-     80+     50+     20-     45+
+  35 Claasen Tony                   4D NL  xxx      8     5    54     46+      9-     10-     36-     62+     78-     80+     50+     20-     45+
   36 Schroer J                      4D DE  xxx      8     5    54     10-     21+      8-     35+     15-     57+     33-     24-     64+     55+
-  37 Riedeman D                     3D NL  xxx      8     6    54     57-     71+     53+     56+     28-     77+     47+     10-     22-     58+
+  37 Riedeman Dick                  3D NL  xxx      8     6    54     57-     71+     53+     56+     28-     77+     47+     10-     22-     58+
   38 Bro-Jorgensen V                3D DK  xxx      8     6    52     33-    130+     61+     49+     13-     18-     55+     56+     11-     46+
   39 Berben Tobias                  3D DE  xxx      8     6    51     70+     60+     12-     32-     71+     79-     40-     96+     62+     49+
   40 Webber N                       3D UK  xxx      8     6    49     63+     55-     49-     61-    130+     65+     39+     42+     24-     50+
@@ -47,7 +47,7 @@
   42 Pulverer K                     3D DE  xxx    7.5     3    50      0=      0=      0=      0=      0=     67+     25+     40-     27-     72+
   43 Zandveld Peter                 4D NL  xxx    7.5     4  47.5     24-     82+     30-     48-     47-     60-     88+      0=     97+     67+
   44 Jipp T                         4D DE  xxx      7     4    59     11-     57+     18+     28+      8-     24+     13-     19-     29-     34-
-  45 Calota L                       5D RO  xxx      7     4    53     28-     29-     83+     46+     23-     22+     34-     49+     26-     35-
+  45 Calota Lucretiu                5D RO  xxx      7     4    53     28-     29-     83+     46+     23-     22+     34-     49+     26-     35-
   46 Giedrojc Krzysztof             4D PL  xxx      7     4    53     35-     22+      1-     45-     83+     20+     10-     47+     30-     38-
   47 Tjulkov A                      4D RU  xxx      7     3  52.5      0=      0=     13-      2-     43+     50+     37-     46-     70+     33-
   48 Klenke A                       3D DE  xxx      7     5    51     62+     34-     60+     43+     17-     80+     18-     20-     55-     97+
@@ -70,7 +70,7 @@
   65 Diepen N_Van                   3D NL  xxx      7     5    41     19-     58-     64-     93+     94+     40-     83+     57+     63-     78+
   66 Hoekstra J                     1D NL  xxx      7     7    33    112+    107-     95+     86-    111-    159+    135+    105+     88+     79+
   67 Sandbeck Dix                   3D DK  xxx    6.5     2    46      0=      0=      0=      0=      0=     42-     77+     72-     79+     43-
-  68 Gaspari P                      4D SL  xxx    6.5     1  43.5     14-      8-     57-     60-     92+      0=      0=      0=      0=      0=
+  68 Gaspari Peter                  4D SL  xxx    6.5     1  43.5     14-      8-     57-     60-     92+      0=      0=      0=      0=      0=
   69 Ruten-Budde J                  2D DE  xxx    6.5     3  43.5    132+     74+     79-     70+     34-      0=      0=      0=      0=      0=
   70 Mills Q                        3D UK  xxx    6.5     4  42.5     39-     84+     22-     69-     89+     55-     82+     90+     47-      0=
   71 Ayzen T                        2D UK  xxx    6.5     3  42.5     81+     37-     76+     63+     39-      0=      0=      0=      0=      0=
@@ -85,7 +85,7 @@
   80 Smith J                        3D UK  xxx      6     4    48    130+     19+     14-     34+      9-     48-     35-     87-     90+     61-
   81 Hilbert D                      2D AT  xxx      6     5    42     71-    157+     93+    105+     78+     33-     72-     63-     89+     60-
   82 Miyakawa T                     4D JP  xxx      6     3    41     27-     43-     50-     64+     41-     62-     70-    130+     86-    119+
-  83 Rasmussen J                    3D DK  xxx      6     4    41     50+     78-     45-    130+     46-     61-     65-    108+     60-    105+
+  83 Rasmussen Jannik               3D DK  xxx      6     4    41     50+     78-     45-    130+     46-     61-     65-    108+     60-    105+
   84 Kobayashi T                    3D JP  xxx      6     1  38.5     78-     70-      0=     87+     56-      0=      0=      0=      0=      0=
   85 Mayanagi T                     3D JP  xxx      6     1  38.5     79-     56-      0=    122+     90-      0=      0=      0=      0=      0=
   86 Fassbender J                   2D DE  xxx      6     5    37     88+     62-     96-     66+     64-    112+     89-    113+     82+     57-

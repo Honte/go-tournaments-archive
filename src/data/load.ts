@@ -183,7 +183,7 @@ function getDateRange(dates: TournamentDateSpan[]) {
 }
 
 function replaceFullNamesWithIds(top: string[][], idsMap: Record<string, string>) {
-  return top.map((place) => place.map((id) => idsMap[id]).filter(Boolean));
+  return top.map((place) => place.map((id) => (id ? idsMap[id.replace('_', ' ')] : id)).filter(Boolean));
 }
 
 function createPlayersIdMap(players: Record<string, Player>) {

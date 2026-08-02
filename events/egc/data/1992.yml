@@ -1,4 +1,6 @@
-website: https://www.eurogofed.org/results/congress/egc1992.htm
+website:
+  - https://www.eurogofed.org/results/congress/egc1992.htm
+  - https://www.britgo.org/history/cantbook.html
 notes: Places in European Championship based on EGC main tournament
 name: European Championship 1992
 stages:
@@ -19,6 +21,12 @@ stages:
       - wins
       - open
     findSharedPlaces: true
+    games:
+      - 3-1 1:W+13.5 round:6 sgf:1992/ec/6-GeertGroenen-AlexejLazarev.sgf
+      - 6-1 6:B+R round:10 sgf:1992/ec/10-EgbertRittner-AlexejLazarev.sgf
+      - 12-1 1:W+R round:3 sgf:1992/ec/3-MatthewMacfadyen-AlexejLazarev.sgf
+      - 14-2 2:W+R round:2 sgf:1992/ec/2-FrancisRoads-GillesvanEeden.sgf
+      - 14-7 7:W+R round:10 sgf:1992/ec/10-FrancisRoads-ViktorBogdanov.sgf
   - type: tournament
     file: egc1992open100.txt
     name: EGC Open
@@ -34,7 +42,31 @@ stages:
     columns:
       - wins
     excluded: true
-    collapsed: true    
-    findSharedPlaces: true 
-	   
-
+    collapsed: true
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:9 sgf:1992/open/9-TakashiMatsutomo-WataruMiyakawa.sgf
+      - 3-2 2:W+R round:6 sgf:1992/open/6-ShutaiZhang-WataruMiyakawa.sgf
+      - 4-2 2:W+R round:7 sgf:1992/open/7-AlexejLazarev-WataruMiyakawa.sgf
+      - 7-2 2:W+4.5 round:10 sgf:1992/open/10-FrankJanssen-WataruMiyakawa.sgf
+      - 10-37 10:B+R round:8 sgf:1992/open/8-ViktorBogdanov-DickRiedeman.sgf
+      - 19-65 19:B+R round:1 sgf:1992/open/1-GerhardSchmid-NvanDiepen.sgf
+      - 21-78 21:B+R round:8 sgf:1992/open/8-ZhongXiaoYe-PetrValasek.sgf
+      - 22-70 22:B+R round:3 sgf:1992/open/3-ThomasHeshe-QMills.sgf
+      - 23-10 23:B+R round:2 sgf:1992/open/2-NKai-ViktorBogdanov.sgf
+      - 33-15 15:W+R round:8 sgf:1992/open/8-DenisFeldmann-MatthewMacfadyen.sgf
+      - 34-45 34:B+R round:7 sgf:1992/open/7-RPopma-LucretiuCalota.sgf
+      - 35-9 9:W+5.5 round:2 sgf:1992/open/2-TonyClaasen-EgbertRittner.sgf
+      - 38-18 18:W+R round:6 sgf:1992/open/6-VBroJorgensen-CatalinTaranu.sgf
+      - 38-56 38:B+R round:8 sgf:1992/open/8-VBroJorgensen-PNicolet.sgf
+      - 39-96 39:B+1.5 round:8 sgf:1992/open/8-TobiasBerben-AJones.sgf
+      - 42-40 40:W+R round:8 sgf:1992/open/8-KPulverer-NWebber.sgf
+      - 45-49 45:B+R round:8 sgf:1992/open/8-LucretiuCalota-VesaLaatikainen.sgf
+      - 55-38 38:W+R round:7 sgf:1992/open/7-MattiSiivola-VBroJorgensen.sgf
+      - 60-4 4:W+R round:1 sgf:1992/open/1-DesmondCann-AlexejLazarev.sgf
+      - 68-60 60:W+R round:4 sgf:1992/open/4-PeterGaspari-DesmondCann.sgf
+      - 79-85 79:B+R round:1 sgf:1992/open/1-TMarkHall-TMayanagi.sgf
+      - 83-65 65:W+R round:7 sgf:1992/open/7-JannikRasmussen-NvanDiepen.sgf
+      - 91-94 91:B+1.5 round:7 sgf:1992/open/7-PBoogerd-SBeaton.sgf
+      - 95-75 75:W+R round:2 sgf:1992/open/2-AGrant-WHofman.sgf
+      - 97-77 97:B+0.5 round:8 sgf:1992/open/8-TDinh-FDzaebel.sgf

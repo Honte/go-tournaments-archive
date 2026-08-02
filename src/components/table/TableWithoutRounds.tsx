@@ -61,7 +61,7 @@ export function TableWithoutRounds({ event, stage, players, games, translations 
                         <>&ndash;</>
                       ) : entry ? (
                         <GamePopoverTrigger game={games[entry.game]} players={players} as="span">
-                          {entry.won ? '1' : '0'}
+                          {entry.drawn ? '=' : entry.won ? '1' : '0'}
                         </GamePopoverTrigger>
                       ) : null}
                     </td>

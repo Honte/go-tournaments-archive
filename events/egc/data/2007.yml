@@ -38,7 +38,16 @@ stages:
     columns:
       - wins
     excluded: true
-    collapsed: true    
-    findSharedPlaces: true 
-	   
-
+    collapsed: true
+    findSharedPlaces: true
+    games:
+      - 1-22 1:B+R round:4 sgf:2007/open/4-SeokuiHong-MattiSiivola.sgf
+      - 3-6 6:W+7.5 round:7 sgf:2007/open/7-SeokbinCho-SeokuiHong.sgf
+      - 4-2 2:W+R round:7 sgf:2007/open/7-IljaShikshin-ChongukPak.sgf
+      - 4-3 3:W+R round:4 sgf:2007/open/4-IljaShikshin-SeokbinCho.sgf
+      - 6-2 2:W+R round:6 sgf:2007/open/6-SeulkiHong-ChongukPak.sgf
+      - 7-4 4:W+R round:10 sgf:2007/open/10-TingLi-IljaShikshin.sgf
+      - 36-5 5:W+R round:1 sgf:2007/open/1-AndrejCheburakhov-AlexandrDinerstein.sgf
+      - 43-3 3:W+R round:1 sgf:2007/open/1-RudiVerhagen-SeokbinCho.sgf
+      - 44-10 10:W+R round:2 sgf:2007/open/2-RobertJasiek-VesaLaatikainen.sgf
+      - 44-47 44:B+21 round:4 sgf:2007/open/4-RobertJasiek-TMarkHall.sgf

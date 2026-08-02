@@ -1,28 +1,68 @@
-website: https://www.eurogofed.org/results/congress/egc1976.htm
+website:
+  - https://www.eurogofed.org/results/congress/egc1976.htm
+  - https://www.britgo.org/history/egc1976
 name: European Championship 1976
 top:
-   - Patrick Merissert
-   - Tony Goddard
-   - John Diamond
+  - Patrick Merissert
+  - Tony Goddard
+  - Jon Diamond
 stages:
   - type: tournament
     file: egc1976.txt
     name: Championship Group
     dir: 1976/ec
-    notes: Recreated from cross table. Games order can be different.
     promoted: 2
     scoringColumns:
       - wins
     breakers:
       - wins
-    findSharedPlaces: true   
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+10 round:8 sgf:1976/ec/8-PatrickMerissert-TonyGoddard.sgf
+      - 1-3 1:B+R round:7 sgf:1976/ec/7-PatrickMerissert-JonDiamond.sgf
+      - 1-6 1:B+R round:1 sgf:1976/ec/1-PatrickMerissert-HelmutHasibeder.sgf
+      - 1-7 1:B+R round:6 sgf:1976/ec/6-PatrickMerissert-RobertRehm.sgf
+      - 1-8 1:B+R round:3 sgf:1976/ec/3-PatrickMerissert-WolfgangIsele.sgf
+      - 2-4 2:B+1 round:7 sgf:1976/ec/7-TonyGoddard-MichaelKatscher.sgf
+      - 2-5 5:W+R round:3 sgf:1976/ec/3-TonyGoddard-CasMuller.sgf
+      - 2-7 2:B+2 round:9 sgf:1976/ec/9-TonyGoddard-RobertRehm.sgf
+      - 2-9 2:B+R round:5 sgf:1976/ec/5-TonyGoddard-IgorBizjak.sgf
+      - 3-2 2:W+4 round:1 sgf:1976/ec/1-JonDiamond-TonyGoddard.sgf
+      - 3-6 6:W+R round:3 sgf:1976/ec/3-JonDiamond-HelmutHasibeder.sgf
+      - 3-8 3:B+R round:5 sgf:1976/ec/5-JonDiamond-WolfgangIsele.sgf
+      - 4-1 4:B+7 round:4 sgf:1976/ec/4-MichaelKatscher-PatrickMerissert.sgf
+      - 4-3 3:W+2 round:6 sgf:1976/ec/6-MichaelKatscher-JonDiamond.sgf
+      - 4-5 4:B+R round:8 sgf:1976/ec/8-MichaelKatscher-CasMuller.sgf
+      - 5-1 1:W+R round:9 sgf:1976/ec/9-CasMuller-PatrickMerissert.sgf
+      - 5-3 jigo black:5 round:2 sgf:1976/ec/2-CasMuller-JonDiamond.sgf
+      - 5-6 5:B+R round:5 sgf:1976/ec/5-CasMuller-HelmutHasibeder.sgf
+      - 5-8 5:B+25 round:7 sgf:1976/ec/7-CasMuller-WolfgangIsele.sgf
+      - 6-2 2:W+7 round:4 sgf:1976/ec/4-HelmutHasibeder-TonyGoddard.sgf
+      - 6-4 6:B+9 round:9 sgf:1976/ec/9-HelmutHasibeder-MichaelKatscher.sgf
+      - 6-7 7:W+9 round:2 sgf:1976/ec/2-HelmutHasibeder-RobertRehm.sgf
+      - 6-9 6:B+30 round:7 sgf:1976/ec/7-HelmutHasibeder-IgorBizjak.sgf
+      - 7-3 3:W+R round:8 sgf:1976/ec/8-RobertRehm-JonDiamond.sgf
+      - 7-4 4:W+R round:5 sgf:1976/ec/5-RobertRehm-MichaelKatscher.sgf
+      - 7-5 7:B+R round:1 sgf:1976/ec/1-RobertRehm-CasMuller.sgf
+      - 7-9 9:W+R round:3 sgf:1976/ec/3-RobertRehm-IgorBizjak.sgf
+      - 8-2 2:W+R round:6 sgf:1976/ec/6-WolfgangIsele-TonyGoddard.sgf
+      - 8-4 4:W+8 round:2 sgf:1976/ec/2-WolfgangIsele-MichaelKatscher.sgf
+      - 8-6 6:W+22 round:8 sgf:1976/ec/8-WolfgangIsele-HelmutHasibeder.sgf
+      - 8-7 8:B+R round:4 sgf:1976/ec/4-WolfgangIsele-RobertRehm.sgf
+      - 9-1 1:W+R round:2 sgf:1976/ec/2-IgorBizjak-PatrickMerissert.sgf
+      - 9-3 3:W+17 round:4 sgf:1976/ec/4-IgorBizjak-JonDiamond.sgf
+      - 9-4 9:B+19 round:1 sgf:1976/ec/1-IgorBizjak-MichaelKatscher.sgf
+      - 9-5 5:W+R round:6 sgf:1976/ec/6-IgorBizjak-CasMuller.sgf
+      - 9-8 8:W+R round:9 sgf:1976/ec/9-IgorBizjak-WolfgangIsele.sgf
   - type: tournament
     file: egc1976playoff.txt
     name: Playoff
     dir: 1976/playoff
-    notes: Top 2 played additional game for a championship (because they had the same number of wins) 
+    notes: Top 2 played additional game for a championship (because they had the same number of wins)
     scoringColumns:
       - wins
     breakers:
       - wins
-    findSharedPlaces: true   
+    findSharedPlaces: true
+    games:
+      - 2-1 1:W+R round:1 sgf:1976/playoff/1-TonyGoddard-PatrickMerissert.sgf

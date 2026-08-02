@@ -8,6 +8,7 @@ import type { Locale, Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { gameThumbUrl } from '@/libs/urls';
 import { GameActions } from '@/components/GameActions';
+import { GameResultLabel } from '@/components/GameResultLabel';
 import { StatsTable } from '@/components/table/StatsTable';
 import { Loader } from '@/components/ui/Loader';
 import { PlayerCell } from '@/components/ui/PlayerCell';
@@ -125,6 +126,7 @@ function AllGamesContent({ event, games, translations }: AllGamesContentProps) {
           {
             accessorKey: 'result',
             header: t('game.result'),
+            cell: (info) => <GameResultLabel result={info.row.original.result} t={t} />,
           },
           {
             accessorKey: 'moves',

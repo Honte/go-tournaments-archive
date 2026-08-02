@@ -3,6 +3,7 @@ import { join } from 'node:path';
 import type { Game, GamePlayer, LeagueStage, TableResult } from '@/schema/data';
 import type { InputTournamentStage } from '@/schema/input';
 import { parseDates } from '@/libs/dates';
+import { JIGO } from '@/libs/games';
 import { buildLocalGameId, H9Game, parseH9 } from '@/libs/h9';
 import { getRankValue } from '@/libs/rank';
 import { getGameId, parseGame } from '@/data/games';
@@ -75,6 +76,7 @@ export async function loadH9Tournament({
         starting: 0,
       },
       won: [],
+      drawn: [],
       lost: [],
       games: [],
     };
@@ -145,6 +147,8 @@ export async function loadH9Tournament({
         current.won.push(opponentId);
       } else if (game.result === '-') {
         current.lost.push(opponentId);
+      } else {
+        current.drawn.push(opponentId);
       }
 
       if (!processedGamesMap.has(localId)) {
@@ -165,11 +169,14 @@ export async function loadH9Tournament({
             color: game.color ? (game.color === 'black' ? 'white' : 'black') : undefined,
           } satisfies GamePlayer;
 
+          const result = getGameResult(game.result, game.color);
+
           parsedGame = {
             id: getGameId(gamesMap),
             stage: stageIndex,
             players: [isCurrentBlack ? playerA : playerB, isCurrentBlack ? playerB : playerA],
-            result: getGameResult(game.result, game.color),
+            result,
+            draw: result === JIGO,
             props: {},
           } satisfies Game;
         }
@@ -187,6 +194,7 @@ export async function loadH9Tournament({
         color: processed.players[processed.players[0].id === currentId ? 0 : 1].color,
         game: processed.id,
         won: game.result === '+',
+        drawn: game.result === '=',
         opponent: opponentId,
         result: processed.result,
         index: opponent?.index ?? 0,
@@ -340,7 +348,7 @@ function getGameResult(result: H9Game['result'], color: H9Game['color']) {
     case '-':
       return color ? (color === 'black' ? 'W+' : 'B+') : '+';
     case '=':
-      return '=';
+      return JIGO;
   }
 }
 

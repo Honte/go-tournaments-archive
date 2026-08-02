@@ -3,6 +3,12 @@ import { describe, it } from 'node:test';
 import { normalizeSgfResult } from './result';
 
 describe('normalizeSgfResult', () => {
+  it('normalizes standard and common jigo values', () => {
+    for (const result of ['0', 'Draw', 'draw', 'Jigo', 'jIgO']) {
+      assert.deepEqual(normalizeSgfResult(result), { cleanResult: 'jigo', resultIssue: null });
+    }
+  });
+
   it('accepts compact SGF result values', () => {
     assert.deepEqual(normalizeSgfResult('B+R'), { cleanResult: 'B+R', resultIssue: null });
     assert.deepEqual(normalizeSgfResult('W+4.5'), { cleanResult: 'W+4.5', resultIssue: null });

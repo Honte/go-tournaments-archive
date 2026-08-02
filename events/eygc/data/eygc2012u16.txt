@@ -22,7 +22,7 @@
 11 Glushko Alexandr         1k RU  77Mo  16   2    34   105  5+    2-    3-    13+   7-    6-     |15686297
 12 Fionin Grigorij          1d RU  78SP  16   2    32   102  4-    16+   7+    3-    9-    10-    |16013096
 13 Havelka Samuel           2k CZ  TOst  16   2    30   98   8-    9-    17+   11-   14+   4-     |15662372
-14 Kriese Anton             3k DE  J     16   2    28   87   0=    0     10-   17+   13-   18+    |15050794
+14 Kriese Anton             3k DE  J     16   2    28   87   0=    0=    10-   17+   13-   18+    |15050794
 15 Aminov Adel              4k RU  16Kz  15   3    41   90   16-   21+   18+   7-    10-   17+    |14601895
 16 Zuev Daniil              3k RU  77Mo  15   2    29   97   15+   12-   5-    18+   6-    8-     |15013361
 17 Pylypchuk Andrii         5k UA  Rivn  14   3    40   87   21+   18+   13-   14-   19+   15-    |15025175
