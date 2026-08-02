@@ -1,25 +1,19 @@
 website: https://www.eurogofed.org/results/congress/egc1988.htm
-notes: Places in European Championship based on EGC main tournament
+notes: Separate path for europeans within main tournament (4 dan+). No exact table available.
 name: European Championship 1988
 stages:
   - type: tournament
-    file: egc1988.txt
-    notes: For statistics best 16 europeans and games between them are shown. Games against other players changed to 0+ and 0-
-    name: Championship
-    dir: 1988/ec
+    file: egc1988playoff.txt
+    notes: After 7 rounds the top 8 played a knockout to determine the winner.
+    name: Playoff
+    dir: 1988/playoff
     scoringColumns:
-      - mms
       - wins
-      - sos
-      - sodos
-      - open
+      - place
     breakers:
-      - mms
-      - sos
-      - sodos
+      - place
     columns:
       - wins
-      - open
     findSharedPlaces: true
   - type: tournament
     file: egc1988open100.txt
@@ -38,7 +32,8 @@ stages:
     columns:
       - wins
     excluded: true
-    collapsed: true    
-    findSharedPlaces: true 
-	   
-
+    collapsed: true
+    findSharedPlaces: true
+    games:
+      - 21-88 21:B+R round:1 sgf:1988/open/1-MatthewMacfadyen-TonnyClaasen.sgf
+      - 22-32 32:W+R round:5 sgf:1988/open/5-ManfredWimmer-VladimirDanek.sgf

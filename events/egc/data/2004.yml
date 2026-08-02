@@ -21,6 +21,14 @@ stages:
       - wins
       - open
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:9 sgf:2004/ec/9-AlexandrDinerstein-CatalinTaranu.sgf
+      - 1-14 1:B+11.5 round:8 sgf:2004/ec/8-AlexandrDinerstein-DianaKoszegi.sgf
+      - 5-1 1:W+R round:7 sgf:2004/ec/7-WataruMiyakawa-AlexandrDinerstein.sgf
+      - 6-8 8:W+1.5 round:3 sgf:2004/ec/3-SvetlanaShikshina-RadekNechanicky.sgf
+      - 7-1 1:W+R round:3 sgf:2004/ec/3-AndrejKulkov-AlexandrDinerstein.sgf
+      - 8-1 1:W+19.5 round:2 sgf:2004/ec/2-RadekNechanicky-AlexandrDinerstein.sgf
+      - 14-6 14:B+15.5 round:1 sgf:2004/ec/1-DianaKoszegi-SvetlanaShikshina.sgf
   - type: tournament
     file: egc2004open100.txt
     name: EGC Open
@@ -38,7 +46,14 @@ stages:
     columns:
       - wins
     excluded: true
-    collapsed: true    
-    findSharedPlaces: true 
-	   
-
+    collapsed: true
+    findSharedPlaces: true
+    games:
+      - 2-1 2:B+5.5 round:1 sgf:2004/open/1-AlexandrDinerstein-KwangsunYun.sgf
+      - 2-9 2:B+R round:10 sgf:2004/open/10-AlexandrDinerstein-JungheeYi.sgf
+      - 3-4 4:W+8.5 round:5 sgf:2004/open/5-CatalinTaranu-HongpokYi.sgf
+      - 4-2 4:B+2.5 round:4 sgf:2004/open/4-HongpokYi-AlexandrDinerstein.sgf
+      - 4-8 8:W+3.5 round:6 sgf:2004/open/6-HongpokYi-WataruMiyakawa.sgf
+      - 6-3 3:W+8.5 round:4 sgf:2004/open/4-KibongLee-CatalinTaranu.sgf
+      - 20-12 20:B+R round:4 sgf:2004/open/4-NobuhiroTanaka-RadekNechanicky.sgf
+      - 83-48 83:B+R round:1 sgf:2004/open/1-StefanBudig-MattiSiivola.sgf

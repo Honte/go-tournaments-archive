@@ -34,7 +34,7 @@ stages:
     columns:
       - wins
     excluded: true
-    collapsed: true    
-    findSharedPlaces: true 
-	   
-
+    collapsed: true
+    findSharedPlaces: true
+    games:
+      - 41-35 41:B+4.5 round:8 sgf:1986/open/8-RichardGranville-ZoranMutabzija.sgf

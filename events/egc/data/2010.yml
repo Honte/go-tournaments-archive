@@ -21,6 +21,7 @@ stages:
     findSharedPlaces: true
     games:
       - 1-5 1:B+6.5 round:8 sgf:2010/ec/8-IljaShikshin-CristianPop.sgf
+      - 1-6 1:B+7.5 round:10 sgf:2010/ec/10-IljaShikshin-AlexandrDinerstein.sgf
       - 1-8 1:B+9.5 round:6 sgf:2010/ec/6-IljaShikshin-CsabaMero.sgf
       - 2-1 2:B+R round:7 sgf:2010/ec/7-ArtemKachanovskyj-IljaShikshin.sgf
       - 2-7 2:B+R round:9 sgf:2010/ec/9-ArtemKachanovskyj-AliJabarin.sgf

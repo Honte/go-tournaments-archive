@@ -3,7 +3,7 @@
 ; DT[1990-07-22,1990-08-05]
 ; Pl Name               Gr Cy    1    2    3    4    5    6    7    8    9   10  W MM SOS SODOS
    1 Zeijst Rob_van                 6d NL  xxx     33     9   302   271    107+     40+     13+     11+     30+      3+      4-      2+      5+      8+
-   2 Zhang S                        6d TW  xxx     32     8   308   245     41+     25-      7+     10+     19+      6+      3+      1-     13+      4+
+   2 Zhang Shutai                   6d TW  xxx     32     8   308   245     41+     25-      7+     10+     19+      6+      3+      1-     13+      4+
    3 Pietsch Hans                   5d DE  xxx     32     8   303   238     63+     17+     21+     32+     14+      1-      2-     15+     20+      5+
    4 Mattern Juergen                5d DE  xxx     31     7   308   214     19+      8+      6-     31+      9+     21+      1+      5-     17+      2-
    5 Heiser Laurent                 5d LU  xxx     31     7   305   209      6-     41+      8+     24+     34+     51+     14+      4+      1-      3-
