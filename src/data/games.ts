@@ -99,6 +99,9 @@ export function parseGame(string: string, id: string, stage: number, strict = tr
         game.props.round = Number(value);
       } else if (type === 'rotate') {
         game.rotation = parseSgfRotation(value, string);
+      } else if (type === 'black' || type === 'white') {
+        setPlayerColor(homePlayer, awayPlayer, type, value, string);
+        game.players = homePlayer.color === 'white' ? [awayPlayer, homePlayer] : [homePlayer, awayPlayer];
       } else {
         (game.props as Record<string, string>)[type] = value;
       }
@@ -126,4 +129,28 @@ function parseSgfRotation(value: string, game: string): SgfRotation {
   }
 
   return angle as SgfRotation;
+}
+
+function setPlayerColor(
+  homePlayer: GamePlayer,
+  awayPlayer: GamePlayer,
+  color: 'black' | 'white',
+  id: string,
+  game: string
+) {
+  const player = homePlayer.id === id ? homePlayer : awayPlayer.id === id ? awayPlayer : null;
+
+  if (!player) {
+    throw new Error(`Unrecognized ${color} player in ${game}`);
+  }
+
+  const opponent = player === homePlayer ? awayPlayer : homePlayer;
+  const opponentColor = color === 'black' ? 'white' : 'black';
+
+  if ((player.color && player.color !== color) || (opponent.color && opponent.color !== opponentColor)) {
+    throw new Error(`Conflicting player color in ${game}`);
+  }
+
+  player.color = color;
+  opponent.color = opponentColor;
 }

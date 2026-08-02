@@ -520,6 +520,7 @@ Examples:
 id1-id2 id1:B+2.5
 id1-id2 id2:W+R
 id1-id2 jigo
+id1-id2 jigo black:id2
 id1-id2 id1:!
 id1-id2 id1:B+R sgf:2026/game.sgf yt:https://youtube.com/watch?v=abc
 ```
@@ -528,6 +529,9 @@ Result notes:
 
 - `B+...` means black won; `W+...` means white won.
 - `jigo` means a draw. It can be followed by the same properties as a decisive game.
+- When a result does not identify the players' colors, use `black:<player-id>` or `white:<player-id>`. The referenced ID
+  must be one of the game's players; the other player is assigned the opposite color. A color property that contradicts
+  a `B` or `W` result is rejected.
 - Scores can be numeric or `R` for resignation, `T` for timeout, `?` for unknown.
 - `!` marks a walkover.
 - H9-imported games may use loose results such as `+`, `-`, or `=`. In a round column, a non-zero opponent followed by
