@@ -72,6 +72,10 @@ export async function getCountryPageMetadata({ event, locale, code, category }: 
 }
 
 export async function getCountryPageOptions(event: EventContext) {
+  if (event.dynamic) {
+    return [];
+  }
+
   const countries = await getAllCountriesStats(event);
   const codes = Object.keys(countries);
 
@@ -90,6 +94,10 @@ export async function getCountryPageOptions(event: EventContext) {
 }
 
 export async function getCountryCategoryPageOptions(event: EventContext) {
+  if (event.dynamic) {
+    return [];
+  }
+
   const countries = await getAllCountriesStats(event);
 
   return getCountryCategoryPageOptionsFromStats(event, countries);

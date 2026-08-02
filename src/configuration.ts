@@ -35,6 +35,7 @@ export function getEventConfigurations(configuration: ArchiveConfiguration) {
           ...item.config,
           ...child,
           basePath: configuration.basePath,
+          dynamic: configuration.dynamic,
         });
       }
     } else {
@@ -42,6 +43,7 @@ export function getEventConfigurations(configuration: ArchiveConfiguration) {
         ...configuration.config,
         ...item,
         basePath: configuration.basePath,
+        dynamic: configuration.dynamic,
       });
     }
   }

@@ -23,7 +23,7 @@ export default async function getConfig() {
   }
 
   return {
-    output: 'export',
+    output: configuration.dynamic ? undefined : 'export',
     basePath: normalizeBasePath(configuration.basePath),
     pageExtensions,
     trailingSlash: configuration.trailingSlash,

@@ -22,6 +22,7 @@ export type EventConfig = {
   readonly basePath?: string; // acquired from top-level archive configuration
   readonly prefix?: string; // must be unique across configuration
   readonly links?: (EventLink | EventLinkGroup)[];
+  readonly dynamic?: boolean;
 };
 
 export type EventContext = EventDefinition & EventConfig;
@@ -33,6 +34,7 @@ export type ArchiveConfiguration = {
   basePath?: string;
   trailingSlash?: boolean;
   config?: EventConfigurationOverrides;
+  dynamic?: boolean;
 };
 
 export type EventGroup = {

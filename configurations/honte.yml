@@ -1,4 +1,5 @@
 title: Go Tournaments Archives
+dynamic: true
 events:
   - title: Global Tournaments
     events:
