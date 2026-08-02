@@ -44,7 +44,7 @@ export async function loadH9Tournament({
   } = stage;
 
   const content = await readFile(join(`./events/${event.id}/data/`, file), 'utf-8');
-  const tournament = parseH9(content, scoringColumns?.length);
+  const tournament = parseH9(content);
   const table: TableResult[] = [];
   const processedGamesMap = new Map<string, Game>();
   const existingGamesMap = new Map<string, Game>();

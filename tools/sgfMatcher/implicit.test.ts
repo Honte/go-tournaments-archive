@@ -3,7 +3,7 @@ import { describe, it } from 'node:test';
 import { makeH9Player, makeSgfInfo } from '@tools/sgfMatcher/mocks';
 import { buildPlayersMap, matchImplicitSgfs } from './implicit';
 import type { H9GameRecord, ParsedGameEntry } from './types';
-import { normalizePlayerName, stringifyProps } from './utils';
+import { stringifyProps } from './utils';
 
 describe('matchImplicitSgfs', () => {
   it('matches a jigo SGF to a jigo H9 game', () => {
@@ -431,24 +431,7 @@ describe('matchImplicitSgfs', () => {
   });
 });
 
-describe('buildPlayersMap', () => {
-  it('does not overwrite primary names with reversed aliases', (t) => {
-    const warn = t.mock.method(console, 'warn', () => undefined);
-    const playersMap = buildPlayersMap([
-      makeH9Player({ place: 1, name: 'Alpha', surname: 'Beta' }),
-      makeH9Player({ place: 2, name: 'Beta', surname: 'Alpha' }),
-    ]);
-
-    assert.equal(playersMap.get(normalizePlayerName('Alpha Beta')), 1);
-    assert.equal(playersMap.get(normalizePlayerName('Beta Alpha')), 2);
-
-    const warnings = warn.mock.calls.map((call) => String(call.arguments[0]));
-    assert.equal(warnings.length, 2);
-    assert.ok(warnings.every((warning) => warning.includes('skipped normalized name alias')));
-  });
-});
-
-function makeSimpleContext(): { playersMap: Map<string, number>; gamesMap: Map<string, H9GameRecord> } {
+function makeSimpleContext(): { playersMap: Map<string, number | null>; gamesMap: Map<string, H9GameRecord> } {
   const playersMap = buildPlayersMap([
     makeH9Player({ place: 1, name: 'Black', surname: 'Player' }),
     makeH9Player({ place: 2, name: 'White', surname: 'Player' }),
@@ -470,7 +453,7 @@ function makeSimpleContext(): { playersMap: Map<string, number>; gamesMap: Map<s
   return { playersMap, gamesMap };
 }
 
-function makeWinnerContext(): { playersMap: Map<string, number>; gamesMap: Map<string, H9GameRecord> } {
+function makeWinnerContext(): { playersMap: Map<string, number | null>; gamesMap: Map<string, H9GameRecord> } {
   const playersMap = buildPlayersMap([
     makeH9Player({ place: 1, name: 'Winner', surname: 'Player' }),
     makeH9Player({ place: 2, name: 'Loser', surname: 'Player' }),

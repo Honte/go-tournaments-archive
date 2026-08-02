@@ -6,6 +6,7 @@ import { buildLocalGameId, type H9Player, parseH9 } from '@/libs/h9';
 import type { EventPlayer } from '@/data/eventPlayers';
 import { GAME_REGEX } from '@/data/games';
 import { buildSgfEntryString, type SgfMatchResult } from './entries';
+import { lookupPlayerId, type PlayerLookupMap, registerLookupEntry, resolveSgfLookup } from './lookup';
 import {
   buildCommonUnmatchedReasons,
   findDuplicateKeys,
@@ -28,6 +29,8 @@ import {
   type UnmatchedEntry,
 } from './types';
 import { flipColor, normalizePlayerName, parseProps } from './utils';
+
+type ImplicitLookup = PlayerLookupMap<number>;
 
 type ImplicitCandidate = {
   sgf: SgfInfo;
@@ -120,7 +123,7 @@ export function matchImplicitSgfs({
   force,
 }: {
   sgfInfos: SgfInfo[];
-  playersMap: Map<string, number>;
+  playersMap: ImplicitLookup;
   gamesMap: Map<string, H9GameRecord>;
   existingGamesById: Map<string, ParsedGameEntry>;
   existingGamesBySgf: Map<string, ParsedGameEntry>;
@@ -142,11 +145,12 @@ export function matchImplicitSgfs({
   const removedLocalIds = new Set<string>();
 
   for (const sgf of sgfInfos) {
-    const places = resolveSgfPlaces(sgf, playersMap);
-    const precheckReasons = buildCommonUnmatchedReasons(sgf, {
-      black: places.blackPlace,
-      white: places.whitePlace,
-    });
+    const result = resolveSgfLookup(sgf, playersMap);
+    const places = {
+      blackPlace: result.black,
+      whitePlace: result.white,
+    };
+    const precheckReasons = buildCommonUnmatchedReasons(sgf, result);
 
     if (precheckReasons.length > 0) {
       unmatchedEntries.push(buildImplicitUnmatchedEntry(sgf, places, existingGamesBySgf, precheckReasons));
@@ -271,18 +275,19 @@ function parseEntry(entry: string): ParsedGameEntry | null {
   };
 }
 
-export function buildPlayersMap(results: H9Player[], eventPlayers: EventPlayer[] = []): Map<string, number> {
-  const lookup = new Map<string, number>();
-
-  for (const player of results) {
-    const fullName = `${player.name} ${player.surname}`;
-    registerPrimaryName(lookup, fullName, player.place);
-  }
+export function buildPlayersMap(results: H9Player[], eventPlayers: EventPlayer[] = []): ImplicitLookup {
+  const lookup: ImplicitLookup = new Map();
 
   for (const player of results) {
     const fullName = `${player.name} ${player.surname}`;
     const reversedName = `${player.surname} ${player.name}`;
-    registerAliasName(lookup, reversedName, player.place, fullName);
+
+    registerLookupEntry(lookup, fullName, player.place);
+    registerLookupEntry(lookup, reversedName, player.place);
+
+    for (const part of fullName.split(' ')) {
+      registerLookupEntry(lookup, part, player.place, false);
+    }
   }
 
   for (const player of results) {
@@ -292,14 +297,12 @@ export function buildPlayersMap(results: H9Player[], eventPlayers: EventPlayer[]
       continue;
     }
 
-    const fullName = `${player.name} ${player.surname}`;
-
     for (const alias of [
       eventPlayer.name,
       ...(eventPlayer.original ? [eventPlayer.original] : []),
       ...eventPlayer.nickname,
     ]) {
-      registerAliasName(lookup, alias, player.place, fullName);
+      registerLookupEntry(lookup, alias, player.place);
     }
   }
 
@@ -348,13 +351,6 @@ export function buildGamesMap(results: H9Player[]): Map<string, H9GameRecord> {
   }
 
   return map;
-}
-
-export function resolveSgfPlaces(sgf: SgfInfo, playerLookup: Map<string, number>): SgfPlaces {
-  return {
-    blackPlace: lookupPlace(sgf.sgfBlackName, playerLookup) ?? lookupPlace(sgf.filenameBlackName, playerLookup),
-    whitePlace: lookupPlace(sgf.sgfWhiteName, playerLookup) ?? lookupPlace(sgf.filenameWhiteName, playerLookup),
-  };
 }
 
 function buildImplicitUnmatchedEntry(
@@ -415,19 +411,15 @@ function buildImplicitMatchResult(
   };
 }
 
-function lookupPlace(name: string | null, playerLookup: Map<string, number>): number | null {
-  return name ? (playerLookup.get(normalizePlayerName(name)) ?? null) : null;
-}
-
 function resolveLocalId(
   sgf: SgfInfo,
   round: number | null,
-  playersMap: Map<string, number>,
+  playersMap: ImplicitLookup,
   h9gamesMap: Map<string, H9GameRecord>
 ): string | null {
   const places =
-    resolveLocalIdPlaces(sgf.sgfBlackName, sgf.sgfWhiteName, playersMap) ??
-    resolveLocalIdPlaces(sgf.filenameBlackName, sgf.filenameWhiteName, playersMap);
+    resolveLocalIdPlaces(playersMap, sgf.sgfBlackName, sgf.sgfWhiteName) ??
+    resolveLocalIdPlaces(playersMap, sgf.filenameBlackName, sgf.filenameWhiteName);
 
   if (!places) {
     return null;
@@ -455,43 +447,14 @@ function resolveLocalId(
 }
 
 function resolveLocalIdPlaces(
+  playersMap: ImplicitLookup,
   blackName: string | null,
-  whiteName: string | null,
-  playersMap: Map<string, number>
+  whiteName: string | null
 ): [blackPlace: number, whitePlace: number] | null {
-  const blackPlace = lookupPlace(blackName, playersMap);
-  const whitePlace = lookupPlace(whiteName, playersMap);
+  const blackPlace = lookupPlayerId(playersMap, blackName);
+  const whitePlace = lookupPlayerId(playersMap, whiteName);
 
   return blackPlace !== null && whitePlace !== null ? [blackPlace, whitePlace] : null;
-}
-
-function registerPrimaryName(lookup: Map<string, number>, name: string, place: number): void {
-  const normalized = normalizePlayerName(name);
-
-  if (lookup.has(normalized)) {
-    console.warn(
-      `  Warning: duplicate normalized name "${normalized}" (places ${lookup.get(normalized)} and ${place})`
-    );
-  }
-
-  lookup.set(normalized, place);
-}
-
-function registerAliasName(lookup: Map<string, number>, alias: string, place: number, primaryName: string): void {
-  const normalized = normalizePlayerName(alias);
-  const existingPlace = lookup.get(normalized);
-
-  if (existingPlace !== undefined) {
-    if (existingPlace !== place) {
-      console.warn(
-        `  Warning: skipped normalized name alias "${normalized}" for "${primaryName}" (places ${existingPlace} and ${place})`
-      );
-    }
-
-    return;
-  }
-
-  lookup.set(normalized, place);
 }
 
 function findEventPlayer(player: H9Player, eventPlayers: EventPlayer[]): EventPlayer | undefined {
