@@ -5,6 +5,7 @@ import { parse } from 'yaml';
 import type { Game, Player, Tournament, TournamentDateSpan, TournamentDetails } from '@/schema/data';
 import type { EventContext, EventData } from '@/schema/event';
 import type { InputTournament } from '@/schema/input';
+import { normalizePlayerName } from '@/libs/h9';
 import { parseTop } from '@/libs/stage';
 import { readEventPlayersFile } from '@/data/eventPlayers';
 import { createPlayersHandler } from '@/data/players';
@@ -183,7 +184,7 @@ function getDateRange(dates: TournamentDateSpan[]) {
 }
 
 function replaceFullNamesWithIds(top: string[][], idsMap: Record<string, string>) {
-  return top.map((place) => place.map((id) => (id ? idsMap[id.replace('_', ' ')] : id)).filter(Boolean));
+  return top.map((place) => place.map((id) => (id ? idsMap[normalizePlayerName(id)] : id)).filter(Boolean));
 }
 
 function createPlayersIdMap(players: Record<string, Player>) {
