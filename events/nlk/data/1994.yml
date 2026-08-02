@@ -1,0 +1,11 @@
+stages:
+  - type: tournament
+    name: championship
+    file: nl1994.txt
+    scoringColumns: 
+      - wins          
+      - sos
+    breakers:
+      - wins
+      - sos
+    findSharedPlaces: true

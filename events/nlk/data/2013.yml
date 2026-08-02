@@ -1,0 +1,32 @@
+top:
+  - mkuin
+  - zvditzhuijzen
+  - fjanssen
+stages:
+  - type: tournament
+    file: nl2013.txt
+    name: championship
+    dir: 2013/nlk
+    promoted: 2
+    scoringColumns:
+      - wins
+      - null
+      - sos
+      - sodos
+    breakers:
+      - wins
+      - sos
+      - sodos
+    findSharedPlaces: true
+  - type: tournament
+    file: nl2013playoff.txt
+    name: playoff
+    dir: 2013/playoff
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: true

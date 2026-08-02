@@ -1,0 +1,28 @@
+; TC[T960120A]
+; CL[A]
+; EV[27th Dutch Championship]
+; PC[NL, Amsterdam]
+; DT[1996-01-20,1996-02-04]
+; KM[6=]
+; TM[90]
+; HA[h9]
+;                      27th Dutch Championship, Amsterdam 1996
+;                            Jan 20-21 and Feb 3-4, 1996
+;
+;Pl     Name             Grade  Club   MM S SOS SDOS  1.  2.  3.  4.  5.  6.  7.  8. 
+   1 Guo Juan                       5p NL  Hilv     8     8    37    37     0     10+      9+      4+      3+      5+      2+      6+      7+ |10298013
+   2 Janssen Frank                  6d NL  Amvn     6     6    36    24     0      6+     11-     10+      7+     13+      1-      9+      3+ |10298596
+   3 Westhoff Gerald                6d NL  Leid     5     5    37    19     1     14+      8+     11+      1-      6+      9-      4+      2- |10233597
+   4 Eeden Gilles_van               5d NL  Nijm     5     5    37    19     0     13+     12+      1-      5-      7+     11+      3-      8+ |10201598
+   5 Rehm Robert                    5d NL  Alkm     5     5    31    15     0      8-     14+     12+      4+      1-      6-     16+      9+ |10237601
+   6 Pomstra Willem-Koen            4d NL  Tilb     4     4    38    15     0      2-     15+      9+     11+      3-      5+      1-     12- |10249602
+   7 Vanderstappen Filip            4d NL  Leid     4     4    36    13     0     12-     13+      8+      2-      4-     14+     10+      1- |10250603
+   8 Nijhuis Caspar                 4d NL  Amst     4     4    34    16     0      5+      3-      7-     10+      9-     13+     11+      4- |10298024
+   9 Boon Mark                      6d NL  Amst     4     4    34    11     0     16+      1-      6-     15+      8+      3+      2-      5- |10262604
+  10 Claasen Tonny                  4d NL  Amst     4     4    30     8     0      1-     16+      2-      8-     15+     12+      7-     14+ |10274605
+  11 Warnaar Walther                4d NL  Ensc     4     4    28    10     0     15+      2+      3-      6-     14+      4-      8-     16+ |10298607
+  12 Spruit Nico                    3d NL  Amst     4     4    27    10     0      7+      4-      5-     13-     16+     10-     15+      6+ |10233608
+  13 Gelderen Vincent_van           4d NL  Rott     3     3    27     6     0      4-      7-     16+     12+      2-      8-     14-     15+ |10201609
+  14 Verhagen Rudi                  4d NL  Ensc     2     2    27     3     0      3-      5-     15-     16+     11-      7-     13+     10- |10213610
+  15 Dongen Stijn_van               3d NL  Amst     2     2    25     2     0     11-      6-     14+      9-     10-     16+     12-     13- |10237612
+  16 Vos Dave_de                    3d NL  Tilb     0     0    28     0     0      9-     10-     13-     14-     12-     15-      5-     11- |10249613

@@ -1,0 +1,25 @@
+; TC[T090110H]
+; CL[A]
+; EV[40th Dutch Championship]
+; PC[NL, Amstelveen]
+; DT[2009-01-10,2009-01-25]
+; HA[h9]
+; KM[6.5]
+; TM[120]
+;
+  1 Groenen Geert           6d NL DHaa  7 40  0   0  10+  3+  4-  7+  16+! 2+  5+  6+ |10501216
+  2 Kuin Merlijn            6d NL Amvn  7 37  0   0   6+  8+  5+  4+  3+   1- 11+  7+ |10233861
+  3 Brouwer Peter           5d NL Amst  6 36  0   0   9+  1-  6+ 12+  2-   8+  4+  5+ |10986514
+  4 Janssen Frank           6d NL Alme  5 38  0   0  16+ 11+  1+  2-  5+   7+  3-  9- |10298596
+  5 Rehm Robert             5d NL Amst  4 37  0   0  13+ 14+  2-  8+  4-   9+  1-  3- |10237601
+  6 Nijhuis Emil            6d NL Amvn  4 34  0   0   2- 15+  3- 10+  7-  12+ 13+  1- |10213027
+  7 Vanderstappen Filip     5d NL Leid  4 33  0   0  14- 13+ 11+  1-  6+   4-  8+  2- |10250603
+  8 Koster Bram             4d NL Utre  4 31  0   0  15+  2- 10+  5- 11+   3-  7- 14+ |12862817
+  9 Westhoff Gerald         6d NL Leid  4 30  0   0   3- 10- 13+ 11- 14+   5- 12+  4+ |10233597
+ 10 Pomstra Willem-Koen     5d NL Arnh  4 28  0   0   1-  9+  8-  6- 15-   0+ 14+ 11+ |10249602
+ 11 Verhagen Rudi           5d NL Ensc  3 32  0   0  12+  4-  7-  9+  8-  13+  2- 10- |10213610
+ 12 Barthel Floris          4d NL Utre  3 28  0   0  11- 16+ 14+  3- 13-   6-  9- 15+ |13013715
+ 13 Mallon Willem           4d NL Eind  3 26  0   0   5-  7-  9- 15+ 12+  11-  6-  0+ |10250801
+ 14 Drost Andreas           4d NL Leid  2 28  0   0   7+  5- 12- 16-  9-  15+ 10-  8- |10525218
+ 15 Engels Andre            3d NL Eind  2 24  0   0   8-  6- 16- 13- 10+  14-  0+ 12- |10501106
+ 16 Eijkhout Michiel        6d NL Leid  2 21  0   0   4- 12- 15+ 14+  1-!  0-  0-  0- |10486410

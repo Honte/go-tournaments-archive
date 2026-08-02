@@ -1,0 +1,8 @@
+name: 1st Dutch Championship
+stages:
+ - type: classification
+   name: final
+   notes: The date and the result are unknown, but both players stated later that Schilp was the winner
+   order:
+    - Ab Schilp
+    - Leon Vie     

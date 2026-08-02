@@ -1,0 +1,29 @@
+top:
+  - Juan Guo
+  - gveeden
+  - Geert Groenen
+stages:
+  - type: tournament
+    file: nl1998.txt
+    name: championship
+    dir: 1998/nlk
+    promoted: 2
+    scoringColumns:
+      - wins
+      - sos
+      - sodos
+      - null
+    breakers:
+      - wins
+      - sos
+      - sodos
+    findSharedPlaces: true
+  - type: tournament
+    file: nl1998playoff.txt
+    name: playoff
+    dir: 1998/playoff
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true

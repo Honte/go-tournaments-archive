@@ -1,0 +1,14 @@
+stages:
+  - type: tournament
+    name: championship
+    file: nl2000.txt
+    scoringColumns: 
+      - wins     
+      - null      
+      - sos
+      - sodos
+    breakers:
+      - wins
+      - sos
+      - sodos
+    findSharedPlaces: true

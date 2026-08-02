@@ -1,0 +1,18 @@
+; TC[T150221L]
+; CL[A]
+; EV[Dutch Championship Play-off]
+; PC[NL, Amstelveen]
+; DT[2015-02-21,2015-02-28]
+; HA[h9]
+; KM[6.5]
+; TM[112.5]
+; CM[ (submitted by Herman Hiddema)]
+;.
+1 Kuin Merlijn        6d NL  Amvn  2    2    3    2    2+/w   2-/b   2+/b    |10233861
+2 Brouwer Peter       6d NL  Amst  1    1    6    2    1-/b   1+/w   1-/w    |10986514
+;3 Eerbeek Alexander   5d NL  Vink  1    1    0    0    8+/b   0-     0-      |13501356
+;4 Verhagen Rudi       4d NL  Ensc  1    1    0    0    7+/b   0-     0-      |10213610
+;5 Cornelissen Ruben   3d NL  DHaa  1    1    0    0    6+/w   0-     0-      |13262865
+;6 Aaij Rene           4d NL  Gron  0    0    1    0    5-/b   0-     0-      |10537560
+;7 Jong Merijn_de      3d NL  Utre  0    0    1    0    4-/w   0-     0-      |10449472
+;8 Kuperus Sjoerd      3d NL  Utre  0    0    1    0    3-/w   0-     0-      |14662351

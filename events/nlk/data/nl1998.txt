@@ -1,0 +1,28 @@
+; TC[T980117B]
+; CL[A]
+; EV[29th Dutch Championship]
+; PC[NL,Amsterdam]
+; DT[1998-01-17,1998-01-25]
+; KM[6=]
+; TM[90]
+; HA[h9]
+;                  29th Dutch Championship, Amsterdam 1998
+;                       January 17-18 and 24-25, 1998
+;
+;Pl     Name              Rank  Club   MM S SOS SDOS  1.  2.  3.  4.  5.  6.  7.  8.        
+  1 Eeden Gilles_van        6d NL Nijm 7  7  37  30   7+  3+ 12+  2- 10+  5+  4+  6+  |10201598
+  2 Guo Juan                5p NL Hilv 7  7  34  29   8+ 13+  6+  1+  4-  9+  3+  7+  |10298013
+  3 Groenen Geert           5d NL Leid 5  5  38  20   5+  1- 10+  9+  6- 12+  2-  8+  |10501216
+  4 Eijkhout Michiel        5d NL Leid 5  5  35  22  13-  8+ 11+ 12+  2+  6+  1-  5-  |10486410
+  5 Janssen Frank           6d NL Amvn 5  5  34  18   3-  7+ 13+  6-  8+  1-  9+  4+  |10298596
+  6 Rehm Robert             5d NL Alkm 4  4  38  15  16+ 11+  2-  5+  3+  4-  7-  1-  |10237601
+  7 Vanderstappen Filip     4d NL Leid 4  4  36  13   1-  5- 14+  8- 15+ 11+  6+  2-  |10250603
+  8 Verhagen Rudi           5d NL Ensc 4  4  34  12   2-  4- 16+  7+  5- 10+ 12+  3-  |10213610
+  9 Westhoff Gerald         6d NL Leid 4  4  30  10  12- 14+ 15+  3- 11+  2-  5- 13+  |10233597
+ 10 Pomstra Willem-Koen     4d NL Tilb 4  4  28   8  11- 16+  3- 13+  1-  8- 14+ 12+  |10249602
+ 11 Nijhuis Caspar          4d NL Amst 4  4  27  10  10+  6-  4- 15+  9-  7- 16+ 14+  |10298024
+ 12 Dongen Stijn_van        3d NL Amst 3  3  34   9   9+ 15+  1-  4- 14+  3-  8- 10-  |10237612
+ 13 Vos Dave_de             3d NL Tilb 2  2  30   5   4+  2-  5- 10- 16- 14-  0+  9-  |10249613
+ 14 Westhoff Arend-Jan      4d NL Zei  2  2  25   3  15-  9-  7- 16+ 12- 13+ 10- 11-  |10513217
+ 15 Gelderen Vincent_van    4d NL Rott 2  2  24   6  14+ 12-  9- 11-  7- 16+  0-  0-  |10201609
+ 16 Rutgers_Van_der_Loeff Arnoud 3d NL Amst 2  2  24   2   6- 10-  8- 14- 13+ 15- 11-  0+  |10437427

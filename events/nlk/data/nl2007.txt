@@ -1,0 +1,25 @@
+; TC[T070113F]
+; CL[A]
+; EV[38th Dutch Championship]
+; PC[NL, Amstelveen]
+; DT[2007-01-13,2007-01-28]
+; HA[h9]
+; KM[6.5]
+; TM[]
+;
+   1 Kuin Merlijn                   6d NL  Amvn     7     7    36    33     0   11-/b    8+/w   10+/w    7+/b    2+/b    5+/w    4+/b    3+/w |10233861
+   2 Groenen Geert                  6d NL  Leid     6     6    38    26     0   12+/w    9+/b    6+/w    3+/b    1-/w    4+/w    7+/b    5-/b |10501216
+   3 Nijhuis Emil                   6d NL  Amvn     5     5    38    20     1   14+/w    4+/b    7+/w    2-/w    5-/b   11+/w    6+/b    1-/b |10213027
+   4 Janssen Frank                  6d NL  Amvn     5     5    38    20     0   15+/b    3-/w    5+/b    9+/w    6+/b    2-/b    1-/w    7+/b |10298596
+   5 Rehm Robert                    5d NL  Amst     5     5    36    20     0   10-/b   13+/b    4-/w   15+/b    3+/w    1-/b    8+/w    2+/w |10237601
+   6 Vanderstappen Filip            5d NL  Leid     5     5    34    18     0   13+/w   10+/b    2-/b   11+/w    4-/w    8+/b    3-/w    9+/w |10250603
+   7 Barthel Floris                 3d NL  Utre     4     4    36    13     0    8+/b   11+/w    3-/b    1-/w      0+   12+/b    2-/w    4-/w |13013715
+   8 Pomstra Willem-Koen            5d NL  Arnh     4     4    34    13     0    7-/w    1-/b   13+/w   10+/b    9+/b    6-/w    5-/b   15+/w |10249602
+   9 Eijkhout Michiel               6d NL  Leid     4     4    33    13     1   16+/w    2-/w   12+/b    4-/b    8-/w   10+/b   11+/w    6-/b |10486410
+  10 Koster Bram                    3d NL  Utre     4     4    33    13     0    5+/w    6-/w    1-/b    8-/w   14+/b    9-/w   15+/w   12+/b |12862817
+  11 Vos Dave_de                    4d NL  Tilb     3     3    33    12     0    1+/w    7-/b   15+/w    6-/b   12+/w    3-/b    9-/b   14-/w |10249613
+  12 Vieveen Jos                    3d NL  Tilb     3     3    30     9     0    2-/b   16+/w    9-/w   14+/b   11-/b    7-/w   13+/w   10-/w |10549231
+  13 Spanhoff Frederik              2d NL  DHaa     3     3    27     7     0    6-/b    5-/w    8-/b   16-/w   15+/b   14+/w   12-/b      0+ |13062984
+  14 Westhoff Gerald                6d NL  Leid     3     3    25     8     0    3-/b   15-/w   16+/b   12-/w   10-/w   13-/b      0+   11+/b |10233597
+  15 Mallon Willem                  4d NL  Eind     2     2    28     4     0    4-/w   14+/b   11-/b    5-/w   13-/w      0+   10-/b    8-/b |10250801
+  16 Verhagen Rudi                  5d NL  Ensc     3     1    13     3     0    9-/b   12-/b   14-/w   13+/b      0=      0=      0=      0= |10213610

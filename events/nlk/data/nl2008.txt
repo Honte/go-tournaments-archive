@@ -1,0 +1,29 @@
+; TC[T080112F]
+; CL[A]
+; EV[39th Dutch Championship]
+; PC[NL, Amstelveen]
+; DT[2008-01-12,2008-01-27]
+; HA[h9]
+; KM[6.5]
+; TA[110]
+;
+  1 Kuin Merlijn            6d NL Amvn  7 7  38  32  11+/b  7+/w  2-/b  6+/w 13+/b 10+/b  4+/w  5+/w |10233861
+  2 Westhoff Gerald         6d NL Leid  6 6  40  30   8+/b  5+/w  1+/w 11+/b 10+/w  3+/b  6-/b  7-/w |10233597
+  3 Vanderstappen Filip     5d NL Leid  5 5  37  23   6+/w  4+/b 10-/w  5+/b  9+/w  2-/w 12-/b 14+/w |10250603
+  4 Guo Wangzi              3d NL Amst  5 5  37  20  12+/w  3-/w  7+/b  9-/w 17+/b  8+/w  1-/b 10+/b |10274176
+  5 Mallon Willem           4d NL Eind  5 5  37  19  14+/w  2-/b 18+/w  3-/w  7+/b  9+/b 10+/w  1-/b |10250801
+  6 Eijkhout Michiel        6d NL Leid  5 5  35  18   3-/b 12+/b 20+/w  1-/b 14+/w 13+/b  2+/w  8-/w |10486410
+  7 Nijhuis Emil            6d NL Amvn  5 5  34  17  16+/w  1-/b  4-/w 20+/b  5-/w 15+/w 13+/b  2+/b |10213027
+  8 Rehm Robert             5d NL Amst  5 5  32  18   2-/w 14-/b 12+/w 15+/b 11+/w  4-/b 18+/w  6+/b |10237601
+  9 Koster Bram             4d NL Utre  5 5  31  17  13-/w 17+/b 19+/w  4+/b  3-/b  5-/w 11+/b 12+/w |12862817
+ 10 Janssen Frank           6d NL Amvn  4 4  37  14  15+/w 19+/b  3+/b 13+/w  2-/b  1-/w  5-/b  4-/w |10298596
+ 11 Pomstra Willem-Koen     5d NL Arnh  4 4  33  10   1-/w 16+/b 15+/w  2-/w  8-/b 17+/b  9-/w 19+/b |10249602
+ 12 Barthel Floris          4d NL Utre  4 4  32  12   4-/b  6-/w  8-/b 16+/w 20+/b 14+/b  3+/w  9-/b |13013715
+ 13 Groenen Geert           6d NL DHaa  4 4  32  11   9+/b 20+/w 14+/b 10-/b  1-/w  6-/w  7-/w 18+/b |10501216
+ 14 Drost Andreas           4d NL Leid  3 3  32   9   5-/b  8+/w 13-/w 18+/b  6-/b 12-/w 17+/w  3-/b |10525218
+ 15 Geerlings Bert          3d NL Apel  3 3  27   6  10-/b 18+/w 11-/b  8-/w 19+/w  7-/b 16-/b 17+/w |10586235
+ 16 Engels Andre            3d NL Gron  3 3  23   6   7-/b 11-/w 17-/w 12-/b 18-/w 19+/b 15+/w 20+/w |10501106
+ 17 Eerbeek Marc            2d NL xxx   2 2  26   5  20-/b  9-/w 16+/b 19+/b  4-/w 11-/w 14-/b 15-/b |12933162
+ 18 Groeneveld Koos         3d NL Leid  2 2  26   4  19-/w 15-/b  5-/b 14-/w 16+/b 20+/w  8-/b 13-/w |12837825
+ 19 Chung Siu_Hong          1d NL Gron  2 2  24   3  18+/b 10-/w  9-/b 17-/w 15-/b 16-/w 20+/b 11-/w |13662583
+ 20 Vos Dave_de             4d NL Tilb  1 1  27   2  17+/w 13-/b  6-/b  7-/w 12-/w 18-/b 19-/w 16-/b |10249613

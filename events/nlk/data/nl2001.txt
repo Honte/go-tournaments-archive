@@ -1,0 +1,28 @@
+; TC[T010113D]
+; CL[A]
+; EV[32nd Dutch Championship]
+; PC[NL,Amsterdam]
+; DT[2001-01-13,2001-01-28]
+; KM[5.5]
+; TM[90]
+; HA[h9]
+;                        Dutch Championship, Amsterdam 2001
+;                            January 13-14, 27-28, 2001
+;
+;Pl     Name             Grade  Club   MM S SOS SDOS  1.    2.    3.    4.    5.    6.    7.    8. 
+  1 Guo Juan                5p NL Hilv  8 8  34  34  12+/w 11+/b  6+/w  2+/b  3+/w  5+/b  4+/w  8+/b  |10298013
+  2 Nijhuis Emil            5d NL Amst  5 5  37  19  10+/b 13+/w  7+/b  1-/w  4-/b  8+/w  3-/b  6+/b  |10213027
+  3 Eijkhout Michiel        5d NL Leid  5 5  35  18  15+/w  6-/b 12+/b  9+/w  1-/b  7+/w  2+/w  5-/w  |10486410
+  4 Rehm Robert             5d NL Alkm  5 5  33  18  13-/b 10-/w 16+/b 11+/w  2+/w  6+/b  1-/b  7+/w  |10237601
+  5 Groenen Geert           6d NL Leid  5 5  32  18  11-/b 12-/w 15+/b 13+/w  9+/b  1-/w  6+/w  3+/b  |10501216
+  6 Kuin Merlijn            4d NL Amvn  4 4  39  16   8+/b  3+/w  1-/b 14+/w  7+/b  4-/w  5-/b  2-/w  |10233861
+  7 Vanderstappen Filip     5d NL Leid  4 4  34  15  14+/w  9+/b  2-/w  8+/b  6-/w  3-/b 10+/w  4-/b  |10250603
+  8 Westhoff Gerald         6d NL Leid  4 4  33  12   6-/w 15+/b 11+/w  7-/w 14+/b  2-/b  9+/b  1-/w  |10233597
+  9 Dongen Stijn_van        4d NL Amst  4 4  29  11  16+/b  7-/w 10+/b  3-/b  5-/w 15+/b  8-/w 11+/w  |10237612
+ 10 Hofman Wim              2d NL Leid  4 4  28  13   2-/w  4+/b  9-/w 12+/b 15-/w 14+/b  7-/b 16+/w  |10237821
+ 11 Verhagen Rudi           5d NL Ensc  3 3  34  11   5+/w  1-/w  8-/b  4-/b 13+/w 16-/b 14+/w  9-/b  |10213610
+ 12 Westhoff Arend-Jan      4d NL Zei   3 3  32  10   1-/b  5+/b  3-/w 10-/w 16-/w 13+/b 15+/w 14-/b  |10513217
+ 13 Bloemena Marcel         3d NL Ensc  3 3  28   9   4+/w  2-/b 14-/w  5-/b 11-/b 12-/w 16+/w 15+/b  |10537219
+ 14 Rutgers_Van_der_Loeff Arnoud 4d NL Leid  3 3  27   8   7-/b 16+/w 13+/b  6-/b  8-/w 10-/w 11-/b 12+/w  |10437427
+ 15 Vos Dave_de             3d NL Tilb  2 2  30   6   3-/b  8-/w  5-/w 16+/b 10+/b  9-/w 12-/b 13-/w  |10249613
+ 16 Nijhuis Caspar          4d NL Amst  2 2  27   6   9-/w 14-/b  4-/w 15-/w 12+/b 11+/w 13-/b 10-/b  |10298024

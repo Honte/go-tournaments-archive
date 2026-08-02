@@ -1,0 +1,11 @@
+stages:
+  - type: tournament
+    file: nl1976final.txt
+    name: final
+    notes: played in autumn
+    dir: 1976/final
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true

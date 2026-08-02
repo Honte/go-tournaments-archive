@@ -1,0 +1,11 @@
+stages:
+  - type: tournament
+    file: nl1968final.txt
+    name: final
+    notes: played in autumn
+    dir: 1968/final
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true

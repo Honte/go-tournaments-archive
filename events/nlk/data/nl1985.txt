@@ -1,0 +1,13 @@
+; EV[16th Dutch Championship]
+;Gilles van Eeden won first 2 games (vs Frank Jannsen and Arend-Jan Westhoff), but later withdrawn and his games were nullified
+   1 Schlemper Ronald               7d NL  xxx      6     0     0      9+      6+      0+      3+      5+      2+
+   2 Janssen Frank                  4d NL  xxx      4  17.5     9      0+     11+      5-      4+      3+      1-
+   3 Westhoff Arend-Jan             3d NL  xxx      4  16.5   7.5     11+      0+      7+      1-      2-      5+
+   4 Aaij Rene                      4d NL  xxx      4    16   9.5     10+      5+      6-      2-      7+      9+
+   5 Rehm Robert                    5d NL  xxx      3  22.5   9.5      7+      4-      2+      6+      1-      3-
+   6 Puyt Erik                      4d NL  xxx      3    20   8.5      8+      1-      4+      5-      9+      7-
+   7 Eijkhout Michiel               3d NL  xxx      3  17.5     6      5-     10+      3-      8+      4-      6+
+   8 Solleveld Leo                  2d NL  xxx      3    13   6.5      6-      9+     11+      7-     10-      0+
+   9 Gooskens Mark                  4d NL  xxx      2    18     3      1-      8-     10+     11+      6-      4-
+  10 Dongen Adrie_van               2d NL  xxx      2    13   2.5      4-      7-      9-      0+      8+     11-
+  11 Wiersma Ruurd                  2d NL  xxx      2    13   1.5      3-      2-      8-      9-      0+     10+

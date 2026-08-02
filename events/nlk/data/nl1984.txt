@@ -1,0 +1,14 @@
+; EV[15th Dutch Championship]
+; Vermaseren won the decider for the 6th place 
+   1 Schlemper Ronald               6d NL  xxx      6    20    20      8+      2+      3+      4+      5+      7+
+   2 Eeden Gilles_van               4d NL  xxx      5    21     5      4+      1-      6+      3+     10+      5+
+   3 Rehm Robert                    5d NL  xxx      4    20     9     12+      9+      1-      2-      6+      4+
+   4 Puyt Erik                      4d NL  xxx      3    22     7      2-      8+      5+      1-      9+      3-
+   5 Westhoff Arend-Jan             3d NL  xxx      3    21     7     11+      7+      4-      9+      1-      2-
+   6 Vermaseren Jos                 3d NL  xxx      3    16     5      9-     12+      2-     11+      3-     10+
+   7 Groenhuis Marc                 1d NL  xxx      3    16     5     10+      5-      8-     12+     11+      1-
+   8 Boon Mark                      2d NL  xxx      2    17     5      1-      4-      7+     10-     12-      9+
+   9 Wiersma Ruurd                  2d NL  xxx      2    16     5      6+      3-     11+      5-      4-      8-
+  10 Eijkhout Michiel               3d NL  xxx      2    16     3      7-     11-     12+      8+      2-      6-
+  11 Rijkers Machiel                2d NL  xxx      2    14     3      5-     10+      9-      6-      7-     12+
+  12 Dongen Adrie_van               1k NL  xxx      1    16     2      3-      6-     10-      7-      8+     11-

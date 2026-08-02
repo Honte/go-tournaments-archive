@@ -1,0 +1,25 @@
+; TC[T050115B]
+; CL[A]
+; KM[6.5]
+; TM[90]
+; HA[h9]
+; EV[36th Dutch Championship]
+; PC[NL, Amstelveen, EGCC]
+; DT[2005-01-15,2005-01-30]
+;
+  1 Janssen Frank           6d NL Amvn  6 38  27   0  11+/b  3-/w 10+/b  4+/w  2-/b  7+/w  5+/b  6+/w  |10298596
+  2 Kuin Merlijn            5d NL Amvn  6 35  25   0   4-/w 15+/b  8+/b 14+/w  1+/w  5+/b  6+/w  7-/b  |10233861
+  3 Eijkhout Michiel        6d NL Leid  5 38  23   0  10+/w  1+/b  4+/b  5-/w  8+/w  6-/b  7-/w 12+/b  |10486410
+  4 Rehm Robert             5d NL Amst  5 37  21   0   2+/b  6+/b  3-/w  1-/b 13+/w 10+/b 11+/w  8-/w  |10237601
+  5 Groenen Geert           6d NL DHaa  5 37  20   0  13+/w  7+/b  9+/w  3+/b  6-/b  2-/w  1-/w 11+/b  |10501216
+  6 Nijhuis Emil            6d NL Amst  5 36  19   0  15+/b  4-/w 12+/b  9+/b  5+/w  3+/w  2-/b  1-/b  |10213027
+  7 Westhoff Gerald         6d NL Leid  5 32  19   0  12+/b  5-/w 14-/b 16+/w  9+/w  1-/b  3+/b  2+/w  |10233597
+  8 Vanderstappen Filip     5d NL Leid  5 30  15   0  16+/w  9-/b  2-/w 13+/w  3-/b 14+/w 10+/b  4+/b  |10250603
+  9 Verhagen Rudi           5d NL Ensc  4 30  12   0  14+/b  8+/w  5-/b  6-/w  7-/b 11-/w 13+/b 15+/w  |10213610
+ 10 Pomstra Willem-Koen     5d NL Tilb  4 30   9   0   3-/b 11+/w  1-/w 12+/b 14+/b  4-/w  8-/w 16+/b  |10249602
+ 11 Spruit Nico             4d NL Amst  3 30   9   0   1-/w 10-/b 16-/w 15+/b 12+/w  9+/b  4-/b  5-/w  |10233608
+ 12 Peters Taco             3d NL Ensc  3 28   6   0   7-/w 13+/b  6-/w 10-/w 11-/b 15+/b 16+/b  3-/w  |10262824
+ 13 Vieveen Jos             3d NL Tilb  3 27   5   0   5-/b 12-/w 15+/w  8-/b  4-/b 16+/w  9-/w 14+/b  |10549231
+ 14 Engels Andre            3d NL Gron  2 30   6   0   9-/w 16+/b  7+/w  2-/b 10-/w  8-/b 15-/w 13-/w  |10501106
+ 15 Drost Andreas           3d NL Leid  2 27   3   0   6-/w  2-/w 13-/b 11-/w 16+/b 12-/w 14+/b  9-/b  |10525218
+ 16 Vos Dave_de             4d NL Tilb  1 27   3   0   8-/b 14-/w 11+/b  7-/b 15-/w 13-/b 12-/w 10-/w  |10249613

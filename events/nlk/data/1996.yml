@@ -1,0 +1,16 @@
+stages:
+  - type: tournament
+    name: championship
+    file: nl1996.txt
+    scoringColumns: 
+      - wins     
+      - null      
+      - sos
+      - sodos
+      - direct
+    breakers:
+      - wins
+      - sos
+      - sodos
+      - direct
+    findSharedPlaces: true

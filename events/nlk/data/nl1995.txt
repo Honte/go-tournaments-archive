@@ -1,0 +1,17 @@
+; EV[26th Dutch Championship]
+   1 Eeden Gilles_van               5D NL  xxx      7    32    26     12+     16+     13+      5+      6+      3+      2-      4+
+   2 Westhoff Gerald                5D NL  xxx      6    38    28      6+      5-      4+      9+      3-      8+      1+      7+
+   3 Boon Mark                      5D NL  xxx      6    37    26      8+      4+      5-     12+      2+      1-      7+      6+
+   4 Janssen Frank                  6D NL  xxx      5    34    15     14+      3-      2-     16+     13+      6+      5+      1-
+   5 Pomstra Willem-Koen            3D NL  xxx      4    40    20      7+      2+      3+      1-      8-      9+      4-     10-
+   6 Rehm Robert                    5D NL  xxx      4    36    12      2-      7+     15+     13+      1-      4-     12+      3-
+   7 Verhagen Rudi                  4D NL  xxx      4    35    15      5-      6-     11+     10+      9+     12+      3-      2-
+   8 Claasen Tonny                  4D NL  xxx      4    32    13      3-     14+     12-     15+      5+      2-     10+     11-
+   9 Gelderen Vincent_van           3D NL  xxx      4    27    10     11+     13-     16+      2-      7-      5-     14+     15+
+  10 Nijhuis Caspar                 3D NL  xxx      4    24    12     16-     12-     14+      7-     15+     13+      8-      5+
+  11 Vos Dave_de                    3D NL  xxx      4    24    11      9-     15-      7-     14+     12-     16+     13+      8+
+  12 Warnaar Walther                4D NL  xxx      3    36    12      1-     10+      8+      3-     11+      7-      6-     14-
+  13 Hendriks Willy                 3D NL  xxx      3    31     7     15+      9+      1-      6-      4-     10-     11-     16+
+  14 Henselmans Erik                3D NL  xxx      3    27     6      4-      8-     10-     11-     16+     15+      9-     12+
+  15 Rosendal Auke                  3D NL  xxx      2    27     5     13-     11+      6-      8-     10-     14-     16+      9-
+  16 Spruit Nico                    3D NL  xxx      1    32     4     10+      1-      9-      4-     14-     11-     15-     13-

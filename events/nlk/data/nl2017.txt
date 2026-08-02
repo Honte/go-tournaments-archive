@@ -1,0 +1,28 @@
+; TC[T170114F]
+; CL[A]
+; EV[48th Dutch Championship]
+; PC[NL, Amstelveen]
+; DT[2017-01-14,2017-01-29]
+; HA[h9]
+; KM[6.5]
+; TM[112.5]
+; CM[ (submitted by Herman Hiddema)]
+;.
+ 1 Janssen Frank       5d NL  xxxx  8    8    35   35   6+/b    18+/w   8+/b    2+/w    13+/w   4+/b    3+/w    5+/w     |10298596
+ 2 Eerbeek Alexander   5d NL  xxxx  6    6    35.5 22.5 10+/b   15+/w   4+/w    1-/b    3-/w    13+/b   7+/w    9+/b     |13501356
+ 3 Groenen Geert       6d NL  DHaa  5    5    38   21   11+/b   4-/w    10+/w   5+/w    2+/b    7-/b    1-/b    15+/w    |10501216
+ 4 Zeijst Rob_van      7d NL  xxxx  5    5    38   19   16+/w   3+/b    2-/b    12+/b   11+/w   1-/w    5-/w    8+/b     |10337382
+ 5 Kuin Merlijn        6d NL  Amvn  5    5    37   20   13+/w   14+/b   7-/w    3-/b    10+/w   6+/w    4+/b    1-/b     |10233861
+ 6 Eeden Gilles_van    6d NL  Nijm  5    5    33.5 17.5 1-/w    13-/b   9+/b    14+/w   16+/w   5-/b    12+/w   7+/w     |10201598
+ 7 Eijkhout Michiel    5d NL  xxxx  4    4    34.5 17.5 14-/b   11+/w   5+/b    13-/w   12+/w   3+/w    2-/b    6-/b     |10486410
+ 8 Verhagen Rudi       4d NL  Ensc  4    4    32   12.5 17+/b   12+/b   1-/w    16-/b   9-/w    14+/b   10+/w   4-/w     |10213610
+ 9 Drost Andreas       4d NL  Leid  4    4    31.5 12.5 12-/w   10-/b   6-/w    18+/b   8+/b    11+/b   13+/w   2-/w     |10525218
+10 Ouweleen Kim        4d NL  Amst  4    4    31   11   2-/w    9+/w    3-/b    15+/w   5-/b    17+/b   8-/b    14+/w    |14633652
+11 Hiddema Herman      4d NL  Gron  4    3.5  29   9.25 3-/w    7-/b    14+/w   17+/b   4-/b    9-/w    0+      13+/b    |10550573
+12 Aaij Rene           4d NL  Gron  4    4    28.5 10.5 9+/b    8-/w    15+/b   4-/w    7-/b    16+/w   6-/b    17+/w    |10537560
+13 Rehm Robert         5d NL  Amst  3    3    37   10.5 5-/b    6+/w    17+/w   7+/b    1-/b    2-/w    9-/b    11-/w    |10237601
+14 Nederveen Gerard    2d NL  xxxx  3    3    29.5 8    7+/w    5-/w    11-/b   6-/b    15+/b   8-/w    17+/w   10-/b    |16598461
+15 Jong Jord_de        1d NL  Gron  3    2.5  29   5.75 18+/w   2-/b    12-/w   10-/b   14-/w   0+      16+/b   3-/b     |16825413
+16 Chung Siu_Hong      3d NL  Gron  3    2.5  26.5 7.25 4-/b    17-/w   18+/b   8+/w    6-/b    12-/b   15-/w   0+       |13662583
+17 Cornelissen Ruben   4d NL  DHaa  2    1.5  25.5 3.25 8-/w    16+/b   13-/b   11-/w   0+      10-/w   14-/b   12-/b    |13262865
+18 Schuurink Ivo       2d NL  Wage  0    2    25   4    15-/b   1-/b    16-/w   9-/w    0-      0-      0-      0-       |13574836

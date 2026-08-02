@@ -32,6 +32,7 @@ Available event directories:
 | `ewgc`   | European Women Go Championships   | Locale `en`, country stats                                                       |
 | `eygc`   | European Youth Championships      | Locale `en`, country stats, category stats for `u21`, `u20`, `u18`, `u16`, `u12` |
 | `hrgc`   | Croatian Go Championships         | Locale `en`                                                                      |
+| `nlk`    | Dutch Go Championships            | Locale `en`                                                                      |
 | `iegc`   | Irish Go Championships            | Locale `en`                                                                      |
 | `kpmc`   | Korea Prime Minister Cup          | Locales `en`, `pl`, country stats                                                |
 | `pagc`   | Polish Academic Go Championships  | Locales `pl`, `en`                                                               |
