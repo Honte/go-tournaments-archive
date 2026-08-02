@@ -1,6 +1,7 @@
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import type { InputTournamentStage } from '@/schema/input';
+import { JIGO } from '@/libs/games';
 import { buildLocalGameId, type H9Player, parseH9 } from '@/libs/h9';
 import type { EventPlayer } from '@/data/eventPlayers';
 import { GAME_REGEX } from '@/data/games';
@@ -341,7 +342,7 @@ export function buildGamesMap(results: H9Player[]): Map<string, H9GameRecord> {
         round: game.round,
         winnerPlace,
         homeColor: isHomePlayer ? myColor : opponentColor,
-        winnerColor: winnerPlace === myPlace ? myColor : opponentColor,
+        winnerColor: winnerPlace === null ? undefined : winnerPlace === myPlace ? myColor : opponentColor,
       });
     }
   }
@@ -381,6 +382,11 @@ function buildImplicitMatchResult(
     (h9Record && black === h9Record.homePlace ? h9Record.awayPlace : h9Record?.homePlace) ??
     UNKNOWN_PLACE;
   let { winnerPlace, resultStr } = formatSgfWinner(sgf, places);
+
+  if (resultStr === null && h9Record?.winnerPlace === null) {
+    winnerPlace = null;
+    resultStr = JIGO;
+  }
 
   if (resultStr === null && h9Record?.winnerPlace !== null && h9Record?.winnerPlace !== undefined) {
     winnerPlace = h9Record.winnerPlace;

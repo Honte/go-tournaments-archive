@@ -1,4 +1,5 @@
 import type { PlayerResult, PlayerStats } from '@/schema/data';
+import { getGameStats } from '@/libs/games';
 
 export function getPlayerAvailableCategories(player: PlayerStats, categories: readonly string[]) {
   const available = new Set<string>();
@@ -22,6 +23,7 @@ export function filterPlayerStatsByCategory(player: PlayerStats, category: strin
   const medals = player.categoriesMedals[category] ?? [[], [], []];
   let totalGames = 0;
   let totalWon = 0;
+  let totalDrawn = 0;
   let totalSgfs = 0;
   let bestPlace = Infinity;
 
@@ -36,11 +38,11 @@ export function filterPlayerStatsByCategory(player: PlayerStats, category: strin
         continue;
       }
 
-      const games = stage.games.length;
-      const won = stage.games.reduce((total, game) => total + Number(game.won), 0);
+      const outcomes = getGameStats(stage.games);
 
-      totalGames += games;
-      totalWon += won;
+      totalGames += outcomes.games;
+      totalWon += outcomes.won;
+      totalDrawn += outcomes.drawn;
       totalSgfs += stage.games.filter((game) => game.props?.sgf).length;
 
       for (const game of stage.games) {
@@ -86,6 +88,7 @@ export function filterPlayerStatsByCategory(player: PlayerStats, category: strin
     bestPlace,
     totalGames,
     totalWon,
+    totalDrawn,
     totalAttended: results.length,
     totalSgfs,
     score: gold.length * 10_000 + silver.length * 100 + bronze.length,

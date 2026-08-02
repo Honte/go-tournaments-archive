@@ -1,3 +1,4 @@
+import { JIGO } from '@/libs/games';
 import { hasSgfFilenameSpaces } from './sgf';
 import { type SgfInfo, type SgfPlaces, UNKNOWN_PLACE, type UnknownPlace } from './types';
 
@@ -7,7 +8,7 @@ export const OGS_CONFLICT_REASON = 'ogs conflict';
 export const RESULT_CONFLICT_REASON = 'result conflict';
 
 export type WinnerPart = {
-  winnerPlace: number | UnknownPlace;
+  winnerPlace: number | UnknownPlace | null;
   resultStr: string | null;
 };
 
@@ -26,6 +27,10 @@ export function getSgfRound(sgf: SgfInfo): number | null {
 
 export function formatSgfWinner(sgf: SgfInfo, places: SgfPlaces): WinnerPart {
   const { cleanResult } = sgf;
+
+  if (cleanResult === JIGO) {
+    return { winnerPlace: null, resultStr: JIGO };
+  }
 
   if (!cleanResult || (cleanResult[0] !== 'B' && cleanResult[0] !== 'W')) {
     return { winnerPlace: UNKNOWN_PLACE, resultStr: null };

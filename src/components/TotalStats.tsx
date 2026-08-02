@@ -21,6 +21,7 @@ export function TotalStats({ translations, stats }: TotalStatsProps) {
     { label: t('stats.total.tournaments'), value: stats.tournaments },
     { label: t('stats.total.participants'), value: stats.players },
     { label: t('stats.total.games'), value: stats.playedGames },
+    { label: t('stats.total.draws'), value: stats.draws },
     { label: t('stats.total.black'), value: stats.black, formattedValue: `${(stats.black * 100).toFixed(2)}%` },
     { label: t('stats.total.resigned'), value: stats.resign },
     { label: t('stats.total.timeout'), value: stats.timeout },

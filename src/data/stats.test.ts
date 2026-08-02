@@ -11,6 +11,75 @@ import { getCountryCategoryPageOptionsFromStats } from '@/components/pages/Count
 import { getPlayerCategoryPageOptionsFromStats } from '@/components/pages/PlayerPage';
 
 describe('calculateStats', () => {
+  it('aggregates draws without treating them as losses and keeps excluded games in global totals', () => {
+    const playersHandler = createPlayersHandler();
+    const players = playersHandler.loadJson({
+      a: 'Alice Nowak 1d (PL)',
+      b: 'Bob Smith 1k (DE)',
+      c: 'Carol Lee 2k (FR)',
+    });
+    const games: Record<string, Game> = {
+      g1: {
+        id: 'g1',
+        stage: 0,
+        players: [
+          { id: 'a', won: false },
+          { id: 'b', won: false },
+        ],
+        result: 'jigo',
+        draw: true,
+        props: {},
+      },
+      g2: {
+        id: 'g2',
+        stage: 1,
+        players: [
+          { id: 'b', won: true },
+          { id: 'c', won: false },
+        ],
+        result: 'B+R',
+        draw: false,
+        props: {},
+      },
+    };
+    const tournament = createTournament(players, games);
+    const main = tournament.stages[0];
+
+    if (main.type !== 'league') {
+      throw new Error('Expected league stage');
+    }
+
+    for (const player of main.table) {
+      const game = player.games.find((entry) => entry?.game === 'g1');
+
+      if (game) {
+        game.won = false;
+        game.drawn = true;
+        game.result = '0';
+      }
+
+      player.won = [];
+      player.drawn = [player.id === 'a' ? 'b' : 'a'];
+      player.lost = [];
+    }
+
+    const stats = calculateStats(creteEventConfig(), [tournament], playersHandler);
+    const alice = stats.players[players.a.id];
+    const bob = stats.players[players.b.id];
+
+    assert.equal(stats.summary.playedGames, 2);
+    assert.equal(stats.summary.draws, 1);
+    assert.equal(stats.summary.black, 0.5);
+    assert.equal(alice.totalGames, 2);
+    assert.equal(alice.totalWon, 1);
+    assert.equal(alice.totalDrawn, 1);
+    assert.equal(bob.totalGames, 1);
+    assert.equal(bob.totalWon, 0);
+    assert.equal(bob.totalDrawn, 1);
+    assert.equal(stats.countries.PL.totalDrawn, 1);
+    assert.equal(stats.countries.DE.totalDrawn, 1);
+  });
+
   it('skips excluded stages for player and country stats while keeping global games', () => {
     const playersHandler = createPlayersHandler();
     const players = playersHandler.loadJson({
@@ -27,6 +96,7 @@ describe('calculateStats', () => {
           { id: 'b', won: false },
         ],
         result: 'B+R',
+        draw: false,
         props: { sgf: '2025/g1.sgf' },
       },
       g2: {
@@ -37,6 +107,7 @@ describe('calculateStats', () => {
           { id: 'c', won: false },
         ],
         result: 'B+T',
+        draw: false,
         props: { yt: 'stream' },
       },
     };
@@ -192,6 +263,7 @@ describe('calculateStats', () => {
                 { id: 'b', won: false },
               ],
               result: 'B+R',
+              draw: false,
               props: { sgf: '2025/g1.sgf' },
             },
           },
@@ -381,6 +453,7 @@ function createTournament(
                 game: 'g1',
                 opponent: 'b',
                 won: true,
+                drawn: false,
                 result: 'B+R',
                 index: 2,
               },
@@ -388,11 +461,13 @@ function createTournament(
                 game: 'bye',
                 opponent: 'BYE',
                 won: true,
+                drawn: false,
                 result: 'BYE',
                 index: 0,
               },
             ],
             won: ['b'],
+            drawn: [],
             lost: [],
             breakers: createBreakers(1),
             ...(playerCategories.a ? { categories: playerCategories.a } : {}),
@@ -406,11 +481,13 @@ function createTournament(
                 game: 'g1',
                 opponent: 'a',
                 won: false,
+                drawn: false,
                 result: 'B+R',
                 index: 1,
               },
             ],
             won: [],
+            drawn: [],
             lost: ['a'],
             breakers: createBreakers(0),
             ...(playerCategories.b ? { categories: playerCategories.b } : {}),
@@ -432,11 +509,13 @@ function createTournament(
                 game: 'g2',
                 opponent: 'c',
                 won: true,
+                drawn: false,
                 result: 'B+T',
                 index: 2,
               },
             ],
             won: ['c'],
+            drawn: [],
             lost: [],
             breakers: createBreakers(1),
           },
@@ -449,11 +528,13 @@ function createTournament(
                 game: 'g2',
                 opponent: 'b',
                 won: false,
+                drawn: false,
                 result: 'B+T',
                 index: 1,
               },
             ],
             won: [],
+            drawn: [],
             lost: ['b'],
             breakers: createBreakers(0),
           },

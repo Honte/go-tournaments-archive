@@ -5,6 +5,7 @@ import type {
   InputRoundRobinTableStage,
   InputTournament,
 } from '@/schema/input';
+import { JIGO } from '@/libs/games';
 import type { EventPlayer } from '@/data/eventPlayers';
 import { GAME_REGEX } from '@/data/games';
 import { createPlayersHandler, getPlayerHash, getPlayerSlug } from '@/data/players';
@@ -36,7 +37,7 @@ type ExplicitGameEntry = {
   raw: string;
   home: string;
   away: string;
-  winner: string;
+  winner: string | null;
   result: string | null;
   props: Record<string, string>;
   round: number | null;
@@ -296,9 +297,9 @@ function parseExplicitEntry(
     return null;
   }
 
-  const { home, away, winner, result, props } = match.groups!;
+  const { home, away, draw, winner, result, props } = match.groups!;
 
-  if ([home, away, winner].some((id) => id.toLowerCase() === 'bye')) {
+  if ([home, away, winner].some((id) => id?.toLowerCase() === 'bye')) {
     return null;
   }
 
@@ -310,8 +311,8 @@ function parseExplicitEntry(
     raw,
     home,
     away,
-    winner,
-    result: result ?? null,
+    winner: draw ? null : winner,
+    result: draw ? JIGO : (result ?? null),
     props: restProps,
     round,
     index,
@@ -340,7 +341,11 @@ function getMatchedExplicitSgfResult(
   entry: ExplicitGameEntry,
   sgf: SgfInfo,
   players: ExplicitPlayerIds
-): { winner: string; result: string } | null {
+): { winner: string | null; result: string } | null {
+  if (sgf.cleanResult === '0') {
+    return { winner: null, result: '0' };
+  }
+
   if (!sgf.cleanResult || (sgf.cleanResult[0] !== 'B' && sgf.cleanResult[0] !== 'W')) {
     return null;
   }
@@ -509,7 +514,7 @@ function buildExplicitMatchResult(sgf: SgfInfo, players: ExplicitPlayerIds): Sgf
   return {
     black,
     white,
-    winner: winnerPlace === 1 ? black : winnerPlace === 2 ? white : UNKNOWN_PLACE,
+    winner: winnerPlace === null ? null : winnerPlace === 1 ? black : winnerPlace === 2 ? white : UNKNOWN_PLACE,
     result: resultStr,
     sgf: sgf.path,
     props: {

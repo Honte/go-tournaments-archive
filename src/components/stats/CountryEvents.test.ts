@@ -98,12 +98,14 @@ function createCountry(results: CountryStats['years'][number]['results']): Count
     bestPlace,
     totalGames: 0,
     totalWon: 0,
+    totalDrawn: 0,
     years: {
       2025: {
         year: 2025,
         bestPlace,
         totalGames: 0,
         totalWon: 0,
+        totalDrawn: 0,
         results,
       },
     },
@@ -133,6 +135,7 @@ function createGame(won: boolean): PlayerGame {
   return {
     id: 'opponent',
     won,
+    drawn: false,
     result: won ? 'B+R' : 'W+R',
   };
 }

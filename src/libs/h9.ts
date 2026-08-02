@@ -96,22 +96,7 @@ export function parseH9(input: string): H9Tournament {
         continue;
       }
 
-      const match = GAME_REGEX.exec(value);
-
-      if (value === '?' || value === '0=' || !match) {
-        games.push(null);
-      } else {
-        const { opponent, result, color, handicap, modifier } = match.groups!;
-
-        games.push({
-          round: colsRounds.indexOf(col) + 1,
-          color: color ? (color === 'w' ? 'white' : 'black') : undefined,
-          handicap: handicap ? parseInt(handicap, 10) : undefined,
-          opponent: Number(opponent),
-          modifier: modifier as H9Game['modifier'],
-          result: result as H9Game['result'],
-        });
-      }
+      games.push(parseH9Game(value, colsRounds.indexOf(col) + 1));
     }
 
     results.push({
@@ -143,26 +128,46 @@ export function parseH9(input: string): H9Tournament {
 }
 
 function getColumnsWithGames(table: string[][]) {
-  const results = new Set<number>();
+  const results: Record<string, number> = {};
 
   for (const player of table) {
     for (let col = FIRST_GAME_COLUMN; col < player.length; col++) {
       const index = col - FIRST_GAME_COLUMN;
+      const value = player[col];
 
-      if (results.has(index)) {
-        continue;
-      }
+      results[index] ||= 0;
 
-      const match = player[col]?.match(GAME_REGEX);
-
-      // ignore jigo results as it may be used as fraction in score
-      if (match && match.groups?.result !== '=') {
-        results.add(index);
+      if (!value || value === '-' || value === '?' || value?.match(GAME_REGEX)) {
+        results[index]++;
       }
     }
   }
 
-  return results;
+  // round is only when all values are expected (is a game or is a game skip)
+  return new Set(
+    Object.keys(results)
+      .filter((index) => results[index] === table.length)
+      .map(Number)
+  );
+}
+
+function parseH9Game(value: string, round: number): H9Game | null {
+  const match = GAME_REGEX.exec(value);
+
+  if (value === '?' || !match || (match.groups?.opponent === '0' && match.groups.result === '=')) {
+    return null;
+  }
+
+  const { opponent, result, color, handicap, modifier } = match.groups!;
+
+  return {
+    round,
+    color: color ? (color === 'w' ? 'white' : 'black') : undefined,
+    handicap: handicap ? parseInt(handicap, 10) : undefined,
+    opponent: Number(opponent),
+    modifier: modifier as H9Game['modifier'],
+    result: result as H9Game['result'],
+  };
 }
 
 function parseLocation(location?: string) {

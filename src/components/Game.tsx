@@ -40,7 +40,12 @@ export function Game({ event, className, game, players, translations, title, wid
           <img src={gameThumbUrl(event, preview)} alt={gameTitle} className="size-20" loading="lazy" />
         </GameViewerTrigger>
       )}
-      <div className="flex flex-col">
+      <div
+        className={clsx('flex flex-col', {
+          'underline decoration-dotted cursor-help': game.draw,
+        })}
+        title={game.draw ? t('game.draw') : undefined}
+      >
         <div
           className={clsx('flex justify-center', {
             'flex-col': hasSgf || !wide,

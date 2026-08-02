@@ -20,10 +20,13 @@ export function createFinalTable({
   const players: Record<string, FinalPlayerEntry> = {};
 
   for (const id of games) {
-    const [a, b] = gamesMap[id].players;
+    const {
+      draw,
+      players: [a, b],
+    } = gamesMap[id];
 
-    addGame(a, b.id, id);
-    addGame(b, a.id, id);
+    addGame(a, b.id, id, draw);
+    addGame(b, a.id, id, draw);
   }
 
   const [home, away] = Object.keys(players);
@@ -33,8 +36,8 @@ export function createFinalTable({
       if (!games.includes(game.id)) {
         const [a, b] = game.players;
 
-        addGame(a, b.id, game.id);
-        addGame(b, a.id, game.id);
+        addGame(a, b.id, game.id, game.draw);
+        addGame(b, a.id, game.id, game.draw);
 
         players[a.id].prevScore = Number(a.won);
         players[b.id].prevScore = Number(b.won);
@@ -43,14 +46,14 @@ export function createFinalTable({
     }
   }
 
-  const result = players[home].wins > players[away].wins ? [home, away] : [away, home];
+  const result = players[home].wins >= players[away].wins ? [home, away] : [away, home];
 
   return result.map((p, index) => ({
     ...players[p],
     place: index + 1,
   }));
 
-  function addGame(player: GamePlayer, opponent: string, game: string) {
+  function addGame(player: GamePlayer, opponent: string, game: string, drawn: boolean) {
     players[player.id] ||= {
       id: player.id,
       place: 0,
@@ -62,6 +65,7 @@ export function createFinalTable({
     players[player.id].games.push({
       opponent,
       won: player.won,
+      drawn,
       result: '',
       game,
     });

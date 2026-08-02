@@ -6,6 +6,7 @@ import type { PlayerStats, Stage } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
+import { getGameStats } from '@/libs/games';
 import { getStageName } from '@/libs/stage';
 import { toPercentage } from '@/libs/table';
 import { StatsTable } from '@/components/table/StatsTable';
@@ -30,6 +31,7 @@ type EventRow = {
   games: number;
   country?: string;
   won: number;
+  drawn: number;
   lost: number;
   wonPercent: number;
 };
@@ -47,8 +49,7 @@ export function PlayerEvents({
 
     for (const event of player.results) {
       for (const stage of event.stages) {
-        const games = stage.games.length;
-        const won = stage.games.reduce((acc, game) => acc + (game.won ? 1 : 0), 0);
+        const outcomes = getGameStats(stage.games);
 
         results.push({
           year: event.year,
@@ -58,10 +59,7 @@ export function PlayerEvents({
             name: stage.name,
             type: stage.type,
           },
-          won,
-          games,
-          lost: games - won,
-          wonPercent: won / games,
+          ...outcomes,
           country: event.country,
           place: stage.place,
           rank: event.rank,
@@ -74,6 +72,7 @@ export function PlayerEvents({
 
   const hasMultipleNames = new Set(data.map((row) => row.name)).size > 1;
   const hasMultipleCountries = new Set(data.map((row) => row.country)).size > 1;
+  const hasDraws = data.some((row) => row.drawn > 0);
 
   const columns = useMemo<ColumnDef<EventRow>[]>(
     () =>
@@ -125,6 +124,10 @@ export function PlayerEvents({
             accessorKey: 'won',
             header: t('table.won'),
           },
+          hasDraws && {
+            accessorKey: 'drawn',
+            header: t('table.drawn'),
+          },
           {
             accessorKey: 'lost',
             header: t('table.lost'),
@@ -136,7 +139,7 @@ export function PlayerEvents({
           },
         ] as ColumnDef<EventRow>[]
       ).filter(Boolean),
-    [translations, hasMultipleNames, hasMultipleCountries, event, t, showCategories]
+    [translations, hasMultipleNames, hasMultipleCountries, hasDraws, event, t, showCategories]
   );
 
   return (

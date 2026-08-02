@@ -6,6 +6,40 @@ import type { H9GameRecord, ParsedGameEntry } from './types';
 import { normalizePlayerName, stringifyProps } from './utils';
 
 describe('matchImplicitSgfs', () => {
+  it('matches a jigo SGF to a jigo H9 game', () => {
+    const playersMap = buildPlayersMap([
+      makeH9Player({ place: 1, name: 'Black', surname: 'Player' }),
+      makeH9Player({ place: 2, name: 'White', surname: 'Player' }),
+    ]);
+    const gamesMap = new Map([
+      [
+        '1-2-1',
+        makeH9Record({
+          homePlace: 1,
+          awayPlace: 2,
+          round: 1,
+          winnerPlace: null,
+          homeColor: 'black',
+          winnerColor: undefined,
+        }),
+      ],
+    ]);
+    const sgf = makeSgfInfo({ rawResult: 'Draw', cleanResult: 'jigo' });
+
+    const result = matchImplicitSgfs({
+      sgfInfos: [sgf],
+      playersMap,
+      gamesMap,
+      existingGamesById: new Map(),
+      existingGamesBySgf: new Map(),
+      currentSgfPaths: new Set([sgf.path]),
+      force: false,
+    });
+
+    assert.deepEqual(result.matchedEntries, ['1-2 jigo round:1 sgf:2025/1-BlackPlayer-WhitePlayer.sgf']);
+    assert.deepEqual(result.unmatchedEntries, []);
+  });
+
   it('matches SGF names written in H9 surname-name order', () => {
     const playersMap = buildPlayersMap([
       makeH9Player({ place: 1, name: 'Hironori', surname: 'Hirata' }),

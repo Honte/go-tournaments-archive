@@ -3,7 +3,7 @@ import { stringifyProps } from '@tools/sgfMatcher/utils';
 export type SgfMatchResult = {
   black: string | number;
   white: string | number;
-  winner: string | number;
+  winner: string | number | null;
   result: string | null;
   sgf: string;
   props?: Record<string, string | undefined | null>;
@@ -16,7 +16,7 @@ export function buildEntryWithoutSgf(rawEntry: string): string {
 }
 
 export function buildSgfEntryString({ black, white, winner, result, sgf, props }: SgfMatchResult): string {
-  const winnerPart = result ? `${winner}:${result}` : String(winner);
+  const winnerPart = winner === null ? 'jigo' : result ? `${winner}:${result}` : String(winner);
   const { round, ...restProps } = props ?? {};
   const roundPart = round ? ` round:${round}` : '';
 

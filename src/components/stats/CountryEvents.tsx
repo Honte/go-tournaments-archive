@@ -6,6 +6,7 @@ import type { CountryStats } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
+import { getGameStats } from '@/libs/games';
 import { toPercentage } from '@/libs/table';
 import { StatsTable } from '@/components/table/StatsTable';
 import { H2 } from '@/components/ui/H2';
@@ -29,6 +30,7 @@ type CountryEventRow = {
   place: number | '?';
   games: number;
   won: number;
+  drawn: number;
   lost: number;
   wonPercent: number;
 };
@@ -110,6 +112,10 @@ export function CountryEvents({
             accessorKey: 'won',
             header: t('table.won'),
           },
+          data.some((row) => row.drawn > 0) && {
+            accessorKey: 'drawn',
+            header: t('table.drawn'),
+          },
           {
             accessorKey: 'lost',
             header: t('table.lost'),
@@ -121,7 +127,7 @@ export function CountryEvents({
           },
         ] as ColumnDef<CountryEventRow>[]
       ).filter(Boolean),
-    [translations, t, event, showCategories]
+    [translations, t, event, showCategories, data]
   );
 
   return (
@@ -176,8 +182,7 @@ export function getCountryEventRows({ country, showBestOnly, hasCategories, show
           continue;
         }
 
-        const games = stage.games.length;
-        const won = stage.games.reduce((acc, game) => acc + Number(game.won), 0);
+        const outcomes = getGameStats(stage.games);
 
         list.push({
           year: Number(year),
@@ -186,10 +191,7 @@ export function getCountryEventRows({ country, showBestOnly, hasCategories, show
           rank: result.rank,
           categories: showCategories && stage.categories ? Object.keys(stage.categories) : undefined,
           place: stage.place,
-          games,
-          won,
-          lost: games - won,
-          wonPercent: won / games,
+          ...outcomes,
         });
       }
     }

@@ -38,6 +38,7 @@ export function CountryPlayers({ event, country, translations }: CountryPlayerPr
           name: result.name,
           games: 0,
           won: 0,
+          drawn: 0,
           lost: 0,
           wonPercent: 0,
           attended: 0,
@@ -62,6 +63,7 @@ export function CountryPlayers({ event, country, translations }: CountryPlayerPr
         for (const stage of result.stages) {
           player.games += stage.games.length;
           player.won += stage.games.reduce((total, game) => total + Number(game.won), 0);
+          player.drawn += stage.games.reduce((total, game) => total + Number(game.drawn), 0);
         }
       }
     }
@@ -69,12 +71,13 @@ export function CountryPlayers({ event, country, translations }: CountryPlayerPr
     const list = Object.values(players);
 
     for (const player of list) {
-      player.lost = player.games - player.won;
+      player.lost = player.games - player.won - player.drawn;
       player.wonPercent = player.won / player.games;
     }
 
     return list.sort(sortTableStats);
   }, [country]);
+  const hasDraws = data.some((player) => player.drawn > 0);
 
   const columns = useMemo<ColumnDef<CountryPlayerRow>[]>(
     () =>
@@ -123,6 +126,10 @@ export function CountryPlayers({ event, country, translations }: CountryPlayerPr
             accessorKey: 'won',
             header: t('table.won'),
           },
+          hasDraws && {
+            accessorKey: 'drawn',
+            header: t('table.drawn'),
+          },
           {
             accessorKey: 'lost',
             header: t('table.lost'),
@@ -134,7 +141,7 @@ export function CountryPlayers({ event, country, translations }: CountryPlayerPr
           },
         ] as ColumnDef<CountryPlayerRow>[]
       ).filter(Boolean),
-    [translations, t, event]
+    [translations, t, event, hasDraws]
   );
 
   return (
