@@ -1,0 +1,11 @@
+stages:
+  - type: tournament
+    file: nl1970final.txt
+    name: final
+    notes: played in summer, first game on 20th July
+    dir: 1970/final
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true

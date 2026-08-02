@@ -1,0 +1,14 @@
+stages:
+  - type: tournament
+    name: championship
+    file: nl1984.txt
+    notes: Vermaseren won the decider for the 6th place 
+    scoringColumns: 
+      - wins          
+      - sos
+      - sodos
+    breakers:
+      - wins
+      - sos
+      - sodos
+    findSharedPlaces: true

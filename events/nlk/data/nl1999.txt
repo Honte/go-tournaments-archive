@@ -1,0 +1,28 @@
+; TC[T990116E]
+; CL[A]
+; EV[30th Dutch Championship]
+; PC[NL,Amsterdam]
+; DT[1999-01-16,1999-01-31]
+; KM[5.5]
+; TM[90]
+; HA[h9]
+;                        Dutch Championship 1999, Amsterdam
+;                           January 16-17 and 30-31, 1999
+;
+;Pl     Name             Grade  Club   MM S SOS SDOS  1.    2.    3.    4.    5.    6.    7.    8.
+  1 Guo Juan                5p NL Hilv  8 8  37  37 11+/w  4+/b  7+/w  2+/b  5+/w  8+/b  3+/w  9+/b  |10298013
+  2 Eeden Gilles_van        6d NL Nijm  6 6  37  24 15+/b  8+/w  5+/b  1-/w  3+/b  7+/w  4+/b  6-/w  |10201598
+  3 Groenen Geert           5d NL Leid  5 5  37  19 14+/w  7-/b  6+/w  4+/b  2-/w 10+/b  1-/b 12+/w  |10501216
+  4 Janssen Frank           6d NL Amvn  5 5  37  18 10+/w  1-/w  9+/b  3-/w 16+/b  5+/b  2-/w  7+/b  |10298596
+  5 Eijkhout Michiel        5d NL Leid  5 5  35  16 12+/b 13+/w  2-/w 10+/b  1-/b  4-/w  8+/w 14+/w  |10486410
+  6 Westhoff Gerald         6d NL Leid  5 5  31  19 13-/w 12+/w  3-/b  9+/w  7-/b 14+/b 10+/w  2+/b  |10233597
+  7 Vanderstappen Filip     4d NL Leid  4 4  37  14 16+/w  3+/w  1-/b 13+/b  6+/w  2-/b  9-/b  4-/w  |10250603
+  8 Rehm Robert             5d NL Alkm  4 4  35  12  9+/b  2-/b 10-/w 12+/b 11+/w  1-/w  5-/b 15+/w  |10237601
+  9 Nijhuis Caspar          4d NL Amst  4 4  34  12  8-/w 15+/w  4-/w  6-/b 12+/b 11+/b  7+/w  1-/w  |10298024
+ 10 Pomstra Willem-Koen     5d NL Tilb  4 4  32  12  4-/b 11+/b  8+/b  5-/w 13+/w  3-/w  6-/b 16+/b  |10249602
+ 11 Wiersma Ruurd           4d NL Gron  4 4  27   7  1-/b 10-/w 16+/b 14+/w  8-/b  9-/w 15+/b 13+/w  |10262615
+ 12 Kuin Merlijn            3d NL Amvn  3 3  27   4  5-/w  6-/b 15+/b  8-/w  9-/w 16+/w 14+/b  3-/b  |10233861
+ 13 Verhagen Rudi           5d NL Ensc  3 3  26   8  6+/b  5-/b 14+/w  7-/w 10-/b 15-/b 16+/w 11-/b  |10213610
+ 14 Kampwart Ad             3d NL Tilb  2 2  27   2  3-/b 16+/w 13-/b 11-/b 15+/w  6-/w 12-/w  5-/b  |10550562
+ 15 Schouten John           2d NL Eind  1 1  27   3  2-/w  9-/b 12-/w 16-/b 14-/b 13+/w 11-/w  8-/b  |10437438
+ 16 Drost Andreas           3d NL Leid  1 1  26   1  7-/b 14-/b 11-/w 15+/w  4-/w 12-/b 13-/b 10-/w  |10525218

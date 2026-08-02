@@ -1,0 +1,15 @@
+stages:
+  - type: tournament
+    name: championship
+    file: nl2017.txt
+    notes: for SOS 0+ wins are counted as 0.5
+    scoringColumns:
+      - wins
+      - null      
+      - sos
+      - sodos
+    breakers:
+      - wins
+      - sos
+      - sodos
+    findSharedPlaces: true

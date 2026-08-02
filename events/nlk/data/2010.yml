@@ -1,0 +1,28 @@
+top:
+  - ggroenen
+  - pbrouwer
+  - enijhuis
+stages:
+  - type: tournament
+    file: nl2010.txt
+    name: championship
+    dir: 2010/nlk
+    promoted: 2
+    scoringColumns:
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - wins
+      - sos
+      - sodos
+    findSharedPlaces: true
+  - type: tournament
+    file: nl2010playoff.txt
+    name: playoff
+    dir: 2010/playoff
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true

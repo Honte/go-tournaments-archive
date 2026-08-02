@@ -1,0 +1,9 @@
+name: 2nd Dutch Championship
+stages:
+ - type: classification
+   name: playoff
+   notes: exact results unknown, played in spring
+   order:
+    - Max Rebattu
+    - Henk_de Vries
+    - Mats Goemans

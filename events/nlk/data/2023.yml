@@ -1,0 +1,17 @@
+stages:
+  - type: tournament
+    name: championship
+    file: nl2023.txt
+    scoringColumns:
+      - mms
+      - wins
+      - null
+      - sos
+      - sodos
+    breakers:
+      - mms
+      - sos
+      - sodos
+    columns:  
+      - wins
+    findSharedPlaces: true

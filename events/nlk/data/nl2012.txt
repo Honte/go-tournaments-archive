@@ -1,0 +1,27 @@
+; TC[T120114H]
+; CL[A]
+; EV[43rd Dutch Championship]
+; PC[NL, Amstelveen]
+; DT[2012-01-14,2012-01-29]
+; HA[h9]
+; KM[6.5]
+; TM[112.5]
+; CM[ (submitted by Herman Hiddema)]
+;.
+; NK 2012
+ 1 Eerbeek Alexander      5d NL  Vink  7    7    34   271  12+/b0  14+/w0  3-/b0   13+/w0  7+/b0   2+/w0   5+/b0   4+/w0    |13501356
+ 2 Kuin Merlijn           6d NL  Amvn  6    6    37   260  13+/w0  5+/b0   9+/b0   3+/w0   4+/w0   1-/b0   8-/w0   7+/b0    |10233861
+ 3 Janssen Frank          6d NL  Alme  6    6    32   270  16+/b0  6+/b0   1+/w0   2-/b0   12+/w0  15+/b0  4-/b0   8+/w0    |10298596
+ 4 Eijkhout Michiel       6d NL  Leid  5    5    38   248  11+/b0  9-/w0   10+/b0  14+/w0  2-/b0   6+/b0   3+/w0   1-/b0    |10486410
+ 5 Groenen Geert          6d NL  DHaa  4    4    34   248  8+/b0   2-/w0   14-/b0  15-/w0  11+/w0  10+/b0  1-/w0   13+/w0   |10501216
+ 6 Rehm Robert            5d NL  Amst  4    4    32   253  7+/b0   3-/w0   12-/b0  10+/w0  14+/b0  4-/w0   13+/b0  11-/w0   |10237601
+ 7 Cremers Joost          4d NL  Eind  4    4    31   257  6-/w0   16+/w0  13-/b0  8+/b0   1-/w0   9+/w0   15+/b0  2-/w0    |12374164
+ 8 Ditzhuijzen Zeno_van   4d NL  Utre  4    4    30   263  5-/w0   13-/b0  16+/b0  7-/w0   9+/b0   12+/w0  2+/b0   3-/b0    |12698972
+ 9 Eeden Gilles_van       6d NL  Nijm  4    4    29   262  10+/w0  4+/b0   2-/w0   12-/b0  8-/w0   7-/b0   16+/w0  15+/w0   |10201598
+10 Brouwer Peter          6d NL  Amst  4    4    27   258  9-/b0   11+/w0  4-/w0   6-/b0   16+/b0  5-/w0   14+/b0  12+/w0   |10986514
+11 Pomstra Willem-Koen    5d NL  Arnh  4    4    26   261  4-/w0   10-/b0  15-/w0  16+/w0  5-/b0   14+/w0  12+/b0  6+/b0    |10249602
+12 Nijhuis Emil           6d NL  Amvn  3    3    36   241  1-/w0   15+/b0  6+/w0   9+/w0   3-/b0   8-/b0   11-/w0  10-/b0   |10213027
+13 Tel Michiel            3d NL  Gron  3    3    32   261  2-/b0   8+/w0   7+/w0   1-/b0   15-/b0  16+/w0  6-/w0   5-/b0    |14333682
+14 Aaij Rene              5d NL  Gron  3    3    31   254  15+/w0  1-/b0   5+/w0   4-/b0   6-/w0   11-/b0  10-/w0  16+/b0   |10537560
+15 Verhagen Rudi          5d NL  Ensc  3    3    31   251  14-/b0  12-/w0  11+/b0  5+/b0   13+/w0  3-/w0   7-/w0   9-/b0    |10213610
+16 Hiddema Herman         4d NL  Gron  0    0    32   238  3-/w0   7-/b0   8-/w0   11-/b0  10-/w0  13-/b0  9-/b0   14-/w0   |10550573

@@ -1,0 +1,27 @@
+; TC[T970118A]
+; CL[A]
+; EV[28th Dutch Championship]
+; PC[NL,Amsterdam]
+; DT[1997-01-18,1997-02-02]
+; KM[6=]
+; TM[90]
+; HA[h9]
+;                    Dutch Championship 1997, Amsterdam 1997
+;                     January 18-19 and February 1-2, 1997
+;
+;Pl     Name              Rank  Club   MM S SOS SDOS  1.   2.   3.   4.   5.   6.   7.   8.
+  1 Guo Juan                5p NL Hilv  8 8   1   1   8+   9+   4+   2+   5+   3+  11+   6+  |10298013
+  2 Janssen Frank           6d NL Amvn  7 7   1   1  13+   5+   3+   1-  10+   6+   4+   7+  |10298596
+  3 Eeden Gilles_van        5d NL Nijm  6 6   1   1  10+   7+   2-  12+   4+   1-   5+  14+  |10201598
+  4 Westhoff Gerald         6d NL Leid  5 5   1   1  11+  15+   1-   9+   3-   7+   2-   5+  |10233597
+  5 Pomstra Willem-Koen     4d NL Tilb  4 4  39  39  12+   2-   6+   8+   1-   9+   3-   4-  |10249602
+  6 Groenen Geert           5d NL Leid  4 4  35  35   7-  10+   5-  13+   8+   2-   9+   1-  |10501216
+  7 Westhoff Arend-Jan      4d NL Zei   4 4  33  33   6+   3-   9-  15+  12+   4-   8+   2-  |10513217
+  8 Eijkhout Michiel        5d NL Leid  4 4  31  31   1-  14+  11+   5-   6-  12+   7-  10+  |10486410
+  9 Dongen Stijn_van        3d NL Amst  3 3  32  32  14+   1-   7+   4-   0+   5-   6-  13-  |10237612
+ 10 Nijhuis Caspar          4d NL Amst  3 3  31  31   3-   6-  14+  11+   2-  13-  12+   8-  |10298024
+ 11 Wiersma Ruurd           3d NL Gron  3 3  30  30   4-   0+   8-  10-  13+  14+   1-  12-  |10262615
+ 12 Claasen Tonny           4d NL Amst  3 3  28  28   5-  13+  15+   3-   7-   8-  10-  11+  |10274605
+ 13 Rehm Robert             5d NL Alkm  3 3  27  27   2-  12-   0+   6-  11-  10+  14-   9+  |10237601
+ 14 Spruit Nico             3d NL Amst  3 3  25  25   9-   8-  10-   0+  15+  11-  13+   3-  |10233608
+ 15 Maljaars Wim            2d NL Amst  1 1   1   1   0+   4-  12-   7-  14-   0=   0=   0=  |10201829

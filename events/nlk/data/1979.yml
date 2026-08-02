@@ -1,0 +1,26 @@
+top:
+  - Ronald Schlemper
+  - Cas Muller
+  - Rob_van Vulpen
+stages:
+  - type: tournament
+    file: nl1979.txt
+    name: championship
+    dir: 1979/nlk
+    promoted: 2
+    scoringColumns:
+      - wins
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: false
+  - type: tournament
+    file: nl1979playoff.txt
+    name: playoff
+    dir: 1979/playoff
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true

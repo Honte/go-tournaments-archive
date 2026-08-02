@@ -1,0 +1,33 @@
+top:
+  - mkuin
+  - pbrouwer
+  - hhiddema
+stages:
+  - type: tournament
+    file: nl2015.txt
+    name: championship
+    dir: 2015/nlk
+    notes: additional playoff for places 9-14 (Eerbeek-Kuper 1-0, Verhagen-Jong 1-0, Cornelissen-Aaij 1-0)
+    promoted: 2
+    scoringColumns:
+      - wins
+      - null
+      - sos
+      - sodos
+    breakers:
+      - wins
+      - sos
+      - sodos
+    findSharedPlaces: true
+  - type: tournament
+    file: nl2015playoff.txt
+    name: playoff
+    dir: 2015/playoff
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: true

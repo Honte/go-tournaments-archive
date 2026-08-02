@@ -1,0 +1,25 @@
+; TC[T000115D]
+; CL[A]
+; EV[31st Dutch Championship]
+; PC[NL, Amsterdam]
+; DT[2000-01-15,2000-01-30]
+; HA[h9]
+; KM[5.5]
+; TM[90]
+;
+  1 Guo Juan                5p NL Hilv  7 7  39  31  11+/w  7-/b  8+    2+/w  4+/b  3+/w  8+/b  5+/w  |10298013
+  2 Groenen Geert           6d NL Leid  6 6  33  23   7-/w 11+/b  6+/w  1-/b 14+/b  9+/w  3+/b  8+/w  |10501216
+  3 Eijkhout Michiel        5d NL Leid  5 5  37  19  14+/w  5+/b  4+/b  7+/w  9+/w  1-/b  2-/w  6-/b  |10486410
+  4 Nijhuis Emil            5d NL Amst  5 5  36  19   8+/b  6+/b  3-/w 12+/b  1-/w  5-/w 11+/b  7+/b  |10213027
+  5 Westhoff Gerald         6d NL Leid  5 5  34  19  13+/b  3-/w 16+/w  9-/b  6+/w  4+/b  7+/w  1-/b  |10233597
+  6 Eeden Gilles_van        6d NL Nijm  5 5  34  18  10+/b  4-/w  2-/b 15+/w  5-/b 13+/w  9+/b  3+/w  |10201598
+  7 Dongen Stijn_van        4d NL Amst  4 4  39  19   2+/b  1+/w  9+/b  3-/b 11+/w  8-/w  5-/b  4-/w  |10237612
+  8 Vanderstappen Filip     5d NL Leid  4 4  36  16   4-/w 10+/b  1-   13+/w 12+/b  7+/b  1-/w  2-/b  |10250603
+  9 Rehm Robert             5d NL Alkm  4 4  32  12  15+/w 12+/b  7-/w  5+/w  3-/b  2-/b  6-/w 16+/b  |10237601
+ 10 Verhagen Rudi           5d NL Ensc  4 4  25  11   6-/w  8-/w 15-/b  0-   16+/w 12+/b 14+/w 13+/b  |10213610
+ 11 Pomstra Willem-Koen     5d NL Tilb  3 3  30   5   1-/b  2-/w 14+/w 16+/b  7-/b 15+/b  4-/w 12-/w  |10249602
+ 12 Janssen Frank           6d NL Amvn  3 3  28   8  16+/b  9-/w 13+/b  4-/w  8-/w 10-/w 15-/b 11+/b  |10298596
+ 13 Nijhuis Caspar          4d NL Amst  3 3  27   5   5-/w 14+/b 12-/w  8-/b 15+/w  6-/b 16+/b 10-/w  |10298024
+ 14 Wiersma Ruurd           4d NL Gron  2 2  27   2   3-/b 13-/w 11-/b  0+    2-/w 16-/w 10-/b 15+/w  |10262615
+ 15 Gelderen Vincent_van    4d NL Rott  2 2  26   7   9-/b 16-/b 10+/w  6-/b 13-/b 11-/w 12+/w 14-/b  |10201609
+ 16 Drost Andreas           3d NL Leid  2 2  26   3  12-/w 15+/w  5-/b 11-/w 10-/b 14+/b 13-/w  9-/w  |10525218

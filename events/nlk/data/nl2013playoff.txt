@@ -1,0 +1,12 @@
+; TC[T130216Q]
+; CL[A]
+; EV[Dutch Championship Play-off]
+; PC[NL, Various]
+; DT[2013-02-16,2013-03-17]
+; HA[h9]
+; KM[6.5]
+; TM[112.5]
+; CM[ (submitted by Herman Hiddema)]
+;.
+1 Kuin Merlijn           6d NL  Amvn  1    1    0    1    2+/b   2+/w    |10233861
+2 Ditzhuijzen Zeno_van   5d NL  Utre  0    0    1    0    1-/w   1-/b    |12698972

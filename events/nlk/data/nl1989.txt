@@ -1,0 +1,13 @@
+; EV[20th Dutch Championship]
+   1 Janssen Frank                  5d NL  xxx      6  17.5  17.5     11+      5+      9+      2+      3+      4+
+   2 Boon Mark                      4d NL  xxx      5    19    13     12+      6+      3+      1-      5+     10+
+   3 Polak Ron                      4d NL  xxx      4    22    11      4+      7+      2-     10+      1-      5+
+   4 Eijkhout Michiel               4d NL  xxx      3  21.5     9      3-      8+      7+      5-      6+      1-
+   5 Puyt Erik                      4d NL  xxx      3  21.5  5.25     10+      1-     11+      4+      2-      3-
+   6 Ederveen Sjef                  3d NL  xxx      3    17     6      9+      2-      8-      7+      4-     11+
+   7 Mannens Frank                  2d NL  xxx      3    16     6      8+      3-      4-      6-     12+      9+
+   8 Groenen Geert                  2d NL  xxx      3    13     5      7-      4-      6+      9-     11+     12+
+   9 Rehm Robert                    5d NL  xxx      2  18.5     4      6-     12+      1-      8+     10-      7-
+  10 Aaij Rene                      5d NL  xxx      2  15.5  4.25      5-     11-     12+      3-      9+      2-
+  11 Claasen Tonny                  4d NL  xxx      1    18   2.5      1-     10+      5-     12-      8-      6-
+  12 Westhoff Arend-Jan             4d NL  xxx      1  16.5     1      2-      9-     10-     11+      7-      8-

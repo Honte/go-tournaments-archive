@@ -1,0 +1,17 @@
+; TC[T980402]
+; CL[A]
+; EV[]
+; PC[NL,Hilversum-Nijmegen-Utrecht]
+; DT[1998-04-02,1998-05-18]
+; KM[6=]
+; TM[90]
+; HA[h9]
+;                  29th Dutch Championship, final play-off  
+;
+;                   1st game at Hilversum on April 2, 1998
+;                   2nd game at Nijmegen on April 6, 1998
+;                   3rd game at Utrecht on May 18, 1998
+;
+;Pl     Name             Grade  Club   MM S SOS SDOS  1.   2.   3.
+  1 Guo Juan                5p NL Hilv  2    2-   2+   2+  |10298013
+  2 Eeden Gilles_van        6d NL Nijm  1    1+   1-   1-  |10201598

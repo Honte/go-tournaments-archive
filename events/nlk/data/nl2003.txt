@@ -1,0 +1,28 @@
+; TC[T030118D]
+; CL[A]
+; EV[34th Dutch Championship]
+; PC[NL,Amsterdam]
+; DT[2003-01-18,2003-02-02]
+; KM[5.5]
+; TM[90]
+; HA[h9]
+;                         Dutch Championship, Amsterdam
+;                       January 18-19, February 1-2, 2003
+;
+;Pl     Name             Grade  Club   MM S SOS SDOS  1.    2.    3.    4.    5.    6.    7.    8.
+   1 Nijhuis Emil                     6d NL  Amst     8     8    38    38     0   10+/b    9+/w    5+/b    3+/w    7+/b    4+/w    6+/w    2+/b |10213027
+   2 Vanderstappen Filip              5d NL  Leid     5     5    37    20     1    8-/b   13+/w   12+/w    5-/b   10+/b    7+/w    3+/b    1-/w |10250603
+   3 Verhagen Rudi                    5d NL  Ensc     5     5    37    20     0    4+/w   11+/b    6+/w    1-/b   13+/w    8-/b    2-/w   12+/b |10213610
+   4 Westhoff Gerald                  6d NL  Leid     5     5    36    18     1    3-/b   15+/w    9+/b   10+/w    5+/w    1-/b    8+/w    7-/b |10233597
+   5 Janssen Frank                    6d NL  Amvn     5     5    36    18     0   14+/w   12+/b    1-/w    2+/w    4-/b    6-/b   11+/w    8+/b |10298596
+   6 Groenen Geert                    6d NL  Leid     5     5    35    17     0   13+/b    8+/w    3-/b    7-/b   15+/w    5+/w    1-/b    9+/b |10501216
+   7 Eijkhout Michiel                 6d NL  Leid     5     5    33    17     0   12-/w   14+/b    8+/b    6+/w    1-/w    2-/b   16+/w    4+/w |10486410
+   8 Pomstra Willem-Koen              5d NL  Tilb     4     4    36    16     0    2+/w    6-/b    7-/w   14+/b    9+/w    3+/w    4-/b    5-/w |10249602
+   9 Rehm Robert                      5d NL  Amst     4     4    32    10     1   16+/w    1-/b    4-/w   11+/b    8-/b   15+/w   10+/b    6-/w |10237601
+  10 Kampwart Ad                      4d NL  Tilb     4     4    32    10     0    1-/w   16+/b   11+/w    4-/b    2-/w   12+/b    9-/w   14+/b |10550562
+  11 Kuin Merlijn                     5d NL  Amvn     4     4    25     7     0   15+/b    3-/w   10-/b    9-/w   14+/w   13+/b    5-/b   16+/w |10233861
+  12 Rutgers_Van_der_Loeff Arnoud     4d NL  Leid     3     3    29     7     0    7+/b    5-/w    2-/b   13-/w   16+/b   10-/w   15+/b    3-/w |10437427
+  13 Jong Merijn_de                   3d NL  Utre     3     3    26     5     0    6-/w    2-/b   16+/w   12+/b    3-/b   11-/w   14-/w   15+/b |10449472
+  14 Engels Andre                     3d NL  Gron     2     2    27     4     0    5-/b    7-/w   15+/b    8-/w   11-/b   16-/w   13+/b   10-/w |10501106
+  15 Spruit Nico                      3d NL  Amst     1     1    27     1     0   11-/w    4-/b   14-/w   16+/b    6-/b    9-/b   12-/w   13-/w |10233608
+  16 Bloemena Marcel                  3d NL  Ensc     1     1    26     2     0    9-/b   10-/w   13-/b   15-/w   12-/w   14+/b    7-/b   11-/b |10537219

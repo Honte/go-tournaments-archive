@@ -46,6 +46,8 @@ events:
         prefix: iegc
       - id: hrgc
         prefix: hrgc
+      - id: nlk
+        prefix: nlk
   - title: Local Tournaments
     events:
       - id: wgl

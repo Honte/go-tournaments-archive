@@ -1,0 +1,14 @@
+; EV[17th Dutch Championship]
+; The last round game between Janssen and Boon resulted in a triple-ko, later they had to replay this game, which Boon won
+   1 Schlemper Ronald               7d NL  xxx      6    19    19      8+      6+      4+      2+      7+      5+
+   2 Westhoff Arend-Jan             3d NL  xxx      4    22    13      3+      5+      6-      1-      4+      7+
+   3 Boon Mark                      3d NL  xxx      4    14     7      2-     11+      5-     10+     12+      4+
+   4 Janssen Frank                  4d NL  xxx      3    22     8     10+      7+      1-      9+      2-      3-
+   5 Puyt Erik                      4d NL  xxx      3    21     8     11+      2-      3+      8-      9+      1-
+   6 Aaij Rene                      4d NL  xxx      3    20     8      9+      1-      2+      7-      8-     12+
+   7 Rehm Robert                    5d NL  xxx      3    19     6     12+      4-     10+      6+      1-      2-
+   8 Vermaseren Jos                 4d NL  xxx      3    18     7      1-      9-     11+      5+      6+     10-
+   9 Steen Jan_van_der              3d NL  xxx      3    14     5      6-      8+     12+      4-      5-     11+
+  10 Eijkhout Michiel               4d NL  xxx      2    15     4      4-     12+      7-      3-     11-      8+
+  11 Groenhuis Marc                 2d NL  xxx      1    16     2      5-      3-      8-     12-     10+      9-
+  12 Claasen Tonny                  4d NL  xxx      1    16     1      7-     10-      9-     11+      3-      6-

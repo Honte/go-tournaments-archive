@@ -1,0 +1,19 @@
+stages:
+  - type: tournament
+    name: championship
+    file: nl2019.txt
+    scoringColumns:
+      - null      
+      - wins
+      - mms      
+      - sos
+      - sodos
+      - direct
+    breakers:
+      - mms
+      - sos
+      - sodos
+      - direct
+    columns:  
+      - wins
+    findSharedPlaces: true

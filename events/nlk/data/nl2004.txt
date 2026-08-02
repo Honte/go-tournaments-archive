@@ -1,0 +1,28 @@
+; TC[T040111B]
+; CL[A]
+; EV[35th Dutch Championship]
+; PC[NL,Amstelveen]
+; KM[6.5]
+; TM[90]
+; DT[2004-01-10,2004-01-25]
+; HA[h9]
+;                          Dutch Championship, Amstelveen
+;                            January 10-11, 24-25, 2004
+;
+;Pl     Name             Grade  Club   MM S SOS SDOS  1.  2.  3.  4.  5.  6.  7.  8.
+  1 Nijhuis Emil            6d NL Amst  7 7  36  31  15+  8+  6+  4+  2+  5+  3-  7+  |10213027
+  2 Groenen Geert           6d NL DHaa  6 6  37  25  12+  5- 11+  8+  1-  3+  4+  6+  |10501216
+  3 Verhagen Rudi           5d NL Ensc  5 5  38  23   8- 15+  7+  6+  4+  2-  1+  5-  |10213610
+  4 Eijkhout Michiel        6d NL Leid  5 5  38  20  13+  7+  5+  1-  3- 10+  2-  8+  |10486410
+  5 Janssen Frank           6d NL Amvn  5 5  37  20  11+  2+  4-  9+ 15+  1-  6-  3+  |10298596
+  6 Vanderstappen Filip     5d NL Leid  5 5  35  17  16+  9+  1-  3- 11+  7+  5+  2-  |10250603
+  7 Westhoff Gerald         6d NL Leid  4 4  36  14  10+  4-  3- 12+  9+  6- 13+  1-  |10233597
+  8 Kuin Merlijn            5d NL Amvn  4 4  34  13   3+  1- 14+  2- 13- 16+  9+  4-  |10233861
+  9 Pomstra Willem-Koen     5d NL Tilb  4 4  30  12  14+  6- 10+  5-  7- 11+  8- 15+  |10249602
+ 10 Engels Andre            3d NL Gron  4 4  26  10   7- 13+  9- 11- 14+  4- 16+ 12+  |10501106
+ 11 Rehm Robert             5d NL Amst  3 3  31   8   5- 12+  2- 10+  6-  9- 14- 16+  |10237601
+ 12 Vos Dave_de             3d NL Tilb  3 3  26   8   2- 11- 13+  7- 16- 14+ 15+ 10-  |10249613
+ 13 Vieveen Jos             3d NL Tilb  3 3  26   7   4- 10- 12- 16+  8+ 15+  7- 14-  |10549231
+ 14 Mallon Willem           3d NL Eind  3 3  24   7   9- 16+  8- 15- 10- 12- 11+ 13+  |10250801
+ 15 Kampwart Ad             4d NL Tilb  2 2  31   4   1-  3- 16+ 14+  5- 13- 12-  9-  |10550562
+ 16 Kloos Ernst             2d NL Leid  1 1  27   3   6- 14- 15- 13- 12+  8- 10- 11-  |10462452
