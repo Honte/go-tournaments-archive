@@ -34,7 +34,7 @@ stages:
       - 6-5 5:W+R round:3 sgf:1996/3-HsiangJenHuang-ThomasFaulKo.sgf
       - 6-8 6:B+R round:8 sgf:1996/8-HsiangJenHuang-ViktorBogdanov.sgf
       - 8-7 7:W+R round:1 sgf:1996/1-ViktorBogdanov-MyeongseonChoe.sgf
-      - 9-1 1:W+? round:7 sgf:1996/7-ZhiqiYu-JunLiu.sgf
+      - 9-1 1:W+R round:7 sgf:1996/7-ZhiqiYu-JunLiu.sgf
       - 9-23 9:B+R round:5 sgf:1996/5-ZhiqiYu-DmytroYatsenko.sgf
       - 10-25 10:B+R round:1 sgf:1996/1-FelixvonArnim-LeonMatoh.sgf
       - 11-27 11:B+R round:1 sgf:1996/1-PierreColmez-UlfOlsson.sgf
