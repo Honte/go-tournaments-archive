@@ -1,9 +1,10 @@
 import type { ApiGameInfo } from '@/schema/api';
 import type { Player } from '@/schema/data';
+import { isDrawResult } from '@/libs/games';
 
 export const GAME_RESULT_TYPES = ['resignation', 'points', 'time', 'other', 'unknown'] as const;
 export const GAME_MEDIA = ['ogs', 'yt', 'ai'] as const;
-const GAME_WINNERS = ['black', 'white', 'player', 'player-opponent', 'country', 'country-opponent'] as const;
+const GAME_WINNERS = ['black', 'white', 'jigo', 'player', 'player-opponent', 'country', 'country-opponent'] as const;
 const PLAYER_COLORS = ['black', 'white'] as const;
 const GAME_SORTS = [
   'year-desc',
@@ -86,6 +87,7 @@ export type GameBrowserModel = {
   state: GameBrowserState;
   totalCount: number;
   filteredCount: number;
+  hasJigo: boolean;
   games: ApiGameInfo[];
   groups: GameBrowserGroupResult[];
   facets: {
@@ -296,6 +298,7 @@ export function deriveGameBrowserModel(
     state: normalizedState,
     totalCount: games.length,
     filteredCount: normalizedMatches.length,
+    hasJigo: games.some((game) => isDrawResult(game.result)),
     games: normalizedMatches.map((match) => match.game),
     groups: groupGameRecords(normalizedMatches, normalizedState, {
       playerMeta,
@@ -790,6 +793,9 @@ function matchesGlobalFilters(game: ApiGameInfo, state: GameBrowserState) {
     return false;
   }
   if ((state.winner === 'black' || state.winner === 'white') && game.winner !== state.winner) {
+    return false;
+  }
+  if (state.winner === 'jigo' && !isDrawResult(game.result)) {
     return false;
   }
   if (state.media.includes('ogs') && !game.ogs) {

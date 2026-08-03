@@ -197,6 +197,7 @@
     "anyWinner": "Any winner",
     "black": "Black",
     "white": "White",
+    "jigo": "Jigo - draw",
     "playerWinner": "%{0}",
     "opponentWinner": "%{0}'s opponent",
     "countryPlayerWinner": "%{0}",

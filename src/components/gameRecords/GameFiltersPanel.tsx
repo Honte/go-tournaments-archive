@@ -36,7 +36,7 @@ const ADVANCED_FILTERS_ID = `${FILTER_PANEL_ID}-advanced`;
 
 export function GameFiltersPanel({ model, onChange, onClear, translations }: GameFiltersPanelProps) {
   const t = getTranslator(translations);
-  const { state, facets, domains, grouping } = model;
+  const { state, facets, domains, grouping, hasJigo } = model;
   const activeCount = getActiveGameFilterCount(state);
   const [expanded, setExpanded] = useState(() => activeCount > 0);
   const hiddenFilterCount =
@@ -76,6 +76,7 @@ export function GameFiltersPanel({ model, onChange, onClear, translations }: Gam
   const winnerOptions = [
     { value: 'black', label: t('gamesFilter.black'), count: facets.winner.black },
     { value: 'white', label: t('gamesFilter.white'), count: facets.winner.white },
+    ...(hasJigo ? [{ value: 'jigo', label: t('gamesFilter.jigo'), count: facets.winner.jigo }] : []),
     ...(state.player
       ? [
           {
@@ -411,6 +412,7 @@ function isGameWinner(value: string): value is GameWinner {
   return (
     value === 'black' ||
     value === 'white' ||
+    value === 'jigo' ||
     value === 'player' ||
     value === 'player-opponent' ||
     value === 'country' ||

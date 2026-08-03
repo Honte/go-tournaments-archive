@@ -197,6 +197,7 @@
     "anyWinner": "Dowolny zwycięzca",
     "black": "Czarne",
     "white": "Białe",
+    "jigo": "Jigo - remis",
     "playerWinner": "%{0}",
     "opponentWinner": "Przeciwnik",
     "countryPlayerWinner": "%{0}",

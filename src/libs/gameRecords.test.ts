@@ -40,15 +40,23 @@ describe('game browser URL state', () => {
     assert.deepEqual(parseGameBrowserState(serialized), parsed);
   });
 
-  it('parses global-color, player-relative, and country-relative winner values', () => {
-    for (const winner of ['black', 'white', 'player', 'player-opponent', 'country', 'country-opponent'] as const) {
+  it('parses global-color, jigo, player-relative, and country-relative winner values', () => {
+    for (const winner of [
+      'black',
+      'white',
+      'jigo',
+      'player',
+      'player-opponent',
+      'country',
+      'country-opponent',
+    ] as const) {
       assert.equal(parseGameBrowserState(new URLSearchParams(`winner=${winner}`)).winner, winner);
     }
   });
 
   it('falls back to defaults for unknown enum values', () => {
     const parsed = parseGameBrowserState(
-      new URLSearchParams('result=unsupported&has=video&winner=draw&sort=random&group=player')
+      new URLSearchParams('result=unsupported&has=video&winner=winner&sort=random&group=player')
     );
 
     assert.deepEqual(parsed.results, []);
@@ -171,6 +179,22 @@ describe('game filtering and facets', () => {
     assert.equal(invalidFocalWinner.filteredCount, games.length);
   });
 
+  it('filters Jigo games, includes them in winner facets, and reports their availability from all games', () => {
+    const drawGame = game('g5', 2024, player('a', 'Alice New', '3d', 'PL'), player('f', 'Fran', '2d', 'DE'), {
+      result: 'jigo',
+      moves: 180,
+    });
+    const model = deriveGameBrowserModel([...games, drawGame], state({ winner: 'jigo' }));
+
+    assert.deepEqual(
+      model.games.map((game) => game.sgf),
+      ['g5.sgf']
+    );
+    assert.equal(model.facets.winner.jigo, 1);
+    assert.equal(model.hasJigo, true);
+    assert.equal(deriveGameBrowserModel(games, state()).hasJigo, false);
+  });
+
   it('matches non-contiguous tournament-year selections exactly', () => {
     const model = deriveGameBrowserModel(games, state({ years: [2020, 2023] }));
 
@@ -267,6 +291,7 @@ describe('game filtering and facets', () => {
     assert.deepEqual(model.facets.winner, {
       black: 1,
       white: 2,
+      jigo: 0,
       player: 3,
       'player-opponent': 0,
       country: 3,
@@ -297,6 +322,7 @@ describe('game filtering and facets', () => {
     assert.deepEqual(model.facets.winner, {
       black: 1,
       white: 2,
+      jigo: 0,
       player: 3,
       'player-opponent': 0,
       country: 3,
