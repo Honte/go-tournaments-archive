@@ -68,6 +68,10 @@ export async function serveSgfAsset(event: EventContext, segments: string[]) {
 }
 
 export async function getSgfAssetOptions(event: EventContext) {
+  if (event.dynamic) {
+    return [];
+  }
+
   const sgfDir = `./events/${event.id}/sgf`;
   const files = await fg.glob(`${sgfDir}/**/*.sgf`);
 

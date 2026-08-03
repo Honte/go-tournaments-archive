@@ -96,6 +96,10 @@ export async function getPlayerPageMetadata({ event, locale, slug, category }: P
 }
 
 export async function getPlayerPageOptions(event: EventContext) {
+  if (event.dynamic) {
+    return [];
+  }
+
   const players = await getAllPlayersStats(event);
 
   return Object.keys(players)
@@ -110,6 +114,10 @@ export async function getPlayerPageOptions(event: EventContext) {
 }
 
 export async function getPlayerCategoryPageOptions(event: EventContext) {
+  if (event.dynamic) {
+    return [];
+  }
+
   const players = await getAllPlayersStats(event);
 
   return getPlayerCategoryPageOptionsFromStats(event, players);

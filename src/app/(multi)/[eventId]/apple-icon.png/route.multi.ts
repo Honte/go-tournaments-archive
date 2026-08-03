@@ -2,6 +2,8 @@ import { loadEventFromPrefix } from '@/events';
 import { loadEventOptions } from '@/libs/next';
 import { serveAppleIconRoute } from '@/routes/serverIcons';
 
+export const dynamic = 'force-static';
+
 type RouteProps = {
   params: Promise<{
     eventId: string;

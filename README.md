@@ -105,8 +105,9 @@ npm run test         # Run tests
 
 ## Build and deploy
 
-The app uses `output: 'export'`, so `npm run build` emits static files to `out/`. The `public/index.php` file is also
-copied into the export for PHP-based static hosting setups that need a root redirect to the best supported locale.
+By default the app uses `output: 'export'`, so `npm run build` emits static files to `out/`. The `public/index.php` file
+is also copied into the export for PHP-based static hosting setups that need a root redirect to the best supported
+locale.
 
 Build the default multi-event archive:
 
@@ -146,6 +147,22 @@ Single-event builds write root data and SGF assets such as `public/data/tourname
 Multi-event builds write per-event assets such as `public/data/<prefix>/tournaments.json` and
 `public/sgf/<prefix>/list.json`. Preset entries marked `external: true` appear in selectors but are skipped for internal
 routes and generated assets.
+
+Presets with `dynamic: true` produce a Next.js standalone server instead of `out/`. The selected preset is embedded in
+the build, so `CONFIG` and `EVENT` are not needed at runtime. Player, player-category, and country stats pages are
+rendered on demand instead of being generated for every possible path. The asset prebuild is unchanged: production
+pages still read the generated JSON files from `public/data`, while the runtime SGF route can additionally render a
+preview that was not pre-generated.
+
+After building a dynamic preset, copy the public and client assets into the standalone directory and run the bundled
+server:
+
+```bash
+cp -r public .next/standalone/
+cp -r .next/static .next/standalone/.next/
+cd .next/standalone
+node server.js
+```
 
 Environment variables:
 

@@ -95,6 +95,7 @@ At the top level, a preset is an `ArchiveConfiguration`:
 title: Optional archive title
 locales:
   - en
+dynamic: false
 events:
   - id: event-id
     prefix: public-prefix
@@ -102,6 +103,15 @@ basePath: optional-next-base-path
 config:
   generateJpgs: true
 ```
+
+### `dynamic`
+
+Optional. When `true`, `npm run build` creates a Next.js standalone server instead of a static export. The resolved
+preset is embedded in that build, so the standalone `server.js` does not need `CONFIG` or `EVENT` at runtime. Player,
+player-category, and country stats pages are rendered on demand to avoid generating a file for every stats path.
+
+This does not disable `prebuild`: the same JSON, SGF, preview, and ZIP assets are still written to `public/`, and the
+standalone deployment must include that directory. See the root README for the copy and start commands.
 
 ### `title`
 
