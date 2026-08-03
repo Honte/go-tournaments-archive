@@ -3,7 +3,8 @@ import { getEventConfigurations, IS_DEVELOPMENT, loadConfiguration } from '@/con
 
 export default async function getConfig() {
   const configuration = await loadConfiguration();
-  const totalEvents = getEventConfigurations(configuration).length;
+  const eventConfigurations = getEventConfigurations(configuration);
+  const totalEvents = eventConfigurations.length;
   const pageExtensions = ['tsx', 'ts'];
 
   if (totalEvents === 1) {
@@ -23,8 +24,13 @@ export default async function getConfig() {
   }
 
   return {
-    output: configuration.dynamic ? undefined : 'export',
+    output: configuration.dynamic ? 'standalone' : 'export',
     basePath: normalizeBasePath(configuration.basePath),
+    env: configuration.dynamic
+      ? {
+          FORCED_CONFIGURATION: JSON.stringify(configuration),
+        }
+      : {},
     pageExtensions,
     trailingSlash: configuration.trailingSlash,
   };

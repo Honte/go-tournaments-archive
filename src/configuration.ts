@@ -9,6 +9,10 @@ export const IS_DEVELOPMENT = process.env.NODE_ENV === 'development';
 export const IS_PRODUCTION = process.env.NODE_ENV === 'production';
 
 export function loadConfiguration() {
+  if (process.env.FORCED_CONFIGURATION) {
+    return JSON.parse(process.env.FORCED_CONFIGURATION) as ArchiveConfiguration;
+  }
+
   return readYamlEnv<ArchiveConfiguration>(`./${CONFIGURATIONS_DIR}/${CONFIG}.yml`, {
     EVENT: process.env.EVENT,
     BASE_PATH: process.env.BASE_PATH || '',
