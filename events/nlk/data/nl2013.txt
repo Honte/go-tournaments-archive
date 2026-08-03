@@ -1,0 +1,26 @@
+; TC[T130112P]
+; CL[A]
+; EV[44th Dutch Championship]
+; PC[NL, Amstelveen]
+; DT[2013-01-12,2013-01-27]
+; HA[h9]
+; KM[6.5]
+; TM[112.5]
+; CM[ (submitted by Herman Hiddema)]
+;.
+ 1 Kuin Merlijn           6d NL  Amvn  7    7    37   30   12+/b   5+/w    3+/w    6+/b    2-/b    4+/w    8+/b    7+/w     |10233861
+ 2 Ditzhuijzen Zeno_van   5d NL  Utre  7    7    31   30   16-/b   14+/w   13+/b   9+/b    1+/w    3+/w    6+/b    5+/b     |12698972
+ 3 Janssen Frank          6d NL  Alme  6    6    33   19   14+/b   16+/w   1-/b    7+/w    6+/w    2-/b    5+/w    8+/b     |10298596
+ 4 Tel Michiel            4d NL  Gron  5    5    31   17   5-/b    12-/w   14+/b   13+/w   7+/b    1-/b    10+/w   6+/w     |14333682
+ 5 Eijkhout Michiel       6d NL  Leid  4    4    40   16   4+/w    1-/b    12+/w   8+/b    10+/w   6-/b    3-/b    2-/w     |10486410
+ 6 Pomstra Willem-Koen    5d NL  Arnh  4    4    38   13   15+/b   13+/b   9+/w    1-/w    3-/b    5+/w    2-/w    4-/b     |10249602
+ 7 Rehm Robert            5d NL  Amst  4    4    34   12   11-/w   10+/b   16+/w   3-/b    4-/w    9+/w    12+/b   1-/b     |10237601
+ 8 Eerbeek Alexander      5d NL  Vink  4    4    33   13   13-/w   15+/w   11+/b   5-/w    9+/b    12+/w   1-/w    3-/w     |13501356
+ 9 Ouweleen Kim           4d NL  Amst  4    4    31   12   10+/w   11+/b   6-/b    2-/w    8-/w    7-/b    15+/w   14+/b    |14633652
+10 Groenen Geert          6d NL  DHaa  4    4    27   10   9-/b    7-/w    15+/w   16+/b   5-/b    11+/b   4-/b    12+/w    |10501216
+11 Spanhoff Frederik      4d NL  DHaa  4    4    25   10   7+/b    9-/w    8-/w    12-/b   16+/b   10-/w   13+/b   15+/w    |13062984
+12 Chung Siu_Hong         3d NL  Gron  3    3    34   11   1-/w    4+/b    5-/b    11+/w   14+/w   8-/b    7-/w    10-/b    |13662583
+13 Henselmans Erik        3d NL  Ensc  3    3    29   7    8+/b    6-/w    2-/w    4-/b    15-/b   14+/w   11-/w   16+/b    |10633260
+14 Kuperus Sjoerd         3d NL  Utre  2    2    31   3    3-/w    2-/b    4-/w    15+/b   12-/b   13-/b   16+/w   9-/w     |14662351
+15 Eerbeek Marc           3d NL  DHaa  2    2    26   4    6-/w    8-/b    10-/b   14-/w   13+/w   16+/w   9-/b    11-/b    |12933162
+16 Drost Andreas          4d NL  Leid  1    1    32   7    2+/w    3-/b    7-/b    10-/w   11-/w   15-/b   14-/b   13-/w    |10525218

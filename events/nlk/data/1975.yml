@@ -1,0 +1,11 @@
+stages:
+  - type: tournament
+    file: nl1975final.txt
+    name: final
+    notes: played in autumn
+    dir: 1975/final
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true

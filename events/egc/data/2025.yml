@@ -1,4 +1,6 @@
-website: https://www.eurogofed.org/egc/2025.html
+website: 
+  - https://www.eurogofed.org/egc/2025.html
+  - https://roundsboard.com/organizations/european-go-congress-2025?type=past
 notes: 5 rounds of double ladder until quarters + 3 rounds KO
 stages:
   - type: tournament

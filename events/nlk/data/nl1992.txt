@@ -1,0 +1,16 @@
+; EV[23rd Dutch Championship]
+   1 Schlemper Ronald               7d NL  xxx      8  35.5      9+      7+      2+      3+      6+     10+      4+      8+
+   2 Westhoff Gerald                5d NL  xxx      7  36.5     11+      4+      1-      5+      8+      3+     10+      6+
+   3 Janssen Frank                  6d NL  xxx      6  37.5     13+     12+      6+      1-      4+      2-      5+      7+
+   4 Verhagen Rudi                  4d NL  xxx      5  39.5      5+      2-     14+     10+      3-      7+      1-      0+
+   5 Rehm Robert                    5d NL  xxx      5  32.5      4-     11+     12+      2-      9+      6+      3-     10+
+   6 Westhoff Arend-Jan             4d NL  xxx      4  36.5     15+     10+      3-      7+      1-      5-     14+      2-
+   7 Eijkhout Michiel               5d NL  xxx      4    33      8+      1-     15+      6-     11+      4-     13+      3-
+   8 Ederveen Sjef                  4d NL  xxx      4  31.5      7-      9-     13+     12+      2-     15+     11+      1-
+   9 Vanderstappen Filip            4d NL  xxx      4  30.5      1-      8+     10-     14+      5-     13-      0+     12+
+  10 Spit Rinus                     3d NL  xxx      3    37      0+      6-      9+      4-     13+      1-      2-      5-
+  11 Claasen Tonny                  4d NL  xxx      3    29      2-      5-      0+     15+      7-     12+      8-     14-
+  12 Spruit Nico                    3d NL  xxx      3  27.5     14+      3-      5-      8-      0+     11-     15+      9-
+  13 Groot Matti                    3d NL  xxx      3  26.5      3-     14-      8-      0+     10-      9+      7-     15+
+  14 Kok Rob                        2d NL  xxx      3  23.5     12-     13+      4-      9-     15-      0+      6-     11+
+  15 Willems Mark                   2d NL  xxx      2  23.5      6-      0+      7-     11-     14+      8-     12-     13-

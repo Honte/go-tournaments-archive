@@ -1,9 +1,9 @@
 website: https://www.eurogofed.org/results/congress/egc1980.htm
 name: European Championship 1980
-top :
-     - Matthew Macfadyen
-     - Juergen Mattern
-     - Andre Moussa
+top:
+  - Matthew Macfadyen
+  - Juergen Mattern
+  - Andre Moussa
 stages:
   - type: tournament
     file: egc1980.txt
@@ -19,6 +19,11 @@ stages:
       - sos
       - sosos
     findSharedPlaces: true
+    games:
+      - 1-2 2:W+? round:5 sgf:1980/ec/5-JuergenMattern-MatthewMacfadyen.sgf
+      - 2-8 2:B+? round:9 sgf:1980/ec/9-MatthewMacfadyen-WolfgangIsele.sgf
+      - 4-2 2:W+? round:8 sgf:1980/ec/8-RobvanZeijst-MatthewMacfadyen.sgf
+      - 14-2 2:W+? round:3 sgf:1980/ec/3-RobertRehm-MatthewMacfadyen.sgf
   - type: tournament
     file: egc1980playoff.txt
     name: Playoff
@@ -28,5 +33,6 @@ stages:
       - wins
     breakers:
       - wins
-    findSharedPlaces: true	   
-
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:1 sgf:1980/playoff/1-MatthewMacfadyen-JuergenMattern.sgf

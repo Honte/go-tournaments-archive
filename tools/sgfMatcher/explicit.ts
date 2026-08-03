@@ -5,10 +5,18 @@ import type {
   InputRoundRobinTableStage,
   InputTournament,
 } from '@/schema/input';
+import { JIGO } from '@/libs/games';
 import type { EventPlayer } from '@/data/eventPlayers';
 import { GAME_REGEX } from '@/data/games';
 import { createPlayersHandler, getPlayerHash, getPlayerSlug } from '@/data/players';
 import { buildEntryWithoutSgf, buildSgfEntryString, type SgfMatchResult } from './entries';
+import {
+  type PlayerLookupMap,
+  type PlayerLookupResult,
+  registerLookupEntry,
+  resolvePlayersLookup,
+  resolveSgfLookup,
+} from './lookup';
 import {
   buildCommonUnmatchedReasons,
   findDuplicateKeys,
@@ -27,16 +35,18 @@ import {
   UNKNOWN_PLACE,
   type UnmatchedEntry,
 } from './types';
-import { normalizePlayerName, parseProps } from './utils';
+import { parseProps } from './utils';
 
 type ExplicitStage = InputLeagueStage | InputLadderTableStage | InputRoundRobinTableStage | InputFinalStage;
+type ExplicitLookup = PlayerLookupMap<string>;
+type ExplicitPlayerIds = PlayerLookupResult<string>;
 
 type ExplicitGameEntry = {
   path: (string | number)[];
   raw: string;
   home: string;
   away: string;
-  winner: string;
+  winner: string | null;
   result: string | null;
   props: Record<string, string>;
   round: number | null;
@@ -44,15 +54,10 @@ type ExplicitGameEntry = {
   sgf: string | null;
 };
 
-type ExplicitPlayerIds = {
-  blackId: string | null;
-  whiteId: string | null;
-};
-
 type ExplicitCandidate = {
   sgf: SgfInfo;
   entry: ExplicitGameEntry;
-  players: ExplicitPlayerIds;
+  players: PlayerLookupResult<string>;
   entryKey: string;
 };
 
@@ -112,7 +117,7 @@ export function matchExplicitSgfs({
 
   for (const sgf of sgfInfos) {
     claimedSgfs.add(sgf.path);
-    const playerIds = resolveExplicitSgfPlayers(sgf, playersMap);
+    const playerIds = resolveSgfLookup(sgf, playersMap);
 
     const precheckReasons = getExplicitUnmatchedReasons(sgf, playerIds);
     if (precheckReasons.length > 0) {
@@ -296,9 +301,9 @@ function parseExplicitEntry(
     return null;
   }
 
-  const { home, away, winner, result, props } = match.groups!;
+  const { home, away, draw, winner, result, props } = match.groups!;
 
-  if ([home, away, winner].some((id) => id.toLowerCase() === 'bye')) {
+  if ([home, away, winner].some((id) => id?.toLowerCase() === 'bye')) {
     return null;
   }
 
@@ -310,8 +315,8 @@ function parseExplicitEntry(
     raw,
     home,
     away,
-    winner,
-    result: result ?? null,
+    winner: draw ? null : winner,
+    result: draw ? JIGO : (result ?? null),
     props: restProps,
     round,
     index,
@@ -323,8 +328,9 @@ function buildMatchedExplicitEntry(entry: ExplicitGameEntry, sgf: SgfInfo, playe
   const sgfResult = getMatchedExplicitSgfResult(entry, sgf, players);
 
   return {
-    black: entry.home,
-    white: entry.away,
+    home: entry.home,
+    away: entry.away,
+    black: sgf.sgfBlackName && players.black ? players.black : undefined,
     winner: entry.winner,
     result: sgfResult?.result ?? entry.result,
     sgf: sgf.path,
@@ -340,7 +346,11 @@ function getMatchedExplicitSgfResult(
   entry: ExplicitGameEntry,
   sgf: SgfInfo,
   players: ExplicitPlayerIds
-): { winner: string; result: string } | null {
+): { winner: string | null; result: string } | null {
+  if (sgf.cleanResult === '0') {
+    return { winner: null, result: '0' };
+  }
+
   if (!sgf.cleanResult || (sgf.cleanResult[0] !== 'B' && sgf.cleanResult[0] !== 'W')) {
     return null;
   }
@@ -349,7 +359,7 @@ function getMatchedExplicitSgfResult(
     return { winner: entry.winner, result: sgf.cleanResult.replace(/\+$/, '') };
   }
 
-  const winner = sgf.cleanResult[0] === 'B' ? players.blackId : players.whiteId;
+  const winner = sgf.cleanResult[0] === 'B' ? players.black : players.white;
 
   return winner ? { winner, result: sgf.cleanResult.replace(/\+$/, '') } : null;
 }
@@ -357,8 +367,8 @@ function getMatchedExplicitSgfResult(
 function buildYamlPlayersMap(
   players: InputTournament['players'],
   eventPlayers: EventPlayer[] = []
-): Map<string, string> {
-  const lookup = new Map<string, string>();
+): PlayerLookupMap<string> {
+  const lookup: PlayerLookupMap<string> = new Map();
   const playersHandler = createPlayersHandler(eventPlayers);
   const parsedPlayers = playersHandler.loadJson(players ?? {});
 
@@ -366,10 +376,14 @@ function buildYamlPlayersMap(
     const playerData = playersHandler.getPlayer(player.id);
     const hash = getPlayerHash(player.name);
 
-    registerPlayerName(lookup, id, id);
-    registerPlayerName(lookup, player.name, id);
-    registerPlayerName(lookup, hash, id);
-    registerPlayerName(lookup, getPlayerSlug(hash), id);
+    registerLookupEntry(lookup, id, id);
+    registerLookupEntry(lookup, player.name, id);
+    registerLookupEntry(lookup, hash, id);
+    registerLookupEntry(lookup, getPlayerSlug(hash), id);
+
+    for (const part of player.name.split(' ')) {
+      registerLookupEntry(lookup, part, id, false);
+    }
 
     if (playerData) {
       const aliases = [
@@ -381,23 +395,12 @@ function buildYamlPlayersMap(
       ];
 
       for (const alias of aliases) {
-        registerPlayerName(lookup, alias, id);
+        registerLookupEntry(lookup, alias, id);
       }
     }
   }
 
   return lookup;
-}
-
-function registerPlayerName(lookup: Map<string, string>, name: string, id: string): void {
-  const normalized = normalizePlayerName(name);
-  const existing = lookup.get(normalized);
-
-  if (!existing) {
-    lookup.set(normalized, id);
-  } else if (existing !== id) {
-    console.warn(`  Warning: skipped ambiguous normalized player "${normalized}" (${existing} and ${id})`);
-  }
 }
 
 function findMatchingEntries(
@@ -407,8 +410,8 @@ function findMatchingEntries(
 ): ExplicitGameEntry[] {
   let candidates = entries.filter((entry) => {
     return (
-      (entry.home === playerIds.blackId && entry.away === playerIds.whiteId) ||
-      (entry.home === playerIds.whiteId && entry.away === playerIds.blackId)
+      (entry.home === playerIds.black && entry.away === playerIds.white) ||
+      (entry.home === playerIds.white && entry.away === playerIds.black)
     );
   });
 
@@ -433,35 +436,17 @@ function findMatchingEntries(
   return candidates;
 }
 
-function resolveExplicitSgfPlayers(sgf: SgfInfo, playerLookup: Map<string, string>): ExplicitPlayerIds {
-  return {
-    blackId: lookupPlayerId(sgf.sgfBlackName, playerLookup) ?? lookupPlayerId(sgf.filenameBlackName, playerLookup),
-    whiteId: lookupPlayerId(sgf.sgfWhiteName, playerLookup) ?? lookupPlayerId(sgf.filenameWhiteName, playerLookup),
-  };
-}
+function getMetadataConflictReason(sgf: SgfInfo, playerLookup: ExplicitLookup): string | null {
+  const metadata = resolvePlayersLookup(playerLookup, sgf.sgfBlackName, sgf.sgfWhiteName);
+  const filename = resolvePlayersLookup(playerLookup, sgf.filenameBlackName, sgf.filenameWhiteName);
 
-function resolveExplicitPlayerNames(
-  blackName: string | null,
-  whiteName: string | null,
-  playerLookup: Map<string, string>
-): ExplicitPlayerIds {
-  return {
-    blackId: lookupPlayerId(blackName, playerLookup),
-    whiteId: lookupPlayerId(whiteName, playerLookup),
-  };
-}
-
-function getMetadataConflictReason(sgf: SgfInfo, playerLookup: Map<string, string>): string | null {
-  const metadata = resolveExplicitPlayerNames(sgf.sgfBlackName, sgf.sgfWhiteName, playerLookup);
-  const filename = resolveExplicitPlayerNames(sgf.filenameBlackName, sgf.filenameWhiteName, playerLookup);
-
-  if (!metadata.blackId || !metadata.whiteId || !filename.blackId || !filename.whiteId) {
+  if (!metadata.black || !metadata.white || !filename.black || !filename.white) {
     return null;
   }
 
   if (
-    (metadata.blackId === filename.blackId && metadata.whiteId === filename.whiteId) ||
-    (metadata.blackId === filename.whiteId && metadata.whiteId === filename.blackId)
+    (metadata.black === filename.black && metadata.white === filename.white) ||
+    (metadata.black === filename.white && metadata.white === filename.black)
   ) {
     return null;
   }
@@ -479,10 +464,6 @@ function getExplicitStageRound(sgf: SgfInfo): number | null {
     : null;
 }
 
-function lookupPlayerId(name: string | null, playerLookup: Map<string, string>): string | null {
-  return name ? (playerLookup.get(normalizePlayerName(name)) ?? null) : null;
-}
-
 function buildExplicitUnmatchedEntry(sgf: SgfInfo, players: ExplicitPlayerIds, reasons: string[]): UnmatchedEntry {
   return {
     filename: sgf.path,
@@ -493,23 +474,24 @@ function buildExplicitUnmatchedEntry(sgf: SgfInfo, players: ExplicitPlayerIds, r
 
 function getExplicitUnmatchedReasons(sgf: SgfInfo, players: ExplicitPlayerIds): string[] {
   return buildCommonUnmatchedReasons(sgf, {
-    black: players.blackId,
-    white: players.whiteId,
+    black: players.black,
+    white: players.white,
   });
 }
 
 function buildExplicitMatchResult(sgf: SgfInfo, players: ExplicitPlayerIds): SgfMatchResult {
   const { winnerPlace, resultStr } = formatSgfWinner(sgf, {
-    blackPlace: players.blackId ? 1 : null,
-    whitePlace: players.whiteId ? 2 : null,
+    blackPlace: players.black ? 1 : null,
+    whitePlace: players.white ? 2 : null,
   });
-  const black = players.blackId ?? UNKNOWN_PLACE;
-  const white = players.whiteId ?? UNKNOWN_PLACE;
+  const black = players.black ?? UNKNOWN_PLACE;
+  const white = players.white ?? UNKNOWN_PLACE;
 
   return {
-    black,
-    white,
-    winner: winnerPlace === 1 ? black : winnerPlace === 2 ? white : UNKNOWN_PLACE,
+    home: black,
+    away: white,
+    black: sgf.sgfBlackName && players.black ? players.black : undefined,
+    winner: winnerPlace === null ? null : winnerPlace === 1 ? black : winnerPlace === 2 ? white : UNKNOWN_PLACE,
     result: resultStr,
     sgf: sgf.path,
     props: {

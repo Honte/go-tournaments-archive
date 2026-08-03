@@ -1,5 +1,51 @@
 website: https://www.eurogofed.org/EC2026/index.html
-name: European Championship 2026
-announcement: Upcoming edition 25th July - 2nd August in Ankara
-location: Ankara
-country: TR
+notes: 5 rounds of double ladder until quarters + 3 rounds KO
+stages:
+  - type: tournament
+    file: egc2026.txt
+    name: Championship
+    dir: 2026/ec
+    time: 80min + 40sec Fischer
+    scoringColumns:
+      - wins
+      - place
+    breakers:
+      - place
+    columns:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:8 sgf:2026/ec/8-AndriiKravets-AliJabarin.sgf ogs:https://online-go.com/review/1747729
+      - 2-4 2:B+7.5 round:7 sgf:2026/ec/7-AliJabarin-DenisDobranis.sgf ogs:https://online-go.com/review/1747041
+      - 2-6 2:B+R round:3 sgf:2026/ec/3-AliJabarin-BenjaminDreanGuenaizia.sgf ogs:https://online-go.com/review/1744514
+      - 2-7 2:B+3.5 round:6 sgf:2026/ec/6-AliJabarin-TanguyleCalve.sgf ogs:https://online-go.com/review/1746449
+      - 3-1 1:W+4.5 round:7 sgf:2026/ec/7-LukasPodpera-AndriiKravets.sgf ogs:https://online-go.com/review/1747042
+      - 4-3 3:W+R round:2 sgf:2026/ec/2-DenisDobranis-LukasPodpera.sgf ogs:https://online-go.com/review/1743918
+      - 4-3 3:W+R round:8 sgf:2026/ec/8-DenisDobranis-LukasPodpera.sgf ogs:https://online-go.com/review/1747730
+      - 5-1 1:W+9.5 round:6 sgf:2026/ec/6-LukasKraemer-AndriiKravets.sgf ogs:https://online-go.com/review/1746444
+      - 5-8 8:W+R round:3 sgf:2026/ec/3-LukasKraemer-MateuszSurma.sgf ogs:https://online-go.com/review/1744511
+      - 5-11 5:B+R round:5 sgf:2026/ec/5-LukasKraemer-MatiasPankoke.sgf ogs:https://online-go.com/review/1745866
+      - 5-22 5:B+R round:1 sgf:2026/ec/1-LukasKraemer-JanKomin.sgf ogs:https://online-go.com/review/1743329
+      - 6-3 3:W+10.5 round:6 sgf:2026/ec/6-BenjaminDreanGuenaizia-LukasPodpera.sgf ogs:https://online-go.com/review/1746445
+      - 6-14 6:B+R round:2 sgf:2026/ec/2-BenjaminDreanGuenaizia-DominikBoviz.sgf ogs:https://online-go.com/review/1743916
+      - 7-3 3:W+R round:3 sgf:2026/ec/3-TanguyleCalve-LukasPodpera.sgf ogs:https://online-go.com/review/1744513
+      - 7-19 7:B+R round:2 sgf:2026/ec/2-TanguyleCalve-BendeBarcza.sgf ogs:https://online-go.com/review/1743915
+      - 8-4 4:W+R round:6 sgf:2026/ec/6-MateuszSurma-DenisDobranis.sgf ogs:https://online-go.com/review/1746443
+      - 8-13 8:B+R round:2 sgf:2026/ec/2-MateuszSurma-UlasOren.sgf ogs:https://online-go.com/review/1743919
+      - 9-6 6:W+7.5 round:5 sgf:2026/ec/5-CornelBurzo-BenjaminDreanGuenaizia.sgf ogs:https://online-go.com/review/1745863
+      - 10-7 7:W+R round:5 sgf:2026/ec/5-RemiCampagnie-TanguyleCalve.sgf ogs:https://online-go.com/review/1745864
+      - 10-16 10:B+R round:4 sgf:2026/ec/4-RemiCampagnie-StjepanMedak.sgf ogs:https://online-go.com/review/1745240
+      - 10-32 10:B+5.5 round:1 sgf:2026/ec/1-RemiCampagnie-KaanMalcok.sgf ogs:https://online-go.com/game/89166312
+      - 11-14 11:B+R round:4 sgf:2026/ec/4-MatiasPankoke-DominikBoviz.sgf ogs:https://online-go.com/review/1745242
+      - 12-1 1:W+R round:3 sgf:2026/ec/3-VsevolodOvsiienko-AndriiKravets.sgf ogs:https://online-go.com/review/1744512
+      - 12-4 4:W+6.5 round:5 sgf:2026/ec/5-VsevolodOvsiienko-DenisDobranis.sgf ogs:https://online-go.com/review/1745865
+      - 12-10 12:B+13.5 round:2 sgf:2026/ec/2-VsevolodOvsiienko-RemiCampagnie.sgf ogs:https://online-go.com/game/89166313
+      - 13-9 9:W+R round:4 sgf:2026/ec/4-UlasOren-CornelBurzo.sgf ogs:https://online-go.com/review/1745239
+      - 14-21 14:B+R round:1 sgf:2026/ec/1-DominikBoviz-KoichiroHabu.sgf ogs:https://online-go.com/review/1743331
+      - 15-4 4:W+R round:4 sgf:2026/ec/4-DavideBernardis-DenisDobranis.sgf ogs:https://online-go.com/review/1745241
+      - 16-13 13:W+0.5 round:1 sgf:2026/ec/1-StjepanMedak-UlasOren.sgf ogs:https://online-go.com/review/1743328
+      - 18-1 1:W+R round:2 sgf:2026/ec/2-FlorentLabouret-AndriiKravets.sgf ogs:https://online-go.com/review/1743917
+      - 22-10 10:W+2.5 round:3 sgf:2026/ec/3-JanKomin-RemiCampagnie.sgf ogs:https://online-go.com/review/1744515
+      - 26-1 1:W+0.5 round:1 sgf:2026/ec/1-ZbynekDach-AndriiKravets.sgf ogs:https://online-go.com/game/89166312
+      - 29-8 8:W+R round:1 sgf:2026/ec/1-LarionSyrotkin-MateuszSurma.sgf ogs:https://online-go.com/review/1743327
+      - 31-9 9:W+R round:1 sgf:2026/ec/1-AlbanGranger-CornelBurzo.sgf ogs:https://online-go.com/review/1743330

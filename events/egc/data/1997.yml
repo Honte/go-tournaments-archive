@@ -38,7 +38,8 @@ stages:
     columns:
       - wins
     excluded: true
-    collapsed: true    
-    findSharedPlaces: true 
-	   
-
+    collapsed: true
+    findSharedPlaces: true
+    games:
+      - 7-2 7:B+1.5 round:10 sgf:1997/open/10-VladimirDanek-WataruMiyakawa.sgf
+      - 34-54 34:B+R round:10 sgf:1997/open/10-TMarkHall-DesmondCann.sgf

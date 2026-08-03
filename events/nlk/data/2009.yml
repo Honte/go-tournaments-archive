@@ -1,0 +1,28 @@
+top:
+  - mkuin
+  - ggroenen
+  - pbrouwer
+stages:
+  - type: tournament
+    name: championship
+    dir: 2009/nlk
+    promoted: 2    
+    file: nl2009.txt
+    scoringColumns:
+      - wins    
+      - sos
+      - null  
+      - null        
+    breakers:
+      - wins
+      - sos
+    findSharedPlaces: true
+  - type: tournament
+    file: nl2009playoff.txt
+    name: playoff
+    dir: 2009/playoff
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true    

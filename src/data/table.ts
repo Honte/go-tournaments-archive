@@ -30,6 +30,7 @@ export function createTable({
       },
       games: Array.from({ length: rounds.length }, () => null),
       won: [],
+      drawn: [],
       lost: [],
     },
   };
@@ -53,6 +54,7 @@ export function createTable({
       },
       games: Array.from({ length: rounds.length }, () => null),
       won: [],
+      drawn: [],
       lost: [],
     };
 
@@ -66,7 +68,34 @@ export function createTable({
       const {
         players: [a, b],
         result,
+        draw,
       } = gamesMap[game];
+
+      if (draw) {
+        map[a.id].breakers.wins += 0.5;
+        map[b.id].breakers.wins += 0.5;
+        map[a.id].drawn.push(b.id);
+        map[b.id].drawn.push(a.id);
+        map[a.id].games[index] = {
+          color: a.color,
+          opponent: b.id,
+          index: 0,
+          won: false,
+          drawn: true,
+          result,
+          game,
+        };
+        map[b.id].games[index] = {
+          color: b.color,
+          opponent: a.id,
+          index: 0,
+          won: false,
+          drawn: true,
+          result,
+          game,
+        };
+        continue;
+      }
 
       const winner = a.won ? a : b;
       const loser = a.won ? b : a;
@@ -79,6 +108,7 @@ export function createTable({
         opponent: loser.id,
         index: 0,
         won: true,
+        drawn: false,
         result,
         game,
       };
@@ -87,6 +117,7 @@ export function createTable({
         opponent: winner.id,
         index: 0,
         won: false,
+        drawn: false,
         result,
         game,
       };
@@ -105,6 +136,10 @@ export function createTable({
     for (const lost of player.lost) {
       player.breakers.sos += map[lost].breakers.wins;
     }
+
+    for (const drawn of player.drawn) {
+      player.breakers.sos += map[drawn].breakers.wins;
+    }
   }
 
   // calculate sosos
@@ -117,6 +152,10 @@ export function createTable({
 
     for (const lost of player.lost) {
       player.breakers.sosos += map[lost].breakers.sos;
+    }
+
+    for (const drawn of player.drawn) {
+      player.breakers.sosos += map[drawn].breakers.sos;
     }
   }
 
@@ -243,7 +282,10 @@ function* getDirectMatchesGroups(group: TableResult[]): Generator<TableResult[]>
   }
 
   const directScores = group.reduce<Record<string, number>>((map, player) => {
-    map[player.id] = group.reduce((r, p) => r + Number(player.won.includes(p.id)), 0);
+    map[player.id] = group.reduce(
+      (r, p) => r + Number(player.won.includes(p.id)) + Number(player.drawn.includes(p.id)) * 0.5,
+      0
+    );
     return map;
   }, {});
 

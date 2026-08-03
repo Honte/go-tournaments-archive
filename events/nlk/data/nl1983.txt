@@ -1,0 +1,9 @@
+; EV[14th Dutch Championship]
+   1 Schlemper Ronald               6d NL  xxx      7    21      8+      7+      6+      5+      4+      3+      2+
+   2 Puyt Erik                      2d NL  xxx      5    12      7+      8+      5+      6+      3-      4+      1-
+   3 Rehm Robert                    5d NL  xxx      4    12      6-      5-      8+      7+      2+      1-      4+
+   4 Vermaseren Jos                 3d NL  xxx      4     8      5+      6+      7+      8+      1-      2-      3-
+   5 Westhoff Gerald                3d NL  xxx      3     8      4-      3+      2-      1-      8-      7+      6+
+   6 Aaij Rene                      2d NL  xxx      2     5      3+      4-      1-      2-      7-      8+      5-
+   7 Eijkhout Michiel               3d NL  xxx      2     3      2-      1-      4-      3-      6+      5-      8+
+   8 Diepen Niek_van                2d NL  xxx      1     3      1-      2-      3-      4-      5+      6-      7-

@@ -1,0 +1,60 @@
+(;CA[windows-1250]SZ[19]AP[MultiGo:4.4.4]GN[ ]GC[Alexandre Dinerchtein http\://www.go4go.net/english/commentary/]
+RO[1]PB[Koszegi Diana]BR[6d]PW[Shikshina Svetlana]WR[1p]KM[6.5]RE[B+15.5]MULTIGOGM[1]
+;B[qd]CR[qd]C[This is the game from the 48th European Championship. Round one. Black is Koszegi Diana, 5-dan (Hungary). White is Shikshina Svetlana, 1-dan pro(Russia)]
+;W[dp]CR[dp];B[pq]CR[pq];W[dc]CR[dc];B[oc]CR[oc];W[po]CR[po];B[qo]CR[qo];W[pp]CR[pp]
+;B[qp]CR[qp];W[oq]CR[oq];B[qq]CR[qq]C[The most simple answer ];W[pn]CR[pn];B[qm]
+CR[qm];W[jp]CR[jp]LB[ol:B][ip:A]C[White has a choice. Extension at A or keima at B are both possible]
+;B[df]CR[df]
+(;W[ch]CR[ch]C[The right direction -]
+(;B[ce]CR[ce]LB[ed:A]C[Keima at A is the most common answer -];W[fd]CR[fd]
+(;B[hc]CR[hc]C[An overplay -];W[cd]CR[cd]C[The vital point];B[dh]CR[dh]LB[eg:A]
+C[Black can also think about the kosumi at A];W[di]CR[di];B[eh]CR[eh];W[cg]CR[cg]
+C[White's shape is perfect];B[ge]CR[ge]
+(;W[gd]CR[gd]C[The plan is agressive -];B[hd]CR[hd];W[he]CR[he];B[fe]CR[fe];W[ed]
+CR[ed];B[dk]CR[dk];W[ei]CR[ei];B[fi]CR[fi];W[ej]CR[ej];B[gg]CR[gg];W[ie]CR[ie]LB[be:A]
+[ol:B]C[It is still better to connect solidly at A or jump at B];B[jd]CR[jd];W[je]
+CR[je]C[The plan is heavy];B[kd]CR[kd];W[ke]CR[ke];B[ld]CR[ld]C[Black is happy to keep the territory on the 4th line]
+;W[ih]CR[ih];B[ij]CR[ij]C[A good move];W[jj]CR[jj]
+(;B[jk]CR[jk]C[Black is ready to fight -];W[hj]CR[hj]C[Now the fight is really complicated]
+;B[hi]CR[hi];W[ii]CR[ii];B[ik]CR[ik];W[gk]CR[gk];B[bd]CR[bd];W[bc]CR[bc];B[ci]CR[ci]
+C[A tesuji];W[cj]CR[cj];B[bi]CR[bi];W[bj]CR[bj]
+(;B[fj]CR[fj]C[The wrong order -];W[fk]CR[fk];B[ek]CR[ek];W[dj]CR[dj];B[bk]CR[bk]
+;W[bh]CR[bh];B[ck]CR[ck];W[ai]CR[ai];B[hk]CR[hk];W[gj]CR[gj];B[gi]CR[gi];W[fm]CR[fm]
+;B[bf]CR[bf];W[dg]CR[dg];B[eg]CR[eg];W[ad]CR[ad];B[be]CR[be];W[de]CR[de];B[ee]CR[ee]
+;W[dd]CR[dd];B[cf]CR[cf];W[hh]CR[hh]C[The vital point];B[ef]CR[ef];W[gh]CR[gh];B[fh]
+CR[fh]
+(;W[gf]CR[gf]C[White has no other way -]
+(;B[hg]CR[hg]C[A good decision -];W[hf]CR[hf];B[ig]CR[ig];W[kh]CR[kh];B[jh]CR[jh]
+;W[ji]CR[ji];B[jg]CR[jg]C[White's shape is poor];W[kg]CR[kg];B[ki]CR[ki];W[kj]CR[kj]
+;B[li]CR[li]
+(;W[lj]CR[lj]C[The adji is bad -];B[kf]CR[kf];W[lf]CR[lf];B[jf]CR[jf];W[lg]CR[lg]
+;B[le]CR[le]
+(;W[ag]CR[ag]LB[mi:A]C[This is the losing move. White must capture the vital stones at A -]
+;B[mi]CR[mi];W[mj]CR[mj];B[nj]CR[nj]C[Now White is in trouble];W[ni]CR[ni];B[mh]
+CR[mh];W[nh]CR[nh];B[mg]CR[mg];W[nk]CR[nk];B[oj]CR[oj];W[ok]CR[ok];B[pj]CR[pj];W[pk]
+CR[pk];B[qj]CR[qj];W[qk]CR[qk];B[mk]CR[mk];W[lk]CR[lk];B[ml]CR[ml];W[ll]CR[ll];B[nm]
+CR[nm];W[mm]CR[mm];B[nl]CR[nl];W[mn]CR[mn];B[pm]CR[pm]C[The game is over.];W[rj]
+CR[rj];B[qh]CR[qh];W[ri]CR[ri];B[pg]CR[pg];W[rm]CR[rm];B[rn]CR[rn];W[rl]CR[rl];B[nn]
+CR[nn];W[mo]CR[mo];B[no]CR[no];W[np]CR[np];B[mp]CR[mp];W[lp]CR[lp];B[mq]CR[mq];W[or]
+CR[or];B[op]CR[op];W[oo]CR[oo];B[on]CR[on];W[lq]CR[lq];B[cq]CR[cq];W[cp]CR[cp];B[dq]
+CR[dq];W[eq]CR[eq];B[er]CR[er];W[fr]CR[fr];B[bp]CR[bp];W[bo]CR[bo];B[co]CR[co];W[ep]
+CR[ep];B[bn]CR[bn];W[bq]CR[bq];B[ao]CR[ao];W[br]CR[br];B[em]CR[em];W[en]CR[en];B[fl]
+CR[fl];W[gl]CR[gl];B[el]CR[el];W[gm]CR[gm];B[rh]CR[rh];W[dn]CR[dn];B[cn]CR[cn];W[ql]
+CR[ql];B[qn]CR[qn];W[sk]CR[sk];B[op]CR[op];W[nq]CR[nq];B[mr]CR[mr];W[pr]CR[pr];B[qr]
+CR[qr];W[lr]CR[lr];B[ps]CR[ps];W[ms]CR[ms];B[os]CR[os];W[nr]CR[nr];B[fb]CR[fb];W[eb]
+CR[eb];B[fc]CR[fc];W[dm]CR[dm];B[bm]CR[bm];W[cb]CR[cb])
+(;W[mi]CR[mi];B[ag]CR[ag];W[cm]CR[cm];B[ak]CR[ak];W[np]CR[np]C[The position would be still playable]))
+(;W[kk]CR[kk];B[kf]CR[kf];W[lf]CR[lf];B[jf]CR[jf];W[mh]CR[mh]C[This shape would be much stronger]))
+(;B[hf]CR[hf];W[hg]CR[hg];B[ff]CR[ff];W[if]CR[if];B[gf]CR[gf];W[ag]CR[ag]C[Black cannot play like this]))
+(;W[hg]CR[hg];B[gf]CR[gf];W[bg]CR[bg];B[ag]CR[ag];W[hf]CR[hf];B[af]CR[af];W[fg]
+CR[fg];B[ak]CR[ak];W[ac]CR[ac];B[aj]CR[aj];W[ae]CR[ae];B[bi]CR[bi];W[ci]CR[ci];B[kj]
+CR[kj]C[White can create a seki, but the central group would be really weak]))
+(;B[gj]CR[gj];W[hk]CR[hk];B[fk]CR[fk];W[fj]CR[fj];B[gi]CR[gi];W[dj]CR[dj];B[bk]
+CR[bk]C[White would be in trouble]))
+(;B[ik]CR[ik];W[ii]CR[ii];B[gj]CR[gj];W[ek]CR[ek];B[kl]CR[kl]C[This is the peaceful way]))
+(;W[be]CR[be];B[bf]CR[bf];W[cf]CR[cf];B[de]CR[de];W[bd]CR[bd]C[This is the most simple way. White's territory would be huge]))
+(;B[bc]CR[bc];W[jc]CR[jc];B[cn]CR[cn];W[dl]CR[dl];B[cq]CR[cq];W[dq]CR[dq];B[cp]
+CR[cp];W[do]CR[do];B[co]CR[co];W[dn]CR[dn];B[cm]CR[cm];W[dm]CR[dm];B[or]CR[or]C[I would prefer to keep the game simple]))
+(;B[ed]CR[ed];W[dd]CR[dd];B[de]CR[de];W[ec]CR[ec];B[fd]CR[fd];W[gb]CR[gb];B[ff]
+CR[ff];W[cm]CR[cm];B[or]CR[or]C[The opening would be equal]))
+(;W[fd]CR[fd];B[cj]CR[cj]TR[pp][po][pn][oq][dp][jp]C[The marked construction would be useless]))

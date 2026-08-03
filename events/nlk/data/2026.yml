@@ -1,0 +1,18 @@
+stages:
+  - type: tournament
+    name: championship
+    file: nl2026.txt
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sodos
+      - direct
+    breakers:
+      - mms
+      - sos
+      - sodos
+      - direct
+    columns:  
+      - wins
+    findSharedPlaces: true

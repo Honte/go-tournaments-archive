@@ -1,0 +1,17 @@
+; EV[21st Dutch Championship]
+   1 Schlemper Ronald               7d NL  xxx      8     0     0      6+     16+      5+      2+      3+      4+     10+      7+
+   2 Eijkhout Michiel               4d NL  xxx      6    35     0     15+      9+      4+      1-      5+     11+      3-      6+
+   3 Janssen Frank                  5d NL  xxx      6  34.5     0      9-     15+     12+     16+      1-      7+      2+      4+
+   4 Puyt Erik                      4d NL  xxx      5    36     0     13+      7+      2-     11+     10+      1-      6+      3-
+   5 Boon Mark                      4d NL  xxx      5    34     0     14+     12+      1-      7+      2-      6-      8+      9+
+   6 Westhoff Arend-Jan             4d NL  xxx      4  38.5     0      1-      8+      7-     13+      0+      5+      4-      2-
+   7 Aaij Rene                      5d NL  xxx      4    36     0     10+      4-      6+      5-     14+      3-     11+      1-
+   8 Groenen Geert                  3d NL  xxx      4    27     0     16-      6-     14+      9+     11-     12+      5-     10+
+   9 Claasen Tonny                  4d NL  xxx      3    31    10      3+      2-     11-      8-     15+     10-     13+      5-
+  10 Rehm Robert                    5d NL  xxx      3    31   7.5      7-     13-     15+     12+      4-      9+      1-      8-
+  11 Cremers Joost                  4d NL  xxx      3    29     0     12-     14+      9+      4-      8+      2-      7-     15-
+  12 Ederveen Sjef                  3d NL  xxx      3  27.5     0     11+      5-      3-     10-     13+      8-     15+     14-
+  13 Spit Rinus                     3d NL  xxx      3    24     0      4-     10+     16-      6-     12-     14+      9-      0+
+  14 Drost Andreas                  2d NL  xxx      3    23     0      5-     11-      8-     15+      7-     13-      0+     12+
+  15 Riedeman Dick                  3d NL  xxx      2     0     0      2-      3-     10-     14-      9-      0+     12-     11+
+  16 Polak Ron                      4d NL  xxx      2     0     0      8+      1-     13+      3-      0-      0-      0-      0-

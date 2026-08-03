@@ -16,29 +16,62 @@ stages:
     games:
       - 1-2 1:B+4.5 round:6 sgf:1996/6-JunLiu-HironoriHirata.sgf
       - 1-3 1:B+R round:4 sgf:1996/4-JunLiu-YongmanYi.sgf
+      - 1-10 1:B+11.5 round:8 sgf:1996/8-JunLiu-FelixvonArnim.sgf
+      - 1-30 1:B+R round:3 sgf:1996/3-JunLiu-EduardoLopezHerrero.sgf
+      - 2-3 2:B+R round:8 sgf:1996/8-HironoriHirata-YongmanYi.sgf
       - 2-22 2:B+R round:3 sgf:1996/3-HironoriHirata-LeszekSoldan.sgf
       - 3-7 3:B+5.5 round:3 sgf:1996/3-YongmanYi-MyeongseonChoe.sgf
       - 3-8 3:B+R round:7 sgf:1996/7-YongmanYi-ViktorBogdanov.sgf
       - 3-9 3:B+R round:2 sgf:1996/2-YongmanYi-ZhiqiYu.sgf
+      - 3-18 3:B+R round:5 sgf:1996/5-YongmanYi-GillesvanEeden.sgf
       - 4-1 1:W+T round:5 sgf:1996/5-YingKan-JunLiu.sgf
+      - 4-9 4:B+5.5 round:8 sgf:1996/8-YingKan-ZhiqiYu.sgf
       - 4-13 4:B+R round:2 sgf:1996/2-YingKan-LaurentHeiser.sgf
+      - 5-2 2:W+R round:5 sgf:1996/5-ThomasFaulKo-HironoriHirata.sgf
       - 5-7 5:B+R round:4 sgf:1996/4-ThomasFaulKo-MyeongseonChoe.sgf
+      - 5-8 8:W+R round:6 sgf:1996/6-ThomasFaulKo-ViktorBogdanov.sgf
+      - 5-20 5:B+R round:2 sgf:1996/2-ThomasFaulKo-VictorChow.sgf
+      - 6-5 5:W+R round:3 sgf:1996/3-HsiangJenHuang-ThomasFaulKo.sgf
+      - 6-8 6:B+R round:8 sgf:1996/8-HsiangJenHuang-ViktorBogdanov.sgf
       - 8-7 7:W+R round:1 sgf:1996/1-ViktorBogdanov-MyeongseonChoe.sgf
-      - 9-1 1:W+? round:7 sgf:1996/7-ZhiqiYu-JunLiu.sgf
+      - 9-1 1:W+R round:7 sgf:1996/7-ZhiqiYu-JunLiu.sgf
+      - 9-23 9:B+R round:5 sgf:1996/5-ZhiqiYu-DmytroYatsenko.sgf
       - 10-25 10:B+R round:1 sgf:1996/1-FelixvonArnim-LeonMatoh.sgf
       - 11-27 11:B+R round:1 sgf:1996/1-PierreColmez-UlfOlsson.sgf
+      - 11-40 11:B+R round:6 sgf:1996/6-PierreColmez-PaalSannes.sgf
       - 12-33 12:B+R round:1 sgf:1996/1-KasperHornbaek-KorsakChairasmisak.sgf
+      - 13-20 13:B+R round:8 sgf:1996/8-LaurentHeiser-VictorChow.sgf
+      - 14-5 5:W+R round:8 sgf:1996/8-SayBoonNg-ThomasFaulKo.sgf
+      - 15-26 15:B+R round:8 sgf:1996/8-VladimirDanek-EnzoPedrini.sgf
       - 16-26 26:W+R round:1 sgf:1996/1-FranzHuettler-EnzoPedrini.sgf
+      - 16-32 16:B+R round:6 sgf:1996/6-FranzHuettler-MattiSiivola.sgf
       - 17-45 17:B+R round:2 sgf:1996/2-AlainWettach-RafaelTorresMiranda.sgf
       - 18-2 18:B+R round:2 sgf:1996/2-GillesvanEeden-HironoriHirata.sgf
       - 18-4 4:W+R round:3 sgf:1996/3-GillesvanEeden-YingKan.sgf
       - 19-6 19:B+R round:4 sgf:1996/4-MatthewMacfadyen-HsiangJenHuang.sgf
+      - 19-9 9:W+R round:6 sgf:1996/6-MatthewMacfadyen-ZhiqiYu.sgf
       - 19-10 19:B+6.5 round:2 sgf:1996/2-MatthewMacfadyen-FelixvonArnim.sgf
+      - 19-14 19:B+11.5 round:5 sgf:1996/5-MatthewMacfadyen-SayBoonNg.sgf
+      - 21-4 4:W+R round:4 sgf:1996/4-MihaiBisca-YingKan.sgf
+      - 21-8 8:W+R round:5 sgf:1996/5-MihaiBisca-ViktorBogdanov.sgf
+      - 23-25 23:B+R round:4 sgf:1996/4-DmytroYatsenko-LeonMatoh.sgf
       - 24-28 24:B+R round:6 sgf:1996/6-CesarSanchez-NoelMitchell.sgf
       - 24-29 24:B+9.5 round:1 sgf:1996/1-CesarSanchez-KyleJones.sgf
       - 30-13 13:W+R round:7 sgf:1996/7-EduardoLopezHerrero-LaurentHeiser.sgf
+      - 31-26 31:B+7.5 round:4 sgf:1996/4-KiichiroSuzuki-EnzoPedrini.sgf
       - 32-14 14:W+R round:1 sgf:1996/1-MattiSiivola-SayBoonNg.sgf
+      - 33-39 33:B+14.5 round:6 sgf:1996/6-KorsakChairasmisak-NevilleSmythe.sgf
+      - 34-37 34:B+R round:3 sgf:1996/3-GaborSzabics-MiroslavPoliak.sgf
       - 35-9 9:W+R round:1 sgf:1996/1-KeeSoonTiong-ZhiqiYu.sgf
+      - 35-17 17:W+9.5 round:5 sgf:1996/5-KeeSoonTiong-AlainWettach.sgf
+      - 35-44 35:B+7.5 round:2 sgf:1996/2-KeeSoonTiong-GabrielBranco.sgf
+      - 38-46 38:B+R round:4 sgf:1996/4-RobertoMorrison-YuzuruNakada.sgf
+      - 39-41 39:B+6.5 round:7 sgf:1996/7-NevilleSmythe-PabloSaez.sgf
+      - 40-31 31:W+0.5 round:7 sgf:1996/7-PaalSannes-KiichiroSuzuki.sgf
       - 41-28 28:W+35.5 round:2 sgf:1996/2-PabloSaez-NoelMitchell.sgf
+      - 42-29 29:W+R round:7 sgf:1996/7-WoeiHawDjap-KyleJones.sgf
+      - 42-36 36:W+29.5 round:3 sgf:1996/3-WoeiHawDjap-JuanJoseRivaud.sgf
       - 43-39 43:B+R round:2 sgf:1996/2-KeremKaraerkek-NevilleSmythe.sgf
+      - 44-38 38:W+2.5 round:7 sgf:1996/7-GabrielBranco-RobertoMorrison.sgf
       - 45-34 34:W+R round:1 sgf:1996/1-RafaelTorresMiranda-GaborSzabics.sgf
+      - 46-40 40:W+R round:3 sgf:1996/3-YuzuruNakada-PaalSannes.sgf

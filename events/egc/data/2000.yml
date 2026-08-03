@@ -21,6 +21,8 @@ stages:
       - wins
       - open
     findSharedPlaces: true
+    games:
+      - 1-8 1:B+R round:1 sgf:2000/ec/1-AlexandrDinerstein-ChristophGerlach.sgf
   - type: tournament
     file: egc2000open100.txt
     name: EGC Open
@@ -38,7 +40,8 @@ stages:
     columns:
       - wins
     excluded: true
-    collapsed: true    
-    findSharedPlaces: true 
-	   
-
+    collapsed: true
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:4 sgf:2000/open/4-HyukLee-AlexandrDinerstein.sgf
+      - 74-55 55:W+R round:9 sgf:2000/open/9-BelaNagy-TMarkHall.sgf

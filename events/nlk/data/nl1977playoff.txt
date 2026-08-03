@@ -1,0 +1,3 @@
+;Exact result of playoff unknown
+   1 Rehm Robert                   30k NL  xxx      1      2+
+   2 Rebattu Max                   30k NL  xxx      0      1-

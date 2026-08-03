@@ -21,6 +21,8 @@ stages:
       - wins
       - open
     findSharedPlaces: true
+    games:
+      - 1-9 1:B+R round:9 sgf:1996/ec/9-JuanGuo-CristianPop.sgf
   - type: tournament
     file: egc1996open100.txt
     name: EGC Open
@@ -38,7 +40,7 @@ stages:
     columns:
       - wins
     excluded: true
-    collapsed: true    
-    findSharedPlaces: true 
-	   
-
+    collapsed: true
+    findSharedPlaces: true
+    games:
+      - 38-93 93:W+R round:6 sgf:1996/open/6-ArkadijBogackyj-TMarkHall.sgf

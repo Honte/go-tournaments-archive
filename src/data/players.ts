@@ -1,9 +1,10 @@
 import slugify from 'slugify';
 import type { Player } from '@/schema/data';
+import { normalizeCountryCode, normalizePlayerName, normalizeRank } from '@/libs/h9';
 import type { EventPlayer } from '@/data/eventPlayers';
 
 const PLAYER_REGEX =
-  /^(?<name>[\p{Letter} -]+)(\s+(?<rank>[0-9]{1,2}[dkpDKP])?)?(\s+\((?<country>[A-Z]{2})\))?(\s+\|(?<egd>[0-9]+))?$/u;
+  /^(?<name>[\p{Letter}_ -]+)(\s+(?<rank>[0-9]{1,2}[dkpDKP])?)?(\s+\((?<country>[A-Z]{2})\))?(\s+\|(?<egd>[0-9]+))?$/u;
 
 export type PlayersHandler = ReturnType<typeof createPlayersHandler>;
 
@@ -182,6 +183,13 @@ export function createPlayersHandler(eventPlayers: EventPlayer[] = []) {
     if (player.egd) {
       playersByEgd.set(player.egd, playerData);
     }
+
+    if (player.pastNames?.length) {
+      for (const name of player.pastNames) {
+        playerData.names.add(name);
+        registerPlayerHash(playerData, name);
+      }
+    }
   }
 
   function registerPlayerHash(player: PlayerData, string?: string, shouldHash = true): void {
@@ -212,9 +220,9 @@ function parsePlayerString(string: string) {
   const { name, rank, country, egd } = details.groups!;
 
   return {
-    name,
-    rank: rank?.toLowerCase(),
-    country,
+    name: normalizePlayerName(name),
+    rank: normalizeRank(rank),
+    country: normalizeCountryCode(country),
     egd: egd ? Number(egd) : undefined,
   };
 }

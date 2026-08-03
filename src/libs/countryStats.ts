@@ -1,4 +1,5 @@
 import type { CountryResult, CountryStats, PlayerStageResult } from '@/schema/data';
+import { getGameStats } from '@/libs/games';
 
 export function getCountryAvailableCategories(country: CountryStats, categories: readonly string[]) {
   const available = new Set<string>();
@@ -22,6 +23,7 @@ export function filterCountryStatsByCategory(country: CountryStats, category: st
   const years: Record<number, CountryResult> = {};
   let totalGames = 0;
   let totalWon = 0;
+  let totalDrawn = 0;
   let bestPlace = Infinity;
 
   for (const year in country.years) {
@@ -31,6 +33,7 @@ export function filterCountryStatsByCategory(country: CountryStats, category: st
       bestPlace: Infinity,
       totalGames: 0,
       totalWon: 0,
+      totalDrawn: 0,
       results: [],
     };
 
@@ -42,12 +45,12 @@ export function filterCountryStatsByCategory(country: CountryStats, category: st
           continue;
         }
 
-        const games = stage.games.length;
-        const won = stage.games.reduce((total, game) => total + Number(game.won), 0);
+        const outcomes = getGameStats(stage.games);
         const place = stage.categories ? stage.categories?.[category] : stage.place;
 
-        filteredTournament.totalGames += games;
-        filteredTournament.totalWon += won;
+        filteredTournament.totalGames += outcomes.games;
+        filteredTournament.totalWon += outcomes.won;
+        filteredTournament.totalDrawn += outcomes.drawn;
 
         stages.push({
           ...stage,
@@ -73,6 +76,7 @@ export function filterCountryStatsByCategory(country: CountryStats, category: st
       years[filteredTournament.year] = filteredTournament;
       totalGames += filteredTournament.totalGames;
       totalWon += filteredTournament.totalWon;
+      totalDrawn += filteredTournament.totalDrawn;
       bestPlace = Math.min(bestPlace, filteredTournament.bestPlace);
     }
   }
@@ -86,6 +90,7 @@ export function filterCountryStatsByCategory(country: CountryStats, category: st
     bestPlace,
     totalGames,
     totalWon,
+    totalDrawn,
     years,
   };
 }

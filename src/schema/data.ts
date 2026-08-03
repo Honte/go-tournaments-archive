@@ -157,6 +157,7 @@ export type TableResult = {
   index: number;
   games: (IndexedTablePlayerGame | null)[];
   won: string[];
+  drawn: string[];
   lost: string[];
   breakers: Record<MandatoryBreakers, number> & Record<string, number>;
   categories?: Record<string, number | '?'>;
@@ -166,6 +167,7 @@ export type TablePlayerGame = {
   color?: 'white' | 'black';
   opponent: string;
   won: boolean;
+  drawn: boolean;
   result: string;
   game: string;
 };
@@ -189,6 +191,7 @@ export type Game = {
   id: string;
   stage: number;
   players: [black: GamePlayer, white: GamePlayer];
+  draw: boolean;
   result: string;
   props: GameProps;
   path?: string;
@@ -223,6 +226,7 @@ export type PlayerGame = {
   rank?: string; // opponent rank
   color?: 'white' | 'black'; // player color
   won: boolean;
+  drawn: boolean;
   result: string;
   props?: GameProps;
 };
@@ -239,6 +243,7 @@ export type PlayerSummary = {
   bestPlace: number;
   totalGames: number;
   totalWon: number;
+  totalDrawn: number;
   totalAttended: number;
   totalSgfs: number;
   score: number;
@@ -268,6 +273,7 @@ export type CountryResult = {
   year: number;
   bestPlace: number;
   totalWon: number;
+  totalDrawn: number;
   totalGames: number;
   results: (PlayerResult & { id: string })[];
 };
@@ -280,6 +286,7 @@ export type CountrySummary = {
   bestPlace: number;
   totalGames: number;
   totalWon: number;
+  totalDrawn: number;
 };
 
 export type CountryStats = CountrySummary & {
@@ -316,6 +323,7 @@ export type StatsSummary = {
   sgfs: number;
   resign: number;
   timeout: number;
+  draws: number;
   relays: number;
   streams: number;
   analysis: number;
@@ -338,6 +346,7 @@ export type TableStats = {
   bronze: number;
   games: number;
   won: number;
+  drawn: number;
   lost: number;
   wonPercent: number;
 };

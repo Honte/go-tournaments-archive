@@ -1,9 +1,10 @@
 import { stringifyProps } from '@tools/sgfMatcher/utils';
 
 export type SgfMatchResult = {
-  black: string | number;
-  white: string | number;
-  winner: string | number;
+  home: string | number;
+  away: string | number;
+  black?: string | number;
+  winner: string | number | null;
   result: string | null;
   sgf: string;
   props?: Record<string, string | undefined | null>;
@@ -15,10 +16,11 @@ export function buildEntryWithoutSgf(rawEntry: string): string {
   return rawEntry.replace(SGF_REGEX, '').replace(/\s+/g, ' ').trim();
 }
 
-export function buildSgfEntryString({ black, white, winner, result, sgf, props }: SgfMatchResult): string {
-  const winnerPart = result ? `${winner}:${result}` : String(winner);
+export function buildSgfEntryString({ home, away, black, winner, result, sgf, props }: SgfMatchResult): string {
+  const winnerPart = winner === null ? 'jigo' : result ? `${winner}:${result}` : String(winner);
   const { round, ...restProps } = props ?? {};
+  const colorPart = winner === null && black ? ` black:${black}` : '';
   const roundPart = round ? ` round:${round}` : '';
 
-  return `${black}-${white} ${winnerPart}${roundPart} sgf:${sgf}${stringifyProps(restProps)}`;
+  return `${home}-${away} ${winnerPart}${colorPart}${roundPart} sgf:${sgf}${stringifyProps(restProps)}`;
 }

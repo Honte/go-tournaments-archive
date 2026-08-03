@@ -21,6 +21,8 @@ stages:
       - wins
       - open
     findSharedPlaces: true
+    games:
+      - 6-13 6:B+7 round:1 sgf:1995/ec/1-MattiGroot-MalteSchuster.sgf
   - type: tournament
     file: egc1995open100.txt
     name: EGC Open
@@ -38,7 +40,8 @@ stages:
     columns:
       - wins
     excluded: true
-    collapsed: true    
-    findSharedPlaces: true 
-	   
-
+    collapsed: true
+    findSharedPlaces: true
+    games:
+      - 21-40 21:B+0.5 round:2 sgf:1995/open/2-AdrianPassow-FrancoisMizessyn.sgf
+      - 30-33 30:B+R round:2 sgf:1995/open/2-CristianPop-OlliLounela.sgf

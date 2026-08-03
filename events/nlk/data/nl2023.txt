@@ -1,0 +1,48 @@
+; TC[T230114D]
+; CL[A]
+; EV[53rd Dutch Championship]
+; PC[NL, Leiden]
+; DT[2023-01-14,2023-01-29]
+; HA[h9]
+; KM[6.5]
+; TM[90]
+; CM[ (submitted by Niek_vD)]
+;.
+ 1 Zeijst Rob_van          7d NL  Amst  9    7    9    46   46   7+/w    2+/b    6+/b    3+/w    4+/b    11+/w   2+/w     |10337382
+ 2 Nederveen Gerard        3d NL  Eind  7    5    7    48   30   8+/w    1-/w    11+/b   15+/w   7+/b    3+/b    1-/b     |16598461
+ 3 Yan Zihan               6d NL  Leid  7    5    7    44   28   9+/b    12+/b   10+/w   1-/b    8+/b    2-/w    17+/w    |19498325
+ 4 Eeden Gilles_van        6d NL  Nijm  7    5    7    43   29   13-/b   18+/b   5+/w    10+/b   1-/w    12+/w   6+/b     |10201598
+ 5 Ditzhuijzen Zeno_van    5d NL  Utre  7    5    7    41   28   16+/b   6-/w    4-/b    18+/w   9+/w    8+/b    7+/w     |12698972
+ 6 Pomstra Koen            5d NL  Arnh  6    4    6    44   22   14+/w   5+/b    1-/w    7-/b    16+/b   29+/b   4-/w     |10249602
+ 7 Verhagen Rudi           4d NL  Ensc  6    4    6    42   19   1-/b    23+/w   26+/b   6+/w    2-/w    14+/w   5-/b     |10213610
+ 8 Eijkhout Michiel        5d NL  Nijm  6    4    6    41   20   2-/b    21+/w   12+/b   9+/b    3-/w    5-/w    14+/b    |10486410
+ 9 Rehm Robert             5d NL  Amst  6    4    6    40   20   3-/w    20+/b   14+/b   8-/w    5-/b    16+/w   13+/w    |10237601
+10 Groenen Geert           6d NL  DHaa  6    4    6    39   19   26+/w   13+/b   3-/b    4-/w    11-/b   15+/w   12+/w    |10501216
+11 Janssen Frank           6d NL  xxxx  6    4    6    39   18   12-/w   22+/b   2-/w    21+/b   10+/w   1-/b    25+/w    |10298596
+12 Cornelissen Ruben       4d NL  DHaa  5    3    5    42   16   11+/b   3-/w    8-/w    20+/b   15+/w   4-/b    10-/b    |13262865
+13 Aaij Rene               4d NL  Gron  5    3    5    38   16   4+/w    10-/w   15-/b   17+/w   14-/b   24+/w   9-/b     |10537560
+14 Jong Merijn_de          3d NL  Utre  5    3    5    38   14   6-/b    17+/b   9-/w    22+/w   13+/w   7-/b    8-/w     |10449472
+15 Ling Martijn_van        2d NL  Utre  5    4    5    35   17   31+/w   16+/w   13+/w   2-/b    12-/b   10-/b   21+/w    |14937890
+16 Vos Dave_de             3d NL  Baar  5    3    5    35   11   5-/w    15-/b   27+/b   26+/w   6-/w    9-/b    24+/w    |10249613
+17 Zwier Jurriaan          2d NL  Gron  5    4    5    33   16   24+/b   14-/w   23+/w   13-/b   27+/w   19+/b   3-/b     |10262835
+18 Bekooij Bastiaan        1k NL  Nijm  5    4    5    31   12   32+/b   4-/w    31+/b   5-/b    19-/w   30+/w   22+/w    |17401175
+19 Koper Axel              4k NL  xxxx  5    4    5    28   15   22-/b   36+/w   21-/b   32+/w   18+/b   17-/w   23+/w    |20101015
+20 Au Ming                 1d NL  DHaa  5    4    5    27   15   36+/b   9-/w    28+/w   12-/w   22+/b   21+/b   0=       |13949573
+21 Peters Zoe              1k NL  Delf  4    3    4    33   11   34+/b   8-/b    19+/w   11-/w   37+/b   20-/w   15-/b    |17374819
+22 Groot Ger_de            1d NL  DHaa  4    3    4    32   11   19+/w   11-/w   34+/b   14-/b   20-/w   31+/b   18-/b    |10401435
+23 Koolen Sjoerd           1d NL  Goud  4    3    4    29   9    25+/w   7-/b    17-/b   33+/w   24-/b   37+/w   19-/b    |10549836
+24 Heijungs Simon          1k NL  Leid  4    3    4    27   9    17-/w   27-/b   30+/b   31+/w   23+/w   13-/b   16-/b    |15949978
+25 Groenemeijer Leon       3k NL  Amst  4    3    4    24   7    23-/b   34-/w   33+/w   28-/b   30+/b   27+/w   11-/b    |12037982
+26 Hiddema Herman          4d NL  Gron  4    1    3    27   4    10-/b   28+/w   7-/w    16-/b   0=      0=      0=       |10550573
+27 Lit Vincent             6k NL  DDGT  3    3    3    23   9    38+/b   24+/w   16-/w   34+/w   17-/b   25-/b   0=       |20113016
+28 Krogt Harry_van_der     2d NL  Leid  4    2    3    20   8    35+/w   26-/b   20-/b   25+/w   0=      0=      0=       |10449450
+29 Finke Martin            3k NL  Utre  5    2    3    14   4    0=      0=      0=      0=      33+/b   6-/w    30+/b    |10450902
+30 Nicolasen Gerold        9k NL  Utre  2    2    2    25   4    33+/b   31-/b   24-/w   38+/w   25-/w   18-/b   29-/w    |14601356
+31 Lin Shu-Hsin            2k NL  Eind  3    1    2    22   2    15-/b   30+/w   18-/w   24-/b   0=      22-/w   0=       |18450135
+32 Leeden Stefan_van_der   5k NL  Seki  3    1    2    20   3    18-/w   35-/b   36+/w   19-/b   0=      0=      0=       |19001631
+33 Finkelnberg Hans        6k NL  Leid  2    2    2    20   2    30-/w   38+/w   25-/b   23-/b   29-/w   0=      37+/b    |15837019
+34 Overbeek Marieke        3k NL  Gron  3    1    2    18   4    21-/w   25+/b   22-/w   27-/b   0=      0=      0=       |13062368
+35 Au-Havik Tamara         2k NL  DHaa  4    1    2    12   3    28-/b   32+/w   0=      0=      0=      0=      0=       |14733961
+36 Slijkhuis Bart          3k NL  Gron  3    0    1    17   0    20-/w   19-/b   32-/b   0=      0=      0=      0=       |17250145
+37 Friederichs Rob         4k NL  Betu  3    0    1    14   0    0=      0=      0=      0=      21-/w   23-/b   33-/w    |12398804
+38 Jong Emanuel_de         9k NL  Sall  2    1    1    8    1    27-/w   33-/b   0+      30-/b   0=      0=      0=       |20162065

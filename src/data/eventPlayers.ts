@@ -9,6 +9,7 @@ export type EventPlayer = {
   egd?: number;
   original?: string;
   nickname: string[];
+  pastNames: string[];
 };
 
 export function getEventPlayersPath(eventId: string): string {
@@ -58,6 +59,7 @@ function normalizeEventPlayer(player: unknown, source: string): EventPlayer {
     egd: readOptionalNumber(player.egd, `${source}.egd`),
     original: readOptionalString(player.original, `${source}.original`),
     nickname: readStringList(player.nickname, `${source}.nickname`),
+    pastNames: readStringList(player.pastNames, `${source}.pastNames`),
   };
 }
 

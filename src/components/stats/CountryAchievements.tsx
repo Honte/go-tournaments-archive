@@ -52,6 +52,10 @@ export function CountryAchievements({ event, country, translations }: CountryAch
   details[t('table.games')] = country.totalGames;
   details[t('table.won')] = country.totalWon;
 
+  if (country.totalDrawn > 0) {
+    details[t('table.drawn')] = country.totalDrawn;
+  }
+
   return (
     <div className="my-1 flex flex-col">
       <H2>{t('stats.achievements')}</H2>

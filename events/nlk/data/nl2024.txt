@@ -1,0 +1,61 @@
+; TC[T240113D]
+; CL[A]
+; EV[54th Dutch Championship]
+; PC[NL, Apeldoorn]
+; DT[2024-01-13,2024-01-28]
+; HA[h9]
+; KM[6.5]
+; TM[112.5]
+; CM[ (submitted by Niek_vD)]
+;.
+ 1 Zeijst Rob_van          7d NL  Amst  10   6    59   398= 15+/w   8+/b    7+/b    2+/w    4-/w    3+/b    2+/b     |10337382
+ 2 Eeden Gilles_van        6d NL  Nijm  9    5    61   399= 9+/w    12+/w   3+/b    1-/b    0+      4+/w    1-/w     |10201598
+ 3 Ditzhuijzen Zeno_van    5d NL  Utre  9    5    58   363= 5+/b    6+/w    2-/w    18+/b   7+/b    1-/w    16+/w    |12698972
+ 4 Yan Zihan               6d NL  Delf  9    5    57   375  19+/b   7-/w    15+/b   8+/w    1+/b    2-/b    10+/w    |19498325
+ 5 Ling Martijn_van        4d NL  Utre  8=   4    49   339  3-/w    17+/b   9-/w    22+/b   14+/b   8+/b    0=       |14937890
+ 6 Groenen Geert           5d NL  DHaa  8=   3    43   296= 13+/b   3-/b    14+/w   9+/b    0=      0=      0=       |10501216
+ 7 Eijkhout Michiel        5d NL  Nijm  8    4    56=  358  16+/b   4+/b    1-/w    12+/b   3-/w    11-/w   13+/w    |10486410
+ 8 Aaij Rene               4d NL  Gron  8    4    55=  348= 10+/w   1-/w    13+/b   4-/b    28+/b   5-/w    17+/b    |10537560
+ 9 Nederveen Gerard        4d NL  Eind  8    4    52=  344= 2-/b    22+/w   5+/b    6-/w    10-/b   29+/w   12+/b    |16598461
+10 Janssen Frank           6d NL  DGS   8    4    51=  356  8-/b    18+/b   12-/w   29+/w   9+/w    13+/b   4-/b     |10298596
+11 Zwier Jurriaan          2d NL  Gron  7=   2    30   211  0=      0=      0=      0=      15+/w   7+/b    0=       |10262835
+12 Pomstra Koen            5d NL  xxxx  7    3    53   362= 17+/w   2-/b    10+/b   7-/w    13-/b   25+/b   9-/w     |10249602
+13 Rehm Robert             5d NL  Amst  7    3    52=  349  6-/w    16+/b   8-/w    25+/b   12+/w   10-/w   7-/b     |10237601
+14 Schuurink Ivo           2d NL  Wage  7    4    49=  294  24+/b   19+/w   6-/b    20+/w   5-/w    16-/w   26+/b    |13574836
+15 Hiddema Herman          4d NL  Gron  7    3    49=  290  1-/b    21+/w   4-/w    23-/w   11-/b   33+/w   29+/b    |10550573
+16 Vos Dave_de             3d NL  Baar  7    3    48=  333  7-/w    13-/w   29-/b   24+/b   26+/w   14+/b   3-/b     |10249613
+17 Jong Merijn_de          3d NL  Utre  7    3    47=  333= 12-/b   5-/w    25-/w   32+/b   18+/w   22+/b   8-/w     |10449472
+18 Berg Bucco_van_den      1d NL  Gron  7    4    46=  314  35+/b   10-/w   24+/b   3-/w    17-/b   23+/w   25+/b    |18274245
+19 Verhagen Rudi           4d NL  Ensc  7    2    42   283= 4-/w    14-/b   0=      0=      25-/w   28+/w   22+/b    |10213610
+20 Peters Zoe              1d NL  Delf  6=   2    34   224  22-/b   30+/w   21+/b   14-/b   0=      0=      0=       |17374819
+21 Peters Taco             2d NL  Nijm  6=   2    33   217= 32+/w   15-/b   20-/w   30+/b   0=      0=      0=       |10262824
+22 Geerlings Bert          3d NL  Apel  6    3    48   307  20+/w   9-/b    32+/b   5-/w    23+/w   17-/w   19-/w    |10586235
+23 Koper Axel              1k NL  Delf  6    4    41=  269= 27+/b   24-/w   35+/w   15+/b   22-/b   18-/b   34+/w    |20101015
+24 Loenen Jan_van          1d NL  Apel  6    3    41=  249= 14-/w   23+/b   18-/w   16-/w   36+/b   26-/w   43+/b    |10213841
+25 Au Ming                 1d NL  Seki  6    2    41   283= 0=      0=      17+/b   13-/w   19+/b   12-/w   18-/w    |13949573
+26 Koolen Sjoerd           1d NL  Goud  6    2    36   245  30-/w   35+/w   0=      0=      16-/b   24+/b   14-/w    |10549836
+27 Bergisch Frans          1k NL  Nijm  6    4    34   206= 23-/w   32-/b   39+/b   31-/b   40+/w   37+/w   33+/w    |10413458
+28 Groot_Lipman Hennie     2d NL  Nijm  6    1    32   222  0=      0=      0=      0=      8-/w    19-/b   32+/b    |10337910
+29 Riedeman Dick           2d NL  Delf  5=   1    39   265  0=      0=      16+/w   10-/b   0=      9-/b    15-/w    |10425426
+30 Broek Erik_van_den      1k NL  Gron  5=   2    30=  166= 26+/b   20-/b   31+/w   21-/w   0=      0=      0=       |13986203
+31 Shou Wei                1k NL  Eind  5=   1    21=  134= 0=      0=      30-/b   27+/w   0=      0=      0=       |19374267
+32 Vonk Bert               1d NL  Apel  5    2    40=  256= 21-/b   27+/w   22-/w   17-/w   33-/b   39+/b   28-/w    |12050973
+33 Mehnert Ben             4k NL  Zwol  5    5    30=  206= 50+/w   51+/b   42+/w   35+/b   32+/w   15-/b   27-/b    |20398851
+34 Krol Rinze              2k NL  Zwol  5    2    17   119  0=      0=      0=      0=      45+/b   41+/w   23-/b    |13698938
+35 Groot Ger_de            1d NL  Rijs  4=   0    33   217= 18-/w   26-/b   23-/b   33-/w   0=      0=      0=       |10401435
+36 Poel Matthijs_van_der   4k NL  Utre  4=   3    16=  114  39+/b   47+/w   0=      0=      24-/w   40+/b   0=       |20337251
+37 Pleit Karen             2k NL  Gron  4=   1    15   100= 0=      0=      0=      0=      39+/w   27-/b   0=       |10462485
+38 Diederen Marianne       3k NL  Utre  4=   3    13   83=  45+/b   39-/w   0+      47+/w   0=      0=      0=       |10598412
+39 Draaisma Henk           2k NL  Venl  4    3    31=  168= 36-/w   38+/b   27-/w   41+/b   37-/b   32-/w   45+/w    |10533842
+40 Tjong Tommy             3k NL  Zoet  4    4    26   130= 41-/w   50+/b   47+/b   42+/w   27-/b   36-/w   46+/b    |12886830
+41 Beguin Guus             7k NL  Utre  4    4    25=  140= 40+/b   42-/w   45+/b   39-/w   44+/w   34-/b   50+/w    |10737650
+42 Beer Nicole_de          5k NL  Eind  4    3    18=  113= 48+/w   41+/b   33-/b   40-/b   0=      0=      0+       |16233217
+43 Nicolasen Gerold        9k NL  Utre  4    2    11   62   0=      0=      0=      0=      49+/w   48+/b   24-/w    |14601356
+44 Buntjer Bernard         9k NL  Wage  3=   1    6=   33   0=      0=      0=      0=      41-/b   49+/b   0=       |10925519
+45 Schoonackers Dieter     6k NL  Sall  3    3    24   131  38-/w   48+/b   41-/w   51+/b   34-/w   50+/b   39-/b    |17274598
+46 Friederichs Rob         4k NL  Betu  3    0    4    26   0=      0=      0=      0=      0=      0=      40-/w    |12398804
+47 Overbeek Marieke        3k NL  Gron  2=   1    15   69=  51+/w   36-/b   40-/w   38-/b   0=      0=      0=       |13062368
+48 Slooven Gerard          7k NL  Apel  2=   1    13   67=  42-/b   45-/w   0=      0=      51+/w   43-/w   0=       |17033698
+49 Vos Sandra             11k NL  Gron  2=   0    7=   17=  0=      0=      0=      0=      43-/b   44-/w   0=       |17049703
+50 Hoeve Peter             5k NL  Apel  2    1    17   123  33-/b   40-/w   0=      0=      0+      45-/w   41-/b    |13237862
+51 Jong Emanuel_de         6k NL  Sall  2    1    14   96=  47-/b   33-/w   0=      45-/w   48-/b   0+      0=       |20162065

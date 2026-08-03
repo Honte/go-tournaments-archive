@@ -1,0 +1,27 @@
+top:
+  - Rob_van Zeijst
+  - Robert Rehm
+  - Max Rebattu
+stages:
+  - type: tournament
+    file: nl1981.txt
+    name: championship
+    notes: The game between Jaap Schiethart and Machiel Rijkers was skipped
+    dir: 1981/nlk
+    promoted: 2
+    scoringColumns:
+      - wins
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true
+  - type: tournament
+    file: nl1981playoff.txt
+    name: playoff
+    dir: 1981/playoff
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true

@@ -1,0 +1,45 @@
+(;CA[windows-1250]NW[34]NB[34]LT[]RR[Normal]C[
+ NOEgeberg 6d?\: 791 Hi! Have a nice game.
+ Hallbjorn 6d?\: 791 Have nice game
+]
+AP[MultiGo:4.4.4]SZ[19]GM[1]GN[NOEgeberg-Hallbjorn(B) IGS]EV[WAGC 2021]RO[1]DT[2021-06-04]
+PC[IGS\:  igs.joyjoy.net 6969]PB[Hallbjorn Gudmundsson]BR[6d?]PW[Jonas Egeberg]
+WR[6d?]KM[6.5]TM[3600]RE[W+Resign]US[Brought to you by IGS PANDANET]CP[
+  Copyright (c) PANDANET Inc. 2021
+  Permission to reproduce this game is given, provided proper credit is given.
+  No warrantee, implied or explicit, is understood.
+  Use of this game is an understanding and agreement of this notice.
+]
+MULTIGOGM[1]
+;B[qd]BL[3583];W[dp]WL[3570];B[dc]BL[3571];W[pp]WL[3521];B[cn]BL[3563];W[de]WL[3485]
+;B[fq]BL[3459];W[fp]WL[3480];B[gp]BL[3457];W[fo]WL[3477];B[dq]BL[3449];W[cq]WL[3438]
+;B[eq]BL[3446];W[cp]WL[3421];B[ce]BL[3358];W[cf]WL[3396];B[cd]BL[3356];W[df]WL[3355]
+;B[cj]BL[3321];W[ec]WL[3287];B[eb]BL[3318];W[dd]WL[3285];B[cb]BL[3248];W[fc]WL[3281]
+;B[nc]BL[3235];W[cl]WL[3251];B[bl]BL[3202];W[bk]WL[2938];B[ck]BL[3196];W[bm]WL[2937]
+;B[dl]BL[3138];W[cm]WL[2934];B[dm]BL[3078];W[dn]WL[2919];B[bj]BL[3036];W[al]WL[2916]
+;B[fk]BL[2588];W[iq]WL[2852];B[hq]BL[2321];W[ip]WL[2822];B[go]BL[2281];W[gn]WL[2701]
+;B[ho]BL[2278];W[jn]WL[2666];B[im]BL[2064];W[in]WL[2522];B[hn]BL[2051];W[gm]WL[2520]
+;B[hm]BL[2046];W[gl]WL[2501];B[fi]BL[1899];W[pd]WL[2236];B[pc]BL[1783];W[qe]WL[2232]
+;B[od]BL[1768];W[pe]WL[2228];B[rd]BL[1761];W[qc]WL[2227];B[re]BL[1737];W[pb]WL[2114]
+;B[oc]BL[1735];W[rc]WL[2112];B[qf]BL[1725];W[ob]WL[1970];B[nb]BL[1718];W[rb]WL[1967]
+;B[fe]BL[1643];W[ge]WL[1872];B[ff]BL[1585];W[fd]WL[1868];B[hd]BL[1560];W[gf]WL[1634]
+;B[fg]BL[1555];W[hc]WL[1628];B[id]BL[1542];W[gd]WL[1625];B[ic]BL[1538];W[fb]WL[1613]
+;B[hb]BL[1449];W[ea]WL[1554];B[db]BL[1446];W[bb]WL[1468];B[ba]BL[1381];W[bc]WL[1465]
+;B[cc]BL[1334];W[af]WL[1188];B[ad]BL[1270];W[if]WL[923];B[hg]BL[1219];W[gg]WL[918]
+;B[gh]BL[1211];W[eh]WL[905];B[fh]BL[1206];W[ig]WL[902];B[hh]BL[1164];W[ie]WL[898]
+;B[kd]BL[1133];W[kf]WL[791];B[mp]BL[1042];W[mn]WL[690];B[kp]BL[997];W[lo]WL[687]
+;B[lp]BL[940];W[jp]WL[684];B[oo]BL[925];W[po]WL[617];B[nn]BL[859];W[nm]WL[546];B[on]
+BL[840];W[qm]WL[492];B[om]BL[829];W[kl]WL[324];B[en]BL[752];W[do]WL[277];B[fn]BL[653]
+;W[em]WL[255];B[fm]BL[632];W[el]WL[253];B[fl]BL[631];W[dk]WL[253];B[dj]BL[626];W[nl]
+WL[250];B[op]BL[622];W[pq]WL[197];B[qn]BL[365];W[pn]WL[193];B[pm]BL[346];W[ql]WL[191]
+;B[ok]BL[320];W[nk]WL[172];B[qk]BL[315];W[rk]WL[149];B[qj]BL[253];W[rj]WL[147];B[qi]
+BL[250];W[ri]WL[131];B[qh]BL[166];W[oj]WL[66];B[pl]BL[148];W[ik]WL[46];B[hk]BL[140]
+;W[il]WL[43];B[hl]BL[139];W[ji]WL[34];B[oq]BL[117];W[rn]WL[0];B[nj]BL[58];W[pf]
+WL[3];B[qg]BL[53];W[ni]WL[20];B[mj]BL[50];W[oh]WL[28];B[mg]BL[5];W[lh]WL[20];B[ng]
+BL[14];W[og]WL[10];B[oi]BL[21];W[pi]WL[9];B[mi]BL[20];W[mh]WL[27];B[nh]BL[29];W[oi]
+WL[19];B[pg]BL[5];W[of]WL[5];B[nf]BL[20];W[ne]WL[3];B[me]BL[27];W[lg]WL[25];B[mf]
+BL[28];W[lj]WL[26];B[oe]BL[19];W[mk]WL[25];B[pr]BL[6];W[qr]WL[28];B[or]BL[23];W[sd]
+WL[9];B[qs]BL[11];W[rr]WL[23];B[sf]BL[25];W[dr]WL[5];B[er]BL[27];W[cs]WL[18];B[kr]
+BL[18];W[hr]WL[10];B[gr]BL[27];W[jr]WL[29];B[hs]BL[3];W[ir]WL[7];B[ij]BL[13];W[jj]
+WL[27];B[jm]BL[24];W[km]WL[28];B[ko]BL[25];W[kn]WL[29];B[mo]BL[14];W[ln]WL[28];B[ih]
+BL[5];W[jh]WL[1];OS[fastfood][Haradutch][hatopoppo][Lomis][Oui][sighar])

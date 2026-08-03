@@ -11,6 +11,7 @@ international events, and category medal tables for events that define age or ot
 
 ## Live sites
 
+- [European Go Championships Archives](https://eurogofed.org/archives/) (`egc`, `epc`, `epq`, `esgc`, `ewgc` and `eygc`)
 - [World Amateur Go Championships Archive](https://wagc.go.art.pl) (`wagc`)
 - [Polish Go Championships Archive](https://mp.go.art.pl) (`pgc`)
 - [Polish Youth Go Championships Archive](https://mpj.go.art.pl) (`pygc`)
@@ -31,6 +32,7 @@ Available event directories:
 | `ewgc`   | European Women Go Championships   | Locale `en`, country stats                                                       |
 | `eygc`   | European Youth Championships      | Locale `en`, country stats, category stats for `u21`, `u20`, `u18`, `u16`, `u12` |
 | `hrgc`   | Croatian Go Championships         | Locale `en`                                                                      |
+| `nlk`    | Dutch Go Championships            | Locale `en`                                                                      |
 | `iegc`   | Irish Go Championships            | Locale `en`                                                                      |
 | `kpmc`   | Korea Prime Minister Cup          | Locales `en`, `pl`, country stats                                                |
 | `pagc`   | Polish Academic Go Championships  | Locales `pl`, `en`                                                               |
@@ -103,8 +105,9 @@ npm run test         # Run tests
 
 ## Build and deploy
 
-The app uses `output: 'export'`, so `npm run build` emits static files to `out/`. The `public/index.php` file is also
-copied into the export for PHP-based static hosting setups that need a root redirect to the best supported locale.
+By default the app uses `output: 'export'`, so `npm run build` emits static files to `out/`. The `public/index.php` file
+is also copied into the export for PHP-based static hosting setups that need a root redirect to the best supported
+locale.
 
 Build the default multi-event archive:
 
@@ -144,6 +147,22 @@ Single-event builds write root data and SGF assets such as `public/data/tourname
 Multi-event builds write per-event assets such as `public/data/<prefix>/tournaments.json` and
 `public/sgf/<prefix>/list.json`. Preset entries marked `external: true` appear in selectors but are skipped for internal
 routes and generated assets.
+
+Presets with `dynamic: true` produce a Next.js standalone server instead of `out/`. The selected preset is embedded in
+the build, so `CONFIG` and `EVENT` are not needed at runtime. Player, player-category, and country stats pages are
+rendered on demand instead of being generated for every possible path. The asset prebuild is unchanged: production
+pages still read the generated JSON files from `public/data`, while the runtime SGF route can additionally render a
+preview that was not pre-generated.
+
+After building a dynamic preset, copy the public and client assets into the standalone directory and run the bundled
+server:
+
+```bash
+cp -r public .next/standalone/
+cp -r .next/static .next/standalone/.next/
+cd .next/standalone
+node server.js
+```
 
 Environment variables:
 
@@ -518,6 +537,8 @@ Examples:
 ```text
 id1-id2 id1:B+2.5
 id1-id2 id2:W+R
+id1-id2 jigo
+id1-id2 jigo black:id2
 id1-id2 id1:!
 id1-id2 id1:B+R sgf:2026/game.sgf yt:https://youtube.com/watch?v=abc
 ```
@@ -525,9 +546,14 @@ id1-id2 id1:B+R sgf:2026/game.sgf yt:https://youtube.com/watch?v=abc
 Result notes:
 
 - `B+...` means black won; `W+...` means white won.
+- `jigo` means a draw. It can be followed by the same properties as a decisive game.
+- When a result does not identify the players' colors, use `black:<player-id>` or `white:<player-id>`. The referenced ID
+  must be one of the game's players; the other player is assigned the opposite color. A color property that contradicts
+  a `B` or `W` result is rejected.
 - Scores can be numeric or `R` for resignation, `T` for timeout, `?` for unknown.
 - `!` marks a walkover.
-- H9-imported games may use loose results such as `+`, `-`, or `=`.
+- H9-imported games may use loose results such as `+`, `-`, or `=`. In a round column, a non-zero opponent followed by
+  `=` is a jigo; zero-opponent variants such as `0=` and `0=/` mean that no game was played.
 
 Supported properties:
 

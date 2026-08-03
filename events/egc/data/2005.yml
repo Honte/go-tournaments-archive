@@ -21,6 +21,11 @@ stages:
       - wins
       - open
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:5 sgf:2005/ec/5-AlexandrDinerstein-CatalinTaranu.sgf
+      - 1-4 1:B+R round:1 sgf:2005/ec/1-AlexandrDinerstein-PeiZhao.sgf
+      - 3-1 1:W+R round:4 sgf:2005/ec/4-IljaShikshin-AlexandrDinerstein.sgf
+      - 5-12 5:B+R round:8 sgf:2005/ec/8-SvetlanaShikshina-LaurentHeiser.sgf
   - type: tournament
     file: egc2005open100.txt
     name: EGC Open
@@ -38,7 +43,5 @@ stages:
     columns:
       - wins
     excluded: true
-    collapsed: true    
-    findSharedPlaces: true 
-	   
-
+    collapsed: true
+    findSharedPlaces: true

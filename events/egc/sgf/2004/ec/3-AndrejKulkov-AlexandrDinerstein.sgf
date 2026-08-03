@@ -1,0 +1,75 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]AP[CGoban:2]SZ[19]GM[1]GN[ ]EV[48th European Championship]
+RO[3]PB[Kulkov Andrej]BR[6d]PW[Dinerstein Alexandr]WR[1p]KM[6.5]RE[W+Resign]AN[Alexandre Dinerchtein]
+MULTIGOGM[1]
+;B[cp]CR[cp]C[This is the game i played at the 3rd round of the 48th European Championship. My opponent is Andrey Kulkov, 6-dan from Russia]
+;W[dd]CR[dd];B[pq]CR[pq];W[qd]CR[qd];B[qn]CR[qn]C[Kulkov's favourite opening];W[fp]
+CR[fp]
+(;FG[259:]PM[2];B[jp]CR[jp]C[The pincer is very unusual -];W[cq]CR[cq]
+(;B[dq]CR[dq]C[It is probably better to block from the other side -];W[dp]CR[dp]
+;B[dr]CR[dr];W[cr]CR[cr];B[br]CR[br];W[bq]CR[bq]
+(;B[ep]CR[ep]C[A joseki, but now the result is bad for Black -];W[do]CR[do];B[eo]
+CR[eo]
+(;W[eq]CR[eq]C[The only move -];B[er]CR[er];W[fq]CR[fq];B[bp]CR[bp];W[en]CR[en]
+;B[aq]CR[aq];FG[259:]PM[2];W[fo]CR[fo]TR[jp]C[The marked stone is too close to the wall, so Black cannot be satisfied]
+;B[od]CR[od];W[md]CR[md]C[White is trying to use the thickness by starting a fight]
+;B[of]CR[of];W[qf]CR[qf]
+(;B[oh]CR[oh]C[A bad choice -];W[qh]CR[qh];B[jd]CR[jd];W[lf]CR[lf];B[fc]CR[fc]
+(;W[df]CR[df]LB[oc:A]C[Attachment at A is another possibility -];B[qc]CR[qc];W[rc]
+CR[rc];B[pc]CR[pc];W[rb]CR[rb];B[lh]CR[lh];W[jf]CR[jf];FG[259:]PM[2];B[ge]CR[ge]
+LB[kc:A]C[The shape is poor. Kosumi at 43 is the vital point];W[kd]CR[kd]
+(;B[kc]CR[kc]C[The only move -];W[jc]CR[jc];B[ld]CR[ld];W[ke]CR[ke];B[lc]CR[lc]
+(;W[jb]CR[jb]C[The most active way -];B[id]CR[id];W[hc]CR[hc];B[hd]CR[hd];W[gc]
+CR[gc];B[fb]CR[fb];W[mc]CR[mc];B[mb]CR[mb];W[nb]CR[nb];B[nc]CR[nc];W[lb]CR[lb];B[me]
+CR[me];W[ma]CR[ma];B[nd]CR[nd];W[mb]CR[mb];B[le]CR[le];W[mf]CR[mf];B[ne]CR[ne];W[kb]
+CR[kb];B[ic]CR[ic];W[ig]CR[ig]
+(;FG[259:]PM[2];B[ib]CR[ib]C[Black cannot kill the group -];W[ob]CR[ob];B[oj]CR[oj]
+;W[gg]CR[gg];B[cc]CR[cc];W[dc]CR[dc];B[db]CR[db];W[cd]CR[cd];B[cb]CR[cb]C[The position is slightly favourable for White]
+;W[on]CR[on]TR[kc][lc][nc][pc][qc][ld][nd][od][le][me][ne][of][lh][oh][oj]C[White is trying to reduce the moyo, attacking the marked group at the same time]
+;B[op]CR[op];W[qp]CR[qp]C[A probe]
+(;B[pn]CR[pn]C[The aji is really bad -];W[lp]CR[lp];B[kn]CR[kn];W[ln]CR[ln];B[lm]
+CR[lm];W[mn]CR[mn];B[np]CR[np]LB[km:A]C[The losing move. For sure Black has to connect solidly at A]
+;FG[259:]PM[2];W[qq]CR[qq];B[ko]CR[ko];W[mp]CR[mp];B[pp]CR[pp];W[nl]CR[nl]LB[lk:A]
+[pl:B]C[A and B are miai points];B[pl]CR[pl];W[lk]CR[lk];B[mk]CR[mk]LB[jl:A]C[An overplay. Keima at A is the gentle way]
+;W[ml]CR[ml];B[ll]CR[ll];W[kk]CR[kk];B[mj]CR[mj];W[jl]CR[jl];B[km]CR[km];W[jq]CR[jq]
+C[Now Black is in trouble];B[iq]CR[iq];W[jr]CR[jr];B[kp]CR[kp];W[lr]CR[lr];B[im]
+CR[im];W[ip]CR[ip]
+(;B[hh]CR[hh]C[The final mistake -];FG[259:]PM[2];W[hk]CR[hk]C[The game is over.]
+;B[kq]CR[kq];W[kr]CR[kr];B[nr]CR[nr];W[mr]CR[mr];B[io]CR[io];W[hp]CR[hp];B[gm]CR[gm]
+;W[fl]CR[fl];B[ho]CR[ho];W[hl]CR[hl];B[gp]CR[gp];W[hq]CR[hq];B[gq]CR[gq];W[hr]CR[hr]
+;B[hm]CR[hm];W[jn]CR[jn];B[hg]CR[hg];W[fj]CR[fj];B[jj]CR[jj];W[jk]CR[jk];B[dh]CR[dh]
+;W[eg]CR[eg];B[fi]CR[fi];W[gi]CR[gi];B[fh]CR[fh];W[gh]CR[gh];B[ej]CR[ej];W[fg]CR[fg]
+;B[fk]CR[fk];W[gj]CR[gj];B[fm]CR[fm];W[em]CR[em];B[gl]CR[gl];W[el]CR[el];B[gk]CR[gk]
+;W[ek]CR[ek];FG[259:]PM[2];B[hj]CR[hj];W[ij]CR[ij];B[hi]CR[hi];W[ii]CR[ii];B[ih]
+CR[ih];W[jh]CR[jh];B[hf]CR[hf];W[ji]CR[ji];B[jm]CR[jm];W[il]CR[il];B[go]CR[go];W[dj]
+CR[dj];B[di]CR[di];W[ei]CR[ei];B[cg]CR[cg];W[bf]CR[bf];B[cj]CR[cj];W[bk]CR[bk];B[ck]
+CR[ck];W[bl]CR[bl];B[eh]CR[eh];W[ej]CR[ej];B[bn]CR[bn];W[cl]CR[cl];B[pr]CR[pr];W[rk]
+CR[rk];B[re]CR[re];W[qe]CR[qe];B[rl]CR[rl];W[qk]CR[qk];B[kg]CR[kg];W[jg]CR[jg];B[kf]
+CR[kf];W[je]CR[je];B[li]CR[li];W[lj]CR[lj];B[qi]CR[qi];W[ri]CR[ri];B[rh]CR[rh];W[rg]
+CR[rg];B[rj]CR[rj];W[sh]CR[sh];B[qj]CR[qj];W[sj]CR[sj];B[sl]CR[sl];W[sk]CR[sk];B[ql]
+CR[ql];W[pk]CR[pk];B[ok]CR[ok];W[qb]CR[qb])
+(;FG[259:]PM[2]MN[1];B[io]CR[io];W[hp]CR[hp];B[il]CR[il];W[ik]CR[ik];B[hk]CR[hk]
+;W[ij]CR[ij];B[gl]CR[gl]C[Black has no other chance to escape]))
+(;FG[259:]PM[2]MN[1];B[qq]CR[qq]C[This is the gentle answer];W[qm]CR[qm];B[pm]CR[pm]
+;W[pn]CR[pn];B[ql]CR[ql];W[rm]CR[rm];B[qo]CR[qo];W[pl]CR[pl];B[om]CR[om];W[ol]CR[ol]
+;B[nm]CR[nm];W[qk]CR[qk];B[nl]CR[nl];W[rn]CR[rn];B[ro]CR[ro];W[di]CR[di]C[This is the best way for Black]))
+(;B[ob]CR[ob];W[ib]CR[ib];B[ha]CR[ha];W[hb]CR[hb];B[gd]CR[gd];W[ga]CR[ga];B[gb]
+CR[gb];W[ia]CR[ia];B[ka]CR[ka];W[fd]CR[fd]C[The aji is really bad]))
+(;FG[259:]PM[2]MN[1];W[id]CR[id];B[jb]CR[jb];W[ic]CR[ic];B[ib]CR[ib]C[The result would be comfortable for Black]))
+(;FG[259:]PM[2]MN[1];B[jc]CR[jc];W[kc]CR[kc];B[je]CR[je];W[ke]CR[ke];B[if]CR[if]
+;W[jg]CR[jg]C[White's shape would be perfect]))
+(;FG[259:]PM[2]MN[1];W[oc]CR[oc];B[pc]CR[pc];W[pd]CR[pd];B[nc]CR[nc];W[oe]CR[oe]
+;B[ob]CR[ob];W[nd]CR[nd];B[oc]CR[oc];W[ne]CR[ne];B[kc]CR[kc];W[pj]CR[pj]C[The result would be equal]))
+(;FG[259:]PM[2]MN[1];B[qc]CR[qc];W[rc]CR[rc];B[pc]CR[pc];W[re]CR[re];B[mc]CR[mc]
+;W[lc]CR[lc];B[ld]CR[ld];W[mb]CR[mb];B[nc]CR[nc];W[kc]CR[kc];B[le]CR[le]C[This is the most solid joseki]))
+(;FG[259:]PM[2]MN[1];W[co]CR[co];B[fq]CR[fq];W[en]CR[en];B[fo]CR[fo];W[dm]CR[dm]
+;B[cs]CR[cs]C[White's corner would be small]))
+(;FG[259:]PM[2]MN[1];B[bp]CR[bp];W[ar]CR[ar];B[ep]CR[ep];W[do]CR[do];B[eo]CR[eo]
+;W[co]CR[co];B[fq]CR[fq];W[en]CR[en];B[fo]CR[fo];W[dm]CR[dm]C[This is the right direction. Black's construction would be perfect]))
+(;FG[259:]PM[2]MN[1];B[bq]CR[bq];W[dq]CR[dq];B[bo]CR[bo];W[hq]CR[hq];B[iq]CR[iq]
+;W[hp]CR[hp];B[jn]CR[jn];W[cn]CR[cn];B[dp]CR[dp];W[ep]CR[ep];B[cm]CR[cm];W[dm]CR[dm]
+;B[bm]CR[bm];W[dl]CR[dl];B[ck]CR[ck]C[The result would be about equal]))
+(;FG[259:]PM[2]MN[1];B[eq]CR[eq]
+(;W[kq]CR[kq];B[fq]CR[fq];W[nq]CR[nq]C[Normally Black has to defend the corner ])
+(;W[fq]CR[fq];B[ep]CR[ep];W[fo]CR[fo];B[jp]CR[jp]C[White's group would be weak]))
+(;FG[259:]PM[2]MN[1];B[hq]CR[hq];W[do]CR[do];B[dp]CR[dp];W[ep]CR[ep];B[co]CR[co]
+;W[dn]CR[dn];B[bm]CR[bm];W[fn]CR[fn];B[kp]CR[kp]C[This is the common pincer]))

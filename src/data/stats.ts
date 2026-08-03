@@ -1,4 +1,6 @@
 import type {
+  CategoryPlayer,
+  CategoryStats,
   CountryResult,
   CountryStats,
   Game,
@@ -6,13 +8,13 @@ import type {
   PlayerGame,
   PlayerResult,
   PlayerStats,
+  Stage,
   Stats,
-  CategoryStats,
-  CategoryPlayer,
   StatsMedals,
   Tournament,
 } from '@/schema/data';
 import type { EventDefinition } from '@/schema/event';
+import { getGameStats } from '@/libs/games';
 import type { PlayersHandler } from '@/data/players';
 
 export function calculateStats(
@@ -36,9 +38,9 @@ export function calculateStats(
 
   let playedGames = 0;
   let black = 0;
-  let white = 0;
   let resign = 0;
   let timeout = 0;
+  let draws = 0;
   let sgfs = 0;
   let analysis = 0;
   let streams = 0;
@@ -59,29 +61,28 @@ export function calculateStats(
         const playerResult = upsertPlayerResult(playerStats, tournamentPlayer, year);
         const playerGames: PlayerGame[] = [];
 
-        if ('games' in player && player.games?.length) {
-          for (const game of player.games) {
-            if (game && game.opponent) {
-              const globalGame = tournamentGames[game.game];
-              const opponent = players[game.opponent];
+        for (const game of iteratePlayerGames(player)) {
+          if (game && game.opponent) {
+            const globalGame = tournamentGames[game.game];
+            const opponent = players[game.opponent];
 
-              playerGames.push({
-                id: opponent?.id ?? 'BYE',
-                country: players[game.opponent]?.country,
-                rank: players[game.opponent]?.rank,
-                won: game.won,
-                result: game.result,
-                props: globalGame?.props,
-                color: game.color,
-              });
+            playerGames.push({
+              id: opponent?.id ?? 'BYE',
+              country: players[game.opponent]?.country,
+              rank: players[game.opponent]?.rank,
+              won: game.won,
+              drawn: game.drawn,
+              result: game.result,
+              props: globalGame?.props,
+              color: game.color,
+            });
 
-              if (globalGame?.props?.sgf) {
-                playerStats.totalSgfs++;
-              }
+            if (globalGame?.props?.sgf) {
+              playerStats.totalSgfs++;
+            }
 
-              if (opponent?.id) {
-                playerStats.opponents[opponent.id] = opponent.name;
-              }
+            if (opponent?.id) {
+              playerStats.opponents[opponent.id] = opponent.name;
             }
           }
         }
@@ -165,12 +166,12 @@ export function calculateStats(
 
       playedGames++;
 
-      if (game.result?.startsWith('B')) {
-        black++;
+      if (game.draw) {
+        draws++;
       }
 
-      if (game.result?.startsWith('W')) {
-        white++;
+      if (game.result?.startsWith('B')) {
+        black++;
       }
 
       if (game.result?.includes('R')) {
@@ -209,8 +210,11 @@ export function calculateStats(
 
     for (const result of player.results) {
       for (const stage of result.stages) {
-        player.totalGames += stage.games.length;
-        player.totalWon += stage.games.reduce((total, game) => total + Number(game.won), 0);
+        const outcomes = getGameStats(stage.games);
+
+        player.totalGames += outcomes.games;
+        player.totalWon += outcomes.won;
+        player.totalDrawn += outcomes.drawn;
       }
     }
   }
@@ -230,12 +234,16 @@ export function calculateStats(
         yearStats.bestPlace = Math.min(yearStats.bestPlace, result.place);
 
         for (const stage of result.stages) {
-          yearStats.totalGames += stage.games.length;
-          yearStats.totalWon += stage.games.reduce((total, game) => total + Number(game.won), 0);
+          const outcomes = getGameStats(stage.games);
+
+          yearStats.totalGames += outcomes.games;
+          yearStats.totalWon += outcomes.won;
+          yearStats.totalDrawn += outcomes.drawn;
         }
       }
 
       stats.totalWon += yearStats.totalWon;
+      stats.totalDrawn += yearStats.totalDrawn;
       stats.totalGames += yearStats.totalGames;
       stats.bestPlace = Math.min(stats.bestPlace, yearStats.bestPlace);
     }
@@ -249,10 +257,11 @@ export function calculateStats(
       sgfs,
       resign,
       timeout,
+      draws,
       relays,
       streams,
       analysis,
-      black: black / (black + white),
+      black: black / playedGames,
     },
     games,
     players,
@@ -285,6 +294,7 @@ export function calculateStats(
       bestPlace: Infinity,
       totalGames: 0,
       totalWon: 0,
+      totalDrawn: 0,
       totalAttended: 0,
       totalSgfs: 0,
       opponents: {},
@@ -350,6 +360,7 @@ export function calculateStats(
       categoriesMedals: setupCategoriesMedals(),
       totalGames: 0,
       totalWon: 0,
+      totalDrawn: 0,
       bestPlace: Infinity,
       score: 0,
       years: {},
@@ -362,6 +373,7 @@ export function calculateStats(
       bestPlace: Infinity,
       totalGames: 0,
       totalWon: 0,
+      totalDrawn: 0,
       results: [],
     });
   }
@@ -398,6 +410,20 @@ export function calculateStats(
           }
         }
       }
+    }
+  }
+}
+
+function* iteratePlayerGames(result: Stage['table'][0]) {
+  if ('games' in result && result.games?.length) {
+    for (const game of result.games) {
+      yield game;
+    }
+  }
+
+  if ('playoffs' in result && result.playoffs?.length) {
+    for (const game of result.playoffs) {
+      yield game;
     }
   }
 }

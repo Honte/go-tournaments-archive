@@ -1,0 +1,11 @@
+stages:
+  - type: tournament
+    name: championship
+    file: nl1983.txt
+    scoringColumns: 
+      - wins          
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true

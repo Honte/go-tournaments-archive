@@ -1,0 +1,9 @@
+; EV[8th Dutch Championship]
+   1 Rebattu Max                   30k NL  xxx      6    20      8+      7+      6+      5-      4+      3+      2+
+   2 Rehm Robert                   30k NL  xxx      6    16      7+      8+      5+      6+      3+      4+      1-
+   3 Schlemper Ronald              30k NL  xxx      5    11      6+      5+      8+      7+      2-      1-      4+
+   4 Vulpen Rob_van                30k NL  xxx      4     7      5+      6+      7+      8+      1-      2-      3-
+   5 Hungerink Ger                 30k NL  xxx      2     8      4-      3-      2-      1+      8-      7-      6+
+   6 Koopman Rob                   30k NL  xxx      2     3      3-      4-      1-      2-      7+      8+      5-
+   7 Rongen Jan_van                30k NL  xxx      2     3      2-      1-      4-      3-      6-      5+      8+
+   8 Solleveld Leo                 30k NL  xxx      1     2      1-      2-      3-      4-      5+      6-      7-

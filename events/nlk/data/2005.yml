@@ -1,0 +1,29 @@
+top:
+  - fjanssen
+  - mkuin
+  - meijkhout
+stages:
+  - type: tournament
+    file: nl2005.txt
+    name: championship
+    dir: 2005/nlk
+    promoted: 2
+    scoringColumns:
+      - wins
+      - sos
+      - sodos
+      - null
+    breakers:
+      - wins
+      - sos
+      - sodos
+    findSharedPlaces: true
+  - type: tournament
+    file: nl2005playoff.txt
+    name: playoff
+    dir: 2005/playoff
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true

@@ -55,7 +55,18 @@ function AllPlayersStatsContent({ event, players, translations }: AllPlayersStat
       Object.values(players)
         .filter((p) => p.id !== 'BYE')
         .map<PlayerRow>((p) => {
-          const { id, name, medals, totalAttended, totalGames, totalWon, bestPlace, country: countries, totalSgfs } = p;
+          const {
+            id,
+            name,
+            medals,
+            totalAttended,
+            totalGames,
+            totalWon,
+            totalDrawn,
+            bestPlace,
+            country: countries,
+            totalSgfs,
+          } = p;
           const [firstName, lastName] = (name ?? '').split(' ');
           const [gold, silver, bronze] = medals;
 
@@ -76,7 +87,8 @@ function AllPlayersStatsContent({ event, players, translations }: AllPlayersStat
             attended: totalAttended,
             games: totalGames,
             won: totalWon,
-            lost: totalGames - totalWon,
+            drawn: totalDrawn,
+            lost: totalGames - totalWon - totalDrawn,
             wonPercent: totalWon / totalGames,
             sgfs: totalSgfs,
           };
@@ -86,6 +98,7 @@ function AllPlayersStatsContent({ event, players, translations }: AllPlayersStat
   );
 
   const hasSgfs = data.some((p) => p.sgfs > 0);
+  const hasDraws = data.some((p) => p.drawn > 0);
 
   const columns = useMemo<ColumnDef<PlayerRow>[]>(
     () =>
@@ -150,6 +163,10 @@ function AllPlayersStatsContent({ event, players, translations }: AllPlayersStat
             accessorKey: 'won',
             header: t('table.won'),
           },
+          hasDraws && {
+            accessorKey: 'drawn',
+            header: t('table.drawn'),
+          },
           {
             accessorKey: 'lost',
             header: t('table.lost'),
@@ -165,7 +182,7 @@ function AllPlayersStatsContent({ event, players, translations }: AllPlayersStat
           },
         ] as ColumnDef<PlayerRow>[]
       ).filter(Boolean),
-    [t, translations, hasSgfs, event]
+    [t, translations, hasSgfs, hasDraws, event]
   );
 
   return <StatsTable columns={columns} data={data} />;

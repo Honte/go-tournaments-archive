@@ -1,0 +1,14 @@
+stages:
+  - type: tournament
+    name: championship
+    file: nl1985.txt
+    notes: Gilles van Eeden won first 2 games (vs Frank Jannsen and Arend-Jan Westhoff), but later withdrawn and his games were nullified
+    scoringColumns: 
+      - wins          
+      - sos
+      - sodos
+    breakers:
+      - wins
+      - sos
+      - sodos
+    findSharedPlaces: true

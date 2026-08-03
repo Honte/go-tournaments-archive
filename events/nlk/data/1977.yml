@@ -1,0 +1,27 @@
+top:
+  - rrehm
+  - mrebattu
+  - rschlemper
+stages:
+  - type: tournament
+    file: nl1977.txt
+    name: championship
+    dir: 1977/nlk
+    promoted: 2
+    scoringColumns:
+      - wins
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: false
+  - type: tournament
+    file: nl1977playoff.txt
+    name: playoff
+    notes: Exact result of playoff unknown
+    dir: 1977/playoff
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true

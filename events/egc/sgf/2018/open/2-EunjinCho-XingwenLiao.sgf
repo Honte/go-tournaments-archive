@@ -1,0 +1,548 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]OT[3x30 byo-yomi]AP[CGoban:3]SZ[19]GM[1]GN[EGC2018 Main board 1 round 2 Eunjin Cho 6d (b) vs XingWen Liao 6p]
+EV[EGC2018 Main board 1 round 2 Eunjin Cho 6d (b) vs XingWen Liao 6p]RO[2]DT[2018-07-30]
+PC[Pisa, Italy]PB[Eunjin Cho]BR[6d]PW[XingWen Liao]WR[6p]KM[6.5]TM[9000]RE[W+7.5]
+US[HW9x9]MULTIGOGM[1]
+;B[pp];W[pd]C[EuroGoTV1 [-\]\: Live TV http\://EuroGoTV.com/1
+];B[dq];W[cd];B[ec]
+;W[de];B[cn]C[koksik [1k\]\: hi ;) maybe I'll look ignorant but what is this tournament? \:D
+]
+;W[nq]C[Fantleroy [?\]\: main tournament of the european go congress
+];B[qn];W[dp]
+C[koksik [1k\]\: oh i see \:) thanks!
+];B[cp];W[eq];B[dr];W[jp]C[EuroGoTV1 [-\]\: please pass the link to your friends by social media
+]
+;B[nc]C[afgani [3d\]\: who are those  pros?
+afgani [3d\]\: is  this like  part  of  the event?
+afgani [3d\]\: bring  in  pros to play the  amateurs?
+EuroGoTV1 [-\]\: 1 is 6p
+]
+;W[qf]C[EuroGoTV1 [-\]\: XingWen (white)
+];B[pc];W[qc];B[qb]C[afgani [3d\]\: i mean what are they  doing  in the EGC?
+]
+;W[oc];B[pb]C[misterduck [1k\]\: theyre playing go
+];W[od]C[afgani [3d\]\: so they signed up like all  other players?
+]
+;B[ob];W[rc];B[nd]C[Canadian4D [?\]\: seems so 
+];W[mb]C[misterduck [1k\]\: probably? some might be invited or sent by the pro organisation
+Canadian4D [?\]\: European Go Open even pros can join i guess
+Grunman [2k\]\: they just can't be the European champions
+]
+;B[lc];W[lb]C[r0n1n [3d\]\: also, apparently 2 boards of the top group are being broadcasted on pandanet
+Komachi [?\]\: if it's an open, doesn't that mean anyone can play?
+misterduck [1k\]\: pandanet is sponsor of ecg, they have rights to the european tournament i think
+]
+;B[qd];W[rd]C[ftroiset [7d\]\: exactly, but not for the title of European champion
+Canadian4D [?\]\: on twitch there are broadcasts of top 2 boards
+Canadian4D [?\]\: if anyone interested in those
+koksik [1k\]\: Komachi yes but there are a little different rules for pros when participating amateur tournaments \:)
+koksik [1k\]\: thats why its a little confusing \:)
+Canadian4D [?\]\: i dont think there's any restrictions for Chinese pros though
+misterduck [1k\]\: oh rob van zeijst vs pavol lisy on twitch
+misterduck [1k\]\: thats a good one
+lalao [?\]\: hi EuroGoTv, is there any broadcast of the european championship games ?
+misterduck [1k\]\: https\://www.twitch.tv/europeangofederation
+misterduck [1k\]\: and the second game, same link but with europeangofederation2
+Komachi [?\]\: is this a Swiss System Tournament or Round Robin?
+lalao [?\]\: thx
+]
+;B[pe];W[oe]C[YZ1509 [3d\]\: to many participants for a round-robin
+];B[jc];W[mc]
+;B[ld];W[fd]C[Komachi [?\]\: thank you.
+YZ1509 [3d\]\: so where in chess they use swiss, in go they use macmahon
+YZ1509 [3d\]\: Macmahon adds points for priorly achieved dan-ranks often laying the topbar at 4d
+Komachi [?\]\: oh, sorry. MacMahon is more or less the same as the Swiss?
+YZ1509 [3d\]\: so 4d and above start with 5, 3d's with 4, 2d's 3 and so on
+YZ1509 [3d\]\: in that manner lowly k's won't get beaten up by harsh opponents
+EuroGoTV1 [-\]\: Live TV broadcasts on http\://EuroGoTV.com/1 , http\://EuroGoTV.com/2 , http\://EuroGoTV.com/3 , http\://EuroGoTV.com/4  (on 3 the streaming doesnt work)
+EuroGoTV1 [-\]\: but the live sgf is
+Guest525\: whoa, I arrived late. how many minutes have they been playing please ?
+]
+(;B[do];W[ep])
+(;B[pr]
+(;W[eo];B[do];W[ep])
+(;W[ep]C[liusasori [5d\]\: read what i said after
+];B[do]C[Lilou [-\]\: LOL
+];W[eo]
+C[YZ1509 [3d\]\: yes these players have a steep pace in the game
+];B[en];W[fn];B[fm]
+;W[em];B[dn];W[gn];B[er]C[kannikka [3k\]\: the moves are out of order, but the board position is right now
+]
+;W[fc]C[Lilou [-\]\: Lot of undo this game
+];B[nb]C[YZ1509 [3d\]\: relayer has more than one window to handle
+])
+(;W[fc];B[nb];W[ep];B[do]C[atman [?\]\: maybe they are playing a fuseki they have both prepared with AI?
+]
+;W[eo];B[en];W[fn];B[fm];W[em];B[dn];W[gn];B[er];W[gq]C[YZ1509 [3d\]\: yes sequences come all to natural to these topplayers
+EuroGoTV1 [-\]\: sorry, i was away
+EuroGoTV1 [-\]\: please forgive me
+YZ1509 [3d\]\: for leave of absence during wargames, nah
+gooooo [-\]\: eurogotv1, thanks for relaying
+Guest525\: well, I just wanted to knowso I could arrive on time tomorrow. but it doesn't matter. I'll figure it out
+]
+;B[fl]C[YZ1509 [3d\]\: next round in 23\:30h
+EuroGoTV1 [-\]\: ^^
+];W[cq]C[ThiGar [3k\]\: Which clubs do the two players belong to?
+]
+;B[gr];W[fr];B[fs];W[fq]C[YZ1509 [3d\]\: female chinese and south-korean
+];B[cr]
+;W[bq];B[br];W[ci]C[ThiGar [3k\]\: ty
+YZ1509 [3d\]\: my feeling says she pulled ahead slightly, wonder what leela makes of this
+]
+;B[ck];W[hc]C[YZ1509 [3d\]\: h17 is way bigger than it look at first glance
+SHrenov [3k\]\: Pavol Lisy - Rob Van Jeijst, Viktor Lin - Artem Kachanovskyi on pandanet server
+gooooo [-\]\: p18 isn't alive yet right?
+]
+;B[hr];W[hq]C[YZ1509 [3d\]\: it's Rob v Zeijst
+koksik [1k\]\: h17 kills off completely e17, right?
+Lilou [-\]\: Is ilya game on pandanet ?
+SHrenov [3k\]\: not today lilou
+]
+;B[iq];W[ip];B[jq];W[kq]C[Guest525\: Artem v Lin in on over there
+];B[kp];W[po]
+;B[oo]C[EuroGoTV1 [-\]\: Live TV + board on  http\://EuroGoTV.com/1
+];W[kr];B[jr]
+;W[js];B[ir];W[gs];B[hs];W[es];B[ds];W[ks];B[es];W[ko];B[pn];W[is];B[gs];W[lp];B[ib]
+;W[qk]C[yaya [?\]\: I don't find the top european players on pandanet server
+];B[bc]
+C[EuroGoTV1 [-\]\: http\://EuroGoTV.com/3 and http\://EuroGoTV.com/4 for European Championship
+EuroGoTV1 [-\]\: http\://EuroGoTV.com/1 and http\://EuroGoTV.com/2 for Main tournament
+SHrenov [3k\]\: i'm think european championship is main tournament, and another one - open tournament xD
+EuroGoTV1 [-\]\: you can think that , but that is how it is announced by organisation and EGF
+SHrenov [3k\]\: ok. let's destroy egf! xD
+EuroGoTV1 [-\]\: ^^
+]
+;W[fb]C[koksik [1k\]\: is B dead in the corner?
+EuroGoTV1 [-\]\: i would be dead
+SHrenov [3k\]\: https\://egc2018.it/ , "go events" link in main menu - european championship, open european championship. a don't see where open champ = main champ xD
+EuroGoTV1 [-\]\: but if i were white it would be alive
+ffillets [2k\]\: no, one eye for black against no eye
+koksik [1k\]\: okay, i mean upper left corner ffillets \:)
+ThiGar [3k\]\: They share the first few rounds, I believe
+koksik [1k\]\: but true, at first glance i was sure black should add a move at b4 \:)
+Guest525\: c17 d18 doesn't look promising for B
+koksik [1k\]\: yeah, maybe it was for additional aji when playing c13?
+ThiGar [3k\]\: b has bigger sente than protect his group
+Guest525\: or her group in this case \:)
+ThiGar [3k\]\: sorry, her group
+koksik [1k\]\: ;)
+]
+;B[cc]C[YZ1509 [3d\]\: what bothers me are the names on the display
+YZ1509 [3d\]\: XingWen is playing black isn't she
+Guest525\: nah XingWen is the guy
+YZ1509 [3d\]\: aha so she is a south-korean woman
+]
+;W[bd];B[eb];W[db];B[dc];W[ea]C[EuroGoTV1 [-\]\: d19 now?
+YZ1509 [3d\]\: d19 for ko?
+]
+;B[da]C[cacon [-\]\: there's a nick xinwen on kgs
+];W[ca];B[ba];W[ab];B[cb];W[ac]
+;B[da]C[Guest525\: f11 now ?
+YZ1509 [3d\]\: b18 kills?
+OrnitOtter [?\]\: isn't ko?
+OrnitOtter [?\]\: oh nvm
+YZ1509 [3d\]\: hmm white might win playing g14
+Guest525\: guess it's big but B b18 os gote life. W can have 2 plays if he wants
+YZ1509 [3d\]\: g14 b18 d9
+]
+;W[hb];B[ee]C[Tako [?\]\: is there a broadcast of the European Championship ?
+EuroGoTV1 [-\]\: yes
+]
+;W[ed];B[dd]C[YZ1509 [3d\]\: that sacrifice at n18 early in the game looks to be welstudied
+ThiGar [3k\]\: e 15 feels like double sente
+]
+;W[cf]C[koksik [1k\]\: i guess it was even before alphago, now i think its just a standard \:)
+Tako [?\]\: what account, EuroGoTV1 ?
+ThiGar [3k\]\: although, in 5000 years of existence of Go, only a fraction of interesting shapes have been plaed.
+OrnitOtter [?\]\: it's on pandanet
+EuroGoTV1 [-\]\: http\://EuroGoTV.com/3 and http\://EuroGoTV.com/4
+ThiGar [3k\]\: played*
+Tako [?\]\: thank you
+EuroGoTV1 [-\]\: i am very sorry not here on KGS, though it was the original agreement with the organisation
+]
+;B[df];W[ce]C[ThiGar [3k\]\: is go evolving like football broadcast rights?
+YZ1509 [3d\]\: there is little knowledge about shapes played in the early years of wei qi
+EuroGoTV1 [-\]\: it is ThiGar
+EuroGoTV1 [-\]\: just less money
+Dupaaxe [?\]\: Some pro comment on any stream ?
+]
+;B[bb]C[EuroGoTV1 [-\]\: not on stream, but videos
+ThiGar [3k\]\: what a pity, EuroGoTV
+EuroGoTV1 [-\]\: will be online later
+Dupaaxe [?\]\: Tx 
+]
+;W[ej]C[YZ1509 [3d\]\: black will be in trouble when l18 hits the goban
+Lilou [-\]\: W seems to control 
+]
+;B[ek]C[YZ1509 [3d\]\: yes already a long time
+Amoriel [1d\]\: w is preparing for L18?
+YZ1509 [3d\]\: white intended on l18 already with h17
+YZ1509 [3d\]\: a bit curious how black still made life upperleft even with that h17 on the board
+koksik [1k\]\: i think white thought he is enough ahead even after black lives so he thought why complicate? \:)
+koksik [1k\]\: or i just totally missread which is also plausible ;D
+]
+;W[kb]C[YZ1509 [3d\]\: it looks like we understood the game
+koksik [1k\]\: hard choice for B \:D
+Korea4K [1d\]\: b leading
+Schachus12 [1k\]\: can black just play l17?
+Schachus12 [1k\]\: if white has to do k18 in response than it sees allright for black
+bert [?\]\: b can also just play k15 
+OrnitOtter [?\]\: i like k15 more
+Lilou [-\]\: Seems ulgy L17
+Schachus12 [1k\]\: oh, yeah, that is nicer
+Guest525\: either way, B gets sente after W rescues some stones
+Korea4K [1d\]\: d15 firdt
+Korea4K [1d\]\: first
+OrnitOtter [?\]\: doesn't need to come back and play n16?
+koksik [1k\]\: d15? hard to play there \:p
+Korea4K [1d\]\: o15
+koksik [1k\]\: \:)
+Korea4K [1d\]\: Atari first
+Schachus12 [1k\]\: why?
+Schachus12 [1k\]\: you can atari later, cant you?
+koksik [1k\]\: cause in other case white can play there \:D
+]
+;B[ne]C[koksik [1k\]\: and black has to connect \:)
+];W[of]C[koksik [1k\]\: so its the last chance
+Schachus12 [1k\]\: ok, appearently you are right
+Korea4K [1d\]\: k18
+Korea4K [1d\]\: now
+warmfuzzy\: doenst work
+warmfuzzy\: u get cut through l17
+Schachus12 [1k\]\: I didnt thik white would play there, but b did
+koksik [1k\]\: huge move for both \:)
+EuroGoTV1 [-\]\: k18 looks like working
+Korea4K [1d\]\: k18 only move
+warmfuzzy\: in what universe
+koksik [1k\]\: how?
+warmfuzzy\: w pushes and cuts
+EuroGoTV1 [-\]\: after l16 Bk116
+]
+;B[ic]C[koksik [1k\]\: hmm
+OrnitOtter [?\]\: oh
+warmfuzzy\: i keep pushinng
+Korea4K [1d\]\: good move
+koksik [1k\]\: i dont see how does this work \:D
+warmfuzzy\: l16 ll15 m15
+warmfuzzy\: and than?
+warmfuzzy\: or
+Korea4K [1d\]\: w resign
+warmfuzzy\: hmm
+koksik [1k\]\: i dont see how this kills black \:p
+]
+;W[kc]C[koksik [1k\]\: what after l17 l16 k16?
+];B[je]C[koksik [1k\]\: oh like this \:D
+koksik [1k\]\: it gets more complicated than i thought \:D
+Lilou [-\]\: J14 if w push
+koksik [1k\]\: how about wedge?
+koksik [1k\]\: at k16?
+OrnitOtter [?\]\: k16?
+koksik [1k\]\: ok, i cant read enough to tell anything concluding now \:D
+koksik [1k\]\: huge fight \:D
+koksik [1k\]\: with 4 groups involved. Not for my brain \:D
+]
+;W[kd];B[ke]C[YZ1509 [3d\]\: should be enough libs for white
+];W[jd];B[id];W[ie]
+;B[he];W[if];B[hd];W[le];B[lf];W[md]C[EuroGoTV1 [-\]\: f15 now?
+koksik [1k\]\: looks like W+R a little bit
+EuroGoTV1 [-\]\: hmm
+EuroGoTV1 [-\]\:  f15 no good
+]
+;B[me];W[hf]C[OrnitOtter [?\]\: how much time remaining?
+];B[fe]C[EuroGoTV1 [-\]\: B 1.16  W 1.50
+OrnitOtter [?\]\: thank you
+bert [?\]\: very much time
+EuroGoTV1 [-\]\: yes
+YZ1509 [3d\]\: nah master Wu had 6h in his jubango
+]
+;W[ia]C[liusasori [5d\]\: ?
+liusasori [5d\]\: ok i got it
+OrnitOtter [?\]\: living inside?
+liusasori [5d\]\: or not, why not g15 ?
+YZ1509 [3d\]\: as i said l18 will bring problem for black, but the variation played still surprises me
+]
+;B[gf]C[bert [?\]\: what was wrong with g15 rightaway?
+koksik [1k\]\: i also wonder \:P
+liusasori [5d\]\: ok i read it again
+liusasori [5d\]\: g15 g16 g14 h19 and its bad ko for w
+liusasori [5d\]\: (ko where black take first)
+liusasori [5d\]\: so f15 was very good
+koksik [1k\]\: oh i see
+koksik [1k\]\: nice sequence, thanks \:D
+koksik [1k\]\: now it makes sense \:)
+liusasori [5d\]\: but could w play the ko ?
+liusasori [5d\]\: maybe b4 not big enought compared to top
+Schachus12 [1k\]\: why not g15 g16 g14 f19?
+wade [6d\]\: i think w wonders if m16 is good enough
+liusasori [5d\]\: then b g17 schachus and w is dead
+liusasori [5d\]\: b has 3 libes
+liusasori [5d\]\: libs*
+Schachus12 [1k\]\: ?
+warmfuzzy\: what if b takes on f19 instead of h19
+Schachus12 [1k\]\: h19 would be atari
+liusasori [5d\]\: oh i see, you sequence is not correct
+dansugo [3k\]\: l14 2nd eye org16
+liusasori [5d\]\: if h19 b still 2 libs
+Schachus12 [1k\]\: yeah
+liusasori [5d\]\: i clone, easier to show 
+]
+;W[jb]C[bert [?\]\: b would love to m16 now, but can't
+liusasori [5d\]\: i just corrected my previous sequence\: if w g15\: g15 g16 g14 f19 it's best for both
+YZ1509 [3d\]\: yes dazzling variation, but black is facing trouble
+liusasori [5d\]\: (schachus variation was correct ;) ) 
+liusasori [5d\]\: here b has to play g13 for liberties
+liusasori [5d\]\: and w lives easily
+bert [?\]\: so there was no ko
+liusasori [5d\]\: yes no ko, i hallucinated
+liusasori [5d\]\: b just connect and m18 is dead
+liusasori [5d\]\: so w played j19 
+liusasori [5d\]\: anyway b in trouble
+liusasori [5d\]\: he needs m16 and g13 at same time
+bert [?\]\: i such situations creating a big ko helps
+bert [?\]\: in*
+Gay [3d\]\: if b m16 can w kill g13?
+Guest525\: maybe time for B to admit W willl live there and just save the 2 unsettled groups. B points are ok
+YZ1509 [3d\]\: on b m16 h16 will get lost for sure
+sunnychw [?\]\: Maybe B G19 helps?
+bert [?\]\: it doesnt
+YZ1509 [3d\]\: g19 g16 g15 h19 still same problem
+YZ1509 [3d\]\: g13 and m16 feel to be miai for whites life
+YZ1509 [3d\]\: and next black is cut in two problematic groups
+]
+;B[hg]C[OrnitOtter [?\]\: here we go
+bert [?\]\: ha!
+liusasori [5d\]\: ?
+liusasori [5d\]\: g16 g15 g13 shicho isn't good for b there
+]
+;W[ig]C[liusasori [5d\]\: and b facing a lack of liberties
+];B[dg];W[cg];B[dh];W[bj]
+C[warmfuzzy\: e10 exchange paying off!
+];B[ld];W[gg];B[fg];W[hh]C[bert [?\]\: hmm, a black of libs, you say
+liusasori [5d\]\: lol yes it is !
+liusasori [5d\]\: +1 for the pun !
+]
+;B[fh];W[gd];B[ge];W[ma]C[liusasori [5d\]\: ? why not e14 first ?
+Uberdude [1d?\]\: I'm using shin kgs. The game record main variation isv wrong.  any way to see real game branch?
+liusasori [5d\]\: ok e14 f14 n19 e11 
+bert [?\]\: ...and they all lived happily thereafter
+liusasori [5d\]\: so e14 is just ko threat now
+liusasori [5d\]\: damn w has so many big ko threats on this board
+OrnitOtter [?\]\: so, everybody lives?
+liusasori [5d\]\: he need to start a ko somewhere now
+GodofGo [8d\]\: e14 is irrelevant now why would he do it
+EuroGoTV1 [-\]\: hmm
+OrnitOtter [?\]\: something wrong?
+EuroGoTV1 [-\]\: i wanted to cut wrong brenches out
+]
+(;AB[jh]C[YZ1509 [3d\]\: shin-kgs isn't bringing the sgf to the mv38 proper sequence
+])
+(;B[jh];W[ii]C[coconut [3k\]\: f10 
+YZ1509 [3d\]\: yes kgs isn't forgiving, all wrong branches stay
+YZ1509 [3d\]\: no pruning allowed
+warmfuzzy\: there is a cutting tool tho
+Uberdude [1d?\]\: I guess I have to download into my phone sgf viewer that can navigate branch
+EuroGoTV1 [-\]\: sorry Uberdude
+YZ1509 [3d\]\: an uberdude should be able to do that ^^
+Uberdude [1d?\]\: Thanks for broadcast anyway \:)
+bert [?\]\: or you can use the normal client and drop the shin
+EuroGoTV1 [-\]\: i walked away for a few minutes and suddenly they played 15 moves
+EuroGoTV1 [-\]\: and ofcourse i missed the first one
+bert [?\]\: they did it n purpose, too
+coconut [3k\]\: p13 
+]
+;B[bk]C[OrnitOtter [?\]\: i definetely would do that on purpose XD
+EuroGoTV1 [-\]\: lol
+YZ1509 [3d\]\: e14 now?
+liusasori [5d\]\: look like Pavol made a mistake vs Rob van Zeisjt
+warmfuzzy\: if we could see that \:>
+YZ1509 [3d\]\: go go Rob
+Lilou [-\]\: does someone know how Ilya's game going?
+ctdogpdf\: its going merry
+liusasori [5d\]\: you can by watching the live stream
+EuroGoTV1 [-\]\: live TV + board on http\://EuroGoTV.com/1
+warmfuzzy\: oh yeah
+warmfuzzy\: b can catch whites cutting stones
+liusasori [5d\]\: game is not over as it is difficult fight but look hard for w
+EuroGoTV1 [-\]\: or /2 , or /3 /4
+liusasori [5d\]\: pavols had to think many minutes on his move
+warmfuzzy\: w will get a lot on the outside
+]
+;W[kj]C[ctdogpdf\: what is this with all those pros getting bullied by ama
+YZ1509 [3d\]\: eating q18 would be awesome too
+liusasori [5d\]\: the pros in his game is not bullied 
+warmfuzzy\: 7dan egf is the new pro rank
+liusasori [5d\]\: he his the bully
+warmfuzzy\: confirmed
+liusasori [5d\]\: in this game *
+]
+;B[og];W[nf];B[ng];W[pg]C[bert [?\]\: one must admit b played a number of very skillful moves in this fight
+]
+;B[di];W[ch]C[liusasori [5d\]\: but even the bully can slip over a banana skin during the fight and be ko 
+coconut [3k\]\: looks B ahead 
+doublezero [6k\]\: I don't think so
+]
+;B[oi];W[qi]C[ClemGo [1k?\]\: a bet system on kgs would be great (like tygem)
+liusasori [5d\]\: b has around 50 and a weak group, w has around 50 and some potential
+]
+;B[il];W[gj]C[liusasori [5d\]\: game is clearly good for w from this point imo
+bert [?\]\: you rarely see such a radiating ponnuki in high lvl games
+liusasori [5d\]\: g10 sente against e14
+]
+;B[cj];W[ef];B[ff]C[coconut [3k\]\: c10 mistake ?
+liusasori [5d\]\: no
+];W[fk]C[liusasori [5d\]\: it's the only way to defend
+liusasori [5d\]\: f9 is sharp
+liusasori [5d\]\: really clever idea
+Mukti [2d\]\: Shouyld have defended at D10 I think
+warmfuzzy\: does b11 even kill
+Mukti [2d\]\: Too much aji now.
+liusasori [5d\]\: b11 b12 a11 b14 a15 a16 a13 a12 a14 gote seki
+warmfuzzy\: yeah
+warmfuzzy\: but b may have trickier
+narugo [1d\]\: d9?
+gonzo [1d\]\: cuttin off j8
+coconut [3k\]\: g9 ?
+liusasori [5d\]\: d9 w g8 and game over
+warmfuzzy\: lets play some go
+Mukti [2d\]\: For b starting with A10 insteadof B11 looks very fishy...
+warmfuzzy\: ko
+liusasori [5d\]\: g9 don't help imo
+]
+;B[gk];W[fj];B[dj];W[hk];B[bi];W[bh];B[aj];W[bf]C[liusasori [5d\]\: i think after a10 w play also b12
+Mukti [2d\]\: Looks lost now.
+Mukti [2d\]\: Too much damage in the center.
+bert [?\]\: damn
+liusasori [5d\]\: hmmm b already gained 7 points in sente there and get get another 5 gote later but center so much destroyed
+coconut [3k\]\: e8 only now
+]
+;B[el];W[hl]C[warmfuzzy\: no desperation ko
+warmfuzzy\: \:/
+liusasori [5d\]\: w can easily get 15 points out of these exchanges in the center
+liusasori [5d\]\: b cannot fight freely due to the weakness of top
+coconut [3k\]\: is it enough ?
+]
+;B[kl]C[Mukti [2d\]\: It looks close on the board to me an w is very thick. Sp at this l;evel w should win.
+]
+;W[mh]C[liusasori [5d\]\: on board b is ahead by a few points (around 4) but has big weakness while w is very strong
+coconut [3k\]\: n12 nice
+liusasori [5d\]\: b has to save center and top at same time
+liusasori [5d\]\: w is not looking to kill top, just getting extra stones to suround center
+doublezero [6k\]\: probably not possible to save both
+Guest525\: hmm, m11 looks wild. is it playable ?
+coconut [3k\]\: possible but cost the game ^^
+liusasori [5d\]\: but makes top lives great again seems too hard
+liusasori [5d\]\: b has to be wild but w can sacrifice
+bert [?\]\: if n12 nice then n13 marseille
+liusasori [5d\]\: not counting w n13 and things getting worst for b
+]
+;B[mg]C[liusasori [5d\]\: o10 ?
+];W[ll]C[coconut [3k\]\: you are too much concentrated on your little region \:)
+liusasori [5d\]\: ok directly attach
+]
+;B[lm];W[ml]C[Uberdude [1d?\]\: normally don't attach to stone you want to attack byt if b amswers then n13 prolly kill later
+liusasori [5d\]\: you mean m12 ? or l13 ?
+Uberdude [1d?\]\: m12 yea
+]
+;B[hm];W[gm]C[bert [?\]\: i wondered which branch you were into
+];B[ik]C[Uberdude [1d?\]\: if I don't scroll back to replay I get live board ok
+liusasori [5d\]\: lol Rob walked away for 10 min then spend 15 minutes to play a move Pavol almost answered instantly
+]
+;W[kk]C[warmfuzzy\: pavols move looks so dangerous
+liusasori [5d\]\: b around 56 w around at least 56
+liusasori [5d\]\: maybe w will win by komi in the end .
+liusasori [5d\]\: ?
+liusasori [5d\]\: (if b manages everything well)
+]
+;B[ji];W[ij];B[gl];W[hj];B[mm];W[km];B[kn];W[jl];B[jm];W[kl]C[bert [?\]\: it looks just over
+doublezero [6k\]\: it is over, I am sur
+]
+;B[ln];W[jn]C[YZ1509 [3d\]\: still so close, i am amazed 
+OrnitOtter [?\]\: is top right b group ok?
+YZ1509 [3d\]\: yes white m12 looks threatening doesn't it
+]
+;B[lh];W[rm];B[rn];W[rl]C[OrnitOtter [?\]\: she heard you
+YZ1509 [3d\]\: so black logically gets that nastiness out of there
+]
+;B[rb];W[sn];B[so];W[sm]C[Uberdude [1d?\]\: s2?
+bert [?\]\: r5 
+Uberdude [1d?\]\: probably still problem after p2
+Uberdude [1d?\]\: but i try to be fancy
+]
+;B[rr];W[sb]C[OrnitOtter [?\]\: oh, you got it
+Badarthir [2d\]\: eugo you miss P3 and Q3
+afgani [3d\]\: left  side seki is big
+EuroGoTV1 [-\]\: yes, ive missed that. have to check when they played to correct
+Badarthir [2d\]\: no problem ^^
+EuroGoTV1 [-\]\: for now i will just play it and correct later
+]
+;B[pq];W[oq]C[bert [?\]\: left side seki is 4pts gote
+YZ1509 [3d\]\: yes i get this on W +4.5 currently
+coconut [3k\]\: I'd rather said W+10
+]
+;B[ns];W[ah];B[mr];W[mq];B[mj];W[li];B[ki];W[lj];B[mi];W[jg];B[kg];W[jj];B[fa];W[ga]
+C[byeBafana [6k\]\:    i f w b4 he can kill b2
+bert [?\]\: can not
+];B[pj]C[JohnMcLane [5k\]\: no he can't
+]
+;W[ph]C[OrnitOtter [?\]\: not enough libs i think
+bert [?\]\: b4 c5 a2 b1 
+Mukti [2d\]\: B4-C5-A2-B1 or B4-C5-B1-A2
+Uberdude [1d?\]\: if a2 then b1 ans can't approach
+bert [?\]\: regrettably
+Uberdude [1d?\]\: and if b1 (sometimes a tesuji) then a2 and ditto
+]
+;B[gh];W[ih];B[kh]C[EuroGoTV1 [-\]\: i lost the order
+afgani [3d\]\: its ok
+byeBafana [6k\]\: ok thanks
+]
+;W[no];B[nm]C[afgani [3d\]\: it happened to me  too  when i  broadcasted  a  game
+afgani [3d\]\: because  of kgs lag
+]
+;W[ro];B[sp];W[np];B[mo];W[nr];B[or];W[lr];B[ms]C[EuroGoTV1 [-\]\: look at the live stream 
+EuroGoTV1 [-\]\: http\://EuroGoTV.com/1
+afgani [3d\]\: white is a girl??
+afgani [3d\]\: ah no thats black
+YZ1509 [3d\]\: no eunjin is the korean woman
+YZ1509 [3d\]\: o6 is missing
+afgani [3d\]\: ah  i may have met her
+afgani [3d\]\: yeah she was in the chunhyon  competition
+liusasori [5d\]\: w around 74 b around 63
+ffillets [2k\]\: and ?
+Guest525\: it was a good game to watch. B did well against 6p
+YZ1509 [3d\]\: good heavens is that geert groenen in a wetsuit?
+YZ1509 [3d\]\: with that cord he just  looks like a bathinginstructor
+EuroGoTV1 [-\]\: counting
+coconut [3k\]\: SE said B+3 !
+EuroGoTV1 [-\]\: W+1.5 i thught
+coconut [3k\]\: really close !
+YZ1509 [3d\]\: i had it on W +4.5 a while ago
+afgani [3d\]\: did white have komi?
+coconut [3k\]\: yea .. B did good
+ffillets [2k\]\: thx Euro
+coconut [3k\]\: So .. is W 1.5 is confirmed ?
+EuroGoTV1 [-\]\: no
+EuroGoTV1 [-\]\: i will ask XingWen to correct the gamefile
+EuroGoTV1 [-\]\: now they are analysing
+Mukti [2d\]\: But surely w won, right?
+EuroGoTV1 [-\]\: yes
+Mukti [2d\]\: Thanks.
+YZ1509 [3d\]\: i still get it on W +4.5
+YZ1509 [3d\]\: tried replaying the video-sequence
+EuroGoTV1 [-\]\: W+7.5
+]
+;W[mk];B[nn];W[nj];B[ni];W[jf];B[lo];W[mp]C[YZ1509 [3d\]\: indeed i see 6 empty spaces against 5 blacks in the end
+]
+;B[ql];W[rj];B[pl];W[op];B[on];W[kf];B[nh];W[le];B[ke];W[ok];B[pk];W[qj];B[ei];W[ai]
+;B[bj]C[YZ1509 [3d\]\: aha there white took two more points at k15 l15
+];W[gi];B[ol]
+;W[qm];B[pm];W[na];B[oa]C[YZ1509 [3d\]\: i missed those 2 captives
+];W[ra];B[qa]
+;W[sc];B[ea];W[sa];B[hg];W[os];B[ps];W[gg];B[ho];W[hp];B[hg];W[je];B[le];W[gg];B[qe]
+;W[re];B[hg];W[rp];B[sq];W[gg];B[sk];W[rk];B[hg];W[rq];B[sr];W[gg];B[ja];W[ka];B[hg]
+;W[bp];B[co];W[gg];B[gb];W[gc];B[hg];W[ar];B[bs];W[gg];B[fo];W[go];B[hg];W[dm];B[cm]
+;W[gg];B[oj];W[nk];B[hg];W[qr];B[qq];W[gg];B[mf];W[pf];B[hg];W[bo];B[bn];W[gg];B[ad]
+;W[ae];B[hg];W[aq];B[ao];W[gg];B[aa];W[ad];B[hg];W[dl];B[dk];W[gg];B[jo];W[io];B[hg]
+;W[ls];B[os];W[gg];B[fi];W[hg];B[oh];W[pi];B[nl];W[lc]C[EuroGoTV1 [-\]\: W+7.5
+Dupaaxe [?\]\: tx
+bert [?\]\: thank you for the relay, not an easy one
+MooDoGo [1d\]\: thanks
+]))))

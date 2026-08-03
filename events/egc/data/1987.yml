@@ -1,7 +1,7 @@
 website: https://www.eurogofed.org/results/congress/egc1987.htm
 notes: Places in European Championship based on EGC main tournament (excluding top 4)
 name: European Championship 1987
-stages: 
+stages:
   - type: tournament
     file: egc1987.txt
     notes: For statistics best 16 europeans and games between them are shown. Games against other players changed to 0+ and 0-
@@ -20,7 +20,7 @@ stages:
     findSharedPlaces: true
   - type: tournament
     file: egc1987playoff.txt
-    notes: After 8 rounds the top 4 players played knockout to determine the winner
+    notes: After 8 rounds the top 4 players played a knockout to determine the winner
     name: Playoff
     dir: 1987/playoff
     scoringColumns:
@@ -30,7 +30,9 @@ stages:
       - place
     columns:
       - wins
-    findSharedPlaces: true    
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+? round:2 sgf:1987/playoff/2-MatthewMacfadyen-AlexejLazarev.sgf
   - type: tournament
     file: egc1987open100.txt
     name: EGC Open
@@ -44,6 +46,5 @@ stages:
     columns:
       - wins
     excluded: true
-    collapsed: true    
-    findSharedPlaces: false	  
-
+    collapsed: true
+    findSharedPlaces: false

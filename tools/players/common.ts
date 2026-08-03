@@ -18,6 +18,7 @@ export async function collectEventPlayers(
       egd: player.egd,
       original: player.original,
       nickname: player.nickname ?? [],
+      pastNames: [],
     }));
 
   return mergeEventPlayers(existing, discovered);

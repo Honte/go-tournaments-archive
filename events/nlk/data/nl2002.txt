@@ -1,0 +1,28 @@
+; TC[T020112D]
+; CL[A]
+; EV[33rd Dutch Championship]
+; PC[NL,Amsterdam]
+; DT[2002-01-12,2002-01-27]
+; KM[5.5]
+; TM[90]
+; HA[h9]
+;                      Dutch Championship, Amsterdam
+;                       January 12-13, 26-27, 2002
+;
+;Pl     Name             Grade  Club   MM S SOS SDOS  1.    2.    3.    4.    5.    6.    7.    8.  
+  1 Guo Juan                5p NL Hilv  8 8  33  33  14+/b 11+/w  7+/b  6+/w  4+/w  2+/b  3+/w  9+/b  |10298013
+  2 Groenen Geert           6d NL Leid  6 6  33  21   3+/w  6-/b 13+/w 15+/b 12+/b  1-/w  7+/w  8+/b  |10501216
+  3 Janssen Frank           6d NL Amvn  5 5  39  20   2-/b 12+/b  8+/w  7+/w  6+/b  4+/w  1-/b  5-/w  |10298596
+  4 Nijhuis Emil            6d NL Amst  5 5  32  16  11-/w 14+/b 10+/w  9+/w  1-/b  3-/b 16+/w  7+/b  |10213027
+  5 Verhagen Rudi           5d NL Ensc  5 5  28  18   7-/b 13-/w 14+/w 11-/b 10+/w 12+/b  6+/w  3+/b  |10213610
+  6 Kuin Merlijn            5d NL Amvn  4 4  38  17  12+/w  2+/w  9+/b  1-/b  3-/w  8+/b  5-/b 13-/w  |10233861
+  7 Rehm Robert             5d NL Alkm  4 4  38  14   5+/w  8+/b  1-/w  3-/b 15+/w 11+/w  2-/b  4-/w  |10237601
+  8 Vanderstappen Filip     5d NL Leid  4 4  33  14  13+/b  7-/w  3-/b 10+/b  9+/w  6-/w 11+/b  2-/w  |10250603
+  9 Eijkhout Michiel        6d NL Leid  4 4  31  10  15+/b 10+/w  6-/w  4-/b  8-/b 16+/w 14+/b  1-/w  |10486410
+ 10 Westhoff Gerald         6d NL Leid  4 4  27   9  16+/w  9-/b  4-/b  8-/w  5-/b 15+/b 12+/w 14+/w  |10233597
+ 11 Dongen Stijn_van        4d NL Amst  3 3  32  12   4+/b  1-/b 15-/w  5+/w 14+/w  7-/b  8-/w 16-/b  |10237612
+ 12 Drost Andreas           3d NL Leid  3 3  31   7   6-/b  3-/w 16+/b 13+/b  2-/w  5-/w 10-/b 15+/b  |10525218
+ 13 Rutgers_Van_der_Loeff Arnoud 4d NL Leid  3 3  28  11   8-/w  5+/b  2-/b 12-/w 16-/b 14-/w 15+/w  6+/b  |10437427
+ 14 You Guoli               3d NL Rott  2 2  34   5   1-/w  4-/w  5-/b 16+/w 11-/b 13+/b  9-/w 10-/b  |12501698
+ 15 Peters Taco             3d NL Ensc  2 2  29   5   9-/w 16+/b 11+/b  2-/w  7-/b 10-/w 13-/b 12-/w  |10262824
+ 16 Hofman Wim              3d NL Leid  2 2  26   6  10-/b 15-/w 12-/w 14-/b 13+/w  9-/b  4-/b 11+/w  |10237821

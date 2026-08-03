@@ -23,5 +23,5 @@ function getResult(entry: IndexedTablePlayerGame) {
     return entry.won ? '0+' : '0-'; // display with 0 to ensure that highlighter picks it up
   }
 
-  return `${entry.index}${entry.won ? '+' : '-'}${entry.result === '!' ? '!' : ''}`;
+  return `${entry.index}${entry.drawn ? '=' : entry.won ? '+' : '-'}${entry.result === '!' ? '!' : ''}`;
 }

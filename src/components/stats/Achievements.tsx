@@ -57,6 +57,10 @@ export function Achievements({ event, player, translations }: AchievementsProps)
   details[t('table.games')] = player.totalGames;
   details[t('table.won')] = player.totalWon;
 
+  if (player.totalDrawn > 0) {
+    details[t('table.drawn')] = player.totalDrawn;
+  }
+
   if (player.egd) {
     details[t('details.egd')] = (
       <ExternalLink href={getEgdProfileLink(player.egd)} title={t('details.goToEGD')}>

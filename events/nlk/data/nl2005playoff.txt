@@ -1,0 +1,11 @@
+; TC[T050412A]
+; CL[A]
+; EV[Dutch Championship Playoff]
+; PC[NL, Amstelveen]
+; DT[2005-04-12,2005-04-23]
+; HA[h9]
+; KM[6.5]
+; TM[]
+;
+  1 Janssen Frank           6d NL Amvn  2   2+/w 2+/b  |10298596
+  2 Kuin Merlijn            5d NL Amvn  0   1-/b 1-/w  |10233861

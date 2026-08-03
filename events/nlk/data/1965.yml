@@ -1,0 +1,11 @@
+stages:
+  - type: tournament
+    file: nl1965final.txt
+    name: final
+    notes: played in winter
+    dir: 1965/final
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true

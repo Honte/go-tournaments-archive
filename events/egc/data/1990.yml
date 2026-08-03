@@ -21,6 +21,8 @@ stages:
       - wins
       - open
     findSharedPlaces: true
+    games:
+      - 1-6 1:B+R round:10 sgf:1990/ec/10-RobvanZeijst-ViktorBogdanov.sgf
   - type: tournament
     file: egc1990open100.txt
     name: EGC Open
@@ -38,7 +40,7 @@ stages:
     columns:
       - wins
     excluded: true
-    collapsed: true    
-    findSharedPlaces: true 
-	   
-
+    collapsed: true
+    findSharedPlaces: true
+    games:
+      - 46-81 46:B+R round:9 sgf:1990/open/9-TMarkHall-MBergmann.sgf

@@ -1,0 +1,13 @@
+stages:
+  - type: tournament
+    name: championship
+    file: nl2022.txt
+    notes: double elimination + final best of 3
+    scoringColumns:
+      - wins
+      - place
+    breakers:
+      - place
+    columns:  
+      - wins
+    findSharedPlaces: true

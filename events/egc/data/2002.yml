@@ -21,6 +21,8 @@ stages:
       - wins
       - open
     findSharedPlaces: true
+    games:
+      - 13-1 1:W+R round:6 sgf:2002/ec/6-CornelBurzo-AlexandrDinerstein.sgf
   - type: tournament
     file: egc2002open100.txt
     name: EGC Open
@@ -38,7 +40,5 @@ stages:
     columns:
       - wins
     excluded: true
-    collapsed: true    
-    findSharedPlaces: true 
-	   
-
+    collapsed: true
+    findSharedPlaces: true
