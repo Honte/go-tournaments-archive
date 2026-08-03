@@ -43,6 +43,7 @@ export function AllGames({ event, locale }: AllGamesProps) {
 
 function AllGamesContent({ event, games, translations }: AllGamesContentProps) {
   const t = getTranslator(translations);
+
   const modelOptions = useMemo<GameBrowserOptions>(() => {
     const translate = getTranslator(translations);
     return {
@@ -54,11 +55,14 @@ function AllGamesContent({ event, games, translations }: AllGamesContentProps) {
       locale: translations.locale,
     };
   }, [event.categories, event.showCountry, translations]);
+
   const { commitState, model } = useGameBrowserUrlState(games, modelOptions);
+
   const titleCount =
     model.filteredCount === model.totalCount
       ? String(model.totalCount)
       : t('gamesFilter.count', String(model.filteredCount), String(model.totalCount));
+
   const groups = useMemo<GameRecordGroup[]>(
     () =>
       model.groups.map((group) => ({

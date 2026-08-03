@@ -5,6 +5,7 @@ import type { ApiGameInfo } from '@/schema/api';
 import type { EventContext } from '@/schema/event';
 import type { Translations, Translator } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
+import { JIGO } from '@/libs/games';
 import { getStageName } from '@/libs/stage';
 import { gameThumbUrl } from '@/libs/urls';
 import { GameActions } from '@/components/GameActions';
@@ -21,9 +22,9 @@ export type GameRecordCardProps = {
 
 export function GameRecordCard({ event, game, translations }: GameRecordCardProps) {
   const t = getTranslator(translations);
-  const preview = game.jpg ?? game.svg ?? game.png;
+  const thumb = game.jpg ?? game.svg ?? game.png;
   const title = `${game.black.name} vs ${game.white.name}`;
-  const previewLabel = t('game.preview', title);
+  const previewLabel = t('game.thumb', title);
   const stageName = game.stageType
     ? getStageName({ name: game.stageName, type: game.stageType }, translations)
     : undefined;
@@ -31,7 +32,7 @@ export function GameRecordCard({ event, game, translations }: GameRecordCardProp
   return (
     <article className="flex h-full min-w-0 flex-col overflow-hidden rounded-md border border-event-soft bg-white shadow-sm">
       <div className="flex min-w-0 gap-3 p-3">
-        <GamePreview event={event} game={game} label={previewLabel} preview={preview} t={t} />
+        {thumb && <GamePreview event={event} game={game} label={previewLabel} thumb={thumb} />}
         <div className="flex min-w-0 flex-1 flex-col justify-center gap-2">
           <PlayerRow
             color="black"
@@ -78,6 +79,14 @@ export function GameRecordCard({ event, game, translations }: GameRecordCardProp
             {t('table.stage')}: <strong className="text-event-dark">{stageName}</strong>
           </span>
         )}
+        {game.result === JIGO && (
+          <span>
+            {t('game.result')}:{' '}
+            <abbr className="text-event-dark cursor-help" title={t('game.draw')}>
+              {JIGO}
+            </abbr>
+          </span>
+        )}
       </footer>
     </article>
   );
@@ -87,37 +96,17 @@ function GamePreview({
   event,
   game,
   label,
-  preview,
-  t,
+  thumb,
 }: {
   event: EventContext;
   game: ApiGameInfo;
+  thumb: string;
   label: string;
-  preview?: string;
-  t: Translator;
 }) {
-  const content = preview ? (
-    <img src={gameThumbUrl(event, preview)} alt="" className="h-full max-w-full object-contain" loading="lazy" />
-  ) : (
-    <PreviewPlaceholder label={t('game.open')} />
-  );
-
   return (
     <GameViewerTrigger sgfPath={game.sgf} aria-label={label} className="flex size-24 shrink-0">
-      {content}
+      <img src={gameThumbUrl(event, thumb)} alt="" className="h-full max-w-full object-contain" loading="lazy" />
     </GameViewerTrigger>
-  );
-}
-
-function PreviewPlaceholder({ label }: { label: string }) {
-  return (
-    <div className="flex flex-col items-center gap-2 text-sm font-semibold text-event-dark/70">
-      <span className="flex items-center" aria-hidden={true}>
-        <Stone color="black" className="size-9" />
-        <Stone color="white" className="-ml-2 size-9" />
-      </span>
-      {label}
-    </div>
   );
 }
 
