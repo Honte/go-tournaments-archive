@@ -1,6 +1,8 @@
 import type { ApiGameInfo } from '@/schema/api';
 import type { Player } from '@/schema/data';
 import { isDrawResult } from '@/libs/games';
+import { normalizeRank } from '@/libs/h9';
+import { getRankValue } from '@/libs/rank';
 
 export const GAME_RESULT_TYPES = ['resignation', 'points', 'time', 'other', 'unknown'] as const;
 export const GAME_MEDIA = ['ogs', 'yt', 'ai'] as const;
@@ -488,32 +490,6 @@ export function getGameResultType(result?: string): GameResultType {
   return 'other';
 }
 
-export function getRankLevel(rank?: string) {
-  const match = rank
-    ?.trim()
-    .toLowerCase()
-    .match(/^(\d+)([kdp])$/);
-
-  if (!match) {
-    return undefined;
-  }
-
-  const value = Number(match[1]);
-
-  if (value < 1) {
-    return undefined;
-  }
-
-  switch (match[2]) {
-    case 'k':
-      return 100 - value;
-    case 'd':
-      return 99 + value;
-    case 'p':
-      return 108 + value;
-  }
-}
-
 export function getGameGroupEligibility(state: GameBrowserState, countriesEnabled = true, categoriesEnabled = false) {
   return {
     opponentPlayer: Boolean((state.player || state.country) && !state.opponent),
@@ -533,14 +509,16 @@ function getGameBrowserDomains(games: readonly ApiGameInfo[]): GameBrowserDomain
   for (const game of games) {
     for (const rank of [game.black.rank, game.white.rank]) {
       const normalized = normalizeRank(rank);
-      if (normalized) {
+      const value = getRankValue(rank);
+
+      if (value && normalized) {
         ranks.add(normalized);
       }
     }
   }
 
   return {
-    ranks: [...ranks].toSorted((a, b) => getRankLevel(a)! - getRankLevel(b)!),
+    ranks: [...ranks].toSorted((a, b) => getRankValue(a)! - getRankValue(b)!),
     years: [...new Set(years)].toSorted((a, b) => b - a),
     movesMin: moves.length ? Math.min(...moves) : undefined,
     movesMax: moves.length ? Math.max(...moves) : undefined,
@@ -861,14 +839,14 @@ function matchesRank(rank: string | undefined, minimum?: string, maximum?: strin
     return true;
   }
 
-  const value = getRankLevel(rank);
+  const value = getRankValue(rank);
   if (value === undefined) {
     return false;
   }
-  if (minimum && value < getRankLevel(minimum)!) {
+  if (minimum && value < getRankValue(minimum)!) {
     return false;
   }
-  if (maximum && value > getRankLevel(maximum)!) {
+  if (maximum && value > getRankValue(maximum)!) {
     return false;
   }
   return true;
@@ -1052,13 +1030,13 @@ function comparePrimary(left: ApiGameInfo, right: ApiGameInfo, sort: GameSort) {
     case 'moves-asc':
       return left.moves - right.moves;
     case 'black-rank-desc':
-      return compareOptional(getRankLevel(left.black.rank), getRankLevel(right.black.rank), 'desc');
+      return compareOptional(getRankValue(left.black.rank), getRankValue(right.black.rank), 'desc');
     case 'black-rank-asc':
-      return compareOptional(getRankLevel(left.black.rank), getRankLevel(right.black.rank), 'asc');
+      return compareOptional(getRankValue(left.black.rank), getRankValue(right.black.rank), 'asc');
     case 'white-rank-desc':
-      return compareOptional(getRankLevel(left.white.rank), getRankLevel(right.white.rank), 'desc');
+      return compareOptional(getRankValue(left.white.rank), getRankValue(right.white.rank), 'desc');
     case 'white-rank-asc':
-      return compareOptional(getRankLevel(left.white.rank), getRankLevel(right.white.rank), 'asc');
+      return compareOptional(getRankValue(left.white.rank), getRankValue(right.white.rank), 'asc');
     case 'rank-gap-asc':
       return compareOptional(getRankGap(left), getRankGap(right), 'asc');
     case 'rank-gap-desc':
@@ -1088,8 +1066,8 @@ function compareOptional(left: number | undefined, right: number | undefined, or
 }
 
 function getRankGap(game: ApiGameInfo) {
-  const black = getRankLevel(game.black.rank);
-  const white = getRankLevel(game.white.rank);
+  const black = getRankValue(game.black.rank);
+  const white = getRankValue(game.white.rank);
   return black === undefined || white === undefined ? undefined : Math.abs(black - white);
 }
 
@@ -1125,15 +1103,11 @@ function normalizeRankRange(
 ) {
   const min = state[minimum];
   const max = state[maximum];
-  if (min && max && getRankLevel(min)! > getRankLevel(max)!) {
+
+  if (min && max && getRankValue(min)! > getRankValue(max)!) {
     state[minimum] = max;
     state[maximum] = min;
   }
-}
-
-function normalizeRank(rank?: string | null) {
-  const value = rank?.trim().toLowerCase();
-  return value && getRankLevel(value) !== undefined ? value : undefined;
 }
 
 function readString(params: SearchParamsReader, key: string) {

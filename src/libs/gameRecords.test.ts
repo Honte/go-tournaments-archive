@@ -8,7 +8,6 @@ import {
   filterGameRecords,
   getGameGroupEligibility,
   getGameResultType,
-  getRankLevel,
   normalizeGameBrowserState,
   parseGameBrowserState,
   serializeGameBrowserState,
@@ -90,13 +89,6 @@ describe('game result and rank normalization', () => {
     assert.equal(getGameResultType('W+F'), 'other');
     assert.equal(getGameResultType('B+?'), 'unknown');
     assert.equal(getGameResultType(), 'other');
-  });
-
-  it('uses a contiguous kyu, dan, and professional rank ladder', () => {
-    assert.equal(getRankLevel('1d')! - getRankLevel('1k')!, 1);
-    assert.equal(getRankLevel('1p')! - getRankLevel('9d')!, 1);
-    assert.equal(getRankLevel('3D'), getRankLevel('3d'));
-    assert.equal(getRankLevel('unranked'), undefined);
   });
 });
 

@@ -131,9 +131,9 @@ export function normalizePlayerName(value: string) {
   return value.replace(/_/g, ' ');
 }
 
-export function normalizeRank(rank?: string) {
+export function normalizeRank(rank?: string | null) {
   if (!rank) {
-    return rank;
+    return undefined;
   }
 
   if (rank.match(/^\d\d$/)) {
