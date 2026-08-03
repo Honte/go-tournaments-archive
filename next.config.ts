@@ -25,6 +25,11 @@ export default async function getConfig() {
 
   return {
     output: configuration.dynamic ? 'standalone' : 'export',
+    outputFileTracingIncludes: configuration.dynamic
+      ? {
+          '/*': ['./node_modules/@img/sharp-*/**/*'],
+        }
+      : undefined,
     basePath: normalizeBasePath(configuration.basePath),
     env: configuration.dynamic
       ? {
