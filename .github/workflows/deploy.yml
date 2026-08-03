@@ -145,4 +145,5 @@ jobs:
           script: |
             cd /usr/home/${{ secrets.SSH_USER }}/domains/${{ vars.SSH_HOST }}/public_nodejs
             mv server.js app.js
+            npm install sharp
             devil www restart ${{ vars.SSH_HOST }}
