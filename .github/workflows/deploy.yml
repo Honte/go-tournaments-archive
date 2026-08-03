@@ -1,9 +1,6 @@
 name: Deploy
 
 on:
-  pull_request:
-    branches: [main]
-    types: [opened, reopened, synchronize]
   workflow_dispatch:
     inputs:
       event:
@@ -107,7 +104,7 @@ jobs:
           target: ${{ env.SSH_PATH }}
 
   deploy-honte-prod:
-    if: ${{ github.event_name == 'pull_request' || inputs.event == 'honte' }}
+    if: ${{ inputs.event == 'honte' }}
     runs-on: ubuntu-latest
     environment: honte
     env:
