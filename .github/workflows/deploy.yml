@@ -1,6 +1,9 @@
 name: Deploy
 
 on:
+  pull_request:
+    branches: [main]
+    types: [opened, reopened, synchronize]
   workflow_dispatch:
     inputs:
       event:
@@ -11,6 +14,7 @@ on:
         options:
           - pgc
           - pygc
+          - honte
 
 jobs:
   deploy-pgc-prod:
@@ -101,3 +105,44 @@ jobs:
           source: out/*
           strip_components: 1
           target: ${{ env.SSH_PATH }}
+
+  deploy-honte-prod:
+    if: ${{ github.event_name == 'pull_request' || inputs.event == 'honte' }}
+    runs-on: ubuntu-latest
+    environment: honte
+    env:
+      CONFIG: honte
+      SSH_PATH: '/usr/home/${{ secrets.SSH_USER }}/domains/${{ vars.SSH_HOST }}/public_nodejs'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Prepare
+        run: |
+          cp -r public .next/standalone/
+          cp -r .next/static .next/standalone/.next/
+      - name: Deploy
+        uses: appleboy/scp-action@v1
+        with:
+          host: ${{ vars.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          passphrase: ${{ secrets.SSH_KEY_PASS }}
+          source: .next/standalone/*
+          strip_components: 2
+          target: ${{ env.SSH_PATH }}
+      - name: Restart
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ vars.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          passphrase: ${{ secrets.SSH_KEY_PASS }}
+          script: |
+            cd /usr/home/${{ secrets.SSH_USER }}/domains/${{ vars.SSH_HOST }}/public_nodejs
+            mv server.js app.js
+            devil www restart ${{ vars.SSH_HOST }}
