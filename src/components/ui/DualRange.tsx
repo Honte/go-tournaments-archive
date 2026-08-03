@@ -79,12 +79,14 @@ export function DualRange({
     draftRef.current = next;
     setDraft(next);
   }, []);
+
   const commit = useCallback(() => {
     const [lower, upper] = draftRef.current;
     if (lower !== normalizedLower || upper !== normalizedUpper) {
       onCommit(lower, upper);
     }
   }, [normalizedLower, normalizedUpper, onCommit]);
+
   const handleLowerKeyDown = useCallback(
     (event: KeyboardEvent<HTMLInputElement>) => {
       const upper = draftRef.current[1];
@@ -97,6 +99,7 @@ export function DualRange({
     },
     [minimum, setDraftValue]
   );
+
   const handleUpperKeyDown = useCallback(
     (event: KeyboardEvent<HTMLInputElement>) => {
       const lower = draftRef.current[0];

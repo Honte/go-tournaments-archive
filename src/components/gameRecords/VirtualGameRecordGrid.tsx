@@ -1,13 +1,15 @@
 'use client';
 
 import { useWindowVirtualizer } from '@tanstack/react-virtual';
-import { useEffect, useLayoutEffect, useMemo, useRef, useState, type RefObject } from 'react';
+import { useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { FaChevronRight } from 'react-icons/fa6';
 import type { ApiGameInfo } from '@/schema/api';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { GameRecordCard } from '@/components/gameRecords/GameRecordCard';
+import { useResponsiveColumnCount } from '@/hooks/useResponsiveColumnCount';
+import { useScrollMargin } from '@/hooks/useScrollMargin';
 
 export type GameRecordGroup = {
   key: string;
@@ -34,6 +36,7 @@ export function VirtualGameRecordGrid({ event, groups, translations }: VirtualGa
   const [collapsedGroups, setCollapsedGroups] = useState<ReadonlySet<string>>(() => new Set());
   const rows = useMemo(() => packRows(groups, columnCount, collapsedGroups), [collapsedGroups, columnCount, groups]);
   const scrollMargin = useScrollMargin(listRef, rows.length);
+
   const rowVirtualizer = useWindowVirtualizer({
     count: rows.length,
     estimateSize: (index) => (rows[index]?.type === 'heading' ? 48 : 350),
@@ -42,6 +45,8 @@ export function VirtualGameRecordGrid({ event, groups, translations }: VirtualGa
     overscan: 4,
     scrollMargin,
   });
+
+  // prevents the page from being programmatically scrolled when a virtual row’s measured height differs from its estimate.
   rowVirtualizer.shouldAdjustScrollPositionOnItemSizeChange = () => false;
 
   useLayoutEffect(() => {
@@ -80,11 +85,13 @@ export function VirtualGameRecordGrid({ event, groups, translations }: VirtualGa
                   onClick={() =>
                     setCollapsedGroups((current) => {
                       const next = new Set(current);
+
                       if (next.has(row.groupKey)) {
                         next.delete(row.groupKey);
                       } else {
                         next.add(row.groupKey);
                       }
+
                       return next;
                     })
                   }
@@ -122,7 +129,15 @@ function packRows(
   for (const group of groups) {
     if (group.label) {
       const collapsed = collapsedGroups.has(group.key);
-      rows.push({ type: 'heading', key: `heading:${group.key}`, groupKey: group.key, label: group.label, collapsed });
+
+      rows.push({
+        type: 'heading',
+        key: `heading:${group.key}`,
+        groupKey: group.key,
+        label: group.label,
+        collapsed,
+      });
+
       if (collapsed) {
         continue;
       }
@@ -130,6 +145,7 @@ function packRows(
 
     for (let index = 0; index < group.games.length; index += columnCount) {
       const games = group.games.slice(index, index + columnCount);
+
       rows.push({
         type: 'games',
         key: `games:${group.key}:${games.map((game) => game.sgf).join('|')}`,
@@ -139,52 +155,4 @@ function packRows(
   }
 
   return rows;
-}
-
-function useResponsiveColumnCount() {
-  const [columnCount, setColumnCount] = useState(1);
-
-  useEffect(() => {
-    const medium = window.matchMedia('(min-width: 768px)');
-    const extraLarge = window.matchMedia('(min-width: 1280px)');
-    const update = () => setColumnCount(extraLarge.matches ? 3 : medium.matches ? 2 : 1);
-
-    update();
-    medium.addEventListener('change', update);
-    extraLarge.addEventListener('change', update);
-
-    return () => {
-      medium.removeEventListener('change', update);
-      extraLarge.removeEventListener('change', update);
-    };
-  }, []);
-
-  return columnCount;
-}
-
-function useScrollMargin(ref: RefObject<HTMLDivElement | null>, dependency: number) {
-  const [scrollMargin, setScrollMargin] = useState(0);
-
-  useLayoutEffect(() => {
-    const update = () => {
-      if (!ref.current) {
-        return;
-      }
-
-      const next = ref.current.getBoundingClientRect().top + window.scrollY;
-      setScrollMargin((current) => (current === next ? current : next));
-    };
-
-    update();
-    window.addEventListener('resize', update);
-    const resizeObserver = new ResizeObserver(update);
-    resizeObserver.observe(document.documentElement);
-
-    return () => {
-      window.removeEventListener('resize', update);
-      resizeObserver.disconnect();
-    };
-  }, [dependency, ref]);
-
-  return scrollMargin;
 }

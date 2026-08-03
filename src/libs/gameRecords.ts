@@ -4,6 +4,7 @@ import { isDrawResult } from '@/libs/games';
 
 export const GAME_RESULT_TYPES = ['resignation', 'points', 'time', 'other', 'unknown'] as const;
 export const GAME_MEDIA = ['ogs', 'yt', 'ai'] as const;
+
 const GAME_WINNERS = ['black', 'white', 'jigo', 'player', 'player-opponent', 'country', 'country-opponent'] as const;
 const PLAYER_COLORS = ['black', 'white'] as const;
 const GAME_SORTS = [

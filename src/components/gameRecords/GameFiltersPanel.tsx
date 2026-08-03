@@ -1,7 +1,7 @@
 'use client';
 
-import { useState } from 'react';
-import type { Translations } from '@/i18n/consts';
+import { useCallback, useState } from 'react';
+import type { Translations, Translator } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import {
   DEFAULT_GAME_BROWSER_STATE,
@@ -35,10 +35,12 @@ const FILTER_PANEL_ID = 'game-record-filters';
 const ADVANCED_FILTERS_ID = `${FILTER_PANEL_ID}-advanced`;
 
 export function GameFiltersPanel({ model, onChange, onClear, translations }: GameFiltersPanelProps) {
-  const t = getTranslator(translations);
   const { state, facets, domains, grouping, hasJigo } = model;
+  const t = getTranslator(translations);
+
   const activeCount = getActiveGameFilterCount(state);
   const [expanded, setExpanded] = useState(() => activeCount > 0);
+
   const hiddenFilterCount =
     activeCount -
     [
@@ -46,10 +48,16 @@ export function GameFiltersPanel({ model, onChange, onClear, translations }: Gam
       state.sort !== DEFAULT_GAME_BROWSER_STATE.sort,
       state.group !== DEFAULT_GAME_BROWSER_STATE.group,
     ].filter(Boolean).length;
+
   const disclosureLabel = `${t(expanded ? 'gamesFilter.showLess' : 'gamesFilter.showMore')}${
     !expanded && hiddenFilterCount > 0 ? ` (${hiddenFilterCount})` : ''
   }`;
-  const patch = (values: Partial<GameBrowserState>) => onChange({ ...state, ...values });
+
+  const patch = useCallback(
+    (values: Partial<GameBrowserState>) => onChange({ ...state, ...values }),
+    [state, onChange]
+  );
+
   const resultLabels: Record<GameResultType, string> = {
     resignation: t('gamesFilter.resignation'),
     points: t('gamesFilter.points'),
@@ -57,22 +65,27 @@ export function GameFiltersPanel({ model, onChange, onClear, translations }: Gam
     other: t('gamesFilter.other'),
     unknown: t('gamesFilter.unknown'),
   };
+
   const mediaLabels: Record<GameMedia, string> = {
     ogs: t('gamesFilter.hasOgs'),
     yt: t('gamesFilter.hasYoutube'),
     ai: t('gamesFilter.hasAi'),
   };
+
   const colorOptions = [
     { value: 'black', label: t('gamesFilter.black'), count: facets.playerColor.black },
     { value: 'white', label: t('gamesFilter.white'), count: facets.playerColor.white },
   ];
+
   const sortOptions = getSortOptions(t);
   const groupOptions = getGroupOptions(t, grouping);
+
   const focalSelected = Boolean(state.player || state.country);
   const playerLabel = facets.player.options.find((option) => option.value === state.player)?.label;
   const opponentLabel = facets.opponent.options.find((option) => option.value === state.opponent)?.label;
   const countryLabel = state.country ? t(`country.${state.country}`) : undefined;
   const opponentCountryLabel = state.opponentCountry ? t(`country.${state.opponentCountry}`) : undefined;
+
   const winnerOptions = [
     { value: 'black', label: t('gamesFilter.black'), count: facets.winner.black },
     { value: 'white', label: t('gamesFilter.white'), count: facets.winner.white },
@@ -373,8 +386,6 @@ export function GameFiltersPanel({ model, onChange, onClear, translations }: Gam
     </section>
   );
 }
-
-type Translator = ReturnType<typeof getTranslator>;
 
 function getSortOptions(t: Translator): { value: GameSort; label: string }[] {
   return [

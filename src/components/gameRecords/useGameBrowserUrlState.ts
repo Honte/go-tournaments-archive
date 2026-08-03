@@ -46,6 +46,7 @@ export function useGameBrowserUrlState(games: readonly ApiGameInfo[], options: G
 function updateBrowserUrl(params: URLSearchParams, method: 'push' | 'replace') {
   const query = params.toString();
   const url = `${window.location.pathname}${query ? `?${query}` : ''}${window.location.hash}`;
+
   window.history[`${method}State`](null, '', url);
 }
 
