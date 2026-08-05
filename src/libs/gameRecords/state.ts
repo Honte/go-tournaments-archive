@@ -10,7 +10,7 @@ import {
   GAME_SORTS,
   GAME_WINNERS,
   PLAYER_COLORS,
-  type GameBrowserState,
+  type GameRecordsState,
 } from './schema';
 
 export type GameGroupEligibility = {
@@ -22,9 +22,9 @@ export type GameGroupEligibility = {
 
 export function normalizeGameBrowserState(
   games: readonly ApiGameInfo[],
-  requested: GameBrowserState,
+  requested: GameRecordsState,
   options: { countriesEnabled?: boolean; categoriesEnabled?: boolean } = {}
-): GameBrowserState {
+): GameRecordsState {
   const players = getPlayers(games);
   const countries = getCountries(games);
   const categories = getCategories(games);
@@ -32,7 +32,7 @@ export function normalizeGameBrowserState(
   const komiValues = new Set(games.flatMap((game) => (game.komi === undefined ? [] : [formatKomi(game.komi)])));
   const countriesEnabled = options.countriesEnabled ?? true;
   const categoriesEnabled = options.categoriesEnabled ?? true;
-  const state: GameBrowserState = {
+  const state: GameRecordsState = {
     ...requested,
     results: uniqueKnown(requested.results, GAME_RESULT_TYPES),
     komi: uniqueKomi(requested.komi).filter((komi) => komiValues.has(komi)),
@@ -97,7 +97,7 @@ export function normalizeGameBrowserState(
 }
 
 export function getGameGroupEligibility(
-  state: GameBrowserState,
+  state: GameRecordsState,
   countriesEnabled = true,
   categoriesEnabled = false
 ): GameGroupEligibility {
@@ -111,7 +111,7 @@ export function getGameGroupEligibility(
   };
 }
 
-export function groupingForState(state: GameBrowserState, eligibility: GameGroupEligibility): GameBrowserState {
+export function groupingForState(state: GameRecordsState, eligibility: GameGroupEligibility): GameRecordsState {
   if (
     (state.group === 'opponent-player' && !eligibility.opponentPlayer) ||
     (state.group === 'opponent-country' && !eligibility.opponentCountry) ||
@@ -140,13 +140,13 @@ export function getCategories(games: readonly ApiGameInfo[]) {
   return new Set(games.map((game) => game.category).filter((category): category is string => Boolean(category)));
 }
 
-function hasStructuralMatch(games: readonly ApiGameInfo[], filters: Partial<GameBrowserState>) {
+function hasStructuralMatch(games: readonly ApiGameInfo[], filters: Partial<GameRecordsState>) {
   return games.some((game) =>
     getOrientations(game).some((orientation) => matchesStructuralFilters(orientation, filters))
   );
 }
 
-function matchesStructuralFilters(orientation: OrientedGame, filters: Partial<GameBrowserState>) {
+function matchesStructuralFilters(orientation: OrientedGame, filters: Partial<GameRecordsState>) {
   return (
     (!filters.player || orientation.player.id === filters.player) &&
     (!filters.country || orientation.player.country?.toUpperCase() === filters.country.toUpperCase()) &&
@@ -155,14 +155,14 @@ function matchesStructuralFilters(orientation: OrientedGame, filters: Partial<Ga
   );
 }
 
-function normalizeRange(state: GameBrowserState, minimum: 'movesMin', maximum: 'movesMax') {
+function normalizeRange(state: GameRecordsState, minimum: 'movesMin', maximum: 'movesMax') {
   if (state[minimum] !== undefined && state[maximum] !== undefined && state[minimum]! > state[maximum]!) {
     [state[minimum], state[maximum]] = [state[maximum], state[minimum]];
   }
 }
 
 function normalizeRankRange(
-  state: GameBrowserState,
+  state: GameRecordsState,
   minimum: 'playerRankMin' | 'opponentRankMin',
   maximum: 'playerRankMax' | 'opponentRankMax'
 ) {

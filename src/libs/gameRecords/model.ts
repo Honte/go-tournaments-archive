@@ -3,13 +3,13 @@ import { isDrawResult } from '@/libs/games';
 import { buildGameBrowserFacets, getGameBrowserDomains } from './facets';
 import { filterGameRecords } from './filters';
 import { getPlayerMeta, groupGameRecords } from './grouping';
-import type { GameBrowserModel, GameBrowserOptions, GameBrowserState } from './schema';
+import type { GameBrowserModel, GameBrowserOptions, GameRecordsState } from './schema';
 import { sortGameRecords } from './sorting';
 import { getCategories, getGameGroupEligibility, groupingForState, normalizeGameBrowserState } from './state';
 
 export function deriveGameBrowserModel(
   games: readonly ApiGameInfo[],
-  requestedState: GameBrowserState,
+  requestedState: GameRecordsState,
   options: GameBrowserOptions = {}
 ): GameBrowserModel {
   const countriesEnabled = options.countriesEnabled ?? true;

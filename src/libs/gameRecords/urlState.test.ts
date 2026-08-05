@@ -1,16 +1,16 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { DEFAULT_GAME_BROWSER_STATE, parseGameBrowserState, serializeGameBrowserState } from '@/libs/gameRecords';
+import { DEFAULT_GAME_BROWSER_STATE, parseGameRecordsState, serializeGameRecordsState } from '@/libs/gameRecords';
 
 describe('game browser URL state', () => {
   it('round-trips canonical state and preserves unrelated query parameters', () => {
-    const parsed = parseGameBrowserState(
+    const parsed = parseGameRecordsState(
       new URLSearchParams(
         'player=a&country=de&opponent=b&opponentCountry=pl&playerRankMin=5K&year=2023&year=2020&movesMax=200' +
           '&category=u18&result=time&result=resignation&winner=player-opponent&has=yt&has=ogs&sort=moves-desc&group=year'
       )
     );
-    const serialized = serializeGameBrowserState(
+    const serialized = serializeGameRecordsState(
       parsed,
       new URLSearchParams('locale=pl&source=archive&player=stale&result=other')
     );
@@ -24,7 +24,7 @@ describe('game browser URL state', () => {
     assert.equal(serialized.get('winner'), 'player-opponent');
     assert.equal(serialized.get('category'), 'u18');
     assert.equal(serialized.get('group'), 'year');
-    assert.deepEqual(parseGameBrowserState(serialized), parsed);
+    assert.deepEqual(parseGameRecordsState(serialized), parsed);
   });
 
   it('parses global-color, jigo, player-relative, and country-relative winner values', () => {
@@ -37,12 +37,12 @@ describe('game browser URL state', () => {
       'country',
       'country-opponent',
     ] as const) {
-      assert.equal(parseGameBrowserState(new URLSearchParams(`winner=${winner}`)).winner, winner);
+      assert.equal(parseGameRecordsState(new URLSearchParams(`winner=${winner}`)).winner, winner);
     }
   });
 
   it('falls back to defaults for unknown enum values', () => {
-    const parsed = parseGameBrowserState(
+    const parsed = parseGameRecordsState(
       new URLSearchParams('result=unsupported&has=video&winner=winner&sort=random&group=player')
     );
 
@@ -55,8 +55,8 @@ describe('game browser URL state', () => {
 
   it('ignores and removes legacy tournament-year ranges', () => {
     const legacy = new URLSearchParams('yearMin=2020&yearMax=2022');
-    const parsed = parseGameBrowserState(legacy);
-    const serialized = serializeGameBrowserState(parsed, legacy);
+    const parsed = parseGameRecordsState(legacy);
+    const serialized = serializeGameRecordsState(parsed, legacy);
 
     assert.deepEqual(parsed.years, []);
     assert.equal('yearMin' in parsed, false);

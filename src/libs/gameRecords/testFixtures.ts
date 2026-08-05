@@ -1,8 +1,8 @@
 import type { ApiGameInfo } from '@/schema/api';
 import type { Player } from '@/schema/data';
-import { DEFAULT_GAME_BROWSER_STATE, type GameBrowserState } from '@/libs/gameRecords';
+import { DEFAULT_GAME_BROWSER_STATE, type GameRecordsState } from '@/libs/gameRecords';
 
-export function state(overrides: Partial<GameBrowserState> = {}): GameBrowserState {
+export function state(overrides: Partial<GameRecordsState> = {}): GameRecordsState {
   return {
     ...DEFAULT_GAME_BROWSER_STATE,
     results: [],

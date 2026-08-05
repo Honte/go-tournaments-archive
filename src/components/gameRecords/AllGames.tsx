@@ -8,7 +8,7 @@ import type { Locale, Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import type { GameBrowserOptions } from '@/libs/gameRecords';
 import { GameFiltersPanel } from '@/components/gameRecords/GameFiltersPanel';
-import { useGameBrowserStore } from '@/components/gameRecords/useGameBrowserStore';
+import { useGameRecordsStore } from '@/components/gameRecords/useGameRecordsStore';
 import { VirtualGameRecordGrid, type GameRecordGroup } from '@/components/gameRecords/VirtualGameRecordGrid';
 import { Button } from '@/components/ui/Button';
 import { H1 } from '@/components/ui/H1';
@@ -57,7 +57,7 @@ function AllGamesContent({ event, games, translations }: AllGamesContentProps) {
     };
   }, [event.categories, event.showCountry, translations]);
 
-  const store = useGameBrowserStore(games, modelOptions);
+  const store = useGameRecordsStore(games, modelOptions);
   const model = useStore(store, (state) => state.model);
   const clearAll = useStore(store, (state) => state.clearFilters);
 

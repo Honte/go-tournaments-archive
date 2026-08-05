@@ -63,7 +63,7 @@ export type PlayerColor = (typeof PLAYER_COLORS)[number];
 export type GameSort = (typeof GAME_SORTS)[number];
 export type GameGroup = (typeof GAME_GROUPS)[number];
 
-export type GameBrowserState = {
+export type GameRecordsState = {
   player?: string;
   country?: string;
   opponent?: string;
@@ -85,7 +85,7 @@ export type GameBrowserState = {
   group: GameGroup;
 };
 
-export const DEFAULT_GAME_BROWSER_STATE: GameBrowserState = {
+export const DEFAULT_GAME_BROWSER_STATE: GameRecordsState = {
   years: [],
   results: [],
   komi: [],
@@ -100,7 +100,7 @@ export type GameBrowserGroupResult = { key: string; label?: string; games: ApiGa
 export type GameBrowserDomains = { ranks: string[]; years: number[]; movesMin?: number; movesMax?: number };
 
 export type GameBrowserModel = {
-  state: GameBrowserState;
+  state: GameRecordsState;
   totalCount: number;
   filteredCount: number;
   hasJigo: boolean;

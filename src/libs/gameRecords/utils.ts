@@ -1,6 +1,6 @@
-import { DEFAULT_GAME_BROWSER_STATE, type GameBrowserState } from '@/libs/gameRecords/schema';
+import { DEFAULT_GAME_BROWSER_STATE, type GameRecordsState } from '@/libs/gameRecords/schema';
 
-export function getActiveGameFilterCount(state: GameBrowserState) {
+export function getActiveGameFilterCount(state: GameRecordsState) {
   return [
     state.player,
     state.country,

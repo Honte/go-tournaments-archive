@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { connectGameRecordsUrlState, createGameRecordsStore } from '@/libs/gameRecords';
+import { createGameRecordsStore } from '@/libs/gameRecords';
 import { deriveGameBrowserModel } from './model';
 import { createGames, state } from './testFixtures';
 
@@ -55,7 +55,7 @@ describe('game records store', () => {
     assert.equal(store.getState().model.state.player, 'a');
   });
 
-  it('pushes filter changes and applies browser navigation without losing unrelated parameters', () => {
+  it('pushes filter changes and applies browser navigation without losing unrelated parameters', async () => {
     const previousWindow = globalThis.window;
     const previousRequestAnimationFrame = globalThis.requestAnimationFrame;
     const listeners = new Map<string, EventListener>();
@@ -91,7 +91,8 @@ describe('game records store', () => {
 
     try {
       const store = createGameRecordsStore({ games, options: {}, initialState: state() });
-      const disconnect = connectGameRecordsUrlState(store);
+      await store.persist.rehydrate();
+      const unbind = store.listen();
 
       store.getState().setFilters({ player: 'a' });
 
@@ -100,9 +101,10 @@ describe('game records store', () => {
 
       search = '?source=archive&player=b';
       listeners.get('popstate')?.(new Event('popstate'));
+      await store.persist.rehydrate();
 
       assert.equal(store.getState().model.state.player, 'b');
-      disconnect();
+      unbind();
     } finally {
       Object.defineProperty(globalThis, 'window', { configurable: true, value: previousWindow });
       Object.defineProperty(globalThis, 'requestAnimationFrame', {

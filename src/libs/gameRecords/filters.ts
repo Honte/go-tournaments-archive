@@ -2,12 +2,12 @@ import type { ApiGameInfo } from '@/schema/api';
 import type { Player } from '@/schema/data';
 import { isDrawResult } from '@/libs/games';
 import { getRankValue } from '@/libs/rank';
-import { type GameBrowserState, type GameResultType, type PlayerColor } from './schema';
+import { type GameRecordsState, type GameResultType, type PlayerColor } from './schema';
 
 export type OrientedGame = { game: ApiGameInfo; player: Player; opponent: Player; playerColor: PlayerColor };
 export type FacetKey = 'player' | 'country' | 'opponent' | 'opponentCountry' | 'playerColor';
 
-export function filterGameRecords(games: readonly ApiGameInfo[], state: GameBrowserState): OrientedGame[] {
+export function filterGameRecords(games: readonly ApiGameInfo[], state: GameRecordsState): OrientedGame[] {
   const matches: OrientedGame[] = [];
   for (const game of games) {
     if (!matchesGlobalFilters(game, state)) {
@@ -45,7 +45,7 @@ export function getOrientations(game: ApiGameInfo): [OrientedGame, OrientedGame]
   ];
 }
 
-export function matchesGlobalFilters(game: ApiGameInfo, state: GameBrowserState) {
+export function matchesGlobalFilters(game: ApiGameInfo, state: GameRecordsState) {
   if (state.category && game.category !== state.category) {
     return false;
   }
@@ -79,7 +79,7 @@ export function matchesGlobalFilters(game: ApiGameInfo, state: GameBrowserState)
   return !(state.media.includes('yt') && (!game.yt || !game.yt.length));
 }
 
-export function matchesOrientation(orientation: OrientedGame, state: GameBrowserState, ignoredFacet?: FacetKey) {
+export function matchesOrientation(orientation: OrientedGame, state: GameRecordsState, ignoredFacet?: FacetKey) {
   if (ignoredFacet !== 'player' && state.player && orientation.player.id !== state.player) {
     return false;
   }

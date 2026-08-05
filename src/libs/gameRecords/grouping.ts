@@ -1,6 +1,6 @@
 import type { ApiGameInfo } from '@/schema/api';
 import type { OrientedGame } from './filters';
-import type { GameBrowserGroupResult, GameBrowserState, GameGroup } from './schema';
+import type { GameBrowserGroupResult, GameRecordsState, GameGroup } from './schema';
 
 type PlayerMeta = { label: string; aliases: Set<string>; latestTournament: number };
 type GroupOptions = {
@@ -13,7 +13,7 @@ type GroupOptions = {
 
 export function groupGameRecords(
   matches: readonly OrientedGame[],
-  state: GameBrowserState,
+  state: GameRecordsState,
   options: GroupOptions
 ): GameBrowserGroupResult[] {
   if (state.group === 'none') {
@@ -61,7 +61,7 @@ export function getPlayerMeta(games: readonly ApiGameInfo[]) {
 function getGroupDetails(
   match: OrientedGame,
   group: Exclude<GameGroup, 'none'>,
-  state: GameBrowserState,
+  state: GameRecordsState,
   options: GroupOptions
 ) {
   switch (group) {

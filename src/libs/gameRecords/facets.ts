@@ -19,7 +19,7 @@ import {
   GAME_WINNERS,
   PLAYER_COLORS,
   type GameBrowserDomains,
-  type GameBrowserState,
+  type GameRecordsState,
   type GameFacet,
   type GameMedia,
   type GameResultType,
@@ -29,7 +29,7 @@ import {
 
 export function buildGameBrowserFacets(
   games: readonly ApiGameInfo[],
-  state: GameBrowserState,
+  state: GameRecordsState,
   options: {
     countriesEnabled: boolean;
     categoriesEnabled: boolean;
@@ -83,7 +83,7 @@ export function getGameBrowserDomains(games: readonly ApiGameInfo[]): GameBrowse
 
 function buildPlayerFacet(
   games: readonly ApiGameInfo[],
-  state: GameBrowserState,
+  state: GameRecordsState,
   facet: 'player' | 'opponent',
   meta: ReturnType<typeof getPlayerMeta>,
   visible: boolean
@@ -112,7 +112,7 @@ function buildPlayerFacet(
 
 function buildCountryFacet(
   games: readonly ApiGameInfo[],
-  state: GameBrowserState,
+  state: GameRecordsState,
   facet: 'country' | 'opponentCountry',
   countryLabel: (country: string) => string,
   countriesEnabled: boolean,
@@ -136,7 +136,7 @@ function buildCountryFacet(
 
 function buildCategoryFacet(
   games: readonly ApiGameInfo[],
-  state: GameBrowserState,
+  state: GameRecordsState,
   categoryLabel: (category: string) => string,
   visible: boolean
 ): GameFacet {
@@ -161,7 +161,7 @@ function buildCategoryFacet(
   };
 }
 
-function buildYearFacet(games: readonly ApiGameInfo[], state: GameBrowserState): GameFacet {
+function buildYearFacet(games: readonly ApiGameInfo[], state: GameRecordsState): GameFacet {
   const counts = new Map<number, number>();
   for (const match of filterGameRecords(games, { ...state, years: [] })) {
     counts.set(match.game.tournament, (counts.get(match.game.tournament) ?? 0) + 1);
@@ -175,7 +175,7 @@ function buildYearFacet(games: readonly ApiGameInfo[], state: GameBrowserState):
   };
 }
 
-function buildMediaFacetCounts(games: readonly ApiGameInfo[], state: GameBrowserState) {
+function buildMediaFacetCounts(games: readonly ApiGameInfo[], state: GameRecordsState) {
   return Object.fromEntries(
     GAME_MEDIA.map((medium) => [
       medium,
@@ -187,14 +187,14 @@ function buildMediaFacetCounts(games: readonly ApiGameInfo[], state: GameBrowser
   ) as Record<GameMedia, number>;
 }
 
-function buildResultFacetCounts(games: readonly ApiGameInfo[], state: GameBrowserState) {
+function buildResultFacetCounts(games: readonly ApiGameInfo[], state: GameRecordsState) {
   const context = getGameFacetContext(state);
   return Object.fromEntries(
     GAME_RESULT_TYPES.map((result) => [result, filterGameRecords(games, { ...context, results: [result] }).length])
   ) as Record<GameResultType, number>;
 }
 
-function buildKomiFacet(games: readonly ApiGameInfo[], state: GameBrowserState): GameFacet {
+function buildKomiFacet(games: readonly ApiGameInfo[], state: GameRecordsState): GameFacet {
   const counts = new Map<string, number>();
   for (const match of filterGameRecords(games, { ...state, komi: [] })) {
     if (match.game.komi !== undefined) {
@@ -211,20 +211,20 @@ function buildKomiFacet(games: readonly ApiGameInfo[], state: GameBrowserState):
   };
 }
 
-function buildWinnerFacetCounts(games: readonly ApiGameInfo[], state: GameBrowserState) {
+function buildWinnerFacetCounts(games: readonly ApiGameInfo[], state: GameRecordsState) {
   const context = getGameFacetContext(state);
   return Object.fromEntries(
     GAME_WINNERS.map((winner) => [winner, filterGameRecords(games, { ...context, winner }).length])
   ) as Record<GameWinner, number>;
 }
 
-function buildColorFacetCounts(games: readonly ApiGameInfo[], state: GameBrowserState) {
+function buildColorFacetCounts(games: readonly ApiGameInfo[], state: GameRecordsState) {
   return Object.fromEntries(
     PLAYER_COLORS.map((color) => [color, filterGameRecords(games, { ...state, playerColor: color }).length])
   ) as Record<PlayerColor, number>;
 }
 
-function getGameFacetContext(state: GameBrowserState): GameBrowserState {
+function getGameFacetContext(state: GameRecordsState): GameRecordsState {
   return {
     ...DEFAULT_GAME_BROWSER_STATE,
     player: state.player,
@@ -235,7 +235,7 @@ function getGameFacetContext(state: GameBrowserState): GameBrowserState {
   };
 }
 
-function countFacet(games: readonly ApiGameInfo[], state: GameBrowserState, facet: FacetKey) {
+function countFacet(games: readonly ApiGameInfo[], state: GameRecordsState, facet: FacetKey) {
   const counts = new Map<string, number>();
   for (const game of games) {
     if (!matchesGlobalFilters(game, state)) {
