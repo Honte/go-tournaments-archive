@@ -1,13 +1,14 @@
 'use client';
 
-import { useCallback, useMemo } from 'react';
+import { useMemo } from 'react';
+import { useStore } from 'zustand';
 import type { ApiGameInfo } from '@/schema/api';
 import type { EventContext } from '@/schema/event';
 import type { Locale, Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
-import { DEFAULT_GAME_BROWSER_STATE, type GameBrowserOptions } from '@/libs/gameRecords';
+import type { GameBrowserOptions } from '@/libs/gameRecords';
 import { GameFiltersPanel } from '@/components/gameRecords/GameFiltersPanel';
-import { useGameBrowserUrlState } from '@/components/gameRecords/useGameBrowserUrlState';
+import { useGameBrowserStore } from '@/components/gameRecords/useGameBrowserStore';
 import { VirtualGameRecordGrid, type GameRecordGroup } from '@/components/gameRecords/VirtualGameRecordGrid';
 import { Button } from '@/components/ui/Button';
 import { H1 } from '@/components/ui/H1';
@@ -56,7 +57,9 @@ function AllGamesContent({ event, games, translations }: AllGamesContentProps) {
     };
   }, [event.categories, event.showCountry, translations]);
 
-  const { commitState, model } = useGameBrowserUrlState(games, modelOptions);
+  const store = useGameBrowserStore(games, modelOptions);
+  const model = useStore(store, (state) => state.model);
+  const clearAll = useStore(store, (state) => state.clearFilters);
 
   const titleCount =
     model.filteredCount === model.totalCount
@@ -72,23 +75,13 @@ function AllGamesContent({ event, games, translations }: AllGamesContentProps) {
     [model.groups]
   );
 
-  const clearAll = useCallback(
-    () =>
-      commitState({
-        ...DEFAULT_GAME_BROWSER_STATE,
-        results: [],
-        media: [],
-      }),
-    [commitState]
-  );
-
   return (
     <>
       <H1>
         {t('site.gamesListTitle')} ({titleCount})
       </H1>
 
-      <GameFiltersPanel model={model} translations={translations} onChange={commitState} onClear={clearAll} />
+      <GameFiltersPanel store={store} t={t} />
 
       {model.filteredCount > 0 ? (
         <VirtualGameRecordGrid key={model.state.group} event={event} groups={groups} translations={translations} />
