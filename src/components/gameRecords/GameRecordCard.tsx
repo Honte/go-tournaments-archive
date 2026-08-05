@@ -24,7 +24,7 @@ export function GameRecordCard({ event, game, translations }: GameRecordCardProp
   const t = getTranslator(translations);
   const thumb = game.jpg ?? game.svg ?? game.png;
   const title = `${game.black.name} vs ${game.white.name}`;
-  const previewLabel = t('game.thumb', title);
+  const previewLabel = t('game.preview', title);
   const stageName = game.stageType
     ? getStageName({ name: game.stageName, type: game.stageType }, translations)
     : undefined;
