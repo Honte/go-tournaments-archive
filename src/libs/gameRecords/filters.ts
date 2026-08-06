@@ -9,11 +9,14 @@ export type FacetKey = 'player' | 'country' | 'opponent' | 'opponentCountry' | '
 
 export function filterGameRecords(games: readonly ApiGameInfo[], state: GameRecordsState): OrientedGame[] {
   const matches: OrientedGame[] = [];
+
   for (const game of games) {
     if (!matchesGlobalFilters(game, state)) {
       continue;
     }
+
     const orientation = getOrientations(game).find((candidate) => matchesOrientation(candidate, state));
+
     if (orientation) {
       matches.push(orientation);
     }
@@ -49,33 +52,43 @@ export function matchesGlobalFilters(game: ApiGameInfo, state: GameRecordsState)
   if (state.category && game.category !== state.category) {
     return false;
   }
+
   if (state.years.length && !state.years.includes(game.tournament)) {
     return false;
   }
+
   if (state.movesMin !== undefined && game.moves < state.movesMin) {
     return false;
   }
+
   if (state.movesMax !== undefined && game.moves > state.movesMax) {
     return false;
   }
+
   if (state.results.length && !state.results.includes(getGameResultType(game.result))) {
     return false;
   }
+
   if (state.komi.length && (game.komi === undefined || !state.komi.includes(formatKomi(game.komi)))) {
     return false;
   }
+
   if ((state.winner === 'black' || state.winner === 'white') && game.winner !== state.winner) {
     return false;
   }
+
   if (state.winner === 'jigo' && !isDrawResult(game.result)) {
     return false;
   }
+
   if (state.media.includes('ogs') && !game.ogs) {
     return false;
   }
+
   if (state.media.includes('ai') && !game.ai) {
     return false;
   }
+
   return !(state.media.includes('yt') && (!game.yt || !game.yt.length));
 }
 
@@ -83,6 +96,7 @@ export function matchesOrientation(orientation: OrientedGame, state: GameRecords
   if (ignoredFacet !== 'player' && state.player && orientation.player.id !== state.player) {
     return false;
   }
+
   if (
     ignoredFacet !== 'country' &&
     state.country &&
@@ -90,9 +104,11 @@ export function matchesOrientation(orientation: OrientedGame, state: GameRecords
   ) {
     return false;
   }
+
   if (ignoredFacet !== 'opponent' && state.opponent && orientation.opponent.id !== state.opponent) {
     return false;
   }
+
   if (
     ignoredFacet !== 'opponentCountry' &&
     state.opponentCountry &&
@@ -100,21 +116,25 @@ export function matchesOrientation(orientation: OrientedGame, state: GameRecords
   ) {
     return false;
   }
+
   if (ignoredFacet !== 'playerColor' && state.playerColor && orientation.playerColor !== state.playerColor) {
     return false;
   }
+
   if (
     (state.winner === 'player' || state.winner === 'country') &&
     orientation.game.winner !== orientation.playerColor
   ) {
     return false;
   }
+
   if (
     (state.winner === 'player-opponent' || state.winner === 'country-opponent') &&
     orientation.game.winner === orientation.playerColor
   ) {
     return false;
   }
+
   return (
     matchesRank(orientation.player.rank, state.playerRankMin, state.playerRankMax) &&
     matchesRank(orientation.opponent.rank, state.opponentRankMin, state.opponentRankMax)

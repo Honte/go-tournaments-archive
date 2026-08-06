@@ -48,14 +48,17 @@ function compareOptional(left: number | undefined, right: number | undefined, or
   if (left === undefined) {
     return right === undefined ? 0 : 1;
   }
+
   if (right === undefined) {
     return -1;
   }
+
   return order === 'asc' ? left - right : right - left;
 }
 
 function getRankGap(game: ApiGameInfo) {
   const black = getRankValue(game.black.rank);
   const white = getRankValue(game.white.rank);
+
   return black === undefined || white === undefined ? undefined : Math.abs(black - white);
 }

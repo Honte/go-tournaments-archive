@@ -7,7 +7,7 @@ import type { GameRecordsModel, GameRecordsOptions, GameRecordsState } from './s
 import { sortGameRecords } from './sorting';
 import { getCategories, getGameGroupEligibility, groupingForState, normalizeGameRecordsState } from './state';
 
-export function deriveGameRecordsModel(
+export function buildGameRecordsModel(
   games: readonly ApiGameInfo[],
   requestedState: GameRecordsState,
   options: GameRecordsOptions = {}
@@ -33,7 +33,6 @@ export function deriveGameRecordsModel(
       countryLabel,
       categoryLabel,
       unknownCountryLabel: options.unknownCountryLabel ?? '?',
-      locale: options.locale,
     }),
     facets: buildGameRecordsFacets(games, normalizedState, {
       countriesEnabled,

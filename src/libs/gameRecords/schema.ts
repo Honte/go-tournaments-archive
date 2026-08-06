@@ -129,7 +129,6 @@ export type GameRecordsOptions = {
   countryLabel?: (country: string) => string;
   categoryLabel?: (category: string) => string;
   unknownCountryLabel?: string;
-  locale?: string;
 };
 
 export type SearchParamsReader = Pick<URLSearchParams, 'get' | 'getAll'>;

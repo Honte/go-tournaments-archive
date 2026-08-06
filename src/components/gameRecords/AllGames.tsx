@@ -9,7 +9,7 @@ import { getTranslator } from '@/i18n/translator';
 import type { GameRecordsOptions } from '@/libs/gameRecords';
 import { GameFiltersPanel } from '@/components/gameRecords/GameFiltersPanel';
 import { useGameRecordsStore } from '@/components/gameRecords/useGameRecordsStore';
-import { VirtualGameRecordGrid, type GameRecordGroup } from '@/components/gameRecords/VirtualGameRecordGrid';
+import { type GameRecordGroup, VirtualGameRecordGrid } from '@/components/gameRecords/VirtualGameRecordGrid';
 import { Button } from '@/components/ui/Button';
 import { H1 } from '@/components/ui/H1';
 import { Loader } from '@/components/ui/Loader';
@@ -45,17 +45,16 @@ export function AllGames({ event, locale }: AllGamesProps) {
 function AllGamesContent({ event, games, translations }: AllGamesContentProps) {
   const t = getTranslator(translations);
 
-  const modelOptions = useMemo<GameRecordsOptions>(() => {
-    const translate = getTranslator(translations);
-    return {
+  const modelOptions = useMemo<GameRecordsOptions>(
+    () => ({
       countriesEnabled: event.showCountry,
       categoriesEnabled: Boolean(event.categories?.length),
-      countryLabel: (country) => translate(`country.${country}`),
-      categoryLabel: (category) => translate(`categories.short.${category}`),
-      unknownCountryLabel: translate('gamesFilter.unknown'),
-      locale: translations.locale,
-    };
-  }, [event.categories, event.showCountry, translations]);
+      countryLabel: (country) => t(`country.${country}`),
+      categoryLabel: (category) => t(`categories.short.${category}`),
+      unknownCountryLabel: t('gamesFilter.unknown'),
+    }),
+    [event.categories, event.showCountry, t]
+  );
 
   const store = useGameRecordsStore(games, modelOptions);
   const model = useStore(store, (state) => state.model);

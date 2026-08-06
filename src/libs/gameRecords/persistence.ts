@@ -1,6 +1,6 @@
 import { persist, type StorageValue } from 'zustand/middleware';
 import { createStore, type StoreApi } from 'zustand/vanilla';
-import { deriveGameRecordsModel } from './model';
+import { buildGameRecordsModel } from './model';
 import { DEFAULT_GAME_RECORDS_STATE, type GameRecordsState } from './schema';
 import { createGameRecordsStoreState, type GameRecordsStore, type GameRecordsStoreConfig } from './store';
 import { parseGameRecordsState, serializeGameRecordsState } from './urlState';
@@ -61,7 +61,7 @@ export function createGameRecordsStore(config: GameRecordsStoreConfig): GameReco
       partialize: (state) => state.model.state,
       merge: (persistedState, currentState) => ({
         ...currentState,
-        model: deriveGameRecordsModel(config.games, persistedState as GameRecordsState, config.options),
+        model: buildGameRecordsModel(config.games, persistedState as GameRecordsState, config.options),
       }),
       version: GAME_RECORDS_STORAGE_VERSION,
       onRehydrateStorage: () => (_state, error) => {

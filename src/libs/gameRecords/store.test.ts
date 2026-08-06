@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { createGameRecordsStore } from '@/libs/gameRecords';
-import { deriveGameRecordsModel } from './model';
+import { buildGameRecordsModel } from './model';
 import { createGames, state } from './testFixtures';
 
 describe('game records store', () => {
@@ -29,7 +29,7 @@ describe('game records store', () => {
 
     store.getState().clearFilters();
 
-    assert.deepEqual(store.getState().model.state, deriveGameRecordsModel(games, state()).state);
+    assert.deepEqual(store.getState().model.state, buildGameRecordsModel(games, state()).state);
     assert.equal(store.getState().model.filteredCount, games.length);
   });
 

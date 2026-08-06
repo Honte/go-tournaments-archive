@@ -1,6 +1,6 @@
 import { type StateCreator } from 'zustand/vanilla';
 import type { ApiGameInfo } from '@/schema/api';
-import { deriveGameRecordsModel } from './model';
+import { buildGameRecordsModel } from './model';
 import {
   DEFAULT_GAME_RECORDS_STATE,
   type GameRecordsModel,
@@ -25,7 +25,7 @@ export type GameRecordsStoreConfig = {
 };
 
 export function createGameRecordsStoreState(config: GameRecordsStoreConfig): StateCreator<GameRecordsStore> {
-  const initialModel = deriveGameRecordsModel(
+  const initialModel = buildGameRecordsModel(
     config.games,
     config.initialState ?? DEFAULT_GAME_RECORDS_STATE,
     config.options
@@ -38,14 +38,14 @@ export function createGameRecordsStoreState(config: GameRecordsStoreConfig): Sta
     expanded: false,
 
     setFilters: (patch) => {
-      const nextModel = deriveGameRecordsModel(config.games, { ...get().model.state, ...patch }, config.options);
+      const nextModel = buildGameRecordsModel(config.games, { ...get().model.state, ...patch }, config.options);
 
       set({ model: nextModel });
     },
 
     clearFilters: () => {
       set({
-        model: deriveGameRecordsModel(config.games, DEFAULT_GAME_RECORDS_STATE, config.options),
+        model: buildGameRecordsModel(config.games, DEFAULT_GAME_RECORDS_STATE, config.options),
       });
     },
 

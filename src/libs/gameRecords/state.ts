@@ -49,21 +49,26 @@ export function normalizeGameRecordsState(
     opponentRankMin: normalizeRank(requested.opponentRankMin),
     opponentRankMax: normalizeRank(requested.opponentRankMax),
   };
+
   state.player = state.player && players.has(state.player) ? state.player : undefined;
   state.category = categoriesEnabled && state.category && categories.has(state.category) ? state.category : undefined;
   state.country =
     countriesEnabled && state.country && countries.has(state.country.toUpperCase())
       ? state.country.toUpperCase()
       : undefined;
+
   if (state.player && state.country && !hasStructuralMatch(games, { player: state.player, country: state.country })) {
     state.country = undefined;
   }
+
   if ((state.winner === 'player' || state.winner === 'player-opponent') && !state.player) {
     state.winner = undefined;
   }
+
   if ((state.winner === 'country' || state.winner === 'country-opponent') && !state.country) {
     state.winner = undefined;
   }
+
   state.opponent =
     state.player &&
     state.opponent &&
@@ -71,6 +76,7 @@ export function normalizeGameRecordsState(
     hasStructuralMatch(games, { player: state.player, country: state.country, opponent: state.opponent })
       ? state.opponent
       : undefined;
+
   state.opponentCountry =
     countriesEnabled &&
     (state.player || state.country) &&
@@ -84,12 +90,15 @@ export function normalizeGameRecordsState(
     })
       ? state.opponentCountry.toUpperCase()
       : undefined;
+
   normalizeRange(state, 'movesMin', 'movesMax');
   normalizeRankRange(state, 'playerRankMin', 'playerRankMax');
   normalizeRankRange(state, 'opponentRankMin', 'opponentRankMax');
+
   if (!state.player && !state.country) {
     state.opponentRankMin = state.opponentRankMax = undefined;
   }
+
   return groupingForState(
     state,
     getGameGroupEligibility(state, countriesEnabled, categoriesEnabled && Boolean(categories.size))
@@ -120,6 +129,7 @@ export function groupingForState(state: GameRecordsState, eligibility: GameGroup
   ) {
     return { ...state, group: 'none' };
   }
+
   return state;
 }
 

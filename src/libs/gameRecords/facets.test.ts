@@ -1,13 +1,13 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { deriveGameRecordsModel } from './model';
+import { buildGameRecordsModel } from './model';
 import { createGames, game, player, state, toCounts } from './testFixtures';
 
 describe('game facets', () => {
   const games = createGames();
 
   it('builds reciprocal multi-country opponent facets with would-match counts', () => {
-    const model = deriveGameRecordsModel(games, state({ player: 'a' }));
+    const model = buildGameRecordsModel(games, state({ player: 'a' }));
 
     assert.deepEqual(toCounts(model.facets.country.options), { DE: 1, PL: 2 });
     assert.deepEqual(toCounts(model.facets.opponent.options), { b: 2, c: 1 });
@@ -37,7 +37,7 @@ describe('game facets', () => {
         moves: 100,
       }),
     ];
-    const model = deriveGameRecordsModel(facetGames, state());
+    const model = buildGameRecordsModel(facetGames, state());
 
     assert.deepEqual(
       model.facets.player.options.map((option) => [option.value, option.count]),
@@ -55,8 +55,8 @@ describe('game facets', () => {
   });
 
   it('uses self-excluding counts and counts a same-country game only once', () => {
-    const playerModel = deriveGameRecordsModel(games, state({ player: 'a', country: 'PL' }));
-    const countryModel = deriveGameRecordsModel(games, state({ country: 'PL' }));
+    const playerModel = buildGameRecordsModel(games, state({ player: 'a', country: 'PL' }));
+    const countryModel = buildGameRecordsModel(games, state({ country: 'PL' }));
 
     assert.deepEqual(toCounts(playerModel.facets.country.options), { DE: 1, PL: 2 });
     assert.deepEqual(toCounts(countryModel.facets.opponentCountry.options), { DE: 2, PL: 1 });
@@ -64,7 +64,7 @@ describe('game facets', () => {
   });
 
   it('retains a structurally valid selected option with a zero live count', () => {
-    const model = deriveGameRecordsModel(games, state({ player: 'a', opponent: 'b', results: ['time'] }));
+    const model = buildGameRecordsModel(games, state({ player: 'a', opponent: 'b', results: ['time'] }));
     const selectedOpponent = model.facets.opponent.options.find((option) => option.value === 'b');
 
     assert.equal(model.state.opponent, 'b');
@@ -74,9 +74,9 @@ describe('game facets', () => {
   });
 
   it('updates year and media counts from the current filter state', () => {
-    const playerModel = deriveGameRecordsModel(games, state({ player: 'a', years: [2023] }));
-    const mediaOptions = deriveGameRecordsModel(games, state({ player: 'a' }));
-    const selectedMedia = deriveGameRecordsModel(games, state({ player: 'a', media: ['ogs'] }));
+    const playerModel = buildGameRecordsModel(games, state({ player: 'a', years: [2023] }));
+    const mediaOptions = buildGameRecordsModel(games, state({ player: 'a' }));
+    const selectedMedia = buildGameRecordsModel(games, state({ player: 'a', media: ['ogs'] }));
 
     assert.deepEqual(toCounts(playerModel.facets.year.options), { 2020: 1, 2021: 1, 2023: 1 });
     assert.deepEqual(mediaOptions.facets.media, { ogs: 2, yt: 2, ai: 0 });
@@ -84,7 +84,7 @@ describe('game facets', () => {
   });
 
   it('builds result and winner options from the full focal context', () => {
-    const model = deriveGameRecordsModel(games, state({ player: 'a', years: [2020], media: ['ogs'] }));
+    const model = buildGameRecordsModel(games, state({ player: 'a', years: [2020], media: ['ogs'] }));
 
     assert.deepEqual(model.facets.result, { resignation: 1, points: 1, time: 1, other: 0, unknown: 0 });
     assert.deepEqual(model.facets.winner, {
@@ -99,8 +99,8 @@ describe('game facets', () => {
   });
 
   it('updates komi counts from the current orientation filter state', () => {
-    const model = deriveGameRecordsModel(games, state({ player: 'a', country: 'PL' }));
-    const selected = deriveGameRecordsModel(games, state({ player: 'a', country: 'PL', komi: ['0.5'] }));
+    const model = buildGameRecordsModel(games, state({ player: 'a', country: 'PL' }));
+    const selected = buildGameRecordsModel(games, state({ player: 'a', country: 'PL', komi: ['0.5'] }));
 
     assert.equal(model.filteredCount, 2);
     assert.deepEqual(toCounts(model.facets.komi.options), { '0.5': 1, '6.5': 1 });
@@ -108,15 +108,15 @@ describe('game facets', () => {
   });
 
   it('only hides komi when every unfiltered game has the same value', () => {
-    const filtered = deriveGameRecordsModel(games, state({ years: [2020] }));
+    const filtered = buildGameRecordsModel(games, state({ years: [2020] }));
     const uniformGames = games.map((game) => ({ ...game, komi: 6.5 }));
 
     assert.equal(filtered.facets.komi.visible, true);
-    assert.equal(deriveGameRecordsModel(uniformGames, state()).facets.komi.visible, false);
+    assert.equal(buildGameRecordsModel(uniformGames, state()).facets.komi.visible, false);
   });
 
   it('builds self-excluding winner counts for colors and focal roles', () => {
-    const model = deriveGameRecordsModel(games, state({ player: 'a', winner: 'black' }));
+    const model = buildGameRecordsModel(games, state({ player: 'a', winner: 'black' }));
 
     assert.deepEqual(model.facets.winner, {
       black: 1,
@@ -130,7 +130,7 @@ describe('game facets', () => {
   });
 
   it('retains a selected year with zero matches from unrelated filters', () => {
-    const model = deriveGameRecordsModel(games, state({ player: 'a', years: [2020], results: ['time'] }));
+    const model = buildGameRecordsModel(games, state({ player: 'a', years: [2020], results: ['time'] }));
 
     assert.equal(model.filteredCount, 0);
     assert.deepEqual(toCounts(model.facets.year.options), { 2020: 0, 2021: 1 });
@@ -141,7 +141,7 @@ describe('game facets', () => {
       ...record,
       category: index < 2 ? 'junior' : 'open',
     }));
-    const model = deriveGameRecordsModel(categorized, state({ player: 'a', category: 'junior' }), {
+    const model = buildGameRecordsModel(categorized, state({ player: 'a', category: 'junior' }), {
       categoriesEnabled: true,
       categoryLabel: (category) => category.toUpperCase(),
     });
