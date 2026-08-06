@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { createGameRecordsStore } from '@/libs/gameRecords';
+import { canNavigateBackTo, updateNavigationUrl } from '@/libs/navigation';
 import { buildGameRecordsModel } from './model';
 import { createGames, state } from './testFixtures';
 
@@ -60,18 +61,27 @@ describe('game records store', () => {
     const previousRequestAnimationFrame = globalThis.requestAnimationFrame;
     const listeners = new Map<string, EventListener>();
     let search = '?source=archive';
+    let historyUrl = '';
+    let historyState: unknown = null;
 
     const fakeWindow = {
-      location: { pathname: '/pl/stats/games', hash: '' },
+      location: { pathname: '/pl/stats/games', hash: '#records' },
       get scrollY() {
         return 0;
       },
       scrollTo: () => undefined,
       history: {
-        pushState: (_state: unknown, _title: string, url: string) => {
+        get state() {
+          return historyState;
+        },
+        pushState: (state: unknown, _title: string, url: string) => {
+          historyState = state;
+          historyUrl = url;
           search = new URL(url, 'https://archive.test').search;
         },
-        replaceState: (_state: unknown, _title: string, url: string) => {
+        replaceState: (state: unknown, _title: string, url: string) => {
+          historyState = state;
+          historyUrl = url;
           search = new URL(url, 'https://archive.test').search;
         },
       },
@@ -82,6 +92,10 @@ describe('game records store', () => {
     Object.defineProperty(fakeWindow.location, 'search', {
       configurable: true,
       get: () => search,
+    });
+    Object.defineProperty(fakeWindow.location, 'href', {
+      configurable: true,
+      get: () => `https://archive.test/pl/stats/games${search}#records`,
     });
     Object.defineProperty(globalThis, 'window', { configurable: true, value: fakeWindow });
     Object.defineProperty(globalThis, 'requestAnimationFrame', {
@@ -98,12 +112,20 @@ describe('game records store', () => {
 
       assert.equal(new URLSearchParams(search).get('source'), 'archive');
       assert.equal(new URLSearchParams(search).get('player'), 'a');
+      assert.equal(canNavigateBackTo(new URLSearchParams('source=archive')), true);
 
       search = '?source=archive&player=b';
       listeners.get('popstate')?.(new Event('popstate'));
-      await store.persist.rehydrate();
+      await Promise.resolve();
 
       assert.equal(store.getState().model.state.player, 'b');
+
+      updateNavigationUrl(new URLSearchParams('source=archive&player=c'), 'replace');
+      await Promise.resolve();
+
+      assert.equal(store.getState().model.state.player, 'c');
+      assert.equal(new URL(historyUrl, 'https://archive.test').pathname, '/pl/stats/games');
+      assert.equal(new URL(historyUrl, 'https://archive.test').hash, '#records');
       unbind();
     } finally {
       Object.defineProperty(globalThis, 'window', { configurable: true, value: previousWindow });

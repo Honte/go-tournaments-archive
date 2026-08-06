@@ -1,7 +1,7 @@
 'use client';
 
-import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { Link } from '@/components/navigation/Link';
 
 export type LocaleNavigationProps = {
   locales: string[];
@@ -24,7 +24,6 @@ export function LocaleNavigation({ locale, locales }: LocaleNavigationProps) {
           key={nextLocale}
           className={nextLocale === locale ? 'font-bold' : 'underline'}
           href={pathname.replace(regex, `/${nextLocale}$1`)}
-          prefetch={false}
           aria-current={nextLocale === locale ? 'true' : undefined}
         >
           {nextLocale.toUpperCase()}

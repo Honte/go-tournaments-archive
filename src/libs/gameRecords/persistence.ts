@@ -1,5 +1,6 @@
 import { persist, type StorageValue } from 'zustand/middleware';
 import { createStore, type StoreApi } from 'zustand/vanilla';
+import { getNavigationSearch, subscribeToNavigationUrl, updateNavigationUrl } from '@/libs/navigation';
 import { buildGameRecordsModel } from './model';
 import { DEFAULT_GAME_RECORDS_STATE, type GameRecordsState } from './schema';
 import { createGameRecordsStoreState, type GameRecordsStore, type GameRecordsStoreConfig } from './store';
@@ -27,7 +28,7 @@ export function createGameRecordsStore(config: GameRecordsStoreConfig): GameReco
             return null;
           }
 
-          const state = parseGameRecordsState(new URLSearchParams(window.location.search));
+          const state = parseGameRecordsState(getNavigationSearch());
 
           return { state, version: GAME_RECORDS_STORAGE_VERSION };
         },
@@ -36,12 +37,12 @@ export function createGameRecordsStore(config: GameRecordsStoreConfig): GameReco
             return;
           }
 
-          const current = new URLSearchParams(window.location.search);
+          const current = getNavigationSearch();
           const next = serializeGameRecordsState(persisted.state, current);
 
           if (next.toString() !== current.toString()) {
             const scrollTop = window.scrollY;
-            updateBrowserUrl(next, 'push');
+            updateNavigationUrl(next, 'push');
             preserveWindowScroll(scrollTop);
           }
         },
@@ -50,11 +51,11 @@ export function createGameRecordsStore(config: GameRecordsStoreConfig): GameReco
             return;
           }
 
-          const current = new URLSearchParams(window.location.search);
+          const current = getNavigationSearch();
           const next = serializeGameRecordsState(DEFAULT_GAME_RECORDS_STATE, current);
 
           if (next.toString() !== current.toString()) {
-            updateBrowserUrl(next, 'replace');
+            updateNavigationUrl(next, 'replace');
           }
         },
       },
@@ -81,11 +82,7 @@ export function createGameRecordsStore(config: GameRecordsStoreConfig): GameReco
       return () => undefined;
     }
 
-    window.addEventListener('popstate', rehydrateFromUrl);
-
-    return () => {
-      window.removeEventListener('popstate', rehydrateFromUrl);
-    };
+    return subscribeToNavigationUrl(rehydrateFromUrl);
 
     function rehydrateFromUrl() {
       store.persist.rehydrate();
@@ -93,23 +90,16 @@ export function createGameRecordsStore(config: GameRecordsStoreConfig): GameReco
   }
 }
 
-function updateBrowserUrl(params: URLSearchParams, method: 'push' | 'replace') {
-  const query = params.toString();
-  const url = `${window.location.pathname}${query ? `?${query}` : ''}${window.location.hash}`;
-
-  window.history[`${method}State`](null, '', url);
-}
-
 function replaceWithCanonicalUrl(store: GameRecordsStoreApi) {
   if (typeof window === 'undefined') {
     return;
   }
 
-  const current = new URLSearchParams(window.location.search);
+  const current = getNavigationSearch();
   const canonical = serializeGameRecordsState(store.getState().model.state, current);
 
   if (canonical.toString() !== current.toString()) {
-    updateBrowserUrl(canonical, 'replace');
+    updateNavigationUrl(canonical, 'replace');
   }
 }
 

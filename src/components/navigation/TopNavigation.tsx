@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { EventContext } from '@/schema/event';
 import { between } from '@/libs/math';
+import { navigate } from '@/libs/navigation';
 import { tournamentUrl } from '@/libs/urls';
 import { YearsNavigation } from '@/components/navigation/YearsNavigation';
 
@@ -38,7 +39,10 @@ export function TopNavigation({ event, years, locale, current }: TopNavigationPr
     if (shouldRedirect) {
       delayRef.current = window.setTimeout(() => {
         if (next !== current) {
-          router.push(tournamentUrl(event, locale, next));
+          const href = tournamentUrl(event, locale, next);
+          if (navigate(href) === 'route') {
+            router.push(href);
+          }
         }
         setShouldRedirect(false);
       }, DELAY);

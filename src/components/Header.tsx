@@ -1,8 +1,8 @@
-import Link from 'next/link';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { homeUrl, logoWhiteUrl } from '@/libs/urls';
+import { Link } from '@/components/navigation/Link';
 import { LocaleNavigation } from '@/components/navigation/LocaleNavigation';
 import { SideNavigation } from '@/components/navigation/SideNavigation';
 
@@ -30,7 +30,6 @@ export function Header({ event, translations }: TopBarProps) {
           href={homeUrl(event, locale)}
           className="flex items-center gap-2 md:gap-3 min-w-0"
           title={t('navigation.home.title')}
-          prefetch={false}
         >
           <span className="sr-only">{t('navigation.home.anchor')}</span>
           <img src={logoWhiteUrl(event)} alt="" className="h-4 xs:h-5 shrink-0" />

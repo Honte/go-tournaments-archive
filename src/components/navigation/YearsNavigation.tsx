@@ -1,9 +1,9 @@
 'use client';
 
 import clsx from 'clsx';
-import Link from 'next/link';
 import type { EventContext } from '@/schema/event';
 import { tournamentUrl } from '@/libs/urls';
+import { Link } from '@/components/navigation/Link';
 
 export type YearsNavigationProps = {
   event: EventContext;
@@ -28,7 +28,6 @@ export function YearsNavigation({ event, locale, years, current }: YearsNavigati
                   hidden: year >= current,
                 })}
                 draggable={false}
-                prefetch={false}
               >
                 {year}
               </Link>
@@ -44,7 +43,6 @@ export function YearsNavigation({ event, locale, years, current }: YearsNavigati
                   hidden: year <= current,
                 })}
                 draggable={false}
-                prefetch={false}
               >
                 {year}
               </Link>

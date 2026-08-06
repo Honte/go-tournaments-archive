@@ -3,6 +3,7 @@
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 import type { EventContext } from '@/schema/event';
+import { navigate } from '@/libs/navigation';
 import { homeUrl } from '@/libs/urls';
 import Loading from '@/app/loading';
 
@@ -14,7 +15,11 @@ export function LocaleRedirect({ event }: LocaleRedirectProps) {
   const router = useRouter();
 
   useEffect(() => {
-    router.replace(homeUrl(event, pickLocale(event.locales)));
+    const href = homeUrl(event, pickLocale(event.locales));
+
+    if (navigate(href, 'replace') === 'route') {
+      router.replace(href);
+    }
   }, [router, event]);
 
   return <Loading />;

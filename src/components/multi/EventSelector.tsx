@@ -1,11 +1,11 @@
 'use client';
 
-import Link from 'next/link';
-import { useSearchParams } from 'next/navigation';
 import type { Locale, LocalizedString } from '@/i18n/consts';
 import { getString } from '@/i18n/utils';
 import { EventGroup } from '@/components/multi/EventGroup';
 import type { EventEntryGroup } from '@/components/multi/schema';
+import { Link } from '@/components/navigation/Link';
+import { useNavigationSearchParams } from '@/hooks/useNavigation';
 
 type EventSelectorProps = {
   title?: LocalizedString;
@@ -15,7 +15,8 @@ type EventSelectorProps = {
 };
 
 export function EventSelector({ title, groups, locales, hasSingleLocale }: EventSelectorProps) {
-  const locale = (useSearchParams()?.get('locale') ?? locales?.[0] ?? 'en') as Locale;
+  const params = useNavigationSearchParams();
+  const locale = (params.get('locale') ?? locales?.[0] ?? 'en') as Locale;
 
   return (
     <>
@@ -26,7 +27,6 @@ export function EventSelector({ title, groups, locales, hasSingleLocale }: Event
               key={nextLocale}
               className={nextLocale === locale ? 'font-bold' : 'underline'}
               href={`/?locale=${nextLocale}`}
-              prefetch={false}
               aria-current={nextLocale === locale ? 'true' : undefined}
             >
               {nextLocale.toUpperCase()}

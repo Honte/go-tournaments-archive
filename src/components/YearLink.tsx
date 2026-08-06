@@ -1,6 +1,6 @@
-import Link from 'next/link';
 import type { EventContext } from '@/schema/event';
 import { tournamentUrl } from '@/libs/urls';
+import { Link } from '@/components/navigation/Link';
 
 type YearLinkProps = {
   event: EventContext;
@@ -10,11 +10,7 @@ type YearLinkProps = {
 
 export function YearLink({ event, year, locale }: YearLinkProps) {
   return (
-    <Link
-      href={tournamentUrl(event, locale, year)}
-      className="underline text-event-primary hover:text-event-hover"
-      prefetch={false}
-    >
+    <Link href={tournamentUrl(event, locale, year)} className="underline text-event-primary hover:text-event-hover">
       {year}
     </Link>
   );

@@ -1,5 +1,6 @@
 'use client';
 
+import { Suspense } from 'react';
 import type { EventContext } from '@/schema/event';
 import type { Locale } from '@/i18n/consts';
 import { GamePopover } from '@/components/GamePopover';
@@ -21,7 +22,9 @@ export function Client({ locale, event }: ClientProps) {
   return (
     <>
       <GamePopover event={event} translations={translations} />
-      <GameViewer event={event} translations={translations} />
+      <Suspense fallback={null}>
+        <GameViewer event={event} translations={translations} />
+      </Suspense>
     </>
   );
 }

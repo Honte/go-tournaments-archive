@@ -27,11 +27,10 @@ type GameViewerContentProps = {
   event: EventContext;
   sgf: SgfData;
   translations: Translations;
-  onClose: () => void;
 };
 
 function GameViewerContent(props: GameViewerContentProps) {
-  const { event, sgf, translations, onClose } = props;
+  const { event, sgf, translations } = props;
   const t = getTranslator(translations);
   const [position, setPosition] = useState(sgf.moves.length);
   const [playing, setPlaying] = useState(false);
@@ -248,7 +247,6 @@ function GameViewerContent(props: GameViewerContentProps) {
           player={sgf.black}
           color="black"
           locale={translations.locale}
-          onNavigate={onClose}
           prisoners={board.getCaptures(1)}
         />
         <PlayerRow
@@ -256,7 +254,6 @@ function GameViewerContent(props: GameViewerContentProps) {
           player={sgf.white}
           color="white"
           locale={translations.locale}
-          onNavigate={onClose}
           prisoners={board.getCaptures(-1)}
         />
       </div>
@@ -316,14 +313,12 @@ function PlayerRow({
   color,
   locale,
   prisoners,
-  onNavigate,
 }: {
   event: EventContext;
   player: SgfPlayer;
   color: 'black' | 'white';
   locale: string;
   prisoners?: number;
-  onNavigate: () => void;
 }) {
   return (
     <div className="flex items-center gap-2 text-sm">
@@ -332,7 +327,6 @@ function PlayerRow({
         event={event}
         playerId={player.id}
         locale={locale}
-        onClick={onNavigate}
         className={clsx('min-w-0 truncate', {
           'font-semibold': player.won,
         })}

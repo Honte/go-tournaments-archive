@@ -1,9 +1,17 @@
-export const SHOW_GAME_VIEWER_EVENT = 'show-game-viewer';
+import { getNavigationSearch, updateNavigationUrl } from '@/libs/navigation';
 
-export function dispatchGameEvent(sgfPath: string) {
-  document.dispatchEvent(
-    new CustomEvent(SHOW_GAME_VIEWER_EVENT, {
-      detail: sgfPath,
-    })
-  );
+export function getGameViewerSearch(search: URLSearchParams, sgfPath: string | null) {
+  const next = new URLSearchParams(search);
+
+  if (sgfPath) {
+    next.set('sgf', sgfPath);
+  } else {
+    next.delete('sgf');
+  }
+
+  return next;
+}
+
+export function openGameViewer(sgfPath: string) {
+  updateNavigationUrl(getGameViewerSearch(getNavigationSearch(), sgfPath), 'push');
 }

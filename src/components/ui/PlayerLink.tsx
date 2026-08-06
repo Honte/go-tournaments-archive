@@ -1,8 +1,8 @@
 import { clsx } from 'clsx';
-import Link from 'next/link';
 import type { ComponentProps, PropsWithChildren } from 'react';
 import type { EventContext } from '@/schema/event';
 import { playerUrl } from '@/libs/urls';
+import { Link } from '@/components/navigation/Link';
 
 type PlayerLinkProps = Omit<ComponentProps<typeof Link>, 'href'> &
   PropsWithChildren<{
@@ -20,7 +20,6 @@ export function PlayerLink({ event, playerId, locale, children, className, ...pr
     <Link
       href={playerUrl(event, locale, playerId)}
       className={clsx('underline underline-offset-2 hover:text-event-hover', className)}
-      prefetch={false}
       {...props}
     >
       {children}
