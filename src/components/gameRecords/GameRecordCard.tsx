@@ -67,7 +67,8 @@ export function GameRecordCard({ event, game, translations }: GameRecordCardProp
         </span>
         {game.komi !== undefined && (
           <span>
-            {t('game.komi')}: <strong className="text-event-dark">{game.komi}</strong>
+            {t('game.komi')}:{' '}
+            <strong className="text-event-dark">{game.komi === null ? t('gamesFilter.unknown') : game.komi}</strong>
           </span>
         )}
         <span className="flex items-baseline gap-1">

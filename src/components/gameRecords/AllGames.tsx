@@ -51,6 +51,7 @@ function AllGamesContent({ event, games, translations }: AllGamesContentProps) {
       categoriesEnabled: Boolean(event.categories?.length),
       countryLabel: (country) => t(`country.${country}`),
       categoryLabel: (category) => t(`categories.short.${category}`),
+      unknownKomiLabel: t('gamesFilter.unknown'),
       unknownCountryLabel: t('gamesFilter.unknown'),
     }),
     [event.categories, event.showCountry, t]

@@ -53,6 +53,14 @@ describe('game browser URL state', () => {
     assert.equal(parsed.winner, undefined);
   });
 
+  it('round-trips Unknown komi and canonicalizes the old null value', () => {
+    const parsed = parseGameRecordsState(new URLSearchParams('komi=unknown&komi=null'));
+    const serialized = serializeGameRecordsState(parsed);
+
+    assert.deepEqual(parsed.komi, ['unknown']);
+    assert.deepEqual(serialized.getAll('komi'), ['unknown']);
+  });
+
   it('ignores and removes legacy tournament-year ranges', () => {
     const legacy = new URLSearchParams('yearMin=2020&yearMax=2022');
     const parsed = parseGameRecordsState(legacy);

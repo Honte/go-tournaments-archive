@@ -1,7 +1,7 @@
 import type { ApiGameInfo } from '@/schema/api';
 import { normalizeRank } from '@/libs/h9';
 import { getRankValue } from '@/libs/rank';
-import { getOrientations, isKnown, type OrientedGame, uniqueKnown, uniqueKomi } from './filters';
+import { formatKomi, getOrientations, isKnown, type OrientedGame, uniqueKnown, uniqueKomi } from './filters';
 import {
   DEFAULT_GAME_RECORDS_STATE,
   GAME_GROUPS,
@@ -29,7 +29,7 @@ export function normalizeGameRecordsState(
   const countries = getCountries(games);
   const categories = getCategories(games);
   const years = new Set(games.map((game) => game.tournament));
-  const komiValues = new Set(games.flatMap((game) => (game.komi === undefined ? [] : [formatKomi(game.komi)])));
+  const komiValues = new Set(games.map((game) => formatKomi(game.komi)));
   const countriesEnabled = options.countriesEnabled ?? true;
   const categoriesEnabled = options.categoriesEnabled ?? true;
   const state: GameRecordsState = {
@@ -183,8 +183,4 @@ function normalizeRankRange(
 
 function uniqueNumbers(values: readonly number[]) {
   return [...new Set(values.filter((value) => Number.isInteger(value) && value >= 0))];
-}
-
-function formatKomi(komi: number) {
-  return Number.isInteger(komi) ? String(komi) : String(komi).replace(/\.0+$/, '');
 }

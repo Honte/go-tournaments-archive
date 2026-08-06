@@ -39,6 +39,7 @@ export function buildGameRecordsModel(
       categoriesEnabled,
       countryLabel,
       categoryLabel,
+      unknownKomiLabel: options.unknownKomiLabel ?? 'Unknown',
     }),
     domains: getGameRecordsDomains(games),
     grouping,

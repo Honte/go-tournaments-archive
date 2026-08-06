@@ -115,6 +115,26 @@ describe('game facets', () => {
     assert.equal(buildGameRecordsModel(uniformGames, state()).facets.komi.visible, false);
   });
 
+  it('represents missing komi as a selectable Unknown option', () => {
+    const unknownGame = game('unknown-komi', 2024, player('f', 'Fran', '2d', 'DE'), player('g', 'Gus', '1d', 'PL'), {
+      result: 'B+R',
+      winner: 'black',
+      moves: 120,
+      komi: null,
+    });
+    const model = buildGameRecordsModel([...games, unknownGame], state(), {
+      unknownKomiLabel: 'Unknown',
+    });
+    const selected = buildGameRecordsModel([...games, unknownGame], state({ komi: ['unknown'] }));
+
+    assert.equal(model.facets.komi.options.find((option) => option.value === 'unknown')?.label, 'Unknown');
+    assert.equal(model.facets.komi.options.find((option) => option.value === 'unknown')?.count, 1);
+    assert.deepEqual(
+      selected.games.map((record) => record.sgf),
+      ['unknown-komi.sgf']
+    );
+  });
+
   it('builds self-excluding winner counts for colors and focal roles', () => {
     const model = buildGameRecordsModel(games, state({ player: 'a', winner: 'black' }));
 

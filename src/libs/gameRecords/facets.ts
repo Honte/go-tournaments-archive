@@ -8,6 +8,7 @@ import {
   getOrientations,
   matchesGlobalFilters,
   matchesOrientation,
+  UNKNOWN_KOMI,
   type FacetKey,
   type OrientedGame,
 } from './filters';
@@ -35,6 +36,7 @@ export function buildGameRecordsFacets(
     categoriesEnabled: boolean;
     countryLabel: (country: string) => string;
     categoryLabel: (category: string) => string;
+    unknownKomiLabel: string;
   }
 ) {
   const playerMeta = getPlayerMeta(games);
@@ -56,7 +58,7 @@ export function buildGameRecordsFacets(
     playerColor: buildColorFacetCounts(games, state),
     year: buildYearFacet(games, state),
     result: buildResultFacetCounts(games, state),
-    komi: buildKomiFacet(games, state),
+    komi: buildKomiFacet(games, state, options.unknownKomiLabel),
     winner: buildWinnerFacetCounts(games, state),
     media: buildMediaFacetCounts(games, state),
   };
@@ -194,19 +196,21 @@ function buildResultFacetCounts(games: readonly ApiGameInfo[], state: GameRecord
   ) as Record<GameResultType, number>;
 }
 
-function buildKomiFacet(games: readonly ApiGameInfo[], state: GameRecordsState): GameFacet {
+function buildKomiFacet(games: readonly ApiGameInfo[], state: GameRecordsState, unknownKomiLabel: string): GameFacet {
   const counts = new Map<string, number>();
   for (const match of filterGameRecords(games, { ...state, komi: [] })) {
-    if (match.game.komi !== undefined) {
-      const komi = formatKomi(match.game.komi);
-      counts.set(komi, (counts.get(komi) ?? 0) + 1);
-    }
+    const komi = formatKomi(match.game.komi);
+    counts.set(komi, (counts.get(komi) ?? 0) + 1);
   }
   const values = new Set([...counts.keys(), ...state.komi]);
   return {
-    visible: new Set(games.map((game) => game.komi)).size > 1,
+    visible: new Set(games.map((game) => formatKomi(game.komi))).size > 1,
     options: [...values]
-      .map((value) => ({ value, label: value, count: counts.get(value) ?? 0 }))
+      .map((value) => ({
+        value,
+        label: value === UNKNOWN_KOMI ? unknownKomiLabel : value,
+        count: counts.get(value) ?? 0,
+      }))
       .toSorted((a, b) => compareKomi(a.value, b.value)),
   };
 }

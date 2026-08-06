@@ -128,6 +128,7 @@ export type GameRecordsOptions = {
   categoriesEnabled?: boolean;
   countryLabel?: (country: string) => string;
   categoryLabel?: (category: string) => string;
+  unknownKomiLabel?: string;
   unknownCountryLabel?: string;
 };
 

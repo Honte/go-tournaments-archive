@@ -6,6 +6,7 @@ import { type GameRecordsState, type GameResultType, type PlayerColor } from './
 
 export type OrientedGame = { game: ApiGameInfo; player: Player; opponent: Player; playerColor: PlayerColor };
 export type FacetKey = 'player' | 'country' | 'opponent' | 'opponentCountry' | 'playerColor';
+export const UNKNOWN_KOMI = 'unknown';
 
 export function filterGameRecords(games: readonly ApiGameInfo[], state: GameRecordsState): OrientedGame[] {
   const matches: OrientedGame[] = [];
@@ -69,7 +70,7 @@ export function matchesGlobalFilters(game: ApiGameInfo, state: GameRecordsState)
     return false;
   }
 
-  if (state.komi.length && (game.komi === undefined || !state.komi.includes(formatKomi(game.komi)))) {
+  if (state.komi.length && !state.komi.includes(formatKomi(game.komi))) {
     return false;
   }
 
@@ -141,11 +142,22 @@ export function matchesOrientation(orientation: OrientedGame, state: GameRecords
   );
 }
 
-export function formatKomi(komi: number) {
+export function formatKomi(komi: number | null | undefined) {
+  if (komi === null || komi === undefined || !Number.isFinite(komi)) {
+    return UNKNOWN_KOMI;
+  }
+
   return Number.isInteger(komi) ? String(komi) : String(komi).replace(/\.0+$/, '');
 }
 
 export function compareKomi(left: string, right: string) {
+  if (left === UNKNOWN_KOMI) {
+    return right === UNKNOWN_KOMI ? 0 : -1;
+  }
+  if (right === UNKNOWN_KOMI) {
+    return 1;
+  }
+
   return Number(left) - Number(right);
 }
 
@@ -158,7 +170,17 @@ export function isKnown<T extends string>(value: string | null | undefined, valu
 }
 
 export function uniqueKomi(values: readonly string[]) {
-  return [...new Set(values.map(Number).filter(Number.isFinite).map(formatKomi))];
+  return [
+    ...new Set(
+      values
+        .map((value) => {
+          const normalized = value.trim().toLowerCase();
+          return normalized === UNKNOWN_KOMI || normalized === 'null' ? UNKNOWN_KOMI : Number(value);
+        })
+        .filter((value): value is number | typeof UNKNOWN_KOMI => value === UNKNOWN_KOMI || Number.isFinite(value))
+        .map((value) => (value === UNKNOWN_KOMI ? value : formatKomi(value)))
+    ),
+  ];
 }
 
 function matchesRank(rank: string | undefined, minimum?: string, maximum?: string) {

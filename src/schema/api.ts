@@ -6,7 +6,7 @@ export type ApiGameInfo = Omit<GameProps, 'sgf'> & {
   tournament: number;
   stage: number;
   moves: number;
-  komi?: number;
+  komi?: number | null;
   stageName?: LocalizedString;
   stageType?: Stage['type'];
   category?: string;
