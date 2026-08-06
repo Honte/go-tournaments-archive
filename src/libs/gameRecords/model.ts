@@ -1,23 +1,23 @@
 import type { ApiGameInfo } from '@/schema/api';
 import { isDrawResult } from '@/libs/games';
-import { buildGameBrowserFacets, getGameBrowserDomains } from './facets';
+import { buildGameRecordsFacets, getGameRecordsDomains } from './facets';
 import { filterGameRecords } from './filters';
 import { getPlayerMeta, groupGameRecords } from './grouping';
-import type { GameBrowserModel, GameBrowserOptions, GameRecordsState } from './schema';
+import type { GameRecordsModel, GameRecordsOptions, GameRecordsState } from './schema';
 import { sortGameRecords } from './sorting';
-import { getCategories, getGameGroupEligibility, groupingForState, normalizeGameBrowserState } from './state';
+import { getCategories, getGameGroupEligibility, groupingForState, normalizeGameRecordsState } from './state';
 
-export function deriveGameBrowserModel(
+export function deriveGameRecordsModel(
   games: readonly ApiGameInfo[],
   requestedState: GameRecordsState,
-  options: GameBrowserOptions = {}
-): GameBrowserModel {
+  options: GameRecordsOptions = {}
+): GameRecordsModel {
   const countriesEnabled = options.countriesEnabled ?? true;
   const categoriesEnabled = options.categoriesEnabled ?? true;
   const countryLabel = options.countryLabel ?? ((country: string) => country);
   const categoryLabel = options.categoryLabel ?? ((category: string) => category);
   const hasCategories = categoriesEnabled && Boolean(getCategories(games).size);
-  const state = normalizeGameBrowserState(games, requestedState, { countriesEnabled, categoriesEnabled });
+  const state = normalizeGameRecordsState(games, requestedState, { countriesEnabled, categoriesEnabled });
   const grouping = getGameGroupEligibility(state, countriesEnabled, hasCategories);
   const normalizedState = groupingForState(state, grouping);
   const matches = sortGameRecords(filterGameRecords(games, normalizedState), normalizedState.sort);
@@ -35,13 +35,13 @@ export function deriveGameBrowserModel(
       unknownCountryLabel: options.unknownCountryLabel ?? '?',
       locale: options.locale,
     }),
-    facets: buildGameBrowserFacets(games, normalizedState, {
+    facets: buildGameRecordsFacets(games, normalizedState, {
       countriesEnabled,
       categoriesEnabled,
       countryLabel,
       categoryLabel,
     }),
-    domains: getGameBrowserDomains(games),
+    domains: getGameRecordsDomains(games),
     grouping,
   };
 }

@@ -1,4 +1,4 @@
-import { DEFAULT_GAME_BROWSER_STATE, type GameRecordsState } from '@/libs/gameRecords/schema';
+import { DEFAULT_GAME_RECORDS_STATE, type GameRecordsState } from '@/libs/gameRecords/schema';
 
 export function getActiveGameFilterCount(state: GameRecordsState) {
   return [
@@ -16,7 +16,7 @@ export function getActiveGameFilterCount(state: GameRecordsState) {
     state.komi.length > 0,
     state.winner,
     state.media.length > 0,
-    state.sort !== DEFAULT_GAME_BROWSER_STATE.sort,
-    state.group !== DEFAULT_GAME_BROWSER_STATE.group,
+    state.sort !== DEFAULT_GAME_RECORDS_STATE.sort,
+    state.group !== DEFAULT_GAME_RECORDS_STATE.group,
   ].filter(Boolean).length;
 }

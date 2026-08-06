@@ -20,7 +20,7 @@ import {
   YearFacet,
 } from '@/components/gameRecords/facets';
 import type { GameFacetProps } from '@/components/gameRecords/facets/types';
-import { GameBrowserToolbar } from '@/components/gameRecords/GameBrowserToolbar';
+import { GameRecordsToolbar } from '@/components/gameRecords/GameRecordsToolbar';
 
 const columnClassName = 'min-w-0 space-y-4';
 const FILTER_PANEL_ID = 'game-record-filters';
@@ -36,7 +36,7 @@ export function GameFiltersPanel({ store, t }: GameFacetProps) {
           <PlayerFacet store={store} t={t} />
           <SortFacet store={store} t={t} />
           <GroupFacet store={store} t={t} />
-          <GameBrowserToolbar store={store} t={t} className="sm:col-span-3 xl:col-span-1" />
+          <GameRecordsToolbar store={store} t={t} className="sm:col-span-3 xl:col-span-1" />
         </div>
       )}
 
@@ -94,7 +94,7 @@ export function GameFiltersPanel({ store, t }: GameFacetProps) {
         <div className="mt-4 flex max-sm:flex-col flex-wrap gap-4 border-t border-event-soft pt-4">
           <SortFacet store={store} t={t} />
           <GroupFacet store={store} t={t} />
-          <GameBrowserToolbar store={store} t={t} />
+          <GameRecordsToolbar store={store} t={t} />
         </div>
       )}
     </section>

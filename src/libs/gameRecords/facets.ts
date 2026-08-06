@@ -13,12 +13,12 @@ import {
 } from './filters';
 import { getPlayerMeta } from './grouping';
 import {
-  DEFAULT_GAME_BROWSER_STATE,
+  DEFAULT_GAME_RECORDS_STATE,
   GAME_MEDIA,
   GAME_RESULT_TYPES,
   GAME_WINNERS,
   PLAYER_COLORS,
-  type GameBrowserDomains,
+  type GameRecordsDomains,
   type GameRecordsState,
   type GameFacet,
   type GameMedia,
@@ -27,7 +27,7 @@ import {
   type PlayerColor,
 } from './schema';
 
-export function buildGameBrowserFacets(
+export function buildGameRecordsFacets(
   games: readonly ApiGameInfo[],
   state: GameRecordsState,
   options: {
@@ -62,7 +62,7 @@ export function buildGameBrowserFacets(
   };
 }
 
-export function getGameBrowserDomains(games: readonly ApiGameInfo[]): GameBrowserDomains {
+export function getGameRecordsDomains(games: readonly ApiGameInfo[]): GameRecordsDomains {
   const ranks = new Set<string>();
   for (const game of games) {
     for (const rank of [game.black.rank, game.white.rank]) {
@@ -226,7 +226,7 @@ function buildColorFacetCounts(games: readonly ApiGameInfo[], state: GameRecords
 
 function getGameFacetContext(state: GameRecordsState): GameRecordsState {
   return {
-    ...DEFAULT_GAME_BROWSER_STATE,
+    ...DEFAULT_GAME_RECORDS_STATE,
     player: state.player,
     country: state.country,
     opponent: state.opponent,

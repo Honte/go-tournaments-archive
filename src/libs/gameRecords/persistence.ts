@@ -1,7 +1,7 @@
 import { persist, type StorageValue } from 'zustand/middleware';
 import { createStore, type StoreApi } from 'zustand/vanilla';
-import { deriveGameBrowserModel } from './model';
-import { DEFAULT_GAME_BROWSER_STATE, type GameRecordsState } from './schema';
+import { deriveGameRecordsModel } from './model';
+import { DEFAULT_GAME_RECORDS_STATE, type GameRecordsState } from './schema';
 import { createGameRecordsStoreState, type GameRecordsStore, type GameRecordsStoreConfig } from './store';
 import { parseGameRecordsState, serializeGameRecordsState } from './urlState';
 
@@ -51,7 +51,7 @@ export function createGameRecordsStore(config: GameRecordsStoreConfig): GameReco
           }
 
           const current = new URLSearchParams(window.location.search);
-          const next = serializeGameRecordsState(DEFAULT_GAME_BROWSER_STATE, current);
+          const next = serializeGameRecordsState(DEFAULT_GAME_RECORDS_STATE, current);
 
           if (next.toString() !== current.toString()) {
             updateBrowserUrl(next, 'replace');
@@ -61,7 +61,7 @@ export function createGameRecordsStore(config: GameRecordsStoreConfig): GameReco
       partialize: (state) => state.model.state,
       merge: (persistedState, currentState) => ({
         ...currentState,
-        model: deriveGameBrowserModel(config.games, persistedState as GameRecordsState, config.options),
+        model: deriveGameRecordsModel(config.games, persistedState as GameRecordsState, config.options),
       }),
       version: GAME_RECORDS_STORAGE_VERSION,
       onRehydrateStorage: () => (_state, error) => {

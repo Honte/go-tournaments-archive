@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { DEFAULT_GAME_BROWSER_STATE, parseGameRecordsState, serializeGameRecordsState } from '@/libs/gameRecords';
+import { DEFAULT_GAME_RECORDS_STATE, parseGameRecordsState, serializeGameRecordsState } from '@/libs/gameRecords';
 
 describe('game browser URL state', () => {
   it('round-trips canonical state and preserves unrelated query parameters', () => {
@@ -48,8 +48,8 @@ describe('game browser URL state', () => {
 
     assert.deepEqual(parsed.results, []);
     assert.deepEqual(parsed.media, []);
-    assert.equal(parsed.sort, DEFAULT_GAME_BROWSER_STATE.sort);
-    assert.equal(parsed.group, DEFAULT_GAME_BROWSER_STATE.group);
+    assert.equal(parsed.sort, DEFAULT_GAME_RECORDS_STATE.sort);
+    assert.equal(parsed.group, DEFAULT_GAME_RECORDS_STATE.group);
     assert.equal(parsed.winner, undefined);
   });
 

@@ -1,7 +1,7 @@
 import { normalizeRank } from '@/libs/h9';
 import { compareKomi, isKnown, uniqueKnown, uniqueKomi } from './filters';
 import {
-  DEFAULT_GAME_BROWSER_STATE,
+  DEFAULT_GAME_RECORDS_STATE,
   GAME_GROUPS,
   GAME_MEDIA,
   GAME_RESULT_TYPES,
@@ -41,8 +41,8 @@ export function parseGameRecordsState(params: SearchParamsReader): GameRecordsSt
     komi,
     winner: isKnown(winner, GAME_WINNERS) ? winner : undefined,
     media,
-    sort: isKnown(sort, GAME_SORTS) ? sort : DEFAULT_GAME_BROWSER_STATE.sort,
-    group: isKnown(group, GAME_GROUPS) ? group : DEFAULT_GAME_BROWSER_STATE.group,
+    sort: isKnown(sort, GAME_SORTS) ? sort : DEFAULT_GAME_RECORDS_STATE.sort,
+    group: isKnown(group, GAME_GROUPS) ? group : DEFAULT_GAME_RECORDS_STATE.group,
   };
 }
 
@@ -91,11 +91,11 @@ export function serializeGameRecordsState(state: GameRecordsState, source: URLSe
     }
   }
 
-  if (state.sort !== DEFAULT_GAME_BROWSER_STATE.sort) {
+  if (state.sort !== DEFAULT_GAME_RECORDS_STATE.sort) {
     params.set('sort', state.sort);
   }
 
-  if (state.group !== DEFAULT_GAME_BROWSER_STATE.group) {
+  if (state.group !== DEFAULT_GAME_RECORDS_STATE.group) {
     params.set('group', state.group);
   }
 

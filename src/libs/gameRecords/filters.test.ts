@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { filterGameRecords, getGameResultType } from './filters';
-import { deriveGameBrowserModel } from './model';
+import { deriveGameRecordsModel } from './model';
 import { createGames, game, player, state } from './testFixtures';
 
 describe('game result and rank normalization', () => {
@@ -61,13 +61,13 @@ describe('game filtering', () => {
   });
 
   it('distinguishes global, player-relative, and country-relative winner values', () => {
-    const blackWins = deriveGameBrowserModel(games, state({ winner: 'black' }));
-    const whiteWins = deriveGameBrowserModel(games, state({ winner: 'white' }));
-    const aliceWins = deriveGameBrowserModel(games, state({ player: 'a', winner: 'player' }));
-    const opponentsBeatBob = deriveGameBrowserModel(games, state({ player: 'b', winner: 'player-opponent' }));
-    const polishPlayersWin = deriveGameBrowserModel(games, state({ country: 'PL', winner: 'country' }));
-    const polishOpponentsWin = deriveGameBrowserModel(games, state({ country: 'PL', winner: 'country-opponent' }));
-    const invalidFocalWinner = deriveGameBrowserModel(games, state({ winner: 'player' }));
+    const blackWins = deriveGameRecordsModel(games, state({ winner: 'black' }));
+    const whiteWins = deriveGameRecordsModel(games, state({ winner: 'white' }));
+    const aliceWins = deriveGameRecordsModel(games, state({ player: 'a', winner: 'player' }));
+    const opponentsBeatBob = deriveGameRecordsModel(games, state({ player: 'b', winner: 'player-opponent' }));
+    const polishPlayersWin = deriveGameRecordsModel(games, state({ country: 'PL', winner: 'country' }));
+    const polishOpponentsWin = deriveGameRecordsModel(games, state({ country: 'PL', winner: 'country-opponent' }));
+    const invalidFocalWinner = deriveGameRecordsModel(games, state({ winner: 'player' }));
 
     assert.deepEqual(
       blackWins.games.map((game) => game.sgf),
@@ -102,7 +102,7 @@ describe('game filtering', () => {
       result: 'jigo',
       moves: 180,
     });
-    const model = deriveGameBrowserModel([...games, drawGame], state({ winner: 'jigo' }));
+    const model = deriveGameRecordsModel([...games, drawGame], state({ winner: 'jigo' }));
 
     assert.deepEqual(
       model.games.map((game) => game.sgf),
@@ -110,11 +110,11 @@ describe('game filtering', () => {
     );
     assert.equal(model.facets.winner.jigo, 1);
     assert.equal(model.hasJigo, true);
-    assert.equal(deriveGameBrowserModel(games, state()).hasJigo, false);
+    assert.equal(deriveGameRecordsModel(games, state()).hasJigo, false);
   });
 
   it('matches non-contiguous tournament-year selections exactly', () => {
-    const model = deriveGameBrowserModel(games, state({ years: [2020, 2023] }));
+    const model = deriveGameRecordsModel(games, state({ years: [2020, 2023] }));
 
     assert.deepEqual(
       model.games.map((game) => game.sgf),

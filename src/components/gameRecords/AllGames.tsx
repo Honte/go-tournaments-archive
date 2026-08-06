@@ -6,7 +6,7 @@ import type { ApiGameInfo } from '@/schema/api';
 import type { EventContext } from '@/schema/event';
 import type { Locale, Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
-import type { GameBrowserOptions } from '@/libs/gameRecords';
+import type { GameRecordsOptions } from '@/libs/gameRecords';
 import { GameFiltersPanel } from '@/components/gameRecords/GameFiltersPanel';
 import { useGameRecordsStore } from '@/components/gameRecords/useGameRecordsStore';
 import { VirtualGameRecordGrid, type GameRecordGroup } from '@/components/gameRecords/VirtualGameRecordGrid';
@@ -45,7 +45,7 @@ export function AllGames({ event, locale }: AllGamesProps) {
 function AllGamesContent({ event, games, translations }: AllGamesContentProps) {
   const t = getTranslator(translations);
 
-  const modelOptions = useMemo<GameBrowserOptions>(() => {
+  const modelOptions = useMemo<GameRecordsOptions>(() => {
     const translate = getTranslator(translations);
     return {
       countriesEnabled: event.showCountry,

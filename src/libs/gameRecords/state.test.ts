@@ -1,18 +1,18 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { deriveGameBrowserModel } from './model';
-import { getGameGroupEligibility, normalizeGameBrowserState } from './state';
+import { deriveGameRecordsModel } from './model';
+import { getGameGroupEligibility, normalizeGameRecordsState } from './state';
 import { createGames, state } from './testFixtures';
 
 describe('dependent normalization, sorting, and grouping', () => {
   const games = createGames();
 
   it('clears structurally invalid dependents but keeps a valid country-anchored opponent country', () => {
-    const invalid = normalizeGameBrowserState(
+    const invalid = normalizeGameRecordsState(
       games,
       state({ player: 'a', country: 'FR', opponent: 'e', opponentCountry: 'PL' })
     );
-    const countryAnchored = normalizeGameBrowserState(
+    const countryAnchored = normalizeGameRecordsState(
       games,
       state({ country: 'PL', opponent: 'b', opponentCountry: 'DE' })
     );
@@ -26,8 +26,8 @@ describe('dependent normalization, sorting, and grouping', () => {
   });
 
   it('sorts stably by moves and by contiguous rank gap', () => {
-    const byMoves = deriveGameBrowserModel(games, state({ sort: 'moves-desc' }));
-    const byGap = deriveGameBrowserModel(games, state({ sort: 'rank-gap-asc' }));
+    const byMoves = deriveGameRecordsModel(games, state({ sort: 'moves-desc' }));
+    const byGap = deriveGameRecordsModel(games, state({ sort: 'rank-gap-asc' }));
 
     assert.deepEqual(
       byMoves.games.map((game) => game.sgf),
@@ -59,11 +59,11 @@ describe('dependent normalization, sorting, and grouping', () => {
       category: false,
     });
 
-    const byOpponent = deriveGameBrowserModel(games, state({ player: 'a', group: 'opponent-player' }));
-    const byCountry = deriveGameBrowserModel(games, state({ country: 'PL', group: 'opponent-country' }));
-    const byCountryPlayer = deriveGameBrowserModel(games, state({ country: 'PL', group: 'country-player' }));
-    const byYear = deriveGameBrowserModel(games, state({ group: 'year' }));
-    const invalidGroup = deriveGameBrowserModel(games, state({ player: 'a', opponent: 'b', group: 'opponent-player' }));
+    const byOpponent = deriveGameRecordsModel(games, state({ player: 'a', group: 'opponent-player' }));
+    const byCountry = deriveGameRecordsModel(games, state({ country: 'PL', group: 'opponent-country' }));
+    const byCountryPlayer = deriveGameRecordsModel(games, state({ country: 'PL', group: 'country-player' }));
+    const byYear = deriveGameRecordsModel(games, state({ group: 'year' }));
+    const invalidGroup = deriveGameRecordsModel(games, state({ player: 'a', opponent: 'b', group: 'opponent-player' }));
 
     assert.deepEqual(
       byOpponent.groups.map((group) => [group.label, group.games.length]),
@@ -99,7 +99,7 @@ describe('dependent normalization, sorting, and grouping', () => {
       ...record,
       category: index % 2 === 0 ? 'junior' : 'open',
     }));
-    const model = deriveGameBrowserModel(categorized, state({ group: 'category' }), {
+    const model = deriveGameRecordsModel(categorized, state({ group: 'category' }), {
       categoriesEnabled: true,
       categoryLabel: (category) => category.toUpperCase(),
     });
@@ -119,7 +119,7 @@ describe('dependent normalization, sorting, and grouping', () => {
       ...record,
       category: index % 2 === 0 ? 'junior' : 'open',
     }));
-    const model = deriveGameBrowserModel(categorized, state({ category: 'junior', group: 'category' }), {
+    const model = deriveGameRecordsModel(categorized, state({ category: 'junior', group: 'category' }), {
       categoriesEnabled: true,
     });
 

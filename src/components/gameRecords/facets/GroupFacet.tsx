@@ -2,7 +2,7 @@
 
 import { useStore } from 'zustand';
 import type { Translator } from '@/i18n/consts';
-import type { GameBrowserModel, GameGroup } from '@/libs/gameRecords';
+import type { GameRecordsModel, GameGroup } from '@/libs/gameRecords';
 import { FacetSelect } from '@/components/ui/FacetSelect';
 import type { GameFacetProps } from './types';
 
@@ -27,7 +27,7 @@ export function GroupFacet({ store, t }: GameFacetProps) {
   );
 }
 
-function getGroupOptions(t: Translator, grouping: GameBrowserModel['grouping']): { value: GameGroup; label: string }[] {
+function getGroupOptions(t: Translator, grouping: GameRecordsModel['grouping']): { value: GameGroup; label: string }[] {
   return [
     { value: 'none', label: t('gamesFilter.noGrouping') },
     { value: 'year', label: t('gamesFilter.groupYear') },

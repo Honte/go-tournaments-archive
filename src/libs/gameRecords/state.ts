@@ -3,7 +3,7 @@ import { normalizeRank } from '@/libs/h9';
 import { getRankValue } from '@/libs/rank';
 import { getOrientations, isKnown, type OrientedGame, uniqueKnown, uniqueKomi } from './filters';
 import {
-  DEFAULT_GAME_BROWSER_STATE,
+  DEFAULT_GAME_RECORDS_STATE,
   GAME_GROUPS,
   GAME_MEDIA,
   GAME_RESULT_TYPES,
@@ -20,7 +20,7 @@ export type GameGroupEligibility = {
   category: boolean;
 };
 
-export function normalizeGameBrowserState(
+export function normalizeGameRecordsState(
   games: readonly ApiGameInfo[],
   requested: GameRecordsState,
   options: { countriesEnabled?: boolean; categoriesEnabled?: boolean } = {}
@@ -39,8 +39,8 @@ export function normalizeGameBrowserState(
     media: uniqueKnown(requested.media, GAME_MEDIA),
     winner: isKnown(requested.winner, GAME_WINNERS) ? requested.winner : undefined,
     playerColor: isKnown(requested.playerColor, PLAYER_COLORS) ? requested.playerColor : undefined,
-    sort: isKnown(requested.sort, GAME_SORTS) ? requested.sort : DEFAULT_GAME_BROWSER_STATE.sort,
-    group: isKnown(requested.group, GAME_GROUPS) ? requested.group : DEFAULT_GAME_BROWSER_STATE.group,
+    sort: isKnown(requested.sort, GAME_SORTS) ? requested.sort : DEFAULT_GAME_RECORDS_STATE.sort,
+    group: isKnown(requested.group, GAME_GROUPS) ? requested.group : DEFAULT_GAME_RECORDS_STATE.group,
     years: uniqueNumbers(requested.years)
       .filter((year) => years.has(year))
       .toSorted((a, b) => b - a),

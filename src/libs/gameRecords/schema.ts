@@ -85,7 +85,7 @@ export type GameRecordsState = {
   group: GameGroup;
 };
 
-export const DEFAULT_GAME_BROWSER_STATE: GameRecordsState = {
+export const DEFAULT_GAME_RECORDS_STATE: GameRecordsState = {
   years: [],
   results: [],
   komi: [],
@@ -96,16 +96,16 @@ export const DEFAULT_GAME_BROWSER_STATE: GameRecordsState = {
 
 export type GameFacetOption = { value: string; label: string; count: number; search?: string };
 export type GameFacet = { visible: boolean; options: GameFacetOption[] };
-export type GameBrowserGroupResult = { key: string; label?: string; games: ApiGameInfo[] };
-export type GameBrowserDomains = { ranks: string[]; years: number[]; movesMin?: number; movesMax?: number };
+export type GameRecordsGroupResult = { key: string; label?: string; games: ApiGameInfo[] };
+export type GameRecordsDomains = { ranks: string[]; years: number[]; movesMin?: number; movesMax?: number };
 
-export type GameBrowserModel = {
+export type GameRecordsModel = {
   state: GameRecordsState;
   totalCount: number;
   filteredCount: number;
   hasJigo: boolean;
   games: ApiGameInfo[];
-  groups: GameBrowserGroupResult[];
+  groups: GameRecordsGroupResult[];
   facets: {
     player: GameFacet;
     country: GameFacet;
@@ -119,11 +119,11 @@ export type GameBrowserModel = {
     winner: Record<GameWinner, number>;
     media: Record<GameMedia, number>;
   };
-  domains: GameBrowserDomains;
+  domains: GameRecordsDomains;
   grouping: { opponentPlayer: boolean; opponentCountry: boolean; countryPlayer: boolean; category: boolean };
 };
 
-export type GameBrowserOptions = {
+export type GameRecordsOptions = {
   countriesEnabled?: boolean;
   categoriesEnabled?: boolean;
   countryLabel?: (country: string) => string;

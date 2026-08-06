@@ -3,16 +3,16 @@
 import { clsx } from 'clsx';
 import { useStore } from 'zustand';
 import type { Translator } from '@/i18n/consts';
-import { DEFAULT_GAME_BROWSER_STATE, type GameRecordsStoreApi, getActiveGameFilterCount } from '@/libs/gameRecords';
+import { DEFAULT_GAME_RECORDS_STATE, type GameRecordsStoreApi, getActiveGameFilterCount } from '@/libs/gameRecords';
 import { Button } from '@/components/ui/Button';
 
-type GameBrowserToolbarProps = {
+type GameRecordsToolbarProps = {
   store: GameRecordsStoreApi;
   t: Translator;
   className?: string;
 };
 
-export function GameBrowserToolbar({ store, className, t }: GameBrowserToolbarProps) {
+export function GameRecordsToolbar({ store, className, t }: GameRecordsToolbarProps) {
   const clearFilters = useStore(store, (storeState) => storeState.clearFilters);
   const expanded = useStore(store, (storeState) => storeState.expanded);
   const setExpanded = useStore(store, (storeState) => storeState.setExpanded);
@@ -23,8 +23,8 @@ export function GameBrowserToolbar({ store, className, t }: GameBrowserToolbarPr
     activeCount -
     [
       state.player,
-      state.sort !== DEFAULT_GAME_BROWSER_STATE.sort,
-      state.group !== DEFAULT_GAME_BROWSER_STATE.group,
+      state.sort !== DEFAULT_GAME_RECORDS_STATE.sort,
+      state.group !== DEFAULT_GAME_RECORDS_STATE.group,
     ].filter(Boolean).length;
 
   const disclosureLabel = `${t(expanded ? 'gamesFilter.showLess' : 'gamesFilter.showMore')}${
