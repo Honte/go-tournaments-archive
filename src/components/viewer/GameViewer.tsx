@@ -1,10 +1,11 @@
 'use client';
 
 import dynamic from 'next/dynamic';
-import { useCallback, useEffect, useState } from 'react';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
-import { SHOW_GAME_VIEWER_EVENT } from '@/components/viewer/utils';
+import { canNavigateBackTo, navigateBack, updateNavigationUrl } from '@/libs/navigation';
+import { getGameViewerSearch } from '@/components/viewer/utils';
+import { useNavigationSearchParams } from '@/hooks/useNavigation';
 
 const GameViewerDialog = dynamic(
   () => import('@/components/viewer/GameViewerModal').then((mod) => mod.GameViewerModal),
@@ -19,21 +20,22 @@ type GameViewerProps = {
 };
 
 export function GameViewer({ event, translations }: GameViewerProps) {
-  const [sgfPath, setSgfPath] = useState<string | null>(null);
-  const close = useCallback(() => setSgfPath(null), []);
-
-  useEffect(() => {
-    document.addEventListener(SHOW_GAME_VIEWER_EVENT, showListener);
-    return () => document.removeEventListener(SHOW_GAME_VIEWER_EVENT, showListener);
-
-    function showListener(event: Event) {
-      setSgfPath((event as CustomEvent).detail);
-    }
-  }, []);
+  const search = useNavigationSearchParams();
+  const sgfPath = search.get('sgf');
 
   if (!sgfPath) {
     return null;
   }
+
+  const close = () => {
+    const closedSearch = getGameViewerSearch(search, null);
+
+    if (canNavigateBackTo(closedSearch)) {
+      navigateBack();
+    } else {
+      updateNavigationUrl(closedSearch, 'push');
+    }
+  };
 
   return <GameViewerDialog event={event} sgfPath={sgfPath} translations={translations} onClose={close} />;
 }

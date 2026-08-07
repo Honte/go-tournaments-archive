@@ -1,8 +1,8 @@
-import Link from 'next/link';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { allPlayersStatsUrl } from '@/libs/urls';
+import { Link } from '@/components/navigation/Link';
 
 type AllPlayersStatsLinkProps = {
   event: EventContext;
@@ -17,7 +17,6 @@ export function AllPlayersStatsLink({ event, translations }: AllPlayersStatsLink
       <Link
         href={allPlayersStatsUrl(event, translations.locale)}
         className="underline underline-offset-2 text-event-primary cursor-pointer hover:text-event-hover"
-        prefetch={false}
       >
         {t('stats.goToAllPlayersStats')}
       </Link>

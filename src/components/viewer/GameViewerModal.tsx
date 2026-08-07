@@ -66,7 +66,7 @@ export function GameViewerModal({ event, sgfPath, translations, onClose }: GameV
               <Loader />
             </div>
           ) : (
-            <GameViewerContent event={event} sgf={data} translations={translations} onClose={onClose} />
+            <GameViewerContent event={event} sgf={data} translations={translations} />
           )}
 
           <footer className="flex shrink-0 items-center justify-between gap-3 border-t border-event-soft px-2 md:px-4 py-2 md:py-3">

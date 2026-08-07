@@ -4,15 +4,21 @@ export function getRankValue(rank?: string) {
   }
 
   const val = parseInt(rank, 10);
+
+  if (isNaN(val)) {
+    return 0;
+  }
+
   const level = rank[rank.length - 1].toLowerCase();
 
   switch (level) {
     case 'p':
-      return val * 10000;
+      return 108 + val;
     case 'd':
-      return val * 100;
+      return 99 + val; // 1-9 dan, 10d equals to 1p
     case 'k':
-    default:
       return 100 - val;
+    default:
+      return 0;
   }
 }

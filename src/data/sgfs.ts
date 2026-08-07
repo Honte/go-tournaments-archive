@@ -93,16 +93,23 @@ export function getTournamentSgfZipPath(sgfPath: string) {
 export function getGameInfo(sgf: Sgf, game: Game, tournament: Tournament): ApiGameInfo {
   const black = tournament.players[game.players[0].id];
   const white = tournament.players[game.players[1].id];
+  const stage = tournament.stages[game.stage];
+  const sgfKomi = sgf.getNumericRootProperty(SgfRootProps.GAME_KOMI);
 
   return {
     ...game.props,
+    sgf: game.props.sgf!,
     tournament: tournament.year,
     stage: game.stage,
+    stageName: tournament.stages.length > 1 ? stage.name : undefined,
+    stageType: tournament.stages.length > 1 ? stage.type : undefined,
+    category: stage?.category,
     black,
     white,
     result: game.result,
     winner: game.players[0].won ? 'black' : game.players[1].won ? 'white' : undefined,
     moves: sgf.getGameBranch().length - 1,
+    komi: Number.isFinite(sgfKomi) ? sgfKomi : stage?.komi,
   };
 }
 

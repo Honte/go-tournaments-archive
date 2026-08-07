@@ -1,0 +1,16 @@
+export { CategoryFacet } from './CategoryFacet';
+export { CountryFacet } from './CountryFacet';
+export { GroupFacet } from './GroupFacet';
+export { KomiFacet } from './KomiFacet';
+export { MediaFacet } from './MediaFacet';
+export { MovesFacet } from './MovesFacet';
+export { OpponentCountryFacet } from './OpponentCountryFacet';
+export { OpponentFacet } from './OpponentFacet';
+export { OpponentRankFacet } from './OpponentRankFacet';
+export { PlayerColorFacet } from './PlayerColorFacet';
+export { PlayerFacet } from './PlayerFacet';
+export { PlayerRankFacet } from './PlayerRankFacet';
+export { ResultFacet } from './ResultFacet';
+export { SortFacet } from './SortFacet';
+export { WinnerFacet } from './WinnerFacet';
+export { YearFacet } from './YearFacet';

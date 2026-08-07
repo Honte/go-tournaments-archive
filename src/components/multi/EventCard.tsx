@@ -1,8 +1,8 @@
-import Link from 'next/link';
 import type { Locale } from '@/i18n/consts';
 import { getString } from '@/i18n/utils';
 import { homeUrl, logoBlackUrl } from '@/libs/urls';
 import type { EventEntry } from '@/components/multi/schema';
+import { Link } from '@/components/navigation/Link';
 
 type EventCardProps = EventEntry & {
   locale: Locale;

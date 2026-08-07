@@ -31,6 +31,8 @@ export function Slider(props: ComponentProps<'input'>) {
         [&::-moz-range-track]:bg-event-soft
         [&::-moz-range-thumb]:appearance-none
         [&::-moz-range-thumb]:size-5
+        [&::-moz-range-thumb]:cursor-grab
+        [&::-moz-range-thumb]:active:cursor-grabbing
         [&::-moz-range-thumb]:rounded-full
         [&::-moz-range-thumb]:border-2
         [&::-moz-range-thumb]:border-event-dark
@@ -40,6 +42,8 @@ export function Slider(props: ComponentProps<'input'>) {
         [&::-webkit-slider-runnable-track]:bg-event-soft
         [&::-webkit-slider-thumb]:-mt-1.75
         [&::-webkit-slider-thumb]:size-5
+        [&::-webkit-slider-thumb]:cursor-grab
+        [&::-webkit-slider-thumb]:active:cursor-grabbing
         [&::-webkit-slider-thumb]:appearance-none
         [&::-webkit-slider-thumb]:[-webkit-appearance:none]
         [&::-webkit-slider-thumb]:rounded-full

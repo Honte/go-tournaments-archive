@@ -1,10 +1,10 @@
 'use client';
 
 import { clsx } from 'clsx';
-import Link from 'next/link';
 import { Fragment, useCallback, useEffect, useState } from 'react';
 import type { EventContext } from '@/schema/event';
 import type { Locale } from '@/i18n/consts';
+import { Link } from '@/components/navigation/Link';
 import { Hamburger } from '@/components/ui/Hamburger';
 import { Overlay } from '@/components/ui/Overlay';
 import { useSitemapData } from '@/hooks/useSitemapData';
@@ -79,7 +79,6 @@ export function SideNavigation({ event, locale, strings }: SideNavigationProps) 
                       <Link
                         href={link.href}
                         title={link.tooltip}
-                        prefetch={false}
                         onClick={closeMenu}
                         className={clsx(
                           'group flex gap-1 items-baseline py-1 px-2 text-event-primary font-semibold underline hover:text-event-hover hover:bg-gray-300 rounded-sm'

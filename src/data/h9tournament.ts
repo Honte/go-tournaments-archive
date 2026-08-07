@@ -318,6 +318,7 @@ export async function loadH9Tournament({
   return {
     type: 'tournament',
     name,
+    category,
     egd:
       (egd ?? tournament.id)
         ? `https://europeangodatabase.eu/EGD/Tournament_Card.php?&key=${tournament.id}`

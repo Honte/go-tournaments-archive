@@ -6,7 +6,7 @@ import { GameResultLabel } from '@/components/GameResultLabel';
 import { Stone } from '@/components/Stone';
 import { PlayerLink } from '@/components/ui/PlayerLink';
 import { PlayerName } from '@/components/ui/PlayerName';
-import { GameViewerButton } from '@/components/viewer/GameViewerTrigger';
+import { GameViewerButton } from '@/components/viewer/GameViewerButton';
 
 type StageFinalProps = {
   event: EventContext;

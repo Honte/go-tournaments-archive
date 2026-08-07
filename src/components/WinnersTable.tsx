@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { LuExternalLink } from 'react-icons/lu';
 import type { Player } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
@@ -6,6 +5,7 @@ import type { LocalizedString, Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
 import { tournamentUrl } from '@/libs/urls';
+import { Link } from '@/components/navigation/Link';
 import { PlayerLink } from '@/components/ui/PlayerLink';
 import { PlayerName } from '@/components/ui/PlayerName';
 
@@ -77,7 +77,6 @@ function TournamentMedalistsRow({
         <Link
           className="sm:text-xl font-bold text-event-primary underline hover:text-event-hover"
           href={tournamentUrl(event, translations.locale, year)}
-          prefetch={false}
         >
           {year}
         </Link>
@@ -124,7 +123,6 @@ function TournamentAnnouncementRow({
         <Link
           className="sm:text-xl font-bold text-current underline hover:text-current"
           href={tournamentUrl(event, translations.locale, year)}
-          prefetch={false}
         >
           {year}
         </Link>

@@ -1,8 +1,8 @@
 import { clsx } from 'clsx';
-import Link from 'next/link';
 import type { ComponentProps, PropsWithChildren } from 'react';
 import type { EventContext } from '@/schema/event';
 import { categoryUrl } from '@/libs/urls';
+import { Link } from '@/components/navigation/Link';
 
 export type CategoryLinkProps = Omit<ComponentProps<typeof Link>, 'href'> &
   PropsWithChildren<{
@@ -16,7 +16,6 @@ export function CategoryLink({ event, category, locale, children, className, ...
     <Link
       href={categoryUrl(event, locale, category)}
       className={clsx('underline underline-offset-2 hover:text-event-hover', className)}
-      prefetch={false}
       {...props}
     >
       {children}
