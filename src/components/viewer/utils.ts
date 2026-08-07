@@ -1,5 +1,3 @@
-import { getNavigationSearch, updateNavigationUrl } from '@/libs/navigation';
-
 export function getGameViewerSearch(search: URLSearchParams, sgfPath: string | null) {
   const next = new URLSearchParams(search);
 
@@ -10,8 +8,4 @@ export function getGameViewerSearch(search: URLSearchParams, sgfPath: string | n
   }
 
   return next;
-}
-
-export function openGameViewer(sgfPath: string) {
-  updateNavigationUrl(getGameViewerSearch(getNavigationSearch(), sgfPath), 'push');
 }

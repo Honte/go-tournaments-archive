@@ -3,7 +3,7 @@ import type { EventContext } from '@/schema/event';
 import type { Translator } from '@/i18n/consts';
 import { gameSgfUrl, rawGameSgfUrl } from '@/libs/urls';
 import { ExternalButton } from '@/components/ui/ExternalButton';
-import { GameViewerButton } from '@/components/viewer/GameViewerTrigger';
+import { GameViewerButton } from '@/components/viewer/GameViewerButton';
 
 type GameActionProps = {
   event: EventContext;

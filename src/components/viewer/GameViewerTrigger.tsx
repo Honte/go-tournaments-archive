@@ -1,42 +1,37 @@
 'use client';
 
 import type { ComponentProps, PropsWithChildren } from 'react';
-import { Button } from '@/components/ui/Button';
-import { openGameViewer } from '@/components/viewer/utils';
+import { Link } from '@/components/navigation/Link';
+import { getGameViewerSearch } from '@/components/viewer/utils';
+import { useSearchParamHref } from '@/hooks/useSearchParamHref';
 
 type GameLinkProps = PropsWithChildren<
-  Omit<ComponentProps<'button'>, 'type' | 'onClick'> & {
+  Omit<ComponentProps<'a'>, 'type' | 'onClick'> & {
     sgfPath: string;
   }
 >;
 
 export function GameViewerTrigger({ sgfPath, children, className, ...props }: GameLinkProps) {
+  const href = useSearchParamHref(getGameViewerSearch, sgfPath);
+
   return (
-    <button
+    <Link
       type="button"
       className={`
-      block cursor-pointer 
-      border-event-dark border-2 rounded-lg 
-      hover:scale-[1.05] transition-transform duration-200 
-      overflow-hidden
-      bg-event-light 
-      focus:border-event-primary focus:scale-[1.05]
-      active:border-event-hover
-      p-0 
-      outline-none ${className ?? ''}
+        block cursor-pointer 
+        border-event-dark border-2 rounded-lg 
+        hover:scale-[1.05] transition-transform duration-200 
+        overflow-hidden
+        bg-event-light 
+        focus:border-event-primary focus:scale-[1.05]
+        active:border-event-hover
+        p-0 
+        outline-none ${className ?? ''}
       `}
-      onClick={() => openGameViewer(sgfPath)}
+      href={href}
       {...props}
     >
       {children}
-    </button>
-  );
-}
-
-export function GameViewerButton({ sgfPath, children, ...props }: GameLinkProps) {
-  return (
-    <Button {...props} onClick={() => openGameViewer(sgfPath)}>
-      {children}
-    </Button>
+    </Link>
   );
 }
