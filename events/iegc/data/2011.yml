@@ -6,7 +6,7 @@ top:
 stages:
   - type: tournament
     file: ie2011.txt
-    name: top8
+    name: Top 8
     notes: John Gibson defaulted first 2 games
     dir: 2011/top8
     promoted: 2

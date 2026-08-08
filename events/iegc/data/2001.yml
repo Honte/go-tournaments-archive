@@ -2,7 +2,7 @@ notes: Dec 2000 -  Sep 2001
 stages:
   - type: tournament
     file: ie2001.txt
-    name: top8
+    name: Top 8
     promoted: 2
     scoringColumns:
       - wins

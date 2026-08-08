@@ -5,7 +5,7 @@ top:
 stages:
   - type: tournament
     file: nl2013.txt
-    name: championship
+    name: Championship
     dir: 2013/nlk
     promoted: 2
     scoringColumns:
@@ -29,7 +29,7 @@ stages:
       - 7-1 1:W+R round:8 sgf:2013/nlk/8-RobertRehm-MerlijnKuin.sgf
   - type: tournament
     file: nl2013playoff.txt
-    name: playoff
+    name: Playoff
     dir: 2013/playoff
     scoringColumns:
       - wins

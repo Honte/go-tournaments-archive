@@ -5,7 +5,7 @@ top:
 stages:
   - type: tournament
     file: nl1998.txt
-    name: championship
+    name: Championship
     dir: 1998/nlk
     promoted: 2
     scoringColumns:
@@ -20,7 +20,7 @@ stages:
     findSharedPlaces: true
   - type: tournament
     file: nl1998playoff.txt
-    name: playoff
+    name: Playoff
     dir: 1998/playoff
     scoringColumns:
       - wins

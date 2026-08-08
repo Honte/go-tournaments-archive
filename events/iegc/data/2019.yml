@@ -6,7 +6,7 @@ top:
 stages:
   - type: tournament
     file: ie2019.txt
-    name: top8
+    name: Top 8
     notes: some games were unplayed and considered void, additional playoff 2-3
     dir: 2019/top8
     promoted: 2

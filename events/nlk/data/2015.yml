@@ -5,7 +5,7 @@ top:
 stages:
   - type: tournament
     file: nl2015.txt
-    name: championship
+    name: Championship
     dir: 2015/nlk
     notes: additional playoff for places 9-14 (Eerbeek-Kuper 1-0, Verhagen-Jong 1-0, Cornelissen-Aaij 1-0)
     promoted: 2
@@ -34,7 +34,7 @@ stages:
       - 13-4 4:W+R round:4 sgf:2015/nlk/4-MerijndeJong-WillemKoenPomstra.sgf
   - type: tournament
     file: nl2015playoff.txt
-    name: playoff
+    name: Playoff
     dir: 2015/playoff
     scoringColumns:
       - wins

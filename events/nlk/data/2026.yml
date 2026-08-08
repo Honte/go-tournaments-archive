@@ -1,6 +1,6 @@
 stages:
   - type: tournament
-    name: championship
+    name: Championship
     file: nl2026.txt
     scoringColumns:
       - mms

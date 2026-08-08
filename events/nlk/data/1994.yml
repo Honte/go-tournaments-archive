@@ -1,6 +1,6 @@
 stages:
   - type: tournament
-    name: championship
+    name: Championship
     file: nl1994.txt
     scoringColumns: 
       - wins          

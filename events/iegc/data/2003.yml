@@ -6,7 +6,7 @@ top:
 stages:
   - type: tournament
     file: ie2003.txt
-    name: top8
+    name: Top 8
     promoted: 2
     notes: Noel Mitchell and Stephen Flinter beat John Gibson in playoff games about who goes to final
     scoringColumns:

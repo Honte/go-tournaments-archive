@@ -5,7 +5,7 @@ top:
 stages:
   - type: tournament
     file: nl1977.txt
-    name: championship
+    name: Championship
     dir: 1977/nlk
     promoted: 2
     notes: Recreated from cross table. Games order can be different.
@@ -18,7 +18,7 @@ stages:
     findSharedPlaces: false
   - type: tournament
     file: nl1977playoff.txt
-    name: playoff
+    name: Playoff
     notes: Exact result of playoff unknown
     dir: 1977/playoff
     scoringColumns:

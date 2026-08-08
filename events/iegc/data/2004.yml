@@ -6,7 +6,7 @@ website: https://www.irish-go.org/national-international/top-8/past-irish-champi
 stages:
   - type: tournament
     file: ie2004.txt
-    name: top8
+    name: Top 8
     promoted: 2
     notes: It was decided not to have a play-off for places 4-6
     scoringColumns:

@@ -1,6 +1,6 @@
 stages:
   - type: tournament
-    name: championship
+    name: Championship
     file: nl1980.txt
     notes: Recreated from cross table. Games order can be different.
     scoringColumns: 

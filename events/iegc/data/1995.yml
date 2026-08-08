@@ -5,7 +5,7 @@ top:
 stages:
   - type: tournament
     file: ie1995.txt
-    name: top8    
+    name: Top 8    
     notes: there were additional games for places 3-5 and 6-7
     scoringColumns:
       - wins

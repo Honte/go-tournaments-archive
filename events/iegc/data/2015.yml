@@ -6,7 +6,7 @@ top:
 stages:
   - type: tournament
     file: ie2015.txt
-    name: top8
+    name: Top 8
     notes: Wins Mitchell vs Kasko, Gibson vs Pszonka and Gibson vs Kasko count as 0.5 points; additional playoff 4-5
     dir: 2015/top8
     promoted: 2

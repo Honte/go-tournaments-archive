@@ -1,6 +1,6 @@
 stages:
   - type: tournament
-    name: championship
+    name: Championship
     file: nl2017.txt
     notes: for SOS 0+ wins are counted as 0.5
     scoringColumns:

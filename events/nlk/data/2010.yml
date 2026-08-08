@@ -5,7 +5,7 @@ top:
 stages:
   - type: tournament
     file: nl2010.txt
-    name: championship
+    name: Championship
     dir: 2010/nlk
     promoted: 2
     scoringColumns:
@@ -49,7 +49,7 @@ stages:
       - 14-6 6:W+R round:6 sgf:2010/nlk/6-AlexanderEerbeek-WillemKoenPomstra.sgf
   - type: tournament
     file: nl2010playoff.txt
-    name: playoff
+    name: Playoff
     dir: 2010/playoff
     scoringColumns:
       - wins

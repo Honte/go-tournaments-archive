@@ -4,7 +4,7 @@ top:
   - pbrouwer
 stages:
   - type: tournament
-    name: championship
+    name: Championship
     dir: 2009/nlk
     promoted: 2
     file: nl2009.txt
@@ -30,7 +30,7 @@ stages:
       - 11-4 4:W+21.5 round:2 sgf:2009/nlk/2-RudiVerhagen-FrankJanssen.sgf
   - type: tournament
     file: nl2009playoff.txt
-    name: playoff
+    name: Playoff
     dir: 2009/playoff
     scoringColumns:
       - wins
