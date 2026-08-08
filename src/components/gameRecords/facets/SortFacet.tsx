@@ -2,14 +2,15 @@
 
 import { useStore } from 'zustand';
 import type { Translator } from '@/i18n/consts';
-import type { GameSort } from '@/libs/gameRecords';
+import type { GameGroup, GameSort } from '@/libs/gameRecords';
 import { FacetSelect } from '@/components/ui/FacetSelect';
 import type { GameFacetProps } from './types';
 
 export function SortFacet({ store, t }: GameFacetProps) {
   const value = useStore(store, (state) => state.model.state.sort);
+  const group = useStore(store, (state) => state.model.state.group);
   const setFilters = useStore(store, (state) => state.setFilters);
-  const options = getSortOptions(t);
+  const options = getSortOptions(t, group);
 
   return (
     <FacetSelect
@@ -26,10 +27,16 @@ export function SortFacet({ store, t }: GameFacetProps) {
   );
 }
 
-function getSortOptions(t: Translator): { value: GameSort; label: string }[] {
+function getSortOptions(t: Translator, group: GameGroup): { value: GameSort; label: string }[] {
   return [
     { value: 'year-desc', label: t('gamesFilter.newest') },
     { value: 'year-asc', label: t('gamesFilter.oldest') },
+    ...(group === 'none'
+      ? []
+      : [
+          { value: 'group-count-desc' as const, label: t('gamesFilter.mostInGroup') },
+          { value: 'group-count-asc' as const, label: t('gamesFilter.fewestInGroup') },
+        ]),
     { value: 'moves-desc', label: t('gamesFilter.mostMoves') },
     { value: 'moves-asc', label: t('gamesFilter.fewestMoves') },
     { value: 'black-rank-desc', label: t('gamesFilter.strongestBlack') },

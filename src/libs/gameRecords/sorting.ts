@@ -3,13 +3,17 @@ import { getRankValue } from '@/libs/rank';
 import type { OrientedGame } from './filters';
 import type { GameSort } from './schema';
 
+type GameCardSort = Exclude<GameSort, 'group-count-desc' | 'group-count-asc'>;
+
 export function sortGameRecords(matches: readonly OrientedGame[], sort: GameSort): OrientedGame[] {
+  const gameSort: GameCardSort = sort === 'group-count-desc' || sort === 'group-count-asc' ? 'year-desc' : sort;
+
   return matches.toSorted(
-    (left, right) => comparePrimary(left.game, right.game, sort) || compareStable(left.game, right.game, sort)
+    (left, right) => comparePrimary(left.game, right.game, gameSort) || compareStable(left.game, right.game, gameSort)
   );
 }
 
-function comparePrimary(left: ApiGameInfo, right: ApiGameInfo, sort: GameSort) {
+function comparePrimary(left: ApiGameInfo, right: ApiGameInfo, sort: GameCardSort) {
   switch (sort) {
     case 'year-desc':
       return right.tournament - left.tournament;
@@ -34,7 +38,7 @@ function comparePrimary(left: ApiGameInfo, right: ApiGameInfo, sort: GameSort) {
   }
 }
 
-function compareStable(left: ApiGameInfo, right: ApiGameInfo, sort: GameSort) {
+function compareStable(left: ApiGameInfo, right: ApiGameInfo, sort: GameCardSort) {
   return (
     (sort === 'year-asc' ? left.tournament - right.tournament : right.tournament - left.tournament) ||
     left.stage - right.stage ||

@@ -209,6 +209,8 @@
     "sort": "Sort by",
     "newest": "Newest tournament",
     "oldest": "Oldest tournament",
+    "mostInGroup": "Most in group",
+    "fewestInGroup": "Fewest in group",
     "mostMoves": "Most moves",
     "fewestMoves": "Fewest moves",
     "strongestBlack": "Strongest Black",

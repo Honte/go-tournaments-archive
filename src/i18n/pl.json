@@ -209,6 +209,8 @@
     "sort": "Sortuj według",
     "newest": "Najnowszy turniej",
     "oldest": "Najstarszy turniej",
+    "mostInGroup": "Najwięcej w grupie",
+    "fewestInGroup": "Najmniej w grupie",
     "mostMoves": "Najwięcej ruchów",
     "fewestMoves": "Najmniej ruchów",
     "strongestBlack": "Najsilniejsze czarne",

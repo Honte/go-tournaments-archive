@@ -39,6 +39,68 @@ describe('dependent normalization, sorting, and grouping', () => {
     );
   });
 
+  it('sorts groups by count and keeps games newest-first within each group', () => {
+    const mostInGroup = buildGameRecordsModel(
+      games,
+      state({ player: 'a', group: 'opponent-player', sort: 'group-count-desc' })
+    );
+    const fewestInGroup = buildGameRecordsModel(
+      games,
+      state({ player: 'a', group: 'opponent-player', sort: 'group-count-asc' })
+    );
+    const tiedGroups = buildGameRecordsModel(
+      games.map((record, index) => ({
+        ...record,
+        category: index % 2 === 0 ? 'junior' : 'open',
+      })),
+      state({ group: 'category', sort: 'group-count-desc' }),
+      {
+        categoriesEnabled: true,
+        categoryLabel: (category) => category.toUpperCase(),
+      }
+    );
+
+    assert.deepEqual(
+      mostInGroup.groups.map((group) => [group.label, group.games.length]),
+      [
+        ['Bob', 2],
+        ['Carol', 1],
+      ]
+    );
+    assert.deepEqual(
+      fewestInGroup.groups.map((group) => [group.label, group.games.length]),
+      [
+        ['Carol', 1],
+        ['Bob', 2],
+      ]
+    );
+    assert.deepEqual(
+      mostInGroup.groups[0].games.map((game) => game.sgf),
+      ['g4.sgf', 'g1.sgf']
+    );
+    assert.deepEqual(
+      mostInGroup.groups.flatMap((group) => group.games).map((game) => game.sgf),
+      ['g4.sgf', 'g1.sgf', 'g2.sgf']
+    );
+    assert.deepEqual(
+      tiedGroups.groups.map((group) => [group.label, group.games.map((game) => game.sgf)]),
+      [
+        ['JUNIOR', ['g3.sgf', 'g1.sgf']],
+        ['OPEN', ['g4.sgf', 'g2.sgf']],
+      ]
+    );
+  });
+
+  it('resets group-count sorting when grouping is disabled', () => {
+    const model = buildGameRecordsModel(games, state({ group: 'none', sort: 'group-count-desc' }));
+
+    assert.equal(model.state.sort, 'year-desc');
+    assert.deepEqual(
+      model.games.map((game) => game.sgf),
+      ['g4.sgf', 'g3.sgf', 'g2.sgf', 'g1.sgf']
+    );
+  });
+
   it('exposes only eligible grouping and groups sorted cards without duplication', () => {
     assert.deepEqual(getGameGroupEligibility(state({ player: 'a' })), {
       opponentPlayer: true,

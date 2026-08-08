@@ -15,6 +15,8 @@ export const PLAYER_COLORS = ['black', 'white'] as const;
 export const GAME_SORTS = [
   'year-desc',
   'year-asc',
+  'group-count-desc',
+  'group-count-asc',
   'moves-desc',
   'moves-asc',
   'black-rank-desc',

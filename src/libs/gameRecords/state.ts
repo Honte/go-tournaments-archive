@@ -127,10 +127,16 @@ export function groupingForState(state: GameRecordsState, eligibility: GameGroup
     (state.group === 'country-player' && !eligibility.countryPlayer) ||
     (state.group === 'category' && !eligibility.category)
   ) {
-    return { ...state, group: 'none' };
+    return normalizeGroupCountSort({ ...state, group: 'none' });
   }
 
-  return state;
+  return normalizeGroupCountSort(state);
+}
+
+function normalizeGroupCountSort(state: GameRecordsState): GameRecordsState {
+  return state.group === 'none' && (state.sort === 'group-count-desc' || state.sort === 'group-count-asc')
+    ? { ...state, sort: DEFAULT_GAME_RECORDS_STATE.sort }
+    : state;
 }
 
 export function getPlayers(games: readonly ApiGameInfo[]) {
