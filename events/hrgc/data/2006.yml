@@ -2,6 +2,7 @@ top:
 - zmutabzija
 - vkuhar
 - msmud
+name: 13th Croatian Championship
 stages:
   - type: tournament
     name:
@@ -16,11 +17,12 @@ stages:
       - sodos
     breakers:
       - wins
-    findSharedPlaces: true
+    findSharedPlaces: false
   - type: tournament
     name:
       pl: Playoff
       en: Playoff
+    notes: for places 3-5  
     file: hr2006playoff3rd.txt
     scoringColumns:
       - null    

@@ -1,3 +1,4 @@
+name: 20th Croatian Championship
 stages:
   - type: tournament
     file: hr2013.txt

@@ -1,3 +1,4 @@
+name: 9th Croatian Championship
 stages:
   - type: tournament
     file: hr2002.txt

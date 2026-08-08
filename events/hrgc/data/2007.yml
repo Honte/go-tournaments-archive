@@ -1,3 +1,4 @@
+name: 14th Croatian Championship
 stages:
   - type: tournament
     file: hr2007.txt

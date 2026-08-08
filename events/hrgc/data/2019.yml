@@ -2,13 +2,16 @@ top:
 - smestrovic
 - ttukara
 - mmedak
+name: 26th Croatian Championship
 stages:
   - type: tournament
     name:
       pl: Kandydaci
       en: Challengers
     file: hr2019.txt
-    komi: 6.5 
+    komi: 6.5
+    placeOffset: 1
+    promoted: 3    
     scoringColumns:
       - mms
       - sos
@@ -22,6 +25,8 @@ stages:
       pl: Playoff
       en: Playoff
     file: hr2019playoff.txt
+    placeOffset: 1
+    promoted: 1
     scoringColumns:
       - wins
       - null

@@ -1,3 +1,4 @@
+name: 16th Croatian Championship
 stages:
   - type: tournament
     file: hr2009.txt

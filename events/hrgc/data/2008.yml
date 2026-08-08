@@ -1,3 +1,4 @@
+name: 15th Croatian Championship
 stages:
   - type: tournament
     file: hr2008.txt

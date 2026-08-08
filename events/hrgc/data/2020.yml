@@ -1,3 +1,4 @@
+name: 27th Croatian Championship
 top:
 - zmutabzija
 - smestrovic
@@ -9,6 +10,8 @@ stages:
       en: Challengers
     file: hr2020.txt
     komi: 6.5 
+    placeOffset: 1
+    promoted: 1
     scoringColumns:
       - wins
       - sodos

@@ -1,3 +1,4 @@
+name: 17th Croatian Championship
 stages:
   - type: tournament
     file: hr2010.txt
