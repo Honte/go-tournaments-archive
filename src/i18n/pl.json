@@ -266,6 +266,7 @@
       "participants": "Uczestników",
       "games": "Gier",
       "draws": "Remisy",
+      "gamesWithColors": "Gier ze znanymi kolorami",
       "black": "% wygranych przez czarne",
       "resigned": "Wygranych przez poddanie",
       "timeout": "Wygranych przez czas",
