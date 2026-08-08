@@ -5,7 +5,7 @@ top:
 stages:
   - type: tournament
     file: nl2010.txt
-    name: championship
+    name: Championship
     dir: 2010/nlk
     promoted: 2
     scoringColumns:
@@ -17,12 +17,46 @@ stages:
       - sos
       - sodos
     findSharedPlaces: true
+    games:
+      - 1-3 3:W+16.5 round:5 sgf:2010/nlk/5-GeertGroenen-EmilNijhuis.sgf
+      - 1-5 1:B+14.5 round:6 sgf:2010/nlk/6-GeertGroenen-MichielEijkhout.sgf
+      - 1-7 1:B+R round:3 sgf:2010/nlk/3-GeertGroenen-RobertRehm.sgf
+      - 1-8 1:B+10.5 round:8 sgf:2010/nlk/8-GeertGroenen-MerlijnKuin.sgf
+      - 1-12 1:B+6.5 round:1 sgf:2010/nlk/1-GeertGroenen-BramKoster.sgf
+      - 2-1 1:W+R round:4 sgf:2010/nlk/4-PeterBrouwer-GeertGroenen.sgf
+      - 2-5 2:B+R round:1 sgf:2010/nlk/1-PeterBrouwer-MichielEijkhout.sgf
+      - 2-8 2:B+17.5 round:3 sgf:2010/nlk/3-PeterBrouwer-MerlijnKuin.sgf
+      - 2-13 2:B+14.5 round:8 sgf:2010/nlk/8-PeterBrouwer-AndreasDrost.sgf
+      - 3-2 2:W+20.5 round:2 sgf:2010/nlk/2-EmilNijhuis-PeterBrouwer.sgf
+      - 3-4 4:W+1.5 round:6 sgf:2010/nlk/6-EmilNijhuis-FilipVanderstappen.sgf
+      - 3-7 3:B+R round:7 sgf:2010/nlk/7-EmilNijhuis-RobertRehm.sgf
+      - 4-2 2:W+5.5 round:7 sgf:2010/nlk/7-FilipVanderstappen-PeterBrouwer.sgf
+      - 5-11 5:B+R round:7 sgf:2010/nlk/7-MichielEijkhout-ReneAaij.sgf
+      - 6-1 1:W+21.5 round:7 sgf:2010/nlk/7-WillemKoenPomstra-GeertGroenen.sgf
+      - 6-2 2:W+1.5 round:5 sgf:2010/nlk/5-WillemKoenPomstra-PeterBrouwer.sgf
+      - 6-3 6:B+17.5 round:8 sgf:2010/nlk/8-WillemKoenPomstra-EmilNijhuis.sgf
+      - 6-4 6:B+? round:4 sgf:2010/nlk/4-WillemKoenPomstra-FilipVanderstappen.sgf
+      - 6-11 6:B+R round:3 sgf:2010/nlk/3-WillemKoenPomstra-ReneAaij.sgf
+      - 7-2 2:W+R round:6 sgf:2010/nlk/6-RobertRehm-PeterBrouwer.sgf
+      - 7-4 7:B+9.5 round:8 sgf:2010/nlk/8-RobertRehm-FilipVanderstappen.sgf
+      - 7-6 7:B+10.5 round:2 sgf:2010/nlk/2-RobertRehm-WillemKoenPomstra.sgf
+      - 7-14 7:B+R round:5 sgf:2010/nlk/5-RobertRehm-AlexanderEerbeek.sgf
+      - 8-3 3:W+0.5 round:4 sgf:2010/nlk/4-MerlijnKuin-EmilNijhuis.sgf
+      - 9-3 3:W+R round:1 sgf:2010/nlk/1-FrankJanssen-EmilNijhuis.sgf
+      - 9-8 9:B+3.5 round:5 sgf:2010/nlk/5-FrankJanssen-MerlijnKuin.sgf
+      - 10-7 7:W+R round:4 sgf:2010/nlk/4-HermanHiddema-RobertRehm.sgf
+      - 11-8 8:W+6.5 round:2 sgf:2010/nlk/2-ReneAaij-MerlijnKuin.sgf
+      - 14-6 6:W+R round:6 sgf:2010/nlk/6-AlexanderEerbeek-WillemKoenPomstra.sgf
   - type: tournament
     file: nl2010playoff.txt
-    name: playoff
+    name: Playoff
     dir: 2010/playoff
     scoringColumns:
       - wins
     breakers:
       - wins
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+11.5 round:1 sgf:2010/playoff/1-GeertGroenen-PeterBrouwer.sgf
+      - 1-2 1:B+R round:3 sgf:2010/playoff/3-GeertGroenen-PeterBrouwer.sgf
+      - 2-1 2:B+R round:2 sgf:2010/playoff/2-PeterBrouwer-GeertGroenen.sgf

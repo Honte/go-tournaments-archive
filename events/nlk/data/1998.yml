@@ -5,7 +5,7 @@ top:
 stages:
   - type: tournament
     file: nl1998.txt
-    name: championship
+    name: Championship
     dir: 1998/nlk
     promoted: 2
     scoringColumns:
@@ -20,10 +20,12 @@ stages:
     findSharedPlaces: true
   - type: tournament
     file: nl1998playoff.txt
-    name: playoff
+    name: Playoff
     dir: 1998/playoff
     scoringColumns:
       - wins
     breakers:
       - wins
     findSharedPlaces: true
+    games:
+      - 2-1 1:W+R round:3 sgf:1998/playoff/3-GillesvanEeden-JuanGuo.sgf

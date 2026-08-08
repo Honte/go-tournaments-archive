@@ -34,8 +34,8 @@ export function GameFiltersPanel({ store, t }: GameFacetProps) {
       {!expanded && (
         <div className="flex flex-col sm:grid sm:grid-cols-3 xl:grid-cols-4 gap-4">
           <PlayerFacet store={store} t={t} />
-          <SortFacet store={store} t={t} />
           <GroupFacet store={store} t={t} />
+          <SortFacet store={store} t={t} />
           <GameRecordsToolbar store={store} t={t} className="sm:col-span-3 xl:col-span-1" />
         </div>
       )}
@@ -92,8 +92,8 @@ export function GameFiltersPanel({ store, t }: GameFacetProps) {
 
       {expanded && (
         <div className="mt-4 flex max-sm:flex-col flex-wrap gap-4 border-t border-event-soft pt-4">
-          <SortFacet store={store} t={t} />
           <GroupFacet store={store} t={t} />
+          <SortFacet store={store} t={t} />
           <GameRecordsToolbar store={store} t={t} />
         </div>
       )}

@@ -5,7 +5,7 @@ top:
 stages:
   - type: tournament
     file: nl2011.txt
-    name: championship
+    name: Championship
     dir: 2011/nlk
     promoted: 2
     scoringColumns:
@@ -18,12 +18,43 @@ stages:
       - sos
       - sodos
     findSharedPlaces: true
+    games:
+      - 1-4 1:B+R round:5 sgf:2011/nlk/5-MerlijnKuin-RobertRehm.sgf
+      - 1-5 1:B+11.5 round:2 sgf:2011/nlk/2-MerlijnKuin-MichielEijkhout.sgf
+      - 1-6 1:B+R round:7 sgf:2011/nlk/7-MerlijnKuin-AlexanderEerbeek.sgf
+      - 1-10 1:B+12.5 round:8 sgf:2011/nlk/8-MerlijnKuin-GeertGroenen.sgf
+      - 2-1 2:B+7.5 round:4 sgf:2011/nlk/4-PeterBrouwer-MerlijnKuin.sgf
+      - 2-6 2:B+R round:5 sgf:2011/nlk/5-PeterBrouwer-AlexanderEerbeek.sgf
+      - 2-7 7:W+28.5 round:7 sgf:2011/nlk/7-PeterBrouwer-FrankJanssen.sgf
+      - 3-1 1:W+4.5 round:3 sgf:2011/nlk/3-GillesvanEeden-MerlijnKuin.sgf
+      - 3-2 2:W+R round:6 sgf:2011/nlk/6-GillesvanEeden-PeterBrouwer.sgf
+      - 3-8 3:B+R round:1 sgf:2011/nlk/1-GillesvanEeden-EmilNijhuis.sgf
+      - 3-13 3:B+R round:5 sgf:2011/nlk/5-GillesvanEeden-AndreasDrost.sgf
+      - 4-2 2:W+35.5 round:3 sgf:2011/nlk/3-RobertRehm-PeterBrouwer.sgf
+      - 5-3 3:W+R round:4 sgf:2011/nlk/4-MichielEijkhout-GillesvanEeden.sgf
+      - 5-7 5:B+11.5 round:3 sgf:2011/nlk/3-MichielEijkhout-FrankJanssen.sgf
+      - 6-3 3:W+R round:2 sgf:2011/nlk/2-AlexanderEerbeek-GillesvanEeden.sgf
+      - 6-5 6:B+3.5 round:6 sgf:2011/nlk/6-AlexanderEerbeek-MichielEijkhout.sgf
+      - 6-9 6:B+1.5 round:4 sgf:2011/nlk/4-AlexanderEerbeek-WillemKoenPomstra.sgf
+      - 7-1 1:W+R round:1 sgf:2011/nlk/1-FrankJanssen-MerlijnKuin.sgf
+      - 7-8 8:W+R round:4 sgf:2011/nlk/4-FrankJanssen-EmilNijhuis.sgf
+      - 8-1 1:W+2.5 round:6 sgf:2011/nlk/6-EmilNijhuis-MerlijnKuin.sgf
+      - 8-2 2:W+11.5 round:8 sgf:2011/nlk/8-EmilNijhuis-PeterBrouwer.sgf
+      - 9-4 4:W+R round:2 sgf:2011/nlk/2-WillemKoenPomstra-RobertRehm.sgf
+      - 14-4 4:W+R round:4 sgf:2011/nlk/4-FilipVanderstappen-RobertRehm.sgf
+      - 14-15 14:B+9.5 round:3 sgf:2011/nlk/3-FilipVanderstappen-HermanHiddema.sgf
+      - 15-2 2:W+R round:2 sgf:2011/nlk/2-HermanHiddema-PeterBrouwer.sgf
+      - 16-6 6:W+R round:3 sgf:2011/nlk/3-SiuHongChung-AlexanderEerbeek.sgf
+      - 16-9 9:W+5.5 round:1 sgf:2011/nlk/1-SiuHongChung-WillemKoenPomstra.sgf
   - type: tournament
     file: nl2011playoff.txt
-    name: playoff
+    name: Playoff
     dir: 2011/playoff
     scoringColumns:
       - wins
     breakers:
       - wins
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+16.5 round:1 sgf:2011/playoff/1-MerlijnKuin-PeterBrouwer.sgf
+      - 2-1 1:W+18.5 round:2 sgf:2011/playoff/2-PeterBrouwer-MerlijnKuin.sgf

@@ -1,6 +1,6 @@
 stages:
   - type: tournament
-    name: championship
+    name: Championship
     file: nl1986.txt
     notes: The last round game between Janssen and Boon resulted in a triple-ko, later they had to replay this game, which Boon won
     scoringColumns: 

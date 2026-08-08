@@ -1,0 +1,1506 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]OT[1x30 byo-yomi]AP[CGoban:3]SZ[19]GM[1]GN[Dutch Go Championship Board 1 Round 8]
+EV[Dutch Go Championship Board 1]RO[8]DT[2010-01-31]PC[European Go Centre, Amstelveen]
+PB[Peter Brouwer]BR[5d]PW[Andreas Drost]WR[4d]KM[6.5]TM[5400]RE[B+14.5]CP[EuroGoTV]
+MULTIGOGM[1]
+;B[qd]
+(;W[dd])
+(;W[dc]C[Warfreak2 [5d\]\: or is there some SOS thing going on with the other boards that is important?
+]
+(;B[pp];W[oc]C[EuroGoTV1 [-\]\: Results of the tournament\: http\://nkgo.octalo.com/  Live video transmission of this game\: http\://eurogotv.com/index.php?menu=Live&channel=EuroGoTV1 
+Warfreak2 [5d\]\: this is board 1?
+EuroGoTV1 [-\]\: yes
+Warfreak2 [5d\]\: so this decides the champion?
+go [-\]\: final round ?
+])
+(;B[dp];W[oc];B[pq];W[po]C[Alenchon [7k\]\: I cannot tell that from the table
+Titaantje [?\]\: Could someone update the site with the results? 
+ExplO [2d\]\: both Geert and Peter are at 6 wins
+Alenchon [7k\]\: SOS close
+]
+;B[md]C[Warfreak2 [5d\]\: and andreas?
+Javaness [-\]\: geert and peter might playoff
+]
+;W[oe]C[ickypoo [2k\]\: Would you post link please?
+Chanan [10k\]\: 7 wins, no? both won their earlier as well
+]
+;B[pf];W[kd]C[ExplO [2d\]\: they both lost one Chanan
+Chanan [10k\]\: oh no
+Chanan [10k\]\: sry \:)
+]
+;B[mf];W[mc]C[kane955 [3k\]\: are there playoffs
+kane955 [3k\]\: ?
+ickypoo [2k\]\: EuroGoTV1, would you please post link
+EuroGoTV1 [-\]\: Results of the tournament\: http\://nkgo.octalo.com/  Live video transmission of this game\: http\://eurogotv.com/index.php?menu=Live&channel=EuroGoTV1 
+ickypoo [2k\]\: thank you
+]
+;B[qm]C[EuroGoTV4 [-\]\: if both peter and geert lose ther might be a 3 player play-off
+Warfreak2 [5d\]\: lol
+Warfreak2 [5d\]\: but peter can't lost this game surely
+Alenchon [7k\]\: hpw dpes W become opponent for B this round?
+Warfreak2 [5d\]\: i guess b already beat everyone else
+EuroGoTV4 [-\]\: peter played all 5 and 4 point players
+EuroGoTV1 [-\]\: Results of the tournament\: http\://nkgo.octalo.com/  Live video transmission of this game\: http\://eurogotv.com/index.php?menu=Live&channel=EuroGoTV1 
+EuroGoTV4 [-\]\: so know he is playing weakest 3 pointer
+Warfreak2 [5d\]\: andreas is on 2 wins though?
+EuroGoTV4 [-\]\: it is a swss tournament
+Alenchon [7k\]\: why weakest 3pt not strongest?
+Warfreak2 [5d\]\: 3 wins, my mistake
+EuroGoTV4 [-\]\: because of rules of swiss tournament
+Alenchon [7k\]\: hmmm, I guess Swiss rules have changed since I did chess tourneys
+Warfreak2 [5d\]\: strength doesn't matter in swiss tournament, you are paired up randomly against people on similar numbers of wins
+Warfreak2 [5d\]\: so as to minimise the score difference between all pairings for that round
+Warfreak2 [5d\]\: the rule surely isn't that he plays the weakest person on 3 wins - the rule is he plays some person on 3 wins, chosen at random
+Alenchon [7k\]\: it did not used to be random years ago, so I guess I am not up on the rule changes
+Alenchon [7k\]\: ty for clarification
+Warfreak2 [5d\]\: well, how else can you decide it?
+Javaness [-\]\: it's not accelerated swiss
+EuroGoTV4 [-\]\: rule in this tournament\: highest sos pairs lowest sos
+Warfreak2 [5d\]\: oh
+Warfreak2 [5d\]\: strange rule
+Javaness [-\]\: quite usual actually \:)
+EuroGoTV4 [-\]\: i don'tknow, i didnot invent it
+Warfreak2 [5d\]\: but what is the mathematical justification for the rule
+Podiceps [?\]\: that is also standard i mcmahon
+]
+;W[ro]C[Podiceps [?\]\: (the program)
+];B[np]C[gaius [1k\]\: in large tournaments it makes sense - especially below the bar
+Warfreak2 [5d\]\: what sense is made?
+]
+;W[on]C[gaius [1k\]\: otherwise the 1k's play a knockout against each other before they are paired against a 1d
+Javaness [-\]\: visit swiss perfect warfreak2
+Warfreak2 [5d\]\: i'm not perfect
+gaius [1k\]\: and the 1k's that lose their rounds have to play against 1k's too until they have lost so much that there are no more 1k's left...
+Warfreak2 [5d\]\: and why would i want to visit switzerland
+Javaness [-\]\: it's a website with chess pairing software on it
+Javaness [-\]\: and don't call me shirley
+Alenchon [7k\]\: sorry I opened this discussion  \:(
+Warfreak2 [5d\]\: switzerland is not a website
+EuroGoTV1 [-\]\: guys, let's keep the comments to the game please
+gaius [1k\]\: but I don't know what the justification of this rule is in such a small tournament as this
+johani [9k\]\: anyone else got problems with live-stream on eurogotv.com?
+Javaness [-\]\: around K3 is normal now
+]
+;B[om]C[EuroGoTV1 [-\]\: johani, refresh  your browser
+Javaness [-\]\: is this a little greedy?
+EuroGoTV1 [-\]\: Results of the tournament\: http\://nkgo.octalo.com/  Live video transmission of this game\: http\://eurogotv.com/index.php?menu=Live&channel=EuroGoTV1 
+gaius [1k\]\: wow, is this a new Korean variation?
+johani [9k\]\: thx
+johani [9k\]\: works again
+Yoritomo [12k\]\: a bit too much close combat too early on the game?
+Warfreak2 [5d\]\: this p7 move was played by cheon yeong-seon in 1971
+Warfreak2 [5d\]\: so korean, yes, but not new
+Warfreak2 [5d\]\: then it was played by a japanese player in 1980 and another in 1985, korean in 1991, cornel burzo in 2003 and another korean in 2007
+godzylla [1k\]\: is there an title match
+]
+;W[nm];B[ol];W[lq]C[Warfreak2 [5d\]\: sorry, it was played against cornel, not by cornel
+Warfreak2 [5d\]\: by a korean.
+]
+;B[lp];W[kp];B[lo];W[oq]C[qgo [4k\]\: this smells like two weak white groups
+Moin9 [4k\]\: hmm they don#t use the clock??? what is with the time?
+Javaness [-\]\: I love the smell of weak groups
+EuroGoTV1 [-\]\: moin, they use a clock
+Javaness [-\]\: the relay does not transmit the times
+EuroGoTV1 [-\]\: kgs lacks the functionality of a clock in demonstrations (write wms an email!!!)
+Moin9 [4k\]\: okay
+]
+;B[op];W[pp];B[or];W[qq];B[nq];W[qr]C[qgo [4k\]\: o6
+qgo [4k\]\: fujitsucup shoewed time and counting
+qgo [4k\]\: *showed
+EuroGoTV1 [-\]\: gossip\: danoontjes girlfriend is sitting beside him -!
+EuroGoTV1 [-\]\: Results of the tournament\: http\://nkgo.octalo.com/  Live video transmission of this game\: http\://eurogotv.com/index.php?menu=Live&channel=EuroGoTV1 
+EuroGoTV2 [-\]\: wow \:)
+EuroGoTV1 [-\]\: ah, not visible on the camera, haha
+MagnusM84 [1d?\]\: I'd like a move like d14 for some odd reason
+qgo [4k\]\: why can t I see her?
+Rawrie [2k\]\: qgo tjat os becaise fujitsucup was played on kgs
+Rawrie [2k\]\: that is because*
+qgo [4k\]\: I am on kgs now aint I
+]
+;B[hp]C[Beldur [?\]\: Bottom? Isn't the left side more important?
+Syptryn [3d?\]\: H4 seems to gvie white unnecessary amount of breathing room
+Syptryn [3d?\]\: white can now J4 later
+XY0908 [-\]\: I thank EuroGoTV again for his (or her) wonderful job.
+EuroGoTV1 [-\]\: you're welcome, XY
+EuroGoTV1 [-\]\: support us by resitering at www.eurogotv.com !
+EuroGoTV1 [-\]\: registering*
+EuroGoTV1 [-\]\: (it's free)
+Rawrie [2k\]\: Yes but the game is not played on kgs
+Rawrie [2k\]\: It is just showed here to us by eurogotv
+EuroGoTV1 [-\]\: Results of the tournament\: http\://nkgo.octalo.com/  Live video transmission of this game\: http\://eurogotv.com/index.php?menu=Live&channel=EuroGoTV1 
+XY0908 [-\]\: H4 is so powerful.
+MagnusM84 [1d?\]\: yes
+MagnusM84 [1d?\]\: big mave
+XY0908 [-\]\: I bet 35 euros on Peter.
+Javaness [-\]\: I bet 2 bowls of soup on black
+Warfreak2 [5d\]\: i bet two bowls of euros on soup
+]
+;W[di]C[EuroGoTV2 [-\]\: hahha Warfreak \:)
+Warfreak2 [5d\]\: are you enjoying the tournament, eurogotv?
+]
+;B[ck]C[XY0908 [-\]\: A typical mathematician you are, Warfreak2.
+Warfreak2 [5d\]\: no such thing
+EuroGoTV1 [-\]\: yeah, very much "\]
+EuroGoTV1 [-\]\: \:\]
+EuroGoTV1 [-\]\: as always \:\]
+EuroGoTV1 [-\]\: there's a very good atmosphere
+]
+;W[ek]C[EuroGoTV1 [-\]\: very friendly
+Javaness [-\]\: no fist fights?
+XY0908 [-\]\: So tell us again where this tournament is being held please.
+Javaness [-\]\: european go cultural centre
+EuroGoTV1 [-\]\: At the European Go Centre, in Amstelveen, very near Amsterdam, in the beautiful country of the Netherlands
+Javaness [-\]\: in Amstelven
+Warfreak2 [5d\]\: no loose rabid squirrels?
+Warfreak2 [5d\]\: i am not convinced by white's strategy
+XY0908 [-\]\: Is this European Go Center a large place?
+]
+;B[cn]C[Warfreak2 [5d\]\: yes, it has 661 rooms
+cdybeijing [8k\]\: winner of this game is the dutch champion?
+Warfreak2 [5d\]\: not quite cdy
+EuroGoTV1 [-\]\: no, check the results\: Results of the tournament\: http\://nkgo.octalo.com/  Live video transmission of this game\: http\://eurogotv.com/index.php?menu=Live&channel=EuroGoTV1 
+qgo [4k\]\: why not?
+Warfreak2 [5d\]\: peter is on 5 wins, andreas is on 3 wins
+Warfreak2 [5d\]\: another guy on a different board is on 5 wins
+EuroGoTV1 [-\]\: look at the results for yourself, qgo
+]
+;W[df]C[XY0908 [-\]\: E9 should have been at C3?
+Warfreak2 [5d\]\: should have been resign i think
+Warfreak2 [5d\]\: i can't continue as w
+Warfreak2 [5d\]\: ;-)
+XY0908 [-\]\: geert groenen is the other guy?
+Warfreak2 [5d\]\: yes
+Losing [1k\]\: didn't geert lost to emil?
+XY0908 [-\]\: How do you pronounce Geert?
+Warfreak2 [5d\]\: and peter lost to geert
+MagnusM84 [1d?\]\: hopeing for some coplicated fights soon
+Losing [1k\]\: oh ok
+Warfreak2 [5d\]\: so both are on 5
+Losing [1k\]\: and how did emil in other games?
+qgo [4k\]\: Sorry, I thought 8 round swiss always brought an unshared, undisputed winner?
+Warfreak2 [5d\]\: if you have 256 players, qgo, then yes
+]
+;B[ic]C[qgo [4k\]\: so what s up, counting of 8th round will bring winner?
+];W[nd]
+C[MagnusM84 [1d?\]\: o16 for some thick shape then having cutting posibillitys
+]
+;B[fc]C[qgo [4k\]\: possible roun 9 next weekend>
+qgo [4k\]\: or today?
+XY0908 [-\]\: It must be today, I think.
+EuroGoTV1 [-\]\: no
+XY0908 [-\]\: Because I cannot watch next weekend ;-)
+EuroGoTV1 [-\]\: playoffs will be held at a later date
+Warfreak2 [5d\]\: if necessary?
+merinslips [8k\]\: who won csaba vs. dinerchein?
+XY0908 [-\]\: All players stay in the city for over two weeks?
+qgo [4k\]\: dinner did
+XY0908 [-\]\: EuroGoTV, how do you manage traveling so much?
+bibob [30k?\]\: no xy but nederland smaller than must states in the us
+EuroGoTV1 [-\]\: I'm just a scribe, I'm not the legendary Mr. Eurogotv \:\]
+Warfreak2 [5d\]\: oh i didn't realise the eurogotv website was named after a person
+XY0908 [-\]\: haha
+Warfreak2 [5d\]\: i thought it was euro go tv
+Warfreak2 [5d\]\: serves me right for just assuming i guess
+egongo [8k\]\: since peter played lee chang ho, he is much stronger
+]
+;W[qh]C[XY0908 [-\]\: Oh? When did he do that?
+egongo [8k\]\: world mind games
+egongo [8k\]\: on the 5th board
+egongo [8k\]\: both reserves
+gaius [1k\]\: uuhmm, egongo, that was bram....
+Syptryn [3d?\]\: Say, is minda games gonna happen in London 2012?
+egongo [8k\]\: ahh, yes sorry
+gaius [1k\]\: and he played Lee Sedol not Changho
+gaius [1k\]\: \:)
+egongo [8k\]\: again sorry
+MagnusM84 [1d?\]\: interesting move
+nonochan [6d\]\: It was Bram and it was not Lee Changho, but Lee Sedol.
+EuroGoTV1 [-\]\: time\: w 1\:04 b\: 1\:09 hours
+qgo [4k\]\: what an exciting game peter and Filip brought earlier today !
+egongo [8k\]\: i dont tell stories anymore
+egongo [8k\]\: \:(
+gaius [1k\]\: hehe
+gaius [1k\]\: actually bram played 3 pros that tournament.. lucky bastard ;)
+XY0908 [-\]\: No harm done, ego n go.
+bibob [30k?\]\: so did i \:)
+egongo [8k\]\: well ask nonochsan, he was there
+nonochan [6d\]\: MIchiel didn't want to play because he was a little tired. Was he pissed off when Bram took his place opposite of Lee Sedol!!!
+]
+;B[ph]C[egongo [8k\]\: great story in dutch go-history
+EuroGoTV1 [-\]\: Results of the tournament\: http\://nkgo.octalo.com/  Live video transmission of this game\: http\://eurogotv.com/index.php?menu=Live&channel=EuroGoTV1 
+nonochan [6d\]\: W is already behind by quite a bit
+MagnusM84 [1d?\]\: yes
+nonochan [6d\]\: So he needs to succeed on the right badly
+MagnusM84 [1d?\]\: has to take some risks
+MagnusM84 [1d?\]\: will be bad if he gets a running group
+]
+;W[pi]C[Warfreak2 [5d\]\: how can you succeed badly?
+];B[oh]C[caerz2\: i see death in the future
+MagnusM84 [1d?\]\: W needs to make life
+MagnusM84 [1d?\]\: r10 looks like the shape for eyes but hard
+nonochan [6d\]\: You'll find out!
+merinslips [8k\]\: to me all w moves seem good but yet hes behind... 
+Syptryn [3d?\]\: r-13'
+Barbus [9k\]\: How did the 1st Peter Brouwer game end pls , i had to leave \:(
+nonochan [6d\]\: if r10 , B r13 
+EuroGoTV1 [-\]\: brouwer won by 5,5
+Barbus [9k\]\: thnx
+EuroGoTV1 [-\]\: even after a blunder
+]
+;W[rf]C[merinslips [8k\]\: i had two pop tarts and fell asleep from the sugar crash during that game, and dreamt of guo juan
+nonochan [6d\]\: so if W r13 r14 p11 o11 r9 o10 not good enough
+Barbus [9k\]\: is it possible to find these games after they are finished ?
+MagnusM84 [1d?\]\: this move looks good
+nonochan [6d\]\: Next variation\: instead of s14, W r14 r13 s13 q13 s11 looks more promising.
+Medice [5d?\]\: atleast via the ba
+Medice [5d?\]\: *broadcasting accounts
+Medice [5d?\]\: silly laptop having enter and backspace too close together
+EuroGoTV1 [-\]\: Results of the tournament\: http\://nkgo.octalo.com/  Live video transmission of this game\: http\://eurogotv.com/index.php?menu=Live&channel=EuroGoTV1 
+rvf [-\]\: yes look in their info , games tab
+Barbus [9k\]\: ahh thnx
+nonochan [6d\]\: Yes S14 looks reasonable, but B r13 s13 r11 s12 r10 - can W then capture ythe entire corner?
+]
+;B[qi]C[nonochan [6d\]\: q15 r15 r14 q13 r17 s17 s18 ?
+Warfreak2 [5d\]\: black r13 would be a crime against shape
+merinslips [8k\]\: q15
+Medice [5d?\]\: r13
+nonochan [6d\]\: maybe, but now W has more flexibility
+tudiloo [7k\]\: stream down? \:(
+]
+;W[rh]C[nonochan [6d\]\: r10 s11 s10 s12 r13 works
+EuroGoTV1 [-\]\: lots of laughing coming from board 2 (merlijn vs groenen)
+EuroGoTV1 [-\]\: and live commenting \:\]
+EuroGoTV1 [-\]\: shows the friendly nice atmosphere here
+]
+;B[ri]C[Medice [5d?\]\: stop handing out the laughing gas
+EuroGoTV2 [-\]\: B played many moves in the corner, W comments\: there's still some aji, B\: what?! what?! what?!
+EuroGoTV1 [-\]\: (on board 2)
+EuroGoTV2 [-\]\: yup, on my board ^^
+MagnusM84 [1d?\]\: r15 here and worm in to the corner?
+]
+;W[rd];B[qe];W[qc];B[re];W[rc]C[bibob [30k?\]\: that was bad for w
+bibob [30k?\]\: little profit and b all strong now
+Gork [8k\]\: maybe stone Q11 too deep
+MagnusM84 [1d?\]\: I would have probably played q10 to see black response before a move like s16 that W played
+bibob [30k?\]\: no the r12 attack did look right
+Warfreak2 [5d\]\: what do you mean to see b response
+Warfreak2 [5d\]\: b only has one response
+MagnusM84 [1d?\]\: well
+Warfreak2 [5d\]\: you can q10 any time and b always will respond at r9
+MagnusM84 [1d?\]\: yes
+]
+;B[cc]C[MagnusM84 [1d?\]\: but now?
+Warfreak2 [5d\]\: yes now
+];W[dd];B[db];W[eb]
+;B[cb]C[MagnusM84 [1d?\]\: no
+Warfreak2 [5d\]\: oh?
+Warfreak2 [5d\]\: you have a bright idea?
+Javaness [-\]\: black needs to eat more stones
+Warfreak2 [5d\]\: w needs to lose more stones
+]
+;W[ec];B[fb];W[fa];B[be];W[fd]C[Goombario [21k\]\: Hi Warfreak2 and ratsbag\:)
+Warfreak2 [5d\]\: sup
+Goombario [21k\]\: who won i missed it.
+ratsbag [2d\]\: hi goom
+EuroGoTV1 [-\]\: Results of the tournament\: http\://nkgo.octalo.com/  Live video transmission of this game\: http\://eurogotv.com/index.php?menu=Live&channel=EuroGoTV1 
+]
+;B[kc]C[Goombario [21k\]\: thank u again for the teaching game ratsbag\:)
+ratsbag [2d\]\: mp
+F00 [1d\]\: multi player? \:P
+ratsbag [2d\]\: my pleasure
+F00 [1d\]\: ah oke
+]
+;W[jd];B[lc];W[ld];B[mb];W[me];B[hb];W[hd]C[Warfreak2 [5d\]\: how does w intend to use all this thickness
+MagnusM84 [1d?\]\: I'd say it's game for B
+Javaness [-\]\: white seems quite lost
+MagnusM84 [1d?\]\: only thing left for W is a move like e2
+go [-\]\: SE died
+Javaness [-\]\: Please, why won't they sit at the table together?
+qkrtmddk1 [4d\]\: o18?
+go [-\]\: that`s called psychological warfare
+EuroGoTV2 [-\]\: they don't like each other Java ;p
+EuroGoTV2 [-\]\: they don't even make jokes together \:(
+Javaness [-\]\: \:(
+Javaness [-\]\: does Andreas not like oranges?
+EuroGoTV1 [-\]\: time\: w 45   b 53  min  
+EuroGoTV2 [-\]\: maybe he's allergic ;)
+go [-\]\: for a moment I thought the spectator would make a move
+DeadTired [2d\]\: now how would that be for psychological warfare....
+]
+;B[nb]C[Javaness [-\]\: how about K18
+];W[mh]C[go [-\]\: perhaps white is gonna make some territory with his wall
+Warfreak2 [5d\]\: not likely
+kjbg\: 2nd board having fun\:)
+]
+;B[sd]C[go [-\]\: somewhere around tengen right now ?
+a1h1 [1k\]\: i dont think that would be enough
+a1h1 [1k\]\: even if he got all of it
+kimball [?\]\: seens impossible to wall of enough of the center to match b's cash
+Warfreak2 [5d\]\: white s8 looks fun
+MagnusM84 [1d?\]\: yes
+Buty1954 [1k\]\: N9 would be well ballanced 
+go [-\]\: l5 looks also big
+]
+;W[nf]C[barty [1d\]\: L5 not so big
+Syptryn [3d?\]\: evenif whte walls the enitire mid, 
+Syptryn [3d?\]\: he'd still lose...
+barty [1d\]\: white need invasion i f3 or somethink like there
+Syptryn [3d?\]\: E3
+Buty1954 [1k\]\: black L9 ?
+MagnusM84 [1d?\]\: If black gets to play L5. Then an invasion on the lower side would be harder
+Syptryn [3d?\]\: black should get rid of corner aji with R3
+kimball [?\]\: think i'd try to kill l4 now by l5
+barty [1d\]\: l4 dont neet to kill because k3 will live
+bibob [30k?\]\: l5 seems best w can't make center with one move
+barty [1d\]\: better saveing corner
+Javaness [-\]\: enter the moyo
+]
+;B[eq]C[Syptryn [3d?\]\: yup
+Javaness [-\]\: oh
+Syptryn [3d?\]\: let thsoe two stone srun...
+Syptryn [3d?\]\: it'll run right into white moyo
+barty [1d\]\: true
+Syptryn [3d?\]\: and if white tries to get mid, black gets those stones for free
+Syptryn [3d?\]\: and wins
+barty [1d\]\: white cant run here
+Syptryn [3d?\]\: I have no idea how white can win
+barty [1d\]\: now game for white really difficult
+Syptryn [3d?\]\: whites thickness got nothing to attack,,,
+Syptryn [3d?\]\: say white gets 50 pts mid
+barty [1d\]\: maybe q9 give somethink
+Syptryn [3d?\]\: that''s being very optimistic...
+nonochan [6d\]\: A country for a dream!
+Buty1954 [1k\]\: white can try to live around j3, run out look bad
+MagnusM84 [1d?\]\: I didn't get o14
+Syptryn [3d?\]\: black got 50 bottom, at least if white does that...
+suechan [5d\]\: c3 
+MagnusM84 [1d?\]\: \:P
+Buty1954 [1k\]\: c3 - at most a ko for life there
+MagnusM84 [1d?\]\: err...
+MagnusM84 [1d?\]\: if c3
+MagnusM84 [1d?\]\: B b5
+]
+;W[ho]C[guojuan [5p\]\: hi
+guojuan [5p\]\: I am going to review this game now 
+Kayres [8k\]\: cool
+EuroGoTV1 [-\]\: great, thanks!
+lanchow [7k\]\: \:D
+guojuan [5p\]\: EuroGoTV1, is this the choice for you?
+EuroGoTV1 [-\]\: Audio review of this game by Guo Juan 5p in the EuroGoTV room !
+EuroGoTV1 [-\]\: hm maybe the game on board 2 is more interesting
+gacua [1d\]\: not merljin one?
+EuroGoTV1 [-\]\: Guo, you can choose which one is better, if that is ok
+MagnusM84 [1d?\]\: where is this room?
+Aurele [14k\]\: In "Social"
+jimmypap [?\]\: did Peter won his last game?
+]
+;B[ip]C[MagnusM84 [1d?\]\: thank you
+EuroGoTV1 [-\]\: Live Review by Guo Juan 5p in the EuroGoTV room !
+nicat [2k\]\: shere is that room?
+EuroGoTV1 [-\]\: uder social
+nicat [2k\]\: where
+nicat [2k\]\: tx
+]
+;W[ko];B[kn]C[b8matt [5k\]\: cut m6?
+];W[ln];B[kq]C[EuroGoTV1 [-\]\: funny shape, at l4 \:\]
+EuroGoTV1 [-\]\: pancake
+ickypoo [2k\]\: Can you give us an idea of time left?
+EuroGoTV1 [-\]\: sorry, cant see the clock from here
+b8matt [5k\]\: pancakes sound good! *runs to cook*
+XY0908 [-\]\: EuroGoTV, stand up, walk to your left.
+Warfreak2 [5d\]\: wave to the camera
+EuroGoTV1 [-\]\: no, I wont bother the players
+ickypoo [2k\]\: maybe you can have someone go look at clock?
+Warfreak2 [5d\]\: do a little dance
+]
+;W[jq]C[XY0908 [-\]\: Ask Danoo ;-)
+EuroGoTV1 [-\]\: time\: w 30  b40
+EuroGoTV1 [-\]\: courtesy of eurogotv2
+XY0908 [-\]\: Thanks.
+EuroGoTV2 [-\]\: at your service ;)
+EuroGoTV1 [-\]\: thanks girl \:\]
+ickypoo [2k\]\: thank you
+]
+;B[kr];W[jn]C[EuroGoTV1 [-\]\: w seems irritated, by the way he put down that stone
+bibob [30k?\]\: k4 l7 f8 
+Javaness [-\]\: tell him to put the stones down properly
+EuroGoTV1 [-\]\: java i love you \:\]
+EuroGoTV2 [-\]\: \:D
+Javaness [-\]\: ^_^
+go [-\]\: gonna vote for L7
+Javaness [-\]\: just nobi simply
+holycarp [-\]\: i vote for b+resign
+]
+;B[km];W[jp]C[kimball [?\]\: found that move
+EuroGoTV1 [-\]\: audio review by Guo Juan 5p of this game now going on in eurogotv room
+bibob [30k?\]\: greedy b
+]
+;B[jr]C[go [-\]\: white has terrible shape here
+];W[iq]C[EuroGoTV1 [-\]\: danoontjes girlfriend looks a little bored \:\]
+XY0908 [-\]\: Tell her that we love her.
+go [-\]\: does she play in the ladies tournament ?
+Javaness [-\]\: don't tell danoontje that we love her
+XY0908 [-\]\: ;-)
+moocowmoo [4k\]\: I thought we were only supposed to talk go.
+XY0908 [-\]\: Sorry.
+XY0908 [-\]\: My understanding is everything is related to Go.
+]
+;B[jm]C[moocowmoo [4k\]\: \:)
+LockedOut\: damn black have so many moyo whereas w has nothig
+XY0908 [-\]\: When I play with my friends in real life, we never talk about the game itself.
+Repacse [4k\]\: well, white has a weak group, that`s something
+jabbawocky [1d\]\: black doesnt have a moyo
+jabbawocky [1d\]\: white has a moyo
+LockedOut\: so what does b has ??
+jabbawocky [1d\]\: territory
+Ornithobob [1k?\]\: points
+LockedOut\: lol nop
+LockedOut\: it s not territory yet
+jabbawocky [1d\]\: yeh it it
+LockedOut\: no it s not
+XY0908 [-\]\: ...
+]
+;W[io]C[jabbawocky [1d\]\: ok you win
+LockedOut\: thanks
+XY0908 [-\]\: J2 first?
+jabbawocky [1d\]\: thats what i though
+jabbawocky [1d\]\: t
+jabbawocky [1d\]\: bc j2 for white is sente
+]
+;B[ir];W[hq];B[gp]C[ekku [-\]\: did Brouwer win the previous game?
+EuroGoTV1 [-\]\: yes
+]
+;W[im]C[XY0908 [-\]\: In most political conventions, all you need yo have to win is a louder voice. But not here, LockedOut ;-)
+]
+;B[il]C[XY0908 [-\]\: to have*
+];W[hm]C[Repacse [4k\]\: that`s 1 eye for white
+]
+;B[kk]C[jabbawocky [1d\]\: i dont think black was trying to kill
+tudiloo [7k\]\: no need to kill \:)
+jabbawocky [1d\]\: just get good position
+moocowmoo [4k\]\: both seem to be playing fast now, running out of time?
+]
+;W[ij]C[Cannon [3d?\]\: they are afraid of me
+];B[hl]C[Cannon [3d?\]\: that is why they are impatient
+XY0908 [-\]\: ...
+]
+;W[gm]C[Repacse [4k\]\: j10 could be the losing move
+jabbawocky [1d\]\: l11?
+];B[gl]
+C[sdfsdfsd\: The moves appear before they're actually played on the live broadcast.
+sdfsdfsd\: Someone ni good in guessing?
+F00 [1d\]\: w resign yet?
+pebarefoot [-\]\: eurogo is psychic
+kjbg\: sdfsdfsd, we have a telepath here
+Cannon [3d?\]\: the match is rigged
+Lemmy [3k\]\: EuroGoTV is pluged directly on the live broadcast or do they have someone next to players ?
+EuroGoTV1 [-\]\: I'm a Precog
+Cannon [3d?\]\: I already bet on b
+]
+;W[fm]C[sdfsdfsd\: You're a precog? Or do you tell them where to play?
+jabbawocky [1d\]\: lol
+AroundOneD [2d\]\: f8 go on to kill
+Cannon [3d?\]\: don't they have jobs
+Cannon [3d?\]\: playing go on a sunday?
+Idn [2d\]\: n8 just win
+]
+;B[fl]C[Cannon [3d?\]\: e5 
+];W[dm]C[EuroGoTV4 [-\]\: robert defeats filip
+];B[el]
+;W[dn]C[ickypoo [2k\]\: she'll be comin round the mountain when she come
+AroundOneD [2d\]\: c5
+AroundOneD [2d\]\: gets either d8 or n8
+EuroGoTV4 [-\]\: sorry filip wins
+swanized [-\]\: is it round 8 or round of 8?
+EuroGoTV1 [-\]\: round 8
+Javaness [-\]\: ;)
+swanized [-\]\: how many rounds?
+EuroGoTV1 [-\]\: 8
+swanized [-\]\: ok so thats the final
+EuroGoTV1 [-\]\: no
+EuroGoTV1 [-\]\: there will perhaps be playoffs
+swanized [-\]\: ohhh ok
+EuroGoTV1 [-\]\: Results of the tournament\: http\://nkgo.octalo.com/  Live video transmission of this game\: http\://eurogotv.com/index.php?menu=Live&channel=EuroGoTV1 
+Cannon [3d?\]\: Dutch people are born as 5ds
+]
+;B[go]C[AroundOneD [2d\]\: w is ok, survive b self
+tynogo [11k\]\: looks like w will die
+AroundOneD [2d\]\: no
+tynogo [11k\]\: he cant make an eye with h5 and j5 can he?
+AroundOneD [2d\]\: g6
+Suicide [-\]\: c5
+Zahlman [1k\]\: he can, but that's only one
+]
+;W[fo]C[sdfsdfsd\: g6 is one eye ni gote.
+Zahlman [1k\]\: w already has that eye
+Suicide [-\]\: Isn't this is, Java?
+Zahlman [1k\]\: what number, java?
+Zahlman [1k\]\: suicide, danoo is not that young \:)
+]
+;B[em]C[AroundOneD [2d\]\: c5 is key now
+Repacse [4k\]\: guess not
+tynogo [11k\]\: well mabye its cuz im 11k but i dont see how white will live
+sdfsdfsd\: f4?
+AroundOneD [2d\]\: e6
+AroundOneD [2d\]\: connection
+AroundOneD [2d\]\: more threat to b
+sdfsdfsd\: true, c5 next
+tynogo [11k\]\: if he does tht wont b go g6 ?
+Anthony12 [24k\]\: yuck
+bobombera [9k\]\: e5
+Anthony12 [24k\]\: people still here?
+pebarefoot [-\]\: no
+Anthony12 [24k\]\: ok
+Anthony12 [24k\]\: cant wait to be a dan!
+tynogo [11k\]\: i like f4 
+tynogo [11k\]\: get the kill over with
+pebarefoot [-\]\: it is a figment of your imagination, Anthony
+Iwan [14k\]\: @anthony\: train hard!
+tynogo [11k\]\: hehe
+tynogo [11k\]\: i train hard
+goth [?\]\: w thinks if resigning the game now would make it more honourable
+Lemmy [3k\]\: simply enjoy playing \: you'll reach dan level eventualy
+tynogo [11k\]\: yeah
+tynogo [11k\]\: should take about a  week or 2 to raise ur rank in kyu
+tynogo [11k\]\: or mabye 3
+]
+;W[en]C[Burton [7k\]\: eventually though it takes a lot longer if you just play and do not study
+tynogo [11k\]\: yeah
+tynogo [11k\]\: but i study
+Burton [7k\]\: cool
+Javaness [-\]\: *\\o/* Go Danoo *\\o/*
+F00 [1d\]\: \:
+F00 [1d\]\: >
+bibob [30k?\]\: i don't study
+EuroGoTV1 [-\]\: 100% tesuji power
+Xorax [-\]\: how do you do this now?
+Xorax [-\]\: c5?
+TheBard [5d\]\: milan,what about b7 next for B?
+Javaness [-\]\: pull back
+Zahlman [1k\]\: I think just c5 yeah
+goth [?\]\: c5 looks better
+traceur204 [4k\]\: W is dead?
+blu62 [5k\]\: no
+Ornithobob [1k?\]\: d8 ?
+EuroGoTV1 [-\]\: time\: b 22 minutes  w 11   
+Zahlman [1k\]\: c5 d8 d9 e10 b7 , no problem?
+ickypoo [2k\]\: thank you
+traceur204 [4k\]\: W has so few liberties though.. the cut there may be a problem
+]
+;B[co]C[Xorax [-\]\: oh, so he choose what I thought would be good
+Xorax [-\]\: then he is in big trouble \:o
+traceur204 [4k\]\: lol
+Xorax [-\]\: xD
+swanized [-\]\: lol
+dutch2dan [1d\]\: w is indeed
+snowman [-\]\: i'd say that white's troubles are over
+swanized [-\]\: I dont see white living through that
+dutch2dan [1d\]\: He'll try
+AroundOneD [2d\]\: w is in danger
+LeT63 [1d\]\: needs magic
+ickypoo [2k\]\: is white in better mood now?
+Lemmy [3k\]\: maybe some kind of shibory arround black g4 group 
+Repacse [4k\]\: he could ask for an undo
+vijay [?\]\: looks like the southwest white group is moribond
+sdfsdfsd\: w needs the 2-moves tesuji
+]
+;W[bk]C[LeT63 [1d\]\: aah
+Thoravatar [2d\]\: omg.. what are the current standings? nkgo.octalo.com is not up to date \:(
+swanized [-\]\: ncie move but im not sure it will work
+click1k [3d\]\: dont work for me
+AroundOneD [2d\]\: d8
+kimball [?\]\: b8 does the job now i think
+AroundOneD [2d\]\: to kill
+click1k [3d\]\: d8 c7 
+LeT63 [1d\]\: but looks profi
+swanized [-\]\: i read D8 kills
+]
+;B[cl];W[cm]C[AroundOneD [2d\]\: b10 for c7
+];B[bl]C[bibob [30k?\]\: d8 c7 b10 b8 c11 
+Lemmy [3k\]\: nice
+]
+;W[bm]C[Lemmy [3k\]\: he can have a look on both sides of the corner
+Xorax [-\]\: b even have to answer this?
+Zahlman [1k\]\: gote dead?
+swanized [-\]\: I guess its gonna be gg
+AroundOneD [2d\]\: d8 now
+Repacse [4k\]\: d8 is good enough
+]
+;B[dl]C[coax [2d\]\: white alive
+Lemmy [3k\]\: f4 shibory
+kimball [?\]\: the b corner has many liberties
+Zahlman [1k\]\: w can resign without this group...
+bibob [30k?\]\: d5 
+LeT63 [1d\]\: d5
+LeT63 [1d\]\: then f4 for life
+sdfsdfsd\: white can live in the corner now ;-)
+LeT63 [1d\]\: oh no b can g6
+]
+;W[mo]C[DrH0use [2d\]\: lol what this game?N
+];B[mp]C[Warfreak2 [5d\]\: f4 doesn't life
+]
+;W[fp];B[gq];W[fq]C[Lemmy [3k\]\: no but give access to corner
+AroundOneD [2d\]\: now corner problem for b
+Zahlman [1k\]\: g6
+bobombera [9k\]\: erst h2
+]
+;B[hr]C[Durgrim [2k\]\: oO
+mastouche [2d\]\: not a big deal for black
+vijay [?\]\: can the b group die??
+kjbg\: game over
+Zahlman [1k\]\: ahh, taking k5 removes the eye too
+Durgrim [2k\]\: Ah
+click1k [3d\]\: g2 k5 e2 
+Cannon [3d?\]\: crane nest
+AroundOneD [2d\]\: c3
+Warfreak2 [5d\]\: g2 g6 
+kimball [?\]\: better g2 i think
+dutch2dan [1d\]\: big catch...
+Cannon [3d?\]\: B+60
+chrpa [1k\]\: k5
+Repacse [4k\]\: if white lives, he will probably resign
+dutch2dan [1d\]\: lives?
+dutch2dan [1d\]\: where?
+AroundOneD [2d\]\: obviously, b is leading
+]
+;W[er]C[Repacse [4k\]\: if...
+snowman [-\]\: big groups never die...
+Thoravatar [2d\]\: black does not resign
+dutch2dan [1d\]\: small ones do, Vesa, and there are always exceptions
+Repacse [4k\]\: of course not
+Javaness [-\]\: C2?
+Javaness [-\]\: -C3
+dutch2dan [1d\]\: g2?
+Voj [5k\]\: could w win even if somehow he managed to live small in the corner ?
+kjbg\: nope
+Zahlman [1k\]\: w hopes for d2 e4 d3 g6 g2 d5 I guess
+dutch2dan [1d\]\: would mean in gote, so b will invade the center easily
+kjbg\: g11 an others destroy the moyo
+Zahlman [1k\]\: but even then b can j6
+traceur204 [4k\]\: the rest of the board is way in B's favor too
+Excalibor [-\]\: is white alive under that big black wall?
+Zahlman [1k\]\: looks to me like d2 is fine therefore
+coolbabe [5d\]\: f2
+ggffh\: b6
+coolbabe [5d\]\: d3 the strongest
+Zahlman [1k\]\: f2 d3 not a problem?
+CptHook [?\]\: i think d2 - b4or b3
+coolbabe [5d\]\: but does d3 work?
+AroundOneD [2d\]\: c2 not ok
+Zahlman [1k\]\: how can you call something strong if you don't know if it works?
+AroundOneD [2d\]\: c2 not ok
+Zahlman [1k\]\: a1d, what's your line?
+Minghegy [1k\]\: l
+coolbabe [5d\]\: c2 is ok
+traceur204 [4k\]\: d3 may be better than d2
+coolbabe [5d\]\: f2 is ok
+coolbabe [5d\]\: f2 maybe only move
+DrH0use [2d\]\: coolbabe is lunatic
+coolbabe [5d\]\: tnnd
+coolbabe [5d\]\: if b dont move at f2
+coolbabe [5d\]\: he will lose
+sum [4d\]\: f2 d3 exchange
+AroundOneD [2d\]\: d3 is not ok
+coolbabe [5d\]\: d3 c3
+mels [1d\]\: I like black c3
+coolbabe [5d\]\: f2 or c3 is b's choice
+Javaness [-\]\: who is watching danoontje's game?
+sdfsdfsd\: who's danoontje?
+sum [4d\]\: whose that joghurt?
+harvey103 [2k\]\: Pete
+coolbabe [5d\]\: c2 is a good move?
+CptHook [?\]\: why didnt w first g2? 
+lanchow [7k\]\: why not K5 ?
+EuroGoTV1 [-\]\: Peter Zandveld is one of the observers
+coolbabe [5d\]\: probably not
+EuroGoTV1 [-\]\: owner of famous go shop Het Paard
+Zahlman [1k\]\: how is c2 supposed to do anything?
+sdfsdfsd\: Peter isn't a danoontje for sure
+Javaness [-\]\: I recognise his belly
+dutch2dan [1d\]\: It kills
+]
+;B[cq]C[traceur204 [4k\]\: eh?
+AerinDad [10k\]\: did Peter win the last game?
+pebarefoot [-\]\: yes
+supercow [-\]\: yes
+bobombera [9k\]\: g2
+coolbabe [5d\]\: c3 super
+jabbawocky [1d\]\: g2 k5 
+AerinDad [10k\]\: thx. didguo juan review?
+AroundOneD [2d\]\: g2 and then d2
+traceur204 [4k\]\: why is c3 a good move?
+lanchow [7k\]\: white lost ?
+Lemmy [3k\]\: can white make an eye at e5 ?
+AerinDad [10k\]\: why not k5?
+Naysmith [3d?\]\: k5 doesn't make eyes
+lanchow [7k\]\: cause it will die anyway
+bobombera [9k\]\: g2 k5 b1
+CptHook [?\]\: b4
+sdfsdfsd\: g2 c2?
+AroundOneD [2d\]\: c3 is the best
+]
+;W[cr]C[privateEye [5d\]\: w alive...
+sdfsdfsd\: c3 has been played already
+Thoravatar [2d\]\: looks like white easily alive, can black live?
+bibob [30k?\]\: f2 d2 b2 d3 b4 e4 d5 
+traceur204 [4k\]\: I didn't like C3
+coolbabe [5d\]\: c2 w's last try
+bibob [30k?\]\: dead
+TeeSushi [2d\]\: f2 d2 b3 ?
+sdfsdfsd\: f2 is good enough now
+Javaness [-\]\: no way to kill black
+mastouche [2d\]\: B2
+AroundOneD [2d\]\: g2 for b now
+Ryu [2k\]\: f2 looks good
+coolbabe [5d\]\: b2 or f2's b's choice
+AerinDad [10k\]\: how is w "easily alive"?
+CptHook [?\]\: if b g6 no eyes
+Javaness [-\]\: white has 1 eye
+Javaness [-\]\: easy to live
+MilanMilan [9d\]\: w will be captured
+jabbawocky [1d\]\: w has one gote eye
+supercow [-\]\: heh
+Warfreak2 [5d\]\: \:-D
+Warfreak2 [5d\]\: milanmilan decrees it!
+swanized [-\]\: white is dead in my opinon
+Zahlman [1k\]\: f2 d2 b2 d3 e4 b3 ... \:/
+EuroGoTV1 [-\]\: time\: b 8 w 3
+AroundOneD [2d\]\: f2
+Javaness [-\]\: oh no! 9d ruins our fun
+Xorax [-\]\: xD
+jabbawocky [1d\]\: lol
+Ryu [2k\]\: lol
+Ryu [2k\]\: yeah it looks as white dead
+Danilokun [2k?\]\: lol
+Zahlman [1k\]\: what is the byo setup? just 1 period of 1 minute?
+]
+;B[br]C[coolbabe [5d\]\: f2 b3 d2 ...
+sdfsdfsd\: hm
+coolbabe [5d\]\: b2 ...
+];W[bs]
+C[Javaness [-\]\: hehe
+sdfsdfsd\: ko
+Lemmy [3k\]\: ko fight yeah !
+MilanMilan [9d\]\: b should cut at F2
+dutch2dan [1d\]\: still possible
+gigatron [1d\]\: when?
+AerinDad [10k\]\: Peter looks like he hasntchaved since tournament began
+AerinDad [10k\]\: shaved*
+coolbabe [5d\]\: now
+]
+;B[fr]C[gigatron [1d\]\: a
+Javaness [-\]\: It is bad luck to shave during the tournament
+Ryu [2k\]\: cut yay\:D
+gigatron [1d\]\: ok
+coolbabe [5d\]\: still ko seems
+sdfsdfsd\: Peter didn't shave since he reached 17
+jabbawocky [1d\]\: b3 d2 miai?
+AerinDad [10k\]\: hahaha
+kimball [?\]\: game over now
+coolbabe [5d\]\: maybe not
+]
+;W[fs]C[Javaness [-\]\: white a bit dead
+];B[gr]C[jabbawocky [1d\]\: just a bit yeh
+Javaness [-\]\: black noticed atari, strong
+]
+;W[bq]C[ali06 [1d\]\: it is hard to admit
+miao [5d\]\: wow
+];B[dr];W[ar]C[geoffrix [6k\]\: ko?
+phirozan [-\]\: i wish i could notice atari
+miao [5d\]\: YES
+miao [5d\]\: yes
+KawaiiDesu [2k\]\: MORE KO
+Javaness [-\]\: calm down miao
+Javaness [-\]\: it's only a ko
+coolbabe [5d\]\: can he a2 first?
+miao [5d\]\: \:P
+Lemmy [3k\]\: still ... white is sooooo far behind \:)
+wade [5d\]\: d1 no ko
+miao [5d\]\: right
+lepore [1d\]\: b6
+miao [5d\]\: d1
+miao [5d\]\: <<
+Gigot [3k\]\: A2 did not work
+phirozan [-\]\: this is a huge ko
+EuroGoTV1 [-\]\: b6 is ugly, but looks like it works
+miao [5d\]\: but b4
+CptHook [?\]\: monkey jump if no ko
+miao [5d\]\: wade
+sdfsdfsd\: b6 is good
+miao [5d\]\: ko again no?
+mastouche [2d\]\: lol, white get tricked
+coolbabe [5d\]\: d1 still ko'b4 also ko
+dutch2dan [1d\]\: no
+phirozan [-\]\: b6 doesn't work, white could live then
+KawaiiDesu [2k\]\: b6 b might die
+jabbawocky [1d\]\: b6 a8 b10 ?
+qgo [4k\]\: I think b is crushed, why does he go on?
+AroundOneD [2d\]\: e2
+jabbawocky [1d\]\: then w has sente
+coolbabe [5d\]\: b4 a5 etc
+Thoravatar [2d\]\: b6 white escapes
+spor [-\]\: d1 and then what? \:/
+coolbabe [5d\]\: b4 of coz now
+kimball [?\]\: b6 is not so good, since w a8 is sente
+coolbabe [5d\]\: just e1
+qgo [4k\]\: white I mean, Andreas, why doesn t he resign ?
+Repacse [4k\]\: e1 good enough
+bobombera [9k\]\: b4 and game over
+phirozan [-\]\: sorry eurogotv1, the kibitzers disagree with you \:)
+jabbawocky [1d\]\: i would just d1
+traceur204 [4k\]\: peter is kind of attractive
+coolbabe [5d\]\: can c1
+sdfsdfsd\: b6 a8 e1
+kimball [?\]\: it is ko
+wade [5d\]\: d1 b4 b6
+martin3141 [1k\]\: yeah, b4 - d1 - d3 I guess
+]
+;B[bp]C[Pinguschaf [5d?\]\: its no ko
+Javaness [-\]\: black is winning regardless
+AroundOneD [2d\]\: then g10
+coolbabe [5d\]\: but either way
+wade [5d\]\: ko
+Pinguschaf [5d?\]\: b should have just b6, no?
+coolbabe [5d\]\: b4 looks charming
+Pinguschaf [5d?\]\: i think it wasnt ko
+]
+;W[ds];B[es]C[miao [5d\]\: wade a8 b10 c4
+kimball [?\]\: then a8, then?
+Javaness [-\]\: working very well
+Excalibor [-\]\: mmm
+jabbawocky [1d\]\: my head hurts
+Pinguschaf [5d?\]\: oh i see
+CptHook [?\]\: a8
+]
+;W[al]C[Pinguschaf [5d?\]\: missed the other side ^^
+Javaness [-\]\: G1 after
+]
+;B[cs]C[traceur204 [4k\]\: I think he could have had a better result than ko
+wade [5d\]\: didnt see it miao...
+]
+;W[bj]C[Thoravatar [2d\]\: not many threats
+Xorax [-\]\: wow \:o
+miao [5d\]\: i will copy
+coolbabe [5d\]\: painful a8
+CptHook [?\]\: ha
+coolbabe [5d\]\: b let go?
+phirozan [-\]\: yea, white is happy
+Javaness [-\]\: jump out or eat stones?
+lanchow [7k\]\: K5
+swanized [-\]\: unbelievable
+]
+;B[cg]C[Repacse [4k\]\: white is alive so black wins
+Xorax [-\]\: now gotta k11?
+BuhariEX [2d?\]\: i dont understand c13 \:X
+wade [5d\]\: b is winning easyly
+lanchow [7k\]\: if w K5 w win
+BuhariEX [2d?\]\: too high level for me
+phirozan [-\]\: white has like no territory
+geoffrix [6k\]\: yes
+CptHook [?\]\: c11
+]
+;W[bh]C[Javaness [-\]\: G11
+];B[bg]C[larske [5k\]\: w k5, b h6 (so w k5 is no good)
+LeT63 [1d\]\: d1?
+BuhariEX [2d?\]\: k5 h6 j6 g6 f6 
+sdfsdfsd\: black can kill the white corner with d1
+BuhariEX [2d?\]\: white lives in gote
+EuroGoTV1 [-\]\: w has entered byo
+traceur204 [4k\]\: d1 and k5 are both rather large moves?
+]
+;W[dh]C[kimball [?\]\: corner is yose
+jabbawocky [1d\]\: d1 and k1 are both gote
+coolbabe [5d\]\: l11
+jabbawocky [1d\]\: well d1 is ko, but not exactly sente
+coolbabe [5d\]\: or g10
+CptHook [?\]\: when will w k5?
+sdfsdfsd\: yose? what is yose?
+jabbawocky [1d\]\: endgame
+sdfsdfsd\: thx
+]
+;B[ki]C[coolbabe [5d\]\: which one bigger?
+];W[ds];B[er]C[Earnest [2k\]\: interesting game, but WOW is that some kinda boring video feed \:p
+BuhariEX [2d?\]\: i think k5 and d1 are miai
+]
+;W[qk]C[earthy [11k\]\: video feed?
+jimmypap [?\]\: http\://eurogotv.com/index.php?menu=Live&channel=EuroGoTV1
+]
+;B[pj]C[minismurf [-\]\: not really miai feeling as one is ko
+Earnest [2k\]\: really cool that they have it
+Earnest [2k\]\: but it aint't football ;)
+earthy [11k\]\: ty 
+]
+;W[rm]C[Repacse [4k\]\: k12 
+];B[ih]C[vijay [?\]\: earnest u dont have to watch it!
+traceur204 [4k\]\: now b is playing safe moves and just letting his whole board advantage coast him to the win?
+]
+;W[lj]C[Warfreak2 [5d\]\: rule 1\: if you can fit your hand in your territory you have won
+traceur204 [4k\]\: lol
+Warfreak2 [5d\]\: rule 2\: if you can count your territory on one hand, you have lost
+Earnest [2k\]\: thank you vijay, that is a relief \:)     no - I like it
+wade [5d\]\: how does w thinks he gonna win this?
+vijay [?\]\: incidentally i dont like soccer
+]
+;B[mj]C[Earnest [2k\]\: niether do I
+];W[kj]C[traceur204 [4k\]\: incidentally andreas is kindof ugly
+vijay [?\]\: i prefer marathon running!
+jabbawocky [1d\]\: hmm
+]
+;B[li]C[jabbawocky [1d\]\: oh black can connect with k5 
+Lemmy [3k\]\: climbing is great \: stone related ;)
+]
+;W[ji]C[Earnest [2k\]\: this is a very complicated board
+coolbabe [5d\]\: can he k9?
+]
+;B[lk]C[coolbabe [5d\]\: k11 soft
+];W[jj]C[Iwan [14k\]\: im waiting for the olympic winter games
+sdfsdfsd\: k11 is wrong
+coolbabe [5d\]\: b happily n11
+Jocky [3d\]\: why he liked?
+]
+;B[mi]C[sdfsdfsd\: game over
+Warfreak2 [5d\]\: o6 cut quite large
+Jocky [3d\]\: yeah
+Repacse [4k\]\: still playing
+EuroGoTV1 [-\]\: b entered byo as well
+Earnest [2k\]\: k12 would have left b too thin?
+Mathematic [3k\]\: c1 ko to live eh>
+Lemmy [3k\]\: g10 ?
+wade [5d\]\: g1o bigger than o6 cut
+]
+;W[gj]C[CptHook [?\]\: fullscreen doesnt work
+];B[jh];W[kh]C[wade [5d\]\: res now
+Danilokun [2k?\]\: duh
+Warfreak2 [5d\]\: are you sure, wade?
+coolbabe [5d\]\: w head strong
+]
+;B[kg]C[coolbabe [5d\]\: l13 easily kill
+];W[lh]C[Warfreak2 [5d\]\: g10 doesn't look like it was that big, to me \:-)
+]
+;B[mg]C[coolbabe [5d\]\: n13
+nonochan [6d\]\: N13
+talm95 [2d\]\: easy
+wade [5d\]\: over
+Idn [2d\]\: lol
+Repacse [4k\]\: squeeze
+nonochan [6d\]\: mercy killing
+ickypoo [2k\]\: nice
+AroundOneD [2d\]\: over
+jabbawocky [1d\]\: its over for sure now
+Lemmy [3k\]\: resign would be ok here
+Danilokun [2k?\]\: please missread =x
+Idn [2d\]\: n9 ?
+Danilokun [2k?\]\: ah FUUUUUUUUu
+]
+;W[og]C[sdfsdfsd\: b+45
+Aoiro [7k\]\: that should suffice, no?
+Warfreak2 [5d\]\: does nothing
+jabbawocky [1d\]\: omg
+talm95 [2d\]\: ?
+Javaness [-\]\: cut
+Warfreak2 [5d\]\: just q13 block
+]
+;B[pg]C[coolbabe [5d\]\: erhhhhhhhhhhhhhhhhhh
+Repacse [4k\]\: time to shake hands
+]
+;W[mk]C[Warfreak2 [5d\]\: fuhhhhh
+traceur204 [4k\]\: lol
+ickypoo [2k\]\: time seppuku
+Earnest [2k\]\: oh... interesting move
+Warfreak2 [5d\]\: yep, o6 cut soon
+Warfreak2 [5d\]\: just o12 now
+jabbawocky [1d\]\: o12 
+]
+;B[ml]C[wade [5d\]\: o12
+Warfreak2 [5d\]\: i guess this is ok
+Danilokun [2k?\]\: w\: ok,, drw?
+]
+;W[nh]C[coolbabe [5d\]\: n8
+coolbabe [5d\]\: lolo
+Javaness [-\]\: hmm
+wade [5d\]\: n8 bad
+]
+;B[ng]C[Warfreak2 [5d\]\: looks like b tricked himself
+nonochan [6d\]\: squeeze
+]
+;W[nj]C[talm95 [2d\]\: ???
+];B[nk];W[ni]C[minismurf [-\]\: b messed up, no?
+jabbawocky [1d\]\: n8 was awful
+Javaness [-\]\: doesn;t matter
+coolbabe [5d\]\: k14
+wade [5d\]\: k14?
+v5 [3k\]\: does live stream working? it only tries to load the video.. nothing displayed
+mustang [3d\]\: nice play
+BUM [7d\]\: whats this game IoI
+Lemmy [3k\]\: nice \:)
+Warfreak2 [5d\]\: p14
+]
+;B[jf]C[BUM [7d\]\: they reads as in 10s blitz
+];W[mk]C[Earnest [2k\]\: works for me
+namishere [-\]\: wha
+]
+;B[of]C[BUM [7d\]\: every move is mess
+qgo [4k\]\: how to win a won game
+Javaness [-\]\: peter very nervous sometimes
+AroundOneD [2d\]\: sequence wrong
+nonochan [6d\]\: p9
+coolbabe [5d\]\: p11
+DrH0use [2d\]\: m7 
+Mathematic [3k\]\: how stong are these ppl on kgs
+]
+;W[oi]C[Repacse [4k\]\: about 5d
+];B[qj]C[mikael [1k\]\: looool
+nonochan [6d\]\: bye bye
+nicht [2k\]\: they dont have inet
+sdfsdfsd\: m7 looks nice
+Jocky [3d\]\: black win 
+AroundOneD [2d\]\: 012 first
+Mathematic [3k\]\: no internets in nederland?
+nicht [2k\]\: nope
+coolbabe [5d\]\: p9
+Earnest [2k\]\: p9
+coolbabe [5d\]\: no good
+coolbabe [5d\]\: not any more moves
+]
+;W[lm]C[mustang [3d\]\: still k5 
+];B[gn]C[DrH0use [2d\]\: k5
+coolbabe [5d\]\: k5
+jabbawocky [1d\]\: hehe
+Javaness [-\]\: black needs to relax
+jabbawocky [1d\]\: sente
+Jocky [3d\]\: dam
+Jocky [3d\]\: atari
+]
+;W[jl]C[Warfreak2 [5d\]\: k5
+DrH0use [2d\]\: ????????
+coolbabe [5d\]\: g6
+coolbabe [5d\]\: lol
+wade [5d\]\: b like to suiside
+Earnest [2k\]\: wow
+]
+;B[jo]C[Idn [2d\]\: que de retournement !
+coolbabe [5d\]\: 2 huge spoons
+DrH0use [2d\]\: g6 is illegal move
+nonochan [6d\]\: l8
+Earnest [2k\]\: why illegal?
+Warfreak2 [5d\]\: b tricked himself again?
+miao [5d\]\: l8 no work
+miao [5d\]\: ..
+Jocky [3d\]\: l8
+Jocky [3d\]\: work
+]
+;W[kl]C[Jocky [3d\]\: \:D
+Repacse [4k\]\: all for the spectators
+];B[in]C[miao [5d\]\: o6 throwin game iver
+nonochan [6d\]\: why not?
+nonochan [6d\]\: f6
+DrH0use [2d\]\: f6
+]
+;W[fn]C[mustang [3d\]\: lol game
+DrH0use [2d\]\: big
+nicht [2k\]\: n8
+miao [5d\]\: k9
+coolbabe [5d\]\: lol
+Jocky [3d\]\: rapid game lol
+Jocky [3d\]\: \:\:))
+]
+;B[jk]C[AroundOneD [2d\]\: oops
+Ryu [2k\]\: wow..
+nonochan [6d\]\: but is doesn't work completly
+BUM [7d\]\: ..
+Aoiro [7k\]\: black connects
+Earnest [2k\]\: they still have b1 to decide, too
+wade [5d\]\: is b showing how to lose a won game?
+]
+;W[ll]C[miao [5d\]\: you lose points and sente
+Jocky [3d\]\: lol
+Ryu [2k\]\: lol i thnk so
+Syptryn [3d?\]\: what the
+nonochan [6d\]\: it works
+Aoiro [7k\]\: Wm8 n7 n6 o6 o5 p5 o6 q6 
+Syptryn [3d?\]\: I was listing to the audio
+miao [5d\]\: oh
+DrH0use [2d\]\: ko at p6
+Syptryn [3d?\]\: and came back to see this
+hollywood [2k\]\: nice
+miao [5d\]\: hm
+Earnest [2k\]\: wow big
+]
+;B[ik]C[BUM [7d\]\: huge pain in b side
+Idn [2d\]\: oO
+minismurf [-\]\: I dont see b's plan
+mustang [3d\]\: maybe ko
+Earnest [2k\]\: the audio tells a different story, yes
+hollywood [2k\]\: may be dead
+nonochan [6d\]\: W has become delusional
+DrH0use [2d\]\: ko at p6 as i said
+mikael [1k\]\: yes ko
+Aoiro [7k\]\: kill K10
+]
+;W[mj]C[Nyanjilla [-\]\: does b have a plan, now?
+Repacse [4k\]\: o6 
+Warfreak2 [5d\]\: o6
+ickypoo [2k\]\: this is painfull to watch
+Syptryn [3d?\]\: white seems out to me
+nonochan [6d\]\: B has become delusional, I mean
+CptHook [?\]\: b could easy played before o12 instead of n8 and connected groups at k5
+]
+;B[nn]C[Syptryn [3d?\]\: ...
+Ryu [2k\]\: o6
+DrH0use [2d\]\: o5
+coolbabe [5d\]\: huge ko
+DrH0use [2d\]\: then p5
+wade [5d\]\: ko
+Warfreak2 [5d\]\: everyone loves ko
+coolbabe [5d\]\: unless w see a switch
+spor [-\]\: woaaah this works?
+]
+;W[no]C[coax [2d\]\: no, ko
+DrH0use [2d\]\: ko
+coolbabe [5d\]\: oops
+Alcoolo [1k\]\: ko
+]
+;B[oo]C[Alcoolo [1k\]\: huuge ko
+Repacse [4k\]\: it`s a noko
+Louco [1k\]\: n7
+DrH0use [2d\]\: just see the beauty of this ko
+coax [2d\]\: funny shape ahead
+Aoiro [7k\]\: bravo! B
+Louco [1k\]\: N7
+coolbabe [5d\]\: over
+Warfreak2 [5d\]\: lolshape ahead
+Javaness [-\]\: ai ai ai
+Warfreak2 [5d\]\: bravo w
+nonochan [6d\]\: oh oh ko
+]
+;W[mn]C[Jocky [3d\]\: lol 
+Warfreak2 [5d\]\: he got a ko
+Jocky [3d\]\: aia ai
+DrH0use [2d\]\: ko
+Syptryn [3d?\]\: ko
+coolbabe [5d\]\: staring from b not b10
+Warfreak2 [5d\]\: that's bravo for w
+DrH0use [2d\]\: with o8
+nicht [2k\]\: q6 
+]
+;B[pn]C[Aoiro [7k\]\: you are right damn
+bibob [30k?\]\: ko
+DrH0use [2d\]\: o8 now
+Fukurokuji [3k\]\: no ko
+jabbawocky [1d\]\: snapback ko
+Alcoolo [1k\]\: ko
+Aoiro [7k\]\: no youre not
+coolbabe [5d\]\: a ko is a ko
+]
+;W[nl];B[nn]C[Jocky [3d\]\: lol yes
+nonochan [6d\]\: q9 
+hollywood [2k\]\: w still have the corner
+Syptryn [3d?\]\: k-17
+DrH0use [2d\]\: \:) im the best
+geoffrix [6k\]\: amazing
+dutch2dan [1d\]\: small ko at the end of a rather uneventful game \:)
+Jocky [3d\]\: c16
+coolbabe [5d\]\: r14
+meijing [?\]\: white has insufficient threats
+Repacse [4k\]\: where are the threats ?
+DrH0use [2d\]\: i predice"d this ko 10 move ago
+eurogotv [-\]\: wow
+AroundOneD [2d\]\: missed f6 is fatal
+Alcoolo [1k\]\: no bigger threat
+Javaness [-\]\: black will only make one move now
+coolbabe [5d\]\: k17
+coolbabe [5d\]\: not r14
+eurogotv [-\]\: i enter on the right moment
+Syptryn [3d?\]\: r14
+hollywood [2k\]\: dr house you are amazing
+]
+;W[jc]C[DrH0use [2d\]\: c16
+];B[mm]C[DrH0use [2d\]\: oh lol
+DrH0use [2d\]\: is that blitz?
+LeT63 [1d\]\: \:-))
+Repacse [4k\]\: dang
+miao [5d\]\: b win
+taiji [1k\]\: wow fireworks!
+LeT63 [1d\]\: that was fast
+Alcoolo [1k\]\: sure
+coolbabe [5d\]\: w win?
+minismurf [-\]\: b win
+Aoiro [7k\]\: now let's search white's territory again
+Javaness [-\]\: black still ahead
+Vinata [5d\]\: where did w play?
+meijing [?\]\: white needed some monster threat
+nonochan [6d\]\: k17
+Aoiro [7k\]\: even with the top
+Alcoolo [1k\]\: he passed
+Jocky [3d\]\: k17
+coolbabe [5d\]\: k18 of coz
+DrH0use [2d\]\: k17
+Vinata [5d\]\: oh k17
+Ryu [2k\]\: b gas si naby stones lol
+nonochan [6d\]\: too smallllll
+Syptryn [3d?\]\: r14 was bigger right?
+Repacse [4k\]\: the top isn`t big enough
+]
+;W[jb]C[eurogotv [-\]\: Danoontje wins!!!!!!!!!!
+];B[rl]C[meijing [?\]\: lol
+Fukurokuji [3k\]\: b is danoontje?
+CptHook [?\]\: m17 is dead now
+miao [5d\]\: s6 better
+miao [5d\]\: i think
+DrH0use [2d\]\: t9?
+eurogotv [-\]\: yes, b = danoontje
+Ryu [2k\]\: in english b has so many stones lool at his pot O.O
+Earnest [2k\]\: even with keeping B1, W is behind 10
+Fukurokuji [3k\]\: tx
+]
+;W[rn]C[Javaness [-\]\: *\\o/* go danoontje *\\o/*
+BUM [7d\]\: what
+geoffrix [6k\]\: nice exchange?
+BUM [7d\]\: why not r6?
+]
+;B[rk]C[Vinata [5d\]\: but b should k18
+Minghegy [1k\]\: c1
+mikael [1k\]\: yeah w c1 win
+]
+;W[sc]C[BUM [7d\]\: they likes gote?
+Syptryn [3d?\]\: wasn't q-15 a bigger threat?
+]
+;B[se]C[Syptryn [3d?\]\: could kill o13 group...
+Lemmy [3k\]\: g13
+];W[if]C[Jocky [3d\]\: c1
+Earnest [2k\]\: b is danjanootie?
+traceur204 [4k\]\: why isn't someone playing C1?
+]
+;B[hi]C[Alcoolo [1k\]\: strange move
+Minghegy [1k\]\: ignore
+Syptryn [3d?\]\: white doesn't want to play it
+Nyanjilla [-\]\: C1 is still small
+Syptryn [3d?\]\: since he'll lose
+Syptryn [3d?\]\: if he plays it
+]
+;W[hj]C[CptHook [?\]\: how ignore
+];B[cs]C[clydesdale [3k\]\: just what I was thinking traceur
+Minghegy [1k\]\: c1
+nicht [2k\]\: m13
+BUM [7d\]\: h10 ...
+]
+;W[ig];B[jg]C[DrH0use [2d\]\: h10 only move?
+nicht [2k\]\: no
+Lemmy [3k\]\: h12 ?
+nicht [2k\]\: he could m11
+]
+(;W[gg]C[kimball [?\]\: m 13 is ajikeshi, affecting b hane at j15
+BUM [7d\]\: for what is h10?
+DrH0use [2d\]\: but m11 lol is that better???
+Alcoolo [1k\]\: It's not better but white could take sente
+]
+;AE[gg]C[meijing [?\]\: at least its not dame =)
+BUM [7d\]\: just tenuki !
+hollywood [2k\]\: ?
+])
+(;W[gh]C[BUM [7d\]\: h10 m11 miai
+hollywood [2k\]\: come on
+Javaness [-\]\: come on black
+coolbabe [5d\]\: h13
+Javaness [-\]\: show some yoghurt
+ViperDee [4k\]\: ?
+Warfreak2 [5d\]\: i guess it's for semedori
+nicht [2k\]\: who is winning?
+nicht [2k\]\: black seems quite ahead
+DrH0use [2d\]\: yes but then b connect and w dont profit from the aji at s12 you see
+dutch2dan [1d\]\: b
+miao [5d\]\: h12
+Jocky [3d\]\: a4'
+bibob [30k?\]\: h13 
+]
+;B[ap]C[coolbabe [5d\]\: or j15
+];W[hh]C[F00 [1d\]\: is this game still ongoing?
+]
+;B[pr]C[Alcoolo [1k\]\: no no, EuroGoTV is having fun 
+];W[ok]C[Aoiro [7k\]\: one of them counted
+]
+;B[nl]C[traceur204 [4k\]\: lol
+F00 [1d\]\: lol
+];W[cd]C[AroundOneD [2d\]\: b won
+]
+;B[bd]C[Ajax [5k\]\: it's close
+];W[cf]C[bobombera [9k\]\: aabout 10 p
+];B[bf]C[nicht [2k\]\: p10 
+DrH0use [2d\]\: q9
+nicht [2k\]\: i dont think so
+Javaness [-\]\: black needs the yose 
+Lemmy [3k\]\: prisonners ... so many for black
+]
+;W[pe]C[coolbabe [5d\]\: q1 ba
+];B[qf]C[Javaness [-\]\: white sneaks a lot back
+]
+;W[pd]C[nicht [2k\]\: q9 would be big mistake
+AroundOneD [2d\]\: s13
+Javaness [-\]\: need S13 
+vingol [1d\]\: SE\: w ahead...
+]
+;B[ne]C[Jocky [3d\]\: a close game
+AroundOneD [2d\]\: o15 better
+];W[lg];B[lf];W[fk]
+C[nicht [2k\]\: h6 also big
+CptHook [?\]\: ba6 are some points
+];B[qs];W[rs];B[ps]
+C[jabbawocky [1d\]\: you mean after allllllll that fighting, its a close game??
+DrH0use [2d\]\: f9 what is that?
+sdfsdfsd\: did Geert won his last game?
+nicht [2k\]\: s3 
+]
+;W[rq]C[snowman [-\]\: geert won
+];B[hn]C[traceur204 [4k\]\: B had this game in the bag as they say
+DrH0use [2d\]\: bauer won
+Earnest [2k\]\: k15
+Earnest [2k\]\: no p10
+]
+;W[oj];B[pk]C[meijing [?\]\: how much is komi?
+EuroGoTV2 [-\]\: they're still playing?
+EuroGoTV2 [-\]\: wow
+coolbabe [5d\]\: o14
+Choup [3k\]\: C'est quoi cte truc ? xD
+coolbabe [5d\]\: or j11
+]
+;W[ch];B[da];W[ea]C[Aoiro [7k\]\: d10
+];B[dg];W[eg];B[dj];W[cj];B[dk]C[traceur204 [4k\]\: instead of B h6, why not d13?
+]
+;W[ej];B[nf]C[Javaness [-\]\: why doesn't white try S13
+coolbabe [5d\]\: 2 big
+DrH0use [2d\]\: i certainly read 
+DrH0use [2d\]\: he*
+]
+;W[je]C[coax [2d\]\: because it doesnt work, maybe
+];B[ii]C[Warfreak2 [5d\]\: s13 is -1 in gote
+Javaness [-\]\: doesn't work after black saves the eye
+jimmypap [?\]\: EuroGoTV1, you missed bC15 and wD15 ....
+Jocky [3d\]\: Eurogotv you forgot to push in 15d
+Goombario [20k\]\: hey daladim I saw u enter my game.hi\:)
+Jocky [3d\]\: c15
+]
+;W[gi];B[kf]C[Cooked [1d\]\: s13 now yes
+daladim [1d\]\: hello goom
+daladim [1d\]\: \:D
+DrH0use [2d\]\: w yose is a desatrous?
+mattn [1k\]\: i don't think s13 ever does anything, does it?
+Pingu007 [3d\]\: nothing
+utchgo\: s13 does not work as b has eye
+coax [2d\]\: no
+Pingu007 [3d\]\: cause w would have no eye
+taiji [1k\]\: s13 seem waste a threat
+tudiloo [7k\]\: 1 eye vs. 0 eye
+Javaness [-\]\: before P13 was an eye it was points
+Cooked [1d\]\: s13 is +3 pts for w
+coolbabe [5d\]\: b neded s13
+Warfreak2 [5d\]\: s13 is not a threat
+coolbabe [5d\]\: before
+Warfreak2 [5d\]\: it is -1 gote
+mattn [1k\]\: cooked, i don't think so
+zum [?\]\: s13 -1pt gote
+meijing [?\]\: nah s13 is at most a ko threat for later
+Vacuity [2k\]\: so who is champ after this? peter and geert won all games?
+tudiloo [7k\]\: s13 - t12. done?
+Pingu007 [3d\]\: need at the end only
+meijing [?\]\: oh nvm
+AroundOneD [2d\]\: after o15 no s13
+Pingu007 [3d\]\: isnt it?
+meijing [?\]\: not even that
+martin3141 [1k\]\: s13 is one point in gote, as well as t13 is
+Warfreak2 [5d\]\: s13 pass, done
+tudiloo [7k\]\: ah ok pass even
+coolbabe [5d\]\: had w had o14
+Naysmith [3d?\]\: tenuki > pass \:)
+Pingu007 [3d\]\: i see nothing
+coolbabe [5d\]\: \\b needed s13
+Pingu007 [3d\]\: but im wondering
+Repacse [4k\]\: do we have a new champion ?
+AroundOneD [2d\]\: without o15, s13 is big
+sdfsdfsd\: broadcast gone?
+meijing [?\]\: white cannot win now anyways
+zum [?\]\: huh???
+Goombario [20k\]\: hey daladim werent u 2dan?
+daladim [1d\]\: long time ago
+huyhuy [3d\]\: B+res
+leachy [7k\]\: EGTV.....c15 d15 were played
+Bluefinger [11k\]\: broadcast was gone but is back now
+EuroGoTV1 [-\]\: sorry we lost the connection
+nicht [2k\]\: ageing
+Bluefinger [11k\]\: http\://eurogotv.com/index.php?menu=Live&channel=EuroGoTV1
+eurogotv [-\]\: there will be a playoff
+EuroGoTV1 [-\]\: and now I can't trace it all back
+EuroGoTV1 [-\]\: my apologies
+leachy [7k\]\: ok
+Goombario [20k\]\: ok
+eurogotv [-\]\: fired
+sdfsdfsd\: to the corner now!
+Thoravatar [2d\]\: you should have asked them to wait!
+Thoravatar [2d\]\: \:P
+eurogotv [-\]\: no money for the scribes on board 1
+Warfreak2 [5d\]\: so w has resigned?
+fuzhou [4d\]\: playoff today?
+sdfsdfsd\: still playing
+Thoravatar [2d\]\: still playing
+eurogotv [-\]\: not today
+snowman [-\]\: tonight?
+traceur204 [4k\]\: do these guys like, know the count within like a point or two, in their head as they go?
+eurogotv [-\]\: ^^
+ickypoo [2k\]\: EuroGo, where r u? they r still play
+Vacuity [2k\]\: disc i guess
+EuroGoTV1 [-\]\: we will ask the players to finish the record after the game
+Goombario [20k\]\: snowman you're name wouldve of been cooler if it was snowmanman.
+eurogotv [-\]\: i am downstairs
+sdfsdfsd\: B+25
+eurogotv [-\]\: in the room of the Youth Championship
+vijay [?\]\: the image froze
+ickypoo [2k\]\: can u update board?
+Aoiro [7k\]\: looks like B missed an opportunity to catch D6?
+Warfreak2 [5d\]\: milanmilan thought so
+Aoiro [7k\]\: like W played A9 and then E5 or so
+eurogotv [-\]\: EuroGoTV1 what is the score?
+leachy [7k\]\: b didnt get pts at b5 b4......b got in m15 and t7.....c15 d15 played
+taiji [1k\]\: looks like w resigned
+Jocky [3d\]\: balck win ?
+Jocky [3d\]\: black
+snowman [-\]\: they are counting
+leachy [7k\]\: b played a12 wa11
+Cooked [1d\]\: w will lose by 12 or so
+Repacse [4k\]\: thanks for the review
+leachy [7k\]\: b1 dead
+Aoiro [7k\]\: is it true these guys call their bicycles "fietsen"?
+Thoravatar [2d\]\: yes
+Goombario [20k\]\: yo zum!
+martin3141 [1k\]\: how many points is a13 in this situation? two of three?
+EuroGoTV1 [-\]\: B + 14.5
+vijay [?\]\: ik was wel op de fiets!
+Aoiro [7k\]\: \:D
+Aoiro [7k\]\: thank you eurogotv!
+pebarefoot [-\]\: when is the playoff?
+ickypoo [2k\]\: it is good to watch them count
+EuroGoTV1 [-\]\: thanks for watching !!
+EuroGoTV1 [-\]\: support eurogotv.com
+EuroGoTV1 [-\]\: there will be a playoff -- GROENEN - BROUWER
+ickypoo [2k\]\: don't desert your post next time
+Thoravatar [2d\]\: nice!
+EuroGoTV1 [-\]\: for the title of DUTCH CHAMPION
+SqueezeIt [1d\]\: when?
+Javaness [-\]\: \\o/
+Thoravatar [2d\]\: later, not today
+EuroGoTV1 [-\]\: unknown when
+Goombario [20k\]\: very nice
+snowman [-\]\: this year
+Repacse [4k\]\: this year
+Goombario [20k\]\: this milenium
+Javaness [-\]\: thank you eurogotv1 to 4
+Goombario [20k\]\: yesterday
+Thoravatar [2d\]\: who won, female championship?
+pebarefoot [-\]\: stay tuned to EuroGoTV for the final
+EuroGoTV1 [-\]\: Results of the tournament\: http\://nkgo.octalo.com/  Live video transmission of this game\: http\://eurogotv.com/index.php?menu=Live&channel=EuroGoTV1 
+pebarefoot [-\]\: thx EuroGo
+Goombario [20k\]\: thx EuroGo
+EuroGoTV1 [-\]\: welcome \:\]
+Thoravatar [2d\]\: no results there
+Thoravatar [2d\]\: \:(
+hollywood [2k\]\: ?
+hollywood [2k\]\: who won?
+inte [?\]\: EuroGoTV1 [-\]\: B + 14.5
+]))))

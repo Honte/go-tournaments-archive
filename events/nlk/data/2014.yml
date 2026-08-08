@@ -1,10 +1,10 @@
 stages:
   - type: tournament
-    name: championship
+    name: Championship
     file: nl2014.txt
     scoringColumns:
       - wins
-      - null      
+      - null
       - sos
       - sodos
     breakers:
@@ -12,3 +12,18 @@ stages:
       - sos
       - sodos
     findSharedPlaces: true
+    games:
+      - 1-6 1:B+19.5 round:6 sgf:2014/6-MerlijnKuin-RubenCornelissen.sgf
+      - 1-10 1:B+R round:5 sgf:2014/5-MerlijnKuin-FrederikSpanhoff.sgf
+      - 2-3 2:B+R round:4 sgf:2014/4-AlexanderEerbeek-GeertGroenen.sgf
+      - 2-7 2:B+8.5 round:8 sgf:2014/8-AlexanderEerbeek-WillemKoenPomstra.sgf
+      - 3-1 1:W+14.5 round:3 sgf:2014/3-GeertGroenen-MerlijnKuin.sgf
+      - 3-12 3:B+R round:2 sgf:2014/2-GeertGroenen-KimOuweleen.sgf
+      - 4-1 1:W+4.5 round:4 sgf:2014/4-MichielEijkhout-MerlijnKuin.sgf
+      - 6-2 6:B+R round:5 sgf:2014/5-RubenCornelissen-AlexanderEerbeek.sgf
+      - 6-3 3:W+4.5 round:7 sgf:2014/7-RubenCornelissen-GeertGroenen.sgf
+      - 7-1 1:W+R round:7 sgf:2014/7-WillemKoenPomstra-MerlijnKuin.sgf
+      - 9-1 1:W+0.5 round:8 sgf:2014/8-BramKoster-MerlijnKuin.sgf
+      - 10-4 4:W+0.5 round:3 sgf:2014/3-FrederikSpanhoff-MichielEijkhout.sgf
+      - 10-7 7:W+1.5 round:6 sgf:2014/6-FrederikSpanhoff-WillemKoenPomstra.sgf
+      - 11-3 3:W+R round:1 sgf:2014/1-FrankJanssen-GeertGroenen.sgf

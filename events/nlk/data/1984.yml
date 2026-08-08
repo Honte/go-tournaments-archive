@@ -1,6 +1,6 @@
 stages:
   - type: tournament
-    name: championship
+    name: Championship
     file: nl1984.txt
     notes: Vermaseren won the decider for the 6th place 
     scoringColumns: 

@@ -2,6 +2,7 @@ top:
 - mzakanj
 - ttukara
 - smedak
+name: 31st Croatian Championship
 stages:
   - type: tournament
     name:
@@ -9,6 +10,8 @@ stages:
       en: Challengers
     file: hr2024.txt
     komi: 6.5 
+    placeOffset: 1
+    promoted: 1
     scoringColumns:
       - wins
       - null

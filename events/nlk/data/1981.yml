@@ -5,8 +5,8 @@ top:
 stages:
   - type: tournament
     file: nl1981.txt
-    name: championship
-    notes: The game between Jaap Schiethart and Machiel Rijkers was skipped
+    name: Championship
+    notes: Recreated from cross table. Games order can be different. The game between Jaap Schiethart and Machiel Rijkers was skipped
     dir: 1981/nlk
     promoted: 2
     scoringColumns:
@@ -18,7 +18,7 @@ stages:
     findSharedPlaces: true
   - type: tournament
     file: nl1981playoff.txt
-    name: playoff
+    name: Playoff
     dir: 1981/playoff
     scoringColumns:
       - wins

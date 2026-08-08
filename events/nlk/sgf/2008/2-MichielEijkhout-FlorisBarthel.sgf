@@ -1,0 +1,27 @@
+(;CA[utf-8]ST[2]RU[Japanese]OT[5/10 Canadian]GM[1]AP[CGoban:3]SZ[19]FF[4]GN[2nd round Dutch Championship]
+EV[Dutch Championship]RO[2]DT[2008-01-12]PC[The KGS Go Server at http\://www.gokgs.com/]
+PB[Michiel Eijkhout]BR[6d]PW[Floris Barthel]WR[4d]KM[6.5]TM[300]RE[B+R]MULTIGOGM[1]
+
+(;B[dp];W[pp])
+(;B[cp];W[pp];B[dc];W[eq];B[qd];W[de];B[gp];W[cc];B[ep];W[dd];B[ec];W[cb];B[hc]
+;W[oc];B[mc];W[pe];B[pd];W[od];B[oe];W[ne];B[of];W[md];B[pf];W[jc];B[he]
+(;W[ie])
+(;W[je];B[cg];W[gd];B[gc];W[dg];B[dh];W[eg];B[cf];W[ce];B[be];W[bd];B[hg];W[dj]
+;B[eh];W[fh]
+(;B[fi])
+(;B[ei];W[hh];B[ih];W[hi];B[ig];W[gg];B[jb];W[kb];B[ic];W[kc];B[ej];W[dl];B[ii]
+;W[hj];B[ek];W[bi];B[ch];W[cn];B[bm];W[bn];B[bk];W[do];B[dp];W[cj];B[bj];W[fm];B[fq]
+(;W[ae];B[ff])
+(;W[hd];B[id];W[ie];B[ge];W[ae];B[ff];W[ee];B[fe];W[ci];B[gk];W[hm];B[dk];W[ck]
+;B[cl];W[cm];B[bl];W[ag];B[il];W[ij];B[gn];W[fl];B[hl];W[fk];B[gj];W[fn];B[gi];W[jj]
+;B[kl];W[qj];B[lj];W[hf];B[qn];W[mq];B[qh];W[oj];B[gh];W[kh];B[fg];W[ji];B[rp];W[qq]
+;B[ql];W[jq];B[jd];W[ke];B[pb];W[pc];B[qc];W[ob];B[kd];W[ld]
+(;B[rq];W[rr])
+(;B[oq];W[op];B[qr];W[pr];B[rq];W[or];B[qp];W[nq];B[pq];W[hq]
+(;B[gr])
+(;B[bo];W[an];B[gr]
+(;W[hr])
+(;W[qb];B[rb];W[pa];B[mh];W[rh];B[qg];W[rg];B[rf]
+(;W[ri];B[rk];W[pl];B[lf];W[kf])
+(;W[qi];B[rk];W[pl];B[lf];W[kf];B[rj];W[ri];B[om];W[qk];B[qm];W[mi];B[li];W[lh]
+;B[mg];W[ol];B[le];W[lg];B[mf];W[oh];B[og];W[jg];B[if];W[lk];B[kk])))))))))

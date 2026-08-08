@@ -1,0 +1,91 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]OT[1x30 byo-yomi]AP[CGoban:3]SZ[19]GM[1]GN[Dutch Championship 2011 round 4 board 4]
+EV[Dutch Championship 2011]RO[4]DT[2011-01-16]PC[The KGS Go Server at http\://www.gokgs.com/]
+PB[Filip Vanderstappen]BR[5d]PW[Robert Rehm]WR[5d]KM[6.5]TM[5400]RE[W+R]SO[EuroGoTV]
+CP[EuroGoTV]MULTIGOGM[1]
+;B[pd];W[dp];B[qp];W[dd];B[fq];W[op];B[cn];W[eo];B[cq];W[gp];B[cp];W[gq];B[pn];W[qq]
+;B[rq];W[pq];B[ro];W[lp];B[fc];W[cf];B[jd];W[qf];B[qh];W[qc];B[pc];W[qd];B[pe];W[rf]
+;B[og];W[hc];B[hd];W[ic];B[id];W[gc];B[gd];W[ec];B[fb];W[fd];B[gb];W[jc];B[kc];W[kb]
+;B[lc];W[hb];B[lb];W[jb];B[eb];W[db];B[cc];W[dc];B[fe];W[ed];B[er];W[hn];B[rh];W[nn]
+;B[qb];W[rb];B[ra];W[pb];B[pa];W[qa];B[cd];W[ef];B[qb];W[ob];B[rc];W[qa];B[cb];W[oa]
+;B[da];W[ea];B[fa];W[ka];B[ce];W[df];B[bf];W[bg];B[ae];W[ke];B[jg];W[kd];B[md]C[EuroGoTV6 [-\]\: m14
+]
+;W[kg]C[EuroGoTV6 [-\]\: b has to watch out for j14
+];B[gg]C[EuroGoTV6 [-\]\: d12 for w now
+]
+;W[jf];B[ig];W[kh];B[ch];W[dh];B[ci];W[di];B[cj]C[EuroGoTV6 [-\]\: f11? c13?
+];W[fi]
+C[EuroGoTV6 [-\]\: b seems to be in a bit of a pinch
+];B[gi]C[EuroGoTV6 [-\]\: w f10
+]
+;W[gj];B[hi];W[dk];B[cg]C[EuroGoTV6 [-\]\: I don't understand this move, b c13/c9 were miai
+]
+;W[fh];B[hj];W[gk];B[kj]C[EuroGoTV6 [-\]\: ok, so now white is in trouble \:x
+]
+;W[lj];B[lk];W[li];B[kk];W[nj];B[mk];W[oi]C[EuroGoTV6 [-\]\: It is a miracle if everything lives \:x
+]
+(;B[ph]C[EuroGoTV6 [-\]\: p8?
+];W[pk];B[nh];W[ni];B[ol]C[EuroGoTV6 [-\]\: these seem like they were gamedeciding moves
+]
+;W[mf]C[EuroGoTV6 [-\]\: q14
+];B[rk];W[ne]C[EuroGoTV6 [-\]\: b should've gotten m14 l14 exchange earlier, now he loses n16 it seems
+]
+;B[lf]C[EuroGoTV6 [-\]\: w n15
+];W[le];B[mg]C[EuroGoTV6 [-\]\: it looks as if w can play q14
+EuroGoTV6 [-\]\: o, no nvm
+EuroGoTV6 [-\]\: w can just n15 and be happy I think
+]
+;W[nf];B[mb]C[EuroGoTV6 [-\]\: w can o16 easily
+EuroGoTV6 [-\]\: w's group has 6 liberties after j19 h19 
+EuroGoTV6 [-\]\: ok, maybe not easily, but by one lib \:p
+EuroGoTV6 [-\]\: w can just j19 too, g19 ko is nice and big and b n18 doesn't help b anyway
+]
+;W[nd];B[hk];W[gm];B[gr];W[hr];B[ir]C[EuroGoTV6 [-\]\: I think w has to let b connect, he has too many kothreats
+EuroGoTV6 [-\]\: or maybe robert can play h1 h3 j3 h4 k2 
+]
+;W[hs];B[hq];W[iq];B[hp];W[jr];B[ip];W[jq];B[jo]C[EuroGoTV6 [-\]\: w g5 seems to be enough to win for w
+]
+;W[jm];B[go];W[fp];B[fn]C[EuroGoTV6 [-\]\: d7
+];W[dm];B[kn];W[km]C[EuroGoTV6 [-\]\: Robert wants to go home as fast as possible it seems
+]
+;B[ho]C[EuroGoTV6 [-\]\: d6
+];W[fm]C[EuroGoTV6 [-\]\: or this, I like this move \:)
+EuroGoTV6 [-\]\: b n6 now maybe? Looks like nothing works though 
+]
+;B[mn]C[EuroGoTV6 [-\]\: w can just n5 and win I think
+EuroGoTV6 [-\]\: no need to make it complicated
+EuroGoTV6 [-\]\: n7 m7 m8 m6 o7 n8 l8 o5 p5 n4 p6 n3 seems dangerous
+]
+;W[lm];B[mp];W[mm];B[no];W[oo];B[on];W[nm];B[mq];W[lo];B[mo];W[ln];B[or];W[pl];B[rl]
+;W[jh];B[if];W[ff];B[je];W[kf]C[EuroGoTV6 [-\]\: b needs another eye
+EuroGoTV6 [-\]\: j12?
+EuroGoTV6 [-\]\: neh, doesn't help at all \:/
+]
+;B[ih]C[EuroGoTV6 [-\]\: k11 
+EuroGoTV6 [-\]\: o wait, it does help xD
+];W[ji]C[EuroGoTV6 [-\]\: g12 alive?
+EuroGoTV6 [-\]\: j9 cuts of l10, that's too big \:/
+]
+;B[gh];W[nr];B[nq];W[oq];B[mr];W[pr];B[ns];W[ps];B[kr];W[kq];B[lq];W[ks];B[ls];W[lr]
+;B[en];W[dn];B[kr];W[he];B[ge];W[lr];B[co];W[do];B[kr];W[gf];B[hf];W[lr];B[fo];W[ms]
+;B[ep];W[ls];B[hl];W[hm];B[pf];W[bm]C[EuroGoTV6 [-\]\: b7 much bigger than q14
+]
+;B[dj];W[ej];B[ia];W[ha];B[ca];W[ma];B[dg];W[eh]C[EuroGoTV6 [-\]\: 11.28 minutes for filip, 15.48 for robert
+EuroGoTV6 [-\]\: s2, b9, r7 seem like biggest moves left
+]
+;B[em]C[EuroGoTV6 [-\]\: b9 for w?
+];W[el];B[fl];W[cm];B[gl];W[fk];B[bn];W[dq];B[dr]
+;W[bk];B[ck];W[cl];B[bj];W[aj];B[ai];W[ak];B[am];W[ah];B[bh];W[bi];B[oc];W[nc];B[ai]
+;W[ee];B[ie];W[bi];B[js];W[is];B[ai]C[EuroGoTV6 [-\]\: b hoping for a bad kothreat by w I think
+]
+;W[qj]C[EuroGoTV6 [-\]\: but white doesn't have much to lose here anyway
+];B[qe]
+;W[re];B[rj];W[bi];B[rd];W[qb];B[ai];W[qm];B[rm];W[bi];B[ag];W[rr];B[bl];W[al];B[an]
+;W[qn];B[sr];W[rn];B[sn];W[qo];B[rs];W[qr];B[ng];W[qi];B[ri];W[sm];B[sl]C[EuroGoTV6 [-\]\: b seems to have died in gote
+]
+;W[sg]C[EuroGoTV6 [-\]\: black was in byo yomi and didn't notice, he went through his flag and that's equivalent to a pass
+EuroGoTV6 [-\]\: then he resigned
+EuroGoTV6 [-\]\: Robert wins by resignation
+EuroGoTV6 [-\]\: thanks for watching
+DanielTom [-\]\: thx EuroGoTV6
+])
+(;B[lf];W[kf];B[ph];W[ol]))

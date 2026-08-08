@@ -139,6 +139,7 @@
     "ai": "Zobacz analizę AI",
     "preview": "Widok planszy na koniec gry %{0}",
     "komi": "Komi",
+    "round": "Runda",
     "moves": "Ruchów",
     "prisoners": "Jeńcy",
     "controls": {
@@ -209,6 +210,8 @@
     "sort": "Sortuj według",
     "newest": "Najnowszy turniej",
     "oldest": "Najstarszy turniej",
+    "mostInGroup": "Najwięcej w grupie",
+    "fewestInGroup": "Najmniej w grupie",
     "mostMoves": "Najwięcej ruchów",
     "fewestMoves": "Najmniej ruchów",
     "strongestBlack": "Najsilniejsze czarne",

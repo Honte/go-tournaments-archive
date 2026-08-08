@@ -1,7 +1,7 @@
 stages:
   - type: tournament
     file: nl1975final.txt
-    name: final
+    name: Final
     notes: played in autumn
     dir: 1975/final
     scoringColumns:

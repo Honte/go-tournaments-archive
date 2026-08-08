@@ -6,7 +6,7 @@ top:
 stages:
   - type: tournament
     file: ie1994.txt
-    name: top8
+    name: Top 8
     time: 60min + 20sec
     notes: Nov 1993 - Jan 1994, there was supposed to be 3rd place playoff (Gallagher,Rafferty, winner of Flinter vs Murphy) - no available data
     promoted: 2

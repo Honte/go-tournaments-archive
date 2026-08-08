@@ -7,9 +7,9 @@
 ; KM[6.5]
 ; TM[90]
 ;
-  1 Mutabzija Zoran         5d HR Zagr 15 5  62 311   6+/b  2+/w  3+/w  5+/b 4+/w |10249041
-  2 Kuhar Velimir           5d HR Zagr 14 4  64 318   5+/w  1-/b  4+/b  3+/w 0+   |10425657
-  3 Smud Mladen             3d HR VGor 12 2  64 318   4+/w  0+    1-/b  2-/b 5-/b |10398982
-  4 Bednjanec Zvonko        1k HR VGor 12 2  64 318   3-/b  5+/w  2-/w  0+   1-/b |10525735
-  5 Zakanj Matej            4k HR VGor 12 2  64 318   2-/b  4-/b  0+    1-/w 3+/w |13437963
-  6 Bacevina Sead           2d HR Zagr 12 0  55 262   1-/w  0=    0=    0=   0=   |10986701
+   1 Mutabzija Zoran                5d HR  Zagr    15     5    62   311    6+/b    2+/w    3+/w    4+/b    5+/w |10249041
+   2 Kuhar Velimir                  5d HR  Zagr    14     4    64   318    4+/w    1-/b    5+/b    3+/w      0+ |10425657
+   3 Smud Mladen                    3d HR  VGor    12     2    64   318    5+/w      0+    1-/b    2-/b    4-/b |10398982
+   4 Zakanj Matej                   4k HR  VGor    12     2    64   318    2-/b    5-/b      0+    1-/w    3+/w |13437963
+   5 Bednjanec Zvonko               1k HR  VGor    12     2    64   318    3-/b    4+/w    2-/w      0+    1-/b |10525735
+   6 Bacevina Sead                  2d HR  Zagr    12     0    55   262    1-/w      0=      0=      0=      0= |10986701

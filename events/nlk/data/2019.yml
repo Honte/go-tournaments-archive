@@ -1,11 +1,11 @@
 stages:
   - type: tournament
-    name: championship
+    name: Championship
     file: nl2019.txt
     scoringColumns:
-      - null      
+      - null
       - wins
-      - mms      
+      - mms
       - sos
       - sodos
       - direct
@@ -14,6 +14,14 @@ stages:
       - sos
       - sodos
       - direct
-    columns:  
+    columns:
       - wins
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:7 sgf:2019/7-GeertGroenen-AlexanderEerbeek.sgf
+      - 1-4 4:W+R round:5 sgf:2019/5-GeertGroenen-MichielTel.sgf
+      - 1-7 1:B+5.5 round:2 sgf:2019/2-GeertGroenen-MichielEijkhout.sgf
+      - 2-1 1:W+R round:3 sgf:2019/3-AlexanderEerbeek-GeertGroenen.sgf
+      - 2-3 2:B+R round:6 sgf:2019/6-AlexanderEerbeek-FrankJanssen.sgf
+      - 3-1 1:W+5.5 round:4 sgf:2019/4-FrankJanssen-GeertGroenen.sgf
+      - 5-15 5:B+R round:1 sgf:2019/1-RobvanZeijst-KimOuweleen.sgf

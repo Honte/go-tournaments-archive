@@ -6,7 +6,7 @@ website: http://belfastgo.yolasite.com/oldtop8.php
 stages:
   - type: tournament
     file: ie2002.txt
-    name: top8
+    name: Top 8
     promoted: 2
     notes: a lot of games were not played, no available info about potential 3-4 playoff
     scoringColumns:

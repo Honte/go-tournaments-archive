@@ -1,3 +1,4 @@
+name: 19th Croatian Championship
 stages:
   - type: tournament
     file: hr2012.txt

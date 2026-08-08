@@ -1,5 +1,6 @@
 'use client';
 
+import { clsx } from 'clsx';
 import type { ComponentProps, PropsWithChildren } from 'react';
 import { Link } from '@/components/navigation/Link';
 import { getGameViewerSearch } from '@/components/viewer/utils';
@@ -17,17 +18,17 @@ export function GameViewerTrigger({ sgfPath, children, className, ...props }: Ga
   return (
     <Link
       type="button"
-      className={`
-        block cursor-pointer 
-        border-event-dark border-2 rounded-lg 
-        hover:scale-[1.05] transition-transform duration-200 
-        overflow-hidden
-        bg-event-light 
-        focus:border-event-primary focus:scale-[1.05]
-        active:border-event-hover
-        p-0 
-        outline-none ${className ?? ''}
-      `}
+      className={clsx(
+        'inline-block cursor-pointer',
+        'border-event-dark border-2 rounded-lg',
+        'hover:scale-[1.05] transition-transform duration-200',
+        'overflow-hidden',
+        'bg-event-light',
+        'focus:border-event-primary focus:scale-[1.05]',
+        'active:border-event-hover',
+        'p-0 outline-none',
+        className
+      )}
       href={href}
       {...props}
     >

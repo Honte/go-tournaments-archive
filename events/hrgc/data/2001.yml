@@ -1,3 +1,4 @@
+name: 8th Croatian Championship
 stages:
   - type: tournament
     file: hr2001.txt

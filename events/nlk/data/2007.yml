@@ -1,10 +1,10 @@
 stages:
   - type: tournament
-    name: championship
+    name: Championship
     file: nl2007.txt
     scoringColumns:
-      - null 
-      - wins     
+      - null
+      - wins
       - sos
       - sodos
       - direct
@@ -14,3 +14,5 @@ stages:
       - sodos
       - direct
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+1.5 round:5 sgf:2007/5-MerlijnKuin-GeertGroenen.sgf

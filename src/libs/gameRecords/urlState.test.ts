@@ -53,6 +53,18 @@ describe('game browser URL state', () => {
     assert.equal(parsed.winner, undefined);
   });
 
+  it('round-trips group-count sort values', () => {
+    for (const sort of ['group-count-desc', 'group-count-asc'] as const) {
+      const parsed = parseGameRecordsState(new URLSearchParams(`sort=${sort}&group=year`));
+      const serialized = serializeGameRecordsState(parsed);
+
+      assert.equal(parsed.sort, sort);
+      assert.equal(serialized.get('sort'), sort);
+      assert.equal(serialized.get('group'), 'year');
+      assert.deepEqual(parseGameRecordsState(serialized), parsed);
+    }
+  });
+
   it('round-trips Unknown komi and canonicalizes the old null value', () => {
     const parsed = parseGameRecordsState(new URLSearchParams('komi=unknown&komi=null'));
     const serialized = serializeGameRecordsState(parsed);

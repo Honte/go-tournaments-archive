@@ -4,25 +4,39 @@ top:
   - pbrouwer
 stages:
   - type: tournament
-    name: championship
+    name: Championship
     dir: 2009/nlk
-    promoted: 2    
+    promoted: 2
     file: nl2009.txt
     scoringColumns:
-      - wins    
+      - wins
       - sos
-      - null  
-      - null        
+      - null
+      - null
     breakers:
       - wins
       - sos
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+6.5 round:6 sgf:2009/nlk/6-GeertGroenen-MerlijnKuin.sgf
+      - 1-4 4:W+14.5 round:3 sgf:2009/nlk/3-GeertGroenen-FrankJanssen.sgf
+      - 2-3 2:B+R round:5 sgf:2009/nlk/5-MerlijnKuin-PeterBrouwer.sgf
+      - 2-5 2:B+10.5 round:3 sgf:2009/nlk/3-MerlijnKuin-RobertRehm.sgf
+      - 4-2 2:W+R round:4 sgf:2009/nlk/4-FrankJanssen-MerlijnKuin.sgf
+      - 4-16 4:B+R round:1 sgf:2009/nlk/1-FrankJanssen-MichielEijkhout.sgf
+      - 5-1 1:W+7.5 round:7 sgf:2009/nlk/7-RobertRehm-GeertGroenen.sgf
+      - 6-1 1:W+R round:8 sgf:2009/nlk/8-EmilNijhuis-GeertGroenen.sgf
+      - 7-1 1:W+12.5 round:4 sgf:2009/nlk/4-FilipVanderstappen-GeertGroenen.sgf
+      - 11-4 4:W+21.5 round:2 sgf:2009/nlk/2-RudiVerhagen-FrankJanssen.sgf
   - type: tournament
     file: nl2009playoff.txt
-    name: playoff
+    name: Playoff
     dir: 2009/playoff
     scoringColumns:
       - wins
     breakers:
       - wins
-    findSharedPlaces: true    
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:2 sgf:2009/playoff/2-MerlijnKuin-GeertGroenen.sgf
+      - 2-1 1:W+21.5 round:3 sgf:2009/playoff/3-GeertGroenen-MerlijnKuin.sgf

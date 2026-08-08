@@ -1,11 +1,11 @@
 top:
-  - 
-  - 
-  - prenaut
+  - Xinqun Lu
+  - Dewei Liu
+  - Philippe Renaut
 stages:
   - type: tournament
     file: ie2026.txt
-    name: top8
+    name: Top 8
     notes: double ladder
     dir: 2026/top8
     promoted: 2
@@ -24,7 +24,6 @@ stages:
   - type: tournament
     file: ie2026final.txt
     name: Final
-    notes: One more game left!
     dir: 2026/final
     scoringColumns:
       - wins
@@ -36,4 +35,5 @@ stages:
     findSharedPlaces: true
     games:
       - 1-2 1:B+0.5 round:1 sgf:2026/final/1-XinqunLu-DeweiLiu.sgf ogs:https://online-go.com/game/86634068
+      - 2-1 1:W+17.5 round:3 sgf:2026/final/3-DeweiLiu-XinqunLu.sgf ogs:https://online-go.com/game/87887165
       - 2-1 2:B+6.5 round:2 sgf:2026/final/2-DeweiLiu-XinqunLu.sgf ogs:https://online-go.com/game/87054166

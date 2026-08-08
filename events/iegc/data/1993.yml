@@ -6,7 +6,7 @@ notes: data from IGA newsletter No. 9
 stages:
   - type: tournament
     file: ie1993.txt
-    name: top8
+    name: Top 8
     notes: November 1992 - January 1993
     promoted: 1
     placeOffset: 1

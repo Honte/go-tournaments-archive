@@ -1,3 +1,4 @@
+name: 11th Croatian Championship
 stages:
   - type: tournament
     file: hr2004.txt
@@ -11,4 +12,6 @@ stages:
       - mms
       - sos
       - sosos
+    columns:
+      - wins        
     findSharedPlaces: true

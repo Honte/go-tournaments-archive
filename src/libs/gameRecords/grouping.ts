@@ -34,9 +34,20 @@ export function groupGameRecords(
   }
 
   return [...groups]
-    .toSorted(([leftKey, left], [rightKey, right]) =>
-      state.group === 'year' ? Number(rightKey) - Number(leftKey) : left.label.localeCompare(right.label)
-    )
+    .toSorted(([leftKey, left], [rightKey, right]) => {
+      const defaultOrder =
+        state.group === 'year' ? Number(rightKey) - Number(leftKey) : left.label.localeCompare(right.label);
+
+      if (state.sort === 'group-count-desc') {
+        return right.games.length - left.games.length || defaultOrder;
+      }
+
+      if (state.sort === 'group-count-asc') {
+        return left.games.length - right.games.length || defaultOrder;
+      }
+
+      return defaultOrder;
+    })
     .map(([key, group]) => ({
       key,
       label: group.label,

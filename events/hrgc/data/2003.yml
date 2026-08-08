@@ -1,3 +1,4 @@
+name: 10th Croatian Championship
 stages:
   - type: tournament
     file: hr2003.txt

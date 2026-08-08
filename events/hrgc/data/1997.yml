@@ -1,3 +1,4 @@
+name: 4th Croatian Championship
 stages:
   - type: tournament
     file: hr1997.txt
@@ -11,4 +12,6 @@ stages:
       - mms
       - sos
       - sodos
+    columns:
+      - wins    
     findSharedPlaces: true

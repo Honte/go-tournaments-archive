@@ -1,3 +1,4 @@
+name: 12th Croatian Championship
 stages:
   - type: tournament
     file: hr2005.txt

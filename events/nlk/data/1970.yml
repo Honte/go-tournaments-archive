@@ -1,7 +1,7 @@
 stages:
   - type: tournament
     file: nl1970final.txt
-    name: final
+    name: Final
     notes: played in summer, first game on 20th July
     dir: 1970/final
     scoringColumns:
@@ -9,3 +9,5 @@ stages:
     breakers:
       - wins
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:1 sgf:1970/final/1-MaxRebattu-HenkdeVries.sgf

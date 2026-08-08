@@ -2,6 +2,7 @@ top:
 - lfurjanic
 - zmutabzija
 - msmud,dzrno,zbednjanec
+name: 21st Croatian Championship
 stages:
   - type: tournament
     name:
@@ -9,6 +10,8 @@ stages:
       en: Challengers
     file: hr2014.txt
     komi: 6.5 
+    placeOffset: 1
+    promoted: 1
     scoringColumns:
       - wins
       - null

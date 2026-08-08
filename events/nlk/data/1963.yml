@@ -1,7 +1,7 @@
 name: 2nd Dutch Championship
 stages:
  - type: classification
-   name: playoff
+   name: Playoff
    notes: exact results unknown, played in spring
    order:
     - Max Rebattu

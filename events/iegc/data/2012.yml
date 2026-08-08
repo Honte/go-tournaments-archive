@@ -6,7 +6,7 @@ top:
 stages:
   - type: tournament
     file: ie2012.txt
-    name: top8
+    name: Top 8
     notes: additional playoff for places 2-3 and 4-5
     dir: 2012/top8
     promoted: 2

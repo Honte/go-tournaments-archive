@@ -1,8 +1,15 @@
-notes: missing final
+top:
+- Stjepan Medak
+- Matej Zakanj
+- Roko Crvelin
+name: 32nd Croatian Championship
 stages:
   - type: tournament
     file: hr2025.txt
     komi: 6.5 
+    placeOffset: 1
+    promoted: 1
+    name: Challengers
     scoringColumns:
       - wins
       - sos
@@ -11,3 +18,15 @@ stages:
     breakers:
       - wins
     findSharedPlaces: true
+  - type: tournament
+    name:
+      pl: Finał
+      en: Final
+    file: hr2025playoff.txt
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - null
+    breakers:
+      - wins     

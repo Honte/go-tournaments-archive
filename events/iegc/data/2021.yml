@@ -6,7 +6,7 @@ top:
 stages:
   - type: tournament
     file: ie2021.txt
-    name: top8
+    name: Top 8
     notes: double ladder
     dir: 2021/top8
     promoted: 2

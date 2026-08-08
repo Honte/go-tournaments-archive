@@ -2,6 +2,7 @@ top:
 - zmutabzija
 - vkuhar
 - msmud
+name: 5th Croatian Championship
 stages:
   - type: tournament
     name:
@@ -18,6 +19,8 @@ stages:
       - mms
       - sos
       - sodos
+    columns:
+      - wins        
     findSharedPlaces: true
   - type: tournament
     name:
