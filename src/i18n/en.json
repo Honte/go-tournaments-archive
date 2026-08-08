@@ -266,6 +266,7 @@
       "participants": "Participants",
       "games": "Games",
       "draws": "Draws",
+      "gamesWithColors": "Games with colors",
       "black": "% won by black",
       "resigned": "Won by resign",
       "timeout": "Won by time",

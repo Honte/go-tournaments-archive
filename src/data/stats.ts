@@ -37,7 +37,9 @@ export function calculateStats(
   }
 
   let playedGames = 0;
+  let color = 0;
   let black = 0;
+  let white = 0;
   let resign = 0;
   let timeout = 0;
   let draws = 0;
@@ -166,12 +168,18 @@ export function calculateStats(
 
       playedGames++;
 
+      if (game.players[0].color) {
+        color++;
+      }
+
       if (game.draw) {
         draws++;
       }
 
       if (game.result?.startsWith('B')) {
         black++;
+      } else if (game.result?.startsWith('W')) {
+        white++;
       }
 
       if (game.result?.includes('R')) {
@@ -261,7 +269,9 @@ export function calculateStats(
       relays,
       streams,
       analysis,
-      black: black / playedGames,
+      black,
+      white,
+      color,
     },
     games,
     players,

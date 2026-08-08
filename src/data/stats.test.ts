@@ -23,8 +23,8 @@ describe('calculateStats', () => {
         id: 'g1',
         stage: 0,
         players: [
-          { id: 'a', won: false },
-          { id: 'b', won: false },
+          { id: 'a', won: false, color: 'black' },
+          { id: 'b', won: false, color: 'white' },
         ],
         result: 'jigo',
         draw: true,
@@ -34,10 +34,32 @@ describe('calculateStats', () => {
         id: 'g2',
         stage: 1,
         players: [
-          { id: 'b', won: true },
-          { id: 'c', won: false },
+          { id: 'b', won: true, color: 'black' },
+          { id: 'c', won: false, color: 'white' },
         ],
         result: 'B+R',
+        draw: false,
+        props: {},
+      },
+      g3: {
+        id: 'g3',
+        stage: 1,
+        players: [
+          { id: 'a', won: true, color: 'black' },
+          { id: 'c', won: false, color: 'white' },
+        ],
+        result: '+',
+        draw: false,
+        props: {},
+      },
+      g4: {
+        id: 'g4',
+        stage: 1,
+        players: [
+          { id: 'a', won: false, color: 'black' },
+          { id: 'c', won: true, color: 'white' },
+        ],
+        result: 'W+',
         draw: false,
         props: {},
       },
@@ -67,9 +89,11 @@ describe('calculateStats', () => {
     const alice = stats.players[players.a.id];
     const bob = stats.players[players.b.id];
 
-    assert.equal(stats.summary.playedGames, 2);
+    assert.equal(stats.summary.playedGames, 4);
     assert.equal(stats.summary.draws, 1);
-    assert.equal(stats.summary.black, 0.5);
+    assert.equal(stats.summary.black, 1);
+    assert.equal(stats.summary.white, 1);
+    assert.equal(stats.summary.color, 4);
     assert.equal(alice.totalGames, 2);
     assert.equal(alice.totalWon, 1);
     assert.equal(alice.totalDrawn, 1);

@@ -329,6 +329,8 @@ export type StatsSummary = {
   analysis: number;
   players: number;
   black: number;
+  white: number;
+  color: number;
 };
 
 export type EventSummary = {
