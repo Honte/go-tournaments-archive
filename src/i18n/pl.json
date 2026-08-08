@@ -139,6 +139,7 @@
     "ai": "Zobacz analizę AI",
     "preview": "Widok planszy na koniec gry %{0}",
     "komi": "Komi",
+    "round": "Runda",
     "moves": "Ruchów",
     "prisoners": "Jeńcy",
     "controls": {

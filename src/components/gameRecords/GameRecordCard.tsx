@@ -80,6 +80,11 @@ export function GameRecordCard({ event, game, translations }: GameRecordCardProp
             {t('table.stage')}: <strong className="text-event-dark">{stageName}</strong>
           </span>
         )}
+        {typeof game.round === 'number' && (
+          <span>
+            {t('game.round')}: <strong className="text-event-dark">{game.round}</strong>
+          </span>
+        )}
         {game.result === JIGO && (
           <span>
             {t('game.result')}:{' '}

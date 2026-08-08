@@ -139,6 +139,7 @@
     "ai": "See the AI analysis of the game",
     "preview": "Board position at the end of game %{0}",
     "komi": "Komi",
+    "round": "Round",
     "moves": "Moves",
     "prisoners": "Prisoners",
     "controls": {
