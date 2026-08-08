@@ -11,6 +11,10 @@ stages:
       - mms
       - sos
       - sosos
-    columns:  
+    columns:
       - wins
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:7 sgf:2024/7-RobvanZeijst-GillesvanEeden.sgf ogs:https://online-go.com/review/1211307
+      - 3-7 3:B+? round:5 sgf:2024/5-ZenovanDitzhuijzen-MichielEijkhout.sgf ogs:https://online-go.com/review/1210627
+      - 11-7 11:B+? round:6 sgf:2024/6-JurriaanZwier-MichielEijkhout.sgf ogs:https://online-go.com/review/1210764

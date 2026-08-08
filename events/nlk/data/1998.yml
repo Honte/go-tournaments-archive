@@ -27,3 +27,5 @@ stages:
     breakers:
       - wins
     findSharedPlaces: true
+    games:
+      - 2-1 1:W+R round:3 sgf:1998/playoff/3-GillesvanEeden-JuanGuo.sgf

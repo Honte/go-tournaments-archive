@@ -5,7 +5,7 @@ stages:
     notes: for SOS 0+ wins are counted as 0.5
     scoringColumns:
       - wins
-      - null      
+      - null
       - sos
       - sodos
     breakers:
@@ -13,3 +13,8 @@ stages:
       - sos
       - sodos
     findSharedPlaces: true
+    games:
+      - 1-4 1:B+R round:6 sgf:2017/6-FrankJanssen-RobvanZeijst.sgf
+      - 3-1 1:W+R round:7 sgf:2017/7-GeertGroenen-FrankJanssen.sgf
+      - 5-1 1:W+32.5 round:8 sgf:2017/8-MerlijnKuin-FrankJanssen.sgf
+      - 13-1 1:W+R round:5 sgf:2017/5-RobertRehm-FrankJanssen.sgf

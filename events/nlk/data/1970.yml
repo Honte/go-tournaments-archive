@@ -9,3 +9,5 @@ stages:
     breakers:
       - wins
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:1 sgf:1970/final/1-MaxRebattu-HenkdeVries.sgf

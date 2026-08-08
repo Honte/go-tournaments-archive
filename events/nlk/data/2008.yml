@@ -4,7 +4,7 @@ stages:
     file: nl2008.txt
     scoringColumns:
       - wins
-      - null      
+      - null
       - sos
       - sodos
     breakers:
@@ -12,3 +12,12 @@ stages:
       - sos
       - sodos
     findSharedPlaces: true
+    games:
+      - 1-11 1:B+R round:1 sgf:2008/1-MerlijnKuin-WillemKoenPomstra.sgf
+      - 2-3 3:W+7.5 round:6 sgf:2008/6-GeraldWesthoff-FilipVanderstappen.sgf
+      - 2-6 6:W+6.5 round:7 sgf:2008/7-GeraldWesthoff-MichielEijkhout.sgf
+      - 4-1 1:W+12.5 round:7 sgf:2008/7-WangziGuo-MerlijnKuin.sgf
+      - 4-10 4:B+R round:8 sgf:2008/8-WangziGuo-FrankJanssen.sgf
+      - 6-12 6:B+R round:2 sgf:2008/2-MichielEijkhout-FlorisBarthel.sgf
+      - 8-6 8:B+3.5 round:8 sgf:2008/8-RobertRehm-MichielEijkhout.sgf
+      - 13-10 10:W+1.5 round:4 sgf:2008/4-GeertGroenen-FrankJanssen.sgf

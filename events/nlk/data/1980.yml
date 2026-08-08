@@ -2,6 +2,7 @@ stages:
   - type: tournament
     name: championship
     file: nl1980.txt
+    notes: Recreated from cross table. Games order can be different.
     scoringColumns: 
       - wins          
       - sodos

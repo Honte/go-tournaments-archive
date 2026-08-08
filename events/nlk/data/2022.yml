@@ -8,6 +8,32 @@ stages:
       - place
     breakers:
       - place
-    columns:  
+    columns:
       - wins
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:8 sgf:2022/8-RobvanZeijst-GillesvanEeden.sgf ogs:https://online-go.com/game/40822766
+      - 1-2 2:W+T round:4 sgf:2022/4-RobvanZeijst-GillesvanEeden.sgf ogs:https://online-go.com/game/40411554
+      - 1-3 1:B+R round:6 sgf:2022/6-RobvanZeijst-AlexanderEerbeek.sgf ogs:https://online-go.com/game/40793243
+      - 1-6 1:B+R round:3 sgf:2022/3-RobvanZeijst-GeertGroenen.sgf ogs:https://online-go.com/game/40407266
+      - 2-1 1:W+R round:7 sgf:2022/7-GillesvanEeden-RobvanZeijst.sgf ogs:https://online-go.com/game/40817992
+      - 2-7 2:B+2.5 round:2 sgf:2022/2-GillesvanEeden-GlennHaygarth.sgf ogs:https://online-go.com/game/40383741
+      - 3-5 3:B+R round:5 sgf:2022/5-AlexanderEerbeek-GerardNederveen.sgf ogs:https://online-go.com/game/40788867
+      - 3-6 6:W+R round:2 sgf:2022/2-AlexanderEerbeek-GeertGroenen.sgf ogs:https://online-go.com/game/40383825
+      - 4-1 1:W+R round:5 sgf:2022/5-GelmerBouwman-RobvanZeijst.sgf ogs:https://online-go.com/game/40788815
+      - 4-7 4:B+R round:4 sgf:2022/4-GelmerBouwman-GlennHaygarth.sgf ogs:https://online-go.com/game/40411746
+      - 4-8 8:W+40.5 round:2 sgf:2022/2-GelmerBouwman-MichielTel.sgf ogs:https://online-go.com/game/40383900
+      - 5-1 1:W+R round:2 sgf:2022/2-GerardNederveen-RobvanZeijst.sgf ogs:https://online-go.com/game/40383785
+      - 5-9 5:B+R round:3 sgf:2022/3-GerardNederveen-MerijndeJong.sgf ogs:https://online-go.com/game/40407189
+      - 6-3 3:W+3.5 round:4 sgf:2022/4-GeertGroenen-AlexanderEerbeek.sgf ogs:https://online-go.com/game/40411563
+      - 6-11 6:B+R round:1 sgf:2022/1-GeertGroenen-TimvanVliet.sgf ogs:https://online-go.com/game/40379734
+      - 7-11 7:B+10.5 round:3 sgf:2022/3-GlennHaygarth-TimvanVliet.sgf ogs:https://online-go.com/game/40407208
+      - 9-4 4:W+21.5 round:1 sgf:2022/1-MerijndeJong-GelmerBouwman.sgf ogs:https://online-go.com/game/40379811
+      - 9-12 9:B+11.5 round:2 sgf:2022/2-MerijndeJong-HanvanderPluijm.sgf ogs:https://online-go.com/game/40383748
+      - 10-4 4:W+R round:3 sgf:2022/3-FrederikSpanhoff-GelmerBouwman.sgf ogs:https://online-go.com/game/40407219
+      - 10-5 5:W+14.5 round:1 sgf:2022/1-FrederikSpanhoff-GerardNederveen.sgf ogs:https://online-go.com/game/40379743
+      - 11-13 11:B+16.5 round:2 sgf:2022/2-TimvanVliet-GerdeGroot.sgf ogs:https://online-go.com/game/40383651
+      - 12-2 2:W+R round:1 sgf:2022/1-HanvanderPluijm-GillesvanEeden.sgf ogs:https://online-go.com/game/40379433
+      - 13-3 3:W+R round:1 sgf:2022/1-GerdeGroot-AlexanderEerbeek.sgf ogs:https://online-go.com/game/40379887
+      - 14-7 7:W+10.5 round:1 sgf:2022/1-HermanHiddema-GlennHaygarth.sgf ogs:https://online-go.com/game/40379677
+      - 14-10 10:W+R round:2 sgf:2022/2-HermanHiddema-FrederikSpanhoff.sgf ogs:https://online-go.com/game/40383804

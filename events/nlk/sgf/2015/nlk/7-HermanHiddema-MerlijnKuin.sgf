@@ -1,0 +1,903 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]OT[1x30 byo-yomi]C[hvk [-\]\: HI
+]AP[CGoban:3]
+SZ[19]GM[1]GN[Round 7 Board 1 Dutch Championships 2015]EV[Dutch Championships 2015]
+RO[7]DT[2015-01-25]PC[The KGS Go Server at http\://www.gokgs.com/]PB[Herman Hiddema]
+BR[4d]PW[Merlijn Kuin]WR[6d]KM[6.5]TM[5400]RE[B+14.5]MULTIGOGM[1]
+;B[pp];W[qd];B[cp];W[cd];B[ed]C[hvk [-\]\: h16
+];W[hd];B[dg]C[moesasji\: 12 moves played allready
+]
+;W[nc];B[pj];W[qh];B[iq];W[nq]C[gogonuts [4d\]\: did merlijn still win that last game?
+moesasji\: yes
+gogonuts [4d\]\: incredible, thx
+gogonuts [4d\]\: really is a magician \:-)
+]
+;B[lq];W[qq];B[pq];W[qp];B[po];W[pr];B[or];W[qr]C[gogonuts [4d\]\: m3 a little slack
+]
+;B[oq]C[moesasji\: feels overconcentrated
+];W[qn]C[moesasji\: with j3
+gogonuts [4d\]\: leaves j3 rather poorly placed
+Muttley [-\]\: how long was server down for?
+gogonuts [4d\]\: 100 years?
+Muttley [-\]\: heh
+Uberdude [4d\]\: m3 very odd 
+Uberdude [4d\]\: b has to q6 now
+Uberdude [4d\]\: to make sense of it
+gogonuts [4d\]\: q7 r7 q8 - b needs to add a move here
+Uberdude [4d\]\: or does he want sente for c14?
+Uberdude [4d\]\: hmm yeah or q7, but can't allow white q6
+]
+;B[jd]C[gogonuts [4d\]\: b going for colorful mixup instead
+gogonuts [4d\]\: but really leaving a debt
+EuroGoTV1 [-\]\: live game record, chat and video on http\://eurogotv.com/index.php?p=HW9x9VSHW9x91422129109
+Horse [7k\]\: just go in at e3 , or is that too soon ?
+gogonuts [4d\]\: top needs attention, imo
+gogonuts [4d\]\: i'd go with the unimaginative h14
+Uberdude [4d\]\: e3 is a small spave
+Uberdude [4d\]\: space
+oonicks [?\]\: maybe he is just trying to interupt a very familiar gameflow , but i doubt w is completely unprepared for this
+oonicks [?\]\: i liked uberdudes suggestion
+Uberdude [4d\]\: and e4 is probably better if you do want to play that area
+Horse [7k\]\: ok, so at this stage w might play somewhere on top
+gogonuts [4d\]\: i think w will either h14 or e15
+EuroGoTV1 [-\]\: On board 2 Geert Groenen (b) and Peter Brouwer (w)
+Uberdude [4d\]\: or e14 cvould make sense here
+Uberdude [4d\]\: for the thickness, makes bs counter pincer nonsense
+gogonuts [4d\]\: i see your point - has a chance of really misplacing k16
+snhmib [5k\]\: oo q6
+gogonuts [4d\]\: good place for a think
+gogonuts [4d\]\: because w might want to exchange h14 k14 before deciding on the corner
+Muttley [-\]\: I guess Merlijn won on points against Koen
+EuroGoTV1 [-\]\: He did. 5.5 if I'm not mistaken
+gogonuts [4d\]\: its poorly recorded in the archivew
+Muttley [-\]\: yeah, it won't be recorded here \:/
+gogonuts [4d\]\: i looked at eurogotv, where the game was finished, but it was too close to judge without exact prisoner count
+Muttley [-\]\: that is the problem
+jv [?\]\: the fact that he won is also a problem \:/
+Muttley [-\]\: you can Chinese score it, but its a pain to do it looking at it
+oonicks [?\]\: to be honest i think people underestimate him
+snhmib [5k\]\: can w come out with e15?
+jv [?\]\: nobody likes people who are good at endgame
+jv [?\]\: its like the cheating-est of go skillz
+]
+;W[hf]C[Muttley [-\]\: w played badly and made it close, still won on the board
+]
+;B[jf]C[oonicks [?\]\: well it is still very pretty if you only have 6 stones on the right side to be sure it is just neutral territory
+FoulOleRon [4k?\]\: this record is ahead of the live stream \:)
+]
+;W[ee]C[gogonuts [4d\]\: accountant medal in gold for excellent endgame players \:-)
+oonicks [?\]\: with nothing in between them
+]
+;B[fe]C[elianovici [4d\]\: who won the first game? Merlijn?
+];W[ef]C[gogonuts [4d\]\: y
+]
+;B[dd]C[gogonuts [4d\]\: incredibly \:-)
+Horse [7k\]\: nice, they are trying to play a joseki
+EuroGoTV1 [-\]\: Full results so far are on http\://www.gobond.nl/
+gogonuts [4d\]\: h14 k14 k16 stones surely invalidate reg joseki here
+oonicks [?\]\: i thought sth like d3 was very important
+elianovici [4d\]\: Thanks.. but I can't copy from kgs.. I don't know why^^
+oonicks [?\]\: so when he never used c3 he was behind
+jv [?\]\: if you are on a mac, you have to use ctrl, not cmd
+jv [?\]\: its really, really annoying
+]
+;W[cf];B[cc];W[ce]C[Muttley [-\]\: this is pretty bizarre
+];B[ff]C[jv [?\]\: standard shape on one side, buncha extra stones on the other
+oonicks [?\]\: btw i think i rmember merlijn would possibly agree (d2 or so)
+gogonuts [4d\]\: 50% chance of hane \:-)
+snhmib [5k\]\: f13 threatens to cut at f16?
+Horse [7k\]\: f13 g13 g14 ?
+Thoravatar [1d\]\: why not cut right now?
+snhmib [5k\]\: i think b would push down with g16 and g17?
+gogonuts [4d\]\: if you cut now, b discards the corner
+Muttley [-\]\: that's a pretty big commitment
+Thoravatar [1d\]\: ok, fair enough, i would take it with white
+Thoravatar [1d\]\: i don't see good thickness arising on the outside
+Muttley [-\]\: I would e13 because it is joseki
+gogonuts [4d\]\: lol, muttley
+Muttley [-\]\: I am proud of my rigid and dogmatic attitude \:)
+Thazz [2d?\]\: good guy Mut
+claas [1k\]\: e13 is also the best for thickness, I think
+Muttley [-\]\: word \:)
+Muttley [-\]\: I would b17 as well here
+gogonuts [4d\]\: my solar plexus wants f13 played
+Coirac [5k\]\: f13 is agressive
+gogonuts [4d\]\: my brain would have to find a reason for it \:-)
+Thazz [2d?\]\: e13 is probably best here. Merlijn is the kind of player playing f13 though
+Horse [7k\]\: i would play f13 because i have not the faintest idea what will come next
+Coirac [5k\]\: maybe e13 for try to take lef side 
+Coirac [5k\]\: *left
+Muttley [-\]\: f13 g16 presumably
+]
+;W[eg]C[Muttley [-\]\: you don't get both, surely
+gogonuts [4d\]\: such restraint
+Muttley [-\]\: yay for dogmatic and rigid.
+gogonuts [4d\]\: just to make muttley happy
+jv [?\]\: doesnt seem good
+Thazz [2d?\]\: we all live to serve
+Muttley [-\]\: I shall send Merlijn my latest professional standard DVD "Why fuseki should work with joseki!"
+snhmib [5k\]\: b can't allow f13 i guess?
+Muttley [-\]\: good question, read the joseki out with the cut and h14 in place
+gogonuts [4d\]\: agree, i would push once more
+Horse [7k\]\: defending at g16 looks passive
+oonicks [?\]\: he will play untill you all snub him and win. he is not blind or so
+gogonuts [4d\]\: because w f13 would be excellent thickness
+Muttley [-\]\: also, f14 feels like a 10,000 ryu turn for w, even if it slow
+Muttley [-\]\: f13 sorry
+oonicks [?\]\: actually he could start winning now;)
+oonicks [?\]\: allthough one more snub ...
+rsun [4d\]\: q10 is in bad position
+gogonuts [4d\]\: f13 e12 d18 is my expectation now
+snhmib [5k\]\: was k16 bad?
+claas [1k\]\: b should strengthen k14 now
+oonicks [?\]\: totally senseless brave fuseki by w
+snhmib [5k\]\: before k16 b had an awesome moyo
+oonicks [?\]\: nice to see
+gogonuts [4d\]\: w ahead, because of m3 imo
+rsun [4d\]\: b bottom is flat, there is no moyo
+]
+;B[gg];W[hg]C[snhmib [5k\]\: but he had d13 and p10 and this wall?
+gogonuts [4d\]\: pseudo-suji
+gogonuts [4d\]\: g13 is pretty awful
+snhmib [5k\]\: because of j3 and l3 it's too easy to reduce rsun?
+oonicks [?\]\: i don't mind saying forcing b into bad shape
+Horse [7k\]\: h12 next ?
+gogonuts [4d\]\: provoking h13 is a lot worse than provoking e12
+claas [1k\]\: yes, g14 seems very bad 
+]
+;B[gh]C[claas [1k\]\: why help white?
+rsun [4d\]\: j3 m3 area is solid territory, so it's not moyo \:)
+Muttley [-\]\: black has a plan to force w to make b stones heavy then attack with them
+Eowyn [1d\]\: This shouldn't end well for w
+]
+;W[hh]C[Muttley [-\]\: its genius
+oonicks [?\]\: b should know what w is thinking
+gogonuts [4d\]\: w good here
+just9x9 [-\]\: go herminator
+Horse [7k\]\: black might play k12 
+oonicks [?\]\: g12 bit spastically but not to bad
+sentra [2d\]\: h11
+gogonuts [4d\]\: problem was g13
+rsun [4d\]\: Herman is so close to being German
+claas [1k\]\: yes
+claas [1k\]\: now it's almost forcedd
+]
+;B[gi]C[rsun [4d\]\: k12
+gogonuts [4d\]\: w k12 for me
+];W[jh]C[gogonuts [4d\]\: left side not urgent because side and corner are miai
+rsun [4d\]\: now b will help w consolidate upper right corner
+]
+;B[bc]C[Muttley [-\]\: or, not
+];W[cj]C[snhmib [5k\]\: b is finish with middlegame
+Muttley [-\]\: tenuki the two stones at the top
+gogonuts [4d\]\: b will have to help his stones at the top
+gogonuts [4d\]\: bottom line - he's not getting q7
+Muttley [-\]\: if b tenuki here, can you kill them?
+claas [1k\]\: kill who
+gogonuts [4d\]\: you can waterboard them
+]
+;B[ne]C[Eowyn [1d\]\: i think w's patience and playing left first is good for white
+rsun [4d\]\: see, all aji gone
+gogonuts [4d\]\: o15 is a good move, but b behind overall
+oonicks [?\]\: that didnt take long for merlin to turn the table
+Muttley [-\]\: its a good move but b is a bit thin
+snhmib [5k\]\: w should defend the corner?
+gogonuts [4d\]\: he was never behind, so he only tilted the table \:-)
+Horse [7k\]\: so can white attack those 3 stones and make his center group stronger ?
+rsun [4d\]\: b can win if he gets the chance to attack h12
+gogonuts [4d\]\: ws wishlist\: isolate q10 and get q6
+]
+;W[lc]C[oonicks [?\]\: merlin move
+oonicks [?\]\: b lost endgame started
+gogonuts [4d\]\: not easy to find
+gogonuts [4d\]\: i like it
+Backflash [8k\]\: b lost endgame?
+oonicks [?\]\: yes
+Backflash [8k\]\: okay...
+Eowyn [1d\]\: m18 such a good move
+just9x9 [-\]\: m18 now? i doubt that
+Eowyn [1d\]\: it's like a book move 
+Backflash [8k\]\: corner or side?
+just9x9 [-\]\: elephant jump attach?
+oonicks [?\]\: well it is just bragging a bit i lobe the dare ofr o15
+snhmib [5k\]\: q12 maybe?
+oonicks [?\]\: i suppose it should attack p17 or so
+snhmib [5k\]\: oh w hane on top
+snhmib [5k\]\: that's not good \:(
+gogonuts [4d\]\: direct encounter will go badly for b, imo 
+gogonuts [4d\]\: i might try p12
+snhmib [5k\]\: mabye r15
+gogonuts [4d\]\: r15 is just too disconnected
+snhmib [5k\]\: too far
+Tollpatsch [1k\]\: how about q16?
+]
+;B[ld]C[gogonuts [4d\]\: that direct answer looks reasonable
+Backflash [8k\]\: hm, i understand why, but is timing right?
+TuLy [3k\]\: just n16?
+snhmib [5k\]\: what if w push in n16
+Horse [7k\]\: n16 m15 ?
+snhmib [5k\]\: oh he give up m16
+gogonuts [4d\]\: the only problem i have with it, is that b is saying so early what he wants to keep
+snhmib [5k\]\: horse, i think he blocks at n15
+gogonuts [4d\]\: everything \:-)
+snhmib [5k\]\: and if w cut he atari and give up m16
+r0n1n [3k\]\: i don't see the point of cutting so early
+snhmib [5k\]\: it's bad for w going after 1 stone
+snhmib [5k\]\: maybe l17 saying he will connect on k17
+sentra [2d\]\: b must keep k16 and k14, too big
+oonicks [?\]\: sth like this can maybe be tenukied?
+jlm [1d\]\: L17 k17
+snhmib [5k\]\: if b play l17 he has eye shape
+r0n1n [3k\]\: those 2 stones put a lot of pressure on w
+gogonuts [4d\]\: n16 n15 l16 l15 m15 m14 k17 m16 l17 
+]
+;W[kc]C[gogonuts [4d\]\: hm
+];B[jc];W[gc]C[gogonuts [4d\]\: connecting under was good and simple imo
+snhmib [5k\]\: ?
+snhmib [5k\]\: w could have played k17?
+snhmib [5k\]\: to connecT
+gogonuts [4d\]\: start with n16 if you want to connect
+gogonuts [4d\]\: this is good too though
+sentra [2d\]\: w has k12, why so hurry to connect?
+gogonuts [4d\]\: and i guess for merlijn "simple" is a minus \:-)
+]
+;B[fc];W[gd]C[r0n1n [3k\]\:  well the ability to handle very complex situations is surely an advantage he can use
+snhmib [5k\]\: w can attack harder if he doesn't have to worry about eyes
+gogonuts [4d\]\: k12 means those stones wont get into trouble for a while, but connection still valuable
+]
+;B[oc]C[gogonuts [4d\]\: w opted  for the attack, instead
+r0n1n [3k\]\: that doesn't looks to me like a 6d move
+just9x9 [-\]\: really?
+r0n1n [3k\]\: i mean g16 
+]
+;W[ob]C[jv [?\]\: well, no kyu or low dan would dare play it
+];B[nd]C[jv [?\]\: so its at least a 4d move
+Tollpatsch [1k\]\: well kyus dare a lot ;)
+gogonuts [4d\]\: problem is, that p17 has become hard to handle, because w couldnt cut anymore
+just9x9 [-\]\: g16? played by kyus anytime
+r0n1n [3k\]\: the nozoki/empty triangle looks really bad instinctly
+jv [?\]\: okay maybe kyus would, but low dans wouldnt
+r0n1n [3k\]\: yeah played by kyus for sure
+just9x9 [-\]\: nah, not here, it is peeping
+r0n1n [3k\]\: but the tenuki right after is more rare xD
+snhmib [5k\]\: g11 is pretty safe if it runs down
+]
+;W[pc];B[mc];W[od]C[just9x9 [-\]\: and double sente which b chose to ignore
+snhmib [5k\]\: and p17 was awesome
+snhmib [5k\]\: b is safe now
+]
+;B[mb]C[sentra [2d\]\: this is so bad for w
+r0n1n [3k\]\: hmm
+];W[fd];B[fb]C[r0n1n [3k\]\: sure?
+gogonuts [4d\]\: w g16 was a mistake, imo
+gogonuts [4d\]\: w overlooked that b might tenuki
+r0n1n [3k\]\: b looks in troubles again
+snhmib [5k\]\: he can connect with h18 \:)
+jv [?\]\: he has to play again already? yikes
+TuLy [3k\]\: f18 seems alive o.O
+sentra [2d\]\: must  g9
+gogonuts [4d\]\: b in the game again, imo
+jv [?\]\: they must be exhausted
+Horse [7k\]\: black seems to be doing fine
+jlm [1d\]\: B looks good
+r0n1n [3k\]\: i prefer w here
+gogonuts [4d\]\: blame it on g16
+gogonuts [4d\]\: w was doing very well
+jv [?\]\: timing on g16 seems pretty bad
+snhmib [5k\]\: w has? 40-50 points?
+snhmib [5k\]\: does s14 area count as points?
+oonicks [?\]\: b is back somewhat , no easy game for w
+jlm [1d\]\: F14 group vs g16 group
+jv [?\]\: looks fairly close now
+]
+;W[hj]C[oonicks [?\]\: but ,,
+Roozen [4d\]\: q6 coming
+oonicks [?\]\: b just collapsed again
+gogonuts [4d\]\: counting is like stepping on a weigh scale - it only sets you up for disappointment
+jv [?\]\: im not sure b even has to move g11
+]
+;B[ei]C[r0n1n [3k\]\: lol gogonuts
+jv [?\]\: i think they could be ditched
+Horse [7k\]\: eh, black has to escape somehow ?
+jv [?\]\: but theres a lot of aji around c12 so it may be possible to get them out cheaply
+snhmib [5k\]\: if w g9
+r0n1n [3k\]\: with the komi it looks to me that w has a bit more points
+snhmib [5k\]\: can b do something with d13 stone?
+r0n1n [3k\]\: but maybe less potential
+jlm [1d\]\: If b had free move for q6 game would be over
+oonicks [?\]\: more obvious is perhaps to push first
+oonicks [?\]\: if you want out
+]
+;W[di];B[eh]C[oonicks [?\]\: to big?
+r0n1n [3k\]\: if w is sente on this sequence i guess it's a close game
+snhmib [5k\]\: b is running in the wrong direction ^^
+]
+;W[dl]C[snhmib [5k\]\: going up instead of down
+gogonuts [4d\]\: this way, forrest
+jv [?\]\: was wondering about this
+XXpericoXX [2d\]\: c13
+ogolony [-\]\: c13 
+TuLy [3k\]\: missclick? \:D ^^
+Horse [7k\]\: so e12 was bad ?
+sentra [2d\]\: c13 big trouble
+]
+;B[cg]C[gogonuts [4d\]\: did w just throw away stuff like in the last game?
+jv [?\]\: hey it worked last time
+snhmib [5k\]\: can't w just hane?
+Backflash [8k\]\: it looks that way, i don't get it
+jv [?\]\: he may have only read d12 b12  line
+Horse [7k\]\: eh, who is attacking who  here ?
+gogonuts [4d\]\: i guess he will just have to put on his accountant glasses and do a mean endgame \:-)
+jv [?\]\: c13 line is a lot more vicious
+Moin9 [1k\]\: annnd merlijn put his glasses back^^
+]
+;W[dc]C[just9x9 [-\]\: hehe
+Backflash [8k\]\: what?
+TuLy [3k\]\: d17?
+just9x9 [-\]\: clever
+ofbusy [3d\]\: it s free but doesnt solve much
+Shinichi56 [-\]\: i don't get it
+sentra [2d\]\: ni use
+Tomer [4k\]\: does it get white more liberties or something? I don't see it
+sentra [2d\]\: no*
+Backflash [8k\]\: kyu in panic -help!
+ofbusy [3d\]\: its about g18 sente later
+sentra [2d\]\: no additional liberty
+jv [?\]\: think it may gain part of one
+Benzene [3d\]\: g16 seems pretty dumb
+gogonuts [4d\]\: just went on eurogotv - w looks like going through the 5 stages of grief
+ogolony [-\]\: just e17 
+]
+;B[ec]C[sentra [2d\]\: e17 id d18 then b14
+sentra [2d\]\: if *
+];W[eq]C[just9x9 [-\]\: wut?
+r0n1n [3k\]\: well here it goes i don't understand this game anymore
+ogolony [-\]\: d3 
+just9x9 [-\]\: teh nukee?
+Storken [6k\]\: w gave up the stones \:(
+jv [?\]\: i think this lost group is worth slightly more than last lost group
+ofbusy [3d\]\: w just considers he s cooked
+jv [?\]\: so, it means this game will be .5?
+gogonuts [4d\]\: now comes the long hard punishment, slowly pulling points away from b
+wefass\: 4d will make mistakes \:)
+wefass\: just wait
+]
+;B[dq]C[Backflash [8k\]\: wizardry - aint gonna explain a thing
+jv [?\]\: its not much fun, being in a winning position against a stronger player
+jv [?\]\: they go into hardcore mode
+just9x9 [-\]\: otoh, its not fun being in a losing position either...
+gogonuts [4d\]\: i think the loss in the last game was worse - he turned that around, so he can win anything
+meanman [7d\]\: there is no way for black to lose this game 
+Backflash [8k\]\: so, Go is not fun? figures
+meanman [7d\]\: he'd have to be very creative \:)
+jv [?\]\: meanman, did you see the last game?
+meanman [7d\]\: no
+gogonuts [4d\]\: meanman, it seems you missed what he turned around last game \:-)
+]
+;W[pn]C[jv [?\]\: it was a very similar thing
+jv [?\]\: losing a couple important stones carelessly
+gogonuts [4d\]\: it was worse, i tell you
+sentra [2d\]\: it's about 15 pts lead on board
+just9x9 [-\]\: merlijn caused kgs to crash last game
+gogonuts [4d\]\: lol
+]
+;B[on];W[om]C[gogonuts [4d\]\: thats a good explanation
+];B[nn];W[pl]C[ogolony [-\]\: e4 
+gogonuts [4d\]\: he violated the laws of go by winning that game
+meanman [7d\]\: more like 25
+jv [?\]\: gogo i still think this one is worse
+jv [?\]\: and this mistake was on a roughly-even board
+gogonuts [4d\]\: objectively the last one was worse, but this one is a little more played out
+gogonuts [4d\]\: so also very hard to turn
+]
+;B[ph]C[jv [?\]\: last one was on a favorable board
+];W[pg]C[Horse [7k\]\: is it permitted to give your opponent so much points and still winning the game after that ?
+]
+;B[og]C[jv [?\]\: no
+jv [?\]\: he broke the rules
+snhmib [5k\]\: if instead of d8, w made tiger mouth with e10
+narugo [2d\]\: did melijn win previous match? could not see it end
+gogonuts [4d\]\: if you do kgs crashes for 3 hrs
+snhmib [5k\]\: could b still have played c13?
+jv [?\]\: that's why we're still discussing it
+jv [?\]\: the sky turns purple, and kgs crashes
+jv [?\]\: the island doesnt like it \:/
+sentra [2d\]\: still a ko left on the c14 group
+sentra [2d\]\: if w b13
+jv [?\]\: b13 b12 b14 c11 
+sentra [2d\]\: then b11?
+oonicks [?\]\: w about 22 pt behind
+gogonuts [4d\]\: w should have made the obvious answer to e12, but he was still unhappy about his g16
+jv [?\]\: after b11, i believe b can connect, cut, and fight
+Leonidas [1k\]\: what happened in the last game? I missed the ending as well..
+Horse [7k\]\: http\://www.gobond.nl/
+Shinichi56 [-\]\: it's human to make mistakes, are you all robots? \:(
+sentra [2d\]\: so w could have some sente on the c5 side
+Uberdude [4d\]\: maybe black will make a mistake like i did in a tournament yesterday, lose by 35 instead of win by 40 because take own liberty in semeai
+gogonuts [4d\]\: merlijn ground it home
+]
+;W[pi]C[sentra [2d\]\: if b not very aware of that
+];B[oh]C[jv [?\]\: yes, it looks like it
+gogonuts [4d\]\: stream stopped working
+jv [?\]\: so e4 is really pretty important
+EuroGoTV1 [-\]\: live game record, chat and video on http\://eurogotv.com/index.php?p=HW9x9VSHW9x91422129109
+]
+;W[oi]C[Uberdude [4d\]\: but this board there isn;t enough space for such a big mitsake yet
+oonicks [?\]\: there is tesuji
+Shinichi56 [-\]\: r11 
+]
+;B[qg]C[oonicks [?\]\: or tenuki
+Moin9 [1k\]\: huch
+Moin9 [1k\]\: camera offline
+gogonuts [4d\]\: r11 q14 n11 is played
+gogonuts [4d\]\: isnt n11 slow?
+oonicks [?\]\: if w manages this it will be painfull to see b suffer
+gogonuts [4d\]\: b should e4 now
+]
+;W[qi]C[whuang [4d\]\: is it just me or is merlijn losing by quite alot?
+Moin9 [1k\]\: and ...picture is back
+jv [?\]\: i think we're agreed on that
+Moin9 [1k\]\: q14 (black)n11 e4 
+jv [?\]\: but nobody is sure if it means he'll actually lose the game
+Moin9 [1k\]\: is played^^
+oonicks [?\]\: bit less than 22 now btw
+whuang [4d\]\: White is quite good at coming back.
+Shinichi56 [-\]\: i have seen b is Son of Anarchy
+Moin9 [1k\]\: black q14 is on board
+Moin9 [1k\]\: then white n11
+Horse [7k\]\: if merlijn loses this game he still has a chance to become champion
+Moin9 [1k\]\: and black
+Moin9 [1k\]\: e4 
+gogonuts [4d\]\: where is eurogo?
+gogonuts [4d\]\: moves are missing
+Backflash [8k\]\: disco?
+FoulOleRon [4k?\]\: q14 n11 e4 l3
+EuroGoTV1 [-\]\: KGS is lagging a lot, waiting for over a minute now for it to register the last move
+]
+;B[pf];W[mi];B[ep]C[gogonuts [4d\]\: L3 is the riddle b has to solve if he wants to beat the w guardian
+]
+;W[kq]C[Shinichi56 [-\]\: m2 safest?
+gogonuts [4d\]\: thats weird eurogo
+gogonuts [4d\]\: is your chat lagging too?
+snhmib [5k\]\: can b play j4 or something?
+EuroGoTV1 [-\]\: Might also be the wireless network, but the EuroGoTV site seems to work fine here.
+]
+;B[lp]C[gogonuts [4d\]\: the problem for b is that anythiong seems to work \:-)
+Sanyel [-\]\: Yes, snhmib, j4 is a legal move
+jv [?\]\: the monte-carlo bot problem, gogo
+gogonuts [4d\]\: yupp
+]
+;W[nr]C[jv [?\]\: but he probably lacks their nightmarish endgame
+snhmib [5k\]\: thanks sanyel i wasn't sure
+]
+;B[ns];W[ms];B[os];W[lr]C[jv [?\]\: oh wow without o4?
+jv [?\]\: is it slack to just slam o4 here?
+]
+;B[kp]C[oonicks [?\]\: actually i wonder if the connect had not won b the game
+]
+;W[np]C[gogonuts [4d\]\: if o4, b would have cut 
+Backflash [8k\]\: jv, he can play it anytime?
+gogonuts [4d\]\: better like this
+sentra [2d\]\: not sente
+]
+;B[no];W[jq];B[jp];W[ir];B[hr]C[gogonuts [4d\]\: pretty big steal by w
+Backflash [8k\]\: didn't joke about the riddle =\\
+gogonuts [4d\]\: and n5 still a problem
+]
+;W[hq];B[ip]C[Shinichi56 [-\]\: it's hard to play when you are ahead
+];W[jr]C[jv [?\]\: a lot of bad aji
+r0n1n [3k\]\: g2 seems pretty fine to me
+r0n1n [3k\]\: white being gote
+]
+;B[gr]C[Horse [7k\]\: only 1 eye
+r0n1n [3k\]\: l1 o7 n7 i think
+];W[ks]C[jv [?\]\: w gutted the area and left loads of bad aji
+]
+;B[nm]C[jv [?\]\: its a pretty nice result
+r0n1n [3k\]\: o7 o8 i mean*
+sentra [2d\]\: c6
+oonicks [?\]\: o8 n8 o9 p8 
+sentra [2d\]\: then f3
+Horse [7k\]\: can live now
+jv [?\]\: bottom is already alive
+ogolony [-\]\: f3 
+]
+;W[nl]C[Horse [7k\]\: not yet
+Sanyel [-\]\: M1 is one eye, Horse.
+jv [?\]\: eyes are m1 and l2
+Horse [7k\]\: oh, of course, missed that \:-(
+BreizhI [2k\]\: Only german people play this championship or there is other nationality ?
+Sanyel [-\]\: Dutch people
+Horse [7k\]\: no germans
+BreizhI [2k\]\: hm sorry
+Iwont\: its not Dutchland
+EuroGoTV1 [-\]\: KGS is lagging a lot here, not sure if I can keep up
+Backflash [8k\]\: tried to reconnect?
+ogolony [-\]\: is there any site with results?
+Horse [7k\]\: ask the players to slow down a bit
+whuang [4d\]\: White's getting closer
+FoulOleRon [4k?\]\: It looks finished to me
+Horse [7k\]\: looks can be deceiving
+narugo [2d\]\: how merljin won previous, all chat was like its game over after l2 group died or something
+Roozen [4d\]\: so if merlijn loses, and willem and koen win, who is leading then?
+Roozen [4d\]\: I mean Peter, not Willem
+oonicks [?\]\: n8 n9 o9 p8 
+yousdds\: this game is so bad quality...
+Horse [7k\]\: eh, then all 3 will have 5 points
+jv [?\]\: narugo, its what's making this game interesting
+jv [?\]\: after he lost c15
+jv [?\]\: we're wondering if he can repeat it
+Roozen [4d\]\: that's what I mean. So who has a higher score then?
+FoulOleRon [4k?\]\: sorry, wrong Eurogotv link \:)
+Horse [7k\]\: depends on the rules i suppose
+Horse [7k\]\: perhaps a showdown
+narugo [2d\]\: ok so c15 kind of dead too without any benefits
+Moin9 [1k\]\: am i wrong or are some moves missing?
+Horse [7k\]\: moves are missing indeed
+Horse [7k\]\: eurogo is laging
+oonicks [?\]\: ppl still in the chat there?
+r0n1n [3k\]\: looks to me there is a sequence like f3 g3 f4 f5 
+NiceGoAuth [-\]\: the u stream is not convincing too \:)
+Horse [7k\]\: live stream also in trouble
+whuang [4d\]\: Uh-oh.
+]
+;B[ml];W[mk];B[nk];W[ol];B[ll];W[lk];B[kl];W[fq];B[gq];W[fp];B[fo];W[bg];B[bh];W[ah]
+C[r0n1n [3k\]\: roofl
+];B[bf];W[af];B[ag]C[just9x9 [-\]\: ko?
+Horse [7k\]\: and the ko starts
+]
+;W[ke]C[whuang [4d\]\: Was Merlijn hiding this the whole time? LOL
+whuang [4d\]\: Evil indeed
+EuroGoTV1 [-\]\: I hope the KGS sequence is correct
+awesome [3k\]\: Ik leer nederlands op Duolingo
+just9x9 [-\]\: we hope so too \:)
+awesome [3k\]\: half the words have 'ij' in them
+r0n1n [3k\]\: this ko threat doesn't looks really...threatening
+Horse [7k\]\: not sure , but the board looks correct at least
+awesome [3k\]\: the perfect threat looks innocent
+whuang [4d\]\: Us KGSers don't care about perfection
+Sanyel [-\]\: It is as threatening as it can be.
+EuroGoTV1 [-\]\: Had some weird network problems apparently
+]
+;B[kd];W[bg];B[ai];W[be]C[r0n1n [3k\]\: is b15 a threat?
+r0n1n [3k\]\: ooooh
+];B[ci]
+C[jv [?\]\: mmmm
+];W[dj]C[whuang [4d\]\: ...
+];B[dh]C[jv [?\]\: i will never understand this game
+whuang [4d\]\: Ah! Still a liberty fight
+]
+;W[aj];B[ag]C[r0n1n [3k\]\: and the ko goes again
+];W[eo]C[whuang [4d\]\: Some compensation
+]
+;B[dp];W[ah]C[whuang [4d\]\: oh xD
+r0n1n [3k\]\: Lol.
+]
+(;B[bj]C[whuang [4d\]\: wtf
+just9x9 [-\]\: ?
+])
+(;B[bi]C[Muttley [-\]\: Don't swear please
+];W[bj];B[ag]C[whuang [4d\]\: Sorry.
+Horse [7k\]\: why to fish ?
+Muttley [-\]\: ok, thx
+r0n1n [3k\]\: sorry muttley
+r0n1n [3k\]\: i won't l*l again
+sentra [2d\]\: why the ko was started this way
+whuang [4d\]\: Strange kos, these days
+]
+;W[go]C[awesome [3k\]\: why the whole game played this way?
+r0n1n [3k\]\: looks to me b wins it anytime
+ofbusy [3d\]\: it turned into a handi game
+]
+;B[fn]C[Horse [7k\]\: last chance for merlin ?
+];W[ah];B[ch]C[awesome [3k\]\: ugh
+just9x9 [-\]\: not that easy here
+sentra [2d\]\: too many steps
+]
+;W[fg];B[gf];W[gj]C[whuang [4d\]\: Maybe Merlijn just wants to reduce black's territory, not kill? Or..
+just9x9 [-\]\: b no eye
+]
+;B[ad]C[jv [?\]\: getting the squeeze in is free after all, if b keeps responding
+]
+;W[ae]C[narugo [2d\]\: killing would be game over
+];B[bd]C[jv [?\]\: and tenuki would require a lot of guts and reading
+]
+;W[ej]C[whuang [4d\]\: Yes, and it seems quite deadly as well. Around a 2-step ko?
+Sanyel [-\]\: He may also be planning to kill f6
+awesome [3k\]\: that looks really hard
+jv [?\]\: b fairly thick now though
+]
+;B[fh]C[Horse [7k\]\: this squeeze is nice anyway
+whuang [4d\]\: Step ko.
+jv [?\]\: not a lot of threats left
+whuang [4d\]\: White has threats on the bottom left
+whuang [4d\]\: He'll get quite some compensation.
+jv [?\]\: b doesnt have much of any i guess
+Muttley [-\]\: w doesn't really need any, w has to ignore ko threats
+]
+;W[gn]C[jv [?\]\: w still needs good threats
+sentra [2d\]\: ?
+r0n1n [3k\]\: l***************l
+jv [?\]\: otherwise b would just clear them
+whuang [4d\]\: Smart and evil
+whuang [4d\]\: Forcing black to play badly to avoid white getting ko threats, but allowing white to push black around
+Muttley [-\]\: considering b has internal ko threat
+sentra [2d\]\: g4 would be better than g6?
+Sanyel [-\]\: g4 g6
+Sanyel [-\]\: So no.
+Horse [7k\]\: g6 is better yes
+Moin9 [1k\]\: stream disappeared again \:-)
+whuang [4d\]\: G4 G6 H4 H5
+Moin9 [1k\]\: \:-((
+whuang [4d\]\: G4 doesn't work, 
+narugo [2d\]\: white position is starting look ok
+awesome [3k\]\: kgs is the poor man's window to the world of go
+whuang [4d\]\: Poor men do not have computers
+whuang [4d\]\: But well said
+domie [?\]\: white OK ???
+awesome [3k\]\: ok, the lower middle class then
+narugo [2d\]\: yes
+whuang [4d\]\: Doesn't sound as cool, just stick with yours
+narugo [2d\]\: what you mean
+awesome [3k\]\: \:)
+whuang [4d\]\: "KGS is the lower middle class mans' window to the world of go" 
+whuang [4d\]\: xD
+jv [?\]\: so if i'm rich, what's my window?
+Herod [-\]\: We heard the joke three times now, that should be enough
+Backflash [8k\]\: jv, hire korean pro to teach you
+awesome [3k\]\: you should be able to afford go tv like in korea
+jv [?\]\: but you cant kibbitz that
+Backflash [8k\]\: isn't it free for western viewers?
+whuang [4d\]\: Black seems to be stumped
+awesome [3k\]\: actually, maybe money doesn't matter
+Muttley [-\]\: I'm currently taking on rich gullible students
+narugo [2d\]\: what???, go tv??
+Muttley [-\]\: just message me with your bank details please
+narugo [2d\]\: luxury
+just9x9 [-\]\: focus on the game muttley \:)
+Muttley [-\]\: dang it
+r0n1n [3k\]\: l*l
+Horse [7k\]\: ok, my debt is less then 10 thousand dollars, how much discount do i get ?
+Backflash [8k\]\: dutch internets...
+Moin9 [1k\]\: wireless.....
+bert [2d?\]\: sry, i just dropped in
+Backflash [8k\]\: i run wireless 24/7 at home - not a single problem
+jv [?\]\: right, but you're not at a go tournament
+Muttley [-\]\: hmm, some moves to catch up with in the stream
+jv [?\]\: there's probably 100 people trying to share whatever connecction he's on
+bert [2d?\]\: what happened in previous game? ... i got disconnected
+Horse [7k\]\: it ended
+oonicks [?\]\: everyone is making phonecalls
+jv [?\]\: apparently merlijn won, and it crashed KGS
+just9x9 [-\]\: we all got disconnectd bert \:)
+Muttley [-\]\: Merlijn won, remarkably, 5.5
+Backflash [8k\]\: jv, you are overestimating dutch go following i think
+bert [2d?\]\: i c
+bert [2d?\]\: he must have used some really black magic to make it
+narugo [2d\]\: he should change name for Meijin would be cool
+Horse [7k\]\: f7 h11 ?
+Muttley [-\]\: hmmm, b is up to playing d14, which resolve the ko
+jv [?\]\: fair point back \:)
+just9x9 [-\]\: merlijn is ok for magic \:)
+Muttley [-\]\: there is a b stone at g4
+]
+(;B[fm];W[hi];B[ag])
+(;B[gp]C[Muttley [-\]\: wasn't that the answer to the ko threat, yes
+];W[hi]
+(;B[ag]C[sentra [2d\]\: d14
+Muttley [-\]\: p15
+])
+(;B[fm];W[ge];B[ag];W[oe]C[Muttley [-\]\: that's it
+];B[df]C[Muttley [-\]\: d14 now
+]
+;W[of];B[nf];W[ng]C[Muttley [-\]\: yep, we're there
+EuroGoTV1 [-\]\: sorry, network
+EuroGoTV1 [-\]\: live game record, chat and video on http\://eurogotv.com/index.php?p=HW9x9VSHW9x91422129109
+EuroGoTV1 [-\]\: but i dont know if the video still runs
+awesome [3k\]\: isn't d15 slightly better than d14?
+sentra [2d\]\: dont understand o14
+EuroGoTV1 [-\]\: maybe the order is wrong
+Horse [7k\]\: still video although its a bit rough sometimes
+EuroGoTV1 [-\]\: but position is correct now
+Muttley [-\]\: I suspect its correct, EGTV
+Muttley [-\]\: I can't see any other way to sensibly reach this position
+EuroGoTV1 [-\]\: i will lower the quality of the video stream, so it will be black for 30 seconds
+Horse [7k\]\: i would say white cam back in the game
+EuroGoTV1 [-\]\: done
+Horse [7k\]\: oh, now merlijn finished
+Horse [7k\]\: eh, disappeared
+hvk [-\]\: 12O
+bert [2d?\]\: he is using the blackcloud spell again
+]
+;B[nh]C[eFond [7k\]\: white is losing right?
+Horse [7k\]\: dunno, seems even to me
+xzar [4k\]\: depends
+Horse [7k\]\: but i could be wrong easily
+eFond [7k\]\: white has huge corner
+xzar [4k\]\: he played a ko threar
+eFond [7k\]\: and another corner+ side
+Horse [7k\]\: n13 working ?
+xzar [4k\]\: and the sequence isn't finised
+awesome [3k\]\: I think w must n13
+yasi [1d\]\: b has 100points
+Horse [7k\]\: already played
+sentra [2d\]\: b can get out?
+Horse [7k\]\: n13 n12 m13 etc
+sentra [2d\]\: not likely
+Horse [7k\]\: well, seems he can
+]
+;W[mg]C[xzar [4k\]\: where did you see 100 pts?
+ofbusy [3d\]\: closer to 85 imo
+xzar [4k\]\: yea that's what I thougt, I counted 80 +
+yasi [1d\]\: upperleft 36
+Horse [7k\]\: still time left ?
+awesome [3k\]\: I found only 70 for b \:(
+ofbusy [3d\]\: even if w captures this he s short
+yasi [1d\]\: bottonleft 25
+sentra [2d\]\: if b wants to get out why not n13 instead of o14
+awesome [3k\]\: oh the center...
+xzar [4k\]\: what Oo
+yasi [1d\]\: bottom center 26
+xzar [4k\]\: are you trolling?
+xzar [4k\]\: I'm not sure xD
+Muttley [-\]\: M12
+Muttley [-\]\: N12
+Mollusque3 [3d\]\: center depends on who will get sente
+yasi [1d\]\: top 9
+Muttley [-\]\: black played N12 yere
+yasi [1d\]\: +5 stone
+Muttley [-\]\: here
+yasi [1d\]\: right?
+xzar [4k\]\: when both player have captured the same amount of stones, what's the point to count them
+xzar [4k\]\: ?
+Sanyel [-\]\: Accuracy.
+Horse [7k\]\: to check if the count is correct
+yasi [1d\]\: couse i am saying the total pts
+Muttley [-\]\: I wish I could get control, I could update the relay
+yasi [1d\]\: for b
+xzar [4k\]\: absolute is nothing
+]
+;B[mh];W[lg];B[lh];W[kg];B[kh];W[jg];B[kj];W[ib];B[jb];W[gm];B[ni];W[nj];B[kk];W[fl]
+C[xzar [4k\]\: and still no 25 in bottom left
+];B[dn]C[Muttley [-\]\: attach
+Muttley [-\]\: c6
+yasi [1d\]\: yes bu i need to count in dead stone to renove the confusion
+]
+;W[cn]C[bert [2d?\]\: you omitted s13 
+awesome [3k\]\: the kgs game comes in bursts and so does the video stream
+whuang [4d\]\: white got nothing out of the ko?
+Horse [7k\]\: s13 s12 missing
+Muttley [-\]\: ahh, sorry
+gogonuts [4d\]\: s13 s11
+Muttley [-\]\: yes, s13 s11 was played
+yasi [1d\]\: right bottom venter i assume b get sente
+bert [2d?\]\: camera is off again
+awesome [3k\]\: can't the owner of the game just add stones to the board?
+Muttley [-\]\: camera is on here
+]
+;B[bn]C[Horse [7k\]\: and lower left, what went on there
+xzar [4k\]\: Sanyel [-\]\: Accuracy ----> do you try to count during game?
+Moin9 [1k\]\: somehow I'm rooting for black^^
+Muttley [-\]\: no, we have s13 before this
+Sanyel [-\]\: xzar, of course.
+whuang [4d\]\: The underdog, Moin
+]
+;W[em]C[Moin9 [1k\]\: yes
+Muttley [-\]\: threatening p10
+Muttley [-\]\: never mind, put it in later \:)
+xzar [4k\]\: so you know it's difficult right?
+Muttley [-\]\: connect at e6
+Sanyel [-\]\: Depends, xzar.
+EuroGoTV1 [-\]\: cant move
+]
+;B[en];W[dm];B[do];W[bm];B[bo];W[jm];B[kn];W[re]C[Horse [7k\]\: s13 s11 missing eurogo
+]
+;B[rg];W[ri]C[awesome [3k\]\: ok...
+Muttley [-\]\: that's the position, right
+EuroGoTV1 [-\]\: order wrong position ok
+Muttley [-\]\: well done
+bert [2d?\]\: ok
+Horse [7k\]\: back on track, nice
+]
+;B[ik];W[ho];B[hp]C[just9x9 [-\]\: we prefer this to "order ok, position wrong" \:)
+narugo [2d\]\: k1 dont work?
+]
+;W[km]C[awesome [3k\]\: k1?
+Horse [7k\]\: m15 is sente for white ?
+Nern [1k?\]\: h5 h4 is a bit odd
+Muttley [-\]\: you mean j1?
+xzar [4k\]\: not at all just9
+just9x9 [-\]\: j1 tenuki
+narugo [2d\]\: no k1
+ofbusy [3d\]\: 20 pts for b time to res...
+Nern [1k?\]\: couldn't b have answered h5 with h8 ?
+xzar [4k\]\: we are grateful to eurogotv to take time to show us the game the best they can
+Moin9 [1k\]\: h8 ?
+Nern [1k?\]\: h8 g8 j6 
+xzar [4k\]\: (sorry too tempting) \:)
+]
+;B[ln];W[hl]C[kozak03 [8k\]\: m10 
+xzar [4k\]\: so tell me more about that 100 pts going
+]
+;B[hb];W[gb];B[ic];W[fa];B[ea];W[ga];B[ia]C[Moin9 [1k\]\: j15 
+Moin9 [1k\]\: \:-(
+]
+;W[an]C[Lyoug [3k?\]\: i'm counting B+6
+awesome [3k\]\: w k15?
+];B[ao];W[am];B[il]
+;W[im];B[ie];W[he]C[atgo [?\]\: game over....
+];B[le];W[kf]C[oonicks [?\]\: so with 7.5 komi w 0.5?
+]
+;B[nb];W[oc]C[Lyoug [3k?\]\: no, komi included
+Sanyel [-\]\: Japanese rules?
+awesome [3k\]\: yes, but 6.5 komi
+Muttley [-\]\: r5
+]
+;B[li];W[mj];B[oj];W[ok];B[lj];W[nk]C[Sanyel [-\]\: Why "but"?
+];B[qo];W[ro]C[oonicks [?\]\: b leads
+]
+;B[rn];W[rm]C[oonicks [?\]\: or lead
+];B[sh]C[awesome [3k\]\: oonicks said 7.5
+xzar [4k\]\: because oonicks said 7.5
+]
+;W[ps];B[oo]C[oonicks [?\]\: don't want to redo it
+Nern [1k?\]\: b should have played q1 
+awesome [3k\]\: but he still had to p5
+Nern [1k?\]\: yes but sente
+Sanyel [-\]\: Ah, yeah, just that it is obvious to have 6.5 komi with japanese rules.
+Nern [1k?\]\: 2 points difference
+Muttley [-\]\: t11
+xzar [4k\]\: you are right sanyel
+]
+;W[lm];B[mm];W[mp];B[mo]C[Thoravatar [1d\]\: slack?
+];W[je];B[id];W[if];B[sf];W[se]
+;B[rh];W[qj];B[rf];W[pe];B[qf]C[Muttley [-\]\: you're missing w t11
+Muttley [-\]\: exchange for k11
+]
+;W[qe]C[Thoravatar [1d\]\: ah ok
+Muttley [-\]\: so play k11 here then t11 w
+];B[oa]
+;W[pa];B[na];W[si];B[ji];W[jn];B[jo]C[Muttley [-\]\: j10, k10
+];W[hs];B[gs];W[is]
+;B[hk];W[mf];B[me];W[io];B[jj];W[gk];B[jl]C[Muttley [-\]\: j10
+Muttley [-\]\: and the position is correct
+Nern [1k?\]\: \\o/
+Nern [1k?\]\: and w is losing
+Horse [7k\]\: actually black is winning
+ofbusy [3d\]\: i trust se here ...
+Muttley [-\]\: well, it resolves down to a half point ko at e10
+Muttley [-\]\: though b has top right threats
+awesome [3k\]\: and many other threats
+]
+;W[ih];B[fj];W[fk]C[Nern [1k?\]\: J12?
+xzar [4k\]\: ?
+Muttley [-\]\: its a dame now, b connected the ko
+]
+;B[fi];W[cm]C[Muttley [-\]\: no difference in score if you don't have all the threats
+]
+;B[co];W[ha];B[hc]C[xzar [4k\]\: why not j11?
+Horse [7k\]\: great game, thanks you scribe 
+Nern [1k?\]\: so merlijn lost?
+Horse [7k\]\: yes
+Nern [1k?\]\: or are the colors wrong?
+EuroGoTV1 [-\]\: B+14.5
+awesome [3k\]\: I know I would have messed up ten times worse
+raynolimit [3d\]\: r18
+Horse [7k\]\: but can still win the title
+Muttley [-\]\: great job EGTV, thank you
+NiceGoAuth [-\]\: thx
+Moin9 [1k\]\: so underdog won^^
+yasi [1d\]\: w should have resign a while ago
+EuroGoTV1 [-\]\: Merlijn lost but won the title
+awesome [3k\]\: beware the 4ds
+Muttley [-\]\: contended with some real problems there
+Javaness [2d\]\: tanks
+Moin9 [1k\]\: thanks euro^^
+ofbusy [3d\]\: thx fun game
+eFond [7k\]\: is that all for this competition?
+Muttley [-\]\: think so
+hvk [-\]\: There is one more game?
+Thoravatar [1d\]\: now all 5pointers should complian that there is no round 8
+Thoravatar [1d\]\: complain*
+hvk [-\]\: When?
+Horse [7k\]\: 1 round less this year because of the bad weather
+]))))

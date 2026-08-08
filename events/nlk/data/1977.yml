@@ -8,6 +8,7 @@ stages:
     name: championship
     dir: 1977/nlk
     promoted: 2
+    notes: Recreated from cross table. Games order can be different.
     scoringColumns:
       - wins
       - sodos

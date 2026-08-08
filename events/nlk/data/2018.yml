@@ -3,15 +3,25 @@ stages:
     name: championship
     file: nl2018.txt
     scoringColumns:
-      - null      
+      - null
       - wins
-      - mms      
+      - mms
       - sos
       - sodos
     breakers:
       - mms
       - sos
       - sodos
-    columns:  
+    columns:
       - wins
     findSharedPlaces: true
+    games:
+      - 1-3 1:B+R round:1 sgf:2018/1-RobvanZeijst-RudiVerhagen.sgf
+      - 1-6 1:B+R round:4 sgf:2018/4-RobvanZeijst-GillesvanEeden.sgf
+      - 1-7 1:B+R round:5 sgf:2018/5-RobvanZeijst-GeertGroenen.sgf
+      - 2-1 1:W+R round:3 sgf:2018/3-KoenPomstra-RobvanZeijst.sgf
+      - 2-1 1:W+R round:7 sgf:2018/7-KoenPomstra-RobvanZeijst.sgf
+      - 6-17 6:B+R round:3 sgf:2018/3-GillesvanEeden-HermanHiddema.sgf
+      - 7-17 7:B+R round:4 sgf:2018/4-GeertGroenen-HermanHiddema.sgf
+      - 9-1 1:W+16.5 round:2 sgf:2018/2-RubenCornelissen-RobvanZeijst.sgf
+      - 13-1 1:W+R round:6 sgf:2018/6-MichielEijkhout-RobvanZeijst.sgf

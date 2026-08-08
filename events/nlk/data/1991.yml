@@ -2,8 +2,8 @@ stages:
   - type: tournament
     name: championship
     file: nl1991.txt
-    scoringColumns: 
-      - wins          
+    scoringColumns:
+      - wins
       - sos
       - sodos
     breakers:
@@ -11,3 +11,5 @@ stages:
       - sos
       - sodos
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:2 sgf:1991/2-FrankJanssen-RonaldSchlemper.sgf
