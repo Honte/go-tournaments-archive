@@ -41,11 +41,11 @@ export function allGameStatsUrl(event: EventContext, locale: string) {
 }
 
 export function faviconUrl(event: EventContext) {
-  return joinPaths(event.basePath, event.prefix, '/favicon.svg');
+  return joinPaths(event.basePath, event.prefix, '/event-icon.svg');
 }
 
 export function appleIconUrl(event: EventContext) {
-  return joinPaths(event.basePath, event.prefix, '/apple-icon.png');
+  return joinPaths(event.basePath, event.prefix, '/event-icon.png');
 }
 
 export function logoBlackUrl(event: EventContext) {
