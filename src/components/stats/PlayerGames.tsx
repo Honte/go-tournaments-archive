@@ -1,4 +1,3 @@
-import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
 import type { GameProps, PlayerStats } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
@@ -9,6 +8,7 @@ import { GameActions } from '@/components/GameActions';
 import { GameResultLabel } from '@/components/GameResultLabel';
 import { Stone } from '@/components/Stone';
 import { StatsTable } from '@/components/table/StatsTable';
+import type { StatsColumnDef } from '@/components/table/statsTableConfig';
 import { CountryLink } from '@/components/ui/CountryLink';
 import { H2 } from '@/components/ui/H2';
 import { PlayerCell } from '@/components/ui/PlayerCell';
@@ -79,7 +79,7 @@ export function PlayerGames({ event, player, translations }: PlayerGamesProps) {
     return games.sort((a, b) => b.year - a.year);
   }, [player]);
 
-  const columns = useMemo<ColumnDef<GameRow>[]>(
+  const columns = useMemo<StatsColumnDef<GameRow>[]>(
     () =>
       (
         [
@@ -141,12 +141,11 @@ export function PlayerGames({ event, player, translations }: PlayerGamesProps) {
                 showCountry={false}
               />
             ),
-            meta: { span: 2 },
+            spanColumns: 2,
           },
           {
             accessorKey: 'opponentLastName',
             header: t('table.lastName'),
-            meta: { skip: true },
           },
           event.showCountry && {
             accessorKey: 'opponent.country',
@@ -165,7 +164,7 @@ export function PlayerGames({ event, player, translations }: PlayerGamesProps) {
             cell: (info) => <GameActions event={event} props={info.row.original.props} t={t} />,
             enableSorting: false,
           },
-        ] as ColumnDef<GameRow>[]
+        ] as StatsColumnDef<GameRow>[]
       ).filter(Boolean),
     [t, player.name, translations, event]
   );

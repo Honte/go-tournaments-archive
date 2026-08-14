@@ -1,6 +1,5 @@
 'use client';
 
-import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
 import type { PlayerStats, TableStats } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
@@ -10,6 +9,7 @@ import { jsxJoin } from '@/libs/join';
 import { sortTableStats } from '@/libs/sort';
 import { toNumeric, toPercentage } from '@/libs/table';
 import { StatsTable } from '@/components/table/StatsTable';
+import type { StatsColumnDef } from '@/components/table/statsTableConfig';
 import { CountryLink } from '@/components/ui/CountryLink';
 import { Loader } from '@/components/ui/Loader';
 import { PlayerCell } from '@/components/ui/PlayerCell';
@@ -100,7 +100,7 @@ function AllPlayersStatsContent({ event, players, translations }: AllPlayersStat
   const hasSgfs = data.some((p) => p.sgfs > 0);
   const hasDraws = data.some((p) => p.drawn > 0);
 
-  const columns = useMemo<ColumnDef<PlayerRow>[]>(
+  const columns = useMemo<StatsColumnDef<PlayerRow>[]>(
     () =>
       (
         [
@@ -116,12 +116,11 @@ function AllPlayersStatsContent({ event, players, translations }: AllPlayersStat
                 showCountry={false}
               />
             ),
-            meta: { span: 2 },
+            spanColumns: 2,
           },
           {
             accessorKey: 'lastName',
             header: t('table.lastName'),
-            meta: { skip: true },
           },
           event.showCountry && {
             accessorKey: 'country',
@@ -180,7 +179,7 @@ function AllPlayersStatsContent({ event, players, translations }: AllPlayersStat
             header: t('table.wonPercent'),
             cell: toPercentage,
           },
-        ] as ColumnDef<PlayerRow>[]
+        ] as StatsColumnDef<PlayerRow>[]
       ).filter(Boolean),
     [t, translations, hasSgfs, hasDraws, event]
   );

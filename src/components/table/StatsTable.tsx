@@ -1,33 +1,19 @@
 'use client';
 
-import {
-  type ColumnDef,
-  getCoreRowModel,
-  getSortedRowModel,
-  type SortingState,
-  useReactTable,
-} from '@tanstack/react-table';
-import { useState } from 'react';
+import { type RowData } from '@tanstack/react-table';
+import { type StatsColumnDef, useStatsTable } from '@/components/table/statsTableConfig';
 import { TableHeader } from '@/components/table/TableHeader';
 import { TableRow } from './TableRow';
 
-type StatsTableProps<T> = {
+type StatsTableProps<T extends RowData> = {
   data: T[];
-  columns: ColumnDef<T>[];
+  columns: StatsColumnDef<T>[];
 };
 
-export function StatsTable<T>({ data, columns }: StatsTableProps<T>) {
-  const [sorting, setSorting] = useState<SortingState>([]);
-
-  const table = useReactTable({
+export function StatsTable<T extends RowData>({ data, columns }: StatsTableProps<T>) {
+  const table = useStatsTable({
     data,
     columns,
-    state: {
-      sorting,
-    },
-    getCoreRowModel: getCoreRowModel(),
-    getSortedRowModel: getSortedRowModel(),
-    onSortingChange: setSorting,
   });
 
   return (
