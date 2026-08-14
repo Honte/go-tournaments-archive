@@ -1,40 +1,28 @@
 'use client';
 
-import {
-  type ColumnDef,
-  getCoreRowModel,
-  getSortedRowModel,
-  type SortingState,
-  useReactTable,
-} from '@tanstack/react-table';
+import { type RowData } from '@tanstack/react-table';
 import { useVirtualizer } from '@tanstack/react-virtual';
-import { useLayoutEffect, useRef, useState } from 'react';
+import { useLayoutEffect, useRef } from 'react';
+import { type StatsColumnDef, useStatsTable } from '@/components/table/statsTableConfig';
 import { TableHeader } from '@/components/table/TableHeader';
 import { TableRow } from './TableRow';
 
-type VirtualStatsTableProps<T> = {
+type VirtualStatsTableProps<T extends RowData> = {
   data: T[];
-  columns: ColumnDef<T>[];
+  columns: StatsColumnDef<T>[];
 };
 
-export function VirtualStatsTable<T>({ data, columns }: VirtualStatsTableProps<T>) {
-  const [sorting, setSorting] = useState<SortingState>([]);
+export function VirtualStatsTable<T extends RowData>({ data, columns }: VirtualStatsTableProps<T>) {
   const scrollElementRef = useRef<HTMLDivElement>(null);
 
-  const table = useReactTable({
+  const table = useStatsTable({
     data,
     columns,
-    state: {
-      sorting,
-    },
-    getCoreRowModel: getCoreRowModel(),
-    getSortedRowModel: getSortedRowModel(),
-    onSortingChange: setSorting,
   });
 
   useLayoutEffect(() => {
     scrollElementRef.current?.scrollTo({ top: 0 });
-  }, [sorting]);
+  }, [table.state.sorting]);
 
   const rows = table.getRowModel().rows;
   const rowVirtualizer = useVirtualizer({
@@ -46,7 +34,7 @@ export function VirtualStatsTable<T>({ data, columns }: VirtualStatsTableProps<T
   const virtualRows = rowVirtualizer.getVirtualItems();
   const paddingTop = virtualRows[0]?.start ?? 0;
   const paddingBottom = rowVirtualizer.getTotalSize() - (virtualRows.at(-1)?.end ?? 0);
-  const columnCount = table.getVisibleLeafColumns().length;
+  const columnCount = table.getAllLeafColumns().length;
 
   return (
     <div className="relative flex-1">

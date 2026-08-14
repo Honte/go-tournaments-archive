@@ -1,6 +1,5 @@
 'use client';
 
-import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
 import type { CountryStats, TableStats } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
@@ -9,6 +8,7 @@ import { getTranslator } from '@/i18n/translator';
 import { sortTableStats } from '@/libs/sort';
 import { toNumeric, toPercentage } from '@/libs/table';
 import { StatsTable } from '@/components/table/StatsTable';
+import type { StatsColumnDef } from '@/components/table/statsTableConfig';
 import { H2 } from '@/components/ui/H2';
 import { PlayerLink } from '@/components/ui/PlayerLink';
 
@@ -79,7 +79,7 @@ export function CountryPlayers({ event, country, translations }: CountryPlayerPr
   }, [country]);
   const hasDraws = data.some((player) => player.drawn > 0);
 
-  const columns = useMemo<ColumnDef<CountryPlayerRow>[]>(
+  const columns = useMemo<StatsColumnDef<CountryPlayerRow>[]>(
     () =>
       (
         [
@@ -139,7 +139,7 @@ export function CountryPlayers({ event, country, translations }: CountryPlayerPr
             header: t('table.wonPercent'),
             cell: toPercentage,
           },
-        ] as ColumnDef<CountryPlayerRow>[]
+        ] as StatsColumnDef<CountryPlayerRow>[]
       ).filter(Boolean),
     [translations, t, event, hasDraws]
   );

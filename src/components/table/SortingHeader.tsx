@@ -1,6 +1,7 @@
-import type { Header } from '@tanstack/react-table';
+import type { RowData } from '@tanstack/react-table';
+import type { StatsTableHeader } from '@/components/table/statsTableConfig';
 
-export function SortingHeader<T>({ header }: { header: Header<T, unknown> }) {
+export function SortingHeader<T extends RowData>({ header }: { header: StatsTableHeader<T> }) {
   const state = header.column.getIsSorted();
 
   if (!state) {

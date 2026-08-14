@@ -1,5 +1,4 @@
 'use client';
-import type { ColumnDef, SortingFn } from '@tanstack/react-table';
 import { clsx } from 'clsx';
 import { useCallback, useMemo, useState } from 'react';
 import type { CategoryPlayer, CategoryStats } from '@/schema/data';
@@ -9,6 +8,7 @@ import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
 import type { KeysMatching } from '@/libs/types';
 import { StatsTable } from '@/components/table/StatsTable';
+import type { StatsColumnDef, StatsSortFn } from '@/components/table/statsTableConfig';
 import { H1 } from '@/components/ui/H1';
 import { PlayerLink } from '@/components/ui/PlayerLink';
 import { PlayerName } from '@/components/ui/PlayerName';
@@ -64,13 +64,13 @@ export function CategoryResultsTable({ event, translations, stats, className }: 
 
   const hasUnsure = data.some((r) => r.hasUnsure);
 
-  const sortByFirstPlayer = useCallback<(key: MedalKey) => SortingFn<SummaryRow>>(
+  const sortByFirstPlayer = useCallback<(key: MedalKey) => StatsSortFn<SummaryRow>>(
     (key) => (a, b) =>
       (a.original[key][0]?.name ?? '').localeCompare(b.original[key][0]?.name ?? '', translations.locale),
     [translations.locale]
   );
 
-  const renderPlayers = useCallback<(key: MedalKey) => ColumnDef<SummaryRow>['cell']>(
+  const renderPlayers = useCallback<(key: MedalKey) => StatsColumnDef<SummaryRow>['cell']>(
     (key) => (info) =>
       jsxJoin(
         info.row.original[key].map((p) => (
@@ -96,25 +96,25 @@ export function CategoryResultsTable({ event, translations, stats, className }: 
             accessorKey: 'gold',
             header: t('winners.first'),
             cell: renderPlayers('gold'),
-            sortingFn: sortByFirstPlayer('gold'),
+            sortFn: sortByFirstPlayer('gold'),
           },
           {
             accessorKey: 'silver',
             header: t('winners.second'),
             cell: renderPlayers('silver'),
-            sortingFn: sortByFirstPlayer('silver'),
+            sortFn: sortByFirstPlayer('silver'),
           },
           {
             accessorKey: 'bronze',
             header: t('winners.third'),
             cell: renderPlayers('bronze'),
-            sortingFn: sortByFirstPlayer('bronze'),
+            sortFn: sortByFirstPlayer('bronze'),
           },
           {
             accessorKey: 'players',
             header: t('table.players'),
           },
-        ] as ColumnDef<SummaryRow>[]
+        ] as StatsColumnDef<SummaryRow>[]
       ).filter(Boolean),
     [t, translations.locale, sortByFirstPlayer, renderPlayers, event]
   );

@@ -1,18 +1,21 @@
-import { flexRender, type Row } from '@tanstack/react-table';
+import { FlexRender, type RowData } from '@tanstack/react-table';
 import { clsx } from 'clsx';
 import { type ComponentProps, memo } from 'react';
+import type { StatsTableRow } from '@/components/table/statsTableConfig';
 
-type TableCellProps<T> = ComponentProps<'tr'> & {
-  row: Row<T>;
+type TableCellProps<T extends RowData> = ComponentProps<'tr'> & {
+  row: StatsTableRow<T>;
 };
 
 export const TableRow = memo(TableRowComponent) as typeof TableRowComponent;
 
-function TableRowComponent<T>({ row, className, ...props }: TableCellProps<T>) {
+function TableRowComponent<T extends RowData>({ row, className, ...props }: TableCellProps<T>) {
   return (
     <tr key={row.id} className={clsx('text-center hover:bg-gray-300', className)} {...props}>
-      {row.getVisibleCells().map((cell) => {
-        if (cell.column.columnDef.meta?.skip) {
+      {row.getAllCells().map((cell) => {
+        const colSpan = cell.getColSpan();
+
+        if (colSpan === 0) {
           return null;
         }
 
@@ -20,9 +23,9 @@ function TableRowComponent<T>({ row, className, ...props }: TableCellProps<T>) {
           <td
             key={cell.id}
             className={clsx('py-1 px-2', cell.column.columnDef.meta?.className)}
-            colSpan={cell.column.columnDef.meta?.span ?? 1}
+            colSpan={cell.getColSpan()}
           >
-            {flexRender(cell.column.columnDef.cell, cell.getContext())}
+            <FlexRender cell={cell} />
           </td>
         );
       })}

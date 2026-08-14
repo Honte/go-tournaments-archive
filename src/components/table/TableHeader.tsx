@@ -1,12 +1,13 @@
-import { flexRender, type Table } from '@tanstack/react-table';
+import { FlexRender, type RowData } from '@tanstack/react-table';
 import { clsx } from 'clsx';
 import { SortingHeader } from '@/components/table/SortingHeader';
+import type { StatsTableInstance } from '@/components/table/statsTableConfig';
 
-type TableHeaderProps<T> = {
-  table: Table<T>;
+type TableHeaderProps<T extends RowData> = {
+  table: StatsTableInstance<T>;
 };
 
-export function TableHeader<T>({ table }: TableHeaderProps<T>) {
+export function TableHeader<T extends RowData>({ table }: TableHeaderProps<T>) {
   return (
     <thead className="sticky top-0 z-10 max-sm:text-sm bg-event-light shadow-[inset_0_-1px_0_var(--color-event-gray)]">
       {table.getHeaderGroups().map((headerGroup) => (
@@ -19,7 +20,7 @@ export function TableHeader<T>({ table }: TableHeaderProps<T>) {
                 'cursor-pointer': header.column.getCanSort(),
               })}
             >
-              {header.isPlaceholder ? null : flexRender(header.column.columnDef.header, header.getContext())}
+              {header.isPlaceholder ? null : <FlexRender header={header} />}
               <SortingHeader header={header} />
             </th>
           ))}

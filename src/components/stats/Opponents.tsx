@@ -1,6 +1,5 @@
 'use client';
 
-import type { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
 import type { PlayerStats } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
@@ -8,6 +7,7 @@ import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { toPercentage } from '@/libs/table';
 import { StatsTable } from '@/components/table/StatsTable';
+import type { StatsColumnDef } from '@/components/table/statsTableConfig';
 import { H2 } from '@/components/ui/H2';
 import { PlayerCell } from '@/components/ui/PlayerCell';
 
@@ -84,7 +84,7 @@ export function Opponents({ event, translations, player }: OpponentsProps) {
   }, [player]);
   const hasDraws = data.some((opponent) => opponent.drawn > 0);
 
-  const columns = useMemo<ColumnDef<OpponentRow>[]>(
+  const columns = useMemo<StatsColumnDef<OpponentRow>[]>(
     () =>
       (
         [
@@ -94,12 +94,11 @@ export function Opponents({ event, translations, player }: OpponentsProps) {
             cell: (info) => (
               <PlayerCell event={event} player={info.row.original} locale={translations.locale} showRank={false} />
             ),
-            meta: { span: 2 },
+            spanColumns: 2,
           },
           {
             accessorKey: 'lastName',
             header: t('table.lastName'),
-            meta: { skip: true },
           },
           {
             accessorKey: 'games',
@@ -122,7 +121,7 @@ export function Opponents({ event, translations, player }: OpponentsProps) {
             header: t('table.wonPercent'),
             cell: toPercentage,
           },
-        ] as ColumnDef<OpponentRow>[]
+        ] as StatsColumnDef<OpponentRow>[]
       ).filter(Boolean),
     [translations, t, event, hasDraws]
   );
