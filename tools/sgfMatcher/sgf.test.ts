@@ -100,27 +100,27 @@ describe('extractSgfInfo', () => {
 
 describe('parseFilename', () => {
   it('parses year-prefixed league filenames', () => {
-    assert.deepEqual(parseFilename('1997/1997-league-4-kgiedrojc-lsoldan.sgf'), {
-      blackName: 'kgiedrojc',
-      whiteName: 'lsoldan',
+    assert.deepEqual(parseFilename('1997/1997-league-4-playeralpha-playerbeta.sgf'), {
+      blackName: 'playeralpha',
+      whiteName: 'playerbeta',
       round: 4,
       stage: 'league',
     });
   });
 
   it('parses final filenames with index before player names', () => {
-    assert.deepEqual(parseFilename('1997/1997-final-2-lsoldan-jlubos.sgf'), {
-      blackName: 'lsoldan',
-      whiteName: 'jlubos',
+    assert.deepEqual(parseFilename('1997/1997-final-2-playerbeta-playergamma.sgf'), {
+      blackName: 'playerbeta',
+      whiteName: 'playergamma',
       round: 2,
       stage: 'final',
     });
   });
 
   it('parses final filenames with index after player names', () => {
-    assert.deepEqual(parseFilename('1989/1989-lsoldan-jkraszek-final-1.sgf'), {
-      blackName: 'lsoldan',
-      whiteName: 'jkraszek',
+    assert.deepEqual(parseFilename('1989/1989-playerbeta-playerdelta-final-1.sgf'), {
+      blackName: 'playerbeta',
+      whiteName: 'playerdelta',
       round: 1,
       stage: 'final',
     });

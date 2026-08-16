@@ -42,8 +42,8 @@ describe('matchImplicitSgfs', () => {
 
   it('matches SGF names written in H9 surname-name order', () => {
     const playersMap = buildPlayersMap([
-      makeH9Player({ place: 1, name: 'Hironori', surname: 'Hirata' }),
-      makeH9Player({ place: 4, name: 'Sung-kyun', surname: 'Park' }),
+      makeH9Player({ place: 1, name: 'Test-One', surname: 'Example' }),
+      makeH9Player({ place: 4, name: 'Sample', surname: 'Player' }),
     ]);
     const gamesMap = new Map([
       [
@@ -59,11 +59,11 @@ describe('matchImplicitSgfs', () => {
       ],
     ]);
     const sgf = makeSgfInfo({
-      path: '1995/8-SungkyunPark-HirataHironori.sgf',
-      sgfBlackName: 'Sung kyun Park',
-      sgfWhiteName: 'Hirata Hironori',
-      filenameBlackName: 'SungkyunPark',
-      filenameWhiteName: 'HirataHironori',
+      path: '1995/8-SamplePlayer-ExampleTestOne.sgf',
+      sgfBlackName: 'Sample Player',
+      sgfWhiteName: 'Example Test One',
+      filenameBlackName: 'SamplePlayer',
+      filenameWhiteName: 'ExampleTestOne',
       filenameRound: 8,
       rawResult: 'W+0.5',
       cleanResult: 'W+0.5',
@@ -80,9 +80,9 @@ describe('matchImplicitSgfs', () => {
     });
 
     assert.deepEqual(result, {
-      matchedEntries: ['4-1 1:W+0.5 round:8 sgf:1995/8-SungkyunPark-HirataHironori.sgf'],
+      matchedEntries: ['4-1 1:W+0.5 round:8 sgf:1995/8-SamplePlayer-ExampleTestOne.sgf'],
       removedEntries: [],
-      matchedSgfs: ['1995/8-SungkyunPark-HirataHironori.sgf'],
+      matchedSgfs: ['1995/8-SamplePlayer-ExampleTestOne.sgf'],
       unmatchedSgfs: [],
       unmatchedEntries: [],
     });
@@ -91,16 +91,16 @@ describe('matchImplicitSgfs', () => {
   it('matches SGF names using players.yml nicknames', () => {
     const playersMap = buildPlayersMap(
       [
-        makeH9Player({ place: 1, name: 'Stanislaw', surname: 'Frejlak' }),
+        makeH9Player({ place: 1, name: 'Test', surname: 'Fixture' }),
         makeH9Player({ place: 2, name: 'White', surname: 'Player' }),
       ],
       [
         {
-          id: 'sfrejlak',
-          name: 'Stanisław Frejlak',
-          egd: 12837594,
-          original: 'Stanislaw Frejlak',
-          nickname: ['siasio'],
+          id: 'test-fixture',
+          name: 'Test Fixture',
+          egd: 10000001,
+          original: 'Test Fixture',
+          nickname: ['fixture-nick'],
           pastNames: [],
         },
       ]
@@ -119,10 +119,10 @@ describe('matchImplicitSgfs', () => {
       ],
     ]);
     const sgf = makeSgfInfo({
-      path: '2025/1-siasio-WhitePlayer.sgf',
-      sgfBlackName: 'siasio',
+      path: '2025/1-fixture-nick-WhitePlayer.sgf',
+      sgfBlackName: 'fixture-nick',
       sgfWhiteName: 'White Player',
-      filenameBlackName: 'siasio',
+      filenameBlackName: 'fixture-nick',
       filenameWhiteName: 'WhitePlayer',
       filenameRound: 1,
       rawResult: 'B+R',
@@ -139,7 +139,7 @@ describe('matchImplicitSgfs', () => {
       force: false,
     });
 
-    assert.deepEqual(result.matchedEntries, ['1-2 1:B+R round:1 sgf:2025/1-siasio-WhitePlayer.sgf']);
+    assert.deepEqual(result.matchedEntries, ['1-2 1:B+R round:1 sgf:2025/1-fixture-nick-WhitePlayer.sgf']);
   });
 
   it('treats SGF filenames with spaces as unmatched', () => {

@@ -78,15 +78,15 @@ describe('matchExplicitSgfs', () => {
   it('uses SGF winner color and result when matching explicit games', () => {
     const tournament: InputTournament = {
       players: {
-        kc: 'Kamil Chwedyna 4d',
-        ak: 'Arkadiusz Kindziuk 1d',
+        kc: 'Test Player Alpha 4d',
+        ak: 'Test Player Beta 1d',
       },
       stages: [],
     };
     const sgf = makeSgfInfo({
       path: '2025-league-1-kc-ak.sgf',
-      sgfBlackName: 'Arkadiusz Kindziuk',
-      sgfWhiteName: 'Kamil Chwedyna',
+      sgfBlackName: 'Test Player Beta',
+      sgfWhiteName: 'Test Player Alpha',
       filenameBlackName: 'kc',
       filenameWhiteName: 'ak',
       filenameRound: 1,
@@ -114,16 +114,16 @@ describe('matchExplicitSgfs', () => {
   it('matches explicit SGF names using players.yml nicknames', () => {
     const tournament: InputTournament = {
       players: {
-        sf: 'Stanislaw Frejlak 2p |12837594',
+        sf: 'Test Fixture 2p |10000001',
         wp: 'White Player 1d',
       },
       stages: [],
     };
     const sgf = makeSgfInfo({
-      path: '2025-league-1-siasio-wp.sgf',
-      sgfBlackName: 'siasio',
+      path: '2025-league-1-fixture-nick-wp.sgf',
+      sgfBlackName: 'fixture-nick',
       sgfWhiteName: 'White Player',
-      filenameBlackName: 'siasio',
+      filenameBlackName: 'fixture-nick',
       filenameWhiteName: 'wp',
       filenameRound: 1,
       filenameStage: 'league',
@@ -141,33 +141,33 @@ describe('matchExplicitSgfs', () => {
       force: false,
       eventPlayers: [
         {
-          id: 'sfrejlak',
-          name: 'Stanisław Frejlak',
-          egd: 12837594,
-          original: 'Stanislaw Frejlak',
-          nickname: ['siasio'],
+          id: 'test-fixture',
+          name: 'Test Fixture',
+          egd: 10000001,
+          original: 'Test Fixture',
+          nickname: ['fixture-nick'],
           pastNames: [],
         },
       ],
     });
 
-    assert.deepEqual(result.matchedEntries, ['sf-wp sf:B+R sgf:2025-league-1-siasio-wp.sgf']);
+    assert.deepEqual(result.matchedEntries, ['sf-wp sf:B+R sgf:2025-league-1-fixture-nick-wp.sgf']);
   });
 
   it('matches comma-form SGF player names with a misspelled given name', () => {
     const tournament: InputTournament = {
       players: {
-        sp: 'Sebastian Pawlaczyk 3d',
-        kh: 'Koichiro Habu 4d',
+        sp: 'Test Alpha 3d',
+        kh: 'Test Beta 4d',
       },
       stages: [],
     };
     const sgf = makeSgfInfo({
-      path: '2014/2014-1-spawlaczyk-khabu.sgf',
-      sgfBlackName: 'Habu, Koichiro',
-      sgfWhiteName: 'Pawlaczyk, Sebestian',
-      filenameBlackName: 'spawlaczyk',
-      filenameWhiteName: 'khabu',
+      path: '2014/2014-1-testalpha-testbeta.sgf',
+      sgfBlackName: 'Beta, Test',
+      sgfWhiteName: 'Alpha, Tset',
+      filenameBlackName: 'testalpha',
+      filenameWhiteName: 'testbeta',
       filenameRound: 1,
       rawResult: 'W+1.5',
       cleanResult: 'W+1.5',
@@ -185,22 +185,22 @@ describe('matchExplicitSgfs', () => {
       force: false,
     });
 
-    assert.deepEqual(result.matchedEntries, ['kh-sp sp:W+1.5 sgf:2014/2014-1-spawlaczyk-khabu.sgf']);
+    assert.deepEqual(result.matchedEntries, ['kh-sp sp:W+1.5 sgf:2014/2014-1-testalpha-testbeta.sgf']);
     assert.deepEqual(result.unmatchedEntries, []);
   });
 
   it('does not change the YAML winner when SGF result points to the other player', () => {
     const tournament: InputTournament = {
       players: {
-        kc: 'Kamil Chwedyna 4d',
-        ak: 'Arkadiusz Kindziuk 1d',
+        kc: 'Test Player Alpha 4d',
+        ak: 'Test Player Beta 1d',
       },
       stages: [],
     };
     const sgf = makeSgfInfo({
       path: '2025-league-1-kc-ak.sgf',
-      sgfBlackName: 'Arkadiusz Kindziuk',
-      sgfWhiteName: 'Kamil Chwedyna',
+      sgfBlackName: 'Test Player Beta',
+      sgfWhiteName: 'Test Player Alpha',
       filenameBlackName: 'kc',
       filenameWhiteName: 'ak',
       filenameRound: 1,
@@ -228,8 +228,8 @@ describe('matchExplicitSgfs', () => {
   it('does not use filename order to assign winner color when SGF player metadata is missing', () => {
     const tournament: InputTournament = {
       players: {
-        kc: 'Kamil Chwedyna 4d',
-        ak: 'Arkadiusz Kindziuk 1d',
+        kc: 'Test Player Alpha 4d',
+        ak: 'Test Player Beta 1d',
       },
       stages: [],
     };
