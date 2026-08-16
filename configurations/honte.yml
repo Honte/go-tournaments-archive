@@ -1,7 +1,14 @@
-title: Go Tournaments Archives
+title:
+  en: Go Tournaments Archives
+  pl: Archiwum turniejów Go
 dynamic: true
+locales:
+  - pl
+  - en
 events:
-  - title: Global Tournaments
+  - title:
+      en: Global Tournaments
+      pl: Turnieje Globalne
     events:
       - id: wagc
         external: true
@@ -11,21 +18,37 @@ events:
         external: true
         prefix: kpmc
         domain: https://kpmc.go.art.pl
-  - title: European Tournaments
+  - title:
+      en: European Championships
+      pl: Mistrzostwa Europy
     events:
       - id: egc
         prefix: egc
+        external: true
+        domain: https://eurogofed.org/archives/egc
       - id: epc
         prefix: epc
+        external: true
+        domain: https://eurogofed.org/archives/epc
       - id: epq
         prefix: epq
+        external: true
+        domain: https://eurogofed.org/archives/epq
       - id: ewgc
         prefix: ewgc
+        external: true
+        domain: https://eurogofed.org/archives/ewgc
       - id: eygc
         prefix: eygc
+        external: true
+        domain: https://eurogofed.org/archives/eygc
       - id: esgc
         prefix: esgc
-  - title: National Tournaments
+        external: true
+        domain: https://eurogofed.org/archives/esgc
+  - title:
+      en: Polish Championships
+      pl: Mistrzostwa Polski
     events:
       - id: pgc
         external: true
@@ -43,13 +66,19 @@ events:
         external: true
         prefix: pagc
         domain: https://amp.go.art.pl
+  - title:
+      en: National Tournaments
+      pl: Mistrzostwa Krajowe
+    events:
       - id: iegc
         prefix: iegc
       - id: hrgc
         prefix: hrgc
       - id: nlk
         prefix: nlk
-  - title: Local Tournaments
+  - title:
+      en: Local Tournaments
+      pl: Lokalne Turnieje
     events:
       - id: wgl
         prefix: wgl
