@@ -19,6 +19,8 @@ stages:
       - wins
       - open
     findSharedPlaces: true
+    games:
+      - 10-3 3:W+R round:3 sgf:2008/ec/3-LeszekSoldan-IljaShikshin.sgf
   - type: tournament
     file: egc2008open100.txt
     name: EGC Open
@@ -34,7 +36,5 @@ stages:
     columns:
       - wins
     excluded: true
-    collapsed: true    
-    findSharedPlaces: true 
-	   
-
+    collapsed: true
+    findSharedPlaces: true

@@ -3,11 +3,13 @@ name: European Championship 1978
 stages:
   - type: tournament
     file: egc1978.txt
+    dir: 1978/ec
     name: Championship Group
     notes: Recreated from cross table. Games order can be different.
     scoringColumns:
       - wins
     breakers:
       - wins
-    findSharedPlaces: true   
-
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+2 round:9 sgf:1978/ec/9-HelmutHasibeder-MaxRebattu.sgf

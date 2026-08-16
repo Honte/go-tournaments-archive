@@ -14,3 +14,43 @@ stages:
     breakers:
       - place
     findSharedPlaces: true
+    games:
+      - 1-2 2:W+R round:9 sgf:2020/ec/9-IljaShikshin-AliJabarin.sgf ogs:https://online-go.com/game/27981029
+      - 1-4 4:W+R round:6 sgf:2020/ec/6-IljaShikshin-MateuszSurma.sgf ogs:https://online-go.com/game/27790229
+      - 2-1 1:W+R round:8 sgf:2020/ec/8-AliJabarin-IljaShikshin.sgf ogs:https://online-go.com/game/27972755
+      - 2-1 1:W+R round:10 sgf:2020/ec/10-AliJabarin-IljaShikshin.sgf ogs:https://online-go.com/game/28004671
+      - 2-3 3:W+R round:5 sgf:2020/ec/5-AliJabarin-ArtemKachanovskyi.sgf ogs:https://online-go.com/game/27900598
+      - 2-16 2:B+12.5 round:3 sgf:2020/ec/3-AliJabarin-LukasKraemer.sgf ogs:https://online-go.com/game/27658156
+      - 3-2 2:W+1.5 round:7 sgf:2020/ec/7-ArtemKachanovskyi-AliJabarin.sgf ogs:https://online-go.com/game/27933416
+      - 3-2 2:W+3.5 round:6 sgf:2020/ec/6-ArtemKachanovskyi-AliJabarin.sgf ogs:https://online-go.com/game/27909018
+      - 3-4 3:B+R round:9 sgf:2020/ec/9-ArtemKachanovskyi-MateuszSurma.sgf ogs:https://online-go.com/game/27980836
+      - 4-1 1:W+R round:5 sgf:2020/ec/5-MateuszSurma-IljaShikshin.sgf ogs:https://online-go.com/game/27783257
+      - 4-1 1:W+R round:7 sgf:2020/ec/7-MateuszSurma-IljaShikshin.sgf ogs:https://online-go.com/game/27811814
+      - 4-3 3:W+R round:8 sgf:2020/ec/8-MateuszSurma-ArtemKachanovskyi.sgf ogs:https://online-go.com/game/27972511
+      - 5-1 1:W+R round:4 sgf:2020/ec/4-AndriiKravets-IljaShikshin.sgf ogs:https://online-go.com/game/27680326
+      - 6-4 4:W+R round:4 sgf:2020/ec/4-AntonChernykh-MateuszSurma.sgf ogs:https://online-go.com/game/27677076
+      - 6-11 6:B+20.5 round:3 sgf:2020/ec/3-AntonChernykh-StanislawFrejlak.sgf ogs:https://online-go.com/game/27631594
+      - 7-3 3:W+R round:4 sgf:2020/ec/4-TanguyLeCalve-ArtemKachanovskyi.sgf ogs:https://online-go.com/game/27671778
+      - 7-14 7:B+3.5 round:3 sgf:2020/ec/3-TanguyLeCalve-ViktorLin.sgf ogs:https://online-go.com/game/27610088
+      - 8-2 2:W+8.5 round:4 sgf:2020/ec/4-BenjaminDreanGuenaizia.sgf ogs:https://online-go.com/game/27674230
+      - 8-15 8:B+0.5 round:3 sgf:2020/ec/3-BenjaminDreanGuenaizia-LukasPodpera.sgf ogs:https://online-go.com/game/27606812
+      - 9-1 1:W+6.5 round:3 sgf:2020/ec/3-RemiCampagnie-IljaShikshin.sgf ogs:https://online-go.com/game/27615557
+      - 9-17 9:B+R round:2 sgf:2020/ec/2-RemiCampagnie-CsabaMero.sgf ogs:https://online-go.com/game/27461743
+      - 10-5 5:W+R round:3 sgf:2020/ec/3-LucasNeirynck-AndriiKravets.sgf ogs:https://online-go.com/game/27633415
+      - 10-18 10:B+1.5 round:2 sgf:2020/ec/2-LucasNeirynck-AlexandrDinerstein.sgf ogs:https://online-go.com/game/27363439
+      - 12-4 4:W+3.5 round:3 sgf:2020/ec/3-NikolaMitic-MateuszSurma.sgf ogs:https://online-go.com/game/27636313
+      - 13-3 3:W+R round:3 sgf:2020/ec/3-OscarVazquez-ArtemKachanovskyi.sgf ogs:https://online-go.com/game/27629229
+      - 13-21 13:B+9.5 round:2 sgf:2020/ec/2-OscarVazquez-CornelBurzo.sgf ogs:https://online-go.com/game/27457544
+      - 16-24 16:B+R round:2 sgf:2020/ec/2-LukasKraemer-DusanMitic.sgf ogs:https://online-go.com/game/27549049
+      - 16-32 16:B+5.5 round:1 sgf:2020/ec/1-LukasKraemer-SchayanHamrah.sgf ogs:https://online-go.com/game/27219890
+      - 19-6 6:W+12.5 round:2 sgf:2020/ec/2-AmirFragman-AntonChernykh.sgf ogs:https://online-go.com/game/27433744
+      - 20-12 12:W+R round:2 sgf:2020/ec/2-VjacheslavKajmin-NikolaMitic.sgf ogs:https://online-go.com/game/27527845
+      - 22-7 7:W+R round:2 sgf:2020/ec/2-ValeriiKrushelnytskyi-TanguyLeCalve.sgf ogs:https://online-go.com/game/27478933
+      - 22-30 22:B+R round:1 sgf:2020/ec/1-ValeriiKrushelnytskyi-ElianIoanGrigoriu.sgf ogs:https://online-go.com/game/27190768
+      - 23-8 8:W+18.5 round:2 sgf:2020/ec/2-JavierAleksiSavolainen-BenjaminDreanGuenaizia.sgf ogs:https://online-go.com/game/27498447
+      - 23-31 23:B+1.5 round:1 sgf:2020/ec/1-JavierAleksiSavolainen-TimurSankin.sgf ogs:https://online-go.com/game/27232008
+      - 25-9 9:W+R round:1 sgf:2020/ec/1-AntonZatonskikh-RemiCampagnie.sgf ogs:https://online-go.com/game/27206470
+      - 26-10 10:W+R round:1 sgf:2020/ec/1-SinanDjepov-LucasNeirynck.sgf ogs:https://online-go.com/game/27128458
+      - 27-19 19:W+R round:1 sgf:2020/ec/1-MatiasPankoke-AmirFragman.sgf ogs:https://online-go.com/game/27235467
+      - 28-20 20:W+R round:1 sgf:2020/ec/1-OndrejKruml-VjacheslavKajmin.sgf ogs:https://online-go.com/game/27222306
+      - 29-13 13:W+17.5 round:1 sgf:2020/ec/1-IgorBurnaevskij-OscarVazquez.sgf ogs:https://online-go.com/game/27262949

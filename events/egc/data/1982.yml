@@ -4,6 +4,7 @@ stages:
   - type: tournament
     file: egc1982.txt
     name: Championship Group
+    dir: 1982/ec
     scoringColumns:
       - wins
       - sos
@@ -13,5 +14,5 @@ stages:
       - sos
       - sodos
     findSharedPlaces: true
-	   
-
+    games:
+      - 4-11 11:W+6 round:5 sgf:1982/ec/5-MatthewMacfadyen-JuanCarlosdelRio.sgf

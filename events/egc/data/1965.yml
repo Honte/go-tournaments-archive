@@ -3,7 +3,7 @@ name: European Championship 1965
 top:
  - Juergen Mattern
  - Max Rebattu
- - Jurgen Dueball
+ - Juergen Dueball
 stages:
   - type: tournament
     file: egc1965.txt

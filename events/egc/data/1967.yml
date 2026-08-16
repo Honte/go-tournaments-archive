@@ -3,11 +3,15 @@ name: European Championship 1967
 stages:
   - type: tournament
     file: egc1967.txt
+    dir: 1967/ec
     name: Championship Group
     notes: Recreated from cross table. Games order can be different.
     scoringColumns:
       - wins
     breakers:
       - wins
-    findSharedPlaces: true   
-
+    findSharedPlaces: true
+    games:
+      - 1-3 1:B+7 round:6 sgf:1967/ec/6-ZoranMutabzija-MaxRebattu.sgf
+      - 3-4 4:W+7 round:7 sgf:1967/ec/7-MaxRebattu-EduardEkart.sgf
+      - 5-7 5:B+R round:6 sgf:1967/ec/6-ErnstSkrob-JonDiamond.sgf

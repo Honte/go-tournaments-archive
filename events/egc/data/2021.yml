@@ -14,3 +14,49 @@ stages:
     breakers:
       - place
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:9 sgf:2021/ec/9-IljaShikshin-ArtemKachanovskyi.sgf ogs:https://online-go.com/game/39189719
+      - 1-3 1:B+R round:7 sgf:2021/ec/7-IljaShikshin-AliJabarin.sgf ogs:https://online-go.com/game/39115448
+      - 1-8 1:B+R round:5 sgf:2021/ec/5-IljaShikshin-BenjaminDreanGuenaizia.sgf ogs:https://online-go.com/game/39056701
+      - 2-1 1:W+2.5 round:10 sgf:2021/ec/10-ArtemKachanovskyi-IljaShikshin.sgf ogs:https://online-go.com/game/39217599
+      - 2-4 4:W+R round:7 sgf:2021/ec/7-ArtemKachanovskyi-PavolLisy.sgf ogs:https://online-go.com/game/39115918
+      - 2-15 2:B+9.5 round:4 sgf:2021/ec/4-ArtemKachanovskyi-ViktorLin.sgf ogs:https://online-go.com/game/39035939
+      - 3-1 1:W+6.5 round:6 sgf:2021/ec/6-AliJabarin-IljaShikshin.sgf ogs:https://online-go.com/game/39083095
+      - 3-4 4:W+R round:10 sgf:2021/ec/10-AliJabarin-PavolLisy.sgf ogs:https://online-go.com/game/39228631
+      - 4-2 2:W+2.5 round:6 sgf:2021/ec/6-PavolLisy-ArtemKachanovskyi.sgf ogs:https://online-go.com/game/39087538
+      - 4-2 2:W+4.5 round:8 sgf:2021/ec/8-PavolLisy-ArtemKachanovskyi.sgf ogs:https://online-go.com/game/39144013
+      - 4-3 3:W+2.5 round:9 sgf:2021/ec/9-PavolLisy-AliJabarin.sgf ogs:https://online-go.com/game/39200251
+      - 4-3 3:W+R round:11 sgf:2021/ec/11-PavolLisy-AliJabarin.sgf ogs:https://online-go.com/game/39255726
+      - 4-6 4:B+R round:5 sgf:2021/ec/5-PavolLisy-TanguyLeCalve.sgf ogs:https://online-go.com/game/39063520
+      - 5-3 3:W+0.5 round:5 sgf:2021/ec/5-LukasPodpera-AliJabarin.sgf ogs:https://online-go.com/game/39056647
+      - 5-13 5:B+3.5 round:2 sgf:2021/ec/2-LukasPodpera-FredrikBlomback.sgf ogs:https://online-go.com/game/38953908
+      - 5-19 5:B+R round:1 sgf:2021/ec/1-LukasPodpera-VjacheslavKajmin.sgf ogs:https://online-go.com/game/38925188
+      - 7-2 2:W+2.5 round:5 sgf:2021/ec/5-NikolaMitic-ArtemKachanovskyi.sgf ogs:https://online-go.com/game/39059198
+      - 7-15 15:W+0.5 round:3 sgf:2021/ec/3-NikolaMitic-ViktorLin.sgf ogs:https://online-go.com/game/38981112
+      - 7-23 7:B+R round:1 sgf:2021/ec/1-NikolaMitic-CornelBurzo.sgf ogs:https://online-go.com/game/38925706
+      - 7-24 7:B+R round:2 sgf:2021/ec/2-NikolaMitic-IgorBurnaevskij.sgf ogs:https://online-go.com/game/38953295
+      - 8-10 8:B+R round:4 sgf:2021/ec/4-BenjaminDreanGuenaizia-DusanMitic.sgf ogs:https://online-go.com/game/39036303
+      - 9-4 4:W+R round:4 sgf:2021/ec/4-StanislawFrejlak-PavolLisy.sgf ogs:https://online-go.com/game/39035311
+      - 9-18 9:B+13.5 round:2 sgf:2021/ec/2-StanislawFrejlak-LukasKraemer.sgf ogs:https://online-go.com/game/38952676
+      - 11-6 6:W+10.5 round:4 sgf:2021/ec/4-RemiCampagnie-TanguyLeCalve.sgf ogs:https://online-go.com/game/39027268
+      - 11-9 9:W+R round:1 sgf:2021/ec/1-RemiCampagnie-StanislawFrejlak.sgf ogs:https://online-go.com/game/38924745
+      - 11-18 11:B+17.5 round:3 sgf:2021/ec/3-RemiCampagnie-LukasKraemer.sgf ogs:https://online-go.com/game/38982942
+      - 12-3 3:W+R round:4 sgf:2021/ec/4-JonasWelticke-AliJabarin.sgf ogs:https://online-go.com/game/39024114
+      - 12-10 10:W+R round:1 sgf:2021/ec/1-JonasWelticke-DusanMitic.sgf ogs:https://online-go.com/game/38926816
+      - 13-1 1:W+R round:4 sgf:2021/ec/4-FredrikBlomback-IljaShikshin.sgf ogs:https://online-go.com/game/39030408
+      - 13-19 13:B+R round:3 sgf:2021/ec/3-FredrikBlomback-VjacheslavKajmin.sgf ogs:https://online-go.com/game/38980907
+      - 14-7 7:W+10.5 round:4 sgf:2021/ec/4-AndriiKravets-NikolaMitic.sgf ogs:https://online-go.com/game/39036999
+      - 16-5 5:W+R round:4 sgf:2021/ec/4-AntonChernykh-LukasPodpera.sgf ogs:https://online-go.com/game/39035694
+      - 17-11 17:B+R round:2 sgf:2021/ec/2-RobvanZeijst-RemiCampagnie.sgf ogs:https://online-go.com/game/38954613
+      - 17-18 18:W+12.5 round:1 sgf:2021/ec/1-RobvanZeijst-LukasKraemer.sgf ogs:https://online-go.com/game/38926403
+      - 20-5 5:W+6.5 round:3 sgf:2021/ec/3-AmirFragman-LukasPodpera.sgf ogs:https://online-go.com/game/38981663
+      - 20-13 13:W+14.5 round:1 sgf:2021/ec/1-AmirFragman-FredrikBlomback.sgf ogs:https://online-go.com/game/38925565
+      - 20-19 20:B+R round:2 sgf:2021/ec/2-AmirFragman-VjacheslavKajmin.sgf ogs:https://online-go.com/game/38953167
+      - 21-10 21:B+R round:2 sgf:2021/ec/2-OscarVazquez-DusanMitic.sgf ogs:https://online-go.com/game/38953926
+      - 21-12 12:W+4.5 round:3 sgf:2021/ec/3-OscarVazquez-JonasWelticke.sgf ogs:https://online-go.com/game/38982399
+      - 21-22 22:W+2.5 round:1 sgf:2021/ec/1-OscarVazquez-LucasNeirynck.sgf ogs:https://online-go.com/game/38927077
+      - 22-10 10:W+R round:3 sgf:2021/ec/3-LucasNeirynck-DusanMitic.sgf ogs:https://online-go.com/game/38975526
+      - 22-12 12:W+R round:2 sgf:2021/ec/2-LucasNeirynck-JonasWelticke.sgf ogs:https://online-go.com/game/38946709
+      - 23-15 15:W+0.5 round:2 sgf:2021/ec/2-CornelBurzo-ViktorLin.sgf ogs:https://online-go.com/game/38954039
+      - 24-15 24:B+2.5 round:1 sgf:2021/ec/1-IgorBurnaevskij-ViktorLin.sgf ogs:https://online-go.com/game/38923577
+      - 24-23 24:B+5.5 round:3 sgf:2021/ec/3-IgorBurnaevskij-CornelBurzo.sgf ogs:https://online-go.com/game/38981009

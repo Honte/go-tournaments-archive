@@ -3,6 +3,7 @@ name: European Championship 1973
 stages:
   - type: tournament
     file: egc1973.txt
+    dir: 1973/ec
     name: Championship Group
     notes: Recreated from cross table. Games order can be different. All played the others twice.
     scoringColumns:

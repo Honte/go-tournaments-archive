@@ -3,11 +3,14 @@ name: European Championship 1964
 stages:
   - type: tournament
     file: egc1964.txt
+    dir: 1964/ec
     name: Championship Group
     notes: Recreated from cross table. Games order can be different.
     scoringColumns:
       - wins
     breakers:
       - wins
-    findSharedPlaces: true   
-
+    findSharedPlaces: true
+    games:
+      - 2-5 2:B+16 round:3 sgf:1964/ec/3-JuergenMattern-ManfredWimmer.sgf
+      - 4-1 1:W+7 round:7 sgf:1964/ec/7-HorstSudhoff-WichardvonAlvensleben.sgf

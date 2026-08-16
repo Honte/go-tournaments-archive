@@ -3,11 +3,13 @@ name: European Championship 1972
 stages:
   - type: tournament
     file: egc1972.txt
+    dir: 1972/ec
     name: Championship Group
     notes: Recreated from cross table. Games order can be different.
     scoringColumns:
       - wins
     breakers:
       - wins
-    findSharedPlaces: true   
-
+    findSharedPlaces: true
+    games:
+      - 2-6 2:B+14 round:4 sgf:1972/ec/4-MaxRebattu-RobertRehm.sgf

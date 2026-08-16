@@ -3,6 +3,7 @@ name: European Championship 1971
 stages:
   - type: tournament
     file: egc1971.txt
+    dir: 1971/ec
     name: Championship Group
     notes: Recreated from cross table. Games order can be different.
     scoringColumns:
