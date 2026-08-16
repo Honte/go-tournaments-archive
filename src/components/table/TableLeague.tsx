@@ -1,6 +1,6 @@
 'use client';
 
-import type { Game, LeagueStage, Player } from '@/schema/data';
+import type { Game, LeagueStage, Player, TableResult } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
@@ -24,6 +24,7 @@ export function TableLeague({ event, stage, players, games, translations }: Tabl
   const visibleBreakers = (breakers ?? []).filter(
     (b) => b !== 'direct' && b !== 'rank' && !customBreakers?.[b]?.hidden
   );
+  const categories = getCategoriesColumns(event, table);
   const hasSharedPlaces = table.some((p) => p.index !== p.place);
 
   return (
@@ -52,6 +53,11 @@ export function TableLeague({ event, stage, players, games, translations }: Tabl
             {columns?.map((column) => (
               <th className="p-1" key={`column-${column}`}>
                 <BreakerComponent translations={translations} breaker={column} customBreakers={customBreakers} />
+              </th>
+            ))}
+            {categories.map((category) => (
+              <th className="p-1" key={`category-${category}`}>
+                {t(`categories.short.${category}`)}
               </th>
             ))}
           </tr>
@@ -100,6 +106,11 @@ export function TableLeague({ event, stage, players, games, translations }: Tabl
                     {result.breakers[column] ?? ''}
                   </td>
                 ))}
+                {categories.map((category) => (
+                  <td className="p-1" key={`category-${category}`}>
+                    {getCategoryParticipationIndicator(result.categories?.[category])}
+                  </td>
+                ))}
               </tr>
             );
           })}
@@ -107,4 +118,20 @@ export function TableLeague({ event, stage, players, games, translations }: Tabl
       </GoResultsTable>
     </div>
   );
+}
+
+function getCategoriesColumns(event: EventContext, table: TableResult[]) {
+  const usedCategories = event.categories?.filter((category) =>
+    table.some((result) => result.categories?.[category] !== undefined)
+  );
+
+  return usedCategories && usedCategories.length > 1 ? usedCategories : [];
+}
+
+function getCategoryParticipationIndicator(category: number | '?' | undefined) {
+  if (category === '?') {
+    return '?';
+  }
+
+  return category && category > 0 ? '✓' : '';
 }
