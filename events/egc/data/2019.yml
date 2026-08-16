@@ -1,5 +1,5 @@
 website: https://www.eurogofed.org/egc/2019.html
-notes: 5 rounds of double ladder until quarters + 3 rounds KO 
+notes: 5 rounds of double ladder until quarters + 3 rounds KO
 stages:
   - type: tournament
     file: egc2019.txt
@@ -12,3 +12,34 @@ stages:
     breakers:
       - place
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+0.5 round:8 sgf:2019/ec/8-IljaShikshin-ArtemKachanovskyi.sgf
+      - 1-3 1:B+R round:7 sgf:2019/ec/7-IljaShikshin-LukasPodpera.sgf
+      - 1-15 1:B+R round:1 sgf:2019/ec/1-IljaShikshin-AntoineFenech.sgf
+      - 2-10 2:B+R round:5 sgf:2019/ec/5-VjacheslavKajmin-ArtemKachanovskyi.sgf
+      - 2-14 2:B+R round:4 sgf:2019/ec/4-ArtemKachanovskyi-OscarVazquez.sgf
+      - 2-23 2:B+11.5 round:1 sgf:2019/ec/1-ArtemKachanovskyi-JohannesObenaus.sgf
+      - 3-2 3:B+R round:2 sgf:2019/ec/2-LukasPodpera-ArtemKachanovskyi.sgf
+      - 3-12 3:B+3.5 round:3 sgf:2019/ec/3-LukasPodpera-TanguyLeCalve.sgf
+      - 4-2 2:W+R round:7 sgf:2019/ec/7-StanislawFrejlak-ArtemKachanovskyi.sgf
+      - 4-3 3:W+4.5 round:8 sgf:2019/ec/8-StanislawFrejlak-LukasPodpera.sgf
+      - 4-13 4:B+3.5 round:4 sgf:2019/ec/4-StanislawFrejlak-RemiCampagnie.sgf
+      - 4-21 4:B+10.5 round:3 sgf:2019/ec/3-StanislawFrejlak-AlexandrDinerstein.sgf
+      - 5-1 1:W+R round:6 sgf:2019/ec/6-ViktorLin-IljaShikshin.sgf
+      - 5-16 5:B+R round:4 sgf:2019/ec/4-ViktorLin-CornelBurzo.sgf
+      - 6-3 3:W+R round:6 sgf:2019/ec/6-AliJabarin-LukasPodpera.sgf
+      - 6-7 7:W+R round:3 sgf:2019/ec/3-AliJabarin-PavolLisy.sgf
+      - 7-4 4:W+R round:6 sgf:2019/ec/6-PavolLisy-StanislawFrejlak.sgf
+      - 7-25 7:B+14.5 round:1 sgf:2019/ec/1-PavolLisy-MatiasPankoke.sgf
+      - 8-2 2:W+R round:6 sgf:2019/ec/6-MateuszSurma-ArtemKachanovskyi.sgf
+      - 8-26 8:B+R round:1 sgf:2019/ec/1-MateuszSurma-ElianIoanGrigoriu.sgf
+      - 9-6 6:W+R round:5 sgf:2019/ec/5-JonasWelticke-AliJabarin.sgf
+      - 11-5 5:W+R round:5 sgf:2019/ec/5-DusanMitic-ViktorLin.sgf
+      - 12-4 4:W+1.5 round:5 sgf:2019/ec/5-TanguyLeCalve-StanislawFrejlak.sgf
+      - 14-32 14:B+R round:2 sgf:2019/ec/2-OscarVazquez-NikolaMitic.sgf
+      - 15-9 9:W+R round:4 sgf:2019/ec/4-AntoineFenech-JonasWelticke.sgf
+      - 19-9 9:W+17.5 round:3 sgf:2019/ec/3-LucasNeirynck-JonasWelticke.sgf
+      - 20-16 20:B+R round:1 sgf:2019/ec/1-AndrejKulkov-CornelBurzo.sgf
+      - 22-8 8:W+R round:2 sgf:2019/ec/2-BenjaminDreanGuenaizia-MateuszSurma.sgf
+      - 27-21 21:W+R round:2 sgf:2019/ec/2-LukasKraemer-AlexandrDinerstein.sgf
+      - 28-16 16:W+4.5 round:2 sgf:2019/ec/2-KimShakhov-CornelBurzo.sgf

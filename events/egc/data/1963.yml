@@ -4,6 +4,7 @@ notes: There was a rule that if last years champion and another player place fir
 stages:
   - type: tournament
     file: egc1963.txt
+    dir: 1963/ec
     name: Championship Group
     notes: Recreated from cross table. Games order can be different.
     scoringColumns:    

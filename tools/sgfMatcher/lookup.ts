@@ -8,7 +8,22 @@ export type PlayerLookupResult<T> = {
 };
 
 export function registerLookupEntry<T>(lookup: PlayerLookupMap<T>, entry: string, value: T, warn = true): void {
+  registerNormalizedLookupEntry(lookup, entry, value, warn);
+
+  const commaName = getCommaName(entry);
+
+  if (commaName) {
+    registerNormalizedLookupEntry(lookup, commaName, value, warn);
+  }
+}
+
+function registerNormalizedLookupEntry<T>(lookup: PlayerLookupMap<T>, entry: string, value: T, warn: boolean): void {
   const normalized = normalizePlayerName(entry);
+
+  if (normalized.length < 2) {
+    return;
+  }
+
   const existing = lookup.get(normalized);
 
   if (typeof existing === 'undefined') {
@@ -22,6 +37,16 @@ export function registerLookupEntry<T>(lookup: PlayerLookupMap<T>, entry: string
       );
     }
   }
+}
+
+function getCommaName(name: string): string | null {
+  if (name.includes(',')) {
+    return null;
+  }
+
+  const parts = name.trim().split(/\s+/);
+
+  return parts.length > 1 ? `${parts.at(-1)}, ${parts.slice(0, -1).join(' ')}` : null;
 }
 
 export function resolveSgfLookup<T>(sgf: SgfInfo, playerLookup: PlayerLookupMap<T>): PlayerLookupResult<T> {
@@ -43,5 +68,32 @@ export function resolvePlayersLookup<T>(
 }
 
 export function lookupPlayerId<T>(playerLookup: PlayerLookupMap<T>, name: string | null): T | null {
-  return name ? (playerLookup.get(normalizePlayerName(name)) ?? null) : null;
+  if (!name) {
+    return null;
+  }
+
+  const normalized = normalizePlayerName(name);
+  const exactMatch = playerLookup.get(normalized);
+
+  if (typeof exactMatch !== 'undefined') {
+    return exactMatch;
+  }
+
+  const matches = new Set<T>();
+
+  for (const part of name.split(/[\s,]+/)) {
+    const normalizedPart = normalizePlayerName(part);
+
+    if (normalizedPart.length < 2) {
+      continue;
+    }
+
+    const match = playerLookup.get(normalizedPart);
+
+    if (match !== null && typeof match !== 'undefined') {
+      matches.add(match);
+    }
+  }
+
+  return matches.size === 1 ? matches.values().next().value! : null;
 }

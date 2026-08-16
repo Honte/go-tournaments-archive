@@ -1,6 +1,9 @@
 name: Deploy
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
     inputs:
       event:
@@ -15,7 +18,7 @@ on:
 
 jobs:
   deploy-pgc-prod:
-    if: ${{ inputs.event == 'pgc' }}
+    if: ${{ github.event_name == 'push' || inputs.event == 'pgc' }}
     runs-on: ubuntu-latest
     environment: pgc
     env:
@@ -30,9 +33,20 @@ jobs:
 
       - run: npm ci
 
+      - name: Check deployment changes
+        id: check
+        if: ${{ github.event_name == 'push' }}
+        env:
+          BASE: ${{ github.event.before }}
+        run: |
+          git fetch --no-tags --depth=1 origin "$BASE"
+          npm run deploy:check -- pgc --base "$BASE"
+
       - run: npm run build
+        if: ${{ github.event_name == 'workflow_dispatch' || steps.check.outputs.deploy_pgc == 'true' }}
 
       - name: Prepare bundle
+        if: ${{ github.event_name == 'workflow_dispatch' || steps.check.outputs.deploy_pgc == 'true' }}
         env:
           DEPLOY_TOKEN: ${{ secrets.FTP_TOKEN }}
         run: |
@@ -41,6 +55,7 @@ jobs:
           (cd out && zip -qr ../dist/site.zip .)
 
       - name: Upload bundle
+        if: ${{ github.event_name == 'workflow_dispatch' || steps.check.outputs.deploy_pgc == 'true' }}
         env:
           FTP_HOST: ${{ vars.FTP_HOST }}
           FTP_PATH: public_html/${{ vars.FTP_HOST }}/archive
@@ -60,6 +75,7 @@ jobs:
           curl --fail --show-error --silent --ftp-create-dirs --user "$FTP_USER:$FTP_PASS" -T dist/unzip.php "${base_url}/unzip.php"
 
       - name: Unzip bundle
+        if: ${{ github.event_name == 'workflow_dispatch' || steps.check.outputs.deploy_pgc == 'true' }}
         env:
           FTP_TOKEN: ${{ secrets.FTP_TOKEN }}
           FTP_HOST: ${{ vars.FTP_HOST }}
@@ -74,7 +90,7 @@ jobs:
           test "$status" -ge 200 && test "$status" -lt 300
 
   deploy-pygc-prod:
-    if: ${{ inputs.event == 'pygc' }}
+    if: ${{ github.event_name == 'push' || inputs.event == 'pygc' }}
     runs-on: ubuntu-latest
     environment: pygc
     env:
@@ -90,9 +106,20 @@ jobs:
 
       - run: npm ci
 
+      - name: Check deployment changes
+        id: check
+        if: ${{ github.event_name == 'push' }}
+        env:
+          BASE: ${{ github.event.before }}
+        run: |
+          git fetch --no-tags --depth=1 origin "$BASE"
+          npm run deploy:check -- pygc --base "$BASE"
+
       - run: npm run build
+        if: ${{ github.event_name == 'workflow_dispatch' || steps.check.outputs.deploy_pygc == 'true' }}
 
       - name: Deploy
+        if: ${{ github.event_name == 'workflow_dispatch' || steps.check.outputs.deploy_pygc == 'true' }}
         uses: appleboy/scp-action@v1
         with:
           host: ${{ vars.SSH_HOST }}
@@ -104,7 +131,7 @@ jobs:
           target: ${{ env.SSH_PATH }}
 
   deploy-honte-prod:
-    if: ${{ inputs.event == 'honte' }}
+    if: ${{ github.event_name == 'push' || inputs.event == 'honte' }}
     runs-on: ubuntu-latest
     environment: honte
     env:
@@ -117,12 +144,23 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
+      - name: Check deployment changes
+        id: check
+        if: ${{ github.event_name == 'push' }}
+        env:
+          BASE: ${{ github.event.before }}
+        run: |
+          git fetch --no-tags --depth=1 origin "$BASE"
+          npm run deploy:check -- honte --base "$BASE"
       - run: npm run build
+        if: ${{ github.event_name == 'workflow_dispatch' || steps.check.outputs.deploy_honte == 'true' }}
       - name: Prepare
+        if: ${{ github.event_name == 'workflow_dispatch' || steps.check.outputs.deploy_honte == 'true' }}
         run: |
           cp -r public .next/standalone/
           cp -r .next/static .next/standalone/.next/
       - name: Deploy
+        if: ${{ github.event_name == 'workflow_dispatch' || steps.check.outputs.deploy_honte == 'true' }}
         uses: appleboy/scp-action@v1
         with:
           host: ${{ vars.SSH_HOST }}
@@ -133,6 +171,7 @@ jobs:
           strip_components: 2
           target: ${{ env.SSH_PATH }}
       - name: Restart
+        if: ${{ github.event_name == 'workflow_dispatch' || steps.check.outputs.deploy_honte == 'true' }}
         uses: appleboy/ssh-action@v1.0.0
         with:
           host: ${{ vars.SSH_HOST }}

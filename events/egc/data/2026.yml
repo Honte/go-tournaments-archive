@@ -19,11 +19,14 @@ stages:
       - 2-4 2:B+7.5 round:7 sgf:2026/ec/7-AliJabarin-DenisDobranis.sgf ogs:https://online-go.com/review/1747041
       - 2-6 2:B+R round:3 sgf:2026/ec/3-AliJabarin-BenjaminDreanGuenaizia.sgf ogs:https://online-go.com/review/1744514
       - 2-7 2:B+3.5 round:6 sgf:2026/ec/6-AliJabarin-TanguyleCalve.sgf ogs:https://online-go.com/review/1746449
+      - 2-17 2:B+R round:2 sgf:2026/ec/2-AliJabarin-OzgurDegirmenci.sgf
+      - 2-25 2:B+15.5 round:1 sgf:2026/ec/1-AliJabarin-MathieuDelliZotti.sgf
       - 3-1 1:W+4.5 round:7 sgf:2026/ec/7-LukasPodpera-AndriiKravets.sgf ogs:https://online-go.com/review/1747042
       - 4-3 3:W+R round:2 sgf:2026/ec/2-DenisDobranis-LukasPodpera.sgf ogs:https://online-go.com/review/1743918
       - 4-3 3:W+R round:8 sgf:2026/ec/8-DenisDobranis-LukasPodpera.sgf ogs:https://online-go.com/review/1747730
       - 5-1 1:W+9.5 round:6 sgf:2026/ec/6-LukasKraemer-AndriiKravets.sgf ogs:https://online-go.com/review/1746444
       - 5-8 8:W+R round:3 sgf:2026/ec/3-LukasKraemer-MateuszSurma.sgf ogs:https://online-go.com/review/1744511
+      - 5-9 5:B+R round:2 sgf:2026/ec/2-LukasKraemer-CornelBurzo.sgf
       - 5-11 5:B+R round:5 sgf:2026/ec/5-LukasKraemer-MatiasPankoke.sgf ogs:https://online-go.com/review/1745866
       - 5-22 5:B+R round:1 sgf:2026/ec/1-LukasKraemer-JanKomin.sgf ogs:https://online-go.com/review/1743329
       - 6-3 3:W+10.5 round:6 sgf:2026/ec/6-BenjaminDreanGuenaizia-LukasPodpera.sgf ogs:https://online-go.com/review/1746445
@@ -33,6 +36,7 @@ stages:
       - 8-4 4:W+R round:6 sgf:2026/ec/6-MateuszSurma-DenisDobranis.sgf ogs:https://online-go.com/review/1746443
       - 8-13 8:B+R round:2 sgf:2026/ec/2-MateuszSurma-UlasOren.sgf ogs:https://online-go.com/review/1743919
       - 9-6 6:W+7.5 round:5 sgf:2026/ec/5-CornelBurzo-BenjaminDreanGuenaizia.sgf ogs:https://online-go.com/review/1745863
+      - 9-23 9:B+R round:3 sgf:2026/ec/3-CornelBurzo-HusrevAksut.sgf
       - 10-7 7:W+R round:5 sgf:2026/ec/5-RemiCampagnie-TanguyleCalve.sgf ogs:https://online-go.com/review/1745864
       - 10-16 10:B+R round:4 sgf:2026/ec/4-RemiCampagnie-StjepanMedak.sgf ogs:https://online-go.com/review/1745240
       - 10-32 10:B+5.5 round:1 sgf:2026/ec/1-RemiCampagnie-KaanMalcok.sgf ogs:https://online-go.com/game/89166312
@@ -45,6 +49,8 @@ stages:
       - 15-4 4:W+R round:4 sgf:2026/ec/4-DavideBernardis-DenisDobranis.sgf ogs:https://online-go.com/review/1745241
       - 16-13 13:W+0.5 round:1 sgf:2026/ec/1-StjepanMedak-UlasOren.sgf ogs:https://online-go.com/review/1743328
       - 18-1 1:W+R round:2 sgf:2026/ec/2-FlorentLabouret-AndriiKravets.sgf ogs:https://online-go.com/review/1743917
+      - 19-11 11:W+0.5 round:1 sgf:2026/ec/1-BendeBarcza-MatiasPankoke.sgf
+      - 20-4 4:W+15.5 round:1 sgf:2026/ec/1-DmytroBogatskyy-DenisDobranis.sgf
       - 22-10 10:W+2.5 round:3 sgf:2026/ec/3-JanKomin-RemiCampagnie.sgf ogs:https://online-go.com/review/1744515
       - 26-1 1:W+0.5 round:1 sgf:2026/ec/1-ZbynekDach-AndriiKravets.sgf ogs:https://online-go.com/game/89166312
       - 29-8 8:W+R round:1 sgf:2026/ec/1-LarionSyrotkin-MateuszSurma.sgf ogs:https://online-go.com/review/1743327

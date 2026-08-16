@@ -19,6 +19,7 @@
     "build:europe": "cross-env CONFIG=europe npm run build",
     "build:poland": "cross-env CONFIG=poland npm run build",
     "build:pgc": "cross-env CONFIG=pgc npm run build",
+    "deploy:check": "tsx tools/deployment/check.ts",
     "start": "npx serve@latest out",
     "lint": "oxlint .",
     "extract:mp-db": "tsx tools/extract.ts",

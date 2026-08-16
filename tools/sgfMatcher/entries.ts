@@ -18,8 +18,8 @@ export function buildEntryWithoutSgf(rawEntry: string): string {
 
 export function buildSgfEntryString({ home, away, black, winner, result, sgf, props }: SgfMatchResult): string {
   const winnerPart = winner === null ? 'jigo' : result ? `${winner}:${result}` : String(winner);
-  const { round, ...restProps } = props ?? {};
-  const colorPart = winner === null && black ? ` black:${black}` : '';
+  const { round, black: existingBlack, ...restProps } = props ?? {};
+  const colorPart = winner === null && (black ?? existingBlack) ? ` black:${black ?? existingBlack}` : '';
   const roundPart = round ? ` round:${round}` : '';
 
   return `${home}-${away} ${winnerPart}${colorPart}${roundPart} sgf:${sgf}${stringifyProps(restProps)}`;

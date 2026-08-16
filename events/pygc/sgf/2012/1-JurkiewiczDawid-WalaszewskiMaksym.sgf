@@ -1,0 +1,417 @@
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]TM[3600]OT[1x30 byo-yomi]
+PW[Maksym Wałaszewski]PB[Dawid Jurkiewicz]WR[4k]BR[2k]DT[2012-03-17]PC[The KGS Go Server at http://www.gokgs.com/]
+(;B[])
+(;B[pd]
+;W[dp]
+;B[pq]
+;W[qo]C[SadPlayer [-\]: czy jest gdzieś parowanie?
+koralgol [?\]: Deejay !! Deejay!! :)
+MPJ2012 [?\]: Dawid Jurkiewicz - Maksym Wałaszewski, Rafał Śliwiński - Bruno Wałaszewski i Paulina Skibińska ma bye.
+SadPlayer [-\]: nie ma Siasia:( ?
+]
+;B[cd]C[MPJ2012 [?\]: niestety
+]
+;W[qi]
+;B[cn]
+(;W[fq]C[MPJ2012 [?\]: 55min-55min
+]
+;B[op]C[MPJ2012 [?\]: no bo kurcze po q6 bialy strasznie nisko
+]
+(;W[kq]
+;B[dj]
+(;W[qf]C[SadPlayer [-\]: f17 chyba ok
+MPJ2012 [?\]: ja sie czulem komfortowo jako czarne
+]
+;B[pn]C[SadPlayer [-\]: q6 podobno złe jak l3 już jest
+]
+;W[ed]C[MPJ2012 [?\]: ja tam sie nie znam ;) ja bym raczej tego nie zagral ale jestem slaby :D
+]
+;B[qn]C[koralgol [?\]: r6 za wolne chyba
+]
+(;W[df]C[SadPlayer [-\]: r6 dobre
+SadPlayer [-\]: tylko, że to biały miał tam grać
+]
+;B[ec]
+;W[fc]
+;B[dc]
+;W[fd]C[SadPlayer [-\]: jakby sie uprzeć to może q5 p5 s6 s7 s5 działa
+]
+;B[mc]
+;W[be]
+;B[bd]C[SadPlayer [-\]: c8 ?
+]
+;W[kc]C[MPJ2012 [?\]: 46min w - 49min b
+SadPlayer [-\]: no to e6 :)
+]
+;B[kd]C[MPJ2012 [?\]: no e6 wyglada ciekawie, ale gracze skupili sie chyba zbytnio na gornej czesci gobanu 
+]
+;W[jd]
+;B[ke]
+;W[lc]
+;B[md]C[MPJ2012 [?\]: wydaje mi sie czy lepiej stoi czarny juz ?
+koralgol [?\]: jak biały c8 to jeszcze nie ;)
+]
+;W[ld]
+;B[le]
+;W[me]C[SadPlayer [-\]: ale agresywnie biały zaczął grać
+]
+;B[jc]
+;W[jb]
+;B[ic]C[MPJ2012 [?\]: pytanie czy nie za agresywnie
+]
+;W[mb]
+;B[nb]C[SadPlayer [-\]: oczywiście ze zbyt agresywnie :)
+MPJ2012 [?\]: wydawalo mi sie ze bialy mial tam fajna solidna sytuacje a tu nagle taka buba sie zrobila
+SadPlayer [-\]: po m17 miał grać c8 
+SadPlayer [-\]: źle nie stał
+]
+;W[lb]
+;B[ie]C[MPJ2012 [?\]: 48min b - 35min w
+SadPlayer [-\]: Shusaku chyba kiedyś zagrał p17 w akiej sytuaji :\]
+]
+;W[ib]C[SadPlayer [-\]: o17 tez chyba można
+]
+;B[hc]
+;W[od]
+;B[oc]
+;W[ne]
+;B[nc]C[SadPlayer [-\]: ni wychodzi białemu cos znajdywanie tesuji :P
+MPJ2012 [?\]: nie lepsza byla wrzutka ?
+MPJ2012 [?\]: zamiast o15
+]
+;W[pe]C[SadPlayer [-\]: o17 o16 i p16 w atari jest
+MPJ2012 [?\]: fakt
+]
+;B[qd]C[MPJ2012 [?\]: w koncu Maks patrzy w kierunku C8
+SadPlayer [-\]: h18 ważne
+]
+;W[hb]
+;B[of]
+;W[oe]
+;B[jg]
+;W[cl]
+;B[dl]
+;W[cm]
+;B[dm]
+;W[ck]
+;B[cp]C[MPJ2012 [?\]: 38min b - 28min w
+SadPlayer [-\]: c7 jeszcze nie widziałem
+SadPlayer [-\]: zwykle sie od c9 zaczyna
+]
+;W[bn]
+;B[do]
+;W[bo]
+;B[co]
+;W[dk]C[SadPlayer [-\]: ale rezultat ciekawy
+SadPlayer [-\]: h3 bym dał
+]
+;B[ep]
+;W[hp]
+;B[ek]
+;W[ej]
+;B[fj]
+;W[ei]
+;B[fi]
+;W[fh]
+;B[eh]
+;W[di]
+;B[gh]
+;W[fg]C[SadPlayer [-\]: tak, q5 mozna grac
+MPJ2012 [?\]: czyli bialy wbrew pozorom tak zle nie stoi ?
+SadPlayer [-\]: wiec r9 jest ogromne
+SadPlayer [-\]: zależy od następnego ruchu :)
+]
+;B[eq]
+;W[fk]
+;B[el]
+;W[gk]
+;B[hj]
+;W[hk]
+;B[ij]
+;W[gn]C[MPJ2012 [?\]: 31min b - 20min w
+]
+;B[ik]
+;W[ql]
+;B[fr]
+;W[gq]
+;B[gr]
+;W[hr]
+;B[iq]C[SadPlayer [-\]: j2 można?
+]
+;W[ir]
+;B[mq]C[SadPlayer [-\]: jak chce wygrać biały to raczej musi q5 p5 s6 zagrac
+]
+;W[ko]C[MPJ2012 [?\]: pytanie czy rozwaza wogole takie zagranie
+MPJ2012 [?\]: bo to raczej nie jest normalne ;)
+SadPlayer [-\]: jeśli układał gry Shusaku to tak :P
+Lumpy [5k\]: hmm
+MPJ2012 [?\]: wydaje mi sie ze ma Invincible ale czy ukladal ?
+Lumpy [5k\]: ja nie widze twojego rozwiazania
+]
+;B[pk]
+;W[qk]
+;B[pg]
+;W[qg]
+;B[pi]
+;W[ph]
+;B[oh]
+;W[qh]C[SadPlayer [-\]: n13 
+MPJ2012 [?\]: 26min b - 14min w
+]
+;B[qj]
+;W[rj]
+;B[pj]
+;W[mh]C[SadPlayer [-\]: n13 ?
+]
+;B[ni]C[koralgol [?\]: n12 wyglada chciwe ale chyba ciecie jest ryzykowne
+]
+;W[ng]
+;B[im]
+;W[en]
+;B[dn]C[koralgol [?\]: tak se mysle ze przy q5 czarny moze s5
+]
+;W[in]
+;B[gm]
+;W[fm]
+;B[hn]
+;W[ho]
+;B[hm]
+;W[fn]
+;B[fl]
+;W[rm]C[SadPlayer [-\]: q5 s5 to chyba s4 s6 r3 
+SadPlayer [-\]: ale juz za późno :P
+]
+;B[rn]
+;W[pl]
+;B[lj]
+;W[sn]
+;B[so]
+;W[sm]
+;B[ro]
+;W[re]C[SadPlayer [-\]: niesamowite, czarny ma 4 rogi i centrum
+]
+;B[rd]
+;W[bg]
+;B[ce]
+;W[bf]C[MPJ2012 [?\]: chyba tak poszlo bo sie zagapilem ;p
+]
+;B[fb]
+;W[gb]
+(;B[eb])
+(;B[ea]C[MPJ2012 [?\]: 15min b - 5min w
+]
+;W[ad]
+;B[ac]
+;W[ae]
+;B[bb]
+;W[lr]
+;B[og]
+;W[qe]
+;B[lg]
+;W[mg]
+;B[bp]
+;W[nr]
+;B[or]
+;W[nq]
+;B[np]
+;W[mp]
+;B[mo]
+;W[lp]
+;B[ol]
+;W[om]
+;B[nl]
+;W[pm]
+;B[jn]C[Lumpy [5k\]: hmm
+]
+;W[sd]
+;B[sc]
+;W[se]
+;B[rc]
+;W[gg]
+;B[io]
+;W[ip]
+;B[hh]
+;W[lm]
+;B[cf]
+;W[cg]
+;B[qm]
+;W[rl]
+;B[ll]
+;W[on]
+;B[oo]
+;W[kl]
+;B[km]
+;W[kn]
+;B[jm]C[Lumpy [5k\]: wytrawaly jest bialy :P
+MPJ2012 [?\]: bialy w byo
+]
+;W[mm]C[MPJ2012 [?\]: czarny niecale 8min
+MPJ2012 [?\]: przypomne byo 1x30s
+]
+;B[lh]
+;W[ml]
+;B[lk]
+;W[hg]
+;B[ig]
+;W[mi]
+;B[nj]
+;W[li]
+;B[ki]
+;W[na]
+;B[oa]
+;W[ma]
+;B[pb]
+;W[gs]
+;B[er]
+;W[mk]
+;B[mj]
+;W[he]
+;B[hf]
+;W[gf]
+;B[if]
+;W[hd]
+;B[id]C[MPJ2012 [?\]: na 2 desce wygrana Rafala Sliwińskiego
+]
+;W[nk]
+;B[ok]
+;W[gc]
+;B[de]
+;W[ee]
+;B[jo]
+;W[jp]
+;B[fp]
+;W[os]
+;B[ps]
+;W[gp]
+;B[ns]
+;W[ms]
+;B[lf]
+;W[ga]
+;B[fs]
+;W[fa]
+;B[eb]
+;W[hs]
+;B[ao]
+;W[bm]
+;B[an]
+;W[am]
+;B[ap]
+;W[dd]
+;B[os]
+;W[mn]
+;B[nh]
+;W[lo]
+;B[no]
+;W[mr]
+;B[oq]C[MPJ2012 [?\]: licza
+MPJ2012 [?\]: nastepna runda powinna sie zaczac za jakies 15min
+SadPlayer [-\]: zero wytchnienia ;)
+SadPlayer [-\]: ale dlugo liczą
+Kamyk [5d\]: cześć... który zagra z nich d13 ? :)
+SadPlayer [-\]: a co to daje?
+Kamyk [5d\]: c10
+gfdhff6d [?\]: wyniku i tak w tym przypadku juz to nie zmieni ;/
+Kamyk [5d\]: pewnie nie :) ale satysfakcję z tesuji ;
+Kamyk [5d\]: ;)
+gfdhff6d [?\]: lepiej niech teusji na reszte gier szykuje ;p
+]
+;W[]
+;B[dg]
+;W[ef]
+(;B[cj])
+(;B[ci]
+;W[cj])))
+(;W[cc]
+(;B[bd]
+;W[dc]
+;B[cg]
+;W[nc])
+(;B[bc]
+;W[dc]
+;B[be]
+;W[hc]))
+(;W[nc]
+;B[oe]
+;W[qc]
+;B[pc]
+;W[qd]
+;B[pg]
+;W[pe]
+;B[od]
+;W[pb]
+;B[ob]
+;W[qb]
+;B[md]
+;W[qg]
+;B[gc]
+;W[cc]
+;B[bc]
+;W[dc]
+;B[be]
+;W[fe]))
+(;W[fc]C[MPJ2012 [?\]: no tak myslalem ze zagra
+]
+;B[ed]C[MPJ2012 [?\]: no moze byc
+MPJ2012 [?\]: ale wole cz
+MPJ2012 [?\]: pewnie wyjda w sente
+]
+(;W[qf]
+;B[nc])
+(;W[db]
+;B[hc]
+;W[pm]
+;B[qp]
+;W[po]
+;B[rp]
+;W[qf]
+;B[nc]
+;W[fd]
+;B[ec]
+;W[eb]
+;B[cc]
+;W[gb]
+;B[fe]
+;W[hd]
+;B[ge]
+(;W[id]
+;B[kc])
+(;W[ic]
+;B[gd]
+;W[gc]
+;B[he]
+;W[id]
+;B[en]C[SadPlayer [-\]: to jest joseki to u góry?
+]))))
+(;W[pm]))
+(;W[op]
+;B[oq]
+;W[np]
+;B[mq]
+(;W[fq]
+;B[dj]
+;W[fc]
+;B[ed]C[MPJ2012 [?\]: r11 moze zle i tak co?
+]
+;W[db]
+;B[hc]
+;W[fd]
+;B[ec]
+;W[eb]
+;B[cc]
+;W[gb]
+;B[fe]
+;W[hd]
+;B[ge]
+;W[id]
+;B[kc]
+;W[ic]C[SadPlayer [-\]: kiedy nastena runda?
+MPJ2012 [?\]: 16
+MPJ2012 [?\]: parowanie juz jest
+SadPlayer [-\]: r11 chyba za daleko
+MPJ2012 [?\]: tez tak mysle
+MPJ2012 [?\]: mysle teraz nad inwazja :D
+SadPlayer [-\]: wiec lepiej nie grac p4 
+])
+(;W[fd]
+;B[fq]))))

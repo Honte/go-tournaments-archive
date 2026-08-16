@@ -13,6 +13,9 @@ stages:
       - wins
       - sodos
     findSharedPlaces: true
+    games:
+      - 1-3 1:B+? round:1 sgf:2012/1-JurkiewiczDawid-WalaszewskiMaksym.sgf
+      - 1-4 1:B+? round:3 sgf:2012/3-JurkiewiczDawid-SliwinskiRafal.sgf
   - type: tournament
     name: U12
     file: mpj2012u12.txt

@@ -5,6 +5,7 @@ stages:
     file: egc1983.txt
     notes: Top places only
     name: Championship
+    dir: 1983/ec
     scoringColumns:
       - wins
       - place
@@ -12,5 +13,14 @@ stages:
       - wins
       - place
     findSharedPlaces: true
-	   
-
+    games:
+      - 1-4 1:B+R round:8 sgf:1983/ec/8-JanuszKraszek-PierreColmez.sgf
+      - 1-9 1:B+R round:3 sgf:1983/ec/3-JanuszKraszek-StefanBudig.sgf
+      - 1-12 1:B+R round:7 sgf:1983/ec/7-JanuszKraszek-AndrasGondor.sgf
+      - 1-17 1:B+R round:2 sgf:1983/ec/2-JanuszKraszek-ErikPuijt.sgf
+      - 1-20 1:B+11 round:4 sgf:1983/ec/4-JanuszKraszek-PeterZandveld.sgf
+      - 2-1 1:W+30 round:5 sgf:1983/ec/5-TerryStacey-JanuszKraszek.sgf
+      - 2-5 jigo black:2 round:7 sgf:1983/ec/7-TerryStacey-RobertRehm.sgf
+      - 3-1 1:W+R round:6 sgf:1983/ec/6-MatthewMacfadyen-JanuszKraszek.sgf
+      - 6-1 1:W+R round:9 sgf:1983/ec/9-JeanMichel-JanuszKraszek.sgf
+      - 16-1 1:W+R round:1 sgf:1983/ec/1-RobKoopman-JanuszKraszek.sgf

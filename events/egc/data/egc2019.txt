@@ -12,13 +12,13 @@
    2 Kachanovskyi Artem             2p UA  Rivn     6     2   23+/b    3-/w   18+/w     14+   10+/b    8+/w      4+      1- |12662870
    3 Podpera Lukas                  7d CZ  APWS     5     3   30+/w    2+/b   12+/b      0=      0=    6+/w      1-      4+ |13201914
    4 Frejlak Stanislaw              7d PL  Wars     5     4   19+/b   10-/w   21+/b     13+   12+/w    7+/w      2-      3- |12837594
-   5 Lin Viktor                     6d AT  Go7      4     5   18+/w    7-/b   23+/w     16+   11+/b    1-/b      0=      0= |14501256
+   5 Lin Viktor                     6d AT  Go7      4     5   18+/w    7-/b   23+/w     16+   11+/w    1-/b      0=      0= |14501256
    6 Jabarin Ali                    2p IL  TAv      3     5   14+/b   24+/w    7-/b      0=    9+/w    3-/b      0=      0= |14637810
    7 Lisy Pavol                     2p SK  Vlky     3     5   25+/b    5+/w    6+/w      0=      0=    4-/b      0=      0= |12686597
    8 Surma Mateusz                  2p PL  Dzim     3     5   26+/b   22+/w   11+/w      0=      0=    2-/b      0=      0= |12837968
    9 Welticke Jonas                 6d DE  BN       3     9   21+/w   11-/b   19+/w     15+    6-/b      0=      0=      0= |15786287
   10 Kajmin Vjacheslav              6d RU  77Mo     2     9   31+/b    4+/b    1-/w      0=    2-/w      0=      0=      0= |14986257
-  11 Mitic Dusan                    7d RS  NiSt     2     9   27+/w    9+/w    8-/b      0=    5-/w      0=      0=      0= |10649507
+  11 Mitic Dusan                    7d RS  NiSt     2     9   27+/w    9+/w    8-/b      0=    5-/b      0=      0=      0= |10649507
   12 Le_Calve Tanguy                1p FR  44Na     2     9   28+/b   20+/w    3-/w      0=    4-/b      0=      0=      0= |14962706
   13 Campagnie Remi                 6d FR  91Or     2    13   29+/b    1-/b   17+/w      4-      0=      0=      0=      0= |15449269
   14 Vazquez Oscar                  5d ES  Nam      2    13    6-/w   32+/b   20+/b      2-      0=      0=      0=      0= |15633673

@@ -27,17 +27,17 @@ stages:
       - starting
     rounds:
       - - kg-ms ms:W+R sgf:2014/2014-1-kgiedrojc-msurma.sgf rotate:180
-        - ll-sf sf:W+R
-        - kh-sp sp:W+1.5
-        - ls-mm ls:B+R
-      - - sf-kg sf:B+13.5
-        - ms-ll ms:B+R
-        - mm-kh mm:B+R
+        - ll-sf sf:W+R sgf:2014/2014-1-sfrejlak-llew.sgf
+        - kh-sp sp:W+1.5 sgf:2014/2014-1-spawlaczyk-khabu.sgf
+        - ls-mm ls:B+R sgf:2014/2014-1-mmajka-lsoldan.sgf
+      - - sf-kg sf:B+13.5 sgf:2014/2014-2-kgiedrojc-sfrejlak.sgf
+        - ms-ll ms:B+R sgf:2014/2014-2-llew-msurma.sgf
+        - mm-kh mm:B+R sgf:2014/2014-2-khabu-mmajka.sgf
         - sp-ls sp:B+12.5 sgf:2014/2014-2-spawlaczyk-lsoldan.sgf rotate:180
-      - - kg-sp sp:W+15.5
-        - ll-mm mm:W+R
+      - - kg-sp sp:W+16.5 sgf:2014/2014-3-kgiedrojc-spawlaczyk.sgf
+        - ll-mm mm:W+R sgf:2014/2014-3-mmajka-llew.sgf
         - kh-ms ms:W+R sgf:2014/2014-3-khabu-msurma.sgf
-        - ls-sf sf:W+4.5
+        - ls-sf sf:W+4.5 sgf:2014/2014-3-sfrejlak-lsoldan.sgf
       - - mm-kg kg:W+R sgf:2014/2014-4-mmajka-kgiedrojc.sgf rotate:270
         - sp-ll sp:B+1.5 sgf:2014/2014-4-spawlaczyk-llew.sgf
         - sf-kh kh:W+R sgf:2014/2014-4-sfrejlak-khabu.sgf rotate:180
