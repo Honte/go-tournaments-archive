@@ -27,7 +27,7 @@ stages:
         - jl-mb jl:B+9.5 sgf:1999/1999-1-jlubos-mbazynski.sgf rotate:180
         - mw-jc mw:W
       - - kg-mw kg:W
-        - ls-ww ls:W
+        - ls-ww ls:W sgf:1999/1999-2-wwieczorek-lsoldan.sgf
         - jl-ku jl:W
         - mb-jc mb:B+1.5 sgf:1999/1999-2-mbazynski-jchlodek.sgf
       - - kg-mb kg:B+R sgf:1999/1999-3-kgiedrojc-mbazynski.sgf rotate:180
