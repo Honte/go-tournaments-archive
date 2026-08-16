@@ -154,6 +154,41 @@ describe('matchExplicitSgfs', () => {
     assert.deepEqual(result.matchedEntries, ['sf-wp sf:B+R sgf:2025-league-1-siasio-wp.sgf']);
   });
 
+  it('matches comma-form SGF player names with a misspelled given name', () => {
+    const tournament: InputTournament = {
+      players: {
+        sp: 'Sebastian Pawlaczyk 3d',
+        kh: 'Koichiro Habu 4d',
+      },
+      stages: [],
+    };
+    const sgf = makeSgfInfo({
+      path: '2014/2014-1-spawlaczyk-khabu.sgf',
+      sgfBlackName: 'Habu, Koichiro',
+      sgfWhiteName: 'Pawlaczyk, Sebestian',
+      filenameBlackName: 'spawlaczyk',
+      filenameWhiteName: 'khabu',
+      filenameRound: 1,
+      rawResult: 'W+1.5',
+      cleanResult: 'W+1.5',
+    });
+
+    const result = matchExplicitSgfs({
+      tournament,
+      stage: {
+        type: 'league',
+        date: '2014-12-11',
+        rounds: [['kh-sp sp:W+1.5']],
+      },
+      sgfPaths: [sgf.path],
+      sgfInfos: [sgf],
+      force: false,
+    });
+
+    assert.deepEqual(result.matchedEntries, ['kh-sp sp:W+1.5 sgf:2014/2014-1-spawlaczyk-khabu.sgf']);
+    assert.deepEqual(result.unmatchedEntries, []);
+  });
+
   it('does not change the YAML winner when SGF result points to the other player', () => {
     const tournament: InputTournament = {
       players: {
