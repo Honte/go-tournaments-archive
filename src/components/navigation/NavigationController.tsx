@@ -2,7 +2,7 @@
 
 import { usePathname } from 'next/navigation';
 import { useLayoutEffect } from 'react';
-import { completeNavigation } from '@/libs/navigation';
+import { completeNavigation, isSameNavigationPathname } from '@/libs/navigation';
 import { useNavigation } from '@/hooks/useNavigation';
 
 export function NavigationController() {
@@ -10,7 +10,7 @@ export function NavigationController() {
   const { target } = useNavigation();
 
   useLayoutEffect(() => {
-    if (!target || target.pathname !== pathname) {
+    if (!target || !isSameNavigationPathname(target.pathname, pathname)) {
       return;
     }
 

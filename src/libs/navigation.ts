@@ -1,12 +1,24 @@
-type NavigationState = { location: URL | null; target: URL | null };
+type NavigationLocation = Pick<URL, 'pathname' | 'searchParams' | 'search' | 'hash'>;
+type NavigationState = { location: NavigationLocation | null; target: URL | null };
 type NavigationListener = () => void;
 type NavigationMethod = 'push' | 'replace';
 type NavigationKind = 'history' | 'route' | 'external';
 
 const PREVIOUS_URL_STATE_KEY = '__goTournamentsArchivePreviousUrl';
+const NAVIGATION_BASE_PATH = process.env.NAVIGATION_BASE_PATH ?? '';
 
 const EMPTY_NAVIGATION_STATE: NavigationState = {
   location: null,
+  target: null,
+};
+
+const SERVER_NAVIGATION_STATE: NavigationState = {
+  location: {
+    pathname: '',
+    search: '',
+    hash: '',
+    searchParams: new URLSearchParams(),
+  },
   target: null,
 };
 
@@ -36,7 +48,7 @@ export function getNavigationState() {
 }
 
 export function getServerNavigationState() {
-  return EMPTY_NAVIGATION_STATE;
+  return SERVER_NAVIGATION_STATE;
 }
 
 export function subscribeToNavigation(listener: NavigationListener) {
@@ -73,11 +85,11 @@ export function getNavigationLocation(state: NavigationState, pathname?: string)
     return state.target ?? state.location;
   }
 
-  if (state.target?.pathname === pathname) {
+  if (state.target && isSameNavigationPathname(state.target.pathname, pathname)) {
     return state.target;
   }
 
-  if (state.location?.pathname === pathname) {
+  if (state.location && isSameNavigationPathname(state.location.pathname, pathname)) {
     return state.location;
   }
 
@@ -94,13 +106,15 @@ export function getNavigationSearch() {
 }
 
 export function navigate(href: string, method: NavigationMethod = 'push'): NavigationKind {
-  const target = createNavigationUrl(href, window.location.href);
+  const browserTarget = createNavigationUrl(href, window.location.href);
 
-  if (!target) {
+  if (!browserTarget) {
     return 'external';
   }
 
-  if (target.pathname !== window.location.pathname) {
+  const target = getApplicationNavigationUrl(getBrowserNavigationUrl(browserTarget))!;
+
+  if (!isSameNavigationPathname(target.pathname, readWindowLocation().pathname)) {
     setNavigationState({
       location: getNavigationState().location,
       target,
@@ -109,8 +123,44 @@ export function navigate(href: string, method: NavigationMethod = 'push'): Navig
     return 'route';
   }
 
-  updateHistoryUrl(relativeUrl(target), method);
+  updateHistoryUrl(relativeUrl(getBrowserNavigationUrl(browserTarget)), method);
   return 'history';
+}
+
+export function getNavigationPathname(pathname: string, basePath = NAVIGATION_BASE_PATH) {
+  if (!basePath || pathname === basePath || pathname.startsWith(`${basePath}/`)) {
+    return pathname;
+  }
+
+  return pathname === '/' ? basePath : `${basePath}${pathname}`;
+}
+
+export function getApplicationNavigationUrl(url: URL | null, basePath = NAVIGATION_BASE_PATH) {
+  if (!url) {
+    return null;
+  }
+
+  const applicationUrl = new URL(url);
+  applicationUrl.pathname = getApplicationNavigationPathname(applicationUrl.pathname, basePath);
+
+  return applicationUrl;
+}
+
+function getBrowserNavigationUrl(url: URL) {
+  const browserUrl = new URL(url);
+  browserUrl.pathname = getNavigationPathname(browserUrl.pathname);
+
+  return browserUrl;
+}
+
+export function getApplicationNavigationPathname(pathname: string, basePath = NAVIGATION_BASE_PATH) {
+  if (!basePath || (pathname !== basePath && !pathname.startsWith(`${basePath}/`))) {
+    return pathname;
+  }
+
+  const applicationPathname = pathname.slice(basePath.length);
+
+  return applicationPathname || '/';
 }
 
 export function navigateBack() {
@@ -122,7 +172,7 @@ export function completeNavigation(expected: URL) {
     return;
   }
 
-  const correction = getNavigationCorrection(window.location.href, expected);
+  const correction = getNavigationCorrection(window.location.href, getBrowserNavigationUrl(expected));
 
   if (correction) {
     window.history.replaceState(window.history.state, '', correction);
@@ -149,7 +199,7 @@ function updateHistoryUrl(url: string, method: NavigationMethod) {
     window.history.pushState(
       {
         ...window.history.state,
-        [PREVIOUS_URL_STATE_KEY]: relativeUrl(readWindowLocation()),
+        [PREVIOUS_URL_STATE_KEY]: relativeUrl(new URL(window.location.href)),
       },
       '',
       url
@@ -170,7 +220,7 @@ function searchParamsUrl(params: URLSearchParams) {
 export function getNavigationCorrection(currentUrl: string, target: URL) {
   const current = new URL(currentUrl);
 
-  if (current.pathname !== target.pathname) {
+  if (!isSameNavigationPathname(current.pathname, target.pathname)) {
     return undefined;
   }
 
@@ -181,7 +231,15 @@ export function getNavigationCorrection(currentUrl: string, target: URL) {
   return relativeUrl(target);
 }
 
-function relativeUrl(url: URL) {
+export function isSameNavigationPathname(first: string, second: string) {
+  return trimTrailingSlashes(first) === trimTrailingSlashes(second);
+}
+
+function trimTrailingSlashes(pathname: string) {
+  return pathname.replace(/\/+$/, '') || '/';
+}
+
+function relativeUrl(url: Pick<URL, 'pathname' | 'search' | 'hash'>) {
   return `${url.pathname}${url.search}${url.hash}`;
 }
 
@@ -193,7 +251,7 @@ function handleHistoryNavigation() {
 }
 
 function readWindowLocation() {
-  return new URL(window.location.href);
+  return getApplicationNavigationUrl(new URL(window.location.href))!;
 }
 
 function setNavigationState(state: NavigationState) {
