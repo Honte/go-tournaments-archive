@@ -20,38 +20,38 @@ stages:
       - wins
       - sodos
     rounds:
-      - - ls-mk ls
-        - jk-ku jk
-        - rz-mf rz
-        - kg-jl kg
-      - - jk-mk jk
-        - ku-ls ku
-        - jl-mf jl
-        - kg-rz kg
-      - - ls-rz ls
-        - jk-jl jk
-        - ku-kg ku
-        - mf-mk mf
-      - - ls-jl ls
-        - jk-rz jk
-        - ku-mf ku
-        - mk-kg mk
-      - - ls-kg ls
-        - jk-mf jk
-        - jl-mk jl
-        - rz-ku rz
-      - - ls-mf ls
-        - jk-kg jk
-        - jl-ku jl
-        - rz-mk rz
-      - - ls-jk ls
-        - ku-mk ku
-        - jl-rz jl
-        - mf-kg mf
+      - - ls-mk ls:B+R sgf:1990/1990-1-lsoldan-mklobukowski.sgf
+        - jk-ku jk:W+35.5 sgf:1990/1990-1-kurtnowski-jkraszek.sgf
+        - rz-mf rz:W+R sgf:1990/1990-1-mferenc-rzablocki.sgf
+        - kg-jl kg:W+R sgf:1990/1990-1-jlubos-kgiedrojc.sgf
+      - - jk-mk jk:B+R sgf:1990/1990-2-jkraszek-mklobukowski.sgf
+        - ku-ls ku:B+R sgf:1990/1990-2-kurtnowski-lsoldan.sgf
+        - jl-mf jl:B+R sgf:1990/1990-2-jlubos-mferenc.sgf
+        - kg-rz kg:B+12.5 sgf:1990/1990-2-kgiedrojc-rzablocki.sgf
+      - - ls-rz ls:W+R sgf:1990/1990-3-rzablocki-lsoldan.sgf
+        - jk-jl jk:B+R sgf:1990/1990-3-jkraszek-jlubos.sgf
+        - ku-kg ku:W+R sgf:1990/1990-3-kgiedrojc-kurtnowski.sgf
+        - mf-mk mf:W+8.5 sgf:1990/1990-3-mklobukowski-mferenc.sgf
+      - - ls-jl ls:B+? sgf:1990/1990-4-lsoldan-jlubos.sgf
+        - jk-rz jk:W+? sgf:1990/1990-4-rzablocki-jkraszek.sgf
+        - ku-mf ku:W+2.5 sgf:1990/1990-4-mferenc-kurtnowski.sgf
+        - mk-kg mk:B+? sgf:1990/1990-4-mklobukowski-kgiedrojc.sgf
+      - - ls-kg ls:W+? sgf:1990/1990-5-kgiedrojc-lsoldan.sgf
+        - jk-mf jk:B+R sgf:1990/1990-5-jkraszek-mferenc.sgf
+        - jl-mk jl:B+R sgf:1990/1990-5-jlubos-mklobukowski.sgf
+        - rz-ku rz:W+? sgf:1990/1990-5-kurtnowski-rzablocki.sgf
+      - - ls-mf ls:B+R sgf:1990/1990-6-lsoldan-mferenc.sgf
+        - jk-kg jk:W+? sgf:1990/1990-6-kgiedrojc-jkraszek.sgf
+        - jl-ku jl:W+? sgf:1990/1990-6-kurtnowski-jlubos.sgf
+        - rz-mk rz:B+? sgf:1990/1990-6-rzablocki-mklobukowski.sgf
+      - - ls-jk ls:W+? sgf:1990/1990-7-jkraszek-lsoldan.sgf
+        - ku-mk ku:W+? sgf:1990/1990-7-mklobukowski-kurtnowski.sgf
+        - jl-rz jl:B+? sgf:1990/1990-7-jlubos-rzablocki.sgf
+        - mf-kg mf:B+R sgf:1990/1990-7-mferenc-kgiedrojc.sgf
   - type: final
     date: 1991-01-05
     requiredWins: 3
     includePrevious: true
     games:
-      - jk-ls ls
-      - jk-ls ls
+      - jk-ls ls:W+R sgf:1990/1990-jkraszek-lsoldan-final-1.sgf
+      - jk-ls ls:B+R sgf:1990/1990-lsoldan-jkraszek-final-2.sgf

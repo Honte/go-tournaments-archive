@@ -20,38 +20,38 @@ stages:
       - wins
       - sodos
     rounds:
-      - - kg-mk kg
-        - jl-tp jl
-        - mf-ww mf
-        - jr-ku jr
-      - - kg-mf kg
-        - jl-jr jl
-        - ww-mk ww
-        - ku-tp ku
-      - - kg-jr kg
-        - jl-mf jl
-        - ww-tp ww
-        - mk-ku mk
-      - - kg-tp kg
-        - jl-mk jl
-        - mf-ku mf
-        - ww-jr ww
-      - - kg-jl kg
-        - mf-jr mf
-        - ku-ww ku
-        - mk-tp mk
-      - - kg-ku kg
-        - jl-ww jl
-        - jr-mk jr
-        - tp-mf tp
-      - - kg-ww kg
-        - jl-ku jl
-        - mf-mk mf
-        - jr-tp jr
+      - - kg-mk kg:B+R sgf:1991/1991-1-kgiedrojc-mklobukowski.sgf
+        - jl-tp jl:B+R sgf:1991/1991-1-jlubos-tparuszewski.sgf
+        - mf-ww mf:W+R sgf:1991/1991-1-wwoskresinski-mferenc.sgf
+        - jr-ku jr:W+7.5 sgf:1991/1991-1-kurtnowski-jrybka.sgf
+      - - kg-mf kg:W+R sgf:1991/1991-2-mferenc-kgiedrojc.sgf
+        - jl-jr jl:W+36.5 sgf:1991/1991-2-jrybka-jlubos.sgf
+        - ww-mk ww:W+R sgf:1991/1991-2-mklobukowski-wwoskresinski.sgf
+        - ku-tp ku:W+19.5 sgf:1991/1991-2-tparuszewski-kurtnowski.sgf
+      - - kg-jr kg:B+R sgf:1991/1991-3-kgiedrojc-jrybka.sgf
+        - jl-mf jl:B+R sgf:1991/1991-3-jlubos-mferenc.sgf
+        - ww-tp ww:B+? sgf:1991/1991-3-wwoskresinski-tparuszewski.sgf
+        - mk-ku mk:W+1.5 sgf:1991/1991-3-kurtnowski-mklobukowski.sgf
+      - - kg-tp kg:W+47.5 sgf:1991/1991-4-tparuszewski-kgiedrojc.sgf
+        - jl-mk jl:W+R sgf:1991/1991-4-mklobukowski-jlubos.sgf
+        - mf-ku mf:B+R sgf:1991/1991-4-mferenc-kurtnowski.sgf
+        - ww-jr ww:W+13.5 sgf:1991/1991-4-jrybka-wwoskresinski.sgf
+      - - kg-jl kg:W+6.5 sgf:1991/1991-5-jlubos-kgiedrojc.sgf
+        - mf-jr mf:B+2.5 sgf:1991/1991-5-mferenc-jrybka.sgf
+        - ku-ww ku:W+? sgf:1991/1991-5-wwoskresinski-kurtnowski.sgf
+        - mk-tp mk:B+8.5 sgf:1991/1991-5-mklobukowski-tparuszewski.sgf
+      - - kg-ku kg:B+16.5 sgf:1991/1991-6-kgiedrojc-kurtnowski.sgf
+        - jl-ww jl:W+1.5 sgf:1991/1991-6-wwoskresinski-jlubos.sgf
+        - jr-mk jr:B+4.5 sgf:1991/1991-6-jrybka-mklobukowski.sgf
+        - tp-mf tp:B+R sgf:1991/1991-6-tparuszewski-mferenc.sgf
+      - - kg-ww kg:B+R sgf:1991/1991-7-kgiedrojc-wwoskresinski.sgf
+        - jl-ku jl:W+R sgf:1991/1991-7-kurtnowski-jlubos.sgf
+        - mf-mk mf:B+4.5 sgf:1991/1991-7-mferenc-mklobukowski.sgf
+        - jr-tp jr:W+22.5 sgf:1991/1991-7-tparuszewski-jrybka.sgf
   - type: final
     date: 1991-12-14
     requiredWins: 3
     includePrevious: true
     games:
-      - kg-jl kg
-      - kg-jl kg
+      - kg-jl kg:W+0.5 sgf:1991/1991-jlubos-kgiedrojc-final-1.sgf
+      - kg-jl kg:B+11.5 sgf:1991/1991-kgiedrojc-jlubos-final-2.sgf
