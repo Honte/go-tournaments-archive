@@ -1,0 +1,19 @@
+; TC[T120128F]
+; CL[A]
+; EV[Dutch Female Championship]
+; PC[NL, Amstelveen]
+; DT[2012-01-28,2012-01-29]
+; HA[h9]
+; KM[6.5]
+; TM[75]
+; CM[ (submitted by Herman Hiddema)]
+;.
+; NK Dames 2012
+1 Dubiel Marika         1k NL  Amvn  5    5    14   63   2+/b0  4+/w1  3+/w0  7+/b0  5+/b0   |14301617
+2 Pleit Karen           1k NL  Utre  4    4    13   63   1-/w0  8+/w0  6+/b0  3+/w0  4+/b0   |10462485
+3 Overbeek Marieke      3k NL  Arnh  3    3    14   62   5+/w0  6+/b0  1-/b0  2-/b0  7+/w0   |13062368
+4 Havik Tamara          4k NL  DHaa  3    3    12   62   8+/b0  1-/b1  5+/w0  6+/w0  2-/w0   |14733961
+5 Roelofs Yvonne        3k NL  Woer  2    2    12   64   3-/b0  7+/w0  4-/b0  8+/w0  1-/w0   |10725792
+6 Putter Annemarie_de   3k NL  Utre  2    2    11   63   7+/b0  3-/w0  2-/w0  4-/b0  8+/b0   |10613273
+7 Diederen Marianne     2k NL  Amst  1    1    12   63   6-/w0  5-/b0  8+/b0  1-/w0  3-/b0   |10598412
+8 Buntsma Els           3k NL  Arnh  0    0    12   60   4-/w0  2-/b0  7-/w0  5-/b0  6-/w0   |10250845

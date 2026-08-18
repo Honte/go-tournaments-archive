@@ -1,0 +1,12 @@
+; CL[A]
+; EV[Dutch Ladies Championship 2026 - playoff]
+; PC[NL, Nijmegen]
+; DT[2026-03-14,2026-03-15]
+; HA[h9]
+; KM[6.5]
+; TM[75]
+; CM[ (submitted by Niek_vD)]
+;.
+1 Au-Havik Tamara       1k NL  Seki  2    0    0   0    3+ 2+    |14733961
+2 Roelofs Yvonne        2k NL  Nijm  1    0    0   0    0+ 1-    |10725792
+3 Diederen Marianne     3k NL  Utre  0    0    0   0    1- 0=    |10598412

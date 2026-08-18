@@ -1,0 +1,20 @@
+; TC[T030118E]
+; DT[2003-01-18,2003-01-19]
+; CL[A]
+; EV[Dutch Female Championship]
+; PC[NL,Amsterdam]
+; KM[5.5]
+; TM[75]
+; HA[h9]
+;                      Dutch Female Championship, Amsterdam
+;                              January 18 - 19, 2003
+;
+;Pl     Name             Grade  Club   MM S SOS SDOS  1.  2.  3.  4.  5.
+  1 Frehe Renee             4d NL Nijm  5 5  10  10  2+ 3+ 6+ 4+ 5+  |10313248
+  2 Buntsma Els             2k NL Utre  4 4  11   6  1- 4+ 5+ 6+ 3+  |10250845
+  3 Diederen Marianne       1k NL Amst  2 2  13   2  6+ 1- 4- 5+ 2-  |10598412
+  4 Putter Annemarie_de     4k NL Amvn  2 2  13   2  5- 2- 3+ 1- 6+  |10613273
+  5 Roelofs Yvonne          2k NL Alph  2 2  13   2  4+ 6+ 2- 3- 1-  |10725792
+  6 Hollmann Kirsten        3k NL Eind  0 0  15   0  3- 5- 1- 2- 4-  |10486509
+;
+; 60 min + 20 sec byo-yomi/move

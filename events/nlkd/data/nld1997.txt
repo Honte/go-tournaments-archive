@@ -1,0 +1,15 @@
+; TC[T970118B]
+; DT[1997-01-18,1997-01-18]
+; CL[A]
+; EV[Dutch Women Championship 1997]
+; PC[NL,Amsterdam]
+; KM[6=]
+; TM[90]
+; HA[h9]
+;                      Dutch Women Championship, Amsterdam 1997
+;                                January 18, 1997
+;
+;Pl     Name             Grade  Club   MM S SOS SDOS  1.   2.   3.
+  1 Buntsma Els             2k NL Amvn  2 2   0   0   0=   2+   3+  |10250845
+  2 Frehe Renee             1k NL Nijm  1 1   0   0   3+   1-   0=  |10313248
+  3 Pleit Karen             4k NL Utre  0 0   0   0   2-   0=   1-  |10462485

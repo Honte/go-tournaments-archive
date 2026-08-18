@@ -1,0 +1,14 @@
+; TC[T190126B]
+; CL[A]
+; EV[Dutch Woman championship 2019]
+; PC[NL, Amstelveen]
+; DT[2019-01-26,2019-01-27]
+; HA[h9]
+; KM[6.5]
+; TM[82.5]
+; CM[ (submitted by NitramF)]
+;.
+1 Roelofs Yvonne     4k NL  Utre  33   3    127  511  2+/b   3-/w   4+/w   2+/b    |10725792
+2 Overbeek Marieke   3k NL  Arnh  32   2    129  507  1-/w   4+/b   3+/b   1-/w    |13062368
+3 Buntsma Els        3k NL  Vleu  31=  1    126= 502= 4-/w   1+/b   2-/w   0=      |10250845
+4 Visscher Mirjam    3k NL  Zeis  31=  1    126= 502= 3+/b   2-/w   1-/b   0=      |14062136

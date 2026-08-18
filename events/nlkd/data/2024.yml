@@ -1,0 +1,16 @@
+name: 29th Dutch Women Championship
+stages:
+  - type: tournament
+    name: Championship
+    file: nld2024.txt
+    notes: Shu Hsin Lin and Nicole de Beer withrew after 1st day of the competition so they are moved to the bottom of the table
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - wins
+      - sos
+      - sodos
+    findSharedPlaces: true

@@ -1,0 +1,18 @@
+; TC[T170128G]
+; CL[A]
+; EV[Dutch Female Championship]
+; PC[NL, Leiden]
+; DT[2017-01-28,2017-01-29]
+; HA[h9]
+; KM[6.5]
+; TM[75]
+; CM[ (submitted by Herman Hiddema)]
+;.
+   1 Dubiel Marika                  2d NL  Amvn     5     5    13    64     9    7+/b    5+/w    3+/b    4+/w    2-/w 2+ |14301617
+   2 Kleczar Justyna                2k NL  Amst     4     4    13    64    10    4-/b    8+/b    6+/w    3+/w    1+/b 1- |13886169
+   3 Diederen Marianne              2k NL  Amst     3     3    14    63     6    6+/b    4+/w    1-/w    2-/b    8+/b 0= |10598412
+   4 Pleit Karen                    2k NL  Arnh     3     3    14    63     7    2+/w    3-/b    5+/b    1-/b    7+/w 0= |10462485
+   5 Boelens Anne                   4k NL  Zoet     2     2    11    62     3    8+/w    1-/b    4-/w    7-/w    6+/b 0= |17274246
+   6 Beer Nicole_de                 6k NL  Eind     2     2    11    62     2    3-/w    7+/w    2-/b    8+/b    5-/w 0= |16233217
+   7 Buntsma Els                    3k NL  Arnh     1     1    12    61     2    1-/w    6-/b    8-/w    5+/b    4-/b 0= |10250845
+   8 Roelofs Yvonne                 4k NL  Arnh     1     1    12    61     1    5-/b    2-/w    7+/b    6-/w    3-/w 0= |10725792

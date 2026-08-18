@@ -67,6 +67,14 @@ events:
         prefix: pagc
         domain: https://amp.go.art.pl
   - title:
+      en: Dutch Championships
+      pl: Mistrzostwa Holandii
+    events:
+      - id: nlk
+        prefix: nlk
+      - id: nlkd
+        prefix: nlkd
+  - title:
       en: National Tournaments
       pl: Mistrzostwa Krajowe
     events:
@@ -74,8 +82,6 @@ events:
         prefix: iegc
       - id: hrgc
         prefix: hrgc
-      - id: nlk
-        prefix: nlk
   - title:
       en: Local Tournaments
       pl: Lokalne Turnieje

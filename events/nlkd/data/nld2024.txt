@@ -1,0 +1,16 @@
+; TC[T240127D]
+; CL[A]
+; EV[Dutch Ladies Championship]
+; PC[NL, Apeldoorn]
+; DT[2024-01-27,2024-01-28]
+; HA[h9]
+; KM[6.5]
+; TM[75]
+; CM[ (submitted by Niek_vD)]
+;.
+   1 Roelofs Yvonne                 2k NL  Nijm     4     4     5     5    4+/b    6+/w    3+/w    2+/b |10725792
+   2 Au-Havik Tamara                2k NL  Seki     2     2     5     1    3+/b    4+/w      0=    1-/w |14733961
+   3 Diederen Marianne              3k NL  Utre     1     1    10     0     2-/w    5-/w   1-/b    4+/b |10598412
+   4 Buntsma Els                    2k NL  Utre     0     0     7     0    1-/w    2-/b      0=    3-/w |10250845
+   5 Lin Shu-Hsin                   3k NL  Eind     3     2     2     2    6+/w    3+/b      0=      0= |18450135
+   6 Beer Nicole_de                 5k NL  Eind     1     0     7     0    5-/b    1-/b      0=      0= |16233217

@@ -1,0 +1,16 @@
+; TC[T000115E]
+; DT[2000-01-15,2000-01-16]
+; CL[A]
+; EV[Dutch Women Championship 2000]
+; PC[NL, Amsterdam]
+; DT[2000-01-15,2000-01-16]
+; HA[h9]
+; KM[5.5]
+; TM[90]
+;
+  1 Frehe Renee             2d NL Nijm  5 5  10  10   4+/w 5+/b 3+/w 6+/w 2+/b  |10313248
+  2 Diederen Marianne       1k NL Amst  4 4  11   6   6+/b 4+/b 5+/w 3+/b 1-/w  |10598412
+  3 Hollmann Kirsten        4k NL Eind  3 3  12   3   5+/w 6+/w 1-/b 2-/w 4+/b  |10486509
+  4 Roelofs Yvonne          2k NL Alph  2 2  13   1   1-/b 2-/w 6+/b 5+/b 3-/w  |10725792
+  5 Pleit Karen             2k NL Utre  1 1  14   0   3-/b 1-/w 2-/b 4-/w 6+/b  |10462485
+  6 Buntsma Els             1k NL Utre  0 0  15   0   2-/w 3-/b 4-/w 1-/b 5-/w  |10250845

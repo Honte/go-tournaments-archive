@@ -1,0 +1,12 @@
+; TC[T040110B]
+; CL[A]
+; PC[NL,Amstelveen]
+; HA[h9]
+; EV[Dutch Lady`s Championship Go 2004]
+; DT[2004-01-10,2004-01-10]
+; KM[6.5]
+; TM[80]
+;
+;pl name             grade  club   Sc Sos SD rtng  1. 2.
+  1 Diederen Marianne   1k NL Amst 2 2   0  0 1841  2+ 2+  |10598412
+  2 Buntsma Els         2k NL Utre 0 0   4  0 1834  1- 1-  |10250845

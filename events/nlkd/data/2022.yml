@@ -1,0 +1,20 @@
+name: 27th Dutch Women Championship
+stages:
+  - type: tournament
+    name: Championship
+    file: nld2022.txt
+    scoringColumns:
+      - mms
+      - wins
+      - null
+      - sos
+    breakers:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 1-4 1:B+R round:2 sgf:2022/2-MarikaDubiel-NicoledeBeer.sgf ogs:https://online-go.com/game/40793035
+      - 2-1 1:W+11.5 round:1 sgf:2022/1-TamaraAuHavik-MarikaDubiel.sgf ogs:https://online-go.com/game/40789468
+      - 2-3 2:B+R round:2 sgf:2022/2-TamaraAuHavik-ElsBuntsma.sgf ogs:https://online-go.com/game/40793028
+      - 3-1 1:W+55.5 round:3 sgf:2022/3-ElsBuntsma-MarikaDubiel.sgf ogs:https://online-go.com/game/40818039
+      - 3-4 3:B+16.5 round:1 sgf:2022/1-ElsBuntsma-NicoledeBeer.sgf ogs:https://online-go.com/game/40789397
+      - 4-2 2:W+35.5 round:3 sgf:2022/3-NicoledeBeer-TamaraAuHavik.sgf ogs:https://online-go.com/game/40818016

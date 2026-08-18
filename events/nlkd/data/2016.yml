@@ -1,0 +1,14 @@
+name: 22nd Dutch Women Championship
+stages:
+  - type: tournament
+    name: Championship
+    file: nld2016.txt
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true

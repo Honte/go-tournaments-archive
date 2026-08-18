@@ -1,0 +1,14 @@
+name: 1st Dutch Women Championship
+stages:
+  - type: tournament
+    name: Championship
+    file: nld1995.txt
+    notes: Not sure about exact results
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - wins
+    findSharedPlaces: true

@@ -1,0 +1,14 @@
+; TC[T050115C]
+; CL[A]
+; TM[80]
+; HA[h9]
+; EV[Dutch Female Championship]
+; PC[NL, Amstelveen, EGCC]
+; DT[2005-01-15,2005-01-16]
+; KM[6.5]
+;
+  1 Frehe Renee             4d NL Nijm  4 4   0   8  0=   4+/b 3+/w 5+/w 2+/b  |10313248
+  2 Putter Annemarie_de     2k NL Amvn  2 2   0   3  3+/w 0=   5+/b 4-/b 1-/w  |10613273
+  3 Buntsma Els             2k NL Utre  2 2   0   2  2-/b 5+/w 1-/b 0=   4+/w  |10250845
+  4 Roelofs Yvonne          3k NL Alph  1 1   0   2  5-/b 1-/w 0=   2+/w 3-/b  |10725792
+  5 Diederen Marianne       1k NL Amst  1 1   0   1  4+/w 3-/b 2-/w 1-/b 0=    |10598412

@@ -22,31 +22,31 @@ stages:
       - sodos
       - starting
     rounds:
-      - - jl-kh jl
-        - ls-jc ls
-        - al-rp al
-        - mr-jk mr
-      - - jk-jc jk
-        - kh-rp kh
-        - ls-mr ls
-        - al-jl al
-      - - kh-jk kh
-        - jl-mr jl
-        - ls-al ls
-        - rp-jc rp
-      - - jk-al jk
-        - kh-ls kh
-        - jc-jl jc
-        - rp-mr rp
-      - - jk-rp jk
-        - jl-ls jl
-        - al-mr al
-        - jc-kh jc
-      - - jk-jl jk
-        - kh-mr kh
-        - ls-rp ls
-        - al-jc al
-      - - jk-ls jk
-        - kh-al kh
+      - - jl-kh jl:W+7 sgf:2003/2003-1-khabu-jlubos.sgf
+        - ls-jc ls:W+R sgf:2003/2003-1-jchlodek-lsoldan.sgf
+        - al-rp al:B+R sgf:2003/2003-1-alubos-rpszonka.sgf
+        - mr-jk mr:B+R sgf:2003/2003-1-mrams-jkraszek.sgf
+      - - jk-jc jk:B+R sgf:2003/2003-2-jkraszek-jchlodek.sgf
+        - kh-rp kh:W+R sgf:2003/2003-2-rpszonka-khabu.sgf
+        - ls-mr ls:B+R sgf:2003/2003-2-mrams-lsoldan.sgf rotate:180
+        - al-jl al:W+1 sgf:2003/2003-2-alubos-jlubos.sgf
+      - - kh-jk kh:B+6.5 sgf:2003/2003-3-khabu-jkraszek.sgf
+        - jl-mr jl:W+R sgf:2003/2003-3-mrams-jlubos.sgf
+        - ls-al ls:W+R sgf:2003/2003-3-alubos-lsoldan.sgf
+        - rp-jc rp:W+R sgf:2003/2003-3-jchlodek-rpszonka.sgf
+      - - jk-al jk:B+R sgf:2003/2003-4-alubos-kraszek.sgf
+        - kh-ls kh:W+6.5 sgf:2003/2003-4-lsoldan-khabu.sgf
+        - jc-jl jc:W+R sgf:2003/2003-4-jlubos-jchlodek.sgf
+        - rp-mr rp:B+R sgf:2003/2003-4-rpszonka-mrams.sgf
+      - - jk-rp jk:W+R sgf:2003/2003-5-rpszonka-jkraszek.sgf
+        - jl-ls jl:B+6.5 sgf:2003/2003-5-jlubos-lsoldan.sgf rotate:180
+        - al-mr al:W+R sgf:2003/2003-5-mrams-alubos.sgf
+        - jc-kh jc:B+R sgf:2003/2003-5-jchlodek-khabu.sgf
+      - - jk-jl jk:B+R sgf:2003/2003-6-jkraszek-jlubos.sgf
+        - kh-mr kh:W+R sgf:2003/2003-6-mrams-khabu.sgf
+        - ls-rp ls:B+6.5 sgf:2003/2003-6-lsoldan-rpszonka.sgf
+        - al-jc al:B+R sgf:2003/2003-6-alubos-jchlodek.sgf
+      - - jk-ls jk:B+7.5 sgf:2003/2003-7-jkraszek-lsoldan.sgf
+        - kh-al kh:W+R sgf:2003/2003-7-alubos-khabu.sgf
         - jl-rp jl
-        - jc-mr jc
+        - jc-mr jc:B+R sgf:2003/2003-7-jchlodek-mrams.sgf

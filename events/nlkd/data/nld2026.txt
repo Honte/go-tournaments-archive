@@ -1,0 +1,18 @@
+; TC[T260131H]
+; CL[A]
+; EV[Dutch Ladies Championship 2026]
+; PC[NL, Amersfoort]
+; DT[2026-01-31,2026-02-01]
+; HA[h9]
+; KM[6.5]
+; TM[75]
+; CM[ (submitted by Niek_vD)]
+;.
+1 Diederen Marianne     3k NL  Utre  4    4    13   9    3+/w   4+/w   2-/b   6+/b   8+/b    |10598412
+2 Au-Havik Tamara       1k NL  Seki  4    4    13   9    7+/b   6+/w   1+/w   3-/b   5+/b    |14733961
+3 Roelofs Yvonne        2k NL  Nijm  4    4    13   9    1-/b   8+/w   5+/w   2+/w   4+/b    |10725792
+4 Matveeva Anastasia    5k NL  Boks  3    3    13   5    5+/w   1-/b   6+/b   7+/w   3-/w    |19450497
+5 Hout Mirjam_van_den   7k NL  Utre  2    2    12   1    4-/b   7+/w   3-/b   8+/b   2-/w    |17913830
+6 Buntsma Els           2k NL  Utre  2    2    12   1    8+/b   2-/b   4-/w   1-/w   7+/b    |10250845
+7 Beer Nicole_de        5k NL  Eind  1    1    11   0    2-/w   5-/b   8+/w   4-/b   6-/w    |16233217
+8 Verheesen Laura      20k NL  xxxx  0    0    13   0    6-/w   3-/b   7-/b   5-/w   1-/w    |20986416

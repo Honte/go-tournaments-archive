@@ -1,0 +1,16 @@
+; TC[T250125I]
+; CL[A]
+; EV[Dutch Ladies Championship 2025]
+; PC[NL, Amersfoort]
+; DT[2025-01-25,2025-01-26]
+; HA[h9]
+; KM[6.5]
+; TM[75]
+; CM[ (submitted by Niek_vD)]
+;.
+1 Au-Havik Tamara      1k NL  Seki  5    5 0  10   3+/w   6+/b   2+/w   5+/w   4+/b    |14733961
+2 Buntsma Els          2k NL  Utre  3    3 0   5    6+/w   5+/w   1-/b   4-/w   3+/b    |10250845
+3 Lin Shu-Hsin         3k NL  Eind  3    3 0   4    1-/b   4+/w   5+/b   6+/b   2-/w    |18450135
+4 Matveeva Anastasia   5k NL  Boks  2    2 0   3    5-/b   3-/b   6+/w   2+/b   1-/w    |19450497
+5 Pleit Karen          2k NL  Gron  2    2 0   2    4+/w   2-/b   3-/w   1-/b   6+/w    |10462485
+6 Avraamova Vera       9k NL  Boks  0    0 0   0    2-/b   1-/w   4-/b   3-/w   5-/b    |19486258

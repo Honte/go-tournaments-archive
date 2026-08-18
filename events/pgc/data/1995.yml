@@ -20,23 +20,23 @@ stages:
       - wins
       - sodos
     rounds:
-      - - ls-jc ls
-        - mf-ww mf
-        - jl-tp jl
-        - kg-jf kg
-      - - ls-jf ls
-        - mf-tp mf
-        - jl-ww jl
-        - kg-jc kg
+      - - ls-jc ls:W+R sgf:1995/1995-1-jchlodek-lsoldan.sgf
+        - mf-ww mf:B+R sgf:1995/1995-1-mferenc-wwieczorek.sgf
+        - jl-tp jl:B+R sgf:1995/1995-1-jlubos-tparuszewski.sgf
+        - kg-jf kg:W+? sgf:1995/1995-1-jfrejlak-kgiedrojc.sgf
+      - - ls-jf ls:B+R sgf:1995/1995-2-lsoldan-jfrejlak.sgf
+        - mf-tp mf:W+R sgf:1995/1995-2-tparuszewski-mferenc.sgf
+        - jl-ww jl:W+R sgf:1995/1995-2-wwieczorek-jlubos.sgf
+        - kg-jc kg:B+R sgf:1995/1995-2-kgiedrojc-jchlodek.sgf
       - - ls-tp ls
         - mf-jc mf
         - jl-jf jl
-        - kg-ww kg
-      - - ls-ww ls
+        - kg-ww kg:W+R sgf:1995/1995-3-wwieczorek-kgiedrojc.sgf
+      - - ls-ww ls:B+R sgf:1995/1995-4-lsoldan-wwieczorek.sgf
         - mf-jf mf
         - jl-jc jl
         - tp-kg tp
-      - - ls-mf ls
+      - - ls-mf ls:W+R sgf:1995/1995-5-mferenc-lsoldan.sgf
         - jl-kg jl
         - tp-jf tp
         - jc-ww jc
@@ -44,7 +44,7 @@ stages:
         - mf-jl mf
         - tp-ww tp
         - jf-jc jf
-      - - ls-jl ls
+      - - ls-jl ls:W+? sgf:1995/1995-7-jlubos-lsoldan.sgf
         - kg-mf kg
         - jc-tp jc
         - jf-ww jf
@@ -54,5 +54,5 @@ stages:
     requiredWins: 3
     includePrevious: true
     games:
-      - ls-mf ls:W
+      - ls-mf ls:W+7.5 sgf:1995/1995-lsoldan-mferenc-final-1.sgf
       - ls-mf ls:B

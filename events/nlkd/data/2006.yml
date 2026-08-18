@@ -1,0 +1,16 @@
+name: 12th Dutch Women Championship
+stages:
+  - type: tournament
+    name: Championship
+    file: nld2006.txt
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true
+    games:
+      - 1-4 1:B+R round:5 sgf:2006/5-KarenPleit-AnnemariedePutter.sgf

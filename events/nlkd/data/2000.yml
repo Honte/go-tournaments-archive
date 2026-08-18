@@ -1,0 +1,14 @@
+name: 6th Dutch Women Championship
+stages:
+  - type: tournament
+    name: Championship
+    file: nld2000.txt
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true

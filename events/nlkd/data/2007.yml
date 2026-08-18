@@ -1,0 +1,15 @@
+name: 13th Dutch Women Championship
+stages:
+  - type: tournament
+    name: Championship
+    file: nld2007.txt
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - wins
+      - sos
+      - sodos
+    findSharedPlaces: true

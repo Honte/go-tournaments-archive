@@ -4,6 +4,7 @@ import { getEventConfigurations, IS_DEVELOPMENT, loadConfiguration } from '@/con
 export default async function getConfig() {
   const configuration = await loadConfiguration();
   const eventConfigurations = getEventConfigurations(configuration);
+  const basePath = normalizeBasePath(configuration.basePath);
   const totalEvents = eventConfigurations.length;
   const pageExtensions = ['tsx', 'ts'];
 
@@ -25,12 +26,15 @@ export default async function getConfig() {
 
   return {
     output: configuration.dynamic ? 'standalone' : 'export',
-    basePath: normalizeBasePath(configuration.basePath),
-    env: configuration.dynamic
-      ? {
-          FORCED_CONFIGURATION: JSON.stringify(configuration),
-        }
-      : {},
+    basePath,
+    env: {
+      NAVIGATION_BASE_PATH: basePath,
+      ...(configuration.dynamic
+        ? {
+            FORCED_CONFIGURATION: JSON.stringify(configuration),
+          }
+        : {}),
+    },
     pageExtensions,
     trailingSlash: configuration.trailingSlash,
   };

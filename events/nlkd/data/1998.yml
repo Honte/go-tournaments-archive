@@ -1,0 +1,14 @@
+name: 4th Dutch Women Championship
+stages:
+  - type: tournament
+    name: Championship
+    file: nld1998.txt
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true

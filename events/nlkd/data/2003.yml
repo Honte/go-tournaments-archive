@@ -1,0 +1,14 @@
+name: 9th Dutch Women Championship
+stages:
+  - type: tournament
+    name: Championship
+    file: nld2003.txt
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true

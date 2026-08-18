@@ -1,0 +1,18 @@
+; TC[T130126B]
+; CL[A]
+; EV[Dutch Female Championship]
+; PC[NL, Amstelveen]
+; DT[2013-01-26,2013-01-27]
+; HA[h9]
+; KM[6.5]
+; TM[75]
+; CM[ (submitted by Herman Hiddema)]
+;.
+1 Dubiel Marika         2d NL  Amvn  5    5    14   14   6+/b   4+/b   2+/w   3+/w   5+/b    |14301617
+2 Overbeek Marieke      3k NL  Arnh  4    4    15   10   5+/b   3+/w   1-/b   4+/w   6+/b    |13062368
+3 Putter Annemarie_de   2k NL  Utre  3    3    12   3    8+/w   2-/b   6+/w   1-/b   7+/w    |10613273
+4 Roelofs Yvonne        3k NL  xxxx  3    3    12   3    7+/b   1-/w   5+/b   2-/b   8+/b    |10725792
+5 Diederen Marianne     1k NL  Amst  2    2    13   1    2-/w   8+/b   4-/w   7+/b   1-/w    |10598412
+6 Havik Tamara          4k NL  DHaa  2    2    13   1    1-/w   7+/w   3-/b   8+/b   2-/w    |14733961
+7 Buntsma Els           3k NL  Arnh  1    1    10   0    4-/w   6-/b   8+/w   5-/w   3-/b    |10250845
+8 Boonstra Lisan       12k NL  Gron  0    0    11   0    3-/b   5-/w   7-/b   6-/w   4-/w    |16313693

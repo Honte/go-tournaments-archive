@@ -1,0 +1,17 @@
+; TC[T140125G]
+; CL[A]
+; EV[Dutch Female Championship]
+; PC[NL, Amstelveen]
+; DT[2014-01-25,2014-01-26]
+; HA[h9]
+; KM[6.5]
+; TM[75]
+; CM[ (submitted by Herman Hiddema)]
+;.
+1 Dubiel Marika         2d NL  Amvn  5    5    11   68   2+/b   5+/b   4+/w   6+/w   7+/w    |14301617
+2 Visscher Mirjam       4k NL  Zeis  3    3    14   66   1-/w   3-/b   5+/w   0+     4+/b    |14062136
+3 Putter Annemarie_de   2k NL  Utre  3    3    12   68   4-/b   2+/w   0-     5+/b   6+/b    |10613273
+4 Diederen Marianne     2k NL  Amst  2    2    15   62   3+/w   6+/b   1-/b   7-/w   2-/w    |10598412
+5 Pleit Karen           2k NL  Arnh  2    2    14   63   7+/b   1-/w   2-/b   3-/w   0+      |10462485
+6 Roelofs Yvonne        4k NL  Woer  2    2    13   63   0+     4-/w   7+/b   1-/b   3-/w    |10725792
+7 Buntsma Els           3k NL  Arnh  2    2    12   65   5-/w   0+     6-/w   4+/b   1-/b    |10250845

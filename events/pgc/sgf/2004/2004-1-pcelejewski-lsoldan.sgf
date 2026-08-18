@@ -1,0 +1,17 @@
+(;KM[6.5]SZ[19]GN[BkGoban sample game]EV[MP 2004]RO[1]PB[Paweł Celejewski]BR[3d]PW[Leszek Sołdan]WR[5d]RE[W+1,5];B[cp];W[pp];B[dc];W[ep];B[qd];W[dn]
+;B[eq];W[dp];B[dq];W[cq];B[bq];W[cr];B[br];W[co];B[bp];W[fq];B[dr];W[er];B[cs]
+;W[gp];B[ce];W[od];B[oc];W[nc];B[pc];W[md];B[qf];W[ic];B[nq];W[lq];B[qq];W[pq]
+;B[qp];W[po];B[pr];W[or];B[qr];W[oq];B[qn];W[fc];B[pj];W[pe];B[qe];W[om];B[jm]
+;W[qm];B[rn];W[jn];B[lm];W[km];B[lo];W[ln];B[mn];W[kn];B[mm];W[np];B[mo];W[kk]
+;B[nl];W[ee];B[kq];W[kp];B[mq];W[mp];B[lp];W[lr];B[no];W[op];B[kr];W[mr];B[ko]
+;W[jp];B[jo];W[ip];B[kl];W[cf];B[bf];W[df];B[bg];W[jk];B[pn];W[ok];B[nj];W[in]
+;B[lj];W[lh];B[dh];W[dj];B[ei];W[ll];B[oj];W[lk];B[nk];W[ej];B[io];W[ho];B[fr]
+;W[gr];B[es];W[hq];B[fb];W[eb];B[ec];W[db];B[cb];W[gb];B[fd];W[gc];B[ed];W[ge]
+;B[bi];AW[nd]AB[ne];B[];W[og];B[pf];W[of];B[dl];W[bj];B[bn];W[cm];B[ci];W[cj]
+;B[gi];W[gj];B[hh];W[hj];B[fe];W[ff];B[gf];W[gg];B[hf];W[fh];B[gd];W[hg];B[he]
+;W[fi];B[ke];W[jd];B[je];W[nb];B[bl];W[bm];B[am];W[bo];B[ao];W[cl];B[ig];W[ih]
+;B[id];W[jc];B[eg];W[fg];B[ef];W[jg];B[if];W[jh];B[ld];W[le];B[kd];W[lb];B[lf]
+;W[me];B[jf];W[ph];B[qh];W[pg];B[qg];W[qa];B[qb];W[pa];B[ra];W[ob];B[pb];W[oa]
+;B[fa];W[ga];B[kc];W[jb];B[kb];W[ka];B[rb];W[pi];B[qi];W[kj];B[li];W[ca];B[ba]
+;W[ea];C[biały wygrał 1,5 punktu
+]B[bb];W[])

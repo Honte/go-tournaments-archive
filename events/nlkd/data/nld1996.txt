@@ -1,0 +1,8 @@
+; EV[Dutch Women Championship 1996]
+; PC[NL,Amsterdam]
+; KM[6=]
+; TM[90]
+; HA[h9]
+;Pl     Name             Grade  Club   MM S SOS SDOS  1. 
+  1 Frehe Renee             1k NL Nijm  1 1   0   0    2+   |10313248
+  2 Diederen Marianne       1k NL Amst  0 0   0   0    1-   |10598412

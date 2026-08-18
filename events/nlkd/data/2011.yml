@@ -1,0 +1,21 @@
+name: 17th Dutch Women Championship
+stages:
+  - type: tournament
+    name: Championship
+    file: nld2011.txt
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - wins
+      - sos
+      - sodos
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:3 sgf:2011/3-MarikaDubiel-MariekeOverbeek.sgf
+      - 1-4 1:B+R round:5 sgf:2011/5-MarikaDubiel-SuzanneVernimmen.sgf
+      - 2-5 2:B+32.5 round:2 sgf:2011/2-MariekeOverbeek-ElsBuntsma.sgf
+      - 3-1 1:W+21.5 round:4 sgf:2011/4-YvonneRoelofs-MarikaDubiel.sgf
+      - 4-8 4:B+R round:1 sgf:2011/1-SuzanneVernimmen-CelineJager.sgf

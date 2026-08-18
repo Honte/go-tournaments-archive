@@ -1,0 +1,43 @@
+(;B[pd]SZ[19]C[Polish Go Championship Leagu, 1991
+Round 3, 15.11.1991
+White: Mateusz Klobukowski, 2-dan
+Black: Krzysztof Urtnowski, 2-dan
+White wins by 1 1/2 points.
+Commentary by Kano Yoshinori 9-dan, translated by Krzysztof Grabowski.
+Recorded by Krzysztof Grabowski using GoScribe 2.0 
+];W[dp];B[pp];W[dc];B[de];W[fd];B[cc];W[cb];B[cd]
+(;W[bb]C[White 10 is a bad move. It is played in Chinese fuseki when White has stones
+at 'A' or 'B' and at 'C'. It is then an attacking move. 
+]LB[:][:][di:][:][:][:][:][it:][:][:][:][:][ve:][:][:][pl:][ay:][ed:][:][:][in:][es:][:][se:][ki:][:][:][it:][:][:][on:][es:][:][:][:][:][:][:][:][:][:][th:][en:][:][at:][ta:][ck:][in:][:][ve:][:]
+;B[ci]C[  Black is safe and can aim at attacking at 'A'. 
+]LB[:][:];W[nq];B[jq];W[pr];B[fq];W[dn];B[dr];W[cq]C[  An exchange 17-18 is better left unplayed. It is good when Black t is one
+  space to the left. 
+]LB[:][jq:][:][:][:][:][:][:][:][:][:][:][:]
+;B[cl];W[hq];B[fo];W[ho]
+(;B[fm]C[  Black 23 should be at 'a'. 
+];W[dl];B[co];W[ep];B[fp];W[cm];B[ck];W[bm];B[cr];W[br];B[dq];W[cp];B[jo]
+;W[gn]C[  Very bad. 
+]
+(;B[fn]C[  Black should answer at 'a'. 
+];W[in]C[  Very strange. 
+];B[hr];W[iq];B[ir];W[kr];B[jr];W[jn];B[kn];W[km];B[ln];W[kp]
+;B[kq];W[lp];B[jp];W[no];B[jm];W[kl];B[jl];W[hl];B[jk];W[lk];B[kk];W[ll];B[em]C[  Now it is too small. 
+]
+;W[gk];B[mr];W[pq];B[mp];W[mo];B[mq];W[po];B[hj];W[gj];B[hk];W[gl];B[gi];W[fi]
+;B[fh];W[ej];B[dm];W[mn];B[ko];W[hi];B[gh];W[hh];B[ji];W[jh];B[ih];W[hg];B[ii]
+;W[eh];B[gf];W[ef];B[ff];W[eg];B[ee];W[fe];B[he];W[if];B[ie];W[jf];B[ec];W[ed]
+;B[dd];W[db];B[fc];W[gd];B[gc];W[hd];B[ic]C[  After Black 107 the game is won for Black. 
+];W[kh];B[lj];W[mj];B[li];W[mi];B[lh]
+;W[lf];B[mh];W[oi];B[ni];W[nj];B[nh];W[oh]C[  Mistake. 
+];B[oj];W[pj];B[mk];W[nk];B[nl];W[ok]
+;B[ml]C[  Nice combination. The commentary ends here. Mr. Kano 9-dan was very
+  surprised to hear that White has won the game. 
+]LB[:][lo:][:][lo:][:][:];W[hf];B[id];W[gg];B[ge];W[fg];B[bc];W[qf];B[om]
+;W[ol];B[mm];W[nm];B[nn];W[pm];B[op];W[np];B[oo];W[pn];B[on];W[qp];B[lm];W[cg]
+;B[bl];W[bo];B[bh];W[rd];B[mc];W[qc];B[pc];W[kd];B[kc];W[oe];B[qb];W[rb];B[pb]
+;W[md];B[ld];W[le];B[lc];W[ng];B[bs];W[ar];B[bg];W[cf];B[bf];W[eq];B[er];W[lo]
+;B[nd];W[me];B[ne];W[od];B[oc];W[nf];B[nc];W[pe];B[qd];W[rc];B[qe];W[re];B[kg]
+;W[jg];B[lg]C[  Moves after Black 189 omitted.
+  
+  White wins by 1 1/2 points. 
+]))))

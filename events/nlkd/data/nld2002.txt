@@ -1,0 +1,19 @@
+; TC[T020112E]
+; DT[2002-01-12,2002-01-13]
+; CL[A]
+; EV[Dutch Female Championship]
+; PC[NL,Amsterdam]
+; KM[5.5]
+; TM[75]
+; HA[h9]
+;                      Dutch Female Championship, Amsterdam
+;                              January 12 - 13, 2002
+;
+;Pl     Name             Grade  Club   MM S SOS SDOS  1.  2.  3.  4.  5.
+  1 Diederen Marianne       1k NL Amst  4 4  12  10   0=  4+  5+  3+  2+  |10598412
+  2 Putter Annemarie_de     4k NL Eind  2 2  12   5   4-  5+  3+  0=  1-  |10613273
+  3 Hollmann Kirsten        3k NL Eind  2 2  12   4   5+  0=  2-  1-  4+  |10486509
+  4 Buntsma Els             2k NL Utre  1 1  12   3   2+  1-  0=  5-  3-  |10250845
+  5 Roelofs Yvonne          2k NL Alph  1 1  12   2   3-  2-  1-  4+  0=  |10725792
+;
+; 60 min + 20 sec byo-yomi/move

@@ -1,0 +1,15 @@
+; TC[T200125H]
+; CL[A]
+; EV[Dutch Female Championship]
+; PC[NL, Leiden]
+; DT[2020-01-25,2020-01-26]
+; HA[h9]
+; KM[6.5]
+; TM[75]
+; CM[ (submitted by Herman Hiddema)]
+;.
+1 Buntsma Els         3k NL  Vleu  5    5    19   15   2-/w   5+/b   4+/b   3+/w   0+     2+/b    |10250845
+2 Pleit Karen         2k NL  Vleu  4    4    20   12   1+/b   4+/w   3-/w   0+     5+/b   1-/w    |10462485
+3 Au-Havik Tamara     3k NL  DHaa  3    3    15   7    5+/w   0+     2+/b   1-/b   4-/w   0=      |14733961
+4 Roelofs Yvonne      4k NL  Utre  3    3    15   6    0+     2-/b   1-/w   5+/b   3+/b   0=      |10725792
+5 Diederen Marianne   2k NL  Vleu  1    1    15   0    3-/b   1-/w   0+     4-/w   2-/w   0=      |10598412
