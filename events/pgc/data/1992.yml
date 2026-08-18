@@ -20,39 +20,39 @@ stages:
       - wins
       - sodos
     rounds:
-      - - kg-tp kg
-        - jk-mf jk
-        - ww-kk ww
-        - jl-gg jl
-      - - kg-gg kg
-        - jk-ww jk
-        - kk-mf kk
-        - tp-jl tp
-      - - kg-jk kg
-        - ww-gg ww
-        - kk-jl kk
+      - - kg-tp kg:W+R sgf:1992/1992-1-tparuszewski-kgiedrojc.sgf
+        - jk-mf jk:B+R sgf:1992/1992-1-jkraszek-mferenc.sgf
+        - ww-kk ww:B+R sgf:1992/1992-1-wwoskresinski-kkarczewski.sgf
+        - jl-gg jl:W+13.5 sgf:1992/1992-1-ggrygierzec-jlubos.sgf
+      - - kg-gg kg:B+? sgf:1992/1992-2-kgiedrojc-ggrygierzec.sgf
+        - jk-ww jk:W+? sgf:1992/1992-2-wwoskresinski-jkraszek.sgf
+        - kk-mf kk:W+? sgf:1992/1992-2-mferenc-kkarczewski.sgf
+        - tp-jl tp:B+? sgf:1992/1992-2-tparuszewski-jlubos.sgf
+      - - kg-jk kg:W+7.5 sgf:1992/1992-3-jkraszek-kgiedrojc.sgf
+        - ww-gg ww:W+19.5 sgf:1992/1992-3-ggrygierzec-wwoskresinski.sgf
+        - kk-jl kk:B+? sgf:1992/1992-3-kkarczewski-jlubos.sgf
         - tp-mf tp
-      - - kg-kk kg
-        - jk-jl jk
-        - ww-tp ww
+      - - kg-kk kg:B+? sgf:1992/1992-4-kgiedrojc-kkarczewski.sgf
+        - jk-jl jk:W+6.5 sgf:1992/1992-4-jlubos-jkraszek.sgf
+        - ww-tp ww:B+20.5 sgf:1992/1992-4-wwoskresinski-tparuszewski.sgf
         - gg-mf gg
-      - - kg-ww kg
-        - jk-gg jk
-        - kk-tp kk
+      - - kg-ww kg:W+R sgf:1992/1992-5-wwoskresinski-kgiedrojc.sgf
+        - jk-gg jk:W+? sgf:1992/1992-5-ggrygierzec-jkraszek.sgf
+        - kk-tp kk:W+26.5 sgf:1992/1992-5-tparuszewski-kkarczewski.sgf
         - jl-mf jl
       - - kg-mf kg
-        - jk-tp jk
-        - ww-jl ww
-        - gg-kk gg
-      - - kg-jl kg
-        - jk-kk jk
+        - jk-tp jk:B+R sgf:1992/1992-6-jkraszek-tparuszewski.sgf
+        - ww-jl ww:W+9.5 sgf:1992/1992-6-jlubos-wwoskresinski.sgf
+        - gg-kk gg:W+? sgf:1992/1992-6-kkarczewski-ggrygierzec.sgf
+      - - kg-jl kg:W+R sgf:1992/1992-7-jlubos-kgiedrojc.sgf
+        - jk-kk jk:B+R sgf:1992/1992-7-jkraszek-kkarczewski.sgf
         - ww-mf ww
-        - tp-gg tp
+        - tp-gg tp:B+0.5 sgf:1992/1992-7-tparuszewski-ggrygierzec.sgf
   - type: final
     date:
-    - 1993-03-02
-    - 1993-03-06
-    - 1993-03-16
+      - 1993-03-02
+      - 1993-03-06
+      - 1993-03-16
     requiredWins: 3
     includePrevious: true
     games:
