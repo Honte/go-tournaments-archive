@@ -21,34 +21,34 @@ stages:
       - sodos
       - direct
     rounds:
-      - - jk-ww jk
-        - ls-mf ls
-        - gie-rz gie
-        - rp-kk rp
-      - - jk-mf jk
-        - ls-ww ls
-        - gie-rp gie
-        - rz-kk rz
-      - - jk-kk jk
-        - ls-gie ls
-        - mf-rz mf
-        - rp-ww rp
-      - - jk-gie jk
-        - ls-kk ls
-        - mf-rp rp
-        - rz-ww rz
-      - - jk-rz jk
-        - ls-rp ls
-        - gie-ww gie
-        - mf-kk mf
-      - - jk-rp jk
-        - ls-rz ls
-        - gie-mf mf
-        - ww-kk ww
-      - - jk-ls jk
-        - gie-kk gie
-        - mf-ww ww
-        - rz-rp rz
+      - - jk-ww jk:B+R sgf:1989/1989-1-jkraszek-wwoskresinski.sgf
+        - ls-mf ls:B+R sgf:1989/1989-1-lsoldan-mferenc.sgf
+        - gie-rz gie:W+R sgf:1989/1989-1-rzablocki-kgiedrojc.sgf
+        - rp-kk rp:B+R sgf:1989/1989-1-rpozaroszczyk-kkarczewski.sgf
+      - - jk-mf jk:W+R sgf:1989/1989-2-mferenc-jkraszek.sgf
+        - ls-ww ls:W+13.5 sgf:1989/1989-2-wwoskresinski-lsoldan.sgf
+        - gie-rp gie:B+R sgf:1989/1989-2-kgiedrojc-rpozaroszczyk.sgf
+        - rz-kk rz:W+R sgf:1989/1989-2-kkarczewski-rzablocki.sgf
+      - - jk-kk jk:B+R sgf:1989/1989-3-jkraszek-kkarczewski.sgf
+        - ls-gie ls:B+24.5 sgf:1989/1989-3-lsoldan-kgiedrojc.sgf
+        - mf-rz mf:W+12.5 sgf:1989/1989-3-rzablocki-mferenc.sgf
+        - rp-ww rp:B+3.5 sgf:1989/1989-3-rpozaroszczyk-wwoskresinski.sgf
+      - - jk-gie jk:W+3.5 sgf:1989/1989-4-kgiedrojc-jkraszek.sgf
+        - ls-kk ls:W+28.5 sgf:1989/1989-4-kkarczewski-lsoldan.sgf
+        - mf-rp rp:W+9.5 sgf:1989/1989-4-mferenc-rpozaroszczyk.sgf
+        - rz-ww rz:W+6.5 sgf:1989/1989-4-wwoskresinski-rzablocki.sgf
+      - - jk-rz jk:B+R sgf:1989/1989-5-jkraszek-rzablocki.sgf
+        - ls-rp ls:B+R sgf:1989/1989-5-lsoldan-rpozaroszczyk.sgf
+        - gie-ww gie:W+R sgf:1989/1989-5-wwoskresinski-kgiedrojc.sgf
+        - mf-kk mf:B+10.5 sgf:1989/1989-5-mferenc-kkarczewski.sgf
+      - - jk-rp jk:W+R sgf:1989/1989-6-rpozaroszczyk-jkraszek.sgf
+        - ls-rz ls:W+R sgf:1989/1989-6-rzablocki-lsoldan.sgf
+        - gie-mf mf:W+R sgf:1989/1989-6-kgiedrojc-mferenc.sgf
+        - ww-kk ww:W+R sgf:1989/1989-6-kkarczewski-wwoskresinski.sgf
+      - - jk-ls jk:W+R sgf:1989/1989-7-lsoldan-jkraszek.sgf
+        - gie-kk gie:B+R sgf:1989/1989-7-kgiedrojc-kkarczewski.sgf
+        - mf-ww ww:W+R sgf:1989/1989-7-mferenc-wwoskresinski.sgf
+        - rz-rp rz:B+R sgf:1989/1989-7-rzablocki-rpozaroszczyk.sgf
   - type: final
     date: 1990-01-06 - 1990-01-07
     requiredWins: 3
