@@ -22,31 +22,31 @@ stages:
       - sodos
       - starting
     rounds:
-      - - ls-pc ls
-        - mb-kh mb
-        - kg-jk kg
-        - mr-jl mr
-      - - ls-mr ls
-        - mb-jk mb
-        - jl-pc jl
+      - - ls-pc ls:W+1.5 sgf:2004/2004-1-pcelejewski-lsoldan.sgf
+        - mb-kh mb:B+R sgf:2004/2004-1-khabu-mbazynski.sgf
+        - kg-jk kg:B+1.5 sgf:2004/2004-1-kgiedrojc-jkraszek.sgf
+        - mr-jl mr:B+R sgf:2004/2004-1-mrams-jlubos.sgf
+      - - ls-mr ls:B+R sgf:2004/2004-2-lsoldan-mrams.sgf
+        - mb-jk mb:W+R sgf:2004/2004-2-jkraszek-mbazynski.sgf
+        - jl-pc jl:B+3.5 sgf:2004/2004-2-jlubos-pcelejewski.sgf
         - kh-kg kh
-      - - ls-mb ls
-        - jk-mr jk
-        - kg-jl kg
-        - kh-pc kh
-      - - ls-kg ls
-        - jk-pc jk
-        - jl-mb jl
-        - kh-mr kh
-      - - ls-jk ls
-        - mb-mr mb
-        - jl-kh jl
-        - pc-kg pc
-      - - ls-kh ls
-        - mb-pc mb
+      - - ls-mb ls:W+R sgf:2004/2004-3-mbazynski-lsoldan.sgf
+        - jk-mr jk:W+32.5 sgf:2004/2004-3-mrams-jkraszek.sgf
+        - kg-jl kg:B+R sgf:2004/2004-3-kgiedrojc-jlubos.sgf
+        - kh-pc kh:W+R sgf:2004/2004-3-pcelejewski-khabu.sgf
+      - - ls-kg ls:B+2.5 sgf:2004/2004-4-lsoldan-kgiedrojc.sgf
+        - jk-pc jk:B+R sgf:2004/2004-4-jkraszek-pcelejewski.sgf
+        - jl-mb jl:B+R sgf:2004/2004-4-jlubos-mbazynski.sgf
+        - kh-mr kh:B+14.5 sgf:2004/2004-4-khabu-mrams.sgf
+      - - ls-jk ls:B+6.5 sgf:2004/2004-5-lsoldan-jkraszek.sgf
+        - mb-mr mb:B+6.5 sgf:2004/2004-5-mrams-mbazynski.sgf
+        - jl-kh jl:B+7.5 sgf:2004/2004-5-jlubos-khabu.sgf
+        - pc-kg pc:W+0.5 sgf:2004/2004-5-kgiedrojc-pcelejewski.sgf
+      - - ls-kh ls:W+R sgf:2004/2004-6-khabu-lsoldan.sgf
+        - mb-pc mb:W+R sgf:2004/2004-6-mbazynski-pcelejewski.sgf
         - jk-jl jk
-        - kg-mr kg
-      - - ls-jl ls
-        - mb-kg mb
-        - jk-kh jk
-        - mr-pc mr
+        - kg-mr kg:W+R sgf:2004/2004-6-mrams-kgiedrojc.sgf
+      - - ls-jl ls:B+R sgf:2004/2004-7-lsoldan-jlubos.sgf
+        - mb-kg mb:W+R sgf:2004/2004-7-mbazynski-kgiedrojc.sgf
+        - jk-kh jk:W+R sgf:2004/2004-7-khabu-jkraszek.sgf
+        - mr-pc mr:B+5.5 sgf:2004/2004-7-mrams-pcelejewski.sgf
