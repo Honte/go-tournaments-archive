@@ -22,31 +22,31 @@ stages:
       - sodos
       - starting
     rounds:
-      - - kh-kg kh
+      - - kh-kg kh:B+R sgf:2005/2005-1-khabu-kgiedrojc.sgf
         - ls-mp ls:W+24.5 sgf:2005/2005-1-lsoldan-mparkola.sgf
-        - mb-mr mb
-        - jl-dg jl
-      - - kh-jl kh:W+? sgf:2005/2005-2-khabu-jlubos.sgf
-        - ls-mr ls
-        - mb-mp mb
-        - dg-kg dg
-      - - kh-mb kh:B+? sgf:2005/2005-3-mbazynski-khabu.sgf
-        - ls-dg ls
-        - kg-mr kg
-        - jl-mp jl
+        - mb-mr mb:W+13.5 sgf:2005/2005-1-mrams-mbazynski.sgf
+        - jl-dg jl:W+8.5 sgf:2005/2005-1-dgogosz-jlubos.sgf
+      - - kh-jl kh:W+R sgf:2005/2005-2-khabu-jlubos.sgf
+        - ls-mr ls:B+4.5 sgf:2005/2005-2-lsoldan-mrams.sgf
+        - mb-mp mb:B+R sgf:2005/2005-2-mbazynski-mparkola.sgf
+        - dg-kg dg:W+42.5 sgf:2005/2005-2-kgiedrojc-dgogosz.sgf
+      - - kh-mb kh:B+R sgf:2005/2005-3-mbazynski-khabu.sgf
+        - ls-dg ls:W+R sgf:2005/2005-3-dgogosz-lsoldan.sgf
+        - kg-mr kg:W+29 sgf:2005/2005-3-mrams-kgiedrojc.sgf
+        - jl-mp jl:W+4.5 sgf:2005/2005-3-mparkola-jlubos.sgf
       - - kh-ls kh:W+19.5 sgf:2005/2005-4-khabu-lsoldan.sgf
-        - mb-dg mb
-        - kg-mp kg
-        - mr-jl mr
-      - - kh-mp kh
-        - mb-jl mb
-        - kg-ls kg
-        - mr-dg mr:B+? sgf:2005/2005-5-mrams-dgogosz.sgf rotate:180
-      - - kh-mr kh
+        - mb-dg mb:B+R sgf:2005/2005-4-mbazynski-dgogosz.sgf
+        - kg-mp kg:B+R sgf:2005/2005-4-kgiedrojc-mparkola.sgf
+        - mr-jl mr:W+0.5 sgf:2005/2005-4-jlubos-mrams.sgf
+      - - kh-mp kh:W+R sgf:2005/2005-5-mparkola-khabu.sgf
+        - mb-jl mb:W+6.5 sgf:2005/2005-5-jlubos-mbazynski.sgf
+        - kg-ls kg:B+28.5 sgf:2005/2005-5-kgiedrojc-lsoldan.sgf
+        - mr-dg mr:B+2.5 sgf:2005/2005-5-mrams-dgogosz.sgf rotate:180
+      - - kh-mr kh:B+R sgf:2005/2005-6-khabu-mrams.sgf
         - ls-jl ls:B+R sgf:2005/2005-6-lsoldan-jlubos.sgf rotate:180
-        - mb-kg mb
-        - dg-mp dg
-      - - kh-dg kh
+        - mb-kg mb:B+2.5 sgf:2005/2005-6-mbazynski-kgiedrojc.sgf
+        - dg-mp dg:B+R sgf:2005/2005-6-dgogosz-mparkola.sgf
+      - - kh-dg kh:W+R sgf:2005/2005-7-dgogosz-khabu.sgf
         - ls-mb ls:W+R sgf:2005/2005-7-mbazynski-lsoldan.sgf
-        - kg-jl kg
-        - mr-mp mr
+        - kg-jl kg:B+R sgf:2005/2005-7-kgiedrojc-jlubos.sgf
+        - mr-mp mr:W+R sgf:2005/2005-7-mparkola-mrams.sgf
