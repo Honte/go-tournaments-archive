@@ -1,0 +1,15 @@
+; TC[T060114D]
+; CL[A]
+; EV[Dutch Female Championship]
+; PC[NL, Amstelveen]
+; DT[2006-01-14,2006-01-15]
+; HA[h9]
+; KM[6.5]
+; TM[]
+;
+  1 Pleit Karen             2k NL Utre  4 4  11   8  6+/w 2-/w 3+/b 5+/w 4+/b |10462485
+  2 Leeuwen Anne_van        3k NL Eind  3 3  12   8  5-/w 1+/b 4+/w 3-/b 6+/w |13701479
+  3 Buntsma Els             2k NL Utre  3 3  12   5  4-/w 6+/b 1-/w 2+/w 5+/b |10250845
+  4 Putter Annemarie_de     2k NL Amvn  3 3  12   5  3+/b 5+/w 2-/b 6+/b 1-/w |10613273
+  5 Roelofs Yvonne          3k NL Utre  1 1  14   3  2+/b 4-/b 6-/w 1-/b 3-/w |10725792
+  6 Jager Celine            5k NL Amst  1 1  14   1  1-/b 3-/w 5+/b 4-/w 2-/b |14250445

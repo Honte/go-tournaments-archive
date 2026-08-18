@@ -1,0 +1,15 @@
+name: 23rd Dutch Women Championship
+stages:
+  - type: tournament
+    name: Championship
+    file: nld2017.txt
+    notes: 6th round is playoff for 1st place
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - null
+      - sodos
+    breakers:
+      - wins
+    findSharedPlaces: false

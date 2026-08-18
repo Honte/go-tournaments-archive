@@ -1,0 +1,17 @@
+name: 19th Dutch Women Championship
+stages:
+  - type: tournament
+    name: Championship
+    file: nld2013.txt
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - wins
+      - sos
+      - sodos
+    findSharedPlaces: true
+    games:
+      - 1-5 1:B+R round:5 sgf:2013/5-MarikaDubiel-MarianneDiederen.sgf

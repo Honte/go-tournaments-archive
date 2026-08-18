@@ -1,0 +1,17 @@
+name: 21st Dutch Women Championship
+stages:
+  - type: tournament
+    name: Championship
+    file: nld2015.txt
+    notes: Places 1-3 decided by playoff
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sodos
+      - playoff
+    breakers:
+      - wins
+      - playoff
+      - sodos
+    findSharedPlaces: true

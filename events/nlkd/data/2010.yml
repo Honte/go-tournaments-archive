@@ -1,0 +1,14 @@
+name: 16th Dutch Women Championship
+stages:
+  - type: tournament
+    name: Championship
+    file: nld2010.txt
+    scoringColumns:
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - wins
+      - sos
+      - sodos
+    findSharedPlaces: true

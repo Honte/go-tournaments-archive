@@ -1,0 +1,16 @@
+; TC[T180127C]
+; CL[A]
+; EV[NK Dames  2018 (Dutch Female Championship)]
+; PC[NL, EGCC Amstelveen]
+; DT[2018-01-27,2018-01-28]
+; HA[h9]
+; KM[6.5]
+; TM[75]
+; CM[ (submitted by NitramF)]
+;.
+   1 Dubiel Marika                  2d NL  Amvn    30     5   135    10    6+/w    5+/b    4+/w    3+/b    2+/b |14301617
+   2 Kleczar Justyna                1k PL  Amst    28     3   137     5    5+/b    3+/b    6+/w    4-/b    1-/w |13886169
+   3 Havik Tamara                   3k NL  DHaa    28     3   137     4    4+/b    2-/w    5+/w    1-/w    6+/b |14733961
+   4 Diederen Marianne              2k NL  Amst    27     2   138     4    3-/w    6+/b    1-/b    2+/w    5-/b |10598412
+   5 Buntsma Els                    3k NL  Vleu    26     1   139     2    2-/w    1-/w    3-/b    6-/b    4+/w |10250845
+   6 Beer Nicole_de                 6k NL  Eind    26     1   139     1    1-/b    4-/w    2-/b    5+/w    3-/w |16233217

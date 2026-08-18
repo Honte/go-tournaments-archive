@@ -1,0 +1,22 @@
+; TC[T100130B]
+; CL[A]
+; EV[Dutch Female Championship]
+; PC[NL, Amstelveen]
+; DT[2010-01-30,2010-01-31]
+; HA[h9]
+; KM[6.5]
+; TM[82.5]
+; CM[ (submitted by Herman Hiddema)]
+;.
+ 1 Leeuwen Anne_van         1k NL  Leid  7+      6+      5+      2+      4+      5    14   14    |13701479
+ 2 Pleit Karen              1k NL  Arnh  12+     10+     8+      1-      3+      4    11   6     |10462485
+ 3 Diederen Marianne        1k NL  Amst  4+      8-      7+      6+      2-      3    13   7     |10598412
+ 4 Vernimmen Suzanne        2k NL  Gron  3-      11+     6+      8+      1-      3    13   5     |14837097
+ 5 Havik Tamara             5k NL  DHaa  10-     12+     1-      9+      7+      3    10   4     |14733961
+ 6 Buntsma Els              3k NL  Arnh  9+      1-      4-      3-      11+     2    14   3     |10250845
+ 7 Visscher-Mobach Mirjam   3k NL  Zeis  1-      9+      3-      11+     5-      2    14   3     |14062136
+ 8 Roelofs Yvonne           3k NL  Woer  11+     3+      2-      4-      9-      2    13   4     |10725792
+ 9 Overbeek Marieke         4k NL  Arnh  6-      7-      0+!     5-      8+      2    10   3     |13062368
+10 Putter Annemarie_de      3k NL  Utre  5+      2-      0-!     0=      0=      1    11   3     |10613273
+11 Jager Celine             2k NL  Amst  8-      4-      0+!     7-      6-      1    9    0     |14250445
+12 Nystrom Maria            7k SE  Umea  2-      5-      0-!     0=      0=      0    8    0     |14325784

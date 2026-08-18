@@ -1,0 +1,17 @@
+; TC[T070127D]
+; CL[A]
+; EV[Dutch Female Championship]
+; PC[NL, Amstelveen]
+; DT[2007-01-27,2007-01-28]
+; HA[h9]
+; KM[6.5]
+; TM[]
+;
+  1 Leeuwen Anne_van        2k NL Leid  5 5  12  12  5+/b 2+/w 3+/w 7+/b 4+/w |13701479
+  2 Buntsma Els             2k NL Utre  4 4  14   9  6+/b 1-/b 4+/w 5+/b 3+/w |10250845
+  3 Pleit Karen             2k NL Utre  3 3  13   4  4+/b 7+/w 1-/b 8+/w 2-/b |10462485
+  4 Jager Celine            4k NL Amst  2 2  15   3  3-/w 8+/b 2-/b 6+/w 1-/b |14250445
+  5 Overbeek Marieke        8k NL Arnh  2 2  13   3  1-/w 6+/b 7+/b 2-/w 8-/b |13062368
+  6 Kuriene Laimute         3k LT Kaun  2 2  10   2  2-/w 5-/w 8+/b 4-/b 7+/w |10586092
+  7 Roelofs Yvonne          3k NL Alph  1 1  13   1  8+/w 3-/b 5-/w 1-/w 6-/b |10725792
+  8 Visscher-Mobach Mirjam  7k NL Utre  1 1  10   2  7-/b 4-/w 6-/w 3-/b 5+/w |14062136

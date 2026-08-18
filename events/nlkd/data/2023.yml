@@ -1,0 +1,13 @@
+name: 28th Dutch Women Championship
+stages:
+  - type: tournament
+    name: Championship
+    file: nld2023.txt
+    scoringColumns:
+      - mms
+      - wins
+      - null
+      - sos
+    breakers:
+      - wins
+    findSharedPlaces: true

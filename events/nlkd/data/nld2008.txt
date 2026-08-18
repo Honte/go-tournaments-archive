@@ -1,0 +1,18 @@
+; TC[T080126B]
+; CL[A]
+; EV[Dutch Female Championship 2008]
+; PC[NL, Amstelveen]
+; DT[2008-01-26,2008-01-27]
+; HA[h9]
+; KM[6.5]
+; TM[110]
+;
+  1 Leeuwen Anne_van        1k NL Leid 5 5 16 16  0+    4+/b0 3+/w0 2+/b0 5+/w0  |13701479
+  2 Pleit Karen             2k NL Utre 3 3 16  8  4+/w0 7+/w0 6+/b0 1-/w0 3-/b0  |10462485
+  3 Roelofs Yvonne          3k NL Alph 3 3 14  7  7-/b0 9+/w0 1-/b0 6+/w0 2+/w0  |10725792
+  4 Diederen Marianne       1k NL Amst 3 3 14  6  2-/b0 1-/w0 0+    8+/w0 7+/b0  |10598412
+  5 Overbeek Marieke        4k NL Arnh 3 3 13  5  8+/w0 6-/b0 9+/w0 7+/b0 1-/b0  |13062368
+  6 Buntsma Els             2k NL Utre 3 3 12  6  9+/b0 5+/w0 2-/w0 3-/b0 0+     |10250845
+  7 Jager Celine            3k NL Amst 2 2 14  5  3+/w0 2-/b0 8+/b0 5-/w0 4-/w0  |14250445
+  8 Visscher-Mobach Mirjam  5k NL Utre 2 2 10  2  5-/b0 0+    7-/w0 4-/b0 9+/b0  |14062136
+  9 Vernimmen Suzanne       6k NL Gron 1 1 11  0  6-/w0 3-/b0 5-/b0 0+    8-/w0  |14837097

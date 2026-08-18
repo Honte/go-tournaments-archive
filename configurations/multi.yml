@@ -29,6 +29,8 @@ events:
     prefix: hrgc
   - id: nlk
     prefix: nlk
+  - id: nlkd
+    prefix: nlkd
   - id: wgl
     prefix: wgl
 config:

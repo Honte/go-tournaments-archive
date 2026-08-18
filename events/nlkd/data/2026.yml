@@ -1,0 +1,31 @@
+name: 31st Dutch Women Championship
+top:
+- Tamara Au-Havik
+- Yvonne Roelofs
+- Marianne Diederen
+stages:
+  - type: tournament
+    name: Championship
+    file: nld2026.txt
+    promoted: 3
+    scoringColumns:
+      - wins
+      - null
+      - sos
+      - sodos
+    breakers:
+      - wins
+      - sos
+      - sodos
+    findSharedPlaces: true
+  - type: tournament
+    file: nld2026playoff.txt
+    name: Playoff
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: true

@@ -1,0 +1,18 @@
+; TC[T990116F]
+; DT[1999-01-16,1999-01-17]
+; CL[A]
+; EV[Dutch Women Championship 1999]
+; PC[NL,Amsterdam]
+; KM[5.5]
+; TM[90]
+; HA[h9]
+;                    Dutch Women Championship, Amsterdam 1999
+;                             January 16 - 17, 1999
+;
+;Pl     Name             Grade  Club   MM S SOS SDOS  1.   2.   3.   4.   5.
+  1 Frehe Renee             1d NL Nijm  5 5   0   10 0 6+   2+   3+   4+   5+  |10313248
+  2 Pleit Karen             1k NL Utre  3 3   0   5  0 5+   1-   6+   3+   4-  |10462485
+  3 Roelofs Yvonne          3k NL Alph  2 2   0   4  1 4+   5+   1-   2-   6-  |10725792
+  4 Hollmann Kirsten        3k NL Eind  2 2   0   4  0 3-   6+   5-   1-   2+  |10486509
+  5 Diederen Marianne       1k NL Amst  2 2   0   3  0 2-   3-   4+   6+   1-  |10598412
+  6 Buntsma Els             2k NL Amvn  1 1   0   0  0 1-   4-   2-   5-   3+  |10250845

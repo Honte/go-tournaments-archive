@@ -1,0 +1,16 @@
+name: 5th Dutch Women Championship
+stages:
+  - type: tournament
+    name: Championship
+    file: nld1999.txt
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sodos
+      - direct
+    breakers:
+      - wins
+      - sodos
+      - direct
+    findSharedPlaces: true

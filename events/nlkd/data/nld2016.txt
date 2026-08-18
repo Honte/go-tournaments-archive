@@ -1,0 +1,16 @@
+; TC[T160130D]
+; CL[A]
+; EV[Dutch Female Championship]
+; PC[NL, Amstelveen]
+; DT[2016-01-30,2016-01-31]
+; HA[h9]
+; KM[6.5]
+; TM[75]
+; CM[ (submitted by Herman Hiddema)]
+;.
+1 Dubiel Marika         2d NL  Amvn  5    5    10   10   5+/b   4+/w   3+/b   6+/w   2+/b    |14301617
+2 Havik Tamara          3k NL  DHaa  3    3    12   6    4+/w   6-/w   5+/b   3+/b   1-/w    |14733961
+3 Pleit Karen           2k NL  Arnh  2    2    13   3    6+/b   5+/w   1-/w   2-/w   4-/b    |10462485
+4 Putter Annemarie_de   2k NL  Utre  2    2    13   3    2-/b   1-/b   6+/w   5-/w   3+/w    |10613273
+5 Boelens Anne          3k NL  Alph  2    2    13   3    1-/w   3-/b   2-/w   4+/b   6+/b    |17274246
+6 Buntsma Els           3k NL  Arnh  1    1    14   3    3-/w   2+/b   4-/b   1-/b   5-/w    |10250845

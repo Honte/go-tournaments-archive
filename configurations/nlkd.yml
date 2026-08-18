@@ -1,0 +1,13 @@
+events:
+  - id: nlkd
+basePath: /nlkd
+config:
+  generateSvgs: false
+  generatePngs: false
+  generateJpgs: true
+  generateZips: true
+  links:
+    - website: https://www.gobond.nl/
+      title: Dutch Go Association
+      tooltip: Visit Dutch Go Association website
+      place: top

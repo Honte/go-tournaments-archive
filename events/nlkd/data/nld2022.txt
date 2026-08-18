@@ -1,0 +1,15 @@
+; TC[T220129E]
+; CL[B]
+; EV[Dutch Ladies Championship 2022]
+; PC[NL, OGS]
+; DT[2022-01-29,2022-01-30]
+; HA[h9]
+; KM[6.5]
+; TM[60]
+; CM[Online due to Covid, so I selected class B per the exception on the front page. (submitted by Niek_vD)]
+;.
+;
+1 Dubiel Marika     2d NL  Amvn  32   3    32   90     2+/w   4+/b   3+/w    |14301617
+2 Au-Havik Tamara   3k NL  DHaa  31   2    31   91     1-/b   3+/b   4+/w    |14733961
+3 Buntsma Els       3k NL  Vleu  30   1    30   92     4+/b   2-/w   1-/b    |10250845
+4 Beer Nicole_de    6k NL  Eind  29   0    29   93     3-/w   1-/w   2-/b    |16233217

@@ -1,0 +1,17 @@
+{
+  "site": {
+    "name": "Dutch Women Go Championships Archive",
+    "acronym": "NLKD",
+    "description": "Archive of all Dutch Women Championships tournaments",
+    "yearDescription": "Results of NLKD %{0}",
+    "allTimeStatsDescription": "All-time statistics of all Dutch Women Go Championships participants",
+    "playerStatsDescription": "Participation statistics of %{0} in all Dutch Women Go Championships events"
+  },
+  "details": {
+    "goToWebsite": "Go to NLKD %{0} website"
+  },
+  "winners": {
+    "title": "Medalists of Dutch Women Go Championships",
+    "first": "Dutch Women Champion"
+  }
+}
