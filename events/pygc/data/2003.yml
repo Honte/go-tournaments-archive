@@ -16,3 +16,4 @@ stages:
     findSharedPlaces: true
     games:
       - 2-1 1:W+? round:3 sgf:2003/3-MroczekKrzysztof-CelejewskiPawel.sgf
+      - 3-1 1:W+? round:4 sgf:2003/4-PawelCelejewski-DominikGogosz.sgf
