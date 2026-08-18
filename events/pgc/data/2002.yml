@@ -22,31 +22,31 @@ stages:
       - sodos
       - starting
     rounds:
-      - - ls-gs ls
-        - jk-rp jk
-        - jl-rz jl
+      - - ls-gs ls:W+19.5 sgf:2002/2002-1-gszymborski-lsoldan.sgf
+        - jk-rp jk:W+R sgf:2002/2002-1-rpszonka-jkraszek.sgf
+        - jl-rz jl:W+R sgf:2002/2002-1-rzablocki-jlubos.sgf
         - kg-ww kg
-      - - ls-rz ls
-        - jk-ww jk
-        - rp-kg rp
-        - jl-gs jl
-      - - jk-gs jk
-        - rp-ls rp
+      - - ls-rz ls:B+R sgf:2002/2002-2-lsoldan-rzablocki.sgf
+        - jk-ww jk:B+R sgf:2002/2002-2-jkraszek-wwieczorek.sgf
+        - rp-kg rp:W+37.5 sgf:2002/2002-2-kgiedrojc-rpszonka.sgf
+        - jl-gs jl:B+R sgf:2002/2002-2-jlubos-gszymborski.sgf
+      - - jk-gs jk:W+27.5 sgf:2002/2002-3-gszymborski-jkraszek.sgf
+        - rp-ls rp:B+4.5 sgf:2002/2002-3-rpszonka-lsoldan.sgf
         - jl-ww jl
         - rz-kg rz
-      - - ls-ww ls
-        - jk-rz jk
-        - jl-rp jl
-        - kg-gs kg
-      - - ls-kg ls
-        - jk-jl jk
-        - rp-rz rp
-        - ww-gs ww
-      - - ls-jk ls
+      - - ls-ww ls:B+12.5 sgf:2002/2002-4-lsoldan-wwieczorek.sgf
+        - jk-rz jk:B+R sgf:2002/2002-4-jkraszek-rzablocki.sgf
+        - jl-rp jl:B+10.5 sgf:2002/2002-4-jlubos-rpszonka.sgf
+        - kg-gs kg:B+27.5 sgf:2002/2002-4-kgiedrojc-gszymborski.sgf
+      - - ls-kg ls:W+R sgf:2002/2002-5-kgiedrojc-lsoldan.sgf
+        - jk-jl jk:B+R sgf:2002/2002-5-jkraszek-jlubos.sgf
+        - rp-rz rp:W+R sgf:2002/2002-5-rzablocki-rpszonka.sgf
+        - ww-gs ww:W+R sgf:2002/2002-5-gszymborski-wwieczorek.sgf
+      - - ls-jk ls:B+R sgf:2002/2002-6-lsoldan-jkraszek.sgf
         - rp-gs rp
-        - kg-jl kg
-        - ww-rz ww
-      - - ls-jl ls
-        - jk-kg jk
-        - rp-ww rp
-        - gs-rz gs
+        - kg-jl kg:W+5.5 sgf:2002/2002-6-jlubos-kgiedrojc.sgf
+        - ww-rz ww:B+R sgf:2002/2002-6-wwieczorek-rzablocki.sgf
+      - - ls-jl ls:W+7.5 sgf:2002/2002-7-jlubos-lsoldan.sgf
+        - jk-kg jk:W+R sgf:2002/2002-7-kgiedrojc-jkraszek.sgf
+        - rp-ww rp:B+R sgf:2002/2002-7-rpszonka-wwieczorek.sgf
+        - gs-rz gs:B+4.5 sgf:2002/2002-7-gszymborski-rzablocki.sgf
