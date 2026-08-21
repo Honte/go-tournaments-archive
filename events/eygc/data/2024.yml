@@ -16,7 +16,7 @@ stages:
       - sos
       - sosos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
     collapsed: true
     games:
@@ -40,7 +40,7 @@ stages:
       - sos
       - sosos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
     collapsed: true
     games:
@@ -73,4 +73,10 @@ stages:
       - 1-7 1:B+? round:6 sgf:2024/u21/6-BenoitRobichon-AntoniaStanciu.sgf ogs:https://online-go.com/review/1240994
       - 2-1 2:B+2.5 round:3 sgf:2024/u21/3-ArvedPittner-BenoitRobichon.sgf ogs:https://online-go.com/review/1240229
       - 2-3 3:W+R round:4 sgf:2024/u21/4-ArvedPittner-DenisDobranis.sgf ogs:https://online-go.com/review/1240379
+      - 2-8 2:B+R round:6 sgf:2024/u21/6-ArvedPittner-MariannaSzychowiak.sgf
+      - 3-8 3:B+R round:2 sgf:2024/u21/2-DenisDobranis-MariannaSzychowiak.sgf
       - 6-1 1:W+R round:5 sgf:2024/u21/5-LucasHofmann-BenoitRobichon.sgf ogs:https://online-go.com/review/1240847
+      - 6-8 6:B+R round:4 sgf:2024/u21/4-LucasHofmann-MariannaSzychowiak.sgf
+      - 8-4 4:W+R round:5 sgf:2024/u21/5-MariannaSzychowiak-NicolasRobichon.sgf
+      - 8-5 5:W+? round:1 sgf:2024/u21/1-MariannaSzychowiak-OndrejKralik.sgf
+      - 8-7 7:W+? round:3 sgf:2024/u21/3-MariannaSzychowiak-AntoniaStanciu.sgf
