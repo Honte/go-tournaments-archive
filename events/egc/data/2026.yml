@@ -49,6 +49,7 @@ stages:
       - 15-4 4:W+R round:4 sgf:2026/ec/4-DavideBernardis-DenisDobranis.sgf ogs:https://online-go.com/review/1745241
       - 16-13 13:W+0.5 round:1 sgf:2026/ec/1-StjepanMedak-UlasOren.sgf ogs:https://online-go.com/review/1743328
       - 18-1 1:W+R round:2 sgf:2026/ec/2-FlorentLabouret-AndriiKravets.sgf ogs:https://online-go.com/review/1743917
+      - 18-24 18:B+R round:1 sgf:2026/ec/1-FlorentLabouret-BartikDach.sgf
       - 19-11 11:W+0.5 round:1 sgf:2026/ec/1-BendeBarcza-MatiasPankoke.sgf
       - 20-4 4:W+15.5 round:1 sgf:2026/ec/1-DmytroBogatskyy-DenisDobranis.sgf
       - 22-10 10:W+2.5 round:3 sgf:2026/ec/3-JanKomin-RemiCampagnie.sgf ogs:https://online-go.com/review/1744515
