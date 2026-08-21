@@ -1,0 +1,43 @@
+name: 33rd Czech Championship
+website: https://goweb.cz/2025/09/mistrovstvi-republiky-2025/
+stages:
+  - type: tournament
+    name: Championship
+    file: cz2025.txt
+    scoringColumns:
+      - wins
+      - null
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:3 sgf:2025/3-LukasPodpera-BartikDach.sgf ogs:https://online-go.com/review/1544611
+      - 1-3 1:B+R round:7 sgf:2025/7-LukasPodpera-ZbynekDach.sgf ogs:https://online-go.com/review/1545847
+      - 1-4 1:B+R round:5 sgf:2025/5-LukasPodpera-JanKomin.sgf ogs:https://online-go.com/review/1545258
+      - 1-8 1:B+44.5 round:1 sgf:2025/1-LukasPodpera-VladanPecha.sgf
+      - 2-3 2:B+R round:5 sgf:2025/5-BartikDach-ZbynekDach.sgf ogs:https://online-go.com/review/1545259
+      - 2-7 2:B+R round:7 sgf:2025/7-BartikDach-JanAdamek.sgf ogs:https://online-go.com/review/1545839
+      - 2-8 2:B+? round:2 sgf:2025/2-BartikDach-VladanPecha.sgf
+      - 3-4 3:B+0.5 round:6 sgf:2025/6-ZbynekDach-JanKomin.sgf ogs:https://online-go.com/review/1545452
+      - 3-7 3:B+R round:2 sgf:2025/2-ZbynekDach-JanAdamek.sgf ogs:https://online-go.com/review/1544185
+      - 3-8 3:B+28.5 round:4 sgf:2025/4-ZbynekDach-VladanPecha.sgf ogs:https://online-go.com/review/1544768
+      - 4-2 2:W+13.5 round:4 sgf:2025/4-JanKomin-BartikDach.sgf ogs:https://online-go.com/review/1544766
+      - 4-5 4:B+7.5 round:7 sgf:2025/7-JanKomin-MichalNemcok.sgf ogs:https://online-go.com/review/1545848
+      - 4-6 4:B+R round:2 sgf:2025/2-JanKomin-FrantisekCaha.sgf ogs:https://online-go.com/review/1544210
+      - 5-1 1:W+R round:2 sgf:2025/2-MichalNemcok-LukasPodpera.sgf ogs:https://online-go.com/review/1544212
+      - 5-2 5:B+R round:6 sgf:2025/6-MichalNemcok-BartikDach.sgf ogs:https://online-go.com/review/1545443
+      - 5-3 3:W+2.5 round:1 sgf:2025/1-MichalNemcok-ZbynekDach.sgf ogs:https://online-go.com/review/1544055
+      - 5-6 6:W+9.5 round:4 sgf:2025/4-MichalNemcok-FrantisekCaha.sgf ogs:https://online-go.com/review/1544769
+      - 6-1 1:W+16.5 round:6 sgf:2025/6-FrantisekCaha-LukasPodpera.sgf ogs:https://online-go.com/review/1545451
+      - 6-2 2:W+4.5 round:1 sgf:2025/1-FrantisekCaha-BartikDach.sgf ogs:https://online-go.com/review/1544049
+      - 6-3 3:W+12.5 round:3 sgf:2025/3-FrantisekCaha-ZbynekDach.sgf ogs:https://online-go.com/review/1544615
+      - 6-7 6:B+20.5 round:5 sgf:2025/5-FrantisekCaha-JanAdamek.sgf ogs:https://online-go.com/review/1545254
+      - 7-1 1:W+R round:4 sgf:2025/4-JanAdamek-LukasPodpera.sgf
+      - 7-4 4:W+R round:1 sgf:2025/1-JanAdamek-JanKomin.sgf ogs:https://online-go.com/review/1544052
+      - 7-5 5:W+R round:3 sgf:2025/3-JanAdamek-MichalNemcok.sgf
+      - 7-8 7:B+11.5 round:6 sgf:2025/6-JanAdamek-VladanPecha.sgf
+      - 8-4 4:W+R round:3 sgf:2025/3-VladanPecha-JanKomin.sgf ogs:https://online-go.com/review/1544612
+      - 8-5 5:W+33.5 round:5 sgf:2025/5-VladanPecha-MichalNemcok.sgf
+      - 8-6 6:W+R round:7 sgf:2025/7-VladanPecha-FrantisekCaha.sgf

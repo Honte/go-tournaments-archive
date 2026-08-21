@@ -1,0 +1,43 @@
+name: 27th Czech Championship
+website: https://goweb.cz/2019/07/mistrovstvirepubliky2019/
+stages:
+  - type: tournament
+    name: Championship
+    file: cz2019.txt
+    scoringColumns:
+      - wins
+      - null
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:7 sgf:2019/7-JanHora-OndrejKruml.sgf ogs:https://online-go.com/review/401905
+      - 1-5 1:B+T round:5 sgf:2019/5-JanHora-OndrejKachyna.sgf
+      - 1-8 1:B+R round:2 sgf:2019/2-JanHora-TristanDefer.sgf
+      - 2-4 2:B+2.5 round:3 sgf:2019/3-OndrejKruml-LukasPodpera.sgf
+      - 2-5 2:B+R round:1 sgf:2019/1-OndrejKruml-OndrejKachyna.sgf
+      - 2-6 2:B+T round:6 sgf:2019/6-OndrejKruml-PetrCipra.sgf
+      - 2-7 2:B+R round:4 sgf:2019/4-OndrejKruml-AdrianaTomsu.sgf
+      - 3-1 3:B+3.5 round:6 sgf:2019/6-JanProkop-JanHora.sgf
+      - 3-2 2:W+R round:2 sgf:2019/2-JanProkop-OndrejKruml.sgf
+      - 3-4 4:W+8.5 round:1 sgf:2019/1-JanProkop-LukasPodpera.sgf
+      - 3-8 3:B+R round:4 sgf:2019/4-JanProkop-TristanDefer.sgf
+      - 4-1 1:W+0.5 round:4 sgf:2019/4-LukasPodpera-JanHora.sgf
+      - 4-5 4:B+R round:6 sgf:2019/6-LukasPodpera-OndrejKachyna.sgf
+      - 4-6 4:B+R round:2 sgf:2019/2-LukasPodpera-PetrCipra.sgf
+      - 5-3 3:W+T round:7 sgf:2019/7-OndrejKachyna-JanProkop.sgf
+      - 5-6 5:B+R round:4 sgf:2019/4-OndrejKachyna-PetrCipra.sgf
+      - 5-7 5:B+R round:2 sgf:2019/2-OndrejKachyna-AdrianaTomsu.sgf
+      - 6-1 1:W+R round:3 sgf:2019/3-PetrCipra-JanHora.sgf
+      - 6-3 3:W+T round:5 sgf:2019/5-PetrCipra-JanProkop.sgf
+      - 6-7 6:B+R round:7 sgf:2019/7-PetrCipra-AdrianaTomsu.sgf
+      - 7-1 1:W+R round:1 sgf:2019/1-AdrianaTomsu-JanHora.sgf
+      - 7-3 3:W+R round:3 sgf:2019/3-AdrianaTomsu-JanProkop.sgf
+      - 7-4 4:W+R round:5 sgf:2019/5-AdrianaTomsu-LukasPodpera.sgf
+      - 7-8 7:B+1.5 round:6 sgf:2019/6-AdrianaTomsu-TristanDefer.sgf
+      - 8-2 2:W+R round:5 sgf:2019/5-TristanDefer-OndrejKruml.sgf
+      - 8-4 4:W+R round:7 sgf:2019/7-TristanDefer-LukasPodpera.sgf
+      - 8-5 5:W+17.5 round:3 sgf:2019/3-TristanDefer-OndrejKachyna.sgf
+      - 8-6 6:W+R round:1 sgf:2019/1-TristanDefer-PetrCipra.sgf

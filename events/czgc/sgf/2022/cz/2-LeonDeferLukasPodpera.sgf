@@ -1,0 +1,11 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]AP[CGoban:3]SZ[19]GM[1]RO[2]PB[Leon Defer]PW[Lukáš Podpěra]
+KM[6.5]RE[W+R]MULTIGOGM[1]
+;B[dp];W[pq];B[dd];W[pd];B[po];W[qo];B[qn];W[qp];B[pm];W[on];B[oo];W[rn];B[oq];W[pn]
+;B[qm];W[no];B[op];W[nn];B[mp];W[ok];B[pk];W[pj];B[qj];W[pi];B[qi];W[qh];B[ol];W[qk]
+;B[rk];W[pl];B[ql];W[pk];B[rm];W[nl];B[ro];W[rp];B[sn];W[or];B[nr];W[pr];B[om];W[mk]
+;B[jp];W[ko];B[kp];W[rh];B[jc];W[rj];B[sk];W[cf];B[df];W[dg];B[ef];W[cd];B[ce];W[be]
+;B[de];W[bg];B[cc];W[bd];B[eg];W[dh];B[pc];W[oc];B[qc];W[ob];B[qd];W[pe];B[rf];W[ra]
+;B[rb];W[pa];B[rg];W[qb];B[sc];W[pf];B[rd];W[hc];B[id];W[eb];B[ec];W[db];B[fb];W[cb]
+;B[fc];W[cq];B[dq];W[cp];B[cn];W[co];B[do];W[dn];B[cm];W[dr];B[er];W[cr];B[fp];W[en]
+;B[cj];W[gn];B[ho];W[fr];B[es];W[dl];B[cl];W[fq];B[eq];W[gp];B[gq];W[fo];B[ep];W[hq]
+;B[gr];W[hr];B[fs];W[hp]C[W+R])

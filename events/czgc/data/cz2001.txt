@@ -1,0 +1,24 @@
+; TC[T010629]
+; CL[A]
+; EV[Czech Championship 2001]
+; PC[CZ,Praha]
+; DT[2001-06-29,2001-07-04]
+; KM[5.5]
+; TM[2h30]
+; HA[h9]
+;                               Czech Championship, Prague
+;                                 June 29 - July 4, 2001
+;
+;Pl     Name             Grade  Club  Pos S  x SDOS  1.     2.    3.    4.    5.    6.    7.    8.    9.
+;
+; TA[2h30]
+   1 Nechanicky Radek               6d CZ  Nym      9     1    38     0    5+/b    6+/w    4+/b    3+/b    2+/w   10+/b    9+/w    8+/b    7+/w |10250196
+   2 Danek Vladimir                 6d CZ  Pra      7     2    27     0    8+/b    7+/w    5+/b    6+/w    1-/b    3+/w    4+/b   10+/b    9-/w |10213016
+   3 Holecek David                  4d CZ  Pra      6     3    19     0    7-/b    5+/w    6+/b    1-/w    4+/b    2-/b   10+/w    9+/b    8+/w |10250504
+   4 Silt Ondrej                    4d CZ  Zli      5     4    15     0    6+/w    9+/b    1-/w    8-/b    3-/w    7+/b    2-/w    5+/b   10+/w |10337481
+   5 Kostka Ivan                    3d CZ  FMi      4     5    11     2    1-/w    3-/b    2-/w   10+/b    9+/w    8-/b    7+/w    4-/w    6+/b |10286716
+   6 Dach Zbynek                    4d CZ  Plz      4     6    10     1    4-/b    1-/b    3-/w    2-/b   10+/w    9+/b    8+/w    7+/b    5-/w |10233872
+   7 Hora Jan                       4d CZ  Pra      4     7    12     0    3+/w    2-/b   10+/w    9+/b    8+/w    4-/w    5-/b    6-/w    1-/b |10401083
+   8 Cipra Petr                     4d CZ  Libe     3     8    10     0    2-/w   10+/b    9-/w    4+/w    7-/b    5+/w    6-/b    1-/w    3-/b |10249503
+   9 Dach Karel                     4d CZ  Plz      2     9    10     0   10-/w    4-/w    8+/b    7-/w    5-/b    6-/w    1-/b    3-/w    2+/b |10298508
+  10 Holecek Jiri                   4d CZ  Pra      1    10     2     0    9+/b    8-/w    7-/b    5-/w    6-/b    1-/w    3-/b    2-/w    4-/b |10225501

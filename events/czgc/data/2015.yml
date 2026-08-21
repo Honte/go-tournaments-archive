@@ -1,0 +1,27 @@
+name: 23rd Czech Championship
+website: http://www.ulita.bk.cz/go/turnaj/MR2015Blansko.htm
+stages:
+  - type: tournament
+    name: Championship
+    file: cz2015.txt
+    scoringColumns:
+      - wins
+      - null
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true
+    games:
+      - 1-6 1:B+R round:4 sgf:2015/4-JanProkop-PetrCipra.sgf
+      - 1-7 1:B+R round:6 sgf:2015/6-JanProkop-OndrejKruml.sgf
+      - 2-1 1:W+4.5 round:5 sgf:2015/5-LukasPodpera-JanProkop.sgf
+      - 2-4 2:B+R round:1 sgf:2015/1-LukasPodpera-JanHora.sgf
+      - 2-5 2:B+3.5 round:3 sgf:2015/3-LukasPodpera-RadekNechanicky.sgf
+      - 3-4 4:W+R round:4 sgf:2015/4-JanSimara-JanHora.sgf
+      - 4-1 1:W+R round:7 sgf:2015/7-JanHora-JanProkop.sgf
+      - 5-1 1:W+R round:2 sgf:2015/2-RadekNechanicky-JanProkop.sgf
+      - 5-3 5:B+3.5 round:6 sgf:2015/6-RadekNechanicky-JanSimara.sgf
+      - 7-2 2:W+R round:7 sgf:2015/7-OndrejKruml-LukasPodpera.sgf
+      - 7-3 3:W+6.5 round:3 sgf:2015/3-OndrejKruml-JanSimara.sgf
+      - 7-8 7:B+R round:5 sgf:2015/5-OndrejKruml-BronislavSnidal.sgf

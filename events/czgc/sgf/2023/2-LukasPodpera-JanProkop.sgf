@@ -1,0 +1,78 @@
+(;CA[utf-8]GM[1]OT[Error: time control missing]RU[Japanese]AP[MultiGo:4.4.4]SZ[19]
+FF[4]GN[Czech Championship round 2 board 3]RO[2]PC[https\://online-go.com/review/1146511]
+PB[Lukáš Podpěra]BR[7d]PW[Jan Prokop]WR[6d]KM[6.5]RE[B+R]MULTIGOGM[1]
+;B[cp];W[pq];B[dc];W[pd];B[fp];W[ce];B[dg];W[cg];B[ch];W[dh];B[ci];W[ed];B[ef];W[ec]
+;B[cf];W[be];B[bg];W[eb];B[po];W[qo];B[pp];W[qp];B[oq];W[pn];B[qq];W[pr];B[rq];W[or]
+;B[np];W[nq];B[qn];W[op];B[oo];W[no];B[on];W[mp];B[pm];W[hq]C[
+
+-- chat --
+Evariste Galois\: Maybe something like Q13 even 
+]
+;B[qf];W[nd];B[rd]C[
+
+-- chat --
+seequ\: dpesm't H3 seem kind of small with white's megaponnuki?
+seequ\: doesn't*
+tasuki\: yes perhaps, where else to play though? R14 perhaps? doesn't seem particularly bigger, black would be happy to play J4 in the empty space I guess
+]
+;W[dp];B[do];W[dq]C[
+
+-- chat --
+seequ\: R14 seems quite a bit bigger, as black wants to play there too
+]
+;B[cq];W[cr];B[dn]C[
+
+-- chat --
+seequ\: D6 looks funny
+snowman\: Cho U played a hanging connection in a recent Ryusei game
+]
+;W[er];B[fr]C[
+
+-- chat --
+seequ\: hanging connection is the usual move
+seequ\: of course here black is ridiculously strong, so might as well
+]
+;W[bq];B[bp];W[aq]C[
+
+-- chat --
+bigwizard\: hi all, do we know the time settings?
+]
+;B[hp];W[ip];B[ho]C[
+
+-- chat --
+tasuki\: fischer 1 hour basic + 30 secs per move
+bigwizard\: thank you
+]
+;W[io]C[
+
+-- chat --
+tasuki\: B 46 mins, W 37
+seequ\: huh that's long
+tasuki\: it's the Czech championship!
+tasuki\: not your random local tournament
+]
+;B[in]C[
+
+-- chat --
+seequ\: at least local, probably random \:>
+];W[iq];B[hm];W[gn]
+;B[hn];W[gf];B[gh];W[pg];B[pf];W[of];B[og];W[qg];B[rg];W[rh];B[rf];W[nf];B[oh];W[pi]
+;B[ph];W[qh];B[qi];W[ri];B[qj];W[ni];B[oi];W[oj]C[
+
+-- chat --
+lolstarzz\: this doesn't feel like enough for w
+]
+;B[pj];W[nh];B[ig];W[ng];B[pi];W[if];B[jg];W[ok];B[ql];W[jf];B[qc];W[pb];B[kg];W[fh]
+;B[gg];W[hf];B[ij];W[ff];B[fg];W[co];B[bo];W[bn];B[cn];W[ao];B[bm];W[an];B[am];W[ap]
+;B[co];W[bs];B[ep];W[jn];B[jm];W[km];B[kn];W[jo];B[kl];W[lm];B[ll];W[jl];B[im];W[mm]
+;B[lj];W[rr];B[ee];W[fe];B[de];W[dd];B[kf];W[ke];B[eq];W[dr];B[is];W[cm];B[cl];W[eo]
+;B[en];W[gs];B[gr];W[hr];B[hs];W[js];B[fs];W[ir];B[gs];W[gq];B[fq];W[gp];B[go];W[jr]
+;B[qb];W[qr];B[ro];W[sq];B[rp];W[li];B[ki];W[mj];B[ob];W[nb];B[oc];W[nc];B[na];W[ma]
+;B[oa];W[pc];B[pa];W[od];B[qa];W[mb];B[kj];W[lh];B[lf];W[le];B[mf];W[me];B[ml];W[nm]
+;B[bf]C[
+
+-- chat --
+CzechChamp2023\: Jan Prokop (white) has just resigned.
+lolstarzz\: congrats Lukan, gg by both. Thanks for relaying the match
+tasuki\: next round tomorrow 9am central european time
+])

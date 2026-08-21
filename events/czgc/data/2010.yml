@@ -1,0 +1,37 @@
+name: 18th Czech Championship
+stages:
+  - type: tournament
+    name: Championship
+    file: cz2010.txt
+    scoringColumns:
+      - wins
+      - null
+      - direct
+      - null
+    breakers:
+      - wins
+      - direct
+    findSharedPlaces: true
+    games:
+      - 1-7 1:B+R round:8 sgf:2010/8-RadekNechanicky-BronislavSnidal.sgf
+      - 2-1 1:W+R round:7 sgf:2010/7-JanHora-RadekNechanicky.sgf
+      - 2-3 2:B+11.5 round:5 sgf:2010/5-JanHora-IvanKostka.sgf
+      - 2-7 2:B+R round:3 sgf:2010/3-JanHora-BronislavSnidal.sgf
+      - 3-5 5:W+R round:9 sgf:2010/9-IvanKostka-JanSimara.sgf
+      - 3-7 3:B+R round:6 sgf:2010/6-IvanKostka-BronislavSnidal.sgf
+      - 3-9 3:B+? round:4 sgf:2010/4-IvanKostka-PetrCipra.sgf
+      - 4-9 4:B+13.5 round:8 sgf:2010/8-JanProkop-PetrCipra.sgf
+      - 5-2 2:W+R round:6 sgf:2010/6-JanSimara-JanHora.sgf
+      - 5-8 5:B+R round:8 sgf:2010/8-JanSimara-PetrValasek.sgf
+      - 6-2 2:W+R round:8 sgf:2010/8-OndrejKruml-JanHora.sgf
+      - 6-4 4:W+R round:6 sgf:2010/6-OndrejKruml-JanProkop.sgf
+      - 6-10 6:B+R round:5 sgf:2010/5-OndrejKruml-IvoPavlik.sgf
+      - 7-5 5:W+R round:7 sgf:2010/7-BronislavSnidal-JanSimara.sgf
+      - 7-6 7:B+? round:9 sgf:2010/9-BronislavSnidal-OndrejKruml.sgf
+      - 7-8 7:B+6.5 round:5 sgf:2010/5-BronislavSnidal-PetrValasek.sgf
+      - 8-1 1:W+R round:9 sgf:2010/9-PetrValasek-RadekNechanicky.sgf
+      - 8-3 3:W+R round:7 sgf:2010/7-PetrValasek-IvanKostka.sgf
+      - 9-5 5:W+6.5 round:5 sgf:2010/5-PetrCipra-JanSimara.sgf
+      - 9-6 6:W+10.5 round:7 sgf:2010/7-PetrCipra-OndrejKruml.sgf
+      - 9-8 8:W+13.5 round:3 sgf:2010/3-PetrCipra-PetrValasek.sgf
+      - 10-3 3:W+? round:8 sgf:2010/8-IvoPavlik-IvanKostka.sgf

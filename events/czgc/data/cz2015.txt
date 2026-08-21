@@ -1,0 +1,18 @@
+; TC[T150926N]
+; CL[A]
+; EV[Czech Championship, Blansko 2015]
+; PC[CZ, Blansko]
+; DT[2015-09-26,2015-09-29]
+; HA[h9]
+; KM[6.5]
+; TM[120]
+; CM[ (submitted by jarek)]
+;.
+1 Prokop Jan         5d CZ  SRic  6    6    18   3-/b   5+/w   8+/b   6+/b   2+/w   7+/b   4+/w    |10433654
+2 Podpera Lukas      6d CZ  APWS  6    6    16   4+/b   3+/w   5+/b   8+/w   1-/b   6+/b   7+/w    |13201914
+3 Simara Jan         6d CZ  KVaS  4    4    11   1+/w   2-/b   7+/w   4-/b   6+/w   5-/w   8+/b    |10749860
+4 Hora Jan           6d CZ  APra  4    4    9    2-/w   7+/b   6+/w   3+/w   5-/b   8+/w   1-/b    |10401083
+5 Nechanicky Radek   5d CZ  SNym  3    3    8    8+/w   1-/b   2-/w   7-/b   4+/w   3+/b   6-/w    |10250196
+6 Cipra Petr         3d CZ  MJes  3    3    5    7+/b   8+/w   4-/b   1-/w   3-/b   2-/w   5+/b    |10249503
+7 Kruml Ondrej       5d CZ  Brno  2    2    3    6-/w   4-/w   3-/b   5+/w   8+/b   1-/w   2-/b    |10886524
+8 Snidal Bronislav   2d CZ  TOst  0    0    0    5-/b   6-/b   1-/w   2-/b   7-/w   4-/b   3-/w    |10750476

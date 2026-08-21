@@ -1,0 +1,26 @@
+name: 8th Czech Championship
+stages:
+  - type: tournament
+    name: Championship
+    file: cz2000.txt
+    scoringColumns:
+      - wins
+      - null
+      - sodos
+      - direct
+    breakers:
+      - wins
+      - sodos
+      - direct
+    findSharedPlaces: true
+    games:
+      - 1-8 1:B+11.5 round:8 sgf:2000/8-RadekNechanicky-JanHora.sgf
+      - 2-1 1:W+4.5 round:9 sgf:2000/9-DavidHolecek-RadekNechanicky.sgf
+      - 2-3 2:B+R round:2 sgf:2000/2-DavidHolecek-IvanKostka.sgf
+      - 4-1 1:W+? round:7 sgf:2000/7-MartinKuzela-RadekNechanicky.sgf
+      - 5-3 3:W+? round:4 sgf:2000/4-ZbynekDach-IvanKostka.sgf
+      - 6-3 3:W+1.5 round:7 sgf:2000/7-JanMechura-IvanKostka.sgf
+      - 6-9 6:B+3.5 round:1 sgf:2000/1-JanMechura-TomasGrosser.sgf
+      - 7-2 7:B+R round:8 sgf:2000/8-PetrCipra-DavidHolecek.sgf
+      - 9-5 5:W+10.5 round:7 sgf:2000/7-TomasGrosser-ZbynekDach.sgf
+      - 10-4 4:W+R round:1 sgf:2000/1-PetrValasek-MartinKuzela.sgf

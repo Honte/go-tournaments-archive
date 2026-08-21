@@ -1,0 +1,22 @@
+; TC[T030708A]
+; CL[A]
+; EV[Czech Championship 2003]
+; PC[CZ,Pardubice]
+; DT[2003-07-08,2003-07-13]
+; KM[6.5]
+; TM[2h30]
+; HA[h9]
+;                            Czech Championship, Pardubice
+;                                  July 8 - 13, 2003
+;
+;Pl     Name             Grade  Club   No S SDOS x   1.    2.    3.    4.    5.    6.    7.    8.    9.
+   1 Nechanicky Radek               6d CZ  Nym      7     2    28     1    5+/b    9+/w    8+/b    4-/b    3-/w   10+/b    6+/w    7+/b    2+/w |10250196
+   2 Hora Jan                       5d CZ  Pra      7     8    27     0    4+/w    3+/b   10+/w    6-/b    7+/w    8+/w    5+/b    9+/w    1-/b |10401083
+   3 Cipra Petr                     4d CZ  Libe     5     4    23     1    7+/b    2-/w    5-/b    9+/w    1+/b    4+/w    8-/b   10-/b    6+/w |10249503
+   4 Kostka Ivan                    3d CZ  FMi      5     3    22     1    2-/b    5+/w    9+/b    1+/w    8+/b    3-/b   10-/w    6+/b    7-/w |10286716
+   5 Holecek David                  4d CZ  Rev      5     9    17     1    1-/w    4-/b    3+/w   10+/b    6+/w    7-/b    2-/w    8+/w    9+/b |10250504
+   6 Cieply Martin                  3d CZ  Ost      4     6    16     1   10+/w    8+/w    7+/b    2+/w    5-/b    9-/w    1-/b    4-/w    3-/b |10801967
+   7 Dach Zbynek                    4d CZ  Plz      4     7    15     0    3-/w   10+/b    6-/w    8+/w    2-/b    5+/w    9-/b    1-/w    4+/b |10233872
+   8 Brunner Vit                    3d CZ  Brn      3    10    10     1    9+/w    6-/b    1-/w    7-/b    4-/w    2-/b    3+/w    5-/b   10+/w |12513842
+   9 Jurek Martin                   3d CZ  Mik      3     1    10     0    8-/b    1-/b    4-/w    3-/b   10+/w    6+/b    7+/w    2-/b    5-/w |10213753
+  10 Valasek Petr                   3d CZ  FMi      2     5    10     0    6-/b    7-/w    2-/b    5-/w    9-/b    1-/w    4+/b    3+/w    8-/b |10333653

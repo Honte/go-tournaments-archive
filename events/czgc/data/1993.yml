@@ -1,0 +1,18 @@
+name: 1st Czech Championship
+stages:
+  - type: tournament
+    name: Championship
+    file: cz1993.txt
+    notes: For statistics best 16 players and games between them are shown. Games against other players changed to 0+ and 0-. Full table available at http://goweb.cz/turnaj/mr-1993/
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - mms
+      - sos
+      - sodos      
+    columns:
+      - wins
+    findSharedPlaces: true

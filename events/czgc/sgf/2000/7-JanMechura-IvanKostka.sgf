@@ -1,0 +1,36 @@
+(;CA[windows-1250]FF[4]ST[3]AP[Hibiscus:2.1]SZ[19]GM[1]GN[7.2]EV[MR 2000]RO[7]DT[8/7/2000]
+PC[Brno]PB[Mechura Jan]BR[4 D]PW[Kostka Ivan]WR[3 D]KM[5.5]TM[7200]RE[W+1.5]MULTIGOGM[1]
+;B[pd];W[dc];B[dp];W[pq];B[de];W[cg];B[cc];W[cd];B[dd];W[ce];B[cf];W[df];B[bf];W[bc]
+;B[cb];W[be];B[ec];W[bg];B[ef];W[dg]LB[cn:A]C[After this joseki, A is the big move for both black and 
+white. This means both black and white should make a 
+good plan to get this move.]
+;B[po];W[qo];B[qn];W[qp]
+(;B[pn]C[See variation.];W[op];B[pj];W[kc]C[On the upper side, it is difficult for black to make a 
+decision about which side he should block. In that 
+case this is the best time for black to take sente.]
+;B[ic];W[nc];B[oc];W[nd];B[qf]C[But now black lost sente.];W[cn]C[White gets this big move. I think white has succeded 
+in fuseki.]
+;B[fp];W[bp];B[cq];W[dl]C[The white territory on the left side is really big.];B[jq]
+;W[lq];B[jo];W[ee];B[ed];W[fe];B[gd];W[fg];B[fl];W[fk]C[This move makes black strong, and gives white only a 
+few more points. Better not played.]
+;B[gk];W[ek];B[gl];W[qg]C[A nice tesuji, but I worry about the three stones on the 
+top now. ]
+;B[pf]C[Good answer. ];W[pi];B[qj];W[pg];B[og]LB[of:A]C[Nobi at A would be more severe. this move feels like 
+helping white a little bit.]
+;W[oh];B[nh];W[ng];B[of];W[ni];B[mh];W[qi];B[oj];W[oi];B[mf]C[Plat at A would be more severe against the white group 
+on the top.]
+;W[mi];B[lh];W[rh];B[nb];W[mb];B[ob];W[jb];B[ib]LB[ld:A]C[Too slow, A is the vital points.]
+;W[ke];B[jf];W[me];B[lb];W[je];B[if];W[kf];B[kg];W[ma];B[lc];W[mc];B[ld];W[kb];B[ne]
+;W[lf];B[ia];W[kd]C[White has succeded on the right side.]
+(;B[kr]C[See variation.]
+(;W[rj]C[See variation.];B[rk];W[rf];B[re];W[se];B[sd];W[sf];B[rd];W[lr];B[bq];W[kq]
+;B[jr];W[ko];B[jn];W[nl];B[sj];W[ri];B[om];W[nk];B[ql];W[en];B[gn];W[bb];B[db]C[Konec zápisu.
+
+In this game, white played well in fuseki. Then white 
+played overplay on the right side, but black played too 
+sorft that white escaped from a heavy punishment.])
+(;W[rf];B[re];W[se];B[sd];W[sf];B[rd];W[rl]C[This would be more severe. Black even have to be 
+careful with his group.]))
+(;B[rf]C[First here would be necessary.];W[rj];B[rk];W[si]))
+(;B[pm];W[nq];B[qg]C[This is a interesting shape. Black has a fast speeded 
+fuseki.]))

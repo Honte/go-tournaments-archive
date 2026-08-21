@@ -1,0 +1,72 @@
+(;CA[windows-1250]FF[4]ST[3]AP[Hibiscus:2.1]SZ[19]GM[1]GN[8.2]EV[MR 2000]RO[8]DT[8/7/2000]
+PC[Brno]PB[Nechanicky Radek]BR[6 D]PW[Hora Jan]WR[4 D]KM[5.5]TM[7200]RE[B+11,5]
+MULTIGOGM[1]
+;B[pd];W[ee];B[pp];W[eq]C[Play high movea in fuseki is indeed ineteresting, but it 
+is very difficult to control.]
+;B[jd];W[nf]C[I would not say this is bad, but this move gives black a 
+lot of territory.]
+;B[nd];W[nq];B[pn];W[kp];B[do]C[High kakari against white moyo, good choice.];W[eo]
+;B[en];W[fo];B[dp];W[dq];B[dm]
+(;W[cq]C[See variation.];B[dg];W[ce];B[fc];W[dc];B[oq]LB[iq:A]C[This is not the best time to play this move, it makes 
+white strong. I would like to keep it, especially when 
+black still can invade at A.]
+;W[dj]LB[np:A]C[Nobi at A is bigger. ];B[cf];W[be];B[fj]LB[nr:A]C[Black should try to get sente to play at A.]
+;W[ch]LB[eh:A][nr:B]C[Too small. White should get out here, at least 
+play at A. 
+Black can take sente now to play at B, in that case 
+black will lead on territory.]
+;B[bf]C[This looks very heavy.  I think it is not necessary to 
+play like this at all for black.]
+;W[eh]C[Severe. White gets a chance.];B[dh];W[di];B[eg];W[fi];B[fg];W[gj]C[Black is still very heave and white controls the 
+center. Good for white.]
+;B[fe]C[Necessary.]
+(;W[cn]C[Too late to play here. White should close the black 
+group into the left side. See variation.]
+;B[cm];W[bn];B[fn]LB[gm:A]C[Keima at A maybe better, it goes out faster.];W[dn]
+C[Much too small to kill only two stones.];B[gn]C[Black survived easily.];W[fk]
+(;B[gp]C[Not severe enough. See variation.];W[go];B[ho];W[fq];B[hn];W[em]C[Even white could kill black, it is just two stones. When 
+the left side is still open, these two stones are not big. ]
+;B[bm];W[bp];B[el]MA[nq][kp]LB[np:A]C[I would like to play at A first. It is such a big move 
+in the first place, secondly it also threatens the marked 
+white stones. ]
+;W[fm];B[fl];W[gm];B[gk]C[In local fighting, this is a good move.];W[hm];B[im];W[hl]
+;B[hj]C[Good move.];W[il];B[gi];W[ek];B[dk];W[ej];B[gl];W[gj];B[jl];W[ik];B[fj]
+;W[jk];B[gj];W[ck];B[dl];W[km]C[A nice move.
+The result of this exchange should not be bad for white 
+since black need one more move to kill the white 
+group on the left side.]
+;B[ko]LB[nr:A]C[Good try, but...]
+(;W[jo]LB[lp:A]C[Nobi at A would be more servere. See variations.];B[jp]C[Cutting is always the good way to make things 
+complicated.]
+;W[lo];B[kq];W[kn];B[lp]C[Good chance for black.];W[jq];B[ip];W[ko];B[jr];W[lq]
+;B[kr];W[hr];B[hq];W[ir];B[gr];W[gq];B[iq];W[fr];B[mp];W[np];B[mq];W[mr];B[mo];W[no]
+;B[mn];W[nn];B[lr];W[or];B[mm];W[nm];B[ml];W[lk];B[nl];W[pm]
+(;B[nj]C[Could be better. See variation.];W[qm];B[mj];W[ki];B[lh];W[in];B[bk]C[The game would be decided on the upper right side.]
+(;W[li]C[I think white can't win the game by playing like this. 
+See variation.]
+;B[nh];W[mh];B[mg];W[mi];B[ni];W[lg];B[ng]C[White lost now.];W[lf];B[qk];W[mf];B[pf]
+;W[rk];B[rl];W[pk];B[rm];W[ql];B[qj];W[rn];B[rj];W[sm];B[sk];W[qn];B[ol];W[pl];B[om]
+;W[on];B[po];W[qq];B[ld]C[Black is leading about 20 points on board and without 
+weakness.]
+;W[pj];B[pi];W[mc];B[md];W[qc];B[pc];W[pb];B[ob];W[rb];B[rd];W[qd];B[qe];W[rc];B[re]
+;W[qa];B[oa];W[pa];B[ae];W[ad];B[af];W[bc];B[eb];W[df];B[ef];W[de];B[cg];W[db];B[jf]
+;W[jg];B[ig];W[jh];B[ih];W[io];B[hp];W[fd];B[gd];W[ed];B[gc];W[ke];B[kd];W[je];B[ie]
+;W[kf];B[ms];W[nr];B[if];W[oe];B[of];W[oc];B[nc];W[od];B[pe];W[ne];B[nb];W[ea];B[fa]
+;W[da];B[sl];W[sn]C[Konec zápisu.])
+(;W[lf]C[I think white has to try harder than just play some 
+normal moves.];B[nh]
+;W[md]C[I think something like this is needed for white.]))
+(;B[om]C[This would be more severe.];W[on];B[ol];W[po];B[qn];W[qo];B[qm];W[li];B[ro]
+;W[qp];B[rp];W[qq]C[In this case the white corner is much smaller.]))
+(;W[lp]C[In this way there would be less aji.]
+(;B[kn];W[jm];B[mo];W[io]C[Black coule just kikash a bit. And we should not forget 
+that black still needs a move on the left side.])
+(;B[lo];W[jo];B[jn];W[io])))
+(;B[go]C[This move gives black a stone shape.];W[gq];B[hq]MA[nq][kp]C[Now the marked white stones are in trouble.]))
+(;W[gm];B[ck]LB[bo:A]C[This looks very dangerous for  black, next if 
+white plays at A, it will be very painful for black. Even 
+black can live on the left side...]
+;W[np]C[as long as white get this move, the game would not be 
+bad for white.]))
+(;W[cn]C[According to joseki, this move should be played first. ];B[dn];W[cq]C[Then nobi in the corner. In this case the black shape is 
+heavier.]))

@@ -1,0 +1,134 @@
+(;CA[utf-8]GM[1]OT[Error: time control missing]RU[Japanese]AP[MultiGo:4.4.4]SZ[19]
+FF[4]GN[Czech Championship round 5 board 4]RO[5]PC[https\://online-go.com/review/1147531]
+PB[Jan Prokop]BR[6d]PW[Jan Šimara]WR[1p]KM[6.5]RE[B+R]MULTIGOGM[1]
+;B[pd];W[dd];B[pq];W[dp];B[mc];W[po];B[qo];W[qn];B[qp];W[pn];B[nq];W[pj];B[cq];W[cp]
+;B[dq];W[eq];B[er];W[fr];B[fq];W[ep];B[gr];W[dr];B[fs];W[cr];B[fc];W[fd];B[ed];W[ee]
+;B[ec];W[dc];B[de];W[fe];B[ce];W[db];B[hc];W[bd];B[be];W[bb];B[ci];W[eh];B[dj];W[ck]
+;B[cm];W[dk];B[ek];W[dl];B[fj];W[bh];B[dg];W[bi];B[eg];W[fg];B[fh];W[gh];B[fi];W[ie]
+;B[jd];W[je];B[kd];W[el];B[fl];W[fm];B[gm];W[gl];B[fk];W[fn];B[hm];W[ch];B[dh];W[ke]
+;B[go];W[mo];B[qh];W[qc];B[qd];W[pc];B[oc];W[ob];B[nb];W[od];B[nc];W[rd];B[re];W[rb]
+;B[sd];W[rc];B[oe];W[pb];B[pk];W[qk];B[ql];W[pl];B[ok];W[qj];B[rl];W[qm];B[ol];W[pm]
+;B[oj];W[pi];B[oh];W[ld];B[gd];W[ge];B[lc];W[jh];B[lp];W[lo];B[ko];W[kn];B[jo];W[ph]
+;B[pg];W[qg]C[
+
+-- chat --
+Veedee\: AI claims that 28 and 5 more moves by White, all bad. B had 10 points advantage.
+Veedee\: At 114, about +5 for B
+]
+;B[oi];W[rh];B[qf];W[rg];B[cj];W[bj];B[lh]C[
+
+-- chat --
+Zaphodian\: My AI is not that weak and says they are between -0.9 and -.1.7
+]
+;W[hi];B[ij]C[
+
+-- chat --
+Veedee\: Using AI, it is painful to see how weak we are. E.g. natural moves 121,122,123 are each -5 points
+]
+;W[ii];B[jj];W[hj];B[hk];W[mp];B[mq];W[op];B[oq];W[jn];B[in];W[fo];B[fp];W[kp];B[lq]
+;W[io];B[jp]C[
+
+-- chat --
+Zaphodian\: Yes, the moves 60-67 lost around 5 points for B
+]
+(;W[im];B[bq];W[br];B[bp];W[bo]
+(;B[eo];W[en]C[
+
+-- chat --
+Zaphodian\: killing which B center?
+Zaphodian\: The group with 3 eyes and a connection to the center?
+Zaphodian\: This was not the best way for B to exploit the aji.
+]
+(;B[co];W[do];B[bn]
+(;W[cn];B[ao];W[co];B[ar];W[bm];B[am]C[
+
+-- chat --
+Zaphodian\: ko3. From move 0\: Q16 D16 Q3 D4 N17 Q5 R5 R6 R4 Q6 O3 Q10 C3 C4 D3 E3 E2 F2 F3 E4 G2 D2 F1 C2 F17 F16 E16 E15 E17 D17 D15 F15 C15 D18 H17 B16 B15 B18 C11 E12 D10 C9 C7 D9 E9 D8 F10 B12 D13 B11 E13 F13 F12 G12 F11 J15 K16 K15 L16 E8 F8 F7 G7 G8 F9 F6 H7 C12 D12 L15 G5 N5 R12 R17 R16 Q17 P17 P18 O18 P16 O17 S16 S15 S18 T16 S17 P15 Q18 Q9 R9 R8 Q8 P9 R10 S8 R7 P8 Q7 P10 Q11 P12 M16 G16 G15 M17 K12 M4 M5 L5 L6 K5 Q12 Q13 R13 P11 S12 R14 S13 C10 B10 M12 H11 J10 J11 K10 H10 H9 N4 N3 P4 P3 K6 J6 F5 F4 L4 M3 J5 K4 J7 B3 B2 B4 B5 E5 E6 C5 D5 B6 C6 A5 C5 A2 B7 A7 
+])
+(;W[ao];B[dn]C[
+
+-- chat --
+Zaphodian\: ko4. From move 0\: Q16 D16 Q3 D4 N17 Q5 R5 R6 R4 Q6 O3 Q10 C3 C4 D3 E3 E2 F2 F3 E4 G2 D2 F1 C2 F17 F16 E16 E15 E17 D17 D15 F15 C15 D18 H17 B16 B15 B18 C11 E12 D10 C9 C7 D9 E9 D8 F10 B12 D13 B11 E13 F13 F12 G12 F11 J15 K16 K15 L16 E8 F8 F7 G7 G8 F9 F6 H7 C12 D12 L15 G5 N5 R12 R17 R16 Q17 P17 P18 O18 P16 O17 S16 S15 S18 T16 S17 P15 Q18 Q9 R9 R8 Q8 P9 R10 S8 R7 P8 Q7 P10 Q11 P12 M16 G16 G15 M17 K12 M4 M5 L5 L6 K5 Q12 Q13 R13 P11 S12 R14 S13 C10 B10 M12 H11 J10 J11 K10 H10 H9 N4 N3 P4 P3 K6 J6 F5 F4 L4 M3 J5 K4 J7 B3 B2 B4 B5 E5 E6 C5 D5 B6 A5 D6 
+]))
+(;B[hn];W[il];B[hl];W[kl];B[rn];W[rm];B[sm];W[rk];B[ro];W[sl];B[cd];W[cc];B[ad]
+;W[bc];B[eb];W[da];B[mm];W[lm];B[ea];W[ac]
+(;B[gg];W[hd];B[gc];W[id];B[ic];W[hg];B[ff];W[gf];B[hf];W[fg];B[co];W[do];B[gg]
+;W[he]C[
+
+-- chat --
+Veedee\: I use AI sensei Pro level
+];B[le];W[lf];B[me];W[lg]
+;B[kh];W[kg]C[
+
+-- chat --
+Veedee\: I would be happy if my natural move were only -1  ;)
+]
+;B[ji]C[
+
+-- chat --
+Zaphodian\: I have a one year old Katago version 
+];W[ng];B[gi]
+;W[fg];B[bn];W[cn];B[gg];W[hh];B[ao];W[co]C[
+
+-- chat --
+Zaphodian\: So my AI says that  61 (M12) is -1.2 and that the best move is B3 with a value of +1.7.
+Zaphodian\: So that would be a cost of 2.9
+]
+;B[ar];W[bm];B[am];W[an];B[jg];W[ds];B[bn]C[
+
+-- chat --
+Veedee\: Strange feature\:  some moves can be 4 points better than the best (blue) move
+]
+;W[bs];B[bl];W[bk];B[ih];W[ef];B[cg];W[fg]C[
+
+-- chat --
+Zaphodian\: There are other issues that are more complex. Once you take on of the branches and follow it through, sometimes, in the end, it does not quite work out or the result is quite different from what was projected. 
+Zaphodian\: However, you have to be around pro level to understand most of that stuff.
+]
+;B[es]C[
+
+-- chat --
+Zaphodian\: at least top ama, for sure.
+];W[cl];B[jf]C[
+
+-- chat --
+OndraKruml\: Fudge. From move 0\: Q16 D16 Q3 D4 N17 Q5 R5 R6 R4 Q6 O3 Q10 C3 C4 D3 E3 E2 F2 F3 E4 G2 D2 F1 C2 F17 F16 E16 E15 E17 D17 D15 F15 C15 D18 H17 B16 B15 B18 C11 E12 D10 C9 C7 D9 E9 D8 F10 B12 D13 B11 E13 F13 F12 G12 F11 J15 K16 K15 L16 E8 F8 F7 G7 G8 F9 F6 H7 C12 D12 L15 G5 N5 R12 R17 R16 Q17 P17 P18 O18 P16 O17 S16 S15 S18 T16 S17 P15 Q18 Q9 R9 R8 Q8 P9 R10 S8 R7 P8 Q7 P10 Q11 P12 M16 G16 G15 M17 K12 M4 M5 L5 L6 K5 Q12 Q13 R13 P11 S12 R14 S13 C10 B10 M12 H11 J10 J11 K10 H10 H9 N4 N3 P4 P3 K6 J6 F5 F4 L4 M3 J5 K4 J7 B3 B2 B4 B5 E5 E6 H6 J8 H8 L8 S6 S7 T7 S9 S5 T8 C16 C17 A16 B17 E18 D19 N7 M7 E19 A17 G13 H16 G17 J16 J17 H13 F14 G14 H14 F13 C5 D5 G13 H15 M15 M14 N15 M13 L12 L13 K11 O13 G11 F13 B6 C6 G13 H12 A5 C5 A2 B7 A7 A6 K13 D1 B6 B1 B8 B9 J12 E14 C13 F13 E1 C8 K14 
+OndraKruml\: Fudge
+OndraKruml\: Oops \:D
+CzechChamp2023\: White has resigned
+]
+;W[if];B[kf]C[
+
+-- chat --
+Zaphodian\: miai. From move 0\: Q16 D16 Q3 D4 N17 Q5 R5 R6 R4 Q6 O3 Q10 C3 C4 D3 E3 E2 F2 F3 E4 G2 D2 F1 C2 F17 F16 E16 E15 E17 D17 D15 F15 C15 D18 H17 B16 B15 B18 C11 E12 D10 C9 C7 D9 E9 D8 F10 B12 D13 B11 E13 F13 F12 G12 F11 J15 K16 K15 L16 E8 F8 F7 G7 G8 F9 F6 H7 C12 D12 L15 G5 N5 R12 R17 R16 Q17 P17 P18 O18 P16 O17 S16 S15 S18 T16 S17 P15 Q18 Q9 R9 R8 Q8 P9 R10 S8 R7 P8 Q7 P10 Q11 P12 M16 G16 G15 M17 K12 M4 M5 L5 L6 K5 Q12 Q13 R13 P11 S12 R14 S13 C10 B10 M12 H11 J10 J11 K10 H10 H9 N4 N3 P4 P3 K6 J6 F5 F4 L4 M3 J5 K4 J7 B3 B2 B4 B5 E5 E6 H6 J8 H8 L8 S6 S7 T7 S9 S5 T8 C16 C17 A16 B17 E18 D19 N7 M7 E19 A17 G13 H16 G17 J16 J17 H13 F14 G14 H14 F13 C5 D5 G13 H15 M15 M14 N15 M13 L12 L13 K11 O13 G11 F13 B6 C6 G13 H12 A5 C5 A2 B7 A7 A6 K13 D1 B6 B1 B8 B9 J12 E14 C13 F13 E1 C8 K14 J14 L14 
+])
+(;B[co];W[do];B[bn];W[cn];B[ao];W[co];B[ar];W[aq];B[ap];W[bm];B[am];W[an];B[qa]
+;W[ra];B[bn];W[bl];B[ds];W[an]C[
+
+-- chat --
+Zaphodian\: Black has no ko threats. Besides, White has an internal ko threat at B8. From move 0\: Q16 D16 Q3 D4 N17 Q5 R5 R6 R4 Q6 O3 Q10 C3 C4 D3 E3 E2 F2 F3 E4 G2 D2 F1 C2 F17 F16 E16 E15 E17 D17 D15 F15 C15 D18 H17 B16 B15 B18 C11 E12 D10 C9 C7 D9 E9 D8 F10 B12 D13 B11 E13 F13 F12 G12 F11 J15 K16 K15 L16 E8 F8 F7 G7 G8 F9 F6 H7 C12 D12 L15 G5 N5 R12 R17 R16 Q17 P17 P18 O18 P16 O17 S16 S15 S18 T16 S17 P15 Q18 Q9 R9 R8 Q8 P9 R10 S8 R7 P8 Q7 P10 Q11 P12 M16 G16 G15 M17 K12 M4 M5 L5 L6 K5 Q12 Q13 R13 P11 S12 R14 S13 C10 B10 M12 H11 J10 J11 K10 H10 H9 N4 N3 P4 P3 K6 J6 F5 F4 L4 M3 J5 K4 J7 B3 B2 B4 B5 E5 E6 H6 J8 H8 L8 S6 S7 T7 S9 S5 T8 C16 C17 A16 B17 E18 D19 N7 M7 E19 A17 C5 D5 B6 C6 A5 C5 A2 A3 A4 B7 A7 A6 R19 S19 B6 B8 D1 A6 
+])))
+(;B[co];W[do];B[bn]
+(;W[ao];B[dn]C[
+
+-- chat --
+Zaphodian\: ko. From move 0\: Q16 D16 Q3 D4 N17 Q5 R5 R6 R4 Q6 O3 Q10 C3 C4 D3 E3 E2 F2 F3 E4 G2 D2 F1 C2 F17 F16 E16 E15 E17 D17 D15 F15 C15 D18 H17 B16 B15 B18 C11 E12 D10 C9 C7 D9 E9 D8 F10 B12 D13 B11 E13 F13 F12 G12 F11 J15 K16 K15 L16 E8 F8 F7 G7 G8 F9 F6 H7 C12 D12 L15 G5 N5 R12 R17 R16 Q17 P17 P18 O18 P16 O17 S16 S15 S18 T16 S17 P15 Q18 Q9 R9 R8 Q8 P9 R10 S8 R7 P8 Q7 P10 Q11 P12 M16 G16 G15 M17 K12 M4 M5 L5 L6 K5 Q12 Q13 R13 P11 S12 R14 S13 C10 B10 M12 H11 J10 J11 K10 H10 H9 N4 N3 P4 P3 K6 J6 F5 F4 L4 M3 J5 K4 J7 B3 B2 B4 B5 C5 D5 B6 A5 D6 
+])
+(;W[cn];B[ao];W[co];B[dn];W[eo];B[ar];W[bm];B[am]C[
+
+-- chat --
+Zaphodian\: ko2. From move 0\: Q16 D16 Q3 D4 N17 Q5 R5 R6 R4 Q6 O3 Q10 C3 C4 D3 E3 E2 F2 F3 E4 G2 D2 F1 C2 F17 F16 E16 E15 E17 D17 D15 F15 C15 D18 H17 B16 B15 B18 C11 E12 D10 C9 C7 D9 E9 D8 F10 B12 D13 B11 E13 F13 F12 G12 F11 J15 K16 K15 L16 E8 F8 F7 G7 G8 F9 F6 H7 C12 D12 L15 G5 N5 R12 R17 R16 Q17 P17 P18 O18 P16 O17 S16 S15 S18 T16 S17 P15 Q18 Q9 R9 R8 Q8 P9 R10 S8 R7 P8 Q7 P10 Q11 P12 M16 G16 G15 M17 K12 M4 M5 L5 L6 K5 Q12 Q13 R13 P11 S12 R14 S13 C10 B10 M12 H11 J10 J11 K10 H10 H9 N4 N3 P4 P3 K6 J6 F5 F4 L4 M3 J5 K4 J7 B3 B2 B4 B5 C5 D5 B6 C6 A5 C5 D6 E5 A2 B7 A7 
+])))
+(;W[gn];B[hn];W[ho];B[gp];W[hl];B[im];W[il];B[jm];W[gk];B[bq]
+(;W[br];B[bp];W[bo];B[co]C[
+
+-- chat --
+Zaphodian\: All kinds of problems. From move 0\: Q16 D16 Q3 D4 N17 Q5 R5 R6 R4 Q6 O3 Q10 C3 C4 D3 E3 E2 F2 F3 E4 G2 D2 F1 C2 F17 F16 E16 E15 E17 D17 D15 F15 C15 D18 H17 B16 B15 B18 C11 E12 D10 C9 C7 D9 E9 D8 F10 B12 D13 B11 E13 F13 F12 G12 F11 J15 K16 K15 L16 E8 F8 F7 G7 G8 F9 F6 H7 C12 D12 L15 G5 N5 R12 R17 R16 Q17 P17 P18 O18 P16 O17 S16 S15 S18 T16 S17 P15 Q18 Q9 R9 R8 Q8 P9 R10 S8 R7 P8 Q7 P10 Q11 P12 M16 G16 G15 M17 K12 M4 M5 L5 L6 K5 Q12 Q13 R13 P11 S12 R14 S13 C10 B10 M12 H11 J10 J11 K10 H10 H9 N4 N3 P4 P3 K6 J6 F5 F4 L4 M3 J5 K4 G6 H6 H5 G4 H8 J7 J8 K7 G9 B3 B2 B4 B5 C5 
+Svecify\: White could sac the corner and kill the center of black?
+])
+(;W[bp];B[br]C[
+
+-- chat --
+Svecify\: This variation you shared. From move 0\: Q16 D16 Q3 D4 N17 Q5 R5 R6 R4 Q6 O3 Q10 C3 C4 D3 E3 E2 F2 F3 E4 G2 D2 F1 C2 F17 F16 E16 E15 E17 D17 D15 F15 C15 D18 H17 B16 B15 B18 C11 E12 D10 C9 C7 D9 E9 D8 F10 B12 D13 B11 E13 F13 F12 G12 F11 J15 K16 K15 L16 E8 F8 F7 G7 G8 F9 F6 H7 C12 D12 L15 G5 N5 R12 R17 R16 Q17 P17 P18 O18 P16 O17 S16 S15 S18 T16 S17 P15 Q18 Q9 R9 R8 Q8 P9 R10 S8 R7 P8 Q7 P10 Q11 P12 M16 G16 G15 M17 K12 M4 M5 L5 L6 K5 Q12 Q13 R13 P11 S12 R14 S13 C10 B10 M12 H11 J10 J11 K10 H10 H9 N4 N3 P4 P3 K6 J6 F5 F4 L4 M3 J5 K4 G6 H6 H5 G4 H8 J7 J8 K7 G9 B3 B4 B2 
+Svecify\: But black can make an eye on the side with c13
+])))

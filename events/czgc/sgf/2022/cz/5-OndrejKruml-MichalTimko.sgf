@@ -1,0 +1,16 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]AP[CGoban:3]SZ[19]GM[1]RO[5]PB[Ondrej Kruml]PW[Michal Timko]
+KM[6.5]RE[B+R]MULTIGOGM[1]
+;B[qd];W[dp];B[cd];W[qp];B[nc];W[oq];B[cq];W[dq];B[cp];W[do];B[bn];W[ed];B[ec];W[fc]
+;B[dc];W[gd];B[fe];W[fd];B[de];W[kc];B[cm];W[qj];B[hq];W[dm];B[dl];W[el];B[ek];W[cn]
+;B[cl];W[bo];B[co];W[dn];B[bp];W[fk];B[fl];W[em];B[ej];W[gk];B[kq];W[qg];B[pk];W[pj]
+;B[nk];W[hm];B[oj];W[og];B[qk];W[ol];B[ok];W[qm];B[mm];W[pc];B[pd];W[oc];B[od];W[nb]
+;B[qc];W[qb];B[rb];W[pb];B[mc];W[mb];B[fi];W[ne];B[nd];W[le];B[qf];W[rf];B[pf];W[rh]
+;B[re];W[ra];B[rc];W[fg];B[dg];W[lk];B[om];W[ko];B[ip];W[mq];B[km];W[nn];B[nm];W[gr]
+;B[mr];W[nr];B[in];W[gi];B[im];W[ll];B[lm];W[li];B[gj];W[fj];B[fh];W[bm];B[ao];W[gh]
+;B[gl];W[hk];B[hl];W[dk];B[dj];W[gq];B[ik];W[hj];B[eg];W[ff];B[gp];W[fp];B[fo];W[go]
+;B[hp];W[eq];B[ee];W[ge];B[rj];W[nh];B[lr];W[hr];B[ir];W[rl];B[ph];W[pg]
+(;B[kj];W[lj];B[ii];W[jh];B[hi];W[hg];B[ij];W[gj];B[nf];W[mf];B[of];W[oi];B[rk]
+;W[on];B[mo];W[np];B[fb];W[gb];B[eb];W[gn];B[ig];W[ei];B[eh];W[hf];B[jg];W[cj];B[di]
+;W[bl];B[ck];W[bk];B[dk];W[ci];B[bh];W[ch];B[bg];W[cg];B[bf];W[dd];B[ce];W[cc];B[cb]
+C[black win by resignation])
+(;B[nf];W[mf];B[of];W[oi];B[rk];W[ij]))

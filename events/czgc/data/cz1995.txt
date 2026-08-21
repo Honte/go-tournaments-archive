@@ -1,0 +1,23 @@
+; EV[Czech Championship `95]
+; PC[CZ, Plzen]
+; DT[1995-08-23,1995-08-27]
+; KM[5.5]
+; TM[2h]
+; HA[h9]
+;P.	Jmeno hrace	Trida	stat	Klub	MM	B	SOS	SDOS	1.	2.	3.	4.	5.	6.	7.
+   1 Nechanicky Radek               6D CZ  Nb      29     7   182   182      8+      7+      5+      2+      3+      4+      9+
+   2 Danek Vladimir                 6D CZ  Pha     28     6   183   154      5+      4+      3+      1-      9+      8+      7+
+   3 Cipra Petr                     5D CZ  Li      27     5   182   125      9+     14+      2-      7+      1-      5+     10+
+   4 Cieply Martin                  4D CZ  Ov      26     4   182   100     11+      2-      7-      6+     10+      1-      0+
+   5 Holecek David                  4D CZ  Pha     26     4   181    97      2-     10+      1-      0+     14+      3-      8+
+   6 Nechanicky Vitezslav           4D CZ  Nb      26     4   173    97      7-      8-      0+      4-     15+     16+     11+
+   7 Mechura Jan                    4D CZ  Pl      22     3   186    77      6+      1-      4+      3-      8-      9+      2-
+   8 Emmer Jiri                     5D CZ  Pl      22     3   183    75      1-      6+     14+      9-      7+      2-      5-
+   9 Koranda Tomas                  4D CZ  Pl      22     3   181    72      3-      0+      0+      8+      2-      7-      1-
+  10 Dach Zbynek                    4D CZ  Pl      22     3   175    72     14-      5-     11+      0+      4-     15+      3-
+  11 Holecek Jiri                   4D CZ  Pha     21     3   174    73      4-     16-     10-     13+      0+     14+      6-
+  12 Beran Jiri                     2D CZ  Pl      21     5   164   117     13+      0-     15+      0+      0+      0+     16+
+  13 Dica Vladimir                  2D CZ  KV      21     5   164   114     12-      0+      0+     11-      0+      0+     14+
+  14 Valasek Petr                   4D CZ  FM      21     2   177    49     10+      3-      8-     16+      5-     11-     13-
+  15 Javurek Vladimir               3D CZ  Pha     21     3   171    72      0-      0-     12+      0+      6-     10-      0+
+  16 Pavlik Ivo                     2D CZ  FM      20     4   170    95      0+     11+     14-      0+      0+      6-     12-

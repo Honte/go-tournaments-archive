@@ -1,0 +1,15 @@
+name: 7th Czech Championship
+stages:
+  - type: tournament
+    name: Championship
+    file: cz1999.txt
+    scoringColumns:
+      - wins
+      - null
+      - sodos
+      - direct
+    breakers:
+      - wins
+      - sodos      
+      - direct
+    findSharedPlaces: true

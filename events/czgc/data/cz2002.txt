@@ -1,0 +1,22 @@
+; TC[T020702]
+; CL[A]
+; EV[Czech Championship 2002]
+; PC[CZ,Frydek-Mistek]
+; DT[2002-07-02,2002-07-07]
+; KM[5.5]
+; TM[2h30]
+; HA[h9]
+;                          Czech Championship, Frydek-Mistek
+;                                  July 2 - 7, 2002
+;
+;Pl     Name             Grade  Club  Pos S  x  x   1.    2.    3.    4.    5.    6.    7.    8.    9.
+   1 Danek Vladimir                 6d CZ  Pra      8     1    30     1    4+/w    6+/w    9+/b    2+/w    5+/b   10+/w    8+/b    7+/w    3-/b |10213016
+   2 Nechanicky Radek               6d CZ  Nym      8     2    29     0    7+/w    3+/b    4+/w    1-/b    9+/w    6+/w    5+/b   10+/w    8+/b |10250196
+   3 Hora Jan                       5d CZ  Pra      7     3    26     0    9+/b    2-/w    5+/b   10+/w    8+/b    7+/w    6-/b    4+/b    1+/w |10401083
+   4 Cipra Petr                     4d CZ  Libe     5     4    14     0    1-/b    9-/w    2-/b    5+/w   10+/b    8+/w    7+/b    3-/w    6+/b |10249503
+   5 Holecek David                  4d CZ  Pra      4     5    10     1    8+/w    7+/b    3-/w    4-/b    1-/w    9-/b    2-/w    6+/w   10+/b |10250504
+   6 Kuzela Martin                  4d CZ  Zli      4     6    13     0   10+/w    1-/b    8-/w    9+/b    7+/w    2-/b    3+/w    5-/b    4-/w |10250702
+   7 Dach Zbynek                    4d CZ  Plz      3     7     6     2    2-/b    5-/w   10+/b    8+/w    6-/b    3-/b    4-/w    1-/b    9+/w |10233872
+   8 Kostka Ivan                    3d CZ  FMi      3     8     7     1    5-/b   10+/w    6+/b    7-/b    3-/w    4-/b    1-/w    9+/b    2-/w |10286716
+   9 Nechanicky Petr                2d CZ  Nym      3     9     9     0    3-/w    4+/b    1-/w    6-/w    2-/b    5+/w   10+/b    8-/w    7-/b |10233267
+  10 Holecek Jiri                   4d CZ  Pra      0    10     0     0    6-/b    8-/b    7-/w    3-/b    4-/w    1-/b    9-/w    2-/b    5-/w |10225501

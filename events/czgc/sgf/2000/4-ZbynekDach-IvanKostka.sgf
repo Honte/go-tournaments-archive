@@ -1,0 +1,52 @@
+(;CA[windows-1250]FF[4]ST[3]AP[Hibiscus:2.1]SZ[19]GM[1]GN[4.5]EV[MR 2000]RO[4]DT[6/7/2000]
+PC[Brno]PB[Dach Zbynek]BR[4 d]PW[Kostka Ivan]WR[3 D]KM[5.5]TM[7200]RE[W+?]MULTIGOGM[1]
+;B[pd];W[dc];B[dp];W[pq];B[qo];W[qm];B[pm];W[pl];B[om];W[qn];B[op];W[oq];B[np]
+(;W[mq]C[I think this move jumped too early. See variation.];B[ro]LB[ql:A][nq:B]
+C[Good move, A and B becomes miai.];W[qk];B[nq];W[nr];B[mr]C[Cut inside would be better.]
+;W[lr];B[or];W[ms];B[pr]C[Still the black corner is big.];W[ce];B[ic];W[qf];B[nc]
+;W[fq];B[cn];W[dr];B[cq];W[hp]LB[iq:A][kq:B]C[Playing at A gives white a safe shape. Now black has 
+a severe attack at B.]
+;B[cg]LB[fc:A][gc:B]C[I think A would be bigger, because when white answers 
+at B, black upper side looks weak.]
+;W[gc];B[ie]C[So black needs a move to defend.]
+(;W[ci]LB[of:A]C[A move at A is also very attractive for white. See 
+variation.]
+;B[eg];W[cl];B[cr];W[ei];B[gg];W[of]C[A perfect move for white.];B[mf]LB[rd:B][kq:C]
+[ne:A]C[This doesn't give black territory but weakness. Later if 
+white plays at A, the black shape looks not fine.
+Play at B would be better for black. Or take sente to 
+play at C. C is a urgent move.]
+;W[rd];B[nf];W[og]C[Good for white.];B[oi];W[mh]LB[qi:A]C[Looks like an overplay. Play at A would be normal.]
+;B[nj]LB[nk:A]C[Keima at A would be much easier for black.];W[nl]C[Severe.];B[nh]
+;W[ng];B[mg];W[mi];B[mj];W[ki];B[lj];W[kh];B[pj];W[ol];B[kj];W[ii];B[jj];W[ih];B[qj]
+;W[hk];B[qc];W[rc];B[rb]LB[qh:A]C[Should wait for this move, because maybe black will 
+need a move at A to live. This is just a end-game 
+move, could be played later. At anytime this is sente 
+for black.]
+;W[qd];B[pe];W[qh];B[qb];W[oh]C[Now the black group lost eye shape and the white 
+position is stronger.]
+;B[lm];W[mn]LB[kq:A]C[It looks like that black will not have chance to play at A 
+anymore.]
+;B[mp];W[ln];B[jm];W[kn];B[hm];W[km];B[jl];W[gl];B[gm];W[lp]C[Very big. And black has to defend in the lower 
+right corner. White is leading on territory now.]
+;B[kq];W[lq];B[ni];W[ri];B[rj];W[rg]
+(;B[po]C[Necessay. See variaiton.];W[kl]C[Good move to defend the cutting at A. This move 
+makes the black shape in the certer weaker.]
+;B[fi]C[Good try.];W[ij];B[ik];W[fj];B[gi];W[gj];B[hl];W[fl];B[io];W[ip];B[hf]LB[cc:A]
+C[The situation is close, but if black defend here and 
+white get sente to play next, I think black could not 
+kimi. So black should try to invade in the upper left 
+corner. A move at A for example.]
+(;W[kf]C[Here is not big. See variation.];B[ke];W[hb];B[jo];W[kp];B[jp];W[jq];B[gp]
+;W[hq];B[gq];W[gr];B[fp];W[fr]C[Konec zápisu.
+
+At this moment, white is leading on territory. But the 
+upper left corner is not clear yet, if black could invade 
+there, I think the game is not yet finished.])
+(;W[ib];B[jb];W[hc];B[id];W[bf];B[bg];W[ee]C[Just make the corner strong would be good enough for 
+white. In that case I think white is leading a few 
+points on board.]))
+(;B[];W[qq];B[qr];W[rq];B[rr];W[pp];B[po];W[oo]C[Black dies.]))
+(;W[of];B[rd]
+(;W[re])))
+(;W[nq]C[ ];B[mp];W[lq]C[This would be more normal.]))

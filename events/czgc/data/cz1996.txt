@@ -1,0 +1,22 @@
+; TC[T960624]
+; CL[A]
+; EV[Czech Championship `96]
+; PC[CZ, Karlovy Vary]
+; DT[1996-06-24,1996-06-30]
+; KM[5.5]
+; TM[2h]
+; HA[h9]
+;                    Mistrovstvi Ceske republiky 1996
+;                    24. - 30. 6. 1996, Karlovy Vary
+;
+;Pl    Name           Rank  Club  MM S SOS SDOS  1.  2.  3.  4.  5.  6.  7.  8.  9.
+   1 Danek Vladimir                 6D CZ  Pra      9     9    36     0     10+      2+      3+      4+      5+      6+      7+      8+      9+ |10213016
+   2 Nechanicky Radek               6D CZ  Nym      8     8    28     0      9+      1-     10+      3+      4+      5+      6+      7+      8+ |10250196
+   3 Holecek David                  4D CZ  Pra      6     6    17     0      8+      9+      1-      2-     10+      4-      5+      6+      7+ |10250504
+   4 Dach Karel                     3D CZ  Plz      5     5    16     0      7-      8+      9+      1-      2-      3+     10+      5+      6- |10298508
+   5 Cipra Petr                     5D CZ  Libe     5     5    12     0      6+      7+      8+      9+      1-      2-      3-      4-     10+ |10249503
+   6 Koranda Tomas                  4D CZ  Plz      4     4    10     0      5-     10+      7+      8-      9+      1-      2-      3-      4+ |10233498
+   7 Konopac Daniel                 3D CZ  Pra      3     3     9     0      4+      5-      6-     10+      8+      9-      1-      2-      3- |10298893
+   8 Holecek Jiri                   4D CZ  Pra      3     3     6     0      3-      4-      5-      6+      7-     10+      9+      1-      2- |10225501
+   9 Kuzela Martin                  2D CZ  Zli      1     1     3     0      2-      3-      4-      5-      6-      7+      8-     10-      1- |10250702
+  10 Mechura Jan                    4D CZ  Plz      1     1     1     0      1-      6-      2-      7-      3-      8-      4-      9+      5- |10237502

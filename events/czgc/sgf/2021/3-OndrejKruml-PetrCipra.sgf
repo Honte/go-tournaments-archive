@@ -1,0 +1,35 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]OT[5x30 byo-yomi]AP[CGoban:3]SZ[19]GM[1]GN[Czech go champ. Cipra 3D(W) x Kruml 6D(B)]
+EV[Czech go championship 2021]RO[3]DT[2021-07-03]PC[The KGS Go Server at http\://www.gokgs.com/]
+PB[Ondřej Kruml]BR[6d]PW[Petr Cipra]WR[3d]KM[6.5]TM[3600]RE[B+R]MULTIGOGM[1]
+;B[pd];W[dd]C[ngarry [-\]\: round 3?
+MR1 [?\]\: yes
+MR1 [?\]\: thanks
+ngarry [-\]\: ok
+]
+;B[pq];W[dp];B[pn];W[nc];B[pf]C[akinn [3k\]\: ah b is in theory the stronger player
+]
+;W[qc]C[akinn [3k\]\: interesting start
+];B[pc];W[pb];B[ob]C[akinn [3k\]\: dont know about corner immediatly
+]
+;W[qb];B[oc];W[re];B[rf];W[qe];B[qf];W[pe];B[oe]C[MR1 [?\]\: starting number was drawn at the start of tournament and this draw decide colors of each players in each game
+]
+;W[nb];B[na];W[jd];B[se];W[rd];B[of];W[nd];B[od];W[sb];B[fq];W[cn];B[dq];W[cq];B[cr]
+;W[eq];B[dr];W[ep];B[er];W[fp];B[gq];W[ho];B[cf];W[ch];B[cc];W[cd];B[dc];W[ed];B[bd]
+;W[be];B[bc];W[ce];B[fc];W[ge]C[r0n1n [?\]\: it seems strange starting to develop the top side with k16 and then discard it with c12 
+r0n1n [?\]\: g17 to aim at j15 looks like a solid way to play
+]
+;B[fd];W[fe];B[ef];W[cg]C[SImasakrzz [1d\]\: w also imba? 
+SImasakrzz [1d\]\: solid influence
+]
+;B[hl];W[ip];B[jl];W[gj];B[fl];W[ql];B[rn];W[lk];B[kj];W[kk];B[jk];W[jj]C[wolokom [4k\]\: is anny comment here?
+]
+;B[ki];W[lm];B[hi];W[mf]C[leachy [1k\]\: yes, black comfortably ahead for mine
+]
+;B[ij];W[qi];B[me]C[GoBreeze [4d\]\: I don't see what  n14 is accomplishing, I'd rather have cut at h10 j10 j11 and get cash
+]
+;W[ne];B[nf];W[le];B[mg];W[lf]C[squid [?\]\: take
+];B[mb];W[lc];B[nj];W[nh];B[oh]
+;W[nk];B[ok];W[ol];B[nl];W[mk];B[pl];W[pk];B[om];W[oj];B[ol];W[oi];B[mh];W[mi];B[ng]
+;W[lh];B[ni];W[mj];B[nh];W[rh];B[qk];W[qj];B[rk];W[pj];B[rj];W[ri];B[rl];W[ph];B[qg]
+C[MR1 [?\]\: B+ Resign
+])

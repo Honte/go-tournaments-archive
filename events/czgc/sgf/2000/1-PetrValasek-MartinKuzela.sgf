@@ -1,0 +1,70 @@
+(;CA[windows-1250]FF[4]ST[3]AP[Hibiscus:2.1]SZ[19]GM[1]GN[1.4]EV[MR 2000]RO[1]DT[4/7/2000]
+PC[Brno]PB[Valasek Petr]BR[4 D]PW[Kuzela Martin]WR[3 D]KM[5.5]TM[7200]RE[W+R]MULTIGOGM[1]
+;B[pd];W[dp];B[pq];W[ec];B[qo];W[kq];B[fq]MA[kq]LB[jq:A]C[When the marked move went so far, black does want 
+to invade here. If the marked stone is at A, that will be 
+another story.]
+(;W[er]C[This is not a bad move,  but only in some special 
+cases. In the beginning of the game we don't want to 
+put stones on the second line. See variation.]
+(;B[eq]C[But this is a bad move, this move makes white strong. 
+See variation.]
+;W[dq];B[fr];W[dr];B[iq];W[nq];B[cn]C[Now it is different, the white corner is much strongeer.]
+;W[dn]LB[eo:A]C[Kosumi at A would be better. This move helps black.];B[dm];W[co]
+C[Been shoot in in the beginning of the game is not 
+happy for white.];B[en];W[do]
+;B[em]C[Connects outside is a good choice for black.];W[fo];B[kp]LB[io:A]C[Not necessary, this move makes the two white stones 
+strong. See variation. Just jump at A would be easy for 
+black.]
+;W[lp];B[jp];W[fp]LB[lo:A]C[Nobi at A is a move we should never miss. ];B[lo]C[This is too bad for white.]
+;W[no]
+(;B[de]C[This is a big move, but the fighting on the lower side is 
+not yet finish. See variation.]
+;W[cd];B[ce];W[bd];B[di];W[cm]LB[lq:A]C[This is a big move, but it is not as urgent as 
+play at  A.]
+;B[cl];W[bn]C[Now black could take sente.];B[pn];W[mo];B[lq];W[mp]
+(;B[kr]C[I would like to play as in the variation.];W[ln]C[A bit painful for black.]
+;B[ko];W[om];B[pl];W[qj]C[Looks like an overplay. The white group is not yet 
+settled, making another weak group is not very wise.]
+(;B[ok]C[Could be more severe. See variation.];W[qg];B[qe];W[qm]
+(;B[ql]LB[pm:A]C[Should just connect at A, keep simple is the best way 
+for black. See variation.]
+;W[rl];B[rk];W[rn];B[sl];W[rm];B[qk];W[pm]C[This becomes complicated, not necessary for black.]
+;B[on];W[nm];B[nn];W[mn];B[mm]C[I don't think this would work. The black corner is even 
+not yet alive.]
+;W[nk]C[Very good.];B[nj];W[ll];B[km];W[lm];B[mk];W[ml];B[ro]C[The result is not bad for black. I think white could play 
+more severely. ]
+;W[oi];B[nl];W[pj];B[og];W[ni];B[mi];W[ol];B[pk];W[oj]LB[lk:A]C[Is this necessary? Without this move, white has a 
+sente move at A.]
+;B[nk];W[nh];B[mf];W[ki];B[mh];W[ng];B[mg];W[of];B[oe];W[nf];B[ne];W[lj];B[mj];W[kc]
+C[Because black has very strong position, the 
+situation is good for black at this moment.]
+;B[jk]C[A severe move.];W[kl];B[jl];W[kj]C[Very painful for white.];B[fd]C[Attack the big white group by pushing here, the idea is 
+very correct.]
+;W[fc];B[gd];W[kf];B[mc]C[Safe. ];W[rf]C[In the first place I think the white group is already 
+alive. Secondly, I don't think white has time to play 
+here. ]
+(;B[ii]C[Could much more severe. See variation.];W[jh]C[But even like this, white is still in great danger.]
+(;B[re]C[Too slow. As long as  black doesn't die in the corner, 
+attack black outside is more important. The game 
+could decide here. See variation.]
+;W[mb];B[nb];W[md];B[me];W[se];B[sd];W[sf]C[Konec zápisu.
+
+The game recorded until here, the result was white 
+wins by resignation. But if we look at the situation now, 
+black is still leading. I would that black could just kill 
+white.])
+(;B[if]C[This is the shape.]
+(;W[jg];B[kd]C[Than again attack the shape.])
+(;W[le]C[If white plays something like this...];B[kg];W[jg];B[jf];W[me];B[ke];W[lf]
+;B[kh];W[ji];B[kd])))
+(;B[kg]C[Want to cut from here.];W[jg];B[kh];W[jh];B[jf];W[if];B[je];W[ii];B[gc]
+C[Black could make territory like this.];W[ie];B[id]C[There is nothing in the black territory.]))
+(;B[pm]LB[rk:A][ll:B]C[Now black has A or B as miai.]))
+(;B[ol]C[This is the shape.]
+(;W[qg];B[ll]C[This looks very bad for white.])
+(;W[nl];B[nk];W[ml];B[qg];W[ok];B[oj];W[pk];B[ql]C[This is also very bad for white.])))
+(;B[ln]C[Nobi to the center is important.];W[kr];B[nm]))
+(;B[lq];W[mp];B[lr]C[Black has eyes, white hasn't, and black got many 
+points. The difference it very clear.]))
+(;B[iq];W[nq];B[io];W[ko];B[cn]C[Black should play something like this. ]))
+(;W[eq];B[fp];W[dn];B[iq];W[nq]C[This would be more normal.]))

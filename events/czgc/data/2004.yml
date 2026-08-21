@@ -1,0 +1,15 @@
+name: 12th Czech Championship
+stages:
+  - type: tournament
+    name: Championship
+    file: cz2004.txt
+    scoringColumns:
+      - wins
+      - null
+      - sodos
+      - direct
+    breakers:
+      - wins
+      - direct
+      - sodos
+    findSharedPlaces: true

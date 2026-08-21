@@ -1,0 +1,48 @@
+(;CA[windows-1250]FF[4]ST[3]AP[Hibiscus:2.1]SZ[19]GM[1]GN[2.4]EV[MR 2000]RO[2]DT[5/7/2000]
+PC[Brno]PB[Holecek David]BR[4 D]PW[Kostka Ivan]WR[3 D]KM[5.5]TM[7200]RE[B+R]MULTIGOGM[1]
+;B[qd];W[dp];B[dd];W[qp];B[od];W[oq];B[qj];W[cf];B[di];W[cc];B[cd];W[dc];B[ed];W[bd]
+;B[be];W[bc];B[ce];W[fc];B[cn];W[fp]
+(;B[df]MA[di]LB[dj:A]C[If the marked stone is at A, this defending is normal. 
+Now I would like to play as in the variation. ]
+;W[ql];B[lc];W[qh];B[oj];W[qe]LB[rj:A]C[This is tesuji, but it also makes black strong. Just 
+connects at A would be ok for white]
+;B[pe];W[qf];B[rd];W[og];B[ol]LB[rj:A]C[Very good move. It reduces the white moyo on the 
+lower right and it is more difficult for white to 
+connect at A now.]
+;W[dk];B[cq];W[cp];B[bp]
+(;W[dq]MA[dk]C[I think the direction of this move is wrong. If black lives 
+in the corner, the marked white move becomes less 
+useful. See variation.]
+;B[br];W[cr];B[bq];W[jp]LB[ip:A]C[Play at A would be better, this move may cost white 
+two moves to defend the lower side.]
+;B[en]C[Very good move, the game look difficult for white.];W[fk];B[gn]MA[jp]C[This is what I mean about the marked move. White 
+needs one more move to defend.]
+;W[ho]
+(;B[lq]C[This is very big. If we don't know how to attack in the 
+center, this would be a good idea. But I would like to 
+take the chance. See variation.
+
+White should try to get sente here.]
+;W[lo]C[Good direction.];B[jq];W[iq];B[ir];W[jr]C[The only move for white. White has to keep black 
+weak, that would help the weakness in the center.]
+;B[kq];W[hr];B[ip];W[hq];B[mo];W[jo];B[nq];W[nr]LB[op:A]C[Should nobi at A. In the first place the lower isde is not 
+interesting. Secondly, A gives white a strong shape 
+which white really needed.]
+;B[op]C[Good move for black.];W[pq];B[ln];W[lp];B[mp];W[mr];B[mq];W[gc]C[Not a bad idea\: make a strong shape, helps the weak 
+groups indirectly.]
+;B[qn]C[Big.];W[rj];B[ri];W[qi];B[rk];W[pj];B[qk];W[pk];B[pl];W[ok];B[nk];W[pi]
+;B[rl]C[White lost points here.];W[ci];B[ch];W[cj];B[bh];W[kb];B[fi]C[Severe. Black is leading at this moment.]
+;W[hk];B[lb];W[jc]
+(;B[ge]C[See variation.];W[la];B[ma];W[ka];B[mc];W[po];B[ro];W[rp];B[ko];W[io];B[hd]
+;W[ib];B[hi];W[dm];B[dn];W[cm];B[bm];W[bl];B[bn];W[kp];B[nm];W[ml];B[nl];W[dr];B[bk]
+;W[cl];B[al];W[am];B[an];W[aj];B[bs];W[kn];B[lm]C[Konec zápisu.
+
+Black is leading about 10  points on board.])
+(;B[in];W[io];B[cl]C[This would be more severe, and it is also a big move.]))
+(;B[hk]C[Feels like to attack first, especially when white has 
+one more weak group on the right side.]))
+(;W[bo];B[bq];W[co];B[er];W[fr];B[eq];W[fq];B[ep];W[eo];B[dq];W[dn]C[White has a nice position outside.]))
+(;B[bp]C[Or...];W[cq];B[dl]C[Of course, there is still aji on the left side, but really 
+want play like this for black.])
+(;B[hc]C[Defending by attacking.];W[fd];B[fe];W[ge];B[ff];W[hd];B[id];W[ie];B[jd]
+;W[gf];B[gg];W[fg];B[df]C[Let's fight.]))

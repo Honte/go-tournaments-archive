@@ -1,0 +1,22 @@
+; TC[T990622A]
+; CL[A]
+; EV[Czech Championship 1999]
+; PC[CZ,Liberec]
+; DT[1999-06-22,1999-06-27]
+; KM[5.5]
+; TM[2h30]
+; HA[h9]
+;                           Czech Championship, Liberec 1999
+;                                 June 22 - 27, 1999
+;
+;Pl     Name             Grade  Club  Pos S SOS SDOS  1.     2.    3.    4.    5.    6.    7.    8.    9.
+   1 Danek Vladimir                 6d CZ  Pra      9     1    36     0    6+/b    7+/w    4+/b    8+/w    5+/b    9+/b    3+/w   10+/b    2+/w |10213016
+   2 Nechanicky Radek               6d CZ  Nym      7     2    25     0    9+/w    3+/b   10+/w    5-/w    6+/b    7+/w    4+/b    8+/w    1-/b |10250196
+   3 Dach Zbynek                    4d CZ  Plz      6     3    18     0   10+/b    2-/w    6+/b    7+/w    4-/b    8+/w    1-/b    9+/w    5+/b |10233872
+   4 Mechura Jan                    4d CZ  Plz      5     4    16     0    5+/b    8+/b    1-/w    9+/b    3+/w   10+/b    2-/w    6-/b    7-/w |10237502
+   5 Valasek Petr                   4d CZ  FMi      4     5    15     1    4-/w   10+/b    8+/w    2+/b    1-/w    6-/b    9-/w    7+/b    3-/w |10333653
+   6 Cipra Petr                     5d CZ  Libe     4     6    14     2    1-/w    9-/b    3-/w   10+/b    2-/w    5+/w    7+/b    4+/w    8-/b |10249503
+   7 Hora Jan                       3d CZ  Pra      4     7    11     0    8+/w    1-/b    9+/w    3-/b   10+/w    2-/b    6-/w    5-/w    4+/b |10401083
+   8 Dach Karel                     4d CZ  Plz      3     8     7     0    7-/b    4-/w    5-/b    1-/b    9+/w    3-/b   10+/w    2-/b    6+/w |10298508
+   9 Holecek Jiri                   4d CZ  Pra      2     9     8     0    2-/b    6+/w    7-/b    4-/w    8-/b    1-/w    5+/b    3-/b   10-/w |10225501
+  10 Grosser Tomas                  2d CZ  KVa      1    10     2     0    3-/w    5-/w    2-/b    6-/w    7-/b    4-/w    8-/b    1-/w    9+/b |10225908

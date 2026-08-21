@@ -1,0 +1,19 @@
+; TC[T140626A]
+; CL[A]
+; EV[Czech Championship]
+; PC[CZ, Frydek-Mistek]
+; DT[2014-06-26,2014-06-29]
+; HA[h9]
+; KM[6.5]
+; TM[130]
+; CM[ (submitted by cieply)]
+;.
+;
+1 Silt Ondrej        6d CZ  AKGY  6    6    18   4-/b   3+/w   2+/b   7+/w   8+/b   6+/w   5+/b    |10337481
+2 Hora Jan           6d CZ  APra  5    5    15   8+/w   6-/b   1-/w   4+/b   3+/w   5+/w   7+/b    |10401083
+3 Podpera Lukas      6d CZ  APWS  5    5    12   6+/w   1-/b   4+/w   5+/w   2-/b   7+/w   8+/b    |13201914
+4 Prokop Jan         5d CZ  SRic  4    4    10   1+/w   5-/w   3-/b   2-/w   7+/b   8+/w   6+/b    |10433654
+5 Simara Jan         6d CZ  KVaS  4    4    8    7+/w   4+/b   8+/w   3-/b   6+/w   2-/b   1-/w    |10749860
+6 Kruml Ondrej       5d CZ  Brno  2    2    6    3-/b   2+/w   7-/b   8+/w   5-/b   1-/b   4-/w    |10886524
+7 Cipra Petr         3d CZ  xxxx  1    1    2    5-/b   8-/b   6+/w   1-/b   4-/w   3-/b   2-/w    |10249503
+8 Snidal Bronislav   2d CZ  TOst  1    1    1    2-/b   7+/w   5-/b   6-/b   1-/w   4-/b   3-/w    |10750476

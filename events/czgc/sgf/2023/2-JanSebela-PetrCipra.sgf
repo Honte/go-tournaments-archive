@@ -1,0 +1,40 @@
+(;CA[utf-8]GM[1]OT[Error: time control missing]RU[Japanese]AP[MultiGo:4.4.4]SZ[19]
+FF[4]GN[Czech Championship round 2 board 4]RO[2]PC[https\://online-go.com/review/1146513]
+PB[Jan Šebela]BR[3d]PW[Petr Cipra]WR[4d]KM[6.5]RE[W+R]MULTIGOGM[1]
+;B[dp];W[pp];B[dc];W[pd];B[nc];W[qf];B[pc];W[qc];B[qb];W[oc];B[pb];W[od];B[ob];W[nd]
+;B[mc];W[rc];B[jd];W[fq];B[cn];W[dq];B[cq];W[cr];B[eq];W[dr];B[ep];W[er];B[bq];W[hq]
+;B[qn];W[ql];B[qq];W[qp];B[pq];W[op];B[rp];W[ro];B[rq];W[rn];B[nq];W[ce];B[ch];W[dh]
+;B[di];W[cg];B[eh];W[dg];B[ci];W[ec];B[dd];W[fd];B[ee];W[fe];B[ef];W[eg];B[ff];W[ei]
+;B[gc];W[fh];B[bd];W[cl];B[dk];W[dl];B[ej];W[dn];B[co];W[gl];B[gj];W[hh];B[ij];W[jh]
+;B[go];W[hm];B[fp];W[gq];B[io];W[jm];B[il];W[im];B[fm];W[fl];B[kk];W[lm];B[lj];W[lh]
+;B[gm];W[el];B[fi];W[hl];B[gh];W[gg];B[gi];W[fg];B[hg]C[
+
+-- chat --
+tasuki\: B 45 mins, W 55
+tasuki\: nice fight
+]
+;W[hf];B[ig];W[if];B[jg];W[jf];B[kg];W[gf];B[kf];W[db];B[cb];W[eb];B[cd];W[ic]C[
+
+-- chat --
+tasuki\: Cipra sighed so loud I could hear it across the room
+tasuki\: seems the black attack not such a big success, smart to throw H12 away, black top left corner still suspect
+]
+;B[ib];W[hc];B[hb];W[de];B[ed];W[gd];B[gb];W[fc];B[jc];W[ba];B[bb];W[ca];B[da];W[ea]
+;B[be];W[bf];B[ae];W[ac];B[bc];W[ab]C[
+
+-- chat --
+tasuki\: B has like 6 liberties?
+tasuki\: W has, uhh, at least 8 ?
+]
+;B[hd];W[af];B[ge];W[he];B[ie];W[je];B[id]C[
+
+-- chat --
+tasuki\: ah, a lot of liberties are suddenly gone after G15
+]
+;W[kq];B[bh];W[ke];B[le];W[ld];B[md];W[bg];B[df];W[cf];B[kd];W[da];B[fa];W[aa];B[fb]
+;W[ge];B[eh];W[lf];B[me];W[ei];B[mm];W[ad];B[kp];W[ln];B[ml];W[lp];B[lq];W[jq];B[lo]
+;W[mp];B[mo];W[ko];B[kn];W[jp];B[jo];W[km];B[kp];W[mn];B[no];W[ko];B[rm];W[jn]C[
+
+-- chat --
+tasuki\: black has resigned!
+])

@@ -1,0 +1,212 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]OT[1x30 byo-yomi]C[CZchamp22a [?\]\: We are waiting  for Jan Simara
+]
+AP[CGoban:3]SZ[19]GM[1]GN[CZ championship rnd 6 Kruml Simara]EV[Czech championship]
+RO[6]DT[2022-07-05]PC[Olomouc]PB[Ondřej Kruml]BR[6d]PW[Jan Šimara]WR[6d]KM[6.5]
+TM[60]RE[B+0.5]AN[Ondřej Bláha]MULTIGOGM[1]
+;B[qd];W[dc];B[cp];W[pp];B[qq];W[pq];B[qp];W[po];B[qn];W[qo];B[ro];W[rp];B[rq];W[rn]
+;B[sp];W[qm];B[ed];W[nl];B[ec]C[CZchamp22a [?\]\: Black is Ondrej Kruml
+CZchamp22a [?\]\: White is Jan Simara
+CZchamp22a [?\]\: Both players are 6d 
+]
+;W[cd];B[dd];W[cc];B[cf];W[ce];B[df];W[bf];B[bg];W[ae];B[eg];W[ep];B[gq];W[cq];B[dq]
+;W[dp];B[eq];W[fq];B[fr];W[co];B[bp];W[fp];B[dr];W[gp];B[hq];W[ff];B[ef];W[oc];B[bo]
+;W[cn];B[bn];W[cm];B[fm];W[en];B[ld];W[pe];B[qe];W[pf];B[qf];W[pg];B[qh];W[jd];B[ne]
+;W[pd];B[qc];W[jf];B[lf];W[ph];B[qi];W[kg];B[mh];W[lh];B[li];W[mi];B[nh];W[pi]C[CZchamp22a [?\]\: time black 42\:30 white 41\:51
+CZchamp22a [?\]\: Fisher time (+30 sec per move)
+]
+;B[nb];W[ni];B[ob];W[jp];B[io];W[jo];B[in]C[battlego [?\]\: how are the other board doing? \:)
+]
+;W[iq];B[ck];W[dk]C[CZchamp22a [?\]\: all still playing
+];B[cj];W[hp];B[ip];W[ir]
+;B[hr]C[CZchamp22a [?\]\: Lukas Podpera vs Petr cipra and Jan Prokop vs Leon Defer  will have determined outcome
+]
+;W[hs];B[gr];W[kq];B[ki];W[ii]C[CZchamp22a [?\]\: Current photos put on facebook (Go klub Olomouc)
+Wulfiii [?\]\: white c2 is nothing?
+CZchamp22a [?\]\: https\://www.facebook.com/GoKlubOlomouc/events
+]
+;B[ik]C[CZchamp22a [?\]\: I think C2-C1 ..
+Wulfiii [?\]\: c2-c1-e1?
+MXHero [4d\]\: it's probably C2 B2 for now, due to the B7 aji (although even that isn't very much aji)
+CZchamp22a [?\]\: Jan Prokop won  
+trongo [4k\]\: h8 
+Wulfiii [?\]\: with c2 b2 e1 white still captures those 5 stones?
+MXHero [4d\]\: c2 b2 e1 e2 d1 b3 c1 b1, B wins by one liberty
+trongo [4k\]\: h8 c2 j8 
+]
+;W[gk]C[MXHero [4d\]\: b is leading in solid territory by about 10-15
+redreoicy [3d\]\: c2 b2 e1 e2 g1 c1 f1 b3 and black has 10 points in the corner
+]
+;B[hj]C[redreoicy [3d\]\: time for tengen?
+MXHero [4d\]\: i wonder if just scooping up the J6 stones would be good enough
+]
+;W[il]C[redreoicy [3d\]\: it would be more than good enough, as long as top doesn't die
+]
+;B[hl];W[hm]C[Tangjie [3d\]\: its clear to me Black is winning
+];B[im];W[jl];B[gl]
+C[wolokom [4k\]\: i dont understand 
+Tangjie [3d\]\: Now I think white is winning
+MXHero [4d\]\: w's hope, i think in general, is to treat the top situation and the bottom situations as two different problems, sequentially (like it looks like what's happening now)
+Tangjie [3d\]\: J6 being cut off is too much
+]
+;W[hn];B[jk];W[kl];B[kk]C[MXHero [4d\]\: wooo, L8 seems greedy to me
+MXHero [4d\]\: oh i see, there was a danged net; not greedy lol
+Tangjie [3d\]\: issue is does white give black a way into the bottom or does white protect and pray for the top side
+]
+;W[gh];B[ll];W[km];B[lm];W[kn];B[fi];W[fk];B[hk]C[Tangjie [3d\]\: the past 20 moves the game has gone back and forth between 2pts for either side
+CZchamp22a [?\]\: time\: black (Kruml) 25\:21 white (sh
+CZchamp22a [?\]\: white (simara) 7\:00
+MXHero [4d\]\: the local move is just D8, but how ugly is that
+me123 [2d\]\: Can b e9?
+MXHero [4d\]\: b can D8 and capture all, if w leaves it
+me123 [2d\]\: Yes. Then b can attack white at top without weak group
+]
+;W[dl]C[me123 [2d\]\: Hmm
+];B[gj]C[MXHero [4d\]\: w must be winning now
+];W[gd]
+C[wolokom [4k\]\: but how
+];B[eb];W[bh];B[cg];W[ca];B[hc];W[hd];B[ic];W[mg]C[me123 [2d\]\: If b where the bot 9d, w group would die, that is for sure.
+Tangjie [3d\]\: if w where the bot 9d, w group would live, that is for sure
+wolokom [4k\]\: m 13
+]
+;B[lg];W[kh];B[ng]C[me123 [2d\]\: Agree, LOL
+wolokom [4k\]\: exactly
+MXHero [4d\]\: there is complicated m10 aji
+wolokom [4k\]\: i still b is winning
+]
+;W[mn]C[wolokom [4k\]\: huge
+];B[pr];W[or];B[qr]C[me123 [2d\]\: Prefer R2 vs Q2
+MXHero [4d\]\: O2 works though
+Tangjie [3d\]\: B+1.5 @73%
+wolokom [4k\]\: next move for w not easy
+]
+;W[sn];B[so];W[rl]C[CZchamp22a [?\]\: o2 clamp ?
+];B[ji];W[jh]C[me123 [2d\]\: o2 does not work. W just p1
+]
+;B[fg];W[gg]C[wolokom [4k\]\: f6?
+me123 [2d\]\: J16 and then K17 huge
+];B[jc]C[groskiki [3k\]\: Too small 
+groskiki [3k\]\: F6
+me123 [2d\]\: Too small? get the whole top
+groskiki [3k\]\: I meant f6 \:)
+groskiki [3k\]\: Not k17
+groskiki [3k\]\: ;)
+groskiki [3k\]\: K17 is massive yep
+]
+;W[fe];B[os];W[nr]C[wolokom [4k\]\: f6 too small?
+MXHero [4d\]\: it's going to be played soon; it's sente and more than 0 points
+]
+;B[bm]C[groskiki [3k\]\: B7 is big too
+groskiki [3k\]\: \:)
+MXHero [4d\]\: now C2 will be responded to with E1
+me123 [2d\]\: Seems b is winning. B got those big points
+wolokom [4k\]\: f7 is very huge
+CZchamp22a [?\]\: is o1 sente ?
+wolokom [4k\]\: but sente
+wolokom [4k\]\: and huge if no answer
+]
+;W[ei]C[wolokom [4k\]\: this is fine
+wolokom [4k\]\: and ,,,,,
+CZchamp22a [?\]\: Lukan won by 16.5
+wolokom [4k\]\: luk jampion?
+]
+;B[fh]C[CZchamp22a [?\]\: need last game to decide
+];W[kd];B[lc]C[wolokom [4k\]\: ah
+]
+;W[qj];B[rj];W[rk];B[fn];W[gn];B[ns];W[ms];B[ps];W[is]C[wolokom [4k\]\: time?
+CZchamp22a [?\]\: black 21\:00 white 3\:51
+me123 [2d\]\: J1 nice, w can gain some points by c2?
+wolokom [4k\]\: w leads
+MXHero [4d\]\: E1 seems to be the only move here
+wolokom [4k\]\: fr me too
+]
+;B[pj]C[MXHero [4d\]\: maybe q10 first, just because
+];W[qk];B[mk];W[nk];B[es];W[di]
+C[CZchamp22a [?\]\: G1 ?  ... N2
+];B[ri];W[pc];B[pb];W[kf]C[MXHero [4d\]\: G1 is w gote because of the N2 aji, but G1 F1 N2 would be the sequence
+]
+;B[le];W[ci]C[CZchamp22a [?\]\: G1 is black sente
+MXHero [4d\]\: righto
+];B[hi]
+;W[ih]C[redreoicy [3d\]\: i count a big white win
+wade [5d\]\: n5 looks intersting for b
+]
+;B[mj];W[nj];B[bj]C[redreoicy [3d\]\: a13 looks big
+redreoicy [3d\]\: but maybe r13 and a10 is bigger
+wade [5d\]\: n5 m6 n2 m1 p3 o3 o4 n3 m2 l1 m3 p4 n4 p3 q6 kills
+]
+;W[gc];B[gb];W[kc];B[kb];W[qg];B[rg];W[fl];B[gm];W[em];B[sj]C[redreoicy [3d\]\: i think n5 o6
+wade [5d\]\: o6 doesnt work as well
+wade [5d\]\: n5 o6 n2 m1 p3 o3 o4 n3 m2 l1 m3 p4 n4 p3 q6 p5 p6 o5 m6 and b connects
+]
+;W[ag]C[me123 [2d\]\: Very close game
+];B[mm];W[nm]C[redreoicy [3d\]\: i thought directly playing p4 without n3 as white 
+redreoicy [3d\]\: but i guess black would still gain 2 points
+redreoicy [3d\]\: maybe more
+MXHero [4d\]\: N2 M1 L2 L1 N5 is going to get something
+coconut [1k\]\: g1 sente
+battlego [?\]\: who has won the other boards?
+battlego [?\]\: \:)
+me123 [2d\]\: M6 first?
+CZchamp22a [?\]\: Lukan won vs Cipra
+robertqi78 [-\]\: @redreoicy\: i shared your broken latter game with Peng Quan 7P.  He discussed that game in his Chinese tiktok live stream this morning...you now have many fans in China
+CZchamp22a [?\]\: Prokop won vs Defer
+]
+;B[mo]C[redreoicy [3d\]\: exciting
+CZchamp22a [?\]\: Caha vs Timko are still playing
+redreoicy [3d\]\: i think w can just o6 here now that b exchanged n7 o7
+redreoicy [3d\]\: but maybe there is something
+wade [5d\]\: let the fun begin \:D
+]
+;W[nn]C[toratiro [2k\]\: and now n2?
+wade [5d\]\: n2 m1 m4 m5 m2 l1 p3 o3 p4 
+MXHero [4d\]\: M4 is tesuji yeah
+]
+;B[mr]C[redreoicy [3d\]\: this is a huge reversal then
+CZchamp22a [?\]\: black 13\:21 white é\:30
+CZchamp22a [?\]\: 0\:30
+]
+;W[mq];B[lr];W[lq]C[toratiro [2k\]\: ah whites just giving up a few points.
+toratiro [2k\]\: makes sense.
+CZchamp22a [?\]\: Timko vs Caha finished - counting now
+]
+;B[kr];W[jr];B[ls];W[nc];B[bi];W[mc];B[mb];W[ch];B[db];W[cb]C[redreoicy [3d\]\: i think white is somehow still barely ahead
+CZchamp22a [?\]\: I would prefer black win  in order to avoid cycling
+]
+;B[ke]C[wade [5d\]\: maybe b had to atari at n2 as "timesuji" to make w respond and then get better result on the bottom
+]
+;W[je];B[fo];W[gs];B[fs];W[id];B[fc];W[ai];B[bl];W[ml];B[aj]C[redreoicy [3d\]\: haha
+]
+;W[lk];B[lj];W[fj];B[gi];W[ah];B[sk];W[sl]C[wolokom [4k\]\: its close
+];B[dj];W[ej]
+;B[eo];W[do];B[go];W[ho]C[wolokom [4k\]\: n 17?
+wolokom [4k\]\: p 12?
+alexqi [8d?\]\: half point game
+]
+;B[hh];W[hg];B[da];W[ln]C[wolokom [4k\]\: jigo would be ok but we need a winner
+]
+;B[lk];W[of];B[nf];W[md]C[indianayk [4d\]\: wha is komi?
+CZchamp22a [?\]\: 6.5
+alexqi [8d?\]\: p14 would have been better at p15
+]
+;B[me]C[wolokom [4k\]\: p12
+];W[ij];B[jj]C[comeon [?\]\: b+0.5
+indianayk [4d\]\: thx. i coubt b by 0.5
+]
+;W[fd]C[CZchamp22a [?\]\: P12
+indianayk [4d\]\: p12 is dame
+redreoicy [3d\]\: too bad for w
+wolokom [4k\]\: for b
+comeon [?\]\: p14 lost the last point
+]
+;B[oh];W[oi];B[cl];W[dh]C[redreoicy [3d\]\: yes
+redreoicy [3d\]\: i think w wins 0.5 if playing p15 instead
+wolokom [4k\]\: realy
+toratiro [2k\]\: i get b+ 0.5
+toratiro [2k\]\: but i dont trust my counting..
+CZchamp22a [?\]\: black won by 0.5
+wolokom [4k\]\: kruml  gratolation
+CZchamp22a [?\]\: Frantisek Caha won
+tomason [?\]\: What are the rules if Scurge, Písa and Janek would  be cycled?
+CZchamp22a [?\]\: blitz games
+hhkomi5k [4k\]\: championship over?
+])

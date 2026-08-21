@@ -1,0 +1,18 @@
+; TC[T180628A]
+; CL[A]
+; EV[Czech Go Championship 2018]
+; PC[CZ, Frydek-Mistek]
+; DT[2018-06-28,2018-07-01]
+; HA[h9]
+; KM[6.5]
+; TM[112.5]
+; CM[ (submitted by Jana_H)]
+;.
+   1 Podpera Lukas                  7d CZ  APWS     6     6    16     2636    5+/b    3-/w    6+/b    7+/w    2+/b    4+/w    8+/b |13201914
+   2 Prokop Jan                     6d CZ  SRic     6     6    16     2545    6+/b    7+/w    8+/b    4+/b    1-/w    5+/b    3+/w |10433654
+   3 Simara Jan                     6d CZ  KVaS     6     6    16     2541    4+/w    1+/b    5+/w    8+/w    6+/b    7+/w    2-/b |10749860
+   4 Kruml Ondrej                   5d CZ  Brno     4     4     6     2517    3-/b    6+/w    7+/b    2-/w    8+/b    1-/b    5+/w |10886524
+   5 Cipra Petr                     3d CZ  MJes     3     3     3     2292    1-/w    8+/w    3-/b    6+/w    7+/b    2-/w    4-/b |10249503
+   6 Kachyna Ondrej                 3d CZ  Brno     1     1     1     2253    2-/w    4-/b    1-/w    5-/b    3-/w    8+/w    7-/b |14725876
+   7 Timko Michal                   2d CZ  APWS     1     1     1     2175    8-/b    2-/b    4-/w    1-/b    5-/w    3-/b    6+/w |16462072
+   8 Kotowski Tereza                1d CZ  TFMi     1     1     1     2083    7+/w    5-/b    2-/w    3-/b    4-/w    6-/b    1-/w |15401364

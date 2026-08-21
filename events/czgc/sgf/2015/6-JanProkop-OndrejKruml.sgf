@@ -1,0 +1,52 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]OT[20/600 Canadian]C[U [?\]\: this matchup should be fun
+U [?\]\: jan tied for the lead at 4-1 so far, with lukas. kruml 2-3
+]
+AP[CGoban:3]SZ[19]GM[1]GN[Czech championship round 6 - Ondrej Kruml 5d (w) vs. Jan Prokop 5d (b)]
+EV[Czech championship]RO[6]DT[2015-09-29]PC[The KGS Go Server at http\://www.gokgs.com/]
+PB[Jan Prokop]BR[5d]PW[Ondřej Kruml]WR[5d]KM[6.5]TM[5400]RE[B+R]MULTIGOGM[1]
+;B[pd];W[dc];B[pq];W[dp];B[de];W[nc];B[qf];W[ee];B[cc];W[dd];B[cd];W[df];B[ce];W[cg]
+;B[ef];W[fe];B[db];W[eb];B[cb];W[fc];B[cn]C[H16 [2d\]\: c13 kosumi is not?
+];W[ck]
+;B[gp];W[dn];B[cq];W[dq];B[dm];W[en];B[cp];W[cm]C[bleen [1d\]\: i guess this was already asked.. but what about silt ? Why isnt he playing?
+bleen [1d\]\: Is he?
+Korf [1d\]\: he has qualified but is not playing
+]
+;B[co];W[do]C[bleen [1d\]\: hope there was no accident or sth 
+];B[jp];W[bm];B[dr]
+;W[er];B[cr]C[H16 [2d\]\: weird not to exchange b7 atari
+H16 [2d\]\: anyway this is the 2nd corner with suspicious result for white
+]
+;W[mf];B[ed];W[ec];B[ci];W[eg]C[herissondu [5d\]\: not exchanging b7 allows to move d7 out more easily
+]
+;B[em];W[fm];B[ek];W[gn];B[ei];W[bi];B[bh];W[ch];B[fl];W[gl]
+(;B[])
+(;B[gk];W[hl];B[bj];W[di];B[cj];W[dj];B[dk];W[bk];B[ai]C[H16 [2d\]\: w kills top left corner, should be enough
+]
+;W[fj];B[ej];W[dh];B[bg]C[H16 [2d\]\: I wonder w's nex move
+];W[dl];B[el];W[fi]
+;B[fk];W[hj];B[eh];W[fg];B[cf];W[dg];B[cl]C[H16 [2d\]\: looks w fails
+melmak\: f12 look forced
+]
+;W[hk];B[bl];W[lp];B[fo];W[fn];B[kn]C[TurtleDove [5k\]\: B left side is 40 pts. W can still win but work to do
+]
+;W[np];B[po];W[jo];B[ko];W[kp];B[ip];W[jn];B[nn];W[ln];B[km];W[mn]C[melmak\: even if w safes all top its not more than 50
+]
+;B[nm];W[ml];B[mm];W[lm];B[ll];W[lk];B[kl];W[mj];B[kk];W[kj];B[jj];W[ho];B[ki];W[lj]
+;B[nl];W[mk];B[fh];W[gg];B[ii];W[jh];B[ji];W[mh];B[jk]C[MR2015b [-\]\: white enters byoyomi
+]
+;W[kr];B[jg];W[gh];B[lg];W[mg];B[jr]
+(;W[no])
+(;W[oq];B[no];W[mp];B[or];W[pr];B[op];W[nq];B[qr];W[jq];B[iq];W[kq];B[ir];W[nr]
+;B[ps];W[gr]
+(;B[hp];W[ns];B[ks];W[ls];B[mr];W[js];B[is];W[ks];B[mo];W[lo];B[lf]C[wade [5d\]\: f4 and b wins the fight
+]
+;W[le]C[MR2015b [-\]\: both players in byoyomi
+];B[fp]C[blitzcake [7d?\]\: game over 
+MR2015b [-\]\: white resigned
+blitzcake [7d?\]\: My estimations are on point as usual
+Liso66 [?\]\: other games? 
+MR2015b [-\]\: Hora defeated Snidal, others in the table at http\://www.ulita.bk.cz/go/turnaj/MR2015Blansko.htm
+MR2015b [-\]\: Podpera has just defeated Cipra by 25 points
+Shinichi56 [-\]\: the amount of points is important?
+])
+(;B[ks];W[ls];B[mr];W[ns]))))

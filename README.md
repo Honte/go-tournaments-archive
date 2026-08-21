@@ -25,22 +25,23 @@ Available event directories:
 
 | Event ID | Archive                           | Notes                                                                            |
 | -------- | --------------------------------- | -------------------------------------------------------------------------------- |
+| `wagc`   | World Amateur Go Championships    | Locales `en`, `pl`, country stats                                                |
+| `kpmc`   | Korea Prime Minister Cup          | Locales `en`, `pl`, country stats                                                |
 | `egc`    | European Go Championships         | Locale `en`, country stats                                                       |
 | `epc`    | European Pro Go Championships     | Locale `en`                                                                      |
 | `epq`    | European Pro Qualification        | Locale `en`                                                                      |
 | `esgc`   | European Student Go Championships | Locale `en`, country stats                                                       |
 | `ewgc`   | European Women Go Championships   | Locale `en`, country stats                                                       |
 | `eygc`   | European Youth Championships      | Locale `en`, country stats, category stats for `u21`, `u20`, `u18`, `u16`, `u12` |
+| `czgc`   | Czech Go Championships            | Locale `en`                                                                      |
 | `hrgc`   | Croatian Go Championships         | Locale `en`                                                                      |
 | `nlk`    | Dutch Go Championships            | Locale `en`                                                                      |
 | `nlkd`   | Dutch Women Go Championships      | Locale `en`                                                                      |
 | `iegc`   | Irish Go Championships            | Locale `en`                                                                      |
-| `kpmc`   | Korea Prime Minister Cup          | Locales `en`, `pl`, country stats                                                |
 | `pagc`   | Polish Academic Go Championships  | Locales `pl`, `en`                                                               |
 | `pgc`    | Polish Go Championships           | Locales `pl`, `en`                                                               |
 | `pwgc`   | Polish Women Go Championships     | Locales `pl`, `en`                                                               |
 | `pygc`   | Polish Youth Go Championships     | Locales `pl`, `en`, category stats for `u21`, `u20`, `u18`, `u16`, `u15`, `u12`  |
-| `wagc`   | World Amateur Go Championships    | Locales `en`, `pl`, country stats                                                |
 | `wgl`    | Warsaw Go League                  | Locales `pl`, `en`                                                               |
 
 Event-specific config, translations, colors, logo, data, and SGF files live in `events/[event-id]/`.

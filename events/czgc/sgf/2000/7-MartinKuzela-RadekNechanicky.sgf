@@ -1,0 +1,74 @@
+(;CA[windows-1250]FF[4]ST[3]AP[Hibiscus:2.1]SZ[19]GM[1]GN[7.4]EV[MR 2000]RO[7]DT[8/7/2000]
+PC[Brno]PB[Kuzela Martin]BR[3 D]PW[Nechanicky Radek]WR[6 D]KM[5.5]TM[7200]RE[W+?]
+MULTIGOGM[1]
+;B[pd];W[dp];B[oq];W[dd];B[fq];W[dn];B[ip];W[qk];B[qi];W[po];B[qp];W[qo];B[rp];W[jc]
+;B[cf];W[ch];B[cc];W[dc];B[cd];W[de];B[bf];W[mc]LB[eg:A]C[Play at A would be normal, but it is never bad to try 
+something new.]
+;B[df]LB[fd:A]C[After this move, black has a severe attack at A, this 
+means sente is important for both black and white.]
+;W[qf]
+(;B[pf]LB[nd:A]C[I think play at A would be more severe. See variation.]
+(;W[pe]C[Could be better. See variations.];B[oe];W[qe];B[qd];W[pg];B[of]MA[pe][oe]
+C[The exchange of the marked moves killed one of white 
+liberty.];W[qh]C[So white had play this painful move.]
+;B[pi];W[og];B[oc]C[Good shape for black. White is going to have difficult 
+time now.]
+;W[ok];B[ni];W[mg];B[nk]LB[li:A]C[Too close, this would help white. Should be played at 
+A.]
+;W[nl];B[mk];W[oj];B[oi];W[nf];B[nh];W[ne];B[od];W[ng];B[li]C[In the end, black still has to play here. ]
+;W[ck];B[ro]LB[fd:A]C[Play at A would be more urgent. And this move is also 
+too low.]
+;W[np]C[Good move.];B[op];W[oo];B[no]C[It looks like a misreading.];W[mo];B[nq]
+C[Too bad for black.];W[nn]C[White is leading now.]
+(;B[cq]LB[fd:A]C[This is very big but not urgent at the moment. It should 
+be played at A. In the variations you can find how the 
+fighting there should be.]
+;W[dq];B[dr];W[kh]LB[jh:A]C[Sharp. I think this move has decided the game. Play at 
+A is even faster.]
+;B[fe];W[gc];B[he];W[gf];B[fc];W[fb];B[gd];W[hc];B[ff];W[eg]C[Not necessary.];B[fg]
+C[Of course black would counterattack.];W[ki];B[kj]LB[kk:A]C[Jumps at A would walk faster.]
+;W[jj];B[kk];W[jk];B[ml];W[nm];B[lh];W[lg];B[jl];W[il];B[jm];W[lm]C[Very painful for black, it is all because white has a 
+strong shape here. ]
+;B[rk];W[rj];B[rl];W[ri];B[kl];W[ef];B[eh];W[dg];B[hh];W[ii];B[di];W[bh];B[dk];W[cl]
+;B[hi];W[ig];B[hf]C[Still difficult game for black. White has more territory 
+and white is stronger.]
+(;W[jo]C[This move could lose points. See variation.];B[jp];W[hk];B[lp]C[Very good, black had to try to get most points. 
+White lost at least 15 points on the lower side. If white 
+can't get much from the attacking in the center, black 
+would have a chance to win. And it doesn't look easy 
+at all for white.]
+;W[kn];B[im];W[gj];B[gi];W[io];B[hl];W[ik];B[ho];W[ej];B[fi];W[ei];B[fj];W[fh];B[gh]
+;W[hm];B[hn];W[gl];B[ek]C[White lost too much in the fighting here.];W[ql];B[gp]
+C[If black doesn't defend here but defend in the upper 
+left corner, the game would be close.]
+;W[cb];B[bb];W[ba]C[Severe.];B[db];W[da];B[ca];W[lo];B[in];W[cb];B[eb];W[ec];B[ca]
+;W[rd];B[rc];W[cb];B[ac];W[ea];B[bd];W[ab];B[aa];W[re];B[nb];W[ab];B[rg];W[rm];B[aa]
+;W[sc];B[sd]C[Too dangerous for black to play like this. Just nobi at A 
+would be still ok.]
+;W[rb]C[Severe. White got a chance again.];B[qc];W[sb];B[qb];W[ra];B[qg];W[se];B[rh]
+;W[ph];B[mb];W[lb];B[ma]C[Black lost too many points in the fight of this ko, that 
+means white doesn't need to get much from the ko 
+threats anymore. ]
+;W[cp];B[br];W[bq];B[cr];W[ab];B[qj];W[sl];B[aa];W[cj];B[dj];W[ab];B[sh];W[sf];B[aa]
+;W[mq];B[lq];W[ab];B[sj];W[sk];B[aa];W[mp];B[mr]C[Konec zápisu.
+
+Black can't win the ko any more. ])
+(;W[cp];B[br];W[bq];B[cr];W[mq]C[This would be a easy game for white. White is a bit 
+ahead on board and black has weakness.]))
+(;B[fd]
+(;W[ee]C[If white plays here...];B[id];W[jd];B[ie])
+(;W[fe];B[ee];W[ed];B[ef]
+(;W[gd]C[It is not possible for white to kill the black stone.];B[fc];W[gc];B[fb]
+;W[db];B[gb]C[White can't stop black anymore.]
+(;W[hb];B[ge];W[ff];B[fg];W[gf];B[hc];W[hd];B[he];W[id];B[hf]C[White dies.])
+(;W[hc];B[ib]C[A tesuji.]
+(;W[hb];B[ge];W[ff];B[he])
+(;W[ic];B[hb];W[cb];B[bb];W[ba];B[ab]C[White dies.])))
+(;W[fc];B[gd];W[gc];B[hd];W[hc];B[id]C[This is too painful for white.]))))
+(;W[pg]C[In this situation, hane here looks better than the result 
+in the game for white.]
+(;B[qg];W[pe];B[of];W[qe];B[oe];W[rg];B[qh];W[qd];B[oc];W[qc];B[oh];W[ng];B[og]
+;W[gd];B[qm];W[pm];B[ql];W[pl];B[rk];W[mm])
+(;B[of]C[If black nobi...];W[qe];B[qd];W[og]LB[pe:A]C[Now white doesn't have to push at A anymore (that 
+was the game).])))
+(;B[nd];W[md];B[ne];W[ob];B[qc];W[ph];B[pk];W[ql];B[pi];W[nh];B[me]C[I this this would be more difficult for white.]))

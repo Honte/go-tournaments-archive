@@ -1,0 +1,20 @@
+
+; TC[T201124A]
+; CL[D]
+; EV[Czech Championship 2020]
+; PC[CZ, OGS]
+; DT[2020-11-24,2020-12-20]
+; HA[h9]
+; KM[6.5]
+; TM[120]
+; CM[ (submitted by cieply)]
+;.
+;
+1 Podpera Lukas   7d CZ  APWS  7    7    21   4+/b   6+/w   7+/b   3+/w   8+/b   2+/w   5+/b    |13201914
+2 Prokop Jan      6d CZ  Imba  6    6    15   6+/b   7+/w   3+/b   8+/w   5+/b   1-/b   4+/w    |10433654
+3 Kruml Ondrej    5d CZ  Imba  5    5    10   5+/b   8+/b   2-/w   1-/b   4+/w   6+/b   7+/w    |10886524
+4 Hora Jan        6d CZ  APra  4    4    6    1-/w   5+/w   6+/b   7+/w   3-/b   8+/w   2-/b    |10401083
+5 Kouba Petr      4d CZ  APWS  2    2    2    3-/w   4-/b   8+/w   6-/b   2-/w   7+/b   1-/w    |14533926
+6 Cipra Petr      3d CZ  CPis  2    2    2    2-/w   1-/b   4-/w   5+/w   7-/b   3-/w   8+/b    |10249503
+7 Valasek Petr    3d CZ  TFMi  2    2    2    8+/w   2-/b   1-/w   4-/b   6+/w   5-/w   3-/b    |10333653
+8 Timko Michal    2d CZ  APWS  0    0    0    7-/b   3-/w   5-/b   2-/b   1-/w   4-/b   6-/w    |16462072

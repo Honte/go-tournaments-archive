@@ -1,0 +1,24 @@
+; TC[T000704]
+; CL[A]
+; EV[Czech Championship 2000]
+; PC[CZ,Brno]
+; DT[2000-07-04,2000-07-09]
+; KM[5.5]
+; TM[2h30]
+; HA[h9]
+;                           Czech Championship, Brno 2000
+;                                 July 4 - 9, 2000
+;
+;Pl     Name             Grade  Club  Pos S   x SDOS  1.    2.    3.    4.    5.    6.    7.    8.    9.
+;
+; time: 2h+c20/10   komi: 5=
+   1 Nechanicky Radek               6d CZ  Nym      9     1    36     0    7+/b    5+/b    3+/w   10+/b    6+/w      0+    4+/w    8+/b    2+/w |10250196
+   2 Holecek David                  4d CZ  Pra      6     2    22     1    5+/w    3+/b   10+/w    6+/b    9+/w    4-/b    8+/w    7-/w    1-/b |10250504
+   3 Kostka Ivan                    3d CZ  FMi      6     3    19     0    8+/b    2-/w    1-/b    5+/w    7+/b   10+/b    6+/w    9+/b    4-/w |10286716
+   4 Kuzela Martin                  3d CZ  Zli      5     4    18     0   10+/w    6-/b    9+/w    7+/w    8-/b    2+/w    1-/b    5-/w    3+/b |10250702
+   5 Dach Zbynek                    4d CZ  Plz      5     5    16     2    2-/b    1-/w    7+/b    3-/b   10+/w    6+/b    9+/w    4+/b    8-/w |10233872
+   6 Mechura Jan                    4d CZ  Plz      5     6    14     1    9+/b    4+/w    8+/b    2-/w    1-/b    5-/w    3-/b   10+/w    7+/b |10237502
+   7 Cipra Petr                     4d CZ  Libe     3     7    11     1    1-/w    9+/b    5-/w    4-/b    3-/w    8+/b   10-/w    2+/b    6-/w |10249503
+   8 Hora Jan                       4d CZ  Pra      3     8    11     0    3-/w   10+/b    6-/w    9-/b    4+/w    7-/w    2-/b    1-/w    5+/b |10401083
+   9 Grosser Tomas                  3d CZ  KVa      2     9     4     0    6-/w    7-/w    4-/b    8+/w    2-/b      0-    5-/b    3-/w   10+/b |10225908
+  10 Valasek Petr                   4d CZ  FMi      1    10     3     0    4-/b    8-/w    2-/b    1-/w    5-/b    3-/w    7+/b    6-/b    9-/w |10333653

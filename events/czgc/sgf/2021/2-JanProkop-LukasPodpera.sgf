@@ -1,0 +1,103 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]OT[5x30 byo-yomi]AP[CGoban:3]SZ[19]GM[1]GN[Czech go champ. Podpera 7D(W) x Prokop 6D(B)]
+EV[Czech go championship 2021]RO[2]DT[2021-07-03]PC[The KGS Go Server at http\://www.gokgs.com/]
+PB[Jan Prokop]BR[6d]PW[Lukáš Podpěra]WR[7d]KM[6.5]TM[3600]RE[W+7.5]MULTIGOGM[1]
+;B[cp];W[pd];B[dd];W[pq];B[fp];W[nc];B[pp];W[oq];B[op];W[qp];B[qo];W[qq];B[np];W[mq]
+;B[pn];W[cc];B[dc];W[cd];B[cf];W[ce];B[df];W[de];B[ee];W[ef];B[fe];W[eg];B[bf];W[db]
+;B[eb];W[cb];B[fc];W[ch];B[be];W[bd];B[bh];W[ci];B[bi];W[cj];B[bj];W[ck];B[bk];W[da]
+;B[cl];W[dl];B[dm];W[cm];B[bl];W[el];B[em];W[fl];B[re];W[qe];B[rd];W[qg];B[pc];W[oc]
+;B[pb];W[id];B[gf];W[if];B[gh];W[fi];B[gi];W[fj];B[ib];W[gd];B[ic];W[kc]C[bert [?\]\: no comment
+]
+;B[jd]C[GoBreeze [4d\]\: one comment
+];W[hd]C[blynd2\: Yes, GoBreeze?
+bert [?\]\: we're learning to count, starting with one, obviously
+]
+;B[kd];W[lc]C[gbgb\: two comment?
+];B[jc];W[fd];B[ed];W[gb];B[gc];W[hc];B[hb];W[fb]
+;B[ec];W[ea];B[jg]C[bert [?\]\: whata geta, what a  geta
+bert [?\]\: k14 l14 j13 k12 g13 
+bert [?\]\: actually scrap the k14 l14 first
+bert [?\]\: j13 k12 g13 j15 h15 h14 k15 g15 j15 h13 l14 
+]
+;W[ke];B[je];W[hf]C[bert [?\]\: i dont see this working for w
+];B[gg];W[jf];B[kf]
+C[GoBreeze [4d\]\: atari then j12 and w is out
+bert [?\]\: i also dont understand why b didnt play h13 
+]
+;W[kg];B[le];W[ih]C[gbgb\: h13 collapses
+GoBreeze [4d\]\: h13 didn't work\: h13 l13 l15 j13 and w goes out
+bert [?\]\: h13 l13 m15 j13 k12 j12 j15 h15 j11 
+GoBreeze [4d\]\: then atari h12
+GoBreeze [4d\]\: b g13, then atari k11 again and goes out
+]
+;B[hj]C[bert [?\]\: hmmm
+];W[kh];B[ji];W[jh]C[bert [?\]\: i missed the h12 atari
+tomason [2k?\]\: Janek really started in the impolite corner?
+]
+;B[jk]C[MR2 [?\]\: no, he sits across of me
+GoBreeze [4d\]\: b l18 is pretty much alive
+GoBreeze [4d\]\: because w cannot reply m18, otherwise h19 and two eyes
+GoBreeze [4d\]\: w must l18 for a chance to attack
+]
+;W[mg];B[kb];W[pk];B[kq];W[mp];B[mo];W[lo];B[mn];W[kp];B[iq]C[rollstory [2d\]\: why didnt b cut m4?
+]
+;W[kl]C[GoBreeze [4d\]\: bad shapes, eg\: m4 m2 n6 j3
+];B[lk];W[kk];B[lj];W[kj]
+;B[ki];W[li]C[GoBreeze [4d\]\: b is messed up this game, shame
+GoBreeze [4d\]\: messing*
+Sodium\: h8 feels only move
+]
+;B[hl]C[GoBreeze [4d\]\: maybe g9 instead was interesting
+GoBreeze [4d\]\: threathening to kill f10 group
+]
+;W[jj]C[Sodium\: do you want to exchange g9 for f7
+Sodium\: because white might resist this way
+GoBreeze [4d\]\: if f7, then cut at m12 works
+]
+;B[hn]C[Sodium\: g9 f7 m12 13 h11 not working?
+Sodium\: sorry, m12 n11 m13 h11
+GoBreeze [4d\]\: no, simple atari at j11
+Sodium\: yeah, it really doesn't
+Sodium\: yes
+Sodium\: good point, thanks \:)
+GoBreeze [4d\]\: Anyway, current result is very good for w
+]
+;W[ii];B[dg];W[dh];B[gk]C[GoBreeze [4d\]\: d10?
+];W[dj]C[Sodium\: d10 e11?
+];B[ql]
+;W[qk];B[pl]C[Sodium\: I guess that's a seki
+];W[rb];B[qd];W[pe];B[qb]C[GoBreeze [4d\]\: if w gets p18 sente, then k19 could kill
+GoBreeze [4d\]\: without p18\: k19 n18 n17 m18 alive
+]
+;W[dp];B[cq]C[GoBreeze [4d\]\: p18 is actually sente, isn't it?
+];W[dq]C[GoBreeze [4d\]\: I bet b will soon lose a group on the top
+scurge [?\]\: Looks super good for b no?
+]
+;B[fq];W[co];B[eo];W[cr];B[br]C[GoBreeze [4d\]\: ko at b1?
+];W[bq];B[bp];W[ar];B[aq]
+;W[bs];B[as];W[gm];B[hm];W[ar];B[ne];W[mf];B[as];W[ik];B[hk];W[ar];B[me];W[oe];B[as]
+;W[ob];B[mb];W[mc];B[ja];W[ar];B[ba];W[bb];B[as];W[ra];B[cs]C[GoBreeze [4d\]\: b already dead, p9 maybe
+bert [?\]\: what is the count now?
+]
+;W[rf];B[ok];W[oj];B[nj];W[nk];B[ol];W[oi]C[GoBreeze [4d\]\: ok, so I think b could still make a ko on the top actually, thus w s14
+]
+;B[mr];W[lr]C[GoBreeze [4d\]\: I see that if w doesn't play s14\: q19 s17 r17 s14 t17 t18 t15
+]
+;B[lq];W[nr];B[lp];W[ms];B[ko];W[ml];B[lm];W[ll];B[kr]C[r0n1n [?\]\: was b m3 really better than o2 ?
+bert [?\]\: i wonder too
+GoBreeze [4d\]\: About even on the board
+]
+;W[rk]C[GoBreeze [4d\]\: So w wins easily with komi I think
+];B[lb];W[na];B[nf]
+;W[og];B[jm];W[ks];B[jr];W[km];B[kn];W[gn];B[go]C[GoBreeze [4d\]\: a15 big
+];W[fk]
+;B[rl]C[GoBreeze [4d\]\: w goes for 5 pts counter sente instead of 7 pts gote, makes sense
+]
+;W[rp];B[ro];W[sl];B[sm];W[sk];B[ac];W[ad];B[ab];W[ae];B[bg];W[jl];B[il];W[fn];B[en]
+;W[mm];B[nl];W[mk];B[nm];W[nq];B[ng];W[nh];B[of];W[pf];B[lg];W[mh];B[lf];W[sn];B[rm]
+;W[so];B[rn];W[sp];B[ha];W[fa];B[nb];W[oa]C[Toge [1k\]\: j15 sente
+];B[nd];W[od]
+;B[ij];W[af];B[ag];W[ma];B[la];W[js];B[is];W[ls];B[ln];W[ld];B[ie];W[he];B[eh];W[fh]
+;B[fg];W[ei];B[jk];W[lh];B[ik];W[fo];B[ho];W[ig];B[gj];W[eh];B[ff];W[fm];B[gl];W[md]
+;B[ke];W[hg];B[ga];W[ge];B[hh];W[hi];B[cg]C[MR2 [?\]\: W+7,5
+MR2 [?\]\: next round at 14\:00
+])

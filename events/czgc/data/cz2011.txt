@@ -1,0 +1,21 @@
+; TC[T110701A]
+; CL[A]
+; EV[Czech Championship]
+; PC[CZ, Frydek-Mistek]
+; DT[2011-07-01,2011-07-06]
+; HA[h9]
+; KM[6.5]
+; TM[120]
+; CM[ (submitted by cieply)]
+;.
+;
+   1 Silt Ondrej                    6d CZ  AKun     9     9    0    3+/w    9+/b    7+/w    6+/b    2+/w    4+/b    8+/w    5+/w   10+/b |10337481
+   2 Podpera Lukas                  4d CZ  APWS     7     7    0    6+/w    5+/w    4-/b    8+/w    1-/b   10+/w    3+/b    9+/w    7+/b |13201914
+   3 Simara Jan                     5d CZ  KVaS     6     6    1    1-/b   10+/w    5-/b    9+/b    7+/w    6+/b    2-/w    4+/b    8+/w |10749860
+   4 Prokop Jan                     4d CZ  SRic     6     6    0    7-/w    6+/b    2+/w    5+/w    8+/b    1-/w   10+/b    3-/w    9+/b |10433654
+   5 Hora Jan                       6d CZ  APra     5     5    0   10+/w    2-/b    3+/w    4-/b    9+/b    8+/b    7-/w    1-/b    6+/w |10401083
+   6 Danek Vladimir                 5d CZ  APra     4     4    1    2-/b    4-/w    8+/b    1-/w   10+/b    3-/w    9+/b    7+/w    5-/b |10213016
+   7 Kruml Ondrej                   4d CZ  Brno     4     4    0    4+/b    8-/w    1-/b   10+/w    3-/b    9+/w    5+/b    6-/b    2-/w |10886524
+   8 Kostka Ivan                    4d CZ  TFMi     2     2    0    9+/w    7+/b    6-/w    2-/b    4-/w    5-/w    1-/b   10-/w    3-/b |10286716
+   9 Zaloudkova Klara               3d CZ  ADra     1     1    1    8-/b    1-/w   10+/b    3-/w    5-/w    7-/b    6-/w    2-/b    4-/w |10798106
+  10 Cipra Petr                     3d CZ  KVaS     1     1    0    5-/b    3-/b    9-/w    7-/b    6-/w    2-/b    4-/w    8+/b    1-/w |10249503

@@ -1,0 +1,67 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]OT[20/600 Canadian]AP[CGoban:3]SZ[19]GM[1]GN[Czech Championship 2012 - round 2, board 3]
+EV[Czech Championship 2012]RO[2]DT[2012-10-11]PC[The KGS Go Server at http\://www.gokgs.com/]
+PB[Lukáš Podpěra]BR[5d]BT[Praha WS]PW[Jan Prokop]WR[5d]WT[Říčany]KM[6.5]TM[5400]
+RE[W+R]AN[Ondřej Dlouhý]MULTIGOGM[1]
+;B[qd];W[dc];B[pp];W[oc];B[md];W[oe];B[pf];W[kd];B[mf];W[mc];B[cp];W[of];B[pg];W[og]
+;B[ph];W[qc];B[pd];W[od];B[pc];W[pb];B[qb];W[ni];B[de];W[dh];B[fe];W[fc];B[he];W[hc]
+;B[cc];W[cb];B[dj];W[fh];B[hh];W[fj];B[ic];W[id];B[hd];W[gd];B[ge];W[ie];B[if];W[jf]
+;B[jg];W[hf];B[ig];W[gg];B[kf];W[ke];B[je];W[jd]C[SIkachnak [3d\]\: omino, the king of vulgar shapes, (seems to be working though)....
+]
+;B[cd];W[bb]C[EuroGoTV3 [-\]\: Where did Omino make bad shape in this actually game?
+]
+;B[ec];W[eb];B[ch]C[SIkachnak [3d\]\: g16 for example... but seems to be good move here...
+]
+;W[ci];B[di];W[dg]C[huy [5k\]\: g5 looks dead
+huy [5k\]\: oups g15
+];B[cg];W[cf]
+;B[bf];W[bi];B[bg];W[ck];B[dk];W[cl];B[dl];W[df];B[ce]C[SIkachnak [3d\]\: f8?
+EuroGoTV3 [-\]\: Congrats, SIkachnak
+]
+;W[fl];B[cm];W[bm];B[bn];W[dm];B[cn]C[SIkachnak [3d\]\: d7-c6- and e8
+];W[el]C[Goprince [4d\]\: what has b done...
+]
+;B[em];W[dn];B[eo];W[do];B[dp];W[en];B[fn];W[fm];B[co];W[em];B[fg];W[ff]C[huy [5k\]\: so, ok black is alive but, not many point
+]
+;B[gf];W[eg];B[hg];W[ae]C[Loial [5k\]\: is b lukan on kgs?
+EuroGoTV3 [-\]\: Yes, black is Lukan.¨
+]
+;B[lc];W[ld];B[le]C[Sandmann [-\]\: dat shape\:O
+SIkachnak [3d\]\: why did w play a15?
+EuroGoTV3 [-\]\: Time spent\: black 43 min., white 53 min.
+]
+;W[jc];B[lb];W[mb];B[ib];W[jb];B[hb]C[SIkachnak [3d\]\: b hallucinating?
+EuroGoTV3 [-\]\: why?
+]
+;W[gc];B[ja]C[SIkachnak [3d\]\: just connect?
+];W[ka];B[la]C[SIkachnak [3d\]\: j19
+]
+;W[ia];B[ob];W[lg];B[lf]C[Ganymed [7k\]\: This looks like kgs blitz.
+Ganymed [7k\]\: Just missing a few harakiri kos
+]
+;W[oh];B[li];W[pi];B[qi];W[qj];B[pj];W[oi];B[rh];W[ri];B[qh];W[pk];B[np];W[ii]C[EuroGoTV3 [-\]\: 2 minutes lag... \:-(
+]
+;B[ji];W[jj];B[kj];W[jh];B[kh];W[ki];B[bl];W[bk];B[ji];W[ep];B[eq];W[ki]C[Sandmann [-\]\: there is your ko
+]
+;B[lk];W[mj];B[ji];W[fo];B[jk];W[ij];B[ik];W[gi];B[ih];W[kl];B[hk];W[gj];B[kk];W[fq]
+;B[er];W[lq];B[nk];W[mk];B[ml];W[nl];B[ol];W[nm];B[ok];W[oj];B[om];W[nn];B[on];W[ll]
+;B[lp];W[kp];B[lo];W[ln];B[ko];W[mq];B[kq]C[q33333\: huh
+EuroGoTV3 [-\]\: Not easy game for both opponents...
+]
+;W[nq];B[oq];W[jp];B[jo];W[mp];B[mo];W[no];B[op];W[jq];B[kr];W[lr];B[jr];W[ir];B[iq]
+;W[ip];B[io];W[hq];B[hp];W[iq];B[jm];W[qn];B[qm];W[rm];B[rn];W[ql];B[ro];W[pm];B[pn]
+C[Etherion [1k\]\: w winning by about 10 points?
+EuroGoTV3 [-\]\: White in byoyomi...
+]
+;W[ma];B[nr];W[js];B[am];W[ei];B[ak];W[ai];B[gr];W[hm];B[im];W[qo];B[qp];W[fr];B[fs]
+;W[gq];B[mg];W[ed];B[ee];W[rj];B[hn];W[sh];B[sg];W[rg];B[si];W[sf]C[EuroGoTV3 [-\]\: Black in byoyomi
+]
+;B[rf];W[sh];B[mi];W[nj];B[sg];W[dq];B[dr];W[sh];B[ah];W[ej];B[sg];W[cq];B[cr];W[sh]
+;B[km]C[Mech91 [2k\]\: ignore
+];W[mm];B[sg];W[rq];B[rp];W[sh];B[aj];W[ek];B[sg]
+;W[pr];B[or];W[sh];B[nc];W[pe];B[nb];W[rd];B[rc]C[Mech91 [2k\]\: h19 big ko
+];W[qe]
+;B[pa];W[se]C[levye [7k\]\: must be played \:)
+Mech91 [2k\]\: g7
+EuroGoTV3 [-\]\: Black resign
+EuroGoTV3 [-\]\: White won
+])

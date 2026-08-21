@@ -1,0 +1,62 @@
+(;CA[windows-1250]FF[4]ST[3]AP[Hibiscus:2.1]SZ[19]GM[1]GN[7.3]EV[MR 2000]RO[7]DT[8/7/2000]
+PC[Brno]PB[Grosser Tomas]BR[3 D]PW[Dach Zbynek]WR[4 D]KM[5.5]TM[7200]RE[W+10.5]
+MULTIGOGM[1]
+;B[jj];W[dp];B[pp];W[dd];B[fq];W[dn];B[jp];W[qn];B[ql]
+(;W[on]C[Good idea. See variation.];B[np];W[pk]C[Choose this joseki is perfect in this situation. ]
+;B[qk]MA[jj]C[I think black should take sente, because if black just 
+finish the joseki in the normal way, the marekd black 
+move will not be in a good position.]
+;W[pj];B[pl];W[ol];B[qj];W[pi];B[qh]
+(;W[om]C[This is joseki, but I think white should take sente here. 
+See variation.]
+(;B[rp]C[Too slow. See variation.];W[og]C[Good move.];B[qg];W[jm]C[The game looks good for white.]
+(;B[fc]C[Higher would be better. See variation.];W[fe]C[Nice idea. The white center looks beautiful.]
+;B[cc];W[cd];B[dc];W[ed];B[gc]LB[ec:A]C[The shape is wrong. Connects at A would be normal for 
+black.]
+(;W[dj]C[White missed the vital point. See variation.]
+(;B[ch]C[We could call this move the first losing move. See 
+variation.];W[dh]C[Correct direction. Of course white can't kill the black 
+stone, but the moyo in the center is big enough.]
+;B[cj];W[ci];B[bi];W[di];B[ck];W[bh];B[bn];W[dk]C[Good direction.];B[co];W[do];B[cq]
+;W[cp];B[bp];W[dq];B[cr];W[cn];B[bo];W[bm]C[Not big enough, the center is more important.]
+;B[bl]LB[he:A]C[Black makes the same mistake, playing at A would be 
+most important.]
+;W[cm];B[am];W[an];B[ao];W[dr];B[ds];W[es];B[cs];W[jf]C[Very good. White is leading now.]
+;B[lo]LB[mg:A]C[If white close the center, black will not have a chance 
+to win the game. So I think black has to get into the 
+moyo. 
+A move at A could be an idea.]
+;W[lm];B[pd]C[This is the last losing move. Black has to break the 
+white moyo, that would be the only chance for black.]
+;W[nd]C[easy for white.];B[nc];W[mc];B[oc];W[md];B[er]C[Playing like this is too easy for white.]
+;W[io]C[Good move.];B[ip];W[ho];B[gp];W[hc]C[Nice tesuji.];B[hb];W[hd];B[ib];W[pf]
+;B[qf];W[pe];B[qe];W[od];B[pc];W[po];B[qp];W[go];B[fo];W[fn];B[jd];W[ec];B[eb];W[db]
+;B[cb];W[fb];B[da];W[gb];B[ga];W[jc];B[ic];W[id];B[kc];W[je];B[kd];W[ke];B[bj];W[bg]
+;B[kl]C[Too late.];W[km];B[ph];W[oh];B[ni];W[li];B[rm];W[rn];B[nk];W[mj];B[mn];W[mm]
+;B[nn];W[nm];B[oo];W[ko];B[kp];W[ln];B[mo];W[qm];B[rl];W[mb]LB[he:A]C[White can't lose the game anymore. 
+
+In this game, both players missed the vital point at A. 
+Fighting localy is nice and attractive, but for strong 
+players, pay attention to the global situation is more 
+important.]
+;B[nb];W[bc];B[bb];W[bd];B[cl];W[dl];B[lb];W[ma];B[la];W[hp];B[hq];W[eo];B[fp];W[eq]
+;B[fr];W[na];B[oa];W[pa];B[ob];W[qi];B[ri];W[jo];B[ld];W[le];B[ac];W[ad];B[ab];W[so]
+;B[sp];W[lc];B[kb];W[gd];B[fa];W[ai];B[aj];W[ah];B[oi];W[ok];B[pg];W[nf];B[rh];W[sm]
+;B[sl];W[sn]C[Konec zápisu.])
+(;B[he]C[This is the vital point. This move reduces the white 
+moyo completely. What white makes on the left side is 
+not important at all.]))
+(;W[ec]C[White should punish black. When our opponet makes 
+a mistake, we should try to punish him immediately, 
+because often we only get one chance. So we should 
+not miss it. ]
+;B[eb];W[db];B[cb];W[fb];B[da];W[hc];B[gb];W[he]))
+(;B[fd];W[df];B[dc];W[cc];B[ec];W[cb];B[id]C[This would be better than the game.]))
+(;B[ph]C[Because the upper right corner is still empty, push up 
+from here is big.]
+;W[oh];B[og];W[nh];B[pf]LB[nj:A]C[After this white has a weak spot at A.]))
+(;W[og]C[This is important for the whole board situation.];B[om]C[If black plays here...]
+;W[nl];B[nm];W[ml]MA[jj]C[The marked black stone looks more and more strange, 
+and there are still a lot of aji in the lower right corner.]))
+(;W[qq];B[pq];W[qp];B[po];W[rn];B[pn]C[This is a normal joseki, but of course in this situation 
+the result is good for black.]))

@@ -1,0 +1,19 @@
+; TC[T061115A]
+; CL[A]
+; EV[Czech Championship]
+; PC[CZ, Karlovy Vary]
+; DT[2006-11-15,2006-11-19]
+; HA[h9]
+; KM[6.5]
+; TM[150]
+;
+   1 Silt Ondrej                    6d CZ  KVa      8     1    29 1    2619    6+/w    5+/b    8+/w    7+/b    4+/w   10+/b    3-/w    2+/w    9+/b |10337481
+   2 Hora Jan                       5d CZ  Pra      8     2    29 1    2588    9+/w    4+/b    6+/w   10+/b    5+/w    3+/b    8+/w    1-/b    7+/w |10401083
+   3 Nechanicky Radek               6d CZ  Nym      8     3    29 1    2585    5+/w    8+/b    7+/w    4+/b   10+/w    2-/w    1+/b    9+/w    6+/b |10250196
+   4 Danek Vladimir                 6d CZ  Pra      6     4    15 0    2538    7+/w    2-/w   10+/b    3-/w    1-/b    9+/w    6+/b    5+/w    8+/b |10213016
+   5 Dach Zbynek                    4d CZ  Plz      5     5    10 0    2422    3-/b    1-/w    9+/b    6+/w    2-/b    8+/b    7+/w    4-/b   10+/w |10233872
+   6 Pisarik Jan                    2d CZ  KVa      4     6     6 0    2317    1-/b    9+/w    2-/b    5-/b    8+/w    7+/b    4-/w   10+/b    3-/w |10749860
+   7 Cipra Petr                     4d CZ  NBo      3     7     3 0    2369    4-/b   10+/w    3-/b    1-/w    9+/b    6-/w    5-/b    8+/w    2-/b |10249503
+   8 Mirka Jakub                    3d CZ  Plz      2     8     1 0    2318   10+/b    3-/w    1-/b    9+/w    6-/b    5-/w    2-/b    7-/b    4-/w |10262934
+   9 Valasek Petr                   3d CZ  FMi      1     9     0 0    2273    2-/b    6-/b    5-/w    8-/b    7-/w    4-/b   10+/w    3-/b    1-/w |10333653
+  10 Kovarik Michal                 1d CZ  Pra      0    10     0 0    2116    8-/w    7-/b    4-/w    2-/w    3-/b    1-/w    9-/b    6-/w    5-/b |13050378
