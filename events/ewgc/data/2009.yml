@@ -13,3 +13,6 @@ stages:
       - sos
       - sodos
     findSharedPlaces: true
+    games:
+      - 2-1 1:W+R round:4 sgf:2009/4-AnnaProkopova-RitaPocsai.sgf
+      - 5-2 2:W+? round:3 sgf:2009/3-LauraAvram-AnnaProkopova.sgf
