@@ -16,7 +16,7 @@ stages:
       - sodos
       - sos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
     collapsed: true
     games:
@@ -25,6 +25,7 @@ stages:
       - 5-16 5:B+102.5 round:3 sgf:2012/u12/3-ArtemKhudoleev-MariaMarkova.sgf
       - 8-2 2:W+R round:4 sgf:2012/u12/4-AndrejMramorov-SilvestruState.sgf
       - 8-6 6:W+47.5 round:1 sgf:2012/u12/1-AndrejMramorov-VjacheslavKajmin.sgf
+      - 13-22 13:B+R round:1 sgf:2012/u12/1-VojtechVasa-RomanPapushoj.sgf
   - type: tournament
     file: eygc2012u16.txt
     category: u16
@@ -40,7 +41,7 @@ stages:
       - sodos
       - sos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
     collapsed: true
     games:
@@ -50,6 +51,8 @@ stages:
       - 4-2 2:W+R round:4 sgf:2012/u16/4-AlexKetelaars-StepanPopov.sgf
       - 4-6 4:B+6.5 round:3 sgf:2012/u16/3-AlexKetelaars-AntonChernykh.sgf
       - 5-11 11:W+8.5 round:1 sgf:2012/u16/1-NikitaKhabazov-AlexandrGlushko.sgf
+      - 8-13 8:B+R round:1 sgf:2012/u16/1-VladyslavVerteleckyi-SamHavelka.sgf
+      - 9-13 9:B+R round:2 sgf:2012/u16/2-DmitrijMiljutkin-SamHavelka.sgf
   - type: tournament
     file: eygc2012u20.txt
     category: u20
@@ -65,7 +68,7 @@ stages:
       - sodos
       - sos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
     collapsed: true
     games:
@@ -73,4 +76,5 @@ stages:
       - 1-3 3:W+7 round:6 sgf:2012/u20/6-LukasPodpera-AlexanderEerbeek.sgf
       - 1-4 1:B+R round:5 sgf:2012/u20/5-LukasPodpera-HlibKairo.sgf
       - 1-5 1:B+13 round:3 sgf:2012/u20/3-LukasPodpera-MihaiValentinSerban.sgf
+      - 1-7 1:B+R round:1 sgf:2012/u20/1-LukasPodpera-MilenaBocle.sgf
       - 8-1 1:W+R round:2 sgf:2012/u20/2-AndreStaedtler-LukasPodpera.sgf
