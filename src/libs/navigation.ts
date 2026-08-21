@@ -5,7 +5,7 @@ type NavigationMethod = 'push' | 'replace';
 type NavigationKind = 'history' | 'route' | 'external';
 
 const PREVIOUS_URL_STATE_KEY = '__goTournamentsArchivePreviousUrl';
-const NAVIGATION_BASE_PATH = process.env.NAVIGATION_BASE_PATH ?? '';
+const NAVIGATION_BASE_PATH = process.env.BASE_PATH ?? '';
 
 const EMPTY_NAVIGATION_STATE: NavigationState = {
   location: null,

@@ -28,7 +28,8 @@ export default async function getConfig() {
     output: configuration.dynamic ? 'standalone' : 'export',
     basePath,
     env: {
-      NAVIGATION_BASE_PATH: basePath,
+      VERSION: process.env.VERSION || Date.now().toString(36),
+      BASE_PATH: basePath,
       ...(configuration.dynamic
         ? {
             FORCED_CONFIGURATION: JSON.stringify(configuration),

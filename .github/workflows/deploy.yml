@@ -16,6 +16,9 @@ on:
           - pygc
           - honte
 
+env:
+  VERSION: ${{ github.sha }}
+
 jobs:
   deploy-pgc-prod:
     if: ${{ github.event_name == 'push' || inputs.event == 'pgc' }}

@@ -26,7 +26,7 @@ export function fetchGames(event: EventContext) {
 }
 
 async function get<T>(path: string) {
-  const response = await fetch(path);
+  const response = await fetch(`${path}${path.includes('?') ? '&' : '?'}v=${process.env.VERSION}`);
 
   return (await response.json()) as T;
 }
