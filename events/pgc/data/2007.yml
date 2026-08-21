@@ -22,7 +22,7 @@ stages:
       - sodos
       - starting
     rounds:
-      - - kc-ls kc
+      - - kc-ls kc:B+R sgf:2007/2007-1-kchwedyna-lsoldan.sgf
         - pc-rj pc
         - mb-jl mb
         - kg-ms kg
@@ -36,7 +36,7 @@ stages:
         - mb-rj mb:W+? sgf:2007/2007-3-mbazynski-rjachym.sgf
       - - kc-pc kc
         - ms-mb ms
-        - jl-kg jl
+        - jl-kg jl:W+3.5 sgf:2007/2007-4-kgdiedrojc-jlubos.sgf
         - rj-ls rj
       - - kc-rj kc
         - ls-pc ls
