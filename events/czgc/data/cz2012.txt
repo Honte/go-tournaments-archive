@@ -1,0 +1,19 @@
+; TC[T121011A]
+; CL[A]
+; EV[Czech Go Championship]
+; PC[CZ, Kutna Hora]
+; DT[2012-10-11,2012-10-14]
+; HA[h9]
+; KM[6.5]
+; TM[110]
+; CM[ (submitted by cieply)]
+;.
+; 
+1 Silt Ondrej        6d CZ  AKun  6    6    19   8+/b   6+/w   4+/b   5-/w   3+/b   2+/w   7+/b    |10337481
+2 Hora Jan           6d CZ  APra  6    6    16   6+/b   4+/w   5+/b   3+/w   7+/b   1-/b   8+/w    |10401083
+3 Prokop Jan         5d CZ  SRic  5    5    11   4+/b   5+/w   7+/b   2-/b   1-/w   8+/b   6+/w    |10433654
+4 Kruml Ondrej       4d CZ  Brno  4    4    7    3-/w   2-/b   1-/w   8+/b   6+/w   7+/w   5+/b    |10886524
+5 Podpera Lukas      5d CZ  APWS  3    3    8    7+/b   3-/b   2-/w   1+/b   8+/w   6-/b   4-/w    |13201914
+6 Simara Jan         6d CZ  KVaS  2    2    4    2-/w   1-/b   8+/w   7-/w   4-/b   5+/w   3-/b    |10749860
+7 Kozelek Tomas      4d CZ  AMFF  1    1    2    5-/w   8-/b   3-/w   6+/b   2-/w   4-/b   1-/w    |13850342
+8 Snidal Bronislav   2d CZ  Brno  1    1    1    1-/w   7+/w   6-/b   4-/w   5-/b   3-/w   2-/b    |10750476

@@ -2,7 +2,7 @@ website: https://www.eurogofed.org/results/student/student2008.htm
 name: 4th European Student Go Championship
 stages:
   - type: tournament
-    file: esgc2005.txt
+    file: esgc2008.txt
     notes: top 3 decided in tie-break
     scoringColumns:
       - mms
@@ -14,5 +14,5 @@ stages:
       - sos
       - sosos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: false

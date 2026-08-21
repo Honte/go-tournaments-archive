@@ -1,0 +1,19 @@
+; TC[T170705A]
+; CL[A]
+; EV[Czech Championship]
+; PC[CZ, Mokra-Horakov]
+; DT[2017-07-05,2017-07-08]
+; HA[h9]
+; KM[6.5]
+; TM[120]
+; CM[ (submitted by cieply)]
+;.
+;
+1 Prokop Jan         6d CZ  SRic  7    7    21 2545  2+/w   4+/b   6+/w   5+/b   8+/w   3+/w   7+/b    |10433654
+2 Podpera Lukas      7d CZ  APWS  6    6    15 2623  1-/b   7+/w   3+/b   4+/b   6+/w   5+/b   8+/w    |13201914
+3 Kruml Ondrej       5d CZ  Brno  5    5    10 2524  7+/w   5+/b   2-/w   8+/b   4+/w   1-/b   6+/w    |10886524
+4 Danek Vladimir     5d CZ  APra  4    4    6  2486  8+/b   1-/w   7+/b   2-/w   3-/b   6+/b   5+/w    |10213016
+5 Hora Jan           6d CZ  APra  3    3    3  2516  6+/w   3-/w   8+/b   1-/w   7+/b   2-/w   4-/b    |10401083
+6 Kachyna Ondrej     3d CZ  Brno  1    1    1  2291  5-/b   8+/w   1-/b   7-/w   2-/b   4-/w   3-/b    |14725876
+7 Snidal Bronislav   3d CZ  PZRu  1    1    1  2258  3-/b   2-/b   4-/w   6+/b   5-/w   8-/b   1-/w    |10750476
+8 Cipra Petr         3d CZ  MJes  1    1    1  2250  4-/w   6-/b   5-/w   3-/w   1-/b   7+/w   2-/b    |10249503

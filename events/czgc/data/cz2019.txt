@@ -1,0 +1,19 @@
+
+; TC[T190704B]
+; CL[A]
+; EV[Czech Championship 2019]
+; PC[CZ, Olomouc]
+; DT[2019-07-04,2019-07-07]
+; HA[h9]
+; KM[6.5]
+; TM[120]
+; CM[ (submitted by Lukan)]
+;.
+1 Hora Jan         6d CZ  APra  6    6    17   7+/w   8+/b   6+/w   4+/w   5+/b   3-/w   2+/b    |10401083
+2 Kruml Ondrej     5d CZ  Brno  6    6    16   5+/b   3+/w   4+/b   7+/b   8+/w   6+/b   1-/w    |10886524
+3 Prokop Jan       6d CZ  SRic  5    5    12   4-/b   2-/b   7+/w   8+/b   6+/w   1+/b   5+/w    |10433654
+4 Podpera Lukas    7d CZ  APWS  5    5    11   3+/w   6+/b   2-/w   1-/b   7+/w   5+/b   8+/w    |13201914
+5 Kachyna Ondrej   3d CZ  Brno  3    3    3    2-/w   7+/b   8+/w   6+/b   1-/w   4-/w   3-/b    |14725876
+6 Cipra Petr       3d CZ  CPis  2    2    1    8+/w   4-/w   1-/b   5-/w   3-/b   2-/w   7+/b    |10249503
+7 Tomsu Adriana    1d CZ  TFMi  1    1    0    1-/b   5-/w   3-/b   2-/w   4-/b   8+/b   6-/w    |16225396
+8 Defer Tristan    1d CZ  Brno  0    0    0    6-/b   1-/w   5-/b   3-/w   2-/b   7-/w   4-/b    |16486074

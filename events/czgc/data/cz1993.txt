@@ -1,0 +1,22 @@
+; EV[Czech Championship `93]
+; PC[CZ, Jesenik]
+; DT[1993-10-07,1993-10-10]
+; KM[5.5]
+; HA[h9]
+;Poz.	Jmeno hrace	Klub	Trida	1.	2.	3.	4.	5.	6.	7.	BC	MM	SOS	SDOS
+   1 Nechanicky Radek               6d CZ  Nb      29     7   181   181      4+      3+      6+      2+      5+      8+      9+
+   2 Danek Vladimir                 6d CZ  Ph      28     6   180   151     14+      4+      5+      1-      3+      6+      7+
+   3 Cipra Petr                     5d CZ  Li      27     5   182   125     11+      1-      7+      8+      2-      4+      5+
+   4 Konopac Daniel                 3d CZ  Ph      26     4   184   100      1-      2-      9+     10+      8+      3-      6+
+   5 Cieply Martin                  4d CZ  Ov      25     3   182    73      6+      8+      2-     14+      1-      7-      3-
+   6 Holecek Jiri                   4d CZ  Ph      25     3   181    73      5-     11+      1-      7+     12+      2-      4-
+   7 Dach Zbynek                    2d CZ  Pl      25     4   178    98     10+      9+      3-      6-     14+      5+      2-
+   8 Rak Ales                       3d CZ  Ov      25     3   177    70     15+      5-     14+      3-      4-      1-     11+
+   9 Holecek David                  2d CZ  Ph      25     4   175    95     12+      7-      4-     15+     10+      0+      1-
+  10 Dica Vladimir                  2d CZ  KV      25     4   170    94      7-     16+     11+      4-      9-     14+     13+
+  11 Valasek Petr                   3d CZ  FM      24     2   172    47      3-      6-     10-      0-     16+     12+      8-
+  12 Gerner Jan                     2d CZ  Ph      24     3   167    70      9-     15-     13+     16+      6-     11-      0+
+  13 Javurek Jaromir                1d CZ  Ph      24     4   160    88      0+     14-     12-      0+     15+     16+     10-
+  14 Nechanicky Vitezslav           4d CZ  Nb      23     1   176    24      2-     13+      8-      5-      7-     10-      0-
+  15 Prokop Marek                   2d CZ  Ph      23     2   165    45      8-     12+     16-      9-     13-      0-      0+
+  16 Dach Karel                     1d CZ  Pl      23     3   164    67      0+     10-     15+     12-     11-     13-      0+

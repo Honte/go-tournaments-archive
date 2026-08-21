@@ -18,7 +18,7 @@ stages:
       - sos
       - sosos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
     collapsed: true
     games:
@@ -45,7 +45,7 @@ stages:
       - sos
       - sosos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
     collapsed: true
     games:
@@ -55,6 +55,10 @@ stages:
       - 4-8 4:B+5 round:1 sgf:2013/u16/1-OleksandrYeroshkin-GrigorijFionin.sgf
       - 5-13 5:B+R round:2 sgf:2013/u16/2-DmitrijMiljutkin-AdelAminov.sgf
       - 7-1 1:W+R round:4 sgf:2013/u16/4-DariusDobranis-StepanPopov.sgf
+      - 15-18 18:W+14.5 round:5 sgf:2013/u16/5-MelissaHeaulme-VojtechVasa.sgf
+      - 18-14 14:W+40.5 round:6 sgf:2013/u16/6-VojtechVasa-RobertCsizmadia.sgf
+      - 18-22 22:W+29.5 round:3 sgf:2013/u16/3-VojtechVasa-AndrasNoriyukiRapai.sgf
+      - 24-18 18:W+4.5 round:4 sgf:2013/u16/4-AdrianaTomsu-VojtechVasa.sgf
   - type: tournament
     file: eygc2013u20.txt
     category: u20
@@ -72,7 +76,7 @@ stages:
       - sos
       - sosos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
     collapsed: true
     games:
@@ -83,4 +87,8 @@ stages:
       - 2-5 2:B+R round:6 sgf:2013/u20/6-AliJabarin-JonasWelticke.sgf
       - 2-7 2:B+R round:1 sgf:2013/u20/1-AliJabarin-PetrKouba.sgf
       - 3-1 1:W+R round:3 sgf:2013/u20/3-LukasPodpera-PavolLisy.sgf
+      - 3-5 3:B+7.5 round:4 sgf:2013/u20/4-LukasPodpera-JonasWelticke.sgf
+      - 4-3 3:W+4.5 round:2 sgf:2013/u20/2-AlexandrVashurov-LukasPodpera.sgf
+      - 5-9 5:B+27 round:3 sgf:2013/u20/3-JonasWelticke-FrantisekCaha.sgf
       - 9-1 1:W+R round:5 sgf:2013/u20/5-FrantisekCaha-PavolLisy.sgf
+      - 9-11 9:B+R round:2 sgf:2013/u20/2-FrantisekCaha-JerrySavo.sgf

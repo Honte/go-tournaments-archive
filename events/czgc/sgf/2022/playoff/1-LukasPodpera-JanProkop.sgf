@@ -1,0 +1,59 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]OT[1x30 byo-yomi]AP[CGoban:3]SZ[19]GM[1]RO[1]DT[2022-07-06]
+PC[The KGS Go Server at http\://www.gokgs.com/]PB[Lukas Podpera]PW[Jan Prokop]KM[6.5]
+TM[3600]RE[W+R]MULTIGOGM[1]
+;B[qd];W[dc];B[pq];W[dq];B[nc];W[po];B[qo];W[qn];B[qp];W[pn];B[nq];W[pd];B[pe];W[qc]
+;B[pc];W[od];B[oc];W[qe];B[rd];W[pf];B[oe];W[nd];B[qf];W[mc];B[mb]C[elsky\: to je rozstřel?
+]
+;W[ne];B[re];W[lb];B[lc];W[md];B[nb];W[kc]C[CZchamp22a [?\]\: ano
+];B[co]C[elsky\: dík..
+]
+;W[qb];B[pb]C[sheery [?\]\: Otázka je jestli bude jen jeden rozstřel nebo 3, protože myslím že Lukáš, Janek i Scurge mají stejný počet bodů a jsou v cyklu
+]
+;W[oa];B[pa];W[cp]C[Veedee [-\]\: jsou 3 a hrají "divný" rozstřel. Scurge si vylosoval v 1. kole pauzír a jestli vyhraje 2.kolo, je mistr.
+]
+;B[do];W[fq];B[de];W[dk];B[cc];W[cb];B[cd];W[eb];B[ci];W[dm];B[bp];W[bq];B[fp];W[gq]
+;B[gp];W[hp];B[ho];W[io];B[eq];W[ep];B[nf];W[of];B[ld];W[qe];B[le];W[ng];B[er];W[fo]
+;B[dp];W[go];B[cq];W[qg];B[pe];W[jb];B[la];W[kb]C[scurge [?\]\: Good for white?
+]
+;B[mf];W[ph];B[ie]C[scurge [?\]\: Maybe not
+];W[je];B[jf];W[jd];B[kf]C[Jirka1K\: Jak píše Veedee. Hraje se podle směrnice k MR, kterou jsem si před chvílí našel a přečetl si příslušnou pasáž.
+scurge [?\]\: Prave  nehraje
+SIkachnak [?\]\: jak se hraje 15 min SD?
+scurge [?\]\: Upravili jsme to. Kdyz ve finale prohraju tak je jeste jedna bleskovka s tim co prohral tuhle heu
+]
+;W[gc];B[gd]C[scurge [?\]\: 5+7s fisher
+];W[fd];B[fe];W[hd];B[ge];W[if];B[ig];W[hf]
+;B[he];W[hg];B[hh];W[ih]C[Jirka1K\: No vida, ze směrnice je cár papíru. Aby to nebylo jak s ústavou. Ale je možné, že jsem špatně hledal - bylo to ve spěchu.
+sheery [?\]\: 7s fischer is brutal
+]
+;B[jg]C[Veedee [-\]\: what is w doing?
+];W[di];B[dh];W[ch];B[fc];W[gb];B[ei];W[dj]
+;B[dg];W[hi];B[gh];W[ji];B[gi];W[gj];B[fj]C[scurge [?\]\: Ne upravili jsme to protoze ta smernice byla zamyslena ze se kvalifiiuje jeden clovek na MS. Letos se kvalifikuje na ms a kpmc takze but losnutej do finale by byla prilis velka vyhoda
+]
+;W[hj]C[CZchamp22a [?\]\: w under 10 sec
+];B[pk];W[rg];B[nk];W[pp];B[qq];W[mo];B[qi]
+;W[oj];B[ok]C[mihi [4d\]\: is it sudden death?
+];W[mi];B[rl];W[rm]C[sheery [?\]\: fischer time with 7s per move added
+]
+;B[lk];W[mj];B[mk];W[mm]C[mihi [4d\]\: w should have played N11 instead of R11
+mihi [4d\]\: b *
+]
+;B[oi];W[pi];B[nm];W[nn];B[lm];W[om];B[pj];W[ql];B[nh]C[Veedee [-\]\: L+D problem
+]
+;W[mh]C[Veedee [-\]\: not easy in blitz
+];B[mg];W[ni];B[nj];W[oh];B[ki]C[sheery [?\]\: This is first of tiebreaking games to help decide the tournament because 3 top players ended in a tie (6 points)
+]
+;W[kh];B[kj];W[lg];B[jh];W[ii];B[lf];W[rj];B[lo];W[kl];B[ll];W[lp];B[im];W[gl];B[gm]
+;W[fm];B[hl];W[fk];B[kp];W[ln];B[kn];W[ko];B[jo];W[lo];B[in];W[ip];B[lj];W[lh];B[jp]
+;W[ik];B[jk];W[il];B[jl];W[jn];B[jm];W[lq];B[gn];W[fn];B[kr];W[ir];B[iq];W[hr];B[ek]
+;W[ej];B[lr];W[kq]C[CZchamp22a [?\]\: white win by resign
+SIkachnak [?\]\: wooooo
+sheery [?\]\: wow
+Veedee [-\]\: Janek today 2-0 against Lukan
+CZchamp22a [?\]\: next game in 10 min
+sheery [?\]\: There have been few 30+ points mistakes in the end \:(
+Veedee [-\]\: I thought that after black d9, he should have a big advantage. Where he lost?
+sheery [?\]\: According to Katago, white began to be winning since M8 (white lost 10 points by that alone) and never recovered since then
+sheery [?\]\: Veedee do you mean another move? d9 is white move
+Veedee [-\]\: sorry . I meant q9
+])

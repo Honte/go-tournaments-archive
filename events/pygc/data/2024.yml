@@ -10,10 +10,12 @@ stages:
       - direct
       - u20
       - u16
-      - u12  
+      - u12
     breakers:
       - wins
       - sos
       - sosos
       - direct
-    findSharedPlaces: true    
+    findSharedPlaces: true
+    games:
+      - 3-2 2:W+? round:3 sgf:2024/3-MariannaSzychowiak-AdamSiwy.sgf

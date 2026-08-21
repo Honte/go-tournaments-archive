@@ -1,0 +1,25 @@
+name: 16th Czech Championship
+stages:
+  - type: tournament
+    name: Championship
+    file: cz2008.txt
+    scoringColumns:
+      - wins
+      - null
+      - sodos
+      - direct
+    breakers:
+      - wins
+      - direct
+      - sodos
+    findSharedPlaces: true
+    games:
+      - 2-9 2:B+R round:8 sgf:2008/8-JanHora-IvanKostka.sgf
+      - 5-9 5:B+5.5 round:3 sgf:2008/3-RadekNechanicky-IvanKostka.sgf
+      - 7-9 7:B+R round:5 sgf:2008/5-OndrejKruml-IvanKostka.sgf
+      - 8-9 8:B+13.5 round:1 sgf:2008/1-MartinKuzela-IvanKostka.sgf
+      - 9-1 1:W+38.5 round:2 sgf:2008/2-IvanKostka-OndrejSilt.sgf
+      - 9-3 3:W+R round:9 sgf:2008/9-IvanKostka-VladimirDanek.sgf
+      - 9-4 4:W+7.5 round:6 sgf:2008/6-IvanKostka-JanSimara.sgf
+      - 9-6 6:W+6.5 round:4 sgf:2008/4-IvanKostka-ZbynekDach.sgf
+      - 10-9 9:W+? round:7 sgf:2008/7-BronislavSnidal-IvanKostka.sgf

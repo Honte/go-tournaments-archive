@@ -1,0 +1,42 @@
+name: 20th Czech Championship
+stages:
+  - type: tournament
+    name: Championship
+    file: cz2012.txt
+    scoringColumns:
+      - wins
+      - null
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true
+    games:
+      - 1-3 1:B+R round:5 sgf:2012/5-OndrejSilt-JanProkop.sgf
+      - 1-4 1:B+R round:3 sgf:2012/3-OndrejSilt-OndrejKruml.sgf
+      - 1-7 1:B+R round:7 sgf:2012/7-OndrejSilt-TomasKozelek.sgf
+      - 1-8 1:B+T round:1 sgf:2012/1-OndrejSilt-BronislavSnidal.sgf
+      - 2-1 1:W+9.5 round:6 sgf:2012/6-JanHora-OndrejSilt.sgf
+      - 2-5 2:B+21.5 round:3 sgf:2012/3-JanHora-LukasPodpera.sgf
+      - 2-6 2:B+R round:1 sgf:2012/1-JanHora-JanSimara.sgf
+      - 2-7 2:B+R round:5 sgf:2012/5-JanHora-TomasKozelek.sgf
+      - 3-2 2:W+R round:4 sgf:2012/4-JanProkop-JanHora.sgf
+      - 3-4 3:B+R round:1 sgf:2012/1-JanProkop-OndrejKruml.sgf
+      - 3-7 3:B+R round:3 sgf:2012/3-JanProkop-TomasKozelek.sgf
+      - 3-8 3:B+3.5 round:6 sgf:2012/6-JanProkop-BronislavSnidal.sgf
+      - 4-2 2:W+R round:2 sgf:2012/2-OndrejKruml-JanHora.sgf
+      - 4-5 4:B+1.5 round:7 sgf:2012/7-OndrejKruml-LukasPodpera.sgf
+      - 4-8 4:B+18.5 round:4 sgf:2012/4-OndrejKruml-BronislavSnidal.sgf
+      - 5-1 5:B+R round:4 sgf:2012/4-LukasPodpera-OndrejSilt.sgf
+      - 5-3 3:W+R round:2 sgf:2012/2-LukasPodpera-JanProkop.sgf
+      - 5-6 6:W+6.5 round:6 sgf:2012/6-LukasPodpera-JanSimara.sgf
+      - 5-7 5:B+7.5 round:1 sgf:2012/1-LukasPodpera-TomasKozelek.sgf
+      - 6-1 1:W+R round:2 sgf:2012/2-JanSimara-OndrejSilt.sgf
+      - 6-3 3:W+R round:7 sgf:2012/7-JanSimara-JanProkop.sgf
+      - 6-4 4:W+R round:5 sgf:2012/5-JanSimamra-OndrejKruml.sgf
+      - 7-4 4:W+R round:6 sgf:2012/6-TomasKozelek-OndrejKruml.sgf
+      - 7-6 7:B+1.5 round:4 sgf:2012/4-TomasKozelek-JanSimara.sgf
+      - 7-8 8:W+R round:2 sgf:2012/2-TomasKozelek-BronislavSnidal.sgf
+      - 8-2 2:W+R round:7 sgf:2012/7-BronislavSnidal-JanHora.sgf
+      - 8-5 5:W+R round:5 sgf:2012/5-BronislavSnidal-LukasPodpera.sgf
+      - 8-6 6:W+R round:3 sgf:2012/3-BronislavSnidal-JanSimara.sgf

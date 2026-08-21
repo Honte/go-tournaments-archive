@@ -1,0 +1,21 @@
+; TC[T100702B]
+; CL[A]
+; EV[Czech Championship]
+; PC[CZ, Zlutice]
+; DT[2010-07-02,2010-07-06]
+; HA[h9]
+; KM[6.5]
+; TM[120]
+; CM[ (submitted by cieply)]
+;.
+;
+ 1 Nechanicky Radek   5d CZ  SNym  9    9    0    0    3+/b    5+/w    10+/b   6+/b    4+/w    9+/b    2+/w    7+/b    8+/w     |10250196
+ 2 Hora Jan           6d CZ  APra  8    8    0    0    9+/w    10+/w   7+/b    8+/w    3+/b    5+/w    1-/b    6+/w    4+/b     |10401083
+ 3 Kostka Ivan        4d CZ  TFMi  6    6    1    0    1-/w    6+/b    4+/w    9+/b    2-/w    7+/b    8+/w    10+/w   5-/b     |10286716
+ 4 Prokop Jan         4d CZ  SRic  6    6    0    0    7+/b    8+/w    3-/b    5+/w    1-/b    6+/w    10+/b   9+/b    2-/w     |10433654
+ 5 Simara Jan         5d CZ  KaVa  5    5    0    0    10+/b   1-/b    6-/w    4-/b    9+/w    2-/b    7+/w    8+/b    3+/w     |10749860
+ 6 Kruml Ondrej       4d CZ  Brno  4    4    0    0    8+/b    3-/w    5+/b    1-/w    10+/b   4-/b    9+/w    2-/b    7-/w     |10886524
+ 7 Snidal Bronislav   2d CZ  TOst  3    3    0    0    4-/w    9-/b    2-/w    10+/w   8+/b    3-/w    5-/b    1-/w    6+/b     |10750476
+ 8 Valasek Petr       3d CZ  TFMi  2    2    1    0    6-/w    4-/b    9+/w    2-/b    7-/w    10+/w   3-/b    5-/w    1-/b     |10333653
+ 9 Cipra Petr         3d CZ  KaVa  2    2    0    0    2-/b    7+/w    8-/b    3-/w    5-/b    1-/w    6-/b    4-/w    10+/b    |10249503
+10 Pavlik Ivo         1k CZ  TFMi  0    0    0    0    5-/w    2-/b    1-/w    7-/b    6-/w    8-/b    4-/w    3-/b    9-/w     |10201510

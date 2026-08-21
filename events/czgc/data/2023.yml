@@ -1,0 +1,43 @@
+name: 31st Czech Championship
+website: https://goweb.cz/2023/09/mistrovstvi-republiky-2023/
+stages:
+  - type: tournament
+    name: Championship
+    file: cz2023.txt
+    scoringColumns:
+      - wins
+      - null
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:2 sgf:2023/2-LukasPodpera-JanProkop.sgf ogs:https://online-go.com/review/1146511
+      - 1-6 1:B+R round:4 sgf:2023/4-LukasPodpera-JanSebela.sgf ogs:https://online-go.com/review/1147024
+      - 1-8 1:B+9.5 round:7 sgf:2023/7-LukasPodpera-FrantisekCaha.sgf ogs:https://online-go.com/review/1148214
+      - 2-3 2:B+R round:5 sgf:2023/5-JanProkop-JanSimara.sgf ogs:https://online-go.com/review/1147531
+      - 2-4 2:B+R round:3 sgf:2023/3-JanProkop-OndrejKruml.sgf ogs:https://online-go.com/review/1146951
+      - 2-6 2:B+R round:1 sgf:2023/1-JanProkop-JanSebela.sgf ogs:https://online-go.com/review/1146439
+      - 2-7 2:B+R round:6 sgf:2023/6-JanProkop-LeonDefer.sgf ogs:https://online-go.com/review/1148061
+      - 3-1 1:W+R round:1 sgf:2023/1-JanSimara-LukasPodpera.sgf ogs:https://online-go.com/review/1146440
+      - 3-5 3:B+R round:6 sgf:2023/6-JanSimara-PetrCipra.sgf ogs:https://online-go.com/review/1148063
+      - 3-7 3:B+R round:4 sgf:2023/4-JanSimara-LeonDefer.sgf ogs:https://online-go.com/review/1147020
+      - 3-8 3:B+18.5 round:3 sgf:2023/3-JanSimara-FrantisekCaha.sgf ogs:https://online-go.com/review/1146953
+      - 4-1 1:W+12.5 round:6 sgf:2023/6-OndrejKruml-LukasPodpera.sgf ogs:https://online-go.com/review/1148066
+      - 4-3 3:W+R round:2 sgf:2023/2-OndrejKruml-JanSimara.sgf ogs:https://online-go.com/review/1146509
+      - 4-5 4:B+R round:4 sgf:2023/4-OndrejKruml-PetrCipra.sgf ogs:https://online-go.com/review/1147023
+      - 5-1 1:W+19.5 round:3 sgf:2023/3-PetrCipra-LukasPodpera.sgf ogs:https://online-go.com/review/1146950
+      - 5-2 2:W+R round:7 sgf:2023/7-PetrCipra-JanProkop.sgf ogs:https://online-go.com/review/1148216
+      - 5-8 5:B+R round:5 sgf:2023/5-PetrCipra-FrantisekCaha.sgf ogs:https://online-go.com/review/1147528
+      - 6-3 3:W+R round:7 sgf:2023/7-JanSebela-JanSimara.sgf ogs:https://online-go.com/review/1148215
+      - 6-4 4:W+R round:5 sgf:2023/5-JanSebela-OndrejKruml.sgf ogs:https://online-go.com/review/1147525
+      - 6-5 5:W+R round:2 sgf:2023/2-JanSebela-PetrCipra.sgf ogs:https://online-go.com/review/1146513
+      - 7-1 1:W+R round:5 sgf:2023/5-LeonDefer-LukasPodpera.sgf ogs:https://online-go.com/review/1147524
+      - 7-4 4:W+6.5 round:7 sgf:2023/7-LeonDefer-OndrejKruml.sgf ogs:https://online-go.com/review/1148213
+      - 7-5 7:B+5.5 round:1 sgf:2023/1-LeonDefer-PetrCipra.sgf ogs:https://online-go.com/review/1146438
+      - 7-6 6:W+R round:3 sgf:2023/3-LeonDefer-JanSebela.sgf ogs:https://online-go.com/review/1146949
+      - 8-2 2:W+20.5 round:4 sgf:2023/4-FrantisekCaha-JanProkop.sgf ogs:https://online-go.com/review/1147022
+      - 8-4 4:W+R round:1 sgf:2023/1-FrantisekCaha-OndrejKruml.sgf ogs:https://online-go.com/review/1146441
+      - 8-6 6:W+R round:6 sgf:2023/6-FrantisekCaha-JanSebela.sgf ogs:https://online-go.com/review/1148064
+      - 8-7 7:W+13.5 round:2 sgf:2023/2-FrantisekCaha-LeonDefer.sgf ogs:https://online-go.com/review/1146505

@@ -14,7 +14,7 @@ stages:
       - mms
       - sos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
     games:
       - 1-4 1:B+R round:3 sgf:2025/3-TingLi-NgocTrangCao.sgf ogs:https://online-go.com/review/1549512
@@ -34,12 +34,16 @@ stages:
       - 6-14 6:B+? round:5 sgf:2025/5-MirtaMedak-JitkaBartova.sgf ogs:https://online-go.com/review/1550004
       - 7-2 2:W+R round:3 sgf:2025/3-MichalaChalmovianska-ManjaMarz.sgf ogs:https://online-go.com/review/1549500
       - 7-12 7:B+? round:5 sgf:2025/5-MichalaChalmovianska-DanielaTrinks.sgf ogs:https://online-go.com/review/1550023
+      - 8-10 8:B+R round:3 sgf:2025/3-MilenaBocle-MariannaSzychowiak.sgf
       - 8-11 11:W+R round:1 sgf:2025/1-MilenaBocle-RenateReisenegger.sgf ogs:https://online-go.com/review/1549266
       - 8-13 8:B+R round:5 sgf:2025/5-MilenaBocle-AlexandraUrbanSzalontai.sgf ogs:https://online-go.com/review/1550026
       - 9-1 1:W+R round:5 sgf:2025/5-LovaWaahlin-TingLi.sgf ogs:https://online-go.com/review/1550024
       - 9-12 9:B+R round:3 sgf:2025/3-LovaWaahlin-DanielaTrinks.sgf ogs:https://online-go.com/review/1549506
+      - 10-17 10:B+? round:4 sgf:2025/4-MariannaSzychowiak-DitaVasova.sgf
+      - 10-19 10:B+? round:2 sgf:2025/2-MariannaSzychowiak-JuliaSeres.sgf
       - 11-1 1:W+12.5 round:2 sgf:2025/2-RenateReisenegger-TingLi.sgf ogs:https://online-go.com/review/1549397
       - 11-6 6:W+R round:3 sgf:2025/3-RenateReisenegger-MirtaMedak.sgf ogs:https://online-go.com/review/1549504
+      - 11-10 10:W+? round:5 sgf:2025/5-RenateReisenegger-MariannaSzychowiak.sgf
       - 12-5 5:W+R round:2 sgf:2025/2-DanielaTrinks-ArianeOugier.sgf ogs:https://online-go.com/review/1549398
       - 13-9 9:W+R round:4 sgf:2025/4-AlexandraUrbanSzalontai-LovaWaahlin.sgf ogs:https://online-go.com/review/1549868
       - 14-12 12:W+R round:1 sgf:2025/1-JitkaBartova-DanielaTrinks.sgf ogs:https://online-go.com/review/1549265

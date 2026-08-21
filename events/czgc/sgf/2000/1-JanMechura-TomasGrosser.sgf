@@ -1,0 +1,123 @@
+(;CA[windows-1250]FF[4]ST[3]AP[Hibiscus:2.1]SZ[19]GM[1]GN[1.5]EV[MR 2000]RO[1]DT[4/7/2000]
+PC[Brno]PB[Mechura Jan ]BR[4 D]PW[Grosser Tomas ]WR[3 D]KM[5.5]TM[7200]RE[B+3.5]
+MULTIGOGM[1]
+;B[pd]CR[pd];W[jj]CR[jj];B[pq]CR[pq];W[dd]CR[dd];B[cp]CR[cp]C[Good choice.];W[ep]
+CR[ep];B[dn]CR[dn]MA[jj][dd]C[Correct direction, because this move goes to the 
+marked two white stones.]
+;W[cl]CR[cl];B[gq]CR[gq]
+(;W[po]CR[po]MA[jj][cl][dd][ep]C[The marked stone should not die, otherwise it is 
+difficult to use the 'moyo' on the left side. See 
+variation.]
+;B[pl]CR[pl]LB[fo:A]C[Black should try to get sente to play at A. ];W[nc]CR[nc]
+;B[qf]CR[qf]LB[pf:A][ne:B]C[This move is not a bad move, we see it very 
+often in the professional's games. But to avoid 
+the white moyo becomes too big, I think it is better for 
+black to play higher at A. 
+
+Later white has a beautiful move at B.]
+;W[no]CR[no];B[nq]CR[nq];W[lo]CR[lo]MA[jj]C[If white wants to make the marked stone 
+useful, I think white much move out from the lower left 
+corner. ]
+;B[fo]CR[fo]C[Very good.
+
+White makes a large moyo with only a few stones ( 
+this means the moyo is not strong at all). In this kind of 
+game, white should try to keep black weak. 
+If black has a strong position, the white 'moyo' will not 
+be moyo anymore but weakness. ]
+;W[jd]CR[jd]C[I think it is better for white to defend on the left side, 
+because the black's position on the lower left is 
+stronger than the upper right.]
+;B[di]CR[di]C[Because black is very strong in the lower left corner, 
+black can invade easily.]
+;W[el]CR[el];B[cf]CR[cf]C[The fuseki looks good for black, because the black 
+stones are more efficient than white's. ]
+;W[ef]CR[ef]
+(;B[dc]CR[dc]C[A nice move, but not good for this situation. And it 
+is not necessary at all for black to play like this.
+There is a important idea in the game of Go, that is\: 
+our opponent may have something. It is very 
+dangerous to take away everything from him, in that 
+case we just put ourself in danger. 
+See variation.]
+;W[cc]CR[cc]LB[cd:A]C[Simply nobi at A would be also possible for white.];B[cd]
+CR[cd];W[cb]CR[cb];B[de]CR[de];W[ed]CR[ed];B[ee]CR[ee]
+(;W[fd]CR[fd]LB[fe:A]C[White must stop black by playing at A, this is the 
+matter of shape. When black gets out from A, black has 
+a strong shape. See variation.]
+;B[fe]CR[fe];W[bd]CR[bd]
+(;B[gd]CR[gd]C[Overplay again. See variation.];W[ge]CR[ge]C[Very severe.];B[ce]
+CR[ce];W[eb]CR[eb];B[gc]CR[gc];W[fb]CR[fb];B[id]CR[id];W[jc]CR[jc];B[gf]CR[gf];W[he]
+CR[he];B[ie]CR[ie];W[hf]CR[hf];B[if]CR[if];W[hg]CR[hg];B[ic]CR[ic];W[kf]CR[kf]C[Complicated, but looks more dangerous for black than 
+for white, because black has two groups.]
+;B[ig]CR[ig];W[hh]CR[hh];B[ih]CR[ih];W[ii]CR[ii]LB[hi:A]C[Nobi at A would be easy for white.]
+;B[hi]CR[hi];W[gi]CR[gi];B[hj]CR[hj];W[gj]CR[gj];B[hk]CR[hk];W[eh]CR[eh]LB[fh:A]
+C[A would give white a better  shape.];B[gk]CR[gk]LB[cj:A]C[Looks severe. But I think black could play at A first, in 
+that case the black group on the left is already alive.]
+;W[dh]CR[dh];B[ch]CR[ch];W[ci]CR[ci];B[bi]CR[bi];W[cj]CR[cj];B[bg]CR[bg];W[jh]CR[jh]
+C[Still very complicated, but because the black group on 
+the left is not yet clearly alive, it look not easy for 
+black.]
+;B[fj]CR[fj];W[fi]CR[fi];B[jb]CR[jb];W[kb]CR[kb];B[ke]CR[ke];W[le]CR[le];B[hb]CR[hb]
+;W[ja]CR[ja];B[ia]CR[ia];W[ib]CR[ib];B[hd]CR[hd]LB[kg:A]C[This is aji-kash. First at A would be better.]
+;W[gh]CR[gh];B[jb]CR[jb];W[be]CR[be];B[bj]CR[bj];W[ib]CR[ib];B[kg]CR[kg];W[bk]CR[bk]
+;B[lf]CR[lf];W[ha]CR[ha];B[me]CR[me][me]LB[ej:A]C[White has to defends at A. In that case white has about 
+60 points on the left side. White is leading on territory, 
+but the situation is not yet clear on the right side of the 
+board, so I would like to say that white is leading but 
+the game is not yet finished.]
+;W[qh]CR[qh]C[Overplay.]
+(;B[pb]CR[pb]C[See variations.];W[ni]CR[ni];B[ml]CR[ml];W[jl]CR[jl];B[kk]CR[kk]
+;W[jk]CR[jk];B[li]CR[li];W[mj]CR[mj];B[lk]CR[lk];W[nk]CR[nk];B[nl]CR[nl];W[lj]CR[lj]
+;B[kj]CR[kj];W[ki]CR[ki];B[lh]CR[lh];W[ok]CR[ok];B[ol]CR[ol];W[pk]CR[pk];B[qk]CR[qk]
+;W[qj]CR[qj];B[rl]CR[rl];W[rj]CR[rj];B[fl]CR[fl];W[ej]CR[ej];B[km]CR[km];W[fm]CR[fm]
+;B[gm]CR[gm];W[fk]CR[fk];B[gl]CR[gl];W[fp]CR[fp];B[go]CR[go]LB[gp:A]C[Playing at A would be more severe.]
+;W[cq]CR[cq];B[bq]CR[bq];W[dp]CR[dp];B[cr]CR[cr];W[co]CR[co];B[dq]CR[dq];W[bp]CR[bp]
+;B[do]CR[do];W[cq]CR[cq];B[dg]CR[dg];W[eg]CR[eg]LB[bf:A]C[Play at A can kill the black group without ko.]
+;B[cp]CR[cp];W[qq]CR[qq];B[qr]CR[qr];W[cq]CR[cq];B[bf]CR[bf];W[cp]CR[cp];B[df]CR[df]
+C[White lost the game now. 
+
+In this game black and white both played an
+unnecessary move, that is black 23 and white 88. 
+Indeed it is difficult to stop fighting and often we just 
+don't know how to stop. My suggestion is\: before 
+we are going to do some dangerous things, look 
+at the whole board and count first. ]
+;W[rq]CR[rq];B[pp]CR[pp];W[qp]CR[qp];B[qo]CR[qo];W[op]CR[op];B[pn]CR[pn];W[oo]CR[oo]
+;B[rr]CR[rr];W[oq]CR[oq];B[pr]CR[pr];W[or]CR[or];B[ro]CR[ro];W[kq]CR[kq];B[jo]CR[jo]
+;W[iq]CR[iq];B[hq]CR[hq];W[ip]CR[ip];B[io]CR[io];W[ob]CR[ob];B[oc]CR[oc];W[nb]CR[nb]
+;B[rg]CR[rg];W[og]CR[og];B[ld]CR[ld];W[lc]CR[lc];B[er]CR[er];W[qb]CR[qb];B[pa]CR[pa]
+;W[qc]CR[qc];B[pc]CR[pc];W[re]CR[re];B[qe]CR[qe];W[rd]CR[rd];B[qa]CR[qa];W[rf]CR[rf]
+;B[qg]CR[qg];W[rb]CR[rb];B[ph]CR[ph];W[rh]CR[rh];B[oh]CR[oh];W[nh]CR[nh];B[ng]CR[ng]
+;W[pg]CR[pg];B[of]CR[of];W[pi]CR[pi];B[pf]CR[pf];W[sg]CR[sg];B[os]CR[os];W[ns]CR[ns]
+;B[ps]CR[ps];W[nr]CR[nr];B[br]CR[br];W[rk]CR[rk];B[ql]CR[ql];W[em]CR[em];B[fn]CR[fn]
+;W[hr]CR[hr];B[gr]CR[gr];W[ir]CR[ir];B[cn]CR[cn];W[bn]CR[bn];B[oi]CR[oi];W[mk]CR[mk]
+;B[oj]CR[oj];W[pj]CR[pj];B[kp]CR[kp];W[lp]CR[lp];B[nd]CR[nd];W[kn]CR[kn];B[jn]CR[jn]
+;W[hp]CR[hp];B[gp]CR[gp];W[ho]CR[ho];B[hn]CR[hn];W[jm]CR[jm];B[lm]CR[lm];W[jp]CR[jp]
+;B[in]CR[in];W[ko]CR[ko];B[cm]CR[cm];W[bm]CR[bm];B[gb]CR[gb];W[eq]CR[eq];B[dr]CR[dr]
+;W[ga]CR[ga];B[fc]CR[fc];W[ec]CR[ec];B[ae]CR[ae];W[ac]CR[ac];B[ff]CR[ff];W[on]CR[on]
+;B[om]CR[om];W[aq]CR[aq];B[ar]CR[ar];W[ap]CR[ap];B[ra]CR[ra];W[mh]CR[mh];B[mg]CR[mg]
+;W[je]CR[je];B[jf]CR[jf];W[mn]CR[mn];B[sb]CR[sb];W[sc]CR[sc];B[qd]CR[qd];W[sa]CR[sa]
+;B[oa]CR[oa];W[na]CR[na];B[sb]CR[sb];W[rc]CR[rc];B[kd]CR[kd];W[kc]CR[kc];B[qm]CR[qm]
+;W[gs]CR[gs];B[fs]CR[fs];W[hs]CR[hs];B[fg]CR[fg];W[fq]CR[fq];B[fr]CR[fr];W[fh]CR[fh]
+;B[mc]CR[mc];W[mb]CR[mb];B[sk]CR[sk];W[sj]CR[sj];B[sl]CR[sl];W[mm]CR[mm];B[dm]CR[dm]
+;W[dl]CR[dl];B[ak]CR[ak];W[al]CR[al];B[aj]CR[aj];W[nm]CR[nm];B[md]CR[md];W[ad]CR[ad]
+;B[af]CR[af];W[sa]CR[sa];B[sf]C[Konec zápisu.])
+(;B[dj];W[ck];B[dk]C[This looks very dangerous for white. ];W[dl];B[fk];W[ff];B[bm]
+;W[cn];B[bn];W[ak];B[fm]C[Black leads the game now.];W[bf]C[White lost a lot of points, and black is very 
+strong outside. Black leads the game now. ]
+;B[nl])
+(;B[dg]C[Or this move.];W[eg];B[bf];W[df];B[ah]C[Inside it is already a ko.]))
+(;B[ge];W[gd];B[he];W[hd];B[ie]C[White has only about 20 points in total, black should 
+be happy.]))
+(;W[fe];B[fd];W[ec];B[ff];W[ge];B[eg];W[gf];B[fg];W[bd]C[In this case white gets at least a lot of points on the 
+top.]))
+(;B[fi]MA[el][cl]C[Simply jump out would be a good solution for black. 
+This move reduces the white  moyo on the top and 
+threatens the marked two white stones. If we look at 
+the whole board, white has only the moyo on the top 
+which is not strong at all, black has more territory with 
+strong position everywhere.]))
+(;W[fo]C[I would like to play here.];B[em];W[dj];B[hp];W[gn];B[fl];W[co]C[Attack the black's weak spot.]
+;B[do];W[dp];B[bo];W[cq];B[cn];W[bq];B[er];W[dr];B[eq];W[dq];B[hl];W[in];B[kp];W[jm]
+;B[gi];W[dg]C[This looks like a even game.]))

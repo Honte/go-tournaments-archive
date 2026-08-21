@@ -1,0 +1,101 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]OT[10/1200 Canadian]AP[CGoban:3]SZ[19]GM[1]GN[Czech championship, r7 Cipra(W)-Prokop(B)]
+RO[7]DT[2016-09-27]PC[The KGS Go Server at http\://www.gokgs.com/]PB[Jan Prokop]
+BR[6d]PW[Petr Cipra]WR[4d]KM[6.5]TM[5400]RE[B+R]MULTIGOGM[1]
+;B[qd];W[dd];B[pp];W[dq];B[fc];W[nc];B[cf];W[fd];B[gd];W[fe];B[dc];W[ec];B[eb];W[ed]
+;B[gb];W[cc];B[db];W[ce];B[ld];W[hc];B[gc];W[lc];B[kc];W[kd];B[jc];W[qc];B[pc];W[pd]
+;B[od];W[pe];B[oc];W[oe];B[nd];W[md];B[ne];W[me];B[qe];W[qf];B[pf];W[of];B[nf];W[pg]
+;B[og];W[pf];B[rc];W[qb];B[rb];W[rf];B[re];W[se];B[rd];W[ng];B[oh];W[mf];B[pb];W[ob]
+;B[qa];W[ph];B[mg];W[lg];B[nh];W[qk];B[lb];W[mc];B[lh];W[kg];B[qm];W[rl];B[do];W[dl]
+;B[gp];W[eo];B[en];W[fo];B[dp];W[fq];B[cq];W[eq];B[fn];W[go];B[cr];W[kq];B[cn];W[ci]
+;B[mq];W[ko]C[Selozhd [9k\]\: Does anybody now what happened in bottom left
+Selozhd [9k\]\: does anyone know what happened in bottom left
+ifonly [5d?\]\: yes
+Thundergod [6d\]\: c6 means black has already an easy game
+ifonly [5d?\]\: nah
+austrogo [6k\]\: Battle corners against center
+Selozhd [9k\]\: yeah but how did b got it
+ifonly [5d?\]\: locally slightly better
+Thundergod [6d\]\: white was afraid to cut
+Thundergod [6d\]\: Not a good sign
+Thundergod [6d\]\: q3 now?
+austrogo [6k\]\: B seams well 
+ifonly [5d?\]\: selosh, click under options (view offline) to see the game
+Selozhd [9k\]\: thx
+ifonly [5d?\]\: I wanna play b15 b16 d15 c16 c12 or so
+ifonly [5d?\]\: but also r3 or so
+ifonly [5d?\]\: But mainly top left to start a fight
+ifonly [5d?\]\: I hope to get a stone around g15 in order to play l15 with B
+ifonly [5d?\]\: still that's just my own egotistical desire - probably being a good boy and playing around R3 is the smart thing to o.
+]
+;B[dg]C[ifonly [5d?\]\: But d13 is a good move, I think
+ifonly [5d?\]\: He should be careful not to get gote
+]
+;W[eh]C[ifonly [5d?\]\: d13 is a little heavy, that's why I proposed b15 b16 d15 c16 first
+ifonly [5d?\]\: f14 g15 is painful
+ifonly [5d?\]\: c12 b11 now
+ifonly [5d?\]\: hmmm, B is a bit in trouble
+ifonly [5d?\]\: f14 g15 f12 is correct shape
+ifonly [5d?\]\: locally, but W gets to connect his stones at the top
+ifonly [5d?\]\: but knowing good shape is only part of the solution. It has to be backed up by hard work, i.e. reading.
+]
+;B[di];W[dh];B[ch];W[bh];B[bg];W[cg];B[pj]C[ifonly [5d?\]\: this ko looks rather silly
+ifonly [5d?\]\: q10 is a nice ko threat
+]
+;W[qj];B[ch]C[Slowlife [3k\]\: r3?
+];W[bi];B[eg]C[randomizer [1k\]\: mb r3 can be igonred
+randomizer [1k\]\: its open anyway
+Slowlife [3k\]\: r3 can be ignored?
+Slowlife [3k\]\: it is huge when ignored
+]
+;W[fh];B[fg];W[cg];B[pi];W[qi];B[ch];W[gh];B[be];W[bd]C[Romeda [1d\]\: but top left is big now
+]
+;B[gg];W[ge];B[hg]C[Slowlife [3k\]\: now yes
+Slowlife [3k\]\: w can pick up a ko now with r3
+]
+;W[ie];B[he];W[hf];B[hd];W[gf];B[hh];W[ig]C[Romeda [1d\]\: d10 work \:?
+];B[dj]
+;W[cg];B[de];W[cd];B[ch]C[johnp\: ifonly, you proposed b15, did you consider b15 c13 ?
+Romeda [1d\]\: c9 or f9 \:?
+]
+;W[ej];B[kh];W[jh];B[ji];W[dk];B[gi]C[johnp\: d9 should be e11?
+MR2016a [-\]\: W in byoyoymi
+]
+;W[cj];B[mo];W[qq];B[pq]C[Slowlife [3k\]\: fight again
+];W[qp];B[qo];W[ro];B[rn]
+;W[pr];B[or]C[Thundergod [6d\]\: white is alive without ko?
+];W[rr]C[conejito [8k\]\: dead shape, I think
+Thundergod [6d\]\: t5 changes it
+]
+;B[ps];W[qs];B[qr];W[po];B[qn]C[Thundergod [6d\]\: but not sure
+];W[pr]C[Schachus12 [3k\]\: could you explain
+Schachus12 [3k\]\: how did t5 help?
+]
+;B[fi];W[ei];B[qr]C[Slowlife [3k\]\: t5 makes t6 possible
+Slowlife [3k\]\: too connect under
+]
+;W[ki];B[ii];W[pr]C[Slowlife [3k\]\: but doesnt seems possible without ko
+];B[jf]
+C[Schachus12 [3k\]\: yes but wt5 bt6, how would that help assuming it was sente
+Slowlife [3k\]\: t4 however looks more fun for w
+]
+;W[je]C[Schachus12 [3k\]\: but is only ko as well
+Slowlife [3k\]\: dont ask me what a 6d might thinking
+]
+;B[jg];W[kf];B[ih];W[if];B[qr]C[Schachus12 [3k\]\: why did b exchange that witout taking the ko in between?
+]
+;W[dm];B[dn];W[pr]C[Schachus12 [3k\]\: I might have ignored d6, but he didnt even think about it..
+]
+;B[io];W[os];B[iq];W[in]C[Schachus12 [3k\]\: In my mind, after ignoring d6, b would have been ahead, whereas now, he needs to prove his ko threat was good in a strange fight. What is my mistake?
+]
+;B[ho];W[hn]C[Slowlife [3k\]\: reduction of white's bottom bigger?
+Slowlife [3k\]\: if he succeeds
+]
+;B[gn]C[Schachus12 [3k\]\: bigger maybe, but more risky it seems
+Slowlife [3k\]\: b can connect through l2?
+]
+;W[hr]C[Grunman [4k\]\: why sometimes buttons to skip moves in demo are active, and now not?
+Slowlife [3k\]\: they are never activated here in a demo
+]
+;B[gr];W[hq];B[gq];W[hp];B[ip]C[Celeritas [1d\]\: h4 so bad
+MR2016a [-\]\: B+ resign
+])

@@ -1,0 +1,186 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]OT[20/600 Canadian]AP[CGoban:3]SZ[19]GM[1]GN[Czech GO championship 2018-r6 Lukas Podpera (W-7d) x Ondrej Kruml (B-5d)]
+RO[6]DT[2018-06-30]PC[The KGS Go Server at http\://www.gokgs.com/]PB[Ondřej Kruml]
+BR[5d]PW[Lukáš Podpěra]WR[7d]KM[6.5]TM[5400]RE[W+0.5]MULTIGOGM[1]
+;B[pd];W[dp];B[qp];W[dc];B[np];W[fq];B[ce];W[fd]C[ptitlou [1d\]\: is that the deciding game ?
+]
+;B[gp];W[lq]C[MCR2018a [?\]\: deciding for what?
+ptitlou [1d\]\: mmh the championship? the winner? something ? ;-)
+MCR2018a [?\]\: there are 3 possible champions at this point - Podpěra, Šimara and Prokop
+ptitlou [1d\]\: and how many games left?
+MCR2018a [?\]\: this and one more tomorrow
+]
+;B[ck]C[ptitlou [1d\]\: ok thanks!
+];W[pp]C[longjohnS\: so much alphago
+longjohnS\: btw is fineart agreeing with these sot of fusekis?
+]
+;B[po];W[pq];B[qq];W[qr];B[rr];W[or];B[qs];W[pr];B[qn];W[qc];B[pc];W[qd];B[qf];W[qe]
+;B[pe];W[rf];B[qb];W[qg];B[pf];W[rh];B[rc];W[rd];B[sd];W[re]C[MCR2018a [?\]\: doesn't this look terrible for W?
+MCR2018a [?\]\: locally
+]
+;B[rb];W[qk];B[kc];W[ic]C[yisetol\: yeah localy better for black, globaly the game seems quite even ..
+]
+;B[cc];W[cb];B[bb];W[bc];B[cd];W[ba];B[dh];W[kd]C[MCR2018a [?\]\: y did he play this?
+]
+;B[lc];W[ab];B[bp];W[cp]C[bert [?\]\: b5 b3 c6 should be good enough, imho
+yisetol\: B4 seems weird, like black did not hold his horses and went for territory, G3 would be better I guess
+]
+;B[bo];W[bq];B[br];W[aq];B[gq];W[fr];B[gr];W[fp]C[bert [?\]\: b2 a3 is quite a loss, nut k3 now is very valuable
+bert [?\]\: b*ut
+yisetol\: G2 seems dubious as well, hard to go for O2 now ..
+]
+;B[jq];W[op]C[rats [?\]\: such awesome power shape
+];B[cn]C[MCR2018a [?\]\: isn't W a bit ahead?
+MCR2018a [?\]\: * B
+yisetol\: would say white is doing better, P4 will give white the upper hand ..
+yisetol\: whats the time btw?
+bert [?\]\: 16\:27 here
+]
+;W[ld];B[mc]C[MCR2018a [?\]\: here also
+bert [?\]\: \:-)
+];W[jc];B[je];W[jd]C[MCR2018a [?\]\: W 1\:04, B 44 mins
+ftroiset [7d\]\: actually， 了饿啦thinks不isv betterif和attacks （女）
+longjohnS\: of course
+ftroiset [7d\]\: blablcks should be better if he attacks on N2
+ftroiset [7d\]\: (or on R11)
+bert [?\]\: b o5 o3 n2 
+]
+;B[rl]C[longjohnS\: b is yoseing
+];W[rk];B[ql]C[MCR2018a [?\]\: yose time already?
+]
+;W[oo]C[ftroiset [7d\]\: too late for the attack now
+longjohnS\: s8 is yose, so b is yoseing.... but no it asn't yose time
+bert [?\]\: r8 was worthless at this time of the game
+]
+;B[pk];W[pj]C[ftroiset [7d\]\: b is clearly behind now
+longjohnS\: thing is... can w just follow B in his yose plan and win?
+MCR2018a [?\]\: r u checking LZ?
+]
+;B[he];W[if]C[ftroiset [7d\]\: yes, of course ; I am not strong enough to criticize them on my own \:-)
+longjohnS\: my thought exactly \:-))
+MCR2018a [?\]\: just like me
+]
+;B[hc]C[bert [?\]\: i am not that inhibited
+ftroiset [7d\]\: but somehow Leela thinks this last kikashi is a huge mistake
+longjohnS\: b agrees
+]
+;W[ie]C[ftroiset [7d\]\: except b should have connected, this is disastrouos
+bert [?\]\: well, it is psychological, "you won't be pushing me around"
+ftroiset [7d\]\: most kikashi must be answered (by simply connecting), especially when the kikashi was wrong \:-)
+bert [?\]\: f17 now, i suppose
+SImasarkzz\: Go Scurge go!
+ftroiset [7d\]\: f 17 is only increasing the dommage
+bert [?\]\: oh, quel dommage
+ftroiset [7d\]\: Leela thinks H14 is the only move
+Xorax [2d\]\: I do this mistake way to often
+Xorax [2d\]\: not answering peeps \:(
+Xorax [2d\]\: "you cant peep me!" >.<
+bert [?\]\: tbh, after j14 b should feel pretty happy to connect
+]
+;B[fc]C[ftroiset [7d\]\: now, w should simply draw back at e17
+];W[gd]C[bert [?\]\: this would be much better were w not definitely alive in the corner
+ftroiset [7d\]\: e16
+Xorax [2d\]\: another peep!
+]
+;B[hd]C[Xorax [2d\]\: this looks so messy ...
+];W[ed];B[hb];W[md];B[nc]C[bert [?\]\: messy takes the midtime break
+]
+;W[df]C[MCR2018a [?\]\: so messi?
+];B[hf];W[ig];B[cf];W[dk]C[MCR2018a [?\]\: can't W geta that stick?
+]
+;B[cj]C[MCR2018a [?\]\: ah, nvm \:D
+];W[dg];B[cg];W[eh];B[ff];W[di];B[ch]C[bert [?\]\: w is going to break blacks nerves by just kikashiing him
+Xorax [2d\]\: take k18 sente now?
+ftroiset [7d\]\: w center would be too weak
+]
+;W[hh]C[ftroiset [7d\]\: h13 much better
+MCR2018a [?\]\: so forces him to connect
+MCR2018a [?\]\: much?
+ftroiset [7d\]\: yes
+MCR2018a [?\]\: but I guess no human could tell y \:D
+ftroiset [7d\]\: now w is making points in the center
+]
+;B[oj]C[MCR2018a [?\]\: whaaaat?
+MCR2018a [?\]\: so the kosumi was no sente?
+ftroiset [7d\]\: beacause of e13, the attack is not so urgent
+Mew [-\]\: E15 should connect
+]
+;W[ok];B[pl];W[pi];B[oi];W[pn];B[ph];W[qi];B[qo];W[cl];B[bl];W[kb]C[MCR2018a [?\]\: nice
+ftroiset [7d\]\: very bad choice, thinks Leela
+]
+;B[ee]C[MCR2018a [?\]\: where instead?
+];W[gg]C[ftroiset [7d\]\: but b should have cut at e13
+ftroiset [7d\]\: so its about ok for w
+]
+;B[gf];W[mh];B[pg];W[rj];B[lp];W[mq];B[kq];W[mp];B[lo];W[nj];B[nk];W[mk]C[MCR2018a [?\]\: W building a center
+]
+;B[ol]C[MCR2018a [?\]\: W 42 mins, B 20
+];W[go]C[bert [?\]\: very exciting game
+bert [?\]\: france-argentina
+]
+;B[jo];W[hp];B[ir];W[hq];B[hr];W[io];B[kk];W[kr];B[ml];W[eg];B[de];W[jn];B[jr];W[ls]
+;B[km];W[dl];B[cm];W[bm];B[bk];W[dn];B[kh];W[kg]C[MCR2018a [?\]\: B in byoyomi
+]
+;B[jh];W[lh];B[lg];W[kf];B[il];W[ko];B[kp];W[af];B[eb];W[db];B[bf];W[ad];B[ag];W[ij]
+;B[jj]C[MCR2018a [?\]\: H8?
+];W[lb];B[mf];W[mg];B[nf];W[lf];B[no];W[nq];B[kn];W[mb]
+;B[ik];W[nb];B[ob];W[nd];B[oc];W[rs];B[ib];W[jb];B[dj];W[dm];B[fs];W[es];B[gs];W[dr]
+;B[cq];W[cr];B[hn];W[ho];B[in];W[ps];B[rq];W[gn];B[gm];W[fm];B[gl];W[ap]C[lopuch [1k\]\: B6 nic jako?
+]
+;B[bn]C[lopuch [1k\]\: Aha
+];W[gc];B[gb];W[ec];B[fb]C[MCR2018a [?\]\: how does the score look?
+]
+;W[lj]C[lopuch [1k\]\: Imo b + few no?
+];B[fl];W[ii];B[ji]C[lopuch [1k\]\: Jedeeem Scurga
+MCR2018a [?\]\: B around 40
+lopuch [1k\]\: D10 was overplay
+yisetol\: white wins by a little ..
+]
+;W[ei];B[nn];W[on];B[em];W[fn];B[el];W[en];B[gi]C[lopuch [1k\]\: Cool
+yisetol\: O6 should have been whites, now it seems black can do it with G11 ..
+]
+;W[gh]C[lopuch [1k\]\: Cut?
+];B[gj]C[yisetol\: H10-H11-A15
+];W[ih];B[ae]C[MCR2018a [?\]\: I also count W+little
+]
+;W[lk];B[ll];W[ni]C[yisetol\: O11 should have been blacks, they miss sente moves ..
+]
+;B[bd];W[ac];B[li];W[oh];B[ok]C[MCR2018a [?\]\: how about T7?
+MCR2018a [?\]\: ah, just 2 points gote
+]
+;W[og];B[ng];W[nh];B[of]C[Veedee\: Black is winning
+MCR2018a [?\]\: oh, wow
+lopuch [1k\]\: Konecne nekdo \:)
+yisetol\: yep black wins, no comeback
+MCR2018a [?\]\: B also has sente
+]
+;W[oa];B[pa];W[na]C[Veedee\: 4 points in sente . thjat I didnt count. B goes for ko at n10?
+MCR2018a [?\]\: no N10?
+]
+(;B[se])
+(;B[sc];W[ra];B[sa];W[sb];B[qa];W[se];B[sa]C[Pingu007 [2d\]\: i was also wondering
+]
+;W[mj];B[sk];W[sj];B[sl];W[kj];B[ki];W[om];B[nm];W[mo];B[mn];W[pm];B[qm];W[fk];B[ek]
+;W[fj];B[gk];W[ci];B[bi];W[hj];B[hk];W[co];B[jg];W[jf];B[qh];W[rg]C[yisetol\: half for white I get now
+]
+;B[me];W[le];B[js];W[ao];B[am];W[ea];B[fa];W[da];B[ja];W[ka];B[ia]C[MCR2018a [?\]\: W in byo
+]
+;W[sr];B[sq]C[yisetol\: plus the ko, so 1,5
+];W[qs];B[an];W[dq];B[ss];W[jk];B[jl]
+;W[sr];B[er];W[ds];B[ss];W[ip];B[jp];W[sr];B[fg];W[fh];B[ss];W[hm];B[im];W[sr];B[ar]
+;W[cq];B[ss];W[al];B[ak];W[sr];B[ri];W[si];B[ss];W[ef];B[fe];W[sr];B[ej];W[fi];B[ss]
+;W[lr];B[sr];W[dd];B[ge];W[lg];B[jk];W[mi]C[MCR2018a [?\]\: ok, that's it folks
+]
+;B[pb]C[lopuch [1k\]\: Thx Pulca
+Pingu007 [2d\]\: and the winner is ....
+MCR2018a [?\]\: Půlča? \:D
+Pulcik [-\]\: neni zac \:P
+Pingu007 [2d\]\: (too lazy to count sorry \:))
+Wulfiii [?\]\: podle kgs Scurge ^^
+lopuch [1k\]\: Winner is Pulca \:D
+lopuch [1k\]\: lol sorry hh
+indianayk [3d?\]\: what is the komi?
+MCR2018a [?\]\: W+0,5
+indianayk [3d?\]\: thx
+lopuch [1k\]\: .......
+Wulfiii [?\]\: faaakt? \:c
+]))

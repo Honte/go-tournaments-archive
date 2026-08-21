@@ -1,0 +1,11 @@
+; EV[Czech Championship playoff]
+; PC[CZ, Olomouc]
+; DT[2022-07-06,2022-07-06]
+; HA[h9]
+; KM[6.5]
+; CM[ (submitted by cieply)]
+;.
+;
+1 Kruml Ondrej     6d CZ  Imba  2    0    0   0+ 2+   |10886524
+2 Prokop Jan       6d CZ  Imba  1    0    0   3+ 1-   |10433654
+3 Podpera Lukas    7d CZ  APWS  0    0    0   2- 0=   |13201914

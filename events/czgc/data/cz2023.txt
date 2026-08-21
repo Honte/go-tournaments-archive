@@ -1,0 +1,18 @@
+; TC[T230928A]
+; CL[A]
+; EV[Czech Championship 2023 in Blansko]
+; PC[CZ, Blansko]
+; DT[2023-09-28,2023-10-01]
+; HA[h9]
+; KM[6.5]
+; TM[120]
+; CM[ (submitted by jarek)]
+;.
+1 Podpera Lukas    7d CZ  APWS  7        7    21   3+/w   2+/b   5+/w   6+/b   7+/w   4+/w   8+/b    |13201914
+2 Prokop Jan       6d CZ  Imba  6        6    15   6+/b   1-/w   4+/b   8+/w   3+/b   7+/b   5+/w    |10433654
+3 Simara Jan       1p CZ  Imba  5        5    10   1-/b   4+/w   8+/b   7+/b   2-/w   5+/b   6+/w    |10749860
+4 Kruml Ondrej     6d CZ  Imba  4        4    6    8+/w   3-/b   2-/w   5+/b   6+/w   1-/b   7+/w    |10886524
+5 Cipra Petr       4d CZ  CPis  2        2    2    7-/w   6+/w   1-/b   4-/w   8+/b   3-/w   2-/b    |10249503
+6 Sebela Jan       3d CZ  Brno  2        2    2    2-/w   5-/b   7+/w   1-/w   4-/b   8+/w   3-/b    |15462359
+7 Defer Leon       2d CZ  Imba  2        2    2    5+/b   8+/w   6-/b   3-/w   1-/b   2-/w   4-/b    |16413650
+8 Caha Frantisek   2d CZ  APWS  0        0    0    4-/b   7-/b   3-/w   2-/b   5-/w   6-/b   1-/w    |15686935

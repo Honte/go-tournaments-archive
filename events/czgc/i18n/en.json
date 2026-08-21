@@ -1,0 +1,17 @@
+{
+  "site": {
+    "name": "Czech Go Championships Archive",
+    "acronym": "CZGC",
+    "description": "Archive of all Czech Championships tournaments",
+    "yearDescription": "Results of CZGC %{0}",
+    "allTimeStatsDescription": "All-time statistics of all Czech Go Championships participants",
+    "playerStatsDescription": "Participation statistics of %{0} in all Czech Go Championships events"
+  },
+  "details": {
+    "goToWebsite": "Go to CZGC %{0} website"
+  },
+  "winners": {
+    "title": "Medalists of Czech Go Championships",
+    "first": "Czech Champion"
+  }
+}

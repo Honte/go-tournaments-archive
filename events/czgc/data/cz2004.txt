@@ -1,0 +1,22 @@
+; TC[T040701A]
+; CL[A]
+; EV[Czech Championship 2004]
+; PC[CZ,Mikulov]
+; DT[2004-07-01,2004-07-06]
+; KM[6.5]
+; TM[2h30]
+; HA[h9]
+;                        Czech Championship, Mikulov
+;                              July 1 - 6, 2004
+;
+;Pl     Name             Grade  Club    S MG SDOS  x   1.    2.    3.    4.    5.    6.    7.    8.    9.
+   1 Nechanicky Radek               6d CZ  Nym      8     0    34     0    7+/w    9+/b    5+/w    2+/b    8-/w    6+/b   10+/w    4+/w    3+/b |10250196
+   2 Danek Vladimir                 6d CZ  Pra      7     0    24     0   10+/w    8+/w    6+/b    1-/w    4+/b    3-/w    7+/b    9+/w    5+/b |10213016
+   3 Kostka Ivan                    4d CZ  FMi      6     0    24     1    4+/b   10+/b    7+/w    9-/b    5-/w    2+/b    8+/w    6+/b    1-/w |10286716
+   4 Silt Ondrej                    5d CZ  Zli      6     0    18     0    3-/w    7+/b    9+/w    5+/b    2-/w    8+/b    6+/w    1-/b   10+/w |10337481
+   5 Hora Jan                       5d CZ  Pra      4     0    14     0    8+/b    6-/w    1-/b    4-/w    3+/b    7+/w    9-/b   10+/b    2-/w |10401083
+   6 Brunner Vit                    3d CZ  Brn      3     0    10     2    9+/w    5+/b    2-/w    8-/b   10-/w    1-/w    4-/b    3-/w    7+/b |12513842
+   7 Cipra Petr                     4d CZ  Libe     3     0     8     2    1-/b    4-/w    3-/b   10+/b    9+/w    5-/b    2-/w    8+/b    6-/w |10249503
+   8 Grosser Tomas                  3d CZ  KVa      3     0    13     1    5-/w    2-/b   10+/w    6+/w    1+/b    4-/w    3-/b    7-/w    9-/b |10225908
+   9 Jurek Martin                   3d CZ  Mik      3     0    13     1    6-/b    1-/w    4-/b    3+/w    7-/b   10-/b    5+/w    2-/b    8+/w |10213753
+  10 Dach Zbynek                    4d CZ  Plz      2     0     6     0    2-/b    3-/w    8-/b    7-/w    6+/b    9+/w    1-/b    5-/w    4-/b |10233872

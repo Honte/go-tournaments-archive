@@ -1,0 +1,42 @@
+name: 22nd Czech Championship
+stages:
+  - type: tournament
+    name: Championship
+    file: cz2014.txt
+    scoringColumns:
+      - wins
+      - null
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:3 sgf:2014/3-OndrejSilt-JanHora.sgf
+      - 1-4 4:W+R round:1 sgf:2014/1-OndrejSilt-JanProkop.sgf
+      - 1-5 1:B+R round:7 sgf:2014/7-OndrejSilt-JanSimara.sgf
+      - 1-8 1:B+R round:5 sgf:2014/5-OndrejSilt-BronislavSnidal.sgf
+      - 2-4 2:B+R round:4 sgf:2014/4-JanHora-JanProkop.sgf
+      - 2-6 6:W+20.5 round:2 sgf:2014/2-JanHora-OndrejKruml.sgf
+      - 2-7 2:B+R round:7 sgf:2014/7-JanHora-PetrCipra.sgf
+      - 3-1 1:W+R round:2 sgf:2014/2-LukasPodpera-OndrejSilt.sgf
+      - 3-2 2:W+R round:5 sgf:2014/5-LukasPodpera-JanHora.sgf
+      - 3-8 3:B+R round:7 sgf:2014/7-LukasPodpera-BronislavSnidal.sgf
+      - 4-3 3:W+R round:3 sgf:2014/3-JanProkop-LukasPodpera.sgf
+      - 4-6 4:B+0.5 round:7 sgf:2014/7-JanProkop-OndrejKruml.sgf
+      - 4-7 4:B+28.5 round:5 sgf:2014/5-JanProkop-PetrCipra.sgf
+      - 5-2 2:W+R round:6 sgf:2014/6-JanSimara-JanHora.sgf
+      - 5-3 3:W+R round:4 sgf:2014/4-JanSimara-LukasPodpera.sgf
+      - 5-4 5:B+R round:2 sgf:2014/2-JanSimara-JanProkop.sgf
+      - 6-1 1:W+R round:6 sgf:2014/6-OndrejKruml-OndrejSilt.sgf
+      - 6-3 3:W+R round:1 sgf:2014/1-OndrejKruml-LukasPodpera.sgf
+      - 6-5 5:W+R round:5 sgf:2014/5-OndrejKruml-JanSimara.sgf
+      - 6-7 7:W+R round:3 sgf:2014/3-OndrejKruml-PetrCipra.sgf
+      - 7-1 1:W+R round:4 sgf:2014/4-PetrCipra-OndrejSilt.sgf
+      - 7-3 3:W+7.5 round:6 sgf:2014/6-PetrCipra-LukasPodpera.sgf
+      - 7-5 5:W+49.5 round:1 sgf:2014/1-PetrCipra-JanSimara.sgf
+      - 7-8 8:W+R round:2 sgf:2014/2-PetrCipra-BronislavSnidal.sgf
+      - 8-2 2:W+R round:1 sgf:2014/1-BronislavSnidal-JanHora.sgf
+      - 8-4 4:W+14.5 round:6 sgf:2014/6-BronislavSnidal-JanProkop.sgf
+      - 8-5 5:W+R round:3 sgf:2014/3-BronislavSnidal-JanSimara.sgf
+      - 8-6 6:W+21.5 round:4 sgf:2014/4-BronislavSnidal-OndrejKruml.sgf

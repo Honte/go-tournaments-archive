@@ -1,0 +1,19 @@
+; TC[T080617A]
+; CL[A]
+; EV[Czech Championship]
+; PC[CZ, Becov nad Teplou]
+; DT[2008-06-17,2008-06-22]
+; HA[h9]
+; KM[6.5]
+; TM[120]
+;
+  1 Silt Ondrej             6d CZ KVa   8 8  33   1  10+/b  9+/w  3+/b  8+/w  2+/b  5-/b  6+/w  7+/b  4+/w |10337481
+  2 Hora Jan                6d CZ Pra   8 8  29   0   3+/w  7+/b  8+/w  4+/b  1-/w 10+/b  5+/w  9+/b  6+/w |10401083
+  3 Danek Vladimir          5d CZ Pra   7 7  22   0   2-/b  8+/b  1-/w  5+/b  6+/w  7+/w  4+/w 10+/b  9+/w |10213016
+  4 Simara Jan              5d CZ KVa   5 5  13   0   5+/w  6-/b  7+/w  2-/w 10+/b  9+/w  3-/b  8+/b  1-/b |10749860
+  5 Nechanicky Radek        6d CZ Nym   4 4  14   1   4-/b 10+/w  9+/b  3-/w  8-/b  1+/w  2-/b  6+/b  7-/w |10250196
+  6 Dach Zbynek             4d CZ Plz   4 4  13   1   7+/b  4+/w 10-/b  9+/w  3-/b  8+/w  1-/b  5-/w  2-/b |10233872
+  7 Kruml Ondrej            3d CZ Brn   4 4   9   1   6-/w  2-/w  4-/b 10+/w  9+/b  3-/b  8+/b  1-/w  5+/b |10886524
+  8 Kuzela Martin           3d CZ Zli   3 3   6   0   9+/b  3-/w  2-/b  1-/b  5+/w  6-/b  7-/w  4-/w 10+/w |10250702
+  9 Kostka Ivan             4d CZ FMi   1 1   1   1   8-/w  1-/b  5-/w  6-/b  7-/w  4-/b 10+/w  2-/w  3-/b |10286716
+ 10 Snidal Bronislav        2d CZ Ost   1 1   4   0   1-/w  5-/b  6+/w  7-/b  4-/w  2-/w  9-/b  3-/w  8-/b |10750476

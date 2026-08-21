@@ -1,0 +1,58 @@
+name: 19th Czech Championship
+stages:
+  - type: tournament
+    name: Championship
+    file: cz2011.txt
+    scoringColumns:
+      - wins
+      - null
+      - direct
+    breakers:
+      - wins
+      - direct
+    findSharedPlaces: true
+    games:
+      - 1-4 1:B+7.5 round:6 sgf:2011/6-OndrejSilt-JanProkop.sgf
+      - 1-6 1:B+R round:4 sgf:2011/4-OndrejSilt-VladimirDanek.sgf
+      - 1-9 1:B+R round:2 sgf:2011/2-OndrejSilt-KlaraZaloudkova.sgf
+      - 1-10 1:B+R round:9 sgf:2011/9-OndrejSilt-PetrCipra.sgf
+      - 2-1 1:W+1.5 round:5 sgf:2011/5-LukasPodpera-OndrejSilt.sgf
+      - 2-3 2:B+1.5 round:7 sgf:2011/7-LukasPodpera-JanSimara.sgf
+      - 2-4 4:W+R round:3 sgf:2011/3-LukasPodpera-JanProkop.sgf
+      - 2-7 2:B+7.5 round:9 sgf:2011/9-LukasPodpera-OndrejKruml.sgf
+      - 3-1 1:W+8.5 round:1 sgf:2011/1-JanSimara-OndrejSilt.sgf
+      - 3-4 3:B+R round:8 sgf:2011/8-JanSimara-JanProkop.sgf
+      - 3-5 3:B+R round:3 sgf:2011/3-JanSimara-JanHora.sgf
+      - 3-6 3:B+11.5 round:6 sgf:2011/6-JanSimara-VladimirDanek.sgf
+      - 3-9 3:B+15.5 round:4 sgf:2011/4-JanSimara-KlaraZaloudkova.sgf
+      - 4-6 4:B+R round:2 sgf:2011/2-JanProkop-VladimirDanek.sgf
+      - 4-8 4:B+7.5 round:5 sgf:2011/5-JanProkop-IvanKostka.sgf
+      - 4-9 4:B+R round:9 sgf:2011/9-JanProkop-KlaraZaloudkova.sgf
+      - 4-10 4:B+T round:7 sgf:2011/7-JanProkop-PetrCipra.sgf
+      - 5-1 1:W+R round:8 sgf:2011/8-JanHora-OndrejSilt.sgf
+      - 5-2 2:W+5.5 round:2 sgf:2011/2-JanHora-LukasPodpera.sgf
+      - 5-4 4:W+R round:4 sgf:2011/4-JanHora-JanProkop.sgf
+      - 5-8 5:B+R round:6 sgf:2011/6-JanHora-IvanKostka.sgf
+      - 5-9 9:W+R round:5 sgf:2011/5-JanHora-KlaraZaloudkova.sgf
+      - 6-2 2:W+R round:1 sgf:2011/1-VladimirDanek-LukasPodpera.sgf
+      - 6-5 5:W+R round:9 sgf:2011/9-VladimirDanek-JanHora.sgf
+      - 6-8 6:B+R round:3 sgf:2011/3-VladimirDanek-IvanKostka.sgf
+      - 6-9 6:B+R round:7 sgf:2011/7-VladimirDanek-KlaraZaloudkova.sgf
+      - 6-10 6:B+1.5 round:5 sgf:2011/5-VladimirDanek-PetrCipra.sgf
+      - 7-1 1:W+R round:3 sgf:2011/3-OndrejKruml-OndrejSilt.sgf
+      - 7-3 3:W+6.5 round:5 sgf:2011/5-OndrejKruml-JanSimara.sgf
+      - 7-4 7:B+0.5 round:1 sgf:2011/1-OndrejKruml-JanProkop.sgf
+      - 7-5 7:B+4.5 round:7 sgf:2011/7-OndrejKruml-JanHora.sgf
+      - 7-6 6:W+12.5 round:8 sgf:2011/8-OndrejKruml-VladimirDanek.sgf
+      - 8-1 1:W+R round:7 sgf:2011/7-IvanKostka-OndrejSilt.sgf
+      - 8-2 2:W+R round:4 sgf:2011/4-IvanKostka-LukasPodpera.sgf
+      - 8-7 8:B+2.5 round:2 sgf:2011/2-IvanKostka-OndrejKruml.sgf
+      - 9-2 2:W+R round:8 sgf:2011/8-KlaraZaloudkova-LukasPodpera.sgf
+      - 9-7 7:W+R round:6 sgf:2011/6-KlaraZaloudkova-OndrejKruml.sgf
+      - 9-8 8:W+R round:1 sgf:2011/1-KlaraZaloudkova-IvanKostka.sgf
+      - 9-10 9:B+R round:3 sgf:2011/3-KlaraZaloudkova-PetrCipra.sgf
+      - 10-2 2:W+9.5 round:6 sgf:2011/6-PetrCipra-LukasPodpera.sgf
+      - 10-3 3:W+R round:2 sgf:2011/2-PetrCipra-JanSimara.sgf
+      - 10-5 10:B+82.5 round:1 sgf:2011/1-PetrCipra-JanHora.sgf
+      - 10-7 7:W+R round:4 sgf:2011/4-PetrCipra-OndrejKruml.sgf
+      - 10-8 10:B+R round:8 sgf:2011/8-PetrCipra-IvanKostka.sgf

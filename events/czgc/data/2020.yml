@@ -1,0 +1,43 @@
+name: 28th Czech Championship
+website: https://goweb.cz/2020/12/mistrovstvi-republiky-2020/
+stages:
+  - type: tournament
+    name: Championship
+    file: cz2020.txt
+    scoringColumns:
+      - wins
+      - null
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true
+    games:
+      - 1-4 1:B+4.5 round:1 sgf:2020/1-LukasPodpera-JanHora.sgf ogs:https://online-go.com/game/28575340
+      - 1-5 1:B+R round:7 sgf:2020/7-LukasPodpera-PetrKouba.sgf ogs:https://online-go.com/game/29334743
+      - 1-7 1:B+R round:3 sgf:2020/3-LukasPodpera-PetrValasek.sgf ogs:https://online-go.com/game/28775809
+      - 1-8 1:B+R round:5 sgf:2020/5-LukasPodpera-MichalTimko.sgf ogs:https://online-go.com/game/29160535
+      - 2-1 1:W+R round:6 sgf:2020/6-JanProkop-LukasPodpera.sgf ogs:https://online-go.com/game/29306943
+      - 2-3 2:B+R round:3 sgf:2020/3-JanProkop-OndrejKruml.sgf ogs:https://online-go.com/game/28775804
+      - 2-5 2:B+R round:5 sgf:2020/5-JanProkop-PetrKouba.sgf ogs:https://online-go.com/game/29190692
+      - 2-6 2:B+64.5 round:1 sgf:2020/1-JanProkop-PetrCipra.sgf ogs:https://online-go.com/game/28575528
+      - 3-1 1:W+R round:4 sgf:2020/4-OndrejKruml-LukasPodpera.sgf ogs:https://online-go.com/game/29064049
+      - 3-5 3:B+R round:1 sgf:2020/1-OndrejKruml-PetrKouba.sgf ogs:https://online-go.com/game/28575589
+      - 3-6 3:B+R round:6 sgf:2020/6-OndrejKruml-PetrCipra.sgf ogs:https://online-go.com/game/29304997
+      - 3-8 3:B+R round:2 sgf:2020/2-OndrejKruml-MichalTimko.sgf ogs:https://online-go.com/game/28683989
+      - 4-2 2:W+R round:7 sgf:2020/7-JanHora-JanProkop.sgf ogs:https://online-go.com/game/29334429
+      - 4-3 3:W+6.5 round:5 sgf:2020/5-JanHora-OndrejKruml.sgf ogs:https://online-go.com/game/29190570
+      - 4-6 4:B+R round:3 sgf:2020/3-JanHora-PetrCipra.sgf ogs:https://online-go.com/game/28776008
+      - 5-4 4:W+R round:2 sgf:2020/2-PetrKouba-JanHora.sgf ogs:https://online-go.com/game/28636247
+      - 5-6 6:W+16.5 round:4 sgf:2020/4-PetrKouba-PetrCipra.sgf ogs:https://online-go.com/game/29093923
+      - 5-7 5:B+T round:6 sgf:2020/6-PetrKouba-PetrValasek.sgf ogs:https://online-go.com/game/29305147
+      - 6-1 1:W+R round:2 sgf:2020/2-PetrCipra-LukasPodpera.sgf ogs:https://online-go.com/game/28679786
+      - 6-7 7:W+3.5 round:5 sgf:2020/5-PetrCipra-PetrValasek.sgf ogs:https://online-go.com/game/29190854
+      - 6-8 6:B+R round:7 sgf:2020/7-PetrCipra-MichalTimko.sgf ogs:https://online-go.com/game/29334453
+      - 7-2 2:W+R round:2 sgf:2020/2-PetrValasek-JanProkop.sgf ogs:https://online-go.com/game/28683934
+      - 7-3 3:W+R round:7 sgf:2020/7-PetrValasek-OndrejKruml.sgf ogs:https://online-go.com/game/29334469
+      - 7-4 4:W+R round:4 sgf:2020/4-PetrValasek-JanHora.sgf ogs:https://online-go.com/game/29094662
+      - 8-2 2:W+R round:4 sgf:2020/4-MichalTimko-JanProkop.sgf ogs:https://online-go.com/game/29069269
+      - 8-4 4:W+R round:6 sgf:2020/6-MichalTimko-JanHora.sgf ogs:https://online-go.com/game/29305021
+      - 8-5 5:W+R round:3 sgf:2020/3-MichalTimko-PetrKouba.sgf ogs:https://online-go.com/game/28775625
+      - 8-7 7:W+R round:1 sgf:2020/1-MichalTimko-PetrValasek.sgf ogs:https://online-go.com/game/28575943

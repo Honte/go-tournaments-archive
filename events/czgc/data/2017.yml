@@ -1,0 +1,46 @@
+name: 25th Czech Championship
+website: https://goweb.cz/2017/06/mistrovstvi-republiky-2017-mokra-horakov/
+stages:
+  - type: tournament
+    name: Championship
+    file: cz2017.txt
+    notes: Ratings with new algorithm, will be changed later to the one that was valid during championship.
+    scoringColumns:
+      - wins
+      - null
+      - sodos
+      - rating
+    breakers:
+      - wins
+      - sodos
+      - rating
+    findSharedPlaces: true
+    games:
+      - 1-4 1:B+6.5 round:2 sgf:2017/2-JanProkop-VladimirDanek.sgf ogs:https://online-go.com/review/256661
+      - 1-5 1:B+R round:4 sgf:2017/4-JanProkop-JanHora.sgf ogs:https://online-go.com/review/256842
+      - 1-7 1:B+R round:7 sgf:2017/7-JanProkop-BronislavSnidal.sgf ogs:https://online-go.com/review/257188
+      - 2-1 1:W+1.5 round:1 sgf:2017/1-LukasPodpera-JanProkop.sgf ogs:https://online-go.com/review/256621
+      - 2-3 2:B+R round:3 sgf:2017/3-LukasPodpera-OndrejKruml.sgf ogs:https://online-go.com/review/256798
+      - 2-4 2:B+8.5 round:4 sgf:2017/4-LukasPodpera-VladimirDanek.sgf ogs:https://online-go.com/review/256838
+      - 2-5 2:B+R round:6 sgf:2017/6-LukasPodpera-JanHora.sgf ogs:https://online-go.com/review/257029
+      - 3-1 1:W+R round:6 sgf:2017/6-OndrejKruml-JanProkop.sgf ogs:https://online-go.com/review/257030
+      - 3-5 3:B+R round:2 sgf:2017/2-OndrejKruml-JanHora.sgf ogs:https://online-go.com/review/256664
+      - 3-8 3:B+R round:4 sgf:2017/4-OndrejKruml-PetrCipra.sgf ogs:https://online-go.com/review/256839
+      - 4-3 3:W+6.5 round:5 sgf:2017/5-VladimirDanek-OndrejKruml.sgf ogs:https://online-go.com/review/257007
+      - 4-6 4:B+R round:6 sgf:2017/6-VladimirDanek-OndrejKachyna.sgf ogs:https://online-go.com/review/257032
+      - 4-7 4:B+22.5 round:3 sgf:2017/3-VladimirDanek-BronislavSnidal.sgf ogs:https://online-go.com/review/256801
+      - 4-8 4:B+R round:1 sgf:2017/1-VladimirDanek-PetrCipra.sgf ogs:https://online-go.com/review/256622
+      - 5-4 4:W+2.5 round:7 sgf:2017/7-JanHora-VladimirDanek.sgf ogs:https://online-go.com/review/257185
+      - 5-7 5:B+R round:5 sgf:2017/5-JanHora-BronislavSnidal.sgf ogs:https://online-go.com/review/257008
+      - 5-8 5:B+T round:3 sgf:2017/3-JanHora-PetrCipra.sgf ogs:https://online-go.com/review/256802
+      - 6-1 1:W+R round:3 sgf:2017/3-OndrejKachyna-JanProkop.sgf ogs:https://online-go.com/review/256803
+      - 6-2 2:W+R round:5 sgf:2017/5-OndrejKachynaLukasPodpera.sgf ogs:https://online-go.com/review/257009
+      - 6-3 3:W+17.5 round:7 sgf:2017/7-OndrejKachyna-OndrejKruml.sgf ogs:https://online-go.com/review/257186
+      - 6-5 5:W+T round:1 sgf:2017/1-OndrejKachyna-JanHora.sgf ogs:https://online-go.com/review/256620
+      - 7-2 2:W+R round:2 sgf:2017/2-BronislavSnidal-LukasPodpera.sgf ogs:https://online-go.com/review/256665
+      - 7-3 3:W+5.5 round:1 sgf:2017/1-BronislavSnidal-OndrejKruml.sgf ogs:https://online-go.com/review/256623
+      - 7-6 7:B+R round:4 sgf:2017/4-BronislavSnidal-OndrejKachyna.sgf ogs:https://online-go.com/review/256841
+      - 7-8 8:W+R round:6 sgf:2017/6-BronislavSnidal-PetrCipra.sgf ogs:https://online-go.com/review/257033
+      - 8-1 1:W+R round:5 sgf:2017/5-PetrCipra-JanProkop.sgf ogs:https://online-go.com/review/257010
+      - 8-2 2:W+5.5 round:7 sgf:2017/7-PetrCipra-LukasPodpera.sgf ogs:https://online-go.com/review/257187
+      - 8-6 6:W+R round:2 sgf:2017/2-PetrCipra-OndrejKachyna.sgf ogs:https://online-go.com/review/256663

@@ -1,0 +1,45 @@
+name: 32nd Czech Championship
+website: https://goweb.cz/2024/09/mistrovstvi-republiky-2024/
+stages:
+  - type: tournament
+    name: Championship
+    file: cz2024.txt
+    scoringColumns:
+      - wins
+      - null
+      - sodos
+      - direct
+    breakers:
+      - wins
+      - sodos
+      - direct
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:5 sgf:2024/5-LukasPodpera-JanProkop.sgf ogs:https://online-go.com/review/1340806
+      - 1-3 1:B+11.5 round:3 sgf:2024/3-LukasPodpera-JanSimara.sgf ogs:https://online-go.com/review/1340197
+      - 1-4 1:B+5.5 round:1 sgf:2024/1-LukasPodpera-VladimirDanek.sgf ogs:https://online-go.com/review/1339695
+      - 1-8 1:B+8.5 round:6 sgf:2024/6-LukasPodpera-JanKomin.sgf ogs:https://online-go.com/review/1341031
+      - 2-5 2:B+12.5 round:1 sgf:2024/1-JanProkop-FrantisekCaha.sgf ogs:https://online-go.com/review/1339738
+      - 2-6 2:B+R round:3 sgf:2024/3-JanProkop-PetrCipra.sgf ogs:https://online-go.com/review/1340199
+      - 2-7 2:B+R round:6 sgf:2024/6-JanProkop-BartikDach.sgf ogs:https://online-go.com/review/1341033
+      - 2-8 2:B+R round:4 sgf:2024/4-JanProkop-JanKomin.sgf ogs:https://online-go.com/review/1340389
+      - 3-2 2:W+R round:2 sgf:2024/2-JanSimara-JanProkop.sgf ogs:https://online-go.com/review/1339826
+      - 3-5 3:B+R round:6 sgf:2024/6-JanSimara-FrantisekCaha.sgf ogs:https://online-go.com/review/1341030
+      - 3-7 3:B+18.5 round:4 sgf:2024/4-JanSimara-BartikDach.sgf ogs:https://online-go.com/review/1340381
+      - 4-2 2:W+R round:7 sgf:2024/7-VladimirDanek-JanProkop.sgf ogs:https://online-go.com/review/1341512
+      - 4-3 3:W+R round:5 sgf:2024/5-VladimirDanek-JanSimara.sgf ogs:https://online-go.com/review/1340807
+      - 4-7 4:B+14.5 round:2 sgf:2024/2-VladimirDanek-BartikDach.sgf ogs:https://online-go.com/review/1339834
+      - 5-1 1:W+R round:2 sgf:2024/2-FrantisekCaha-LukasPodpera.sgf ogs:https://online-go.com/review/1339831
+      - 5-4 4:W+10.5 round:4 sgf:2024/4-FrantisekCaha-VladimirDanek.sgf ogs:https://online-go.com/review/1340375
+      - 5-6 5:B+19.5 round:7 sgf:2024/7-FrantisekCaha-PetrCipra.sgf ogs:https://online-go.com/review/1341509
+      - 6-1 1:W+R round:4 sgf:2024/4-PetrCipra-LukasPodpera.sgf ogs:https://online-go.com/review/1340383
+      - 6-3 3:W+21.5 round:1 sgf:2024/1-PetrCipra-JanSimara.sgf ogs:https://online-go.com/review/1339708
+      - 6-4 6:B+4.5 round:6 sgf:2024/6-PetrCipra-VladimirDanek.sgf ogs:https://online-go.com/review/1341032
+      - 6-8 6:B+R round:2 sgf:2024/2-PetrCipra-JanKomin.sgf ogs:https://online-go.com/review/1339827
+      - 7-1 1:W+12.5 round:7 sgf:2024/7-BartikDach-LukasPodpera.sgf ogs:https://online-go.com/review/1341514
+      - 7-5 5:W+21.5 round:3 sgf:2024/3-BartikDach-FrantisekCaha.sgf ogs:https://online-go.com/review/1340200
+      - 7-6 7:B+6.5 round:5 sgf:2024/5-BartikDach-PetrCipra.sgf ogs:https://online-go.com/review/1340824
+      - 8-3 3:W+R round:7 sgf:2024/7-JanKomin-JanSimara.sgf ogs:https://online-go.com/review/1341536
+      - 8-4 4:W+R round:3 sgf:2024/3-JanKomin-VladimirDanek.sgf ogs:https://online-go.com/review/1340196
+      - 8-5 8:B+6.5 round:5 sgf:2024/5-JanKomin-FrantisekCaha.sgf ogs:https://online-go.com/review/1340819
+      - 8-7 7:W+R round:1 sgf:2024/1-JanKomin-BartikDach.sgf ogs:https://online-go.com/review/1339712

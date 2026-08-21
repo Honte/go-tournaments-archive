@@ -1,0 +1,43 @@
+name: 24th Czech Championship
+website: https://goweb.cz/2016/09/mistrovstvi-republiky/
+stages:
+  - type: tournament
+    name: Championship
+    file: cz2016.txt
+    scoringColumns:
+      - wins
+      - null
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true
+    games:
+      - 1-3 1:B+R round:1 sgf:2016/1-LukasPodpera-JanProkop.sgf
+      - 1-4 1:B+24.5 round:3 sgf:2016/3-LukasPodpera-OndrejKachyna.sgf
+      - 1-6 1:B+R round:5 sgf:2016/5-LukasPodpera-JakubMirka.sgf
+      - 1-8 1:B+R round:7 sgf:2016/7-LukasPodpera-MichalTimko.sgf
+      - 2-1 1:W+0.5 round:2 sgf:2016/2-OndrejKruml-LukasPodpera.sgf
+      - 2-4 2:B+R round:5 sgf:2016/5-OndrejKruml-OndrejKachyna.sgf
+      - 2-6 2:B+R round:7 sgf:2016/7-OndrejKruml-JakubMirka.sgf
+      - 3-2 2:W+R round:3 sgf:2016/3-JanProkop-OndrejKruml.sgf
+      - 3-5 3:B+R round:7 sgf:2016/7-JanProkop-PetrCipra.sgf
+      - 3-7 3:B+R round:5 sgf:2016/5-JanProkop-TadeasBerkman.sgf
+      - 4-3 3:W+R round:4 sgf:2016/4-OndrejKachyna-JanProkop.sgf
+      - 4-5 4:B+R round:2 sgf:2016/2-OndrejKachyna-PetrCipra.sgf
+      - 4-7 4:B+12.5 round:7 sgf:2016/7-OndrejKachyna-TadeasBerkman.sgf
+      - 5-1 1:W+3.5 round:6 sgf:2016/6-PetrCipra-LukasPodpera.sgf
+      - 5-2 2:W+8.5 round:1 sgf:2016/1-PetrCipra-OndrejKruml.sgf
+      - 5-7 5:B+R round:3 sgf:2016/3-PetrCipra-TadeasBerkman.sgf
+      - 5-8 5:B+R round:5 sgf:2016/5-PetrCipra-MichalTimko.sgf
+      - 6-3 3:W+R round:6 sgf:2016/6-JakubMirka-JanProkop.sgf
+      - 6-4 4:W+R round:1 sgf:2016/1-JakubMirka-OndrejKachyna.sgf
+      - 6-5 6:B+R round:4 sgf:2016/4-JakubMirka-PetrCipra.sgf
+      - 6-8 6:B+6.5 round:3 sgf:2016/3-JakubMirka-MichalTimko.sgf
+      - 7-1 1:W+R round:4 sgf:2016/4-TadeasBerkman-LukasPodpera.sgf
+      - 7-2 2:W+R round:6 sgf:2016/6-TadeasBerkman-OndrejKruml.sgf
+      - 7-6 7:B+R round:2 sgf:2016/2-TadeasBerkman-JakubMirka.sgf
+      - 7-8 7:B+9.5 round:1 sgf:2016/1-TadeasBerkman-MichalTimko.sgf
+      - 8-2 2:W+R round:4 sgf:2016/4-MichalTimko-OndrejKruml.sgf
+      - 8-3 3:W+R round:2 sgf:2016/2-MichalTimko-JanProkop.sgf
+      - 8-4 8:B+4.5 round:6 sgf:2016/6-MichalTimko-OndrejKachyna.sgf

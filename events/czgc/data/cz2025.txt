@@ -1,0 +1,18 @@
+; TC[T250925A]
+; CL[A]
+; EV[Czech Championship 2025]
+; PC[CZ, Frydek-Mistek]
+; DT[2025-09-25,2025-09-28]
+; HA[h9]
+; KM[6.5]
+; TM[120]
+; CM[ (submitted by Lukan)]
+;.
+1 Podpera Lukas    7d CZ  APWS  7    7    21   8+/b   5+/w   2+/b   7+/w   4+/b   6+/w   3+/b    |13201914
+2 Dach Bartik      4d CZ  BMik  5    5    13   6+/w   8+/b   1-/w   4+/w   3+/b   5-/w   7+/b    |19574280
+3 Dach Zbynek      4d CZ  BMik  5    5    11   5+/w   7+/b   6+/w   8+/b   2-/w   4+/b   1-/w    |10233872
+4 Komin Jan        4d CZ  APWS  4    4    7    7+/w   6+/b   8+/w   2-/b   1-/w   3-/w   5+/b    |19637596
+5 Nemcok Michal    2d CZ  TFMi  3    3    6    3-/b   1-/b   7+/w   6-/b   8+/w   2+/b   4-/w    |16901852
+6 Caha Frantisek   3d CZ  APWS  3    3    4    2-/b   4-/w   3-/b   5+/w   7+/b   1-/b   8+/w    |15686935
+7 Adamek Jan       2k CZ  TFMi  1    1    0    4-/b   3-/w   5-/b   1-/b   6-/w   8+/b   2-/w    |17986925
+8 Pecha Vladan     3k CZ  TFMi  0    0    0    1-/w   2-/w   4-/b   3-/w   5-/b   7-/w   6-/b    |10337657

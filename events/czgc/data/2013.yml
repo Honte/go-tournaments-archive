@@ -1,0 +1,36 @@
+name: 21st Czech Championship
+stages:
+  - type: tournament
+    name: Championship
+    file: cz2013.txt
+    scoringColumns:
+      - wins
+      - null
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+18.5 round:1 sgf:2013/1-LukasPodpera-MartinJurek.sgf
+      - 1-3 1:B+R round:3 sgf:2013/3-LukasPodpera-OndrejKruml.sgf
+      - 1-5 1:B+11.5 round:7 sgf:2013/7-LukasPodpera-VladimirDanek.sgf
+      - 2-4 2:B+1.5 round:7 sgf:2013/7-MartinJurek-JanProkop.sgf
+      - 2-7 2:B+29.5 round:3 sgf:2013/3-MartinJurek-PetrCipra.sgf
+      - 3-2 2:W+R round:4 sgf:2013/4-OndrejKruml-MartinJurek.sgf
+      - 3-4 3:B+R round:2 sgf:2013/2-OndrejKruml-JanProkop.sgf
+      - 4-1 4:B+R round:6 sgf:2013/6-JanProkop-LukasPodpera.sgf
+      - 4-5 5:W+0.5 round:5 sgf:2013/5-JanProkop-VladimirDanek.sgf
+      - 4-6 4:B+31.5 round:3 sgf:2013/3-JanProkop-PetrKouba.sgf
+      - 4-7 4:B+R round:1 sgf:2013/1-JanProkop-PetrCipra.sgf
+      - 5-2 2:W+R round:2 sgf:2013/2-VladimirDanek-MartinJurek.sgf
+      - 5-3 3:W+R round:6 sgf:2013/6-VladimirDanek-OndrejKruml.sgf
+      - 5-7 5:B+R round:4 sgf:2013/4-VladimirDanek-PetrCipra.sgf
+      - 6-1 1:W+17.5 round:4 sgf:2013/4-PetrKouba-LukasPodpera.sgf
+      - 6-5 5:W+R round:1 sgf:2013/1-PetrKouba-VladimirDanek.sgf
+      - 6-8 6:B+R round:2 sgf:2013/2-PetrKouba-JanaHricova.sgf
+      - 7-1 1:W+R round:2 sgf:2013/2-PetrCipra-LukasPodpera.sgf
+      - 7-3 3:W+29.5 round:5 sgf:2013/5-PetrCipra-OndrejKruml.sgf
+      - 8-3 3:W+R round:1 sgf:2013/1-JanaHricova-OndrejKruml.sgf
+      - 8-4 4:W+R round:4 sgf:2013/4-JanaHricova-JanProkop.sgf
+      - 8-5 5:W+R round:3 sgf:2013/3-JanaHricova-VladimirDanek.sgf

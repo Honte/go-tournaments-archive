@@ -1,0 +1,21 @@
+; TC[T090702B]
+; CL[A]
+; EV[Czech Championship]
+; PC[CZ, Libcice nad Vltavou]
+; DT[2009-07-02,2009-07-06]
+; HA[h9]
+; KM[6.5]
+; TM[120]
+; CM[ (submitted by cieply)]
+;.
+;
+   1 Silt Ondrej                    6d CZ  KVa      8     8    30     1      8+      6+      7+      2+      9+     10+      5+      4+      3- |10337481
+   2 Kruml Ondrej                   3d CZ  Brn      8     8    29     0      9+     10+      5+      1-      3+      8+      6+      7+      4+ |10886524
+   3 Prokop Jan                     4d CZ  SRic     7     7    25     0      4-      8+      6+      7+      2-      9+     10+      5+      1+ |10433654
+   4 Nechanicky Radek               6d CZ  Nym      5     5    16     1      3+      9+      8+     10+      6-      5+      7-      1-      2- |10250196
+   5 Danek Vladimir                 5d CZ  Pra      5     5    12     1      6+      7+      2-      9+     10+      4-      1-      3-      8+ |10213016
+   6 Simara Jan                     5d CZ  KVa      5     5    12     1      5-      1-      3-      8+      4+      7+      2-      9+     10+ |10749860
+   7 Kostka Ivan                    4d CZ  FMi      3     3     7     0     10+      5-      1-      3-      8+      6-      4+      2-      9- |10286716
+   8 Cipra Petr                     3d CZ  NBo      2     2     2     1      1-      3-      4-      6-      7-      2-      9+     10+      5- |10249503
+   9 Valasek Petr                   2d CZ  FMi      2     2     3     0      2-      4-     10+      5-      1-      3-      8-      6-      7+ |10333653
+  10 Snidal Bronislav               2d CZ  Ost      0     0     0     0      7-      2-      9-      4-      5-      1-      3-      8-      6- |10750476

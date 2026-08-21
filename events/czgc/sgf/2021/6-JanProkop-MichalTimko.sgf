@@ -1,0 +1,63 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]OT[5x30 byo-yomi]AP[CGoban:3]SZ[19]GM[1]GN[Czech go champ. Timko 3D(W) x Prokop 6D(B)]
+EV[Czech go championship 2021]RO[6]DT[2021-07-05]PC[The KGS Go Server at http\://www.gokgs.com/]
+PB[Jan Prokop]BR[6d]PW[Michal Timko]WR[3d]KM[6.5]TM[3600]RE[B+R]MULTIGOGM[1]
+;B[cp];W[pd];B[pq];W[cd];B[qf];W[nc];B[pn];W[eq];B[hq];W[do];B[dp];W[ep];B[eo];W[co]
+;B[bo];W[bn];B[bp];W[fo];B[en];W[dm];B[dr];W[er];B[dq];W[gp];B[em];W[dl];B[el];W[dk]
+;B[jp];W[hn];B[hl];W[jn];B[hp];W[ho];B[fj];W[di];B[jl];W[kp];B[kq];W[lp];B[jo];W[kn]
+;B[lq];W[ll];B[qd];W[qc];B[rc]
+(;W[pc])
+(;W[qe];B[rd];W[pe];B[re];W[qb];B[qh]C[MR2 [?\]\: sry touchpad problem
+]
+(;W[ql])
+(;W[mp];B[mq];W[nm];B[ed];W[df];B[cc];W[bc];B[ic];W[fh];B[hi];W[ql];B[qn];W[qj]
+;B[dc];W[bb];B[np];W[no];B[oo];W[op];B[nq];W[kc];B[kb];W[jb];B[jc];W[lb];B[kd];W[lc]
+;B[ib];W[hg];B[ff];W[fg];B[ef];W[dg];B[kj];W[nn];B[bm];W[cn];B[an];W[bl];B[pf];W[br]
+;B[bs]C[to1al [1k?\]\: by melo jit zabit ne? nebo tam je ko?
+];W[cr];B[cs];W[bq]
+;B[al];W[bk];B[ak];W[aj];B[am]C[to1al [1k?\]\: a5
+liusasori [5d\]\: a5 seems to be a msitake
+liusasori [5d\]\: a5 a4 c7 a5 b10 a2 b alive
+liusasori [5d\]\: so w has to leave b10 if he want to kill
+liusasori [5d\]\: while c7 a5 b10 is a ko
+patience [4d\]\: b would still be alive even if w got a2, it's not a dead shape
+to1al [1k?\]\: thx
+liusasori [5d\]\: but w won't play a2 but a1 a2 a3 d1 a1 then it's a ko
+liusasori [5d\]\: but not an easy to win
+liusasori [5d\]\: w would need to win this ko 3 times which is almost impossible
+]
+;W[cm];B[ao];W[bj];B[gr];W[es];B[ds];W[ne]C[liusasori [5d\]\: g2 was nice
+liusasori [5d\]\: now b can answer a1 with a3 and b is alive
+]
+;B[ja];W[he];B[if];W[gf];B[gd];W[rm];B[rn];W[ri];B[rh];W[ea];B[db];W[da];B[ca];W[cb]
+;B[fa];W[ba];B[eb]C[patience [4d\]\: yes, it seems like he had to play a5 after all, he didn't need a1 to start the ko, he could have done a3
+]
+;W[dd];B[ca];W[jh]C[liusasori [5d\]\: but a5 throw in sequence would leave a choice between a3 ko and b10
+liusasori [5d\]\: and it's not a good idea to start a ko with such a local ko threat factory 
+patience [4d\]\: i think it's more a matter of black needing another move to defend, where as now he is alive but w can still try for seki
+liusasori [5d\]\: it is seki already
+]
+;B[ji]C[patience [4d\]\: he was never going to just kill it
+];W[hm]C[liusasori [5d\]\: if b add any move first he dies in ko
+]
+;B[gl]C[patience [4d\]\: but if w had started with a5 b would need another move, right now he's simply alive
+liusasori [5d\]\: yes
+]
+;W[on];B[po];W[sn];B[so];W[sm]C[liusasori [5d\]\: the original mistake was b2 which was too early
+liusasori [5d\]\: w should have played g2 yose first
+]
+;B[ro];W[mj];B[kh];W[ih]C[liusasori [5d\]\: but i don't understand your point patience, as b ended also in gote here\: he played d1 and w took sente
+]
+;B[kg];W[li]C[patience [4d\]\: b took his sente to play g2 gote
+patience [4d\]\: which would not have been my move
+]
+;B[ki];W[rk];B[oi];W[pi];B[ph];W[oj];B[ni];W[nj];B[rb]C[liusasori [5d\]\: then with a5 b would end up alive in the corner and gote, and with other sequence its a seki in corner and b got g2 gote
+]
+;W[ra];B[la];W[mb];B[qi];W[pj];B[si];W[rj];B[pm];W[pl];B[ko];W[lo];B[ln];W[mo]C[liusasori [5d\]\: a5 would give 10 points to b in the corner and if w got g2 it's something like 7 points difference so in the end a5 would be a -3 points sente move but probably w could get more than g2, something like h1 or so
+liusasori [5d\]\: so in the end it's only  or  points difference
+liusasori [5d\]\: 1 or 2
+]
+;B[lk];W[ml];B[km];W[jm];B[kl];W[lm];B[ng]C[patience [4d\]\: anyway i could b with a comfortable lead
+patience [4d\]\: count*
+]
+;W[io];B[ip];W[il];B[ik];W[im];B[ii]C[MR2 [?\]\: B+ resign
+])))

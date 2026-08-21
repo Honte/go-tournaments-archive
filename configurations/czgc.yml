@@ -1,0 +1,13 @@
+events:
+  - id: czgc
+basePath: /czgc
+config:
+  generateSvgs: false
+  generatePngs: false
+  generateJpgs: true
+  generateZips: true
+  links:
+    - website: https://goweb.cz/
+      title: Czech Go Association
+      tooltip: Visit Czech Go Association website
+      place: top

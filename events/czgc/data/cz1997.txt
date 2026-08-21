@@ -1,0 +1,21 @@
+; CL[A]
+; EV[Czech Championship `97]
+; PC[CZ,Ostrava]
+; DT[1997-08-26,1997-08-31]
+; KM[5.5]
+; TM[2h]
+; HA[h9]
+;                      Mistrovstvi Ceske republiky 1997
+;                         26. - 31. 8. 1997, Ostrava
+;
+;Pl    Name           Rank  Club   MM S SOS SDOS  1.  2.  3.  4.  5.  6.  7.  8.  9.   
+   1 Danek Vladimir                 6D CZ  Pra      9     9    36     0      8+      2+      9+      5+      4+      6+     10+      7+      3+ |10213016
+   2 Nechanicky Radek               6D CZ  Nym      8     8    28     0      9+      1-      4+      6+     10+      7+      3+      8+      5+ |10250196
+   3 Valasek Petr                   4D CZ  FMi      5     5    16     0      4+      6+     10+      7+      5-      8-      2-      9+      1- |10333653
+   4 Holecek David                  4D CZ  Pra      5     5    14     0      3-      8+      2-      9+      1-      5-      6+     10+      7+ |10250504
+   5 Mechura Jan                    4D CZ  Plz      4     4    13     0     10+      9-      7-      1-      3+      4+      8+      6-      2- |10237502
+   6 Cieply Martin                  4D CZ  Ost      4     4    11     0      7+      3-      8-      2-      9+      1-      4-      5+     10+ |10801967
+   7 Cipra Petr                     5D CZ  Libe     4     4    10     0      6-     10+      5+      3-      8+      2-      9+      1-      4- |10249503
+   8 Dach Karel                     3D CZ  Plz      3     3     9     0      1-      4-      6+     10+      7-      3+      5-      2-      9- |10298508
+   9 Koranda Tomas                  4D CZ  Plz      3     3     7     0      2-      5+      1-      4-      6-     10+      7-      3-      8+ |10233498
+  10 Nechanicky Petr                3D CZ  Nym      0     0     0     0      5-      7-      3-      8-      2-      9-      1-      4-      6- |10233267

@@ -23,6 +23,8 @@ events:
     prefix: pygc
   - id: pagc
     prefix: pagc
+  - id: czgc
+    prefix: czgc
   - id: iegc
     prefix: iegc
   - id: hrgc

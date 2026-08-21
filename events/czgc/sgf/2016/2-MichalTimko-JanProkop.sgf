@@ -1,0 +1,39 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]OT[20/600 Canadian]AP[CGoban:3]SZ[19]GM[1]GN[Czech Championship 2016 - r2, Prokop (W) - Timko (B)]
+RO[2]DT[2016-09-24]PC[The KGS Go Server at http\://www.gokgs.com/]PB[Michal Timko]
+BR[2d]PW[Jan Prokop]WR[6d]KM[6.5]TM[5400]RE[W+Resign]MULTIGOGM[1]
+;B[pd];W[dp];B[pq];W[dd];B[fq];W[cn];B[pk];W[jp];B[lp];W[gp];B[fc];W[df];B[mc];W[dq]
+;B[cj];W[pp];B[oq];W[op];B[np];W[qq];B[qr];W[qp]C[blackhawk [1d\]\: n17 strange to me.. r17 so open
+]
+;B[rr];W[no];B[mo];W[nq];B[mp];W[qm];B[ql];W[pm];B[nk];W[nn];B[rm];W[rn];B[rl];W[nr]
+;B[or];W[lm];B[jq]C[liusasori [3d\]\: with o17 the corner is still open too
+liusasori [3d\]\: b don't care about corner he will be happy to reinforce outside if w invade
+]
+;W[kq];B[kp];W[jr];B[iq];W[os];B[pr];W[lq];B[ir];W[mq];B[jo]C[liusasori [3d\]\: k1 j4 m2 w alive and b corner is dead
+]
+;W[js]C[liusasori [3d\]\: b got a good shape outside but the loss of the corner is pretty big
+liusasori [3d\]\: b has to j4 now
+]
+;B[ls];W[kr];B[ps]C[liusasori [3d\]\: o1 j4 s3 w has more libs
+blackhawk [1d\]\: over
+]
+;W[ip];B[gr]C[blackhawk [1d\]\: j6
+liusasori [3d\]\: o1 s3 s4 t3 s1 t1 t2 ko
+];W[io]
+C[liusasori [3d\]\: b dead
+liusasori [3d\]\: k6 l5 l6 m6 m5 n6 l5 j7 geta
+liusasori [3d\]\: m4 is dead now and both g2 and s2 not alive
+liusasori [3d\]\: s3 can get ko
+]
+;B[kn]C[liusasori [3d\]\: k7 
+liusasori [3d\]\: k7 works
+];W[jm]C[liusasori [3d\]\: b can resign her
+liusasori [3d\]\: e
+]
+;B[km];W[kl];B[ll];W[ln];B[jl];W[kk]C[byiu [4k\]\: black should just abandon this part of the board... or just resign
+]
+;B[im];W[ko];B[jn];W[in];B[jm];W[jk];B[hm];W[mn];B[go]C[manul [?\]\: or make everybody think he's gone to the restroom and just escape %)
+manul [?\]\: by going home %)
+]
+;W[hp];B[fp];W[fo];B[er];W[dr];B[eo];W[fn];B[ij];W[ik];B[hk];W[hj];B[gk];W[gj];B[fj]
+;W[ii];B[jj];W[ki];B[hi];W[gi];B[ji];W[jh]C[MR2016b [-\]\: W+Resign
+])

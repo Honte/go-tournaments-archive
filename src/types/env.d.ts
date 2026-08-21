@@ -5,6 +5,7 @@ declare global {
       CONFIG?: string;
       EVENT?: string;
       BASE_PATH?: string;
+      VERSION?: string;
       FORCED_CONFIGURATION?: string;
     }
   }

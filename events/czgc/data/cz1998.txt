@@ -1,0 +1,22 @@
+; TC[T980623]
+; CL[A]
+; EV[Czech Championship `98]
+; PC[CZ,Olomouc]
+; DT[1998-06-23,1998-06-28]
+; KM[6.0]
+; TM[2h]
+; HA[h9]
+;                      Czech Championship, Olomouc 1998
+;                             June 23 - 28, 1998
+;
+;Pl     Name             Grade  Club   MM S SOS SDOS  1.  2.  3.  4.  5.  6.  7.  8.  9. 
+   1 Danek Vladimir                 6D CZ  Pra      8     8    31     0      5+      4+     10+      3-      8+      2+      7+      9+      6+ |10213016
+   2 Dach Karel                     3D CZ  Plz      7     7    24     0      4-     10+      3+      8+      7+      1-      9+      6+      5+ |10298508
+   3 Holecek David                  4D CZ  Pra      6     6    23     1      7-      8+      2-      1+      9+      6+      5-      4+     10+ |10250504
+   4 Cipra Petr                     5D CZ  Libe     6     6    20     1      2+      1-      9+      6-      5+      7+     10+      3-      8+ |10249503
+   5 Mechura Jan                    4D CZ  Plz      6     6    18     1      1-      9+      6+      7+      4-     10+      3+      8+      2- |10237502
+   6 Nechanicky Radek               6D CZ  Nym      5     5    13     0      9+      7+      5-      4+     10+      3-      8+      2-      1- |10250196
+   7 Valasek Petr                   4D CZ  FMi      3     3     8     0      3+      6-      8-      5-      2-      4-      1-     10+      0+ |10333653
+   8 Cieply Martin                  4D CZ  Ost      2     2     3     0     10+      3-      7+      2-      1-      9-      6-      5-      4- |10801967
+   9 Hora Jan                       3D CZ  Pra      2     2     2     0      6-      5-      4-     10+      3-      8+      2-      1-      0- |10401083
+  10 Cizl Jiri                      3D CZ  Pra      0     0     0     0      8-      2-      1-      9-      6-      5-      4-      7-      3- |10213709

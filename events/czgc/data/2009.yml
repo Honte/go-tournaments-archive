@@ -1,0 +1,33 @@
+name: 17th Czech Championship
+stages:
+  - type: tournament
+    name: Championship
+    file: cz2009.txt
+    scoringColumns:
+      - wins
+      - null
+      - sodos
+      - direct
+    breakers:
+      - wins
+      - direct
+      - sodos
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:4 sgf:2009/4-OndrejSilt-OndrejKruml.sgf
+      - 1-3 3:W+2.5 round:9 sgf:2009/9-OndrejSilt-JanProkop.sgf
+      - 1-6 1:B+R round:2 sgf:2009/2-OndrejSilt-JanSimara.sgf
+      - 2-3 2:B+R round:5 sgf:2009/5-OndrejKruml-JanProkop.sgf
+      - 2-4 2:B+1.5 round:9 sgf:2009/9-OndrejKruml-RadekNechanicky.sgf
+      - 3-4 4:W+R round:1 sgf:2009/1-JanProkop-RadekNechanicky.sgf
+      - 3-7 3:B+1.5 round:4 sgf:2009/4-JanProkop-IvanKostka.sgf
+      - 4-1 1:W+8.5 round:8 sgf:2009/8-RadekNechanicky-OndrejSilt.sgf
+      - 4-5 4:B+2.5 round:6 sgf:2009/6-RadekNechanicky-VladimirDanek.sgf
+      - 5-1 1:W+9.5 round:7 sgf:2009/7-VladimirDanek-OndrejSilt.sgf
+      - 5-7 5:B+R round:2 sgf:2009/2-VladimirDanek-IvanKostka.sgf
+      - 6-4 6:B+1.5 round:5 sgf:2009/5-JanSimara-RadekNechanicky.sgf
+      - 6-5 5:W+R round:1 sgf:2009/1-JanSimara-VladimirDanek.sgf
+      - 7-1 1:W+R round:3 sgf:2009/3-IvanKostka-OndrejSilt.sgf
+      - 7-2 2:W+R round:8 sgf:2009/8-IvanKostka-OndrejKruml.sgf
+      - 7-4 7:B+6.5 round:7 sgf:2009/7-IvanKostka-RadekNechanicky.sgf
+      - 8-2 2:W+11.5 round:6 sgf:2009/6-PetrCipra-OndrejKruml.sgf

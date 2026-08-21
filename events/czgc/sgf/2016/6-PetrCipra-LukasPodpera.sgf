@@ -1,0 +1,373 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]OT[10/1200 Canadian]AP[CGoban:3]SZ[19]GM[1]GN[Czech Championship 2016 - r6, Podpera(W) - Cipra(B)]
+RO[6]DT[2016-09-27]PC[The KGS Go Server at http\://www.gokgs.com/]PB[Petr Cipra]
+BR[4d]PW[Lukáš Podpěra]WR[7d]KM[6.5]TM[5400]RE[W+3.50]MULTIGOGM[1]
+;B[pd];W[dd];B[pp];W[dq];B[do];W[cm];B[cq];W[gq];B[bo];W[cr];B[ck];W[dm]C[leachy [2k\]\: b5 is a new move for me
+]
+;B[bq];W[ci];B[eq];W[er];B[dp];W[dr]C[melmak\: i would f17 now
+];B[fc];W[df];B[jd]
+;W[qf];B[ph];W[of];B[nd];W[rd];B[qg];W[pg];B[qh];W[qc];B[rf];W[qe];B[pc];W[re];B[ng]
+;W[qn];B[ql];W[np];B[pn];W[pm]C[melmak\: cut
+melmak\: think later
+ifonly [5d?\]\: probably, q6 at r5 q6 p5 would have been more interesting
+ifonly [5d?\]\: Maybe B is thinking about p6 r7 r5 
+melmak\: .....
+]
+;B[qm];W[pq];B[qo];W[qq];B[fe]C[ifonly [5d?\]\: f15 is a good point. Alternatives are g5 j4 d10 to attack d7 - but that's for later
+]
+;W[ec]C[ifonly [5d?\]\: At the same times, W g5 looks interesting for W
+ifonly [5d?\]\: W should exchange s6 s5 p6 q5 ASAP
+ifonly [5d?\]\: if f18, W f14 is a good follow-up locally
+]
+;B[fb]C[melmak\: dont like r5 think p6 better
+];W[bn]C[ifonly [5d?\]\: hmmm, I think the right side on the whole is too narrow
+ifonly [5d?\]\: q12 wall and r8 are overconcentrated
+ifonly [5d?\]\: b6 is very aggressive - W is trying to attack d4 stones in order to turn the lower side into territory naturally
+ifonly [5d?\]\: f3 f2 g4 h3 f5 takes care of that problem
+liusasori [3d\]\: b would like to ave p7 here but now it's too slow while it's sente for w
+liusasori [3d\]\: have*
+ifonly [5d?\]\: yes,
+]
+;B[em]C[liusasori [3d\]\: Oo
+liusasori [3d\]\: Time to mess up ?
+melmak\: look like
+liusasori [3d\]\: I'd like to know what b red here
+]
+;W[el];B[fm]C[liusasori [3d\]\: w plays it simply
+ifonly [5d?\]\: f5 
+ifonly [5d?\]\: but f5 is probably an overplay d9 is good enough
+liusasori [3d\]\: yes i wonder if b can answer d8 to f5
+]
+;W[dk]C[liusasori [3d\]\: w settled in sente
+melmak\: think b should invade bottom soon
+liusasori [3d\]\: but he need to protect f5 now
+]
+;B[fq];W[fr];B[fo];W[rn];B[ro];W[on];B[po];W[gp]C[melmak\: b difficult now
+];B[lq]
+;W[nq];B[hr]C[melmak\: k3 
+mtarn567 [6k\]\: or even k2
+liusasori [3d\]\: no, b will be happy to play k3 against k2
+Hanarou [1k\]\: eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeiiiiiiiiiii**********
+]
+;W[iq]C[mtarn567 [6k\]\: interesting 
+];B[ir];W[jq]C[Hanarou [1k\]\: .fewvSSDSADSDA.E;,WLRTITVO.RWCE\:XE;,RMOIVIURIRIRIiiiIIIIFFRMVBU,ITV.BIN,GL;LLKHJGHGfgyuhkyjbhvgcfvgbnhm,iukvcxcdvbngyumjkl;./\:@p\:/@^-/.09987434
+]
+;B[jr];W[gr];B[kq];W[jo]C[liusasori [3d\]\: maybe w could play k4 instead of g4 ?
+ifonly [5d?\]\: G4 was a big mistake - probably j4 or j3 would be more realistic
+melmak\: think this is good enough for w
+]
+;B[mr]C[ifonly [5d?\]\: the exchange e7 e8 f7 d9 was great for W. That's why W is OK
+liusasori [3d\]\: not sure it is. B can now jump to m5 and w look like cut in two. w cannot profit a lot from an attack against b and g4 group is not 100% alive and only have a few points 
+ifonly [5d?\]\: n2 is nice  - B is alive 
+]
+;W[lo]C[ifonly [5d?\]\: o2 
+liusasori [3d\]\: w will have about 10 points on a side where he had a moyo and b will have 5 points htere
+ifonly [5d?\]\: o2 p2 h6 ?
+ifonly [5d?\]\: personally, I probably would have played n2 at m5 , just because it's my syle
+ifonly [5d?\]\: style
+]
+;B[nr];W[or];B[op];W[oq]C[liusasori [3d\]\: m5 was better for b imo because w would be cut in small group with aji
+]
+;B[fg];W[nf]C[ifonly [5d?\]\: f13 is nice
+liusasori [3d\]\: can b block at n14?
+liusasori [3d\]\: n14 n15 o15 n16 difficult fight
+]
+;B[me]C[ifonly [5d?\]\: If B m5, W would play at n2 - then W lower left group 100% alive. So your story that B cuts 'in small group' is not really relevant. 
+]
+;W[mf]C[ifonly [5d?\]\: n15 is not a move
+];B[lf];W[lg];B[kf];W[eb];B[ch]C[ifonly [5d?\]\: c12 is interesting
+ifonly [5d?\]\: It looks completely unreasonable, but if d12 d11 
+melmak\: d12 d11 then?
+renkfull [6k\]\: c12 looks a wonderful 6 kyu move
+melmak\: lol
+hhfjxhfbDE [2d\]\: it's a cool game \:)
+melmak\: even 4d can play 6kyu move
+liusasori [3d\]\: this game is not easy for w
+ifonly [5d?\]\: d11 d13 breaks up the side
+ifonly [5d?\]\: c13 is the move to keep everything connected, but it makes c12 a clear forcing move
+ifonly [5d?\]\: c13 d11 c10 d13 b12 c14 d12 d15 is possible to break up the side
+]
+;W[cg]C[ifonly [5d?\]\: W just has to fight back
+ifonly [5d?\]\: B's group around b5 is not 100% alive. so if B plays my sequence, W gets a double ponnuki, which makes him very strong  maybe too much trouble for f7 stones
+ifonly [5d?\]\: so d11 c10 d13 b12 c14 cuts through
+ifonly [5d?\]\: Probably W should resist earlier, e.g. d11 d12 c10 b12 d10 f8 but that's risky too
+]
+;B[ce]C[ifonly [5d?\]\: That's the advantage of being behind (if either side feels/is behind), you can use a risky strategy.
+ifonly [5d?\]\: c15 is probably bad
+ifonly [5d?\]\: theresult of bad reading
+ifonly [5d?\]\: W d12 d15 e15 e14 e16 c16 doesn't work for B
+ifonly [5d?\]\: so d12 c17 c16 b16 b15 
+]
+;W[dh];B[cc]C[ifonly [5d?\]\: c16 b16 b15 is ok
+ifonly [5d?\]\: B can live but it will hurt around f16 
+Hellhuman [1d?\]\: bs move looks somehow randomly desperated
+]
+;W[cd];B[bd];W[be]C[ifonly [5d?\]\: well, that's the result of bad reading
+];B[bf]
+;W[bc];B[ae];W[cb];B[ac]C[ifonly [5d?\]\: one thing he could have done is play d12 (instead of c15), then cut at b13 - this creates a lot of aji and W has trouble finding a good move
+]
+;W[bb];B[cf]C[ifonly [5d?\]\: b13 b12 c14 lives
+ifonly [5d?\]\: but W gets e16 or e14 
+hhfjxhfbDE [2d\]\: well, I think this is still not horrible for b 
+hhfjxhfbDE [2d\]\: he seems ahead to me still, no ?
+ifonly [5d?\]\: yes
+hhfjxhfbDE [2d\]\: but you think he was better before ?
+ifonly [5d?\]\: That's mainly because W played g4 which left the lower side open for the perfect invasion
+]
+;W[ee]C[liusasori [3d\]\: e15 hurt
+liusasori [3d\]\: w now will get a ko to destroy b on top
+elianovici [4d\]\: b13 
+]
+;B[bg];W[bh];B[ag];W[ff];B[ge];W[gf];B[he]C[liusasori [3d\]\: this sequence result in a net loss for b
+ifonly [5d?\]\: such is life
+ifonly [5d?\]\: if h14 B g5 ?
+]
+;W[gl]C[liusasori [3d\]\: b was ahead now the game seems to be equal 
+ifonly [5d?\]\: Maybe B h15 was too much - it would be more pragmatic to play f8 instead
+ifonly [5d?\]\: or h14 to get sente
+ifonly [5d?\]\: but B f8 was very important
+ifonly [5d?\]\: how did Lukas become 7D?
+ifonly [5d?\]\: did he promote himself or did he become European Champion 3 times or so?
+]
+;B[hn];W[io];B[fl];W[fk]C[ifonly [5d?\]\: g9 h8 f10 e9 d10 is too much?
+liusasori [3d\]\: he reached 2650+ european rating
+ifonly [5d?\]\: ic. Is that enough?
+]
+;B[gk];W[hl];B[fj];W[ek]C[liusasori [3d\]\: 2650 + is 7d rank
+ifonly [5d?\]\: ok...
+ifonly [5d?\]\: d10 
+liusasori [3d\]\: it's not a title and you don't need anything special to earn it
+liusasori [3d\]\: just a rating high enough
+MR2016a [-\]\: B in byoyoymi
+ifonly [5d?\]\: ok, that makes sense. In the old days, the EGF or your national go association did the official ranking.
+]
+;B[dn];W[gj];B[hk];W[gi];B[il];W[ik];B[hj];W[im];B[jl];W[hm]C[liusasori [3d\]\: this doesn't turn out good for b
+bag [1d\]\: j8 is good suji ofc... it just doesnt really work
+]
+;B[hi]C[melmak\: this doesnt look bad for b
+];W[hh]C[bag [1d\]\: it kinda does tho?
+ifonly [5d?\]\: if his group in the lower right survives, this is great for B
+]
+;B[jj];W[gg]C[bag [1d\]\: you cant eat the cake tooo...
+ifonly [5d?\]\: but it looks 100% alive
+]
+;B[cn];W[bm];B[jm];W[in];B[ol]C[ifonly [5d?\]\: p8 is better at p7 I guess
+melmak\: look like w gained nothing from the center fight
+Hellhuman [1d?\]\: oo b ahead?
+ifonly [5d?\]\: now w s4 still becomes 90% sente
+]
+;W[ji];B[jk];W[rp];B[rm];W[gn];B[fn];W[pb];B[ob];W[qb];B[mg]C[ifonly [5d?\]\: n13 is worth 1 pnt?
+]
+;W[oa];B[nb];W[na];B[ma];W[pa];B[mb]C[Hellhuman [1d?\]\: white is getting the endgame though
+]
+;W[ki];B[mj]C[ifonly [5d?\]\: n13 at l11 would have been much better
+cambodia [7k\]\: p12?
+]
+;W[ab]C[ifonly [5d?\]\: n10 is crazy?
+];B[ad]C[ifonly [5d?\]\: m9 is possible next?
+ifonly [5d?\]\: m9 m10 l10 l9 m8 m7 doesn't look possible got W
+]
+;W[fa]C[ifonly [5d?\]\: but m9 m10 n8 l10 o9 is possible, e.g.
+ifonly [5d?\]\: g19 f16 g17 
+ifonly [5d?\]\: or g19 g18 e19 f16 g17 
+]
+;B[ga];W[ea];B[gb]C[ifonly [5d?\]\: s4 was huge - if B t2 before that, W needs to pay attention to the cut around n5 
+]
+;W[mi]C[ifonly [5d?\]\: it's a close game, but in the endgame, skill becomes important.
+]
+;B[ni];W[lj]C[ifonly [5d?\]\: in the middle game, skill is important (of course) but anything can happen.
+ifonly [5d?\]\: m10 looked better at m9 m10 n8 - but that's inconsistent with n11 
+ifonly [5d?\]\: BUT, W is aiming at... n9 m9 m8 n8 n7 l8 m7 l7 l6 l8 k6 m6 l5 o7 hmmm, I wonder...
+ifonly [5d?\]\: looks very dangerous for W to try to cut
+]
+;B[mk];W[lk];B[ll];W[oh];B[oi];W[mm];B[ml];W[lm];B[km];W[rg];B[rh];W[sf];B[og];W[pf]
+;B[kn];W[kp];B[no]C[Thundergod [6d\]\: close game?
+Thundergod [6d\]\: Black is maybe even ahead?
+liusasori [3d\]\: w around 67.5 b around 64 in my count
+liusasori [3d\]\: but it was before o5
+Thundergod [6d\]\: How you count the left side?
+ifonly [5d?\]\: good point
+ifonly [5d?\]\: I wanna play d10 just as try-out
+Thundergod [6d\]\: not b10?
+]
+;W[mo];B[nn]C[ifonly [5d?\]\: b10 a12 you lose two points immediately
+];W[nm];B[om]
+C[Thundergod [6d\]\: Not really because than you can play d10
+ifonly [5d?\]\: a12 a11 b10 b11 d10 could be slightly more interesting
+]
+;W[ns]C[Thundergod [6d\]\: Not sure if you need a12 exchange
+liusasori [3d\]\: then b is clearluy ahead
+]
+;B[ls]C[Thundergod [6d\]\: Nothing there btw
+ifonly [5d?\]\: but b10 a12 d10 e10 f11 g12 e11 d8 b8 d11 and B gets nothing
+]
+;W[sh]C[Thundergod [6d\]\: But a6 is sente
+Thundergod [6d\]\: Thats all black can get there
+ifonly [5d?\]\: yes, that why
+]
+;B[ri]C[Thundergod [6d\]\: But if it would working than you need need a12
+Thundergod [6d\]\: dont
+Thundergod [6d\]\: Thats my point here
+ifonly [5d?\]\: what about starting with a6 a7 b10 a12 d10 e10 f11 g12 d8 
+]
+;W[ii];B[ij]C[Thundergod [6d\]\: white wont a7
+ifonly [5d?\]\: looks like fun
+ifonly [5d?\]\: where else?
+ifonly [5d?\]\: a6 d8 a12 a11 b10 b11 a7 a8 a5 b8 sente
+Thundergod [6d\]\: b9 most probably
+]
+;W[br]C[ifonly [5d?\]\: a6 b9 b10 c10 a9 b8 a7 
+];B[fi];W[gh];B[dj]C[ifonly [5d?\]\: b2 is huge, because now a6 doesn't work any longer
+Thundergod [6d\]\: a6 still fine
+ifonly [5d?\]\: b9 
+ifonly [5d?\]\: maybe not
+ifonly [5d?\]\: b9 c10 b10 c8 d8 b8 a8 a12 is also an interesting problem
+ifonly [5d?\]\: anyway, lots of reading fun
+ozjohn [2d?\]\: does white C10 fix this?
+MR2016a [-\]\: W in byoyomi
+]
+;W[bk];B[go];W[ho]C[liusasori [3d\]\: c10 b10
+ozjohn [2d?\]\: oh
+liusasori [3d\]\: here b can still play a12
+liusasori [3d\]\: then ifonly sequence
+GodofGo [6d\]\: close game
+ifonly [5d?\]\: c10 b10 c8 d8 b8 e10 works
+]
+;B[ai]C[ifonly [5d?\]\: !!!
+GodofGo [6d\]\: haha he's going for it
+GodofGo [6d\]\: i was thinking this after a6
+GodofGo [6d\]\: but now seems a bit early
+ozjohn [2d?\]\: maybe taking advantage of byo yomi
+]
+;W[ah];B[bi]C[GodofGo [6d\]\: but bad exchange if it fails
+];W[ch];B[cj]C[ifonly [5d?\]\: c10 b10 e10 d8 b8 
+ifonly [5d?\]\: but it doesn't work
+GodofGo [6d\]\: i think d8  now
+GodofGo [6d\]\: if b10 then directly b8
+GodofGo [6d\]\: b8a8 c8 a7
+ifonly [5d?\]\: b10 c8 d8 b8 e10 e11 a8 d11 a7 
+]
+;W[bj]C[GodofGo [6d\]\: c8 d8 a7
+wade [5d\]\: b8 only move now
+GodofGo [6d\]\: b8 works i think
+]
+;B[bl]C[GodofGo [6d\]\: a8 c8 d8 a7 
+GodofGo [6d\]\: if it works lukan is screwed
+ifonly [5d?\]\: b8 a8 c8 d8 a7 e10 a9 e11 - ok
+wade [5d\]\: yup might be a really huge ko
+GodofGo [6d\]\: lol after e11 b goes home
+whiteblack\: d8 now ?
+GodofGo [6d\]\: d8 a8 
+GodofGo [6d\]\: just get the yose
+ifonly [5d?\]\: d8 c8 e10 
+]
+;W[dl]C[Ohno [-\]\: how about a8c8 e10 ?
+ifonly [5d?\]\: a8 e10 a6 
+wade [5d\]\: c8 e10 e11 d11 a8 
+GodofGo [6d\]\: oh right just c8 still works
+ifonly [5d?\]\: it doesn't
+wade [5d\]\: nvm
+MrTortue [3k\]\: why not B e10 instead of b8 ?
+GodofGo [6d\]\: oh yea nvm just a8 then
+wade [5d\]\: e10 a8 c8 a7 
+GodofGo [6d\]\: a8 good enough for b i think, he can win this
+MrTortue [3k\]\: but if b e10 e9 in atari w has to protect
+ifonly [5d?\]\: a8 e10 a6 
+liusasori [3d\]\: so a8 e10 a6 e11 a7 c8 b get some sente yose
+GodofGo [6d\]\: yes sente
+]
+;B[al]C[GodofGo [6d\]\: around 4 points sente 
+GodofGo [6d\]\: gg
+];W[ej]C[liusasori [3d\]\: or e11 d11 c8 e12 a6 f12 a7 more points but gote ?
+GodofGo [6d\]\: e11 c8
+liusasori [3d\]\: oh nvm
+liusasori [3d\]\: yes
+ifonly [5d?\]\: e11 c8 
+]
+;B[an]C[GodofGo [6d\]\: b10 should have been d8
+];W[cl]C[olivedu13 [1d\]\: c8
+]
+;B[am]C[olivedu13 [1d\]\: is better
+Ohno [-\]\: yep, then it was fine
+];W[di];B[hq]
+;W[hp]C[GodofGo [6d\]\: m12 
+ifonly [5d?\]\: h3 looks suspect
+ozjohn [2d?\]\: that was pretty interesting
+wade [5d\]\: a3 quite big now for w
+]
+;B[hs];W[aq];B[ap]C[GodofGo [6d\]\: ouch
+];W[ar]C[ifonly [5d?\]\: sente
+];B[cp]
+C[GodofGo [6d\]\: ..
+ifonly [5d?\]\: B wins by 1.5 - 2.5 pnts?
+wade [5d\]\: not sure now
+liusasori [3d\]\: w regained 4 points in sente with a3
+wade [5d\]\: h1 big mistake
+]
+;W[if]C[whiteblack\: why c4
+liusasori [3d\]\: a9 atari
+ifonly [5d?\]\: otherwise a9 a5 c4 
+GodofGo [6d\]\: i think the result cannot be changed already though b wins
+]
+;B[jf]C[GodofGo [6d\]\: at least 1.5 point difference
+whiteblack\: ah thx
+];W[ie]
+;B[id]C[ifonly [5d?\]\: it's still entirely possible for B to make a mistake
+GodofGo [6d\]\: yea i guess
+GodofGo [6d\]\: i am assuming he does not screw up
+]
+;W[lh];B[ig];W[hf];B[jg];W[ih]C[melmak\: think b lost
+GodofGo [6d\]\: how
+];B[so]
+;W[sp];B[qp]C[scurge [?\]\: w+
+ozjohn [2d?\]\: se thinks w 0.5
+];W[rq];B[si];W[je]
+;B[ke]C[GodofGo [6d\]\: uh oh
+GodofGo [6d\]\: f16 
+Ohno [-\]\: I count w ahead 
+ifonly [5d?\]\: hmmm, it's close
+]
+;W[ne];B[md]C[Ohno [-\]\: +1,5
+comfyditch [1k\]\: just tuned  in. 4d vs 7d?
+wade [5d\]\: n16 bad
+Ohno [-\]\: yes comfy
+luvnaloahs [1k?\]\: f16 big?
+ifonly [5d?\]\: Ohno, that's SE counting
+]
+;W[fd];B[gd]C[Ohno [-\]\: haha, haven't checked SE yet
+];W[ed]C[GodofGo [6d\]\: hm weird getting a w win now.. something changed since i last counte
+Ohno [-\]\: it says 2.5 
+GodofGo [6d\]\: d
+ifonly [5d?\]\: n16 was dangerous
+luvnaloahs [1k?\]\: h17 cover looks needed
+GodofGo [6d\]\: yep
+ifonly [5d?\]\: m16 was better, for sure l16 m15 h17 g17 l17 would not be a threat then.
+ifonly [5d?\]\: yup
+ifonly [5d?\]\: even n16 at l16 would be just as bad
+GodofGo [6d\]\: ah i see
+GodofGo [6d\]\: h3 was horrible
+EdhelDil [4k\]\: w wins
+GodofGo [6d\]\: i counted that b gets m12
+ifonly [5d?\]\: so this is good end game by W
+ifonly [5d?\]\: o15 was good timing
+melmak\: yes h3 lost sente 
+ifonly [5d?\]\: so B should have played n16 at p16 
+ifonly [5d?\]\: then after f16 and e16, B l16 suffices
+GodofGo [6d\]\: the j13 area was so big
+]
+;B[kd];W[ak];B[ao];W[fp];B[ep]C[GodofGo [6d\]\: oh well w wins now
+];W[sg];B[gs]
+;W[nl];B[nk];W[kk];B[kl];W[fs];B[mq];W[mp];B[gm];W[od];B[oc];W[oe];B[ms];W[os];B[kj]
+;W[li];B[hn];W[kr];B[js];W[gn];B[ko];W[lp];B[hn];W[mn];B[oo];W[gn];B[jp];W[ip];B[hn]
+;W[ks];B[lr];W[gn]C[liusasori [3d\]\: w at least 7 more threats
+ledung [7k\]\: even if W lose the Ko he still win
+liusasori [3d\]\: yes by 2.5
+Ohno [-\]\: I see at least 8
+liusasori [3d\]\: h3 should be a2
+]
+;B[se];W[sd];B[hn];W[kr];B[ks];W[gn]C[ledung [7k\]\: B is out of ko threat now
+Ohno [-\]\: b is stubborn playing this ko
+]
+;B[eg];W[ef];B[hn];W[en];B[eo];W[gn];B[nh]C[Ohno [-\]\: h17 are four threats 
+]
+;W[hn];B[kg];W[jn];B[ln];W[de];B[kh];W[hg];B[jh];W[qd];B[mh];W[pe]C[W+3,5
+])

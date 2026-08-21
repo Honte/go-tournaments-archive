@@ -1,0 +1,18 @@
+; TC[T240926A]
+; CL[A]
+; EV[Czech Championship 2024]
+; PC[CZ, Praha]
+; DT[2024-09-26,2024-09-29]
+; HA[h9]
+; KM[6.5]
+; TM[120]
+; CM[ (submitted by Lukan)]
+;.
+1 Podpera Lukas    7d CZ  APWS  7    7    21 0  4+/b   5+/w   3+/b   6+/w   2+/b   8+/b   7+/w    |13201914
+2 Prokop Jan       6d CZ  Imba  6    6    15 0  5+/b   3+/w   6+/b   8+/b   1-/w   7+/b   4+/w    |10433654
+3 Simara Jan       1p CZ  Imba  5    5    10 0  6+/w   2-/b   1-/w   7+/b   4+/w   5+/b   8+/w    |10749860
+4 Danek Vladimir   5d CZ  APra  3    3    5  0  1-/w   7+/b   8+/w   5+/w   3-/b   6-/w   2-/b    |10213016
+5 Caha Frantisek   3d CZ  APWS  2    2    4  1  2-/w   1-/b   7+/w   4-/b   8-/w   3-/w   6+/b    |15686935
+6 Cipra Petr       4d CZ  CPis  2    2    4  0  3-/b   8+/b   2-/w   1-/b   7-/w   4+/b   5-/w    |10249503
+7 Dach Bartik      4d CZ  BMik  2    2    3  0  8+/w   4-/w   5-/b   3-/w   6+/b   2-/w   1-/b    |19574280
+8 Komin Jan        3d CZ  APWS  1    1    2  0  7-/b   6-/w   4-/b   2-/w   5+/b   1-/w   3-/b    |19637596
