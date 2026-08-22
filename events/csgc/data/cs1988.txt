@@ -1,0 +1,21 @@
+; EV[Czechoslovak Championship]
+; PC[CS, Plzen]
+; DT[1988-10-25,1988-10-30]
+; HA[h9]
+;Por.    jmeno    klub trida 1.  2.  3.  4.  5.  6.  7.  8. MM BC SOS SDOS
+   1 Winkelhofer Petr                4d CS  Pl       9     6    63    47     0      0+      3+     12+      2+      4+      5-      7+      6-
+   2 Danek Vladimir                  5d CS  MFF      9     6    63    45     0      5+      6+      4+      1-      3-     10+     11+      0+
+   3 Knecht Richard                  3d CS  Bo       9     6    61    43     0      0+      1-      0+      8+      2+      4-      9+      5+
+   4 Cipra Petr                      3d CS  Li       9     6    60    42     0      0+      0+      2-      7+      1-      3+      5+     10+
+   5 Nechanicky Radek                5d CS  Nb       8     5    65    38     0      2-     11+      6+     10+     12+      1+      4-      3-
+   6 Emmer Jiri                      4d CS  Pl       8     5    59    35     0     11+      2-      5-      0+     15+      7-     12+      1+
+   7 Cerveny Zdenek                  1k CS  Pl       7     5    56    31     0      0+     15+      8+      4-      0+      6+      1-     12-
+   8 Lechovsky Tomas                 1k CS  MFF      7     5    52    29     0      0+      9+      7-      3-      0+      0+     10-     16+
+   9 Durovic Jiri                    1k CS  KV       7     5    48    26     0      0+      8-      0-      0+      0+      0+      3-     15+
+  10 Holecek Jiri                    3d CS  Tes      7     4    56    24     0      0-      0+      0+      5-      0+      2-      8+      4-
+  11 Koranda Tomas                   1d CS  Pl       7     4    55    24     0      6-      5-     16+     15-      0+      0+      2-      0+
+  12 Jadron Milan                    3d CS  Ba       7     4    55    24     0     16+      0-      1-      0+      5-     15+      6-      7+
+  13 Konopac Daniel                  3k CS  MFF      6     6    35    24     0      0+      0+      0+      0-     14-      0+      0+      0+
+  14 Gerner Jan                      2k CS  KV       6     5    33    19     0      0-      0-      0+      0+     13+      0+     15-      0+
+  15 Kulovany Zdenek                 1k CS  CB       6     4    51    22     0      0+      7-      0+     11+      6-     12-     14+      9-
+  16 Mazal Vlastimil                 1k CS  Tes      6     4    48    21     0     12-      0+     11-      0+      0-      0+      0+      8-

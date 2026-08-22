@@ -1,6 +1,11 @@
 title:
   en: Go Tournaments Archives
   pl: Archiwum turniejów Go
+footer:
+  en: >-
+    This project is [open source on GitHub](https://github.com/Honte/go-tournaments-archive). Ideas, bug reports, and contributions to the archive are very welcome.
+  pl: >-
+    To jest projekt [open-source na GitHubie](https://github.com/Honte/go-tournaments-archive). Zachęcamy do zgłaszania pomysłów, błędów oraz do współpracy przy rozwoju archiwum.
 dynamic: true
 locales:
   - pl
@@ -75,11 +80,17 @@ events:
       - id: nlkd
         prefix: nlkd
   - title:
-      en: National Tournaments
-      pl: Mistrzostwa Krajowe
+      en: Czech & Slovakia Championships
+      pl: Mistrzostwa Czech i Słowacji
     events:
       - id: czgc
         prefix: czgc
+      - id: csgc
+        prefix: csgc
+  - title:
+      en: National Tournaments
+      pl: Mistrzostwa Krajowe
+    events:
       - id: iegc
         prefix: iegc
       - id: hrgc

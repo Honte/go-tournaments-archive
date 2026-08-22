@@ -1,0 +1,46 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]AP[CGoban:3]SZ[19]GM[1]GN[5.kolo MR Plzen 1988]
+GC[Partie růžových brýlí]RO[5]DT[1988]PB[Richard Knecht]PW[Vladimir Danek]
+KM[5.5]RE[B+0.50]MULTIGOGM[1]
+;B[qd];W[dp];B[pq];W[dc];B[ce];W[ci];B[dd];W[ec];B[cc];W[cb];B[bc];W[hc];B[oc];W[qo]
+;B[pl];W[mq];B[po];W[jq];B[qp];W[dn];B[ip]C[Standardní tah na zmenšování soupeřova moya. Ve své podstatě je tento tah něco mezi redukcí (např. J5) a invazí (např. F3, D3 atd.)]
+;W[iq]C[Druhou možností pro tento tah je K4.];B[gp];W[hp];B[ho];W[hq];B[go];W[rd]
+C[Yosu miru - zkouška soupeřovy odpovědi, jedna ze standardních vyšších technik. Tento tah má bílému pomoci rozhodnout se o své další strategii. Černý má v zásadě 5 odpovědí. Pokusíme se vám nastínit alespoň některá základní pokračování.
+V dané pozici v partii se nám však zdá lepší přímá invaze do strany černého, neboť kámen Q8 je od černé rohové závory velmi vzdálen.]
+(;B[qe]C[Tento tah klade větší důraz na vliv a nechává bílému možnost ožít v rohu.]
+;W[qc];B[pc]
+(;W[qj];B[cq]C[Černý také mohl uvažovat o R8 nebo dokonce B5.];W[dq];B[bp];W[bn]
+;B[dr];W[er];B[cr]C[Roh černého ještě není definitivně živý, ale dokud má bílý slabiny na E3 a C5, nemůže zkoušet jej umrtvit.]
+;W[pn]C[Velmi nepříjemné pro černého.];B[qn];W[jm]C[Pěkný tah, spolupracující s tahy 44, 46.]
+;B[gl];W[qm];B[ro];W[pm];B[kc];W[qb]C[47, 48 - miai];B[re];W[sc];B[pi]C[Pěkný tah]
+;W[qi];B[pg]C[Lépe Q12];W[pj];B[oi];W[bb]C[Velký bod, který zároveň zajišťuje bílou skupinu kolem D17 a oslabuje skupinu černého.]
+;B[cg];W[jk]C[Mělo být D9\: tah, který pokrývá slabinu a připravuje útok na černou skupinu.]
+;B[ck];W[dk];B[dl];W[bo];B[aq]C[Černý je rád za tuto výměnu, která je úspěchem jeho tahu C9.]
+;W[el];B[ek];W[dj];B[em];W[cl];B[fl];W[dm]C[Skupina černého se bey problémů posilnila a tah K9 bz klidně mohl být na lepším místě. Navíc černý skončil v tempu.]
+;B[ji]C[Velmi náročný tah, někdo bz se spokojil i s L12.];W[jg];B[jh]C[Nejtvrdší útok]
+;W[oj]C[Jeden ze 17 možných tahů, komentátor váhá ...];B[hd]C[Správný směr hry, odřezává poslední únikovou cestu bílému kameni na K13 se současným tlakem na bílou skupinu. Mírnější hráči (Emmer) by hráli J16.]
+;W[ic];B[id];W[jc];B[jd];W[kb];B[gc];W[gb];B[gd];W[ib];B[kl]C[Černý už se tak rozjel, že se nemůže zastavit. Mělo být zřejmě M17 a černý by vedl.]
+;W[fi];B[jl];W[lc];B[nl];W[ql]C[Lepší je S8.];B[nj];W[kd];B[kg];W[kf];B[jf];W[lg]
+;B[ig];W[lf];B[lh];W[oe];B[ne];W[nf];B[of];W[mh];B[mi];W[li];B[kh];W[nd];B[ng];W[me]
+;B[pe];W[bh]C[Příliš malé, černý následující sekvencí získá mnohem více.]
+;B[ei];W[ej];B[fj];W[eh];B[gi];W[fh];B[gh];W[jo];B[qh];W[im];B[il];W[or];B[pr];W[nq]
+;B[rm];W[rl];B[io];W[jp];B[fr]C[Černý mohl kdykoli hrát v tempu D1 - B2 a černému by tento tah nefungoval. Možná, že právě toto byl z hlediska konečného výsledku jeden z rozhodujících momentů partie.]
+;W[nb];B[pb];W[rb];B[se];W[sd];B[eq];W[od];B[pd];W[mg];B[nh];W[mm];B[ml];W[nn];B[mo]
+;W[no];B[lm];W[ln];B[mn];W[nm];B[kn];W[lo];B[ko];W[lp];B[km];W[jn];B[hs];W[ir];B[fg]
+;W[eg];B[ff];W[el];B[fk];W[ps];B[qs];W[os];B[rr];W[ep];B[fq];W[bg];B[ef];W[ed];B[dh]
+;W[di];B[dg];W[ei];B[bf];W[ac];B[nc];W[mc];B[ri];W[rj];B[rh];W[de];B[cd];W[ee];B[df]
+;W[ol];B[ad];W[ab];B[ag];W[ah];B[af];W[sm];B[rn];W[fe];B[ge];W[hm];B[ch];W[bj];B[dl]
+;W[bl]C[Další koncovka už na výsledku nic nezměnila. Černý nakonec vyhrál o pouhého 0.5 bodu.
+
+])
+(;W[qb];B[re];W[sc]C[Bílý si velmi často nechá tento postup v záloze a pokračuje v redukci černého moya zvenčí (zde např. R10), takříkajíc s dobrým pocitem v zádech.]))
+(;B[re]C[Tento tah klade velký důraz na rohové území. Bílý obětuje svůj kámen a jako kompenzaci získá lehkou, dobrou formu (sabaki) při straně. ]
+;W[qe];B[rc];W[pd];B[qc];W[rf];B[sd]C[Po této obvyklé sekvenci hraje bílý R12, Q13 či P13]
+(;W[pg])
+(;W[qh])
+(;W[og];B[qf]C[Kdyby nyní černý střihnul zde, ...];W[qg];B[pe];W[oe]C[... a černý pouze pomáhá bílému ve vytvoření sabaki.])
+(;W[pf]C[Toto je chyba, protože ...];B[oe];W[pe];B[qg];W[qf]C[... nyní je bílá hrouda směšná. Bílý musí mít na paměti, že v soupeřově sféře vlivu musí hrát velmi lehce]))
+(;B[rc]C[Toto je také územně orientovaný tah. Možné pokračování je např. ]
+;W[pd];B[qc];W[pf];B[qe];W[nf]C[Bílý nesmí na svých kamenech příliš lpět.])
+(;B[qc]C[Velmi silný tah, jehož myšlenkou je co nejméně bílému pomoci ve vytváření sabaki. Pokračování bílého záleží na okolní situaci. (např. R15 nebo R10).])
+(;B[pd]C[Tah s podobnou myšlenkou jako předchozí, použitelný však jen ve speciálních případech]
+;W[re];B[rc];W[qh]))

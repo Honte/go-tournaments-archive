@@ -29,6 +29,7 @@ export type EventContext = EventDefinition & EventConfig;
 
 export type ArchiveConfiguration = {
   title?: LocalizedString;
+  footer?: LocalizedString;
   locales?: [Locale, ...Locale[]];
   events: (EventConfiguration | EventGroup)[];
   basePath?: string;

@@ -1,0 +1,16 @@
+name: 3rd Czechoslovak Championship
+website: https://goweb.cz/turnaj/mr-1977/
+stages:
+  - type: tournament
+    name: Championship
+    file: cs1977.txt
+    notes: PB (pomocne body) - Points gained from every game based on exact result from range 0-40. For original table check website above
+    scoringColumns:
+      - wins
+      - sodos
+      - PB
+    breakers:
+      - wins
+      - sodos
+      - PB     
+    findSharedPlaces: true

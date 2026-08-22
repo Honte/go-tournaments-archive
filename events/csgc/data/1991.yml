@@ -1,0 +1,16 @@
+name: 17th Czechoslovak Championship
+website: http://goweb.cz/turnaj/mr-1991/
+stages:
+  - type: tournament
+    name: Championship
+    file: cs1991.txt
+    notes: Recreated from cross table. Games order can be different.
+    scoringColumns:
+      - wins
+      - sodos
+      - direct
+    breakers:
+      - wins
+      - sodos
+      - direct      
+    findSharedPlaces: true

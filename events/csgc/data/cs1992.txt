@@ -1,0 +1,15 @@
+; EV[Czechoslovak Championship]
+; PC[CS, Nymburk]
+; DT[1992-08-18,1992-08-21]
+; HA[h9]
+;                               1  2  3  4  5  6  7  8  9    Pt
+   1 Danek Vladimir                 6D CS  Ph       8    28  0   8      0=      9+      8+      7+      6+      5+      4+      3+      2+
+   2 Nechanicky Radek               6D CS  Nb       5    22  0   9      9-      7+      5+      3-      0=      8+      6+      4+      1-
+   3 Rak Ales                       2D CS  Pl       4    13  0   4      8+      6-      4+      2+      9+      7-      5-      1-      0=
+   4 Emmer Jiri                     5D CS  Pl       4    12  1   7      7-      5+      3-      0=      8+      6+      1-      2-      9+
+   5 Cipra Petr                     5D CS  Li       4    12  0   5      6+      4-      2-      9+      7+      1-      3+      0=      8-
+   6 Gubas Xaver                    4D CS  Ph       4    11  0   1      5-      3+      0=      8+      1-      4-      2-      9+      7+
+   7 Holecek Jiri                   4D CS  Ph       3     9  0   3      4+      2-      9+      1-      5-      3+      0=      8-      6-
+   8 Koranda Tomas                  4D CS  Pl       3     8  0   6      3-      0=      1-      6-      4-      2-      9+      7+      5+
+   9 Cieply Martin                  3D CS  Ov       1     1  0   2      2+      1-      7-      5-      3-      0=      8-      6-      4-
+;10 Richard Knecht      4D Br  x  x  x  x  x  x  x  x  x     0   0  10

@@ -1,0 +1,14 @@
+name: 7th Czechoslovak Championship
+website: http://goweb.cz/turnaj/mr-1981/
+stages:
+  - type: tournament
+    name: Championship
+    file: cs1981.txt
+    notes: Recreated from cross table. Games order can be different. PB (pomocne body) - Points gained from every game based on exact result from range 0-40. For original table check website above
+    scoringColumns:
+      - wins
+      - PB
+    breakers:
+      - wins
+      - PB     
+    findSharedPlaces: true

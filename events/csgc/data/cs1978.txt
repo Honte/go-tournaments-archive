@@ -1,0 +1,13 @@
+; EV[Czechoslovak Championship]
+; PC[CS, Plzen]
+; DT[1978-08-24,1978-08-27]
+; HA[h9]
+;                               1     2     3     4     5      6     7     8   Pt
+   1 Kocandrle Milan               1d CS  Ph       7    21   249      8+      7+      6+      5+      4+      3+      2+
+   2 Poliak Miroslav               1d CS  Ba       5    12   184      7+      8+      5+      6+      3+      4-      1-
+   3 Rakosnik Jiri                 2k CS  Ph     4.5 10.25   168      6+      5=      8+      7+      2-      1-      4+
+   4 Holecek Jiri                  1d CS  Ph       4    10   190      5-      6+      7+      8+      1-      2+      3-
+   5 Oravec Ivan                   3k CS  Ba     2.5  8.25   137      4+      3=      2-      1-      8-      7+      6-
+   6 Kubat Vaclav                  3k CS  Ph       2   3.5    58      3-      4-      1-      2-      7-      8+      5+
+   7 Juzek J                       4k CS  Pl       2     3    80      2-      1-      4-      3-      6+      5-      8+
+   8 Kern B                        4k CS  Ba       1   2.5    54      1-      2-      3-      4-      5+      6-      7-

@@ -1,0 +1,22 @@
+; EV[Czechoslovak Championship 1987]
+; PC[CS, Nymburk]
+; DT[1987]
+; HA[h9]
+; CM[Round order reconstructed as an eight-round Swiss-compatible factorization of the supplied crosstable. Rounds 1 and 2 use top-half versus bottom-half pairings within score groups; players 1 and 2 meet in round 8. Corrected reciprocal cells: player 11 versus players 15 and 16 from losses to wins.]
+; Place Surname Name Rank Country Club Wins SOS Round1 Round2 Round3 Round4 Round5 Round6 Round7 Round8
+ 1 Danek       Vladimir  5d CS Pra 7.5 0    9+  5+  4= 11+  6+  3+  7+  2+
+ 2 Nechanicky  Radek     4d CS Nym 6   40  10+  7+  3-  5+  4+  8+  6+  1-
+ 3 Emmer       Jiri      3d CS Plz 6   37  11+  6+  2+  4- 10+  1-  8+ 12+
+ 4 Winkelhofer Petr      4d CS Plz 5.5 0   14+  8+  1=  3+  2-  7-  5+  9+
+ 5 Sgall       Jiri      3d CS Pra 5   0   15+  1-  8+  2- 11+  6+  4- 14+
+ 6 Cipra       Petr      3d CS Pra 4   38.5 12+ 3-  9+  7+  1-  5-  2- 11+
+ 7 Holecek     Jiri      3d CS Pra 4   34  13+  2- 12+  6- 16+  4+  1- 10-
+ 8 Svasek      Petr      3d CS Olo 4   30.5 16+ 4-  5- 14+ 15+  2-  3- 13+
+ 9 Knecht      Richard   3d CS Brn 4   30   1- 13+  6- 10- 14+ 16+ 12+  4-
+10 Raska       P         1d CS Olo 4   29   2- 15+ 11-  9+  3- 12- 16+  7+
+11 Poliak      Miroslav  3d CS Bra 3   32.5 3- 16+ 10+  1-  5- 15+ 13-  6-
+12 Soukup      Petr      2d CS Plz 3   29   6- 14+  7- 15- 13+ 10+  9-  3-
+13 Nechanicky  Vitezslav 3d CS Nym 3   23   7-  9- 15+ 16- 12- 14+ 11+  8-
+14 Rakosník    Jiri      2d CS Pra 2   27.5 4- 12- 16+  8-  9- 13- 15+  5-
+15 Prokop      Marek     1d CS Pra 2   25   5- 10- 13- 12+  8- 11- 14- 16+
+16 Jakubec     Stanislav 2d CS Bra 1   0    8- 11- 14- 13+  7-  9- 10- 15-

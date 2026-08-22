@@ -1,0 +1,15 @@
+; EV[Czechoslovak Championship]
+; PC[CS, Karlovy Vary]
+; DT[1984-08-20,1984-08-26]
+; HA[h9]
+;                              1     2     3     4     5     6     7     8     9    10
+   1 Danek Vladimir                   5d CS  Ph       9   324     10+      9+      8+      7+      6+      5+      4+      3+      2+
+   2 Winkelhofer Petr                 5d CS  Pl       7   275      9+      7+      5+      3+     10+      8+      6-      4+      1-
+   3 Poliak Miroslav                  3d CS  Ba       5   219      8+      6+      4-      2-      9+      7-      5+      1-     10+
+   4 Sgall Jiri                       2d CS  Ph       5   176      7+      5+      3+     10+      8-      6-      1-      2-      9+
+   5 Rakosnik Jiri                    2d CS  Ph       4   161      6+      4-      2-      9-      7+      1-      3-     10+      8+
+   6 Svasek Petr                      1d CS  Ol       3   144      5-      3-     10-      8-      1-      4+      2+      9+      7-
+   7 Soukup Petr                      3d CS  Pl       3   136      4-      2-      9-      1-      5-      3+     10-      8+      6+
+   8 Nechanicky Vitezslav             3d CS  Nb       3   129      3-     10+      1-      6+      4+      2-      9-      7-      5-
+   9 Hajek P                          2d CS  Pl       3   120      2-      1-      7+      5+      3-     10-      8+      6-      4-
+  10 Holecek Jiri                     3d CS  Ph       3   116      1-      8-      6+      4-      2-      9+      7+      5-      3-
