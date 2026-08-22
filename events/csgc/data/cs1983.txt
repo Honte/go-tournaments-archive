@@ -1,0 +1,14 @@
+; EV[Czechoslovak Championship]
+; PC[CS, Bratislava]
+; DT[1983-08-17,1983-08-21]
+; HA[h9]
+;                              1    2     3     4     5     6     7     8     9
+   1 Winkelhofer Petr                 4d CS  Pl       8   267      0=      9+      8+      7+      6+      5+      4+      3+      2+
+   2 Danek Vladimir                   5d CS  Ph       7   292      9+      7+      5+      3+      0=      8+      6+      4+      1-
+   3 Jadron Milan                     3d CS  Ba       5   197      8+      6-      4+      2-      9+      7+      5+      1-      0=
+   4 Poliak Miroslav                  3d CS  Ba       4   189      7-      5+      3-      0=      8+      6+      1-      2-      9+
+   5 Sgall Jiri                       2d CS  Ph       4   144      6+      4-      2-      9+      7+      1-      3-      0=      8+
+   6 Rakosnik Jiri                    2d CS  Ph       3   134      5-      3+      0=      8-      1-      4-      2-      9+      7+
+   7 Soukup Petr                      2d CS  Pl       3   130      4+      2-      9+      1-      5-      3-      0=      8+      6-
+   8 Holecek Jiri                     3d CS  Ph       2    86      3-      0=      1-      6+      4-      2-      9+      7-      5-
+   9 Juzek J                          1d CS  Pl       0     1      2-      1-      7-      5-      3-      0=      8-      6-      4-

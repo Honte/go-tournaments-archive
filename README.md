@@ -33,6 +33,7 @@ Available event directories:
 | `esgc`   | European Student Go Championships | Locale `en`, country stats                                                       |
 | `ewgc`   | European Women Go Championships   | Locale `en`, country stats                                                       |
 | `eygc`   | European Youth Championships      | Locale `en`, country stats, category stats for `u21`, `u20`, `u18`, `u16`, `u12` |
+| `csgc`   | Czechoslovak Go Championships     | Locale `en`                                                                      |
 | `czgc`   | Czech Go Championships            | Locale `en`                                                                      |
 | `hrgc`   | Croatian Go Championships         | Locale `en`                                                                      |
 | `nlk`    | Dutch Go Championships            | Locale `en`                                                                      |

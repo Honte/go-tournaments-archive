@@ -1,0 +1,22 @@
+name: 14th Czechoslovak Championship
+website: http://goweb.cz/turnaj/mr-1988/
+stages:
+  - type: tournament
+    name: Championship
+    file: cs1988.txt
+    notes: For statistics best 16 players and games between them are shown. Games against other players changed to 0+ and 0-. For full table check website above
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sodos
+      - direct
+    breakers:
+      - mms
+      - wins
+      - sos
+      - sodos
+      - direct
+    findSharedPlaces: true
+    games:
+      - 3-2 3:B+0.5 round:5 sgf:1988/5-RichardKnecht-VladimirDanek.sgf

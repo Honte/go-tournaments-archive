@@ -1,0 +1,16 @@
+name: 2nd Czechoslovak Championship
+website: http://goweb.cz/turnaj/mr-1976/
+stages:
+  - type: tournament
+    name: Championship
+    file: cs1976.txt
+    notes: No game results available.
+    scoringColumns:
+      - wins
+      - sodos
+      - direct
+    breakers:
+      - wins
+      - sodos
+      - direct     
+    findSharedPlaces: true

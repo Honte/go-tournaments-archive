@@ -1,0 +1,17 @@
+name: 18th Czechoslovak Championship
+website: http://goweb.cz/turnaj/mr-1992/
+stages:
+  - type: tournament
+    name: Championship
+    file: cs1992.txt
+    notes: Recreated from cross table. Games order can be different. Richard Knecht qualified but didn't come.
+    scoringColumns:
+      - wins
+      - sodos
+      - direct
+      - null
+    breakers:
+      - wins
+      - sodos
+      - direct      
+    findSharedPlaces: true

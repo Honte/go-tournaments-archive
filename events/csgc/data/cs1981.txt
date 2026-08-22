@@ -1,0 +1,12 @@
+; EV[Czechoslovak Championship]
+; PC[CS, Liberec]
+; HA[h9]
+;                               1    2     3     4     5     6     7     8   Pt
+   1 Danek Vladimir                3d CS  Ph       6   251      8+      7+      6+      5+      4+      3+      2-
+   2 Kocandrle Milan               2d CS  Ph       6   229      7+      8+      5-      6+      3+      4+      1+
+   3 Jadron Milan                  3d CS  Ba       4   147      6+      5-      8+      7+      2-      1-      4+
+   4 Holecek Jiri                  2d CS  Ph       4   144      5+      6+      7+      8+      1-      2-      3-
+   5 Poliak Miroslav               2d CS  Ba       4   143      4-      3+      2+      1-      8+      7+      6-
+   6 Soukup Petr                   2d CS  Pl       3   123      3-      4-      1-      2-      7+      8+      5+
+   7 Nechanicky Vitezslav          2d CS  Nb       1    54      2-      1-      4-      3-      6-      5-      8+
+   8 Juzek J                       1d CS  Pl       0    29      1-      2-      3-      4-      5-      6-      7-

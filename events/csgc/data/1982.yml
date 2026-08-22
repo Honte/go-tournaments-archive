@@ -1,0 +1,18 @@
+name: 8th Czechoslovak Championship
+website: http://goweb.cz/turnaj/mr-1982/
+notes: Tournament contained 2 stages. In 1st players were divided to 2 groups and played round-robin. 1-2 from a group fought later for places 1-4 and 3-4 from a group for places 5-8. Games between players that advanced to the same final group were counted there.
+stages:
+  - type: tournament
+    name: Championship
+    file: cs1982.txt
+    notes: Wins_Q - wins in qualifying groups, Wins_F - wins in final groups. Additionally PB (pomocne body) were used in both stages but their numbers are not available. For original tables check website above
+    scoringColumns:
+      - Wins_Q
+      - Wins_F
+      - place
+    breakers:
+      - place
+    columns:
+      - Wins_Q
+      - Wins_F    
+    findSharedPlaces: true

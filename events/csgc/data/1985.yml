@@ -1,0 +1,14 @@
+name: 11th Czechoslovak Championship
+website: https://goweb.cz/turnaj/mr-1985/
+stages:
+  - type: tournament
+    name: Championship
+    file: cs1985.txt
+    notes: PB (pomocne body) - Points gained from every game based on exact result from range 0-40. For original table check website above
+    scoringColumns:
+      - wins
+      - PB
+    breakers:
+      - wins
+      - PB     
+    findSharedPlaces: true

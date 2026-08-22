@@ -1,0 +1,16 @@
+name: 16th Czechoslovak Championship
+website: http://goweb.cz/turnaj/mr-1990/
+stages:
+  - type: tournament
+    name: Championship
+    file: cs1990.txt
+    notes: Recreated from cross table. Games order can be different.
+    scoringColumns:
+      - wins
+      - sodos
+      - direct
+    breakers:
+      - wins
+      - sodos
+      - direct      
+    findSharedPlaces: true

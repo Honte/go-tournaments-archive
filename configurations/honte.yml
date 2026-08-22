@@ -75,11 +75,17 @@ events:
       - id: nlkd
         prefix: nlkd
   - title:
-      en: National Tournaments
-      pl: Mistrzostwa Krajowe
+      en: Czech & Slovakia Championships
+      pl: Mistrzostwa Czech i Słowacji
     events:
       - id: czgc
         prefix: czgc
+      - id: csgc
+        prefix: csgc
+  - title:
+      en: National Tournaments
+      pl: Mistrzostwa Krajowe
+    events:
       - id: iegc
         prefix: iegc
       - id: hrgc

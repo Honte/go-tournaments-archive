@@ -1,0 +1,16 @@
+; EV[Czechoslovak Championship]
+; PC[CS, Olomouc]
+; DT[1985-08-21,1985-08-25]
+; HA[h9]
+   1 Sgall Jiri                     3d CS  Ph       7   277      3+      4-     10+      6+      2+      8+      7+      9+
+   2 Danek Vladimir                 5d CS  Ph       7   248      7+      9+     11+      4+      1-     12+      3+      6+
+   3 Holecek Jiri                   3d CS  Ph       5   189      1-      8-      5+     11+      9+      4+      2-     12+
+   4 Poliak Miroslav                3d CS  Ba       5   164      8+      1+      6+      2-     12+      3-     10+      5-
+   5 Raska P                        1d CS  Ol       4   194      9-      7-      3-     10+     11+      6-      8+      4+
+   6 Svasek Petr                    3d CS  Ol       4   187     10+     11+      4-      1-      8-      5+     12+      2-
+   7 Knecht Richard                 1d CS  Bo       4   130      2-      5+     12-      9-     10+     11+      1-      8+
+   8 Emmer Jiri                     1k CS  Pl       3   132      4-      3+      9+     12-      6+      1-      5-      7-
+   9 Jadron Milan                   3d CS  Ba       3   116      5+      2-      8-      7+      3-     10-     11+      1-
+  10 Krusina Rudolf                 2d CS  Ba       2    99      6-     12+      1-      5-      7-      9+      4-     11-
+  11 Nechanicky Vitezslav           3d CS  Nb       2    93     12+      6-      2-      3-      5-      7-      9-     10+
+  12 Soukup Petr                    2d CS  Pl       2    91     11-     10-      7+      8+      4-      2-      6-      3-

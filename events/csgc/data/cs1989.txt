@@ -1,0 +1,21 @@
+; EV[Czechoslovak Championship]
+; PC[CS, Ceske Budejovice]
+; DT[1989-08-16,1989-08-20]
+; HA[h9]
+;  Poz.    jmeno    klub trida 1.  2.  3.  4.  5.  6.  7.  8.  MM  BC  SOS  SDOS
+   1 Winkelhofer Petr              5d CS  Pl       8     6    52    36     0      0+      2-      6+      0+      9+     10+      4+      3-
+   2 Danek Vladimir                6d CS  MFF      8     6    51    39     0     12+      1+      5-      0-      0+      7+      9+      4+
+   3 Knecht Richard                4d CS  Bo       8     6    49    37     0      0+      0-     10+      4-     11+      0+      5+      1+
+   4 Nechanicky Radek              5d CS  Nb       7     5    54    32     0     10-     11+     14+      3+      5+      9+      1-      2-
+   5 Emmer Jiri                    4d CS  Pl       7     5    53    32     0      6+      7+      2+      9-      4-     14+      3-      0+
+   6 Svasek Petr                   3d CS  Ol       7     5    49    29     0      5-      0+      1-      7+      0-     12+      0+     10+
+   7 Cipra Petr                    4d CS  Tes      7     5    48    26     0      0+      5-      0+      6-      0+      2-      0+      9+
+   8 Hagan Milan                   1k CS  MFF      6     6    33    23     0      0+     13-      0+      0+     15-      0+     14+     16+
+   9 Sgall Jiri                    3d CS  MFF      6     4    54    24     0     11+     10+      0+      5+      1-      4-      2-      7-
+  10 Koranda Tomas                 2d CS  Pl       6     4    51    22     0      4+      9-      3-     15+     14+      1-     16+      6-
+  11 Soukup Petr                   2d CS  Pl       6     4    47    21     0      9-      4-      0+     12+      3-     16-      0+      0+
+  12 Poliak Miroslav               4d CS  Ba       6     4    46    20     0      2-      0+      0-     11-      0+      6-      0+     15+
+  13 Schaffer Martin               1k CS  KV       5     5    34    19     0      0+      8+      0+     14-     16-      0-      0+      0+
+  14 Kubik M                       1d CS  Bo       5     4    45    19     0     16+     15+      4-     13+     10-      5-      8-      0+
+  15 Cerveny Zdenek                1k CS  Pl       5     4    40    18     1      0+     14-     16+     10-      8+      0-      0+     12-
+  16 Dica Vladimir                 1d CS  Be       5     4    40    18     0     14-      0+     15-      0+     13+     11+     10-      8-
