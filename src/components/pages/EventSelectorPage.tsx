@@ -63,14 +63,13 @@ export async function EventSelectorPage({ configuration }: EventSelectorPageProp
 
   return (
     <Content>
-      <div className="mx-auto flex w-full max-w-(--breakpoint-2xl) flex-col gap-8 p-4 sm:p-6">
-        <EventSelector
-          groups={groups}
-          title={configuration.title}
-          locales={configuration.locales}
-          hasSingleLocale={hasSingleLocale}
-        />
-      </div>
+      <EventSelector
+        groups={groups}
+        title={configuration.title}
+        footer={configuration.footer}
+        locales={configuration.locales}
+        hasSingleLocale={hasSingleLocale}
+      />
     </Content>
   );
 }

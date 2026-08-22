@@ -93,6 +93,7 @@ At the top level, a preset is an `ArchiveConfiguration`:
 
 ```yaml
 title: Optional archive title
+footer: Optional Markdown displayed below the event selector
 locales:
   - en
 dynamic: false
@@ -125,6 +126,17 @@ title: Go Tournaments Archives
 title:
   en: Polish Go Tournaments Archives
   pl: ...
+```
+
+### `footer`
+
+Optional Markdown displayed in the footer of the event selector page. Like `title`, it can be a plain string or a
+localized object:
+
+```yaml
+footer:
+  en: This project is [open source](https://github.com/Honte/go-tournaments-archive).
+  pl: To jest projekt [open source](https://github.com/Honte/go-tournaments-archive).
 ```
 
 ### `locales`
