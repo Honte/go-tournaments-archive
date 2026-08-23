@@ -1,6 +1,8 @@
 location: Poznań
 referee: Grzegorz Sobański
-website: https://mp.go.art.pl/2022
+website:
+  - https://mp.go.art.pl/2022
+  - https://online-go.com/tournament-record/1294/mistrzostwa-polski-2022
 players:
   sf: Stanisław Frejlak 1p
   ls: Leszek Sołdan 4d

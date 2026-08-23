@@ -1,7 +1,28 @@
-website: https://roundsboard.com/tournaments/MPK_2026
-location: Poznań
-start: 2026-08-22
-end: 2026-08-23
-announcement:
-  pl: Mistrzostwa Polski Kobiet 2026 na RoundsBoard (22-23.08.2026, Poznań)
-  en: Women's Polish Championships 2026 on RoundsBoard (22-23.08.2026, Poznań)
+website:
+  - https://roundsboard.com/tournaments/MPK_2026
+  - https://online-go.com/tournament-record/2058/mpk2026
+stages:
+  - type: tournament
+    file: mpk2026.txt
+    time: 60min + 3x30s japanese
+    komi: 6.5
+    scoringColumns:
+      - mms
+      - sos
+      - sosos
+      - wins
+    breakers:
+      - mms
+      - sos
+      - sosos
+    columns:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 1-1 1:B+? round:2 sgf:2026/2-AgnesRzepecki-MariannaSzychowiak.sgf ogs:https://online-go.com/review/1760281
+      - 1-4 1:B+R round:1 sgf:2026/1-MariannaSzychowiak-NataliaKlamecka.sgf ogs:https://online-go.com/review/1760172
+      - 2-3 2:B+R round:5 sgf:2026/5-AgnesRzepecki-AgnieszkaKacprzyk.sgf ogs:https://online-go.com/review/1760948
+      - 3-1 1:W+? round:3 sgf:2026/3-AgnieszkaKacprzyk-MariannaSzychowiak.sgf ogs:https://online-go.com/review/1760374
+      - 4-7 4:B+R round:3 sgf:2026/3-EwaBiernot-NataliaKlamecka.sgf ogs:https://online-go.com/game/90032497
+      - 5-1 1:W+R round:4 sgf:2026/4-MariannaSzychowiak-PaulinaBednarczyk.sgf ogs:https://online-go.com/review/1760846
+      - 5-6 5:B+? round:2 sgf:2026/2-PaulinaBednarczyk-OliwiaOlbryk.sgf ogs:https://online-go.com/review/1760429

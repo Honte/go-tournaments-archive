@@ -16,7 +16,21 @@ stages:
     games:
       - 1-2 1:B+3.5 round:8 sgf:2022/ec/8-BenjaminDreanGuenaizia-ArtemKachanovskyi.sgf
       - 1-3 1:B+R round:7 sgf:2022/ec/7-BenjaminDreanGuenaizia-FredrikBlomback.sgf
+      - 2-1 2:B+R round:3 sgf:2022/ec/3-ArtemKachanovskyi-BenjaminDreanGuenaizia.sgf
       - 4-2 2:W+R round:7 sgf:2022/ec/7-NikolaMitic-ArtemKachanovskyi.sgf
       - 4-3 3:W+R round:8 sgf:2022/ec/8-NikolaMitic-FredrikBlomback.sgf
+      - 4-13 4:B+R round:4 sgf:2022/ec/4-NikolaMitic-OndrejKruml.sgf
       - 5-2 2:W+? round:6 sgf:2022/ec/6-OscarVazquez-ArtemKachanovskyi.sgf
+      - 5-6 6:W+3.5 round:3 sgf:2022/ec/3-OscarVazquez-AliJabarin.sgf
+      - 7-3 3:W+? round:6 sgf:2022/ec/6-AndriiKravets-FredrikBlomback.sgf
       - 8-4 4:W+R round:6 sgf:2022/ec/6-StanislawFrejlak-NikolaMitic.sgf
+      - 8-7 8:B+13.5 round:3 sgf:2022/ec/3-StanislawFrejlak-AndriiKravets.sgf
+      - 10-14 10:B+6.5 round:4 sgf:2022/ec/4-TanguyLeCalve-ValeriiKrushelnytskyi.sgf
+      - 11-15 11:B+R round:4 sgf:2022/ec/4-BohdanZhurakovskyi-FlorentLabouret.sgf
+      - 13-25 13:B+R round:2 sgf:2022/ec/2-OndrejKruml-VsevolodOvsiienko.sgf
+      - 16-12 12:W+0.5 round:4 sgf:2022/ec/4-ElianIoanGrigoriu-DmytroBohatskyi.sgf
+      - 19-9 9:W+2.5 round:2 sgf:2022/ec/2-CornelBurzo-LukasPodpera.sgf
+      - 21-29 21:B+2.5 round:2 sgf:2022/ec/2-JanSimara-NielsSchomberg.sgf
+      - 22-15 15:W+R round:3 sgf:2022/ec/3-KoichiroHabu-FlorentLabouret.sgf
+      - 23-16 16:W+R round:3 sgf:2022/ec/3-MatiasPankoke-ElianIoanGrigoriu.sgf
+      - 24-32 24:B+2.5 round:2 sgf:2022/ec/2-AlessandroPace-JavierAleksiSavolainen.sgf
