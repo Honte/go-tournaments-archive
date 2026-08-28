@@ -11,5 +11,5 @@
    6 Svasek Petr                      1d CS  Ol       3   144      5-      3-     10-      8-      1-      4+      2+      9+      7-
    7 Soukup Petr                      3d CS  Pl       3   136      4-      2-      9-      1-      5-      3+     10-      8+      6+
    8 Nechanicky Vitezslav             3d CS  Nb       3   129      3-     10+      1-      6+      4+      2-      9-      7-      5-
-   9 Hajek P                          2d CS  Pl       3   120      2-      1-      7+      5+      3-     10-      8+      6-      4-
+   9 Hajek Pavel                      2d CS  Pl       3   120      2-      1-      7+      5+      3-     10-      8+      6-      4-
   10 Holecek Jiri                     3d CS  Ph       3   116      1-      8-      6+      4-      2-      9+      7+      5-      3-

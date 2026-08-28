@@ -4,7 +4,7 @@
 ; PC[CZ, Karlovy Vary]
 ; DT[1996-06-24,1996-06-30]
 ; KM[5.5]
-; TM[2h]
+; TM[120]
 ; HA[h9]
 ;                    Mistrovstvi Ceske republiky 1996
 ;                    24. - 30. 6. 1996, Karlovy Vary

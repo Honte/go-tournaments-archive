@@ -4,7 +4,7 @@
 ; PC[CZ,Liberec]
 ; DT[1999-06-22,1999-06-27]
 ; KM[5.5]
-; TM[2h30]
+; TM[150]
 ; HA[h9]
 ;                           Czech Championship, Liberec 1999
 ;                                 June 22 - 27, 1999

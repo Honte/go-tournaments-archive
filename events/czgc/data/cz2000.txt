@@ -4,7 +4,7 @@
 ; PC[CZ,Brno]
 ; DT[2000-07-04,2000-07-09]
 ; KM[5.5]
-; TM[2h30]
+; TM[150]
 ; HA[h9]
 ;                           Czech Championship, Brno 2000
 ;                                 July 4 - 9, 2000

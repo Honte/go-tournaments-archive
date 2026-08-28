@@ -1,3 +1,4 @@
+website: http://so-imba.com/egoban/posts/libcice-2-67-mistrovstvi-republiky-2009.html
 name: 17th Czech Championship
 stages:
   - type: tournament
@@ -8,10 +9,12 @@ stages:
       - null
       - sodos
       - direct
+      - rating
     breakers:
       - wins
       - direct
       - sodos
+      - rating
     findSharedPlaces: true
     games:
       - 1-2 1:B+R round:4 sgf:2009/4-OndrejSilt-OndrejKruml.sgf

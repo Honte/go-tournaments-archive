@@ -13,3 +13,13 @@ stages:
       - direct
       - sodos
     findSharedPlaces: true
+    games:
+      - 1-6 1:B+14.5 round:6 sgf:2004/6-RadekNechanicky-VitBrunner.sgf
+      - 2-6 2:B+R round:3 sgf:2004/3-VladimirDanek-VitBrunner.sgf
+      - 3-6 3:B+5.5 round:8 sgf:2004/8-IvanKostka-VitBrunner.sgf
+      - 6-4 4:W+R round:7 sgf:2004/7-VitBrunner-OndrejSilt.sgf
+      - 6-5 6:B+R round:2 sgf:2004/2-VitBrunner-JanHora.sgf
+      - 6-7 6:B+R round:9 sgf:2004/9-VitBrunner-PetrCipra.sgf
+      - 6-8 8:W+R round:4 sgf:2004/4-VitBrunner-TomasGrosser.sgf
+      - 9-6 6:W+R round:1 sgf:2004/1-MartinJurek-VitBrunner.sgf
+      - 10-6 10:B+6.5 round:5 sgf:2004/5-ZbynekDach-VitBrunner.sgf

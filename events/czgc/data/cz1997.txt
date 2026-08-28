@@ -3,7 +3,7 @@
 ; PC[CZ,Ostrava]
 ; DT[1997-08-26,1997-08-31]
 ; KM[5.5]
-; TM[2h]
+; TM[120]
 ; HA[h9]
 ;                      Mistrovstvi Ceske republiky 1997
 ;                         26. - 31. 8. 1997, Ostrava

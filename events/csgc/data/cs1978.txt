@@ -9,5 +9,5 @@
    4 Holecek Jiri                  1d CS  Ph       4    10   190      5-      6+      7+      8+      1-      2+      3-
    5 Oravec Ivan                   3k CS  Ba     2.5  8.25   137      4+      3=      2-      1-      8-      7+      6-
    6 Kubat Vaclav                  3k CS  Ph       2   3.5    58      3-      4-      1-      2-      7-      8+      5+
-   7 Juzek J                       4k CS  Pl       2     3    80      2-      1-      4-      3-      6+      5-      8+
+   7 Juzek Jiri                    4k CS  Pl       2     3    80      2-      1-      4-      3-      6+      5-      8+
    8 Kern B                        4k CS  Ba       1   2.5    54      1-      2-      3-      4-      5+      6-      7-
