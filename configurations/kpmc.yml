@@ -1,0 +1,22 @@
+events:
+  - id: kpmc
+    domain: https://kpmc.go.art.pl
+config:
+  generateSvgs: false
+  generatePngs: false
+  generateJpgs: true
+  generateZips: true
+  links:
+    - title:
+        pl: Inne wydarzenia
+        en: Other events
+      place: bottom
+      links:
+        - title: WAGC
+          website:
+            pl: https://wagc.go.art.pl/pl
+            en: https://wagc.go.art.pl/pl
+          description: &wagc
+            pl: Archiwum Amatorskich Mistrzostw Świata w Go
+            en: World Amateur Go Championships Archive
+          tooltip: *wagc

@@ -1,0 +1,22 @@
+events:
+  - id: wagc
+    domain: https://wagc.go.art.pl
+config:
+  generateSvgs: false
+  generatePngs: false
+  generateJpgs: true
+  generateZips: true
+  links:
+    - title:
+        pl: Inne wydarzenia
+        en: Other events
+      place: bottom
+      links:
+        - title: KPMC
+          website:
+            pl: https://kpmc.go.art.pl/pl
+            en: https://kpmc.go.art.pl/pl
+          description: &kpmc
+            pl: Archiwum Pucharu Premiera Korei w Go
+            en: Korea Prime Minister Cup Archive
+          tooltip: *kpmc
