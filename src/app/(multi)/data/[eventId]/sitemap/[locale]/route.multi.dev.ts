@@ -18,7 +18,11 @@ export async function GET(_: Request, { params }: RouteProps) {
   return serveSitemap(
     events.find((event) => event.prefix === eventId),
     locale,
-    events.filter((event) => event.prefix !== eventId)
+    configuration.crossLinks
+      ? events.filter(
+          (event) => event.prefix !== eventId && (configuration.crossLinks === 'internal' ? !event.external : true)
+        )
+      : undefined
   );
 }
 

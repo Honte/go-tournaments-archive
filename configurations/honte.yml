@@ -105,6 +105,7 @@ events:
     events:
       - id: wgl
         prefix: wgl
+crossLinks: internal
 config:
   generateSvgs: false
   generatePngs: false

@@ -224,6 +224,23 @@ Both `archive` and `/archive` normalize to `/archive`.
 Do not confuse top-level `basePath` with `EventConfig.basePath`. Only values placed inside an event entry, group
 `config`, or archive-level `config` become part of the resolved `EventContext`.
 
+### `crossLinks`
+
+Optional. Controls whether each event's sitemap contains navigation links to the other events in the preset:
+
+- omit it or set it to `false` to generate no cross-event links
+- set it to `true` to link to all other configured events, including entries marked `external: true`
+- set it to `internal` to link only to other events that are not marked `external: true`
+
+When at least one eligible event remains, the sitemap adds an **All events** link to the archive selector and an
+**Other events** group with a link to each eligible event. The current event is excluded from that group.
+
+```yaml
+crossLinks: internal
+```
+
+This is an archive-level option; it does not belong inside `config`, a group, or an individual event entry.
+
 ### `config`
 
 Top-level `config` is shared event configuration. It provides default config to every listed event.

@@ -36,6 +36,7 @@ export type ArchiveConfiguration = {
   trailingSlash?: boolean;
   config?: EventConfigurationOverrides;
   dynamic?: boolean;
+  crossLinks?: boolean | 'internal';
 };
 
 export type EventGroup = {
