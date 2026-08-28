@@ -75,6 +75,7 @@ export function GamePopover({ event, translations }: GamePopoverProps) {
   return (
     <>
       {state && (
+        // oxlint-disable-next-line react/refs -- this is false positive due to `refs` naming
         <div ref={refs.setFloating} style={floatingStyles}>
           <div
             role="tooltip"

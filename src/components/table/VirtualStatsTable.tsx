@@ -25,12 +25,15 @@ export function VirtualStatsTable<T extends RowData>({ data, columns }: VirtualS
   }, [table.state.sorting]);
 
   const rows = table.getRowModel().rows;
+
+  // eslint-disable-next-line react/incompatible-library -- TanStack Virtual returns methods that the React Compiler cannot memoize safely.
   const rowVirtualizer = useVirtualizer({
     count: rows.length,
     getScrollElement: () => scrollElementRef.current,
     estimateSize: () => 32,
     overscan: 10,
   });
+
   const virtualRows = rowVirtualizer.getVirtualItems();
   const paddingTop = virtualRows[0]?.start ?? 0;
   const paddingBottom = rowVirtualizer.getTotalSize() - (virtualRows.at(-1)?.end ?? 0);

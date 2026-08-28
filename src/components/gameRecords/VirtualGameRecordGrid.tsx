@@ -47,6 +47,7 @@ export function VirtualGameRecordGrid({ event, groups, translations }: VirtualGa
   });
 
   // prevents the page from being programmatically scrolled when a virtual row’s measured height differs from its estimate.
+  // oxlint-disable-next-line react/immutability -- TanStack Virtual exposes this behavior only as a writable instance callback.
   rowVirtualizer.shouldAdjustScrollPositionOnItemSizeChange = () => false;
 
   useLayoutEffect(() => {
