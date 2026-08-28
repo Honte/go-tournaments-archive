@@ -4,7 +4,7 @@
 ; PC[CZ,Olomouc]
 ; DT[1998-06-23,1998-06-28]
 ; KM[6.0]
-; TM[2h]
+; TM[120]
 ; HA[h9]
 ;                      Czech Championship, Olomouc 1998
 ;                             June 23 - 28, 1998

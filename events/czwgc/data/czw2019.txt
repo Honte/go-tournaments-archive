@@ -1,0 +1,15 @@
+; TC[T191214F]
+; CL[A]
+; EV[Czech woman championship 2019]
+; PC[CZ, Praha]
+; DT[2019-12-14,2019-12-15]
+; HA[h9]
+; KM[6.5]
+; TM[82.5]
+; CM[ (submitted by tymak)]
+;.
+1 Bartova Jitka       2d CZ  APra  3    3    6   3-/b   4+/w   0=     2+/w   5+/b    |13849748
+2 Kadlecova Alzbeta   2k CZ  APra  3    3    4   5+/w   0=     3+/b   1-/b   4+/w    |15425091
+3 Vasova Dita         2k CZ  APmG  2    2    4   1+/w   5+/b   2-/w   4-/b   0=      |15749921
+4 Kotowski Tereza     1d CZ  TFMi  1    1    2   0=     1-/b   5-/w   3+/w   2-/b    |15401364
+5 Tomsu Adriana       1d CZ  TFMi  1    1    1   2-/b   3-/w   4+/b   0=     1-/w    |16225396

@@ -1,0 +1,15 @@
+website: https://sago.sk/web-data/turnaje/msr9x/msr-95.htm
+stages:
+  - type: tournament
+    name: Championship
+    file: sk1995.txt
+    notes: For statistics only Slovak players and games between them are shown. Games against other players changed to 0+ and 0-. Full table check website (There can be some errors in lower part of the table that require later correction).
+    scoringColumns:
+      - wins
+      - sos         
+      - sodos 
+    breakers:
+      - wins
+      - sos 
+      - sodos
+    findSharedPlaces: true

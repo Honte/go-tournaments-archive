@@ -14,6 +14,7 @@ events:
     prefix: esgc
 basePath: /archives
 trailingSlash: true
+crossLinks: true
 config:
   generateSvgs: false
   generatePngs: false

@@ -4,7 +4,7 @@
 ; PC[CZ,Praha]
 ; DT[2001-06-29,2001-07-04]
 ; KM[5.5]
-; TM[2h30]
+; TM[150]
 ; HA[h9]
 ;                               Czech Championship, Prague
 ;                                 June 29 - July 4, 2001

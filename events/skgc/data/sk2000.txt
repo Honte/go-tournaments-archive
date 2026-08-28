@@ -1,0 +1,22 @@
+; TC[T000424]
+; CL[A]
+; EV[9th Slovak Championship]
+; PC[SK,Nove Zamky]
+; DT[2000-04-24,2000-05-01]
+; KM[5.5]
+; TM[135]
+; HA[h9]
+;                       9th Slovak Championship, Nove Zamky 2000
+;                               April 24 - May 1, 2000
+;
+;Pl     Name             Grade  Club   MM S x SDOS  1. 2. 3. 4. 5. 6. 7.
+  1 Gubas Xaver             3D SK Brat  6 6 0  19   5+ 8+ 6+ 2+ 7+ 3+ 4-  |10498807
+  2 Poliak Miroslav         3D SK Brat  5 5 0  15   3+ 4+ 5+ 1- 6+ 8+ 7-  |10262659
+  3 Kostolansky Miroslav    2D SK Brat  5 5 0  12   2- 7+ 8+ 4+ 5+ 1- 6+  |10349746
+  4 Lassak Vladimir         2D SK Brat  3 3 0   9   6- 2- 7+ 3- 8+ 5- 1+  |10249657
+  5 Hrdina Marian           1D SK Brat  3 3 0   8   1- 6+ 2- 7+ 3- 4+ 8-  |10250658
+  6 Jakubec Stanislav       2D SK Brat  3 3 0   6   4+ 5- 1- 8+ 2- 7+ 3-  |10401809
+  7 Karailiev Peter_Petkov  1k SK BBys  2 2 0   6   8+ 3- 4- 5- 1- 6- 2+  |10733371
+  8 Waczulik Juraj          1k SK Brat  1 1 0   3   7- 1- 3- 6- 4- 2- 5+  |10337745
+;
+; system: robin  time: 90+b60

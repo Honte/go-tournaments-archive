@@ -4,7 +4,7 @@
 ; PC[CZ,Mikulov]
 ; DT[2004-07-01,2004-07-06]
 ; KM[6.5]
-; TM[2h30]
+; TM[150]
 ; HA[h9]
 ;                        Czech Championship, Mikulov
 ;                              July 1 - 6, 2004

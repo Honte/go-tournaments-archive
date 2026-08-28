@@ -4,7 +4,6 @@ stages:
   - type: tournament
     name: Championship
     file: cz2017.txt
-    notes: Ratings with new algorithm, will be changed later to the one that was valid during championship.
     scoringColumns:
       - wins
       - null

@@ -1,0 +1,17 @@
+; TC[T121013B]
+; CL[A]
+; EV[Czech Female Championship]
+; PC[CZ, Kutna Hora]
+; DT[2012-10-13,2012-10-14]
+; HA[h9]
+; KM[6.5]
+; TM[80]
+; CM[ (submitted by cieply)]
+;.
+; 
+1 Reindlova Anna       1k CZ  SRic  4    4    8  0  6+/b   5+/w   4+/b   3-/b   2+/w    |10449087
+2 Simunkova Martina    1k CZ  Jabl  3    3    6  1  3+/w   4+/w   6+/b   5-/w   1-/b    |10298904
+3 Hricova Jana         2k CZ  APmG  3    3    6  0  2-/b   6+/w   5+/b   1+/w   4-/b    |10233509
+4 Kadlecova Alzbeta    3k CZ  APra  3    3    5  0  5+/w   2-/b   1-/w   6+/b   3+/w    |15425091
+5 Chladkova Tereza     2k CZ  TFMi  2    2    3  0  4-/b   1-/b   3-/w   2+/b   6+/w    |15401364
+6 Stodolova Kristyna   7k CZ  AMFF  0    0    0  0  1-/w   3-/b   2-/w   4-/w   5-/b    |14213243

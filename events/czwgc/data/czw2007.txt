@@ -1,0 +1,13 @@
+; TC[T071207A]
+; CL[A]
+; EV[Czech Female Championship]
+; PC[CZ, Karlovy Vary]
+; DT[2007-12-07,2007-12-09]
+; HA[h9]
+; KM[6.5]
+; TM[80]
+;
+  1 Zaloudkova Klara        2d CZ Pra   5 0   11     3+ 2+ 4+ 3- 2+ 4+ |10798106
+  2 Simunkova Martina       1d CZ Libe  4 0   6     4+ 1- 3+ 4+ 1- 3+ |10298904
+  3 Hricova Jana            1k CZ Pra   3 0   5     1- 4+ 2- 1+ 4+ 2- |10233509
+  4 Bartova Jitka           3k CZ Pra   0 0   0     2- 3- 1- 2- 3- 1- |13849748

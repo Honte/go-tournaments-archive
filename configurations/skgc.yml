@@ -1,0 +1,13 @@
+events:
+  - id: skgc
+basePath: /skgc
+config:
+  generateSvgs: false
+  generatePngs: false
+  generateJpgs: true
+  generateZips: true
+  links:
+    - website: https://sago.sk/
+      title: Slovak Go Association
+      tooltip: Visit Slovak Go Association website
+      place: top

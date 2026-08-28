@@ -1,0 +1,26 @@
+website: http://so-imba.com/egoban/posts/kutna-hora-11-14-10-mr-a-mrz-2012.html
+stages:
+  - type: tournament
+    name: Championship
+    file: czw2012.txt
+    scoringColumns:
+      - wins
+      - null
+      - sodos
+      - direct
+    breakers:
+      - wins
+      - sodos
+      - direct
+    findSharedPlaces: true
+    games:
+      - 1-3 3:W+0.5 round:4 sgf:2012/4-AnnaReindlova-JanaHricova.sgf
+      - 1-4 1:B+R round:3 sgf:2012/3-AnnaReindlova-AlzbetaKadlecova.sgf
+      - 2-1 1:W+2.5 round:5 sgf:2012/5-MartinaSimunkova-AnnaReindlova.sgf
+      - 3-2 2:W+20.5 round:1 sgf:2012/1-JanaHricova-MartinaSimunkova.sgf
+      - 3-4 4:W+22.5 round:5 sgf:2012/5-JanaHricova-AlzbetaKadlecova.sgf
+      - 3-5 3:B+R round:3 sgf:2012/3-JanaHricova-TerezaChladkova.sgf
+      - 4-2 2:W+23.5 round:2 sgf:2012/2-AlzbetaKadlecova-MartinaSimunkova.sgf
+      - 5-1 1:W+R round:2 sgf:2012/2-TerezaChladkova-AnnaReindlova.sgf
+      - 5-2 5:B+4.5 round:4 sgf:2012/4-TerezaChladkova-MartinaSimunkova.sgf
+      - 5-4 4:W+21.5 round:1 sgf:2012/1-TerezaChladkova-AlzbetaKadlecova.sgf

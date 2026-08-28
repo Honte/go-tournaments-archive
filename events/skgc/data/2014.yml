@@ -1,0 +1,18 @@
+stages:
+  - type: tournament
+    name: Championship
+    file: sk2014.txt
+    time: 90m + 60s byo
+    notes: For statistics best 16 Slovak players and games between them are shown. Games against other players changed to 0+ and 0-. Full table check EGD link.
+    scoringColumns:
+      - mms
+      - sodos
+      - sos
+      - wins      
+    breakers:
+      - mms
+      - sodos
+      - sos
+    columns:
+      - wins    
+    findSharedPlaces: true

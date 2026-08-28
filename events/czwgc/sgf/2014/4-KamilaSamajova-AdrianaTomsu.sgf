@@ -1,0 +1,61 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]OT[3x30 byo-yomi]AP[CGoban:3]SZ[19]GM[1]GN[The Czech Woman Championship (6th place playof)]
+RO[4]DT[2014-12-07]PC[The KGS Go Server at http\://www.gokgs.com/]PB[Kamila Šamajová]
+BR[5k]PW[Adriana Tomšů]WR[3k]KM[6.5]TM[3600]RE[B+R]MULTIGOGM[1]
+;B[pd];W[dp];B[pp];W[dc];B[fq];W[ip];B[cq];W[dq];B[cp];W[do];B[dr];W[er];B[cr];W[eq]
+;B[cn];W[nq];B[qn];W[nc];B[qf];W[jd];B[ce];W[cd];B[de];W[fd];B[ci];W[no];B[dn];W[en]
+;B[em];W[fm];B[fr];W[fs];B[eo];W[fn]C[MRzen2014c [?\]\: black e8 instead of the atari would be normal - consider f2 as a probe
+]
+;B[gs];W[es]C[Lukan [6d\]\: yep, this shouldnt work for black
+];B[hr]C[MRzen2014c [?\]\: this is serious mistake
+MRzen2014c [?\]\: correct sequence was f4-g2-h3
+]
+;W[fp]C[MRzen2014c [?\]\: this move is to painful for black
+];B[jq];W[kr]C[MRzen2014c [?\]\: white is in attacking move, which seems natural here ...
+]
+;B[kq];W[lr];B[ko];W[km];B[jn];W[il];B[mp];W[np];B[ln];W[po];B[qo]
+(;W[lm];B[mn])
+(;W[mm];B[mn];W[nm];B[mq];W[mr];B[im];W[hm];B[jm];W[jl];B[jp];W[iq];B[io];W[ir]
+C[MRzen2014c [?\]\: black lives in sente, the game seems slightly better for her now
+Lukan [6d\]\: white's attack succeeded very well
+MRzen2014c [?\]\: well, k2 seems hard to be answered localy
+]
+;B[pk];W[nj];B[ne];W[ld];B[oi];W[lq];B[lp];W[mo];B[jr];W[hp]C[Lukan [6d\]\: i don't understand, why not underconnect
+Lukan [6d\]\: danger of ko?
+]
+;B[lm];W[kl];B[ll];W[mk];B[lk];W[lj]C[MRzen2014c [?\]\: no ko, k1 does not work, shortage of liberties
+Lukan [6d\]\: anyway very hard to kill
+]
+;B[lo]C[Lukan [6d\]\: h6 and then it actually could be possible
+];W[hn];B[kk];W[kj]
+;B[jk];W[ij];B[ik];W[hk];B[jj];W[ji];B[kn];W[hl];B[in];W[ck]C[MRzen2014c [?\]\: black has clear lead here
+]
+;B[pr]C[Lukan [6d\]\: w should have stopped the attack
+];W[ek];B[bd];W[bc];B[dd]
+;W[cc]C[Lukan [6d\]\: c13 should have come...
+];B[ff]C[MRzen2014c [?\]\: this seems over
+]
+;W[bi];B[ch];W[bj];B[nn];W[js];B[ii];W[hj];B[ki];W[jh];B[li];W[mj];B[mh];W[pl];B[om]
+C[Lukan [6d\]\: last chance is to kill the left
+];W[ok];B[pj];W[nh];B[ni];W[mi]
+;B[lh];W[mg];B[lg];W[ng];B[oj];W[bf];B[fe];W[jf];B[gd]C[MRzen2014c [?\]\: last chance disappeared
+]
+;W[fc];B[ed];W[ec];B[eg];W[cf];B[df];W[ei];B[cg];W[be];B[eh];W[lf];B[ml];W[ph];B[oh]
+;W[qc];B[pc];W[pb];B[qd]C[MRzen2014c [?\]\: white in byoyomi
+];W[rb];B[mf];W[rd]
+;B[re];W[bo];B[co];W[bn];B[bp];W[bm];B[ar];W[or];B[qq];W[oe];B[og];W[ge];B[gf];W[he]
+;B[hf];W[kg];B[nk];W[me];B[nf];W[nd]C[Lukan [6d\]\: somehow it's actually still quite close...
+]
+;B[ie];W[hd];B[id];W[hc];B[if];W[ic];B[dl];W[el];B[dm];W[hh];B[fi];W[fj];B[di];W[ej]
+;B[gi];W[od];B[pf]C[MRzen2014c [?\]\: really?
+];W[on];B[pn];W[oo];B[oq];W[ps];B[qs]
+;W[os];B[nr]
+(;W[je])
+(;W[ns];B[op];W[nr];B[je];W[ke];B[hi];W[ih]
+(;B[is];W[hs]
+(;B[jc])
+(;B[kd];W[jc];B[is];W[qp];B[rp];W[hs];B[ks];W[ls];B[is]))
+(;B[ks];W[ls];B[is];W[hs];B[kd];W[jc];B[is];W[qp];B[rp];W[hs];B[cl];W[bl];B[is]
+;W[aq];B[ap];W[hs];B[gh];W[gr];B[jg];W[kh];B[kf];W[br];B[bq];W[jf];B[oc];W[ig];B[ob]
+;W[oa];B[nb];W[lb];B[na];W[pa];B[ra];W[qb];B[sd]C[MRzen2014c [?\]\: white resigns
+MRzen2014c [?\]\: B+R
+]))))

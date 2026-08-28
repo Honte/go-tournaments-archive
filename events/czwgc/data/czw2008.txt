@@ -1,0 +1,13 @@
+; TC[T081213A]
+; CL[A]
+; EV[Czech Female Championship]
+; PC[CZ, Karlovy Vary]
+; DT[2008-12-13,2008-12-14]
+; HA[h9]
+; KM[6.5]
+; TM[80]
+;
+  1 Zaloudkova Klara        2d CZ Pra   3 0   3     4+ 2+ 3+ |10798106
+  2 Simunkova Martina       1d CZ Libe  2 0   1     3+ 1- 4+ |10298904
+  3 Hricova Jana            1k CZ Pra   1 0   0     2- 4+ 1- |10233509
+  4 Prokopova Anna          2k CZ SRic  0 0   0     1- 3- 2- |10449087

@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useRef, useState, type KeyboardEvent } from 'react';
+import { useCallback, useRef, useState, type KeyboardEvent } from 'react';
 
 export type DualRangeProps = {
   id: string;
@@ -51,7 +51,23 @@ const thumbClassName = `pointer-events-none absolute inset-x-0 top-1/2 z-10 h-4 
   focus-visible:[&::-webkit-slider-thumb]:ring-event-primary
   focus-visible:[&::-webkit-slider-thumb]:ring-offset-1`;
 
-export function DualRange({
+export function DualRange({ lowerValue, upperValue, minimum, maximum, ...props }: DualRangeProps) {
+  const normalizedLower = clamp(Math.min(lowerValue, upperValue), minimum, maximum);
+  const normalizedUpper = clamp(Math.max(lowerValue, upperValue), minimum, maximum);
+
+  return (
+    <DualRangeControl
+      key={`${normalizedLower}:${normalizedUpper}`}
+      {...props}
+      minimum={minimum}
+      maximum={maximum}
+      lowerValue={normalizedLower}
+      upperValue={normalizedUpper}
+    />
+  );
+}
+
+function DualRangeControl({
   id,
   label,
   minimum,
@@ -64,16 +80,8 @@ export function DualRange({
   disabled = false,
   onCommit,
 }: DualRangeProps) {
-  const normalizedLower = clamp(Math.min(lowerValue, upperValue), minimum, maximum);
-  const normalizedUpper = clamp(Math.max(lowerValue, upperValue), minimum, maximum);
-  const [draft, setDraft] = useState<[number, number]>([normalizedLower, normalizedUpper]);
+  const [draft, setDraft] = useState<[number, number]>([lowerValue, upperValue]);
   const draftRef = useRef(draft);
-
-  useEffect(() => {
-    const next: [number, number] = [normalizedLower, normalizedUpper];
-    draftRef.current = next;
-    setDraft(next);
-  }, [normalizedLower, normalizedUpper]);
 
   const setDraftValue = useCallback((next: [number, number]) => {
     draftRef.current = next;
@@ -82,10 +90,10 @@ export function DualRange({
 
   const commit = useCallback(() => {
     const [lower, upper] = draftRef.current;
-    if (lower !== normalizedLower || upper !== normalizedUpper) {
+    if (lower !== lowerValue || upper !== upperValue) {
       onCommit(lower, upper);
     }
-  }, [normalizedLower, normalizedUpper, onCommit]);
+  }, [lowerValue, onCommit, upperValue]);
 
   const handleLowerKeyDown = useCallback(
     (event: KeyboardEvent<HTMLInputElement>) => {

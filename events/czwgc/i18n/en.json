@@ -1,0 +1,17 @@
+{
+  "site": {
+    "name": "Czech Women's Go Championships Archive",
+    "acronym": "CZWGC",
+    "description": "Archive of all Czech Women Championships tournaments",
+    "yearDescription": "Results of CZWGC %{0}",
+    "allTimeStatsDescription": "All-time statistics of all Czech Women's Go Championships participants",
+    "playerStatsDescription": "Participation statistics of %{0} in all Czech Women's Go Championships events"
+  },
+  "details": {
+    "goToWebsite": "Go to CZWGC %{0} website"
+  },
+  "winners": {
+    "title": "Medalists of Czech Women's Go Championships",
+    "first": "Czech Women Champion"
+  }
+}

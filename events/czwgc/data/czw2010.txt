@@ -1,0 +1,19 @@
+; TC[T101204C]
+; CL[A]
+; EV[Czech Female Championship]
+; PC[CZ, Praha]
+; DT[2010-12-04,2010-12-05]
+; HA[h9]
+; KM[6.5]
+; TM[80]
+; CM[ (submitted by cieply)]
+;.
+;
+1 Zaloudkova Klara    2d CZ  APra  4  0  1            5-     8+     3+     4+     2+      |10798106
+2 Prokopova Anna      1k CZ  SRic  4  0  2            4+     7+     6+     3+     1-      |10449087
+3 Bartova Jitka       1k CZ  APra  3  0  3            8+     5+     1-     2-     4+      |13849748
+4 Hricova Jana        1k CZ  APmG  2  0  4            2-     6+     7+     1-     3-      |10233509
+5 Babicka Katerina    4k CZ  Usti  2  0  5            1+     3-     8+     0=     0=      |15225804
+6 Kadlecova Alzbeta   7k CZ  APra  1  0  6            7+     4-     2-     0=     0=      |15425091
+7 Simunkova Martina   1k CZ  Libe  0  0  7            6-     2-     4-     0=     0=      |10298904
+8 Chladkova Tereza   11k CZ  TFMi  0  0  7            3-     1-     5-     0=     0=      |15401364

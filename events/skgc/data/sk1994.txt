@@ -1,0 +1,12 @@
+; EV[3rd Slovak Championship]
+; PC[SK, Kosice]
+; DT[1994-07-06,1994-07-10]
+; KM[5.5]
+; HA[h9]
+   1 Jakubec Stanislav              4D SK  Ba       8    31      0+      4-      2+      0+      5+      3+      6+      7+      0+
+   2 Poliak Miroslav                4D SK  Ba       8    29      4+      0+      1-      5+      3+      6+      7+      0+      0+
+   3 Jadron Milan                   3D SK  Ba       7    22      7+      0+      0+      4+      2-      1-      5+      0+      6+
+   4 Krusina Rudolf                 1D SK  Ba       6    20      2-      1+      5+      3-      6+      7+      0+      0+      0-
+   5 Oravec Ivan                    2D SK  Ba       4     7      0+      0-      4-      2-      1-      0+      3-      6+      7+
+   6 Palencar Ladislav              1k SK  Ke       2     1      0-      7+      0+      0-      4-      2-      1-      5-      3-
+   7 Strelka Martin                 1D SK  Ba       1     0      3-      6-      0-      0+      0-      4-      2-      1-      5-

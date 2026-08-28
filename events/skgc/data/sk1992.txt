@@ -1,0 +1,16 @@
+; EV[1st Slovak Championship]
+; PC[SK, Bratislava]
+; KM[5.5]
+; HA[h9]
+   1 Gubas Xaver                    4D SK  MF       5    14    14      8+     10+      4+      2+      3+
+   2 Poliak Miroslav                4D SK  Ga       4    16    11      7+      5+      6+      1-      4+
+   3 Jadron Milan                   3D SK  Ba       3    16     8      6+      4-      8+      5+      1-
+   4 Jakubec Stanislav              3D SK  Ba       3    16     7      9+      3+      1-      7+      2-
+   5 Waczulik Juraj                 2k SK  Ba       3    12     5     11+      2-      9+      3-      7+
+   6 Kostolansky Miro               2D SK  Ba       3    11     4      3-      9+      2-      8+     12+
+   7 Petkov Peter                   2k SK  Pl       2    13     3      2-     11+     10+      4-      5-
+   8 Oravec Ivan                    2D SK  Ba       2    12     1      1-     12+      3-      6-     11+
+   9 Strelka Martin                 3k SK  Ba       2    11     2      4-      6-      5-     12+     10+
+  10 Krusina Rudolf                 1D SK  Ba       2    10     1     12+      1-      7-     11+      9-
+  11 Mecir Ladislav                 1k SK  Li       1     9     0      5-      7-     12+     10-      8-
+  12 Palencar Ladislav              1k SK  Ko       0    10     0     10-      8-     11-      9-      6-

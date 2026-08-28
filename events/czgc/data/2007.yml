@@ -1,3 +1,4 @@
+website: http://so-imba.com/egoban/posts/frydek-mistek-3010-411-mistrovstvi-cr-2007.html
 name: 15th Czech Championship
 stages:
   - type: tournament
@@ -13,3 +14,7 @@ stages:
       - direct
       - sodos
     findSharedPlaces: true
+    games:
+      - 3-4 3:B+8.5 round:6 sgf:2007/6-VladimirDanek-VitBrunner.sgf
+      - 4-1 1:W+R round:7 sgf:2007/7-VitBrunner-JanHora.sgf
+      - 4-2 4:B+1.5 round:8 sgf:2007/8-VitBrunner-RadekNechanicky.sgf

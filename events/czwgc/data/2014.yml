@@ -1,0 +1,30 @@
+website: http://so-imba.com/egoban/posts/praha-6-7-12-mr-zen-2014.html
+stages:
+  - type: tournament
+    name: Championship
+    file: czw2014.txt
+    notes: 2 preliminary groups round robin, best 2 from each group to playoff to determine medalists
+    scoringColumns:
+      - wins
+      - null
+      - place
+    breakers:
+      - place
+    columns:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 1-3 1:B+3.5 round:2 sgf:2014/2-TerezaChladkova-KlaraZaloudkova.sgf
+      - 1-4 1:B+1.5 round:4 sgf:2014/4-TerezaChladkova-AlzbetaKadlecova.sgf
+      - 2-1 1:W+15.5 round:5 sgf:2014/5-JanaHricova-TerezaChladkova.sgf
+      - 2-3 2:B+R round:4 sgf:2014/4-JanaHricova-KlaraZaloudkova.sgf
+      - 2-4 2:B+2.5 round:2 sgf:2014/2-JanaHricova-AlzbetaKadlecova.sgf
+      - 3-6 3:B+19.5 round:1 sgf:2014/1-KlaraZaloudkova-KamilaSamajova.sgf
+      - 4-3 3:W+R round:5 sgf:2014/5-AlzbetaKadlecova-KlaraZaloudkova.sgf
+      - 5-1 1:W+23.5 round:1 sgf:2014/1-LenkaDankova-TerezaChladkova.sgf
+      - 5-3 3:W+R round:3 sgf:2014/3-LenkaDankova-KlaraZaloudkova.sgf
+      - 5-6 5:B+26.5 round:2 sgf:2014/2-LenkaDankova-KamilaSamajova.sgf
+      - 6-1 6:B+16.5 round:3 sgf:2014/3-KamilaSamajova-TerezaChladkova.sgf
+      - 6-7 6:B+R round:4 sgf:2014/4-KamilaSamajova-AdrianaTomsu.sgf
+      - 7-2 2:W+R round:3 sgf:2014/3-AdrianaTomsu-JanaHricova.sgf
+      - 7-4 4:W+15.5 round:1 sgf:2014/1-AdrianaTomsu-AlzbetaKadlecova.sgf

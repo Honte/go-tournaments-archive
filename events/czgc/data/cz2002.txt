@@ -4,7 +4,7 @@
 ; PC[CZ,Frydek-Mistek]
 ; DT[2002-07-02,2002-07-07]
 ; KM[5.5]
-; TM[2h30]
+; TM[150]
 ; HA[h9]
 ;                          Czech Championship, Frydek-Mistek
 ;                                  July 2 - 7, 2002

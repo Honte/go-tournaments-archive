@@ -6,7 +6,7 @@
    2 Danek Vladimir                 5d CS  Ph       7   248      7+      9+     11+      4+      1-     12+      3+      6+
    3 Holecek Jiri                   3d CS  Ph       5   189      1-      8-      5+     11+      9+      4+      2-     12+
    4 Poliak Miroslav                3d CS  Ba       5   164      8+      1+      6+      2-     12+      3-     10+      5-
-   5 Raska P                        1d CS  Ol       4   194      9-      7-      3-     10+     11+      6-      8+      4+
+   5 Raska Petr                     1d CS  Ol       4   194      9-      7-      3-     10+     11+      6-      8+      4+
    6 Svasek Petr                    3d CS  Ol       4   187     10+     11+      4-      1-      8-      5+     12+      2-
    7 Knecht Richard                 1d CS  Bo       4   130      2-      5+     12-      9-     10+     11+      1-      8+
    8 Emmer Jiri                     1k CS  Pl       3   132      4-      3+      9+     12-      6+      1-      5-      7-

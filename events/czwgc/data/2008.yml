@@ -1,0 +1,13 @@
+website: http://so-imba.com/egoban/posts/karlovy-vary-13-1412-gpcr-mr-zen.html
+stages:
+  - type: tournament
+    name: Championship
+    file: czw2008.txt
+    scoringColumns:
+      - wins
+      - null
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true

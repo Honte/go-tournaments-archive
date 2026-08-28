@@ -1,0 +1,18 @@
+website: https://goweb.cz/2026/01/mistrovstvi-republiky-zen-2025/
+stages:
+  - type: tournament
+    name: Championship
+    file: czw2025.txt
+    scoringColumns:
+      - wins
+      - null
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+2.5 round:3 sgf:2025/3-AdrianaPodperova-JitkaBartova.sgf ogs:https://online-go.com/review/1622676
+      - 3-1 1:W+9.5 round:4 sgf:2025/4-AnezkaBukovska-AdrianaPodperova.sgf ogs:https://online-go.com/review/1623303
+      - 3-5 3:B+T round:2 sgf:2025/2-AnezkaBukovska-DitaVasova.sgf ogs:https://online-go.com/review/1622573
+      - 4-1 1:W+7.5 round:1 sgf:2025/1-AlzbetaKadlecova-AdrianaPodperova.sgf ogs:https://online-go.com/review/1622411

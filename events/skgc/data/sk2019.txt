@@ -1,0 +1,28 @@
+; TC[T190509B]
+; CL[A]
+; EV[28th Slovak Championship]
+; PC[SK, Dudince]
+; DT[2019-05-09,2019-05-13]
+; HA[h9]
+; KM[6.5]
+; TM[135]
+; CM[ (submitted by vivi)]
+;.
+;
+;Pl Meno             Trieda  Klub   MM  SDOS SOS  B   1.    2.    3.    4.    5.    6.    7.
+   1 Kral Maros                     3d SK  Kosi    26   155   155     7    2+/w    9+/b    3+/b    5+/w    7+/w    8+/w    6+/b |12537041
+   2 Strelka Martin                 1k SK  Brat    23    88   159     4    1-/b    7+/w    9+/w    3+/b    8+/w    5-/b    4-/w |10625857
+   3 Smolarik Peter                 1k SK  Kosi    23    86   157     4    7+/b    8+/b    1-/w    2-/w    5+/b    6-/b   10+/w |12886984
+   4 Kostolansky Miroslav           1k SK  Brat    23    84   150     4      0-    5-/b    6-/w   12+/b   10+/b    7+/w    2+/b |10349746
+   5 Lisa Sona                      2k SK  Kosi    22    68   160     3    9-/b    4+/w    8+/b    1-/b    3-/w    2+/w      0- |16037604
+   6 Smid Miroslav                  2k SK  Brat    22    67   159     3    8-/w      0-    4+/b    7-/w    9+/b    3+/w    1-/w |10337470
+   7 Beck Tibor                     2k SK  Brat    22    63   158     3    3-/w    2-/b      0+    6+/b    1-/b    4-/b   11+/w |10362748
+   8 Jadron Milan                   1d SK  Brat    22    62   156     3    6+/b    3-/w    5-/w    9+/w    2-/b    1-/b   12+/b |10201653
+   9 Poliak Miroslav                1d SK  Brat    21    41   156     2    5+/w    1-/w    2-/b    8-/b    6-/w      0-      0+ |10262659
+  10 Kralik Ondrej                  5k SK  Kosi    20    96   142     5   11+/w   12+/b      0+      0+    4-/w   14+/b    3-/b |16350279
+  11 Kralik Slavomir                5k SK  Kosi    19    66   127     4   10-/b      0-   13+/w   16+/b   12+/w   15+/b    7-/b |10286672
+  12 Oravec Ivan                    4k SK  Brat    19    48   132     3      0+   10-/w   15+/b    4-/w   11-/b   16+/b    8-/w |10649859
+  13 Lisy Pavol_sr                  6k SK  Vlky    18    50    86     4   14-/b   16+/w   11-/b   15+/w      0+      0=      0+ |12637680
+  14 Vyletel Lukas                  7k SK  Brat    17    51   107     4   13+/w   15-/w   16+/b      0-      0+   10-/w      0+ |15362193
+  15 Urbanik Stanislav              7k SK  Kosi    17    45   101     4   16+/w   14+/b   12-/w   13-/b      0+   11-/w      0+ |10437185
+  16 Djubek Boris                  10k SK  Brat    12     5    95     2   15-/b   13-/b   14-/w   11-/w      0+   12-/w      0+ |12874840

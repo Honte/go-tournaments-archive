@@ -1,0 +1,17 @@
+; TC[T970619]
+; CL[A]
+; EV[Czech Women Championship `97]
+; PC[CZ,Prostejov]
+; DT[1997-06-19,1997-06-21]
+; KM[5.5]
+; TM[0]
+; HA[h9]
+;                      Czech Women Championship, Prostejov 1997
+;                               June 19 - 21, 1997
+;
+;Pl     Name             Grade  Club   MM S SOS SDOS  1. 2. 3. 4. 5. 6. 7.
+  1 Simunkova Martina       2d CZ Libe  5 5  1    4   0= 4+ 3+ 2- 5+ 2+ 2+  |10298904
+  2 Hricova Jana            1d CZ Pra   3 3  2    4   3- 0= 5+ 1+ 4+ 1- 1-  |10233509
+  3 Prokopova Iva           1d CZ Pra   3 3  3    4   2+ 5+ 1- 4+ 0= 0= 0=  |10286705
+  4 Goblova Miroslava       2k CZ Olo   1 1  4    0   5+ 1- 0= 3- 2- 0= 0=  |10225721
+  5 Svecova Denisa          5k CZ Pro   0 0  5    0   4- 3- 2- 0= 1- 0= 0=  |10262725

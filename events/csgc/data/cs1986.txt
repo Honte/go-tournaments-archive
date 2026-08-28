@@ -13,9 +13,9 @@
    8 Emmer Jiri                  2d CS  Pl      10     3    92    29     0     16+      7-      6-     11+     12+      2-      1-      3-
    9 Nechanicky Radek            2d CS  Nb      10     3    92    28     0      7-     15+     11+      1-      3-     16+      2-      4-
   10 Soukup Petr                 2d CS  Pl      10     3    88    30     0     11-     12+      3-      6-     16-      5+     15+      1-
-  11 Hajek P                     2d CS  Pl      10     3    86    29     0     10+      4-      9-      8-     15+      6-     12+      2-
+  11 Hajek Pavel                 2d CS  Pl      10     3    86    29     0     10+      4-      9-      8-     15+      6-     12+      2-
   12 Holecek Jiri                3d CS  Tes     10     3    79    26     0      4-     10-      5-     15+      8-      0+     11-     16+
   13 Prokop Marek                3k CS  Tes      9     6    63    45     0     14+      0-      0+      0+      0+      0+     16+      5-
   14 Koranda Tomas               3k CS  Pl       9     6    60    42     0     13-      0+      0+      0+      0+     15-      0+      0+
-  15 Raska P                     1d CS  Ol       9     3    77    29     0      5+      9-     16+     12-     11-     14+     10-      0-
+  15 Raska Petr                  1d CS  Ol       9     3    77    29     0      5+      9-     16+     12-     11-     14+     10-      0-
   16 Rakosnik Jiri               2d CS  MFF      9     2    76    17     0      8-      5-     15-      0+     10+      9-     13-     12-

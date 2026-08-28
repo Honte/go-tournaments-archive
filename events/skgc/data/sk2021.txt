@@ -1,0 +1,28 @@
+; TC[T210623A]
+; CL[A]
+; EV[30th Slovak Championship]
+; PC[SK, Hradok]
+; DT[2021-06-23,2021-06-27]
+; HA[h9]
+; KM[6.5]
+; TM[112.5]
+; CM[ (submitted by vivi)]
+;.
+;
+;Pl Meno             Trieda  Klub   MM  SDOS SOS  B   1.    2.    3.    4.    5.    6.    7.
+   1 Lisy Pavol                     2p SK  Vlky    37   238   238     7   14+/w    4+/b    2+/b    3+/w    8+/b   11+/w    5+/b |12686597
+   2 Kral Maros                     4d SK  Kosi    36   201   238     6   12+/b   11+/b    1-/w    4+/w    3+/b    8+/w    7+/w |12537041
+   3 Gubas Xaver                    4d SK  Brat    35   167   240     5   13+/w    5+/b    8+/b    1-/b    2-/w    4+/b   11+/b |10498807
+   4 Kralik Michal                  2d SK  Kosi    34   132   240     4   16+/w    1-/w   11+/b    2-/b    5+/b    3-/w    8+/b |13033658
+   5 Strelka Martin                 1d SK  Brat    34   130   236     4      0+    3-/w    9+/w   16+/b    4-/w   12+/b    1-/w |10625857
+   6 Smolarik Peter                 2d SK  Kosi    34   127   226     4   10-/w    9-/b      0+      0+      0+    7-/w   13+/w |12886984
+   7 Dovcik Boris                   3k SK  Kosi    33   191   227     6      0+   15+/b      0+   14+/w    9+/b    6+/b    2-/b |19437605
+   8 Poliak Miroslav                2d SK  Brat    33    99   241     3    9+/b   10+/b    3-/w   13+/w    1-/w    2-/b    4-/w |10262659
+   9 Smid Miroslav                  1d SK  Brat    33    99   232     3    8-/w    6+/w    5-/b   12-/b    7-/w   10+/b   16+/w |10337470
+  10 Kralik Ondrej                  2k SK  Kosi    33    99   231     3    6+/b    8-/w   13-/b   11-/w      0+    9-/w   12+/w |16350279
+  11 Jadron Milan                   2d SK  Brat    33    98   240     3      0+    2-/w    4-/w   10+/b   13+/b    1-/b    3-/w |10201653
+  12 Waczulik Juraj                 1d SK  Brat    33    98   234     3    2-/w   13-/b   14+/b    9+/w   16+/w    5-/w   10-/b |10337745
+  13 Lukac Martin                   1d SK  Kosi    33    98   233     3    3-/b   12+/w   10+/w    8-/b   11-/w   16+/b    6-/b |12401521
+  14 Kostolansky Miroslav           1d SK  Brat    33    95   230     3    1-/b   16-/w   12-/w    7-/b      0+      0+      0+ |10349746
+  15 Kralik Slavomir                2k SK  Kosi    32   119   214     4      0+    7-/w      0-      0+      0-      0+      0+ |10286672
+  16 Beck Tibor                     1k SK  Brat    32    65   232     2    4-/b   14+/b      0+    5-/w   12-/b   13-/w    9-/b |10362748

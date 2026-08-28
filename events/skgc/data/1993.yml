@@ -1,0 +1,12 @@
+website: https://sago.sk/web-data/turnaje/msr9x/msr-93.htm
+stages:
+  - type: tournament
+    name: Championship
+    file: sk1993.txt
+    scoringColumns:
+      - wins        
+      - sos 
+    breakers:
+      - wins
+      - sos
+    findSharedPlaces: true

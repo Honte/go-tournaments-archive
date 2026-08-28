@@ -1,0 +1,28 @@
+; TC[T220504A]
+; CL[A]
+; EV[31st Slovak Championship]
+; PC[SK, Vitanova]
+; DT[2022-05-04,2022-05-08]
+; HA[h9]
+; KM[6.5]
+; TM[112.5]
+; CM[ (submitted by vivi)]
+;.
+;
+;Pl Meno             Trieda  Klub   MM  SDOS SOS  B   1.    2.    3.    4.    5.    6.    7.
+   1 Dovcik Boris                   1d SK  Kosi    36   203   238     6    2-/b   13+/w   10+/b    6+/w    3+/b    4+/b    7+/w |19437605
+   2 Kral Maros                     5d SK  Kosi    35   171   239     5    1+/w    5-/b   11+/b    4-/w    8+/w    3+/b   10+/w |12537041
+   3 Kralik Michal                  2d SK  Kosi    35   169   240     5   12+/w    8+/b    4+/b    7+/w    1-/w    2-/w    6+/b |13033658
+   4 Gubas Xaver                    4d SK  Brat    34   137   242     4    9+/b    6+/w    3-/w    2+/b    7+/b    1-/w    5-/b |10498807
+   5 Smolarik Peter                 2d SK  Kosi    34   135   237     4   13+/b    2+/w    7-/b    8-/b   10+/w    6-/w    4+/w |12886984
+   6 Jadron Milan                   2d SK  Brat    34   133   238     4   14+/w    4-/b   12+/w    1-/b   11+/b    5+/b    3-/w |10201653
+   7 Kostolansky Miroslav           1d SK  Brat    34   133   238     4   16+/w   11+/b    5+/w    3-/b    4-/w    8+/b    1-/b |10349746
+   8 Strelka Martin                 1d SK  Brat    34   132   236     4      0+    3-/w    9+/b    5+/w    2-/b    7-/w   14+/w |10625857
+   9 Waczulik Juraj                 1d SK  Brat    34   131   232     4    4-/w   14+/b    8-/w   10-/b   15+/w   11+/w   13+/b |10337745
+  10 Lukac Martin                   1d SK  Kosi    33    99   237     3   11-/w   16+/b    1-/w    9+/w    5-/b   12+/w    2-/b |12401521
+  11 Poliak Miroslav                2d SK  Brat    33    98   235     3   10+/b    7-/w    2-/w   12+/b    6-/w    9-/b   16+/b |10262659
+  12 Smid Miroslav                  1d SK  Brat    33    94   229     3    3-/b      0+    6-/b   11-/w   16+/w   10-/b      0+ |10337470
+  13 Beck Tibor                     1k SK  Brat    33    91   226     3    5-/w    1-/b      0-      0+      0+   15+/w    9-/w |10362748
+  14 Kralik Ondrej                  1k SK  Kosi    33    91   225     3    6-/b    9-/w      0+   15-/b      0+   16+/b    8-/b |16350279
+  15 Kralikova Zuzana               2k SK  Kosi    32   125   224     4      0+      0+   16-/b   14+/w    9-/b   13-/b      0+ |15801764
+  16 Kralik Slavomir                2k SK  Kosi    32    63   229     2    7-/b   10-/w   15+/w      0+   12-/b   14-/w   11-/w |10286672

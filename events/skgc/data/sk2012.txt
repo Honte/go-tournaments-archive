@@ -1,0 +1,28 @@
+; TC[T120504C]
+; CL[A]
+; EV[21st Slovak Championship]
+; PC[SK, Stakcin]
+; DT[2012-05-04,2012-05-08]
+; HA[h9]
+; KM[6.5]
+; TM[135]
+; CM[ (submitted by vivi)]
+;.
+;
+;Pl Meno              Trieda  Klub   MM  SDOS SOS  B  1.  2.  3.  4.  5.  6.  7.
+   1 Lisy Pavol                     5d SK  DoSt    27   166   166     7      4+     10+      3+      2+      5+      6+      7+ |12686597
+   2 Gubas Xaver                    3d SK  Brat    26   140   167     6      8+      6+     10+      1-      3+      4+      5+ |10498807
+   3 Kral Maros                     3d SK  Kosi    25   115   168     5      5+      7+      1-      8+      2-     10+      4+ |12537041
+   4 Jadron Milan                   1k SK  Brat    24    89   167     4      1-     12+      6+     11+     10+      2-      3- |10201653
+   5 Kostolansky Miroslav           1k SK  Brat    23    68   168     3      3-     11-      7+     12+      1-      8+      2- |10349746
+   6 Smolarik Peter                 1k SK  Kosi    23    68   167     3      7+      2-      4-     10-      8+      1-     11+ |12886984
+   7 Hrdina Marian                  2d SK  Brat    23    63   161     3      6-      3-      5-      9+     15+     11+      1- |10250658
+   8 Smid Miroslav                  1k SK  Brat    23    63   160     3      2-      0+     11+      3-      6-      5-     12+ |10337470
+   9 Fulle Marek                    3k SK  Brat    22    99   144     5     14+     16+     12-      7-      0+     15+     10+ |13537810
+  10 Poliak Miroslav                1d SK  Brat    22    45   169     2     12+      1-      2-      6+      4-      3-      9- |10262659
+  11 Karailiev Peter_Petkov         1d SK  BBys    22    45   157     2      0-      5+      8-      4-     12+      7-      6- |10733371
+  12 Strelka Martin                 2k SK  Brat    22    41   155     2     10-      4-      9+      5-     11-      0+      8- |10625857
+  13 Palencar Ladislav              4k SK  Kosi    20    70   124     4     16-      0+      0-      0-     14+      0+     15+ |10213654
+  14 Virag Ladislav                 3k SK  Kosi    20    52   132     3      9-     15-     16-      0+     13-      0+      0+ |12762750
+  15 Kralik Slavomir                5k SK  Kosi    19    74   139     4      0+     14+      0+     16+      7-      9-     13- |10286672
+  16 Oravec Ivan                    4k SK  Brat    19    54   128     3     13+      9-     14+     15-      0-      0-      0+ |10649859

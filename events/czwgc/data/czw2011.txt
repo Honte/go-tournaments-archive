@@ -1,0 +1,16 @@
+; TC[T111203C]
+; CL[A]
+; EV[Czech Female Championship]
+; PC[CZ, Praha]
+; DT[2011-12-03,2011-12-04]
+; HA[h9]
+; KM[6.5]
+; TM[80]
+; CM[ (submitted by cieply)]
+;.
+;
+1 Zaloudkova Klara    3d CZ  ADra  4  4 6  3+     4+     5+     0=     2+      |10798106
+2 Hricova Jana        2k CZ  APmG  3  3 3 0=     3+     4+     5+     1-      |10233509
+3 Babicka Katerina    2k CZ  Usti  2  2 1 1-     2-     0=     4+     5+      |15225804
+4 Chladkova Tereza    5k CZ  TFMi  1  1 0 5+     1-     2-     3-     0=      |15401364
+5 Kadlecova Alzbeta   3k CZ  APra  0  0 0 4-     0=     1-     2-     3-      |15425091

@@ -10,4 +10,4 @@
    5 Nechanicky Vitezslav           1d CS  Ny            3    11  0    4-      3+      2+      1-      8+      7-      6-
    6 Holecek Jiri                   2d CS  Ph            3     6  0    3-      4-      1-      2-      7+      8+      5+
    7 Rakosnik Jiri                  1d CS  Ph            2     8  0    2-      1+      4-      3-      6-      5+      8-
-   8 Juzek J                        1d CS  Pl            1     2  0    1-      2-      3-      4-      5-      6-      7+
+   8 Juzek Jiri                     1d CS  Pl            1     2  0    1-      2-      3-      4-      5-      6-      7+

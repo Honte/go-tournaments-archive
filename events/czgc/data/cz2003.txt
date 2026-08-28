@@ -4,7 +4,7 @@
 ; PC[CZ,Pardubice]
 ; DT[2003-07-08,2003-07-13]
 ; KM[6.5]
-; TM[2h30]
+; TM[150]
 ; HA[h9]
 ;                            Czech Championship, Pardubice
 ;                                  July 8 - 13, 2003

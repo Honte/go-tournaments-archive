@@ -1,0 +1,14 @@
+stages:
+  - type: tournament
+    name: Championship
+    file: sk2007.txt
+    time: 90m + 60s byo
+    scoringColumns:
+      - wins 
+      - sodos
+      - sos     
+    breakers:
+      - wins
+      - sodos
+      - sos    
+    findSharedPlaces: true

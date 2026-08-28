@@ -1,0 +1,26 @@
+; TC[T250507A]
+; CL[A]
+; EV[34th Slovak Championship]
+; PC[SK, Tatranska Strba]
+; DT[2025-05-07,2025-05-11]
+; HA[h9]
+; KM[6.5]
+; TM[130]
+; CM[ (submitted by Borisho)]
+;.
+   1 Kralik Ondrej                  4d SK  Kosi     7    37    37   237   237  0   15+      5+      4+      2+      9+      3+      6+ |16350279
+   2 Dovcik Boris                   3d SK  Kosi     5    35    35   168   240  0    7+      6+      8+      1-      3-      9+      4+ |19437605
+   3 Poliak Miroslav                2d SK  Brat     5    35    35   168   238  0   12+      8-     11+      4+      2+      1-      9+ |10262659
+   4 Smolarik Peter                 2d SK  Kosi     4    34    34   133   240  0   14+      9+      1-      3-      5+      8+      2- |12886984
+   5 Seman Oliver                   1d SK  Kosi     4    34    34   133   237  0   13+      1-      9-      0+      4-      7+      8+ |19713243
+   6 Kralikova Zuzana               1d SK  Kosi     4    34    34   132   237  0   16+      2-      7+     10+      8-      0+      1- |15801764
+   7 Lukac Martin                   1d SK  Kosi     4    34    34   131   234  0    2-     16+      6-     11+     10+      5-     12+ |12401521
+   8 Smid Miroslav                  1k SK  Brat     3    33    33   102   238  0   11+      3+      2-      9-      6+      4-      5- |10337470
+   9 Chalmoviansky Pavel            2k SK  Brat     3    33    33   100   241  0   10+      4-      5+      8+      1-      2-      3- |14313805
+  10 Waczulik Juraj                 1d SK  Brat     3    33    33    99   233  0    9-     14+     13+      6-      7-     11+      0- |10337745
+  11 Kralik Michal                  2d SK  Kosi     3    33    33    97   232  1    8-     12+      3-      7-      0+     10-     13+ |13033658
+  12 Sabo Stefan                    1k SK  Brat     3    33    33    97   232  0    3-     11-     14+     13-     16+     15+      7- |15201362
+  13 Chalmovianska Michala          1k SK  Brat     3    33    33    96   229  0    5-     15+     10-     12+      0-      0+     11- |20398521
+  14 Beck Tibor                     1k SK  Brat     3    33    33    93   225  0    4-     10-     12-     16-      0+      0+      0+ |10362748
+  15 Jadron Milan                   1d SK  Brat     2    32    32    63   230  0    1-     13-      0-      0-      0+     12-     16+ |10201653
+  16 Lukacova Barbora               2k SK  Brat     2    32    32    63   227  0    6-      7-      0-     14+     12-      0+     15- |10650354

@@ -1,0 +1,19 @@
+; TC[T070427A]
+; CL[A]
+; EV[16th Slovak Championship]
+; PC[SK, Bratislava]
+; DT[2007-04-27,2007-05-01]
+; HA[h9]
+; KM[6.5]
+; TM[135]
+;
+  1 Gubas Xaver             4d SK Brat  7 26  26   0   8+  5+  4+  2+  3+  6+  7+ |10498807
+  2 Smid Miroslav           1d SK Brat  5 14  26   0   9+  6+  5+  1-  4+  3-  8+ |10337470
+  3 Poliak Miroslav         3d SK Brat  5 12  22   0   5-  7+  9+  8+  1-  2+ 10+ |10262659
+  4 Jadron Milan            1d SK Brat  5 10  22   0  10+  8+  1-  6+  2-  9+  5+ |10201653
+  5 Karailiev Peter_Petkov  2d SK BBys  3  9  29   0   3+  1-  2- 10+  6+  7-  4- |10733371
+  6 Kostolansky Miroslav    1d SK Brat  3  5  25   0   7+  2- 10+  4-  5-  1-  9+ |10349746
+  7 Strelka Martin          1k SK Brat  3  5  22   0   6-  3-  8-  9+ 10+  5+  1- |10625857
+  8 Kral Maros              1k SK Kosi  2  4  27   0   1-  4-  7+  3-  9- 10+  2- |12537041
+  9 Oravec Ivan             1k SK Brat  1  2  24   0   2- 10-  3-  7-  8+  4-  6- |10649859
+ 10 Jakubec Stanislav       1k SK Brat  1  1  22   0   4-  9+  6-  5-  7-  8-  3- |10401809

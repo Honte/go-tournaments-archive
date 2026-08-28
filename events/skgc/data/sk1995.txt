@@ -1,0 +1,15 @@
+; EV[4th Slovak Championship]
+; PC[SK, Galanta]
+; DT[1995-07-13,1995-07-16]
+; KM[5.5]
+; HA[h9]
+   1 Poliak Miroslav                5D SK  Ga       5    19    15      0+      4+      3+      0+      2-      7+
+   2 Jadron Milan                   3D SK  Ba       4    22    14      6+      3-      5+      7+      1+      0-
+   3 Jakubec Stanislav              4D SK  Ba       4    22    13      8+      2+      1-      5+      6+      4-
+   4 Gubas Xaver                    5D SK  Ba       4    19    12      0+      1-      9-     10+      5+      3+
+   5 Jadron Peter                   2D SK  SB       3    18     6      7+      9+      2-      3-      4-     10+
+   6 Kostolansky Miroslav           2D SK  Ba       3    16     5      2-      8+      7-      9+      3-      0+
+   7 Hrdina Marian                  1D SK  Ba       3    16     4      5-     10+      6+      2-      0+      1-
+   8 Sabol Slavomir                 1D SK  Ke       3    14     3      3-      6-      0-      0+     10+      9+
+   9 Strelka Martin                 1D SK  Ba       2    18     5     10+      5-      4+      6-      0-      8-
+  10 Krusina Rudolf                 2D SK  Ba       1    15     0      9-      7-      0+      4-      8-      5-

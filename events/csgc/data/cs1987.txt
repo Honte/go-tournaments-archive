@@ -13,7 +13,7 @@
  7 Holecek     Jiri      3d CS Pra 4   34  13+  2- 12+  6- 16+  4+  1- 10-
  8 Svasek      Petr      3d CS Olo 4   30.5 16+ 4-  5- 14+ 15+  2-  3- 13+
  9 Knecht      Richard   3d CS Brn 4   30   1- 13+  6- 10- 14+ 16+ 12+  4-
-10 Raska       P         1d CS Olo 4   29   2- 15+ 11-  9+  3- 12- 16+  7+
+10 Raska       Petr      1d CS Olo 4   29   2- 15+ 11-  9+  3- 12- 16+  7+
 11 Poliak      Miroslav  3d CS Bra 3   32.5 3- 16+ 10+  1-  5- 15+ 13-  6-
 12 Soukup      Petr      2d CS Plz 3   29   6- 14+  7- 15- 13+ 10+  9-  3-
 13 Nechanicky  Vitezslav 3d CS Nym 3   23   7-  9- 15+ 16- 12- 14+ 11+  8-

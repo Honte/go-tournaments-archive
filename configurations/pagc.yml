@@ -58,7 +58,7 @@ config:
             en: PWGC
           description: &mpk
             pl: Mistrzostwa Polski Kobiet
-            en: Polish Women Go Championships
+            en: Polish Women's Go Championships
           tooltip: *mpk
         - website:
             pl: https://mpj.go.art.pl/pl

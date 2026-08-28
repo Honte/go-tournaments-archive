@@ -13,3 +13,12 @@ stages:
       - direct
       - sodos
     findSharedPlaces: true
+    games:
+      - 3-8 8:W+5.5 round:7 sgf:2003/7-PetrCipra-VitBrunner.sgf
+      - 4-8 4:B+R round:5 sgf:2003/5-IvanKostka-VitBrunner.sgf
+      - 8-2 2:W+R round:6 sgf:2003/6-VitBrunner-JanHora.sgf
+      - 8-5 5:W+3.5 round:8 sgf:2003/8-VitBrunner-DavidHolecek.sgf
+      - 8-6 6:W+R round:2 sgf:2003/2-VitBrunner-MartinCieply.sgf
+      - 8-7 7:W+R round:4 sgf:2003/4-VitBrunner-ZbynekDach.sgf
+      - 9-8 8:W+R round:1 sgf:2003/1-MartinJurek-VitBrunner.sgf
+      - 10-8 8:W+R round:9 sgf:2003/9-PetrValasek-VitBrunner.sgf
