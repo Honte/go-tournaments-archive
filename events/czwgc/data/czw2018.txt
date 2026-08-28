@@ -1,0 +1,14 @@
+; TC[T181215N]
+; CL[A]
+; EV[Czech Ladies Championship]
+; PC[CZ, Liberec]
+; DT[2018-12-15,2018-12-16]
+; HA[h9]
+; KM[6.5]
+; TM[82.5]
+; CM[ (submitted by tymak)]
+;.
+1 Tomsu Adriana     1d CZ  TFMi  6   6    12  2+/w   3+/w   4+/b   2+/b   3+/b   4+/w    |16225396
+2 Vasova Dita       2k CZ  APmG  3   3    5  1-/b   4-/w   3+/b   1-/w   4+/b   3+/w    |15749921
+3 Bukovska Anezka   2k CZ  APmG  2   2    2   4+/w   1-/b   2-/w   4+/b   1-/w   2-/b    |15874947
+4 Hricova Jana      2k CZ  APmG  1   1    3   3-/b   2+/b   1-/w   3-/w   2-/w   1-/b    |10233509

@@ -1,0 +1,25 @@
+; TC[T040505A]
+; CL[A]
+; EV[13th Slovak Championship]
+; PC[SK,Bratislava]
+; DT[2004-05-05,2004-05-09]
+; KM[6.5]
+; TM[2h15]
+; HA[h9]
+;Majstrovstva Slovenska 2004
+;Bratislava, 5.-9.5.2004
+;
+;Por Meno                   Tr  Klub    B B SDOS SOS  1.  2.  3.  4.  5.  6.  7.
+  1 Poliak Miroslav         3d SK Brat  7 7  25  25   2+ 10+  3+  5+  7+  6+  4+  |10262659
+  2 Gubas Xaver             3d SK Brat  5 5  14  25   1-  7+ 10+  3+  5+  4-  8+  |10498807
+  3 Karailiev Peter_Petkov  2d SK BBys  4 4  11  27   6+  4+  1-  2-  8+  9+  5-  |10733371
+  4 Jadron Peter            2d SK SBel  4 4  11  26   8+  3-  7+  6-  9+  2+  1-  |10298651
+  5 Kostolansky Miroslav    1d SK Brat  4 4  10  25   7-  6+  9+  1-  2- 10+  3+  |10349746
+  6 Hrdina Marian           2d SK Brat  4 4   8  23   3-  5-  8+  4+ 10+  1-  9+  |10250658
+  7 Jadron Milan            2d SK Brat  3 3   6  24   5+  2-  4-  9+  1-  8- 10+  |10201653
+  8 Strelka Martin          1d SK Brat  2 2   4  22   4-  9-  6- 10+  3-  7+  2-  |10625857
+  9 Jakubec Stanislav       1k SK Brat  1 1   2  22  10-  8+  5-  7-  4-  3-  6-  |10401809
+ 10 Smid Miroslav           2d SK Brat  1 1   1  26   9+  1-  2-  8-  6-  5-  7-  |10337470
+;
+;Svajciarsky system, rovne partie, komi 6.5,
+;hraci cas 2x90`, byoyomi 60. na tah

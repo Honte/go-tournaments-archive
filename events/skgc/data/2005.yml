@@ -1,0 +1,15 @@
+stages:
+  - type: tournament
+    name: Championship
+    file: sk2005.txt
+    notes: For statistics only Slovak players and games between them are shown. Games against other players changed to 0+ and 0-. Full table check EGD link.(Open 1st Radek Nechanicky, 3rd Vit Brunner)
+    scoringColumns:
+      - wins
+      - null      
+      - sodos
+      - sos    
+    breakers:
+      - wins
+      - sodos
+      - sos  
+    findSharedPlaces: true

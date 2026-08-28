@@ -1,0 +1,87 @@
+players:
+  - id: atomsu
+    name: Adriana Podpěrová
+    pastNames:
+     - Adriana Podperova
+     - Adriana Tomsu
+     - Adriana Tomšů
+    egd: 16225396
+  - id: akadlecova
+    name: Alžběta Kadlecová
+    pastNames:
+     - Alzbeta Kadlecova
+    egd: 15425091
+  - id: abukovska
+    name: Anežka Bukovská 
+    pastNames:
+     - Anezka Bukovska
+    egd: 15874947
+  - id: abernathova
+    name: Anna Bernathova
+    egd: 10301984
+  - id: aprokopova
+    name: Anna Reindlová
+    pastNames:
+     - Anna Reindlova
+     - Anna Prokopova
+     - Anna Prokopová
+    egd: 10449087
+  - id: dsvecova
+    name: Denisa Svecova
+    egd: 10262725
+  - id: dvasova
+    name: Dita Vášová
+    pastNames:
+     - Dita Vasova
+    egd: 15749921
+  - id: iprokopova
+    name: Iva Prokopova
+    egd: 10286705
+  - id: jhricova
+    name: Jana Hricová
+    pastNames:
+     - Jana Hricova
+    egd: 10233509
+  - id: jbartova
+    name: Jitka Bártová
+    pastNames:
+     - Jitka Bartova
+    egd: 13849748
+  - id: ksamajova
+    name: Kamila Šamajová
+    pastNames:
+     - Kamila Samajova
+    egd: 14913778
+  - id: kbabicka
+    name: Katerina Babicka
+    egd: 15225804
+  - id: kzaloudkova
+    name:  Klára Žaloudková
+    pastNames:
+     - Klara Zaloudkova
+    egd: 10798106
+  - id: kstodolova
+    name: Kristyna Stodolova
+    egd: 14213243
+  - id: ldankova
+    name: Lenka Daňková
+    pastNames:
+     - Lenka Dankova
+    egd: 10513063
+  - id: lsnepova
+    name: Lenka Snepova
+    egd: 10250724
+  - id: msimunkova
+    name: Martina Šimůnková
+    pastNames:
+     - Martina Simunkova
+    egd: 10298904
+  - id: mgoblova
+    name: Miroslava Goblova
+    egd: 10225721
+  - id: tchladkova
+    name: Tereza Kotowski
+    pastNames:
+     - Tereza Chladkova
+     - Tereza Chládková
+    egd: 15401364

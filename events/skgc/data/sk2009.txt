@@ -1,0 +1,28 @@
+; TC[T090506A]
+; CL[A]
+; EV[18th Slovak Championship]
+; PC[SK, Topolcianky]
+; DT[2009-05-06,2009-05-10]
+; HA[h9]
+; KM[6.5]
+; TM[135]
+; CM[ (submitted by vivi)]
+;.
+;
+;Pl Meno              Trieda  Klub   MM  SDOS SOS  B  1.  2.  3.  4.  5.  6.  7.
+   1 Reindl Martin                  2d SK  Brat    25   135   159     6      9+     13+      4+      7+      2-      5+      6+ |13986698
+   2 Smid Miroslav                  1k SK  Brat    24   114   162     5      5+      4-      8+      9+      1+      7+      3- |10337470
+   3 Gubas Xaver                    4d SK  Brat    24   114   159     5      8-      6+      5-     13+      9+      4+      2+ |10498807
+   4 Kral Maros                     2d SK  Kosi    24   113   162     5     10+      2+      1-      5+      7+      3-      9+ |12537041
+   5 Poliak Miroslav                3d SK  Brat    23    90   163     4      2-     10+      3+      4-      8+      1-      7+ |10262659
+   6 Kostolansky Miroslav           1d SK  Brat    23    86   157     4      7-      3-     14+     10+     12+      8+      1- |10349746
+   7 Smolarik Peter                 2k SK  Kosi    22    65   161     3      6+      8+     16+      1-      4-      2-      5- |12886984
+   8 Jakubec Stanislav              1k SK  Brat    22    65   157     3      3+      7-      2-     16+      5-      6-     12+ |10401809
+   9 Waczulik Juraj                 1k SK  Brat    22    64   161     3      1-     14+     13+      2-      3-     10+      4- |10337745
+  10 Jadron Milan                   1k SK  Brat    22    62   154     3      4-      5-     12+      6-     16+      9-     13+ |10201653
+  11 Chalmoviansky Pavel            3k SK  Brat    21    73   133     4     15+     16-      0-      0+     14-      0+      0+ |14313805
+  12 Beck Tibor                     2k SK  BBys    21    61   148     3     16-      0+     10-     14+      6-     13+      8- |10362748
+  13 Strelka Martin                 1k SK  Brat    21    41   155     2     14+      1-      9-      3-     15+     12-     10- |10625857
+  14 Karailiev Peter_Petkov         2d SK  BBys    21    41   148     2     13-      9-      6-     12-     11+     16+     15- |10733371
+  15 Fulle Marek                    3k SK  Brat    20    56   136     3     11-      0+      0-      0+     13-      0-     14+ |13537810
+  16 Oravec Ivan                    2k SK  Brat    20    42   148     2     12+     11+      7-      8-     10-     14-      0- |10649859

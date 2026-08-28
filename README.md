@@ -18,6 +18,7 @@ international events, and category medal tables for events that define age or ot
 - [Polish Women's Go Championships Archive](https://mpk.go.art.pl) (`pwgc`)
 - [Polish Academic Go Championships Archive](https://amp.go.art.pl) (`pagc`)
 - [Korea Prime Minister Cup](https://kpmc.go.art.pl) (`kpmc`)
+- [Honte Archives](https://archives.honte.pl/) (serves all remaining events)
 
 ## Events
 
@@ -31,17 +32,19 @@ Available event directories:
 | `epc`    | European Pro Go Championships     | Locale `en`                                                                      |
 | `epq`    | European Pro Qualification        | Locale `en`                                                                      |
 | `esgc`   | European Student Go Championships | Locale `en`, country stats                                                       |
-| `ewgc`   | European Women Go Championships   | Locale `en`, country stats                                                       |
+| `ewgc`   | European Women's Go Championships | Locale `en`, country stats                                                       |
 | `eygc`   | European Youth Championships      | Locale `en`, country stats, category stats for `u21`, `u20`, `u18`, `u16`, `u12` |
 | `csgc`   | Czechoslovak Go Championships     | Locale `en`                                                                      |
 | `czgc`   | Czech Go Championships            | Locale `en`                                                                      |
+| `czwgc`  | Czech Women's Go Championships    | Locale `en`                                                                      |
+| `skgc`   | Slovak Go Championships           | Locale `en`                                                                      |
 | `hrgc`   | Croatian Go Championships         | Locale `en`                                                                      |
 | `nlk`    | Dutch Go Championships            | Locale `en`                                                                      |
-| `nlkd`   | Dutch Women Go Championships      | Locale `en`                                                                      |
+| `nlkd`   | Dutch Women's Go Championships    | Locale `en`                                                                      |
 | `iegc`   | Irish Go Championships            | Locale `en`                                                                      |
 | `pagc`   | Polish Academic Go Championships  | Locales `pl`, `en`                                                               |
 | `pgc`    | Polish Go Championships           | Locales `pl`, `en`                                                               |
-| `pwgc`   | Polish Women Go Championships     | Locales `pl`, `en`                                                               |
+| `pwgc`   | Polish Women's Go Championships   | Locales `pl`, `en`                                                               |
 | `pygc`   | Polish Youth Go Championships     | Locales `pl`, `en`, category stats for `u21`, `u20`, `u18`, `u16`, `u15`, `u12`  |
 | `wgl`    | Warsaw Go League                  | Locales `pl`, `en`                                                               |
 

@@ -1,0 +1,28 @@
+; TC[T100428A]
+; CL[A]
+; EV[19th Slovak Championship]
+; PC[SK, Terchova]
+; DT[2010-04-28,2010-05-02]
+; HA[h9]
+; KM[6.5]
+; TM[135]
+; CM[ (submitted by vivi)]
+;.
+;
+;Pl Meno              Trieda  Klub   MM  SDOS SOS  B  1.  2.  3.  4.  5.  6.  7.
+   1 Lisy Pavol                     3d SK  DSta    27   167   167     7      9+      6+      3+      2+      4+      5+      7+ |12686597
+   2 Kral Maros                     3d SK  Kosi    26   141   168     6     10+      8+      6+      1-      3+      4+      5+ |12537041
+   3 Reindl Martin                  3d SK  Brat    25   115   168     5     14+      4+      1-      5+      2-      7+      6+ |13986698
+   4 Gubas Xaver                    4d SK  Brat    24    92   170     4     11+      3-      8+      7+      1-      2-     10+ |10498807
+   5 Jadron Milan                   1k SK  Brat    23    69   170     3      8-     10+     11+      3-      6+      1-      2- |10201653
+   6 Poliak Miroslav                2d SK  Brat    23    69   170     3      7+      1-      2-      8+      5-      9+      3- |10262659
+   7 Strelka Martin                 1k SK  Brat    23    68   167     3      6-      9+     12+      4-     11+      3-      1- |10625857
+   8 Karailiev Peter_Petkov         1d SK  BBys    23    68   164     3      5+      2-      4-      6-      9+     10-     14+ |10733371
+   9 Smid Miroslav                  1k SK  Brat    23    68   164     3      1-      7-     14+     10+      8-      6-     11+ |10337470
+  10 Waczulik Juraj                 1k SK  Brat    23    67   163     3      2-      5-     13+      9-     14+      8+      4- |10337745
+  11 Kostolansky Miroslav           1d SK  Brat    23    65   158     3      4-     14+      5-     15+      7-     12+      9- |10349746
+  12 Oravec Ivan                    2k SK  Brat    22    82   150     4     15+     13+      7-     14-     16+     11-      0+ |10649859
+  13 Beck Tibor                     2k SK  BBys    22    80   147     4      0+     12-     10-      0+     15+     14-     16+ |10362748
+  14 Smolarik Peter                 1k SK  Kosi    22    44   161     2      3-     11-      9-     12+     10-     13+      8- |12886984
+  15 Svec Ivo                       2k SK  Brat    21    56   143     3     12-      0+      0+     11-     13-     16-      0+ |10233652
+  16 Waczulikova Barbora            5k SK  Brat    20    96   140     5      0+      0+      0+      0+     12-     15+     13- |10650354

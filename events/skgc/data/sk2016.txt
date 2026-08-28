@@ -1,0 +1,28 @@
+; TC[T160504A]
+; CL[A]
+; EV[25th Slovak Championship]
+; PC[SK, Latky]
+; DT[2016-05-04,2016-05-08]
+; HA[h9]
+; KM[6.5]
+; TM[135]
+; CM[ (submitted by vivi)]
+;.
+;
+;Pl Meno             Trieda  Klub   MM  SDOS SOS  B   1.     2.     3.     4.     5.     6.     7.
+   1 Gubas Xaver                    3d SK  Brat    27   165   165     7   3+/b0   8+/w0   2+/w0   5+/b0   4+/b0   7+/w0   6+/b0 |10498807
+   2 Kral Maros                     3d SK  Kosi    26   139   166     6   4+/w0   5+/b0   1-/b0   3+/w0   6+/w0   8+/b0   7+/w0 |12537041
+   3 Smolarik Peter                 2k SK  Kosi    24    90   167     4   1-/w0   9+/w0   6+/b0   2-/b0   5+/b0   4-/b0   8+/w0 |12886984
+   4 Smid Miroslav                  2k SK  Brat    24    89   165     4   2-/b0  11+/w0   7+/b0      0+   1-/w0   3+/w0   5-/b0 |10337470
+   5 Kralik Michal                  2k SK  Kosi    23    69   167     3   6+/b0   2-/w0   8+/b0   1-/w0   3-/w0  10-/b0   4+/w0 |13033658
+   6 Poliak Miroslav                2d SK  Brat    23    67   167     3   5-/w0   7+/b0   3-/w0   9+/b0   2-/b0      0+   1-/w0 |10262659
+   7 Jadron Milan                   1k SK  Brat    23    65   165     3  11+/b0   6-/w0   4-/w0   8+/b0      0+   1-/b0   2-/b0 |10201653
+   8 Beck Tibor                     2k SK  BBys    22    43   166     2   9+/b0   1-/b0   5-/w0   7-/w0      0+   2-/w0   3-/b0 |10362748
+   9 Strelka Martin                 1k SK  Brat    22    42   154     2   8-/w0   3-/b0      0-   6-/w0  11+/w0      0+  10-/b0 |10625857
+  10 Lisy Pavol                     1p SK  DoSt    21    65    65     3      0=      0=      0=      0=  14+/b0   5+/w0   9+/w0 |12686597
+  11 Kostolansky Miroslav           2k SK  Brat    21    19   151     1   7-/w0   4-/b0      0-      0-   9-/b0      0+  14-/w0 |10349746
+  12 Smolarikova Sona               4k SK  Kosi    20    76   135     4      0-  13+/b0  15+/b0      0+  16+/w0  14-/b0      0- |16037604
+  13 Palencar Ladislav              4k SK  Pora    20    71   131     4      0-  12-/w0  16-/b0      0+      0+  15+/w0      0+ |10213654
+  14 Waczulik Juraj                 1d SK  Brat    20    41    62     2      0=      0=      0=      0=  10-/w0  12+/w0  11+/b0 |10337745
+  15 Kralik Slavomir                4k SK  Kosi    19    52   131     3      0+      0-  12-/w0  16-/w0      0+  13-/b0      0+ |10286672
+  16 Oravec Ivan                    6k SK  Brat    18    64   121     4      0-      0-  13+/w0  15+/b0  12-/b0      0+      0+ |10649859

@@ -1,0 +1,23 @@
+; TC[T980430]
+; CL[A]
+; EV[7th Slovak Championship]
+; PC[SK,Galanta]
+; DT[1998-04-30,1998-05-03]
+; KM[5.5]
+; TM[135]
+; HA[h9]
+;                     7th Slovak Championship, Galanta 1998
+;                              April 30 - May 3, 1998
+;
+;Pl     Name             Grade  Club   MM S SOS SDOS  1.  2.  3.  4.  5.  6.  7.
+   1 Gubas Xaver                    5D SK  Brat     6     6    21    21      0+      3-      4+      5+      2+      6+     11+ |10498807
+   2 Kostolansky Miroslav           2D SK  Brat     5     5    21    21      9+      7+      3+      4-      1-     10+      5+ |10349746
+   3 Hrdina Marian                  3D SK  Brat     5     5    20    20      6+      1+      2-      7+      4-     11+      8+ |10250658
+   4 Poliak Miroslav                5D SK  Gala     4     4    20    20     10+      8+      1-      2+      3+      5-      6- |10262659
+   5 Jakubec Stanislav              4D SK  Brat     4     4    16    16      7-      9+      6+      1-     10+      4+      2- |10401809
+   6 Lassak Vladimir                3D SK  Brat     4     4    14    14      3-      0+      5-     11+      7+      1-      4+ |10249657
+   7 Krusina Rudolf                 2D SK  Brat     3     3    13    13      5+      2-      8+      3-      6-      9-      0+ |10574586
+   8 Smid Miroslav                  1k SK  Brat     3     3    12    12     11+      4-      7-     10-      9+      0+      3- |10337470
+   9 Karailiev Peter_Petkov         1k SK  BBys     3     3     7     7      2-      5-     11-      0+      8-      7+     10+ |10733371
+  10 Oravec Ivan                    2D SK  Brat     2     2    10    10      4-     11+      0-      8+      5-      2-      9- |10649859
+  11 Svec Ivo                       1D SK  Brat     2     2     8     8      8-     10-      9+      6-      0+      3-      1- |10233652

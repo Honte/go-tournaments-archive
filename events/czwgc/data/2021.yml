@@ -1,0 +1,26 @@
+website: https://goweb.cz/2021/12/finale-go-barona-a-mistrovstvi-republiky-zen/
+stages:
+  - type: tournament
+    name: Championship
+    file: czw2021.txt
+    scoringColumns:
+      - wins
+      - null
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+20.5 round:6 sgf:2021/6-AdrianaTomsu-DitaVasova.sgf
+      - 1-3 1:B+26.5 round:1 sgf:2021/1-AdrianaTomsu-AnezkaBukovska.sgf
+      - 1-4 1:B+R round:2 sgf:2021/2-AdrianaTomsu-TerezaKotowski.sgf
+      - 2-1 1:W+8.5 round:3 sgf:2021/3-DitaVasova-AdrianaTomsu.sgf
+      - 2-3 2:B+2.5 round:5 sgf:2021/5-DitaVasova-AnezkaBukovska.sgf
+      - 2-4 2:B+R round:4 sgf:2021/4-DitaVasova-TerezaKotowski.sgf
+      - 3-1 1:W+1.5 round:4 sgf:2021/4-AnezkaBukovska-AdrianaTomsu.sgf
+      - 3-2 3:B+8.5 round:2 sgf:2021/2-AnezkaBukovska-DitaVasova.sgf
+      - 3-4 4:W+R round:6 sgf:2021/6-AnezkaBukovska-TerezaKotowski.sgf
+      - 4-1 1:W+7.5 round:5 sgf:2021/5-TerezaKotowski-AdrianaTomsu.sgf
+      - 4-2 2:W+1.5 round:1 sgf:2021/1-TerezaKotowski-DitaVasova.sgf
+      - 4-3 3:W+R round:3 sgf:2021/3-TerezaKotowski-AnezkaBukovska.sgf

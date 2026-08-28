@@ -1,0 +1,15 @@
+; TC[T231216A]
+; CL[A]
+; EV[Czech Women Championship 2023]
+; PC[CZ, Praha]
+; DT[2023-12-16,2023-12-17]
+; HA[h9]
+; KM[6.5]
+; TM[82.5]
+; CM[ (submitted by Lukan)]
+;.
+1 Tomsu Adriana     2d CZ  TFMi  4    5    6  2202     4+/b   3+/w   2+/b   5+/b   0=      |16225396
+2 Vasova Dita       1d CZ  APmG  2    3    2  2064     3+/b   5+/b   1-/w   0=     4-/w    |15749921
+3 Bukovska Anezka   1k CZ  Imba  2    3    2  1939     2-/w   1-/b   0=     4+/b   5+/w    |15874947
+4 Hricova Jana      2k CZ  APmG  2    3    2  1925     1-/w   0=     5+/w   3-/w   2+/b    |10233509
+5 Dankova Lenka     4k CZ  APra  0    1    0  1709     0=     2-/w   4-/b   1-/w   3-/b    |10513063

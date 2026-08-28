@@ -1,0 +1,15 @@
+; TC[T151203A]
+; CL[A]
+; EV[Czech Ladies Championship]
+; PC[CZ, Praha]
+; DT[2015-12-03,2015-12-05]
+; HA[h9]
+; KM[6.5]
+; TM[80]
+; CM[ (submitted by cieply)]
+;.
+;
+1 Kadlecova Alzbeta   2k CZ  APra  4    4    11   3+/b   2-/b   4+/w   3+/w   2+/w   4-/b    |15425091
+2 Tomsu Adriana       2k CZ  TFMi  3    3    9    4-/b   1+/w   3+/b   4+/w   1-/b   3-/w    |16225396
+3 Samajova Kamila     3k CZ  TOst  3    3    7    1-/w   4+/b   2-/w   1-/b   4+/w   2+/b    |14913778
+4 Chladkova Tereza    1k CZ  TFMi  2    2    7    2+/w   3-/w   1-/b   2-/b   3-/b   1+/w    |15401364

@@ -1,0 +1,13 @@
+; TC[T091219A]
+; CL[A]
+; EV[Czech Female Championship]
+; PC[CZ, Praha]
+; DT[2009-12-19,2009-12-19]
+; HA[h9]
+; KM[6.5]
+; TM[80]
+; CM[ (submitted by cieply)]
+;.
+;
+1 Hricova Jana     1k CZ  APra  2    2    0        2-     2+     2+      |10233509
+2 Prokopova Anna   1k CZ  SRic  1    1    0        1+     1-     1-      |10449087

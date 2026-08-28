@@ -1,0 +1,13 @@
+; TC[T201219E]
+; CL[D]
+; EV[Czech Women Championship 2020]
+; PC[CZ, OGS]
+; DT[2020-12-19,2020-12-20]
+; HA[h9]
+; KM[6.5]
+; TM[60]
+; CM[ (submitted by Lukan)]
+;.
+1 Tomsu Adriana       1d CZ  TFMi  3   3    5     0=     3+/w   2+/b   0=     3-/b   2+/w    |16225396
+2 Kadlecova Alzbeta   1k CZ  APra  2   2    2     3+/b   0=     1-/w   3+/w   0=     1-/b    |15425091
+3 Vasova Dita         1k CZ  APmG  1   1    3     2-/w   1-/b   0=     2-/b   1+/w   0=      |15749921

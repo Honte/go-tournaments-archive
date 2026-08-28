@@ -1,0 +1,29 @@
+; TC[T020501]
+; CL[A]
+; EV[11th Slovak Championship]
+; PC[SK,Bratislava]
+; DT[2002-05-01,2002-05-05]
+; KM[5.5]
+; TM[2h15]
+; HA[h9]
+;                            Slovak Championship, Bratislava
+;                                   May 1 - 5, 2002
+;
+;Pl     Name             Grade  Club   MM S SDOS SOS  1.  2.  3.  4.  5.  6.  7.
+  1 Gubas Xaver             3d SK Brat  7 7  26  26  13+  2+  4+  8+  5+  3+  7+  |10498807
+  2 Hrdina Marian           2d SK Brat  5 5  14  25  14+  1-  5-  6+ 12+  4+ 11+  |10250658
+  3 Jadron Peter            2d SK SBel  4 4  14  27  10+ 13-  6+  5-  9+  1-  4+  |10298651
+  4 Smid Miroslav           1k SK Brat  4 4  13  29   5+ 12+  1-  7+  8+  2-  3-  |10337470
+  5 Poliak Miroslav         3d SK Brat  4 4  13  28   4- 14+  2+  3+  1-  8+  6-  |10262659
+  6 Karailiev Peter_Petkov  2d SK BBys  4 4  13  26   7- 11+  3-  2- 10+  9+  5+  |10733371
+  7 Beck Tibor              1d SK BBys  4 4   9  23   6+  8- 13+  4- 14+ 12+  1-  |10362748
+  8 Strelka Martin          1k SK Brat  3 3   9  27  11+  7+ 12+  1-  4-  5-  9-  |10625857
+  9 Kostolansky Miroslav    2d SK Brat  3 3   7  20  12- 10+ 11- 14+  3-  6-  8+  |10349746
+ 10 Oravec Ivan             1k SK Brat  3 3   7  19   3-  9- 14- 11+  6- 13+ 12+  |10649859
+ 11 Jadron Milan            3d SK Brat  3 3   6  21   8-  6-  9+ 10- 13+ 14+  2-  |10201653
+ 12 Svec Ivo                1k SK Brat  2 2   5  24   9+  4-  8- 13+  2-  7- 10-  |10233652
+ 13 Jakubec Stanislav       1d SK Brat  2 2   5  24   1-  3+  7- 12- 11- 10- 14+  |10401809
+ 14 Waczulik Juraj          1k SK Brat  1 1   3  24   2-  5- 10+  9-  7- 11- 13-  |10337745
+;
+;Svajciarsky system, rovne partie,
+;hraci cas 2x90`, byoyomi 60. na tah

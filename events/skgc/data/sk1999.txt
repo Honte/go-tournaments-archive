@@ -1,0 +1,25 @@
+; TC[T990428A]
+; CL[A]
+; EV[8th Slovak Championship]
+; PC[SK,Bratislava]
+; DT[1999-04-28,1999-05-02]
+; KM[5.5]
+; TM[150]
+; HA[h9]
+;                      8th Slovak Championship, Bratislava 1999
+;                               April 28 - May 2, 1999
+;
+;Pl     Name             Grade  Club   MM S SOS SDOS  1.  2.  3.  4.  5.  6.  7.   
+;
+; Swiss system, even games, komi 5.5, time 90+c10/10 
+   1 Poliak Miroslav                5D SK  Gala     5     5    20    29      0+      4-      3+      8+      6+      2-      7+ |10262659
+   2 Kostolansky Miroslav           2D SK  Brat     5     5    18    27     10+      3-      7+      5+      4-      1+      0+ |10349746
+   3 Jakubec Stanislav              4D SK  Brat     5     5    15    25      9+      2+      1-      4+      0-      7+     11+ |10401809
+   4 Jadron Milan                   3D SK  Brat     4     4    17    31      8+      1+      6+      3-      2+      0-      5- |10201653
+   5 Hrdina Marian                  3D SK  Brat     4     4     8    19      7-      8-      9+      2-     10+     11+      4+ |10250658
+   6 Gubas Xaver                    5D SK  Brat     4     4     7    21     11+      7+      4-      0-      1-      9+     10+ |10498807
+   7 Krusina Rudolf                 2D SK  Brat     3     3     8    27      5+      6-      2-     11+      8+      3-      1- |10574586
+   8 Karailiev Peter_Petkov         1k SK  BBys     3     3     6    20      4-      5+     11+      1-      7-     10+      9- |10733371
+   9 Smid Miroslav                  1k SK  Brat     2     2     4    23      3-      0-      5-     10-     11+      6-      8+ |10337470
+  10 Waczulik Juraj                 1k SK  Brat     1     1     2    24      2-     11-      0-      9+      5-      8-      6- |10337745
+  11 Svec Ivo                       1k SK  Brat     1     1     1    22      6-     10+      8-      7-      9-      5-      3- |10233652

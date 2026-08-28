@@ -1,0 +1,21 @@
+stages:
+  - type: tournament
+    name: Championship
+    file: sk2024.txt
+    time: fischer 70m + 30s
+    notes: For statistics best 16 Slovak players and games between them are shown. Games against other players changed to 0+ and 0-. Full table check EGD link.
+    scoringColumns:
+      - wins
+      - mms
+      - null
+      - sodos
+      - sos
+      - direct
+    breakers:
+      - mms
+      - sodos
+      - sos
+      - direct
+    columns:
+      - wins    
+    findSharedPlaces: true

@@ -1,0 +1,21 @@
+; TC[T161203H]
+; CL[A]
+; EV[Czech Ladies Championship]
+; PC[CZ, Praha]
+; DT[2016-12-03,2016-12-04]
+; HA[h9]
+; KM[6.5]
+; TM[80]
+; CM[ (submitted by cieply)]
+;.
+;
+ 1 Simunkova Martina   1k CZ  Libe  4    4    14   11 2045  10+/w   2+/b    4+/w    3+/b    5-/w     |10298904
+ 2 Bartova Jitka       3d CZ  APra  4    4    13   9  2186  5+/w    1-/w    7+/b    8+/b    6+/b     |13849748
+ 3 Tomsu Adriana       1d CZ  TFMi  4    4    13   9  2105  7+/b    6+/w    8+/w    1-/w    4+/b     |16225396
+ 4 Samajova Kamila     1d CZ  TOst  3    3    14   6  2036  9+/w    5+/w    1-/b    6+/b    3-/w     |14913778
+ 5 Chladkova Tereza    1k CZ  TFMi  3    3    13   6  1954  2-/b    4-/b    10+/w   7+/w    1+/b     |15401364
+ 6 Kadlecova Alzbeta   2k CZ  APra  2    2    14   3  1936  8+/b    3-/b    9+/w    4-/w    2-/w     |15425091
+ 7 Hricova Jana        2k CZ  APmG  2    2    12   1  1780  3-/w    10+/b   2-/w    5-/b    9+/b     |10233509
+ 8 Dankova Lenka       6k CZ  APra  2    2    11   1  1572  6-/w    9+/b    3-/b    2-/w    10+/w    |10513063
+ 9 Bukovska Anezka     4k CZ  APmG  1    1    9    0  1657  4-/b    8-/w    6-/b    10+/b   7-/w     |15874947
+10 Vasova Dita         3k CZ  APmG  0    0    12   0  1568  1-/b    7-/w    5-/b    9-/w    8-/b     |15749921

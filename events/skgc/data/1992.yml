@@ -1,0 +1,14 @@
+website: https://sago.sk/web-data/turnaje/msr9x/msr-92.htm
+stages:
+  - type: tournament
+    name: Championship
+    file: sk1992.txt
+    scoringColumns:
+      - wins        
+      - sos 
+      - sodos
+    breakers:
+      - wins
+      - sos
+      - sodos
+    findSharedPlaces: true

@@ -1,0 +1,25 @@
+; TC[T010427]
+; CL[A]
+; EV[10th Slovak Championship]
+; PC[SK,Kojsovska Hola]
+; DT[2001-04-27,2001-05-01]
+; KM[5.5]
+; TM[135]
+; HA[h9]
+;                    Slovak Championship, Kojsovska Hola 2001
+;                           April 27 - May 1, 2001
+;
+;Pl     Name             Grade  Club   MM S SOS SDOS  1.  2.  3.  4.  5.  6.  7.
+;
+; TA[2h15]
+   1 Poliak Miroslav                3d SK  Brat     7     7    26    26      3+      8+      2+      0+      4+      7+      5+ |10262659
+   2 Karailiev Peter_Petkov         1d SK  BBys     5     5    14    27      5+      4+      1-      3+      0-      9+     10+ |10733371
+   3 Hrdina Marian                  2d SK  Brat     4     4    10    28      1-      9+      5+      2-      6+      0-      8+ |10250658
+   4 Kostolansky Miroslav           2d SK  Brat     3     3     8    28     11+      2-      7+      5+      1-     10-      0- |10349746
+   5 Krusina Rudolf                 2d SK  Brat     3     3     7    26      2-     11+      3-      4-     10+      6+      1- |10574586
+   6 Smid Miroslav                  1k SK  Brat     3     3     7    18      8-     10+      9-     11+      3-      5-      7+ |10337470
+   7 Jakubec Stanislav              1d SK  Brat     3     3     6    25     10+      0-      4-      8+     11+      1-      6- |10401809
+   8 Palencar Ladislav              1k SK  Kosi     2     2     5    27      6+      1-      0-      7-      9-     11+      3- |10213654
+   9 Waczulik Juraj                 1k SK  Brat     2     2     5    24      0-      3-      6+     10-      8+      2-     11- |10337745
+  10 Beck Tibor                     1k SK  BBys     2     2     5    21      7-      6-     11-      9+      5-      4+      2- |10362748
+  11 Strelka Martin                 1k SK  Brat     2     2     4    18      4-      5-     10+      6-      7-      8-      9+ |10625857

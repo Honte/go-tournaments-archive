@@ -1,0 +1,14 @@
+; TC[T241214A]
+; CL[A]
+; EV[Czech Female Championship 2024]
+; PC[CZ, Praha]
+; DT[2024-12-14,2024-12-14]
+; HA[h9]
+; KM[6.5]
+; TM[82.5]
+; CM[ (submitted by Lukan)]
+;.
+1 Bartova Jitka     3d CZ  APra  3    3    3    2+/w   4+/b   3+/w    |13849748
+2 Vasova Dita       1d CZ  APmG  2    2    1    1-/b   3+/b   4+/w    |15749921
+3 Bukovska Anezka   1k CZ  Imba  1    1    0    4+/b   2-/w   1-/b    |15874947
+4 Hricova Jana      1k CZ  APmG  0    0    0    3-/w   1-/w   2-/b    |10233509

@@ -1,0 +1,26 @@
+; TC[T030430A]
+; CL[A]
+; EV[12th Slovak Championship]
+; PC[SK,Zlata Idka]
+; DT[2003-04-30,2003-05-04]
+; KM[5.5]
+; TM[2h15]
+; HA[h9]
+;                        Slovak Championship, Zlata Idka
+;                             April 30 - May 4, 2003
+;
+;Pl     Name            Grade  Club  MM S SDOS SOS  1.   2.   3.   4.   5.   6.   7.
+;
+;Svajciarsky system, rovne partie, komi 5.5,
+;hraci cas 2x90`, byoyomi 60. na tah
+   1 Poliak Miroslav                3D SK  Brat     5     5    21    30      5+      8-      7+      0-      2+      3+      4+ |10262659
+   2 Gubas Xaver                    3D SK  Brat     5     5    11    22      9+      7+      0-      3+      1-     10+     11+ |10498807
+   3 Jadron Peter                   2D SK  SBel     4     4    13    29      4+      0-      8+      2-      6+      1-      9+ |10298651
+   4 Smid Miroslav                  1D SK  Brat     4     4    13    26      3-      5-     11+      6+      8+      0+      1- |10337470
+   5 Strelka Martin                 1k SK  Brat     4     4    10    25      1-      4+     10+      8+      0-      9+      7- |10625857
+   6 Hrdina Marian                  2D SK  Brat     4     4     7    21      0-     11+      9+      4-      3-      7+     10+ |10250658
+   7 Karailiev Peter_Petkov         2D SK  BBys     4     4     7    21     11+      2-      1-      9+     10+      6-      5+ |10733371
+   8 Jadron Milan                   2D SK  Brat     3     3     6    24     10+      1+      3-      5-      4-     11+      0- |10201653
+   9 Jakubec Stanislav              1D SK  Brat     2     2     1    22      2-     10+      6-      7-     11+      5-      3- |10401809
+  10 Beck Tibor                     1k SK  BBys     1     1     0    22      8-      9-      5-     11+      7-      2-      6- |10362748
+  11 Oravec Ivan                    1k SK  Brat     0     0     0    23      7-      6-      4-     10-      9-      8-      2- |10649859

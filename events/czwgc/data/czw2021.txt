@@ -1,0 +1,14 @@
+; TC[T211211C]
+; CL[A]
+; EV[Czech women championship 2021]
+; PC[CZ, Prague]
+; DT[2021-12-11,2021-12-12]
+; HA[h9]
+; KM[6.5]
+; TM[75]
+; CM[ (submitted by tymak)]
+;.
+1 Tomsu Adriana     2d CZ  TFMi  6    6    12   3+/b   4+/b   2+/w   3+/w   4+/w   2+/b    |16225396
+2 Vasova Dita       1d CZ  APmG  3    3    4    4+/w   3-/w   1-/b   4+/b   3+/b   1-/w    |15749921
+3 Bukovska Anezka   2k CZ  Imba  2    2    4    1-/w   2+/b   4+/w   1-/b   2-/w   4-/b    |15874947
+4 Kotowski Tereza   1d CZ  TFMi  1    1    2    2-/b   1-/w   3-/b   2-/w   1-/b   3+/w    |15401364

@@ -1,0 +1,16 @@
+; TC[T131207K]
+; CL[A]
+; EV[Czech Female Championship]
+; PC[CZ, Praha]
+; DT[2013-12-07,2013-12-08]
+; HA[h9]
+; KM[6.5]
+; TM[80]
+; CM[ (submitted by cieply)]
+;.
+;
+1 Zaloudkova Klara   3d CZ  ADra  4    4    6        0=     4+     2+     3+     5+      |10798106
+2 Bartova Jitka      1d CZ  APra  3    3    3        3+     5+     1-     4+     0=      |13849748
+3 Chladkova Tereza   2k CZ  TFMi  2    2    1        2-     0=     5+     1-     4+      |15401364
+4 Tomsu Adriana      5k CZ  TFMi  1    1    0        5+     1-     0=     2-     3-      |16225396
+5 Dankova Lenka      7k CZ  APra  0    0    0        4-     2-     3-     0=     1-      |10513063

@@ -1,0 +1,16 @@
+stages:
+  - type: tournament
+    name: Championship
+    file: sk1997.txt
+    times: 90min + 10moves/5minutes
+    notes: For statistics only Slovak players and games between them are shown. Games against other players changed to 0+ and 0-. Full table check EGD link.
+    scoringColumns:
+      - wins
+      - null      
+      - sodos
+      - sos    
+    breakers:
+      - wins
+      - sodos
+      - sos  
+    findSharedPlaces: true

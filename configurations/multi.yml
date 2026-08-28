@@ -27,6 +27,10 @@ events:
     prefix: csgc
   - id: czgc
     prefix: czgc
+  - id: czwgc
+    prefix: czwgc
+  - id: skgc
+    prefix: skgc
   - id: iegc
     prefix: iegc
   - id: hrgc

@@ -1,0 +1,16 @@
+website: http://so-imba.com/egoban/posts/praha-19-2012-mistrovstvi-republiky-zen.html
+stages:
+  - type: tournament
+    name: Championship
+    file: czw2009.txt
+    scoringColumns:
+      - wins
+      - null
+      - sodos
+    breakers:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:2 sgf:2009/2-JanaHricova-AnnaProkopova.sgf
+      - 2-1 1:W+2.5 round:3 sgf:2009/3-AnnaProkopova-JanaHricova.sgf
+      - 2-1 2:B+23.5 round:1 sgf:2009/1-AnnaProkopova-JanaHricova.sgf

@@ -1,0 +1,28 @@
+; TC[T110511A]
+; CL[A]
+; EV[20th Slovak Championship]
+; PC[SK, Betliar]
+; DT[2011-05-11,2011-05-15]
+; HA[h9]
+; KM[6.5]
+; TM[135]
+; CM[ (submitted by vivi)]
+;.
+;
+;Pl Meno              Trieda  Klub   MM  SDOS SOS  B  1.    2.    3.    4.    5.    6.    7.
+   1 Lisy Pavol                     5d SK  DoSt    26   143   166     6   10+/w    6-/b    8+/b    3+/w    2+/w    4+/w    7+/b |12686597
+   2 Kral Maros                     3d SK  Kosi    26   140   166     6    3+/w   10+/b    4+/w    7+/b    1-/b    5+/w    8+/b |12537041
+   3 Waczulik Juraj                 1k SK  Brat    25   115   167     5    2-/b   11+/w    9+/w    1-/b    7+/b    6+/w    4+/w |10337745
+   4 Gubas Xaver                    4d SK  Brat    24    91   168     4    8+/b    7+/w    2-/b    6+/w   10+/w    1-/b    3-/b |10498807
+   5 Smolarik Peter                 2k SK  Kosi    23   108   155     5   13+/b   12-/w   14+/b    9+/w    6+/b    2-/b   10+/w |12886984
+   6 Poliak Miroslav                2d SK  Brat    23    69   164     3    9+/b    1+/w    7-/w    4-/b    5-/w    3-/b   13+/w |10262659
+   7 Karailiev Peter_Petkov         1d SK  BBys    23    67   168     3   11+/w    4-/b    6+/b    2-/w    3-/w   10+/b    1-/w |10733371
+   8 Jadron Milan                   1k SK  Brat    23    66   164     3    4-/w    9+/b    1-/w   10-/b   11+/b   12+/b    2-/w |10201653
+   9 Strelka Martin                 1k SK  Brat    23    62   156     3    6-/w    8-/w    3-/b    5-/b   13+/b   11+/w   14+/w |10625857
+  10 Kostolansky Miroslav           1k SK  Brat    22    45   167     2    1-/b    2-/w   11+/b    8+/w    4-/b    7-/w    5-/b |10349746
+  11 Jakubec Stanislav              1k SK  Brat    22    40   156     2    7-/b    3-/b   10-/w   12+/w    8-/w    9-/b      0+ |10401809
+  12 Oravec Ivan                    3k SK  Brat    21    82   147     4   14+/w    5+/b   13-/w   11-/b      0+    8-/w   15+/w |10649859
+  13 Svec Ivo                       3k SK  Brat    20    60   149     3    5-/w      0+   12+/b   14+/b    9-/w   15-/w    6-/b |10233652
+  14 Fulle Marek                    3k SK  Brat    20    57   144     3   12-/b   15+/b    5-/w   13-/w      0+      0+    9-/b |13537810
+  15 Virag Ladislav                 3k SK  Kosi    20    53   132     3      0-   14-/w   16-/w      0+      0+   13+/b   12-/b |12762750
+  16 Waczulik Oliver                5k SK  Brat    19    60   110     4      0-      0-   15+/b      0-      0+      0+      0+ |10674356

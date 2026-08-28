@@ -1,0 +1,28 @@
+; TC[T130515A]
+; CL[A]
+; EV[22nd Slovak Championship]
+; PC[SK, Bojnice]
+; DT[2013-05-15,2013-05-19]
+; HA[h9]
+; KM[6.5]
+; TM[135]
+; CM[ (submitted by vivi)]
+;.
+;
+;Pl Meno             Trieda  Klub   MM  SDOS SOS  B  1.  2.  3.  4.  5.  6.  7.
+   1 Lisy Pavol                     6d SK  DoSt    27   165   165     7     11+      4+      2+      5+      3+      7+     10+ |12686597
+   2 Gubas Xaver                    3d SK  Brat    25   115   167     5     10+     11+      1-      4+      7+      5+      3- |10498807
+   3 Jadron Peter                   3d SK  SBel    25   114   165     5      6+      5-     10+      9+      1-      8+      2+ |10298651
+   4 Kral Maros                     3d SK  Kosi    25   113   165     5      9+      1-      5+      2-     10+      6+      8+ |12537041
+   5 Poliak Miroslav                1d SK  Brat    24    92   169     4      8+      3+      4-      1-      6+      2-      9+ |10262659
+   6 Jadron Milan                   1k SK  Brat    23    65   161     3      3-      9-     15+      8+      5-      4-      7+ |10201653
+   7 Sabo Stefan                    2k SK  Brat    22    86   161     4     15+     14+      9+     10+      2-      1-      6- |15201362
+   8 Waczulik Juraj                 2k SK  Brat    22    44   163     2      5-     10-     11+      6-      9+      3-      4- |10337745
+   9 Smolarik Peter                 2k SK  Kosi    22    44   162     2      4-      6+      7-      3-      8-     13+      5- |12886984
+  10 Smid Miroslav                  1k SK  Brat    22    43   167     2      2-      8+      3-      7-      4-     15+      1- |10337470
+  11 Kostolansky Miroslav           1k SK  Brat    22    41   157     2      1-      2-      8-     13-     12-     16+     14+ |10349746
+  12 Virag Ladislav                 4k SK  Kosi    21   100   139     5      0-      0+     16+      0+     11+     14-     15+ |12762750
+  13 Svec Ivo                       3k SK  Brat    21    79   143     4     14-     16+      0+     11+     15-      9-      0+ |10233652
+  14 Fulle Marek                    3k SK  Brat    21    78   143     4     13+      7-      0+     15-      0+     12+     11- |13537810
+  15 Strelka Martin                 2k SK  Brat    21    60   148     3      7-      0+      6-     14+     13+     10-     12- |10625857
+  16 Berka Jakub                    4k SK  Brat    20    73   137     4      0+     13-     12-      0+      0+     11-      0+ |16013602

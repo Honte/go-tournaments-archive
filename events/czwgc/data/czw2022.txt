@@ -1,0 +1,13 @@
+; TC[T221217D]
+; CL[A]
+; EV[Czech Women Championship 2022]
+; PC[CZ, Praha]
+; DT[2022-12-17,2022-12-18]
+; HA[h9]
+; KM[6.5]
+; TM[82.5]
+; CM[ (submitted by Lukan)]
+;.
+1 Bartova Jitka     3d CZ  APra     2    2    1        0=     3+/b   2+/b    |13849748
+2 Tomsu Adriana     2d CZ  TFMi     1    1    0        3+/w   0=     1-/w    |16225396
+3 Kotowski Tereza   1d CZ  TFMi     0    0    0        2-/b   1-/w   0=      |15401364

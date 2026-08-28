@@ -1,0 +1,32 @@
+website: http://so-imba.com/egoban/posts/praha-4-5-12-mr-zen.html
+stages:
+  - type: tournament
+    name: Championship
+    file: czw2010.txt
+    notes: 2 preliminary groups round robin, best 2 from each group to playoff to determine medalists
+    scoringColumns:
+      - wins
+      - null
+      - place
+    breakers:
+      - place
+    columns:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 1-3 1:B+5.5 round:3 sgf:2010/3-KlaraZaloudkova-JitkaBartova.sgf
+      - 2-1 1:W+R round:5 sgf:2010/5-AnnaProkopova-KlaraZaloudkova.sgf
+      - 2-3 2:B+14.5 round:4 sgf:2010/4-AnnaProkopova-JitkaBartova.sgf
+      - 2-4 2:B+R round:1 sgf:2010/1-AnnaProkopova-JanaHricova.sgf
+      - 2-6 2:B+R round:3 sgf:2010/3-AnnaProkopova-AlzbetaKadlecova.sgf
+      - 3-4 3:B+5.5 round:5 sgf:2010/5-JitkaBartova-JanaHricova.sgf
+      - 3-5 3:B+R round:2 sgf:2010/2-JitkaBartova-KaterinaBabicka.sgf
+      - 3-8 3:B+R round:1 sgf:2010/1-JitkaBartova-TerezaChladkova.sgf
+      - 4-1 1:W+R round:4 sgf:2010/4-JanaHricova-KlaraZaloudkova.sgf
+      - 4-7 4:B+R round:3 sgf:2010/3-JanaHricova-MartinaSimunkova.sgf
+      - 5-1 5:B+19.5 round:1 sgf:2010/1-KaterinaBabicka-KlaraZaloudkova.sgf
+      - 5-8 5:B+11.5 round:3 sgf:2010/3-KaterinaBabicka-TerezaChladkova.sgf
+      - 6-4 4:W+R round:2 sgf:2010/2-AlzbetaKadlecova-JanaHricova.sgf
+      - 7-2 2:W+1.5 round:2 sgf:2010/2-MartinaSimunkova-AnnaProkopova.sgf
+      - 7-6 6:W+16.5 round:1 sgf:2010/1-MartinaSimunkova-AlzbetaKadlecova.sgf
+      - 8-1 1:W+R round:2 sgf:2010/2-TerezaChladkova-KlaraZaloudkova.sgf

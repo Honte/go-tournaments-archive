@@ -1,0 +1,23 @@
+website: http://so-imba.com/egoban/posts/praha-7-8-12-mr-zen-2013.html
+stages:
+  - type: tournament
+    name: Championship
+    file: czw2013.txt
+    scoringColumns:
+      - wins
+      - null
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true
+    games:
+      - 1-3 1:B+R round:4 sgf:2013/4-KlaraZaloudkova-TerezaChladkova.sgf
+      - 1-4 1:B+R round:2 sgf:2013/2-KlaraZaloudkova-AdrianaTomsu.sgf
+      - 2-1 1:W+R round:3 sgf:2013/3-JitkaBartova-KlaraZaloudkova.sgf
+      - 2-3 2:B+R round:1 sgf:2013/1-JitkaBartova-TerezaChladkova.sgf
+      - 3-4 3:B+5.5 round:5 sgf:2013/5-TerezaChladkova-AdrianaTomsu.sgf
+      - 3-5 3:B+11.5 round:3 sgf:2013/3-TerezaChladkova-LenkaDankova.sgf
+      - 4-2 2:W+30.5 round:4 sgf:2013/4-AdrianaTomsu-JitkaBartova.sgf
+      - 5-1 1:W+R round:5 sgf:2013/5-LenkaDankova-KlaraZaloudkova.sgf
+      - 5-2 2:W+R round:2 sgf:2013/2-LenkaDankova-JitkaBartova.sgf

@@ -1,0 +1,23 @@
+; TC[T970710]
+; CL[A]
+; EV[6th Slovak Championship]
+; PC[SK,Kosice]
+; DT[1997-07-10,1997-07-13]
+; KM[5.5]
+; TM[120]
+; HA[h9]
+;                      6th Slovak Championship, Kosice 1997
+;                               July 10 - 13, 1997
+;
+;Pl     Name             Grade  Club   MM S SOS SDOS  1.  2.  3.  4.  5.  6.  7.
+;
+; system: swiss,  handicap: h9,  time: 90+c10/5
+   1 Poliak Miroslav                5D SK  Gala     7     7    28    26      2+      7+      3+      0+      4+      5+      6+ |10262659
+   2 Lassak Vladimir                3D SK  Brat     5     5    17    23      1-      9+      8+      4-      6+      0+      5+ |10249657
+   3 Kostolansky Miroslav           2D SK  Brat     5     5    17    22      6+      0-      1-      7+      8+      4+      9+ |10349746
+   4 Smid Miroslav                  1k SK  Brat     4     4    18    28      5+      6+      0-      2+      1-      3-      8+ |10337470
+   5 Krusina Rudolf                 2D SK  Brat     3     3    12    24      4-      8-      7+      9+      0+      1-      2- |10574586
+   6 Hrdina Marian                  3D SK  Brat     3     3    11    24      3-      4-      0+      8+      2-      7+      1- |10250658
+   7 Svec Ivo                       1D SK  Brat     2     2    10    24      8+      1-      5-      3-      9+      6-      0- |10233652
+   8 Palencar Ladislav              1k SK  Kosi     1     1     6    23      7-      5+      2-      6-      3-      9-      4- |10213654
+   9 Sabol Slavomir                 1D SK  Kosi     1     1     2    16      0-      2-      0-      5-      7-      8+      3- |10450187

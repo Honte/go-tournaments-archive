@@ -1,0 +1,20 @@
+website: https://goweb.cz/2024/12/mistrovstvi-republiky-zen-2024/
+stages:
+  - type: tournament
+    name: Championship
+    file: czw2024.txt
+    scoringColumns:
+      - wins
+      - null
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true
+    games:
+      - 1-4 1:B+R round:2 sgf:2024/2-JitkaBartova-JanaHricova.sgf ogs:https://online-go.com/review/1381902
+      - 2-1 1:W+R round:1 sgf:2024/1-DitaVasova-JitkaBartova.sgf ogs:https://online-go.com/review/1381804
+      - 2-3 3:W+R round:2 sgf:2024/2-DitaVasova-AnezkaBukovska.sgf ogs:https://online-go.com/review/1381903
+      - 3-1 1:W+R round:3 sgf:2024/3-AnezkaBukovska-JitkaBartova.sgf ogs:https://online-go.com/review/1381971
+      - 3-4 3:B+R round:1 sgf:2024/1-AnezkaBukovska-JanaHricova.sgf ogs:https://online-go.com/review/1381806
+      - 4-2 2:W+R round:3 sgf:2024/3-JanaHricova-DitaVasova.sgf ogs:https://online-go.com/review/1381972

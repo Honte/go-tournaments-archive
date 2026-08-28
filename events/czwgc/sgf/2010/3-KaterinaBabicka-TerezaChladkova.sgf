@@ -1,0 +1,70 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]OT[3x30 byo-yomi]AP[CGoban:3]SZ[19]GM[1]GN[Czech Women Championship 2010]
+RO[3]DT[2010-12-04]PC[The KGS Go Server at http\://www.gokgs.com/]PB[Katerina Babicka (Lolian)]
+BR[4k]PW[Tereza Chladkova (Eileeen)]WR[11k]KM[6.5]TM[3600]RE[B+11.5]MULTIGOGM[1]
+;B[qd];W[dp];B[pq];W[dc]C[eurogotv4 [-\]\: tournament video\: http\://eurogotv.com/index.php?menu=Live&channel=EuroGoTV-Czech
+]
+;B[de];W[fd];B[cc];W[cb];B[cd];W[eb]C[eurogotv4 [-\]\: results\: https\://spreadsheets.google.com/ccc?key=0AiqhGiuYvxiHdEVxZzRONG82YTA2dnZ1OHlEWDctbmc&hl=cs&pli=1#gid=0
+]
+;B[ci];W[od];B[oc];W[nc];B[pc];W[md];B[qf];W[jd];B[qo];W[jq]C[LastPoet [-\]\: seems ok so far for an 11kyu.. guess we will see in the fights.. or outdated rank?
+]
+;B[cn];W[fp];B[bp];W[cq];B[dl]C[Laman [1d\]\: strong 11k against strong 4k
+losos\: don't like top w side
+]
+;W[qj];B[ql];W[oj];B[lq];W[jo];B[lo];W[pe];B[qe];W[og];B[ff];W[ge];B[gf];W[hf];B[hg]
+;W[if]C[losos\: this game's gonna be fuseki and yose only ^^;
+Laman [1d\]\: they go easy on each other
+]
+;B[ig];W[jg];B[ii]C[Himura [1d\]\: goo kate!
+];W[jh];B[hj];W[kr];B[lr];W[ol];B[pm]
+;W[om];B[on];W[nn];B[no];W[mn]C[dhfg\: l10 
+];B[oo];W[fl];B[fk];W[el];B[ek]C[Laman [1d\]\: i feel uneasy in games like this - if you end up with the smaller half of the pie, it is hard to turn it around
+losos\: white needs to tenuki to play l10 \:-/
+pel [3k?\]\: both need to
+certaintyy [7k?\]\: I think so about the tenuki for both of them
+pel [3k?\]\: but this was big to
+certaintyy [7k?\]\: yeah
+]
+;W[en];B[kj];W[li];B[lj];W[mi];B[bq];W[br];B[cp];W[dq]C[losos\: w is behind
+EuroGoTV1 [-\]\: w is far behind
+]
+;B[ob];W[nb];B[na];W[ma];B[oa];W[mb];B[gl];W[ls];B[ms];W[ks];B[mr];W[bb];B[bc];W[rk]
+C[cheater [7d\]\: not far but is
+cheater [7d\]\: 15pts
+];B[rl]C[leachy [4k\]\: r12, g6 seem biggest for b
+]
+;W[sl];B[sm];W[sk];B[rm];W[qh];B[kq];W[jr];B[gn];W[hp]C[leachy [4k\]\: i don't think s7 was biggest in other words
+]
+;B[ar];W[bs];B[dm];W[fn];B[ki]C[leachy [4k\]\: how can one semi-reliably calculate the value of moves in oyose here...is there a known technique or is it just judgement using experience
+leachy [4k\]\: ?
+]
+;W[kh];B[qk];W[ri];B[pf];W[of];B[jm];W[in];B[hm];W[rg];B[rf]C[pojki [4d\]\: the most common way is to count the points when you play there first and when your opponennt plays there first, then the difference is the value
+]
+;W[im];B[il];W[mo];B[mp];W[ee];B[ef];W[dd];B[ce];W[kl];B[jl];W[ml];B[lm];W[ll];B[fe]
+;W[ed];B[mj]C[leachy [4k\]\: but then there is the follow-ups and possible ignoring to tenuki etc. does it get any more sophisticated than that?
+]
+;W[nj];B[go];W[gp];B[pg];W[ph];B[pd];W[oe];B[pk]C[pojki [4d\]\: it is usualy easy to count with the best follow up for both sides. this method works quite good for evaluating gote moves. when evaluating sente (like when you play some move your opponent would have in sente), there is always a problem with the rest of the board as you must estimate how much sente is worth
+]
+;W[ih];B[hh]C[leachy [4k\]\: thanks very much for your answer there. play at this stage always is a bit of a mystery to me and yet it seems to me that some complex mathematical algorithm should give a very good idea
+]
+;W[ac];B[ad];W[ab]C[pojki [4d\]\: yep, but in 30 sec byoyomi all you have is estimation \:) it is generally good to find pairs of moves that have exactly the same value and are gote and then not think about them at all - when your opponent plays one of such moves, you automatically play the another one. decision making is a bit easier then
+Koffing [4k\]\: wonder how the game got to be so close
+Pestmann [4k?\]\: 11k magic
+]
+;B[df];W[kk];B[jk];W[ln];B[km];W[ko];B[lp];W[sf];B[se];W[sg];B[pj];W[pi];B[mm];W[nm]
+;B[do];W[eo];B[nk];W[nl];B[ho];W[io];B[ok];W[kn];B[dn];W[kp]C[Kaizoku3 [1d\]\: O11
+]
+;B[ji]C[losos\: it's still like 1o pts
+];W[lh];B[fo];W[fm];B[gm];W[ep];B[aq];W[cr]
+;B[pl];W[as];B[mk]C[eurogotv4 [-\]\: T16 \:)
+];W[jn]C[Kaizoku3 [1d\]\: R13
+];B[em]
+C[Laman [1d\]\: b R13
+];W[hn];B[lk];W[qg];B[rd]C[SqueezeIt [3d\]\: hehe \:D
+EuroGoTV2 [-\]\: didnt work...
+eurogotv4 [-\]\: come on Lukan \:P
+Laman [1d\]\: b+11.5?
+eurogotv4 [-\]\: B+11,5
+cheater [7d\]\: it worked
+eurogotv4 [-\]\: jop, seki
+eurogotv4 [-\]\: ok, thanks. see you tomorrow
+])
