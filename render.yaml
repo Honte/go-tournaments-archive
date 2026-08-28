@@ -1,30 +1,22 @@
 services:
   - type: web
-    name: go-archive-pgc
-    runtime: static
-    branch: main
-    buildCommand: npm ci && npm run build
-    staticPublishPath: ./out
-    previews:
-      generation: manual
-    autoDeployTrigger: checksPass
-    envVars:
-      - key: EVENT
-        value: pgc
-      - key: NODE_VERSION
-        value: '24'
-
-  - type: web
     name: go-archive-wagc
     runtime: static
     branch: main
     buildCommand: npm ci && npm run build
+    buildFilter:
+      paths:
+        - configurations/wagc.yml
+        - events/wagc/**
+        - src/**
     staticPublishPath: ./out
     previews:
       generation: manual
     autoDeployTrigger: checksPass
+    domains:
+      - wagc.go.art.pl
     envVars:
-      - key: EVENT
+      - key: CONFIG
         value: wagc
       - key: NODE_VERSION
         value: '24'
@@ -34,72 +26,19 @@ services:
     runtime: static
     branch: main
     buildCommand: npm ci && npm run build
+    buildFilter:
+      paths:
+        - configurations/pwgc.yml
+        - events/pwgc/**
+        - src/**
     staticPublishPath: ./out
     previews:
       generation: manual
     autoDeployTrigger: checksPass
+    domains:
+      - mpk.go.art.pl
     envVars:
-      - key: EVENT
+      - key: CONFIG
         value: pwgc
-      - key: NODE_VERSION
-        value: '24'
-
-  - type: web
-    name: go-archive-pagc
-    runtime: static
-    branch: main
-    buildCommand: npm ci && npm run build
-    staticPublishPath: ./out
-    previews:
-      generation: manual
-    autoDeployTrigger: checksPass
-    envVars:
-      - key: EVENT
-        value: pagc
-      - key: NODE_VERSION
-        value: '24'
-
-  - type: web
-    name: go-archive-pygc
-    runtime: static
-    branch: main
-    buildCommand: npm ci && npm run build
-    staticPublishPath: ./out
-    previews:
-      generation: manual
-    autoDeployTrigger: checksPass
-    envVars:
-      - key: EVENT
-        value: pygc
-      - key: NODE_VERSION
-        value: '24'
-
-  - type: web
-    name: go-archive-kpmc
-    runtime: static
-    branch: main
-    buildCommand: npm ci && npm run build
-    staticPublishPath: ./out
-    previews:
-      generation: manual
-    autoDeployTrigger: checksPass
-    envVars:
-      - key: EVENT
-        value: kpmc
-      - key: NODE_VERSION
-        value: '24'
-
-  - type: web
-    name: go-archive-hrgc
-    runtime: static
-    branch: main
-    buildCommand: npm ci && npm run build
-    staticPublishPath: ./out
-    previews:
-      generation: manual
-    autoDeployTrigger: checksPass
-    envVars:
-      - key: EVENT
-        value: hrgc
       - key: NODE_VERSION
         value: '24'
