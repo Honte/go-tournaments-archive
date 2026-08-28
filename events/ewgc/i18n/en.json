@@ -1,17 +1,17 @@
 {
   "site": {
-    "name": "European Women Go Championships Archive",
+    "name": "European Women's Go Championships Archive",
     "acronym": "EWGC",
     "description": "Archive of all European Women Championships tournaments",
     "yearDescription": "Results of EWGC %{0}",
-    "allTimeStatsDescription": "All-time statistics of all European Women Go Championships participants",
-    "playerStatsDescription": "Participation statistics of %{0} in all European Women Go Championships events"
+    "allTimeStatsDescription": "All-time statistics of all European Women's Go Championships participants",
+    "playerStatsDescription": "Participation statistics of %{0} in all European Women's Go Championships events"
   },
   "details": {
     "goToWebsite": "Go to EWGC %{0} website"
   },
   "winners": {
-    "title": "Medalists of European Women Go Championships",
+    "title": "Medalists of European Women's Go Championships",
     "first": "European Women Champion"
   }
 }
