@@ -9,6 +9,7 @@ services:
         - configurations/wagc.yml
         - events/wagc/**
         - src/**
+        - tools/assets/**
     staticPublishPath: ./out
     previews:
       generation: manual
@@ -31,6 +32,7 @@ services:
         - configurations/pwgc.yml
         - events/pwgc/**
         - src/**
+        - tools/assets/**
     staticPublishPath: ./out
     previews:
       generation: manual

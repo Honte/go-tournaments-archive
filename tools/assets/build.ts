@@ -8,6 +8,7 @@ import type { BuildSgfRequest } from '@tools/assets/sgf';
 import { buildSgfAssetsInWorkers, buildSgfLists } from '@tools/assets/sgfs';
 import { buildZips } from '@tools/assets/zips';
 import { loadData } from '@/data/load';
+import { collectOtherEvents } from '@/data/sitemap';
 
 const PUBLIC_SGF_DIR = './public/sgf';
 const PUBLIC_DATA_DIR = './public/data';
@@ -37,7 +38,7 @@ export async function buildAssets(configuration: ArchiveConfiguration) {
         data,
         allTranslations,
         outputDir: dataOutputDir,
-        otherEvents: allEvents.filter((other) => other.id !== event.id),
+        otherEvents: collectOtherEvents(allEvents, event.id, configuration.crossLinks),
       });
 
       for (const tournament of data.tournaments) {

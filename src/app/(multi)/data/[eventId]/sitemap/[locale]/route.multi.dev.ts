@@ -1,5 +1,6 @@
 import { loadConfiguredEvents } from '@/events';
 import { loadAllOptions } from '@/libs/next';
+import { collectOtherEvents } from '@/data/sitemap';
 import { loadConfiguration } from '@/configuration';
 import { getSitemapRouteOptions, serveSitemap } from '@/routes/serveSitemap';
 
@@ -18,11 +19,7 @@ export async function GET(_: Request, { params }: RouteProps) {
   return serveSitemap(
     events.find((event) => event.prefix === eventId),
     locale,
-    configuration.crossLinks
-      ? events.filter(
-          (event) => event.prefix !== eventId && (configuration.crossLinks === 'internal' ? !event.external : true)
-        )
-      : undefined
+    collectOtherEvents(events, eventId, configuration.crossLinks)
   );
 }
 

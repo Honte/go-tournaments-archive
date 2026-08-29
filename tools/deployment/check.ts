@@ -40,5 +40,5 @@ function shouldDeploy(
 function getDeploymentDependencies(config: string, configuration: ArchiveConfiguration): string[] {
   const eventDirectories = getEventConfigurations(configuration).map((event) => `events/${event.id}/`);
 
-  return ['src/', `configurations/${config}.yml`, ...new Set(eventDirectories)];
+  return ['src/', `configurations/${config}.yml`, 'tools/assets/', ...new Set(eventDirectories)];
 }
