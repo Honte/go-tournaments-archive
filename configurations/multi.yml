@@ -41,6 +41,7 @@ events:
     prefix: nlkd
   - id: wgl
     prefix: wgl
+crossLinks: true
 config:
   generateSvgs: false
   generatePngs: false
