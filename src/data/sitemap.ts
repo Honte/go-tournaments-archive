@@ -1,5 +1,5 @@
 import type { TournamentItem } from '@/schema/data';
-import type { EventContext, EventLinkPlace } from '@/schema/event';
+import type { ArchiveConfiguration, EventContext, EventLinkPlace } from '@/schema/event';
 import type { Locale, Translations } from '@/i18n/consts';
 import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
@@ -236,4 +236,14 @@ async function collectOtherEventLinks(events: EventContext[], locale: Locale) {
       };
     })
   );
+}
+
+export function collectOtherEvents(
+  events: EventContext[],
+  currentEventId: string,
+  crossLinks?: ArchiveConfiguration['crossLinks']
+) {
+  return crossLinks
+    ? events.filter((event) => event.prefix !== currentEventId && (crossLinks === 'internal' ? !event.external : true))
+    : [];
 }
