@@ -8,6 +8,7 @@ export default async function getConfig() {
   const basePath = normalizeBasePath(configuration.basePath);
   const totalEvents = eventConfigurations.length;
   const pageExtensions = ['tsx', 'ts'];
+  const version = process.env.VERSION || Date.now().toString(36);
 
   if (totalEvents === 1) {
     pageExtensions.push('single.tsx', 'single.ts');
@@ -28,8 +29,9 @@ export default async function getConfig() {
   return {
     output: configuration.dynamic ? 'standalone' : 'export',
     basePath,
+    deploymentId: version,
     env: {
-      VERSION: process.env.VERSION || Date.now().toString(36),
+      VERSION: version,
       BASE_PATH: basePath,
       ...(configuration.dynamic
         ? {
