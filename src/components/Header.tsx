@@ -38,7 +38,7 @@ export function Header({ event, translations }: TopBarProps) {
             {t('navigation.archiveLabel', t('site.acronym'))}
           </span>
         </Link>
-        <div className="ml-auto flex shrink-0 items-center gap-3">
+        <div className="ml-auto flex shrink-0 items-center gap-2">
           <LocaleNavigation
             strategy="param"
             locale={locale}
