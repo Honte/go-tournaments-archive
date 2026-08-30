@@ -40,7 +40,7 @@ export function GameViewerModal({ event, sgfPath, translations, onClose }: GameV
 
   return (
     <>
-      <Overlay visible={true} className="z-50" />
+      <Overlay visible={true} className="z-50 backdrop-blur-sm" />
       <div className="fixed inset-0 z-60 flex items-center justify-center" role="presentation">
         <section
           role="dialog"
