@@ -9,9 +9,11 @@ export function formatDate(date: Date | string, locale: string) {
 }
 
 export function formatRange(start: Date | string, end: Date | string, locale: string) {
-  return new Date(start).getTime() === new Date(end).getTime()
-    ? formatDate(start, locale)
-    : `${formatDate(start, locale)} - ${formatDate(end, locale)}`;
+  return new Intl.DateTimeFormat(locale, {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  }).formatRange(new Date(start), new Date(end));
 }
 
 export function parseDates(date?: string | string[]): TournamentDateSpan[] {
