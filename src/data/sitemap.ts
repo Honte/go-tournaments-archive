@@ -1,6 +1,7 @@
 import type { TournamentItem } from '@/schema/data';
 import type { ArchiveConfiguration, EventContext, EventLinkPlace } from '@/schema/event';
 import type { Locale, Translations } from '@/i18n/consts';
+import { isEventLocale } from '@/i18n/locales';
 import { loadTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
 import { getString } from '@/i18n/utils';
@@ -225,12 +226,13 @@ function collectLinks(event: EventContext, locale: Locale) {
 async function collectOtherEventLinks(events: EventContext[], locale: Locale) {
   return Promise.all(
     events.map(async (event) => {
-      const translations = await loadTranslations(event, locale);
+      const eventLocale = isEventLocale(event, locale) ? locale : event.locales[0];
+      const translations = await loadTranslations(event, eventLocale);
       const t = getTranslator(translations);
 
       return {
         key: `event-${event.id}`,
-        href: homeUrl(event, locale),
+        href: homeUrl(event, eventLocale),
         label: t('site.acronym'),
         description: t('site.name'),
       };

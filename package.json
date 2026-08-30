@@ -36,6 +36,7 @@
     "@tanstack/react-query": "5.102.8",
     "@tanstack/react-table": "9.2.4",
     "@tanstack/react-virtual": "3.14.10",
+    "@wrksz/themes": "1.2.0",
     "clsx": "2.1.1",
     "fast-glob": "3.3.3",
     "fflate": "0.8.3",

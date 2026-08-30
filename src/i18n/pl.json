@@ -32,6 +32,13 @@
     "openMenu": "Otwórz menu",
     "closeMenu": "Zamknij menu",
     "archiveLabel": "Archiwum %{0}",
+    "locale": "Język",
+    "theme": {
+      "label": "Motyw kolorystyczny",
+      "auto": "Użyj motywu systemowego",
+      "light": "Użyj jasnego motywu",
+      "dark": "Użyj ciemnego motywu"
+    },
     "categories": "Kategorie",
     "tournaments": "Turnieje",
     "otherEvents": "Inne wydarzenia",

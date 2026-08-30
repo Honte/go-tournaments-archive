@@ -47,9 +47,9 @@ const filterOption = createFilter<FacetOption>({
 const styles: StylesConfig<FacetOption, boolean> = {
   control: (base) => ({
     ...base,
-    backgroundColor: 'white',
+    backgroundColor: 'var(--color-archive-surface)',
     '&:hover': {
-      borderColor: 'var(--color-event-hover)',
+      borderColor: 'var(--color-archive-accent-hover)',
     },
   }),
   menu: (base) => ({
@@ -70,14 +70,14 @@ const styles: StylesConfig<FacetOption, boolean> = {
   }),
   multiValue: (base) => ({
     ...base,
-    backgroundColor: 'var(--color-event-bg)',
+    backgroundColor: 'var(--color-archive-surface-muted)',
   }),
   multiValueRemove: (base) => ({
     ...base,
     cursor: 'pointer',
     '&:hover': {
-      backgroundColor: 'var(--color-event-gray)',
-      color: 'white',
+      backgroundColor: 'var(--color-archive-control-hover)',
+      color: 'var(--color-archive-text)',
     },
   }),
 };
@@ -87,21 +87,21 @@ const theme: ThemeConfig = (base) => ({
   borderRadius: 4,
   colors: {
     ...base.colors,
-    primary: 'var(--color-event-primary)',
-    primary75: 'var(--color-event-hover)',
-    primary50: 'var(--color-event-soft)',
-    primary25: 'var(--color-event-bg)',
-    neutral0: '#ffffff',
-    neutral5: 'var(--color-event-light)',
-    neutral10: 'var(--color-event-bg)',
-    neutral20: 'var(--color-event-soft)',
-    neutral30: 'var(--color-event-gray)',
-    neutral40: 'var(--color-event-gray)',
-    neutral50: 'var(--color-event-gray)',
-    neutral60: 'var(--color-event-dark)',
-    neutral70: 'var(--color-event-dark)',
-    neutral80: 'var(--color-event-dark)',
-    neutral90: 'var(--color-event-dark)',
+    primary: 'var(--color-archive-accent)',
+    primary75: 'var(--color-archive-accent-hover)',
+    primary50: 'var(--color-archive-accent-soft)',
+    primary25: 'var(--color-archive-surface-muted)',
+    neutral0: 'var(--color-archive-surface)',
+    neutral5: 'var(--color-archive-page)',
+    neutral10: 'var(--color-archive-surface-muted)',
+    neutral20: 'var(--color-archive-border)',
+    neutral30: 'var(--color-archive-text-muted)',
+    neutral40: 'var(--color-archive-text-muted)',
+    neutral50: 'var(--color-archive-text-muted)',
+    neutral60: 'var(--color-archive-text)',
+    neutral70: 'var(--color-archive-text)',
+    neutral80: 'var(--color-archive-text)',
+    neutral90: 'var(--color-archive-text)',
   },
 });
 
@@ -153,7 +153,7 @@ export const FacetSelect = memo(function FacetSelect({
 
   return (
     <div className={clsx('min-w-0', className, disabled && 'opacity-60')}>
-      <label id={labelId} htmlFor={inputId} className="mb-1 block text-sm font-semibold text-event-dark">
+      <label id={labelId} htmlFor={inputId} className="mb-1 block text-sm font-semibold text-archive-text">
         {label}
       </label>
       <Select<FacetOption, false>
@@ -217,7 +217,7 @@ export const MultiFacetSelect = memo(function MultiFacetSelect({
 
   return (
     <div className={clsx('min-w-0', className, disabled && 'opacity-60')}>
-      <label id={labelId} htmlFor={inputId} className="mb-1 block text-sm font-semibold text-event-dark">
+      <label id={labelId} htmlFor={inputId} className="mb-1 block text-sm font-semibold text-archive-text">
         {label}
       </label>
       <Select<FacetOption, true>

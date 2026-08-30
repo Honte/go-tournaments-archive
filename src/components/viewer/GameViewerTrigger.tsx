@@ -20,12 +20,12 @@ export function GameViewerTrigger({ sgfPath, children, className, ...props }: Ga
       type="button"
       className={clsx(
         'inline-block cursor-pointer',
-        'border-event-dark border-2 rounded-lg',
+        'border-archive-border-strong border rounded',
         'hover:scale-[1.05] transition-transform duration-200',
         'overflow-hidden',
-        'bg-event-light',
-        'focus:border-event-primary focus:scale-[1.05]',
-        'active:border-event-hover',
+        'bg-archive-page',
+        'focus:border-archive-accent focus:scale-[1.05]',
+        'active:border-archive-accent-hover',
         'p-0 outline-none',
         className
       )}

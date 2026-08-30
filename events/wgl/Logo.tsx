@@ -2,7 +2,7 @@ import { readFile } from 'node:fs/promises';
 import type { LogoProps } from '@/schema/event';
 
 export async function Logo({ mode, ...props }: LogoProps) {
-  if (mode === 'favicon' || props.color === 'white') {
+  if (mode === 'favicon') {
     const logo = await readFile('./events/wgl/favicon.png', 'base64');
 
     return (

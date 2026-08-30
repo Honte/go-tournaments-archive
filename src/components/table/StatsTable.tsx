@@ -22,7 +22,7 @@ export function StatsTable<T extends RowData>({ data, columns }: StatsTableProps
         <TableHeader table={table} />
         <tbody>
           {table.getRowModel().rows.map((row) => (
-            <TableRow key={row.id} row={row} className="even:bg-gray-200" />
+            <TableRow key={row.id} row={row} className="even:bg-archive-surface-muted" />
           ))}
         </tbody>
       </table>

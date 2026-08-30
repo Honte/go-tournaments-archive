@@ -12,8 +12,8 @@ export function GameControlButton({ label, icon, onClick }: GameControlButtonPro
     <button
       type="button"
       className={clsx(
-        'inline-flex p-2 cursor-default items-center justify-center rounded-sm bg-gray-300 text-event-dark outline-none',
-        onClick && 'cursor-pointer hover:bg-gray-400'
+        'inline-flex p-2 cursor-default items-center justify-center rounded-sm bg-archive-control text-archive-text outline-none',
+        onClick && 'cursor-pointer hover:bg-archive-control-hover'
       )}
       onClick={onClick}
       aria-label={label}

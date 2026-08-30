@@ -8,7 +8,6 @@ import { getTranslations } from '@/data/serverApi';
 import { Client } from '@/components/Client';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
-import { QueryProvider } from '@/components/QueryProvider';
 
 type LayoutProps = PropsWithChildren<{
   event: EventContext;
@@ -23,14 +22,14 @@ export async function EventLayout({ event, locale, children }: LayoutProps) {
   const translations = await getTranslations(event, locale);
 
   return (
-    <QueryProvider>
+    <>
       <Header event={event} translations={translations} />
       <div className="flex-1 flex flex-col">
         <main className="flex-1 flex flex-col container max-w-(--breakpoint-2xl) mx-auto p-4 w-full">{children}</main>
         <Footer translations={translations} />
       </div>
       <Client locale={locale} event={event} />
-    </QueryProvider>
+    </>
   );
 }
 

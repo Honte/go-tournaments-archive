@@ -30,7 +30,7 @@ export function GameRecordCard({ event, game, translations }: GameRecordCardProp
     : undefined;
 
   return (
-    <article className="flex h-full min-w-0 flex-col overflow-hidden rounded-md border border-event-soft bg-white shadow-sm">
+    <article className="flex h-full min-w-0 flex-col overflow-hidden rounded-md border border-archive-border bg-archive-surface shadow-sm">
       <div className="flex min-w-0 gap-3 p-3">
         {thumb && <GamePreview event={event} game={game} label={previewLabel} thumb={thumb} />}
         <div className="flex min-w-0 flex-1 flex-col justify-center gap-2">
@@ -57,18 +57,18 @@ export function GameRecordCard({ event, game, translations }: GameRecordCardProp
         </div>
       </div>
 
-      <div className="border-t border-event-soft px-3 py-2 [&>div]:mt-0 [&>div]:flex-wrap">
+      <div className="border-t border-archive-border px-3 py-2 [&>div]:mt-0 [&>div]:flex-wrap">
         <GameActions event={event} props={game} t={t} showViewer={true} />
       </div>
 
-      <footer className="mt-auto flex flex-wrap gap-x-3 gap-y-1 border-t border-event-soft px-3 py-2 text-xs text-event-dark/70">
+      <footer className="mt-auto flex flex-wrap gap-x-3 gap-y-1 border-t border-archive-border px-3 py-2 text-xs text-archive-text-muted">
         <span>
-          {t('game.moves')}: <strong className="text-event-dark">{game.moves}</strong>
+          {t('game.moves')}: <strong className="text-archive-text">{game.moves}</strong>
         </span>
         {game.komi !== undefined && (
           <span>
             {t('game.komi')}:{' '}
-            <strong className="text-event-dark">{game.komi === null ? t('gamesFilter.unknown') : game.komi}</strong>
+            <strong className="text-archive-text">{game.komi === null ? t('gamesFilter.unknown') : game.komi}</strong>
           </span>
         )}
         <span className="flex items-baseline gap-1">
@@ -77,18 +77,18 @@ export function GameRecordCard({ event, game, translations }: GameRecordCardProp
         </span>
         {stageName && (
           <span>
-            {t('table.stage')}: <strong className="text-event-dark">{stageName}</strong>
+            {t('table.stage')}: <strong className="text-archive-text">{stageName}</strong>
           </span>
         )}
         {typeof game.round === 'number' && (
           <span>
-            {t('game.round')}: <strong className="text-event-dark">{game.round}</strong>
+            {t('game.round')}: <strong className="text-archive-text">{game.round}</strong>
           </span>
         )}
         {game.result === JIGO && (
           <span>
             {t('game.result')}:{' '}
-            <abbr className="text-event-dark cursor-help" title={t('game.draw')}>
+            <abbr className="text-archive-text cursor-help" title={t('game.draw')}>
               {JIGO}
             </abbr>
           </span>

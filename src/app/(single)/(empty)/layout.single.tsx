@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { PropsWithChildren } from 'react';
 import { loadSingleEvent } from '@/events';
 import { BaseLayout } from '@/components/pages/BaseLayout';
-import '@/globals.css';
 import { getEventLayoutMetadata } from '@/components/pages/EventLayout';
 
 export async function generateMetadata(): Promise<Metadata> {

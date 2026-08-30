@@ -79,10 +79,10 @@ export function GamePopover({ event, translations }: GamePopoverProps) {
         <div ref={refs.setFloating} style={floatingStyles}>
           <div
             role="tooltip"
-            className="z-10 relative text-sm text-event-dark bg-event-light border border-gray-400 rounded-lg shadow-sm after:absolute after:w-[10px] after:h-[10px] after:bg-event-light after:left-[calc(50%-5px)] after:rotate-45 after:bottom-[-5.5px] after:border-b after:border-r after:border-gray-400"
+            className="z-10 relative text-sm text-archive-text bg-archive-surface border border-archive-border rounded-lg shadow-sm after:absolute after:w-[10px] after:h-[10px] after:bg-archive-surface after:left-[calc(50%-5px)] after:rotate-45 after:bottom-[-5.5px] after:border-b after:border-r after:border-archive-border"
           >
             {state?.title && (
-              <div className="px-3 py-2 border-b border-gray-200 rounded-t-lg">
+              <div className="px-3 py-2 border-b border-archive-border rounded-t-lg">
                 <h3 className="font-semibold ">{state?.title}</h3>
               </div>
             )}

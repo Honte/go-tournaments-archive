@@ -9,7 +9,7 @@ type TableHeaderProps<T extends RowData> = {
 
 export function TableHeader<T extends RowData>({ table }: TableHeaderProps<T>) {
   return (
-    <thead className="sticky top-0 z-10 max-sm:text-sm bg-event-light shadow-[inset_0_-1px_0_var(--color-event-gray)]">
+    <thead className="sticky top-0 z-10 max-sm:text-sm bg-archive-page shadow-[inset_0_-1px_0_var(--color-archive-border)]">
       {table.getHeaderGroups().map((headerGroup) => (
         <tr key={headerGroup.id} className="text-center select-none">
           {headerGroup.headers.map((header) => (

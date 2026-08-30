@@ -30,7 +30,10 @@ export function GameFiltersPanel({ store, t }: GameFacetProps) {
   const expanded = useStore(store, (storeState) => storeState.expanded);
 
   return (
-    <section id={FILTER_PANEL_ID} className="rounded-md border border-event-soft bg-white p-3 shadow-sm md:p-4">
+    <section
+      id={FILTER_PANEL_ID}
+      className="rounded-md border border-archive-border bg-archive-surface p-3 shadow-sm md:p-4"
+    >
       {!expanded && (
         <div className="flex flex-col sm:grid sm:grid-cols-3 xl:grid-cols-4 gap-4">
           <PlayerFacet store={store} t={t} />
@@ -46,7 +49,7 @@ export function GameFiltersPanel({ store, t }: GameFacetProps) {
             <section aria-labelledby={`${FILTER_PANEL_ID}-player-heading`} className={columnClassName}>
               <h2
                 id={`${FILTER_PANEL_ID}-player-heading`}
-                className="border-b border-event-soft pb-2 text-base font-bold"
+                className="border-b border-archive-border pb-2 text-base font-bold"
               >
                 {t('gamesFilter.playerFilters')}
               </h2>
@@ -60,7 +63,7 @@ export function GameFiltersPanel({ store, t }: GameFacetProps) {
             <section aria-labelledby={`${FILTER_PANEL_ID}-opponent-heading`} className={columnClassName}>
               <h2
                 id={`${FILTER_PANEL_ID}-opponent-heading`}
-                className="border-b border-event-soft pb-2 text-base font-bold"
+                className="border-b border-archive-border pb-2 text-base font-bold"
               >
                 {t('gamesFilter.opponentFilters')}
               </h2>
@@ -73,7 +76,7 @@ export function GameFiltersPanel({ store, t }: GameFacetProps) {
             <section aria-labelledby={`${FILTER_PANEL_ID}-game-heading`} className={columnClassName}>
               <h2
                 id={`${FILTER_PANEL_ID}-game-heading`}
-                className="border-b border-event-soft pb-2 text-base font-bold"
+                className="border-b border-archive-border pb-2 text-base font-bold"
               >
                 {t('gamesFilter.gameFilters')}
               </h2>
@@ -91,7 +94,7 @@ export function GameFiltersPanel({ store, t }: GameFacetProps) {
       )}
 
       {expanded && (
-        <div className="mt-4 flex max-sm:flex-col flex-wrap gap-4 border-t border-event-soft pt-4">
+        <div className="mt-4 flex max-sm:flex-col flex-wrap gap-4 border-t border-archive-border pt-4">
           <GroupFacet store={store} t={t} />
           <SortFacet store={store} t={t} />
           <GameRecordsToolbar store={store} t={t} />

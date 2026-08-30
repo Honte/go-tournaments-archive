@@ -9,8 +9,12 @@ export function Stone({ color, ...props }: StoneProps) {
       <circle
         cx={12}
         cy={12}
-        r={9}
-        className={`stroke-2 stroke-event-dark ${color === 'black' ? 'fill-event-dark' : 'fill-event-light'}`}
+        r={10}
+        className={`stroke-2 ${
+          color === 'black'
+            ? 'fill-archive-stone-black stroke-archive-stone-stroke-black'
+            : 'fill-archive-stone-white stroke-archive-stone-stroke-white'
+        }`}
       />
     </svg>
   );

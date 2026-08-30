@@ -5,6 +5,7 @@ import { homeUrl, logoWhiteUrl } from '@/libs/urls';
 import { Link } from '@/components/navigation/Link';
 import { LocaleNavigation } from '@/components/navigation/LocaleNavigation';
 import { SideNavigation } from '@/components/navigation/SideNavigation';
+import { ThemeSwitch } from '@/components/ui/ThemeSwitch';
 
 type TopBarProps = {
   event: EventContext;
@@ -16,7 +17,7 @@ export function Header({ event, translations }: TopBarProps) {
   const locale = translations.locale;
 
   return (
-    <header className="sticky top-0 z-40 shrink-0 bg-event-dark text-event-light">
+    <header className="sticky top-0 z-40 shrink-0 bg-archive-shell text-archive-shell-text">
       <div className="container mx-auto max-w-(--breakpoint-2xl) flex h-12 items-center gap-3 px-4">
         <SideNavigation
           event={event}
@@ -37,7 +38,24 @@ export function Header({ event, translations }: TopBarProps) {
             {t('navigation.archiveLabel', t('site.acronym'))}
           </span>
         </Link>
-        <LocaleNavigation locale={locale} locales={event.locales} />
+        <div className="ml-auto flex shrink-0 items-center gap-3">
+          <LocaleNavigation
+            strategy="param"
+            locale={locale}
+            locales={event.locales}
+            strings={{
+              label: t('navigation.locale'),
+            }}
+          />
+          <ThemeSwitch
+            strings={{
+              label: t('navigation.theme.label'),
+              auto: t('navigation.theme.auto'),
+              light: t('navigation.theme.light'),
+              dark: t('navigation.theme.dark'),
+            }}
+          />
+        </div>
       </div>
     </header>
   );

@@ -7,8 +7,8 @@ stages:
     dir: 2026/ec
     time: 80min + 40sec Fischer
     scoringColumns:
-      - wins
       - place
+      - wins
     breakers:
       - place
     columns:

@@ -1,3 +1,4 @@
+import { networkInterfaces } from 'node:os';
 import { normalizeBasePath } from '@/libs/urls';
 import { getEventConfigurations, IS_DEVELOPMENT, loadConfiguration } from '@/configuration';
 
@@ -38,5 +39,13 @@ export default async function getConfig() {
     },
     pageExtensions,
     trailingSlash: configuration.trailingSlash,
+    // it's weird next.js doesn't do that automatically
+    allowedDevOrigins: IS_DEVELOPMENT ? getAllowedDevOrigins() : undefined,
   };
+}
+
+function getAllowedDevOrigins() {
+  return Object.values(networkInterfaces()).flatMap((interfaces) =>
+    (interfaces ?? []).filter(({ family, internal }) => family === 'IPv4' && !internal).map(({ address }) => address)
+  );
 }

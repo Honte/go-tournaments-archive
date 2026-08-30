@@ -16,7 +16,7 @@ export function AllPlayersStatsLink({ event, translations }: AllPlayersStatsLink
     <p className="text-center my-2">
       <Link
         href={allPlayersStatsUrl(event, translations.locale)}
-        className="underline underline-offset-2 text-event-primary cursor-pointer hover:text-event-hover"
+        className="underline underline-offset-2 text-archive-accent cursor-pointer hover:text-archive-accent-hover"
       >
         {t('stats.goToAllPlayersStats')}
       </Link>

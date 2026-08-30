@@ -32,6 +32,13 @@
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "archiveLabel": "%{0} Archive",
+    "locale": "Language",
+    "theme": {
+      "label": "Color theme",
+      "auto": "Use system theme",
+      "light": "Use light theme",
+      "dark": "Use dark theme"
+    },
     "categories": "Categories",
     "tournaments": "Tournaments",
     "otherEvents": "Other events",

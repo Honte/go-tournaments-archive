@@ -11,10 +11,10 @@ export function Footer({ translations }: { translations: Translations }) {
   const t = getTranslator(translations);
 
   return (
-    <footer className="bg-event-gray text-event-light">
+    <footer className="bg-archive-shell-muted text-archive-shell-text">
       <div className="container mx-auto max-w-(--breakpoint-2xl) xs:flex items-center p-3">
         <p>
-          <ExternalLink href="https://honte.pl" className="text-event-light hover:text-event-light">
+          <ExternalLink href="https://honte.pl" className="text-archive-shell-text hover:text-archive-shell-text">
             Honte
           </ExternalLink>{' '}
           &copy; {generationTime.getFullYear()}
@@ -24,7 +24,7 @@ export function Footer({ translations }: { translations: Translations }) {
           <ExternalLink
             href={REPOSITORY_URL}
             title={t('site.github', REPOSITORY_URL)}
-            className="text-white hover:text-black"
+            className="text-archive-shell-text hover:text-archive-accent-hover"
           >
             <FaGithub />
           </ExternalLink>

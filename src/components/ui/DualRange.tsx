@@ -25,8 +25,8 @@ const thumbClassName = `pointer-events-none absolute inset-x-0 top-1/2 z-10 h-4 
   [&::-moz-range-thumb]:appearance-none
   [&::-moz-range-thumb]:rounded-full
   [&::-moz-range-thumb]:border-2
-  [&::-moz-range-thumb]:border-event-primary
-  [&::-moz-range-thumb]:bg-white
+  [&::-moz-range-thumb]:border-archive-accent
+  [&::-moz-range-thumb]:bg-archive-surface
   [&::-moz-range-thumb]:shadow-sm
   [&::-moz-range-thumb]:active:cursor-grabbing
   [&::-webkit-slider-runnable-track]:h-0
@@ -39,16 +39,16 @@ const thumbClassName = `pointer-events-none absolute inset-x-0 top-1/2 z-10 h-4 
   [&::-webkit-slider-thumb]:-mt-2
   [&::-webkit-slider-thumb]:rounded-full
   [&::-webkit-slider-thumb]:border-2
-  [&::-webkit-slider-thumb]:border-event-primary
-  [&::-webkit-slider-thumb]:bg-white
+  [&::-webkit-slider-thumb]:border-archive-accent
+  [&::-webkit-slider-thumb]:bg-archive-surface
   [&::-webkit-slider-thumb]:shadow-sm
   [&::-webkit-slider-thumb]:active:cursor-grabbing
   focus-visible:outline-none
   focus-visible:[&::-moz-range-thumb]:ring-4
-  focus-visible:[&::-moz-range-thumb]:ring-event-primary
+  focus-visible:[&::-moz-range-thumb]:ring-archive-accent
   focus-visible:[&::-moz-range-thumb]:ring-offset-1
   focus-visible:[&::-webkit-slider-thumb]:ring-4
-  focus-visible:[&::-webkit-slider-thumb]:ring-event-primary
+  focus-visible:[&::-webkit-slider-thumb]:ring-archive-accent
   focus-visible:[&::-webkit-slider-thumb]:ring-offset-1`;
 
 export function DualRange({ lowerValue, upperValue, minimum, maximum, ...props }: DualRangeProps) {
@@ -129,11 +129,11 @@ function DualRangeControl({
   return (
     <fieldset className={rangeDisabled ? 'min-w-0 opacity-60' : 'min-w-0'} disabled={rangeDisabled}>
       <legend className="mb-1 text-sm font-semibold">{label}</legend>
-      <div className="rounded-sm border border-event-soft bg-white px-3 py-2">
+      <div className="rounded-sm border border-archive-border bg-archive-surface px-3 py-2">
         <div className="relative my-2 h-4">
-          <div className="absolute inset-x-2 top-1/2 h-1 -translate-y-1/2 rounded-full bg-event-soft">
+          <div className="absolute inset-x-2 top-1/2 h-1 -translate-y-1/2 rounded-full bg-archive-control-track">
             <div
-              className="absolute inset-y-0 rounded-full bg-event-primary"
+              className="absolute inset-y-0 rounded-full bg-archive-accent"
               style={{ left: `${lowerPercent}%`, right: `${100 - upperPercent}%` }}
             />
           </div>
@@ -172,7 +172,7 @@ function DualRangeControl({
             onBlur={commit}
           />
         </div>
-        <div className="flex items-center justify-between gap-4 text-xs font-semibold tabular-nums text-event-dark">
+        <div className="flex items-center justify-between gap-4 text-xs font-semibold tabular-nums text-archive-text">
           <output htmlFor={`${id}-minimum`} aria-live="off" className="min-w-0 text-left">
             {formatValue(draft[0])}
           </output>

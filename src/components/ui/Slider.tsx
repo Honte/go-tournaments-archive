@@ -22,24 +22,24 @@ export function Slider(props: ComponentProps<'input'>) {
         onChange={onChange}
         onInput={handleInput}
         className={clsx(
-          `h-6 min-w-0 flex-1 cursor-pointer appearance-none bg-transparent accent-event-dark [-webkit-appearance:none]
+          `h-6 min-w-0 flex-1 cursor-pointer appearance-none bg-transparent accent-archive-accent [-webkit-appearance:none]
         [&::-moz-range-progress]:h-1.5
         [&::-moz-range-progress]:rounded-full
-        [&::-moz-range-progress]:bg-event-soft
+        [&::-moz-range-progress]:bg-archive-control-track
         [&::-moz-range-track]:h-1.5
         [&::-moz-range-track]:rounded-full
-        [&::-moz-range-track]:bg-event-soft
+        [&::-moz-range-track]:bg-archive-control-track
         [&::-moz-range-thumb]:appearance-none
         [&::-moz-range-thumb]:size-5
         [&::-moz-range-thumb]:cursor-grab
         [&::-moz-range-thumb]:active:cursor-grabbing
         [&::-moz-range-thumb]:rounded-full
         [&::-moz-range-thumb]:border-2
-        [&::-moz-range-thumb]:border-event-dark
-        [&::-moz-range-thumb]:bg-event-dark
+        [&::-moz-range-thumb]:border-archive-border-strong
+        [&::-moz-range-thumb]:bg-archive-text
         [&::-webkit-slider-runnable-track]:h-1.5
         [&::-webkit-slider-runnable-track]:rounded-full
-        [&::-webkit-slider-runnable-track]:bg-event-soft
+        [&::-webkit-slider-runnable-track]:bg-archive-control-track
         [&::-webkit-slider-thumb]:-mt-1.75
         [&::-webkit-slider-thumb]:size-5
         [&::-webkit-slider-thumb]:cursor-grab
@@ -48,12 +48,12 @@ export function Slider(props: ComponentProps<'input'>) {
         [&::-webkit-slider-thumb]:[-webkit-appearance:none]
         [&::-webkit-slider-thumb]:rounded-full
         [&::-webkit-slider-thumb]:border-2
-        [&::-webkit-slider-thumb]:border-event-dark
-        [&::-webkit-slider-thumb]:bg-event-dark`,
+        [&::-webkit-slider-thumb]:border-archive-border-strong
+        [&::-webkit-slider-thumb]:bg-archive-text`,
           className
         )}
       />
-      <span className="w-14 shrink-0 text-right text-xs font-semibold tabular-nums text-event-dark text-nowrap">{`${value as string} / ${max}`}</span>
+      <span className="w-14 shrink-0 text-right text-xs font-semibold tabular-nums text-archive-text text-nowrap">{`${value as string} / ${max}`}</span>
     </div>
   );
 }
