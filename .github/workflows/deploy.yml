@@ -162,6 +162,20 @@ jobs:
         run: |
           cp -r public .next/standalone/
           cp -r .next/static .next/standalone/.next/
+      - name: Clean up
+        if: ${{ github.event_name == 'workflow_dispatch' || steps.check.outputs.deploy_honte == 'true' }}
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ vars.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          passphrase: ${{ secrets.SSH_KEY_PASS }}
+          script: |
+            set -eu
+            deploy_path='/usr/home/${{ secrets.SSH_USER }}/domains/${{ vars.SSH_HOST }}/public_nodejs'
+
+            test -d "$deploy_path"
+            rm -rf -- "$deploy_path/.next"
       - name: Deploy
         if: ${{ github.event_name == 'workflow_dispatch' || steps.check.outputs.deploy_honte == 'true' }}
         uses: appleboy/scp-action@v1
