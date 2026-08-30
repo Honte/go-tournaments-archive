@@ -81,7 +81,7 @@ export function VirtualGameRecordGrid({ event, groups, translations }: VirtualGa
               <h2>
                 <button
                   type="button"
-                  className="flex w-full cursor-pointer items-center gap-2 border-b border-event-dark pb-1 text-left text-lg font-bold hover:text-event-hover focus-visible:ring-2 focus-visible:ring-event-primary"
+                  className="flex w-full cursor-pointer items-center gap-2 border-b border-archive-border-strong pb-1 text-left text-lg font-bold hover:text-archive-accent-hover focus-visible:ring-2 focus-visible:ring-archive-accent"
                   aria-expanded={!row.collapsed}
                   onClick={() =>
                     setCollapsedGroups((current) => {

@@ -2,7 +2,7 @@ export function Loader() {
   return (
     <div className="fixed inset-0 flex items-center justify-center size-full pointer-events-none">
       <div
-        className="size-16 animate-spin rounded-full border-12 border-event-bg border-t-event-dark"
+        className="size-16 animate-spin rounded-full border-12 border-archive-surface-muted border-t-archive-text"
         role="status"
         aria-label="Loading"
       />

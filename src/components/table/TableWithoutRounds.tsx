@@ -40,7 +40,7 @@ export function TableWithoutRounds({ event, stage, players, games, translations 
             const player = players[result.id];
 
             return (
-              <tr key={result.id} className="text-center even:bg-gray-200">
+              <tr key={result.id} className="text-center even:bg-archive-surface-muted">
                 <td className="p-1">{i === 0 || result.place !== table[i - 1].place ? result.place : ''}</td>
                 <td className="p-1 text-left">
                   <PlayerLink

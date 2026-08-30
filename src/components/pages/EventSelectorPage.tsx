@@ -1,9 +1,9 @@
 import type { ArchiveConfiguration } from '@/schema/event';
 import { loadConfiguredEvents } from '@/events';
 import type { Locale } from '@/i18n/consts';
-import { loadAllTranslations } from '@/i18n/server';
+import { loadAllTranslations, loadBaseTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
-import { EventSelector } from '@/components/multi/EventSelector';
+import { EventSelector, type MultiEventTranslations } from '@/components/multi/EventSelector';
 import type { EventEntry, EventEntryGroup } from '@/components/multi/schema';
 import { Content } from '@/components/ui/Content';
 
@@ -61,6 +61,8 @@ export async function EventSelectorPage({ configuration }: EventSelectorPageProp
     eventsWithTranslations.every((entry) => entry.event.locales.length === 1) &&
     (!configuration.locales || configuration.locales.length === 1);
 
+  const translations = await loadMultiTranslations(configuration.locales);
+
   return (
     <Content>
       <EventSelector
@@ -69,7 +71,27 @@ export async function EventSelectorPage({ configuration }: EventSelectorPageProp
         footer={configuration.footer}
         locales={configuration.locales}
         hasSingleLocale={hasSingleLocale}
+        translations={translations}
       />
     </Content>
   );
+}
+
+export async function loadMultiTranslations(locales?: string[]) {
+  const requested = locales?.length ? locales : ['en'];
+  const allTranslations = await Promise.all(requested.map((locale) => loadBaseTranslations(locale as Locale)));
+
+  return requested.reduce<Partial<Record<Locale, MultiEventTranslations>>>((all, locale, index) => {
+    const t = getTranslator(allTranslations[index]);
+
+    all[locale as Locale] = {
+      localeSelector: t('navigation.locale'),
+      themeSelector: t('navigation.theme.label'),
+      themeAuto: t('navigation.theme.auto'),
+      themeLight: t('navigation.theme.light'),
+      themeDark: t('navigation.theme.dark'),
+    };
+
+    return all;
+  }, {});
 }

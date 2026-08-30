@@ -32,7 +32,7 @@ export function MedalTable<T>({ results, translations, toKey, toName }: MedalTab
       </thead>
       <tbody>
         {results.map((winner) => (
-          <tr key={toKey(winner)} className="even:bg-gray-200 hover:bg-gray-300">
+          <tr key={toKey(winner)} className="even:bg-archive-surface-muted hover:bg-archive-surface-hover">
             <td className="text-left p-1">{toName(winner)}</td>
             <td>{winner.medals[0].length}</td>
             <td>{winner.medals[1].length}</td>

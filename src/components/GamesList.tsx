@@ -88,7 +88,7 @@ export function GamesList({ event, tournament, translations }: GamesListProps) {
       </H2>
       {list.map((list, index) => (
         <div key={index} className="my-5">
-          <h4 className="text-l font-bold border-b-event-dark border-b">
+          <h4 className="text-l font-bold border-b-archive-border-strong border-b">
             {stages.length > 1 && list.stage ? <>{list.stage} &ndash; </> : ''}
             {list.name}
           </h4>

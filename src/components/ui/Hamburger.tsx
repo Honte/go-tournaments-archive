@@ -10,7 +10,7 @@ export function Hamburger({ open, label, className, ...rest }: HamburgerProps) {
   return (
     <button
       type="button"
-      className={clsx('text-event-light relative h-10 w-10 -ml-2 shrink-0 cursor-pointer', className)}
+      className={clsx('text-archive-shell-text relative h-10 w-10 -ml-2 shrink-0 cursor-pointer', className)}
       aria-expanded={open}
       aria-label={label}
       title={label}

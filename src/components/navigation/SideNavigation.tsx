@@ -56,7 +56,7 @@ export function SideNavigation({ event, locale, strings }: SideNavigationProps) 
       <Overlay visible={open} onClick={closeMenu} className="top-12" />
       <aside
         className={clsx(
-          'fixed left-0 top-12 bottom-0 z-30 flex w-[85%] max-w-sm flex-col bg-event-light text-event-dark shadow-xl transition-transform duration-200 ease-out',
+          'fixed left-0 top-12 bottom-0 z-30 flex w-[85%] max-w-sm flex-col bg-archive-surface text-archive-text shadow-xl transition-transform duration-200 ease-out',
           open ? 'translate-x-0' : '-translate-x-full'
         )}
       >
@@ -65,7 +65,7 @@ export function SideNavigation({ event, locale, strings }: SideNavigationProps) 
             {sitemap?.map((group) => (
               <Fragment key={group.key}>
                 {group.label && (
-                  <h3 className="text-xs uppercase tracking-wide text-event-dark mt-2 first:mt-0 mb-1 pl-2">
+                  <h3 className="text-xs uppercase tracking-wide text-archive-text mt-2 first:mt-0 mb-1 pl-2">
                     {group.label}
                   </h3>
                 )}
@@ -81,12 +81,12 @@ export function SideNavigation({ event, locale, strings }: SideNavigationProps) 
                         title={link.tooltip}
                         onClick={closeMenu}
                         className={clsx(
-                          'group flex gap-1 items-baseline py-1 px-2 text-event-primary font-semibold underline hover:text-event-hover hover:bg-gray-300 rounded-sm'
+                          'group flex gap-1 items-baseline py-1 px-2 text-archive-accent font-semibold underline hover:text-archive-accent-hover hover:bg-archive-surface-hover rounded-sm'
                         )}
                       >
                         {link.label}
                         {link.description && (
-                          <span className="text-xs text-event-gray group-hover:text-event-hover">
+                          <span className="text-xs text-archive-text-muted group-hover:text-archive-accent-hover">
                             {link.description}
                           </span>
                         )}

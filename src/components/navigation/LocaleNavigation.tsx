@@ -1,19 +1,23 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
-import { Link } from '@/components/navigation/Link';
+import { HeaderSwitch } from '@/components/ui/HeaderSwitch';
 import { useNavigationSearchParams } from '@/hooks/useNavigation';
 
 export type LocaleNavigationProps = {
-  locales: string[];
+  strategy: 'query' | 'param';
+  locales?: string[];
   locale: string;
+  strings: {
+    label: string;
+  };
 };
 
-export function LocaleNavigation({ locale, locales }: LocaleNavigationProps) {
+export function LocaleNavigation({ locale, locales, strategy, strings }: LocaleNavigationProps) {
   const pathname = usePathname();
   const searchParams = useNavigationSearchParams();
 
-  if (locales.length <= 1 || !pathname) {
+  if (!locales || locales.length <= 1 || (strategy === 'param' && !pathname)) {
     return null;
   }
 
@@ -21,17 +25,18 @@ export function LocaleNavigation({ locale, locales }: LocaleNavigationProps) {
   const search = searchParams.toString();
 
   return (
-    <div className="flex gap-3 text-sm text-event-light ml-auto">
-      {locales.map((nextLocale) => (
-        <Link
-          key={nextLocale}
-          className={nextLocale === locale ? 'font-bold' : 'underline'}
-          href={`${pathname.replace(regex, `/${nextLocale}$1`)}${search ? `?${search}` : ''}`}
-          aria-current={nextLocale === locale ? 'true' : undefined}
-        >
-          {nextLocale.toUpperCase()}
-        </Link>
-      ))}
-    </div>
+    <HeaderSwitch
+      label={strings.label}
+      current={locale}
+      options={locales.map((nextLocale) => ({
+        value: nextLocale,
+        label: nextLocale.toUpperCase(),
+        content: nextLocale.toUpperCase(),
+        href:
+          strategy === 'query'
+            ? `/?locale=${nextLocale}`
+            : `${pathname.replace(regex, `/${nextLocale}$1`)}${search ? `?${search}` : ''}`,
+      }))}
+    />
   );
 }

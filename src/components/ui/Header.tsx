@@ -13,7 +13,7 @@ export function Header({ level, actions, children, className }: HeaderProps) {
   return (
     <Component
       className={clsx(
-        'font-bold pb-1 border-b-event-dark border-b-2',
+        'font-bold pb-1 border-b-archive-border-strong border-b-2',
         level === 1 ? 'text-2xl my-3' : 'text-xl my-2',
         actions && 'flex flex-wrap items-center gap-3',
         className

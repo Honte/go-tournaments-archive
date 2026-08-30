@@ -4,11 +4,11 @@ import NextLink from 'next/link';
 import type { ComponentProps } from 'react';
 import { navigate } from '@/libs/navigation';
 
-type NavigationLinkProps = Omit<ComponentProps<typeof NextLink>, 'href'> & {
+export type LinkProps = Omit<ComponentProps<typeof NextLink>, 'href'> & {
   href: string;
 };
 
-export function Link({ href, onNavigate, prefetch = false, ...props }: NavigationLinkProps) {
+export function Link({ href, onNavigate, prefetch = false, ...props }: LinkProps) {
   return (
     <NextLink
       href={href}

@@ -3,11 +3,11 @@
 @config "../tailwind.config.js";
 
 @utility faded-left {
-  @apply relative before:bg-linear-to-r before:h-full before:left-0 before:absolute before:z-10 before:from-event-light before:to-transparent before:pointer-events-none;
+  @apply relative before:bg-linear-to-r before:h-full before:left-0 before:absolute before:z-10 before:from-archive-page before:to-transparent before:pointer-events-none;
 }
 
 @utility faded-right {
-  @apply relative after:bg-linear-to-l after:h-full after:right-0 after:absolute after:z-10 after:from-event-light before:to-transparent after:pointer-events-none;
+  @apply relative after:bg-linear-to-l after:h-full after:right-0 after:absolute after:z-10 after:from-archive-page before:to-transparent after:pointer-events-none;
 }
 
 @property --border-angle {
@@ -18,13 +18,32 @@
 
 @theme {
   --breakpoint-xs: 420px;
-  --color-event-dark: #222222;
-  --color-event-gray: #999999;
-  --color-event-soft: #d2d2d2;
-  --color-event-light: #f3f4f6ff;
-  --color-event-primary: #5287ae;
-  --color-event-hover: #72940c;
-  --color-event-bg: #e5e7eb;
+  --color-archive-page: #f3f4f6;
+  --color-archive-surface: #ffffff;
+  --color-archive-surface-muted: #e5e7eb;
+  --color-archive-surface-hover: #d1d5db;
+  --color-archive-border: #d2d2d2;
+  --color-archive-border-strong: #7a7a7a;
+  --color-archive-text: #222222;
+  --color-archive-text-muted: #666666;
+  --color-archive-accent: #5287ae;
+  --color-archive-accent-hover: #72940c;
+  --color-archive-accent-soft: #d2d2d2;
+  --color-archive-accent-text: #ffffff;
+  --color-archive-control: #d1d5db;
+  --color-archive-control-hover: #9ca3af;
+  --color-archive-control-selected: #5287ae;
+  --color-archive-control-selected-text: #ffffff;
+  --color-archive-control-track: #d2d2d2;
+  --color-archive-shell: #222222;
+  --color-archive-shell-muted: #999999;
+  --color-archive-shell-text: #f3f4f6ff;
+  --color-archive-stone-black: #222222;
+  --color-archive-stone-white: #f3f4f6;
+  --color-archive-stone-stroke-black: #222222;
+  --color-archive-stone-stroke-white: #222222;
+  --color-archive-scrollbar: rgba(0, 0, 0, 0.25);
+  --color-archive-scrollbar-hover: rgba(0, 0, 0, 0.4);
 }
 
 @utility stroke-paint-order {
@@ -36,13 +55,55 @@
   dominant-baseline: central;
 }
 
+:root {
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --color-archive-page: #15181c;
+  --color-archive-surface: #1e2329;
+  --color-archive-surface-muted: #1a1e23;
+  --color-archive-surface-hover: #3a4652;
+  --color-archive-border: #4c5864;
+  --color-archive-border-strong: #929da8;
+  --color-archive-text: #f1f4f6;
+  --color-archive-text-muted: #b5bec7;
+  --color-archive-accent: #c68e1e;
+  --color-archive-accent-hover: #ffd166;
+  --color-archive-accent-soft: #4a3d20;
+  --color-archive-accent-text: #1a160b;
+  --color-archive-control: #252b32;
+  --color-archive-control-hover: #3a4652;
+  --color-archive-control-selected: #e8b84a;
+  --color-archive-control-selected-text: #1a160b;
+  --color-archive-control-track: #4c5864;
+  --color-archive-shell: #0d0f12;
+  --color-archive-shell-muted: #111417;
+  --color-archive-stone-stroke-black: #59636d;
+  --color-archive-scrollbar: rgba(255, 255, 255, 0.25);
+  --color-archive-scrollbar-hover: rgba(255, 255, 255, 0.4);
+}
+
+[data-theme-image='dark'] {
+  display: none;
+}
+
+:root[data-theme='dark'] [data-theme-image='light'] {
+  display: none;
+}
+
+:root[data-theme='dark'] [data-theme-image='dark'] {
+  display: block;
+}
+
 html {
   scrollbar-gutter: stable;
 }
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: rgba(0, 0, 0, 0.25) transparent;
+  scrollbar-color: var(--color-archive-scrollbar) transparent;
 }
 
 *::-webkit-scrollbar {
@@ -55,10 +116,10 @@ html {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: var(--color-archive-scrollbar);
   border-radius: 3px;
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: var(--color-archive-scrollbar-hover);
 }

@@ -87,11 +87,11 @@ export function PlayerGames({ event, player, translations }: PlayerGamesProps) {
             accessorKey: 'img',
             header: null,
             cell: (info) => (
-              <GameViewerTrigger sgfPath={info.row.original.props.sgf!}>
+              <GameViewerTrigger sgfPath={info.row.original.props.sgf!} className="align-middle leading-none">
                 <img
                   src={gameThumbUrl(event, info.row.original.img)}
                   alt={t('game.preview', `${player.name} vs ${info.row.original.opponent.name}`)}
-                  className="size-20 min-w-20 min-h-20"
+                  className="block size-20 min-w-20 min-h-20"
                   loading="lazy"
                 />
               </GameViewerTrigger>

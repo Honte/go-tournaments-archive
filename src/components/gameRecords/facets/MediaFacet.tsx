@@ -18,7 +18,7 @@ export function MediaFacet({ store, t }: GameFacetProps) {
   return (
     <fieldset>
       <legend className="mb-1 text-sm font-semibold">{t('gamesFilter.media')}</legend>
-      <div className="flex flex-wrap gap-x-3 gap-y-2 rounded-sm border border-event-soft bg-white px-2 py-2">
+      <div className="flex flex-wrap gap-x-3 gap-y-2 rounded-sm border border-archive-border bg-archive-surface px-2 py-2">
         {GAME_MEDIA.map((media) => (
           <Toggle
             key={media}

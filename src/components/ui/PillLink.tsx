@@ -14,7 +14,9 @@ export function PillLink({ label, href, active }: PillLinkProps) {
       aria-current={active ? 'page' : undefined}
       className={clsx(
         'inline-flex rounded-sm px-2 py-0.5 font-bold',
-        active ? 'bg-event-primary text-white' : 'bg-gray-300 text-event-dark hover:bg-gray-400'
+        active
+          ? 'bg-archive-control-selected text-archive-control-selected-text'
+          : 'bg-archive-control text-archive-text hover:bg-archive-control-hover'
       )}
     >
       {label}

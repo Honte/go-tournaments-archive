@@ -12,7 +12,7 @@ export function OpponentRankFacet({ store, t }: GameFacetProps) {
 
   if (!state.player && !state.country) {
     return (
-      <p className="text-sm text-event-dark/70">
+      <p className="text-sm text-archive-text-muted">
         {t(countryVisible ? 'gamesFilter.selectPlayerOrCountry' : 'gamesFilter.selectPlayer')}
       </p>
     );

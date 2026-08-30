@@ -72,10 +72,10 @@ function TournamentMedalistsRow({
   const { year, top, players } = result;
 
   return (
-    <tr className="text-center even:bg-gray-200 hover:bg-gray-300">
+    <tr className="text-center even:bg-archive-surface-muted hover:bg-archive-surface-hover">
       <td className="p-2">
         <Link
-          className="sm:text-xl font-bold text-event-primary underline hover:text-event-hover"
+          className="sm:text-xl font-bold text-archive-accent underline hover:text-archive-accent-hover"
           href={tournamentUrl(event, translations.locale, year)}
         >
           {year}
@@ -118,7 +118,7 @@ function TournamentAnnouncementRow({
         : undefined) ?? t('site.eventName');
 
   return (
-    <tr className="group text-center bg-event-primary text-white hover:bg-event-hover hover:text-white transition-colors duration-500">
+    <tr className="group bg-archive-accent text-center text-archive-accent-text transition-colors duration-500 hover:bg-archive-accent-hover hover:text-archive-accent-text">
       <td className="p-2">
         <Link
           className="sm:text-xl font-bold text-current underline hover:text-current"
