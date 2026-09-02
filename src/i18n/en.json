@@ -20,7 +20,9 @@
     "gamesListTitle": "Game records",
     "gamesListDescription": "List of all games records from all tournaments",
     "lastUpdated": "Last updated: %{0}",
-    "github": "Contribute on GitHub: %{0}"
+    "github": "Contribute on GitHub: %{0}",
+    "searchPlaceholder": "Search tournaments, players, or years...",
+    "searchComingSoon": "Archive search is coming soon"
   },
   "navigation": {
     "home": {
@@ -43,6 +45,11 @@
     "tournaments": "Tournaments",
     "otherEvents": "Other events",
     "allEvents": "All events"
+  },
+  "actions": {
+    "showMore": "Show more (%{0})",
+    "showAllMedalists": "Show all medalists",
+    "showLess": "Show less"
   },
   "details": {
     "header": "About",
@@ -241,12 +248,14 @@
   "winners": {
     "title": "Medalists",
     "year": "Year",
+    "showMoreTournaments": "Show %{0} more tournaments",
     "first": "Champion",
     "firstIn": "Champion of %{0}",
     "second": "2nd place",
     "secondIn": "2nd place in %{0}",
     "third": "3rd place",
-    "thirdIn": "3rd place in %{0}"
+    "thirdIn": "3rd place in %{0}",
+    "locationUnknown": "Location unavailable"
   },
   "medals": {
     "gold": "Gold",
@@ -263,6 +272,11 @@
     "opponents": "Opponent summary",
     "medalists": "Medalists",
     "countries": "Medal standings",
+    "medalistView": {
+      "label": "Medalist ranking",
+      "individuals": "Individuals",
+      "countries": "Countries"
+    },
     "attendants": "Top %{0} participants",
     "achievements": "Achievements",
     "bestParticipantsOnly": "Best participants only",
@@ -275,12 +289,15 @@
       "draws": "Draws",
       "gamesWithColors": "Games with colors",
       "black": "% won by black",
+      "blackSample": "Based on %{0} games with known player colors",
       "resigned": "Won by resign",
       "timeout": "Won by time",
       "sgfs": "Games with SGF records",
       "relays": "Relays on OGS",
       "streams": "Games streamed",
-      "analysis": "AI analysis"
+      "analysis": "AI analysis",
+      "results": "Game data",
+      "media": "Media and extras"
     }
   },
   "categories": {

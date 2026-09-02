@@ -20,7 +20,9 @@
     "gamesListTitle": "Lista zapisów gier",
     "gamesListDescription": "Lista zapisanych gier we wszystkich turniejach",
     "lastUpdated": "Ostatnia aktualizacja: %{0}",
-    "github": "Zobacz na GitHub: %{0}"
+    "github": "Zobacz na GitHub: %{0}",
+    "searchPlaceholder": "Szukaj turniejów, zawodników lub lat...",
+    "searchComingSoon": "Wyszukiwanie w archiwum będzie dostępne wkrótce"
   },
   "navigation": {
     "home": {
@@ -43,6 +45,11 @@
     "tournaments": "Turnieje",
     "otherEvents": "Inne wydarzenia",
     "allEvents": "Wszystkie wydarzenia"
+  },
+  "actions": {
+    "showMore": "Pokaż więcej (%{0})",
+    "showAllMedalists": "Pokaż wszystkich medalistów",
+    "showLess": "Pokaż mniej"
   },
   "details": {
     "header": "Informacje",
@@ -241,12 +248,14 @@
   "winners": {
     "title": "Medaliści",
     "year": "Rok",
+    "showMoreTournaments": "Pokaż jeszcze %{0} turniejów",
     "first": "1. Miejsce",
     "firstIn": "1. Miejsce w %{0}",
     "second": "2. miejsce",
     "secondIn": "2. miejsce w %{0}",
     "third": "3. miejsce",
-    "thirdIn": "3. miejsce w %{0}"
+    "thirdIn": "3. miejsce w %{0}",
+    "locationUnknown": "Brak informacji o miejscu"
   },
   "medals": {
     "gold": "Złoto",
@@ -263,6 +272,11 @@
     "gameRecords": "Zapisane partie",
     "medalists": "Medaliści",
     "countries": "Klasyfikacja medalowa",
+    "medalistView": {
+      "label": "Klasyfikacja medalistów",
+      "individuals": "Indywidualnie",
+      "countries": "Kraje"
+    },
     "attendants": "Top %{0} uczestników",
     "achievements": "Osiągnięcia",
     "bestParticipantsOnly": "Tylko najlepsi uczestnicy",
@@ -275,12 +289,15 @@
       "draws": "Remisy",
       "gamesWithColors": "Gier ze znanymi kolorami",
       "black": "% wygranych przez czarne",
+      "blackSample": "Na podstawie %{0} gier ze znanymi kolorami graczy",
       "resigned": "Wygranych przez poddanie",
       "timeout": "Wygranych przez czas",
       "sgfs": "Zapisów partii SGF",
       "relays": "Relacji na OGS",
       "streams": "Transmisji wideo",
-      "analysis": "Analiz AI"
+      "analysis": "Analiz AI",
+      "results": "Dane o partiach",
+      "media": "Media i dodatki"
     }
   },
   "categories": {
