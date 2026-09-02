@@ -51,6 +51,26 @@
     "showAllMedalists": "Pokaż wszystkich medalistów",
     "showLess": "Pokaż mniej"
   },
+  "search": {
+    "label": "Przeszukaj archiwum",
+    "placeholder": "Szukaj",
+    "loading": "Wczytywanie indeksu…",
+    "noResults": "Brak pasujących wyników",
+    "error": "Wyszukiwanie nie powiodło się. Ustaw fokus ponownie, aby spróbować jeszcze raz.",
+    "clear": "Wyczyść wyszukiwanie",
+    "close": "Zamknij wyszukiwanie",
+    "stats": "Statystyki",
+    "statsPage": "Strona statystyk",
+    "games": "%{0} gier",
+    "types": {
+      "tournament": "Turniej",
+      "player": "Strona gracza",
+      "player-games": "Gry",
+      "country": "Kraj",
+      "country-games": "Gry",
+      "category": "Kategoria"
+    }
+  },
   "details": {
     "header": "Informacje",
     "name": "Nazwa",

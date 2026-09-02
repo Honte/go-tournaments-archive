@@ -28,7 +28,7 @@ export async function HomePage({ event, locale }: HomePageProps) {
   return (
     <>
       <Hero event={event} translations={translations} />
-      <div className="mt-8 mb-6 flex flex-col gap-10">
+      <div className="mt-4 mb-6 flex flex-col gap-10">
         <Winners event={event} translations={translations} tournaments={tournaments} />
         <div className="grid items-stretch gap-5 md:grid-cols-2 xl:grid-cols-3">
           <section className="h-full rounded-xl border border-archive-border bg-archive-surface p-4 shadow-sm sm:p-5">

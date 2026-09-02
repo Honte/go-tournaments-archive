@@ -51,6 +51,26 @@
     "showAllMedalists": "Show all medalists",
     "showLess": "Show less"
   },
+  "search": {
+    "label": "Search archive",
+    "placeholder": "Search",
+    "loading": "Loading search index…",
+    "noResults": "No matching results",
+    "error": "Search failed. Focus again to retry.",
+    "clear": "Clear search",
+    "close": "Close search",
+    "stats": "Stats",
+    "statsPage": "Stats page",
+    "games": "%{0} games",
+    "types": {
+      "tournament": "Tournament",
+      "player": "Player page",
+      "player-games": "Games",
+      "country": "Country",
+      "country-games": "Games",
+      "category": "Category"
+    }
+  },
   "details": {
     "header": "About",
     "name": "Name",

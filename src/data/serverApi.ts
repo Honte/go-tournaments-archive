@@ -10,10 +10,13 @@ import type {
   TournamentWithDescription,
 } from '@/schema/data';
 import type { EventDefinition, EventContext, EventData } from '@/schema/event';
+import type { SearchIndex } from '@/schema/search';
 import type { Locale, Translations } from '@/i18n/consts';
 import { loadTranslations } from '@/i18n/server';
 import { loadTournamentDescription } from '@/data/description';
+import { readEventPlayersFile } from '@/data/eventPlayers';
 import { loadData } from '@/data/load';
+import { buildSearchIndex } from '@/data/search';
 import { IS_PRODUCTION } from '@/configuration';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -152,6 +155,20 @@ export async function getTranslations(event: EventContext, locale?: Locale): Pro
   }
 
   return loadTranslations(event, locale);
+}
+
+export async function getSearchIndex(event: EventContext, locale: Locale): Promise<SearchIndex> {
+  if (IS_PRODUCTION) {
+    return readDataAsset<SearchIndex>(event, join('search', `${locale}.json`));
+  }
+
+  const [data, translations, eventPlayers] = await Promise.all([
+    getData(event),
+    loadTranslations(event, locale),
+    readEventPlayersFile(event.id),
+  ]);
+
+  return buildSearchIndex(event, data, translations, eventPlayers);
 }
 
 async function readDataAsset<T>(event: EventContext, file: string): Promise<T> {

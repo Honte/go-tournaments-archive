@@ -2,6 +2,7 @@ import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { homeUrl, logoWhiteUrl } from '@/libs/urls';
+import { ArchiveSearch } from '@/components/navigation/ArchiveSearch';
 import { Link } from '@/components/navigation/Link';
 import { LocaleNavigation } from '@/components/navigation/LocaleNavigation';
 import { SideNavigation } from '@/components/navigation/SideNavigation';
@@ -27,18 +28,21 @@ export function Header({ event, translations }: TopBarProps) {
             close: t('navigation.closeMenu'),
           }}
         />
-        <Link
-          href={homeUrl(event, locale)}
-          className="flex items-center gap-2 md:gap-3 min-w-0"
-          title={t('navigation.home.title')}
-        >
-          <span className="sr-only">{t('navigation.home.anchor')}</span>
-          <img src={logoWhiteUrl(event)} alt="" className="h-4 xs:h-5 shrink-0" />
-          <span className="text-base xs:text-lg font-semibold truncate">
-            {t('navigation.archiveLabel', t('site.acronym'))}
-          </span>
-        </Link>
-        <div className="ml-auto flex shrink-0 items-center gap-2">
+        <div className="flex min-w-0 flex-1 items-center gap-2">
+          <div className="relative flex min-w-0 flex-1 items-center gap-3">
+            <Link
+              href={homeUrl(event, locale)}
+              className="flex items-center gap-2 md:gap-3 min-w-0 overflow-hidden"
+              title={t('navigation.home.title')}
+            >
+              <span className="sr-only">{t('navigation.home.anchor')}</span>
+              <img src={logoWhiteUrl(event)} alt="" className="h-4 xs:h-5 shrink-0" />
+              <span className="text-base xs:text-lg font-semibold truncate">
+                {t('navigation.archiveLabel', t('site.acronym'))}
+              </span>
+            </Link>
+            <ArchiveSearch event={event} translations={translations} />
+          </div>
           <LocaleNavigation
             strategy="param"
             locale={locale}

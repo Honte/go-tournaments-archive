@@ -73,7 +73,7 @@ export function MedalTable<T>({
                 )}
                 <span
                   className={clsx(
-                    href && 'pointer-events-none relative z-20 transition-colors group-hover:text-archive-accent'
+                    href && 'pointer-events-none relative z-20 transition-colors group-hover:text-archive-accent-hover'
                   )}
                 >
                   {toName(winner)}
