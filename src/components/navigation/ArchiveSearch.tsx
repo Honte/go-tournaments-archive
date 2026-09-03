@@ -11,7 +11,6 @@ import Select, {
   type SelectInstance,
   type SingleValue,
   type StylesConfig,
-  type ThemeConfig,
 } from 'react-select';
 import type { EventContext } from '@/schema/event';
 import type { Translations, Translator } from '@/i18n/consts';
@@ -24,6 +23,7 @@ import {
   type SearchDestination,
   type SearchEntity,
 } from '@/libs/search';
+import { archiveSelectTheme } from '@/components/ui/selectTheme';
 import { useSearchData } from '@/hooks/useSearchData';
 
 type SearchOption = {
@@ -100,29 +100,6 @@ const getStyles = (hero: boolean, expanded: boolean): StylesConfig<SearchOption,
   }),
   loadingMessage: (base) => ({ ...base, color: 'var(--color-archive-text-muted)' }),
   noOptionsMessage: (base) => ({ ...base, color: 'var(--color-archive-text-muted)' }),
-});
-
-const theme: ThemeConfig = (base) => ({
-  ...base,
-  borderRadius: 4,
-  colors: {
-    ...base.colors,
-    primary: 'var(--color-archive-accent)',
-    primary75: 'var(--color-archive-accent-hover)',
-    primary50: 'var(--color-archive-accent-soft)',
-    primary25: 'var(--color-archive-surface-hover)',
-    neutral0: 'var(--color-archive-surface)',
-    neutral5: 'var(--color-archive-page)',
-    neutral10: 'var(--color-archive-surface-muted)',
-    neutral20: 'var(--color-archive-border)',
-    neutral30: 'var(--color-archive-text-muted)',
-    neutral40: 'var(--color-archive-text-muted)',
-    neutral50: 'var(--color-archive-text-muted)',
-    neutral60: 'var(--color-archive-text)',
-    neutral70: 'var(--color-archive-text)',
-    neutral80: 'var(--color-archive-text)',
-    neutral90: 'var(--color-archive-text)',
-  },
 });
 
 export type ArchiveSearchProps = {
@@ -365,7 +342,7 @@ export function ArchiveSearch({ event, translations, variant = 'header' }: Archi
             ),
           }}
           styles={styles}
-          theme={theme}
+          theme={archiveSelectTheme}
         />
       </div>
     </div>

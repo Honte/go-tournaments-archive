@@ -32,16 +32,16 @@
   --color-archive-accent-text: #ffffff;
   --color-archive-control: #d1d5db;
   --color-archive-control-hover: #c9d7e1;
-  --color-archive-control-selected: #5287ae;
-  --color-archive-control-selected-text: #ffffff;
-  --color-archive-control-track: #d2d2d2;
+  --color-archive-control-selected: var(--color-archive-accent);
+  --color-archive-control-selected-text: var(--color-archive-accent-text);
+  --color-archive-control-track: var(--color-archive-border);
   --color-archive-shell: #222222;
   --color-archive-shell-muted: #999999;
-  --color-archive-shell-text: #f3f4f6ff;
+  --color-archive-shell-text: #f3f4f6;
   --color-archive-stone-black: #222222;
   --color-archive-stone-white: #f3f4f6;
-  --color-archive-stone-stroke-black: #222222;
-  --color-archive-stone-stroke-white: #222222;
+  --color-archive-stone-stroke-black: var(--color-archive-stone-black);
+  --color-archive-stone-stroke-white: var(--color-archive-stone-black);
   --color-archive-scrollbar: rgba(0, 0, 0, 0.25);
   --color-archive-scrollbar-hover: rgba(0, 0, 0, 0.4);
 }
@@ -74,10 +74,8 @@
   --color-archive-accent-soft: #4a3d20;
   --color-archive-accent-text: #1a160b;
   --color-archive-control: #252b32;
-  --color-archive-control-hover: #3a4652;
+  --color-archive-control-hover: var(--color-archive-surface-hover);
   --color-archive-control-selected: #e8b84a;
-  --color-archive-control-selected-text: #1a160b;
-  --color-archive-control-track: #4c5864;
   --color-archive-shell: #0d0f12;
   --color-archive-shell-muted: #111417;
   --color-archive-stone-stroke-black: #59636d;
