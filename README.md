@@ -50,6 +50,16 @@ Available event directories:
 
 Event-specific config, translations, colors, logo, data, and SGF files live in `events/[event-id]/`.
 
+### Hero backgrounds
+
+Add `background.jpg` or `background.png` to an event directory to display a decorative hero background. JPG takes
+precedence if both files exist. Without either file, the hero has no background decoration. Images are bundled with
+the site and fade into the current page color in both light and dark themes. Use a wide banner (for example, 1536 × 512)
+with its main subject on the right to leave room for the heading and search. Restart the development server after adding
+or removing an image; rebuild the site to publish image changes.
+
+The included event backgrounds are AI-generated test illustrations, not photographs of actual tournaments.
+
 ## Configuration modes
 
 Runtime configuration is preset-based:

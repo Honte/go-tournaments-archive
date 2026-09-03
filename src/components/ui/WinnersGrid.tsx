@@ -17,16 +17,16 @@ export function WinnersGrid({ announcements, items, lessLabel, moreLabel, previe
   const expandable = previewCount !== undefined && items.length > previewCount;
   const visibleItems = expandable && !expanded ? items.slice(0, previewCount) : items;
   const showMoreButton = expandable && !expanded && (
-    <button
+    <Button
       key="show-more"
       type="button"
       aria-expanded={false}
-      className="group flex w-full cursor-pointer items-center justify-center gap-2 px-4 py-2 text-center text-sm font-semibold text-archive-text transition-all hover:text-archive-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-archive-accent md:h-full md:rounded-xl md:border md:border-archive-border md:bg-archive-surface md:p-6 md:text-base md:shadow-sm md:hover:bg-archive-surface-hover md:hover:shadow-md"
+      className="justify-center justify-self-center text-center text-sm transition-all md:h-full md:w-full md:rounded-xl md:border md:border-archive-border md:bg-archive-surface md:p-6 md:text-base md:font-semibold md:shadow-sm md:hover:bg-archive-surface-hover md:hover:text-archive-accent-hover md:hover:shadow-md md:[&>span]:ml-2"
+      icon={<LuChevronDown className="size-4 transition-transform" />}
       onClick={() => setExpanded(true)}
     >
       {moreLabel}
-      <LuChevronDown className="size-4 shrink-0 transition-transform" aria-hidden="true" />
-    </button>
+    </Button>
   );
   const gridItems = showMoreButton ? [...visibleItems, showMoreButton] : visibleItems;
 
