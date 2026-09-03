@@ -36,7 +36,7 @@ export function Attendants({ event, players, translations }: AttendantsProps) {
           {players.slice(0, 10).map((player) => (
             <tr
               key={player.id}
-              className="group relative h-9 border-b border-archive-border/60 even:bg-archive-surface-muted/45 hover:bg-archive-accent-soft/40"
+              className="group relative h-9 even:bg-archive-surface-muted/45 hover:bg-archive-accent-soft/40"
             >
               <td className="px-1 py-1.5 text-left">
                 <Link

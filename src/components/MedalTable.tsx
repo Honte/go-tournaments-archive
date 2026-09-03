@@ -28,7 +28,7 @@ export function MedalTable<T>({
   const t = getTranslator(translations);
 
   return (
-    <table className="w-full table-fixed border-b border-archive-border text-center">
+    <table className="w-full table-fixed text-center">
       <colgroup>
         <col />
         <col className="w-8" />
@@ -59,7 +59,7 @@ export function MedalTable<T>({
             <tr
               key={toKey(winner)}
               className={clsx(
-                'group relative h-9 border-b border-archive-border/60 last:border-b-0 even:bg-archive-surface-muted/45',
+                'group relative h-9 even:bg-archive-surface-muted/45',
                 href && 'hover:bg-archive-accent-soft/40'
               )}
             >
