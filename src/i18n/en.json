@@ -311,7 +311,7 @@
       "blackSample": "Based on %{0} games with known player colors",
       "resigned": "Won by resign",
       "timeout": "Won by time",
-      "sgfs": "Games with SGF records",
+      "sgfs": "SGF records",
       "relays": "Relays on OGS",
       "streams": "Games streamed",
       "analysis": "AI analysis",
