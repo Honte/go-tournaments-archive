@@ -169,7 +169,7 @@ function CategoryTournamentMedalistsCard({
           <section className="grid min-w-0 grid-cols-[3rem_minmax(0,1fr)]" key={category}>
             <Link
               href={categoryUrl(event, translations.locale, category)}
-              className="flex items-center justify-center border-r border-archive-border bg-archive-surface-tint px-2 py-3 text-center text-xs font-bold tracking-wide text-archive-text no-underline transition-colors hover:text-archive-accent-hover focus-visible:-outline-offset-2 focus-visible:outline-2 focus-visible:outline-archive-accent"
+              className="flex items-center justify-center border-r border-archive-border bg-archive-surface-tint px-2 py-3 text-center text-xs font-bold tracking-wide text-archive-text no-underline transition-colors hover:text-archive-link-hover focus-visible:-outline-offset-2 focus-visible:outline-2 focus-visible:outline-archive-focus-ring"
               style={{ textDecoration: 'none' }}
               aria-label={t(`categories.full.${category}`)}
             >
@@ -213,7 +213,7 @@ function MedalRows({
               top[index].map((id) => (
                 <PlayerLink
                   key={id}
-                  className="block min-w-0 rounded-md px-1.5 py-1 text-current transition-colors hover:bg-archive-surface-hover-accent hover:text-archive-accent"
+                  className="block min-w-0 rounded-md px-1.5 py-1 text-current transition-colors hover:bg-archive-surface-hover-accent hover:text-archive-link"
                   event={event}
                   style={{ textDecoration: 'none' }}
                   playerId={players[id].id}
@@ -253,7 +253,7 @@ function TournamentAnnouncementRow({
         : undefined) ?? t('site.eventName');
 
   return (
-    <div className="group grid grid-cols-[auto_minmax(0,1fr)] items-stretch overflow-hidden rounded-xl border border-archive-accent bg-archive-accent text-archive-accent-text shadow-sm transition-colors duration-500 hover:bg-archive-accent-hover hover:text-archive-accent-text">
+    <div className="group grid grid-cols-[auto_minmax(0,1fr)] items-stretch overflow-hidden rounded-xl border border-archive-accent-fill bg-archive-accent-fill text-archive-accent-text shadow-sm transition-colors duration-500 hover:bg-archive-accent-fill-hover hover:text-archive-accent-text">
       <Link
         href={tournamentUrl(event, translations.locale, year)}
         className="flex items-center px-4 py-3 text-xl font-bold text-current no-underline hover:text-current sm:text-2xl"
@@ -293,10 +293,10 @@ function EventHeading({
   return (
     <Link
       href={tournamentUrl(event, translations.locale, year)}
-      className="group block text-current no-underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-archive-accent"
+      className="group block text-current no-underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-archive-focus-ring"
     >
       <header className="grid grid-cols-[auto_minmax(0,1fr)] items-center gap-x-4 border-b border-archive-border bg-archive-surface-muted px-3 py-3 transition-colors group-hover:bg-archive-surface-hover-accent sm:px-4">
-        <span className="text-xl font-bold transition-colors group-hover:text-archive-accent-hover sm:text-2xl">
+        <span className="text-xl font-bold transition-colors group-hover:text-archive-link-hover sm:text-2xl">
           {year}
         </span>
         <div className="flex min-w-0 flex-col items-end gap-1 text-xs text-current/75 sm:text-sm">

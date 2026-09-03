@@ -42,9 +42,9 @@ export function Attendants({ event, players, translations }: AttendantsProps) {
                 <Link
                   href={playerUrl(event, translations.locale, player.id)}
                   aria-label={player.name}
-                  className="absolute inset-0 z-10 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-archive-accent"
+                  className="absolute inset-0 z-10 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-archive-focus-ring"
                 />
-                <span className="pointer-events-none relative z-20 group-hover:text-archive-accent-hover">
+                <span className="pointer-events-none relative z-20 group-hover:text-archive-link-hover">
                   {player.name}
                 </span>
               </td>

@@ -149,17 +149,17 @@ function GameDetailLink({ detail, number }: { detail: GameDetail; number: Intl.N
       className="group min-w-0 rounded-lg px-1.5 py-1.5 transition-colors hover:bg-archive-surface-hover-accent"
     >
       <span className="grid min-h-6 grid-cols-[auto_minmax(0,1fr)_auto_auto] items-center gap-x-2">
-        <span className="flex size-6 shrink-0 items-center justify-center rounded-md bg-archive-accent text-archive-accent-text">
+        <span className="flex size-6 shrink-0 items-center justify-center rounded-md bg-archive-accent-fill text-archive-accent-text">
           <Icon className="size-3.5" aria-hidden="true" />
         </span>
-        <span className="min-w-0 text-sm leading-6 text-archive-text-muted group-hover:text-archive-accent-hover">
+        <span className="min-w-0 text-sm leading-6 text-archive-text-muted group-hover:text-archive-link-hover">
           {detail.label}
         </span>
         <strong className="text-right text-sm leading-6 whitespace-nowrap tabular-nums">
           {detail.formattedValue ?? number.format(detail.value)}
         </strong>
         <LuArrowRight
-          className="size-3.5 shrink-0 text-archive-text-muted transition-colors group-hover:text-archive-accent"
+          className="size-3.5 shrink-0 text-archive-text-muted transition-colors group-hover:text-archive-link"
           aria-hidden="true"
         />
       </span>
@@ -182,7 +182,7 @@ function GameDetailLink({ detail, number }: { detail: GameDetail; number: Intl.N
 function StatIcon({ icon: Icon, prominent = false }: { icon: IconType; prominent?: boolean }) {
   return (
     <span
-      className={`flex shrink-0 items-center justify-center rounded-xl bg-archive-accent text-archive-accent-text shadow-sm ${prominent ? 'size-11' : 'size-10'}`}
+      className={`flex shrink-0 items-center justify-center rounded-xl bg-archive-accent-fill text-archive-accent-text shadow-sm ${prominent ? 'size-11' : 'size-10'}`}
     >
       <Icon className="size-5" aria-hidden="true" />
     </span>
@@ -240,7 +240,7 @@ function BlackStone({ cx, cy }: { cx: number; cy: number }) {
   return (
     <>
       <WhiteStone cx={cx} cy={cy} />
-      <circle cx={cx} cy={cy} r="2.25" fill="var(--color-archive-accent)" />
+      <circle cx={cx} cy={cy} r="2.25" fill="var(--color-archive-accent-fill)" />
     </>
   );
 }

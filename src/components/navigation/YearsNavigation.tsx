@@ -24,7 +24,7 @@ export function YearsNavigation({ event, locale, years, current }: YearsNavigati
               <Link
                 key={year}
                 href={tournamentUrl(event, locale, year)}
-                className={clsx('text-archive-accent hover:text-archive-accent-hover font-bold underline', {
+                className={clsx('text-archive-link hover:text-archive-link-hover font-bold underline', {
                   hidden: year >= current,
                 })}
                 draggable={false}
@@ -39,7 +39,7 @@ export function YearsNavigation({ event, locale, years, current }: YearsNavigati
               <Link
                 key={year}
                 href={tournamentUrl(event, locale, year)}
-                className={clsx('text-archive-accent hover:text-archive-accent-hover font-bold underline', {
+                className={clsx('text-archive-link hover:text-archive-link-hover font-bold underline', {
                   hidden: year <= current,
                 })}
                 draggable={false}

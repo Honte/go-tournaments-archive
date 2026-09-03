@@ -5,7 +5,8 @@ export const archiveSelectTheme: ThemeConfig = (base) => ({
   borderRadius: 4,
   colors: {
     ...base.colors,
-    primary: 'var(--color-archive-accent)',
+    // Selected options use explicit control colors; primary styles focus borders and shadows.
+    primary: 'var(--color-archive-focus-ring)',
     primary75: 'var(--color-archive-accent-hover)',
     primary50: 'var(--color-archive-accent-soft)',
     primary25: 'var(--color-archive-surface-hover)',

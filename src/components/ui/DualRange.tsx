@@ -45,11 +45,13 @@ const thumbClassName = `pointer-events-none absolute inset-x-0 top-1/2 z-10 h-4 
   [&::-webkit-slider-thumb]:active:cursor-grabbing
   focus-visible:outline-none
   focus-visible:[&::-moz-range-thumb]:ring-4
-  focus-visible:[&::-moz-range-thumb]:ring-archive-accent
+  focus-visible:[&::-moz-range-thumb]:ring-archive-focus-ring
   focus-visible:[&::-moz-range-thumb]:ring-offset-1
+  focus-visible:[&::-moz-range-thumb]:ring-offset-archive-surface
   focus-visible:[&::-webkit-slider-thumb]:ring-4
-  focus-visible:[&::-webkit-slider-thumb]:ring-archive-accent
-  focus-visible:[&::-webkit-slider-thumb]:ring-offset-1`;
+  focus-visible:[&::-webkit-slider-thumb]:ring-archive-focus-ring
+  focus-visible:[&::-webkit-slider-thumb]:ring-offset-1
+  focus-visible:[&::-webkit-slider-thumb]:ring-offset-archive-surface`;
 
 export function DualRange({ lowerValue, upperValue, minimum, maximum, ...props }: DualRangeProps) {
   const normalizedLower = clamp(Math.min(lowerValue, upperValue), minimum, maximum);

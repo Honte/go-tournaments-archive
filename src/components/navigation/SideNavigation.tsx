@@ -81,12 +81,12 @@ export function SideNavigation({ event, locale, strings }: SideNavigationProps) 
                         title={link.tooltip}
                         onClick={closeMenu}
                         className={clsx(
-                          'group flex gap-1 items-baseline py-1 px-2 text-archive-accent font-semibold underline hover:text-archive-accent-hover hover:bg-archive-surface-hover rounded-sm'
+                          'group flex gap-1 items-baseline py-1 px-2 text-archive-link font-semibold underline hover:text-archive-link-hover hover:bg-archive-surface-hover rounded-sm'
                         )}
                       >
                         {link.label}
                         {link.description && (
-                          <span className="text-xs text-archive-text-muted group-hover:text-archive-accent-hover">
+                          <span className="text-xs text-archive-text-muted group-hover:text-archive-link-hover">
                             {link.description}
                           </span>
                         )}

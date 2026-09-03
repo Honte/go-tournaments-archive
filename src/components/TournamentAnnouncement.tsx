@@ -22,7 +22,7 @@ export function TournamentAnnouncement({ tournament, translations }: TournamentA
         : undefined) ?? t('site.eventName');
 
   return (
-    <section className="my-4 flex items-center justify-center rounded-lg bg-archive-accent text-xl text-archive-accent-text transition-colors duration-500 hover:bg-archive-accent-hover">
+    <section className="my-4 flex items-center justify-center rounded-lg bg-archive-accent-fill text-xl text-archive-accent-text transition-colors duration-500 hover:bg-archive-accent-fill-hover">
       {tournament.website && !Array.isArray(tournament.website) ? (
         <a href={tournament.website} className="cursor-pointer p-4 flex flex-1 gap-2 items-center justify-center">
           {content}

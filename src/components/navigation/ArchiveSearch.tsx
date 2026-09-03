@@ -49,10 +49,10 @@ const getStyles = (hero: boolean, expanded: boolean): StylesConfig<SearchOption,
     borderColor: !expanded
       ? 'rgb(255 255 255 / 0.25)'
       : state.isFocused
-        ? 'var(--color-archive-accent)'
+        ? 'var(--color-archive-focus-ring)'
         : 'var(--color-archive-border)',
     boxShadow: hero ? '0 1px 2px rgb(0 0 0 / 0.05)' : 'none',
-    '&:hover': { borderColor: expanded ? 'var(--color-archive-accent-hover)' : 'rgb(255 255 255 / 0.25)' },
+    '&:hover': { borderColor: expanded ? 'var(--color-archive-focus-ring)' : 'rgb(255 255 255 / 0.25)' },
   }),
   valueContainer: (base) => ({
     ...base,
@@ -316,7 +316,7 @@ export function ArchiveSearch({ event, translations, variant = 'header' }: Archi
                 <div className="flex h-full shrink-0 items-center" onTouchEnd={(event) => event.stopPropagation()}>
                   <button
                     type="button"
-                    className={`flex h-full shrink-0 cursor-pointer items-center justify-center focus-visible:outline-2 focus-visible:-outline-offset-2 ${hero ? 'w-11' : 'w-7.5'} ${expanded ? 'text-archive-text-muted hover:text-archive-text focus-visible:outline-archive-accent' : 'text-xs text-archive-shell-text focus-visible:outline-archive-shell-text'}`}
+                    className={`flex h-full shrink-0 cursor-pointer items-center justify-center focus-visible:outline-2 focus-visible:-outline-offset-2 ${hero ? 'w-11' : 'w-7.5'} ${expanded ? 'text-archive-text-muted hover:text-archive-text focus-visible:outline-archive-focus-ring' : 'text-xs text-archive-shell-text focus-visible:outline-archive-shell-text'}`}
                     aria-label={indicatorLabel}
                     aria-expanded={hero ? undefined : expanded}
                     aria-controls={`${id}-input`}

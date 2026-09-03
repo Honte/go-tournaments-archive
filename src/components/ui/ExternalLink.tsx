@@ -11,7 +11,7 @@ export function ExternalLink({
   return (
     <a
       href={href}
-      className={twMerge(`underline text-archive-accent hover:text-archive-accent-hover ${className || ''}`)}
+      className={twMerge(`underline text-archive-link hover:text-archive-link-hover ${className || ''}`)}
       title={title}
       aria-label={title}
       {...props}

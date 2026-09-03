@@ -12,7 +12,7 @@ export function YearLink({ event, year, locale }: YearLinkProps) {
   return (
     <Link
       href={tournamentUrl(event, locale, year)}
-      className="underline text-archive-accent hover:text-archive-accent-hover"
+      className="underline text-archive-link hover:text-archive-link-hover"
     >
       {year}
     </Link>

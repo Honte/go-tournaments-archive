@@ -19,7 +19,7 @@ export function PlayerLink({ event, playerId, locale, children, className, ...pr
   return (
     <Link
       href={playerUrl(event, locale, playerId)}
-      className={clsx('underline underline-offset-2 hover:text-archive-accent-hover', className)}
+      className={clsx('underline underline-offset-2 hover:text-archive-link-hover', className)}
       {...props}
     >
       {children}

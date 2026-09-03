@@ -65,12 +65,10 @@ export function MedalTable<T>({
                   <Link
                     href={href}
                     aria-label={toLinkLabel?.(winner)}
-                    className="absolute inset-0 z-10 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-archive-accent"
+                    className="absolute inset-0 z-10 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-archive-focus-ring"
                   />
                 )}
-                <span
-                  className={clsx(href && 'pointer-events-none relative z-20 group-hover:text-archive-accent-hover')}
-                >
+                <span className={clsx(href && 'pointer-events-none relative z-20 group-hover:text-archive-link-hover')}>
                   {toName(winner)}
                 </span>
               </td>

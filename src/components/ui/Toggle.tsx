@@ -15,7 +15,7 @@ export function Toggle({ checked, onChange, children, className, disabled }: Tog
   return (
     <label
       className={clsx('flex items-center gap-1 text-sm select-none', className, {
-        'cursor-pointer hover:text-archive-accent-hover': !disabled,
+        'cursor-pointer hover:text-archive-link-hover': !disabled,
         'cursor-not-allowed opacity-45': disabled,
       })}
     >

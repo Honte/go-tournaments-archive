@@ -21,7 +21,7 @@ export function WinnersGrid({ announcements, items, lessLabel, moreLabel, previe
       key="show-more"
       type="button"
       aria-expanded={false}
-      className="justify-center justify-self-center text-center text-sm transition-all md:h-full md:w-full md:rounded-xl md:border md:border-archive-border md:bg-archive-surface md:p-6 md:text-base md:font-semibold md:shadow-sm md:hover:bg-archive-surface-hover-accent md:hover:text-archive-accent-hover md:hover:shadow-md md:[&>span]:ml-2"
+      className="justify-center justify-self-center text-center text-sm transition-all md:h-full md:w-full md:rounded-xl md:border md:border-archive-border md:bg-archive-surface md:p-6 md:text-base md:font-semibold md:shadow-sm md:hover:bg-archive-surface-hover-accent md:hover:text-archive-link-hover md:hover:shadow-md md:[&>span]:ml-2"
       icon={<LuChevronDown className="size-4 transition-transform" />}
       onClick={() => setExpanded(true)}
     >

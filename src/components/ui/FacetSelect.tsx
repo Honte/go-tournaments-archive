@@ -49,7 +49,7 @@ const styles: StylesConfig<FacetOption, boolean> = {
     ...base,
     backgroundColor: 'var(--color-archive-surface)',
     '&:hover': {
-      borderColor: 'var(--color-archive-accent-hover)',
+      borderColor: 'var(--color-archive-focus-ring)',
     },
   }),
   menu: (base) => ({

@@ -33,10 +33,10 @@ export function SegmentedControl<Value extends string>({
           aria-controls={controlsId}
           aria-pressed={value === option.value}
           className={clsx(
-            'inline-flex cursor-pointer rounded-sm px-1.5 py-0.5 text-sm leading-4 font-bold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-archive-accent',
+            'inline-flex cursor-pointer rounded-sm px-1.5 py-0.5 text-sm leading-4 font-bold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-archive-focus-ring',
             value === option.value
               ? 'bg-archive-control-selected text-archive-control-selected-text'
-              : 'text-archive-text hover:bg-archive-control-hover hover:text-archive-accent-hover'
+              : 'text-archive-text hover:bg-archive-control-hover hover:text-archive-link-hover'
           )}
           onClick={() => onChange(option.value)}
         >

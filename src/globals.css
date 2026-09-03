@@ -41,8 +41,15 @@
   --color-archive-accent-soft: color-mix(in oklab, var(--color-archive-accent) 20%, var(--color-archive-surface));
   --color-archive-surface-hover: color-mix(in oklab, var(--color-archive-accent) 10%, var(--color-archive-surface));
   --color-archive-control-hover: color-mix(in oklab, var(--color-archive-accent) 30%, var(--color-archive-surface));
-  --color-archive-control-selected: var(--color-archive-accent);
+  --color-archive-control-selected: var(--color-archive-accent-fill);
   --color-archive-control-selected-text: var(--color-archive-accent-text);
+
+  /* Separate readable text, filled surfaces, and focus indicators from decorative accents. */
+  --color-archive-link: oklch(from var(--color-archive-accent) calc(l - 0.1) c h);
+  --color-archive-link-hover: oklch(from var(--color-archive-link) calc(l - 0.04) c h);
+  --color-archive-focus-ring: oklch(from var(--color-archive-accent) calc(l - 0.12) c h);
+  --color-archive-accent-fill: oklch(from var(--color-archive-accent) calc(l - 0.06) c h);
+  --color-archive-accent-fill-hover: oklch(from var(--color-archive-accent-fill) calc(l - 0.04) c h);
 
   /* Shared interaction overlays and table stripes. */
   --color-archive-surface-hover-accent: color-mix(in oklab, var(--color-archive-accent) 20%, transparent);
@@ -96,6 +103,11 @@
   --color-archive-accent-hover: oklch(from var(--color-archive-accent) calc(l + 0.2) c h);
   --color-archive-accent-soft: color-mix(in oklab, var(--color-archive-accent) 35%, var(--color-archive-shell));
   --color-archive-control-selected: oklch(from var(--color-archive-accent) calc(l + 0.12) c h);
+  --color-archive-link: oklch(from var(--color-archive-accent) calc(l + 0.12) c h);
+  --color-archive-link-hover: oklch(from var(--color-archive-link) calc(l + 0.06) c h);
+  --color-archive-focus-ring: oklch(from var(--color-archive-accent) calc(l + 0.16) c h);
+  --color-archive-accent-fill: var(--color-archive-accent);
+  --color-archive-accent-fill-hover: var(--color-archive-accent-hover);
   --color-archive-stone-stroke-black: color-mix(
     in oklab,
     var(--color-archive-stone-black) 45%,
