@@ -1,5 +1,7 @@
 {
   "site": {
+    "tournamentsTitle": "Tournaments",
+    "tournamentsDescription": "Results and statistics of all tournaments",
     "name": "Tournament Archive",
     "eventName": "Tournament",
     "description": "Archive of all tournaments",
@@ -47,6 +49,7 @@
     "allEvents": "All events"
   },
   "actions": {
+    "showTournamentsStats": "Show tournaments stats",
     "showMore": "Show more (%{0})",
     "showAllMedalists": "Show all medalists",
     "showLess": "Show less"
@@ -123,6 +126,7 @@
     }
   },
   "table": {
+    "stages": "Stages",
     "year": "Year",
     "code": "Code",
     "category": "Category",

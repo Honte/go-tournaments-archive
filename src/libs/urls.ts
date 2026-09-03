@@ -16,6 +16,10 @@ export function tournamentUrl(event: EventContext, locale: string, year: number 
   return joinPaths(event.prefix, `/${locale}/${year}`);
 }
 
+export function tournamentsUrl(event: EventContext, locale: string) {
+  return joinPaths(event.prefix, `/${locale}/tournaments`);
+}
+
 export function categoryUrl(event: EventContext, locale: string, category: string) {
   return joinPaths(event.prefix, `/${locale}/category/${category}`);
 }

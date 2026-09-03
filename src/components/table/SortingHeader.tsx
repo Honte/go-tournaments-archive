@@ -8,5 +8,9 @@ export function SortingHeader<T extends RowData>({ header }: { header: StatsTabl
     return null;
   }
 
-  return <span className="text-xs ml-1 ">{state === 'asc' ? '▲' : '▼'}</span>;
+  return (
+    <span aria-hidden="true" className="text-xs ml-1">
+      {state === 'asc' ? '▲' : '▼'}
+    </span>
+  );
 }

@@ -1,6 +1,7 @@
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
+import { tournamentsUrl } from '@/libs/urls';
 import { TournamentAnnouncementBanner } from '@/components/home/TournamentAnnouncementBanner';
 import { TournamentGrid } from '@/components/home/TournamentGrid';
 import { TournamentMedalistsCard } from '@/components/home/TournamentMedalistsCard';
@@ -20,6 +21,8 @@ export function TournamentCards({ event, previewCount, results, translations }: 
 
   return (
     <TournamentGrid
+      statsHref={tournamentsUrl(event, translations.locale)}
+      statsLabel={t('actions.showTournamentsStats')}
       announcements={announcements.map((announcement) => (
         <TournamentAnnouncementBanner
           key={announcement.year}

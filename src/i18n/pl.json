@@ -1,5 +1,7 @@
 {
   "site": {
+    "tournamentsTitle": "Turnieje",
+    "tournamentsDescription": "Wyniki i statystyki wszystkich turniejów",
     "name": "Archiwum Turniejów Go",
     "eventName": "Turniej",
     "description": "Archiwum wyników wszystkich turniejów w Go",
@@ -47,6 +49,7 @@
     "allEvents": "Wszystkie wydarzenia"
   },
   "actions": {
+    "showTournamentsStats": "Pokaż statystyki turniejów",
     "showMore": "Pokaż więcej (%{0})",
     "showAllMedalists": "Pokaż wszystkich medalistów",
     "showLess": "Pokaż mniej"
@@ -123,6 +126,7 @@
     }
   },
   "table": {
+    "stages": "Etapy",
     "year": "Rok",
     "code": "Kod",
     "category": "Kategoria",
