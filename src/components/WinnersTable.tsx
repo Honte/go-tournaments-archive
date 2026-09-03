@@ -213,7 +213,7 @@ function MedalRows({
               top[index].map((id) => (
                 <PlayerLink
                   key={id}
-                  className="block min-w-0 rounded-md px-1.5 py-1 text-current transition-colors hover:bg-archive-accent-soft/40 hover:text-archive-accent-hover"
+                  className="block min-w-0 rounded-md px-1.5 py-1 text-current transition-colors hover:bg-archive-accent/20 hover:text-archive-accent"
                   event={event}
                   style={{ textDecoration: 'none' }}
                   playerId={players[id].id}
@@ -295,7 +295,7 @@ function EventHeading({
       href={tournamentUrl(event, translations.locale, year)}
       className="group block text-current no-underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-archive-accent"
     >
-      <header className="grid grid-cols-[auto_minmax(0,1fr)] items-center gap-x-4 border-b border-archive-border bg-archive-surface-muted px-3 py-3 transition-colors group-hover:bg-archive-accent-soft/40 sm:px-4">
+      <header className="grid grid-cols-[auto_minmax(0,1fr)] items-center gap-x-4 border-b border-archive-border bg-archive-surface-muted px-3 py-3 transition-colors group-hover:bg-archive-accent/20 sm:px-4">
         <span className="text-xl font-bold transition-colors group-hover:text-archive-accent-hover sm:text-2xl">
           {year}
         </span>

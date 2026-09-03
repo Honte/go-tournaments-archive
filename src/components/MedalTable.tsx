@@ -58,10 +58,7 @@ export function MedalTable<T>({
           return (
             <tr
               key={toKey(winner)}
-              className={clsx(
-                'group relative h-9 even:bg-archive-surface-muted/45',
-                href && 'hover:bg-archive-accent-soft/40'
-              )}
+              className={clsx('group relative h-9 even:bg-archive-surface-muted/45 hover:bg-archive-accent/20')}
             >
               <td className="px-1 py-1.5 text-left">
                 {href && (
@@ -72,9 +69,7 @@ export function MedalTable<T>({
                   />
                 )}
                 <span
-                  className={clsx(
-                    href && 'pointer-events-none relative z-20 transition-colors group-hover:text-archive-accent-hover'
-                  )}
+                  className={clsx(href && 'pointer-events-none relative z-20 group-hover:text-archive-accent-hover')}
                 >
                   {toName(winner)}
                 </span>

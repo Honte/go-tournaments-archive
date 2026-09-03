@@ -146,13 +146,15 @@ function GameDetailLink({ detail, number }: { detail: GameDetail; number: Intl.N
     <Link
       href={detail.href}
       title={detail.title}
-      className="group min-w-0 rounded-lg px-1.5 py-1.5 transition-colors hover:bg-archive-accent-soft/40"
+      className="group min-w-0 rounded-lg px-1.5 py-1.5 transition-colors hover:bg-archive-accent/20"
     >
       <span className="grid min-h-6 grid-cols-[auto_minmax(0,1fr)_auto_auto] items-center gap-x-2">
         <span className="flex size-6 shrink-0 items-center justify-center rounded-md bg-archive-accent text-archive-accent-text">
           <Icon className="size-3.5" aria-hidden="true" />
         </span>
-        <span className="min-w-0 text-sm leading-6 text-archive-text-muted">{detail.label}</span>
+        <span className="min-w-0 text-sm leading-6 text-archive-text-muted group-hover:text-archive-accent-hover">
+          {detail.label}
+        </span>
         <strong className="text-right text-sm leading-6 whitespace-nowrap tabular-nums">
           {detail.formattedValue ?? number.format(detail.value)}
         </strong>

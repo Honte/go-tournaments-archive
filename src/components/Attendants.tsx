@@ -36,7 +36,7 @@ export function Attendants({ event, players, translations }: AttendantsProps) {
           {players.slice(0, 10).map((player) => (
             <tr
               key={player.id}
-              className="group relative h-9 even:bg-archive-surface-muted/45 hover:bg-archive-accent-soft/40"
+              className="group relative h-9 even:bg-archive-surface-muted/45 hover:bg-archive-accent/20"
             >
               <td className="px-1 py-1.5 text-left">
                 <Link
@@ -44,7 +44,7 @@ export function Attendants({ event, players, translations }: AttendantsProps) {
                   aria-label={player.name}
                   className="absolute inset-0 z-10 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-archive-accent"
                 />
-                <span className="pointer-events-none relative z-20 transition-colors group-hover:text-archive-accent-hover">
+                <span className="pointer-events-none relative z-20 group-hover:text-archive-accent-hover">
                   {player.name}
                 </span>
               </td>
