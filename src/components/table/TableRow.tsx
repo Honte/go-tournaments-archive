@@ -11,7 +11,7 @@ export const TableRow = memo(TableRowComponent) as typeof TableRowComponent;
 
 function TableRowComponent<T extends RowData>({ row, className, ...props }: TableCellProps<T>) {
   return (
-    <tr key={row.id} className={clsx('text-center hover:bg-archive-accent/20', className)} {...props}>
+    <tr key={row.id} className={clsx('text-center hover:bg-archive-row-hover', className)} {...props}>
       {row.getAllCells().map((cell) => {
         const colSpan = cell.getColSpan();
 

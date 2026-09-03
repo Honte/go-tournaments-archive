@@ -146,7 +146,7 @@ function GameDetailLink({ detail, number }: { detail: GameDetail; number: Intl.N
     <Link
       href={detail.href}
       title={detail.title}
-      className="group min-w-0 rounded-lg px-1.5 py-1.5 transition-colors hover:bg-archive-accent/20"
+      className="group min-w-0 rounded-lg px-1.5 py-1.5 transition-colors hover:bg-archive-surface-hover-accent"
     >
       <span className="grid min-h-6 grid-cols-[auto_minmax(0,1fr)_auto_auto] items-center gap-x-2">
         <span className="flex size-6 shrink-0 items-center justify-center rounded-md bg-archive-accent text-archive-accent-text">

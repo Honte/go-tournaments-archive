@@ -28,7 +28,7 @@ export function ClassificationTable({ event, stage, players, translations }: Cla
           const isShared = stage.table[index - 1]?.place === place;
 
           return (
-            <tr key={index} className="even:bg-archive-surface-muted hover:bg-archive-surface-hover">
+            <tr key={index} className="even:bg-archive-row-stripe hover:bg-archive-row-hover">
               <td className="p-1 text-center">{isShared ? `(${index + 1})` : place}</td>
               <td>
                 <PlayerLink

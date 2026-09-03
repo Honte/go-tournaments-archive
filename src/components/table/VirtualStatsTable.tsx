@@ -59,7 +59,7 @@ export function VirtualStatsTable<T extends RowData>({ data, columns }: VirtualS
                   key={row.id}
                   ref={rowVirtualizer.measureElement}
                   data-index={virtualRow.index}
-                  className={virtualRow.index % 2 === 1 ? 'bg-archive-surface-muted' : ''}
+                  className={virtualRow.index % 2 === 1 ? 'bg-archive-row-stripe' : ''}
                 />
               );
             })}

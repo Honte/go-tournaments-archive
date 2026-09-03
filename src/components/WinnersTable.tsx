@@ -169,7 +169,7 @@ function CategoryTournamentMedalistsCard({
           <section className="grid min-w-0 grid-cols-[3rem_minmax(0,1fr)]" key={category}>
             <Link
               href={categoryUrl(event, translations.locale, category)}
-              className="flex items-center justify-center border-r border-archive-border bg-archive-accent-soft/40 px-2 py-3 text-center text-xs font-bold tracking-wide text-archive-text no-underline transition-colors hover:text-archive-accent-hover focus-visible:-outline-offset-2 focus-visible:outline-2 focus-visible:outline-archive-accent"
+              className="flex items-center justify-center border-r border-archive-border bg-archive-surface-tint px-2 py-3 text-center text-xs font-bold tracking-wide text-archive-text no-underline transition-colors hover:text-archive-accent-hover focus-visible:-outline-offset-2 focus-visible:outline-2 focus-visible:outline-archive-accent"
               style={{ textDecoration: 'none' }}
               aria-label={t(`categories.full.${category}`)}
             >
@@ -213,7 +213,7 @@ function MedalRows({
               top[index].map((id) => (
                 <PlayerLink
                   key={id}
-                  className="block min-w-0 rounded-md px-1.5 py-1 text-current transition-colors hover:bg-archive-accent/20 hover:text-archive-accent"
+                  className="block min-w-0 rounded-md px-1.5 py-1 text-current transition-colors hover:bg-archive-surface-hover-accent hover:text-archive-accent"
                   event={event}
                   style={{ textDecoration: 'none' }}
                   playerId={players[id].id}
@@ -295,7 +295,7 @@ function EventHeading({
       href={tournamentUrl(event, translations.locale, year)}
       className="group block text-current no-underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-archive-accent"
     >
-      <header className="grid grid-cols-[auto_minmax(0,1fr)] items-center gap-x-4 border-b border-archive-border bg-archive-surface-muted px-3 py-3 transition-colors group-hover:bg-archive-accent/20 sm:px-4">
+      <header className="grid grid-cols-[auto_minmax(0,1fr)] items-center gap-x-4 border-b border-archive-border bg-archive-surface-muted px-3 py-3 transition-colors group-hover:bg-archive-surface-hover-accent sm:px-4">
         <span className="text-xl font-bold transition-colors group-hover:text-archive-accent-hover sm:text-2xl">
           {year}
         </span>
