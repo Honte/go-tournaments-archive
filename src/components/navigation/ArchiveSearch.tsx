@@ -23,7 +23,7 @@ import {
   type SearchDestination,
   type SearchEntity,
 } from '@/libs/search';
-import { archiveSelectTheme } from '@/components/ui/selectTheme';
+import { SELECT_THEME } from '@/libs/themes';
 import { useSearchData } from '@/hooks/useSearchData';
 
 type SearchOption = {
@@ -342,7 +342,7 @@ export function ArchiveSearch({ event, translations, variant = 'header' }: Archi
             ),
           }}
           styles={styles}
-          theme={archiveSelectTheme}
+          theme={SELECT_THEME}
         />
       </div>
     </div>

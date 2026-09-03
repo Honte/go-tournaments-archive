@@ -9,7 +9,7 @@ import Select, {
   type SingleValue,
   type StylesConfig,
 } from 'react-select';
-import { archiveSelectTheme } from '@/components/ui/selectTheme';
+import { SELECT_THEME } from '@/libs/themes';
 
 export type FacetOption = {
   value: string;
@@ -166,7 +166,7 @@ export const FacetSelect = memo(function FacetSelect({
         hideSelectedOptions={false}
         menuPlacement="auto"
         styles={styles}
-        theme={archiveSelectTheme}
+        theme={SELECT_THEME}
       />
     </div>
   );
@@ -232,7 +232,7 @@ export const MultiFacetSelect = memo(function MultiFacetSelect({
         hideSelectedOptions={false}
         menuPlacement="auto"
         styles={styles}
-        theme={archiveSelectTheme}
+        theme={SELECT_THEME}
       />
     </div>
   );

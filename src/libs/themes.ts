@@ -1,6 +1,6 @@
 import type { ThemeConfig } from 'react-select';
 
-export const archiveSelectTheme: ThemeConfig = (base) => ({
+export const SELECT_THEME: ThemeConfig = (base) => ({
   ...base,
   borderRadius: 4,
   colors: {
