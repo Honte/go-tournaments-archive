@@ -2,10 +2,10 @@ import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { homeUrl, logoWhiteUrl } from '@/libs/urls';
-import { ArchiveSearch } from '@/components/navigation/ArchiveSearch';
 import { Link } from '@/components/navigation/Link';
 import { LocaleNavigation } from '@/components/navigation/LocaleNavigation';
 import { SideNavigation } from '@/components/navigation/SideNavigation';
+import { ArchiveSearch } from '@/components/search/ArchiveSearch';
 import { ThemeSwitch } from '@/components/ui/ThemeSwitch';
 
 type TopBarProps = {

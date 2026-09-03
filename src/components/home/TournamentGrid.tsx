@@ -4,7 +4,7 @@ import { useState, type ReactNode } from 'react';
 import { LuChevronDown } from 'react-icons/lu';
 import { Button } from '@/components/ui/Button';
 
-type WinnersGridProps = {
+type TournamentGridProps = {
   announcements: ReactNode[];
   items: ReactNode[];
   lessLabel: string;
@@ -12,7 +12,7 @@ type WinnersGridProps = {
   previewCount?: number;
 };
 
-export function WinnersGrid({ announcements, items, lessLabel, moreLabel, previewCount }: WinnersGridProps) {
+export function TournamentGrid({ announcements, items, lessLabel, moreLabel, previewCount }: TournamentGridProps) {
   const [expanded, setExpanded] = useState(false);
   const expandable = previewCount !== undefined && items.length > previewCount;
   const visibleItems = expandable && !expanded ? items.slice(0, previewCount) : items;

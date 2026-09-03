@@ -3,17 +3,17 @@ import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { playerUrl } from '@/libs/urls';
-import { AllPlayersStatsLink } from '@/components/AllPlayersStatsLink';
+import { AllPlayersStatsLink } from '@/components/home/AllPlayersStatsLink';
 import { Link } from '@/components/navigation/Link';
 import { H1 } from '@/components/ui/H1';
 
-type AttendantsProps = {
+type MostFrequentPlayersProps = {
   event: EventContext;
   players: PlayerSummary[];
   translations: Translations;
 };
 
-export function Attendants({ event, players, translations }: AttendantsProps) {
+export function MostFrequentPlayers({ event, players, translations }: MostFrequentPlayersProps) {
   const t = getTranslator(translations);
 
   return (

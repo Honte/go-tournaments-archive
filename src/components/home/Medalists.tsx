@@ -6,13 +6,13 @@ import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { playerUrl } from '@/libs/urls';
-import { AllCountriesStatsLink } from '@/components/AllCountriesStatsLink';
-import { CountryMedalists } from '@/components/CountryMedalists';
+import { AllCountriesStatsLink } from '@/components/home/AllCountriesStatsLink';
+import { CountryMedalists } from '@/components/home/CountryMedalists';
 import { MedalTable } from '@/components/MedalTable';
 import { ExpandableContent } from '@/components/ui/ExpandableContent';
 import { H1 } from '@/components/ui/H1';
+import { PlayerName } from '@/components/ui/PlayerName';
 import { SegmentedControl } from '@/components/ui/SegmentedControl';
-import { PlayerName } from './ui/PlayerName';
 
 type MedalistView = 'individuals' | 'countries';
 

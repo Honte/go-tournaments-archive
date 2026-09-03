@@ -3,104 +3,25 @@
 import { useRouter } from 'next/navigation';
 import { type FocusEvent, useId, useMemo, useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
-import { LuSearch, LuX } from 'react-icons/lu';
+import { LuSearch } from 'react-icons/lu';
 import Select, {
   components,
   type ControlProps,
   type InputActionMeta,
   type SelectInstance,
   type SingleValue,
-  type StylesConfig,
 } from 'react-select';
 import type { EventContext } from '@/schema/event';
-import type { Translations, Translator } from '@/i18n/consts';
+import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { navigate } from '@/libs/navigation';
-import {
-  findSearchResults,
-  getSearchDestinations,
-  prepareSearchEntities,
-  type SearchDestination,
-  type SearchEntity,
-} from '@/libs/search';
+import { findSearchResults, getSearchDestinations, prepareSearchEntities } from '@/libs/search';
 import { SELECT_THEME } from '@/libs/themes';
+import { SearchIndicator } from '@/components/search/SearchIndicator';
+import { createOption, type SearchOption } from '@/components/search/searchOptions';
+import { SearchResultOption } from '@/components/search/SearchResultOption';
+import { getSearchStyles } from '@/components/search/searchStyles';
 import { useSearchData } from '@/hooks/useSearchData';
-
-type SearchOption = {
-  value: string;
-  label: string;
-  primary: string;
-  secondary?: string;
-  href: string;
-  gamesHref?: string;
-  gamesLabel?: string;
-};
-
-const getStyles = (hero: boolean, expanded: boolean): StylesConfig<SearchOption, false> => ({
-  container: (base) => ({ ...base, width: '100%' }),
-  control: (base, state) => ({
-    ...base,
-    minHeight: hero ? 46 : 32,
-    height: hero ? 46 : 32,
-    borderRadius: hero ? 8 : 6,
-    backgroundColor: expanded ? 'var(--color-archive-surface)' : 'rgb(255 255 255 / 0.1)',
-    flexWrap: 'nowrap',
-    overflow: 'hidden',
-    borderColor: !expanded
-      ? 'rgb(255 255 255 / 0.25)'
-      : state.isFocused
-        ? 'var(--color-archive-focus-ring)'
-        : 'var(--color-archive-border)',
-    boxShadow: hero ? '0 1px 2px rgb(0 0 0 / 0.05)' : 'none',
-    '&:hover': { borderColor: expanded ? 'var(--color-archive-focus-ring)' : 'rgb(255 255 255 / 0.25)' },
-  }),
-  valueContainer: (base) => ({
-    ...base,
-    display: expanded ? base.display : 'none',
-    minWidth: 0,
-    padding: hero ? '0 12px' : '0 8px',
-  }),
-  input: (base) => ({
-    ...base,
-    margin: 0,
-    color: 'var(--color-archive-text)',
-  }),
-  placeholder: (base) => ({
-    ...base,
-    color: 'var(--color-archive-text-muted)',
-    whiteSpace: 'nowrap',
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',
-  }),
-  indicatorsContainer: (base) => ({
-    ...base,
-    height: hero ? 44 : 30,
-    marginLeft: 'auto',
-  }),
-  menu: (base) => ({
-    ...base,
-    right: 0,
-    left: 'auto',
-    zIndex: 50,
-    minWidth: 0,
-    marginTop: 4,
-    marginBottom: 4,
-    backgroundColor: 'var(--color-archive-surface)',
-    border: '1px solid var(--color-archive-border)',
-    borderRadius: hero ? 8 : 6,
-    overflow: 'hidden',
-    color: 'var(--color-archive-text)',
-  }),
-  option: (base, state) => ({
-    ...base,
-    cursor: 'pointer',
-    backgroundColor: state.isFocused ? 'var(--color-archive-surface-hover)' : 'var(--color-archive-surface)',
-    color: 'var(--color-archive-text)',
-    '&:active': { backgroundColor: 'var(--color-archive-accent-soft)' },
-  }),
-  loadingMessage: (base) => ({ ...base, color: 'var(--color-archive-text-muted)' }),
-  noOptionsMessage: (base) => ({ ...base, color: 'var(--color-archive-text-muted)' }),
-});
 
 export type ArchiveSearchProps = {
   event: EventContext;
@@ -113,7 +34,7 @@ export function ArchiveSearch({ event, translations, variant = 'header' }: Archi
   const hero = variant === 'hero';
   const [headerExpanded, setHeaderExpanded] = useState(false);
   const expanded = hero || headerExpanded;
-  const styles = useMemo(() => getStyles(hero, expanded), [hero, expanded]);
+  const styles = useMemo(() => getSearchStyles(hero, expanded), [hero, expanded]);
   const router = useRouter();
   const t = getTranslator(translations);
   const selectRef = useRef<SelectInstance<SearchOption, false>>(null);
@@ -276,36 +197,7 @@ export function ArchiveSearch({ event, translations, variant = 'header' }: Archi
           filterOption={null}
           getOptionValue={(option) => option.value}
           formatOptionLabel={(option, meta) =>
-            meta.context === 'menu' ? (
-              <div className="flex min-w-0 flex-col gap-0.5">
-                <span className="truncate">{option.primary}</span>
-                {option.secondary && (
-                  <span className="flex min-w-0 items-center justify-between gap-3 text-xs text-archive-text-muted">
-                    <span className="truncate">{option.secondary}</span>
-                    {option.gamesHref && option.gamesLabel && (
-                      <a
-                        href={option.gamesHref}
-                        className="shrink-0 underline hover:text-archive-text"
-                        tabIndex={0}
-                        onMouseDown={(event) => {
-                          event.preventDefault();
-                          event.stopPropagation();
-                        }}
-                        onClick={(event) => {
-                          event.preventDefault();
-                          event.stopPropagation();
-                          handleNavigate(option.gamesHref!);
-                        }}
-                      >
-                        {option.gamesLabel}
-                      </a>
-                    )}
-                  </span>
-                )}
-              </div>
-            ) : (
-              option.label
-            )
+            meta.context === 'menu' ? <SearchResultOption option={option} onNavigate={handleNavigate} /> : option.label
           }
           components={{
             Control: hero ? HeroSearchControl : components.Control,
@@ -313,23 +205,13 @@ export function ArchiveSearch({ event, translations, variant = 'header' }: Archi
             LoadingIndicator: () => null,
             DropdownIndicator: () =>
               hero && !inputValue ? null : (
-                <div className="flex h-full shrink-0 items-center" onTouchEnd={(event) => event.stopPropagation()}>
-                  <button
-                    type="button"
-                    className={`flex h-full shrink-0 cursor-pointer items-center justify-center focus-visible:outline-2 focus-visible:-outline-offset-2 ${hero ? 'w-11' : 'w-7.5'} ${expanded ? 'text-archive-text-muted hover:text-archive-text focus-visible:outline-archive-focus-ring' : 'text-xs text-archive-shell-text focus-visible:outline-archive-shell-text'}`}
-                    aria-label={indicatorLabel}
-                    aria-expanded={hero ? undefined : expanded}
-                    aria-controls={`${id}-input`}
-                    title={indicatorLabel}
-                    onMouseDown={(event) => {
-                      event.preventDefault();
-                      event.stopPropagation();
-                    }}
-                    onClick={hero ? handleClear : expanded ? handleClose : activateSearch}
-                  >
-                    {hero || expanded ? <LuX aria-hidden="true" /> : <LuSearch aria-hidden="true" />}
-                  </button>
-                </div>
+                <SearchIndicator
+                  hero={hero}
+                  expanded={expanded}
+                  label={indicatorLabel}
+                  inputId={`${id}-input`}
+                  onClick={hero ? handleClear : expanded ? handleClose : activateSearch}
+                />
               ),
             LoadingMessage: ({ innerProps }) => (
               <div
@@ -356,46 +238,4 @@ function HeroSearchControl(props: ControlProps<SearchOption, false>) {
       {props.children}
     </components.Control>
   );
-}
-
-function createOption(entity: SearchEntity, destinations: SearchDestination[], t: Translator): SearchOption {
-  const country = entity.country ? ` (${entity.country})` : '';
-  const destination = destinations[0];
-  const gamesDestination = destinations.find(({ kind }) => kind === 'player-games' || kind === 'country-games');
-  let primary: string;
-  let secondary: string | undefined;
-
-  switch (entity.type) {
-    case 'player':
-      primary = `${entity.displayName}${country}`;
-      secondary = t('search.types.player');
-      break;
-    case 'tournament':
-      primary = entity.displayName ? `${entity.navigationId}, ${entity.displayName}` : String(entity.navigationId);
-      secondary =
-        [t('search.types.tournament'), entity.location, entity.countryName ?? entity.country]
-          .filter(Boolean)
-          .join(', ') || undefined;
-      break;
-    case 'country':
-      primary = `${entity.displayName}${country}`;
-      secondary = t('search.types.country');
-      break;
-    case 'category':
-      primary = entity.displayName;
-      secondary = t('search.types.category');
-      break;
-  }
-
-  return {
-    value: entity.key,
-    label: [primary, secondary, gamesDestination && t('search.games', String(entity.gameCount ?? 0))]
-      .filter(Boolean)
-      .join(' '),
-    primary,
-    secondary,
-    href: destination.href,
-    gamesHref: gamesDestination?.href,
-    gamesLabel: gamesDestination ? t('search.games', String(entity.gameCount ?? 0)) : undefined,
-  };
 }

@@ -1,8 +1,8 @@
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
-import { HeroBackground } from '@/components/HeroBackground';
-import { ArchiveSearch } from '@/components/navigation/ArchiveSearch';
+import { HeroBackground } from '@/components/home/HeroBackground';
+import { ArchiveSearch } from '@/components/search/ArchiveSearch';
 import { ThemeLogo } from '@/components/ui/ThemeLogo';
 
 type HeroProps = {

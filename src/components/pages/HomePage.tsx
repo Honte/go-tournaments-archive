@@ -3,11 +3,11 @@ import type { EventContext } from '@/schema/event';
 import type { Locale } from '@/i18n/consts';
 import { isEventLocale } from '@/i18n/locales';
 import { getEventSummary, getTournaments, getTranslations } from '@/data/serverApi';
-import { Attendants } from '@/components/Attendants';
-import { Hero } from '@/components/Hero';
-import { Medalists } from '@/components/Medalists';
-import { TotalStats } from '@/components/TotalStats';
-import { Winners } from '@/components/Winners';
+import { ArchiveStats } from '@/components/home/ArchiveStats';
+import { Hero } from '@/components/home/Hero';
+import { Medalists } from '@/components/home/Medalists';
+import { MostFrequentPlayers } from '@/components/home/MostFrequentPlayers';
+import { Tournaments } from '@/components/home/Tournaments';
 
 export type HomePageProps = {
   event: EventContext;
@@ -29,16 +29,16 @@ export async function HomePage({ event, locale }: HomePageProps) {
     <>
       <Hero event={event} translations={translations} />
       <div className="mt-4 mb-6 flex flex-col gap-10">
-        <Winners event={event} translations={translations} tournaments={tournaments} />
+        <Tournaments event={event} translations={translations} tournaments={tournaments} />
         <div className="grid items-stretch gap-5 md:grid-cols-2 xl:grid-cols-3">
           <section className="h-full rounded-xl border border-archive-border bg-archive-surface p-4 shadow-sm sm:p-5">
             <Medalists event={event} translations={translations} players={medalists} countries={countryMedals} />
           </section>
           <section className="h-full rounded-xl border border-archive-border bg-archive-surface p-4 shadow-sm sm:p-5">
-            <Attendants event={event} translations={translations} players={attendants} />
+            <MostFrequentPlayers event={event} translations={translations} players={attendants} />
           </section>
           <div className="md:col-span-2 xl:col-span-1">
-            <TotalStats event={event} translations={translations} stats={totalStats} />
+            <ArchiveStats event={event} translations={translations} stats={totalStats} />
           </div>
         </div>
       </div>

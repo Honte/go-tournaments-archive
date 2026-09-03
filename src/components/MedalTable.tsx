@@ -1,4 +1,3 @@
-import { clsx } from 'clsx';
 import type { ReactNode } from 'react';
 import { FaMedal } from 'react-icons/fa6';
 import type { StatsMedals } from '@/schema/data';
@@ -58,7 +57,7 @@ export function MedalTable<T>({
           return (
             <tr
               key={toKey(winner)}
-              className={clsx('group relative h-9 even:bg-archive-row-stripe-subtle hover:bg-archive-row-hover')}
+              className="group relative h-9 even:bg-archive-row-stripe-subtle hover:bg-archive-row-hover"
             >
               <td className="px-1 py-1.5 text-left">
                 {href && (
@@ -68,7 +67,9 @@ export function MedalTable<T>({
                     className="absolute inset-0 z-10 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-archive-focus-ring"
                   />
                 )}
-                <span className={clsx(href && 'pointer-events-none relative z-20 group-hover:text-archive-link-hover')}>
+                <span
+                  className={href ? 'pointer-events-none relative z-20 group-hover:text-archive-link-hover' : undefined}
+                >
                   {toName(winner)}
                 </span>
               </td>
