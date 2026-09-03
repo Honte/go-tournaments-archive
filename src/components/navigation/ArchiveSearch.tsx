@@ -368,18 +368,22 @@ function createOption(entity: SearchEntity, destinations: SearchDestination[], t
   switch (entity.type) {
     case 'player':
       primary = `${entity.displayName}${country}`;
-      secondary = t('search.statsPage');
+      secondary = t('search.types.player');
       break;
     case 'tournament':
       primary = entity.displayName ? `${entity.navigationId}, ${entity.displayName}` : String(entity.navigationId);
-      secondary = [entity.location, entity.countryName ?? entity.country].filter(Boolean).join(', ') || undefined;
+      secondary =
+        [t('search.types.tournament'), entity.location, entity.countryName ?? entity.country]
+          .filter(Boolean)
+          .join(', ') || undefined;
       break;
     case 'country':
       primary = `${entity.displayName}${country}`;
-      secondary = t('search.statsPage');
+      secondary = t('search.types.country');
       break;
     case 'category':
-      primary = `${entity.displayName} - ${t('search.types.category')}`;
+      primary = entity.displayName;
+      secondary = t('search.types.category');
       break;
   }
 

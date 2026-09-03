@@ -60,11 +60,10 @@
     "clear": "Clear search",
     "close": "Close search",
     "stats": "Stats",
-    "statsPage": "Stats page",
     "games": "%{0} games",
     "types": {
       "tournament": "Tournament",
-      "player": "Player page",
+      "player": "Player",
       "player-games": "Games",
       "country": "Country",
       "country-games": "Games",

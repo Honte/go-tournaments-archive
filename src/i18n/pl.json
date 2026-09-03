@@ -60,11 +60,10 @@
     "clear": "Wyczyść wyszukiwanie",
     "close": "Zamknij wyszukiwanie",
     "stats": "Statystyki",
-    "statsPage": "Strona statystyk",
     "games": "%{0} gier",
     "types": {
       "tournament": "Turniej",
-      "player": "Strona gracza",
+      "player": "Zawodnik",
       "player-games": "Gry",
       "country": "Kraj",
       "country-games": "Gry",
