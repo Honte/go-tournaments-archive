@@ -132,7 +132,7 @@ function PrimaryStat({ icon: Icon, label, value, toCount }: PrimaryStatProps) {
       <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-archive-accent-fill text-archive-accent-text shadow-sm">
         <Icon className="size-5" aria-hidden="true" />
       </span>
-      <div className="min-w-0 flex flex-col">
+      <div className="min-w-0">
         <strong className="block text-xl leading-none tabular-nums sm:text-2xl">{toCount(value)}</strong>
         <h2 className="mt-0.5 text-xs leading-tight font-semibold text-archive-text-muted sm:text-sm sm:leading-none">
           {label}

@@ -25,7 +25,7 @@ export function MedalRows({ event, players, top, translations }: MedalRowsProps)
   return (
     <div className="min-w-0 divide-y divide-archive-border">
       {MEDALS.map(({ index, color, label }) => (
-        <section className="flex min-w-0 items-start gap-2 px-3 py-3 sm:px-4" key={index}>
+        <section className="flex min-w-0 items-start gap-2 p-3 sm:px-4" key={index}>
           <FaMedal className="mt-2 shrink-0" color={color} aria-label={t(label)} title={t(label)} />
           <div className="flex min-w-0 flex-1 flex-col gap-1">
             {top[index]?.length ? (
@@ -38,7 +38,7 @@ export function MedalRows({ event, players, top, translations }: MedalRowsProps)
                   playerId={players[id].id}
                   locale={translations.locale}
                 >
-                  <span className="min-w-0 wrap-break-word hyphens-auto">
+                  <span className="wrap-break-word hyphens-auto">
                     <PlayerName player={players[id]} showCountry={event.showCountry} />
                   </span>
                 </PlayerLink>

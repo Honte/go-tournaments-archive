@@ -24,11 +24,11 @@ export function TournamentCardHeading({ event, tournament, translations }: Tourn
       href={tournamentUrl(event, translations.locale, year)}
       className="group block text-current no-underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-archive-focus-ring"
     >
-      <header className="grid grid-cols-[auto_minmax(0,1fr)] items-center gap-x-4 border-b border-archive-border bg-archive-surface-muted px-3 py-3 transition-colors group-hover:bg-archive-surface-hover-accent sm:px-4">
-        <span className="text-xl font-bold transition-colors group-hover:text-archive-link-hover sm:text-2xl">
+      <header className="flex items-center gap-x-4 border-b border-archive-border bg-archive-surface-muted p-3 transition-colors group-hover:bg-archive-surface-hover-accent sm:px-4">
+        <span className="shrink-0 text-xl font-bold transition-colors group-hover:text-archive-link-hover sm:text-2xl">
           {year}
         </span>
-        <div className="flex min-w-0 flex-col items-end gap-1 text-xs text-current/75 sm:text-sm">
+        <div className="flex min-w-0 flex-1 flex-col items-end gap-1 text-xs text-current/75 sm:text-sm">
           <span className="flex min-w-0 items-center justify-end gap-1.5">
             <LuMapPin className="shrink-0" aria-hidden="true" />
             <span className="truncate text-right" title={location}>

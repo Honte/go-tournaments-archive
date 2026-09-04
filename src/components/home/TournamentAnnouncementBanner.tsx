@@ -23,14 +23,14 @@ export function TournamentAnnouncementBanner({ event, tournament, translations }
         : undefined) ?? t('site.eventName');
 
   return (
-    <div className="group grid grid-cols-[auto_minmax(0,1fr)] items-stretch overflow-hidden rounded-xl border border-archive-accent-fill bg-archive-accent-fill text-archive-accent-text shadow-sm transition-colors duration-500 hover:bg-archive-accent-fill-hover hover:text-archive-accent-text">
+    <div className="flex overflow-hidden rounded-xl border border-archive-accent-fill bg-archive-accent-fill text-archive-accent-text shadow-sm transition-colors duration-500 hover:bg-archive-accent-fill-hover">
       <Link
         href={tournamentUrl(event, translations.locale, year)}
-        className="flex items-center px-4 py-3 text-xl font-bold text-current no-underline hover:text-current sm:text-2xl"
+        className="flex shrink-0 items-center px-4 py-3 text-xl font-bold text-current no-underline hover:text-current sm:text-2xl"
       >
         {year}
       </Link>
-      <div className="flex min-w-0 items-center justify-center px-4 py-3 text-center font-semibold">
+      <div className="flex min-w-0 flex-1 items-center justify-center px-4 py-3 text-center font-semibold">
         {website ? (
           <a
             href={website}

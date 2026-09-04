@@ -30,7 +30,6 @@ export function CategoryTournamentMedalistsCard({
             <Link
               href={categoryUrl(event, translations.locale, category)}
               className="flex items-center justify-center border-r border-archive-border bg-archive-surface-tint px-2 py-3 text-center text-xs font-bold tracking-wide text-archive-text no-underline transition-colors hover:text-archive-link-hover focus-visible:-outline-offset-2 focus-visible:outline-2 focus-visible:outline-archive-focus-ring"
-              style={{ textDecoration: 'none' }}
               aria-label={t(`categories.full.${category}`)}
             >
               <span className="rotate-180 whitespace-nowrap [text-orientation:mixed] [writing-mode:vertical-rl]">
