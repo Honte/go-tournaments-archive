@@ -13,6 +13,7 @@ import {
 import type { StatsSummary } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
+import { getFormatter } from '@/i18n/formatter';
 import { getTranslator } from '@/i18n/translator';
 import { DEFAULT_GAME_RECORDS_STATE, serializeGameRecordsState, type GameRecordsState } from '@/libs/gameRecords';
 import { allGameStatsUrl } from '@/libs/urls';
@@ -28,8 +29,7 @@ type ArchiveStatsProps = {
 
 export function ArchiveStats({ event, translations, stats }: ArchiveStatsProps) {
   const t = getTranslator(translations);
-  const number = new Intl.NumberFormat(translations.locale);
-  const percent = new Intl.NumberFormat(translations.locale, { style: 'percent', maximumFractionDigits: 1 });
+  const { toCount, toPercentage } = getFormatter(translations.locale);
   const gameRecordsUrl = allGameStatsUrl(event, translations.locale);
   const sgfShare = ratio(stats.sgfs, stats.playedGames);
   const blackShare = ratio(stats.black, stats.color);
@@ -39,7 +39,7 @@ export function ArchiveStats({ event, translations, stats }: ArchiveStatsProps) 
       icon: LuFileText,
       label: t('stats.total.sgfs'),
       value: stats.sgfs,
-      formattedValue: `${number.format(stats.sgfs)} · ${percent.format(sgfShare)}`,
+      formattedValue: `${toCount(stats.sgfs)} · ${toPercentage(sgfShare)}`,
       progress: sgfShare,
     },
     {
@@ -47,9 +47,9 @@ export function ArchiveStats({ event, translations, stats }: ArchiveStatsProps) 
       icon: BlackWinsIcon,
       label: t('stats.total.black'),
       value: stats.black,
-      formattedValue: percent.format(blackShare),
+      formattedValue: toPercentage(blackShare),
       progress: blackShare,
-      title: t('stats.total.blackSample', number.format(stats.color)),
+      title: t('stats.total.blackSample', toCount(stats.color)),
     },
     {
       href: filteredGameRecordsUrl(gameRecordsUrl, { winner: 'jigo' }),
@@ -97,16 +97,21 @@ export function ArchiveStats({ event, translations, stats }: ArchiveStatsProps) 
           icon={LuCalendarDays}
           label={t('stats.total.tournaments')}
           value={stats.tournaments}
-          number={number}
+          toCount={toCount}
         />
-        <PrimaryStat icon={LuUsersRound} label={t('stats.total.participants')} value={stats.players} number={number} />
-        <PrimaryStat icon={GamesIcon} label={t('stats.total.games')} value={stats.playedGames} number={number} />
+        <PrimaryStat
+          icon={LuUsersRound}
+          label={t('stats.total.participants')}
+          value={stats.players}
+          toCount={toCount}
+        />
+        <PrimaryStat icon={GamesIcon} label={t('stats.total.games')} value={stats.playedGames} toCount={toCount} />
       </div>
 
       {gameDetails.length > 0 && (
         <div className="mt-3 grid gap-1 md:grid-cols-2 xl:grid-cols-1">
           {gameDetails.map((detail) => (
-            <ArchiveStatLink key={detail.label} detail={detail} number={number} />
+            <ArchiveStatLink key={detail.label} detail={detail} toCount={toCount} />
           ))}
         </div>
       )}
@@ -118,17 +123,17 @@ type PrimaryStatProps = {
   icon: IconType;
   label: string;
   value: number;
-  number: Intl.NumberFormat;
+  toCount: (value: number) => string;
 };
 
-function PrimaryStat({ icon: Icon, label, value, number }: PrimaryStatProps) {
+function PrimaryStat({ icon: Icon, label, value, toCount }: PrimaryStatProps) {
   return (
     <article className="flex min-w-0 items-center gap-2 p-1">
       <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-archive-accent-fill text-archive-accent-text shadow-sm">
         <Icon className="size-5" aria-hidden="true" />
       </span>
       <div className="min-w-0 flex flex-col">
-        <strong className="block text-xl leading-none tabular-nums sm:text-2xl">{number.format(value)}</strong>
+        <strong className="block text-xl leading-none tabular-nums sm:text-2xl">{toCount(value)}</strong>
         <h2 className="mt-0.5 text-xs leading-tight font-semibold text-archive-text-muted sm:text-sm sm:leading-none">
           {label}
         </h2>

@@ -4,9 +4,9 @@ import { useMemo, useState } from 'react';
 import type { CountryStats } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
+import { getFormatter } from '@/i18n/formatter';
 import { getTranslator } from '@/i18n/translator';
 import { getGameStats } from '@/libs/games';
-import { toPercentage } from '@/libs/table';
 import { StatsTable } from '@/components/table/StatsTable';
 import type { StatsColumnDef } from '@/components/table/statsTableConfig';
 import { H2 } from '@/components/ui/H2';
@@ -123,7 +123,7 @@ export function CountryEvents({
           {
             accessorKey: 'wonPercent',
             header: t('table.wonPercent'),
-            cell: toPercentage,
+            cell: getFormatter(translations.locale).toPercentageCell,
           },
         ] as StatsColumnDef<CountryEventRow>[]
       ).filter(Boolean),

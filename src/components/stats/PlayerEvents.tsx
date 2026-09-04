@@ -4,10 +4,10 @@ import { useMemo } from 'react';
 import type { PlayerStats, Stage } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
+import { getFormatter } from '@/i18n/formatter';
 import { getTranslator } from '@/i18n/translator';
 import { getGameStats } from '@/libs/games';
 import { getStageName } from '@/libs/stage';
-import { toPercentage } from '@/libs/table';
 import { StatsTable } from '@/components/table/StatsTable';
 import type { StatsColumnDef } from '@/components/table/statsTableConfig';
 import { CountryLink } from '@/components/ui/CountryLink';
@@ -135,7 +135,7 @@ export function PlayerEvents({
           {
             accessorKey: 'wonPercent',
             header: t('table.wonPercent'),
-            cell: toPercentage,
+            cell: getFormatter(translations.locale).toPercentageCell,
           },
         ] as StatsColumnDef<EventRow>[]
       ).filter(Boolean),
