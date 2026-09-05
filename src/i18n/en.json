@@ -49,7 +49,7 @@
     "allEvents": "All events"
   },
   "actions": {
-    "showTournamentsStats": "Show tournaments stats",
+    "showTournamentsStats": "See tournaments stats",
     "showMore": "Show more (%{0})",
     "showAllMedalists": "Show all medalists",
     "showLess": "Show less"

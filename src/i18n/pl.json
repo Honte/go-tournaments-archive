@@ -49,7 +49,7 @@
     "allEvents": "Wszystkie wydarzenia"
   },
   "actions": {
-    "showTournamentsStats": "Pokaż statystyki turniejów",
+    "showTournamentsStats": "Zobacz statystyki turniejów",
     "showMore": "Pokaż więcej (%{0})",
     "showAllMedalists": "Pokaż wszystkich medalistów",
     "showLess": "Pokaż mniej"
