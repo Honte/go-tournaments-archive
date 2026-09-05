@@ -1,6 +1,6 @@
+import { clsx } from 'clsx';
 import type { ComponentProps, ReactNode } from 'react';
 import { Link, type LinkProps } from '@/components/navigation/Link';
-import { clsx } from 'clsx';
 
 type ButtonProps = {
   icon?: ReactNode;

@@ -11,7 +11,7 @@ import {
   tournamentUrl,
 } from '@/libs/urls';
 import { normalizeSearchText, tokenizeSearchText } from './normalize';
-import type { SearchOption, SearchTerm } from './types';
+import type { SearchOption, SearchTerm } from './schema';
 
 export function prepareSearchOptions(
   index: SearchIndex,

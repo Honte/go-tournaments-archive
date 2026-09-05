@@ -1,5 +1,5 @@
 import { normalizeSearchText } from './normalize';
-import type { SearchOption, SearchTerm } from './types';
+import type { SearchOption, SearchTerm } from './schema';
 
 export function findSearchResults(options: SearchOption[], query: string, locale: string, limit = 20): SearchOption[] {
   const normalizedQuery = normalizeSearchText(query);
