@@ -57,61 +57,64 @@ export function tokenizeSearchText(value?: string) {
 }
 
 export function prepareSearchEntities(index: SearchIndex): SearchEntity[] {
-  const countryEntities = (index.countries ?? []).map((entry, index) => {
+  const result: SearchEntity[] = [];
+  const countriesByCode = new Map<string, { displayName: string; terms: SearchTerm[] }>();
+
+  for (const [entryIndex, entry] of (index.countries ?? []).entries()) {
     const [navigationId, displayName, gameCount, ...additional] = entry;
+    const terms = getSearchTerms(navigationId, displayName, additional);
+    const countryEntity = createEntity('country', navigationId, displayName, entryIndex, terms, {
+      gameCount,
+      country: navigationId,
+    });
 
-    return createEntity(
-      'country',
-      navigationId,
+    countriesByCode.set(countryEntity.normalizedId, {
       displayName,
-      index,
-      getSearchTerms(navigationId, displayName, additional),
-      {
-        gameCount,
-        country: navigationId,
-      }
-    );
-  });
-  const countriesByCode = new Map(
-    countryEntities.map((entity) => [
-      normalizeSearchText(String(entity.navigationId)),
-      { displayName: entity.displayName, terms: entity.terms },
-    ])
-  );
+      terms,
+    });
+    result.push(countryEntity);
+  }
 
-  return [
-    ...index.tournaments.map((entry, index) => {
-      const [navigationId, displayName, location, country, ...additional] = entry;
-      const terms = getSearchTerms(navigationId, displayName, [location, country, ...additional]);
-      const countryEntry = country ? countriesByCode.get(normalizeSearchText(country)) : undefined;
+  for (const [entryIndex, entry] of index.tournaments.entries()) {
+    const [navigationId, displayName, location, country, ...additional] = entry;
+    const terms = getSearchTerms(navigationId, displayName, [location, country, ...additional]);
+    const countryEntry = country ? countriesByCode.get(normalizeSearchText(country)) : undefined;
 
-      if (countryEntry) {
-        mergeTerms(terms, countryEntry.terms, false);
-      }
+    if (countryEntry) {
+      mergeTerms(terms, countryEntry.terms, false);
+    }
 
-      return createEntity('tournament', navigationId, displayName, index, terms, {
+    result.push(
+      createEntity('tournament', navigationId, displayName, entryIndex, terms, {
         country: country ?? undefined,
         countryName: countryEntry?.displayName,
         location: location ?? undefined,
-      });
-    }),
-    ...index.players.map((entry, index) => {
-      const [navigationId, displayName, gameCount, country, ...additional] = entry;
-      const terms = getSearchTerms(navigationId, displayName, country ? [country, ...additional] : additional);
-      const countryEntry = country ? countriesByCode.get(normalizeSearchText(country)) : undefined;
+      })
+    );
+  }
 
-      if (countryEntry) {
-        mergeTerms(terms, countryEntry.terms, false);
-      }
+  for (const [entryIndex, entry] of index.players.entries()) {
+    const [navigationId, displayName, gameCount, country, ...additional] = entry;
+    const terms = getSearchTerms(navigationId, displayName, country ? [country, ...additional] : additional);
+    const countryEntry = country ? countriesByCode.get(normalizeSearchText(country)) : undefined;
 
-      return createEntity('player', navigationId, displayName, index, terms, {
+    if (countryEntry) {
+      mergeTerms(terms, countryEntry.terms, false);
+    }
+
+    result.push(
+      createEntity('player', navigationId, displayName, entryIndex, terms, {
         gameCount,
         country: country ?? undefined,
-      });
-    }),
-    ...countryEntities,
-    ...(index.categories ?? []).map((entry, index) => createEntityFromEntry('category', entry, index)),
-  ];
+      })
+    );
+  }
+
+  for (const [entryIndex, entry] of (index.categories ?? []).entries()) {
+    result.push(createEntityFromEntry('category', entry, entryIndex));
+  }
+
+  return result;
 }
 
 export function findSearchResults(entities: SearchEntity[], query: string, locale: string, limit = 20): SearchResult[] {
