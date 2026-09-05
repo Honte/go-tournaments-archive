@@ -1,3 +1,4 @@
+import { deburr } from 'lodash-es';
 import type { EventContext } from '@/schema/event';
 import type { SearchEntry, SearchIndex } from '@/schema/search';
 import {
@@ -37,30 +38,16 @@ type SearchTerm = {
   primary: boolean;
 };
 
-const CHARACTER_REPLACEMENTS: Record<string, string> = {
-  ł: 'l',
-  ø: 'o',
-  đ: 'd',
-  ð: 'd',
-  þ: 'th',
-  æ: 'ae',
-  œ: 'oe',
-  ß: 'ss',
-};
-
 export function normalizeSearchText(value?: string) {
   if (!value) {
     return '';
   }
 
-  return value
-    .toLocaleLowerCase()
-    .replace(/[łøđðþæœß]/gu, (character) => CHARACTER_REPLACEMENTS[character] ?? character)
+  return deburr(value.toLocaleLowerCase())
     .normalize('NFKD')
     .replace(/\p{Mark}/gu, '')
     .replace(/[^\p{Letter}\p{Number}]+/gu, ' ')
-    .trim()
-    .replace(/\s+/g, ' ');
+    .trim();
 }
 
 export function tokenizeSearchText(value?: string) {
@@ -129,11 +116,13 @@ export function prepareSearchEntities(index: SearchIndex): SearchEntity[] {
 
 export function findSearchResults(entities: SearchEntity[], query: string, locale: string, limit = 20): SearchResult[] {
   const normalizedQuery = normalizeSearchText(query);
-  const queryTerms = tokenizeSearchText(query);
+  const queryTerms = normalizedQuery.split(' ');
 
-  if (!normalizedQuery || !queryTerms.length) {
+  if (!normalizedQuery) {
     return [];
   }
+
+  const collator = new Intl.Collator(locale, { numeric: true, sensitivity: 'base' });
 
   return entities
     .map((entity) => {
@@ -143,10 +132,7 @@ export function findSearchResults(entities: SearchEntity[], query: string, local
     })
     .filter((entity): entity is SearchResult => Boolean(entity))
     .toSorted(
-      (a, b) =>
-        a.score - b.score ||
-        a.displayName.localeCompare(b.displayName, locale, { numeric: true, sensitivity: 'base' }) ||
-        a.key.localeCompare(b.key)
+      (a, b) => a.score - b.score || collator.compare(a.displayName, b.displayName) || a.key.localeCompare(b.key)
     )
     .slice(0, limit);
 }

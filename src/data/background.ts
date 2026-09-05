@@ -1,7 +1,7 @@
 import type { StaticImageData } from 'next/image';
 
 export async function loadEventBackground(eventId: string): Promise<StaticImageData | undefined> {
-  for (const extension of ['png', 'jpg']) {
+  for (const extension of ['jpg', 'png']) {
     try {
       const image = (await import(`../../events/${eventId}/background.${extension}`)) as { default: StaticImageData };
 

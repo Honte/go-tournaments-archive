@@ -4,6 +4,7 @@ import type { SortingState } from '@tanstack/react-table';
 import { useMemo, useState } from 'react';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
+import { getFormatter } from '@/i18n/formatter';
 import { getTranslator } from '@/i18n/translator';
 import { DEFAULT_GAME_RECORDS_STATE } from '@/libs/gameRecords/schema';
 import { serializeGameRecordsState } from '@/libs/gameRecords/urlState';
@@ -31,8 +32,9 @@ type TournamentsTableProps = {
 
 export function TournamentsTable({ event, rows, translations, showSgfs }: TournamentsTableProps) {
   const [sorting, setSorting] = useState<SortingState>([{ id: 'year', desc: true }]);
-  const t = getTranslator(translations);
+  const t = useMemo(() => getTranslator(translations), [translations]);
   const locale = translations.locale;
+  const formatter = useMemo(() => getFormatter(locale), [locale]);
   const activeSort = sorting[0];
   const showStages = rows.some((row) => row.stages !== rows[0]?.stages);
 
@@ -92,11 +94,17 @@ export function TournamentsTable({ event, rows, translations, showSgfs }: Tourna
       podiumColumn('gold', 'winners.first'),
       podiumColumn('silver', 'winners.second'),
       podiumColumn('bronze', 'winners.third'),
-      { accessorKey: 'players', header: t('table.players') },
+      { accessorKey: 'players', header: t('table.players'), cell: formatter.toNumericCell },
       ...(showStages
-        ? [{ accessorKey: 'stages', header: t('table.stages') } satisfies StatsColumnDef<TournamentRow>]
+        ? [
+            {
+              accessorKey: 'stages',
+              header: t('table.stages'),
+              cell: formatter.toNumericCell,
+            } satisfies StatsColumnDef<TournamentRow>,
+          ]
         : []),
-      { accessorKey: 'games', header: t('table.games') },
+      { accessorKey: 'games', header: t('table.games'), cell: formatter.toNumericCell },
       ...(showSgfs
         ? [
             {
@@ -110,7 +118,7 @@ export function TournamentsTable({ event, rows, translations, showSgfs }: Tourna
                     className="text-archive-link underline hover:text-archive-link-hover"
                     href={`${allGameStatsUrl(event, locale)}?${query}`}
                   >
-                    {sgfs}
+                    {formatter.toCount(sgfs)}
                   </Link>
                 ) : (
                   0
@@ -120,7 +128,7 @@ export function TournamentsTable({ event, rows, translations, showSgfs }: Tourna
           ]
         : []),
     ];
-  }, [event, t, locale, showSgfs, showStages, activeSort]);
+  }, [event, t, locale, showSgfs, showStages, activeSort, formatter]);
 
   const table = useStatsTable({
     data,
