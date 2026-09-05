@@ -23,7 +23,7 @@
     "gamesListDescription": "Lista zapisanych gier we wszystkich turniejach",
     "lastUpdated": "Ostatnia aktualizacja: %{0}",
     "github": "Zobacz na GitHub: %{0}",
-    "searchPlaceholder": "Szukaj turniejów, zawodników lub lat...",
+    "searchPlaceholder": "Szukaj zawodników lub turniejów…",
     "searchComingSoon": "Wyszukiwanie w archiwum będzie dostępne wkrótce"
   },
   "navigation": {

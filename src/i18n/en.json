@@ -23,7 +23,7 @@
     "gamesListDescription": "List of all games records from all tournaments",
     "lastUpdated": "Last updated: %{0}",
     "github": "Contribute on GitHub: %{0}",
-    "searchPlaceholder": "Search tournaments, players, or years...",
+    "searchPlaceholder": "Search players or tournaments…",
     "searchComingSoon": "Archive search is coming soon"
   },
   "navigation": {
