@@ -1,6 +1,6 @@
 'use client';
 
-import type { SearchOption } from './searchOptions';
+import type { SearchOption } from '@/libs/search';
 
 type SearchResultOptionProps = {
   option: SearchOption;

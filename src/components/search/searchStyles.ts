@@ -1,5 +1,5 @@
 import type { StylesConfig } from 'react-select';
-import type { SearchOption } from './searchOptions';
+import type { SearchOption } from '@/libs/search';
 
 export const HERO_SEARCH_STYLES = getSearchStyles(true, true);
 export const HEADER_SEARCH_STYLES = getSearchStyles(false, true);

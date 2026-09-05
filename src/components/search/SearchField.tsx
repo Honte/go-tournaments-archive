@@ -22,9 +22,8 @@ import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { navigate } from '@/libs/navigation';
-import { findSearchResults, getSearchDestinations, prepareSearchEntities } from '@/libs/search';
+import { findSearchResults, prepareSearchOptions, type SearchOption } from '@/libs/search';
 import { SELECT_THEME } from '@/libs/themes';
-import { createOption, type SearchOption } from '@/components/search/searchOptions';
 import { SearchResultOption } from '@/components/search/SearchResultOption';
 import { useSearchData } from '@/hooks/useSearchData';
 
@@ -65,15 +64,14 @@ export function SearchField({
   const [inputValue, setInputValue] = useState('');
   const [focused, setFocused] = useState(false);
   const searchData = useSearchData(event, translations.locale, focused);
-  const entities = useMemo(() => (searchData.data ? prepareSearchEntities(searchData.data) : []), [searchData.data]);
-  const options = useMemo(() => {
-    const results = findSearchResults(entities, inputValue, translations.locale);
-    const translate = getTranslator(translations);
-
-    return results.map((entity) =>
-      createOption(entity, getSearchDestinations(entity, event, translations.locale), translate)
-    );
-  }, [entities, event, inputValue, translations]);
+  const preparedOptions = useMemo(
+    () => (searchData.data ? prepareSearchOptions(searchData.data, event, translations) : []),
+    [searchData.data, event, translations]
+  );
+  const options = useMemo(
+    () => findSearchResults(preparedOptions, inputValue, translations.locale),
+    [preparedOptions, inputValue, translations.locale]
+  );
 
   function handleFocus(event: FocusEvent<HTMLInputElement>) {
     const input = event.currentTarget;

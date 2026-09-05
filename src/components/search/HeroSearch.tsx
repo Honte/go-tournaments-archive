@@ -4,9 +4,9 @@ import { useRef } from 'react';
 import { LuSearch } from 'react-icons/lu';
 import { components, type ControlProps, type SelectInstance } from 'react-select';
 import { getTranslator } from '@/i18n/translator';
+import type { SearchOption } from '@/libs/search';
 import { SearchField, type SearchFieldProps } from '@/components/search/SearchField';
 import { SearchIndicator } from '@/components/search/SearchIndicator';
-import type { SearchOption } from '@/components/search/searchOptions';
 import { HERO_SEARCH_STYLES } from '@/components/search/searchStyles';
 
 type HeroSearchProps = Pick<SearchFieldProps, 'event' | 'translations'>;

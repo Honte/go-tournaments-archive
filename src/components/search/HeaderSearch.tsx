@@ -4,9 +4,9 @@ import { useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
 import type { SelectInstance } from 'react-select';
 import { getTranslator } from '@/i18n/translator';
+import type { SearchOption } from '@/libs/search';
 import { SearchField, type SearchFieldProps } from '@/components/search/SearchField';
 import { SearchIndicator } from '@/components/search/SearchIndicator';
-import type { SearchOption } from '@/components/search/searchOptions';
 import { COLLAPSED_HEADER_SEARCH_STYLES, HEADER_SEARCH_STYLES } from '@/components/search/searchStyles';
 
 type HeaderSearchProps = Pick<SearchFieldProps, 'event' | 'translations'>;
