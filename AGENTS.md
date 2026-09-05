@@ -141,6 +141,11 @@ directly, for example `.\node_modules\.bin\tsc.cmd --noEmit` on Windows.
 - Use existing path aliases instead of deep relative imports when the surrounding code does.
 - Keep imports compatible with the configured `oxfmt` ordering.
 - Formatting uses `oxfmt` with single quotes, semicolons, trailing commas where configured, and `printWidth` 120.
+- When writing or updating complex Tailwind class lists, use a multiline template literal grouped by purpose
+  (layout, spacing and typography, colors, hover, focus), as in `src/components/ui/Button.tsx`.
+  Keep short class lists inline and class names complete and static for Tailwind detection. Use `clsx` only when
+  combining classes or applying conditions, not merely to group static styles. Do not add styling libraries,
+  custom syntax, or runtime helpers for readability.
 - Linting uses Oxlint with type-aware checks.
 - Tests use `node:test` and `node:assert/strict`.
 - Keep changes scoped. This repo has large data and SGF trees; avoid unrelated reformatting or bulk edits.
