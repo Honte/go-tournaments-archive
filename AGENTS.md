@@ -134,7 +134,8 @@ directly, for example `.\node_modules\.bin\tsc.cmd --noEmit` on Windows.
 ## Coding Conventions
 
 - TypeScript is strict and ESM-based.
-- Prefer named function declarations over arrow functions assigned to variables in roof of the file. Inline callbacks can remain arrow functions.
+- Prefer named function declarations over arrow functions assigned to variables at the top level of a file.
+  Inline callbacks can remain arrow functions.
 - Put the most important functions and public entrypoints near the top of files, after imports and required types.
   Place supporting helpers below their callers, taking advantage of function declaration hoisting.
 - Use existing path aliases instead of deep relative imports when the surrounding code does.
@@ -144,6 +145,35 @@ directly, for example `.\node_modules\.bin\tsc.cmd --noEmit` on Windows.
 - Tests use `node:test` and `node:assert/strict`.
 - Keep changes scoped. This repo has large data and SGF trees; avoid unrelated reformatting or bulk edits.
 - Do not edit generated output in `.next/`, `out/`, `public/data/`, or `public/sgf/`.
+
+### Feature libraries and UI boundaries
+
+- Group related domain logic under `src/libs/<feature>/` when it spans distinct responsibilities. Give each module
+  a cohesive purpose and a name that describes its behavior. Let actual responsibilities determine the split;
+  keep small standalone helpers in single files and avoid empty layers or a fixed module template.
+- Use `index.ts` as the feature's public entrypoint, exporting the functions and types consumers need. Prefer
+  `@/libs/<feature>` in consumers and direct sibling imports inside the feature to avoid circular barrel imports.
+  Keep feature-specific shared types in a local `schema.ts`; keep shared input/API types in `src/schema/`.
+- Design library outputs around what consumers need to render and act on. Return plain data with the derived values,
+  display content, and navigation targets the feature requires. Share these output types with consumers and avoid
+  redundant representations or conversion layers. Reuse existing helpers and pass contextual dependencies explicitly.
+- Keep rendering, styles, focus, and interaction wiring in components and hooks. Keep domain calculations independent
+  of JSX and React hooks. Separate pure transformations from side effects such as navigation and persistence.
+  When a feature needs a store, let it own state transitions and derived models so components do not repeat them.
+- Separate work by when its inputs change: prepare reusable data once per relevant input change, then derive results
+  from current interaction state. Memoize where this avoids repeated work, including every dependency that affects
+  the result. Keep pure transformations non-mutating and result ordering deterministic.
+
+### Test organization
+
+- Colocate tests with the behavior they cover using `<module>.test.ts`. Split or move tests with their implementation;
+  assertions belong to the module responsible for the behavior, including when that module is a shared helper.
+- Test observable results and invariants rather than implementation details. Import the responsible module directly
+  for focused tests and use the public entrypoint for integration tests. Cover interactions between modules without
+  duplicating their full test suites.
+- Keep simple test data local. Extract shared fixtures only when multiple suites reuse substantial setup; a few
+  repeated constants do not need an abstraction. Preserve existing coverage during structural refactors and add
+  regression checks for changed behavior.
 
 ## Event And Data Notes
 
