@@ -123,7 +123,7 @@ export function HeaderSwitch({ label, current, options }: HeaderSwitchProps) {
         </button>
         <div
           id={menuId}
-          aria-hidden={!open}
+          inert={!open}
           className={clsx(
             'grid transition-[grid-template-rows] duration-150 ease-out',
             open ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'
