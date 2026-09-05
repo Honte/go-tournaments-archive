@@ -17,7 +17,7 @@ export async function HeroBackground({ eventId }: HeroBackgroundProps) {
       style={{
         backgroundImage: `url("${background.src}")`,
         maskImage:
-          'linear-gradient(to bottom, transparent, black 22%, black 75%, transparent), linear-gradient(to right, transparent 8%, black 60%, black 80%, transparent), radial-gradient(ellipse at 68% 45%, black 15%, transparent 72%)',
+          'linear-gradient(to bottom, transparent, black 15%, black 85%, transparent), linear-gradient(to right, transparent 4%, black 45%, black 85%, transparent), radial-gradient(ellipse at 68% 45%, black 25%, transparent 85%)',
         maskComposite: 'intersect',
       }}
       aria-hidden="true"
