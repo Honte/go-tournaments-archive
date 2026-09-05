@@ -32,7 +32,7 @@ export function MedalRows({ event, players, top, translations }: MedalRowsProps)
               top[index].map((id) => (
                 <PlayerLink
                   key={id}
-                  className="block min-w-0 rounded-md px-1.5 py-1 text-current transition-colors hover:bg-archive-surface-hover-accent hover:text-archive-link"
+                  className="block min-w-0 rounded-md px-1 py-1 text-current transition-colors hover:bg-archive-surface-hover-accent hover:text-archive-link"
                   event={event}
                   style={{ textDecoration: 'none' }}
                   playerId={players[id].id}
@@ -44,7 +44,7 @@ export function MedalRows({ event, players, top, translations }: MedalRowsProps)
                 </PlayerLink>
               ))
             ) : (
-              <span className="px-1.5 py-1">-</span>
+              <span className="px-1 py-1">-</span>
             )}
           </div>
         </section>

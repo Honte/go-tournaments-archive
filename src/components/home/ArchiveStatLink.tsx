@@ -19,7 +19,7 @@ export function ArchiveStatLink(props: ArchiveStatLinkProps) {
     <Link
       href={props.href}
       title={props.title}
-      className="group block min-w-0 rounded-lg p-1.5 transition-colors hover:bg-archive-surface-hover-accent"
+      className="group block min-w-0 rounded-lg p-1 transition-colors hover:bg-archive-surface-hover-accent"
     >
       <div className="flex min-h-6 items-center gap-2">
         <span className="flex size-6 shrink-0 items-center justify-center rounded-md bg-archive-accent-fill text-archive-accent-text">

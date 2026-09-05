@@ -39,13 +39,13 @@ export function MedalTable<T>({
           <th className="px-1 text-left text-xs font-semibold text-archive-text-muted">
             {nameHeader ?? t('table.player')}
           </th>
-          <th className="px-0.5">
+          <th className="px-0">
             <FaMedal className="inline" fill="#fece43" title={t('medals.gold')} />
           </th>
-          <th className="px-0.5">
+          <th className="px-0">
             <FaMedal className="inline" fill="silver" title={t('medals.silver')} />
           </th>
-          <th className="px-0.5">
+          <th className="px-0">
             <FaMedal className="inline" fill="#CD7F32" title={t('medals.bronze')} />
           </th>
         </tr>
@@ -59,7 +59,7 @@ export function MedalTable<T>({
               key={toKey(winner)}
               className="group relative h-9 even:bg-archive-row-stripe-subtle hover:bg-archive-row-hover"
             >
-              <td className="px-1 py-1.5 text-left">
+              <td className="px-1 py-1 text-left">
                 {href && (
                   <Link
                     href={href}
@@ -73,9 +73,9 @@ export function MedalTable<T>({
                   {toName(winner)}
                 </span>
               </td>
-              <td className="px-0.5 tabular-nums">{winner.medals[0].length}</td>
-              <td className="px-0.5 tabular-nums">{winner.medals[1].length}</td>
-              <td className="px-0.5 tabular-nums">{winner.medals[2].length}</td>
+              <td className="px-0 tabular-nums">{winner.medals[0].length}</td>
+              <td className="px-0 tabular-nums">{winner.medals[1].length}</td>
+              <td className="px-0 tabular-nums">{winner.medals[2].length}</td>
             </tr>
           );
         })}

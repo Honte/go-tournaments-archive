@@ -38,7 +38,7 @@ export function MostFrequentPlayers({ event, players, translations }: MostFreque
               key={player.id}
               className="group relative h-9 even:bg-archive-row-stripe-subtle hover:bg-archive-row-hover"
             >
-              <td className="px-1 py-1.5 text-left">
+              <td className="px-1 py-1 text-left">
                 <Link
                   href={playerUrl(event, translations.locale, player.id)}
                   aria-label={player.name}

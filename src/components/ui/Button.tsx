@@ -6,7 +6,7 @@ type ButtonProps = {
 } & ((ComponentProps<'button'> & { href?: never }) | LinkProps);
 
 export function Button({ children, className, icon, ...props }: ButtonProps) {
-  const buttonClassName = `bg-archive-control hover:bg-archive-control-hover text-archive-text hover:text-archive-link-hover font-bold py-0.5 px-2 rounded inline-flex items-center cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-archive-focus-ring ${className ?? ''}`;
+  const buttonClassName = `bg-archive-control hover:bg-archive-control-hover text-archive-text hover:text-archive-link-hover font-bold py-1 px-2 rounded inline-flex items-center cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-archive-focus-ring ${className ?? ''}`;
   const content = (
     <>
       {children}
