@@ -5,7 +5,7 @@ import { homeUrl, logoWhiteUrl } from '@/libs/urls';
 import { Link } from '@/components/navigation/Link';
 import { LocaleNavigation } from '@/components/navigation/LocaleNavigation';
 import { SideNavigation } from '@/components/navigation/SideNavigation';
-import { ArchiveSearch } from '@/components/search/ArchiveSearch';
+import { HeaderSearch } from '@/components/search/HeaderSearch';
 import { ThemeSwitch } from '@/components/ui/ThemeSwitch';
 
 type TopBarProps = {
@@ -41,7 +41,7 @@ export function Header({ event, translations }: TopBarProps) {
                 {t('navigation.archiveLabel', t('site.acronym'))}
               </span>
             </Link>
-            <ArchiveSearch event={event} translations={translations} />
+            <HeaderSearch event={event} translations={translations} />
           </div>
           <LocaleNavigation
             strategy="param"

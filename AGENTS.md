@@ -134,6 +134,9 @@ directly, for example `.\node_modules\.bin\tsc.cmd --noEmit` on Windows.
 ## Coding Conventions
 
 - TypeScript is strict and ESM-based.
+- Prefer named function declarations over arrow functions assigned to variables in roof of the file. Inline callbacks can remain arrow functions.
+- Put the most important functions and public entrypoints near the top of files, after imports and required types.
+  Place supporting helpers below their callers, taking advantage of function declaration hoisting.
 - Use existing path aliases instead of deep relative imports when the surrounding code does.
 - Keep imports compatible with the configured `oxfmt` ordering.
 - Formatting uses `oxfmt` with single quotes, semicolons, trailing commas where configured, and `printWidth` 120.

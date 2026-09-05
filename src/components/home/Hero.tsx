@@ -2,7 +2,7 @@ import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { HeroBackground } from '@/components/home/HeroBackground';
-import { ArchiveSearch } from '@/components/search/ArchiveSearch';
+import { HeroSearch } from '@/components/search/HeroSearch';
 import { ThemeLogo } from '@/components/ui/ThemeLogo';
 
 type HeroProps = {
@@ -19,7 +19,7 @@ export function Hero({ event, translations }: HeroProps) {
       <div className="relative flex min-h-72 max-w-3xl flex-col items-start justify-center py-8 md:min-h-80 md:py-10">
         <ThemeLogo event={event} className="mb-2 h-20 max-w-64 object-contain object-left md:h-24" />
         <h1 className="text-3xl font-bold tracking-tight text-balance sm:text-4xl md:text-5xl">{t('site.name')}</h1>
-        <ArchiveSearch event={event} translations={translations} variant="hero" />
+        <HeroSearch event={event} translations={translations} />
       </div>
     </section>
   );
