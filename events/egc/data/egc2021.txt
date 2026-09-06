@@ -1,15 +1,15 @@
 ; TC[E211123A]
 ; CL[A]
 ; EV[Online European Championship 2021]
-; PC[EU, OGS: https://online-go.com]
+; PC[XO, Online Go Server]
 ; DT[2021-11-23,2021-12-05]
 ; HA[h9]
 ; KM[6.5]
 ; TM[120]
 ; CM[ (submitted by erdbeer)]
 ;.
-; Chinese rules Fischertime, 60/30              
-; https://eurogofed.org/egc/2021.html               
+; Chinese rules Fischertime, 60/30
+; https://eurogofed.org/egc/2021.html
 ;# Name Rank Cntry Clb NBW Pre 1 Pre 2 Pre 3 R1 QF SF SF SF F/3rd pl F/3rd pl F/3rd pl
  1 Shikshin Ilja              4p RU  16Kz  6 1   -       -       -       13+     8+      3+      3+      -       2+      2+      -        |12013342
  2 Kachanovskyi Artem         2p UA  Rivn  4 2   -       -       -       15+     7+      4+      4-      4+      1-      1-      -        |12662870

@@ -1,15 +1,15 @@
 ; TC[E230621A]
 ; CL[A]
 ; EV[6th European Professional Championship]
-; PC[EU, OGS Online]
+; PC[XO, Online Go Server]
 ; DT[2023-06-21,2023-06-25]
 ; HA[h9]
 ; KM[6.5]
 ; TM[100]
 ; CM[ (submitted by erdbeer)]
 ;.
-;https://eurogofed.org/epc/2023.html          
-;Pro Championship, 21-25 June 2023, Online on OGS, Fischertime 50/25             
+;https://eurogofed.org/epc/2023.html
+;Pro Championship, 21-25 June 2023, Online on OGS, Fischertime 50/25
 ;# Name Rank Ctry Clb NbW R1 R2 R3 R4 R5
 1 Surma Mateusz        2p PL  Dzim  4  1  4+     5+     0=      3+     2+      |12837968
 2 Tormanen Antti       1p FI  eGo   3  2  6+     3+     0=      4+     1-      |12949310

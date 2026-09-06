@@ -1,7 +1,7 @@
 ; TC[E200924A]
 ; CL[A]
 ; EV[Online European Championship 2020]
-; PC[EU, OGS: https://online-go.com]
+; PC[XO, Online Go Server]
 ; DT[2020-09-24,2020-11-02]
 ; HA[h9]
 ; KM[6.5]
