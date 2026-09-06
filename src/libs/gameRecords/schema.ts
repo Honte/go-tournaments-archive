@@ -32,6 +32,7 @@ export const GAME_GROUPS = [
   'opponent-country',
   'country-player',
   'year',
+  'year-round',
   'category',
 ] as const;
 export const QUERY_KEYS = [
@@ -130,6 +131,9 @@ export type GameRecordsOptions = {
   categoriesEnabled?: boolean;
   countryLabel?: (country: string) => string;
   categoryLabel?: (category: string) => string;
+  roundLabel?: string;
+  restLabel?: string;
+  stageLabel?: (game: ApiGameInfo) => string;
   unknownKomiLabel?: string;
   unknownCountryLabel?: string;
 };

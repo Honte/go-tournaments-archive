@@ -7,6 +7,7 @@ import type { EventContext } from '@/schema/event';
 import type { Locale, Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import type { GameRecordsOptions } from '@/libs/gameRecords';
+import { getStageName } from '@/libs/stage';
 import { GameFiltersPanel } from '@/components/gameRecords/GameFiltersPanel';
 import { useGameRecordsStore } from '@/components/gameRecords/useGameRecordsStore';
 import { type GameRecordGroup, VirtualGameRecordGrid } from '@/components/gameRecords/VirtualGameRecordGrid';
@@ -53,8 +54,14 @@ function AllGamesContent({ event, games, translations }: AllGamesContentProps) {
       categoryLabel: (category) => t(`categories.short.${category}`),
       unknownKomiLabel: t('gamesFilter.unknown'),
       unknownCountryLabel: t('gamesFilter.unknown'),
+      roundLabel: t('game.round'),
+      restLabel: t('gamesFilter.groupRest'),
+      stageLabel: (game) =>
+        game.stageType
+          ? getStageName({ name: game.stageName, type: game.stageType }, translations)
+          : `${t('table.stage')} ${game.stage + 1}`,
     }),
-    [event.categories, event.showCountry, t]
+    [event.categories, event.showCountry, t, translations]
   );
 
   const store = useGameRecordsStore(games, modelOptions);

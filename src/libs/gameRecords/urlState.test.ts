@@ -3,6 +3,12 @@ import { describe, it } from 'node:test';
 import { DEFAULT_GAME_RECORDS_STATE, parseGameRecordsState, serializeGameRecordsState } from '@/libs/gameRecords';
 
 describe('game browser URL state', () => {
+  it('round-trips year-round grouping', () => {
+    const parsed = parseGameRecordsState(new URLSearchParams('group=year-round'));
+    assert.equal(parsed.group, 'year-round');
+    assert.equal(serializeGameRecordsState(parsed).get('group'), 'year-round');
+  });
+
   it('round-trips canonical state and preserves unrelated query parameters', () => {
     const parsed = parseGameRecordsState(
       new URLSearchParams(

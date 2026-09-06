@@ -8,6 +8,10 @@ type GroupOptions = {
   countryLabel: (country: string) => string;
   categoryLabel: (category: string) => string;
   unknownCountryLabel: string;
+  roundLabel: string;
+  restLabel: string;
+  stageLabel: (game: ApiGameInfo) => string;
+  games: readonly ApiGameInfo[];
 };
 
 export function groupGameRecords(
@@ -24,10 +28,25 @@ export function groupGameRecords(
     ];
   }
 
+  const stagesByYear = new Map<number, Set<number>>();
+  if (state.group === 'year-round') {
+    for (const game of options.games) {
+      const stages = stagesByYear.get(game.tournament) ?? new Set<number>();
+      stages.add(game.stage);
+      stagesByYear.set(game.tournament, stages);
+    }
+  }
+
   const groups = new Map<string, { label: string; games: ApiGameInfo[] }>();
 
   for (const match of matches) {
-    const details = getGroupDetails(match, state.group, state, options);
+    const details = getGroupDetails(
+      match,
+      state.group,
+      state,
+      options,
+      (stagesByYear.get(match.game.tournament)?.size ?? 0) > 1
+    );
     const current = groups.get(details.key) ?? { label: details.label, games: [] };
     current.games.push(match.game);
     groups.set(details.key, current);
@@ -35,8 +54,15 @@ export function groupGameRecords(
 
   return [...groups]
     .toSorted(([leftKey, left], [rightKey, right]) => {
+      const yearDirection = state.sort === 'year-asc' ? 1 : -1;
       const defaultOrder =
-        state.group === 'year' ? Number(rightKey) - Number(leftKey) : left.label.localeCompare(right.label);
+        state.group === 'year'
+          ? (Number(leftKey) - Number(rightKey)) * yearDirection
+          : state.group === 'year-round'
+            ? (left.games[0].tournament - right.games[0].tournament) * yearDirection ||
+              left.games[0].stage - right.games[0].stage ||
+              (left.games[0].round ?? Infinity) - (right.games[0].round ?? Infinity)
+            : left.label.localeCompare(right.label);
 
       if (state.sort === 'group-count-desc') {
         return right.games.length - left.games.length || defaultOrder;
@@ -88,7 +114,8 @@ function getGroupDetails(
   match: OrientedGame,
   group: Exclude<GameGroup, 'none'>,
   state: GameRecordsState,
-  options: GroupOptions
+  options: GroupOptions,
+  showStage: boolean
 ) {
   const UNKNOWN = '__unknown__';
 
@@ -127,6 +154,27 @@ function getGroupDetails(
       return {
         key: `player:${match.player.id}`,
         label: options.playerMeta.get(match.player.id)?.label ?? match.player.name,
+      };
+    }
+    case 'year-round': {
+      const game = match.game;
+      const parts = [String(game.tournament)];
+
+      if (showStage) {
+        parts.push(options.stageLabel(game));
+      }
+
+      if (game.round !== undefined) {
+        parts.push(`${options.roundLabel} ${game.round}`);
+      }
+
+      if (parts.length === 1) {
+        parts.push(options.restLabel);
+      }
+
+      return {
+        key: `${game.tournament}:${game.stage}:${game.round ?? '?'}`,
+        label: parts.join(' - '),
       };
     }
     case 'year':

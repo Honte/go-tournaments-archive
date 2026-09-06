@@ -252,6 +252,8 @@
     "group": "Grupuj według",
     "noGrouping": "Bez grupowania",
     "groupYear": "Rok turnieju",
+    "groupYearRound": "Rok turnieju, etap i runda",
+    "groupRest": "Pozostałe",
     "groupOpponent": "Przeciwnik",
     "groupOpponentCountry": "Kraj przeciwnika",
     "groupCountryPlayer": "Gracz z wybranego kraju",

@@ -252,6 +252,8 @@
     "group": "Group by",
     "noGrouping": "No grouping",
     "groupYear": "Tournament year",
+    "groupYearRound": "Tournament year, stage & round",
+    "groupRest": "Rest",
     "groupOpponent": "Opponent player",
     "groupOpponentCountry": "Opponent country",
     "groupCountryPlayer": "Country player",

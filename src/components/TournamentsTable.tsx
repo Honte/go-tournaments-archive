@@ -112,7 +112,11 @@ export function TournamentsTable({ event, rows, translations, showSgfs }: Tourna
               header: t('table.sgfs'),
               cell: (info) => {
                 const { year, sgfs } = info.row.original;
-                const query = serializeGameRecordsState({ ...DEFAULT_GAME_RECORDS_STATE, years: [year] });
+                const query = serializeGameRecordsState({
+                  ...DEFAULT_GAME_RECORDS_STATE,
+                  years: [year],
+                  group: 'year-round',
+                });
                 return sgfs > 0 ? (
                   <Link
                     className="text-archive-link underline hover:text-archive-link-hover"
