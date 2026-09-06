@@ -22,8 +22,9 @@ stages:
     games:
       - 1-2 2:W+? round:5 sgf:1980/ec/5-JuergenMattern-MatthewMacfadyen.sgf
       - 2-8 2:B+? round:9 sgf:1980/ec/9-MatthewMacfadyen-WolfgangIsele.sgf
+      - 3-4 4:W+R round:7 sgf:1980/ec/7-AndreMoussa-RobvanZeijst.sgf
       - 4-2 2:W+? round:8 sgf:1980/ec/8-RobvanZeijst-MatthewMacfadyen.sgf
-      - 14-2 2:W+? round:3 sgf:1980/ec/3-RobertRehm-MatthewMacfadyen.sgf
+      - 14-2 2:W+R round:3 sgf:1980/ec/3-RobertRehm-MatthewMacfadyen.sgf
   - type: tournament
     file: egc1980playoff.txt
     name: Playoff

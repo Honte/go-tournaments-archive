@@ -70,7 +70,7 @@ export function PlayerEvents({
     return results.sort((a, b) => b.year - a.year);
   }, [player, showCategories]);
 
-  const hasMultipleNames = new Set(data.map((row) => row.name)).size > 1;
+  const hasMultipleNames = data.some((row) => row.name !== player.name);
   const hasMultipleCountries = new Set(data.map((row) => row.country)).size > 1;
   const hasDraws = data.some((row) => row.drawn > 0);
 

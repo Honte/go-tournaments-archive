@@ -13,3 +13,4 @@ stages:
     findSharedPlaces: true
     games:
       - 1-2 1:B+2 round:9 sgf:1978/ec/9-HelmutHasibeder-MaxRebattu.sgf
+      - 4-5 4:B+R round:2 sgf:1978/ec/2-RonaldSchlemper-WolfgangIsele.sgf

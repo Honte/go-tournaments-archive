@@ -545,3 +545,16 @@ describe('matchExplicitSgfs', () => {
     assert.deepEqual(result.inlineUpdates, [{ path: ['rounds', 0, 0], value: 'bp-wp bp:B+R' }]);
   });
 });
+
+it('rejects an explicit game whose two colors resolve to one player', () => {
+  const sgf = makeSgfInfo({ sgfWhiteName: 'Black Player', filenameWhiteName: 'BlackPlayer' });
+  const result = matchExplicitSgfs({
+    tournament: { players: { bp: 'Black Player 1d' }, stages: [] },
+    stage: { type: 'league', date: '2025-01-01', rounds: [['bp-bp bp:B+R']] },
+    sgfPaths: [sgf.path],
+    sgfInfos: [sgf],
+    force: true,
+  });
+  assert.deepEqual(result.matchedEntries, []);
+  assert.ok(result.unmatchedEntries[0].reasons.includes('both colors resolve to the same player'));
+});

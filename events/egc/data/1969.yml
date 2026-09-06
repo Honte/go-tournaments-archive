@@ -13,3 +13,6 @@ stages:
     findSharedPlaces: true
     games:
       - 2-1 1:W+14 round:9 sgf:1969/ec/9-JuergenMattern-ManfredWimmer.sgf
+      - 2-9 9:W+9 round:1 sgf:1969/ec/1-JuergenMattern-TonyGoddard.sgf
+      - 3-2 2:W+1 round:4 sgf:1969/ec/4-ZoranMutabzija-JuergenMattern.sgf
+      - 6-7 7:W+4 round:9 sgf:1969/ec/9-EduardEkart-MichaelKatscher.sgf

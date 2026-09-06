@@ -22,5 +22,8 @@ stages:
       - 2-1 1:W+30 round:5 sgf:1983/ec/5-TerryStacey-JanuszKraszek.sgf
       - 2-5 jigo black:2 round:7 sgf:1983/ec/7-TerryStacey-RobertRehm.sgf
       - 3-1 1:W+R round:6 sgf:1983/ec/6-MatthewMacfadyen-JanuszKraszek.sgf
+      - 3-17 3:B+R round:3 sgf:1983/ec/3-MatthewMacfadyen-ErikPuijt.sgf
+      - 5-9 9:W+R round:5 sgf:1983/ec/5-RobertRehm-StefanBudig.sgf
       - 6-1 1:W+R round:9 sgf:1983/ec/9-JeanMichel-JanuszKraszek.sgf
       - 16-1 1:W+R round:1 sgf:1983/ec/1-RobKoopman-JanuszKraszek.sgf
+      - 18-5 5:W+4 round:3 sgf:1983/ec/3-AhmedEzzat-RobertRehm.sgf

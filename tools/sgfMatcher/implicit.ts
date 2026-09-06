@@ -301,6 +301,7 @@ export function buildPlayersMap(results: H9Player[], eventPlayers: EventPlayer[]
       eventPlayer.name,
       ...(eventPlayer.original ? [eventPlayer.original] : []),
       ...eventPlayer.nickname,
+      ...eventPlayer.pastNames,
     ]) {
       registerLookupEntry(lookup, alias, player.place);
     }
@@ -471,12 +472,15 @@ function findEventPlayer(player: H9Player, eventPlayers: EventPlayer[]): EventPl
   const reversedName = normalizePlayerName(`${player.surname} ${player.name}`);
 
   return eventPlayers.find((eventPlayer) =>
-    [eventPlayer.name, ...(eventPlayer.original ? [eventPlayer.original] : []), ...eventPlayer.nickname].some(
-      (name) => {
-        const normalized = normalizePlayerName(name);
-        return normalized === fullName || normalized === reversedName;
-      }
-    )
+    [
+      eventPlayer.name,
+      ...(eventPlayer.original ? [eventPlayer.original] : []),
+      ...eventPlayer.nickname,
+      ...eventPlayer.pastNames,
+    ].some((name) => {
+      const normalized = normalizePlayerName(name);
+      return normalized === fullName || normalized === reversedName;
+    })
   );
 }
 

@@ -1,0 +1,318 @@
+Num 	Plc 	Name 	Rank 	Ctr 	Club 	Nbw 	R1 	R2 	R3 	R4 	R5 	R6 	R7 	R8 	R9 	R10 	SCOREX 	MMS 	DC 	SOSM 	SOSOSM
+1 	1 	Ahn Yongho 	7d 	KR 	Korea 	10 	44+/b 	4+/w 	5+/w 	2+/b 	8+/w 	17+/w 	3+/b 	7+/b 	11+/w 	10+/b 	44 	44 	0 	396 	3936
+2 	2 	Li Yuanzhen 	7d 	UK 	UCL 	8 	71+/w 	68+/b 	3+/b 	1-/w 	47+/w 	8+/b 	4+/b 	5+/b 	9+/w 	6-/w 	42 	42 	0 	397 	3853
+3 	3 	Hyunah Kim 	7d 	KR 	KBF 	7 	10+/w 	6+/b 	2-/w 	13+/b 	5-/b 	20+/w 	1-/w 	21+/b 	8+/w 	4+/b 	41 	41 	2 	401 	3921
+4 	4 	Shin Youngsoo 	5d 	KR 	CES GO 	7 	22+/w 	1-/b 	9+/b 	37+/b 	12+/w 	5+/w 	2-/w 	8+/b 	13+/b 	3-/w 	41 	41 	1 	401 	3883
+5 	5 	Bao Yifan 	7d 	UK 	Warwick University 	7 	102+/b 	36+/w 	1-/b 	40+/b 	3+/w 	4-/b 	9+/w 	2-/w 	18+/w 	8+/b 	41 	41 	0 	395 	3858
+6 	6 	Su-Kyeong Seo 	7d 	KR 	KOREA 	6 	36+/w 	3-/w 	59-/b 	19+/b 	51+/w 	12+/b 	8-/w 	11-/b 	20+/w 	2+/b 	40 	40 	1 	391 	3804
+7 	7 	Kraemer Lukas 	6d 	DE 	Bonn 	6 	55+/b 	54+/b 	39-/b 	57+/b 	43-/b 	0= 	33+/w 	1-/w 	26+/w 	11+/w 	40 	40 	0 	387 	3632
+8 	8 	Dottan Adam 	4d 	DE 	B 	5 	14+/b 	10+/b 	12+/w 	33+/w 	1-/b 	2-/w 	6+/b 	4-/w 	3-/b 	5-/w 	39 	39 	7 	404 	3913
+9 	9 	Qian Jason 	5d 	UK 	UCL 	5 	81+/w 	21-/b 	4-/w 	78+/b 	28+/w 	33+/b 	5-/b 	10+/w 	2-/b 	16-/w 	39 	39 	6 	392 	3770
+10 	10 	Van Ling Martijn 	4d 	NL 	Utrecht 	5 	3-/b 	8-/w 	19-/w 	96+/b 	80+/b 	63+/w 	17+/w 	9-/b 	14+/b 	1-/w 	39 	39 	5 	390 	3767
+11 	11 	Campagnie Rémi 	6d 	FR 	67SE 	5 	23+/b 	69-/w 	55+/w 	52-/b 	33-/w 	27+/b 	21+/b 	6+/w 	1-/b 	7-/b 	39 	39 	4 	389 	3758
+12 	12 	Pittner Arved 	6d 	DE 	B 	5 	65+/b 	27+/w 	8-/b 	59+/w 	4-/b 	6-/w 	18-/w 	16-/b 	34+/w 	23+/w 	39 	39 	3 	386 	3765
+13 	13 	Zhu Zhu 	5d 	CN 	Shanghai 	6 	86+/b 	44+/w 	21+/b 	3-/w 	17-/b 	14+/w 	20+/b 	18+/b 	4-/w 	0= 	39 	39 	2 	378 	3790
+14 	14 	Uehara Takeshi 	6d 	JP 	- 	6 	8-/w 	66+/b 	68+/w 	42-/b 	72+/w 	13-/b 	32+/b 	22+/w 	10-/w 	21+/b 	39 	39 	1 	379 	3727
+15 	15 	Habu Koichiro 	5d 	PL 	Krak 	6 	51-/w 	32+/w 	38-/b 	84+/b 	56-/w 	30+/b 	19-/w 	67+/w 	24+/b 	18+/b 	39 	39 	0 	376 	3661
+16 	16 	Xing Yuze 	6d 	DE 	HD 	5 	0= 	0= 	0= 	0= 	0= 	22+/b 	28+/w 	12+/w 	17+/b 	9+/b 	38 	40 	9 	356 	3573
+17 	17 	Barcza Bende 	5d 	HU 	PaGo 	4 	57+/w 	52-/w 	33-/b 	61+/b 	13+/w 	1-/b 	10-/b 	34+/w 	16-/w 	26-/b 	38 	38 	8 	390 	3674
+18 	18 	Syrotkin Larion 	4d 	UA 	Cork 	4 	39-/b 	42-/w 	58-/w 	29+/b 	25+/w 	53+/b 	12+/b 	13-/w 	5-/b 	15-/w 	38 	38 	7 	387 	3694
+19 	19 	Cardew Seth 	3d 	US 	Middle TN Go Club 	6 	91+/w 	71+/b 	10+/b 	6-/w 	54-/w 	25+/b 	15+/b 	20+/w 	0= 	0= 	38 	39 	6 	367 	3607
+20 	20 	Kai Naoyuki 	5d 	JP 	Yok 	5 	58+/b 	22+/b 	32+/w 	47-/w 	21+/w 	3-/b 	13-/w 	19-/b 	6-/b 	29+/w 	38 	38 	5 	385 	3757
+21 	21 	Wang Zherui 	4d 	NL 	Leid 	4 	27-/b 	9+/w 	13-/w 	25+/b 	20-/b 	28+/w 	11-/w 	3-/w 	29+/b 	14-/w 	38 	38 	4 	384 	3821
+22 	22 	Yatsenko Dmytro 	4d 	UA 	Kyiv 	4 	4-/b 	20-/w 	28-/b 	74-/w 	85+/b 	16-/w 	67+/w 	14-/b 	48+/w 	34+/b 	38 	38 	3 	376 	3668
+23 	23 	Malçok Kaan 	5d 	TR 	Ank 	4 	11-/w 	70-/b 	78-/w 	72-/b 	55-/w 	41+/w 	46+/b 	28+/b 	27+/w 	12-/b 	38 	38 	2 	376 	3658
+24 	24 	Delli-Zotti Mathieu 	5d 	FR 	34Mo 	4 	40-/w 	33-/b 	29+/w 	28-/b 	53-/w 	45+/b 	34-/b 	32+/w 	15-/w 	27+/b 	38 	38 	1 	375 	3709
+25 	25 	Li Becky 	3d 	UK 	UCL 	6 	104+/b 	102+/w 	44+/b 	21-/w 	18-/b 	19-/w 	45+/b 	27-/b 	30+/w 	28+/w 	38 	38 	0 	368 	3710
+26 	26 	Sun Haoyang 	4d 	CN 	HAL 	4 	0= 	0= 	0= 	0= 	0= 	44+/b 	27+/w 	33+/w 	7-/b 	17+/w 	37 	39 	17 	354 	3566
+27 	27 	Furuya Yukitsuna 	5d 	JP 	xxxx 	4 	21+/w 	12-/b 	87+/w 	51-/b 	74+/b 	11-/w 	26-/b 	25+/w 	23-/b 	24-/w 	37 	37 	16 	380 	3679
+28 	28 	Kende Matyas 	3d 	HU 	PaGo 	5 	34+/b 	87+/w 	22+/w 	24+/w 	9-/b 	21-/b 	16-/b 	23-/w 	41+/w 	25-/b 	37 	37 	15 	379 	3697
+29 	29 	Sannes Pål 	3d 	NO 	Oslo 	5 	103+/b 	86+/w 	24-/b 	18-/w 	75-/w 	31+/b 	30+/b 	44+/w 	21-/w 	20-/b 	37 	37 	14 	370 	3691
+30 	30 	Adal Birand 	3d 	TR 	Ank 	5 	77+/w 	78-/w 	83+/b 	36+/b 	57-/b 	15-/w 	29-/w 	92+/b 	25-/b 	31+/w 	37 	37 	13 	370 	3603
+31 	31 	Lototskyi Denys 	1d 	UA 	Rivn 	7 	60+/b 	111+/w 	104+/b 	75-/w 	105+/w 	29-/w 	62+/b 	35+/b 	32+/b 	30-/b 	37 	37 	12 	363 	3543
+32 	32 	Marz Manja 	4d 	DE 	JIGS 	3 	50-/b 	15-/b 	20-/b 	63+/w 	58-/w 	80+/w 	14-/w 	24-/b 	31-/w 	92+/b 	37 	37 	11 	378 	3630
+33 	33 	Bernardis Davide 	6d 	IT 	FAENZA 	3 	73-/w 	24+/w 	17+/w 	8-/b 	11+/b 	9-/w 	7-/b 	26-/b 	0= 	0= 	37 	38 	10 	377 	3726
+34 	34 	Säring Patrick 	3d 	DE 	KN 	5 	28-/w 	105+/b 	86+/w 	55-/b 	83+/b 	49+/w 	24+/w 	17-/b 	12-/b 	22-/w 	37 	37 	9 	370 	3668
+35 	35 	Zeppenfeld Martin 	1d 	DE 	Badischer Go-Verein e.V. 	7 	108+/b 	91+/b 	105+/w 	83-/w 	86-/b 	76+/w 	36+/b 	31-/w 	46+/b 	49+/b 	37 	37 	8 	356 	3522
+36 	36 	Lee Jaehwan 	4d 	KR 	KBF 	3 	6-/b 	5-/b 	61-/w 	30-/w 	45-/w 	92-/b 	35-/w 	138+/b 	113+/b 	76+/w 	37 	37 	7 	369 	3566
+37 	37 	Podpera Lukas 	7d 	CZ 	APWS 	4 	62+/w 	38+/w 	52+/w 	4-/w 	50+/w 	0= 	0= 	0= 	0= 	0= 	37 	39 	6 	358 	3478
+38 	38 	Dobranis Denis 	6d 	RO 	ATSU 	4 	56+/w 	37-/b 	15+/w 	69+/w 	39+/w 	0= 	0= 	0= 	0= 	0= 	37 	39 	5 	358 	3451
+39 	39 	Surma Mateusz 	4p 	PL 	Dzim 	4 	18+/w 	47+/b 	7+/w 	58+/b 	38-/b 	0= 	0= 	0= 	0= 	0= 	37 	39 	4 	358 	3494
+40 	40 	Jabarin Ali 	3p 	EU 	Yaffa 	4 	24+/b 	73+/b 	50+/b 	5-/w 	52+/b 	0= 	0= 	0= 	0= 	0= 	37 	39 	3 	357 	3488
+41 	41 	Werthmann Julian 	1k 	DE 	JIGS 	8 	121+/w 	139+/b 	128+/b 	104+/w 	102+/w 	23-/b 	83+/w 	48+/b 	28-/b 	44+/w 	37 	37 	2 	354 	3513
+42 	42 	Medak Stjepan 	6d 	HR 	Vrba 	4 	47-/b 	18+/b 	84+/b 	14+/w 	64+/w 	0= 	0= 	0= 	0= 	0= 	37 	39 	1 	354 	3484
+43 	43 	Kravets Andrii 	3p 	UA 	Rivn 	4 	53+/w 	84+/w 	69+/w 	0= 	7+/w 	0= 	0= 	0= 	0= 	0= 	37 	40 	0 	351 	3431
+44 	44 	Mizessyn Francois 	4d 	FR 	92An 	2 	1-/w 	13-/b 	25-/w 	81-/b 	49+/b 	26-/w 	92+/w 	29-/b 	80-/w 	41-/b 	36 	36 	17 	382 	3609
+45 	45 	Derz Thomas 	2d 	NL 	DHaa 	5 	98+/w 	103-/w 	48+/b 	87+/b 	36+/b 	24-/w 	25-/w 	80-/b 	92-/w 	114+/b 	36 	36 	16 	365 	3502
+46 	46 	Inoue Koji 	2d 	JP 	xxxx 	5 	96-/b 	128+/w 	81-/b 	120+/w 	48+/w 	83+/b 	23-/w 	62-/b 	35-/w 	113+/b 	36 	36 	15 	361 	3455
+47 	47 	Ören Ulaş 	6d 	TR 	Ist 	3 	42+/w 	39-/w 	72+/b 	20+/b 	2-/b 	0= 	0= 	0= 	0= 	0= 	36 	38 	14 	360 	3499
+48 	48 	Marz Michael 	2d 	DE 	JIGS 	5 	105-/w 	149+/b 	45-/w 	60+/b 	46-/b 	89+/w 	49+/b 	41-/w 	22-/b 	95+/w 	36 	36 	13 	357 	3487
+49 	49 	Marz Ferdinand 	2d 	DE 	J 	5 	107+/b 	104+/w 	71-/b 	66+/b 	44-/w 	34-/b 	48-/w 	89+/w 	82+/b 	35-/w 	36 	36 	12 	358 	3529
+50 	50 	Drean-Guenaizia Benjamin 	1p 	FR 	13Ma 	3 	32+/w 	51+/b 	40-/w 	54+/w 	37-/b 	0= 	0= 	0= 	0= 	0= 	36 	38 	11 	356 	3457
+51 	51 	Boviz Dominik 	6d 	HU 	MGE 	3 	15+/b 	50-/w 	56+/b 	27+/w 	6-/b 	0= 	0= 	0= 	0= 	0= 	36 	38 	10 	357 	3508
+52 	52 	Le Calvé Tanguy 	2p 	FR 	13Ma 	3 	75+/b 	17+/b 	37-/b 	11+/w 	40-/w 	0= 	0= 	0= 	0= 	0= 	36 	38 	9 	357 	3496
+53 	53 	Dach Zbynek 	4d 	CZ 	BMik 	3 	43-/b 	72-/w 	103+/b 	65+/w 	24+/b 	18-/w 	0= 	0= 	0= 	0= 	36 	38 	8 	357 	3481
+54 	54 	Burzo Cornel 	6d 	RO 	Baia Mare 	3 	63+/w 	7-/w 	70+/b 	50-/b 	19+/b 	0= 	0= 	0= 	0= 	0= 	36 	38 	7 	357 	3464
+55 	55 	Komin Jan 	5d 	CZ 	APWS 	3 	7-/w 	63+/b 	11-/b 	34+/w 	23+/b 	0= 	0= 	0= 	0= 	0= 	36 	38 	6 	356 	3527
+56 	56 	Bogatskyy Dmytro 	6d 	UA 	Kyiv 	3 	38-/b 	62+/w 	51-/w 	68+/b 	15+/b 	0= 	0= 	0= 	0= 	0= 	36 	38 	5 	355 	3454
+57 	57 	Pankoke Matias 	6d 	DE 	Ozna 	3 	17-/b 	75+/w 	73+/b 	7-/w 	30+/w 	0= 	0= 	0= 	0= 	0= 	36 	38 	4 	354 	3504
+58 	58 	Park Myongsoo 	4d 	KR 	Seo 	3 	20-/w 	77+/b 	18+/b 	39-/w 	32+/b 	0= 	0= 	0= 	0= 	0= 	36 	38 	3 	352 	3509
+59 	59 	Lee Jaechoul 	7d 	KR 	Dongtan 	3 	83+/w 	64+/b 	6+/w 	12-/b 	0= 	0= 	0= 	0= 	0= 	0= 	36 	39 	2 	349 	3472
+60 	60 	Petrashevska Nika 	1d 	NL 	Utrecht 	6 	31-/w 	145+/b 	108+/w 	48-/w 	119+/b 	67-/b 	113-/w 	147+/b 	97+/w 	79+/b 	36 	36 	1 	349 	3367
+61 	61 	Dobranis Darius 	3d 	RO 	ATSU 	4 	67+/w 	83+/b 	36+/b 	17-/w 	73+/w 	0= 	0= 	0= 	0= 	0= 	36 	38 	0 	342 	3435
+62 	62 	Eren Tuğkan 	4d 	TR 	Izm 	2 	37-/b 	56-/b 	88-/w 	64+/b 	0= 	0= 	31-/w 	46+/w 	0= 	0= 	35 	37 	20 	356 	3458
+63 	63 	Granger Alban 	5d 	FR 	35Re 	2 	54-/b 	55-/w 	66+/w 	32-/b 	111+/w 	10-/b 	0= 	0= 	0= 	0= 	35 	37 	19 	355 	3485
+64 	64 	Choi Chaiwoo 	6d 	KR 	xxxx 	2 	78+/b 	59-/w 	65+/b 	62-/w 	42-/b 	0= 	0= 	0= 	0= 	0= 	35 	37 	18 	355 	3409
+65 	65 	Kuntay Altan 	4d 	TR 	Den 	2 	12-/w 	88+/b 	64-/w 	53-/b 	67+/b 	0= 	0= 	0= 	0= 	0= 	35 	37 	17 	351 	3455
+66 	66 	Arıkan Uğur 	3d 	TR 	Ank 	3 	74+/b 	14-/w 	63-/b 	49-/w 	100-/w 	0= 	0= 	76+/w 	67+/b 	0= 	35 	36 	16 	351 	3435
+67 	67 	Dubakovic Dragan 	3d 	RS 	KGRa 	3 	61-/b 	96-/w 	90+/b 	103+/w 	65-/w 	60+/w 	22-/b 	15-/b 	66-/w 	0= 	35 	35 	15 	361 	3488
+68 	68 	Petrashevskyi Danyl 	3d 	UA 	Kyiv 	2 	87+/b 	2-/w 	14-/b 	56-/w 	88+/w 	0= 	0= 	0= 	0= 	0= 	35 	37 	14 	357 	3473
+69 	69 	Ovsiienko Vsevolod 	6d 	UA 	Kyiv 	2 	70+/w 	11+/b 	43-/b 	38-/b 	0= 	0= 	0= 	0= 	0= 	0= 	35 	38 	13 	354 	3427
+70 	70 	Aksüt Hüsrev 	5d 	TR 	Ant 	2 	69-/b 	23+/w 	54-/w 	71+/w 	0= 	0= 	0= 	0= 	0= 	0= 	35 	38 	12 	349 	3423
+71 	71 	Uotani Tamotsu 	4d 	JP 	Ranka Osaka 	2 	2-/b 	19-/w 	49+/w 	70-/b 	96+/b 	0= 	0= 	0= 	0= 	0= 	35 	37 	11 	356 	3458
+72 	72 	Dach Bartik 	5d 	CZ 	BMik 	2 	84-/w 	53+/b 	47-/w 	23+/w 	14-/b 	0= 	0= 	0= 	0= 	0= 	35 	37 	10 	355 	3475
+73 	73 	Değirmenci Özgür 	5d 	TR 	Ist 	2 	33+/b 	40-/w 	57-/w 	88+/b 	61-/b 	0= 	0= 	0= 	0= 	0= 	35 	37 	9 	355 	3426
+74 	74 	Yi Yun-Bo 	3d 	US 	Denv 	3 	66-/w 	85+/w 	75+/b 	22+/b 	27-/w 	0= 	0= 	0= 	0= 	0= 	35 	37 	8 	344 	3395
+75 	75 	Ougier Ariane 	5d 	FR 	92An 	2 	52-/w 	57-/b 	74-/w 	31+/b 	29+/b 	0= 	0= 	0= 	0= 	0= 	35 	37 	7 	352 	3438
+76 	76 	Sakai Fujikazu 	1d 	JP 	Toky 	5 	128-/b 	131+/w 	115+/w 	105-/b 	95+/w 	35-/b 	82+/w 	66-/b 	138+/b 	36-/b 	35 	35 	6 	352 	3375
+77 	77 	Üner Berke 	3d 	TR 	Ist 	3 	30-/b 	58-/w 	94-/b 	117-/w 	110+/b 	138+/w 	0= 	113-/w 	114-/w 	162+/b 	35 	35 	5 	351 	3286
+78 	78 	Yang Minhyeok 	4d 	KR 	Dongtan 	2 	64-/w 	30+/b 	23+/b 	9-/w 	0= 	0= 	0= 	0= 	0= 	0= 	35 	38 	4 	349 	3473
+79 	79 	Karaerkek Kerem 	2d 	TR 	Ank 	4 	85-/b 	90-/w 	160+/b 	100-/w 	115-/w 	114-/b 	130+/b 	99+/w 	89+/b 	60-/w 	35 	35 	3 	348 	3297
+80 	80 	Wenren Yiyun 	4d 	CN 	Shanghai 	2 	0= 	0= 	0= 	0= 	10-/w 	32-/b 	0= 	45+/w 	44+/b 	0= 	35 	38 	2 	346 	3495
+81 	81 	Cho Sunoh 	4d 	KR 	Dongtan 	2 	9-/b 	0= 	46+/w 	44+/w 	0= 	0= 	0= 	0= 	0= 	0= 	35 	38 	1 	342 	3445
+82 	82 	Bekooij Bastiaan 	1k 	NL 	Nijm 	6 	110+/b 	93+/w 	98-/b 	89-/w 	144+/w 	118+/b 	76-/b 	95+/w 	49-/w 	99+/b 	35 	35 	0 	341 	3364
+83 	83 	Sora Sorin 	4d 	RO 	Crai 	1 	59-/b 	61-/w 	30-/w 	35+/b 	34-/w 	46-/w 	41-/b 	0= 	0= 	0= 	34 	35 	18 	360 	3492
+84 	84 	Labouret Florent 	6d 	FR 	38Gr 	1 	72+/b 	43-/b 	42-/w 	15-/w 	0= 	0= 	0= 	0= 	0= 	0= 	34 	37 	17 	353 	3416
+85 	85 	Sladetic Teo 	2d 	HR 	Zagreb 	3 	79+/w 	74-/b 	107+/b 	86+/w 	22-/w 	0= 	0= 	0= 	0= 	0= 	34 	36 	16 	336 	3302
+86 	86 	Kim Soondeuk 	4d 	KR 	Seoul 	1 	13-/w 	29-/b 	34-/b 	85-/b 	35+/w 	0= 	0= 	0= 	0= 	0= 	34 	36 	15 	351 	3460
+87 	87 	Shimizu June 	6d 	JP 	Nagasaki 	1 	68-/w 	28-/b 	27-/b 	45-/w 	123+/b 	0= 	0= 	0= 	0= 	0= 	34 	36 	14 	346 	3437
+88 	88 	Qiu Bo 	4d 	CN 	Twenty Cat 	1 	0= 	65-/w 	62+/b 	73-/w 	68-/b 	0= 	0= 	0= 	0= 	0= 	34 	37 	13 	346 	3399
+89 	89 	Zhao Ze-Wen 	1k 	CN 	go 	5 	158+/w 	95+/w 	111-/b 	82+/b 	90+/w 	48-/b 	114+/w 	49-/b 	79-/w 	0= 	34 	34 	12 	341 	3345
+90 	90 	Laplagne Santiago 	1d 	AR 	AAGo 	4 	139+/w 	79+/b 	67-/w 	111-/w 	89-/b 	113-/b 	140+/w 	114-/b 	147-/w 	164+/b 	34 	34 	11 	344 	3289
+91 	91 	Muraoka Kazumitsu 	2d 	JP 	Toky 	3 	19-/b 	35-/w 	106-/w 	135-/b 	134-/w 	140-/b 	151-/w 	137+/b 	175+/b 	179+/w 	34 	34 	10 	344 	3184
+92 	92 	Bernard Gaultier 	3d 	FR 	92An 	2 	0= 	0= 	0= 	0= 	0= 	36+/w 	44-/b 	30-/w 	45+/b 	32-/w 	34 	36 	9 	343 	3464
+93 	93 	Uesaka Susumu 	1d 	JP 	mail go 	4 	119-/w 	82-/b 	123-/b 	134-/w 	165+/b 	130-/w 	127+/b 	180+/w 	109+/b 	116-/w 	34 	34 	8 	339 	3144
+94 	94 	Yang Sehun 	1d 	KR 	Dongtan 	4 	95+/b 	98+/b 	77+/w 	102+/w 	0= 	0= 	0= 	0= 	0= 	0= 	34 	37 	7 	320 	3175
+95 	95 	Dubakovic Ivan 	1d 	RS 	KGRa 	4 	94-/w 	89-/b 	118+/w 	146+/b 	76-/b 	0= 	133+/w 	82-/b 	151+/w 	48-/b 	34 	34 	6 	338 	3275
+96 	96 	Vlahovic Karlo 	2d 	HR 	VGor 	3 	46+/w 	67+/b 	102+/b 	10-/w 	71-/w 	0= 	0= 	0= 	0= 	0= 	34 	36 	5 	337 	3372
+97 	97 	Bergisch Frans 	1k 	NL 	Nijm 	5 	106-/b 	127+/w 	159+/w 	131-/b 	137+/w 	108-/b 	109-/b 	175+/w 	60-/b 	151+/w 	34 	34 	4 	335 	3198
+98 	98 	Timperi Kalle 	2d 	FI 	OGP 	3 	45-/b 	94-/w 	82+/w 	119+/b 	103+/w 	0= 	0= 	0= 	0= 	0= 	34 	36 	3 	332 	3244
+99 	99 	Sakashita Satoshi 	3k 	JP 	Toky 	7 	148+/w 	156+/b 	173+/b 	139-/w 	159+/w 	137+/b 	110+/w 	79-/b 	130+/b 	82-/w 	34 	34 	2 	330 	3224
+100 	100 	Kato Kazuhisa 	1d 	JP 	kgs 	4 	111+/b 	119+/w 	117-/w 	79+/b 	66+/b 	0= 	0= 	0= 	0= 	0= 	34 	36 	1 	326 	3166
+101 	101 	Hadzhiiev Viktor 	3k 	UA 	Kyiv 	7 	178+/b 	154+/w 	144-/w 	150+/b 	171-/b 	141+/w 	118+/w 	140-/b 	112+/w 	110+/b 	34 	34 	0 	325 	3127
+102 	102 	Zhang Wentian 	4d 	CN 	Beij 	0 	5-/w 	25-/b 	96-/w 	94-/b 	41-/b 	0= 	0= 	0= 	0= 	0= 	33 	35 	15 	354 	3424
+103 	103 	Wåhlin Lova 	3d 	SE 	Stockholm 	1 	29-/w 	45+/b 	53-/w 	67-/b 	98-/b 	0= 	0= 	0= 	0= 	0= 	33 	35 	14 	342 	3385
+104 	104 	Hanssen Ger 	3d 	NL 	Amer 	1 	25-/w 	49-/b 	31-/w 	41-/b 	131+/w 	0= 	0= 	0= 	0= 	0= 	33 	35 	13 	342 	3357
+105 	105 	Wu Xinyuan 	2d 	CN 	Camb 	2 	48+/b 	34-/w 	35-/b 	76+/w 	31-/b 	0= 	0= 	0= 	0= 	0= 	33 	35 	12 	337 	3348
+106 	106 	Garcia Garcia Nil 	1k 	ES 	OGS 	4 	97+/w 	161+/b 	91+/b 	107+/w 	0= 	0= 	0= 	0= 	0= 	0= 	33 	36 	11 	311 	3062
+107 	107 	Swan Andrew 	2d 	SI 	Ljub 	2 	49-/w 	115+/b 	85-/w 	106-/b 	108+/b 	0= 	0= 	0= 	0= 	0= 	33 	35 	10 	333 	3205
+108 	108 	Trippel Lorenz 	1d 	CH 	Zur 	3 	35-/w 	159+/b 	60-/b 	110+/w 	107-/w 	97+/w 	0= 	0= 	0= 	0= 	33 	35 	9 	327 	3219
+109 	109 	Oberlohr Patrick 	3k 	AT 	xxxx 	6 	192-/b 	143+/w 	163+/w 	152-/b 	176+/w 	129+/b 	97+/w 	110+/b 	93-/w 	130-/b 	33 	33 	8 	323 	3158
+110 	110 	Cockburn Mike 	1k 	UK 	StAl 	4 	82-/w 	174+/b 	145+/w 	108-/b 	77-/w 	125+/b 	99-/b 	109-/w 	142+/b 	101-/w 	33 	33 	7 	335 	3241
+111 	111 	Wolter Bernd 	2d 	DE 	B 	2 	100-/w 	31-/b 	89+/w 	90+/b 	63-/b 	0= 	0= 	0= 	0= 	0= 	33 	35 	6 	333 	3279
+112 	112 	Baturina Raisa 	2k 	UA 	Khar 	5 	135-/w 	134-/b 	172+/b 	171+/w 	118-/w 	136+/b 	137+/w 	151-/b 	101-/b 	140+/w 	33 	33 	5 	329 	3094
+113 	113 	Chou Jeffrey 	1d 	US 	Gotham Go Club 	3 	0= 	0= 	0= 	0= 	0= 	90+/w 	60+/b 	77+/b 	36-/w 	46-/w 	33 	35 	4 	328 	3274
+114 	114 	Vandendyck Leo 	1d 	FR 	91Or 	3 	0= 	0= 	0= 	0= 	0= 	79+/w 	89-/b 	90+/w 	77+/b 	45-/w 	33 	35 	3 	324 	3249
+115 	115 	Roberts Brook 	1d 	UK 	LonC 	3 	120+/b 	107-/w 	76-/b 	121+/w 	79+/b 	0= 	0= 	0= 	0= 	0= 	33 	35 	2 	323 	3171
+116 	116 	Sonnenberger Jörg 	1d 	DE 	HRO 	3 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	125+/w 	140+/w 	93+/b 	33 	36 	1 	309 	3085
+117 	117 	Lee Seojun 	1k 	KR 	Dongtan 	4 	137+/w 	157+/w 	100+/b 	77+/b 	0= 	0= 	0= 	0= 	0= 	0= 	33 	36 	0 	308 	3069
+118 	118 	Sokolowsky Bernd 	2k 	DE 	ER 	4 	166+/w 	150+/b 	95-/b 	156-/w 	112+/b 	82-/w 	101-/b 	142-/w 	206+/w 	136-/b 	32 	32 	17 	333 	3105
+119 	119 	Aydin Deniz Ekim 	1d 	TR 	Ant 	2 	93+/b 	100-/b 	120+/w 	98-/w 	60-/w 	0= 	0= 	0= 	0= 	0= 	32 	34 	16 	326 	3167
+120 	120 	Zhou Afa 	1d 	US 	New York 	2 	115-/w 	122+/b 	119-/b 	46-/b 	173+/w 	0= 	0= 	0= 	0= 	0= 	32 	34 	15 	321 	3131
+121 	121 	Eryargi Hakan 	1k 	NL 	Amst 	3 	41-/b 	152+/w 	122+/w 	115-/b 	153+/w 	0= 	0= 	0= 	0= 	0= 	32 	34 	14 	317 	3047
+122 	122 	Sičić Jakov 	1k 	HR 	VGor 	3 	173+/b 	120-/w 	121-/b 	125+/w 	146+/b 	0= 	0= 	0= 	0= 	0= 	32 	34 	13 	310 	3040
+123 	123 	Guga Mircea Alexandru 	2k 	RO 	CSRB 	4 	163+/w 	125+/b 	93+/w 	181+/b 	87-/w 	0= 	0= 	0= 	0= 	0= 	32 	34 	12 	306 	3015
+124 	124 	Çiçek Mert Tuna 	5k 	TR 	Ist 	7 	208+/b 	197+/w 	184-/b 	193+/w 	148-/w 	188+/b 	198+/w 	132+/b 	125+/b 	0= 	32 	32 	11 	303 	2888
+125 	125 	Reinke Hendrik 	1k 	DE 	B 	3 	159-/b 	123-/w 	129+/w 	122-/b 	150-/b 	110-/w 	136+/w 	116-/b 	124-/w 	143+/b 	32 	32 	10 	330 	3113
+126 	126 	Masson Lucie 	2k 	FR 	44GN 	4 	152-/b 	133+/w 	127+/b 	157+/w 	139+/w 	0= 	0= 	0= 	0= 	0= 	32 	34 	9 	303 	2990
+127 	127 	Landskron Burkhard 	2k 	DE 	GP 	4 	154+/w 	97-/b 	126-/w 	141+/b 	152-/w 	151-/b 	93-/w 	143-/b 	205+/b 	194+/b 	32 	32 	8 	325 	3066
+128 	128 	Park Jeyoung 	1d 	KR 	Dongtan 	2 	76+/w 	46-/b 	41-/w 	160+/b 	0= 	0= 	0= 	0= 	0= 	0= 	32 	35 	7 	322 	3177
+129 	129 	Adamek Jan 	3k 	CZ 	TFMi 	5 	185+/b 	132+/w 	125-/b 	168-/w 	141-/b 	109-/w 	155+/w 	169+/b 	143+/w 	142-/b 	32 	32 	6 	317 	3083
+130 	130 	Robinson Austin 	1k 	US 	Gotham Go Club 	3 	0= 	0= 	0= 	0= 	0= 	93+/b 	79-/w 	133+/b 	99-/w 	109+/w 	32 	34 	5 	314 	3103
+131 	131 	Lanz Uwe 	1k 	DE 	B 	3 	150+/w 	76-/b 	158+/b 	97+/w 	104-/b 	0= 	0= 	0= 	0= 	0= 	32 	34 	4 	314 	3099
+132 	132 	Rombouts Wannes 	2k 	FR 	00St 	4 	174-/w 	129-/b 	166-/b 	183-/w 	202-/b 	182+/w 	148+/b 	124-/w 	155+/b 	137+/w 	32 	32 	3 	313 	3012
+133 	133 	Tsujigaki Kenji 	2k 	JP 	Kyo 	4 	0= 	126-/b 	178+/w 	176+/b 	157+/w 	142+/w 	95-/b 	130-/w 	0= 	0= 	32 	33 	2 	313 	3010
+134 	134 	Gazull Yann-Situ 	3k 	FR 	13Ma 	5 	184+/b 	112+/w 	152+/w 	93+/b 	91+/b 	0= 	0= 	0= 	0= 	0= 	32 	34 	1 	301 	2960
+135 	135 	Lim Jonghyun 	2k 	KR 	Dongtan 	4 	112+/b 	173+/w 	139+/b 	91+/w 	0= 	0= 	0= 	0= 	0= 	0= 	32 	35 	0 	300 	2988
+136 	136 	Fai Joshua Sing Ching 	2k 	UK 	NoCb 	3 	0= 	0= 	0= 	0= 	0= 	112-/w 	125-/b 	141+/b 	137+/w 	118+/w 	31 	33 	20 	300 	3031
+137 	137 	Urban Andreas 	2k 	DE 	B 	3 	117-/b 	177+/w 	174+/b 	159+/w 	97-/b 	99-/w 	112-/b 	91-/w 	136-/b 	132-/b 	31 	31 	19 	331 	3157
+138 	138 	İşçimen Özgür 	2d 	TR 	Ist 	0 	0= 	0= 	0= 	0= 	0= 	77-/b 	0= 	36-/w 	76-/w 	0= 	31 	34 	18 	324 	3242
+139 	139 	Zhou Guanwen 	1d 	CN 	Niš Progo 	1 	90-/b 	41-/w 	135-/w 	99+/b 	126-/b 	0= 	0= 	0= 	0= 	0= 	31 	33 	17 	324 	3131
+140 	140 	Tarasenko Svitlana 	1k 	UA 	Kyiv 	2 	0= 	0= 	0= 	0= 	0= 	91+/w 	90-/b 	101+/w 	116-/b 	112-/b 	31 	33 	16 	316 	3101
+141 	141 	Kaya Toprak İskender Kaya 	4k 	TR 	Ank 	5 	177+/w 	193+/b 	143+/b 	127-/w 	129+/w 	101-/b 	0= 	136-/w 	188+/b 	0= 	31 	32 	15 	308 	2960
+142 	142 	Oka Isamu 	2k 	IT 	Pisa 	3 	0= 	0= 	0= 	0= 	0= 	133-/b 	143+/w 	118+/b 	110-/w 	129+/w 	31 	33 	14 	301 	3012
+143 	143 	Jeong Eunyoung 	4k 	KR 	Seo 	5 	186+/b 	109-/b 	141-/w 	187+/w 	192+/b 	148+/w 	142-/b 	127+/w 	129-/b 	125-/w 	31 	31 	13 	314 	3083
+144 	144 	Simonini Pietro 	2k 	IT 	Rave 	3 	168+/w 	158-/b 	101+/b 	145+/w 	82-/b 	0= 	0= 	0= 	0= 	0= 	31 	33 	12 	306 	2991
+145 	145 	Tomi Paasonen 	1k 	FI 	n/a 	2 	146+/w 	60-/w 	110-/b 	144-/b 	168+/b 	0= 	0= 	0= 	0= 	0= 	31 	33 	11 	312 	3052
+146 	146 	Logar Maja 	1k 	SI 	Ljub 	2 	145-/b 	153+/w 	157+/b 	95-/w 	122-/w 	0= 	0= 	0= 	0= 	0= 	31 	33 	10 	311 	3034
+147 	147 	Türkmen Onur 	1d 	PL 	Wars 	1 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	60-/w 	90+/b 	0= 	31 	35 	9 	310 	3093
+148 	148 	Decembry Jonathan 	4k 	LU 	Lux 	5 	99-/b 	202-/w 	213+/b 	169+/w 	124+/b 	143-/b 	132-/w 	188-/w 	227+/b 	201+/w 	31 	31 	8 	309 	2922
+149 	149 	Mendez Pedro 	1d 	ES 	NAMBAN 	1 	157+/b 	48-/w 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	31 	35 	7 	308 	3078
+150 	150 	Musil Jiri 	1k 	CZ 	APra 	2 	131-/b 	118-/w 	176+/b 	101-/w 	125+/w 	0= 	0= 	0= 	0= 	0= 	31 	33 	6 	308 	3049
+151 	151 	Kristensen Lars 	2k 	DK 	KGK 	3 	0= 	0= 	0= 	0= 	0= 	127+/w 	91+/b 	112+/w 	95-/b 	97-/b 	31 	33 	5 	307 	3071
+152 	152 	Kylmänen Kai 	2k 	SE 	Stoc 	3 	126+/w 	121-/b 	134-/b 	109+/w 	127+/b 	0= 	0= 	0= 	0= 	0= 	31 	33 	4 	307 	2969
+153 	153 	Chen Guanqiu 	2k 	UK 	Plym 	3 	167+/w 	146-/b 	168+/b 	158+/w 	121-/b 	0= 	0= 	0= 	0= 	0= 	31 	33 	3 	303 	2945
+154 	154 	Malavasi Christophe 	2k 	FR 	75LF 	3 	127-/b 	101-/b 	183+/w 	174+/w 	158+/w 	0= 	0= 	0= 	0= 	0= 	31 	33 	2 	301 	2954
+155 	155 	Lindved William 	5k 	UK 	Edin 	6 	204-/b 	224+/w 	186+/w 	203-/b 	215+/b 	205+/w 	129-/b 	201+/w 	132-/w 	182+/b 	31 	31 	1 	301 	2845
+156 	156 	Yang Seoyun 	2k 	KR 	Dongtan 	3 	161+/b 	99-/w 	167+/w 	118+/b 	0= 	0= 	0= 	0= 	0= 	0= 	31 	34 	0 	300 	2957
+157 	157 	Dündar Zeynep 	1d 	TR 	IGOD 	0 	149-/w 	117-/b 	146-/w 	126-/b 	133-/b 	0= 	0= 	0= 	0= 	0= 	30 	32 	15 	321 	3043
+158 	158 	Kim Woonhyang 	1k 	KR 	Seoul 	1 	89-/b 	144+/w 	131-/w 	153-/b 	154-/b 	0= 	0= 	0= 	0= 	0= 	30 	32 	14 	312 	3015
+159 	159 	Süleymanoğlu Serap 	1k 	TR 	Ist 	1 	125+/w 	108-/w 	97-/b 	137-/b 	99-/b 	0= 	0= 	0= 	0= 	0= 	30 	32 	13 	311 	3103
+160 	160 	Takenaka Yoshio 	1d 	JP 	- 	0 	0= 	0= 	79-/w 	128-/w 	0= 	0= 	0= 	0= 	0= 	0= 	30 	34 	12 	310 	3070
+161 	161 	Eren Erhan 	1d 	TR 	Izm 	0 	156-/w 	106-/w 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	30 	34 	11 	310 	3011
+162 	162 	Milošević Aleksandar 	1d 	RS 	Beograd 	0 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	77-/w 	30 	34 	10 	305 	3051
+163 	163 	Toker Selçuk 	2k 	TR 	Esk 	2 	123-/b 	176-/w 	109-/b 	189-/b 	212-/w 	201+/w 	169+/w 	0= 	0= 	0= 	30 	31 	9 	305 	2897
+164 	164 	Çelebican Barkın 	1d 	TR 	Ist 	0 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	90-/w 	30 	34 	8 	304 	3044
+165 	165 	Altug Seval 	1d 	TR 	Izm 	0 	0= 	0= 	0= 	0= 	93-/w 	0= 	0= 	0= 	0= 	0= 	30 	34 	7 	304 	3039
+166 	166 	Kim Junseo 	3k 	KR 	Dongtan 	3 	118-/b 	170+/w 	132+/w 	167+/b 	0= 	0= 	0= 	0= 	0= 	0= 	30 	33 	6 	288 	2867
+167 	167 	Schweitzer Erik 	2k 	DE 	W 	2 	153-/b 	171+/w 	156-/b 	166-/w 	183+/b 	0= 	0= 	0= 	0= 	0= 	30 	32 	5 	304 	2877
+168 	168 	Rüten-Budde Jan 	2k 	DE 	none 	2 	144-/b 	192+/w 	153-/w 	129+/b 	145-/w 	0= 	0= 	0= 	0= 	0= 	30 	32 	4 	301 	2933
+169 	169 	Symonenko Viktoriia 	5k 	UA 	Kyiv 	5 	203-/b 	199+/w 	208+/w 	148-/b 	218+/w 	207+/b 	163-/b 	129-/w 	200+/w 	188-/b 	30 	30 	3 	300 	2875
+170 	170 	Brummelkamp Erik 	5k 	NL 	Nijm 	5 	235+/w 	166-/b 	222+/w 	197-/b 	182-/b 	194+/w 	188-/w 	200+/w 	201-/b 	187+/b 	30 	30 	2 	297 	2782
+171 	171 	Zderic Tonka 	3k 	HR 	Vrba 	3 	193+/w 	167-/b 	192+/w 	112-/b 	101+/w 	0= 	0= 	0= 	0= 	0= 	30 	32 	1 	295 	2891
+172 	172 	Kim Jaeeun 	4k 	KR 	Daegu 	4 	202+/b 	185+/w 	112-/w 	192+/b 	174+/b 	0= 	0= 	0= 	0= 	0= 	30 	32 	0 	286 	2794
+173 	173 	Eren Hülya 	1k 	TR 	Izm 	0 	122-/w 	135-/b 	99-/w 	0= 	120-/b 	0= 	0= 	0= 	0= 	0= 	29 	32 	18 	311 	3001
+174 	174 	Takahara Kumiko 	2k 	JP 	Osak 	1 	132+/b 	110-/w 	137-/w 	154-/b 	172-/w 	0= 	0= 	0= 	0= 	0= 	29 	31 	17 	301 	2966
+175 	175 	Karatas Ozgur 	1k 	TR 	Ank 	0 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	97-/b 	91-/w 	0= 	29 	33 	16 	300 	2999
+176 	176 	Roberts Alan 	3k 	UK 	LonC 	2 	189+/b 	163+/b 	150-/w 	133-/w 	109-/b 	0= 	0= 	0= 	0= 	0= 	29 	31 	15 	297 	2883
+177 	177 	Jeong Yeon 	3k 	KR 	Dongtan 	2 	141-/b 	137-/b 	220+/w 	178+/w 	0= 	0= 	0= 	0= 	0= 	0= 	29 	32 	14 	286 	2826
+178 	178 	Wendlandt Michael 	3k 	DE 	- 	2 	101-/w 	189+/w 	133-/b 	177-/b 	207+/w 	0= 	0= 	0= 	0= 	0= 	29 	31 	13 	296 	2830
+179 	179 	Sarıkaya Doğukan 	1k 	TR 	Esk 	0 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	91-/b 	29 	33 	12 	295 	2954
+180 	180 	Tavsanoglu Cagatay 	1k 	TR 	Ank 	0 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	93-/b 	0= 	0= 	29 	33 	11 	295 	2949
+181 	181 	Elitok Mustafa Kürşat 	1k 	TR 	Esk 	0 	0= 	0= 	0= 	123-/w 	0= 	0= 	0= 	0= 	0= 	0= 	29 	33 	10 	295 	2916
+182 	182 	Patel Aniket 	7k 	UK 	London Go centre 	6 	223+/w 	225+/w 	199+/b 	219+/b 	170+/w 	132-/b 	201-/b 	222+/b 	194-/w 	155-/w 	29 	29 	9 	294 	2810
+183 	183 	Ökmen Ahmet Kemal 	3k 	TR 	Can 	2 	0= 	184+/w 	154-/b 	132+/b 	167-/w 	0= 	0= 	0= 	0= 	0= 	29 	32 	8 	291 	2829
+184 	184 	Park Jiseong 	3k 	KR 	Dongtan 	2 	134-/w 	183-/b 	124+/w 	185+/b 	0= 	0= 	0= 	0= 	0= 	0= 	29 	32 	7 	291 	2807
+185 	185 	Richter Uwe 	3k 	DE 	FT 	2 	129-/w 	172-/b 	204+/b 	184-/w 	203+/w 	0= 	0= 	0= 	0= 	0= 	29 	31 	6 	292 	2793
+186 	186 	Yılmaz Sarp Ege 	4k 	TR 	Ank 	3 	143-/w 	204-/w 	155-/b 	215-/b 	198-/w 	196+/b 	0= 	209+/w 	190+/w 	0= 	29 	30 	5 	288 	2761
+187 	187 	Bumke Daniel 	6k 	DE 	B 	5 	225+/b 	208-/w 	237+/w 	143-/b 	223-/w 	217+/b 	190+/b 	194-/w 	198+/w 	170-/w 	29 	29 	4 	287 	2770
+188 	188 	Fai Caleb Tin Nam 	4k 	UK 	NoCb 	3 	0= 	0= 	0= 	0= 	0= 	124-/w 	170+/b 	148+/b 	141-/w 	169+/w 	29 	31 	3 	285 	2817
+189 	189 	Choi Mingeon 	3k 	KR 	Dongtan 	2 	176-/w 	178-/b 	218+/b 	163+/w 	0= 	0= 	0= 	0= 	0= 	0= 	29 	32 	2 	284 	2792
+190 	190 	Masuyama Shunji 	7k 	JP 	Yoko 	6 	213+/b 	191+/w 	217-/w 	200-/b 	225+/b 	229+/w 	187-/w 	223+/w 	186-/b 	195+/b 	29 	29 	1 	283 	2713
+191 	191 	Buard Mathieu 	6k 	FR 	42Se 	5 	224-/w 	190-/b 	200-/w 	221+/b 	217-/w 	209-/b 	226+/b 	230+/w 	236+/w 	198+/b 	29 	29 	0 	274 	2675
+192 	192 	Dejouhanet Christophe 	3k 	FR 	44GN 	1 	109+/w 	168-/b 	171-/b 	172-/w 	143-/w 	0= 	0= 	0= 	0= 	0= 	28 	30 	12 	295 	2869
+193 	193 	Lee Sion 	3k 	KR 	Dongtan 	1 	171-/b 	141-/w 	203+/w 	124-/b 	0= 	0= 	0= 	0= 	0= 	0= 	28 	31 	11 	288 	2803
+194 	194 	Wu Laura 	5k 	US 	Gotham Go (NYC) 	3 	0= 	0= 	0= 	0= 	0= 	170-/b 	195+/w 	187+/b 	182+/b 	127-/w 	28 	30 	10 	273 	2723
+195 	195 	Maksymenko Andrii 	9k 	UA 	Kyiv 	7 	211-/b 	231+/w 	239+/w 	214+/b 	221+/w 	230+/b 	194-/b 	217+/w 	196+/b 	190-/w 	28 	28 	9 	270 	2630
+196 	196 	Hastrup Thore 	9k 	DK 	KGK 	7 	228+/w 	243+/w 	226+/b 	235+/b 	224+/b 	186-/w 	229-/b 	210+/w 	195-/w 	199+/b 	28 	28 	8 	272 	2630
+197 	197 	Tasci Tolgahan 	5k 	DE 	W 	3 	199+/b 	124-/b 	219+/w 	170+/w 	0= 	0= 	0= 	0= 	0= 	0= 	28 	31 	7 	269 	2657
+198 	198 	Podbiol Krzysztof 	8k 	PL 	Chor 	6 	216+/w 	223+/b 	235+/w 	224+/b 	186+/b 	200+/w 	124-/b 	199-/w 	187-/b 	191-/w 	28 	28 	6 	285 	2763
+199 	199 	Malavasi Océane 	5k 	FR 	75LF 	3 	197-/w 	169-/b 	182-/w 	217+/b 	213-/b 	236+/w 	200-/b 	198+/b 	222-/w 	196-/w 	28 	28 	5 	285 	2759
+200 	200 	Le Hérissé Alain 	7k 	AR 	Buenos Aires 	5 	215-/b 	221+/w 	191+/b 	190+/w 	254+/w 	198-/b 	199+/w 	170-/b 	169-/b 	209-/w 	28 	28 	4 	283 	2719
+201 	201 	Kondo Hideki 	4k 	IT 	Fire 	2 	0= 	0= 	0= 	0= 	0= 	163-/b 	182+/w 	155-/b 	170+/w 	148-/b 	28 	30 	3 	282 	2806
+202 	202 	Bostancı Cemal Atakan 	4k 	TR 	Ank 	2 	172-/w 	148+/b 	0= 	0= 	132+/w 	0= 	0= 	0= 	0= 	0= 	28 	31 	2 	277 	2728
+203 	203 	Chapuis Nicolas 	5k 	FR 	13Ma 	3 	169+/w 	219+/b 	193-/b 	155+/w 	185-/b 	0= 	0= 	0= 	0= 	0= 	28 	30 	1 	277 	2703
+204 	204 	Roe Hyunjie 	5k 	KR 	Dongtan 	3 	155+/w 	186+/b 	185-/w 	220+/b 	0= 	0= 	0= 	0= 	0= 	0= 	28 	31 	0 	272 	2652
+205 	205 	Ergezen Dogan 	3k 	TR 	Ank 	0 	0= 	0= 	0= 	0= 	0= 	155-/b 	0= 	0= 	127-/w 	0= 	27 	31 	11 	279 	2786
+206 	206 	Matsuno Shiho 	3k 	JP 	TODA GO club 	0 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	118-/b 	0= 	27 	31 	10 	275 	2763
+207 	207 	Uysal Oktay 	4k 	TR 	Esk 	1 	0= 	0= 	0= 	218+/w 	178-/b 	169-/w 	0= 	0= 	0= 	0= 	27 	30 	9 	272 	2690
+208 	208 	Lee Donghun 	5k 	KR 	Dongtan 	2 	124-/w 	187+/b 	169-/b 	225+/w 	0= 	0= 	0= 	0= 	0= 	0= 	27 	30 	8 	268 	2654
+209 	209 	Larina Tetiana 	7k 	UA 	Kyiv 	4 	0= 	0= 	0= 	0= 	0= 	191+/w 	236+/b 	186-/b 	211+/w 	200+/b 	27 	29 	7 	256 	2520
+210 	210 	Lee Yongwoo 	8k 	FR 	34Mo 	5 	243+/b 	226+/w 	225-/w 	223-/b 	214-/w 	211+/w 	221+/b 	196-/b 	217+/b 	230-/w 	27 	27 	6 	268 	2606
+211 	211 	Malavasi Valentine 	9k 	FR 	75LF 	6 	195+/w 	214+/b 	223-/b 	232+/w 	226-/w 	210-/b 	216+/w 	228+/b 	209-/b 	217+/w 	27 	27 	5 	268 	2605
+212 	212 	Masarovic Julius 	4k 	SK 	Brat 	1 	0= 	0= 	0= 	0= 	163+/b 	0= 	0= 	0= 	0= 	0= 	27 	31 	4 	265 	2645
+213 	213 	Bumke Kaspar 	6k 	UK 	Oxford 	3 	190-/w 	217+/b 	148-/w 	237+/b 	199+/w 	0= 	0= 	0= 	0= 	0= 	27 	29 	3 	262 	2602
+214 	214 	Aydın Ahmet Emir 	8k 	TR 	İstanbul Go Okulu 	5 	221-/b 	211-/w 	216+/b 	195-/w 	210+/b 	228+/w 	0= 	226+/b 	230-/w 	232+/b 	27 	27 	2 	261 	2553
+215 	215 	Schwarz Martin 	7k 	AT 	Inns 	4 	200+/w 	235+/b 	224+/b 	186+/w 	155-/w 	0= 	0= 	0= 	0= 	0= 	27 	29 	1 	258 	2546
+216 	216 	Burkhardt Thilo 	8k 	DE 	DD 	5 	198-/b 	0= 	214-/w 	242-/w 	234+/b 	240+/w 	211-/b 	231+/b 	221+/w 	236+/b 	27 	27 	0 	258 	2499
+217 	217 	Ergun Ege 	7k 	TR 	İstanbul Go Okulu 	3 	226+/b 	213-/w 	190+/b 	199-/w 	191+/b 	187-/w 	0= 	195-/b 	210-/w 	211-/b 	26 	26 	6 	275 	2685
+218 	218 	Görüşük Seçkin 	4k 	TR 	Can 	0 	0= 	0= 	189-/w 	207-/b 	169-/b 	0= 	0= 	0= 	0= 	0= 	26 	29 	5 	274 	2676
+219 	219 	Öncel Ayşe Nil 	4k 	TR 	İstanbul Go Okulu 	0 	0= 	203-/w 	197-/b 	182-/w 	0= 	0= 	0= 	0= 	0= 	0= 	26 	29 	4 	272 	2660
+220 	220 	Güntav Irmak 	4k 	TR 	İstanbul Go Okulu 	0 	0= 	0= 	177-/b 	204-/w 	0= 	0= 	0= 	0= 	0= 	0= 	26 	30 	3 	271 	2638
+221 	221 	Okada Ichiro 	8k 	JP 	kanagawa 	4 	214+/w 	200-/b 	242+/w 	191-/w 	195-/b 	0= 	210-/w 	233+/b 	216-/b 	231+/b 	26 	26 	2 	264 	2549
+222 	222 	Karakaya Ali 	5k 	TR 	Izm 	1 	0= 	0= 	170-/b 	0= 	0= 	0= 	0= 	182-/w 	199+/b 	0= 	26 	29 	1 	262 	2626
+223 	223 	Karakaş Mert 	7k 	TR 	Ank 	3 	182-/b 	198-/w 	211+/w 	210+/w 	187+/b 	0= 	0= 	190-/b 	0= 	0= 	26 	28 	0 	261 	2605
+224 	224 	Dobranis Vasile 	6k 	RO 	ATSU 	1 	191+/b 	155-/b 	215-/w 	198-/w 	196-/w 	0= 	0= 	0= 	0= 	0= 	25 	27 	10 	265 	2590
+225 	225 	Üzülmez Utku 	6k 	TR 	Ist 	1 	187-/w 	182-/b 	210+/b 	208-/b 	190-/w 	0= 	0= 	0= 	0= 	0= 	25 	27 	9 	264 	2600
+226 	226 	Pawłaszek Piotr 	7k 	PL 	Szcz 	2 	217-/w 	210-/b 	196-/w 	228+/b 	211+/b 	0= 	191-/w 	214-/w 	0= 	0= 	25 	26 	8 	258 	2562
+227 	227 	Özenir Kerem 	5k 	TR 	Ada 	0 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	148-/w 	0= 	25 	29 	7 	256 	2559
+228 	228 	Mir Abel 	9k 	FR 	- 	4 	196-/b 	234+/b 	243+/w 	226-/w 	242+/b 	214-/b 	238+/w 	211-/w 	231-/w 	0= 	25 	25 	6 	254 	2451
+229 	229 	Güç Topçu Neslihan 	6k 	TR 	Izm 	1 	0= 	0= 	0= 	0= 	0= 	190-/b 	196+/w 	0= 	0= 	0= 	25 	29 	5 	249 	2475
+230 	230 	Kis-Gadó Csaba Benedikt 	7k 	HU 	PaGo 	2 	0= 	0= 	0= 	0= 	0= 	195-/w 	0= 	191-/b 	214+/b 	210+/b 	25 	28 	4 	249 	2453
+231 	231 	Aydin Ahmet 	10k 	TR 	Izm 	5 	245+/w 	195-/b 	0= 	246+/b 	232+/w 	233-/b 	240+/w 	216-/w 	228+/b 	221-/w 	25 	25 	3 	246 	2419
+232 	232 	Marz Leopold 	11k 	DE 	J 	6 	253+/w 	241+/b 	234+/w 	211-/b 	231-/b 	245+/b 	233-/w 	252+/b 	240+/w 	214-/w 	25 	25 	2 	244 	2391
+233 	233 	Petruk Hlib 	12k 	UA 	Kyiv 	7 	256+/b 	258+/w 	245+/w 	234-/b 	246+/b 	231+/w 	232+/b 	221-/w 	238+/b 	240-/b 	25 	25 	1 	241 	2321
+234 	234 	Aslan Gökçe Kaan 	10k 	TR 	Ank 	5 	241+/b 	228-/w 	232-/b 	233+/w 	216-/w 	238-/b 	0= 	259+/w 	252+/b 	239+/b 	25 	25 	0 	240 	2314
+235 	235 	Nam Dohyun 	6k 	KR 	Dongtan 	0 	170-/b 	215-/w 	198-/b 	196-/w 	0= 	0= 	0= 	0= 	0= 	0= 	24 	27 	4 	259 	2552
+236 	236 	Yılmaz Guclu 	6k 	TR 	Izm 	0 	0= 	0= 	0= 	0= 	0= 	199-/b 	209-/w 	0= 	191-/b 	216-/w 	24 	27 	3 	257 	2513
+237 	237 	Ravoi Laura 	6k 	FR 	13Ma 	0 	0= 	0= 	187-/b 	213-/w 	0= 	0= 	0= 	0= 	0= 	0= 	24 	28 	2 	250 	2469
+238 	238 	Gheorghe Ana-Sofia 	12k 	RO 	VaDo 	6 	266+/b 	246-/b 	265+/w 	241+/w 	245+/w 	234+/w 	228-/b 	239+/b 	233-/w 	252-/w 	24 	24 	1 	234 	2256
+239 	239 	Marz Larissa 	11k 	DE 	JIGS 	5 	246+/w 	245+/b 	195-/b 	247-/b 	248-/w 	255+/b 	244+/w 	238-/w 	260+/b 	234-/w 	24 	24 	0 	239 	2212
+240 	240 	Kis-Gadó Csaba 	9k 	HU 	PaGo 	2 	0= 	0= 	0= 	0= 	0= 	216-/b 	231-/b 	241+/w 	232-/b 	233+/w 	23 	25 	2 	230 	2276
+241 	241 	Türktan Serhat 	10k 	TR 	Esk 	3 	234-/w 	232-/w 	247-/b 	238-/b 	253+/w 	246-/w 	259+/b 	240-/b 	244-/b 	267+/w 	23 	23 	1 	237 	2187
+242 	242 	Qiu Yixu 	9k 	CN 	Twenty Cat 	2 	0= 	257+/w 	221-/b 	216+/b 	228-/w 	0= 	0= 	0= 	0= 	0= 	23 	26 	0 	228 	2245
+243 	243 	Günay İsmail Serter 	8k 	TR 	Can 	0 	210-/w 	196-/b 	228-/b 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	22 	25 	6 	234 	2334
+244 	244 	Bochkarev Konstantin 	12k 	AT 	Go7 	4 	0= 	0= 	0= 	0= 	0= 	277+/w 	239-/b 	245+/b 	241+/w 	246+/w 	22 	24 	5 	203 	2011
+245 	245 	Tavsanoglu Uygar 	10k 	TR 	Ank 	2 	231-/b 	239-/w 	233-/b 	253+/w 	238-/b 	232-/w 	0= 	244-/w 	250-/b 	255+/w 	22 	22 	4 	232 	2226
+246 	246 	Barcza Bora 	11k 	HU 	PaGo 	3 	239-/b 	238+/w 	257+/b 	231-/w 	233-/w 	241+/b 	0= 	0= 	0= 	244-/b 	22 	23 	3 	226 	2179
+247 	247 	Kim Beomjun 	12k 	KR 	Dongtan 	4 	248+/b 	253+/b 	241+/w 	239+/w 	0= 	0= 	0= 	0= 	0= 	0= 	22 	25 	2 	200 	1987
+248 	248 	Gençalp Mustafa Kaan 	12k 	TR 	Ank 	4 	247-/w 	251+/w 	258+/b 	263+/b 	239+/b 	0= 	0= 	0= 	0= 	0= 	22 	24 	1 	204 	1948
+249 	249 	Thebeau Corvin 	18k 	DE 	JIGS 	10 	300+/w 	282+/b 	285+/b 	270+/b 	284+/w 	262+/w 	276+/w 	253+/b 	264+/w 	251+/b 	22 	22 	0 	187 	1810
+250 	250 	Kis-Gadó Dávid 	14k 	HU 	PaGo 	5 	0= 	0= 	0= 	0= 	0= 	281+/w 	280+/b 	251+/b 	245+/w 	266+/w 	21 	23 	6 	182 	1769
+251 	251 	Kumbaracıbaşı Matias Kaan 	12k 	TR 	İstanbul Go Okulu 	3 	258-/w 	248-/b 	264-/b 	276+/w 	263+/w 	259-/b 	0= 	250-/w 	253+/b 	249-/w 	21 	21 	5 	213 	1949
+252 	252 	Kılıç Enes Sabit 	11k 	TR 	İstanbul Go Okulu 	2 	0= 	0= 	0= 	0= 	0= 	253+/b 	0= 	232-/w 	234-/w 	238+/b 	21 	24 	4 	209 	2085
+253 	253 	Makhmatalieva Bitna 	11k 	KG 	Sengoku/ Evanston go club 	2 	232-/b 	247-/w 	263+/w 	245-/b 	241-/b 	252-/w 	255+/b 	249-/w 	251-/w 	260-/b 	21 	21 	3 	227 	2120
+254 	254 	Seymen Sema 	9k 	TR 	Ist 	0 	0= 	0= 	0= 	0= 	200-/b 	0= 	0= 	0= 	0= 	0= 	21 	25 	2 	217 	2173
+255 	255 	Süer Alihan 	13k 	TR 	İstanbul Go Okulu 	4 	263-/b 	264-/b 	272+/w 	274+/w 	278+/b 	239-/w 	253-/w 	270+/b 	259-/w 	245-/b 	21 	21 	1 	210 	1987
+256 	256 	Güvercin Kaya 	12k 	TR 	İstanbul Go Okulu 	3 	233-/w 	263-/b 	279+/w 	258-/b 	264+/b 	268+/w 	0= 	0= 	0= 	0= 	21 	23 	0 	204 	1913
+257 	257 	Senveli Nesibe 	10k 	TR 	Izm 	0 	0= 	242-/b 	246-/w 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	20 	24 	5 	209 	2054
+258 	258 	Ju Siwoo 	12k 	KR 	Dongtan 	2 	251+/b 	233-/b 	248-/w 	256+/w 	0= 	0= 	0= 	0= 	0= 	0= 	20 	23 	4 	201 	1942
+259 	259 	Gazizullin Eldar 	12k 	AT 	Graz 	2 	0= 	0= 	0= 	0= 	0= 	251+/w 	241-/w 	234-/b 	255+/b 	0= 	20 	23 	3 	198 	1980
+260 	260 	Bayindir Sami Ilker 	12k 	TR 	Ank 	2 	0= 	0= 	0= 	0= 	0= 	269+/b 	0= 	0= 	239-/w 	253+/w 	20 	23 	2 	193 	1911
+261 	261 	Syrotkin Myron 	19k 	UA 	Cork 	9 	285+/b 	294+/w 	282+/w 	275-/b 	290+/w 	301+/b 	283+/w 	298+/b 	262+/b 	270+/w 	20 	20 	1 	167 	1569
+262 	262 	Obirek Andrzej 	16k 	PL 	Wars 	6 	284+/b 	275+/w 	274-/b 	271-/w 	287+/b 	249-/b 	270+/w 	276+/b 	261-/w 	264+/w 	20 	20 	0 	193 	1733
+263 	263 	Huynh Alexandre 	13k 	FR 	13Ma 	2 	255+/w 	256+/w 	253-/b 	248-/w 	251-/b 	0= 	0= 	0= 	0= 	0= 	19 	21 	2 	195 	1908
+264 	264 	Onay Mert Oskay 	14k 	TR 	Esk 	3 	278-/b 	255+/w 	251+/w 	265+/b 	256-/w 	0= 	0= 	0= 	249-/b 	262-/b 	19 	20 	1 	195 	1851
+265 	265 	Akpınar Emre Kuzey 	13k 	TR 	İstanbul Go Okulu 	2 	272-/b 	278+/w 	238-/b 	264-/w 	276+/b 	0= 	0= 	0= 	0= 	0= 	19 	21 	0 	187 	1813
+266 	266 	Kaptanoglu Sepken 	12k 	TR 	Esk 	0 	238-/w 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	250-/b 	18 	22 	7 	191 	1856
+267 	267 	Altın Muhammed 	12k 	TR 	Ank 	0 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	241-/b 	18 	22 	6 	185 	1857
+268 	268 	Yıkılmaz Rodin 	12k 	TR 	Esk 	0 	0= 	0= 	0= 	0= 	0= 	256-/b 	0= 	0= 	0= 	0= 	18 	22 	5 	185 	1824
+269 	269 	Cetin Mert 	12k 	TR 	İstanbul Go Okulu 	0 	0= 	0= 	0= 	0= 	0= 	260-/w 	0= 	0= 	0= 	0= 	18 	22 	4 	185 	1813
+270 	270 	Symon Olha 	15k 	PL 	Wrocław 	3 	0= 	0= 	278-/b 	249-/w 	275+/b 	288+/w 	262-/b 	255-/w 	276+/w 	261-/b 	18 	19 	3 	185 	1743
+271 	271 	Karamatić Lukatoni 	16k 	HR 	VGor 	4 	295+/w 	274-/w 	275+/b 	262+/b 	272+/w 	0= 	0= 	0= 	0= 	0= 	18 	20 	2 	165 	1553
+272 	272 	Bulca Ali Fırat 	14k 	TR 	Esk 	2 	265+/w 	0= 	255-/b 	278+/w 	271-/b 	0= 	0= 	0= 	0= 	0= 	18 	21 	1 	177 	1699
+273 	273 	Syrotkin Severyn 	20k 	UA 	Cork 	8 	303+/b 	307+/b 	292+/w 	280+/w 	285-/w 	297-/b 	291+/b 	282+/w 	275+/b 	290+/w 	18 	18 	0 	156 	1475
+274 	274 	Xie Garcia Èlia 	16k 	SE 	OGS 	3 	275+/w 	271+/b 	262+/w 	255-/b 	0= 	0= 	0= 	0= 	0= 	0= 	17 	20 	6 	162 	1592
+275 	275 	Ertok Ege 	16k 	TR 	İstanbul Go Okulu 	3 	274-/b 	262-/b 	271-/w 	261+/w 	270-/w 	283-/b 	0= 	280+/b 	273-/w 	276+/b 	17 	17 	5 	184 	1669
+276 	276 	Bartle Eleanor 	15k 	AU 	Gore Street Irregulars 	2 	0= 	0= 	303+/w 	251-/b 	265-/w 	289+/b 	249-/b 	262-/w 	270-/b 	275-/w 	17 	18 	4 	180 	1737
+277 	277 	Kılıç İlbige 	13k 	TR 	İstanbul Go Okulu 	0 	0= 	0= 	0= 	0= 	0= 	244-/b 	0= 	0= 	0= 	0= 	17 	21 	3 	177 	1733
+278 	278 	Lim So-Ok 	15k 	KR 	Daegu 	2 	264+/w 	265-/b 	270+/w 	272-/b 	255-/w 	0= 	0= 	0= 	0= 	0= 	17 	19 	2 	177 	1704
+279 	279 	Yıldırım Sibel 	13k 	TR 	Esk 	0 	0= 	0= 	256-/b 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	17 	21 	1 	176 	1734
+280 	280 	Shevchenko Kateryna 	18k 	UA 	Kyiv 	5 	282-/b 	285-/w 	294+/b 	273-/b 	300+/w 	299+/b 	250-/w 	275-/w 	304+/w 	301+/b 	17 	17 	0 	166 	1479
+281 	281 	Fidan Mete Alp 	14k 	TR 	İstanbul Go Okulu 	0 	0= 	0= 	0= 	0= 	0= 	250-/b 	0= 	0= 	0= 	0= 	16 	20 	2 	167 	1622
+282 	282 	Arıkan Oğuzhan 	18k 	TR 	İstanbul Go Okulu 	4 	280+/w 	249-/w 	261-/b 	285-/b 	294-/w 	290+/b 	0= 	273-/b 	298+/w 	291+/b 	16 	16 	1 	167 	1490
+283 	283 	Bochkarev Andrei 	17k 	AT 	Go7 	3 	0= 	0= 	0= 	0= 	0= 	275+/w 	261-/b 	297+/w 	296+/b 	286-/w 	16 	18 	0 	155 	1412
+284 	284 	Özücer Berke 	15k 	TR 	İstanbul Go Okulu 	0 	262-/w 	0= 	0= 	0= 	249-/b 	0= 	0= 	0= 	0= 	0= 	15 	19 	2 	162 	1580
+285 	285 	Coşkun Gençalp Cansu 	18k 	TR 	Ank 	3 	261-/w 	280+/b 	249-/w 	282+/w 	273+/b 	0= 	0= 	0= 	0= 	0= 	15 	17 	1 	153 	1443
+286 	286 	Şahin Arda Eren 	16k 	TR 	Ank 	1 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	283+/b 	15 	19 	0 	144 	1415
+287 	287 	Tascioglu Kaan 	16k 	TR 	Esgo 	0 	0= 	0= 	0= 	0= 	262-/w 	0= 	0= 	0= 	0= 	0= 	14 	18 	6 	146 	1453
+288 	288 	Savranoğlu Aras 	16k 	TR 	İstanbul Go Okulu 	0 	0= 	0= 	0= 	0= 	0= 	270-/b 	0= 	0= 	0= 	0= 	14 	18 	5 	145 	1445
+289 	289 	Kök Ömer Tuna 	16k 	TR 	İstanbul Go Okulu 	0 	0= 	0= 	0= 	0= 	0= 	276-/w 	0= 	0= 	0= 	0= 	14 	18 	4 	144 	1440
+290 	290 	Akcer Aksel Deniz 	20k 	TR 	İstanbul Go Okulu 	4 	0= 	312+/w 	306+/w 	294+/b 	261-/b 	282-/w 	0= 	299-/b 	303+/w 	273-/b 	14 	15 	3 	144 	1322
+291 	291 	Shumakova Viktoriia 	19k 	UA 	Kyiv 	3 	0= 	0= 	0= 	0= 	0= 	314+/b 	273-/w 	304+/w 	292+/b 	282-/w 	14 	16 	2 	131 	1237
+292 	292 	Çayla Aren 	20k 	TR 	İstanbul Go Okulu 	4 	307-/w 	306+/b 	273-/b 	303+/w 	309-/w 	317+/b 	0= 	311+/b 	291-/w 	298-/b 	14 	14 	1 	142 	1206
+293 	293 	Bulut Berat 	18k 	TR 	Ank 	2 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	299+/w 	308+/w 	14 	18 	0 	126 	1198
+294 	294 	Xie Garcia Fèlix 	19k 	SE 	OGS 	2 	305+/b 	261-/b 	280-/w 	290-/w 	282+/b 	0= 	0= 	0= 	0= 	0= 	13 	15 	5 	138 	1308
+295 	295 	Orsal Duru 	17k 	TR 	Ank 	0 	271-/b 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	13 	17 	4 	137 	1335
+296 	296 	Öztaş Elif 	17k 	TR 	Ank 	0 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	283-/w 	0= 	13 	17 	3 	135 	1325
+297 	297 	Türkoğlu Aylin 	18k 	TR 	İstanbul Go Okulu 	1 	0= 	0= 	0= 	0= 	0= 	273+/w 	0= 	283-/b 	0= 	0= 	13 	17 	2 	132 	1271
+298 	298 	Bochkarev Alexey 	20k 	DE 	Kaiserslautern 	3 	0= 	0= 	0= 	0= 	0= 	316+/b 	315+/w 	261-/w 	282-/b 	292+/w 	13 	15 	1 	128 	1186
+299 	299 	Savaş Deniz 	20k 	TR 	İstanbul Go Okulu 	3 	0= 	0= 	0= 	306+/b 	303+/b 	280-/w 	0= 	290+/w 	293-/b 	0= 	13 	15 	0 	126 	1194
+300 	300 	Özücer Can 	18k 	TR 	İstanbul Go Okulu 	0 	249-/b 	0= 	0= 	0= 	280-/b 	0= 	0= 	0= 	0= 	0= 	12 	16 	1 	135 	1313
+301 	301 	Barsbey Güney 	20k 	TR 	İstanbul Go Okulu 	2 	0= 	0= 	0= 	0= 	0= 	261-/w 	0= 	303+/b 	311+/b 	280-/w 	12 	15 	0 	122 	1190
+302 	302 	Gurkan Atlas 	20k 	TR 	İstanbul Go Okulu 	1 	0= 	0= 	0= 	0= 	0= 	303+/b 	0= 	0= 	0= 	0= 	11 	15 	8 	102 	1044
+303 	303 	Yılmaz Deniz Eren 	20k 	TR 	Ank 	1 	273-/w 	313+/b 	276-/b 	292-/b 	299-/w 	302-/w 	0= 	301-/w 	290-/b 	0= 	11 	12 	7 	144 	1279
+304 	304 	Karaismailoğlu Lara Elis 	20k 	TR 	İstanbul Go Okulu 	1 	0= 	0= 	0= 	0= 	0= 	311+/w 	0= 	291-/b 	280-/b 	0= 	11 	14 	6 	116 	1110
+305 	305 	Şahin Ece İclal 	19k 	TR 	Ank 	0 	294-/w 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	11 	15 	5 	114 	1128
+306 	306 	Qiu Rhiannon Yiyu 	20k 	CN 	Twenty Cat 	1 	0= 	292-/w 	290-/b 	299-/w 	0+ 	0= 	0= 	0= 	0= 	0= 	11 	14 	4 	114 	1012
+307 	307 	Matsubara Saki 	20k 	ES 	NAMBAN 	1 	292+/b 	273-/w 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	11 	15 	3 	112 	1098
+308 	308 	Onay Semra 	20k 	TR 	Esk 	1 	313+/w 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	293-/b 	11 	15 	2 	112 	1033
+309 	309 	Uysal Hilmi 	20k 	TR 	Ant 	1 	0= 	0= 	0= 	0= 	292+/b 	0= 	0= 	0= 	0= 	0= 	11 	15 	1 	104 	1042
+310 	310 	Acar Ekin Yade 	20k 	TR 	İstanbul Go Okulu 	1 	312+/b 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	11 	15 	0 	104 	1010
+311 	311 	Deniz Ahmet Çınar 	20k 	TR 	Hrf 	0 	0= 	0= 	0= 	0= 	0= 	304-/b 	0= 	292-/w 	301-/w 	0= 	10 	13 	6 	113 	1080
+312 	312 	Miyazato Nagomi 	20k 	JP 	NAMBAN 	0 	310-/w 	290-/b 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	10 	14 	5 	110 	1048
+313 	313 	Umemura An 	20k 	JP 	NAMBAN 	0 	308-/b 	303-/w 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	0= 	10 	14 	4 	107 	1056
+314 	314 	Dogan Elif Hayal 	20k 	TR 	İstanbul Go Okulu 	0 	0= 	0= 	0= 	0= 	0= 	291-/w 	0= 	0= 	0= 	0= 	10 	14 	3 	106 	1031
+315 	315 	Ünlü Ali Derin 	20k 	TR 	İstanbul Go Okulu 	0 	0= 	0= 	0= 	0= 	0= 	0= 	298-/b 	0= 	0= 	0= 	10 	14 	2 	105 	1028
+316 	315 	Kılıç Halil Remzi 	20k 	TR 	İstanbul Go Okulu 	0 	0= 	0= 	0= 	0= 	0= 	298-/w 	0= 	0= 	0= 	0= 	10 	14 	2 	105 	1028
+317 	317 	Savranoğlu Ekin 	20k 	TR 	İstanbul Go Okulu 	0 	0= 	0= 	0= 	0= 	0= 	292-/w 	0= 	0= 	0= 	0= 	10 	14 	0 	104 	1042
