@@ -23,8 +23,7 @@
     "gamesListDescription": "Lista zapisanych gier we wszystkich turniejach",
     "lastUpdated": "Ostatnia aktualizacja: %{0}",
     "github": "Zobacz na GitHub: %{0}",
-    "searchPlaceholder": "Szukaj zawodników lub turniejów…",
-    "searchComingSoon": "Wyszukiwanie w archiwum będzie dostępne wkrótce"
+    "searchPlaceholder": "Szukaj zawodników lub turniejów…"
   },
   "navigation": {
     "home": {
@@ -50,7 +49,6 @@
   },
   "actions": {
     "showTournamentsStats": "Zobacz statystyki turniejów",
-    "showMore": "Pokaż więcej (%{0})",
     "showAllMedalists": "Pokaż wszystkich medalistów",
     "showLess": "Pokaż mniej"
   },
@@ -62,14 +60,11 @@
     "error": "Wyszukiwanie nie powiodło się. Ustaw fokus ponownie, aby spróbować jeszcze raz.",
     "clear": "Wyczyść wyszukiwanie",
     "close": "Zamknij wyszukiwanie",
-    "stats": "Statystyki",
     "games": "%{0} gier",
     "types": {
       "tournament": "Turniej",
       "player": "Zawodnik",
-      "player-games": "Gry",
       "country": "Kraj",
-      "country-games": "Gry",
       "category": "Kategoria"
     }
   },
@@ -91,7 +86,6 @@
     "goToEGD": "Zobacz profil gracza w bazie European Go Database"
   },
   "stage": {
-    "details": "Szczegóły",
     "league": "Liga",
     "ladder": "Faza pucharowa",
     "classification": "Klasyfikacja",
@@ -133,7 +127,6 @@
     "stage": "Etap",
     "place": "Miejsce",
     "country": "Kraj",
-    "opponent": "Przeciwnik",
     "firstName": "Imię",
     "lastName": "Nazwisko",
     "index": "Lp.",
@@ -191,7 +184,6 @@
     }
   },
   "gamesFilter": {
-    "filter": "Filtry",
     "showMore": "Pokaż więcej",
     "showLess": "Pokaż mniej",
     "clear": "Wyczyść",
@@ -264,14 +256,11 @@
     "groupOpponentCountry": "Kraj przeciwnika",
     "groupCountryPlayer": "Gracz z wybranego kraju",
     "groupCategory": "Kategoria",
-    "versus": "przeciwko %{0}",
     "noMatches": "Brak zapisów gier pasujących do filtrów.",
     "count": "%{0} z %{1}"
   },
   "winners": {
-    "title": "Medaliści",
-    "year": "Rok",
-    "showMoreTournaments": "Pokaż jeszcze %{0} turniejów",
+    "showMoreTournaments": "Pokaż pozostałe turnieje",
     "first": "1. Miejsce",
     "firstIn": "1. Miejsce w %{0}",
     "second": "2. miejsce",
@@ -310,7 +299,6 @@
       "participants": "Uczestników",
       "games": "Gier",
       "draws": "Remisy",
-      "gamesWithColors": "Gier ze znanymi kolorami",
       "black": "% wygranych przez czarne",
       "blackSample": "Na podstawie %{0} gier ze znanymi kolorami graczy",
       "resigned": "Wygranych przez poddanie",
@@ -318,9 +306,7 @@
       "sgfs": "Zapisów partii SGF",
       "relays": "Relacji na OGS",
       "streams": "Transmisji wideo",
-      "analysis": "Analiz AI",
-      "results": "Dane o partiach",
-      "media": "Media i dodatki"
+      "analysis": "Analiz AI"
     }
   },
   "categories": {

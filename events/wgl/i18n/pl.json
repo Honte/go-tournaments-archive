@@ -12,9 +12,7 @@
     "goToWebsite": "Przejdź na stronę WGL %{0}"
   },
   "winners": {
-    "title": "Medaliści Warszawskiej Ligi Go",
-    "first": "Zwycięzca Warszawskiej Ligi Go",
-    "year": "Edycja"
+    "first": "Zwycięzca Warszawskiej Ligi Go"
   },
   "table": {
     "year": "Edycja"

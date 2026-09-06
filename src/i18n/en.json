@@ -23,8 +23,7 @@
     "gamesListDescription": "List of all games records from all tournaments",
     "lastUpdated": "Last updated: %{0}",
     "github": "Contribute on GitHub: %{0}",
-    "searchPlaceholder": "Search players or tournaments…",
-    "searchComingSoon": "Archive search is coming soon"
+    "searchPlaceholder": "Search players or tournaments…"
   },
   "navigation": {
     "home": {
@@ -50,7 +49,6 @@
   },
   "actions": {
     "showTournamentsStats": "See tournaments stats",
-    "showMore": "Show more (%{0})",
     "showAllMedalists": "Show all medalists",
     "showLess": "Show less"
   },
@@ -62,14 +60,11 @@
     "error": "Search failed. Focus again to retry.",
     "clear": "Clear search",
     "close": "Close search",
-    "stats": "Stats",
     "games": "%{0} games",
     "types": {
       "tournament": "Tournament",
       "player": "Player",
-      "player-games": "Games",
       "country": "Country",
-      "country-games": "Games",
       "category": "Category"
     }
   },
@@ -91,7 +86,6 @@
     "goToEGD": "Open player's profile in European Go Database"
   },
   "stage": {
-    "details": "Details",
     "league": "League",
     "ladder": "Ladder",
     "classification": "Classification",
@@ -133,7 +127,6 @@
     "stage": "Stage",
     "place": "Place",
     "country": "Country",
-    "opponent": "Opponent",
     "index": "#",
     "firstName": "First Name",
     "lastName": "Last Name",
@@ -191,7 +184,6 @@
     }
   },
   "gamesFilter": {
-    "filter": "Filter",
     "showMore": "Show more",
     "showLess": "Show less",
     "clear": "Clear",
@@ -264,13 +256,10 @@
     "groupOpponentCountry": "Opponent country",
     "groupCountryPlayer": "Country player",
     "groupCategory": "Category",
-    "versus": "vs %{0}",
     "noMatches": "No game records match these filters.",
     "count": "%{0} of %{1}"
   },
   "winners": {
-    "title": "Medalists",
-    "year": "Year",
     "showMoreTournaments": "Show %{0} more tournaments",
     "first": "Champion",
     "firstIn": "Champion of %{0}",
@@ -310,7 +299,6 @@
       "participants": "Participants",
       "games": "Games",
       "draws": "Draws",
-      "gamesWithColors": "Games with colors",
       "black": "% won by black",
       "blackSample": "Based on %{0} games with known player colors",
       "resigned": "Won by resign",
@@ -318,9 +306,7 @@
       "sgfs": "SGF records",
       "relays": "Relays on OGS",
       "streams": "Games streamed",
-      "analysis": "AI analysis",
-      "results": "Game data",
-      "media": "Media and extras"
+      "analysis": "AI analysis"
     }
   },
   "categories": {

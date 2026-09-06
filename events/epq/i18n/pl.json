@@ -1,6 +1,6 @@
 {
   "site": {
-    "name": "Archiwum Kwalifikacji Europejskich Pro w\u00A0Go",
+    "name": "Archiwum Kwalifikacji Europejskich Pro w Go",
     "acronym": "EPQ",
     "description": "Archiwum wyników wszystkich edycji Mistrzostw Europy Pro w Go",
     "yearDescription": "Wyniki kwalifikacji z roku %{0}",
@@ -11,7 +11,6 @@
     "goToWebsite": "Przejdź na stronę EPQ %{0}"
   },
   "winners": {
-    "title": "Medaliści Kwalifikacji Europejskich Pro",
     "first": "Nowy Europejski Pro"
   }
 }

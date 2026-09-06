@@ -1,6 +1,6 @@
 {
   "site": {
-    "name": "Archiwum Mistrzostw Chorwacji w\u00A0Go",
+    "name": "Archiwum Mistrzostw Chorwacji w Go",
     "acronym": "HRGC",
     "description": "Archiwum wyników wszystkich edycji Mistrzostw Chorwacji w Go",
     "yearDescription": "Wyniki mistrzostw z roku %{0}",
@@ -11,7 +11,6 @@
     "goToWebsite": "Przejdź na stronę HRGC %{0}"
   },
   "winners": {
-    "title": "Medaliści Mistrzostw Chorwacji",
     "first": "Mistrz Chorwacji"
   }
 }

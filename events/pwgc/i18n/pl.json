@@ -10,7 +10,6 @@
     "playerStatsDescription": "Statystyki gracza %{0} we wszystkich rozegranych edycjach Mistrzostw Polski Kobiet w Go"
   },
   "table": {
-    "opponent": "Przeciwniczka",
     "name": "Zawodniczka"
   },
   "details": {
@@ -18,7 +17,6 @@
     "awarded": "Medalistki"
   },
   "winners": {
-    "title": "Medalistki Mistrzostw Polski Kobiet",
     "first": "Mistrzyni Polski"
   },
   "stats": {
