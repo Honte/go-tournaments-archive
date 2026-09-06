@@ -1,14 +1,19 @@
 import { LuExternalLink } from 'react-icons/lu';
 import type { EventContext } from '@/schema/event';
-import type { Translations } from '@/i18n/consts';
+import type { LocalizedString, Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { tournamentUrl } from '@/libs/urls';
 import { Link } from '@/components/navigation/Link';
-import type { Announcement } from './types';
+
+export type TournamentAnnouncementProps = {
+  announcement: boolean | LocalizedString;
+  website?: string;
+  year: number;
+};
 
 type TournamentAnnouncementBannerProps = {
   event: EventContext;
-  tournament: Announcement;
+  tournament: TournamentAnnouncementProps;
   translations: Translations;
 };
 

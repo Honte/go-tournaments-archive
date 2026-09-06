@@ -4,7 +4,7 @@
     "acronym": "HRGC",
     "description": "Archiwum wyników wszystkich edycji Mistrzostw Chorwacji w Go",
     "yearDescription": "Wyniki mistrzostw z roku %{0}",
-    "allTimeStatsDescription": "Lista wszech czasów wszystkich uczestników Mistrzostw Chorwacji w Go",
+    "allTimeStatsDescription": "Lista wszech czasów wszystkich zawodników Mistrzostw Chorwacji w Go",
     "playerStatsDescription": "Statystyki gracza %{0} we wszystkich rozegranych edycjach Mistrzostw Chorwacji w Go"
   },
   "details": {

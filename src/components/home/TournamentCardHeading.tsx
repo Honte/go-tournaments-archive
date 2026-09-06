@@ -1,23 +1,20 @@
 import { LuCalendarDays, LuMapPin } from 'react-icons/lu';
+import type { Tournament } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
-import type { Translations, Translator } from '@/i18n/consts';
-import { getTranslator } from '@/i18n/translator';
+import type { Translations } from '@/i18n/consts';
+import { translate } from '@/i18n/translator';
 import { formatDate, formatRange } from '@/libs/dates';
 import { tournamentUrl } from '@/libs/urls';
 import { Link } from '@/components/navigation/Link';
-import type { EventMetadata } from './types';
 
 type TournamentCardHeadingProps = {
   event: EventContext;
-  tournament: EventMetadata & { year: number };
+  tournament: Tournament;
   translations: Translations;
 };
 
 export function TournamentCardHeading({ event, tournament, translations }: TournamentCardHeadingProps) {
-  const t = getTranslator(translations);
   const { year } = tournament;
-  const location = getLocation(tournament, t, event.showCountry);
-  const date = getDate(tournament, translations.locale);
 
   return (
     <Link
@@ -29,38 +26,53 @@ export function TournamentCardHeading({ event, tournament, translations }: Tourn
           {year}
         </span>
         <div className="flex min-w-0 flex-1 flex-col items-end gap-1 text-xs text-current/75 sm:text-sm">
-          <span className="flex min-w-0 items-center justify-end gap-1.5">
-            <LuMapPin className="shrink-0" aria-hidden="true" />
-            <span className="truncate text-right" title={location}>
-              {location}
-            </span>
-          </span>
-          {date && (
-            <span className="flex min-w-0 shrink-0 items-center justify-end gap-1.5">
-              <LuCalendarDays className="shrink-0" aria-hidden="true" />
-              <span className="truncate text-right" title={date}>
-                {date}
-              </span>
-            </span>
-          )}
+          <LocationRenderer event={event} tournament={tournament} translations={translations} />
+          <DateRenderer event={event} tournament={tournament} translations={translations} />
         </div>
       </header>
     </Link>
   );
 }
 
-function getLocation(event: EventMetadata, t: Translator, showCountry?: boolean) {
-  const country = showCountry && event.country ? t(`country.${event.country}`) : undefined;
-
-  return [event.location, country].filter(Boolean).join(', ') || t('winners.locationUnknown');
-}
-
-function getDate(event: EventMetadata, locale: string) {
-  if (event.start && event.end) {
-    return formatRange(event.start, event.end, locale);
+function LocationRenderer({ event, tournament, translations }: TournamentCardHeadingProps) {
+  if (!tournament.location) {
+    return null;
   }
 
-  const date = event.start ?? event.end;
+  const location =
+    [
+      tournament.location,
+      event.showCountry && tournament.country ? translate(translations, `country.${tournament.country}`) : undefined,
+    ]
+      .filter(Boolean)
+      .join(', ') || undefined;
 
-  return date ? formatDate(date, locale) : undefined;
+  return (
+    <span className="flex min-w-0 items-center justify-end gap-1.5">
+      <LuMapPin className="shrink-0" aria-hidden="true" />
+      <span className="truncate text-right" title={location}>
+        {location}
+      </span>
+    </span>
+  );
+}
+
+function DateRenderer({ tournament, translations }: TournamentCardHeadingProps) {
+  if (!tournament.start && !tournament.end) {
+    return null;
+  }
+
+  const date =
+    tournament.start && tournament.end
+      ? formatRange(tournament.start, tournament.end, translations.locale)
+      : formatDate(tournament.start ?? tournament.end!, translations.locale);
+
+  return (
+    <span className="flex min-w-0 shrink-0 items-center justify-end gap-1.5">
+      <LuCalendarDays className="shrink-0" aria-hidden="true" />
+      <span className="truncate text-right" title={date}>
+        {date}
+      </span>
+    </span>
+  );
 }

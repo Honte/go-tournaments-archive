@@ -1,55 +1,35 @@
-import { type OptionalTranslator, Translations, type Translator } from '@/i18n/consts';
+import type { Translation, Translations } from '@/i18n/consts';
 
-export function getTranslator(
-  translations: Translations,
-  options: { scope?: string; allowMissing: true }
-): OptionalTranslator;
-export function getTranslator(
-  translations: Translations,
-  options?: { scope?: string; allowMissing?: false }
-): Translator;
-export function getTranslator(
-  translations: Translations,
-  options?: { scope?: string; allowMissing?: boolean }
-): Translator | OptionalTranslator {
-  let dict = translations;
-
-  if (options?.scope) {
-    for (const step of options.scope.split('.')) {
-      dict = dict?.[step] as Translations;
-    }
-  }
-
-  if (!dict) {
-    throw new Error(`No translations${options?.scope ? ` at ${options.scope}` : ''}`);
-  }
-
-  return function translate(strings: string | string[], ...params: string[]) {
-    const msg = Array.isArray(strings) ? strings[0].trim() : strings;
-    let translation = dict;
-
-    for (const step of msg.split('.')) {
-      translation = translation?.[step] as Translations;
-    }
-
-    if (typeof translation === 'object') {
-      console.warn(`Translation not specific enough: ${msg}`);
-      return msg;
-    }
-
-    if (typeof translation === 'undefined') {
-      if (!options?.allowMissing) {
-        console.warn(`Missing translation: ${msg}`);
-        return msg;
-      }
-
-      return undefined;
-    }
-
-    return replace(translation, ...params);
-  };
+export function getTranslator(translations: Translations) {
+  return (path: string, ...params: string[]) => translate(translations, path, ...params);
 }
 
-function replace(msg: string, ...params: string[]) {
+export function translate(translations: Translations, path: string, ...params: string[]) {
+  const translation = getTranslation(translations, path);
+
+  if (typeof translation === 'object') {
+    console.warn(`Translation not specific enough: ${path}`);
+    return path;
+  }
+
+  if (typeof translation === 'undefined') {
+    console.warn(`Missing translation: ${path}`);
+    return path;
+  }
+
+  return params.length ? applyTranslationParams(translation, ...params) : translation;
+}
+
+export function getTranslation(translations: Translations, path: string): Translation | undefined {
+  let translation: Translation | undefined = translations;
+
+  for (const step of path.split('.')) {
+    translation = typeof translation === 'object' ? translation[step] : undefined;
+  }
+
+  return translation;
+}
+
+export function applyTranslationParams(msg: string, ...params: string[]) {
   return msg.replaceAll(/%\{(\d+)}/g, (match, index) => params[index]);
 }

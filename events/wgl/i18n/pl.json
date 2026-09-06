@@ -5,7 +5,7 @@
     "acronym": "WGL",
     "description": "Archiwum wyników wszystkich edycji Warszawskiej Ligi Go",
     "yearDescription": "Wyniki ligi z edycji %{0}",
-    "allTimeStatsDescription": "Lista wszech czasów wszystkich uczestników Warszawskiej Ligi Go",
+    "allTimeStatsDescription": "Lista wszech czasów wszystkich zawodników Warszawskiej Ligi Go",
     "playerStatsDescription": "Statystyki gracza %{0} we wszystkich rozegranych edycjach Warszawskiej Ligi Go"
   },
   "details": {

@@ -4,7 +4,7 @@
     "acronym": "EWGC",
     "description": "Archiwum wyników wszystkich edycji Mistrzostw Europy Kobiet w Go",
     "yearDescription": "Wyniki mistrzostw z roku %{0}",
-    "allTimeStatsDescription": "Lista wszech czasów wszystkich uczestników Mistrzostw Europy Kobiet w Go",
+    "allTimeStatsDescription": "Lista wszech czasów wszystkich zawodników Mistrzostw Europy Kobiet w Go",
     "playerStatsDescription": "Statystyki gracza %{0} we wszystkich rozegranych edycjach Mistrzostw Europy Kobiet w Go"
   },
   "details": {

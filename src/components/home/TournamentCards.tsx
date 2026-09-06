@@ -1,23 +1,26 @@
+import type { Tournament } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { tournamentsUrl } from '@/libs/urls';
-import { TournamentAnnouncementBanner } from '@/components/home/TournamentAnnouncementBanner';
+import {
+  type TournamentAnnouncementProps,
+  TournamentAnnouncementBanner,
+} from '@/components/home/TournamentAnnouncementBanner';
 import { TournamentGrid } from '@/components/home/TournamentGrid';
 import { TournamentMedalistsCard } from '@/components/home/TournamentMedalistsCard';
-import type { Result, Announcement } from './types';
 
 export type TournamentCardsProps = {
   previewCount?: number;
   event: EventContext;
-  results: (Result | Announcement)[];
+  results: (Tournament | TournamentAnnouncementProps)[];
   translations: Translations;
 };
 
 export function TournamentCards({ event, previewCount, results, translations }: TournamentCardsProps) {
   const t = getTranslator(translations);
-  const announcements = results.filter((result): result is Announcement => 'announcement' in result);
-  const tournaments = results.filter((result): result is Result => !('announcement' in result));
+  const announcements = results.filter((result): result is TournamentAnnouncementProps => 'announcement' in result);
+  const tournaments = results.filter((result): result is Tournament => !('announcement' in result));
 
   return (
     <TournamentGrid

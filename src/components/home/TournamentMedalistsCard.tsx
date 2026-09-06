@@ -1,12 +1,12 @@
+import type { Tournament } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { MedalRows } from '@/components/home/MedalRows';
 import { TournamentCardHeading } from '@/components/home/TournamentCardHeading';
-import type { Result } from './types';
 
 type TournamentMedalistsCardProps = {
   event: EventContext;
-  result: Result;
+  result: Tournament;
   translations: Translations;
 };
 

@@ -4,7 +4,7 @@
     "acronym": "ESGC",
     "description": "Archiwum wyników wszystkich edycji Mistrzostw Europy Studentów w Go",
     "yearDescription": "Wyniki mistrzostw z roku %{0}",
-    "allTimeStatsDescription": "Lista wszech czasów wszystkich uczestników Mistrzostw Europy Studentów w Go",
+    "allTimeStatsDescription": "Lista wszech czasów wszystkich zawodników Mistrzostw Europy Studentów w Go",
     "playerStatsDescription": "Statystyki gracza %{0} we wszystkich rozegranych edycjach Mistrzostw Europy Studentów w Go"
   },
   "details": {

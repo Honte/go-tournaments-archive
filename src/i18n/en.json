@@ -20,7 +20,7 @@
     "categoryStatsDescription": "%{0} statistics",
     "gamesListLink": "Game records",
     "gamesListTitle": "Game records",
-    "gamesListDescription": "List of all games records from all tournaments",
+    "gamesListDescription": "All games records in SGF format from all tournaments",
     "lastUpdated": "Last updated: %{0}",
     "github": "Contribute on GitHub: %{0}",
     "searchPlaceholder": "Search players or tournaments…"

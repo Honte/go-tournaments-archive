@@ -1,6 +1,7 @@
 import type { CustomBreaker } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
-import { getTranslator } from '@/i18n/translator';
+import { getTranslation } from '@/i18n/translator';
+import { getString } from '@/i18n/utils';
 
 type BreakerProps = {
   breaker: string;
@@ -9,16 +10,15 @@ type BreakerProps = {
 };
 
 export function Breaker({ breaker, translations, customBreakers }: BreakerProps) {
-  const t = getTranslator(translations, { allowMissing: true });
   const customBreaker = customBreakers?.[breaker];
 
   const content = customBreaker
-    ? (customBreaker.translations?.[translations.locale] ?? breaker)
-    : t(`breakers.${breaker}`);
+    ? getString(customBreaker.translations, translations.locale, breaker)
+    : (getTranslation(translations, `breakers.${breaker}`) as string);
 
   const description = customBreaker
-    ? customBreaker.description?.[translations.locale]
-    : t(`breakers.descriptions.${breaker}`);
+    ? getString(customBreaker.description, translations.locale)
+    : (getTranslation(translations, `breakers.descriptions.${breaker}`) as string);
 
   if (description) {
     return (

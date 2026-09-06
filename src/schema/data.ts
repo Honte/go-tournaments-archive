@@ -1,4 +1,4 @@
-import type { Locale, LocalizedString } from '@/i18n/consts';
+import type { LocalizedString } from '@/i18n/consts';
 import type { SgfRotation } from '@tools/sgf';
 import type { KeysMatching } from '@/libs/types';
 
@@ -60,8 +60,8 @@ export enum Breaker {
 export type CustomBreaker = {
   order?: 'asc' | 'desc'; // by default descending
   hidden?: boolean; // by default visible
-  translations?: Record<Locale, string>;
-  description?: Record<Locale, string>;
+  translations?: LocalizedString;
+  description?: LocalizedString;
 };
 
 export type MandatoryBreakers =
