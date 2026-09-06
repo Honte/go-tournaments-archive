@@ -51,3 +51,4 @@ stages:
       - 7-4 4:W+R round:10 sgf:2003/open/10-JungheeYi-KibongLee.sgf
       - 9-1 1:W+R round:6 sgf:2003/open/6-CornelBurzo-HongSeulki.sgf
       - 12-1 1:W+5.5 round:4 sgf:2003/open/4-NaoyukiKai-SeulkiHong.sgf
+      - 40-50 50:W+1.5 round:9 sgf:2003/open/9-IljaTrunilin-VitBrunner.sgf

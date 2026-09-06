@@ -5,14 +5,30 @@ stages:
     file: egc1982.txt
     name: Championship Group
     dir: 1982/ec
+    notes: There was additional playoff for 3rd place
     scoringColumns:
       - wins
-      - sos
       - sodos
     breakers:
       - wins
-      - sos
       - sodos
     findSharedPlaces: true
     games:
+      - 1-3 1:B+R round:7 sgf:1982/ec/7-RonaldSchlemper-AndreMoussa.sgf
+      - 1-4 1:B+R round:4 sgf:1982/ec/4-RonaldSchlemper-MatthewMacfadyen.sgf
+      - 1-5 1:B+14 round:2 sgf:1982/ec/2-RonaldSchlemper-RobKoopman.sgf
+      - 1-6 1:B+R round:9 sgf:1982/ec/9-RonaldSchlemper-PierreColmez.sgf
+      - 1-11 1:B+R round:3 sgf:1982/ec/3-RonaldSchlemper-JuanCarlosdelRio.sgf
+      - 2-1 2:B+1 round:6 sgf:1982/ec/6-RobertRehm-RonaldSchlemper.sgf
+      - 3-2 2:W+R round:4 sgf:1982/ec/4-AndreMoussa-RobertRehm.sgf
+      - 3-4 4:W+R round:2 sgf:1982/ec/2-AndreMoussa-MatthewMacfadyen.sgf
+      - 3-5 3:B+13 round:9 sgf:1982/ec/9-AndreMoussa-RobKoopman.sgf
+      - 4-2 4:B+R round:8 sgf:1982/ec/8-MatthewMacfadyen-RobertRehm.sgf
+      - 4-10 4:B+R round:1 sgf:1982/ec/1-MatthewMacfadyen-MiloslavJukic.sgf
       - 4-11 11:W+6 round:5 sgf:1982/ec/5-MatthewMacfadyen-JuanCarlosdelRio.sgf
+      - 5-4 5:B+R round:7 sgf:1982/ec/7-RobKoopman-MatthewMacfadyen.sgf
+      - 6-2 2:W+7 round:5 sgf:1982/ec/5-PierreColmez-RobertRehm.sgf
+      - 8-1 1:W+R round:8 sgf:1982/ec/8-StefanBudig-RonaldSchlemper.sgf
+      - 8-9 8:B+R round:2 sgf:1982/ec/2-StefanBudig-FrankHansen.sgf
+      - 9-1 1:W+R round:1 sgf:1982/ec/1-FrankHansen-RonaldSchlemper.sgf
+      - 13-7 7:W+2 round:1 sgf:1982/ec/1-ZoranMutabzija-delaBandaGarcia.sgf

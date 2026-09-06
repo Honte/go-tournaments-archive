@@ -93,7 +93,7 @@
   89 Pechoux Francois               3D FR  xxx     23     5   226     97-      0+     51-      0+     63-      0+     90+      0+     34-     59-
   90 Feldmann Denis                 3D FR  xxx     23     5   226     64-      0+     97+     78-     86+     48-     89-      0+      0+     44-
   91 Clare Jim                      3D UK  xxx     23     5   225     56-      0-      0+      0+     94+     60+     71-     45-     67-      0+
-  92 Valasck Petr                   3D CZ  xxx     23     5   225     83-      0+      0+      0-     80-      0+     66-      0+      0+     63-
+  92 Valasek Petr                   3D CZ  xxx     23     5   225     83-      0+      0+      0-     80-      0+     66-      0+      0+     63-
   93 Splettstosser P                2D DE  xxx     23     6   225      0+      0+     61-      0+     59-      0+      0+     79+     32-     51-
   94 Nonoyama Akihiko               4D DE  xxx     23     4   224     16-     42-      0+     75-     91-    100-      0+      0-      0+      0+
   95 Ghioc Adrian-Romeo             3D RO  xxx     23     5   224     62+     84-     77-      0+     81-      0-      0+      0+      0+     64-

@@ -56,4 +56,6 @@ stages:
       - 4-8 8:W+3.5 round:6 sgf:2004/open/6-HongpokYi-WataruMiyakawa.sgf
       - 6-3 3:W+8.5 round:4 sgf:2004/open/4-KibongLee-CatalinTaranu.sgf
       - 20-12 20:B+R round:4 sgf:2004/open/4-NobuhiroTanaka-RadekNechanicky.sgf
+      - 38-66 38:B+1 round:6 sgf:2004/open/6-MartinLi-VitBrunner.sgf
+      - 66-76 76:W+R round:1 sgf:2004/open/1-VitBrunner-JunTarumi.sgf
       - 83-48 83:B+R round:1 sgf:2004/open/1-StefanBudig-MattiSiivola.sgf

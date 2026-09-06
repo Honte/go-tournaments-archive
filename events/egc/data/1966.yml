@@ -1,9 +1,9 @@
 website: https://www.eurogofed.org/results/congress/egc1966.htm
 name: European Championship 1966
 top:
- - Juergen Mattern
- - Manfred Wimmer
- - Max Rebattu
+  - Juergen Mattern
+  - Manfred Wimmer
+  - Max Rebattu
 stages:
   - type: tournament
     file: egc1966.txt
@@ -15,14 +15,16 @@ stages:
       - wins
     breakers:
       - wins
-    findSharedPlaces: true   
+    findSharedPlaces: true
   - type: tournament
     file: egc1966playoff.txt
     name: Playoff
     dir: 1966/playoff
-    notes: Top 2 played additional game for a championship (because they had the same number of wins) 
+    notes: Top 2 played additional game for a championship (because they had the same number of wins)
     scoringColumns:
       - wins
     breakers:
       - wins
-    findSharedPlaces: true   
+    findSharedPlaces: true
+    games:
+      - 2-1 1:W+17.5 round:1 sgf:1966/playoff/1-ManfredWimmer-JuergenMattern.sgf
