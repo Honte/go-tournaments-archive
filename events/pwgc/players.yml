@@ -1,0 +1,121 @@
+players:
+  - id: arzepecki
+    name: Agnes Rzepecki
+    egd: 20662675
+    pastNames:
+      - Agnieszka Rzepecka
+  - id: akacprzyk
+    name: Agnieszka Kacprzyk
+    egd: 13625524
+  - id: apiszcz
+    name: Agnieszka Piszcz
+    egd: 21037302
+  - id: asurma
+    name: Agnieszka Surma
+    egd: 20601438
+  - id: aflach
+    name: Aleksandra Flach
+    egd: 20437648
+  - id: asontowska
+    name: Aleksandra Sontowska
+    egd: 14513983
+  - id: ajusiak
+    name: Amelia Jusiak
+    egd: 20486642
+  - id: agrzechnik
+    name: Anna Grzechnik
+    egd: 20637078
+  - id: asosnicka-ciesla
+    name: Anna Sośnicka-Cieśla
+    egd: 13925769
+  - id: astraszynska
+    name: Anna Straszyńska
+    egd: 21013245
+  - id: bcholewinska
+    name: Beata Cholewińska
+    egd: 16225528
+  - id: dkwietniewska
+    name: Daria Kwietniewska
+    egd: 16062684
+  - id: dgogosz
+    name: Dorota Gogosz
+    egd: 12901581
+  - id: ebiernot
+    name: Ewa Biernot
+    egd: 18398402
+  - id: gsowinska
+    name: Grażyna Sowinska
+    egd: 14086237
+  - id: iczarniecka
+    name: Ida Czarniecka
+    egd: 15062278
+  - id: iwrobel
+    name: Ilona Wróbel
+    egd: 16233371
+  - id: jgrzechnik
+    name: Joanna Grzechnik
+    egd: 20725320
+  - id: jnoga
+    name: Joanna Noga
+    egd: 13837967
+  - id: kbyczyk
+    name: Karolina Byczyk
+    egd: 14937351
+  - id: kcielen
+    name: Karolina Cielen
+    egd: 20825068
+  - id: kmazurek
+    name: Katarzyna Mazurek
+    egd: 13862167
+  - id: kstraszewska
+    name: Katarzyna Straszewska
+    egd: 13013968
+  - id: mbiniecka
+    name: Małgorzata Biniecka
+    egd: 13874894
+  - id: mczaplik
+    name: Małgorzata Czaplik
+    egd: 13013627
+  - id: mkaczorowska
+    name: Małgorzata Kaczorowska
+    egd: 13050543
+  - id: mchojnacka
+    name: Marcelina Chojnacka
+    egd: 14398802
+  - id: mkostrzewska
+    name: Maria Kostrzewska
+    egd: 16262103
+  - id: mszychowiak
+    name: Marianna Szychowiak
+    egd: 16725709
+  - id: mdubiel
+    name: Marika Dubiel
+    egd: 14301617
+  - id: mstaciwa
+    name: Monika Staciwa
+    egd: 16201284
+  - id: nklamecka
+    name: Natalia Klamecka
+    egd: 14033239
+  - id: obojar
+    name: Olga Bojar
+    egd: 13601214
+  - id: oolbryk
+    name: Oliwia Olbryk
+    egd: 20598028
+  - id: pbednarczyk
+    name: Paulina Bednarczyk
+    egd: 15062674
+    pastNames:
+      - Paulina Skibińska
+  - id: sdlugosz
+    name: Sylwia Barcicka
+    egd: 13550790
+    pastNames:
+      - Sylwia Długosz
+  - id: zchwedyna
+    name: Żaneta Chwedyna
+    egd: 13574803
+  - id: zbugaj
+    name: Zofia Bugaj
+    egd: 18201546

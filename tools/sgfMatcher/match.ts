@@ -76,6 +76,10 @@ export function buildCommonUnmatchedReasons<T>(sgf: SgfInfo, players: ResolvedSg
     reasons.push(whiteReason);
   }
 
+  if (players.black !== null && players.black === players.white) {
+    reasons.push('both colors resolve to the same player');
+  }
+
   if (sgf.resultIssue) {
     reasons.push(sgf.resultIssue);
   }

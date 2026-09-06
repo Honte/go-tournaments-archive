@@ -19,7 +19,7 @@ stages:
       - wins
     findSharedPlaces: true
     games:
-      - 1-1 1:B+? round:2 sgf:2026/2-AgnesRzepecki-MariannaSzychowiak.sgf ogs:https://online-go.com/review/1760281
+      - 1-2 1:B+? round:2 sgf:2026/2-AgnesRzepecki-MariannaSzychowiak.sgf ogs:https://online-go.com/review/1760281
       - 1-4 1:B+R round:1 sgf:2026/1-MariannaSzychowiak-NataliaKlamecka.sgf ogs:https://online-go.com/review/1760172
       - 2-3 2:B+R round:5 sgf:2026/5-AgnesRzepecki-AgnieszkaKacprzyk.sgf ogs:https://online-go.com/review/1760948
       - 3-1 1:W+21.5 round:3 sgf:2026/3-AgnieszkaKacprzyk-MariannaSzychowiak.sgf ogs:https://online-go.com/review/1760374

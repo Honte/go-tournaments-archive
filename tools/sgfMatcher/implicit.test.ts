@@ -487,3 +487,53 @@ function makeParsedGameEntry(sgf: string, props: Record<string, string> = {}): P
     raw: `1-2 1:B+R round:1 sgf:${sgf}${stringifyProps(props)}`,
   };
 }
+
+describe('player identity safety', () => {
+  for (const usePastName of [false, true]) {
+    it(
+      usePastName ? 'matches a past name with reversed filename participants' : 'rejects a mixed-source self match',
+      () => {
+        const { gamesMap } = makeSimpleContext();
+        const playersMap = buildPlayersMap(
+          [
+            makeH9Player({ place: 1, name: 'Black', surname: 'Player' }),
+            makeH9Player({ place: 2, name: 'White', surname: 'Player' }),
+          ],
+          usePastName
+            ? [
+                {
+                  id: 'white',
+                  name: 'White Player',
+                  nickname: [],
+                  pastNames: ['Former Identity'],
+                },
+              ]
+            : []
+        );
+        const sgf = makeSgfInfo({
+          sgfBlackName: 'Black Player',
+          sgfWhiteName: 'Former Identity',
+          filenameBlackName: 'WhitePlayer',
+          filenameWhiteName: 'BlackPlayer',
+        });
+        const result = matchImplicitSgfs({
+          sgfInfos: [sgf],
+          playersMap,
+          gamesMap,
+          existingGamesById: new Map(),
+          existingGamesBySgf: new Map(),
+          currentSgfPaths: new Set([sgf.path]),
+          force: true,
+        });
+        if (usePastName) {
+          assert.equal(result.matchedEntries.length, 1);
+          assert.match(result.matchedEntries[0], /^1-2 /);
+          assert.deepEqual(result.unmatchedEntries, []);
+        } else {
+          assert.deepEqual(result.matchedEntries, []);
+          assert.deepEqual(result.unmatchedEntries[0].reasons, ['both colors resolve to the same player']);
+        }
+      }
+    );
+  }
+});
