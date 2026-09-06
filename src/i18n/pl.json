@@ -1,13 +1,15 @@
 {
   "site": {
+    "tournamentsTitle": "Turnieje",
+    "tournamentsDescription": "Wyniki i statystyki wszystkich turniejów",
     "name": "Archiwum Turniejów Go",
     "eventName": "Turniej",
     "description": "Archiwum wyników wszystkich turniejów w Go",
     "yearDescription": "Wyniki turniejów z roku %{0}",
-    "allTimeStatsLink": "Lista uczestników",
+    "allTimeStatsLink": "Zawodnicy",
     "allTimeStatsTitle": "Lista wszech czasów",
-    "allTimeStatsDescription": "Lista wszech czasów wszystkich uczestników turniejów w Go",
-    "allTimeStatsByCountryLink": "Lista krajów",
+    "allTimeStatsDescription": "Lista wszech czasów wszystkich zawodników turniejów w Go",
+    "allTimeStatsByCountryLink": "Kraje",
     "allTimeStatsByCountryTitle": "Lista wszech czasów krajów",
     "allTimeStatsByCountryDescription": "Lista wszech czasów osiągnieć wszystkich krajów w turniejach Go",
     "playerStatsTitle": "%{0} - Statystyki",
@@ -16,11 +18,12 @@
     "countryStatsDescription": "Statystyki kraju %{0} we wszystkich turniejach Go",
     "categoryStatsTitle": "%{0} - Statystyki",
     "categoryStatsDescription": "Statystyki %{0}",
-    "gamesListLink": "Lista zapisów gier",
-    "gamesListTitle": "Lista zapisów gier",
-    "gamesListDescription": "Lista zapisanych gier we wszystkich turniejach",
+    "gamesListLink": "Zapisy gier",
+    "gamesListTitle": "Zapisy gier",
+    "gamesListDescription": "Zarejestrowane gry w formacie SGF ze wszystkich turniejów",
     "lastUpdated": "Ostatnia aktualizacja: %{0}",
-    "github": "Zobacz na GitHub: %{0}"
+    "github": "Zobacz na GitHub: %{0}",
+    "searchPlaceholder": "Szukaj zawodników lub turniejów…"
   },
   "navigation": {
     "home": {
@@ -44,6 +47,27 @@
     "otherEvents": "Inne wydarzenia",
     "allEvents": "Wszystkie wydarzenia"
   },
+  "actions": {
+    "showTournamentsStats": "Zobacz statystyki turniejów",
+    "showAllMedalists": "Pokaż wszystkich medalistów",
+    "showLess": "Pokaż mniej"
+  },
+  "search": {
+    "label": "Przeszukaj archiwum",
+    "placeholder": "Szukaj",
+    "loading": "Wczytywanie indeksu…",
+    "noResults": "Brak pasujących wyników",
+    "error": "Wyszukiwanie nie powiodło się. Ustaw fokus ponownie, aby spróbować jeszcze raz.",
+    "clear": "Wyczyść wyszukiwanie",
+    "close": "Zamknij wyszukiwanie",
+    "games": "%{0} gier",
+    "types": {
+      "tournament": "Turniej",
+      "player": "Zawodnik",
+      "country": "Kraj",
+      "category": "Kategoria"
+    }
+  },
   "details": {
     "header": "Informacje",
     "name": "Nazwa",
@@ -62,7 +86,6 @@
     "goToEGD": "Zobacz profil gracza w bazie European Go Database"
   },
   "stage": {
-    "details": "Szczegóły",
     "league": "Liga",
     "ladder": "Faza pucharowa",
     "classification": "Klasyfikacja",
@@ -97,17 +120,17 @@
     }
   },
   "table": {
+    "stages": "Etapy",
     "year": "Rok",
     "code": "Kod",
     "category": "Kategoria",
     "stage": "Etap",
     "place": "Miejsce",
     "country": "Kraj",
-    "opponent": "Przeciwnik",
     "firstName": "Imię",
     "lastName": "Nazwisko",
     "index": "Lp.",
-    "name": "Uczestnik",
+    "name": "Zawodnik",
     "rank": "Siła",
     "round": "Runda %{0}",
     "playoffs": "Play-Off",
@@ -161,7 +184,6 @@
     }
   },
   "gamesFilter": {
-    "filter": "Filtry",
     "showMore": "Pokaż więcej",
     "showLess": "Pokaż mniej",
     "clear": "Wyczyść",
@@ -230,23 +252,24 @@
     "group": "Grupuj według",
     "noGrouping": "Bez grupowania",
     "groupYear": "Rok turnieju",
+    "groupYearRound": "Rok turnieju, etap i runda",
+    "groupRest": "Pozostałe",
     "groupOpponent": "Przeciwnik",
     "groupOpponentCountry": "Kraj przeciwnika",
     "groupCountryPlayer": "Gracz z wybranego kraju",
     "groupCategory": "Kategoria",
-    "versus": "przeciwko %{0}",
     "noMatches": "Brak zapisów gier pasujących do filtrów.",
     "count": "%{0} z %{1}"
   },
   "winners": {
-    "title": "Medaliści",
-    "year": "Rok",
+    "showMoreTournaments": "Pokaż pozostałe %{0} turnieje",
     "first": "1. Miejsce",
     "firstIn": "1. Miejsce w %{0}",
     "second": "2. miejsce",
     "secondIn": "2. miejsce w %{0}",
     "third": "3. miejsce",
-    "thirdIn": "3. miejsce w %{0}"
+    "thirdIn": "3. miejsce w %{0}",
+    "locationUnknown": "Brak informacji o miejscu"
   },
   "medals": {
     "gold": "Złoto",
@@ -263,18 +286,23 @@
     "gameRecords": "Zapisane partie",
     "medalists": "Medaliści",
     "countries": "Klasyfikacja medalowa",
-    "attendants": "Top %{0} uczestników",
+    "medalistView": {
+      "label": "Klasyfikacja medalistów",
+      "individuals": "Indywidualnie",
+      "countries": "Kraje"
+    },
+    "attendants": "Top %{0} zawodników",
     "achievements": "Osiągnięcia",
-    "bestParticipantsOnly": "Tylko najlepsi uczestnicy",
+    "bestParticipantsOnly": "Tylko najlepsi zawodnicy",
     "includeUnsurePlayers": "Uwzględnij niepewnych graczy",
     "total": {
       "title": "Archiwum w liczbach",
       "tournaments": "Wydarzeń",
-      "participants": "Uczestników",
+      "participants": "Zawodników",
       "games": "Gier",
       "draws": "Remisy",
-      "gamesWithColors": "Gier ze znanymi kolorami",
       "black": "% wygranych przez czarne",
+      "blackSample": "Na podstawie %{0} gier ze znanymi kolorami graczy",
       "resigned": "Wygranych przez poddanie",
       "timeout": "Wygranych przez czas",
       "sgfs": "Zapisów partii SGF",

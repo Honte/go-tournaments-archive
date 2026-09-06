@@ -8,8 +8,8 @@ import Select, {
   type MultiValue,
   type SingleValue,
   type StylesConfig,
-  type ThemeConfig,
 } from 'react-select';
+import { SELECT_THEME } from '@/libs/themes';
 
 export type FacetOption = {
   value: string;
@@ -49,7 +49,7 @@ const styles: StylesConfig<FacetOption, boolean> = {
     ...base,
     backgroundColor: 'var(--color-archive-surface)',
     '&:hover': {
-      borderColor: 'var(--color-archive-accent-hover)',
+      borderColor: 'var(--color-archive-focus-ring)',
     },
   }),
   menu: (base) => ({
@@ -59,6 +59,16 @@ const styles: StylesConfig<FacetOption, boolean> = {
   option: (base, state) => ({
     ...base,
     cursor: state.isDisabled ? 'not-allowed' : 'pointer',
+    backgroundColor: state.isSelected ? 'var(--color-archive-control-selected)' : base.backgroundColor,
+    color: state.isDisabled ? base.color : state.isSelected ? 'var(--color-archive-control-selected-text)' : base.color,
+    ':active': {
+      ...base[':active'],
+      backgroundColor: state.isDisabled
+        ? undefined
+        : state.isSelected
+          ? 'var(--color-archive-control-selected)'
+          : 'var(--color-archive-accent-soft)',
+    },
   }),
   clearIndicator: (base) => ({
     ...base,
@@ -81,29 +91,6 @@ const styles: StylesConfig<FacetOption, boolean> = {
     },
   }),
 };
-
-const theme: ThemeConfig = (base) => ({
-  ...base,
-  borderRadius: 4,
-  colors: {
-    ...base.colors,
-    primary: 'var(--color-archive-accent)',
-    primary75: 'var(--color-archive-accent-hover)',
-    primary50: 'var(--color-archive-accent-soft)',
-    primary25: 'var(--color-archive-surface-muted)',
-    neutral0: 'var(--color-archive-surface)',
-    neutral5: 'var(--color-archive-page)',
-    neutral10: 'var(--color-archive-surface-muted)',
-    neutral20: 'var(--color-archive-border)',
-    neutral30: 'var(--color-archive-text-muted)',
-    neutral40: 'var(--color-archive-text-muted)',
-    neutral50: 'var(--color-archive-text-muted)',
-    neutral60: 'var(--color-archive-text)',
-    neutral70: 'var(--color-archive-text)',
-    neutral80: 'var(--color-archive-text)',
-    neutral90: 'var(--color-archive-text)',
-  },
-});
 
 function getOptionLabel(option: FacetOption) {
   return `${option.label} (${option.count})`;
@@ -179,7 +166,7 @@ export const FacetSelect = memo(function FacetSelect({
         hideSelectedOptions={false}
         menuPlacement="auto"
         styles={styles}
-        theme={theme}
+        theme={SELECT_THEME}
       />
     </div>
   );
@@ -245,7 +232,7 @@ export const MultiFacetSelect = memo(function MultiFacetSelect({
         hideSelectedOptions={false}
         menuPlacement="auto"
         styles={styles}
-        theme={theme}
+        theme={SELECT_THEME}
       />
     </div>
   );

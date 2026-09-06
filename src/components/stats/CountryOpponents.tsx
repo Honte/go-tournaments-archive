@@ -4,8 +4,8 @@ import { useMemo } from 'react';
 import type { CountryStats } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
+import { getFormatter } from '@/i18n/formatter';
 import { getTranslator } from '@/i18n/translator';
-import { toPercentage } from '@/libs/table';
 import { StatsTable } from '@/components/table/StatsTable';
 import type { StatsColumnDef } from '@/components/table/statsTableConfig';
 import { CountryLink } from '@/components/ui/CountryLink';
@@ -108,7 +108,7 @@ export function CountryOpponents({ event, country, translations }: CountryOppone
           {
             accessorKey: 'wonPercent',
             header: t('table.wonPercent'),
-            cell: toPercentage,
+            cell: getFormatter(translations.locale).toPercentageCell,
           },
         ] as StatsColumnDef<CountryOpponentRow>[]
       ).filter(Boolean),

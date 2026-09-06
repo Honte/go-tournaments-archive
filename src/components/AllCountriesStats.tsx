@@ -4,9 +4,9 @@ import { useMemo } from 'react';
 import type { CountryStats, TableStats } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Locale, Translations } from '@/i18n/consts';
+import { getFormatter } from '@/i18n/formatter';
 import { getTranslator } from '@/i18n/translator';
 import { sortTableStats } from '@/libs/sort';
-import { toNumeric, toPercentage } from '@/libs/table';
 import { StatsTable } from '@/components/table/StatsTable';
 import type { StatsColumnDef } from '@/components/table/statsTableConfig';
 import { CountryLink } from '@/components/ui/CountryLink';
@@ -43,6 +43,7 @@ export function AllCountriesStats({ event, countries, locale }: AllCountriesStat
 
 function AllCountriesStatsContent({ event, countries, translations }: AllCountriesStatsContentProps) {
   const t = getTranslator(translations);
+  const formatter = getFormatter(translations.locale);
 
   const data = useMemo(
     () =>
@@ -102,7 +103,7 @@ function AllCountriesStatsContent({ event, countries, translations }: AllCountri
           event.showBestPlace && {
             accessorKey: 'bestPlace',
             header: t('table.best'),
-            cell: toNumeric,
+            cell: formatter.toNumericCell,
           },
           {
             accessorKey: 'attended',
@@ -143,11 +144,11 @@ function AllCountriesStatsContent({ event, countries, translations }: AllCountri
           {
             accessorKey: 'wonPercent',
             header: t('table.wonPercent'),
-            cell: toPercentage,
+            cell: formatter.toPercentageCell,
           },
         ] as StatsColumnDef<CountryRow>[]
       ).filter(Boolean),
-    [t, translations, event, hasDraws]
+    [t, translations, event, hasDraws, formatter]
   );
 
   return <StatsTable columns={columns} data={data} />;

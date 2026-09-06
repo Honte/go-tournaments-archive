@@ -30,6 +30,10 @@ export function buildGameRecordsModel(
     games: matches.map((match) => match.game),
     groups: groupGameRecords(matches, normalizedState, {
       playerMeta: getPlayerMeta(games),
+      roundLabel: options.roundLabel ?? 'Round',
+      restLabel: options.restLabel ?? 'Rest',
+      stageLabel: options.stageLabel ?? ((game) => `Stage ${game.stage + 1}`),
+      games,
       countryLabel,
       categoryLabel,
       unknownCountryLabel: options.unknownCountryLabel ?? '?',

@@ -31,6 +31,7 @@ function getGroupOptions(t: Translator, grouping: GameRecordsModel['grouping']):
   return [
     { value: 'none', label: t('gamesFilter.noGrouping') },
     { value: 'year', label: t('gamesFilter.groupYear') },
+    { value: 'year-round', label: t('gamesFilter.groupYearRound') },
     grouping.opponentPlayer && { value: 'opponent-player' as const, label: t('gamesFilter.groupOpponent') },
     grouping.opponentCountry && {
       value: 'opponent-country' as const,

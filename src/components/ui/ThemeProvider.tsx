@@ -7,6 +7,7 @@ export async function ThemeProvider({ children }: PropsWithChildren) {
       attribute="data-theme"
       defaultTheme="system"
       enableSystem
+      disableTransitionOnChange
       storage="localStorage"
       storageKey="go-tournaments-theme"
     >

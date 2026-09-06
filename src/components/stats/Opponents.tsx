@@ -4,8 +4,8 @@ import { useMemo } from 'react';
 import type { PlayerStats } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
+import { getFormatter } from '@/i18n/formatter';
 import { getTranslator } from '@/i18n/translator';
-import { toPercentage } from '@/libs/table';
 import { StatsTable } from '@/components/table/StatsTable';
 import type { StatsColumnDef } from '@/components/table/statsTableConfig';
 import { H2 } from '@/components/ui/H2';
@@ -119,7 +119,7 @@ export function Opponents({ event, translations, player }: OpponentsProps) {
           {
             accessorKey: 'wonPercent',
             header: t('table.wonPercent'),
-            cell: toPercentage,
+            cell: getFormatter(translations.locale).toPercentageCell,
           },
         ] as StatsColumnDef<OpponentRow>[]
       ).filter(Boolean),

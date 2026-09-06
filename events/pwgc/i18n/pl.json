@@ -5,12 +5,11 @@
     "acronym": "MPK",
     "description": "Archiwum wyników wszystkich edycji Mistrzostw Polski Kobiet w Go",
     "yearDescription": "Wyniki mistrzostw z roku %{0}",
-    "allTimeStatsLink": "Lista uczestniczek",
-    "allTimeStatsDescription": "Lista wszech czasów wszystkich uczestniczek Mistrzostw Polski Kobiet w Go",
+    "allTimeStatsLink": "Zawodniczki",
+    "allTimeStatsDescription": "Lista wszech czasów wszystkich zawodniczek Mistrzostw Polski Kobiet w Go",
     "playerStatsDescription": "Statystyki gracza %{0} we wszystkich rozegranych edycjach Mistrzostw Polski Kobiet w Go"
   },
   "table": {
-    "opponent": "Przeciwniczka",
     "name": "Zawodniczka"
   },
   "details": {
@@ -18,15 +17,14 @@
     "awarded": "Medalistki"
   },
   "winners": {
-    "title": "Medalistki Mistrzostw Polski Kobiet",
     "first": "Mistrzyni Polski"
   },
   "stats": {
-    "attendants": "Top %{0} uczestniczek",
+    "attendants": "Top %{0} zawodniczek",
     "opponents": "Podsumowanie przeciwniczek",
     "medalists": "Medalistki"
   },
   "total": {
-    "participants": "Uczestniczek"
+    "participants": "Zawodniczek"
   }
 }

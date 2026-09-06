@@ -1,18 +1,17 @@
 {
   "site": {
-    "name": "Archiwum Mistrzostw Polski w\u00A0Go",
+    "name": "Archiwum Mistrzostw Polski w Go",
     "eventName": "Mistrzostwa Polski w Go",
     "acronym": "MP",
     "description": "Archiwum wyników wszystkich edycji mistrzostw Polski w Go",
     "yearDescription": "Wyniki mistrzostw z roku %{0}",
-    "allTimeStatsDescription": "Lista wszech czasów wszystkich uczestników mistrzostw Polski w Go",
+    "allTimeStatsDescription": "Lista wszech czasów wszystkich zawodników mistrzostw Polski w Go",
     "playerStatsDescription": "Statystyki gracza %{0} we wszystkich rozegranych edycjach mistrzostw Polski w Go"
   },
   "details": {
     "goToWebsite": "Przejdź na stronę MP %{0}"
   },
   "winners": {
-    "title": "Medaliści Mistrzostw Polski",
     "first": "Mistrz Polski"
   }
 }

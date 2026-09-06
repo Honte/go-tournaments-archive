@@ -16,6 +16,10 @@ export function tournamentUrl(event: EventContext, locale: string, year: number 
   return joinPaths(event.prefix, `/${locale}/${year}`);
 }
 
+export function tournamentsUrl(event: EventContext, locale: string) {
+  return joinPaths(event.prefix, `/${locale}/tournaments`);
+}
+
 export function categoryUrl(event: EventContext, locale: string, category: string) {
   return joinPaths(event.prefix, `/${locale}/category/${category}`);
 }
@@ -38,6 +42,14 @@ export function allCountryStatsUrl(event: EventContext, locale: string) {
 
 export function allGameStatsUrl(event: EventContext, locale: string) {
   return joinPaths(event.prefix, `/${locale}/stats/games`);
+}
+
+export function allGameStatsForPlayerUrl(event: EventContext, locale: string, playerId: string) {
+  return `${allGameStatsUrl(event, locale)}?player=${encodeURIComponent(playerId)}`;
+}
+
+export function allGameStatsForCountryUrl(event: EventContext, locale: string, country: string) {
+  return `${allGameStatsUrl(event, locale)}?country=${encodeURIComponent(country)}`;
 }
 
 export function faviconUrl(event: EventContext) {
@@ -82,6 +94,10 @@ export function gamesZipUrl(event: EventContext, year: number | string) {
 
 export function sitemapUrl(event: EventContext, locale: string) {
   return joinPaths(event.basePath, 'data', event.prefix, `sitemap/${locale}.json`);
+}
+
+export function searchIndexUrl(event: EventContext, locale: string) {
+  return joinPaths(event.basePath, 'data', event.prefix, `search/${locale}.json`);
 }
 
 export function gameSgfUrl(event: EventContext, path: string) {

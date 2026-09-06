@@ -1,5 +1,7 @@
 {
   "site": {
+    "tournamentsTitle": "Tournaments",
+    "tournamentsDescription": "Results and statistics of all tournaments",
     "name": "Tournament Archive",
     "eventName": "Tournament",
     "description": "Archive of all tournaments",
@@ -18,9 +20,10 @@
     "categoryStatsDescription": "%{0} statistics",
     "gamesListLink": "Game records",
     "gamesListTitle": "Game records",
-    "gamesListDescription": "List of all games records from all tournaments",
+    "gamesListDescription": "All games records in SGF format from all tournaments",
     "lastUpdated": "Last updated: %{0}",
-    "github": "Contribute on GitHub: %{0}"
+    "github": "Contribute on GitHub: %{0}",
+    "searchPlaceholder": "Search players or tournaments…"
   },
   "navigation": {
     "home": {
@@ -44,6 +47,27 @@
     "otherEvents": "Other events",
     "allEvents": "All events"
   },
+  "actions": {
+    "showTournamentsStats": "See tournaments stats",
+    "showAllMedalists": "Show all medalists",
+    "showLess": "Show less"
+  },
+  "search": {
+    "label": "Search archive",
+    "placeholder": "Search",
+    "loading": "Loading search index…",
+    "noResults": "No matching results",
+    "error": "Search failed. Focus again to retry.",
+    "clear": "Clear search",
+    "close": "Close search",
+    "games": "%{0} games",
+    "types": {
+      "tournament": "Tournament",
+      "player": "Player",
+      "country": "Country",
+      "category": "Category"
+    }
+  },
   "details": {
     "header": "About",
     "name": "Name",
@@ -62,7 +86,6 @@
     "goToEGD": "Open player's profile in European Go Database"
   },
   "stage": {
-    "details": "Details",
     "league": "League",
     "ladder": "Ladder",
     "classification": "Classification",
@@ -97,13 +120,13 @@
     }
   },
   "table": {
+    "stages": "Stages",
     "year": "Year",
     "code": "Code",
     "category": "Category",
     "stage": "Stage",
     "place": "Place",
     "country": "Country",
-    "opponent": "Opponent",
     "index": "#",
     "firstName": "First Name",
     "lastName": "Last Name",
@@ -161,7 +184,6 @@
     }
   },
   "gamesFilter": {
-    "filter": "Filter",
     "showMore": "Show more",
     "showLess": "Show less",
     "clear": "Clear",
@@ -230,23 +252,24 @@
     "group": "Group by",
     "noGrouping": "No grouping",
     "groupYear": "Tournament year",
+    "groupYearRound": "Tournament year, stage & round",
+    "groupRest": "Rest",
     "groupOpponent": "Opponent player",
     "groupOpponentCountry": "Opponent country",
     "groupCountryPlayer": "Country player",
     "groupCategory": "Category",
-    "versus": "vs %{0}",
     "noMatches": "No game records match these filters.",
     "count": "%{0} of %{1}"
   },
   "winners": {
-    "title": "Medalists",
-    "year": "Year",
+    "showMoreTournaments": "Show %{0} more tournaments",
     "first": "Champion",
     "firstIn": "Champion of %{0}",
     "second": "2nd place",
     "secondIn": "2nd place in %{0}",
     "third": "3rd place",
-    "thirdIn": "3rd place in %{0}"
+    "thirdIn": "3rd place in %{0}",
+    "locationUnknown": "Location unavailable"
   },
   "medals": {
     "gold": "Gold",
@@ -263,6 +286,11 @@
     "opponents": "Opponent summary",
     "medalists": "Medalists",
     "countries": "Medal standings",
+    "medalistView": {
+      "label": "Medalist ranking",
+      "individuals": "Individuals",
+      "countries": "Countries"
+    },
     "attendants": "Top %{0} participants",
     "achievements": "Achievements",
     "bestParticipantsOnly": "Best participants only",
@@ -273,11 +301,11 @@
       "participants": "Participants",
       "games": "Games",
       "draws": "Draws",
-      "gamesWithColors": "Games with colors",
       "black": "% won by black",
+      "blackSample": "Based on %{0} games with known player colors",
       "resigned": "Won by resign",
       "timeout": "Won by time",
-      "sgfs": "Games with SGF records",
+      "sgfs": "SGF records",
       "relays": "Relays on OGS",
       "streams": "Games streamed",
       "analysis": "AI analysis"

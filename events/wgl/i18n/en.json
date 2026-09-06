@@ -12,9 +12,7 @@
     "goToWebsite": "Go to PAGC %{0} website"
   },
   "winners": {
-    "title": "Medalists of Warsaw Go League",
-    "first": "Warsaw Go League Champion",
-    "year": "Edition"
+    "first": "Warsaw Go League Champion"
   },
   "table": {
     "year": "Edition"

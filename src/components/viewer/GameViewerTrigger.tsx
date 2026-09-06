@@ -24,8 +24,8 @@ export function GameViewerTrigger({ sgfPath, children, className, ...props }: Ga
         'hover:scale-[1.05] transition-transform duration-200',
         'overflow-hidden',
         'bg-archive-page',
-        'focus:border-archive-accent focus:scale-[1.05]',
-        'active:border-archive-accent-hover',
+        'focus:border-archive-focus-ring focus:scale-[1.05]',
+        'active:border-archive-focus-ring',
         'p-0 outline-none',
         className
       )}

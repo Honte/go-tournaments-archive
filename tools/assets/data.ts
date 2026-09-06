@@ -4,6 +4,8 @@ import type { Tournament } from '@/schema/data';
 import type { EventContext, EventData } from '@/schema/event';
 import type { Locale, Translations } from '@/i18n/consts';
 import { loadTournamentDescription } from '@/data/description';
+import { readEventPlayersFile } from '@/data/eventPlayers';
+import { buildSearchIndex } from '@/data/search';
 import { buildSitemap } from '@/data/sitemap';
 
 export type BuildDataRequest = {
@@ -26,6 +28,7 @@ async function buildEventDataAssets({
   otherEvents,
 }: BuildDataRequest): Promise<void> {
   const { tournaments, stats, summary } = data;
+  const eventPlayers = await readEventPlayersFile(event.id);
 
   await rm(outputDir, { recursive: true, force: true });
 
@@ -37,6 +40,13 @@ async function buildEventDataAssets({
     ...tournaments.map((tournament) => writeTournament(outputDir, event, tournament)),
     ...event.locales.map((locale) =>
       writeJson(outputDir, path.join('i18n', `${locale}.json`), allTranslations[locale])
+    ),
+    ...event.locales.map((locale) =>
+      writeJson(
+        outputDir,
+        path.join('search', `${locale}.json`),
+        buildSearchIndex(event, data, allTranslations[locale], eventPlayers)
+      )
     ),
     ...event.locales.map(async (locale) =>
       writeJson(

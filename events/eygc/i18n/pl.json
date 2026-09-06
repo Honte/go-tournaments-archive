@@ -5,14 +5,13 @@
     "acronym": "EYGC",
     "description": "Archiwum wyników wszystkich edycji Mistrzostw Europy Juniorów w Go",
     "yearDescription": "Wyniki mistrzostw z roku %{0}",
-    "allTimeStatsDescription": "Lista wszech czasów wszystkich uczestników Mistrzostw Europy Juniorów w Go",
+    "allTimeStatsDescription": "Lista wszech czasów wszystkich zawodników Mistrzostw Europy Juniorów w Go",
     "playerStatsDescription": "Statystyki gracza %{0} we wszystkich rozegranych edycjach Mistrzostw Europy Juniorów w Go"
   },
   "details": {
     "goToWebsite": "Przejdź na stronę EYGC %{0}"
   },
   "winners": {
-    "title": "Medaliści Mistrzostw Europy Juniorów",
     "first": "Mistrz Europy Juniorów",
     "firstIn": "Mistrz Europy Juniorów %{0}",
     "secondIn": "2. miejsce %{0}",

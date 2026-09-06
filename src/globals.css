@@ -18,32 +18,54 @@
 
 @theme {
   --breakpoint-xs: 420px;
+
+  /* Six palette inputs per theme. Adjust these to recolor the interface. */
   --color-archive-page: #f3f4f6;
   --color-archive-surface: #ffffff;
-  --color-archive-surface-muted: #e5e7eb;
-  --color-archive-surface-hover: #d1d5db;
-  --color-archive-border: #d2d2d2;
-  --color-archive-border-strong: #7a7a7a;
   --color-archive-text: #222222;
-  --color-archive-text-muted: #666666;
-  --color-archive-accent: #5287ae;
-  --color-archive-accent-hover: #72940c;
-  --color-archive-accent-soft: #d2d2d2;
-  --color-archive-accent-text: #ffffff;
-  --color-archive-control: #d1d5db;
-  --color-archive-control-hover: #9ca3af;
-  --color-archive-control-selected: #5287ae;
-  --color-archive-control-selected-text: #ffffff;
-  --color-archive-control-track: #d2d2d2;
   --color-archive-shell: #222222;
-  --color-archive-shell-muted: #999999;
-  --color-archive-shell-text: #f3f4f6ff;
+  --color-archive-accent: #5287ae;
+  --color-archive-accent-text: #ffffff;
+
+  /* Neutral roles share the page, surface, and text palette. */
+  --color-archive-surface-muted: color-mix(in oklab, var(--color-archive-text) 5%, var(--color-archive-page));
+  --color-archive-border: color-mix(in oklab, var(--color-archive-text) 18%, var(--color-archive-surface));
+  --color-archive-border-strong: color-mix(in oklab, var(--color-archive-text) 45%, var(--color-archive-border));
+  --color-archive-text-muted: color-mix(in oklab, var(--color-archive-text) 65%, var(--color-archive-surface));
+  --color-archive-control: color-mix(in oklab, var(--color-archive-text) 13%, var(--color-archive-page));
+  --color-archive-control-track: var(--color-archive-border);
+  --color-archive-shell-muted: color-mix(in oklab, var(--color-archive-shell) 40%, var(--color-archive-page));
+
+  /* Accent roles follow the accent hue; hover changes only its lightness. */
+  --color-archive-accent-hover: oklch(from var(--color-archive-accent) calc(l - 0.08) c h);
+  --color-archive-accent-soft: color-mix(in oklab, var(--color-archive-accent) 20%, var(--color-archive-surface));
+  --color-archive-surface-hover: color-mix(in oklab, var(--color-archive-accent) 10%, var(--color-archive-surface));
+  --color-archive-control-hover: color-mix(in oklab, var(--color-archive-accent) 30%, var(--color-archive-surface));
+  --color-archive-control-selected: var(--color-archive-accent-fill);
+  --color-archive-control-selected-text: var(--color-archive-accent-text);
+
+  /* Separate readable text, filled surfaces, and focus indicators from decorative accents. */
+  --color-archive-link: oklch(from var(--color-archive-accent) calc(l - 0.1) c h);
+  --color-archive-link-hover: oklch(from var(--color-archive-link) calc(l - 0.04) c h);
+  --color-archive-focus-ring: oklch(from var(--color-archive-accent) calc(l - 0.12) c h);
+  --color-archive-accent-fill: oklch(from var(--color-archive-accent) calc(l - 0.06) c h);
+  --color-archive-accent-fill-hover: oklch(from var(--color-archive-accent-fill) calc(l - 0.04) c h);
+
+  /* Shared interaction overlays and table stripes. */
+  --color-archive-surface-hover-accent: color-mix(in oklab, var(--color-archive-accent) 20%, transparent);
+  --color-archive-surface-tint: color-mix(in oklab, var(--color-archive-accent-soft) 40%, transparent);
+  --color-archive-row-hover: var(--color-archive-surface-hover-accent);
+  --color-archive-row-stripe: var(--color-archive-surface-muted);
+  --color-archive-row-stripe-subtle: color-mix(in oklab, var(--color-archive-row-stripe) 45%, transparent);
+  --color-archive-scrollbar: color-mix(in srgb, var(--color-archive-text) 25%, transparent);
+  --color-archive-scrollbar-hover: color-mix(in srgb, var(--color-archive-text) 40%, transparent);
+
+  /* Fixed foreground on the dark shell, and theme-independent Go stone fills. */
+  --color-archive-shell-text: #f3f4f6;
   --color-archive-stone-black: #222222;
   --color-archive-stone-white: #f3f4f6;
-  --color-archive-stone-stroke-black: #222222;
-  --color-archive-stone-stroke-white: #222222;
-  --color-archive-scrollbar: rgba(0, 0, 0, 0.25);
-  --color-archive-scrollbar-hover: rgba(0, 0, 0, 0.4);
+  --color-archive-stone-stroke-black: var(--color-archive-stone-black);
+  --color-archive-stone-stroke-white: var(--color-archive-stone-black);
 }
 
 @utility stroke-paint-order {
@@ -61,28 +83,36 @@
 
 :root[data-theme='dark'] {
   color-scheme: dark;
+
   --color-archive-page: #15181c;
   --color-archive-surface: #1e2329;
-  --color-archive-surface-muted: #1a1e23;
-  --color-archive-surface-hover: #3a4652;
-  --color-archive-border: #4c5864;
-  --color-archive-border-strong: #929da8;
   --color-archive-text: #f1f4f6;
-  --color-archive-text-muted: #b5bec7;
-  --color-archive-accent: #c68e1e;
-  --color-archive-accent-hover: #ffd166;
-  --color-archive-accent-soft: #4a3d20;
-  --color-archive-accent-text: #1a160b;
-  --color-archive-control: #252b32;
-  --color-archive-control-hover: #3a4652;
-  --color-archive-control-selected: #e8b84a;
-  --color-archive-control-selected-text: #1a160b;
-  --color-archive-control-track: #4c5864;
   --color-archive-shell: #0d0f12;
-  --color-archive-shell-muted: #111417;
-  --color-archive-stone-stroke-black: #59636d;
-  --color-archive-scrollbar: rgba(255, 255, 255, 0.25);
-  --color-archive-scrollbar-hover: rgba(255, 255, 255, 0.4);
+  --color-archive-accent: #c68e1e;
+  --color-archive-accent-text: #1a160b;
+
+  /* Dark surfaces need brighter borders and controls, with a darker stripe. */
+  --color-archive-surface-muted: color-mix(in oklab, var(--color-archive-page) 40%, var(--color-archive-surface));
+  --color-archive-border: color-mix(in oklab, var(--color-archive-text) 28%, var(--color-archive-surface));
+  --color-archive-text-muted: color-mix(in oklab, var(--color-archive-text) 78%, var(--color-archive-page));
+  --color-archive-control: color-mix(in oklab, var(--color-archive-text) 4%, var(--color-archive-surface));
+  --color-archive-shell-muted: color-mix(in oklab, var(--color-archive-shell) 50%, var(--color-archive-page));
+  --color-archive-surface-hover: color-mix(in oklab, var(--color-archive-text) 19%, var(--color-archive-surface));
+  --color-archive-control-hover: var(--color-archive-surface-hover);
+
+  --color-archive-accent-hover: oklch(from var(--color-archive-accent) calc(l + 0.2) c h);
+  --color-archive-accent-soft: color-mix(in oklab, var(--color-archive-accent) 35%, var(--color-archive-shell));
+  --color-archive-control-selected: oklch(from var(--color-archive-accent) calc(l + 0.12) c h);
+  --color-archive-link: oklch(from var(--color-archive-accent) calc(l + 0.12) c h);
+  --color-archive-link-hover: oklch(from var(--color-archive-link) calc(l + 0.06) c h);
+  --color-archive-focus-ring: oklch(from var(--color-archive-accent) calc(l + 0.16) c h);
+  --color-archive-accent-fill: var(--color-archive-accent);
+  --color-archive-accent-fill-hover: var(--color-archive-accent-hover);
+  --color-archive-stone-stroke-black: color-mix(
+    in oklab,
+    var(--color-archive-stone-black) 45%,
+    var(--color-archive-border-strong)
+  );
 }
 
 [data-theme-image='dark'] {

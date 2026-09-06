@@ -4,10 +4,10 @@ import { useMemo } from 'react';
 import type { PlayerStats, TableStats } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Locale, Translations } from '@/i18n/consts';
+import { getFormatter } from '@/i18n/formatter';
 import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
 import { sortTableStats } from '@/libs/sort';
-import { toNumeric, toPercentage } from '@/libs/table';
 import { StatsTable } from '@/components/table/StatsTable';
 import type { StatsColumnDef } from '@/components/table/statsTableConfig';
 import { CountryLink } from '@/components/ui/CountryLink';
@@ -49,6 +49,7 @@ export function AllPlayersStats({ event, players, locale }: AllPlayersStatsProps
 
 function AllPlayersStatsContent({ event, players, translations }: AllPlayersStatsContentProps) {
   const t = getTranslator(translations);
+  const formatter = getFormatter(translations.locale);
 
   const data = useMemo(
     () =>
@@ -136,7 +137,7 @@ function AllPlayersStatsContent({ event, players, translations }: AllPlayersStat
           event.showBestPlace && {
             accessorKey: 'bestPlace',
             header: t('table.best'),
-            cell: toNumeric,
+            cell: formatter.toNumericCell,
           },
           {
             accessorKey: 'gold',
@@ -177,11 +178,11 @@ function AllPlayersStatsContent({ event, players, translations }: AllPlayersStat
           {
             accessorKey: 'wonPercent',
             header: t('table.wonPercent'),
-            cell: toPercentage,
+            cell: formatter.toPercentageCell,
           },
         ] as StatsColumnDef<PlayerRow>[]
       ).filter(Boolean),
-    [t, translations, hasSgfs, hasDraws, event]
+    [t, translations, hasSgfs, hasDraws, event, formatter]
   );
 
   return <StatsTable columns={columns} data={data} />;

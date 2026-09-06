@@ -14,6 +14,7 @@ import {
   homeUrl,
   multiHomeUrl,
   tournamentUrl,
+  tournamentsUrl,
 } from '@/libs/urls';
 
 export type NavigationLink = {
@@ -52,6 +53,11 @@ export async function buildSitemap(
       key: 'home',
       href: homeUrl(event, locale),
       label: t('navigation.home.anchor'),
+    },
+    {
+      key: 'tournaments-stats',
+      href: tournamentsUrl(event, locale),
+      label: t('navigation.tournaments'),
     },
     {
       key: 'stats',

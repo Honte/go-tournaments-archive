@@ -5,9 +5,10 @@ multi-event archive selected by configuration presets under `configurations/`. S
 `pl` by default) through locale routes when enabled by each event config, and tournament data is stored in YAML and H9
 text files under `events/[event-id]/data/` and game records in SGF files under `events/[event-id]/sgf/`.
 
-The site supports tournament lists, edition detail pages, stage standings, game lists with SGF links, an all-games SGF
-browser, per-edition SGF ZIP downloads, generated board previews, all-time player statistics, country statistics for
-international events, and category medal tables for events that define age or other categories.
+The site supports tournament cards and sortable tournament tables, edition detail pages, stage standings, game lists
+with SGF links, an all-games SGF browser, per-edition SGF ZIP downloads, generated board previews, all-time player
+statistics, country statistics for international events, and category medal tables for events that define age or
+other categories.
 
 ## Live sites
 
@@ -48,7 +49,18 @@ Available event directories:
 | `pygc`   | Polish Youth Go Championships     | Locales `pl`, `en`, category stats for `u21`, `u20`, `u18`, `u16`, `u15`, `u12`  |
 | `wgl`    | Warsaw Go League                  | Locales `pl`, `en`                                                               |
 
-Event-specific config, translations, colors, logo, data, and SGF files live in `events/[event-id]/`.
+Event-specific config, translations, logo, optional hero background, data, and SGF files live in `events/[event-id]/`.
+All events share the interface palette in `src/globals.css`.
+
+### Hero backgrounds
+
+Add `background.jpg` or `background.png` to an event directory to display a decorative hero background. JPG takes
+precedence if both files exist. Without either file, the hero has no background decoration. Images are bundled with
+the site and fade into the current page color in both light and dark themes. Use a wide banner (for example, 1536 × 512)
+with its main subject on the right to leave room for the heading and search. Restart the development server after adding
+or removing an image; rebuild the site to publish image changes.
+
+The included event backgrounds are AI-generated test illustrations, not photographs of actual tournaments.
 
 ## Configuration modes
 
@@ -128,13 +140,13 @@ npm run build:honte
 npm run build:europe
 npm run build:poland
 npm run build:pgc
-npm run build:kpmc
 ```
 
 Build the same modes, or any event without a convenience script, by setting the environment explicitly:
 
 ```bash
 EVENT=wagc npm run build
+EVENT=kpmc npm run build
 CONFIG=europe npm run build
 ```
 
@@ -201,6 +213,8 @@ Main static pages:
 - `/:eventPrefix` - multi-event locale redirect for one event.
 - `/:locale` or `/:eventPrefix/:locale` - archive overview with winners, medalists, attendants, total stats, and country
   medalists when enabled.
+- `/:locale/tournaments` or `/:eventPrefix/:locale/tournaments` - sortable edition statistics for the selected event,
+  with separate tables for configured categories.
 - `/:locale/:year` or `/:eventPrefix/:locale/:year` - tournament detail page with event metadata, awarded players, stage
   tables, and game list.
 - `/:locale/stats` or `/:eventPrefix/:locale/stats` - all-time player table.
@@ -242,6 +256,31 @@ Generated data/assets:
 Production data and SGF files are prebuilt into `public/`. Development-only `route.*.dev.ts` handlers serve equivalent
 JSON and SGF responses during `next dev`.
 
+## Tournament tables
+
+Open **Tournaments** in the side menu or **Show tournaments stats** on the event homepage. When the homepage has more
+than nine recorded editions, it initially shows five tournament cards. The sixth card is divided horizontally: the
+upper two-thirds expands the list, and the lower third opens the tournaments page. On narrow screens these actions
+are stacked buttons. When the sixth card is absent, the stats button appears below the grid, alongside **Show less**
+when the list is expanded.
+
+The tournaments page lists recorded editions newest first, excluding announcements. Its columns are year, location,
+country, date range, winner, second place, third place, players, stages, games, and SGFs. Country is shown when
+`showCountry` is enabled. Stages is hidden when every row in that table has the same stage count. The SGF column is
+shown only in non-category tables for events with linked SGFs.
+
+Every displayed column is sortable. Player columns sort by surname, with each player sharing a place on a separate
+line. Names within the active player column follow its sort direction; other player cells remain alphabetized.
+Missing values sort last. Years link to edition pages, names link to player statistics, and positive SGF counts link
+to game records filtered to that edition. All rows remain available without pagination; wide tables scroll horizontally.
+
+Events with categories have separate, independently sortable tables in configured category order. Each category
+heading links to its category page. Player counts include distinct category participants, including those whose
+membership is marked uncertain (`?`). Stage counts include category stages and shared stages with category
+participants. Each game involving a category participant is counted once, excluding BYEs; a game can contribute to
+more than one category's total. Location and dates describe the whole edition. Category tables omit SGF counts and
+do not require changes to game-record metadata or filters.
+
 ## Project layout
 
 ```text
@@ -250,17 +289,20 @@ events/
   [event-id]/
     config.ts
     Logo.tsx
-    colors.css
+    background.jpg  # Optional; background.png is also supported
     i18n/<locale>.json
     data/
     sgf/
 src/
   app/              # Next.js App Router pages and static route handlers
   components/       # UI, tables, stats, navigation, goban preview components
+    home/           # Hero, tournament cards, medalists, archive statistics
+    search/         # Archive search, result options, indicators, select styles
   data/             # YAML/H9 loaders, standings, tiebreakers, aggregate stats
   i18n/             # Locale types, active event locale helpers, server loader, translator
   libs/             # Shared utilities: dates, H9 parser, SGF/goban parser, sorting, math
   schema/           # Input and normalized data types
+  globals.css       # Shared light/dark palette and derived semantic color tokens
 public/             # Root hosting files plus generated data/SGF assets from prebuild
 tools/              # One-off extraction, SGF cleanup/matching, preview generation helpers
 ```
@@ -270,6 +312,37 @@ Aliases:
 - `@/*` maps to `src/*`.
 - `@tools/*` maps to `tools/*`.
 - `@events/*` maps to `events/*`.
+
+## Colors and themes
+
+The interface uses a shared light/dark palette across events. The header offers Auto, Light, and Dark; Auto follows
+the system preference. `@wrksz/themes` manages the `data-theme` attribute and saves the choice in local storage under
+`go-tournaments-theme`.
+
+To recolor the interface, start with the six palette inputs in [`src/globals.css`](src/globals.css). Light values live
+in `@theme`; dark values override them in `:root[data-theme='dark']`.
+
+| Palette input                 | Purpose                                                 |
+| ----------------------------- | ------------------------------------------------------- |
+| `--color-archive-page`        | Page background                                         |
+| `--color-archive-surface`     | Cards, menus, and inputs                                |
+| `--color-archive-text`        | Main foreground                                         |
+| `--color-archive-shell`       | Header background; also contributes to the footer color |
+| `--color-archive-accent`      | Base hue for accents and derived interaction colors     |
+| `--color-archive-accent-text` | Foreground on accent fills and selected controls        |
+
+Borders, muted text, controls, stripes, and hover colors are derived with `color-mix()` and relative `oklch()` colors.
+Some dark-mode formulas differ to suit dark backgrounds. Use the semantic role for the element: `archive-link` and
+`archive-link-hover` for colored links, `archive-accent-fill` with `archive-accent-text` for filled accents, and
+`archive-focus-ring` for focus indicators. The raw accent is not a substitute for all three. Palette changes still
+need contrast and interaction checks in both themes; derived colors do not guarantee readable combinations.
+
+Components use Tailwind classes such as `bg-archive-surface`, `text-archive-text`, and `border-archive-border`.
+Inline styles and SVG attributes use the same variables, for example `var(--color-archive-link)`.
+[`src/libs/themes.ts`](src/libs/themes.ts) supplies the shared `SELECT_THEME` for `react-select`.
+
+Event logos and hero images remain event-specific; event `colors.css` files are no longer part of the setup.
+See [AGENTS.md](AGENTS.md#color-guidelines) for role selection, shared controls, and theme validation guidance.
 
 ## Event configuration
 
@@ -625,7 +698,7 @@ These scripts are for one-off data maintenance:
 
 ```bash
 npm run extract:mp-db          # Extract PGC data from MySQL and convert to YAML
-npm run builder                # Interactive build helper for selecting EVENT and BASE_PATH
+npm run builder                # Interactive preset/event selection and event BASE_PATH
 npm run players:update <event> # Add missing event-player registry entries
 npm run players:egd <event>    # Enrich an event-player registry from EGD data
 ```
@@ -642,7 +715,8 @@ Relevant tool modules:
 ## Adding a new event
 
 1. Create `events/[event-id]/`.
-2. Add `config.ts`, `Logo.tsx`, `colors.css`, and translation JSON files for every locale listed in `config.ts`.
+2. Add `config.ts`, `Logo.tsx`, and translation JSON files for every locale listed in `config.ts`. Optionally add a
+   hero background as described above; the shared interface palette needs no event CSS file.
 3. Add `data/[year].yml` files, plus H9 `.txt` files or Markdown descriptions if needed.
 4. Add SGF files under `sgf/` if the archive exposes game records.
 5. Add the event to `configurations/multi.yml` or another preset if it should appear in a multi-event archive.
@@ -653,12 +727,13 @@ Relevant tool modules:
 
 ## Tech stack
 
-- Next.js 16 static export
+- Next.js 16 static export, or a standalone server for dynamic presets
 - React 19
 - TypeScript
 - Tailwind CSS 4
+- `@wrksz/themes` with shared semantic light/dark colors
 - TanStack Table and React Query
 - YAML tournament data
 - H9 tournament import parser
-- Internal SGF parser with generated board previews via `@sabaki/go-board`, SVGO, Sharp, and Resvg
+- Internal SGF parser with generated board previews via `@sabaki/go-board`, SVGO, and Sharp
 - ZIP generation via `fflate`

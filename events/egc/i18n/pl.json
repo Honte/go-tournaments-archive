@@ -1,17 +1,16 @@
 {
   "site": {
-    "name": "Archiwum Mistrzostw Europy w\u00A0Go",
+    "name": "Archiwum Mistrzostw Europy w Go",
     "acronym": "EGC",
     "description": "Archiwum wyników wszystkich edycji Mistrzostw Europy w Go",
     "yearDescription": "Wyniki mistrzostw z roku %{0}",
-    "allTimeStatsDescription": "Lista wszech czasów wszystkich uczestników Mistrzostw Europy w Go",
+    "allTimeStatsDescription": "Lista wszech czasów wszystkich zawodników Mistrzostw Europy w Go",
     "playerStatsDescription": "Statystyki gracza %{0} we wszystkich rozegranych edycjach Mistrzostw Europy w Go"
   },
   "details": {
     "goToWebsite": "Przejdź na stronę EGC %{0}"
   },
   "winners": {
-    "title": "Medaliści Mistrzostw Europy",
     "first": "Mistrz Europy"
   }
 }

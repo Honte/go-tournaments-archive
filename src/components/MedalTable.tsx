@@ -3,42 +3,82 @@ import { FaMedal } from 'react-icons/fa6';
 import type { StatsMedals } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
+import { Link } from '@/components/navigation/Link';
 
 export type MedalTableProps<T> = {
   translations: Translations;
   results: (T & { medals: StatsMedals })[];
   toKey: (result: T) => string;
   toName: (result: T) => ReactNode;
+  toHref?: (result: T) => string;
+  toLinkLabel?: (result: T) => string;
+  nameHeader?: ReactNode;
 };
 
-export function MedalTable<T>({ results, translations, toKey, toName }: MedalTableProps<T>) {
+export function MedalTable<T>({
+  results,
+  translations,
+  toKey,
+  toName,
+  toHref,
+  toLinkLabel,
+  nameHeader,
+}: MedalTableProps<T>) {
   const t = getTranslator(translations);
 
   return (
-    <table className="w-full text-center border-collapse">
-      <thead className="border-b-gray-300 border-b">
-        <tr className="text-xl">
-          <th />
-          <th className="p-1 px-2">
+    <table className="w-full table-fixed text-center">
+      <colgroup>
+        <col />
+        <col className="w-8" />
+        <col className="w-8" />
+        <col className="w-8" />
+      </colgroup>
+      <thead className="border-b border-archive-border">
+        <tr className="h-9 text-lg">
+          <th className="px-1 text-left text-xs font-semibold text-archive-text-muted">
+            {nameHeader ?? t('table.player')}
+          </th>
+          <th className="px-0">
             <FaMedal className="inline" fill="#fece43" title={t('medals.gold')} />
           </th>
-          <th className="p-1 px-2">
+          <th className="px-0">
             <FaMedal className="inline" fill="silver" title={t('medals.silver')} />
           </th>
-          <th className="p-1 px-2">
+          <th className="px-0">
             <FaMedal className="inline" fill="#CD7F32" title={t('medals.bronze')} />
           </th>
         </tr>
       </thead>
       <tbody>
-        {results.map((winner) => (
-          <tr key={toKey(winner)} className="even:bg-archive-surface-muted hover:bg-archive-surface-hover">
-            <td className="text-left p-1">{toName(winner)}</td>
-            <td>{winner.medals[0].length}</td>
-            <td>{winner.medals[1].length}</td>
-            <td>{winner.medals[2].length}</td>
-          </tr>
-        ))}
+        {results.map((winner) => {
+          const href = toHref?.(winner);
+
+          return (
+            <tr
+              key={toKey(winner)}
+              className="group relative h-9 even:bg-archive-row-stripe-subtle hover:bg-archive-row-hover"
+            >
+              <td className="px-1 py-1 text-left">
+                {href && (
+                  <Link
+                    href={href}
+                    aria-label={toLinkLabel?.(winner)}
+                    className="absolute inset-0 z-10 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-archive-focus-ring"
+                  />
+                )}
+                <span
+                  className={href ? 'pointer-events-none relative z-20 group-hover:text-archive-link-hover' : undefined}
+                >
+                  {toName(winner)}
+                </span>
+              </td>
+              <td className="px-0 tabular-nums">{winner.medals[0].length}</td>
+              <td className="px-0 tabular-nums">{winner.medals[1].length}</td>
+              <td className="px-0 tabular-nums">{winner.medals[2].length}</td>
+            </tr>
+          );
+        })}
       </tbody>
     </table>
   );

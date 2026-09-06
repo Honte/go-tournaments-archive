@@ -15,7 +15,7 @@ export function CategoryLink({ event, category, locale, children, className, ...
   return (
     <Link
       href={categoryUrl(event, locale, category)}
-      className={clsx('underline underline-offset-2 hover:text-archive-accent-hover', className)}
+      className={clsx('underline underline-offset-2 hover:text-archive-link-hover', className)}
       {...props}
     >
       {children}
