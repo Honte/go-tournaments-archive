@@ -1,0 +1,55 @@
+; PC[KR,Mungyeong]
+; DT[2026-09-08,2026-09-11] 
+;  Pl Name                            Rk Co  Clu   Win  Sos Sosos      1        2         3         pin
+   1 Xing Yuze                       6D DE   HD    2    4   12       28+      14+       4?        |18525012
+   2 Chen Yi_Han                     5D SG XXXX    2    4   11       22+      16+       3?        |20313084
+   3 Karuehawanit Wichrich           6D TH XXXX    2    4   11       26+      17+       2?        |17362378
+   4 Kim Hyeonseok                   7D KR XXXX    2    4   11       23+      15+       1?       
+   5 Cheng Yen_Yu                    7D TW XXXX    2    4   10       27+      25+       6?        |20898834
+   6 Ha Quynh_anh                    6D VN XXXX    2    4   10       21+      24+       5?        |20474421
+   7 Chan Nai-San                    6D HK  WCh    2    3   10       44+      20+       9?        |14349742
+   8 Czernecki Cezary                5D PL Bial    2    3   10       40+      30+      12?        |14813139
+   9 Fu Yu                           8D CN XXXX    2    3   10       45+      18+       7?        |20874832
+  10 Ka Hyo                          7D JP XXXX    2    3   10       43+      19+      11?       
+  11 Antonjuk Savva                  4D AR  BAi    2    3    9       42+      29+      10?        |17449641
+  12 Wu Qi-you                       7D CA XXXX    2    3    9       41+      31+       8?        |18433239
+  13 Kralik Ondrej                   4D SK  GKK    2    2   11       46+      32+      14?        |16350279
+  14 Paatero Lauri                   4D FI  HGK    1    5    8       33+       1-      13?        |10362649
+  15 Burzo Cornel                    6D RO UNRO    1    4   10       34+       4-      16?        |10325249
+  16 Jevtic Nikola                   3D RS KGRa    1    4   10       36+       2-      15?        |10374089
+  17 Teng Justin                     6D US XXXX    1    4   10       35+       3-      18?        |16537532
+  18 Podpera Lukas                   7D CZ APWS    1    4    9       37+       9-      17?        |13201914
+  19 Sam In-Hang                     6D MO XXXX    1    4    9       38+      10-      20?        |15013834
+  20 Ben-David Reem                  5D IL  TAv    1    4    8       39+       7-      19?        |14825580
+  21 Contreras Jose                  2D CO XXXX    1    3   11        6-      40+      23?        |16333075
+  22 Poltronieri Bruno               4D UK Camb    1    3   10        2-      46+      27?        |16086059
+  23 Zeijst Rob_van                  7D NL Amst    1    3   10        4-      41+      21?        |10337382
+  24 Bogatskyy Dmytro                5D UA Kyiv    1    3    9       48+       6-      25?        |10250867
+  25 Pilet Arnaud                    1D CH  Pei    1    3    9       50+       5-      24?        |15950308
+  26 Romagnoli Flavio                1D IT Bolo    1    3    9        3-      47+      28?        |19833605
+  27 Teissier Samuel                 5D FR 84Av    1    3    9        5-      48+      22?        |17533032
+  28 Varga Barnabas                  2D HU PaGo    1    3    9        1-      49+      26?        |12786752
+  29 Bofinger David                  3D AU XXXX    1    3    8       51+      11-      31?        |16462809
+  30 Teh Wei-Jie                     7D MY XXXX    1    3    8       52+       8-      32?        |19374564
+  31 Vandenbon Bram                  2D BE Gent    1    3    8       49+      12-      29?        |14233758
+  32 Ripoll Isaac                    3D ES Pedr    1    3    7       47+      13-      30?        |20549375
+  33 Haga Sverre                     1D NO Oslo    1    2    9       14-      51+      38?        |14213903
+  34 Hajdukovic Ziga                 2K SI Ljub    1    2    9       15-      42+      36?        |17913093
+  35 Neubauer Peter                  3D AT Hipp    1    2    9       17-      45+      37?        |16313308
+  36 Petrauskas Albertas             2D LT Viln    1    2    9       16-      44+      34?        |12749528
+  37 Vlahovic Karlo                  2D HR VGor    1    2    9       18-      43+      35?        |18637256
+  38 Sharshenov Nursaid              1D KG Bili    1    2    8       19-      50+      33?        |20337174
+  39 Oren Ulas                       6D TR  Ist    1    1   10       20-      52+      40?        |16298832
+  40 Tsarigradski Nikola             1D BG Sofi    0    4    7        8-      21-      39?        |19537903
+  41 Boldbaatar Mendsaikhan          5K MN XXXX    0    3    9       12-      23-      46?        |21037423
+  42 Goncalves Fernando              4K PT  Brg    0    3    8       11-      34-      44?        |16950758
+  43 Kristensen Lars                 2K DK  KGK    0    3    8       10-      37-      45?        |13998413
+  44 Montoya Oliver_Salvador_Mendie  3K MX XXXX    0    3    8        7-      36-      42?       
+  45 Rodrigues_da_Cruz Renan_Pablo   2D BR XXXX    0    3    8        9-      35-      43?        |20186342
+  46 Yabrudes Miguel-Angel           1D VE XXXX    0    3    8       13-      22-      41?        |10913452
+  47 Lee Byoung-Ju                   3K IE Dubl    0    2    8       32-      26-      50?        |19701814
+  48 Paiz-Castillo Hector            2D GT  Gua    0    2    8       24-      27-      49?        |12737087
+  49 Pal Supravat                    1K IN Khaj    0    2    8       31-      28-      48?        |14033250
+  50 Divissin Sergey                 1D KZ 10Pt    0    2    7       25-      38-      47?        |16274423
+  51 Sun Quan                        2D NZ XXXX    0    2    7       29-      33-      52?       
+  52 Silfver Anton                   3D SE Link    0    2    6       30-      39-      51?        |15933236

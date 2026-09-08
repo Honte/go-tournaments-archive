@@ -1,7 +1,76 @@
 website: https://www.wagc.or.kr/us/
 name: 46th World Amateur Go Championship
-location: Mungyeong
-country: KR
+notes: Ongoing edition (there will be 8 rounds)
 announcement:
-  pl: Następna edycja 8-11 września w Mungyeong w Korei
-  en: Upcoming edition 8th-11th September in Mungyeong KR
+  pl: "Wydarzenie w trakcie: 8-11 września w Mungyeong w Korei Południowej"
+  en: "Ongoing Event: September 8–11 in Mungyeong, South Korea"
+top:
+  -
+  -
+  -
+stages:
+  - type: tournament
+    file: wagc2026.txt
+    time: 60min + 3x30s japanese
+    komi: 6.5
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: true
+    games:
+      - 1-28 1:B+R round:1 sgf:2026/1-YuzeXing-BarnabasVarga.sgf
+      - 5-25 5:B+R round:2 sgf:2026/2-YenYuCheng-ArnaudPilet.sgf
+      - 5-27 5:B+? round:1 sgf:2026/1-YenYuCheng-SamuelTeissier.sgf
+      - 6-24 6:B+2.5 round:2 sgf:2026/2-QuynhanhHa-DmytroBogatskyy.sgf
+      - 7-20 7:B+R round:2 sgf:2026/2-NaiSanChan-ReemBenDavid.sgf
+      - 9-18 9:B+R round:2 sgf:2026/2-YuFu-LukasPodpera.sgf
+      - 9-45 9:B+R round:1 sgf:2026/1-YuFu-RenanPabloRodriguesdaCruz.sgf
+      - 11-29 11:B+14.5 round:2 sgf:2026/2-SavvaAntonjuk-DavidBofinger.sgf
+      - 12-31 12:B+R round:2 sgf:2026/2-QiyouWu-BramVandenbon.sgf
+      - 12-41 12:B+R round:1 sgf:2026/1-QiyouWu-MendsaikhanBoldbaatar.sgf
+      - 13-46 13:B+R round:1 sgf:2026/1-OndrejKralik-MiguelAngelYabrudes.sgf
+      - 14-1 1:W+R round:2 sgf:2026/2-LauriPaatero-YuzeXing.sgf
+      - 15-4 4:W+R round:2 sgf:2026/2-CornelBurzo-HyeonseokKim.sgf
+      - 15-34 15:B+R round:1 sgf:2026/1-CornelBurzo-ZigaHajdukovic.sgf
+      - 16-2 2:W+R round:2 sgf:2026/2-NikolaJevtic-YiHanChen.sgf
+      - 16-36 16:B+9.5 round:1 sgf:2026/1-NikolaJevtic-AlbertasPetrauskas.sgf
+      - 17-3 3:W+R round:2 sgf:2026/2-JustinTeng-WichrichKaruehawanit.sgf
+      - 19-10 10:W+R round:2 sgf:2026/2-InHangSam-HyoKa.sgf
+      - 21-6 6:W+R round:1 sgf:2026/1-JoseContreras-QuynhanhHa.sgf
+      - 22-2 2:W+18.5 round:1 sgf:2026/1-BrunoPoltronieri-YiHanChen.sgf
+      - 23-4 4:W+R round:1 sgf:2026/1-RobvanZeijst-HyeonseokKim.sgf
+      - 24-48 24:B+R round:1 sgf:2026/1-DmytroBogatskyy-HectorPaizCastillo.sgf
+      - 26-3 3:W+55.5 round:1 sgf:2026/1-FlavioRomagnoli-WichrichKaruehawanit.sgf
+      - 26-47 26:B+R round:2 sgf:2026/2-FlavioRomagnoli-ByoungJuLee.sgf
+      - 28-49 28:B+R round:2 sgf:2026/2-BarnabasVarga-SupravatPal.sgf
+      - 29-51 29:B+21.5 round:1 sgf:2026/1-DavidBofinger-QuanSun.sgf
+      - 30-8 8:W+8.5 round:2 sgf:2026/2-WeiJieTeh-CezaryCzernecki.sgf
+      - 32-13 13:W+0.5 round:2 sgf:2026/2-IsaacRipoll-OndrejKralik.sgf
+      - 33-51 33:B+R round:2 sgf:2026/2-SverreHaga-QuanSun.sgf
+      - 34-42 34:B+R round:2 sgf:2026/2-ZigaHajdukovic-FernandoGoncalves.sgf
+      - 35-17 17:W+R round:1 sgf:2026/1-PeterNeubauer-JustinTeng.sgf
+      - 35-45 35:B+R round:2 sgf:2026/2-PeterNeubauer-RenanPabloRodriguesdaCruz.sgf
+      - 36-44 36:B+R round:2 sgf:2026/2-AlbertasPetrauskas-OliverSalvadorMendietaMontoya.sgf
+      - 37-18 18:W+15.5 round:1 sgf:2026/1-KarloVlahovic-LukasPodpera.sgf
+      - 37-43 37:B+R round:2 sgf:2026/2-KarloVlahovic-LarsKristensen.sgf
+      - 38-19 19:W+R round:1 sgf:2026/1-NursaidSharshenov-InHangSam.sgf
+      - 38-50 38:B+R round:2 sgf:2026/2-NursaidSharshenov-SergeyDivissin.sgf
+      - 39-20 20:W+6.5 round:1 sgf:2026/1-UlasOren-ReemBenDavid.sgf
+      - 39-52 39:B+R round:2 sgf:2026/2-UlasOren-AntonSilfver.sgf
+      - 40-8 8:W+R round:1 sgf:2026/1-NikolaTsarigradskiNikola-CezaryCzernecki.sgf
+      - 40-21 21:W+R round:2 sgf:2026/2-NikolaTsarigradski-JoseContreras.sgf
+      - 41-23 23:W+R round:2 sgf:2026/2-MendsaikhanBoldbaatar-RobvanZeijst.sgf
+      - 42-11 11:W+R round:1 sgf:2026/1-FernandoGoncalves-SavvaAntonjuk.sgf
+      - 43-10 10:W+R round:1 sgf:2026/1-LarsKristensen-HyoKa.sgf
+      - 44-7 7:W+R round:1 sgf:2026/1-OliverSalvadorMendietaMontoya-NaiSanChan.sgf
+      - 46-22 22:W+R round:2 sgf:2026/2-MiguelAngelYabrudes-BrunoPoltronieri.sgf
+      - 47-32 32:W+R round:1 sgf:2026/1-ByoungJuLee-IsaacRipoll.sgf
+      - 48-27 27:W+R round:2 sgf:2026/2-HectorPaizCastillo-SamuelTeissier.sgf
+      - 49-31 31:W+R round:1 sgf:2026/1-SupravatPal-BramVandenbon.sgf
+      - 50-25 25:W+R round:1 sgf:2026/1-SergeyDivissin-ArnaudPilet.sgf
+      - 52-30 30:W+R round:1 sgf:2026/1-AntonSilfver-WeiJieTeh.sgf
