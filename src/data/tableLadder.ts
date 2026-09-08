@@ -79,7 +79,6 @@ export function createLadderTable({
         opponent: loser.id,
         index: map[loser.id]?.index ?? 0,
         won: true,
-        drawn: false,
         result,
         game,
       };
@@ -88,7 +87,6 @@ export function createLadderTable({
         opponent: winner.id,
         index: map[winner.id]?.index ?? 0,
         won: false,
-        drawn: false,
         result,
         game,
       };
@@ -132,7 +130,6 @@ export function createLadderTable({
       opponent: loser.id,
       index: map[loser.id].index,
       won: true,
-      drawn: false,
       result,
       game,
     } as IndexedTablePlayerGame);
@@ -141,7 +138,6 @@ export function createLadderTable({
       opponent: winner.id,
       index: map[winner.id].index,
       won: false,
-      drawn: false,
       result,
       game,
     } as IndexedTablePlayerGame);

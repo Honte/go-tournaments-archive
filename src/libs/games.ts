@@ -6,15 +6,28 @@ export function isDrawResult(result?: string | null): boolean {
   return normalized === '0' || normalized === 'draw' || normalized === 'jigo' || normalized === '=';
 }
 
-export function getGameStats(games: { won: boolean; drawn: boolean }[]) {
-  const won = games.reduce((total, game) => total + Number(game.won), 0);
-  const drawn = games.reduce((total, game) => total + Number(game.drawn), 0);
-  const total = games.length;
+export function getGameStats(games: { won: boolean; drawn?: boolean; unresolved?: boolean }[]) {
+  let won = 0;
+  let drawn = 0;
+  let unresolved = 0;
+
+  for (const game of games) {
+    if (game.won) {
+      won++;
+    } else if (game.drawn) {
+      drawn++;
+    } else if (game.unresolved) {
+      unresolved++;
+    }
+  }
+
+  const total = games.length - unresolved;
 
   return {
     games: total,
     won,
     drawn,
+    unresolved,
     lost: total - won - drawn,
     wonPercent: won / total,
   };

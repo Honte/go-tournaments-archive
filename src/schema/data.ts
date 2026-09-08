@@ -167,7 +167,8 @@ export type TablePlayerGame = {
   color?: 'white' | 'black';
   opponent: string;
   won: boolean;
-  drawn: boolean;
+  drawn?: boolean;
+  unresolved?: boolean;
   result: string;
   game: string;
 };
@@ -191,7 +192,8 @@ export type Game = {
   id: string;
   stage: number;
   players: [black: GamePlayer, white: GamePlayer];
-  draw: boolean;
+  draw?: boolean;
+  unresolved?: boolean;
   result: string;
   props: GameProps;
   path?: string;
@@ -226,7 +228,8 @@ export type PlayerGame = {
   rank?: string; // opponent rank
   color?: 'white' | 'black'; // player color
   won: boolean;
-  drawn: boolean;
+  drawn?: boolean;
+  unresolved?: boolean;
   result: string;
   props?: GameProps;
 };
@@ -244,6 +247,7 @@ export type PlayerSummary = {
   totalGames: number;
   totalWon: number;
   totalDrawn: number;
+  totalUnresolved: number;
   totalAttended: number;
   totalSgfs: number;
   score: number;
@@ -274,6 +278,7 @@ export type CountryResult = {
   bestPlace: number;
   totalWon: number;
   totalDrawn: number;
+  totalUnresolved: number;
   totalGames: number;
   results: (PlayerResult & { id: string })[];
 };
@@ -287,6 +292,7 @@ export type CountrySummary = {
   totalGames: number;
   totalWon: number;
   totalDrawn: number;
+  totalUnresolved: number;
 };
 
 export type CountryStats = CountrySummary & {
@@ -320,6 +326,7 @@ export type Stats = {
 export type StatsSummary = {
   tournaments: number;
   playedGames: number;
+  unresolved: number;
   sgfs: number;
   resign: number;
   timeout: number;
@@ -349,6 +356,7 @@ export type TableStats = {
   games: number;
   won: number;
   drawn: number;
+  unresolved: number;
   lost: number;
   wonPercent: number;
 };

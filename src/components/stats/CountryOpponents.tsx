@@ -23,6 +23,7 @@ type CountryOpponentRow = {
   games: number;
   won: number;
   drawn: number;
+  unresolved: number;
   lost: number;
   wonPercent: number;
 };
@@ -49,13 +50,15 @@ export function CountryOpponents({ event, country, translations }: CountryOppone
               games: 0,
               won: 0,
               drawn: 0,
+              unresolved: 0,
               lost: 0,
               wonPercent: 0,
             });
 
-            target.games++;
+            target.games += Number(!game.unresolved);
+            target.unresolved += Number(Boolean(game.unresolved));
             target.won += Number(game.won);
-            target.drawn += Number(game.drawn);
+            target.drawn += Number(Boolean(game.drawn));
           }
         }
       }
@@ -71,6 +74,7 @@ export function CountryOpponents({ event, country, translations }: CountryOppone
     return list.sort((a, b) => a.name.localeCompare(b.name));
   }, [country, t]);
   const hasDraws = data.some((opponent) => opponent.drawn > 0);
+  const hasUnresolved = data.some((row) => row.unresolved > 0);
 
   const columns = useMemo<StatsColumnDef<CountryOpponentRow>[]>(
     () =>
@@ -105,6 +109,10 @@ export function CountryOpponents({ event, country, translations }: CountryOppone
             accessorKey: 'lost',
             header: t('table.lost'),
           },
+          hasUnresolved && {
+            accessorKey: 'unresolved',
+            header: t('table.unresolved'),
+          },
           {
             accessorKey: 'wonPercent',
             header: t('table.wonPercent'),
@@ -112,7 +120,7 @@ export function CountryOpponents({ event, country, translations }: CountryOppone
           },
         ] as StatsColumnDef<CountryOpponentRow>[]
       ).filter(Boolean),
-    [translations, t, event, hasDraws]
+    [translations, t, event, hasDraws, hasUnresolved]
   );
 
   return (

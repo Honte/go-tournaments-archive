@@ -144,6 +144,7 @@
     "game": "Game %{0}",
     "won": "Games won",
     "drawn": "Games drawn",
+    "unresolved": "Unresolved",
     "lost": "Games lost",
     "wonPercent": "% won",
     "gameColor": "Color",

@@ -69,7 +69,7 @@ export function buildTournamentRows(
           bronze: podium(2),
           players: players.size,
           stages: relevantStages.length,
-          games: games.length,
+          games: games.filter((game) => !game.unresolved).length,
           sgfs: games.filter((game) => game.props.sgf).length,
         },
       ];

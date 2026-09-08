@@ -23,6 +23,7 @@ type OpponentRow = {
   games: number;
   won: number;
   drawn: number;
+  unresolved: number;
   firstName: string;
   lastName: string;
   lost: number;
@@ -34,7 +35,10 @@ export function Opponents({ event, translations, player }: OpponentsProps) {
   const t = getTranslator(translations);
 
   const data = useMemo(() => {
-    const stats: Record<string, { won: number; drawn: number; games: number; countries: Set<string | undefined> }> = {};
+    const stats: Record<
+      string,
+      { won: number; drawn: number; unresolved: number; games: number; countries: Set<string | undefined> }
+    > = {};
 
     for (const event of player.results) {
       for (const stage of event.stages) {
@@ -47,19 +51,21 @@ export function Opponents({ event, translations, player }: OpponentsProps) {
             games: 0,
             won: 0,
             drawn: 0,
+            unresolved: 0,
             countries: new Set(),
           });
 
-          opponent.games += 1;
+          opponent.games += Number(!game.unresolved);
+          opponent.unresolved += Number(Boolean(game.unresolved));
           opponent.won += Number(game.won);
-          opponent.drawn += Number(game.drawn);
+          opponent.drawn += Number(Boolean(game.drawn));
           opponent.countries.add(game.country);
         }
       }
     }
 
     return Object.entries(stats)
-      .map<OpponentRow>(([id, { games, won, drawn, countries }]) => {
+      .map<OpponentRow>(([id, { games, won, drawn, unresolved, countries }]) => {
         const name = player.opponents[id];
         const [firstName, ...rest] = name.split(' ');
         const lastName = rest.join(' ') || '';
@@ -76,6 +82,7 @@ export function Opponents({ event, translations, player }: OpponentsProps) {
           games,
           won,
           drawn,
+          unresolved,
           lost,
           wonPercent,
         };
@@ -83,6 +90,7 @@ export function Opponents({ event, translations, player }: OpponentsProps) {
       .sort((a, b) => a.lastName.localeCompare(b.lastName));
   }, [player]);
   const hasDraws = data.some((opponent) => opponent.drawn > 0);
+  const hasUnresolved = data.some((row) => row.unresolved > 0);
 
   const columns = useMemo<StatsColumnDef<OpponentRow>[]>(
     () =>
@@ -116,6 +124,10 @@ export function Opponents({ event, translations, player }: OpponentsProps) {
             accessorKey: 'lost',
             header: t('table.lost'),
           },
+          hasUnresolved && {
+            accessorKey: 'unresolved',
+            header: t('table.unresolved'),
+          },
           {
             accessorKey: 'wonPercent',
             header: t('table.wonPercent'),
@@ -123,7 +135,7 @@ export function Opponents({ event, translations, player }: OpponentsProps) {
           },
         ] as StatsColumnDef<OpponentRow>[]
       ).filter(Boolean),
-    [translations, t, event, hasDraws]
+    [translations, t, event, hasDraws, hasUnresolved]
   );
 
   return (

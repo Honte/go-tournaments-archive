@@ -32,6 +32,7 @@ type EventRow = {
   country?: string;
   won: number;
   drawn: number;
+  unresolved: number;
   lost: number;
   wonPercent: number;
 };
@@ -73,6 +74,7 @@ export function PlayerEvents({
   const hasMultipleNames = data.some((row) => row.name !== player.name);
   const hasMultipleCountries = new Set(data.map((row) => row.country)).size > 1;
   const hasDraws = data.some((row) => row.drawn > 0);
+  const hasUnresolved = data.some((row) => row.unresolved > 0);
 
   const columns = useMemo<StatsColumnDef<EventRow>[]>(
     () =>
@@ -132,6 +134,10 @@ export function PlayerEvents({
             accessorKey: 'lost',
             header: t('table.lost'),
           },
+          hasUnresolved && {
+            accessorKey: 'unresolved',
+            header: t('table.unresolved'),
+          },
           {
             accessorKey: 'wonPercent',
             header: t('table.wonPercent'),
@@ -139,7 +145,7 @@ export function PlayerEvents({
           },
         ] as StatsColumnDef<EventRow>[]
       ).filter(Boolean),
-    [translations, hasMultipleNames, hasMultipleCountries, hasDraws, event, t, showCategories]
+    [translations, hasMultipleNames, hasMultipleCountries, hasDraws, hasUnresolved, event, t, showCategories]
   );
 
   return (

@@ -24,6 +24,7 @@ export function filterPlayerStatsByCategory(player: PlayerStats, category: strin
   let totalGames = 0;
   let totalWon = 0;
   let totalDrawn = 0;
+  let totalUnresolved = 0;
   let totalSgfs = 0;
   let bestPlace = Infinity;
 
@@ -43,6 +44,7 @@ export function filterPlayerStatsByCategory(player: PlayerStats, category: strin
       totalGames += outcomes.games;
       totalWon += outcomes.won;
       totalDrawn += outcomes.drawn;
+      totalUnresolved += outcomes.unresolved;
       totalSgfs += stage.games.filter((game) => game.props?.sgf).length;
 
       for (const game of stage.games) {
@@ -89,6 +91,7 @@ export function filterPlayerStatsByCategory(player: PlayerStats, category: strin
     totalGames,
     totalWon,
     totalDrawn,
+    totalUnresolved,
     totalAttended: results.length,
     totalSgfs,
     score: gold.length * 10_000 + silver.length * 100 + bronze.length,

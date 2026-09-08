@@ -37,6 +37,7 @@ export function calculateStats(
   }
 
   let playedGames = 0;
+  let unresolved = 0;
   let color = 0;
   let black = 0;
   let white = 0;
@@ -73,7 +74,8 @@ export function calculateStats(
               country: players[game.opponent]?.country,
               rank: players[game.opponent]?.rank,
               won: game.won,
-              drawn: game.drawn,
+              ...(game.drawn && { drawn: true }),
+              ...(game.unresolved && { unresolved: true }),
               result: game.result,
               props: globalGame?.props,
               color: game.color,
@@ -166,9 +168,13 @@ export function calculateStats(
         continue;
       }
 
-      playedGames++;
+      if (game.unresolved) {
+        unresolved++;
+      } else {
+        playedGames++;
+      }
 
-      if (game.players[0].color) {
+      if (!game.unresolved && game.players[0].color) {
         color++;
       }
 
@@ -223,6 +229,7 @@ export function calculateStats(
         player.totalGames += outcomes.games;
         player.totalWon += outcomes.won;
         player.totalDrawn += outcomes.drawn;
+        player.totalUnresolved += outcomes.unresolved;
       }
     }
   }
@@ -247,11 +254,13 @@ export function calculateStats(
           yearStats.totalGames += outcomes.games;
           yearStats.totalWon += outcomes.won;
           yearStats.totalDrawn += outcomes.drawn;
+          yearStats.totalUnresolved += outcomes.unresolved;
         }
       }
 
       stats.totalWon += yearStats.totalWon;
       stats.totalDrawn += yearStats.totalDrawn;
+      stats.totalUnresolved += yearStats.totalUnresolved;
       stats.totalGames += yearStats.totalGames;
       stats.bestPlace = Math.min(stats.bestPlace, yearStats.bestPlace);
     }
@@ -262,6 +271,7 @@ export function calculateStats(
       tournaments: tournaments.length,
       players: Object.keys(players).length,
       playedGames,
+      unresolved,
       sgfs,
       resign,
       timeout,
@@ -305,6 +315,7 @@ export function calculateStats(
       totalGames: 0,
       totalWon: 0,
       totalDrawn: 0,
+      totalUnresolved: 0,
       totalAttended: 0,
       totalSgfs: 0,
       opponents: {},
@@ -371,6 +382,7 @@ export function calculateStats(
       totalGames: 0,
       totalWon: 0,
       totalDrawn: 0,
+      totalUnresolved: 0,
       bestPlace: Infinity,
       score: 0,
       years: {},
@@ -384,6 +396,7 @@ export function calculateStats(
       totalGames: 0,
       totalWon: 0,
       totalDrawn: 0,
+      totalUnresolved: 0,
       results: [],
     });
   }

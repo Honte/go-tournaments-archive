@@ -61,6 +61,10 @@ export function Achievements({ event, player, translations }: AchievementsProps)
     details[t('table.drawn')] = player.totalDrawn;
   }
 
+  if (player.totalUnresolved > 0) {
+    details[t('table.unresolved')] = player.totalUnresolved;
+  }
+
   if (player.egd) {
     details[t('details.egd')] = (
       <ExternalLink href={getEgdProfileLink(player.egd)} title={t('details.goToEGD')}>

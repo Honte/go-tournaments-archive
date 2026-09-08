@@ -176,6 +176,8 @@ directly, for example `.\node_modules\.bin\tsc.cmd --noEmit` on Windows.
 - Test observable results and invariants rather than implementation details. Import the responsible module directly
   for focused tests and use the public entrypoint for integration tests. Cover interactions between modules without
   duplicating their full test suites.
+- Prefer inline, in-memory test data over temporary files. Separate file loading from data processing so processing
+  can be tested directly; use filesystem fixtures only when filesystem behavior itself needs coverage.
 - Keep simple test data local. Extract shared fixtures only when multiple suites reuse substantial setup; a few
   repeated constants do not need an abstraction. Preserve existing coverage during structural refactors and add
   regression checks for changed behavior.

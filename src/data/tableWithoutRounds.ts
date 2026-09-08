@@ -57,7 +57,6 @@ export function createTableWithoutRounds({
       color: winner.color,
       opponent: loser.id,
       won: true,
-      drawn: false,
       result,
       game: id,
     });
@@ -72,7 +71,6 @@ export function createTableWithoutRounds({
       color: loser.color,
       opponent: winner.id,
       won: false,
-      drawn: false,
       result,
       game: id,
     });
