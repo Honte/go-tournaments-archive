@@ -30,10 +30,16 @@ runs:
       if: ${{ github.event_name == 'push' }}
       env:
         BASE: ${{ github.event.before }}
+        NEW_BRANCH: ${{ github.event.created }}
         CONFIG: ${{ inputs.config }}
       run: |
-        git fetch --no-tags --depth=1 origin "$BASE"
-        npm run deploy:check -- "$CONFIG" --base "$BASE"
+        if [ "$NEW_BRANCH" = "true" ]; then
+          echo "New branch: deploying $CONFIG without a previous revision."
+          echo "deploy_${CONFIG}=true" >> "$GITHUB_OUTPUT"
+        else
+          git fetch --no-tags --depth=1 origin "$BASE"
+          npm run deploy:check -- "$CONFIG" --base "$BASE"
+        fi
       shell: bash
     - run: npm run build
       if: ${{ github.event_name == 'workflow_dispatch' || steps.check.outputs[format('deploy_{0}', inputs.config)] == 'true' }}

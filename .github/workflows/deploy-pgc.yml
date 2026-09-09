@@ -1,4 +1,4 @@
-name: Deploy pgc
+name: Deploy PGC
 on:
   push:
     branches:
