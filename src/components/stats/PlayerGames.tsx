@@ -28,7 +28,8 @@ type GameRow = {
   color?: 'white' | 'black';
   rank?: string;
   won: boolean;
-  drawn: boolean;
+  drawn?: boolean;
+  unresolved?: boolean;
   opponent: Omit<PlayerDetails, 'country'> & { country?: string };
   opponentFirstName: string;
   opponentLastName: string;
@@ -66,6 +67,7 @@ export function PlayerGames({ event, player, translations }: PlayerGamesProps) {
             rank: event.rank,
             won: game.won,
             drawn: game.drawn,
+            unresolved: game.unresolved,
             opponent,
             opponentFirstName,
             opponentLastName,
@@ -120,7 +122,7 @@ export function PlayerGames({ event, player, translations }: PlayerGamesProps) {
             header: t('table.gameWon'),
             cell: (info) => (
               <span className={info.cell.getValue() ? 'font-semibold' : ''}>
-                {info.cell.getValue() ? '✓' : info.row.original.drawn ? '=' : 'X'}
+                {info.row.original.unresolved ? '?' : info.cell.getValue() ? '✓' : info.row.original.drawn ? '=' : 'X'}
               </span>
             ),
           },

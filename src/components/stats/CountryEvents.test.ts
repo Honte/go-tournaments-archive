@@ -99,6 +99,7 @@ function createCountry(results: CountryStats['years'][number]['results']): Count
     totalGames: 0,
     totalWon: 0,
     totalDrawn: 0,
+    totalUnresolved: 0,
     years: {
       2025: {
         year: 2025,
@@ -106,6 +107,7 @@ function createCountry(results: CountryStats['years'][number]['results']): Count
         totalGames: 0,
         totalWon: 0,
         totalDrawn: 0,
+        totalUnresolved: 0,
         results,
       },
     },
@@ -135,7 +137,6 @@ function createGame(won: boolean): PlayerGame {
   return {
     id: 'opponent',
     won,
-    drawn: false,
     result: won ? 'B+R' : 'W+R',
   };
 }

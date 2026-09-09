@@ -31,6 +31,7 @@ type CountryEventRow = {
   games: number;
   won: number;
   drawn: number;
+  unresolved: number;
   lost: number;
   wonPercent: number;
 };
@@ -119,6 +120,10 @@ export function CountryEvents({
           {
             accessorKey: 'lost',
             header: t('table.lost'),
+          },
+          data.some((row) => row.unresolved > 0) && {
+            accessorKey: 'unresolved',
+            header: t('table.unresolved'),
           },
           {
             accessorKey: 'wonPercent',

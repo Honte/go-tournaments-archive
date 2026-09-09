@@ -1,5 +1,5 @@
 const PROPERTY_REGEX = /(?<key>[A-Z]+)\[(?<value>.*)]/;
-const GAME_REGEX = /(?<opponent>\d+)(?<result>[+=-])(?<modifier>!)?(\/(?<color>[wb])(?<handicap>\d)?)?/;
+const GAME_REGEX = /(?<opponent>\d+)(?<result>[?+=-])(?<modifier>!)?(\/(?<color>[wb])(?<handicap>\d)?)?/;
 const FIRST_GAME_COLUMN = 6; // after place, surname, name, rank, country, club
 
 export type H9Tournament = {
@@ -33,7 +33,7 @@ export type H9Game = {
   opponent: number;
   round: number;
   modifier?: '!';
-  result: '+' | '-' | '=';
+  result: '+' | '-' | '=' | '?';
   color?: 'white' | 'black';
   handicap?: number;
 };

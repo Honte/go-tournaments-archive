@@ -56,6 +56,10 @@ export function CountryAchievements({ event, country, translations }: CountryAch
     details[t('table.drawn')] = country.totalDrawn;
   }
 
+  if (country.totalUnresolved > 0) {
+    details[t('table.unresolved')] = country.totalUnresolved;
+  }
+
   return (
     <div className="my-1 flex flex-col">
       <H2>{t('stats.achievements')}</H2>

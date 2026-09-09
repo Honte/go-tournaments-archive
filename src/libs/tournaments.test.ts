@@ -35,7 +35,6 @@ function game(id: string, stage: number, a: string, b: string, sgf?: string): Ga
       { id: b, won: false },
     ],
     result: 'B+R',
-    draw: false,
     props: { sgf },
   };
 }

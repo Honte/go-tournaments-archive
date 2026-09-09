@@ -1,5 +1,4 @@
 import attachHighlighter, { GoResultsHighlighter } from 'go-results-highlighter';
-import 'go-results-highlighter/dist/browser.css';
 import { HTMLProps, useCallback, useRef } from 'react';
 
 export type HighlightedTableProps = HTMLProps<HTMLTableElement> & {

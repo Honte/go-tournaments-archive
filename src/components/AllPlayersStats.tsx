@@ -64,6 +64,7 @@ function AllPlayersStatsContent({ event, players, translations }: AllPlayersStat
             totalGames,
             totalWon,
             totalDrawn,
+            totalUnresolved,
             bestPlace,
             country: countries,
             totalSgfs,
@@ -89,6 +90,7 @@ function AllPlayersStatsContent({ event, players, translations }: AllPlayersStat
             games: totalGames,
             won: totalWon,
             drawn: totalDrawn,
+            unresolved: totalUnresolved,
             lost: totalGames - totalWon - totalDrawn,
             wonPercent: totalWon / totalGames,
             sgfs: totalSgfs,
@@ -100,6 +102,7 @@ function AllPlayersStatsContent({ event, players, translations }: AllPlayersStat
 
   const hasSgfs = data.some((p) => p.sgfs > 0);
   const hasDraws = data.some((p) => p.drawn > 0);
+  const hasUnresolved = data.some((row) => row.unresolved > 0);
 
   const columns = useMemo<StatsColumnDef<PlayerRow>[]>(
     () =>
@@ -171,6 +174,10 @@ function AllPlayersStatsContent({ event, players, translations }: AllPlayersStat
             accessorKey: 'lost',
             header: t('table.lost'),
           },
+          hasUnresolved && {
+            accessorKey: 'unresolved',
+            header: t('table.unresolved'),
+          },
           hasSgfs && {
             accessorKey: 'sgfs',
             header: t('table.sgfs'),
@@ -182,7 +189,7 @@ function AllPlayersStatsContent({ event, players, translations }: AllPlayersStat
           },
         ] as StatsColumnDef<PlayerRow>[]
       ).filter(Boolean),
-    [t, translations, hasSgfs, hasDraws, event, formatter]
+    [t, translations, hasSgfs, hasDraws, hasUnresolved, event, formatter]
   );
 
   return <StatsTable columns={columns} data={data} />;

@@ -6,6 +6,7 @@ import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getFormatter } from '@/i18n/formatter';
 import { getTranslator } from '@/i18n/translator';
+import { getGameStats } from '@/libs/games';
 import { sortTableStats } from '@/libs/sort';
 import { StatsTable } from '@/components/table/StatsTable';
 import type { StatsColumnDef } from '@/components/table/statsTableConfig';
@@ -40,6 +41,7 @@ export function CountryPlayers({ event, country, translations }: CountryPlayerPr
           games: 0,
           won: 0,
           drawn: 0,
+          unresolved: 0,
           lost: 0,
           wonPercent: 0,
           attended: 0,
@@ -62,9 +64,11 @@ export function CountryPlayers({ event, country, translations }: CountryPlayerPr
         }
 
         for (const stage of result.stages) {
-          player.games += stage.games.length;
-          player.won += stage.games.reduce((total, game) => total + Number(game.won), 0);
-          player.drawn += stage.games.reduce((total, game) => total + Number(game.drawn), 0);
+          const outcomes = getGameStats(stage.games);
+          player.games += outcomes.games;
+          player.won += outcomes.won;
+          player.drawn += outcomes.drawn;
+          player.unresolved += outcomes.unresolved;
         }
       }
     }
@@ -79,6 +83,7 @@ export function CountryPlayers({ event, country, translations }: CountryPlayerPr
     return list.sort(sortTableStats);
   }, [country]);
   const hasDraws = data.some((player) => player.drawn > 0);
+  const hasUnresolved = data.some((row) => row.unresolved > 0);
 
   const columns = useMemo<StatsColumnDef<CountryPlayerRow>[]>(
     () =>
@@ -135,6 +140,10 @@ export function CountryPlayers({ event, country, translations }: CountryPlayerPr
             accessorKey: 'lost',
             header: t('table.lost'),
           },
+          hasUnresolved && {
+            accessorKey: 'unresolved',
+            header: t('table.unresolved'),
+          },
           {
             accessorKey: 'wonPercent',
             header: t('table.wonPercent'),
@@ -142,7 +151,7 @@ export function CountryPlayers({ event, country, translations }: CountryPlayerPr
           },
         ] as StatsColumnDef<CountryPlayerRow>[]
       ).filter(Boolean),
-    [translations, t, event, hasDraws, formatter]
+    [translations, t, event, hasDraws, hasUnresolved, formatter]
   );
 
   return (

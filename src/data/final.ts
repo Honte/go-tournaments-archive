@@ -53,7 +53,7 @@ export function createFinalTable({
     place: index + 1,
   }));
 
-  function addGame(player: GamePlayer, opponent: string, game: string, drawn: boolean) {
+  function addGame(player: GamePlayer, opponent: string, game: string, drawn?: boolean) {
     players[player.id] ||= {
       id: player.id,
       place: 0,

@@ -48,7 +48,7 @@ function AllCountriesStatsContent({ event, countries, translations }: AllCountri
   const data = useMemo(
     () =>
       Object.values(countries)
-        .map<CountryRow>(({ code, medals, years, totalGames, totalWon, totalDrawn, bestPlace }) => {
+        .map<CountryRow>(({ code, medals, years, totalGames, totalWon, totalDrawn, totalUnresolved, bestPlace }) => {
           const [gold, silver, bronze] = medals;
 
           const players = new Set<string>();
@@ -70,6 +70,7 @@ function AllCountriesStatsContent({ event, countries, translations }: AllCountri
             games: totalGames,
             won: totalWon,
             drawn: totalDrawn,
+            unresolved: totalUnresolved,
             lost: totalGames - totalWon - totalDrawn,
             wonPercent: totalWon / totalGames,
           };
@@ -78,6 +79,7 @@ function AllCountriesStatsContent({ event, countries, translations }: AllCountri
     [countries, t]
   );
   const hasDraws = data.some((country) => country.drawn > 0);
+  const hasUnresolved = data.some((row) => row.unresolved > 0);
 
   const columns = useMemo<StatsColumnDef<CountryRow>[]>(
     () =>
@@ -141,6 +143,10 @@ function AllCountriesStatsContent({ event, countries, translations }: AllCountri
             accessorKey: 'lost',
             header: t('table.lost'),
           },
+          hasUnresolved && {
+            accessorKey: 'unresolved',
+            header: t('table.unresolved'),
+          },
           {
             accessorKey: 'wonPercent',
             header: t('table.wonPercent'),
@@ -148,7 +154,7 @@ function AllCountriesStatsContent({ event, countries, translations }: AllCountri
           },
         ] as StatsColumnDef<CountryRow>[]
       ).filter(Boolean),
-    [t, translations, event, hasDraws, formatter]
+    [t, translations, event, hasDraws, hasUnresolved, formatter]
   );
 
   return <StatsTable columns={columns} data={data} />;

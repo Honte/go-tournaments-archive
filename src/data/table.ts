@@ -108,7 +108,6 @@ export function createTable({
         opponent: loser.id,
         index: 0,
         won: true,
-        drawn: false,
         result,
         game,
       };
@@ -117,7 +116,6 @@ export function createTable({
         opponent: winner.id,
         index: 0,
         won: false,
-        drawn: false,
         result,
         game,
       };

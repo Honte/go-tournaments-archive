@@ -9,18 +9,18 @@ import { getRankValue } from '@/libs/rank';
 import { getGameId, parseGame } from '@/data/games';
 import type { ParseStageProps } from '@/data/stages';
 
-export async function loadH9Tournament({
-  event,
-  stage,
-  stageIndex,
-  playersMap,
-  playersHandler,
-  gamesMap,
-  tournamentDetails,
-}: Omit<ParseStageProps, 'stage'> & { stage: InputTournamentStage }): Promise<LeagueStage> {
+type H9TournamentProps = Omit<ParseStageProps, 'stage'> & { stage: InputTournamentStage };
+
+export async function loadH9Tournament(props: H9TournamentProps): Promise<LeagueStage> {
+  const content = await readFile(join('./events', props.event.id, 'data', props.stage.file), 'utf-8');
+
+  return parseH9Tournament(props, content);
+}
+
+export function parseH9Tournament(tournamentProps: H9TournamentProps, h9content: string): LeagueStage {
+  const { event, stage, stageIndex, playersMap, playersHandler, gamesMap, tournamentDetails } = tournamentProps;
   const {
     name,
-    file,
     breakers,
     columns,
     scoringColumns,
@@ -43,8 +43,7 @@ export async function loadH9Tournament({
     collapsed,
   } = stage;
 
-  const content = await readFile(join(`./events/${event.id}/data/`, file), 'utf-8');
-  const tournament = parseH9(content);
+  const tournament = parseH9(h9content);
   const table: TableResult[] = [];
   const processedGamesMap = new Map<string, Game>();
   const existingGamesMap = new Map<string, Game>();
@@ -147,7 +146,7 @@ export async function loadH9Tournament({
         current.won.push(opponentId);
       } else if (game.result === '-') {
         current.lost.push(opponentId);
-      } else {
+      } else if (game.result === '=') {
         current.drawn.push(opponentId);
       }
 
@@ -177,6 +176,7 @@ export async function loadH9Tournament({
             players: [isCurrentBlack ? playerA : playerB, isCurrentBlack ? playerB : playerA],
             result,
             draw: result === JIGO,
+            unresolved: result === '?',
             props: {},
           } satisfies Game;
         }
@@ -195,6 +195,7 @@ export async function loadH9Tournament({
         game: processed.id,
         won: game.result === '+',
         drawn: game.result === '=',
+        unresolved: processed.result === '?',
         opponent: opponentId,
         result: processed.result,
         index: opponent?.index ?? 0,
@@ -350,6 +351,8 @@ function getGameResult(result: H9Game['result'], color: H9Game['color']) {
       return color ? (color === 'black' ? 'W+' : 'B+') : '+';
     case '=':
       return JIGO;
+    case '?':
+      return '?';
   }
 }
 

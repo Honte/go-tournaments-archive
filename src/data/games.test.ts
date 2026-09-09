@@ -3,6 +3,12 @@ import { describe, it } from 'node:test';
 import { parseGame } from './games';
 
 describe('parseGame', () => {
+  it('marks completed games as resolved, including wins with unknown scores', () => {
+    for (const input of ['aa-bb jigo', 'aa-bb aa', 'aa-bb aa:B+?']) {
+      assert.equal(Object.hasOwn(parseGame(input, 'game-id', 0), 'unresolved'), false);
+    }
+  });
+
   it('parses case-insensitive jigo entries with properties', () => {
     const game = parseGame('aa-bb JiGo sgf:2025/game.sgf', 'game-id', 0);
 

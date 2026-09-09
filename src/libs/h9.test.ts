@@ -41,3 +41,23 @@ describe('parseH9 jigo', () => {
 function table(rows: string[]) {
   return ['; EV[Test]', ...rows].join('\n');
 }
+
+describe('parseH9 unresolved pairings', () => {
+  it('recognizes pending-only rounds, optional colors, and empty cells', () => {
+    const tournament = parseH9(
+      table(['1 Alpha Alice 1d PL Club 0 2? 2?/w ? - 0=', '2 Beta Bob 1d DE Club 0 1? 1?/b ? - 0='])
+    );
+    assert.deepEqual(
+      tournament.results.map((player) => player.scores),
+      [['0'], ['0']]
+    );
+    for (const player of tournament.results) {
+      assert.equal(player.games.length, 5);
+      assert.equal(player.games[0]?.result, '?');
+      assert.equal(player.games[1]?.round, 2);
+      assert.deepEqual(player.games.slice(2), [null, null, null]);
+    }
+    assert.equal(tournament.results[0].games[1]?.color, 'white');
+    assert.equal(tournament.results[1].games[1]?.color, 'black');
+  });
+});
