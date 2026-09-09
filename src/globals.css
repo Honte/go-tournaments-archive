@@ -30,7 +30,7 @@
   /* Result palette; row and game highlights derive from these colors. */
   --color-archive-win: #799b29;
   --color-archive-lose: #d34b43;
-  --color-archive-draw: var(--color-archive-shell);
+  --color-archive-draw: #d5bb20;
   --color-archive-unresolved: #8582b5;
 
   /* Neutral roles share the page, surface, and text palette. */
@@ -217,8 +217,7 @@ html {
 
 [data-go-results] tbody > .go-results-jigo {
   --go-row-color: var(--color-archive-draw);
-  --go-row-strength: 65%;
-  color: var(--color-archive-shell-text);
+  --go-row-strength: 42%;
 }
 
 [data-go-results] tbody > .go-results-unresolved {
