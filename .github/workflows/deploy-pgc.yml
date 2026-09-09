@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+      - deployments
   workflow_dispatch:
 env:
   VERSION: ${{ github.sha }}
