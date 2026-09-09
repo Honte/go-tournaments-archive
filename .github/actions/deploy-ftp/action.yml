@@ -1,6 +1,9 @@
 name: Deploy FTP archive
 description: Check configuration changes, build, upload a ZIP and PHP helper, and trigger extraction. Requires FTP_USER, FTP_PASS, and FTP_TOKEN environment variables.
 inputs:
+  skip-check:
+    description: Skip the change check and force deployment
+    default: 'false'
   config:
     description: Build configuration
     required: true
@@ -31,10 +34,11 @@ runs:
       env:
         BASE: ${{ github.event.before }}
         NEW_BRANCH: ${{ github.event.created }}
+        SKIP_CHECK: ${{ inputs.skip-check }}
         CONFIG: ${{ inputs.config }}
       run: |
-        if [ "$NEW_BRANCH" = "true" ]; then
-          echo "New branch: deploying $CONFIG without a previous revision."
+        if [ "$SKIP_CHECK" = "true" ] || [ "$NEW_BRANCH" = "true" ]; then
+          echo "Skipping change check: deploying $CONFIG."
           echo "deploy_${CONFIG}=true" >> "$GITHUB_OUTPUT"
         else
           git fetch --no-tags --depth=1 origin "$BASE"
