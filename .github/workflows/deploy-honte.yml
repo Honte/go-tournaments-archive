@@ -1,0 +1,79 @@
+name: Deploy Honte
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+env:
+  VERSION: ${{ github.sha }}
+
+jobs:
+  deploy-honte-prod:
+    runs-on: ubuntu-latest
+    environment:
+      name: honte
+      url: ${{ vars.SITE }}
+    env:
+      CONFIG: honte
+      SSH_PATH: '/usr/home/${{ secrets.SSH_USER }}/domains/${{ vars.SSH_HOST }}/public_nodejs'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Check deployment changes
+        id: check
+        if: ${{ github.event_name == 'push' }}
+        env:
+          BASE: ${{ github.event.before }}
+        run: |
+          git fetch --no-tags --depth=1 origin "$BASE"
+          npm run deploy:check -- honte --base "$BASE"
+      - run: npm run build
+        if: ${{ github.event_name == 'workflow_dispatch' || steps.check.outputs.deploy_honte == 'true' }}
+      - name: Prepare
+        if: ${{ github.event_name == 'workflow_dispatch' || steps.check.outputs.deploy_honte == 'true' }}
+        run: |
+          cp -r public .next/standalone/
+          cp -r .next/static .next/standalone/.next/
+      - name: Clean up
+        if: ${{ github.event_name == 'workflow_dispatch' || steps.check.outputs.deploy_honte == 'true' }}
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ vars.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          passphrase: ${{ secrets.SSH_KEY_PASS }}
+          script: |
+            set -eu
+            deploy_path='/usr/home/${{ secrets.SSH_USER }}/domains/${{ vars.SSH_HOST }}/public_nodejs'
+
+            test -d "$deploy_path"
+            rm -rf -- "$deploy_path/.next"
+      - name: Deploy
+        if: ${{ github.event_name == 'workflow_dispatch' || steps.check.outputs.deploy_honte == 'true' }}
+        uses: appleboy/scp-action@v1
+        with:
+          host: ${{ vars.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          passphrase: ${{ secrets.SSH_KEY_PASS }}
+          source: .next/standalone/*
+          strip_components: 2
+          target: ${{ env.SSH_PATH }}
+      - name: Restart
+        if: ${{ github.event_name == 'workflow_dispatch' || steps.check.outputs.deploy_honte == 'true' }}
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ vars.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          passphrase: ${{ secrets.SSH_KEY_PASS }}
+          script: |
+            cd /usr/home/${{ secrets.SSH_USER }}/domains/${{ vars.SSH_HOST }}/public_nodejs
+            mv server.js app.js
+            npm install sharp
+            devil www restart ${{ vars.SSH_HOST }}
