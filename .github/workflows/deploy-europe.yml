@@ -1,86 +1,28 @@
 name: Deploy European Archive
-
 on:
   push:
-    branches: [main]
+    branches:
+      - main
   workflow_dispatch:
-
 env:
   VERSION: ${{ github.sha }}
-
 jobs:
   deploy-europe-prod:
     runs-on: ubuntu-latest
     environment:
       name: europe
       url: ${{ vars.SITE }}
-    env:
-      CONFIG: europe
     steps:
       - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
+      - name: Deploy archive
+        uses: ./.github/actions/deploy-ftp
         with:
-          node-version: 24
-          cache: npm
-
-      - run: npm ci
-
-      - name: Check deployment changes
-        id: check
-        if: ${{ github.event_name == 'push' }}
+          config: europe
+          ftp-host: ${{ vars.FTP_HOST }}
+          ftp-path: /
+          unzip-script: site.unzip
+          site-url: ${{ vars.SITE }}
         env:
-          BASE: ${{ github.event.before }}
-        run: |
-          git fetch --no-tags --depth=1 origin "$BASE"
-          npm run deploy:check -- europe --base "$BASE"
-
-      - run: npm run build
-        if: ${{ github.event_name == 'workflow_dispatch' || steps.check.outputs.deploy_europe == 'true' }}
-
-      - name: Prepare bundle
-        if: ${{ github.event_name == 'workflow_dispatch' || steps.check.outputs.deploy_europe == 'true' }}
-        env:
-          DEPLOY_TOKEN: ${{ secrets.FTP_TOKEN }}
-        run: |
-          set -euo pipefail
-          node tools/deployment/prepare.js --source tools/deployment/unzip.php --target dist/site.unzip
-          (cd out && zip -qr ../dist/site.zip .)
-
-      - name: Upload bundle
-        if: ${{ github.event_name == 'workflow_dispatch' || steps.check.outputs.deploy_europe == 'true' }}
-        env:
-          FTP_HOST: ${{ vars.FTP_HOST }}
-          FTP_PATH: ${{ vars.FTP_PATH }}
           FTP_USER: ${{ secrets.FTP_USER }}
           FTP_PASS: ${{ secrets.FTP_PASS }}
-        run: |
-          set -euo pipefail
-          : "${FTP_HOST:?Set the europe FTP_HOST variable}"
-          : "${FTP_PATH:?Set the europe FTP_PATH variable to the archives directory}"
-          remote_path="${FTP_PATH%/}"
-
-          if [ -n "$remote_path" ]; then
-            base_url="ftp://${FTP_HOST}/${remote_path}"
-          else
-            base_url="ftp://${FTP_HOST}"
-          fi
-
-          curl --fail --show-error --silent --ftp-create-dirs --user "$FTP_USER:$FTP_PASS" -T dist/site.zip "${base_url}/site.zip"
-          curl --fail --show-error --silent --ftp-create-dirs --user "$FTP_USER:$FTP_PASS" -T dist/site.unzip "${base_url}/site.unzip"
-
-      - name: Unzip bundle
-        if: ${{ github.event_name == 'workflow_dispatch' || steps.check.outputs.deploy_europe == 'true' }}
-        env:
           FTP_TOKEN: ${{ secrets.FTP_TOKEN }}
-          SITE_URL: ${{ vars.SITE_URL }}
-        run: |
-          set -euo pipefail
-          : "${SITE_URL:?Set the europe SITE_URL variable including /archives}"
-          response_file="$(mktemp)"
-          status="$(
-            curl --show-error --silent --output "$response_file" --write-out "%{http_code}" --get "${SITE_URL%/}/site.unzip" \
-              --data-urlencode "token=${FTP_TOKEN}"
-          )"
-          cat "$response_file"
-          test "$status" -ge 200 && test "$status" -lt 300
