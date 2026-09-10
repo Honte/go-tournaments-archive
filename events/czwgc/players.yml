@@ -17,7 +17,9 @@ players:
       - Anezka Bukovska
     egd: 15874947
   - id: abernathova
-    name: Anna Bernathova
+    name: Anna Bernathová
+    pastNames:
+      - Anna Bernathova
     egd: 10301984
   - id: aprokopova
     name: Anna Reindlová
@@ -27,7 +29,9 @@ players:
       - Anna Prokopová
     egd: 10449087
   - id: dsvecova
-    name: Denisa Svecova
+    name: Denisa Švecová
+    pastNames:
+      - Denisa Svecova
     egd: 10262725
   - id: dvasova
     name: Dita Vášová
@@ -35,7 +39,9 @@ players:
       - Dita Vasova
     egd: 15749921
   - id: iprokopova
-    name: Iva Prokopova
+    name: Iva Prokopová
+    pastNames:
+      - Iva Prokopova
     egd: 10286705
   - id: jhricova
     name: Jana Hricová
@@ -53,7 +59,9 @@ players:
       - Kamila Samajova
     egd: 14913778
   - id: kbabicka
-    name: Katerina Babicka
+    name: Kateřina Babická
+    pastNames:
+      - Katerina Babicka
     egd: 15225804
   - id: kzaloudkova
     name: Klára Žaloudková
@@ -61,7 +69,9 @@ players:
       - Klara Zaloudkova
     egd: 10798106
   - id: kstodolova
-    name: Kristyna Stodolova
+    name: Kristýna Stodolová
+    pastNames:
+      - Kristyna Stodolova
     egd: 14213243
   - id: ldankova
     name: Lenka Daňková
@@ -69,7 +79,9 @@ players:
       - Lenka Dankova
     egd: 10513063
   - id: lsnepova
-    name: Lenka Snepova
+    name: Lenka Šnepová
+    pastNames:
+      - Lenka Snepova
     egd: 10250724
   - id: msimunkova
     name: Martina Šimůnková
@@ -77,7 +89,9 @@ players:
       - Martina Simunkova
     egd: 10298904
   - id: mgoblova
-    name: Miroslava Goblova
+    name: Miroslava Goblová
+    pastName:
+      - Miroslava Goblova
     egd: 10225721
   - id: tchladkova
     name: Tereza Kotowski

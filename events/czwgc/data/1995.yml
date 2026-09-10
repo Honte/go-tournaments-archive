@@ -1,0 +1,10 @@
+location: Protivanov
+players:
+  jhricova: Jana Hricova 1d
+  msimunkova: Martina Simunkova 3d
+stages:
+ - type: classification
+   name: Championship
+   notes: No more data about this edition.
+   order:
+    - Jana Hricova 1d

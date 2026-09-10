@@ -1,0 +1,11 @@
+; TC[T050826B]
+; CL[A]
+; EV[Czech Ladies Championship]
+; PC[CZ, Zlate Hory]
+; DT[2005-08-26,2005-08-27]
+; HA[h9]
+; KM[6.5]
+;
+  1 Zaloudkova Klara        1d CZ Pra   2 1     0= 2+ 3+  |10798106
+  2 Simunkova Martina       1d CZ Libe  1 0     3+ 1- 0=  |10298904
+  3 Hricova Jana            1k CZ Pra   0 0     2- 0= 1-  |10233509

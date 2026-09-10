@@ -1,0 +1,8 @@
+players:
+  msimunkova: Martina Simunkova 3d
+stages:
+ - type: classification
+   name: Championship
+   notes: No more data about this edition.
+   order:
+    - Martina Simunkova
