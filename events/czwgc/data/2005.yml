@@ -1,0 +1,10 @@
+stages:
+  - type: tournament
+    name: Championship
+    file: czw2005.txt
+    scoringColumns:
+      - wins
+      - sodos
+    breakers:
+      - wins
+    findSharedPlaces: true
