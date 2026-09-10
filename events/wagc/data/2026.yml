@@ -23,159 +23,159 @@ stages:
       - sosos
     findSharedPlaces: true
     games:
+      - 1-2 1:B+R round:2 sgf:2026/2-YuFu-LukasPodpera.sgf
       - 1-3 1:B+R round:5 sgf:2026/5-YuFu-YenYuCheng.sgf
       - 1-4 1:B+3.5 round:6 sgf:2026/6-YuFu-HyoKa.sgf
+      - 1-5 1:B+18.5 round:3 sgf:2026/3-YuFu-NaiSanChan.sgf
+      - 1-9 1:B+R round:4 sgf:2026/4-YuFu-OndrejKralik.sgf
+      - 1-47 1:B+R round:1 sgf:2026/1-YuFu-RenanPabloRodriguesdaCruz.sgf
       - 2-8 2:B+R round:6 sgf:2026/6-LukasPodpera-QiyouWu.sgf
+      - 2-13 2:B+2.5 round:4 sgf:2026/4-LukasPodpera-CornelBurzo.sgf
       - 2-14 2:B+R round:5 sgf:2026/5-LukasPodpera-RobvanZeijst.sgf
-      - 3-7 3:B+18.5 round:3 sgf:2026/3-YuFu-NaiSanChan.sgf
+      - 2-26 2:B+R round:3 sgf:2026/3-LukasPodpera-JustinTeng.sgf
       - 3-7 3:B+R round:6 sgf:2026/6-YenYuCheng-HyeonseokKim.sgf
-      - 3-10 3:B+R round:4 sgf:2026/4-YuFu-OndrejKralik.sgf
-      - 3-11 3:B+R round:2 sgf:2026/2-YuFu-LukasPodpera.sgf
-      - 3-50 3:B+R round:1 sgf:2026/1-YuFu-RenanPabloRodriguesdaCruz.sgf
-      - 4-26 4:B+R round:2 sgf:2026/2-YenYuCheng-ArnaudPilet.sgf
-      - 4-27 4:B+? round:1 sgf:2026/1-YenYuCheng-SamuelTeissier.sgf
-      - 5-1 1:W+R round:1 sgf:2026/1-RobvanZeijst-HyeonseokKim.sgf
-      - 5-17 5:B+R round:4 sgf:2026/4-RobvanZeijst-InHangSam.sgf
+      - 3-24 3:B+? round:1 sgf:2026/1-YenYuCheng-SamuelTeissier.sgf
+      - 3-36 3:B+R round:2 sgf:2026/2-YenYuCheng-ArnaudPilet.sgf
       - 5-19 5:B+R round:5 sgf:2026/5-NaiSanChan-YuzeXing.sgf
-      - 6-1 1:W+3.5 round:3 sgf:2026/3-YuzeXing-HyeonseokKim.sgf
-      - 6-18 6:B+R round:4 sgf:2026/4-YuzeXing-QuynhanhHa.sgf
+      - 5-20 5:B+R round:2 sgf:2026/2-NaiSanChan-ReemBenDavid.sgf
+      - 6-18 6:B+R round:2 sgf:2026/2-UlasOren-AntonSilfver.sgf
+      - 6-20 20:W+6.5 round:1 sgf:2026/1-UlasOren-ReemBenDavid.sgf
       - 6-25 6:B+R round:5 sgf:2026/5-UlasOren-PeterNeubauer.sgf
-      - 6-33 6:B+R round:1 sgf:2026/1-YuzeXing-BarnabasVarga.sgf
+      - 6-39 6:B+R round:3 sgf:2026/3-UlasOren-NikolaTsarigradski.sgf
       - 7-4 4:W+R round:5 sgf:2026/5-HyeonseokKim-HyoKa.sgf
-      - 7-21 7:B+R round:2 sgf:2026/2-NaiSanChan-ReemBenDavid.sgf
-      - 8-2 2:W+R round:4 sgf:2026/4-QiyouWu-HyoKa.sgf
-      - 8-29 8:B+R round:2 sgf:2026/2-QiyouWu-BramVandenbon.sgf
-      - 8-39 8:B+R round:1 sgf:2026/1-QiyouWu-MendsaikhanBoldbaatar.sgf
-      - 9-1 1:W+0.5 round:4 sgf:2026/4-YiHanChen-HyeonseokKim.sgf
+      - 8-4 4:W+R round:4 sgf:2026/4-QiyouWu-HyoKa.sgf
+      - 8-17 8:B+R round:2 sgf:2026/2-QiyouWu-BramVandenbon.sgf
+      - 8-40 8:B+R round:1 sgf:2026/1-QiyouWu-MendsaikhanBoldbaatar.sgf
       - 9-5 5:W+R round:6 sgf:2026/6-OndrejKralik-NaiSanChan.sgf
-      - 9-19 9:B+21.5 round:3 sgf:2026/3-YiHanChen-WichrichKaruehawanit.sgf
+      - 9-27 9:B+4.5 round:3 sgf:2026/3-OndrejKralik-LauriPaatero.sgf
+      - 9-49 9:B+R round:1 sgf:2026/1-OndrejKralik-MiguelAngelYabrudes.sgf
+      - 10-7 7:W+0.5 round:4 sgf:2026/4-YiHanChen-HyeonseokKim.sgf
       - 10-8 8:W+R round:5 sgf:2026/5-YiHanChen-QiyouWu.sgf
-      - 10-22 10:B+4.5 round:3 sgf:2026/3-OndrejKralik-LauriPaatero.sgf
-      - 10-43 10:B+R round:1 sgf:2026/1-OndrejKralik-MiguelAngelYabrudes.sgf
+      - 10-22 10:B+21.5 round:3 sgf:2026/3-YiHanChen-WichrichKaruehawanit.sgf
+      - 11-8 8:W+R round:3 sgf:2026/3-CezaryCzernecki-QiyouWu.sgf
       - 11-9 9:W+11.5 round:5 sgf:2026/5-CezaryCzernecki-OndrejKralik.sgf
+      - 11-16 11:B+R round:4 sgf:2026/4-CezaryCzernecki-BrunoPoltronieri.sgf
       - 11-21 11:B+8.5 round:6 sgf:2026/6-CezaryCzernecki-SavvaAntonjuk.sgf
-      - 11-23 11:B+2.5 round:4 sgf:2026/4-LukasPodpera-CornelBurzo.sgf
-      - 11-37 11:B+R round:3 sgf:2026/3-LukasPodpera-JustinTeng.sgf
-      - 12-8 8:W+R round:3 sgf:2026/3-CezaryCzernecki-QiyouWu.sgf
-      - 12-24 12:B+R round:4 sgf:2026/4-CezaryCzernecki-BrunoPoltronieri.sgf
-      - 13-2 2:W+R round:3 sgf:2026/3-SavvaAntonjuk-HyoKa.sgf
+      - 12-3 3:W+R round:3 sgf:2026/3-QuynhanhHa-YenYuCheng.sgf
+      - 12-15 12:B+2.5 round:2 sgf:2026/2-QuynhanhHa-DmytroBogatskyy.sgf
+      - 13-7 7:W+R round:2 sgf:2026/2-CornelBurzo-HyeonseokKim.sgf
       - 13-20 13:B+R round:5 sgf:2026/5-CornelBurzo-ReemBenDavid.sgf
-      - 13-29 13:B+R round:4 sgf:2026/4-SavvaAntonjuk-BramVandenbon.sgf
-      - 13-46 13:B+14.5 round:2 sgf:2026/2-SavvaAntonjuk-DavidBofinger.sgf
-      - 14-47 14:B+R round:1 sgf:2026/1-DmytroBogatskyy-HectorPaizCastillo.sgf
+      - 13-38 13:B+R round:3 sgf:2026/3-CornelBurzo-NikolaJevtic.sgf
+      - 13-43 13:B+R round:1 sgf:2026/1-CornelBurzo-ZigaHajdukovic.sgf
+      - 14-7 7:W+R round:1 sgf:2026/1-RobvanZeijst-HyeonseokKim.sgf
+      - 14-23 14:B+R round:4 sgf:2026/4-RobvanZeijst-InHangSam.sgf
       - 15-6 6:W+T round:6 sgf:2026/6-DmytroBogatskyy-UlasOren.sgf
-      - 15-21 21:W+6.5 round:1 sgf:2026/1-UlasOren-ReemBenDavid.sgf
-      - 15-36 15:B+R round:2 sgf:2026/2-UlasOren-AntonSilfver.sgf
-      - 15-44 15:B+R round:3 sgf:2026/3-UlasOren-NikolaTsarigradski.sgf
+      - 15-50 15:B+R round:1 sgf:2026/1-DmytroBogatskyy-HectorPaizCastillo.sgf
+      - 16-10 10:W+18.5 round:1 sgf:2026/1-BrunoPoltronieri-YiHanChen.sgf
+      - 16-24 16:B+0.5 round:3 sgf:2026/3-BrunoPoltronieri-SamuelTeissier.sgf
       - 16-29 16:B+R round:6 sgf:2026/6-BrunoPoltronieri-SverreHaga.sgf
       - 16-36 16:B+R round:5 sgf:2026/5-BrunoPoltronieri-ArnaudPilet.sgf
-      - 16-37 37:W+R round:1 sgf:2026/1-PeterNeubauer-JustinTeng.sgf
-      - 16-40 16:B+3.5 round:3 sgf:2026/3-PeterNeubauer-KarloVlahovic.sgf
-      - 16-50 16:B+R round:2 sgf:2026/2-PeterNeubauer-RenanPabloRodriguesdaCruz.sgf
-      - 17-2 2:W+R round:2 sgf:2026/2-InHangSam-HyoKa.sgf
-      - 17-21 17:B+5.5 round:3 sgf:2026/3-InHangSam-ReemBenDavid.sgf
       - 17-25 17:B+R round:6 sgf:2026/6-BramVandenbon-PeterNeubauer.sgf
-      - 18-4 4:W+R round:3 sgf:2026/3-QuynhanhHa-YenYuCheng.sgf
-      - 18-14 18:B+2.5 round:2 sgf:2026/2-QuynhanhHa-DmytroBogatskyy.sgf
+      - 17-33 17:B+R round:3 sgf:2026/3-BramVandenbon-DavidBofinger.sgf
+      - 18-28 28:W+R round:1 sgf:2026/1-AntonSilfver-WeiJieTeh.sgf
       - 18-34 18:B+27.5 round:6 sgf:2026/6-AntonSilfver-BarnabasVarga.sgf
       - 18-42 18:B+0.5 round:5 sgf:2026/5-AntonSilfver-NursaidSharshenov.sgf
-      - 19-4 4:W+7.5 round:4 sgf:2026/4-WichrichKaruehawanit-YenYuCheng.sgf
+      - 18-49 18:B+R round:4 sgf:2026/4-AntonSilfver-MiguelAngelYabrudes.sgf
+      - 18-51 18:B+29.5 round:3 sgf:2026/3-AntonSilfver-QuanSun.sgf
+      - 19-7 7:W+3.5 round:3 sgf:2026/3-YuzeXing-HyeonseokKim.sgf
       - 19-10 10:W+R round:6 sgf:2026/6-YuzeXing-YiHanChen.sgf
-      - 20-7 7:W+R round:4 sgf:2026/4-IsaacRipoll-NaiSanChan.sgf
-      - 20-10 10:W+0.5 round:2 sgf:2026/2-IsaacRipoll-OndrejKralik.sgf
+      - 19-12 19:B+R round:4 sgf:2026/4-YuzeXing-QuynhanhHa.sgf
+      - 19-34 19:B+R round:1 sgf:2026/1-YuzeXing-BarnabasVarga.sgf
+      - 20-26 20:B+R round:4 sgf:2026/4-ReemBenDavid-JustinTeng.sgf
       - 20-35 20:B+13.5 round:6 sgf:2026/6-ReemBenDavid-IsaacRipoll.sgf
+      - 21-4 4:W+R round:3 sgf:2026/3-SavvaAntonjuk-HyoKa.sgf
       - 21-15 15:W+R round:5 sgf:2026/5-SavvaAntonjuk-DmytroBogatskyy.sgf
-      - 21-37 21:B+R round:4 sgf:2026/4-ReemBenDavid-JustinTeng.sgf
-      - 22-6 6:W+R round:2 sgf:2026/2-LauriPaatero-YuzeXing.sgf
+      - 21-17 21:B+R round:4 sgf:2026/4-SavvaAntonjuk-BramVandenbon.sgf
+      - 21-33 21:B+14.5 round:2 sgf:2026/2-SavvaAntonjuk-DavidBofinger.sgf
+      - 22-3 3:W+7.5 round:4 sgf:2026/4-WichrichKaruehawanit-YenYuCheng.sgf
       - 22-12 12:W+R round:6 sgf:2026/6-WichrichKaruehawanit-QuynhanhHa.sgf
-      - 22-38 22:B+R round:4 sgf:2026/4-LauriPaatero-NikolaJevtic.sgf
-      - 23-1 1:W+R round:2 sgf:2026/2-CornelBurzo-HyeonseokKim.sgf
+      - 23-4 4:W+R round:2 sgf:2026/2-InHangSam-HyoKa.sgf
       - 23-12 12:W+R round:5 sgf:2026/5-InHangSam-QuynhanhHa.sgf
+      - 23-20 23:B+5.5 round:3 sgf:2026/3-InHangSam-ReemBenDavid.sgf
       - 23-37 23:B+R round:6 sgf:2026/6-InHangSam-FlavioRomagnoli.sgf
-      - 23-38 23:B+R round:3 sgf:2026/3-CornelBurzo-NikolaJevtic.sgf
-      - 23-45 23:B+R round:1 sgf:2026/1-CornelBurzo-ZigaHajdukovic.sgf
-      - 24-9 9:W+18.5 round:1 sgf:2026/1-BrunoPoltronieri-YiHanChen.sgf
       - 24-13 13:W+R round:6 sgf:2026/6-SamuelTeissier-CornelBurzo.sgf
-      - 24-27 24:B+0.5 round:3 sgf:2026/3-BrunoPoltronieri-SamuelTeissier.sgf
       - 24-28 24:B+R round:5 sgf:2026/5-SamuelTeissier-WeiJieTeh.sgf
-      - 25-14 14:W+R round:4 sgf:2026/4-FlavioRomagnoli-DmytroBogatskyy.sgf
-      - 25-19 19:W+55.5 round:1 sgf:2026/1-FlavioRomagnoli-WichrichKaruehawanit.sgf
-      - 25-33 25:B+R round:3 sgf:2026/3-FlavioRomagnoli-BarnabasVarga.sgf
-      - 25-34 25:B+R round:2 sgf:2026/2-FlavioRomagnoli-ByoungJuLee.sgf
-      - 26-14 14:W+R round:3 sgf:2026/3-ArnaudPilet-DmytroBogatskyy.sgf
+      - 24-40 24:B+R round:4 sgf:2026/4-SamuelTeissier-MendsaikhanBoldbaatar.sgf
+      - 25-26 26:W+R round:1 sgf:2026/1-PeterNeubauer-JustinTeng.sgf
+      - 25-31 25:B+3.5 round:3 sgf:2026/3-PeterNeubauer-KarloVlahovic.sgf
+      - 25-47 25:B+R round:2 sgf:2026/2-PeterNeubauer-RenanPabloRodriguesdaCruz.sgf
+      - 26-22 22:W+R round:2 sgf:2026/2-JustinTeng-WichrichKaruehawanit.sgf
       - 26-38 26:B+R round:5 sgf:2026/5-JustinTeng-NikolaJevtic.sgf
-      - 26-41 26:B+R round:4 sgf:2026/4-ArnaudPilet-JoseContreras.sgf
       - 27-14 14:W+R round:6 sgf:2026/6-LauriPaatero-RobvanZeijst.sgf
+      - 27-19 19:W+R round:2 sgf:2026/2-LauriPaatero-YuzeXing.sgf
       - 27-37 27:B+R round:5 sgf:2026/5-LauriPaatero-FlavioRomagnoli.sgf
-      - 27-39 27:B+R round:4 sgf:2026/4-SamuelTeissier-MendsaikhanBoldbaatar.sgf
-      - 28-12 12:W+8.5 round:2 sgf:2026/2-WeiJieTeh-CezaryCzernecki.sgf
-      - 28-20 20:W+1.5 round:3 sgf:2026/3-WeiJieTeh-IsaacRipoll.sgf
-      - 28-40 28:B+6.5 round:4 sgf:2026/4-WeiJieTeh-KarloVlahovic.sgf
+      - 27-38 27:B+R round:4 sgf:2026/4-LauriPaatero-NikolaJevtic.sgf
+      - 28-11 11:W+8.5 round:2 sgf:2026/2-WeiJieTeh-CezaryCzernecki.sgf
+      - 28-31 28:B+6.5 round:4 sgf:2026/4-WeiJieTeh-KarloVlahovic.sgf
+      - 28-35 35:W+1.5 round:3 sgf:2026/3-WeiJieTeh-IsaacRipoll.sgf
       - 28-40 28:B+R round:6 sgf:2026/6-WeiJieTeh-MendsaikhanBoldbaatar.sgf
-      - 29-46 29:B+R round:3 sgf:2026/3-BramVandenbon-DavidBofinger.sgf
-      - 30-7 7:W+R round:1 sgf:2026/1-OliverSalvadorMendietaMontoya-NaiSanChan.sgf
+      - 29-6 6:W+R round:4 sgf:2026/4-SverreHaga-UlasOren.sgf
+      - 29-27 27:W+R round:1 sgf:2026/1-SverreHaga-LauriPaatero.sgf
+      - 29-42 29:B+38.5 round:3 sgf:2026/3-SverreHaga-NursaidSharshenov.sgf
+      - 29-51 29:B+R round:2 sgf:2026/2-SverreHaga-QuanSun.sgf
+      - 30-5 5:W+R round:1 sgf:2026/1-OliverSalvadorMendietaMontoya-NaiSanChan.sgf
       - 30-17 17:W+R round:5 sgf:2026/5-OliverSalvadorMendietaMontoya-BramVandenbon.sgf
-      - 31-15 15:W+R round:4 sgf:2026/4-SverreHaga-UlasOren.sgf
-      - 31-22 22:W+R round:1 sgf:2026/1-SverreHaga-LauriPaatero.sgf
-      - 31-35 31:B+38.5 round:3 sgf:2026/3-SverreHaga-NursaidSharshenov.sgf
+      - 31-2 2:W+15.5 round:1 sgf:2026/1-KarloVlahovic-LukasPodpera.sgf
       - 31-44 31:B+R round:6 sgf:2026/6-KarloVlahovic-ByoungJuLee.sgf
-      - 31-52 31:B+R round:2 sgf:2026/2-SverreHaga-QuanSun.sgf
-      - 32-16 16:W+15.5 round:4 sgf:2026/4-AlbertasPetrauskas-PeterNeubauer.sgf
+      - 31-48 31:B+R round:2 sgf:2026/2-KarloVlahovic-LarsKristensen.sgf
+      - 32-25 25:W+15.5 round:4 sgf:2026/4-AlbertasPetrauskas-PeterNeubauer.sgf
       - 32-29 29:W+R round:5 sgf:2026/5-AlbertasPetrauskas-SverreHaga.sgf
       - 32-30 32:B+R round:2 sgf:2026/2-AlbertasPetrauskas-OliverSalvadorMendietaMontoya.sgf
-      - 32-45 32:B+2.5 round:3 sgf:2026/3-AlbertasPetrauskas-ZigaHajdukovic.sgf
+      - 32-43 32:B+2.5 round:3 sgf:2026/3-AlbertasPetrauskas-ZigaHajdukovic.sgf
       - 33-39 33:B+R round:6 sgf:2026/6-DavidBofinger-NikolaTsarigradski.sgf
-      - 33-51 33:B+R round:2 sgf:2026/2-BarnabasVarga-SupravatPal.sgf
-      - 34-20 20:W+R round:1 sgf:2026/1-ByoungJuLee-IsaacRipoll.sgf
-      - 34-46 34:B+5.5 round:4 sgf:2026/4-ByoungJuLee-DavidBofinger.sgf
-      - 35-17 17:W+R round:1 sgf:2026/1-NursaidSharshenov-InHangSam.sgf
+      - 33-51 33:B+21.5 round:1 sgf:2026/1-DavidBofinger-QuanSun.sgf
+      - 34-52 34:B+R round:2 sgf:2026/2-BarnabasVarga-SupravatPal.sgf
+      - 35-5 5:W+R round:4 sgf:2026/4-IsaacRipoll-NaiSanChan.sgf
+      - 35-9 9:W+0.5 round:2 sgf:2026/2-IsaacRipoll-OndrejKralik.sgf
       - 35-22 22:W+R round:5 sgf:2026/5-IsaacRipoll-WichrichKaruehawanit.sgf
-      - 35-49 35:B+R round:2 sgf:2026/2-NursaidSharshenov-SergeyDivissin.sgf
+      - 36-15 15:W+R round:3 sgf:2026/3-ArnaudPilet-DmytroBogatskyy.sgf
       - 36-26 26:W+R round:6 sgf:2026/6-ArnaudPilet-JustinTeng.sgf
-      - 36-28 28:W+R round:1 sgf:2026/1-AntonSilfver-WeiJieTeh.sgf
-      - 36-43 36:B+R round:4 sgf:2026/4-AntonSilfver-MiguelAngelYabrudes.sgf
-      - 36-52 36:B+29.5 round:3 sgf:2026/3-AntonSilfver-QuanSun.sgf
-      - 37-19 19:W+R round:2 sgf:2026/2-JustinTeng-WichrichKaruehawanit.sgf
-      - 38-9 9:W+R round:2 sgf:2026/2-NikolaJevtic-YiHanChen.sgf
+      - 36-41 36:B+R round:4 sgf:2026/4-ArnaudPilet-JoseContreras.sgf
+      - 37-15 15:W+R round:4 sgf:2026/4-FlavioRomagnoli-DmytroBogatskyy.sgf
+      - 37-22 22:W+55.5 round:1 sgf:2026/1-FlavioRomagnoli-WichrichKaruehawanit.sgf
+      - 37-34 37:B+R round:3 sgf:2026/3-FlavioRomagnoli-BarnabasVarga.sgf
+      - 37-44 37:B+R round:2 sgf:2026/2-FlavioRomagnoli-ByoungJuLee.sgf
+      - 38-10 10:W+R round:2 sgf:2026/2-NikolaJevtic-YiHanChen.sgf
       - 38-32 38:B+9.5 round:1 sgf:2026/1-NikolaJevtic-AlbertasPetrauskas.sgf
-      - 39-5 5:W+R round:2 sgf:2026/2-MendsaikhanBoldbaatar-RobvanZeijst.sgf
-      - 40-11 11:W+15.5 round:1 sgf:2026/1-KarloVlahovic-LukasPodpera.sgf
-      - 40-42 40:B+R round:2 sgf:2026/2-KarloVlahovic-LarsKristensen.sgf
+      - 39-11 11:W+R round:1 sgf:2026/1-NikolaTsarigradskiNikola-CezaryCzernecki.sgf
+      - 39-41 41:W+R round:2 sgf:2026/2-NikolaTsarigradski-JoseContreras.sgf
+      - 39-47 39:B+R round:4 sgf:2026/4-NikolaTsarigradski-RenanPabloRodriguesdaCruz.sgf
+      - 40-14 14:W+R round:2 sgf:2026/2-MendsaikhanBoldbaatar-RobvanZeijst.sgf
       - 40-48 40:B+R round:5 sgf:2026/5-MendsaikhanBoldbaatar-LarsKristensen.sgf
-      - 41-5 5:W+R round:3 sgf:2026/3-JoseContreras-RobvanZeijst.sgf
-      - 41-18 18:W+R round:1 sgf:2026/1-JoseContreras-QuynhanhHa.sgf
+      - 41-12 12:W+R round:1 sgf:2026/1-JoseContreras-QuynhanhHa.sgf
+      - 41-14 14:W+R round:3 sgf:2026/3-JoseContreras-RobvanZeijst.sgf
       - 41-31 31:W+13.5 round:5 sgf:2026/5-JoseContreras-KarloVlahovic.sgf
-      - 42-2 2:W+R round:1 sgf:2026/1-LarsKristensen-HyoKa.sgf
+      - 42-23 23:W+R round:1 sgf:2026/1-NursaidSharshenov-InHangSam.sgf
       - 42-30 30:W+R round:6 sgf:2026/6-NursaidSharshenov--OliverSalvadorMendietaMontoya.sgf
-      - 42-33 33:W+13.5 round:4 sgf:2026/4-LarsKristensen-BarnabasVarga.sgf
-      - 42-50 42:B+4.5 round:3 sgf:2026/3-LarsKristensen-RenanPabloRodriguesdaCruz.sgf
-      - 43-24 24:W+R round:2 sgf:2026/2-MiguelAngelYabrudes-BrunoPoltronieri.sgf
-      - 43-39 39:W+R round:3 sgf:2026/3-MiguelAngelYabrudes-MendsaikhanBoldbaatar.sgf
+      - 42-45 42:B+R round:2 sgf:2026/2-NursaidSharshenov-SergeyDivissin.sgf
+      - 43-30 30:W+33.5 round:4 sgf:2026/4-ZigaHajdukovic-OliverSalvadorMendietaMontoya.sgf
       - 43-39 39:W+R round:5 sgf:2026/5-ZigaHajdukovic-NikolaTsarigradski.sgf
+      - 43-46 43:B+R round:2 sgf:2026/2-ZigaHajdukovic-FernandoGoncalves.sgf
       - 43-50 43:B+34.5 round:6 sgf:2026/6-ZigaHajdukovic-HectorPaizCastillo.sgf
-      - 44-12 12:W+R round:1 sgf:2026/1-NikolaTsarigradskiNikola-CezaryCzernecki.sgf
+      - 44-33 44:B+5.5 round:4 sgf:2026/4-ByoungJuLee-DavidBofinger.sgf
       - 44-34 34:W+R round:5 sgf:2026/5-ByoungJuLee-BarnabasVarga.sgf
-      - 44-41 41:W+R round:2 sgf:2026/2-NikolaTsarigradski-JoseContreras.sgf
-      - 44-50 44:B+R round:4 sgf:2026/4-NikolaTsarigradski-RenanPabloRodriguesdaCruz.sgf
-      - 45-30 30:W+33.5 round:4 sgf:2026/4-ZigaHajdukovic-OliverSalvadorMendietaMontoya.sgf
+      - 44-35 35:W+R round:1 sgf:2026/1-ByoungJuLee-IsaacRipoll.sgf
       - 45-32 32:W+R round:6 sgf:2026/6-SergeyDivissin-AlbertasPetrauskas.sgf
+      - 45-36 36:W+R round:1 sgf:2026/1-SergeyDivissin-ArnaudPilet.sgf
+      - 45-44 44:W+20.5 round:3 sgf:2026/3-SergeyDivissin-ByoungJuLee.sgf
       - 45-46 45:B+R round:5 sgf:2026/5-SergeyDivissin-FernandoGoncalves.sgf
-      - 45-48 45:B+R round:2 sgf:2026/2-ZigaHajdukovic-FernandoGoncalves.sgf
+      - 45-51 45:B+R round:4 sgf:2026/4-SergeyDivissin-QuanSun.sgf
+      - 46-21 21:W+R round:1 sgf:2026/1-FernandoGoncalves-SavvaAntonjuk.sgf
+      - 46-30 30:W+4.5 round:3 sgf:2026/3-FernandoGoncalves-OliverSalvadorMendietaMontoya.sgf
       - 46-51 46:B+R round:6 sgf:2026/6-FernandoGoncalves-QuanSun.sgf
-      - 46-52 46:B+21.5 round:1 sgf:2026/1-DavidBofinger-QuanSun.sgf
-      - 47-27 27:W+R round:2 sgf:2026/2-HectorPaizCastillo-SamuelTeissier.sgf
-      - 47-35 35:W+R round:4 sgf:2026/4-HectorPaizCastillo-NursaidSharshenov.sgf
       - 47-41 41:W+R round:6 sgf:2026/6-RenanPabloRodriguesdaCruz-JoseContreras.sgf
-      - 48-13 13:W+R round:1 sgf:2026/1-FernandoGoncalves-SavvaAntonjuk.sgf
-      - 48-30 30:W+4.5 round:3 sgf:2026/3-FernandoGoncalves-OliverSalvadorMendietaMontoya.sgf
+      - 48-4 4:W+R round:1 sgf:2026/1-LarsKristensen-HyoKa.sgf
+      - 48-34 34:W+13.5 round:4 sgf:2026/4-LarsKristensen-BarnabasVarga.sgf
       - 48-38 38:W+R round:6 sgf:2026/6-LarsKristensen-NikolaJevtic.sgf
-      - 49-26 26:W+R round:1 sgf:2026/1-SergeyDivissin-ArnaudPilet.sgf
-      - 49-34 34:W+20.5 round:3 sgf:2026/3-SergeyDivissin-ByoungJuLee.sgf
+      - 48-47 48:B+4.5 round:3 sgf:2026/3-LarsKristensen-RenanPabloRodriguesdaCruz.sgf
+      - 49-16 16:W+R round:2 sgf:2026/2-MiguelAngelYabrudes-BrunoPoltronieri.sgf
+      - 49-40 40:W+R round:3 sgf:2026/3-MiguelAngelYabrudes-MendsaikhanBoldbaatar.sgf
       - 49-47 47:W+33.5 round:5 sgf:2026/5-MiguelAngelYabrudes-RenanPabloRodriguesdaCruz.sgf
-      - 49-52 49:B+R round:4 sgf:2026/4-SergeyDivissin-QuanSun.sgf
       - 49-52 49:B+R round:6 sgf:2026/6-MiguelAngelYabrudes-SupravatPal.sgf
+      - 50-24 24:W+R round:2 sgf:2026/2-HectorPaizCastillo-SamuelTeissier.sgf
       - 50-33 33:W+R round:5 sgf:2026/5-HectorPaizCastillo-DavidBofinger.sgf
-      - 51-29 29:W+R round:1 sgf:2026/1-SupravatPal-BramVandenbon.sgf
-      - 51-47 47:W+R round:3 sgf:2026/3-SupravatPal-HectorPaizCastillo.sgf
-      - 51-48 48:W+R round:4 sgf:2026/4-SupravatPal-FernandoGoncalves.sgf
+      - 50-42 42:W+R round:4 sgf:2026/4-HectorPaizCastillo-NursaidSharshenov.sgf
+      - 52-17 17:W+R round:1 sgf:2026/1-SupravatPal-BramVandenbon.sgf
+      - 52-46 46:W+R round:4 sgf:2026/4-SupravatPal-FernandoGoncalves.sgf
+      - 52-50 50:W+R round:3 sgf:2026/3-SupravatPal-HectorPaizCastillo.sgf
       - 52-51 51:W+R round:5 sgf:2026/5-SupravatPal-QuanSun.sgf
