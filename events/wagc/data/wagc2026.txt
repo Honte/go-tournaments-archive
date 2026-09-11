@@ -1,54 +1,55 @@
 ; PC[KR,Mungyeong]
 ; DT[2026-09-08,2026-09-11]
-   1 Fu Yu                                8d CN  xxxx     47+      2+      5+      9+      3+      4+      6?     6    30   174 |20874832
-   2 Podpera Lukas                        7d CZ  APWS     31+      1-     26+     13+     14+      8+      3?     5    29   171 |13201914
-   3 Cheng Yen_Yu                         7d TW  xxxx     24+     36+     12+     22+      1-      7+      2?     5    27   179 |20898834
-   4 Ka Hyo                               7d JP  xxxx     48+     23+     21+      8+      7+      1-      5?     5    26   177
-   5 Chan Nai-San                         6d HK  WCh      30+     20+      1-     35+     19+      9+      4?     5    26   175 |14349742
-   6 Oren Ulas                            6d TR  Ist      20-     18+     39+     29+     25+     15+      1?     5    25   157 |16298832
-   7 Kim Hyeonseok                        7d KR  xxxx     14+     13+     19+     10+      4-      3-      8?     4    29   177
-   8 Wu Qi-you                            7d CA  xxxx     40+     17+     11+      4-     10+      2-      7?     4    28   170 |18433239
-   9 Kralik Ondrej                        4d SK  GKK      49+     35+     27+      1-     11+      5-     10?     4    25   163 |16350279
-  10 Chen Yi_Han                          5d SG  xxxx     16+     38+     22+      7-      8-     19+      9?     4    24   172 |20313084
-  11 Czernecki Cezary                     5d PL  Bial     39+     28+      8-     16+      9-     21+     12?     4    24   163 |14813139
-  12 Ha Quynh_anh                         6d VN  xxxx     41+     15+      3-     19-     23+     22+     11?     4    24   162 |20474421
-  13 Burzo Cornel                         6d RO  UNRO     43+      7-     38+      2-     20+     24+     14?     4    23   165 |10325249
-  14 Zeijst Rob_van                       7d NL  Amst      7-     40+     41+     23+      2-     27+     13?     4    23   161 |10337382
-  15 Bogatskyy Dmytro                     5d UA  Kyiv     50+     12-     36+     37+     21+      6-     16?     4    21   152 |10250867
-  16 Poltronieri Bruno                    4d UK  Camb     10-     49+     24+     11-     36+     29+     15?     4    21   150 |16086059
-  17 Vandenbon Bram                       2d BE  Gent     52+      8-     33+     21-     30+     25+     18?     4    20   144 |14233758
-  18 Silfver Anton                        3d SE  Link     28-      6-     51+     49+     42+     34+     17?     4    19   130 |15933236
-  19 Xing Yuze                            6d DE  HD       34+     27+      7-     12+      5-     10-     20?     3    26   164 |18525012
-  20 Ben-David Reem                       5d IL  TAv       6+      5-     23-     26+     13-     35+     19?     3    25   166 |14825580
-  21 Antonjuk Savva                       4d AR  BAi      46+     33+      4-     17+     15-     11-     22?     3    25   143 |17449641
-  22 Karuehawanit Wichrich                6d TH  xxxx     37+     26+     10-      3-     35+     12-     21?     3    23   163 |17362378
-  23 Sam In-Hang                          6d MO  xxxx     42+      4-     20+     14-     12-     37+     24?     3    23   158 |15013834
-  24 Teissier Samuel                      5d FR  84Av      3-     50+     16-     40+     28+     13-     23?     3    22   148 |17533032
-  25 Neubauer Peter                       3d AT  Hipp     26-     47+     31+     32+      6-     17-     27?     3    22   140 |16313308
-  26 Teng Justin                          6d US  xxxx     25+     22-      2-     20-     38+     36+     28?     3    21   162 |16537532
-  27 Paatero Lauri                        4d FI  HGK      29+     19-      9-     38+     37+     14-     25?     3    21   157 |10362649
-  28 Teh Wei-Jie                          7d MY  xxxx     18+     11-     35-     31+     24-     40+     26?     3    21   145 |19374564
-  29 Haga Sverre                          1d NO  Oslo     27-     51+     42+      6-     32+     16-     30?     3    21   139 |14213903
-  30 Montoya Oliver_Salvador_Mendieta     3k MX  xxxx      5-     32-     46+     43+     17-     42+     29?     3    21   133
-  31 Vlahovic Karlo                       2d HR  VGor      2-     48+     25-     28-     41+     44+     32?     3    19   141 |18637256
-  32 Petrauskas Albertas                  2d LT  Viln     38-     30+     43+     25-     29-     45+     31?     3    18   134 |12749528
-  33 Bofinger David                       3d AU  xxxx     51+     21-     17-     44-     50+     39+     34?     3    16   126 |16462809
-  34 Varga Barnabas                       2d HU  PaGo     19-     52+     37-     48+     44+     18-     33?     3    15   127 |12786752
-  35 Ripoll Isaac                         3d ES  Pedr     44+      9-     28+      5-     22-     20-     45?     2    22   151 |20549375
-  36 Pilet Arnaud                         1d CH  Pei      45+      3-     15-     41+     16-     26-     37?     2    22   142 |15950308
-  37 Romagnoli Flavio                     1d IT  Bolo     22-     44+     34+     15-     27-     23-     36?     2    20   142 |19833605
-  38 Jevtic Nikola                        3d RS  KGRa     32+     10-     13-     27-     26-     48+     46?     2    20   136 |10374089
-  39 Tsarigradski Nikola                  1d BG  Sofi     11-     41-      6-     47+     43+     33-     40?     2    19   134 |19537903
-  40 Boldbaatar Mendsaikhan               5k MN  xxxx      8-     14-     49+     24-     48+     28-     39?     2    18   145 |21037423
-  41 Contreras Jose                       2d CO  xxxx     12-     39+     14-     36-     31-     47+     42?     2    18   141 |16333075
-  42 Sharshenov Nursaid                   1d KG  Bili     23-     45+     29-     50+     18-     30-     41?     2    18   131 |20337174
-  43 Hajdukovic Ziga                      2k SI  Ljub     13-     46+     32-     30-     39-     50+     44?     2    17   126 |17913093
-  44 Lee Byoung-Ju                        3k IE  Dubl     35-     37-     45+     33+     34-     31-     43?     2    17   123 |19701814
-  45 Divissin Sergey                      1d KZ  10Pt     36-     42-     44-     51+     46+     32-     35?     2    14   125 |16274423
-  46 Goncalves Fernando                   4k PT  Brg      21-     43-     30-     52+     45-     51+     38?     2    13   125 |16950758
-  47 Rodrigues_da_Cruz Renan_Pablo        2d BR  xxxx      1-     25-     48-     39-     49+     41-     51?     1    16   136 |20186342
-  48 Kristensen Lars                      2k DK  KGK       4-     31-     47+     34-     40-     38-     52?     1    16   127 |13998413
-  49 Yabrudes Miguel-Angel                1d VE  xxxx      9-     16-     40-     18-     47-     52+     50?     1    16   127 |10913452
-  50 Paiz-Castillo Hector                 2d GT  Gua      15-     24-     52+     42-     33-     43-     49?     1    15   123 |12737087
-  51 Sun Quan                             2d NZ  xxxx     33-     29-     18-     45-     52+     46-     47?     1    15   112
-  52 Pal Supravat                         1k IN  Khaj     17-     34-     50-     46-     51-     49-     48?     0    13   110 |14033250
+   1 Fu Yu                              8D CN  XXXX     43+      3+     10+     21+      4+      2+     11+      8+     8    41   313 |20874832
+   2 Ka Hyo                             7D JP  XXXX     42+     23+     34+      9+      8+      1-     10+      3+     7    39   311
+   3 Podpera Lukas                      7D CZ  APWS     17+      1-     25+     12+     14+      9+      4+      2-     6    45   296 |13201914
+   4 Cheng Yen_Yu                       7D TW  XXXX     15+     36+      6+     13+      1-      8+      3-     10+     6    43   312 |20898834
+   5 Chen Yi_Han                        6D SG  XXXX      7+     37+     13+      8-      9-     20+     21+     12+     6    37   301 |20313084
+   6 Ha Quynh_anh                       6D VN  XXXX     38+     16+      4-     20-     23+     13+     22+     11+     6    36   293 |20474421
+   7 Poltronieri Bruno                  4D UK  Camb      5-     51+     15+     22-     36+     28+     16+     18+     6    33   258 |16086059
+   8 Kim Hyeonseok                      7D KR  XXXX     14+     12+     20+      5+      2-      4-      9+      1-     5    46   310
+   9 Wu Qi-you                          7D CA  XXXX     41+     18+     22+      2-      5+      3-      8-     20+     5    40   299 |18433239
+  10 Chan Nai-San                       6D HK  WCh      40+     24+      1-     29+     20+     21+      2-      4-     5    40   292 |14349742
+  11 Oren Ulas                          6D TR  Ist      24-     19+     39+     28+     35+     16+      1-      6-     5    38   265 |16298832
+  12 Burzo Cornel                       6D RO  UNRO     44+      8-     37+      3-     24+     15+     14+      5-     5    37   287 |10325249
+  13 Karuehawanit Wichrich              6D TH  XXXX     30+     25+      5-      4-     29+      6-     34+     22+     5    37   281 |17362378
+  14 Zeijst Rob_van                     7D NL  Amst      8-     41+     38+     23+      3-     27+     12-     21+     5    34   292 |10337382
+  15 Teissier Samuel                    5D FR  84Av      4-     48+      7-     41+     26+     12-     23+     27+     5    34   265 |17533032
+  16 Bogatskyy Dmytro                   5D UA  Kyiv     48+      6-     36+     30+     34+     11-      7-     25+     5    33   262 |10250867
+  17 Vlahovic Karlo                     2D HR  VGor      3-     42+     35-     26-     38+     46+     31+     28+     5    29   258 |18637256
+  18 Vandenbon Bram                     2D BE  Gent     52+      9-     32+     34-     40+     35+     19+      7-     5    29   247 |14233758
+  19 Silfver Anton                      3D SE  Link     26-     11-     49+     51+     47+     33+     18-     32+     5    27   225 |15933236
+  20 Xing Yuze                          6D DE  HD       33+     27+      8-      6+     10-      5-     24+      9-     4    39   290 |18525012
+  21 Kralik Ondrej                      4D SK  GKK      51+     29+     27+      1-     22+     10-      5-     14-     4    37   275 |16350279
+  22 Czernecki Cezary                   5D PL  Bial     39+     26+      9-      7+     21-     34+      6-     13-     4    36   281 |14813139
+  23 Sam In-Hang                        6D MO  XXXX     47+      2-     24+     14-      6-     30+     15-     35+     4    36   268 |15013834
+  24 Ben-David Reem                     5D IL  TAv      11+     10-     23-     25+     12-     29+     20-     34+     4    34   289 |14825580
+  25 Teng Justin                        6D US  XXXX     35+     13-      3-     24-     37+     36+     26+     16-     4    33   281 |16537532
+  26 Teh Wei-Jie                        3D MY  XXXX     19+     22-     29-     17+     15-     41+     25-     37+     4    33   249 |19374564
+  27 Paatero Lauri                      4D FI  HGK      28+     20-     21-     37+     30+     14-     35+     15-     4    32   271 |10362649
+  28 Haga Sverre                        1D NO  Oslo     27-     49+     47+     11-     31+      7-     40+     17-     4    31   237 |14213903
+  29 Ripoll Isaac                       3D ES  Pedr     46+     21-     26+     10-     13-     24-     45+     40+     4    30   259 |20549375
+  30 Romagnoli Flavio                   1D IT  Bolo     13-     46+     33+     16-     27-     23-     36+     39+     4    30   255 |19833605
+  31 Petrauskas Albertas                2D LT  Viln     37-     40+     44+     35-     28-     45+     17-     38+     4    27   230 |12749528
+  32 Bofinger David                     3D AU  XXXX     49+     34-     18-     46-     48+     39+     33+     19-     4    26   221 |16462809
+  33 Varga Barnabas                     2D HU  PaGo     20-     52+     30-     42+     46+     19-     32-     44+     4    25   226 |12786752
+  34 Antonjuk Savva                     4D AR  BAi      50+     32+      2-     18+     16-     22-     13-     24-     3    36   254 |17449641
+  35 Neubauer Peter                     3D AT  Hipp     25-     43+     17+     31+     11-     18-     27-     23-     3    34   249 |16313308
+  36 Pilet Arnaud                       1D CH  Pei      45+      4-     16-     38+      7-     25-     30-     46+     3    33   252 |15950308
+  37 Jevtic Nikola                      3D RS  KGRa     31+      5-     12-     27-     25-     42+     50+     26-     3    32   246 |10374089
+  38 Contreras Jose                     2D CO  XXXX      6-     39+     14-     36-     17-     43+     47+     31-     3    31   240 |16333075
+  39 Tsarigradski Nikola                1D BG  Sofi     22-     38-     11-     43+     44+     32-     41+     30-     3    29   239 |19537903
+  40 Montoya Oliver_Salvador_Mendie     3K MX  XXXX     10-     31-     50+     44+     18-     47+     28-     29-     3    29   229
+  41 Boldbaatar Mendsaikhan             1K MN  XXXX      9-     14-     51+     15-     42+     26-     39-     47+     3    28   249 |21037423
+  42 Kristensen Lars                    2K DK  KGK       2-     17-     43+     33-     41-     37-     52+     50+     3    27   220 |13998413
+  43 Rodrigues_da_Cruz Renan_Pablo      2D BR  XXXX      1-     35-     42-     39-     51+     38-     49+     48+     3    25   232 |20186342
+  44 Hajdukovic Ziga                    2K SI  Ljub     12-     50+     31-     40-     39-     48+     46+     33-     3    25   220 |17913093
+  45 Divissin Sergey                    1D KZ  10Pt     36-     47-     46-     49+     50+     31-     29-     52+     3    19   211 |16274423
+  46 Lee Byoung-Ju                      3K IE  Dubl     29-     30-     45+     32+     33-     17-     44-     36-     2    30   217 |19701814
+  47 Sharshenov Nursaid                 1D KG  Bili     23-     45+     28-     48+     19-     40-     38-     41-     2    27   224 |20337174
+  48 Paiz-Castillo Hector               2D GT  Gua      16-     15-     52+     47-     32-     44-     51+     43-     2    23   217 |12737087
+  49 Sun Quan                           2D NZ  XXXX     32-     28-     19-     45-     52+     50-     43-     51+     2    22   195
+  50 Goncalves Fernando                 4K PT  Brg      34-     44-     40-     52+     45-     49+     37-     42-     2    20   212 |16950758
+  51 Yabrudes Miguel-Angel              1D VE  XXXX     21-      7-     41-     19-     43-     52+     48-     49-     1    25   217 |10913452
+  52 Pal Supravat                       1K IN  Khaj     18-     33-     48-     50-     49-     51-     42-     45-     0    22   190 |14033250
+
