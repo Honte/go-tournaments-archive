@@ -41,18 +41,75 @@ function deploy()
     }
 
     validateZipEntries($zip);
-    clearDirectory(__DIR__, array(__FILE__, $archive));
 
-    if (!$zip->extractTo(__DIR__)) {
-        respond(500, 'Archive extraction failed.');
+    $backup = __DIR__ . DIRECTORY_SEPARATOR . 'backup';
+    if (file_exists($backup) || is_link($backup)) {
+        respond(500, 'Backup directory already exists; recover or remove it before deploying.');
     }
-    if (!$zip->close()) {
-        respond(500, 'Could not close archive.');
-    }
-    if (!unlink($archive) || !unlink(__FILE__)) {
-        respond(500, 'Could not remove deployment files.');
+    if (!mkdir($backup, 0700)) {
+        respond(500, 'Could not create backup directory.');
     }
 
+    $backedUpNames = array();
+    $extractedRoots = array();
+    $active = true;
+    register_shutdown_function(function () use (&$active, &$backedUpNames, &$extractedRoots, $backup) {
+        if ($active) {
+            $active = false;
+            try {
+                rollbackDeployment($backup, $backedUpNames, $extractedRoots);
+            } catch (Exception $error) {
+                respond(500, 'Rollback failed; backup retained: ' . $error->getMessage());
+            }
+        }
+    });
+
+    try {
+        foreach (new DirectoryIterator(__DIR__) as $item) {
+            $path = $item->getPathname();
+            $name = $item->getFilename();
+            if ($item->isDot() || $path === __FILE__ || $path === $archive || $path === $backup) {
+                continue;
+            }
+            $target = $backup . DIRECTORY_SEPARATOR . $name;
+            if ($name === 'index.php' || $name === '.htaccess') {
+                if (!is_file($path) || is_link($path) || !copy($path, $target)) {
+                    throw new Exception('Could not back up preserved file: ' . $name);
+                }
+            } elseif (!rename($path, $target)) {
+                throw new Exception('Could not back up: ' . $name);
+            }
+            $backedUpNames[] = $name;
+        }
+
+        $extractedRoots = archiveRoots($zip);
+        if (!$zip->extractTo(__DIR__)) {
+            throw new Exception('Archive extraction failed.');
+        }
+        if (!$zip->close()) {
+            throw new Exception('Could not close archive.');
+        }
+        if (!unlink($archive) || !unlink(__FILE__)) {
+            throw new Exception('Could not remove deployment files.');
+        }
+    } catch (Exception $error) {
+        $active = false;
+        try {
+            rollbackDeployment($backup, $backedUpNames, $extractedRoots);
+        } catch (Exception $rollbackError) {
+            respond(500, 'Deployment failed: ' . $error->getMessage()
+                . '; rollback failed, backup retained: ' . $rollbackError->getMessage());
+        }
+        respond(500, 'Deployment failed; previous site restored: ' . $error->getMessage());
+    }
+
+    // The deployment is committed; deleting the old snapshot cannot be rolled back.
+    $active = false;
+    try {
+        removePath($backup);
+    } catch (Exception $error) {
+        respond(200, 'Deployment complete. Backup cleanup failed: ' . $error->getMessage());
+    }
     respond(200, 'Deployment complete.');
 }
 
@@ -70,6 +127,11 @@ function validateZipEntries($zip)
         }
 
         $parts = explode('/', $normalized);
+
+        if (in_array(strtolower($parts[0]), array('backup', 'site.zip', strtolower(basename(__FILE__))), true)) {
+            respond(400, 'Archive contains a reserved deployment path.');
+        }
+
         foreach ($parts as $partIndex => $part) {
             if ($part === '..' || $part === '.' || ($part === '' && $partIndex !== count($parts) - 1)) {
                 respond(400, 'Archive contains an unsafe entry: ' . $entry);
@@ -78,25 +140,49 @@ function validateZipEntries($zip)
     }
 }
 
-function clearDirectory($directory, $preservedPaths = array())
+function archiveRoots($zip)
 {
-    foreach (new DirectoryIterator($directory) as $item) {
-        $path = $item->getPathname();
-        if ($item->isDot() || in_array($path, $preservedPaths, true)) {
-            continue;
-        }
+    $roots = array();
+    for ($index = 0; $index < $zip->numFiles; $index++) {
+        $parts = explode('/', str_replace('\\', '/', $zip->getNameIndex($index)));
+        $roots[$parts[0]] = true;
+    }
+    return array_keys($roots);
+}
 
-        if (is_link($path) || is_file($path)) {
-            $removed = unlink($path);
-        } elseif (is_dir($path)) {
-            clearDirectory($path);
-            $removed = rmdir($path);
-        } else {
-            respond(500, 'Could not identify path type: ' . basename($path));
-        }
+function rollbackDeployment($backup, $backedUpNames, $extractedRoots)
+{
+    foreach ($extractedRoots as $name) {
+        removePath(__DIR__ . DIRECTORY_SEPARATOR . $name);
+    }
 
-        if (!$removed) {
-            respond(500, 'Could not remove: ' . basename($path));
+    foreach ($backedUpNames as $name) {
+        $target = __DIR__ . DIRECTORY_SEPARATOR . $name;
+        removePath($target);
+        if (!rename($backup . DIRECTORY_SEPARATOR . $name, $target)) {
+            throw new Exception('Could not restore: ' . $name);
+        }
+    }
+
+    if (!rmdir($backup)) {
+        throw new Exception('Could not remove empty backup directory.');
+    }
+}
+
+function removePath($path)
+{
+    if (is_link($path) || is_file($path)) {
+        if (!unlink($path)) {
+            throw new Exception('Could not remove: ' . $path);
+        }
+    } elseif (is_dir($path)) {
+        foreach (new DirectoryIterator($path) as $item) {
+            if (!$item->isDot()) {
+                removePath($item->getPathname());
+            }
+        }
+        if (!rmdir($path)) {
+            throw new Exception('Could not remove directory: ' . $path);
         }
     }
 }
