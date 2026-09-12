@@ -19,7 +19,6 @@ jobs:
         uses: ./.github/actions/deploy-ftp
         with:
           config: europe
-          mode: TEST
           ftp-host: ${{ vars.FTP_HOST }}
           ftp-path: /
           unzip-script: site.unzip
