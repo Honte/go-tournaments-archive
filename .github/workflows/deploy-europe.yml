@@ -1,9 +1,7 @@
 name: Deploy European Archive
 on:
   push:
-    branches:
-      - main
-      - deployments
+    branches: [main]
   workflow_dispatch:
 env:
   VERSION: ${{ github.sha }}
@@ -23,7 +21,6 @@ jobs:
           ftp-path: /
           unzip-script: site.unzip
           site-url: ${{ vars.SITE }}
-          skip-check: true
         env:
           FTP_USER: ${{ secrets.FTP_USER }}
           FTP_PASS: ${{ secrets.FTP_PASS }}

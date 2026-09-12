@@ -1,8 +1,7 @@
 name: Deploy PGC
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   workflow_dispatch:
 env:
   VERSION: ${{ github.sha }}
