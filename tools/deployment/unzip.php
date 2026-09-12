@@ -29,18 +29,32 @@ function deploy()
         respond(403, 'Unauthorized.');
     }
 
+    // Append &mode=TEST to validate without creating, extracting, moving or deleting files.
+    $mode = isset($_GET['mode']) ? $_GET['mode'] : 'DEPLOY';
+    if ($mode !== 'DEPLOY' && $mode !== 'TEST') {
+        respond(400, 'Invalid mode; use TEST or DEPLOY.');
+    }
+
     $archive = __DIR__ . DIRECTORY_SEPARATOR . 'site.zip';
     if (!is_file($archive)) {
         respond(400, 'Archive not found: site.zip');
     }
 
+    if (!is_readable($archive)) {
+        respond(400, 'Archive is not readable: site.zip');
+    }
+
     $zip = new ZipArchive();
-    $result = $zip->open($archive);
+    $result = $zip->open($archive, $mode === 'TEST' ? ZipArchive::CHECKCONS : 0);
     if ($result !== true) {
         respond(400, 'Could not open site.zip (ZipArchive error ' . $result . ').');
     }
 
     validateZipEntries($zip);
+
+    if ($mode === 'TEST') {
+        testDeployment($zip);
+    }
 
     $backup = __DIR__ . DIRECTORY_SEPARATOR . 'backup';
     if (file_exists($backup) || is_link($backup)) {
@@ -111,6 +125,52 @@ function deploy()
         respond(200, 'Deployment complete. Backup cleanup failed: ' . $error->getMessage());
     }
     respond(200, 'Deployment complete.');
+}
+
+function testDeployment($zip)
+{
+    if ($zip->numFiles === 0) {
+        respond(400, 'Archive is empty.');
+    }
+    $names = array();
+    for ($index = 0; $index < $zip->numFiles; $index++) {
+        $stat = $zip->statIndex($index);
+        if ($stat === false || isset($names[$stat['name']])) {
+            respond(400, 'Archive contains an unreadable or duplicate entry.');
+        }
+        $names[$stat['name']] = true;
+        if (substr($stat['name'], -1) === '/') {
+            continue;
+        }
+        $stream = $zip->getStream($stat['name']);
+        if ($stream === false) {
+            respond(400, 'Could not read archive entry: ' . $stat['name']);
+        }
+        $hash = hash_init('crc32b');
+        try {
+            $size = hash_update_stream($hash, $stream);
+        } catch (Exception $error) {
+            fclose($stream);
+            respond(400, 'Could not validate archive entry: ' . $stat['name']);
+        }
+        fclose($stream);
+        if ($size !== $stat['size'] || hash_final($hash) !== sprintf('%08x', $stat['crc'])) {
+            respond(400, 'Archive entry failed size or CRC validation: ' . $stat['name']);
+        }
+    }
+    if (!$zip->close()) {
+        respond(500, 'Could not close archive.');
+    }
+
+    $disabled = array_map('trim', explode(',', strtolower(ini_get('disable_functions'))));
+    if (!function_exists('unlink') || in_array('unlink', $disabled, true)
+        || !is_writable(__DIR__)
+        || (DIRECTORY_SEPARATOR === '/' && !is_executable(__DIR__))
+        || (DIRECTORY_SEPARATOR === '\\' && !is_writable(__FILE__))) {
+        respond(500, 'TEST: Archive validated, but self-removal permission check failed. No files changed.');
+    }
+    respond(200, 'TEST complete. site.zip is readable; archive paths, sizes and CRCs validated. '
+        . 'Self-removal permission checks passed (deletion not attempted or guaranteed). No files changed.');
 }
 
 function validateZipEntries($zip)

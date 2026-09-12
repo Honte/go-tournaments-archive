@@ -1,6 +1,9 @@
 name: Deploy FTP archive
 description: Check configuration changes, build, upload a ZIP and PHP helper, and trigger extraction. Requires FTP_USER, FTP_PASS, and FTP_TOKEN environment variables.
 inputs:
+  mode:
+    description: 'DEPLOY to publish, or TEST to validate without changing site files'
+    default: DEPLOY
   skip-check:
     description: Skip the change check and force deployment
     default: 'false'
@@ -81,9 +84,10 @@ runs:
         curl --fail --show-error --silent --ftp-create-dirs --user "$FTP_USER:$FTP_PASS" -T dist/site.zip "${base_url}/site.zip"
         curl --fail --show-error --silent --ftp-create-dirs --user "$FTP_USER:$FTP_PASS" -T "dist/$UNZIP_SCRIPT" "${base_url}/$UNZIP_SCRIPT"
       shell: bash
-    - name: Unzip bundle
+    - name: ${{ inputs.mode == 'TEST' && 'Test bundle' || 'Unzip bundle' }}
       if: ${{ github.event_name == 'workflow_dispatch' || steps.check.outputs[format('deploy_{0}', inputs.config)] == 'true' }}
       env:
+        DEPLOY_MODE: ${{ inputs.mode }}
         SITE_URL: ${{ inputs.site-url }}
         UNZIP_SCRIPT: ${{ inputs.unzip-script }}
       run: |
@@ -92,7 +96,8 @@ runs:
         response_file="$(mktemp)"
         status="$(
           curl --show-error --silent --output "$response_file" --write-out "%{http_code}" --get "${SITE_URL%/}/$UNZIP_SCRIPT" \
-            --data-urlencode "token=${FTP_TOKEN}"
+            --data-urlencode "token=${FTP_TOKEN}" \
+            --data-urlencode "mode=${DEPLOY_MODE}"
         )"
         cat "$response_file"
         test "$status" -ge 200 && test "$status" -lt 300
