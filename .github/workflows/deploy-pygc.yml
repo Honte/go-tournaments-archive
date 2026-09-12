@@ -1,0 +1,52 @@
+name: Deploy PYGC
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+env:
+  VERSION: ${{ github.sha }}
+
+jobs:
+  deploy-pygc-prod:
+    runs-on: ubuntu-latest
+    environment:
+      name: pygc
+      url: ${{ vars.SITE }}
+    env:
+      CONFIG: pygc
+      SSH_PATH: '/usr/home/${{ secrets.SSH_USER }}/domains/${{ vars.SSH_HOST }}/public_nodejs/archive'
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Check deployment changes
+        id: check
+        if: ${{ github.event_name == 'push' }}
+        env:
+          BASE: ${{ github.event.before }}
+        run: |
+          git fetch --no-tags --depth=1 origin "$BASE"
+          npm run deploy:check -- pygc --base "$BASE"
+
+      - run: npm run build
+        if: ${{ github.event_name == 'workflow_dispatch' || steps.check.outputs.deploy_pygc == 'true' }}
+
+      - name: Deploy
+        if: ${{ github.event_name == 'workflow_dispatch' || steps.check.outputs.deploy_pygc == 'true' }}
+        uses: appleboy/scp-action@v1
+        with:
+          host: ${{ vars.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          passphrase: ${{ secrets.SSH_KEY_PASS }}
+          source: out/*
+          strip_components: 1
+          target: ${{ env.SSH_PATH }}

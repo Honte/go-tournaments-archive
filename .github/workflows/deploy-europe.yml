@@ -1,0 +1,27 @@
+name: Deploy European Archive
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+env:
+  VERSION: ${{ github.sha }}
+jobs:
+  deploy-europe-prod:
+    runs-on: ubuntu-latest
+    environment:
+      name: europe
+      url: ${{ vars.SITE }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy archive
+        uses: ./.github/actions/deploy-ftp
+        with:
+          config: europe
+          ftp-host: ${{ vars.FTP_HOST }}
+          ftp-path: /
+          unzip-script: site.unzip
+          site-url: ${{ vars.SITE }}
+        env:
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASS: ${{ secrets.FTP_PASS }}
+          FTP_TOKEN: ${{ secrets.FTP_TOKEN }}

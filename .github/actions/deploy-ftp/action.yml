@@ -1,0 +1,104 @@
+name: Deploy FTP archive
+description: Check configuration changes, build, upload a ZIP and PHP helper, and trigger extraction. Requires FTP_USER, FTP_PASS, and FTP_TOKEN environment variables.
+inputs:
+  mode:
+    description: 'DEPLOY to publish, or TEST to validate without changing site files'
+    default: DEPLOY
+  skip-check:
+    description: Skip the change check and force deployment
+    default: 'false'
+  config:
+    description: Build configuration
+    required: true
+  ftp-host:
+    description: FTP hostname
+    required: true
+  ftp-path:
+    description: FTP directory serving the archive
+    required: true
+  unzip-script:
+    description: Uploaded PHP helper filename
+    default: unzip.php
+  site-url:
+    description: Public base URL serving the PHP helper
+    required: true
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 24
+        cache: npm
+    - run: npm ci
+      shell: bash
+    - name: Check deployment changes
+      id: check
+      if: ${{ github.event_name == 'push' }}
+      env:
+        BASE: ${{ github.event.before }}
+        NEW_BRANCH: ${{ github.event.created }}
+        SKIP_CHECK: ${{ inputs.skip-check }}
+        CONFIG: ${{ inputs.config }}
+      run: |
+        if [ "$SKIP_CHECK" = "true" ] || [ "$NEW_BRANCH" = "true" ]; then
+          echo "Skipping change check: deploying $CONFIG."
+          echo "deploy_${CONFIG}=true" >> "$GITHUB_OUTPUT"
+        else
+          git fetch --no-tags --depth=1 origin "$BASE"
+          npm run deploy:check -- "$CONFIG" --base "$BASE"
+        fi
+      shell: bash
+    - run: npm run build
+      if: ${{ github.event_name == 'workflow_dispatch' || steps.check.outputs[format('deploy_{0}', inputs.config)] == 'true' }}
+      shell: bash
+      env:
+        CONFIG: ${{ inputs.config }}
+    - name: Prepare bundle
+      if: ${{ github.event_name == 'workflow_dispatch' || steps.check.outputs[format('deploy_{0}', inputs.config)] == 'true' }}
+      env:
+        DEPLOY_TOKEN: ${{ env.FTP_TOKEN }}
+        UNZIP_SCRIPT: ${{ inputs.unzip-script }}
+      run: |
+        set -euo pipefail
+        node tools/deployment/prepare.js --source tools/deployment/unzip.php --target "dist/$UNZIP_SCRIPT"
+        (cd out && zip -qr ../dist/site.zip .)
+      shell: bash
+    - name: Upload bundle
+      if: ${{ github.event_name == 'workflow_dispatch' || steps.check.outputs[format('deploy_{0}', inputs.config)] == 'true' }}
+      env:
+        FTP_HOST: ${{ inputs.ftp-host }}
+        FTP_PATH: ${{ inputs.ftp-path }}
+        UNZIP_SCRIPT: ${{ inputs.unzip-script }}
+      run: |
+        set -euo pipefail
+        : "${FTP_HOST:?FTP host is required}"
+        : "${FTP_PATH:?FTP path is required}"
+        remote_path="${FTP_PATH%/}"
+
+        if [ -n "$remote_path" ]; then
+          base_url="ftp://${FTP_HOST}/${remote_path}"
+        else
+          base_url="ftp://${FTP_HOST}"
+        fi
+
+        curl --fail --show-error --silent --ftp-create-dirs --user "$FTP_USER:$FTP_PASS" -T dist/site.zip "${base_url}/site.zip"
+        curl --fail --show-error --silent --ftp-create-dirs --user "$FTP_USER:$FTP_PASS" -T "dist/$UNZIP_SCRIPT" "${base_url}/$UNZIP_SCRIPT"
+      shell: bash
+    - name: ${{ inputs.mode == 'TEST' && 'Test bundle' || 'Unzip bundle' }}
+      if: ${{ github.event_name == 'workflow_dispatch' || steps.check.outputs[format('deploy_{0}', inputs.config)] == 'true' }}
+      env:
+        DEPLOY_MODE: ${{ inputs.mode }}
+        SITE_URL: ${{ inputs.site-url }}
+        UNZIP_SCRIPT: ${{ inputs.unzip-script }}
+      run: |
+        set -euo pipefail
+        : "${SITE_URL:?Site URL is required}"
+        response_file="$(mktemp)"
+        status="$(
+          curl --show-error --silent --output "$response_file" --write-out "%{http_code}" --get "${SITE_URL%/}/$UNZIP_SCRIPT" \
+            --data-urlencode "token=${FTP_TOKEN}" \
+            --data-urlencode "mode=${DEPLOY_MODE}"
+        )"
+        cat "$response_file"
+        test "$status" -ge 200 && test "$status" -lt 300
+      shell: bash

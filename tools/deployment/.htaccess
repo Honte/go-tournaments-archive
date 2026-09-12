@@ -2,6 +2,7 @@ AddDefaultCharset utf-8
 Options -Indexes
 Options +FollowSymLinks
 DirectorySlash Off
+DirectoryIndex index.php index.html
 
 <IfModule mod_rewrite.c>
    RewriteEngine On

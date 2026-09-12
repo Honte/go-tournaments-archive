@@ -1,187 +1,250 @@
 <?php
 const EXPECTED_TOKEN = '__DEPLOY_TOKEN__';
-const DEFAULT_ARCHIVE = 'site.zip';
 
-header('Content-Type: text/plain; charset=utf-8');
+header('Content-Type: text/plain; charset=utf-8', true, 500);
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 ini_set('max_execution_time', '120');
 ob_start();
 
 set_error_handler('deployErrorHandler');
-register_shutdown_function('deployShutdownHandler');
 
 try {
     deploy();
 } catch (Exception $error) {
-    fail(500, 'Deployment failed: ' . $error->getMessage());
+    respond(500, 'Deployment failed: ' . $error->getMessage());
 }
 
 function deploy()
 {
     if (EXPECTED_TOKEN === '' || EXPECTED_TOKEN === '__DEPLOY_TOKEN__') {
-        fail(500, 'Deployment token is not configured.');
+        respond(500, 'Deployment token is not configured.');
     }
 
-    $token = getQueryString('token', '');
+    $token = isset($_GET['token']) && is_string($_GET['token']) ? $_GET['token'] : '';
+    if (function_exists('get_magic_quotes_gpc') && get_magic_quotes_gpc()) {
+        $token = stripslashes($token);
+    }
     if ($token === '' || EXPECTED_TOKEN !== $token) {
-        fail(403, 'Unauthorized.');
+        respond(403, 'Unauthorized.');
     }
 
-    $archiveName = DEFAULT_ARCHIVE;
-    $root = realpath(__DIR__);
-    $scriptPath = realpath(__FILE__);
-    $archivePath = $root . DIRECTORY_SEPARATOR . $archiveName;
-
-    if (!is_file($archivePath)) {
-        fail(400, 'Archive not found: ' . $archiveName);
+    // Append &mode=TEST to validate without creating, extracting, moving or deleting files.
+    $mode = isset($_GET['mode']) ? $_GET['mode'] : 'DEPLOY';
+    if ($mode !== 'DEPLOY' && $mode !== 'TEST') {
+        respond(400, 'Invalid mode; use TEST or DEPLOY.');
     }
 
-    $archiveRealPath = realpath($archivePath);
+    $archive = __DIR__ . DIRECTORY_SEPARATOR . 'site.zip';
+    if (!is_file($archive)) {
+        respond(400, 'Archive not found: site.zip');
+    }
+
+    if (!is_readable($archive)) {
+        respond(400, 'Archive is not readable: site.zip');
+    }
+
     $zip = new ZipArchive();
-    $openResult = $zip->open($archiveRealPath);
-
-    if ($openResult !== true) {
-        fail(400, 'Could not open archive: ' . $archiveName . ' (' . zipOpenErrorMessage($openResult) . ').');
+    $result = $zip->open($archive, $mode === 'TEST' ? ZipArchive::CHECKCONS : 0);
+    if ($result !== true) {
+        respond(400, 'Could not open site.zip (ZipArchive error ' . $result . ').');
     }
 
     validateZipEntries($zip);
 
-    clearDirectory($root, array($scriptPath, $archiveRealPath));
-
-    if (!$zip->extractTo($root)) {
-        $zip->close();
-        fail(500, 'Archive extraction failed.');
-    }
-    $zip->close();
-
-    if (is_file($archiveRealPath) && !unlink($archiveRealPath)) {
-        fail(500, 'Could not remove archive after extraction.');
+    if ($mode === 'TEST') {
+        testDeployment($zip);
     }
 
-    setHttpStatus(200);
-    succeedAndRemoveScript('Deployment complete.', $scriptPath);
+    $backup = __DIR__ . DIRECTORY_SEPARATOR . 'backup';
+    if (file_exists($backup) || is_link($backup)) {
+        respond(500, 'Backup directory already exists; recover or remove it before deploying.');
+    }
+    if (!mkdir($backup, 0700)) {
+        respond(500, 'Could not create backup directory.');
+    }
+
+    $backedUpNames = array();
+    $extractedRoots = array();
+    $active = true;
+    register_shutdown_function(function () use (&$active, &$backedUpNames, &$extractedRoots, $backup) {
+        if ($active) {
+            $active = false;
+            try {
+                rollbackDeployment($backup, $backedUpNames, $extractedRoots);
+            } catch (Exception $error) {
+                respond(500, 'Rollback failed; backup retained: ' . $error->getMessage());
+            }
+        }
+    });
+
+    try {
+        foreach (new DirectoryIterator(__DIR__) as $item) {
+            $path = $item->getPathname();
+            $name = $item->getFilename();
+            if ($item->isDot() || $path === __FILE__ || $path === $archive || $path === $backup) {
+                continue;
+            }
+            $target = $backup . DIRECTORY_SEPARATOR . $name;
+            if ($name === 'index.php' || $name === '.htaccess') {
+                if (!is_file($path) || is_link($path) || !copy($path, $target)) {
+                    throw new Exception('Could not back up preserved file: ' . $name);
+                }
+            } elseif (!rename($path, $target)) {
+                throw new Exception('Could not back up: ' . $name);
+            }
+            $backedUpNames[] = $name;
+        }
+
+        $extractedRoots = archiveRoots($zip);
+        if (!$zip->extractTo(__DIR__)) {
+            throw new Exception('Archive extraction failed.');
+        }
+        if (!$zip->close()) {
+            throw new Exception('Could not close archive.');
+        }
+        if (!unlink($archive) || !unlink(__FILE__)) {
+            throw new Exception('Could not remove deployment files.');
+        }
+    } catch (Exception $error) {
+        $active = false;
+        try {
+            rollbackDeployment($backup, $backedUpNames, $extractedRoots);
+        } catch (Exception $rollbackError) {
+            respond(500, 'Deployment failed: ' . $error->getMessage()
+                . '; rollback failed, backup retained: ' . $rollbackError->getMessage());
+        }
+        respond(500, 'Deployment failed; previous site restored: ' . $error->getMessage());
+    }
+
+    // The deployment is committed; deleting the old snapshot cannot be rolled back.
+    $active = false;
+    try {
+        removePath($backup);
+    } catch (Exception $error) {
+        respond(200, 'Deployment complete. Backup cleanup failed: ' . $error->getMessage());
+    }
+    respond(200, 'Deployment complete.');
 }
 
-function getQueryString($name, $default)
+function testDeployment($zip)
 {
-    if (!isset($_GET[$name])) {
-        return $default;
+    if ($zip->numFiles === 0) {
+        respond(400, 'Archive is empty.');
+    }
+    $names = array();
+    for ($index = 0; $index < $zip->numFiles; $index++) {
+        $stat = $zip->statIndex($index);
+        if ($stat === false || isset($names[$stat['name']])) {
+            respond(400, 'Archive contains an unreadable or duplicate entry.');
+        }
+        $names[$stat['name']] = true;
+        if (substr($stat['name'], -1) === '/') {
+            continue;
+        }
+        $stream = $zip->getStream($stat['name']);
+        if ($stream === false) {
+            respond(400, 'Could not read archive entry: ' . $stat['name']);
+        }
+        $hash = hash_init('crc32b');
+        try {
+            $size = hash_update_stream($hash, $stream);
+        } catch (Exception $error) {
+            fclose($stream);
+            respond(400, 'Could not validate archive entry: ' . $stat['name']);
+        }
+        fclose($stream);
+        if ($size !== $stat['size'] || hash_final($hash) !== sprintf('%08x', $stat['crc'])) {
+            respond(400, 'Archive entry failed size or CRC validation: ' . $stat['name']);
+        }
+    }
+    if (!$zip->close()) {
+        respond(500, 'Could not close archive.');
     }
 
-    $value = (string) $_GET[$name];
-    if (function_exists('get_magic_quotes_gpc') && get_magic_quotes_gpc()) {
-        $value = stripslashes($value);
+    $disabled = array_map('trim', explode(',', strtolower(ini_get('disable_functions'))));
+    if (!function_exists('unlink') || in_array('unlink', $disabled, true)
+        || !is_writable(__DIR__)
+        || (DIRECTORY_SEPARATOR === '/' && !is_executable(__DIR__))
+        || (DIRECTORY_SEPARATOR === '\\' && !is_writable(__FILE__))) {
+        respond(500, 'TEST: Archive validated, but self-removal permission check failed. No files changed.');
     }
-
-    return $value;
+    respond(200, 'TEST complete. site.zip is readable; archive paths, sizes and CRCs validated. '
+        . 'Self-removal permission checks passed (deletion not attempted or guaranteed). No files changed.');
 }
 
 function validateZipEntries($zip)
 {
     for ($index = 0; $index < $zip->numFiles; $index++) {
-        $entryName = $zip->getNameIndex($index);
-        if ($entryName === false) {
-            fail(400, 'Archive contains an unreadable entry.');
+        $entry = $zip->getNameIndex($index);
+        if ($entry === false) {
+            respond(400, 'Archive contains an unreadable entry.');
         }
 
-        $normalized = str_replace('\\', '/', $entryName);
-        if (
-            $normalized === '' ||
-            strpos($normalized, '/') === 0 ||
-            preg_match('/^[A-Za-z]:\//', $normalized) === 1
-        ) {
-            fail(400, 'Archive contains an unsafe entry: ' . $entryName);
+        $normalized = str_replace('\\', '/', $entry);
+        if ($normalized === '' || $normalized[0] === '/' || preg_match('/^[A-Za-z]:/', $normalized)) {
+            respond(400, 'Archive contains an unsafe entry: ' . $entry);
         }
 
         $parts = explode('/', $normalized);
-        $lastIndex = count($parts) - 1;
+
+        if (in_array(strtolower($parts[0]), array('backup', 'site.zip', strtolower(basename(__FILE__))), true)) {
+            respond(400, 'Archive contains a reserved deployment path.');
+        }
+
         foreach ($parts as $partIndex => $part) {
-            if ($part === '..' || $part === '.') {
-                fail(400, 'Archive contains an unsafe entry: ' . $entryName);
-            }
-
-            if ($part === '' && $partIndex !== $lastIndex) {
-                fail(400, 'Archive contains an unsafe entry: ' . $entryName);
+            if ($part === '..' || $part === '.' || ($part === '' && $partIndex !== count($parts) - 1)) {
+                respond(400, 'Archive contains an unsafe entry: ' . $entry);
             }
         }
     }
 }
 
-function zipOpenErrorMessage($code)
+function archiveRoots($zip)
 {
-    $messages = array(
-        ZipArchive::ER_EXISTS => 'file already exists',
-        ZipArchive::ER_INCONS => 'zip archive inconsistent',
-        ZipArchive::ER_INVAL => 'invalid argument',
-        ZipArchive::ER_MEMORY => 'memory allocation failure',
-        ZipArchive::ER_NOENT => 'file does not exist',
-        ZipArchive::ER_NOZIP => 'not a zip archive',
-        ZipArchive::ER_OPEN => 'cannot open file',
-        ZipArchive::ER_READ => 'read error',
-        ZipArchive::ER_SEEK => 'seek error',
-    );
-
-    return isset($messages[$code]) ? $messages[$code] : 'ZipArchive error code ' . $code;
+    $roots = array();
+    for ($index = 0; $index < $zip->numFiles; $index++) {
+        $parts = explode('/', str_replace('\\', '/', $zip->getNameIndex($index)));
+        $roots[$parts[0]] = true;
+    }
+    return array_keys($roots);
 }
 
-function clearDirectory($root, $preservedPaths)
+function rollbackDeployment($backup, $backedUpNames, $extractedRoots)
 {
-    foreach (new DirectoryIterator($root) as $item) {
-        if ($item->isDot()) {
-            continue;
-        }
+    foreach ($extractedRoots as $name) {
+        removePath(__DIR__ . DIRECTORY_SEPARATOR . $name);
+    }
 
-        $path = $item->getPathname();
-        if (isPreservedPath($path, $preservedPaths)) {
-            continue;
+    foreach ($backedUpNames as $name) {
+        $target = __DIR__ . DIRECTORY_SEPARATOR . $name;
+        removePath($target);
+        if (!rename($backup . DIRECTORY_SEPARATOR . $name, $target)) {
+            throw new Exception('Could not restore: ' . $name);
         }
+    }
 
-        deletePath($path);
+    if (!rmdir($backup)) {
+        throw new Exception('Could not remove empty backup directory.');
     }
 }
 
-function deletePath($path)
+function removePath($path)
 {
     if (is_link($path) || is_file($path)) {
         if (!unlink($path)) {
-            fail(500, 'Could not remove file: ' . basename($path));
+            throw new Exception('Could not remove: ' . $path);
         }
-
-        return;
-    }
-
-    if (is_dir($path)) {
+    } elseif (is_dir($path)) {
         foreach (new DirectoryIterator($path) as $item) {
             if (!$item->isDot()) {
-                deletePath($item->getPathname());
+                removePath($item->getPathname());
             }
         }
-
         if (!rmdir($path)) {
-            fail(500, 'Could not remove directory: ' . basename($path));
-        }
-
-        return;
-    }
-
-    fail(500, 'Could not identify path type: ' . basename($path));
-}
-
-function isPreservedPath($path, $preservedPaths)
-{
-    $realPath = realpath($path);
-    if ($realPath === false) {
-        return false;
-    }
-
-    foreach ($preservedPaths as $preservedPath) {
-        if ($realPath === $preservedPath) {
-            return true;
+            throw new Exception('Could not remove directory: ' . $path);
         }
     }
-
-    return false;
 }
 
 function deployErrorHandler($severity, $message, $file, $line)
@@ -189,71 +252,15 @@ function deployErrorHandler($severity, $message, $file, $line)
     if (!(error_reporting() & $severity)) {
         return false;
     }
-
     throw new ErrorException($message, 0, $severity, $file, $line);
 }
 
-function deployShutdownHandler()
-{
-    $error = error_get_last();
-    if ($error === null) {
-        return;
-    }
-
-    $fatalTypes = array(E_ERROR, E_PARSE, E_CORE_ERROR, E_COMPILE_ERROR, E_USER_ERROR);
-    if (!in_array($error['type'], $fatalTypes, true)) {
-        return;
-    }
-
-    setHttpStatus(500);
-    echo 'ERROR 500: Fatal PHP error: ' . $error['message'] . ' in ' . $error['file'] . ':' . $error['line'] . "\n";
-}
-
-function succeed($message)
-{
-    clearOutputBuffer();
-    echo 'SUCCESS: ' . $message . "\n";
-}
-
-function succeedAndRemoveScript($message, $scriptPath)
-{
-    clearOutputBuffer();
-    echo 'SUCCESS: ' . $message . "\n";
-
-    if (!unlink($scriptPath)) {
-        echo 'WARNING: Could not remove unzip script.' . "\n";
-    }
-}
-
-function fail($status, $message)
-{
-    setHttpStatus($status);
-    clearOutputBuffer();
-    echo 'ERROR ' . $status . ': ' . $message . "\n";
-    exit;
-}
-
-function clearOutputBuffer()
+function respond($status, $message)
 {
     while (ob_get_level() > 0) {
         ob_end_clean();
     }
-}
-
-function setHttpStatus($status)
-{
-    if (function_exists('http_response_code')) {
-        http_response_code($status);
-        return;
-    }
-
-    $messages = array(
-        200 => 'OK',
-        400 => 'Bad Request',
-        403 => 'Forbidden',
-        500 => 'Internal Server Error',
-    );
-    $message = isset($messages[$status]) ? $messages[$status] : 'Status';
-
-    header('HTTP/1.1 ' . $status . ' ' . $message);
+    header('Content-Type: text/plain; charset=utf-8', true, $status);
+    echo ($status === 200 ? 'SUCCESS: ' : 'ERROR ' . $status . ': ') . $message . "\n";
+    exit;
 }
