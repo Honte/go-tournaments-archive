@@ -7,7 +7,7 @@ import { createGames, state } from './testFixtures';
 describe('dependent normalization, sorting, and grouping', () => {
   const games = createGames();
 
-  it('clears structurally invalid dependents but keeps a valid country-anchored opponent country', () => {
+  it('clears structurally invalid dependents but keeps a valid country-anchored opponent and country', () => {
     const invalid = normalizeGameRecordsState(
       games,
       state({ player: 'a', country: 'FR', opponent: 'e', opponentCountry: 'PL' })
@@ -21,8 +21,10 @@ describe('dependent normalization, sorting, and grouping', () => {
     assert.equal(invalid.country, undefined);
     assert.equal(invalid.opponent, undefined);
     assert.equal(invalid.opponentCountry, undefined);
-    assert.equal(countryAnchored.opponent, undefined);
+    assert.equal(countryAnchored.opponent, 'b');
     assert.equal(countryAnchored.opponentCountry, 'DE');
+    assert.equal(normalizeGameRecordsState(games, state({ opponent: 'b' })).opponent, undefined);
+    assert.equal(normalizeGameRecordsState(games, state({ country: 'PL', opponent: 'c' })).opponent, undefined);
   });
 
   it('sorts stably by moves and by contiguous rank gap', () => {
