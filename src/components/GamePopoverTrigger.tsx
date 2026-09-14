@@ -19,7 +19,7 @@ export function GamePopoverTrigger({ as = 'div', game, players, children, ...pro
 
   return (
     <Component
-      onClick={(ev: MouseEvent) => {
+      onClickCapture={(ev: MouseEvent) => {
         document.dispatchEvent(
           new CustomEvent(SHOW_POPOVER_EVENT, {
             detail: {
