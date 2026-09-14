@@ -1,6 +1,6 @@
 'use client';
 
-import { useId, useState } from 'react';
+import { addTransitionType, startTransition, useId, useState, ViewTransition } from 'react';
 import type { CountrySummary, PlayerSummary } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
@@ -56,48 +56,62 @@ export function Medalists({ countries, event, players, translations }: Medalists
                 label: t(`stats.medalistView.${option}`),
               }))}
               controlsId={contentId}
-              onChange={setView}
+              onChange={(value) =>
+                startTransition(() => {
+                  addTransitionType(value === 'countries' ? 'medalists-next' : 'medalists-previous');
+                  setView(value);
+                })
+              }
             />
           ) : undefined
         }
       >
         {t('stats.medalists')}
       </H1>
-      <div id={contentId} className="grid min-h-0 flex-1 overflow-hidden">
-        {view === 'individuals' ? (
-          <div key="individuals" className="min-w-0">
-            {players.length > 10 ? (
-              <ExpandableContent
-                collapsed={playerTable(players.slice(0, 10))}
-                expanded={playerTable(players)}
-                moreLabel={t('actions.showAllMedalists')}
-                lessLabel={t('actions.showLess')}
-              />
-            ) : (
-              playerTable(players)
-            )}
-          </div>
-        ) : showViewSwitch ? (
-          <div key="countries" className="flex min-w-0 flex-col">
-            {countries.length > 10 ? (
-              <ExpandableContent
-                collapsed={countryTable(countries.slice(0, 10))}
-                expanded={countryTable(countries)}
-                moreLabel={t('actions.showAllMedalists')}
-                lessLabel={t('actions.showLess')}
-                actions={<AllCountriesStatsLink event={event} translations={translations} />}
-              />
-            ) : (
-              <>
-                {countryTable(countries)}
-                <div className="mt-auto">
-                  <AllCountriesStatsLink event={event} translations={translations} />
-                </div>
-              </>
-            )}
-          </div>
-        ) : null}
-      </div>
+      <ViewTransition
+        default="none"
+        update={{
+          default: 'none',
+          'medalists-next': 'slide-left',
+          'medalists-previous': 'slide-right',
+        }}
+      >
+        <div id={contentId} className="grid min-h-0 flex-1 overflow-hidden">
+          {view === 'individuals' ? (
+            <div key="individuals" className="min-w-0">
+              {players.length > 10 ? (
+                <ExpandableContent
+                  collapsed={playerTable(players.slice(0, 10))}
+                  expanded={playerTable(players)}
+                  moreLabel={t('actions.showAllMedalists')}
+                  lessLabel={t('actions.showLess')}
+                />
+              ) : (
+                playerTable(players)
+              )}
+            </div>
+          ) : showViewSwitch ? (
+            <div key="countries" className="flex min-w-0 flex-col">
+              {countries.length > 10 ? (
+                <ExpandableContent
+                  collapsed={countryTable(countries.slice(0, 10))}
+                  expanded={countryTable(countries)}
+                  moreLabel={t('actions.showAllMedalists')}
+                  lessLabel={t('actions.showLess')}
+                  actions={<AllCountriesStatsLink event={event} translations={translations} />}
+                />
+              ) : (
+                <>
+                  {countryTable(countries)}
+                  <div className="mt-auto">
+                    <AllCountriesStatsLink event={event} translations={translations} />
+                  </div>
+                </>
+              )}
+            </div>
+          ) : null}
+        </div>
+      </ViewTransition>
     </div>
   );
 }
