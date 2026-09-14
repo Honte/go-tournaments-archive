@@ -236,6 +236,7 @@ export function calculateStats(
 
   for (const country in countries) {
     const stats = countries[country];
+    const countrySgfs = new Set<string>();
     const [gold, silver, bronze] = stats.medals;
 
     stats.score = gold.length * 10_000 + silver.length * 100 + bronze.length;
@@ -251,6 +252,12 @@ export function calculateStats(
         for (const stage of result.stages) {
           const outcomes = getGameStats(stage.games);
 
+          for (const game of stage.games) {
+            if (game.props?.sgf) {
+              countrySgfs.add(game.props.sgf);
+            }
+          }
+
           yearStats.totalGames += outcomes.games;
           yearStats.totalWon += outcomes.won;
           yearStats.totalDrawn += outcomes.drawn;
@@ -264,6 +271,8 @@ export function calculateStats(
       stats.totalGames += yearStats.totalGames;
       stats.bestPlace = Math.min(stats.bestPlace, yearStats.bestPlace);
     }
+
+    stats.totalSgfs = countrySgfs.size;
   }
 
   return {
@@ -380,6 +389,7 @@ export function calculateStats(
       medals: [[], [], []],
       categoriesMedals: setupCategoriesMedals(),
       totalGames: 0,
+      totalSgfs: 0,
       totalWon: 0,
       totalDrawn: 0,
       totalUnresolved: 0,

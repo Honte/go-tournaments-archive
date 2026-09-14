@@ -68,7 +68,7 @@ export async function PlayerPage({ event, locale, slug, category }: PlayerPagePr
           translations={translations}
         />
       )}
-      <Achievements event={event} player={statsPlayer} translations={translations} />
+      <Achievements event={event} player={statsPlayer} translations={translations} category={category} />
       <PlayerStats event={event} slug={player.id} locale={locale} category={category} />
     </Content>
   );

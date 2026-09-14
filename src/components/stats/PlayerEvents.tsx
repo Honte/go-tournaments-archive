@@ -8,6 +8,7 @@ import { getFormatter } from '@/i18n/formatter';
 import { getTranslator } from '@/i18n/translator';
 import { getGameStats } from '@/libs/games';
 import { getStageName } from '@/libs/stage';
+import { SgfCountLink } from '@/components/gameRecords/SgfCountLink';
 import { StatsTable } from '@/components/table/StatsTable';
 import type { StatsColumnDef } from '@/components/table/statsTableConfig';
 import { CountryLink } from '@/components/ui/CountryLink';
@@ -29,6 +30,7 @@ type EventRow = {
   rank?: string;
   place: number;
   games: number;
+  sgfs: number;
   country?: string;
   won: number;
   drawn: number;
@@ -55,7 +57,8 @@ export function PlayerEvents({
         results.push({
           year: event.year,
           name: event.name,
-          categories: showCategories && stage.categories ? stage.categories : undefined,
+          categories: stage.categories,
+          sgfs: new Set(stage.games.map((game) => game.props?.sgf).filter(Boolean)).size,
           stage: {
             name: stage.name,
             type: stage.type,
@@ -69,12 +72,14 @@ export function PlayerEvents({
     }
 
     return results.sort((a, b) => b.year - a.year);
-  }, [player, showCategories]);
+  }, [player]);
 
   const hasMultipleNames = data.some((row) => row.name !== player.name);
   const hasMultipleCountries = new Set(data.map((row) => row.country)).size > 1;
+  const hasMultipleStages = new Set(data.map((row) => getStageName(row.stage, translations))).size > 1;
   const hasDraws = data.some((row) => row.drawn > 0);
   const hasUnresolved = data.some((row) => row.unresolved > 0);
+  const hasSgfs = data.some((row) => row.sgfs > 0);
 
   const columns = useMemo<StatsColumnDef<EventRow>[]>(
     () =>
@@ -93,7 +98,7 @@ export function PlayerEvents({
               header: t('table.category'),
               cell: (info) => formatCategories(info.row.original.categories, t),
             },
-          {
+          hasMultipleStages && {
             accessorKey: 'stage',
             header: t('table.stage'),
             cell: (info) => getStageName(info.row.original.stage, translations),
@@ -138,6 +143,26 @@ export function PlayerEvents({
             accessorKey: 'unresolved',
             header: t('table.unresolved'),
           },
+          hasSgfs && {
+            accessorKey: 'sgfs',
+            header: t('table.sgfs'),
+            cell: ({ row }) => {
+              const categories = Object.keys(row.original.categories ?? {});
+              return (
+                <SgfCountLink
+                  event={event}
+                  locale={translations.locale}
+                  count={row.original.sgfs}
+                  filters={{
+                    player: player.id,
+                    country: row.original.country,
+                    years: [row.original.year],
+                    category: categories.length === 1 ? categories[0] : undefined,
+                  }}
+                />
+              );
+            },
+          },
           {
             accessorKey: 'wonPercent',
             header: t('table.wonPercent'),
@@ -145,7 +170,19 @@ export function PlayerEvents({
           },
         ] as StatsColumnDef<EventRow>[]
       ).filter(Boolean),
-    [translations, hasMultipleNames, hasMultipleCountries, hasDraws, hasUnresolved, event, t, showCategories]
+    [
+      translations,
+      hasMultipleNames,
+      hasMultipleCountries,
+      hasMultipleStages,
+      hasDraws,
+      hasUnresolved,
+      hasSgfs,
+      player.id,
+      event,
+      t,
+      showCategories,
+    ]
   );
 
   return (

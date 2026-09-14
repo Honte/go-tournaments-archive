@@ -48,7 +48,7 @@ function PlayerStatsContent({ event, player, translations, category }: PlayerSta
         <PlayerEvents event={event} player={player} translations={translations} showCategories={!category} />
         <PlayerGames event={event} player={player} translations={translations} />
       </div>
-      <Opponents event={event} player={player} translations={translations} />
+      <Opponents event={event} player={player} translations={translations} category={category} />
     </div>
   );
 }

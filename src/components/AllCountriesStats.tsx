@@ -7,6 +7,7 @@ import type { Locale, Translations } from '@/i18n/consts';
 import { getFormatter } from '@/i18n/formatter';
 import { getTranslator } from '@/i18n/translator';
 import { sortTableStats } from '@/libs/sort';
+import { SgfCountLink } from '@/components/gameRecords/SgfCountLink';
 import { StatsTable } from '@/components/table/StatsTable';
 import type { StatsColumnDef } from '@/components/table/statsTableConfig';
 import { CountryLink } from '@/components/ui/CountryLink';
@@ -29,6 +30,7 @@ type CountryRow = TableStats & {
   country: string;
   name: string;
   players: number;
+  sgfs: number;
 };
 
 export function AllCountriesStats({ event, countries, locale }: AllCountriesStatsProps) {
@@ -60,6 +62,7 @@ function AllCountriesStatsContent({ event, countries, translations }: AllCountri
 
           return {
             country: code,
+            sgfs: countries[code].totalSgfs,
             name: t(`country.${code}`),
             bestPlace,
             players: players.size,
@@ -79,6 +82,7 @@ function AllCountriesStatsContent({ event, countries, translations }: AllCountri
     [countries, t]
   );
   const hasDraws = data.some((country) => country.drawn > 0);
+  const hasSgfs = data.some((country) => country.sgfs > 0);
   const hasUnresolved = data.some((row) => row.unresolved > 0);
 
   const columns = useMemo<StatsColumnDef<CountryRow>[]>(
@@ -147,6 +151,18 @@ function AllCountriesStatsContent({ event, countries, translations }: AllCountri
             accessorKey: 'unresolved',
             header: t('table.unresolved'),
           },
+          hasSgfs && {
+            accessorKey: 'sgfs',
+            header: t('table.sgfs'),
+            cell: ({ row }) => (
+              <SgfCountLink
+                event={event}
+                locale={translations.locale}
+                count={row.original.sgfs}
+                filters={{ country: row.original.country }}
+              />
+            ),
+          },
           {
             accessorKey: 'wonPercent',
             header: t('table.wonPercent'),
@@ -154,7 +170,7 @@ function AllCountriesStatsContent({ event, countries, translations }: AllCountri
           },
         ] as StatsColumnDef<CountryRow>[]
       ).filter(Boolean),
-    [t, translations, event, hasDraws, hasUnresolved, formatter]
+    [t, translations, event, hasDraws, hasUnresolved, hasSgfs, formatter]
   );
 
   return <StatsTable columns={columns} data={data} />;

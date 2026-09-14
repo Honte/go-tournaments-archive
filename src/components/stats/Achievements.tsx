@@ -4,6 +4,7 @@ import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { Details } from '@/components/Details';
+import { SgfCountLink } from '@/components/gameRecords/SgfCountLink';
 import { AchievementYears } from '@/components/stats/AchievementYears';
 import { ExternalLink } from '@/components/ui/ExternalLink';
 import { H2 } from '@/components/ui/H2';
@@ -12,11 +13,12 @@ type AchievementsProps = {
   event: EventContext;
   player: PlayerStats;
   translations: Translations;
+  category?: string;
 };
 
 const MEDALS = ['first', 'second', 'third'] as const;
 
-export function Achievements({ event, player, translations }: AchievementsProps) {
+export function Achievements({ event, player, translations, category }: AchievementsProps) {
   const t = getTranslator(translations);
   const details: Record<string, ReactNode> = {};
 
@@ -55,6 +57,18 @@ export function Achievements({ event, player, translations }: AchievementsProps)
 
   details[t('table.events')] = player.results.length;
   details[t('table.games')] = player.totalGames;
+
+  if (player.totalSgfs > 0) {
+    details[t('table.sgfs')] = (
+      <SgfCountLink
+        event={event}
+        locale={translations.locale}
+        count={player.totalSgfs}
+        filters={{ player: player.id, category }}
+      />
+    );
+  }
+
   details[t('table.won')] = player.totalWon;
 
   if (player.totalDrawn > 0) {

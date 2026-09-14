@@ -6,6 +6,7 @@ import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getFormatter } from '@/i18n/formatter';
 import { getTranslator } from '@/i18n/translator';
+import { SgfCountLink } from '@/components/gameRecords/SgfCountLink';
 import { StatsTable } from '@/components/table/StatsTable';
 import type { StatsColumnDef } from '@/components/table/statsTableConfig';
 import { CountryLink } from '@/components/ui/CountryLink';
@@ -15,12 +16,14 @@ type CountryOpponentsProps = {
   event: EventContext;
   country: CountryStats;
   translations: Translations;
+  category?: string;
 };
 
 type CountryOpponentRow = {
   code: string;
   name: string;
   games: number;
+  sgfs: number;
   won: number;
   drawn: number;
   unresolved: number;
@@ -28,11 +31,12 @@ type CountryOpponentRow = {
   wonPercent: number;
 };
 
-export function CountryOpponents({ event, country, translations }: CountryOpponentsProps) {
+export function CountryOpponents({ event, country, translations, category }: CountryOpponentsProps) {
   const t = getTranslator(translations);
 
   const data = useMemo(() => {
     const countries: Record<string, CountryOpponentRow> = {};
+    const sgfs: Record<string, Set<string>> = {};
 
     for (const year in country.years) {
       const yearData = country.years[year];
@@ -48,6 +52,7 @@ export function CountryOpponents({ event, country, translations }: CountryOppone
               code: game.country,
               name: t(`country.${game.country}`),
               games: 0,
+              sgfs: 0,
               won: 0,
               drawn: 0,
               unresolved: 0,
@@ -59,6 +64,9 @@ export function CountryOpponents({ event, country, translations }: CountryOppone
             target.unresolved += Number(Boolean(game.unresolved));
             target.won += Number(game.won);
             target.drawn += Number(Boolean(game.drawn));
+            if (game.props?.sgf) {
+              (sgfs[game.country] ||= new Set<string>()).add(game.props.sgf);
+            }
           }
         }
       }
@@ -67,6 +75,7 @@ export function CountryOpponents({ event, country, translations }: CountryOppone
     const list = Object.values(countries);
 
     for (const player of list) {
+      player.sgfs = sgfs[player.code]?.size ?? 0;
       player.lost = player.games - player.won - player.drawn;
       player.wonPercent = player.won / player.games;
     }
@@ -75,6 +84,7 @@ export function CountryOpponents({ event, country, translations }: CountryOppone
   }, [country, t]);
   const hasDraws = data.some((opponent) => opponent.drawn > 0);
   const hasUnresolved = data.some((row) => row.unresolved > 0);
+  const hasSgfs = data.some((row) => row.sgfs > 0);
 
   const columns = useMemo<StatsColumnDef<CountryOpponentRow>[]>(
     () =>
@@ -113,6 +123,18 @@ export function CountryOpponents({ event, country, translations }: CountryOppone
             accessorKey: 'unresolved',
             header: t('table.unresolved'),
           },
+          hasSgfs && {
+            accessorKey: 'sgfs',
+            header: t('table.sgfs'),
+            cell: ({ row }) => (
+              <SgfCountLink
+                event={event}
+                locale={translations.locale}
+                count={row.original.sgfs}
+                filters={{ country: country.code, opponentCountry: row.original.code, category }}
+              />
+            ),
+          },
           {
             accessorKey: 'wonPercent',
             header: t('table.wonPercent'),
@@ -120,7 +142,7 @@ export function CountryOpponents({ event, country, translations }: CountryOppone
           },
         ] as StatsColumnDef<CountryOpponentRow>[]
       ).filter(Boolean),
-    [translations, t, event, hasDraws, hasUnresolved]
+    [translations, t, event, hasDraws, hasUnresolved, hasSgfs, country.code, category]
   );
 
   return (

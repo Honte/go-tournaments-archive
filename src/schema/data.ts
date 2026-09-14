@@ -290,6 +290,7 @@ export type CountrySummary = {
   score: number;
   bestPlace: number;
   totalGames: number;
+  totalSgfs: number;
   totalWon: number;
   totalDrawn: number;
   totalUnresolved: number;

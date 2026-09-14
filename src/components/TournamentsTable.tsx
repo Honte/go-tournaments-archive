@@ -6,8 +6,6 @@ import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getFormatter } from '@/i18n/formatter';
 import { getTranslator } from '@/i18n/translator';
-import { DEFAULT_GAME_RECORDS_STATE } from '@/libs/gameRecords/schema';
-import { serializeGameRecordsState } from '@/libs/gameRecords/urlState';
 import {
   sortPodium,
   sortTournamentRows,
@@ -15,8 +13,7 @@ import {
   type TournamentRow,
   type TournamentSortKey,
 } from '@/libs/tournaments';
-import { allGameStatsUrl } from '@/libs/urls';
-import { Link } from '@/components/navigation/Link';
+import { SgfCountLink } from '@/components/gameRecords/SgfCountLink';
 import { useStatsTable, type StatsColumnDef } from '@/components/table/statsTableConfig';
 import { TableHeader } from '@/components/table/TableHeader';
 import { TableRow } from '@/components/table/TableRow';
@@ -110,24 +107,14 @@ export function TournamentsTable({ event, rows, translations, showSgfs }: Tourna
             {
               accessorKey: 'sgfs',
               header: t('table.sgfs'),
-              cell: (info) => {
-                const { year, sgfs } = info.row.original;
-                const query = serializeGameRecordsState({
-                  ...DEFAULT_GAME_RECORDS_STATE,
-                  years: [year],
-                  group: 'year-round',
-                });
-                return sgfs > 0 ? (
-                  <Link
-                    className="text-archive-link underline hover:text-archive-link-hover"
-                    href={`${allGameStatsUrl(event, locale)}?${query}`}
-                  >
-                    {formatter.toCount(sgfs)}
-                  </Link>
-                ) : (
-                  0
-                );
-              },
+              cell: ({ row }) => (
+                <SgfCountLink
+                  event={event}
+                  locale={locale}
+                  count={row.original.sgfs}
+                  filters={{ years: [row.original.year], group: 'year-round' }}
+                />
+              ),
             } satisfies StatsColumnDef<TournamentRow>,
           ]
         : []),

@@ -8,6 +8,7 @@ import { getFormatter } from '@/i18n/formatter';
 import { getTranslator } from '@/i18n/translator';
 import { getGameStats } from '@/libs/games';
 import { sortTableStats } from '@/libs/sort';
+import { SgfCountLink } from '@/components/gameRecords/SgfCountLink';
 import { StatsTable } from '@/components/table/StatsTable';
 import type { StatsColumnDef } from '@/components/table/statsTableConfig';
 import { H2 } from '@/components/ui/H2';
@@ -17,27 +18,32 @@ type CountryPlayerProps = {
   event: EventContext;
   country: CountryStats;
   translations: Translations;
+  category?: string;
 };
 
 type CountryPlayerRow = TableStats & {
   id: string;
   name: string;
+  sgfs: number;
 };
 
-export function CountryPlayers({ event, country, translations }: CountryPlayerProps) {
+export function CountryPlayers({ event, country, translations, category }: CountryPlayerProps) {
   const t = getTranslator(translations);
   const formatter = getFormatter(translations.locale);
 
   const data = useMemo(() => {
     const players: Record<string, CountryPlayerRow> = {};
+    const sgfs: Record<string, Set<string>> = {};
 
     for (const year in country.years) {
       const yearData = country.years[year];
 
       for (const result of yearData.results) {
+        const playerSgfs = (sgfs[result.id] ||= new Set<string>());
         const player = (players[result.id] ||= {
           id: result.id,
           name: result.name,
+          sgfs: 0,
           games: 0,
           won: 0,
           drawn: 0,
@@ -64,6 +70,11 @@ export function CountryPlayers({ event, country, translations }: CountryPlayerPr
         }
 
         for (const stage of result.stages) {
+          for (const game of stage.games) {
+            if (game.props?.sgf) {
+              playerSgfs.add(game.props.sgf);
+            }
+          }
           const outcomes = getGameStats(stage.games);
           player.games += outcomes.games;
           player.won += outcomes.won;
@@ -76,6 +87,7 @@ export function CountryPlayers({ event, country, translations }: CountryPlayerPr
     const list = Object.values(players);
 
     for (const player of list) {
+      player.sgfs = sgfs[player.id].size;
       player.lost = player.games - player.won - player.drawn;
       player.wonPercent = player.won / player.games;
     }
@@ -83,6 +95,7 @@ export function CountryPlayers({ event, country, translations }: CountryPlayerPr
     return list.sort(sortTableStats);
   }, [country]);
   const hasDraws = data.some((player) => player.drawn > 0);
+  const hasSgfs = data.some((player) => player.sgfs > 0);
   const hasUnresolved = data.some((row) => row.unresolved > 0);
 
   const columns = useMemo<StatsColumnDef<CountryPlayerRow>[]>(
@@ -144,6 +157,18 @@ export function CountryPlayers({ event, country, translations }: CountryPlayerPr
             accessorKey: 'unresolved',
             header: t('table.unresolved'),
           },
+          hasSgfs && {
+            accessorKey: 'sgfs',
+            header: t('table.sgfs'),
+            cell: ({ row }) => (
+              <SgfCountLink
+                event={event}
+                locale={translations.locale}
+                count={row.original.sgfs}
+                filters={{ player: row.original.id, country: country.code, category }}
+              />
+            ),
+          },
           {
             accessorKey: 'wonPercent',
             header: t('table.wonPercent'),
@@ -151,7 +176,7 @@ export function CountryPlayers({ event, country, translations }: CountryPlayerPr
           },
         ] as StatsColumnDef<CountryPlayerRow>[]
       ).filter(Boolean),
-    [translations, t, event, hasDraws, hasUnresolved, formatter]
+    [translations, t, event, hasDraws, hasUnresolved, hasSgfs, country.code, category, formatter]
   );
 
   return (
