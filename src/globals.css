@@ -252,15 +252,28 @@ html {
   box-shadow: inset 0 0 0 2px var(--go-row-color, var(--color-archive-accent));
 }
 
-/* Keep the page live and the slide below the h-12 sticky header. */
+/* Only capture the sliding panel and header, not the rest of the page. */
 :root:active-view-transition-type(medalists-next),
 :root:active-view-transition-type(medalists-previous) {
   view-transition-name: none;
 
   &::view-transition {
-    clip-path: inset(3rem 0 0);
     pointer-events: none;
   }
+}
+
+::view-transition-group(site-header) {
+  z-index: 1;
+  animation: none;
+}
+
+::view-transition-old(site-header) {
+  display: none;
+}
+
+::view-transition-new(site-header) {
+  animation: none;
+  mix-blend-mode: normal;
 }
 
 ::view-transition-image-pair(.slide-left),
