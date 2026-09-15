@@ -7,7 +7,7 @@ const EVENT_CONFIG: EventDefinition = {
   showBestPlace: true,
   hideGamesWithoutSgf: true,
   unknownRanks: ['30k'],
-  categories: ['u20', 'u18', 'u16', 'u15', 'u12'], 
+  categories: ['u20', 'u18', 'u16', 'u15', 'u12'],
 };
 
 export default EVENT_CONFIG;
