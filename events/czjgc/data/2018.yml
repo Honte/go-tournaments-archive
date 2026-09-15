@@ -1,0 +1,69 @@
+website: https://goweb.cz/2018/01/mistrovstvi-cr-zaku-a-junioru-praha-27-28-1-2018/
+name: Mistrovství republiky žáků a juniorů
+stages:
+  - type: tournament
+    file: czj2018u12.txt
+    category: u12
+    name: U12
+    dir: 2018/u12
+    scoringColumns:
+      - wins
+      - null
+      - sos
+      - sodos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sodos
+      - sosos
+    findSharedPlaces: true
+    collapsed: true
+  - type: tournament
+    file: czj2018u16.txt
+    category: u16
+    name: U16
+    dir: 2018/u16
+    scoringColumns:
+      - wins
+      - null
+      - sos
+      - sodos
+      - sosos
+      - rating
+    breakers:
+      - wins
+      - sos
+      - sodos
+      - sosos
+      - ratiing
+    findSharedPlaces: true
+    collapsed: true
+    games:
+      - 1-3 1:B+R round:2 sgf:2018/u16/2-DitaVasova-OndrejSkotnica.sgf
+      - 2-1 1:W+R round:3 sgf:2018/u16/3-RobinPopov-DitaVasova.sgf
+      - 2-3 2:B+R round:4 sgf:2018/u16/4-RobinPopov-OndrejSkotnica.sgf
+      - 4-1 1:W+33.5 round:1 sgf:2018/u16/1-RostislavLitovkin-DitaVasova.sgf
+  - type: tournament
+    file: czj2018u20.txt
+    category: u20
+    name: U20
+    dir: 2018/u20
+    scoringColumns:
+      - wins
+      - null
+      - sos
+      - sodos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sodos
+      - sosos
+    findSharedPlaces: true
+    collapsed: true
+    games:
+      - 1-2 1:B+R round:3 sgf:2018/u20/3-TristanDefer-AdrianaTomsu.sgf
+      - 1-5 1:B+R round:4 sgf:2018/u20/4-TristanDefer-LeonDefer.sgf
+      - 2-5 2:B+R round:1 sgf:2018/u20/1-AdrianaTomsu-LeonDefer.sgf
+      - 3-2 2:W+27.5 round:2 sgf:2018/u20/2-AnezkaBukovska-AdrianaTomsu.sgf

@@ -1,0 +1,20 @@
+; TC[T120128B]
+; CL[A]
+; EV[Czech Youth Go Championship 2012 - U16]
+; PC[CZ, Praha]
+; DT[2012-01-28,2012-01-29]
+; HA[h9]
+; KM[7.5]
+; TM[90]
+; CM[ (submitted by Jana_H)]
+;.
+; MRJ12_16
+1 Havelka Samuel    3k CZ  TOst  5    5    12   69   5+/w0  6+/b0  9+/b0  2+/w0  3+/w0   |15662372
+2 Tomek Vojtech    10k CZ  TFMi  4    4    15   64   4+/b0  8+/w0  3+/b0  1-/b0  5+/w0   |14537864
+3 Samajova Kamila  11k CZ  TOst  3    3    16   59   8+/b0  7+/w0  2-/w0  4+/w0  1-/b0   |14913778
+4 Jansky Dusan     18k CZ  APmG  3    3    13   69   2-/w0  5+/b0  6+/w0  3-/b0  7+/w0   |15862946
+5 Kubita Mikulas   18k CZ  APWS  2    2    15   62   1-/b0  4-/w0  7+/b0  9+/w0  2-/b0   |15486372
+6 Hobl Jan         17k CZ  APmG  2    2    12   59   0+     1-/w0  4-/b0  7-/w0  9+/b0   |15774924
+7 Kucera Lukas     17k CZ  APmG  2    2    11   67   9+/w0  3-/b0  5-/w0  6+/b0  4-/b0   |15701906
+8 Drbal Cenek      19k CZ  APmG  2    1    8    39   3-/w0  2-/b0  0+     0=     0=      |15798926
+9 Bukovska Anezka  20k CZ  APmG  1    1    11   61   7-/b0  0+     1-/w0  5-/b0  6-/w0   |15874947

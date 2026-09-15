@@ -1,739 +1,99 @@
 # Go Tournaments Archive
 
-A configurable Go tournament archive built as a static Next.js site. The same app can render one tournament archive or a
-multi-event archive selected by configuration presets under `configurations/`. Supports multiple languages (`en` and
-`pl` by default) through locale routes when enabled by each event config, and tournament data is stored in YAML and H9
-text files under `events/[event-id]/data/` and game records in SGF files under `events/[event-id]/sgf/`.
+A Go tournament archive for browsing results, players, and game records across years. One codebase powers both
+single-event sites and collections of events, with shared navigation, search, statistics, and an SGF game viewer.
 
-The site supports tournament cards and sortable tournament tables, edition detail pages, stage standings, game lists
-with SGF links, an all-games SGF browser, per-edition SGF ZIP downloads, generated board previews, all-time player
-statistics, country statistics for international events, and category medal tables for events that define age or
-other categories.
+Tournament history lives in version-controlled YAML, H9 text files, and SGF records. Contributions can include data
+corrections, new editions, translations, or improvements to the shared interface. Running the archive does not require
+a database or an external account.
 
-## Live sites
+## See it in use
 
-- [European Go Championships Archives](https://eurogofed.org/archives/) (`egc`, `epc`, `epq`, `esgc`, `ewgc` and `eygc`)
-- [World Amateur Go Championships Archive](https://wagc.go.art.pl) (`wagc`)
-- [Polish Go Championships Archive](https://mp.go.art.pl) (`pgc`)
-- [Polish Youth Go Championships Archive](https://mpj.go.art.pl) (`pygc`)
-- [Polish Women's Go Championships Archive](https://mpk.go.art.pl) (`pwgc`)
-- [Polish Academic Go Championships Archive](https://amp.go.art.pl) (`pagc`)
-- [Korea Prime Minister Cup](https://kpmc.go.art.pl) (`kpmc`)
-- [Honte Archives](https://archives.honte.pl/) (serves all remaining events)
+- [European Go Championships Archives](https://eurogofed.org/archives/)
+- [World Amateur Go Championships Archive](https://wagc.go.art.pl)
+- [Polish Go Championships Archive](https://mp.go.art.pl)
+- [Honte Archives](https://archives.honte.pl/)
 
-## Events
+Visitors can explore edition standings, sortable tournament tables, player and country statistics, category results,
+and linked game records. Events choose their supported languages and which features to expose.
 
-Available event directories:
+## Run locally
 
-| Event ID | Archive                           | Notes                                                                            |
-| -------- | --------------------------------- | -------------------------------------------------------------------------------- |
-| `wagc`   | World Amateur Go Championships    | Locales `en`, `pl`, country stats                                                |
-| `kpmc`   | Korea Prime Minister Cup          | Locales `en`, `pl`, country stats                                                |
-| `egc`    | European Go Championships         | Locale `en`, country stats                                                       |
-| `epc`    | European Pro Go Championships     | Locale `en`                                                                      |
-| `epq`    | European Pro Qualification        | Locale `en`                                                                      |
-| `esgc`   | European Student Go Championships | Locale `en`, country stats                                                       |
-| `ewgc`   | European Women's Go Championships | Locale `en`, country stats                                                       |
-| `eygc`   | European Youth Championships      | Locale `en`, country stats, category stats for `u21`, `u20`, `u18`, `u16`, `u12` |
-| `csgc`   | Czechoslovak Go Championships     | Locale `en`                                                                      |
-| `czgc`   | Czech Go Championships            | Locale `en`                                                                      |
-| `czwgc`  | Czech Women's Go Championships    | Locale `en`                                                                      |
-| `skgc`   | Slovak Go Championships           | Locale `en`                                                                      |
-| `hrgc`   | Croatian Go Championships         | Locale `en`                                                                      |
-| `nlk`    | Dutch Go Championships            | Locale `en`                                                                      |
-| `nlkd`   | Dutch Women's Go Championships    | Locale `en`                                                                      |
-| `iegc`   | Irish Go Championships            | Locale `en`                                                                      |
-| `pagc`   | Polish Academic Go Championships  | Locales `pl`, `en`                                                               |
-| `pgc`    | Polish Go Championships           | Locales `pl`, `en`                                                               |
-| `pwgc`   | Polish Women's Go Championships   | Locales `pl`, `en`                                                               |
-| `pygc`   | Polish Youth Go Championships     | Locales `pl`, `en`, category stats for `u21`, `u20`, `u18`, `u16`, `u15`, `u12`  |
-| `wgl`    | Warsaw Go League                  | Locales `pl`, `en`                                                               |
-
-Event-specific config, translations, logo, optional hero background, data, and SGF files live in `events/[event-id]/`.
-All events share the interface palette in `src/globals.css`.
-
-### Hero backgrounds
-
-Add `background.jpg` or `background.png` to an event directory to display a decorative hero background. JPG takes
-precedence if both files exist. Without either file, the hero has no background decoration. Images are bundled with
-the site and fade into the current page color in both light and dark themes. Use a wide banner (for example, 1536 × 512)
-with its main subject on the right to leave room for the heading and search. Restart the development server after adding
-or removing an image; rebuild the site to publish image changes.
-
-The included event backgrounds are AI-generated test illustrations, not photographs of actual tournaments.
-
-## Configuration modes
-
-Runtime configuration is preset-based:
-
-- `CONFIG=<name>` loads `configurations/<name>.yml`.
-- If `CONFIG` is not set and `EVENT=<event-id>` is set, the app loads `configurations/single.yml` and substitutes
-  `${EVENT}` with that event id.
-- If neither `CONFIG` nor `EVENT` is set, the app loads `configurations/multi.yml`.
-
-The resolved preset also decides which Next.js route files are active. One configured event enables the `*.single.*`
-route tree. Multiple configured events enable the `*.multi.*` route tree. See
-[`configurations/README.md`](configurations/README.md) for preset schema and merge rules.
-
-## Prerequisites
-
-- Node.js 24 LTS
-- MySQL access only for `npm run extract:mp-db`
-
-## Development
-
-Install dependencies:
+Install **Node.js 24 or newer**, then run these commands from your cloned repository:
 
 ```bash
-npm install
+npm ci
+npm run dev:wagc
 ```
 
-Run the default multi-event archive at [http://localhost:3000](http://localhost:3000):
+Open [http://localhost:3000/en](http://localhost:3000/en). This starts one event, the World Amateur Go Championships,
+with its existing data.
+
+To run the default collection of events instead:
 
 ```bash
 npm run dev
 ```
 
-Run a preset or a single-event archive with a convenience script:
+Open [http://localhost:3000](http://localhost:3000) and choose an event. Stop the current server before switching modes.
 
-```bash
-npm run dev:honte
-npm run dev:europe
-npm run dev:poland
-npm run dev:pgc
-npm run dev:wagc
-npm run dev:kpmc
-```
+Use `npm run dev:europe`, `npm run dev:poland`, or `npm run dev:honte` for other collections.
+See [configuration presets](configurations/README.md) to select any event or define your own collection.
 
-Run the same modes, or any event without a convenience script, by setting the environment explicitly:
+## How it works
 
-```bash
-EVENT=epc npm run dev
-CONFIG=europe npm run dev
-```
+An **event** is a recurring competition, such as WAGC. An **edition** is one year's tournament; it contains one or more
+**stages**, such as a league or a final. An **archive preset** chooses which events a site publishes.
 
-Useful checks:
+1. A preset in `configurations/` selects events and deployment settings.
+2. Each event in `events/` supplies its identity, translations, tournament data, and original SGFs.
+3. Loaders in `src/data/` turn that source data into standings, player identities, statistics, and navigation.
+4. Shared routes and components render the selected archive.
+5. A production build generates JSON and game assets, then exports the site or creates a standalone server.
 
-```bash
-npm run lint         # Run Oxlint with type checking
-npm run fmt          # Check formatting
-npm run fmt:write    # Write formatting changes
-npm run test         # Run tests
-```
+The application uses Next.js, React, TypeScript, and Tailwind CSS. Most sites are static exports; presets can also
+enable a Next.js standalone server. Dependency versions and available commands are in [package.json](package.json).
+
+## Contribute
+
+Start with [CONTRIBUTING.md](CONTRIBUTING.md) for the workflow, checks, and information to include in a pull request.
+Data corrections and documentation improvements are useful contributions alongside code.
+
+| I want to…                                          | Start here                                        |
+| --------------------------------------------------- | ------------------------------------------------- |
+| Correct results, add an edition, or create an event | [Events and tournament data](events/README.md)    |
+| Link SGF records to games                           | [SGF matcher](tools/sgfMatcher/README.md)         |
+| Change which events a site publishes                | [Configuration presets](configurations/README.md) |
+| Change pages, navigation, or URL handling           | [App routes](src/app/README.md)                   |
+| Change components, tables, or themes                | [Interface development](src/components/README.md) |
+| Update player registries or run maintenance tools   | [Data and asset tools](tools/README.md)           |
 
 ## Build and deploy
 
-By default the app uses `output: 'export'`, so `npm run build` emits static files to `out/`. The `public/index.php` file
-is also copied into the export for PHP-based static hosting setups that need a root redirect to the best supported
-locale.
-
-Build the default multi-event archive:
+Build the default archive and preview the static output:
 
 ```bash
 npm run build
-```
-
-Build a preset or a single-event archive with a convenience script:
-
-```bash
-npm run build:honte
-npm run build:europe
-npm run build:poland
-npm run build:pgc
-```
-
-Build the same modes, or any event without a convenience script, by setting the environment explicitly:
-
-```bash
-EVENT=wagc npm run build
-EVENT=kpmc npm run build
-CONFIG=europe npm run build
-```
-
-Check `package.json` before relying on convenience scripts; only frequently used events and presets have dedicated
-commands.
-
-Serve the exported output locally:
-
-```bash
 npm run start
 ```
 
-`npm run build` runs `prebuild` first. The prebuild step generates data JSON, cleaned SGFs, and raw SGFs, plus configured
-board previews and ZIP files, into `public/data` and `public/sgf`; `next build` then exports static pages into `out/`.
-Single-event builds write root data and SGF assets such as `public/data/tournaments.json` and `public/sgf/list.json`.
-Multi-event builds write per-event assets such as `public/data/<prefix>/tournaments.json` and
-`public/sgf/<prefix>/list.json`. Preset entries marked `external: true` appear in selectors but are skipped for internal
-routes and generated assets.
-
-Presets with `dynamic: true` produce a Next.js standalone server instead of `out/`. The selected preset is embedded in
-the build, so `CONFIG` and `EVENT` are not needed at runtime. Player, player-category, and country stats pages are
-rendered on demand instead of being generated for every possible path. The asset prebuild is unchanged: production
-pages still read the generated JSON files from `public/data`, while the runtime SGF route can additionally render a
-preview that was not pre-generated.
-
-After building a dynamic preset, copy the public and client assets into the standalone directory and run the bundled
-server:
-
-```bash
-cp -r public .next/standalone/
-cp -r .next/static .next/standalone/.next/
-cd .next/standalone
-node server.js
-```
-
-Environment variables:
-
-- `CONFIG` selects a configuration preset from `configurations/<name>.yml`.
-- `EVENT` selects the event directory only through the default `single.yml` fallback when `CONFIG` is not set.
-- `BASE_PATH` is substituted into the selected configuration preset. It sets the static deployment subdirectory and
-  Next.js `basePath` only when that preset uses `${BASE_PATH}`, such as `single.yml`.
-- `SGF_ASSET_WORKERS` optionally caps the number of worker threads used while generating SGF assets.
-
-Build for a subdirectory deployment:
-
-```bash
-BASE_PATH=/archive EVENT=pgc npm run build
-```
-
-Named presets can instead define a fixed `basePath`; for example, `europe.yml` builds under `/archives`.
-
-## App routes
-
-The route examples below are shown without a base path. When the selected preset defines `basePath`, public routes and
-generated data/assets are served below that prefix, for example `/archive/pl` in single-event mode or
-`/archive/pgc/pl` in multi-event mode.
-
-Single-event mode serves one archive at the root. Multi-event mode serves the selector at `/`, redirects
-`/:eventPrefix` to that event's best locale, and serves event pages below the configured prefix.
-
-Main static pages:
-
-- `/` - single-event locale redirect, or the multi-event selector page.
-- `/:eventPrefix` - multi-event locale redirect for one event.
-- `/:locale` or `/:eventPrefix/:locale` - archive overview with winners, medalists, attendants, total stats, and country
-  medalists when enabled.
-- `/:locale/tournaments` or `/:eventPrefix/:locale/tournaments` - sortable edition statistics for the selected event,
-  with separate tables for configured categories.
-- `/:locale/:year` or `/:eventPrefix/:locale/:year` - tournament detail page with event metadata, awarded players, stage
-  tables, and game list.
-- `/:locale/stats` or `/:eventPrefix/:locale/stats` - all-time player table.
-- `/:locale/stats/:slug` or `/:eventPrefix/:locale/stats/:slug` - individual player statistics, achievements, events,
-  and opponents.
-- `/:locale/stats/:slug/:category` or `/:eventPrefix/:locale/stats/:slug/:category` - category-scoped player
-  statistics when the event defines `categories`.
-- `/:locale/stats/country` or `/:eventPrefix/:locale/stats/country` - all-time country table when `showCountry` is
-  enabled.
-- `/:locale/stats/country/:code` or `/:eventPrefix/:locale/stats/country/:code` - individual country statistics.
-- `/:locale/stats/country/:code/:category` or `/:eventPrefix/:locale/stats/country/:code/:category` - category-scoped
-  country statistics when the event defines `categories`.
-- `/:locale/stats/games` or `/:eventPrefix/:locale/stats/games` - filterable browser of games that have linked SGFs.
-- `/:locale/category/:category` or `/:eventPrefix/:locale/category/:category` - category medal/results page when the
-  event defines `categories`.
-
-Generated data/assets:
-
-- `/data/tournaments.json` or `/data/:eventPrefix/tournaments.json` - tournament list for one event.
-- `/data/:year.json` or `/data/:eventPrefix/:year.json` - tournament data for one year.
-- `/data/i18n/:locale.json` or `/data/:eventPrefix/i18n/:locale.json` - merged base and event translations.
-- `/data/sitemap/:locale.json` or `/data/:eventPrefix/sitemap/:locale.json` - navigation data.
-- `/data/stats/summary.json` or `/data/:eventPrefix/stats/summary.json` - aggregate event summary for the home page.
-- `/data/stats/players.json` or `/data/:eventPrefix/stats/players.json` - all player stats keyed by player slug.
-- `/data/stats/player/:slug.json` or `/data/:eventPrefix/stats/player/:slug.json` - player stats payload.
-- `/data/stats/countries.json` or `/data/:eventPrefix/stats/countries.json` - all country stats keyed by country code.
-- `/data/stats/country/:code.json` or `/data/:eventPrefix/stats/country/:code.json` - country stats payload.
-- `/data/stats/category/:category.json` or `/data/:eventPrefix/stats/category/:category.json` - category stats payload
-  when the event defines `categories`.
-- `/sgf/:year.zip` or `/sgf/:eventPrefix/:year.zip` - ZIP archive of cleaned SGFs for one tournament year when
-  `generateZips` is enabled.
-- `/sgf/.../*.sgf` or `/sgf/:eventPrefix/.../*.sgf` - cleaned SGF.
-- `/sgf/.../*.raw.sgf` or `/sgf/:eventPrefix/.../*.raw.sgf` - original SGF.
-- `/sgf/.../*.svg`, `/sgf/.../*.png`, `/sgf/.../*.jpg`, or the same paths below `/sgf/:eventPrefix/` - generated board
-  previews when enabled by event config.
-- `/favicon.svg`, `/apple-icon.png`, `/logo-black.svg`, `/logo-white.svg`, or the same files below `/:eventPrefix/` -
-  generated event branding assets.
-
-Production data and SGF files are prebuilt into `public/`. Development-only `route.*.dev.ts` handlers serve equivalent
-JSON and SGF responses during `next dev`.
-
-## Tournament tables
-
-Open **Tournaments** in the side menu or **Show tournaments stats** on the event homepage. When the homepage has more
-than nine recorded editions, it initially shows five tournament cards. The sixth card is divided horizontally: the
-upper two-thirds expands the list, and the lower third opens the tournaments page. On narrow screens these actions
-are stacked buttons. When the sixth card is absent, the stats button appears below the grid, alongside **Show less**
-when the list is expanded.
-
-The tournaments page lists recorded editions newest first, excluding announcements. Its columns are year, location,
-country, date range, winner, second place, third place, players, stages, games, and SGFs. Country is shown when
-`showCountry` is enabled. Stages is hidden when every row in that table has the same stage count. The SGF column is
-shown only in non-category tables for events with linked SGFs.
-
-Every displayed column is sortable. Player columns sort by surname, with each player sharing a place on a separate
-line. Names within the active player column follow its sort direction; other player cells remain alphabetized.
-Missing values sort last. Years link to edition pages, names link to player statistics, and positive SGF counts link
-to game records filtered to that edition. All rows remain available without pagination; wide tables scroll horizontally.
-
-Events with categories have separate, independently sortable tables in configured category order. Each category
-heading links to its category page. Player counts include distinct category participants, including those whose
-membership is marked uncertain (`?`). Stage counts include category stages and shared stages with category
-participants. Each game involving a category participant is counted once, excluding BYEs; a game can contribute to
-more than one category's total. Location and dates describe the whole edition. Category tables omit SGF counts and
-do not require changes to game-record metadata or filters.
-
-## Project layout
-
-```text
-configurations/      # Archive-level presets for single-event and multi-event modes
-events/
-  [event-id]/
-    config.ts
-    Logo.tsx
-    background.jpg  # Optional; background.png is also supported
-    i18n/<locale>.json
-    data/
-    sgf/
-src/
-  app/              # Next.js App Router pages and static route handlers
-  components/       # UI, tables, stats, navigation, goban preview components
-    home/           # Hero, tournament cards, medalists, archive statistics
-    search/         # Archive search, result options, indicators, select styles
-  data/             # YAML/H9 loaders, standings, tiebreakers, aggregate stats
-  i18n/             # Locale types, active event locale helpers, server loader, translator
-  libs/             # Shared utilities: dates, H9 parser, SGF/goban parser, sorting, math
-  schema/           # Input and normalized data types
-  globals.css       # Shared light/dark palette and derived semantic color tokens
-public/             # Root hosting files plus generated data/SGF assets from prebuild
-tools/              # One-off extraction, SGF cleanup/matching, preview generation helpers
-```
-
-Aliases:
-
-- `@/*` maps to `src/*`.
-- `@tools/*` maps to `tools/*`.
-- `@events/*` maps to `events/*`.
-
-## Colors and themes
-
-The interface uses a shared light/dark palette across events. The header offers Auto, Light, and Dark; Auto follows
-the system preference. `@wrksz/themes` manages the `data-theme` attribute and saves the choice in local storage under
-`go-tournaments-theme`.
-
-To recolor the interface, start with the six palette inputs in [`src/globals.css`](src/globals.css). Light values live
-in `@theme`; dark values override them in `:root[data-theme='dark']`.
-
-| Palette input                 | Purpose                                                 |
-| ----------------------------- | ------------------------------------------------------- |
-| `--color-archive-page`        | Page background                                         |
-| `--color-archive-surface`     | Cards, menus, and inputs                                |
-| `--color-archive-text`        | Main foreground                                         |
-| `--color-archive-shell`       | Header background; also contributes to the footer color |
-| `--color-archive-accent`      | Base hue for accents and derived interaction colors     |
-| `--color-archive-accent-text` | Foreground on accent fills and selected controls        |
-
-Borders, muted text, controls, stripes, and hover colors are derived with `color-mix()` and relative `oklch()` colors.
-Some dark-mode formulas differ to suit dark backgrounds. Use the semantic role for the element: `archive-link` and
-`archive-link-hover` for colored links, `archive-accent-fill` with `archive-accent-text` for filled accents, and
-`archive-focus-ring` for focus indicators. The raw accent is not a substitute for all three. Palette changes still
-need contrast and interaction checks in both themes; derived colors do not guarantee readable combinations.
-
-Components use Tailwind classes such as `bg-archive-surface`, `text-archive-text`, and `border-archive-border`.
-Inline styles and SVG attributes use the same variables, for example `var(--color-archive-link)`.
-[`src/libs/themes.ts`](src/libs/themes.ts) supplies the shared `SELECT_THEME` for `react-select`.
-
-Event logos and hero images remain event-specific; event `colors.css` files are no longer part of the setup.
-See [AGENTS.md](AGENTS.md#color-guidelines) for role selection, shared controls, and theme validation guidance.
-
-## Event configuration
-
-Each event has `events/[event-id]/config.ts` exporting an `EventDefinition`:
-
-```ts
-type EventDefinition = {
-  id: string;
-  locales: [Locale, ...Locale[]]; // `Locale` is `en` or `pl`
-  showCountry?: boolean;
-  showBestPlace?: boolean;
-  hideGamesWithoutSgf?: boolean;
-  categories?: string[];
-  unknownRanks?: string[];
-};
-```
-
-Archive presets in `configurations/*.yml` can add per-event or shared event configuration fields:
-
-```ts
-type EventConfig = {
-  generateJpgs?: boolean;
-  generatePngs?: boolean;
-  generateSvgs?: boolean;
-  generateZips?: boolean;
-  external?: boolean;
-  domain?: string;
-  prefix?: string;
-  links?: (EventLink | EventLinkGroup)[];
-};
-```
-
-Common flags:
-
-- `id` must match the directory name under `events/`.
-- `locales` defines which locale-prefixed routes and translation JSON files are generated for the event. The first item
-  is the default locale used by redirects and default metadata.
-- `showCountry` enables country columns, country medalists, and country stats routes.
-- `showBestPlace` controls best-place display in stats tables.
-- `hideGamesWithoutSgf` hides unlinked games in game lists for SGF-focused archives.
-- `categories` enables category medal aggregation and category pages.
-- `unknownRanks` lists rank strings that should be treated as unknown during rank parsing for the event.
-- `prefix` controls the public route segment and generated asset subdirectory in multi-event presets.
-- `external` keeps an event visible in selector data but skips internal route/static asset generation.
-- `domain` is used for external selector links and absolute URLs.
-- `basePath` belongs to the top-level archive preset, not an event entry or shared `config`; it is propagated to each
-  resolved event for generated data and asset URLs.
-- `trailingSlash` also belongs to the top-level archive preset and controls Next.js static route output.
-- `links` adds extra event navigation links.
-- `generateSvgs`, `generatePngs`, `generateJpgs` select preview variants emitted from SGF files during prebuild.
-- `generateZips` emits `/sgf/:year.zip` or `/sgf/:eventPrefix/:year.zip` archives and shows a ZIP download action next
-  to the games heading for tournaments with linked SGFs.
-
-## Tournament data
-
-Create one YAML file per edition in `events/[event-id]/data/[year].yml`.
-
-```yaml
-location: Poznan
-country: PL
-referee: John Smith
-website:
-  - https://example.org/tournament
-notes:
-  en: Optional note displayed with the edition.
-  pl: Opcjonalna notatka widoczna przy edycji.
-players:
-  id1: Player One 5d (PL) |12345
-  id2: Player Two 4d
-top:
-  - id1
-  - id2
-stages:
-  - type: league
-    date: 2026-11-07 - 2026-11-10
-    egd: https://www.europeangodatabase.eu/EGD/Tournament_Card.php?&key=T261107A
-    time: fischer 60m + 30s
-    komi: 6.5
-    rules: japanese
-    breakers:
-      - wins
-      - sos
-      - sodos
-      - direct
-    rounds:
-      - - id1-id2 id1:B+2.5 sgf:2026/player-one-player-two.sgf
-```
-
-Top-level fields:
-
-- `location`, `country`, `referee`, `website`, `notes` describe the edition.
-- `players` maps local player IDs to player strings.
-- `top` lists medalists. Values can use local player IDs, player names, or EGD IDs. A comma-separated value or YAML
-  array means shared medal/place, for example `id3,id4` or `[id3, id4]`.
-- `displayReversed` controls whether stages render newest/last first. Defaults to `true`.
-- `stages` contains one or more stage definitions.
-
-Optional Markdown descriptions can be stored next to YAML as `events/[event-id]/data/[year].md` or
-`events/[event-id]/data/[year].[locale].md`.
-
-## Player format
-
-```yaml
-players:
-  id1: Player Name 5d
-  id2: Player Name 4d (JP)
-  id3: Player Name 3d |12345
-  id4: Player Name 2d (PL) |67890
-```
-
-Supported ranks use `Xk`, `Xd`, or `Xp`, for example `5k`, `1d`, `2p`.
-
-Player keys in tournament YAML are local to one edition. The loader maintains event-wide player identities, using EGD
-numbers when present and player names otherwise. Add an optional `events/[event-id]/players.yml` registry when a player
-needs a stable ID, canonical display name, country, historical original name, or SGF-matcher nickname:
-
-```yaml
-players:
-  - id: jane-smith
-    name: Jane Smith
-    country: PL
-    egd: 12345
-    original: Jane A. Smith
-    nickname:
-      - GoJane
-```
-
-## Stage fields
-
-All stage types support:
-
-- `name` and `notes` as a string or localized object.
-- `date` as a single date, date range, or array of dates/ranges.
-- `egd`, `time`, `komi`, `rules`.
-- `breakers` for table sorting where applicable.
-- `promoted` and `placeOffset` for final-place calculation in aggregate stats.
-- `category` for category-specific tournament stages.
-
-Supported breakers are `wins`, `sos`, `mms`, `sodos`, `sosos`, `direct`, `starting`, `rank`, and `score`.
-
-## Stage types
-
-### `classification`
-
-Final classification without games. Use it when an edition only has a final ranking. `order` accepts player IDs or
-full player strings; nested arrays mark players sharing the same place. If the top-level `top` field is missing,
-medalists are derived from the first three places.
-
-```yaml
-- type: classification
-  date: 1996-10-26 - 1996-10-27
-  order:
-    - id1
-    - - Player Two 1d (PL)
-      - Player Three 2k (DE) |12345
-    - id4
-```
-
-### `league`
-
-Round-robin or round-based table. `rounds` is an array of rounds, each containing game strings.
-
-```yaml
-- type: league
-  date: 2026-11-07 - 2026-11-10
-  order:
-    - id1
-    - id2
-  breakers:
-    - wins
-    - sos
-    - sodos
-  rounds:
-    - - id1-id2 id1:B+R
-```
-
-### `ladder-table`
-
-Swiss/ladder-style table. Requires initial `order`; optional `playoffs` are added after main rounds.
-
-```yaml
-- type: ladder-table
-  date: 1983-09-30 - 1983-10-02
-  order:
-    - id1
-    - id2
-    - id3,id4
-  rounds:
-    - - id1-id2 id1:B+R
-      - id3-id4 id3:B+5.5
-  playoffs:
-    - id2-id3 id2:W+R
-```
-
-### `round-robin-table`
-
-Flat list of games, sorted by score and rank.
-
-```yaml
-- type: round-robin-table
-  name:
-    pl: Turniej o miejsca 5-11
-    en: Tournament for places 5-11
-  date: 1981-10-28 - 1981-10-30
-  games:
-    - id1-id2 id1:B+R
-    - id2-id3 id3:W+4.5
-```
-
-### `final`
-
-Head-to-head final. `includePrevious` can include earlier stage results in the final table.
-
-```yaml
-- type: final
-  date: 1997-11-29
-  requiredWins: 2
-  includePrevious: false
-  games:
-    - id1-id2 id2:W+R
-    - id2-id1 id1:B+29.5
-```
-
-### `tournament`
-
-Imports an H9 tournament text file from `events/[event-id]/data/`. Used heavily by WAGC, KPMC, youth, women, and
-academic archives.
-
-```yaml
-- type: tournament
-  file: 2025/wagc2025.txt
-  date: 2025-05-15 - 2025-05-18
-  breakers:
-    - wins
-    - sos
-  scoringColumns:
-    - wins
-    - sos
-    - votes
-  columns:
-    - votes
-  findSharedPlaces: true
-  customBreakers:
-    votes:
-      order: desc
-      hidden: false
-      translations:
-        en: Votes
-        pl: Głosy
-```
-
-Useful `tournament` fields:
-
-- `file` points to the H9 `.txt` file under the event data directory.
-- `scoringColumns` maps H9 score columns to breakers or category IDs.
-- `games` can supplement/override H9 game data with explicit game strings. Player numbers refer to H9 places.
-- `findSharedPlaces` derives shared places from matching configured breakers.
-- `sharedPlaces` can explicitly map ranges such as `4-6`.
-- `customBreakers` defines display names, descriptions, order, and visibility for non-standard score columns.
-
-## Game strings
-
-Format:
-
-```text
-[black-or-home-id]-[white-or-away-id] [winner-id]:[result] [props]
-```
-
-Examples:
-
-```text
-id1-id2 id1:B+2.5
-id1-id2 id2:W+R
-id1-id2 jigo
-id1-id2 jigo black:id2
-id1-id2 id1:!
-id1-id2 id1:B+R sgf:2026/game.sgf yt:https://youtube.com/watch?v=abc
-```
-
-Result notes:
-
-- `B+...` means black won; `W+...` means white won.
-- `jigo` means a draw. It can be followed by the same properties as a decisive game.
-- When a result does not identify the players' colors, use `black:<player-id>` or `white:<player-id>`. The referenced ID
-  must be one of the game's players; the other player is assigned the opposite color. A color property that contradicts
-  a `B` or `W` result is rejected.
-- Scores can be numeric or `R` for resignation, `T` for timeout, `?` for unknown.
-- `!` marks a walkover.
-- H9-imported games may use loose results such as `+`, `-`, or `=`. In a round column, a non-zero opponent followed by
-  `=` is a jigo; zero-opponent variants such as `0=` and `0=/` mean that no game was played.
-
-Supported properties:
-
-- `sgf:path/to/file.sgf` - path relative to `events/[event-id]/sgf/`.
-- `ai:https://...` - AI analysis link.
-- `yt:https://...` - YouTube link. Multiple links can be comma-separated.
-- `ogs:https://...` - OGS game/review link.
-- `round:N` - explicit round metadata for supplemental tournament games.
-
-When an `sgf` prop is present, the app exposes `/sgf/...` routes and attaches configured preview URLs (`svg`, `png`,
-`jpg`) to the game data.
-
-## SGF workflow
-
-Place SGF files under `events/[event-id]/sgf/[year]/`.
-
-SGF parsing, cleanup, and stringifying are handled by the internal parser in `tools/sgf/`. The `Sgf.clean()` helper is
-used when serving cleaned SGFs and generating previews: it keeps the longest branch, strips comments, applies archive
-root metadata, and emits compact SGF output. Raw SGFs remain available through `/sgf/.../*.raw.sgf`.
-
-Available SGF tools:
-
-```bash
-npm run sgf        # Match SGFs to event
-```
-
-The matcher accepts:
-
-```bash
-npm run sgf <event>
-npm run sgf -- --event <event>
-npm run sgf -- -e <event>
-EVENT=<event> npm run sgf
-npm run sgf <event> -- --year 2025
-npm run sgf <event> -- -y 2025
-npm run sgf <event> -- --dry
-npm run sgf <event> -- --force
-npm run sgf <event> -- --verbose
-npm run sgf <event> -- --strict
-```
-
-- The first positional argument selects the event to match. By default, `sgf` uses the `EVENT` env variable when no positional event nor `-e` / `--event` option is passed.
-- Use npm's `--` separator before matcher options such as `--year` or `--dry`.
-- `-y` / `--year` limits matching to one year.
-- `-d` / `--dry` prints the matching summary without writing YAML. Combine it with `--force` to recheck already matched SGFs.
-- `-f` / `--force` overwrites existing `sgf:` props.
-- `-v` / `--verbose` prints per-stage matching details.
-- `-s` / `--strict` reports SGF content issues such as the longest branch not being the main branch.
-
-By default, the matcher keeps output compact: it prints a total summary and then lists unmatched games with their
-reasons. Use `--verbose` when you need the full per-stage counts that include found, reused, newly matched, and unmatched
-SGFs.
-
-SGF previews and per-edition ZIP downloads are generated by `tools/assets/` during `npm run prebuild` into `public/sgf`
-or `public/sgf/<prefix>`. Development uses the single-event and multi-event `route.*.dev.ts` SGF handlers for on-demand
-responses. Enable output formats per event or preset with `generateSvgs`, `generatePngs`, `generateJpgs`, and
-`generateZips`. ZIP files contain the same cleaned SGF content served by `/sgf/.../*.sgf` or
-`/sgf/:eventPrefix/.../*.sgf`.
-
-## Data and asset tools
-
-These scripts are for one-off data maintenance:
-
-```bash
-npm run extract:mp-db          # Extract PGC data from MySQL and convert to YAML
-npm run builder                # Interactive preset/event selection and event BASE_PATH
-npm run players:update <event> # Add missing event-player registry entries
-npm run players:egd <event>    # Enrich an event-player registry from EGD data
-```
-
-Relevant tool modules:
-
-- `tools/assets/` prebuilds `public/data` and `public/sgf` before static export, using event-prefix subdirectories in
-  multi-event presets.
-- `tools/extract.ts` imports legacy MySQL data.
-- `tools/sgfMatcher/` matches SGF files back to games and writes YAML.
-- `tools/sgf/` parses, cleans, and stringifies SGF files before serving.
-- `tools/svg.ts`, `tools/img.ts` generate board previews.
-
-## Adding a new event
-
-1. Create `events/[event-id]/`.
-2. Add `config.ts`, `Logo.tsx`, and translation JSON files for every locale listed in `config.ts`. Optionally add a
-   hero background as described above; the shared interface palette needs no event CSS file.
-3. Add `data/[year].yml` files, plus H9 `.txt` files or Markdown descriptions if needed.
-4. Add SGF files under `sgf/` if the archive exposes game records.
-5. Add the event to `configurations/multi.yml` or another preset if it should appear in a multi-event archive.
-6. Add matching `dev:[event-id]` and `build:[event-id]` scripts only if this should be a first-class convenience
-   command.
-7. Build a single-event archive with `EVENT=[event-id] npm run build`, or build a preset with
-   `CONFIG=[preset-name] npm run build`.
-
-## Tech stack
-
-- Next.js 16 static export, or a standalone server for dynamic presets
-- React 19
-- TypeScript
-- Tailwind CSS 4
-- `@wrksz/themes` with shared semantic light/dark colors
-- TanStack Table and React Query
-- YAML tournament data
-- H9 tournament import parser
-- Internal SGF parser with generated board previews via `@sabaki/go-board`, SVGO, and Sharp
-- ZIP generation via `fflate`
+The build runs asset generation first and writes the static site to `out/`.
+For a different preset, subdirectory hosting, or a standalone server, see
+[building and deployment](tools/deployment/README.md).
+
+## Find your way around
+
+| Directory         | Responsibility                                                             |
+| ----------------- | -------------------------------------------------------------------------- |
+| `events/`         | Source tournament data, event definitions, translations, and original SGFs |
+| `configurations/` | Which events and settings belong to a published site                       |
+| `src/app/`        | Next.js routes and data/SGF handlers                                       |
+| `src/components/` | Shared pages, controls, tables, and game viewer                            |
+| `src/data/`       | File loading, tournament processing, standings, and statistics             |
+| `src/libs/`       | Domain helpers and shared utilities                                        |
+| `src/schema/`     | Source-data and normalized TypeScript types                                |
+| `src/i18n/`       | Shared translations and locale helpers                                     |
+| `tools/`          | Asset generation, SGF matching, imports, and maintenance                   |
+| `public/`         | Hosting files and generated production assets                              |
+
+Edit source data and code. The contents of `.next/`, `out/`, `public/data/`, and `public/sgf/` are generated.

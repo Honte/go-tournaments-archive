@@ -1,0 +1,14 @@
+; TC[T200208D]
+; CL[A]
+; EV[Czech Youth Go Championship 2020 - U20 category]
+; PC[CZ, Praha]
+; DT[2020-02-08,2020-02-09]
+; HA[h9]
+; KM[6.5]
+; TM[82.5]
+; CM[ (submitted by Jana_H)]
+;.
+1 Vasova Dita          2k CZ  APmG  5        5    14   116 2035 4+/b   2-/b   3+/b   4+/w   2+/w   3+/w    |15749921
+2 Litovkin Rostislav   5k CZ  APmG  5        5    14   116 1706 3+/b   1+/w   4+/b   3+/w   1-/b   4+/w    |17533230
+3 Popov Robin          1k CZ  TFMi  2        2    20   104 1986 2-/w   4+/w   1-/w   2-/b   4+/b   1-/b    |18386126
+4 Paidar Pavel        15k CZ  APmG  0        0    24   96   802 1-/w   3-/b   2-/w   1-/b   3-/w   2-/b    |17549235

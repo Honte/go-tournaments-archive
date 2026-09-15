@@ -1,0 +1,20 @@
+website: https://web.archive.org/web/20071029191346/http://www.czech-go.net/tour/1997/t970913.php
+name: Mistrovství republiky žáků a juniorů
+stages:
+  - type: tournament
+    file: czj1997.txt
+    name: All
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sodos
+      - u18
+      - u15
+      - u12  
+    breakers:      
+      - wins
+      - sos
+      - sodos  
+    findSharedPlaces: true
+    collapsed: false

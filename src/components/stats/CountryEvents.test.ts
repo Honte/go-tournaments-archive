@@ -4,6 +4,24 @@ import type { CountryStats, PlayerGame, PlayerStageResult } from '@/schema/data'
 import { getCountryEventRows } from '@/components/stats/CountryEvents';
 
 describe('getCountryEventRows', () => {
+  it('counts unique SGFs per participation and retains its category when the category column is hidden', () => {
+    const stage = createStage(1, { u16: 1 });
+    stage.games = [
+      { ...createGame(true), props: { sgf: '2025/one.sgf' } },
+      { ...createGame(false), props: { sgf: '2025/one.sgf' } },
+      createGame(false),
+    ];
+    const country = createCountry([createResult('alice', 1, [stage, createStage(2)])]);
+    const rows = getRows(country, false, false);
+    assert.deepEqual(
+      rows.map(({ sgfs, category }) => ({ sgfs, category })),
+      [
+        { sgfs: 1, category: 'u16' },
+        { sgfs: 0, category: undefined },
+      ]
+    );
+  });
+
   it('keeps only the player with the best overall place', () => {
     const country = createCountry([
       createResult('alice', 1, [createStage(1)]),
@@ -92,6 +110,7 @@ function createCountry(results: CountryStats['years'][number]['results']): Count
 
   return {
     code: 'PL',
+    totalSgfs: 0,
     medals: [[], [], []],
     categoriesMedals: {},
     score: 0,

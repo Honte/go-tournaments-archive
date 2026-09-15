@@ -1,0 +1,29 @@
+; TC[T990703F]
+; DT[1999-07-03,1999-07-04]
+; CL[A]
+; EV[Czech Youth Championship]
+; PC[CZ,Becov]
+; KM[5.5]
+; TM[90]
+; HA[h9]
+;                      Czech Youth Championship, Becov 1999
+;                               July 3 - 4, 1999
+;https://web.archive.org/web/20090225072426/http://www.goweb.cz/ogo/sin_slavy/mrzakuajunioru
+;Pl     Name             Grade  Club   MM S SOS SDOS 18 15 12  1.   2.   3.   4.
+;
+; === GROUP A
+  1 Hora Jan                3D CZ Pra   5 5  12   8   1  0  0  2+   3+   4+   2-   |10401083
+  2 Nechanicky Petr         1D CZ Nym   4 4  14   8   2  0  0  1-   4+   3-   1+   |10233267
+  3 Silt Ondrej             2D CZ Zli   1 1  20   4   3  1  1  4-   1-   2+   0=   |10337481
+  4 Kostka Ivan             3D CZ FMi   1 1  20   1   4  ?  ?  3+   2-   1-   0=   |10286716
+;
+; === GROUP B
+  5 Bernathova Anna         6K CZ Libe 11 4  25  25   5  ?  ?  7+   6+   9+   8+   |10301984
+  6 Zaloudkova Klara        7K CZ Pra   9 2  22  11   6  ?  ?  0=   5-   7+  10+   |10798106
+  7 Dedek Vojtech           9K CZ Libe  8 2  26   6   7  ?  ?  5-   8+   6-  11+   |10637693
+  8 Moravec Miloslav        17 CZ Ost   4 2  24   5   8  ?  ? 10+   7-  11+   5-   |10786864
+  9 Kuzvartova Lenka        19 CZ KVa   4 3  16   5   9  ?  ? 11+  12+   5-  13+   |10701867
+ 10 Krystof Lukas           18 CZ Ost   3 1  15   2  10  ?  ?  8-   0=  12+   6-   |10949389
+ 11 Snidal Bronislav        19 CZ Ost   2 1  17   1  11  ?  ?  9-  13+   8-   7-   |10750476
+ 12 Kuzvart Jan             19 CZ KVa   2 2   8   1  12  ?  ? 13+   9-  10-   0+   |10733954
+ 13 Gellert Tomas           20 CZ Ost   1 1   8   0  13  ?  ? 12-  11-   0+   9-   |12025486

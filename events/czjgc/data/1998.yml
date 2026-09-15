@@ -1,0 +1,22 @@
+website: 
+ - https://web.archive.org/web/20090225072426/http://www.goweb.cz/ogo/sin_slavy/mrzakuajunioru
+ - https://web.archive.org/web/20071031060150/http://www.czech-go.net/tour/1998/t980704.php
+name: Mistrovství republiky žáků a juniorů
+stages:
+  - type: tournament
+    file: czj1998.txt
+    name: All
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sodos
+      - u18
+      - u15
+      - u12  
+    breakers:      
+      - wins
+      - sos
+      - sodos  
+    findSharedPlaces: true
+    collapsed: false

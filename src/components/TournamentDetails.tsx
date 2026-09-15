@@ -5,6 +5,7 @@ import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { formatDate } from '@/libs/dates';
 import { Details } from '@/components/Details';
+import { SgfCountLink } from '@/components/gameRecords/SgfCountLink';
 import { ExternalLink } from '@/components/ui/ExternalLink';
 import { H2 } from '@/components/ui/H2';
 import { Markdown } from '@/components/ui/Markdown';
@@ -63,7 +64,14 @@ export function TournamentDetails({ event, tournament, translations }: Tournamen
   const totalSgfs = countSgfs(tournament);
 
   if (totalSgfs > 0) {
-    details[t('stats.total.sgfs')] = totalSgfs;
+    details[t('stats.total.sgfs')] = (
+      <SgfCountLink
+        event={event}
+        locale={translations.locale}
+        count={totalSgfs}
+        filters={{ years: [tournament.year], group: 'year-round' }}
+      />
+    );
   }
 
   return (

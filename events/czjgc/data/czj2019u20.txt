@@ -1,0 +1,15 @@
+; TC[T190302H]
+; CL[A]
+; EV[Czech Youth Go Championship 2019 - U20 category]
+; PC[CZ, Praha]
+; DT[2019-03-02,2019-03-03]
+; HA[h9]
+; KM[6.5]
+; TM[82.5]
+; CM[ (submitted by Jana_H)]
+;.
+1 Jansky Dusan      3k CZ  APmG  3    4    5    0=     4+/b   3-/w   2+/w   5+/b    |15862946
+2 Defer Tristan     1d CZ  Brno  3    4    4    3+/b   0=     5+/w   1-/b   4+/w    |16486074
+3 Vasa Vojtech      4k CZ  APmG  2    3    4    2-/w   5+/w   1+/b   4-/b   0=      |15762923
+4 Bukovska Anezka   2k CZ  APmG  1    2    2    5-/b   1-/w   0=     3+/w   2-/b    |15874947
+5 Vasova Dita       2k CZ  APmG  1    2    1    4+/w   3-/b   2-/b   0=     1-/w    |15749921

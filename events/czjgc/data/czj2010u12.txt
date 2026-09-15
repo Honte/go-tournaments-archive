@@ -1,0 +1,14 @@
+; TC[T100213G]
+; CL[A]
+; EV[Czech Youth Championship]
+; PC[CZ, Praha]
+; DT[2010-02-13,2010-02-14]
+; HA[h9]
+; KM[7.5]
+; TM[75]
+; CM[ (submitted by cieply)]
+;.
+;=== Under 12
+1 Samajova Kamila   18k CZ  TOst  2    2    0    0    2+/b   2+/w  |14913778
+2 Kubita Mikulas    20k CZ  APWS  0    0    0    0    1-/w   1-/b  |15486372
+

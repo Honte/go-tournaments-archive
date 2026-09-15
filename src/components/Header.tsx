@@ -18,7 +18,10 @@ export function Header({ event, translations }: TopBarProps) {
   const locale = translations.locale;
 
   return (
-    <header className="sticky top-0 z-40 shrink-0 bg-archive-shell text-archive-shell-text">
+    <header
+      className="sticky top-0 z-40 shrink-0 bg-archive-shell text-archive-shell-text"
+      style={{ viewTransitionName: 'site-header' }}
+    >
       <div className="container mx-auto max-w-(--breakpoint-2xl) flex h-12 items-center gap-3 px-4">
         <SideNavigation
           event={event}

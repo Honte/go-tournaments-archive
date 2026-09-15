@@ -1,0 +1,20 @@
+; TC[T150207C]
+; CL[A]
+; EV[Czech Youth Go Championship 2015 - U16]
+; PC[CZ, Praha]
+; DT[2015-02-07,2015-02-08]
+; HA[h9]
+; KM[7.5]
+; TM[90]
+; CM[ (submitted by Jana_H)]
+;.
+ 1 Samajova Kamila   5k CZ  TOst  5    5    14   14   7+/w    6+/b    2+/w    4+/b    3+/w     |14913778
+ 2 Defer Tristan     6k CZ  Brno  4    4    14   9    9+/b    3+/w    1-/b    8+/w    4+/b     |16486074
+ 3 Jansky Dusan      5k CZ  APmG  3    3    16   7    5+/b    2-/b    7+/w    6+/w    1-/b     |15862946
+ 4 Vasa Vojtech      5k CZ  APmG  3    3    14   5    8+/b    10+/w   5+/b    1-/w    2-/w     |15762923
+ 5 Bukovska Anezka   9k CZ  APmG  3    3    12   6    3-/w    8+/b    4-/w    7+/b    6+/w     |15874947
+ 6 Vasova Dita       7k CZ  APmG  2    2    12   1    10+/b   1-/w    9+/w    3-/b    5-/b     |15749921
+ 7 Broz Ondrej      14k CZ  APmG  2    2    12   1    1-/b    9+/w    3-/b    5-/w    10+/w    |15998213
+ 8 Defer Leon       13k CZ  Brno  2    2    11   1    4-/w    5-/w    10+/b   2-/b    9+/w     |16413650
+ 9 Cech Lubor       18k CZ  BMik  1    1    10   0    2-/w    7-/b    6-/b    10+/w   8-/b     |16401649
+10 Senkyr Vojtech   18k CZ  APmG  0    0    10   0    6-/w    4-/b    8-/w    9-/b    7-/b     |16701861

@@ -8,6 +8,7 @@ import { getFormatter } from '@/i18n/formatter';
 import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
 import { sortTableStats } from '@/libs/sort';
+import { SgfCountLink } from '@/components/gameRecords/SgfCountLink';
 import { StatsTable } from '@/components/table/StatsTable';
 import type { StatsColumnDef } from '@/components/table/statsTableConfig';
 import { CountryLink } from '@/components/ui/CountryLink';
@@ -181,6 +182,14 @@ function AllPlayersStatsContent({ event, players, translations }: AllPlayersStat
           hasSgfs && {
             accessorKey: 'sgfs',
             header: t('table.sgfs'),
+            cell: ({ row }) => (
+              <SgfCountLink
+                event={event}
+                locale={translations.locale}
+                count={row.original.sgfs}
+                filters={{ player: row.original.id }}
+              />
+            ),
           },
           {
             accessorKey: 'wonPercent',

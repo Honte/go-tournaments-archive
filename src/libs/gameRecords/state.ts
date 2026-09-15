@@ -70,7 +70,7 @@ export function normalizeGameRecordsState(
   }
 
   state.opponent =
-    state.player &&
+    (state.player || state.country) &&
     state.opponent &&
     players.has(state.opponent) &&
     hasStructuralMatch(games, { player: state.player, country: state.country, opponent: state.opponent })

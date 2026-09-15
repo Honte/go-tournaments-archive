@@ -1,0 +1,48 @@
+name: Mistrovství republiky žáků a juniorů
+stages:
+  - type: tournament
+    file: czj2016u12.txt
+    category: u12
+    name: U12
+    dir: 2016/u12
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: true
+    collapsed: true
+  - type: tournament
+    file: czj2016u16.txt
+    category: u16
+    name: U16
+    dir: 2016/u16
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+      - null
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: true
+    collapsed: true
+  - type: tournament
+    file: czj2016u20.txt
+    category: u20
+    name: U20
+    dir: 2016/u20
+    scoringColumns:
+      - wins
+      - null
+      - sos
+      - sodos
+    breakers:
+      - wins
+      - sos
+      - sodos    
+    findSharedPlaces: true
+    collapsed: true

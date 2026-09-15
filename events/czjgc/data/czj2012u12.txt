@@ -1,0 +1,17 @@
+; TC[T120128C]
+; CL[A]
+; EV[Czech Youth Go Championship 2012 - U12]
+; PC[CZ, Praha]
+; DT[2012-01-28,2012-01-29]
+; HA[h9]
+; KM[7.5]
+; TM[90]
+; CM[ (submitted by Jana_H)]
+;.
+; MRJ12_12
+1 Vasa Vojtech       16k CZ  APmG  5    5    10   10 0  3+/b0  4+/b0  5+/w0  6+/w0  2+/w0   |15762923
+2 Vasova Dita        19k CZ  APmG  3    3    12    4 1  4-/w0  5+/b0  6+/w0  3+/w0  1-/b0   |15749921
+3 Broz Ondrej        20k CZ  APmG  3    3    12    4 0  1-/w0  6+/b0  4+/w0  2-/b0  5+/w0   |15998213
+4 Sindelar Vladimir  20k CZ  APmG  3    3    12    4 0  2+/b0  1-/w0  3-/b0  5+/b0  6+/w0   |15813743
+5 Kaufmann Lukas     20k CZ  APmG  1    1    14    0 0  6+/b0  2-/w0  1-/b0  4-/w0  3-/b0   |15886948
+6 Turek Michal       19k CZ  APmG  0    0    15    0 0  5-/w0  3-/w0  2-/b0  1-/b0  4-/b0   |16074047

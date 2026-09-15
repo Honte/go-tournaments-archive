@@ -36,7 +36,11 @@ export function Game({ event, className, game, players, translations, title, wid
       })}
     >
       {hasSgf && preview && (
-        <GameViewerTrigger sgfPath={game.props.sgf!} aria-label={gameTitle} className="h-fit shrink-0">
+        <GameViewerTrigger
+          sgfPath={game.props.sgf!}
+          aria-label={gameTitle}
+          className="h-fit shrink-0 max-xs:self-start"
+        >
           <img src={gameThumbUrl(event, preview)} alt={gameTitle} className="size-20" loading="lazy" />
         </GameViewerTrigger>
       )}

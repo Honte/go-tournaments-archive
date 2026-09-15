@@ -1,0 +1,36 @@
+website: http://so-imba.com/egoban/posts/praha-13-14-2-mrzj-dgp-chtgl.html
+name: Mistrovství republiky žáků a juniorů
+stages:
+  - type: tournament
+    file: czj2010u12.txt
+    category: u12
+    name: U12
+    dir: 2010/u12
+    scoringColumns:
+      - wins
+      - null
+      - sos
+      - sodos      
+    breakers:
+      - wins
+    findSharedPlaces: true
+    collapsed: true
+  - type: tournament
+    file: czj2010u16.txt
+    category: u16
+    name: U16
+    dir: 2010/u16
+    notes: 0+ are games vs Kamila Samajova U12 (rounds 3 to 5)
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sosos      
+    breakers:
+      - mms
+      - sos
+      - sosos
+    columns:
+      - wins    
+    findSharedPlaces: true
+    collapsed: true

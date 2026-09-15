@@ -1,0 +1,39 @@
+; TC[T040131A]
+; CL[A]
+; EV[Czech Youth Championship]
+; PC[CZ,Mikulov]
+; KM[6.5]
+; DT[2004-01-31,2004-02-01]
+; TM[80]
+; HA[h9]
+;                             Czech Youth Championship, Mikulov
+;                               January 31 - February 1, 2004
+;https://web.archive.org/web/20090225072426/http://www.goweb.cz/ogo/sin_slavy/mrzakuajunioru
+;Pl     Name             Grade  Club   MM S SOS SSOS 18 15 12  1.    2.    3.    4.    5.
+  1 Silt Ondrej             4d CZ Zli  18 5  78 395   1  0  0  5+/b  3+/w  2+/b  4+/w  7+/w  |10337481
+  2 Jurek Martin            3d CZ Mik  16 3  80 393   2  0  0  7+/b  4+/w  1-/w  3-/w  5+/b  |10213753
+  3 Prokop Jan              2k CZ Pra  16 3  80 393   3  1  0  6+/w  1-/b  5+/w  2+/b  4-/b  |10433654
+  4 Fidrmuc Ondrej          1k CZ Brn  16 3  80 387   4  ?  0  8+/w  2-/b  6+/b  1-/b  3+/w  |12501247
+  5 Snidal Bronislav        4k CZ Ost  15 2  79 380   5  ?  0  1-/w 10+/b  3-/b  8+/w  2-/w  |10750476
+  6 Lapacek Martin          7k CZ Ost  15 2  76 378   6  ?  0  3-/b  8+/w  4-/w  7-/w 10+/b  |10774478
+  7 Luber Tomas             6k CZ Ost  15 2  76 374   7  ?  0  2-/w 12-/w  9+/b  6+/b  1-/b  |10501546
+  8 Danek Martin            7k CZ Pra  15 2  73 375   8  ?  0  4-/b  6-/b 12+/w  5-/b  9+/b  |10298475
+  9 Danek Michal            8k CZ Pra  14 2  70 355   9  ?  0 10+/b 13-/b  7-/w 12+/b  8-/w  |10898261
+ 10 Sos Miroslav            8k CZ Zli  14 2  69 355  10  ?  1  9-/w  5-/w 13+/b 15+/b  6-/w  |12498981
+ 11 Langer Jakub            11 CZ KVa  14 5  59 301  11  ?  ? 16+/b 17+/w 14+/w 13+/b 12+/w  |12586849
+ 12 Hruby Pavel             9k CZ Zli  13 2  70 341  12  ?  ? 15+/w  7+/b  8-/b  9-/w 11-/b  |12762046
+ 13 Zubalik Michal          10 CZ FMi  13 3  67 319  13  ?  ? 14+/b  9+/w 10-/w 11-/w 15+/b  |12613678
+ 14 Zmekova Vera            10 CZ Brn  13 3  58 290  14  ?  ? 13-/w 15+/b 11-/b 16+/w 18+/w  |10513074
+ 15 Divisova Viki           9k CZ Pac  12 1  63 316  15  ?  ? 12-/b 14-/w 17+/b 10-/w 13-/w  |10601954
+ 16 Brauerova Barbora       12 CZ Ost  10 2  54 255  16  ?  ? 11-/w 19+/b 18+/w 14-/b 17-/b  |12486980
+ 17 Sukup Jan               13 CZ Mik  10 3  52 260  17  ?  ? 18+/b 11-/b 15-/w 20+/w 16+/w  |12374153
+ 18 Bursik Adam             13 CZ Mik   9 2  47 240  18  ?  ? 17-/w 23+/w 16-/b 19+/b 14-/b  |12886687
+ 19 Haugvic Radek           14 CZ Pra   8 2  39 206  19  ?  ? 20+/b 16-/w 21-/b 18-/w 23+/b  |12386825
+ 20 Ondrousek Jakub         16 CZ Brn   7 3  37 191  20  ?  ? 19-/w 22+/b 23+/w 17-/b    0+  |12733490
+ 21 Moravec Jiri            16 CZ Ost   7 3  31 149  21  ?  ? 23-/b 25+/b 19+/w 22-/w 26+/w  |12833469
+ 22 Bartunek Jan            17 CZ Pra   7 4  26 139  22  ?  ? 24+/b 20-/w 27+/w 21+/b 25+/w  |12849265
+ 23 Bukovska Nada           16 CZ Pra   6 2  37 178  23  ?  ? 21+/w 18-/b 20-/b 24+/w 19-/w  |12801261
+ 24 Zajicova Marketa        17 CZ Pac   6 3  24 133  24  ?  ? 22-/w  0+   26+/b 23-/b 27+/b  |12974940
+ 25 Zmek Bohuslav_jr        17 CZ Brn   5 2  24 127  25  ?  ? 26-/b 21-/w  0+   27+/w 22-/b  |10501073
+ 26 Rys Vojtech             18 CZ Pra   5 3  23 125  26  ?  ? 25+/w 27+/b 24-/w  0+   21-/b  |13286856
+ 27 Brabec Vit              20 CZ Mik   1 1  23 120  27  ?  ?  0+   26-/w 22-/b 25-/b 24-/w  |13549316

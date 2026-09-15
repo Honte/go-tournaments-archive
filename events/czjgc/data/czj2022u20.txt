@@ -1,0 +1,15 @@
+; TC[T220129C]
+; CL[A]
+; EV[Czech Youth Go Championship 2022 - U20 category]
+; PC[CZ, Praha]
+; DT[2022-01-29,2022-01-30]
+; HA[h9]
+; KM[6.5]
+; TM[82.5]
+; CM[ (submitted by Jana_H)]
+;.
+1 Vasova Dita          1d CZ  APmG  3        4    14   70 2048  3-/w   5+/b   4+/w   2+/w   0=      |15749921
+2 Defer Leon           1k CZ  Imba  3        4    14   70 1998  5+/w   4+/b   0=     1-/b   3+/b    |16413650
+3 Popov Robin          2k CZ  TFMi  3        4    14   70 1943  1+/b   0=     5+/w   4+/b   2-/w    |18386126
+4 Litovkin Rostislav   2k CZ  APmG  1        2    14   70 1845  0=     2-/w   1-/b   3-/w   5+/b    |17533230
+5 Fousek Richard      14k CZ  SLou  0        1    14   70  714  2-/b   1-/w   3-/b   0=     4-/w    |19725684

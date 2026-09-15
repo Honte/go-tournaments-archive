@@ -1,0 +1,34 @@
+; TC[T960914A]
+; DT[1996-09-14,1996-09-15]
+; CL[A]
+; EV[MR zaku a junioru]
+; PC[CZ, Zlin]
+; KM[5.5]
+; TM[0]
+; HA[h9]
+;          Mistrovstvi Ceske republiky zaku a junioru, Zlin 1996
+;                           14. 9. - 15. 9. 1996
+;
+;                               Skupina A
+;https://web.archive.org/web/20071030205655/http://www.czech-go.net/tour/1996/t960914.php
+;Pl    Name              Rank  Club  MM S SOS SDOS 18 15 12  1.  2.  3.  4.  5.  
+  1 Nechanicky Petr         1D CZ Nym  5 5   9   9  1  1  0  3+  2+  6+  5+  4+  0=  |10233267
+  2 Prachar Jan             2D CZ Zli  4 4  10   5  2  0  0  6+  1-  5+  4+  3+  0=  |10274704
+  3 Kostka Ivan             1K CZ FMi  2 2  12   2  3  0  0  1-  5+  4-  6+  2-  0=  |10286716
+  4 Chalupnicek Miroslav    1D CZ Nym  1 1  13   2  4  0  0  5-  6-  3+  2-  1-  0=  |10225710
+  5 Kremenek Jan            1D CZ Zli  1 1  13   1  5  0  0  4+  3-  2-  1-  0=  0=  |10250713
+  6 Kuzela Martin           2D CZ Zli  1 1  13   1  5  0  0  2-  4+  1-  3-  0=  0=  |10250702
+;
+; === GROUP B
+  7 Hora Jan                8k CZ Pra  6 6  21  21  7  2  0  8+ 11+  9+ 10+ 12+ 14+  |10401083
+  8 Jurek Martin            12 CZ Mik  5 5  22  16  8  3  1  7- 12+ 11+ 14+  9+ 10+  |10213753
+  9 Salom Ludek             17 CZ RpR  4 4  21  10  9  ?  0 16+ 13+  7- 15+  8- 11+  |10586103
+ 10 Silt Ondrej             17 CZ Zli  4 4  18   7 10  ?  2 17+ 15+ 18+  7- 13+  8-  |10337481
+ 11 Lucak David             14 CZ FMi  3 3  21   6 11  ?  0 12+  7-  8- 18+ 14+  9-  |10250746
+ 12 Pastrnak Ondrej         14 CZ Pra  3 3  19   5 12  ?  0 11-  8- 13+ 17+  7- 18+  |10274968
+ 13 Kysilka Petr            16 CZ Zli  3 3  16   5 13  ?  0 14+  9- 12- 16+ 10- 17+  |10350483
+ 14 Goblova Hana            16 CZ Olo  2 2  21   4 14  ?  0 13- 16+ 15+  8- 11-  7-  |10233751
+ 15 Pagac Jiri              20 CZ Zli  2 2  14   2 15  ?  3 18+ 10- 14-  9- 17+ 16-  |10398487
+ 16 Goblova Zuzana          17 CZ Olo  2 2  13   3 16  ?  ?  9- 14- 17- 13- 18+ 15+  |10249756
+ 17 Knezek Pavel            19 CZ FMi  1 1  15   2 17  ?  ? 10- 18- 16+ 12- 15- 13-  |10298761
+ 18 Stojar Michal           19 CZ Nym  1 1  15   1 18  ?  ? 15- 17+ 10- 11- 16- 12-  |10201763

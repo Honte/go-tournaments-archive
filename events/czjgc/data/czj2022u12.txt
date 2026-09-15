@@ -1,0 +1,14 @@
+; TC[T220129A]
+; CL[A]
+; EV[Czech Youth Go Championship 2022 - U12 category]
+; PC[CZ, Praha]
+; DT[2022-01-29,2022-01-30]
+; HA[h9]
+; KM[6.5]
+; TM[82.5]
+; CM[ (submitted by Jana_H)]
+;.
+1 Dach Bartolomej   6k CZ  BMik  6        6    12   120 1475  3+/b   2+/w   4+/b   3+/w   2+/b   4+/w    |19574280
+2 Babka Matous     18k CZ  Blan  3        3    18   108  213  4+/b   1-/b   3-/w   4+/w   1-/w   3+/b    |18298918
+3 Adamek Petr      20k CZ  APmG  3        3    18   108   38  1-/w   4+/b   2+/b   1-/b   4+/w   2-/w    |19574940
+4 Jiruse Tomas     20k CZ  Blan  0        0    24   96  -316  2-/w   3-/w   1-/w   2-/b   3-/b   1-/b    |18250914

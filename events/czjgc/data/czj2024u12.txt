@@ -1,0 +1,15 @@
+; TC[T240127E]
+; CL[A]
+; EV[Czech Youth Go Championship 2024 - U12 category]
+; PC[CZ, Praha]
+; DT[2024-01-27,2024-01-28]
+; HA[h9]
+; KM[6.5]
+; TM[82.5]
+; CM[ (submitted by Jana_H)]
+;.
+1 Dach Bartik         2d CZ  BMik  4    5    5    6  2191  5+/b   0=     3+/w   2+/w   4+/b    |19574280
+2 Podpera Martin     18k CZ  APWS  2    3    3    2   277  4+/w   3-/w   5+/w   1-/b   0=      |19898967
+3 Mihalcin Jakub     19k CZ  APmG  2    3    3    2   221  0=     2+/b   1-/b   4-/b   5+/w    |20349527
+4 Tesar Stepan       20k CZ  APmG  2    3    3    2   106  2-/b   5+/b   0=     3+/w   1-/w    |20137480
+5 Kuprijanov Teodor  20k CZ  APmG  0    1    1    0   -19  1-/w   4-/w   2-/b   0=     3-/b    |20113478

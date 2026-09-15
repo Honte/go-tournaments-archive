@@ -1,0 +1,36 @@
+; TC[T030201A]
+; DT[2003-02-01,2003-02-02]
+; CL[A]
+; EV[Czech Youth Championship]
+; PC[CZ,Ostrava]
+; KM[6.5]
+; TM[80]
+; HA[h9]
+;                         Czech Youth Championship, Ostrava
+;                                 February 1 - 2, 2003
+;https://web.archive.org/web/20090225072426/http://www.goweb.cz/ogo/sin_slavy/mrzakuajunioru
+;Pl     Name             Grade  Club   MM S SOS SSOS 18 15 12 1.    2.    3.    4.    5.    6.
+  1 Jurek Martin            3d CZ Mik   4 4   0   0   1  0  0  3+    0=    2+    3+    0=    2+  |10213753
+  2 Prokop Jan              2k CZ Pra   1 1   0   0   2  1  0  0=    3+    1-    0=    3-    1-  |10433654
+  3 Pisarik Jan             4k CZ Zli   1 1   0   0   2  ?  0  1-    2-    0=    1-    2+    0=  |10749860
+;Vedlejsi turnaj
+  4 Hruby Pavel             11 CZ Zli   5 5  11  68   4  ?  0 23+/w 14+/b 15+/b  8+/b  9+/w  0=  |12762046
+  5 Sos Miroslav            9k CZ Zli   4 4  12  69   5  ?  1 18+/b 15-/w 17+/w 12+/b  7+/b  0=  |12498981
+  6 Snidal Bronislav        9k CZ Ost   4 4  11  72   6  ?  ? 16+/b  7-/w 21+/w 15+/b 10+/b  0=  |10750476
+  7 Danek Michal            10 CZ Pra   3 3  15  62   7  ?  ? 13+/b  6+/b  8-/w 20+/b  5-/w  0=  |10898261
+  8 Moravec Miloslav        9k CZ Ost   3 3  15  61   8  ?  ? 19+/b 17+/w  7+/b  4-/w 13-/w  0=  |10786864
+  9 Zubalik Michal          13 CZ FMi   3 3  14  62   9  ?  ? 11-/w 22+/b 13+/w 16+/b  4-/b  0=  |12613678
+ 10 Prokopova Anna          9k CZ Pra   3 3  14  60  10  ?  ? 12-/w 21+/b 14+/w 11+/b  6-/w  0=  |10449087
+ 11 Lapacek Martin          13 CZ Ost   3 3  13  69  11  ?  ?  9+/b 12+/w 16-/w 10-/w 17+/b  0=  |10774478
+ 12 Zmekova Vera            10 CZ Brn   3 3  13  65  12  ?  ? 10+/b 11-/b 20+/b  5-/w 16+/w  0=  |10513074
+ 13 Kares Ondrej            13 CZ Jav   3 3  13  64  13  ?  ?  7-/w 19+/w  9-/b 18+/b  8+/b  0=  |12598718
+ 14 Krystof Lukas           14 CZ Ost   3 3  12  63  14  ?  ? 20+/w  4-/w 10-/b 22+/w 15+/w  0=  |10949389
+ 15 Langer Jakub            14 CZ Mik   2 2  17  56  15  ?  ? 22+/w  5+/b  4-/w  6-/w 14-/b  0=  |12586849
+ 16 Divisova Viki           10 CZ Pac   2 2  15  62  16  ?  ?  6-/w 18+/w 11+/b  9-/w 12-/b  0=  |10601954
+ 17 Bursik Adam             16 CZ Mik   2 2  13  60  17  ?  ? 21+/w  8-/b  5-/b 19+/w 11-/w  0=  |12886687
+ 18 Brauerova Barbora       13 CZ Ost   2 2  11  61  18  ?  ?  5-/w 16-/b 22+/b 13-/w 21+/b  0=  |12486980
+ 19 Kovarik Vojtech         17 CZ Pra   2 2   9  62  19  ?  ?  8-/w 13-/b 23+/w 17-/b 20+/b  0=  |12862256
+ 20 Sukup Jan               15 CZ Mik   1 1  11  59  20  ?  ? 14-/b 23+/b 12-/w  7-/w 19-/w  0=  |12374153
+ 21 Hruban Jakub            16 CZ Zli   1 1  11  59  21  ?  ? 17-/b 10-/w  6-/b 23+/b 18-/w  0=  |12737648
+ 22 Zmek Bohuslav_jr        17 CZ Brn   1 1  10  64  22  ?  ? 15-/b  9-/w 18-/w 14-/b 23+/b  0=  |10501073
+ 23 Novotny Jan             20 CZ Mik   0 0  10  52  23  ?  ?  4-/b 20-/w 19-/b 21-/w 22-/w  0=  |12850981

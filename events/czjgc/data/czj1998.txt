@@ -1,0 +1,33 @@
+; TC[T980704B]
+; DT[1998-07-04,1998-07-05]
+; CL[A]
+; EV[Czech Youth Championship `98]
+; PC[CZ,Becov]
+; KM[5.5]
+; TM[0]
+; HA[h9]
+;                     6th Czech Youth Championship, Becov 1998
+;                                July 4 - 5, 1998
+;https://web.archive.org/web/20071031060150/http://www.czech-go.net/tour/1998/t980704.php
+;https://web.archive.org/web/20090225072426/http://www.goweb.cz/ogo/sin_slavy/mrzakuajunioru
+;Pl     Name             Grade  Club   MM S SOS SDOS 18 15 12 1.  2.  3.  4.  5.  6.  
+  1 Hora Jan                3D CZ Pra   5 5  20  15   1  0  0  12+ 11+  4+  3+  5+  2-  |10401083
+  2 Kostka Ivan             2D CZ FMi   5 5  18  18   2  0  0  13+  8+  7+  5- 11+  1+  |10286716
+  3 Kuzela Martin           3D CZ Zli   5 5  18  17   3  0  0  18+  7+  5+  1-  8+  4+  |10250702
+  4 Nechanicky Petr         3D CZ Nym   4 4  16   0   4  0  0  15+  6+  1- 11+  9+  3-  |10233267
+  5 Chalupnicek Miroslav    1D CZ Nym   4 4  15   0   5  0  0   9+ 10+  3-  2+  1-  8+  |10225710
+  6 Holeckova Kamila        6K CZ Pra   4 4  13   0   6  0  0  17+  4- 12+  8- 14+  9+  |10386475
+  7 Silt Ondrej             1K CZ Zli   4 4  12   0   7  1  1  14+  3-  2- 15+ 12+ 10+  |10337481
+  8 Holeckova Lucie         6K CZ Pra   3 3  13   0   8  ?  0  19+  2- 18+  6+  3-  5-  |10213742
+  9 Prokopova Anna          14 CZ Pra   3 3  12   5   9  ?  2   5- 20+ 14+ 10+  4-  6-  |10449087
+ 10 Dica Vladimir_jr        8K CZ KVa   3 3  12   4  10  ?  0  20+  5- 15+  9- 18+  7-  |10233982
+ 11 Salom Ludek             2K CZ RpR   3 3  11   0  11  ?  0  16+  1- 13+  4-  2- 14+  |10586103
+ 12 Dedek Vojtech           12 CZ Libe  3 3   9   0  12  ?  0   1- 16+  6- 13+  7- 15+  |10637693
+ 13 Bernathova Anna         14 CZ Libe  3 3   8   0  13  ?  0   2- 19+ 11- 12- 17+ 16+  |10301984
+ 14 Zaloudkova Klara        14 CZ Pra   2 2   8   0  14  ?  0   7- 18+  9- 17+  6- 11-  |10798106
+ 15 Ullmannova Dagmar       12 CZ KVa   2 2   7   0  15  ?  0   4- 17+ 10-  7- 19+ 12-  |10501480
+ 16 Kuzvart Jan             19 CZ KVa   2 2   6   0  16  ?  3  11- 12- 19+ 18- 20+ 13-  |10733954
+ 17 Kopalova Zuzana         20 CZ Libe  2 2   5   0  17  ?  4   6- 15- 20+ 14- 13- 19+  |10433093
+ 18 Prokop Jan              11 CZ Pra   2 2   4   0  18  ?  5   3- 14-  8- 16+ 10- 20+  |10433654
+ 19 Durovicova Jana         20 CZ KVa   1 1   3   0  19  ?  6   8- 13- 16- 20+ 15- 17-  |10513481
+ 20 Durovic Jan             20 CZ KVa   0 0   0   0  20  ?  7  10-  9- 17- 19- 16- 18-  |10537483

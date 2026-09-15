@@ -251,3 +251,77 @@ html {
   color: inherit;
   box-shadow: inset 0 0 0 2px var(--go-row-color, var(--color-archive-accent));
 }
+
+/* Only capture the sliding panel and header, not the rest of the page. */
+:root:active-view-transition-type(medalists-next),
+:root:active-view-transition-type(medalists-previous) {
+  view-transition-name: none;
+
+  &::view-transition {
+    pointer-events: none;
+  }
+}
+
+::view-transition-group(site-header) {
+  z-index: 1;
+  animation: none;
+}
+
+::view-transition-old(site-header) {
+  display: none;
+}
+
+::view-transition-new(site-header) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-image-pair(.slide-left),
+::view-transition-image-pair(.slide-right) {
+  overflow: hidden;
+}
+
+::view-transition-old(.slide-left),
+::view-transition-new(.slide-right) {
+  --slide-offset: -100%;
+}
+
+::view-transition-new(.slide-left),
+::view-transition-old(.slide-right) {
+  --slide-offset: 100%;
+}
+
+::view-transition-old(.slide-left),
+::view-transition-old(.slide-right) {
+  animation: slide-out 220ms ease-in-out both;
+}
+
+::view-transition-new(.slide-left),
+::view-transition-new(.slide-right) {
+  animation: slide-in 220ms ease-in-out both;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(var(--slide-offset));
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(var(--slide-offset));
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}

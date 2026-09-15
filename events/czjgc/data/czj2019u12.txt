@@ -1,0 +1,14 @@
+; TC[T190302F]
+; CL[A]
+; EV[Czech Youth Go Championship 2019 - U12 category]
+; PC[CZ, Praha]
+; DT[2019-03-02,2019-03-03]
+; HA[h9]
+; KM[6.5]
+; TM[82.5]
+; CM[ (submitted by Jana_H)]
+;.
+1 Koran Ladislav_jr  15k CZ  CPis  6    6    12   2+/b   4+/w   3+/w   2+/w   4+/b   3+/b    |18413098
+2 Kaderavek Kvido    15k CZ  APmG  4    4    4    1-/w   3+/b   4+/w   1-/b   3+/w   4+/b    |18050714
+3 Grosser Tadeas     20k CZ  KVaG  2    2    0    4+/w   2-/w   1-/b   4+/b   2-/b   1-/w    |19233093
+4 Pavel Tomas        19k CZ  APmG  0    0    0    3-/b   1-/b   2-/b   3-/w   1-/w   2-/w    |18949645

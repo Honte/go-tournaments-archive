@@ -45,7 +45,7 @@ export function buildGameRecordsFacets(
   return {
     player: buildPlayerFacet(games, state, 'player', playerMeta, true),
     country: buildCountryFacet(games, state, 'country', options.countryLabel, options.countriesEnabled, hasCountries),
-    opponent: buildPlayerFacet(games, state, 'opponent', playerMeta, Boolean(state.player)),
+    opponent: buildPlayerFacet(games, state, 'opponent', playerMeta, Boolean(state.player || state.country)),
     opponentCountry: buildCountryFacet(
       games,
       state,

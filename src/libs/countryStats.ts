@@ -1,4 +1,4 @@
-import type { CountryResult, CountryStats, PlayerStageResult } from '@/schema/data';
+import type { CountryResult, CountryStats } from '@/schema/data';
 import { getGameStats } from '@/libs/games';
 
 export function getCountryAvailableCategories(country: CountryStats, categories: readonly string[]) {
@@ -21,6 +21,7 @@ export function getCountryAvailableCategories(country: CountryStats, categories:
 
 export function filterCountryStatsByCategory(country: CountryStats, category: string): CountryStats {
   const years: Record<number, CountryResult> = {};
+  const sgfs = new Set<string>();
   let totalGames = 0;
   let totalWon = 0;
   let totalDrawn = 0;
@@ -48,6 +49,13 @@ export function filterCountryStatsByCategory(country: CountryStats, category: st
         }
 
         const outcomes = getGameStats(stage.games);
+
+        for (const game of stage.games) {
+          if (game.props?.sgf) {
+            sgfs.add(game.props.sgf);
+          }
+        }
+
         const place = stage.categories ? stage.categories?.[category] : stage.place;
 
         filteredTournament.totalGames += outcomes.games;
@@ -87,6 +95,7 @@ export function filterCountryStatsByCategory(country: CountryStats, category: st
 
   return {
     ...country,
+    totalSgfs: sgfs.size,
     categoriesMedals: {
       [category]: country.categoriesMedals[category],
     },
@@ -98,12 +107,4 @@ export function filterCountryStatsByCategory(country: CountryStats, category: st
     totalUnresolved,
     years,
   };
-}
-
-export function hasStageCategory(stage: PlayerStageResult, category?: string) {
-  return !category || stage.categories?.[category] !== undefined;
-}
-
-export function getStageCategoryPlace(stage: PlayerStageResult, category?: string) {
-  return category ? stage.categories?.[category] : stage.place;
 }

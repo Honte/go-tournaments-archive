@@ -1,0 +1,19 @@
+; TC[T260124B]
+; CL[A]
+; EV[Czech Youth Championship 2026 - U16]
+; PC[CZ, Praha]
+; DT[2026-01-24,2026-01-25]
+; HA[h9]
+; KM[6.5]
+; TM[75]
+; CM[ (submitted by 132)]
+;.
+1 Dach Bartik      4d CZ  BMik  5        5    15   15   7+/b   5+/w   3+/w   2+/w   4+/b    |19574280
+2 Komin Jan        4d CZ  APWS  4        4    15   10   6+/w   4+/b   8+/w   1-/b   3+/b    |19637596
+3 Rak Lukas        2k CZ  TOst  3        3    15   6    8+/b   7+/w   1-/b   5+/b   2-/w    |19674402
+4 Jiruse Tomas    10k CZ  Blan  3        3    14   5    0+     2-/w   7+/b   9+/b   1-/w    |18250914
+5 Babka Matous     4k CZ  Blan  3        3    13   5    9+/w   1-/b   6+/b   3-/w   8+/b    |18298918
+6 Adamek Petr     12k CZ  APmG  3        3    11   4    2-/b   9+/b   5-/w   8+/w   0+      |19574940
+7 Horna Matous    12k CZ  APmG  2        2    13   2    1-/w   3-/b   4-/w   0+     9+/w    |20125479
+8 Tesar Stepan    15k CZ  APmG  1        1    13   0    3-/w   0+     2-/b   6-/b   5-/w    |20137480
+9 Mihalcin Jakub  19k CZ  APmG  1        1    11   0    5-/b   6-/w   0+     4-/w   7-/b    |20349527

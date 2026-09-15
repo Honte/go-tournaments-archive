@@ -1,0 +1,51 @@
+website: http://so-imba.com/egoban/posts/praha-5-6-2-mrzj.html
+name: Mistrovství republiky žáků a juniorů
+stages:
+  - type: tournament
+    file: czj2011u12.txt
+    category: u12
+    name: U12
+    dir: 2011/u12
+    scoringColumns:
+      - wins
+      - null
+      - sos
+      - sodos      
+    breakers:
+      - wins
+      - sos
+      - sodos 
+    findSharedPlaces: true
+    collapsed: true
+  - type: tournament
+    file: czj2011u16.txt
+    category: u16
+    name: U16
+    dir: 2011/u16
+    scoringColumns:
+      - wins
+      - null
+      - sos
+      - sodos      
+    breakers:
+      - wins
+      - sos
+      - sodos 
+    findSharedPlaces: true
+    collapsed: true
+  - type: tournament
+    file: czj2011u20.txt
+    category: u20
+    name: U20
+    dir: 2011/u20
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - sodos 
+      - rating      
+    breakers:
+      - wins
+      - rating
+    findSharedPlaces: true
+    collapsed: true

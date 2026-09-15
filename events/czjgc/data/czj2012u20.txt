@@ -1,0 +1,15 @@
+; TC[T120128D]
+; CL[A]
+; EV[Czech Youth Go Championship 2012 - U20]
+; PC[CZ, Praha]
+; DT[2012-01-28,2012-01-29]
+; HA[h9]
+; KM[7.5]
+; TM[90]
+; CM[ (submitted by Jana_H)]
+;.
+; MRJ12_20
+1 Podpera Lukas      5d CZ  APWS  6    6    12   120  2+/b0  3+/w0  4+/b0  2+/w0  3+/b0  4+/w0   |13201914
+2 Dvorak Vojtech     6k CZ  APra  4    4    16   112  1-/w0  4+/w0  3+/b0  1-/b0  4+/b0  3+/w0   |16025174
+3 Salajkova Tereza  10k CZ  BMik  2    2    20   104  4+/b0  1-/b0  2-/w0  4+/w0  1-/w0  2-/b0   |13633873
+4 Vrablik Jan       20k CZ  xxx   0    0    24   96   3-/w0  2-/b0  1-/w0  3-/b0  2-/w0  1-/b0   |16286908

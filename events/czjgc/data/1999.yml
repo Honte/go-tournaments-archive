@@ -1,0 +1,23 @@
+website: https://web.archive.org/web/20090225072426/http://www.goweb.cz/ogo/sin_slavy/mrzakuajunioru
+name: Mistrovství republiky žáků a juniorů
+stages:
+  - type: tournament
+    file: czj1999.txt
+    name: All
+    notes: played in 2 groups based on rank (4+9)
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sodos
+      - u18
+      - u15
+      - u12  
+    breakers:      
+      - mms
+      - sos
+      - sodos
+    columns:
+      - wins    
+    findSharedPlaces: true
+    collapsed: false

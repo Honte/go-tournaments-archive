@@ -6,6 +6,7 @@ import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getFormatter } from '@/i18n/formatter';
 import { getTranslator } from '@/i18n/translator';
+import { SgfCountLink } from '@/components/gameRecords/SgfCountLink';
 import { StatsTable } from '@/components/table/StatsTable';
 import type { StatsColumnDef } from '@/components/table/statsTableConfig';
 import { H2 } from '@/components/ui/H2';
@@ -15,12 +16,14 @@ type OpponentsProps = {
   event: EventContext;
   translations: Translations;
   player: PlayerStats;
+  category?: string;
 };
 
 type OpponentRow = {
   id: string;
   name: string;
   games: number;
+  sgfs: number;
   won: number;
   drawn: number;
   unresolved: number;
@@ -31,13 +34,20 @@ type OpponentRow = {
   country: string;
 };
 
-export function Opponents({ event, translations, player }: OpponentsProps) {
+export function Opponents({ event, translations, player, category }: OpponentsProps) {
   const t = getTranslator(translations);
 
   const data = useMemo(() => {
     const stats: Record<
       string,
-      { won: number; drawn: number; unresolved: number; games: number; countries: Set<string | undefined> }
+      {
+        won: number;
+        drawn: number;
+        unresolved: number;
+        games: number;
+        countries: Set<string | undefined>;
+        sgfs: Set<string>;
+      }
     > = {};
 
     for (const event of player.results) {
@@ -53,6 +63,7 @@ export function Opponents({ event, translations, player }: OpponentsProps) {
             drawn: 0,
             unresolved: 0,
             countries: new Set(),
+            sgfs: new Set(),
           });
 
           opponent.games += Number(!game.unresolved);
@@ -60,12 +71,16 @@ export function Opponents({ event, translations, player }: OpponentsProps) {
           opponent.won += Number(game.won);
           opponent.drawn += Number(Boolean(game.drawn));
           opponent.countries.add(game.country);
+
+          if (game.props?.sgf) {
+            opponent.sgfs.add(game.props.sgf);
+          }
         }
       }
     }
 
     return Object.entries(stats)
-      .map<OpponentRow>(([id, { games, won, drawn, unresolved, countries }]) => {
+      .map<OpponentRow>(([id, { games, won, drawn, unresolved, countries, sgfs }]) => {
         const name = player.opponents[id];
         const [firstName, ...rest] = name.split(' ');
         const lastName = rest.join(' ') || '';
@@ -80,6 +95,7 @@ export function Opponents({ event, translations, player }: OpponentsProps) {
           lastName,
           country,
           games,
+          sgfs: sgfs.size,
           won,
           drawn,
           unresolved,
@@ -91,6 +107,7 @@ export function Opponents({ event, translations, player }: OpponentsProps) {
   }, [player]);
   const hasDraws = data.some((opponent) => opponent.drawn > 0);
   const hasUnresolved = data.some((row) => row.unresolved > 0);
+  const hasSgfs = data.some((row) => row.sgfs > 0);
 
   const columns = useMemo<StatsColumnDef<OpponentRow>[]>(
     () =>
@@ -128,6 +145,18 @@ export function Opponents({ event, translations, player }: OpponentsProps) {
             accessorKey: 'unresolved',
             header: t('table.unresolved'),
           },
+          hasSgfs && {
+            accessorKey: 'sgfs',
+            header: t('table.sgfs'),
+            cell: ({ row }) => (
+              <SgfCountLink
+                event={event}
+                locale={translations.locale}
+                count={row.original.sgfs}
+                filters={{ player: player.id, opponent: row.original.id, category }}
+              />
+            ),
+          },
           {
             accessorKey: 'wonPercent',
             header: t('table.wonPercent'),
@@ -135,7 +164,7 @@ export function Opponents({ event, translations, player }: OpponentsProps) {
           },
         ] as StatsColumnDef<OpponentRow>[]
       ).filter(Boolean),
-    [translations, t, event, hasDraws, hasUnresolved]
+    [translations, t, event, hasDraws, hasUnresolved, hasSgfs, player.id, category]
   );
 
   return (

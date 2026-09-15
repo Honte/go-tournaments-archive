@@ -46,10 +46,10 @@ function CountryStatsContent({ event, country, translations, category }: Country
 
   return (
     <div className="flex flex-col gap-2">
-      <CountryAchievements event={event} country={filteredCountry} translations={translations} />
+      <CountryAchievements event={event} country={filteredCountry} translations={translations} category={category} />
       <CountryEvents event={event} country={filteredCountry} translations={translations} showCategories={!category} />
-      <CountryPlayers event={event} country={filteredCountry} translations={translations} />
-      <CountryOpponents event={event} country={filteredCountry} translations={translations} />
+      <CountryPlayers event={event} country={filteredCountry} translations={translations} category={category} />
+      <CountryOpponents event={event} country={filteredCountry} translations={translations} category={category} />
     </div>
   );
 }

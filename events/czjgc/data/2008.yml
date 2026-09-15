@@ -1,0 +1,19 @@
+name: Mistrovství republiky žáků a juniorů
+stages:
+  - type: tournament
+    file: czj2008.txt
+    name: All
+    scoringColumns:
+      - wins
+      - null
+      - sos
+      - direct
+      - u18
+      - u15
+      - u12  
+    breakers:      
+      - wins
+      - sos
+      - direct
+    findSharedPlaces: true
+    collapsed: false

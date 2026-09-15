@@ -7,6 +7,7 @@ import type { Translations } from '@/i18n/consts';
 import { getFormatter } from '@/i18n/formatter';
 import { getTranslator } from '@/i18n/translator';
 import { getGameStats } from '@/libs/games';
+import { SgfCountLink } from '@/components/gameRecords/SgfCountLink';
 import { StatsTable } from '@/components/table/StatsTable';
 import type { StatsColumnDef } from '@/components/table/statsTableConfig';
 import { H2 } from '@/components/ui/H2';
@@ -29,6 +30,8 @@ type CountryEventRow = {
   rank?: string;
   place: number | '?';
   games: number;
+  sgfs: number;
+  category?: string;
   won: number;
   drawn: number;
   unresolved: number;
@@ -125,6 +128,23 @@ export function CountryEvents({
             accessorKey: 'unresolved',
             header: t('table.unresolved'),
           },
+          data.some((row) => row.sgfs > 0) && {
+            accessorKey: 'sgfs',
+            header: t('table.sgfs'),
+            cell: ({ row }) => (
+              <SgfCountLink
+                event={event}
+                locale={translations.locale}
+                count={row.original.sgfs}
+                filters={{
+                  player: row.original.id,
+                  country: country.code,
+                  years: [row.original.year],
+                  category: row.original.category,
+                }}
+              />
+            ),
+          },
           {
             accessorKey: 'wonPercent',
             header: t('table.wonPercent'),
@@ -132,7 +152,7 @@ export function CountryEvents({
           },
         ] as StatsColumnDef<CountryEventRow>[]
       ).filter(Boolean),
-    [translations, t, event, showCategories, data]
+    [translations, t, event, showCategories, data, country.code]
   );
 
   return (
@@ -188,12 +208,15 @@ export function getCountryEventRows({ country, showBestOnly, hasCategories, show
         }
 
         const outcomes = getGameStats(stage.games);
+        const categories = Object.keys(stage.categories ?? {});
 
         list.push({
           year: Number(year),
           id: result.id,
           name: result.name,
           rank: result.rank,
+          sgfs: new Set(stage.games.map((game) => game.props?.sgf).filter(Boolean)).size,
+          category: categories.length === 1 ? categories[0] : undefined,
           categories: showCategories && stage.categories ? Object.keys(stage.categories) : undefined,
           place: stage.place,
           ...outcomes,

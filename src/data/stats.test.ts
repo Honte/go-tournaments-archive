@@ -11,6 +11,44 @@ import { getCountryCategoryPageOptionsFromStats } from '@/components/pages/Count
 import { getPlayerCategoryPageOptionsFromStats } from '@/components/pages/PlayerPage';
 
 describe('calculateStats', () => {
+  it('counts country SGFs once for domestic games and recalculates filtered category totals', () => {
+    const playersHandler = createPlayersHandler();
+    const players = playersHandler.loadJson({
+      a: 'Alice Nowak 1d (PL)',
+      b: 'Bob Smith 1k (PL)',
+      c: 'Carol Lee 2k (FR)',
+    });
+    const games: Record<string, Game> = {
+      g1: {
+        id: 'g1',
+        stage: 0,
+        players: [
+          { id: 'a', won: true },
+          { id: 'b', won: false },
+        ],
+        result: 'B+R',
+        props: { sgf: '2025/main.sgf' },
+      },
+      g2: {
+        id: 'g2',
+        stage: 1,
+        players: [
+          { id: 'b', won: true },
+          { id: 'c', won: false },
+        ],
+        result: 'B+T',
+        props: { sgf: '2025/excluded.sgf' },
+      },
+    };
+    const tournament = createTournament(players, games, { a: { u16: 1 }, b: { u16: 2 } });
+    const event = { ...creteEventConfig(), categories: ['u16', 'u12'] };
+    const country = calculateStats(event, [tournament], playersHandler).countries.PL;
+    assert.equal(country.totalSgfs, 1);
+    assert.equal(filterCountryStatsByCategory(country, 'u16').totalSgfs, 1);
+    assert.equal(filterCountryStatsByCategory(country, 'u12').totalSgfs, 0);
+    assert.equal(calculateStats(event, [createTournament(players, {})], playersHandler).countries.PL.totalSgfs, 0);
+  });
+
   it('aggregates draws without treating them as losses and keeps excluded games in global totals', () => {
     const playersHandler = createPlayersHandler();
     const players = playersHandler.loadJson({
@@ -150,6 +188,8 @@ describe('calculateStats', () => {
     assert.equal(alice.totalWon, 2);
     assert.equal(alice.score, 10_000);
     assert.equal(alice.totalSgfs, 1);
+    assert.equal(stats.countries.PL.totalSgfs, 1);
+    assert.equal(stats.countries.DE.totalSgfs, 1);
     assert.equal(stats.players[players.c.id], undefined);
     assert.deepEqual(Object.keys(stats.countries).sort(), ['DE', 'PL']);
     assert.equal(stats.summary.players, 2);

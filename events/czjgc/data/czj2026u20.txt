@@ -1,0 +1,14 @@
+; TC[T260124A]
+; CL[A]
+; EV[Czech Youth Championship 2026 - U20]
+; PC[CZ, Praha]
+; DT[2026-01-24,2026-01-25]
+; HA[h9]
+; KM[6.5]
+; TM[75]
+; CM[ (submitted by 132)]
+;.
+1 Koran Ladislav_jr   4k CZ  CPis  5    5    11   2+/b   3-/b   4+/w   2+/w   3+/w   4+/b    |18413098
+2 Holecek Ondrej      6k CZ  SRev  4    4    6    1-/w   4+/w   3+/b   1-/b   4+/b   3+/w    |20433435
+3 Jirusova Anezka    10k CZ  Blan  3    3    5    4+/b   1+/w   2-/w   4+/w   1-/b   2-/b    |17033720
+4 Vachova Karolina   16k CZ  Blan  0    0    0    3-/w   2-/b   1-/b   3-/b   2-/w   1-/w    |19801705

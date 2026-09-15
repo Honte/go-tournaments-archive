@@ -4,6 +4,7 @@ import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { Details } from '@/components/Details';
+import { SgfCountLink } from '@/components/gameRecords/SgfCountLink';
 import { AchievementYears } from '@/components/stats/AchievementYears';
 import { H2 } from '@/components/ui/H2';
 
@@ -11,11 +12,12 @@ type CountryAchievementsProps = {
   event: EventContext;
   country: CountryStats;
   translations: Translations;
+  category?: string;
 };
 
 const MEDALS = ['first', 'second', 'third'] as const;
 
-export function CountryAchievements({ event, country, translations }: CountryAchievementsProps) {
+export function CountryAchievements({ event, country, translations, category }: CountryAchievementsProps) {
   const t = getTranslator(translations);
   const details: Record<string, ReactNode> = {};
 
@@ -50,6 +52,18 @@ export function CountryAchievements({ event, country, translations }: CountryAch
 
   details[t('table.events')] = Object.keys(country.years).length;
   details[t('table.games')] = country.totalGames;
+
+  if (country.totalSgfs > 0) {
+    details[t('table.sgfs')] = (
+      <SgfCountLink
+        event={event}
+        locale={translations.locale}
+        count={country.totalSgfs}
+        filters={{ country: country.code, category }}
+      />
+    );
+  }
+
   details[t('table.won')] = country.totalWon;
 
   if (country.totalDrawn > 0) {

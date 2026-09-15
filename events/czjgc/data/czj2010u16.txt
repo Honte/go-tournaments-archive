@@ -1,0 +1,28 @@
+; TC[T100213G]
+; CL[A]
+; EV[Czech Youth Championship]
+; PC[CZ, Praha]
+; DT[2010-02-13,2010-02-14]
+; HA[h9]
+; KM[7.5]
+; TM[75]
+; CM[ (submitted by cieply)]
+;.
+;0+ games vs Kamila Samajova U12 (rounds 3 to 5)
+;=== Under 16
+ 1 Podpera Lukas      3d CZ  APWS  6    5    20   93   4+/b    3+/b    2+/b    7+/w    6+/w     |13201914
+ 2 Tichy Antonin      3k CZ  APWS  5    4    21   90   5+/b    9+/b    1-/w    4+/b    3+/w     |14825778
+ 3 Kouba Petr         7k CZ  APra  4    3    21   87   7+/b    1-/w    6+/w    8+/b    2-/b     |14533926
+ 4 Babicka Katerina  10k CZ  Usti  4    3    20   86   1-/w    10+/b   8+/b    2-/w    7+/b     |15225804
+ 5 Podperova Anna    13k CZ  APWS  4    3    15   73   2-/w    8-/b    10+/b   0+      9+/b     |13686563
+ 6 Salajkova Tereza  16k CZ  BMik  4    3    14   76   15+/b   14+/w   3-/b    11+/w   1-/b     |13633873
+ 7 Kubitova Josefa   16k CZ  APWS  3    2    17   84   3-/w    11+/b   0+      1-/b    4-/w     |15049023
+ 8 Havelka Samuel    20k CZ  TOst  3    3    15   76   13+/b   5+/w    4-/w    3-/w    0+       |15662372
+ 9 Junek Martin      18k CZ  Brno  3    3    14   67   12+/b   2-/w    15+/w   13+/b   5-/w     |14313783
+10 Subova Sarka      19k CZ  BMik  3    3    13   71   14+/b   4-/w    5-/w    12+/b   11+/b    |13650890
+11 Dohnalkova Adela  20k CZ  MJes  2    2    13   68   0+      7-/w    12+/b   6-/b    10-/w    |14350820
+12 Najbrtova Zuzana  19k CZ  Brno  2    2    11   62   9-/w    13+/b   11-/w   10-/w   14+/b    |14386460
+13 Najbrtova Anna    20k CZ  Brno  2    2    10   62   8-/w    12-/w   14+/b   9-/w    15+/b    |14733587
+14 Solnicka Marketa  20k CZ  Brno  1    1    12   58   10-/w   6-/b    13-/w   15+/b   12-/w    |15450369
+15 Dvorackova Eva    20k CZ  MJes  1    1    10   60   6-/w    0+      9-/b    14-/w   13-/w    |13049872
+

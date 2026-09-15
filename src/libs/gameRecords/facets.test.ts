@@ -73,6 +73,25 @@ describe('game facets', () => {
     assert.equal(toCounts(model.facets.opponent.options).c, 1);
   });
 
+  it('allows a named opponent with a country and no selected player', () => {
+    const countryModel = buildGameRecordsModel(games, state({ country: 'PL' }));
+    const narrowed = buildGameRecordsModel(games, state({ country: 'PL', opponentCountry: 'DE' }));
+    const selected = buildGameRecordsModel(games, state({ ...narrowed.state, opponent: 'b' }));
+
+    assert.equal(buildGameRecordsModel(games, state()).facets.opponent.visible, false);
+    assert.equal(countryModel.facets.opponent.visible, true);
+    assert.deepEqual(toCounts(countryModel.facets.opponent.options), { b: 2, d: 1, e: 1 });
+    assert.equal(narrowed.facets.opponent.visible, true);
+    assert.deepEqual(toCounts(narrowed.facets.opponent.options), { b: 2 });
+    assert.equal(selected.state.player, undefined);
+    assert.equal(selected.state.opponent, 'b');
+    assert.equal(selected.state.opponentCountry, 'DE');
+    assert.deepEqual(
+      selected.games.map((record) => record.sgf),
+      ['g4.sgf', 'g1.sgf']
+    );
+  });
+
   it('updates year and media counts from the current filter state', () => {
     const playerModel = buildGameRecordsModel(games, state({ player: 'a', years: [2023] }));
     const mediaOptions = buildGameRecordsModel(games, state({ player: 'a' }));

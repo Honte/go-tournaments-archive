@@ -1,0 +1,36 @@
+website: https://goweb.cz/2024/01/mistrovstvi-republiky-junioru-2024/
+name: Mistrovství republiky žáků a juniorů
+stages:
+  - type: tournament
+    file: czj2024u12.txt
+    category: u12
+    name: U12
+    dir: 2024/u12
+    scoringColumns:
+      - wins
+      - null
+      - null
+      - sodos
+      - rating
+    breakers:
+      - wins
+      - sodos
+      - rating      
+    findSharedPlaces: true
+    collapsed: true
+  - type: tournament
+    file: czj2024u18.txt
+    category: u18
+    name: U18
+    dir: 2024/u18
+    scoringColumns:
+      - wins
+      - null
+      - sos
+      - sodos
+    breakers:
+      - wins
+      - sos
+      - sodos
+    findSharedPlaces: true
+    collapsed: true
