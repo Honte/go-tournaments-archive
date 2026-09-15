@@ -87,12 +87,12 @@ events:
         prefix: czgc
       - id: czwgc
         prefix: czwgc
-      - id: csgc
-        prefix: csgc
       - id: czjgc
         prefix: czjgc
       - id: skgc
         prefix: skgc
+      - id: csgc
+        prefix: csgc
   - title:
       en: National Tournaments
       pl: Mistrzostwa Krajowe
