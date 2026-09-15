@@ -1,0 +1,21 @@
+website: https://web.archive.org/web/20071030205655/http://www.czech-go.net/tour/1996/t960914.php
+name: Mistrovství republiky žáků a juniorů
+stages:
+  - type: tournament
+    file: czj1996.txt
+    name: All
+    notes: played in 2 groups based on rank (6+12)
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sodos
+      - u18
+      - u15
+      - u12  
+    breakers:      
+      - wins
+      - sos
+      - sodos  
+    findSharedPlaces: true
+    collapsed: false

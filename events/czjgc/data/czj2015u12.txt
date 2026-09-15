@@ -1,0 +1,14 @@
+; TC[T150207B]
+; CL[A]
+; EV[Czech Youth Go Championship 2015 - U12]
+; PC[CZ, Praha]
+; DT[2015-02-07,2015-02-08]
+; HA[h9]
+; KM[7.5]
+; TM[90]
+; CM[ (submitted by Jana_H)]
+;.
+1 Hrbkova Marta   16k CZ  APmG  6    6    12   12 581  2+/w   4+/w   3+/b   2+/b   4+/b   3+/w    |16949471
+2 Cech Tadeas     18k CZ  BMik  3    3    18   3  400  1-/b   3+/b   4+/b   1-/w   3-/w   4+/w    |16398041
+3 Hrbek Michal    18k CZ  APmG  3    3    18   3  350  4+/b   2-/w   1-/w   4+/w   2+/b   1-/b    |16462589
+4 Cechova Anezka  18k CZ  BMik  0    0    24   0  -69  3-/w   1-/b   2-/w   3-/b   1-/w   2-/b    |16525784

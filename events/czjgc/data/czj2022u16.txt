@@ -1,0 +1,21 @@
+; TC[T220129B]
+; CL[A]
+; EV[Czech Youth Go Championship 2022 - U16 category]
+; PC[CZ, Praha]
+; DT[2022-01-29,2022-01-30]
+; HA[h9]
+; KM[6.5]
+; TM[82.5]
+; CM[ (submitted by Jana_H)]
+;.
+ 1 Komin Jan           6k CZ  APWS  5        5    15   74   8+/w    5+/w    3+/w    2+/b    4+/b     |19637596
+ 2 Koran Ladislav_jr   7k CZ  CPis  4        4    14   65   10+/w   7+/b    9+/w    1-/w    5+/b     |18413098
+ 3 Grosser Tadeas      8k CZ  KVaG  3        3    16   70   4+/b    6+/w    1-/b    5-/w    7+/b     |19233093
+ 4 Jirusova Anezka    19k CZ  Blan  3        3    15   71   3-/w    0+      7+/w    6+/b    1-/w     |17033720
+ 5 Bocan Vojtech      14k CZ  APmG  3        3    15   69   11+/w   1-/b    8+/w    3+/b    2-/w     |19401327
+ 6 Kolar Jakub        17k CZ  APmG  3        3    11   66   0+      3-/b    11+/w   4-/w    8+/b     |19525341
+ 7 Pavel Vojtech      16k CZ  APmG  2        2    14   66   9+/b    2-/w    4-/b    10+/w   3-/w     |18649037
+ 8 Charvat Vaclav     18k CZ  APmG  2        2    14   62   1-/b    11+/w   5-/b    9+/w    6-/w     |18349375
+ 9 Jirusova Klara     19k CZ  Blan  2        2    11   63   7-/w    10+/b   2-/b    8-/b    0+       |18274916
+10 Pavel Tomas        19k CZ  APmG  2        2    10   59   2-/b    9-/w    0+      7-/b    11+/b    |18949645
+11 Fukala Dominik     20k CZ  APmG  1        1    10   60   5-/b    8-/b    6-/b    0+      10-/w    |19750687

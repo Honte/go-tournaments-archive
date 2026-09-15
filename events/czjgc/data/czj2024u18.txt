@@ -1,0 +1,20 @@
+; TC[T240127F]
+; CL[A]
+; EV[Czech Youth Go Championship 2024 - U18 category]
+; PC[CZ, Praha]
+; DT[2024-01-27,2024-01-28]
+; HA[h9]
+; KM[6.5]
+; TM[82.5]
+; CM[ (submitted by Jana_H)]
+;.
+ 1 Komin Jan           2d CZ  APWS  5        5    15   15   6+/w    5+/w    3+/w    2+/w    4+/w     |19637596
+ 2 Koran Ladislav_jr   5k CZ  CPis  4        4    14   9    8+/w    7+/w    6+/w    1-/b    3+/w     |18413098
+ 3 Jirusova Anezka    12k CZ  Blan  3        3    17   8    5+/b    4+/b    1-/b    8+/b    2-/b     |17033720
+ 4 Holecek Ondrej     15k CZ  SRev  3        3    13   5    9+/b    3-/w    8+/w    7+/b    1-/b     |20433435
+ 5 Adamek Petr        16k CZ  APmG  3        3    12   4    3-/w    1-/b    10+/w   6+/w    7+/w     |19574940
+ 6 Jiruse Tomas       15k CZ  Blan  2        2    13   1    1-/b    10+/b   2-/b    5-/b    9+/b     |18250914
+ 7 Kaderavek Kvido    14k CZ  APmG  2        2    11   1    10+/b   2-/b    9+/w    4-/w    5-/b     |18050714
+ 8 Kubicek Vavrinec   16k CZ  MOlo  2        2    11   1    2-/b    9+/b    4-/b    3-/w    10+/b    |19086650
+ 9 Vachova Karolina   20k CZ  Blan  1        1    9    0    4-/w    8-/w    7-/b    10+/b   6-/w     |19801705
+10 Oslejsek Tomas     20k CZ  APmG  0        0    10   0    7-/w    6-/w    5-/b    9-/w    8-/w     |20501206

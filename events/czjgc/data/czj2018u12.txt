@@ -1,0 +1,18 @@
+; TC[T180127D]
+; CL[A]
+; EV[Czech Youth Go Championship 2018 - U12]
+; PC[CZ, Praha]
+; DT[2018-01-27,2018-01-28]
+; HA[h9]
+; KM[7.5]
+; TM[90]
+; CM[Ing time 60 + 3x10 min (submitted by tymak)]
+;.
+1 Kaderavek Kvido    16k CZ  APmG  4    4    14   10   62   6+/w   3-/w   5+/w   2+/b   4+/w    |18050714
+2 Koran Ladislav_jr  18k CZ  CPis  4    4    13   9    66   4+/b   5+/b   3+/b   1-/w   7+/b    |18413098
+3 Hrbek Michal       15k CZ  APmG  4    4    12   8    66   7+/w   1+/b   2-/w   4+/b   8+/b    |16462589
+4 Pavel Vojtech      20k CZ  APmG  2    2    15   3    60   2-/w   6+/b   8+/w   3-/w   1-/b    |18649037
+5 Charvat Vaclav     19k CZ  APmG  2    2    12   2    61   8+/b   2-/w   1-/b   7+/w   6-/b    |18349375
+6 Jodl Tomas         20k CZ  APmG  2    2    10   3    65   1-/b   4-/w   7-/w   8+/b   5+/w    |18262596
+7 Kubu Vojtech       19k CZ  APmG  1    1    13   2    58   3-/b   8-/w   6+/b   5-/b   2-/w    |18249594
+8 Kubu Frantisek     20k CZ  APmG  1    1    11   1    62   5-/w   7+/b   4-/b   6-/w   3-/w    |18374378

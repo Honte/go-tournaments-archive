@@ -1,0 +1,15 @@
+; TC[T170121C]
+; CL[A]
+; EV[Czech Youth Go Championship 2017 - U12]
+; PC[CZ, Praha]
+; DT[2017-01-21,2017-01-22]
+; HA[h9]
+; KM[7.5]
+; TM[90]
+; CM[Ing time 60 + 3x10 min (submitted by tymak)]
+;. 
+1 Krist Tomas        17k CZ  BMik  4    5    6    4+/b   3+/w   5+/b   0=     2+/b    |17533549
+2 Kaderavek Kvido    19k CZ  APmG  3    4    3    0=     4+/w   3+/b   5+/w   1-/w    |18050714
+3 Kristova Veronika  19k CZ  BMik  2    3    1    5+/b   1-/b   2-/w   4+/b   0=      |17586723
+4 Vojtech Kubu       20k CZ  APmG  1    2    0    1-/w   2-/b   0=     3-/w   5+/b    |18249594
+5 Jodl Tomas         20k CZ  APmG  0    1    0    3-/w   0=     1-/w   2-/b   4-/w    |18262596

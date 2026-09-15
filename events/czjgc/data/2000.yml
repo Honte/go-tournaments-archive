@@ -1,0 +1,23 @@
+website: 
+ - https://web.archive.org/web/20071029105927/http://www.czech-go.net/tour/2000/t000513.php
+ - https://web.archive.org/web/20090225072426/http://www.goweb.cz/ogo/sin_slavy/mrzakuajunioru
+name: Mistrovství republiky žáků a juniorů
+stages:
+  - type: tournament
+    file: czj2000.txt
+    name: All
+    notes: played in 2 groups based on rank (4+6)
+    scoringColumns:
+      - mms
+      - wins
+      - direct
+      - sodos
+      - u18
+      - u15
+      - u12  
+    breakers:      
+      - wins
+      - sodos
+      - direct
+    findSharedPlaces: true
+    collapsed: false

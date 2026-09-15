@@ -1,0 +1,16 @@
+website: https://web.archive.org/web/20081119154613/http://www.czech-go.net/igo/nr7/igo7-20.htm
+name: Mistrovství republiky žáků a juniorů
+stages:
+  - type: tournament
+    file: czj1993.txt
+    name: All
+    notes: no table available
+    scoringColumns:
+      - place
+      - u18
+      - u15
+      - u12      
+    breakers:      
+      - place
+    findSharedPlaces: true
+    collapsed: false

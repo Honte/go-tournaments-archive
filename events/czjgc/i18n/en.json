@@ -1,0 +1,32 @@
+{
+  "site": {
+    "name": "Czech Junior Go Championships Archive",
+    "acronym": "CZJGC",
+    "description": "Archive of all Czech Junior Championships tournaments",
+    "yearDescription": "Results of CZJGC %{0}",
+    "allTimeStatsDescription": "All-time statistics of all Czech Junior Go Championships participants",
+    "playerStatsDescription": "Participation statistics of %{0} in all Czech Junior Go Championships events"
+  },
+  "details": {
+    "goToWebsite": "Go to CZJGC %{0} website"
+  },
+  "winners": {
+    "first": "Czech Junior Champion"
+  },
+  "categories": {
+    "full": {
+      "u20": "Under 20",
+      "u18": "Under 18",
+      "u16": "Under 16",
+      "u15": "Under 15",	  
+      "u12": "Under 12"
+    },
+    "short": {
+      "u20": "U20",
+      "u18": "U18",
+      "u16": "U16",
+      "u15": "U15",	  
+      "u12": "U12"
+    }
+  }
+}

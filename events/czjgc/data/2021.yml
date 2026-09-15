@@ -1,0 +1,45 @@
+website: https://goweb.cz/2021/08/mistrovstvi-republiky-zaku-a-junioru-2021/
+name: Mistrovství republiky žáků a juniorů
+stages:
+  - type: tournament
+    file: czj2021u12.txt
+    category: u12
+    name: U12
+    dir: 2021/u12
+    scoringColumns:
+      - wins
+      - null
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true
+    collapsed: true
+  - type: tournament
+    file: czj2021u16.txt
+    category: u16
+    name: U16
+    dir: 2021/u16
+    scoringColumns:
+      - wins
+      - null
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true
+    collapsed: true
+  - type: tournament
+    file: czj2021u20.txt
+    category: u20
+    name: U20
+    dir: 2021/u20
+    scoringColumns:
+      - wins
+      - null
+      - sos
+      - sosos
+    breakers:
+      - wins     
+    findSharedPlaces: true
+    collapsed: true

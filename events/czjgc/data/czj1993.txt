@@ -1,0 +1,6 @@
+; PC[CZ,Zlin]
+;https://web.archive.org/web/20081119154613/http://www.czech-go.net/igo/nr7/igo7-20.htm
+1 Grosser Tomas    8k CZ KVa 1 1 0 0 0+ |10225908
+2 Prachar Jan     15k CZ Zli 2 2 0 0 0+ |10274704
+3 Just Petr       16k CZ Lib 3 3 0 0 0+ |10437075
+4 Nechanicky Petr 12k CZ Nym 4 4 1 1 0+ |10233267

@@ -1,0 +1,51 @@
+website: https://goweb.cz/2020/02/mistrovstvi-republiky-zaku-a-junioru-2020/
+name: Mistrovství republiky žáků a juniorů
+stages:
+  - type: tournament
+    file: czj2020u12.txt
+    category: u12
+    name: U12
+    dir: 2020/u12
+    scoringColumns:
+      - wins
+      - null
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: true
+    collapsed: true
+  - type: tournament
+    file: czj2020u16.txt
+    category: u16
+    name: U16
+    dir: 2020/u16
+    scoringColumns:
+      - wins
+      - null
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: true
+    collapsed: true
+  - type: tournament
+    file: czj2020u20.txt
+    category: u20
+    name: U20
+    dir: 2020/u20
+    scoringColumns:
+      - wins
+      - null
+      - sos
+      - sosos
+      - rating
+    breakers:
+      - wins  
+      - rating      
+    findSharedPlaces: true
+    collapsed: true

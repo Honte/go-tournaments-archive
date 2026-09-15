@@ -1,0 +1,17 @@
+; TC[T260124C]
+; CL[A]
+; EV[Czech Youth Championship 2026 - U12]
+; PC[CZ, Praha]
+; DT[2026-01-24,2026-01-25]
+; HA[h9]
+; KM[6.5]
+; TM[75]
+; CM[ (submitted by 132)]
+;.
+1 Bakes Rian          17k CZ  APWS  7    7    7    21   5+/b   3+/w   6+/b   7+/w   0+     4+/b   2+/w    |20801583
+2 Kovarik Robin       17k CZ  APra  6    6    6    15   4+/w   0+     5+/b   3+/w   6+/w   7+/w   1-/b    |20401172
+3 Jelinek Jachym      18k CZ  APmG  4    4    4    8    7+/w   1-/b   4+/w   2-/b   5-/w   0+     6+/b    |20713638
+4 Podpera Martin      17k CZ  APWS  4    4    4    7    2-/b   5+/w   3-/b   6+/w   7+/b   1-/w   0+      |19898967
+5 Pluhackova Barbora  19k CZ  BMik  3    3    3    6    1-/w   4-/b   2-/w   0+     3+/b   6-/w   7+/b    |20601207
+6 Korous Daniel       20k CZ  APmG  2    2    2    3    0+     7-/b   1-/w   4-/b   2-/b   5+/b   3-/w    |20837586
+7 Remes Michal        20k CZ  APWS  2    2    2    2    3-/b   6+/w   0+     1-/b   4-/w   2-/b   5-/w    |20813584

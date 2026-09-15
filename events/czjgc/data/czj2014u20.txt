@@ -1,0 +1,17 @@
+; TC[T140201E]
+; CL[A]
+; EV[Czech Youth Championship 2014 - U20]
+; PC[CZ, Praha]
+; DT[2014-02-01,2014-02-02]
+; HA[h9]
+; KM[7.5]
+; TM[90]
+; CM[ (submitted by Jana_H)]
+;.
+1 Podpera Lukas    6d CZ  APWS  5    5    14   14   5+/b   2+/b   3+/w   4+/w   6+/b    |13201914
+2 Kouba Petr       2d CZ  APWS  4    4    8    13   6+/b   1-/w   5+/b   3+/w   7+/w    |14533926
+3 Junek Martin     4k CZ  Brno  3    3    7    16   0+     4+/w   1-/b   2-/b   5+/w    |14313783
+4 Havelka Samuel   3k CZ  TOst  3    3    5    13   7+/w   3-/b   6+/w   1-/b   0+      |15662372
+5 Tomek Vojtech    7k CZ  TFMi  2    2    2    14   1-/w   7+/b   2-/w   0+     3-/b    |14537864
+6 Zacek David     11k CZ  APWS  2    2    2    14   2-/w   0+     4-/b   7+/b   1-/w    |16701531
+7 Sokol Vojtech   15k CZ  APmG  1    1    0    11   4-/b   5-/w   0+     6-/w   2-/b    |16533704

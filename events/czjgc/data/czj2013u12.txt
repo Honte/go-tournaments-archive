@@ -1,0 +1,14 @@
+; TC[T130119A]
+; CL[A]
+; EV[Czech Youth Championship 2013 - U12 category]
+; PC[CZ, Praha]
+; DT[2013-01-19,2013-01-20]
+; HA[h9]
+; KM[7.5]
+; TM[90]
+; CM[ (submitted by Jana_H)]
+;.
+1 Vasova Dita   15k CZ  APmG  6    6    13   12   4+/w0  2+/b0  3+/b0  4+/b0  2+/w0  3+/w0   |15749921
+2 Hrbek Michal  18k CZ  xxx   4    4    17   4    3+/w0  1-/w0  4+/b0  3+/b0  1-/b0  4+/w0   |16462589
+3 Defer Leon    20k CZ  Brno  2    2    19   0    2-/b0  4+/b0  1-/w0  2-/w0  4+/w0  1-/b0   |16413650
+4 Seidl Jakub   20k CZ  APmG  0    0    24   0    1-/b0  3-/w0  2-/w0  1-/w0  3-/b0  2-/b0   |16549698

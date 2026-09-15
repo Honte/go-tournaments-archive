@@ -1,0 +1,15 @@
+; TC[T110205A]
+; CL[A]
+; EV[Czech Youth Championship]
+; PC[CZ, Praha]
+; DT[2011-02-05,2011-02-06]
+; HA[h9]
+; KM[7.5]
+; TM[75]
+; CM[ (submitted by cieply)]
+;.
+;
+;=== Under 20
+ 1 Podpera Lukas       4d CZ  APWS  4    0    0    0 2442   2+      3+      0=      2+      3+      0=       |13201914
+ 2 Kouba Petr          2k CZ  APWS  1    0    0    0 2006   1-      0=      3+      1-      0=      3-       |14533926
+ 3 Cech Martin         3k CZ  APWS  1    0    0    0 1885   0=      1-      2-      0=      1-      2+       |14898785

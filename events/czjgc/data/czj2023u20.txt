@@ -1,0 +1,13 @@
+; TC[T230128I]
+; CL[A]
+; EV[Czech Youth Go Championship 2023 - U20 category]
+; PC[CZ, Praha]
+; DT[2023-01-28,2023-01-29]
+; HA[h9]
+; KM[6.5]
+; TM[82.5]
+; CM[ (submitted by Jana_H)]
+;.
+   1 Popov Robin                    2k CZ  TFMi     5     5    22   132 1935     0+    2+/w    3+/b      0+    2-/b    3+/w |18386126
+   2 Litovkin Rostislav             2k CZ  APmG     5     5    22   132 1850   3+/w    1-/b      0+    3+/b    1+/w      0+ |17533230
+   3 Jirusova Anezka               16k CZ  Blan     2     2    22   132  486   2-/b      0+    1-/w    2-/w      0+    1-/b |17033720

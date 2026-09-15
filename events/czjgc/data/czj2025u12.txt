@@ -1,0 +1,13 @@
+; TC[T250125C]
+; CL[A]
+; EV[Czech Youth Championship 2025 - U12]
+; PC[CZ, Praha]
+; DT[2025-01-25,2025-01-26]
+; HA[h9]
+; KM[6.5]
+; TM[75]
+; CM[ (submitted by Jana_H)]
+;.
+1 Horna Matous     18k CZ  APmG  4    4    4   4    2+/w   3+/b   0=     2+/b   3+/w   0=      |20125479
+2 Podpera Martin   18k CZ  APWS  2    2    8   0    1-/b   0=     3+/w   1-/w   0=     3+/b    |19898967
+3 Hrican Nicholas  19k CZ  APmG  0    0    12  0    0=     1-/w   2-/b   0=     1-/b   2-/w    |20301985

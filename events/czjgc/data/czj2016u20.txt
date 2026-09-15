@@ -1,0 +1,17 @@
+; TC[T160123B]
+; CL[A]
+; EV[Czech Youth Go Championship 2016 - U20]
+; PC[CZ, Praha]
+; DT[2016-01-23,2016-01-24]
+; HA[h9]
+; KM[6.5]
+; TM[82.5]
+; CM[ (submitted by tymak)]
+;.
+1 Tomsu Adriana     2k CZ  TFMi  5    5    13   13   3+/b   5+/b   2+/w   4+/b   7+/w    |16225396
+2 Jansky Dusan      3k CZ  APmG  4    4    14   9    7+/b   4+/w   1-/b   3+/w   5+/w    |15862946
+3 Zacek David       9k CZ  APWS  3    3    13   4    1-/w   6+/w   5+/b   2-/b   0+      |16701531
+4 Bukovska Anezka   7k CZ  APmG  3    3    12   3    0+     2-/b   7+/w   1-/w   6+/b    |15874947
+5 Defer Tristan     4k CZ  Brno  2    2    14   2    6+/b   1-/w   3-/w   0+     2-/b    |16486074
+6 Sokol Vojtech    13k CZ  APmG  2    2    9    1    5-/w   3-/b   0+     7+/b   4-/w    |16533704
+7 Cafourek Petr    11k CZ  APmG  1    1    14   0    2-/w   0+     4-/b   6-/w   1-/b    |16786187

@@ -1,0 +1,14 @@
+; TC[T230128H]
+; CL[A]
+; EV[Czech Youth Go Championship 2023 - U12 category]
+; PC[CZ, Praha]
+; DT[2023-01-28,2023-01-29]
+; HA[h9]
+; KM[6.5]
+; TM[82.5]
+; CM[ (submitted by Jana_H)]
+;.
+1 Dach Bartolomej    3k CZ  BMik  6        6    14   134  3+/w   2+/w   4+/b   3+/b   2+/b   4+/w   0=      |19574280
+2 Babka Matous      18k CZ  Blan  4        4    18   126  4+/w   1-/b   3+/w   4+/b   1-/w   3+/b   0=      |18298918
+3 Kuprianov Teodor  20k CZ  APmG  2        2    23   142  1-/b   4-/w   2-/b   1-/w   4+/b   2-/w   4+/w    |20113478
+4 Podpera Martin    20k CZ  APWS  1        1    26   133  2-/b   3+/b   1-/w   2-/w   3-/w   1-/b   3-/b    |19898967

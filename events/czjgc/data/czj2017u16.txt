@@ -1,0 +1,19 @@
+; TC[T170121D]
+; CL[A]
+; EV[Czech Youth Go Championship 2017 - U16]
+; PC[CZ, Praha]
+; DT[2017-01-21,2017-01-22]
+; HA[h9]
+; KM[7.5]
+; TM[90]
+; CM[Ing time 60 + 3x10 min (submitted by tymak)]
+;.
+1 Vasova Dita          4k CZ  APmG  5    5    14   14   6+/b   4+/w   3+/w   2+/w   7+/w    |15749921
+2 Defer Leon           6k CZ  Brno  4    4    15   10   7+/w   8+/w   4+/b   1-/b   3+/b    |16413650
+3 Spanger Jakub       11k CZ  MJes  3    3    15   6    9+/b   5+/b   1-/b   6+/w   2-/w    |17562457
+4 Senkyr Vojtech      14k CZ  APmG  3    3    14   5    5+/w   1-/b   2-/w   0+     6+/w    |16701861
+5 Strmiska Jan        19k CZ  APmG  3    3    9    3    4-/b   3-/w   7+/b   9+/b   0+      |17933652
+6 Krotil Jiri         17k CZ  APmG  2    2    14   3    1-/w   9+/b   8+/w   3-/b   4-/b    |17501231
+7 Paidar Pavel        18k CZ  APmG  2    2    14   2    2-/b   0+     5-/w   8+/b   1-/b    |17549235
+8 Litovkin Rostislav  17k CZ  APmG  2    2    9    1    0+     2-/b   6-/b   7-/w   9+/b    |17533230
+9 Broz Daniel         20k CZ  APmG  1    1    10   0    3-/w   6-/w   0+     5-/w   8-/w    |16849250

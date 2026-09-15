@@ -1,0 +1,21 @@
+website: https://web.archive.org/web/20071030210733/http://www.czech-go.net/tour/2001/t010224.php
+name: Mistrovství republiky žáků a juniorů
+stages:
+  - type: tournament
+    file: czj2001.txt
+    name: All
+    notes: played in 2 groups based on rank (6+6)
+    scoringColumns:
+      - mms
+      - wins
+      - sodos
+      - direct
+      - u18
+      - u15
+      - u12  
+    breakers:      
+      - wins
+      - sodos
+      - direct
+    findSharedPlaces: true
+    collapsed: false

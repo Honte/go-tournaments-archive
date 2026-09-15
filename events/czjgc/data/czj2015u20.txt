@@ -1,0 +1,17 @@
+; TC[T150207D]
+; CL[A]
+; EV[Czech Youth Go Championship 2015 - U20]
+; PC[CZ, Praha]
+; DT[2015-02-07,2015-02-08]
+; HA[h9]
+; KM[7.5]
+; TM[90]
+; CM[ (submitted by Jana_H)]
+;.
+1 Tomsu Adriana      3k CZ  TFMi  4    4    15   11   3+/b   4+/w   2-/b   5+/w   6+/b    |16225396
+2 Havelka Samuel     3k CZ  TOst  4    4    13   10   7+/b   6+/w   1+/w   4+/b   3-/b    |15662372
+3 Salajkova Tereza  10k CZ  BMik  3    3    14   7    1-/w   0+     5-/b   7+/b   2+/w    |13633873
+4 Tomek Vojtech      5k CZ  TFMi  3    3    13   5    0+     1-/b   6+/w   2-/w   7+/b    |14537864
+5 Junek Martin       4k CZ  Brno  3    3    12   6    6-/b   7+/w   3+/w   1-/b   0+      |14313783
+6 Nemcok Michal      8k CZ  TFMi  2    2    15   4    5+/w   2-/b   4-/b   0+     1-/w    |16901852
+7 Dvorackova Eva    16k CZ  MJes  1    1    13   0    2-/w   5-/b   0+     3-/w   4-/w    |13049872

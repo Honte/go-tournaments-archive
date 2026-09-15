@@ -1,0 +1,19 @@
+; TC[T140201D]
+; CL[A]
+; EV[Czech Youth Championship 2014 - U16]
+; PC[CZ, Praha]
+; DT[2014-02-01,2014-02-02]
+; HA[h9]
+; KM[7.5]
+; TM[90]
+; CM[ (submitted by Jana_H)]
+;.
+1 Jansky Dusan      8k CZ  APmG  4    4    10   14 1357  9+/w   6+/w   2-/b   5+/w   4+/b    |15862946
+2 Praus Jan         8k CZ  APmG  4    4    10   13 1385  7+/w   9+/b   1+/w   4-/b   3+/w    |15733916
+3 Samajova Kamila   8k CZ  TOst  3    3    8    15 1338  8+/b   4+/w   5-/b   6+/w   2-/b    |14913778
+4 Defer Tristan    11k CZ  Brno  3    3    8    15 1067  0+     3-/b   7+/w   2+/w   1-/w    |16486074
+5 Vasa Vojtech      7k CZ  APmG  3    3    7    14 1406  6-/b   8+/w   3+/w   1-/b   0+      |15762923
+6 Bukovska Anezka  12k CZ  APmG  3    3    7    14  992  5+/w   1-/b   8+/b   3-/b   7+/w    |15874947
+7 Defer Leon       15k CZ  Brno  2    2    2    12  645  2-/b   0+     4-/b   9+/w   6-/b    |16413650
+8 Cafourek Petr    15k CZ  APmG  2    2    2    11  666  3-/w   5-/b   6-/w   0+     9+/b    |16786187
+9 Broz Ondrej      16k CZ  APmG  1    1    0    12  506  1-/b   2-/w   0+     7-/b   8-/w    |15998213

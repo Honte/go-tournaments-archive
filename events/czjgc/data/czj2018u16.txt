@@ -1,0 +1,17 @@
+; TC[T180127E]
+; CL[A]
+; EV[Czech Youth Go Championship 2018 - U16]
+; PC[CZ, Praha]
+; DT[2018-01-27,2018-01-28]
+; HA[h9]
+; KM[7.5]
+; TM[90]
+; CM[Ing time 60 + 3x10 min (submitted by tymak)]
+;.
+1 Vasova Dita          2k CZ  APmG  5    5    14   14   71 1955  4+/w   3+/b   2+/w   5+/w   6+/w    |15749921
+2 Popov Robin          9k CZ  TFMi  4    4    15   10   70 1248  6+/w   5+/b   1-/b   3+/b   4+/b    |18386126
+3 Skotnica Ondrej     10k CZ  TFMi  3    3    14   5    67 1100  7+/b   1-/w   5+/w   2-/w   0+      |18333128
+4 Litovkin Rostislav  13k CZ  APmG  3    3    14   5    67  804  1-/b   7+/w   6+/b   0+     2-/w    |17533230
+5 Hrbkova Marta       11k CZ  APmG  2    2    14   2    67  936  0+     2-/w   3-/b   1-/b   7+/b    |16949471
+6 Paidar Pavel        17k CZ  APmG  2    2    14   2    67  436  2-/b   0+     4-/w   7+/w   1-/b    |17549235
+7 Strmiska Jan        18k CZ  APmG  1    1    10   0    66  162  3-/w   4-/b   0+     6-/b   5-/w    |17933652

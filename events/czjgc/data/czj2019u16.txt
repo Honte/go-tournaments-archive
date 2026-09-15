@@ -1,0 +1,16 @@
+; TC[T190302G]
+; CL[A]
+; EV[Czech Youth Go Championship 2019 - U16 category]
+; PC[CZ, Praha]
+; DT[2019-03-02,2019-03-03]
+; HA[h9]
+; KM[6.5]
+; TM[82.5]
+; CM[ (submitted by Jana_H)]
+;.
+1 Popov Robin          1k CZ  TFMi  5    5    10   3+/b   6+/w   5+/b   2+/b   4+/w    |18386126
+2 Litovkin Rostislav   8k CZ  APmG  4    4    6    5+/w   3+/w   4+/b   1-/w   6+/b    |17533230
+3 Paidar Pavel        15k CZ  APmG  3    3    3    1-/w   2-/b   6+/b   4+/w   5+/b    |17549235
+4 Cerna Matylda       18k CZ  APWS  2    2    1    6+/w   5+/b   2-/w   3-/b   1-/b    |18450938
+5 Salajkova Amalie    18k CZ  BMik  1    1    0    2-/b   4-/w   1-/w   6+/b   3-/w    |16425981
+6 Pavel Vojtech       18k CZ  APmG  0    0    0    4-/b   1-/b   3-/w   5-/w   2-/w    |18649037

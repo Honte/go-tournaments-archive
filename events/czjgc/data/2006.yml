@@ -1,0 +1,22 @@
+website: https://web.archive.org/web/20090225072426/http://www.goweb.cz/ogo/sin_slavy/mrzakuajunioru
+name: Mistrovství republiky žáků a juniorů
+stages:
+  - type: tournament
+    file: czj2006.txt
+    name: All
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sosos
+      - u18
+      - u15
+      - u12  
+    breakers:      
+      - mms
+      - sos
+      - sosos
+    columns:
+      - wins
+    findSharedPlaces: true
+    collapsed: false

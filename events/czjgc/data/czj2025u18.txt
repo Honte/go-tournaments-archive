@@ -1,0 +1,20 @@
+; TC[T250125F]
+; CL[A]
+; EV[Czech Youth Championship 2025 - U18]
+; PC[CZ, Praha]
+; DT[2025-01-25,2025-01-26]
+; HA[h9]
+; KM[6.5]
+; TM[75]
+; CM[correction (submitted by Jana_H)]
+;.
+ 1 Dach Bartik        4d CZ  BMik  5    5    15   15   6+/b    4+/w    3+/w    2+/w    5+/b     |19574280
+ 2 Komin Jan          3d CZ  APWS  4    4    14   9    8+/b    5+/w    6+/w    1-/b    4+/b     |19637596
+ 3 Rak Lukas          5k CZ  TOst  4    4    10   5    9+/b    10+/w   1-/b    5+/w    6+/b     |19674402
+ 4 Babka Matous       6k CZ  Blan  3    3    12   3    10+/w   1-/b    7+/w    9+/w    2-/w     |18298918
+ 5 Jiruse Tomas      14k CZ  Blan  2    2    17   4    7+/w    2-/b    8+/w    3-/b    1-/w     |18250914
+ 6 Adamek Petr       14k CZ  APmG  2    2    16   3    1-/w    9+/b    2-/b    7+/w    3-/w     |19574940
+ 7 Hrican Alexander  18k CZ  APmG  2    2    9    2    5-/b    8+/w    4-/b    6-/b    10+/b    |20333984
+ 8 Jirusova Klara    14k CZ  Blan  2    2    9    1    2-/w    7-/b    5-/b    10+/w   9+/w     |18274916
+ 9 Tesar Stepan      17k CZ  APmG  1    1    11   0    3-/w    6-/w    10+/b   4-/b    8-/b     |20137480
+10 Vachova Karolina  17k CZ  Blan  0    0    12   0    4-/b    3-/b    9-/w    8-/b    7-/w     |19801705

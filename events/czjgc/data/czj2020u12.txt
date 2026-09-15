@@ -1,0 +1,18 @@
+; TC[T200208B]
+; CL[A]
+; EV[Czech Youth Go Championship 2020 - U12 category]
+; PC[CZ, Praha]
+; DT[2020-02-08,2020-02-09]
+; HA[h9]
+; KM[6.5]
+; TM[82.5]
+; CM[ (submitted by Jana_H)]
+;.
+1 Koran Ladislav_jr  12k CZ  CPis     5    20  14   63   4+/b   3+/w   2+/b   6+/w   5+/w    |18413098
+2 Grosser Tadeas     14k CZ  KVaG     4    19  11   66   7+/b   5+/w   1-/w   8+/w   3+/b    |19233093
+3 Dach Bartolomej    16k CZ  Zlin     3    18  16   61   6+/w   1-/b   5+/b   4+/w   2-/w    |19574280
+4 Babka Matous       20k CZ  Blan     3    18  11   65   1-/w   7+/w   6+/b   3-/b   8+/w    |18298918
+5 Pavel Tomas        19k CZ  APmG     2    17  13   64   8+/b   2-/b   3-/w   7+/w   1-/b    |18949645
+6 Kolar Jakub        20k CZ  APmG     2    17  12   64   3-/b   8+/w   4-/w   1-/b   7+/b    |19525341
+7 Jirusova Klara     20k CZ  Blan     1    16  11   59   2-/w   4-/b   8+/b   5-/b   6-/w    |18274916
+8 Jiruse Tomas       20k CZ  Blan     0    15  12   58   5-/w   6-/b   7-/w   2-/b   4-/b    |18250914
