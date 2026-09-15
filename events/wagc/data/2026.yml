@@ -1,8 +1,4 @@
 website: https://www.wagc.or.kr/us/
-name: 46th World Amateur Go Championship
-notes:
-  en: Results still not official
-  pl: Wyniki nieoficjalne
 stages:
   - type: tournament
     file: wagc2026.txt
