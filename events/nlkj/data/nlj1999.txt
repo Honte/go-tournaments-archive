@@ -1,0 +1,28 @@
+; TC[T990417C]
+; DT[1999-04-17,1999-04-18] 	
+; CL[C]
+; EV[Dutch Youth Championship]
+; PC[NL,Eindhoven]
+; KM[5.5]
+; TM[40]
+; HA[h9]
+;                    Dutch Youth Championship, Eindhoven 1999
+;                                April 17, 1999
+;
+;Pl     Name             Grade  Club   MM S SOS SDOS  1.  2.  3.  4.  5.
+  1 Kuin Merlijn            3D NL Amvn  5 5  15  15  12+  2+  3+  4+  5+  |10233861
+  2 Brouwer Peter           1k NL Amst  4 4  14  14  10+  1- 13+  6+  4+  |10986514
+  3 Frehe Renee             1D NL Nijm  4 4  12  12  14+  5+  1-  8+  9+  |10313248
+  4 Hollmann Kirsten        4k NL Eind  3 3  17  17   6+  9+  7+  1-  2-  |10486509
+  5 Hollmann Tommy          1k NL Eind  3 3  16  16   7+  3- 10+ 11+  1-  |10413502
+  6 Yick Wing-Jim           5k NL Eind  3 3  12  12   4-  8+ 11+  2- 12+  |10549913
+  7 Gerritse Youri          8k NL Apel  3 3  10  10   5- 14+  4- 10+  8+  |10750652
+  8 Hollmann Line           11 NL Eind  2 2  13  13  13+  6-  9+  3-  7-  |10474519
+  9 Lemmen Jurrien          11 NL Zoet  2 2  12  12  11+  4-  8- 12+  3-  |12050951
+ 10 Geurts Michiel          4k NL DBos  2 2  11  11   2- 13+  5-  7- 14+  |12062952
+ 11 Lucas Kay               11 NL Box   2 2  10  10   9- 12+  6-  5- 13+  |12074953
+ 12 Hollmann Sanne          11 NL Eind  1 1  12  12   1- 11- 14+  9-  6-  |10425514
+ 13 Bergisch Tommy          11 NL Arnh  1 1  10  10   8- 10-  2- 14+ 11-  |10713307
+ 14 Lucas Jorn              10 NL Box   0 0  11  11   3-  7- 12- 13- 10-  |12086954
+;
+; time: 30+b15

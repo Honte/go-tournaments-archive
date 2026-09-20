@@ -1,0 +1,42 @@
+; TC[T960330C]
+; DT[1996-03-30,1996-03-30]
+; CL[C]
+; EV[Dutch Youth Championship]
+; PC[NL, Eindhoven]
+; KM[5.5]
+; TM[45]
+; HA[h9]
+;                    Dutch Youth Championship, Eindhoven 1996
+;                                March 30, 1996
+;
+;Pl     Name             Grade  Club   MM S SOS SSOS  1.   2.   3.   4.   5.
+  1 Nijhuis Emil            4D NL Amst  5 5  43 151   3+   2+   4+   6+   5+  |10213027
+  2 Frehe Renee             1k NL Nijm  3 3  37 157   4+   1-   3-   5+   6+  |10313248
+  3 Kuin Merlijn            6k NL Amvn  4 4  33 159   1-   5+   2+   4+   9+  |10233861
+  4 Fox Martijn             9k NL xxx   2 2  28 162   2-   6+   1-   3-   7+  |12437469
+  5 Hollmann Tommy          8k NL Eind  2 2  28 160   7+   3-   9+   2-   1-  |10413502
+  6 Guo Wangzi              12 NL Hilv  2 2  25 141  26+   4-   7+   1-   2-  |10274176
+  7 Diessen Richard_van     12 NL xxx   1 1  24 128   5-   8+   6-   9-   4-  |12449470
+  8 Moolenaar Marijke       14 NL Eind  4 4  24 107  12+   7-  11+  10+  13+  |10574850
+  9 Rotmans Marc            14 NL Rott  3 3  23 128  11+  10+   5-   7+   3-  |12450471
+ 10 Lavrijsen Michel        16 NL xxx   3 3  22 107  15+   9-  12+   8-  11+  |12462472
+ 11 Schuurbier Susanne      15 NL Eind  1 1  21 109   9-  12+   8-  13-  10-  |12474473
+ 12 Wernsen Lieke           16 NL Eind  1 1  20 106   8-  11-  10-  15+  14-  |12498475
+ 13 Hollmann Sanne          19 NL Eind  4 4  20  99  14+  18+  15+  11+   8-  |10425514
+ 14 Cuypers Mathijs         18 NL xxx   3 3  20  90  13-  15-  18+  17+  12+  |12433476
+ 15 Geven Arjan             17 NL Eind  1 1  19  99  10-  14+  13-  12-  16-  |12413478
+ 16 Kleter Frans            20 NL Box   4 4  17  76  17-  19+  23+  18+  15+  |12386946
+ 17 Hollmann Line           20 NL Eind  4 4  16  78  16+  23+  19+  14-  18+  |10474519
+ 18 Sallevelt Joost         20 NL Box   1 1  15  88  19+  13-  14-  16-  17-  |12425479
+ 19 Beijk Marleen           20 NL Box   1 1  15  72  18-  16-  17-  20+  21-  |12350305
+ 20 Lucas Kay               20 NL Box   4 4  12  56  25+  22+  24+  19-  29+  |12074953
+ 21 Maes Rianne             20 NL Eind  5 5  12  48  30+  27+  28+  23+  19+  |10725308
+ 22 Lucas Jorn              20 NL Box   4 4  12  48  27+  20-  30+  24+  23+  |12086954
+ 23 Kleter Richard          20 NL Box   1 1  11  68  24+  17-  16-  21-  22-  |12437480
+ 24 Kuin Diewertje          20 NL Amvn  2 2  11  53  23-  25+  20-  22-  27+  |12449481
+ 25 Beijk Peter             20 NL Box   1 1  10  48  20-  24-  27+  28-  26-  |12374307
+ 26 Opdorp Jegor_van        20 NL Amst  4 4   9  57   6-  28+  29+  30+  25+  |10937146
+ 27 Drabbels Kim            20 NL Box   0 0   8  53  22-  21-  25-  29-  24-  |12450482
+ 28 Es Inge_van             20 NL Heer  3 3   8  45  29+  26-  21-  25+  30+  |10550914
+ 29 Drabbels Joy            20 NL Box   1 1   8  43  28-  30-  26-  27+  20-  |12462483
+ 30 Es Guido_van            20 NL Heer  1 1   6  49  21-  29+  22-  26-  28-  |12486485

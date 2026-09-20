@@ -1,0 +1,17 @@
+; TC[T030126B]
+; CL[B]
+; EV[Dutch Youth Championship]
+; PC[NL,Amsterdam]
+; KM[5.5]
+; TM[60]
+; HA[h9]
+;                      Dutch Youth Championship, Amsterdam
+;                               January 26, 2003
+;
+;Pl     Name             Grade  Club   MM S   x   x   results
+;
+; === GROUP UNDER 18
+  1 Hollmann Tommy          1k NL Eind  3 3   0   0  4+ 3+ 2+   |10413502
+  2 Yick Wing-Jim           3k NL Eind  2 2   0   0  3+ 4+ 1-   |10549913
+  3 Koster Bram             3k NL Eind  1 1   0   0  2- 1- 4+   |12862817
+  4 Afzali Yamo             3k NL Utre  0 0   0   0  1- 2- 3-   |12850805

@@ -1,0 +1,14 @@
+; TC[T070127E]
+; CL[A]
+; EV[Dutch Youth Championship]
+; PC[NL, Amstelveen]
+; DT[2007-01-27,2007-01-28]
+; HA[h9]
+; KM[6.5]
+; TM[80]
+;
+;=== Under 18
+  1 Eerbeek Alexander        1d NL Amvn  3 3 0  2     0=   3+/w 2+/w 2+/b |13501356
+  2 Berkelmans Wouter        1d NL Amvn  1 1 0  0     3+/w 0=   1-/b 1-/w |12574617
+  3 Tel Michiel              9k NL Gron  0 0 0  0     2-/b 1-/b 0=   0=   |14333682
+

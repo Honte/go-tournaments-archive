@@ -23,6 +23,18 @@ describe('parseH9 jigo', () => {
     assert.equal(tournament.results[0].games[0]?.result, '+');
   });
 
+  it('parses score columns without any game rounds', () => {
+    const tournament = parseH9(table(['1 Alpha Alice 1d PL Club 1 1 |123456', '2 Beta Bob 1d DE Club 2 2 |234567']));
+
+    assert.deepEqual(
+      tournament.results.map(({ games, scores, egd }) => ({ games, scores, egd })),
+      [
+        { games: [], scores: ['1', '1'], egd: 123456 },
+        { games: [], scores: ['2', '2'], egd: 234567 },
+      ]
+    );
+  });
+
   it('recognizes a round containing only draws', () => {
     const tournament = parseH9(table(['1 Alpha Alice 1d PL Club 0.5 2=', '2 Beta Bob 1d DE Club 0.5 1=']));
 

@@ -1,0 +1,19 @@
+website: https://web.archive.org/web/20030527162119fw_/http://www.gobond.nl/~kalender/2002/nk_jeugd_2002.htm
+name: NK Jeugd
+stages:
+  - type: tournament
+    file: nlj2002.txt
+    name: All
+    notes: Divided into groups based on rank (3+8), not sure if there was additional breaker for 2nd place in u12
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sodos
+      - u18
+      - u12
+    breakers:
+      - wins
+      - sos      
+    findSharedPlaces: true
+    collapsed: false

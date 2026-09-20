@@ -1,0 +1,3 @@
+;                            pl 16 12
+1 Riedeman Emil 10k NL xxx 2+ 2+ 1 1  0
+2 Verhoeven Tim 15k NL xxx 1- 1- 1 0  1

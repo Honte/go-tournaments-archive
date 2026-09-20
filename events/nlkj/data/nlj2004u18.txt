@@ -1,0 +1,14 @@
+; TC[T040118B]
+; CL[B]
+; HA[h9]
+; EV[Dutch Youth Championship]
+; PC[NL, Amstelveen]
+; DT[2004-01-18,2004-01-24]
+; KM[6.5]
+; TM[60]
+;
+; == under 18
+  1 Hollmann Tommy          1k NL Eind   1935 4 0 0 4+ 2- 3+ 3+ 2+ 0=  |10413502
+  2 Barthel Floris          1k NL Utre   1640 3 0 0 3- 1+ 4+ 0= 1- 3+  |13013715
+  3 Berkelmans Wouter       2k NL Amvn   1901 2 0 0 2+ 4+ 1- 1- 0= 2-  |12574617
+  4 Afzali Yamo             3k NL Utre   1724 0 0 0 1- 3- 2- 0= 0= 0=  |12850805

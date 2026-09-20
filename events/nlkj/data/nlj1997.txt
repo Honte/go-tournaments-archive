@@ -1,0 +1,20 @@
+; TC[T970426B]
+; DT[1997-04-26,1997-04-26]
+; CL[C]
+; EV[Dutch Youth Championship]
+; PC[NL,Eindhoven]
+; KM[5.5]
+; TM[45]
+; HA[h9]
+;                     Dutch Youth Championship, Eindhoven 1997
+;                                April 26, 1997
+;https://web.archive.org/web/20010718055829/http://www.gobond.nl:80/kalender/1997/NKjeugd97.txt
+;Pl     Name             Grade  Club   MM S S S  1.  2.  3.  4.  5.  6.  7.
+  1 Kuin Merlijn            1k NL Amvn  5 5 5 5  7+  5+  2+  4+  3+    |10233861
+  2 Frehe Renee             1k NL Nijm  4 4 4 4  4+  3+  1-  7+  5+    |10313248
+  3 Brouwer Peter           2k NL Amst  3 3 3 3  6+  2-  5+  8+  1-    |10986514
+  4 Yick Wing-Jim           9k NL Eind  3 3 3 3  2-  6+  7+  1-  8+    |10549913
+  5 Hollmann Tommy          8k NL Eind  2 2 2 2  8+  1-  3-  6+  2-    |10413502
+  6 Tjoelker Jilles         10 NL xxx   1 1 1 1  3-  4-  8+  5-  7-    |12350943
+  7 Yick Wing-Lam           10 NL Eind  1 1 1 1  1-  8-  4-  2-  6+    |12374945
+  8 Moolenaar Marijke       10 NL Eind  1 1 1 1  5-  7+  6-  3-  4-    |10574850

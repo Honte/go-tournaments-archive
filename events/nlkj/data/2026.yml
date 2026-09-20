@@ -1,0 +1,12 @@
+name: NK Jeugd
+stages:
+  - type: tournament
+    file: nlj2026.txt
+    category: u12
+    name: U12
+    scoringColumns:
+      - wins 
+    breakers:      
+      - wins
+    findSharedPlaces: true
+    collapsed: false

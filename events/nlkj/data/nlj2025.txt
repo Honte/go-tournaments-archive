@@ -1,0 +1,15 @@
+; TC[T250112B]
+; CL[C]
+; EV[Dutch Youth Championship 2025]
+; PC[NL, Amersfoort]
+; DT[2025-01-12,2025-01-12]
+; HA[h9]
+; KM[6.5]
+; TM[36]
+; CM[ (submitted by Niek_vD)]
+;.                                   18 12
+1 Stam Kyan       10k NL  Utre  4  4  0  1 3+/w   0=     4+/b   5+/w   2+/b    |20474069
+2 Avraamova Vera   9k NL  Boks  3  3  0  2 4+/b   5+/w   0=     3+/b   1-/w    |19486258
+3 Wang Leo        12k NL  xxxx  2  2  1  0 1-/b   4+/w   5+/b   2-/w   0=      |20574103
+4 Au Julian       15k NL  Seki  1  1  0  3 2-/w   3-/b   1-/w   0=     5+/b    |20562047
+5 Yang Mulei      12k NL  xxxx  0  0  0  4 0=     2-/b   3-/w   1-/b   4-/w    |20774182

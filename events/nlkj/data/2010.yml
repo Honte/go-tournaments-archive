@@ -1,0 +1,37 @@
+name: NK Jeugd
+stages:
+  - type: tournament
+    file: nlj2010u12.txt
+    category: u12
+    name: U12
+    dir: 2010/u12
+    scoringColumns:
+      - mms
+      - wins
+      - null
+      - direct
+    breakers:
+      - mms
+      - wins
+      - direct
+    findSharedPlaces: true
+    collapsed: true
+    games:
+      - 2-1 1:W+7.5 round:6 sgf:2010/u12/6-ColinChristiaans-YukideGroot.sgf
+  - type: tournament
+    file: nlj2010u18.txt
+    category: u18
+    name: U18
+    dir: 2010/u18
+    scoringColumns:
+      - wins
+      - null
+      - null
+    breakers:
+      - wins
+    findSharedPlaces: true
+    collapsed: true
+    games:
+      - 2-1 1:W+R round:2 sgf:2010/u18/2-JelgerdeWit-AlexKetelaars.sgf
+      - 3-1 1:W+13.5 round:3 sgf:2010/u18/3-RubenCalon-AlexKetelaars.sgf
+      - 3-2 2:W+R round:1 sgf:2010/u18/1-RubenCalon-JelgerdeWit.sgf

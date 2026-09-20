@@ -1,0 +1,15 @@
+; TC[T140126G]
+; CL[B]
+; EV[Dutch Youth Championship U20]
+; PC[NL, Amstelveen]
+; DT[2014-01-26,2014-01-26]
+; HA[h9]
+; KM[6.5]
+; TM[55]
+; CM[ (submitted by Herman Hiddema)]
+;.
+; < 20
+1 Ketelaars Alex   2d NL  Soes  3    4+     2+     3+      |14913239
+2 Moll Lennard     5k NL  DHaa  2    3+     1-     4+      |16749634
+3 Calon Ruben      3k NL  Eind  1    2-     4+     1-      |14650834
+4 Ottjes Jesse    12k NL  Gron  0    1-     3-     2-      |17033643

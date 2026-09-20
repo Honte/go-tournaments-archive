@@ -79,6 +79,8 @@ events:
         prefix: nlk
       - id: nlkd
         prefix: nlkd
+      - id: nlkj
+        prefix: nlkj
   - title:
       en: Czech & Slovakia Championships
       pl: Mistrzostwa Czech i Słowacji

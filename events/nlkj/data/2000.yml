@@ -1,0 +1,17 @@
+name: NK Jeugd
+stages:
+  - type: tournament
+    file: nlj2000.txt
+    category: u18
+    name: U18
+    dir: 2000/u18
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - wins 
+      - sodos
+    findSharedPlaces: true
+    collapsed: false

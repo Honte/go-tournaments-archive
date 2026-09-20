@@ -1,0 +1,16 @@
+name: NK Jeugd
+stages:
+  - type: tournament
+    file: nlj2023.txt
+    name: All
+    scoringColumns:
+      - mms
+      - wins
+      - sodos
+      - u20
+      - u16     
+    breakers:      
+      - wins
+      - sodos
+    findSharedPlaces: true
+    collapsed: false

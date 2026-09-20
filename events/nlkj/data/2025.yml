@@ -1,0 +1,14 @@
+name: NK Jeugd
+stages:
+  - type: tournament
+    file: nlj2025.txt
+    name: All
+    scoringColumns:
+      - wins
+      - null
+      - u18
+      - u12  
+    breakers:      
+      - wins
+    findSharedPlaces: true
+    collapsed: false

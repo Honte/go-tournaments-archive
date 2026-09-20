@@ -1,0 +1,19 @@
+name: NK Jeugd
+stages:
+  - type: tournament
+    file: nlj1996.txt
+    category: u18
+    name: U18
+    dir: 1996/u18
+    notes: not sure how breakers worked in this tournament
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos  
+    findSharedPlaces: true
+    collapsed: false

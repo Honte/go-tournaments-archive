@@ -1,0 +1,11 @@
+; EV[NK Jeugd 2019 12-19]                                 20 16
+1	Riedeman Marcel      	8k	nl	Delf	4	4	8	8  1  0	5+/w	3+/b	6+/w	4+/b
+2	Riedeman Emil        	8k	nl	Delf	4	4	7	7  0  1	8+/b	6+/w	4+/w	3+/b
+3	Hilgenbos Qiang     	12k	nl	Amer	2	2	11	3  0  2	9+/b	1-/w	5+/w	2-/w
+4	Vos Dior_de          	11k	nl	Baar	2	2	10	2  2  0	7+/w	10+/b	2-/b	1-/w
+5	Boswinkel Milo       	20k	nl	DHaa	2	2	9	3  3  0	1-/b	9+/w	3-/b	7+/w
+6	Falkenstein Joah_Judah	15k	nl	Baar	2	2	9	1  0  3	10+/w	2-/b	1-/b	8+/w
+7	Aurich Sonja_van    	26k	nl	Hilv	2	2	6	2  0  4	4-/b	8+/w	9+/w	5-/b
+8	Schaaf Camiel_van_der	24k	nl	DHaa	1	1	8	0  0  5	2-/w	7-/b	10+/w	6-/b
+9	Helm Boaz_van_der   	27k	nl	DHaa	1	1	6	0  0  6	3-/w	5-/b	7-/b	10+/w
+10	Stam Kilian         	27k	nl	DHaa	0	0	6	0  0  7	6-/b	4-/w	8-/b	9-/b

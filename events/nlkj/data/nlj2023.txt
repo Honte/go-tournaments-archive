@@ -1,0 +1,15 @@
+; TC[T230129B]
+; CL[C]
+; EV[Dutch Youth Championship 2023]
+; PC[NL, Leiden]
+; DT[2023-01-29,2023-01-29]
+; HA[h9]
+; KM[6.5]
+; TM[30]
+; CM[ (submitted by Niek_vD)]
+;.
+1 Shou Daniel_Yining  10k NL  Eind  24   4  6 1 0  2+/b   4+/w   5+/w   0=     3+/b    |19325273
+2 Riedeman Emil        6k NL  Delf  23   3  3 2 0  1-/w   3+/w   4+/b   5+/w   0=      |15886607
+3 Vos Dior_de         14k NL  Baar  22   2  1 3 0  5+/b   2-/b   0=     4+/b   1-/w    |17201547
+4 Hilgenbos Qiang     12k NL  Amer  21   1  0 4 0  0=     1-/b   2-/w   3-/w   5+/b    |16549467
+5 Liu Rubin           16k NL  xxxx  20   0  0 0 1  3-/w   0=     1-/b   2-/b   4-/w    |19513153

@@ -1,0 +1,18 @@
+; TC[T000513G]
+; DT[2000-05-13,2000-05-13]
+; CL[C]
+; EV[Dutch Youth Championship]
+; PC[NL,Amsterdam]
+; KM[5.5]
+; TM[40]
+; HA[h9]
+;                      Dutch Youth Championship, Amsterdam 2000
+;                                   May 13, 2000
+;
+;Pl     Name             Grade  Club   MM x x x   1.     2.     3.     4.     5.
+ 1 Frehe Renee              2d NL Nijm  5 5 0 10   6+     2+     3+     4+     5+  |10313248
+ 2 Hollmann Tommy           1k NL Eind  4 4 0  6   5+     1-     6+     3+     4+  |10413502
+ 3 Shinada Kei              3k BE Brug  2 2 0  3   4+     5-     1-     2-     6+  |12050830
+ 4 Yick Wing-Jim            3k NL Eind  2 2 0  2   3-     6+     5+     1-     2-  |10549913
+ 5 Hollmann Kirsten         2k NL Eind  1 1 0  2   2-     3+     4-     6-     1-  |10486509
+ 6 Gerritse Youri           2k NL Apel  1 1 0  1   1-     4-     2-     5+     3-  |10750652

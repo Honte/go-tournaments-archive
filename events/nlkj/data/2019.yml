@@ -1,0 +1,35 @@
+name: NK Jeugd
+stages:
+  - type: tournament
+    file: nlj2019u12.txt
+    category: u12
+    name: U12
+    dir: 2019/u12
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins 
+      - sos
+      - sosos
+    findSharedPlaces: true
+    collapsed: true
+  - type: tournament
+    file: nlj2019u20u16.txt
+    name: U20-U16
+    dir: 2019/u2016
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sodos
+      - u20
+      - u16
+    breakers:
+      - wins
+      - sos
+      - sodos
+    findSharedPlaces: true
+    collapsed: true

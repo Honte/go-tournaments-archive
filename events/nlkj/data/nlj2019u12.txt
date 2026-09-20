@@ -1,0 +1,9 @@
+; EV[NK Jeugd 2019 onder 12]
+1	Nooijens Collin 	24k	nl	Baar	4	4	9	35	6+/w	3+/w	2+/b	4+/b
+2	Warmenhoven Flynt	23k	nl	Baar	3	3	10	34	5+/b	4+/w	1-/w	3+/b
+3	Falkenstein Jair	19k	nl	Baar	2	2	10	32	7+/w	1-/b	5+/b	2-/w
+4	Aurich Emie_van 	28k	nl	Hilv	2	2	8	32	8+/b	2-/b	7+/w	1-/w
+5	Liu Rubin       	30k	nl	Delf	2	2	7	34	2-/w	6+/b	3-/w	8+/w
+6	Schaerlaeckens Florian	30k	nl	Baar 2	2	7	29	1-/b	5-/w	8+/b	7+/b
+7	Aurich Donny_van	30k	nl	Hilv	1	1	6	32	3-/b	8+/w	4-/b	6-/w
+8	Zhang Jessica   	30k	nl	Delf	0	0	7	28	4-/w	7-/b	6-/w	5-/b

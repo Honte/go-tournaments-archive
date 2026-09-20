@@ -1,0 +1,19 @@
+; TC[T200111A]
+; CL[B]
+; EV[NJK 2020]
+; PC[NL, Papendrecht]
+; DT[2020-01-11,2020-01-11]
+; HA[h9]
+; KM[6.5]
+; TM[55]
+; CM[ (submitted by flambard)]
+;.                                                   20 16 12
+1 Riedeman Emil       7k NL  Delf  4    4    9    39  0  1  0 5+/b   6+/w   2+/b   4+/b    |15886607
+2 Vos Dior_de        11k NL  Baar  3    3    8    31  1  0  0 0+     4+/b   1-/w   5+/w    |17201547
+3 Warmenhoven Flynt  14k NL  Baar  3    3    6    35  0  0  1 8+/w   9+/b   4-/w   6+/w    |19301271
+4 Hilgenbos Qiang    11k NL  Amer  2    2    12   28  0  2  0 7+/b   2-/w   3+/b   1-/w    |16549467
+5 Falkenstein Jair   16k NL  xxxx  2    2    10   29  0  0  2 1-/w   8+/b   7+/w   2-/b    |19501152
+6 Nooijens Collin    14k NL  Baar  2    2    9    29  0  0  3 9+/w   1-/b   8+/w   3-/b    |19213832
+7 Liu Rubin          19k NL  xxxx  2    2    5    29  0  0  4 4-/w   0+     5-/b   9+/b    |19513153
+8 Liu Nina           20k NL  xxxx  1    1    7    25  0  0  5 3-/b   5-/w   6-/b   0+      |19525154
+9 Zhang Jessica      20k NL  xxxx  1    1    7    20  0  0  6 6-/b   3-/w   0+     7-/w    |19549156

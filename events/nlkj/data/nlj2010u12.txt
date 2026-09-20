@@ -1,0 +1,17 @@
+; TC[T100131A]
+; CL[C]
+; EV[Dutch Junior Championship 2010 u12]
+; PC[NL, Amstelveen]
+; DT[2010-01-31,2010-01-31]
+; HA[h9]
+; KM[6.5]
+; TM[35]
+; CM[Contact info: info@EuroGoTV.com or RvAurich@kpnmail.nl (submitted by 10698281)]
+;.
+; TA[35]
+;
+1 Groot Yuki_de      18k NL  DHaa  5    4    0    0    4-b    0+     5+b    2+w    3+b    2+b     |15050574
+2 Christiaans Colin  15k NL  Eind  4    2    0    1    3+w    4+b    0+     1-b    0+     1-w     |15649942
+3 Quirijnen Jorn     19k NL  Zutp  4    2    0    0    2-b    5+w    4+w    0+     1-w    0+      |15686957
+4 Riedeman Marcel    18k NL  Delf  2    2    0    0    1+w    2-w    3-b    5+w    0-     0-      |14601378
+5 Groot Aya_de       20k NL  DHaa  1    0    0    0    0+     3-b    1-w    4-b    0-     0-      |15074576

@@ -1,0 +1,16 @@
+name: NK Jeugd
+stages:
+  - type: tournament
+    file: nlj1997.txt
+    category: u18
+    name: U18
+    dir: 1997/u18
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - wins  
+    findSharedPlaces: true
+    collapsed: false
