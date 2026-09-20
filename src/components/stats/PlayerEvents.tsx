@@ -7,6 +7,7 @@ import type { Translations } from '@/i18n/consts';
 import { getFormatter } from '@/i18n/formatter';
 import { getTranslator } from '@/i18n/translator';
 import { getGameStats } from '@/libs/games';
+import { getPlayerAvailableCategories } from '@/libs/playerStats';
 import { getStageName } from '@/libs/stage';
 import { SgfCountLink } from '@/components/gameRecords/SgfCountLink';
 import { StatsTable } from '@/components/table/StatsTable';
@@ -19,7 +20,6 @@ type PlayerEventsProps = {
   event: EventContext;
   player: PlayerStats;
   translations: Translations;
-  showCategories?: boolean;
 };
 
 type EventRow = {
@@ -39,12 +39,7 @@ type EventRow = {
   wonPercent: number;
 };
 
-export function PlayerEvents({
-  event,
-  player,
-  translations,
-  showCategories = Boolean(event.categories?.length),
-}: PlayerEventsProps) {
+export function PlayerEvents({ event, player, translations }: PlayerEventsProps) {
   const t = getTranslator(translations);
 
   const data = useMemo(() => {
@@ -92,12 +87,6 @@ export function PlayerEvents({
               <YearLink event={event} locale={translations.locale} year={info.cell.getValue() as number} />
             ),
           },
-          showCategories &&
-            event.categories?.length && {
-              accessorKey: 'categories',
-              header: t('table.category'),
-              cell: (info) => formatCategories(info.row.original.categories, t),
-            },
           hasMultipleStages && {
             accessorKey: 'stage',
             header: t('table.stage'),
@@ -123,6 +112,13 @@ export function PlayerEvents({
             accessorKey: 'place',
             header: t('table.place'),
           },
+          ...getPlayerAvailableCategories(player, event.categories ?? []).map<StatsColumnDef<EventRow>>((category) => ({
+            id: `category-${category}`,
+            accessorFn: (row) => row.categories?.[category],
+            header: t(`categories.short.${category}`),
+            cell: (info) =>
+              info.row.original.categories?.[category] ?? <span className="text-archive-text-muted/50">–</span>,
+          })),
           {
             accessorKey: 'games',
             header: t('table.games'),
@@ -178,10 +174,9 @@ export function PlayerEvents({
       hasDraws,
       hasUnresolved,
       hasSgfs,
-      player.id,
+      player,
       event,
       t,
-      showCategories,
     ]
   );
 
@@ -191,10 +186,4 @@ export function PlayerEvents({
       <StatsTable data={data} columns={columns} />
     </div>
   );
-}
-
-function formatCategories(categories: Record<string, number | '?'> | undefined, t: (key: string) => string) {
-  const keys = Object.keys(categories ?? {});
-
-  return keys.length ? keys.map((category) => t(`categories.short.${category}`)).join(', ') : '-';
 }

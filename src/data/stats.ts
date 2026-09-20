@@ -116,7 +116,6 @@ export function calculateStats(
         const finalPlace = player.place > (stage.promoted ?? 0) ? player.place + (stage.placeOffset ?? 0) : Infinity;
 
         playerResult.place = Math.min(playerResult.place, finalPlace);
-        playerStats.bestPlace = Math.min(playerStats.bestPlace, finalPlace);
 
         upsertPlayerCountry(playerStats, tournamentPlayer.country);
 
@@ -223,6 +222,8 @@ export function calculateStats(
     player.results.sort((a, b) => a.year - b.year);
 
     for (const result of player.results) {
+      player.bestPlace = Math.min(player.bestPlace, getBestPlace(result));
+
       for (const stage of result.stages) {
         const outcomes = getGameStats(stage.games);
 
@@ -247,7 +248,7 @@ export function calculateStats(
       yearStats.results.sort((a, b) => a.place - b.place);
 
       for (const result of yearStats.results) {
-        yearStats.bestPlace = Math.min(yearStats.bestPlace, result.place);
+        yearStats.bestPlace = Math.min(yearStats.bestPlace, getBestPlace(result));
 
         for (const stage of result.stages) {
           const outcomes = getGameStats(stage.games);
@@ -445,6 +446,20 @@ export function calculateStats(
       }
     }
   }
+}
+
+function getBestPlace(result: PlayerResult): number {
+  let best = Infinity;
+
+  for (const stage of result.stages) {
+    for (const place of Object.values(stage.categories ?? {})) {
+      if (typeof place === 'number') {
+        best = Math.min(best, place);
+      }
+    }
+  }
+
+  return best < Infinity ? best : result.place;
 }
 
 function* iteratePlayerGames(result: Stage['table'][0]) {

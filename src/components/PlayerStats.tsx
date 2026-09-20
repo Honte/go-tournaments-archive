@@ -45,7 +45,7 @@ function PlayerStatsContent({ event, player, translations, category }: PlayerSta
   return (
     <div className="flex max-xl:flex-col gap-4">
       <div className="flex flex-1 flex-col gap-4">
-        <PlayerEvents event={event} player={player} translations={translations} showCategories={!category} />
+        <PlayerEvents event={event} player={player} translations={translations} />
         <PlayerGames event={event} player={player} translations={translations} />
       </div>
       <Opponents event={event} player={player} translations={translations} category={category} />

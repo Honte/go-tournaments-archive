@@ -251,6 +251,29 @@ describe('calculateStats', () => {
     assert.deepEqual(countryStage?.categories, { u16: 1, u12: '?' });
   });
 
+  it('uses category places for best and falls back to overall place when no numeric category place exists', () => {
+    const playersHandler = createPlayersHandler();
+    const players = playersHandler.loadJson({
+      a: 'Alice Nowak 1d (PL)',
+      b: 'Bob Smith 1k (DE)',
+    });
+    const tournament = createTournament(players, {}, { a: { u16: 1 }, b: { u12: '?' } });
+    const main = tournament.stages[0];
+
+    if (main.type !== 'league') {
+      throw new Error('Expected a league test fixture');
+    }
+
+    main.table[0].place = 7;
+
+    const stats = calculateStats({ ...creteEventConfig(), categories: ['u16', 'u12'] }, [tournament], playersHandler);
+
+    assert.equal(stats.players[players.a.id].bestPlace, 1);
+    assert.equal(stats.players[players.b.id].bestPlace, 2);
+    assert.equal(stats.countries.PL.bestPlace, 1);
+    assert.equal(stats.countries.DE.bestPlace, 2);
+  });
+
   it('derives available country categories and filters country stats by category', () => {
     const playersHandler = createPlayersHandler();
     const players = playersHandler.loadJson({
