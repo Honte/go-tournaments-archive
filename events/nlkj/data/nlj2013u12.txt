@@ -1,0 +1,23 @@
+; TC[T130127C]
+; CL[C]
+; EV[Dutch Junior Championship 2013 under 12]
+; PC[NL, Amstelveen]
+; DT[2013-01-27,2013-01-27]
+; HA[h9]
+; KM[6.5]
+; TM[55]
+; CM[Contact info: ronald.verhagen1@gmail.com (submitted by 10698281)]
+;.
+; TA[55]
+;
+; NK Jeugd tot 12 jaar
+ 1 Christiaans Colin   7k NL  Eind  4    4    9    36   3+/w0   7+/w0   5+/b0   2+/b0    |15649942
+ 2 Stijnen Heleen     20k NL  Krin  3    3    10.5  30   6+/w0   9+/b0   4+/b0   1-/w0    |16850207
+ 3 Meijer Abel        20k NL  Alme  3    3    8.5   29   1-/b0   8+/w0   9+/w0   6+/w0    |16862208
+ 4 Bakker Onno        20k NL  Alme  3    3    8    33.5  0+      5+/b0   2-/w0   8+/b0    |16874209
+ 5 Delintzis Sadie    20k NL  Alme  2    2    8    32.5  10+/b0  4-/w0   1-/w0   7+/b0    |16886210
+ 6 Meijer Analy       20k NL  Alme  2    2    7    34.5  2-/b0   10+/w0  7+/w0   3-/b0    |16801213
+ 7 Kats Rafael        20k NL  Ontd  1    1    9    31   8+/w0   1-/b0   6-/b0   5-/w0    |16813214
+ 8 Meijer Daniel      20k NL  Alme  1    1    7    32   7-/b0   3-/b0   10+/w0  4-/w0    |16825215
+ 9 Riedeman Emil      14k NL  Delf  1.5   1    6    25.5  0=      2-/w0   3-/b0   10+/b0   |15886607
+10 Meijer Macha       20k NL  Alme  0    0    6.5   28   5-/w0   6-/b0   8-/b0   9-/w0    |16837216

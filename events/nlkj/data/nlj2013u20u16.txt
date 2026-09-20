@@ -1,0 +1,23 @@
+
+; TC[T130127D]
+; CL[C]
+; EV[Dutch Junior Championship 2013 under 20 and under 16]
+; PC[NL, Amstelveen]
+; DT[2013-01-27,2013-01-27]
+; HA[h9]
+; KM[6.5]
+; TM[55]
+; CM[Contact info: ronald.verhagen1@gmail.com (submitted by 10698281)]
+;.
+; TA[50]
+;https://web.archive.org/web/20130911051736/http://www.gobond.nl/Nieuws/Nieuws.php?Bericht=632
+; NK Jeugd tot 16 en tot 20                             20 16
+1 Ketelaars Alex       2d NL  Hilv  4    4    9.5  33    1  0  5+/w0  4+/b0  2+/b0  6+/w0  0=      |14913239
+2 Calon Ruben          3k NL  Eind  3    3    9    33.5  2  0  7+/b0  3+/w0  1-/w0  8+/b0  0=      |14650834
+3 Moll Lennard        15k NL  DHaa  3    3    8    33    3  0  9+/w0  2-/b0  5+/w0  4+/w0  0=      |16749634
+4 Seure Justin        14k NL  xxxx  2    2    9    34    0  2  8+/w0  1-/w0  0+     3-/b0  6-/b0   |16849239
+5 Koole Paul          13k NL  Amvn  2    2    9    32    4  0  1-/b0  9+/w0  3-/b0  7+/w0  0=      |16850240
+6 Riedeman Marcel      9k NL  Delf  2.5  2    6    25.5  0  1  0=     7+/b0  8+/w0  1-/b0  4+/w0   |14601378
+7 Meskers Casper      10k NL  Eind  1    1    8.5  30    0  3  2-/w0  6-/w0  9+/b0  5-/b0  0=      |16337695
+8 Meskers Marthe      20k NL  Eind  1    1    7.5  31.5  0  4  4-/b0  0+     6-/b0  2-/w0  0=      |16862241
+9 Boekenstijn Annika  18k NL  Eind  1    1    6    31.5  0  5  3-/b0  5-/b0  7-/w0  0+     0=      |16886243

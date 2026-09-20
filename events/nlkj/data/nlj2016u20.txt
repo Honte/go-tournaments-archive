@@ -1,0 +1,6 @@
+;https://web.archive.org/web/20160304232855/https://www.gobond.nl/
+; DT[2016-01-31,2016-01-31]
+; PC[NL,Amstelveen]
+1 Ketelaars Alex  2d NL xxx 0= 3+ 2+ 2
+2 Calon Ruben     2k NL xxx 3+ 0= 1- 1
+3 Riedeman Marcel 9k NL xxx 2- 1- 0= 0

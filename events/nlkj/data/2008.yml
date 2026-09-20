@@ -1,0 +1,33 @@
+name: NK Jeugd
+stages:
+  - type: tournament
+    file: nlj2008u12.txt
+    category: u12
+    name: U12
+    dir: 2008/u12 
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - wins 
+      - sodos
+    findSharedPlaces: true
+    collapsed: true
+  - type: tournament
+    file: nlj2008u18.txt
+    category: u18
+    name: U18
+    dir: 2008/u18
+    notes: played in 2 groups based on rank (6+3)    
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - wins 
+      - sodos
+    findSharedPlaces: true
+    collapsed: true

@@ -1,0 +1,8 @@
+;                              pl 20 16 12
+1 Ketelaars Alex    31k NL xxx  1  1  0  0
+2 Groot Yuki_de     31k NL xxx  2  0  1  0
+3 Riedeman Marcel   31k NL xxx  3  0  2  0
+4 Gabrielse Tristan 31k NL xxx  4  0  0  1
+5 Riedeman Emil     31k NL xxx  5  0  0  2
+6 Verhoeven Tim     31k NL xxx  6  0  0  3
+

@@ -1,0 +1,26 @@
+name: NK Jeugd
+stages:
+  - type: tournament
+    file: nlj2011u12.txt
+    category: u12
+    name: U12
+    dir: 2011/u12
+    notes: not sure about remaining breakers
+    scoringColumns:
+      - wins
+    breakers:
+      - wins 
+    findSharedPlaces: false
+    collapsed: true
+  - type: tournament
+    file: nlj2011u18.txt
+    category: u18
+    name: U18
+    dir: 2011/u18
+    notes: not sure about remaining breakers    
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: false
+    collapsed: true

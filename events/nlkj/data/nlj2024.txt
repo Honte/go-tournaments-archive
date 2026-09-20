@@ -1,0 +1,19 @@
+; TC[T240114B]
+; CL[C]
+; EV[Dutch Youth Championship 2024]
+; PC[NL, Apeldoorn]
+; DT[2024-01-14,2024-01-14]
+; HA[h9]
+; KM[6.5]
+; TM[36]
+; CM[ (submitted by Niek_vD)]
+;.
+1 Shou Daniel_Yining   7k NL  Eind  5    5    15   15 1 0 0  4+/w   2+/b   5+/w   6+/b   3+/b    |19325273
+2 Riedeman Emil        5k NL  Delf  4    4    14   9  2 0 0  3+/w   1-/w   9+/b   5+/b   7+/w    |15886607
+3 Stam Kyan           10k NL  xxxx  3    3    16   7  0 0 1  2-/b   4+/b   6+/w   7+/b   1-/w    |20474069
+4 Botman Jurre        12k NL  xxxx  3    3    14   6  3 0 0  1-/b   3-/w   0+     8+/w   6+/w    |20525098
+5 Delorme Owen        15k NL  xxxx  3    3    14   5  0 0 2  8+/w   9+/b   1-/b   2-/w   0+      |20562102
+6 Wang Leo            15k NL  xxxx  2    2    14   3  0 1 0  0+     7+/w   3-/b   1-/w   4-/b    |20574103
+7 Au Julian           15k NL  Seki  2    2    12   3  0 0 3  9+/w   6-/b   8+/b   3-/w   2-/b    |20562047
+8 Wu Stanley          23k NL  xxxx  2    2    10   2  0 0 4  5-/b   0+     7-/w   4-/b   9+/w    |20586104
+9 Zhou Xiaosong       20k NL  xxxx  1    1    11   0  0 0 5  7-/b   5-/w   2-/w   0+     8-/b    |20598105

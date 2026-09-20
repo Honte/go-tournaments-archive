@@ -1,0 +1,17 @@
+; TC[T110130A]
+; CL[C]
+; EV[Dutch Youth Championship under 18 2011]
+; PC[NL, Amstelveen]
+; DT[2011-01-30,2011-01-30]
+; HA[h9]
+; KM[6.5]
+; TM[45]
+; CM[ (submitted by HW9x9)]
+;.
+;
+1 Ketelaars Alex       1k NL  Hilv  5+/b   6+/w   4+/b   3+/b   4     |14913239
+2 Finkelnberg Thomas   9k NL  Leid  3-/w   4+/b   5+/b   6+/w   3     |15825018
+3 Wit Jelger_de        1k NL  Alme  2+/b   5+/w   6+/b   1-/w   3     |13933876
+4 Calon Ruben          5k NL  Eind  6+/b   2-/w   1-/w   5+/b   2     |14650834
+5 Heijungs Simon      15k NL  XXXX  1-/w   3-/b   2-/w   4-/w   0     |15949978
+6 Draaisma Hugo       12k NL  Venl  4-/w   1-/b   3-/w   2-/b   0     |14513334

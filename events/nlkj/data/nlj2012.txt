@@ -1,0 +1,7 @@
+;                          pl 18 12
+1 Ketelaars Alex 31k NL xxx 1  1  0
+2 Calon Ruben    31k NL xxx 2  2  0
+3 Meskers Casper 31k NL xxx 3  3  0
+4 Groot Yuki_de  31k NL xxx 4  0  1
+5 Seure Justin   31k NL xxx 5  0  2
+6 Riedeman Emil  31k NL xxx 6  0  3

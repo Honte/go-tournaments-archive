@@ -1,0 +1,34 @@
+; TC[T020120A]
+; DT[2002-01-20,2002-02-10]
+; CL[C]
+; EV[Dutch Youth Championship ]
+; PC[NL,Amsterdam]
+; KM[5.5]
+; TM[45]
+; HA[h9]
+;https://web.archive.org/web/20030527162119fw_/http://www.gobond.nl/~kalender/2002/nk_jeugd_2002.htm
+;                Dutch Youth Championship Playoffs
+;                       February 10, 2002
+;T020210B
+;Pl     Name             Grade  Club   MM S   x   x 18 12  1. 2. 3.
+  1 Hollmann Tommy          1k NL Eind  3 3   0   0  1  0  0=  2-  3+  2+  0= 3+ |10413502
+  2 Yick Wing-Jim           3k NL Eind  2 2   0   0  2  0  3-  1+  0=  1-  3+ 0= |10549913
+  3 Wallage Martijn         1k NL Gron  1 1   0   0  3  0  2+  0=  1-  0=  2- 1- |10962391
+; second group - not on egd
+  4 Melissen Matthijs      12k NL Bred  4 4   13  0  4  0 10+  7+  5+  6+  8- 0= |12849034
+  5 Kuipers Zachary        12k NL Voor  3 3   14  0  0  1  8+  9+  4-  7- 10+ 0= |12550714
+  6 Westhoff Edwald        13k NL Voor  3 3   13  0  0  2  9- 11+  8+  4-  7+ 0= |12550615
+  7 Visser Robbert-Jan     13k NL Voor  3 3   13  0  0  3 11+  4-  9+  5+  6- 0= |12537613
+  8 Berkelmans Wouter      10k NL Amst  3 3   11  0  0  4  5- 10+  6- 11+  4+ 0= |12574617
+  9 Jansen Jori            16k NL Bilt  3 3   10  0  0  5  6+  5-  7- 10+ 11+ 0= |12674970	
+ 10 Krogt Koen_van_der     15k NL Leid  1 1   13  0  0  6  4-  8- 11+  9-  6- 0= |12549031 
+ 11 Zeeuw Lisette          20k NL Amst  0 0   13  0  5  0  7-  6- 10-  8-  9- 0= |12850035
+
+;                       Dutch Youth Championship, Amsterdam
+;                               January 20, 2002
+;
+;Pl     Name             Grade  Club   MM S SOS   x   1.  2.  3.  4.  5.
+;  1 Wallage Martijn         1k NL Gron  1 1   2   0   2+  0-  3-  0-  0-  |10962391
+;  2 Yick Wing-Jim           3k NL Eind  1 1   2   0   1-  3+  0-  0-  0-  |10549913
+;  3 Hollmann Tommy          1k NL Eind  1 1   2   0   0-  2-  1+  0-  0-  |10413502
+;

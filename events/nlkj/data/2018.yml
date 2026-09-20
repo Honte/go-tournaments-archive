@@ -1,0 +1,14 @@
+name: NK Jeugd
+stages:
+  - type: tournament
+    file: nlj2018.txt
+    name: All
+    notes: As there was only one player in each category, they won the championship by default
+    scoringColumns:
+      - place
+      - u16
+      - u12  
+    breakers:      
+      - place
+    findSharedPlaces: true
+    collapsed: false

@@ -1,0 +1,16 @@
+; TC[T140126I]
+; CL[C]
+; EV[Dutch Youth Championship U12]
+; PC[NL, Amstelveen]
+; DT[2014-01-26,2014-01-26]
+; HA[h9]
+; KM[6.5]
+; TM[30]
+; CM[ (submitted by Herman Hiddema)]
+;.
+1 Jacob Pepijn       19k NL  xxxx  5    6+     4+     5+     3+     2+      |17013645
+2 Gabrielse Tristan  18k NL  xxxx  4    5+     6+     3+     4+     1-      |17037647
+3 Riedeman Emil      19k NL  Delf  3    4+     5+     2-     1-     6+      |15886607
+4 Jacob Marnix       20k NL  xxxx  2    3-     1-     6+     2-     5+      |17049648
+5 Damme Amber_van    20k NL  xxxx  1    2-     3-     1-     6+     4-      |17050649
+6 Verhoeven Tim      20k NL  xxxx  0    1-     2-     4-     5-     3-      |17062650

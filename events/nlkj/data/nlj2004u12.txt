@@ -1,0 +1,13 @@
+; TC[T040118B]
+; CL[B]
+; HA[h9]
+; EV[Dutch Youth Championship]
+; PC[NL, Amstelveen]
+; DT[2004-01-18,2004-01-24]
+; KM[6.5]
+; TM[60]
+; == under 12  
+  1 Visser Robbert-Jan      8k NL Leid   1184 5  0   0  4+ 4+ 3- 3+ 2+ 2+  |12537613
+  2 Westhoff Edwald         8k NL Leid   1093 4  0   0  3+ 3+ 4+ 4+ 1- 1-  |12550615
+  3 Berkelmans Guus         12 NL Amvn    700 3  0   0  2- 2- 1+ 1- 4+ 4+  |13062720
+  4 Rademakers Guido        13 NL Eind    800 0  0   0  1- 1- 2- 2- 3- 3-  |13786784

@@ -1,0 +1,16 @@
+; TC[T090124G]
+; CL[C]
+; EV[Dutch Junior Championship 2009 u18]
+; PC[NL, Amstelveen]
+; DT[2009-01-24,2009-01-25]
+; HA[h9]
+; KM[6.5]
+; TM[45]
+; CM[Contact info: info@EuroGoTV.com or RvAurich@kpnmail.nl (submitted by 10698281)]
+;.
+; TA[45]
+;
+1 Eerbeek Alexander   3d NL  Vink  6    6   12    0    4+w    3+w    2+w    4+b    3+b    2+b     |13501356
+2 Tel Michiel         1d NL  Gron  4    4    4    0    3+w    4+w    1-b    3+b    4+b    1-w     |14333682
+3 Wit Jelger_de       2k NL  Alme  2    2    0    0    2-b    1-b    4+w    2-w    1-w    4+b     |13933876
+4 Berkelmans Guus     7k NL  Amvn  0    0    0    0    1-b    2-b    3-b    1-w    2-w    3-w     |13062720

@@ -1,0 +1,34 @@
+; TC[T110130B]
+; CL[C]
+; EV[Dutch Youth Championship under 12 2011]
+; PC[NL, Amstelveen]
+; DT[2011-01-30,2011-01-30]
+; HA[h9]
+; KM[6.5]
+; TM[30]
+; CM[ (submitted by HW9x9)]
+;.
+;
+ 1 Christiaans Colin   12k NL  Eind  12+/b   6+/b    10+/w   2+/b    3+/w    5     |15649942
+ 2 Groot Yuki_de       12k NL  DHaa  20+/b   23+/w   4+/b    1-/w    7+/b    4     |15050574
+ 3 Riedeman Marcel     12k NL  Delf  19+/b   14+/w   7+/b    6+/w    1-/b    4     |14601378
+ 4 Janssen Joris       19k NL  Alme  18+/b   5+/w    2-/w    19+/w   10+/b   4     |14601840
+ 5 Jeu Stijn_de        19k NL  XXXX  8+/b    4-/b    17-/w   13+/w   18+/w   3     |15962980
+ 6 Peeters Luuk        16k NL  XXXX  11+/b   1-/w    8+/w    3-/b    21+/b   3     |15974981
+ 7 Admiraal Daniel_M.  20k NL  Amst  22+/b   15+/b   3-/w    12+/w   2-/w    3     |15674945
+ 8 Coonen Sanna        20k NL  XXXX  5-/w    11+/w   6-/b    17+/w   16+/w   3     |15986982
+ 9 Camardese Milo      20k NL  XXXX  17-/w   22+/b   15+/b   10-/w   19+/b   3     |15998983
+10 Laverman Anna       20k NL  XXXX  13+/w   17+/b   1-/b    9+/b    4-/w    3     |15933984
+11 Laverman Erika      20k NL  XXXX  6-/w    8-/b    22+/w   21+/b   17+/w   3     |15901985
+12 Emmerik Sanne_van   20k NL  XXXX  1-/w    21+/b   13+/b   7-/b    15+/w   3     |15913986
+13 Chandra Pranay      19k NL  XXXX  10-/b   20+/w   12-/w   5-/b    22+/b   2     |15925987
+14 Zaal Eva            19k NL  XXXX  21+/w   3-/b    19-/w   18-/b   23+/w   2     |16050012
+15 Staal Olaf          20k NL  XXXX  16+/b   7-/w    9-/w    23+/b   12-/b   2     |16062013
+16 Bezemer Maartje     20k NL  XXXX  15-/w   19-/b   23+/b   20+/w   8-/b    2     |16074014
+17 Janssen Eva         20k NL  Alme  9+/b    10-/w   5+/b    8-/b    11-/b   2     |15249663
+18 Knol Xavier         20k NL  XXXX  4-/w    0+      20-/b   14+/w   5-/b    2     |16086015
+19 Willems Nienke      20k NL  XXXX  3-/w    16+/w   14+/b   4-/b    9-/w    2     |16098016
+20 Emmerik Thijs_van   20k NL  XXXX  2-/w    13-/b   18+/w   16-/b   0+      2     |16033017
+21 Chandra Sakshi      20k NL  XXXX  14-/b   12-/w   0+      11-/w   6-/w    1     |16001018
+22 Oordt Ananda_van    20k NL  XXXX  7-/w    9-/w    11-/b   0+      13-/w   1     |16013019
+23 Bezemer Balthazar   20k NL  XXXX  0+      2-/b    16-/w   15-/w   14-/b   1     |16037021

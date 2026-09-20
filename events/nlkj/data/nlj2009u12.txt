@@ -1,0 +1,23 @@
+; TC[T090125A]
+; CL[C]
+; EV[Dutch Junior Championship 2009 u12]
+; PC[NL, Amstelveen]
+; DT[2009-01-25,2009-01-25]
+; HA[h9]
+; KM[6.5]
+; TM[30]
+; CM[Contact info: info@EuroGoTV.com or RvAurich@kpnmail.nl (submitted by 10698281)]
+;.
+; TA[30]
+;
+ 1 Ketelaars Alex                 9k NL  Hilv  5    5    0    0    6+w     3+w     11+w    2+b     5+w      |14913239
+ 2 Poel Peter_van_der            11k NL  Rott  4    4    0    0    0+      4+w     5+w     1-w     3+b      |14362689
+ 3 Calon Ruben                    8k NL  Eind  3    3    0    0    7+w     1-b     4+b     8+w     2-w      |14650834
+ 4 Riedeman Marcel               18k NL  Delf  3    3    0    0    8+w     2-b     3-w     9+w     10+b     |14601378
+ 5 Valk Titus_van_der            19k NL  DHaa  3    3    0    0    11+w    10+b    2-b     6+w     1-b      |14562273
+ 6 Admiraal Simone               20k NL  Amst  3    3    0    0    1-b     0+      10+w    5-b     8+b      |14525269
+ 7 Christiaans Colin             15k NL  Eind  2    2    0    0    3-b     8-b     9-w     0+      11+b     |15649942
+ 8 Kar Mozes_van_de              20k NL  Amst  2    2    0    0    4-b     7+w     0+      3-b     6-w      |15650943
+ 9 Admiraal Daniel_M.            20k NL  Amst  2    2    0    0    10-w    11-b    7+b     4-b     0+       |15674945
+10 Janssen Joris_Shuko           20k NL  Alme  2    2    0    0    9+b     5-w     6-b     11+b    4-w      |14601840
+11 Kar Nelson_van_de             20k NL  Amst  1    1    0    0    5-b     9+w     1-b     10-w    7-w      |15686946

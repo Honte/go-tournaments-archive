@@ -1,0 +1,15 @@
+; TC[T080126C]
+; CL[A]
+; EV[Dutch Youth Championship]
+; PC[NL, Amstelveen]
+; DT[2008-01-26,2008-01-27]
+; HA[h9]
+; KM[6.5]
+; TM[110]
+;
+;=== Under 12
+   1 Calon Ruben                    18 NL  Eind     4     4     6     6    5+/b    4+/w      0=    3+/b    2+/w             |14650834
+   2 Ketelaars Alex                 20 NL  Hilv     2     2     8     3    3+/w      0=    5+/b    4-/w    1-/b             |14913239
+   3 Zhang Kerry                    18 NL  xxx      2     2     8     2    2-/b    5+/w    4+/b    1-/w      0=             |14925240
+   4 Theelen Pablo                  20 NL  Nijm     1     1     9     2      0=    1-/b    3-/w    2+/b    5-/w             |14813029
+   5 Westhoff Edger                 16 NL  Leid     1     1     9     1    1-/w    3-/b    2-/w      0=    4+/b             |12798291

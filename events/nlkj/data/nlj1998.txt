@@ -1,0 +1,26 @@
+; TC[T980509C]
+; DT[1998-05-09,1998-05-09]
+; CL[C]
+; EV[Dutch Youth Championship]
+; PC[NL,Eindhoven]
+; KM[5.5]
+; TM[45]
+; HA[h9]
+;                      Dutch Youth Championship, Eindhoven 1998
+;                                    May 9, 1998
+;
+;Pl     Name             Grade  Club   MM S SOS SDOS  1.   2.   3.   4.   5.
+  1 Frehe Renee             1k NL Nijm  5 5  13  13  10+   4+   7+   2+   3+  |10313248
+  2 Kuin Merlijn            1D NL Amvn  4 4  16  16   8+   3+   5+   1-   4+  |10233861
+  3 Hollmann Kirsten        10 NL Eind  3 3  15  15  11+   2-   6+   7+   1-  |10486509
+  4 Hollmann Tommy          1k NL Eind  3 3  14  14   9+   1-  12+   8+   2-  |10413502
+  5 Guo Wangzi              8k NL Hilv  3 3  12  12   6-  11+   2-   9+   7+  |10274176
+  6 Joo Duk-Young           6k DE AC    3 3  11  11   5+   7-   3-  10+   8+  |10674642
+  7 Gerritse Youri          12 NL Apel  2 2  15  15  12+   6+   1-   3-   5-  |10750652
+  8 Yick Wing-Jim           7k NL Eind  2 2  13  13   2-  10+   9+   4-   6-  |10549913
+  9 Knoop Egbert            10 NL Leid  2 2  10  10   4-  12+   8-   5-  11+  |12086987
+ 10 Lucas Kay               10 NL Box   1 1  12  12   1-   8-  11+   6-  12-  |12074953
+ 11 Knoop Mathilda          13 NL Leid  1 1  10  10   3-   5-  10-  12+   9-  |12313015
+ 12 Lucas Jorn              12 NL Box   1 1   9   9   7-   9-   4-  11-  10+  |12086954
+;
+; time: 30+b20

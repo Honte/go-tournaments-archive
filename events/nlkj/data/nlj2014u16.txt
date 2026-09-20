@@ -1,0 +1,14 @@
+; TC[T140126H]
+; CL[B]
+; EV[Dutch Youth Championship U16]
+; PC[NL, Amstelveen]
+; DT[2014-01-26,2014-01-26]
+; HA[h9]
+; KM[6.5]
+; TM[55]
+; CM[ (submitted by Herman Hiddema)]
+;.
+1 Groot Yuki_de     5k NL  Rijs  3    3+     4+     2+      |15050574
+2 Riedeman Marcel   9k NL  Delf  2    4+     3+     1-      |14601378
+3 Seure Justin     18k NL  xxxx  1    1-     2-     4+      |16849239
+4 Delintzis Sadie  18k NL  Alme  0    2-     1-     3-      |16886210

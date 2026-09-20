@@ -1,0 +1,15 @@
+name: NK Jeugd
+stages:
+  - type: tournament
+    file: nlj2015.txt
+    name: All
+    notes: No table available at the moment
+    scoringColumns:
+      - place
+      - u20
+      - u16
+      - u12  
+    breakers:      
+      - place
+    findSharedPlaces: true
+    collapsed: false

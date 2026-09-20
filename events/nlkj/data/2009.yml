@@ -1,0 +1,39 @@
+name: NK Jeugd
+stages:
+  - type: tournament
+    file: nlj2009u12.txt
+    category: u12
+    name: U12
+    dir: 2009/u12
+    notes: not sure about remaining breakers
+    scoringColumns:
+      - mms
+      - wins
+      - null
+      - direct
+    breakers:
+      - wins
+    findSharedPlaces: false
+    collapsed: true
+  - type: tournament
+    file: nlj2009u18.txt
+    category: u18
+    name: U18
+    dir: 2009/u18
+    scoringColumns:
+      - wins
+      - null
+      - sodos
+      - null
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true
+    collapsed: true
+    games:
+      - 1-2 1:B+R round:6 sgf:2009/u18/6-AlexanderEerbeek-MichielTel.sgf
+      - 1-3 3:W+R round:5 sgf:2009/u18/5-AlexanderEerbeek-JelgerdeWit.sgf
+      - 1-4 1:B+66.5 round:4 sgf:2009/u18/4-AlexanderEerbeek-GuusBerkelmans.sgf
+      - 2-1 1:W+7.5 round:3 sgf:2009/u18/3-MichielTel-AlexanderEerbeek.sgf
+      - 3-1 1:W+R round:2 sgf:2009/u18/2-JelgerdeWit-AlexanderEerbeek.sgf
+      - 4-1 1:W+R round:1 sgf:2009/u18/1-GuusBerkelmans-AlexanderEerbeek.sgf

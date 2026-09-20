@@ -1,0 +1,36 @@
+name: NK Jeugd
+stages:
+  - type: tournament
+    file: nlj2013u12.txt
+    category: u12
+    name: U12
+    dir: 2013/u12
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins 
+      - sos
+      - sosos
+    findSharedPlaces: true
+    collapsed: true
+  - type: tournament
+    file: nlj2013u20u16.txt
+    name: U20-U16
+    dir: 2013/u2016
+    notes: 5th round is 1st place playoff in U16 category
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sosos
+      - u20
+      - u16
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: true
+    collapsed: true

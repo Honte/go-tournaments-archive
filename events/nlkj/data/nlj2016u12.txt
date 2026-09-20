@@ -1,0 +1,7 @@
+;https://web.archive.org/web/20160304232855/https://www.gobond.nl/
+; DT[2016-01-31,2016-01-31]
+; PC[NL,Amstelveen]
+1 Riedeman Emil       14k NL xxx 4+ 3+ 2+ 3
+2 Kok Joop            18k NL xxx 3+ 4+ 1- 2
+3 Cuijpers Sebastiaan 20k NL xxx 2- 1- 4+ 1
+4 Verhoeven Tim       20k NL xxx 1- 2- 3- 0

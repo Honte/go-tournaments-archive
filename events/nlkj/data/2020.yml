@@ -1,0 +1,19 @@
+name: NK Jeugd
+stages:
+  - type: tournament
+    file: nlj2020.txt
+    name: All
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sosos
+      - u20
+      - u16
+      - u12      
+    breakers:      
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: true
+    collapsed: false

@@ -1,0 +1,20 @@
+website: https://www.gobond.nl/index.php?page=175&sid=4
+name: NK Jeugd
+stages:
+  - type: tournament
+    file: nlj2024.txt
+    name: All
+    scoringColumns:
+      - wins
+      - null
+      - sos
+      - sodos
+      - u20
+      - u16
+      - u12      
+    breakers:      
+      - wins
+      - sos
+      - sodos
+    findSharedPlaces: true
+    collapsed: false
