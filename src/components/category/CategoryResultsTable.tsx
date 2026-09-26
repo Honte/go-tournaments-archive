@@ -1,17 +1,16 @@
 'use client';
 import { clsx } from 'clsx';
-import { useCallback, useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 import type { CategoryPlayer, CategoryStats } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
-import { getTranslator } from '@/i18n/translator';
-import { jsxJoin } from '@/libs/join';
+import { getTranslator, translate } from '@/i18n/translator';
+import { createPodiumColumnSorter } from '@/libs/sort';
 import type { KeysMatching } from '@/libs/types';
 import { StatsTable } from '@/components/table/StatsTable';
-import type { StatsColumnDef, StatsSortFn } from '@/components/table/statsTableConfig';
+import type { StatsColumnDef } from '@/components/table/statsTableConfig';
 import { H1 } from '@/components/ui/H1';
-import { PlayerLink } from '@/components/ui/PlayerLink';
-import { PlayerName } from '@/components/ui/PlayerName';
+import { PodiumCell } from '@/components/ui/PodiumCell';
 import { Toggle } from '@/components/ui/Toggle';
 import { YearLink } from '@/components/YearLink';
 
@@ -35,7 +34,6 @@ type MedalKey = KeysMatching<SummaryRow, CategoryPlayer[]>;
 
 export function CategoryResultsTable({ event, translations, stats, className }: CategoryResultsTableProps) {
   const [includeUnsure, setIncludeUnsure] = useState(true);
-  const t = getTranslator(translations);
 
   const data = useMemo(() => {
     const result: SummaryRow[] = [];
@@ -64,57 +62,39 @@ export function CategoryResultsTable({ event, translations, stats, className }: 
 
   const hasUnsure = data.some((r) => r.hasUnsure);
 
-  const sortByFirstPlayer = useCallback<(key: MedalKey) => StatsSortFn<SummaryRow>>(
-    (key) => (a, b) =>
-      (a.original[key][0]?.name ?? '').localeCompare(b.original[key][0]?.name ?? '', translations.locale),
-    [translations.locale]
-  );
-
-  const renderPlayers = useCallback<(key: MedalKey) => StatsColumnDef<SummaryRow>['cell']>(
-    (key) => (info) =>
-      jsxJoin(
-        info.row.original[key].map((p) => (
-          <PlayerLink key={p.id} event={event} playerId={p.id} locale={translations.locale}>
-            <PlayerName player={p} showCountry={event.showCountry} />
-          </PlayerLink>
-        )),
-        ', '
+  const columns = useMemo<StatsColumnDef<SummaryRow>[]>(() => {
+    const t = getTranslator(translations);
+    const podiumColumn = (key: MedalKey, label: string): StatsColumnDef<SummaryRow> => ({
+      accessorFn: (row) => (row[key]?.length ? row[key] : undefined),
+      header: t(label),
+      meta: { className: 'text-left align-top' },
+      cell: (info) => (
+        <PodiumCell
+          event={event}
+          players={info.row.original[key]}
+          locale={translations.locale}
+          isDescending={info.column.getIsSorted() === 'desc'}
+        />
       ),
-    [translations.locale, event]
-  );
+      sortFn: createPodiumColumnSorter(translations.locale),
+      sortUndefined: 'last',
+    });
 
-  const columns = useMemo<StatsColumnDef<SummaryRow>[]>(
-    () => [
+    return [
       {
         accessorKey: 'year',
         header: t('table.year'),
         cell: (info) => <YearLink event={event} year={info.row.original.year} locale={translations.locale} />,
       },
-      {
-        accessorKey: 'gold',
-        header: t('winners.first'),
-        cell: renderPlayers('gold'),
-        sortFn: sortByFirstPlayer('gold'),
-      },
-      {
-        accessorKey: 'silver',
-        header: t('winners.second'),
-        cell: renderPlayers('silver'),
-        sortFn: sortByFirstPlayer('silver'),
-      },
-      {
-        accessorKey: 'bronze',
-        header: t('winners.third'),
-        cell: renderPlayers('bronze'),
-        sortFn: sortByFirstPlayer('bronze'),
-      },
+      podiumColumn('gold', 'winners.first'),
+      podiumColumn('silver', 'winners.second'),
+      podiumColumn('bronze', 'winners.third'),
       {
         accessorKey: 'players',
         header: t('table.players'),
       },
-    ],
-    [t, translations.locale, sortByFirstPlayer, renderPlayers, event]
-  );
+    ];
+  }, [translations, event]);
 
   return (
     <div className={clsx('flex-2 flex-col', className)}>
@@ -122,12 +102,12 @@ export function CategoryResultsTable({ event, translations, stats, className }: 
         actions={
           hasUnsure ? (
             <Toggle checked={includeUnsure} onChange={setIncludeUnsure}>
-              {t('stats.includeUnsurePlayers')}
+              {translate(translations, 'stats.includeUnsurePlayers')}
             </Toggle>
           ) : undefined
         }
       >
-        {t('stats.summary')}
+        {translate(translations, 'stats.summary')}
       </H1>
       <StatsTable data={data} columns={columns} />
     </div>

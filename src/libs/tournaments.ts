@@ -18,7 +18,6 @@ export type TournamentRow = {
   sgfs: number;
 };
 
-export type TournamentSortKey = Exclude<keyof TournamentRow, 'start' | 'end'> | 'dates';
 export type PodiumKey = 'gold' | 'silver' | 'bronze';
 
 export function buildTournamentRows(
@@ -36,27 +35,6 @@ export function buildTournamentRows(
   }
 
   return rows;
-}
-
-export function sortTournamentRows(
-  rows: readonly TournamentRow[],
-  key: TournamentSortKey,
-  descending: boolean,
-  locale: string,
-  countryLabel: (code: string) => string
-): TournamentRow[] {
-  const collator = new Intl.Collator(locale);
-  const direction = descending ? -1 : 1;
-
-  return rows.toSorted((a, b) => {
-    const diff = compareRowValues(a, b, key, collator, direction, countryLabel);
-    return diff || b.year - a.year;
-  });
-}
-
-export function sortPodium(players: readonly Player[], locale: string, descending = false): Player[] {
-  const collator = new Intl.Collator(locale);
-  return players.toSorted((a, b) => comparePlayers(a, b, collator) * (descending ? -1 : 1));
 }
 
 function buildTournamentRow(tournament: Tournament, category?: string, locale = 'en'): TournamentRow | undefined {
@@ -200,79 +178,4 @@ function formatTournamentDates(tournament: Tournament, locale: string): string |
   }
   const date = tournament.start ?? tournament.end;
   return date ? formatDate(date, locale) : undefined;
-}
-
-function comparePlayers(a: Player, b: Player, collator: Intl.Collator): number {
-  return (
-    collator.compare(getSurname(a.name), getSurname(b.name)) ||
-    collator.compare(a.name, b.name) ||
-    a.id.localeCompare(b.id)
-  );
-}
-
-function getSurname(name: string): string {
-  return name.trim().split(/\s+/).slice(1).join(' ') || name;
-}
-
-function isRowValueMissing(row: TournamentRow, key: TournamentSortKey): boolean {
-  if (key === 'dates') {
-    return !row.start && !row.end;
-  }
-  if (key === 'gold' || key === 'silver' || key === 'bronze') {
-    return row[key].length === 0;
-  }
-  return row[key] === undefined || row[key] === '';
-}
-
-function compareRowValues(
-  a: TournamentRow,
-  b: TournamentRow,
-  key: TournamentSortKey,
-  collator: Intl.Collator,
-  direction: number,
-  countryLabel: (code: string) => string
-): number {
-  const aMissing = isRowValueMissing(a, key);
-  const bMissing = isRowValueMissing(b, key);
-  if (aMissing !== bMissing) {
-    return aMissing ? 1 : -1;
-  }
-  if (aMissing && bMissing) {
-    return 0;
-  }
-
-  if (key === 'gold' || key === 'silver' || key === 'bronze') {
-    return comparePodiums(a[key], b[key], collator, direction);
-  }
-
-  if (key === 'dates') {
-    const startDiff = Date.parse(a.start ?? a.end!) - Date.parse(b.start ?? b.end!);
-    const endDiff = Date.parse(a.end ?? a.start!) - Date.parse(b.end ?? b.start!);
-    return (startDiff || endDiff) * direction;
-  }
-
-  if (key === 'country') {
-    return collator.compare(countryLabel(a.country!), countryLabel(b.country!)) * direction;
-  }
-
-  if (key === 'location' || key === 'referee') {
-    return collator.compare(a[key]!, b[key]!) * direction;
-  }
-
-  return (a[key] - b[key]) * direction;
-}
-
-function comparePodiums(a: Player[], b: Player[], collator: Intl.Collator, direction: number): number {
-  const sortedA = a.toSorted((p1, p2) => comparePlayers(p1, p2, collator) * direction);
-  const sortedB = b.toSorted((p1, p2) => comparePlayers(p1, p2, collator) * direction);
-  const length = Math.min(sortedA.length, sortedB.length);
-
-  for (let i = 0; i < length; i++) {
-    const diff = comparePlayers(sortedA[i], sortedB[i], collator) * direction;
-    if (diff) {
-      return diff;
-    }
-  }
-
-  return (sortedA.length - sortedB.length) * direction;
 }

@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import type { Game, LeagueStage, Player, Tournament } from '@/schema/data';
-import { buildTournamentRows, sortPodium, sortTournamentRows, type TournamentRow } from '@/libs/tournaments';
+import { buildTournamentRows } from '@/libs/tournaments';
 import { tournamentsUrl } from '@/libs/urls';
 
 const player = (id: string, name = id): Player => ({ id, name });
@@ -38,10 +38,6 @@ function game(id: string, stage: number, a: string, b: string, sgf?: string): Ga
     props: { sgf },
   };
 }
-function row(overrides: Partial<TournamentRow> = {}): TournamentRow {
-  return { year: 2025, gold: [], silver: [], bronze: [], players: 0, stages: 0, games: 0, sgfs: 0, ...overrides };
-}
-const countryLabel = (code: string) => ({ DE: 'Germany', AT: 'Austria', CH: 'Switzerland' })[code] ?? code;
 
 describe('tournament table rows', () => {
   it('excludes announcements and counts players and games once, excluding BYEs', () => {
@@ -107,77 +103,5 @@ describe('tournament table rows', () => {
     const event = { id: 'pgc', locales: ['en'] as ['en'] };
     assert.equal(tournamentsUrl(event, 'en'), '/en/tournaments');
     assert.equal(tournamentsUrl({ ...event, prefix: 'mp' }, 'pl'), '/mp/pl/tournaments');
-  });
-});
-
-describe('tournament sorting', () => {
-  it('sorts surnames and shared places in both directions without changing the input', () => {
-    const players = [
-      player('z', 'Aaron Zeta'),
-      player('b', 'Zoe Alpha'),
-      player('a', 'Amy Alpha'),
-      player('v', 'Jan van Dijk'),
-    ];
-    assert.deepEqual(
-      sortPodium(players, 'en').map((p) => p.id),
-      ['a', 'b', 'v', 'z']
-    );
-    assert.deepEqual(
-      sortPodium(players, 'en', true).map((p) => p.id),
-      ['z', 'v', 'b', 'a']
-    );
-    assert.equal(players[0].id, 'z');
-    const rows = [
-      row({ year: 2024, gold: [players[0], players[2]] }),
-      row({ year: 2023, gold: [player('m', 'Zoe Middle')] }),
-      row({ year: 2025 }),
-    ];
-    assert.deepEqual(
-      sortTournamentRows(rows, 'gold', false, 'en', countryLabel).map((r) => r.year),
-      [2024, 2023, 2025]
-    );
-    assert.deepEqual(
-      sortTournamentRows(rows, 'gold', true, 'en', countryLabel).map((r) => r.year),
-      [2024, 2023, 2025]
-    );
-  });
-
-  it('uses later shared-place names to break ties, then newest year', () => {
-    const a = player('a', 'Zoe Alpha');
-    const rows = [
-      row({ year: 2020, gold: [a, player('c', 'Amy Charlie')] }),
-      row({ year: 2021, gold: [a, player('b', 'Zoe Beta')] }),
-      row({ year: 2022, gold: [a, player('b', 'Zoe Beta')] }),
-    ];
-    assert.deepEqual(
-      sortTournamentRows(rows, 'gold', false, 'en', countryLabel).map((r) => r.year),
-      [2022, 2021, 2020]
-    );
-  });
-
-  it('sorts numbers numerically, dates chronologically, and countries by translated label', () => {
-    const rows = [
-      row({ year: 2021, games: 10, start: '2021-02-01', end: '2021-02-04', country: 'CH' }),
-      row({ year: 2022, games: 2, start: '2021-02-01', end: '2021-02-03', country: 'AT' }),
-      row({ year: 2023, games: 0, country: 'DE' }),
-    ];
-    assert.deepEqual(
-      sortTournamentRows(rows, 'games', false, 'en', countryLabel).map((r) => r.games),
-      [0, 2, 10]
-    );
-    assert.deepEqual(
-      sortTournamentRows(rows, 'dates', false, 'en', countryLabel).map((r) => r.year),
-      [2022, 2021, 2023]
-    );
-    assert.deepEqual(
-      sortTournamentRows(rows, 'dates', true, 'en', countryLabel).map((r) => r.year),
-      [2021, 2022, 2023]
-    );
-    assert.deepEqual(
-      sortTournamentRows(rows, 'country', false, 'en', countryLabel).map((r) => r.country),
-      ['AT', 'DE', 'CH']
-    );
-    const places = [row({ year: 2021, location: 'Berlin' }), row({ year: 2022 })];
-    assert.equal(sortTournamentRows(places, 'location', true, 'en', countryLabel)[1].year, 2022);
   });
 });
