@@ -83,39 +83,36 @@ export function CategoryResultsTable({ event, translations, stats, className }: 
     [translations.locale, event]
   );
 
-  const columns = useMemo(
-    () =>
-      (
-        [
-          {
-            accessorKey: 'year',
-            header: t('table.year'),
-            cell: (info) => <YearLink event={event} year={info.row.original.year} locale={translations.locale} />,
-          },
-          {
-            accessorKey: 'gold',
-            header: t('winners.first'),
-            cell: renderPlayers('gold'),
-            sortFn: sortByFirstPlayer('gold'),
-          },
-          {
-            accessorKey: 'silver',
-            header: t('winners.second'),
-            cell: renderPlayers('silver'),
-            sortFn: sortByFirstPlayer('silver'),
-          },
-          {
-            accessorKey: 'bronze',
-            header: t('winners.third'),
-            cell: renderPlayers('bronze'),
-            sortFn: sortByFirstPlayer('bronze'),
-          },
-          {
-            accessorKey: 'players',
-            header: t('table.players'),
-          },
-        ] as StatsColumnDef<SummaryRow>[]
-      ).filter(Boolean),
+  const columns = useMemo<StatsColumnDef<SummaryRow>[]>(
+    () => [
+      {
+        accessorKey: 'year',
+        header: t('table.year'),
+        cell: (info) => <YearLink event={event} year={info.row.original.year} locale={translations.locale} />,
+      },
+      {
+        accessorKey: 'gold',
+        header: t('winners.first'),
+        cell: renderPlayers('gold'),
+        sortFn: sortByFirstPlayer('gold'),
+      },
+      {
+        accessorKey: 'silver',
+        header: t('winners.second'),
+        cell: renderPlayers('silver'),
+        sortFn: sortByFirstPlayer('silver'),
+      },
+      {
+        accessorKey: 'bronze',
+        header: t('winners.third'),
+        cell: renderPlayers('bronze'),
+        sortFn: sortByFirstPlayer('bronze'),
+      },
+      {
+        accessorKey: 'players',
+        header: t('table.players'),
+      },
+    ],
     [t, translations.locale, sortByFirstPlayer, renderPlayers, event]
   );
 

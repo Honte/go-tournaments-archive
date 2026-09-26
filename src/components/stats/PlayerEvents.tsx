@@ -77,95 +77,93 @@ export function PlayerEvents({ event, player, translations }: PlayerEventsProps)
   const hasSgfs = data.some((row) => row.sgfs > 0);
 
   const columns = useMemo<StatsColumnDef<EventRow>[]>(
-    () =>
-      (
-        [
-          {
-            accessorKey: 'year',
-            header: t('table.year'),
-            cell: (info) => (
-              <YearLink event={event} locale={translations.locale} year={info.cell.getValue() as number} />
-            ),
-          },
-          hasMultipleStages && {
-            accessorKey: 'stage',
-            header: t('table.stage'),
-            cell: (info) => getStageName(info.row.original.stage, translations),
-          },
-          hasMultipleNames && {
-            accessorKey: 'name',
-            header: t('table.name'),
-          },
-          {
-            accessorKey: 'rank',
-            header: t('table.rank'),
-          },
-          event.showCountry &&
-            hasMultipleCountries && {
-              accessorKey: 'country',
-              header: t('table.country'),
-              cell: (info) => (
-                <CountryLink event={event} code={info.row.original.country} translations={translations} />
-              ),
-            },
-          {
-            accessorKey: 'place',
-            header: t('table.place'),
-          },
-          ...getPlayerAvailableCategories(player, event.categories ?? []).map<StatsColumnDef<EventRow>>((category) => ({
-            id: `category-${category}`,
-            accessorFn: (row) => row.categories?.[category],
-            header: t(`categories.short.${category}`),
-            cell: (info) =>
-              info.row.original.categories?.[category] ?? <span className="text-archive-text-muted/50">–</span>,
-          })),
-          {
-            accessorKey: 'games',
-            header: t('table.games'),
-          },
-          {
-            accessorKey: 'won',
-            header: t('table.won'),
-          },
-          hasDraws && {
-            accessorKey: 'drawn',
-            header: t('table.drawn'),
-          },
-          {
-            accessorKey: 'lost',
-            header: t('table.lost'),
-          },
-          hasUnresolved && {
-            accessorKey: 'unresolved',
-            header: t('table.unresolved'),
-          },
-          hasSgfs && {
-            accessorKey: 'sgfs',
-            header: t('table.sgfs'),
-            cell: ({ row }) => {
-              const categories = Object.keys(row.original.categories ?? {});
-              return (
-                <SgfCountLink
-                  event={event}
-                  locale={translations.locale}
-                  count={row.original.sgfs}
-                  filters={{
-                    player: player.id,
-                    country: row.original.country,
-                    years: [row.original.year],
-                    category: categories.length === 1 ? categories[0] : undefined,
-                  }}
-                />
-              );
-            },
-          },
-          {
-            accessorKey: 'wonPercent',
-            header: t('table.wonPercent'),
-            cell: getFormatter(translations.locale).toPercentageCell,
-          },
-        ] as StatsColumnDef<EventRow>[]
-      ).filter(Boolean),
+    () => [
+      {
+        accessorKey: 'year',
+        header: t('table.year'),
+        cell: (info) => <YearLink event={event} locale={translations.locale} year={info.cell.getValue() as number} />,
+      },
+      {
+        accessorKey: 'stage',
+        header: t('table.stage'),
+        enabled: hasMultipleStages,
+        cell: (info) => getStageName(info.row.original.stage, translations),
+      },
+      {
+        accessorKey: 'name',
+        header: t('table.name'),
+        enabled: hasMultipleNames,
+      },
+      {
+        accessorKey: 'rank',
+        header: t('table.rank'),
+      },
+      {
+        accessorKey: 'country',
+        header: t('table.country'),
+        enabled: Boolean(event.showCountry && hasMultipleCountries),
+        cell: (info) => <CountryLink event={event} code={info.row.original.country} translations={translations} />,
+      },
+      {
+        accessorKey: 'place',
+        header: t('table.place'),
+      },
+      ...getPlayerAvailableCategories(player, event.categories ?? []).map<StatsColumnDef<EventRow>>((category) => ({
+        id: `category-${category}`,
+        accessorFn: (row) => row.categories?.[category],
+        header: t(`categories.short.${category}`),
+        cell: (info) =>
+          info.row.original.categories?.[category] ?? <span className="text-archive-text-muted/50">–</span>,
+      })),
+      {
+        accessorKey: 'games',
+        header: t('table.games'),
+      },
+      {
+        accessorKey: 'won',
+        header: t('table.won'),
+      },
+      {
+        accessorKey: 'drawn',
+        header: t('table.drawn'),
+        enabled: hasDraws,
+      },
+      {
+        accessorKey: 'lost',
+        header: t('table.lost'),
+      },
+      {
+        accessorKey: 'unresolved',
+        header: t('table.unresolved'),
+        enabled: hasUnresolved,
+      },
+      {
+        accessorKey: 'sgfs',
+        header: t('table.sgfs'),
+        enabled: hasSgfs,
+        cell: ({ row }) => {
+          const categories = Object.keys(row.original.categories ?? {});
+          return (
+            <SgfCountLink
+              event={event}
+              locale={translations.locale}
+              count={row.original.sgfs}
+              filters={{
+                player: player.id,
+                country: row.original.country,
+                years: [row.original.year],
+                category: categories.length === 1 ? categories[0] : undefined,
+              }}
+            />
+          );
+        },
+      },
+      {
+        accessorKey: 'wonPercent',
+        header: t('table.wonPercent'),
+        cell: getFormatter(translations.locale).toPercentageCell,
+      },
+    ],
     [
       translations,
       hasMultipleNames,

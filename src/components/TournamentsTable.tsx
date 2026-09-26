@@ -47,6 +47,8 @@ export function TournamentsTable({ event, rows, translations, showSgfs }: Tourna
     [rows, activeSort, locale, t]
   );
 
+  const hasReferee = data.some((row) => row.referee);
+
   const columns = useMemo<StatsColumnDef<TournamentRow>[]>(() => {
     const podiumColumn = (key: PodiumKey, label: string): StatsColumnDef<TournamentRow> => ({
       accessorKey: key,
@@ -72,16 +74,17 @@ export function TournamentsTable({ event, rows, translations, showSgfs }: Tourna
         header: t('table.year'),
         cell: (info) => <YearLink event={event} year={info.row.original.year} locale={locale} />,
       },
-      { accessorKey: 'location', header: t('details.location'), cell: (info) => info.row.original.location ?? '—' },
-      ...(event.showCountry
-        ? [
-            {
-              accessorKey: 'country',
-              header: t('table.country'),
-              cell: (info) => (info.row.original.country ? t(`country.${info.row.original.country}`) : '—'),
-            } satisfies StatsColumnDef<TournamentRow>,
-          ]
-        : []),
+      {
+        accessorKey: 'location',
+        header: t('details.location'),
+        cell: (info) => info.row.original.location ?? '—',
+      },
+      {
+        accessorKey: 'country',
+        header: t('table.country'),
+        enabled: event.showCountry,
+        cell: (info) => (info.row.original.country ? t(`country.${info.row.original.country}`) : '—'),
+      },
       {
         id: 'dates',
         accessorFn: (row) => row.start ?? row.end,
@@ -91,35 +94,42 @@ export function TournamentsTable({ event, rows, translations, showSgfs }: Tourna
       podiumColumn('gold', 'winners.first'),
       podiumColumn('silver', 'winners.second'),
       podiumColumn('bronze', 'winners.third'),
-      { accessorKey: 'players', header: t('table.players'), cell: formatter.toNumericCell },
-      ...(showStages
-        ? [
-            {
-              accessorKey: 'stages',
-              header: t('table.stages'),
-              cell: formatter.toNumericCell,
-            } satisfies StatsColumnDef<TournamentRow>,
-          ]
-        : []),
-      { accessorKey: 'games', header: t('table.games'), cell: formatter.toNumericCell },
-      ...(showSgfs
-        ? [
-            {
-              accessorKey: 'sgfs',
-              header: t('table.sgfs'),
-              cell: ({ row }) => (
-                <SgfCountLink
-                  event={event}
-                  locale={locale}
-                  count={row.original.sgfs}
-                  filters={{ years: [row.original.year], group: 'year-round' }}
-                />
-              ),
-            } satisfies StatsColumnDef<TournamentRow>,
-          ]
-        : []),
+      {
+        accessorKey: 'referee',
+        header: t('details.referee'),
+        enabled: hasReferee,
+      },
+      {
+        accessorKey: 'players',
+        header: t('table.players'),
+        cell: formatter.toNumericCell,
+      },
+      {
+        accessorKey: 'stages',
+        header: t('table.stages'),
+        enabled: showStages,
+        cell: formatter.toNumericCell,
+      },
+      {
+        accessorKey: 'games',
+        header: t('table.games'),
+        cell: formatter.toNumericCell,
+      },
+      {
+        accessorKey: 'sgfs',
+        header: t('table.sgfs'),
+        enabled: showSgfs,
+        cell: ({ row }) => (
+          <SgfCountLink
+            event={event}
+            locale={locale}
+            count={row.original.sgfs}
+            filters={{ years: [row.original.year], group: 'year-round' }}
+          />
+        ),
+      },
     ];
-  }, [event, t, locale, showSgfs, showStages, activeSort, formatter]);
+  }, [event, t, locale, showSgfs, showStages, activeSort, formatter, hasReferee]);
 
   const table = useStatsTable({
     data,

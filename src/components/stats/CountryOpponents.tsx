@@ -87,61 +87,61 @@ export function CountryOpponents({ event, country, translations, category }: Cou
   const hasSgfs = data.some((row) => row.sgfs > 0);
 
   const columns = useMemo<StatsColumnDef<CountryOpponentRow>[]>(
-    () =>
-      (
-        [
-          {
-            accessorKey: 'name',
-            header: t('table.country'),
-            cell: (info) => (
-              <CountryLink
-                event={event}
-                code={info.row.original.code}
-                translations={translations}
-                className="block text-left"
-                full={true}
-              />
-            ),
-          },
-          {
-            accessorKey: 'games',
-            header: t('table.games'),
-          },
-          {
-            accessorKey: 'won',
-            header: t('table.won'),
-          },
-          hasDraws && {
-            accessorKey: 'drawn',
-            header: t('table.drawn'),
-          },
-          {
-            accessorKey: 'lost',
-            header: t('table.lost'),
-          },
-          hasUnresolved && {
-            accessorKey: 'unresolved',
-            header: t('table.unresolved'),
-          },
-          hasSgfs && {
-            accessorKey: 'sgfs',
-            header: t('table.sgfs'),
-            cell: ({ row }) => (
-              <SgfCountLink
-                event={event}
-                locale={translations.locale}
-                count={row.original.sgfs}
-                filters={{ country: country.code, opponentCountry: row.original.code, category }}
-              />
-            ),
-          },
-          {
-            accessorKey: 'wonPercent',
-            header: t('table.wonPercent'),
-            cell: getFormatter(translations.locale).toPercentageCell,
-          },
-        ] as StatsColumnDef<CountryOpponentRow>[]
-      ).filter(Boolean),
+    () => [
+      {
+        accessorKey: 'name',
+        header: t('table.country'),
+        cell: (info) => (
+          <CountryLink
+            event={event}
+            code={info.row.original.code}
+            translations={translations}
+            className="block text-left"
+            full={true}
+          />
+        ),
+      },
+      {
+        accessorKey: 'games',
+        header: t('table.games'),
+      },
+      {
+        accessorKey: 'won',
+        header: t('table.won'),
+      },
+      {
+        accessorKey: 'drawn',
+        header: t('table.drawn'),
+        enabled: hasDraws,
+      },
+      {
+        accessorKey: 'lost',
+        header: t('table.lost'),
+      },
+      {
+        accessorKey: 'unresolved',
+        header: t('table.unresolved'),
+        enabled: hasUnresolved,
+      },
+      {
+        accessorKey: 'sgfs',
+        header: t('table.sgfs'),
+        enabled: hasSgfs,
+        cell: ({ row }) => (
+          <SgfCountLink
+            event={event}
+            locale={translations.locale}
+            count={row.original.sgfs}
+            filters={{ country: country.code, opponentCountry: row.original.code, category }}
+          />
+        ),
+      },
+      {
+        accessorKey: 'wonPercent',
+        header: t('table.wonPercent'),
+        cell: getFormatter(translations.locale).toPercentageCell,
+      },
+    ],
     [translations, t, event, hasDraws, hasUnresolved, hasSgfs, country.code, category]
   );
 

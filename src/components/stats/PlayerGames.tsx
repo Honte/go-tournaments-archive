@@ -82,92 +82,88 @@ export function PlayerGames({ event, player, translations }: PlayerGamesProps) {
   }, [player]);
 
   const columns = useMemo<StatsColumnDef<GameRow>[]>(
-    () =>
-      (
-        [
-          {
-            accessorKey: 'img',
-            header: null,
-            cell: (info) => (
-              <GameViewerTrigger sgfPath={info.row.original.props.sgf!} className="align-middle leading-none">
-                <img
-                  src={gameThumbUrl(event, info.row.original.img)}
-                  alt={t('game.preview', `${player.name} vs ${info.row.original.opponent.name}`)}
-                  className="block size-20 min-w-20 min-h-20"
-                  loading="lazy"
-                />
-              </GameViewerTrigger>
-            ),
-            enableSorting: false,
-          },
-          {
-            accessorKey: 'year',
-            header: t('table.year'),
-            cell: (info) => (
-              <YearLink event={event} locale={translations.locale} year={info.cell.getValue() as number} />
-            ),
-          },
-          {
-            accessorKey: 'rank',
-            header: t('table.rank'),
-          },
-          {
-            accessorKey: 'color',
-            header: t('table.gameColor'),
-            cell: (info) =>
-              info.row.original.color ? <Stone color={info.row.original.color} className="size-4 mx-auto" /> : '?',
-          },
-          {
-            accessorKey: 'won',
-            header: t('table.gameWon'),
-            cell: (info) => (
-              <span className={info.cell.getValue() ? 'font-semibold' : ''}>
-                {info.row.original.unresolved ? '?' : info.cell.getValue() ? '✓' : info.row.original.drawn ? '=' : 'X'}
-              </span>
-            ),
-          },
-          {
-            accessorKey: 'result',
-            header: t('table.gameResult'),
-            cell: (info) => <GameResultLabel result={info.row.original.result} t={t} />,
-          },
-          {
-            accessorKey: 'opponentFirstName',
-            header: t('table.firstName'),
-            cell: (info) => (
-              <PlayerCell
-                event={event}
-                player={info.row.original.opponent}
-                locale={translations.locale}
-                showRank={false}
-                showCountry={false}
-              />
-            ),
-            spanColumns: 2,
-          },
-          {
-            accessorKey: 'opponentLastName',
-            header: t('table.lastName'),
-          },
-          event.showCountry && {
-            accessorKey: 'opponent.country',
-            header: t('table.country'),
-            cell: (info) => (
-              <CountryLink event={event} code={info.row.original.opponent.country} translations={translations} />
-            ),
-          },
-          {
-            accessorKey: 'opponent.rank',
-            header: t('table.rank'),
-          },
-          {
-            accessorKey: 'props',
-            header: null,
-            cell: (info) => <GameActions event={event} props={info.row.original.props} t={t} />,
-            enableSorting: false,
-          },
-        ] as StatsColumnDef<GameRow>[]
-      ).filter(Boolean),
+    () => [
+      {
+        accessorKey: 'img',
+        header: undefined,
+        cell: (info) => (
+          <GameViewerTrigger sgfPath={info.row.original.props.sgf!} className="align-middle leading-none">
+            <img
+              src={gameThumbUrl(event, info.row.original.img)}
+              alt={t('game.preview', `${player.name} vs ${info.row.original.opponent.name}`)}
+              className="block size-20 min-w-20 min-h-20"
+              loading="lazy"
+            />
+          </GameViewerTrigger>
+        ),
+        enableSorting: false,
+      },
+      {
+        accessorKey: 'year',
+        header: t('table.year'),
+        cell: (info) => <YearLink event={event} locale={translations.locale} year={info.cell.getValue() as number} />,
+      },
+      {
+        accessorKey: 'rank',
+        header: t('table.rank'),
+      },
+      {
+        accessorKey: 'color',
+        header: t('table.gameColor'),
+        cell: (info) =>
+          info.row.original.color ? <Stone color={info.row.original.color} className="size-4 mx-auto" /> : '?',
+      },
+      {
+        accessorKey: 'won',
+        header: t('table.gameWon'),
+        cell: (info) => (
+          <span className={info.cell.getValue() ? 'font-semibold' : ''}>
+            {info.row.original.unresolved ? '?' : info.cell.getValue() ? '✓' : info.row.original.drawn ? '=' : 'X'}
+          </span>
+        ),
+      },
+      {
+        accessorKey: 'result',
+        header: t('table.gameResult'),
+        cell: (info) => <GameResultLabel result={info.row.original.result} t={t} />,
+      },
+      {
+        accessorKey: 'opponentFirstName',
+        header: t('table.firstName'),
+        cell: (info) => (
+          <PlayerCell
+            event={event}
+            player={info.row.original.opponent}
+            locale={translations.locale}
+            showRank={false}
+            showCountry={false}
+          />
+        ),
+        spanColumns: 2,
+      },
+      {
+        accessorKey: 'opponentLastName',
+        header: t('table.lastName'),
+      },
+      {
+        accessorKey: 'opponent.country',
+        header: t('table.country'),
+        enabled: event.showCountry,
+        cell: (info) => (
+          <CountryLink event={event} code={info.row.original.opponent.country} translations={translations} />
+        ),
+      },
+      {
+        accessorKey: 'opponent.rank',
+        header: t('table.rank'),
+      },
+      {
+        accessorKey: 'props',
+        header: undefined,
+        cell: (info) => <GameActions event={event} props={info.row.original.props} t={t} />,
+        enableSorting: false,
+      },
+    ],
     [t, player.name, translations, event]
   );
 
