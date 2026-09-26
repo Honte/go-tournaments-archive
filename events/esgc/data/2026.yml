@@ -1,3 +1,34 @@
-website: https://www.tgod.org.tr/esgc2026/
+website:
+  - https://www.tgod.org.tr/esgc2026/
+  - https://www.eurogofed.org/european-student-go-championship-2026-arved-pittner-takes-the-title-in-izmir/
 name: 20th European Student Go Championship
-announcement: Upcoming edition 19th-20th September in Izmir
+stages:
+  - type: tournament
+    file: esgc2026.txt
+    scoringColumns:
+      - category
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - category
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+20.5 round:3 sgf:2026/3-ArvedPittner-OndrejKralik.sgf ogs:https://online-go.com/review/1778993
+      - 1-5 1:B+R round:1 sgf:2026/1-ArvedPittner-FerdinandMarz.sgf ogs:https://online-go.com/review/1778774
+      - 2-3 2:B+R round:4 sgf:2026/4-OndrejKralik-MariannaSzychowiak.sgf ogs:https://online-go.com/review/1779520
+      - 2-6 2:B+R round:2 sgf:2026/2-OndrejKralik-OguzErdogan.sgf ogs:https://online-go.com/review/1778896
+      - 3-1 1:W+R round:2 sgf:2026/2-MariannaSzychowiak-ArvedPittner.sgf ogs:https://online-go.com/review/1778892
+      - 3-4 3:B+R round:3 sgf:2026/3-MariannaSzychowiak-BerkeUner.sgf ogs:https://online-go.com/review/1778990
+      - 3-6 3:B+32.5 round:5 sgf:2026/5-MariannaSzychowiak-OguzErdogan.sgf ogs:https://online-go.com/review/1779671
+      - 4-2 2:W+R round:1 sgf:2026/1-BerkeUner-OndrejKralik.sgf ogs:https://online-go.com/review/1778777
+      - 4-6 4:B+R round:4 sgf:2026/4-BerkeUner-OguzErdogan.sgf ogs:https://online-go.com/review/1779514
+      - 5-2 2:W+R round:5 sgf:2026/5-FerdinandMarz-OndrejKralik.sgf ogs:https://online-go.com/review/1779676
+      - 5-4 4:W+R round:2 sgf:2026/2-FerdinandMarz-BerkeUner.sgf ogs:https://online-go.com/review/1778900
+      - 6-7 6:B+7.5 round:3 sgf:2026/3-OguzErdogan-KevinSantifort.sgf ogs:https://online-go.com/review/1778994
+      - 7-3 3:W+R round:1 sgf:2026/1-KevinSantifort-MariannaSzychowiak.sgf ogs:https://online-go.com/review/1778782
+      - 8-1 1:W+R round:4 sgf:2026/4-UmutUtkuErsahince-ArvedPittner.sgf ogs:https://online-go.com/review/1779523
+      - 9-1 1:W+R round:5 sgf:2026/5-DoganErgezen-ArvedPittner.sgf ogs:https://online-go.com/review/1779673
