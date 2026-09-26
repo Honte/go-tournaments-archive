@@ -81,8 +81,9 @@ function AllCountriesStatsContent({ event, countries, translations }: AllCountri
         .sort(sortTableStats),
     [countries, t]
   );
+
+  const hasSgfs = event.generateSgfs && data.some((country) => country.sgfs > 0);
   const hasDraws = data.some((country) => country.drawn > 0);
-  const hasSgfs = data.some((country) => country.sgfs > 0);
   const hasUnresolved = data.some((row) => row.unresolved > 0);
 
   const columns = useMemo<StatsColumnDef<CountryRow>[]>(

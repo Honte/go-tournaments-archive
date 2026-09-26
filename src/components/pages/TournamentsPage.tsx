@@ -49,7 +49,9 @@ export async function TournamentsPage({ event, locale }: TournamentsPageProps) {
               event={event}
               rows={rows}
               translations={translations}
-              showSgfs={!category && tournaments.some((tournament) => tournament.hasSgfs)}
+              showSgfs={Boolean(
+                event.generateSgfs && !category && tournaments.some((tournament) => tournament.hasSgfs)
+              )}
             />
           </section>
         );

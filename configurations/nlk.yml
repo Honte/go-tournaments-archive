@@ -2,8 +2,8 @@ events:
   - id: nlk
 basePath: /nlk
 config:
-  generateSvgs: false
-  generatePngs: false
+  generateSgfs: true
+  generateRawSgfs: true
   generateJpgs: true
   generateZips: true
   links:

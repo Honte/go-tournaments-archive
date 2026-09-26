@@ -74,7 +74,7 @@ export function PlayerEvents({ event, player, translations }: PlayerEventsProps)
   const hasMultipleStages = new Set(data.map((row) => getStageName(row.stage, translations))).size > 1;
   const hasDraws = data.some((row) => row.drawn > 0);
   const hasUnresolved = data.some((row) => row.unresolved > 0);
-  const hasSgfs = data.some((row) => row.sgfs > 0);
+  const hasSgfs = event.generateSgfs && data.some((row) => row.sgfs > 0);
 
   const columns = useMemo<StatsColumnDef<EventRow>[]>(
     () => [

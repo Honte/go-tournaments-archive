@@ -43,8 +43,8 @@ export default async function buildSgfAssets(input: BuildSgfRequest): Promise<Bu
 
   await mkdir(path.dirname(outputPath), { recursive: true });
   await Promise.all([
-    saveFile(outputPath, cleaned),
-    saveFile(outputPath.replace(/\.sgf$/, '.raw.sgf'), content),
+    event.generateSgfs && saveFile(outputPath, cleaned),
+    event.generateRawSgfs && saveFile(outputPath.replace(/\.sgf$/, '.raw.sgf'), content),
     event.generateSvgs && saveFile(outputPath.replace(/\.sgf$/, '.svg'), svg),
     event.generatePngs && saveFile(outputPath.replace(/\.sgf$/, '.png'), generatePng(svg, THUMB_SIZE)),
     event.generateJpgs && saveFile(outputPath.replace(/\.sgf$/, '.jpg'), generateJpg(svg, THUMB_SIZE)),

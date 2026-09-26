@@ -66,6 +66,10 @@ export function CountryEvents({
     [country, event.categories?.length, showBestOnly, showCategories]
   );
 
+  const hasSgfs = event.generateSgfs && data.some((row) => row.sgfs > 0);
+  const hasDraws = data.some((opponent) => opponent.drawn > 0);
+  const hasUnresolved = data.some((row) => row.unresolved > 0);
+
   const columns = useMemo<StatsColumnDef<CountryEventRow>[]>(
     () => [
       {
@@ -115,7 +119,7 @@ export function CountryEvents({
       {
         accessorKey: 'drawn',
         header: t('table.drawn'),
-        enabled: data.some((row) => row.drawn > 0),
+        enabled: hasDraws,
       },
       {
         accessorKey: 'lost',
@@ -124,12 +128,12 @@ export function CountryEvents({
       {
         accessorKey: 'unresolved',
         header: t('table.unresolved'),
-        enabled: data.some((row) => row.unresolved > 0),
+        enabled: hasUnresolved,
       },
       {
         accessorKey: 'sgfs',
         header: t('table.sgfs'),
-        enabled: data.some((row) => row.sgfs > 0),
+        enabled: hasSgfs,
         cell: ({ row }) => (
           <SgfCountLink
             event={event}
@@ -150,7 +154,7 @@ export function CountryEvents({
         cell: getFormatter(translations.locale).toPercentageCell,
       },
     ],
-    [translations, t, event, showCategories, data, country.code]
+    [translations, t, event, showCategories, country.code, hasSgfs, hasDraws, hasUnresolved]
   );
 
   return (

@@ -2,8 +2,8 @@ events:
   - id: csgc
 basePath: /csgc
 config:
-  generateSvgs: false
-  generatePngs: false
+  generateSgfs: true
+  generateRawSgfs: true
   generateJpgs: true
   generateZips: true
   links:

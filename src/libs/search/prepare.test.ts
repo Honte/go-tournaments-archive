@@ -13,6 +13,7 @@ const event = {
   locales: ['en'],
   prefix: 'test',
   basePath: '/archives',
+  generateSgfs: true,
 } satisfies EventContext;
 
 const translations: Translations = { ...en, locale: 'en' };

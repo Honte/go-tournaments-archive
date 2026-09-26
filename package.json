@@ -6,6 +6,7 @@
   "scripts": {
     "predev": "rimraf .next",
     "dev": "next dev",
+    "dev:test": "cross-env CONFIG=test npm run dev",
     "dev:honte": "cross-env CONFIG=honte npm run dev",
     "dev:europe": "cross-env CONFIG=europe npm run dev",
     "dev:poland": "cross-env CONFIG=poland npm run dev",

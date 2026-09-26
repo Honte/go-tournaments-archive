@@ -23,7 +23,7 @@ type GameProps = {
 export function Game({ event, className, game, players, translations, title, wide }: GameProps) {
   const t = getTranslator(translations);
   const [home, away] = useMemo(() => game.players.map((p) => ({ ...players[p.id], ...p })), [game, players]);
-  const hasSgf = game.props.sgf;
+  const hasSgf = event.generateSgfs && game.props.sgf;
   const hasProps = Object.keys(game.props).length > 0;
   const preview = game.props.jpg ?? game.props.svg ?? game.props.png;
   const gameTitle = t('game.preview', `${title}: ${home.name} vs ${away.name}`);

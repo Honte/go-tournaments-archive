@@ -105,9 +105,10 @@ export function Opponents({ event, translations, player, category }: OpponentsPr
       })
       .sort((a, b) => a.lastName.localeCompare(b.lastName));
   }, [player]);
+
+  const hasSgfs = event.generateSgfs && data.some((row) => row.sgfs > 0);
   const hasDraws = data.some((opponent) => opponent.drawn > 0);
   const hasUnresolved = data.some((row) => row.unresolved > 0);
-  const hasSgfs = data.some((row) => row.sgfs > 0);
 
   const columns = useMemo<StatsColumnDef<OpponentRow>[]>(
     () => [

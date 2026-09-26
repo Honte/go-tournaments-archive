@@ -92,14 +92,17 @@ export async function getSgfAssetOptions(event: EventContext) {
   for (const file of files) {
     const details = path.parse(path.relative(sgfDir, file));
 
-    output.push(
-      {
+    if (event.generateSgfs) {
+      output.push({
         path: [...details.dir.split(path.sep), `${details.name}.sgf`],
-      },
-      {
+      });
+    }
+
+    if (event.generateRawSgfs) {
+      output.push({
         path: [...details.dir.split(path.sep), `${details.name}.raw.sgf`],
-      }
-    );
+      });
+    }
 
     if (event.generateSvgs) {
       output.push({

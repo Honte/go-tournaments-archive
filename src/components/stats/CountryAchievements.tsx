@@ -53,7 +53,7 @@ export function CountryAchievements({ event, country, translations, category }: 
   details[t('table.events')] = Object.keys(country.years).length;
   details[t('table.games')] = country.totalGames;
 
-  if (country.totalSgfs > 0) {
+  if (event.generateSgfs && country.totalSgfs > 0) {
     details[t('table.sgfs')] = (
       <SgfCountLink
         event={event}

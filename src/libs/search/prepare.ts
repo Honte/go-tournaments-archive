@@ -30,7 +30,7 @@ export function prepareSearchOptions(
       primary: `${displayName}${navigationId ? ` (${navigationId})` : ''}`,
       secondary: t('search.types.country'),
       href: countryUrl(event, locale, navigationId),
-      gamesHref: gameCount ? allGameStatsForCountryUrl(event, locale, navigationId) : undefined,
+      gamesHref: event.generateSgfs && gameCount ? allGameStatsForCountryUrl(event, locale, navigationId) : undefined,
       gamesLabel: gameCount ? t('search.games', String(gameCount)) : undefined,
     });
 
@@ -72,7 +72,7 @@ export function prepareSearchOptions(
         primary: `${displayName}${country ? ` (${country})` : ''}`,
         secondary: t('search.types.player'),
         href: playerUrl(event, locale, navigationId),
-        gamesHref: gameCount ? allGameStatsForPlayerUrl(event, locale, navigationId) : undefined,
+        gamesHref: event.generateSgfs && gameCount ? allGameStatsForPlayerUrl(event, locale, navigationId) : undefined,
         gamesLabel: gameCount ? t('search.games', String(gameCount)) : undefined,
       })
     );

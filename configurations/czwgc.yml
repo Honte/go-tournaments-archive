@@ -2,8 +2,8 @@ events:
   - id: czwgc
 basePath: /czwgc
 config:
-  generateSvgs: false
-  generatePngs: false
+  generateSgfs: true
+  generateRawSgfs: true
   generateJpgs: true
   generateZips: true
   links:

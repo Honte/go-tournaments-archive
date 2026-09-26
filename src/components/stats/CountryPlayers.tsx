@@ -94,8 +94,9 @@ export function CountryPlayers({ event, country, translations, category }: Count
 
     return list.sort(sortTableStats);
   }, [country]);
+
+  const hasSgfs = event.generateSgfs && data.some((player) => player.sgfs > 0);
   const hasDraws = data.some((player) => player.drawn > 0);
-  const hasSgfs = data.some((player) => player.sgfs > 0);
   const hasUnresolved = data.some((row) => row.unresolved > 0);
 
   const columns = useMemo<StatsColumnDef<CountryPlayerRow>[]>(

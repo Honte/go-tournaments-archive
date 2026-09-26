@@ -84,7 +84,7 @@ export function CountryOpponents({ event, country, translations, category }: Cou
   }, [country, t]);
   const hasDraws = data.some((opponent) => opponent.drawn > 0);
   const hasUnresolved = data.some((row) => row.unresolved > 0);
-  const hasSgfs = data.some((row) => row.sgfs > 0);
+  const hasSgfs = event.generateSgfs && data.some((row) => row.sgfs > 0);
 
   const columns = useMemo<StatsColumnDef<CountryOpponentRow>[]>(
     () => [

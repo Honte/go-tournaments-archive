@@ -101,7 +101,7 @@ function AllPlayersStatsContent({ event, players, translations }: AllPlayersStat
     [players]
   );
 
-  const hasSgfs = data.some((p) => p.sgfs > 0);
+  const hasSgfs = event.generateSgfs && data.some((p) => p.sgfs > 0);
   const hasDraws = data.some((p) => p.drawn > 0);
   const hasUnresolved = data.some((row) => row.unresolved > 0);
 

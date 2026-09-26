@@ -16,14 +16,16 @@ type GameActionProps = {
 export function GameActions({ event, t, props, showViewer, showOriginal = false }: GameActionProps) {
   return (
     <div className="flex gap-2 mt-1">
-      {showViewer && props.sgf && <GameViewerButton sgfPath={props.sgf}>{t('game.open')}</GameViewerButton>}
+      {event.generateSgfs && showViewer && props.sgf && (
+        <GameViewerButton sgfPath={props.sgf}>{t('game.open')}</GameViewerButton>
+      )}
 
-      {props.sgf && (
+      {event.generateSgfs && props.sgf && (
         <ExternalButton url={gameSgfUrl(event, props.sgf)} title={t('game.sgf')}>
           SGF
         </ExternalButton>
       )}
-      {props.sgf && showOriginal && (
+      {event.generateRawSgfs && props.sgf && showOriginal && (
         <ExternalButton url={rawGameSgfUrl(event, props.sgf)} title={t('game.rawSgf')}>
           {t('game.raw')}
         </ExternalButton>

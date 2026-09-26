@@ -58,7 +58,7 @@ export function Achievements({ event, player, translations, category }: Achievem
   details[t('table.events')] = player.results.length;
   details[t('table.games')] = player.totalGames;
 
-  if (player.totalSgfs > 0) {
+  if (event.generateSgfs && player.totalSgfs > 0) {
     details[t('table.sgfs')] = (
       <SgfCountLink
         event={event}

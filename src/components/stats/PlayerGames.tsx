@@ -167,7 +167,7 @@ export function PlayerGames({ event, player, translations }: PlayerGamesProps) {
     [t, player.name, translations, event]
   );
 
-  if (!data.length) {
+  if (!event.generateSgfs || !data.length) {
     return null;
   }
 

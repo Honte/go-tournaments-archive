@@ -2,6 +2,8 @@ events:
   - id: kpmc
     domain: https://kpmc.go.art.pl
 config:
+  generateSgfs: true
+  generateRawSgfs: true
   generateSvgs: false
   generatePngs: false
   generateJpgs: true

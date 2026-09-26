@@ -1,0 +1,9 @@
+events:
+  - id: wagc
+config:
+  generateSvgs: false
+  generatePngs: false
+  generateJpgs: false
+  generateZips: true
+  generateSgfs: false
+  generateRawSgfs: false

@@ -2,6 +2,8 @@ events:
   - id: pwgc
     domain: https://mpk.go.art.pl
 config:
+  generateSgfs: true
+  generateRawSgfs: true
   generateSvgs: false
   generatePngs: false
   generateJpgs: true
