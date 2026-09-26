@@ -48,3 +48,5 @@ stages:
     excluded: true
     collapsed: true
     findSharedPlaces: false
+    games:
+      - 31-11 31:B+R round:3 sgf:1987/open/3-GillesZemor-FrankJanssen.sgf

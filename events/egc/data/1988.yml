@@ -15,6 +15,8 @@ stages:
     columns:
       - wins
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:3 sgf:1988/playoff/3-TiborPocsai-RonaldSchlemper.sgf
   - type: tournament
     file: egc1988open100.txt
     name: EGC Open
@@ -35,5 +37,8 @@ stages:
     collapsed: true
     findSharedPlaces: true
     games:
+      - 3-17 17:W+R round:5 sgf:1988/open/5-RonaldSchlemper-HelmutHasibeder.sgf
+      - 13-9 9:W+1.5 round:2 sgf:1988/open/2-AlexejLazarev-FrankJanssen.sgf
+      - 20-9 9:W+R round:5 sgf:1988/open/5-GeraldWesthoff-FrankJanssen.sgf
       - 21-88 21:B+R round:1 sgf:1988/open/1-MatthewMacfadyen-TonnyClaasen.sgf
       - 22-32 32:W+R round:5 sgf:1988/open/5-ManfredWimmer-VladimirDanek.sgf

@@ -1,0 +1,6 @@
+; EV[European Go Congress 1985 - Playoff]
+; PC[NL, Terschelling]
+; DT[1985-08-02,1985-08-02]
+   1 Macfadyen Matthew              6d UK  xxx 1 2+
+   2 Colmez Pierre                  6d FR  xxx 0 1- 
+   
