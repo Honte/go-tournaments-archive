@@ -1,6 +1,6 @@
 ; CL[A]
 ; EV[20th European Student Go Championship]
-; PC[TR, Irmir]
+; PC[TR, Izmir]
 ; DT[2026-09-19,2026-09-20]
 ; HA[h9]
 ; KM[6.5]
