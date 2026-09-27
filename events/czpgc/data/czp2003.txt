@@ -1,0 +1,8 @@
+;https://cs.wikipedia.org/wiki/%C4%8Cesk%C3%A1_asociace_go
+;only medalists available
+; PC[CZ, Praha]
+; DT[2003-12-06,2003-12-07]
+1 Zaloudkova Klara  Dach Zbynek    30k CZ xxx 1 0+ |10798106|10233872
+2 Simunkova Martina Hora Jan       30k CZ xxx 2 0+ |10298904|10401083
+3 Dankova Lenka     Danek Vladimir 30k CZ xxx 3 0+ |10513063|10213016
+4 Jurkova Ingrid    Jurek Martin   30k CZ xxx 3 0+ |12362152|10213753

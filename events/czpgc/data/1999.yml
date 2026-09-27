@@ -1,0 +1,11 @@
+website: https://web.archive.org/web/20071030034336/http://www.czech-go.net/tour/1999/t990320.php
+stages:
+  - type: tournament
+    name: Championship
+    file: czp1999.txt
+    notes: recreated from the final places, there was also handicap section (6 pairs) won by Lenka Kuzvartova and Ivan Kostka
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true

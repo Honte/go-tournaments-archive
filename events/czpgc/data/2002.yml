@@ -1,0 +1,11 @@
+website: https://web.archive.org/web/20080906111740/http://www.czech-go.net/tour/2002/t021130.php
+stages:
+  - type: tournament
+    name: Championship
+    file: czp2002.txt
+    notes: recreated from available data
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true

@@ -1,0 +1,17 @@
+website: https://goweb.cz/turnaj/mr-paru-2017/
+stages:
+  - type: tournament
+    name: Championship
+    file: czp2017.txt
+    scoringColumns:
+      - wins
+      - null
+      - sos
+      - sosos
+      - direct
+    breakers:
+      - wins
+      - sos
+      - sosos
+      - direct
+    findSharedPlaces: true

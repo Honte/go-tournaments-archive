@@ -1,0 +1,13 @@
+website: http://so-imba.com/egoban/posts/praha-29-3011-mr-paru-berlin-kranich.html
+stages:
+  - type: tournament
+    name: Championship
+    file: czp2008.txt
+    notes: recreated from available data
+    scoringColumns:
+      - wins
+      - direct
+    breakers:
+      - wins
+      - direct
+    findSharedPlaces: true

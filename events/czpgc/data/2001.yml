@@ -1,0 +1,11 @@
+website: https://web.archive.org/web/20090225072416/http://www.goweb.cz/ogo/sin_slavy/mrparu
+stages:
+  - type: tournament
+    name: Championship
+    file: czp2001.txt
+    notes: only champions names are available
+    scoringColumns:
+      - place
+    breakers:
+      - place
+    findSharedPlaces: true

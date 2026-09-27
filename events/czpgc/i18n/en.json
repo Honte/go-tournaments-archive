@@ -1,0 +1,16 @@
+{
+  "site": {
+    "name": "Czech Pair Go Championships Archive",
+    "acronym": "CZPGC",
+    "description": "Archive of all Czech Pair Championships tournaments",
+    "yearDescription": "Results of CZPGC %{0}",
+    "allTimeStatsDescription": "All-time statistics of all Czech Pair Go Championships participants",
+    "playerStatsDescription": "Participation statistics of %{0} in all Czech Pair Go Championships events"
+  },
+  "details": {
+    "goToWebsite": "Go to CZPGC %{0} website"
+  },
+  "winners": {
+    "first": "Czech Pair Champion"
+  }
+}

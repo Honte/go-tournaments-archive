@@ -1,0 +1,14 @@
+;https://goweb.cz/2018/02/mistrovstvi-republiky-paru-2018/
+; PC[CZ,Praha]
+; DT[2018-02-17,2018-02-18]
+;Place	Name	Club	Level	Score	1	2	3	4	5	Points	SOS	SODOS
+1	Zaloudkova Klara     Hora Jan   		4D CZ xxx	5	7+	5+	3+	2+	4+	5	15	15 |10798106|10401083
+2	Bartova Jitka        Silt Ondrej		4D CZ xxx	4	10+	4+	8+	1-	3+	4	13	8  |13849748|10337481
+3	Tomsu Adriana        Podpera Lukas		4D CZ xxx	3	9+	6+	1-	5+	2-	3	15	6  |16225396|13201914
+4	Simunkova Martina    Kuzela Martin		2D CZ xxx	3	6+	2-	7+	8+	1-	3	15	6  |10298904|10250702
+5	Kotowski Tereza      Prokop Jan	    	3D CZ xxx	3	8+	1-	9+	3-	6+	3	13	5  |15401364|10433654
+6	Waczulikova Kristina Kachyna Ondrej		5K CZ xxx	2	4-	3-	10+	7+	5-	2	11	2  |13001659|14725876
+7	Vasova Dita          Defer Tristan		2K CZ xxx	2	1-	10+	4-	6-	9+	2	11	1  |15749921|16486074
+8	Vlckova Tereza       Kruml Ondrej		4K CZ xxx	2	5-	9+	2-	4-	10+! 2	11	1  |15333241|10886524
+9	Dankova Lenkova      Nemcok Michal		3K CZ xxx	1	3-	8-	5-	10+! 7-	1	10	0  |10513063|16901852
+10	Bukovska Anezka      Jansky Dusan		3K CZ xxx	0	2-	7-	6-	9-!	8-!	0	11	0  |15874947|15862946

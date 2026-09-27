@@ -1,0 +1,15 @@
+website: https://goweb.cz/2018/02/mistrovstvi-republiky-paru-2018/
+stages:
+  - type: tournament
+    name: Championship
+    file: czp2018.txt
+    scoringColumns:
+      - wins
+      - null
+      - sos
+      - sodos
+    breakers:
+      - wins
+      - sos
+      - sodos
+    findSharedPlaces: true

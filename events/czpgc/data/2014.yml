@@ -1,0 +1,18 @@
+website:
+  - http://so-imba.com/egoban/posts/praha-8-9-3-mr-paru-2014.html
+  - https://goweb.cz/turnaj/mr-paru-2014/
+stages:
+  - type: tournament
+    name: Championship
+    file: czp2014.txt
+    scoringColumns:
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - wins
+      - sos
+      - sodos
+    findSharedPlaces: true
+    games:
+      - 3-1 3:B+R round:1 sgf:2014/1-DitaVasovaLukasPodpera-KlaraZaloudkovaJanHora.sgf
