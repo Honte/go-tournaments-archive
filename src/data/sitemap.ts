@@ -82,7 +82,7 @@ export async function buildSitemap(
     });
   }
 
-  if (tournaments.some((tournament) => tournament.hasSgfs)) {
+  if (event.generateSgfs && tournaments.some((tournament) => tournament.hasSgfs)) {
     main.push({
       key: 'games',
       href: allGameStatsUrl(event, locale),

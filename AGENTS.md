@@ -135,9 +135,12 @@ directly, for example `.\node_modules\.bin\tsc.cmd --noEmit` on Windows.
 
 - TypeScript is strict and ESM-based.
 - Prefer named function declarations over arrow functions assigned to variables at the top level of a file.
-  Inline callbacks can remain arrow functions.
-- Put the most important functions and public entrypoints near the top of files, after imports and required types.
-  Place supporting helpers below their callers, taking advantage of function declaration hoisting.
+- Keep arrow callbacks small, ideally one line. Move larger or reusable callbacks into named utility functions.
+- Avoid creating inline functions inside loops; define a named helper outside the loop when needed.
+- Prefer one `for...of` pass over chains of `map`, `filter`, and `reduce` when building derived collections.
+- Avoid `flatMap`, especially when using it to merge conditional results.
+- Put exported functions and public entrypoints near the top of files, with the most important first. Put supporting utilities at the end.
+- Place required types after imports and before exported functions; keep private helper types near the helpers that use them.
 - Use existing path aliases instead of deep relative imports when the surrounding code does.
 - Keep imports compatible with the configured `oxfmt` ordering.
 - Formatting uses `oxfmt` with single quotes, semicolons, trailing commas where configured, and `printWidth` 120.

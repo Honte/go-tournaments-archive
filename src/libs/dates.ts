@@ -1,17 +1,17 @@
 import { TournamentDateSpan } from '@/schema/data';
 
-export function formatDate(date: Date | string, locale: string) {
+export function formatDate(date: Date | string, locale: string | undefined, long = true) {
   return new Intl.DateTimeFormat(locale, {
     day: 'numeric',
-    month: 'long',
+    month: long ? 'long' : 'numeric',
     year: 'numeric',
   }).format(new Date(date));
 }
 
-export function formatRange(start: Date | string, end: Date | string, locale: string) {
+export function formatRange(start: Date | string, end: Date | string, locale: string | undefined, long = true) {
   return new Intl.DateTimeFormat(locale, {
     day: 'numeric',
-    month: 'long',
+    month: long ? 'long' : 'numeric',
     year: 'numeric',
   }).formatRange(new Date(start), new Date(end));
 }

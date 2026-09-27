@@ -1,23 +1,23 @@
 'use client';
 
-import type { SortingState } from '@tanstack/react-table';
-import { useMemo, useState } from 'react';
+import dynamic from 'next/dynamic';
+import { useMemo } from 'react';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getFormatter } from '@/i18n/formatter';
 import { getTranslator } from '@/i18n/translator';
+import { formatDate, formatRange } from '@/libs/dates';
 import {
-  sortPodium,
-  sortTournamentRows,
-  type PodiumKey,
-  type TournamentRow,
-  type TournamentSortKey,
-} from '@/libs/tournaments';
+  createCountryColumnSorter,
+  createDateRangeColumnSorter,
+  createLocaleColumnSorter,
+  createPodiumColumnSorter,
+} from '@/libs/sort';
+import type { PodiumKey, TournamentRow } from '@/libs/tournaments';
 import { SgfCountLink } from '@/components/gameRecords/SgfCountLink';
-import { useStatsTable, type StatsColumnDef } from '@/components/table/statsTableConfig';
-import { TableHeader } from '@/components/table/TableHeader';
-import { TableRow } from '@/components/table/TableRow';
-import { PlayerCell } from '@/components/ui/PlayerCell';
+import { StatsTable } from '@/components/table/StatsTable';
+import type { StatsColumnDef } from '@/components/table/statsTableConfig';
+import { PodiumCell } from '@/components/ui/PodiumCell';
 import { YearLink } from '@/components/YearLink';
 
 type TournamentsTableProps = {
@@ -27,43 +27,34 @@ type TournamentsTableProps = {
   showSgfs: boolean;
 };
 
+const INITIAL_STATE = {
+  sorting: [{ id: 'year', desc: true }],
+};
+
+const ClientDateCell = dynamic(() => Promise.resolve(DateCell), { ssr: false });
+
 export function TournamentsTable({ event, rows, translations, showSgfs }: TournamentsTableProps) {
-  const [sorting, setSorting] = useState<SortingState>([{ id: 'year', desc: true }]);
   const t = useMemo(() => getTranslator(translations), [translations]);
   const locale = translations.locale;
   const formatter = useMemo(() => getFormatter(locale), [locale]);
-  const activeSort = sorting[0];
   const showStages = rows.some((row) => row.stages !== rows[0]?.stages);
-
-  const data = useMemo(
-    () =>
-      sortTournamentRows(
-        rows,
-        (activeSort?.id ?? 'year') as TournamentSortKey,
-        activeSort?.desc ?? true,
-        locale,
-        (code) => t(`country.${code}`)
-      ),
-    [rows, activeSort, locale, t]
-  );
+  const hasReferee = rows.some((row) => row.referee);
 
   const columns = useMemo<StatsColumnDef<TournamentRow>[]>(() => {
     const podiumColumn = (key: PodiumKey, label: string): StatsColumnDef<TournamentRow> => ({
-      accessorKey: key,
+      accessorFn: (row) => (row[key]?.length ? row[key] : undefined),
       header: t(label),
       meta: { className: 'text-left align-top' },
-      cell: (info) => {
-        const players = sortPodium(info.row.original[key], locale, activeSort?.id === key && activeSort.desc);
-        return players.length ? (
-          <div className="flex flex-col gap-1">
-            {players.map((player) => (
-              <PlayerCell key={player.id} event={event} player={player} locale={locale} />
-            ))}
-          </div>
-        ) : (
-          '—'
-        );
-      },
+      cell: (info) => (
+        <PodiumCell
+          event={event}
+          players={info.row.original[key]}
+          locale={locale}
+          isDescending={info.column.getIsSorted() === 'desc'}
+        />
+      ),
+      sortFn: createPodiumColumnSorter(locale),
+      sortUndefined: 'last',
     });
 
     return [
@@ -72,76 +63,77 @@ export function TournamentsTable({ event, rows, translations, showSgfs }: Tourna
         header: t('table.year'),
         cell: (info) => <YearLink event={event} year={info.row.original.year} locale={locale} />,
       },
-      { accessorKey: 'location', header: t('details.location'), cell: (info) => info.row.original.location ?? '—' },
-      ...(event.showCountry
-        ? [
-            {
-              accessorKey: 'country',
-              header: t('table.country'),
-              cell: (info) => (info.row.original.country ? t(`country.${info.row.original.country}`) : '—'),
-            } satisfies StatsColumnDef<TournamentRow>,
-          ]
-        : []),
+      {
+        accessorKey: 'location',
+        header: t('details.location'),
+        cell: (info) => info.row.original.location ?? '—',
+        sortFn: createLocaleColumnSorter(locale),
+        sortUndefined: 'last',
+      },
+      {
+        accessorKey: 'country',
+        header: t('table.country'),
+        enabled: event.showCountry,
+        cell: (info) => (info.row.original.country ? t(`country.${info.row.original.country}`) : '—'),
+        sortFn: createCountryColumnSorter((code) => t(`country.${code}`), locale),
+      },
       {
         id: 'dates',
         accessorFn: (row) => row.start ?? row.end,
         header: t('stage.date'),
-        cell: (info) => info.row.original.dates ?? '—',
+        cell: (info) => <ClientDateCell start={info.row.original.start} end={info.row.original.end} />,
+        sortFn: createDateRangeColumnSorter(),
       },
       podiumColumn('gold', 'winners.first'),
       podiumColumn('silver', 'winners.second'),
       podiumColumn('bronze', 'winners.third'),
-      { accessorKey: 'players', header: t('table.players'), cell: formatter.toNumericCell },
-      ...(showStages
-        ? [
-            {
-              accessorKey: 'stages',
-              header: t('table.stages'),
-              cell: formatter.toNumericCell,
-            } satisfies StatsColumnDef<TournamentRow>,
-          ]
-        : []),
-      { accessorKey: 'games', header: t('table.games'), cell: formatter.toNumericCell },
-      ...(showSgfs
-        ? [
-            {
-              accessorKey: 'sgfs',
-              header: t('table.sgfs'),
-              cell: ({ row }) => (
-                <SgfCountLink
-                  event={event}
-                  locale={locale}
-                  count={row.original.sgfs}
-                  filters={{ years: [row.original.year], group: 'year-round' }}
-                />
-              ),
-            } satisfies StatsColumnDef<TournamentRow>,
-          ]
-        : []),
+      {
+        accessorKey: 'referee',
+        header: t('details.referee'),
+        enabled: hasReferee,
+        cell: (info) => info.row.original.referee ?? '—',
+        sortFn: createLocaleColumnSorter(locale),
+        sortUndefined: 'last',
+      },
+      {
+        accessorKey: 'players',
+        header: t('table.players'),
+        cell: formatter.toNumericCell,
+      },
+      {
+        accessorKey: 'stages',
+        header: t('table.stages'),
+        enabled: showStages,
+        cell: formatter.toNumericCell,
+      },
+      {
+        accessorKey: 'games',
+        header: t('table.games'),
+        cell: formatter.toNumericCell,
+      },
+      {
+        accessorKey: 'sgfs',
+        header: t('table.sgfs'),
+        enabled: showSgfs,
+        cell: ({ row }) => (
+          <SgfCountLink
+            event={event}
+            locale={locale}
+            count={row.original.sgfs}
+            filters={{ years: [row.original.year], group: 'year-round' }}
+          />
+        ),
+      },
     ];
-  }, [event, t, locale, showSgfs, showStages, activeSort, formatter]);
+  }, [event, t, locale, showSgfs, showStages, formatter, hasReferee]);
 
-  const table = useStatsTable({
-    data,
-    columns,
-    state: { sorting },
-    onSortingChange: setSorting,
-    manualSorting: true,
-    enableMultiSort: false,
-    enableSortingRemoval: false,
-    sortDescFirst: false,
-  });
+  return <StatsTable data={rows} columns={columns} initialState={INITIAL_STATE} />;
+}
 
-  return (
-    <div className="w-full overflow-x-auto">
-      <table className="min-w-full table-auto border-collapse">
-        <TableHeader table={table} />
-        <tbody>
-          {table.getRowModel().rows.map((row) => (
-            <TableRow key={row.id} row={row} className="even:bg-archive-row-stripe" />
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
+function DateCell({ start, end }: Pick<TournamentRow, 'start' | 'end'>) {
+  const date = start ?? end;
+  const dates =
+    start && end ? formatRange(start, end, undefined, false) : date ? formatDate(date, undefined, false) : '—';
+
+  return <span className="text-nowrap">{dates}</span>;
 }

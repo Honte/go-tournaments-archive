@@ -111,8 +111,8 @@ events:
         prefix: wgl
 crossLinks: internal
 config:
-  generateSvgs: false
-  generatePngs: false
+  generateSgfs: true
+  generateRawSgfs: true
   generateJpgs: true
   generateZips: true
   trailingSlash: true

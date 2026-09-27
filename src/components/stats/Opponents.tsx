@@ -105,65 +105,66 @@ export function Opponents({ event, translations, player, category }: OpponentsPr
       })
       .sort((a, b) => a.lastName.localeCompare(b.lastName));
   }, [player]);
+
+  const hasSgfs = event.generateSgfs && data.some((row) => row.sgfs > 0);
   const hasDraws = data.some((opponent) => opponent.drawn > 0);
   const hasUnresolved = data.some((row) => row.unresolved > 0);
-  const hasSgfs = data.some((row) => row.sgfs > 0);
 
   const columns = useMemo<StatsColumnDef<OpponentRow>[]>(
-    () =>
-      (
-        [
-          {
-            accessorKey: 'firstName',
-            header: t('table.firstName'),
-            cell: (info) => (
-              <PlayerCell event={event} player={info.row.original} locale={translations.locale} showRank={false} />
-            ),
-            spanColumns: 2,
-          },
-          {
-            accessorKey: 'lastName',
-            header: t('table.lastName'),
-          },
-          {
-            accessorKey: 'games',
-            header: t('table.games'),
-          },
-          {
-            accessorKey: 'won',
-            header: t('table.won'),
-          },
-          hasDraws && {
-            accessorKey: 'drawn',
-            header: t('table.drawn'),
-          },
-          {
-            accessorKey: 'lost',
-            header: t('table.lost'),
-          },
-          hasUnresolved && {
-            accessorKey: 'unresolved',
-            header: t('table.unresolved'),
-          },
-          hasSgfs && {
-            accessorKey: 'sgfs',
-            header: t('table.sgfs'),
-            cell: ({ row }) => (
-              <SgfCountLink
-                event={event}
-                locale={translations.locale}
-                count={row.original.sgfs}
-                filters={{ player: player.id, opponent: row.original.id, category }}
-              />
-            ),
-          },
-          {
-            accessorKey: 'wonPercent',
-            header: t('table.wonPercent'),
-            cell: getFormatter(translations.locale).toPercentageCell,
-          },
-        ] as StatsColumnDef<OpponentRow>[]
-      ).filter(Boolean),
+    () => [
+      {
+        accessorKey: 'firstName',
+        header: t('table.firstName'),
+        cell: (info) => (
+          <PlayerCell event={event} player={info.row.original} locale={translations.locale} showRank={false} />
+        ),
+        spanColumns: 2,
+      },
+      {
+        accessorKey: 'lastName',
+        header: t('table.lastName'),
+      },
+      {
+        accessorKey: 'games',
+        header: t('table.games'),
+      },
+      {
+        accessorKey: 'won',
+        header: t('table.won'),
+      },
+      {
+        accessorKey: 'drawn',
+        header: t('table.drawn'),
+        enabled: hasDraws,
+      },
+      {
+        accessorKey: 'lost',
+        header: t('table.lost'),
+      },
+      {
+        accessorKey: 'unresolved',
+        header: t('table.unresolved'),
+        enabled: hasUnresolved,
+      },
+      {
+        accessorKey: 'sgfs',
+        header: t('table.sgfs'),
+        enabled: hasSgfs,
+        cell: ({ row }) => (
+          <SgfCountLink
+            event={event}
+            locale={translations.locale}
+            count={row.original.sgfs}
+            filters={{ player: player.id, opponent: row.original.id, category }}
+          />
+        ),
+      },
+      {
+        accessorKey: 'wonPercent',
+        header: t('table.wonPercent'),
+        cell: getFormatter(translations.locale).toPercentageCell,
+      },
+    ],
     [translations, t, event, hasDraws, hasUnresolved, hasSgfs, player.id, category]
   );
 

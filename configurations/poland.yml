@@ -33,8 +33,8 @@ events:
         prefix: wgl
 crossLinks: true
 config:
-  generateSvgs: false
-  generatePngs: false
+  generateSgfs: true
+  generateRawSgfs: true
   generateJpgs: true
   generateZips: true
   links:

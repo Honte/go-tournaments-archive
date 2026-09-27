@@ -2,7 +2,7 @@ events:
   - id: ${EVENT}
 basePath: ${BASE_PATH}
 config:
-  generateSvgs: false
-  generatePngs: false
+  generateSgfs: true
+  generateRawSgfs: true
   generateJpgs: true
   generateZips: true

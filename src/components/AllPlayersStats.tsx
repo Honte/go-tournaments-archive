@@ -101,103 +101,105 @@ function AllPlayersStatsContent({ event, players, translations }: AllPlayersStat
     [players]
   );
 
-  const hasSgfs = data.some((p) => p.sgfs > 0);
+  const hasSgfs = event.generateSgfs && data.some((p) => p.sgfs > 0);
   const hasDraws = data.some((p) => p.drawn > 0);
   const hasUnresolved = data.some((row) => row.unresolved > 0);
 
   const columns = useMemo<StatsColumnDef<PlayerRow>[]>(
-    () =>
-      (
-        [
-          {
-            accessorKey: 'firstName',
-            header: t('table.firstName'),
-            cell: (info) => (
-              <PlayerCell
-                event={event}
-                player={info.row.original}
-                locale={translations.locale}
-                showRank={false}
-                showCountry={false}
-              />
-            ),
-            spanColumns: 2,
-          },
-          {
-            accessorKey: 'lastName',
-            header: t('table.lastName'),
-          },
-          event.showCountry && {
-            accessorKey: 'country',
-            header: t('table.country'),
-            cell: (info) =>
-              jsxJoin(
-                info.row.original.countries.map((code) => (
-                  <CountryLink event={event} key={code} translations={translations} code={code} />
-                )),
-                ', '
-              ),
-          },
-          event.showBestPlace && {
-            accessorKey: 'bestPlace',
-            header: t('table.best'),
-            cell: formatter.toNumericCell,
-          },
-          {
-            accessorKey: 'gold',
-            header: t('medals.gold'),
-          },
-          {
-            accessorKey: 'silver',
-            header: t('medals.silver'),
-          },
-          {
-            accessorKey: 'bronze',
-            header: t('medals.bronze'),
-          },
-          {
-            accessorKey: 'attended',
-            header: t('table.events'),
-          },
-          {
-            accessorKey: 'games',
-            header: t('table.games'),
-          },
-          {
-            accessorKey: 'won',
-            header: t('table.won'),
-          },
-          hasDraws && {
-            accessorKey: 'drawn',
-            header: t('table.drawn'),
-          },
-          {
-            accessorKey: 'lost',
-            header: t('table.lost'),
-          },
-          hasUnresolved && {
-            accessorKey: 'unresolved',
-            header: t('table.unresolved'),
-          },
-          hasSgfs && {
-            accessorKey: 'sgfs',
-            header: t('table.sgfs'),
-            cell: ({ row }) => (
-              <SgfCountLink
-                event={event}
-                locale={translations.locale}
-                count={row.original.sgfs}
-                filters={{ player: row.original.id }}
-              />
-            ),
-          },
-          {
-            accessorKey: 'wonPercent',
-            header: t('table.wonPercent'),
-            cell: formatter.toPercentageCell,
-          },
-        ] as StatsColumnDef<PlayerRow>[]
-      ).filter(Boolean),
+    () => [
+      {
+        accessorKey: 'firstName',
+        header: t('table.firstName'),
+        cell: (info) => (
+          <PlayerCell
+            event={event}
+            player={info.row.original}
+            locale={translations.locale}
+            showRank={false}
+            showCountry={false}
+          />
+        ),
+        spanColumns: 2,
+      },
+      {
+        accessorKey: 'lastName',
+        header: t('table.lastName'),
+      },
+      {
+        accessorKey: 'country',
+        header: t('table.country'),
+        enabled: event.showCountry,
+        cell: (info) =>
+          jsxJoin(
+            info.row.original.countries.map((code) => (
+              <CountryLink event={event} key={code} translations={translations} code={code} />
+            )),
+            ', '
+          ),
+      },
+      {
+        accessorKey: 'bestPlace',
+        header: t('table.best'),
+        enabled: event.showBestPlace,
+        cell: formatter.toNumericCell,
+      },
+      {
+        accessorKey: 'gold',
+        header: t('medals.gold'),
+      },
+      {
+        accessorKey: 'silver',
+        header: t('medals.silver'),
+      },
+      {
+        accessorKey: 'bronze',
+        header: t('medals.bronze'),
+      },
+      {
+        accessorKey: 'attended',
+        header: t('table.events'),
+      },
+      {
+        accessorKey: 'games',
+        header: t('table.games'),
+      },
+      {
+        accessorKey: 'won',
+        header: t('table.won'),
+      },
+      {
+        accessorKey: 'drawn',
+        header: t('table.drawn'),
+        enabled: hasDraws,
+      },
+      {
+        accessorKey: 'lost',
+        header: t('table.lost'),
+      },
+      {
+        accessorKey: 'unresolved',
+        header: t('table.unresolved'),
+        enabled: hasUnresolved,
+      },
+      {
+        accessorKey: 'sgfs',
+        header: t('table.sgfs'),
+        enabled: hasSgfs,
+        cell: ({ row }) => (
+          <SgfCountLink
+            event={event}
+            locale={translations.locale}
+            count={row.original.sgfs}
+            filters={{ player: row.original.id }}
+          />
+        ),
+      },
+      {
+        accessorKey: 'wonPercent',
+        header: t('table.wonPercent'),
+        cell: formatter.toPercentageCell,
+      },
+    ],
     [t, translations, hasSgfs, hasDraws, hasUnresolved, event, formatter]
   );
 

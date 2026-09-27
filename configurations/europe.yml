@@ -16,8 +16,8 @@ basePath: /archives
 trailingSlash: true
 crossLinks: true
 config:
-  generateSvgs: false
-  generatePngs: false
+  generateSgfs: true
+  generateRawSgfs: true
   generateJpgs: true
   generateZips: true
   links:
