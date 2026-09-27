@@ -1,0 +1,11 @@
+website: https://web.archive.org/web/20090705114143/http://goweb.cz/ogo/sin_slavy/mrparu/2007
+stages:
+  - type: tournament
+    name: Championship
+    notes: recreated from cross table
+    file: czp2007.txt
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true

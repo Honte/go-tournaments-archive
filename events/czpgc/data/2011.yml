@@ -1,0 +1,20 @@
+website: http://so-imba.com/egoban/posts/praha-15-16-1-mr-paru.html
+stages:
+  - type: tournament
+    name: Championship
+    file: czp2011.txt
+    scoringColumns:
+      - wins
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true
+    games:
+      - 2-1 1:W+R round:1 sgf:2011/1-KlaraZaloudkovaVladimirDanek-JitkaBartovaJanHora.sgf
+      - 2-3 2:B+4.5 round:4 sgf:2011/4-KlaraZaloudkovaVladimirDanek-JanaHricovaOndrejSilt.sgf
+      - 3-5 3:B+1.5 round:5 sgf:2011/5-JanaHricovaOndrejSilt-AlzbetaKadlecovaMartinJurek.sgf
+      - 4-1 1:W+R round:3 sgf:2011/3-KaterinaBabickaLukasPodpera-JitkaBartovaJanHora.sgf
+      - 4-2 2:W+R round:5 sgf:2011/5-KaterinaBabickaLukasPodpera-KlaraZaloudkovaVladimirDanek.sgf
+      - 5-1 1:W+19.5 round:4 sgf:2011/4-AlzbetaKadlecovaMartinJurek-JitkaBartovaJanHora.sgf
+      - 5-4 4:W+R round:2 sgf:2011/2-AlzbetaKadlecovaMartinJurek-KaterinaBabickaLukasPodpera.sgf

@@ -1,0 +1,10 @@
+;http://so-imba.com/egoban/posts/praha-23-241-mr-paru.html
+;Praha (23.-24.1.)
+; PC[CZ,Praha]
+; DT[2010-01-23,2010-01-24]
+;missing sgf
+1 Hricova Jana       Silt Ondrej   30k CZ xxx 3 1 4- 3+ 5+ 2+ 0= |10233509|10337481
+2 Prokopova Anna     Simara Jan    30k CZ xxx 3 0 3+ 5+ 0= 1- 4+ |10449087|10749860
+3 Simunkova Martina  Kuzela Martin 30k CZ xxx 2 1 2- 1- 4+ 0= 5+ |10298904|10250702
+4 Bartova Jitka      Hora Jan      30k CZ xxx 2 0 1+ 0= 3- 5+ 2- |13849748|10401083
+5 Stodolova Kristyna Jurek Martin  30k CZ xxx 0 0 0= 2- 1- 4- 3- |14213243|10213753

@@ -1,0 +1,14 @@
+website: http://so-imba.com/egoban/posts/praha-28-29-3-mr-paru-2015.html
+stages:
+  - type: tournament
+    name: Championship
+    file: czp2015.txt
+    scoringColumns:
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - wins
+      - sos
+      - sodos
+    findSharedPlaces: true

@@ -1,0 +1,17 @@
+website: https://goweb.cz/2022/03/mistrovstvi-republiky-paru-2022/
+stages:
+  - type: tournament
+    name: Championship
+    file: czp2022.txt
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:6 sgf:2022/6-AdrianaTomsuLukasPodpera-TerezaKotowskiJanProkop.sgf
+      - 1-3 3:W+4.5 round:1 sgf:2022/1-AdrianaTomsuLukasPodpera-TerezaVlckovaOndrejKruml.sgf
+      - 2-1 1:W+R round:3 sgf:2022/3-TerezaKotowskiJanProkop-AdrianaTomsuLukasPodpera.sgf
+      - 2-3 2:B+R round:5 sgf:2022/5-TerezaKotowskiJanProkop-TerezaVlckovaOndrejKruml.sgf
+      - 3-1 1:W+R round:4 sgf:2022/4-TerezaVlckovaOndrejKruml-AdrianaTomsuLukasPodpera.sgf
+      - 3-2 2:W+7.5 round:2 sgf:2022/2-TerezaVlckovaOndrejKruml-TerezaKotowskiJanProkop.sgf
