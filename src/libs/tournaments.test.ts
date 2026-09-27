@@ -40,6 +40,13 @@ function game(id: string, stage: number, a: string, b: string, sgf?: string): Ga
 }
 
 describe('tournament table rows', () => {
+  it('passes raw dates without a formatted date label', () => {
+    const [result] = buildTournamentRows([tournament({ start: '2025-06-01', end: '2025-06-02' })]);
+    assert.equal(result.start, '2025-06-01');
+    assert.equal(result.end, '2025-06-02');
+    assert.equal('dates' in result, false);
+  });
+
   it('excludes announcements and counts players and games once, excluding BYEs', () => {
     const source = tournament({
       players: { a: player('a'), alias: player('a'), b: player('b'), BYE: player('BYE') },

@@ -27,7 +27,7 @@ export async function TournamentsPage({ event, locale }: TournamentsPageProps) {
     <Content>
       <Title>{t('site.tournamentsTitle')}</Title>
       {categories.map((category) => {
-        const rows = buildTournamentRows(tournaments, category, locale);
+        const rows = buildTournamentRows(tournaments, category);
 
         if (!rows.length) {
           return null;

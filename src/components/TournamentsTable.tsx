@@ -1,10 +1,12 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import { useMemo } from 'react';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getFormatter } from '@/i18n/formatter';
 import { getTranslator } from '@/i18n/translator';
+import { formatDate, formatRange } from '@/libs/dates';
 import {
   createCountryColumnSorter,
   createDateRangeColumnSorter,
@@ -28,6 +30,8 @@ type TournamentsTableProps = {
 const INITIAL_STATE = {
   sorting: [{ id: 'year', desc: true }],
 };
+
+const ClientDateCell = dynamic(() => Promise.resolve(DateCell), { ssr: false });
 
 export function TournamentsTable({ event, rows, translations, showSgfs }: TournamentsTableProps) {
   const t = useMemo(() => getTranslator(translations), [translations]);
@@ -77,7 +81,7 @@ export function TournamentsTable({ event, rows, translations, showSgfs }: Tourna
         id: 'dates',
         accessorFn: (row) => row.start ?? row.end,
         header: t('stage.date'),
-        cell: (info) => info.row.original.dates ?? '—',
+        cell: (info) => <ClientDateCell start={info.row.original.start} end={info.row.original.end} />,
         sortFn: createDateRangeColumnSorter(),
       },
       podiumColumn('gold', 'winners.first'),
@@ -124,4 +128,12 @@ export function TournamentsTable({ event, rows, translations, showSgfs }: Tourna
   }, [event, t, locale, showSgfs, showStages, formatter, hasReferee]);
 
   return <StatsTable data={rows} columns={columns} initialState={INITIAL_STATE} />;
+}
+
+function DateCell({ start, end }: Pick<TournamentRow, 'start' | 'end'>) {
+  const date = start ?? end;
+  const dates =
+    start && end ? formatRange(start, end, undefined, false) : date ? formatDate(date, undefined, false) : '—';
+
+  return <span className="text-nowrap">{dates}</span>;
 }

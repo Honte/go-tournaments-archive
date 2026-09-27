@@ -1,5 +1,4 @@
 import type { Player, Stage, Tournament } from '@/schema/data';
-import { formatDate, formatRange } from '@/libs/dates';
 
 export type TournamentRow = {
   year: number;
@@ -7,7 +6,6 @@ export type TournamentRow = {
   country?: string;
   start?: string;
   end?: string;
-  dates?: string;
   gold: Player[];
   silver: Player[];
   bronze: Player[];
@@ -20,15 +18,11 @@ export type TournamentRow = {
 
 export type PodiumKey = 'gold' | 'silver' | 'bronze';
 
-export function buildTournamentRows(
-  tournaments: readonly Tournament[],
-  category?: string,
-  locale = 'en'
-): TournamentRow[] {
+export function buildTournamentRows(tournaments: readonly Tournament[], category?: string): TournamentRow[] {
   const rows: TournamentRow[] = [];
 
   for (const tournament of tournaments) {
-    const row = buildTournamentRow(tournament, category, locale);
+    const row = buildTournamentRow(tournament, category);
     if (row) {
       rows.push(row);
     }
@@ -37,7 +31,7 @@ export function buildTournamentRows(
   return rows;
 }
 
-function buildTournamentRow(tournament: Tournament, category?: string, locale = 'en'): TournamentRow | undefined {
+function buildTournamentRow(tournament: Tournament, category?: string): TournamentRow | undefined {
   if (tournament.announcement) {
     return undefined;
   }
@@ -82,7 +76,6 @@ function buildTournamentRow(tournament: Tournament, category?: string, locale = 
     country: tournament.country || undefined,
     start: tournament.start,
     end: tournament.end,
-    dates: formatTournamentDates(tournament, locale),
     gold: getPodium(tournament, top[0]),
     silver: getPodium(tournament, top[1]),
     bronze: getPodium(tournament, top[2]),
@@ -170,12 +163,4 @@ function getPodium(tournament: Tournament, ids?: readonly string[]): Player[] {
 
 function isBye(player: { id: string }): boolean {
   return player.id === 'BYE';
-}
-
-function formatTournamentDates(tournament: Tournament, locale: string): string | undefined {
-  if (tournament.start && tournament.end) {
-    return formatRange(tournament.start, tournament.end, locale);
-  }
-  const date = tournament.start ?? tournament.end;
-  return date ? formatDate(date, locale) : undefined;
 }
