@@ -2,7 +2,7 @@
 ; CL[A]
 ; EV[29th World Amateur Go Championship]
 ; PC[JP, Tokyo]
-; DT[2008-05-28,2007-05-31]
+; DT[2008-05-28,2008-05-31]
 ; HA[h9]
 ; KM[6.5]
 ; TM[110]
