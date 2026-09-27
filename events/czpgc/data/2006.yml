@@ -1,0 +1,16 @@
+website:
+ - http://so-imba.com/egoban/posts/mr-paru.html
+ - https://web.archive.org/web/20070317152232/http://www.goweb.cz/cago/vysledky.asp?id=176&lang=cz
+stages:
+  - type: tournament
+    name: Championship
+    file: czp2006.txt
+    scoringColumns:
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - wins
+      - sos
+      - sodos
+    findSharedPlaces: true

@@ -1,0 +1,10 @@
+website: https://goweb.cz/2019/03/mistrovstvi-republiky-paru-2019/
+stages:
+  - type: tournament
+    name: Championship
+    file: czp2019.txt
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true

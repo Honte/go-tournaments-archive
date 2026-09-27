@@ -1,0 +1,61 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]OT[3x30 byo-yomi]AP[CGoban:3]SZ[19]GM[1]GN[Czech Pair Go Championship r4 b2]
+EV[Czech Pair Go Championship]RO[4]DT[2026-05-17]PC[The KGS Go Server at http\://www.gokgs.com/]
+PB[Kovarik Bukovska]BR[1d]PW[Komin Podperova]WR[3d]KM[6.5]TM[2700]RE[W+14.5]US[sheeryjay]
+MULTIGOGM[1]
+;B[qc];W[dp];B[cd];W[qp];B[cq];W[dq];B[cp];W[do];B[co];W[cn];B[bn];W[nq];B[pj];W[ed]
+;B[hc];W[dg];B[cf];W[ef];B[cm];W[dn];B[cg];W[di];B[cr];W[nc];B[pf];W[kc];B[he];W[ke]
+;B[hg];W[ch];B[jp];W[hq];B[iq];W[hp];B[jn];W[cc];B[bc];W[dc];B[bb];W[ql];B[pl];W[qm]
+;B[qk];W[pm];B[ol];W[om];B[nl];W[el];B[nm]C[prenasec [?\]\: 25min basic time + 10s/mv
+prenasec [?\]\: Fischer time
+]
+;W[kg];B[hi];W[cl];B[dm];W[em];B[bm];W[jj];B[fb];W[ib];B[hb];W[cb];B[jd];W[kd];B[jb]
+;W[og];B[pg];W[gf];B[jf]C[prenasec [?\]\: counter pincer, nice
+];W[hf];B[if];W[mg]
+;B[jh];W[kq];B[ir];W[li];B[no];W[np];B[oo];W[pp]C[prenasec [?\]\: Information about the tournament and results at https\://goweb.cz/2026/05/mistrovstvi-republiky-paru-2026/
+]
+;B[dl];W[dk]C[prenasec [?\]\: This is game 2 from 4th round of Czech Pair Go Championship 2026
+]
+;B[ek];W[ck];B[fk];W[gl];B[gn];W[gm];B[eh];W[dh];B[de]C[prenasec [?\]\: I am transcribing 2 games at once (the other in other place) so eventually I'll be forced to drop one of the games
+]
+;W[ee];B[bh];W[bi];B[bg];W[gj];B[gk];W[hk];B[hj];W[fi];B[fj];W[ej];B[gi];W[fl];B[gj]
+;W[fh];B[hl];W[hm];B[ho];W[io]C[prenasec [?\]\: I wish the players wouldn't lean so much above the board and obstruct my view >_<
+]
+;B[in];W[ip];B[hn];W[jq];B[fq];W[gr];B[fr];W[fp];B[gq];W[gp];B[hr];W[dr];B[jo]C[prenasec [?\]\: black 2 min left, white 1 min left
+]
+;W[fn];B[gs];W[es];B[fs];W[cs];B[br];W[il];B[ob];W[km];B[lp];W[lq];B[jm];W[jr];B[is]
+;W[mn];B[mo];W[nn];B[kl];W[on];B[ln];W[qi];B[rj];W[mm];B[lm];W[ml];B[jk];W[ik];B[kj]
+;W[ki];B[ji];W[ij];B[fo];W[eo];B[mp];W[go];B[mq];W[mr];B[kp];W[lr];B[po]C[prenasec [?\]\: Maybe wrong order of moves
+]
+;W[qo];B[of];W[jl];B[ll];W[oh];B[pi];W[oc];B[pc];W[jc];B[ic];W[kb];B[ia];W[ph];B[qh]
+;W[nb];B[lf];W[pb];B[qb];W[oa];B[kf];W[lj];B[rl];W[rm];B[op];W[oq];B[sm];W[rn];B[kk]
+;W[nk];B[oj];W[nj];B[ni];W[mh];B[ok];W[mk];B[gg];W[ge];B[bj];W[ai];B[cj];W[dj];B[fg]
+;W[eg];B[gh];W[ei];B[];W[qa];B[ra];W[qg]C[prenasec [?\]\: canont find the move before R19
+]
+;B[rh];W[rb];B[pa];W[rg];B[ri]C[prenasec [?\]\: Marwin accidentally played Q19 and Anezka warned him but too late, so black had to pay 2 stones for playing out of turn
+]
+;W[];B[bs]
+(;W[bl])
+(;W[qa];B[bl];W[bk];B[pa];W[kn];B[ko];W[qa]C[prenasec [?\]\: B1 is probably the move that was before Q19
+]
+;B[md]C[prenasec [?\]\: Players discussing that they probably again mistook player order
+prenasec [?\]\: Another 2 stones from black to white
+]
+;W[sa];B[rc];W[pd];B[qd];W[qe];B[pe];W[od];B[re];W[sc];B[qf];W[ba];B[be];W[ii];B[ih]
+;W[oi];B[im];W[hl];B[ka];W[lb];B[js];W[ks];B[eb];W[sd];B[se];W[al];B[bo];W[sn];B[sl]
+C[prenasec [?\]\: things only in pairgo\:  "Now who?"  "Me!"
+];W[ie];B[je];W[hd]
+;B[kh];W[lg];B[ds];W[jg];B[ig];W[id];B[gd];W[he];B[mf];W[gc];B[gb];W[ne];B[nf]
+(;W[nd])
+(;W[me];B[le];W[ld];B[lh];W[mi];B[ec];W[dd];B[er];W[fd];B[ff];W[la];B[ja];W[df]
+;B[ce];W[eq];B[ng];W[nh]
+(;B[am])
+(;B[rd];W[ah];B[sb];W[sc];B[ag];W[ab];B[ac];W[am];B[an];W[ak];B[oe];W[nd];B[sd]
+(;W[ra])
+(;W[pa];B[sb];W[ra];B[aa];W[ca];B[pn];W[ea];B[fa];W[da];B[ab];W[sc];B[fe];W[gd]
+;B[sb];W[ae];B[af];W[sc];B[na];W[ma];B[sb];W[rk];B[sk];W[sc];B[ls];W[ms];B[sb];W[ad]
+;B[bd];W[sc];B[aj];W[ci];B[sb];W[sj];B[si];W[sc];B[qn];W[sb];B[lk];W[fc];B[db];W[]
+;B[]C[prenasec [?\]\: penalty was two times 3 stones
+prenasec [?\]\: Jitka helped me record in the last 60+ moves (switched with me) - transcribing this filled board is hell
+prenasec [?\]\: W+14.5
+prenasec [?\]\: Next game probably in 1 hour and some change
+])))))

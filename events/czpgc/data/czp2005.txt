@@ -1,0 +1,12 @@
+;3.-4.12.2005, Praha
+;https://web.archive.org/web/20080511170125/http://www.czech-go.net/tour/2005/t051203.php
+; recreated from wins number
+; PC[CZ,Praha]
+; DT[2005-12-03,2005-12-04]
+1 Zaloudkova Klara  Dach Zbynek       30k CZ xxx 5 2+ 3+ 4+ 5+ 6+ |10798106|10233872
+2 Simunkova Martina Kuzela Martin     30k CZ xxx 4 1- 6+ 5+ 3+ 4+ |10298904|10250702
+3 Zmekova Vera      Durovic Jiri      30k CZ xxx 3 4+ 1- 6+ 2- 5+ |10513074|10286507
+4 Bernathova Anna   Cieply Ales       30k CZ xxx 2 3- 5+ 1- 6+ 2- |10301984|10501964
+5 Bartova Jitka     Tvaroh Tomas      30k CZ xxx 1 6+ 4- 2- 1- 3- |13849748|12949937
+6 Lukavska Jana     Binovec Vladimir  30k CZ xxx 0 5- 2- 3- 4- 1- |14062367|13425049
+

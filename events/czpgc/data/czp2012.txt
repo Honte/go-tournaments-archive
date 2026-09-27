@@ -1,0 +1,14 @@
+;http://so-imba.com/egoban/posts/praha-11-12-2-mr-paru-2012.html
+;https://goweb.cz/turnaj/mistrovstvi-republiky-paru-2012/
+; PC[CZ,Praha]
+; DT[2012-02-11,2012-02-12]
+;Praha: 11. 2. 2012–12. 2. 2012
+;Umístění	Jméno	Třída	Body	1.	2.	3.	4.	5.
+1	Prokopova Anna    1k Prokop Jan     5d	3d CZ xxx	4 12 9	3-	8+	5+	2+	4+ |10449087|10433654
+2	Zaloudkova Klara  3d Hora Jan       6d	4d CZ xxx	4 12 8	8+	3+	4+	1-	6+ |10798106|10401083
+3	Hricova Jana      2k Silt Ondrej    6d	3d CZ xxx	3 14 8	1+	2-	6+	5+	7- |10233509|10337481
+4	Kadlecova Alzbeta 3k Jurek Martin   4d	1d CZ xxx	3 14 6	6+	5+	2-	7+	1- |15425091|10213753
+5	Dankova Lenka     4k Danek Vladimir 5d	1d CZ xxx	2 12 2	7+	4-	1-	3-	8+ |10513063|10213016
+6	Simunkova Martina 1k Kuzela Martin  3d	2d CZ xxx	2 12 2	4-	7+	3-	8+	2- |10298904|10250702
+7	Salajkova Tereza 10k Sebela Jan     2k	6k CZ xxx	2 10 3	5-	6-	8+	4-	3+ |13633873|15462359
+8	Ivana Hlavacova  13k Jurasek Ondrej 8k	11k CZ xxx	0 14 0	2-	1-	7-	6-	5- |14886036|12337534

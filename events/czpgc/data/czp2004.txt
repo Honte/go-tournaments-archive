@@ -1,0 +1,8 @@
+;https://cs.wikipedia.org/wiki/%C4%8Cesk%C3%A1_asociace_go
+;only medalists available
+; PC[CZ,Praha]
+; DT[2004-12-04,2004-12-05]
+1 Hricova Jan      Silt Ondrej    30k CZ xxx 1 0+ |10233509|10337481
+2 Zaloudkova Klara Hora Jan       30k CZ xxx 2 0+ |10798106|10401083
+3 Jurkova Ingrid   Jurek Martin   30k CZ xxx 3 0+ |12362152|10213753
+4 Pietorova Alena  Grosser Tomas  30k CZ xxx 3 0+ |00000000|10225908

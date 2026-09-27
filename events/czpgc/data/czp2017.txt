@@ -1,0 +1,12 @@
+;https://goweb.cz/turnaj/mr-paru-2017/
+; PC[CZ,Brno]
+; DT[2017-02-04,2017-02-05]
+;Place	Name	Club	Level	Score	1	2	3	4	5	Points	SOS	SOSOS
+1	Zaloudkova Klara     Hora Jan	    	4D CZ xxx	4	5+	4+	2+	3-	6+	4	15	62 0|10798106|10401083
+2	Samajova Kamila      Cipra Petr		    2D CZ xxx	4	8+	3+	1-	4+	5+	4	13	64 1|14913778|10249503
+3	Tomsu Adriana        Podpera Lukas		4D CZ xxx	4	6+	2-	5+	1+	7+	4	13	64 0|16225396|13201914
+4	Chladkova Tereza     Prokop Jan		    3D CZ xxx	3	7+	1-	6+	2-	8+	3	11	63 0|15401364|10433654
+5	Vasova Dita          Simara Jan		    1D CZ xxx	2	1-	7+	3-	8+	2-	2	13	64 0|15749921|10749860
+6	Bukovska Anezka      Jansky Dusan		4K CZ xxx	2	3-	8+	4-	7+	1-	2	12	62 0|15874947|15862946
+7	Vlckova Tereza       Kruml Ondrej		5K CZ xxx	1	4-	5-	8+	6-	3-	1	11	61 0|15333241|10886524
+8	Waczulikova Kristina Kachyna Ondrej		5K CZ xxx	0	2-	6-	7-	5-	4-	0	12	60 0|13001659|14725876

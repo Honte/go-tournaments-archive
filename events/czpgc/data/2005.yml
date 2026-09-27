@@ -1,0 +1,11 @@
+website: https://web.archive.org/web/20080511170125/http://www.czech-go.net/tour/2005/t051203.php
+stages:
+  - type: tournament
+    name: Championship
+    file: czp2005.txt
+    notes: recreated from available data
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true

@@ -1,0 +1,7 @@
+;30.11.-1.12.2002, Praha
+; PC[CZ,Praha]
+; DT[2002-11-30,2002-11-30]
+; recreated from wins number
+1  Simunkova Martina Hora Jan       30k CZ xxx 2 0= 3+ 2+ |10298904|10401083
+2  Dankova Lenka     Danek Vladimir 30k CZ xxx 1 3+ 0= 1- |10513063|10213016
+3  Zaloudkova Klara  Dach Zbynek    30k CZ xxx 0 2- 1- 0= |10798106|10233872

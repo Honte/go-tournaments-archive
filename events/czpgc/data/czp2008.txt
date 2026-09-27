@@ -1,0 +1,10 @@
+;Praha (29.-30.11.)
+;http://so-imba.com/egoban/posts/praha-29-3011-mr-paru-berlin-kranich.html
+; table recreated from available data
+; PC[CZ,Praha]
+; DT[2008-11-29,2008-11-30]
+1 Bartova Jitka     Hora Jan         30k CZ xxx 3 1 4- 3+ 5+ 2+ 0= |13849748|10401083
+2 Zaloudkova Klara  Dach Zbynek      30k CZ xxx 3 0 3+ 5+ 0= 1- 4+ |10798106|10233872
+3 Simunkova Martina Kuzela Martin    30k CZ xxx 2 1 2- 1- 4+ 0= 5+ |10298904|10250702
+4 Hricova Jana      Silt Ondrej      30k CZ xxx 2 0 1+ 0= 3- 5+ 2- |10233509|10337481
+5 Hlavacova Ivana   Binovec Vladimir 30k CZ xxx 0 0 0= 2- 1- 4- 3- |14886036|13425049

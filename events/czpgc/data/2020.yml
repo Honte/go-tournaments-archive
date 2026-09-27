@@ -1,0 +1,10 @@
+website: https://goweb.cz/2020/01/mistrovstvi-republiky-paru-2020/
+stages:
+  - type: tournament
+    name: Championship
+    file: czp2020.txt
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true

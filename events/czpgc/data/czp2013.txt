@@ -1,0 +1,11 @@
+;Praha: 9. 2. 2013–10. 2. 2013
+;http://so-imba.com/egoban/posts/praha-9-10-2-mr-paru-2013.html
+;https://goweb.cz/turnaj/mistrovstvi-republiky-paru-2013/
+; PC[CZ,Praha]
+; DT[2013-02-09,2013-02-10]
+;Umístění	Jméno	Třída	Body	1.	2.	3.	4.	5.
+1	Zaloudkova Klara  3d  Hora Jan       6d    	4d CZ xxx	4 6	5+	2+	0=	3+	4+ |10798106|10401083
+2	Reindlova Anna    1k  Prokop Jan     5d    	3d CZ xxx	2 3	4-	1-	3+	5+	0= |10449087|10433654
+3	Chladkova Tereza  2k  Danek Vladimir 5d 	2d CZ xxx	2 2	0=	4+	2-	1-	5+ |15401364|10213016
+4	Simunkova Martina 1k  Kuzela Martin  4d 	2d CZ xxx	1 2	2+	3-	5-	0=	1- |10298904|10250702
+5	Kadlecova Alzbeta 3k  Jurek Martin   4d  	1d CZ xxx	1 1	1-	0=	4+	2-	3- |15425091|10213753
