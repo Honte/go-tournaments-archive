@@ -3,13 +3,9 @@ import type { EventContext } from '@/schema/event';
 import type { Locale } from '@/i18n/consts';
 import { isEventLocale } from '@/i18n/locales';
 import { getTranslator } from '@/i18n/translator';
-import { buildTournamentRows } from '@/libs/tournaments';
-import { categoryUrl } from '@/libs/urls';
-import { getTournaments, getTranslations } from '@/data/serverApi';
-import { Link } from '@/components/navigation/Link';
-import { TournamentsTable } from '@/components/TournamentsTable';
+import { getTranslations } from '@/data/serverApi';
+import { Tournaments } from '@/components/Tournaments';
 import { Content } from '@/components/ui/Content';
-import { H2 } from '@/components/ui/H2';
 import { Title } from '@/components/ui/Title';
 
 type TournamentsPageProps = { event: EventContext; locale: Locale };
@@ -19,43 +15,13 @@ export async function TournamentsPage({ event, locale }: TournamentsPageProps) {
     return notFound();
   }
 
-  const [tournaments, translations] = await Promise.all([getTournaments(event), getTranslations(event, locale)]);
+  const translations = await getTranslations(event, locale);
   const t = getTranslator(translations);
-  const categories = event.categories?.length ? event.categories : [undefined];
 
   return (
     <Content>
       <Title>{t('site.tournamentsTitle')}</Title>
-      {categories.map((category) => {
-        const rows = buildTournamentRows(tournaments, category);
-
-        if (!rows.length) {
-          return null;
-        }
-
-        return (
-          <section key={category ?? 'all'}>
-            {category && (
-              <H2>
-                <Link
-                  href={categoryUrl(event, locale, category)}
-                  className="text-archive-link hover:text-archive-link-hover underline underline-offset-2"
-                >
-                  {t(`categories.full.${category}`)}
-                </Link>
-              </H2>
-            )}
-            <TournamentsTable
-              event={event}
-              rows={rows}
-              translations={translations}
-              showSgfs={Boolean(
-                event.generateSgfs && !category && tournaments.some((tournament) => tournament.hasSgfs)
-              )}
-            />
-          </section>
-        );
-      })}
+      <Tournaments event={event} locale={locale} />
     </Content>
   );
 }

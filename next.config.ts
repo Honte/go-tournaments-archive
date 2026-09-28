@@ -29,7 +29,7 @@ export default async function getConfig() {
   return {
     output: configuration.dynamic ? 'standalone' : 'export',
     basePath,
-    deploymentId: version,
+    deploymentId: configuration.dynamic ? version : undefined,
     env: {
       VERSION: version,
       BASE_PATH: basePath,
