@@ -1,0 +1,84 @@
+(;CA[utf-8]OT[Error: time control missing]RU[Japanese]FF[4]AP[MultiGo:4.4.4]SZ[19]
+GM[1]GN[Czech Championship 2026]RO[1]PC[https\://online-go.com/review/1783048]PB[Jan Komín]
+BR[5d]PW[Bartík Dach]WR[5d]KM[6.5]RE[W+R]MULTIGOGM[1]
+;B[pq];W[dd];B[dp];W[qd];B[qn];W[pp];B[oq];W[qp];B[op];W[pn];B[pm];W[oo];B[qq];W[rp]
+C[First round, game ];B[on];W[po];B[no];W[qm];B[ql];W[om];B[rm];W[nn];B[mo];W[pk]
+;B[pl];W[ol];B[qj]C[
+
+-- chat --
+CAGo3\: This game is the first round of Czech championship. Both players hold medals from recent European championship U16 - Bartik Dach gold and Jan Komin bronze.
+]
+;W[pj];B[qi];W[pi];B[qh];W[kq]C[
+
+-- chat --
+CAGo3\: Time setting is Fischer 1h +30s
+]
+;B[hq];W[mq];B[nq];W[ko];B[mn];W[km];B[ml];W[og];B[kk];W[mp];B[np];W[ph];B[nk];W[ok]
+C[
+
+-- chat --
+OndraKruml\: Komin tricked me in this joseki last night and consequently won
+]
+;B[cf];W[fd];B[dj];W[qg];B[rg];W[qk];B[rk];W[qf];B[hc];W[kc];B[he];W[ff];B[fb];W[db]
+;B[hg];W[id];B[hd];W[be];B[ld];W[kd];B[le];W[lc];B[ke];W[md];B[qc];W[rc]C[
+
+-- chat --
+CAGo3\: Tough decision, white spent 10 minutes on move s17.
+]
+;B[me];W[nd];B[jr];W[ho];B[fp];W[jq];B[iq];W[hm]C[
+
+-- chat --
+OndraKruml\: how do zou answer q16?
+]
+;B[cn];W[mj]C[
+
+-- chat --
+CAGo3\: White already played r14 before the invasion and now n10. Situation in the top right corner could be game deciding fight.
+]
+;B[ie];W[ch];B[ci];W[dh];B[bh];W[bg];B[bi]C[
+
+-- chat --
+OndraKruml\: b seems afraid to play there
+]
+;W[cg];B[jb];W[cp]C[
+
+-- chat --
+OndraKruml\: woho
+CAGo3\: White took 5 minutes before this move and black responded quite fast.
+]
+;B[co];W[dq];B[eq];W[do];B[ep];W[bp];B[cr];W[dr];B[cq];W[br];B[er];W[bq];B[ds];W[cm]
+C[
+
+-- chat --
+OndraKruml\: white is dancing like a ballerina, very nice play
+CAGo3\: It seems that c7 was always the plan.
+]
+;B[bm];W[bl];B[cl];W[dm];B[bn];W[ck];B[dl];W[dk];B[el];W[ek];B[bk];W[fl];B[em];W[bj]
+;B[al];W[cj];B[di];W[rr];B[rq];W[sq]C[
+
+-- chat --
+CAGo3\: By d11, black gives white possibility of double attack
+]
+;B[lk];W[ki];B[jj]C[
+
+-- chat --
+CAGo3\: Time\: black 33min, white 12min
+];W[ji]
+;B[hj];W[ei];B[ej];W[fj];B[fi];W[eh];B[aj];W[fk];B[ai];W[gi];B[hi];W[lm];B[mm];W[mg]
+;B[rf];W[re];B[ne];W[oe];B[kb];W[lb];B[io];W[in];B[jp];W[kp];B[gn];W[jo];B[ip];W[hn]
+C[
+
+-- chat --
+CAGo3\: Black took opportunity to start the endgame. Question is, does he gain enough point?
+]
+;B[nj];W[mi];B[ec];W[ed];B[dc];W[cc];B[eb];W[cb];B[mk];W[jd];B[kg];W[kj];B[jk];W[kr]
+;B[ir];W[nf];B[ag];W[bf];B[gm];W[il];B[fg];W[eg];B[gg];W[fh];B[ni];W[nh];B[mr];W[lr]
+;B[ns];W[qr];B[pr];W[gl];B[hk];W[fo];B[en];W[go];B[eo];W[ih];B[hh];W[je];B[jl];W[jm]
+;B[lp];W[lq];B[lo];W[hl];B[jf];W[ig];B[if];W[gf];B[lh];W[mh];B[ii];W[ik];B[ij];W[jh]
+;B[hf];W[ka];B[ic];W[ea];B[gc];W[ro];B[rn];W[qs];B[ja];W[la];B[jc];W[mc];B[ge];W[fe]
+;B[nm];W[on]C[
+
+-- chat --
+CAGo3\: Black resigned.
+CAGo3\: See you all at 15\:00 CET for next round.
+])

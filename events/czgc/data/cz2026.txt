@@ -1,0 +1,18 @@
+; TC[T260925A]
+; CL[A]
+; EV[Czech Championship 2026]
+; PC[CZ, Brno]
+; DT[2026-09-25,2026-09-28]
+; HA[h9]
+; KM[6.5]
+; TM[120]
+; CM[ (submitted by Lukan)]
+;.
+1 Podpera Lukas    7d CZ  APWS  7    7    21  0 7+/w   3+/b   8+/w   5+/w   6+/b   4+/b   2+/w    |13201914
+2 Simara Jan       1p CZ  Imba  5    5    12  0 8+/w   6+/b   7+/w   4+/b   3-/w   5+/w   1-/b    |10749860
+3 Komin Jan        5d CZ  APWS  4    4    11  0 5-/b   1-/w   4+/b   7+/w   2+/b   8+/b   6-/w    |19637596
+4 Prokop Jan       6d CZ  Imba  4    4    8   1 6+/w   8+/b   3-/w   2-/w   7+/b   1-/w   5+/b    |10433654
+5 Dach Bartik      5d CZ  BMik  4    4    8   0 3+/w   7+/b   6+/w   1-/b   8+/w   2-/b   4-/w    |19574280
+6 Dach Zbynek      4d CZ  BMik  2    2    5   0 4-/b   2-/w   5-/b   8+/b   1-/w   7-/w   3+/b    |10233872
+7 Cipra Petr       4d CZ  CPis  1    1    2   0 1-/b   5-/w   2-/b   3-/b   4-/w   6+/b   8-/w    |10249503
+8 Caha Frantisek   3d CZ  APWS  1    1    1   0 2-/b   4-/w   1-/b   6-/w   5-/b   3-/w   7+/b    |15686935
