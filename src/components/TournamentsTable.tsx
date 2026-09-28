@@ -1,6 +1,5 @@
 'use client';
 
-import dynamic from 'next/dynamic';
 import { useMemo } from 'react';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
@@ -30,8 +29,6 @@ type TournamentsTableProps = {
 const INITIAL_STATE = {
   sorting: [{ id: 'year', desc: true }],
 };
-
-const ClientDateCell = dynamic(() => Promise.resolve(DateCell), { ssr: false });
 
 export function TournamentsTable({ event, rows, translations, showSgfs }: TournamentsTableProps) {
   const t = useMemo(() => getTranslator(translations), [translations]);
@@ -81,7 +78,7 @@ export function TournamentsTable({ event, rows, translations, showSgfs }: Tourna
         id: 'dates',
         accessorFn: (row) => row.start ?? row.end,
         header: t('stage.date'),
-        cell: (info) => <ClientDateCell start={info.row.original.start} end={info.row.original.end} />,
+        cell: (info) => <DateCell start={info.row.original.start} end={info.row.original.end} />,
         sortFn: createDateRangeColumnSorter(),
       },
       podiumColumn('gold', 'winners.first'),
