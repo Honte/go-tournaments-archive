@@ -3,7 +3,7 @@ import { existsSync } from 'node:fs';
 import { readdir, readFile, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { input, select } from '@inquirer/prompts';
+import { cancel, intro, isCancel, select, text } from '@clack/prompts';
 import { normalizeBasePath } from '@/libs/urls';
 import { getConfigurations } from '@/configuration';
 
@@ -18,12 +18,6 @@ type BuilderState = {
 const ROOT_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const EVENTS_DIR = path.join(ROOT_DIR, 'events');
 const STATE_PATH = path.join(ROOT_DIR, '.builder-state.json');
-const SELECT_THEME = {
-  style: {
-    keysHelpTip: (keys: [key: string, action: string][]) =>
-      [...keys, ['Ctrl+C', 'exit'] as [string, string]].map(([key, action]) => `${key} ${action}`).join(' • '),
-  },
-};
 
 try {
   const state = await promptForBuild();
@@ -31,7 +25,8 @@ try {
   await writeState(state);
   await runBuild(state);
 } catch (error) {
-  if (isPromptExit(error)) {
+  if (isCancel(error)) {
+    cancel('Build cancelled.');
     process.exitCode = 0;
   } else {
     throw error;
@@ -46,25 +41,26 @@ async function promptForBuild(): Promise<BuilderState> {
   const defaultEvent = eventIds.includes(state.event ?? '') ? state.event! : eventIds[0];
   const choices = [
     ...configurations.map((configuration) => ({
-      name: `${configuration} (configuration)`,
+      label: `${configuration} (configuration)`,
       value: `configuration:${configuration}`,
     })),
     ...events.map(({ id, siteName }) => ({
-      name: `${id} (${siteName})`,
+      label: `${id} (${siteName})`,
       value: `event:${id}`,
     })),
   ];
 
-  console.log('Build archive\n');
+  intro('Build archive');
 
   const target = await select({
     message: 'Archive:',
-    choices,
-    default: getDefaultTarget(state, choices, defaultEvent),
-    pageSize: choices.length,
-    loop: true,
-    theme: SELECT_THEME,
+    options: choices,
+    initialValue: getDefaultTarget(state, choices, defaultEvent),
   });
+
+  if (isCancel(target)) {
+    throw target;
+  }
 
   if (target.startsWith('configuration:')) {
     return {
@@ -77,25 +73,28 @@ async function promptForBuild(): Promise<BuilderState> {
 
   const basePathMode = await select<BasePathMode>({
     message: 'Base Path:',
-    choices: [
+    options: [
       {
-        name: '/',
+        label: '/',
         value: 'empty',
-        description: 'No base path',
+        hint: 'No base path',
       },
       {
-        name: `/${event}`,
+        label: `/${event}`,
         value: 'event',
       },
       {
-        name: '/<custom>',
+        label: '/<custom>',
         value: 'custom',
-        description: 'Select to type',
+        hint: 'Select to type',
       },
     ],
-    default: state?.basePathMode ?? 'empty',
-    theme: SELECT_THEME,
+    initialValue: state?.basePathMode ?? 'empty',
   });
+
+  if (isCancel(basePathMode)) {
+    throw basePathMode;
+  }
 
   return {
     event,
@@ -179,24 +178,23 @@ async function resolveBasePath(choice: BasePathMode, event: string, defaultBaseP
     return event;
   }
 
-  return await input({
+  const basePath = await text({
     message: 'Custom Base Path:',
-    default: defaultBasePath,
+    initialValue: defaultBasePath,
     validate: (value) => {
-      if (!normalizeBasePath(value)) {
+      if (!normalizeBasePath(value ?? '')) {
         return 'Enter a non-empty base path, or choose the empty option.';
       }
 
-      return true;
+      return undefined;
     },
   });
-}
 
-function isPromptExit(error: unknown): boolean {
-  return (
-    error instanceof Error &&
-    (error.name === 'AbortPromptError' || error.name === 'ExitPromptError' || error.name === 'CancelPromptError')
-  );
+  if (isCancel(basePath)) {
+    throw basePath;
+  }
+
+  return basePath;
 }
 
 async function runBuild(state: BuilderState): Promise<void> {
