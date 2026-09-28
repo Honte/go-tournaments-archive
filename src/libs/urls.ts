@@ -80,6 +80,10 @@ export function countryStatsDataUrl(event: EventContext, code: string) {
   return joinPaths(event.basePath, 'data', event.prefix, `stats/country/${code.toLowerCase()}.json`);
 }
 
+export function tournamentsDataUrl(event: EventContext) {
+  return joinPaths(event.basePath, 'data', event.prefix, `tournaments.json`);
+}
+
 export function tournamentDataUrl(basePath: string | undefined, event: EventContext, year: number | string) {
   return joinPaths(basePath, 'data', event.prefix, `${year}.json`);
 }
