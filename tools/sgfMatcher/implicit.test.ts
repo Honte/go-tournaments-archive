@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { makeH9Player, makeSgfInfo } from '@tools/sgfMatcher/mocks';
+import { parseH9 } from '@/libs/h9';
 import { buildPlayersMap, matchImplicitSgfs } from './implicit';
 import type { H9GameRecord, ParsedGameEntry } from './types';
 import { stringifyProps } from './utils';
@@ -536,4 +537,38 @@ describe('player identity safety', () => {
       }
     );
   }
+});
+
+it('matches complete pairs and rejects a changed partner or a conflicting result', () => {
+  const playersMap = buildPlayersMap(
+    parseH9('1 One Alice Two Bob 3d JP xxx 2+/b\n2 Three Carol Four Dan 2d CZ xxx 1-/w', true).results
+  );
+  const gamesMap = new Map([
+    [
+      '1-2-1',
+      makeH9Record({ homePlace: 1, awayPlace: 2, round: 1, winnerPlace: 1, homeColor: 'black', winnerColor: 'black' }),
+    ],
+  ]);
+  const sgf = makeSgfInfo({
+    sgfBlackName: 'One, Two',
+    sgfWhiteName: 'Carol Three + Dan Four',
+    filenameBlackName: 'AliceOneBobTwo',
+    filenameWhiteName: 'CarolThreeDanFour',
+  });
+  function match(overrides: Partial<typeof sgf> = {}) {
+    return matchImplicitSgfs({
+      pairs: true,
+      playersMap,
+      gamesMap,
+      sgfInfos: [{ ...sgf, ...overrides }],
+      existingGamesById: new Map(),
+      existingGamesBySgf: new Map(),
+      currentSgfPaths: new Set([sgf.path]),
+      force: false,
+    });
+  }
+  assert.equal(match().matchedEntries.length, 1);
+  assert.equal(match({ filenameBlackName: 'AliceOneSomeoneElse' }).matchedEntries.length, 0);
+  assert.equal(match({ cleanResult: 'W+R', rawResult: 'W+R' }).matchedEntries.length, 0);
+  assert.equal(match({ sgfBlackName: 'Alice One', filenameBlackName: 'AliceOne' }).matchedEntries.length, 0);
 });

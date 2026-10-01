@@ -6,6 +6,7 @@ import type { EventContext } from '@/schema/event';
 import type { Locale, Translations } from '@/i18n/consts';
 import { getFormatter } from '@/i18n/formatter';
 import { getTranslator } from '@/i18n/translator';
+import { getParticipantPlayers } from '@/libs/participants';
 import { sortTableStats } from '@/libs/sort';
 import { SgfCountLink } from '@/components/gameRecords/SgfCountLink';
 import { StatsTable } from '@/components/table/StatsTable';
@@ -56,7 +57,11 @@ function AllCountriesStatsContent({ event, countries, translations }: AllCountri
           const players = new Set<string>();
           for (const year in years) {
             for (const result of years[year].results) {
-              players.add(result.id);
+              for (const player of result.participant
+                ? getParticipantPlayers(result.participant)
+                : [{ id: result.id }]) {
+                players.add(player.id);
+              }
             }
           }
 

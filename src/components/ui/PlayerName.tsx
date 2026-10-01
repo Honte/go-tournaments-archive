@@ -1,5 +1,8 @@
+import { getRankCountrySuffix } from '@/libs/labels';
+
 export type PlayerDetails = {
   id: string;
+  members?: readonly PlayerDetails[];
   name?: string;
   rank?: string;
   country?: string | Iterable<string>;
@@ -12,31 +15,7 @@ export type PlayerNameProps = {
 };
 
 export function PlayerName({ player, showRank = true, showCountry = false }: PlayerNameProps) {
-  const { name, rank } = player;
+  const name = player.members ? player.members.map((member) => member.name).join(' + ') : player.name;
 
-  if (showCountry) {
-    const country = getCountry(player);
-
-    if (country && showRank && rank) {
-      return `${name}, ${rank} (${country})`;
-    }
-
-    if (country) {
-      return `${name} (${country})`;
-    }
-  }
-
-  return showRank && rank ? `${name} (${rank})` : player.name;
-}
-
-function getCountry(player: { country?: string | Iterable<string> }) {
-  if (typeof player.country === 'string') {
-    return player.country;
-  }
-
-  if (player.country) {
-    return Array.from(new Set(player.country)).join(', ');
-  }
-
-  return undefined;
+  return name + getRankCountrySuffix(showRank && player.rank, showCountry && player.country);
 }

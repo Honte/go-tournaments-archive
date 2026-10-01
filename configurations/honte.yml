@@ -87,6 +87,8 @@ events:
     events:
       - id: czgc
         prefix: czgc
+      - id: czpgc
+        prefix: czpgc
       - id: czwgc
         prefix: czwgc
       - id: czjgc

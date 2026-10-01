@@ -32,6 +32,8 @@ function getGroupOptions(t: Translator, grouping: GameRecordsModel['grouping']):
     { value: 'none', label: t('gamesFilter.noGrouping') },
     { value: 'year', label: t('gamesFilter.groupYear') },
     { value: 'year-round', label: t('gamesFilter.groupYearRound') },
+    grouping.partner && { value: 'partner' as const, label: t('gamesFilter.groupPartner') },
+    grouping.opponentPair && { value: 'opponent-pair' as const, label: t('gamesFilter.groupOpponentPair') },
     grouping.opponentPlayer && { value: 'opponent-player' as const, label: t('gamesFilter.groupOpponent') },
     grouping.opponentCountry && {
       value: 'opponent-country' as const,

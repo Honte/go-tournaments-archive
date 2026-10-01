@@ -94,7 +94,7 @@ export function TournamentsTable({ event, rows, translations, showSgfs }: Tourna
       },
       {
         accessorKey: 'players',
-        header: t('table.players'),
+        header: t(event.pairs ? 'table.pairs' : 'table.players'),
         cell: formatter.toNumericCell,
       },
       {

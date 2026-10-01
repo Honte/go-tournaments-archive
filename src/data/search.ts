@@ -9,6 +9,7 @@ import type {
 import type { Translations } from '@/i18n/consts';
 import { translate } from '@/i18n/translator';
 import { getString } from '@/i18n/utils';
+import { getParticipantPlayers } from '@/libs/participants';
 import { tokenizeSearchText } from '@/libs/search';
 import type { EventPlayer } from '@/data/eventPlayers';
 
@@ -120,14 +121,16 @@ function collectGameCounts(data: EventData) {
       const gameCountries = new Set<string>();
 
       for (const player of game.players) {
-        const tournamentPlayer = tournament.players[player.id];
+        const tournamentPlayer = tournament.participants[player.id];
         const navigationId = tournamentPlayer?.id ?? player.id;
 
         if (navigationId === 'BYE') {
           continue;
         }
 
-        playerCounts.set(navigationId, (playerCounts.get(navigationId) ?? 0) + 1);
+        for (const member of tournamentPlayer ? getParticipantPlayers(tournamentPlayer) : [{ id: navigationId }]) {
+          playerCounts.set(member.id, (playerCounts.get(member.id) ?? 0) + 1);
+        }
 
         if (tournamentPlayer?.country) {
           gameCountries.add(tournamentPlayer.country.toUpperCase());

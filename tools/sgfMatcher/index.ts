@@ -3,6 +3,7 @@ import path from 'node:path';
 import fg from 'fast-glob';
 import { parseDocument } from 'yaml';
 import type { InputTournament } from '@/schema/input';
+import { loadEventDefinition } from '@/events';
 import { readCliParams } from '@tools/cli';
 import { createLogger } from '@tools/sgfMatcher/logger';
 import { readEventPlayersFile } from '@/data/eventPlayers';
@@ -35,6 +36,7 @@ if (!event) {
 
 const DATA_DIR = `events/${event}/data`;
 const SGF_DIR = `events/${event}/sgf`;
+const eventDefinition = await loadEventDefinition(event);
 const eventPlayers = await readEventPlayersFile(event);
 const results: StageResult[] = [];
 
@@ -77,6 +79,7 @@ for (const yamlPath of yamlFiles.sort()) {
     const sgfPaths = allSgfPaths.filter((path) => !claimedSgfs.has(path));
 
     const stageResult = await processStage({
+      pairs: eventDefinition.pairs,
       tournament: json,
       stage,
       sgfPaths,

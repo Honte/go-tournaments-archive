@@ -28,6 +28,8 @@ export const GAME_SORTS = [
 ] as const;
 export const GAME_GROUPS = [
   'none',
+  'partner',
+  'opponent-pair',
   'opponent-player',
   'opponent-country',
   'country-player',
@@ -36,6 +38,8 @@ export const GAME_GROUPS = [
   'category',
 ] as const;
 export const QUERY_KEYS = [
+  'partner',
+  'opponentPartner',
   'player',
   'country',
   'opponent',
@@ -67,6 +71,8 @@ export type GameSort = (typeof GAME_SORTS)[number];
 export type GameGroup = (typeof GAME_GROUPS)[number];
 
 export type GameRecordsState = {
+  partner?: string;
+  opponentPartner?: string;
   player?: string;
   country?: string;
   opponent?: string;
@@ -111,6 +117,8 @@ export type GameRecordsModel = {
   groups: GameRecordsGroupResult[];
   facets: {
     player: GameFacet;
+    partner: GameFacet;
+    opponentPartner: GameFacet;
     country: GameFacet;
     opponent: GameFacet;
     opponentCountry: GameFacet;
@@ -123,10 +131,18 @@ export type GameRecordsModel = {
     media: Record<GameMedia, number>;
   };
   domains: GameRecordsDomains;
-  grouping: { opponentPlayer: boolean; opponentCountry: boolean; countryPlayer: boolean; category: boolean };
+  grouping: {
+    partner?: boolean;
+    opponentPair?: boolean;
+    opponentPlayer: boolean;
+    opponentCountry: boolean;
+    countryPlayer: boolean;
+    category: boolean;
+  };
 };
 
 export type GameRecordsOptions = {
+  pairs?: boolean;
   countriesEnabled?: boolean;
   categoriesEnabled?: boolean;
   countryLabel?: (country: string) => string;

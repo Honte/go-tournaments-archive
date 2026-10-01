@@ -6,6 +6,7 @@ import type { EventContext } from '@/schema/event';
 import type { Locale, Translations } from '@/i18n/consts';
 import { filterPlayerStatsByCategory } from '@/libs/playerStats';
 import { Opponents } from '@/components/stats/Opponents';
+import { Partners } from '@/components/stats/Partners';
 import { PlayerGames } from '@/components/stats/PlayerGames';
 import { Loader } from '@/components/ui/Loader';
 import { usePlayerStatsData } from '@/hooks/usePlayerStatsData';
@@ -48,7 +49,13 @@ function PlayerStatsContent({ event, player, translations, category }: PlayerSta
         <PlayerEvents event={event} player={player} translations={translations} />
         <PlayerGames event={event} player={player} translations={translations} />
       </div>
-      <Opponents event={event} player={player} translations={translations} category={category} />
+      <div className="flex-1 space-y-4">
+        {event.pairs && <Partners event={event} player={player} translations={translations} category={category} />}
+        <Opponents event={event} player={player} translations={translations} category={category} />
+        {event.pairs && (
+          <Opponents event={event} player={player} translations={translations} category={category} pairs />
+        )}
+      </div>
     </div>
   );
 }

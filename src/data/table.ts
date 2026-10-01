@@ -1,4 +1,4 @@
-import type { Game, Player, TableResult } from '@/schema/data';
+import type { Game, Participant, TableResult } from '@/schema/data';
 import { Breaker } from '@/schema/data';
 import { getRankValue } from '@/libs/rank';
 
@@ -10,7 +10,7 @@ export function createTable({
   breakers,
 }: {
   gamesMap: Record<string, Game>;
-  playersMap: Record<string, Player>;
+  playersMap: Record<string, Participant>;
   rounds: string[][];
   order?: string[];
   breakers?: Breaker[];

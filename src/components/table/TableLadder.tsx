@@ -1,17 +1,18 @@
 'use client';
 
-import type { Game, IndexedTablePlayerGame, LadderTableStage, Player } from '@/schema/data';
+import type { Game, IndexedTablePlayerGame, LadderTableStage, Participant } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
+import { isPair } from '@/libs/participants';
 import { GameCell } from '@/components/GameCell';
 import { GoResultsTable } from '@/components/table/GoResultsTable';
-import { PlayerLink } from '@/components/ui/PlayerLink';
+import { PlayerCell } from '@/components/ui/PlayerCell';
 
 type TableLadderProps = {
   event: EventContext;
   stage: LadderTableStage;
-  players: Record<string, Player>;
+  players: Record<string, Participant>;
   games: Record<string, Game>;
   translations: Translations;
 };
@@ -54,13 +55,14 @@ export function TableLadder({ event, stage, players, games, translations }: Tabl
                 {hasSharedPlaces && <td className="p-1">{result.index}</td>}
                 <td className="p-1">{i === 0 || result.place !== table[i - 1].place ? result.place : ''}</td>
                 <td className="p-1 text-left">
-                  <PlayerLink
+                  <PlayerCell
                     event={event}
-                    playerId={player.hasStats ? player.id : undefined}
+                    player={player}
                     locale={translations.locale}
-                  >
-                    {player.name}
-                  </PlayerLink>
+                    showLink={isPair(player) || player.hasStats}
+                    showCountry={event.showCountry}
+                    showRank={isPair(player)}
+                  />
                 </td>
                 <td className="p-1">{player.rank}</td>
                 {result.games.map((game, index) =>
@@ -86,7 +88,7 @@ export function TableLadder({ event, stage, players, games, translations }: Tabl
 
 type PlayoffGamesProps = {
   games: Record<string, Game>;
-  players: Record<string, Player>;
+  players: Record<string, Participant>;
   cols: number;
   playoffs: IndexedTablePlayerGame[];
 };

@@ -1,4 +1,4 @@
-import type { GameProps, Player, Stage } from '@/schema/data';
+import type { GameProps, Participant, Stage } from '@/schema/data';
 import type { LocalizedString } from '@/i18n/consts';
 
 export type ApiGameInfo = Omit<GameProps, 'sgf'> & {
@@ -10,8 +10,8 @@ export type ApiGameInfo = Omit<GameProps, 'sgf'> & {
   stageName?: LocalizedString;
   stageType?: Stage['type'];
   category?: string;
-  black: Player;
-  white: Player;
+  black: Participant;
+  white: Participant;
   winner?: 'black' | 'white';
   result?: string;
 };

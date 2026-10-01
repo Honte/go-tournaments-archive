@@ -42,6 +42,7 @@ type ImplicitCandidate = {
 
 export async function processImplicitStage({
   stage,
+  pairs,
   sgfPaths,
   sgfDir,
   dataDir,
@@ -50,6 +51,7 @@ export async function processImplicitStage({
   eventPlayers,
 }: {
   stage: InputTournamentStage;
+  pairs?: boolean;
   sgfPaths: string[];
   dataDir: string;
   sgfDir: string;
@@ -59,7 +61,7 @@ export async function processImplicitStage({
 }): Promise<StageAnalysisResult> {
   const tournamentFilePath = path.join(dataDir, stage.file);
   const tournamentFileContent = await readFile(tournamentFilePath, 'utf-8');
-  const tournament = parseH9(tournamentFileContent);
+  const tournament = parseH9(tournamentFileContent, pairs);
 
   const playersMap = buildPlayersMap(tournament.results, eventPlayers);
   const gamesMap = buildGamesMap(tournament.results);
@@ -89,6 +91,7 @@ export async function processImplicitStage({
 
   const { matchedEntries, matchedSgfs, unmatchedSgfs, unmatchedEntries, removedEntries } = matchImplicitSgfs({
     sgfInfos,
+    pairs,
     playersMap,
     gamesMap,
     existingGamesById,
@@ -115,6 +118,7 @@ export async function processImplicitStage({
 
 export function matchImplicitSgfs({
   sgfInfos,
+  pairs = false,
   playersMap,
   gamesMap,
   existingGamesById,
@@ -123,6 +127,7 @@ export function matchImplicitSgfs({
   force,
 }: {
   sgfInfos: SgfInfo[];
+  pairs?: boolean;
   playersMap: ImplicitLookup;
   gamesMap: Map<string, H9GameRecord>;
   existingGamesById: Map<string, ParsedGameEntry>;
@@ -152,6 +157,21 @@ export function matchImplicitSgfs({
     };
     const precheckReasons = buildCommonUnmatchedReasons(sgf, result);
 
+    if (pairs && sgf.filenameBlackName && sgf.filenameWhiteName) {
+      const filenamePlaces = [
+        lookupPlayerId(playersMap, sgf.filenameBlackName),
+        lookupPlayerId(playersMap, sgf.filenameWhiteName),
+      ];
+
+      if (
+        filenamePlaces.some((place) => place === null) ||
+        (result.black !== null && result.white !== null && !filenamePlaces.includes(result.black)) ||
+        (result.black !== null && result.white !== null && !filenamePlaces.includes(result.white))
+      ) {
+        precheckReasons.push('pair names in filename do not agree with the H9 pair');
+      }
+    }
+
     if (precheckReasons.length > 0) {
       unmatchedEntries.push(buildImplicitUnmatchedEntry(sgf, places, existingGamesBySgf, precheckReasons));
       unmatchedSgfs.push(sgf.path);
@@ -173,6 +193,17 @@ export function matchImplicitSgfs({
       unmatchedEntries.push(buildImplicitUnmatchedEntry(sgf, places, existingGamesBySgf, ['no matching game']));
       unmatchedSgfs.push(sgf.path);
       continue;
+    }
+
+    if (pairs) {
+      const winner = formatSgfWinner(sgf, places);
+      if (winner.resultStr !== null && winner.winnerPlace !== h9Record.winnerPlace) {
+        unmatchedEntries.push(
+          buildImplicitUnmatchedEntry(sgf, places, existingGamesBySgf, ['SGF result conflicts with H9'])
+        );
+        unmatchedSgfs.push(sgf.path);
+        continue;
+      }
     }
 
     const yamlGame = existingGamesById.get(localId);
@@ -279,6 +310,31 @@ export function buildPlayersMap(results: H9Player[], eventPlayers: EventPlayer[]
   const lookup: ImplicitLookup = new Map();
 
   for (const player of results) {
+    if (player.members) {
+      const aliases = player.members.map((member) => {
+        const entry = findEventPlayer(member, eventPlayers);
+        return [
+          ...new Set([
+            member.surname,
+            [member.name, member.surname].filter(Boolean).join(' '),
+            [member.surname, member.name].filter(Boolean).join(' '),
+            ...(entry
+              ? [entry.name, entry.original, ...entry.nickname, ...entry.pastNames].filter((name): name is string =>
+                  Boolean(name)
+                )
+              : []),
+          ]),
+        ];
+      });
+      for (const first of aliases[0]) {
+        for (const second of aliases[1]) {
+          registerLookupEntry(lookup, first + ' + ' + second, player.place);
+          registerLookupEntry(lookup, second + ' + ' + first, player.place);
+        }
+      }
+      continue;
+    }
+
     const fullName = `${player.name} ${player.surname}`;
     const reversedName = `${player.surname} ${player.name}`;
 
@@ -291,6 +347,10 @@ export function buildPlayersMap(results: H9Player[], eventPlayers: EventPlayer[]
   }
 
   for (const player of results) {
+    if (player.members) {
+      continue;
+    }
+
     const eventPlayer = findEventPlayer(player, eventPlayers);
 
     if (!eventPlayer) {
@@ -459,7 +519,10 @@ function resolveLocalIdPlaces(
   return blackPlace !== null && whitePlace !== null ? [blackPlace, whitePlace] : null;
 }
 
-function findEventPlayer(player: H9Player, eventPlayers: EventPlayer[]): EventPlayer | undefined {
+function findEventPlayer(
+  player: Pick<H9Player, 'name' | 'surname' | 'egd'>,
+  eventPlayers: EventPlayer[]
+): EventPlayer | undefined {
   if (player.egd) {
     const byEgd = eventPlayers.find((eventPlayer) => eventPlayer.egd === player.egd);
 

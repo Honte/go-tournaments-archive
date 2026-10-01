@@ -6,6 +6,7 @@ import { CustomSgfProps, SgfRootProps } from '@/schema/sgf';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { Sgf, type SgfNodeDataChange } from '@tools/sgf';
+import { getParticipantName, getParticipantPlayers } from '@/libs/participants';
 import { getStageName } from '@/libs/stage';
 import pkg from '../../package.json';
 
@@ -91,8 +92,8 @@ export function getTournamentSgfZipPath(sgfPath: string) {
 }
 
 export function getGameInfo(sgf: Sgf, game: Game, tournament: Tournament): ApiGameInfo {
-  const black = tournament.players[game.players[0].id];
-  const white = tournament.players[game.players[1].id];
+  const black = tournament.participants[game.players[0].id];
+  const white = tournament.participants[game.players[1].id];
   const stage = tournament.stages[game.stage];
   const sgfKomi = sgf.getNumericRootProperty(SgfRootProps.GAME_KOMI);
 
@@ -115,8 +116,8 @@ export function getGameInfo(sgf: Sgf, game: Game, tournament: Tournament): ApiGa
 
 export function getSgfProps(event: EventContext, game: Game, tournament: Tournament, translations: Translations) {
   const t = getTranslator(translations);
-  const black = tournament.players[game.players[0].id];
-  const white = tournament.players[game.players[1].id];
+  const black = tournament.participants[game.players[0].id];
+  const white = tournament.participants[game.players[1].id];
   const stage = tournament.stages[game.stage];
   const stageName = stage && getStageName(stage, translations);
   const roundName = stage && game.props.round ? `${game.props.round} (${stageName})` : undefined;
@@ -140,11 +141,11 @@ export function getSgfProps(event: EventContext, game: Game, tournament: Tournam
       : tournament.location,
     [SgfRootProps.GAME_NAME]: gameName,
     [SgfRootProps.GAME_RESULT]: game.result,
-    [SgfRootProps.BLACK_NAME]: black.name,
-    [SgfRootProps.BLACK_RANK]: black.rank,
+    [SgfRootProps.BLACK_NAME]: getParticipantName(black),
+    [SgfRootProps.BLACK_RANK]: black.rank ?? null,
     [SgfRootProps.BLACK_TEAM]: (event.showCountry && black.country) || null,
-    [SgfRootProps.WHITE_NAME]: white.name,
-    [SgfRootProps.WHITE_RANK]: white.rank,
+    [SgfRootProps.WHITE_NAME]: getParticipantName(white),
+    [SgfRootProps.WHITE_RANK]: white.rank ?? null,
     [SgfRootProps.WHITE_TEAM]: (event.showCountry && white.country) || null,
     [SgfRootProps.COPYRIGHT]: null,
     [SgfRootProps.GAME_KOMI]: (current) => (current[0] ? Number(current[0]) : (stage?.komi ?? null)),
@@ -158,8 +159,8 @@ export function getSgfProps(event: EventContext, game: Game, tournament: Tournam
     [SgfRootProps.GAME_OVERTIME]: (current) => (current[0] && !current[0].match(/error/i) ? current[0] : null),
 
     // additional attributes for SGF Viewer
-    [CustomSgfProps.BLACK_ID]: black.id,
-    [CustomSgfProps.WHITE_ID]: white.id,
+    [CustomSgfProps.BLACK_ID]: getParticipantPlayers(black).map((player) => player.id),
+    [CustomSgfProps.WHITE_ID]: getParticipantPlayers(white).map((player) => player.id),
     [CustomSgfProps.GAME_AI]: game.props.ai || null,
     [CustomSgfProps.GAME_YT]: game.props.yt || null,
     [CustomSgfProps.GAME_OGS]: game.props.ogs || null,

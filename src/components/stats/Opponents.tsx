@@ -6,6 +6,8 @@ import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getFormatter } from '@/i18n/formatter';
 import { getTranslator } from '@/i18n/translator';
+import { getOpponentRows, type RelatedPlayerRow } from '@/libs/pairStats';
+import { getParticipantPlayers, isPair } from '@/libs/participants';
 import { SgfCountLink } from '@/components/gameRecords/SgfCountLink';
 import { StatsTable } from '@/components/table/StatsTable';
 import type { StatsColumnDef } from '@/components/table/statsTableConfig';
@@ -17,95 +19,15 @@ type OpponentsProps = {
   translations: Translations;
   player: PlayerStats;
   category?: string;
+  pairs?: boolean;
 };
 
-type OpponentRow = {
-  id: string;
-  name: string;
-  games: number;
-  sgfs: number;
-  won: number;
-  drawn: number;
-  unresolved: number;
-  firstName: string;
-  lastName: string;
-  lost: number;
-  wonPercent: number;
-  country: string;
-};
+type OpponentRow = RelatedPlayerRow;
 
-export function Opponents({ event, translations, player, category }: OpponentsProps) {
+export function Opponents({ event, translations, player, category, pairs = false }: OpponentsProps) {
   const t = getTranslator(translations);
 
-  const data = useMemo(() => {
-    const stats: Record<
-      string,
-      {
-        won: number;
-        drawn: number;
-        unresolved: number;
-        games: number;
-        countries: Set<string | undefined>;
-        sgfs: Set<string>;
-      }
-    > = {};
-
-    for (const event of player.results) {
-      for (const stage of event.stages) {
-        for (const game of stage.games) {
-          if (game.id === 'BYE') {
-            continue;
-          }
-
-          const opponent = (stats[game.id] ||= {
-            games: 0,
-            won: 0,
-            drawn: 0,
-            unresolved: 0,
-            countries: new Set(),
-            sgfs: new Set(),
-          });
-
-          opponent.games += Number(!game.unresolved);
-          opponent.unresolved += Number(Boolean(game.unresolved));
-          opponent.won += Number(game.won);
-          opponent.drawn += Number(Boolean(game.drawn));
-          opponent.countries.add(game.country);
-
-          if (game.props?.sgf) {
-            opponent.sgfs.add(game.props.sgf);
-          }
-        }
-      }
-    }
-
-    return Object.entries(stats)
-      .map<OpponentRow>(([id, { games, won, drawn, unresolved, countries, sgfs }]) => {
-        const name = player.opponents[id];
-        const [firstName, ...rest] = name.split(' ');
-        const lastName = rest.join(' ') || '';
-        const country = Array.from(countries).filter(Boolean).join(', ');
-        const lost = games - won - drawn;
-        const wonPercent = won / games;
-
-        return {
-          id,
-          name,
-          firstName,
-          lastName,
-          country,
-          games,
-          sgfs: sgfs.size,
-          won,
-          drawn,
-          unresolved,
-          lost,
-          wonPercent,
-        };
-      })
-      .sort((a, b) => a.lastName.localeCompare(b.lastName));
-  }, [player]);
-
+  const data = useMemo(() => getOpponentRows(player, pairs), [player, pairs]);
   const hasSgfs = event.generateSgfs && data.some((row) => row.sgfs > 0);
   const hasDraws = data.some((opponent) => opponent.drawn > 0);
   const hasUnresolved = data.some((row) => row.unresolved > 0);
@@ -114,13 +36,20 @@ export function Opponents({ event, translations, player, category }: OpponentsPr
     () => [
       {
         accessorKey: 'firstName',
-        header: t('table.firstName'),
+        header: t(pairs ? 'table.pair' : 'table.firstName'),
+        meta: { className: 'text-left' },
         cell: (info) => (
-          <PlayerCell event={event} player={info.row.original} locale={translations.locale} showRank={false} />
+          <PlayerCell
+            event={event}
+            player={info.row.original.participant}
+            locale={translations.locale}
+            showRank={false}
+          />
         ),
-        spanColumns: 2,
+        spanColumns: pairs ? 1 : 2,
       },
       {
+        enabled: !pairs,
         accessorKey: 'lastName',
         header: t('table.lastName'),
       },
@@ -155,7 +84,12 @@ export function Opponents({ event, translations, player, category }: OpponentsPr
             event={event}
             locale={translations.locale}
             count={row.original.sgfs}
-            filters={{ player: player.id, opponent: row.original.id, category }}
+            filters={{
+              player: player.id,
+              opponent: getParticipantPlayers(row.original.participant)[0].id,
+              opponentPartner: isPair(row.original.participant) ? row.original.participant.members[1].id : undefined,
+              category,
+            }}
           />
         ),
       },
@@ -165,12 +99,12 @@ export function Opponents({ event, translations, player, category }: OpponentsPr
         cell: getFormatter(translations.locale).toPercentageCell,
       },
     ],
-    [translations, t, event, hasDraws, hasUnresolved, hasSgfs, player.id, category]
+    [translations, t, event, hasDraws, hasUnresolved, hasSgfs, player.id, category, pairs]
   );
 
   return (
     <div className="flex-1">
-      <H2>{t('stats.opponents')}</H2>
+      <H2>{t(pairs ? 'stats.opponentPairs' : 'stats.opponents')}</H2>
       <StatsTable data={data} columns={columns} />
     </div>
   );

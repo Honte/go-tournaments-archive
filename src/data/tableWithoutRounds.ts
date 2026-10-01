@@ -1,4 +1,4 @@
-import type { Game, Player, RoundRobinTableStage } from '@/schema/data';
+import type { Game, Participant, RoundRobinTableStage } from '@/schema/data';
 import { getRankValue } from '@/libs/rank';
 
 export function createTableWithoutRounds({
@@ -8,7 +8,7 @@ export function createTableWithoutRounds({
 }: {
   games: string[];
   gamesMap: Record<string, Game>;
-  playersMap: Record<string, Player>;
+  playersMap: Record<string, Participant>;
 }): RoundRobinTableStage['table'] {
   const results: Record<string, RoundRobinTableStage['table'][number]> = {};
 

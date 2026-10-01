@@ -1,6 +1,5 @@
 const PROPERTY_REGEX = /(?<key>[A-Z]+)\[(?<value>.*)]/;
 const GAME_REGEX = /(?<opponent>\d+)(?<result>[?+=-])(?<modifier>!)?(\/(?<color>[wb])(?<handicap>\d)?)?/;
-const FIRST_GAME_COLUMN = 6; // after place, surname, name, rank, country, club
 
 export type H9Tournament = {
   id: string;
@@ -17,15 +16,20 @@ export type H9Tournament = {
   results: H9Player[];
 };
 
-export type H9Player = {
+export type H9Player = H9Member & {
+  line?: number;
+  members?: [H9Member, H9Member];
   place: number;
-  name: string;
-  surname: string;
-  rank?: string;
-  country: string;
   club: string;
   games: (null | H9Game)[];
   scores: string[];
+};
+
+export type H9Member = {
+  name: string;
+  surname: string;
+  rank?: string;
+  country?: string;
   egd?: number;
 };
 
@@ -38,41 +42,20 @@ export type H9Game = {
   handicap?: number;
 };
 
-export function parseH9(input: string): H9Tournament {
-  const { properties, other, table } = loadH9(input);
-  const results: H9Player[] = [];
-  const colsWithGames = getColumnsWithGames(table);
-  const colsRounds = Array.from(colsWithGames).sort((a, b) => a - b);
+type H9Row = {
+  player: Omit<H9Player, 'games' | 'scores'>;
+  columns: string[];
+};
 
-  for (const player of table) {
-    const [place, surname, name, rank, country, club, ...columns] = player;
-    const games: H9Player['games'] = [];
-    const scores: string[] = [];
-    const egd = columns[columns.length - 1].startsWith('|') ? Number(columns.pop()!.slice(1)) : undefined;
+export function parseH9(input: string, pairs = false): H9Tournament {
+  const { properties, other, rows: sourceRows } = loadH9(input);
+  const rows: H9Row[] = [];
 
-    for (let col = 0; col < columns.length; col++) {
-      const value = columns[col];
-
-      if (!colsWithGames.has(col)) {
-        scores.push(value);
-        continue;
-      }
-
-      games.push(parseH9Game(value, colsRounds.indexOf(col) + 1));
-    }
-
-    results.push({
-      place: Number(place),
-      name: normalizePlayerName(name),
-      surname: normalizePlayerName(surname),
-      rank: normalizeRank(rank),
-      country: normalizeCountryCode(country) ?? 'XX',
-      club,
-      games,
-      scores,
-      egd,
-    });
+  for (const { columns, line } of sourceRows) {
+    rows.push(pairs ? parsePairRow(columns, line) : parsePlayerRow(columns));
   }
+
+  const gameColumns = getColumnsWithGames(rows);
 
   return {
     id: properties.TC,
@@ -84,7 +67,7 @@ export function parseH9(input: string): H9Tournament {
     komi: parseFloat(properties.KM),
     time: parseInt(properties.TM, 10),
     comments: properties.CM,
-    results,
+    results: rows.map((row) => parseRowResults(row, gameColumns)),
     other,
   };
 }
@@ -92,10 +75,10 @@ export function parseH9(input: string): H9Tournament {
 export function loadH9(input: string) {
   const properties: Record<string, string> = {};
   const other: string[] = [];
-  const table = [];
+  const rows: { columns: string[]; line: number }[] = [];
 
-  for (const line of input.split(/\r?\n/)) {
-    if (!line.trim().length) {
+  for (const [lineIndex, line] of input.split(/\r?\n/).entries()) {
+    if (!line.trim().length || line.trimStart().startsWith('#')) {
       continue;
     }
 
@@ -110,11 +93,14 @@ export function loadH9(input: string) {
         other.push(line.replace(/^;\s+/, '').trim());
       }
     } else {
-      table.push(line.trim().split(/\s+|\t+/));
+      rows.push({
+        columns: line.trim().split(/\s+|\t+/),
+        line: lineIndex + 1,
+      });
     }
   }
 
-  return { properties, other, table };
+  return { properties, other, rows };
 }
 
 export function buildLocalGameId(p1: number, p2: number, round?: number): string {
@@ -147,28 +133,60 @@ export function normalizeCountryCode(country?: string) {
   return country?.toUpperCase();
 }
 
-function getColumnsWithGames(table: string[][]) {
-  const results: Record<string, number> = {};
+function parsePlayerRow(row: string[]): H9Row {
+  const [place, surname, name, rank, country, club, ...columns] = row;
 
-  for (const player of table) {
-    for (let col = FIRST_GAME_COLUMN; col < player.length; col++) {
-      const index = col - FIRST_GAME_COLUMN;
-      const value = player[col];
+  return {
+    player: {
+      place: Number(place),
+      name: normalizePlayerName(name),
+      surname: normalizePlayerName(surname),
+      rank: normalizeRank(rank),
+      country: normalizeCountryCode(country) ?? 'XX',
+      club,
+    },
+    columns,
+  };
+}
 
-      results[index] ||= 0;
+function parseRowResults({ player, columns }: H9Row, gameColumns: Set<number>): H9Player {
+  const games: H9Player['games'] = [];
+  const scores: string[] = [];
+  const pin = columns.at(-1);
+  const egd = pin?.startsWith('|') ? Number(pin.slice(1)) : undefined;
+  const values = pin?.startsWith('|') ? columns.slice(0, -1) : columns;
 
-      if (!value || value === '-' || value === '?' || value?.match(GAME_REGEX)) {
-        results[index]++;
+  for (const [column, value] of values.entries()) {
+    if (gameColumns.has(column)) {
+      games.push(parseH9Game(value, games.length + 1));
+    } else {
+      scores.push(value);
+    }
+  }
+
+  return { ...player, games, scores, egd };
+}
+
+function getColumnsWithGames(rows: H9Row[]): Set<number> {
+  const counts = new Map<number, number>();
+
+  for (const { columns } of rows) {
+    for (const [column, value] of columns.entries()) {
+      if (!value || value === '-' || value === '?' || GAME_REGEX.test(value)) {
+        counts.set(column, (counts.get(column) ?? 0) + 1);
       }
     }
   }
 
-  // round is only when all values are expected (is a game or is a game skip)
-  return new Set(
-    Object.keys(results)
-      .filter((index) => results[index] === table.length)
-      .map(Number)
-  );
+  const gameColumns = new Set<number>();
+  for (const [column, count] of counts) {
+    // A round must contain a game or an empty-round marker in every row.
+    if (count === rows.length) {
+      gameColumns.add(column);
+    }
+  }
+
+  return gameColumns;
 }
 
 function parseH9Game(value: string, round: number): H9Game | null {
@@ -197,4 +215,119 @@ function parseLocation(location?: string) {
     country: index >= 0 ? location!.slice(0, index).trim() : undefined,
     location: index >= 0 ? location!.slice(index + 1).trim() : location?.trim(),
   };
+}
+
+const PAIR_RANK = /^\d{1,2}[dkp]$/i;
+const PAIR_COUNTRY = /^[a-z]{2}$/i;
+
+type PairLayout = {
+  fullName: boolean;
+  rank: boolean;
+  country: boolean;
+};
+
+const PAIR_LAYOUTS: PairLayout[] = [
+  { fullName: true, rank: false, country: false },
+  { fullName: false, rank: false, country: false },
+  { fullName: false, rank: true, country: false },
+  { fullName: false, rank: true, country: true },
+];
+
+function parsePairRow(row: string[], line: number): H9Row {
+  try {
+    const parsed = detectPairLayout(row);
+    parsed.player.line = line;
+    return parsed;
+  } catch (cause) {
+    throw new Error(`H9 line ${line}: ${cause instanceof Error ? cause.message : String(cause)}`, { cause });
+  }
+}
+
+function detectPairLayout(row: string[]): H9Row {
+  let text = row.join(' ');
+  const pins = text.match(/\|(\d+)\|(\d+)$/);
+  if (pins) {
+    text = text.slice(0, pins.index).trimEnd();
+  } else if (text.includes('|')) {
+    throw new Error('Expected two EGD identifiers');
+  }
+  const values = text.split(/\s+/);
+  const candidates: H9Row[] = [];
+  for (const layout of PAIR_LAYOUTS) {
+    const candidate = parsePairLayout(values, layout);
+    if (candidate) {
+      candidates.push(candidate);
+    }
+  }
+  if (candidates.length !== 1) {
+    throw new Error('Unrecognized or ambiguous pair columns; pair rank and country are required');
+  }
+  const result = candidates[0];
+  if (pins) {
+    result.player.members![0].egd = Number(pins[1]);
+    result.player.members![1].egd = Number(pins[2]);
+  }
+  return result;
+}
+
+function parsePairLayout(values: string[], layout: PairLayout): H9Row | undefined {
+  const memberWidth = (layout.fullName ? 1 : 2) + Number(layout.rank) + Number(layout.country);
+  const first = parsePairMember(values.slice(1, 1 + memberWidth), layout);
+  const second = parsePairMember(values.slice(1 + memberWidth, 1 + 2 * memberWidth), layout);
+  const [rank, country, ...columns] = values.slice(1 + 2 * memberWidth);
+
+  if (!first || !second || !PAIR_RANK.test(rank ?? '') || !PAIR_COUNTRY.test(country ?? '')) {
+    return undefined;
+  }
+
+  // H9 exports may include a club between the country and scores/rounds.
+  const club = columns[0] && /^[\p{L}_][\p{L}\p{N}_-]*$/u.test(columns[0]) ? columns.shift()! : '';
+  if (columns.some(isInvalidPairResult)) {
+    return undefined;
+  }
+
+  first.country ??= normalizeCountryCode(country);
+  second.country ??= normalizeCountryCode(country);
+  return {
+    player: {
+      place: Number(values[0]),
+      name: 'Pair',
+      surname: 'Pair',
+      members: [first, second],
+      rank: normalizeRank(rank),
+      country: normalizeCountryCode(country)!,
+      club,
+    },
+    columns,
+  };
+}
+
+function parsePairMember(values: string[], layout: PairLayout): H9Member | undefined {
+  let offset = 0;
+  const surname = values[offset++];
+  const name = layout.fullName ? '' : values[offset++];
+  const rank = layout.rank ? values[offset++] : undefined;
+  const country = layout.country ? values[offset] : undefined;
+
+  if (
+    !surname ||
+    name === undefined ||
+    PAIR_RANK.test(surname) ||
+    (layout.rank && !PAIR_RANK.test(rank ?? '')) ||
+    (layout.country && !PAIR_COUNTRY.test(country ?? ''))
+  ) {
+    return undefined;
+  }
+
+  return {
+    surname: normalizePlayerName(surname),
+    name: normalizePlayerName(name),
+    rank: normalizeRank(rank),
+    country: normalizeCountryCode(country),
+    egd: undefined,
+  };
+}
+
+function isInvalidPairResult(value: string): boolean {
+  return !/^(?:[-?]|\d.*)$/.test(value);
 }

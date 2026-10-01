@@ -1,4 +1,4 @@
-import type { Player, Stage, Tournament } from '@/schema/data';
+import type { Participant, Stage, Tournament } from '@/schema/data';
 
 export type TournamentRow = {
   year: number;
@@ -6,9 +6,9 @@ export type TournamentRow = {
   country?: string;
   start?: string;
   end?: string;
-  gold: Player[];
-  silver: Player[];
-  bronze: Player[];
+  gold: Participant[];
+  silver: Participant[];
+  bronze: Participant[];
   referee?: string;
   players: number;
   stages: number;
@@ -97,7 +97,7 @@ function countPlayers(
 
   const addPlayer = (id: string) => {
     if (id !== 'BYE') {
-      const player = tournament.players[id];
+      const player = tournament.participants[id];
       if (player && player.id !== 'BYE') {
         ids.add(player.id);
       }
@@ -111,7 +111,7 @@ function countPlayers(
       }
     }
   } else if (!category) {
-    for (const player of Object.values(tournament.players)) {
+    for (const player of Object.values(tournament.participants)) {
       if (player.id !== 'BYE') {
         ids.add(player.id);
       }
@@ -145,14 +145,14 @@ function getStagePlayers(stage: Stage, category?: string): Set<string> {
   return players;
 }
 
-function getPodium(tournament: Tournament, ids?: readonly string[]): Player[] {
+function getPodium(tournament: Tournament, ids?: readonly string[]): Participant[] {
   if (!ids) {
     return [];
   }
-  const players: Player[] = [];
+  const players: Participant[] = [];
   const seen = new Set<string>();
   for (const id of ids) {
-    const player = tournament.players[id];
+    const player = tournament.participants[id];
     if (player && !seen.has(player.id)) {
       seen.add(player.id);
       players.push(player);
