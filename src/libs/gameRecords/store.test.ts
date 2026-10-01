@@ -8,6 +8,21 @@ import { createGames, state } from './testFixtures';
 describe('game records store', () => {
   const games = createGames();
 
+  it('uses the event pair option for facets and grouping instead of inspecting games', () => {
+    for (const pairs of [true, false]) {
+      const store = createGameRecordsStore({ games, options: { pairs }, initialState: state() });
+      store.getState().setFilters({ player: 'a', opponent: 'b' });
+      const model = store.getState().model;
+      assert.equal(model.facets.partner.visible, pairs);
+      assert.equal(model.facets.opponentPartner.visible, pairs);
+      assert.equal(Boolean(model.grouping.partner), pairs);
+      store.getState().clearFilters();
+      assert.equal(store.getState().options.pairs, pairs);
+    }
+    const empty = createGameRecordsStore({ games: [], options: { pairs: true } });
+    assert.equal(empty.getState().options.pairs, true);
+  });
+
   it('recomputes the model through facet setters and clears all filters', () => {
     const store = createGameRecordsStore({
       games,

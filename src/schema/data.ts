@@ -23,7 +23,7 @@ export type Tournament = TournamentDetails & {
   id: number;
   games: Record<string, Game>;
   stages: Stage[];
-  players: Record<string, Player>;
+  participants: Record<string, Participant>;
   hasSgfs: boolean;
 };
 
@@ -188,6 +188,15 @@ export type Player = {
   hasStats?: boolean;
 };
 
+export type Pair = {
+  id: string;
+  members: [Player, Player];
+  rank?: string;
+  country?: string;
+};
+
+export type Participant = Player | Pair;
+
 export type Game = {
   id: string;
   stage: number;
@@ -223,6 +232,7 @@ export type GamePropsArrayKey = KeysMatching<GameProps, string[]>;
 export type StatsMedals = [gold: string[], silver: string[], bronze: string[]];
 
 export type PlayerGame = {
+  opponent?: Participant;
   id: string; // opponent id
   country?: string; // opponent country
   rank?: string; // opponent rank
@@ -259,6 +269,10 @@ export type PlayerStats = PlayerSummary & {
 };
 
 export type PlayerResult = {
+  partner?: Player;
+  pairRank?: string;
+  pairCountry?: string;
+  participant?: Participant;
   year: number;
   place: number;
   name: string;

@@ -3,6 +3,8 @@ import { DEFAULT_GAME_RECORDS_STATE, type GameRecordsState } from '@/libs/gameRe
 export function getActiveGameFilterCount(state: GameRecordsState) {
   return [
     state.player,
+    state.partner,
+    state.opponentPartner,
     state.country,
     state.opponent,
     state.opponentCountry,

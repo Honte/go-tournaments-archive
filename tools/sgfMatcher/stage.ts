@@ -5,6 +5,7 @@ import { processImplicitStage } from './implicit';
 import type { StageAnalysisResult } from './types';
 
 type StageProcessInput = {
+  pairs?: boolean;
   tournament: InputTournament;
   stage: InputStage;
   sgfPaths: string[];

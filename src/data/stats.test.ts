@@ -517,7 +517,7 @@ function createTournament(
     top: [['a'], ['b']],
     categoriesTop,
     games,
-    players,
+    participants: players,
     hasSgfs: true,
     stages: [
       {

@@ -2,14 +2,14 @@
 
 import { clsx } from 'clsx';
 import { type ElementType, type HTMLAttributes, type JSX, type PropsWithChildren, MouseEvent, useRef } from 'react';
-import type { Game, Player } from '@/schema/data';
+import type { Game, Participant } from '@/schema/data';
 import { SHOW_POPOVER_EVENT } from '@/components/GamePopover';
 
 type GamePopoverTriggerProps = PropsWithChildren<
   {
     as?: keyof JSX.IntrinsicElements;
     game: Game;
-    players: Record<string, Player>;
+    players: Record<string, Participant>;
   } & HTMLAttributes<HTMLElement>
 >;
 

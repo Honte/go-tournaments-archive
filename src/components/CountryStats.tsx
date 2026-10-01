@@ -49,6 +49,9 @@ function CountryStatsContent({ event, country, translations, category }: Country
       <CountryAchievements event={event} country={filteredCountry} translations={translations} category={category} />
       <CountryEvents event={event} country={filteredCountry} translations={translations} showCategories={!category} />
       <CountryPlayers event={event} country={filteredCountry} translations={translations} category={category} />
+      {event.pairs && (
+        <CountryPlayers event={event} country={filteredCountry} translations={translations} category={category} pairs />
+      )}
       <CountryOpponents event={event} country={filteredCountry} translations={translations} category={category} />
     </div>
   );

@@ -5,6 +5,7 @@ import { RankRange } from './RankRange';
 import type { GameFacetProps } from './types';
 
 export function PlayerRankFacet({ store, t }: GameFacetProps) {
+  const pairs = useStore(store, (storeState) => storeState.options.pairs);
   const state = useStore(store, (storeState) => storeState.model.state);
   const ranks = useStore(store, (storeState) => storeState.model.domains.ranks);
   const setFilters = useStore(store, (storeState) => storeState.setFilters);
@@ -12,7 +13,7 @@ export function PlayerRankFacet({ store, t }: GameFacetProps) {
   return (
     <RankRange
       id="game-player-rank"
-      label={t('gamesFilter.playerRank')}
+      label={t(pairs ? 'gamesFilter.pairRank' : 'gamesFilter.playerRank')}
       ranks={ranks}
       minimum={state.playerRankMin}
       maximum={state.playerRankMax}

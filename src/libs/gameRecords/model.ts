@@ -14,11 +14,12 @@ export function buildGameRecordsModel(
 ): GameRecordsModel {
   const countriesEnabled = options.countriesEnabled ?? true;
   const categoriesEnabled = options.categoriesEnabled ?? true;
+  const pairs = options.pairs ?? false;
   const countryLabel = options.countryLabel ?? ((country: string) => country);
   const categoryLabel = options.categoryLabel ?? ((category: string) => category);
   const hasCategories = categoriesEnabled && Boolean(getCategories(games).size);
-  const state = normalizeGameRecordsState(games, requestedState, { countriesEnabled, categoriesEnabled });
-  const grouping = getGameGroupEligibility(state, countriesEnabled, hasCategories);
+  const state = normalizeGameRecordsState(games, requestedState, { countriesEnabled, categoriesEnabled, pairs });
+  const grouping = getGameGroupEligibility(state, countriesEnabled, hasCategories, pairs);
   const normalizedState = groupingForState(state, grouping);
   const matches = sortGameRecords(filterGameRecords(games, normalizedState), normalizedState.sort);
 
@@ -39,6 +40,7 @@ export function buildGameRecordsModel(
       unknownCountryLabel: options.unknownCountryLabel ?? '?',
     }),
     facets: buildGameRecordsFacets(games, normalizedState, {
+      pairs,
       countriesEnabled,
       categoriesEnabled,
       countryLabel,

@@ -33,7 +33,7 @@ The directories in [events/](./) are the event catalogue. Check each event's `co
 4. Add original game records under `sgf/<year>/` and use the [SGF matcher](../tools/sgfMatcher/README.md) if available.
 5. Run the event locally, for example `npx cross-env EVENT=wagc npm run dev`, and inspect the edition at `/en/<year>`.
 6. Check standings, player links, and linked SGFs. Build the affected event before submitting data or route changes.
-   Inspect parsing errors in the console too: the loader can log a failed stage and continue without it.
+   Parsing errors stop loading the edition; a failed stage is never published as a partial result.
 
 Use the event's supported locale in the URL. The `cross-env` examples work in PowerShell and POSIX shells.
 Tournament data is cached in the development server. Restart it after editing YAML, H9, or player registries if changes
@@ -394,3 +394,33 @@ Useful `tournament` fields:
 - `findSharedPlaces` derives shared places from matching configured breakers.
 - `sharedPlaces` can explicitly map ranges such as `4-6`.
 - `customBreakers` defines display names, descriptions, order, and visibility for non-standard score columns.
+
+## Pair tournaments
+
+Set `pairs: true` in the event configuration. Every edition and stage then uses pairs; supported stages are
+`tournament` (H9) and `classification`. Other stage types fail with an error. A pair contains exactly two different
+people and cannot change members within an edition. The order in the source controls presentation, without gender
+fields in the application model. Pair identities use the two canonical person IDs, irrespective of their order.
+
+H9 accepts two underscore-separated full names, two surname/name blocks, or surname/name blocks with individual
+ranks and optional countries. Follow these with the pair rank and country, then the usual club, scores and rounds.
+Two EGD identifiers may follow as `|123|456`, including directly after the final score. The pair rank is never
+calculated; `unknownRanks` applies to both pair and individual ranks. A missing individual country uses the pair's.
+
+YAML retains string player declarations; use local pair IDs in `order` and `top`:
+
+```yaml
+players:
+  pair1: 'Cruella de Mon 2d (GB) |123 + Luffy Monkey D 7d (JP) |456; 5d (JP)'
+stages:
+  - type: classification
+    order: [pair1]
+```
+
+Both people receive the pair's placing, medal and game results. Country totals use the pair country once per pair;
+global game totals count each game once. Pair results use one row per pair, with both linked names in one cell
+and shared result columns. The results highlighter treats each pair as one participant.
+
+Generated SGFs put both names in `PB`/`PW` separated by `+`, the pair rank in `BR`/`WR`, and the pair country
+in `BT`/`WT` when enabled. `XABID`/`XAWID` contain two values in presentation order, linking to person profiles.
+Original SGFs remain unchanged. The matcher requires both members and rejects conflicting pair filenames.

@@ -1,11 +1,11 @@
 import type { JSX } from 'react';
-import type { Game, IndexedTablePlayerGame, Player } from '@/schema/data';
+import type { Game, IndexedTablePlayerGame, Participant } from '@/schema/data';
 import { GamePopoverTrigger } from '@/components/GamePopoverTrigger';
 
 type GameCellProps = {
   entry: IndexedTablePlayerGame;
   games: Record<string, Game>;
-  players: Record<string, Player>;
+  players: Record<string, Participant>;
   as: keyof JSX.IntrinsicElements;
   colSpan?: number;
 };

@@ -3,6 +3,7 @@ import type { EventSummary, Stats, Tournament } from '@/schema/data';
 import type { Locale, LocalizedString } from '@/i18n/consts';
 
 export type EventDefinition = {
+  readonly pairs?: boolean;
   readonly id: string;
   readonly locales: [Locale, ...Locale[]];
   readonly showCountry?: boolean;

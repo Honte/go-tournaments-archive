@@ -9,6 +9,7 @@ export type SgfPlayer = {
   rank?: string;
   country?: string;
   won?: boolean;
+  members?: { id: string; name: string }[];
 };
 
 export type SgfData = {
@@ -70,14 +71,14 @@ export function loadSgf(content: string, sgfPath?: string): SgfData {
     result,
     komi: sgf.getNumericRootProperty(SgfRootProps.GAME_KOMI),
     black: {
-      id: sgf.getStringRootProperty(CustomSgfProps.BLACK_ID),
+      ...getSgfMembers(sgf, CustomSgfProps.BLACK_ID, SgfRootProps.BLACK_NAME),
       name: sgf.getStringRootProperty(SgfRootProps.BLACK_NAME)!,
       rank: sgf.getStringRootProperty(SgfRootProps.BLACK_RANK),
       country: sgf.getStringRootProperty(SgfRootProps.BLACK_TEAM),
       won: result?.startsWith('B'),
     },
     white: {
-      id: sgf.getStringRootProperty(CustomSgfProps.WHITE_ID),
+      ...getSgfMembers(sgf, CustomSgfProps.WHITE_ID, SgfRootProps.WHITE_NAME),
       name: sgf.getStringRootProperty(SgfRootProps.WHITE_NAME)!,
       rank: sgf.getStringRootProperty(SgfRootProps.WHITE_RANK),
       country: sgf.getStringRootProperty(SgfRootProps.WHITE_TEAM),
@@ -99,4 +100,13 @@ function moveToVertex(position: string) {
   const y = b.charCodeAt(0) - 97;
 
   return [x, y] as Vertex;
+}
+
+function getSgfMembers(sgf: Sgf, idProp: CustomSgfProps, nameProp: SgfRootProps) {
+  const ids = sgf.getRootProperty(idProp) ?? [];
+  const names = sgf.getStringRootProperty(nameProp)?.split(' + ') ?? [];
+  if (ids.length === 2 && names.length === 2) {
+    return { members: ids.map((id, index) => ({ id, name: names[index] })) };
+  }
+  return { id: ids.length === 1 ? ids[0] : undefined };
 }

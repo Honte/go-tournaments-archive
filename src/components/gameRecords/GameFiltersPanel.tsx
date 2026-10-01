@@ -19,6 +19,7 @@ import {
   WinnerFacet,
   YearFacet,
 } from '@/components/gameRecords/facets';
+import { PartnerFacet } from '@/components/gameRecords/facets/PartnerFacet';
 import type { GameFacetProps } from '@/components/gameRecords/facets/types';
 import { GameRecordsToolbar } from '@/components/gameRecords/GameRecordsToolbar';
 
@@ -55,6 +56,7 @@ export function GameFiltersPanel({ store, t }: GameFacetProps) {
               </h2>
 
               <PlayerFacet store={store} t={t} />
+              <PartnerFacet store={store} t={t} />
               <CountryFacet store={store} t={t} />
               <PlayerRankFacet store={store} t={t} />
               <PlayerColorFacet store={store} t={t} />
@@ -69,6 +71,7 @@ export function GameFiltersPanel({ store, t }: GameFacetProps) {
               </h2>
 
               <OpponentFacet store={store} t={t} />
+              <PartnerFacet store={store} t={t} opponent />
               <OpponentCountryFacet store={store} t={t} />
               <OpponentRankFacet store={store} t={t} />
             </section>

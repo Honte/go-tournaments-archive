@@ -1,4 +1,4 @@
-import type { Game, Player, Stage } from '@/schema/data';
+import type { Game, Participant, Stage } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { StageFinal } from '@/components/StageFinal';
@@ -11,7 +11,7 @@ type StageResultsProps = {
   event: EventContext;
   stage: Stage;
   games: Record<string, Game>;
-  players: Record<string, Player>;
+  players: Record<string, Participant>;
   translations: Translations;
 };
 

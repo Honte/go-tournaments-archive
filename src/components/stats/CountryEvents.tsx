@@ -1,17 +1,18 @@
 'use client';
 
 import { useMemo, useState } from 'react';
-import type { CountryStats } from '@/schema/data';
+import type { CountryStats, Participant } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getFormatter } from '@/i18n/formatter';
 import { getTranslator } from '@/i18n/translator';
 import { getGameStats } from '@/libs/games';
+import { getParticipantPlayers, isPair } from '@/libs/participants';
 import { SgfCountLink } from '@/components/gameRecords/SgfCountLink';
 import { StatsTable } from '@/components/table/StatsTable';
 import type { StatsColumnDef } from '@/components/table/statsTableConfig';
 import { H2 } from '@/components/ui/H2';
-import { PlayerLink } from '@/components/ui/PlayerLink';
+import { PlayerCell } from '@/components/ui/PlayerCell';
 import { Toggle } from '@/components/ui/Toggle';
 import { YearLink } from '@/components/YearLink';
 
@@ -23,6 +24,7 @@ type CountryEventsProps = {
 };
 
 type CountryEventRow = {
+  participant?: Participant;
   year: number;
   categories?: string[];
   id: string;
@@ -88,21 +90,21 @@ export function CountryEvents({
       },
       {
         accessorKey: 'name',
-        header: t('table.player'),
+        header: t(event.pairs ? 'table.pair' : 'table.player'),
+        meta: { className: 'text-left' },
         cell: (info) => (
-          <PlayerLink
+          <PlayerCell
             event={event}
-            playerId={info.row.original.id}
             locale={translations.locale}
-            className="block text-left"
-          >
-            {info.row.original.name}
-          </PlayerLink>
+            player={info.row.original.participant ?? info.row.original}
+            showRank={false}
+            showCountry={false}
+          />
         ),
       },
       {
         accessorKey: 'rank',
-        header: t('table.rank'),
+        header: t(event.pairs ? 'table.pairRank' : 'table.rank'),
       },
       {
         accessorKey: 'place',
@@ -140,7 +142,13 @@ export function CountryEvents({
             locale={translations.locale}
             count={row.original.sgfs}
             filters={{
-              player: row.original.id,
+              player: row.original.participant
+                ? getParticipantPlayers(row.original.participant)[0].id
+                : row.original.id,
+              partner:
+                row.original.participant && isPair(row.original.participant)
+                  ? row.original.participant.members[1].id
+                  : undefined,
               country: country.code,
               years: [row.original.year],
               category: row.original.category,
@@ -215,6 +223,7 @@ export function getCountryEventRows({ country, showBestOnly, hasCategories, show
         list.push({
           year: Number(year),
           id: result.id,
+          participant: result.participant,
           name: result.name,
           rank: result.rank,
           sgfs: new Set(stage.games.map((game) => game.props?.sgf).filter(Boolean)).size,

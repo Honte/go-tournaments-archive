@@ -1,16 +1,17 @@
 'use client';
 
-import type { Game, Player, RoundRobinTableStage } from '@/schema/data';
+import type { Game, Participant, RoundRobinTableStage } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
+import { getParticipantName, isPair } from '@/libs/participants';
 import { GamePopoverTrigger } from '@/components/GamePopoverTrigger';
-import { PlayerLink } from '@/components/ui/PlayerLink';
+import { PlayerCell } from '@/components/ui/PlayerCell';
 
 type TableWithoutRoundsProps = {
   event: EventContext;
   stage: RoundRobinTableStage;
-  players: Record<string, Player>;
+  players: Record<string, Participant>;
   games: Record<string, Game>;
   translations: Translations;
 };
@@ -28,8 +29,8 @@ export function TableWithoutRounds({ event, stage, players, games, translations 
             <th className="p-1 text-left">{t('table.name')}</th>
             <th className="p-1">{t('table.rank')}</th>
             {table.map((player, index) => (
-              <th className="p-1" key={index} title={players[player.id].name}>
-                {shorten(players[player.id].name)}
+              <th className="p-1" key={index} title={getParticipantName(players[player.id])}>
+                {shorten(getParticipantName(players[player.id]))}
               </th>
             ))}
             <th className="p-1">{t('breakers.wins')}</th>
@@ -43,13 +44,14 @@ export function TableWithoutRounds({ event, stage, players, games, translations 
               <tr key={result.id} className="text-center even:bg-archive-row-stripe">
                 <td className="p-1">{i === 0 || result.place !== table[i - 1].place ? result.place : ''}</td>
                 <td className="p-1 text-left">
-                  <PlayerLink
+                  <PlayerCell
                     event={event}
-                    playerId={player.hasStats ? player.id : undefined}
+                    player={player}
                     locale={translations.locale}
-                  >
-                    {player.name}
-                  </PlayerLink>
+                    showLink={isPair(player) || player.hasStats}
+                    showCountry={event.showCountry}
+                    showRank={isPair(player)}
+                  />
                 </td>
                 <td className="p-1">{player.rank}</td>
                 {table.map((p, index) => {

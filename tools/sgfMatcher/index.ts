@@ -3,6 +3,7 @@ import path from 'node:path';
 import fg from 'fast-glob';
 import { parseDocument } from 'yaml';
 import type { InputTournament } from '@/schema/input';
+import { loadEventDefinition } from '@/events';
 import { readCliParams } from '@tools/cli';
 import { createLogger } from '@tools/sgfMatcher/logger';
 import { readEventPlayersFile } from '@/data/eventPlayers';
@@ -54,7 +55,8 @@ if (dry) {
 async function processEvent(event: string) {
   const DATA_DIR = `events/${event}/data`;
   const SGF_DIR = `events/${event}/sgf`;
-  const eventPlayers = await readEventPlayersFile(event);
+  const eventDefinition = await loadEventDefinition(event);
+const eventPlayers = await readEventPlayersFile(event);
   const results: StageResult[] = [];
   const loadedSgfs = new Set<string>();
 
@@ -93,15 +95,16 @@ async function processEvent(event: string) {
       const sgfPaths = allSgfPaths.filter((path) => !claimedSgfs.has(path));
 
       const stageResult = await processStage({
-        tournament: json,
-        stage,
-        sgfPaths,
-        dataDir: DATA_DIR,
-        sgfDir: SGF_DIR,
-        force,
-        strict,
-        eventPlayers,
-      });
+        pairs: eventDefinition.pairs,
+      tournament: json,
+      stage,
+      sgfPaths,
+      dataDir: DATA_DIR,
+      sgfDir: SGF_DIR,
+      force,
+      strict,
+      eventPlayers,
+    });
 
       if (stage.type !== 'classification') {
         for (const sgf of sgfPaths) {

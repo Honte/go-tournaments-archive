@@ -5,6 +5,7 @@ import { FacetSelect } from '@/components/ui/FacetSelect';
 import type { GameFacetProps } from './types';
 
 export function OpponentCountryFacet({ store, t }: GameFacetProps) {
+  const pairs = useStore(store, (storeState) => storeState.options.pairs);
   const facet = useStore(store, (state) => state.model.facets.opponentCountry);
   const value = useStore(store, (state) => state.model.state.opponentCountry);
   const setFilters = useStore(store, (state) => state.setFilters);
@@ -16,7 +17,7 @@ export function OpponentCountryFacet({ store, t }: GameFacetProps) {
   return (
     <FacetSelect
       id="game-opponent-country"
-      label={t('gamesFilter.opponentCountry')}
+      label={t(pairs ? 'gamesFilter.opponentPairCountry' : 'gamesFilter.opponentCountry')}
       options={facet.options}
       value={value ?? null}
       onChange={(opponentCountry) => setFilters({ opponentCountry: opponentCountry ?? undefined })}

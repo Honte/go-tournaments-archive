@@ -1,4 +1,5 @@
 import type { ApiGameInfo } from '@/schema/api';
+import { getParticipantName, getParticipantPlayers } from '@/libs/participants';
 import type { OrientedGame } from './filters';
 import type { GameGroup, GameRecordsGroupResult, GameRecordsState } from './schema';
 
@@ -85,7 +86,7 @@ export function getPlayerMeta(games: readonly ApiGameInfo[]) {
   const result = new Map<string, PlayerMeta>();
 
   for (const game of games) {
-    for (const player of [game.black, game.white]) {
+    for (const player of [game.black, game.white].flatMap(getParticipantPlayers)) {
       const current = result.get(player.id);
       const aliases = current?.aliases ?? new Set<string>();
 
@@ -120,10 +121,23 @@ function getGroupDetails(
   const UNKNOWN = '__unknown__';
 
   switch (group) {
+    case 'partner': {
+      const partner = getParticipantPlayers(match.player).find((player) => player.id !== state.player)!;
+
+      return {
+        key: partner.id,
+        label: options.playerMeta.get(partner.id)?.label ?? partner.name,
+      };
+    }
+    case 'opponent-pair':
+      return {
+        key: match.opponent.id,
+        label: getParticipantName(match.opponent),
+      };
     case 'opponent-player':
       return {
         key: match.opponent.id,
-        label: options.playerMeta.get(match.opponent.id)?.label ?? match.opponent.name,
+        label: options.playerMeta.get(match.opponent.id)?.label ?? getParticipantName(match.opponent),
       };
     case 'opponent-country': {
       const country = match.opponent.country?.toUpperCase() ?? UNKNOWN;
@@ -142,7 +156,10 @@ function getGroupDetails(
 
       if (sameCountry) {
         const players = [match.player, match.opponent]
-          .map((player) => ({ id: player.id, label: options.playerMeta.get(player.id)?.label ?? player.name }))
+          .map((player) => ({
+            id: player.id,
+            label: options.playerMeta.get(player.id)?.label ?? getParticipantName(player),
+          }))
           .toSorted((left, right) => left.label.localeCompare(right.label) || left.id.localeCompare(right.id));
 
         return {
@@ -153,7 +170,7 @@ function getGroupDetails(
 
       return {
         key: `player:${match.player.id}`,
-        label: options.playerMeta.get(match.player.id)?.label ?? match.player.name,
+        label: options.playerMeta.get(match.player.id)?.label ?? getParticipantName(match.player),
       };
     }
     case 'year-round': {
