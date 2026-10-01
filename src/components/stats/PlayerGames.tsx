@@ -146,7 +146,8 @@ export function PlayerGames({ event, player, translations }: PlayerGamesProps) {
         header: t('table.lastName'),
       },
       {
-        accessorKey: 'opponent.country',
+        id: 'opponentCountry',
+        accessorFn: (row) => row.opponent.country,
         header: t('table.country'),
         enabled: event.showCountry,
         cell: (info) => (
@@ -154,7 +155,8 @@ export function PlayerGames({ event, player, translations }: PlayerGamesProps) {
         ),
       },
       {
-        accessorKey: 'opponent.rank',
+        id: 'opponentRank',
+        accessorFn: (row) => row.opponent.rank,
         header: t('table.rank'),
       },
       {
