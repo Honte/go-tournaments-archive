@@ -1,5 +1,6 @@
 import type { ApiGameInfo } from '@/schema/api';
 import { normalizeRank } from '@/libs/h9';
+import { getParticipantPlayers, hasParticipantPlayer } from '@/libs/participants';
 import { getRankValue } from '@/libs/rank';
 import { formatKomi, getOrientations, isKnown, type OrientedGame, uniqueKnown, uniqueKomi } from './filters';
 import {
@@ -14,6 +15,8 @@ import {
 } from './schema';
 
 export type GameGroupEligibility = {
+  partner?: boolean;
+  opponentPair?: boolean;
   opponentPlayer: boolean;
   opponentCountry: boolean;
   countryPlayer: boolean;
@@ -23,7 +26,11 @@ export type GameGroupEligibility = {
 export function normalizeGameRecordsState(
   games: readonly ApiGameInfo[],
   requested: GameRecordsState,
-  options: { countriesEnabled?: boolean; categoriesEnabled?: boolean } = {}
+  options: {
+    countriesEnabled?: boolean;
+    categoriesEnabled?: boolean;
+    pairs?: boolean;
+  } = {}
 ): GameRecordsState {
   const players = getPlayers(games);
   const countries = getCountries(games);
@@ -91,6 +98,20 @@ export function normalizeGameRecordsState(
       ? state.opponentCountry.toUpperCase()
       : undefined;
 
+  for (const [key, principal] of [
+    ['partner', 'player'],
+    ['opponentPartner', 'opponent'],
+  ] as const) {
+    if (
+      state[key] &&
+      (!state[principal] ||
+        state[key] === state[principal] ||
+        !hasStructuralMatch(games, { player: state.player, opponent: state.opponent, [key]: state[key] }))
+    ) {
+      state[key] = undefined;
+    }
+  }
+
   normalizeRange(state, 'movesMin', 'movesMax');
   normalizeRankRange(state, 'playerRankMin', 'playerRankMax');
   normalizeRankRange(state, 'opponentRankMin', 'opponentRankMax');
@@ -101,27 +122,31 @@ export function normalizeGameRecordsState(
 
   return groupingForState(
     state,
-    getGameGroupEligibility(state, countriesEnabled, categoriesEnabled && Boolean(categories.size))
+    getGameGroupEligibility(state, countriesEnabled, categoriesEnabled && Boolean(categories.size), options.pairs)
   );
 }
 
 export function getGameGroupEligibility(
   state: GameRecordsState,
   countriesEnabled = true,
-  categoriesEnabled = false
+  categoriesEnabled = false,
+  pairs = false
 ): GameGroupEligibility {
   return {
-    opponentPlayer: Boolean((state.player || state.country) && !state.opponent),
+    ...(pairs && { partner: Boolean(state.player), opponentPair: Boolean(state.player) }),
+    opponentPlayer: !pairs && Boolean((state.player || state.country) && !state.opponent),
     opponentCountry: Boolean(
       countriesEnabled && (state.player || state.country) && !state.opponent && !state.opponentCountry
     ),
-    countryPlayer: Boolean(countriesEnabled && state.country && !state.player),
+    countryPlayer: !pairs && Boolean(countriesEnabled && state.country && !state.player),
     category: categoriesEnabled && !state.category,
   };
 }
 
 export function groupingForState(state: GameRecordsState, eligibility: GameGroupEligibility): GameRecordsState {
   if (
+    (state.group === 'partner' && !eligibility.partner) ||
+    (state.group === 'opponent-pair' && !eligibility.opponentPair) ||
     (state.group === 'opponent-player' && !eligibility.opponentPlayer) ||
     (state.group === 'opponent-country' && !eligibility.opponentCountry) ||
     (state.group === 'country-player' && !eligibility.countryPlayer) ||
@@ -140,7 +165,11 @@ function normalizeGroupCountSort(state: GameRecordsState): GameRecordsState {
 }
 
 export function getPlayers(games: readonly ApiGameInfo[]) {
-  return new Set(games.flatMap((game) => [game.black.id, game.white.id]));
+  return new Set(
+    games.flatMap((game) =>
+      [game.black, game.white].flatMap((side) => getParticipantPlayers(side).map((player) => player.id))
+    )
+  );
 }
 
 export function getCountries(games: readonly ApiGameInfo[]) {
@@ -164,9 +193,11 @@ function hasStructuralMatch(games: readonly ApiGameInfo[], filters: Partial<Game
 
 function matchesStructuralFilters(orientation: OrientedGame, filters: Partial<GameRecordsState>) {
   return (
-    (!filters.player || orientation.player.id === filters.player) &&
+    (!filters.partner || hasParticipantPlayer(orientation.player, filters.partner)) &&
+    (!filters.opponentPartner || hasParticipantPlayer(orientation.opponent, filters.opponentPartner)) &&
+    (!filters.player || hasParticipantPlayer(orientation.player, filters.player)) &&
     (!filters.country || orientation.player.country?.toUpperCase() === filters.country.toUpperCase()) &&
-    (!filters.opponent || orientation.opponent.id === filters.opponent) &&
+    (!filters.opponent || hasParticipantPlayer(orientation.opponent, filters.opponent)) &&
     (!filters.opponentCountry || orientation.opponent.country?.toUpperCase() === filters.opponentCountry.toUpperCase())
   );
 }

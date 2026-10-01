@@ -152,7 +152,14 @@
     "gameWon": "Wygrana",
     "sgfs": "Zapisane gry",
     "black": "Czarny",
-    "white": "Biały"
+    "white": "Biały",
+    "pair": "Para",
+    "pairs": "Pary",
+    "partner": "Partner",
+    "playerRank": "Stopień gracza",
+    "pairRank": "Stopień pary",
+    "pairCountry": "Kraj pary",
+    "opponentPair": "Przeciwna para"
   },
   "game": {
     "open": "Otwórz",
@@ -260,7 +267,15 @@
     "groupCountryPlayer": "Gracz z wybranego kraju",
     "groupCategory": "Kategoria",
     "noMatches": "Brak zapisów gier pasujących do filtrów.",
-    "count": "%{0} z %{1}"
+    "count": "%{0} z %{1}",
+    "partner": "Partner gracza",
+    "opponentPartner": "Partner przeciwnika",
+    "groupPartner": "Partner",
+    "groupOpponentPair": "Przeciwna para",
+    "pairRank": "Stopień pary",
+    "opponentPairRank": "Stopień przeciwnej pary",
+    "pairCountry": "Kraj pary",
+    "opponentPairCountry": "Kraj przeciwnej pary"
   },
   "winners": {
     "showMoreTournaments": "Pokaż pozostałe %{0} turnieje",
@@ -310,7 +325,10 @@
       "relays": "Relacji na OGS",
       "streams": "Transmisji wideo",
       "analysis": "Analiz AI"
-    }
+    },
+    "partners": "Partnerzy",
+    "opponentPairs": "Przeciwne pary",
+    "pairs": "Pary"
   },
   "categories": {
     "all": "Wszystkie kategorie"

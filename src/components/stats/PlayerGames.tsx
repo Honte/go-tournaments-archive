@@ -1,8 +1,9 @@
 import { useMemo } from 'react';
-import type { GameProps, PlayerStats } from '@/schema/data';
+import type { GameProps, Player, PlayerStats } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
+import { getParticipantName } from '@/libs/participants';
 import { gameThumbUrl } from '@/libs/urls';
 import { GameActions } from '@/components/GameActions';
 import { GameResultLabel } from '@/components/GameResultLabel';
@@ -23,6 +24,7 @@ type PlayerGamesProps = {
 };
 
 type GameRow = {
+  partner?: Player;
   img?: string;
   year: number;
   color?: 'white' | 'black';
@@ -49,22 +51,25 @@ export function PlayerGames({ event, player, translations }: PlayerGamesProps) {
             continue;
           }
 
-          const opponentName = player.opponents[game.id];
+          const opponentName = game.opponent ? getParticipantName(game.opponent) : player.opponents[game.id];
           const [opponentFirstName, ...rest] = opponentName.split(' ');
           const opponentLastName = rest.join(' ') || '';
 
-          const opponent = {
-            id: game.id,
-            name: opponentName,
-            rank: game.rank,
-            country: game.country,
-          };
+          const opponent = game.opponent
+            ? { ...game.opponent, name: opponentName }
+            : {
+                id: game.id,
+                name: opponentName,
+                rank: game.rank,
+                country: game.country,
+              };
 
           games.push({
+            partner: event.partner,
             img: game.props.jpg ?? game.props.png ?? game.props.svg,
             year: event.year,
             color: game.color,
-            rank: event.rank,
+            rank: event.partner ? event.pairRank : event.rank,
             won: game.won,
             drawn: game.drawn,
             unresolved: game.unresolved,
@@ -105,7 +110,18 @@ export function PlayerGames({ event, player, translations }: PlayerGamesProps) {
       },
       {
         accessorKey: 'rank',
-        header: t('table.rank'),
+        header: t(event.pairs ? 'table.pairRank' : 'table.rank'),
+      },
+      {
+        enabled: Boolean(event.pairs),
+        id: 'partner',
+        accessorFn: (row) => row.partner?.name,
+        header: t('table.partner'),
+        meta: { className: 'text-left' },
+        cell: ({ row }) =>
+          row.original.partner && (
+            <PlayerCell event={event} locale={translations.locale} player={row.original.partner} />
+          ),
       },
       {
         accessorKey: 'color',
@@ -129,7 +145,8 @@ export function PlayerGames({ event, player, translations }: PlayerGamesProps) {
       },
       {
         accessorKey: 'opponentFirstName',
-        header: t('table.firstName'),
+        header: t(event.pairs ? 'table.opponentPair' : 'table.firstName'),
+        meta: { className: 'text-left' },
         cell: (info) => (
           <PlayerCell
             event={event}
@@ -139,9 +156,10 @@ export function PlayerGames({ event, player, translations }: PlayerGamesProps) {
             showCountry={false}
           />
         ),
-        spanColumns: 2,
+        spanColumns: event.pairs ? 1 : 2,
       },
       {
+        enabled: !event.pairs,
         accessorKey: 'opponentLastName',
         header: t('table.lastName'),
       },
@@ -157,7 +175,7 @@ export function PlayerGames({ event, player, translations }: PlayerGamesProps) {
       {
         id: 'opponentRank',
         accessorFn: (row) => row.opponent.rank,
-        header: t('table.rank'),
+        header: t(event.pairs ? 'table.pairRank' : 'table.rank'),
       },
       {
         accessorKey: 'props',

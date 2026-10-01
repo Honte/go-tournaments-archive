@@ -38,7 +38,7 @@ export function CategoryTournamentMedalistsCard({
             </Link>
             <MedalRows
               event={event}
-              players={tournament.players}
+              players={tournament.participants}
               top={tournament.categoriesTop?.[category] ?? []}
               translations={translations}
             />

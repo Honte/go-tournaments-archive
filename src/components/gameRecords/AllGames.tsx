@@ -48,6 +48,7 @@ function AllGamesContent({ event, games, translations }: AllGamesContentProps) {
 
   const modelOptions = useMemo<GameRecordsOptions>(
     () => ({
+      pairs: Boolean(event.pairs),
       countriesEnabled: event.showCountry,
       categoriesEnabled: Boolean(event.categories?.length),
       countryLabel: (country) => t(`country.${country}`),
@@ -61,7 +62,7 @@ function AllGamesContent({ event, games, translations }: AllGamesContentProps) {
           ? getStageName({ name: game.stageName, type: game.stageType }, translations)
           : `${t('table.stage')} ${game.stage + 1}`,
     }),
-    [event.categories, event.showCountry, t, translations]
+    [event.categories, event.showCountry, event.pairs, t, translations]
   );
 
   const store = useGameRecordsStore(games, modelOptions);

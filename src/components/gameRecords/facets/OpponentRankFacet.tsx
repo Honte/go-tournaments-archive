@@ -5,6 +5,7 @@ import { RankRange } from './RankRange';
 import type { GameFacetProps } from './types';
 
 export function OpponentRankFacet({ store, t }: GameFacetProps) {
+  const pairs = useStore(store, (storeState) => storeState.options.pairs);
   const state = useStore(store, (storeState) => storeState.model.state);
   const ranks = useStore(store, (storeState) => storeState.model.domains.ranks);
   const countryVisible = useStore(store, (storeState) => storeState.model.facets.country.visible);
@@ -21,7 +22,7 @@ export function OpponentRankFacet({ store, t }: GameFacetProps) {
   return (
     <RankRange
       id="game-opponent-rank"
-      label={t('gamesFilter.opponentRank')}
+      label={t(pairs ? 'gamesFilter.opponentPairRank' : 'gamesFilter.opponentRank')}
       ranks={ranks}
       minimum={state.opponentRankMin}
       maximum={state.opponentRankMax}

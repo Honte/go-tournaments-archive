@@ -1,4 +1,4 @@
-import { Game, LeagueStage, Player, Stage, TournamentDetails } from '@/schema/data';
+import { Game, LeagueStage, Participant, Stage, TournamentDetails } from '@/schema/data';
 import type { EventDefinition } from '@/schema/event';
 import { type InputStage } from '@/schema/input';
 import { parseDates } from '@/libs/dates';
@@ -15,7 +15,7 @@ export type ParseStageProps = {
   event: EventDefinition;
   stage: InputStage;
   stageIndex: number;
-  playersMap: Record<string, Player>;
+  playersMap: Record<string, Participant>;
   playersHandler: PlayersHandler;
   gamesMap: Record<string, Game>;
   tournamentDetails: TournamentDetails;
@@ -30,6 +30,9 @@ export async function parseStage({
   tournamentDetails,
   playersHandler,
 }: ParseStageProps): Promise<Stage> {
+  if (event.pairs && stage.type !== 'tournament' && stage.type !== 'classification') {
+    throw new Error(`Pairs do not support stage type: ${stage.type}`);
+  }
   const date = stage.date ? parseDates(stage.date) : undefined;
 
   switch (stage.type) {
@@ -45,6 +48,7 @@ export async function parseStage({
       });
     case 'classification':
       return loadClassificationStage({
+        event,
         stage,
         playersMap,
         playersHandler,

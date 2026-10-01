@@ -2,7 +2,7 @@
 
 import { autoUpdate, useFloating } from '@floating-ui/react';
 import { useCallback, useEffect, useState } from 'react';
-import type { Game, Player } from '@/schema/data';
+import type { Game, Participant } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { Game as GameComponent } from '@/components/Game';
@@ -11,7 +11,7 @@ export const SHOW_POPOVER_EVENT = 'show-game-popover';
 
 type PopoverState = {
   game: Game;
-  players: Record<string, Player>;
+  players: Record<string, Participant>;
   target?: Element;
   title?: string;
 };

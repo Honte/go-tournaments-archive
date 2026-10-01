@@ -110,6 +110,7 @@ function AllPlayersStatsContent({ event, players, translations }: AllPlayersStat
       {
         accessorKey: 'firstName',
         header: t('table.firstName'),
+        meta: { className: 'text-left' },
         cell: (info) => (
           <PlayerCell
             event={event}

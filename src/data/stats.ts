@@ -5,6 +5,7 @@ import type {
   CountryStats,
   Game,
   Player,
+  Participant,
   PlayerGame,
   PlayerResult,
   PlayerStats,
@@ -15,6 +16,7 @@ import type {
 } from '@/schema/data';
 import type { EventDefinition } from '@/schema/event';
 import { getGameStats } from '@/libs/games';
+import { getParticipantName, getParticipantPlayers, isPair } from '@/libs/participants';
 import type { PlayersHandler } from '@/data/players';
 
 export function calculateStats(
@@ -50,7 +52,7 @@ export function calculateStats(
   let relays = 0;
 
   for (const tournament of tournaments) {
-    const { year, players, stages, top, games: tournamentGames, categoriesTop } = tournament;
+    const { year, participants: players, stages, top, games: tournamentGames, categoriesTop } = tournament;
     const tournamentCategories: Record<string, CategoryPlayer[]> = {};
 
     for (const stage of stages) {
@@ -59,84 +61,110 @@ export function calculateStats(
       }
 
       for (const player of stage.table) {
-        const tournamentPlayer = players[player.id];
-        const playerStats = upsertPlayer(tournamentPlayer);
-        const playerResult = upsertPlayerResult(playerStats, tournamentPlayer, year);
-        const playerGames: PlayerGame[] = [];
-
-        for (const game of iteratePlayerGames(player)) {
-          if (game && game.opponent) {
-            const globalGame = tournamentGames[game.game];
-            const opponent = players[game.opponent];
-
-            playerGames.push({
-              id: opponent?.id ?? 'BYE',
-              country: players[game.opponent]?.country,
-              rank: players[game.opponent]?.rank,
-              won: game.won,
-              ...(game.drawn && { drawn: true }),
-              ...(game.unresolved && { unresolved: true }),
-              result: game.result,
-              props: globalGame?.props,
-              color: game.color,
-            });
-
-            if (globalGame?.props?.sgf) {
-              playerStats.totalSgfs++;
-            }
-
-            if (opponent?.id) {
-              playerStats.opponents[opponent.id] = opponent.name;
-            }
+        const participant = players[player.id];
+        const members = getParticipantPlayers(participant);
+        for (const [memberIndex, tournamentPlayer] of members.entries()) {
+          const playerStats = upsertPlayer(tournamentPlayer);
+          const playerResult = upsertPlayerResult(playerStats, tournamentPlayer, year);
+          if (isPair(participant)) {
+            playerResult.partner = participant.members[memberIndex === 0 ? 1 : 0];
+            playerResult.pairRank = participant.rank;
+            playerResult.pairCountry = participant.country;
           }
-        }
+          const playerGames: PlayerGame[] = [];
 
-        const playerCategories: Record<string, number | '?'> = {};
+          for (const game of iteratePlayerGames(player)) {
+            if (game && game.opponent) {
+              const globalGame = tournamentGames[game.game];
+              const opponent = players[game.opponent];
 
-        if (event.categories?.length && 'categories' in player && player.categories) {
-          for (const category of event.categories) {
-            const place = player.categories[category];
-
-            if (place) {
-              playerCategories[category] = place;
-            }
-          }
-        }
-
-        const stageResult = {
-          type: stage.type,
-          name: stage.name,
-          place: player.place,
-          games: playerGames,
-          categories: playerCategories,
-        };
-
-        playerResult.stages.push(stageResult);
-
-        const finalPlace = player.place > (stage.promoted ?? 0) ? player.place + (stage.placeOffset ?? 0) : Infinity;
-
-        playerResult.place = Math.min(playerResult.place, finalPlace);
-
-        upsertPlayerCountry(playerStats, tournamentPlayer.country);
-
-        const name = tournamentPlayer.name;
-        const country = tournamentPlayer.country;
-        const rank = tournamentPlayer.rank ?? '';
-
-        if (country) {
-          upsertCountryPlayerResult(country, year, playerStats, playerResult);
-        }
-
-        if (event.categories?.length) {
-          for (const category of event.categories) {
-            if ('categories' in player && player?.categories?.[category]) {
-              (tournamentCategories[category] ||= []).push({
-                id: playerStats.id,
-                name,
-                rank,
-                country,
-                place: player.categories[category],
+              playerGames.push({
+                id: opponent?.id ?? 'BYE',
+                ...(opponent && { opponent }),
+                country: players[game.opponent]?.country,
+                rank: players[game.opponent]?.rank,
+                won: game.won,
+                ...(game.drawn && { drawn: true }),
+                ...(game.unresolved && { unresolved: true }),
+                result: game.result,
+                props: globalGame?.props,
+                color: game.color,
               });
+
+              if (globalGame?.props?.sgf) {
+                playerStats.totalSgfs++;
+              }
+
+              if (opponent?.id) {
+                playerStats.opponents[opponent.id] = getParticipantName(opponent);
+                for (const member of getParticipantPlayers(opponent)) {
+                  playerStats.opponents[member.id] = member.name;
+                }
+              }
+            }
+          }
+
+          const playerCategories: Record<string, number | '?'> = {};
+
+          if (event.categories?.length && 'categories' in player && player.categories) {
+            for (const category of event.categories) {
+              const place = player.categories[category];
+
+              if (place) {
+                playerCategories[category] = place;
+              }
+            }
+          }
+
+          const stageResult = {
+            type: stage.type,
+            name: stage.name,
+            place: player.place,
+            games: playerGames,
+            categories: playerCategories,
+          };
+
+          playerResult.stages.push(stageResult);
+
+          const finalPlace = player.place > (stage.promoted ?? 0) ? player.place + (stage.placeOffset ?? 0) : Infinity;
+
+          playerResult.place = Math.min(playerResult.place, finalPlace);
+
+          upsertPlayerCountry(playerStats, tournamentPlayer.country);
+
+          const name = tournamentPlayer.name;
+          const country = tournamentPlayer.country;
+          const rank = tournamentPlayer.rank ?? '';
+
+          if (participant.country && memberIndex === 0) {
+            upsertCountryPlayerResult(
+              participant.country,
+              year,
+              { id: participant.id },
+              isPair(participant)
+                ? {
+                    ...playerResult,
+                    name: getParticipantName(participant),
+                    rank: participant.rank,
+                    country: participant.country,
+                    partner: undefined,
+                    participant,
+                  }
+                : playerResult
+            );
+          }
+
+          if (event.categories?.length) {
+            for (const category of event.categories) {
+              if ('categories' in player && player?.categories?.[category]) {
+                (tournamentCategories[category] ||= []).push({
+                  id: playerStats.id,
+                  name,
+                  rank,
+                  country,
+                  place: player.categories[category],
+                });
+              }
             }
           }
         }
@@ -363,7 +391,7 @@ export function calculateStats(
   function upsertCountryPlayerResult(
     country: string,
     year: number,
-    playerStats: PlayerStats,
+    playerStats: { id: string },
     playerResult: PlayerResult
   ) {
     const countryStats = upsertCountry(country);
@@ -412,7 +440,7 @@ export function calculateStats(
     });
   }
 
-  function upsertMedals(year: number, players: Record<string, Player>, winners?: string[][], category?: string) {
+  function upsertMedals(year: number, players: Record<string, Participant>, winners?: string[][], category?: string) {
     if (!winners) {
       return;
     }
@@ -426,12 +454,12 @@ export function calculateStats(
 
       for (const id of winner) {
         const player = players[id];
-        const playerStats = upsertPlayer(player);
-
-        playerStats.medals[index].push(edition);
-
-        if (category) {
-          playerStats.categoriesMedals[category][index].push(edition);
+        for (const member of getParticipantPlayers(player)) {
+          const playerStats = upsertPlayer(member);
+          playerStats.medals[index].push(edition);
+          if (category) {
+            playerStats.categoriesMedals[category][index].push(edition);
+          }
         }
 
         if (player.country) {

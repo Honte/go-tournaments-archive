@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import type { Player } from '@/schema/data';
+import { createPair } from '@/libs/participants';
 import {
   createCountryColumnSorter,
   createDateRangeColumnSorter,
@@ -59,6 +60,16 @@ describe('sort utilities', () => {
     const descending = createPlayersSorter('en', true);
     assert.ok(descending(p1, p2) > 0);
     assert.ok(descending(p3, p1) < 0);
+  });
+
+  it('sorts pairs by displayed names in both directions and podium columns', () => {
+    const alpha = createPair([player('z', 'Amy Alpha'), player('y', 'Ben Beta')]);
+    const zeta = createPair([player('a', 'Aaron Zeta'), player('b', 'Zoe Zeta')]);
+    assert.ok(createPlayersSorter('en')(alpha, zeta) < 0);
+    assert.ok(createPlayersSorter('en', true)(alpha, zeta) > 0);
+    const rowA = { getValue: () => [alpha] };
+    const rowB = { getValue: () => [zeta] };
+    assert.ok(createPodiumColumnSorter('en')(rowA as any, rowB as any, 'gold') < 0);
   });
 
   it('sorts podium columns with missing values last in TanStack table format', () => {

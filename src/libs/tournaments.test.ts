@@ -6,7 +6,7 @@ import { tournamentsUrl } from '@/libs/urls';
 
 const player = (id: string, name = id): Player => ({ id, name });
 function tournament(overrides: Partial<Tournament> = {}): Tournament {
-  return { year: 2025, id: 2025, top: [], players: {}, stages: [], games: {}, hasSgfs: false, ...overrides };
+  return { year: 2025, id: 2025, top: [], participants: {}, stages: [], games: {}, hasSgfs: false, ...overrides };
 }
 function stage(members: [string, Record<string, number | '?'>?][], category?: string): LeagueStage {
   return {
@@ -49,7 +49,7 @@ describe('tournament table rows', () => {
 
   it('excludes announcements and counts players and games once, excluding BYEs', () => {
     const source = tournament({
-      players: { a: player('a'), alias: player('a'), b: player('b'), BYE: player('BYE') },
+      participants: { a: player('a'), alias: player('a'), b: player('b'), BYE: player('BYE') },
       stages: [stage([['a'], ['b']]), stage([['a'], ['b']])],
       top: [['a', 'b'], [], ['missing']],
       games: { g1: game('g1', 0, 'a', 'b', '1.sgf'), g2: game('g2', 1, 'a', 'b'), bye: game('bye', 1, 'a', 'BYE') },
@@ -67,7 +67,7 @@ describe('tournament table rows', () => {
 
   it('uses stage-local category membership, including uncertain and overlapping categories', () => {
     const source = tournament({
-      players: { a: player('a'), b: player('b'), c: player('c') },
+      participants: { a: player('a'), b: player('b'), c: player('c') },
       stages: [
         stage([
           ['a', { u12: 1, u16: 1 }],
@@ -95,7 +95,7 @@ describe('tournament table rows', () => {
     const [result] = buildTournamentRows(
       [
         tournament({
-          players: { local: player('canonical', 'Alice Nowak') },
+          participants: { local: player('canonical', 'Alice Nowak') },
           categoriesTop: { u12: [['local']] },
         }),
       ],

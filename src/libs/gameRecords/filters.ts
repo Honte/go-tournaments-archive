@@ -1,11 +1,19 @@
 import type { ApiGameInfo } from '@/schema/api';
-import type { Player } from '@/schema/data';
+import type { Participant } from '@/schema/data';
 import { isDrawResult } from '@/libs/games';
+import { hasParticipantPlayer } from '@/libs/participants';
 import { getRankValue } from '@/libs/rank';
 import { type GameRecordsState, type GameResultType, type PlayerColor } from './schema';
 
-export type OrientedGame = { game: ApiGameInfo; player: Player; opponent: Player; playerColor: PlayerColor };
-export type FacetKey = 'player' | 'country' | 'opponent' | 'opponentCountry' | 'playerColor';
+export type OrientedGame = { game: ApiGameInfo; player: Participant; opponent: Participant; playerColor: PlayerColor };
+export type FacetKey =
+  | 'partner'
+  | 'opponentPartner'
+  | 'player'
+  | 'country'
+  | 'opponent'
+  | 'opponentCountry'
+  | 'playerColor';
 export const UNKNOWN_KOMI = 'unknown';
 
 export function filterGameRecords(games: readonly ApiGameInfo[], state: GameRecordsState): OrientedGame[] {
@@ -94,7 +102,22 @@ export function matchesGlobalFilters(game: ApiGameInfo, state: GameRecordsState)
 }
 
 export function matchesOrientation(orientation: OrientedGame, state: GameRecordsState, ignoredFacet?: FacetKey) {
-  if (ignoredFacet !== 'player' && state.player && orientation.player.id !== state.player) {
+  if (ignoredFacet !== 'player' && state.player && !hasParticipantPlayer(orientation.player, state.player)) {
+    return false;
+  }
+
+  if (
+    ignoredFacet !== 'partner' &&
+    state.partner &&
+    (state.partner === state.player || !hasParticipantPlayer(orientation.player, state.partner))
+  ) {
+    return false;
+  }
+  if (
+    ignoredFacet !== 'opponentPartner' &&
+    state.opponentPartner &&
+    (state.opponentPartner === state.opponent || !hasParticipantPlayer(orientation.opponent, state.opponentPartner))
+  ) {
     return false;
   }
 
@@ -106,7 +129,7 @@ export function matchesOrientation(orientation: OrientedGame, state: GameRecords
     return false;
   }
 
-  if (ignoredFacet !== 'opponent' && state.opponent && orientation.opponent.id !== state.opponent) {
+  if (ignoredFacet !== 'opponent' && state.opponent && !hasParticipantPlayer(orientation.opponent, state.opponent)) {
     return false;
   }
 

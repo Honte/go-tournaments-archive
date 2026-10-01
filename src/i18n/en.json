@@ -152,7 +152,14 @@
     "gameWon": "Won",
     "sgfs": "Game records",
     "black": "Black",
-    "white": "White"
+    "white": "White",
+    "pair": "Pair",
+    "pairs": "Pairs",
+    "partner": "Partner",
+    "playerRank": "Player rank",
+    "pairRank": "Pair rank",
+    "pairCountry": "Pair country",
+    "opponentPair": "Opposing pair"
   },
   "game": {
     "open": "View",
@@ -260,7 +267,15 @@
     "groupCountryPlayer": "Country player",
     "groupCategory": "Category",
     "noMatches": "No game records match these filters.",
-    "count": "%{0} of %{1}"
+    "count": "%{0} of %{1}",
+    "partner": "Player's partner",
+    "opponentPartner": "Opponent's partner",
+    "groupPartner": "Partner",
+    "groupOpponentPair": "Opposing pair",
+    "pairRank": "Pair rank",
+    "opponentPairRank": "Opposing pair rank",
+    "pairCountry": "Pair country",
+    "opponentPairCountry": "Opposing pair country"
   },
   "winners": {
     "showMoreTournaments": "Show %{0} more tournaments",
@@ -310,7 +325,10 @@
       "relays": "Relays on OGS",
       "streams": "Games streamed",
       "analysis": "AI analysis"
-    }
+    },
+    "partners": "Partners",
+    "opponentPairs": "Opposing pairs",
+    "pairs": "Pairs"
   },
   "categories": {
     "all": "All categories"

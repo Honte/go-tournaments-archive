@@ -23,7 +23,7 @@ type GameGroup = {
 };
 
 export function GamesList({ event, tournament, translations }: GamesListProps) {
-  const { stages, games, players } = tournament;
+  const { stages, games, participants: players } = tournament;
   const t = getTranslator(translations);
   const gamesFilter = event.hideGamesWithoutSgf ? (game: string) => !!games[game]?.props?.sgf : () => true;
 
