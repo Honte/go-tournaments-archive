@@ -19,6 +19,14 @@ import { calculateStats } from '@/data/stats';
 const translations = { ...en, locale: 'en' as const, site: { ...en.site, acronym: 'Test' } };
 const event: EventDefinition = { id: 'test', locales: ['en'], pairs: true };
 
+it('rejects an H9 pair containing the same player twice', () => {
+  const row = parseH9('; EV[Test]\n1 One Alice 2d One Alice 2d 2d PL 0').results[0];
+  assert.throws(
+    () => loadH9Participant(row, event, createPlayersHandler()),
+    /^Error: A pair must contain two different players/
+  );
+});
+
 it('filters source-provided unknown H9 ranks for both members and the pair', () => {
   const handler = createPlayersHandler();
   const rows = parseH9('1 One Alice 31K Two Bob 2D 31K JP xxx 0\n2 Three Carol 31k Four Dan 31k 3d CZ xxx 0').results;
