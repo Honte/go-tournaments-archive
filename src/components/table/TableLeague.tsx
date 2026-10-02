@@ -27,6 +27,7 @@ export function TableLeague({ event, stage, players, games, translations }: Tabl
   );
   const categories = getCategoriesColumns(event, table);
   const hasSharedPlaces = table.some((p) => p.index !== p.place);
+  const showRank = table.some((result) => players[result.id].rank);
 
   return (
     <div className="w-full overflow-x-auto">
@@ -39,7 +40,7 @@ export function TableLeague({ event, stage, players, games, translations }: Tabl
             {hasSharedPlaces && <th className="p-1">{t('table.index')}</th>}
             <th className="p-1">{t('table.place')}</th>
             <th className="p-1 text-left">{t('table.name')}</th>
-            <th className="p-1">{t(event.pairs ? 'table.pairRank' : 'table.rank')}</th>
+            {showRank && <th className="p-1">{t(event.pairs ? 'table.pairRank' : 'table.rank')}</th>}
             {event.showCountry && <th className="p-1">{t(event.pairs ? 'table.pairCountry' : 'table.country')}</th>}
             {rounds.map((round, index) => (
               <th className="p-1" key={index}>
@@ -81,7 +82,7 @@ export function TableLeague({ event, stage, players, games, translations }: Tabl
                     showRank={isPair(player)}
                   />
                 </td>
-                <td className="p-1">{player.rank}</td>
+                {showRank && <td className="p-1">{player.rank}</td>}
                 {event.showCountry && (
                   <td className="p-1">
                     {isPair(player) || player.hasStats ? (

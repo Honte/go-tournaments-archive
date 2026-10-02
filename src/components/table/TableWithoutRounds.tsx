@@ -19,6 +19,7 @@ type TableWithoutRoundsProps = {
 export function TableWithoutRounds({ event, stage, players, games, translations }: TableWithoutRoundsProps) {
   const t = getTranslator(translations);
   const { table } = stage;
+  const showRank = table.some((result) => players[result.id].rank);
 
   return (
     <div className="w-full overflow-x-auto">
@@ -27,7 +28,7 @@ export function TableWithoutRounds({ event, stage, players, games, translations 
           <tr className="text-center">
             <th className="p-1">{t('table.place')}</th>
             <th className="p-1 text-left">{t('table.name')}</th>
-            <th className="p-1">{t('table.rank')}</th>
+            {showRank && <th className="p-1">{t('table.rank')}</th>}
             {table.map((player, index) => (
               <th className="p-1" key={index} title={getParticipantName(players[player.id])}>
                 {shorten(getParticipantName(players[player.id]))}
@@ -53,7 +54,7 @@ export function TableWithoutRounds({ event, stage, players, games, translations 
                     showRank={isPair(player)}
                   />
                 </td>
-                <td className="p-1">{player.rank}</td>
+                {showRank && <td className="p-1">{player.rank}</td>}
                 {table.map((p, index) => {
                   const entry = p !== result && result.games.find((g) => g.opponent === p.id);
 

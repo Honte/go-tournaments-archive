@@ -15,13 +15,14 @@ type ClassificationTableProps = {
 
 export function ClassificationTable({ event, stage, players, translations }: ClassificationTableProps) {
   const t = getTranslator(translations);
+  const showRank = event.pairs && stage.table.some((result) => players[result.id].rank);
   return (
     <table className="table-auto border-separate border-spacing-x-0 border-spacing-y-0.5">
       <thead className="border-b-gray-300 border-b">
         <tr className="text-center">
           <th className="p-1">{t('table.place')}</th>
           <th className="p-1 text-left">{t('table.name')}</th>
-          {event.pairs && <th>{t('table.pairRank')}</th>}
+          {showRank && <th>{t('table.pairRank')}</th>}
           {event.pairs && event.showCountry && <th>{t('table.pairCountry')}</th>}
         </tr>
       </thead>
@@ -43,7 +44,7 @@ export function ClassificationTable({ event, stage, players, translations }: Cla
                   showRank={isPair(player)}
                 />
               </td>
-              {event.pairs && <td className="p-1 text-center">{player.rank}</td>}
+              {showRank && <td className="p-1 text-center">{player.rank}</td>}
               {event.pairs && event.showCountry && (
                 <td className="p-1">
                   <CountryLink event={event} code={player.country} translations={translations} />
