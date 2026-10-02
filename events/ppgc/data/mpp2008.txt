@@ -1,0 +1,4 @@
+; PC[PL, Przystanek Alaska]
+1 Dubiel Marika       1k Gertz Wojciech  1k 1k PL xxx 1 |14301617|13933029
+2 Kleczkowska Klaudia 6k Kamiński Marek  3d 2k PL xxx 2 |14801435|13913823
+3 Bełtowska Katarzyna 4k Maciej Lubiński 1k 2k PL xxx 3 |13013968|12449547

@@ -1,0 +1,6 @@
+; PC[PL, Przystanek Alaska]
+; DT[2022-07-22,2022-07-23]
+1 Bednarska Julia     31k Jurkiewicz Dawid   31k 31k PL xxx 3 4+ 3+ 2+ |16733706|15650283
+2 Kwietniewska Daria  31k Sobański Grzegorz  31k 31k PL xxx 2 3+ 4+ 1- |16062684|13062698
+3 Seget Anna          31k Wałaszewski Maksym 31k 31k PL xxx 1 2- 1- 4+ |19298158|15050673
+4 Szychowiak Marianna 31k Siwy Adam          31k 31k PL xxx 0 1- 2- 3- |16725709|19725508

@@ -1,0 +1,6 @@
+; PC[PL, Przystanek Alaska]
+; DT[2023-07-21,2023-07-22]
+1 Szychowiak Marianna 31k Majka Marcin       31k 31k PL xxx 3 4+ 3+ 2+ |16725709|14713413
+2 Kwietniewska Daria  31k Sobański Grzegorz  31k 31k PL xxx 2 3+ 4+ 1- |16062684|13062698
+3 Bednarska Julia     31k Kowalski Marek     31k 31k PL xxx 1 2- 1- 4+ |16733706|20174517
+4 Meresińska Martyna  31k Wałaszewski Maksym 31k 31k PL xxx 0 1- 2- 3- |19850941|15050673

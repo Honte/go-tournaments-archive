@@ -1,0 +1,16 @@
+; PC[PL, Tuchola]
+; DT[2001-07-07,2001-07-08]
+;Tuchola, 7-8.07.2001
+;      Pl     Name             Grade   S  SOS  SDOS   1.   2.   3.   4.   5.
+       1 Lubos Barbara         10k Lubos Adam             2d  4k PL xxx 5   14   14    4+   2+   3+   7+   6+ |10925761|10449703         
+       2 Świerkot Katarzyna    17k Pszonka Roman          4d  7k PL xxx 4   13    8    9+   1-   6+   3+   7+ |12001374|10874842         
+       3 Budziszewska Olga     14k Bażyński Michał        4d  5k PL xxx 3   15    8    5+   6+   1-   2-   9+ |12501863|10733943        
+       4 Śmigowska Emilia      20k Kober Piotr            3k 11k PL xxx 3   14    7    1-   7-   9+  10+   8+ |12725218|10833834        
+       5 Piela Magda           17k Piela Sławek           6k 11k PL xxx 3    9    4    3-   8+   7+   6-  10+ |12786620|12462208         
+       6 Śmigowska Agnieszka   12k Bojar Andrzej          2k  7k PL xxx 2   17    5    8+   3-   2-   5+   1- |12098372|10825837       
+       7 Mocek Małgorzata      20k Kamiński Marcin        3k 11k PL xxx 2   15    3   10+   4+   5-   1-   2- |12737065|10850840         
+       8 Kotowska Emilia       15k Kotowski Krzysztof    14k 14k PL xxx 2    9    1    6-   5-  10+   9+   4- |12750397|10937850         
+       9 Szychowiak Weronika   18k Szychowiak Wojciech    6k 12k PL xxx 1   12    0    2-  10+   4-   8-   3- |12586497|10801835         
+      10 Dratwia Maria         20k Grygorowicz Wojciech  10k 15k PL xxx 0   11    0    7-   9-   8-   4-   5- |00000000|12050280
+          
+

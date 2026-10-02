@@ -1,0 +1,12 @@
+stages:
+  - type: tournament
+    name: 
+      pl: Mistrzostwa
+      en: Championship
+    file: mpp2020.txt
+    notes: wyniki na podstawie miejsc końcowych, kolejność rund może się różnić
+    scoringColumns: 
+      - wins          
+    breakers:
+      - wins
+    findSharedPlaces: true

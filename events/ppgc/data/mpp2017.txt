@@ -1,0 +1,6 @@
+; PC[PL, Przystanek Alaska]
+1 Szychowiak Marianna 31k  Frejlak Stanisław  31k 31k PL xxx 1 |16725709|12837594
+2 Chojnacka Marcelina 31k  Wałaszewski Maksym 31k 31k PL xxx 2 |14398802|15050673
+3 Cieślak Anna        31k  Cieślak Karol      31k 31k PL xxx 3 |16262367|14649228
+4 Biernot Ewa         31k  Dzieżyc Marcin     31k 31k PL xxx 4 |18398402|18750864
+;było więcej

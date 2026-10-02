@@ -1,0 +1,8 @@
+; PC[PL, Poznań]
+; DT[2010-03-27,2010-03-27]
+; TM[60]
+; 45m+20s
+;Pl.	Para	Siła	1	2	3	Punkty
+1	Mazurek Katarzyna  31k Sołdan Leszek	      31k 2d    PL xxx 3+	0=	2+	2 |13862167|10449560
+2	Kleczkowska Klaudia  31k Dziołak Krzystof 	  31k 2k	PL xxx 0=	3+	1-	1 |14801435|14337653
+3	Sontowska Aleksandra  31k Kindziuk Arkadiusz  31k 3k	PL xxx 1-	2-	0=	0 |14513983|10901715
