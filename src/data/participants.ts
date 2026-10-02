@@ -7,23 +7,20 @@ import type { PlayersHandler } from '@/data/players';
 export function loadParticipants(
   json: Record<string, string> | undefined,
   event: EventDefinition,
-  handler: PlayersHandler,
-  describeSource?: (id: string) => string
+  handler: PlayersHandler
 ): Record<string, Participant> {
   if (!event.pairs) {
     return handler.loadJson(json);
   }
+
   const participants: Record<string, Participant> = {};
+
   for (const [id, value] of Object.entries(json ?? {})) {
-    try {
-      participants[id] = loadPair(value, event, handler);
-      validatePairs(participants);
-    } catch (cause) {
-      throw new Error(`${describeSource?.(id) ?? id}: ${cause instanceof Error ? cause.message : String(cause)}`, {
-        cause,
-      });
-    }
+    participants[id] = loadPair(value, event, handler);
   }
+
+  validatePairs(participants);
+
   return participants;
 }
 
@@ -49,10 +46,13 @@ export function loadPair(value: string, event: EventDefinition, handler: Players
   const parts = value.split(';');
   const names = parts[0].split('+').map((name) => name.trim());
   const details = parts[1]?.trim().match(/^(\d{1,2}[dkp])\s+\(([a-z]{2})\)$/i);
+
   if (parts.length !== 2 || names.length !== 2 || !details) {
     throw new Error(`Invalid pair: ${value}. Expected "player + player; rank (country)"`);
   }
+
   const country = normalizeCountryCode(details[2]);
+
   return createPair(
     [loadPairMember(names[0], country, event, handler), loadPairMember(names[1], country, event, handler)],
     knownRank(normalizeRank(details[1]), event),
@@ -76,6 +76,7 @@ function loadPairMember(
   handler: PlayersHandler
 ): Player {
   const player = handler.loadPlayer(name);
+
   return { ...player, country: player.country ?? country, rank: knownRank(player.rank, event) };
 }
 
