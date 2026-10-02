@@ -2,7 +2,7 @@
 ;only medalists available
 ; PC[CZ, Praha]
 ; DT[2003-12-06,2003-12-07]
-1 Zaloudkova Klara  Dach Zbynek    30k CZ xxx 1 0+ |10798106|10233872
-2 Simunkova Martina Hora Jan       30k CZ xxx 2 0+ |10298904|10401083
-3 Dankova Lenka     Danek Vladimir 30k CZ xxx 3 0+ |10513063|10213016
-4 Jurkova Ingrid    Jurek Martin   30k CZ xxx 3 0+ |12362152|10213753
+1 Zaloudkova Klara  31k Dach Zbynek    31k 31k CZ xxx 1  |10798106|10233872
+2 Simunkova Martina 31k Hora Jan       31k 31k CZ xxx 2  |10298904|10401083
+3 Dankova Lenka     31k Danek Vladimir 31k 31k CZ xxx 3  |10513063|10213016
+4 Jurkova Ingrid    31k Jurek Martin   31k 31k CZ xxx 3  |12362152|10213753
