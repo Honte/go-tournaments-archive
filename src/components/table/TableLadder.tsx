@@ -21,7 +21,6 @@ export function TableLadder({ event, stage, players, games, translations }: Tabl
   const t = getTranslator(translations);
   const { table, rounds, playoffs } = stage;
   const playoffsColumns = playoffs.length ? Math.max(...table.map((p) => p.playoffs.length)) : 0;
-  const hasSharedPlaces = table.some((p) => p.index !== p.place);
   const showRank = table.some((result) => players[result.id].rank);
 
   return (
@@ -29,7 +28,6 @@ export function TableLadder({ event, stage, players, games, translations }: Tabl
       <GoResultsTable className="min-w-full table-auto border-separate border-spacing-x-0 border-spacing-y-0.5">
         <thead className="border-b-gray-300 border-b">
           <tr className="text-center">
-            {hasSharedPlaces && <th className="p-1">{t('table.index')}</th>}
             <th className="p-1">{t('table.place')}</th>
             <th className="p-1 text-left">{t('table.name')}</th>
             {showRank && <th className="p-1">{t('table.rank')}</th>}
@@ -53,8 +51,9 @@ export function TableLadder({ event, stage, players, games, translations }: Tabl
 
             return (
               <tr key={result.id} className="text-center even:bg-archive-row-stripe cursor-default!">
-                {hasSharedPlaces && <td className="p-1">{result.index}</td>}
-                <td className="p-1">{i === 0 || result.place !== table[i - 1].place ? result.place : ''}</td>
+                <td className="p-1">
+                  {i > 0 && result.place === table[i - 1].place ? `(${result.index})` : result.index}
+                </td>
                 <td className="p-1 text-left">
                   <PlayerCell
                     event={event}
