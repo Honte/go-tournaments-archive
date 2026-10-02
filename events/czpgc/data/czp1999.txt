@@ -3,8 +3,8 @@
 ; PC[CZ,Liberec]
 ; DT[1999-03-20,1999-03-21]
 ;recreated from final places - not sure if everybody played once or twice, handicap section (6 pairs) won by Lenka Kuzvartova and Ivan Kostka.
-1 Snepova Lenka Dach Karel     30k CZ xxx 2 0= 3+ 2+ |10250724|10298508
-2 Hricova Jana  Hora Jan       30k CZ xxx 1 3+ 0= 1- |10233509|10401083
-3 Dankova Lenka Danek Vladimir 30k CZ xxx 0 2- 1- 0= |10513063|10213016
+1 Snepova Lenka 31k Dach Karel     31k 31k CZ xxx 2 0= 3+ 2+ |10250724|10298508
+2 Hricova Jana  31k Hora Jan       31k 31k CZ xxx 1 3+ 0= 1- |10233509|10401083
+3 Dankova Lenka 31k Danek Vladimir 31k 31k CZ xxx 0 2- 1- 0= |10513063|10213016
 
 

@@ -6,7 +6,7 @@ const EVENT_CONFIG: EventDefinition = {
   showCountry: false,
   showBestPlace: true,
   hideGamesWithoutSgf: true,
-  unknownRanks: ['30k'],
+  unknownRanks: ['31k'],
   pairs: true,
 };
 
