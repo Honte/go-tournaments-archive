@@ -4,12 +4,13 @@ import type { Game, Participant, TournamentDetails } from '@/schema/data';
 import type { EventDefinition } from '@/schema/event';
 import en from '@/i18n/en.json';
 import { Sgf } from '@tools/sgf';
+import { parseH9 } from '@/libs/h9';
 import { getOpponentRows, getPartnerRows } from '@/libs/pairStats';
 import { isPair } from '@/libs/participants';
 import { loadSgf } from '@/libs/sgf';
 import { loadClassificationStage } from '@/data/classification';
 import { parseH9Tournament } from '@/data/h9tournament';
-import { loadParticipants } from '@/data/participants';
+import { loadH9Participant, loadParticipants } from '@/data/participants';
 import { createPlayersHandler } from '@/data/players';
 import { getSgfProps } from '@/data/sgfs';
 import { parseStage } from '@/data/stages';
@@ -17,6 +18,26 @@ import { calculateStats } from '@/data/stats';
 
 const translations = { ...en, locale: 'en' as const, site: { ...en.site, acronym: 'Test' } };
 const event: EventDefinition = { id: 'test', locales: ['en'], pairs: true };
+
+it('filters source-provided unknown H9 ranks for both members and the pair', () => {
+  const handler = createPlayersHandler();
+  const rows = parseH9('1 One Alice 31K Two Bob 2D 31K JP xxx 0\n2 Three Carol 31k Four Dan 31k 3d CZ xxx 0').results;
+  const unknownEvent = { ...event, unknownRanks: ['31k'] };
+  const first = loadH9Participant(rows[0], unknownEvent, handler);
+  const second = loadH9Participant(rows[1], unknownEvent, handler);
+  assert.ok(isPair(first));
+  assert.ok(isPair(second));
+  assert.equal(first.rank, undefined);
+  assert.deepEqual(
+    first.members.map((member) => member.rank),
+    [undefined, '2d']
+  );
+  assert.equal(second.rank, '3d');
+  assert.deepEqual(
+    second.members.map((member) => member.rank),
+    [undefined, undefined]
+  );
+});
 
 it('loads YAML pairs with independent identities and classification medals', () => {
   const handler = createPlayersHandler();
@@ -89,7 +110,7 @@ it('counts pair games once globally and once per member, including draws, BYE an
       gamesMap: games,
       tournamentDetails: details,
     },
-    '1 One Alice Two Bob 3d JP xxx 2+/b 2=/w 2?/b 0+\n2 Three Carol Four Dan 2d JP xxx 1-/w 1=/b 1?/w 0='
+    '1 One Alice 2d Two Bob 4d 3d JP xxx 2+/b 2=/w 2?/b 0+\n2 Three Carol 1d Four Dan 3d 2d JP xxx 1-/w 1=/b 1?/w 0='
   );
   const stats = calculateStats(
     event,
@@ -147,7 +168,7 @@ it('roundtrips both SGF members in presentation order and exports pair metadata'
       gamesMap: games,
       tournamentDetails: details,
     },
-    '1 One Alice 2d GB Two Bob 4d JP 3d JP xxx 2+/b\n2 Three Carol 1d DE Four Dan 3d CZ 2d CZ xxx 1-/w'
+    '1 One Alice 2d Two Bob 4d 3d JP xxx 2+/b\n2 Three Carol 1d Four Dan 3d 2d CZ xxx 1-/w'
   );
   const tournament = { ...details, id: 2025, participants, games, stages: [stage], hasSgfs: false };
   const game = Object.values(games)[0];

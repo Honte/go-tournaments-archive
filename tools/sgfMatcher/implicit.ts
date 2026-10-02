@@ -61,7 +61,7 @@ export async function processImplicitStage({
 }): Promise<StageAnalysisResult> {
   const tournamentFilePath = path.join(dataDir, stage.file);
   const tournamentFileContent = await readFile(tournamentFilePath, 'utf-8');
-  const tournament = parseH9(tournamentFileContent, pairs);
+  const tournament = parseH9(tournamentFileContent);
 
   const playersMap = buildPlayersMap(tournament.results, eventPlayers);
   const gamesMap = buildGamesMap(tournament.results);

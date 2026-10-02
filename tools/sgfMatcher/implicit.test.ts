@@ -541,7 +541,7 @@ describe('player identity safety', () => {
 
 it('matches complete pairs and rejects a changed partner or a conflicting result', () => {
   const playersMap = buildPlayersMap(
-    parseH9('1 One Alice Two Bob 3d JP xxx 2+/b\n2 Three Carol Four Dan 2d CZ xxx 1-/w', true).results
+    parseH9('1 One Alice 2d Two Bob 4d 3d JP xxx 2+/b\n2 Three Carol 1d Four Dan 3d 2d CZ xxx 1-/w').results
   );
   const gamesMap = new Map([
     [
