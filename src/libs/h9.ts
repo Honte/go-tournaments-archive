@@ -133,6 +133,17 @@ export function normalizeCountryCode(country?: string) {
   return country?.toUpperCase();
 }
 
+export function parsePairCountry(value: string) {
+  if (!/^(?:[a-z]{2}){1,2}$/i.test(value)) {
+    return undefined;
+  }
+
+  const first = value.slice(0, 2).toUpperCase();
+  const second = value.slice(-2).toUpperCase();
+
+  return [first, second, first === second ? first : 'XX'] as const;
+}
+
 function parsePlayerRow(row: string[]): H9Row {
   const [place, surname, name, rank, country, club, ...columns] = row;
   const pin = columns.at(-1)?.startsWith('|') ? columns.pop() : undefined;
@@ -217,7 +228,6 @@ function parseLocation(location?: string) {
 }
 
 const PAIR_RANK = /^\d{1,2}[dkp]$/i;
-const PAIR_COUNTRY = /^(?:[a-z]{2}){1,2}$/i;
 
 function parsePairRow(row: string[], line: number): H9Row {
   try {
@@ -232,27 +242,20 @@ function parsePairRow(row: string[], line: number): H9Row {
       .trimEnd()
       .split(/\s+/);
     const [rank, country, ...columns] = values.slice(7);
+    const countries = parsePairCountry(country ?? '');
     // H9 exports may include a club between the country and scores/rounds.
     const club = columns[0] && /^[\p{L}_][\p{L}\p{N}_-]*$/u.test(columns[0]) ? columns.shift()! : '';
 
-    if (!PAIR_RANK.test(rank ?? '') || !PAIR_COUNTRY.test(country ?? '') || columns.some(isInvalidPairResult)) {
+    if (!PAIR_RANK.test(rank ?? '') || !countries || columns.some(isInvalidPairResult)) {
       throw new Error('Invalid pair columns; pair rank and country are required');
     }
 
-    const parsed = parsePlayerRow([
-      values[0],
-      'Pair',
-      'Pair',
-      rank,
-      country.slice(0, 2).toUpperCase() === country.slice(-2).toUpperCase() ? country.slice(0, 2) : 'XX',
-      club,
-      ...columns,
-    ]);
+    const parsed = parsePlayerRow([values[0], 'Pair', 'Pair', rank, countries[2], club, ...columns]);
 
     parsed.player.line = line;
     parsed.player.members = [
-      parsePairMember(values.slice(1, 4), country.slice(0, 2), pins?.[1]),
-      parsePairMember(values.slice(4, 7), country.slice(-2), pins?.[2]),
+      parsePairMember(values.slice(1, 4), countries[0], pins?.[1]),
+      parsePairMember(values.slice(4, 7), countries[1], pins?.[2]),
     ];
 
     return parsed;
