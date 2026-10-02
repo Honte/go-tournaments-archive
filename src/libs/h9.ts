@@ -217,7 +217,7 @@ function parseLocation(location?: string) {
 }
 
 const PAIR_RANK = /^\d{1,2}[dkp]$/i;
-const PAIR_COUNTRY = /^[a-z]{2}$/i;
+const PAIR_COUNTRY = /^(?:[a-z]{2}){1,2}$/i;
 
 function parsePairRow(row: string[], line: number): H9Row {
   try {
@@ -239,12 +239,20 @@ function parsePairRow(row: string[], line: number): H9Row {
       throw new Error('Invalid pair columns; pair rank and country are required');
     }
 
-    const parsed = parsePlayerRow([values[0], 'Pair', 'Pair', rank, country, club, ...columns]);
+    const parsed = parsePlayerRow([
+      values[0],
+      'Pair',
+      'Pair',
+      rank,
+      country.slice(0, 2).toUpperCase() === country.slice(-2).toUpperCase() ? country.slice(0, 2) : 'XX',
+      club,
+      ...columns,
+    ]);
 
     parsed.player.line = line;
     parsed.player.members = [
-      parsePairMember(values.slice(1, 4), country, pins?.[1]),
-      parsePairMember(values.slice(4, 7), country, pins?.[2]),
+      parsePairMember(values.slice(1, 4), country.slice(0, 2), pins?.[1]),
+      parsePairMember(values.slice(4, 7), country.slice(-2), pins?.[2]),
     ];
 
     return parsed;

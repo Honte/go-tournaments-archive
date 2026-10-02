@@ -2,6 +2,25 @@ import assert from 'node:assert/strict';
 import { it } from 'node:test';
 import { parseH9 } from './h9';
 
+it('splits four-letter pair countries in source member order', () => {
+  for (const [country, pairCountry, memberCountries] of [
+    ['pl', 'PL', ['PL', 'PL']],
+    ['plDE', 'XX', ['PL', 'DE']],
+    ['PLPL', 'PL', ['PL', 'PL']],
+    ['plPL', 'PL', ['PL', 'PL']],
+  ] as const) {
+    const row = parseH9(`1 One Alice 2d Two Bob 4d 3d ${country} 0`).results[0];
+    assert.equal(row.country, pairCountry);
+    assert.deepEqual(
+      row.members?.map((member) => member.country),
+      memberCountries
+    );
+  }
+  for (const country of ['P', 'POL', 'PLDEGB']) {
+    assert.throws(() => parseH9(`1 One Alice 2d Two Bob 4d 3d ${country} 0`), /pair rank and country/);
+  }
+});
+
 it('parses ranked pair members without exposing gender', () => {
   for (const names of ['de_Mon Cruella 2d Monkey_D Luffy 7d', 'One Alice 31k Li Bob 2d']) {
     const row = parseH9('1 ' + names + ' 5d JP xxx 2+/b 10 0|123|456').results[0];

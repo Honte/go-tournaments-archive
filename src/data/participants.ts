@@ -45,18 +45,21 @@ export function loadH9Participant(row: H9Player, event: EventDefinition, handler
 export function loadPair(value: string, event: EventDefinition, handler: PlayersHandler) {
   const parts = value.split(';');
   const names = parts[0].split('+').map((name) => name.trim());
-  const details = parts[1]?.trim().match(/^(\d{1,2}[dkp])\s+\(([a-z]{2})\)$/i);
+  const details = parts[1]?.trim().match(/^(\d{1,2}[dkp])\s+\(((?:[a-z]{2}){1,2})\)$/i);
 
   if (parts.length !== 2 || names.length !== 2 || !details) {
     throw new Error(`Invalid pair: ${value}. Expected "player + player; rank (country)"`);
   }
 
-  const country = normalizeCountryCode(details[2]);
+  const country = normalizeCountryCode(details[2])!;
 
   return createPair(
-    [loadPairMember(names[0], country, event, handler), loadPairMember(names[1], country, event, handler)],
+    [
+      loadPairMember(names[0], country.slice(0, 2), event, handler),
+      loadPairMember(names[1], country.slice(-2), event, handler),
+    ],
     knownRank(normalizeRank(details[1]), event),
-    country
+    country.slice(0, 2) === country.slice(-2) ? country.slice(0, 2) : 'XX'
   );
 }
 
