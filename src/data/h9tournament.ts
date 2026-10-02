@@ -182,12 +182,13 @@ function createTournamentTable(results: H9Player[], props: H9TournamentProps): T
     event,
     stage: { scoringColumns },
     playersMap,
+    playersHandler,
   } = props;
 
   const table: TableResult[] = [];
 
   for (const player of results) {
-    const participant = loadTournamentParticipant(player, props);
+    const participant = loadH9Participant(player, event, playersHandler);
     const tableEntry: TableResult = {
       id: participant.id,
       place: player.place,
@@ -208,6 +209,7 @@ function createTournamentTable(results: H9Player[], props: H9TournamentProps): T
       games: [],
     };
 
+    playersMap[participant.id] = participant;
     table.push(tableEntry);
 
     for (let i = 0; i < player.scores.length; i++) {
@@ -235,7 +237,7 @@ function createTournamentTable(results: H9Player[], props: H9TournamentProps): T
     }
   }
 
-  if (event.pairs && !results.length) {
+  if (event.pairs) {
     validatePairs(playersMap);
   }
 
@@ -369,21 +371,6 @@ function updateTournamentPodiums(table: TableResult[], { event, stage, tournamen
     }
 
     tournamentDetails.top = winners;
-  }
-}
-
-function loadTournamentParticipant(player: H9Player, { event, playersMap, playersHandler }: H9TournamentProps) {
-  try {
-    const participant = loadH9Participant(player, event, playersHandler);
-    playersMap[participant.id] = participant;
-    if (event.pairs) {
-      validatePairs(playersMap);
-    }
-    return participant;
-  } catch (cause) {
-    throw new Error(`H9 line ${player.line ?? '?'}: ${cause instanceof Error ? cause.message : String(cause)}`, {
-      cause,
-    });
   }
 }
 

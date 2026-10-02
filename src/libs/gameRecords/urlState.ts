@@ -24,8 +24,8 @@ export function parseGameRecordsState(params: SearchParamsReader): GameRecordsSt
   const group = params.get('group');
 
   return {
-    ...(params.get('partner') ? { partner: readString(params, 'partner') } : {}),
-    ...(params.get('opponentPartner') ? { opponentPartner: readString(params, 'opponentPartner') } : {}),
+    partner: readString(params, 'partner'),
+    opponentPartner: readString(params, 'opponentPartner'),
     player: readString(params, 'player'),
     country: readString(params, 'country')?.toUpperCase(),
     opponent: readString(params, 'opponent'),

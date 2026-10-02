@@ -223,15 +223,14 @@ function parsePairRow(row: string[], line: number): H9Row {
   try {
     const text = row.join(' ');
     const pins = text.match(/\|(\d+)\|(\d+)$/);
-    const values = text
-      .slice(0, pins?.index ?? text.length)
-      .trimEnd()
-      .split(/\s+/);
-
     if (!pins && text.includes('|')) {
       throw new Error('Expected two EGD identifiers');
     }
 
+    const values = text
+      .slice(0, pins?.index ?? text.length)
+      .trimEnd()
+      .split(/\s+/);
     const [rank, country, ...columns] = values.slice(7);
     // H9 exports may include a club between the country and scores/rounds.
     const club = columns[0] && /^[\p{L}_][\p{L}\p{N}_-]*$/u.test(columns[0]) ? columns.shift()! : '';
@@ -240,22 +239,15 @@ function parsePairRow(row: string[], line: number): H9Row {
       throw new Error('Invalid pair columns; pair rank and country are required');
     }
 
-    return {
-      player: {
-        place: Number(values[0]),
-        line,
-        name: 'Pair',
-        surname: 'Pair',
-        members: [
-          parsePairMember(values.slice(1, 4), country, pins?.[1]),
-          parsePairMember(values.slice(4, 7), country, pins?.[2]),
-        ],
-        rank: normalizeRank(rank),
-        country: normalizeCountryCode(country),
-        club,
-      },
-      columns,
-    };
+    const parsed = parsePlayerRow([values[0], 'Pair', 'Pair', rank, country, club, ...columns]);
+
+    parsed.player.line = line;
+    parsed.player.members = [
+      parsePairMember(values.slice(1, 4), country, pins?.[1]),
+      parsePairMember(values.slice(4, 7), country, pins?.[2]),
+    ];
+
+    return parsed;
   } catch (cause) {
     throw new Error(`H9 line ${line}: ${cause instanceof Error ? cause.message : String(cause)}`, { cause });
   }

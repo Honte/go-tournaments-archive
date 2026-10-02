@@ -77,7 +77,7 @@ export async function parseTournament(
   const dates = [];
   const stages = [];
 
-  const participants = loadParticipants(json.players, event, playersHandler, (id) => describeSource(['players', id]));
+  const participants = loadParticipants(json.players, event, playersHandler);
   const tournamentDetails: TournamentDetails = {
     ...json,
     year,
