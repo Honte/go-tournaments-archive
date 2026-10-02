@@ -23,7 +23,7 @@ export async function loadH9Tournament(props: H9TournamentProps): Promise<League
 }
 
 export function parseH9Tournament(tournamentProps: H9TournamentProps, h9content: string): LeagueStage {
-  const { event, stage, stageIndex, gamesMap, tournamentDetails } = tournamentProps;
+  const { stage, stageIndex, gamesMap, tournamentDetails } = tournamentProps;
   const {
     name,
     breakers,
@@ -45,7 +45,7 @@ export function parseH9Tournament(tournamentProps: H9TournamentProps, h9content:
     collapsed,
   } = stage;
 
-  const tournament = parseH9(h9content, event.pairs);
+  const tournament = parseH9(h9content);
   const table = createTournamentTable(tournament.results, tournamentProps);
   const processedGamesMap = new Map<string, Game>();
   const existingGamesMap = loadGameOverrides(games ?? [], table, gamesMap, stageIndex);
@@ -183,7 +183,9 @@ function createTournamentTable(results: H9Player[], props: H9TournamentProps): T
     stage: { scoringColumns },
     playersMap,
   } = props;
+
   const table: TableResult[] = [];
+
   for (const player of results) {
     const participant = loadTournamentParticipant(player, props);
     const tableEntry: TableResult = {
