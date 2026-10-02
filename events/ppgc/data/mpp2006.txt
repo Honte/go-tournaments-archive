@@ -1,0 +1,29 @@
+; PC[PL, Przystanek Alaska]
+; DT[2006-07-17,2006-07-18]
+;Alaska, 17-18.07.2006
+;Pl. Name                                         1    2    3    4    5   Pt  SOS  SOSOS
+  1 Dubiel Marika 4k Kamiński Marek 1k          2k PL xxx  16+  14+   6+  12+   2+  5    13     76 |14301617|13913823
+  2 Czarny Ewelina 2k Parkoła Michał 2d         1d PL xxx  15+  11+   7+   3+   1-  4    17     67 |13949034|12833458
+  3 Czaplik Małgorzata 6k Lubos Jan 3d          2k PL xxx  13+  12+   9+   2-   7+  4    14     76 |13013627|10337613
+  4 Chwedyna Żaneta 6k Chwedyna Kamil 2d        2k PL xxx  20+   6-  18+   9+   8+  4    12     68 |13574803|13513786
+  5 Klęczar Justya 5k Zyzak Andrzej 1d          2k PL xxx  14-  16+  13+   6+  12+  4    11     73 |13886169|10949763
+  6 Bełtowska Katarzyna 8k Bojar Andrzej 3k     5k PL xxx  24+   4+   1-   5-  13+  3    16     58 |13013968|10825837
+  7 Sośnicka Anna 2k Cieśla Kacper 4k           3k PL xxx  23+   8+   2-  10+   3-  3    15     66 |13925769|13749230
+  8 Piekarczyk Marta 4k Jachym Radosław 2d      1k PL xxx  17+   7-  15+  11+   4-  3    14     64 |13025628|13074435
+  9 Palej Małgorzata 6k Obrok Paweł 2k          4k PL xxx  22+  10+   3-   4-  18+  3    14     59 |13925032|13686750
+ 10 Kacprzyk Agnieszka 3k Sulerz Bartłomiej 1d  1k PL xxx  18+   9-  17+   7-  15+  3    12     66 |13625524|12886456
+ 11 Mazurek Katarzyna 6k Ślązok Tomasz 1d       3k PL xxx  19+   2-  20+   8-  17+  3    12     63 |13862167|13049432
+ 12 Moś Ewa 2k Iwanowski Artur 9k               5k PL xxx  21+   3-  14+   1-   5-  2    16     62 |13533047|14374965
+ 13 Woźniak Aleksandra 16k Kober Piotr 4k      10k PL xxx   3-  21+   5-  16+   6-  2    14     64 |12986589|10833834
+ 14 Gogosz Dorota 14k Chojnacki Mateusz 7k     10k PL xxx   5+   1-  12-  17-  21+  2    14     62 |12901581|14237498
+ 15 Krauze Monika 10k Sekuła Przemysław 2k      6k PL xxx   2-  19+   8-  20+  10-  2    13     63 |13925230|13749318
+ 16 Mroczek Barbara 20k Mroczek Tomasz 4k      12k PL xxx   1-   5-  22+  13-  24+  2    13     55 |12750617|12733017
+ 17 Moś Anna 6k Tomczyk Marcin 8k               7k PL xxx   8-  23+  10-  14+  11-  2    12     61 |13898027|14001691
+ 18 Kochanowska Elżbieta 11k Kacprzyk Michał 5k 8k PL xxx  10-  22+   4-  21+   9-  2    12     57 |14062015|13613523
+ 19 Bojar Olga 26k Stożek Jan 6k               16k PL xxx  11-  15-  21-  23+  20+  2     8     56 |13601214|12713019
+ 20 Woźniak Anna 16k Włodarski Przemysław 4k   10k PL xxx   4-  24+  11-  15-  19-  1    12     53 |12950586|14074049
+ 21 Skowron Katarzyna 28k Pakosz Maciej 6k     17k PL xxx  12-  13-  19+  18-  14-  1    10     64 |14225167|14298163
+ 22 Mazurek Martyna 28k Kowalski Dominik 6k    17k PL xxx   9-  18-  16-  24+  23-  1     9     56 |14598012|13450921
+ 23 Nowakowska J 25k Siatecki Aleksander 7k    16k PL xxx   7-  17-  24-  19-  22+  1     9     52 |00000000|10633931
+ 24 Sowińska Grażyna 20k Dobek Krystian 23k    21k PL xxx   6-  20-  23+  22-  16-  1     8     59 |14086237|14313970
+;time 45min

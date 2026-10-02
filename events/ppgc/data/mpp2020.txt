@@ -1,0 +1,8 @@
+; PC[PL, Przystanek Alaska]
+; DT[2020-07-17,2020-07-18]
+1 Skibińska Paulina   31k Bednarczyk Dariusz 31k 31k PL xxx 4 2+ 0= 5+ 4+ 3+ |15062674|14037826
+2 Biernot Ewa         31k Frejlak Stanisław  31k 31k PL xxx 3 1- 5+ 3+ 0= 4+ |18398402|12837594
+3 Bednarska Julia     31k Wałaszewski Maksym 31k 31k PL xxx 2 0= 4+ 2- 5+ 1- |16733706|15050673
+4 Chojnacka Marcelina 31k Doruch Cyprian     31k 31k PL xxx 1 5+ 3- 0= 1- 2- |14398802|18725927
+5 Jurkiewicz Justyna  31k Jurkiewicz Dawid   31k 31k PL xxx 0 4- 2- 1- 3- 0= |19337890|15650283
+;2019 to 23-24 sierpnia

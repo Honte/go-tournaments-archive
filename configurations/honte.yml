@@ -71,6 +71,8 @@ events:
         external: true
         prefix: pagc
         domain: https://amp.go.art.pl
+      - id: ppgc
+        prefix: ppgc
   - title:
       en: Dutch Championships
       pl: Mistrzostwa Holandii

@@ -1,0 +1,18 @@
+; PC[PL, Tuchola]
+; DT[2002-07-06,2002-07-07]
+;Tuchola 6-7.07.2002
+;Pl     Name Grade                                     S  SOS  SDOS   1.   2.   3.   4.   5.
+ 1 Lubos Anna           4k Lubos Jan              4d   1d PL xxx 5   15   15    9+   2+   3+   4+   5+ |10662938|10337613
+ 2 Świerkot Katarzyna  15k Pszonka Roman          4d   6k PL xxx 4   16   11   11+   1-   6+   7+   3+ |12001374|10874842
+ 3 Lubos Aleksandra     1d Lubos Przemysław      11k   5k PL xxx 3   16    7    5+  12+   1-   6+   2- |10674928|12074260
+ 4 Budziszewska Olga   10k Bażyński Michał        4d   3k PL xxx 3   15    5    7+   6-   9+   1-  10+ |12501863|10733943
+ 5 Szychowiak Weronika 17k Szychowiak Wojciech    6k  11k PL xxx 3   14    6    3-  13+  10+   8+   1- |12586497|10801835
+ 6 Kotowska Ewa         6k Gutowicz Adam          6k   6k PL xxx 3   12    6   14+   4+   2-   3-   9+ |10933725|10962842
+ 7 Kamińska Małgorzata 18k Kamiński Marcin        3k  10k PL xxx 3    9    2    4-  14+  12+   2-  13+ |12737065|10850840
+ 8 Handzlik Monika     20k Handzlik Jerzy        20k  20k PL xxx 3    8    3   10-  11+  14+   5-  12+ |12801283|12886291
+ 9 Kotowska Emilia     10k Kotowski Krzysztof    10k  10k PL xxx 2   14    3    1-  10+   4-  12+   6- |12750397|10937850
+10 Malinowska Justyna  20k Malinowski Włodzimierz 2d   9k PL xxx 2   13    5    8+   9-   5-  11+   4- |12650594|10749409
+11 Afek Luiza          19k Jastrzębowski Wojciech 5k  12k PL xxx 2   10    1    2-   8-  13+  10-  14+ |12001539|12037498
+12 Leman Pola          20k Targosz Dariusz        2d   9k PL xxx 1   12    1   13+   3-   7-   9-   8- |12713217|10313468
+13 Truszkowska Beata   20k Pyżalski Szymon       18k  19k PL xxx 1    9    0   12-   5-  11-  14+   7- |12837396|12833810
+14 Mroczek Barbara     20k Mroczek Krzysztof      6k  13k PL xxx 0   12    0    6-   7-   8-  13-  11- |12750617|12725064

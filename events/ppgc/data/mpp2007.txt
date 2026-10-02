@@ -1,0 +1,26 @@
+; PC[PL, Przystanek Alaska]
+; DT[2007-07-13,2007-07-15]
+;Alaska, 13-15.07.2007
+;Pl. Name                                     Str Pkt   1    2    3    4    5    6    7   Pt SOS SOSOS
+  1 Kaczorowska Małgorzata 31k Rams Michał    31k  1d PL xxx    12+   6+   5+   3+   4+   2-   9+  6   31   204 |13050543|12425314
+  2 Czaplik Małgorzata 31k Lubos Jan          31k  1d PL xxx    11+   7+   6-   9+   3+   1+   5+  6   30   204 |13013627|10337613
+  3 Dubiel Marika 31k Kamiński Marek          31k  1d PL xxx    14+   8+   4+   1-   2-   5+   6+  5   32   200 |14301617|13913823
+  4 Chwedyna Żaneta 31k Chwedyna Kamil        31k  1d PL xxx    16+   9+   3-  10+   1-   8+  13+  5   29   179 |13574803|13513786
+  5 Moś Ewa 31k Bożek Krzysztof               31k  1d PL xxx    15+  10+   1-   8+   6+   3-   2-  4   32   193 |13533047|12874290
+  6 Kacprzyk Agnieszka 31k Hausner Michał     31k  1k PL xxx    17+   1-   2+   7+   5-  10+   3-  4   32   192 |13625524|14074357
+  7 Hnatyszak Paulina 31k Pawlaczyk Sebastian 31k 14k PL xxx    13+   2-  17+   6-  10-  14+  12+  4   26   171 |14662802|14562372
+  8 Mazurek Katarzyna 31k Andryszek Piotr     31k  2k PL xxx    18+   3-  14+   5-  11+   4-  15+  4   25   177 |13862167|13749219
+  9 Sośnicka Anna 31k Cieśla Kacper           31k  3k PL xxx    20+   4-  16+   2-  18+  13+   1-  4   25   169 |13925769|13749230
+ 10 Bełtowska Katarzyna 31k Bojar Andrzej     31k  3k PL xxx    19+   5-  15+   4-   7+   6-  11+  4   24   182 |13013968|10825837
+ 11 Bojar Olga 31k Brunner Vit                 31k 10k PLCZ xxx   2-  13+  12+  14-   8-  16+  10-  3   26   166 |13601214|12513842
+ 12 Woźniak Anna 31k Celejewski Romuald       31k  7k PL xxx     1-  17+  11-  16+  13-  18+   7-  3   24   160 |12950586|12849067
+ 13 Rutkowska Joanna 31k Gąsiorowski Michał   31k  2k PL xxx     7-  11-  19+  15+  12+   9-   4-  3   23   167 |13837967|13586947
+ 14 Woźniak Aleksandra 31k Bich Zbigniew      31k  7k PL xxx     3-  18+   8-  11+  15-   7-  20+  3   21   165 |12986589|14725623
+ 15 Gogosz Dorota 31k Wrocławski Stefan       31k  8k PL xxx     5-  19+  10-  13-  14+  20+   8-  3   19   162 |12901581|13901569
+ 16 Chojnacka Marcelina 31k Chojnacki Mateusz 31k  8k PL xxx     4-  20+   9-  12-  17+  11-  19+  3   19   158 |14398802|14237498
+ 17 Skowron Katarzyna 31k Pakosz Maciej       31k 12k PL xxx     6-  12-   7-  20+  16-  19+  18+  3   17   156 |14225167|14298163
+ 18 Garbaczewska Kinga 31k Wiśniewski Kamil   31k 15k PL xxx     8-  14-  20+  19+   9-  12-  17-  2   18   149 |14674803|13598739
+ 19 Toporek Agata 31k Fajfrowski Łukasz       31k 17k PL xxx    10-  15-  13-  18-  20+  17-  16-  1   18   139 |14786629|12774850
+ 20 Pakosz Zuzanna 31k Dobek Krystian         31k 19k PL xxx     9-  16-  18-  17-  19-  15-  14-  0   19   137 |14037584|14313970
+;time 45min + byo
+
