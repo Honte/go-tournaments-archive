@@ -3,10 +3,10 @@
 ;https://web.archive.org/web/20070317152232/http://www.goweb.cz/cago/vysledky.asp?id=176&lang=cz
 ; PC[CZ,Praha]
 ; DT[2006-12-02,2006-12-03]
-1 Hricova Jana      Silt Ondrej    3d CZ xxx 4 13 10 2+ 4+ 3- 5+ 6+ |10233509|10337481
-2 Bartova Jitka     Hora Jana      1d CZ xxx 4 13  9 1- 6+ 4+ 3+ 5+ |13849748|10401083
-3 Zaloudkova Klara  Dach Zbynek    3d CZ xxx 3 14  7 6+ 7+ 1+ 2- 4- |10798106|10233872
-4 Simunkova Martina Mirka Jakub    2d CZ xxx 3 14  6 5+ 1- 2- 6+ 3+ |10298904|10262934
-5 Kvetova Lenka     Kovarik Michal 6k CZ xxx 2 14  3 4- 0+ 7+ 1- 2- |14098370|13050378
-6 Lukavska Jana     Franek Dominik 3k CZ xxx 1 14  0 3- 2- 0+ 4- 1- |14062367|12949805
-7 Hanusova Jana     Valasek Petr   7k CZ xxx 1  6  1 0+ 3- 5- 0= 0= |13901921|10333653
+1 Hricova Jana      31k Silt Ondrej    31k 3d CZ xxx 4 13 10 2+ 4+ 3- 5+ 6+ |10233509|10337481
+2 Bartova Jitka     31k Hora Jana      31k 1d CZ xxx 4 13  9 1- 6+ 4+ 3+ 5+ |13849748|10401083
+3 Zaloudkova Klara  31k Dach Zbynek    31k 3d CZ xxx 3 14  7 6+ 7+ 1+ 2- 4- |10798106|10233872
+4 Simunkova Martina 31k Mirka Jakub    31k 2d CZ xxx 3 14  6 5+ 1- 2- 6+ 3+ |10298904|10262934
+5 Kvetova Lenka     31k Kovarik Michal 31k 6k CZ xxx 2 14  3 4- 0+ 7+ 1- 2- |14098370|13050378
+6 Lukavska Jana     31k Franek Dominik 31k 3k CZ xxx 1 14  0 3- 2- 0+ 4- 1- |14062367|12949805
+7 Hanusova Jana     31k Valasek Petr   31k 7k CZ xxx 1  6  1 0+ 3- 5- 0= 0= |13901921|10333653
