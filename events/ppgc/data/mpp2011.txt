@@ -1,0 +1,20 @@
+; PC[PL, Przystanek Alaska]
+; DT[2011-08-13,2011-08-14]
+;Mistrzostwa Polski par  13-14 VIII
+;Pl. Name                                 Pt    1    2    3    4    5   Pt  SOS  SOSOS  
+  1 Mazurek Katarzyna      2k Kamiński Marek        4d   2d PL xxx      8+   6+   3+   4+   2-  4    18     69 |13862167|13913823 
+  2 Kaczorowska Malgorzata 1k Pawlaczyk Sebastian   2d   1d PL xxx     10+   5+   4-   9+   1+  4    15     73 |13050543|14562372 
+  3 Straszewska Katarzyna  2k Bożek Krzysztof       2d   1d PL xxx     13+   7+   1-   6+   5+  4    15     67 |13013968|12874290 
+  4 Kacprzyk Agnieszka     1d Woskresiński Wojciech 1d   1d PL xxx     11+  12+   2+   1-   9+  4    14     70 |13625524|10974260 
+  5 Sośnicka-Cieśla Anna   1d Cieśla Kacper         2k   1k PL xxx     15+   2-  11+   8+   3-  3    14     64 |13925769|13749230 
+  6 Moś Ewa                1d Chmielewski Artur     1k   1d PL xxx     14+   1-  10+   3-  11+  3    13     67 |13533047|15350841 
+  7 Rucka Anna            14k Cieślak Karol         1k   7k PL xxx      9+   3-   8-  10+  12+  3    13     64 |16262367|14649228 
+  8 Barcicka Sylwia        5k Barcicki Artur        6k   5k PL xxx      1-  14+   7+   5-  15+  3    12     65 |13550790|14637227 
+  9 Jachym Anna            6k Jachym Radoslaw       4d   1k PL xxx      7-  13+  12+   2-   4-  2    15     61 |13898027|13074435 
+ 10 Skibinska Skibińska   10k Bednarczyk Dariusz    4k   7k PL xxx      2-  15+   6-   7-  14+  2    12     61 |15062674|14037826 
+ 11 Bojar Olga             9k Rzepnikowski Piotr    6k   7k PL xxx      4-  16+   5-  13+   6-  2    12     58 |13601214|16049682 
+ 12 Kochanowska Elzbieta   6k Bielski Emil          3k   4k PL xxx     16+   4-   9-  14+   7-  2    10     60 |14062015|16249673 
+ 13 Kostrzewska Maria     10k Wałaszewski Maksym    5k   7k PL xxx      3-   9-  15+  11-  16+  2     9     60 |16262103|15050673 
+ 14 Wróbel Ilona          18k Brunner Vit           4d   7k PLCZ xxx    6-   8-  16+  12-  10-  1    10     55 |16233371|12513842 
+ 15 Kwietniewska Daria    17k Majka Marcin          1d   8k PL xxx      5-  10-  13-  16+   8-  1    10     55 |16062684|14713413 
+ 16 Staciwa Monika        20k Bojar Andrzej         3k  11k PL xxx     12-  11-  14-  15-  13-  0     8     51 |16201284|10825837

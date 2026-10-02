@@ -1,0 +1,11 @@
+stages:
+  - type: tournament
+    name: 
+      pl: Mistrzostwa
+      en: Championship
+    file: mpp2000.txt
+    scoringColumns: 
+      - wins          
+    breakers:
+      - wins
+    findSharedPlaces: true

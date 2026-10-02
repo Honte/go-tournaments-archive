@@ -1,0 +1,8 @@
+1 Cieślak Anna          11k Surma Mateusz        7d   2K PL xxx     7+ 3+ 2+ 4+ 5+   5 13 64 |16262367|12837968
+2 Kaczorowska Małgorzata 2k Cieślak Karol        1k   1K PL xxx     5+ 6+ 1- 8+ 3+   4 12 65 |13050543|14649228
+3 Cieśla Anna            1d Cieśla Kacper        2k   1K PL xxx     4+ 1- 5+ 6+ 2-   3 16 60 |13925769|13749230
+4 Skibińska Paulina      5k Bednarczyk Dariusz   3k   4K PL xxx     3- 7+ 6+ 1- 8+   3 11 64 |15062674|14037826
+5 Kwietniewska Daria     8k Krause Karol         6k   7K PL xxx     2- 8+ 3- 7+ 1-   2 13 65 |16062684|15725721
+6 Krzywolak Anna        12k Majka Marcin         3d   5K PL xxx     8+ 2- 4- 3- 7+   2 11 63 |16937184|14713413
+7 Szychowiak Marianna   14k Małkiewicz Wojciech 11k  12K PL xxx     1- 4- 8+ 5- 6-   1 12 60 |16725709|16562128
+8 Dolska Joanna         30k Rymarowicz Paweł    15k  22K PL xxx     6- 5- 7- 2- 4-   0 12 59 |17501715|16333735

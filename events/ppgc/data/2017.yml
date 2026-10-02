@@ -1,0 +1,12 @@
+stages:
+  - type: tournament
+    name: 
+      pl: Mistrzostwa
+      en: Championship
+    file: mpp2017.txt
+    notes: szczegółowe wyniki nieznane, prawdopodobnie było więcej par
+    scoringColumns: 
+      - place          
+    breakers:
+      - place
+    findSharedPlaces: true

@@ -1,0 +1,22 @@
+; PC[PL, Warszawa]
+; DT[2004-09-18,2004-09-19]
+; TM[62]
+;Warszawa, 18-19.09.2004
+;Pl.Name                  Str Name                  Str Club    Pt SOS SOD   1   2   3   4   5
+ 1 Koenig Katarzyna       1d Kraszek Janusz         5d  3d PL War      5  16  16   9+  3+  7+  2+  4+ |10449890|10637924
+ 2 Kaczorowska Małgorzata 5k Rams Michał            2d  2k PL War      4  15  10  11+  8+  5+  1- 10+ |13050543|12425314
+ 3 Lubos Barbara          6k Lubos Adam             2d  2k PL Ryb      4  14   9  14+  1- 10+  7+  6+ |10925761|10449703
+ 4 Budziszewska Olga     10k Bażyński Michał        4d  3k PL War      3  15   7  13+  5-  8+  9+  1- |12501863|10733943
+ 5 Lubos Anna             3k Chłodek Janusz         3d  1d PL Wod      3  14   7  12+  4+  2-  6- 11+ |10662938|10398465
+ 5 Lubos Aleksandra       4d Lubos Przemysław       7k  2k PL Wod      3  14   7  10+  7- 11+  5+  3- |10674928|12074260
+ 7 Piekarczyk Marta       6k Jachym Radosław        3k  4k PL P_T      3  14   5  15+  6+  1-  3- 14+ |13025628|13074435
+ 8 Tracichleb Magda       8k Bojar Andrzej          2k  5k PL R_W      3  11   4  16+  2-  4- 13+  9+ |12737769|10825837
+ 9 Kotowska Ewa           6k Gutowicz Adam          6k  6k PL War      2  14   3   1- 14+ 12+  4-  8- |10933725|10962842
+ 9 Karbownik Paula        9k Pyżalski Szymon        6k  7k PL L_P      2  14   3   6- 15+  3- 12+  2- |13425016|12833810
+11 Malinowska Justyna    19k Malinowski Włodzimierz 2d  9k PL Tuc      2  11   1   2- 16+  6- 15+  5- |12650594|10749409
+12 Pruszyńska Emilia      8k Karbownik Piotr        7k  7k PL Lod      2  10   3   5- 13+  9- 10- 15+ |13401014|13413015
+13 Długosz Sylwia        11k Sobański Grzegorz     10k 10k PL Poz      2   9   1   4- 12- 14+  8- 16+ |13550790|13062698
+14 Pluta Oliwia          19k Mroczek Krzysztof      1k 10k PL War      1  11   0   3-  9- 13- 16+  7- |12801723|12725064
+15 Gutowicz Aleksandra   19k Jastrzębowski Wojciech 4k 11k PL War      1   9   0   7- 10- 16+ 11- 12- |12998128|12037498
+16 Bojar Olga            30k Gawroński Przemysław   6k 18k PL War      0   9   0   8- 11- 15- 14- 13- |13601214|10833845
+;time 40min+30s byo

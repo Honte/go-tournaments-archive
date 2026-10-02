@@ -1,0 +1,6 @@
+; PC[PL, Przystanek Alaska]
+; DT[2026-07-25,2026-07-25]
+1 Kolińska Natalia 31k Siwy Adam          31k 31k PL xxx 3 4+ 3+ 2+ |19301854|19725508
+2 Bednarska Julia  31k Miłkowski Jakub    31k 31k PL xxx 2 3+ 4+ 1- |16733706|17937370
+3 Flach Aleksandra 31k Flach Michal       31k 31k PL xxx 1 2- 1- 4+ |20437648|20401029
+4 Piszcz Agnieszka 31k Wałaszewski Maksym 31k 31k PL xxx 0 1- 2- 3- |21037302|15050673

@@ -1,0 +1,12 @@
+stages:
+  - type: tournament
+    name: 
+      pl: Mistrzostwa
+      en: Championship
+    file: mpp2008.txt
+    notes: dostępna tylko lista medalistów, brak informacji o innych graczach
+    scoringColumns: 
+      - place    
+    breakers:
+      - place
+    findSharedPlaces: true 

@@ -1,0 +1,16 @@
+{
+  "site": {
+    "name": "Polish Pair Go Championships Archive",
+    "acronym": "PPGC",
+    "description": "Archive of all Polish Pair Go Championships tournaments",
+    "yearDescription": "Results of PPGC %{0}",
+    "allTimeStatsDescription": "All-time statistics of all Polish Pair Go Championships participants",
+    "playerStatsDescription": "Participation statistics of %{0} in all Polish Pair Go Championships events"
+  },
+  "details": {
+    "goToWebsite": "Go to PPGC %{0} website"
+  },
+  "winners": {
+    "first": "Polish Pair Go Champions"
+  }
+}

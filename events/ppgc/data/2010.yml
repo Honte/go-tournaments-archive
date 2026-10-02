@@ -1,0 +1,19 @@
+stages:
+  - type: tournament
+    name:
+      pl: Mistrzostwa
+      en: Championship
+    file: mpp2010.txt
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 3-1 1:W+R round:1 sgf:2010/1-AleksandraSontowskaArkadiuszKindziuk-KatarzynaMazurekLeszekSoldan.sgf
+    unmatchedSgfs:
+      - ?-? ? round:2 sgf:2010/MPPpoznan-2.sgf # player "Sontowska&Kindziuk" not found, player "Kleczkowska&Dziołak" not found, pair names in filename do not agree with the H9 pair
+      - ?-? ? round:3 sgf:2010/MPPpoznan-3.sgf # player "Kleczkowska&Dziołak" not found, player "Mazurek&Sołdan" not found, pair names in filename do not agree with the H9 pair
+      - ?-? ? sgf:2010/MPPpoznan.sgf # player "Sontowska&Kindziuk" not found, player "Mazurek&Soldan" not found
+      - ?-1 1:W+8.5 round:3 sgf:2010/3-KlaudiaKleczkowskaKrzysztofDziolak-KatarzynaMazurekLeszekSoldan.sgf # player "Kleczkowska&Dziołak" not found, pair names in filename do not agree with the H9 pair
+      - 3-? ?:W+9.5 round:2 sgf:2010/2-AleksandraSontowskaArkadiuszKindziuk-KlaudiaKleczkowskaKrzysztofDziolak.sgf # player "Kleczkowska&Dziołak" not found, pair names in filename do not agree with the H9 pair

@@ -1,0 +1,23 @@
+; PC[PL, Tuchola]
+; DT[2003-07-05,2003-07-06]
+;Tuchola, 5-6.07.2003
+;Pl     Name, Grade                                     S  SOS  SDOS   1.   2.   3.   4.   5.
+ 1 Budziszewska Olga    10k Bażyński Michał        4d   3k PL xxx 5   15   15    7+  10+   4+   2+   5+ |12501863|10733943
+ 2 Lubos Aleksandra      3d Lubos Przemysław      10k   4k PL xxx 4   16   11   11+   6+   5+   1-   4+ |10674928|12074260
+ 3 Tracichleb Magdalena 15k Celejewski Paweł       1d   7k PL xxx 4   11    8   14+   5-  12+  11+  10+ |12737769|12833062
+ 4 Kotowska Ewa          6k Gutowicz Adam          6k   6k PL xxx 3   17    8    9+  13+   1-   8+   2- |10933725|10962842
+ 5 Lubos Anna            3k Lubos Jan              4d   1d PL xxx 3   17    8   12+   3+   2-  10+   1- |10662938|10337613
+ 6 Malinowska Justyna   19k Malinowski Włodzimierz 2d   9k PL xxx 3   12    6   17+   2-  11-   9+  12+ |12650594|10749409
+ 7 Bełtowska Katarzyna  19k Bojar Andrzej          3k  11k PL xxx 3   11    4    1-  15+  10-  16+  13+ |13013968|10825837
+ 8 Gogosz Dorota        20k Gogosz Dominik         1k  10k PL xxx 3   10    5   16+  12-  14+   4-  11+ |12901581|12813064
+ 9 Piekarczyk Marta     18k Wojciechowski Jacek    9k  13k PL xxx 3   10    4    4-  18+  13+   6-  15+ |13025628|12937320
+10 Jackowska Katarzyna  20k Pszonka Roman          4d   8k PL xxx 2   16    4   15+   1-   7+   5-   3- |13037970|10874842
+11 Woźniak Aleksandra   21k Celejewski Piotr       4k  12k PL xxx 2   15    4    2-  17+   6+   3-   8- |12986589|12801063
+12 Pluta Oliwia         19k Mroczek Krzysztof      2k  10k PL xxx 2   14    4    5-   8+   3-  15+   6- |12801723|12725064
+13 Kotowska Emilia      10k Kotowski Krzysztof     9k   9k PL xxx 2   12    3   18+   4-   9-  14+   7- |12750397|10937850
+14 Gutowicz Aleksandra  20k Bażyński Jan           8k  14k PL xxx 2   11    2    3-  16+   8-  13-  17+ |12998128|10925728
+15 Malinowska Ewa       25k Kober Piotr            4k  14k PL xxx 1   11    1   10-   7-  18+  12-   9- |00000000|10833834
+16 Woźniak Anna         21k Owsiany Tomasz        18k  19k PL xxx 1   10    1    8-  14-  17+   7-  18- |12950586|12933327
+17 Mroczek Barbara      25k Mroczek Tomasz         6k  15k PL xxx 1    9    1    6-  11-  16-  18+  14- |12750617|12733017
+18 Stożek Grażyna       25k Stożek Jan            12k  18k PL xxx 1    8    1   13-   9-  15-  17-  16+ |12850596|12713019
+
