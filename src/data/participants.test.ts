@@ -19,6 +19,29 @@ import { calculateStats } from '@/data/stats';
 const translations = { ...en, locale: 'en' as const, site: { ...en.site, acronym: 'Test' } };
 const event: EventDefinition = { id: 'test', locales: ['en'], pairs: true };
 
+it('loads two- and four-letter YAML pair countries in source member order', () => {
+  for (const [country, pairCountry, memberCountries] of [
+    ['pl', 'PL', ['PL', 'PL']],
+    ['plDE', 'XX', ['PL', 'DE']],
+    ['PLPL', 'PL', ['PL', 'PL']],
+    ['plPL', 'PL', ['PL', 'PL']],
+  ] as const) {
+    const pair = loadParticipants({ team: `Alice One + Bob Two; 3d (${country})` }, event, createPlayersHandler()).team;
+    assert.ok(isPair(pair));
+    assert.equal(pair.country, pairCountry);
+    assert.deepEqual(
+      pair.members.map((member) => member.country),
+      memberCountries
+    );
+  }
+  for (const country of ['P', 'POL', 'PLDEGB']) {
+    assert.throws(
+      () => loadParticipants({ team: `Alice One + Bob Two; 3d (${country})` }, event, createPlayersHandler()),
+      /Invalid pair/
+    );
+  }
+});
+
 it('rejects an H9 pair containing the same player twice', () => {
   const row = parseH9('; EV[Test]\n1 One Alice 2d One Alice 2d 2d PL 0').results[0];
   assert.throws(
