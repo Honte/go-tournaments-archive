@@ -22,6 +22,7 @@ export function TableLadder({ event, stage, players, games, translations }: Tabl
   const { table, rounds, playoffs } = stage;
   const playoffsColumns = playoffs.length ? Math.max(...table.map((p) => p.playoffs.length)) : 0;
   const hasSharedPlaces = table.some((p) => p.index !== p.place);
+  const showRank = table.some((result) => players[result.id].rank);
 
   return (
     <div className="w-full overflow-x-auto">
@@ -31,7 +32,7 @@ export function TableLadder({ event, stage, players, games, translations }: Tabl
             {hasSharedPlaces && <th className="p-1">{t('table.index')}</th>}
             <th className="p-1">{t('table.place')}</th>
             <th className="p-1 text-left">{t('table.name')}</th>
-            <th className="p-1">{t('table.rank')}</th>
+            {showRank && <th className="p-1">{t('table.rank')}</th>}
             {rounds.map((round, index) => (
               <th className="p-1" key={index}>
                 {t('table.round', String(index + 1))}
@@ -64,7 +65,7 @@ export function TableLadder({ event, stage, players, games, translations }: Tabl
                     showRank={isPair(player)}
                   />
                 </td>
-                <td className="p-1">{player.rank}</td>
+                {showRank && <td className="p-1">{player.rank}</td>}
                 {result.games.map((game, index) =>
                   game ? (
                     <GameCell as="td" key={index} entry={game} games={games} players={players} />
