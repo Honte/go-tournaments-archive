@@ -15,7 +15,7 @@ stages:
       - sos
       - sosos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
     collapsed: true
     games:
@@ -46,7 +46,7 @@ stages:
       - sos
       - sosos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
     collapsed: true
     games:

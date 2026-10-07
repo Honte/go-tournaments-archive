@@ -4,9 +4,9 @@ stages:
     file: eygc2022u12.txt
     category: u12
     name: U12
-    dir: 2022/u12 
+    dir: 2022/u12
     scoringColumns:
-      - mms 
+      - mms
       - wins
       - null
       - sos
@@ -14,16 +14,16 @@ stages:
       - mms
       - sos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
     collapsed: true
   - type: tournament
     file: eygc2022u16.txt
     category: u16
     name: U16
-    dir: 2022/u16 
+    dir: 2022/u16
     scoringColumns:
-      - mms 
+      - mms
       - wins
       - null
       - sos
@@ -31,23 +31,30 @@ stages:
       - mms
       - sos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
-    collapsed: true    
+    collapsed: true
+    games:
+      - 1-3 1:B+24.5 round:2 sgf:2022/u16/2-VsevolodOvsiienko-AnnaMelnyk.sgf
+      - 2-3 2:B+0.5 round:6 sgf:2022/u16/6-YuzeXing-AnnaMelnyk.sgf
+      - 3-4 3:B+R round:5 sgf:2022/u16/5-AnnaMelnyk-RobertAndreiGrosu.sgf
+      - 3-8 3:B+5.5 round:4 sgf:2022/u16/4-AnnaMelnyk-DragosBoldeanu.sgf
+      - 3-10 3:B+R round:3 sgf:2022/u16/3-AnnaMelnyk-DmytroStefanovych.sgf
+      - 12-3 3:W+R round:1 sgf:2022/u16/1-YehorLysenko-AnnaMelnyk.sgf
   - type: tournament
     file: eygc2022u20.txt
     category: u20
     name: U20
-    dir: 2022/u20 
+    dir: 2022/u20
     scoringColumns:
-      - mms 
+      - mms
       - wins
       - null
-      - sos    
+      - sos
     breakers:
       - mms
-      - sos 
+      - sos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
     collapsed: true

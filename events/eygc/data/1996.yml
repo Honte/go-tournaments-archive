@@ -7,7 +7,7 @@ stages:
     name: U12
     dir: 1996/u12
     scoringColumns:
-      - mms 
+      - mms
       - wins
       - sos
       - sosos
@@ -23,7 +23,7 @@ stages:
     name: U18
     dir: 1996/u18
     scoringColumns:
-      - mms 
+      - mms
       - wins
       - sos
       - sosos
@@ -32,6 +32,6 @@ stages:
       - sos
       - sosos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
     collapsed: true

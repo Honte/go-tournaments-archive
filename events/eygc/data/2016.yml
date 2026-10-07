@@ -7,7 +7,7 @@ stages:
     name: U12
     dir: 2016/u12
     scoringColumns:
-      - mms 
+      - mms
       - wins
       - sos
       - sosos
@@ -16,7 +16,7 @@ stages:
       - sos
       - sosos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
     collapsed: true
   - type: tournament
@@ -25,7 +25,7 @@ stages:
     name: U16
     dir: 2016/u16
     scoringColumns:
-      - mms 
+      - mms
       - wins
       - sos
       - sosos
@@ -34,16 +34,16 @@ stages:
       - sos
       - sosos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
-    collapsed: true    
+    collapsed: true
   - type: tournament
     file: eygc2016u20.txt
     category: u20
     name: U20
     dir: 2016/u20
     scoringColumns:
-      - mms 
+      - mms
       - wins
       - sos
       - sosos
@@ -52,6 +52,6 @@ stages:
       - sos
       - sosos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
     collapsed: true
