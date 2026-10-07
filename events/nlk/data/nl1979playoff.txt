@@ -1,2 +1,4 @@
-   1 Schlemper Ronald              30k NL  xxx      2     2+ 2+ 
-   2 Muller Cas                    30k NL  xxx      0     1- 1-
+; PC[NL, Leiden]
+; DT[1979-07-01,1979-07-08]
+   1 Schlemper Ronald              5d NL  xxx      2     2+ 2+ 
+   2 Muller Cas                    4d NL  xxx      0     1- 1-

@@ -1,9 +1,9 @@
 name: 2nd Dutch Championship
 stages:
- - type: classification
-   name: Playoff
-   notes: exact results unknown, played in spring
-   order:
-    - Max Rebattu
-    - Henk_de Vries
-    - Mats Goemans
+  - type: classification
+    name: playoff
+    notes: After double round robin order was Max Rebattu 3, Mats Goemans 2, Henk de Vries 1 - after that they played playoff for 1st place (Rebattu vs Goemans) and for 2nd place (Goemans vs de Vries) because 2 wins difference was needed, played in spring
+    order:
+      - Max Rebattu
+      - Henk_de Vries
+      - Mats Goemans

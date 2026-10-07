@@ -2,6 +2,7 @@ stages:
   - type: tournament
     name: Championship
     file: nl2025.txt
+    notes: For statistics best 24 players and games between them are shown. Games against other players changed to 0+ and 0-. Full table check EGD link.
     scoringColumns:
       - mms
       - wins
@@ -11,6 +12,6 @@ stages:
       - mms
       - sos
       - sodos
-    columns:  
+    columns:
       - wins
     findSharedPlaces: true

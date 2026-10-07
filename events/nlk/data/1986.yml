@@ -1,10 +1,26 @@
 stages:
   - type: tournament
+    name: triple ko
+    file: nl1986tripleko.txt
+    dir: 1986/tripleko
+    notes: game declared unresolved
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    excluded: true
+    collapsed: false
+    findSharedPlaces: true
+    games:
+      - 2-1 jigo black:2 round:1 sgf:1986/tripleko/1-FrankJanssen-MarkBoon.sgf
+  - type: tournament
     name: Championship
     file: nl1986.txt
-    notes: The last round game between Janssen and Boon resulted in a triple-ko, later they had to replay this game, which Boon won
-    scoringColumns: 
-      - wins          
+    time: 3h +1m byo
+    dir: 1986/nlk
+    notes: The last round game between Janssen and Boon resulted in a triple-ko (game record in separate section), later they had to replay this game, which Boon won. There was additional playoff for 2nd place won by Arend-Jan Westhoff 2-1
+    scoringColumns:
+      - wins
       - sos
       - sodos
     breakers:
@@ -12,3 +28,13 @@ stages:
       - sos
       - sodos
     findSharedPlaces: true
+    games:
+      - 1-5 1:B+R round:6 sgf:1986/nlk/6-RonaldSchlemper-ErikPuyt.sgf
+      - 2-5 2:B+13.5 round:2 sgf:1986/nlk/2-ArendJanWesthoff-ErikPuyt.sgf
+      - 4-3 3:W+R round:6 sgf:1986/nlk/6-FrankJanssen-MarkBoon.sgf
+      - 4-10 4:B+R round:1 sgf:1986/nlk/1-FrankJanssen-MichielEijkhout.sgf
+      - 7-1 1:W+R round:5 sgf:1986/nlk/5-RobertRehm-RonaldSchlemper.sgf
+      - 7-4 4:W+? round:2 sgf:1986/nlk/2-RobertRehm-FrankJanssen.sgf
+      - 7-6 7:B+3.5 round:4 sgf:1986/nlk/4-RobertRehm-ReneAaij.sgf
+      - 9-4 4:W+R round:4 sgf:1986/nlk/4-JanvanderSteen-FrankJanssen.sgf
+      - 12-9 9:W+R round:3 sgf:1986/nlk/3-TonnyClaasen-JanvanderSteen.sgf

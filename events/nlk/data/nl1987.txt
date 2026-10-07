@@ -1,4 +1,5 @@
 ; EV[18th Dutch Championship]
+; PC[NL,Arnhem-Amsterdam]
    1 Schlemper Ronald               7d NL  xxx      6    21    21      3+      4+      8+      2+      6+      5+
    2 Janssen Frank                  5d NL  xxx      5    21    15      9+      5+      7+      1-      3+      4+
    3 Rehm Robert                    5d NL  xxx      4    22    11      1-     10+      4+      7+      2-      6+

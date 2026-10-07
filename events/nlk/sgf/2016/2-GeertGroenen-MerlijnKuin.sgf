@@ -1,0 +1,859 @@
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]
+GN[Dutch Championship round 2]PW[Merlijn Kuin]PB[Geert Groenen]WR[6d]BR[6d]RO[2]PC[https://online-go.com/review/100698]C[
+
+-- chat --
+Pempu: Not started yet?
+JordTV: any moment now
+Pempu: Cool. OGS banner showing up for this game?
+Pempu: The scrolling notification banner :)
+JordTV: a banner should pop up pretty soon
+Pempu: This will be a big game :)
+]RE[W+2.50]MULTIGOGM[1]
+;B[pd]C[Dutch championship round 2 board 1
+
+for more info : www.gobond.nl
+
+-- chat --
+Miselium: long stay....
+Pempu: uhmm?
+]
+;W[dc]C[
+
+-- chat --
+Pempu: How does the tournament system work for 16 players?
+]
+;B[pq]
+;W[dq]
+;B[de]C[
+
+-- chat --
+JordTV: it's swiss, which means that winners play against winners and loser against losers
+Pempu: Ok.
+]
+;W[dh]C[
+
+-- chat --
+Pempu: This opening is pretty popular still. 
+Pempu: around 30 games played like this
+Pempu: oh only 9 of them are pro games
+Miselium: timelimits are....??
+]
+;B[gd]C[
+
+-- chat --
+JordTV: 1.5 hours p.p. and 30 sec byo-yomi
+Pempu: Oh yeah :)
+JordTV: i almost forgot
+]
+;W[co]C[
+
+-- chat --
+Pempu: C5 is a new move 
+Pempu: E15 was played on all of the 3 pro games that the database found
+emauton: Why is E15 important in this position, Pempu?
+crookie: From Merlijn's KGS acc user info: "Dutch champion too many times already. Either get me a new girfriend or study a bit more guys!"
+emauton: Hah.
+crookie: b C17 ?
+crookie: 2hi pincer just makes me go "not again..." everyone's playing it.
+]
+;B[jq]C[
+
+-- chat --
+temifar: :)
+JordTV: to answer your question partly, e15 would be joseki
+]
+;W[ee]
+;B[ef]
+;W[fe]C[
+
+-- chat --
+Pempu: database had J3 played for 9 times and K3 only 2 times here. Only counting the bottom half of the board 
+Pempu: + D12 stone added
+emauton: Ah, thank you JordTV - reading http://senseis.xmp.net/?34PointHighApproachTwoSpaceHighPincerOgeima
+Pempu: This joseki is too complicated for me. 
+]
+;B[cc]
+;W[fc]
+;B[db]
+;W[cd]
+;B[dd]
+;W[ec]
+;B[cb]
+;W[cf]
+;B[ce]
+;W[df]C[
+
+-- chat --
+KoenP: Hey all.
+Pempu: This seems to be the end of the joseki they chose. Now black has many different places to play
+]
+;B[qo]
+;W[nc]C[
+
+-- chat --
+emauton: With the lower right shimari in place, is K3 considered the ideal extension?
+]
+(;B[pf]
+;W[kd]
+;B[pj]C[
+
+-- chat --
+temifar: emauton: SL calls what B has now a "conventional double-wing"
+emauton: Thanks, temifar.
+]
+;W[io]C[
+
+-- chat --
+Pempu: In some pro game white chose to play L5 here.
+emauton: With a similar position on the top left, Pempu?
+Pempu: Nope.
+Pempu: Ok If I redraw the search box to only search bottom right quarter then this move is found also
+KoenP: That's a big difference. this move is aiming at all board influence. Without a white top left that is not a viable strategy
+Pempu: White had influence on top left in L5 variation also. Just different kind of
+Pempu: These three reduction points are found from the database.. From move 0: Q16 D17 Q3 D3 D15 D12 G16 C5 K3 E15 E14 F15 C17 F17 D18 C16 D16 E17 C18 C14 C15 D14 R5 O17 Q14 L16 Q10 J5 
+crookie: the lower board position has never occurred lol
+KoenP: Ok.. I just wanted to point out that this is a building move, L5 is breaking up blacks position
+emauton: This commentary is very interesting for me, thank you.
+crookie: E4 is another
+emauton: Is it fair to say that white is aiming in these first 30 moves for power where black is aiming for territory?
+Pempu: Found one game with Sakata Eio playing L4 at this kind of situatioon.
+Pempu: but the bottom left cornber is way different so probably not applicable
+crookie: not really... black right side has 3/5 on 4th line
+crookie: black's cash is in top left and lower right only
+Pempu: Moyo games are so hard :)
+Pempu: Argh Forgot move numbers :(
+emauton: Right, thanks crookie.
+KoenP: That's easy: White. :)
+]
+(;B[ko]
+;W[jm]
+;B[lm]
+;W[kk]C[
+
+-- chat --
+Pempu: Who is better?-). From move 0: Q16 D17 Q3 D3 D15 D12 G16 C5 K3 E15 E14 F15 C17 F17 D18 C16 D16 E17 C18 C14 C15 D14 R5 O17 Q14 L16 Q10 J5 L5 K7 M7 L9 
+Pempu: Who is better?-) take2. From move 0: Q16 D17 Q3 D3 D15 D12 G16 C5 K3 E15 E14 F15 C17 F17 D18 C16 D16 E17 C18 C14 C15 D14 R5 O17 Q14 L16 Q10 J5 L5 K7 M7 L9 
+])
+(;B[hp]
+;W[ho]
+;B[gp]
+;W[go]
+;B[fp]C[
+
+-- chat --
+Pempu: H4 seems very bad direction for me
+crookie: this doesn't look good for black either
+Pempu: white has a stone at D3 what is this direction?!?
+]
+;W[fo]
+;B[ep]C[
+
+-- chat --
+Pempu: D6 :) thanks
+]
+;W[dn]C[
+
+-- chat --
+crookie: that's what i thought
+Pempu: What on earth is this. 
+Pempu: I can't understand what black is thinking.
+crookie: that's b giving w a free wall
+]
+;B[ko]C[
+
+-- chat --
+crookie: facing moyo
+Pempu: Maybe black was afraid fo white taking bottom territory
+crookie: if they now draw a line along the L column, they'd be pretty even
+KoenP: Hmm, I guess that black expected H3 if he played L5 without the exchanges. If the game becomes territorial now, b got a reduction already. But shapewise it looks good for white
+crookie: that would be slack
+]
+(;W[jk]
+;B[lk]C[
+
+-- chat --
+Pempu: Moyoish. From move 0: Q16 D17 Q3 D3 D15 D12 G16 C5 K3 E15 E14 F15 C17 F17 D18 C16 D16 E17 C18 C14 C15 D14 R5 O17 Q14 L16 Q10 J5 H4 H5 G4 G5 F4 F5 E4 D6 L5 K9 M9 
+])
+(;W[oo]C[
+
+-- chat --
+crookie: tobi or not tobi
+emauton: This looks like a difficult place to handle P5 from, is it common for this reduction to go in behind L5?
+Pempu: It might give white too easy sabaki though.
+KoenP: It's interesting... Normal moves are O4 or Q6, protecting one of the sides. Since L5 would look silly after O4, Q6 seems only move to me..
+KoenP: Pempu... Attaching to the weak stone is usually not a good idea...
+Pempu: yeah :)
+crookie: when someone's fishing for aji, just nobi ;)
+KoenP: And if they are not fishing for aji? :)
+]
+(;B[on]C[
+
+-- chat --
+Pempu: P6 is the move I'd play in my mind
+])
+(;B[np]
+;W[qn]C[
+
+-- chat --
+crookie: crosscut
+KoenP: Oh noooo...
+]
+;B[qp]C[
+
+-- chat --
+crookie: when in doubt, keima
+crookie: looks like p5 has to be sacrificed somehow
+crookie: i get b 36, w 42.5
+crookie: r12 is very questionable
+]
+(;W[pn]C[
+
+-- chat --
+vesko_baby: white is already quite behind
+vesko_baby: R8 here for black
+vesko_baby: and white will have to run
+vesko_baby: and then black can seal the right side with R12 
+vesko_baby: white has a weak group and black will have sente after he is done attacking
+]
+;B[ql]
+;W[nm]C[
+
+-- chat --
+vesko_baby: maybe Q12
+])
+(;W[ql]C[
+
+-- chat --
+KoenP: Two slight problems though. It's not blacks move, and after R12 the corner is still open. So r12 does not do a lot apart from plugging one hole while there is another one right next to it
+]
+;B[qj]C[
+
+-- chat --
+crookie: the innuendo
+]
+(;W[ol]
+;B[pb]C[
+
+-- chat --
+vesko_baby: so now P8 for white
+vesko_baby: and black closes the corner
+vesko_baby: at Q18
+])
+(;W[ok]
+;B[om]C[
+
+-- chat --
+Pempu: Attacking white shape here seems correct :)
+crookie: b prevents W shape
+crookie: or M, if you will
+crookie: by analogy, Q7 must be the answer
+vesko_baby: Q8?
+vesko_baby: with Q7 black can cut
+]
+;W[pm]
+;B[on]C[
+
+-- chat --
+Pempu: I would have liked P6 to be at O7
+Pempu: or maybe even P8
+Pempu: P6 didn't strike as important point for white to me so why should black play there?-)
+JordTV: it cuts p5 and white still has to connect by playing p8
+]
+;W[ol]C[
+
+-- chat --
+crookie: instant good shape
+JordTV: which he did (therefor i knew)
+Pempu: Black shape is cramped here
+Pempu: Black kind of wants to play N7 or something
+KoenP: Hi Jord. Greetings from Wageningen :)
+crookie: can o5 escape?
+crookie: there's definitely some bad aji for b
+JordTV: Hi Koen, too bad you're not here :(
+KoenP: Yeah, true.. Maybe next year. :)
+Pempu: Maybe it would still be playable. Black has sente 
+crookie: is there a way to clean up the game tree?
+Pempu: by refreshing only and still you get all my spam variations back on the game tree if you accidently click on them
+Pempu: ;)
+Pempu: The gametree is a weakness in OGS
+KoenP: B will answer I think. N7 most likely
+crookie: it's just weird that the main variation would branch away from the top
+Pempu: crookie: yeah it's sad :( It's been reported years ago. It's just not big priority :( 
+JordTV: that happens when someone thinks ahead of the actual game with their variations i think
+crookie: well yes. i expected it to be like Tygem, where variations don't appear in the actual tree at all. maybe that's harder to code 8)
+Pempu: I like that they appear in the tree. I just wish the main tree would be game tree
+]
+(;B[sa]
+;W[nm]
+;B[nn]
+;W[mn]
+;B[no]C[
+
+-- chat --
+Pempu: Forcing moves for white. From move 0: Q16 D17 Q3 D3 D15 D12 G16 C5 K3 E15 E14 F15 C17 F17 D18 C16 D16 E17 C18 C14 C15 D14 R5 O17 Q14 L16 Q10 J5 H4 H5 G4 G5 F4 F5 E4 D6 L5 P5 O4 R6 R4 R8 R10 P9 P7 Q7 P6 P8 T19 O7 O6 N6 O5 
+])
+(;B[ni]C[
+
+-- chat --
+crookie: Alright, move 50. Predictions?
+crookie: Who's gonna win?
+]
+(;W[nm]
+;B[nn]
+;W[mn]
+;B[no]
+;W[mk]C[
+
+-- chat --
+Pempu: perhaps?. From move 0: Q16 D17 Q3 D3 D15 D12 G16 C5 K3 E15 E14 F15 C17 F17 D18 C16 D16 E17 C18 C14 C15 D14 R5 O17 Q14 L16 Q10 J5 H4 H5 G4 G5 F4 F5 E4 D6 L5 P5 O4 R6 R4 R8 R10 P9 P7 Q7 P6 P8 O11 O7 O6 N6 O5 N9 
+])
+(;W[rm]
+;B[id]C[
+
+-- chat --
+crookie: The two seem to be 8-8 since 2001.
+Pempu: 15 years is a long time
+Pempu: S9 seems very big 
+Pempu: oh right it's not sente
+crookie: They're also 5-5 ever since Merlijn turned 6d (2007)
+Pempu: I have a feeling that white is better here.
+]
+;W[jc]
+;B[gb]C[
+
+-- chat --
+crookie: I get b 56, w 56.5
+crookie: but w has more potential
+crookie: if anything around F10 becomes points for w, he should be ahead
+Pempu: White 50 black 70 but white has potential. From move 0: Q16 D17 Q3 D3 D15 D12 G16 C5 K3 E15 E14 F15 C17 F17 D18 C16 D16 E17 C18 C14 C15 D14 R5 O17 Q14 L16 Q10 J5 H4 H5 G4 G5 F4 F5 E4 D6 L5 P5 O4 R6 R4 R8 R10 P9 P7 Q7 P6 P8 O11 S7 J16 K17 G18 
+crookie: i think q19 is a bit premature
+Pempu: Elefants endgame
+Pempu: G18 seems weird. White could enclose the middle with H14
+casio: Sorry click on my tablet. From move 0: Q16 D17 Q3 D3 D15 D12 G16 C5 K3 E15 E14 F15 C17 F17 D18 C16 D16 E17 C18 C14 C15 D14 R5 O17 Q14 L16 Q10 J5 H4 H5 G4 G5 F4 F5 E4 D6 L5 P5 O4 R6 R4 R8 R10 P9 P7 Q7 P6 P8 O11 S7 J16 K17 G18 
+crookie: and that's why tablets suck
+KoenP: The point of G18 is that it threatens to connect himself, while preventing the white connection. It's an essential move. J16 would be pointless if W could connect at h18
+Pempu: Tablets are ok. They just need  a good userinterface
+crookie: i doubt w would want to strengthen black next to his group
+Pempu: So white doesn't want M17  group to become too weak since white wants to invade top right corner?
+crookie: h14 looks slack
+]
+(;W[pa]C[
+
+-- chat --
+casio: d1. From move 0: Q16 D17 Q3 D3 D15 D12 G16 C5 K3 E15 E14 F15 C17 F17 D18 C16 D16 E17 C18 C14 C15 D14 R5 O17 Q14 L16 Q10 J5 H4 H5 G4 G5 F4 F5 E4 D6 L5 P5 O4 R6 R4 R8 R10 P9 P7 Q7 P6 P8 O11 S7 J16 K17 G18 Q19 
+])
+(;W[hf]
+;B[if]
+;W[ig]
+;B[jf]
+;W[he]C[
+
+-- chat --
+Pempu: Seems better for white. From move 0: Q16 D17 Q3 D3 D15 D12 G16 C5 K3 E15 E14 F15 C17 F17 D18 C16 D16 E17 C18 C14 C15 D14 R5 O17 Q14 L16 Q10 J5 H4 H5 G4 G5 F4 F5 E4 D6 L5 P5 O4 R6 R4 R8 R10 P9 P7 Q7 P6 P8 O11 S7 J16 K17 G18 H14 J14 J13 K14 H15 
+])
+(;W[kf]
+;B[if]
+;W[gg]C[
+
+-- chat --
+temifar: How much time they have left?
+JordTV: geert 37 minutes - merlijn 44 minutes
+]
+;B[ih]
+;W[hg]
+;B[ig]C[
+
+-- chat --
+temifar: tnx
+gooooo: how are they reacting to the game? any of them looks frustrated or such?
+KoenP: Both always have pokerfaces during play. :)
+]
+;W[hj]
+;B[bf]
+;W[bg]
+;B[be]
+;W[ch]
+;B[pb]C[
+
+-- chat --
+KoenP: Wow, surprising development. Never expected black to get both these big moves.
+]
+;W[oc]
+;B[pc]
+;W[ne]
+;B[ib]
+;W[jb]
+;B[ro]
+;W[rk]
+;B[rj]
+;W[sj]
+;B[si]
+;W[sk]
+;B[rh]C[
+
+-- chat --
+JordTV: no moves were made recently
+JordTV: and as i say that...
+thong.hsienjin: top right black
+thong.hsienjin: too strong to be invaded
+thong.hsienjin: same for btm black
+]
+(;W[og]C[
+
+-- chat --
+thong.hsienjin: still not moving?
+thong.hsienjin: or my pc lag?
+])
+(;W[kn]
+;B[ln]
+;W[jo]
+;B[kp]
+;W[lm]
+;B[km]
+;W[jn]C[
+
+-- chat --
+lovecall: Quite a peaceful game.
+]
+;B[ij]C[
+
+-- chat --
+temifar: d1. From move 0: Q16 D17 Q3 D3 D15 D12 G16 C5 K3 E15 E14 F15 C17 F17 D18 C16 D16 E17 C18 C14 C15 D14 R5 O17 Q14 L16 Q10 J5 H4 H5 G4 G5 F4 F5 E4 D6 L5 P5 O4 R6 R4 R8 R10 P9 P7 Q7 P6 P8 O11 S7 J16 K17 G18 L14 J14 G13 J12 H13 J13 H10 B14 B13 B15 C12 Q18 P17 Q17 O15 J18 K18 S5 S9 S10 T10 T11 T9 S12 L6 M6 K5 L4 M7 L7 K6 J10 
+temifar: d2. From move 0: Q16 D17 Q3 D3 D15 D12 G16 C5 K3 E15 E14 F15 C17 F17 D18 C16 D16 E17 C18 C14 C15 D14 R5 O17 Q14 L16 Q10 J5 H4 H5 G4 G5 F4 F5 E4 D6 L5 P5 O4 R6 R4 R8 R10 P9 P7 Q7 P6 P8 O11 S7 J16 K17 G18 L14 J14 G13 J12 H13 J13 H10 B14 B13 B15 C12 Q18 P17 Q17 O15 J18 K18 S5 S9 S10 T10 T11 T9 S12 L6 M6 K5 L4 M7 L7 K6 J10 
+temifar: sorry
+temifar: double misclick :)
+crookie: is there another move but hane?
+]
+;W[ik]
+;B[jk]
+;W[ii]
+;B[hh]
+;W[jj]
+;B[gh]
+;W[fh]
+;B[gi]
+;W[fj]
+;B[fi]
+;W[ei]
+;B[fg]
+;W[eh]
+;B[gf]
+;W[ff]
+;B[hf]
+;W[gg]
+;B[fb]
+;W[mn]
+;B[lo]
+;W[no]C[
+
+-- chat --
+lovecall: white profit from this quite a lot
+]
+;B[mo]
+;W[mm]
+;B[po]
+;W[pn]
+;B[op]C[
+
+-- chat --
+crookie: o5 aji coming back to haunt b ;)
+]
+;W[nn]C[
+
+-- chat --
+crookie: lower left now?
+lovecall: Black shouldn't let white get a ponnuki in the middle
+lovecall: that is what hurt the most
+]
+;B[na]
+;W[mb]
+;B[dp]
+;W[cp]
+;B[dr]C[
+
+-- chat --
+lovecall: though I think the problem is, he doesn't even understand what is good or not, since he doesn't understand the basic yet. But maybe that just me back when I was a beginner.
+]
+;W[cq]
+;B[er]
+;W[eq]
+;B[fr]
+;W[fq]
+;B[gq]C[
+
+-- chat --
+peterolsoy: is there a stream for this?
+JordTV: nope, just this
+peterolsoy: okay, thanks
+]
+;W[cr]C[
+
+-- chat --
+SnesHero: the sgf for this game can be downloaded in the end?
+]
+;B[kj]C[
+
+-- chat --
+JordTV: you can download it allready i think
+lovecall: I think c3 instead of c4 would be better
+]
+;W[kk]
+;B[ji]
+;W[jl]
+;B[mf]
+;W[nf]
+;B[mg]C[
+
+-- chat --
+theparty: Guys I started go about 3 days ago do you think theres anything I could learn from this match
+JordTV: but if you wait till the end, it'll be finished ;)
+]
+;W[me]
+;B[ng]C[
+
+-- chat --
+lovecall: @theparty, you should learn the basics first, I think.
+]
+;W[pe]C[
+
+-- chat --
+SnesHero: i'll wait until it's finished
+theparty: Ive worked my way through a few tutorials already and am reading "lessons in the fundementals of go" but would this be too advanced
+theparty: and sorry for distracting u form the game
+theparty: from*
+SnesHero: you allways have a lot to learn from professional games. Just try to understand why the stones are being placed the way they are
+KoenP: I would advise you just to look what happens, theparty. It will help you get a feeling for what territory is, and watch how they play on the borders of their respective territories
+KoenP: Besides, if you are reading 'fundamentals' after just three days, I can promise you that you have a mountain to climb as well :)
+theparty: alright thanks for the replies, ive been getting the feeling that go is more difficult from chess but i started chess a long time ago maybe i felt the same way about it then as i feel about go now
+theparty: difficult than chess*
+lovecall: Just to see
+crookie: everything you
+crookie: everything you're not good at seems more difficult than stuff you're good at
+lovecall: I learn to be decent in chess in one day, but it takes month to be even remotely decent in Go.
+crookie: i would posit
+]
+;B[qe]
+;W[oe]
+;B[of]
+;W[ki]C[
+
+-- chat --
+theparty: ya lovecall thats what it feels like
+SnesHero: the ponnuki is really causing trouble for black
+lovecall: yes
+]
+;B[lj]C[
+
+-- chat --
+lovecall: he should let white get it
+lovecall: in the middle too!
+]
+;W[jh]C[
+
+-- chat --
+lovecall: shouldn't*
+]
+;B[li]
+;W[qf]C[
+
+-- chat --
+KoenP: I think the big difference is that with chess, you might not know how pieces move, but you know that if you capture the big guy, you win. In go it is much harder to tell a beginner what he has to do in order to win. 
+crookie: timesuji? ^^
+]
+;B[re]C[
+
+-- chat --
+peterolsoy: who is leading?
+]
+;W[lh]
+;B[mh]C[
+
+-- chat --
+peterolsoy: like ~70-75 for white with komi, right?
+]
+;W[eb]
+;B[ea]
+;W[ds]
+;B[kg]C[
+
+-- chat --
+lovecall: More like, in chess, you only need to read 2-3 moves ahead and all will be fine.
+lovecall: But Go is not the same.
+JordTV: white is indeed in byo-yomi
+theparty: ya KoenP im still trying to develop an eye (hah go joke) for things like territory and the way toshiro kageyama talks about walls and breathing of stones helps with that
+KoenP: My quick count gave a very close game. My gutfeeling says white, but I think it comes down to the last endgame.
+]
+;W[lf]
+;B[lk]
+;W[ll]C[
+
+-- chat --
+theparty: lovecall i feel that as an avid chess lover i should say that its more than 2-3 moves at higher level
+]
+;B[gj]
+;W[gk]
+;B[hg]
+;W[eg]C[
+
+-- chat --
+lovecall: sure. But I mean to be decent enough to play.
+crookie: about 86 for b, 83.5 for b
+crookie: * 83.5 for w
+theparty: ah well yes thats true
+peterolsoy: with komi?
+crookie: have a guess
+lovecall: By the way, if you want to be learning something from real games.
+lovecall: I would advice you to analyse your own games instead at that level.
+lovecall: so you know what you did wrong and corrected it.
+crookie: with a much stronger player
+lovecall: yes
+crookie: reviewing on your 25k own isn't going to do much
+lovecall: Have them comments your games, I forgot to say.
+lovecall: Just put them on the sites for games reviewing or something.
+theparty: i can share my games_
+theparty: ?
+theparty: for people to review?
+crookie: it's called outsourcing
+lovecall: There are some sites to review your games for you and tell you how to improve yourself.
+lovecall: So find some, and put your games there for them to review.
+theparty: great, thanks for the top
+theparty: tip
+]
+;B[ia]
+;W[ma]
+;B[ja]
+;W[ka]
+;B[jd]
+;W[kc]C[
+
+-- chat --
+lovecall: The fastest way was probably to have someone teach you directly, but you shouldn't expect something that easy with out a sizable cost, yes?
+]
+;B[mk]C[
+
+-- chat --
+crookie: quite the opposite
+]
+;W[oj]
+;B[oi]C[
+
+-- chat --
+crookie: lots of people are craving for weak people to "teach"
+client: seems close
+]
+;W[iq]
+;B[ip]
+;W[jp]C[
+
+-- chat --
+theparty: a friend who is 4kyu gave me a very short intro to it and lent me his go book but i dont think 5 minutes even counts as an intro
+]
+;B[jr]
+;W[kq]C[
+
+-- chat --
+theparty: he just got me interested in it
+]
+;B[kr]
+;W[es]
+;B[gr]C[
+
+-- chat --
+client: white lost game here I think
+lovecall: I don't know. I was taught by someone too when I first started.
+]
+;W[lq]
+;B[mp]
+;W[ir]
+;B[hr]C[
+
+-- chat --
+lovecall: but the lessons received surely can't be compared to "Real" lesson in courses.
+theparty: how long have you been playing
+lovecall: though I can't say for sure, since I have never attended those courses.
+]
+;W[fs]C[
+
+-- chat --
+crookie: nice reduction
+]
+;B[kh]C[
+
+-- chat --
+lovecall: yes
+]
+;W[lg]
+;B[ji]
+;W[og]
+;B[pg]
+;W[ki]C[
+
+-- chat --
+crookie: j1 makes for a nice threat
+]
+;B[nl]
+;W[nm]
+;B[ji]
+;W[ph]
+;B[qg]
+;W[ki]
+;B[fk]
+;W[ej]
+;B[ji]
+;W[qd]
+;B[qc]
+;W[ki]
+;B[hk]
+;W[hl]
+;B[ji]
+;W[rd]
+;B[rc]
+;W[ki]
+;B[jg]
+;W[ji]C[
+
+-- chat --
+lovecall: my gut also says white, someone begs to differ?
+]
+;B[ob]
+;W[nb]
+;B[oa]
+;W[hc]
+;B[gc]
+;W[ic]
+;B[hb]
+;W[nj]C[
+
+-- chat --
+theparty: for the sake of argument i will say black 
+client: white ahead, I mistake at counting first tie
+]
+;B[mi]C[
+
+-- chat --
+client: time
+theparty: theres always someone betting on the underdog
+]
+;W[je]C[
+
+-- chat --
+lovecall: let just say, in chess.
+lovecall: one side have queen, bishops, knights, all of them.
+]
+;B[od]C[
+
+-- chat --
+lovecall: white the others lacking in that.
+lovecall: which side, you bet?
+]
+;W[nd]C[
+
+-- chat --
+crookie: just that there's no underdog in this match
+crookie: they're both evendogs
+theparty: well if you put it that way ill take my money back to white
+SnesHero: white has much territory on the left
+]
+;B[sn]
+;W[sm]
+;B[jf]
+(;W[gs]
+;B[hs]
+;W[cs]
+;B[is]C[
+
+-- chat --
+SnesHero: is this yose allready?
+]
+;W[ie]
+;B[hd]
+;W[rn]
+;B[so]C[
+
+-- chat --
+crookie: no, yose is almost over
+lovecall: what else, you see?
+]
+;W[af]
+;B[ae]
+;W[ag]
+;B[pk]C[
+
+-- chat --
+crookie: e5 left and a ko
+lovecall: game almost over. in fact
+theparty: why is white playing around the bottom, isnt it easy for black to form 2 eyes
+]
+;W[eo]
+;B[pl]
+;W[gg]
+;B[ke]
+;W[le]
+;B[fg]
+;W[bd]
+;B[bc]
+;W[gg]
+;B[gl]
+;W[hk]
+;B[fg]
+;W[rf]C[
+
+-- chat --
+lovecall: I think, it's more profitable?
+crookie: j1 is actually the same # of pts
+]
+;B[sd]
+;W[gg]
+;B[he]
+;W[ke]
+;B[fg]
+;W[ed]
+;B[ad]
+;W[gg]
+;B[kl]
+;W[jk]
+;B[fg]
+;W[fa]
+;B[ga]
+;W[gg]
+;B[nk]
+;W[fg]
+;B[qk]
+;W[om]C[White wins by 2.5
+
+-- chat --
+Miselium: B p7?
+Miselium: then N8..
+JordTV: W+ 2.5
+JordTV: the game is over
+JordTV: thanks for watching
+bit:  thanks!
+temifar: JordTV: thanks!
+Jadeite: thanks for the relay Jord :)
+])
+(;W[is]C[
+
+-- chat --
+lovecall: what do you think?. From move 0: Q16 D17 Q3 D3 D15 D12 G16 C5 K3 E15 E14 F15 C17 F17 D18 C16 D16 E17 C18 C14 C15 D14 R5 O17 Q14 L16 Q10 J5 H4 H5 G4 G5 F4 F5 E4 D6 L5 P5 O4 R6 R4 R8 R10 P9 P7 Q7 P6 P8 O11 S7 J16 K17 G18 L14 J14 G13 J12 H13 J13 H10 B14 B13 B15 C12 Q18 P17 Q17 O15 J18 K18 S5 S9 S10 T10 T11 T9 S12 L6 M6 K5 L4 M7 L7 K6 J10 J9 K9 J11 H12 K10 G12 F12 G11 F10 F11 E11 F13 E12 G14 F14 H14 G13 F18 N6 M5 O5 N5 N7 Q5 Q6 P4 O6 O19 N18 D4 C4 D2 C3 E2 E3 F2 F3 G3 C2 L10 L9 K11 K8 N14 O14 N13 N15 O13 Q15 R15 P15 P14 L11 M10 K12 M11 R14 S15 M12 N12 E18 E19 D1 L13 M14 M9 M8 G10 G9 H13 E13 J19 N19 K19 L19 K16 L17 N9 P10 P11 J3 J4 K4 K2 L3 L2 E1 G2 M3 N4 J2 H2 F1 L12 M13 K11 P13 Q13 L11 O8 O7 K11 Q12 R13 L11 F9 E10 K11 R16 R17 L11 H9 H8 K11 S16 S17 L11 K13 K11 P18 O18 P19 H17 G17 J17 H18 O10 N11 K15 P16 O16 T6 T7 K14 J1 
+])))))))))))
+(;B[kd]
+;W[qf]
+;B[pf]
+;W[pg]
+;B[of]
+;W[qe]
+;B[qd]
+;W[md]
+;B[oc]
+;W[ob]
+;B[nd]
+;W[nb]
+;B[rd]
+;W[le]
+;B[lc]
+;W[ne]C[
+
+-- chat --
+Pempu: Found this from a pro game from 2003. From move 0: Q16 D17 Q3 D3 D15 D12 G16 C5 K3 E15 E14 F15 C17 F17 D18 C16 D16 E17 C18 C14 C15 D14 R5 O17 L16 R14 Q14 Q13 P14 R15 R16 N16 P17 P18 O16 O18 S16 M15 M17 O15 
+]))

@@ -2,8 +2,8 @@ stages:
   - type: tournament
     name: Championship
     file: nl1990.txt
-    scoringColumns: 
-      - wins          
+    scoringColumns:
+      - wins
       - sos
       - sodos
     breakers:

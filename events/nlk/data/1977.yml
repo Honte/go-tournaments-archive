@@ -5,10 +5,10 @@ top:
 stages:
   - type: tournament
     file: nl1977.txt
-    name: Championship
+    name: championship
     dir: 1977/nlk
     promoted: 2
-    notes: Recreated from cross table. Games order can be different.
+    notes: last round on 9th january
     scoringColumns:
       - wins
       - sodos
@@ -16,13 +16,17 @@ stages:
       - wins
       - sodos
     findSharedPlaces: false
+    games:
+      - 2-3 2:B+14 round:7 sgf:1977/nlk/7-RobertRehm-RonaldSchlemper.sgf
   - type: tournament
     file: nl1977playoff.txt
-    name: Playoff
-    notes: Exact result of playoff unknown
+    name: playoff
     dir: 1977/playoff
     scoringColumns:
       - wins
     breakers:
       - wins
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+4 round:1 sgf:1977/playoff/1-RobertRehm-MaxRebattu.sgf
+      - 2-1 1:W+10 round:2 sgf:1977/playoff/2-MaxRebattu-RobertRehm.sgf

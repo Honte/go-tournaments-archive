@@ -1,0 +1,632 @@
+(;GM[1]FF[4]CA[UTF-8]AP[CGoban:3]ST[2]
+RU[Japanese]SZ[19]KM[6.50]
+GN[Dutch Championship round 3]PW[Merlijn Kuin]PB[Rene Aaij]WR[6d]BR[4d]RO[3]PC[https://online-go.com/review/100853]RE[W+Resign]
+;B[qd]
+;W[dc]
+;B[pq]
+;W[dq]
+;B[de]
+;W[ce]
+;B[cf]
+;W[cd]
+;B[do]
+(;W[df]
+;B[fp]C[
+
+-- chat --
+emauton: It seems like this really let white get their way.
+]
+;W[od]
+;B[cg]
+;W[ef]
+;B[dj]
+;W[co]
+;B[cp]
+;W[dp]
+;B[cq]C[
+
+-- chat --
+gve: linksonder niet zo best voor zw he
+]
+;W[cn]C[
+
+-- chat --
+gve: apparently, b has no choice but to play D2 in lower left
+]
+(;B[dr]
+;W[eo]
+;B[ep]C[
+
+-- chat --
+KoenP: @gve Yes, looks like it. P16 quite vital in the choice of variations here..
+]
+;W[dn]
+;B[eq]C[
+
+-- chat --
+emauton: I see, it seems tenuki is not uncommon here, I'm just unfamiliar with it.
+emauton: Heh, yes, that variation looks nicer for black. :o)
+]
+;W[bj]
+;B[cj]
+;W[bk]C[
+
+-- chat --
+gve: yo
+gve: anyhow, w still good on left side
+]
+;B[fj]C[
+
+-- chat --
+KoenP: Yes, I guess that after bumping at C10, b has to play b11 himself. Or not bump at all.
+KoenP: Yep. D10 at C10, or c4 at c6. 
+]
+(;W[ci]C[
+
+-- chat --
+Miselium: jo?
+KoenP: Nee.. Al bijna klaar
+KoenP: E4 is best wel standaard fout toch.. Moet op E3, heb je een zet over...
+gve: oic, i have to change context to comment. sorry :)
+gve: b D13
+]
+;B[dg]C[
+
+-- chat --
+emauton: Thanks, JordTV!
+]
+;W[ff]C[
+
+-- chat --
+KoenP: Ik denk dat zwart de variant niet kende, en op gevoel E4 speelde..
+]
+;B[di]C[
+
+-- chat --
+gve: w C12
+gve: w C12 bad style. fills own liberties while strengthening black
+gve: just tenuki is ok
+gve: black has no time to play B11
+gve: in this position, there still a possibility of peeping at white E12
+gve: which is important aji
+gve: black captures the peeping stone?
+]
+(;W[ch]C[
+
+-- chat --
+gve: okay, let's move on ;)
+gve: b D13 was nice, good saving move
+gve: w C12 is a bad move
+]
+;B[dh]C[
+
+-- chat --
+Miselium: zw linksboven is toch (al) zwak?
+KoenP: Ja.. Wit heeft al meer punten, en zwart heeft een zwakke groep. Ik vrees dat dit een kort potje zal zijn..
+]
+;W[gn]C[
+
+-- chat --
+Miselium: inderdaad wel "uitweg"zonder (veel) punten...
+emauton: Any idea what black was aiming at in leaving the 3-4 high approach joseki in the top left early?
+KoenP: Yes, the idea is black wants the same variation in the lower left. And by alternating top and bottomcorners, getting the move in between acting in both cornervariations.
+]
+;B[cl]
+;W[bl]C[
+
+-- chat --
+emauton: Thanks, KoenP
+]
+;B[ij]C[
+
+-- chat --
+KoenP: Hahaha, now I lost you. :)
+KoenP: So which one you consider bad? 
+KoenP: I was just typing that I considered that peep instead of c12. What do you think about playing there immediately?
+]
+;W[pf]
+;B[oc]
+;W[pd]
+;B[pc]
+;W[qc]
+(;B[qb]
+;W[rc]
+;B[nc]
+;W[rb]C[
+
+-- chat --
+Rytjee: d1. From move 0: R16 D17 Q3 D3 D15 C15 C14 C16 D5 D14 F4 P16 C13 E14 D10 C5 C4 D4 C3 C6 D2 E5 E4 D6 E3 B10 C10 B9 F10 C11 D13 F14 D11 C12 D12 G6 C8 B8 J10 Q14 P17 Q16 Q17 R17 R18 S17 O17 S18 
+Rytjee: Srry wrong button
+]
+;B[kc]C[
+
+-- chat --
+KoenP: Hmmm, interesting! 
+gve: ok - black's idea is clear here
+gve: but he's losing a large amount of points
+]
+;W[qo]C[
+
+-- chat --
+KoenP: Yes, r18 is locally inferior, but maybe playable as wholeboard strategy?
+gve: in an sense, w R17 was a declaration of victory
+gve: but i feel black should go along
+KoenP: Hmm, can a josekimove be a declaration of victory? :)
+KoenP: That's true. And well, basically he is right :)
+]
+;B[pk]C[
+
+-- chat --
+gve: upper side 
+]
+;W[pi]
+;B[op]
+;W[pm]
+;B[qp]
+;W[po]
+;B[pj]C[
+
+-- chat --
+lovecall: I can't really see how black can fight, white groups are almost all solid.
+]
+;W[qi]
+;B[rk]
+;W[nm]
+;B[nj]C[
+
+-- chat --
+KoenP: Indeed, white is wrapping up the game. He is pretty good at that. 
+]
+;W[mp]
+;B[mo]C[
+
+-- chat --
+Plunder: Nk broadcast on my favourite go server yay 😁
+]
+;W[no]C[
+
+-- chat --
+gve: ok, here we are again
+]
+;B[np]
+;W[mq]
+;B[lo]
+;W[or]
+;B[nr]
+;W[nq]
+;B[oq]
+;W[mr]
+;B[pr]
+;W[ns]
+;B[rp]C[
+
+-- chat --
+Miselium: vechten tegen bierkaai voor B?!
+]
+;W[ro]
+;B[rr]
+;W[lm]C[
+
+-- chat --
+KoenP: Ja, dit is klaar. Zwart moet uitkijken dat hij straks niet drie zwakke groepen heeft, en wit heeft al meer punten. 
+gooooo: ?
+Miselium: sorry dutch-talking....
+]
+;B[kp]C[
+
+-- chat --
+lovecall: k3, the only move?
+gooooo: how is the territory balance currently?
+]
+(;W[kr]C[
+
+-- chat --
+lovecall: as you can see.
+emauton: In white's favour, gooooo.
+gooooo: white looks like he has a lot more
+emauton: KoenP's comment above was "Yes, this is done. Black must watch out that he will not have three weak groups, and White has more points."
+gve: fight can also mean "take points first, then try to live later"
+gve: in the game, b just gave away too many points
+]
+;B[km]C[
+
+-- chat --
+gve: lovecall - w L2 finishes off the side in 1 move
+]
+;W[ll]C[
+
+-- chat --
+gve: white only cares about living with O5 group
+lovecall: but isn't k3 put more pressure on black L4 group?
+gve: yes, it may seem natural - but it also helps L4 to move out...
+gve: one more thing about upper side:
+]
+;B[nl]C[
+
+-- chat --
+gve: w J10 is still a huge move for white
+gve: sorry, J17
+gve: yes i did look at your variation - it's worse for white
+gve: not too sure about what you're saying
+gve: the game is ok for white
+lovecall: nevermind then.
+gve: but do you agree that there's no more forcing moves for black, once white has played L2?
+lovecall: sure.
+gve: only sente move for b is M3, which is worthless
+lovecall: what I mean by k3 is, after W play there, his o1 group have survived
+gve: don't worry, white will live :)
+gve: it's rather black who should take care not to be attacked
+]
+;W[ol]C[
+
+-- chat --
+gve: there's some scattered black stones in the center, but black is rather thin 
+gve: nothing like a big blakc wall :)
+]
+;B[nk]C[
+
+-- chat --
+gve: though admittedly, i do not quite see the reason for white P8
+]
+;W[oo]C[
+
+-- chat --
+Vestdijk: Is black getting heavy or strong :)? Hi, by the way.
+gve: this way of playing a little heavy for white - but he can likely afford it
+]
+;B[lj]C[
+
+-- chat --
+lovecall: this is the situation, black and white are in a fight. If white dies, black wins. Otherwise, white wins.
+Vestdijk: Ok, W just wants to settle his group the blunt/easy way? And then take the big points?
+Vestdijk: Ok :).
+DingPing: what about the time JordTV?
+JordTV: rene has 27 minutes left and merlijn 47 minutes
+DingPing: tnx
+lovecall: ? Ah, I'm not trying to pick a fight. Sorry though if It sounded that way.
+]
+;W[kn]
+;B[ln]
+;W[mn]C[
+
+-- chat --
+gve: presumably he wants to do thid. From move 0: R16 D17 Q3 D3 D15 C15 C14 C16 D5 D14 F4 P16 C13 E14 D10 C5 C4 D4 C3 C6 D2 E5 E4 D6 E3 B10 C10 B9 F10 C11 D13 F14 D11 C12 D12 G6 C8 B8 J10 Q14 P17 Q16 Q17 R17 R18 S17 O17 S18 L17 R5 Q9 Q11 P4 Q7 R4 Q5 Q10 R11 S9 O7 O10 N4 N5 O5 O4 N3 M5 P2 O2 O3 P3 N2 Q2 O1 S4 S5 S2 M7 L4 L2 L7 M8 O8 P8 O9 P5 M10 L6 M6 N6 
+gve: as per usual, the point count has a big influence on game plan and tactics
+gve: one should play differently, depending on whether one is behind or ahead
+lovecall: In short, avoid fight when in lead. And fight when behind. no need for fancy words.
+gve: no need for your smartass comments too, 'love'call? :)
+]
+;B[jn]
+(;W[kl]
+;B[jm]
+;W[jl]C[
+
+-- chat --
+gve: w has excellent shape now with ample threats against b weaknesses. From move 0: R16 D17 Q3 D3 D15 C15 C14 C16 D5 D14 F4 P16 C13 E14 D10 C5 C4 D4 C3 C6 D2 E5 E4 D6 E3 B10 C10 B9 F10 C11 D13 F14 D11 C12 D12 G6 C8 B8 J10 Q14 P17 Q16 Q17 R17 R18 S17 O17 S18 L17 R5 Q9 Q11 P4 Q7 R4 Q5 Q10 R11 S9 O7 O10 N4 N5 O5 O4 N3 M5 P2 O2 O3 P3 N2 Q2 O1 S4 S5 S2 M7 L4 L2 L7 M8 O8 P8 O9 P5 M10 L6 M6 N6 K6 L8 K7 K8 
+gve: it's okay, i'll try not to sound too 'fancy' :)
+DingPing: no, m 94 has still your possb
+])
+(;W[jm]
+;B[ko]
+;W[jl]
+;B[im]C[
+
+-- chat --
+gve: wait - is this the game??
+gve: ok, thx
+temifar: I think 95 *is* the game
+JordTV: last move was 95 - b J7
+gve: somehow, the game moved off the main branch?
+gve: i see. well, it should be possible to resolve this technically, eg by tagging the branches
+gve: no, the browser interface AND the api are both EXCELLENT
+gve: some details can be surpriingly hard to solve well, though
+gve: i understand they will solve it eventually :)
+]
+;W[in]C[
+
+-- chat --
+DingPing: looks like it
+lovecall: refresh and it will be gone.
+temifar: that's just how the game tree works on ogs
+JordTV: no, off your main branch
+gve: really - that's weird
+gve: a bit of a bug i'd say
+DingPing: yes, refreshing is the solution GVE
+gve: i was afraid it might be ;-)
+JordTV: the tree is kept in your own browser, and i think if you try anything yourself past the tree of the real game it turns that into your main branch
+lovecall: Plus, a refresh will solve it.
+]
+;B[il]C[
+
+-- chat --
+gve: ok - so it's to do with local state, eh? thx
+Pempu: It's not a huge deal if the game line is not the top most branch. Just annoyance
+]
+;W[jk]
+;B[ip]C[
+
+-- chat --
+DingPing: im still happy with online-go
+gooooo: I "love" how it automatically loads a branch where the mouse cursor is... it just did that because it was placed over chat and someone typed something moving a variation onto the cursor...
+Pempu: gooooo: yeah can't have everything :) I like tthe mouseover thing 
+gooooo: or a proper non browser client
+Pempu: I find the browser is the strenght of OGS
+gooooo: I find it the weakness
+Pempu: I can use all the UI the browser gives me. I am at home with this userinterface
+temifar: gve: iirc, it is supposed to be fixed eventually. just not the highest priority for the devs.
+]
+;W[jj]C[
+
+-- chat --
+Pempu: Hmm if nothing dies on this board then white is leading quite a bit?
+gve: if something dies on this board, white leads by even more lol
+gve: right now, i see 2 dead b groups ^_^
+Pempu: yeah B has sopme weaknesses :)
+]
+;B[ik]
+;W[ji]C[
+
+-- chat --
+Pempu: This is nice splitting attack :)
+]
+;B[mg]C[
+
+-- chat --
+Pempu: N9 seems to be one eye for black
+gve: there's several ways for white now to wrap up the game
+Pempu: I manually put the numbers in :(
+Pempu: with F8 tool 
+Pempu: J17 is truly magnificent 
+]
+(;W[ii]
+;B[hn]
+;W[ic]C[
+
+-- chat --
+gve: for example like this. From move 0: R16 D17 Q3 D3 D15 C15 C14 C16 D5 D14 F4 P16 C13 E14 D10 C5 C4 D4 C3 C6 D2 E5 E4 D6 E3 B10 C10 B9 F10 C11 D13 F14 D11 C12 D12 G6 C8 B8 J10 Q14 P17 Q16 Q17 R17 R18 S17 O17 S18 L17 R5 Q9 Q11 P4 Q7 R4 Q5 Q10 R11 S9 O7 O10 N4 N5 O5 O4 N3 M5 P2 O2 O3 P3 N2 Q2 O1 S4 S5 S2 M7 L4 L2 L7 M8 O8 P8 O9 P5 M10 L6 M6 N6 K6 K7 L5 K8 J7 J6 J8 K9 J4 K10 J9 K11 N13 J11 H6 J17 
+Pempu: same with numbers. From move 0: R16 D17 Q3 D3 D15 C15 C14 C16 D5 D14 F4 P16 C13 E14 D10 C5 C4 D4 C3 C6 D2 E5 E4 D6 E3 B10 C10 B9 F10 C11 D13 F14 D11 C12 D12 G6 C8 B8 J10 Q14 P17 Q16 Q17 R17 R18 S17 O17 S18 L17 R5 Q9 Q11 P4 Q7 R4 Q5 Q10 R11 S9 O7 O10 N4 N5 O5 O4 N3 M5 P2 O2 O3 P3 N2 Q2 O1 S4 S5 S2 M7 L4 L2 L7 M8 O8 P8 O9 P5 M10 L6 M6 N6 K6 K7 L5 K8 J7 J6 J8 K9 J4 K10 J9 K11 N13 J11 H6 J17 
+gve: ah, ok? how did you do this?
+gve: mmm
+gve: indeed. I feel w J17 is the main reason why b R18 was bad.
+])
+(;W[gc]
+;B[og]
+;W[pg]
+;B[hb]C[
+
+-- chat --
+gve: oh, here - merlijn is even more optimistic than i :)
+gve: well, it might be me but - w G17 is entirely too conservative
+gve: a few more moves like this and b gets another chance
+]
+;W[gb]
+;B[ir]
+;W[io]C[
+
+-- chat --
+Pempu: N15 my first instinct
+Pempu: J5 doesnt seem sente
+]
+(;B[bg]C[
+
+-- chat --
+gve: What?!? black B12? oh come on
+]
+(;W[hp]
+;B[iq]
+;W[hq]
+;B[hr]C[
+
+-- chat --
+gve: eg white G3 is aji keshi, plain and simple
+gve: In this position, white A is also sente and can be very worthwhile. From move 0: R16 D17 Q3 D3 D15 C15 C14 C16 D5 D14 F4 P16 C13 E14 D10 C5 C4 D4 C3 C6 D2 E5 E4 D6 E3 B10 C10 B9 F10 C11 D13 F14 D11 C12 D12 G6 C8 B8 J10 Q14 P17 Q16 Q17 R17 R18 S17 O17 S18 L17 R5 Q9 Q11 P4 Q7 R4 Q5 Q10 R11 S9 O7 O10 N4 N5 O5 O4 N3 M5 P2 O2 O3 P3 N2 Q2 O1 S4 S5 S2 M7 L4 L2 L7 M8 O8 P8 O9 P5 M10 L6 M6 N6 K6 K7 L5 K8 J7 J6 J8 K9 J4 K10 J9 K11 N13 G17 P13 Q13 H18 G18 J2 J5 B13 H4 J3 H3 H2 
+]
+;W[gq]
+;B[gr]C[
+
+-- chat --
+casio: How is black ever going to get enough points?. From move 0: R16 D17 Q3 D3 D15 C15 C14 C16 D5 D14 F4 P16 C13 E14 D10 C5 C4 D4 C3 C6 D2 E5 E4 D6 E3 B10 C10 B9 F10 C11 D13 F14 D11 C12 D12 G6 C8 B8 J10 Q14 P17 Q16 Q17 R17 R18 S17 O17 S18 L17 R5 Q9 Q11 P4 Q7 R4 Q5 Q10 R11 S9 O7 O10 N4 N5 O5 O4 N3 M5 P2 O2 O3 P3 N2 Q2 O1 S4 S5 S2 M7 L4 L2 L7 M8 O8 P8 O9 P5 M10 L6 M6 N6 K6 K7 L5 K8 J7 J6 J8 K9 J4 K10 J9 K11 N13 G17 P13 Q13 H18 G18 J2 J5 B13 H4 J3 H3 H2 G3 G2 
+casio: He is playing like he has...
+]
+;W[ck]C[
+
+-- chat --
+gve: mmm white is still doing fine but i do not like some technical details
+Miselium: what the clock...?
+]
+;B[em]C[
+
+-- chat --
+Miselium: about the clock...
+JordTV: rene 17 minutes, merlijn 18 minutes
+gooooo: when is the next round scheduled?
+Miselium: ok
+gooooo: in 48min like yesterday?
+]
+;W[en]C[
+
+-- chat --
+JordTV: probably a little later
+JordTV: started a little late today
+Miselium: is that K-line to stop for B?
+]
+;B[dl]
+;W[bp]
+;B[bq]
+;W[ao]
+;B[be]
+;W[bd]C[
+
+-- chat --
+gve: ok- we may get a great example of the cost of aji keshi here :)
+gve: all this means is black B11 was TOO SLOW
+gve: if anything, b should have F7 to see, if white answers. if he does, black is alive as he stands
+]
+(;B[bi]
+;W[jb]
+;B[hc]
+;W[jc]
+;B[hd]
+;W[kd]C[
+
+-- chat --
+Pempu: now B has 3 weak groups...
+]
+;B[gd]C[
+
+-- chat --
+Pempu: M17 instant response
+Pempu: or N15
+]
+;W[fc]
+;B[je]
+;W[ke]
+;B[kf]
+;W[lf]
+;B[jd]
+;W[lc]
+;B[le]
+;W[ld]
+;B[me]C[
+
+-- chat --
+gve: w N18 lives
+]
+;W[mb]
+;B[oe]
+;W[pe]C[black resigns
+
+black resigns
+
+resultergo result: w+R
+
+-- chat --
+JordTV: black decides to resign
+Plunder: dank je voor de uitzedning Jord :)
+JordTV: the game is over : w+R
+Pempu: better put that in move comments :)
+gve: merci
+JordTV: aye aye
+Pempu: when is the next round?
+DingPing: thnx JordTV
+TheDidymen:  :D
+JordTV: the next round will most likely start around 14:30 (dutch time)
+Pempu: in 1h?
+JordTV: yes
+Plunder: will there be an announcement from the ogs-mods when the broadcast starts?
+])
+(;B[fm]C[
+
+-- chat --
+gve: here, b A cuts of the white stones. If w had a stone at B, that would not work for black. From move 0: R16 D17 Q3 D3 D15 C15 C14 C16 D5 D14 F4 P16 C13 E14 D10 C5 C4 D4 C3 C6 D2 E5 E4 D6 E3 B10 C10 B9 F10 C11 D13 F14 D11 C12 D12 G6 C8 B8 J10 Q14 P17 Q16 Q17 R17 R18 S17 O17 S18 L17 R5 Q9 Q11 P4 Q7 R4 Q5 Q10 R11 S9 O7 O10 N4 N5 O5 O4 N3 M5 P2 O2 O3 P3 N2 Q2 O1 S4 S5 S2 M7 L4 L2 L7 M8 O8 P8 O9 P5 M10 L6 M6 N6 K6 K7 L5 K8 J7 J6 J8 K9 J4 K10 J9 K11 N13 G17 P13 Q13 H18 G18 J2 J5 B13 H4 J3 H3 H2 G3 G2 C9 E7 E6 D8 B4 B3 A5 B15 B16 F7 
+gve: here, b A cuts of the white stones. If w had a stone at B, that would not work for black. From move 0: R16 D17 Q3 D3 D15 C15 C14 C16 D5 D14 F4 P16 C13 E14 D10 C5 C4 D4 C3 C6 D2 E5 E4 D6 E3 B10 C10 B9 F10 C11 D13 F14 D11 C12 D12 G6 C8 B8 J10 Q14 P17 Q16 Q17 R17 R18 S17 O17 S18 L17 R5 Q9 Q11 P4 Q7 R4 Q5 Q10 R11 S9 O7 O10 N4 N5 O5 O4 N3 M5 P2 O2 O3 P3 N2 Q2 O1 S4 S5 S2 M7 L4 L2 L7 M8 O8 P8 O9 P5 M10 L6 M6 N6 K6 K7 L5 K8 J7 J6 J8 K9 J4 K10 J9 K11 N13 G17 P13 Q13 H18 G18 J2 J5 B13 H4 J3 H3 H2 G3 G2 C9 E7 E6 D8 B4 B3 A5 B15 B16 F7 
+]))
+(;W[jq]
+;B[jp]
+;W[iq]
+;B[hq]
+;W[hp]
+;B[ho]
+;W[gp]C[
+
+-- chat --
+Pempu: hmm?. From move 0: R16 D17 Q3 D3 D15 C15 C14 C16 D5 D14 F4 P16 C13 E14 D10 C5 C4 D4 C3 C6 D2 E5 E4 D6 E3 B10 C10 B9 F10 C11 D13 F14 D11 C12 D12 G6 C8 B8 J10 Q14 P17 Q16 Q17 R17 R18 S17 O17 S18 L17 R5 Q9 Q11 P4 Q7 R4 Q5 Q10 R11 S9 O7 O10 N4 N5 O5 O4 N3 M5 P2 O2 O3 P3 N2 Q2 O1 S4 S5 S2 M7 L4 L2 L7 M8 O8 P8 O9 P5 M10 L6 M6 N6 K6 K7 L5 K8 J7 J6 J8 K9 J4 K10 J9 K11 N13 G17 P13 Q13 H18 G18 J2 J5 B13 K3 K4 J3 H3 H4 H5 G4 
+]))
+(;B[hp]C[
+
+-- chat --
+gve: J10 only move - of course!. From move 0: R16 D17 Q3 D3 D15 C15 C14 C16 D5 D14 F4 P16 C13 E14 D10 C5 C4 D4 C3 C6 D2 E5 E4 D6 E3 B10 C10 B9 F10 C11 D13 F14 D11 C12 D12 G6 C8 B8 J10 Q14 P17 Q16 Q17 R17 R18 S17 O17 S18 L17 R5 Q9 Q11 P4 Q7 R4 Q5 Q10 R11 S9 O7 O10 N4 N5 O5 O4 N3 M5 P2 O2 O3 P3 N2 Q2 O1 S4 S5 S2 M7 L4 L2 L7 M8 O8 P8 O9 P5 M10 L6 M6 N6 K6 K7 L5 K8 J7 J6 J8 K9 J4 K10 J9 K11 N13 G17 P13 Q13 H18 G18 J2 J5 H4 
+Pempu: J10?
+gve: This still eyes the weakness at G5, so black should live
+gve: uhhh
+gve: H4 lolo
+gve: sorrt
+gve: y
+]))))
+(;W[jq]
+;B[jp]
+;W[jm]
+;B[kq]
+;W[kr]
+;B[jr]
+;W[lr]C[
+
+-- chat --
+lovecall: why not k3?. From move 0: R16 D17 Q3 D3 D15 C15 C14 C16 D5 D14 F4 P16 C13 E14 D10 C5 C4 D4 C3 C6 D2 E5 E4 D6 E3 B10 C10 B9 F10 C11 D13 F14 D11 C12 D12 G6 C8 B8 J10 Q14 P17 Q16 Q17 R17 R18 S17 O17 S18 L17 R5 Q9 Q11 P4 Q7 R4 Q5 Q10 R11 S9 O7 O10 N4 N5 O5 O4 N3 M5 P2 O2 O3 P3 N2 Q2 O1 S4 S5 S2 M7 L4 K3 K4 K7 L3 L2 K2 M2 
+lovecall: have you looked at my variation yet?
+lovecall: But isn't that enough, considered the points. and White q5 group get to live more easily.
+]))
+(;B[rc]
+;W[qb]
+;B[rb]
+;W[qe]
+;B[rd]
+;W[nc]
+;B[pb]
+;W[ob]
+;B[qa]
+;W[md]C[
+
+-- chat --
+gve: w gets his way, but b can still fight. From move 0: R16 D17 Q3 D3 D15 C15 C14 C16 D5 D14 F4 P16 C13 E14 D10 C5 C4 D4 C3 C6 D2 E5 E4 D6 E3 B10 C10 B9 F10 C11 D13 F14 D11 C12 D12 G6 C8 B8 J10 Q14 P17 Q16 Q17 R17 S17 R18 S18 R15 S16 O17 Q18 P18 R19 N16 
+gve: yes, because w chooses the most solid joseki
+gve: stating "i don't need to fight anymore"
+gve: b should take the points and fight!
+gve: in the game, b does not get much
+emauton: Under your variation, gve, where would you be thinking black should go next?
+]))
+(;W[eh]
+;B[eg]
+;W[fg]
+;B[fh]C[
+
+-- chat --
+gve: d1. From move 0: R16 D17 Q3 D3 D15 C15 C14 C16 D5 D14 F4 P16 C13 E14 D10 C5 C4 D4 C3 C6 D2 E5 E4 D6 E3 B10 C10 B9 F10 C11 D13 F14 D11 E12 E13 F13 F12 
+gve: but white does not need to hurry
+KoenP: Hmmm... Atari first, then c12? Hmmm. Ok. Not a good idea.
+gve: no, this only helps b to make living shape
+gve: and w loses points in the corner too
+]
+;W[gh]
+;B[fi]
+;W[ch]
+;B[dh]C[
+
+-- chat --
+gve: b A, 
+gve: b A, w B, b C. From move 0: R16 D17 Q3 D3 D15 C15 C14 C16 D5 D14 F4 P16 C13 E14 D10 C5 C4 D4 C3 C6 D2 E5 E4 D6 E3 B10 C10 B9 F10 C11 D13 F14 D11 E12 E13 F13 F12 G12 F11 C12 D12 
+gve: no good for w
+KoenP: Agree :)
+]))
+(;W[bi]C[
+
+-- chat --
+gve: in fact, seeing that b found the nice move at D12, maybe this is stronger. From move 0: R16 D17 Q3 D3 D15 C15 C14 C16 D5 D14 F4 P16 C13 E14 D10 C5 C4 D4 C3 C6 D2 E5 E4 D6 E3 B10 C10 B9 F10 B11 
+]
+;B[dg]
+;W[eg]
+;B[eh]
+;W[fh]C[
+
+-- chat --
+gve: horrible shape for b. From move 0: R16 D17 Q3 D3 D15 C15 C14 C16 D5 D14 F4 P16 C13 E14 D10 C5 C4 D4 C3 C6 D2 E5 E4 D6 E3 B10 C10 B9 F10 B11 D13 E13 E12 F12 
+]))
+(;B[ep]C[
+
+-- chat --
+gve: dat sowieso
+gve: misschien dacht zw dat ie wit kon aanvallen?
+]))
+(;W[co]
+;B[cn]
+;W[cp]
+;B[dn]
+;W[fq]
+;B[df]
+;W[fc]
+;B[dj]C[
+
+-- chat --
+KoenP: d1. From move 0: R16 D17 Q3 D3 D15 C15 C14 C16 D5 C5 C6 C4 D6 F3 D14 F17 D10 
+KoenP: Yes, looks nice for black, but as far as I know it is considered equal
+]))
