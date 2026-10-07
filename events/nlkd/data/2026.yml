@@ -1,8 +1,8 @@
 name: 31st Dutch Women Championship
 top:
-- Tamara Au-Havik
-- Yvonne Roelofs
-- Marianne Diederen
+  - Tamara Au-Havik
+  - Yvonne Roelofs
+  - Marianne Diederen
 stages:
   - type: tournament
     name: Championship
