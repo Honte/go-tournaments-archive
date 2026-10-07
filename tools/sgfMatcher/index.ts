@@ -37,6 +37,7 @@ const DATA_DIR = `events/${event}/data`;
 const SGF_DIR = `events/${event}/sgf`;
 const eventPlayers = await readEventPlayersFile(event);
 const results: StageResult[] = [];
+const loadedSgfs = new Set<string>();
 
 if (dry) {
   console.log('== DRY RUN ==');
@@ -87,6 +88,12 @@ for (const yamlPath of yamlFiles.sort()) {
       eventPlayers,
     });
 
+    if (stage.type !== 'classification') {
+      for (const sgf of sgfPaths) {
+        loadedSgfs.add(sgf);
+      }
+    }
+
     if (!stageResult.totalSgfs && !stageResult.previousEntries.length) {
       logger.log('No sgf files found');
       continue;
@@ -121,7 +128,13 @@ for (const yamlPath of yamlFiles.sort()) {
   logger.print(verbose);
 }
 
-printSummary(results);
+const eventSgfPaths = await findSgfs(SGF_DIR, '**');
+
+printSummary(
+  results,
+  eventSgfPaths.length,
+  eventSgfPaths.filter((sgf) => !loadedSgfs.has(sgf))
+);
 
 if (dry) {
   console.log('== DRY RUN ==');
