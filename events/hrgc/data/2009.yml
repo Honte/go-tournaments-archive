@@ -2,7 +2,7 @@ name: 16th Croatian Championship
 stages:
   - type: tournament
     file: hr2009.txt
-    komi: 6.5 
+    komi: 6.5
     scoringColumns:
       - wins
       - null

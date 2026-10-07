@@ -2,7 +2,7 @@ name: 11th Croatian Championship
 stages:
   - type: tournament
     file: hr2004.txt
-    komi: 6.5 
+    komi: 6.5
     scoringColumns:
       - mms
       - wins
@@ -13,5 +13,5 @@ stages:
       - sos
       - sosos
     columns:
-      - wins        
+      - wins
     findSharedPlaces: true

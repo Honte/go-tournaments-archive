@@ -2,7 +2,7 @@ name: 4th Croatian Championship
 stages:
   - type: tournament
     file: hr1997.txt
-    komi: 6.5 
+    komi: 6.5
     scoringColumns:
       - mms
       - wins
@@ -13,5 +13,5 @@ stages:
       - sos
       - sodos
     columns:
-      - wins    
+      - wins
     findSharedPlaces: true

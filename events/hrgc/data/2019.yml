@@ -1,7 +1,7 @@
 top:
-- smestrovic
-- ttukara
-- mmedak
+  - smestrovic
+  - ttukara
+  - mmedak
 name: 26th Croatian Championship
 stages:
   - type: tournament
@@ -11,7 +11,7 @@ stages:
     file: hr2019.txt
     komi: 6.5
     placeOffset: 1
-    promoted: 3    
+    promoted: 3
     scoringColumns:
       - mms
       - sos
@@ -33,7 +33,7 @@ stages:
       - null
       - null
     breakers:
-      - wins      
+      - wins
   - type: tournament
     name:
       pl: Finał
@@ -45,4 +45,4 @@ stages:
       - null
       - null
     breakers:
-      - wins   
+      - wins

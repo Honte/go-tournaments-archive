@@ -1,7 +1,7 @@
 top:
-- zmutabzija
-- vkuhar
-- msmud
+  - zmutabzija
+  - vkuhar
+  - msmud
 name: 5th Croatian Championship
 stages:
   - type: tournament
@@ -9,7 +9,7 @@ stages:
       pl: Kandydaci
       en: Challengers
     file: hr1998.txt
-    komi: 5.5 
+    komi: 5.5
     scoringColumns:
       - mms
       - wins
@@ -20,17 +20,17 @@ stages:
       - sos
       - sodos
     columns:
-      - wins        
+      - wins
     findSharedPlaces: true
   - type: tournament
     name:
       pl: Playoff
       en: Playoff
     file: hr1998playoff.txt
-    scoringColumns:   
+    scoringColumns:
       - wins
       - null
       - null
       - null
     breakers:
-      - wins   
+      - wins

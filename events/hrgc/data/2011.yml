@@ -2,7 +2,7 @@ name: 18th Croatian Championship
 stages:
   - type: tournament
     file: hr2011.txt
-    komi: 6.5 
+    komi: 6.5
     scoringColumns:
       - wins
       - null

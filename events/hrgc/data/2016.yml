@@ -1,7 +1,7 @@
 top:
-- smestrovic
-- lfurjanic
-- zmutabzija
+  - smestrovic
+  - lfurjanic
+  - zmutabzija
 name: 23rd Croatian Championship
 stages:
   - type: tournament
@@ -9,7 +9,7 @@ stages:
       pl: Kandydaci
       en: Challengers
     file: hr2016.txt
-    komi: 6.5 
+    komi: 6.5
     placeOffset: 1
     promoted: 1
     scoringColumns:
@@ -25,7 +25,7 @@ stages:
       pl: Finał
       en: Final
     file: hr2016playoff.txt
-    scoringColumns:   
+    scoringColumns:
       - wins
     breakers:
-      - wins   
+      - wins

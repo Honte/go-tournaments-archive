@@ -1,7 +1,7 @@
 top:
-- smestrovic
-- zmutabzija
-- mmedak
+  - smestrovic
+  - zmutabzija
+  - mmedak
 name: 25th Croatian Championship
 stages:
   - type: tournament
@@ -9,7 +9,7 @@ stages:
       pl: Kandydaci
       en: Challengers
     file: hr2018.txt
-    komi: 6.5 
+    komi: 6.5
     placeOffset: 1
     promoted: 1
     scoringColumns:
@@ -26,9 +26,9 @@ stages:
       en: Final
     file: hr2018playoff.txt
     scoringColumns:
-      - null   
+      - null
       - wins
       - null
       - null
     breakers:
-      - wins   
+      - wins

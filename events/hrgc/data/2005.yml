@@ -2,7 +2,7 @@ name: 12th Croatian Championship
 stages:
   - type: tournament
     file: hr2005.txt
-    komi: 6.5 
+    komi: 6.5
     scoringColumns:
       - mms
       - wins

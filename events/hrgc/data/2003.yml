@@ -2,11 +2,11 @@ name: 10th Croatian Championship
 stages:
   - type: tournament
     file: hr2003.txt
-    komi: 6.5 
+    komi: 6.5
     scoringColumns:
       - wins
       - sodos
-      - null      
+      - null
       - null
     breakers:
       - wins
