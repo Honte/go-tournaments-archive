@@ -13,7 +13,7 @@ stages:
       - sos
       - sosos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
     games:
       - 1-2 1:B+R round:3 sgf:2015/3-RitaPocsai-ElvinaKalsberg.sgf

@@ -13,7 +13,7 @@ stages:
       - sos
       - sosos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
     games:
       - 1-3 3:W+R round:5 sgf:2022/5-RitaPocsai-ManjaMarz.sgf

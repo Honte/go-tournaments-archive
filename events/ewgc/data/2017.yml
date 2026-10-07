@@ -11,7 +11,7 @@ stages:
       - mms
       - sos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
     games:
       - 1-2 1:B+3.5 round:2 sgf:2017/2-ManjaMarz-NataliaKovaleva.sgf

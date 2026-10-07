@@ -10,7 +10,7 @@ stages:
     breakers:
       - place
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
     games:
       - 1-2 1:B+R round:6 sgf:2020/6-NataliaKovaleva-ManjaMarz.sgf ogs:https://online-go.com/game/29331379
