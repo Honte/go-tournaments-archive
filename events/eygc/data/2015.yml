@@ -16,7 +16,7 @@ stages:
       - sodos
       - sos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
     collapsed: true
   - type: tournament
@@ -34,7 +34,7 @@ stages:
       - sodos
       - sos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
     collapsed: true
     games:
@@ -59,7 +59,7 @@ stages:
       - sos
       - sosos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
     collapsed: true
     games:

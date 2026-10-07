@@ -1,12 +1,13 @@
 top:
-- Stjepan Medak
-- Matej Zakanj
-- Roko Crvelin
+  - Stjepan Medak
+  - Matej Zakanj
+  - Roko Crvelin
 name: 32nd Croatian Championship
 stages:
   - type: tournament
     file: hr2025.txt
-    komi: 6.5 
+    dir: 2025/top6
+    komi: 6.5
     placeOffset: 1
     promoted: 1
     name: Challengers
@@ -18,15 +19,32 @@ stages:
     breakers:
       - wins
     findSharedPlaces: true
+    games:
+      - 1-4 1:B+R round:2 sgf:2025/top6/2-StjepanMedak-TeoSladetic.sgf ogs:https://online-go.com/review/1586990
+      - 1-6 1:B+R round:5 sgf:2025/top6/5-StjepanMedak-KarloVlahovic.sgf ogs:https://online-go.com/review/1587528
+      - 2-1 1:W+R round:4 sgf:2025/top6/4-RokoCrvelin-StjepanMedak.sgf ogs:https://online-go.com/review/1587437
+      - 2-3 2:B+6.5 round:2 sgf:2025/top6/2-RokoCrvelin-MirtaMedak.sgf ogs:https://online-go.com/review/1586989
+      - 2-6 2:B+R round:1 sgf:2025/top6/1-RokoCrvelin-KarloVlahovic.sgf ogs:https://online-go.com/review/1586900
+      - 3-1 1:W+R round:1 sgf:2025/top6/1-MirtaMedak-StjepanMedak.sgf ogs:https://online-go.com/review/1586899
+      - 3-5 3:B+0.5 round:4 sgf:2025/top6/4-MirtaMedak-TadejTukara.sgf ogs:https://online-go.com/review/1587435
+      - 3-6 3:B+R round:3 sgf:2025/top6/3-MirtaMedak-KarloVlahovic.sgf ogs:https://online-go.com/review/1587072
+      - 4-2 2:W+8.5 round:3 sgf:2025/top6/3-TeoSladetic-RokoCrvelin.sgf ogs:https://online-go.com/review/1587071
+      - 4-3 4:B+5.5 round:5 sgf:2025/top6/5-TeoSladetic-MirtaMedak.sgf ogs:https://online-go.com/review/1587529
+      - 5-1 1:W+R round:3 sgf:2025/top6/3-TadejTukara-StjepanMedak.sgf ogs:https://online-go.com/review/1587070
+      - 5-2 2:W+R round:5 sgf:2025/top6/5-TadejTukara-RokoCrvelin.sgf ogs:https://online-go.com/review/1587527
+      - 5-4 5:B+26.5 round:1 sgf:2025/top6/1-TadejTukara-TeoSladetic.sgf ogs:https://online-go.com/review/1586898
+      - 6-4 4:W+9.5 round:4 sgf:2025/top6/4-KarloVlahovic-TeoSladetic.sgf ogs:https://online-go.com/review/1587436
+      - 6-5 5:W+26.5 round:2 sgf:2025/top6/2-KarloVlahovic-TadejTukara.sgf ogs:https://online-go.com/review/1586996
   - type: tournament
     name:
       pl: Finał
       en: Final
     file: hr2025playoff.txt
+    dir: 2025/final
     scoringColumns:
       - wins
       - null
       - null
       - null
     breakers:
-      - wins     
+      - wins

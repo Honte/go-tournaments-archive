@@ -7,16 +7,16 @@ stages:
     name: U12
     dir: 2004/u12
     scoringColumns:
-      - mms 
+      - mms
       - wins
       - sodos
-      - sos      
+      - sos
     breakers:
       - mms
       - sodos
-      - sos 
+      - sos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
     collapsed: true
   - type: tournament
@@ -25,15 +25,15 @@ stages:
     name: U18
     dir: 2004/u18
     scoringColumns:
-      - mms 
+      - mms
       - wins
       - sodos
-      - sos      
+      - sos
     breakers:
       - mms
       - sodos
       - sos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
     collapsed: true

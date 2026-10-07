@@ -1,7 +1,7 @@
 top:
-- smestrovic
-- smedak
-- lfurjanic
+  - smestrovic
+  - smedak
+  - lfurjanic
 name: 29th Croatian Championship
 stages:
   - type: tournament
@@ -9,7 +9,8 @@ stages:
       pl: Kandydaci
       en: Challengers
     file: hr2022.txt
-    komi: 6.5 
+    dir: 2022/top6
+    komi: 6.5
     placeOffset: 1
     promoted: 1
     scoringColumns:
@@ -27,10 +28,14 @@ stages:
       pl: Finał
       en: Final
     file: hr2022playoff.txt
+    dir: 2022/final
     scoringColumns:
       - wins
       - null
       - null
       - null
     breakers:
-      - wins   
+      - wins
+    games:
+      - 1-2 1:B+R round:1 sgf:2022/final/1-StjepanMestrovic-StjepanMedak.sgf ogs:https://online-go.com/review/993855
+      - 2-1 1:W+R round:2 sgf:2022/final/2-StjepanMedak-StjepanMestrovic.sgf ogs:https://online-go.com/review/995128

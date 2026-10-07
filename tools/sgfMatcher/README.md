@@ -45,8 +45,11 @@ A dry run with `--force` helps distinguish an existing-link conflict from a new 
 ## Command reference
 
 ```text
-npm run sgf <event> -- [options]
+npm run sgf [event] -- [options]
 ```
+
+With no event argument or `EVENT` environment variable, the matcher processes all event directories in alphabetical
+order. Options apply to every selected event. Use `npm run sgf -- --dry` to preview all events without writing YAML.
 
 | Option                | Effect                                                                                        |
 | --------------------- | --------------------------------------------------------------------------------------------- |

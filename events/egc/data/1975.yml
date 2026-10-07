@@ -3,7 +3,7 @@ name: European Championship 1975
 stages:
   - type: tournament
     file: egc1975.txt
-    dir: 1975/ec
+    dir: 1975
     name: Championship Group
     notes: Recreated from cross table. Games order can be different.
     scoringColumns:
@@ -12,4 +12,6 @@ stages:
       - wins
     findSharedPlaces: true
     games:
-      - 1-11 1:B+9.5 round:8 sgf:1975/ec/8-JuergenMattern-JimBates.sgf
+      - 1-11 1:B+9.5 round:8 sgf:1975/8-JuergenMattern-JimBates.sgf
+      - 2-1 1:W+R round:1 sgf:1975/1-ManfredWimmer-JuergenMattern.sgf
+      - 11-6 6:W+9.5 round:3 sgf:1975/3-JimBates-HenkdeVries.sgf

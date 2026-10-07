@@ -8,7 +8,7 @@ stages:
     dir: 1997/u12
     notes: After drawing the lots it was decided that the second place in the team for the WYGC was for Marius Sinca (RO) and reserve player for the WYGC is Vasili Shvedov (RU)
     scoringColumns:
-      - mms 
+      - mms
       - wins
       - sos
       - sodos
@@ -17,7 +17,7 @@ stages:
       - sos
       - sodos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
     collapsed: true
   - type: tournament
@@ -26,7 +26,7 @@ stages:
     name: U18
     dir: 1997/u18
     scoringColumns:
-      - mms 
+      - mms
       - wins
       - sos
       - sodos
@@ -35,6 +35,6 @@ stages:
       - sos
       - sodos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
     collapsed: true

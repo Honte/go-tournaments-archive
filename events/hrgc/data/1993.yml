@@ -1,5 +1,5 @@
 name: 1st Croatian Championship
 stages:
- - type: classification
-   order:
-    - Velimir Kuhar
+  - type: classification
+    order:
+      - Velimir Kuhar

@@ -1,7 +1,7 @@
 top:
-- zmutabzija
-- vkuhar
-- msmud
+  - zmutabzija
+  - vkuhar
+  - msmud
 name: 13th Croatian Championship
 stages:
   - type: tournament
@@ -9,7 +9,7 @@ stages:
       pl: Kandydaci
       en: Challengers
     file: hr2006.txt
-    komi: 6.5 
+    komi: 6.5
     scoringColumns:
       - mms
       - wins
@@ -22,12 +22,12 @@ stages:
     name:
       pl: Playoff
       en: Playoff
-    notes: for places 3-5  
+    notes: for places 3-5
     file: hr2006playoff3rd.txt
     scoringColumns:
-      - null    
+      - null
       - wins
       - null
       - null
     breakers:
-      - wins   
+      - wins

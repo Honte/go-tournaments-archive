@@ -1,7 +1,7 @@
 top:
-- lfurjanic
-- zmutabzija
-- mmedak
+  - lfurjanic
+  - zmutabzija
+  - mmedak
 name: 22nd Croatian Championship
 stages:
   - type: tournament
@@ -9,7 +9,7 @@ stages:
       pl: Kandydaci
       en: Challengers
     file: hr2015.txt
-    komi: 6.5 
+    komi: 6.5
     placeOffset: 1
     promoted: 1
     scoringColumns:
@@ -25,7 +25,7 @@ stages:
       pl: Finał
       en: Final
     file: hr2015playoff.txt
-    scoringColumns:   
+    scoringColumns:
       - wins
     breakers:
-      - wins   
+      - wins

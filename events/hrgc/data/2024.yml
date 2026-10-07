@@ -1,7 +1,7 @@
 top:
-- mzakanj
-- ttukara
-- smedak
+  - mzakanj
+  - ttukara
+  - smedak
 name: 31st Croatian Championship
 stages:
   - type: tournament
@@ -9,7 +9,8 @@ stages:
       pl: Kandydaci
       en: Challengers
     file: hr2024.txt
-    komi: 6.5 
+    dir: 2024/top6
+    komi: 6.5
     placeOffset: 1
     promoted: 1
     scoringColumns:
@@ -20,15 +21,27 @@ stages:
     breakers:
       - wins
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:4 sgf:2024/top6/4-TadejTukara-StjepanMedak.sgf ogs:https://online-go.com/review/1345177
+      - 1-3 1:B+R round:2 sgf:2024/top6/2-TadejTukara-RokoCrvelin.sgf ogs:https://online-go.com/review/1344724
+      - 1-6 1:B+R round:1 sgf:2024/top6/1-TadejTukara-ZoranMutabzija.sgf ogs:https://online-go.com/review/1344640
+      - 2-5 2:B+8.5 round:5 sgf:2024/top6/5-StjepanMedak-MirtaMedak.sgf ogs:https://online-go.com/review/1345277
+      - 2-6 2:B+R round:3 sgf:2024/top6/3-StjepanMedak-ZoranMutabzija.sgf ogs:https://online-go.com/review/1344783
+      - 3-2 2:W+R round:1 sgf:2024/top6/1-RokoCrvelin-StjepanMedak.sgf ogs:https://online-go.com/review/1344639
+      - 4-1 1:W+R round:5 sgf:2024/top6/5-LovroFurjanic-TadejTukara.sgf ogs:https://online-go.com/review/1345276
+      - 5-1 1:W+R round:3 sgf:2024/top6/3-MirtaMedak-TadejTukara.sgf ogs:https://online-go.com/review/1344784
+      - 5-3 3:W+R round:4 sgf:2024/top6/4-MirtaMedak-RokoCrvelin.sgf ogs:https://online-go.com/review/1345178
+      - 6-5 5:W+R round:2 sgf:2024/top6/2-ZoranMutabzija-MirtaMedak.sgf ogs:https://online-go.com/review/1344725
   - type: tournament
     name:
       pl: Finał
       en: Final
     file: hr2024playoff.txt
+    dir: 2024/final
     scoringColumns:
       - null
       - wins
       - null
       - null
     breakers:
-      - wins   
+      - wins

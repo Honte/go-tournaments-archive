@@ -28,101 +28,126 @@ const {
   verbose: { type: 'boolean', default: false, short: 'v' },
 });
 
-if (!event) {
-  console.error('Event is missing');
-  process.exit(1);
+if (dry) {
+  console.log('== DRY RUN ==');
 }
 
-const DATA_DIR = `events/${event}/data`;
-const SGF_DIR = `events/${event}/sgf`;
-const eventPlayers = await readEventPlayersFile(event);
-const results: StageResult[] = [];
+const eventIds = event
+  ? [event]
+  : (await fg.glob('events/*', { onlyDirectories: true })).sort().map((dir) => path.posix.basename(dir));
+
+for (const [index, eventId] of eventIds.entries()) {
+  if (index > 0) {
+    console.log();
+  }
+
+  if (eventIds.length > 1) {
+    console.log(`=== EVENT: ${eventId.toUpperCase()} ===`);
+  }
+  await processEvent(eventId);
+}
 
 if (dry) {
   console.log('== DRY RUN ==');
 }
 
-const yamlFiles = await fg.glob(`${DATA_DIR}/*.yml`);
+async function processEvent(event: string) {
+  const DATA_DIR = `events/${event}/data`;
+  const SGF_DIR = `events/${event}/sgf`;
+  const eventPlayers = await readEventPlayersFile(event);
+  const results: StageResult[] = [];
+  const loadedSgfs = new Set<string>();
 
-if (!yamlFiles.length) {
-  console.log(`No YAML files found in ${DATA_DIR}`);
-  process.exit(0);
-}
+  const yamlFiles = await fg.glob(`${DATA_DIR}/*.yml`);
 
-for (const yamlPath of yamlFiles.sort()) {
-  const year = parseInt(path.parse(yamlPath).name, 10);
-
-  if (isNaN(year) || (yearFilter && year !== Number(yearFilter))) {
-    continue;
+  if (!yamlFiles.length) {
+    console.log(`No YAML files found in ${DATA_DIR}`);
+    return;
   }
 
-  const logger = createLogger(`=== ${event.toUpperCase()} ${year} ===`);
-  const yamlContent = await readFile(yamlPath, 'utf-8');
-  const doc = parseDocument(yamlContent);
-  const json = doc.toJSON() as InputTournament;
-  const claimedSgfs = new Set<string>();
+  for (const yamlPath of yamlFiles.sort()) {
+    const year = parseInt(path.parse(yamlPath).name, 10);
 
-  let yamlModified = false;
-
-  if (!json.stages?.length) {
-    logger.log('No stages found in YAML');
-    continue;
-  }
-
-  for (const [stageIndex, stage] of json.stages.entries()) {
-    const allSgfPaths = await findSgfs(
-      SGF_DIR,
-      stage.type === 'tournament' ? (stage.dir ?? String(year)) : String(year)
-    );
-    const sgfPaths = allSgfPaths.filter((path) => !claimedSgfs.has(path));
-
-    const stageResult = await processStage({
-      tournament: json,
-      stage,
-      sgfPaths,
-      dataDir: DATA_DIR,
-      sgfDir: SGF_DIR,
-      force,
-      strict,
-      eventPlayers,
-    });
-
-    if (!stageResult.totalSgfs && !stageResult.previousEntries.length) {
-      logger.log('No sgf files found');
+    if (isNaN(year) || (yearFilter && year !== Number(yearFilter))) {
       continue;
     }
 
-    printStageReport(logger, stageResult);
+    const logger = createLogger(`=== ${event.toUpperCase()} ${year} ===`);
+    const yamlContent = await readFile(yamlPath, 'utf-8');
+    const doc = parseDocument(yamlContent);
+    const json = doc.toJSON() as InputTournament;
+    const claimedSgfs = new Set<string>();
 
-    if (!dry) {
-      yamlModified = updateYamlDoc(doc, stageIndex, stageResult) || yamlModified;
+    let yamlModified = false;
+
+    if (!json.stages?.length) {
+      logger.log('No stages found in YAML');
+      continue;
     }
 
-    for (const sgf of stageResult.claimedSgfs) {
-      claimedSgfs.add(sgf);
+    for (const [stageIndex, stage] of json.stages.entries()) {
+      const allSgfPaths = await findSgfs(
+        SGF_DIR,
+        stage.type === 'tournament' ? (stage.dir ?? String(year)) : String(year)
+      );
+      const sgfPaths = allSgfPaths.filter((path) => !claimedSgfs.has(path));
+
+      const stageResult = await processStage({
+        tournament: json,
+        stage,
+        sgfPaths,
+        dataDir: DATA_DIR,
+        sgfDir: SGF_DIR,
+        force,
+        strict,
+        eventPlayers,
+      });
+
+      if (stage.type !== 'classification') {
+        for (const sgf of sgfPaths) {
+          loadedSgfs.add(sgf);
+        }
+      }
+
+      if (!stageResult.totalSgfs && !stageResult.previousEntries.length) {
+        logger.log('No sgf files found');
+        continue;
+      }
+
+      printStageReport(logger, stageResult);
+
+      if (!dry) {
+        yamlModified = updateYamlDoc(doc, stageIndex, stageResult) || yamlModified;
+      }
+
+      for (const sgf of stageResult.claimedSgfs) {
+        claimedSgfs.add(sgf);
+      }
+
+      results.push({
+        year,
+        reused: stageResult.reusedEntries.length,
+        matched: stageResult.matchedEntries.length,
+        unmatched: stageResult.unmatchedEntries.length,
+        removed: stageResult.removedEntries.length,
+        totalSgfs: stageResult.totalSgfs,
+        unmatchedEntries: stageResult.unmatchedEntries,
+      });
     }
 
-    results.push({
-      year,
-      reused: stageResult.reusedEntries.length,
-      matched: stageResult.matchedEntries.length,
-      unmatched: stageResult.unmatchedEntries.length,
-      removed: stageResult.removedEntries.length,
-      totalSgfs: stageResult.totalSgfs,
-      unmatchedEntries: stageResult.unmatchedEntries,
-    });
+    if (yamlModified) {
+      await writeFile(yamlPath, doc.toString({ lineWidth: 0 }), 'utf-8');
+      logger.log(`Written to ${yamlPath}`);
+    }
+
+    logger.print(verbose);
   }
 
-  if (yamlModified) {
-    await writeFile(yamlPath, doc.toString({ lineWidth: 0 }), 'utf-8');
-    logger.log(`Written to ${yamlPath}`);
-  }
+  const eventSgfPaths = await findSgfs(SGF_DIR, '**');
 
-  logger.print(verbose);
-}
-
-printSummary(results);
-
-if (dry) {
-  console.log('== DRY RUN ==');
+  printSummary(
+    results,
+    eventSgfPaths.length,
+    eventSgfPaths.filter((sgf) => !loadedSgfs.has(sgf))
+  );
 }

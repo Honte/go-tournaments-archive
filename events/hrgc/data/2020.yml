@@ -1,15 +1,16 @@
 name: 27th Croatian Championship
 top:
-- zmutabzija
-- smestrovic
-- mzakanj
+  - zmutabzija
+  - smestrovic
+  - mzakanj
 stages:
   - type: tournament
     name:
       pl: Kandydaci
       en: Challengers
     file: hr2020.txt
-    komi: 6.5 
+    dir: 2020/top6
+    komi: 6.5
     placeOffset: 1
     promoted: 1
     scoringColumns:
@@ -21,12 +22,32 @@ stages:
       - wins
       - sodos
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:2 sgf:2020/top6/2-ZoranMutabzija-MatejZakanj.sgf ogs:https://online-go.com/game/28492496
+      - 1-4 1:B+R round:5 sgf:2020/top6/5-ZoranMutabzija-MirtaMedak.sgf ogs:https://online-go.com/game/28957977
+      - 2-3 2:B+R round:1 sgf:2020/top6/1-MatejZakanj-LovroFurjanic.sgf ogs:https://online-go.com/game/28301598
+      - 2-4 2:B+R round:3 sgf:2020/top6/3-MatejZakanj-MirtaMedak.sgf ogs:https://online-go.com/game/28658046
+      - 2-6 2:B+R round:5 sgf:2020/top6/5-MatejZakanj-ZvonkoBednjanec.sgf ogs:https://online-go.com/game/28957956
+      - 3-1 1:W+R round:3 sgf:2020/top6/3-LovroFurjanic-ZoranMutabzija.sgf ogs:https://online-go.com/game/28579636
+      - 3-5 3:B+R round:5 sgf:2020/top6/5-LovroFurjanic-TadejTukara.sgf ogs:https://online-go.com/game/28957911
+      - 4-3 3:W+15.5 round:4 sgf:2020/top6/4-MirtaMedak-LovroFurjanic.sgf ogs:https://online-go.com/game/28742801
+      - 4-5 4:B+R round:2 sgf:2020/top6/2-MirtaMedak-TadejTukara.sgf ogs:https://online-go.com/game/28749072
+      - 4-6 4:B+3.5 round:1 sgf:2020/top6/1-MirtaMedak-ZvonkoBednjanec.sgf ogs:https://online-go.com/game/28298857
+      - 5-1 1:W+R round:1 sgf:2020/top6/1-TadejTukara-ZoranMutabzija.sgf ogs:https://online-go.com/game/28400813
+      - 5-2 2:W+R round:4 sgf:2020/top6/4-TadejTukara-MatejZakanj.sgf ogs:https://online-go.com/game/28687831
+      - 5-6 5:B+R round:3 sgf:2020/top6/3-TadejTukara-ZvonkoBednjanec.sgf ogs:https://online-go.com/game/28806350
+      - 6-1 1:W+R round:4 sgf:2020/top6/4-ZvonkoBednjanec-ZoranMutabzija.sgf ogs:https://online-go.com/game/28888201
+      - 6-3 3:W+18.5 round:2 sgf:2020/top6/2-ZvonkoBednjanec-LovroFurjanic.sgf ogs:https://online-go.com/game/28492569
   - type: tournament
     name:
       pl: Finał
       en: Final
     file: hr2020playoff.txt
+    dir: 2020/final
     scoringColumns:
       - wins
     breakers:
-      - wins   
+      - wins
+    games:
+      - 1-2 1:B+R round:2 sgf:2020/final/2-ZoranMutabzija-StjepanMestrovic.sgf ogs:https://online-go.com/game/29277384
+      - 2-1 1:W+R round:1 sgf:2020/final/1-StjepanMestrovic-ZoranMutabzija.sgf ogs:https://online-go.com/game/29271876

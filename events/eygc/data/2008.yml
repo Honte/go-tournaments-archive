@@ -7,7 +7,7 @@ stages:
     name: U12
     dir: 2008/u12
     scoringColumns:
-      - mms 
+      - mms
       - wins
       - sos
       - sosos
@@ -16,7 +16,7 @@ stages:
       - sos
       - sosos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
     collapsed: true
   - type: tournament
@@ -25,7 +25,7 @@ stages:
     name: U18
     dir: 2008/u18
     scoringColumns:
-      - mms 
+      - mms
       - wins
       - sos
       - sosos
@@ -34,6 +34,6 @@ stages:
       - sos
       - sosos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
     collapsed: true
