@@ -13,7 +13,7 @@ stages:
       - sos
       - sosos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
     games:
       - 1-2 1:B+8.5 round:3 sgf:2021/3-DinaBurdakova-VirzhiniaShalneva.sgf ogs:https://online-go.com/game/36767227

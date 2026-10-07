@@ -1,0 +1,5 @@
+; EV[17th Dutch Championship]
+; PC[NL, Utrecht]
+; DT[1986-02-02,1986-02-02]
+   1 Boon Mark                      3d NL  xxx      0   2= 
+   2 Janssen Frank                  4d NL  xxx      0   1=

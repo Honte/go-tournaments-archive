@@ -1,11 +1,17 @@
 stages:
   - type: tournament
     file: nl1976final.txt
-    name: Final
-    notes: played in autumn
+    name: final
+    notes: first 2 games 9-10 X in Utrecht, remaining ones 17,23,24 X in Amsterdam
     dir: 1976/final
     scoringColumns:
       - wins
     breakers:
       - wins
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+12 round:4 sgf:1976/final/4-MaxRebattu-CasMuller.sgf
+      - 1-2 1:B+R round:2 sgf:1976/final/2-MaxRebattu-CasMuller.sgf
+      - 2-1 1:W+14 round:3 sgf:1976/final/3-CasMuller-MaxRebattu.sgf
+      - 2-1 1:W+R round:5 sgf:1976/final/5-CasMuller-MaxRebattu.sgf
+      - 2-1 2:B+5 round:1 sgf:1976/final/1-CasMuller-MaxRebattu.sgf

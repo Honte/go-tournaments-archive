@@ -1,2 +1,4 @@
-   1 Zeijst Rob_van                30k NL  xxx      2      2+ 2+
-   2 Rehm Robert                   30k NL  xxx      0      1- 1-
+; PC[NL, Apeldoorn]
+; DT[1981-03-05,1981-03-06]
+   1 Zeijst Rob_van                5d NL  xxx      2      2+ 2+
+   2 Rehm Robert                   5d NL  xxx      0      1- 1-

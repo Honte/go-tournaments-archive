@@ -1,11 +1,16 @@
 stages:
   - type: tournament
     file: nl1975final.txt
-    name: Final
-    notes: played in autumn
+    name: final
+    notes: played in autumn, dates and places shown only from 3rd and 4th game
     dir: 1975/final
     scoringColumns:
       - wins
     breakers:
       - wins
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+5 round:3 sgf:1975/final/3-MaxRebattu-HenkdeVries.sgf
+      - 1-2 1:B+10 round:1 sgf:1975/final/1-MaxRebattu-HenkdeVries.sgf
+      - 2-1 1:W+R round:2 sgf:1975/final/2-HenkdeVries-MaxRebattu.sgf
+      - 2-1 1:W+R round:4 sgf:1975/final/4-HenkdeVries-MaxRebattu.sgf

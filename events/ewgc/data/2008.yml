@@ -13,7 +13,7 @@ stages:
       - sos
       - sodos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
     games:
       - 1-2 1:B+R round:4 sgf:2008/4-KlaraZaloudkova-ManuelaMarz.sgf

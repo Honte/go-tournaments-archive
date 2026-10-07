@@ -2,8 +2,8 @@ stages:
   - type: tournament
     name: Championship
     file: nl1994.txt
-    scoringColumns: 
-      - wins          
+    scoringColumns:
+      - wins
       - sos
     breakers:
       - wins

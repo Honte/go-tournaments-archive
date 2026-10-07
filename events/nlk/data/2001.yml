@@ -2,9 +2,9 @@ stages:
   - type: tournament
     name: Championship
     file: nl2001.txt
-    scoringColumns: 
-      - wins     
-      - null      
+    scoringColumns:
+      - wins
+      - null
       - sos
       - sodos
     breakers:
@@ -12,3 +12,6 @@ stages:
       - sos
       - sodos
     findSharedPlaces: true
+    games:
+      - 1-11 1:B+R round:2 sgf:2001/2-JuanGuo-RudiVerhagen.sgf
+      - 2-6 2:B+R round:8 sgf:2001/8-EmilNijhuis-MerlijnKuin.sgf

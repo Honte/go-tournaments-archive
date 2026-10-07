@@ -15,7 +15,7 @@ stages:
       - sos
       - sosos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
     games:
       - 1-2 1:B+R round:3 sgf:2023/3-TingLi-ArianeOugier.sgf ogs:https://online-go.com/review/1074029

@@ -2,9 +2,9 @@ stages:
   - type: tournament
     name: Championship
     file: nl2004.txt
-    scoringColumns: 
-      - wins     
-      - null      
+    scoringColumns:
+      - wins
+      - null
       - sos
       - sodos
     breakers:

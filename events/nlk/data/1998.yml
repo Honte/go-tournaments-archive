@@ -28,4 +28,6 @@ stages:
       - wins
     findSharedPlaces: true
     games:
+      - 1-2 1:B+R round:2 sgf:1998/playoff/2-JuanGuo-GilesvanEeden.sgf
       - 2-1 1:W+R round:3 sgf:1998/playoff/3-GillesvanEeden-JuanGuo.sgf
+      - 2-1 2:B+4.5 round:1 sgf:1998/playoff/1-GillesvanEeden-JuanGuo.sgf

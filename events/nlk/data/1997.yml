@@ -2,9 +2,9 @@ stages:
   - type: tournament
     name: Championship
     file: nl1997.txt
-    scoringColumns: 
-      - wins     
-      - null      
+    scoringColumns:
+      - wins
+      - null
       - sos
       - sodos
     breakers:

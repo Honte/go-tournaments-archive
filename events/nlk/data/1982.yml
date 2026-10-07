@@ -1,12 +1,41 @@
 stages:
   - type: tournament
-    name: Championship
+    name: championship
     file: nl1982.txt
-    notes: Recreated from cross table. Games order can be different.
-    scoringColumns: 
-      - wins          
+    notes: Ronald Schlemper played 6th and 7th round in advance in Voorhout 15 I
+    scoringColumns:
+      - wins
       - sodos
     breakers:
       - wins
       - sodos
     findSharedPlaces: true
+    games:
+      - 1-3 1:B+8 round:2 sgf:1982/2-RonaldSchlemper-RobertRehm.sgf
+      - 1-7 1:B+R round:4 sgf:1982/4-RonaldSchlemper-FrankJanssen.sgf
+      - 1-8 1:B+R round:6 sgf:1982/6-RonaldSchlemper-JaapSchiethart.sgf
+      - 2-1 1:W+12 round:7 sgf:1982/7-MaxRebattu-RonaldSchlemper.sgf
+      - 2-3 2:B+10 round:1 sgf:1982/1-MaxRebattu-RobertRehm.sgf
+      - 2-6 2:B+R round:5 sgf:1982/5-MaxRebattu-CasMuller.sgf
+      - 2-8 2:B+R round:3 sgf:1982/3-MaxRebattu-JaapSchiethart.sgf
+      - 3-4 jigo black:3 round:7 sgf:1982/7-RobertRehm-RobvanZeijst.sgf
+      - 3-5 3:B+R round:5 sgf:1982/5-RobertRehm-MichielEijkhout.sgf
+      - 3-7 3:B+R round:3 sgf:1982/3-RobertRehm-FrankJanssen.sgf
+      - 4-1 1:W+5 round:5 sgf:1982/5-RobvanZeijst-RonaldSchlemper.sgf
+      - 4-2 2:W+3 round:6 sgf:1982/6-RobvanZeijst-MaxRebattu.sgf
+      - 4-5 4:B+R round:3 sgf:1982/3-RobvanZeijst-MichielEijkhout.sgf
+      - 4-7 4:B+R round:1 sgf:1982/1-RobvanZeijst-FrankJanssen.sgf
+      - 5-1 1:W+R round:1 sgf:1982/1-MichielEijkhout-RonaldSchlemper.sgf
+      - 5-2 5:B+6 round:4 sgf:1982/4-MichielEijkhout-MaxRebattu.sgf
+      - 5-6 6:W+R round:2 sgf:1982/2-MichielEijkhout-CasMuller.sgf
+      - 5-7 5:B+5 round:6 sgf:1982/6-MichielEijkhout-FrankJanssen.sgf
+      - 6-1 1:W+R round:3 sgf:1982/3-CasMuller-RonaldSchlemper.sgf
+      - 6-3 3:W+R round:6 sgf:1982/6-CasMuller-RobertRehm.sgf
+      - 6-4 4:W+28 round:4 sgf:1982/4-CasMuller-RobvanZeijst.sgf
+      - 6-8 6:B+R round:1 sgf:1982/1-CasMuller-JaapSchiethart.sgf
+      - 7-2 2:W+R round:2 sgf:1982/2-FrankJanssen-MaxRebattu.sgf
+      - 7-6 6:W+R round:7 sgf:1982/7-FrankJanssen-CasMuller.sgf
+      - 7-8 7:B+5 round:5 sgf:1982/5-FrankJanssen-JaapSchiethart.sgf
+      - 8-3 3:W+21 round:4 sgf:1982/4-JaapSchiethart-RobertRehm.sgf
+      - 8-4 4:W+R round:2 sgf:1982/2-JaapSchiethart-RobvanZeijst.sgf
+      - 8-5 5:W+R round:7 sgf:1982/7-JaapSchiethart-MichielEijkhout.sgf

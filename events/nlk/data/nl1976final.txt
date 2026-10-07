@@ -1,4 +1,6 @@
 ; EV[7th Dutch Championship]
+; PC[NL, Utrecht-Amsterdam]
+; DT[1976-10-09,1979-10-24]
 ;autumn
-   1 Rebattu Max                   30k NL  xxx      4      2+ 2+ 2+ 2- 2+
-   2 Muller Cas                    30k NL  xxx      1      1- 1- 1- 1+ 1-
+   1 Rebattu Max                   5d NL  xxx      4      2- 2+ 2+ 2+ 2+
+   2 Muller Cas                    3d NL  xxx      1      1+ 1- 1- 1- 1-

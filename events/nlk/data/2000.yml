@@ -2,9 +2,9 @@ stages:
   - type: tournament
     name: Championship
     file: nl2000.txt
-    scoringColumns: 
-      - wins     
-      - null      
+    scoringColumns:
+      - wins
+      - null
       - sos
       - sodos
     breakers:
@@ -12,3 +12,7 @@ stages:
       - sos
       - sodos
     findSharedPlaces: true
+    games:
+      - 1-7 7:W+R round:2 sgf:2000/2-JuanGuo-StijnvanDongen.sgf
+      - 4-8 4:B+R round:1 sgf:2000/1-EmilNijhuis-FilipVanderstappen.sgf
+      - 10-12 10:B+? round:6 sgf:2000/6-RudiVerhagen-FrankJanssen.sgf

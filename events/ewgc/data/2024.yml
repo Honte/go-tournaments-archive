@@ -13,7 +13,7 @@ stages:
       - sos
       - sosos
     columns:
-      - wins       
+      - wins
     findSharedPlaces: true
     games:
       - 1-2 1:B+R round:3 sgf:2024/3-TingLi-ManjaMarz.sgf ogs:https://online-go.com/review/1333572

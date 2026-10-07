@@ -3,8 +3,8 @@ stages:
     name: Championship
     file: nl1985.txt
     notes: Gilles van Eeden won first 2 games (vs Frank Jannsen and Arend-Jan Westhoff), but later withdrawn and his games were nullified
-    scoringColumns: 
-      - wins          
+    scoringColumns:
+      - wins
       - sos
       - sodos
     breakers:
@@ -12,3 +12,8 @@ stages:
       - sos
       - sodos
     findSharedPlaces: true
+    games:
+      - 1-6 1:B+R round:2 sgf:1985/2-RonaldSchlemper-ErikPuyt.sgf
+      - 3-1 1:W+22.5 round:4 sgf:1985/4-ArendJanWesthoff-RonaldSchlemper.sgf
+      - 5-4 4:W+R round:2 sgf:1985/2-RobertRehm-ReneAaij.sgf
+      - 6-7 7:W+R round:6 sgf:1985/6-ErikPuyt-MichielEijkhout.sgf

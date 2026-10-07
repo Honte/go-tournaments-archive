@@ -1,4 +1,6 @@
 ; EV[6th Dutch Championship]
+; PC[NL, Leiden-Amsterdan]
+; DT[1975-09-21,1975-11-21]
 ;autumn
    1 Rebattu Max                   30k NL  xxx      4      2+ 2+ 2+ 2+
    2 Vries Henk_de                 30k NL  xxx      0      1- 1- 1- 1-

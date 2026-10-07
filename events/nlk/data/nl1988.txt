@@ -1,5 +1,6 @@
 ; EV[19th Dutch Championship]
-   1 Schlemper Ronald               6d NL  xxx      6    16    16     11+     10+      6+      5+      2+      3+
+; PC[NL, Amsterdam]
+   1 Schlemper Ronald               7d NL  xxx      6    16    16     11+     10+      6+      5+      2+      3+
    2 Boon Mark                      4d NL  xxx      4    17    10     10-     11+      8+      7+      1-      5+
    3 Westhoff Arend-Jan             4d NL  xxx      4    17     8      7-     12+     10+      6+      5+      1-
    4 Puyt Erik                      4d NL  xxx      4    16    10      8-      9+      5-     10+      6+      7+

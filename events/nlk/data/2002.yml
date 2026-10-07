@@ -2,9 +2,9 @@ stages:
   - type: tournament
     name: Championship
     file: nl2002.txt
-    scoringColumns: 
-      - wins     
-      - null      
+    scoringColumns:
+      - wins
+      - null
       - sos
       - sodos
     breakers:
@@ -12,3 +12,9 @@ stages:
       - sos
       - sodos
     findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:6 sgf:2002/6-JuanGuo-GeertGroenen.sgf
+      - 2-6 6:W+9.5 round:2 sgf:2002/2-GeertGroenen-MerlijnKuin.sgf
+      - 3-1 1:W+12.5 round:7 sgf:2002/7-FrankJanssen-JuanGuo.sgf
+      - 4-7 4:B+27.5 round:8 sgf:2002/8-EmilNijhuis-RobertRehm.sgf
+      - 8-13 8:B+R round:1 sgf:2002/1-FilipVanderstappen-ArnoudRutgersVanderLoeff.sgf
