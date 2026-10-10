@@ -1,0 +1,20 @@
+; EV[1st Sotetsu Cup]
+; PC[JP, Yokohama]
+; DT[1989-11-23,1989-11-25]
+;r4 SG-HK 1-0, r5 JP-SG 1-0 PL-NL 1-0
+   1 Ao Lixian                     31k SG  xxx  2+    5    23
+   2 Kan Ying                      31k HK  xxx  1-    5    21 |10450539
+   3 Nakamura Chikako              31k JP  xxx  0=    5    19
+   4 Mu Xiaohong                   31k CN  xxx  0=    4    22
+   5 Cheng Shu-chin                31k TW  xxx  0=    4    19
+   6 Nam Chi-hyung                 31k KR  xxx  0=    3    23
+   7 Yedwab Laura                  31k US  xxx  0=    3    20
+   8 Chaine Marie-Claire           31k FR  xxx  0=    3    19 |10350923
+   9 Grudzinska Emilia             31k PL  xxx  0=    3    18 |10262912
+  10 Rodriguez-Hergueta Luisa      31k ES  xxx  0=    3    15
+  11 Diederen Marianne             31k NL  xxx  0=    2    17 |10598412
+  12 Malo Suzanne                  31k CA  xxx  0=    2    16
+  13 Kalisch Sylvia                31k DE  xxx  0=    2    16 |10386706
+  14 Kraft Marion                  31k AT  xxx  0=    2    16
+  15 Papeschi Rosario              31k AR  xxx  0=    1    13 |10913430
+  16 Paterson Sue                  31k UK  xxx  0=    1    13 |10201158

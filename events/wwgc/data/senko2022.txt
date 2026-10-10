@@ -1,0 +1,12 @@
+; EV[Senko Cup Amateur]
+; DT[2022-04-08,2022-04-08]
+; PC[JP, Online]
+;30 seconds per move, plus ten 1-minute periods of thinking time.?
+;https://www.youtube.com/watch?v=Psn38e2ntCk&list=PLqgZehRLH59ldGT3pgr4DEi7o_y4NCHXV
+   1 Ha Quynh_anh                   6d VN  xxxx   5+   3+   2+     3 |20474421
+   2 Sornarra Pinyada               4d TH  xxxx   7+   4+   1-     2
+   3 Ho Li-ting                     2d SG  xxxx   6+   1-   0=     1 |18437826
+   4 Tan Yan_Ying                   3d MY  xxxx   0+   2-   0=     1 |19362563
+   5 Bocle Milena                   2d FR  92An   1-   0=   0=     0 |14362018
+   6 Liu Xingshuo                   5d US  xxxx   3-   0=   0=     0
+   7 Marz Manja                     3d DE  Jigs   2-   0=   0=     0 |13062412

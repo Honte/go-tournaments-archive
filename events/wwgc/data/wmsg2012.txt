@@ -1,0 +1,49 @@
+; TC[W120813A]
+; CL[A]
+; EV[World Mind Sport Games Go Individual Women Tournament 2012]
+; PC[FR, Lille]
+; DT[2012-08-13,2012-08-16]
+; HA[h9]
+; KM[6.5]
+; TM[97.5]
+; CM[(Selection for the finals between the top 4) (submitted by williamwandel)]
+;.
+; WMSG_2012_Go_Women_Single
+   1 Lin Hsiaotung                  6d TW  Taip   2-/b0   7+/w0  17+/b0  14+/b0   6+/w0      3+      2+     6     4    24   122 |15001910
+   2 Osawa Maya                     6d JP  Japa   1+/w0  10+/b0   4+/b0   5+/w0   3-/w0      4+      1-     6     4    28   120 |16586504
+   3 Yu Jin                         6d CA  Toro   6-/b0  27+/b0   9+/w0  10+/w0   2+/b0      1-      4+     6     4    24   116 |14501190
+   4 Wong Vanessa                   5d UK  HKng  18+/b0  14+/w0   2-/w0  15+/b0   5+/b0      2-      3-     6     4    23   124 |14349467
+   5 Sha Irene                      6d CA  xxxx   9+/b0   8+/w0   6+/b0   2-/b0   4-/w0      0=      0=     5     3    27   119 |16525432
+   6 Lu Yu-Hua                      6d TW  xxxx   3+/w0  16+/b0   5-/w0  20+/b0   1-/b0      0=      0=     5     3    24   112 |16525421
+   7 Lee Lok_Yi                     4d HK  xxxx   8-/w0   1-/b0  18+/w0  17+/w0  14+/b0      0=      0=     5     3    23   113 |15086907
+   8 Kovaleva Natalia               5d RU  74Ch   7+/b0   5-/b0  14-/b0  11+/w0  16+/w0      0=      0=     5     3    22   116 |10537087
+   9 Ko I-Ning                      6d TW  Chin   5-/w0  11+/b0   3-/b0  27+/w0  15+/b0      0=      0=     5     3    22   114 |16533506
+  10 Wu Wen-Ting                    6d TW  Chin  15+/w0   2-/w0  19+/b0   3-/b0  22+/b0      0=      0=     5     3    22   106 |16501507
+  11 Avram Laura                    2d RO  Bist  34+/w0   9-/w0  13+/b0   8-/b0  21+/w0      0=      0=     4     3    19    94 |12698620
+  12 Cornuejols Dominique           1d FR  38Gr  13+/w0  17-/w0  34+/b0  16-/b0  20+/w0      0=      0=     4     3    17    94 |10913210
+  13 Dubiel Marika                  1d NL  Amvn  12-/b0  24+/w0  11-/w0  28+/w0  27+/b0      0=      0=     4     3    17    82 |14301617
+  14 Wang Yinli                     6d US  xxx   28+/b0   4-/b0   8+/w0   1-/w0   7-/w0      0=      0=     4     2    25   107 |15033920
+  15 Shen Cherry                    5d US  xxxx  10-/b0  18+/w0  16+/b0   4-/w0   9-/w0      0=      0=     4     2    24   109 |16501430
+  16 Song Amira                     4d CA  Toro  17+/b0   6-/w0  15-/w0  12+/w0   8-/b0      0=      0=     4     2    22   109 |16249706
+  17 Chung Wai_Yi                   5d HK  xxxx  16-/w0  12+/b0   1-/w0   7-/b0  24+/b0      0=      0=     4     2    22    97 |16533429
+  18 Zhang Tina                     4d US  xxx    4-/w0  15-/b0   7-/b0  34+/w0  25+/b0      0=      0=     4     2    20    99 |15013889
+  19 Regan Natasha                  1k UK  Epsm  23+/b0  25+/w0  10-/w0  21-/w0  29+/b0      0=      0=     3     3    16    74 |12301146
+  20 Suciu Irina                    1k RO  Brsv  30+/b0  35+/w0  29+/b0   6-/w0  12-/b0      0=      0=     3     3    15    79 |10337261
+  21 Berreby Monique                1k FR  13Ma  29-/w0  23+/w0  26+/b0  19+/b0  11-/b0      0=      0=     3     3    15    71 |10374562
+  22 Dumesnil Lindsay               2k FR  76Ha  26+/b0  34-/b0  32+/w0  30+/w0  10-/w0      0=      0=     3     3    14    74 |14625908
+  23 Diederen Marianne              1k NL  Arnh  19-/w0  21-/b0  33+/b0  32+/b0  31+/w0      0=      0=     3     3    12    61 |10598412
+  24 Griffiths Anna                 8k UK  Epsm  38+/w0  13-/b0  31+/b0  36+/b0  17-/w0      0=      0=     3     3    11    72 |10525680
+  25 Julien Marie                   5k FR  78Ve  37+/w0  19-/b0  36+/b0  29+/w0  18-/w0      0=      0=     3     3    11    69 |14974443
+  26 Putter Annemarie_de            2k NL  Utre  22-/w0  38+/b0  21-/w0  35+/b0  34+/b0      0=      0=     3     3    10    69 |10613273
+  27 Bocle Milena                   2d FR  92An  35+/b0   3-/w0  28+/w0   9-/b0  13-/w0      0=      0=     3     2    20    89 |14362018
+  28 Yeun Lok_Yan                   3d HK  xxxx  14-/w0  31+/w0  27-/b0  13-/b0  30+/w0      0=      0=     3     2    15    86 |16562436
+  29 Overbeek Marieke               3k NL  Arnh  21+/b0  32+/w0  20-/w0  25-/b0  19-/w0      0=      0=     2     2    14    68 |13062368
+  30 Buntsma Els                    2k NL  Arnh  20-/w0  33+/b0  35+/w0  22-/b0  28-/b0      0=      0=     2     2    13    63 |10250845
+  31 Rodriguez Sabina               9k ES  Sevi  36+/w0  28-/b0  24-/w0  37+/b0  23-/b0      0=      0=     2     2    11    57 |10949246
+  32 Norvio Eerika                  3k FI  YliG  33+/w0  29-/b0  22-/b0  23-/w0  37+/w0      0=      0=     2     2    11    56 |16362687
+  33 Muehl Stephanie                5k DE  Wien  32-/b0  30-/w0  23-/w0  38+/b0  36+/b0      0=      0=     2     2     8    58 |15713973
+  34 Kwan Ni-Yin                    3d HK  xxx   11-/b0  22+/w0  12-/w0  18-/b0  26-/w0      0=      0=     2     1    18    80 |15001932
+  35 Sok_Nee Fong                   1d MY  Mala  27-/w0  20-/b0  30-/b0  26-/w0  38+/w0      0=      0=     2     1    11    69 |16513508
+  36 Marconi Anna                  11k IT  Udin  31-/b0  37+/b0  25-/w0  24-/w0  33-/w0      0=      0=     1     1    11    49 |14733213
+  37 Lopes_Masetti Camila          13k BR  Braz  25-/b0  36-/w0  38+/w0  31-/w0  32-/b0      0=      0=     1     1     8    55 |16525509
+  38 Wong Sami_Sum_Yu               8k HK  Hong  24-/b0  26-/w0  37-/b0  33-/w0  35-/b0      0=      0=     0     0    11    48 |16537510

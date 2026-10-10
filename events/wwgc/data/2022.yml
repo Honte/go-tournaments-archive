@@ -1,0 +1,18 @@
+website: https://www.nihonkiin.or.jp/special/senkocup/2022/
+stages:
+  - type: tournament
+    file: senko2022.txt
+    category: senko
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true
+    collapsed: false
+    games:
+      - 1-2 1:B+14.5 round:3 sgf:2022/3-QuynhanhHa-PinyadaSornarra.sgf
+      - 2-4 2:B+36.5 round:2 sgf:2022/2-PinyadaSornarra-YanYingTan.sgf
+      - 2-7 2:B+12.5 round:1 sgf:2022/1-PinyadaSornarra-ManjaMarz.sgf
+      - 3-1 1:W+R round:2 sgf:2022/2-LitingHo-QuynhanhHa.sgf
+      - 3-6 3:B+2.5 round:1 sgf:2022/1-LitingHo-XingshuoLiu.sgf
+      - 5-1 1:W+R round:1 sgf:2022/1-MilenaBocle-QuynhanhHa.sgf

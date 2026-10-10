@@ -1,0 +1,30 @@
+; EV[4th Sotetsu Cup]
+; DT[1992-10-15,1992-10-18]
+; PC[JP, Yokohama]
+;Place  Player                        1    2    3    4    5    6    7    SOS  SODOS
+;------------------------------------------------------------------------------------------------
+   1 Yao Xiaomin                   31k CN  xxx    8+   5+   4+  11+   2+   3-   6+     6    34    28     1
+   2 Yoon Young-sun                31k KR  xxx    3+  10+   7+   5+   1-   4+   8+     6    34    28     0
+   3 Chang Kaisim                  31k TW  xxx    2-  19+  14+   6+   7+   1+   9+     6    30    24     0
+   4 Yamashita Chifumi             31k JP  xxx    6+   9+   1-  17+  11+   2-  14+     5    30    18     0
+   5 Kyriakakis Rika               31k AU  xxx    0+   1-  18+   2-   8+  10+  12+     5    27    15     0
+   6 Peng Yong_Weiwu               31k US  xxx    4-  13+  12+   3-  17+  15+   1-     4    31    14     0
+   7 Varga Veronika                31k HU  xxx   16+  12+   2-  10+   3-   9-  24+     4    29    13     0 |10425239
+   8 Choe Una                      31k KP  xxx    1-  23+  15+   9+   5-  18+   2-     4    29    12     0
+   9 Ibing Monika                  31k DE  xxx   18+   4-  20+   8-  16+   7+   3-     4    28    13     0
+  10 Malo Suzanne                  31k CA  xxx   13+   2-  23+   7-  18+   5-  15+     4    27    12     0
+  11 Jones Alison                  31k UK  xxx   14+  20+  22+   1-   4-  12-  16+     4    26    11     0 |10201081
+  12 Gruber Eleonore               31k AT  xxx   19+   7-   6-  14+  22+  11+   5-     4    25    12     0 |12350701
+  13 Coulombe Helene               31k FR  xxx   10-   6-  19+  22+  15-  21+  17+     4    22    11     0 |10562607
+  14 Grudzinska Emilia             31k PL  xxx   11-  24+   3-  12-  23+  19+   4-     3    26     7     0 |10262912
+  15 Mortensen Lone                31k DK  xxx   22-  21+   8-  23+  13+   6-  10-     3    23     9     0
+  16 Hamelius Anna                 31k SE  xxx    7-  18-  21+  20+   9-  22+  11-     3    23     8     0
+  17 Diederen Marianne             31k NL  xxx   21+  22-  25+   4-   6-  20+  13-     3    22     7     0 |10598412
+  18 Dankova Lenka                 31k CZ  xxx    9-  16+   5-  25+  10-   8-   0+     3    21     4     0 |10513063
+  19 Ibanez Adela                  31k ES  xxx   12-   3-  13-  24+   0+  14-  25+     3    20     3     0 |17313956
+  20 Niinisalo Helena              31k FI  xxx   25+  11-   9-  16-  24+  17-  22+     3    19     5     0 |10749915
+  21 Rupel Vera                    31k SI  xxx   17-  15-  16-   0+  25+  13-  23+     3    16     3     0 |10213159
+  22 Lim Sijing                    31k SG  xxx   15+  17+  11-  13-  12-  16-  20-     2    24     6     0
+  23 Kurz Valerie                  31k CH  xxx   24+   8-  10-  15-  14-   0+  21-     2    19     2     0
+  24 Georgescu Ruxandra            31k RO  xxx   23-  14-   0+  19-  20-  25+   7-     2    16     1     0
+  25 Buaya Maria                   31k PH  xxx   20-   0+  17-  18-  21-  24-  19-     1    17     0     0

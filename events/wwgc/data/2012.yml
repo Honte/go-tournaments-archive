@@ -1,0 +1,27 @@
+name: World Mind Sport Games Go Individual Women Tournament
+stages:
+  - type: tournament
+    file: wmsg2012.txt
+    category: wmsg
+    notes: Top 4 after 5 rounds played for podium places
+    scoringColumns:
+      - mms
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - mms
+      - sos
+      - sosos
+    columns:
+      - wins
+    findSharedPlaces: true
+    collapsed: false
+    games:
+      - 2-1 1:W+R round:7 sgf:2012/7-MayaOsawa-HsiaotungLin.sgf
+      - 3-2 3:B+R round:5 sgf:2012/5-JinYu-MayaOsawa.sgf
+      - 4-2 2:W+R round:6 sgf:2012/6-VanessaWong-MayaOsawa.sgf
+      - 5-2 2:W+R round:4 sgf:2012/4-IreneSha-MayaOsawa.sgf
+      - 5-6 5:B+0.5 round:3 sgf:2012/3-IreneSha-YuHuaLu.sgf
+      - 5-9 5:B+T round:1 sgf:2012/1-IreneSha-INingKo.sgf
+      - 6-16 6:B+R round:2 sgf:2012/2-YuHuaLu-AmiraSong.sgf

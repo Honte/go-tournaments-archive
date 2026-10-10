@@ -1,0 +1,30 @@
+; EV[5th Sotetsu Cup]
+; PC[JP, Yokohama]
+; DT[1994-09-29,1994-10-02]
+; sos only for top 10
+   1 Sato Akiko                    31k JP  xxx    0=   2+   4-     7    40
+   2 Kwun Hyojin                   31k KR  xxx    5+   1-   0=     7    38
+   3 Kan Ying                      31k HK  xxx    0=   0=   0=     6    42 |10450539
+   4 Chang Kaisim                  31k TW  xxx    0=   0=   1+     6    39
+   5 Liu Yajie                     31k CN  xxx    2-   0=   0=     5    42
+   6 Zhang Cathy                   31k AU  xxx    0=   0=   0=     5    39
+   7 Rapmund Antje                 31k DE  xxx    0=   0=   0=     5    34 |10498862
+   8 Chang Stella                  31k CA  xxx    0=   0=   0=     5    31 |10713186
+   9 Simunkova Martina             31k CZ  xxx    0=   0=   0=     5    31 |10298904
+  10 Simon Debbie                  31k US  xxx    0=   0=   0=     4    36 |10725187
+  11 Martinez Beatriz              31k ES  xxx    0=   0=   0=     4     7 |10998240
+  12 Varga Veronika                31k HU  xxx    0=   0=   0=     4     6 |10425239
+  13 Berreby Monique               31k FR  xxx    0=   0=   0=     4     5 |10374562
+  14 Lim Sijing                    31k SG  xxx    0=   0=   0=     4     4
+  15 Buntsma Els                   31k NL  xxx    0=   0=   0=     4     3 |10250845
+  16 Gruber Eleonore               31k AT  xxx    0=   0=   0=     4     2 |12350701
+  17 Mateescu Carmen               31k RO  xxx    0=   0=   0=     4     1 |10486465
+  18 Giardino Raffaella            31k IT  xxx    0=   0=   0=     3     5 |10301148
+  19 Cross Alison                  31k UK  xxx    0=   0=   0=     3     4 |10701746
+  20 Grudzinska Emilia             31k PL  xxx    0=   0=   0=     3     3 |10262912
+  21 Kohonen Sari                  31k FI  xxx    0=   0=   0=     3     2 |10262142
+  22 Rupel Vera                    31k SI  xxx    0=   0=   0=     3     1 |10213159
+  23 Holliger Miyoko               31k CH  xxx    0=   0=   0=     2     3 |10250812
+  24 Irgens Cecilie                31k NO  xxx    0=   0=   0=     2     2 |10574091
+  25 Benzian Yvonne                31k SE  xxx    0=   0=   0=     2     1 |18325758
+  26 Tuna Aysegul                  31k TR  xxx    0=   0=   0=     0     0

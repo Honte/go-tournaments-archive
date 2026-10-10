@@ -1,0 +1,20 @@
+name: 1st Korea Life Insurance - World Women's Amateur Baduk Championship
+stages:
+  - type: tournament
+    file: wwagc1997.txt
+    category: wwagc
+    notes: top 4 after 6 rounds played knockout for podium places
+    scoringColumns:
+      - wins
+      - null
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: true
+    collapsed: false
+    games:
+      - 1-2 1:B+R round:8 sgf:1997/8-InKyoDo-YananHai.sgf
+      - 3-4 3:B+R round:8 sgf:1997/8-SvetlanaShikshina-DianaKoszegi.sgf

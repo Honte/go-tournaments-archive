@@ -1,0 +1,11 @@
+; EV[Senko Cup Amateur]
+; PC[JP, Tokyo]
+; DT[2025-03-14,2025-03-14]
+   1 Pocsai Rita                    5d HU  Orig   5+   3+   2+     3 |10686346
+   2 Sum Dawn                       4d SG  xxxx   7+   4+   1-     2
+   3 Marz Manja                     4d DE  JIGS   6+   1-   0=     1 |13062412
+   4 Malko Olesia                   4d UA  Rivn   8+   2-   0=     1 |17874241
+   5 Sutheerat Paramita             4d TH  xxxx   1-   0=   0=     0 |20849851
+   6 Wang Seowoo                    5d US  xxxx   3-   0=   0=     0 |20437307
+   7 Song Amy_Yimei                 5d AU  xxxx   2-   0=   0=     0 |17937678
+   8 Tan Yan_Ying                   3d MY  xxxx   4-   0=   0=     0 |19362563

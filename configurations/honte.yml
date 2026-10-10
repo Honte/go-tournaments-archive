@@ -23,6 +23,8 @@ events:
         external: true
         prefix: kpmc
         domain: https://kpmc.go.art.pl
+      - id: wwgc
+        prefix: world-women
   - title:
       en: European Championships
       pl: Mistrzostwa Europy

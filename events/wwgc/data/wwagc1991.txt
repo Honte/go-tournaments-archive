@@ -1,0 +1,28 @@
+; EV[3rd Sotetsu Cup]
+; PC[JP, Yokohama]
+; DT[1991-10-15,1991-10-18]
+; UK won vs YU & SE
+   1 Sato Akiko                    31k JP  xxx 2+     7
+   2 Kan Ying                      31k HK  xxx 1-     6 |10450539
+   3 Fang Fang                     31k CN  xxx 0=     5 |18425594
+   4 Kim Haesun                    31k KR  xxx 0=     5
+   5 Phease Yucong                 31k NZ  xxx 0=     5 |15098908
+   6 Chaine Marie-Claire           31k FR  xxx 0=     4 |10350923
+   7 Guskova Irina                 31k SU  xxx 0=     4 |10562079
+   8 Li Yunok                      31k KP  xxx 0=     4
+   9 Rapmund Antje                 31k DE  xxx 0=     4 |10498862
+  10 Koenig Katarzyna              31k PL  xxx 0=     4 |10449890
+  11 Phipps Joanne                 31k US  xxx 0=     4 |10901418
+  12 Lita Carmen                   31k RO  xxx 0=     4
+  13 Miskolczi Szonja              31k HU  xxx 0=     3 |12501038
+  14 Boelens Anne                  31k NL  xxx 0=     3 |17274246
+  15 Trevithick Jan                31k AU  xxx 0=     3
+  16 Hricova Jana                  31k CZ  xxx 0=     3 |10233509
+  17 Rodriguez Marisa              31k ES  xxx 0=     3
+  18 Roos Eva                      31k CH  xxx 0=     3 |14686584
+  19 Seng Guekbeng                 31k SG  xxx 0=     2
+  20 Andersson Kerstin             31k SE  xxx 0=     2 |10733195
+  21 Hagen Lisbeth                 31k DK  xxx 0=     2 |12825692
+  22 Healey Kirsty                 31k UK  xxx 0=     2 |10698809
+  23 Rupel Vera                    31k YU  xxx 0=     1 |10213159
+  24 Baird Lynne                   31k CA  xxx 0=     1

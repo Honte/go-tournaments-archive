@@ -1,0 +1,34 @@
+; TC[W961213]
+; DT[1996-12-13,1996-12-15]
+; CL[A]
+; EV[6th Sotetsu Cup]
+; PC[JP, Yokohama]
+; KM[5.5]
+; TM[0]
+; HA[h9]
+;                    Sotetsu Cup (WWAGC) 1996, Yokohama (JP)
+;                           December 13 - 15, 1996
+;
+;Pl     Name             Grade  Club   MM S SOS SSOS  1.   2.   3.   4.   5.   6.
+  1 Wang Yiqing             5d CN xxx   6 6  22 125  11+   9+   3+  16+   2+   4+   |12398694
+  2 Ri Se-og                5d KP xxx   5 5  24 119  13+   7+   9+   4+   1-   5+   |12333695
+  3 Cho Hye-yeon            5d KR xxx   5 5  21 110  22+  10+   1-   7+   6+  12+   |12313697
+  4 Nakamura Taiko          5d JP xxx   4 4  23 119  17+   5+   6+   2-  15+   1-   |12325698
+  5 Gruber Eleonore         2d AT xxx   4 4  19 120  19+   4-  17+  10+   8+   2-   |12350701
+  6 Lee Yu-Hsuan            3d TW xxx   4 4  19 111  15+   8+   4-  20+   3-  14+   |12362702
+  7 Kalisch Sylvia          2d DE HH  4 4  18 114  14+   2-  20+   3-  19+  10+   |10386706
+  8 Siyi Gan                3d SG Sin   4 4  18 109  16+   6-  12+  11+   5-  17+   |10933417
+  9 Schwabe Judy            3d US xxx   3 3  21 110  12+   1-   2-  18+  14-  15+   |12374703
+ 10 Frehe Renee             1d NL Nijm  3 3  21 104  18+   3-  13+   5-  11+   7-   |10313248
+ 11 Tarina Corina           1d RO Bucu  3 3  18 107   1-  19+  14+   8-  10-  21+   |10474860
+ 12 Burvenich Claude        1d BE Lil   3 3  18 107   9-  21+   8-  13+  16+   3-   |10301786
+ 13 Niinisalo Helena        3k FI Hels  3 3  16 112   2-  15+  10-  12-  21+  16+   |10749915
+ 14 Kain Mai-Sai            1d HK HK    3 3  16 108   7-  20+  11-  19+   9+   6-   |12386704
+ 15 Prokopova Iva           1d CZ Pra   2 2  18 108   6-  13-  18+  17+   4-   9-   |10286705
+ 16 Hernaus Vida            4k SI Kra   2 2  18  99   8-  22+  21+   1-  12-  13-   |10613460
+ 17 Tombarello Anne         2k FR 30Ni  2 2  17 105   4-  18+   5-  15-  20+   8-   |10362572
+ 18 Paterson Sue            2k UK Lndn  2 2  12 106  10-  17-  15-   9-  22+  19+   |10201158
+ 19 Brazzoli Sonia          6k IT Mila  1 1  17  95   5-  11-  22+  14-   7-  18-   |10425932
+ 20 Koca Basak              4k TR xxx   1 1  15  95  21+  14-   7-   6-  17-  22-   |12398705
+ 21 Nguyen Tracy            3k AU xxx   1 1  13  97  20-  12-  16-  22+  13-  11-   |10798194
+ 22 Chang Isabel            3k CA xxx   1 1  12  96   3-  16-  19-  21-  18-  20+   |12333706

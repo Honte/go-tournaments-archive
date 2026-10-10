@@ -1,0 +1,19 @@
+website: https://www.nihonkiin.or.jp/special/senkocup/2023/
+stages:
+  - type: tournament
+    file: senko2023.txt
+    category: senko
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true
+    collapsed: false
+    games:
+      - 1-4 1:B+R round:2 sgf:2023/2-AmyYimeiSong-JianiLu.sgf
+      - 1-8 1:B+R round:1 sgf:2023/1-AmyYimeiSong-GabrielaSu.sgf
+      - 2-1 1:W+18.5 round:3 sgf:2023/3-ManjaMarz-AmyYimeiSong.sgf
+      - 2-3 2:B+R round:2 sgf:2023/2-ManjaMarz-LauraAvram.sgf
+      - 2-6 2:B+R round:1 sgf:2023/1-ManjaMarz-QingYong.sgf
+      - 5-3 3:W+2.5 round:1 sgf:2023/1-NathanichChantharojwong-LauraAvram.sgf
+      - 7-4 4:W+17.5 round:1 sgf:2023/1-NgocTrangCao-JianiLu.sgf

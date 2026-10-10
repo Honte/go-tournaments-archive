@@ -1,0 +1,38 @@
+; EV[Ukai Cup]
+; PC[JP, Online]
+; DT[2020-11-28,2020-12-20]
+;https://www.nihonkiin.or.jp/event/amakisen/worldjoryuama/01/index.html
+;https://go.org.nz/index.php/events/tournaments/262-ukai-cup
+   1 Yan Yuying                     6d CN  xxx    0=   0=   0=   7+   4+   2+     1     3
+   2 Kim Jisu                       5d KR  xxx    0=   0=   0=   6+   3+   1-     2     2 |18998045
+   3 Fujiwara Akiko                 6d JP  xxx    0=   0=   0=   5+   2-   0=     3     1
+   4 Wu Wen-Ting                    7d TW  xxx    0=   0=   0=   8+   1-   0=     3     1 |16501507
+   5 Zhu Lin                        4d CA  xxx    0=  20+   9+   3-   0=   0=     5     2
+   6 Burdakova Dina                 5d RU  xxx    0=  18+  10+   2-   0=   0=     5     2 |10813187
+   7 Song Amy_Yimei                 5d AU  xxx   21+  13+  11+   1-   0=   0=     5     3 |17937678
+   8 Marz Manja                     4d DE  xxx   26+  15+  12+   4-   0=   0=     5     3 |13062412
+   9 Medak Mirta                    2d HR  xxx   27+  16+   5-   0=   0=   0=     9     2 |16525718
+  10 Phease Yucong                  2d NZ  xxx   24+  14+   6-   0=   0=   0=     9     2 |15098908
+  11 Avram Laura                    2d RO  xxx   29+  17+   7-   0=   0=   0=     9     2 |12698620
+  12 Wang Yinli                     6d US  xxx    0=  19+   8-   0=   0=   0=     9     1 |15033920
+  13 Lee Lok_Yi                     5d HK  xxx   22+   7-   0=   0=   0=   0=    13     1 |15086907
+  14 Chang Xin                      1d MY  xxx   23+  10-   0=   0=   0=   0=    13     1 |17374368
+  15 Lisa Sona                      2k SK  xxx   25+   8-   0=   0=   0=   0=    13     1 |16037604
+  16 Bexfield Alison                1k UK  xxx   28+   9-   0=   0=   0=   0=    13     1 |10201081
+  17 Chankin Vered                  1k IL  xxx   30+  11-   0=   0=   0=   0=    13     1 |15937482
+  18 Bocle Milena                   2d FR  xxx   31+   6-   0=   0=   0=   0=    13     1 |14362018
+  19 Zavala Lilian                  5k MX  xxx   32+  12-   0=   0=   0=   0=    13     1
+  20 Solis Tatiana                 10k CO  xxx   33+   5-   0=   0=   0=   0=    13     1
+  21 Sum Dawn                       3d SG  xxx    7-   0=   0=   0=   0=   0=    21     0
+  22 Munkh-Erdene Uuganbat          1d MN  xxx   13-   0=   0=   0=   0=   0=    21     0 |15062927
+  23 Abat Celeste                   5k PH  xxx   14-   0=   0=   0=   0=   0=    21     0 |16913589
+  24 Phanthasen Sawaree             3d TH  xxx   10-   0=   0=   0=   0=   0=    21     0 |19601538
+  25 Ilkevich Anastasiya            5k BY  xxx   15-   0=   0=   0=   0=   0=    21     0 |17974682
+  26 Bjerke Michelle                3k NO  xxx    8-   0=   0=   0=   0=   0=    21     0 |15298107
+  27 Kadlecova Alzbeta              1k CZ  xxx    9-   0=   0=   0=   0=   0=    21     0 |15425091
+  28 Symonenko Viktoriia            6k UA  xxx   16-   0=   0=   0=   0=   0=    21     0 |14733631
+  29 Malinic Natasa                 2k BA  xxx   11-   0=   0=   0=   0=   0=    21     0 |16213384
+  30 Rovio Suvi                     2d FI  xxx   17-   0=   0=   0=   0=   0=    21     0 |12998821
+  31 Nguyen Hoa                     3k LU  xxx   18-   0=   0=   0=   0=   0=    21     0 |14013208
+  32 Murai Mieko                   11k BR  xxx   19-   0=   0=   0=   0=   0=    21     0 |15998092
+  33 Barredos Valeria               9k CL  xxx   20-   0=   0=   0=   0=   0=    21     0

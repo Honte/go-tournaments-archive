@@ -6,7 +6,7 @@ import { buildLocalGameId, type H9Player, parseH9 } from '@/libs/h9';
 import type { EventPlayer } from '@/data/eventPlayers';
 import { GAME_REGEX } from '@/data/games';
 import { buildSgfEntryString, type SgfMatchResult } from './entries';
-import { lookupPlayerId, type PlayerLookupMap, registerLookupEntry, resolveSgfLookup } from './lookup';
+import { type PlayerLookupMap, registerLookupEntry, resolveSgfLookup } from './lookup';
 import {
   buildCommonUnmatchedReasons,
   findDuplicateKeys,
@@ -419,9 +419,8 @@ function resolveLocalId(
   playersMap: ImplicitLookup,
   h9gamesMap: Map<string, H9GameRecord>
 ): string | null {
-  const places =
-    resolveLocalIdPlaces(playersMap, sgf.sgfBlackName, sgf.sgfWhiteName) ??
-    resolveLocalIdPlaces(playersMap, sgf.filenameBlackName, sgf.filenameWhiteName);
+  const result = resolveSgfLookup(sgf, playersMap);
+  const places = result.black !== null && result.white !== null ? [result.black, result.white] : null;
 
   if (!places) {
     return null;
@@ -446,17 +445,6 @@ function resolveLocalId(
   }
 
   return null;
-}
-
-function resolveLocalIdPlaces(
-  playersMap: ImplicitLookup,
-  blackName: string | null,
-  whiteName: string | null
-): [blackPlace: number, whitePlace: number] | null {
-  const blackPlace = lookupPlayerId(playersMap, blackName);
-  const whitePlace = lookupPlayerId(playersMap, whiteName);
-
-  return blackPlace !== null && whitePlace !== null ? [blackPlace, whitePlace] : null;
 }
 
 function findEventPlayer(player: H9Player, eventPlayers: EventPlayer[]): EventPlayer | undefined {

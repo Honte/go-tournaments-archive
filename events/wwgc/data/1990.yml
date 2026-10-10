@@ -1,0 +1,17 @@
+stages:
+  - type: tournament
+    file: wwagc1990.txt
+    category: wwagc
+    notes: No results available. 22 players took part.
+    scoringColumns:
+      - place
+      - wins
+    breakers:
+      - place
+    columns:
+      - wins
+    findSharedPlaces: true
+    collapsed: false
+    games:
+      - 1-2 1:B+0.5 round:1 sgf:1990/5-YingKan-ChihyungNam.sgf
+      - 3-1 3:B+R round:2 sgf:1990/7-AkikoSato-YingKan.sgf
