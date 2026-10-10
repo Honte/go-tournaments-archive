@@ -50,10 +50,31 @@ function getCommaName(name: string): string | null {
 }
 
 export function resolveSgfLookup<T>(sgf: SgfInfo, playerLookup: PlayerLookupMap<T>): PlayerLookupResult<T> {
+  const metadataBlack = sgf.sgfBlackName ? playerLookup.get(normalizePlayerName(sgf.sgfBlackName)) : null;
+  const metadataWhite = sgf.sgfWhiteName ? playerLookup.get(normalizePlayerName(sgf.sgfWhiteName)) : null;
+  const filenameBlack = sgf.filenameBlackName ? playerLookup.get(normalizePlayerName(sgf.filenameBlackName)) : null;
+  const filenameWhite = sgf.filenameWhiteName ? playerLookup.get(normalizePlayerName(sgf.filenameWhiteName)) : null;
+  const reversed =
+    (metadataBlack != null &&
+      metadataBlack === filenameWhite &&
+      lookupPlayerId(playerLookup, sgf.sgfWhiteName) === filenameBlack) ||
+    (metadataWhite != null &&
+      metadataWhite === filenameBlack &&
+      lookupPlayerId(playerLookup, sgf.sgfBlackName) === filenameWhite);
+
   return {
-    black: lookupPlayerId(playerLookup, sgf.sgfBlackName) ?? lookupPlayerId(playerLookup, sgf.filenameBlackName),
-    white: lookupPlayerId(playerLookup, sgf.sgfWhiteName) ?? lookupPlayerId(playerLookup, sgf.filenameWhiteName),
+    black: lookupSgfPlayerId(playerLookup, sgf.sgfBlackName, reversed ? sgf.filenameWhiteName : sgf.filenameBlackName),
+    white: lookupSgfPlayerId(playerLookup, sgf.sgfWhiteName, reversed ? sgf.filenameBlackName : sgf.filenameWhiteName),
   };
+}
+
+function lookupSgfPlayerId<T>(lookup: PlayerLookupMap<T>, metadata: string | null, filename: string | null): T | null {
+  return (
+    (metadata ? lookup.get(normalizePlayerName(metadata)) : null) ??
+    (filename ? lookup.get(normalizePlayerName(filename)) : null) ??
+    lookupPlayerId(lookup, metadata) ??
+    lookupPlayerId(lookup, filename)
+  );
 }
 
 export function resolvePlayersLookup<T>(

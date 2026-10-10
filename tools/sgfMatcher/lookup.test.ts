@@ -1,9 +1,46 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { lookupPlayerId, registerLookupEntry, type PlayerLookupMap } from './lookup';
+import { lookupPlayerId, registerLookupEntry, resolveSgfLookup, type PlayerLookupMap } from './lookup';
+import { extractSgfInfo } from './sgf';
 import { normalizePlayerName } from './utils';
 
 describe('player lookup', () => {
+  it('prefers an exact filename name over a partial SGF metadata name', () => {
+    const lookup: PlayerLookupMap<number> = new Map();
+
+    registerLookupEntry(lookup, 'Yi Min-chin', 2);
+    registerLookupEntry(lookup, 'Min-chin Yi', 2);
+    registerLookupEntry(lookup, 'Lee', 28);
+    registerLookupEntry(lookup, 'Song Ronghui', 1);
+
+    const sgf = extractSgfInfo('(;PB[Song Ronghui]PW[Lee Min Jin])', '2008/10-RonghuiSong-MinchinYi.sgf');
+
+    assert.equal(lookupPlayerId(lookup, 'Lee Min Jin'), 28);
+    assert.deepEqual(resolveSgfLookup(sgf, lookup), { black: 1, white: 2 });
+  });
+
+  it('matches surnames with optional hyphens and underscores in filenames and SGF names', () => {
+    const lookup: PlayerLookupMap<string> = new Map();
+
+    registerLookupEntry(lookup, 'Test Alpha-Beta', 'ta');
+    registerLookupEntry(lookup, 'Sample Gamma_Delta', 'sg');
+
+    const filenameOnly = extractSgfInfo('(;)', '2025/1-TestAlphaBeta-SampleGammaDelta.sgf');
+    const metadata = extractSgfInfo('(;PB[Test Alpha_Beta]PW[Sample Gamma-Delta])', 'unknown.sgf');
+
+    assert.deepEqual(resolveSgfLookup(filenameOnly, lookup), { black: 'ta', white: 'sg' });
+    assert.deepEqual(resolveSgfLookup(metadata, lookup), { black: 'ta', white: 'sg' });
+  });
+
+  it('keeps surnames ambiguous when removing separators makes them identical', () => {
+    const lookup: PlayerLookupMap<string> = new Map();
+
+    registerLookupEntry(lookup, 'Alpha-Beta', 'a', false);
+    registerLookupEntry(lookup, 'AlphaBeta', 'b', false);
+
+    assert.equal(lookupPlayerId(lookup, 'Alpha_Beta'), null);
+  });
+
   it('adds a comma-form candidate for multi-part player names', () => {
     const lookup: PlayerLookupMap<string> = new Map();
 

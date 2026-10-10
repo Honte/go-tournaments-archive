@@ -20,20 +20,28 @@ stages:
     findSharedPlaces: true
     collapsed: false
     games:
+      - 1-2 1:B+R round:10 sgf:2008/10-RonghuiSong-MinchinYi.sgf
       - 1-3 1:B+2.5 round:9 sgf:2008/9-RonghuiSong-ChieunPak.sgf
+      - 1-12 1:B+2.5 round:2 sgf:2008/2-RonghuiSong-SeulaYi.sgf
+      - 2-17 2:B+R round:6 sgf:2008/6-MinchinYi-JinaRo.sgf
+      - 2-49 2:B+R round:2 sgf:2008/2-MinchinYi-CamilleNguyen.sgf
       - 3-8 3:B+R round:8 sgf:2008/8-ChieunPak-JoanneMissingham.sgf
       - 3-10 3:B+0.5 round:3 sgf:2008/3-ChieunPak-JingYiWang.sgf
       - 4-1 1:W+3.5 round:3 sgf:2008/3-KanaMannami-RonghuiSong.sgf
+      - 4-2 2:W+R round:9 sgf:2008/9-KanaMannami-MinchinYi.sgf
       - 4-3 3:W+R round:10 sgf:2008/10-KanaMannami-ChieunPak.sgf
       - 5-4 4:W+7.5 round:8 sgf:2008/8-YouyinCao-KanaMannami.sgf
       - 5-8 5:B+R round:5 sgf:2008/5-YouyinCao-JoanneMissingham.sgf
       - 6-1 1:W+R round:8 sgf:2008/8-AkikoTsukuda-RonghuiSong.sgf
+      - 6-2 2:W+6.5 round:4 sgf:2008/4-AkikoTsukuda-MinchinYi.sgf
       - 6-11 6:B+R round:7 sgf:2008/7-AkikoTsukuda-XueHuiZhang.sgf
+      - 7-2 2:W+R round:8 sgf:2008/8-NaiweiRui-MinchinYi.sgf
       - 7-3 3:W+2.5 round:5 sgf:2008/5-NaiweiRui-ChieunPak.sgf
       - 7-10 7:B+R round:7 sgf:2008/7-NaiweiRui-JingYiWang.sgf
       - 7-52 7:B+R round:1 sgf:2008/1-NaiweiRui-IsabelleBrillant.sgf
       - 8-33 8:B+R round:2 sgf:2008/2-JoanneMissingham-JieLiXia.sgf
       - 9-5 5:W+R round:6 sgf:2008/6-RitaPocsai-YouyinCao.sgf
+      - 12-51 12:B+R round:1 sgf:2008/1-SeulaYi-DanielaSaban.sgf
       - 13-10 10:W+R round:6 sgf:2008/6-KyongjuHwang-JingYiWang.sgf
       - 14-39 14:B+R round:1 sgf:2008/1-XiaorenHe-BarbaraKnauf.sgf
       - 17-6 6:W+R round:3 sgf:2008/3-JinaRo-AkikoTsukuda.sgf
@@ -43,12 +51,3 @@ stages:
       - 27-7 7:W+R round:6 sgf:2008/6-YukariUmezawa-NaiweiRui.sgf
       - 32-8 8:W+R round:7 sgf:2008/7-MonikaReimpell-JoanneMissingham.sgf
       - 55-27 27:W+R round:1 sgf:2008/1-TungalagRavjir-YukariUmezawa.sgf
-    unmatchedSgfs:
-      - 1-28 1:B+2.5 round:2 sgf:2008/2-RonghuiSong-SeulaYi.sgf # no matching game
-      - 1-28 1:B+R round:10 sgf:2008/10-RonghuiSong-MinchinYi.sgf # no matching game
-      - 4-28 28:W+R round:9 sgf:2008/9-KanaMannami-MinchinYi.sgf # no matching game
-      - 6-28 28:W+6.5 round:4 sgf:2008/4-AkikoTsukuda-MinchinYi.sgf # no matching game
-      - 7-28 28:W+R round:8 sgf:2008/8-NaiweiRui-MinchinYi.sgf # no matching game
-      - 28-17 28:B+R round:6 sgf:2008/6-MinchinYi-JinaRo.sgf # no matching game
-      - 28-49 28:B+R round:2 sgf:2008/2-MinchinYi-CamilleNguyen.sgf # no matching game
-      - 28-51 28:B+R round:1 sgf:2008/1-SeulaYi-DanielaSaban.sgf # no matching game
