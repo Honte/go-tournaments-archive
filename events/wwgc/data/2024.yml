@@ -1,0 +1,21 @@
+website:
+  - https://www.nihonkiin.or.jp/special/senkocup/2024/
+  - https://www.eurogofed.org/hello-tokyo-the-2024-senko-cup-world-go-womens-championship/
+stages:
+  - type: tournament
+    file: senko2024.txt
+    category: senko
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true
+    collapsed: false
+    games:
+      - 1-2 1:B+13.5 round:3 sgf:2024/3-QuynhanhHa-XinyuanWu.sgf
+      - 1-3 1:B+R round:2 sgf:2024/2-QuynhanhHa-SeowooWang.sgf
+      - 1-5 1:B+R round:1 sgf:2024/1-QuynhanhHa-BarbaraKnauf.sgf
+      - 3-6 3:B+R round:1 sgf:2024/1-SeowooWang-QingYong.sgf
+      - 4-2 2:W+15.5 round:2 sgf:2024/2-PinyadaSornarra-XinyuanWu.sgf
+      - 4-7 4:B+R round:1 sgf:2024/1-PinyadaSornarra-MilenaBocle.sgf
+      - 8-2 2:W+31.5 round:1 sgf:2024/1-DitaVasova-XinyuanWu.sgf

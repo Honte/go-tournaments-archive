@@ -1,0 +1,15 @@
+stages:
+  - type: tournament
+    file: wwagc1989.txt
+    category: wwagc
+    notes: No results available.
+    scoringColumns:
+      - wins
+      - sos
+    breakers:
+      - wins
+      - sos
+    findSharedPlaces: true
+    collapsed: false
+    games:
+      - 2-1 1:W+6.5 round:1 sgf:1989/4-YingKan-LixianAo.sgf

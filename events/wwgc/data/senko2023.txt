@@ -1,0 +1,11 @@
+; EV[Senko Cup Amateur]
+; DT[2023-03-03,2023-03-03]
+; PC[JP, Tokyo]
+   1 Song Amy_Yimei                 5d AU  xxxx   8+   4+   2+     3 |17937678
+   2 Marz Manja                     3d DE  JIGS   6+   3+   1-     2 |13062412
+   3 Avram Laura                    3d RO  Cluj   5+   2-   0=     1 |12698620
+   4 Lu Jiani                       3d SG  xxxx   7+   1-   0=     1
+   5 Chantharojwong Nathanich       4d TH  xxxx   3-   0=   0=     0
+   6 Yong Qing                      4d MY  xxxx   2-   0=   0=     0
+   7 Cao Ngoc-Trang                 2d FR  67SE   4-   0=   0=     0 |14586693
+   8 Su Gabriella                   6d US  xxxx   1-   0=   0=     0 |16574536

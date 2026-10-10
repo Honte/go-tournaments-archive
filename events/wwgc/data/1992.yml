@@ -1,0 +1,18 @@
+stages:
+  - type: tournament
+    file: wwagc1992.txt
+    category: wwagc
+    scoringColumns:
+      - wins
+      - sos
+      - sodos
+      - direct
+    breakers:
+      - wins
+      - sos
+      - sodos
+      - direct
+    findSharedPlaces: true
+    collapsed: false
+    games:
+      - 2-1 1:W+2.5 round:5 sgf:1992/5-YoungsunYoon-XiaominYao.sgf

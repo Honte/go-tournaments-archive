@@ -1,0 +1,17 @@
+stages:
+  - type: tournament
+    file: wwagc1994.txt
+    category: wwagc
+    notes: No results available. SOS only for top 10 players.
+    scoringColumns:
+      - wins
+      - sos
+    breakers:
+      - wins
+      - sos
+    findSharedPlaces: false
+    collapsed: false
+    games:
+      - 1-2 1:B+R round:2 sgf:1994/5-AkikoSato-HyojinKwun.sgf
+      - 1-4 4:W+R round:3 sgf:1994/8-AkikoSato-KaisimChang.sgf
+      - 2-5 2:B+R round:1 sgf:1994/3-HyojinKwun-YajieLiu.sgf

@@ -1,0 +1,11 @@
+; EV[Senko Cup Amateur]
+; DT[2026-03-13,2026-03-13]
+; PC[JP, Tokyo]
+   1 Marz Manja                     4d DE  JIGS   5+   3+   2+ 3 |13062412
+   2 Sornarra Pinyada               4d TH  xxxx   8+   4+   1- 2
+   3 Song Amy_Yimei                 5d AU  xxxx   6+   1-   0= 1 |17937678
+   4 Ha Quynh_anh                   6d VN  xxxx   7+   2-   0= 1 |20474421
+   5 Yong Qing                      4d MY  xxxx   1-   0=   0= 0
+   6 Malko Olesia                   4d UA  Rivn   3-   0=   0= 0 |17874241
+   7 Cao Ngoc-Trang                 3d FR  67SE   4-   0=   0= 0 |14586693
+   8 Wang Seowoo                    5d US  xxxx   2-   0=   0= 0 |20437307

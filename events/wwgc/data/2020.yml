@@ -1,0 +1,20 @@
+website: https://www.nihonkiin.or.jp/event/amakisen/worldjoryuama/01/index.html
+name: Ukai Cup World Women's Amateur Go Championship
+stages:
+  - type: tournament
+    file: ukai2020.txt
+    category: ukai
+    scoringColumns:
+      - place
+      - wins
+    breakers:
+      - place
+    columns:
+      - wins
+    findSharedPlaces: true
+    collapsed: false
+    games:
+      - 5-9 5:B+R round:3 sgf:2020/3-LinZhu-MirtaMedak.sgf
+      - 6-10 6:B+R round:3 sgf:2020/3-DinaBurdakova-YucongPhease.sgf
+      - 8-12 8:B+10.5 round:3 sgf:2020/3-ManjaMarz-YinliWang.sgf
+      - 11-7 7:W+R round:3 sgf:2020/3-LauraAvram-AmyYimeiSong.sgf

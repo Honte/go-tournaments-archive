@@ -1,0 +1,14 @@
+website: https://www.nihonkiin.or.jp/special/senkocup/2021/
+stages:
+  - type: tournament
+    file: senko2021.txt
+    category: senko
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true
+    collapsed: false
+    games:
+      - 4-2 2:W+R round:2 sgf:2021/2-MilenaBocle-PinyadaSornarra.sgf
+      - 8-4 4:W+18.5 round:1 sgf:2021/1-DawnSum-MilenaBocle.sgf

@@ -1,0 +1,31 @@
+{
+  "site": {
+    "name": "World Women's Go Tournaments Archive",
+    "eventName": "World Women's Go Tournaments",
+    "acronym": "WWGC",
+    "description": "Archive of all World Women's Go Tournaments",
+    "yearDescription": "Results of WWGC %{0}",
+    "allTimeStatsDescription": "All-time statistics of all World Women's Go Tournaments participants",
+    "playerStatsDescription": "Participation statistics of %{0} in all World Women's Go Tournaments"
+  },
+  "details": {
+    "goToWebsite": "Go to WWGC %{0} website"
+  },
+  "winners": {
+    "first": "Women Champion"
+  },
+  "categories": {
+    "full": {
+      "senko": "Senko Cup Amateur",
+      "ukai": "Ukai Cup",
+      "wmsg": "WMSG Women Individual",
+      "wwagc": "World Women's Amateur Go Championship"
+    },
+    "short": {
+      "senko": "Senko",
+      "ukai": "Ukai",
+      "wmsg": "WMSG",
+      "wwagc": "WWAGC"
+    }
+  }
+}
