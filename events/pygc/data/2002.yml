@@ -1,7 +1,8 @@
+website: https://archiwum.go.art.pl/osrodki/02mpj.php
 stages:
   - type: tournament
     file: mpj2002.txt
-    komi: 5.5  
+    komi: 5.5
     scoringColumns:
       - mms
       - wins
