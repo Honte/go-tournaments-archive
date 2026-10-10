@@ -1,205 +1,135 @@
-(;
-GM[1]
-FF[4]
-CA[UTF-8]
-AP[CGoban:2]
-ST[2]
-SZ[19]
-RU[Japanese]
-KM[6.50]
-TM[5400]
-OT[1x60 byo-yomi]
-EV[Finał Mistrzorzstw Polski 2003]
-PC[Szklary Górne (Chocianów)]
-DT[2003-11-9]
-RO[4]
-
-PW[Aleksandra Lubos]WR[3d]
-PB[Janusz Kraszek]BR[5d]
-RE[B+Resign]
-
-;B[pd]
-;W[dp]
-;B[pq]
-;W[dd]
-;B[fq]
-;W[cn]
-;B[jp]
-;W[qn]
-;B[qp]
-;W[qk]
-;B[rq]
-;W[on]
-;B[mp]
-;W[jd]
-;B[lc]
-;W[le]
-;B[nc]
-;W[kc]
-;B[ld]
-;W[ke]
-;B[cf]
-;W[ch]
-;B[fd]
-;W[ee]
-;B[fe]
-;W[ef]
-;B[ff]
-;W[ce]
-;B[jf]
-;W[lg]
-;B[pq]
-;W[li]
-;B[cc]
-;W[dc]
-;B[be]
-;W[cd]
-;B[eg]
-;W[dg]
-;B[eh]
-;W[qf]
-;B[pf]
-;W[pg]
-;B[qg]
-;W[pe]
-;B[of]
-;W[oe]
-;B[qe]
-;W[qd]
-;B[rf]
-;W[re]
-;B[qf]
-;W[od]
-;B[pc]
-;W[oc]
-;B[ob]
-;W[pb]
-;B[qc]
-;W[qb]
-;B[rc]
-;W[nb]
-;B[ne]
-;W[oa]
-;B[nd]
-;W[ob]
-;B[mf]
-;W[rb]
-;B[sb]
-;W[lb]
-;B[lf]
-;W[kf]
-;B[kg]
-;W[je]
-;B[if]
-;W[cj]
-;B[bd]
-;W[bc]
-;B[fb]
-;W[cb]
-;B[kb]
-;W[mb]
-;B[ok]
-;W[mn]
-;B[pl]
-;W[np]
-;B[nq]
-;W[op]
-;B[oq]
-;W[mo]
-;B[lp]
-;W[mk]
-;B[kj]
-;W[oj]
-;B[ql]
-;W[nk]
-;B[pj]
-;W[jb]
-;B[fo]
-;W[jn]
-;B[cl]
-;W[er]
-;B[fr]
-;W[em]
-;B[dk]
-;W[ip]
-;B[iq]
-;W[jq]
-;B[kq]
-;W[hq]
-;B[jr]
-;W[eq]
-;B[io]
-;W[dj]
-;B[fk]
-;W[ej]
-;B[fm]
-;W[fj]
-;B[gk]
-;W[rp]
-;B[rq]
-;W[kk]
-;B[jk]
-;W[ol]
-;B[pk]
-;W[kl]
-;B[lj]
-;W[mj]
-;B[om]
-;W[nl]
-;B[dn]
-;W[co]
-;B[cm]
-;W[fs]
-;B[gs]
-;W[es]
-;B[gr]
-;W[jl]
-;B[ik]
-;W[qo]
-;B[do]
-;W[cq]
-;B[pm]
-;W[nm]
-;B[ic]
-;W[id]
-;B[jc]
-;W[kd]
-;B[hd]
-;W[ka]
-;B[hc]
-;W[pp]CR[pp]
-;B[qq]
-;W[rm]
-;B[rl]
-;W[in]
-;B[mi]
-;W[ni]
-;B[mh]
-;W[nh]
-;B[ng]
-;W[ho]
-;B[hp]
-;W[gn]
-;B[go]
-;W[hn]
-;B[bp]
-;W[cp]
-;B[ep]
-;W[fn]
-;B[dm]
-;W[en]
-;B[bq]
-;W[br]
-;B[cr]
-;W[dr]
-;B[bn]
-;W[bo]
-;B[ao]
-;W[cs]
-;B[bl]
-;W[aq]
-;B[df]
-;W[cg]
-;B[aj]
-;W[bf]
-;B[gh])
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]C[redgda [13k\]\: czesc
+marcinkam [1d\]\: komentarz\: Ola Lubos, Janusz Kraszek, Jan Lubos
+]
+AP[CGoban:2]SZ[19]GM[1]EV[Finał Mistrzostw Polski 2003]RO[4]DT[2003-11-09]PC[Szklary Górne]
+PB[Janusz Kraszek]BR[5d]PW[Aleksandra Lubos]WR[3d]KM[0]MULTIGOGM[1]
+;B[pd]C[buuu123 [12k\]\: marcin, czy mógłbyś zapisywać te gry w swojej liście? Sporo ludzi potem o nie pyta...
+marcinkam [1d\]\: ok, bede mial zapis
+]
+;W[dp];B[pq];W[dd];B[fq]
+(;W[cn]C[buuu123 [12k\]\: aha
+];B[jp];W[qn]
+(;B[qp];W[qk]C[buuu123 [12k\]\: Ola znów wygra?
+marcinkam [1d\]\: JLubos\: pierwsze cztery czarne kamienie to zaproszenie do tzw. Kobayashi fuseki
+Parn19 [11k?\]\: a czy te ktorych nie prezentujesz bedzie mozna skads potem sciagnac zeby sobie obejrzec?
+marcinkam [1d\]\: jesli bialy nie chce, na f3 powinien grac q5
+buuu123 [12k\]\: ten ruch nie jest dziwny?
+]
+(;B[rq];W[on]C[kouryou [10k\]\: czyja to gra jesli moge spytac ?
+buuu123 [12k\]\: s3?
+]
+;B[mp];W[jd];B[lc];W[le];B[nc];W[kc];B[ld];W[ke];B[cf];W[ch];B[fd];W[ee];B[fe];W[ef]
+;B[ff];W[ce];B[jf];W[lg];W[li];B[cc];W[dc];B[be];W[cd];B[eg];W[dg];B[eh];W[qf];B[pf]
+;W[pg];B[qg];W[pe];B[of];W[oe];B[qe];W[qd];B[rf];W[re];B[qf];W[od];B[pc];W[oc];B[ob]
+;W[pb];B[qc];W[qb];B[rc];W[nb];B[ne];W[oa];B[nd];W[ob];B[mf];W[rb];B[sb];W[lb];B[lf]
+;W[kf];B[kg];W[je];B[if];W[cj];B[bd];W[bc];B[fb];W[cb];B[kb];W[mb];B[ok];W[mn];B[pl]
+;W[np];B[nq];W[op];B[oq];W[mo];B[lp];W[mk];B[kj];W[oj];B[ql];W[nk];B[pj];W[jb];B[fo]
+;W[jn];B[cl];W[er];B[fr];W[em];B[dk];W[ip];B[iq];W[jq];B[kq];W[hq];B[jr];W[eq];B[io]
+;W[dj];B[fk];W[ej];B[fm];W[fj];B[gk];W[rp];W[kk];B[jk];W[ol];B[pk];W[kl];B[lj];W[mj]
+;B[om];W[nl];B[dn];W[co];B[cm];W[fs];B[gs];W[es];B[gr];W[jl];B[ik];W[qo];B[do];W[cq]
+;B[pm];W[nm];B[ic];W[id];B[jc];W[kd];B[hd];W[ka];B[hc];W[pp]CR[pp];B[qq];W[rm];B[rl]
+;W[in];B[mi];W[ni];B[mh];W[nh];B[ng];W[ho];B[hp];W[gn];B[go];W[hn];B[bp];W[cp];B[ep]
+;W[fn];B[dm];W[en];B[bq];W[br];B[cr];W[dr];B[bn];W[bo];B[ao];W[cs];B[bl];W[aq];B[df]
+;W[cg];B[aj];W[bf];B[gh])
+(;B[qi]CR[qi];W[on]CR[on];B[mp]CR[mp];W[jd]CR[jd];B[lc]CR[lc]C[marcinkam [1d\]\: ruch watpliwy
+]
+;W[le]CR[le];B[nc]CR[nc];W[kc]CR[kc];B[ld]CR[ld];W[ke]CR[ke];B[cf]CR[cf];W[ch]CR[ch]
+;B[fd]CR[fd]
+(;W[df]CR[df];B[dg]CR[dg];W[cg]CR[cg];B[dc]CR[dc];W[ce]CR[ce];B[cc]CR[cc];W[hc]
+CR[hc];B[fb]CR[fb]C[marcinkam [1d\]\: to wariant, ale niedobry dla bialego, czarny na to liczyl
+])
+(;W[ee]CR[ee];B[fe]CR[fe];W[ef]CR[ef];B[ff]CR[ff]
+(;W[ce]CR[ce]C[marcinkam [1d\]\: to jest gra
+marcinkam [1d\]\: c15 jest bledem, powinno byc e13
+]
+;B[jf]CR[jf]C[marcinkam [1d\]\: dziwny ruch - J Lubos
+marcinkam [1d\]\: po f12 bialy nie ma dobrego ruchu\\
+]
+;W[lg]CR[lg];B[jh]CR[jh];W[li]CR[li];B[cc]CR[cc];W[dc]CR[dc];B[be]CR[be];W[cd]CR[cd]
+;B[eg]CR[eg];W[dg]CR[dg];B[eh]CR[eh];W[qf]CR[qf]C[marcinkam [1d\]\: w tym momencie bialy ma lepsza pozycję
+marcinkam [1d\]\: lewy gorny rog - czarne tworza aji
+Delita [?\]\: aji?
+]
+;B[pf]CR[pf];W[pg]CR[pg];B[qg]CR[qg];W[pe]CR[pe];B[of]CR[of]
+(;W[qe]CR[qe];B[oe]CR[oe];W[qd]CR[qd]C[kouryou [10k\]\: mozliwosc / potencjal
+]
+;B[qc]CR[qc];W[pc]CR[pc];B[od]CR[od];W[rc]CR[rc];B[qb]CR[qb];W[rb]CR[rb];B[pb]CR[pb]
+;W[rg]CR[rg];B[qh]CR[qh]C[marcinkam [1d\]\: bialy zdobyl zycie na bandzie
+Delita [?\]\: nom
+marcinkam [1d\]\: niestety  partia potoczyla sie inaczej
+])
+(;W[oe]CR[oe];B[qe]CR[qe];W[qd]CR[qd];B[rf]CR[rf];W[re]CR[re];B[qf]CR[qf];W[od]
+CR[od];B[pc]CR[pc];W[oc]CR[oc];B[ob]CR[ob]C[comboy [9k\]\: uhm kurna ja jusz telepatycznie gratuluje Oli a Ty tu takie numery urzadzasz \:P
+]
+;W[pb]CR[pb];B[qc]CR[qc];W[qb]CR[qb];B[rc]CR[rc];W[nb]CR[nb];B[ne]CR[ne];W[oa]CR[oa]
+;B[nd]CR[nd];W[ob]CR[ob]C[kouryou [10k\]\: to gra ola soldan ? \:)
+marcinkam [1d\]\: teraz bedzie wariant
+]
+(;B[lb]CR[lb]C[pedro69 [13k\]\: a to nie widac na gorze, kto gra? \:)
+];W[rb]CR[rb]
+;B[sb]CR[sb]C[comboy [9k\]\: o dziekuje za ostrzezenie \:)
+];W[nf]CR[nf]C[kouryou [10k\]\: widze tylko marcinkam [1d\]
+Guts [6k\]\: czesc
+]
+;B[mf]CR[mf];W[ng]CR[ng];B[mg]CR[mg];W[nh]CR[nh]C[comboy [9k\]\: kou nad chatem
+]
+;B[me]CR[me]C[comboy [9k\]\: cze Gutek
+kouryou [10k\]\: ? nad ?
+];W[kb]CR[kb];B[mb]
+CR[mb];W[mh]CR[mh];B[lf]CR[lf];W[kf]CR[kf];B[kg]CR[kg];W[kh]CR[kh])
+(;B[mf]CR[mf];W[rb]CR[rb];B[sb]CR[sb];W[lb]CR[lb];B[lf]CR[lf];W[kf]CR[kf];B[kg]
+CR[kg];W[je]CR[je];B[if]CR[if];W[cj]CR[cj]C[Parn19 [11k?\]\: to co z pozostalymi grami z MP ? (bo wszystkich na pewno nie zaprezentujesz)
+marcinkam [1d\]\: teraz pozycja jest zla dla bialych, bo m11 i m13 zostaly odciete
+marcinkam [1d\]\: biale u gory wziely niewiele punktow
+marcinkam [1d\]\: czarny jest mocny
+marcinkam [1d\]\: ma sente
+]
+;B[bd]CR[bd];W[bc]CR[bc];B[fb]CR[fb];W[cb]CR[cb];B[kb]CR[kb];W[mb]CR[mb]C[marcinkam [1d\]\: f18 to bylo wykorzystanie aji po lewej
+marcinkam [1d\]\: c18 w e18 to kontrowersyjna sprawa
+]
+;B[ok]CR[ok]C[marcinkam [1d\]\: czarny l18 to tez duze aji niedobre dla bialego
+Guts [6k\]\: nie da sie zabic tych kamieni l17 po k17 ?
+]
+(;W[pk]CR[pk];B[oj]CR[oj];W[jb]CR[jb]C[comboy [9k\]\: to samo mialem pytac \:)
+comboy [9k\]\: tzn czarny jakby zagral k17 zamist p9
+])
+(;W[mn]CR[mn]C[marcinkam [1d\]\: zamiast k17 czarny atakuje biale centrum
+];B[pl]
+CR[pl];W[np]CR[np];B[nq]CR[nq];W[op]CR[op];B[oq]CR[oq];W[mo]CR[mo];B[lp]CR[lp]C[marcinkam [1d\]\: n5 to duza strata, powinno byc m4
+]
+;W[mk]CR[mk];B[kj]CR[kj];W[oj]CR[oj];B[ql]CR[ql];W[kh]CR[kh];B[jg]CR[jg];W[nk]CR[nk]
+;B[pj]CR[pj];W[jb]CR[jb];B[fo]CR[fo]C[Delita [?\]\: chyba tak
+marcinkam [1d\]\: gra jest trudna dla bialych, bo czarny jest wszedzie mocny i ma duzo terenu
+Delita [?\]\: jaką mieli siłę, ci co grali?
+]
+;W[jn]CR[jn];B[cl]CR[cl];W[er]CR[er];B[fr]CR[fr];W[em]CR[em];B[dk]CR[dk];W[ip]CR[ip]
+;B[iq]CR[iq];W[jq]CR[jq];B[kq]CR[kq];W[hq]CR[hq];B[jr]CR[jr]C[marcinkam [1d\]\: na biale j5 czarny odpowie h2; bialy ma slabosci l6  i m6
+marcinkam [1d\]\: 3d i 5d
+]
+;W[eq]CR[eq];B[io]CR[io];W[dj]CR[dj];B[fk]CR[fk];W[ej]CR[ej];B[fm]CR[fm];W[fj]CR[fj]
+;B[gk]CR[gk];W[kk]CR[kk];B[jk]CR[jk];W[kl]CR[kl];B[lj]CR[lj];W[mj]CR[mj]
+(;B[bn]CR[bn];W[co]CR[co])
+(;B[dn]CR[dn]C[Delita [?\]\: dzieki
+];W[co]CR[co];B[cm]CR[cm];W[rp]CR[rp];B[rq]
+CR[rq];W[ol]CR[ol]C[marcinkam [1d\]\: g12 to b. duzy punkt, w ktory dlugo nikt nie gral
+marcinkam [1d\]\: bialy moglby wprowadzic komplikacje, to duzy punkt
+marcinkam [1d\]\: to tyle - czarny wygral przez poddanie
+kouryou [10k\]\: dzieki \:)
+comboy [9k\]\: w tym momencie bialy poddal ?
+kouryou [10k\]\: dla pewnosci, kto gral ta gre ? ^^"
+marcinkam [1d\]\: za chwile otworze nastepna plansze z partia wieczoru - Koichiro Habui Leszek Soldan
+]
+;B[pk]CR[pk]N[END])))))
+(;W[eg]CR[eg];B[dc]CR[dc];W[cc]CR[cc]C[Delita [?\]\: cześć
+];B[ec]CR[ec];W[cb]
+CR[cb];B[ic]CR[ic]TR[ff][eg]C[marcinkam [1d\]\: prawidlowa kontynuacja
+marcinkam [1d\]\: teraz zaznaczone kamienie to zla wymiana dla czarnego
+]))))
+(;B[po]CR[po];W[rp]CR[rp]C[marcinkam [1d\]\: to inna mozliwosc
+];B[ql]CR[ql];W[pn]
+CR[pn];B[on]CR[on]))
+(;W[qo]CR[qo])
+(;W[po]CR[po]C[buuu123 [12k\]\: a po wymianie w lewym dolnym lepsze robi się r6?
+Sewerian [6k\]\: czesc
+marcinkam [1d\]\: bardzo skomplikowane warianty sa niedobre dla bialego, jesli w k4 stoi czarny
+]))
