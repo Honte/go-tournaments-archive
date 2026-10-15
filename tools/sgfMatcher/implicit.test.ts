@@ -568,6 +568,8 @@ it('matches complete pairs and rejects a changed partner or a conflicting result
     });
   }
   assert.equal(match().matchedEntries.length, 1);
+  assert.equal(match({ sgfBlackName: 'One&Two', sgfWhiteName: 'Carol Three & Dan Four' }).matchedEntries.length, 1);
+  assert.equal(match({ sgfBlackName: 'One&SomeoneElse', filenameBlackName: null }).matchedEntries.length, 0);
   assert.equal(match({ filenameBlackName: 'AliceOneSomeoneElse' }).matchedEntries.length, 0);
   assert.equal(match({ cleanResult: 'W+R', rawResult: 'W+R' }).matchedEntries.length, 0);
   assert.equal(match({ sgfBlackName: 'Alice One', filenameBlackName: 'AliceOne' }).matchedEntries.length, 0);
