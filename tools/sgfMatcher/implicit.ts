@@ -6,7 +6,7 @@ import { buildLocalGameId, type H9Player, parseH9 } from '@/libs/h9';
 import type { EventPlayer } from '@/data/eventPlayers';
 import { GAME_REGEX } from '@/data/games';
 import { buildSgfEntryString, type SgfMatchResult } from './entries';
-import { type PlayerLookupMap, registerLookupEntry, resolveSgfLookup } from './lookup';
+import { lookupPlayerId, type PlayerLookupMap, registerLookupEntry, resolveSgfLookup } from './lookup';
 import {
   buildCommonUnmatchedReasons,
   findDuplicateKeys,
