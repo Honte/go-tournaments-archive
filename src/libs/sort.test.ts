@@ -72,6 +72,13 @@ describe('sort utilities', () => {
     assert.ok(createPodiumColumnSorter('en')(rowA as any, rowB as any, 'gold') < 0);
   });
 
+  it('distinguishes pairs sharing the first member when sorting in both directions', () => {
+    const hora = createPair([player('jana', 'Jana Hricova'), player('jan', 'Jan Hora')]);
+    const silt = createPair([player('jana', 'Jana Hricova'), player('ondrej', 'Ondrej Silt')]);
+    assert.deepEqual([silt, hora].toSorted(createPlayersSorter('en')), [hora, silt]);
+    assert.deepEqual([hora, silt].toSorted(createPlayersSorter('en', true)), [silt, hora]);
+  });
+
   it('sorts podium columns with missing values last in TanStack table format', () => {
     const sortFn = createPodiumColumnSorter('en');
     const rowA = { getValue: (id: string) => (id === 'gold' ? [player('z', 'Aaron Zeta')] : []) };

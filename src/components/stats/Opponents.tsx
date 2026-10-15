@@ -8,6 +8,7 @@ import { getFormatter } from '@/i18n/formatter';
 import { getTranslator } from '@/i18n/translator';
 import { getOpponentRows, type RelatedPlayerRow } from '@/libs/pairStats';
 import { getParticipantPlayers, isPair } from '@/libs/participants';
+import { createPlayersSorter } from '@/libs/sort';
 import { SgfCountLink } from '@/components/gameRecords/SgfCountLink';
 import { StatsTable } from '@/components/table/StatsTable';
 import type { StatsColumnDef } from '@/components/table/statsTableConfig';
@@ -26,6 +27,7 @@ type OpponentRow = RelatedPlayerRow;
 
 export function Opponents({ event, translations, player, category, pairs = false }: OpponentsProps) {
   const t = getTranslator(translations);
+  const comparePlayers = useMemo(() => createPlayersSorter(translations.locale), [translations.locale]);
 
   const data = useMemo(() => getOpponentRows(player, pairs), [player, pairs]);
   const hasSgfs = event.generateSgfs && data.some((row) => row.sgfs > 0);
@@ -36,6 +38,7 @@ export function Opponents({ event, translations, player, category, pairs = false
     () => [
       {
         accessorKey: 'firstName',
+        sortFn: pairs ? (a, b) => comparePlayers(a.original.participant, b.original.participant) : undefined,
         header: t(pairs ? 'table.pair' : 'table.firstName'),
         meta: { className: 'text-left' },
         cell: (info) => (
@@ -99,7 +102,7 @@ export function Opponents({ event, translations, player, category, pairs = false
         cell: getFormatter(translations.locale).toPercentageCell,
       },
     ],
-    [translations, t, event, hasDraws, hasUnresolved, hasSgfs, player.id, category, pairs]
+    [translations, t, event, hasDraws, hasUnresolved, hasSgfs, player.id, category, pairs, comparePlayers]
   );
 
   return (

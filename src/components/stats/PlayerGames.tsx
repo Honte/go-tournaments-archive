@@ -4,6 +4,7 @@ import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { getParticipantName } from '@/libs/participants';
+import { createPlayersSorter } from '@/libs/sort';
 import { gameThumbUrl } from '@/libs/urls';
 import { GameActions } from '@/components/GameActions';
 import { GameResultLabel } from '@/components/GameResultLabel';
@@ -41,6 +42,7 @@ type GameRow = {
 
 export function PlayerGames({ event, player, translations }: PlayerGamesProps) {
   const t = getTranslator(translations);
+  const comparePlayers = useMemo(() => createPlayersSorter(translations.locale), [translations.locale]);
   const data = useMemo(() => {
     const games: GameRow[] = [];
 
@@ -145,6 +147,7 @@ export function PlayerGames({ event, player, translations }: PlayerGamesProps) {
       },
       {
         accessorKey: 'opponentFirstName',
+        sortFn: event.pairs ? (a, b) => comparePlayers(a.original.opponent, b.original.opponent) : undefined,
         header: t(event.pairs ? 'table.opponentPair' : 'table.firstName'),
         meta: { className: 'text-left' },
         cell: (info) => (
@@ -184,7 +187,7 @@ export function PlayerGames({ event, player, translations }: PlayerGamesProps) {
         enableSorting: false,
       },
     ],
-    [t, player.name, translations, event]
+    [t, player.name, translations, event, comparePlayers]
   );
 
   if (!event.generateSgfs || !data.length) {
