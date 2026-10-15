@@ -2,11 +2,9 @@ export function getRankCountrySuffix(rank?: string | false, country?: string | I
   if (country) {
     const countryContent = typeof country === 'string' ? country : Array.from(new Set(country)).join(', ');
 
-    if (country && rank) {
-      return `, ${rank} (${countryContent})`;
+    if (countryContent) {
+      return rank ? `, ${rank} (${countryContent})` : ` (${countryContent})`;
     }
-
-    return ` (${countryContent})`;
   }
 
   return rank ? ` (${rank})` : '';

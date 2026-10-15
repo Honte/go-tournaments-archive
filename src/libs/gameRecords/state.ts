@@ -165,11 +165,15 @@ function normalizeGroupCountSort(state: GameRecordsState): GameRecordsState {
 }
 
 export function getPlayers(games: readonly ApiGameInfo[]) {
-  return new Set(
-    games.flatMap((game) =>
-      [game.black, game.white].flatMap((side) => getParticipantPlayers(side).map((player) => player.id))
-    )
-  );
+  const players = new Set<string>();
+  for (const game of games) {
+    for (const side of [game.black, game.white]) {
+      for (const player of getParticipantPlayers(side)) {
+        players.add(player.id);
+      }
+    }
+  }
+  return players;
 }
 
 export function getCountries(games: readonly ApiGameInfo[]) {

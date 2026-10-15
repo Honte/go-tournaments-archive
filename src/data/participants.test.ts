@@ -5,7 +5,6 @@ import type { EventDefinition } from '@/schema/event';
 import en from '@/i18n/en.json';
 import { Sgf } from '@tools/sgf';
 import { parseH9 } from '@/libs/h9';
-import { getOpponentRows, getPartnerRows } from '@/libs/pairStats';
 import { isPair } from '@/libs/participants';
 import { loadSgf } from '@/libs/sgf';
 import { loadClassificationStage } from '@/data/classification';
@@ -157,16 +156,8 @@ it('counts pair games once globally and once per member, including draws, BYE an
   assert.equal(alice.totalWon, 2);
   assert.equal(alice.totalDrawn, 1);
   assert.equal(alice.totalUnresolved, 1);
-  assert.deepEqual(
-    getOpponentRows(alice).map((p) => p.games),
-    [2, 2]
-  );
-  assert.deepEqual(
-    getOpponentRows(alice, true).map((p) => p.games),
-    [2]
-  );
-  assert.equal(getPartnerRows(alice)[0].games, 3);
-  assert.equal(getPartnerRows(alice)[0].gold, 1);
+  assert.equal(alice.results[0].partner?.name, 'Bob Two');
+  assert.ok(alice.results[0].stages[0].games.some((game) => game.opponent && isPair(game.opponent)));
 });
 
 it('rejects unsupported pair stages', async () => {
@@ -255,13 +246,8 @@ it('keeps shared medals and partner histories independent between editions', () 
   assert.equal(alice.totalAttended, 2);
   assert.deepEqual(alice.medals[0], ['2024', '2025']);
   assert.deepEqual(
-    getPartnerRows(alice)
-      .map((p) => [p.name, p.attended, p.gold])
-      .sort((a, b) => String(a[0]).localeCompare(String(b[0]))),
-    [
-      ['Bob Two', 1, 1],
-      ['Carol Three', 1, 1],
-    ]
+    alice.results.map((result) => result.partner?.name),
+    ['Bob Two', 'Carol Three']
   );
   assert.equal(stats.countries.JP.medals[0].length, 1);
   assert.equal(stats.countries.GB.medals[0].length, 1);

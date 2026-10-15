@@ -86,24 +86,26 @@ export function getPlayerMeta(games: readonly ApiGameInfo[]) {
   const result = new Map<string, PlayerMeta>();
 
   for (const game of games) {
-    for (const player of [game.black, game.white].flatMap(getParticipantPlayers)) {
-      const current = result.get(player.id);
-      const aliases = current?.aliases ?? new Set<string>();
+    for (const side of [game.black, game.white]) {
+      for (const player of getParticipantPlayers(side)) {
+        const current = result.get(player.id);
+        const aliases = current?.aliases ?? new Set<string>();
 
-      aliases.add(player.name);
+        aliases.add(player.name);
 
-      if (player.original) {
-        aliases.add(player.original);
-      }
+        if (player.original) {
+          aliases.add(player.original);
+        }
 
-      for (const nickname of player.nickname ?? []) {
-        aliases.add(nickname);
-      }
+        for (const nickname of player.nickname ?? []) {
+          aliases.add(nickname);
+        }
 
-      if (!current || game.tournament >= current.latestTournament) {
-        result.set(player.id, { label: player.name, aliases, latestTournament: game.tournament });
-      } else {
-        current.aliases = aliases;
+        if (!current || game.tournament >= current.latestTournament) {
+          result.set(player.id, { label: player.name, aliases, latestTournament: game.tournament });
+        } else {
+          current.aliases = aliases;
+        }
       }
     }
   }

@@ -56,7 +56,7 @@ async function processEvent(event: string) {
   const DATA_DIR = `events/${event}/data`;
   const SGF_DIR = `events/${event}/sgf`;
   const eventDefinition = await loadEventDefinition(event);
-const eventPlayers = await readEventPlayersFile(event);
+  const eventPlayers = await readEventPlayersFile(event);
   const results: StageResult[] = [];
   const loadedSgfs = new Set<string>();
 
@@ -96,15 +96,15 @@ const eventPlayers = await readEventPlayersFile(event);
 
       const stageResult = await processStage({
         pairs: eventDefinition.pairs,
-      tournament: json,
-      stage,
-      sgfPaths,
-      dataDir: DATA_DIR,
-      sgfDir: SGF_DIR,
-      force,
-      strict,
-      eventPlayers,
-    });
+        tournament: json,
+        stage,
+        sgfPaths,
+        dataDir: DATA_DIR,
+        sgfDir: SGF_DIR,
+        force,
+        strict,
+        eventPlayers,
+      });
 
       if (stage.type !== 'classification') {
         for (const sgf of sgfPaths) {
