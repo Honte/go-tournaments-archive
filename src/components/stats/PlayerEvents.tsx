@@ -76,6 +76,8 @@ export function PlayerEvents({ event, player, translations }: PlayerEventsProps)
     return results.sort((a, b) => b.year - a.year);
   }, [player]);
 
+  const hasRank = data.some((row) => row.rank);
+  const hasPairsRank = event.pairs && data.some((row) => row.pairRank);
   const hasMultipleNames = data.some((row) => row.name !== player.name);
   const hasMultipleCountries = new Set(data.map((row) => row.country)).size > 1;
   const hasMultipleStages = new Set(data.map((row) => getStageName(row.stage, translations))).size > 1;
@@ -102,6 +104,7 @@ export function PlayerEvents({ event, player, translations }: PlayerEventsProps)
         header: t('table.name'),
       },
       {
+        enabled: hasRank,
         accessorKey: 'rank',
         header: t(event.pairs ? 'table.playerRank' : 'table.rank'),
       },
@@ -117,7 +120,7 @@ export function PlayerEvents({ event, player, translations }: PlayerEventsProps)
           ),
       },
       {
-        enabled: Boolean(event.pairs),
+        enabled: hasPairsRank,
         accessorKey: 'pairRank',
         header: t('table.pairRank'),
       },
@@ -202,6 +205,8 @@ export function PlayerEvents({ event, player, translations }: PlayerEventsProps)
       hasDraws,
       hasUnresolved,
       hasSgfs,
+      hasRank,
+      hasPairsRank,
       player,
       event,
       t,
