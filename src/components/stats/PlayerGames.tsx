@@ -53,7 +53,7 @@ export function PlayerGames({ event, player, translations }: PlayerGamesProps) {
             continue;
           }
 
-          const opponentName = game.opponent ? getParticipantName(game.opponent) : player.opponents[game.id];
+          const opponentName = player.opponents[game.id] ?? (game.opponent ? getParticipantName(game.opponent) : '');
           const [opponentFirstName, ...rest] = opponentName.split(' ');
           const opponentLastName = rest.join(' ') || '';
 
