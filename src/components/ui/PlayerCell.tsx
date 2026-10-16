@@ -22,15 +22,22 @@ export function PlayerCell({
   showCountry = event.showCountry,
 }: PlayerCellProps) {
   if (player.members) {
+    const showMemberCountries = showCountry && player.members[0].country !== player.members[1].country;
     return (
       <div>
         {player.members.map((member, index) => (
           <Fragment key={member.id}>
             {index > 0 && ' +\u00a0'}
-            <PlayerCell event={event} player={member} locale={locale} showRank={false} showCountry={false} />
+            <PlayerCell
+              event={event}
+              player={member}
+              locale={locale}
+              showRank={false}
+              showCountry={showMemberCountries}
+            />
           </Fragment>
         ))}
-        {getRankCountrySuffix(showRank && player.rank, showCountry && player.country)}
+        {getRankCountrySuffix(showRank && player.rank, showCountry && !showMemberCountries && player.country)}
       </div>
     );
   }
