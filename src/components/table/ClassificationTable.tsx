@@ -23,7 +23,7 @@ export function ClassificationTable({ event, stage, players, translations }: Cla
           <th className="p-1">{t('table.place')}</th>
           <th className="p-1 text-left">{t('table.name')}</th>
           {showRank && <th>{t('table.pairRank')}</th>}
-          {event.pairs && event.showCountry && <th>{t('table.pairCountry')}</th>}
+          {event.showCountry && <th>{t('table.pairCountry')}</th>}
         </tr>
       </thead>
       <tbody>
@@ -45,7 +45,7 @@ export function ClassificationTable({ event, stage, players, translations }: Cla
                 />
               </td>
               {showRank && <td className="p-1 text-center">{player.rank}</td>}
-              {event.pairs && event.showCountry && (
+              {event.showCountry && (
                 <td className="p-1">
                   <CountryLink event={event} code={player.country} translations={translations} />
                 </td>
