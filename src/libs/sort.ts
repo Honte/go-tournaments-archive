@@ -5,6 +5,7 @@ import type { StatsSortFn } from '@/components/table/statsTableConfig';
 type PlayerLike = {
   id?: string;
   name?: string;
+  members?: readonly { name?: string }[];
 };
 
 type DateRangeLike = {
@@ -28,9 +29,12 @@ export function createPlayersSorter(locale: string, isDescending = false) {
   const collator = new Intl.Collator(locale);
 
   return function sortPlayers(a: PlayerLike, b: PlayerLike) {
+    const nameA = a.members?.map((member) => member.name).join(' + ') ?? a.name ?? '';
+    const nameB = b.members?.map((member) => member.name).join(' + ') ?? b.name ?? '';
+
     return (
-      (collator.compare(getSurname(a.name ?? ''), getSurname(b.name ?? '')) ||
-        collator.compare(a.name ?? '', b.name ?? '') ||
+      (collator.compare(getSurname(nameA), getSurname(nameB)) ||
+        collator.compare(nameA, nameB) ||
         (a.id ?? '').localeCompare(b.id ?? '')) * (isDescending ? -1 : 1)
     );
   };

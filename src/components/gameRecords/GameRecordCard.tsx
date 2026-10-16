@@ -6,6 +6,7 @@ import type { EventContext } from '@/schema/event';
 import type { Translations, Translator } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { JIGO } from '@/libs/games';
+import { getParticipantName } from '@/libs/participants';
 import { getStageName } from '@/libs/stage';
 import { gameThumbUrl } from '@/libs/urls';
 import { GameActions } from '@/components/GameActions';
@@ -23,7 +24,7 @@ export type GameRecordCardProps = {
 export function GameRecordCard({ event, game, translations }: GameRecordCardProps) {
   const t = getTranslator(translations);
   const thumb = game.jpg ?? game.svg ?? game.png;
-  const title = `${game.black.name} vs ${game.white.name}`;
+  const title = `${getParticipantName(game.black)} vs ${getParticipantName(game.white)}`;
   const previewLabel = t('game.preview', title);
   const stageName = game.stageType
     ? getStageName({ name: game.stageName, type: game.stageType }, translations)

@@ -1,0 +1,21 @@
+; PC[PL, Szyndzielnia]
+; DT[2005-09-17,2005-09-18]
+;Szyndzielnia, 17-18.09.2005
+;   Pl. Name                   Str  MMS   1    2    3    4    5     Pt SOS  SOSOS
+    1  Czaplik Małgorzata 31k Lubos Jan         31k   1k PL xxx   6    7+   6+   4+   2+   3-     4  26   123 |13013627|10337613
+    2  Chwedyna Żaneta 31k Chwedyna Kamil       31k   3k PL xxx   6    3+   5+   8+   1-   4+     4  26   121 |13574803|13513786
+    3  Piekarczyk Marta 31k Jachym Radosław     31k   2k PL xxx   6    2-   7+   6+   9+   1+     4  25   118 |13025628|13074435
+    4  Klęczar Justyna 31k Gogosz Dominik       31k   4k PL xxx   5   11+   9+   1-   5+   2-     3  25   112 |13886169|12813064
+    5  Moś Ewa 31k Bożek Krzysztof              31k   2k PL xxx   5    8+   2-  11+   4-   7+     3  23   115 |13533047|12874290
+    6  Sośnicka Anna 31k Majnusz Jakub          31k   4k PL xxx   5   10+   1-   3-   8+  12+     3  23   108 |13925769|13874025	
+    7  Palej Małgorzata 31k Puczniewski Jacek   31k   7k PL xxx   4    1-   3-  13+  11+   5-     2  24   106 |13925032|12098075
+    8  Mazurek Katarzyna 31k Zyzak Andrzej      31k   3k PL xxx   4    5-  10+   2-   6-  14+     2  22   103 |13862167|10949763
+    9  Długosz Sylwia 31k Sobański Grzegorz     31k   8k PL xxx   4   12+   4-  10+   3-  15+     3  19    98 |13550790|13062698
+   10  Śmigowska Agnieszka 31k Surma Mateusz    31k   5k PL xxx   4    6-   8-   9-   0+  13+     2  19    97 |12098372|12837968
+   11  Bełtowska Katarzyna 31k Bojar Andrzej    31k   7k PL xxx   4    4-  15+   5-   7-   0+     2  18   103 |13013968|10825837
+   12  Moś Anna 31k Krupiński Marcin            31k   8k PL xxx   3    9-  13-   0+  14+   6-     2  16    84 |13898027|13533729
+   13  Musielak Krystyna 31k Piekarczyk Michał  31k  10k PL xxx   3   14+  12+   7-  15+  10-     3  14    84 |13698916|13001967
+   14  Gogosz Dorota 31k Gogosz Damian          31k  10k PL xxx   2   13-   0+  15+  12-   8-     2  12    77 |12901581|12986160
+   15  Klamecka Natalia 31k Grygorowicz Wojciech 31k 14k PL xxx   1    0+  11-  14-  13-   9-     1  13    76 |14033239|12050280
+;time 45min
+

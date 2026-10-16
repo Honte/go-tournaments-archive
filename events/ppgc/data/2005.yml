@@ -1,0 +1,18 @@
+stages:
+  - type: tournament
+    name: 
+      pl: Mistrzostwa
+      en: Championship
+    file: mpp2005.txt
+    scoringColumns: 
+      - mms
+      - wins 
+      - sos
+      - sodos      
+    breakers:    
+      - mms
+      - sos
+      - sodos
+    columns:
+      - wins    
+    findSharedPlaces: true

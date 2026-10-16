@@ -1,0 +1,11 @@
+;http://so-imba.com/egoban/posts/praha-28-29-3-mr-paru-2015.html
+; PC[CZ,Praha]
+; DT[2015-03-28,2015-03-29]
+   1 Zaloudkova Klara 3d Hora Jan       6d 4d CZ  xxx   5    14    14    4+    5+    2+    3+    6+ |10798106|10401083
+   2 Tomsu Adriana    3k Podpera Lukas  6d 2d CZ  xxx   4    13     8    8+    3+    1-    4+    5+ |16225396|13201914
+   3 Bartova Jitka    1d Kozelek Tomas  4d 2d CZ  xxx   3    14     5    6+    2-    5+    1-    7+ |13849748|13850342
+   4 Dankova Lenka    6k Danek Vladimir 5d 1k CZ  xxx   3    12     3    1-    7+    6+    2-    8+ |10513063|10213016
+   5 Chladkova Teresa 1k Prokop Jan     5d 2d CZ  xxx   2    13     1    7+    1-    3-    8+    2- |15401364|10433654
+   6 Kubitova Josefa  6k Ries Vilem     3k 5k CZ  xxx   2    12     1    3-    8+    4-    7+    1- |15049023|16013173
+   7 Vasova Dita      7k Timko Michal   1k 4k CZ  xxx   1    10     0    5-    4-    8+    6-    3- |15749921|16462072
+   8 Bukovska Anezka  9k Jansky Dusan   5k 7k CZ  xxx   0    12     0    2-    6-    7-    5-    4- |15874947|15862946

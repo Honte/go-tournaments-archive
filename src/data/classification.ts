@@ -1,16 +1,21 @@
-import { type ClassificationStage, Player, TournamentDetails } from '@/schema/data';
+import { type ClassificationStage, Participant, TournamentDetails } from '@/schema/data';
+import type { EventDefinition } from '@/schema/event';
 import { type InputClassificationStage } from '@/schema/input';
 import { parseDates } from '@/libs/dates';
+import { validatePairs } from '@/libs/participants';
+import { loadPair } from '@/data/participants';
 import type { PlayersHandler } from '@/data/players';
 
 export function loadClassificationStage({
+  event,
   stage,
   playersMap,
   playersHandler,
   tournamentDetails,
 }: {
+  event?: EventDefinition;
   stage: InputClassificationStage;
-  playersMap: Record<string, Player>;
+  playersMap: Record<string, Participant>;
   playersHandler: PlayersHandler;
   tournamentDetails: TournamentDetails;
 }): ClassificationStage {
@@ -23,16 +28,20 @@ export function loadClassificationStage({
       let player = playersMap[playerRow];
 
       if (!player) {
-        player = playersHandler.loadPlayer(playerRow);
-        playersMap[player.id] = player;
+        player = event?.pairs ? loadPair(playerRow, event, playersHandler) : playersHandler.loadPlayer(playerRow);
       }
 
+      playersMap[player.id] = player;
       table.push({
         id: player.id,
         index: index++,
         place,
       });
     }
+  }
+
+  if (event?.pairs) {
+    validatePairs(playersMap);
   }
 
   if (!stage.excluded && !tournamentDetails.top.length) {

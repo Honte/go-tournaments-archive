@@ -1,5 +1,6 @@
 import type { ApiGameInfo } from '@/schema/api';
 import { normalizeRank } from '@/libs/h9';
+import { getParticipantPlayers } from '@/libs/participants';
 import { getRankValue } from '@/libs/rank';
 import {
   compareKomi,
@@ -32,6 +33,7 @@ export function buildGameRecordsFacets(
   games: readonly ApiGameInfo[],
   state: GameRecordsState,
   options: {
+    pairs: boolean;
     countriesEnabled: boolean;
     categoriesEnabled: boolean;
     countryLabel: (country: string) => string;
@@ -43,6 +45,14 @@ export function buildGameRecordsFacets(
   const hasCountries = Boolean(getCountries(games).size);
   const hasCategories = options.categoriesEnabled && Boolean(getCategories(games).size);
   return {
+    partner: buildPlayerFacet(games, state, 'partner', playerMeta, Boolean(state.player) && options.pairs),
+    opponentPartner: buildPlayerFacet(
+      games,
+      state,
+      'opponentPartner',
+      playerMeta,
+      Boolean(state.opponent) && options.pairs
+    ),
     player: buildPlayerFacet(games, state, 'player', playerMeta, true),
     country: buildCountryFacet(games, state, 'country', options.countryLabel, options.countriesEnabled, hasCountries),
     opponent: buildPlayerFacet(games, state, 'opponent', playerMeta, Boolean(state.player || state.country)),
@@ -86,7 +96,7 @@ export function getGameRecordsDomains(games: readonly ApiGameInfo[]): GameRecord
 function buildPlayerFacet(
   games: readonly ApiGameInfo[],
   state: GameRecordsState,
-  facet: 'player' | 'opponent',
+  facet: 'player' | 'opponent' | 'partner' | 'opponentPartner',
   meta: ReturnType<typeof getPlayerMeta>,
   visible: boolean
 ): GameFacet {
@@ -232,6 +242,8 @@ function getGameFacetContext(state: GameRecordsState): GameRecordsState {
   return {
     ...DEFAULT_GAME_RECORDS_STATE,
     player: state.player,
+    partner: state.partner,
+    opponentPartner: state.opponentPartner,
     country: state.country,
     opponent: state.opponent,
     opponentCountry: state.opponentCountry,
@@ -248,9 +260,10 @@ function countFacet(games: readonly ApiGameInfo[], state: GameRecordsState, face
     const values = new Set<string>();
     for (const orientation of getOrientations(game)) {
       if (matchesOrientation(orientation, state, facet)) {
-        const value = getFacetValue(orientation, facet);
-        if (value) {
-          values.add(value);
+        for (const value of getFacetValues(orientation, facet, state)) {
+          if (value) {
+            values.add(value);
+          }
         }
       }
     }
@@ -261,18 +274,26 @@ function countFacet(games: readonly ApiGameInfo[], state: GameRecordsState, face
   return counts;
 }
 
-function getFacetValue(orientation: OrientedGame, facet: FacetKey) {
+function getFacetValues(orientation: OrientedGame, facet: FacetKey, state: GameRecordsState): (string | undefined)[] {
   switch (facet) {
     case 'player':
-      return orientation.player.id;
-    case 'country':
-      return orientation.player.country?.toUpperCase();
+      return getParticipantPlayers(orientation.player).map((p) => p.id);
     case 'opponent':
-      return orientation.opponent.id;
+      return getParticipantPlayers(orientation.opponent).map((p) => p.id);
+    case 'partner':
+      return getParticipantPlayers(orientation.player)
+        .filter((p) => p.id !== state.player)
+        .map((p) => p.id);
+    case 'opponentPartner':
+      return getParticipantPlayers(orientation.opponent)
+        .filter((p) => p.id !== state.opponent)
+        .map((p) => p.id);
+    case 'country':
+      return [orientation.player.country?.toUpperCase()];
     case 'opponentCountry':
-      return orientation.opponent.country?.toUpperCase();
+      return [orientation.opponent.country?.toUpperCase()];
     case 'playerColor':
-      return orientation.playerColor;
+      return [orientation.playerColor];
   }
 }
 

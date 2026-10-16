@@ -1,0 +1,14 @@
+website:
+ - http://so-imba.com/egoban/posts/praha-9-10-2-mr-paru-2013.html
+ - https://goweb.cz/turnaj/mistrovstvi-republiky-paru-2013/
+stages:
+  - type: tournament
+    name: Championship
+    file: czp2013.txt
+    scoringColumns:
+      - wins
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true

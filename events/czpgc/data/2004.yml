@@ -1,0 +1,11 @@
+website: https://cs.wikipedia.org/wiki/%C4%8Cesk%C3%A1_asociace_go
+stages:
+  - type: tournament
+    name: Championship
+    file: czp2004.txt
+    notes: only medalists list available, no info about other participants or specific results
+    scoringColumns:
+      - place
+    breakers:
+      - place
+    findSharedPlaces: true

@@ -2,7 +2,7 @@ import slugify from 'slugify';
 import type { Color } from './types';
 
 export function normalizePlayerName(name: string): string {
-  return slugify(name.replace(/[_-]/g, ''), { lower: true, strict: true, replacement: '' });
+  return slugify(name.replace(/[_&-]/g, ''), { lower: true, strict: true, replacement: '' });
 }
 
 export function flipColor(color: Color): Color {

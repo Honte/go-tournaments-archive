@@ -1,0 +1,12 @@
+website: http://so-imba.com/egoban/posts/praha-23-241-mr-paru.html
+stages:
+  - type: tournament
+    name: Championship
+    file: czp2010.txt
+    scoringColumns:
+      - wins
+      - direct
+    breakers:
+      - wins
+      - direct
+    findSharedPlaces: true

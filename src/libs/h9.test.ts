@@ -1,6 +1,30 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { parseH9 } from './h9';
+import { loadH9, parseH9, parsePairCountry } from './h9';
+
+it('normalizes and splits pair countries, using XX only for different countries', () => {
+  for (const [value, countires] of [
+    ['pl', ['PL', 'PL', 'PL']],
+    ['plDE', ['PL', 'DE', 'XX']],
+    ['PLPL', ['PL', 'PL', 'PL']],
+    ['plPL', ['PL', 'PL', 'PL']],
+  ] as const) {
+    assert.deepEqual(parsePairCountry(value), countires);
+  }
+
+  for (const value of ['', 'P', 'POL', 'PLDEGB', 'PL12', ' PL', 'PL DE']) {
+    assert.equal(parsePairCountry(value), undefined);
+  }
+});
+
+it('keeps source line numbers with rows after skipping headers, comments and blank lines', () => {
+  const loaded = loadH9('; EV[Test]\n\n# comment\n1 Alpha Alice\n; note\n2 Beta Bob');
+
+  assert.deepEqual(loaded.rows, [
+    { columns: ['1', 'Alpha', 'Alice'], line: 4 },
+    { columns: ['2', 'Beta', 'Bob'], line: 6 },
+  ]);
+});
 
 describe('parseH9 jigo', () => {
   it('parses a draw without materializing a missing reciprocal entry', () => {

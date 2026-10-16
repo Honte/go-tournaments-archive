@@ -1,0 +1,9 @@
+;https://goweb.cz/2026/05/mistrovstvi-republiky-paru-2026/
+; PC[CZ,Praha]
+; DT[2026-05-16,2026-05-17]
+;Place Name                                 Club     Level Score    1       2       3       4       5    Points  SODOS
+   1  Podperova Adriana 2d Komin Jan      4d         3D CZ xxx    4     0=     5+    3+    2+    4+     4    6 |16225396|19637596
+   2  Bukovska Anezka   1k Kovarik Michal 2d         1D CZ xxx    2     3+     0=    4-    1-    5+     2    3 |15874947|13050378
+   3  Bartova Jitka     3d Kouba Petr     4d         3D CZ xxx    2     2-     4+    1-    5+    0=     2    2 |13849748|14533926
+   4  Hricova Jana      1k Gerner Jan     2d         1D CZ xxx    1     5-     3-    2+    0=    1-     1    2 |10233509|10474629
+   5  Kadlecova Alzbeta 1k Berkman Tadeas 2d         1D CZ xxx    1     4+     1-    0=    3-    2-     1    1 |15425091|15050739

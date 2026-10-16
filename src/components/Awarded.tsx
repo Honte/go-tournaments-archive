@@ -5,8 +5,7 @@ import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
 import { H2 } from '@/components/ui/H2';
-import { PlayerLink } from '@/components/ui/PlayerLink';
-import { PlayerName } from '@/components/ui/PlayerName';
+import { PlayerCell } from '@/components/ui/PlayerCell';
 
 type AwardedProps = {
   event: EventContext;
@@ -24,18 +23,25 @@ export function Awarded({ event, tournament, translations }: AwardedProps) {
         <Fragment key={index}>
           <H2>{category ? t('details.awardedIn', t(`categories.short.${category}`)) : t('details.awarded')}</H2>
           <ol className="list-decimal pl-5">
-            {awarded.map((players, index) => (
-              <li key={index} className="my-1">
-                {jsxJoin(
-                  players.map((p) => (
-                    <PlayerLink key={p.id} event={event} playerId={p.id} locale={translations.locale}>
-                      <PlayerName player={p} showCountry={event.showCountry} />
-                    </PlayerLink>
-                  )),
-                  ', '
-                )}
-              </li>
-            ))}
+            {awarded.map((players, index) => {
+              const list = players.map((p) => (
+                <PlayerCell key={p.id} event={event} player={p} locale={translations.locale} />
+              ));
+
+              return (
+                <li key={index} className="my-1">
+                  {players.length ? (
+                    event.pairs ? (
+                      <div className="flex flex-col gap-1">{list}</div>
+                    ) : (
+                      jsxJoin(list, ', ')
+                    )
+                  ) : (
+                    '—'
+                  )}
+                </li>
+              );
+            })}
           </ol>
         </Fragment>
       ))}
@@ -44,7 +50,7 @@ export function Awarded({ event, tournament, translations }: AwardedProps) {
 }
 
 function getAwarded(tournament: Tournament, categories?: string[]) {
-  const { top, players, categoriesTop } = tournament;
+  const { top, participants: players, categoriesTop } = tournament;
 
   if (categories?.length && categoriesTop) {
     return Object.entries(categoriesTop).map(([category, top]) => ({

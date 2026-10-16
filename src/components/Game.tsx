@@ -1,13 +1,14 @@
 import { clsx } from 'clsx';
 import { useMemo } from 'react';
-import { type Game, type GamePlayer, type Player } from '@/schema/data';
+import { type Game, type GamePlayer, type Participant } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations, Translator } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
+import { getParticipantName } from '@/libs/participants';
 import { gameThumbUrl } from '@/libs/urls';
 import { GameActions } from '@/components/GameActions';
 import { Stone } from '@/components/Stone';
-import { PlayerName } from '@/components/ui/PlayerName';
+import { PlayerCell } from '@/components/ui/PlayerCell';
 import { GameViewerTrigger } from '@/components/viewer/GameViewerTrigger';
 
 type GameProps = {
@@ -15,7 +16,7 @@ type GameProps = {
   game: Game;
   title: string;
   className?: string;
-  players: Record<string, Player>;
+  players: Record<string, Participant>;
   translations: Translations;
   wide?: boolean;
 };
@@ -26,7 +27,7 @@ export function Game({ event, className, game, players, translations, title, wid
   const hasSgf = event.generateSgfs && game.props.sgf;
   const hasProps = Object.keys(game.props).length > 0;
   const preview = game.props.jpg ?? game.props.svg ?? game.props.png;
-  const gameTitle = t('game.preview', `${title}: ${home.name} vs ${away.name}`);
+  const gameTitle = t('game.preview', `${title}: ${getParticipantName(home)} vs ${getParticipantName(away)}`);
 
   return (
     <div
@@ -56,9 +57,9 @@ export function Game({ event, className, game, players, translations, title, wid
             'max-xs:flex-col gap-1 sm:items-center': !hasSgf,
           })}
         >
-          <PlayerRow t={t} player={home} showCountry={event.showCountry} />
+          <PlayerRow event={event} locale={translations.locale} t={t} player={home} />
           {!hasSgf && wide && <div className="max-xs:hidden">&ndash;</div>}
-          <PlayerRow t={t} player={away} showCountry={event.showCountry} />
+          <PlayerRow event={event} locale={translations.locale} t={t} player={away} />
         </div>
         {hasProps && <GameActions event={event} props={game.props} t={t} showViewer={true} />}
       </div>
@@ -66,9 +67,19 @@ export function Game({ event, className, game, players, translations, title, wid
   );
 }
 
-function PlayerRow({ player, t, showCountry }: { player: GamePlayer & Player; t: Translator; showCountry?: boolean }) {
+function PlayerRow({
+  player,
+  t,
+  event,
+  locale,
+}: {
+  player: GamePlayer & Participant;
+  t: Translator;
+  event: EventContext;
+  locale: string;
+}) {
   const color = player.color ? <Stone color={player.color} className={`h-4 inline`} /> : '';
-  const name = player.id === 'BYE' ? 'BYE' : <PlayerName player={player} showCountry={showCountry} />;
+  const name = player.id === 'BYE' ? 'BYE' : <PlayerCell event={event} player={player} locale={locale} />;
 
   return (
     <div className={`flex items-center gap-1 text-l ${player.won ? 'font-bold' : ''}`}>

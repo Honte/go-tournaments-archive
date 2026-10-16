@@ -1,0 +1,17 @@
+website: https://goweb.cz/turnaj/mr-paru-2016/
+stages:
+  - type: tournament
+    name: Championship
+    file: czp2016.txt
+    scoringColumns:
+      - wins
+      - null
+      - sos
+      - sodos
+      - direct
+    breakers:
+      - wins
+      - sos
+      - sodos
+      - direct
+    findSharedPlaces: true

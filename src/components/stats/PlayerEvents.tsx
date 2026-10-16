@@ -1,7 +1,7 @@
 'use client';
 
 import { useMemo } from 'react';
-import type { PlayerStats, Stage } from '@/schema/data';
+import type { Player, PlayerStats, Stage } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getFormatter } from '@/i18n/formatter';
@@ -14,6 +14,7 @@ import { StatsTable } from '@/components/table/StatsTable';
 import type { StatsColumnDef } from '@/components/table/statsTableConfig';
 import { CountryLink } from '@/components/ui/CountryLink';
 import { H2 } from '@/components/ui/H2';
+import { PlayerCell } from '@/components/ui/PlayerCell';
 import { YearLink } from '@/components/YearLink';
 
 type PlayerEventsProps = {
@@ -23,6 +24,9 @@ type PlayerEventsProps = {
 };
 
 type EventRow = {
+  partner?: Player;
+  pairRank?: string;
+  pairCountry?: string;
   year: number;
   categories?: Record<string, number | '?'>;
   stage: Pick<Stage, 'name' | 'type'>;
@@ -51,6 +55,9 @@ export function PlayerEvents({ event, player, translations }: PlayerEventsProps)
 
         results.push({
           year: event.year,
+          partner: event.partner,
+          pairRank: event.pairRank,
+          pairCountry: event.pairCountry,
           name: event.name,
           categories: stage.categories,
           sgfs: new Set(stage.games.map((game) => game.props?.sgf).filter(Boolean)).size,
@@ -84,24 +91,46 @@ export function PlayerEvents({ event, player, translations }: PlayerEventsProps)
         cell: (info) => <YearLink event={event} locale={translations.locale} year={info.cell.getValue() as number} />,
       },
       {
+        enabled: hasMultipleStages,
         accessorKey: 'stage',
         header: t('table.stage'),
-        enabled: hasMultipleStages,
         cell: (info) => getStageName(info.row.original.stage, translations),
       },
       {
+        enabled: hasMultipleNames,
         accessorKey: 'name',
         header: t('table.name'),
-        enabled: hasMultipleNames,
       },
       {
         accessorKey: 'rank',
-        header: t('table.rank'),
+        header: t(event.pairs ? 'table.playerRank' : 'table.rank'),
       },
       {
+        enabled: Boolean(event.pairs),
+        id: 'partner',
+        accessorFn: (row) => row.partner?.name,
+        header: t('table.partner'),
+        meta: { className: 'text-left' },
+        cell: ({ row }) =>
+          row.original.partner && (
+            <PlayerCell event={event} locale={translations.locale} player={row.original.partner} />
+          ),
+      },
+      {
+        enabled: Boolean(event.pairs),
+        accessorKey: 'pairRank',
+        header: t('table.pairRank'),
+      },
+      {
+        enabled: Boolean(event.pairs && event.showCountry),
+        accessorKey: 'pairCountry',
+        header: t('table.pairCountry'),
+        cell: ({ row }) => <CountryLink event={event} translations={translations} code={row.original.pairCountry} />,
+      },
+      {
+        enabled: Boolean(event.showCountry && hasMultipleCountries),
         accessorKey: 'country',
         header: t('table.country'),
-        enabled: Boolean(event.showCountry && hasMultipleCountries),
         cell: (info) => <CountryLink event={event} code={info.row.original.country} translations={translations} />,
       },
       {
@@ -124,23 +153,23 @@ export function PlayerEvents({ event, player, translations }: PlayerEventsProps)
         header: t('table.won'),
       },
       {
+        enabled: hasDraws,
         accessorKey: 'drawn',
         header: t('table.drawn'),
-        enabled: hasDraws,
       },
       {
         accessorKey: 'lost',
         header: t('table.lost'),
       },
       {
+        enabled: hasUnresolved,
         accessorKey: 'unresolved',
         header: t('table.unresolved'),
-        enabled: hasUnresolved,
       },
       {
+        enabled: hasSgfs,
         accessorKey: 'sgfs',
         header: t('table.sgfs'),
-        enabled: hasSgfs,
         cell: ({ row }) => {
           const categories = Object.keys(row.original.categories ?? {});
           return (
@@ -150,7 +179,8 @@ export function PlayerEvents({ event, player, translations }: PlayerEventsProps)
               count={row.original.sgfs}
               filters={{
                 player: player.id,
-                country: row.original.country,
+                country: event.pairs ? row.original.pairCountry : row.original.country,
+                partner: row.original.partner?.id,
                 years: [row.original.year],
                 category: categories.length === 1 ? categories[0] : undefined,
               }}

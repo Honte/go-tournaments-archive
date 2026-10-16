@@ -1,0 +1,17 @@
+website: https://goweb.cz/2023/04/mistrovstvi-republiky-paru-2023/
+stages:
+  - type: tournament
+    name: Championship
+    file: czp2023.txt
+    scoringColumns:
+      - wins
+    breakers:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 1-2 2:W+2.5 round:6 sgf:2023/6-TerezaKotowskiJanProkop-TerezaVlckovaOndrejKruml.sgf ogs:https://online-go.com/review/1062548
+      - 1-3 1:B+R round:2 sgf:2023/2-TerezaKotowskiJanProkop-AnezkaBukovskaDusanJansky.sgf ogs:https://online-go.com/review/1061949
+      - 2-1 1:W+4.5 round:3 sgf:2023/3-TerezaVlckovaOndrejKruml-TerezaKotowskiJanProkop.sgf ogs:https://online-go.com/review/1061989
+      - 2-3 2:B+R round:4 sgf:2023/4-TerezaVlckovaOndrejKruml-AnezkaBukovskaDusanJansky.sgf ogs:https://online-go.com/review/1062041
+      - 3-1 1:W+16.5 round:5 sgf:2023/5-AnezkaBukovskaDusanJansky-TerezaKotowskiJanProkop.sgf ogs:https://online-go.com/review/1062487
+      - 3-2 2:W+R round:1 sgf:2023/1-AnezkaBukovskaDusanJansky-TerezaVlckovaOndrejKruml.sgf ogs:https://online-go.com/review/1061861

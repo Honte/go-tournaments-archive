@@ -144,7 +144,7 @@ function parseFixture() {
     id: 2026,
     stages: [stage],
     games: gamesMap,
-    players: playersMap,
+    participants: playersMap,
     hasSgfs: false,
   };
 

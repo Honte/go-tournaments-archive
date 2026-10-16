@@ -18,8 +18,7 @@ import { between } from '@/libs/math';
 import type { SgfData, SgfEdit, SgfMove, SgfPlayer } from '@/libs/sgf';
 import { Goban, type SgfPointer } from '@/components/goban/Goban';
 import { Stone } from '@/components/Stone';
-import { PlayerLink } from '@/components/ui/PlayerLink';
-import { PlayerName } from '@/components/ui/PlayerName';
+import { PlayerCell } from '@/components/ui/PlayerCell';
 import { Slider } from '@/components/ui/Slider';
 import { GameControlButton } from '@/components/viewer/GameControlButton';
 
@@ -323,16 +322,9 @@ function PlayerRow({
   return (
     <div className="flex items-center gap-2 text-sm">
       <Stone color={color} className="size-5" />
-      <PlayerLink
-        event={event}
-        playerId={player.id}
-        locale={locale}
-        className={clsx('min-w-0 truncate', {
-          'font-semibold': player.won,
-        })}
-      >
-        <PlayerName player={player} showCountry={event.showCountry} />
-      </PlayerLink>
+      <div className={clsx('min-w-0', { 'font-semibold': player.won })}>
+        <PlayerCell event={event} player={{ ...player, id: player.id ?? '' }} locale={locale} />
+      </div>
       <span className="ml-auto font-semibold">{prisoners ?? 0}</span>
     </div>
   );

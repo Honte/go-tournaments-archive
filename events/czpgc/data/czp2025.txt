@@ -1,0 +1,8 @@
+;[MRP2025] - After Round 3  https://goweb.cz/2025/03/mistrovstvi-republiky-paru-2025/
+; PC[CZ,Praha]
+; DT[2025-03-22,2025-03-23]
+;Place Name                                 Club     Level Score    1       2       3    Points  SODOS
+   1  Kadlecova Alzbeta 1k Berkman Tadeas     2d    1D  CZ xxx  2     4+    3-    2+     2     3 |15425091|15050739
+   2  Bukovska Anezka   1k Jansky Dusan       1k    1K  CZ xxx  2     3+    4+    1-     2     2 |15874947|15862946
+   3  Vasova Dita       1d Litovkin Rostislav 2k    1K  CZ xxx  1     2-    1+    4-     1     2 |15749921|17533230
+   4  Dankova Lenka     4k Danek Vladimir     5d    1D  CZ xxx  1     1-    2-    3+     1     1 |10513063|10213016

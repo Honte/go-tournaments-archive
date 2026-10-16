@@ -11,12 +11,12 @@ type TournamentMedalistsCardProps = {
 };
 
 export function TournamentMedalistsCard({ event, result, translations }: TournamentMedalistsCardProps) {
-  const { top, players } = result;
+  const { top, participants } = result;
 
   return (
     <article className="overflow-hidden rounded-xl border border-archive-border bg-archive-surface shadow-sm transition-shadow hover:shadow-md">
       <TournamentCardHeading event={event} tournament={result} translations={translations} />
-      <MedalRows event={event} players={players} top={top} translations={translations} />
+      <MedalRows event={event} players={participants} top={top} translations={translations} />
     </article>
   );
 }

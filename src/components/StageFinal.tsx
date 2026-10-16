@@ -1,7 +1,8 @@
-import type { FinalStage, Game, Player } from '@/schema/data';
+import type { FinalStage, Game, Participant } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations, Translator } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
+import { getParticipantName } from '@/libs/participants';
 import { GameResultLabel } from '@/components/GameResultLabel';
 import { Stone } from '@/components/Stone';
 import { PlayerLink } from '@/components/ui/PlayerLink';
@@ -12,7 +13,7 @@ type StageFinalProps = {
   event: EventContext;
   stage: FinalStage;
   games: Record<string, Game>;
-  players: Record<string, Player>;
+  players: Record<string, Participant>;
   translations: Translations;
 };
 
@@ -64,7 +65,7 @@ export function StageFinal({ event, stage, games, players, translations }: Stage
   );
 }
 
-function FinalSgfGame({ game, players, t }: { game: Game; players: Record<string, Player>; t: Translator }) {
+function FinalSgfGame({ game, players, t }: { game: Game; players: Record<string, Participant>; t: Translator }) {
   const winner = game.players.find((player) => player.won);
 
   if (!game.draw) {
@@ -81,7 +82,7 @@ function FinalSgfGame({ game, players, t }: { game: Game; players: Record<string
 
   return (
     <GameViewerButton sgfPath={game.props.sgf!} className="flex text-sm items-center px-3 py-1">
-      <span className="mr-1">{players[winner.id]?.name}:</span>
+      <span className="mr-1">{players[winner.id] && getParticipantName(players[winner.id])}:</span>
       {winner.color && <Stone color={winner.color} className="size-4" />}
       {winner.score ? `+${winner.score}` : '+?'}
     </GameViewerButton>

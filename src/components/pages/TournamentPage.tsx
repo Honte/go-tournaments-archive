@@ -30,7 +30,7 @@ export async function TournamentPage({ event, locale, year }: TournamentPageProp
     return notFound();
   }
 
-  const { games, players, stages, displayReversed = true, description } = tournament;
+  const { games, participants, stages, displayReversed = true, description } = tournament;
   const stagesToDisplay = displayReversed ? stages.toReversed() : stages;
 
   return (
@@ -51,7 +51,7 @@ export async function TournamentPage({ event, locale, year }: TournamentPageProp
           event={event}
           stage={stage}
           games={games}
-          players={players}
+          players={participants}
           translations={translations}
         />
       ))}

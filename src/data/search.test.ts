@@ -43,7 +43,7 @@ describe('search index generation', () => {
           location: 'Warszawa',
           country: 'PL',
           referee: 'Jan Kowalski',
-          players: {
+          participants: {
             localKzuk: { id: 'kzuk', country: 'PL' },
             localZno: { id: 'zno', country: 'PL' },
           },

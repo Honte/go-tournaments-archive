@@ -1,0 +1,13 @@
+;Pl. Name                                  Str      MMS   1    2    3    4    5   Pt  SOS  SOSOS  
+  1 Kleczkowska Klaudia 31k Chwedyna Kamil       31k 1d PL xxx  4    7+   8+   4+   5+   2-  4    14     70 |14801435|13513786 
+  2 Mazurek Katarzyna 31k Kamiński Marek         31k 2d PL xxx  4   10+   5-   7+   4+   1+  4    14     67 |13862167|13913823 
+  3 Kwietniewska Daria 31k Majka Marcin          31k 7k PL xxx  4    8-   7+  11+   6+   9+  4    10     61 |16062684|14713413 
+  4 Kaczorowska Małgorzata 31k Frejlak Stanisław 31k 2d PL xxx  3    6+   9+   1-   2-   5+  3    16     64 |13050543|12837594 
+  5 Moś Ewa 31k Jełowicki Patryk                 31k 1k PL xxx  3   11+   2+   8+   1-   4-  3    14     70 |13533047|15886629 
+  6 Barcicka Sylwia 31k Barcicki Artur           31k 5k PL xxx  3    4-  12+   9+   3-  10+  3    11     58 |13550790|14637227 
+  7 Rucka Anna 31k Cieślak Karol                 31k 5k PL xxx  2    1-   3-   2-  12+  11+  2    13     62 |16262367|14649228 
+  8 Straszewska Katarzyna 31k Bojar Andrzej      31k 2k PL xxx  2    3+   1-   5-  10-  12+  2    13     59 |13013968|10825837 
+  9 Kostrzewska Maria 31k Pawlaczyk Sebastian    31k 3k PL xxx  2   12+   4-   6-  11+   3-  2    11     61 |16262103|14562372 
+ 10 Sowińska Grazyna 31k Surma Mateusz           31k 4k PL xxx  2    2-  11-  12+   8+   6-  2    10     62 |14086237|12837968 
+ 11 Skibińska Paulina 31k Bednarczyk Dariusz    31k  6k PL xxx  1    5-  10+   3-   9-   7-  1    13     58 |15062674|14037826 
+ 12 Bojar Olga 31k Pawłowski Hubert             31k 12k PL xxx  0    9-   6-  10-   7-   8-  0    11     58 |13601214|15874837 

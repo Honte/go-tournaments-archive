@@ -1,19 +1,20 @@
 'use client';
 
-import type { Game, LeagueStage, Player, TableResult } from '@/schema/data';
+import type { Game, LeagueStage, Participant, TableResult } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
+import { isPair } from '@/libs/participants';
 import { Breaker as BreakerComponent } from '@/components/Breaker';
 import { GameCell } from '@/components/GameCell';
 import { GoResultsTable } from '@/components/table/GoResultsTable';
 import { CountryLink } from '@/components/ui/CountryLink';
-import { PlayerLink } from '@/components/ui/PlayerLink';
+import { PlayerCell } from '@/components/ui/PlayerCell';
 
 type TableLeagueProps = {
   event: EventContext;
   stage: LeagueStage;
-  players: Record<string, Player>;
+  players: Record<string, Participant>;
   games: Record<string, Game>;
   translations: Translations;
 };
@@ -25,7 +26,7 @@ export function TableLeague({ event, stage, players, games, translations }: Tabl
     (b) => b !== 'direct' && b !== 'rank' && !customBreakers?.[b]?.hidden
   );
   const categories = getCategoriesColumns(event, table);
-  const hasSharedPlaces = table.some((p) => p.index !== p.place);
+  const showRank = table.some((result) => players[result.id].rank);
 
   return (
     <div className="w-full overflow-x-auto">
@@ -35,11 +36,10 @@ export function TableLeague({ event, stage, players, games, translations }: Tabl
       >
         <thead className="border-b-gray-300 border-b">
           <tr className="text-center">
-            {hasSharedPlaces && <th className="p-1">{t('table.index')}</th>}
             <th className="p-1">{t('table.place')}</th>
             <th className="p-1 text-left">{t('table.name')}</th>
-            <th className="p-1">{t('table.rank')}</th>
-            {event.showCountry && <th className="p-1">{t('table.country')}</th>}
+            {showRank && <th className="p-1">{t(event.pairs ? 'table.pairRank' : 'table.rank')}</th>}
+            {event.showCountry && <th className="p-1">{t(event.pairs ? 'table.pairCountry' : 'table.country')}</th>}
             {rounds.map((round, index) => (
               <th className="p-1" key={index}>
                 {t('table.round', String(index + 1))}
@@ -68,21 +68,25 @@ export function TableLeague({ event, stage, players, games, translations }: Tabl
 
             return (
               <tr key={result.id} className="text-center even:bg-archive-row-stripe cursor-default!">
-                {hasSharedPlaces && <td className="p-1">{result.index}</td>}
-                <td className="p-1">{i === 0 || result.place !== table[i - 1].place ? result.place : ''}</td>
-                <td className="p-1 text-left">
-                  <PlayerLink
-                    event={event}
-                    playerId={player.hasStats ? player.id : undefined}
-                    locale={translations.locale}
-                  >
-                    {player.name}
-                  </PlayerLink>
+                <td className="p-1">
+                  {i > 0 && result.place === table[i - 1].place ? `(${result.index})` : result.index}
                 </td>
-                <td className="p-1">{player.rank}</td>
+                <td className="p-1 text-left">
+                  <PlayerCell
+                    event={event}
+                    player={player}
+                    locale={translations.locale}
+                    showLink={isPair(player) || player.hasStats}
+                    showCountry={
+                      event.showCountry && isPair(player) && player.members[0].country !== player.members[1].country
+                    }
+                    showRank={isPair(player)}
+                  />
+                </td>
+                {showRank && <td className="p-1">{player.rank}</td>}
                 {event.showCountry && (
                   <td className="p-1">
-                    {player.hasStats ? (
+                    {isPair(player) || player.hasStats ? (
                       <CountryLink event={event} code={player.country} translations={translations} />
                     ) : (
                       player.country
