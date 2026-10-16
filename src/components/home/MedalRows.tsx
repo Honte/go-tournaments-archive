@@ -45,7 +45,7 @@ export function MedalRows({ event, players, top, translations }: MedalRowsProps)
                           event={event}
                           player={member}
                           locale={translations.locale}
-                          showRank={false}
+                          showRank={true}
                         />
                       ))}
                     </div>

@@ -80,7 +80,8 @@ export function TableLeague({ event, stage, players, games, translations }: Tabl
                     showCountry={
                       event.showCountry && isPair(player) && player.members[0].country !== player.members[1].country
                     }
-                    showRank={isPair(player)}
+                    showMembersRank={true}
+                    showRank={false}
                   />
                 </td>
                 {showRank && <td className="p-1">{player.rank}</td>}
