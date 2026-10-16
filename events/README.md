@@ -402,10 +402,12 @@ Set `pairs: true` in the event configuration. Every edition and stage then uses 
 people and cannot change members within an edition. The order in the source controls presentation, without gender
 fields in the application model. Pair identities use the two canonical person IDs, irrespective of their order.
 
-H9 accepts two underscore-separated full names, two surname/name blocks, or surname/name blocks with individual
-ranks and optional countries. Follow these with the pair rank and country, then the usual club, scores and rounds.
+Each H9 row starts with the place, then two `surname name rank` blocks, followed by the pair rank and country,
+an optional club, and the usual scores and rounds. Individual ranks and the pair rank are required; use underscores
+within multi-word surnames or given names. The country is either one two-letter code for both members (`PL`) or two
+codes in member order (`PLDE`); different member countries give the pair country `XX`.
 Two EGD identifiers may follow as `|123|456`, including directly after the final score. The pair rank is never
-calculated; `unknownRanks` applies to both pair and individual ranks. A missing individual country uses the pair's.
+calculated; `unknownRanks` applies to both pair and individual ranks.
 
 YAML retains string player declarations; use local pair IDs in `order` and `top`:
 
