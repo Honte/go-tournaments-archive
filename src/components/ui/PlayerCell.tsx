@@ -10,6 +10,7 @@ export type PlayerCellProps = {
   locale: string;
   showLink?: boolean;
   showRank?: boolean;
+  showMembersRank?: boolean;
   showCountry?: boolean;
 };
 
@@ -19,6 +20,7 @@ export function PlayerCell({
   locale,
   showLink = true,
   showRank = true,
+  showMembersRank = false,
   showCountry = event.showCountry,
 }: PlayerCellProps) {
   if (player.members) {
@@ -32,7 +34,7 @@ export function PlayerCell({
               event={event}
               player={member}
               locale={locale}
-              showRank={false}
+              showRank={showMembersRank}
               showCountry={showMemberCountries}
             />
           </Fragment>
