@@ -1,0 +1,29 @@
+; EV[8th European Pair Go Championship]
+; PC[UK, Maidenhead]
+; DT[2005-04-23,2005-04-24]
+;https://www.britgo.org/tournaments/2005/europairgo/index.html
+;Posn	No	Name	Rank	Club	1	2	3	4	5	6	Wins	MMS	SOS	SODOS
+   1 Ente Lisa             31k Teuber Benjamin    31k   5d DE   xxxx  14+   3+   7+   8+   4+   2-    12    64    52     5 |10862962|10437174
+   2 Lindemeyer Manuela    31k Marz Michael       31k   3d DE   xxxx  13+  17+   8+   4-   5+   1+    12    61    50     5 |13062412|10225347
+   3 Kovaleva Natalia      31k Sankin Timur       31k   4d RU   xxxx  18+   1-   6+   7+  10+   4+    12    61    49     5 |10537087|10801032
+   4 Hricova Jana          31k Silt Ondrej        31k   3d CZ   xxxx   5+  12+  13+   2+   1-   3-    11    66    42     4 |10233509|10337481
+   5 Regan Natasha         31k Cocke Matthew      31k   3d UK   xxxx   4-  15+  12+   9+   2-  10+    11    62    39     4 |12301146|10262021
+   6 Healey Kirsty         31k Macfadyen Matthew  31k   4d UK   xxxx   9-  14+   3-  18+   8+   7+    11    58    36     4 |10698809|10249019
+   7 Buntsma Els           31k Groenen Geert      31k   3d NL   xxxx  15+  11+   1-   3-   9+   6-    10    64    29     3 |10250845|10501216
+   8 Koenig Katarzyna      31k Kraszek Janusz     31k   3d PL   xxxx  10+   9+   2-   1-   6-  13+    10    64    29     3 |10449890|10637924
+   9 Cristiani Myrtille    31k Drouot Paul        31k   4d FR   xxxx   6+   8-  16+   5-   7-  11+    10    61    30     3 |10725935|10337239
+  10 Kuriene Laimute       31k Ugenskas Donatas   31k   1k LT   xxxx   8-  18+  11+  14+   3-   5-    10    59    26     3 |10586092|12762530
+  11 Lassakova Lucia       31k Svec Ivo           31k   2k SK   xxxx  16+   7-  10-  13+  12+   9-    10    58    28     3 |10274693|10233652
+  12 Miskolczi Szonja      31k Csizmadia Gyorgy   31k   2d HU   xxxx  17+   4-   5-  15+  11-  14+    10    58    26     3 |12501038|12698928
+  13 Bexfield Alison       31k Bexfield Simon     31k   2d UK   xxxx   2-  16+   4-  11-  17+   8-     9    60    17     2 |10201081|10237128
+  14 Radcliffe Jessica     31k Selby Alex         31k   3k UK   xxxx   1-   6-  18+  10-  15+  12-     9    59    16     2 |13998490|10225083
+  15 Segerman Jil          31k Brooks William     31k   3k UK   xxxx   7-   5-  17+  12-  14-  19+     9    55    15     2 |10837013|10862247
+  16 Paterson Sue          31k Mills Gerry        31k   2k UK   xxxx  11-  13-   9-  20+  18+  22-     9    47    14     2 |10201158|10249074
+  17 Harvey Helen          31k Harvey Martin      31k   2k UK   xxxx  12-   2-  15-  21+  13-  23-     8    50     6     1 |10486982|10401985
+  18 Hurden Nicola         31k Goss Simon         31k   3k UK   xxxx   3-  10-  14-   6-  16-  24-     7    53     0     0 |10613823|10462859
+  19 Brooks Elinor         31k Hall Eric          31k   6k UK   xxxx  20+  21+  23-  22-  24+  15-     7    32    15     3 |10574674|10525658
+  20 Chai Jackie           31k Johnstone John     31k   6k UK   xxxx  19-  23+  24+  16-  22-  21+     7    32    12     3 |10586653|10513679
+  21 Teles_de_Menezes Ines 31k Teles-Menezes Jose 31k   7k PT   xxxx  24+  19-  22+  17-  23+  20-     6    32    10     3 |10533017|10313831
+  22 Tabor Maria           31k Tabor Paul         31k  10k UK   xxxx  23-  24+  21-  19+  20+  16+     4    35    25     4 |13701435|13762430
+  23 Zarcone A             31k Minieri Davide     31k  10k IT   xxxx  22+  20-  19+  24+  21-  17+     4    34    21     4 |00000000|12801602
+  24 Bailey Pauline        31k Bailey Steve       31k   9k UK   xxxx  21-  22-  20-  23-  19-  18+     2    35     7     1 |10537692|10574652

@@ -1,0 +1,28 @@
+; EV[16th European Pair Go Championship]
+;Place 	Name 	Cy 	Grade 	1 	2 	3 	4 	5 	6 	Wins 	SOS 	SODOS
+; PC[NL, Amsterdam]
+; DT[2013-05-11,2013-05-12]
+   1 Shikshina Svetlana    31k Shikshin Ilja       31k   7D RU   xxx    7+  11+   3+   2+   6+   4+     6    24    24 |10301236|12013342
+   2 Zaloudkova Klara      31k Hora Jan            31k   5D CZ   xxx   21+  10+   9+   1-   7+   3+     5    23    17 |10798106|10401083
+   3 Kovaleva Natalia      31k Vashurov Alexandr   31k   5D RU   xxx   18+  13+   1-   9+   8+   2-     4    24    13 |10537087|13062764
+   4 Bocle Milena          31k Campagnie Remi      31k   4D FR   xxx   16+  12+   5+   8-  11+   1-     4    22    12 |14362018|15449269
+   5 Marz Manja            31k Marz Michael        31k   4D DE   xxx   15+   8+   4-   6-  17+  11+     4    20    12 |13062412|10225347
+   6 Cao Ngoc-Trang        31k Fenech Antoine      31k   3D FR   xxx   24+   9-  12+   5+   1-  13+     4    20    10 |14586693|10349350
+   7 Mazurek Katarzyna     31k Kaminski Marek      31k   1D PL   xxx    1-  20+  17+  16+   2-  14+     4    20     9 |13862167|13913823
+   8 Pocsai Rita           31k Marko Peter         31k   4D HU   xxx   22+   5-  10+   4+   3-  17+     4    19    11 |10686346|14513895
+   9 Ente Lisa             31k Knauf Torsten       31k   3D DE   xxx   17+   6+   2-   3-  23+  10+     4    19    10 |10862962|10962963
+  10 Avram Laura           31k Nicolaie Lucian     31k   3D RO   xxx   14+   2-   8-  12+  18+   9-     3    21     8 |12698620|10601349
+  11 Suciu Irina           31k Calota Lucretiu     31k   2D RO   xxx   20+   1-  14+  18+   4-   5-     3    21     7 |10337261|10350395
+  12 Dubiel Marika         31k Vieveen Jos         31k   3D NL   xxx   19+   4-   6-  10-  20+  16+     3    17     6 |14301617|10549231
+  13 Bartova Jitka         31k Kozelek Tomas       31k   3D CZ   xxx   23+   3-  18-  21+  15+   6-     3    16     6 |13849748|13850342
+  14 Buntsma Els           31k Jong Merijn_de      31k   1D NL   xxx   10-  21+  11-  19+  16+   7-     3    16     6 |10250845|10449472
+  15 Zhang Ailian          31k Aussibal Gabriel    31k   3K FR   xxx    5-  22+  16-  24+  13-  19+     3    13     4 |14613126|15350720
+  16 Lebastard Laura       31k Salignon Jerome     31k   1D FR   xxx    4-  19+  15+   7-  14-  12-     2    19     5 |15413134|10825628
+  17 Straszewska Katarzyna 31k Straszewski Jakub   31k   1K PL   xxx    9-  24+   7-  23+   5-   8-     2    17     1 |13013968|12813625
+  18 Artigny Julie         31k Papazoglou Benjamin 31k   1D FR   xxx    3-  23+  13+  11-  10-  22-     2    16     4 |12801426|10733712
+  19 Regan Natasha         31k Cocke Matthew       31k   2D UK   xxx   12-  16-  22+  14-  21+  15-     2    15     4 |12301146|10262021
+  20 Overbeek Marieke      31k Tel Michiel         31k   2D NL   xxx   11-   7-  21-  22+  12-  23+     2    15     3 |13062368|14333682
+  21 Roelofs Yvonne        31k Eijkhout Michiel    31k   2D NL   xxx    2-  14-  20+  13-  19-  24+     2    15     2 |10725792|10486410
+  22 Diederen Marianne     31k Aaij Rene           31k   2D NL   xxx    8-  15-  19-  20-  24+  18+     2    13     2 |10598412|10537560
+  23 Havik Tamara          31k Au Ming             31k   2K NL   xxx   13-  18-  24+  17-   9-  20-     1    13     0 |14733961|13949573
+  24 Siivola Sinikka       31k Siivola Matti       31k   2K FI   xxx    6-  17-  23-  15-  22-  21-     0    14     0 |10262791|10286782

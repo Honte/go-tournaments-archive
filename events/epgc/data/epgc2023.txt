@@ -1,0 +1,18 @@
+; EV[25th European Pair Go Championship]
+; PC[SE, Leksand]
+; DT[2023-08-16,2023-08-18]
+;Pl 	Name 	Rank 	Co 	R1 	R2 	R3 	R4 	R5 	R6 	MMS 	SOS 	SOSOS
+   1 Marz Manja         31k Obenaus Johannes         31k   5D DE   xxxx   5-   6+   7+   2+   4+   3+     7    32   188     5 |13062412|13049795
+   2 Ougier Ariane      31k Drean-Guenaizia Benjamin 31k   6D FR   xxxx   8+   3+   5+   1-   6+   4+     7    32   185     5 |15774187|14513532
+   3 Avram Laura        31k Dobranis Denis           31k   4D RO   xxxx   6+   2-   4-   8+   5+   1-     5    34   183     3 |12698620|15350038
+   4 Chernova Mariia    31k Bogatskyy Dmytro         31k   3D UA   xxxx   7-   8+   3+   5+   1-   2-     5    34   180     3 |18562819|10250867
+   5 Waahlin Lova       31k Aakerblom Charlie        31k   4D SE   xxxx   1+   7+   2-   4-   3-  12+     5    31   176     3 |16425849|13286603
+   6 Tomsu Adriana      31k Podpera Lukas            31k   5D CZ   xxxx   3-   1-   9+   7+   2-  13+     5    30   160     3 |16225396|13201914
+   7 Medak Mirta        31k Medak Stjepan            31k   3D HR   xxxx   4+   5-   1-   6-  11+  10+     5    27   161     3 |16525718|17437574
+   8 Reisenegger Renate 31k Welticke Jonas           31k   5D DE   xxxx   2-   4-  14+   3-   9+  11+     5    24   154     3 |19625298|15786287
+   9 Okano Haruna       31k Praz Sylvain             31k   1K CH   xxxx  12+  13+   6-  10+   8-  14+     4    18   122     4 |12098207|15650547
+  10 Bukovska Anezka    31k Jansky Dusan             31k   1K CZ   xxxx  11+  12-  13+   9-  14+   7-     3    16   115     3 |15874947|15862946
+  11 Kohonen Sari       31k Laatikainen Vesa         31k   1D FI   xxxx  10-  14-  12+  13+   7-   8-     2    18   119     2 |10262142|10201015
+  12 Hrdinova Lubica    31k Hrdina Marian            31k   1K SK   xxxx   9-  10+  11-  14+  13-   5-     2    17   118     2 |12686927|10250658
+  13 Chernova Vira      31k Savytskyi Avhust         31k   5K UA   xxxx  14+   9-  10-  11-  12+   6-     2    17   117     2 |18962647|19237185
+  14 Takacova Lucia     31k Svec Ivo                 31k   2K SK   xxxx  13-  11+   8-  12-  10-   9-     1    18   110     1 |10274693|10233652

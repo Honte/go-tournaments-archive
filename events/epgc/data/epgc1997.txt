@@ -1,0 +1,19 @@
+; EV[1st European Pair Go Championship]
+; PC[NL, Amstelveen]
+;june - results before quarterfinals unknown
+   1 Trepczik Britta   31k Gerlach Christoph 31k  31k DE   xxxx   0+   5+   3+   2+     4 |10337195|10225017
+   2 Healey Kirsty     31k Macfadyen Matthew 31k  31k UK   xxxx   0+   7+   4+   1-     3 |10698809|10249019
+   3 Diederen Marianne 31k Zandveld Peter    31k  31k NL   xxxx   0+   6+   1-   0=     2 |10598412|10250823
+   4 Rapmund Antje     31k Sannes Paal       31k  31k NO   xxxx   0+   8+   2-   0=     2 |10498862|10233047
+   5 Dicky Anne        31k Dicky Herve       31k  31k FR   xxxx   0+   1-   0=   0=     1 |10437031|10425382
+   6 Frehe Renee       31k Kok Rob           31k  31k NL   xxxx   0+   3-   0=   0=     1 |10313248|10562409
+   7 Koszegi Diana     31k Pocsai Tibor      31k  31k HU   xxxx   0+   2-   0=   0=     1 |10301247|10425217
+   8 Kohonen Sari      31k Laatikainen Vesa  31k  31k FI   xxxx   0+   4-   0=   0=     1 |10262142|10201015
+   9 Burvenich Claude  31k Wettach Alain     31k  31k BE   xxxx   0-   0=   0=   0=     0 |10301786|10437548
+  10 Snepova Lenka     31k Dach Karel        31k  31k CZ   xxxx   0-   0=   0=   0=     0 |10250724|10298508
+  11 Mauri Francesca   31k Montrasio Paolo   31k  31k IT   xxxx   0-   0=   0=   0=     0 |10398157|10474926
+  12 Lubos Aleksandra  31k Lubos Jan         31k  31k PL   xxxx   0-   0=   0=   0=     0 |10674928|10337613
+  13 Mateescu Carmen   31k Bisca Mihai       31k  31k RO   xxxx   0-   0=   0=   0=     0 |10486465|10301390
+  14 Guskova Irina     31k Trunilin Ilja     31k  31k RU   xxxx   0-   0=   0=   0=     0 |10562079|10433830
+  15 Hernaus Vida      31k Pintar Rado       31k  31k SI   xxxx   0-   0=   0=   0=     0 |10613460|10325623
+  16 Dumermuth Ursula  31k Morrison Roberto  31k  31k CH   xxxx   0-   0=   0=   0=     0 |10350802|10349493

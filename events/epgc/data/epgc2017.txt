@@ -1,0 +1,33 @@
+; EV[20th European Pair Go Championship]
+; PC[FR, Strasbourg]
+; DT[2017-04-01,2017-04-02]
+;https://web.archive.org/web/20170907141054/http://pairgo.gostrasbourg.fr/results/
+;Pl 	Name 	Gr 	Co 	NbW 	R1 	R2 	R3 	R4 	R5 	R6 	MMS 	SOS 	SOSOS
+   1 Kovaleva Natalia       5d Surin Dmitrij          6d   5D RU   xxx    8+/b0   9+/w0   4+/b0   2+/b0   3+/b0   7+/w0    31   172  1033     6 |10537087|10825254
+   2 Zhao Pei               6d Kraemer Lukas          6d   6D DE   xxx   10+/w0   6+/b0   3+/w0   1-/w0   7+/b0   4+/w0    30   174  1026     5 |10201235|14698739
+   3 Shikshina Svetlana     7d Shikshin Ilja          7d   7D RU   xxx   11+/w0   5+/b0   2-/b0   6+/b0   1-/w0  12+/w0    29   175  1008     4 |10301236|12013342
+   4 Straszewska Katarzyna  1k Surma Mateusz          7d   3D PL   xxx   22+/b0   7+/w0   1-/w0   5+/b0   8+/w0   2-/b0    29   172  1015     4 |13013968|12837968
+   5 Zaloudkova Klara       3d Hora Jan               6d   4D CZ   xxx   19+/b0   3-/w0   9+/b0   4-/w0  15+/b0  10+/b0    29   167  1015     4 |10798106|10401083
+   6 Marz Manja             3d Palant Michael         4d   4D DE   xxx   20+/b0   2-/w0  25+/w0   3-/w0   9+/w0   8+/b0    29   166  1011     4 |13062412|10249250
+   7 Ente Lisa              3d Teuber Benjamin        6d   4D DE   xxx   14+/w0   4-/b0  12+/w0  10+/b0   2-/w0   1-/b0    28   173  1016     3 |10862962|10437174
+   8 Vielfaure Charlotte    2k Debarre Thomas         6d   2D FR   xxx    1-/w0  16+/b0  11+/w0  19+/b0   4-/b0   6-/w0    28   170  1005     3 |12362064|12950872
+   9 Cao Ngoc-Trang         2d Fenech Antoine         5d   3D FR   xxx   16+/w0   1-/b0   5-/w0  21+/b0   6-/b0  15+/b0    28   169   992     3 |14586693|10349350
+  10 Avram Laura            2d Ghetu George_Cristian  3d   2D RO   xxx    2-/b0  22+/w0  14+/b0   7-/w0  11+/b0   5-/w0    28   168  1006     3 |12698620|10325293
+  11 Leung Joanne           2d Poltronieri Bruno      3d   2D UK   xxx    3-/b0  20+/w0   8-/b0  13+/b0  10-/w0  14+/w0    28   166  1005     3 |17037350|16086059
+  12 Jumelin Macha          8k le_Calve Tanguy        6d   1K FR   xxx   18+/b0  19+/w0   7-/b0  14+/w0  21+/w0   3-/b0    28   163   993     4 |17562237|14962706
+  13 Lebastard Laura        6k Salignon Jerome        5d   1K FR   xxx   15+/w0  14-/b0  16+/b0  11-/w0  19+/w0  20+/b0    28   161   990     4 |15413134|10825628
+  14 Artigny Julie          3k Papazoglou Benjamin    5d   1D FR   xxx    7-/b0  13+/w0  10-/w0  12-/b0  16+/w0  11-/b0    27   167   993     2 |12801426|10733712
+  15 Berreby Monique        1k Clergue Olivier        2d   1K FR   xxx   13-/b0  17+/b0  20+/w0  22+/b0   5-/w0   9-/w0    27   164   974     3 |10374562|10349548
+  16 Ruzhanska Kamilla      9k Kachanovskyi Mykhailo  3d   4K UA   xxx    9-/b0   8-/w0  13-/w0  25+/b0  14-/b0  23+/w0    27   162   978     2 |14233285|12649175
+  17 Stellwag Emma          7k Gronau Max             1d   3K DE   xxx   24+/b0  15-/w0  19-/w0  26+/b0  25+/b0  21+/b0    27   154   946     4 |17974605|16337178
+  18 Quathamer Janntje      8k Ruzicka Martin         4d   1K DE   xxx   12-/w0  25-/b0  26+/b0      0=  27+/w0  19+/b0    27   150   931     3 |17962604|13037596
+  19 Bosnjak Natasa         2k Dubakovic Dragan       3d   1K RS   xxx    5-/w0  12-/b0  17+/b0   8-/w0  13-/b0  18-/w0    26   167   965     1 |10637506|10637451
+  20 Kralikova Zuzana       3k Jadron Milan           1d   2K SK   xxx    6-/w0  11-/b0  15-/b0  23-/w0  24+/w0  13-/w0    26   164   958     1 |15801764|10201653
+  21 Gauthier Julie         8k Naddef Jean_Loup       4d   3K FR   xxx   23+/b0  24+/b0  22+/w0   9-/w0  12-/b0  17-/w0    26   161   946     3 |13098371|14233054
+  22 Medak Mirta            4k Medak Damir            2k   4K HR   xxx    4-/w0  10-/b0  21-/b0  15-/w0  23-/b0  27+/b0    26   159   969     1 |16525718|16533715
+  23 Waelde Simone          3k Haas Richard           1k   2K DE   xxx   21-/w0  26-/b0  27+/w0  20+/b0  22+/w0  16-/b0    26   152   944     3 |15449324|15250147
+  24 Zhang Ailian           4k Aussibal Gabriel       1d   3K FR   xxx   17-/w0  21-/w0  28+/b0  27+/b0  20-/b0  25+/w0    26   149   929     3 |14613126|15350720
+  25 Boelens Anne           2k Albers Joost           1k   3K NL   xxx   27+/b0  18+/w0   6-/b0  16-/w0  17-/w0  24-/b0    25   159   933     2 |17274246|10550903
+  26 Mougin Deborah         9k Delli-Zotti Mathieu    3d   4K FR   xxx   28+/b0  23+/w0  18-/w0  17-/w0      0=      0=    24   146   859     2 |16262598|14525643
+  27 Berger Silvia          4k Berner Stefan          5k   5K CH   xxx   25-/w0  28+/b0  23-/b0  24-/w0  18-/b0  22-/w0    23   152   908     1 |15237849|15201857
+  28 Aresti Popi           10k Katsouris Dimitris     1d   7K CY   xxx   26-/w0  27-/w0  24-/w0      0=      0=      0=    22   139   843     0 |00000000|16750129

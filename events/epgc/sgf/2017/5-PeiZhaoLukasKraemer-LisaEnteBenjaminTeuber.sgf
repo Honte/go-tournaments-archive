@@ -1,0 +1,89 @@
+(;CA[windows-1250]NW[37]NB[37]LT[]RR[Normal]C[
+ EPGC2 9d?\: This game will be Pei/Kraemer against Ente/Teuber (Germany everyone)
+ EPGC2 9d?\: Pei and Kraemer will be black
+ EPGC2 9d?\: European Pair Go Championship Round 5\: Pei&Kraemer (B) vs Ente&Teuber (W)
+]
+AP[MultiGo:4.4.4]SZ[19]GM[1]GN[European Pair Go Championship Round 5\: vs Ente&Teuber (W)]
+EV[Internet Go Server game\: EPGC2 vs EPGC2]RO[5]DT[2017-04-02]PC[IGS\:  igs.joyjoy.net 6969]
+PB[ Pei & Kraemer (B)]BR[9d?]PW[Ente Teuber]WR[9d?]KM[6.5]TM[0]RE[B+Resign]US[Brought to you by IGS PANDANET]
+CP[
+  Copyright (c) PANDANET Inc. 2017
+  Permission to reproduce this game is given, provided proper credit is given.
+  No warrantee, implied or explicit, is understood.
+  Use of this game is an understanding and agreement of this notice.
+]
+MULTIGOGM[1]
+;B[pp]BL[0];W[dd]WL[0];B[cp]BL[0];W[pd]WL[0];B[cf]BL[0];W[fc]WL[0];B[dj]BL[0];W[fq]
+WL[0];B[hq]BL[0];W[dr]WL[0];B[ep]BL[0];W[fp]WL[0];B[eq]BL[0];W[er]WL[0];B[cq]BL[0]
+;W[gr]WL[0];B[fo]BL[0];W[hp]WL[0];B[go]BL[0];W[ip]WL[0];B[qf]BL[0];W[qh]WL[0];B[qc]
+BL[0];W[qd]WL[0];B[pc]BL[0];W[od]WL[0];B[rd]BL[0];W[re]WL[0];B[rc]BL[0];W[qe]WL[0]
+;B[nc]BL[0];W[qn]WL[0];B[nq]BL[0]C[
+ Robfripp 1d?\: Hi, who play ?
+ EPGC2 9d?\: Pei&Krämer (B) vs Ente&Teuber (W)
+ Robfripp 1d?\: thx
+]
+;W[me]WL[0];B[kq]BL[0];W[iq]WL[0];B[rp]BL[0];W[mc]WL[0];B[nb]BL[0];W[pk]WL[0]C[
+ Schachus 8k \: the move order in the joseki in lower left seems odd
+]
+;B[bd]BL[0];W[cc]WL[0];B[ef]BL[0];W[en]WL[0];B[eo]BL[0];W[dk]WL[0];B[ek]BL[0];W[dl]
+WL[0];B[cj]BL[0];W[el]WL[0];B[fk]BL[0];W[gm]WL[0];B[cm]BL[0];W[hl]WL[0];B[bl]BL[0]
+;W[ro]WL[0];B[qo]BL[0];W[po]WL[0];B[qp]BL[0];W[id]WL[0];B[kc]BL[0];W[kd]WL[0];B[ij]
+BL[0];W[kj]WL[0];B[jh]BL[0];W[lh]WL[0]C[
+ hogweed 1d \: sorry, but who is playing?
+ EPGC2 9d?\: Pei&Krämer (B) vs Ente&Teuber (W)
+]
+;B[qm]BL[0];W[pn]WL[0];B[qk]BL[0]C[
+ hogweed 1d \: does that really work
+];W[pj]
+WL[0];B[rm]BL[0];W[rn]WL[0];B[ol]BL[0];W[nn]WL[0];B[om]BL[0];W[np]WL[0];B[mp]BL[0]
+;W[mm]WL[0]C[
+ Schachus 8k \: it would better work somehow, else black is screwed
+]
+;B[ml]BL[0]C[
+ hogweed 1d \: to me they look screwed, but maybe i am an evil doubter
+]
+;W[no]WL[0];B[mq]BL[0];W[ll]WL[0];B[rf]BL[0];W[pf]WL[0];B[lm]BL[0];W[ln]WL[0]C[
+ Schachus 8k \: maybe they think so too, I feel like they are not really agreeing about where to try make it work
+]
+;B[qi]BL[0];W[qj]WL[0]C[
+ pingu007 1d?\: who are the players pls?
+ EPGC2 9d?\: Pei&Krämer (B) vs Ente&Teuber (W)
+ pingu007 1d?\: tx
+ pingu007 1d?\: b looks in trouble here
+]
+;B[lk]BL[0];W[km]WL[0];B[kl]BL[0];W[lm]WL[0];B[kk]BL[0];W[nk]WL[0];B[ri]BL[0];W[qg]
+WL[0];B[ok]BL[0];W[oj]WL[0];B[nj]BL[0];W[mk]WL[0];B[rj]BL[0];W[rk]WL[0];B[ql]BL[0]
+;W[oc]WL[0];B[ob]BL[0];W[mj]WL[0];B[sk]BL[0];W[jj]WL[0];B[ik]BL[0];W[jk]WL[0];B[il]
+BL[0];W[ii]WL[0];B[hi]BL[0];W[jl]WL[0];B[ih]BL[0];W[im]WL[0];B[hn]BL[0];W[ji]WL[0]
+;B[gj]BL[0];W[hh]WL[0];B[hg]BL[0];W[gh]WL[0];B[gg]BL[0];W[fi]WL[0];B[if]BL[0];W[gk]
+WL[0];B[fj]BL[0];W[hj]WL[0];B[gi]BL[0];W[lc]WL[0];B[bc]BL[0];W[pi]WL[0];B[nd]BL[0]
+;W[ne]WL[0];B[jc]BL[0];W[jd]WL[0];B[hc]BL[0];W[ic]WL[0];B[ib]BL[0];W[hd]WL[0];B[gc]
+BL[0];W[fd]WL[0];B[lb]BL[0];W[mb]WL[0];B[fb]BL[0];W[jb]WL[0];B[kb]BL[0];W[hb]WL[0]
+;B[ja]BL[0];W[gb]WL[0];B[ma]BL[0];W[cr]WL[0];B[br]BL[0];W[bs]WL[0];B[ar]BL[0];W[jr]
+WL[0];B[kr]BL[0]C[
+ OferZivo 6d+\: just entered.. this game looks better than the other one
+]
+;W[ks]WL[0];B[ls]BL[0];W[js]WL[0];B[lr]BL[0];W[sp]WL[0];B[sq]BL[0];W[so]WL[0]C[
+ OferZivo 6d+\: who's playing?
+]
+;B[rr]BL[0];W[rg]WL[0]C[
+ EPGC2 9d?\: Pei&Krämer (B) vs Ente&Teuber (W)
+];B[si]
+BL[0];W[bb]WL[0]C[
+ OferZivo 6d+\: thx
+];B[fl]BL[0];W[fm]WL[0];B[cd]BL[0];W[db]
+WL[0];B[ha]BL[0];W[gd]WL[0];B[ga]BL[0];W[de]WL[0];B[df]BL[0];W[eb]WL[0];B[kf]BL[0]
+;W[lf]WL[0];B[kh]BL[0];W[kg]WL[0];B[jg]BL[0];W[lg]WL[0];B[ki]BL[0]C[
+ OferZivo 6d+\: why so fast?
+]
+;W[li]WL[0];B[ce]BL[0]C[
+ EPGC2 9d?\: lost track of yose
+ EPGC2 9d?\: too fast
+ OferZivo 6d+\: how much time do they have?
+ EPGC2 9d?\: 1 minute each left
+ EPGC2 9d?\: game finished
+ EPGC2 9d?\: counting
+ EPGC2 9d?\: B+8.5
+ OferZivo 6d+\: thx
+]
+;OS[a060806][A2582rit][a292939][a779][abraxis5][Acsabel][ADAIGO][adavies][ADing][Adsa][AI130630][aita89][ajwn4019][ananbibi][anhduy8194][ARARE][ashidat][asten][ayaha][ayugoru][baian][bell117][Bombadilum][bouzu][Breakhorn][cafca][changyw][Chaohu][chris12332][CRARDxRA][CRCAkTdE][CRCerqme][CRcUIYsq][CRECIXFo][CRgZEDYQ][CRJlpkCc][CRLEDOHO][CRlOsKdc][CRmdvtKi][CRmhgpxu][CRmYHDaD][CRnqsRDx][CRpDfGwq][CRPktIee][CRQ0723][CRQfqras][CRqgejEL][CRQtAfIf][CRVrDJva][CRWPspSJ][CRWskZYR][CRxnAlkX][CRYsGbEF][CRZsqZxc][cyobi][Daichan55][DanielV][deadtree1][direct][doraemon2][Doubh][Duffer][ECO777][Emag][EmerGo][enoppi][EPGC][EPGC3][esmeralda][ezodeer][f6391][fboutoille][Fess][Fiasco4227][FirstEagle][FolkWwh][FRank][fuku01][GeorgeH][goaution][Goggle][gopard][Greenfuse][grenouille][GS975][guts][h1013][H194H][h21825][h3725s][h8854][hachigome][hank812k1][HansWerner][hash5685][HASHIGODAN][hataruiki][hebojii79][HEBOKOSUMI][Hendysat][Hidan][Hide1949][Hidoshito][hippophile][HISA3][hogweed][Hope555][hu1982][huffle][hwspan][hzwb6150][IGOWORLDR][im12270924][indo4348][ir1288][ISAO130][isor][Iwan][j1818][jacksonsz][Jackyckk][JeffChang][jira9026][Jirtourn][joachim][Jun114][JYPPZ][k4647k][kabigon][Kann][Kawaguchi][kingchess][kj007][klaus9][klkl88][knaka13][Koldun][KomatuGo][Kotouy][kouji55][kt2009][kuhiko1945][KUMAOTO][kurosiba][KZ][lezaizhouz][liminCHEN][litote][LordKagayu][Lucibel][Lus][manryu][marusaku][mary007][masatoko][Mateus][matti][meme][michioy][midoc][Mikarl12][mincso][mine115][Mitsuo][moan][Momoyamada][moneysir][mood2000][Morziloeil][Moutarde][n1422][nabeken][nan373][nbcx3721][Neko3][nevercare1][Neverever][niboshi][non][norisan229][odn44][OferZivo][partner][Patate][pavlepavle][pingu007][Print][Pugovka][R3434][Rakugo][Ramuki6481][RedLion][Regentzagr][Reznik][Robfripp][rock612][roselone][s12345][s1278][sai][sakaguchi][Salmient][san1204ok][Schachus][se55][Sehyco][seisuke2][SFSHI][SHINOCHIN][SHIYUU][sibtan][siskin][sjdjie][smeagol][SOFIA123][SonGOKu][SsjGo][stevvirus][sw2103][sweetapple][sykennkyuu][Syoji][syrius][Szgobw][SZn00][szo][tadasi2201][taka1965][tanpopout][tarumi][taxi][tengmai][TerryTorry][TML][tona6314][ttm112233][Veedee][vic2big][vicky020][vizzardo][vorasuk][vorm][wang5598][wfb2008][wisetank][wq12345][xhuhu][XVexed][xyz0000abc][yamakin][yamako][yamatai][yatsugatak][yg4772][yh0653][yjg123a][zhou8hui][zin17mizoe][zorro])

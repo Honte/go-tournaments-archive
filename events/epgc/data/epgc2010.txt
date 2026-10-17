@@ -1,0 +1,27 @@
+; EV[13th European Pair Go Championship]
+; PC[RU, St Petersburg]
+; DT[2010-04-23,2010-04-25]
+;Pl Names                   Gr Cy     1   2   3   4   5   6  Pt SOS SODOS
+   1 Kovaleva Natalia     31k Surin Dmitrij         31k   5d RU   xxxx   9+   7+   6+   4+   2+   3-     5    25    20 |10537087|10825254
+   2 Kalsberg Elvina      31k Dinerstein Alexandr   31k   5d RU   xxxx  12+  10+   8+  11+   1-   4+     5    22    17 |10750047|10313237
+   3 Kamysheva Rada       31k Mezhov Oleg           31k   2k RU   xxxx  22+   5+   4-   9+   6+   1+     5    21    17 |15237189|10837068
+   4 Avram Laura          31k Corlan Lucian         31k   2d RO   xxxx  20+  11+   3+   1-   7+   2-     4    24    14 |12698620|12586750
+   5 Fokina Natalia       31k Zabijakin Makar       31k   6k RU   xxxx   0+   3-  14+   7-   8+  13+     4    22    13 |13986731|15425498
+   6 Procenko Marina      31k Trubicin Stepan       31k   1k RU   xxxx  17+  15+   1-  13+   3-   9+     4    22    12 |14862958|13098096
+   7 Oreshkina Natalia    31k Simonov Alexej        31k   2k RU   xxxx  19+   1-  16+   5+   4-  12+     4    21    12 |14701786|10498906
+   8 Koshkina Daria       31k Matveev Evgenij       31k   1k RU   xxxx  18+  13+   2-  15+   5-  10+     4    20    11 |14937934|10937652
+   9 Khlepetina Anastasia 31k Shkljar Pavel         31k   6k RU   xxxx   1-  19+  10+   3-  11+   6-     3    22     8 |15637039|15025109
+  10 Eryilmaz Saadet      31k Albayrak Mehmet_Baris 31k   2k TR   xxxx  14+   2-   9-  19+  17+   8-     3    20     8 |13662649|13749527
+  11 Kleczkowska Klaudia  31k Dziolak Krzysztof     31k   3k PL   xxxx  16+   4-  17+   2-   9-  18+     3    20     8 |14801435|14337653
+  12 Siivola Sinikka      31k Siivola Matti         31k   6k FI   xxxx   2-  14-  23+  16+  15+   7-     3    19     7 |10262791|10286782
+  13 Chakur Nadzeja       31k Chakur Alexandr       31k   6k BY   xxxx  21+   8-  22+   6-  18+   5-     3    17     5 |15486427|14074280
+  14 Kulikova Anna        31k Alexeev Andrej        31k   9k RU   xxxx  10-  12+   5-  18-   0+  20+     3    16     7 |13862475|15249410
+  15 Ishimbaeva Olga      31k Kirakosjan Dmitrij    31k   4k RU   xxxx  23+   6-  18+   8-  12-  19+     3    16     5 |15486493|15486504
+  16 Tjan Alexandra       31k Eliseev Ilja          31k  11k RU   xxxx  11-  20+   7-  12-  22+   0+     3    15     5 |15462205|15433198
+  17 Balakireva Anna      31k Vinokurov Sergej      31k   8k RU   xxxx   6-  23+  11-  21+  10-  22+     3    14     4 |15401672|10701042
+  18 Maximova Jana        31k Kalinin Gleb          31k   8k RU   xxxx   8-  21+  15-  14+  13-  11-     2    18     5 |15674857|10801901
+  19 Shchipicina Ksenia   31k Nemchenko Roman       31k   8k RU   xxxx   7-   9-  20+  10-  23+  15-     2    16     3 |14950342|14901051
+  20 Kalinina Olga        31k Linev Alexandr        31k   7k RU   xxxx   4-  16-  19-  22+  21+  14-     2    15     3 |15749481|14025935
+  21 Vdovenko Amelia      31k Vdovenko Igor         31k  12k RU   xxxx  13-  18-   0+  17-  20-  23+     2    12     2 |15725358|12413082
+  22 Saakjan Apollinaria  31k Danilov Nikita        31k   8k RU   xxxx   3-   0+  13-  20-  16-  17-     1    16     0 |15798761|10786105
+  23 Delegojdina Marina   31k Vosinskij Stanislav   31k  11k RU   xxxx  15-  17-  12-   0+  19-  21-     1    13     0 |15898960|14986961

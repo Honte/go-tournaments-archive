@@ -1,0 +1,17 @@
+; EV[10th European Pair Go Championship]
+; PC[RU, boat]
+; DT[2007-06-25,2007-06-30]
+;Moscow - Sankt-Peterburg
+;Pl    Name                        Country        1     2     3     4     5    Pt   SOS  SODOS
+   1 Kovaleva Natalia   4d Surin Dmitrij         6d   5d RU   xxx    7+   3+   8+   2+   4+     5    14    14 |10537087|10825254
+   2 Kalsberg Elvina    2d Bogdanov Viktor       5d   4d RU   xxx    9+   4+   5+   1-   3+     4    16    11 |10750047|10325139
+   3 Dubiel Marika      1d Kaminski Marek        3d   2d PL   xxx    8+   1-  10+   6+   2-     3    15     6 |14301617|13913823
+   4 Nureeva Ajgul      1d Dugin Artem           4d   3d RU   xxx   10+   2-  12+   5+   1-     3    14     5 |12062347|12049576
+   5 Sommerfeld Nadja   1k Palant Michael        5d   3d DE   xxx   11+   6+   2-   4-   7+     3    13     6 |13733720|10249250
+   6 Hricova Jana       1k Silt Ondrej           6d   3d CZ   xxx   12+   5-   7+   3-   8+     3    11     5 |10233509|10337481
+   7 Takechi Harumi     2d Komatsu Hideo         2d   2d JP   xxx    1-   9+   6-  11+   5-     2    14     3 |10533028|14533904
+   8 Siivola Sinikka    9k Siivola Matti         5d   2k FI   xxx    3-  11+   1-  10+   6-     2    13     2 |10262791|10286782
+   9 Skobeleva Natalia 15k Dinerstein Alexandr   7d   4k RU   xxx    2-   7-  11-  12+  10+     2     9     2 |14586902|10313237
+  10 Fokina Alexandra   8k Sakhabutdinov Rustam  5d   2k RU   xxx    4-  12+   3-   8-   9-     1    11     1 |13849473|10349394
+  11 Shkugal Valentina  8k Suponev Alexandr      1d   4k BY   xxx    5-   8-   9+   7-  12-     1    10     2 |14762627|12349205
+  12 Stojanovic Ivana   6k Stojanovic Luka       2k   4k RS   xxx    6-  10-   4-   9-  11+     1    10     1 |14333693|10713406

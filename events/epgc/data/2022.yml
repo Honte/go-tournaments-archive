@@ -1,0 +1,23 @@
+website:
+  - https://www.eurogofed.org/results/pairs/epgc2022.htm
+  - https://www.eurogofed.org/frances-ariane-ougier-and-benjamin-drean-guenaizia-become-the-new-european-pair-go-champions/
+stages:
+  - type: tournament
+    name: Championship
+    file: epgc2022.txt
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+9.5 round:4 sgf:2022/4-ArianeOugierBenjaminDreanGuenaizia-PeiZhaoLukasKraemer.sgf ogs:https://online-go.com/review/953621
+      - 1-3 1:B+R round:6 sgf:2022/6-ArianeOugierBenjaminDreanGuenaizia-ChristinaKlupschChristopherKacwin.sgf ogs:https://online-go.com/review/953758
+      - 1-8 1:B+R round:5 sgf:2022/5-ArianeOugierBenjaminDreanGuenaizia-JitkaBartovaOndrejSilt.sgf ogs:https://online-go.com/review/953710
+      - 1-15 1:B+R round:1 sgf:2022/1-ArianeOugierBenjaminDreanGuenaizia-JulieArtignyBenjaminPapazoglou.sgf ogs:https://online-go.com/review/953164
+      - 2-10 2:B+R round:2 sgf:2022/2-PeiZhaoLukasKraemer-MoniqueBerrebyTanguyleCalve.sgf ogs:https://online-go.com/review/953198
+      - 6-2 2:W+R round:3 sgf:2022/3-NgocTrangCaoAntoineFenech-PeiZhaoLukasKraemer.sgf ogs:https://online-go.com/review/953256

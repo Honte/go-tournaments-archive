@@ -1,0 +1,17 @@
+; EV[27th European Pair Go Championship]
+; PC[RO,Bistrita]
+; DT[2025-06-05,2025-06-07]
+; KM[6.5]
+; TM[70]
+; CM[Fischer]
+;
+; Pl Name                            Rk Co Club  MMS  SOSSOSOS  NBW
+   1 Waahlin Lova        31k Aakerblom Charlie       31k   4D SE   xxxx   4+/w0   6+/b0   2+/b0   3+/b0   5+/w0   7+/w0    28   149   875     6 |16425849|13286603
+   2 Marz Manja          31k Obenaus Johannes        31k   5D DE   xxxx   6+/b0   3+/w0   1-/w0   7+/b0   8+/w0   4+/b0    27   147 869.5     5 |13062412|13049795
+   3 Avram Laura         31k Dobranis Denis          31k   4D RO   xxxx   5+/b0   2-/b0   4+/w0   1-/w0   7+/w0   9+/b0    26   147 872.5     4 |12698620|15350038
+   4 Mesesan Daria-Maria 31k Dobranis Darius         31k   1D RO   xxxx   1-/b0   5+/w0   3-/b0   9+/w0      0=   2-/w0  24.5   148 860.5   2.5 |19637189|15049716
+   5 Mastan Diana        31k Rotarita Stefan-Adrian  31k   2D RO   xxxx   3-/w0   4-/b0   6+/w0   8+/b0   1-/b0      0=  24.5 146.5 858.5   2.5 |14649250|17837270
+   6 Kralikova Zuzana    31k Kralik Ondrej           31k   3D SK   xxxx   2-/w0   1-/w0   5-/b0      0=   9+/b0   8+/b0  24.5 143.5 852.5   2.5 |15801764|16350279
+   7 Agafitei Lidia      31k Tifrea Bogdan-Stefan    31k   3K RO   xxxx   8+/w0   9+/b0      0=   2-/w0   3-/b0   1-/b0  22.5   143   841   2.5 |15813413|17937458
+   8 Surma Agnieszka     31k Surma Mateusz           31k   5K PL   xxxx   7-/b0      0=   9+/w0   5-/w0   2-/b0   6-/w0  21.5   139   839   1.5 |20601438|12837968
+   9 Tarita Otilia       31k Chirila George_Cristian 31k   6K RO   xxxx      0=   7-/w0   8-/b0   4-/b0   6-/w0   3-/w0  20.5   139 840.5   0.5 |17662513|15813721

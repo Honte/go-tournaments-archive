@@ -1,0 +1,18 @@
+website: https://www.eurogofed.org/results/pairs/epgc2014.htm
+stages:
+  - type: tournament
+    name: Championship
+    file: epgc2014.txt
+    notes: last breaker is Placement in the previous EPGC
+    scoringColumns: 
+      - mms
+      - sos
+      - prev
+      - wins      
+    breakers:
+      - mms
+      - sos
+      - prev
+    columns:
+      - wins    
+    findSharedPlaces: true

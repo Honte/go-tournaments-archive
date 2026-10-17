@@ -1,0 +1,26 @@
+website:
+  - https://www.eurogofed.org/results/pairs/epgc2024.htm
+  - https://www.eurogofed.org/european-pairgo-championships-april-19-21-dubrovnik-croatia/
+  - https://hgos.hr/25th-european-pairgo-championships/
+stages:
+  - type: tournament
+    name: Championship
+    file: epgc2024.txt
+    scoringColumns:
+      - mms
+      - sos
+      - direct
+      - wins
+    breakers:
+      - mms
+      - sos
+      - direct
+    columns:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 1-3 1:B+R round:5 sgf:2024/5-MilenaBocleFlorentLabouret-JitkaBartovaOndrejSilt.sgf ogs:https://online-go.com/review/1256159
+      - 2-1 1:W+7.5 round:4 sgf:2024/4-LauraAvramDenisDobranis-MilenaBocleFlorentLabouret.sgf ogs:https://online-go.com/review/1256065
+      - 3-2 2:W+R round:3 sgf:2024/3-JitkaBartovaOndrejSilt-LauraAvramDenisDobranis.sgf ogs:https://online-go.com/review/1255538
+      - 7-2 2:W+11.5 round:2 sgf:2024/2-ManjaMarzJohannesObenaus-LauraAvramDenisDobranis.sgf ogs:https://online-go.com/review/1255028
+      - 7-6 7:B+R round:1 sgf:2024/1-ManjaMarzJohannesObenaus-NgocTrangCaoAntoineFenech.sgf ogs:https://online-go.com/review/1254915

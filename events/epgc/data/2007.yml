@@ -1,0 +1,14 @@
+website: https://www.eurogofed.org/results/pairs/epgc2007.htm
+stages:
+  - type: tournament
+    name: Championship
+    file: epgc2007.txt
+    scoringColumns: 
+      - wins 
+      - sos
+      - sodos
+    breakers:
+      - wins
+      - sos
+      - sodos   
+    findSharedPlaces: true

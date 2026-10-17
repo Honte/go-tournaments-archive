@@ -1,0 +1,26 @@
+; EV[12th European Pair Go Championship]
+; PC[CZ, Praha]
+; DT[2009-04-24,2009-04-26]
+;Tie-break was SOS ignoring round 1 (MS) followed by SOS.
+;https://web.archive.org/web/20130315014709/http://www.promogo.cz/index.php?option=com_content&task=view&id=46&Itemid=72
+; Pl Names                         Gr Cy     1    2    3    4    5    6   Pt MS SOS  
+   1 Kovaleva Natalia   31k Surin Dmitrij     31k   6d RU   xxxx  14+  17+  16+   3+   8+   4+     6    15    17 |10537087|10825254
+   2 Bartova Jitka      31k Hora Jan          31k   3d CZ   xxxx  15+   6+   8+   4-   5+   3+     5    19    21 |13849748|10401083
+   3 Sora Adelina       31k Burzo Cornel      31k   4d RO   xxxx  12+   9+   5+   1-   6+   2-     4    22    25 |10337371|10325249
+   4 Avram Laura        31k Corlan Lucian     31k   4d RO   xxxx   6-  14+  15+   2+  12+   1-     4    20    22 |12698620|12586750
+   5 Hricova Jana       31k Silt Ondrej       31k   3d CZ   xxxx  10+  13+   3-   7+   2-   9+     4    19    22 |10233509|10337481
+   6 Pocsai Rita        31k Fodi Zoltan       31k   4d HU   xxxx   4+   2-  14+  11+   3-   8+     4    19    21 |10686346|12813317
+   7 Prokopova Anna     31k Simara Jan        31k   2d CZ   xxxx  19+   8-   9+   5-  11+  10+     4    16    17 |10449087|10749860
+   8 Cao Ngoc-Trang     31k Fenech Antoine    31k   3d FR   xxxx  20+   7+   2-  10+   1-   6-     3    16    22 |14586693|10349350
+   9 Bergstroem Kerstin 31k Aakerblom Charlie 31k   2d SE   xxxx  11+   3-   7-  20+  15+   5-     3    13    17 |13062478|13286603
+  10 Schmidt Ulrike     31k Kettenring Thomas 31k   1d DE   xxxx   5-  18+  13+   8-  16+   7-     3    12    18 |13250941|10786798
+  11 Silber Olga        31k Teuber Benjamin   31k   3d DE   xxxx   9-  12+  17+   6-   7-  16+     3    12    18 |13449645|10437174
+  12 Sommerfeld Nadja   31k Palant Michael    31k   3d DE   xxxx   3-  11-  19+  18+   4-  15+     3    10    16 |13733720|10249250
+  13 Berreby Monique    31k Clergue Olivier   31k   2d FR   xxxx  16+   5-  10-  15-  17+  14+     3     9    15 |10374562|10349548
+  14 Valisova Karin     31k Mikula Milan      31k  11k SK   xxxx   1-   4-   6-  19+  18+  13-     2    14    20 |15233361|14762968
+  15 Haneckova Radka    31k Reindl Martin     31k   3k SK   xxxx   2-  19+   4-  13+   9-  12-     2    14    19 |14550371|13986698
+  16 Smidova Alexandra  31k Smid Miroslav     31k   4k SK   xxxx  13-  20+   1-  17+  10-  11-     2    11    17 |10301489|10337470
+  17 Dubiel Marika      31k Gertz Wojciech    31k   1d PL   xxxx  18+   1-  11-  16-  13-  20+     2    10    16 |14301617|13933029
+  18 Jemine Marie       31k Lochen Vincent    31k   5k BE   xxxx  17-  10-  20+  12-  14-  19+     2     8    11 |14586847|14286217
+  19 Shkugal Valentina  31k Suponev Alexandr  31k   3k BY   xxxx   7-  15-  11-  14-  20+  18-     1     9    13 |14762627|12349205
+  20 Siivola Sinikka    31k Siivola Matti     31k   3k FI   xxxx   8-  16-  18-   9-  19-  17-     0    10    13 |10262791|10286782

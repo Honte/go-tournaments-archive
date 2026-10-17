@@ -1,0 +1,35 @@
+; EV[11th European Pair Go Championship]
+; PC[PL, Krakow]
+; DT[2008-04-11,2008-04-13]
+;https://epgc2008.go.art.pl/
+;Pl Name                         Str Co  MMS   1    2    3    4    5    6   Pt  SOS  
+   1 Kovaleva Natalia        4d Surin Dmitrij        6d   5d RU   xxxx  15+  10+   5+   2+   9+   3+    15    74     6 |10537087|10825254
+   2 Hricova Jana            1d Silt Ondrej          6d   3d CZ   xxxx  16+   4+   8+   1-   6+   7-    13    77     4 |10233509|10337481
+   3 Zakharchenko Mariia     2k Pliushch Yurii       5d   3d UA   xxxx  11+  21+   6-   5+   4+   1-    13    76     4 |13937638|10449230
+   4 Avram Laura             1k Corlan Lucian        5d   3d RO   xxxx   6+   2-  10+  12+   3-   9+    13    75     4 |12698620|12586750
+   5 Leeuwen Anne_van        1k Kuin Merlijn         6d   3d NL   xxxx  18+  17+   1-   3-  12+   8+    13    74     4 |13701479|10233861
+   6 Bartova Jitka           3k Hora Jan             6d   2d CZ   xxxx   4-  19+   3+   8+   2-  11+    13    74     4 |13849748|10401083
+   7 Zaloudkova Klara        2d Dach Zbynek          4d   3d CZ   xxxx   8-  22+   9-  20+  15+   2+    13    68     4 |10798106|10233872
+   8 Pocsai Rita             4d Pocsai Tibor         6d   5d HU   xxxx   7+   9+   2-   6-  16+   5-    12    75     3 |10686346|10425217
+   9 Marz Manja              3d Marz Michael         3d   4d DE   xxxx  20+   8-   7+  15+   1-   4-    12    74     3 |13062412|10225347
+  10 Czarny Ewelina          1k Habu Koichiro        4d   2d PL   xxxx  13+   1-   4-  14+  11-  22+    12    74     3 |13949034|10837827
+  11 Wiebe Maria             1d Schladitz Tommy      3d   2d DE   xxxx   3-  13+  12-  17+  10+   6-    12    73     3 |14549832|14337092
+  12 Drieu Marina            1d Mizessyn Francois    4d   3d FR   xxxx  21-  20+  11+   4-   5-  16+    12    69     3 |13486264|10386541
+  13 Kaczorowska Malgorzata  2k Rams Michal          3d   1d PL   xxxx  10-  11-  16-  23+  17+  18+    12    67     3 |13050543|12425314
+  14 Kacprzyk Agnieszka      1k Hausner Michal       2k   1k PL   xxxx  19+  16+  21+  10-  22+  15+    12    65     5 |13625524|14074357
+  15 Bergstroem Kerstin      2k Aakerblom Charlie    2d   1d SE   xxxx   1-  18+  17+   9-   7-  14-    11    74     2 |13062478|13286603
+  16 Beltowska Katarzyna     4k Kraszek Janusz       5d   1d PL   xxxx   2-  14-  13+  18+   8-  12-    11    72     2 |13013968|10637924
+  17 Lassakova Lucia         3k Smid Miroslav        1d   1k SK   xxxx  22+   5-  15-  11-  13-  20+    11    68     2 |10274693|10337470
+  18 Barisic Visnjica        5k Barisic Dragan       5d   1d BA   xxxx   5-  15-  24+  16-  21+  13-    11    66     2 |10613504|10398091
+  19 Blaszczyk Diana         3k Parkola Michal       3d   1d PL   xxxx  14-   6-  23-  24+  20+  21+    11    64     3 |13674386|12833458
+  20 Bercic Katja            6k Jerkovic Jure        1k   3k SI   xxxx   9-  12-  22+   7-  19-  17-    10    69     1 |14325916|13098514
+  21 Shkugal Valentina       8k Suponev Alexandr     1d   4k BY   xxxx  12+   3-  14-  22-  18-  19-    10    69     1 |14762627|12349205
+  22 Stojanovic Ivana        4k Stojanovic Luka      1k   2k RS   xxxx  17-   7-  20-  21+  14-  10-    10    68     1 |14333693|10713406
+  23 Mazurek Katarzyna       2k Andryszek Piotr      3k   2k PL   xxxx  24-  26+  19+  13-  27+  28+    10    51     4 |13862167|13749219
+  24 Sosnicka Anna           2k Ciesla Kacper        4k   3k PL   xxxx  23+  25+  18-  19-  29+  30+     9    46     4 |13925769|13749230
+  25 Kleczkowska Klaudia     6k Pawlaczyk Sebastian  1d   3k PL   xxxx  27-  24-  30+  29+  28+  26+     9    33     4 |14801435|14562372
+  26 Szalajko Sabina         5k Sokol Marcin         4k   4k PL   xxxx  29+  23-  27+  28+  30+  25-     8    35     4 |14886652|14398516
+  27 Kochanowska Elzbieta    6k Kacprzyk Michal      3k   4k PL   xxxx  25+  28+  26-  30+  23-  29+     8    35     4 |14062015|13613523
+  28 Zamorska Karolina       6k Skibinski Pawel      6k   6k PL   xxxx  30-  27-  29+  26-  25-  23-     3    40     1 |14937428|14813436
+  29 Tracichleb Magda        6k Tracichleb Piotr     5k   5k PL   xxxx  26-  30-  28-  25-  24-  27-     3    39     0 |12737769|12701095
+  30 Sontowska Aleksandra   10k Pawlak Lukasz        6k   8k PL   xxxx  28+  29+  25-  27-  26-  24-     2    40     2 |14513983|14625996

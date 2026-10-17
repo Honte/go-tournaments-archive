@@ -1,0 +1,14 @@
+website: https://www.eurogofed.org/results/pairs/epgc2000.htm
+stages:
+  - type: tournament
+    name: Championship
+    file: epgc2000.txt
+    scoringColumns: 
+      - wins 
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos   
+    findSharedPlaces: true

@@ -1,0 +1,43 @@
+; EV[7th European Pair Go Championship]
+; PC[RO, Drobeta - Turnu Severin]
+; DT[2004-03-20,2004-03-21]
+;Pl. Name                       Str Co. MMS   1    2    3    4    5   Pt  SOS  SODOS 
+   1 Zaloudkova Klara     31k Dach Zbynek          31k   2d CZ   xxxx  10+   4+   7+   2+   3-    20    98    78     4 |10798106|10233872
+   2 Pocsai Rita          31k Pocsai Tibor         31k   5d HU   xxxx   3+   5+   6+   1-  12+    20    97    77     4 |10686346|10425217
+   3 Ente Lisa            31k Teuber Benjamin      31k   4d DE   xxxx   2-   9+   5+  10+   1+    20    97    77     4 |10862962|10437174
+   4 Regan Natasha        31k Cocke Matthew        31k   3d UK   xxxx  13+   1-  16+  12+   6+    20    94    74     4 |12301146|10262021
+   5 Lubos Aleksandra     31k Kraszek Janusz       31k   4d PL   xxxx   9+   2-   3-   7+   8+    19    97    57     3 |10674928|10637924
+   6 Sora Adelina         31k Burzo Cornel         31k   1k RO   xxxx  11+  17+   2-  18+   4-    19    95    55     3 |10337371|10325249
+   7 Gorbunova Yelyzaveta 31k Pliushch Yurii       31k   1d UA   xxxx   8+  16+   1-   5-  15+    19    94    55     3 |00000000|10449230
+   8 Szilagyi Ana-Maria   31k Cioata Daniel        31k   1d RO   xxxx   7-  18+  15+  11+   5-    19    93    55     3 |10362264|10325392
+   9 Lindemeyer Manuela   31k Marz Michael         31k   2d DE   xxxx   5-   3-  13+  14+  19+    19    93    54     3 |13062412|10225347
+  10 Teodorescu Luiza     31k Gheorghiu Valentin   31k   1k RO   xxxx   1-  13+  17+   3-  22+    19    93    53     3 |10750157|10374243
+  11 Harvey Helen         31k Harvey Martin        31k   2k UK   xxxx   6-  21+  19+   8-  14+    19    91    53     3 |10486982|10401985
+  12 Robotic Tea          31k Smud Mladen          31k   4k HR   xxxx  22+  23+  14+   4-   2-    19    91    51     3 |12598014|10398982
+  13 Tombarello Anne      31k Hanotin Denis        31k   1d FR   xxxx   4-  10-   9-  17+  20+    18    94    36     2 |10362572|10349570
+  14 Predescu Adriana     31k Sora Sorin           31k   2k RO   xxxx  15+  19+  12-   9-  11-    18    93    36     2 |12825890|10374408
+  15 Griffiths Anna       31k Atkins Tony          31k   2k UK   xxxx  14-  22+   8-  16+   7-    18    91    35     2 |10525680|10262065
+  16 Iacob Liliana        31k Toma Iulian          31k   1d RO   xxxx  18+   7-   4-  15-  25+    18    90    33     2 |10337459|10398410
+  17 Gabaric Iva          31k Jankovic Zoran       31k   2k YU   xxxx  21+   6-  10-  13-  24+    18    89    33     2 |12713382|10301082
+  18 Lassakova Lucia      31k Svec Ivo             31k   2k SK   xxxx  16-   8-  23+   6-  21+    18    89    33     2 |10274693|10233652
+  19 Gavrilovic Silvija   31k Dubakovic Dragan     31k   3k YU   xxxx  23+  14-  11-  21+   9-    18    89    33     2 |12498079|10637451
+  20 Balba Iulia          31k Danila Marius        31k   6k RO   xxxx  24+  25+  29+  23+  13-    18    75    57     4 |10701273|10398267
+  21 Cenuse Luminita      31k Cenuse Emil          31k   3k RO   xxxx  17-  11-  22+  19-  18-    17    90    17     1 |12098185|10301423
+  22 Ciuica Liliana       31k Ciuica Gelu          31k   4k RO   xxxx  12-  15-  21-  27+  10-    17    88    15     1 |10550320|10474849
+  23 Augustina A          31k Cozan Sorin          31k   4k RO   xxxx  19-  12-  18-  20-   0=    16    89     0     0 |00000000|12513369
+  24 Toma Ruxandra        31k Caraivan Alexandru   31k   7k RO   xxxx  20-  26+  28+  25+  17-    16    80    44     3 |10898987|12698356
+  25 Negru Valentina      31k Dorobantu Marius     31k   6k RO   xxxx  27+  20-  26-  24-  16-    15    82    15     1 |13562703|10762279
+  26 Volovei M            31k Burzo Sergiu         31k   9k RO   xxxx  28+  24-  25+  29+  27+    15    70    54     4 |00000000|10325260
+  27 Martin Luminita      31k Martin Adrian        31k   6k RO   xxxx  25-  28-  39+  22-  26-    15    63     2     1 |13562340|12837253
+  28 Leonte A             31k Rob Gabriel          31k   9k RO   xxxx  26-  27+  24-   0+  29+    14    63    32     3 |00000000|10733250
+  29 Neagoe I             31k Rob Dinu             31k  12k RO   xxxx  33+   0+  20-  26-  28-    10    59    12     2 |00000000|10974480
+  30 Rolea Oana           31k Viasu Mihai          31k  15k RO   xxxx  32+  29-  33+  28-   0=     7    40    11     2 |13298901|10798271
+  31 Salceanu Alina       31k Varzaru Mihai        31k  17k RO   xxxx  34-  37+  38+  36+  30-     6    23     9     3 |13525908|12550736
+  32 Firan Anca_Loredana  31k Gurita Petre_Madalin 31k  17k RO   xxxx   0-  39+  34+  33-  35+     6    22    10     3 |13513907|12813867
+  33 Giurcan Ionelia      31k Marcu Elvis_Petrisor 31k  17k RO   xxxx  29-  35+   0-  32+  34-     5    31    10     2 |13250897|13574341
+  34 Lapadatescu Stela    31k Filisanu Remus       31k  18k RO   xxxx  31+  36-  32-  35-  33+     4    24    11     2 |13562912|13537348
+  35 Badulescu Loredana   31k Fulga Robert_Ioan    31k  17k RO   xxxx  36-  33-  37-  34+  32-     4    21     4     1 |13233902|12833865
+  36 Moldovan Beatrice    31k Trifan Ovidiu        31k  19k RO   xxxx  35+  34+  30-  31-   0=     3    25     8     2 |13574902|13525897
+  37 Cristurian Daria     31k Berbecariu Flaviu    31k  18k RO   xxxx  38-  31-  35+  30-   0=     3    25     4     1 |13533905|13549074
+  38 Olinca Maria         31k Craciun Silviu       31k  19k RO   xxxx  37+  30-  31-  39+   0=     3    22     5     2 |13562901|13598079
+  39 Cureteu Mirela       31k Pirvu Stefan_Marian  31k  19k RO   xxxx  30-  32-  27-  38-   0+     2    35     1     1 |13501345|13637349

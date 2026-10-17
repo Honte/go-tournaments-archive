@@ -1,0 +1,30 @@
+; EV[15th European Pair Go Championship]
+;https://web.archive.org/web/20120901165641/http://jeudego-rfg.blogspot.fr/2012/06/championnat-deurope-de-pairgo-2012.html
+;https://rfg.jeudego.org/item/38-championnat-d-europe-de-pairgo-2012-parties/
+; PC[FR, Lyon]
+; DT[2012-06-02,2012-06-03]
+;Pl  Names                                      Gr Cy  W   1     2     3     4     5     6   MM SOS SOSOS 
+   1 Shikshina Svetlana    31k Dinerstein Alexandr 31k   7D RU   xxxx  16+  13+   4+   2+   3+   9+    37    21   126     6 |10301236|10313237
+   2 Zaloudkova Klara      31k Hora Jan            31k   4D CZ   xxxx  18+   7+   3+   1-   6+   4+    36    22   129     5 |10798106|10401083
+   3 Kovaleva Natalia      31k Surin Dmitrij       31k   5D RU   xxxx   6+   5+   2-   8+   1-  14+    35    24   120     4 |10537087|10825254
+   4 Cao Ngoc-Trang        31k Fenech Antoine      31k   3D FR   xxxx  12+   8+   1-   5+  11+   2-    35    24   116     4 |14586693|10349350
+   5 Cornuejols Dominique  31k Karadaban Denis     31k   2D FR   xxxx  14+   3-  22+   4-  15+   7+    35    21   113     4 |10913210|15637314
+   6 Berreby Monique       31k Clergue Olivier     31k   2D FR   xxxx   3-  18+  10+   7+   2-   8+    35    20   124     4 |10374562|10349548
+   7 Regan Natasha         31k Cocke Matthew       31k   2D UK   xxxx  11+   2-  17+   6-  21+   5-    34    21   110     3 |12301146|10262021
+   8 Bocle Milena          31k Billouet Simon      31k   3D FR   xxxx  20+   4-  15+   3-  10+   6-    34    20   116     3 |14362018|10462408
+   9 Artigny Julie         31k Debarre Thomas      31k   1D FR   xxxx  10-  19+  12+  17+  13+   1-    34    20   105     4 |12801426|12950872
+  10 Vielfaure Charlotte   31k Papazoglou Benjamin 31k   1D FR   xxxx   9+  12+   6-  11+   8-  18+    34    18   111     4 |12362064|10733712
+  11 Avram Laura           31k Corlan Lucian       31k   3D RO   xxxx   7-  16+  13+  10-   4-  17+    34    17   113     3 |12698620|12586750
+  12 Marz Manja            31k Marz Michael        31k   3D DE   xxxx   4-  10-   9-  20+  23+  13+    34    15   112     3 |13062412|10225347
+  13 Suciu Irina           31k Calota Lucretiu     31k   2D RO   xxxx  17+   1-  11-  16+   9-  12-    33    20   103     2 |10337261|10350395
+  14 Mazurek Katarzyna     31k Kaminski Marek      31k   2D PL   xxxx   5-  15-  16-  23+  18+   3-    33    16   112     2 |13862167|13913823
+  15 Lamour Veronique      31k Michel Jean         31k   1K FR   xxxx  19+  14+   8-  18+   5-  21+    33    16   109     4 |10713384|10374540
+  16 Buntsma Els           31k Jong Merijn_de      31k   2D NL   xxxx   1-  11-  14+  13-  17-  24+    33    16   101     2 |10250845|10449472
+  17 Chaine Marie-Claire   31k Colmez Pierre       31k   3D FR   xxxx  13-  20+   7-   9-  16+  11-    33    14   108     2 |10350923|10237018
+  18 Siivola Matti         31k Siivola Sinikka     31k   2D FI   xxxx   2-   6-  20+  15-  14-  10-    32    19   106     1 |10286782|10262791
+  19 Issermann Catherine   31k Lugol Xavier        31k   2K FR   xxxx  15-   9-  24+  21-  22+  23+    31    17    93     3 |12462802|10433379
+  20 Golay Monique         31k Morrison Roberto    31k   2D CH   xxxx   8-  17-  18-  12-  24-  22-    31    14    93     0 |13013583|10349493
+  21 Artigny Marguerite    31k Lextrait Cesar      31k   3K FR   xxxx  22-  24+  23+  19+   7-  15-    30    16    95     3 |14525610|15462271
+  22 Rioualen Claire       31k Friggeri Pascal     31k   4K FR   xxxx  21+  23+   5-  24+  19-  20+    30    12    97     4 |13986368|10449692
+  23 Camps Marie-Francoise 31k Serres Etienne      31k   5K FR   xxxx  24+  22-  21-  14-  12-  19-    26    16    89     1 |10925376|10474684
+  24 Gauthier Julie        31k Leclerc Thomas      31k   5K FR   xxxx  23-  21-  19-  22-  20+  16-    26    13    91     1 |13098371|15298690

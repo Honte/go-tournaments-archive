@@ -1,0 +1,16 @@
+website: 
+ - https://www.eurogofed.org/results/pairs/epgc2018.htm
+ - https://www.eurogofed.org/the-european-pair-go-championship-2018-ascona/
+stages:
+  - type: tournament
+    name: Championship
+    file: epgc2018.txt
+    scoringColumns: 
+      - wins 
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos   
+    findSharedPlaces: true

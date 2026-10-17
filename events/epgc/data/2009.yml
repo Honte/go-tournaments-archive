@@ -1,0 +1,32 @@
+website: https://www.eurogofed.org/results/pairs/epgc2009.htm
+stages:
+  - type: tournament
+    name: Championship
+    file: epgc2009.txt
+    notes: breaker sos1 was SOS ignoring round 1
+    scoringColumns:
+      - wins
+      - sos1
+      - sos
+    breakers:
+      - wins
+      - sos1
+      - sos
+    findSharedPlaces: true
+    games:
+      - 1-3 1:B+R round:4 sgf:2009/4-NataliaKovalevaDmitrijSurin-AdelinaSoraCornelBurzo.sgf
+      - 2-3 2:B+R round:6 sgf:2009/6-JitkaBartovaJanHora-AdelinaSoraCornelBurzo.sgf
+      - 2-4 4:W+R round:4 sgf:2009/4-JitkaBartovaJanHora-LauraAvramLucianCorlan.sgf
+      - 2-6 2:B+R round:2 sgf:2009/2-JitkaBartovaJanHora-RitaPocsaiZoltanFodi.sgf
+      - 3-5 3:B+R round:3 sgf:2009/3-AdelinaSoraCornelBurzo-JanaHricovaOndrejSilt.sgf
+      - 4-1 1:W+15.5 round:6 sgf:2009/6-LauraAvramLucianCorlan-NataliaKovalevaDmitrijSurin.sgf
+      - 5-2 2:W+1.5 round:5 sgf:2009/5-JanaHricovaOndrejSilt-JitkaBartovaJanHora.sgf
+      - 6-3 3:W+R round:5 sgf:2009/5-RitaPocsaiZoltanFodi-AdelinaSoraCornelBurzo.sgf
+      - 6-8 6:B+R round:6 sgf:2009/6-RitaPocsaiZoltanFodi-NgocTrangCaoAntoineFenech.sgf
+      - 7-8 8:W+4.5 round:2 sgf:2009/2-AnnaProkopovaJanSimara-NgocTrangCaoAntoineFenech.sgf
+      - 7-10 7:B+R round:6 sgf:2009/6-AnnaProkopovaJanSimara-UlrikeSchmidtThomasKettenring.sgf
+      - 8-1 1:W+14.5 round:5 sgf:2009/5-NgocTrangCaoAntoineFenech-NataliaKovalevaDmitrijSurin.sgf
+      - 9-5 5:W+R round:6 sgf:2009/6-KerstinBergstroemCharlieAakerblom-JanaHricovaOndrejSilt.sgf
+      - 14-1 1:W+R round:1 sgf:2009/1-KarinValisovaMilanMikula-NataliaKovalevaDmitrijSurin.sgf
+      - 15-2 2:W+18.5 round:1 sgf:2009/1-RadkaHaneckovaMartinReindl-JitkaBartovaJanHora.sgf
+      - 17-11 11:W+24.5 round:3 sgf:2009/3-MarikaDubielWojciechGertz-OlgaSilberBenjaminTeuber.sgf

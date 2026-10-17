@@ -1,0 +1,25 @@
+; EV[24th European Pair Go Championship]
+; PC[FR, Strasbourg]
+; DT[2022-10-08,2022-10-09]
+;https://web.archive.org/web/20230128192345/http://pairgo.gostrasbourg.fr/pre-registered-2/
+   1 Ougier Ariane        4d Drean-Guenaizia Benjamin  7d   5d FR   xxx   15+   9+   5+   2+   8+   3+     6    21   132 |15774187|14513532
+   2 Zhao Pei             6d Kraemer Lukas             6d   6d DE   xxx    3+  10+   6+   1-   4+   5+     5    25   123 |10201235|14698739
+   3 Klupsch Christina    2k Kacwin Christopher        5d   2d DE   xxx    2-  18+   8+  13+   7+   1-     4    22   117 |17633605|14262149
+   4 Marz Manja           3d Ulbricht David            4d   4d DE   xxx   13+   5-  15+   6+   2-  10+     4    21   119 |13062412|17425815
+   5 Waahlin Lova         2d Silfver Anton             2d   2d SE   xxx   21+   4+   1-  11+  12+   2-     4    21   104 |16425849|15933236
+   6 Cao Ngoc-Trang       2d Fenech Antoine            5d   3d FR   xxx   14+  11+   2-   4-  15+   8+     4    20   122 |14586693|10349350
+   7 Chaine Marie-Claire  1d Lips Fabien               4d   2d FR   xxx   16+   8-  13+   9+   3-  11+     4    18   113 |10350923|13798631
+   8 Bartova Jitka        3d Silt Ondrej               6d   4d CZ   xxx   12+   7+   3-  14+   1-   6-     3    24   110 |13849748|10337481
+   9 Donle Isabel         2d Ruzicka Martin            4d   3d DE   xxx   17+   1-  12+   7-  10-  15+     3    20   105 |16837359|13037596
+  10 Berreby Monique      2k le_Calve Tanguy           1p   3d FR   xxx   18+   2-  14-  17+   9+   4-     3    18   107 |10374562|14962706
+  11 Roelofs Yvonne       3k Eijkhout Michiel          5d   2d NL   xxx   19+   6-  16+   5-  14+   7-     3    18   100 |10725792|10486410
+  12 Buntsma Els          3k Jong Merijn_de            3d   1d NL   xxx    8-  16+   9-  19+   5-  17+     3    15   105 |10250845|10449472
+  13 Takacova Lucia       2k Smolarik Peter            2d   1k SK   xxx    4-  20+   7-   3-  16+  18+     3    15    99 |10274693|12886984
+  14 Vlckova Tereza       7k Kruml Ondrej              6d   1k CZ   xxx    6-  19+  10+   8-  11-  20+     3    14   103 |15333241|10886524
+  15 Artigny Julie        3k Papazoglou Benjamin       5d   2d FR   xxx    1-  17+   4-  18+   6-   9-     2    20   109 |12801426|10733712
+  16 Asheim Siri          8k Stene Rasmus              2k   6k NO   xxx    7-  12-  11-  20+  13-  19+     2    14    89 |19349231|16074861
+  17 Zderic Tonka         6k Medak Stjepan             1d   3k HR   xxx    9-  15-  19+  10-  18+  12-     2    13   100 |18286741|17437574
+  18 Chernova Vira        8k Savytskyi Avhust          5k   6k UA   xxx   10-   3-  20+  15-  17-  13-     1    14    98 |18962647|19237185
+  19 Chesnot Zoe         10k Piet Jules                8k   9k FR   xxx   11-  14-  17-  12-  20+  16-     1    13    84 |20349956|20313634
+  20 Li Yunsi            31k X Guillaume              31k  10k FR   xxx    0-  13-  18-  16-  19-  14-     0    10    70 |19398104|00000000
+  21 Gaultier Astrid     31k Aussibal Gabriel         31k  10k FR   xxx    5-   0-   0-   0-   0-   0-     0     4    21 |10301907|15350720
