@@ -10,5 +10,5 @@
 6	Waczulikova Kristina 31k Kachyna Ondrej	 31k	5K CZ xxx	2	4-	3-	10+	7+	5-	2	11	2  |13001659|14725876
 7	Vasova Dita          31k Defer Tristan	 31k	2K CZ xxx	2	1-	10+	4-	6-	9+	2	11	1  |15749921|16486074
 8	Vlckova Tereza       31k Kruml Ondrej	 31k	4K CZ xxx	2	5-	9+	2-	4-	10+! 2	11	1  |15333241|10886524
-9	Dankova Lenkova      31k Nemcok Michal	 31k	3K CZ xxx	1	3-	8-	5-	10+! 7-	1	10	0  |10513063|16901852
+9	Dankova Lenka        31k Nemcok Michal	 31k	3K CZ xxx	1	3-	8-	5-	10+! 7-	1	10	0  |10513063|16901852
 10	Bukovska Anezka      31k Jansky Dusan	 31k	3K CZ xxx	0	2-	7-	6-	9-!	8-!	0	11	0  |15874947|15862946
