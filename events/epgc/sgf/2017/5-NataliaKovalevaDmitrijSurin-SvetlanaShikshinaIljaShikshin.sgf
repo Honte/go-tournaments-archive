@@ -1,0 +1,394 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]OT[25/600 Canadian]LT[]NB[37]NW[37]RR[Normal]C[
+ EPGC 9d?\: This game will be Kovaleva/Surin vs Shikshina/Shikshin (Russia everyone)
+ EPGC 9d?\: European Pair Go Championship round 5 \: Shikshina&Shikshin (W) vs Kovaleva&Surin (B)
+]
+AP[CGoban:3]SZ[19]GM[1]GN[European Pair Go Championship round 5 \: Shikshina&Shikshin (W) vs Kovaleva&Surin (B)]
+EV[Internet Go Server game\: EPGC vs EPGC]RO[5]DT[2017-04-02]PC[IGS\:  igs.joyjoy.net 6969]
+PB[Natalia Kovaleva Dmitrij Surin]BR[9d]PW[Svetlana Shikshina Ilja SHikshin]WR[9d]
+KM[6.5]TM[0]RE[B+Resign]US[Brought to you by IGS PANDANET]CP[
+  Copyright (c) PANDANET Inc. 2017
+  Permission to reproduce this game is given, provided proper credit is given.
+  No warrantee, implied or explicit, is understood.
+  Use of this game is an understanding and agreement of this notice.
+]
+MULTIGOGM[1]
+;B[pd]BL[0];W[dp]WL[0];B[pq]BL[0];W[dc]WL[0];B[fq]BL[0];W[cn]WL[0];B[de]BL[0];W[cg]
+WL[0];B[cc]BL[0];W[gc]WL[0];B[dd]BL[0];W[db]WL[0];B[be]BL[0]C[
+ EPGC 9d?\: Ali Jabarin 1p will make comments in this game as usual
+ Robfripp 1d?\: hi, who play ?
+]
+;W[cb]WL[0]C[
+ EPGC 9d?\: European Pair Go Championship round 5 \: Shikshina&Shikshin (W) vs Kovaleva&Surin (B)
+]
+;B[ci]BL[0]C[
+ EPGC 9d?\: pachi
+ Robfripp 1d?\: yhx
+ Robfripp 1d?\: thx
+];W[ck]
+WL[0]C[
+ SonGOKu 17k?\: y r wc
+];B[bg]BL[0]C[
+ EPGC 9d?\: b13 usually at d12
+]
+;W[po]WL[0];B[qo]BL[0];W[qn]WL[0];B[qp]BL[0];W[nc]WL[0]C[
+ Schachus 8k \: so kovaleva/surin won vs. Pei/ kraemer last round?
+ EPGC 9d?\: yes
+ EPGC 9d?\: o17 also a bit strange choice of direction
+]
+;B[pn]BL[0];W[qf]WL[0];B[pf]BL[0];W[pg]WL[0];B[nd]BL[0];W[md]WL[0];B[of]BL[0];W[od]
+WL[0];B[pc]BL[0];W[qe]WL[0];B[ne]BL[0]C[
+ vorm 12k+\: Bonjour! Quelles paires jouer?
+ hippophile 5d?\: Hi!
+]
+;W[lc]WL[0];B[oc]BL[0]C[
+ hippophile 5d?\: Shikshina&Shikshin (W) vs Kovaleva&Surin (B)
+ vorm 12k+\: merci
+ hippophile 5d?\: de rien
+]
+;W[qm]WL[0];B[on]BL[0];W[qj]WL[0];B[jp]BL[0]C[
+ EPGC 9d?\: not clear why didnt white connect at p17
+ EPGC 9d?\: but white got very nice shape on the right so the game should be ok for them
+]
+;W[hq]WL[0];B[hp]BL[0]C[
+ gogonuts 5d?\: players?
+ EPGC 9d?\: European Pair Go Championship round 5 \: Shikshina&Shikshin (W) vs Kovaleva&Surin (B)
+ gogonuts 5d?\: thx
+]
+;W[ip]WL[0];B[iq]BL[0];W[io]WL[0]C[
+ gogonuts 5d?\: you get asked so often you have that ready \:-)
+ hippophile 5d?\: I think  M17 was classy. If  P17 then after Q15 white has incomplete shape top and right
+ gogonuts 5d?\: panda should really load older chat with the game
+ gogonuts 5d?\: trouble for b
+ EPGC 9d?\: yeah, would be nice to have better review tools as well
+]
+;B[jo]BL[0]C[
+ gogonuts 5d?\: if h2, k3, g3 will w atari?
+ EPGC 9d?\: h2 is interesting, i never saw that move before
+]
+;W[jq]WL[0];B[ir]BL[0];W[jn]WL[0]C[
+ gogonuts 5d?\: it's normally only played with a bad ladder, but then w doesn't start the fight \:-)
+]
+;B[kq]BL[0]C[
+ gogonuts 5d?\: h2,k2,g4,h5,j6
+ gogonuts 5d?\: for a squeeze
+ EPGC 9d?\: thats possible
+ EPGC 9d?\: is it better than just connecting tho
+ gogonuts 5d?\: in any case k5 was good fight back in a tough position
+ Schachus 8k \: why is my chat gone?
+ gogonuts 5d?\: let me guess, you left the game
+ Schachus 8k \: yes, accidentally
+ Schachus 8k \: does this always kill the chat on panda?
+ gogonuts 5d?\: it doesn't load the chat up to that point
+ gogonuts 5d?\: yet ...
+ EmerGo 13k+\: yes, grrrrr \:(
+ gogonuts 5d?\: really needs to add it
+ EPGC 9d?\: can white play f2 after h2 k2 g4 h5 j6 g5
+ EPGC 9d?\: think i would still rather just connect at j6 directly now
+]
+;W[in]WL[0];B[gp]BL[0];W[er]WL[0]C[
+ gogonuts 5d?\: I would expect dbl hane after g5
+ EmerGo 13k+\: alternative for android panda?
+]
+;B[fr]BL[0]C[
+ EPGC 9d?\: e2 was painful, black should have taken with h2 instead of g4
+]
+;W[lo]WL[0];B[ph]BL[0];W[og]WL[0]C[
+ gogonuts 5d?\: q12 looks game losing
+];B[nb]
+BL[0]C[
+ EPGC 9d?\: q12 questionable indeed
+ EPGC 9d?\: maybe surin feels the game is hard already
+]
+;W[oh]WL[0];B[mc]BL[0]C[
+ hippophile 5d?\: Hi, missed a bit as offline. What do people think about this development?
+ EPGC 9d?\: white feels a bit better to me
+ gogonuts 5d?\: most would buy w stock options
+]
+;W[jc]WL[0]C[
+ hippophile 5d?\: Hm, territory fairly close on the board, white thicker, hard to argue!
+ gogonuts 5d?\: painful w moves at s17 and m3
+ EPGC 9d?\: i think black is searching for the l6 cut
+ EPGC 9d?\: need to play a ladder breaker first tho
+]
+;B[lb]BL[0]C[
+ EPGC 9d?\: oh, this move is too small
+ gogonuts 5d?\: and w already has the thick p12
+ gogonuts 5d?\: indeed
+ hippophile 5d?\: S17 is just medium-large yose now as both safe here
+ gogonuts 5d?\: k17 was clever
+ EPGC 9d?\: natalias style, when she is not sure where to play she plays very safe
+ gogonuts 5d?\: easier to see it's good when it's on the board than playing it yourself
+]
+;W[bc]WL[0]C[
+ hippophile 5d?\: Yes, a step away from the thickness. But  M18 surely over-concentrated?
+ EPGC 9d?\: b17 is also just endgame
+]
+;B[cq]BL[0];W[cp]WL[0];B[dr]BL[0]C[
+ gogonuts 5d?\: yes, k17 can't take full credit for b m18
+]
+;W[dq]WL[0];B[cr]BL[0]C[
+ hippophile 5d?\: Well B17 has an effect on eyes for both.  H17 H18 G18 for example is less scary for white now
+ EPGC 9d?\: maybe p8 or n4 now
+]
+;W[cf]WL[0];B[bf]BL[0]C[
+ hippophile 5d?\: ...and white can tease this group
+ gogonuts 5d?\: b13 was a problem a while back
+ gogonuts 5d?\: c12 bigger and safer
+]
+;W[ch]WL[0];B[bh]BL[0];W[di]WL[0];B[cj]BL[0];W[dj]WL[0];B[bk]BL[0]C[
+ gogonuts 5d?\: nasty to even think about not playing d10 \:-)
+]
+;W[bl]WL[0]C[
+ EPGC 9d?\: white switched to building the center now
+ EPGC 9d?\: risky choice in my opinion
+ hippophile 5d?\: Interesting point about b13, c12. Thanks for the comment
+ gogonuts 5d?\: the wall makes b L6 very improbable
+]
+;B[dk]BL[0];W[cl]WL[0]C[
+ EPGC 9d?\: d9 is surprising, i dont think black can cut at d12
+ gogonuts 5d?\: I think d9 meand defend at b16 now
+]
+;B[dh]BL[0];W[ak]WL[0]C[
+ hogweed 1d \: whch russia is white
+ EPGC 9d?\: European Pair Go Championship round 5 \: Shikshina&Shikshin (W) vs Kovaleva&Surin (B)
+]
+;B[bi]BL[0]C[
+ gogonuts 5d?\: surely e12 driving
+];W[eh]WL[0];B[dg]BL[0];W[df]
+WL[0];B[eg]BL[0]C[
+ EPGC 9d?\: how to answer white f11 next
+ gogonuts 5d?\: e14 is the only move - hard on the partner to hesitate
+]
+;W[ef]WL[0];B[fg]BL[0];W[fi]WL[0]C[
+ EPGC 9d?\: she was probably just reading ahead
+ EPGC 9d?\: but now black is in deep trouble
+ hippophile 5d?\: L6 is tough anyway. After ladder block Q9 R9 L6 L5 L4 white has a nasty probe at  L2
+ hippophile 5d?\: F10 is useless, so what can black gain from this fight?
+ SonGOKu 17k?\: but
+ gogonuts 5d?\: it was a misunderstanding on the b side. d9 wanted b16 next, but got d12
+ EPGC 9d?\: f12 f15 f10 e9 d8 e11 d9 a10 might be an out for black
+]
+;B[gd]BL[0];W[ff]WL[0]C[
+ hippophile 5d?\: B17 shining brightly \:)
+ gogonuts 5d?\: b must be contemplating resignation
+]
+;B[fc]BL[0]C[
+ SonGOKu 17k?\: but
+];W[ed]WL[0]C[
+ pingu007 1d?\: who are the players pls?
+ EPGC 9d?\: European Pair Go Championship round 5 \: Shikshina&Shikshin (W) vs Kovaleva&Surin (B)
+ SonGOKu 17k?\: but and but
+]
+;B[hc]BL[0]C[
+ pingu007 1d?\: tx
+ gogonuts 5d?\: fake trade
+];W[gg]WL[0];B[aj]
+BL[0];W[bj]WL[0];B[ee]BL[0];W[fe]WL[0];B[bk]BL[0]C[
+ hippophile 5d?\: Black is totally messed up
+ EPGC 9d?\: yes
+ hippophile 5d?\: White centre is huge and  H17 group is nothing
+ hippophile 5d?\: J16?
+ gogonuts 5d?\: even h17 stones can become a drag
+ EPGC 9d?\: both teams with just 15 mins left, maybe black can find a chance when the game becomes very fast
+]
+;W[gb]WL[0]C[
+ hippophile 5d?\: G18 vicious
+ gogonuts 5d?\: that's true, w should preserve time, not ponder the very best way
+]
+;B[fd]BL[0]C[
+ hippophile 5d?\: C15 simplest
+ gogonuts 5d?\: yes
+];W[ec]WL[0]
+C[
+ hippophile 5d?\: Black cannot capture 2 stones as it is only one eye
+];B[fb]
+BL[0]C[
+ gogonuts 5d?\: also painful
+ EPGC 9d?\: e17 cant be good
+ EPGC 9d?\: white needs to capture c15 now, e17 basically lost one move
+ hippophile 5d?\: Now the ko is less of a drag on black
+]
+;W[bj]WL[0]C[
+ Schachus 8k \: why is e17 bad?
+ gogonuts 5d?\: e17 says the corner is safe after b b16, but is it?
+ hippophile 5d?\: Right, could lose a move
+ Schachus 8k \: black doesnt have so many libs to try that right?
+ gogonuts 5d?\: otoh, if it is safe, this is sshap and legit
+ hippophile 5d?\: B16 is good now
+ gogonuts 5d?\: "good" may be overstating it \:-)
+ gogonuts 5d?\: "only hope" fits better \:-)
+ EPGC 9d?\: e17 does the same as playing c15 directly, which white now probably needs to play anyway
+]
+;B[ic]BL[0];W[ai]WL[0];B[bd]BL[0]C[
+ EPGC 9d?\: j17 is playing too soft, black needs to be more active to have a chance of turning this game
+]
+;W[ce]WL[0];B[cd]BL[0]C[
+ gogonuts 5d?\: the silly thing about e17 was that it was in a great hurry to deny b a fALSE EYE
+ gogonuts 5d?\: oops, caps
+]
+;W[bb]WL[0]C[
+ gogonuts 5d?\: that's right, b had to go all in
+ gogonuts 5d?\: j17 is a sad case of trusting the opponent \:-)
+ hippophile 5d?\: Sorry, this is the variation I underestimated for white
+]
+;B[jf]BL[0];W[gn]WL[0]C[
+ hippophile 5d?\: W are strong. If they had this read out in advance, it's impressive
+]
+;B[ji]BL[0];W[lg]WL[0]C[
+ gogonuts 5d?\: looks like b defeat is still 100 moves away now
+]
+;B[kf]BL[0]C[
+ gogonuts 5d?\: avoiding e17 would have finished the game right here
+ hippophile 5d?\: That's about 5 minutes then, right? \:)
+ gogonuts 5d?\: oh sh.. \:-)
+]
+;W[ol]WL[0]C[
+ gogonuts 5d?\: I forgot
+ gogonuts 5d?\: that nasty sudden death
+]
+;B[nl]BL[0]C[
+ gogonuts 5d?\: fisher time 5 secs would be so much more civilized
+ hippophile 5d?\: O7 irresistable?
+ EPGC 9d?\: 8 min for B, 10 for W
+]
+;W[nk]WL[0]C[
+ gogonuts 5d?\: thx
+];B[ac]BL[0]C[
+ hippophile 5d?\: A17 A18, not a lot
+ EPGC 9d?\: b18 was better at a17
+ gogonuts 5d?\: I'm really not made for pair go
+ gogonuts 5d?\: it would kill me when my partner wouldn't answer a17 at a18 right away
+]
+;W[ah]WL[0]C[
+ EPGC 9d?\: doesnt seem like there is anything this way
+ gogonuts 5d?\: right,basically the same
+]
+;B[nm]BL[0]C[
+ gogonuts 5d?\: some ultra far fetched ko, maybe
+ hippophile 5d?\: If black had another liberty it might matter
+ EPGC 9d?\: sure, with an extra liberty white could die
+]
+;W[mk]WL[0]C[
+ gogonuts 5d?\: that might influence the outcome \:-)
+ hippophile 5d?\: That was actually my misread, I thought  C15 was still a lib
+]
+;B[ab]BL[0];W[ag]WL[0];B[mi]BL[0]C[
+ gogonuts 5d?\: actually, this does lokk better for b than is w had a18 directly
+]
+;W[mh]WL[0];B[kn]BL[0];W[ko]WL[0];B[kp]BL[0];W[ln]WL[0]C[
+ hippophile 5d?\: L2 probably wont get played now, white doesnt need to find it
+]
+;B[af]BL[0];W[aj]WL[0];B[oi]BL[0]C[
+ gogonuts 5d?\: I'm wrong, still absolutely nothing in the ul
+]
+;W[li]WL[0];B[ad]BL[0];W[ba]WL[0];B[ok]BL[0]C[
+ hippophile 5d?\: no
+];W[pl]WL[0]
+;B[al]BL[0];W[am]WL[0];B[qi]BL[0];W[qh]WL[0];B[ei]BL[0];W[fh]WL[0];B[pj]BL[0]C[
+ hippophile 5d?\: S11 seems to work fine
+ gogonuts 5d?\: but it provided b with a lot of handoffs to the same player
+ gogonuts 5d?\: looks less clear than w would hope
+]
+;W[rj]WL[0]C[
+ gogonuts 5d?\: with time panic setting in, who  knows
+];B[rh]BL[0]
+;W[qg]WL[0];B[rl]BL[0]C[
+ gogonuts 5d?\: s10 feels like a successful defence though
+]
+;W[pk]WL[0];B[ej]BL[0];W[dh]WL[0]C[
+ gogonuts 5d?\: without the earlier catastrophes, b could call this good endgame
+]
+;B[ql]BL[0];W[pm]WL[0];B[eb]BL[0];W[aa]WL[0];B[rn]BL[0]C[
+ EPGC 9d?\: 3min B 4min Z
+]
+;W[oj]WL[0];B[da]BL[0];W[ae]WL[0];B[km]BL[0];W[lm]WL[0];B[ij]BL[0];W[lq]WL[0];B[kr]
+BL[0];W[no]WL[0];B[oo]BL[0];W[jl]WL[0];B[fn]BL[0];W[fo]WL[0];B[gm]BL[0];W[go]WL[0]
+C[
+ gogonuts 5d?\: sudden death makes the ending very ugly
+ hippophile 5d?\: last fling
+ hippophile 5d?\: F6 just doesnt work
+]
+;B[hk]BL[0]C[
+ gogonuts 5d?\: and nobody will resign, because - who knows?
+];W[lf]
+WL[0];B[le]BL[0];W[rc]WL[0];B[rb]BL[0];W[rm]WL[0];B[sm]BL[0];W[nq]WL[0];B[lj]BL[0]
+;W[mj]WL[0];B[ki]BL[0];W[lh]WL[0];B[rd]BL[0];W[ro]WL[0];B[sn]BL[0];W[qd]WL[0];B[qc]
+BL[0];W[re]WL[0];B[sc]BL[0];W[or]WL[0];B[pr]BL[0];W[eq]WL[0];B[es]BL[0]C[
+ EPGC 9d?\: sorry, we lost track
+ EPGC 9d?\: they're playing yose very fast with ~1 MINUTE PER TEAM
+ OferZivo 6d+\: I have a hunch w will win
+ gogonuts 5d?\: what happens if b just keeps playing when it's clearly over?
+ gogonuts 5d?\: will refs decide?
+ EPGC 9d?\: yes
+ gogonuts 5d?\: or is it just what it is?
+ gogonuts 5d?\: ok, thx
+ EPGC 9d?\: in case of obvious "cheating" refs may decide
+ Robfripp 1d?\: 42 sudden death and we watch something like bad go \:(n
+ Robfripp 1d?\: trying to win by time... so stupid
+ hogweed 1d \: is against the rules
+ gogonuts 5d?\: it's never 100% clear
+ gogonuts 5d?\: get fisher clocks
+ hogweed 1d \: it is clear in the pair go rules
+ Robfripp 1d?\: lol, i saw in the past games won by time ...
+ EPGC 9d?\: both ran out of time in the last dames
+ EPGC 9d?\: looks like refree will have to interfere
+ OferZivo 6d+\: both?..
+ gogonuts 5d?\: oh god
+ hogweed 1d \: great
+ Robfripp 1d?\: both ?
+ EPGC 9d?\: white clock dropped the flag first, but they said pass
+ gogonuts 5d?\: sudden death deserves this mess
+ hogweed 1d \: there is no rules committee to deal with disputes anymore
+ hippophile 5d?\: Why sudden death when there is a referee?????
+ Robfripp 1d?\: pass before ou after the flag dropped
+ Robfripp 1d?\: ?
+ EPGC 9d?\: impossible  to say exactly
+ hippophile 5d?\: Need goal line technology...
+ EPGC 9d?\: personally i despise sudden death because of this kind of situations
+ Robfripp 1d?\: lol
+ hippophile 5d?\: Agre EPGC 100%
+ EPGC 9d?\: i refuse to play any tournaments with sudden death after last year
+ Robfripp 1d?\: i agree with u EPGC
+ OferZivo 6d+\: who are you btw?
+ hippophile 5d?\: You expect trouble with kyu players, though. Not at this level
+ EPGC 9d?\: Ali, i was doing the commentary and simon was doing the relay
+ OferZivo 6d+\: there's trouble in pro level too... so I've heard
+ tanpopout 14k \: what is sudden death?
+ gogonuts 5d?\: well, it's about a trip to asia, so perhaps especially at this level
+ Robfripp 1d?\: at this level it is the same... proof... time has changed ...
+ OferZivo 6d+\: cool, Hi Ali \:)
+ hippophile 5d?\: Different countries have different ideas of honour I guess
+ OferZivo 6d+\: Canadian is also problematic, isn't it? \:P
+ EPGC 9d?\: looks like the win will be going to black
+ EPGC 9d?\: B+T
+ hogweed 1d \: make appeal
+ Robfripp 1d?\: what we saw in this game, so pitiful...
+ hippophile 5d?\: btw thanks for the high level of commentary
+ OferZivo 6d+\: lol
+ EPGC 9d?\: ilya and sveta cant participate in asia anyway since its an ama tournament
+ EPGC 9d?\: but i think they get some support for placing high in official european tournaments
+ gogonuts 5d?\: aren't there two spots?
+ hippophile 5d?\: I missed the nlast moves, were they dame or silly moves
+ hippophile 5d?\: ?
+ gogonuts 5d?\: one in which pros can play too?
+ Reznik 3d?\: Did black caught up a bit in the "blitz" yose to make the referee take such a decision?
+ Robfripp 1d?\: will u applause the winners ?
+ gogonuts 5d?\: the game wasn't over, and w fell rechnically
+ OferZivo 6d+\: hmm.. Where can the commentary be found?
+ hippophile 5d?\: then that is fine. But crazy to have sudden death except in real blitz
+ gogonuts 5d?\: I think after the game you can see the commentary with the download
+ gogonuts 5d?\: but when you join a game,y ou don't get it
+ Robfripp 1d?\: White had won this game, completely and absolutely, where is the referee?
+ EPGC 9d?\: its just text over this relay, there was no way to create varitions in panda
+ EPGC 9d?\: there is still one more round
+ hogweed 1d \: sad to have absolute time
+ gogonuts 5d?\: w should have known better than to go below 5 minutes
+ OferZivo 6d+\: didn't see the comments in the dl
+ hippophile 5d?\: Pair go time always seems a problem.
+ hippophile 5d?\: You feel a responsibility not to play something stupid, so you take too long
+ gogonuts 5d?\: this game isn't in the archive yet
+ gogonuts 5d?\: should be soon
+ gogonuts 5d?\: find a sponsor for fisher clocks
+ gogonuts 5d?\: and end this tragedy
+]
+;OS[ARARE][Acsabel][Adsa][CRZsqZxc][CRbAlKds][CRmYHDaD][CRmhgpxu][CRnqsRDx][EPGC2][EPGC3][GadgetoGo][GeorgeH][HansWerner][Hendysat][Howmuch][ISAO130][JeffChang][Jirtourn][KZ][Koldun][Koler][Kotouy][OferZivo][Pugovka][R3434][Rainer][Reznik][Riverpool][Robfripp][SFSHI][SHIYUU][Schachus][Scoun][Stones][Syoji][Takaq][Tigrou][Veedee][Wataru][XVexed][Yafei][a292939][adavies][afedca][ajwn4019][asten][ayugoru][bor][cafca][ddk06][eiffel][fabioK][fboutoille][fujikiyo][gjc9600][goaution][gogonuts][gopard][hippophile][hogweed][hu1982][hwspan][hyyt][isor][jusi][k4647k][kingchess][kuhiko1945][lexa][liminCHEN][makino1][mary007][michioy][midoc][mincso][n1422][nan373][nevercare1][niboshi][pavlepavle][smeagol][suzuki315][sweetapple][tanpopout][tarumi][taxi][tengmai][ttm112233][vorm][xhuhu][y02120809][yakkunusj][yamatai][yjg123a][yzh8051][zanthrox])

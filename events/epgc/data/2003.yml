@@ -1,0 +1,18 @@
+website:
+ - https://www.eurogofed.org/results/pairs/epgc2003.htm
+ - https://archiwum.go.art.pl/osrodki/03mepg1.php
+stages:
+  - type: tournament
+    name: Championship
+    file: epgc2003.txt
+    notes: there was also side tournament with 15 pairs
+    scoringColumns: 
+      - wins 
+      - sos
+      - sosos
+      - rating
+    breakers:
+      - wins
+      - sos
+      - sosos   
+    findSharedPlaces: true

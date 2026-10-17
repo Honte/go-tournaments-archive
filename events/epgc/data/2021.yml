@@ -1,0 +1,19 @@
+website: 
+ - https://www.eurogofed.org/results/pairs/epgc2021.htm
+ - https://eurogojournal.com/blog/surin-and-kovaleva-win-epgc2021/
+stages:
+  - type: tournament
+    name: Championship
+    file: epgc2021.txt
+    scoringColumns: 
+      - wins 
+      - sos
+      - sosos
+      - direct
+      - rating
+    breakers:
+      - wins
+      - sos
+      - sosos 
+      - direct      
+    findSharedPlaces: true

@@ -1,0 +1,11 @@
+website: https://www.eurogofed.org/results/pairs/epgc1997.htm
+stages:
+  - type: tournament
+    name: Championship
+    file: epgc1997.txt
+    notes: played in june, results before quarterfinals unknown
+    scoringColumns: 
+      - wins 
+    breakers:
+      - wins
+    findSharedPlaces: true

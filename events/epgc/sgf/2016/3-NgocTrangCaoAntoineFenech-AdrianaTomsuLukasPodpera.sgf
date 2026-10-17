@@ -1,0 +1,221 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]C[EPGC2016a [?\]\: The 3rd round of European Pair Go Championship will start soon.
+Javaness [-\]\: vive la france
+EPGC2016a [?\]\: 5 pairs with 2/2\: Shikshina/Shikshin, Pocsai/Balogh, Cao/Fenech, Tomsu/Podpera and Kadlecova/Jurek
+EPGC2016a [?\]\: Results\: http\://goweb.cz/turnaj/european-pair-go-championship/
+]
+AP[CGoban:3]SZ[19]GM[1]GN[European Pair Go Championship Tomsu,Podpera (CZ, 3d, w) vs. Cao, Fenech (FR,4d,b)]
+EV[European Pair Go Championship]RO[3]DT[2016-04-09]PC[The KGS Go Server at http\://www.gokgs.com/]
+PB[Cao, Fenech (FR)]BR[4d]PW[Tomsu, Podpera (CZ)]WR[3d]KM[6.5]TM[2700]RE[B+11.5]
+MULTIGOGM[1]
+;B[pd];W[dd];B[pq];W[dp];B[qo];W[nc];B[qf];W[jq];B[lc];W[jc];B[pb];W[ld];B[mc];W[md]
+;B[nb];W[kc];B[nd]C[YoungPro [-\]\: isn't it Tomsu?
+];W[ne]C[EPGC2016a [?\]\: My mistake, thank you!
+]
+;B[od];W[mf];B[cn];W[dk];B[cf];W[ce];B[df];W[fd];B[ci];W[co];B[dn];W[fp];B[ck];W[cl]
+;B[dl]C[Javaness [-\]\: i preferred the other name
+];W[el];B[dm];W[cj];B[bk];W[dj]
+;B[bj];W[di];B[ch];W[bn];B[bm];W[gg];B[lq];W[pg];B[hq];W[fq];B[ip];W[jp]C[EPGC2016a [?\]\: White 31min, Black 34min left
+]
+;B[in];W[jo];B[gn];W[lo];B[np];W[hp];B[gp];W[hr];B[ho];W[ir];B[qi];W[qk];B[qg];W[qn]
+C[TigerFox [4d\]\: q11
+TigerFox [4d\]\: for w better
+Javaness [-\]\: why does white invade there
+TigerFox [4d\]\: where?
+]
+;B[rn];W[qm];B[cc];W[dc];B[be]C[TigerFox [4d\]\: you mean r6?
+];W[cd];B[bd];W[bc]
+;B[fh]C[Javaness [-\]\: seems counterproductive to me
+];W[eg]C[TigerFox [4d\]\: it's ok but that area is too small because b already played lots there
+TigerFox [4d\]\: q11 better global strategy
+]
+;B[fg]C[TigerFox [4d\]\: i dislike r7 more than i dislike r6
+];W[gh]C[TigerFox [4d\]\: white can play r6 immediately as probe before q11
+TigerFox [4d\]\: but just playing r7 after makes w heavy and lets black cut with p11
+TigerFox [4d\]\: and then white's moyo gets destroy because r6/r7 too big to sacrifice
+TigerFox [4d\]\: black should be p11 now, not do nonsense on left
+TigerFox [4d\]\: wrong area
+]
+;B[ff];W[gf];B[fe];W[ge];B[gi]C[EPGC2016a [?\]\: White 22min, Black 27min left
+TigerFox [4d\]\: h11 only consistent move
+TigerFox [4d\]\: w should sac d9 group then take sente for q11
+]
+;W[gk]C[TigerFox [4d\]\: if w tries to make d9 live it's game over
+TigerFox [4d\]\: mmm white will get no points in centre now
+TigerFox [4d\]\: too busy living with this
+TigerFox [4d\]\: just h11 black, simple but effective
+]
+;B[hi]C[TigerFox [4d\]\: painfulk
+];W[ik]C[TigerFox [4d\]\: k11
+];B[fj]C[TigerFox [4d\]\: wrong direction again
+]
+;W[fk]C[TigerFox [4d\]\: lol
+TigerFox [4d\]\: white doesn't like to give stones up
+olly [7k\]\: well, it connects
+TigerFox [4d\]\: yeah but that's bad
+TigerFox [4d\]\: need to sacrifice
+TigerFox [4d\]\: white will save these stones of course
+TigerFox [4d\]\: but black will jump across centre
+TigerFox [4d\]\: and then play something like k15
+TigerFox [4d\]\: and oops white has no points
+]
+;B[km]C[TigerFox [4d\]\: this is probably overplay
+TigerFox [4d\]\: k7 cut looks good for w
+]
+;W[kk]C[TigerFox [4d\]\: k11 b
+olly [7k\]\: actually black has h8 
+olly [7k\]\: so the cut does not work
+TigerFox [4d\]\: ?
+TigerFox [4d\]\: k7, not k6
+TigerFox [4d\]\: w is threatening to play j12 now
+TigerFox [4d\]\: b needs jump
+]
+;B[ml]C[TigerFox [4d\]\: lol
+olly [7k\]\: he just did
+TigerFox [4d\]\: hahaha
+olly [7k\]\: nice call
+TigerFox [4d\]\: not that way
+TigerFox [4d\]\: silly move \:P
+TigerFox [4d\]\: i don't think these people are actually 3d/4d \:)
+EPGC2016a [?\]\: White 19 min, Black 22min left
+olly [7k\]\: hm, what is your rating fox ?
+britboy [2k\]\: two of them arent, i guess
+TigerFox [4d\]\: weak 5d
+olly [7k\]\: nice
+TigerFox [4d\]\: i play too much when tired, about 65% winrate at 4d so far
+TigerFox [4d\]\: but too many losses in endgame lol
+TigerFox [4d\]\: w j12 urgent
+]
+;W[ji];B[rm];W[po]C[TigerFox [4d\]\: lol
+TigerFox [4d\]\: lower right area so unimportant
+olly [7k\]\: well, they are only 3d/4d
+]
+;B[qp]C[TigerFox [4d\]\: wait two are not?
+TigerFox [4d\]\: it's rengo? but real life?
+olly [7k\]\: \:-)
+TigerFox [4d\]\: lol
+britboy [2k\]\: lol
+EPGC2016a [?\]\: It's European Pair Go Championship
+TigerFox [4d\]\: rengo is the most infuriating
+TigerFox [4d\]\: nice, official sounding rengo
+TigerFox [4d\]\: do we know how strong they are individual?
+TigerFox [4d\]\: or just as a pair?
+britboy [2k\]\: not as a pari
+EPGC2016a [?\]\: Fenech 5d, Cao 3d, Podpera 7d, Tomsu 1d
+britboy [2k\]\: its just the average of the two EGF ranks
+TigerFox [4d\]\: ok
+]
+;W[on]C[britboy [2k\]\: is that right?
+];B[mn]C[TigerFox [4d\]\: p6?
+TigerFox [4d\]\: no, o5 is better
+]
+;W[mo];B[no]C[TigerFox [4d\]\: \:S
+TigerFox [4d\]\: poor w
+];W[nn]C[TigerFox [4d\]\: n7
+olly [7k\]\: n7 is bad shape right ?
+TigerFox [4d\]\: i don't care if i have to play an empty dumpling if it kills them
+TigerFox [4d\]\: bad shape is good shape when it kills
+]
+;B[hl];W[hk]C[olly [7k\]\: so n7 kills ?
+];B[mm]C[TigerFox [4d\]\: if it doesn't kill, white has to run upwards, right?
+TigerFox [4d\]\: and then black runs unwards with moves like n11
+TigerFox [4d\]\: but then black can play a move like k12
+TigerFox [4d\]\: and white's in so much trouble
+TigerFox [4d\]\: since that group is also very weak
+TigerFox [4d\]\: it's difficult to save both
+olly [7k\]\: well, what do I know, just asking
+just9x9 [-\]\: bad shape is always bad shape, but can be a good move
+TigerFox [4d\]\: i would be confident of killing one or the other here
+TigerFox [4d\]\: either 47 group or j9 group
+TigerFox [4d\]\: r7*
+]
+;W[ok]C[TigerFox [4d\]\: n10
+olly [7k\]\: hm, at least white does not get a lot of points while running
+TigerFox [4d\]\: y this is good for b
+]
+;B[nj];W[pi]C[TigerFox [4d\]\: q10 very big
+breakfast [3p\]\: pls post the link to tourn. table
+Liso66 [?\]\: http\://goweb.cz/turnaj/european-pair-go-championship/
+breakfast [3p\]\: thx
+]
+;B[mi];W[qj];B[ph];W[oh];B[qh];W[oi]C[olivedu13 [1d\]\: allez strasbourg
+];B[ih]
+;W[ll]C[olly [7k\]\: black knows his kosumis
+mnbvcx\: сге т9 щк ь7
+mnbvcx\: cut n9 or m7
+Javaness [-\]\: coupe la tete
+]
+;B[kn]C[olly [7k\]\: n9 k12 ?
+mnbvcx\: cut
+];W[mk]C[olly [7k\]\: eh, there is also a cut at g16 later on
+]
+(;B[kh])
+(;B[jh];W[ki];B[kh]C[mnbvcx\: w have combination e11 and d13 -b13
+];W[lh]C[olly [7k\]\: yeah, but that looks pretty bad
+Liso66 [?\]\: btw some info also here http\://eurogofed.org/index.html?id=46
+mnbvcx\: You can start b13
+]
+;B[bo]C[olly [7k\]\: but how are you gonna save g12 ?
+];W[bp];B[bb]C[EPGC2016a [?\]\: White 12, Black 11 minutes left
+]
+;W[cb];B[ac];W[mq];B[ko]C[mnbvcx\: l4
+];W[lp]C[XY0908 [-\]\: I am sorry for a late question, but why this is called Pair Go championship? I don't see 4 players on the list.
+olly [7k\]\: it is a relay
+olly [7k\]\: Tomsu, Podpera versus Cao, Fenech
+XY0908 [-\]\: Thank you.
+]
+;B[kp]C[mnbvcx\:  b m2 better 
+mnbvcx\: wl3
+ranyee [4k\]\: n4?
+bianbun [6k\]\: m2
+olivedu13 [1d\]\: p 8 for b 
+]
+;W[kq];B[lr];W[mp];B[nr];W[nq];B[op]C[EPGC2016a [?\]\: I'm sorry. We lost connection
+mnbvcx\: n2
+]
+;W[mr];B[or];W[kr];B[an];W[ap];B[do];W[cp];B[ie];W[hd]C[mnbvcx\: probe b13
+];B[cc]
+C[Syptryn [3d\]\: white is outclassed
+];W[ei];B[fi];W[bc]C[EPGC2016a [?\]\: Black 7, White 9min left
+]
+;B[lg];W[mg]C[laoky [4d\]\: isn't white leading?
+];B[cc]C[mnbvcx\: b13 no work due to damezumari
+]
+;W[ee];B[ef];W[bc];B[gq];W[gr];B[cc];W[il];B[im];W[bc];B[rl];W[ri];B[cc];W[jn];B[jm]
+;W[bc];B[ol];W[pl];B[nk];W[li];B[kf];W[mj];B[cc]C[EPGC2016a [?\]\: really bad connection
+]
+;W[ni];B[db]C[EPGC2016a [?\]\: black 5 white 6min
+];W[eb]C[olivedu13 [1d\]\: yes
+]
+;B[ca];W[rh];B[ea];W[fb];B[rg];W[pf];B[pe];W[sg];B[sf];W[oj];B[nl];W[fo];B[fn];W[kb]
+;B[la];W[eo];B[fm];W[lb];B[mb]C[EPGC2016a [?\]\: b 4\:43 w \:32
+EPGC2016a [?\]\: 4\:32 for w
+]
+;W[lf];B[kg];W[oe];B[id];W[ic];B[fa];W[ga];B[da];W[gb];B[sh];W[rk];B[si];W[rj];B[eh]
+;W[ke]C[EPGC2016a [?\]\: 3\:50 for both now
+];B[if];W[dh];B[dg];W[ek];B[gl]C[EPGC2016a [?\]\: 3\:39 for black 2\:45 for white
+]
+;W[oq];B[pp];W[pr];B[qr];W[ns];B[ps];W[sl];B[om];W[pm];B[de];W[ed];B[ii];W[ij]C[EPGC2016a [?\]\: 3\:05 1\:55
+]
+(;B[jd])
+(;B[je];W[hg];B[ig];W[ao];B[bn];W[ka];B[ma];W[sj];B[sg];W[go];B[ql];W[pk]C[EPGC2016a [?\]\: 2\:15 1\:15
+]
+;B[jd];W[kd];B[jl];W[jk]C[Javaness [-\]\: so tense
+];B[kl];W[io];B[hn];W[iq];B[hp]
+;W[sm];B[so];W[sk];B[sn];W[he]C[EPGC2016a [?\]\: 1\:50 0\:50
+];B[os];W[ms];B[lm]
+C[mnbvcx\: b win
+];W[lk];B[oo];W[pn]C[EPGC2016a [?\]\: Pass-Pass
+];B[ln];W[ej];B[fl]
+;W[gj];B[em];W[hj];B[en];W[hf];B[hh];W[ls];B[nm]C[olivedu13 [1d\]\: white is atari
+EPGC2016a [?\]\: Japanese rules.
+Javaness [-\]\: of course french are winning
+EPGC2016a [?\]\: Black + 11,5
+EPGC2016a [?\]\: Thank you for watching!
+don [2k\]\: \\o/
+olivedu13 [1d\]\: YES!!
+mnbvcx\: blacr  lost all yose
+don [2k\]\: Thank you
+mnbvcx\: sorry w lost yose
+EPGC2016a [?\]\: Pocsai/Balogh have just won on the 3rd board by 4,5 points.
+EPGC2016a [?\]\: We will have simultaneous games and Party now. The next round will start tomorrow at 9AM. See you tomorrow!
+])))

@@ -1,0 +1,26 @@
+website:
+  - https://www.eurogofed.org/results/pairs/epgc2026.htm
+  - https://www.eurogofed.org/the-european-pair-go-championship-2026-austria-and-croatia-on-the-top/
+stages:
+  - type: tournament
+    name: Championship
+    file: epgc2026.txt
+    scoringColumns:
+      - mms
+      - sos
+      - sosos
+      - wins
+    breakers:
+      - mms
+      - sos
+      - sosos
+    columns:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 1-4 1:B+R round:1 sgf:2026/1-TingLiLotharSpiegel-AntoniaStanciuIoanElianGrigoriu.sgf ogs:https://online-go.com/review/1688797
+      - 1-7 1:B+R round:5 sgf:2026/5-TingLiLotharSpiegel-JitkaBartovaOndrejSilt.sgf ogs:https://online-go.com/review/1689481
+      - 1-8 1:B+R round:6 sgf:2026/6-TingLiLotharSpiegel-YvonneRoelofsMichielEijkhout.sgf ogs:https://online-go.com/review/1689561
+      - 2-1 1:W+R round:2 sgf:2026/2-MirtaMedakStjepanMedak-TingLiLotharSpiegel.sgf ogs:https://online-go.com/review/1688927
+      - 3-1 1:W+R round:4 sgf:2026/4-ManjaMarzJohannesObenaus-TingLiLotharSpiegel.sgf ogs:https://online-go.com/review/1689058
+      - 5-1 1:W+R round:3 sgf:2026/3-MilenaBocleBenjaminDreanGuenaizia-TingLiLotharSpiegel.sgf ogs:https://online-go.com/review/1688992

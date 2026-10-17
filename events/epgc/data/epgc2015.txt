@@ -1,0 +1,45 @@
+; EV[18th European Pair Go Championship]
+; PC[RU, Moscow]
+; DT[2015-05-16,2015-05-17]
+;https://web.archive.org/web/20150524091102/http://epgc2015.ru/en/registered-players
+;No Name                                         Cy  Gr Win  1   2   3   4   5   6   MM SOS SODOS 
+   1 Shikshina Svetlana      31k Shikshin Ilja           31k   7d RU   xxx    9+   8+   2+   3+   4+  10+    10    47    47     6 |10301236|12013342
+   2 Kalsberg Elvina         31k Dinerstein Alexandr     31k   5d RU   xxx   12+   7+   1-  14+   6+   4+     9    48    38     5 |10750047|10313237
+   3 Pocsai Rita             31k Balogh Pal              31k   5d HU   xxx   16+  10+  18+   1-   8+  11+     9    43    33     5 |10686346|10498246
+   4 Kovaleva Natalia        31k Surin Dmitrij           31k   6d RU   xxx   13+   6+   5+   7+   1-   2-     8    50    31     4 |10537087|10825254
+   5 Marz Manja              31k Palant Michael          31k   4d DE   xxx   11+  14+   4-   6-  13+   9+     8    44    28     4 |13062412|10249250
+   6 Mazlova Sofia           31k Sankin Timur            31k   2d RU   xxx   20+   4-  12+   5+   2-  23+     8    44    27     4 |10598082|10801032
+   7 Sharafeeva Guzel        31k Tychko Igor             31k   2d RU   xxx   25+   2-  17+   4-  12+   8+     8    42    25     4 |12586134|14025671
+   8 Scheuplein Vivian       31k Obenaus Johannes        31k   3d DE   xxx   15+   1-  13+  11+   3-   7-     7    48    21     3 |13813723|13049795
+   9 Popova Marina           31k Ismail-Akhunov Agzam    31k   1d RU   xxx    1-  15+  14-  22+  23+   5-     7    44    19     3 |15713247|15750735
+  10 Balakireva Anna         31k Kashaev Andrej          31k   2d RU   xxx   19+   3-  11-  18+  16+   1-     7    44    18     3 |15401672|12601215
+  11 Nevolina Maria          31k Dmitriev Ruslan         31k   1k RU   xxx    5-  25+  10+   8-  14+   3-     7    43    19     3 |16050980|10698204
+  12 Pleit Karen             31k Pomstra Koen            31k   1d NL   xxx    2-  19+   6-  17+   7-  21+     7    43    18     3 |10462485|10249602
+  13 Shalneva Virzhinia      31k Kajmin Vjacheslav       31k   1d RU   xxx    4-  20+   8-  15+   5-  22+     7    42    19     3 |16325034|14986257
+  14 Koshkina Daria          31k Trubicin Stepan         31k   2d RU   xxx   31+   5-   9+   2-  11-  17+     7    41    17     3 |14937934|13098096
+  15 Dankova Lenka           31k Danek Vladimir          31k   2k CZ   xxx    8-   9-  31+  13-  26+  16+     7    36    15     3 |10513063|10213016
+  16 Bosnjak Natasa          31k Dubakovic Dragan        31k   1d RS   xxx    3-  17-  20+  19+  10-  15-     6    41    12     2 |10637506|10637451
+  17 Chaplina Maria          31k Pomeranskij Andrej      31k   3k RU   xxx   23+  16+   7-  12-  18+  14-     6    40    18     3 |15749943|14013186
+  18 Ledysheva Maria         31k Korolkov Mikhail        31k   1k RU   xxx   33+  21+   3-  10-  17-  27+     6    37    15     3 |15825029|10862093
+  19 Martin Rose-Marguerite  31k Mueller Dominik         31k   3k CH   xxx   10-  12-  21+  16-  22-  28+     6    37    11     2 |14774254|10233806
+  20 Malatesta Sofia         31k Zingoni Alberto         31k   3k IT   xxx    6-  13-  16-  25+  21-  26+     6    37    10     2 |16974903|15262951
+  21 Balashova Julia         31k Melnikov Alexandr       31k   1k RU   xxx   22+  18-  19-  27+  20+  12-     6    36    17     3 |18325912|10849938
+  22 Lyndina Tatjana         31k Kholomkin Alexej        31k   2k RU   xxx   21-  27+  25+   9-  19+  13-     6    36    16     3 |12686124|14825910
+  23 Kondratenko Julia       31k Drukarev Daniil         31k   1k RU   xxx   17-  26+  29+  31+   9-   6-     6    35    14     3 |15713753|16437091
+  24 Zernovaja Beata         31k Mezhov Oleg             31k   4k RU   xxx   26-  33+  27-  30+  25+  35+     6    28    18     4 |16074894|10837068
+  25 Kralikova Zuzana        31k Jadron Milan            31k   4k SK   xxx    7-  11-  22-  20-  24-  31+     5    37     4     1 |15801764|10201653
+  26 Morozova Svetlana       31k Svjatlovskij Mikhail    31k   4k RU   xxx   24+  23-  28+  29+  15-  20-     5    35    16     3 |16374094|15913106
+  27 Klochikhina Valeria     31k Mezin Savva             31k   4k RU   xxx   28+  22-  24+  21-  29+  18-     5    34    16     3 |16513068|16086840
+  28 Shchipicina Ksenia      31k Lubsanov Maxim          31k   4k RU   xxx   27-  30+  26-  32+  31+  19-     5    29    13     3 |14950342|14998346
+  29 Kazakova Olga           31k Akinfeev Kirill         31k   4k RU   xxx   32+  31+  23-  26-  27-  34+     5    28    12     3 |17337925|15662537
+  30 Solomojchenko Alexandra 31k Solomojchenko Ilja      31k   5k RU   xxx   36+  28-  35+  24-  32+  38+     5    24    13     4 |13849473|15701752
+  31 Shkugal Valentina       31k Suponev Alexandr        31k   5k BY   xxx   14-  29-  15-  23-  28-  25-     4    35     0     0 |14762627|12349205
+  32 Negri Ekaterina         31k Zabirov Innokentiy      31k   5k RU   xxx   29-  39+  37+  28-  30-  36+     4    23     8     3 |16798287|16737281
+  33 Konshina Ekaterina      31k Fominykh Mikhail        31k   4k RU   xxx   18-  24-  36+  35-  34-  40+     4    23     3     2 |17025426|15033106
+  34 Palchikova Veronika     31k Kim Alexandr            31k   7k RU   xxx   37-  38+  39+  36+  33+  29-     4    19    11     4 |15825172|17050682
+  35 Ottjasova Nadezhda      31k Sankin Marat            31k   7k RU   xxx   38+  40+  30-  33+  39+  24-     4    19     8     4 |16833278|12049345
+  36 Pavlova Ekaterina       31k Batraev Vladimir        31k   5k RU   xxx   30-  37+  33-  34-  40+  32-     3    20     3     2 |17298534|14974432
+  37 Shandalova Kristina     31k Andrjushchenko Vladimir 31k  10k RU   xxx   34+  36-  32-  40+  38+  39-     3    15     6     3 |00000000|16201064
+  38 Kulikova Anna           31k Kukharkin Dmitrij       31k   8k RU   xxx   35-  34-  40+  39+  37-  30-     2    18     2     2 |13862475|14901953
+  39 Pljugina Elizaveta      31k Krajnov Anton           31k   8k RU   xxx   40+  32-  34-  38-  35-  37+     2    17     3     2 |14725821|16098852
+  40 Ottjasova Viktoria      31k Krajnov Jaroslav        31k  14k RU   xxx   39-  35-  38-  37-  36-  33-     0    18     0     0 |16974364|16349036

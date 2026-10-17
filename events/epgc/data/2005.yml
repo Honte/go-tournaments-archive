@@ -1,0 +1,24 @@
+website: https://www.eurogofed.org/results/pairs/epgc2005.htm
+stages:
+  - type: tournament
+    name: Championship
+    file: epgc2005.txt
+    scoringColumns:
+      - mms
+      - sos
+      - sodos
+      - wins
+    breakers:
+      - mms
+      - sos
+      - sodos
+    columns:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 1-14 1:B+R round:1 sgf:2005/1-LisaEnteBenjaminTeuber-JessicaRadcliffeAlexSelby.sgf
+      - 2-1 2:B+4.5 round:6 sgf:2005/6-ManuelaLindemeyerMichaelMarz-LisaEnteBenjaminTeuber.sgf
+      - 2-4 4:W+R round:4 sgf:2005/4-ManuelaLindemeyerMichaelMarz-JanaHricovaOndrejSilt.sgf
+      - 3-1 1:W+R round:2 sgf:2005/2-NataliaKovalevaTimurSankin-LisaEnteBenjaminTeuber.sgf
+      - 4-1 1:W+? round:5 sgf:2005/5-JanaHricovaOndrejSilt-LisaEnteBenjaminTeuber.sgf
+      - 8-2 2:W+R round:3 sgf:2005/3-KatarzynaKoenigJanuszKraszek-ManuelaLindemeyerMichaelMarz.sgf

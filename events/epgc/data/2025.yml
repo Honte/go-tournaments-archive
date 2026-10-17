@@ -1,0 +1,19 @@
+website: 
+ - https://www.eurogofed.org/results/pairs/epgc2025.htm
+ - https://www.eurogofed.org/sweden-wins-the-european-pair-go-championship/
+stages:
+  - type: tournament
+    name: Championship
+    file: epgc2025.txt
+    scoringColumns: 
+      - mms
+      - sos
+      - sosos
+      - wins      
+    breakers:
+      - mms
+      - sos
+      - sosos
+    columns:
+      - wins    
+    findSharedPlaces: true

@@ -1,0 +1,35 @@
+; EV[14th European Pair Go Championship]
+; PC[TR, Istanbul]
+; DT[2011-05-28,2011-05-29]
+;Pl	Female	Male	Gr	Cy	W	1 	2 	3	4 	5 	6 	MMS 	SOS
+   1 Pocsai Rita            31k Balogh Pal            31k   5D HU   xxxx  22+   4+   3+   2+   9+   7+    33    20     6 |10686346|10498246
+   2 Bartova Jitka          31k Hora Jan              31k   3D CZ   xxxx  11+   5+  13+   1-   6+  10+    32    22     5 |13849748|10401083
+   3 Zakharchenko Mariia    31k Pliushch Yurii        31k   3D UA   xxxx   8+  14+   1-  15+  13+   4+    32    19     5 |13937638|10449230
+   4 Nureeva Ajgul          31k Dugin Artem           31k   4D RU   xxxx   6+   1-  12+   8+  10+   3-    31    23     4 |12062347|12049576
+   5 Conradi Judith         31k Jasiek Robert         31k   4D DE   xxxx  12+   2-   6-  11+   8+   9+    31    20     4 |12850486|10213203
+   6 Cao Ngoc-Trang         31k Fenech Antoine        31k   3D FR   xxxx   4-  12+   5+  13+   2-  14+    31    19     4 |14586693|10349350
+   7 Sengul Damla_Pinar     31k Bilen Bertan          31k   2K TR   xxxx  10-  18+   9-  19+  14+   1-    30    21     3 |14950782|14013087
+   8 Berreby Monique        31k Clergue Olivier       31k   1D FR   xxxx   3-  11+  14+   4-   5-  15+    30    20     3 |10374562|10349548
+   9 Yegul Esra             31k Kilic Hayri           31k   3K TR   xxxx  16+  10-   7+  17+   1-   5-    30    18     3 |14562416|13737526
+  10 Siivola Sinikka        31k Siivola Matti         31k   3K FI   xxxx   7+   9+  15-  16+   4-   2-    30    18     3 |10262791|10286782
+  11 Regan Natasha          31k Cocke Matthew         31k   3D UK   xxxx   2-   8-  16+   5-  15+  13+    30    17     3 |12301146|10262021
+  12 Bosnjak Natasa         31k Dubakovic Dragan      31k   1D RS   xxxx   5-   6-   4-  14-  18+  20+    29    21     2 |10637506|10637451
+  13 Kleczkowska Klaudia    31k Dziolak Krzysztof     31k   2K PL   xxxx  15+  17+   2-   6-   3-  11-    29    20     2 |14801435|14337653
+  14 Eryilmaz Saadet        31k Albayrak Mehmet_Baris 31k   1K TR   xxxx  17+   3-   8-  12+   7-   6-    29    18     2 |13662649|13749527
+  15 Ozsekerli Gulcin_Cakir 31k Ozsekerli Turker      31k   2K TR   xxxx  13-  16+  10+   3-  11-   8-    29    17     2 |14586407|14525412
+  16 Celik Gonca_Mine       31k Karaerkek Kerem       31k   2K TR   xxxx   9-  15-  11-  10-  17-  21+    28    15     1 |15201021|10498576
+  17 Erdem Pelin            31k Kurter Eren           31k   2K TR   xxxx  14-  13-  19-   9-  16+  18-    28    15     1 |13633675|14274513
+  18 Coban Serap            31k Donertas Ozan_Can     31k   5K TR   xxxx  19+   7-  20+  21+  12-  17+    28    15     4 |14550415|13750528
+  19 Ozturk Filiz           31k Yildiz Gokhan         31k   6K TR   xxxx  18-  21+  17+   7-  20-  23+    27    17     3 |13686651|14849483
+  20 Basar Ezgi             31k Gulbudak Kemal        31k   5K TR   xxxx  21-  22+  18-  23+  19+  12-    27    15     3 |15949384|15413827
+  21 Turan Tildem           31k Sarikaya Dogukan      31k   7K TR   xxxx  20+  19-  22+  18-  24+  16-    26    16     3 |15849548|14325641
+  22 Sosun Senem            31k Celebican Barkin      31k   6K TR   xxxx   1-  20-  21-   0=   0=   0=    25    12     0 |00000000|13701534
+  23 Cagirici Merve         31k Guven Sami            31k   9K TR   xxxx  29+  25+  24-  20-  26+  19-    24    17     3 |15813985|14562427
+  24 Bozkurt Figen          31k Bozkurt Berk          31k  12K TR   xxxx  25+  26+  23+  30+  21-  27+    23    18     5 |15874562|15401859
+  25 Isilak Nukte           31k Ozisik Kivanc         31k  11K TR   xxxx  24-  23-  27-  26-  30+  31+    21    21     2 |15974794|15401826
+  26 Karagulle Deniz_Nedret 31k Acar Huseyin_Halil    31k  12K TR   xxxx  27-  24-  29+  25+  23-   0+    21    16     3 |16250498|15333879
+  27 Sari Meltem            31k Misirlioglu Ulas      31k  15K TR   xxxx  26+  29+  25+  31+   0+  24-    20    14     5 |16225506|15433847
+  28 Gundogan Ayse_Deniz    31k Sakalli Ozgun         31k  18K TR   xxxx  30+   0+  31+   0=   0=   0=    16     5     3 |00000000|16298843
+  29 Okmen Ozgul            31k Okmen Ahmet_Kemal     31k  16K TR   xxxx  23-  27-  26-   0+  31-  30-    15    16     1 |00000000|15413816
+  30 Dogan Irmak            31k Oren Ulas             31k  17K TR   xxxx  28-  31-   0+  24-  25-  29+    15    14     2 |00000000|16298832
+  31 Cagan Mevsim           31k Mungan Mert           31k  21K TR   xxxx   0+  30+  28-  27-  29+  25-    13     1     3 |00000000|15333483

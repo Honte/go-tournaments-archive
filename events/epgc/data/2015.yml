@@ -1,0 +1,17 @@
+website: https://www.eurogofed.org/results/pairs/epgc2015.htm
+stages:
+  - type: tournament
+    name: Championship
+    file: epgc2015.txt
+    scoringColumns: 
+      - mms
+      - sos
+      - sodos
+      - wins      
+    breakers:
+      - mms
+      - sos
+      - sodos
+    columns:
+      - wins    
+    findSharedPlaces: true

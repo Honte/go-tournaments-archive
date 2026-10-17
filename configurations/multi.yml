@@ -17,6 +17,8 @@ events:
     prefix: eygc
   - id: esgc
     prefix: esgc
+  - id: epgc
+    prefix: epgc
   - id: pgc
     prefix: pgc
   - id: pwgc

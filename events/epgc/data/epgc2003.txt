@@ -1,0 +1,19 @@
+; EV[6th European Pair Go Championship]
+; PC[PL, Wodzislaw Slaski]
+; DT[2003-04-04,2003-04-06]
+; 15 pairs side tournament
+;Pl.    Name                  Str         Co. MMS 1.   2.   3.   4.   5.   6.  Pt SOS SOSOS
+   1 Pocsai Rita           3d Pocsai Tibor            6d   4d HU   xxxx   8+   3+   9+   2+   4+   6+     6    22   122  2449 |10686346|10425217
+   2 Kovaleva Natalia      1d Lazarev Alexej          6d   5d RU   xxxx   6+   7+   5+   1-  10+   3+     5    22   120  2452 |10537087|10374386
+   3 Lubos Aleksandra      3d Soldan Leszek           6d   4d PL   xxxx   4+   1-   7+  12+   5+   2-     4    24   114  2424 |10674928|10449560
+   4 Ente Lisa             2d Teuber Benjamin         5d   3d DE   xxxx   3-   6+  11+   9+   1-   8+     4    21   116  2331 |10862962|10437174
+   5 Tombarello Anne       1d Hanotin Denis           2d   1d FR   xxxx  12+  10+   2-   8+   3-  11+     4    18   109  2086 |10362572|10349570
+   6 Simunkova Martina     2d Hora Jan                5d   3d CZ   xxxx   2-   4-  13+   7+   9+   1-     3    22   112  2323 |10298904|10401083
+   7 Suciu Irina           1d Florescu Ion            6d   3d RO   xxxx  13+   2-   3-   6-  12+  10+     3    17   113  2260 |10337261|10998163
+   8 Frehe Renee           4d Kok Rob                 3d   3d NL   xxxx   1-  14+  10+   5-  13+   4-     3    17   105  2325 |10313248|10562409
+   9 Gorbunova Yelyzaveta  2k Pliushch Yurii          4d   2d UA   xxxx  11+  13+   1-   4-   6-  14+     3    16   107  2152 |00000000|10449230
+  10 Lassakova Lucia       2k Svec Ivo                2k   2k SK   xxxx  14+   5-   8-  11+   2-   7-     2    17   102  1936 |10274693|10233652
+  11 Lubos Anna            4k Lubos Jan               4d   1k PL   xxxx   9-  12+   4-  10-  14+   5-     2    15    99  2038 |10662938|10337613
+  12 Schatz Jasna          5k Rojs Bojan              4d   3k SI   xxxx   5-  11-  14+   3-   7-  13+     2    14   101  1805 |10462023|10386981
+  13 Robotic Tea          10k Smud Mladen             4d   4k HR   xxxx   7-   9-   6-  14+   8-  12-     1    14    99  1602 |12598014|10398982
+  14 Barisic Visnjica      5k Barisic Dragan          5d   3k BA   xxxx  10-   8-  12-  13-  11-   9-     0    13    93  1808 |10613504|10398091

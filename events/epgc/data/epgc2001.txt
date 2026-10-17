@@ -1,0 +1,11 @@
+; EV[4th European Pair Go Championship]
+; PC[BA, Banja-Luka]
+; DT[2001-04-07,2001-04-08]
+;Pl. Name               Str.  MMS  1   2   3   4   5  Pt SOS 
+   1 Simunkova Martina   2d Hora Jan          4d   3d CZ   xxxx   3+   2+   4+   6+   5+     5    14 |10298904|10401083
+   2 Iacob Liliana       3k Toma Iulian       3d   1d RO   xxxx   7+   1-   5+   0+   3+     4    14 |10337459|10398410
+   3 Lubos Anna          8k Lubos Jan         4d   2k PL   xxxx   1-   6+   7+   4+   2-     3    15 |10662938|10337613
+   4 Regan Natasha       1k Selby Alex        3d   2d UK   xxxx   6+   5+   1-   3-   0+     3    14 |12301146|10225083
+   5 Mutabzija Jasmina   5k Mutabzija Zoran   5d   1d HR   xxxx   0+   4-   2-   7+   1-     2    14 |10798139|10249041
+   6 Barisic Visnjica    5k Barisic Dragan    5d   1d BA   xxxx   4-   3-   0+   1-   7+     2    13 |10613504|10398091
+   7 Gavrilovic Silvija  8k Dubakovic Dragan  3d   2k YU   xxxx   2-   0+   3-   5-   6-     1    11 |12498079|10637451

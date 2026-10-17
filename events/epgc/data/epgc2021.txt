@@ -1,0 +1,19 @@
+; EV[23rd European Pair Go Championship]
+; PC[RS, Nis]
+; DT[2021-09-25,2021-09-26]
+;Pl 	Name 	Rank 	Co 	NbW 	R1 	R2 	R3 	R4 	R5 	R6 	MMS 	SOS-1 	DC 	Rating
+   1 Kovaleva Natalia   31k Surin Dmitrij            31k   5D RU   xxx    6+/b0   5+/w0   2+/w0   3+/b0   4-/b0  11+/w0     5    28   134     1  2545 |10537087|10825254
+   2 Fazulzjanova Ajgul 31k Dinerstein Alexandr      31k   5D RU   xxx    8+/w0  10+/b0   1-/b0   5+/b0   3+/w0   4+/b0     5    28   134     0  2476 |12062347|10313237
+   3 Marz Manja         31k Obenaus Johannes         31k   4D DE   xxx    7+/b0   4+/w0   9+/w0   1-/w0   2-/b0   6+/w0     4    27   135     1  2420 |13062412|13049795
+   4 Ougier Ariane      31k Drean-Guenaizia Benjamin 31k   5D FR   xxx    9+/b0   3-/b0   7+/w0   6+/b0   1+/w0   2-/w0     4    27   135     0  2518 |15774187|14513532
+   5 Kalsberg Elvina    31k Trubicin Stepan          31k   4D RU   xxx   10+/w0   1-/b0   8+/b0   2-/w0   9+/b0   7-/w0     3    26   134     0  2392 |10750047|13098096
+   6 Bocle Milena       31k Labouret Florent         31k   3D FR   xxx    1-/w0  12+/b0  15+/b0   4-/w0   8+/w0   3-/b0     3    26   133     0  2341 |14362018|16486184
+   7 Cao Ngoc-Trang     31k Fenech Antoine           31k   3D FR   xxx    3-/w0  11+/b0   4-/b0   8-/w0  14+/w0   5+/b0     3    26   131     0  2345 |14586693|10349350
+   8 Donle Isabel       31k Schomberg Niels          31k   3D DE   xxx    2-/b0  14+/w0   5-/w0   7+/b0   6-/b0  15+/w0     3    26   130     1  2304 |16837359|14837075
+   9 Vlckova Tereza     31k Kruml Ondrej             31k   1K CZ   xxx    4-/w0  13+/b0   3-/b0  11+/w0   5-/w0  12+/b0     3    26   130     0  2000 |15333241|10886524
+  10 Kralikova Zuzana   31k Jadron Milan             31k   1K SK   xxx    5-/b0   2-/w0  14+/b0  12-/w0  13+/b0      0+     3    26   128     0  2028 |15801764|10201653
+  11 Vasova Dita        31k Vasa Vojtech             31k   1K CZ   xxx   13+/w0   7-/w0  12+/b0   9-/b0      0+   1-/b0     3    25   130     0  1953 |15749921|15762923
+  12 Mladenovic Sara    31k Milosevic Aleksandar     31k   8K RS   xxx       0+   6-/w0  11-/w0  10+/b0  15+/b0   9-/w0     3    25   126     0  1353 |18586194|10350109
+  13 Bukovska Anezka    31k Popov Robin              31k   2K CZ   xxx   11-/b0   9-/w0      0+  15+/b0  10-/w0  14+/w0     3    25   124     0  1899 |15874947|18386126
+  14 Djordjevic Sara    31k Dokic Ilija              31k   6K RS   xxx   15+/w0   8-/b0  10-/w0      0+   7-/b0  13-/b0     2    24   126     0  1501 |18098861|18986913
+  15 Stojanovic Ivana   31k Stojanovic Luka          31k   3K RS   xxx   14-/b0      0+   6-/w0  13-/w0  12-/w0   8-/b0     1    23   126     0  1885 |14333693|10713406

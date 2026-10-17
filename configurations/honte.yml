@@ -53,6 +53,10 @@ events:
         prefix: esgc
         external: true
         domain: https://eurogofed.org/archives/esgc
+      - id: epgc
+        prefix: epgc
+        external: true
+        domain: https://eurogofed.org/archives/epgc
   - title:
       en: Polish Championships
       pl: Mistrzostwa Polski

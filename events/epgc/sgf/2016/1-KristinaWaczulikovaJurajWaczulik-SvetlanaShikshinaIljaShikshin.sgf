@@ -1,0 +1,68 @@
+(;CA[utf-8]FF[4]ST[2]RU[Japanese]AP[CGoban:3]SZ[19]GM[1]GN[1st Board Shikshin/Shikshina (Russia,w) vs.Waczulik/Waczulikova (Slovakia,b)]
+EV[European Pair Go Championship]RO[1]DT[2016-04-09]PC[The KGS Go Server at http\://www.gokgs.com/]
+PB[Waczulik/Waczulikova (Slovakia)]BR[6k]PW[Shikshin/Shikshina (Russia)]WR[7d]KM[6.5]
+TM[2700]RE[W+R]MULTIGOGM[1]
+;B[pd];W[dp];B[pp]C[EPGC2016a [?\]\: Hi, This is the 1st round of European Pair Go Championship. 
+]
+;W[dc];B[ce];W[dh];B[ed];W[dd];B[de];W[ee]C[EPGC2016a [?\]\: The time setting are 45 minutes sudden death.
+]
+;B[ec];W[eb];B[fe];W[ef];B[fb];W[db];B[gc];W[bd];AB[op]AE[pp];B[pj];W[ic]C[Tictactoe [-\]\: this will be over soon
+]
+;B[hd];W[id];B[ie];W[je];B[if];W[ff];B[jf];W[ke];B[kf];W[le];B[fq]
+(;W[cn])
+(;W[dn];B[iq];W[qp];B[pn];W[nc];B[pg];W[qn];B[qm]C[EPGC2016a [?\]\: White 38 min, Black 36 min left.
+]
+;W[pm];B[ql];W[po];B[on];W[oo];B[np];W[no]C[LATE [1k\]\: why is a 6k playing against a 7d?
+]
+;B[rn];W[qo]C[EPGC2016a [?\]\: 18 pairs participate, This is pair nr. 1 against pair nr 18.
+EPGC2016a [?\]\: Check out the webpage of the tournament\: http\://www.baduk.cz/
+]
+;B[lp];W[mp];B[mq];W[mo]C[EPGC2016a [?\]\: First three round are paired according to rating, first against last. Last 3 rounds "free pairing"
+]
+;B[lq];W[qc];B[cq];W[dq];B[dr];W[pc];B[qd];W[cp];B[cr];W[ck];B[om];W[or];B[nr];W[nm]
+;B[ol];W[eq];B[er];W[fp];B[gp];W[fo]C[EPGC2016a [?\]\: White 33 min, Black 28 min left.
+]
+;B[jj]C[sykta\: lol
+];W[lm];B[md];W[lc];B[nd];W[oc];B[mf];W[od]
+(;B[oe])
+(;B[of];W[ge];B[he];W[mk];B[gj];W[ej];B[pq];W[qr];B[rd];W[gq];B[fr];W[hp]C[YoungPro [-\]\: what means free pairing?
+YoungPro [-\]\: isn't it winners against winners?
+EPGC2016a [?\]\: Yes, exactly that one. It just means that it's not according to rating.
+]
+;B[gr];W[hq];B[hr]C[windows [5k\]\: what did win 6k?
+];W[ip];B[jq]C[sykta\: the right to play a 7d for free
+EPGC2016a [?\]\: This is the first round, Pair nr. 1 paired against pair nr. 18 (the last one)
+]
+;W[rc];B[qq];W[rq]C[Nyanjilla [-\]\: brutal pairing....
+EPGC2016a [?\]\: Pair nr. 2 is paired against nr. 17 etc
+]
+;B[pr]C[sykta\: ko ?
+];W[ps]C[YoungPro [-\]\: no ko for sure
+];B[rr];W[pp]C[EPGC2016a [?\]\: White 25min, Black 20min left.
+]
+;B[qs];W[oq];B[os];W[nq];B[nj];W[mj];B[mi];W[ro];B[rm];W[mr];B[ns];W[sr];B[lr];W[li]
+;B[mh];W[pe];B[qe];W[qf]C[mnbvcx\: what time to start 2nd round?
+EPGC2016a [?\]\: At 14\:00 CEST
+mnbvcx\: thx
+EPGC2016a [?\]\: in 2 hours and 4 minutes.
+]
+;B[rf];W[sd];B[re]C[mnbvcx\: t13
+];W[nk];B[ok];W[rg]C[Nyanjilla [-\]\: so <gmt>2016-04-09 12\:00</gmt>  ?
+Kuros [3k\]\: b2 bombers escape all atari
+EPGC2016a [?\]\: Yes.
+]
+;B[qg];W[sf];B[pf]C[Kuros [3k\]\: i don't like this tournament - pair go and sudden death? yech
+Nyanjilla [-\]\: \\yay/ I got those horrible GMT codes right!
+]
+;W[rh];B[qi];W[oe];B[gn];W[go]C[EPGC2016a [?\]\: This is the time setting of the tournament that the players can qualify.
+]
+;B[gl];W[kj];B[ji];W[gi];B[hi];W[gh];B[dl];W[fl];B[fk];W[ek]C[EPGC2016a [?\]\: White 21min , Black 11min left
+TheThe [4k\]\: s1 ?
+]
+;B[ia];W[kb];B[hb];W[fm];B[hn];W[gm];B[hl];W[hm];B[in];W[il];B[ik];W[jo]C[mnbvcx\: Black time to surrender
+EPGC2016a [?\]\: Black resigned. W+ Resignation
+sykta\: gg
+mnbvcx\: для 6 кю черные играли неплохо
+mnbvcx\: 6 kyu Black played well
+EPGC2016a [?\]\: Thank you for watching.
+])))

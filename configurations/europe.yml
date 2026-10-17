@@ -12,6 +12,8 @@ events:
     prefix: eygc
   - id: esgc
     prefix: esgc
+  - id: epgc
+    prefix: epgc
 basePath: /archives
 trailingSlash: true
 crossLinks: true

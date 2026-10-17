@@ -1,0 +1,14 @@
+; EV[5th European Pair Go Championship]
+; PC[FR, Cannes]
+; DT[2002-03-01,2002-03-03]
+;Pl. Name                 Str  MMS   1    2    3    4    5   Pt  SOS  SODOS 
+   1 Cristiani Myrtille   1d Drouot Paul       5d   3d FR   xxxx   7+   8+   2+   4-   5+     4    14    64 |10725935|10337239
+   2 Trinks Daniela       3d Franke Lutz       5d   4d DE   xxxx   9+   5+   1-   6+   4+     4    13    66 |10249261|10225512
+   3 Suciu Irina          2k Bisca Mihai       5d   2d RO   xxxx   4+   6+   5-   8+   7+     4    12    65 |10337261|10301390
+   4 Regan Natasha        1d Cocke Matthew     5d   3d UK   xxxx   3-  10+   6+   1+   2-     3    14    64 |12301146|10262021
+   5 Xia Jie-Li           3d Xia Jie-Lin       5d   4d NO   xxxx  10+   2-   3+   7+   1-     3    14    62 |10898426|10886425
+   6 Diederen Marianne    1k Zandveld Peter    4d   1d NL   xxxx   8+   3-   4-   2-   9+     2    14    60 |10598412|10250823
+   7 Barisic Visnjica     5k Barisic Dragan    4d   2k BA   xxxx   1-   9+  10+   5-   3-     2    12    61 |10613504|10398091
+   8 Dankova Lenka        3k Danek Vladimir    6d   2d CZ   xxxx   6-   1-   9+   3-  10+     2    11    61 |10513063|10213016
+   9 Lassakova Lucia      2k Svec Ivo          2k   2k SK   xxxx   2-   7-   8-  10+   6-     1    10    61 |10274693|10233652
+  10 Antonacci Francesca  5k Cisbani Emanuele 12k  10k IT   xxxx   5-   4-   7-   9-   8-     0    11    61 |10337162|12601270
