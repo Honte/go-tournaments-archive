@@ -30,7 +30,7 @@ export function Opponents({ event, translations, player, category, pairs = false
   const comparePlayers = useMemo(() => createPlayersSorter(translations.locale), [translations.locale]);
 
   const data = useMemo(() => getOpponentRows(player, pairs), [player, pairs]);
-  const hasSgfs = event.generateSgfs && data.some((row) => row.sgfs > 0);
+  const hasSgfs = Boolean(event.generateSgfs) && data.some((row) => row.sgfs > 0);
   const hasDraws = data.some((opponent) => opponent.drawn > 0);
   const hasUnresolved = data.some((row) => row.unresolved > 0);
 
@@ -106,7 +106,7 @@ export function Opponents({ event, translations, player, category, pairs = false
   );
 
   return (
-    <div className="flex-1">
+    <div>
       <H2>{t(pairs ? 'stats.opponentPairs' : 'stats.opponents')}</H2>
       <StatsTable data={data} columns={columns} />
     </div>

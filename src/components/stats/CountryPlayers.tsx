@@ -102,7 +102,7 @@ export function CountryPlayers({ event, country, translations, category, pairs =
     return list.sort(sortTableStats);
   }, [country, pairs]);
 
-  const hasSgfs = event.generateSgfs && data.some((row) => row.sgfs > 0);
+  const hasSgfs = Boolean(event.generateSgfs) && data.some((row) => row.sgfs > 0);
   const hasDraws = data.some((player) => player.drawn > 0);
   const hasUnresolved = data.some((row) => row.unresolved > 0);
 
@@ -125,7 +125,7 @@ export function CountryPlayers({ event, country, translations, category, pairs =
       {
         accessorKey: 'bestPlace',
         header: t('table.best'),
-        enabled: event.showBestPlace,
+        enabled: Boolean(event.showBestPlace),
         cell: formatter.toNumericCell,
       },
       {

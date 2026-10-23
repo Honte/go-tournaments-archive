@@ -1,13 +1,13 @@
-import type { ReactNode } from 'react';
 import type { PlayerStats } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
+import { getFormatter } from '@/i18n/formatter';
 import { getTranslator } from '@/i18n/translator';
-import { Details } from '@/components/Details';
-import { SgfCountLink } from '@/components/gameRecords/SgfCountLink';
-import { AchievementYears } from '@/components/stats/AchievementYears';
-import { ExternalLink } from '@/components/ui/ExternalLink';
-import { H2 } from '@/components/ui/H2';
+import { DEFAULT_GAME_RECORDS_STATE, serializeGameRecordsState } from '@/libs/gameRecords';
+import { allGameStatsUrl } from '@/libs/urls';
+import { GamesIcon } from '@/components/home/ArchiveStatsIcons';
+import { MedalCard, type MedalCardData } from '@/components/stats/MedalCard';
+import { Button } from '@/components/ui/Button';
 
 type AchievementsProps = {
   event: EventContext;
@@ -16,89 +16,94 @@ type AchievementsProps = {
   category?: string;
 };
 
-const MEDALS = ['first', 'second', 'third'] as const;
-
 export function Achievements({ event, player, translations, category }: AchievementsProps) {
   const t = getTranslator(translations);
-  const details: Record<string, ReactNode> = {};
+  const { toCount } = getFormatter(translations.locale);
 
-  if (player.original?.length) {
-    details[t('details.original')] = player.original;
+  const cards = getPlayerMedalCards(player, event.categories);
+
+  const metrics = [{ label: t('table.events'), value: player.totalAttended }];
+
+  if (event.showBestPlace && !cards.length) {
+    metrics.push({ label: t('table.bestPlace'), value: player.bestPlace });
   }
 
-  let hasMedals = false;
-  for (const [index, medal] of MEDALS.entries()) {
-    if (event.categories?.length) {
-      for (const category of event.categories) {
-        const achievements = player.categoriesMedals[category]?.[index];
-
-        if (achievements?.length) {
-          details[t(`winners.${medal}In`, t(`categories.short.${category}`))] = (
-            <AchievementYears event={event} years={achievements} locale={translations.locale} />
-          );
-          hasMedals = true;
-        }
-      }
-    } else {
-      const achievements = player.medals[index];
-
-      if (achievements.length) {
-        details[t(`winners.${medal}`)] = (
-          <AchievementYears event={event} years={achievements} locale={translations.locale} />
-        );
-        hasMedals = true;
-      }
-    }
-  }
-
-  if (event.showBestPlace && !hasMedals) {
-    details[t('table.bestPlace')] = player.bestPlace;
-  }
-
-  details[t('table.events')] = player.totalAttended;
-  details[t('table.games')] = player.totalGames;
-
-  if (event.generateSgfs && player.totalSgfs > 0) {
-    details[t('table.sgfs')] = (
-      <SgfCountLink
-        event={event}
-        locale={translations.locale}
-        count={player.totalSgfs}
-        filters={{ player: player.id, category }}
-      />
-    );
-  }
-
-  details[t('table.won')] = player.totalWon;
+  metrics.push(
+    { label: t('table.games'), value: player.totalGames },
+    { label: t('table.won'), value: player.totalWon }
+  );
 
   if (player.totalDrawn > 0) {
-    details[t('table.drawn')] = player.totalDrawn;
+    metrics.push({ label: t('table.drawn'), value: player.totalDrawn });
   }
 
   if (player.totalUnresolved > 0) {
-    details[t('table.unresolved')] = player.totalUnresolved;
+    metrics.push({ label: t('table.unresolved'), value: player.totalUnresolved });
   }
 
-  if (player.egd) {
-    details[t('details.egd')] = (
-      <ExternalLink href={getEgdProfileLink(player.egd)} title={t('details.goToEGD')}>
-        {player.egd}
-      </ExternalLink>
-    );
-  }
-
-  if (player.nickname?.length) {
-    details[t('details.nickname')] = player.nickname.join(', ');
-  }
+  const query = serializeGameRecordsState({ ...DEFAULT_GAME_RECORDS_STATE, player: player.id, category });
 
   return (
-    <div className="flex flex-col">
-      <H2>{t('stats.achievements')}</H2>
-      <Details details={details} />
-    </div>
+    <section className="flex flex-col gap-4">
+      {cards.length > 0 && (
+        <div className="flex flex-col gap-4 md:flex-row md:justify-center md:*:w-[calc((100%-2rem)/3)]">
+          {cards.map((card) => (
+            <MedalCard key={card.medal} card={card} event={event} translations={translations} />
+          ))}
+        </div>
+      )}
+      <div className="flex flex-wrap items-center md:mx-4 gap-x-8 gap-y-4">
+        <dl className="flex flex-wrap gap-x-8 gap-y-4">
+          {metrics.map(({ label, value }) => (
+            <div key={label} className="flex flex-col-reverse">
+              <dt className="text-sm text-archive-text-muted">{label}</dt>
+              <dd className="text-2xl">{toCount(value)}</dd>
+            </div>
+          ))}
+        </dl>
+        {event.generateSgfs && player.totalSgfs > 0 && (
+          <Button
+            href={`${allGameStatsUrl(event, translations.locale)}?${query}`}
+            icon={<GamesIcon />}
+            className={`
+            sm:ml-auto p-3
+            bg-archive-accent-fill text-archive-accent-text
+            hover:bg-archive-accent-fill-hover hover:text-archive-accent-text
+          `}
+          >
+            {t('stats.viewGameRecords', toCount(player.totalSgfs))}
+          </Button>
+        )}
+      </div>
+    </section>
   );
 }
 
-function getEgdProfileLink(pin: number) {
-  return `https://europeangodatabase.eu/EGD/Player_Card.php?&key=${pin}`;
+function getPlayerMedalCards(player: PlayerStats, categories: readonly string[] = []): MedalCardData[] {
+  const cards: MedalCardData[] = [];
+  const medals = ['gold', 'silver', 'bronze'] as const;
+  const awards = ['first', 'second', 'third'] as const;
+
+  for (const [index, medal] of medals.entries()) {
+    const groups: MedalCardData['groups'] = [];
+    let count = 0;
+
+    for (const category of categories.length ? categories : [undefined]) {
+      const years = category ? player.categoriesMedals[category]?.[index] : player.medals[index];
+
+      if (years?.length) {
+        groups.push({
+          category,
+          years: years.toSorted((a, b) => b.localeCompare(a, undefined, { numeric: true })),
+        });
+        count += years.length;
+      }
+    }
+
+    if (count) {
+      cards.push({ medal, award: awards[index], count, groups });
+    }
+  }
+
+  return cards;
 }

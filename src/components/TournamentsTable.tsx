@@ -70,7 +70,7 @@ export function TournamentsTable({ event, rows, translations, showSgfs }: Tourna
       {
         accessorKey: 'country',
         header: t('table.country'),
-        enabled: event.showCountry,
+        enabled: Boolean(event.showCountry),
         cell: (info) => (info.row.original.country ? t(`country.${info.row.original.country}`) : '—'),
         sortFn: createCountryColumnSorter((code) => t(`country.${code}`), locale),
       },

@@ -87,7 +87,7 @@ function AllCountriesStatsContent({ event, countries, translations }: AllCountri
     [countries, t]
   );
 
-  const hasSgfs = event.generateSgfs && data.some((country) => country.sgfs > 0);
+  const hasSgfs = Boolean(event.generateSgfs) && data.some((country) => country.sgfs > 0);
   const hasDraws = data.some((country) => country.drawn > 0);
   const hasUnresolved = data.some((row) => row.unresolved > 0);
 
@@ -113,7 +113,7 @@ function AllCountriesStatsContent({ event, countries, translations }: AllCountri
       {
         accessorKey: 'bestPlace',
         header: t('table.best'),
-        enabled: event.showBestPlace,
+        enabled: Boolean(event.showBestPlace),
         cell: formatter.toNumericCell,
       },
       {

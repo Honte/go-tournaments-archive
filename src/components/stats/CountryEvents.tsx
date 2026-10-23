@@ -68,7 +68,7 @@ export function CountryEvents({
     [country, event.categories?.length, showBestOnly, showCategories]
   );
 
-  const hasSgfs = event.generateSgfs && data.some((row) => row.sgfs > 0);
+  const hasSgfs = Boolean(event.generateSgfs) && data.some((row) => row.sgfs > 0);
   const hasDraws = data.some((opponent) => opponent.drawn > 0);
   const hasUnresolved = data.some((row) => row.unresolved > 0);
 

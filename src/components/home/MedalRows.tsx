@@ -8,9 +8,9 @@ import { PlayerLink } from '@/components/ui/PlayerLink';
 import { PlayerName } from '@/components/ui/PlayerName';
 
 const MEDALS = [
-  { index: 0, color: '#fece43', label: 'winners.first' },
-  { index: 1, color: '#c0c0c0', label: 'winners.second' },
-  { index: 2, color: '#CD7F32', label: 'winners.third' },
+  { index: 0, color: 'var(--color-archive-medal-gold)', label: 'winners.first' },
+  { index: 1, color: 'var(--color-archive-medal-silver)', label: 'winners.second' },
+  { index: 2, color: 'var(--color-archive-medal-bronze)', label: 'winners.third' },
 ] as const;
 
 type MedalRowsProps = {

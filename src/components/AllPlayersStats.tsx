@@ -102,7 +102,7 @@ function AllPlayersStatsContent({ event, players, translations }: AllPlayersStat
     [players]
   );
 
-  const hasSgfs = event.generateSgfs && data.some((p) => p.sgfs > 0);
+  const hasSgfs = Boolean(event.generateSgfs) && data.some((p) => p.sgfs > 0);
   const hasDraws = data.some((p) => p.drawn > 0);
   const hasUnresolved = data.some((row) => row.unresolved > 0);
 
@@ -130,7 +130,7 @@ function AllPlayersStatsContent({ event, players, translations }: AllPlayersStat
       {
         accessorKey: 'country',
         header: t('table.country'),
-        enabled: event.showCountry,
+        enabled: Boolean(event.showCountry),
         cell: (info) =>
           jsxJoin(
             info.row.original.countries.map((code) => (
@@ -142,7 +142,7 @@ function AllPlayersStatsContent({ event, players, translations }: AllPlayersStat
       {
         accessorKey: 'bestPlace',
         header: t('table.best'),
-        enabled: event.showBestPlace,
+        enabled: Boolean(event.showBestPlace),
         cell: formatter.toNumericCell,
       },
       {
