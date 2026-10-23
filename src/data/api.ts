@@ -1,8 +1,9 @@
 import type { ApiGameInfo } from '@/schema/api';
-import type { CountryStats, PlayerStats, Tournament } from '@/schema/data';
+import type { CountryStats, PlayerStats } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { SearchIndex } from '@/schema/search';
 import type { Locale, Translations } from '@/i18n/consts';
+import type { TournamentTables } from '@/libs/tournaments';
 import {
   countryStatsDataUrl,
   gamesWithSgfsUrl,
@@ -10,12 +11,12 @@ import {
   playerStatsDataUrl,
   searchIndexUrl,
   sitemapUrl,
-  tournamentsDataUrl,
+  tournamentTablesDataUrl,
 } from '@/libs/urls';
 import type { NavigationGroup } from '@/data/sitemap';
 
-export function fetchTournaments(event: EventContext) {
-  return get<Tournament[]>(tournamentsDataUrl(event));
+export function fetchTournamentTables(event: EventContext) {
+  return get<TournamentTables>(tournamentTablesDataUrl(event));
 }
 
 export function fetchTranslations(event: EventContext, locale: Locale) {

@@ -13,6 +13,7 @@ import type { EventDefinition, EventContext, EventData } from '@/schema/event';
 import type { SearchIndex } from '@/schema/search';
 import type { Locale, Translations } from '@/i18n/consts';
 import { loadTranslations } from '@/i18n/server';
+import { buildTournamentTables, type TournamentTables } from '@/libs/tournaments';
 import { loadTournamentDescription } from '@/data/description';
 import { readEventPlayersFile } from '@/data/eventPlayers';
 import { loadData } from '@/data/load';
@@ -50,6 +51,16 @@ export async function getTournaments(event: EventContext) {
   const { tournaments } = await getData(event);
 
   return tournaments;
+}
+
+export async function getTournamentTables(event: EventContext): Promise<TournamentTables> {
+  if (IS_PRODUCTION) {
+    return readDataAsset<TournamentTables>(event, 'tournaments-table.json');
+  }
+
+  const { tournaments } = await getData(event);
+
+  return buildTournamentTables(event, tournaments);
 }
 
 export async function getTournament(event: EventContext, year: number) {

@@ -52,7 +52,8 @@ The archive `basePath` applies to these URLs too.
 
 | Path below the data root         | Payload                              |
 | -------------------------------- | ------------------------------------ |
-| `/tournaments.json`              | Edition list                         |
+| `/tournaments.json`              | Full editions for server-side reads  |
+| `/tournaments-table.json`        | Precomputed tournament table rows    |
 | `/:year.json`                    | One edition                          |
 | `/i18n/:locale.json`             | Merged shared/event translations     |
 | `/sitemap/:locale.json`          | Navigation                           |
