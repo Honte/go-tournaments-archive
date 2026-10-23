@@ -1,6 +1,7 @@
 import type { Participant, PlayerStats, TableStats } from '@/schema/data';
 import { getGameStats } from '@/libs/games';
 import { getParticipantName, getParticipantPlayers, isPair } from '@/libs/participants';
+import { splitPlayerName } from '@/libs/playerNames';
 
 export type RelatedPlayerRow = TableStats & {
   id: string;
@@ -40,9 +41,9 @@ export function getOpponentRows(player: PlayerStats, pairs = false): RelatedPlay
           row.participant = { ...participant, country: row.country };
           if (!isPair(participant)) {
             row.name = player.opponents[participant.id] ?? participant.name;
-            const [first, ...last] = row.name.split(' ');
-            row.firstName = first;
-            row.lastName = last.join(' ');
+            const { firstName, lastName } = splitPlayerName(row.name);
+            row.firstName = firstName;
+            row.lastName = lastName;
             row.participant = { ...row.participant, name: row.name };
           }
           const outcomes = getGameStats([game]);
@@ -99,12 +100,12 @@ export function getPartnerRows(player: PlayerStats): RelatedPlayerRow[] {
 
 function createRow(participant: Participant): RelatedPlayerRow {
   const name = getParticipantName(participant);
-  const [firstName, ...rest] = name.split(' ');
+  const { firstName, lastName } = splitPlayerName(name);
   return {
     id: participant.id,
     name,
     firstName,
-    lastName: rest.join(' '),
+    lastName,
     country: participant.country ?? '',
     participant,
     bestPlace: Infinity,

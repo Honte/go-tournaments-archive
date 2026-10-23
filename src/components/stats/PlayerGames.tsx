@@ -4,6 +4,7 @@ import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
 import { getParticipantName } from '@/libs/participants';
+import { splitPlayerName } from '@/libs/playerNames';
 import { createPlayersSorter } from '@/libs/sort';
 import { gameThumbUrl } from '@/libs/urls';
 import { GameActions } from '@/components/GameActions';
@@ -54,8 +55,7 @@ export function PlayerGames({ event, player, translations }: PlayerGamesProps) {
           }
 
           const opponentName = player.opponents[game.id] ?? (game.opponent ? getParticipantName(game.opponent) : '');
-          const [opponentFirstName, ...rest] = opponentName.split(' ');
-          const opponentLastName = rest.join(' ') || '';
+          const { firstName: opponentFirstName, lastName: opponentLastName } = splitPlayerName(opponentName);
 
           const opponent = game.opponent
             ? { ...game.opponent, name: opponentName }

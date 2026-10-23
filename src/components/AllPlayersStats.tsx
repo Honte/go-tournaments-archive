@@ -7,6 +7,7 @@ import type { Locale, Translations } from '@/i18n/consts';
 import { getFormatter } from '@/i18n/formatter';
 import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
+import { splitPlayerName } from '@/libs/playerNames';
 import { sortTableStats } from '@/libs/sort';
 import { SgfCountLink } from '@/components/gameRecords/SgfCountLink';
 import { StatsTable } from '@/components/table/StatsTable';
@@ -70,7 +71,7 @@ function AllPlayersStatsContent({ event, players, translations }: AllPlayersStat
             country: countries,
             totalSgfs,
           } = p;
-          const [firstName, lastName] = (name ?? '').split(' ');
+          const { firstName, lastName } = splitPlayerName(name ?? '');
           const [gold, silver, bronze] = medals;
 
           // for sorting
