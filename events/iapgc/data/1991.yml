@@ -1,0 +1,14 @@
+website: https://www.pairgo.or.jp/db-e/db1_2.htm
+stages:
+  - type: tournament
+    name: IAPGC
+    category: iapgc
+    file: iapgc1991.txt
+    notes: 12 countries, no results available
+    scoringColumns:
+      - place
+    breakers:
+      - place
+    findSharedPlaces: false
+    games:
+      - 1-2 1:B+R round:1 sgf:1991/1-ChenghuaZhangYuguoXie-SachikoMinatogawaShojiKomori.sgf

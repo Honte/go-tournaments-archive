@@ -1,0 +1,36 @@
+; EV[24th International Amateur Pair Go Championship]
+; PC[JP, Tokyo]
+; DT[2013-11-02,2013-11-03]
+;https://www.pairgo.or.jp/amateur/24th/index_e.htm
+   1 Kim Sooyoung                6d Jeon Junhak                4d   5d KR   xxxx  10+   5+   7+   9+   3+     5    17    77 |19374817|00000000
+   2 Lin Hung-Ping               7d Lo Sheng-Chieh             7d   7d TW   xxxx   6+  15+   8+   3-   9+     4    17    71 |00000000|14762836
+   3 Oda Ayako                   6d Nagayo Kazumori            6d   6d JP   xxxx  21+  22+  14+   2+   1-     4    16    70 |00000000|14837163
+   4 Kovaleva Natalia            5d Surin Dmitrij              6d   6d RU   xxxx  12+   7-  18+  13+   8+     4    14    73 |10537087|10825254
+   5 Horimoto Noriko             6d Yanagida Tomoya            6d   6d JP   xxxx  25+   1-  19+  23+   7+     4    14    71
+   6 Saito Naoko                 5d Kuramoto Minoru            8d   7d JP   xxxx   2-  28+  17+  14+  11+     4    13    66
+   7 Fukushima Minori            7d Ota Shogo                  6d   7d JP   xxxx  20+   4+   1-  10+   5-     3    18    71
+   8 Tani Maiko                  6d Kobayashi Hiroki           6d   6d JP   xxxx  16+  17+   2-  15+   4-     3    16    65
+   9 Silber Olga                 1k Teuber Benjamin            6d   3d DE   xxxx  28+  19+  11+   1-   2-     3    15    71 |13449645|10437174
+  10 Takeno Manami               6d Sakakura Kenta             6d   6d JP   xxxx   1-  25+  21+   7-  20+     3    14    70
+  11 Davis Irina                 1k Calota Lucretiu            5d   3d RO   xxxx  24+  18+   9-  12+   6-     3    14    66 |10337261|10350395
+  12 Takehisa Kiyomi             6d Gokuden Mizuo              6d   6d JP   xxxx   4-  24+  16+  11-  19+     3    14    62
+  13 Bergstroem Kerstin          1k Aakerblom Charlie          4d   2d SE   xxxx  18-  20+  22+   4-  25+     3    12    62 |13062478|13286603
+  14 Nguyen Thi_Tam_Anh          3d Do Khanh_Binh              5d   4d VN   xxxx  31+  29+   3-   6-  17+     3    12    60 |18449508|16250157
+  15 Kushiro Geishun             6d Kushiro Toshiaki           6d   6d JP   xxxx  27+   2-  29+   8-  21+     3    11    65
+  16 Zaloudkova Klara            3d Hora Jan                   6d   5d CZ   xxxx   8-  32+  12-  22+  23+     3    10    62 |10798106|10401083
+  17 Kato Chie                   6d Torii Shinichi             6d   6d JP   xxxx  23+  18-   6-  24+  14-     2    13    61
+  18 Aroonphaichitra Pattraporn  3d Taechaamnuayvit Nuttakrit  5d   4d TH   xxxx  13+  11-   4-  20-  31+     2    13    60 |00000000|15949153
+  19 Li Rita                     5d Lin Bill                   7d   6d CA   xxxx  26+   9-   5-  30+  12-     2    13    60 |00000000|16913215
+  20 Ho Li-ting                  2d Lee James                  5d   4d SG   xxxx   7-  13-  31+  18+  10-     2    12    65 |18437826|21098418
+  21 Omura Miyuki                5d Omura Keita                6d   6d JP   xxxx   3-  30+  10-  27+  15-     2    12    60
+  22 Buntsma Els                 2k Jong Merijn_de             3d   1d NL   xxxx  30+   3-  13-  16-  27+     2    12    57 |10250845|10449472
+  23 Wang Rui                    5d Zhou Gang                  4d   5d CN   xxxx  17-  26+  27+   5-  16-     2    12    55
+  24 Mazurek Katarzyna           2k Kaminski Marek             4d   2d PL   xxxx  11-  12-  26+  17-  29+     2    11    59 |13862167|13913823
+  25 Wang Amy                    2d Ching Justin               4d   3d US   xxxx   5-  10-  32+  29+  13-     2    11    58 |19262386|16525520
+  26 Regan Natasha               1k Cocke Matthew              5d   3d UK   xxxx  19-  23-  24-  28+  30+     2     8    55 |12301146|10262021
+  27 Kawabuchi Kumiko            5d Obayashi Hideki            6d   6d JP   xxxx  15-  31+  23-  21-  22-     1    10    55
+  28 Berreby Monique             1k Clergue Olivier            3d   2d FR   xxxx   9-   6-  30-  26-  32+     1    10    53 |10374562|10349548
+  29 Xue Jingning                5k Ormerod David              6d   1d AU   xxxx  32+  14-  15-  25-  24-     1    10    53 |00000000|15874276
+  30 Ohlenbusch Marit            4k Ohlenbusch Arne            3d   1k DK   xxxx  22-  21-  28+  19-  26-     1     9    55 |13913416|13701237
+  31 Lim Shu-Wen                 1d Mohd-Zaid Waqiyuddin       5d   3d MY   xxxx  14-  27-  20-  32+  18-     1     8    55 |00000000|15025164
+  32 Sartorio Natalia           15k Riemsdijk Felipe_van       1d   7k BR   xxxx  29-  16-  25-  31-  28-     0     8    49 |00000000|15637105

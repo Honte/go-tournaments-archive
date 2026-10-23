@@ -1,0 +1,37 @@
+; EV[5th International Amateur Pair Go Championship]
+;https://www.pairgo.or.jp/topics-e/5ama1.htm
+; PC[JP, Tokyo]
+; DT[1994-11-26,1994-11-27]
+;Alison Jones = Bexfield
+   1 Umezawa Yukari     31k Sakai Yukihide     31k  31k JP   xxx   20+  10+   5+   3+   2+     1     5 |13298725|00000000
+   2 Lee Jungwon        31k Park Sungsoo       31k  31k KR   xxx   28+  14+   7+   4+   1-     2     4
+   3 Tsukuda Yuko       31k Kanno Masaaki      31k  31k JP   xxx   21+  11+   6+   1-   4+     3     4
+   4 Nishida Harumi     31k Kamibayashi Hidemi 31k  31k JP   xxx   29+  15+   8+   2-   3-     4     3
+   5 Sato Akiko         31k Yamashita Isao     31k  31k JP   xxx   18+   9+   1-   0=   0=     5     2
+   6 Nakamura Taiko     31k Fueno Tomoyasu     31k  31k JP   xxx   23+  12+   3-   0=   0=     5     2 |12325698|00000000
+   7 Tanaka Yumiko      31k Komori Shoji       31k  31k JP   xxx   26+  13+   2-   0=   0=     5     2
+   8 Fukazawa Y         31k Kushiro T          31k  31k JP   xxx   31+  16+   4-   0=   0=     5     2
+   9 Giardino Raffaella 31k Rezza Alberto      31k  31k IT   xxx   17+   5-   0=   0=   0=     9     1 |10301148|10333147
+  10 Lixizn Ao          31k Wei Long-Koh       31k  31k SG   xxx   19+   1-   0=   0=   0=     9     1
+  11 Yamamoto N         31k Sonoyama H         31k  31k JP   xxx   22+   3-   0=   0=   0=     9     1
+  12 Siemon Debbie      31k Lee J              31k  31k US   xxx   24+   6-   0=   0=   0=     9     1
+  13 Katayama M         31k Katayama H         31k  31k JP   xxx   25+   7-   0=   0=   0=     9     1
+  14 Chiu Yi-Wu         31k Chin Han-Lin       31k  31k TW   xxx   27+   2-   0=   0=   0=     9     1
+  15 Arai N             31k Tokuhiro H         31k  31k JP   xxx   30+   4-   0=   0=   0=     9     1
+  16 Baba Tomoyumi      31k Yoshida Akira      31k  31k JP   xxx   32+   8-   0=   0=   0=     9     1
+  17 Ibanez A           31k Cabre Dimas        31k  31k ES   xxx    9-   0=   0=   0=   0=    17     0 |00000000|10333015
+  18 Sivers Anna        31k Pliushch Yurii     31k  31k UA   xxx    5-   0=   0=   0=   0=    17     0 |17874582|10449230
+  19 Chang Stella       31k Chang Stanley      31k  31k CA   xxx   10-   0=   0=   0=   0=    17     0 |10713186|00000000
+  20 Gruber Eleonore    31k Wiltschek Helmut   31k  31k AT   xxx    1-   0=   0=   0=   0=    17     0 |12350701|10350615
+  21 Naito Y            31k Okada T            31k  31k JP   xxx    3-   0=   0=   0=   0=    17     0
+  22 Mateescu Carmen    31k Ghioc Constantin   31k  31k RO   xxx   11-   0=   0=   0=   0=    17     0 |10486465|10433819
+  23 Jun Ning           31k Young He-Lu        31k  31k CN   xxx    6-   0=   0=   0=   0=    17     0
+  24 Jones Alison       31k Webber Nick        31k  31k UK   xxx   12-   0=   0=   0=   0=    17     0 |10201081|10201048
+  25 Hartmann Kirsten   31k Schroer Jan        31k  31k DE   xxx   13-   0=   0=   0=   0=    17     0 |10325678|10225204
+  26 Diederen Marianne  31k Aaij Rene          31k  31k NL   xxx    7-   0=   0=   0=   0=    17     0 |10598412|10537560
+  27 Tamura Fusako      31k Gokuden Mizuo      31k  31k JP   xxx   14-   0=   0=   0=   0=    17     0
+  28 Takano T           31k Suzuki K           31k  31k JP   xxx    2-   0=   0=   0=   0=    17     0
+  29 Schneps L          31k Colmez Pierre      31k  31k FR   xxx    4-   0=   0=   0=   0=    17     0 |00000000|10237018
+  30 Itoi K             31k Yagi Y             31k  31k JP   xxx   15-   0=   0=   0=   0=    17     0
+  31 Suzue T            31k Kunii T            31k  31k JP   xxx    8-   0=   0=   0=   0=    17     0
+  32 Tsuji K            31k Tsuji T            31k  31k JP   xxx   16-   0=   0=   0=   0=    17     0

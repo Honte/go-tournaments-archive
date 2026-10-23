@@ -1,0 +1,39 @@
+website:
+  - https://www.pairgo.or.jp/amateur/20th/index_e.htm
+  - https://www.eurogofed.org/results/world/wpgc2009.htm
+stages:
+  - type: tournament
+    name: IAPGC
+    category: iapgc
+    file: iapgc2009.txt
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: false
+    games:
+      - 1-8 1:B+R round:4 sgf:2009/4-YeSeulSongSangHeunLee-ChingChiaLinYuChiWang.sgf
+      - 2-1 1:W+R round:5 sgf:2009/5-AyakoOdaKazumoriNagayo-YeSeulSongSangHeunLee.sgf
+      - 2-3 2:B+4.5 round:4 sgf:2009/4-AyakoOdaKazumoriNagayo-GeishunKushiroToshiakiKushiro.sgf
+      - 6-3 3:W+R round:3 sgf:2009/3-SatsukiTanakaNobuhiraTanaka-GeishunKushiroToshiakiKushiro.sgf
+      - 7-3 3:W+10.5 round:5 sgf:2009/5-MihoYoshidaTakashiKuboniwa-GeishunKushiroToshiakiKushiro.sgf
+      - 8-13 8:B+T round:3 sgf:2009/3-ChingChiaLinYuChiWang-ErikoKashiharaTomohisaNishitani.sgf
+      - 9-5 5:W+2.5 round:1 sgf:2009/1-MomoyoTakayamaYoheiSato-KayokoItoiSatoruFukuda.sgf
+      - 13-4 4:W+R round:5 sgf:2009/5-ErikoKashiharaTomohisaNishitani-ChangYeJianjunWang.sgf
+      - 15-4 4:W+T round:1 sgf:2009/1-YuJinYuLizheng-ChangYeJianjunWang.sgf
+      - 15-25 15:B+R round:4 sgf:2009/4-YuJinYuLizheng-MunYiChengDanielChan.sgf
+      - 16-20 16:B+T round:5 sgf:2009/5-AnhNguyenThiHongLamBuiLeKhanh-KiyomiTakehisaNaoyaUchida.sgf
+      - 16-26 16:B+5.5 round:3 sgf:2009/3-AnhNguyenThiHongLamBuiLeKhanh-AdelinaSoraCornelBurzo.sgf
+      - 17-21 17:B+R round:1 sgf:2009/1-OlgaSilberBenjaminTeuber-KatjaBercicGregorButala.sgf
+      - 18-10 10:W+3.5 round:5 sgf:2009/5-JanaHricovaOndrejSilt-ElvinaKalsbergEvgenijMatveev.sgf
+      - 22-11 11:W+R round:3 sgf:2009/3-KarenPleitWillemKoenPomstra-AoiKumamotoTetsuyaHayashi.sgf
+      - 24-31 24:B+R round:2 sgf:2009/2-KeikoHataiMasaharuKonno-SuzanneLowYongChengKhai.sgf
+      - 27-19 19:W+T round:2 sgf:2009/2-AnaGuillerminadeCaceresEdgardoCaceres-KirstyHealeyMatthewMacfadyen.sgf
+      - 28-23 23:W+T round:4 sgf:2009/4-BodoRatovoarisoaRalaiarjinivoRakotoarimanana-RitaPocsaiZoltanFodi.sgf
+      - 29-12 12:W+T round:1 sgf:2009/1-TingtingChenIsmailDogru-NorikoHorimotoFukashiSugitani.sgf
+      - 30-18 18:W+R round:2 sgf:2009/2-NeslihanGucHusrevAksut-JanaHricovaOndrejSilt.sgf
+      - 32-14 14:W+R round:2 sgf:2009/2-RekhaYadavKumarYadavManoj-YinliWangYuanZhou.sgf

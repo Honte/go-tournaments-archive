@@ -1,0 +1,35 @@
+; EV[23rd International Amateur Pair Go Championship]
+;https://www.pairgo.or.jp/amateur/23rd/index_e.htm
+; PC[JP, Tokyo]
+; DT[2012-11-03,2012-11-04]
+   1 Jang Yun-Jeong            6d Lee Hoseung               7d   7d KR   xxxx  29+  17+   7+   5+   2+     5    14    77
+   2 Hiraoka Yuriko            5d Hiraoka Satoshi           8d   7d JP   xxxx  20+  10+   4+   3+   1-     4    18    70 |00000000|10801780
+   3 Arai Naoko                5d Kuramoto Minoru           8d   7d JP   xxxx   9+  19+  11+   2-   8+     4    15    76
+   4 Takeno Manami             5d Yomo Haruo                6d   6d JP   xxxx  18+  22+   2-  11+  13+     4    14    71 |00000000|20462750
+   5 Higuchi Naoko             6d Terada Hiroshi            6d   6d JP   xxxx  28+  25+   8+   1-   7+     4    14    68
+   6 Tani Maiko                6d Shimizu Kosuke            6d   6d JP   xxxx  30+   7-  21+   9+  12+     4    12    69
+   7 Kimoto Yuka               7d Mori Hironobu             7d   7d JP   xxxx  12+   6+   1-  16+   5-     3    19    62 |00000000|14750417
+   8 Lu Yu-Hua                 6d Tsai Tang-Yu              6d   6d TW   xxxx  13+  21+   5-  19+   3-     3    15    67 |16525421|00000000
+   9 Itoi Kayoko               6d Fukuda Satoru             6d   6d JP   xxxx   3-  20+  14+   6-  17+     3    15    66
+  10 Kovaleva Natalia          4d Surin Dmitrij             6d   6d RU   xxxx  15+   2-  17+  13-  20+     3    14    68 |10537087|10825254
+  11 Zaloudkova Klara          3d Hora Jan                  6d   5d CZ   xxxx  27+  14+   3-   4-  18+     3    14    67 |10798106|10401083
+  12 Saoo Ayumi                5d Saoo Akira                5d   5d JP   xxxx   7-  24+  23+  18+   6-     3    13    69
+  13 Kishimoto Sanae           5d Watanabe Yusuke           6d   6d JP   xxxx   8-   0+  22+  10+   4-     3    12    55
+  14 Su Amy                    4d Zhang Lionel              6d   5d US   xxxx  23+  11-   9-  27+  24+     3    11    64 |00000000|15013845
+  15 Nawaruk Waraphan          2d Vongthavaravat Kittipong  4d   3d TH   xxxx  10-  18-  30+  22+  19+     3    10    65 |15025901|00000000
+  16 Harfina XF                2d Thalib Daniel             3d   3d ID   xxxx  17-  29+  27+   7-  23+     3     9    69
+  17 Bocle Milena              2d Billouet Simon            4d   3d FR   xxxx  16+   1-  10-  31+   9-     2    15    60 |14362018|10462408
+  18 Yamazaki Kazuko           5d Sato Kazuhiko             6d   6d JP   xxxx   4-  15+  25+  12-  11-     2    15    60
+  19 Simunkova Martina         1k Kuzela Martin             4d   2d CZ   xxxx  24+   3-  26+   8-  15-     2    14    59 |10298904|10250702
+  20 Ito Masako                5d Takasusuki Mamoru         6d   6d JP   xxxx   2-   9-  29+  25+  10-     2    13    67
+  21 Munkh-Erdene Uuganbat     1k Deleg Khadbaatar          1d   1d MN   xxxx  26+   8-   6-  23-  31+     2    12    55 |15062927|15249289
+  22 Gruber Sieglinde          1d Wiltschek Helmut          6d   4d AT   xxxx  31+   4-  13-  15-  28+     2    12    55 |12650209|10350615
+  23 Pieniniemi Elina          5k Tormanen Antti            6d   1d FI   xxxx  14-  31+  12-  21+  16-     2    12    53 |15850593|12949310
+  24 Marz Manja                4d Marz Michael              3d   4d DE   xxxx  19-  12-  28+  26+  14-     2    11    57 |13062412|10225347
+  25 Korsak Viktoriia          7k Yatsenko Dmytro           5d   1k UA   xxxx   0+   5-  18-  20-  27+     2     9    54 |12362097|10286870
+  26 Bjerke Michelle           3k Vasdal Glenn_Kjetil       1d   1k NO   xxxx  21-  28+  19-  24-  30+     2     8    58 |15298107|15274105
+  27 Nguyen Hoa                3k Mok Zhi-Kin               3k   3k LU   xxxx  11-  30+  16-  14-  25-     1    12    53 |14013208|14086204
+  28 Joubert Carle             3k Niekerk Francois_van      4k   3k ZA   xxxx   5-  26-  24-  29+  22-     1    11    56
+  29 Walsh Sheena             17k Savage Kenneth            9k  13k IE   xxxx   1-  16-  20-  28-   0+     1    11    47 |16450170|14662978
+  30 Ang Berlinda              5k Tan Genial                1d   2k SG   xxxx   6-  27-  15-   0+  26-     1    10    42
+  31 Postigo Carolina_Lui_Lam 10k Rios Leon                 1d   5k PE   xxxx  22-  23-   0+  17-  21-     1     8    51 |00000000|15837283

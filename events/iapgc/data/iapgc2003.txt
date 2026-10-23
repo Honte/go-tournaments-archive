@@ -1,0 +1,35 @@
+; EV[14th International Amateur Pair Go Championship]
+; PC[JP, Tokyo]
+; DT[2003-11-15,2003-11-16]
+;https://www.pairgo.or.jp/amateur/14th/indexe.htm IE didn't come
+   1 Kim Se-Young           5d Kim Nam-Hoon           6d   6d KR   xxxx   4+   5+   3+   8+   2+     5    19    79
+   2 Arai Naoko             5d Taga Bungo             5d   5d JP   xxxx  19+  13+   6+   7+   1-     4    17    75
+   3 Shimosaka Miori        6d Ito Akio               6d   6d JP   xxxx  17+   9+   1-  15+   7+     4    16    76
+   4 Pocsai Rita            3d Pocsai Tibor           6d   5d HU   xxxx   1-  22+  11+  14+  12+     4    16    67 |10686346|10425217
+   5 Takanashi Shoko        5d Nagai Masayoshi        6d   6d JP   xxxx  27+   1-  17+  10+   9+     4    14    75
+   6 Ishii Miyuki           5d Sasada Shoji           7d   6d JP   xxxx  28+  11+   2-  18+   8+     4    13    73 |13713194|00000000
+   7 Kinoshita Kaori        6d Ise Teruyuki           6d   6d JP   xxxx  15+  14+  12+   2-   3-     3    17    69
+   8 Higuchi Naoko          6d Sogabe Toshiyuki       7d   7d JP   xxxx  10+  23+  18+   1-   6-     3    16    70
+   9 Takeda Tomoko          5d Miyahira Hirofumi      6d   6d JP   xxxx  16+   3-  23+  21+   5-     3    15    62 |14533156|00000000
+  10 Tokunaga Satsuki       6d Yoshimatsu Shozo       6d   6d JP   xxxx   8-  20+  13+   5-  24+     3    14    65
+  11 Simunkova Martina      2k Hora Jan               5d   2d CZ   xxxx  24+   6-   4-  27+  17+     3    13    66 |10298904|10401083
+  12 Chiang Ting-Hui        4d Went Chi-Yeh           7d   6d TW   xxxx  20+  29+   7-  16+   4-     3    13    65
+  13 Chi XinXin             5d Huang XueZhi           4d   5d CN   xxxx  26+   2-  10-  23+  20+     3    13    60
+  14 Papeschi Rosario       2k Bassarsky Franklin     1d   1k AR   xxxx  21+   7-  27+   4-  18+     3    12    72 |10913430|10933428
+  15 Kameyama Uteko         1d Obayashi Hideki        6d   3d JP   xxxx   7-  30+  28+   3-  21+     3    11    67
+  16 Sekimoto Mihoko        5d Kozuki Takeshi         6d   6d JP   xxxx   9-   0+  25+  12-  19+     3    10    50 |00000000|10401820
+  17 Shi Gina               4d Guan Mozheng           7d   6d US   xxxx   3-  24+   5-  29+  11-     2    14    63 |12798357|12974401
+  18 Bergstroem Kerstin     5k Ragnarsson Carl-Johan  2d   2k SE   xxxx  22+  25+   8-   6-  14-     2    14    60 |13062478|12898743
+  19 Hollmann Kirsten       1k Vanderstappen Filip    5d   3d NL   xxxx   2-  21-  26+  25+  16-     2    13    55 |10486509|10250603
+  20 Hayashi Mutsumi        6d Iwasaki Yuichi         7d   7d JP   xxxx  12-  10-  22+  28+  13-     2    12    63
+  21 Budziszewska Olga     10k Bazynski Michal        4d   3k PL   xxxx  14-  19+  29+   9-  15-     2    12    61 |12501863|10733943
+  22 Hebsacker Steffi       2k Berben Tobias          4d   2d DE   xxxx  18-   4-  20-  30+  27+     2    10    64 |10449483|10662729
+  23 Yamaguchi Naoko        5d Yamaguchi Chikashi     6d   6d JP   xxxx   0+   8-   9-  13-  28+     2    10    57
+  24 Teles_de_Menezes Ines  8k Branco Gabriel         1k   4k PT   xxxx  11-  17-  30+  31+  10-     2    10    56 |10533017|10401578
+  25 Sargsyan Alla          5k Margaryan Ashot        1d   2k AM   xxxx  30+  18-  16-  19-  31+     2     9    52 |00000000|10425492
+  26 How Tee-Choon          3k Yong Wu-Gwo            2d   1k MY   xxxx  13-  28-  19-   0+  29+     2     7    49
+  27 Ranfagni Odette       12k Garbarini Cristiano    1d   6k IT   xxxx   5-  31+  14-  11-  22-     1    13    55 |12433839|12486243
+  28 Loy Yoke-Yun           1d Chan Gin-Hor           4d   3d SG   xxxx   6-  26+  15-  20-  23-     1    13    53
+  29 Sun Meng              25k Sedgwick James         5d  10k CA   xxxx  31+  12-  21-  17-  26-     1    10    52 |20437351|13425709
+  30 Cruz_Torres Ana        6k Albuja_Ortiz Diego     2k   4k EC   xxxx  25-  15-  24-  22-   0+     1     9    40
+  31 Ratovoarisoa Bodo      3k Razafindrabe Maherizo  1d   1k MG   xxxx  29-  27-   0+  24-  25-     1     6    42 |00000000|13450074

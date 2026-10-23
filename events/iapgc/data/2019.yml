@@ -1,0 +1,62 @@
+website: https://www.pairgo.or.jp/amateur/30th/index_e.php
+stages:
+  - type: tournament
+    name: WSPGC
+    notes: 6th World Student Pair Go Championship
+    category: wspgc
+    file: wspgc2019.txt
+    dir: 2019/wspgc
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: false
+    games:
+      - 1-2 1:B+R round:4 sgf:2019/wspgc/4-YiwenSongXiaolinWei-HsiaotungLinYuChiTung.sgf
+      - 2-4 2:B+R round:2 sgf:2019/wspgc/2-HsiaotungLinTungYuChi-NathanichChantharojwongWichrichKaruehawanit.sgf
+      - 7-16 7:B+R round:1 sgf:2019/wspgc/1-ChenranWangDongyuanFan-AshleyGohSeeYenAldrichChuaHonBoon.sgf
+      - 8-3 3:W+4.5 round:2 sgf:2019/wspgc/2-KahoSaikiYoshikiKurita-EunhyeChaDonghanKim.sgf
+      - 9-5 5:W+R round:4 sgf:2019/wspgc/4-AsukaHamasakiShikoAkagi-JullyHongJaehwanSong.sgf
+      - 12-11 12:B+3.5 round:1 sgf:2019/wspgc/1-AdrianaTomsuLukasPodpera-HikaruTanakaHekiruYokoyama.sgf
+      - 14-6 6:W+R round:3 sgf:2019/wspgc/3-NikaPetrashevskaAlexandrMatushkin-AkikoKezukaTaroIshida.sgf
+      - 15-10 10:W+R round:3 sgf:2019/wspgc/3-AmyWangHowardWong-MaikoKurashinaKeikiHiramatsu.sgf
+  - type: tournament
+    name: IAPGC
+    category: iapgc
+    file: iapgc2019.txt
+    dir: 2019/iapgc
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: false
+    games:
+      - 1-9 1:B+R round:1 sgf:2019/iapgc/1-RuBiLeeYoungRakHur-TinaLiAaronYe.sgf
+      - 2-1 1:W+R round:5 sgf:2019/iapgc/5-AkikoFujiwaraYukiTsuda-RuBiLeeYoungRakHur.sgf
+      - 2-23 2:B+R round:1 sgf:2019/iapgc/1-AkikoFujiwaraYukiTsuda-NguyenThiTamAnhTranQuangTue.sgf
+      - 4-18 4:B+R round:4 sgf:2019/iapgc/4-YukiNakanoShunjiMorikawa-CharlotteVielfaureThomasDebarre.sgf
+      - 5-17 5:B+R round:3 sgf:2019/iapgc/3-MoekaTsujiMaoYamada-JunkoSawadaMasaakiMiyama.sgf
+      - 6-1 1:W+10.5 round:4 sgf:2019/iapgc/4-ManamiTakenoShingoOno-RuBiLeeYoungRakHur.sgf
+      - 7-5 5:W+37.5 round:5 sgf:2019/iapgc/5-YurikoHiraokaSatoshiHiraoka-MoekaTsujiMaoYamada.sgf
+      - 9-12 12:W+T round:3 sgf:2019/iapgc/3-TinaLiAaronYe-LokYiLeeKaHoChan.sgf
+      - 10-3 3:W+R round:1 sgf:2019/iapgc/1-AyakoOdaKazumoriNagayo-SiChenYuqingHu.sgf
+      - 12-8 8:W+R round:4 sgf:2019/iapgc/4-LokYiLeeKaHoChan-YasukoImamuraKikoEmura.sgf
+      - 14-31 14:B+T round:2 sgf:2019/iapgc/2-BiankaNagaiAtsushiYamamoto-CoroniRenimampiainaNirinaRavelomanantsoa.sgf
+      - 15-29 15:B+25.5 round:2 sgf:2019/iapgc/2-HinanoTerauchiShinichiroTakahashi-TungalagRavjirKhatanbaatarTsendAyush.sgf
+      - 19-20 19:B+R round:4 sgf:2019/iapgc/4-MirtaMedakStjepanMestrovic-LauraAvramGeorgeCristianGhetu.sgf
+      - 23-16 16:W+T round:5 sgf:2019/iapgc/5-NguyenThiTamAnhTranQuangTue-ElvinaKalsbergStepanTrubicin.sgf
+      - 23-26 23:B+R round:3 sgf:2019/iapgc/3-NguyenThiTamAnhTranQuangTue-SuviRovioTeemuRovio.sgf
+      - 24-14 14:W+R round:5 sgf:2019/iapgc/5-NataliaKovalevaDmitrijSurin-BiankaNagaiAtsushiYamamoto.sgf
+      - 24-27 24:B+R round:3 sgf:2019/iapgc/3-NataliaKovalevaDmitrijSurin-KarenSchombergBerndRadmacher.sgf
+      - 27-21 21:W+T round:5 sgf:2019/iapgc/5-KarenSchombergBerndRadmacher-HarukiWatanabeRyuHosaka.sgf
+      - 28-11 11:W+R round:2 sgf:2019/iapgc/2-MarcelinaChojnackaMaksymWalaszewski-ChenLiLingYuWang.sgf
+      - 30-13 13:W+R round:1 sgf:2019/iapgc/1-EmmaReynoldsFergusRoache-TenNimuraShunsukeKihara.sgf
+      - 30-32 30:B+R round:2 sgf:2019/iapgc/2-EmmaReynoldsFergusRoache-NancyRamirezAdrianRamirez.sgf

@@ -1,0 +1,35 @@
+; EV[28th International Amateur Pair Go Championship]
+; PC[JP, Tokyo]
+; DT[2017-12-02,2017-12-03]
+   1 Unegawa Marie                6d Takizawa Yuta       7d   7d JP   xxxx  27+  23+  19+   7+   2+     5    12    76
+   2 Ryu Seunghee                 6d Lee Sangbin         7d   7d KR   xxxx  12+   9+  13+   3+   1-     4    18    70
+   3 Wu Yiming                    6d Zhao Bangqiao       6d   6d CN   xxxx  10+  15+   4+   2-   8+     4    17    73
+   4 Lin Hung-Ping                7d Lo Sheng-Chieh      7d   7d TW   xxxx   5+  21+   3-  17+   7+     4    15    76 |00000000|14762836
+   5 Kushiro Geishun              6d Nishimura Ryotaro   4d   5d JP   xxxx   4-  12+  20+  18+  13+     4    14    69
+   6 Sekimoto Mihoko              5d Uchida Naoya        6d   6d JP   xxxx   9-  27+  14+  19+  10+     4    12    71
+   7 Imamura Yasuko               6d Emura Kiko          8d   7d JP   xxxx  18+  11+   8+   1-   4-     3    17    70 |00000000|20437417
+   8 Arai Naoko                   5d Kuramoto Minoru     7d   6d JP   xxxx  25+  14+   7-   9+   3-     3    15    70
+   9 Kovaleva Natalia             5d Surin Dmitrij       6d   6d RU   xxxx   6+   2-  24+   8-  20+     3    15    69 |10537087|10825254
+  10 Takeno Manami                6d Ono Shingo          7d   7d JP   xxxx   3-  29+  22+  11+   6-     3    14    63
+  11 Yano Mizuki                  5d Tanabe Satoshi      6d   6d JP   xxxx  20+   7-  15+  10-  17+     3    13    70
+  12 Aoike Koharu                 6d Yasuda Yoshiaki     7d   7d JP   xxxx   2-   5-  27+  25+  22+     3    13    68
+  13 Su Gabriella                 6d Teng Justin         6d   6d US   xxxx  31+  17+   2-  21+   5-     3    13    68 |16574536|16537532
+  14 Zaloudkova Klara             3d Hora Jan            6d   5d CZ   xxxx  22+   8-   6-  28+  19+     3    12    64 |10798106|10401083
+  15 Sasako Risa                  6d Terayama Fumiya     6d   6d JP   xxxx  32+   3-  11-  24+  18+     3    11    64
+  16 Irie Shigeko                 5d Yasui Masaki        6d   6d JP   xxxx  17-  18-  29+  30+  21+     3     8    61
+  17 Yu Sarah                     7d Huang Andrew        6d   7d CA   xxxx  16+  13-  23+   4-  11-     2    15    60 |00000000|15486702
+  18 Kashihara Eriko              4d Usuki Yuya          6d   5d JP   xxxx   7-  16+  25+   5-  15-     2    15    59
+  19 Yin Kwan_Ni                  2d Yung Yeung_Kuen     5d   4d HK   xxxx  30+  24+   1-   6-  14-     2    15    56
+  20 Togashi Junko                6d Onuma Ryosuke       6d   6d JP   xxxx  11-  30+   5-  23+   9-     2    13    62
+  21 Mahaphaksopholphisan Isaree  2d Phokha Nattawat     4d   3d TH   xxxx  29+   4-  26+  13-  16-     2    13    53
+  22 Seres Julia                  2d Marko Peter         5d   4d HU   xxxx  14-  28+  10-  26+  12-     2    12    57 |14598991|14513895
+  23 Ente Lisa                    3d Knauf Torsten       3d   3d DE   xxxx  28+   1-  17-  20-  30+     2    11    59 |10862962|10962963
+  24 Ravjir Tungalag              3d Od Erdensukh        5k   1k MN   xxxx  26+  19-   9-  15-  28+     2    11    59 |13937836|00000000
+  25 Radcliffe Jenny              6k Roads Francis       1d   3k UK   xxxx   8-  32+  18-  12-  31+     2     9    59 |12950465|10286034
+  26 Bosnjak Natasa               2k Dubakovic Dragan    3d   1d RS   xxxx  24-  31+  21-  22-  27+     2     8    59 |10637506|10637451
+  27 Cao Ngoc-Trang               2d Fenech Antoine      5d   4d FR   xxxx   1-   6-  12-  29+  26-     1    15    54 |14586693|10349350
+  28 Chen Anny                    1d Chen Aaron          3d   2d AU   xxxx  23-  22-  31+  14-  24-     1    10    54 |00000000|17386248
+  29 Malatesta Sofia              2k Sgaravatti Niccolo  1d   1k IT   xxxx  21-  10-  16-  27-  32+     1     9    58 |16974903|15733641
+  30 Xin Chang                    1d Chung Chun-Chen     3d   2d MY   xxxx  19-  20-  32+  16-  23-     1     9    55 |00000000|18498238
+  31 Flores Claudia               9k Montiel Sebastian   2d   4k CL   xxxx  13-  26-  28-  32+  25-     1     8    48 |00000000|15037847
+  32 Morrison Marta              12k Morrison Roberto    1d   6k CH   xxxx  15-  25-  30-  31-  29-     0     8    46 |00000000|10349493

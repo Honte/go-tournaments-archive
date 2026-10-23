@@ -1,0 +1,35 @@
+website: https://www.pairgo.or.jp/pgwf/2025/index_en.php
+stages:
+  - type: tournament
+    name: WSPGC
+    notes: 9th World Student Pair Go Championship - Matsuda Cup
+    category: wspgc
+    file: wspgc2025.txt
+    dir: 2025/wspgc
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: false
+    games:
+      - 2-1 1:W+R round:4 sgf:2025/wspgc/4-YuinaNishioSachitoFukazawa-QingyangLiJinpengLi.sgf
+  - type: tournament
+    name: IAPGC
+    category: iapgc
+    file: iapgc2025.txt
+    dir: 2025/iapgc
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: false
+    games:
+      - 1-2 1:B+R round:5 sgf:2025/iapgc/5-SiChenYuqingHu-SukyeongSeoJungSeonKim.sgf

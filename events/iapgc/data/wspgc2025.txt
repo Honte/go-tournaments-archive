@@ -1,0 +1,18 @@
+; DT[2025-08-09,2025-08-10]
+; PC[JP, Osaka]
+   1 Li Qingyang             5d Li Jinpeng             6d   6d CN   xxxx   3+   6+   4+   2+     4    11    39
+   2 Nishio Yuina            6d Fukazawa Sachito       6d   6d JP   xxxx   5+   9+   7+   1-     3    11    35
+   3 Omiya Nanako            6d Ikarashi Seiya         6d   6d JP   xxxx   1-  10+   9+   7+     3    10    35
+   4 Hase Maya               4d Oshima Satoru          6d   5d JP   xxxx  12+  13+   1-   8+     3     8    35
+   5 Chang Yen-Wei           6d Liu Hsiang-Heng        7d   7d TW   xxxx   2-  12+  14+   6+     3     7    36
+   6 Jang Hwawon             4d Jo Minkyu              4d   4d KR   xxxx  11+   1-  13+   5-     2    10    31
+   7 Wong Eugenie_Cheuk_Hei  5d Yan Jacky_Ho_Chi       6d   6d HK   xxxx  14+   8+   2-   3-     2     9    37
+   8 Kiattikulkajorn Jirapa  4d Karuehawanit Wichrich  6d   5d TH   xxxx  10+   7-  11+   4-     2     9    30 |00000000|17362378
+   9 Suzuki Toki             5d Uchida Masato          6d   6d JP   xxxx  15+   2-   3-  13+     2     8    34
+  10 Song Amy_Yimei          5d Chen Tom               6d   6d AU   xxxx   8-   3-  15+  12+     2     7    33 |17937678|20798206
+  11 Haraoka Sara            6d Otobe Masanari         6d   6d JP   xxxx   6-  15+   8-  14+     2     6    32
+  12 Szychowiak Marianna     2d Barz-Cech Tim          3d   3d EU   xxxx   4-   5-  16+  10-     1     8    26 |16725709|16801851
+  13 Zhang Julia             1d Wang Kevin             5d   3d CA   xxxx  16+   4-   6-   9-     1     7    30
+  14 Khoo Celine             2d Chen Yilin             5d   4d SG   xxxx   7-  16+   5-  11-     1     7    26 |00000000|20398125
+  15 Medak Mirta             3d Defer Leon             3d   3d EU   xxxx   9-  11-  10-  16+     1     6    25 |16525718|16413650
+  16 Pena Rebeca             9k Vasquez Ivan           2k   5k MX   xxxx  13-  14-  12-  15-     0     4    28

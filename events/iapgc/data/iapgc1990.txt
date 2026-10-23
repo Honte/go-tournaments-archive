@@ -1,0 +1,8 @@
+; EV[1st International Amateur Pair Go Championship (NKB Cup)]
+;32 pairs from 4 countries (JP, KR, CN, TW)
+; PC[JP, Tokyo]
+; DT[1990-12-13,1990-12-13]
+;https://www.pairgo.or.jp/db-e/db1_1.htm
+1 Minatogawa Sachiko 5d Komori Shoji     6d 6d JP xxx 2+ 1
+2 Nakamura Chikako   6d Sogabe Toshiyuki 6d 6d JP xxx 1- 2
+3 Fueno Tomoyasu     5d Nakamura Taiko   4d 5d JP xxx 0= 3

@@ -1,0 +1,18 @@
+; PC[JP, Tokyo]
+; DT[2017-12-03,2017-12-03]
+   1 Chae Hyunji                 6d Yoon Namgi             7d   7d KR   xxxx   7+   6+   2+   3+     4    10    42
+   2 Lee Sunah                   6d Park Jongwook          7d   7d KR   xxxx  13+   4+   1-  10+     3    10    32
+   3 Jin Shan                    6d He Sangpeng            6d   6d CN   xxxx   9+  14+   5+   1-     3    10    32
+   4 Fujiwara Akiko              6d Ozeki Minoru           7d   7d JP   xxxx   8+   2-  12+   6+     3     8    36 |00000000|18462829
+   5 Tsukada Karin               6d Sugita Shuntaro        6d   6d JP   xxxx  12+  11+   3-   7+     3     8    36 |17533659|00000000
+   6 Iwai Haruko                 6d Yokoe Daiki            6d   6d JP   xxxx  10+   1-   9+   4-     2    11    32
+   7 Kurashina Kanako            5d Konno Ryohei           6d   6d JP   xxxx   1-   8+  11+   5-     2    11    32
+   8 Petrashevska Nika           3k Bouette Valerian       3d   1d EU   xxxx   4-   7-  13+  12+     2     7    34 |15786518|14601631
+   9 Nomura Mina                 6d Togino Kazuki          6d   6d JP   xxxx   3-  13+   6-  15+     2     7    34
+  10 Han Dai                     5d Shen Qinkai            5d   5d CN   xxxx   6-  15+  14+   2-     2     7    34
+  11 Lu Yi-Ching                 6d Chin Ta-Chung          7d   7d TW   xxxx  15+   5-   7-  14+     2     7    32
+  12 Rios Dafne                  9k Rios Sebastian         2d   4k MX   xxxx   5-  16+   4-   8-     1     8    27
+  13 Jaruratchataphun Juthamate  1d Jangmark Chidsanupong  4d   3d TH   xxxx   2-   9-   8-  16+     1     7    28
+  14 Leung Joanne                2d Vashurov Alexandr      5d   4d EU   xxxx  16+   3-  10-  11-     1     7    28 |17037350|13062764
+  15 Jansen Jenna                1d Zhang Lionel           6d   4d US   xxxx  11-  10-  16+   9-     1     6    25 |00000000|15013845
+  16 Wanyun Nie                 20k Hwee Teo_Eng           4d   8k SG   xxxx  14-  12-  15-  13-     0     4    28

@@ -1,0 +1,9 @@
+; EV[6th International Amateur Pair Go Championship]
+; PC[JP, Tokyo]
+; DT[1995-11-11,1995-11-12]
+; 17 countries - won in 1st round CN,KR,TW,US,RU
+; another sgf (players outside top 3)
+;https://www.pairgo.or.jp/topics-e/6ama0.htm
+1 Kwun Hyo-Jin  5d Lee Kyong-Bo     6d 6d KR xxx 2+ 1
+2 Chang Kai-Hin 4d Lin Chih-Han     6d 5d TW xxx 1- 2
+3 Imamura Yuki  5d Kuboniwa Takashi 6d 6d JP xxx 0= 3

@@ -1,0 +1,36 @@
+; EV[19th International Amateur Pair Go Championship]
+;http://www.pairgo.or.jp/wmsg/2008/
+; https://www.eurogofed.org/results/world/wmsg2008/wmsg2008pairs.htm
+; PC[CN, Beijing]
+; DT[2008-10-13,2008-10-17]
+;Pl. Name                 Str Cl.   1    2    3    4    5    6    7   Pt SODOS - group A
+   1 Kim Shin-Young             5d Ui Hong-Seok             6d   6d KR   xxxx  26+   2+  10+  14+  22+  19+  30+   0=   0=   0=     7    21     1     2     1
+   2 Jo Sae-byol                7d Jo Tae-Won               7d   7d KP   xxxx  30+   1-  26+  10+  14+  22+  19+   7+   4+   3+     6    15     2     2     2 |10962413|00000000
+   3 Pocsai Rita                5d Pocsai Tibor             6d   6d HU   xxxx  23+   7-   0=  16+  12+  20+  27+   0+   5+   2-     5    10     2     3     3 |10686346|10425217
+   4 Bartova Jitka              3k Hora Jan                 6d   2d CZ   xxxx  13+  29+  25+  21+   6-   9+  18+   8+   2-   0=     6    15     2     1     4 |13849748|10401083
+   5 Zakharchenko Mariia        1k Pliushch Yurii           5d   3d UA   xxxx  15+   0=  24+  28+  11+  17+   8-   6+   3-   0=     5    11     2     4     4 |13937638|10449230
+   6 Wang Xiangryu              5d Liu Li-Rong              5d   5d CN   xxxx  29+   9+  18+  13+   4+  25+  21+   5-   0=   0=     7    21     1     1     6
+   7 Hiraoka Yuriko             8d Hiraoka Satoshi          5d   7d JP   xxxx   0=   3+  16+  12+  20+  27+  23+   2-   0=   0=     6    15     1     3     6 |00000000|10801780
+   8 Ravjir Tungalag            3d Tsolmon Sansar           4d   4d MN   xxxx  24+  28+  11+  17+   0=  15-   5+   4-   0=   0=     5    13     1     4     6 |13937836|13662825
+   9 Yan Jasmine                5d Zhao Ricky               6d   6d US   xxxx  21+   6-  29+  18+  13+   4-  25+   0=   0=   0=     5    10     3     1     9
+  10 Kovaleva Natalia           4d Surin Dmitrij            5d   5d RU   xxxx  19+  30+   1-   2-  26+  14+  22+   0=   0=   0=     5    10     3     2     9 |10537087|10825254
+  11 Lin Ching-Chia             6d Wang Yu-Chi              6d   6d TW   xxxx   0=  17+   8-  15+   5-  24+  28+   0=   0=   0=     4     7     3     4     9
+  12 Chaine Marie-Claire        1d Michel Jean              5d   3d FR   xxxx  20+  27+  23+   7-   3-  16+   0=   0=   0=   0=     4     6     3     3     9 |10350923|10374540
+  13 Hu Ning                    3d Grierson Colin           3d   3d NZ   xxxx   4-  25+  21+   6-   9-  18+  29+   0=   0=   0=     4     6     4     1    13 |00000000|12013518
+  14 Healey Kirsty              1k Macfadyen Matthew        6d   3d UK   xxxx  22+  19+  30+   1-   2-  10-  26+   0=   0=   0=     4     6     4     2    13 |10698809|10249019
+  15 Phuriwangsakul Pattraporn  1d Santipojana Kamon        4d   3d TH   xxxx   5-  24+  28+  11-  17-   8+   0=   0=   0=   0=     3     6     4     4    13 |00000000|14013681
+  16 Marz Manja                 4d Marz Michael             3d   4d DE   xxxx  27+  23+   7-   3-   0=  12-  20+   0=   0=   0=     3     3     4     3    13 |13062412|10225347
+  17 Liu Chuyang                5d Liang Minggao            6d   6d CA   xxxx  28+  11-   0=   8-  15+   5-  24+   0=   0=   0=     3     4     5     4    17
+  18 Xia Jie-Li                 3d Xia Jie-Lin              5d   4d NO   xxxx  25+  21+   6-   9-  29+  13-   4-   0=   0=   0=     3     3     5     1    17 |10898426|10886425
+  19 Piiroinen Annika           1k Lounela Olli             3d   2d FI   xxxx  10-  14-  22+  26+  30+   1-   2-   0=   0=   0=     3     3     5     2    17 |14650856|10274781
+  20 Pleit Karen                1k Pomstra Koen             5d   3d NL   xxxx  12-   0=  27+  23+   7-   3-  16-   0=   0=   0=     2     1     5     3    17 |10462485|10249602
+  21 Guzman Alejandra           5k Pachon-Calderon Juan     3d   1k CO   xxxx   9-  18-  13-   4-  25+  29+   6-   0=   0=   0=     2     1     6     1    21 |00000000|15833279
+  22 Saban Daniela              1d Santiago-Miranda Martin  3d   2d AR   xxxx  14-  26+  19-  30+   1-   2-  10-   0=   0=   0=     2     1     6     2    21 |15037913|00000000
+  23 Cernikova Monika          10k Krusina Rudolf           2k   6k SK   xxxx   3-  16-  12-  20-  27+   0=   7-   0=   0=   0=     1     0     6     3    21 |10333752|10574586
+  24 Bochaca Gemma              4k Cabre Dimas              3d   1k ES   xxxx   8-  15-   5-   0=  28+  11-  17-   0=   0=   0=     1     0     6     4    21 |13274954|10333015
+  25 Stojanovic Ivana           2k Stojanovic Luka          1k   1k RS   xxxx  18-  13-   4-  29+  21-   6-   9-   0=   0=   0=     1     0     7     1    25 |14333693|10713406
+  26 Shkugal Valentina          7k Suponev Alexandr         1d   3k BY   xxxx   1-  22-   2-  19-  10-  30+  14-   0=   0=   0=     1     0     7     2    25 |14762627|12349205
+  27 Kuriene Laimute            3k Miselis Gintautas        2k   2k LT   xxxx  16-  12-  20-   0=  23-   7-   3-   0=   0=   0=     0     0     7     3    25 |10586092|14549095
+  28 Gencheva Valerija         11k Nedev Teodor            10k  10k BG   xxxx  17-   8-  15-   5-  24-   0=  11-   0=   0=   0=     0     0     7     4    25 |15033953|15049859
+  29 Joubert Catharina          3k Paulu Julius             1d   1k ZA   xxxx   6-   4-   9-  25-  18-  21-  13-   0=   0=   0=     0     0     8     1    29 |00000000|14337752
+  30 Ronchi Chiara              6k Baldi Michele            3k   4k IT   xxxx   2-  10-  14-  22-  19-  26-   1-   0=   0=   0=     0     0     8     2    29 |14386339|12786807

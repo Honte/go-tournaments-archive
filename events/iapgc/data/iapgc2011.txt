@@ -1,0 +1,37 @@
+; EV[22nd International Amateur Pair Go Championship]
+; PC[JP, Tokyo]
+; DT[2011-11-19,2011-11-20]
+;https://www.pairgo.or.jp/amateur/22nd/index_e.htm
+; breakers?
+   1 Kim Hee-Sue       6d Lee Hoseung              7d   7d KR   xxxx   4+  19+  17+   8+   2+     5    15    79
+   2 Lin Hsiaotung     6d Tseng Ping-Sin           6d   6d TW   xxxx  28+   5+  11+   3+   1-     4    17    70 |15001910|00000000
+   3 Horimoto Noriko   6d Tanaka Nobuyuki          6d   6d JP   xxxx  15+  13+   7+   2-  10+     4    16    71
+   4 Gao Yong-Mei      6d Li Zi-Qi                 6d   6d CN   xxxx   1-  29+  15+   7+  11+     4    15    68
+   5 Shiraki Mirano    5d Sasada Shoji             7d   6d JP   xxxx  20+   2-   9+  17+  12+     4    14    74
+   6 Sekimoto Mihoko   5d Uchida Naoya             6d   6d JP   xxxx  27+   7-  14+  18+   8+     4    12    73
+   7 Hiraoka Yuriko    5d Hiraoka Satoshi          8d   7d JP   xxxx  10+   6+   3-   4-  17+     3    17    71 |00000000|10801780
+   8 Sawada Junko      5d Tokudomi Kenji           8d   7d JP   xxxx  14+   9+  18+   1-   6-     3    17    68
+   9 Pocsai Rita       4d Balogh Pal               6d   5d HU   xxxx  12+   8-   5-  21+  25+     3    14    64 |10686346|10498246
+  10 Takeno Manami     4d Sakakura Kenta           6d   5d JP   xxxx   7-  21+  22+  19+   3-     3    13    70
+  11 Shibata Ayami     5d Ota Shogo                6d   6d JP   xxxx  24+  30+   2-  20+   4-     3    13    69
+  12 Bartova Jitka     1k Hora Jan                 6d   3d CZ   xxxx   9-  28+  26+  13+   5-     3    13    61 |13849748|10401083
+  13 Hu Ning           3d Du Shiyong               3d   3d NZ   xxxx  21+   3-  30+  12-  19+     3    12    66 |00000000|12562154
+  14 Song Amira        4d Koh Juyong               7d   6d CA   xxxx   8-  31+   6-  24+  18+     3    12    62 |16249706|15398790
+  15 Oda Ayako         6d Nagayo Kazumori          6d   6d JP   xxxx   3-  32+   4-  27+  20+     3    12    67 |00000000|14837163
+  16 Ho Li-ting        2d Zhang Xiang              6d   4d SG   xxxx  18-  24+  20-  22+  23+     3    10    62 |18437826|14525192
+  17 Bexfield Alison   2d Bexfield Simon           1d   2d UK   xxxx  29+  26+   1-   5-   7-     2    15    66 |10201081|10237128
+  18 Sommerfeld Nadja  1d Palant Michael           5d   3d DE   xxxx  16+  22+   8-   6-  14-     2    15    62 |13733720|10249250
+  19 Yamamori Maki     6d Sogabe Toshiyuki         7d   7d JP   xxxx  23+   1-  25+  10-  13-     2    15    59
+  20 Saoo Ayumi        5d Sato Souta               6d   6d JP   xxxx   5-  23+  16+  11-  15-     2    15    59
+  21 Berreby Monique   1d Clergue Olivier          4d   3d FR   xxxx  13-  10-  29+   9-  27+     2    11    62 |10374562|10349548
+  22 Roelofs Yvonne    3k Eijkhout Michiel         6d   2d NL   xxxx  25+  18-  10-  16-  29+     2    11    58 |10725792|10486410
+  23 Ito Masako        5d Takasusuki Mamoru        6d   6d JP   xxxx  19-  20-  28+  26+  16-     2    10    61
+  24 Fong Sok-Nee      2d Cher Wei-Ching           2d   2d MY   xxxx  11-  16-  32+  14-  28+     2    11    56 |00000000|15033986
+  25 Tam Roxanne       3d Zhou Yuan                7d   5d US   xxxx  22-  27+  19-  30+   9-     2     9    63 |00000000|13450712
+  26 Pulido Sonia     10k Castellano Miguel-Angel  2d   4k ES   xxxx  32+  17-  12-  23-  30+     2     9    58 |14925823|14674693
+  27 Tran Thanh_Mai    4d Pham Minh_Quang          6d   5d VN   xxxx   6-  25-  31+  15-  21-     1    12    51 |15649524|20333137
+  28 Entin Tatiana     3k Entin Leonid             3d   1d IL   xxxx   2-  12-  23-  32+  24-     1    12    60 |14250456|10801791
+  29 Abat Celeste      7k Javier John              3k   5k PH   xxxx  17-   4-  21-  31+  22-     1    11    59 |16913589|16950230
+  30 Bosnjak Natasa    2k Dubakovic Dragan         3d   1d RS   xxxx  31+  11-  13-  25-  26-     1    11    50 |10637506|10637451
+  31 Woelffel Sandra   7k Felix Benoit             1k   4k CH   xxxx  30-  14-  27-  29-  32+     1     7    55 |15086104|14850418
+  32 Puerta Maria      3k Gutierrez Angel          3k   3k VE   xxxx  26-  15-  24-  28-  31-     1     9    51 |10625923|20350132

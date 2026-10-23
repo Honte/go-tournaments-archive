@@ -1,0 +1,36 @@
+; EV[21st International Amateur Pair Go Championship]
+;https://www.pairgo.or.jp/amateur/21st/index_e.htm
+; PC[JP, Tokyo]
+; DT[2010-10-16,2010-10-17]
+   1 Lee Yeongju               5d Song Hong-suk                7d   6d KR   xxxx  25+  19+   7+   8+   2+     5    14    77 |00000000|15649095
+   2 Hiraoka Yuriko            5d Hiraoka Satoshi              8d   7d JP   xxxx  11+   4+   3+   6+   1-     4    20    68 |00000000|10801780
+   3 Hoshi Sayuri              5d Miyamoto Tsubasa             7d   6d JP   xxxx  18+  16+   2-  17+  14+     4    14    73
+   4 Jingxin Wang              6d Zheng Tang                   5d   6d CN   xxxx  30+   2-  10+  13+   8+     4    14    72
+   5 Mori Chihiro              5d Date Masaki                  6d   6d JP   xxxx  15+   7-  20+  11+   9+     4    14    69
+   6 Kumamoto Aoi              6d Hayashi Tetsuya              5d   6d JP   xxxx  22+  20+  21+   2-  12+     4    13    71
+   7 Tanaka Satsuki            6d Tanaka Nobuhira              6d   6d JP   xxxx  14+   5+   1-   9-  17+     3    17    70
+   8 Ping Lin-Hung             6d Ping Liu-Chih                6d   6d TW   xxxx  23+  10+   9+   1-   4-     3    17    66
+   9 Togashi Junko             5d Ito Akio                     6d   6d JP   xxxx  24+  17+   8-   7+   5-     3    14    74
+  10 Sha Irene                 6d Shi Gan-Sheng                7d   7d CA   xxxx  13+   8-   4-  28+  18+     3    13    67 |16525432|15074345
+  11 Tani Yuiko                5d Hirano Yuki                  6d   6d JP   xxxx   2-  31+  19+   5-  23+     3    13    67
+  12 Sekiguchi Yuri            5d Koyama Atsushi               6d   6d JP   xxxx  17-  24+  15+  21+   6-     3    13    64
+  13 Tobita Saki               6d Abiru Takanari               7d   7d JP   xxxx  10-  18+  23+   4-  20+     3    13    64
+  14 Takeno Manami             4d Yomo Haruo                   6d   5d JP   xxxx   7-  30+  26+  16+   3-     3    13    61 |00000000|20462750
+  15 Chen Wan                  4d Tang Curtis                  7d   6d US   xxxx   5-  27+  12-  22+  21+     3    12    63 |00000000|12762365
+  16 Mazurek Katarzyna         2k Soldan Leszek                5d   2d PL   xxxx  27+   3-  24+  14-  19+     3    12    62 |13862167|10449560
+  17 Zakharchenko Mariia       1d Pliushch Yurii               3d   2d UA   xxxx  12+   9-  22+   3-   7-     2    15    70 |13937638|10449230
+  18 Ito Mai                   5d Kiyoshima Houei              7d   6d JP   xxxx   3-  13-  27+  24+  10-     2    13    62
+  19 Tirabassi Sara           15k Partiti Andrea               5k  10k IT   xxxx  28+   1-  11-  29+  16-     2    13    58 |15013658|13425170
+  20 Barisic Visnjica          4k Barisic Dragan               5d   1d BA   xxxx  32+   6-   5-  26+  13-     2    13    56 |10613504|10398091
+  21 Setthawong Simaporn       2d Taechaamnuayvit Nuttakrit    4d   3d TH   xxxx  29+  26+   6-  12-  15-     2    13    56 |15049914|15949153
+  22 Bergstroem Kerstin        1k Aakerblom Charlie            4d   2d SE   xxxx   6-  25+  17-  15-  28+     2    12    60 |13062478|13286603
+  23 Avram Laura               2d Corlan Lucian                5d   4d RO   xxxx   8-  29+  13-  31+  11-     2    11    61 |12698620|12586750
+  24 Harfina XF                1d Thalib Daniel                3d   2d ID   xxxx   9-  12-  25+  18-  31+     2    11    59
+  25 Petrina Julija            5k Petrauskas Andrius           3d   1k LT   xxxx   1-  22-  24-  32+  27+     2    10    55 |13986687|12733589
+  26 Xu Cuiying                3d Xu Qing                      2d   3d AU   xxxx  31+  21-  14-  20-  29+     2     9    57
+  27 Cernikova Monika          8k Krusina Rudolf               2d   3k SK   xxxx  16-  15-  18-  30+  25-     1    11    56 |10333752|10574586
+  28 Almeida_Ayala Maria_Jose 14k Vasquez_Albuja Edisson_Paul  2k   8k EC   xxxx  19-  32+  16-  10-  22-     1    10    57 |00000000|19798460
+  29 Skobeleva Natalia        10k Podoljak Maxim               2k   6k RU   xxxx  21-  23-  30+  19-  26-     1     9    55 |14586902|12425083
+  30 Aguilon Cherisse-May      1d Rueras Jedidiah              5k   2k PH   xxxx   4-  14-  29-  27-  32+     1     9    54
+  31 Kohonen Sari              3k Laatikainen Vesa             5d   2d FI   xxxx  26-  11-  32+  23-  24-     1     9    51 |10262142|10201015
+  32 Khadbaatar Bayartsengel   1k Deleg Khadbaatar             1d   1d MN   xxxx  20-  28-  31-  25-  30-     0     7    51 |15098930|15249289

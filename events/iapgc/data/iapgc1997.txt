@@ -1,0 +1,13 @@
+; EV[8th International Amateur Pair Go Championship]
+; PC[JP, Tokyo]
+; DT[1997-11-23,1997-11-24]
+;https://www.pairgo.or.jp/amateur/8th/htm-e/index.htm
+; 19 countries
+1 Cheng Shu-Chin  6d Huang Hsiang-Jen  6d 6d TW xxx 4+ 2+ 1
+2 Fu Kobai        6d Sato Kuniki       7d 7d JP xxx 3+ 1- 2
+3 Lee Min-Jin     5d Lee Hak-Yong      7d 6d KR xxx 2- 4+ 3
+4 Takanashi Shoko 5d Nagai Masayoshi   6d 6d JP xxx 1- 3- 4
+5 Zhu Wen-Xin     5d Jin Tong-Shi      6d 6d CN xxx 0= 0= 5
+6 Kawamura Yoko   5d Kawamura Fumitaka 6d 6d JP xxx 0= 0= 6
+7 Nishikawa Akiko 4d Imabun Yoshiyuki  6d 5d JP xxx 0= 0= 7
+8 Koszegi Diana   4d Szabics Gabor     5d 6d HU xxx 0= 0= 8

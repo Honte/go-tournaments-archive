@@ -1,0 +1,22 @@
+website:
+  - https://www.pairgo.or.jp/amateur/10th/indexe.htm
+  - https://www.eurogofed.org/results/world/wpgc1999.htm
+stages:
+  - type: tournament
+    name: IAPGC
+    category: iapgc
+    file: iapgc1999.txt
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+      - sososos
+    breakers:
+      - wins
+      - sos
+      - sosos
+      - sososos
+    findSharedPlaces: false
+    games:
+      - 1-2 1:B+10.5 round:5 sgf:1999/5-NaokoGotoBungoTaga-YumikoTanakaShojiKomori.sgf
+      - 2-3 2:B+R round:4 sgf:1999/4-YumikoTanakaShojiKomori-SeYongKimShinYoungKang.sgf

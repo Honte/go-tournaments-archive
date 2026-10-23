@@ -1,0 +1,37 @@
+; EV[20th International Amateur Pair Go Championship]
+;https://www.pairgo.or.jp/amateur/20th/index_e.htm
+;https://www.eurogofed.org/results/world/wpgc2009.htm
+; PC[JP, Tokyo]
+; DT[2009-11-14,2009-11-15]
+   1 Song Ye-Seul                6d Lee Sang-Heun                  7d   7d KR   xxxx  14+  11+   7+   8+   2+     5    16    75
+   2 Oda Ayako                   6d Nagayo Kazumori                6d   6d JP   xxxx  18+  22+   4+   3+   1-     4    17    73 |00000000|14837163
+   3 Kushiro Geishun             6d Kushiro Toshiaki               6d   6d JP   xxxx  19+   5+   6+   2-   7+     4    17    73
+   4 Ye Chang                    5d Wang Jianjun                   5d   5d CN   xxxx  15+  12+   2-  10+  13+     4    16    70 |00000000|12313620
+   5 Itoi Kayoko                 6d Fukuda Satoru                  6d   6d JP   xxxx   9+   3-  21+  17+   8+     4    14    74
+   6 Tanaka Satsuki              6d Tanaka Nobuhira                6d   6d JP   xxxx  24+  23+   3-  12+   9+     4    14    68
+   7 Yoshida Miho                6d Kuboniwa Takashi               6d   6d JP   xxxx  20+  26+   1-  11+   3-     3    16    69
+   8 Lin Ching-Chia              6d Wang Yu-Chi                    6d   6d TW   xxxx  27+  10+  13+   1-   5-     3    16    67
+   9 Takayama Momoyo             5d Sato Yohei                     6d   6d JP   xxxx   5-  20+  23+  14+   6-     3    15    63 |00000000|14886993
+  10 Kalsberg Elvina             4d Matveev Evgenij                5d   5d RU   xxxx  16+   8-  24+   4-  18+     3    14    67 |10750047|10937652
+  11 Kumamoto Aoi                6d Hayashi Tetsuya                5d   6d JP   xxxx  25+   1-  22+   7-  21+     3    14    65
+  12 Horimoto Noriko             6d Sugitani Fukashi               6d   6d JP   xxxx  29+   4-  15+   6-  19+     3    14    63
+  13 Kashihara Eriko             4d Nishitani Tomohisa             6d   5d JP   xxxx  30+  17+   8-  16+   4-     3    13    65
+  14 Wang Yinli                  6d Zhou Yuan                      7d   7d US   xxxx   1-  32+  18+   9-  17+     3    12    66 |15033920|13450712
+  15 Jin Yu                      6d Lizheng Yu                     6d   6d CA   xxxx   4-  28+  12-  25+  23+     3    12    61
+  16 Hong Anh_Nguyen_Thi         5d Khanh Lam_Bui_Le               5d   5d VN   xxxx  10-  29+  26+  13-  20+     3    11    58
+  17 Silber Olga                 1k Teuber Benjamin                6d   3d DE   xxxx  21+  13-  19+   5-  14-     2    14    63 |13449645|10437174
+  18 Hricova Jana                1k Silt Ondrej                    6d   3d CZ   xxxx   2-  30+  14-  26+  10-     2    13    61 |10233509|10337481
+  19 Healey Kirsty               1d Macfadyen Matthew              6d   4d UK   xxxx   3-  27+  17-  22+  12-     2    12    66 |10698809|10249019
+  20 Takehisa Kiyomi             6d Uchida Naoya                   6d   6d JP   xxxx   7-   9-  30+  24+  16-     2    12    61
+  21 Bercic Katja                5k Butala Gregor                  5d   1d SI   xxxx  17-  25+   5-  31+  11-     2    12    60 |14325916|10433016
+  22 Pleit Karen                 1k Pomstra Willem-Koen            5d   3d NL   xxxx  31+   2-  11-  19-  27+     2    11    61 |10462485|10249602
+  23 Pocsai Rita                 5d Fodi Zoltan                    3d   4d HU   xxxx  32+   6-   9-  28+  15-     2    11    59 |10686346|12813317
+  24 Hatai Keiko                 3d Konno Masaharu                 7d   5d JP   xxxx   6-  31+  10-  20-  29+     2    11    57
+  25 Cheng Mun-Yi                2d Chan Daniel                    2d   2d SG   xxxx  11-  21-  27+  15-  28+     2    10    58
+  26 Sora Adelina                1d Burzo Cornel                   6d   4d RO   xxxx  28+   7-  16-  18-  31+     2    10    58 |10337371|10325249
+  27 Caceres Ana_Guillermina_de 10k Caceres Edgardo                7k   8k GT   xxxx   8-  19-  25-  30+  22-     1    10    57 |00000000|12025530
+  28 Ratovoarisoa Bodo           1k Rakotoarimanana Ralaiarjinivo  1k   1k MG   xxxx  26-  15-  29+  23-  25-     1    10    52
+  29 Chen Tingting              10k Dogru Ismail                   2k   6k BE   xxxx  12-  16-  28-  32+  24-     1     9    54 |15649458|15298063
+  30 Guc Neslihan                5k Aksut Husrev                   1d   2k TR   xxxx  13-  18-  20-  27-  32+     1     8    56 |15033997|14649943
+  31 Low Suzanne                 1d Khai Yong-Cheng                2d   2d MY   xxxx  22-  24-  32+  21-  26-     1     8    52 |16913105|00000000
+  32 Yadav Rekha                 6k Manoj Kumar-Yadav              7k   6k IN   xxxx  23-  14-  31-  29-  30-     0     8    48

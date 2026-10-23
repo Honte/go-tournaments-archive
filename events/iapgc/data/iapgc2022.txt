@@ -1,0 +1,35 @@
+; EV[32nd International Amateur Pair Go Championship]
+; PC[JP, Tokyo]
+; DT[2022-12-10,2022-12-11]
+   1 Han Jiwon                 9d Hong Seyoung              9d   9d KR   xxxx  17+   5+   3+   4+   2+     5    18    78
+   2 Fujiwara Akiko            6d Tsuda Yuki                6d   6d JP   xxxx  20+   7+   8+   6+   1-     4    17    76
+   3 Lin Hsiaotung             7d Lai Yu-Cheng              7d   7d TW   xxxx  18+  13+   1-   7+   9+     4    16    74 |15001910|13650813
+   4 Ougier Ariane             4d Drean-Guenaizia Benjamin  7d   6d FR   xxxx  14+  19+  10+   1-  11+     4    16    70 |15774187|14513532
+   5 Peng Leyi                 5d Feng Yi                   6d   6d CN   xxxx  28+   1-  17+  10+  12+     4    14    73
+   6 Kurashina Kanako          6d Sugita Shuntaro           6d   6d JP   xxxx  12+  27+  21+   2-   8+     4    13    71
+   7 Tani Yuiko                5d Ozeki Minoru              7d   6d JP   xxxx   9+   2-  15+   3-  23+     3    16    70 |00000000|18462829
+   8 Osawa Maya                6d Tsuchimune Yoshiyuki      6d   6d JP   xxxx  16+  15+   2-  18+   6-     3    16    64 |16586504|15062157
+   9 Uchida Yuri               7d Sakamuro Satoshi          7d   7d JP   xxxx   7-  14+  13+  21+   3-     3    15    67
+  10 Nakamura Taiko            6d Michikawa Iori            6d   6d JP   xxxx  11+  24+   4-   5-  18+     3    15    66 |12325698|00000000
+  11 Obata Minori              5d Ota Shogo                 6d   6d JP   xxxx  10-  20+  27+  16+   4-     3    13    67
+  12 Kaneko Motoko             6d Sato Koya                 6d   6d JP   xxxx   6-  31+  19+  22+   5-     3    13    60
+  13 Chantharojwong Nathanich  4d Karuehawanit Wichrich     6d   5d TH   xxxx  29+   3-   9-  19+  20+     3    12    66 |00000000|17362378
+  14 Uemura Shoko              3d Ono Shingo                7d   5d JP   xxxx   4-   9-  32+  17+  21+     3    11    68
+  15 Kezuka Akiko              5d Hatano Kanta              6d   6d JP   xxxx  22+   8-   7-  28+  24+     3    11    66 |20662807|00000000
+  16 Lee Lok_Yi                5d Chan Ka_Ho                5d   5d HK   xxxx   8-  32+  23+  11-  22+     3    10    62 |15086907|00000000
+  17 Takeno Manami             6d Hirai Ryosuke             6d   6d JP   xxxx   1-  25+   5-  14-  28+     2    15    63
+  18 Morinaga Yoshiko          6d Morinaga Yoshinori        8d   7d JP   xxxx   3-  26+  28+   8-  10-     2    13    66
+  19 Sawada Junko              5d Miyama Masaaki            6d   6d JP   xxxx  25+   4-  12-  13-  27+     2    13    62
+  20 Kurashina Maiko           6d Kurashina Tatsuyuki       6d   6d JP   xxxx   2-  11-  30+  26+  13-     2    13    57
+  21 Pham Thi_Kim_Long         4d Tran Phuoc_Dinh           5d   5d VN   xxxx  32+  23+   6-   9-  14-     2    12    60 |00000000|18950305
+  22 Waahlin Lova              2d Silfver Anton             2d   2d SE   xxxx  15-  29+  24+  12-  16-     2    12    53 |16425849|15933236
+  23 Li Tianyi                 3d Yen Albert                8d   6d US   xxxx  30+  21-  16-  25+   7-     2    11    54 |19698723|17337375
+  24 Artigny Julie             3k Papazoglou Benjamin       5d   2d FR   xxxx  31+  10-  22-  27+  15-     2    10    59 |12801426|10733712
+  25 Yong Qing                 2d Kong Shiun_Yung           1d   2d MY   xxxx  19-  17-  31+  23-  29+     2     8    56
+  26 Zaloudkova Klara          3d Hora Jan                  6d   5d CZ   xxxx  27-  18-  29+  20-  30+     2     7    56 |10798106|10401083
+  27 Fukushima Akira           5d Maekawa Kaku              6d   6d JP   xxxx  26+   6-  11-  24-  19-     1    13    56 |00000000|20633162
+  28 Sum Dawn                  4d Lee James                 6d   5d SG   xxxx   5-  30+  18-  15-  17-     1    12    61 |00000000|21098418
+  29 Rupel Vera                5k Klancisar Tim             3d   1k SI   xxxx  13-  22-  26-  32+  25-     1     9    49 |10213159|15762967
+  30 Diederen Marianne         3k Aaij Rene                 4d   1d NL   xxxx  23-  28-  20-  31+  26-     1     8    51 |10598412|10537560
+  31 Phease Yucong             3d Ho Kevin                  1k   2d NZ   xxxx  24-  12-  25-  30-  32+     1     8    49 |15098908|00000000
+  32 Ceron Itza               16k Velez Gregory            16k  16k PA   xxxx  21-  16-  14-  29-  31-     0    10    50

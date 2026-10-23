@@ -1,0 +1,37 @@
+; EV[16th International Amateur Pair Go Championship]
+;https://www.eurogofed.org/results/world/wpgc2005.htm
+; PC[JP, Tokyo]
+; DT[2005-11-12,2005-11-13]
+;https://www.pairgo.or.jp/amateur/16th/index_e.htm
+   1 Li Nian-Nian                5d Liu Fan                      5d   5d CN   xxxx  14+  18+  10+   7+   4+     5    15    73 |00000000|15433352
+   2 Kim Tae-Hyun                7d On Seong-Hoon                7d   7d KR   xxxx  13+   8+   4-   9+   7+     4    16    77
+   3 Sasako Risa                 6d Emura Kiko                   6d   6d JP   xxxx  17+  12+   5+   4-  11+     4    16    73 |00000000|20437417
+   4 Hiraoka Yuriko              5d Hiraoka Satoshi              6d   6d JP   xxxx  31+  23+   2+   3+   1-     4    16    66 |00000000|10801780
+   5 Morikawa Sae                5d Ono Teppei                   6d   6d JP   xxxx   9+  20+   3-  10+   8+     4    15    74
+   6 Sato Momoyo                 5d Hizawa Norihiro              6d   6d JP   xxxx  22+  21+   7-  17+  13+     4    12    69
+   7 Fukasaka Fuuko              5d Date Masaki                  6d   6d JP   xxxx  30+  15+   6+   1-   2-     3    17    64
+   8 Zhao Pei                    6d Gerlach Christoph            6d   6d DE   xxxx  16+   2-  12+  21+   5-     3    16    65 |10201235|10225017
+   9 Shibata Ayami               5d Takahashi Shinichiro         5d   5d JP   xxxx   5-  14+  18+   2-  21+     3    15    69
+  10 Arai Naoko                  5d Taga Bungo                   6d   6d JP   xxxx  32+  11+   1-   5-  19+     3    14    66
+  11 Higuchi Naoko               6d Sogabe Toshiyuki             7d   7d JP   xxxx  25+  10-  15+  19+   3-     3    14    66
+  12 Lai Rou-Yu                  2d Went Jeh-Yeh                 7d   5d TW   xxxx  24+   3-   8-  18+  22+     3    13    68
+  13 Tokunaga Satsuki            6d Yoshimatu Shouzou            6d   6d JP   xxxx   2-  27+  25+  20+   6-     3    13    63
+  14 Hricova Jana                1d Silt Ondrej                  6d   4d CZ   xxxx   1-   9-  28+  27+  20+     3    12    65 |10233509|10337481
+  15 Sekimoto Mihoko             5d Komori Shoji                 6d   6d JP   xxxx  19+   7-  11-  25+  24+     3    12    65
+  16 Imamura Yasuko              4d Imabun Yoshiyuki             6d   5d JP   xxxx   8-  28+  19-  29+  17+     3     9    65
+  17 Shen Cherry                 4d Hung Joey                    8d   6d US   xxxx   3-  26+  23+   6-  16-     2    15    54 |16501430|13498705
+  18 Koenig Katarzyna            1d Kraszek Janusz               5d   3d PL   xxxx  26+   1-   9-  12-  27+     2    14    62 |10449890|10637924
+  19 Kinoshita Kaori             6d Ise Eisuke                   6d   6d JP   xxxx  15-  24+  16+  11-  10-     2    14    59
+  20 Aroonphaichitra Pattraporn  2d Trairatananusorn Ruechagorn  3d   3d TH   xxxx  28+   5-  22+  13-  14-     2    13    62 |00000000|15662097
+  21 Pooh Chun-Ling              1d Yen Ting-Yu                  2d   2d SG   xxxx  27+   6-  29+   8-   9-     2    12    65 |15050893|14386746
+  22 Fulignati Federica          7k Durazzi Diego                5k   6k IT   xxxx   6-  30+  20-  23+  12-     2    12    57 |13401146|12413016
+  23 Lassakova Lucia             2k Svec Ivo                     2k   2k SK   xxxx  29+   4-  17-  22-  30+     2    10    62 |10274693|10233652
+  24 Monroy Ester                1k Salas Julian                 1k   1k MX   xxxx  12-  19-  31+  30+  15-     2    10    57
+  25 Chang Stella                4d Lin James                    8k   2k CA   xxxx  11-  32+  13-  15-  31+     2    10    56 |10713186|00000000
+  26 Eryilmaz Saadet             4k Sulak Fatih                  2d   1k TR   xxxx  18-  17-  27-  28+  29+     2     7    61 |13662649|12786081
+  27 Low Suzanne                 2k Chin Shuenn-Chyn             2k   2k MY   xxxx  21-  13-  26+  14-  18-     1    12    58 |16913105|15001987
+  28 Koch Silvia                 5k Wagner Adi                   5k   5k CH   xxxx  20-  16-  14-  26-  32+     1    10    49 |15237849|10225809
+  29 Gabaric Iva                 6k Jankovic Zoran               5d   1k RS   xxxx  23-  31+  21-  16-  26-     1    10    47 |12713382|10301082
+  30 Narain Akanksha             3k Narain Abhishek              1k   2k IN   xxxx   7-  22-  32+  24-  23-     1     9    57 |00000000|13962839
+  31 Bull Lauren                 1d Bell Mark                    3d   2d AU   xxxx   4-  29-  24-  32+  25-     1     9    54 |00000000|12033329
+  32 Bakhtizina Laura            5k Mamedov Ibadat               1d   2k AZ   xxxx  10-  25-  30-  31-  28-     0     8    52 |14001284|13250017

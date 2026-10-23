@@ -1,0 +1,35 @@
+; EV[30th International Amateur Pair Go Championship]
+; PC[JP, Tokyo]
+; DT[2019-12-07,2019-12-08]
+   1 Lee Ru_Bi             6d Hur Young_Rak             7d   7d KR   xxxx   9+   3+   8+   6+   2+     5    18    78
+   2 Fujiwara Akiko        6d Tsuda Yuki                7d   7d JP   xxxx  23+   4+   7+   5+   1-     4    18    74
+   3 Chen Si               6d Hu Yuqing                 8d   7d CN   xxxx  10+   1-  20+  13+  11+     4    16    71 |00000000|13949826
+   4 Nakano Yuki           6d Morikawa Shunji           6d   6d JP   xxxx  11+   2-  10+  18+   8+     4    15    76 |00000000|19750456
+   5 Tsuji Moeka           6d Yamada Mao                7d   7d JP   xxxx  18+  21+  17+   2-   7+     4    13    75
+   6 Takeno Manami         6d Ono Shingo                7d   7d JP   xxxx  32+  20+  13+   1-  15+     4    13    63
+   7 Hiraoka Yuriko        5d Hiraoka Satoshi           8d   7d JP   xxxx  14+  12+   2-  17+   5-     3    16    70 |00000000|10801780
+   8 Imamura Yasuko        6d Emura Kiko                7d   7d JP   xxxx  16+  27+   1-  12+   4-     3    16    67 |00000000|20437417
+   9 Li Tina               3d Ye Aaron                  7d   5d US   xxxx   1-  16+  12-  22+  19+     3    15    66 |00000000|16233712
+  10 Oda Ayako             6d Nagayo Kazumori           6d   6d JP   xxxx   3-  25+   4-  21+  18+     3    14    67 |00000000|14837163
+  11 Li Chen               6d Wang Ling-Yu              7d   7d TW   xxxx   4-  28+  19+  14+   3-     3    14    64 |18437485|00000000
+  12 Lee Lok_Yi            5d Chan Ka_Ho                5d   5d HK   xxxx  19+   7-   9+   8-  25+     3    13    70 |15086907|00000000
+  13 Nimura Ten            5d Kihara Shunsuke           6d   6d JP   xxxx  30+  22+   6-   3-  17+     3    13    65 |00000000|18986352
+  14 Nagai Bianka          6d Yamamoto Atsushi          7d   7d JP   xxxx   7-  31+  22+  11-  24+     3    11    62
+  15 Terauchi Hinano       5d Takahashi Shinichiro      7d   6d JP   xxxx  17-  29+  21+  24+   6-     3    11    60
+  16 Kalsberg Elvina       4d Trubicin Stepan           5d   5d RU   xxxx   8-   9-  31+  27+  23+     3    10    63 |10750047|13098096
+  17 Sawada Junko          5d Miyama Masaaki            6d   6d JP   xxxx  15+  24+   5-   7-  13-     2    15    64
+  18 Vielfaure Charlotte   2k Debarre Thomas            7d   3d FR   xxxx   5-  26+  30+   4-  10-     2    14    58 |12362064|12950872
+  19 Medak Mirta           2d Mestrovic Stjepan         3d   3d HR   xxxx  12-  23+  11-  20+   9-     2    13    66 |16525718|12649307
+  20 Avram Laura           2d Ghetu George_Cristian     3d   3d RO   xxxx  31+   6-   3-  19-  28+     2    12    60 |12698620|10325293
+  21 Watanabe Haruki       5d Hosaka Ryu                6d   6d JP   xxxx  28+   5-  15-  10-  27+     2    12    58 |19313910|00000000
+  22 Zhang Melissa         4d Sedgwick James            5d   5d CA   xxxx  25+  13-  14-   9-  29+     2    12    58 |17637235|13425709
+  23 Anh Nguyen_Thi_Tam    5d Tue Tran_Quang            5k   1d VN   xxxx   2-  19-  26+  28+  16-     2    12    57
+  24 Kovaleva Natalia      5d Surin Dmitrij             6d   6d RU   xxxx  26+  17-  27+  15-  14-     2    11    55 |10537087|10825254
+  25 Lisa Sona             2k Kral Maros                3d   1d SK   xxxx  22-  10-  29+  30+  12-     2    10    57 |16037604|12537041
+  26 Rovio Suvi            2d Rovio Teemu               3d   3d FI   xxxx  24-  18-  23-  32+  30+     2     7    55 |12998821|10298783
+  27 Schomberg Karen       3k Radmacher Bernd           4d   1d DE   xxxx  29+   8-  24-  16-  21-     1    11    58 |10374694|10333675
+  28 Chojnacka Marcelina   8k Walaszewski Maksym        3d   3k PL   xxxx  21-  11-  32+  23-  20-     1     9    59 |14398802|15050673
+  29 Ravjir Tungalag       3d Tsend-Ayush Khatanbaatar  2d   3d MN   xxxx  27-  15-  25-  31+  22-     1     9    53 |13937836|17286764
+  30 Reynolds Emma         6k Roache Fergus             1d   3k NZ   xxxx  13-  32+  18-  25-  26-     1     9    53
+  31 Renimampiaina Coroni  8k Ravelomanantsoa Nirina    6k   7k MG   xxxx  20-  14-  16-  29-  32+     1     9    51 |00000000|18213195
+  32 Ramirez Nancy        17k Ramirez Adrian            4k  10k GT   xxxx   6-  30-  28-  26-  31-     0     9    47

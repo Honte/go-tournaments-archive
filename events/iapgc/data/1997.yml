@@ -1,0 +1,17 @@
+website: https://www.pairgo.or.jp/amateur/8th/htm-e/index.htm
+stages:
+  - type: tournament
+    name: IAPGC
+    category: iapgc
+    file: iapgc1997.txt
+    notes: 19 countries, no results available
+    scoringColumns:
+      - place
+    breakers:
+      - place
+    findSharedPlaces: false
+    games:
+      - 1-2 1:B+R round:2 sgf:1997/2-ShuChinChengHsiangJenHuang-KobaiFuKunikiSato.sgf
+      - 3-2 2:W+4.5 round:1 sgf:1997/1-MinJinLeeHakYongLee-KobaiFuKunikiSato.sgf
+      - 3-4 3:B+R round:2 sgf:1997/2-MinJinLeeHakYongLee-ShokoTakanashiMasayoshiNagai.sgf
+      - 4-1 1:W+6.5 round:1 sgf:1997/1-ShokoTakanashiMasayoshiNagai-ShuChinChengHsiangJenHuang.sgf

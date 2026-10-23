@@ -1,0 +1,17 @@
+website: https://www.pairgo.or.jp/amateur/13th/indexe.htm
+stages:
+  - type: tournament
+    name: IAPGC
+    category: iapgc
+    file: iapgc2002.txt
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: false
+    games:
+      - 1-4 1:B+T round:5 sgf:2002/5-NiQiaoWangLePingQian-YeSeulSongMinSooCho.sgf

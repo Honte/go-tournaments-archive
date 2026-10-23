@@ -1,0 +1,35 @@
+; EV[26th International Amateur Pair Go Championship]
+; PC[JP, Tokyo]
+; DT[2015-12-05,2015-12-06]
+   1 Jeon Yujin                  6d Song Hong-suk              7d   7d KR   xxxx  19+  18+  10+   2+   4+     5    15    75 |00000000|15649095
+   2 Oda Ayako                   6d Nagayo Kazumori            6d   6d JP   xxxx   6+   8+   7+   1-  12+     4    18    74 |00000000|14837163
+   3 Takeno Manami               5d Sakakura Kenta             6d   6d JP   xxxx  25+  11+   5+   4-   8+     4    16    68
+   4 Sasako Risa                 6d Emura Kiko                 8d   7d JP   xxxx  28+  17+   9+   3+   1-     4    15    71 |00000000|20437417
+   5 Kimoto Yuka                 7d Yamikumo Tsubasa           7d   7d JP   xxxx  27+  15+   3-   9+   7+     4    14    72
+   6 Huang Xiaodi                5d Zhang Rongzheng            6d   6d CN   xxxx   2-  22+  17+  19+  14+     4    13    70
+   7 Lin Hung-Ping               7d Lo Sheng-Chieh             7d   7d TW   xxxx  12+  14+   2-  10+   5-     3    17    72 |00000000|14762836
+   8 Pocsai Rita                 4d Balogh Pal                 6d   5d HU   xxxx  23+   2-  11+  15+   3-     3    16    69 |10686346|10498246
+   9 Watanabe Mika               6d Takahashi Shinichiro       7d   7d JP   xxxx  16+  13+   4-   5-  18+     3    16    67
+  10 Itoi Kayoko                 6d Fukuda Satoru              7d   7d JP   xxxx  24+  26+   1-   7-  21+     3    14    63
+  11 Horie Kuniko                6d Naka Hideyuki              6d   6d JP   xxxx  21+   3-   8-  17+  20+     3    13    71
+  12 Kishimoto Sanae             6d Watanabe Yusuke            6d   6d JP   xxxx   7-  23+  21+  20+   2-     3    13    70
+  13 Mori Natsumi                5d Ise Teruyuki               7d   6d JP   xxxx  20+   9-  16+  14-  24+     3    13    63
+  14 Kovaleva Natalia            5d Surin Dmitrij              6d   6d RU   xxxx  29+   7-  26+  13+   6-     3    13    61 |10537087|10825254
+  15 Hiraoka Yuriko              5d Hiraoka Satoshi            8d   7d JP   xxxx  30+   5-  18+   8-  19+     3    12    67 |00000000|10801780
+  16 Wang Amy                    4d Ko Daehyuk                 7d   6d US   xxxx   9-  30+  13-  25+  22+     3    11    59 |19262386|00000000
+  17 Kawabuchi Kumiko            5d Obayashi Hideki            6d   6d JP   xxxx  22+   4-   6-  11-  27+     2    14    63
+  18 Zhang Melissa               3d Sedgwick James             6d   5d CA   xxxx  31+   1-  15-  23+   9-     2    14    61 |17637235|13425709
+  19 Aroonphaichitra Pattraporn  3d Taechaamnuayvit Nuttakrit  5d   4d TH   xxxx   1-  31+  29+   6-  15-     2    14    57 |00000000|15949153
+  20 Cornuejols Dominique        2d Karadaban Denis            4d   3d FR   xxxx  13-  25+  24+  12-  11-     2    13    59 |10913210|15637314
+  21 Ito Masako                  6d Takasusuki Kazuya          6d   6d JP   xxxx  11-  27+  12-  26+  10-     2    12    60
+  22 Kahara Maiju                6k Savo Jesse                 4d   1k FI   xxxx  17-   6-  30+  27+  16-     2    11    58 |14813084|13801634
+  23 Dankova Lenka               6k Danek Vladimir             5d   1k CZ   xxxx   8-  12-  28+  18-  31+     2    10    61 |10513063|10213016
+  24 Putter Annemarie_de         2k Koster Bram                4d   2d NL   xxxx  10-  28+  20-  29+  13-     2    10    59 |10613273|12862817
+  25 Ravjir Gerelmaa             5k Tsolmon Sansar             5d   1d MN   xxxx   3-  20-  32+  16-  29+     2    10    56 |15074928|13662825
+  26 Altug Seval                 2k Ozgur Hataycan             1d   1k TR   xxxx  32+  10-  14-  21-  28+     2     9    56 |15898542|15862539
+  27 Medak Mirta                 6k Medak Damir                4k   5k HR   xxxx   5-  21-  31+  22-  17-     1    11    59 |16525718|16533715
+  28 Reynolds Emma               6k Phease Edwin               4d   1k NZ   xxxx   4-  24-  23-  32+  26-     1    10    51 |00000000|15049947
+  29 Hui Lim_Chai                1d Asmad Siddeq               1d   1d BN   xxxx  14-  32+  19-  24-  25-     1     9    54
+  30 Isabella Katherine          5k Isral Wembris              1k   3k ID   xxxx  15-  16-  22-  31-  32+     1     9    49
+  31 Shkugal Valentina           6k Suponev Alexandr           1d   3k BY   xxxx  18-  19-  27-  30+  23-     1     8    58 |14762627|12349205
+  32 Arguedas Eugenia            7k Boza Enrique               3k   5k CR   xxxx  26-  29-  25-  28-  30-     0     7    47

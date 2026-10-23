@@ -1,0 +1,62 @@
+website: https://www.pairgo.or.jp/amateur/29th/index_e.htm
+stages:
+  - type: tournament
+    name: WSPGC
+    notes: 5th World Student Pair Go Championship
+    category: wspgc
+    file: wspgc2018.txt
+    dir: 2018/wspgc
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: false
+    games:
+      - 1-2 1:B+4.5 round:4 sgf:2018/wspgc/4-JieunLeeDonghanKim-EunjinChoJaehoonShin.sgf
+      - 2-10 2:B+R round:1 sgf:2018/wspgc/1-EunjinChoJaehoonShin-KanaYamamotoKantoHatano.sgf
+      - 4-7 4:B+0.5 round:4 sgf:2018/wspgc/4-HsiaotungLinPingSinTseng-AkikoFujiwaraYoshikiKurita.sgf
+      - 5-2 2:W+R round:3 sgf:2018/wspgc/3-MinaNomuraMaoYamada-EunjinChoJaehoonShin.sgf
+      - 6-1 1:W+R round:3 sgf:2018/wspgc/3-SiChenXiaolinWei-JieunLeeDonghanKim.sgf
+      - 6-8 6:B+R round:2 sgf:2018/wspgc/2-SiChenXiaolinWei-AdrianaTomsuLukasPodpera.sgf
+      - 9-5 5:W+T round:2 sgf:2018/wspgc/2-KahoSaikiJinMatsubara-MinaNomuraMaoYamada.sgf
+      - 12-3 3:W+77.5 round:1 sgf:2018/wspgc/1-ValeriaSanchezBryanGuillen-JiaxuanXieLimingXu.sgf
+  - type: tournament
+    name: IAPGC
+    category: iapgc
+    file: iapgc2018.txt
+    dir: 2018/iapgc
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: false
+    games:
+      - 1-2 1:B+R round:5 sgf:2018/iapgc/5-YujinJeonYoungrakHur-MarieUnegawaYutaTakizawa.sgf
+      - 1-7 1:B+R round:3 sgf:2018/iapgc/3-YujinJeonYoungrakHur-FukiOjiKenjiTokudomi.sgf
+      - 1-23 1:B+R round:1 sgf:2018/iapgc/1-YujinJeonYoungrakHur-LydiaGallantRemiCampagnie.sgf
+      - 2-3 2:B+R round:3 sgf:2018/iapgc/3-MarieUnegawaYutaTakizawa-ChienYuChenYunCheTsai.sgf
+      - 2-12 2:B+R round:4 sgf:2018/iapgc/4-MarieUnegawaYutaTakizawa-NaokoAraiBungoTaga.sgf
+      - 3-5 3:B+R round:2 sgf:2018/iapgc/2-ChienYuChenYunCheTsai-ManqiChenWenqiWang.sgf
+      - 4-1 1:W+R round:4 sgf:2018/iapgc/4-KanakoKurashinaKentoOkada-YujinJeonYoungrakHur.sgf
+      - 4-25 4:B+R round:1 sgf:2018/iapgc/1-KanakoKurashinaKentoOkada-MirantiArundinaDanielPutra.sgf
+      - 7-19 7:B+8.5 round:1 sgf:2018/iapgc/1-FukiOjiKenjiTokudomi-YvonneRoelofsMichielEijkhout.sgf
+      - 8-1 1:W+6.5 round:2 sgf:2018/iapgc/2-AyakoOdaKazumoriNagayo-YujinJeonYoungrakHur.sgf
+      - 9-21 9:B+R round:5 sgf:2018/iapgc/5-DawnSumLuYong-AroonkornPrathoomwanVorawatTanapatsopol.sgf
+      - 12-20 12:B+R round:3 sgf:2018/iapgc/3-NaokoAraiBungoTaga-LisaEnteBenjaminTeuber.sgf
+      - 14-27 14:B+R round:2 sgf:2018/iapgc/2-JanaHollmannKlausPetri-ChaiHuiLimAsmadSiddeqBin.sgf
+      - 18-4 4:W+R round:3 sgf:2018/iapgc/3-MihokoSekimotoNaoyaUchida-KanakoKurashinaKentoOkada.sgf
+      - 19-16 16:W+R round:5 sgf:2018/iapgc/5-YvonneRoelofsMichielEijkhout-AtsukoKinouchiShinichiroTakahashi.sgf
+      - 22-15 15:W+R round:5 sgf:2018/iapgc/5-YucongPheasePatrickZhou-AsukaHamasakiTaroIshida.sgf
+      - 25-30 25:B+R round:4 sgf:2018/iapgc/4-MirantiArundinaDanielPutra-SeldaKalinAltanKuntay.sgf
+      - 26-24 24:W+30.5 round:2 sgf:2018/iapgc/2-ViktoriiaSymonenkoYevhenPankin-GuzelSurmaIgorTychko.sgf
+      - 29-23 23:W+R round:5 sgf:2018/iapgc/5-NikaRegginouDimitrisRegginos-LydiaGallantRemiCampagnie.sgf
+      - 31-12 12:W+30.5 round:1 sgf:2018/iapgc/1-SimonaGluskeviciuteAlbertasPetrauskas-NaokoAraiBungoTaga.sgf
+      - 32-31 31:W+19.5 round:4 sgf:2018/iapgc/4-AndreaAlpizarViquezJuanVargas-SimonaGluskeviciuteAlbertasPetrauskas.sgf

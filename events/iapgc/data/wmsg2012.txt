@@ -1,0 +1,26 @@
+;https://web.archive.org/web/20121123011107/http://www.wmsg2012.org/participants-pair-event
+;https://www.eurogofed.org/results/world/wmsg2012/
+; PC[FR, Lille]
+; DT[2012-08-20,2012-08-23]
+; Lu Yu-Hua temporary changed name
+;Pl.   Name                     Str  Co. MMS   1    2    3    4    5   Pt   SOS SOSOS
+   1 Osawa Maya            6d Nakasone Riki             6d   6d JP   xxxx   9+   8+   2-  16+   5+   3+   2+     4    16    62     2     1     1 |16586504|16501452
+   2 Lin Hsiaotung         6d Hung Hsin-Wei             7d   7d TW   xxxx  20+   5+   1+   9+  12+   4+   1-     5    12    70     1     1     2 |15001910|16586438
+   3 Lu Yu_Hua             6d Lai Yu-Cheng              7d   7d TW   xxxx  19+   4+   7+  10+   6+   1-   4+     5    13    66     1     2     3 |00000000|13650813
+   4 Kovaleva Natalia      5d Surin Dmitrij             6d   6d RU   xxxx  13+   3-  15+   7+  11+   2-   3-     4    14    63     2     2     4 |10537087|10825254
+   5 Su Amy                3d Zhang Lionel              6d   5d US   xxxx  14+   2-  16+   8+   1-   0=   0=     3    16    61     3     1     5 |00000000|15013845
+   6 Li Mei-Ying           4d Lee Tik-Sang              4d   4d HK   xxxx  11-  13+  10+  15+   3-   0=   0=     3    14    60     3     2     5
+   7 Diederen Marianne     2k Ditzhuijzen Zeno_van      5d   2d NL   xxxx  15+  17+   3-   4-  13+   0=   0=     3    14    60     3     2     5 |10598412|12698972
+   8 Fu Sai-Leng           2d Sam In-Hang               4d   3d MO   xxxx  18+   1-  12+   5-  14+   0=   0=     3    12    66     4     1     8 |00000000|15013834
+   9 Yu Jin                5d Huang Andrew              5d   5d CA   xxxx   1-  18+  14+   2-  20+   0=   0=     3    12    62     5     1     9 |14501190|15486702
+  10 Chen Wan              4d Zhuang Guozhong           6d   5d US   xxxx  17+  11+   6-   3-  19+   0=   0=     3    11    63     5     2     9
+  11 Avram Laura           2d Corlan Lucian             5d   4d RO   xxxx   6+  10-  13-  17+   4-   0=   0=     2    13    61     6     2    11 |12698620|12586750
+  12 Eijkhout Michiel      6d Roelofs Yvonne            3k   2d NL   xxxx  16+  14-   8-  18+   2-   0=   0=     2    13    55     6     1    11 |10486410|10725792
+  13 Julien Marie          5k Journet-Brochet Aurelien  1k   3k FR   xxxx   4-   6-  11+  19+   7-   0=   0=     2    12    68     7     2    13 |14974443|14549810
+  14 McGill Martha         1k Crosby Matthew            3d   2d UK   xxxx   5-  12+   9-  20+   8-   0=   0=     2    11    66     7     1    13 |15233064|13701501
+  15 Bexfield Alison       2d Bexfield Simon            1k   1d UK   xxxx   7-  19+   4-   6-  17+   0=   0=     2    11    65     8     2    15 |10201081|10237128
+  16 Cao Ngoc-Trang        1k Fenech Antoine            5d   3d FR   xxxx  12-  20+   5-   1-  18+   0=   0=     2    10    68     8     1    15 |14586693|10349350
+  17 Lopes_Masetti Camila 13k Shimada-Ramos Thiago      3d   5k BR   xxxx  10-   7-  19+  11-  15-   0=   0=     1    10    62     9     2    17 |16525509|15937152
+  18 Rodriguez Sabina      9k Vega Jose-Manuel          2k   5k ES   xxxx   8-   9-  20+  12-  16-   0=   0=     1    10    60     9     1    17 |10949246|10513712
+  19 Marconi Anna         11k Bertok Davide             8k   9k IT   xxxx   3-  15-  17-  13-  10-   0=   0=     0    13    57    10     2    19 |14733213|13049520
+  20 Toma Ruxandra        12k Toma Iulian               3d   5k RO   xxxx   2-  16-  18-  14-   9-   0=   0=     0    13    55    10     1    19 |10898987|10398410

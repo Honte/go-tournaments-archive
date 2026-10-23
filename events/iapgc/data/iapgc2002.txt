@@ -1,0 +1,36 @@
+; EV[13th International Amateur Pair Go Championship]
+;https://www.pairgo.or.jp/amateur/13th/indexe.htm
+; PC[JP, Tokyo]
+; DT[2002-11-16,2002-11-17]
+   1 Wang Ni-Qiao          5d Qian Le-Ping         5d   5d CN   xxxx  27+  12+  18+   3+   4+     5    14    75
+   2 Kanai Kazuko          6d Harada Minoru        8d   7d JP   xxxx  15+  10+   4-  14+   7+     4    16    70
+   3 Choe Un-A             6d Mun Yong-Sam         7d   7d KP   xxxx  24+  13+   7+   1-  11+     4    16    66
+   4 Song Ye-Seul          5d Cho Min-Soo          7d   6d KR   xxxx  25+  28+   2+   6+   1-     4    16    66
+   5 Yamamori Maki         5d Sogabe Toshiyuki     6d   6d JP   xxxx  14+   7-  10+  17+   9+     4    14    73
+   6 Unegawa Marie         5d Takizawa Yuta        5d   5d JP   xxxx  11+  17+  20+   4-   8+     4    14    72
+   7 Yamamoto Minako       6d Kusayama Naoki       6d   6d JP   xxxx  19+   5+   3-  15+   2-     3    17    70
+   8 Sato Momoyo           5d Shimohashi Koichi    6d   6d JP   xxxx   9-  16+  12+  20+   6-     3    15    64
+   9 Kamasaki Mizuyo       5d Komori Shoji         6d   6d JP   xxxx   8+  18-  13+  19+   5-     3    14    70
+  10 Reimpell Monika       2d Dickhut Franz-Josef  6d   4d DE   xxxx  22+   2-   5-  21+  23+     3    14    60 |10250537|10501403
+  11 Ishii Miyuki          5d Ono Teppei           6d   6d JP   xxxx   6-  27+  23+  18+   3-     3    13    68 |13713194|00000000
+  12 Burdakova Dina        4d Surin Dmitrij        6d   5d RU   xxxx  23+   1-   8-  27+  20+     3    13    63 |10813187|10825254
+  13 Cheng Ya-Wen          1d Shih Yi-Cheng        6d   4d TW   xxxx  21+   3-   9-  28+  17+     3    12    69
+  14 Chang Selina          4d Chang Charles        4d   4d CA   xxxx   5-  31+  28+   2-  22+     3    12    60
+  15 Szilagyi Ana-Maria    4k Bajenaru Dragos      6d   2d RO   xxxx   2-  29+  30+   7-  18+     3    11    70 |10362264|10349240
+  16 Kawamura Yoko         5d Kataoka Yoshihide    6d   6d JP   xxxx  17-   8-  24+  25+  19+     3    11    64
+  17 Iizuka Chihoko        5d Ilzuka Atsushi       6d   6d JP   xxxx  16+   6-  22+   5-  13-     2    16    62
+  18 Chen Wan              4d Ning Ted             7d   6d US   xxxx  26+   9+   1-  11-  15-     2    16    59 |00000000|12086514
+  19 Phease Yucong         3d Phease Leonard       1d   2d NZ   xxxx   7-  26+  21+   9-  16-     2    13    60 |15098908|00000000
+  20 Yamaguchi Naoko       5d Yamaguchi Chikashi   6d   6d JP   xxxx  29+  30+   6-   8-  12-     2    12    63
+  21 Entin Tatiana         3k Entin Leonid         3d   1d IL   xxxx  13-  24+  19-  10-  27+     2    11    63 |14250456|10801791
+  22 Cristiani Myrtille    1d Drouot Paul          5d   3d FR   xxxx  10-  25+  17-  29+  14-     2    11    63 |10725935|10337239
+  23 Takanashi Shoko       5d Nagai Masayoshi      6d   6d JP   xxxx  28-  32+  11-  30+  10-     2     8    57
+  24 Dumermuth Ursula      1k Trippel Lorenz       1k   1k CH   xxxx   3-  21-  16-  32+  29+     2    10    57 |10350802|10513492
+  25 Chairasmisak Chariya  1d Traivivatana Sulhee  1d   1d TH   xxxx   4-  22-  32+  16-  30+     2    10    56
+  26 Pedersen Stina        5k Pedersen Jesper      3d   1k DK   xxxx  18-  19-  29-  31+  28+     2     7    59 |10713912|10425195
+  27 Hernaus Vida          2k Rojs Bojan           4d   2d SI   xxxx   1-  11-  31+  12-  21-     1    14    58 |10613460|10386981
+  28 Harvey Helen          1k Harvey Martin        3k   2k UK   xxxx  32+   4-  14-  13-  26-     1    12    55 |10486982|10401985
+  29 Siivola Sinikka       7k Siivola Matti        5d   1k FI   xxxx  20-  15-  26+  22-  24-     1    11    51 |10262791|10286782
+  30 Nguyen Huong          2d Le Mai               2d   2d VN   xxxx  31+  20-  15-  23-  25-     1    10    48
+  31 Ellis Eugenia         5k Rittatore Alvaro     2d   2k UY   xxxx  30-  14-  27-  26-  32+     1     7    51 |00000000|12025310
+  32 Rakhmi Aiko-Urfia    15k Djap Woei-Haw        3d   6k ID   xxxx  28-  23-  25-  24-  31-     0     8    47 |00000000|10474574

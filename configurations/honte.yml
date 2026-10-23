@@ -25,6 +25,8 @@ events:
         domain: https://kpmc.go.art.pl
       - id: wwgc
         prefix: world-women
+      - id: iapgc
+        prefix: world-pairs
   - title:
       en: European Championships
       pl: Mistrzostwa Europy
