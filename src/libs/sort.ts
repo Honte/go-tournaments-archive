@@ -1,5 +1,6 @@
 import type { RowData } from '@tanstack/react-table';
 import type { TableStats } from '@/schema/data';
+import { splitPlayerName } from '@/libs/playerNames';
 import type { StatsSortFn } from '@/components/table/statsTableConfig';
 
 type PlayerLike = {
@@ -40,7 +41,7 @@ export function createPlayersSorter(locale: string, isDescending = false) {
   };
 
   function getSurname(name: string): string {
-    return name.trim().split(/\s+/).slice(1).join(' ') || name;
+    return splitPlayerName(name).lastName;
   }
 }
 

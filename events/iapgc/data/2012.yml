@@ -1,0 +1,71 @@
+website:
+  - https://www.pairgo.or.jp/amateur/23rd/index_e.htm
+  - https://www.eurogofed.org/results/world/wmsg2012/
+stages:
+  - type: tournament
+    name: IAPGC
+    file: iapgc2012.txt
+    dir: 2012/iapgc
+    category: iapgc
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: false
+    games:
+      - 1-2 1:B+R round:5 sgf:2012/iapgc/5-YunJeongJangHoseungLee-YurikoHiraokaSatoshiHiraoka.sgf
+      - 1-5 1:B+17.5 round:4 sgf:2012/iapgc/4-YunJeongJangHoseungLee-NaokoHiguchiHiroshiTerada.sgf
+      - 2-3 2:B+0.5 round:4 sgf:2012/iapgc/4-YurikoHiraokaSatoshiHiraoka-NaokoAraiMinoruKuramoto.sgf
+      - 3-19 3:B+R round:2 sgf:2012/iapgc/2-NaokoAraiMinoruKuramoto-MartinaSimunkovaMartinKuzela.sgf
+      - 4-18 4:B+R round:1 sgf:2012/iapgc/1-ManamiTakenoHaruoYomo-KazukoYamazakiKazuhikoSato.sgf
+      - 5-28 5:B+R round:1 sgf:2012/iapgc/1-NaokoHiguchiHiroshiTerada-CarleJoubertFrancoisvanNiekerk.sgf
+      - 6-21 6:B+R round:3 sgf:2012/iapgc/3-MaikoTaniKosukeShimizu-UuganbatMunkhErdeneKhadbaatarDeleg.sgf
+      - 7-16 7:B+R round:4 sgf:2012/iapgc/4-YukaKimotoHironobuMori-XFHarfinaDanielThalib.sgf
+      - 8-3 3:W+R round:5 sgf:2012/iapgc/5-YuHuaLuTangYuTsai-NaokoAraiMinoruKuramoto.sgf
+      - 10-20 10:B+R round:5 sgf:2012/iapgc/5-NataliaKovalevaDmitrijSurin-MasakoItoMamoruTakasusuki.sgf
+      - 12-7 7:W+R round:1 sgf:2012/iapgc/1-AyumiSaooAkiraSaoo-YukaKimotoHironobuMori.sgf
+      - 14-11 11:W+R round:2 sgf:2012/iapgc/2-AmySuLionelZhang-KlaraZaloudkovaJanHora.sgf
+      - 16-17 17:W+R round:1 sgf:2012/iapgc/1-XFHarfinaDanielThalib-MilenaBocleSimonBillouet.sgf
+      - 16-23 16:B+R round:5 sgf:2012/iapgc/5-XFHarfinaDanielThalib-ElinaPieniniemiAnttiTormanen.sgf
+      - 18-25 18:B+R round:3 sgf:2012/iapgc/3-KazukoYamazakiKazuhikoSato-ViktoriiaKorsakDmytroYatsenko.sgf
+      - 20-9 9:W+R round:2 sgf:2012/iapgc/2-MasakoItoMamoruTakasusuki-KayokoItoiSatoruFukuda.sgf
+      - 22-13 13:W+R round:3 sgf:2012/iapgc/3-SieglindeGruberHelmutWiltschek-SanaeKishimotoYusukeWatanabe.sgf
+      - 26-24 24:W+R round:4 sgf:2012/iapgc/4-MichelleBjerkeGlennKjetilVasdal-ManjaMarzMichaelMarz.sgf
+      - 29-20 20:W+R round:3 sgf:2012/iapgc/3-SheenaWalshKennethSavage-MasakoItoMamoruTakasusuki.sgf
+      - 30-27 27:W+R round:2 sgf:2012/iapgc/2-BerlindaAngGenialTan-HoaNguyenZhiKinMok.sgf
+      - 31-21 21:W+R round:5 sgf:2012/iapgc/5-CarolinaLuiLamPostigoLeonRios-UuganbatMunkhErdeneKhadbaatarDeleg.sgf
+  - type: tournament
+    name: WMSG
+    file: wmsg2012.txt
+    dir: 2012/wmsg
+    notes: World Mind Sports Games - Mixed Pairs. Unlike the 2008 edition, this one was not part of IAPGC.
+    category: wmsg
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+      - ping
+      - group
+      - place
+    breakers:
+      - place
+    columns:
+      - ping
+      - wins
+      - sos
+      - sosos
+      - group
+    findSharedPlaces: true
+    games:
+      - 1-2 2:W+R round:3 sgf:2012/wmsg/3-MayaOsawaRikiNakasone-HsiaotungLinHsinWeiHung.sgf
+      - 1-5 1:B+7.5 round:5 sgf:2012/wmsg/5-MayaOsawaRikiNakasone-AmySuLionelZhang.sgf
+      - 2-1 1:W+5.5 round:7 sgf:2012/wmsg/7-HsiaotungLinHsinWeiHung-MayaOsawaRikiNakasone.sgf
+      - 3-10 3:B+R round:4 sgf:2012/wmsg/4-YuHuaLuYuChengLai-WanChenGuozhongZhuang.sgf
+      - 4-2 2:W+R round:6 sgf:2012/wmsg/6-NataliaKovalevaDmitrijSurin-HsiaotungLinHsinWeiHung.sgf
+      - 4-3 3:W+11.5 round:7 sgf:2012/wmsg/7-NataliaKovalevaDmitrijSurin-YuHuaLuYuChengLai.sgf
+      - 4-3 3:W+33.5 round:2 sgf:2012/wmsg/2-NataliaKovalevaDmitrijSurin-YuHuaLuYuChengLai.sgf
+      - 9-1 1:W+R round:1 sgf:2012/wmsg/1-JinYuAndrewHuang-MayaOsawaRikiNakasone.sgf

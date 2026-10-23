@@ -7,6 +7,7 @@ import type { Locale, Translations } from '@/i18n/consts';
 import { getFormatter } from '@/i18n/formatter';
 import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
+import { splitPlayerName } from '@/libs/playerNames';
 import { sortTableStats } from '@/libs/sort';
 import { SgfCountLink } from '@/components/gameRecords/SgfCountLink';
 import { StatsTable } from '@/components/table/StatsTable';
@@ -70,7 +71,7 @@ function AllPlayersStatsContent({ event, players, translations }: AllPlayersStat
             country: countries,
             totalSgfs,
           } = p;
-          const [firstName, lastName] = (name ?? '').split(' ');
+          const { firstName, lastName } = splitPlayerName(name ?? '');
           const [gold, silver, bronze] = medals;
 
           // for sorting
@@ -101,7 +102,7 @@ function AllPlayersStatsContent({ event, players, translations }: AllPlayersStat
     [players]
   );
 
-  const hasSgfs = event.generateSgfs && data.some((p) => p.sgfs > 0);
+  const hasSgfs = Boolean(event.generateSgfs) && data.some((p) => p.sgfs > 0);
   const hasDraws = data.some((p) => p.drawn > 0);
   const hasUnresolved = data.some((row) => row.unresolved > 0);
 
@@ -129,7 +130,7 @@ function AllPlayersStatsContent({ event, players, translations }: AllPlayersStat
       {
         accessorKey: 'country',
         header: t('table.country'),
-        enabled: event.showCountry,
+        enabled: Boolean(event.showCountry),
         cell: (info) =>
           jsxJoin(
             info.row.original.countries.map((code) => (
@@ -141,7 +142,7 @@ function AllPlayersStatsContent({ event, players, translations }: AllPlayersStat
       {
         accessorKey: 'bestPlace',
         header: t('table.best'),
-        enabled: event.showBestPlace,
+        enabled: Boolean(event.showBestPlace),
         cell: formatter.toNumericCell,
       },
       {

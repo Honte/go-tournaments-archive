@@ -1,0 +1,9 @@
+; EV[4th International Amateur Pair Go Championship]
+;https://www.pairgo.or.jp/db-e/db1_4.htm
+; PC[JP, Tokyo]
+; DT[1993-12-22,1993-12-23]
+; 32 pairs, 14 countries CN, TW, HK, JP, KR, AT, DK, FI, FR, NL, RU, UK, CA, US
+; team names in Ranka, NL(VS DK) & RU(vs JP) to 2nd round, both lost to JP	
+1 Baba Tomoyumi   6d Yoshida Akira     6d 6d JP xxx 2+ 1
+2 Makiguchi Kana  4d Muraoka Toshihiko 6d 5d JP xxx 1- 2
+3 Hayashi Mutsumi 6d Nagano Shyun      6d 6d JP xxx 0= 3

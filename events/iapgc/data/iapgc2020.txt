@@ -1,0 +1,32 @@
+; EV[31st International Amateur Pair Go Championship]
+; PC[JP, Tokyo]
+; DT[2020-12-05,2020-12-06]
+   1 Iwai Haruko       6d Cho Seok-Bin          7d   7d JP   xxxx  12+  19+   6+  10+   2+     5    15    74 |00000000|13833930
+   2 Kaneko Motoko     6d Sato Koya             6d   6d JP   xxxx  14+  18+   8+   7+   1-     4    16    73
+   3 Tsuji Moeka       6d Yamada Mao            6d   6d JP   xxxx   8-  13+  21+  17+   9+     4    13    69
+   4 Fujiwara Akiko    6d Tsuda Yuki            7d   7d JP   xxxx  24+   6-  19+  20+   7+     4    12    71
+   5 Kurashina Maiko   5d Kihara Shunsuke       6d   6d JP   xxxx   7-  27+  26+   8+  11+     4    11    70 |00000000|18986352
+   6 Osawa Maya        6d Tsuchimune Yoshiyuki  6d   6d JP   xxxx  16+   4+   1-   9-  13+     3    17    69 |16586504|15062157
+   7 Tani Yuiko        5d Ozeki Minoru          7d   6d JP   xxxx   5+  22+  10+   2-   4-     3    17    64 |00000000|18462829
+   8 Kurashina Kanako  6d Sugita Shuntaro       6d   6d JP   xxxx   3+  21+   2-   5-  17+     3    16    66
+   9 Hiraoka Yuriko    5d Hiraoka Satoshi       8d   7d JP   xxxx  17+  10-  11+   6+   3-     3    15    71 |00000000|10801780
+  10 Lee Kasumi        5d Ito Yusuke            6d   6d JP   xxxx  26+   9+   7-   1-  16+     3    14    75
+  11 Arai Naoko        6d Nishikawa Takatoshi   6d   6d JP   xxxx  23+  20+   9-  16+   5-     3    13    64
+  12 Fukushima Akira   5d Nishimura Ryotaro     6d   6d JP   xxxx   1-  29+  13-  23+  20+     3    13    58
+  13 Kezuka Akiko      5d Hatano Kanta          6d   6d JP   xxxx   0+   3-  12+  18+   6-     3    12    57 |20662807|00000000
+  14 Inoue Yuna        5d Kasahara Yuki         6d   6d JP   xxxx   2-  28+  16-  21+  24+     3    11    63
+  15 Yano Mizuki       6d Tanabe Satoshi        6d   6d JP   xxxx  18-  16-  27+  19+  22+     3     9    65
+  16 Sakano Hanae      6d Someya Shuma          6d   6d JP   xxxx   6-  15+  14+  11-  10-     2    15    64 |20401205|00000000
+  17 Kiura Satoko      5d Ikeno Hirofumi        6d   6d JP   xxxx   9-  24+  18+   3-   8-     2    14    68
+  18 Takehisa Kiyomi   5d Gokuden Mizuo         7d   6d JP   xxxx  15+   2-  17-  13-  25+     2    14    58
+  19 Hino Rieko        5d Hiramatsu Keiki       6d   6d JP   xxxx  28+   1-   4-  15-  29+     2    14    54 |18913356|00000000
+  20 Nakamura Taiko    6d Michikawa Iori        6d   6d JP   xxxx  27+  11-  22+   4-  12-     2    13    60 |12325698|00000000
+  21 Watanabe Haruki   6d Hosaka Ryu            6d   6d JP   xxxx  29+   8-   3-  14-  26+     2    12    61 |19313910|00000000
+  22 Ogaki Mina        6d Matsumoto Naota       6d   6d JP   xxxx  25+   7-  20-  28+  15-     2    11    56
+  23 Sato Miku         1d Sogabe Toshiyuki      7d   4d JP   xxxx  11-  26-  25+  12-  28+     2    10    56
+  24 Takasaki Yoshino  2d Takasaki Hiroyuki     5d   4d JP   xxxx   4-  17-   0+  26+  14-     2    10    50
+  25 Inoue Hazuki      5d Inoue Keiya           3d   4d JP   xxxx  22-   0+  23-  27+  18-     2     7    46
+  26 Kashihara Eriko   4d Takabatake Yutaka     6d   5d JP   xxxx  10-  23+   5-  24-  21-     1    13    57
+  27 Makino Akari      4d Makino Takumi         5d   5d JP   xxxx  20-   5-  15-  25-   0+     1    11    40
+  28 Takehisa Izumi    3d Kawano Yasuhiro       7d   5d JP   xxxx  19-  14-  29+  22-  23-     1    10    54
+  29 Izaki Yaeko       5d Izaki Masao           5d   5d JP   xxxx  21-  12-  28-   0+  19-     1     8    49 |10433973|10474970

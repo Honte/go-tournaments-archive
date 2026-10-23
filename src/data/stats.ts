@@ -54,6 +54,7 @@ export function calculateStats(
   for (const tournament of tournaments) {
     const { year, participants: players, stages, top, games: tournamentGames, categoriesTop } = tournament;
     const tournamentCategories: Record<string, CategoryPlayer[]> = {};
+    const participantResults = new Map<string, PlayerResult[]>();
 
     for (const stage of stages) {
       if (stage.excluded) {
@@ -63,11 +64,25 @@ export function calculateStats(
       for (const player of stage.table) {
         const participant = players[player.id];
         const members = getParticipantPlayers(participant);
+        let results = participantResults.get(participant.id);
+
+        if (!results) {
+          results = [];
+          participantResults.set(participant.id, results);
+        }
+
         for (const [memberIndex, tournamentPlayer] of members.entries()) {
           const playerStats = upsertPlayer(tournamentPlayer);
-          const playerResult = upsertPlayerResult(playerStats, tournamentPlayer, year);
+          const partner = isPair(participant) ? participant.members[memberIndex === 0 ? 1 : 0] : undefined;
+          let playerResult = results[memberIndex];
+
+          if (!playerResult) {
+            playerResult = createPlayerResult(tournamentPlayer, year, partner);
+            results[memberIndex] = playerResult;
+            playerStats.results.push(playerResult);
+          }
+
           if (isPair(participant)) {
-            playerResult.partner = participant.members[memberIndex === 0 ? 1 : 0];
             playerResult.pairRank = participant.rank;
             playerResult.pairCountry = participant.country;
           }
@@ -173,7 +188,7 @@ export function calculateStats(
 
     if (event.categories?.length) {
       for (const category of event.categories) {
-        upsertMedals(year, players, categoriesTop?.[category], category);
+        upsertMedals(year, players, participantResults, categoriesTop?.[category], category);
       }
 
       for (const category in tournamentCategories) {
@@ -183,7 +198,7 @@ export function calculateStats(
         });
       }
     } else {
-      upsertMedals(year, players, top);
+      upsertMedals(year, players, participantResults, top);
     }
 
     for (const id in tournamentGames) {
@@ -245,7 +260,7 @@ export function calculateStats(
     const player = players[id];
     const [gold, silver, bronze] = player.medals;
 
-    player.totalAttended = player.results.length;
+    player.totalAttended = new Set(player.results.map((result) => result.year)).size;
     player.score = gold.length * 10_000 + silver.length * 100 + bronze.length;
     player.results.sort((a, b) => a.year - b.year);
 
@@ -367,25 +382,18 @@ export function calculateStats(
     }
   }
 
-  function upsertPlayerResult(playerStats: PlayerStats, player: Player, year: number): PlayerResult {
-    const previous = playerStats.results.find((event) => event.year === year);
-
-    if (previous) {
-      return previous;
-    }
-
-    const newResult: PlayerResult = {
+  function createPlayerResult(player: Player, year: number, partner?: Player): PlayerResult {
+    return {
       year,
       place: Infinity,
       name: player.name,
       rank: player.rank,
       country: player.country,
+      partner,
+      medals: [[], [], []],
+      categoriesMedals: setupCategoriesMedals(),
       stages: [],
     };
-
-    playerStats.results.push(newResult);
-
-    return newResult;
   }
 
   function upsertCountryPlayerResult(
@@ -440,7 +448,13 @@ export function calculateStats(
     });
   }
 
-  function upsertMedals(year: number, players: Record<string, Participant>, winners?: string[][], category?: string) {
+  function upsertMedals(
+    year: number,
+    players: Record<string, Participant>,
+    participantResults: Map<string, PlayerResult[]>,
+    winners?: string[][],
+    category?: string
+  ) {
     if (!winners) {
       return;
     }
@@ -454,11 +468,23 @@ export function calculateStats(
 
       for (const id of winner) {
         const player = players[id];
-        for (const member of getParticipantPlayers(player)) {
+
+        for (const [memberIndex, member] of getParticipantPlayers(player).entries()) {
           const playerStats = upsertPlayer(member);
           playerStats.medals[index].push(edition);
+
           if (category) {
             playerStats.categoriesMedals[category][index].push(edition);
+          }
+
+          const result = participantResults.get(player.id)?.[memberIndex];
+
+          if (result) {
+            result.medals[index].push(edition);
+
+            if (category) {
+              result.categoriesMedals[category][index].push(edition);
+            }
           }
         }
 

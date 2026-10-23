@@ -1,0 +1,54 @@
+website: https://www.pairgo.or.jp/amateur/32nd/index_e.php
+stages:
+  - type: tournament
+    name: WSPGC
+    notes: 7th World Student Pair Go Championship - Matsuda Cup
+    category: wspgc
+    file: wspgc2022.txt
+    dir: 2022/wspgc
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: false
+    games:
+      - 3-1 1:W+8.5 round:4 sgf:2022/wspgc/4-JingyueLuoZiyuPang-EunjinChoDonghanKim.sgf
+      - 6-2 2:W+R round:4 sgf:2022/wspgc/4-SuzuShibanoTsubasaKawaguchi-ChienYuChenYenRuChen.sgf
+      - 9-16 9:B+R round:2 sgf:2022/wspgc/2-HikaruTanakaHirokiLee-RosaMateosIvanVasquezRodriguez.sgf
+      - 14-10 10:W+R round:1 sgf:2022/wspgc/1-SawareePhanthasenChaiyakarnKanchanasilp-SuhyunLeeJeongminWoo.sgf
+      - 15-11 11:W+2.5 round:3 sgf:2022/wspgc/3-IsabelDonleMartinRuzicka-AnnyChenTomChen.sgf
+  - type: tournament
+    name: IAPGC
+    category: iapgc
+    file: iapgc2022.txt
+    dir: 2022/iapgc
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: false
+    games:
+      - 2-1 1:W+T round:5 sgf:2022/iapgc/5-AkikoFujiwaraYukiTsuda-JiwonHanSeyoungHong.sgf
+      - 4-1 1:W+1.5 round:4 sgf:2022/iapgc/4-ArianeOugierBenjaminDreanGuenaizia-JiwonHanSeyoungHong.sgf
+      - 7-3 3:W+R round:4 sgf:2022/iapgc/4-YuikoTaniMinoruOzeki-HsiaotungLinYuChengLai.sgf
+      - 10-24 10:B+R round:2 sgf:2022/iapgc/2-TaikoNakamuraIoriMichikawa-JulieArtignyBenjaminPapazoglou.sgf
+      - 12-31 12:B+R round:2 sgf:2022/iapgc/2-MotokoKanekoKoyaSato-YucongPheaseKevinHo.sgf
+      - 13-9 9:W+6.5 round:3 sgf:2022/iapgc/3-NathanichChantharojwongWichrichKaruehawanit-YuriUchidaSatoshiSakamuro.sgf
+      - 17-14 14:W+R round:4 sgf:2022/iapgc/4-ManamiTakenoRyosukeHirai-ShokoUemuraShingoOno.sgf
+      - 18-28 18:B+R round:3 sgf:2022/iapgc/3-YoshikoMorinagaYoshinoriMorinaga-DawnSumJamesLee.sgf
+      - 19-27 19:B+R round:5 sgf:2022/iapgc/5-JunkoSawadaMasaakiMiyama-AkiraFukushimaKakuMaekawa.sgf
+      - 21-6 6:W+R round:3 sgf:2022/iapgc/3-ThiKimLongPhamPhuocDinhTran-KanakoKurashinaShuntaroSugita.sgf
+      - 21-14 14:W+R round:5 sgf:2022/iapgc/5-ThiKimLongPhamPhuocDinhTran-ShokoUemuraShingoOno.sgf
+      - 22-15 15:W+R round:1 sgf:2022/iapgc/1-LovaWaahlinAntonSilfver-AkikoKezukaKantaHatano.sgf
+      - 27-26 27:B+R round:1 sgf:2022/iapgc/1-AkiraFukushimaKakuMaekawa-KlaraZaloudkovaJanHora.sgf
+      - 29-25 25:W+38.5 round:5 sgf:2022/iapgc/5-VeraRupelTimKlancisar-QingYongShiunYungKong.sgf
+      - 30-23 23:W+R round:1 sgf:2022/iapgc/1-MarianneDiederenReneAaij-TianyiLiAlbertYen.sgf
+      - 32-16 16:W+R round:2 sgf:2022/iapgc/2-ItzaCeronGregoryVelez-LokYiLeeKaHoChan.sgf

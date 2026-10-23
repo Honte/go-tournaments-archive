@@ -1,0 +1,19 @@
+website:
+  - https://www.pairgo.or.jp/amateur/12th/indexe.htm
+  - https://www.eurogofed.org/results/world/wpgc2001.htm
+stages:
+  - type: tournament
+    name: IAPGC
+    category: iapgc
+    file: iapgc2001.txt
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: false
+    games:
+      - 2-1 1:W+2.5 round:5 sgf:2001/5-HajinLeeDongSeobKim-WeijingFanChenHuang.sgf

@@ -86,6 +86,7 @@ stages:
       - 29-16 16:W+0.5 round:5 sgf:1992/5-MilanLazarevic-CheongTatYeo.sgf
       - 29-33 33:W+6.5 round:6 sgf:1992/6-MilanLazarevic-SergeFontaine.sgf
       - 29-38 29:B+R round:4 sgf:1992/4-MilanLazarevic-EnzoBurlini.sgf
+      - 30-38 30:B+R round:8 sgf:1992/8-RicardoQuintero-EnzoBurlini.sgf
       - 31-26 26:W+R round:6 sgf:1992/6-AlainWettach-KrzysztofGiedrojc.sgf
       - 32-28 28:W+0.5 round:5 sgf:1992/5-JanFrederiksen-JuanCarlosCarrillo.sgf
       - 32-30 32:B+R round:7 sgf:1992/7-JanFrederiksen-RicardoQuintero.sgf

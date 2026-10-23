@@ -1,4 +1,13 @@
 import type { Participant, Stage, Tournament } from '@/schema/data';
+import type { EventContext } from '@/schema/event';
+
+export type TournamentTables = {
+  tables: {
+    category?: string;
+    rows: TournamentRow[];
+    showSgfs: boolean;
+  }[];
+};
 
 export type TournamentRow = {
   year: number;
@@ -17,6 +26,21 @@ export type TournamentRow = {
 };
 
 export type PodiumKey = 'gold' | 'silver' | 'bronze';
+
+export function buildTournamentTables(event: EventContext, tournaments: readonly Tournament[]): TournamentTables {
+  const tables: TournamentTables['tables'] = [];
+  const categories = event.categories?.length ? event.categories : [undefined];
+  const hasSgfs = Boolean(event.generateSgfs && tournaments.some((tournament) => tournament.hasSgfs));
+
+  for (const category of categories) {
+    const rows = buildTournamentRows(tournaments, category);
+    if (rows.length) {
+      tables.push({ category, rows, showSgfs: !category && hasSgfs });
+    }
+  }
+
+  return { tables };
+}
 
 export function buildTournamentRows(tournaments: readonly Tournament[], category?: string): TournamentRow[] {
   const rows: TournamentRow[] = [];

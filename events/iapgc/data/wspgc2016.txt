@@ -1,0 +1,18 @@
+; PC[JP, Tokyo]
+; DT[2016-12-04,2016-12-04]
+   1 Fujiwara Akiko              6d Hirano Shodai          6d   6d JP   xxxx   7+   6+   2+   5+     4    10    40
+   2 Takeno Manami               6d Sugita Shuntaro        6d   6d JP   xxxx   4+   8+   1-   7+     3    11    36
+   3 Wang Shijie                 5d Li Yuanqi              6d   6d CN   xxxx   9+  10+   5-   6+     3     9    34
+   4 Lee Jieun                   6d Yoon Namgi             6d   6d KR   xxxx   2-  13+   8+   9+     3     8    34
+   5 Akutsu Chihiro              6d Ozeki Minoru           8d   7d JP   xxxx  16+  12+   3+   1-     3     8    33 |00000000|18462829
+   6 Yang Zhou                   5d Li Jiaqi               5d   5d CN   xxxx  11+   1-  10+   3-     2    11    32 |19449463|19437462
+   7 Avram Laura                 2d Obenaus Johannes       6d   4d EU   xxxx   1-  11+  15+   2-     2    10    32 |12698620|13049795
+   8 Cho Eunjin                  6d Park Sangcheol         4d   5d KR   xxxx  14+   2-   4-  13+     2     8    32 |18401482|00000000
+   9 Lin Hsiaotung               7d Cheng Hao-Wen          7d   7d TW   xxxx   3-  14+  12+   4-     2     8    31 |15001910|00000000
+  10 Kurashina Kanako            6d Kawaguchi Kohei        6d   6d JP   xxxx  13+   3-   6-  12+     2     7    35
+  11 Kezuka Akiko                4d Matsumoto Naota        6d   5d JP   xxxx   6-   7-  14+  15+     2     6    32 |20662807|00000000
+  12 Seres Julia                 2d Marko Peter            4d   3d HU   xxxx  15+   5-   9-  10-     1     8    28 |14598991|14513895
+  13 Song Amira                  4d Zalesak Andrew         3d   4d CAUS xxxx  10-   4-  16+   8-     1     7    29 |16249706|00000000
+  14 Xu Cindy                    3d Xie Ken                5d   4d XX   xxxx   8-   9-  11-  16+     1     6    28
+  15 Juthamate Jaruratchataphun  1d Chidsanupong Jangmark  4d   3d TH   xxxx  12-  16+   7-  11-     1     5    30 |00000000|17513672
+  16 Billarent Andrea           13k Rios Sebastian         2d   6k MX   xxxx   5-  15-  13-  14-     0     6    26

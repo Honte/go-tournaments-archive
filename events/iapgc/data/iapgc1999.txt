@@ -1,0 +1,37 @@
+; EV[10th International Amateur Pair Go Championship]
+;https://www.eurogofed.org/results/world/wpgc1999.htm
+;https://www.pairgo.or.jp/amateur/10th/indexe.htm
+; PC[JP, Tokyo]
+; DT[1999-11-13,1999-11-14]
+   1 Goto Naoko            5d Taga Bungo               4d   5d JP   xxxx  32+  11+  17+   7+   2+     5    12    77   304
+   2 Tanaka Yumiko         5d Komori Shoji             6d   6d JP   xxxx  10+  19+   9+   3+   1-     4    17    72   338
+   3 Kim Se-Yong           5d Kang Shin-Young          5d   5d KR   xxxx  18+  20+   5+   2-   8+     4    15    74   329
+   4 Hiraoka Yuriko        5d Hiraoka Satoshi          7d   6d JP   xxxx  15+   8+   7-  18+  10+     4    14    74   315 |00000000|10801780
+   5 Takanashi Shoko       6d Nagai Masayoshi          6d   6d JP   xxxx  16+  27+   3-  20+   9+     4    13    66   310
+   6 Shen Man-Rong         6d Du Wei-Xin               6d   6d CN   xxxx  23+   9-  19+  17+   7+     4    12    75   302
+   7 Nakayama Chihoko      5d Ilzuka Atsushi           6d   6d JP   xxxx  22+  21+   4+   1-   6-     3    17    61   355
+   8 Hayashi Mutsumi       6d Iwasaki Yuichi           5d   6d JP   xxxx  13+   4-  21+  12+   3-     3    16    67   350
+   9 Baba Tomoyumi         6d Takizawa Chiharu         7d   7d JP   xxxx  30+   6+   2-  14+   5-     3    16    63   328
+  10 Itoi Kayoko           5d Kusayama Naoki           6d   6d JP   xxxx   2-  25+  23+  13+   4-     3    15    64   332
+  11 Hwang Pey-Ru          1d Chou Ping-Chiang         7d   4d TW   xxxx  24+   1-  12-  22+  17+     3    14    64   328
+  12 Chan Louisa           3k Chien James              6d   2d US   xxxx  14+  17-  11+   8-  21+     3    13    71   318
+  13 Reimpell Monika       1d Dickhut Franz-Josef      6d   4d DE   xxxx   8-  15+  22+  10-  20+     3    13    66   318 |10250537|10501403
+  14 Ri Yun-Ok             6d Ku Kai-Man               6d   6d KP   xxxx  12-  26+  24+   9-  18+     3    12    63   315
+  15 Phease Yucong         3d Wang Stanley             4d   4d NZ   xxxx   4-  13-  29+  28+  19+     3    11    61   307 |15098908|00000000
+  16 Gaultier Astrid       3k Zemor Gilles             5d   2d FR   xxxx   5-  31+  18-  23+  24+     3    11    56   297 |10301907|10762180
+  17 Burdakova Dina        1d Lazarev Alexej           6d   4d RU   xxxx  26+  12+   1-   6-  11-     2    17    59   349 |10813187|10374386
+  18 Okamoto Aya           5d Hizawa Norihiro          5d   5d JP   xxxx   3-  28+  16+   4-  14-     2    15    62   323
+  19 Oji Fuki              6d Tamura Yoshihiro         6d   6d JP   xxxx  25+   2-   6-  27+  15-     2    14    60   324
+  20 Yamazaki Kazuko       4d Kashiwa Noriatsu         6d   5d JP   xxxx  28+   3-  27+   5-  13-     2    13    62   317
+  21 Lei Huihua            3d Chang Zhengong           5d   4d CA   xxxx  29+   7-   8-  25+  12-     2    12    65   311
+  22 Grudzinska Emilia     1d Kraszek Janusz           5d   3d PL   xxxx   7-  29+  13-  11-  28+     2    11    64   298 |10262912|10637924
+  23 Snepova Lenka         2k Dach Karel               4d   2d CZ   xxxx   6-  30+  10-  16-  32+     2    11    59   295 |10250724|10298508
+  24 Jones Alison          2d Atkins Tony              2d   2d UK   xxxx  11-  32+  14-  26+  16-     2    11    57   293 |10201081|10262065
+  25 Suciu Irina           2k Gheorghiu Valentin       5d   2d RO   xxxx  19-  10-  30+  21-  27+     2     9    61   296 |10337261|10374243
+  26 Burvenich Claude      1d Wettach Alain            3d   2d BE   xxxx  17-  14-  32+  24-  29+     2     8    62   278 |10301786|10437548
+  27 Meakmok Krongkamon    5k Trakarnsakdikul Paitoon  2d   2k TH   xxxx  31+   5-  20-  19-  25-     1    11    55   302
+  28 Stankovic Slavica     3k Mitic Dragan             5d   2d YU   xxxx  20-  18-  31+  15-  22-     1    10    56   302 |10849278|10325084
+  29 Concha Maria_Beatriz  3k Carillo Juan_Carlos      3d   1d CL   xxxx  21-  22-  15-  30+  27-     1    10    54   298
+  30 Entin Tatiana         3k Entin Leonid             3d   1d IL   xxxx   9-  23-  25-  29-  31+     1     9    52   287 |14250456|10801791
+  31 Low Ying-Yih          1d Yeo Sioh-Tian            2d   2d SG   xxxx  27-  16-  28-  32+  30-     1     6    53   267
+  32 Lau Hia               3k Tiong Kee-Soon           3d   1d MY   xxxx   1-  24-  26-  31-  23-     0    12    48   308 |00000000|10437570

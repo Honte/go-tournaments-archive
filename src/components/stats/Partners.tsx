@@ -43,7 +43,7 @@ export function Partners({
     {
       accessorKey: 'sgfs',
       header: t('table.sgfs'),
-      enabled: event.generateSgfs && data.some((row) => row.sgfs > 0),
+      enabled: Boolean(event.generateSgfs) && data.some((row) => row.sgfs > 0),
       cell: ({ row }) => (
         <SgfCountLink
           event={event}

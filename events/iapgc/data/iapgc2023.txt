@@ -1,0 +1,35 @@
+; EV[33rd International Amateur Pair Go Championship]
+; PC[JP, Tokyo]
+; DT[2023-12-02,2023-12-03]
+   1 Chen Si                6d Wang Chen                      8d   7d CN   xxxx  20+  17+   6+   7+   3+     5    15    72 |00000000|15025956
+   2 Kurashina Kanako       6d Sugita Shuntaro                6d   6d JP   xxxx  12+   8+   5+   3-   7+     4    17    75
+   3 Fujiwara Akiko         6d Ishimura Ryusei                7d   7d JP   xxxx  31+  11+   4+   2+   1-     4    17    70
+   4 Seo Su-Kyeong          6d Ryu Insu                       7d   7d KR   xxxx  10+  16+   3-  15+  12+     4    16    66 |21050381|20401304
+   5 Kaneko Motoko          6d Sato Koya                      6d   6d JP   xxxx  25+   9+   2-   8+  10+     4    15    69
+   6 Matsumoto Miyu         6d Koyama Mitsuaki                6d   6d JP   xxxx  32+  22+   1-  18+  11+     4    12    66
+   7 Tani Yuiko             5d Ozeki Minoru                   7d   6d JP   xxxx  21+  24+  13+   1-   2-     3    16    66 |00000000|18462829
+   8 Lin Hsiaotung          7d Lai Yu-Cheng                   7d   7d TW   xxxx  18+   2-  24+   5-  19+     3    14    69 |15001910|13650813
+   9 Arai Naoko             6d Nishikawa Takatoshi            6d   6d JP   xxxx  14+   5-  17+  11-  25+     3    14    66
+  10 Tanpisuth Weerin       4d Karuehawanit Wichrich          6d   5d TH   xxxx   4-  29+  19+  14+   5-     3    14    65 |19449485|17362378
+  11 Kikkawa Yukiko         5d Yamashita Hiroshi              6d   6d JP   xxxx  26+   3-  27+   9+   6-     3    14    63 |20933869|00000000
+  12 Takeno Manami          6d Sakakura Kenta                 6d   6d JP   xxxx   2-  32+  22+  13+   4-     3    13    68
+  13 Osawa Maya             6d Tsuchimune Yoshiyuki           6d   6d JP   xxxx  23+  15+   7-  12-  18+     3    13    67 |16586504|15062157
+  14 Tomsu Adriana          2d Podpera Lukas                  7d   5d CZ   xxxx   9-  26+  21+  10-  17+     3    12    63 |16225396|13201914
+  15 Marz Manja             4d Obenaus Johannes               6d   5d DE   xxxx  27+  13-  20+   4-  23+     3    12    63 |13062412|13049795
+  16 Wang Seowoo            5d Chiu Jeremy                    7d   6d US   xxxx  29+   4-  18-  28+  21+     3    10    63 |20437307|16950879
+  17 Nakamura Taiko         6d Michikawa Iori                 6d   6d JP   xxxx  19+   1-   9-  24+  14-     2    15    63 |12325698|00000000
+  18 Ho Li-ting             3d Kwa Jie_Hui                    6d   5d SG   xxxx   8-  25+  16+   6-  13-     2    15    59 |18437826|15025351
+  19 Oji Fuki               6d Tamura Yoshihiro               6d   6d JP   xxxx  17-  23+  10-  22+   8-     2    12    65
+  20 Leung Joanne           2d Poltronieri Bruno              4d   3d UK   xxxx   1-  30+  15-  23-  31+     2    12    55 |17037350|16086059
+  21 Yoshida Miho           6d Kuboniwa Takashi               6d   6d JP   xxxx   7-  28+  14-  27+  16-     2    11    60
+  22 Yoshimura Haruna       6d Fukami Shuichi                 6d   6d JP   xxxx  28+   6-  12-  19-  27+     2    11    59
+  23 Suzuki Toki            5d Takayama Ko                    5d   5d JP   xxxx  13-  19-  29+  20+  15-     2    11    59
+  24 Fukushima Akira        5d Hiramatsu Keiki                6d   6d JP   xxxx  30+   7-   8-  17-  28+     2    10    65
+  25 Suenaga Yumeno         5d Suenaga Kunitaka               6d   6d JP   xxxx   5-  18-  32+  30+   9-     2    10    64
+  26 Luk Liya               1d Zhang Tian                     6d   4d US   xxxx  11-  14-  28-  29+  30+     2     9    56 |00000000|20686281
+  27 Yong Qing              4d Yong Jimmy_Cheng_Khai          5d   5d MY   xxxx  15-  31+  11-  21-  22-     1    11    56
+  28 Zhang Yuqing           2d Chen Tianyi                    6d   4d CA   xxxx  22-  21-  26+  16-  24-     1    11    51 |00000000|19850413
+  29 Szychowiak Marianna    1k Majka Marcin                   4d   2d PL   xxxx  16-  10-  23-  26-  32+     1    10    55 |16725709|14713413
+  30 Chankin Vered          2k Fragman Amir                   6d   3d IL   xxxx  24-  20-  31+  25-  26-     1     9    49 |15937482|13625315
+  31 Rodriguez Sabina       5k Vega Jose-Manuel               2d   2k ES   xxxx   3-  27-  30-  32+  20-     1     8    60 |10949246|10513712
+  32 Torres Karime_Vivanco 10k Sanchez Mario_Alberto_Mercado  1d   5k MX   xxxx   6-  12-  25-  31-  29-     0    11    53

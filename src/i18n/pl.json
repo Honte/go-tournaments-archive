@@ -309,6 +309,7 @@
     },
     "attendants": "Top %{0} zawodników",
     "achievements": "Osiągnięcia",
+    "viewGameRecords": "Zobacz zapisy partii (%{0})",
     "bestParticipantsOnly": "Tylko najlepsi zawodnicy",
     "includeUnsurePlayers": "Uwzględnij niepewnych graczy",
     "total": {

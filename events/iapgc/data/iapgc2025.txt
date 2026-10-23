@@ -1,0 +1,35 @@
+; EV[34th International Amateur Pair Go Championship]
+; PC[JP, Osaka]
+; DT[2025-08-09,2025-08-10]
+   1 Chen Si                          7d Hu Yuqing                  8d   8d CN   xxxx   7+   5+   4+   3+   2+     5    19    75 |00000000|13949826
+   2 Seo Sukyeong                     6d Kim Jung-Seon              7d   7d KR   xxxx  30+  12+  13+   6+   1-     4    16    68 |00000000|20537946
+   3 Kaneko Motoko                    6d Sato Koya                  6d   6d JP   xxxx  22+  18+   8+   1-  11+     4    15    74
+   4 Hsu Ni-Ni                        7d Yang Fu_Te                 7d   7d TW   xxxx  28+  17+   1-   8+   9+     4    14    77 |19337549|19333468
+   5 Fujiwara Akiko                   7d Tsuda Yuki                 6d   7d JP   xxxx  29+   1-  18+  10+   7+     4    14    73
+   6 Uchida Yuri                      6d Murakami Yuki              6d   6d JP   xxxx  19+  20+   9+   2-  14+     4    14    68
+   7 Nakamura Taiko                   6d Michikawa Iori             6d   6d JP   xxxx   1-  29+  12+  13+   5-     3    16    68 |12325698|00000000
+   8 Takeno Manami                    6d Sakakura Kenta             6d   6d JP   xxxx  16+  15+   3-   4-  17+     3    16    64
+   9 Osawa Maya                       6d Tsuchimune Yoshiyuki       6d   6d JP   xxxx  23+  10+   6-  17+   4-     3    15    68 |16586504|15062157
+  10 Sugita Kanako                    6d Sugita Shuntaro            6d   6d JP   xxxx  24+   9-  21+   5-  19+     3    13    65
+  11 Aino Natsuki                     5d Okada Kento                6d   6d JP   xxxx  21+  13-  24+  19+   3-     3    13    63
+  12 Nakagawa Mao                     6d Akagi Shiko                6d   6d JP   xxxx  27+   2-   7-  20+  22+     3    13    63
+  13 Makino Akari                     4d Emura Kiko                 7d   6d JP   xxxx  31+  11+   2-   7-  18+     3    12    71 |00000000|20437417
+  14 Maruyama Mio                     4d Nakagawa Michi             6d   5d JP   xxxx  17-  31+  20+  15+   6-     3    11    64
+  15 Li Tina                          4d Zhang Tian                 6d   5d US   xxxx  32+   8-  23+  14-  25+     3    10    58 |00000000|20686281
+  16 Waahlin Lova                     2d Aakerblom Charlie          5d   4d SE   xxxx   8-  32+  17-  26+  21+     3     9    65 |16425849|13286603
+  17 Yukumatsu Miki                   5d Kihara Shunsuke            6d   6d JP   xxxx  14+   4-  16+   9-   8-     2    16    65 |18998364|18986352
+  18 Yong Qing                        4d Lee Shou_Wei               5d   5d MY   xxxx  25+   3-   5-  27+  13-     2    15    57 |00000000|20933704
+  19 Sawada Junko                     5d Miyama Masaaki             6d   6d JP   xxxx   6-  28+  26+  11-  10-     2    13    60
+  20 Bocle Milena                     3d Labouret Florent           6d   5d FR   xxxx  26+   6-  14-  12-  29+     2    13    57 |14362018|16486184
+  21 Sornarra Pinyada                 4d Sornarra Pongsakarn        6d   5d TH   xxxx  11-  25+  10-  23+  16-     2    13    55 |00000000|18949304
+  22 Avram Laura                      3d Dobranis Denis             6d   5d RO   xxxx   3-  23-  31+  24+  12-     2    11    60 |12698620|15350038
+  23 Cao Ngoc-Trang                   2d Fenech Antoine             5d   4d FR   xxxx   9-  22+  15-  21-  30+     2    11    59 |14586693|10349350
+  24 Ente Lisa                        3d Teuber Benjamin            6d   5d DE   xxxx  10-  30+  11-  22-  28+     2    10    58 |10862962|10437174
+  25 Klamecka Natalia                 2k Jurkiewicz Dawid           4d   2d PL   xxxx  18-  21-  30+  28+  15-     2     9    59 |14033239|15650283
+  26 Ohama Kanoko                     3d Nishimura Yusaku           6d   5d JP   xxxx  20-  27+  19-  16-  32+     2     9    53
+  27 Vital Yunuen                     7k Kuschinski Nicolas         3d   2k MX   xxxx  12-  26-  32+  18-  31+     2     7    59 |00000000|15074972
+  28 Gastin Gissella_Soledad          2k Garcia Nahuel              1k   1k AR   xxxx   4-  19-  29+  25-  24-     1    11    56
+  29 Symonenko Viktoriia              7k Yatsenko Dmytro            5d   1k UA   xxxx   5-   7-  28-  32+  20-     1    10    65 |14733631|10286870
+  30 Bukovska Anezka                  1k Jansky Dusan               1k   1k CZ   xxxx   2-  24-  25-  31+  23-     1    10    57 |15874947|15862946
+  31 Sanchez Sharon_Denisse_Guerrero 14k Campos Jorge_Emilio_Nunez 16k  15k MX   xxxx  13-  14-  22-  30-  27-     0    11    51
+  32 Reynolds Emma                    5k Ho Kevin                   1k   3k NZ   xxxx  15-  16-  27-  29-  26-     0    11    45

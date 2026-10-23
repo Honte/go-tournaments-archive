@@ -1,0 +1,57 @@
+website: https://www.pairgo.or.jp/amateur/25th/index_e.htm
+stages:
+  - type: tournament
+    name: WSPGC
+    notes: 1st World Student Pair Go Championship
+    category: wspgc
+    file: wspgc2014.txt
+    dir: 2014/wspgc
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: false
+    games:
+      - 1-3 1:B+R round:3 sgf:2014/wspgc/3-HyunAhKimMoonKyoPark-ShihYunHuYiTienChan.sgf
+      - 6-2 2:W+T round:2 sgf:2014/wspgc/2-ShuangLeiShuoYuan-KarinTsukadaSatoruKebukawa.sgf
+      - 8-3 3:W+R round:1 sgf:2014/wspgc/1-JaruratchataphunJuthamateJangmarkChidsanupong-ShihYunHuYiTienChan.sgf
+  - type: tournament
+    name: IAPGC
+    category: iapgc
+    file: iapgc2014.txt
+    dir: 2014/iapgc
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: false
+    games:
+      - 2-1 1:W+R round:5 sgf:2014/iapgc/5-HsiaotungLinYuChengLai-SooyoungKimJunhakJeon.sgf
+      - 4-8 4:B+R round:5 sgf:2014/iapgc/5-VanessaWongNaiSanChan-KayokoItoiSatoruFukuda.sgf
+      - 4-22 4:B+R round:2 sgf:2014/iapgc/2-VanessaWongChanNaiSan-YokoKawamuraMasahiroHosogi.sgf
+      - 5-11 5:B+R round:5 sgf:2014/iapgc/5-RisaSasakoYukihikoEnomoto-MikaWatanabeShinichiroTakahashi.sgf
+      - 5-15 5:B+R round:2 sgf:2014/iapgc/2-RisaSasakoYukihikoEnomoto-ManjaMarzBenjaminTeuber.sgf
+      - 7-2 2:W+R round:3 sgf:2014/iapgc/3-JunkoTogashiAkioIto-HsiaotungLinYuChengLai.sgf
+      - 9-3 3:W+R round:4 sgf:2014/iapgc/4-HoLiTingJamesLee-MoekaTsujiDaisukeTsunoda.sgf
+      - 13-28 13:B+R round:2 sgf:2014/iapgc/2-KlaraZaloudkovaJanHora-IsabelBarrosPauCarles.sgf
+      - 14-3 3:W+R round:3 sgf:2014/iapgc/3-SanaeKishimotoYusukeWatanabe-MoekaTsujiDaisukeTsunoda.sgf
+      - 16-12 12:W+R round:1 sgf:2014/iapgc/1-YiwenYeDaehyukKo-AkikoFujiwaraKokiIkeda.sgf
+      - 17-11 11:W+5.5 round:4 sgf:2014/iapgc/4-EriYokoyamaKentaSakakura-MikaWatanabeShinichiroTakahashi.sgf
+      - 18-20 20:W+14.5 round:4 sgf:2014/iapgc/4-JanaHollmannKlausPetri-AntoineFenechNgocTrangCao.sgf
+      - 19-10 10:W+T round:5 sgf:2014/iapgc/5-QinDongJunYao-ErikaOsawaTsubasaYamikumo.sgf
+      - 21-19 19:W+T round:1 sgf:2014/iapgc/1-AmySongWeiXu-QinDongJunYao.sgf
+      - 23-16 16:W+R round:5 sgf:2014/iapgc/5-NatasaBosnjakDraganDubakovic-YiwenYeDaehyukKo.sgf
+      - 24-10 10:W+R round:3 sgf:2014/iapgc/3-YanakornAnusiriGreatbodinBuranarachada-ErikaOsawaTsubasaYamikumo.sgf
+      - 26-25 25:W+T round:2 sgf:2014/iapgc/2-AlisonBexfieldSimonBexfield-SzonjaMiskolcziGyorgyCsizmadia.sgf
+      - 27-6 6:W+R round:1 sgf:2014/iapgc/1-ElvinaKalsbergVladimirGorzhalcan-NaokoSaitoMinoruKuramoto.sgf
+      - 27-29 27:B+R round:4 sgf:2014/iapgc/4-ElvinaKalsbergVladimirGorzhalcan-MoniqueGolayFlavienAubelle.sgf
+      - 30-23 23:W+R round:1 sgf:2014/iapgc/1-LieDianaWembrisIsral-NatasaBosnjakDraganDubakovic.sgf
+      - 32-31 31:W+R round:3 sgf:2014/iapgc/3-LilianZavalaOmarZavala-ChiaraBiscaroDavideMinieri.sgf

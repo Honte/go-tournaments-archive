@@ -38,6 +38,7 @@ stages:
       - 8-3 3:W+2.5 round:8 sgf:1990/8-FrankJanssen-HiroshiMiura.sgf
       - 8-11 8:B+4.5 round:3 sgf:1990/3-FrankJanssen-HelmutHasibeder.sgf
       - 8-14 8:B+24.5 round:7 sgf:1990/7-FrankJanssen-ZoranMutabzija.sgf
+      - 8-21 8:B+10.5 round:5 sgf:1990/5-FrankJanssen-JosteinFlood.sgf
       - 9-1 1:W+R round:7 sgf:1990/7-CharlesHuh-HaoChang.sgf
       - 9-5 5:W+R round:8 sgf:1990/8-CharlesHuh-JyhhaoSu.sgf
       - 9-8 9:B+R round:4 sgf:1990/4-CharlesHuh-FrankJanssen.sgf

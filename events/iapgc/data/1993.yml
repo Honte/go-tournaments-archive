@@ -1,0 +1,15 @@
+website: https://www.pairgo.or.jp/db-e/db1_4.htm
+stages:
+  - type: tournament
+    name: IAPGC
+    category: iapgc
+    file: iapgc1993.txt
+    dir: 1993/iapgc
+    notes: 14 countries, no results available
+    scoringColumns:
+      - place
+    breakers:
+      - place
+    findSharedPlaces: false
+    games:
+      - 1-2 1:B+R round:1 sgf:1993/iapgc/1-TomoyumiBabaAkiraYoshida-KanaMakiguchiToshihikoMuraoka.sgf

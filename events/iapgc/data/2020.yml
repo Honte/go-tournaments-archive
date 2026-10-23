@@ -1,0 +1,39 @@
+website: https://www.pairgo.or.jp/amateur/31st/index_e.php
+stages:
+  - type: tournament
+    name: IAPGC
+    category: iapgc
+    file: iapgc2020.txt
+    notes: There were only Japanese pairs due to COVID-19
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: false
+    collapsed: false
+    games:
+      - 1-2 1:B+15.5 round:5 sgf:2020/5-HarukoIwaiSeokBinCho-MotokoKanekoKoyaSato.sgf
+      - 3-9 3:B+R round:5 sgf:2020/5-MoekatsujiMaoYamada-YurikoHiraokaSatoshiHiraoka.sgf
+      - 3-17 3:B+R round:4 sgf:2020/4-MoekaTsujiMaoYamada-SatokoKiuraHirofumiIkeno.sgf
+      - 5-26 5:B+R round:3 sgf:2020/3-MaikoKurashinaShunsukeKihara-ErikoKashiharaYutakaTakabatake.sgf
+      - 6-16 6:B+R round:1 sgf:2020/1-MayaOsawaYoshiyukiTsuchimune-HanaeSakanoShumaSomeya.sgf
+      - 7-2 2:W+3.5 round:4 sgf:2020/4-YuikoTaniMinoruOzeki-MotokoKanekoKoyaSato.sgf
+      - 7-22 7:B+13.5 round:2 sgf:2020/2-YuikoTaniMinoruOzeki-MinaOgakiNaotaMatsumoto.sgf
+      - 9-10 10:W+R round:2 sgf:2020/2-YurikoHiraokaSatoshiHiraoka-KasumiLeeYusukeIto.sgf
+      - 12-1 1:W+1.5 round:1 sgf:2020/1-AkiraFukushimaRyotaroNishimura-HarukoIwaiSeokBinCho.sgf
+      - 13-6 6:W+R round:5 sgf:2020/5-AkikoKezukaKantaHatano-MayaOsawaYoshiyukiTsuchimune.sgf
+      - 14-2 2:W+R round:1 sgf:2020/1-YunaInoueYukiKasahara-MotokoKanekoKoyaSato.sgf
+      - 15-18 18:W+R round:1 sgf:2020/1-MizukiYanoSatoshiTanabe-KiyomiTakehisaMizuoGokuden.sgf
+      - 18-17 17:W+T round:3 sgf:2020/3-KiyomiTakehisaMizuoGokuden-SatokoKiuraHirofumiIkeno.sgf
+      - 19-4 4:W+R round:3 sgf:2020/3-RiekoHinoKeikiHiramatsu-AkikoFujiwaraYukiTsuda.sgf
+      - 20-11 11:W+R round:2 sgf:2020/2-TaikoNakamuraIoriMichikawa-NaokoAraiTakatoshiNishikawa.sgf
+      - 21-8 8:W+44 round:2 sgf:2020/2-HarukiWatanabeRyuHosaka-KanakoKurashinaShuntaroSugita.sgf
+      - 21-26 21:B+R round:5 sgf:2020/5-HarukiWatanabeRyuHosaka-ErikoKashiharaYutakaTakabatake.sgf
+      - 22-15 15:W+T round:5 sgf:2020/5-MinaOgakiNaotaMatsumoto-MizukiYanoSatoshiTanabe.sgf
+      - 25-27 25:B+7.5 round:4 sgf:2020/4-HazukiInoueKeiyaInoue-AkariMakinoTakumiMakino.sgf
+      - 26-24 24:W+5.5 round:4 sgf:2020/4-ErikoKashiharaYutakaTakabatake-YoshinoTakasakiHiroyukiTakasaki.sgf
+      - 29-28 28:W+22.5 round:3 sgf:2020/3-YaekoIzakiMasaoIzaki-IzumiTakehisaYasuhiroKawano.sgf

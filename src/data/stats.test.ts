@@ -183,6 +183,7 @@ describe('calculateStats', () => {
     assert.deepEqual(alice.country, ['PL']);
     assert.deepEqual(alice.opponents, { [players.b.id]: 'Bob Smith' });
     assert.equal(alice.totalAttended, 1);
+    assert.deepEqual(alice.results[0].medals, [['2025'], [], []]);
     assert.equal(alice.bestPlace, 1);
     assert.equal(alice.totalGames, 2);
     assert.equal(alice.totalWon, 2);
@@ -307,6 +308,8 @@ describe('calculateStats', () => {
 
     assert.deepEqual(getCountryAvailableCategories(country, ['u21', 'u16', 'u12']), ['u16', 'u12']);
     assert.deepEqual(filtered.medals, [['2025'], [], []]);
+    assert.deepEqual(filtered.years[2025].results[0].medals, [['2025'], [], []]);
+    assert.deepEqual(filtered.years[2025].results[0].categoriesMedals, { u16: [['2025'], [], []] });
     assert.equal(filtered.bestPlace, 1);
     assert.equal(filtered.totalGames, 2);
     assert.equal(filtered.totalWon, 2);
@@ -362,6 +365,10 @@ describe('calculateStats', () => {
     );
     const player = stats.players[players.a.id];
     const filtered = filterPlayerStatsByCategory(player, 'u16');
+
+    assert.deepEqual(player.results[0].medals, [['2025', '2025'], [], []]);
+    assert.deepEqual(filtered.results[0].medals, [['2025'], [], []]);
+    assert.deepEqual(filtered.results[0].categoriesMedals, { u16: [['2025'], [], []] });
 
     assert.deepEqual(getPlayerAvailableCategories(player, ['u21', 'u16', 'u12']), ['u16', 'u12']);
     assert.deepEqual(filtered.medals, [['2025'], [], []]);

@@ -55,8 +55,10 @@ theme store. See [color guidelines](../../AGENTS.md#color-guidelines) for the co
 
 ## Tournament tables
 
-[TournamentsPage](pages/TournamentsPage.tsx) loads event data for [TournamentsTable](TournamentsTable.tsx).
-Aggregation and sorting live in [libs/tournaments.ts](../libs/tournaments.ts) with colocated tests.
+[TournamentsPage](pages/TournamentsPage.tsx) renders [TournamentsTable](TournamentsTable.tsx) using precomputed
+rows from `/data/tournaments-table.json` (with an event prefix in multi-event mode).
+Aggregation lives in [libs/tournaments.ts](../libs/tournaments.ts) with colocated tests and runs during asset
+generation or on demand in development. The browser never fetches the full `/data/tournaments.json` payload.
 
 Preserve these behavior rules when changing the table:
 

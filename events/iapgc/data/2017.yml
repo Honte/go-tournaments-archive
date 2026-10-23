@@ -1,0 +1,62 @@
+website: https://www.pairgo.or.jp/amateur/28th/index_e.htm
+stages:
+  - type: tournament
+    name: WSPGC
+    notes: 4th World Student Pair Go Championship
+    category: wspgc
+    file: wspgc2017.txt
+    dir: 2017/wspgc
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: false
+    games:
+      - 1-3 1:B+1.5 round:4 sgf:2017/wspgc/4-HyunjiChaeNamgiYoon-ShanJinSangpengHe.sgf
+      - 1-6 1:B+T round:2 sgf:2017/wspgc/2-HyunjiChaeNamgiYoon-HarukoIwaiDaikiYokoe.sgf
+      - 8-7 7:W+R round:2 sgf:2017/wspgc/2-NikaPetrashevskaValerianBouette-KanakoKurashinaRyoheiKonno.sgf
+      - 9-15 9:B+16.5 round:4 sgf:2017/wspgc/4-MinaNOmuraKazukiTogino-JennaJansenLionelZhang.sgf
+      - 10-6 6:W+R round:1 sgf:2017/wspgc/1-DaiHanQinkaiShen-HarukoIwaiDaikiYokoe.sgf
+      - 12-4 4:W+R round:3 sgf:2017/wspgc/3-DafneRiosSebastianRios-AkikoFujiwaraMinoruOzeki.sgf
+      - 13-2 2:W+R round:1 sgf:2017/wspgc/1-JuthamateJaruratchataphunChidsanupongJangmark-SunahLeeJongwookPark.sgf
+      - 16-15 15:W+T round:3 sgf:2017/wspgc/3-NieWanyunTeoEngHwee-JennaJansenLionelZhang.sgf
+  - type: tournament
+    name: IAPGC
+    category: iapgc
+    file: iapgc2017.txt
+    dir: 2017/iapgc
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: false
+    games:
+      - 1-23 1:B+R round:2 sgf:2017/iapgc/2-MarieUnegawaYutaTakizawa-LisaEnteTorstenKnauf.sgf
+      - 2-1 1:W+T round:5 sgf:2017/iapgc/5-SeungheeRyuSangbinLee-MarieUnegawaYutaTakizawa.sgf
+      - 2-3 2:B+4.5 round:4 sgf:2017/iapgc/4-RyuSeungheeSangbinLee-YimingWuBangqiaoZhao.sgf
+      - 4-7 4:B+R round:5 sgf:2017/iapgc/5-HungPingLinShengChiehLo-YasukoImamuraKikoEmura.sgf
+      - 8-7 7:W+R round:3 sgf:2017/iapgc/3-NaokoAraiMinoruKuramoto-YasukoImamuraKikoEmura.sgf
+      - 8-9 8:B+23.5 round:4 sgf:2017/iapgc/4-NaokoAraiMinoruKuramoto-NataliaKovalevaDmitrijSurin.sgf
+      - 8-25 8:B+R round:1 sgf:2017/iapgc/1-NaokoAraiMinoruKuramoto-JennyRadcliffeFrancisRoads.sgf
+      - 9-2 2:W+R round:2 sgf:2017/iapgc/2-NataliaKovalevaDmitrijSurin-SeungheeRyuSangbinLee.sgf
+      - 10-3 3:W+R round:1 sgf:2017/iapgc/1-ManamiTakenoShingoOno-YimingWuBangqiaoZhao.sgf
+      - 13-21 13:B+17.5 round:4 sgf:2017/iapgc/4-GabriellaSuJustinTeng-IsareeMahaphaksopholphisanNattawatPhokha.sgf
+      - 14-8 8:W+R round:2 sgf:2017/iapgc/2-KlaraZaloudkovaJanHora-NaokoAraiMinoruKuramoto.sgf
+      - 14-28 14:B+R round:4 sgf:2017/iapgc/4-KlaraZaloudkovaJanHora-AnnyChenAaronChen.sgf
+      - 19-24 19:B+R round:2 sgf:2017/iapgc/2-KwanNiYinYeungKuenYung-TungalagRavjirErdensukhOd.sgf
+      - 23-28 23:B+T round:1 sgf:2017/iapgc/1-LisaEnteTorstenKnauf-AnnyChenAaronChen.sgf
+      - 23-30 23:B+R round:5 sgf:2017/iapgc/5-LisaEnteTorstenKnauf-ChangXinChunChenChung.sgf
+      - 24-28 24:B+T round:5 sgf:2017/iapgc/5-TungalagRavjirOdErdensukh-AnnyChenAaronChen.sgf
+      - 25-18 18:W+12.5 round:3 sgf:2017/iapgc/3-JennyRadcliffeFrancisRoads-ErikoKashiharaYuyaUsuki.sgf
+      - 26-27 26:B+R round:5 sgf:2017/iapgc/5-NatasaBosnjakDraganDubakovic-NgocTrangCaoAntoineFenech.sgf
+      - 28-31 28:B+8.5 round:3 sgf:2017/iapgc/3-AnnyChenAaronChen-ClaudiaFloresSebastianMontiel.sgf
+      - 30-32 30:B+R round:3 sgf:2017/iapgc/3-ChangXinChunChenChung-MartaMorrisonRobertoMorrison.sgf
+      - 31-13 13:W+R round:1 sgf:2017/iapgc/1-ClaudiaFloresSebastianMontiel-GabriellaSuJustinTeng.sgf

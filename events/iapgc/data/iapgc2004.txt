@@ -1,0 +1,36 @@
+; EV[15th International Amateur Pair Go Championship]
+; PC[JP, Tokyo]
+; DT[2004-11-13,2004-11-14]
+;https://www.pairgo.or.jp/amateur/15th/index_e.htm
+   1 Jo Sae-byol           7d Ri Pong-il          7d   7d KP   xxxx  32+   4+  12+   5+   2+     5    15    71 |10962413|12037509
+   2 Kim Ji-Eun            6d Ha Sung-Bong        7d   7d KR   xxxx  10+   3+   8+   7+   1-     4    18    77 |00000000|15037154
+   3 Hiraoka Yuriko        5d Hiraoka Satoshi     8d   7d JP   xxxx   6+   2-  10+  17+   9+     4    16    75 |00000000|10801780
+   4 Higuchi Naoko         6d Sogabe Toshiyuki    7d   7d JP   xxxx  18+   1-  20+  11+   7+     4    15    72
+   5 Arai Naoko            5d Taga Bungo          6d   6d JP   xxxx  19+  13+  17+   1-   8+     4    15    71
+   6 Zhang Yan-Qi          5d Han Hui             6d   6d CN   xxxx   3-  22+  23+  21+  14+     4    13    64
+   7 Kanai Kazuko          6d Kanai Hirotatsu     6d   6d JP   xxxx  16+   9+  14+   2-   4-     3    17    71
+   8 Yamamoto Minako       6d Tanaka Nobuhira     6d   6d JP   xxxx  30+  11+   2-  12+   5-     3    15    70
+   9 Sato Momoyo           6d Hizawa Norihiro     5d   6d JP   xxxx  24+   7-  15+  13+   3-     3    15    67
+  10 Morikawa Sae          5d Ono Teppei          6d   6d JP   xxxx   2-  19+   3-  22+  24+     3    14    69
+  11 Tokunaga Satsuki      6d Hamanishi Yasuo     6d   6d JP   xxxx  22+   8-  16+   4-  14+     3    15    65
+  12 Fukasaka Fuuko        4d Oota Haruo          8d   6d JP   xxxx  28+  15+   1-   8-  18+     3    14    63
+  13 Missingham Joanne     3d Chen Yu-Ta          5d   4d TW   xxxx  20+   5-  18+   9-  21+     3    13    67 |15050904|00000000
+  14 Kovaleva Natalia      3d Lazarev Alexej      6d   5d RU   xxxx  29+  23+   7-  25+   6-     3    12    61 |10537087|10374386
+  15 Horbunova Yelyzaveta  2k Pliushch Yurii      3d   1d UA   xxxx  27+  12-   9-  23+  19+     3    11    65 |10501084|10449230
+  16 Sekimoto Mihioko      5d Kozuki Takeshi      6d   6d JP   xxxx   7-  26+  11-  27+  25+     3    11    62 |00000000|10401820
+  17 Saito Mikiko          5d Kan Satoshi         6d   6d JP   xxxx  26+  21+   5-   3-  11-     2    15    67
+  18 Waldron Jean          6k Waldron Philip      5d   1k CA   xxxx   4-  28+  13-  20+  12-     2    13    63 |10950423|00000000
+  19 Burrall Kristen       2d Zhou Yuan           7d   5d US   xxxx   5-  10-  26+  29+  15-     2    13    58 |15098886|13450712
+  20 Iacob Liliana         3k Toma Iulian         3d   1d RO   xxxx  13-  24+   4-  18-  28+     2    12    60 |10337459|10398410
+  21 Zaloudkova Klara      1d Dach Zbynek         4d   3d CZ   xxxx  25+  17-  29+   6-  13-     2    12    60 |10798106|10233872
+  22 Rungalagu Ravjir      1d Oyutbileg Tsendjav  1d   1d MN   xxxx  11-   6-  30+  10-  31+     2    12    58
+  23 Thi-Hong-Anh Nguyen   1d Le Mai              2d   2d VN   xxxx  31+  14-   6-  15-  29+     2    12    53
+  24 Robotic Tea           9k Smud Mladen         2d   4k HR   xxxx   9-  20-  28+  31+  10-     2    10    58 |12598014|10398982
+  25 Phease Yucong         3d Phease Edwin        1d   2d NZ   xxxx  21-  31+  27+  14-  16-     2    10    54 |15098908|15049947
+  26 Doncker Ingrid_de     2k Bogaerts Jan        4d   2d BE   xxxx  17-  16-  19-  30+  27+     2     9    58 |10250647|10286617
+  27 Chai Jackie           3k Roads Francis       4d   1d UK   xxxx  15-  30+  25-  16-  26-     1    11    49 |10586653|10286034
+  28 Kozlik Alina          8k Suponev Alexandr    1d   4k BY   xxxx  12-  18-  24-  32+  20-     1     9    58 |00000000|12349205
+  29 Tombarello Anne       1d Hanotin Denis       2d   2d FR   xxxx  14-  32+  21-  19-  23-     1     9    58 |10362572|10349570
+  30 Shia Harfina          8k Sugiharta Wicky     3k   5k ID   xxxx   8-  27-  22-  26-  32+     1     8    56
+  31 Yamashita Miyuki      5k Brito Geraldo       1d   2k BR   xxxx  23-  25-  32+  24-  22-     1     8    53
+  32 Hyoju Beni            7k Sowal Narendra      1d   3k NP   xxxx   1-  29-  31-  28-  30-     0     9    49 |00000000|13650824

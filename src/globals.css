@@ -32,6 +32,9 @@
   --color-archive-lose: #d34b43;
   --color-archive-draw: #d5bb20;
   --color-archive-unresolved: #8582b5;
+  --color-archive-medal-gold: #fece43;
+  --color-archive-medal-silver: #c0c0c0;
+  --color-archive-medal-bronze: #cd7f32;
 
   /* Neutral roles share the page, surface, and text palette. */
   --color-archive-surface-muted: color-mix(in oklab, var(--color-archive-text) 5%, var(--color-archive-page));

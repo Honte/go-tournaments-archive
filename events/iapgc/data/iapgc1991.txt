@@ -1,0 +1,17 @@
+; EV[2nd International Amateur Pair Go Championship]
+;https://www.pairgo.or.jp/db-e/db1_2.htm
+; PC[JP, Tokyo]
+; DT[1991-11-24,1991-11-24]
+;32 pairs 12 countries CN,TW,HK,JP,KR,FR,DE,NL,UK(Sue Paterson,Jim Barty),SU(Irina Guskova,Alexej Lazarev),CA,US
+; teams names in ranka 1992
+; 1st round UK-SU 0-1
+; 40m+30s byo
+1 Zhang Chenghua     31k Xie Yuguo       31k 31k CN xxx 2+ 1
+2 Minatogawa Sachiko 31k Komori Shoji    31k 31k JP xxx 1- 2
+3 Kanai Tomoko       31k Kanazawa Toei   31k 31k JP xxx 0= 3
+4 Baba Tomoyumi      31k Yoshida Akira   31k 31k JP xxx 0= 4
+5 Fukazawa Yuriko    31k Hiraoka Satoshi 31k 31k JP xxx 0= 5
+6 Cheng Shu-Chin     31k Chou Kou_Ping   31k 31k TW xxx 0= 6
+7 Kan Ying           31k Kan Wai_Shui    31k 31k HK xxx 0= 7
+8 Tamura Fusako      31k Gokuden Mizuo   31k 31k JP xxx 0= 8
+

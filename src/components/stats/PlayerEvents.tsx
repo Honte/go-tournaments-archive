@@ -77,13 +77,13 @@ export function PlayerEvents({ event, player, translations }: PlayerEventsProps)
   }, [player]);
 
   const hasRank = data.some((row) => row.rank);
-  const hasPairsRank = event.pairs && data.some((row) => row.pairRank);
+  const hasPairsRank = Boolean(event.pairs) && data.some((row) => row.pairRank);
   const hasMultipleNames = data.some((row) => row.name !== player.name);
   const hasMultipleCountries = new Set(data.map((row) => row.country)).size > 1;
   const hasMultipleStages = new Set(data.map((row) => getStageName(row.stage, translations))).size > 1;
   const hasDraws = data.some((row) => row.drawn > 0);
   const hasUnresolved = data.some((row) => row.unresolved > 0);
-  const hasSgfs = event.generateSgfs && data.some((row) => row.sgfs > 0);
+  const hasSgfs = Boolean(event.generateSgfs) && data.some((row) => row.sgfs > 0);
 
   const columns = useMemo<StatsColumnDef<EventRow>[]>(
     () => [

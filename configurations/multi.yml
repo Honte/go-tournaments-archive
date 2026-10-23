@@ -5,6 +5,8 @@ events:
     prefix: kpmc
   - id: wwgc
     prefix: wwgc
+  - id: iapgc
+    prefix: iapgc
   - id: egc
     prefix: egc
   - id: epc

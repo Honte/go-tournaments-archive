@@ -1,0 +1,36 @@
+; EV[29th International Amateur Pair Go Championship]
+;https://www.pairgo.or.jp/amateur/29th/index_e.htm
+; PC[JP, Tokyo]
+; DT[2018-12-01,2018-12-02]
+   1 Jeon Yujin             6d Hur Youngrak          7d   7d KR   xxxx  23+   8+   7+   4+   2+     5    16    75
+   2 Unegawa Marie          6d Takizawa Yuta         7d   7d JP   xxxx  14+  17+   3+  12+   1-     4    17    71
+   3 Chen Chien-Yu          7d Tsai Yun-Che          7d   7d TW   xxxx   9+   5+   2-  19+  10+     4    16    72
+   4 Kurashina Kanako       6d Okada Kento           6d   6d JP   xxxx  25+   6+  18+   1-  13+     4    16    69
+   5 Chen Manqi             5d Wang Wenqi            6d   6d CN   xxxx  13+   3-  21+   7+  11+     4    15    70
+   6 Tsuji Moeka            6d Hoshiai Shingo        6d   6d JP   xxxx  26+   4-  15+   8+  12+     4    15    64
+   7 Oji Fuki               6d Tokudomi Kenji        8d   7d JP   xxxx  19+  10+   1-   5-  20+     3    16    70
+   8 Oda Ayako              6d Nagayo Kazumori       6d   6d JP   xxxx  30+   1-  22+   6-  17+     3    14    66 |00000000|14837163
+   9 Sum Dawn               3d Yong Lu               5d   4d SG   xxxx   3-  16+  23+  10-  21+     3    14    63
+  10 Wang Sophia            3d Huang Alan            7d   5d US   xxxx  24+   7-  29+   9+   3-     3    13    66 |00000000|19398973
+  11 Nakamura Taiko         6d Michikawa Iori        6d   6d JP   xxxx  22+  20-  14+  18+   5-     3    13    66 |12325698|00000000
+  12 Arai Naoko             6d Taga Bungo            6d   6d JP   xxxx  31+  21+  20+   2-   6-     3    13    66
+  13 Takeno Manami          6d Ono Shingo            7d   7d JP   xxxx   5-  30+  24+  20+   4-     3    13    64
+  14 Hollmann Jana          1d Petri Klaus           4d   3d DE   xxxx   2-  27+  11-  23+  18+     3    12    66 |10950071|10662157
+  15 Hamasaki Asuka         5d Ishida Taro           6d   6d JP   xxxx  17-  31+   6-  26+  22+     3    11    60
+  16 Kinouchi Atsuko        6d Takahashi Shinichiro  7d   7d JP   xxxx  18-   9-  25+  28+  19+     3    10    62
+  17 Komatsu Yuki           5d Komatsu Tatsuhiro     6d   6d JP   xxxx  15+   2-  19-  24+   8-     2    14    66
+  18 Sekimoto Mihoko        5d Uchida Naoya          6d   6d JP   xxxx  16+  29+   4-  11-  14-     2    14    60
+  19 Roelofs Yvonne         4k Eijkhout Michiel      5d   1d NL   xxxx   7-  28+  17+   3-  16-     2    13    66 |10725792|10486410
+  20 Ente Lisa              3d Teuber Benjamin       6d   5d DE   xxxx  27+  11+  12-  13-   7-     2    13    65 |10862962|10437174
+  21 Prathoomwan Aroonkorn  3d Tanapatsopol Vorawat  5d   4d TH   xxxx  28+  12-   5-  29+   9-     2    12    61 |00000000|17301240
+  22 Phease Yucong          3d Zhou Patrick          5d   4d NZ   xxxx  11-  25+   8-  27+  15-     2    12    59 |15098908|00000000
+  23 Gallant Lydia          6k Campagnie Remi        7d   1d CA   xxxx   1-  32+   9-  14-  29+     2    12    58 |00000000|15449269
+  24 Surma Guzel            2d Tychko Igor           5d   4d RU   xxxx  10-  26+  13-  17-  31+     2    11    59 |12586134|14025671
+  25 Arundina Miranti       1d Putra Daniel          5d   3d ID   xxxx   4-  22-  16-  30+  27+     2    11    57 |15986157|14725425
+  26 Symonenko Viktoriia    6k Pankin Yevhen         4d   1k UA   xxxx   6-  24-  32+  15-  28+     2    10    54 |14733631|12586871
+  27 Lim Chai-Hui           1d Siddeq-Bin Asmad      1d   1d BN   xxxx  20-  14-  31+  22-  25-     1    10    57 |00000000|16998234
+  28 Rodriguez Sabina       7k Vega Jose-Manuel      1d   3k ES   xxxx  21-  19-  30+  16-  26-     1    10    54 |10949246|10513712
+  29 Regginou Nika         11k Regginos Dimitris     2d   5k CY   xxxx  32+  18-  10-  21-  23-     1     9    58 |14613148|13225795
+  30 Kalin Selda            5k Kuntay Altan          3d   1k TR   xxxx   8-  13-  28-  25-  32+     1     9    55 |16825127|15025307
+  31 Gluskeviciute Simona   8k Petrauskas Albertas   1d   4k LT   xxxx  12-  15-  27-  32+  24-     1     9    52 |14286756|12749528
+  32 Alpizar_Viquez Andrea 12k Vargas Juan           1k   6k CR   xxxx  29-  23-  26-  31-  30-     0     7    49 |18949315|16325078

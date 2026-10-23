@@ -1,0 +1,28 @@
+{
+  "site": {
+    "name": "International Amateur Pair Go Championships Archive",
+    "acronym": "IAPGC",
+    "description": "Archive of all International Amateur Pair Championships tournaments",
+    "yearDescription": "Results of IAPGC %{0}",
+    "allTimeStatsDescription": "All-time statistics of all International Amateur Pair Go Championships participants",
+    "playerStatsDescription": "Participation statistics of %{0} in all International Amateur Pair Go Championships events"
+  },
+  "details": {
+    "goToWebsite": "Go to IAPGC %{0} website"
+  },
+  "winners": {
+    "first": "Pair Champion"
+  },
+  "categories": {
+    "full": {
+      "iapgc": "International Amateur Pair Go",
+      "wspgc": "World Student Pair Go",
+      "wmsg": "WMSG Mixed Pairs"
+    },
+    "short": {
+      "iapgc": "IAPGC",
+      "wspgc": "WSPGC",
+      "wmsg": "WMSG"
+    }
+  }
+}

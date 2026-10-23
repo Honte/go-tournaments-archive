@@ -309,6 +309,7 @@
     },
     "attendants": "Top %{0} participants",
     "achievements": "Achievements",
+    "viewGameRecords": "View game records (%{0})",
     "bestParticipantsOnly": "Best participants only",
     "includeUnsurePlayers": "Include unconfirmed players",
     "total": {

@@ -1,0 +1,16 @@
+website: https://www.pairgo.or.jp/topics-e/5ama1.htm
+stages:
+  - type: tournament
+    name: IAPGC
+    category: iapgc 
+    file: iapgc1994.txt
+    scoringColumns:
+      - place
+      - wins
+    breakers:
+      - place
+    columns:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 2-1 1:W+R round:5 sgf:1994/5-JungwonLeeSungsooPark-YukariUmezawaYukihideSakai.sgf

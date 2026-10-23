@@ -3,6 +3,7 @@ import path from 'node:path';
 import type { Tournament } from '@/schema/data';
 import type { EventContext, EventData } from '@/schema/event';
 import type { Locale, Translations } from '@/i18n/consts';
+import { buildTournamentTables } from '@/libs/tournaments';
 import { loadTournamentDescription } from '@/data/description';
 import { readEventPlayersFile } from '@/data/eventPlayers';
 import { buildSearchIndex } from '@/data/search';
@@ -34,6 +35,7 @@ async function buildEventDataAssets({
 
   await Promise.all([
     writeJson(outputDir, 'tournaments.json', tournaments),
+    writeJson(outputDir, 'tournaments-table.json', buildTournamentTables(event, tournaments)),
     writeJson(outputDir, path.join('stats', 'summary.json'), summary),
     writeJson(outputDir, path.join('stats', 'players.json'), stats.players),
     writeJson(outputDir, path.join('stats', 'countries.json'), stats.countries),

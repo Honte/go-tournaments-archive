@@ -151,7 +151,7 @@ function parsePlayerRow(row: string[]): H9Row {
   return {
     player: {
       place: Number(place),
-      name: normalizePlayerName(name),
+      name: name === '_' ? '' : normalizePlayerName(name),
       surname: normalizePlayerName(surname),
       rank: normalizeRank(rank),
       country: normalizeCountryCode(country) ?? 'XX',
@@ -273,7 +273,7 @@ function parsePairMember(values: string[], country: string, pin?: string): H9Mem
 
   return {
     surname: normalizePlayerName(surname),
-    name: normalizePlayerName(name),
+    name: name === '_' ? '' : normalizePlayerName(name),
     rank: normalizeRank(rank),
     country: normalizeCountryCode(country),
     egd: pin === undefined ? undefined : Number(pin),

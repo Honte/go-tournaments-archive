@@ -40,13 +40,13 @@ export function MedalTable<T>({
             {nameHeader ?? t('table.player')}
           </th>
           <th className="px-0">
-            <FaMedal className="inline" fill="#fece43" title={t('medals.gold')} />
+            <FaMedal className="inline text-archive-medal-gold" title={t('medals.gold')} />
           </th>
           <th className="px-0">
-            <FaMedal className="inline" fill="silver" title={t('medals.silver')} />
+            <FaMedal className="inline text-archive-medal-silver" title={t('medals.silver')} />
           </th>
           <th className="px-0">
-            <FaMedal className="inline" fill="#CD7F32" title={t('medals.bronze')} />
+            <FaMedal className="inline text-archive-medal-bronze" title={t('medals.bronze')} />
           </th>
         </tr>
       </thead>

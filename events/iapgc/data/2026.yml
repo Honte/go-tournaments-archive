@@ -1,0 +1,43 @@
+website: https://www.pairgo.or.jp/pgwf/2026/index_en.php
+stages:
+  - type: tournament
+    name: WSPGC
+    category: wspgc
+    notes: 10th World Student Pair Go Championship - Matsuda Cup
+    file: wspgc2026.txt
+    dir: 2026/wspgc
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: false
+    games:
+      - 1-2 1:B+R round:3 sgf:2026/wspgc/3-HuierXuZhengheTang-ShuHuiLinFuTeYang.sgf
+      - 4-6 4:B+R round:1 sgf:2026/wspgc/1-SaraHaraokaMasanariOtobe-QingYongJiaJunNg.sgf
+      - 7-5 5:W+R round:2 sgf:2026/wspgc/2-NaSeheeKihyeonPark-AdrianaPodperovaMihailoJacimovic.sgf
+  - type: tournament
+    name: IAPGC
+    category: iapgc
+    file: iapgc2026.txt
+    dir: 2026/iapgc
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: false
+    games:
+      - 1-2 1:B+R round:5 sgf:2026/iapgc/5-HyungiChaeJungSeonKim-MayaOsawaYoshiyukiTsuchimune.sgf
+      - 3-20 3:B+R round:3 sgf:2026/iapgc/3-SiChenYuqingHu-TomokaChidaRyuseiIshimura.sgf
+      - 11-9 9:W+R round:2 sgf:2026/iapgc/2-YurikoHiraokaSatoshiHiraoka-JirapaKiattikulkajornWichrichKaruehawanit.sgf
+      - 15-26 15:B+R round:4 sgf:2026/iapgc/4-MirtaMedakStjepanMedak-ShinoKawauchiShinTakahashi.sgf
+      - 16-24 16:B+R round:4 sgf:2026/iapgc/4-JinlingPeiWenOu-MisuzuYanagisawaTakuyaOkamoto.sgf
+      - 19-13 13:W+10.5 round:5 sgf:2026/iapgc/5-LovaWaahlinCharlieAakerblom-TaikoNakamuraIoriMichikawa.sgf
+      - 21-31 21:B+R round:1 sgf:2026/iapgc/1-KayokoItoiSatoruFukuda-CherryHuBinHu.sgf

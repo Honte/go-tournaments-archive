@@ -1,0 +1,113 @@
+website:
+  - http://www.pairgo.or.jp/wmsg/2008/
+  - https://www.eurogofed.org/results/world/wmsg2008/wmsg2008pairs.htm
+stages:
+  - type: tournament
+    name: IAPGC
+    category: iapgc
+    file: iapgc2008.txt
+    dir: 2008/iapgc
+    notes: 4 groups, top 2 per group qualified to playoff (with pro players). Korean pair was the winner because they won against PRO pair. Remaining 7 playoff pairs fought for 2nd place. ping = place in group. Group tables available at eurogofed link.
+    scoringColumns:
+      - wins
+      - sodos
+      - ping
+      - group
+      - place
+    breakers:
+      - place
+    columns:
+      - ping
+      - wins
+      - sodos
+      - group
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+5.5 round:2 sgf:2008/iapgc/2-ShinYoungKimHongSeokUi-SaeByolJoTaeWonJo.sgf
+      - 1-19 1:B+R round:6 sgf:2008/iapgc/6-ShinYoungKimHongSeokUi-AnnikaPiiroinenOlliLounela.sgf
+      - 1-30 1:B+R round:7 sgf:2008/iapgc/7-ShinYoungKimHongSeokUi-ChiaraRonchiMicheleBaldi.sgf
+      - 2-10 2:B+R round:4 sgf:2008/iapgc/4-SaeByolJoTaeWonJo-NataliaKovalevaDmitrijSurin.sgf
+      - 2-19 2:B+R round:7 sgf:2008/iapgc/7-SaeByolJoTaeWonJo-AnnikaPiiroinenOlliLounela.sgf
+      - 2-26 2:B+R round:3 sgf:2008/iapgc/3-SaeByolJoTaeWonJo-ValentinaShkugalAlexandrSuponev.sgf
+      - 3-2 2:W+R round:10 sgf:2008/iapgc/10-RitaPocsaiTiborPocsai-SaeByolJoTaeWonJo.sgf
+      - 3-7 7:W+R round:2 sgf:2008/iapgc/2-RitaPocsaiTiborPocsai-YurikoHiraokaSatoshiHiraoka.sgf
+      - 3-12 3:B+R round:5 sgf:2008/iapgc/5-RitaPocsaiTiborPocsai-MarieClaireChaineJeanMichel.sgf
+      - 3-16 3:B+R round:4 sgf:2008/iapgc/4-RitaPocsaiTiborPocsai-ManjaMarzMichaelMarz.sgf
+      - 3-20 3:B+R round:6 sgf:2008/iapgc/6-RitaPocsaiTiborPocsai-KarenPleitKoenPomstra.sgf
+      - 4-9 4:B+R round:6 sgf:2008/iapgc/6-JitkaBartovaJanHora-JasmineYanRickyZhao.sgf
+      - 4-18 4:B+4.5 round:7 sgf:2008/iapgc/7-JitkaBartovaJanHora-JieLiXiaJieLinXia.sgf
+      - 5-8 8:W+R round:7 sgf:2008/iapgc/7-MariiaZakharchenkoYuriiPliushch-TungalagRavjirSansarTsolmon.sgf
+      - 5-17 5:B+T round:6 sgf:2008/iapgc/6-MariiaZakharchenkoYuriiPliushch-ChuyangLiuMinggaoLiang.sgf
+      - 6-4 6:B+R round:5 sgf:2008/iapgc/5-XiangryuWangLiRongLiu-JitkaBartovaJanHora.sgf
+      - 6-9 6:B+R round:2 sgf:2008/iapgc/2-XiangryuWangLiRongLiu-JasmineYanRickyZhao.sgf
+      - 7-12 7:B+R round:4 sgf:2008/iapgc/4-YurikoHiraokaSatoshiHiraoka-MarieClaireChaineJeanMichel.sgf
+      - 7-20 7:B+R round:5 sgf:2008/iapgc/5-YurikoHiraokaSatoshiHiraoka-KarenPleitKoenPomstra.sgf
+      - 7-23 7:B+R round:7 sgf:2008/iapgc/7-YurikoHiraokaSatoshiHiraoka-MonikaCernikovaRudolfKrusina.sgf
+      - 7-27 7:B+R round:6 sgf:2008/iapgc/6-YurikoHiraokaSatoshiHiraoka-LaimuteKurieneGintautasMiselis.sgf
+      - 8-15 15:W+3.5 round:6 sgf:2008/iapgc/6-TungalagRavjirSansarTsolmon-PattrapornPhuriwangsakulKamonSantipojana.sgf
+      - 8-17 8:B+R round:4 sgf:2008/iapgc/4-TungalagRavjirSansarTsolmon-ChuyangLiuMinggaoLiang.sgf
+      - 8-24 8:B+R round:1 sgf:2008/iapgc/1-TungalagRavjirSansarTsolmon-GemmaBochacaDimasCabre.sgf
+      - 10-1 1:W+R round:3 sgf:2008/iapgc/3-NataliaKovalevaDmitrijSurin-ShinYoungKimHongSeokUi.sgf
+      - 11-5 5:W+T round:5 sgf:2008/iapgc/5-ChingChiaLinYuChiWang-MariiaZakharchenkoYuriiPliushch.sgf
+      - 11-8 8:W+6.5 round:3 sgf:2008/iapgc/3-ChingChiaLinYuChiWang-TungalagRavjirSansarTsolmon.sgf
+      - 11-15 11:B+R round:4 sgf:2008/iapgc/4-ChingChiaLinYuChiWang-PattrapornPhuriwangsakulKamonSantipojana.sgf
+      - 11-17 11:B+R round:2 sgf:2008/iapgc/2-ChingChiaLinYuChiWang-ChuyangLiuMinggaoLiang.sgf
+      - 12-23 12:B+16.5 round:3 sgf:2008/iapgc/3-MarieClaireChaineJeanMichel-MonikaCernikovaRudolfKrusina.sgf
+      - 12-27 12:B+22.5 round:2 sgf:2008/iapgc/2-MarieClaireChaineJeanMichel-LaimuteKurieneGintautasMiselis.sgf
+      - 13-4 4:W+T round:1 sgf:2008/iapgc/1-NingHuColinGrierson-JitkaBartovaJanHora.sgf
+      - 13-6 6:W+R round:4 sgf:2008/iapgc/4-NingHuColinGrierson-XiangryuWangLiRongLiu.sgf
+      - 14-1 1:W+R round:4 sgf:2008/iapgc/4-KirstyHealeyMatthewMacfadyen-ShinYoungKimHongSeokUi.sgf
+      - 15-5 5:W+R round:1 sgf:2008/iapgc/1-PattrapornPhuriwangsakulKamonSantipojana-MariiaZakharchenkoYuriiPliushch.sgf
+      - 15-17 17:W+R round:5 sgf:2008/iapgc/5-PattrapornPhuriwangsakulKamonSantipojana-ChuyangLiuMinggaoLiang.sgf
+      - 15-24 15:B+R round:2 sgf:2008/iapgc/2-PattrapornPhuriwangsakulKamonSantipojana-GemmaBochacaDimasCabre.sgf
+      - 15-28 15:B+R round:3 sgf:2008/iapgc/3-PattrapornPhuriwangsakulKamonSantipojana-ValerijaGenchevaTeodorNedev.sgf
+      - 16-7 7:W+R round:3 sgf:2008/iapgc/3-ManjaMarzMichaelMarz-YurikoHiraokaSatoshiHiraoka.sgf
+      - 16-27 16:B+36.5 round:1 sgf:2008/iapgc/1-ManjaMarzMichaelMarz-LaimuteKurieneGintautasMiselis.sgf
+      - 18-6 6:W+R round:3 sgf:2008/iapgc/3-JieLiXiaJieLinXia-XiangryuWangLiRongLiu.sgf
+      - 18-9 9:W+R round:4 sgf:2008/iapgc/4-JieLiXiaJieLinXia-JasmineYanRickyZhao.sgf
+      - 18-21 18:B+R round:2 sgf:2008/iapgc/2-JieLiXiaJieLinXia-AlejandraGuzmanJuanPachonCalderon.sgf
+      - 20-12 12:W+R round:1 sgf:2008/iapgc/1-KarenPleitKoenPomstra-MarieClaireChaineJeanMichel.sgf
+      - 21-6 6:W+R round:7 sgf:2008/iapgc/7-AlejandraGuzmanJuanPachonCalderon-XiangryuWangLiRongLiu.sgf
+      - 21-13 13:W+R round:3 sgf:2008/iapgc/3-AlejandraGuzmanJuanPachonCalderon-NingHuColinGrierson.sgf
+      - 22-1 1:W+R round:5 sgf:2008/iapgc/5-DanielaSabanMartinSantiagoMiranda-ShinYoungKimHongSeokUi.sgf
+      - 22-2 2:W+R round:6 sgf:2008/iapgc/6-DanielaSabanMartinSantiagoMiranda-SaeByolJoTaeWonJo.sgf
+      - 22-14 14:W+R round:1 sgf:2008/iapgc/1-DanielaSabanMartinSantiagoMiranda-KirstyHealeyMatthewMacfadyen.sgf
+      - 25-6 6:W+R round:6 sgf:2008/iapgc/6-IvanaStojanovicLukaStojanovic-XiangryuWangLiRongLiu.sgf
+      - 25-21 21:W+R round:5 sgf:2008/iapgc/5-IvanaStojanovicLukaStojanovic-AlejandraGuzmanJuanPachonCalderon.sgf
+      - 26-1 1:W+71.5 round:1 sgf:2008/iapgc/1-ValentinaShkugalAlexandrSuponev-ShinYoungKimHongSeokUi.sgf
+      - 27-3 3:W+9.5 round:7 sgf:2008/iapgc/7-LaimuteKurieneGintautasMiselis-RitaPocsaiTiborPocsai.sgf
+      - 28-11 11:W+R round:7 sgf:2008/iapgc/7-ValerijaGenchevaTeodorNedev-ChingChiaLinYuChiWang.sgf
+      - 29-6 6:W+32.5 round:1 sgf:2008/iapgc/1-CatharinaJoubertJuliusPaulu-XiangryuWangLiRongLiu.sgf
+      - 30-10 10:W+R round:2 sgf:2008/iapgc/2-ChiaraRonchiMicheleBaldi-NataliaKovalevaDmitrijSurin.sgf
+      - 30-19 19:W+R round:5 sgf:2008/iapgc/5-ChiaraRonchiMicheleBaldi-AnnikaPiiroinenOlliLounela.sgf
+  - type: tournament
+    file: wmsg2008playoff.txt
+    name: WMSG
+    category: wmsg
+    dir: 2008/wmsg
+    notes: World Mind Sports Games - Mixed Pairs. Top 8 pairs from amateurs groups and 8 seeded professional pairs.
+    scoringColumns:
+      - wins
+      - place
+    breakers:
+      - place
+    columns:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 1-15 1:B+R round:1 sgf:2008/wmsg/1-WeijingFanYizhongHuang-TungalagRavjirSansarTsolmon.sgf
+      - 2-1 1:W+R round:4 sgf:2008/wmsg/4-YiMinHsiehChunHsunChou-WeijingFanYizhongHuang.sgf
+      - 3-1 1:W+R round:3 sgf:2008/wmsg/3-HaJinLeeSoJinOn-WeijingFanYizhongHuang.sgf
+      - 3-8 3:B+3.5 round:2 sgf:2008/wmsg/2-HaJinLeeSoJinOn-KaiHsinChangChinHanLin.sgf
+      - 3-14 3:B+2.5 round:1 sgf:2008/wmsg/1-HaJinLeeSoJinOn-SaeByolJoTaeWonJo.sgf
+      - 4-2 2:W+R round:3 sgf:2008/wmsg/3-HeLiBinYu-YiMinHsiehChunHsunChou.sgf
+      - 4-3 3:W+R round:4 sgf:2008/wmsg/4-HeLiBinYu-HaJinLeeSoJinOn.sgf
+      - 5-1 1:W+0.5 round:2 sgf:2008/wmsg/2-KumikoYashiroSatoruKobayashi-WeijingFanYizhongHuang.sgf
+      - 5-10 5:B+R round:1 sgf:2008/wmsg/1-KumikoYashiroSatoruKobayashi-JitkaBartovaJanHora.sgf
+      - 6-2 2:W+R round:2 sgf:2008/wmsg/2-EunSeonKimSungJiHong-YiMinHsiehChunHsunChou.sgf
+      - 7-4 4:W+3.5 round:2 sgf:2008/wmsg/2-ShinYoungKimHongSeokUi-HeLiBinYu.sgf
+      - 7-12 7:B+R round:1 sgf:2008/wmsg/1-ShinYoungKimHongSeokUi-KazukoKonishiToshiyaImamura.sgf
+      - 9-6 6:W+R round:1 sgf:2008/wmsg/1-XiangryuWangLiRongLiu-EunSeonKimHongSungJi.sgf
+      - 11-4 4:W+R round:1 sgf:2008/wmsg/1-RitaPocsaiTiborPocsai-HeLiBinYu.sgf
+      - 13-8 8:W+10.5 round:1 sgf:2008/wmsg/1-YurikoHiraokaSatoshiHiraoka-KaiHsinChangChinHanLin.sgf
+      - 16-2 2:W+22.5 round:1 sgf:2008/wmsg/1-MariiaZakharchenkoYuriiPliushch-YiMinHsiehChunHsunChou.sgf

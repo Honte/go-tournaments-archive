@@ -238,7 +238,10 @@ function createTournamentTable(results: H9Player[], props: H9TournamentProps): T
   }
 
   if (event.pairs) {
-    validatePairs(playersMap);
+    validatePairs(
+      playersMap,
+      table.map((p) => p.id)
+    );
   }
 
   return table;

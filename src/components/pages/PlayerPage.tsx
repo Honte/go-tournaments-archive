@@ -8,6 +8,7 @@ import { filterPlayerStatsByCategory, getPlayerAvailableCategories } from '@/lib
 import { getAllPlayersStats, getPlayerStats, getTranslations } from '@/data/serverApi';
 import { PlayerStats } from '@/components/PlayerStats';
 import { Achievements } from '@/components/stats/Achievements';
+import { PlayerDetails } from '@/components/stats/PlayerDetails';
 import { PlayerStatsNavigation } from '@/components/stats/PlayerStatsNavigation';
 import { Content } from '@/components/ui/Content';
 import { CountryLink } from '@/components/ui/CountryLink';
@@ -56,6 +57,7 @@ export async function PlayerPage({ event, locale, slug, category }: PlayerPagePr
             )}
           </h2>
         )}
+        <PlayerDetails player={player} translations={translations} />
       </header>
 
       {categories.length > 0 && (

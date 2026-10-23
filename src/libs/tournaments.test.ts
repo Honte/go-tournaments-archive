@@ -1,8 +1,8 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import type { Game, LeagueStage, Player, Tournament } from '@/schema/data';
-import { buildTournamentRows } from '@/libs/tournaments';
-import { tournamentsUrl } from '@/libs/urls';
+import { buildTournamentRows, buildTournamentTables } from '@/libs/tournaments';
+import { tournamentsUrl, tournamentTablesDataUrl } from '@/libs/urls';
 
 const player = (id: string, name = id): Player => ({ id, name });
 function tournament(overrides: Partial<Tournament> = {}): Tournament {
@@ -110,5 +110,54 @@ describe('tournament table rows', () => {
     const event = { id: 'pgc', locales: ['en'] as ['en'] };
     assert.equal(tournamentsUrl(event, 'en'), '/en/tournaments');
     assert.equal(tournamentsUrl({ ...event, prefix: 'mp' }, 'pl'), '/mp/pl/tournaments');
+    assert.equal(tournamentTablesDataUrl(event), '/data/tournaments-table.json');
+    assert.equal(
+      tournamentTablesDataUrl({ ...event, prefix: 'mp', basePath: '/archive' }),
+      '/archive/data/mp/tournaments-table.json'
+    );
+  });
+});
+
+describe('tournament table payload', () => {
+  const event = { id: 'test', locales: ['en'] as ['en'], generateSgfs: true };
+
+  it('prepares only table rows and preserves SGF visibility from announcement editions', () => {
+    const source = tournament({ participants: { a: player('a') }, top: [['a']] });
+    const result = buildTournamentTables(event, [source, tournament({ announcement: true, hasSgfs: true })]);
+    assert.deepEqual(result, {
+      tables: [{ category: undefined, rows: buildTournamentRows([source]), showSgfs: true }],
+    });
+    const serialized = JSON.parse(JSON.stringify(result));
+    assert.equal(typeof serialized.tables[0].rows[0].games, 'number');
+    assert.equal(typeof serialized.tables[0].rows[0].stages, 'number');
+    assert.equal('participants' in serialized.tables[0].rows[0], false);
+    assert.equal(buildTournamentTables({ ...event, generateSgfs: false }, [source]).tables[0].showSgfs, false);
+    assert.equal(buildTournamentTables(event, [source]).tables[0].showSgfs, false);
+    assert.deepEqual(buildTournamentTables(event, []), { tables: [] });
+    assert.deepEqual(buildTournamentTables(event, [tournament({ announcement: true })]), { tables: [] });
+  });
+
+  it('keeps configured category order, omits empty tables and hides category SGF counts', () => {
+    const source = tournament({
+      participants: { a: player('a') },
+      categoriesTop: { u12: [['a']], u16: [['a']] },
+      hasSgfs: true,
+    });
+    const result = buildTournamentTables({ ...event, categories: ['u16', 'u21', 'u12'] }, [source]);
+    assert.deepEqual(
+      result.tables.map((table) => table.category),
+      ['u16', 'u12']
+    );
+    for (const table of result.tables) {
+      assert.deepEqual(table.rows, buildTournamentRows([source], table.category));
+      assert.equal(table.showSgfs, false);
+    }
+  });
+
+  it('retains pair podium members and their canonical IDs after JSON serialization', () => {
+    const pair = { id: 'pair', members: [player('a'), player('b')] as [Player, Player] };
+    const source = tournament({ participants: { pair }, top: [['pair']] });
+    const result = JSON.parse(JSON.stringify(buildTournamentTables({ ...event, pairs: true }, [source])));
+    assert.deepEqual(result.tables[0].rows[0].gold, [pair]);
   });
 });

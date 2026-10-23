@@ -1,0 +1,15 @@
+website: https://www.pairgo.or.jp/amateur/7th/7ama0.htm
+stages:
+  - type: tournament
+    name: IAPGC
+    category: iapgc 
+    file: iapgc1996.txt
+    notes: 18 countries, no results available
+    scoringColumns:
+      - place
+    breakers:
+      - place
+    findSharedPlaces: false
+    games:
+      - 1-2 1:B+R round:1 sgf:1996/1-ChikakoNakamuraToshiyukiSogabe-YasukoImamuraOsamuKoitabashi.sgf
+      - 3-4 3:B+1.5 round:1 sgf:1996/1-SachikoYoshiokaShigeakiIshihara-YanHongYinKuiDong.sgf

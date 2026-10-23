@@ -1,0 +1,17 @@
+website: https://www.pairgo.or.jp/amateur/9th/htm-e/index.htm
+stages:
+  - type: tournament
+    name: IAPGC
+    category: iapgc
+    file: iapgc1998.txt
+    notes: 20 countries, no results available
+    scoringColumns:
+      - place
+    breakers:
+      - place
+    findSharedPlaces: false
+    games:
+      - 2-1 1:W+R round:2 sgf:1998/2-ShokoTakanashiMasayoshiNagai-SeSilKimSungKyunPark.sgf
+      - 2-3 2:B+2.5 round:1 sgf:1998/1-ShokoTakanashiMasayoshiNagai-NaokoGotoBungoTaga.sgf
+      - 4-1 1:W+R round:1 sgf:1998/1-MomoyoSatoKoichiShimohashi-SeSilKimSungKyunPark.sgf
+      - 4-3 3:W+5.5 round:2 sgf:1998/2-MomoyoSatoKoichiShimohashi-NaokoGotoBungoTaga.sgf

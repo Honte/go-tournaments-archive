@@ -1,0 +1,36 @@
+; EV[17th International Amateur Pair Go Championship]
+;https://www.pairgo.or.jp/amateur/17th/index_e.htm
+; PC[JP, Tokyo]
+; DT[2006-11-18,2006-11-19]
+   1 Song Ye-Seul            6d Seo Yu-Tae          6d   6d KR   xxxx  15+  21+   3+   7+   2+     5    16    72
+   2 Yan Ling                5d Long Lin            6d   6d CN   xxxx  14+  11+  10+   8+   1-     4    17    73
+   3 Fukasaka Fuko           5d Date Masaki         6d   6d JP   xxxx  12+  17+   1-  22+   8+     4    15    73 |17350025|00000000
+   4 Sekine Reiko            6d Hanamaki Mio        6d   6d JP   xxxx  20+  19+   7-  11+   9+     4    13    75
+   5 Higuchi Naoko           6d Takizawa Chiharu    7d   7d JP   xxxx   9-  25+  17+  19+   7+     4    12    70
+   6 Morikawa Sae            5d Ono Teppei          6d   6d JP   xxxx  27+  10-  20+  18+  12+     4    11    70
+   7 Imamura Yasuko          4d Imabun Yoshiyuki    6d   5d JP   xxxx  29+  16+   4+   1-   5-     3    17    60
+   8 Takayama Momoyo         5d Sato Yohei          6d   6d JP   xxxx  13+  18+   9+   2-   3-     3    16    75 |00000000|14886993
+   9 Izawa Hagino            5d Kinoshita Nagatoki  6d   6d JP   xxxx   5+  23+   8-  10+   4-     3    16    69 |00000000|16562920
+  10 Tokunaga Satsuki        6d Yoshimatsu Shozo    6d   6d JP   xxxx  22+   6+   2-   9-  18+     3    15    71
+  11 Irie Shigeko            4d Ota Shogo           6d   5d JP   xxxx  25+   2-  23+   4-  21+     3    14    65
+  12 Kanai Kazuko            6d Kanai Hirotatsu     6d   6d JP   xxxx   3-  31+  21+  13+   6-     3    14    59
+  13 Lin Hong-Bing           6d Yu Cheng-Juei       7d   7d TW   xxxx   8-  14+  24+  12-  19+     3    13    65
+  14 Chen Wan                4d Tang Curtis         5d   5d US   xxxx   2-  13-  28+  17+  20+     3    12    69 |00000000|12762365
+  15 Takahashi Keiko         6d Nakamura Akihiro    6d   6d JP   xxxx   1-  32+  19-  27+  22+     3    10    65
+  16 Phease Yucong           3d Phease Edwin        1d   2d NZ   xxxx  28+   7-  18-  30+  23+     3     9    64 |15098908|15049947
+  17 Chaine Marie-Claire     2d Colmez Pierre       5d   4d FR   xxxx  24+   3-   5-  14-  27+     2    14    61 |10350923|10237018
+  18 Tran Mai                1d Tran Thanh          6d   4d VN   xxxx  31+   8-  16+   6-  10-     2    14    58
+  19 Kishimoto Sanae         4d Yanai Hikaru        5d   5d JP   xxxx  32+   4-  15+   5-  13-     2    14    57
+  20 Liu Alexis              2d Chung Luke          6d   4d CA   xxxx   4-  29+   6-  26+  14-     2    14    54
+  21 Regan Natasha           1d Cocke Matthew       5d   3d UK   xxxx  30+   1-  12-  29+  11-     2    13    63 |12301146|10262021
+  22 Ente Lisa               3d Teuber Benjamin     6d   5d DE   xxxx  10-  30+  26+   3-  15-     2    13    57 |10862962|10437174
+  23 Buntsma Els             2k Groenen Geert       6d   3d NL   xxxx  26+   9-  11-  24+  16-     2    13    56 |10250845|10501216
+  24 Ravjir Tungalag         2d Tsolmon Sansar      3d   3d MN   xxxx  17-  27+  13-  23-  29+     2     9    63 |13937836|13662825
+  25 Arundina Miranti        5k Jakadewa Daniel     1k   3k ID   xxxx  11-   5-  27-  32+  28+     2     9    59 |15986157|00000000
+  26 Bogdanova Margarita     5k Bogdanov Viktor     6d   1d RU   xxxx  23-  28+  22-  20-  30+     2     8    60 |12774146|10325139
+  27 Bergstroem Kerstin      2k Aakerblom Charlie   1d   1k SE   xxxx   6-  24-  25+  15-  17-     1    13    53 |13062478|13286603
+  28 Linares Jenny_Basualto  5k Sepulveda Avelio    1d   2k CL   xxxx  16-  26-  14-  31+  25-     1    11    45 |00000000|15925063
+  29 Miskolczi Szonja        1k Csizmadia Gyorgy    4d   2d HU   xxxx   7-  20-  31+  21-  24-     1    10    60 |12501038|12698928
+  30 Gini Liesl              8k Visser Chris        1d   4k ZA   xxxx  21-  22-  32+  16-  26-     1     9    52 |00000000|10674917
+  31 Toleva Nina            12k Trajkov Stanislav   4k   8k BG   xxxx  18-  12-  29-  28-  32+     1     7    58
+  32 Leonidou Maria         19k Roussos Nicholas    9k  14k CY   xxxx  19-  15-  30-  25-  31-     0     9    49 |13525853|13598849

@@ -1,13 +1,13 @@
 'use client';
 
 import { useMemo } from 'react';
-import type { PlayerStats } from '@/schema/data';
+import type { PlayerResult, PlayerStats } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Locale, Translations } from '@/i18n/consts';
+import { isPair } from '@/libs/participants';
 import { filterPlayerStatsByCategory } from '@/libs/playerStats';
 import { Opponents } from '@/components/stats/Opponents';
 import { Partners } from '@/components/stats/Partners';
-import { PlayerGames } from '@/components/stats/PlayerGames';
 import { Loader } from '@/components/ui/Loader';
 import { usePlayerStatsData } from '@/hooks/usePlayerStatsData';
 import { useTranslationsData } from '@/hooks/useTranslationsData';
@@ -43,19 +43,39 @@ export function PlayerStats({ event, slug, locale, category }: PlayerStatsProps)
 }
 
 function PlayerStatsContent({ event, player, translations, category }: PlayerStatsContentProps) {
+  const sections = getPlayerPairSections(player.results);
+  const hasPartners = event.pairs && sections.hasPartners;
+  const hasOpposingPairs = event.pairs && sections.hasOpposingPairs;
+
   return (
-    <div className="flex max-xl:flex-col gap-4">
-      <div className="flex flex-1 flex-col gap-4">
-        <PlayerEvents event={event} player={player} translations={translations} />
-        <PlayerGames event={event} player={player} translations={translations} />
-      </div>
-      <div className="flex-1 space-y-4">
-        {event.pairs && <Partners event={event} player={player} translations={translations} category={category} />}
+    <div className="flex flex-col gap-6">
+      <PlayerEvents event={event} player={player} translations={translations} />
+      {hasPartners && <Partners event={event} player={player} translations={translations} category={category} />}
+      <div className={`grid grid-cols-1 gap-6 ${hasOpposingPairs ? 'xl:grid-cols-2' : ''}`}>
         <Opponents event={event} player={player} translations={translations} category={category} />
-        {event.pairs && (
+        {hasOpposingPairs && (
           <Opponents event={event} player={player} translations={translations} category={category} pairs />
         )}
       </div>
     </div>
   );
+}
+
+function getPlayerPairSections(results: PlayerResult[]) {
+  let hasPartners = false;
+  let hasOpposingPairs = false;
+
+  for (const result of results) {
+    hasPartners ||= Boolean(result.partner);
+
+    for (const stage of result.stages) {
+      for (const game of stage.games) {
+        if (game.id !== 'BYE' && game.opponent && isPair(game.opponent)) {
+          hasOpposingPairs = true;
+        }
+      }
+    }
+  }
+
+  return { hasPartners, hasOpposingPairs };
 }

@@ -1,0 +1,10 @@
+; PC[JP, Tokyo]
+; DT[2023-12-02,2023-12-03]
+   1 Zhou Lexuan        6d Pang Ziyu         5d   6d CN   xxxx   6+   4+   2+     3     5    15
+   2 Chen Chien-yu      7d Evan Lin          7d   7d TW   xxxx   5+   3+   1-     2     6    14 |19274376|00000000
+   3 Nakagawa Mao       6d Akagi Shiko       6d   6d JP   xxxx   7+   2-   5+     2     4    14
+   4 Sakano Hanae       6d Saiyama Takatora  6d   6d JP   xxxx   8+   1-   6+     2     4    14 |20401205|20498203
+   5 Furuya Misato      5d Kitayama Yuki     6d   6d JP   xxxx   2-   7+   3-     1     5    13 |18974197|00000000
+   6 Na Sehee           8d Lee Wook-Bin      9d   9d KR   xxxx   1-   8+   4-     1     5    13
+   7 Laatikainen Liina  9k Schomberg Niels   4d   3k EU   xxxx   3-   5-   8+     1     3    13 |14762891|14837075
+   8 Chua Claudia       4k Koh Jun_Hong      5k   4k SG   xxxx   4-   6-   7-     0     4    12

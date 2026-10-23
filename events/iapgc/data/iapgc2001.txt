@@ -1,0 +1,39 @@
+; EV[12th International Amateur Pair Go Championship]
+;https://www.eurogofed.org/results/world/wpgc2001.htm
+;https://www.pairgo.or.jp/amateur/12th/indexe.htm
+; PC[JP, Tokyo]
+; DT[2001-11-16,2001-11-21]
+;No.  PAIRS  		  CNT  RND   RND   RND   RND   RND     SOS 
+;                           RY   1     2     3     4     5   WIN   SOSOS
+   1 Fan Weijing           6d Huang Chen             6d   6d CN   xxxx  21+   8+   6+   3+   2+     5    17    75 |00000000|12537360
+   2 Lee Ha-Jin            4d Kim Dong-Seob          7d   6d KR   xxxx  10+  12+   5+   7+   1-     4    18    74
+   3 Imamura Yasuko        4d Imabun Yoshiyuki       6d   5d JP   xxxx  17+  20+  13+   1-   9+     4    15    72
+   4 Ishii Akane           6d Kanai Kota             6d   6d JP   xxxx   9+   5-  20+  14+  10+     4    15    68
+   5 Kwon Mi-Hyon          7d Pak Ho-Gil             7d   7d KP   xxxx  32+   4+   2-  11+   7+     4    14    74
+   6 Unegawa Marie         5d Harada Minoru          6d   6d JP   xxxx  28+  18+   1-  12+   8+     4    14    71
+   7 Higuchi Naoko         6d Takizawa Chiharu       7d   7d JP   xxxx  23+  11+  14+   2-   5-     3    16    67
+   8 Morikawa Sae          5d Ono Teppei             6d   6d JP   xxxx  15+   1-  26+  17+   6-     3    16    63
+   9 Tanaka Yumiko         5d Komori Shoji           6d   6d JP   xxxx   4-  21+  19+  13+   3-     3    15    67
+  10 Hayashi Mutsumi       6d Iwasaki Yuichi         7d   7d JP   xxxx   2-  29+  18+  15+   4-     3    14    68
+  11 Sato Momoyo           5d Shimohashi Koichi      6d   6d JP   xxxx  16+   7-  25+   5-  17+     3    14    64
+  12 Healey Kirsty         1d Macfadyen Matthew      6d   4d UK   xxxx  27+   2-  24+   6-  19+     3    13    65 |10698809|10249019
+  13 Hsieh Yi-Min          6d Hse Chih-Wei           6d   6d TW   xxxx  29+  22+   3-   9-  18+     3    12    65 |12733369|00000000
+  14 Nakayama Chihoko      5d Ilzuka Atsushi         6d   6d JP   xxxx  31+  19+   7-   4-  25+     3    12    60
+  15 Trepczik Britta       1d Gerlach Christoph      6d   4d DE   xxxx   8-  30+  22+  10-  20+     3    11    63 |10337195|10225017
+  16 Leshcheva Irina       4d Bogdanov Viktor        6d   5d RU   xxxx  11-  27+  17-  22+  21+     3    10    63 |10550078|10325139
+  17 Kawamura Yoko         5d Kawamura Fumitaka      6d   6d JP   xxxx   3-  23+  16+   8-  11-     2    15    64
+  18 Siemon Debbie         2d Hsiang Thomas          7d   5d US   xxxx  25+   6-  10-  24+  13-     2    14    58 |00000000|10849784
+  19 Chang Stella          4d Chang Stanley          5d   5d CA   xxxx  24+  14-   9-  26+  12-     2    13    55 |10713186|00000000
+  20 Mo Shelley            3d Purcell Tony           4d   4d AU   xxxx  26+   3-   4-  23+  15-     2    13    50 |00000000|13601819
+  21 Hanamura Akiko        4d Hanamura Toshiiku      6d   5d JP   xxxx   1-   9-  32+  27+  16-     2    12    64
+  22 Horbunova Yelyzaveta  2k Halchenko Mykhailo     5d   2d UA   xxxx  30+  13-  15-  16-  28+     2    11    53 |10501084|10433236
+  23 Hrdinova Lubica       3k Hrdina Marian          2d   1k SK   xxxx   7-  17-  30+  20-  29+     2     9    63 |12686927|10250658
+  24 Saito Mikiko          5d Kan Satoshi            6d   6d JP   xxxx  19-  28+  12-  18-  27+     2     9    62
+  25 Roelofs Yvonne        2k Eijkhout Michiel       5d   2d NL   xxxx  18-  32+  11-  28+  14-     2     9    62 |10725792|10486410
+  26 Barros Isabel         5k Carles Pau             2d   2k ES   xxxx  20-  31+   8-  19-  32+     2     6    47 |12474264|10398036
+  27 Aytac Aysegul         4k Dardeniz Mehmet        1d   2k TR   xxxx  12-  16-  29+  21-  24-     1    11    54 |10974425|00000000
+  28 Kuriene Laimute       2k Ugenskas Donatas       1d   1k LT   xxxx   6-  24-  31+  25-  22-     1    11    50 |10586092|12762530
+  29 Pooh Chun-Ling        1d Goh Kiah_Tian          1d   1d SG   xxxx  13-  10-  27-  30+  23-     1    10    55 |15050893|00000000
+  30 Shah Soni             3k Singh Mandish          1d   1k IN   xxxx  22-  15-  23-  29-  31+     1     9    48 |16962231|12549163
+  31 How Tee-Choon         3k Chia Kok_Hiong         2d   1k MY   xxxx  14-  26-  28-  32+  30-     1     7    49
+  32 Puerta Maria          3k Yabrudes Miguel-Angel  6k   4k VE   xxxx   5-  25-  21-  31-  26-     0    11    48 |10625923|10913452

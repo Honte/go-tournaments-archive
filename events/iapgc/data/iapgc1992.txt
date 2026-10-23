@@ -1,0 +1,10 @@
+; EV[3rd International Amateur Pair Go Championship]
+; PC[JP, Tokyo]
+; DT[1992-11-28,1992-11-29]
+; 32 pairs 14 countries CA,CN,TW,CS,FR(2nd round only from eu),DE,HK,KR,NL,PL(Katarzyna Koenig, Jan Lubos),RU,UK,US
+; team names in Ranka, top 4 from JP
+; Matsuta-Kanai beat CN & HK, CN beat UK (sgf 1st round)
+; https://www.pairgo.or.jp/db-e/db1_3.htm
+1 Midorikawa Sachiko 5d Komori Shoji      6d 6d JP xxx 2+ 1
+2 Kanai Tomoko       6d Matsuta Yoichiro  6d 6d JP xxx 1- 2 
+3 Koike Hisako       6d Muraoka Toshihiko 6d 6d JP xxx 0= 3

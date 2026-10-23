@@ -1,0 +1,15 @@
+website: https://www.pairgo.or.jp/topics-e/6ama0.htm
+stages:
+  - type: tournament
+    name: IAPGC
+    category: iapgc
+    file: iapgc1995.txt
+    dir: 1995/iapgc
+    notes: 17 countries, no results available
+    scoringColumns:
+      - place
+    breakers:
+      - place
+    findSharedPlaces: false
+    games:
+      - 2-1 1:W+0.5 round:1 sgf:1995/iapgc/1-ChangKaiHinLinChihHan-KwunHyoJinLeeKyongBo.sgf

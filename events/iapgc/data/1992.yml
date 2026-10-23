@@ -1,0 +1,14 @@
+website: https://www.pairgo.or.jp/db-e/db1_3.htm
+stages:
+  - type: tournament
+    name: IAPGC
+    category: iapgc
+    file: iapgc1992.txt
+    notes: 14 countries, no results available
+    scoringColumns:
+      - place
+    breakers:
+      - place
+    findSharedPlaces: false
+    games:
+      - 2-1 1:W+3.5 round:1 sgf:1992/1-TomokoKanaiYoichiroMatsuta-SachikoMidorikawaShojiKomori.sgf

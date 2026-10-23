@@ -16,8 +16,10 @@ stages:
       - 1-2 1:B+R round:6 sgf:1984/6-QunWang-ChanghyeokYoo.sgf
       - 3-1 1:W+R round:7 sgf:1984/7-HironoriHirata-QunWang.sgf
       - 3-5 3:B+R round:6 sgf:1984/6-HironoriHirata-MatthewMacfadyen.sgf
+      - 4-1 1:W+10.5 round:3 sgf:1984/3-RonaldSchlemper-QunWang.sgf
       - 4-2 2:W+R round:7 sgf:1984/7-RonaldSchlemper-ChanghyeokYoo.sgf
       - 4-10 4:B+5.5 round:5 sgf:1984/5-RonaldSchlemper-FrankHansen.sgf
+      - 4-13 4:B+R round:4 sgf:1984/4-RonaldSchlemper-HongsooShin.sgf
       - 6-19 6:B+R round:2 sgf:1984/2-PierreColmez-LiekfooTan.sgf
       - 7-14 7:B+R round:1 sgf:1984/1-LojzeSuc-LaszloKiskos.sgf
       - 9-1 1:W+15.5 round:2 sgf:1984/2-JanuszKraszek-QunWang.sgf
@@ -26,6 +28,7 @@ stages:
       - 11-5 5:W+R round:5 sgf:1984/5-StefanBudig-MatthewMacfadyen.sgf
       - 12-29 12:B+4.5 round:2 sgf:1984/2-GerfriedBeck-RicardoQuintero.sgf
       - 13-10 13:B+14.5 round:1 sgf:1984/1-HongsooShin-FrankHansen.sgf
+      - 14-4 4:W+R round:6 sgf:1984/6-LaszloKiskos-RonaldSchlemper.sgf
       - 16-6 16:B+8.5 round:1 sgf:1984/1-SeJuLee-PierreColmez.sgf
       - 16-26 16:B+17.5 round:2 sgf:1984/2-SeJuLee-JorgeSasaki.sgf
       - 18-28 18:B+R round:2 sgf:1984/2-VladimirDanek-KorsakChairasmisak.sgf

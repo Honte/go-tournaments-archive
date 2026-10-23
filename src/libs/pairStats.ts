@@ -1,6 +1,7 @@
 import type { Participant, PlayerStats, TableStats } from '@/schema/data';
 import { getGameStats } from '@/libs/games';
 import { getParticipantName, getParticipantPlayers, isPair } from '@/libs/participants';
+import { splitPlayerName } from '@/libs/playerNames';
 
 export type RelatedPlayerRow = TableStats & {
   id: string;
@@ -40,9 +41,9 @@ export function getOpponentRows(player: PlayerStats, pairs = false): RelatedPlay
           row.participant = { ...participant, country: row.country };
           if (!isPair(participant)) {
             row.name = player.opponents[participant.id] ?? participant.name;
-            const [first, ...last] = row.name.split(' ');
-            row.firstName = first;
-            row.lastName = last.join(' ');
+            const { firstName, lastName } = splitPlayerName(row.name);
+            row.firstName = firstName;
+            row.lastName = lastName;
             row.participant = { ...row.participant, name: row.name };
           }
           const outcomes = getGameStats([game]);
@@ -66,21 +67,31 @@ export function getOpponentRows(player: PlayerStats, pairs = false): RelatedPlay
 export function getPartnerRows(player: PlayerStats): RelatedPlayerRow[] {
   const rows = new Map<string, RelatedPlayerRow>();
   const paths = new Map<string, Set<string>>();
+
   for (const result of player.results) {
     if (!result.partner) {
       continue;
     }
-    const partner = result.partner;
+
+    const {
+      partner,
+      stages,
+      place,
+      medals: [gold, silver, bronze],
+    } = result;
+
     const row = rows.get(partner.id) ?? createRow(partner);
     rows.set(partner.id, row);
     row.attended++;
-    row.bestPlace = Math.min(row.bestPlace, result.place);
-    for (const [index, key] of (['gold', 'silver', 'bronze'] as const).entries()) {
-      row[key] += player.medals[index].filter((year) => year === String(result.year)).length;
-    }
+    row.bestPlace = Math.min(row.bestPlace, place);
+    row.gold += gold.length;
+    row.silver += silver.length;
+    row.bronze += bronze.length;
+
     const sgfs = paths.get(partner.id) ?? new Set<string>();
     paths.set(partner.id, sgfs);
-    for (const stage of result.stages) {
+
+    for (const stage of stages) {
       const outcomes = getGameStats(stage.games);
       row.games += outcomes.games;
       row.won += outcomes.won;
@@ -99,12 +110,12 @@ export function getPartnerRows(player: PlayerStats): RelatedPlayerRow[] {
 
 function createRow(participant: Participant): RelatedPlayerRow {
   const name = getParticipantName(participant);
-  const [firstName, ...rest] = name.split(' ');
+  const { firstName, lastName } = splitPlayerName(name);
   return {
     id: participant.id,
     name,
     firstName,
-    lastName: rest.join(' '),
+    lastName,
     country: participant.country ?? '',
     participant,
     bestPlace: Infinity,

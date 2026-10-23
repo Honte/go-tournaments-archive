@@ -1,0 +1,63 @@
+website: https://www.pairgo.or.jp/amateur/27th/index_e.htm
+
+stages:
+  - type: tournament
+    name: WSPGC
+    notes: 3rd World Student Pair Go Championship
+    category: wspgc
+    file: wspgc2016.txt
+    dir: 2016/wspgc
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: false
+    games:
+      - 1-5 1:B+R round:4 sgf:2016/wspgc/4-AkikoFujiwaraShodaiHirano-ChihiroAkutsuMinoruOzeki.sgf
+      - 2-1 1:W+T round:3 sgf:2016/wspgc/3-ManamiTakenoShuntaroSugita-AkikoFujiwaraShodaiHirano.sgf
+      - 3-10 3:B+R round:2 sgf:2016/wspgc/2-ShijieWangYuanqiLi-KanakoKurashinaKoheiKawaguchi.sgf
+      - 9-4 4:W+13.5 round:4 sgf:2016/wspgc/4-HsiaotungLinHaoWenCheng-JieunLeeNamgiYoon.sgf
+      - 11-6 6:W+6.5 round:1 sgf:2016/wspgc/1-AkikoKezukaNaotaMatsumoto-ZhouYangJiaqiLi.sgf
+      - 14-9 9:W+R round:2 sgf:2016/wspgc/2-CindyXuKenXie-HsiaotungLinHaoWenCheng.sgf
+      - 15-12 12:W+4.5 round:1 sgf:2016/wspgc/1-JaruratchataphunJuthamateJangmarkChidsanupong-JuliaSeresPeterMarko.sgf
+      - 16-13 13:W+R round:3 sgf:2016/wspgc/3-AndreaBillarentSebastianRios-AmiraSongAndrewZalesak.sgf
+  - type: tournament
+    name: IAPGC
+    category: iapgc
+    file: iapgc2016.txt
+    dir: 2016/iapgc
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: false
+    games:
+      - 1-8 1:B+R round:2 sgf:2016/iapgc/2-SooyoungKimJongWookPark-MinaNomuraMaoYamada.sgf
+      - 2-1 1:W+R round:5 sgf:2016/iapgc/5-ShinHuiPaiWeiHuang-SooyoungKimJongWookPark.sgf
+      - 2-4 2:B+R round:3 sgf:2016/iapgc/3-ShinHuiPaiWeiHuang-KazumiShimodaSatoshiTanabe.sgf
+      - 3-9 3:B+R round:5 sgf:2016/iapgc/5-XuemengLiWenkaiGu-MihokoSekimotoNaoyaUchida.sgf
+      - 5-1 1:W+12.5 round:1 sgf:2016/iapgc/1-MayaOsawaYoshiyukiTsuchimune-SooyoungKimJongWookPark.sgf
+      - 7-12 7:B+T round:3 sgf:2016/iapgc/3-RitaPocsaiPalBalogh-PattrapornAroonphaichitraNuttakritTaechaamnuayvit.sgf
+      - 8-16 8:B+T round:1 sgf:2016/iapgc/1-MinaNomuraMaoYamada-GeishunKushiroToshiakiKushiro.sgf
+      - 9-2 2:W+R round:4 sgf:2016/iapgc/4-MihokoSekimotoNaoyaUchida-ShinHuiPaiWeiHuang.sgf
+      - 10-11 11:W+T round:4 sgf:2016/iapgc/4-HarukoIwaiTaroImabun-YasukoImamuraKikoEmura.sgf
+      - 11-6 6:W+2.5 round:5 sgf:2016/iapgc/5-YasukoImamuraKikoEmura-YukiKatoHironobuMori.sgf
+      - 16-18 16:B+R round:5 sgf:2016/iapgc/5-GeishunKushiroToshiakiKushiro-KeikoOdoSatoruUeno.sgf
+      - 17-26 17:B+24.5 round:1 sgf:2016/iapgc/1-ElvinaKalsbergGrigorijFionin-LiyaSangMartinLi.sgf
+      - 19-28 19:B+R round:2 sgf:2016/iapgc/2-RuthanneGohLeYinJimmyChengKhaiYong-MarieJemineVincentLochen.sgf
+      - 23-14 14:W+R round:2 sgf:2016/iapgc/2-ManjaMarzMichaelMarz-GabriellaSuJeremyChiu.sgf
+      - 24-9 9:W+R round:1 sgf:2016/iapgc/1-AndreeaElenaPirvuLucianCorlan-MihokoSekimotoNaoyaUchida.sgf
+      - 26-32 26:B+T round:4 sgf:2016/iapgc/4-LiyaSangMartinLi-MargotSmytheBenBredenkamp.sgf
+      - 27-25 25:W+R round:5 sgf:2016/iapgc/5-ZuzanaKralikovaMilanJadron-MaritOhlenbuschSoerenOhlenbusch.sgf
+      - 28-13 13:W+R round:4 sgf:2016/iapgc/4-MarieJemineVincentLochen-PhamThiKimLongVoNhatMinh.sgf
+      - 29-5 5:W+R round:2 sgf:2016/iapgc/2-SieglindeGruberHelmutWiltschek-MayaOsawaYoshiyukiTsuchimune.sgf
+      - 30-21 21:W+R round:3 sgf:2016/iapgc/3-PernilleElisabethHvalbyJonRunarMelting-DawnSumJamesLee.sgf
+      - 31-22 22:W+T round:3 sgf:2016/iapgc/3-AgostinaRomeroFacundoCorvalan-MikaWatanabeShinichiroTakahashi.sgf

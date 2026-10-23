@@ -1,0 +1,35 @@
+; EV[27th International Amateur Pair Go Championship]
+; PC[JP, Tokyo]
+; DT[2016-12-03,2016-12-04]
+   1 Kim Sooyoung                6d Park Jong_Wook             7d   7d KR   xxxx   5+   8+  19+   7+   2+     5    16    77 |19374817|17550654
+   2 Pai Shin-Hui                7d Huang Wei                  7d   7d TW   xxxx   3+  21+   4+   9+   1-     4    18    74
+   3 Li Xuemeng                  6d Gu Wenkai                  5d   6d CN   xxxx   2-  13+  14+   8+   9+     4    16    72
+   4 Shimoda Kazumi              6d Tanabe Satoshi             6d   6d JP   xxxx  13+  15+   2-  17+  12+     4    15    71
+   5 Osawa Maya                  6d Tsuchimune Yoshiyuki       6d   6d JP   xxxx   1-  29+  20+  18+   7+     4    13    72 |16586504|15062157
+   6 Kato Yuki                   6d Mori Hironobu              8d   7d JP   xxxx  20+  18-  27+  19+  11+     4    10    69 |21098308|14750417
+   7 Pocsai Rita                 4d Balogh Pal                 6d   5d HU   xxxx  23+  10+  12+   1-   5-     3    17    67 |10686346|10498246
+   8 Nomura Mina                 6d Yamada Mao                 6d   6d JP   xxxx  16+   1-  28+   3-  21+     3    15    66
+   9 Sekimoto Mihoko             5d Uchida Naoya               6d   6d JP   xxxx  24+  17+  18+   2-   3-     3    14    75
+  10 Iwai Haruko                 6d Imabun Taro                7d   7d JP   xxxx  14+   7-  16+  11-  22+     3    14    64
+  11 Imamura Yasuko              7d Emura Kiko                 8d   8d JP   xxxx  12-  22+  24+  10+   6-     3    14    59 |00000000|20437417
+  12 Aroonphaichitra Pattraporn  3d Taechaamnuayvit Nuttakrit  5d   4d TH   xxxx  11+  30+   7-  21+   4-     3    13    68 |00000000|15949153
+  13 Long Pham_Thi_Kim           5d Minh Vo_Nhat               5d   5d VN   xxxx   4-   3-  26+  28+  19+     3    13    63
+  14 Su Gabriella                6d Chiu Jeremy                7d   7d US   xxxx  10-  23+   3-  29+  17+     3    12    66 |16574536|16950879
+  15 Togashi Junko               6d Ito Akio                   6d   6d JP   xxxx  22+   4-  17-  23+  24+     3    12    63
+  16 Kushiro Geishun             6d Kushiro Toshiaki           6d   6d JP   xxxx   8-  32+  10-  20+  18+     3    10    67
+  17 Kalsberg Elvina             4d Fionin Grigorij            6d   5d RU   xxxx  26+   9-  15+   4-  14-     2    15    60 |10750047|16013096
+  18 Odo Keiko                   5d Ueno Satoru                6d   6d JP   xxxx  29+   6+   9-   5-  16-     2    15    57
+  19 Yin Ruthanne_Goh_Le         1d Yong Jimmy_Cheng_Khai      4d   3d MY   xxxx  27+  28+   1-   6-  13-     2    14    62
+  20 Kawamura Yoko               5d Matsuda Tomoki             6d   6d JP   xxxx   6-  25+   5-  16-  28+     2    14    52
+  21 Sum Dawn                    2d Lee James                  5d   4d SG   xxxx  25+   2-  30+  12-   8-     2    13    63 |00000000|21098418
+  22 Watanabe Mika               6d Takahashi Shinichiro       7d   7d JP   xxxx  15-  11-  31+  27+  10-     2    11    60
+  23 Marz Manja                  4d Marz Michael               3d   4d DE   xxxx   7-  14-  25+  15-  32+     2    11    58 |13062412|10225347
+  24 Pirvu Andreea-Elena         5k Corlan Lucian              5d   1d RO   xxxx   9-  31+  11-  30+  15-     2    11    57 |12913604|12586750
+  25 Ohlenbusch Marit            4k Ohlenbusch Soeren          3d   1k DK   xxxx  21-  20-  23-  31+  27+     2     8    58 |13913416|13749241
+  26 Sang Liya                   6k Li Martin                  4d   1k SE   xxxx  17-  27-  13-  32+  30+     2     7    58 |12713349|10498631
+  27 Kralikova Zuzana            4k Jadron Milan               1k   2k SK   xxxx  19-  26+   6-  22-  25-     1    12    50 |15801764|10201653
+  28 Jemine Marie                1k Lochen Vincent             5k   3k BE   xxxx  31+  19-   8-  13-  20-     1    11    64 |14586847|14286217
+  29 Gruber Sieglinde            1d Wiltschek Helmut           6d   4d AT   xxxx  18-   5-  32+  14-  31-     1    10    57 |12650209|10350615
+  30 Hvalby Pernille_Elisabeth   8k Melting Jon_Runar          1k   4k NO   xxxx  32+  12-  21-  24-  26-     1     9    53 |17398480|16950637
+  31 Romero Agostina             3k Corvalan Facundo           2d   1k AR   xxxx  28-  24-  22-  25-  29+     1     8    51 |20586368|00000000
+  32 Smythe Margot              14k Bredenkamp Ben             2k   8k ZA   xxxx  30-  16-  29-  26-  23-     0     9    47 |00000000|18050120

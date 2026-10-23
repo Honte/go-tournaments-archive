@@ -1,0 +1,13 @@
+; EV[7th International Amateur Pair Go Championship]
+; PC[JP, Tokyo]
+; DT[1996-11-16,1996-11-17]
+;https://www.pairgo.or.jp/amateur/7th/7ama0.htm
+; 18 countries
+1 Nakamura Chikako 6d Sogabe Toshiyuki  6d 6d JP xxx 2+ 1
+2 Imamura Yasuko   5d Koitabashi Osamu  6d 5d JP xxx 1- 2
+3 Yoshioka Sachiko 5d Ishihara Shigeaki 5d 5d JP xxx 4+ 3
+4 Hong Yan         5d Dong Yin-Kui      6d 6d CN xxx 3- 4
+5 Han Hae-Won      4d Choi Young-Don    6d 5d KR xxx 0= 5
+6 Makiguchi Kana   4d Komori Yoshitsugu 6d 5d JP xxx 0= 6
+7 Imamura Yuki     5d Kuboniwa Takashi  6d 6d JP xxx 0= 7
+8 Chang Stella     4d Chang Stanley     5d 5d CA xxx 0= 8

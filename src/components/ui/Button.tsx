@@ -1,5 +1,5 @@
-import { clsx } from 'clsx';
 import type { ComponentProps, ReactNode } from 'react';
+import { twMerge } from 'tailwind-merge';
 import { Link, type LinkProps } from '@/components/navigation/Link';
 
 type ButtonProps = {
@@ -16,7 +16,7 @@ const BUTTON_CLASS = `
 `;
 
 export function Button({ children, className, icon, ...props }: ButtonProps) {
-  const buttonClassName = clsx(BUTTON_CLASS, className);
+  const buttonClassName = twMerge(BUTTON_CLASS, className);
   const content = (
     <>
       {children}

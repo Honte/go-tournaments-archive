@@ -231,6 +231,11 @@ export type GameProps = {
 export type GamePropsArrayKey = KeysMatching<GameProps, string[]>;
 export type StatsMedals = [gold: string[], silver: string[], bronze: string[]];
 
+export type PlayerMedals = {
+  medals: StatsMedals;
+  categoriesMedals: Record<string, StatsMedals>;
+};
+
 export type PlayerGame = {
   opponent?: Participant;
   id: string; // opponent id
@@ -244,14 +249,12 @@ export type PlayerGame = {
   props?: GameProps;
 };
 
-export type PlayerSummary = {
+export type PlayerSummary = PlayerMedals & {
   id: string;
   egd?: number;
   name: string;
   original?: string;
   nickname?: string[];
-  medals: StatsMedals;
-  categoriesMedals: Record<string, StatsMedals>;
   country: string[];
   bestPlace: number;
   totalGames: number;
@@ -268,7 +271,7 @@ export type PlayerStats = PlayerSummary & {
   opponents: Record<string, string>;
 };
 
-export type PlayerResult = {
+export type PlayerResult = PlayerMedals & {
   partner?: Player;
   pairRank?: string;
   pairCountry?: string;
@@ -297,10 +300,8 @@ export type CountryResult = {
   results: (PlayerResult & { id: string })[];
 };
 
-export type CountrySummary = {
+export type CountrySummary = PlayerMedals & {
   code: string;
-  medals: StatsMedals;
-  categoriesMedals: Record<string, StatsMedals>;
   score: number;
   bestPlace: number;
   totalGames: number;
