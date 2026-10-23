@@ -67,21 +67,31 @@ export function getOpponentRows(player: PlayerStats, pairs = false): RelatedPlay
 export function getPartnerRows(player: PlayerStats): RelatedPlayerRow[] {
   const rows = new Map<string, RelatedPlayerRow>();
   const paths = new Map<string, Set<string>>();
+
   for (const result of player.results) {
     if (!result.partner) {
       continue;
     }
-    const partner = result.partner;
+
+    const {
+      partner,
+      stages,
+      place,
+      medals: [gold, silver, bronze],
+    } = result;
+
     const row = rows.get(partner.id) ?? createRow(partner);
     rows.set(partner.id, row);
     row.attended++;
-    row.bestPlace = Math.min(row.bestPlace, result.place);
-    for (const [index, key] of (['gold', 'silver', 'bronze'] as const).entries()) {
-      row[key] += player.medals[index].filter((year) => year === String(result.year)).length;
-    }
+    row.bestPlace = Math.min(row.bestPlace, place);
+    row.gold += gold.length;
+    row.silver += silver.length;
+    row.bronze += bronze.length;
+
     const sgfs = paths.get(partner.id) ?? new Set<string>();
     paths.set(partner.id, sgfs);
-    for (const stage of result.stages) {
+
+    for (const stage of stages) {
       const outcomes = getGameStats(stage.games);
       row.games += outcomes.games;
       row.won += outcomes.won;

@@ -3,6 +3,8 @@ import { readFile } from 'node:fs/promises';
 import { it } from 'node:test';
 import type { EventDefinition } from '@/schema/event';
 import { loadEventDefinition } from '@/events';
+import { getPartnerRows } from '@/libs/pairStats';
+import { filterPlayerStatsByCategory } from '@/libs/playerStats';
 import { loadData, parseTournament } from '@/data/load';
 import { createPlayersHandler } from '@/data/players';
 import { calculateStats } from '@/data/stats';
@@ -18,6 +20,15 @@ it('keeps both 2012 participations of Yu Hua Lu with their own partners and cate
   assert.ok(player);
   assert.equal(player.totalAttended, 1);
   assert.equal(player.totalGames, 12);
+  assert.deepEqual(
+    getPartnerRows(player).map((row) => [row.name, row.gold, row.silver, row.bronze]),
+    [
+      ['Yu-Cheng Lai', 0, 0, 1],
+      ['Tang-Yu Tsai', 0, 0, 0],
+    ]
+  );
+  assert.equal(getPartnerRows(filterPlayerStatsByCategory(player, 'iapgc'))[0].bronze, 0);
+  assert.equal(getPartnerRows(filterPlayerStatsByCategory(player, 'wmsg'))[0].bronze, 1);
   assert.deepEqual(
     player.results.map((result) => ({
       partner: result.partner?.name,

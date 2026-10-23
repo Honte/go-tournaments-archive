@@ -69,8 +69,12 @@ export function filterPlayerStatsByCategory(player: PlayerStats, category: strin
     }
 
     if (stages.length) {
+      const resultMedals = result.categoriesMedals[category] ?? [[], [], []];
+
       results.push({
         ...result,
+        medals: resultMedals,
+        categoriesMedals: { [category]: resultMedals },
         place,
         stages,
       });

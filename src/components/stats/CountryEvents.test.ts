@@ -133,12 +133,18 @@ function createCountry(results: CountryStats['years'][number]['results']): Count
   };
 }
 
-function createResult(id: string, place: number, stages: PlayerStageResult[]) {
+function createResult(
+  id: string,
+  place: number,
+  stages: PlayerStageResult[]
+): CountryStats['years'][number]['results'][number] {
   return {
     id,
     year: 2025,
     place,
     name: id,
+    medals: [[], [], []],
+    categoriesMedals: {},
     stages,
   };
 }

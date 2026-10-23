@@ -76,8 +76,12 @@ export function filterCountryStatsByCategory(country: CountryStats, category: st
       }
 
       if (stages.length) {
+        const medals = result.categoriesMedals[category] ?? [[], [], []];
+
         filteredTournament.results.push({
           ...result,
+          medals,
+          categoriesMedals: { [category]: medals },
           stages,
         });
       }

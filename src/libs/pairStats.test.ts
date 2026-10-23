@@ -3,6 +3,7 @@ import { it } from 'node:test';
 import type { PlayerGame, PlayerStats } from '@/schema/data';
 import { getOpponentRows, getPartnerRows } from './pairStats';
 import { createPair } from './participants';
+import { filterPlayerStatsByCategory } from './playerStats';
 
 it('counts opponents as members or pairs and excludes BYE games', () => {
   const opponent = createPair([
@@ -38,6 +39,7 @@ it('keeps partner attendance and medals independent between editions', () => {
   player.results.push({
     ...player.results[0],
     year: 2026,
+    medals: [['2026'], [], []],
     partner: { id: 'c', name: 'Carol Three' },
   });
   player.medals[0].push('2026');
@@ -46,6 +48,38 @@ it('keeps partner attendance and medals independent between editions', () => {
     [
       ['Carol Three', 1, 1],
       ['Bob Two', 1, 1],
+    ]
+  );
+});
+
+it('counts only the medals earned with each partner and in the selected category', () => {
+  const player = createPlayerStats([]);
+  player.results[0].medals = [[], ['2025'], ['2025']];
+  player.results[0].categoriesMedals = { open: [[], ['2025'], []], student: [[], [], ['2025']] };
+  player.results[0].stages[0].categories = { open: 2, student: 3 };
+  player.results.push({
+    ...player.results[0],
+    partner: { id: 'c', name: 'Carol Three' },
+    medals: [['2025'], [], []],
+    categoriesMedals: { open: [['2025'], [], []] },
+  });
+  assert.deepEqual(
+    getPartnerRows(player).map((row) => [row.id, row.gold, row.silver, row.bronze]),
+    [
+      ['c', 1, 0, 0],
+      ['b', 0, 1, 1],
+    ]
+  );
+  assert.deepEqual(
+    getPartnerRows(filterPlayerStatsByCategory(player, 'open')).map((row) => [
+      row.id,
+      row.gold,
+      row.silver,
+      row.bronze,
+    ]),
+    [
+      ['c', 1, 0, 0],
+      ['b', 0, 1, 0],
     ]
   );
 });
@@ -61,6 +95,8 @@ function createPlayerStats(games: PlayerGame[]): PlayerStats {
     results: [
       {
         year: 2025,
+        medals: [['2025'], [], []],
+        categoriesMedals: {},
         name: 'Alice One',
         place: 1,
         partner: { id: 'b', name: 'Bob Two' },
