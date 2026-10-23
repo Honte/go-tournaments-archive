@@ -65,7 +65,8 @@ export function calculateStats(
         const members = getParticipantPlayers(participant);
         for (const [memberIndex, tournamentPlayer] of members.entries()) {
           const playerStats = upsertPlayer(tournamentPlayer);
-          const playerResult = upsertPlayerResult(playerStats, tournamentPlayer, year);
+          const partner = isPair(participant) ? participant.members[memberIndex === 0 ? 1 : 0] : undefined;
+          const playerResult = upsertPlayerResult(playerStats, tournamentPlayer, year, partner);
           if (isPair(participant)) {
             playerResult.partner = participant.members[memberIndex === 0 ? 1 : 0];
             playerResult.pairRank = participant.rank;
@@ -245,7 +246,7 @@ export function calculateStats(
     const player = players[id];
     const [gold, silver, bronze] = player.medals;
 
-    player.totalAttended = player.results.length;
+    player.totalAttended = new Set(player.results.map((result) => result.year)).size;
     player.score = gold.length * 10_000 + silver.length * 100 + bronze.length;
     player.results.sort((a, b) => a.year - b.year);
 
@@ -367,8 +368,8 @@ export function calculateStats(
     }
   }
 
-  function upsertPlayerResult(playerStats: PlayerStats, player: Player, year: number): PlayerResult {
-    const previous = playerStats.results.find((event) => event.year === year);
+  function upsertPlayerResult(playerStats: PlayerStats, player: Player, year: number, partner?: Player): PlayerResult {
+    const previous = playerStats.results.find((event) => event.year === year && event.partner?.id === partner?.id);
 
     if (previous) {
       return previous;
@@ -380,6 +381,7 @@ export function calculateStats(
       name: player.name,
       rank: player.rank,
       country: player.country,
+      partner,
       stages: [],
     };
 

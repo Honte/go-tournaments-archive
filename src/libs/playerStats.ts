@@ -92,7 +92,7 @@ export function filterPlayerStatsByCategory(player: PlayerStats, category: strin
     totalWon,
     totalDrawn,
     totalUnresolved,
-    totalAttended: results.length,
+    totalAttended: new Set(results.map((result) => result.year)).size,
     totalSgfs,
     score: gold.length * 10_000 + silver.length * 100 + bronze.length,
   };

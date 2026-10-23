@@ -41,7 +41,10 @@ export function loadClassificationStage({
   }
 
   if (event?.pairs) {
-    validatePairs(playersMap);
+    validatePairs(
+      playersMap,
+      table.map((p) => p.id)
+    );
   }
 
   if (!stage.excluded && !tournamentDetails.top.length) {

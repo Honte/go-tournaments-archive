@@ -28,12 +28,16 @@ export function createPair(members: [Player, Player], rank?: string, country?: s
   };
 }
 
-export function validatePairs(participants: Record<string, Participant>): void {
+export function validatePairs(participantMap: Record<string, Participant>, ids = Object.keys(participantMap)): void {
   const membership = new Map<string, string>();
-  for (const participant of Object.values(participants)) {
+
+  for (const id of ids) {
+    const participant = participantMap[id];
+
     if (!isPair(participant)) {
       throw new Error(`Expected a pair: ${participant.id}`);
     }
+
     for (const member of participant.members) {
       const previous = membership.get(member.id);
       if (previous && previous !== participant.id) {

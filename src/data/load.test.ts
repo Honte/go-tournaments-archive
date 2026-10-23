@@ -1,9 +1,34 @@
 import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
 import { it } from 'node:test';
 import type { EventDefinition } from '@/schema/event';
 import { loadEventDefinition } from '@/events';
 import { loadData, parseTournament } from '@/data/load';
 import { createPlayersHandler } from '@/data/players';
+import { calculateStats } from '@/data/stats';
+
+it('keeps both 2012 participations of Yu Hua Lu with their own partners and categories', async () => {
+  const event = await loadEventDefinition('iapgc');
+  const handler = createPlayersHandler();
+  const file = 'events/iapgc/data/2012.yml';
+  const tournament = await parseTournament(await readFile(file, 'utf8'), file, event, handler);
+  const stats = calculateStats(event, [tournament], handler);
+  const player = stats.players.ylu;
+
+  assert.ok(player);
+  assert.equal(player.totalAttended, 1);
+  assert.equal(player.totalGames, 12);
+  assert.deepEqual(
+    player.results.map((result) => ({
+      partner: result.partner?.name,
+      stages: result.stages.map((stage) => ({ name: stage.name, place: stage.place, categories: stage.categories })),
+    })),
+    [
+      { partner: 'Tang-Yu Tsai', stages: [{ name: 'IAPGC', place: 8, categories: { iapgc: 8 } }] },
+      { partner: 'Yu-Cheng Lai', stages: [{ name: 'WMSG', place: 3, categories: { wmsg: 3 } }] },
+    ]
+  );
+});
 
 it('loads individual and pair events with podium and stage IDs matching the participant dictionary', async () => {
   for (const eventId of ['pgc', 'czpgc']) {

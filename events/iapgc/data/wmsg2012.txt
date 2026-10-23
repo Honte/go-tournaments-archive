@@ -2,11 +2,10 @@
 ;https://www.eurogofed.org/results/world/wmsg2012/
 ; PC[FR, Lille]
 ; DT[2012-08-20,2012-08-23]
-; Lu Yu-Hua temporary changed name
 ;Pl.   Name                     Str  Co. MMS   1    2    3    4    5   Pt   SOS SOSOS
    1 Osawa Maya            6d Nakasone Riki             6d   6d JP   xxxx   9+   8+   2-  16+   5+   3+   2+     4    16    62     2     1     1 |16586504|16501452
    2 Lin Hsiaotung         6d Hung Hsin-Wei             7d   7d TW   xxxx  20+   5+   1+   9+  12+   4+   1-     5    12    70     1     1     2 |15001910|16586438
-   3 Lu Yu_Hua             6d Lai Yu-Cheng              7d   7d TW   xxxx  19+   4+   7+  10+   6+   1-   4+     5    13    66     1     2     3 |00000000|13650813
+   3 Lu Yu-Hua             6d Lai Yu-Cheng              7d   7d TW   xxxx  19+   4+   7+  10+   6+   1-   4+     5    13    66     1     2     3 |16525421|13650813
    4 Kovaleva Natalia      5d Surin Dmitrij             6d   6d RU   xxxx  13+   3-  15+   7+  11+   2-   3-     4    14    63     2     2     4 |10537087|10825254
    5 Su Amy                3d Zhang Lionel              6d   5d US   xxxx  14+   2-  16+   8+   1-   0=   0=     3    16    61     3     1     5 |00000000|15013845
    6 Li Mei-Ying           4d Lee Tik-Sang              4d   4d HK   xxxx  11-  13+  10+  15+   3-   0=   0=     3    14    60     3     2     5

@@ -55,7 +55,7 @@ export function Achievements({ event, player, translations, category }: Achievem
     details[t('table.bestPlace')] = player.bestPlace;
   }
 
-  details[t('table.events')] = player.results.length;
+  details[t('table.events')] = player.totalAttended;
   details[t('table.games')] = player.totalGames;
 
   if (event.generateSgfs && player.totalSgfs > 0) {
