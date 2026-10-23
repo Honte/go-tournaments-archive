@@ -17,7 +17,7 @@
   13 Kishimoto Sanae           5d Watanabe Yusuke           6d   6d JP   xxxx   8-   0+  22+  10+   4-     3    12    55
   14 Su Amy                    4d Zhang Lionel              6d   5d US   xxxx  23+  11-   9-  27+  24+     3    11    64 |00000000|15013845
   15 Nawaruk Waraphan          2d Vongthavaravat Kittipong  4d   3d TH   xxxx  10-  18-  30+  22+  19+     3    10    65 |15025901|00000000
-  16 Harfina XF                2d Thalib Daniel             3d   3d ID   xxxx  17-  29+  27+   7-  23+     3     9    69
+  16 Harfina _                 2d Thalib Daniel             3d   3d ID   xxxx  17-  29+  27+   7-  23+     3     9    69
   17 Bocle Milena              2d Billouet Simon            4d   3d FR   xxxx  16+   1-  10-  31+   9-     2    15    60 |14362018|10462408
   18 Yamazaki Kazuko           5d Sato Kazuhiko             6d   6d JP   xxxx   4-  15+  25+  12-  11-     2    15    60
   19 Simunkova Martina         1k Kuzela Martin             4d   2d CZ   xxxx  24+   3-  26+   8-  15-     2    14    59 |10298904|10250702
