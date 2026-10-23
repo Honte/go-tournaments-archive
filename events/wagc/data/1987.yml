@@ -32,3 +32,4 @@ stages:
       - 11-14 11:B+R round:8 sgf:1987/8-LaurentHeiser-TakaoMatsuda.sgf
       - 12-18 12:B+R round:8 sgf:1987/8-ViktorBogdanov-HelmutWiltschek.sgf
       - 17-18 17:B+R round:1 sgf:1987/1-ArendJanWesthoff-HelmutWiltschek.sgf
+      - 17-26 17:B+R round:2 sgf:1987/2-ArendJanWesthoff-MatsJohansson.sgf
