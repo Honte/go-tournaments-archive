@@ -321,6 +321,7 @@ export type CategoryPlayer = {
   rank: string;
   country?: string;
   place: number | '?';
+  participant?: { id: string; country?: string };
 };
 
 export type CategoryStats = {

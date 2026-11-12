@@ -40,15 +40,29 @@ export function getCategoryCountryMedalists(stats: CategoryStats): CategoryCount
   const medalists: Record<string, CategoryCountryMedalist> = {};
 
   for (const tournament of stats.tournaments) {
-    for (const player of tournament.results) {
-      if (player.country && typeof player.place === 'number' && player.place <= 3) {
-        medalists[player.country] ||= {
-          country: player.country,
-          medals: [[], [], []],
-        };
+    const countedPairs = new Set<string>();
 
-        medalists[player.country].medals[player.place - 1].push(String(tournament.year));
+    for (const player of tournament.results) {
+      const country = player.participant ? player.participant.country : player.country;
+
+      if (!country || typeof player.place !== 'number' || player.place > 3) {
+        continue;
       }
+
+      if (player.participant) {
+        if (countedPairs.has(player.participant.id)) {
+          continue;
+        }
+
+        countedPairs.add(player.participant.id);
+      }
+
+      medalists[country] ||= {
+        country,
+        medals: [[], [], []],
+      };
+
+      medalists[country].medals[player.place - 1].push(String(tournament.year));
     }
   }
 
