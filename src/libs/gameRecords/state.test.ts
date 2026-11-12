@@ -23,8 +23,16 @@ describe('dependent normalization, sorting, and grouping', () => {
     assert.equal(invalid.opponentCountry, undefined);
     assert.equal(countryAnchored.opponent, 'b');
     assert.equal(countryAnchored.opponentCountry, 'DE');
-    assert.equal(normalizeGameRecordsState(games, state({ opponent: 'b' })).opponent, undefined);
+    assert.equal(normalizeGameRecordsState(games, state({ opponent: 'b' })).opponent, 'b');
+    assert.equal(normalizeGameRecordsState(games, state({ opponentCountry: 'fr' })).opponentCountry, 'FR');
     assert.equal(normalizeGameRecordsState(games, state({ country: 'PL', opponent: 'c' })).opponent, undefined);
+  });
+
+  it('keeps the opponent rank range without a selected player or country', () => {
+    const normalized = normalizeGameRecordsState(games, state({ opponentRankMin: '3d', opponentRankMax: '1d' }));
+
+    assert.equal(normalized.opponentRankMin, '1d');
+    assert.equal(normalized.opponentRankMax, '3d');
   });
 
   it('sorts stably by moves and by contiguous rank gap', () => {

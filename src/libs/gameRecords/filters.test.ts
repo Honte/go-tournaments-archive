@@ -60,6 +60,26 @@ describe('game filtering', () => {
     );
   });
 
+  it('matches rank groups on either side when no player is selected', () => {
+    const matches = filterGameRecords(games, state({ playerRankMax: '2d', opponentRankMin: '3d' }));
+
+    assert.deepEqual(
+      matches.map((match) => match.game.sgf),
+      ['g1.sgf', 'g2.sgf']
+    );
+  });
+
+  it('matches opponent and opponent country on either side when no player is selected', () => {
+    assert.deepEqual(
+      filterGameRecords(games, state({ opponent: 'b' })).map((match) => match.game.sgf),
+      ['g1.sgf', 'g4.sgf']
+    );
+    assert.deepEqual(
+      filterGameRecords(games, state({ opponentCountry: 'FR' })).map((match) => match.game.sgf),
+      ['g2.sgf']
+    );
+  });
+
   it('distinguishes global, player-relative, and country-relative winner values', () => {
     const blackWins = buildGameRecordsModel(games, state({ winner: 'black' }));
     const whiteWins = buildGameRecordsModel(games, state({ winner: 'white' }));

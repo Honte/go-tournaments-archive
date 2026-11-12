@@ -199,8 +199,6 @@
     "playerFilters": "Player",
     "opponentFilters": "Opponent",
     "gameFilters": "Game",
-    "selectPlayerOrCountry": "Select a player or country to filter opponents.",
-    "selectPlayer": "Select a player to filter opponents.",
     "player": "Player",
     "country": "Country",
     "opponent": "Opponent",

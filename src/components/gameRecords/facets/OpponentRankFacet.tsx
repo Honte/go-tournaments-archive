@@ -8,16 +8,7 @@ export function OpponentRankFacet({ store, t }: GameFacetProps) {
   const pairs = useStore(store, (storeState) => storeState.options.pairs);
   const state = useStore(store, (storeState) => storeState.model.state);
   const ranks = useStore(store, (storeState) => storeState.model.domains.ranks);
-  const countryVisible = useStore(store, (storeState) => storeState.model.facets.country.visible);
   const setFilters = useStore(store, (storeState) => storeState.setFilters);
-
-  if (!state.player && !state.country) {
-    return (
-      <p className="text-sm text-archive-text-muted">
-        {t(countryVisible ? 'gamesFilter.selectPlayerOrCountry' : 'gamesFilter.selectPlayer')}
-      </p>
-    );
-  }
 
   return (
     <RankRange
