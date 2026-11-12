@@ -1,0 +1,72 @@
+name: 37th World Youth Goe Championship
+stages:
+  - type: tournament
+    file: wygc2022u12.txt
+    category: u12
+    name: U12
+    dir: 2022/u12
+    notes: Preliminary round with groups of 3 and KO with seeded players from top 4 countries. In case all players won 1 game in a group, the youngest advanced to the next round.
+    scoringColumns:
+      - wins
+      - place
+    breakers:
+      - place
+    columns:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+1.75 round:6 sgf:2022/u12/6-HayoonKim-SakiYanagihara.sgf
+      - 1-4 1:B+6.75 round:5 sgf:2022/u12/5-HayoonKim-YiHanChen.sgf
+      - 1-6 1:B+R round:4 sgf:2022/u12/4-HayoonKim-ParamitaSutheerat.sgf
+      - 2-3 2:B+2.75 round:5 sgf:2022/u12/5-SakiYanagihara-ChengzhiYin.sgf
+      - 3-4 3:B+10.25 round:6 sgf:2022/u12/6-ChengzhiYin-YiHanChen.sgf
+      - 4-8 4:B+2.75 round:4 sgf:2022/u12/4-YiHanChen-YunShenChung.sgf
+      - 5-3 3:W+R round:4 sgf:2022/u12/4-CraneKuo-ChengzhiYin.sgf
+      - 5-9 5:B+23.75 round:1 sgf:2022/u12/1-CraneKuo-ZeShawnLo.sgf
+      - 5-14 5:B+R round:3 sgf:2022/u12/3-CraneKuo-JakovSicic.sgf
+      - 6-11 6:B+15.75 round:1 sgf:2022/u12/1-ParamitaSutheerat-AlexandruNicolasPatrascu.sgf
+      - 6-15 6:B+R round:2 sgf:2022/u12/2-ParamitaSutheerat-MateiSincari.sgf
+      - 7-2 2:W+R round:4 sgf:2022/u12/4-BendeBarcza-SakiYanagihara.sgf
+      - 7-10 7:B+R round:3 sgf:2022/u12/3-BendeBarcza-BartikDach.sgf
+      - 7-13 13:W+R round:2 sgf:2022/u12/2-BendeBarcza-KuanchengHuang.sgf
+      - 10-13 10:B+7.75 round:1 sgf:2022/u12/1-BartikDach-KuanchengHuang.sgf
+      - 11-15 11:B+R round:3 sgf:2022/u12/3-AlexandruNicolasPatrascu-MateiSincari.sgf
+      - 12-4 4:W+4.25 round:1 sgf:2022/u12/1-KevinXu-YiHanChen.sgf
+      - 12-16 12:B+R round:3 sgf:2022/u12/3-KevinXu-AlperSulak.sgf
+      - 14-9 9:W+22.75 round:2 sgf:2022/u12/2-JakovSicic-ZeShawnLo.sgf
+      - 16-4 4:W+R round:2 sgf:2022/u12/2-AlperSulak-YiHanChen.sgf
+  - type: tournament
+    file: wygc2022u16.txt
+    category: u16
+    name: U16
+    dir: 2022/u16
+    notes: Preliminary round with groups of 3 and KO with seeded players from top 4 countries.
+    scoringColumns:
+      - wins
+      - place
+    breakers:
+      - place
+    columns:
+      - wins
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:6 sgf:2022/u16/6-YidiXu-SeungcheolChoi.sgf
+      - 1-5 1:B+R round:4 sgf:2022/u16/4-YidiXu-GongZifei.sgf
+      - 3-2 2:W+? round:5 sgf:2022/u16/5-YanchenWu-SeungcheolChoi.sgf
+      - 3-8 3:B+R round:4 sgf:2022/u16/4-YanchenWu-JateGreene.sgf
+      - 4-1 1:W+3.25 round:5 sgf:2022/u16/5-ItsukiKuwabara-YidiXu.sgf
+      - 4-3 3:W+R round:6 sgf:2022/u16/6-ItsukiKuwabara-YanchenWu.sgf
+      - 4-6 4:B+R round:4 sgf:2022/u16/4-ItsukiKuwabara-ShijunSun.sgf
+      - 5-9 5:B+R round:3 sgf:2022/u16/3-GongZifei-YuzeXing.sgf
+      - 7-2 2:W+10.75 round:4 sgf:2022/u16/4-AkiraNuybutara-SeungcheolChoi.sgf
+      - 7-11 7:B+1.25 round:2 sgf:2022/u16/2-AkiraNuybutara-OlesiaMalko.sgf
+      - 8-12 8:B+R round:3 sgf:2022/u16/3-JateGreene-VsevolodOvsiienko.sgf
+      - 8-16 8:B+R round:1 sgf:2022/u16/1-JateGreene-JingTaiLee.sgf
+      - 9-13 9:B+R round:2 sgf:2022/u16/2-YuzeXing-WeiJieTeh.sgf
+      - 10-6 6:W+R round:1 sgf:2022/u16/1-RobertAndreiGrosu-ShijunSun.sgf
+      - 13-5 5:W+8.75 round:1 sgf:2022/u16/1-WeiJieTeh-GongZifei.sgf
+      - 14-6 6:W+R round:2 sgf:2022/u16/2-StefanAdrianRotarita-ShijunSun.sgf
+      - 14-10 10:W+8.25 round:3 sgf:2022/u16/3-StefanAdrianRotarita-RobertAndreiGrosu.sgf
+      - 15-7 7:W+18.25 round:1 sgf:2022/u16/1-AnnaMelnyk-AkiraNuybutara.sgf
+      - 15-11 11:W+4.25 round:3 sgf:2022/u16/3-AnnaMelnyk-OlesiaMalko.sgf
+      - 16-12 12:W+17.25 round:2 sgf:2022/u16/2-JingTaiLee-VsevolodOvsiienko.sgf

@@ -1,0 +1,26 @@
+; TC[W000716]
+; CL[A]
+; EV[17th World Youth Goe Championship]
+; PC[CZ,Praha]
+; KM[7=]
+; TM[80]
+; HA[h9]
+; DT[2000-07-16,2000-07-20]
+;                    17th World Youth Goe Championship , Prague 2000
+;                               July 16 - 20, 2000
+;
+;Pl     Name             Grade  Club   MM S SDOS SOS  1.    2.    3.    4.    5.
+;
+; === SENIOR GROUP (under 18)
+   1 Heo Yeong-ho                   6d KR  xxx     9+/w    5+/w    7+/b    2-/b    3+/w      3+      2+     4    10    15 |12098790
+   2 Wang Lei                       1p CN  xxx     8+/b    6+/b    3+/b    1+/w    5+/b      4+      1-     5    15    15 |12562352
+   3 Li Kuihan                      6d TW  xxx    11+/w    4+/w    2-/w    6+/w    1-/b      1-      4+     3     7    16 |12533356
+   4 Teuber Benjamin                4d DE  HB      7+/b    3-/b   10+/w    5-/b    8+/w      2-      3-     3     6    12 |10437174
+   5 Law Timothy                    5d CA  xxx    12+/b    1-/b    9+/w    4+/w    2-/w      0=      0=     3     5    14 |10986041
+   6 Koszegi Diana                  5d HU  BuPe   10+/b    2-/w   11+/w    3-/b    7+/w      0=      0=     3     5    13 |10301247
+   7 Oda Teppei                     5d JP  xxx     4-/w    8+/b    1-/w   10+/b    6-/b      0=      0=     2     4    14 |12501357
+   8 Frehe Renee                    2d NL  Nijm    2-/w    7-/w   12+/w    9+/w    4-/b      0=      0=     2     2    12 |10313248
+   9 Lo Min-Ming                    3d SG  xxx     1-/b   11+/b    5-/b    8-/b   12+/w      0=      0=     2     1    10 |10950038
+  10 Dugin Timur                    2d RU  16Kz    6-/w   12+/w    4-/b    7-/w   11+/b      0=      0=     2     1     9 |10837354
+  11 Curran Matthew                 3d US  xxx     3-/b    9-/w    6-/b   12+/w   10-/w      0=      0=     1     0    10 |12513358
+  12 Bernathova Anna                3k CZ  Libe    5-/w   10-/b    8-/b   11-/b    9-/b      0=      0=     0     0    10 |10301984

@@ -1,0 +1,7 @@
+; PC[CA, Ottawa]
+; DT[1993-08-01,1993-08-07]
+; 8 players
+1 Wang Yao 31k CN xxx 2+ 1
+2 Lee Hee-Sung 31k KR xxx 1- 2
+3 Chang Li-Yu 31k TW xxx 0= 3
+4 Arizumi Nana 31k JP xxx 0= 3

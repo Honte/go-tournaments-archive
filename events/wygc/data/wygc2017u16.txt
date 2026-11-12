@@ -1,0 +1,14 @@
+; PC[TH, Chiangmai]
+; DT[2017-07-19,2017-07-22]
+ 1 Wang Xinghao             1p CN  XXXX  2+      7+      3+      4+      5+      3+      2+      5    15   15    |17649236
+ 2 Chen Shou-Lien           7d TW  XXXX  1-      11+     9+      6+      4+      4+      1-      4    9    14   
+ 3 Ikemoto Ryota            7d JP  XXXX  5-      10+     1-      7+      9+      1-      4+      3    6    14
+ 4 Wan Kevin                5d CA  XXXX  6+      5+      8+      1-      2-      2-      3-      3    8    17    |18013237
+ 5 Lee Haewon               5d KR  XXXX  3+      4-      12+     8+      1-      0=      0=      3    5    13   
+ 6 Su Gabriella             5d US  Feng  4-      12+     7+      2-      8+      0=      0=      3    4    11    |16574536
+ 7 Krushelnytskyi Valerii   4d UA  Rivn  10+     1-      6-      3-      11+     0=      0=      2    3    14    |15450072
+ 8 Chen Yilin               3d SG  XXXX  11+     9+      4-      5-      6-      0=      0=      2    3    12    |20398125
+ 9 Kamonkitjaluck Woraset   2d TH  XXXX  12+     8-      2-      10+     3-      0=      0=      2    2    11   
+10 Lee Shou_Wei             2d MY  XXXX  7-      3-      11+     9-      12+     0=      0=      2    1    8     |20933704  
+11 Dobranis Denis           3d RO  ATSU  8-      2-      10-     12+     7-      0=      0=      1    0    10    |15350038
+12 Mramorov Andrej          2d RU  77Mo  9-      6-      5-      11-     10-     0=      0=      0    0    11    |15949923

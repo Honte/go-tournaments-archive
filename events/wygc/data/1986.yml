@@ -1,0 +1,12 @@
+name: 3rd World Youth Goe Championship
+stages:
+  - type: tournament
+    file: wygc1986.txt
+    category: u18
+    name: U18
+    notes: No results available. Not sure about exact age category.
+    scoringColumns:    
+      - place
+    breakers:
+      - place
+    findSharedPlaces: true

@@ -1,0 +1,21 @@
+; TC[T130814A]
+; CL[A]
+; EV[30th World Youth Goe Championship]
+; PC[CZ, Praha]
+; DT[2013-08-14,2013-08-18]
+; HA[h9]
+; KM[7.5]
+; TM[75]
+; CM[ (submitted by cieply)]
+;.
+;=== UNDER 12 category
+   1 Seki Kotaro                    6d JP  xxxx    5+/b    4+/b    6+/w    2+/b    3-/b    4+/b    2+/b     4    12    16 |16933873
+   2 Li Yupei                       5d CN  xxxx    6+/b    7+/w    3+/w    1-/w    4+/b    3+/b    1-/w     4    11    15 |16901874
+   3 Song Min-hyeok                 6d KR  xxxx    8+/w    9+/b    2-/b    7+/w    1+/w    2-/w    4+/w     4     9    13 |16913875
+   4 Lai Jyunfu                     6d TW  xxxx   10+/b    1-/w    5+/w    8+/w    2-/w    1-/w    3-/b     3     5    13 |16925876
+   5 Chiu Jeremy                    4d US  xxxx    1-/w   10+/b    4-/b    6+/b    7+/w      0=      0=     3     4    11 |16950879
+   6 Shakhov Kim                    3k RU  77Mo    2-/w    8+/w    1-/b    5-/w    9+/w      0=      0=     2     3    14 |16762284
+   7 Rahardja Lucas                 1d SG  xxxx    9+/b    2-/b   10+/b    3-/b    5-/b      0=      0=     2     1    12 |16950890
+   8 Christiaans Colin              9k NL  Eind    3-/b    6-/b    9+/w    4-/b   10+/w      0=      0=     2     1    10 |15649942
+   9 Defer Leon                    16k CZ  Brno    7-/w    3-/w    8-/b   10+/b    6-/b      0=      0=     1     0    10 |16413650
+  10 Hrbek Michal                  16k CZ  APmG    4-/w    5-/w    7-/w    9-/w    8-/b      0=      0=     0     0    11 |16462589

@@ -1,0 +1,101 @@
+name: Korea Prime Minister Cup Youth Division (U15 - 2nd)
+notes: No WYGC in 2026 as it is played every 2 years from now on.
+stages:
+  - type: tournament
+    file: kpmc2026u15.txt
+    category: kpmc
+    name: KPMC U15
+    dir: 2026/kpmc
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: true
+    games:
+      - 1-3 1:B+R round:7 sgf:2026/kpmc/7-GuoyiLi-ZhijunFu.sgf
+      - 1-7 1:B+R round:3 sgf:2026/kpmc/3-GuoyiLi-LiamLiu.sgf
+      - 1-9 1:B+R round:2 sgf:2026/kpmc/2-GuoyiLi-BartikDach.sgf
+      - 1-11 1:B+R round:1 sgf:2026/kpmc/1-GuoyiLi-AlexandruNicolasPatrascu.sgf
+      - 2-1 1:W+R round:5 sgf:2026/kpmc/5-TianChenChen-GuoyiLi.sgf
+      - 2-5 2:B+2.5 round:1 sgf:2026/kpmc/1-TianChenChen-StephanieLuZihan.sgf
+      - 2-6 2:B+R round:2 sgf:2026/kpmc/2-TianChenChen-EuijunKim.sgf
+      - 2-9 2:B+5.5 round:7 sgf:2026/kpmc/7-TianChenChen-BartikDach.sgf
+      - 3-5 3:B+17.5 round:4 sgf:2026/kpmc/4-ZhijunFu-StephanieLuZihan.sgf
+      - 3-10 10:W+R round:3 sgf:2026/kpmc/3-ZhijunFu-BendeBarcza.sgf
+      - 4-1 1:W+R round:4 sgf:2026/kpmc/4-DanielZhou-GuoyiLi.sgf
+      - 4-2 4:B+0.5 round:3 sgf:2026/kpmc/3-DanielZhou-TianChenChen.sgf
+      - 4-3 3:W+8.5 round:6 sgf:2026/kpmc/6-DanielZhou-ZhijunFu.sgf
+      - 4-8 4:B+R round:7 sgf:2026/kpmc/7-DanielZhou-KweeSongHe.sgf
+      - 4-10 4:B+R round:5 sgf:2026/kpmc/5-DanielZhou-BendeBarcza.sgf
+      - 5-18 5:B+R round:2 sgf:2026/kpmc/2-StephanieLuZihan-SarpEgeYilmaz.sgf
+      - 6-1 1:W+R round:6 sgf:2026/kpmc/6-EuijunKim-GuoyiLi.sgf
+      - 6-5 5:W+R round:7 sgf:2026/kpmc/7-EuijunKim-StephanieLuZihan.sgf
+      - 6-9 6:B+5.5 round:5 sgf:2026/kpmc/5-EuijunKim-BartikDach.sgf
+      - 6-10 6:B+R round:4 sgf:2026/kpmc/4-EuijunKim-BendeBarcza.sgf
+      - 7-3 3:W+5.5 round:5 sgf:2026/kpmc/5-LiamLiu-ZhijunFu.sgf
+      - 7-12 7:B+2.5 round:7 sgf:2026/kpmc/7-LiamLiu-WaiHinLi.sgf
+      - 7-16 7:B+R round:4 sgf:2026/kpmc/4-LiamLiu-ParamitaSutheerat.sgf
+      - 8-2 2:W+R round:4 sgf:2026/kpmc/4-KweeSongHe-TianChenChen.sgf
+      - 8-3 3:W+3.5 round:2 sgf:2026/kpmc/2-KweeSongHe-ZhijunFu.sgf
+      - 8-7 8:B+0.5 round:6 sgf:2026/kpmc/6-KweeSongHe-LiamLiu.sgf
+      - 8-14 8:B+2.5 round:3 sgf:2026/kpmc/3-KweeSongHe-DanayAytaliev.sgf
+      - 8-17 8:B+32.5 round:5 sgf:2026/kpmc/5-KweeSongHe-CherryHu.sgf
+      - 9-13 9:B+6.5 round:4 sgf:2026/kpmc/4-BartikDach-OliverSkocic.sgf
+      - 9-22 9:B+R round:1 sgf:2026/kpmc/1-BartikDach-BarlasMukanov.sgf
+      - 10-2 2:W+32.5 round:6 sgf:2026/kpmc/6-BendeBarcza-TianChenChen.sgf
+      - 10-14 10:B+R round:2 sgf:2026/kpmc/2-BendeBarcza-DanayAytaliev.sgf
+      - 10-16 10:B+R round:7 sgf:2026/kpmc/7-BendeBarcza-ParamitaSutheerat.sgf
+      - 11-6 6:W+16.5 round:3 sgf:2026/kpmc/3-AlexandruNicolasPatrascu-EuijunKim.sgf
+      - 11-12 12:W+R round:6 sgf:2026/kpmc/6-AlexandruNicolasPatrascu-WaiHinLi.sgf
+      - 11-14 11:B+R round:5 sgf:2026/kpmc/5-AlexandruNicolasPatrascu-DanayAytaliev.sgf
+      - 11-22 11:B+24.5 round:2 sgf:2026/kpmc/2-AlexandruNicolasPatrascu-BarlasMukanov.sgf
+      - 12-5 5:W+2.5 round:3 sgf:2026/kpmc/3-WaiHinLi-StephanieLuZihan.sgf
+      - 13-5 5:W+16.5 round:5 sgf:2026/kpmc/5-OliverSkocic-StephanieLuZihan.sgf
+      - 13-7 7:W+R round:2 sgf:2026/kpmc/2-OliverSkocic-LiamLiu.sgf
+      - 13-14 13:B+9.5 round:7 sgf:2026/kpmc/7-OliverSkocic-DanayAytaliev.sgf
+      - 13-17 13:B+27.5 round:3 sgf:2026/kpmc/3-OliverSkocic-CherryHu.sgf
+      - 14-12 14:B+9.5 round:1 sgf:2026/kpmc/1-DanayAytaliev-WaiHinLi.sgf
+      - 14-18 14:B+22.5 round:4 sgf:2026/kpmc/4-DanayAytaliev-SarpEgeYilmaz.sgf
+      - 14-19 14:B+R round:6 sgf:2026/kpmc/6-DanayAytaliev-IktanLeonardoCorderoPaz.sgf
+      - 15-3 3:W+R round:1 sgf:2026/kpmc/1-TranHaiDangNguyen-ZhijunFu.sgf
+      - 15-5 5:W+R round:6 sgf:2026/kpmc/6-TranHaiDangNguyen-StephanieLuZihan.sgf
+      - 15-9 9:W+R round:3 sgf:2026/kpmc/3-TranHaiDangNguyen-BartikDach.sgf
+      - 15-12 12:W+R round:5 sgf:2026/kpmc/5-TranHaiDangNguyen-WaiHinLi.sgf
+      - 15-20 15:B+R round:7 sgf:2026/kpmc/7-TranHaiDangNguyen-OwenDai.sgf
+      - 15-22 15:B+18.5 round:4 sgf:2026/kpmc/4-TranHaiDangNguyen-BarlasMukanov.sgf
+      - 16-4 4:W+R round:2 sgf:2026/kpmc/2-ParamitaSutheerat-DanielZhou.sgf
+      - 16-9 9:W+R round:6 sgf:2026/kpmc/6-ParamitaSutheerat-BartikDach.sgf
+      - 16-19 16:B+R round:5 sgf:2026/kpmc/5-ParamitaSutheerat-IktanLeonardoCorderoPaz.sgf
+      - 17-7 7:W+37.5 round:1 sgf:2026/kpmc/1-CherryHu-LiamLiu.sgf
+      - 17-11 11:W+R round:4 sgf:2026/kpmc/4-CherryHu-AlexandruNicolasPatrascu.sgf
+      - 17-21 17:B+0.5 round:6 sgf:2026/kpmc/6-CherryHu-ChinguunjavSainjargal.sgf
+      - 17-23 17:B+40.5 round:2 sgf:2026/kpmc/2-CherryHu-AlexanderXuePuttonen.sgf
+      - 18-6 6:W+R round:1 sgf:2026/kpmc/1-SarpEgeYilmaz-EuijunKim.sgf
+      - 18-11 11:W+47.5 round:7 sgf:2026/kpmc/7-SarpEgeYilmaz-AlexandruNicolasPatrascu.sgf
+      - 18-24 18:B+81.5 round:3 sgf:2026/kpmc/3-SarpEgeYilmaz-MirelaChalmovianska.sgf
+      - 19-8 8:W+? round:1 sgf:2026/kpmc/1-IktanLeonardoCorderoPaz-KweeSongHe.sgf
+      - 19-23 19:B+R round:7 sgf:2026/kpmc/7-IktanLeonardoCorderoPaz-AlexanderXuePuttonen.sgf
+      - 20-4 4:W+R round:1 sgf:2026/kpmc/1-OwenDai-DanielZhou.sgf
+      - 20-12 12:W+R round:4 sgf:2026/kpmc/4-OwenDai-WaiHinLi.sgf
+      - 20-13 13:W+R round:6 sgf:2026/kpmc/6-OwenDai-OliverSkocic.sgf
+      - 20-16 16:W+13.5 round:3 sgf:2026/kpmc/3-OwenDai-ParamitaSutheerat.sgf
+      - 20-22 20:B+67.5 round:5 sgf:2026/kpmc/5-OwenDai-BarlasMukanov.sgf
+      - 21-10 10:W+R round:1 sgf:2026/kpmc/1-ChinguunjavSainjargal-BendeBarcza.sgf
+      - 21-12 12:W+R round:2 sgf:2026/kpmc/2-ChinguunjavSainjargal-WaiHinLi.sgf
+      - 21-18 18:W+21.5 round:5 sgf:2026/kpmc/5-ChinguunjavSainjargal-SarpEgeYilmaz.sgf
+      - 21-19 19:W+5.5 round:3 sgf:2026/kpmc/3-ChinguunjavSainjargal-IktanLeonardoCorderoPaz.sgf
+      - 21-23 21:B+55.5 round:4 sgf:2026/kpmc/4-ChinguunjavSainjargal-AlexanderXuePuttonen.sgf
+      - 21-24 21:B+44.5 round:7 sgf:2026/kpmc/7-ChinguunjavSainjargal-MirelaChalmovianska.sgf
+      - 22-17 17:W+R round:7 sgf:2026/kpmc/7-BarlasMukanov-CherryHu.sgf
+      - 22-24 22:B+30.5 round:6 sgf:2026/kpmc/6-BarlasMukanov-MirelaChalmovianska.sgf
+      - 23-13 13:W+R round:1 sgf:2026/kpmc/1-AlexanderXuePuttonen-OliverSkocic.sgf
+      - 23-18 18:W+150.5 round:6 sgf:2026/kpmc/6-AlexanderXuePuttonen-SarpEgeYilmaz.sgf
+      - 23-22 22:W+R round:3 sgf:2026/kpmc/3-AlexanderXuePuttonen-BarlasMukanov.sgf
+      - 24-16 16:W+78 round:1 sgf:2026/kpmc/1-MirelaChalmovianska-ParamitaSutheerat.sgf
+      - 24-19 19:W+6.5 round:4 sgf:2026/kpmc/4-MirelaChalmovianska-IktanLeonardoCorderoPaz.sgf
+      - 24-20 20:W+R round:2 sgf:2026/kpmc/2-MirelaChalmovianska-OwenDai.sgf
+      - 24-23 23:W+62.5 round:5 sgf:2026/kpmc/5-MirelaChalmovianska-AlexanderXuePuttonen.sgf

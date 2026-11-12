@@ -1,0 +1,8 @@
+; PC[TW, Taipei]
+; DT[1985-08-08,1985-08-15]
+; August, 18 players Europe were 7 Bernd-Jan Built,11 Raymond Zwiers and 12 Lauri Paatero
+; https://www.eurogofed.org/results/world/wygc1985.htm
+; other version of name is Kong Pyong-ju, Kong Byung-ju, Gong Byeong-joo
+1 Kong Byeong-ju 31k KR xxx 1
+2 Kim Janice 31k US xxx 2
+

@@ -1,0 +1,36 @@
+name: 14th World Youth Goe Championship
+stages:
+  - type: tournament
+    file: wygc1997u12.txt
+    category: u12
+    name: U12
+    dir: 1997/u12
+    notes: After 5 rounds best 4 played for the medals
+    scoringColumns:
+      - wins
+      - sodos
+      - sos
+    breakers:
+      - wins
+      - sodos
+      - sos
+    findSharedPlaces: true
+  - type: tournament
+    file: wygc1997u18.txt
+    category: u18
+    name: U18
+    dir: 1997/u18
+    notes: After 5 rounds best 4 played for the medals. sododos = sum of defeated opponents sodos (used to determine 4th semifinalist)
+    scoringColumns:
+      - wins
+      - sodos
+      - sos
+      - sododos
+    breakers:
+      - wins
+      - sodos
+      - sos
+      - sododos
+    findSharedPlaces: true
+    games:
+      - 2-1 1:W+3 round:7 sgf:1997/u18/7-PyeongkyuPak-XiLiu.sgf

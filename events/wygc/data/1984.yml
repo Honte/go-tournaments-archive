@@ -1,0 +1,20 @@
+name: 1st World Youth Goe Championship
+website: https://www.eurogofed.org/results/world/wygc1984.htm
+stages:
+  - type: tournament
+    file: wygc1984.txt
+    category: u18
+    name: U18
+    notes: Not sure about breakers. 3rd-4th order based on the American Go Journal (in source table from eurogofed.org they are switched). Not sure about exact age category.
+    scoringColumns:
+      - wins
+      - sos
+      - age
+    breakers:
+      - wins
+      - sos
+    columns:
+      - age
+    findSharedPlaces: false
+    games:
+      - 2-1 1:W+R round:5 sgf:1984/5-ChiaJungYang-YoungHwanKim.sgf

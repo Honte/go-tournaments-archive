@@ -1,0 +1,21 @@
+; TC[W010805]
+; CL[A]
+; EV[18th World Youth Goe Championship]
+; PC[US,Maui]
+; KM[7=]
+; TM[80]
+; HA[h9]
+; DT[2001-08-05,2001-08-11]
+;                 18th World Youth Goe Championship, Maui (US)
+;                           August 5 - 11, 2001
+;
+;Pl     Name             Grade  Club   MM S  A0  A1   1.  2.  3.  4.  5.
+; === Junior Division (under 12)
+   1 Kweon Hyeong-chin              7d KR  xxx    8+   2+   3+   5+   7+   3+   2+     5    10    10 |12798368
+   2 Hsieh Yi-Min                   5d TW  xxx    7+   1-   4+   3+   8+   4+   1-     4     7    12 |12733369
+   3 Shikshin Ilja                  3d RU  16Kz   4+   5+   1-   2-   6+   1-   4+     3     7    16 |12013342
+   4 Tang Curtis                    3d US  xxx    3-   6+   2-   8+   5+   2-   3-     3     4    11 |12762365
+   5 Cheng Alden                    3d SG  xxx    6+   3-   7+   1-   4-   0=   0=     2     3    14 |12550362
+   6 Kanae Kawaguchi                1d JP  xxx    5-   4-   8+   7+   3-   0=   0=     2     1     9 |12750364
+   7 Prokop Jan                     4k CZ  Pra    2-   8+   5-   6-   1-   0=   0=     1     0    13 |10433654
+   8 Yang Shun-Zhu                  3k US  Mau    1-   7-   6-   4-   2-   0=   0=     0     0    15 |12786367

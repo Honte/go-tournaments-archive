@@ -1,0 +1,28 @@
+name: 29th World Youth Goe Championship
+stages:
+  - type: tournament
+    file: wygc2012u12.txt
+    category: u12
+    name: U12
+    dir: 2012/u12
+    notes: After 5 rounds best 4 played for the medals    
+    scoringColumns:
+      - wins
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true
+  - type: tournament
+    file: wygc2012u16.txt
+    category: u16
+    name: U16
+    dir: 2012/u16
+    notes: After 5 rounds best 4 played for the medals    
+    scoringColumns:
+      - wins
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true

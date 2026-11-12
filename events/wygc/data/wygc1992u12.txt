@@ -1,0 +1,6 @@
+; PC[US, San Jose]
+; DT[1992-08-12,1992-08-18]
+1 Lin Chih-han 6d TW xxx 2+ 1
+2 Lee Sedol 4d KR xxx 1- 2
+3 Bi Wei 31k CN xxx 0= 3
+4 Lin Cheng_Yuan 31k HK xxx 0= 4

@@ -1,0 +1,22 @@
+; TC[W150823A]
+; CL[A]
+; EV[WYGC 2015, Group U16]
+; PC[CN, Harbin]
+; DT[2015-08-23,2015-08-25]
+; HA[h9]
+; KM[7.5]
+; TM[90]
+; CM[ (submitted by Jana_H)]
+;.
+   1 Li Weiqing                     2p CN  xxx     5+/w    6+/b    4+/b    3+/w    7+/w      4+      2+     5    15    15 |17698219
+   2 Lai Jyun-Fu                    7d TW  xxx     9+/b    3-/b    5+/w    4-/w   10+/b      3+      1-     3     7    14 |16925876
+   3 Kim Jeong-seon                 6d KR  xxx     7+/b    2+/w   10+/w    1-/b    4+/b      2-      4+     4    10    15 |17686218
+   4 Aoki Hirotaka                  7d JP  xxx    12+/b    8+/b    1-/w    2+/b    3-/w      1-      3-     3     5    14 |17698230
+   5 Walka Johannes                 3d DE  S       1-/b   11+/w    2-/b    7+/w    9+/w      0=      0=     3     5    13 |16898431
+   6 Chiu Jeremy                    6d US  xxxx   11+/b    1-/w    9-/w    8+/b   12+/w      0=      0=     3     3    10 |16950879
+   7 Chen Master-Sirithep           2d TH  xxx     3-/w    9+/b    8+/w    5-/b    1-/b      0=      0=     2     4    16 |17633231
+   8 Popov Stepan                   5d RU  16Kz   10+/b    4-/w    7-/b    6-/w   11+/w      0=      0=     2     3    11 |14625897
+   9 Fu Yulja                       4d CN  Harb    2-/w    7-/w    6+/b   12+/b    5-/b      0=      0=     2     3    11 |17625234
+  10 Zhang Melissa                  5d CA  xxxx    8-/w   12+/w    3-/b   11+/b    2-/w      0=      0=     2     1    10 |17637235
+  11 Pylypchuk Andrii               3k UA  Rivn    6-/w    5-/b   12+/b   10-/w    8-/b      0=      0=     1     0    10 |15025175
+  12 Rahardja Lucas                 2d SG  xxxx    4-/w   10-/b   11-/w    9-/w    6-/b      0=      0=     0     0    11 |16950890

@@ -1,0 +1,29 @@
+name: 9th World Youth Goe Championship
+stages:
+  - type: tournament
+    file: wygc1992u12.txt
+    category: u12
+    name: U12
+    dir: 1992/u12
+    notes: No results available
+    scoringColumns:
+      - place
+    breakers:
+      - place
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+3 round:1 sgf:1992/u12/1-ChihhanLin-SedolLee.sgf
+  - type: tournament
+    file: wygc1992u18.txt
+    category: u18
+    name: U18
+    dir: 1992/u18
+    notes: No results available
+    scoringColumns:
+      - place
+    breakers:
+      - place
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:2 sgf:1992/u18/2-HeyangZhou-ChunhsunChou.sgf
+      - 2-3 2:B+R round:1 sgf:1992/u18/1-ChunhsunChou-ToruToyoda.sgf

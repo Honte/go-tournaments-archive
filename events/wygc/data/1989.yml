@@ -1,0 +1,26 @@
+name: 6th World Youth Goe Championship
+stages:
+  - type: tournament
+    file: wygc1989u12.txt
+    category: u12
+    name: U12
+    dir: 1989/u12
+    notes: No results available
+    scoringColumns:
+      - place
+    breakers:
+      - place
+    findSharedPlaces: true
+  - type: tournament
+    file: wygc1989u18.txt
+    category: u18
+    name: U18
+    dir: 1989/u18
+    notes: No results available
+    scoringColumns:
+      - place
+    breakers:
+      - place
+    findSharedPlaces: true
+    games:
+      - 2-1 1:W+R round:1 sgf:1989/u18/1-YiYiLiu-MansooKim.sgf

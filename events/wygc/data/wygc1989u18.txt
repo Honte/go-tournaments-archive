@@ -1,0 +1,5 @@
+; PC[SG, Singapore]
+; DT[1989-08-08,1989-08-11]
+1 Kim Mansoo 31k KR xxx 2+ 1
+2 Liu Yiyi 31k CN xxx 1- 2
+3 Nechanicky Radek 31k CS xxx 0= 3

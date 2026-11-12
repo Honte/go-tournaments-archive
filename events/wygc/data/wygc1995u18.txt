@@ -1,0 +1,14 @@
+; PC[NL, Amsterdam]
+; DT[1995-08-12,1995-08-16]
+   1 Huang Yizhong                  1d CN  xxx    6+   8+  11+   2+   3+   4+   2+     5    13  13
+   2 Kim Kang-Kun                   5d KR  xxx   11+   5+   3+   1-   4+   3+   1-     4    10  15
+   3 Chien James                    5d US  xxx    4+   7+   2-   5+   1-   2-   4+     3     9  18
+   4 Tan Yee-Fan                    3d SG  xxx    3-   9+   8+   7+   2-   1-   3-     3     7  14
+   5 Chou Pin-Chian                 1d TW  xxx    9+   2-   6+   3-  11+   0=   0=     3     6  13
+   6 Lyssyuk Dmitrij                3d UA  xxx    1-  12+   5-   9+  10+   0=   0=     3     3  11
+   7 Fincke Jonas                   2d DE  xxx   10-   3-  12+   4-   8+   0=   0=     3     2   9
+   8 Ishii Akane                    6d JP  xxx   12+   1-   4-  11+   7-   0=   0=     2     1  12
+   9 Roermund Martijn_van           1d NL  xxx    5-   4-  10+   6-  12+   0=   0=     2     1  10
+  10 Lin Cheng_Yuan                 5d HK  xxx    7+  11-   9-  12+   6-   0=   0=     1     3   9
+  11 Dinerstein Alexandr            3d RU  xxx    2-  10+   1-   8-   5-   0=   0=     1     1  15
+  12 Chang Selina                   2d CA  xxx    8-   6-   7-  10-   9-   0=   0=     0     0  11

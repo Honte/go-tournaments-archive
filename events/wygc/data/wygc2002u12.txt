@@ -1,0 +1,23 @@
+; TC[W020812]
+; CL[A]
+; EV[19th World Youth Goe Championship]
+; PC[TH,Bangkonk]
+; KM[7.5]
+; TM[80]
+; HA[h9]
+; DT[2002-08-12,2002-08-16]
+;                19th World Youth Goe Championship, Bangkonk (TH)
+;                           August 12 - 16, 2002
+;
+;Pl     Name             Grade  Club   MM S   x SDOS  1.  2.  3.  4.  5.
+; === Junior Division (under 12)
+   1 Yang Zhourui                   5d CN  xxx    7+   5+   2+   3+   4+   4+   2+     5    15     |12913406
+   2 Lee Ting-Hung                  1d TW  xxx   10+   6+   1-   7+   3+   3+   1-     4     8     |12925407
+   3 Song Sang-min                  5d KR  xxx    5+   4+   8+   1-   2-   2-   4+     3     8     |14033679
+   4 Benjarit Rit                   3d TH  xxx    8+   3-   9+   6+   1-   1-   3-     3     5     |12949409
+   5 Obuchi Kotaro                  5d JP  xxx    3-   1-  10+   8+   6+   0=   0=     3     4     |12950410
+   6 Cheng Feng-Cheng               1d SG  xxx    9+   2-   7+   4-   5-   0=   0=     2     3     |12974412
+   7 Punuerai Purepan               3d TH  xxx    1-  10+   6-   2-   9+   0=   0=     2     1     |12986413
+   8 Kashaev Andrej                 3k RU  77Mo   4-   9+   3-   5-  10+   0=   0=     2     1     |12601215
+   9 Kravec Andrij                  1d UA  Riv    6-   8-   4-  10+   7-   0=   0=     1     0     |12350261
+  10 Chairasmisak Charinee          1d TH  xxx    2-   7-   5-   9-   8-   0=   0=     0     0     |12933415

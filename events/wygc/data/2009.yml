@@ -1,0 +1,30 @@
+name: 26th World Youth Goe Championship
+stages:
+  - type: tournament
+    file: wygc2009u12.txt
+    category: u12
+    name: U12
+    dir: 2009/u12
+    notes: After 5 rounds best 4 played for the medals    
+    scoringColumns:
+      - wins
+      - sodos
+      - sos
+    breakers:
+      - wins
+      - sodos
+      - sos
+    findSharedPlaces: true
+  - type: tournament
+    file: wygc2009u16.txt
+    category: u16
+    name: U16
+    dir: 2009/u16
+    notes: After 5 rounds best 4 played for the medals. European players (age between 16 and 18) were allowed to play in preliminary rounds but not in medal games.    
+    scoringColumns:
+      - wins
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true

@@ -1,0 +1,19 @@
+; DT[2022-08-01,2022-08-31]
+; PC[TW, Fox server]
+; regional 1,3,4 finals 6,29,31
+ 1 Xu Yidi                  2p CN  XXXX  0=      0=      0=      5+      4+      2+      3    1    
+ 2 Choi Seung-cheol         7d KR  XXXX  0=      0=      0=      7+      3+      1-      2    2    
+ 3 Wu Yanchen               7d TW  XXXX  0=      0=      0=      8+      2-      4+      2    3    
+ 4 Kuwabara Itsuki          7d JP  XXXX  0=      0=      0=      6+      1-      3-      1    4    
+ 5 Zifei Gong               5d CA  XXXX  13+     0=      9+      1-      0=      0=      2    5     |20450386
+ 6 Sun Shi-jun              7d TW  XXXX  10+     14+     0=      4-      0=      0=      2    5    
+ 7 Nuybutara Akira          3d TH  XXXX  15+     11+     0=      2-      0=      0=      2    5    
+ 8 Greene Jate              3d US  XXXX  16+     0=      12+     3-      0=      0=      2    5    
+ 9 Xing Yuze                3d DE  XXXX  0=      13+     5-      0=      0=      0=      1    9     |18525012
+10 Grosu Robert-Andrei      1d RO  XXXX  6-      0=      14+     0=      0=      0=      1    9     |18362278
+11 Malko Olesia             2d UA  XXXX  0=      7-      15+     0=      0=      0=      1    9     |17874241
+12 Ovsiienko Vsevolod       4d UA  XXXX  0=      16+     8-      0=      0=      0=      1    9     |17633902
+13 Teh Wei-Jie              3d MY  XXXX  5-      9-      0=      0=      0=      0=      0    13    |19374564
+14 Rotarita Stefan-Adrian   1d RO  XXXX  0=      6-      10-     0=      0=      0=      0    13    |17837270
+15 Melnyk Anna              1d UA  XXXX  7-      0=      11-     0=      0=      0=      0    13    |17886517
+16 Lee Jing-Tai             2d SG  XXXX  8-      12-     0=      0=      0=      0=      0    13   

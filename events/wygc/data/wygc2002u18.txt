@@ -1,0 +1,26 @@
+; TC[W020812]
+; CL[A]
+; EV[19th World Youth Goe Championship]
+; PC[TH,Bangkonk]
+; KM[7.5]
+; TM[80]
+; HA[h9]
+; DT[2002-08-12,2002-08-16]
+;                19th World Youth Goe Championship, Bangkonk (TH)
+;                           August 12 - 16, 2002
+;
+;Pl     Name             Grade  Club   MM S   x SDOS  1.  2.  3.  4.  5.
+;
+; === Senior Division (under 18)
+   1 Li Kang                        2p CN  xxx   10+   2+   4+   3+   5+   4+   2+     5    16     |10998042
+   2 Yi Hyun-ho                     5d KR  xxx   11+   1-   9+   6+   8+   3+   1-     4     7     |12949398
+   3 Yung Jao-Juei                  6d TW  xxx    9+   5+   7+   1-   6+   2-   4+     4     9     |12937397
+   4 Dugin Timur                    4d RU  16Kz   6+   8+   1-   5-   7+   1-   3-     3     6     |10837354
+   5 Guan Mozheng                   6d US  xxx    7+   3-  12+   4+   1-   0=   0=     3     5     |12974401
+   6 Tan Yuzhong                    2d SG  xxx    4-  10+   8+   2-   3-   0=   0=     2     4     |12986402
+   7 Liang Richard                  5d CA  xxx    5-  11+   3-  10+   4-   0=   0=     2     3     |12733358
+   8 Sathyapiwat Puanchai           2d TH  xxx   12+   4-   6-   9+   2-   0=   0=     2     2     |12998403
+   9 Fenech Antoine                 3d FR  67SE   3-  12+   2-   8-  11+   0=   0=     2     1     |10349350
+  10 Lopatjuk Kostjantyn            1d UA  Riv    1-   6-  11+   7-  12+   0=   0=     2     1     |10849190
+  11 Balogh Pal                     5d HU  Debr   2-   7-  10-  12+   9-   0=   0=     1     0     |10498246
+  12 Watanabe Yosuke                5d JP  xxx    8-   9-   5-  11-  10-   0=   0=     0     0     |12901405

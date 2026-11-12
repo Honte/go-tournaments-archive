@@ -1,0 +1,34 @@
+; TC[W261108B]
+; CL[A]
+; EV[21st Korea Prime Minister Cup - Youth Division]
+; PC[KR, Incheon]
+; DT[2026-11-08,2026-11-12]
+; HA[h9]
+; KM[6.5]
+; TM[80]
+; CM[Fischer, 40 min 20 sec (submitted by kamyszyn)]
+;.
+ 1 Li Guoyi                     7d CN  XXXX  11+     9+      7+      4+      2+      6+      3+      7    31   211  
+ 2 Chen Tian-Chen               7d TW  XXXX  5+      6+      4-      8+      1-      10+     9+      5    33   204   |20813276
+ 3 Fu Zhijun                    6d HK  XXXX  15+     8+      10-     5+      7+      4+      1-      5    32   199  
+ 4 Zhou Daniel                  5d CA  XXXX  20+     16+     2+      1-      10+     3-      8+      5    30   194  
+ 5 Zihan Stephanie_Lu           5d SG  XXXX  2-      18+     12+     3-      13+     15+     6+      5    28   186  
+ 6 Kim Eui-jun                  6d KR  XXXX  18+     2-      11+     10+     9+      1-      5-      4    32   192  
+ 7 Liu Liam                     5d US  XXXX  17+     13+     1-      16+     3-      8-      12+     4    30   179   |20825607
+ 8 Song_He Kwee                 5d MY  XXXX  19+     3-      14+     2-      17+     7+      4-      4    28   188   |20462387
+ 9 Dach Bartik                  5d CZ  BMik  22+     1-      15+     13+     6-      16+     2-      4    28   182   |19574280
+10 Barcza Bende                 5d HU  PaGo  21+     14+     3+      6-      4-      2-      16+     4    27   193   |19637948
+11 Patrascu Alexandru-Nicolas   3d RO  GoGo  1-      22+     6-      17+     14+     12-     18+     4    26   169   |18513517
+12 Li Wai_Hin                   6d MO  XXXX  14-     21+     5-      20+     15+     11+     7-      4    23   174   |20833846
+13 Skocic Oliver                3d HR  GKIN  23+     7-      17+     9-      5-      20+     14+     4    22   171   |19613396
+14 Aytaliev Danay               1d KG  Seng  12+     10-     8-      18+     11-     19+     13-     3    26   161   |19650950
+15 Nguyen Tran_Hai_Dang         2d VN  XXXX  3-      19+     9-      22+     12-     5-      20+     3    25   165  
+16 Sutheerat Paramita           4d TH  XXXX  24+     4-      20+     7-      19+     9-      10-     3    22   168   |20849851
+17 Hu Cherry                    2k AT  Go7   7-      23+     13-     11-     8-      21+     22+     3    21   158   |19786745
+18 Yilmaz Sarp_Ege              4k TR  Ank   6-      5-      24+     14-     21+     23+     11-     3    19   163   |19233280
+19 Paz Iktan_Leonardo_Cordero   5k MX  XXXX  8-      15-     21+     24+     16-     14-     23+     3    16   152  
+20 Dai Owen                     1d AU  XXXX  4-      24+     16-     12-     22+     13-     15-     2    21   155   |20825640
+21 Sainjargal Chinguunjav       3k MN  XXXX  10-     12-     19-     23+     18-     17-     24+     2    18   139   |21062426
+22 Mukanov Barlas               5k KZ  alma  9-      11-     23+     15-     20-     24+     17-     2    17   154   |20349307
+23 Xue_Puttonen Alexander      18k SE  Stoc  13-     17-     22-     21-     24+     18-     19-     1    17   129   |20525879
+24 Chalmovianska Mirela        16k SK  361!  16-     20-     18-     19-     23-     22-     21-     0    16   130   |20433413

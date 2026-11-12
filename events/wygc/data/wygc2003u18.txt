@@ -1,0 +1,14 @@
+; PC[CN, Shanghai]
+; DT[2003-08-25,2003-08-30]
+   1 Chen Yaoye                     3p CN  xxx   10+   4+   5+   2+   3+   3+   2+     5    14    14
+   2 Ryu Dong-Wan                   6d KR  xxx    5+   7+   3+   1-   4+   4+   1-     4    11    16
+   3 Tamai Shin                     7d JP  xxx   11+   6+   2-   9+   1-   1-   4+     3     6    15
+   4 Guan Mozheng                   6d US  xxx    9+   1-   6+   7+   2-   2-   3-     3     7    16
+   5 Feng Yanlin                    6d TW  xxx    2-  12+   1-   8+   7+   0=   0=     3     5    14
+   6 Tan Jia-Cheng                  5d SG  xxx    8+   3-   4-  10+  11+   0=   0=     3     4    10
+   7 Sankin Timur                   4d RU  xxx   12+   2-   8+   4-   5-   0=   0=     2     3    13
+   8 Fenech Antoine                 3d FR  xxx    6-  11+   7-   5-   9+   0=   0=     2     2    11
+   9 Fung Jeffrey                   4d CA  xxx    4-  10+  12+   3-   8-   0=   0=     2     2    10
+  10 Christiani Tobias              2d DK  xxx    1-   9-  11+   6-  12-   0=   0=     1     1    12
+  11 Sirichantarant Nattawut        3d TH  xxx    3-   8-  10-  12+   6-   0=   0=     1     1    10
+  12 Jurek Martin                   3d CZ  xxx    7-   5-   9-  11-  10+   0=   0=     1     1     9

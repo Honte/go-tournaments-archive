@@ -1,0 +1,24 @@
+; PC[UK, Hong Kong]
+; DT[1987-08-08,1987-08-10]
+;https://web.archive.org/web/20200919100045/http://goklubnymburk.wz.cz/14/MSj1987.html
+;Pl. Name                  Str  Nat          Pt SOS SODOS   1.   2.   3.   4.   5.
+  1 Xu Ping               6D CN  4  15  11    10+  17+   3-   6+   5+
+  2 Choi Ho-Chul          3D KR  4  14  11     6-  12+  15+   4+   7+
+  3 Hsia Siang            3D TW  4  15  11    18+   8+   1+   5-  10+
+  4 Xiao Wei-Kang         6D CN  4  14  10    12+   6+   9+   2-  11+
+  5 Shih Ih-Cheng         2D TW  4  14  10    16+  13+  14+   3+   1-
+  6 Taki Shutaro          5D JP  3  17   9     2+   4-   8+   1-  13+ 
+  7 Lee Ho-Yin            3D KR  3  12   6    11-  19+  13+   9+   2-
+  8 Chan Wai-Kit          4D HK  3  12   5    15+   3-   6-  17+  12+
+  9 Masasi Saito          5D JP  3  12   5    19+  11+   4-   7-  14+
+ 10 Pa Anthony            4D US  3  11   3     1-  20+  17+  11+   3-
+ 11 Chen Alan             4D US  2  14   4     7+   9-  19+  10-   4-
+ 12 Milczewski Peter_von  2D DE  2  15   4     4-   2-  16+  15+   8-
+ 13 Chen De-Shen          2D SG  2  13   3    14+   5-   7-  18+   6-
+ 14 Tang Lui-Nam          3D HK  2  11   2    13-  16+   5-  20+   9-
+ 15 Buit Bernd-Jan        3D NL  2  11   2     8-  18+   2-  12-  17+
+ 16 Nechanicky Radek      3D CS  2  10   2     5-  14-  12-  19+  18+  
+ 17 Chan Sai-Yiu          3D HK  1  12   0    20+   1-  10-   8-  15-
+ 18 Gabor Stephan         1D HU  1  10   0     3-  15-  20+  13-  16-
+ 19 Lou Yung-Sen          1D MY  1  10   0     9-   7-  11-  16-  20+ 
+ 20 Ing Howard            7k AU  0   7   0    17-  10-  18-  14-  19- 

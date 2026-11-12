@@ -1,0 +1,19 @@
+; TC[W040817]
+; CL[A]
+; EV[21st World Youth Goe Championship]
+; PC[CA, Vancouver]
+; DT[2004-08-17,2004-07-21]
+; HA[h9]
+; KM[7.5]
+; TM[80]
+;=== Junior Division (under 12)
+   1 Park Jung-Hwan                 5d KR  xxx    4+   3+   5+   2-   6+   3+   2+     4    11    16 |13713392
+   2 Tong Yulin                     1p CN  xxx    5+   9+   6+   1+   3+   4+   1-     5    13    13 |13701391
+   3 Chan Naisan                    5d HK  xxx    8+   1-   9+   6+   2-   1-   4+     3     5    14 |14349742
+   4 Rissei Hino                    5d JP  xxx    1-   6-  10+   8+   7+   2-   3-     3     4    10 |13749395
+   5 Sheu Jiacheng                  3d TW  xxx    2-   7+   1-   9+  10+   0=   0=     3     3    12 |13750396
+   6 Tang Curtis                    5d US  xxx    7+   4+   2-   3-   1-   0=   0=     2     5    17 |12762365
+   7 Zhan Boyang                    1d CA  xxx    6-   5-   8+  10+   4-   0=   0=     2     2    10 |13762397
+   8 Surma Mateusz                  4k PL  Rydu   3-  10+   7-   4-   9+   0=   0=     2     1     9 |12837968
+   9 Debarre Thomas                 2k FR  67SE  10+   2-   3-   5-   8-   0=   0=     1     0    13 |12950872
+  10 Lee Chi-Chian                  1k SG  xxx    9-   8-   4-   7-   5-   0=   0=     0     0    11 |13774398

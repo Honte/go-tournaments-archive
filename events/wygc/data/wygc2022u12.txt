@@ -1,0 +1,18 @@
+; DT[2022-08-01,2022-08-31]
+; PC[TW, Fox server]
+ 1 Kim Ha-yoon                  7d KR  XXXX  0=      0=      0=      6+      4+      2+      3    1    
+ 2 Yanagihara Saki              7d JP  XXXX  0=      0=      0=      7+      3+      1-      2    2    
+ 3 Yin Chengzhi                 1p CN  XXXX  0=      0=      0=      5+      2-      4+      2    3    
+ 4 Chen Yi_Han                  4d SG  XXXX  12+     16+     0=      8+      1-      3-      2    4     |20313084
+ 5 Kuo Crane                    3d CA  XXXX  9+      0=      14+     3-      0=      0=      2    5     |20813287
+ 6 Sutheerat Paramita           4d TH  XXXX  11+     15+     0=      1-      0=      0=      2    5     |20849851
+ 7 Barcza Bende                 2k HU  XXXX  0=      13-     10+     2-      0=      0=      1    5     |19637948
+ 8 Chung Yun-Shen               5d TW  XXXX  0=      0=      0=      4-      0=      0=      0    5    
+ 9 Lo Ze_Shawn                  1k MY  XXXX  5-      14+     0=      0=      0=      0=      1    9    
+10 Dach Bartik                  4k CZ  XXXX  13+     0=      7-      0=      0=      0=      1    9     |19574280
+11 Patrascu Alexandru-Nicolas   7k RO  XXXX  6-      0=      15+     0=      0=      0=      1    9     |18513517
+12 Xu Kevin                     3d US  XXXX  4-      0=      16+     0=      0=      0=      1    9    
+13 Huang Kuan-cheng             2d TW  XXXX  10-     7+      0=      0=      0=      0=      1    9   
+14 Sicic Jakov                  8k HR  XXXX  0=      9-      5-      0=      0=      0=      0    14    |19098651
+15 Sincari Matei               11k RO  XXXX  0=      6-      11-     0=      0=      0=      0    14    |19025765
+16 Sulak Alper                  1k TR  XXXX  0=      4-      12-     0=      0=      0=      0    14    |18701034

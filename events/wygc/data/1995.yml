@@ -1,0 +1,58 @@
+name: 12th World Youth Goe Championship
+stages:
+  - type: tournament
+    file: wygc1995u12.txt
+    category: u12
+    name: U12
+    dir: 1995/u12
+    notes: After 5 rounds best 4 played for the medals
+    scoringColumns:
+      - wins
+      - sodos
+      - sos
+    breakers:
+      - wins
+      - sodos
+      - sos
+    findSharedPlaces: true
+    games:
+      - 1-3 1:B+R round:3 sgf:1995/u12/3-YongSooLee-HanchihLin.sgf
+      - 1-5 1:B+R round:4 sgf:1995/u12/4-YonSooLee-GengYangCai.sgf
+      - 2-1 1:W+? round:2 sgf:1995/u12/2-ShuoYang-YongSooLee.sgf
+      - 2-1 1:W+9 round:7 sgf:1995/u12/7-ShuoYang-YongSooLee.sgf
+      - 4-8 4:B+R round:1 sgf:1995/u12/1-MannamiNao-BellamyLiu.sgf
+      - 6-1 1:W+53 round:1 sgf:1995/u12/1-ReneeFrehe-YongSooLee.sgf
+      - 7-5 5:W+? round:3 sgf:1995/u12/3-AntoineFenech-GengYangCai.sgf
+      - 8-6 6:W+? round:3 sgf:1995/u12/3-BellamyLiu-ReneeFrehe.sgf
+  - type: tournament
+    file: wygc1995u18.txt
+    category: u18
+    name: U18
+    dir: 1995/u18
+    notes: After 5 rounds best 4 played for the medals.
+    scoringColumns:
+      - wins
+      - sodos
+      - sos
+    breakers:
+      - wins
+      - sodos
+      - sos
+    findSharedPlaces: true
+    games:
+      - 1-4 1:B+? round:6 sgf:1995/u18/6-YizhongHuang-YeeFanTan.sgf
+      - 1-6 1:B+R round:1 sgf:1995/u18/1-YizhongHuang-DmitrijLyssyuk.sgf
+      - 2-1 1:W+R round:7 sgf:1995/u18/7-KanKunKim-YizhongHuang.sgf
+      - 2-3 2:B+? round:3 sgf:1995/u18/3-KangKunKim-JamesChien.sgf
+      - 2-3 2:B+R round:6 sgf:1995/u18/6-KangKunKim-JamesChien.sgf
+      - 3-1 1:W+? round:5 sgf:1995/u18/5-JamesChien-YizhongHuang.sgf
+      - 3-7 3:B+R round:2 sgf:1995/u18/2-JamesChien-JonasFincke.sgf
+      - 4-3 3:W+R round:1 sgf:1995/u18/1-YeeFanTan-JamesChien.sgf
+      - 4-3 3:W+R round:7 sgf:1995/u18/7-YeeFanTan-JamesChien.sgf
+      - 5-3 3:W+? round:4 sgf:1995/u18/4-PinChianChou-JamesChien.sgf
+      - 7-4 4:W+R round:4 sgf:1995/u18/4-JonasFincke-YeeFanTan.sgf
+      - 8-12 8:B+R round:1 sgf:1995/u18/1-AkaneIshii-SelinaChang.sgf
+      - 9-5 5:W+35 round:1 sgf:1995/u18/1-MartijnvanRoermund-PinChianChou.sgf
+      - 11-2 2:W+R round:1 sgf:1995/u18/1-AlexandrDinerstein-KangKunKim.sgf
+      - 11-8 8:W+? round:4 sgf:1995/u18/4-AlexandrDinerstein-AkaneIshii.sgf
+      - 12-7 7:W+R round:3 sgf:1995/u18/3-SelinaChang-JonasFincke.sgf

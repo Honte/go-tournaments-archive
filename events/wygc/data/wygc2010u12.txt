@@ -1,0 +1,21 @@
+; TC[T100723A]
+; CL[A]
+; EV[World Youth Goe Championship]
+; PC[TW, Magong]
+; DT[2010-07-23,2010-07-25]
+; HA[h9]
+; KM[7.5]
+; TM[75]
+; CM[ (submitted by cieply)]
+;.
+;=== Juniors (Under 12)
+   1 Li Qicheng                     7d CN  xxx    7+   4+   6+   3+   2+   4+   2+     5    14    14 |15825689
+   2 Sin Min-chun                   7d KR  xxx   10+   5+   3-   4+   1-   3+   1-     3     7    16 |15850681
+   3 Chen Zhengxun                  6d TW  xxx    8+   9+   2+   1-   6+   2-   4+     4     7    12 |15862275
+   4 Yue Yi-Fei                     2d SG  xxx    9+   1-   5+   2-  10+   1-   3-     3     5    13 |15837690
+   5 Gao Yinzhan                    6d TW  xxx    6+   2-   4-   7+   8+   0=   0=     3     5    11 |15849691
+   6 Hori Takuto                    6d JP  xxx    5-   7+   1-   8+   3-   0=   0=     2     3    15 |15850692
+   7 Ng Anson                       2d UK  HKng   1-   6-  10+   5-   9+   0=   0=     2     2    12 |15701378
+   8 Fang Kevin                     1d US  xxx    3-  10-   9+   6-   5-   0=   0=     1     1    11 |15862693
+   9 Pitrop Alexandru               3k RO  Boto   4-   3-   8-  10+   7-   0=   0=     1     1    11 |15262940
+  10 Verteletskyy Vladys            5k UA  xxx    2-   8+   7-   9-   4-   0=   0=     1     1    10 |15325145

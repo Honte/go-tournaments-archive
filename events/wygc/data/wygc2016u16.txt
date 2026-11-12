@@ -1,0 +1,22 @@
+; TC[W160804B]
+; CL[A]
+; EV[World Youth Goe Championship 2016, Group U16 Preliminary]
+; PC[JP, Tokyo]
+; DT[2016-08-04,2016-08-05]
+; HA[h9]
+; KM[7.5]
+; TM[90]
+; CM[ (submitted by Jana_H)]
+;.
+   1 Jiang Qirun                    2p CN  xxxx   12+/w    3+/b    2+/w    4+/w    5+/b      3+      2+     5    13    13 |18098234
+   2 Lin Yen-Chen                   7d TW  xxxx   10+/w    8+/w    1-/b    7+/b    4+/w      4+      1-     4     9    14 |18062231
+   3 Ye Aaron                       7d US  Cupe   11+/w    1-/w    4-/b    9+/b    8+/b      1-      4+     3     5    13 |16233712
+   4 Ahn Dongjun                    5d KR  xxxx    9+/w    5+/w    3+/w    1-/b    2-/b      2-      3-     3     8    17 |18033235
+   5 Takei Taishin                  7d JP  xxxx    6+/w    4-/b   12+/b    8+/w    1-/w      0=      0=     3     5    13 |18001236
+   6 Djepov Sinan                   5d BG  Slvp    5-/b    9-/w   10+/b   11+/w    7+/w      0=      0=     3     5    10 |17486205
+   7 Chang Fu_Kang                  5d MY  xxxx    8-/b   10+/w    9+/b    2-/w    6-/b      0=      0=     2     4    13 |17301361
+   8 Wan Kevin                      5d CA  xxxx    7+/w    2-/b   11+/b    5-/b    3-/w      0=      0=     2     3    13 |18013237
+   9 Pittner Arved                  2d DE  B       4-/b    6+/b    7-/w    3-/w   12+/w      0=      0=     2     3    11 |16398371
+  10 Kajmin Vjacheslav              5d RU  50Zh    2-/b    7-/b    6-/w   12+/b   11+/w      0=      0=     2     1    10 |14986257
+  11 Yang Ho_Fei                    6d SG  xxxx    3-/b   12+/w    8-/w    6-/b   10-/b      0=      0=     1     0    10 |16525498
+  12 Bangmuang Suweechak            2d TH  xxxx    1-/b   11-/b    5-/w   10-/w    9-/b      0=      0=     0     0    13 |18025238

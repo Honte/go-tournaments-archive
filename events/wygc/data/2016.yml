@@ -1,0 +1,38 @@
+name: 33rd World Youth Goe Championship
+stages:
+  - type: tournament
+    file: wygc2016u12.txt
+    category: u12
+    name: U12
+    dir: 2016/u12
+    notes: After 5 rounds best 4 played for the medals
+    scoringColumns:
+      - wins
+      - sodos
+      - sos
+    breakers:
+      - wins
+      - sodos
+      - sos
+    findSharedPlaces: true
+    games:
+      - 2-1 1:W+9 round:7 sgf:2016/u12/7-HsunLin-JiwoongYeom.sgf
+      - 4-3 3:W+9 round:7 sgf:2016/u12/7-ChuxuanWang-ShotaHino.sgf
+  - type: tournament
+    file: wygc2016u16.txt
+    category: u16
+    name: U16
+    dir: 2016/u16
+    notes: After 5 rounds best 4 played for the medals
+    scoringColumns:
+      - wins
+      - sodos
+      - sos
+    breakers:
+      - wins
+      - sodos
+      - sos
+    findSharedPlaces: true
+    games:
+      - 2-1 1:W+R round:7 sgf:2016/u16/7-YenChenLin-QirunJiang.sgf
+      - 3-4 3:B+R round:7 sgf:2016/u16/7-AaronYe-DongjunAhn.sgf

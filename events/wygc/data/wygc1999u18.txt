@@ -1,0 +1,24 @@
+; TC[W990815A]
+; CL[A]
+; EV[16th World Youth Go Championship]
+; PC[SG,Singapore]
+; KM[8]
+; TM[60]
+; HA[h9]
+; DT[1999-08-15,1999-08-20]
+;                   16th World Youth Go Championship, Singapore (SG)
+;                               August 15 - 20, 1999
+;
+;Pl     Name             Grade  Club   MM S SOS SDOS  1.   2.   3.   4.   5.
+   1 Peng Quan                      1p CN  xxx    5+   4+   6+   2+   3+   4+   2+     5    16    16 |12037905
+   2 Yi Chae-ung                    6d KR  xxx   12+   7+   3+   1-   5+   3+   1-     4     8    13 |13225509
+   3 Xia Daming                     6d TW  xxx    9+   8+   2-   7+   1-   2-   4+     3     6    15 |12050907
+   4 Wang Jonathan                  6d US  xxx   10+   1-   8+   5-   7+   1-   3-     3     6    14 |10750168
+   5 Kulkov Andrej                  4d RU  16Kz   1-  10+  12+   4+   2-   0=   0=     3     5    14 |10625329
+   6 Cai Geng-Yang                  4d SG  xxx    7-  12+   1-  11+   8+   0=   0=     3     3    10 |10749167
+   7 Yamada Kohei                   5d JP  xxx    6+   2-  11+   3-   4-   0=   0=     2     4    14 |12062908
+   8 Koszegi Diana                  5d HU  BuPe  11+   3-   4-   9+   6-   0=   0=     2     3    12 |10301247
+   9 Hora Jan                       3d CZ  Pra    3-  11-  10+   8-  12+   0=   0=     2     2     8 |10401083
+  10 Hong Michael                   5d CA  xxx    4-   5-   9-  12+  11+   0=   0=     2     1     9 |10762169
+  11 Kuin Merlijn                   3d NL  Amvn   8-   9+   7-   6-  10-   0=   0=     1     2    11 |10233861
+  12 Tan Jia-Cheng                  3d SG  xxx    2-   6-   5-  10-   9-   0=   0=     0     0    14 |10725176

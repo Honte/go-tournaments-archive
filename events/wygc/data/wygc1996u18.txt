@@ -1,0 +1,14 @@
+; PC[KR, Seoul]
+; DT[1996-07-08,1996-07-13]
+   1 Hu Yaoyu                       4p CN  xxx   10+   2+   4+   3+   6+   4+   2+     5    15    15
+   2 Yoo Kyeong-Min                 6d KR  xxx    5+   1-   6+   7+   4+   3+   1-     4    10    15
+   3 Bogatskyy Dmytro               5d UA  xxx    6+   9+   5+   1-   8+   2-   4+     4     9    14
+   4 Yu Cheng-juei                  5d TW  xxx    8+   7+   1-   9+   2-   1-   3-     3     6    15
+   5 Nijhuis Emil                   4d NL  Amst    2-   8+   3-  11+   7+   0=   0=     3     5    13
+   6 Miki Aragaki                   5d JP  xxx    3-  11+   2-  10+   1-   0=   0=     2     3    16
+   7 Kaojie Mai                     4d SG  xxx   12+   4-  10+   2-   5-   0=   0=     2     2    12
+   8 Mero Csaba                     4d HU  BuPe    4-   5-   9+  12+   3-   0=   0=     2     2    12
+   9 Shikshina Svetlana             4d RU  xxx   11+   3-   8-   4-  12+   0=   0=     2     1    10
+  10 Lan Shing-Yuen                 4d HK  xxx    1-  12+   7-   6-  11+   0=   0=     2     1    10
+  11 Wang Jonathan                  5d US  xxx    9-   6-  12+   5-  10-   0=   0=     1     0     9
+  12 Chang Stella                   4d CA  xxx    7-  10-  11-   8-   9-   0=   0=     0     0     9

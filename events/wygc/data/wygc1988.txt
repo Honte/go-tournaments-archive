@@ -1,0 +1,5 @@
+; PC[FR, Paris]
+; DT[1988-08-08,1988-08-11]
+1 Chang Hao 31k CN xxx 2+ 2+ 1
+2 Liu Jing 31k CN xxx 1- 1- 2
+3 Nechanicky Radek 31k CS xxx 0= 0= 3

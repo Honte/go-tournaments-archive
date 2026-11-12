@@ -1,0 +1,21 @@
+; TC[W050824]
+; CL[A]
+; EV[22nd World Youth Goe Championship]
+; PC[ES, Barcelona]
+; DT[2005-08-22,2005-08-26]
+; HA[h9]
+; KM[7.5]
+; TM[75]
+;== Seniors (under 18)
+   1 Song Sang-min                  7d KR  xxx     7+/b    6+/w    3+/w    2+/b    4+/w      4+      2+     5    15    73 |14033679
+   2 Tang Weixing                   7d CN  xxx     8+/w    3-/w    5+/w    1-/w    7+/b      3+      1-     3    16    69 |14062675
+   3 Lai Youzheng                   7d TW  Tai     4+/w    2+/b    1-/b    5+/w    9+/w      2-      4+     4    16    71 |13650813
+   4 Nemlij Igor                    5d RU  16Kz    3-/b    8+/b    7+/b    6+/w    1-/b      1-      3-     3    16    67 |10886359
+   5 Tormanen Antti                 3d FI  OGP     9+/w   10+/b    2-/b    3-/b    8+/b      0=      0=     3    13    62 |12949310
+   6 Santipojana Kamon              2d TH  xxx    11+/w    1-/b    9+/b    4-/b   12+/w      0=      0=     3    11    61 |14013681
+   7 Suzuki Shinji                  6d JP  xxx     1-/w   11+/w    4-/w   10+/w    2-/w      0=      0=     2    14    64 |14001680
+   8 Zhang Hao                      5d CA  xxx     2-/b    4-/w   10+/b   12+/b    5-/w      0=      0=     2    11    79 |14050674
+   9 Barthel Floris                 3d NL  Utre    5-/b   12+/b    6-/w   11+/w    3-/b      0=      0=     2    11    59 |13013715
+  10 Zhong Sichen                   5d US  xxx    12+/w    5-/w    8-/w    7-/b   11+/b      0=      0=     2     8    57 |14037683
+  11 Ong Siong-Hwai                 3d SG  xxx     6-/b    7-/b   12+/w    9-/b   10-/w      0=      0=     1     9    54 |14025682
+  12 Anguila Oscar                  1k ES  Gir    10-/b    9-/w   11-/b    8-/w    6-/b      0=      0=     0    10    50 |13562450

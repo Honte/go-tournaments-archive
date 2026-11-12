@@ -1,0 +1,22 @@
+; TC[T100723A]
+; CL[A]
+; EV[World Youth Goe Championship]
+; PC[TW, Magong]
+; DT[2010-07-23,2010-07-25]
+; HA[h9]
+; KM[7.5]
+; TM[75]
+; CM[ (submitted by cieply)]
+;. JP player couldn't play in semifinal because of his age!
+   1 Han Seung-chu                  7d KR  xxx    8+   2+   3+   5+   4+   4+   2+     5    15    15 |15849680
+   2 Zhao Baolong                   7d CN  xxx   12+   1-  10+   3+   5+   3+   1-     4     8    13 |15862682
+   3 Xu Jiayuan                     6d TW  xxx    6+   9+   1-   2-   7+   2-   4+     3     7    16 |15874683
+   4 Sun Calvin                     7d US  xxx    5-   7+  11+   6+   1-   1-   3-     3     6    14 |14050685
+   5 Nishimura Takumi               5d JP  xxx    4+  10+   9+   1-   2-   0=   0=     3     6    15 |15886684
+   6 Podpera Lukas                  4d CZ  APWS   3-  11+   8+   4-   9+   0=   0=     3     5    11 |13201914
+   7 Surma Mateusz                  4d PL  Rydu  10-   4-  12+   8+   3-   0=   0=     2     3    10 |12837968
+   8 Huang Andrew                   6d CA  xxx    1-  12+   6-   7-  11+   0=   0=     2     2    12 |15486702
+   9 Wong Vanessa                   5d UK  HKng  11+   3-   5-  10+   6-   0=   0=     2     2    11 |14349467
+  10 Thaweephong Theera             3d TH  xxx    7+   5-   2-   9-  12-   0=   0=     1     2    12 |15898685
+  11 Kwa Jie-Hui                    3d SG  Sing   9-   6-   4-  12+   8-   0=   0=     1     1    11 |15025351
+  12 Zheng Tixiong                  5d TW  xxx    2-   8-   7-  11-  10+   0=   0=     1     1    10 |15801687

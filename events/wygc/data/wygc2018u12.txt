@@ -1,0 +1,20 @@
+; TC[T180718A]
+; CL[A]
+; EV[World Youth Goe Championship 2018 - Under 12]
+; PC[DE, Bacharach]
+; DT[2018-07-18,2018-07-23]
+; HA[h9]
+; KM[8.5]
+; TM[100]
+; CM[Ing byoyomi, In Ing Overtime, each player may buy up to three overtime periods. The length of each is 1/6 the basic time. Entering each costs another 2 points. Exceeding the third overtime period loses the game on time. (submitted by mlanger)]
+;.
+   1 Xiao Zebin                     6d CN  Beij    7+/b    6+/b    2+/w    3+/w    4+/b      4+/b    2+/b   5    14    14 |18701936
+   2 Kim Eunji                      5d KR  Seou    6+/w    4+/w    1-/b   10+/b    3-/b      3+/w    1-/w   3     6    15 |18733935
+   3 Huang Yu-Teng                  6d TW  Taip    5+/b   10+/w    9+/w    1-/b    2+/w      2-/b    4+/b   4     8    13 |18713937
+   4 Shimizu Takuya                 6d JP  Toky    9+/b    2-/b    8+/w    5+/w    1-/w      1-/w    3-/w   3     5    13 |18725938
+   5 Li Elwin                       1d US  Wash    3-/w    7+/b   10+/w    4-/b    9+/b      0=      0=     3     4    11 |18749940
+   6 Malko Olesia                   7k UA  Rivn    2-/b    1-/w    7+/w    9+/b    8-/w      0=      0=     2     3    12 |17874241
+   7 Gimadiev Artur                 4k RU  16Kz    1-/w    5-/w    6-/b    8+/b   10+/b      0=      0=     2     2    12 |17849073
+   8 Goh Gan_Wei                    6k MY  Kual   10-/b    9-/w    4-/b    7-/w    6+/b      0=      0=     1     2     9 |18750941
+   9 Bugaj Antoni                   5k PL  Wars    4-/w    8+/b    3-/b    6-/w    5-/w      0=      0=     1     1    13 |17898078
+  10 Li Shizhao                     5k DE  W       8+/w    3-/b    5-/b    2-/w    7-/w      0=      0=     1     1    13 |17813389

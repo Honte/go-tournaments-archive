@@ -1,0 +1,92 @@
+name: 17th World Youth Goe Championship
+stages:
+  - type: tournament
+    file: wygc2000u12.txt
+    category: u12
+    name: U12
+    dir: 2000/u12
+    notes: After 5 rounds best 4 played for the medals
+    scoringColumns:
+      - wins
+      - sodos
+      - sos
+    breakers:
+      - wins
+      - sodos
+      - sos
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:2 sgf:2000/u12/2-TongyunKang-ChenHuang.sgf
+      - 1-2 1:B+R round:7 sgf:2000/u12/7-TongyunKang-ChenHuang.sgf
+      - 1-3 1:B+R round:3 sgf:2000/u12/3-TongyunKang-YinanZhou.sgf
+      - 1-4 1:B+R round:4 sgf:2000/u12/4-TongyunKang-IljaShikshin.sgf
+      - 2-3 2:B+R round:4 sgf:2000/u12/4-ChenHuang-YinanZhou.sgf
+      - 2-3 2:B+R round:6 sgf:2000/u12/6-ChenHuang-YinanZhou.sgf
+      - 2-5 2:B+R round:3 sgf:2000/u12/3-ChenHuang-EricLui.sgf
+      - 2-7 2:B+R round:1 sgf:2000/u12/1-ChenHuang-AldenCheng.sgf
+      - 3-4 3:B+R round:2 sgf:2000/u12/2-YinanZhou-IljaShikshin.sgf
+      - 3-4 3:B+R round:7 sgf:2000/u12/7-YinanZhou-IljaShikshin.sgf
+      - 3-8 3:B+31 round:1 sgf:2000/u12/1-YinanZhou-MykolaGlushchenko.sgf
+      - 4-1 1:W+R round:6 sgf:2000/u12/6-IljaShikshin-TongyunKang.sgf
+      - 5-1 1:W+R round:5 sgf:2000/u12/5-EricLui-TongyunKang.sgf
+      - 5-4 4:W+R round:1 sgf:2000/u12/1-EricLui-IljaShikshin.sgf
+      - 5-7 5:B+31 round:2 sgf:2000/u12/2-EricLui-AldenCheng.sgf
+      - 5-8 5:B+R round:4 sgf:2000/u12/4-EricLui-MykolaGlushchenko.sgf
+      - 6-1 1:W+R round:1 sgf:2000/u12/1-JanProkop-TongyunKang.sgf
+      - 6-2 2:W+101 round:5 sgf:2000/u12/5-JanProkop-ChenHuang.sgf
+      - 6-4 4:W+27 round:3 sgf:2000/u12/3-JanProkop-IljaShikshin.sgf
+      - 6-8 6:B+R round:2 sgf:2000/u12/2-JanProkop-MykolaGlushchenko.sgf
+      - 7-3 3:W+33 round:5 sgf:2000/u12/5-AldenCheng-YinanZhou.sgf
+      - 7-6 6:W+3 round:4 sgf:2000/u12/4-AldenCheng-JanProkop.sgf
+      - 7-8 7:B+R round:3 sgf:2000/u12/3-AldenCheng-MykolaGlushchenko.sgf
+      - 8-4 4:W+29 round:5 sgf:2000/u12/5-MykolaGlushchenko-IljaShikshin.sgf
+  - type: tournament
+    file: wygc2000u18.txt
+    category: u18
+    name: U18
+    dir: 2000/u18
+    notes: After 5 rounds best 4 played for the medals
+    scoringColumns:
+      - wins
+      - sodos
+      - sos
+    breakers:
+      - wins
+      - sodos
+      - sos
+    findSharedPlaces: true
+    games:
+      - 1-2 2:W+3 round:4 sgf:2000/u18/4-YeonghoHeo-LeiWang.sgf
+      - 1-3 1:B+R round:6 sgf:2000/u18/6-YeonghoHeo-KuihanLi.sgf
+      - 1-7 1:B+R round:3 sgf:2000/u18/3-YeonghoHeo-TeppeiOda.sgf
+      - 2-1 1:W+13 round:7 sgf:2000/u18/7-LeiWang-YeonghoHeo.sgf
+      - 2-3 2:B+R round:3 sgf:2000/u18/3-LeiWang-KuihanLi.sgf
+      - 2-4 2:B+R round:6 sgf:2000/u18/6-LeiWang-BenjaminTeuber.sgf
+      - 2-5 5:W+R round:5 sgf:2000/u18/5-LeiWang-TimothyLaw.sgf
+      - 2-6 2:B+R round:2 sgf:2000/u18/2-LeiWang-DianaKoszegi.sgf
+      - 2-8 2:B+R round:1 sgf:2000/u18/1-LeiWang-ReneeFrehe.sgf
+      - 3-1 1:W+R round:5 sgf:2000/u18/5-KuihanLi-YeonghoHeo.sgf
+      - 4-3 3:W+R round:2 sgf:2000/u18/2-BenjaminTeuber-KuihanLi.sgf
+      - 4-3 3:W+R round:7 sgf:2000/u18/7-BenjaminTeuber-KuihanLi.sgf
+      - 4-5 5:W+9 round:4 sgf:2000/u18/4-BenjaminTeuber-TimothyLaw.sgf
+      - 4-7 4:B+9 round:1 sgf:2000/u18/1-BenjaminTeuber-TeppeiOda.sgf
+      - 5-1 5:B+R round:2 sgf:2000/u18/2-TimothyLaw-YeonghoHeo.sgf
+      - 5-12 5:B+37 round:1 sgf:2000/u18/1-TimothyLaw-AnnaBernathova.sgf
+      - 6-3 3:W+15 round:4 sgf:2000/u18/4-DianaKoszegi-KuihanLi.sgf
+      - 6-10 6:B+11 round:1 sgf:2000/u18/1-DianaKoszegi-TimurDugin.sgf
+      - 7-6 6:W+R round:5 sgf:2000/u18/5-TeppeiOda-DianaKoszegi.sgf
+      - 7-8 7:B+3 round:2 sgf:2000/u18/2-TeppeiOda-ReneeFrehe.sgf
+      - 7-10 7:B+27 round:4 sgf:2000/u18/4-TeppeiOda-TimurDugin.sgf
+      - 8-4 4:W+R round:5 sgf:2000/u18/5-ReneeFrehe-BenjaminTeuber.sgf
+      - 9-1 1:W+R round:1 sgf:2000/u18/1-MinMingLo-YeonghoHeo.sgf
+      - 9-5 5:W+R round:3 sgf:2000/u18/3-MinMingLo-TimothyLaw.sgf
+      - 9-8 8:W+11 round:4 sgf:2000/u18/4-MinMingLo-ReneeFrehe.sgf
+      - 9-11 9:B+R round:2 sgf:2000/u18/2-MinMingLo-MatthewCurran.sgf
+      - 10-4 4:W+R round:3 sgf:2000/u18/3-TimurDugin-BenjaminTeuber.sgf
+      - 10-11 10:B+7 round:5 sgf:2000/u18/5-TimurDugin-MatthewCurran.sgf
+      - 11-3 3:W+R round:1 sgf:2000/u18/1-MatthewCurran-KuihanLi.sgf
+      - 11-6 6:W+35 round:3 sgf:2000/u18/3-MatthewCurran-DianaKoszegi.sgf
+      - 12-8 8:W+R round:3 sgf:2000/u18/3-AnnaBernathova-ReneeFrehe.sgf
+      - 12-9 9:W+R round:5 sgf:2000/u18/5-AnnaBernathova-MinMingLo.sgf
+      - 12-10 10:W+9 round:2 sgf:2000/u18/2-AnnaBernathova-TimurDugin.sgf
+      - 12-11 11:W+R round:4 sgf:2000/u18/4-AnnaBernathova-MatthewCurran.sgf

@@ -1,0 +1,23 @@
+; TC[W110813B]
+; CL[A]
+; EV[28th World Youth Goe Championship Under 12]
+; PC[RO, Bucuresti]
+; DT[2011-08-13,2011-08-17]
+; HA[h9]
+; KM[7.5]
+; TM[90]
+; CM[ (submitted by viorel.arsinoaia)]
+;.
+; 5 qualification rounds and 2 playoff rounds
+;
+; Pl Name                   Grd Co Club  NBW  SODOS SOS DC
+ 1 Liao Yuanpei             5d CN  Chen  7    24   24  0   4+/w0   5+/w0   2+/w0   3+/w0   7+/w0   4+/w0   2+/w0    |16274709
+ 2 Chen Chi-Jui             6d TW  Taip  5    15   29  0   6+/b0   3+/w0   1-/b0   5+/w0   4+/b0   3+/w0   1-/b0    |16262708
+ 3 Lee Ye-Chan              4d KR  Puch  4    8    25  0   10+/b0  2-/b0   6+/w0   1-/b0   5+/b0   2-/b0   4+/b0    |16286710
+ 4 Ye Aaron                 4d US  Cupe  3    4    27  0   1-/b0   8+/b0   9+/b0   10+/w0  2-/w0   1-/b0   3-/w0    |16233712
+ 5 Shibano Toramaru         6d JP  Kana  2    3    19  0   7+/w0   1-/b0   10+/w0  2-/b0   3-/w0   0=       0=      |16201713
+ 6 Verteletskyi Vladyslav   2d UA  Rivn  2    3    14  1   2-/w0   7+/w0   3-/b0   8-/b0   9+/w0   0=       0=      |15325145
+ 7 Yue Yi-Fei               2d SG  Sing  2    3    14  0   5-/b0   6-/b0   8+/w0   9+/w0   1-/b0   0=       0=      |15837690
+ 8 Popov Stepan             1d RU  16Kz  2    3    9   0   9-/b0   4-/w0   7-/b0   6+/w0   10+/b0  0=       0=      |14625897
+ 9 Dobranis Darius          4k RO  Bist  1    2    10  0   8+/w0   10-/b0  4-/w0   7-/b0   6-/b0   0=       0=      |15049716
+10 State Silvestru          2k RO  LocB  1    1    12  0   3-/w0   9+/w0   5-/b0   4-/b0   8-/w0   0=       0=      |15362039

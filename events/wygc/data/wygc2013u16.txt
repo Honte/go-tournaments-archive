@@ -1,0 +1,24 @@
+; TC[T130814A]
+; CL[A]
+; EV[30th World Youth Goe Championship]
+; PC[CZ, Praha]
+; DT[2013-08-14,2013-08-18]
+; HA[h9]
+; KM[7.5]
+; TM[75]
+; CM[ (submitted by cieply)]
+;.
+;
+;=== UNDER 16 category
+   1 Wang Zejin                     1p CN  xxxx    5+/w   11+/b    3+/w    4+/w    2+/w    4+/b    2+/w     5    14    14 |16962869
+   2 Shibano Toramaru               7d JP  Kana    8+/w    4-/w    6+/b    5+/b    1-/b    3+/w    1-/b     3     8    16 |16201713
+   3 Huang Shinyuan                 7d TW  xxxx    7+/b    9+/w    1-/b   10+/b    4+/w    2-/b    4+/b     4     9    14 |16586493
+   4 Sim Jae-ik                     7d KR  xxxx    6+/w    2+/b   11+/b    1-/b    3-/b    1-/w    3-/w     3     7    16 |16974870
+   5 Lu Andrew                      6d US  xxxx    1-/b   12+/w    7+/w    2-/w    8+/b      0=      0=     3     4    12 |16501529
+   6 Chaow Charoensomsamai          3d TH  xxxx    4-/b    8+/w    2-/w   12+/b    7+/b      0=      0=     3     4    10 |16986871
+   7 Yeroshkin Oleksandr            1d UA  Rivn    3-/w   10+/b    5-/b    9+/w    6-/w      0=      0=     2     4    14 |13649108
+   8 Xi Yue                         3d SG  xxxx    2-/b    6-/b    9+/b   11+/w    5-/w      0=      0=     2     3    12 |16998872
+   9 Song Amira                     4d CA  Toro   10+/w    3-/b    8-/w    7-/b   12+/w      0=      0=     2     2    10 |16249706
+  10 State Silvestru                1d RO  LocB    9-/b    7-/w   12+/b    3-/w   11+/b      0=      0=     2     1     9 |15362039
+  11 Kajmin Vjacheslav              2d RU  50Zh   12+/b    1-/w    4-/w    8-/b   10-/w      0=      0=     1     0    12 |14986257
+  12 Havelka Samuel                 2k CZ  TOst   11-/w    5-/b   10-/w    6-/w    9-/b      0=      0=     0     0    11 |15662372

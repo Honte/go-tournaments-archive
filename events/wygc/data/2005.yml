@@ -1,0 +1,67 @@
+name: 22nd World Youth Goe Championship
+stages:
+  - type: tournament
+    file: wygc2005u12.txt
+    category: u12
+    name: U12
+    dir: 2005/u12
+    notes: After 5 rounds best 4 played for the medals
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+1 round:7 sgf:2005/u12/7-XingwenLiao-HyeonNa.sgf
+      - 1-2 1:B+R round:2 sgf:2005/u12/2-XingwenLiao-HyeonNa.sgf
+      - 1-4 1:B+R round:4 sgf:2005/u12/4-XingwenLiao-CalvinSun.sgf
+      - 1-5 1:B+13 round:5 sgf:2005/u12/5-XingwenLiao-TakayukiHoshi.sgf
+      - 2-3 2:B+1 round:5 sgf:2005/u12/5-HyeonNa-JiajiaMissingham.sgf
+      - 2-3 2:B+19 round:6 sgf:2005/u12/6-HyeonNa-JiajiaMissingham.sgf
+      - 2-5 2:B+R round:3 sgf:2005/u12/3-HyeonNa-TakayukiHoshi.sgf
+      - 3-1 1:W+15 round:3 sgf:2005/u12/3-JiajiaMissingham-XingwenLiao.sgf
+      - 3-5 3:B+11 round:1 sgf:2005/u12/1-JiajiaMissingham-TakayukiHoshi.sgf
+      - 3-6 3:B+11 round:4 sgf:2005/u12/4-JiajiaMissingham-MihaiValentinSerban.sgf
+      - 3-7 3:B+R round:2 sgf:2005/u12/2-JiajiaMissingham-JunWeiLee.sgf
+      - 4-7 4:B+R round:3 sgf:2005/u12/3-CalvinSun-JunWeiLee.sgf
+      - 5-7 5:B+63 round:4 sgf:2005/u12/4-TakayukiHoshi-JunWeiLee.sgf
+      - 5-8 5:B+R round:2 sgf:2005/u12/2-TakayukiHoshi-OlegKocherov.sgf
+      - 6-7 6:B+R round:5 sgf:2005/u12/5-MihaiValentinSerban-JunWeiLee.sgf
+      - 8-4 4:W+31 round:5 sgf:2005/u12/5-OlegKocherov-CalvinSun.sgf
+  - type: tournament
+    file: wygc2005u18.txt
+    category: u18
+    name: U18
+    dir: 2005/u18
+    notes: After 5 rounds best 4 played for the medals
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: true
+    games:
+      - 2-1 1:W+9 round:7 sgf:2005/u18/7-WeixingTang-SangminSong.sgf
+      - 4-1 1:W+21 round:6 sgf:2005/u18/6-IgorNemlij-SangminSong.sgf
+      - 4-7 4:B+R round:3 sgf:2005/u18/3-IgorNemlij-ShinjiSuzuki.sgf
+      - 4-8 4:B+R round:2 sgf:2005/u18/2-IgorNemlij-HaoZhang.sgf
+      - 5-2 5:B+R round:3 sgf:2005/u18/3-AnttiTormanen-WeixingTang.sgf
+      - 5-3 3:W+R round:4 sgf:2005/u18/4-AnttiTormanen-YouzhengLai.sgf
+      - 5-8 5:B+21 round:5 sgf:2005/u18/5-AnttiTormanen-HaoZhang.sgf
+      - 5-10 5:B+R round:2 sgf:2005/u18/2-AnttiTormanen-SichenZhong.sgf
+      - 6-1 1:W+R round:2 sgf:2005/u18/2-KamonSantipojana-SangminSong.sgf
+      - 6-4 4:W+R round:4 sgf:2005/u18/4-KamonSantipojana-IgorNemlij.sgf
+      - 8-10 8:B+R round:3 sgf:2005/u18/3-HaoZhang-SichenZhong.sgf
+      - 8-12 8:B+R round:4 sgf:2005/u18/4-HaoZhang-OscarAnguila.sgf
+      - 9-3 3:W+R round:5 sgf:2005/u18/5-FlorisBarthel-YouzhengLai.sgf
+      - 9-12 9:B+R round:2 sgf:2005/u18/2-FlorisBarthel-OscarAnguila.sgf
+      - 11-6 6:W+5 round:1 sgf:2005/u18/1-SiongHwaiOng-KamonSantipojana.sgf
+      - 11-7 7:W+R round:2 sgf:2005/u18/2-SiongHwaiOng-ShinjiSuzuki.sgf
+      - 12-10 10:W+R round:1 sgf:2005/u18/1-OscarAnguila-SichenZhong.sgf

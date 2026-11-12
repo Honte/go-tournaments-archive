@@ -1,0 +1,88 @@
+name: 39th World Youth Goe Championship
+stages:
+  - type: tournament
+    file: wygc2024u12.txt
+    category: u12
+    name: U12
+    dir: 2024/u12
+    notes: After 4 rounds best 4 played for the medals
+    scoringColumns:
+      - wins
+      - sodos
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sodos
+      - sos
+      - sosos
+    findSharedPlaces: true
+    games:
+      - 1-4 1:B+R round:2 sgf:2024/u12/2-YimiaoZhang-RyanZhang.sgf ogs:https://online-go.com/review/1323027
+      - 2-1 1:W+R round:3 sgf:2024/u12/3-HongYouLin-YimiaoZhang.sgf ogs:https://online-go.com/review/1323295
+      - 2-1 1:W+R round:6 sgf:2024/u12/6-HongYouLin-YimiaoZhang.sgf ogs:https://online-go.com/review/1324369
+      - 2-4 2:B+R round:5 sgf:2024/u12/5-HongYouLin-RyanZhang.sgf ogs:https://online-go.com/review/1324306
+      - 2-6 2:B+5 round:2 sgf:2024/u12/2-HongYouLin-BendeBarcza.sgf ogs:https://online-go.com/review/1323024
+      - 3-1 1:W+R round:4 sgf:2024/u12/4-TaeJunPark-YimiaoZhang.sgf ogs:https://online-go.com/review/1323422
+      - 3-1 1:W+R round:5 sgf:2024/u12/5-TaeJunPark-YimiaoZhang.sgf ogs:https://online-go.com/review/1324309
+      - 3-4 3:B+R round:6 sgf:2024/u12/6-TaeJunPark-RyanZhang.sgf ogs:https://online-go.com/review/1324371
+      - 3-6 3:B+3 round:1 sgf:2024/u12/1-TaeJunPark-BendeBarcza.sgf ogs:https://online-go.com/review/1322923
+      - 3-8 3:B+67.5 round:3 sgf:2024/u12/3-TaeJunPark-AlbertBruckner.sgf ogs:https://online-go.com/review/1323296
+      - 4-5 4:B+R round:1 sgf:2024/u12/1-RyanZhang-SomaHino.sgf ogs:https://online-go.com/review/1322910
+      - 4-9 4:B+6.5 round:4 sgf:2024/u12/4-RyanZhang-YidYong.sgf ogs:https://online-go.com/review/1323424
+      - 5-2 2:W+R round:4 sgf:2024/u12/4-SomaHino-HongYouLin.sgf ogs:https://online-go.com/review/1323420
+      - 5-7 5:B+31.5 round:2 sgf:2024/u12/2-SomaHino-BartikDach.sgf ogs:https://online-go.com/review/1323026
+      - 5-9 5:B+21.5 round:3 sgf:2024/u12/3-SomaHino-YidYong.sgf ogs:https://online-go.com/review/1323300
+      - 6-10 6:B+R round:3 sgf:2024/u12/3-BendeBarcza-MiyaBarcus.sgf ogs:https://online-go.com/review/1323302
+      - 7-1 1:W+R round:1 sgf:2024/u12/1-BartikDach-YimiaoZhang.sgf ogs:https://online-go.com/review/1322911
+      - 7-4 4:W+R round:3 sgf:2024/u12/3-BartikDach-RyanZhang.sgf ogs:https://online-go.com/review/1323291
+      - 8-2 2:W+99 round:1 sgf:2024/u12/1-AlbertBruckner-HongYouLin.sgf ogs:https://online-go.com/review/1322921
+      - 8-6 6:W+87 round:4 sgf:2024/u12/4-AlbertBruckner-BendeBarcza.sgf ogs:https://online-go.com/review/1323435
+      - 9-3 3:W+33 round:2 sgf:2024/u12/2-YidYong-TaeJunPark.sgf ogs:https://online-go.com/review/1323022
+      - 10-7 7:W+48.5 round:4 sgf:2024/u12/4-MiyaBarcus-BartikDach.sgf ogs:https://online-go.com/review/1323426
+      - 10-8 8:W+R round:2 sgf:2024/u12/2-MiyaBarcus-AlbertBruckner.sgf ogs:https://online-go.com/review/1323020
+  - type: tournament
+    file: wygc2024u18.txt
+    category: u18
+    name: U18
+    dir: 2024/u18
+    notes: After 4 rounds best 4 played for the medals
+    scoringColumns:
+      - wins
+      - sodos
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sodos
+      - sos
+      - sosos
+    findSharedPlaces: true
+    games:
+      - 1-8 1:B+R round:1 sgf:2024/u18/1-TaeHeonKim-OlesiaMalko.sgf ogs:https://online-go.com/review/1322918
+      - 2-1 1:W+0.5 round:6 sgf:2024/u18/6-ChanghaoMa-TaeHeonKim.sgf ogs:https://online-go.com/review/1324370
+      - 2-1 2:B+17 round:4 sgf:2024/u18/4-ChanghaoMa-TaeHeonKim.sgf ogs:https://online-go.com/review/1323421
+      - 2-4 2:B+R round:5 sgf:2024/u18/5-ChanghaoMa-XiaofanXu.sgf ogs:https://online-go.com/review/1324304
+      - 2-8 2:B+R round:3 sgf:2024/u18/3-ChanghaoMa-OlesiaMalko.sgf ogs:https://online-go.com/review/1323299
+      - 3-1 1:W+3 round:3 sgf:2024/u18/3-YuHaoCheng-TaeHeonKim.sgf ogs:https://online-go.com/review/1323292
+      - 3-1 1:W+R round:5 sgf:2024/u18/5-YuHaoCheng-TaeHeonKim.sgf ogs:https://online-go.com/review/1324308
+      - 3-7 3:B+13 round:4 sgf:2024/u18/4-YuHaoCheng-AnjuYoshida.sgf ogs:https://online-go.com/review/1323425
+      - 3-10 3:B+12.5 round:1 sgf:2024/u18/1-YuHaoCheng-YuzeXing.sgf ogs:https://online-go.com/review/1322915
+      - 4-2 2:W+25 round:2 sgf:2024/u18/2-XiaofanXu-ChanghaoMa.sgf ogs:https://online-go.com/review/1323023
+      - 4-3 3:W+8.5 round:6 sgf:2024/u18/6-XiaofanXu-YuHaoCheng.sgf ogs:https://online-go.com/review/1324368
+      - 4-6 4:B+R round:4 sgf:2024/u18/4-XiaofanXu-SubtantikulChitsanupong.sgf ogs:https://online-go.com/review/1323427
+      - 4-10 4:B+1 round:3 sgf:2024/u18/3-XiaofanXu-YuzeXing.sgf ogs:https://online-go.com/review/1323293
+      - 4-11 4:B+R round:1 sgf:2024/u18/1-XiaofanXu-DerekZhou.sgf ogs:https://online-go.com/review/1322912
+      - 5-3 3:W+R round:2 sgf:2024/u18/2-VsevolodOvsiienko-YuHaoCheng.sgf ogs:https://online-go.com/review/1323028
+      - 5-6 6:W+6.5 round:3 sgf:2024/u18/3-VsevolodOvsiienko-SubtanikulChitsanupong.sgf ogs:https://online-go.com/review/1323290
+      - 5-9 5:B+23.5 round:4 sgf:2024/u18/4-VsevolodOvsiienko-HongJunWong.sgf ogs:https://online-go.com/review/1323430
+      - 6-1 1:W+R round:2 sgf:2024/u18/2-SubtantikulChitsanupong-TaeHeonKim.sgf ogs:https://online-go.com/review/1323025
+      - 6-12 6:B+R round:1 sgf:2024/u18/1-SubtantikulChitsanupong-KevinSu.sgf ogs:https://online-go.com/review/1322914
+      - 7-5 5:W+7.5 round:1 sgf:2024/u18/1-AnjuYoshida-VsevolodOvsiienko.sgf ogs:https://online-go.com/review/1322927
+      - 7-9 7:B+13.5 round:3 sgf:2024/u18/3-AnjuYoshida-HongJunWong.sgf ogs:https://online-go.com/review/1323298
+      - 7-10 7:B+? round:2 sgf:2024/u18/2-AnjuYoshida-YuzeXing.sgf ogs:https://online-go.com/review/1323030
+      - 10-12 10:B+R round:4 sgf:2024/u18/4-YuzeXing-KevinSu.sgf ogs:https://online-go.com/review/1324033
+      - 11-8 8:W+R round:4 sgf:2024/u18/4-DerekZhou-OlesiaMalko.sgf ogs:https://online-go.com/review/1323418
+      - 11-9 9:W+16.5 round:2 sgf:2024/u18/2-DerekZhou-HongJunWong.sgf ogs:https://online-go.com/review/1323021
+      - 12-8 8:W+R round:2 sgf:2024/u18/2-KevinSu-OlesiaMalko.sgf ogs:https://online-go.com/review/1323019
+      - 12-11 11:W+R round:3 sgf:2024/u18/3-KevinSu-DerekZhou.sgf ogs:https://online-go.com/review/1323294

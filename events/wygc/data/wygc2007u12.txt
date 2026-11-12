@@ -1,0 +1,18 @@
+; TC[W070807]
+; CL[A]
+; EV[24th World Youth Goe Championship]
+; PC[US, Boston]
+; DT[2007-08-07,2007-08-10]
+; HA[h9]
+; KM[7.5]
+; TM[75]
+;
+;=== Juniors (under 12)
+   1 Han Seung-yu                   6d KR  xxx    8+   3+   4+   2-   5+   3+   2+     4     9    13 |14701841
+   2 Cao Cong                       6d CN  xxx    7+   4-   3+   1+   8+   4+   1-     4     8    11 |14713842
+   3 Wang Yuan-Yun                  5d TW  xxx    5+   1-   2-   7+   6+   1-   4+     3     6    14 |14749845
+   4 Saitou Masaki                  6d JP  xxx    6+   2+   1-   5-   7+   2-   3-     3     7    14 |14725843
+   5 Sun Calvin                     6d US  xxx    3-   8+   6+   4+   1-   0=   0=     3     5    12 |14050685
+   6 Woo Chun-Yin                   2k UK  xxxx   4-   7+   5-   8+   3-   0=   0=     2     1    10 |13933436
+   7 Toma Theodor                   2k RO  Brai   2-   6-   8+   3-   4-   0=   0=     1     0    12 |12513754
+   8 Leow Gabriel                   2d SG  xxx    1-   5-   7-   6-   2-   0=   0=     0     0    14 |14750846

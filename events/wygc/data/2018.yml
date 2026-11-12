@@ -1,0 +1,32 @@
+name: 35th World Youth Goe Championship
+stages:
+  - type: tournament
+    file: wygc2018u12.txt
+    category: u12
+    name: U12
+    dir: 2018/u12
+    notes: After 5 rounds best 4 played for the medals    
+    scoringColumns:
+      - wins
+      - sodos
+      - sos
+    breakers:
+      - wins
+      - sodos
+      - sos
+    findSharedPlaces: true
+  - type: tournament
+    file: wygc2018u16.txt
+    category: u16
+    name: U16
+    dir: 2018/u16
+    notes: After 5 rounds best 4 played for the medals    
+    scoringColumns:
+      - wins
+      - sodos
+      - sos
+    breakers:
+      - wins
+      - sodos
+      - sos
+    findSharedPlaces: true
