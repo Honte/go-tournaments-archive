@@ -6,7 +6,7 @@ const EVENT_CONFIG: EventDefinition = {
   showCountry: true,
   showBestPlace: true,
   hideGamesWithoutSgf: true,
-  unknownRanks: ['31k'],  
+  unknownRanks: ['31k'],
   categories: ['u18', 'u16', 'u12', 'kpmc'],
 };
 
