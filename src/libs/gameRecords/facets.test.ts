@@ -78,7 +78,8 @@ describe('game facets', () => {
     const narrowed = buildGameRecordsModel(games, state({ country: 'PL', opponentCountry: 'DE' }));
     const selected = buildGameRecordsModel(games, state({ ...narrowed.state, opponent: 'b' }));
 
-    assert.equal(buildGameRecordsModel(games, state()).facets.opponent.visible, false);
+    assert.equal(buildGameRecordsModel(games, state()).facets.opponent.visible, true);
+    assert.equal(buildGameRecordsModel(games, state()).facets.opponentCountry.visible, true);
     assert.equal(countryModel.facets.opponent.visible, true);
     assert.deepEqual(toCounts(countryModel.facets.opponent.options), { b: 2, d: 1, e: 1 });
     assert.equal(narrowed.facets.opponent.visible, true);

@@ -1,0 +1,20 @@
+; TC[W160804A]
+; CL[A]
+; EV[World Youth Goe Championship 2016, Group U12 Preliminary]
+; PC[JP, Tokyo]
+; DT[2016-08-04,2016-08-05]
+; HA[h9]
+; KM[7.5]
+; TM[90]
+; CM[ (submitted by Jana_H)]
+;.
+   1 Yeom Jiwoong                   5d KR  xxxx   10+/b    7+/b    4-/w    5+/w    3+/w      3+      2+     4     8    13 |18037217
+   2 Lin Hsun                       6d TW  xxxx    7+/w    4-/w    3-/b    6+/b    8+/w      4+      1-     3     6    14 |18013215
+   3 Hino Shota                     6d JP  xxxx    6+/b    5+/b    2+/w    4-/w    1-/b      1-      4+     3     8    17 |18049218
+   4 Wang Chuxuan                   5d CN  xxxx    9+/w    2+/b    1+/b    3+/b    6+/w      2-      3-     5    13    13 |18001214
+   5 Ko Yokushii                    6d JP  xxxx    8+/b    3-/w    7+/w    1-/b   10+/w      0=      0=     3     4    11 |18025216
+   6 Gao Ji_Yang                    3d SG  xxxx    3-/w    9+/b    8+/w    2-/w    4-/b      0=      0=     2     3    14 |18050219
+   7 Cheng Matthew                  1k US  xxxx    2-/b    1-/w    5-/b   10+/w    9+/w      0=      0=     2     1    11 |18050230
+   8 Arsinoaia Ioan_Alexandru       1k RO  Tims    5-/w   10+/b    6-/b    9+/w    2-/b      0=      0=     2     1     9 |16213263
+   9 Klochikhin Ivan                4k RU  59So    4-/b    6-/w   10+/w    8-/b    7-/b      0=      0=     1     0    11 |16501078
+  10 Marz Ferdinand                 9k DE  J       1-/w    8-/w    9-/b    7-/b    5-/b      0=      0=     0     0    12 |16213659

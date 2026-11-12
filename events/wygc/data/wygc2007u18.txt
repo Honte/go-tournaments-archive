@@ -1,0 +1,22 @@
+; TC[W070807]
+; CL[A]
+; EV[24th World Youth Goe Championship]
+; PC[US, Boston]
+; DT[2007-08-07,2007-08-10]
+; HA[h9]
+; KM[7.5]
+; TM[75]
+;
+;=== Seniors (under 18)
+   1 Min Sang-yeon                  7d KR  xxx   11+   4+   8+   2-   3+   3+   2+     4     9    14 |14750835
+   2 Liao Xingwen                   1p CN  xxx   10+   7+   3+   1+   5+   4+   1-     5    13    13 |12562638
+   3 Lo Sheng-Chieh                 6d TW  xxx    6+   8+   2-   7+   1-   1-   4+     3     7    16 |14762836
+   4 Dugin Artem                    5d RU  16Kz   5+   1-   7-   9+   8+   2-   3-     3     7    13 |12049576
+   5 Mitic Dusan                    4d RS  Nis    4-  11+  12+   6+   2-   0=   0=     3     5    13 |10649507
+   6 Kachanovskyj Artem             4d UA  Riv    3-  12+   9+   5-   7+   0=   0=     3     5    11 |12662870
+   7 Umetani Yuki                   6d JP  xxx    0+   2-   4+   3-   6-   0=   0=     2     5    14 |14774837
+   8 Zhou William                   6d US  xxx   12+   3-   1-  10+   4-   0=   0=     2     2    12 |14798839
+   9 Angsuwotai Boonyawai           3d TH  xxx    0-  10+   6-   4-  11+   0=   0=     2     2     8 |14733840
+  10 Zhang Hao                      5d CA  xxx    2-   9-  11+   8-  12-   0=   0=     1     1    11 |14050674
+  11 Fidrmuc Ondrej                 4d CZ  Brn    1-   5-  10-  12+   9-   0=   0=     1     1    11 |12501247
+  12 Ong Siong-Hwai                 4d SG  Sin    8-   6-   5-  11-  10+   0=   0=     1     1    10 |14025682

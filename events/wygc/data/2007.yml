@@ -1,0 +1,54 @@
+name: 24th World Youth Goe Championship
+stages:
+  - type: tournament
+    file: wygc2007u12.txt
+    category: u12
+    name: U12
+    dir: 2007/u12
+    notes: After 5 rounds best 4 played for the medals
+    scoringColumns:
+      - wins
+      - sodos
+      - sos
+    breakers:
+      - wins
+      - sodos
+      - sos
+    findSharedPlaces: true
+    games:
+      - 1-3 1:B+? round:6 sgf:2007/u12/6-SeungyuHan-YuanYunWang.sgf
+      - 2-4 2:B+R round:6 sgf:2007/u12/6-CongCao-MasakiSaitou.sgf
+      - 5-3 3:W+? round:1 sgf:2007/u12/1-CalvinSun-YuanYunWang.sgf
+      - 5-4 5:B+? round:4 sgf:2007/u12/4-CalvinSun-MasakiSaitou.sgf
+      - 5-8 5:B+46 round:2 sgf:2007/u12/2-CalvinSun-GabrielLeow.sgf
+  - type: tournament
+    file: wygc2007u18.txt
+    category: u18
+    name: U18
+    dir: 2007/u18
+    notes: After 5 rounds best 4 played for the medals
+    scoringColumns:
+      - wins
+      - sodos
+      - sos
+    breakers:
+      - wins
+      - sodos
+      - sos
+    findSharedPlaces: true
+    games:
+      - 1-3 1:B+R round:6 sgf:2007/u18/6-SangyeonMin-ShengChiehLo.sgf
+      - 1-8 1:B+R round:3 sgf:2007/u18/3-SangyeonMin-WilliamZhou.sgf
+      - 2-1 2:B+3 round:4 sgf:2007/u18/4-XingwenLiao-SangyeonMin.sgf
+      - 2-3 2:B+? round:3 sgf:2007/u18/3-XingwenLiao-ShengChiehLo.sgf
+      - 2-4 2:B+R round:6 sgf:2007/u18/6-XingwenLiao-ArtemDugin.sgf
+      - 2-5 2:B+? round:5 sgf:2007/u18/5-XingwenLiao-DusanMitic.sgf
+      - 2-7 2:B+R round:2 sgf:2007/u18/2-XingwenLiao-YukiUmetani.sgf
+      - 2-10 2:B+R round:1 sgf:2007/u18/1-XingwenLiao-HaoZhang.sgf
+      - 4-1 1:W+? round:2 sgf:2007/u18/2-ArtemDugin-SangyeonMin.sgf
+      - 4-8 4:B+? round:5 sgf:2007/u18/5-ArtemDugin-WilliamZhou.sgf
+      - 5-11 5:B+R round:2 sgf:2007/u18/2-DusanMitic-OndrejFidrmuc.sgf
+      - 8-3 3:W+R round:2 sgf:2007/u18/2-WilliamZhou-ShengChiehLo.sgf
+      - 8-12 8:B+R round:1 sgf:2007/u18/1-WilliamZhou-SiongHwaiOng.sgf
+      - 10-8 8:W+7.5 round:4 sgf:2007/u18/4-HaoZhang-WilliamZhou.sgf
+      - 12-6 6:W+R round:2 sgf:2007/u18/2-SiongHwaiOng-ArtemKachanovskyj.sgf

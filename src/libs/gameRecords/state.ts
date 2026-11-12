@@ -77,7 +77,6 @@ export function normalizeGameRecordsState(
   }
 
   state.opponent =
-    (state.player || state.country) &&
     state.opponent &&
     players.has(state.opponent) &&
     hasStructuralMatch(games, { player: state.player, country: state.country, opponent: state.opponent })
@@ -86,7 +85,6 @@ export function normalizeGameRecordsState(
 
   state.opponentCountry =
     countriesEnabled &&
-    (state.player || state.country) &&
     state.opponentCountry &&
     countries.has(state.opponentCountry.toUpperCase()) &&
     hasStructuralMatch(games, {
@@ -104,8 +102,7 @@ export function normalizeGameRecordsState(
   ] as const) {
     if (
       state[key] &&
-      (!state[principal] ||
-        state[key] === state[principal] ||
+      (state[key] === state[principal] ||
         !hasStructuralMatch(games, { player: state.player, opponent: state.opponent, [key]: state[key] }))
     ) {
       state[key] = undefined;
@@ -115,10 +112,6 @@ export function normalizeGameRecordsState(
   normalizeRange(state, 'movesMin', 'movesMax');
   normalizeRankRange(state, 'playerRankMin', 'playerRankMax');
   normalizeRankRange(state, 'opponentRankMin', 'opponentRankMax');
-
-  if (!state.player && !state.country) {
-    state.opponentRankMin = state.opponentRankMax = undefined;
-  }
 
   return groupingForState(
     state,

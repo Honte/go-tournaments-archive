@@ -1,0 +1,22 @@
+; TC[W190730A]
+; CL[A]
+; EV[36th World Youth Goe Championship 2019 - U12 group]
+; PC[MY, Kuala Lumpur]
+; DT[2019-07-30,2019-07-31]
+; HA[h9]
+; KM[8]
+; TM[90]
+; CM[ (submitted by Jana_H)]
+;.
+   1 Jung Junwoo                    5d KR  xxxx   10+/w    5+/b    9+/w    3-/b    2-/w      3+      2+     3     7    16    60 |19325548
+   2 Saga Suntaro                   7d JP  xxxx   12+/b    3-/w   10+/w    6+/b    1+/b      4+      1-     4     7    12    69 |19337560
+   3 Zhang XinYu                    5d CN  xxxx    7+/b    2+/b    4+/w    1+/w    6+/b      1-      4+     5    15    15    70 |19313547
+   4 Hsu Ni-Ni                      6d TW  xxxx    9+/b    6+/w    3-/b    5+/w    7+/w      2-      3-     4     9    14    66 |19337549
+   5 Chen YuQi                      4d SG  xxxx   11+/w    1-/w    8+/b    4-/b    9+/b      0=      0=     3     5    12    61 |19349561
+   6 Qi Alexander_ShengYi           4d US  xxxx    8+/b    4-/b   11+/w    2-/w    3-/w      0=      0=     2     3    16    61 |19350562
+   7 Xing Yuze                      2d DE  HD      3-/w   11-/b   12+/w    8+/b    4-/b      0=      0=     2     2    12    61 |18525012
+   8 Pishchalnikov Artemij          2d RU  59So    6-/w   10+/b    5-/w    7-/w   12+/b      0=      0=     2     2     9    62 |16549071
+   9 Shchepaniuk Oleksandr          4k UA  Kyiv    4-/w   12+/b    1-/b   11+/b    5-/w      0=      0=     2     1    11    65 |18062924
+  10 Tan Yan_Ying                   5k MY  xxxx    1-/b    8-/w    2-/b   12+/w   11+/b      0=      0=     2     1    10    60 |19362563
+  11 Teh Wei-Jie                    5k MY  xxxx    5-/b    7+/w    6-/b    9-/w   10-/w      0=      0=     1     2    11    61 |19374564
+  12 Carrafa Noah_Flaherty         15k US  xxxx    2-/w    9-/w    7-/b   10-/b    8-/w      0=      0=     0     0    12    54 |19333567

@@ -1,0 +1,59 @@
+; TC[W261108A]
+; CL[A]
+; EV[21st Korea Prime Minister Cup]
+; PC[KR, Incheon]
+; DT[2026-11-08,2026-11-12]
+; HA[h9]
+; KM[6.5]
+; TM[80]
+; CM[Fischer, 40 min 20 sec (submitted by kamyszyn)]
+;.
+ 1 Ma Tianfang                     8d CN  Chin  26+     22+     6+      2+      12+     4+      7+      7    32   215   |19713452
+ 2 Lai Yu-Cheng                    7d TW  XXXX  29+     14+     15+     1-      17+     5+      4+      6    32   210   |13650813
+ 3 Yoder Eric                      6d US  XXXX  43+     5-      30+     24+     13+     9+      14+     6    27   189   |19674897
+ 4 Takumi Yusaku                   7d JP  XXXX  30+     9+      13+     8+      5+      1-      2-      5    35   209  
+ 5 Kim Kibaek                      7d KR  Seol  27+     3+      19+     7+      4-      2-      16+     5    33   208   |17962659
+ 6 Huang Andrew                    6d CA  XXXX  18+     12+     1-      16+     9-      10+     15+     5    33   199   |15486702
+ 7 Park Yongwoon                   7d HK  XXXX  32+     25+     16+     5-      11+     8+      1-      5    33   192   |20325085
+ 8 Sam In-Hang                     6d MO  XXXX  33+     20+     23+     4-      14+     7-      21+     5    29   197   |15013834
+ 9 Eeden Gilles_van                6d NL  Nijm  44+     4-      32+     15+     6+      3-      18+     5    29   193   |10201598
+10 Tanapatsopol Vorawat            5d TH  XXXX  45+     13-     35+     29+     20+     6-      12+     5    25   187   |17301240
+11 Chen Yi_Han                     6d SG  XXXX  37+     19-     34+     47+     7-      38+     17+     5    24   172.5 |20313084
+12 Cheung Michael                  5d UK  NoCb  31+     6-      21+     28+     1-      27+     10-     4    30   191   |20374068
+13 Dobranis Denis                  6d RO  ATSU  35+     10+     4-      19+     3-      14-     28+     4    30   190   |15350038
+14 Lei Xin                         5d AU  XXXX  48+     2-      33+     23+     8-      13+     3-      4    29   184   |18798318
+15 Labouret Florent                6d FR  38Gr  40+     24+     2-      9-      42+     22+     6-      4    29   178   |16486184
+16 Bernardis Davide                6d IT  Faen  36+     28+     7-      6-      31+     25+     5-      4    28   192   |17886946
+17 Medak Stjepan                   6d HR  Vrba  21+     23-     26+     27+     2-      28+     11-     4    28   182   |17437574
+18 Jimenez Enrique                 3d ES  Pedr  6-      31+     20-     30+     34+     24+     9-      4    27   183   |17898419
+19 Welticke Jonas                  6d DE  LU    34+     11+     5-      13-     21-     31+     32+     4    27   182   |15786287
+20 Degirmenci Ozgur                5d TR  Ist   41+     8-      18+     25+     10-     21-     26+     4    27   178   |14713589
+21 Keipi Pekka                     3d FI  YliG  17-     46+     12-     36+     19+     20+     8-      4    26   182   |14562339
+22 Fragman Amir                    6d IL  MGC   39+     1-      27-     26+     41+     15-     33+     4    25   173.5 |13625315
+23 Yatsenko Dmytro                 5d UA  Kyiv  46+     17+     8-      14-     24-     47+     29+     4    24   179   |10286870
+24 Dach Zbynek                     4d CZ  BMik  49+     15-     47+     3-      23+     18-     27+     4    24   173.5 |10233872
+25 Nguyen Ngoc_Chau_Kym            5d VN  XXXX  42+     7-      29+     20-     47+     16-     35+     4    23   181  
+26 Liu Dewei                       4d IE  Belf  1-      39+     17-     22-     43+     34+     20-     3    27   170.5 |20174374
+27 Chen Hung_Kim                   4d MY  XXXX  5-      43+     22+     17-     35+     12-     24-     3    26   182   |21033419
+28 Matoh Leon                      5d SI  Mari  38+     16-     36+     12-     33+     17-     13-     3    25   180   |10398608
+29 Bojanic Milos                   4d RS  BGmp  2-      48+     25-     10-     37+     46+     23-     3    25   160.5 |10337085
+30 Kralik Ondrej                   4d SK  GKK   4-      44+     3-      18-     36-     45+     42+     3    24   172   |16350279
+31 Makany Zalan                    1d HU  PaGo  12-     18-     39+     38+     16-     19-     43+     3    24   167.5 |19762952
+32 Walaszewski Maksym              4d PL  Bydg  7-      42+     9-      33-     44+     41+     19-     3    23   174   |15050673
+33 Petrauskas Andrius              4d LT  Viln  8-      41+     14-     32+     28-     42+     22-     3    23   173   |12733589
+34 Silfver Anton                   4d SE  Link  19-     37+     11-     49+     18-     26-     40+     3    23   154   |15933236
+35 Henao Brandal                   3d CO  XXXX  13-     45+     10-     48+     27-     36+     25-     3    22   165   |19325482
+36 Rodrigues_da_Cruz Renan_Pablo   2d BR  XXXX  16-     38+     28-     21-     30+     35-     46+     3    22   162   |20186342
+37 Lindstad Eivind                 1k NO  Oslo  11-     34-     44-     45+     29-     0+      41+     3    18.5 151.5 |20149635
+38 Kristensen Lars                 2k DK  KGK   28-     36-     0+      31-     48+     11-     47+     3    18   158   |13998413
+39 Hu Lilly                        1d AT  Go7   22-     26-     31-     0+      45-     44+     48+     3    16.5 151.5 |19737641
+40 Quintero Ricardo                2d MX  Mex   15-     47+     41-     43-     0+      48+     34-     3    15   156   |10898789
+41 Huanbai Merei                   1d KZ  Kara  20-     33-     40+     46+     22-     32-     37-     2    22   150.5 |20537704
+42 Moreno-Vega Osvaldo             1d CL  XXXX  25-     32-     45+     44+     15-     33-     30-     2    21   161   |15033843
+43 Tirado Alvaro                   1d VE  XXXX  3-      27-     46-     40+     26-     49+     31-     2    20   154.5 |20174418
+44 Correa Franco_Ignacio           1d AR  XXXX  9-      30-     37+     42-     32-     39-     49+     2    20   148.5 |20533953
+45 Rosat David                     2k CH  Yver  10-     35-     42-     37-     39+     30-     0+      2    20   147   |14733246
+46 Khatanbaatar Amarbayasgalan     1k MN  XXXX  23-     21-     43+     41-     49+     29-     36-     2    19   154.5 |20898317
+47 Arzybaeva Bibigul               9k KG  Seng  0+      40-     24-     11-     25-     23-     38-     1    26   150   |20813760
+48 Hanif Irfan                     1d ID  XXXX  14-     29-     49+     35-     38-     40-     39-     1    20   142  
+49 Sontakki Suhas                  5k IN  XXXX  24-     0+      48-     34-     46-     43-     44-     1    16.5 142.5 

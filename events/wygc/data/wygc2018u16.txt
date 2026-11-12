@@ -1,0 +1,22 @@
+; TC[T180718B]
+; CL[A]
+; EV[World Youth Goe Championship 2018 - Under 16]
+; PC[DE, Bacharach]
+; DT[2018-07-18,2018-07-23]
+; HA[h9]
+; KM[8.5]
+; TM[100]
+; CM[Ing byoyomi, In Ing Overtime, each player may buy up to three overtime periods. The length of each is 1/6 the basic time. Entering each costs another 2 points. Exceeding the third overtime period loses the game on time. (submitted by mlanger)]
+;.
+   1 Li Zerui                       1p CN  Beij    5+/b    4+/w    9+/w    2-/b    8+/w     4+/b   2+/w     4    11    16 |18762942
+   2 Jung Woojin                    5d KR  Seou    7+/w    6+/b    3+/b    1+/w    5+/b     3+/b   1-/b     5    14    14 |18774943
+   3 Fujii Koki                     6d JP  Toky   12+/w   11+/b    2-/w    4-/b    6+/b     2-/w   4+/w     3     4    13 |18798945
+   4 Hsu Ching-En                   6d TW  Taip    8+/b    1-/b    7+/w    3+/w    9+/b     1-/w   3-/b     4     9    13 |18733946
+   5 Zemor Solal                    2d FR  33Bo    1-/w    8+/b   11+/b   10+/w    2-/w      0=      0=     3     4    13 |15849867
+   6 Lee Shou-kai                   2d MY  Kual    9+/b    2-/w   10-/w    7+/b    3-/w      0=      0=     2     4    13 |18498832
+   7 Galunov Jakov                  3d IL  TelA    2-/b   12+/w    4-/b    6-/w   11+/w      0=      0=     2     2    13 |16233976
+   8 Virojtham Pongmate             4d TH  Bang    4-/w    5-/w   12+/b   11+/b    1-/b      0=      0=     2     2    13 |18701947
+   9 Gao Ji_Yang                    3d SG  Sing    6-/w   10+/b    1-/b   12+/b    4-/w      0=      0=     2     2    12 |18050219
+  10 Chen Henry                     3d CA  Otta   11-/w    9-/w    6+/b    5-/b   12-/w      0=      0=     1     2     9 |18713948
+  11 Krajnov Anton                  1d RU  77Mo   10+/b    3-/w    5-/w    8-/w    7-/b      0=      0=     1     1    11 |16098852
+  12 Cao Melissa                    5d US  Wash    3-/b    7-/b    8-/w    9-/w   10+/b      0=      0=     1     1    10 |18737950

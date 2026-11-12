@@ -1,0 +1,22 @@
+; TC[W990815B]
+; CL[A]
+; EV[16th World Youth Go Championship (under 12)]
+; PC[SG,Singapore]
+; KM[8]
+; TM[60]
+; HA[h9]
+; DT[1999-08-15,1999-08-20]
+;                   16th World Youth Go Championship, Singapore (SG)
+;                               August 15 - 20, 1999
+;
+;                            === under 12 category ===
+;
+;Pl     Name             Grade  Club   MM S SOS SDOS  1.   2.   3.   4.   5.
+   1 Jing Shi                       6d CN  xxx    4+   3-   5+   2-   8+   3+   2+     3     5    14 |12001913
+   2 Xiao Zhenghao                  6d TW  xxx    7+   5+   3+   1+   6+   4+   1-     5    12    12 |10913045
+   3 Yun Chun-sang                  6d KR  xxx    8+   1+   2-   4+   5+   1-   4+     4     8    13 |12049796
+   4 Lui Eric                       4d US  xxx    1-   8+   6+   3-   7+   2-   3-     3     3    10 |10937047
+   5 Kurosawa Noriyuki              4d JP  xxx    6+   2-   1-   7+   3-   0=   0=     2     3    15 |12013914
+   6 Kovaleva Natalia               2k RU  74Ch   5-   7+   4-   8+   2-   0=   0=     2     1    11 |10537087
+   7 Chen Yuzhong                   2k SG  xxx    2-   6-   8+   5-   4-   0=   0=     1     0    12 |12025915
+   8 Shevchuk Mykhailo              2k UA  Riv    3-   4-   7-   6-   1-   0=   0=     0     0    13 |10333356

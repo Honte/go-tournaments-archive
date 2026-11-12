@@ -1,0 +1,38 @@
+name: 15th World Youth Goe Championship
+stages:
+  - type: tournament
+    file: wygc1998u12.txt
+    category: u12
+    name: U12
+    dir: 1998/u12
+    notes: After 5 rounds best 4 played for the medals
+    scoringColumns:
+      - wins
+      - sodos
+      - sos
+    breakers:
+      - wins
+      - sodos
+      - sos
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+21 round:7 sgf:1998/u12/7-KangLi-HyeonseokSeo.sgf
+      - 6-1 1:W+R round:5 sgf:1998/u12/5-EricLui-KangLi.sgf
+      - 8-6 6:W+R round:4 sgf:1998/u12/4-SzeHanOng-EricLui.sgf
+  - type: tournament
+    file: wygc1998u18.txt
+    category: u18
+    name: U18
+    dir: 1998/u18
+    notes: After 5 rounds best 4 played for the medals
+    scoringColumns:
+      - wins
+      - sodos
+      - sos
+    breakers:
+      - wins
+      - sodos
+      - sos
+    findSharedPlaces: true
+    games:
+      - 2-1 1:W+R round:7 sgf:1998/u18/7-HyeokYun-XingLiu.sgf

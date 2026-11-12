@@ -1,0 +1,24 @@
+name: 8th World Youth Goe Championship
+stages:
+  - type: tournament
+    file: wygc1991u12.txt
+    category: u12
+    name: U12
+    dir: 1991/u12
+    notes: No results available    
+    scoringColumns:
+      - place
+    breakers:
+      - place
+    findSharedPlaces: true
+  - type: tournament
+    file: wygc1991u18.txt
+    category: u18
+    name: U18
+    dir: 1991/u18
+    notes: No results available   
+    scoringColumns:    
+      - place
+    breakers:
+      - place
+    findSharedPlaces: true

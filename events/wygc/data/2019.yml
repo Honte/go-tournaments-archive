@@ -1,0 +1,36 @@
+name: 36th World Youth Goe Championship
+stages:
+  - type: tournament
+    file: wygc2019u12.txt
+    category: u12
+    name: U12
+    dir: 2019/u12
+    notes: After 5 rounds best 4 played for the medals    
+    scoringColumns:
+      - wins
+      - sodos
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sodos
+      - sos
+      - sosos
+    findSharedPlaces: true
+  - type: tournament
+    file: wygc2019u16.txt
+    category: u16
+    name: U16
+    dir: 2019/u16
+    notes: After 5 rounds best 4 played for the medals    
+    scoringColumns:
+      - wins
+      - sodos
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sodos
+      - sos
+      - sosos
+    findSharedPlaces: true

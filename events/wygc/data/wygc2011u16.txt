@@ -1,0 +1,26 @@
+; TC[W110813A]
+; CL[A]
+; EV[28th World Youth Goe Championship Under 16]
+; PC[RO, Bucuresti]
+; DT[2011-08-13,2011-08-17]
+; HA[h9]
+; KM[7.5]
+; TM[75]
+; CM[ (submitted by viorel.arsinoaia)]
+;.
+;
+; 5 qualification rounds and 2 playoff rounds
+;
+; Pl Name                   Grd Co Club  NBW SODOS SOS   
+ 1 Ke Jie              2p CN  LiSh  4 14  18      2+/w0   7+/b0   3-/b0   5+/w0   4+/w0   3+/w0   2+/w0    |15098347
+ 2 Song Sang-Hun       4d KR  Puch  4  9  15      1-/b0   8+/b0   11+/b0  7+/w0   3+/w0   4+/b0   1-/b0    |16201702
+ 3 Chen Cheng-Hsun     7d TW  Taip  3 11  20      9+/b0   6+/w0   1+/w0   4-/b0   2-/b0   1-/b0   4+/b0    |16213703
+ 4 Koyama Kuya         6d JP  Kana  4 10  16      11+/b0  5+/w0   9+/b0   3+/w0   1-/b0   2-/w0   3-/w0    |16225704
+ 5 Surma Mateusz       5d PL  Dzim  3  7  17      10+/w0  4-/b0   6+/b0   1-/b0   7+/w0   0=       0=      |12837968
+ 6 Vashurov Alexandr   5d RU  16Kz  3  4  11      12+/b0  3-/b0   5-/w0   9+/w0   8+/w0   0=       0=      |13062764
+ 7 Wong Vanessa        5d UK  HKng  2  4  18      8+/w0   1-/w0   10+/w0  2-/b0   5-/b0   0=       0=      |14349467
+ 8 Zhuang Vincent      6d US  Port  2  2  12      7-/b0   2-/w0   12+/w0  10+/b0  6-/b0   0=       0=      |16237705
+ 9 Toma Theodor        1d RO  Brai  2  1  12      3-/w0   12+/b0  4-/w0   6-/b0   11+/b0  0=       0=      |12513754
+10 Kwa Jie-Hui         4d SG  Sing  2  1  8       5-/b0   11+/w0  7-/b0   8-/w0   12+/w0  0=       0=      |15025351
+11 Song Amira          4d CA  Toro  1  0  13      4-/w0   10-/b0  2-/w0   12+/b0  9-/w0   0=       0=      |16249706
+12 Nae Alexandru       2k RO  LocB  0  0  10      6-/w0   9-/w0   8-/b0   11-/w0  10-/b0  0=       0=      |14525082

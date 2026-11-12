@@ -1,0 +1,79 @@
+website: https://wygc2006.blogspot.com/
+name: 23rd World Youth Goe Championship
+stages:
+  - type: tournament
+    file: wygc2006u12.txt
+    category: u12
+    name: U12
+    dir: 2006/u12
+    notes: After 5 rounds best 4 played for the medals
+    scoringColumns:
+      - wins
+      - sodos
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sodos
+      - sos
+      - sosos
+    findSharedPlaces: true
+    games:
+      - 2-1 1:W+1 round:3 sgf:2006/u12/3-YunxiaoLou-HyeonNa.sgf
+      - 2-1 1:W+R round:7 sgf:2006/u12/7-YunxiaoLou-HyeonNa.sgf
+      - 2-3 2:B+R round:2 sgf:2006/u12/2-YunxiaoLou-TakeuchiKousuke.sgf
+      - 3-2 2:W+15 round:6 sgf:2006/u12/6-TakeuchiKousuke-YunxiaoLou.sgf
+      - 3-5 3:B+R round:3 sgf:2006/u12/3-TakeuchiKousuke-YuFanLin.sgf
+      - 4-1 1:W+R round:6 sgf:2006/u12/6-CalvinSun-HyeonNa.sgf
+      - 4-3 3:W+13 round:1 sgf:2006/u12/1-CalvinSun-TakeuchiKousuke.sgf
+      - 4-3 3:W+R round:7 sgf:2006/u12/7-CalvinSun-TakeuchiKousuke.sgf
+      - 4-8 4:B+53 round:2 sgf:2006/u12/2-CalvinSun-ZilongChou.sgf
+      - 6-1 1:W+R round:1 sgf:2006/u12/1-MateuszSurma-HyeonNa.sgf
+  - type: tournament
+    file: wygc2006u18.txt
+    category: u18
+    name: U18
+    dir: 2006/u18
+    notes: After 5 rounds best 4 played for the medals
+    scoringColumns:
+      - wins
+      - sodos
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sodos
+      - sos
+      - sosos
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:7 sgf:2006/u18/7-LiyaoPeng-YutaekKang.sgf
+      - 1-4 4:W+R round:2 sgf:2006/u18/2-LiyaoPeng-CurtisTang.sgf
+      - 1-5 1:B+R round:1 sgf:2006/u18/1-LiyaoPeng-JinYu.sgf
+      - 2-1 1:W+1 round:5 sgf:2006/u18/5-YutaekKang-LiyaoPeng.sgf
+      - 2-3 2:B+R round:4 sgf:2006/u18/4-YutaekKang-TerayamaRei.sgf
+      - 3-2 2:W+R round:6 sgf:2006/u18/6-TerayamaRei-YutaekKang.sgf
+      - 3-4 3:B+R round:3 sgf:2006/u18/3-TerayamaRei-CurtisTang.sgf
+      - 3-6 3:B+R round:5 sgf:2006/u18/5-TerayamaRei-XiangZhang.sgf
+      - 4-1 1:W+R round:6 sgf:2006/u18/6-CurtisTang-LiyaoPeng.sgf
+      - 4-3 3:W+R round:7 sgf:2006/u18/7-CurtisTang-TerayamaRei.sgf
+      - 4-7 4:B+R round:5 sgf:2006/u18/5-CurtisTang-WeiChiehChuang.sgf
+      - 4-12 4:B+R round:1 sgf:2006/u18/1-CurtisTang-KostiantynLopatiuk.sgf
+      - 5-6 6:W+3 round:3 sgf:2006/u18/3-JinYu-XiangZhang.sgf
+      - 5-10 5:B+1 round:5 sgf:2006/u18/5-JinYu-RuechagornTrairatananusorn.sgf
+      - 5-11 5:B+R round:4 sgf:2006/u18/4-JinYu-OndrejFidrmuc.sgf
+      - 5-12 5:B+R round:2 sgf:2006/u18/2-JinYu-KostiantynLopatiuk.sgf
+      - 6-1 1:W+R round:4 sgf:2006/u18/4-XiangZhang-LiyaoPeng.sgf
+      - 7-2 2:W+R round:3 sgf:2006/u18/3-WeiChiehChuang-YutaekKang.sgf
+      - 7-3 3:W+17 round:2 sgf:2006/u18/2-WeiChiehChuang-TerayamaRei.sgf
+      - 8-1 1:W+R round:3 sgf:2006/u18/3-ArtemDugin-LiyaoPeng.sgf
+      - 8-4 4:W+R round:4 sgf:2006/u18/4-ArtemDugin-CurtisTang.sgf
+      - 8-6 8:B+R round:1 sgf:2006/u18/1-ArtemDugin-XiangZhang.sgf
+      - 8-11 8:B+R round:5 sgf:2006/u18/5-ArtemDugin-OndrejFidrmuc.sgf
+      - 9-2 2:W+R round:1 sgf:2006/u18/1-RitaPocsai-YutaekKang.sgf
+      - 9-7 7:W+R round:4 sgf:2006/u18/4-RitaPocsai-WeiChiehChuang.sgf
+      - 9-10 9:B+5 round:3 sgf:2006/u18/3-RitaPocsai-RuechagornTrairatananusorn.sgf
+      - 10-12 10:B+R round:4 sgf:2006/u18/4-RuechagornTrairatananusorn-KostiantynLopatiuk.sgf
+      - 11-3 3:W+R round:1 sgf:2006/u18/1-OndrejFidrmuc-TerayamaRei.sgf
+      - 11-10 10:W+11 round:2 sgf:2006/u18/2-OndrejFidrmuc-RuechagornTrairatananusorn.sgf
+      - 12-11 11:W+R round:3 sgf:2006/u18/3-KostiantynLopatiuk-OndrejFidrmuc.sgf

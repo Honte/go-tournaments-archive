@@ -1,0 +1,25 @@
+; TC[W230811A]
+; CL[A]
+; EV[World 38th Youth Goe Championships U16]
+; PC[SG, Singapore]
+; DT[2023-08-11,2023-08-17]
+; HA[h9]
+; KM[7.5]
+; TM[75]
+; CM[Sudden death (submitted by erdbeer)]
+;.
+; Five rounds Swiss, best four played knockout in 6th and 7th round
+;
+; Pl Name                            Rk Co Club  NBWSODOS  SODODOS
+   1 Shun_Bo Wang                   7d CN  xxxx  12+   3+   9+   2+   4+   3+   2+     5    12    26 |20498379
+   2 Kanta Arai                     6d JP  xxxx   9+   8+   4+   1-   5+   4+   1-     4    10    19 |20413382
+   3 Yang Tony                      6d US  xxxx   6+   1-   7-  11+   8+   1-   4+     3     6     8 |20433380
+   4 Pei_Chen Ko                    7d TW  xxxx   5+   7+   2-   6+   1-   2-   3-     3     8    13 |20437384
+   5 Ovsiienko Vsevolod             5d UA  Kyiv   4-  11+   8+   7+   2-   0=   0=     3     5     8 |17633902
+   6 Kim Do_Yun                     3d KR  xxxx   3-  12+  10+   4-   7+   0=   0=     3     4     5 |20401381
+   7 Xing Yuze                      4d DE  HD    11+   4-   3+   5-   6-   0=   0=     2     4     6 |18525012
+   8 Zifei Gong                     5d CA  xxxx  10+   2-   5-   9+   3-   0=   0=     2     4     3 |20450386
+   9 Lin_Han Keddrick               4d SG  xxxx   2-  10+   1-   8-  12+   0=   0=     2     2     1 |20449385
+  10 Grosu Robert-Andrei            2d RO  hr_S   8-   9-   6-  12+  11+   0=   0=     2     1     0 |18362278
+  11 Song_He Kwee                   3d MY  xxxx   7-   5-  12+   3-  10-   0=   0=     1     0     0 |20462387
+  12 Meenual Kanyapat               1d TH  xxxx   1-   6-  11-  10-   9-   0=   0=     0     0     0 |20486389

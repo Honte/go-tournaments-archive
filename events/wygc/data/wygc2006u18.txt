@@ -1,0 +1,24 @@
+; TC[T060823B]
+; CL[A]
+; EV[23rd World Youth Goe Championship]
+; PC[CN, Shenzhen]
+; DT[2006-08-23,2006-08-26]
+; HA[h9]
+; KM[7.5]
+; TM[75]
+; CM[ (submitted by jcorcessin)]
+;.
+;
+;=== Seniors (under 18)
+   1 Peng Liyao                      2p CN  xxx    5+   4-   8+   6+   2+   4+   2+     4    11    15    65 |14525038
+   2 Kang Yu-taek                    7d KR  xxx    9+   8+   7+   3+   1-   3+   1-     4    10    14    69 |14586187
+   3 Rei Terayama                    6d JP  xxx   11+   7+   4+   2-   6+   2-   4+     4     9    13    68 |14533189
+   4 Tang Curtis                     5d US  xxxx  12+   1+   3-   8+   7+   1-   3-     4     8    12    71 |12762365
+   5 Yu Jin                          5d CA  Toro   1-  12+   6-  11+  10+   0=   0=     3     3     9    61 |14501190
+   6 Zhang Xiang                     5d SG  Sin    8-   9+   5+   1-   3-   0=   0=     2     5    15    62 |14525192
+   7 Chuang Wei-Chieh                6d TW  xxx   10+   3-   2-   9+   4-   0=   0=     2     4    16    57 |19450035
+   8 Dugin Artem                     4d RU  16Kz   6+   2-   1-   4-  11+   0=   0=     2     3    15    67 |12049576
+   9 Pocsai Rita                     4d HU  BuPe   2-   6-  10+   7-  12+   0=   0=     2     2    10    65 |10686346
+  10 Trairatananusorn Ruechagorn     2d TH  xxx    7-  11+   9-  12+   5-   0=   0=     2     1     8    58 |15662097
+  11 Fidrmuc Ondrej                  3d CZ  Brno   3-  10-  12+   5-   8-   0=   0=     1     0    11    57 |12501247
+  12 Lopatiuk Kostiantyn             3d UA  Rivn   4-   5-  11-  10-   9-   0=   0=     0     0    12    50 |10849190

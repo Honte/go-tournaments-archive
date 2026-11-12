@@ -1,0 +1,23 @@
+; PC[TW, Taipei]
+; DT[1984-07-14,1984-07-16]
+; according to agj 3rd and 4th were switched  Ryu Si-Hoon(agj) or Ryu Si-Han(egf)
+;https://www.eurogofed.org/results/world/wygc1984.htm
+;Pn Name  U16          Gr  Cy    1    2    3    4    5  W Yr
+   1 Kim Young-Hwan                 3d KR  xxx   18+  13+   7+   5+   2+     5    12    13
+   2 Yang Chia-Jung                 2d TW  xxx   11+   3+   6+   4+   1-     4    18    13
+   3 Ryu Si-Hoon                    3d KR  xxx    9+   2-  13+   6+  10+     4    13    12
+   4 Lee Chang-Ho                   2d KR  xxx    5+  12+  16+   2-   8+     4    13     8
+   5 Chen _                         1d TW  xxx    4-  10+   9+   1-  11+     3    15    14
+   6 Kan _                         31k HK  xxx   15+   8+   2-   3-   9+     3    15    12
+   7 Cheng _                        1k TW  xxx   10+  14+   1-   8-  12+     3    14    12
+   8 Nagano Takashi                 5d JP  xxx   17+   6-  15+   7+   4-     3    13    13
+   9 Kim Janice                     5d US  xxx    3-  11+   5-  15+   6-     2    14    14
+  10 Sasaki Jorge                   4d BR  xxx    7-   5-  12+  14+   3-     2    14    14
+  11 Lee H                          3k TW  xxx    2-   9-  17+  13+   5-     2    12    13
+  12 Schryver Wim_de                1k NL  xxx   14+   4-  10-  16+   7-     2    12    14
+  13 Buit Bernd-Jan                 1d NL  xxx   16+   1-   3-  11-  18+     2    12    14
+  14 Takabayashi _                  2d JP  xxx   12-   7-  18+  10-  17+     2     8    10
+  15 Yu _                           3k TW  xxx    6-  17+   8-   9-  16+     2    10    13
+  16 Kure _                         2k JP  xxx   13-  18+   4-  12-  15-     1    10     8
+  17 Rutland Leigh                  4k UK  xxx    8-  15-  11-  18+  14-     1     9    14
+  18 Meyerhofer Edward             10k CA  xxx    1-  16-  14-  17-  13-     0    11    15

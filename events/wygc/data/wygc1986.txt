@@ -1,0 +1,6 @@
+; PC[TW, Taipei]
+; DT[1986-08-08,1986-08-10]
+;Representing Europe were Hans Pietsch, 4 dan from Bremen 2w, Peter von Milczewsky 2w, 2 dan from Kiel, and Farid Ben Malek 1w
+1 Lee Sang-Hoon     3d KR xxx 1
+2 Shih Yi-Chen      2d TW xxx 2
+3 Kikuwa Mikitoshi  6d JP xxx 3

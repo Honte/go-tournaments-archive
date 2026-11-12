@@ -1,0 +1,30 @@
+name: 19th World Youth Goe Championship
+stages:
+  - type: tournament
+    file: wygc2002u12.txt
+    category: u12
+    name: U12
+    dir: 2002/u12
+    notes: After 5 rounds best 4 played for the medals
+    scoringColumns:
+      - wins
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true
+  - type: tournament
+    file: wygc2002u18.txt
+    category: u18
+    name: U18
+    dir: 2002/u18
+    notes: After 5 rounds best 4 played for the medals
+    scoringColumns:
+      - wins
+      - sodos
+    breakers:
+      - wins
+      - sodos
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+R round:7 sgf:2002/u18/7-KangLi-HyunhoYi.sgf

@@ -1,0 +1,22 @@
+; TC[W080707]
+; CL[A]
+; EV[25th World Youth Goe Championship]
+; PC[CN, Guiyang]
+; DT[2008-07-07,2008-07-11]
+; HA[h9]
+; KM[7.5]
+; TM[75]
+;
+;=== Seniors
+   1 Kang Byung-kwon                7d KR  xxx    10+/w    3+/b    2-/w    5+/b    4+/b      3+      2+     4    10    15 |15025340
+   2 Yu Tingmi                      1p CN  xxx     9+/w    7+/w    1+/b    8+/b    3+/b      4+      1-     5    13    13 |15013339
+   3 Kuo Naifu                      6d TW  xxx     5+/b    1-/w    8+/w   11+/b    2-/w      1-      4+     3     6    15 |15037341
+   4 Cheng Feng-Cheng               6d SG  Sin     6+/w    8-/w   10+/b    7+/b    1-/w      2-      3-     3     6    12 |12974412
+   5 Kachanovskyj Artem             5d UA  Riv     3-/w   10+/b    9+/b    1-/w    7+/w      0=      0=     3     5    12 |12662870
+   6 Debarre Thomas                 5d FR  67SE    4-/b   11+/b    7-/w    9+/w   12+/w      0=      0=     3     4     9 |12950872
+   7 Zhou William                   7d US  xxx    12+/w    2-/b    6+/b    4-/w    5-/b      0=      0=     2     4    15 |14798839
+   8 Hirata Tomoya                  6d JP  xxx    11+/w    4+/b    3-/b    2-/w    9-/b      0=      0=     2     4    14 |15049342
+   9 Can Sheng-Shi                  6d CA  xxx     2-/b   12+/b    5-/w    6-/b    8+/w      0=      0=     2     3    14 |15074345
+  10 Mitic Nikola                   4d RS  Nis     1-/b    5-/w    4-/w   12-/b   11+/w      0=      0=     1     1    12 |10801923
+  11 Chotikapong Srisin             3d TH  xxx     8-/b    6-/w   12+/b    3-/w   10-/b      0=      0=     1     1    10 |15086346
+  12 Savolainen Javier-Aleksi       3d FI  HGK     7-/b    9-/w   11-/w   10+/w    6-/b      0=      0=     1     1     9 |14001537

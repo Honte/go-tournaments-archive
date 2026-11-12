@@ -1,0 +1,22 @@
+name: 4th World Youth Goe Championship
+website: https://web.archive.org/web/20200919100045/http://goklubnymburk.wz.cz/14/MSj1987.html
+stages:
+  - type: tournament
+    file: wygc1987.txt
+    category: u18
+    name: U18
+    notes: Not sure about playoff results. Not sure about exact age category.
+    scoringColumns:
+      - wins
+      - sos
+      - sodos
+    breakers:
+      - wins
+      - sos
+      - sodos
+    findSharedPlaces: true
+    games:
+      - 1-5 1:B+3 round:5 sgf:1987/5-PingXu-IhChengShih.sgf
+      - 2-7 2:B+R round:5 sgf:1987/5-HoChulChoi-HoYinLee.sgf
+      - 3-8 3:B+5 round:2 sgf:1987/2-SiangHsia-WaiKitChan.sgf
+      - 7-11 11:W+R round:1 sgf:1987/1-HoYinLee-AlanChen.sgf

@@ -178,6 +178,7 @@ export function calculateStats(
                   rank,
                   country,
                   place: player.categories[category],
+                  participant: isPair(participant) ? { id: participant.id, country: participant.country } : undefined,
                 });
               }
             }

@@ -1,0 +1,28 @@
+name: 11th World Youth Goe Championship
+stages:
+  - type: tournament
+    file: wygc1994u12.txt
+    category: u12
+    name: U12
+    dir: 1994/u12
+    notes: No results available
+    scoringColumns:
+      - place
+    breakers:
+      - place
+    findSharedPlaces: true
+    games:
+      - 2-1 1:W+9 round:1 sgf:1994/u12/1-HanseungCho-LiGu.sgf
+  - type: tournament
+    file: wygc1994u18.txt
+    category: u18
+    name: U18
+    dir: 1994/u18
+    notes: No results available
+    scoringColumns:
+      - place
+    breakers:
+      - place
+    findSharedPlaces: true
+    games:
+      - 2-1 1:W+7 round:1 sgf:1994/u18/1-BoZhou-DalhunAn.sgf

@@ -63,5 +63,5 @@ it('groups by partner or opposing pair and clears invalid dependencies', () => {
     buildGameRecordsModel(games, { ...DEFAULT_GAME_RECORDS_STATE, player: 'a', partner: 'd' }).state.partner,
     undefined
   );
-  assert.equal(buildGameRecordsModel(games, { ...DEFAULT_GAME_RECORDS_STATE, partner: 'b' }).state.partner, undefined);
+  assert.equal(buildGameRecordsModel(games, { ...DEFAULT_GAME_RECORDS_STATE, partner: 'b' }).state.partner, 'b');
 });

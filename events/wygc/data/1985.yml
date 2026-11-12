@@ -1,0 +1,12 @@
+name: 2nd World Youth Goe Championship
+stages:
+  - type: tournament
+    file: wygc1985.txt
+    category: u18
+    name: U18
+    notes: No results available, 18 participants. Not sure about exact age category.
+    scoringColumns:    
+      - place
+    breakers:
+      - place
+    findSharedPlaces: true

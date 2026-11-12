@@ -1,0 +1,22 @@
+; TC[T140814A]
+; CL[A]
+; EV[World Youth Goe Championship - Junior U12 group]
+; PC[MY, Kuala Lumpur]
+; DT[2014-08-14,2014-08-16]
+; HA[h9]
+; KM[7.5]
+; TM[90]
+; CM[ (submitted by Jana_H)]
+;.
+   1 Huang Mingyu                   5d CN  xxx   12+/b0   2+/b0   8+/w0   3+/b0   4+/w0      4+      2+     5    12    69 |17398359
+   2 Shih Ching_Yao                 6d TW  xxx    7+/b0   1-/w0   9+/b0   5+/b0   3+/w0      3+      1-     4    15    66 |17386358
+   3 Moon Minjong                   1d KR  xxx   11+/b0   4+/b0   5+/w0   1-/w0   2-/b0      2-      4+     3    16    66 |17333360
+   4 Chang Fu_Kang                  5d MY  xxx    9+/b0   3-/w0   7+/b0   6+/w0   1-/b0      1-      3-     3    15    63 |17301361
+   5 Yokota Hinano                  6d JP  xxx    8+/b0   6+/w0   3-/b0   2-/w0  10+/b0      0=      0=     3    14    63 |17313362
+   6 Zhou Brandon_Yicheng           4d US  xxx   10+/w0   5-/b0  11+/w0   4-/b0   7+/w0      0=      0=     3    11    63 |17337364
+   7 Dobranis Denis                 1d RO  Bist   2-/w0  10+/b0   4-/w0   9+/b0   6-/b0      0=      0=     2    14    61 |15350038
+   8 Liu Eric_Changhao              1d CA  xxx    5-/w0  12+/b0   1-/b0  10-/w0  11+/b0      0=      0=     2    11    58 |17349365
+   9 Vazquez Oscar                  2d ES  NamB   4-/w0  11+/b0   2-/w0   7-/w0  12+/w0      0=      0=     2    10    66 |15633673
+  10 Dobricyn Mikhail               4k RU  77Mo   6-/b0   7-/w0  12+/w0   8+/b0   5-/w0      0=      0=     2    10    62 |15913920
+  11 Lee Brian_Jun_Siang            1k SG  xxx    3-/w0   9-/w0   6-/b0  12+/b0   8-/w0      0=      0=     1    10    60 |17362367
+  12 Chang Xin                      5k MY  xxx    1-/w0   8-/w0  10-/b0  11-/w0   9-/b0      0=      0=     0    12    53 |17374368

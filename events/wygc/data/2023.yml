@@ -1,0 +1,40 @@
+name: 38th World Youth Goe Championship
+stages:
+  - type: tournament
+    file: wygc2023u12.txt
+    category: u12
+    name: U12
+    dir: 2023/u12
+    notes: After 5 rounds best 4 played for the medals
+    scoringColumns:
+      - wins
+      - sodos
+      - sododos
+    breakers:
+      - wins
+      - sodos
+      - sododos
+    findSharedPlaces: true
+    games:
+      - 1-3 1:B+R round:6 sgf:2023/u12/6-ZhangWenZheng-YokoteMasaki.sgf
+      - 2-1 1:W+13 round:7 sgf:2023/u12/7-ChenYingChia-ZhangWenZheng.sgf
+      - 3-4 3:B+R round:7 sgf:2023/u12/7-YokoteMasaki-HuMingxuan.sgf
+  - type: tournament
+    file: wygc2023u16.txt
+    category: u16
+    name: U16
+    dir: 2023/u16
+    notes: After 5 rounds best 4 played for the medals
+    scoringColumns:
+      - wins
+      - sodos
+      - sododos
+    breakers:
+      - wins
+      - sodos
+      - sododos
+    findSharedPlaces: true
+    games:
+      - 1-3 1:B+R round:6 sgf:2023/u16/6-WangShunBo-TonyYang.sgf
+      - 2-1 1:W+R round:7 sgf:2023/u16/7-AraiKanta-WangShunBo.sgf
+      - 3-4 3:B+R round:7 sgf:2023/u16/7-TonyYang-KoPeiChen.sgf

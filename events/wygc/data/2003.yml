@@ -1,0 +1,36 @@
+name: 20th World Youth Goe Championship
+stages:
+  - type: tournament
+    file: wygc2003u12.txt
+    category: u12
+    name: U12
+    dir: 2003/u12
+    notes: After 5 rounds best 4 played for the medals
+    scoringColumns:
+      - wins
+      - sodos
+      - sos
+    breakers:
+      - wins
+      - sodos
+      - sos
+    findSharedPlaces: true
+    games:
+      - 2-1 1:W+1 round:7 sgf:2003/u12/7-LeiJin-YutaekKang.sgf
+  - type: tournament
+    file: wygc2003u18.txt
+    category: u18
+    name: U18
+    dir: 2003/u18
+    notes: After 5 rounds best 4 played for the medals
+    scoringColumns:
+      - wins
+      - sodos
+      - sos
+    breakers:
+      - wins
+      - sodos
+      - sos
+    findSharedPlaces: true
+    games:
+      - 2-1 1:W+R round:7 sgf:2003/u18/7-DongWanRyu-YaoYeChen.sgf

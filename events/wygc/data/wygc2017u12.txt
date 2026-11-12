@@ -1,0 +1,12 @@
+; PC[TH, Chiangmai]
+; DT[2017-07-19,2017-07-22]
+ 1 Wang Chunhui             7d CN  XXXX  5+      9+      8+      2+      3+      3+      2+      5    13   13   
+ 2 Hsu Ching-En             6d TW  Taip  7+      6+      3+      1-      4+      4+      1-      4    10   15    |18733946
+ 3 Ueno Risa                6d JP  XXXX  10+     4+      2-      7+      1-      1-      4+      3    5    14   
+ 4 Sornarra Pongsakarn      4d TH  XXXX  9+      3-      5+      8+      2-      2-      3-      3    6    13    |18949304
+ 5 Bao Frederick            5d US  XXXX  1-      7+      4-      10+     6+      0=      0=      3    4    12   
+ 6 Rotarita Stefan-Adrian   2k RO  VaDo  8+      2-      7-      9+      5-      0=      0=      2    3    12    |17837270
+ 7 Ahn Dongkyeong           5d KR  XXXX  2-      5-      6+      3-      10+     0=      0=      2    2    12   
+ 8 Touzot Cyan              5k FR  75Op  6-      10+     1-      4-      9+      0=      0=      2    1    11    |17086542
+ 9 Ovsiienko Vsevolod       7k UA  Kyiv  4-      1-      10+     6-      8-      0=      0=      1    0    12    |17633902
+10 Oliver Nina             15k US  XXXX  3-      8-      9-      5-      7-      0=      0=      0    0    11  

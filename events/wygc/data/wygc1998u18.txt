@@ -1,0 +1,24 @@
+; TC[W980823A]
+; CL[A]
+; EV[World Youth Go Championship 1998]
+; PC[CN,Guiyang]
+; KM[5]
+; TM[60]
+; HA[h9]
+; DT[1998-08-23,1998-08-28]
+;                 World Youth Go Championship 1998, Guiyang (CN)
+;                            August 23 - 28, 1998
+;
+;Pl     Name             Grade  Club   MM S SOS SDOS  1.  2.  3.  4.  5.
+   1 Liu Xing                       3p CN  xxx    8+   4+   7+   3-   2-   3+   2+     3     7    16 |13233209
+   2 Yun Hyeok                      1p KR  xxx   11+   5+   3-   6+   1+   4+   1-     4    10    15 |10925035
+   3 Peng Quan                      2p CN  xxx   12+   7+   2+   1+   4+   1-   4+     5    12    12 |12037905
+   4 Zhou Pingqiang                 6D TW  xxx    6+   1-   5+  10+   3-   2-   3-     3     8    16 |13225289
+   5 Lo Min-Ming                    3D SG  xxx    9+   2-   4-   8+   7+   0=   0=     3     6    13 |10950038
+   6 Bogackyj Dmytro                6D UA  Kyiv   4-   8+  12+   2-  11+   0=   0=     3     3    10 |10250867
+   7 Chinen Takashi                 5D JP  xxx   10+   3-   1-  11+   5-   0=   0=     2     3    14 |10962039
+   8 Wang Jonathan                  5D US  xxx    1-   6-   9+   5-  12+   0=   0=     2     2    11 |10750168
+   9 Law Timothy                    5D CA  xxx    5-  11-   8-  12+  10+   0=   0=     2     2     8 |10986041
+  10 Kuin Merlijn                   3d NL  Amvn   7-  12+  11+   4-   9-   0=   0=     2     1     8 |10233861
+  11 Koszegi Diana                  4D HU  BuPe   2-   9+  10-   7-   6-   0=   0=     1     2    13 |10301247
+  12 Kuzela Martin                  3D CZ  Zli    3-  10-   6-   9-   8-   0=   0=     0     0    14 |10250702

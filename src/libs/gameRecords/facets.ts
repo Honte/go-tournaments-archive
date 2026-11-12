@@ -45,24 +45,18 @@ export function buildGameRecordsFacets(
   const hasCountries = Boolean(getCountries(games).size);
   const hasCategories = options.categoriesEnabled && Boolean(getCategories(games).size);
   return {
-    partner: buildPlayerFacet(games, state, 'partner', playerMeta, Boolean(state.player) && options.pairs),
-    opponentPartner: buildPlayerFacet(
-      games,
-      state,
-      'opponentPartner',
-      playerMeta,
-      Boolean(state.opponent) && options.pairs
-    ),
+    partner: buildPlayerFacet(games, state, 'partner', playerMeta, options.pairs),
+    opponentPartner: buildPlayerFacet(games, state, 'opponentPartner', playerMeta, options.pairs),
     player: buildPlayerFacet(games, state, 'player', playerMeta, true),
     country: buildCountryFacet(games, state, 'country', options.countryLabel, options.countriesEnabled, hasCountries),
-    opponent: buildPlayerFacet(games, state, 'opponent', playerMeta, Boolean(state.player || state.country)),
+    opponent: buildPlayerFacet(games, state, 'opponent', playerMeta, true),
     opponentCountry: buildCountryFacet(
       games,
       state,
       'opponentCountry',
       options.countryLabel,
       options.countriesEnabled,
-      Boolean(state.player || state.country)
+      hasCountries
     ),
     category: buildCategoryFacet(games, state, options.categoryLabel, hasCategories),
     playerColor: buildColorFacetCounts(games, state),

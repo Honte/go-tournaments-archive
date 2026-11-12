@@ -1,0 +1,64 @@
+name: 28th World Youth Goe Championship
+stages:
+  - type: tournament
+    file: wygc2011u12.txt
+    category: u12
+    name: U12
+    dir: 2011/u12
+    notes: After 5 rounds best 4 played for the medals
+    scoringColumns:
+      - wins
+      - sodos
+      - sos
+      - direct
+    breakers:
+      - wins
+      - sodos
+      - sos
+    findSharedPlaces: true
+    games:
+      - 2-1 1:W+R round:3 sgf:2011/u12/3-ChiJuiChen-YuanpeiLiao.sgf
+      - 2-1 1:W+R round:7 sgf:2011/u12/7-ChiJuiChen-YuanpeiLiao.sgf
+      - 2-4 2:B+R round:5 sgf:2011/u12/5-ChiJuiChen-AaronYe.sgf
+      - 2-6 2:B+R round:1 sgf:2011/u12/1-ChiJuiChen-VladyslavVerteletskyi.sgf
+      - 3-1 1:W+? round:4 sgf:2011/u12/4-YeChanLee-YuanpeiLiao.sgf
+      - 3-2 2:W+13.5 round:2 sgf:2011/u12/2-YeChanLee-ChiJuiChen.sgf
+      - 3-2 2:W+R round:6 sgf:2011/u12/6-YeChanLee-ChiJuiChen.sgf
+      - 3-4 3:B+R round:7 sgf:2011/u12/7-YeChanLee-AaronYe.sgf
+      - 4-1 1:W+R round:1 sgf:2011/u12/1-AaronYe-YuanpeiLiao.sgf
+      - 4-1 1:W+R round:6 sgf:2011/u12/6-AaronYe-YuanpeiLiao.sgf
+      - 5-1 5:B+R round:2 sgf:2011/u12/2-ToramaruShibano-YuanpeiLiao.sgf
+      - 5-2 2:W+R round:4 sgf:2011/u12/4-ToramaruShibano.sgf
+      - 6-3 3:W+1 round:3 sgf:2011/u12/3-VladyslavVerteletskyi-YeChanLee.sgf
+      - 7-1 1:W+R round:5 sgf:2011/u12/5-YiFeiYue-YuanpeiLiao.sgf
+      - 7-5 5:W+R round:1 sgf:2011/u12/1-YiFeiYue-ToramaruShibano.sgf
+  - type: tournament
+    file: wygc2011u16.txt
+    category: u16
+    name: U16
+    dir: 2011/u16
+    notes: After 5 rounds best 4 played for the medals
+    scoringColumns:
+      - wins
+      - sodos
+      - sos
+    breakers:
+      - wins
+      - sodos
+      - sos
+    findSharedPlaces: true
+    games:
+      - 1-3 3:W+5 round:3 sgf:2011/u16/3-JieKe-ChengHsunChen.sgf
+      - 1-7 1:B+R round:2 sgf:2011/u16/2-JieKe-VanessaWong.sgf
+      - 2-1 1:W+R round:1 sgf:2011/u16/1-SangHunSong-JieKe.sgf
+      - 2-1 1:W+R round:7 sgf:2011/u16/7-SangHunSong-JieKe.sgf
+      - 2-4 2:B+11 round:6 sgf:2011/u16/6-SangHunSong-KuyaKoyama.sgf
+      - 3-1 1:W+R round:6 sgf:2011/u16/6-ChengHsunChen-JieKe.sgf
+      - 3-2 2:W+5 round:5 sgf:2011/u16/5-ChengHsunChen-SangHunSong.sgf
+      - 3-4 3:B+R round:7 sgf:2011/u16/7-ChengHsunChen-KuyaKoyama.sgf
+      - 3-4 4:W+R round:4 sgf:2011/u16/4-ChengHsunChen-KuyaKoyama.sgf
+      - 4-1 1:W+R round:5 sgf:2011/u16/5-KuyaKoyama-JieKe.sgf
+      - 5-1 1:W+R round:4 sgf:2011/u16/4-MateuszSurma-JieKe.sgf
+      - 5-4 4:W+7 round:2 sgf:2011/u16/2-MateuszSurma-KuyaKoyama.sgf
+      - 5-6 5:B+R round:3 sgf:2011/u16/3-MateuszSurma-AlexandrVashurov.sgf
+      - 8-7 7:W+R round:1 sgf:2011/u16/1-VincentZhuang-VanessaWong.sgf

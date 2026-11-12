@@ -1,0 +1,22 @@
+; TC[W150823B]
+; CL[A]
+; EV[WYGC 2015, Group U12]
+; PC[CN, Harbin]
+; DT[2015-08-23,2015-08-25]
+; HA[h9]
+; KM[7.5]
+; TM[90]
+; CM[ (submitted by Jana_H)]
+;.
+   1 Wang Xinghao                   5d CN  xxx    12+/b    5+/b    2+/w    3+/b    4+/w      4+      2+     5    13    13 |17649236
+   2 Yu Henry_Keanu                 7d TW  xxx     4+/b    6+/w    1-/b    8+/w    3+/b      3+      1-     4    11    16 |17662238
+   3 Won Jehoon                     4d KR  xxx     9+/b    8+/w    5+/b    1-/w    2-/w      2-      4+     3     7    16 |17674239
+   4 Bai Zherui                     5d CN  Shan    2-/w   11+/b   10+/b    6+/w    1-/b      1-      3-     3     6    15 |17686240
+   5 Cheng Ary                      3d US  xxx    10+/b    1-/w    3-/w    9+/b    7+/w      0=      0=     3     6    14 |17698241
+   6 Sakai Yuki                     6d JP  xxx    11+/w    2-/b    9+/w    4-/b    8+/w      0=      0=     3     5    12 |17601243
+   7 Shalneva Virzhinia             2k RU  50Zh    8-/b    9-/w   11+/w   10+/w    5-/b      0=      0=     2     3    10 |16325034
+   8 Pittner Arved                  2d DE  B       7+/w    3-/b   12+/w    2-/b    6-/b      0=      0=     2     2    12 |16398371
+   9 Jiayue Zhou                    1d CN  Harb    3-/w    7+/b    6-/b    5-/w   12+/w      0=      0=     2     2    11 |17650237
+  10 Feng Raymond                   2d US  xxx     5-/w   12+/b    4-/w    7-/b   11+/b      0=      0=     2     1     9 |17625245
+  11 Teng Yeo_Chun_Lucas            1d SG  xxx     6-/b    4-/w    7-/b   12+/w   10-/w      0=      0=     1     0    10 |17637246
+  12 Csizmadia Miklos               6k HU  BuPe    1-/w   10-/w    8-/b   11-/b    9-/b      0=      0=     0     0    12 |16237463

@@ -1,0 +1,6 @@
+; PC[US, San Jose]
+; DT[1992-08-12,1992-08-18]
+1 Zhou Heyang    3d CN xxx 0= 2+ 1
+2 Chou Chun-hsun 6d TW xxx 3+ 1- 2
+3 Toyoda Toru    6d JP xxx 2- 0= 3
+4 Hung Joey      6d US xxx 0= 0= 4

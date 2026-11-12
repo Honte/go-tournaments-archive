@@ -1,0 +1,24 @@
+name: 7th World Youth Goe Championship
+stages:
+  - type: tournament
+    file: wygc1990u12.txt
+    category: u12
+    name: U12
+    dir: 1990/u12
+    notes: No results available    
+    scoringColumns:
+      - place
+    breakers:
+      - place
+    findSharedPlaces: true
+  - type: tournament
+    file: wygc1990u18.txt
+    category: u18
+    name: U18
+    dir: 1990/u18
+    notes: No results available   
+    scoringColumns:    
+      - place
+    breakers:
+      - place
+    findSharedPlaces: true

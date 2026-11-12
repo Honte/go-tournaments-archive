@@ -1,0 +1,22 @@
+; TC[W120815A]
+; CL[A]
+; EV[29th World Youth Go Championship (qualification under 16)]
+; PC[CN, Luo-Yang]
+; DT[2012-08-15,2012-08-21]
+; HA[h9]
+; KM[7.5]
+; TM[80]
+; CM[submitted by VKachanovskyi]
+;.
+   1 Cheng Li_Qin                   2p CN  xxxx    2+/b    3+/b    5+/b    7+/b   10+/w      4+      2+     5    14 |16513486
+   2 Koyama Kuya                    6d JP  Kana    1-/w    8+/b    4+/b    5+/w    3+/b      3+      1-     4    11 |16225704
+   3 Chen Cheng-Hsun                1p TW  Taip    8+/b    1-/w    6+/w    4+/w    2-/w      2-      4+     3     8 |16213703
+   4 Sun Calvin                     7d US  xxxx    6+/w   10+/w    2-/w    3-/b    7+/b      1-      3-     3     7 |14050685
+   5 Yu-Jin Oh                      2d KR  xxxx    7+/w    9+/b    1-/w    2-/b    8+/b      0=      0=     3     6 |16525487
+   6 Pitrop Alexandru               2d RO  Boto    4-/b   12+/w    3-/b    9+/b   11+/w      0=      0=     3     3 |15262940
+   7 Yue Yi-Fei                     5d SG  xxxx    5-/b   11+/b    9+/w    1-/w    4-/w      0=      0=     2     3 |15837690
+   8 Yu Lin_Tian                    7d CA  xxxx    3-/w    2-/w   10+/w   12+/b    5-/w      0=      0=     2     2 |16549489
+   9 Mykhaliuk Yurii                3d UA  Rivn   11+/b    5-/w    7-/b    6-/w   12+/b      0=      0=     2     1 |13798235
+  10 Popov Stepan                   3d RU  16Kz   12+/w    4-/b    8-/b   11+/w    1-/b      0=      0=     2     1 |14625897
+  11 Ma Chennan                     4d CN  xxxx    9-/w    7-/w   12+/b   10-/b    6-/b      0=      0=     1     0 |16550490
+  12 Taweeskulchai Taweesak         2d TH  xxxx   10-/b    6-/b   11-/w    8-/w    9-/w      0=      0=     0     0 |16562491

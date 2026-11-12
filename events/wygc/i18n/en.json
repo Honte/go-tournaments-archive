@@ -1,0 +1,34 @@
+{
+  "site": {
+    "name": "World Youth Championships Archive",
+    "eventName": "World Youth Go Championship",
+    "acronym": "WYGC",
+    "description": "Archive of all World Youth Go Championships tournaments",
+    "yearDescription": "Results of WYGC %{0}",
+    "allTimeStatsDescription": "All-time statistics of all World Youth Go Championships participants",
+    "playerStatsDescription": "Participation statistics of %{0} in all World Youth Go Championships events"
+  },
+  "details": {
+    "goToWebsite": "Go to WYGC %{0} website"
+  },
+  "winners": {
+    "first": "World Youth Champion",
+    "firstIn": "World Youth Champion %{0}",
+    "secondIn": "2nd place %{0}",
+    "thirdIn": "3rd place %{0}"
+  },
+  "categories": {
+    "full": {
+      "u18": "Under 18",
+      "u16": "Under 16",
+      "u12": "Under 12",
+      "kpmc": "KPMC Under 15"
+    },
+    "short": {
+      "u18": "U18",
+      "u16": "U16",
+      "u12": "U12",
+      "kpmc": "KPMC"
+    }
+  }
+}

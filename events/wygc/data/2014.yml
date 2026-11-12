@@ -1,0 +1,36 @@
+name: 31st World Youth Goe Championship
+stages:
+  - type: tournament
+    file: wygc2014u12.txt
+    category: u12
+    name: U12
+    dir: 2014/u12
+    notes: After 5 rounds best 4 played for the medals
+    scoringColumns:
+      - wins
+      - sodos
+      - sos
+    breakers:
+      - wins
+      - sodos
+      - sos
+    findSharedPlaces: true
+    games:
+      - 2-1 1:W+R round:7 sgf:2014/u12/7-ChingYaoShih-MingyuHuang.sgf
+  - type: tournament
+    file: wygc2014u16.txt
+    category: u16
+    name: U16
+    dir: 2014/u16
+    notes: After 5 rounds best 4 played for the medals
+    scoringColumns:
+      - wins
+      - sodos
+      - sos
+    breakers:
+      - wins
+      - sodos
+      - sos
+    findSharedPlaces: true
+    games:
+      - 1-2 1:B+13 round:7 sgf:2014/u16/7-JiayangXu-EodeokdungLee.sgf

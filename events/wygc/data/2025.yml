@@ -1,0 +1,78 @@
+name: 40th World Youth Goe Championship & Korea Prime Minister Cup Youth Division (U15 - 1st)
+stages:
+  - type: tournament
+    file: wygc2025u12.txt
+    category: u12
+    name: U12
+    dir: 2025/u12
+    notes: After 5 rounds best 4 played for the medals
+    scoringColumns:
+      - wins
+      - sodos
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sodos
+      - sos
+      - sosos
+    findSharedPlaces: true
+    games:
+      - 2-1 1:W+R round:7 sgf:2025/u12/7-RenOgawa-JeongHyunKim.sgf
+      - 2-3 2:B+3 round:6 sgf:2025/u12/6-RenOgawa-QingyangYu.sgf
+      - 4-1 1:W+? round:6 sgf:2025/u12/6-TianChenChen-JeongHyunKim.sgf
+      - 4-3 3:W+15 round:7 sgf:2025/u12/7-TianChenChen-QingyangYu.sgf
+  - type: tournament
+    file: wygc2025u18.txt
+    category: u18
+    name: U18
+    dir: 2025/u18
+    notes: After 5 rounds best 4 played for the medals
+    scoringColumns:
+      - wins
+      - sodos
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sodos
+      - sos
+      - sosos
+    findSharedPlaces: true
+    games:
+      - 2-1 1:W+R round:7 sgf:2025/u18/7-HyoJunShim-AlexanderQi.sgf
+      - 2-4 2:B+1 round:6 sgf:2025/u18/6-HyoJunShim-ChenYingChia.sgf
+      - 3-1 1:W+R round:6 sgf:2025/u18/6-SihanLi-AlexanderQi.sgf
+      - 4-3 3:W+R round:7 sgf:2025/u18/7-ChenYingChia-SihanLi.sgf
+      - 14-7 7:W+15.5 round:3 sgf:2025/u18/3-JanKomin-YiHanChen.sgf
+      - 14-9 9:W+4.5 round:2 sgf:2025/u18/2-JanKomin-IttisakulchaiPunnaris.sgf
+      - 14-10 10:W+R round:1 sgf:2025/u18/1-JanKomin-KweeSongHe.sgf
+      - 14-11 11:W+11.5 round:5 sgf:2025/u18/5-JanKomin-StjepanMedak.sgf
+      - 14-12 14:B+R round:4 sgf:2025/u18/4-JanKomin-AntoniBugaj.sgf
+  - type: tournament
+    file: kpmc2025u15.txt
+    category: kpmc
+    name: KPMC U15
+    dir: 2025/kpmc
+    scoringColumns:
+      - wins
+      - sos
+      - sosos
+    breakers:
+      - wins
+      - sos
+      - sosos
+    findSharedPlaces: true
+    games:
+      - 1-4 1:B+R round:5 sgf:2025/kpmc/5-MingRuelTsai-WaiHinLi.sgf
+      - 1-14 1:B+R round:4 sgf:2025/kpmc/4-MingRuelTsai-JanKomin.sgf
+      - 2-4 4:W+R round:6 sgf:2025/kpmc/6-TonyWu-WaiHinLi.sgf
+      - 4-3 4:B+8.5 round:3 sgf:2025/kpmc/3-WaiHinLi-YichengXiong.sgf
+      - 4-7 4:B+3.5 round:4 sgf:2025/kpmc/4-WaiHinLi-StjepanMedak.sgf
+      - 5-2 2:W+R round:5 sgf:2025/kpmc/5-YiHanChen-TonyWu.sgf
+      - 6-5 5:W+R round:2 sgf:2025/kpmc/2-KweeSongHe-YiHanChen.sgf
+      - 7-17 7:B+76.5 round:3 sgf:2025/kpmc/3-StjepanMedak-LillyHu.sgf
+      - 7-18 7:B+11.5 round:1 sgf:2025/kpmc/1-StjepanMedak-ParamitaSutheerat.sgf
+      - 9-1 1:W+27.5 round:6 sgf:2025/kpmc/6-LarionSyrotkin-MingRuelTsai.sgf
+      - 10-12 10:B+R round:2 sgf:2025/kpmc/2-EvanTan-SeoWooJin.sgf
+      - 12-1 1:W+12.5 round:1 sgf:2025/kpmc/1-SeoWooJin-MingRuelTsai.sgf
