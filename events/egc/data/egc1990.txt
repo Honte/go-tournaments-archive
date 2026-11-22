@@ -9,7 +9,7 @@
    5 Wimmer Manfred                 6d AT  xxx     31     7   300   208     7     10-      0+      0-      0+      0+     11-      7+      0+      0+      9+
    6 Bogdanov Viktor                6d SU  xxx     31     7   296   201     8      0+      3-      4-      0+      0+      0+      0+      0+     10+      1-
    7 Gherman Sorin                  4d RO  xxx     31     7   295   203    10      0-      0+      0+      0-      0+      0+      5-      0+      0+     10+
-   8 Mueller M                      5d CH  xxx     31     7   290   202    12     11+      0-      0-      0-      0+      0+      0+      0+      0+     13+
+   8 Mueller Martin                 5d CH  xxx     31     7   290   202    12     11+      0-      0-      0-      0+      0+      0+      0+      0+     13+
    9 Rittner Egbert                 5d DE  xxx     30     6   306   180    13      0+     12+      1-      0+      0+     14+      0+     10-      0-      5-
   10 Janssen Frank                  5d NL  xxx     30     6   304   179    14      5+      0+      0+     14+      2-      0+      4-      9+      6-      7-
   11 Pocsai Tibor                   5d HU  xxx     30     6   301   176    15      8-      0+      0+      0-      0+      5+     14+      2-      0-      0+

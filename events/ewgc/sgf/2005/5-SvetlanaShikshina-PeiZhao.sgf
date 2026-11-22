@@ -1,0 +1,57 @@
+(;CA[windows-1250]FF[4]VW[]ST[0]RU[Chinese]AP[Many Faces of Go:11.0]SZ[19]GM[1]
+EV[European Woman Goe Championship 2005]RO[5]DT[2005-10-02]PB[Svetlana Shikshina ]
+BR[1p]PW[Zhao Pei]WR[6d]KM[7.5]HA[0]RE[B+3.5]MULTIGOGM[1]
+;B[dd]C[This is the game from the European Woman Goe Championship 2005. 
+Black is Svetlana Shikshina , 1-dan professional (Russia-Korea). 
+White is Zhao Pei, 6-dan amateur (China -Germany)]
+;W[pp];B[qn];W[nq];B[pc];W[pe];B[qi]C[The pincer is rather unusual];W[me];B[mc]
+;W[qc];B[qb]
+(;W[cp]C[A good decision -];B[ep];W[hp];B[dn]C[Svetlana's favourite joseki]
+(;W[cn]C[A new move -];B[cm]
+(;W[do]C[A dubious plan -];B[eo];W[bm];B[dm];W[bl];B[cq];W[bq]
+(;B[dq]C[Too passive -];W[br];B[bo];W[co]C[The result is slightly favourable for White]
+;B[mp];W[mq];B[kp]
+(;W[lp]C[The wrong direction of play -];B[lo];W[lq]
+(;B[kq]LB[jq:X]C[It is also possible to cut off the stone at X -];W[ko];B[ip]C[The famous tesuji]
+;W[kn];B[hq]LB[io:X]C[Too passive. Must be at X];W[ho];B[iq];W[io]LB[pk:X]C[White can think about the invasion at X]
+(;B[rp]C[An overplay -]
+(;W[ql]C[A good idea -];B[qq];W[ol];B[on];W[mn];B[ni];W[qd];B[ob];W[qg]
+(;B[pg]C[The wrong direction of play -];W[pf];B[og];W[qh];B[pi];W[oj]C[The peep is painful for Black]
+;B[pk];W[pl];B[nj];W[ok];B[oi];W[nf];B[nm];W[rk]C[A bad exchange for White];B[rj]
+;W[mk];B[nk];W[nl];B[ml];W[mm];B[ll];W[pn];B[po];W[nn];B[lj];W[oo];B[pm];W[om]TR[rj]
+[rk]C[White's group is alive, but the marked exchange is clearly bad];B[cf];W[rb]
+C[Too passive!];B[ra];W[sb];B[nd];W[ne];B[jc]C[Now Black is slightly ahead on territory]
+;W[en]LB[dc:X]C[This is the losing move. It is urgent for White to invade at 
+X]
+;B[em];W[fn];B[gp];W[dk];B[ek];W[ej];B[fk];W[fm];B[fj];W[ei];B[fi];W[eh];B[ec]C[A huge move]
+;W[pq];B[qp];W[pr];B[qr];W[kk];B[lk];W[ik]LB[fh:X]C[The wrong direction of play. It is better to attack at X]
+;B[gg];W[id];B[jd];W[if];B[ie];W[he];B[je];W[hg];B[gf];W[hf];B[ii];W[jf];B[kf];W[hi]
+;B[hj];W[kg];B[gc]C[Black's territory is huge. We can say, that the game is already 
+hopeless for White. This is the last comment.]
+;W[ij];B[hh];W[ji];B[gi];W[ih];B[rh];W[rg];B[lh];W[hi];B[bn];W[bp];B[ii];W[ds];B[er]
+;W[hi];B[ch];W[gh];B[fh];W[cj];B[eg];W[hc];B[hb];W[gd];B[fc];W[es];B[fs];W[cr];B[dr]
+;W[cs];B[gr];W[ng];B[nh];W[ph];B[lg];W[lf];B[mg];W[qs];B[rs];W[ps];B[rr];W[bi];B[bh]
+;W[lc];B[ld];W[md];B[lb];W[nc];B[mb];W[od];B[sg];W[sf];B[sh];W[rf];B[fl];W[sj];B[ri]
+;W[fe];B[dh];W[cl];B[el];W[de];B[ce];W[ff];B[fg];W[df];B[ci];W[dj];B[dg];W[bj];B[ic]
+;W[hd];B[gm];W[gn];B[lm];W[ln];B[ke];W[gl];B[hl];W[hm];B[hk];W[kh];B[kj];W[il];B[lr]
+;W[mr];B[kr];W[ah];B[ag];W[ai];B[bg];W[ki];B[li];W[qm];B[rn];W[pn];B[oh];W[qo];B[ro]
+;W[nb];B[na];W[oc];B[rc];W[rd];B[km];W[jm];B[hh];W[ii];B[le];W[rm];B[qk];W[pj];B[qj]
+;W[sn];B[so];W[sm];B[mf];W[fo];B[fp];W[pd];B[pb];W[qa];B[pa];W[of];B[jo];W[jn];B[jp]
+;W[ls];B[ks];W[ms];B[gk];W[kl];B[jk];W[jl];B[jj];W[po];B[gm];W[gh];B[gl];W[hh];B[go]
+;W[hn];B[fd];W[ge];B[ma];W[ee];B[ed];W[sc];B[oa];W[sa];B[qa];W[sk];B[dp];W[dl];B[ef]
+;W[di];B[si])
+(;B[pk];W[pl];B[nk];W[nl];B[mk]C[I would prefer to escape like this. The shape would be much more 
+flexible]))
+(;W[qq];B[pl]C[It would be passive for White to defend like this]))
+(;B[pk];W[qo];B[pn]C[This is the gentle way to defend]))
+(;B[jq];W[ko];B[jo];W[kn];B[jn];W[km];B[jm]C[Black's territory would be large]))
+(;W[hn]C[For sure, White has to save this stone]))
+(;B[bo];W[co];B[bp];W[bn];B[br];W[dq];B[cr]C[This is the most active plan]))
+(;W[dm];B[co];W[bn]
+(;B[en];W[bo]C[This is the proper way. White can play like this because the 
+ladder is favourable])
+(;B[do];W[bo];B[cl];W[dp];B[eo];W[em]C[The fight would be difficult for Black])))
+(;W[eo];B[do];W[dp];B[fp];W[em]C[This is the standard pattern. There are lot of complicated variations 
+here]))
+(;W[qd];B[ob];W[qg];B[pk]C[It would be passive for White to defend like this. He must keep 
+the invasion for future]))

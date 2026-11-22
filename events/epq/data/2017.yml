@@ -14,8 +14,16 @@ stages:
     games:
       - 1-2 1:B+R round:6 sgf:2017/6-AndriiKravets-ViktorLin.sgf
       - 1-6 1:B+3.5 round:4 sgf:2017/4-AndriiKravets-CornelBurzo.sgf
+      - 1-11 1:B+9.5 round:3 sgf:2017/3-AndriiKravets-BenjaminDreanGuenaizia.sgf
       - 3-2 2:W+0.5 round:5 sgf:2017/5-RobvanZeijst-ViktorLin.sgf
       - 3-8 3:B+R round:4 sgf:2017/4-RobvanZeijst-OscarVazquez.sgf
       - 4-1 1:W+T round:5 sgf:2017/5-JonasWelticke-AndriiKravets.sgf
       - 4-7 4:B+5.5 round:4 sgf:2017/4-JonasWelticke-LukasPodpera.sgf
+      - 5-1 5:B+R round:2 sgf:2017/2-CsabaMero-AndriiKravets.sgf
       - 5-2 2:W+6.5 round:4 sgf:2017/4-CsabaMero-ViktorLin.sgf
+      - 5-14 5:B+9.5 round:1 sgf:2017/1-CsabaMero-LukasKraemer.sgf
+      - 8-10 8:B+R round:3 sgf:2017/3-OscarVazquez-TanguyLeCalve.sgf
+      - 10-7 7:W+0.5 round:2 sgf:2017/2-TanguyLeCalve-LukasPodpera.sgf
+      - 12-4 4:W+R round:3 sgf:2017/3-StanislawFrejlak-JonasWelticke.sgf
+      - 12-6 6:W+R round:1 sgf:2017/1-StanislawFrejlak-CornelBurzo.sgf
+      - 16-9 9:W+4.5 round:1 sgf:2017/1-CristianPop-BenjaminTeuber.sgf

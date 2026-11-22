@@ -2,9 +2,9 @@
 ; PC[BE, Namur]
 ; DT[1991-07-27,1991-08-11]
 ; Pl Name                            Rk Co Club  MMS  NBW    SOSSODOS  
-   1 Shutai Zhang                   6D CN  xxx     28     9   251   226     10-     35+    100+     18+     24+      6+      7+      2+      3+      4+
+   1 Zhang Shutai                   6D CN  xxx     28     9   251   226     10-     35+    100+     18+     24+      6+      7+      2+      3+      4+
    2 Lazarev Alexej                 6D SU  xxx     27     8   258   203     15+      9+      5+      3-      4+     22+     14+      1-     12+      8+
-   3 Juan Guo                       6D CN  xxx     27     8   257   203     29+     23+      6+      2+      7+      5+      4-     16+      1-     12+
+   3 Guo Juan                       6D CN  xxx     27     8   257   203     29+     23+      6+      2+      7+      5+      4-     16+      1-     12+
    4 Kai Naoyuki                    6D JP  xxx     26     7   256   175     12+    100+      8+     14+      2-     10+      3+      9-      5+      1-
    5 Danek Vladimir                 5D CS  xxx     26     7   254   174     24+     13+      2-      8+     42+      3-     15+     11+      4-     10+
    6 Heiser Laurent                 6D LU  xxx     26     7   250   169     74+     10+      3-     26+     13+      1-      9-     47+     19+     11+

@@ -21,6 +21,10 @@ stages:
       - wins
       - open
     findSharedPlaces: true
+    games:
+      - 1-4 1:B+R round:5 sgf:1994/ec/5-JuanGuo-GillesvanEeden.sgf
+      - 8-1 1:W+R round:8 sgf:1994/ec/8-GeraldWesthoff-JuanGuo.sgf
+      - 15-7 15:B+R round:2 sgf:1994/ec/2-GeertGroenen-FranzJosefDickhut.sgf
   - type: tournament
     file: egc1994open100.txt
     name: EGC Open
@@ -38,7 +42,7 @@ stages:
     columns:
       - wins
     excluded: true
-    collapsed: true    
-    findSharedPlaces: true 
-	   
-
+    collapsed: true
+    findSharedPlaces: true
+    games:
+      - 4-8 4:B+R round:8 sgf:1994/open/8-WataruMiyakawa-DavidSchoffel.sgf
