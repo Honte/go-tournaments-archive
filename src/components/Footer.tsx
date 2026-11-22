@@ -7,6 +7,7 @@ import { ExternalLink } from '@/components/ui/ExternalLink';
 const REPOSITORY_URL = 'https://github.com/Honte/go-tournaments-archive';
 
 export function Footer({ translations }: { translations: Translations }) {
+  // oxlint-disable-next-line react/purity -- Use generated date as a signature
   const generationTime = new Date();
   const t = getTranslator(translations);
 

@@ -22,6 +22,7 @@ stages:
       - open
     findSharedPlaces: true
     games:
+      - 4-1 1:W+R round:10 sgf:1995/ec/10-JeffSeailles-JuanGuo.sgf
       - 6-13 6:B+7 round:1 sgf:1995/ec/1-MattiGroot-MalteSchuster.sgf
   - type: tournament
     file: egc1995open100.txt

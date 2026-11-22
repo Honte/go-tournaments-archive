@@ -22,6 +22,7 @@ stages:
       - open
     findSharedPlaces: true
     games:
+      - 1-2 1:B+R round:6 sgf:1990/ec/6-RobvanZeijst-HansPietsch.sgf
       - 1-6 1:B+R round:10 sgf:1990/ec/10-RobvanZeijst-ViktorBogdanov.sgf
   - type: tournament
     file: egc1990open100.txt
@@ -43,4 +44,5 @@ stages:
     collapsed: true
     findSharedPlaces: true
     games:
+      - 30-14 14:W+R round:6 sgf:1990/open/6-ThomasJipp-FrankJanssen.sgf
       - 46-81 46:B+R round:9 sgf:1990/open/9-TMarkHall-MBergmann.sgf

@@ -22,7 +22,10 @@ stages:
       - open
     findSharedPlaces: true
     games:
+      - 1-4 1:B+R round:4 sgf:1992/ec/4-AlexejLazarev-FrankJanssen.sgf
       - 3-1 1:W+13.5 round:6 sgf:1992/ec/6-GeertGroenen-AlexejLazarev.sgf
+      - 3-5 3:B+R round:8 sgf:1992/ec/8-GeertGroenen-MichielEijkhout.sgf
+      - 3-12 3:B+R round:10 sgf:1992/ec/10-GeertGroenen-MatthewMacfadyen.sgf
       - 6-1 6:B+R round:10 sgf:1992/ec/10-EgbertRittner-AlexejLazarev.sgf
       - 12-1 1:W+R round:3 sgf:1992/ec/3-MatthewMacfadyen-AlexejLazarev.sgf
       - 14-2 2:W+R round:2 sgf:1992/ec/2-FrancisRoads-GillesvanEeden.sgf
@@ -48,6 +51,7 @@ stages:
       - 1-2 1:B+R round:9 sgf:1992/open/9-TakashiMatsutomo-WataruMiyakawa.sgf
       - 3-2 2:W+R round:6 sgf:1992/open/6-ShutaiZhang-WataruMiyakawa.sgf
       - 4-2 2:W+R round:7 sgf:1992/open/7-AlexejLazarev-WataruMiyakawa.sgf
+      - 6-2 6:B+R round:3 sgf:1992/open/3-GeertGroenen-WataruMiyakawa.sgf
       - 7-2 2:W+4.5 round:10 sgf:1992/open/10-FrankJanssen-WataruMiyakawa.sgf
       - 10-37 10:B+R round:8 sgf:1992/open/8-ViktorBogdanov-DickRiedeman.sgf
       - 19-65 19:B+R round:1 sgf:1992/open/1-GerhardSchmid-NvanDiepen.sgf

@@ -21,6 +21,9 @@ stages:
       - wins
       - open
     findSharedPlaces: true
+    games:
+      - 1-11 1:B+R round:6 sgf:1989/ec/6-MatthewMacfadyen-RobertRehm.sgf
+      - 8-5 5:W+4.5 round:9 sgf:1989/ec/9-AlexejLazarev-FrankJanssen.sgf
   - type: tournament
     file: egc1989open100.txt
     name: EGC Open
@@ -38,7 +41,9 @@ stages:
     columns:
       - wins
     excluded: true
-    collapsed: true    
-    findSharedPlaces: true 
-	   
-
+    collapsed: true
+    findSharedPlaces: true
+    games:
+      - 4-1 1:W+R round:8 sgf:1989/open/8-JongSuYoo-ToshiyukiSogabe.sgf
+      - 16-4 16:B+R round:3 sgf:1989/open/3-RobertRehm-JongSuYoo.sgf
+      - 21-33 21:B+R round:6 sgf:1989/open/6-VladimirDanek-RonPolak.sgf

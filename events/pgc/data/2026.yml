@@ -1,10 +1,55 @@
 location: Poznań
-start: 2026-11-19
-end: 2026-11-22
+referee: Artur Barcicki
 website: https://mp.go.art.pl/2026
-announcement:
-  pl: Mistrzostwa Polski w Go 2026 odbędą się 19-22 listopada w Poznaniu
-  en: Polish Go Championships 2026 will be held on 19-22 November in Poznań
-notes:
-  pl: Aktualna lista zawodników [na stronie PSG](https://psg.go.art.pl/pl/dokumenty/punkty-eliminacji-do-mp/)
-  en: Current list of participants [on PSG website](https://psg.go.art.pl/en/dokumenty/punkty-eliminacji-do-mp/)
+players:
+  sf: Stanisław Frejlak 2p
+  cc: Cezary Czernecki 5d
+  kh: Koichiro Habu 5d
+  ls: Leszek Sołdan 4d
+  tb: Tymoteusz Barcicki 2d
+  mm: Marcin Majka 4d
+  mw: Maksym Wałaszewski 4d
+  pm: Paweł Morawiecki 2d
+top:
+  - sf
+  - cc
+  - mw
+stages:
+  - type: league
+    date: 2026-11-19 - 2026-11-22
+    time: fischer 60m + 30s
+    komi: 6.5
+    breakers:
+      - wins
+      - sodos
+      - direct
+      - starting
+    rounds:
+      - - tb-ls tb:B+6.5 sgf:2026/2026-1-tbarcicki-lsoldan.sgf ogs:https://online-go.com/demo/1822147 ai:https://kifubara.app/share/XFjkkbM3
+        - mm-kh mm:B+6.5 sgf:2026/2026-1-mmajka-khabu.sgf ogs:https://online-go.com/demo/1822151 ai:https://kifubara.app/share/8KZ6lt22
+        - mw-cc cc:W+6.5 sgf:2026/2026-1-mwalaszewski-cczernecki.sgf ogs:https://online-go.com/demo/1822152 ai:https://kifubara.app/share/FRmGhLEQ
+        - pm-sf sf:W+R sgf:2026/2026-1-pmorawiecki-sfrejlak.sgf ogs:https://online-go.com/demo/1822150 ai:https://kifubara.app/share/7wqtsfN7
+      - - kh-tb kh:B+R sgf:2026/2026-2-khabu-tbarcicki.sgf ogs:https://online-go.com/demo/1822594 ai:https://kifubara.app/share/3ZPXnMyO
+        - ls-mm mm:W+20.5 sgf:2026/2026-2-lsoldan-mmajka.sgf ogs:https://online-go.com/demo/1822597 ai:https://kifubara.app/share/ncRiZWCa
+        - sf-mw sf:B+R sgf:2026/2026-2-sfrejlak-mwalaszewski.sgf ogs:https://online-go.com/demo/1822596 ai:https://kifubara.app/share/6hqpPHtq
+        - cc-pm cc:B+R sgf:2026/2026-2-cczernecki-pmorawiecki.sgf ogs:https://online-go.com/demo/1822593 ai:https://kifubara.app/share/ZYX2VmHq
+      - - tb-cc cc:W+R sgf:2026/2026-3-tbarcicki-cczernecki.sgf ogs:https://online-go.com/demo/1822809 ai:https://kifubara.app/share/l2zu7G7c
+        - mm-sf sf:W+R sgf:2026/2026-3-mmajka-sfrejlak.sgf ogs:https://online-go.com/demo/1822811 ai:https://kifubara.app/share/ASmnhBhr
+        - mw-ls mw:B+1.5 sgf:2026/2026-3-mwalaszewski-lsoldan.sgf ogs:https://online-go.com/demo/1822810 ai:https://kifubara.app/share/l9oHrCOC
+        - pm-kh kh:W+R sgf:2026/2026-3-pmorawiecki-khabu.sgf ogs:https://online-go.com/demo/1822805 ai:https://kifubara.app/share/cBwumQSJ
+      - - sf-tb sf:B+16.5 sgf:2026/2026-4-sfrejlak-tbarcicki.sgf ogs:https://online-go.com/demo/1823371 ai:https://kifubara.app/share/0LcjGIzU
+        - cc-mm cc:B+R sgf:2026/2026-4-cczernecki-mmajka.sgf ogs:https://online-go.com/demo/1823368 ai:https://kifubara.app/share/drJOnYzC
+        - kh-mw mw:W+7.5 sgf:2026/2026-4-khabu-mwalaszewski.sgf ogs:https://online-go.com/demo/1823366 ai:https://kifubara.app/share/JGcqQPaY
+        - ls-pm ls:B+R sgf:2026/2026-4-lsoldan-pmorawiecki.sgf ogs:https://online-go.com/demo/1823370 ai:https://kifubara.app/share/Yjp2W11Y
+      - - kh-cc cc:W+11.5 sgf:2026/2026-5-khabu-cczernecki.sgf ogs:https://online-go.com/demo/1823569 ai:https://kifubara.app/share/dJn5rka2
+        - ls-sf sf:W+R sgf:2026/2026-5-lsoldan-sfrejlak.sgf ogs:https://online-go.com/demo/1823572 ai:https://kifubara.app/share/L8g4yM9G
+        - mw-mm mw:B+R sgf:2026/2026-5-mwalaszewski-mmajka.sgf ogs:https://online-go.com/demo/1823571 ai:https://kifubara.app/share/Lnh8tR9J
+        - pm-tb tb:W+R sgf:2026/2026-5-pmorawiecki-tbarcicki.sgf ogs:https://online-go.com/demo/1823568 ai:https://kifubara.app/share/jcrQ5Wvl
+      - - sf-kh sf:B+8.5 sgf:2026/2026-6-sfrejlak-khabu.sgf ogs:https://online-go.com/demo/1823802 ai:https://kifubara.app/share/hqlwfz0T
+        - cc-ls cc:B+10.5 sgf:2026/2026-6-cczernecki-lsoldan.sgf ogs:https://online-go.com/demo/1824008 ai:https://kifubara.app/share/l86ipb6W
+        - tb-mw tb:B+9.5 sgf:2026/2026-6-tbarcicki-mwalaszewski.sgf ogs:https://online-go.com/demo/1824009 ai:https://kifubara.app/share/QSLuUEIK
+        - mm-pm mm:B+R sgf:2026/2026-6-mmajka-pmorawiecki.sgf ogs:https://online-go.com/demo/1824010 ai:https://kifubara.app/share/D04vhbzF
+      - - cc-sf sf:W+R sgf:2026/2026-7-cczernecki-sfrejlak.sgf ogs:https://online-go.com/demo/1824155 ai:https://kifubara.app/share/qZ8OncGy
+        - ls-kh ls:B+R sgf:2026/2026-7-lsoldan-khabu.sgf ogs:https://online-go.com/demo/1824156 ai:https://kifubara.app/share/hMfuVFvr
+        - mm-tb mm:B+R sgf:2026/2026-7-mmajka-tbarcicki.sgf ogs:https://online-go.com/demo/1824157 ai:https://kifubara.app/share/Jx0M6FZS
+        - pm-mw mw:W+13.5 sgf:2026/2026-7-pmorawiecki-mwalaszewski.sgf ogs:https://online-go.com/demo/1824158 ai:https://kifubara.app/share/KtWglYop

@@ -19,6 +19,12 @@ stages:
       - wins
     findSharedPlaces: true
     collapsed: true
+    games:
+      - 1-2 1:B+R round:3 sgf:2019/u12/3-VsevolodOvsiienko-ArtemijPishchalnikov.sgf
+      - 1-4 1:B+26.5 round:4 sgf:2019/u12/4-VsevolodOvsiienko-AskarKhusainov.sgf
+      - 2-7 2:B+R round:2 sgf:2019/u12/2-ArtemijPishchalnikov-DragosBoldeanu.sgf
+      - 3-1 3:B+R round:5 sgf:2019/u12/5-AlexejIgonin-VsevolodOvsiienko.sgf
+      - 5-1 1:W+R round:6 sgf:2019/u12/6-EgorLavrov-VsevolodOvsiienko.sgf
   - type: tournament
     file: eygc2019u16.txt
     category: u16
@@ -38,6 +44,13 @@ stages:
       - wins
     findSharedPlaces: true
     collapsed: true
+    games:
+      - 1-4 1:B+R round:5 sgf:2019/u16/5-VirzhiniaShalneva-AlexandrMuromcev.sgf
+      - 1-7 1:B+13.5 round:4 sgf:2019/u16/4-VirzhiniaShalneva-SavvaMezin.sgf
+      - 2-1 2:B+R round:6 sgf:2019/u16/6-ArvedPittner-VirzhiniaShalneva.sgf
+      - 2-7 7:W+R round:2 sgf:2019/u16/2-ArvedPittner-SavvaMezin.sgf
+      - 3-1 1:W+R round:3 sgf:2019/u16/3-LinhVuTu-VirzhiniaShalneva.sgf
+      - 14-2 2:W+R round:1 sgf:2019/u16/1-ValeriaKlochikhina-ArvedPittner.sgf
   - type: tournament
     file: eygc2019u20.txt
     category: u20
@@ -57,3 +70,10 @@ stages:
       - wins
     findSharedPlaces: true
     collapsed: true
+    games:
+      - 1-3 3:W+5.5 round:3 sgf:2019/u20/3-AntonChernykh-ElianIoanGrigoriu.sgf
+      - 1-5 1:B+R round:2 sgf:2019/u20/2-AntonChernykh-StepanPopov.sgf
+      - 3-2 2:W+R round:5 sgf:2019/u20/5-ElianIoanGrigoriu-GrigorijFionin.sgf
+      - 3-4 3:B+R round:4 sgf:2019/u20/4-ElianIoanGrigoriu-VasilijJakovlevChernyshev.sgf
+      - 3-5 5:W+4.5 round:6 sgf:2019/u20/6-ElianIoanGrigoriu-StepanPopov.sgf
+      - 13-1 1:W+R round:1 sgf:2019/u20/1-DariusDobranis-AntonChernykh.sgf

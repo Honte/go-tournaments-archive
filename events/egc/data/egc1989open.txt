@@ -5,7 +5,7 @@
    1 Sogabe Toshiyuki               6d JP  xxx     28     9   250   223    103+     30+     33+     16+      2+     13+      3-      4+     12+      6+
    2 Macfadyen Matthew              6d UK  xxx     27     8   255   201     42+     56+      6+      5+      1-     16+     12+      3+      4-     14+
    3 Nakamura Chikako               6d JP  xxx     27     8   254   202     57+     15+     20+     29+     13-      7+      1+      2-     17+      4+
-   4 Su-Yoo Jong                    6d KR  xxx     26     7   258   178     47+     25+     16-     20+      9+      5+     13+      1-      2+      3-
+   4 Yoo Jong-Su                    6d KR  xxx     26     7   258   178     47+     25+     16-     20+      9+      5+     13+      1-      2+      3-
    5 Inaba Yoshiko                  5d JP  xxx     26     7   253   174     52+     21+     12+      2-     17+      4-      8+     20+      6-     15+
    6 Sakhabutdinov Rustam           5d SU  xxx     26     7   253   173     53+     11+      2-     31+     33+     12-     35+      7+      5+      1-
    7 Solovjev Valerij               6d SU  xxx     26     7   250   172     15-     28+     47+     40+     29+      3-     25+      6-     21+     20+

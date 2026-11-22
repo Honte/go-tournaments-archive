@@ -1,6 +1,6 @@
 ; TC[W230814A]
 ; CL[A]
-; EV[World 38th Youth Goe Championships U12]
+; EV[38th World Youth Goe Championships - Junior Group U12]
 ; PC[SG, Singapore]
 ; DT[2023-08-14,2023-08-16]
 ; HA[h9]

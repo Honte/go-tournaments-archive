@@ -37,9 +37,10 @@ export function VirtualGameRecordGrid({ event, groups, translations }: VirtualGa
   const rows = useMemo(() => packRows(groups, columnCount, collapsedGroups), [collapsedGroups, columnCount, groups]);
   const scrollMargin = useScrollMargin(listRef, rows.length);
 
+  // oxlint-disable-next-line react/incompatible-library -- TanStack Virtual returns methods that the React Compiler cannot memoize safely.
   const rowVirtualizer = useWindowVirtualizer({
     count: rows.length,
-    estimateSize: (index) => (rows[index]?.type === 'heading' ? 48 : 350),
+    estimateSize: (index) => (rows[index]?.type === 'heading' ? 33 : 203),
     gap: ROW_GAP,
     getItemKey: (index) => rows[index]?.key ?? index,
     overscan: 4,
@@ -47,7 +48,6 @@ export function VirtualGameRecordGrid({ event, groups, translations }: VirtualGa
   });
 
   // prevents the page from being programmatically scrolled when a virtual row’s measured height differs from its estimate.
-  // oxlint-disable-next-line react/immutability -- TanStack Virtual exposes this behavior only as a writable instance callback.
   rowVirtualizer.shouldAdjustScrollPositionOnItemSizeChange = () => false;
 
   useLayoutEffect(() => {
