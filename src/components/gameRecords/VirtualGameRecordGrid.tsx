@@ -40,7 +40,7 @@ export function VirtualGameRecordGrid({ event, groups, translations }: VirtualGa
   // oxlint-disable-next-line react/incompatible-library -- TanStack Virtual returns methods that the React Compiler cannot memoize safely.
   const rowVirtualizer = useWindowVirtualizer({
     count: rows.length,
-    estimateSize: (index) => (rows[index]?.type === 'heading' ? 48 : 350),
+    estimateSize: (index) => (rows[index]?.type === 'heading' ? 33 : 203),
     gap: ROW_GAP,
     getItemKey: (index) => rows[index]?.key ?? index,
     overscan: 4,
