@@ -20,6 +20,7 @@ export type EventConfig = {
   readonly generateZips?: boolean;
   readonly generateSgfs?: boolean;
   readonly generateRawSgfs?: boolean;
+  readonly generateOgImages?: boolean;
   readonly external?: boolean;
   readonly domain?: string; // must be provided if external is true
   readonly basePath?: string; // acquired from top-level archive configuration
@@ -35,6 +36,7 @@ export type ArchiveConfiguration = {
   footer?: LocalizedString;
   locales?: [Locale, ...Locale[]];
   events: (EventConfiguration | EventGroup)[];
+  domain?: string;
   basePath?: string;
   trailingSlash?: boolean;
   config?: EventConfigurationOverrides;

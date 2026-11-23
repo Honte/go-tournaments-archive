@@ -14,6 +14,7 @@ events:
     prefix: esgc
   - id: epgc
     prefix: epgc
+domain: https://eurogofed.org
 basePath: /archives
 trailingSlash: true
 crossLinks: true

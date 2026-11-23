@@ -1,5 +1,6 @@
 events:
   - id: ${EVENT}
+domain: ${DOMAIN}
 basePath: ${BASE_PATH}
 config:
   generateSgfs: true

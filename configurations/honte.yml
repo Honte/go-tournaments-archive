@@ -6,6 +6,7 @@ footer:
     This project is [open source on GitHub](https://github.com/Honte/go-tournaments-archive). Ideas, bug reports, and contributions to the archive are very welcome.
   pl: >-
     To jest projekt [open-source na GitHubie](https://github.com/Honte/go-tournaments-archive). Zachęcamy do zgłaszania pomysłów, błędów oraz do współpracy przy rozwoju archiwum.
+domain: https://archives.honte.pl
 dynamic: true
 locales:
   - pl

@@ -6,7 +6,7 @@ import type { Locale, Translations } from '@/i18n/consts';
 
 export async function loadTranslations(event: EventDefinition, locale?: Locale): Promise<Translations> {
   const requestedLocale = locale ?? event.locales[0];
-  const baseTranslations = await loadBaseTranslations(locale);
+  const baseTranslations = await loadBaseTranslations(requestedLocale);
   const filePath = `./events/${event.id}/i18n/${requestedLocale}.json`;
 
   if (!existsSync(filePath)) {

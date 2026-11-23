@@ -14,8 +14,10 @@
 /out/
 /public/data/
 /public/sgf/
+/public/og/
 /public/*/data/
 /public/*/sgf/
+/public/*/og/
 
 # sgf templates
 /templates/

@@ -11,7 +11,7 @@
     "allTimeStatsDescription": "Lista wszech czasów wszystkich zawodników turniejów w Go",
     "allTimeStatsByCountryLink": "Kraje",
     "allTimeStatsByCountryTitle": "Lista wszech czasów krajów",
-    "allTimeStatsByCountryDescription": "Lista wszech czasów osiągnieć wszystkich krajów w turniejach Go",
+    "allTimeStatsByCountryDescription": "Lista wszech czasów osiągnięć wszystkich krajów w turniejach Go",
     "playerStatsTitle": "%{0} - Statystyki",
     "playerStatsDescription": "Statystyki gracza %{0} we wszystkich rozegranych turniejach w Go",
     "countryStatsTitle": "%{0} - Statystyki",
@@ -24,6 +24,37 @@
     "lastUpdated": "Ostatnia aktualizacja: %{0}",
     "github": "Zobacz na GitHub: %{0}",
     "searchPlaceholder": "Szukaj zawodników lub turniejów…"
+  },
+  "metadata": {
+    "archiveTitle": "Archiwum turniejów Go",
+    "archiveDescription": "%{0}: wyniki, statystyki wszech czasów i zapisy partii SGF dla %{1}.",
+    "homeSummary": "%{0}: %{1}.",
+    "tournamentsSummary": "Przegląd %{0} — %{1}: miejsca, terminy, zwycięzcy i liczba partii.",
+    "editionUpcoming": "Nadchodząca edycja — %{0}.",
+    "editionPodium": "Podium: %{0}.",
+    "editionCategories": "Kategorie: %{0}.",
+    "editionIncludesResults": "Pełne wyniki i tabele.",
+    "editionIncludesResultsAndSgfs": "Pełne wyniki, tabele i %{0}.",
+    "allTimePlayersSummary": "Tabela wszech czasów: %{0} w %{1} — %{2}.",
+    "allTimeCountriesSummary": "Klasyfikacja wszech czasów krajów: %{0} w %{1} — %{2}.",
+    "playerSummary": "%{0} (%{1}): %{2}.",
+    "countrySummary": "%{0} (%{1}): %{2}.",
+    "categorySummary": "Statystyki i wyniki kategorii %{0} — %{1} (%{2}).",
+    "gamesSummary": "Przeglądaj, filtruj i odtwarzaj %{0} z %{1} — %{2}.",
+    "bestPlace": "najlepsze miejsce: %{0}.",
+    "record": "bilans %{0}-%{1} (%{2}%)",
+    "recordWithDraws": "bilans %{0}-%{1}-%{2} (%{3}%)",
+    "medalsDetail": "%{0} (%{1})"
+  },
+  "og": {
+    "generalSubtitle": "Wyniki, tabele, statystyki wszech czasów i zapisy partii SGF.",
+    "generalSubtitleNoSgf": "Wyniki, tabele i statystyki wszech czasów.",
+    "upcomingBadge": "NADCHODZĄCA EDYCJA",
+    "statsBadge": "STATYSTYKI WSZECH CZASÓW",
+    "statsSubtitle": "Tabela wszech czasów, profile graczy, medale i bilanse partii.",
+    "gamesBadge": "ZAPISY PARTII (SGF)",
+    "gamesSubtitle": "Przeglądaj, filtruj i odtwarzaj archiwalne zapisy partii SGF.",
+    "archiveSubtitle": "Wyniki, statystyki wszech czasów i zapisy partii SGF dla %{0}."
   },
   "navigation": {
     "home": {

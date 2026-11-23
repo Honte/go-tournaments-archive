@@ -25,6 +25,37 @@
     "github": "Contribute on GitHub: %{0}",
     "searchPlaceholder": "Search players or tournaments…"
   },
+  "metadata": {
+    "archiveTitle": "Go Tournaments Archives",
+    "archiveDescription": "%{0}: results, all-time statistics and SGF game records for %{1}.",
+    "homeSummary": "%{0}: %{1}.",
+    "tournamentsSummary": "Overview of %{0} of %{1} with venues, dates, winners and game counts.",
+    "editionUpcoming": "Upcoming edition of %{0}.",
+    "editionPodium": "Podium: %{0}.",
+    "editionCategories": "Categories: %{0}.",
+    "editionIncludesResults": "Full results and standings.",
+    "editionIncludesResultsAndSgfs": "Full results, standings and %{0}.",
+    "allTimePlayersSummary": "All-time standings of %{0} across %{1} of %{2}.",
+    "allTimeCountriesSummary": "All-time country standings of %{0} across %{1} of %{2}.",
+    "playerSummary": "%{0} in %{1}: %{2}.",
+    "countrySummary": "%{0} in %{1}: %{2}.",
+    "categorySummary": "All-time standings and results for %{0} in %{1} (%{2}).",
+    "gamesSummary": "Browse, filter and replay %{0} from %{1} of %{2}.",
+    "bestPlace": "best finish: #%{0}",
+    "record": "%{0}-%{1} record (%{2}%)",
+    "recordWithDraws": "%{0}-%{1}-%{2} record (%{3}%)",
+    "medalsDetail": "%{0} (%{1})"
+  },
+  "og": {
+    "generalSubtitle": "Results, standings, all-time statistics and SGF game records.",
+    "generalSubtitleNoSgf": "Results, standings and all-time statistics.",
+    "upcomingBadge": "UPCOMING EDITION",
+    "statsBadge": "ALL-TIME STATISTICS",
+    "statsSubtitle": "All-time standings, player profiles, medals and game records.",
+    "gamesBadge": "GAME RECORDS (SGF)",
+    "gamesSubtitle": "Browse, filter and replay archived SGF game records.",
+    "archiveSubtitle": "Results, all-time statistics and SGF game records for %{0}."
+  },
   "navigation": {
     "home": {
       "anchor": "Home page",

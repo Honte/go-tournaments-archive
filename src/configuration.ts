@@ -17,10 +17,16 @@ export function loadConfiguration() {
 }
 
 export function loadNamedConfiguration(configuration: string) {
-  return readYamlEnv<ArchiveConfiguration>(`./${CONFIGURATIONS_DIR}/${configuration}.yml`, {
+  const loaded = readYamlEnv<ArchiveConfiguration>(`./${CONFIGURATIONS_DIR}/${configuration}.yml`, {
     EVENT: process.env.EVENT,
     BASE_PATH: process.env.BASE_PATH || '',
+    DOMAIN: process.env.DOMAIN || '',
   });
+
+  return {
+    ...loaded,
+    domain: normalizeDomain(loaded.domain),
+  };
 }
 
 export async function getConfigurations() {
@@ -34,6 +40,7 @@ export async function getConfigurations() {
 
 export function getEventConfigurations(configuration: ArchiveConfiguration) {
   const results: (EventConfig & { id: EventDefinition['id'] })[] = [];
+  const archiveDomain = normalizeDomain(configuration.domain);
 
   for (const item of configuration.events) {
     if ('title' in item) {
@@ -42,6 +49,7 @@ export function getEventConfigurations(configuration: ArchiveConfiguration) {
           ...configuration.config,
           ...item.config,
           ...child,
+          domain: normalizeDomain(child.domain) ?? archiveDomain,
           basePath: configuration.basePath,
           dynamic: configuration.dynamic,
         });
@@ -50,6 +58,7 @@ export function getEventConfigurations(configuration: ArchiveConfiguration) {
       results.push({
         ...configuration.config,
         ...item,
+        domain: normalizeDomain(item.domain) ?? archiveDomain,
         basePath: configuration.basePath,
         dynamic: configuration.dynamic,
       });
@@ -57,4 +66,14 @@ export function getEventConfigurations(configuration: ArchiveConfiguration) {
   }
 
   return results;
+}
+
+export function normalizeDomain(domain?: string): string | undefined {
+  if (!domain) {
+    return undefined;
+  }
+
+  const trimmed = domain.trim().replace(/\/+$/, '');
+
+  return trimmed.length > 0 ? trimmed : undefined;
 }
