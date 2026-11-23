@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import type { ArchiveConfiguration, EventContext } from '@/schema/event';
-import type { Locale } from '@/i18n/consts';
+import type { Locale, Translator } from '@/i18n/consts';
 import { getString } from '@/i18n/utils';
 import {
   allCountryStatsUrl,
@@ -91,8 +91,8 @@ export function buildMultiArchiveLayoutMetadata(configuration: ArchiveConfigurat
   return {
     metadataBase: resolveMetadataBase(configuration.domain),
     icons: {
-      icon: multiFaviconUrl(configuration.basePath),
-      apple: multiAppleIconUrl(configuration.basePath),
+      icon: { url: multiFaviconUrl(configuration.basePath), type: 'image/svg+xml' },
+      apple: { url: multiAppleIconUrl(configuration.basePath), type: 'image/png', sizes: '180x180' },
     },
   };
 }
@@ -133,12 +133,18 @@ export function buildMultiArchivePageMetadata(input: ArchiveMetadataInput): Meta
   };
 }
 
-export function buildEventLayoutMetadata(event: EventContext): Metadata {
+export function buildEventLayoutMetadata(event: EventContext, t?: Translator): Metadata {
   return {
     metadataBase: resolveMetadataBase(event.domain),
+    ...(t
+      ? {
+          title: t('site.name'),
+          description: t('site.description'),
+        }
+      : {}),
     icons: {
-      icon: faviconUrl(event),
-      apple: appleIconUrl(event),
+      icon: { url: faviconUrl(event), type: 'image/svg+xml' },
+      apple: { url: appleIconUrl(event), type: 'image/png', sizes: '180x180' },
     },
   };
 }

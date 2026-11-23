@@ -175,7 +175,10 @@ describe('OG card spec builders', () => {
 
     const tEn = createTranslator('en', {
       site: { name: 'EYGC Archive', acronym: 'EYGC' },
-      categories: { u12: 'Under 12', u18: 'Under 18' },
+      categories: {
+        full: { u12: 'Under 12', u18: 'Under 18' },
+        short: { u12: 'U12', u18: 'U18' },
+      },
     });
     const categorized = buildEditionCardSpec(
       createEvent({

@@ -1,7 +1,10 @@
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import type { EventContext } from '@/schema/event';
 import type { Locale } from '@/i18n/consts';
 import { isEventLocale } from '@/i18n/locales';
+import { getTranslator } from '@/i18n/translator';
+import { buildEventHomeMetadata, buildEventRedirectMetadata } from '@/libs/metadata';
 import { getEventSummary, getTournaments, getTranslations } from '@/data/serverApi';
 import { ArchiveStats } from '@/components/home/ArchiveStats';
 import { Hero } from '@/components/home/Hero';
@@ -44,6 +47,43 @@ export async function HomePage({ event, locale }: HomePageProps) {
       </div>
     </>
   );
+}
+
+export async function getHomePageMetadata({ event, locale }: HomePageProps): Promise<Metadata> {
+  if (!isEventLocale(event, locale)) {
+    return notFound();
+  }
+
+  const [translations, tournaments, summary] = await Promise.all([
+    getTranslations(event, locale),
+    getTournaments(event),
+    getEventSummary(event),
+  ]);
+
+  return buildEventHomeMetadata({
+    event,
+    locale,
+    t: getTranslator(translations),
+    tournaments,
+    totalStats: summary.totalStats,
+  });
+}
+
+export async function getEventRedirectMetadata(event: EventContext): Promise<Metadata> {
+  const locale = event.locales[0];
+  const [translations, tournaments, summary] = await Promise.all([
+    getTranslations(event, locale),
+    getTournaments(event),
+    getEventSummary(event),
+  ]);
+
+  return buildEventRedirectMetadata({
+    event,
+    locale,
+    t: getTranslator(translations),
+    tournaments,
+    totalStats: summary.totalStats,
+  });
 }
 
 export async function getHomePageOptions(event: EventContext) {

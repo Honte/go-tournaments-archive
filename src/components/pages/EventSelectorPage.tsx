@@ -1,8 +1,10 @@
+import type { Metadata } from 'next';
 import type { ArchiveConfiguration } from '@/schema/event';
 import { loadConfiguredEvents } from '@/events';
 import type { Locale } from '@/i18n/consts';
 import { loadAllTranslations, loadBaseTranslations } from '@/i18n/server';
 import { getTranslator } from '@/i18n/translator';
+import { buildMultiArchivePageMetadata } from '@/libs/metadata';
 import { EventSelector, type MultiEventTranslations } from '@/components/multi/EventSelector';
 import type { EventEntry, EventEntryGroup } from '@/components/multi/schema';
 import { Content } from '@/components/ui/Content';
@@ -10,6 +12,18 @@ import { Content } from '@/components/ui/Content';
 export type EventSelectorPageProps = {
   configuration: ArchiveConfiguration;
 };
+
+export async function getEventSelectorPageMetadata(configuration: ArchiveConfiguration): Promise<Metadata> {
+  const locale = (configuration.locales?.[0] ?? 'en') as Locale;
+  const [events, translations] = await Promise.all([loadConfiguredEvents(configuration), loadBaseTranslations(locale)]);
+
+  return buildMultiArchivePageMetadata({
+    configuration,
+    events,
+    locale,
+    t: getTranslator(translations),
+  });
+}
 
 export async function EventSelectorPage({ configuration }: EventSelectorPageProps) {
   const events = await loadConfiguredEvents(configuration);

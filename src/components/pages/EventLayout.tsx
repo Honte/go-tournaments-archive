@@ -1,9 +1,10 @@
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import type { PropsWithChildren } from 'react';
 import type { EventContext } from '@/schema/event';
 import { isEventLocale } from '@/i18n/locales';
 import { getTranslator } from '@/i18n/translator';
-import { appleIconUrl, faviconUrl } from '@/libs/urls';
+import { buildEventLayoutMetadata } from '@/libs/metadata';
 import { getTranslations } from '@/data/serverApi';
 import { Client } from '@/components/Client';
 import { Footer } from '@/components/Footer';
@@ -33,7 +34,7 @@ export async function EventLayout({ event, locale, children }: LayoutProps) {
   );
 }
 
-export async function getEventLayoutMetadata({ event, locale }: LayoutProps) {
+export async function getEventLayoutMetadata({ event, locale }: LayoutProps): Promise<Metadata> {
   if (!isEventLocale(event, locale)) {
     return notFound();
   }
@@ -41,12 +42,5 @@ export async function getEventLayoutMetadata({ event, locale }: LayoutProps) {
   const translations = await getTranslations(event, locale);
   const t = getTranslator(translations);
 
-  return {
-    title: t('site.name'),
-    description: t('site.description'),
-    icons: {
-      icon: { url: faviconUrl(event), type: 'image/svg+xml' },
-      apple: { url: appleIconUrl(event), type: 'image/png', sizes: '180x180' },
-    },
-  };
+  return buildEventLayoutMetadata(event, t);
 }

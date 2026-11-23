@@ -280,12 +280,12 @@ export function getTournamentCategoryWinners(tournament: Tournament, t: Translat
       continue;
     }
 
-    const translated = t(`categories.${category}`);
-    const label = translated && translated !== `categories.${category}` ? translated : category.toUpperCase();
+    const shortLabel = translateOptional(t, `categories.short.${category}`) ?? category.toUpperCase();
+    const fullLabel = translateOptional(t, `categories.full.${category}`) ?? shortLabel;
 
     winners.push({
-      category: category.toUpperCase(),
-      label,
+      category: shortLabel,
+      label: fullLabel,
       winner: names.join(', '),
     });
   }
@@ -310,9 +310,17 @@ export function getTournamentSgfCount(tournament: Tournament): number {
 }
 
 export function formatCategoryLabel(category: string, t: Translator): string {
-  const translated = t(`categories.${category}`);
+  return (
+    translateOptional(t, `categories.full.${category}`) ??
+    translateOptional(t, `categories.short.${category}`) ??
+    category
+  );
+}
 
-  return translated && translated !== `categories.${category}` ? translated : category;
+function translateOptional(t: Translator, key: string): string | undefined {
+  const translated = t(key);
+
+  return translated && translated !== key ? translated : undefined;
 }
 
 function selectPluralForm(count: number, forms: PluralForms, locale: Locale): string {

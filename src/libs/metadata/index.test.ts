@@ -211,8 +211,20 @@ describe('event metadata builders', () => {
     const t = getTranslator(translations);
     const data = createEventData([createTournament({ year: 2024 }), createTournament({ year: 2025 })]);
 
-    const home = buildEventHomeMetadata({ event, locale: 'pl', translations, t, data });
-    const redirect = buildEventRedirectMetadata({ event, locale: 'pl', translations, t, data });
+    const home = buildEventHomeMetadata({
+      event,
+      locale: 'pl',
+      t,
+      tournaments: data.tournaments,
+      totalStats: data.summary.totalStats,
+    });
+    const redirect = buildEventRedirectMetadata({
+      event,
+      locale: 'pl',
+      t,
+      tournaments: data.tournaments,
+      totalStats: data.summary.totalStats,
+    });
 
     assert.equal(String(home.metadataBase), 'https://mp.go.art.pl/');
     assert.equal(home.title, 'Archiwum Mistrzostw Polski w Go');
@@ -261,7 +273,7 @@ describe('event metadata builders', () => {
     const t = getTranslator(translations);
     const tournament = createTournament({ location: 'Vancouver', country: 'CA' });
 
-    const meta = buildTournamentMetadata({ event, locale: 'en', translations, t, tournament });
+    const meta = buildTournamentMetadata({ event, locale: 'en', t, tournament });
 
     assert.equal(meta.title, 'WAGC 2025 - World Amateur Go Championships Archive');
     assert.equal(meta.openGraph?.title, 'WAGC 2025');
@@ -278,7 +290,10 @@ describe('event metadata builders', () => {
     const tEn = getTranslator(
       createTranslations('en', {
         site: { name: 'EYGC Archive', eventName: 'EYGC', acronym: 'EYGC' },
-        categories: { u12: 'Under 12', u18: 'Under 18' },
+        categories: {
+          full: { u12: 'Under 12', u18: 'Under 18' },
+          short: { u12: 'U12', u18: 'U18' },
+        },
       })
     );
 
@@ -292,7 +307,6 @@ describe('event metadata builders', () => {
         domain: 'https://eurogofed.org',
       }),
       locale: 'en',
-      translations: createTranslations('en'),
       t: tEn,
       tournament: createTournament({
         top: [],
@@ -312,7 +326,6 @@ describe('event metadata builders', () => {
     const pairs = buildTournamentMetadata({
       event: createEvent({ id: 'ppgc', locales: ['pl'], pairs: true }),
       locale: 'pl',
-      translations: createTranslations('pl'),
       t: tPl,
       tournament: createTournament({
         top: [['pair1']],
@@ -336,7 +349,6 @@ describe('event metadata builders', () => {
     const announcement = buildTournamentMetadata({
       event: createEvent({ id: 'wagc', locales: ['en'], showCountry: true }),
       locale: 'en',
-      translations: createTranslations('en'),
       t: tEn,
       tournament: createTournament({
         year: 2026,
@@ -369,7 +381,10 @@ describe('event metadata builders', () => {
         eventName: 'World Amateur Go Championship',
         acronym: 'WAGC',
       },
-      categories: { u18: 'Under 18' },
+      categories: {
+        full: { u18: 'Under 18' },
+        short: { u18: 'U18' },
+      },
     });
     const t = getTranslator(translations);
     const data = createEventData([
@@ -378,12 +393,23 @@ describe('event metadata builders', () => {
       createTournament({ year: 2026, announcement: true }),
     ]);
 
-    const overview = buildTournamentsOverviewMetadata({ event, locale: 'en', translations, t, data });
+    const overview = buildTournamentsOverviewMetadata({
+      event,
+      locale: 'en',
+      t,
+      tournaments: data.tournaments,
+    });
     assert.equal(overview.title, 'Tournaments - World Amateur Go Championships Archive');
     assert.match(overview.description ?? '', /2 editions \(2024–2025\)/);
     assert.deepEqual(overview.twitter?.images, ['/og/en/general.jpg']);
 
-    const allPlayers = buildAllPlayersStatsMetadata({ event, locale: 'en', translations, t, data });
+    const allPlayers = buildAllPlayersStatsMetadata({
+      event,
+      locale: 'en',
+      t,
+      tournaments: data.tournaments,
+      totalStats: data.summary.totalStats,
+    });
     assert.match(allPlayers.description ?? '', /35 players, 120 games across 2 editions \(2024–2025\)/);
     assert.deepEqual(allPlayers.twitter?.images, ['/og/en/stats.jpg']);
 
@@ -404,7 +430,7 @@ describe('event metadata builders', () => {
       results: [],
       opponents: {},
     };
-    const playerMeta = buildPlayerStatsMetadata({ event, locale: 'en', translations, t, player, category: 'u18' });
+    const playerMeta = buildPlayerStatsMetadata({ event, locale: 'en', t, player, category: 'u18' });
     assert.equal(playerMeta.title, 'Stanisław Frejlak - Stats (Under 18) - World Amateur Go Championships Archive');
     assert.equal(playerMeta.alternates?.canonical, '/en/stats/stanislaw-frejlak/u18');
     assert.match(
@@ -412,7 +438,14 @@ describe('event metadata builders', () => {
       /Stanisław Frejlak \(Poland\) in World Amateur Go Championship \(Under 18\): 4 appearances, 2 medals \(1G 1S\), best finish: #1, 15-4-1 record \(75%\)\./
     );
 
-    const allCountries = buildAllCountriesStatsMetadata({ event, locale: 'en', translations, t, data });
+    const allCountries = buildAllCountriesStatsMetadata({
+      event,
+      locale: 'en',
+      t,
+      tournaments: data.tournaments,
+      totalStats: data.summary.totalStats,
+      countryCount: Object.keys(data.stats.countries).length,
+    });
     assert.match(allCountries.description ?? '', /2 countries, 120 games across 2 editions \(2024–2025\)/);
     assert.deepEqual(allCountries.twitter?.images, ['/og/en/stats.jpg']);
 
@@ -442,7 +475,7 @@ describe('event metadata builders', () => {
         },
       },
     };
-    const countryMeta = buildCountryStatsMetadata({ event, locale: 'en', translations, t, country });
+    const countryMeta = buildCountryStatsMetadata({ event, locale: 'en', t, country });
     assert.equal(countryMeta.alternates?.canonical, '/en/stats/country/pl');
     assert.match(
       countryMeta.description ?? '',
@@ -459,7 +492,6 @@ describe('event metadata builders', () => {
     const categoryMeta = buildCategoryStatsMetadata({
       event,
       locale: 'en',
-      translations,
       t,
       category: 'u18',
       stats: categoryStats,
@@ -470,7 +502,13 @@ describe('event metadata builders', () => {
       /Under 18 in World Amateur Go Championship, 2 editions \(2023–2025\)\./
     );
 
-    const gamesMeta = buildGamesMetadata({ event, locale: 'en', translations, t, data });
+    const gamesMeta = buildGamesMetadata({
+      event,
+      locale: 'en',
+      t,
+      tournaments: data.tournaments,
+      totalStats: data.summary.totalStats,
+    });
     assert.equal(gamesMeta.alternates?.canonical, '/en/stats/games');
     assert.match(gamesMeta.description ?? '', /42 SGF game records from 2 editions \(2024–2025\)/);
     assert.deepEqual(gamesMeta.twitter?.images, ['/og/en/games.jpg']);
@@ -487,8 +525,8 @@ describe('event metadata builders', () => {
     const layoutMeta = buildMultiArchiveLayoutMetadata(configuration);
     assert.equal(String(layoutMeta.metadataBase), 'https://eurogofed.org/');
     assert.deepEqual(layoutMeta.icons, {
-      icon: '/archives/multi-icon.svg',
-      apple: '/archives/multi-icon.png',
+      icon: { url: '/archives/multi-icon.svg', type: 'image/svg+xml' },
+      apple: { url: '/archives/multi-icon.png', type: 'image/png', sizes: '180x180' },
     });
 
     const t = getTranslator(createTranslations('en'));
@@ -504,15 +542,16 @@ describe('event metadata builders', () => {
     assert.match(selectorMeta.description ?? '', /2 Go tournaments/);
 
     const noOgEvent = createEvent({ domain: undefined, generateOgImages: false });
-    const eventLayout = buildEventLayoutMetadata(noOgEvent);
+    const eventLayout = buildEventLayoutMetadata(noOgEvent, t);
     assert.equal(eventLayout.metadataBase, undefined);
+    assert.equal(eventLayout.title, t('site.name'));
 
     const noOgHome = buildEventHomeMetadata({
       event: noOgEvent,
       locale: 'pl',
-      translations: createTranslations('pl'),
       t: getTranslator(createTranslations('pl')),
-      data: createEventData([createTournament()]),
+      tournaments: [createTournament()],
+      totalStats: createEventData([createTournament()]).summary.totalStats,
     });
     assert.equal(noOgHome.metadataBase, undefined);
     assert.equal(noOgHome.openGraph?.images, undefined);

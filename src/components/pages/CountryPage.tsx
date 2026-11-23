@@ -1,9 +1,12 @@
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import type { CountryStats as CountryStatsData } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Locale } from '@/i18n/consts';
+import { isEventLocale } from '@/i18n/locales';
 import { getTranslator } from '@/i18n/translator';
-import { getCountryAvailableCategories } from '@/libs/countryStats';
+import { filterCountryStatsByCategory, getCountryAvailableCategories } from '@/libs/countryStats';
+import { buildCountryStatsMetadata } from '@/libs/metadata';
 import { getAllCountriesStats, getCountryStats, getTranslations } from '@/data/serverApi';
 import { CountryStats } from '@/components/CountryStats';
 import { CountryStatsNavigation } from '@/components/stats/CountryStatsNavigation';
@@ -55,20 +58,35 @@ export async function CountryPage({ event, locale, code, category }: CountryPage
   );
 }
 
-export async function getCountryPageMetadata({ event, locale, code, category }: CountryPageProps) {
-  if (!event.showCountry || (category && !event.categories?.includes(category))) {
+export async function getCountryPageMetadata({ event, locale, code, category }: CountryPageProps): Promise<Metadata> {
+  if (!isEventLocale(event, locale) || !event.showCountry || (category && !event.categories?.includes(category))) {
     return notFound();
   }
 
-  const translations = await getTranslations(event, locale);
-  const t = getTranslator(translations);
-  const name = t(`country.${code.toUpperCase()}`);
-  const title = category ? `${name} - ${t(`categories.full.${category}`)}` : name;
+  const [translations, country] = await Promise.all([
+    getTranslations(event, locale),
+    getCountryStats(event, code.toUpperCase()),
+  ]);
 
-  return {
-    title: title ? `${t('site.countryStatsTitle', title)} - ${t('site.name')}` : t('site.name'),
-    description: title ? t('site.countryStatsDescription', title) : t('site.description'),
-  };
+  if (!country) {
+    return notFound();
+  }
+
+  const categories = getCountryAvailableCategories(country, event.categories ?? []);
+
+  if (category && (categories.length < 2 || !categories.includes(category))) {
+    return notFound();
+  }
+
+  const statsCountry = category ? filterCountryStatsByCategory(country, category) : country;
+
+  return buildCountryStatsMetadata({
+    event,
+    locale,
+    t: getTranslator(translations),
+    country: statsCountry,
+    category,
+  });
 }
 
 export async function getCountryPageOptions(event: EventContext) {

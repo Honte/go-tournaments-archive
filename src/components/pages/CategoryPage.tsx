@@ -1,7 +1,10 @@
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import type { EventContext } from '@/schema/event';
 import type { Locale } from '@/i18n/consts';
+import { isEventLocale } from '@/i18n/locales';
 import { getTranslator } from '@/i18n/translator';
+import { buildCategoryStatsMetadata } from '@/libs/metadata';
 import { getCategoryStats, getTranslations } from '@/data/serverApi';
 import { CategoryCountryMedalTable } from '@/components/category/CategoryCountryMedalTable';
 import { CategoryMedalTable } from '@/components/category/CategoryMedalTable';
@@ -43,19 +46,24 @@ export async function CategoryPage({ event, locale, category }: CategoryPageProp
   );
 }
 
-export async function getCategoryPageMetadata({ event, locale, category }: CategoryPageProps) {
-  if (!event.categories?.includes(category)) {
+export async function getCategoryPageMetadata({ event, locale, category }: CategoryPageProps): Promise<Metadata> {
+  if (!isEventLocale(event, locale) || !event.categories?.includes(category)) {
     return notFound();
   }
 
-  const translations = await getTranslations(event, locale);
-  const t = getTranslator(translations);
-  const name = t(`categories.full.${category}`);
+  const [translations, stats] = await Promise.all([getTranslations(event, locale), getCategoryStats(event, category)]);
 
-  return {
-    title: `${t('site.categoryStatsTitle', name)} - ${t('site.name')}`,
-    description: t('site.categoryStatsDescription', name),
-  };
+  if (!stats) {
+    return notFound();
+  }
+
+  return buildCategoryStatsMetadata({
+    event,
+    locale,
+    t: getTranslator(translations),
+    category,
+    stats,
+  });
 }
 
 export function getCategoryPageOptions(event: EventContext) {

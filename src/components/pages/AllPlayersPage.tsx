@@ -1,7 +1,11 @@
+import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 import type { EventContext } from '@/schema/event';
 import type { Locale } from '@/i18n/consts';
+import { isEventLocale } from '@/i18n/locales';
 import { getTranslator } from '@/i18n/translator';
-import { getAllPlayersStats, getTranslations } from '@/data/serverApi';
+import { buildAllPlayersStatsMetadata } from '@/libs/metadata';
+import { getAllPlayersStats, getEventSummary, getTournaments, getTranslations } from '@/data/serverApi';
 import { AllPlayersStats } from '@/components/AllPlayersStats';
 import { Content } from '@/components/ui/Content';
 import { Title } from '@/components/ui/Title';
@@ -24,14 +28,24 @@ export async function AllPlayersPage({ event, locale }: AllPlayersPageProps) {
   );
 }
 
-export async function getAllPlayersPageMetadata({ event, locale }: AllPlayersPageProps) {
-  const translations = await getTranslations(event, locale);
-  const t = getTranslator(translations);
+export async function getAllPlayersPageMetadata({ event, locale }: AllPlayersPageProps): Promise<Metadata> {
+  if (!isEventLocale(event, locale)) {
+    return notFound();
+  }
 
-  return {
-    title: `${t('site.allTimeStatsTitle')} - ${t('site.name')}`,
-    description: t('site.allTimeStatsDescription'),
-  };
+  const [translations, tournaments, summary] = await Promise.all([
+    getTranslations(event, locale),
+    getTournaments(event),
+    getEventSummary(event),
+  ]);
+
+  return buildAllPlayersStatsMetadata({
+    event,
+    locale,
+    t: getTranslator(translations),
+    tournaments,
+    totalStats: summary.totalStats,
+  });
 }
 
 export async function getAllPlayersPageOptions(event: EventContext) {

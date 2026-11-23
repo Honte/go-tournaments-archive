@@ -1,7 +1,10 @@
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import type { EventContext } from '@/schema/event';
 import type { Locale } from '@/i18n/consts';
+import { isEventLocale } from '@/i18n/locales';
 import { getTranslator } from '@/i18n/translator';
+import { buildTournamentMetadata } from '@/libs/metadata';
 import { getAvailableTournaments, getTournament, getTournamentList, getTranslations } from '@/data/serverApi';
 import { Awarded } from '@/components/Awarded';
 import { GamesList } from '@/components/GamesList';
@@ -61,15 +64,26 @@ export async function TournamentPage({ event, locale, year }: TournamentPageProp
   );
 }
 
-export async function getTournamentPageMetadata({ event, locale, year }: TournamentPageProps) {
-  const translations = await getTranslations(event, locale);
-  const tournament = await getTournament(event, Number(year));
-  const t = getTranslator(translations);
+export async function getTournamentPageMetadata({ event, locale, year }: TournamentPageProps): Promise<Metadata> {
+  if (!isEventLocale(event, locale) || !year.match(/^\d+$/)) {
+    return notFound();
+  }
 
-  return {
-    title: `${t('site.name')} - ${tournament?.year}`,
-    description: t('site.yearDescription', String(tournament?.year)),
-  };
+  const [translations, tournament] = await Promise.all([
+    getTranslations(event, locale),
+    getTournament(event, Number(year)),
+  ]);
+
+  if (!tournament) {
+    return notFound();
+  }
+
+  return buildTournamentMetadata({
+    event,
+    locale,
+    t: getTranslator(translations),
+    tournament,
+  });
 }
 
 export async function getTournamentPageOptions(event: EventContext) {

@@ -1,8 +1,11 @@
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import type { EventContext } from '@/schema/event';
 import type { Locale } from '@/i18n/consts';
+import { isEventLocale } from '@/i18n/locales';
 import { getTranslator } from '@/i18n/translator';
-import { getAllCountriesStats, getTranslations } from '@/data/serverApi';
+import { buildAllCountriesStatsMetadata } from '@/libs/metadata';
+import { getAllCountriesStats, getEventSummary, getTournaments, getTranslations } from '@/data/serverApi';
 import { AllCountriesStats } from '@/components/AllCountriesStats';
 import { Content } from '@/components/ui/Content';
 import { Title } from '@/components/ui/Title';
@@ -29,14 +32,26 @@ export async function AllCountriesPage({ event, locale }: AllCountriesPageProps)
   );
 }
 
-export async function getAllCountriesPageMetadata({ event, locale }: AllCountriesPageProps) {
-  const translations = await getTranslations(event, locale);
-  const t = getTranslator(translations);
+export async function getAllCountriesPageMetadata({ event, locale }: AllCountriesPageProps): Promise<Metadata> {
+  if (!isEventLocale(event, locale) || !event.showCountry) {
+    return notFound();
+  }
 
-  return {
-    title: `${t('site.allTimeStatsByCountryTitle')} - ${t('site.name')}`,
-    description: t('site.allTimeStatsByCountryDescription'),
-  };
+  const [translations, tournaments, summary, countries] = await Promise.all([
+    getTranslations(event, locale),
+    getTournaments(event),
+    getEventSummary(event),
+    getAllCountriesStats(event),
+  ]);
+
+  return buildAllCountriesStatsMetadata({
+    event,
+    locale,
+    t: getTranslator(translations),
+    tournaments,
+    totalStats: summary.totalStats,
+    countryCount: Object.keys(countries).length,
+  });
 }
 
 export async function getAllCountriesPageOptions(event: EventContext) {

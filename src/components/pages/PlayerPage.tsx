@@ -1,9 +1,12 @@
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import type { PlayerStats as PlayerStatsData } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Locale } from '@/i18n/consts';
+import { isEventLocale } from '@/i18n/locales';
 import { getTranslator } from '@/i18n/translator';
 import { jsxJoin } from '@/libs/join';
+import { buildPlayerStatsMetadata } from '@/libs/metadata';
 import { filterPlayerStatsByCategory, getPlayerAvailableCategories } from '@/libs/playerStats';
 import { getAllPlayersStats, getPlayerStats, getTranslations } from '@/data/serverApi';
 import { PlayerStats } from '@/components/PlayerStats';
@@ -76,25 +79,32 @@ export async function PlayerPage({ event, locale, slug, category }: PlayerPagePr
   );
 }
 
-export async function getPlayerPageMetadata({ event, locale, slug, category }: PlayerPageProps) {
-  if (category && !event.categories?.includes(category)) {
+export async function getPlayerPageMetadata({ event, locale, slug, category }: PlayerPageProps): Promise<Metadata> {
+  if (!isEventLocale(event, locale) || (category && !event.categories?.includes(category))) {
     return notFound();
   }
 
-  const translations = await getTranslations(event, locale);
-  const player = await getPlayerStats(event, slug);
+  const [translations, player] = await Promise.all([getTranslations(event, locale), getPlayerStats(event, slug)]);
 
   if (!player) {
     return notFound();
   }
 
-  const t = getTranslator(translations);
-  const name = player && category ? `${player.name} - ${t(`categories.full.${category}`)}` : player?.name;
+  const categories = getPlayerAvailableCategories(player, event.categories ?? []);
 
-  return {
-    title: name ? `${t('site.playerStatsTitle', name)} - ${t('site.name')}` : t('site.name'),
-    description: name ? t('site.playerStatsDescription', name) : t('site.description'),
-  };
+  if (category && (categories.length < 2 || !categories.includes(category))) {
+    return notFound();
+  }
+
+  const statsPlayer = category ? filterPlayerStatsByCategory(player, category) : player;
+
+  return buildPlayerStatsMetadata({
+    event,
+    locale,
+    t: getTranslator(translations),
+    player: statsPlayer,
+    category,
+  });
 }
 
 export async function getPlayerPageOptions(event: EventContext) {

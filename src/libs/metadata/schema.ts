@@ -1,6 +1,6 @@
-import type { CategoryStats, CountryStats, PlayerStats, Tournament } from '@/schema/data';
-import type { ArchiveConfiguration, EventContext, EventData } from '@/schema/event';
-import type { Locale, Translations, Translator } from '@/i18n/consts';
+import type { CategoryStats, CountryStats, PlayerStats, StatsSummary, Tournament } from '@/schema/data';
+import type { ArchiveConfiguration, EventContext } from '@/schema/event';
+import type { Locale, Translator } from '@/i18n/consts';
 
 export const OG_IMAGE_WIDTH = 1200;
 export const OG_IMAGE_HEIGHT = 630;
@@ -8,7 +8,6 @@ export const OG_IMAGE_HEIGHT = 630;
 export type EventMetadataBase = {
   event: EventContext;
   locale: Locale;
-  translations: Translations;
   t: Translator;
 };
 
@@ -20,7 +19,8 @@ export type ArchiveMetadataInput = {
 };
 
 export type EventHomeMetadataInput = EventMetadataBase & {
-  data: EventData;
+  tournaments: Tournament[];
+  totalStats: StatsSummary;
 };
 
 export type TournamentMetadataInput = EventMetadataBase & {
@@ -28,11 +28,12 @@ export type TournamentMetadataInput = EventMetadataBase & {
 };
 
 export type TournamentsOverviewMetadataInput = EventMetadataBase & {
-  data: EventData;
+  tournaments: Tournament[];
 };
 
 export type AllPlayersStatsMetadataInput = EventMetadataBase & {
-  data: EventData;
+  tournaments: Tournament[];
+  totalStats: StatsSummary;
 };
 
 export type PlayerStatsMetadataInput = EventMetadataBase & {
@@ -41,7 +42,9 @@ export type PlayerStatsMetadataInput = EventMetadataBase & {
 };
 
 export type AllCountriesStatsMetadataInput = EventMetadataBase & {
-  data: EventData;
+  tournaments: Tournament[];
+  totalStats: StatsSummary;
+  countryCount: number;
 };
 
 export type CountryStatsMetadataInput = EventMetadataBase & {
@@ -55,7 +58,8 @@ export type CategoryStatsMetadataInput = EventMetadataBase & {
 };
 
 export type GamesMetadataInput = EventMetadataBase & {
-  data: EventData;
+  tournaments: Tournament[];
+  totalStats: StatsSummary;
 };
 
 export type CategoryWinner = {
