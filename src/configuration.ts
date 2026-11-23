@@ -16,8 +16,8 @@ export function loadConfiguration() {
   return loadNamedConfiguration(CONFIG);
 }
 
-export function loadNamedConfiguration(configuration: string) {
-  const loaded = readYamlEnv<ArchiveConfiguration>(`./${CONFIGURATIONS_DIR}/${configuration}.yml`, {
+export async function loadNamedConfiguration(configuration: string) {
+  const loaded = await readYamlEnv<ArchiveConfiguration>(`./${CONFIGURATIONS_DIR}/${configuration}.yml`, {
     EVENT: process.env.EVENT,
     BASE_PATH: process.env.BASE_PATH || '',
     DOMAIN: process.env.DOMAIN || '',

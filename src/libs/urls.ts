@@ -52,6 +52,14 @@ export function allGameStatsForCountryUrl(event: EventContext, locale: string, c
   return `${allGameStatsUrl(event, locale)}?country=${encodeURIComponent(country)}`;
 }
 
+export function multiFaviconUrl(basePath?: string) {
+  return joinPaths(basePath, '/multi-icon.svg');
+}
+
+export function multiAppleIconUrl(basePath?: string) {
+  return joinPaths(basePath, '/multi-icon.png');
+}
+
 export function faviconUrl(event: EventContext) {
   return joinPaths(event.basePath, event.prefix, '/event-icon.svg');
 }
@@ -66,6 +74,26 @@ export function logoBlackUrl(event: EventContext) {
 
 export function logoWhiteUrl(event: EventContext) {
   return joinPaths(event.basePath, event.prefix, '/logo-white.svg');
+}
+
+export function ogArchiveImageUrl(basePath: string | undefined, locale: string) {
+  return joinPaths(basePath, 'og', locale, 'archive.jpg');
+}
+
+export function ogGeneralImageUrl(event: EventContext, locale: string) {
+  return joinPaths(event.basePath, 'og', event.prefix, locale, 'general.jpg');
+}
+
+export function ogTournamentImageUrl(event: EventContext, locale: string, year: number | string) {
+  return joinPaths(event.basePath, 'og', event.prefix, locale, 'tournaments', `${year}.jpg`);
+}
+
+export function ogStatsImageUrl(event: EventContext, locale: string) {
+  return joinPaths(event.basePath, 'og', event.prefix, locale, 'stats.jpg');
+}
+
+export function ogGamesImageUrl(event: EventContext, locale: string) {
+  return joinPaths(event.basePath, 'og', event.prefix, locale, 'games.jpg');
 }
 
 export function i18nUrl(event: EventContext, locale: string) {

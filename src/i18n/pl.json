@@ -39,7 +39,7 @@
     "allTimeCountriesSummary": "Klasyfikacja wszech czasów krajów: %{0} w %{1} — %{2}.",
     "playerSummary": "%{0} (%{1}): %{2}.",
     "countrySummary": "%{0} (%{1}): %{2}.",
-    "categorySummary": "Statystyki i wyniki kategorii %{0} — %{1} (%{2}).",
+    "categorySummary": "Statystyki i wyniki kategorii %{0} — %{1}, %{2}.",
     "gamesSummary": "Przeglądaj, filtruj i odtwarzaj %{0} z %{1} — %{2}.",
     "bestPlace": "najlepsze miejsce: %{0}.",
     "record": "bilans %{0}-%{1} (%{2}%)",

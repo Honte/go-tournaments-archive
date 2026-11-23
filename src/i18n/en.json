@@ -39,7 +39,7 @@
     "allTimeCountriesSummary": "All-time country standings of %{0} across %{1} of %{2}.",
     "playerSummary": "%{0} in %{1}: %{2}.",
     "countrySummary": "%{0} in %{1}: %{2}.",
-    "categorySummary": "All-time standings and results for %{0} in %{1} (%{2}).",
+    "categorySummary": "All-time standings and results for %{0} in %{1}, %{2}.",
     "gamesSummary": "Browse, filter and replay %{0} from %{1} of %{2}.",
     "bestPlace": "best finish: #%{0}",
     "record": "%{0}-%{1} record (%{2}%)",
