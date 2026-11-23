@@ -1,7 +1,9 @@
 import type { NextRequest } from 'next/server';
 import { loadEventFromPrefix } from '@/events';
 import { loadConfiguration } from '@/configuration';
-import { serveArchiveOgImage, serveEventOgImage } from '@/routes/serveOgImage';
+import { getMultiOgImageOptions, serveArchiveOgImage, serveEventOgImage } from '@/routes/serveOgImage';
+
+export const dynamic = 'force-static';
 
 type RouteProps = {
   params: Promise<{ path: string[] }>;
@@ -29,4 +31,8 @@ export async function GET(_: NextRequest, props: RouteProps) {
   } catch {
     return new Response('Not found', { status: 404 });
   }
+}
+
+export async function generateStaticParams() {
+  return getMultiOgImageOptions(await loadConfiguration());
 }

@@ -1,3 +1,5 @@
+import path from 'node:path';
+import fg from 'fast-glob';
 import type { ArchiveConfiguration, EventContext } from '@/schema/event';
 import { loadConfiguredEvents } from '@/events';
 import type { Locale } from '@/i18n/consts';
@@ -22,6 +24,63 @@ const JPG_HEADERS = {
   'Content-Type': 'image/jpeg',
   'Cache-Control': 'no-store',
 };
+
+export async function getSingleOgImageOptions(event: EventContext): Promise<{ path: string[] }[]> {
+  return buildEventOgOptions(event);
+}
+
+export async function getMultiOgImageOptions(configuration: ArchiveConfiguration): Promise<{ path: string[] }[]> {
+  const options: { path: string[] }[] = [];
+  const locales = configuration.locales ?? ['en'];
+
+  for (const locale of locales) {
+    options.push({ path: [locale, 'archive.jpg'] });
+  }
+
+  const events = await loadConfiguredEvents(configuration);
+
+  for (const event of events) {
+    if (event.external || !event.prefix) {
+      continue;
+    }
+
+    const eventOptions = await buildEventOgOptions(event, event.prefix);
+
+    for (const option of eventOptions) {
+      options.push(option);
+    }
+  }
+
+  return options;
+}
+
+async function buildEventOgOptions(event: EventContext, prefix?: string): Promise<{ path: string[] }[]> {
+  const files = await fg.glob(`./events/${event.id}/data/*.yml`);
+  const years: string[] = [];
+
+  for (const file of files) {
+    const year = path.basename(file, '.yml');
+
+    if (/^\d+$/.test(year)) {
+      years.push(year);
+    }
+  }
+
+  const options: { path: string[] }[] = [];
+  const baseSegments = prefix ? [prefix] : [];
+
+  for (const locale of event.locales) {
+    options.push({ path: [...baseSegments, locale, 'general.jpg'] });
+    options.push({ path: [...baseSegments, locale, 'stats.jpg'] });
+    options.push({ path: [...baseSegments, locale, 'games.jpg'] });
+
+    for (const year of years) {
+      options.push({ path: [...baseSegments, locale, 'tournaments', `${year}.jpg`] });
+    }
+  }
+
+  return options;
+}
 
 export async function serveArchiveOgImage(configuration: ArchiveConfiguration, localeSegment: string) {
   const locales = configuration.locales ?? ['en'];
