@@ -4,6 +4,7 @@ import type { ArchiveConfiguration } from '@/schema/event';
 import { loadConfiguredEvents } from '@/events';
 import { loadAllTranslations } from '@/i18n/server';
 import { buildDataAssets, type BuildDataRequest } from '@tools/assets/data';
+import { buildOgAssets, type EventOgAssetSource } from '@tools/assets/ogs';
 import type { BuildSgfRequest } from '@tools/assets/sgf';
 import { buildSgfAssetsInWorkers, buildSgfLists } from '@tools/assets/sgfs';
 import { buildZips } from '@tools/assets/zips';
@@ -12,15 +13,18 @@ import { collectOtherEvents } from '@/data/sitemap';
 
 const PUBLIC_SGF_DIR = './public/sgf';
 const PUBLIC_DATA_DIR = './public/data';
+const PUBLIC_OG_DIR = './public/og';
 
 export async function buildAssets(configuration: ArchiveConfiguration) {
   const allEvents = await loadConfiguredEvents(configuration);
   const events = allEvents.filter((event) => !event.external);
   const sgfTasks: BuildSgfRequest[] = [];
   const dataTasks: BuildDataRequest[] = [];
+  const ogSources: EventOgAssetSource[] = [];
 
   await rm(PUBLIC_SGF_DIR, { recursive: true, force: true });
   await rm(PUBLIC_DATA_DIR, { recursive: true, force: true });
+  await rm(PUBLIC_OG_DIR, { recursive: true, force: true });
 
   await Promise.all(
     events.map(async (event) => {
@@ -39,6 +43,12 @@ export async function buildAssets(configuration: ArchiveConfiguration) {
         allTranslations,
         outputDir: dataOutputDir,
         otherEvents: collectOtherEvents(allEvents, event.id, configuration.crossLinks),
+      });
+
+      ogSources.push({
+        event,
+        data,
+        allTranslations,
       });
 
       for (const tournament of data.tournaments) {
@@ -62,7 +72,11 @@ export async function buildAssets(configuration: ArchiveConfiguration) {
     })
   );
 
-  const [sgfs] = await Promise.all([buildSgfAssetsInWorkers(sgfTasks), buildDataAssets(dataTasks)]);
+  const [sgfs] = await Promise.all([
+    buildSgfAssetsInWorkers(sgfTasks),
+    buildDataAssets(dataTasks),
+    buildOgAssets(configuration, allEvents, ogSources, PUBLIC_OG_DIR),
+  ]);
 
   await Promise.all([
     configuration.config?.generateSgfs && buildSgfLists(events, PUBLIC_SGF_DIR, sgfs),

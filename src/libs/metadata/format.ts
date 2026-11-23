@@ -146,6 +146,10 @@ export function getYearSpan(years: readonly number[]): string | undefined {
     }
   }
 
+  if (min < 1900) {
+    return undefined;
+  }
+
   return min === max ? String(min) : `${min}–${max}`;
 }
 
