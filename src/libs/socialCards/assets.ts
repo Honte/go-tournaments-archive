@@ -1,9 +1,13 @@
 import { existsSync } from 'node:fs';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
-import { createElement } from 'react';
 import sharp from 'sharp';
-import type { LogoProps } from '@/schema/event';
+import type { EventContext } from '@/schema/event';
+import type { Locale } from '@/i18n/consts';
+import { loadTranslations } from '@/i18n/server';
+import { getTranslator } from '@/i18n/translator';
+import { renderEventLogoSvg } from '@/libs/logo';
+import { translateOptional } from '@/libs/metadata';
 import type { SocialLogoAsset } from './schema';
 
 const GENERIC_BACKGROUND_PATH = path.resolve('src/assets/social-background.jpg');
@@ -34,7 +38,10 @@ export function loadSocialFonts(): Promise<SocialFontSpec[]> {
       loadFontFile('inter-400.woff', 400),
       loadFontFile('inter-600.woff', 600),
       loadFontFile('inter-700.woff', 700),
-    ]);
+    ]).catch((error: unknown) => {
+      cachedFontsPromise = undefined;
+      throw error;
+    });
   }
 
   return cachedFontsPromise;
@@ -42,7 +49,10 @@ export function loadSocialFonts(): Promise<SocialFontSpec[]> {
 
 export function loadGenericBackgroundDataUri(): Promise<string> {
   if (!cachedGenericBgPromise) {
-    cachedGenericBgPromise = rasterizeBackgroundToDataUri(GENERIC_BACKGROUND_PATH);
+    cachedGenericBgPromise = rasterizeBackgroundToDataUri(GENERIC_BACKGROUND_PATH).catch((error: unknown) => {
+      cachedGenericBgPromise = undefined;
+      throw error;
+    });
   }
 
   return cachedGenericBgPromise;
@@ -56,7 +66,12 @@ export function loadEventBackgroundDataUri(eventId: string): Promise<string> {
   }
 
   const bgPath = resolveEventBackgroundPath(eventId);
-  const promise = bgPath ? rasterizeBackgroundToDataUri(bgPath) : loadGenericBackgroundDataUri();
+  const promise = (bgPath ? rasterizeBackgroundToDataUri(bgPath) : loadGenericBackgroundDataUri()).catch(
+    (error: unknown) => {
+      eventBgCache.delete(eventId);
+      throw error;
+    }
+  );
   eventBgCache.set(eventId, promise);
 
   return promise;
@@ -64,7 +79,10 @@ export function loadEventBackgroundDataUri(eventId: string): Promise<string> {
 
 export function loadArchiveLogoAsset(): Promise<SocialLogoAsset> {
   if (!cachedArchiveLogoPromise) {
-    cachedArchiveLogoPromise = rasterizeArchivesIcon();
+    cachedArchiveLogoPromise = rasterizeArchivesIcon().catch((error: unknown) => {
+      cachedArchiveLogoPromise = undefined;
+      throw error;
+    });
   }
 
   return cachedArchiveLogoPromise;
@@ -77,10 +95,30 @@ export function loadEventLogoAsset(eventId: string): Promise<SocialLogoAsset> {
     return existing;
   }
 
-  const promise = rasterizeEventLogo(eventId);
+  const promise = rasterizeEventLogo(eventId).catch((error: unknown) => {
+    eventLogoCache.delete(eventId);
+    throw error;
+  });
   eventLogoCache.set(eventId, promise);
 
   return promise;
+}
+
+export async function loadArchiveEventAcronyms(events: readonly EventContext[], locale: Locale): Promise<string[]> {
+  const translationsList = await Promise.all(
+    events.map((event) => loadTranslations(event, event.locales.includes(locale) ? locale : event.locales[0]))
+  );
+  const acronyms: string[] = [];
+
+  for (const translations of translationsList) {
+    const acronym = translateOptional(getTranslator(translations), 'site.acronym');
+
+    if (acronym) {
+      acronyms.push(acronym);
+    }
+  }
+
+  return acronyms;
 }
 
 function resolveEventBackgroundPath(eventId: string): string | undefined {
@@ -119,14 +157,7 @@ async function rasterizeArchivesIcon(): Promise<SocialLogoAsset> {
 }
 
 async function rasterizeEventLogo(eventId: string): Promise<SocialLogoAsset> {
-  const { renderToReadableStream } = await import('react-dom/server');
-  const { Logo } = (await import(`../../../events/${eventId}/Logo`)) as {
-    Logo: React.ComponentType<LogoProps>;
-  };
-
-  const stream = await renderToReadableStream(createElement(Logo, { color: 'white', mode: 'logo' }));
-  await stream.allReady;
-  const svg = await new Response(stream).text();
+  const svg = await renderEventLogoSvg(eventId, { color: 'white', mode: 'logo' });
   const png = await sharp(Buffer.from(svg), { density: 300 })
     .resize({ height: LOGO_TARGET_HEIGHT * 2 })
     .png()

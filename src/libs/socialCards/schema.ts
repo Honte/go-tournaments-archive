@@ -1,12 +1,15 @@
-import type { CategoryWinner } from '@/libs/metadata';
-
-export const SOCIAL_IMAGE_WIDTH = 1200;
-export const SOCIAL_IMAGE_HEIGHT = 630;
+import type { StatsSummary, Tournament } from '@/schema/data';
+import type { CategoryWinner, PodiumPlace } from '@/libs/metadata';
 
 export type SocialLogoAsset = {
   src: string;
   width: number;
   height: number;
+};
+
+export type EventCardStatsInput = {
+  tournaments: readonly Tournament[];
+  totalStats: StatsSummary;
 };
 
 export type ArchiveCardSpec = {
@@ -35,7 +38,7 @@ export type EditionCardSpec = {
   metaLine?: string;
   statsLine?: string;
   upcomingBadge?: string;
-  podium: string[];
+  podium: PodiumPlace[];
   categoryWinners: CategoryWinner[];
   isPairs: boolean;
 };
@@ -62,7 +65,7 @@ export type GamesCardSpec = {
 export type SocialCardSpec = ArchiveCardSpec | GeneralCardSpec | EditionCardSpec | StatsCardSpec | GamesCardSpec;
 
 export type SocialRenderRequest = {
-  card: SocialCardSpec;
   backgroundSrc: string;
   logo: SocialLogoAsset;
+  card: SocialCardSpec;
 };

@@ -41,7 +41,7 @@
     "countrySummary": "%{0} (%{1}): %{2}.",
     "categorySummary": "Statystyki i wyniki kategorii %{0} — %{1}, %{2}.",
     "gamesSummary": "Przeglądaj, filtruj i odtwarzaj %{0} z %{1} — %{2}.",
-    "bestPlace": "najlepsze miejsce: %{0}.",
+    "bestPlace": "najlepsze: %{0}. miejsce",
     "record": "bilans %{0}-%{1} (%{2}%)",
     "recordWithDraws": "bilans %{0}-%{1}-%{2} (%{3}%)",
     "medalsDetail": "%{0} (%{1})"

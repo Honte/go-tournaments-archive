@@ -3,9 +3,10 @@ import { readFileSync } from 'node:fs';
 import { describe, it } from 'node:test';
 import { merge } from 'lodash-es';
 import type { Tournament } from '@/schema/data';
-import type { ArchiveConfiguration, EventContext, EventData } from '@/schema/event';
+import type { ArchiveConfiguration, EventContext } from '@/schema/event';
 import type { Locale, Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
+import { loadArchiveEventAcronyms } from './assets';
 import {
   buildArchiveCardSpec,
   buildEditionCardSpec,
@@ -13,6 +14,7 @@ import {
   buildEventGeneralCardSpec,
   buildEventStatsCardSpec,
 } from './cards';
+import type { EventCardStatsInput } from './schema';
 
 const baseEn = JSON.parse(readFileSync('./src/i18n/en.json', 'utf-8')) as Translations;
 const basePl = JSON.parse(readFileSync('./src/i18n/pl.json', 'utf-8')) as Translations;
@@ -65,51 +67,24 @@ function createTournament(overrides?: Partial<Tournament>): Tournament {
   };
 }
 
-function createEventData(tournaments: Tournament[], sgfs = 28): EventData {
+function createCardStatsInput(tournaments: Tournament[], sgfs = 28): EventCardStatsInput {
   return {
     tournaments,
-    stats: {
-      summary: {
-        tournaments: tournaments.filter((item) => !item.announcement).length,
-        playedGames: 140,
-        unresolved: 0,
-        sgfs,
-        resign: 70,
-        timeout: 0,
-        draws: 0,
-        relays: 0,
-        streams: 0,
-        analysis: 0,
-        players: 48,
-        black: 72,
-        white: 68,
-        color: 140,
-      },
-      games: {},
-      players: {},
-      countries: {},
-      categories: {},
-    },
-    summary: {
-      attendants: [],
-      medalists: [],
-      countryMedals: [],
-      totalStats: {
-        tournaments: tournaments.filter((item) => !item.announcement).length,
-        playedGames: 140,
-        unresolved: 0,
-        sgfs,
-        resign: 70,
-        timeout: 0,
-        draws: 0,
-        relays: 0,
-        streams: 0,
-        analysis: 0,
-        players: 48,
-        black: 72,
-        white: 68,
-        color: 140,
-      },
+    totalStats: {
+      tournaments: tournaments.filter((item) => !item.announcement).length,
+      playedGames: 140,
+      unresolved: 0,
+      sgfs,
+      resign: 70,
+      timeout: 0,
+      draws: 0,
+      relays: 0,
+      streams: 0,
+      analysis: 0,
+      players: 48,
+      black: 72,
+      white: 68,
+      color: 140,
     },
   };
 }
@@ -138,17 +113,17 @@ describe('social card spec builders', () => {
     const t = createTranslator('pl', {
       site: { name: 'Archiwum Mistrzostw Polski w Go', eventName: 'Mistrzostwa Polski w Go', acronym: 'MP' },
     });
-    const data = createEventData([createTournament({ year: 2024 }), createTournament({ year: 2025 })], 28);
+    const statsInput = createCardStatsInput([createTournament({ year: 2024 }), createTournament({ year: 2025 })], 28);
 
-    const general = buildEventGeneralCardSpec(event, data, 'pl', t);
+    const general = buildEventGeneralCardSpec(event, statsInput, 'pl', t);
     assert.equal(general.displayDomain, 'mp.go.art.pl');
     assert.deepEqual(general.pills, ['2024–2025', '2 edycje', '48 graczy', '28 partii SGF']);
 
-    const noSgfGeneral = buildEventGeneralCardSpec(event, createEventData([createTournament()], 0), 'pl', t);
+    const noSgfGeneral = buildEventGeneralCardSpec(event, createCardStatsInput([createTournament()], 0), 'pl', t);
     assert.equal(noSgfGeneral.subtitle, 'Wyniki, tabele i statystyki wszech czasów.');
     assert.equal(noSgfGeneral.pills.length, 3);
 
-    const stats = buildEventStatsCardSpec(data, 'pl', t);
+    const stats = buildEventStatsCardSpec(statsInput, 'pl', t);
     assert.equal(stats.badge, 'STATYSTYKI WSZECH CZASÓW');
     assert.deepEqual(stats.metrics, [
       { value: '2', label: 'edycje' },
@@ -156,12 +131,12 @@ describe('social card spec builders', () => {
       { value: '140', label: 'partii' },
     ]);
 
-    const games = buildEventGamesCardSpec(data, 'pl', t);
+    const games = buildEventGamesCardSpec(statsInput, 'pl', t);
     assert.equal(games.badge, 'ZAPISY PARTII (SGF)');
     assert.deepEqual(games.pills, ['28 partii SGF', '2024–2025']);
   });
 
-  it('builds standard, categorized, pairs, and announcement edition cards using commas instead of dots', () => {
+  it('builds standard, tied-podium, categorized, and announcement edition cards using commas instead of dots', () => {
     const tPl = createTranslator('pl', {
       site: { name: 'Archiwum Mistrzostw Polski w Go', acronym: 'MP' },
     });
@@ -171,7 +146,22 @@ describe('social card spec builders', () => {
     assert.equal(standard.metaLine?.includes('·'), false);
     assert.match(standard.metaLine ?? '', /^Gdańsk, /);
     assert.equal(standard.statsLine, '3 graczy, 1 partia SGF');
-    assert.deepEqual(standard.podium, ['Stanisław Frejlak', 'Cezary Czernecki', 'Koichiro Habu']);
+    assert.deepEqual(standard.podium, [
+      { rank: 1, names: 'Stanisław Frejlak' },
+      { rank: 2, names: 'Cezary Czernecki' },
+      { rank: 3, names: 'Koichiro Habu' },
+    ]);
+
+    const tiedFirst = buildEditionCardSpec(
+      createEvent(),
+      createTournament({ top: [['p1', 'p2'], [], ['p3']] }),
+      'pl',
+      tPl
+    );
+    assert.deepEqual(tiedFirst.podium, [
+      { rank: 1, names: 'Stanisław Frejlak, Cezary Czernecki' },
+      { rank: 3, names: 'Koichiro Habu' },
+    ]);
 
     const tEn = createTranslator('en', {
       site: { name: 'EYGC Archive', acronym: 'EYGC' },
@@ -211,5 +201,18 @@ describe('social card spec builders', () => {
     assert.equal(announcement.upcomingBadge, 'UPCOMING EDITION');
     assert.equal(announcement.statsLine, undefined);
     assert.equal(announcement.podium.length, 0);
+  });
+
+  it('falls back to each event primary locale when loading archive selector acronyms', async () => {
+    const acronyms = await loadArchiveEventAcronyms(
+      [
+        createEvent({ id: 'wagc', locales: ['en', 'pl'] }),
+        createEvent({ id: 'wwgc', locales: ['en'] }),
+        createEvent({ id: 'pgc', locales: ['pl', 'en'] }),
+      ],
+      'pl'
+    );
+
+    assert.deepEqual(acronyms, ['WAGC', 'WWGC', 'MP']);
   });
 });

@@ -2,6 +2,7 @@ import { readdir } from 'node:fs/promises';
 import path from 'node:path';
 import { readYamlEnv } from 'yaml-env-defaults';
 import type { ArchiveConfiguration, EventConfig, EventDefinition } from '@/schema/event';
+import { normalizeDomain } from '@/libs/urls';
 
 const CONFIGURATIONS_DIR = 'configurations';
 export const CONFIG = process.env.CONFIG || (process.env.EVENT ? 'single' : 'multi');
@@ -66,14 +67,4 @@ export function getEventConfigurations(configuration: ArchiveConfiguration) {
   }
 
   return results;
-}
-
-export function normalizeDomain(domain?: string): string | undefined {
-  if (!domain) {
-    return undefined;
-  }
-
-  const trimmed = domain.trim().replace(/\/+$/, '');
-
-  return trimmed.length > 0 ? trimmed : undefined;
 }

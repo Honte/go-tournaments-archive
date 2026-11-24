@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import type { ArchiveConfiguration, EventContext } from '@/schema/event';
 import type { Locale, Translator } from '@/i18n/consts';
 import { getString } from '@/i18n/utils';
-import { SOCIAL_IMAGE_HEIGHT, SOCIAL_IMAGE_WIDTH } from '@/libs/socialCards/schema';
 import {
   allCountryStatsUrl,
   allGameStatsUrl,
@@ -36,18 +35,26 @@ import {
   describeTournament,
   describeTournamentsOverview,
 } from './descriptions';
-import { formatCategoryLabel, getOpenGraphLocale, getTournamentHeading, resolveMetadataBase } from './format';
-import type {
-  AllCountriesStatsMetadataInput,
-  AllPlayersStatsMetadataInput,
-  ArchiveMetadataInput,
-  CategoryStatsMetadataInput,
-  CountryStatsMetadataInput,
-  EventHomeMetadataInput,
-  GamesMetadataInput,
-  PlayerStatsMetadataInput,
-  TournamentMetadataInput,
-  TournamentsOverviewMetadataInput,
+import {
+  formatCategoryLabel,
+  getOpenGraphLocale,
+  getTournamentHeading,
+  resolveMetadataBase,
+  translateOptional,
+} from './format';
+import {
+  SOCIAL_IMAGE_HEIGHT,
+  SOCIAL_IMAGE_WIDTH,
+  type AllCountriesStatsMetadataInput,
+  type AllPlayersStatsMetadataInput,
+  type ArchiveMetadataInput,
+  type CategoryStatsMetadataInput,
+  type CountryStatsMetadataInput,
+  type EventHomeMetadataInput,
+  type GamesMetadataInput,
+  type PlayerStatsMetadataInput,
+  type TournamentMetadataInput,
+  type TournamentsOverviewMetadataInput,
 } from './schema';
 
 export function buildMultiArchiveLayoutMetadata(configuration: ArchiveConfiguration): Metadata {
@@ -88,7 +95,7 @@ export function buildMultiArchivePageMetadata(input: ArchiveMetadataInput): Meta
       ...(imageUrl ? { images: [buildSocialImage(imageUrl, title)] } : {}),
     },
     twitter: {
-      card: 'summary_large_image',
+      card: imageUrl ? 'summary_large_image' : 'summary',
       title,
       description,
       ...(imageUrl ? { images: [imageUrl] } : {}),
@@ -128,10 +135,6 @@ export function buildEventHomeMetadata(input: EventHomeMetadataInput): Metadata 
     imageUrl: getEventSocialImage(event, () => socialGeneralImageUrl(event, locale)),
     imageAlt: siteName,
   });
-}
-
-export function buildEventRedirectMetadata(input: EventHomeMetadataInput): Metadata {
-  return buildEventHomeMetadata(input);
 }
 
 export function buildTournamentMetadata(input: TournamentMetadataInput): Metadata {
@@ -233,7 +236,7 @@ export function buildAllCountriesStatsMetadata(input: AllCountriesStatsMetadataI
 export function buildCountryStatsMetadata(input: CountryStatsMetadataInput): Metadata {
   const { category, country, event, locale, t } = input;
   const siteName = t('site.name');
-  const countryName = t(`country.${country.code}`);
+  const countryName = translateOptional(t, `country.${country.code}`) ?? country.code;
   const baseTitle = t('site.countryStatsTitle', countryName);
   const pageTitle = category ? `${baseTitle} (${formatCategoryLabel(category, t)})` : baseTitle;
   const description = describeCountryStats(input);
@@ -336,7 +339,7 @@ function buildEventPageMetadata({
       ...(imageUrl ? { images: [buildSocialImage(imageUrl, imageAlt)] } : {}),
     },
     twitter: {
-      card: 'summary_large_image',
+      card: imageUrl ? 'summary_large_image' : 'summary',
       title: socialTitle,
       description,
       ...(imageUrl ? { images: [imageUrl] } : {}),

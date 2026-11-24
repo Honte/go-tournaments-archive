@@ -1,7 +1,6 @@
 domain: https://amp.go.art.pl
 events:
   - id: pagc
-    domain: https://amp.go.art.pl
 config:
   generateSgfs: true
   generateRawSgfs: true

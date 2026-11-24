@@ -1,22 +1,31 @@
 import type { Tournament } from '@/schema/data';
-import type { ArchiveConfiguration, EventContext, EventData } from '@/schema/event';
+import type { ArchiveConfiguration, EventContext } from '@/schema/event';
 import type { Locale, Translator } from '@/i18n/consts';
 import { getString } from '@/i18n/utils';
 import {
   formatCount,
   formatDisplayDomain,
   formatNumber,
+  formatPluralNoun,
   formatTournamentMetaLine,
   getCompletedTournaments,
   getEventDisplayName,
+  getSgfTournamentYears,
   getTournamentCategoryWinners,
   getTournamentHeading,
   getTournamentParticipantCount,
-  getTournamentPodiumNames,
+  getTournamentPodiumPlaces,
   getTournamentSgfCount,
   getYearSpan,
 } from '@/libs/metadata';
-import type { ArchiveCardSpec, EditionCardSpec, GamesCardSpec, GeneralCardSpec, StatsCardSpec } from './schema';
+import type {
+  ArchiveCardSpec,
+  EditionCardSpec,
+  EventCardStatsInput,
+  GamesCardSpec,
+  GeneralCardSpec,
+  StatsCardSpec,
+} from './schema';
 
 const MAX_ARCHIVE_ACRONYMS = 9;
 const MAX_CATEGORY_WINNERS = 4;
@@ -47,13 +56,13 @@ export function buildArchiveCardSpec(
 
 export function buildEventGeneralCardSpec(
   event: EventContext,
-  data: EventData,
+  { totalStats, tournaments }: EventCardStatsInput,
   locale: Locale,
   t: Translator
 ): GeneralCardSpec {
-  const completed = getCompletedTournaments(data.tournaments);
+  const completed = getCompletedTournaments(tournaments);
   const span = getYearSpan(completed.map((tournament) => tournament.year));
-  const { players, sgfs } = data.summary.totalStats;
+  const { players, sgfs } = totalStats;
   const pills: string[] = [];
 
   if (span) {
@@ -119,7 +128,7 @@ export function buildEditionCardSpec(
     statParts.push(formatCount(sgfCount, 'sgfsShort', locale));
   }
 
-  const podium = getTournamentPodiumNames(tournament, 3);
+  const podium = getTournamentPodiumPlaces(tournament, 3);
   const categoryWinners =
     podium.length === 0 ? getTournamentCategoryWinners(tournament, t).slice(0, MAX_CATEGORY_WINNERS) : [];
 
@@ -136,29 +145,33 @@ export function buildEditionCardSpec(
   };
 }
 
-export function buildEventStatsCardSpec(data: EventData, locale: Locale, t: Translator): StatsCardSpec {
-  const completed = getCompletedTournaments(data.tournaments);
-  const { players, playedGames } = data.summary.totalStats;
+export function buildEventStatsCardSpec(
+  { totalStats, tournaments }: EventCardStatsInput,
+  locale: Locale,
+  t: Translator
+): StatsCardSpec {
+  const completed = getCompletedTournaments(tournaments);
+  const { players, playedGames } = totalStats;
   const metrics: { value: string; label: string }[] = [];
 
   if (completed.length > 0) {
     metrics.push({
       value: formatNumber(completed.length, locale),
-      label: extractNoun(formatCount(completed.length, 'editions', locale)),
+      label: formatPluralNoun(completed.length, 'editions', locale),
     });
   }
 
   if (players > 0) {
     metrics.push({
       value: formatNumber(players, locale),
-      label: extractNoun(formatCount(players, 'players', locale)),
+      label: formatPluralNoun(players, 'players', locale),
     });
   }
 
   if (playedGames > 0) {
     metrics.push({
       value: formatNumber(playedGames, locale),
-      label: extractNoun(formatCount(playedGames, 'games', locale)),
+      label: formatPluralNoun(playedGames, 'games', locale),
     });
   }
 
@@ -171,18 +184,13 @@ export function buildEventStatsCardSpec(data: EventData, locale: Locale, t: Tran
   };
 }
 
-export function buildEventGamesCardSpec(data: EventData, locale: Locale, t: Translator): GamesCardSpec {
-  const sgfCount = data.summary.totalStats.sgfs;
-  const sgfYears: number[] = [];
-
-  for (const tournament of data.tournaments) {
-    if (!tournament.announcement && tournament.hasSgfs) {
-      sgfYears.push(tournament.year);
-    }
-  }
-
-  const fallbackYears = getCompletedTournaments(data.tournaments).map((tournament) => tournament.year);
-  const span = getYearSpan(sgfYears.length > 0 ? sgfYears : fallbackYears);
+export function buildEventGamesCardSpec(
+  { totalStats, tournaments }: EventCardStatsInput,
+  locale: Locale,
+  t: Translator
+): GamesCardSpec {
+  const sgfCount = totalStats.sgfs;
+  const span = getYearSpan(getSgfTournamentYears(tournaments));
   const pills: string[] = [];
 
   if (sgfCount > 0) {
@@ -200,10 +208,4 @@ export function buildEventGamesCardSpec(data: EventData, locale: Locale, t: Tran
     subtitle: t('socialCard.gamesSubtitle'),
     pills,
   };
-}
-
-function extractNoun(formattedCount: string): string {
-  const match = formattedCount.match(/^[\d,\s]+\s+(.+)$/);
-
-  return match ? match[1] : formattedCount;
 }

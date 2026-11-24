@@ -6,7 +6,6 @@ import type { CategoryStats, CountryStats, PlayerStats, Tournament } from '@/sch
 import type { ArchiveConfiguration, EventContext, EventData } from '@/schema/event';
 import type { Locale, Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
-import { SOCIAL_IMAGE_HEIGHT, SOCIAL_IMAGE_WIDTH } from '@/libs/socialCards/schema';
 import {
   buildAllCountriesStatsMetadata,
   buildAllPlayersStatsMetadata,
@@ -14,7 +13,6 @@ import {
   buildCountryStatsMetadata,
   buildEventHomeMetadata,
   buildEventLayoutMetadata,
-  buildEventRedirectMetadata,
   buildGamesMetadata,
   buildMultiArchiveLayoutMetadata,
   buildMultiArchivePageMetadata,
@@ -22,6 +20,7 @@ import {
   buildTournamentMetadata,
   buildTournamentsOverviewMetadata,
 } from './pages';
+import { SOCIAL_IMAGE_HEIGHT, SOCIAL_IMAGE_WIDTH } from './schema';
 
 const baseEn = JSON.parse(readFileSync('./src/i18n/en.json', 'utf-8')) as Translations;
 const basePl = JSON.parse(readFileSync('./src/i18n/pl.json', 'utf-8')) as Translations;
@@ -163,7 +162,7 @@ function createEventData(tournaments: Tournament[]): EventData {
 }
 
 describe('event metadata builders', () => {
-  it('builds single-event home and redirect metadata with locales, alternates, and social tags', () => {
+  it('builds single-event home metadata with locales, alternates, and social tags', () => {
     const event = createEvent();
     const translations = createTranslations('pl', {
       site: {
@@ -176,13 +175,6 @@ describe('event metadata builders', () => {
     const data = createEventData([createTournament({ year: 2024 }), createTournament({ year: 2025 })]);
 
     const home = buildEventHomeMetadata({
-      event,
-      locale: 'pl',
-      t,
-      tournaments: data.tournaments,
-      totalStats: data.summary.totalStats,
-    });
-    const redirect = buildEventRedirectMetadata({
       event,
       locale: 'pl',
       t,
@@ -217,7 +209,6 @@ describe('event metadata builders', () => {
     ]);
     assert.equal(home.twitter && 'card' in home.twitter ? home.twitter.card : undefined, 'summary_large_image');
     assert.deepEqual(home.twitter?.images, ['/social/pl/general.jpg']);
-    assert.equal(redirect.alternates?.canonical, '/pl');
   });
 
   it('builds tournament metadata with standardized title, concise og:title, and comma-separated details', () => {
@@ -520,5 +511,67 @@ describe('event metadata builders', () => {
     assert.equal(noSocialHome.metadataBase, undefined);
     assert.equal(noSocialHome.openGraph?.images, undefined);
     assert.equal(noSocialHome.twitter?.images, undefined);
+    assert.equal(
+      noSocialHome.twitter && 'card' in noSocialHome.twitter ? noSocialHome.twitter.card : undefined,
+      'summary'
+    );
+
+    const noSocialSelector = buildMultiArchivePageMetadata({
+      configuration: { ...configuration, config: { generateSocialImages: false } },
+      events: [createEvent({ id: 'egc', prefix: 'egc' })],
+      locale: 'en',
+      t,
+    });
+    assert.equal(noSocialSelector.openGraph?.images, undefined);
+    assert.equal(
+      noSocialSelector.twitter && 'card' in noSocialSelector.twitter ? noSocialSelector.twitter.card : undefined,
+      'summary'
+    );
+  });
+
+  it('preserves podium ranks on ties and avoids double periods in Polish player descriptions', () => {
+    const tEn = getTranslator(
+      createTranslations('en', {
+        site: { name: 'WAGC Archive', eventName: 'WAGC', acronym: 'WAGC' },
+      })
+    );
+    const tiedMeta = buildTournamentMetadata({
+      event: createEvent({ id: 'wagc', locales: ['en'] }),
+      locale: 'en',
+      t: tEn,
+      tournament: createTournament({ top: [['p1', 'p2'], [], ['p3']] }),
+    });
+    assert.match(tiedMeta.description ?? '', /Podium: 1\. Stanisław Frejlak, Cezary Czernecki, 3\. Koichiro Habu\./);
+
+    const tPl = getTranslator(
+      createTranslations('pl', {
+        site: { name: 'Archiwum MP', eventName: 'Mistrzostwa Polski w Go', acronym: 'MP' },
+      })
+    );
+    const playerWithoutGames: PlayerStats = {
+      id: 'stanislaw-frejlak',
+      name: 'Stanisław Frejlak',
+      country: ['PL'],
+      bestPlace: 1,
+      totalGames: 0,
+      totalWon: 0,
+      totalDrawn: 0,
+      totalUnresolved: 0,
+      totalAttended: 1,
+      totalSgfs: 0,
+      score: 10_000,
+      medals: [['2025'], [], []],
+      categoriesMedals: {},
+      results: [],
+      opponents: {},
+    };
+    const plPlayerMeta = buildPlayerStatsMetadata({
+      event: createEvent({ id: 'pgc', locales: ['pl'], showBestPlace: true }),
+      locale: 'pl',
+      t: tPl,
+      player: playerWithoutGames,
+    });
+    assert.match(plPlayerMeta.description ?? '', /najlepsze: 1\. miejsce\.$/);
+    assert.equal(plPlayerMeta.description?.includes('..'), false);
   });
 });

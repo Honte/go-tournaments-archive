@@ -72,13 +72,10 @@ export async function buildAssets(configuration: ArchiveConfiguration) {
     })
   );
 
-  const [sgfs] = await Promise.all([
-    buildSgfAssetsInWorkers(sgfTasks),
-    buildDataAssets(dataTasks),
-    buildSocialAssets(configuration, allEvents, socialSources, PUBLIC_SOCIAL_DIR),
-  ]);
+  const [sgfs] = await Promise.all([buildSgfAssetsInWorkers(sgfTasks), buildDataAssets(dataTasks)]);
 
   await Promise.all([
+    buildSocialAssets(configuration, allEvents, socialSources, PUBLIC_SOCIAL_DIR),
     configuration.config?.generateSgfs && buildSgfLists(events, PUBLIC_SGF_DIR, sgfs),
     configuration.config?.generateZips && buildZips(events, sgfs),
   ]);

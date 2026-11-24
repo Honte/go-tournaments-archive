@@ -7,12 +7,14 @@ import {
   formatTournamentMetaLine,
   getCompletedTournaments,
   getEventDisplayName,
+  getSgfTournamentYears,
   getTournamentCategoryWinners,
   getTournamentHeading,
   getTournamentParticipantCount,
-  getTournamentPodiumNames,
+  getTournamentPodiumPlaces,
   getTournamentSgfCount,
   getYearSpan,
+  translateOptional,
 } from './format';
 import type {
   AllCountriesStatsMetadataInput,
@@ -89,10 +91,10 @@ export function describeTournament({ event, locale, t, tournament }: TournamentM
 
   sentences.push(introParts.length > 0 ? `${heading} — ${introParts.join(', ')}.` : `${heading}.`);
 
-  const podium = getTournamentPodiumNames(tournament, 3);
+  const podium = getTournamentPodiumPlaces(tournament, 3);
 
   if (podium.length > 0) {
-    const formattedPodium = podium.map((name, index) => `${index + 1}. ${name}`).join(', ');
+    const formattedPodium = podium.map((place) => `${place.rank}. ${place.names}`).join(', ');
 
     sentences.push(t('metadata.editionPodium', formattedPodium));
   } else {
@@ -155,9 +157,9 @@ export function describePlayerStats({ category, event, locale, player, t }: Play
     const countryNames: string[] = [];
 
     for (const code of player.country) {
-      const translated = t(`country.${code}`);
+      const translated = translateOptional(t, `country.${code}`);
 
-      if (translated && translated !== `country.${code}`) {
+      if (translated) {
         countryNames.push(translated);
       }
     }
@@ -233,7 +235,7 @@ export function describeAllCountriesStats({
 }
 
 export function describeCountryStats({ category, country, event, locale, t }: CountryStatsMetadataInput): string {
-  const countryName = t(`country.${country.code}`);
+  const countryName = translateOptional(t, `country.${country.code}`) ?? country.code;
   const eventScope = category
     ? `${getEventDisplayName(t)} (${formatCategoryLabel(category, t)})`
     : getEventDisplayName(t);
@@ -305,16 +307,7 @@ export function describeGames({ locale, t, totalStats, tournaments }: GamesMetad
     return t('site.gamesListDescription');
   }
 
-  const sgfYears: number[] = [];
-
-  for (const tournament of tournaments) {
-    if (!tournament.announcement && tournament.hasSgfs) {
-      sgfYears.push(tournament.year);
-    }
-  }
-
-  const years =
-    sgfYears.length > 0 ? sgfYears : getCompletedTournaments(tournaments).map((tournament) => tournament.year);
+  const years = getSgfTournamentYears(tournaments);
   const span = getYearSpan(years);
   const editionsPart = withYearSpan(formatCount(years.length, 'editionsGenitive', locale), span);
 

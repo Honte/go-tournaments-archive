@@ -4,9 +4,8 @@ import type { Locale, Translator } from '@/i18n/consts';
 import { getString } from '@/i18n/utils';
 import { formatDate, formatRange } from '@/libs/dates';
 import { isPair } from '@/libs/participants';
-import { joinPaths, normalizeBasePath } from '@/libs/urls';
-import type { CategoryWinner } from './schema';
-import { normalizeDomain } from '@/configuration';
+import { joinPaths, normalizeBasePath, normalizeDomain } from '@/libs/urls';
+import type { CategoryWinner, PodiumPlace } from './schema';
 
 export type PluralNoun =
   | 'editions'
@@ -121,11 +120,12 @@ export function formatNumber(value: number, locale: Locale): string {
   return new Intl.NumberFormat(locale).format(value).replace(/[\u00a0\u202f]/g, ' ');
 }
 
-export function formatCount(count: number, noun: PluralNoun, locale: Locale): string {
-  const forms = PLURALS[locale][noun];
-  const label = selectPluralForm(count, forms, locale);
+export function formatPluralNoun(count: number, noun: PluralNoun, locale: Locale): string {
+  return selectPluralForm(count, PLURALS[locale][noun], locale);
+}
 
-  return `${formatNumber(count, locale)} ${label}`;
+export function formatCount(count: number, noun: PluralNoun, locale: Locale): string {
+  return `${formatNumber(count, locale)} ${formatPluralNoun(count, noun, locale)}`;
 }
 
 export function getYearSpan(years: readonly number[]): string | undefined {
@@ -165,6 +165,22 @@ export function getCompletedTournaments(tournaments: readonly Tournament[]): Tou
   return completed;
 }
 
+export function getSgfTournamentYears(tournaments: readonly Tournament[]): number[] {
+  const sgfYears: number[] = [];
+
+  for (const tournament of tournaments) {
+    if (!tournament.announcement && tournament.hasSgfs) {
+      sgfYears.push(tournament.year);
+    }
+  }
+
+  if (sgfYears.length > 0) {
+    return sgfYears;
+  }
+
+  return getCompletedTournaments(tournaments).map((tournament) => tournament.year);
+}
+
 export function formatTournamentDates(tournament: Tournament, locale: Locale): string | undefined {
   const start = tournament.start ? parseValidDate(tournament.start) : undefined;
   const end = tournament.end ? parseValidDate(tournament.end) : undefined;
@@ -191,9 +207,9 @@ export function formatTournamentVenue(tournament: Tournament, event: EventContex
   }
 
   if (event.showCountry && tournament.country) {
-    const countryName = t(`country.${tournament.country}`);
+    const countryName = translateOptional(t, `country.${tournament.country}`);
 
-    if (countryName && countryName !== `country.${tournament.country}`) {
+    if (countryName) {
       parts.push(countryName);
     }
   }
@@ -230,13 +246,14 @@ export function formatParticipantLabel(participant: Participant): string {
   return participant.name;
 }
 
-export function getTournamentPodiumNames(tournament: Tournament, limit = 3): string[] {
-  const places: string[] = [];
+export function getTournamentPodiumPlaces(tournament: Tournament, limit = 3): PodiumPlace[] {
+  const places: PodiumPlace[] = [];
+  const slots = tournament.top.slice(0, limit);
 
-  for (const placeIds of tournament.top.slice(0, limit)) {
+  for (let index = 0; index < slots.length; index++) {
     const names: string[] = [];
 
-    for (const id of placeIds) {
+    for (const id of slots[index]) {
       const participant = tournament.participants[id];
 
       if (participant) {
@@ -245,7 +262,7 @@ export function getTournamentPodiumNames(tournament: Tournament, limit = 3): str
     }
 
     if (names.length > 0) {
-      places.push(names.join(', '));
+      places.push({ rank: index + 1, names: names.join(', ') });
     }
   }
 
@@ -317,7 +334,7 @@ export function formatCategoryLabel(category: string, t: Translator): string {
   );
 }
 
-function translateOptional(t: Translator, key: string): string | undefined {
+export function translateOptional(t: Translator, key: string): string | undefined {
   const translated = t(key);
 
   return translated && translated !== key ? translated : undefined;

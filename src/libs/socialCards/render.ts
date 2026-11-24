@@ -1,18 +1,17 @@
 import { ImageResponse } from 'next/og';
 import { createElement, type ReactElement } from 'react';
 import sharp from 'sharp';
+import { SOCIAL_IMAGE_HEIGHT, SOCIAL_IMAGE_WIDTH } from '@/libs/metadata';
 import { loadSocialFonts } from './assets';
-import {
-  SOCIAL_IMAGE_HEIGHT,
-  SOCIAL_IMAGE_WIDTH,
-  type ArchiveCardSpec,
-  type EditionCardSpec,
-  type GamesCardSpec,
-  type GeneralCardSpec,
-  type SocialCardSpec,
-  type SocialLogoAsset,
-  type SocialRenderRequest,
-  type StatsCardSpec,
+import type {
+  ArchiveCardSpec,
+  EditionCardSpec,
+  GamesCardSpec,
+  GeneralCardSpec,
+  SocialCardSpec,
+  SocialLogoAsset,
+  SocialRenderRequest,
+  StatsCardSpec,
 } from './schema';
 
 const DARK_BG = '#15181c';
@@ -102,11 +101,11 @@ function renderArchiveCard(card: ArchiveCardSpec, backgroundSrc: string, logo: S
       ? el(
           'div',
           { style: { display: 'flex', gap: 10, flexWrap: 'wrap' } },
-          ...tags.map((tag) =>
+          ...tags.map((tag, index) =>
             el(
               'div',
               {
-                key: tag,
+                key: `${index}-${tag}`,
                 style: {
                   padding: '9px 18px',
                   borderRadius: 10,
@@ -279,24 +278,25 @@ function renderEditionFooter(card: EditionCardSpec, width: number): ReactElement
           width,
         },
       },
-      ...card.podium.map((name, index) => {
-        const fontSize = card.isPairs ? (index === 0 ? 21 : 19) : index === 0 ? 23 : 21;
+      ...card.podium.map((place) => {
+        const rankIndex = place.rank - 1;
+        const fontSize = card.isPairs ? (place.rank === 1 ? 21 : 19) : place.rank === 1 ? 23 : 21;
 
         return el(
           'div',
           {
-            key: `${index}-${name}`,
+            key: `${place.rank}-${place.names}`,
             style: {
               display: 'flex',
               alignItems: 'center',
               gap: 14,
               fontSize,
-              fontWeight: index === 0 ? 600 : 400,
-              color: MEDAL_TEXT_COLORS[index] ?? '#cbd5e1',
+              fontWeight: place.rank === 1 ? 600 : 400,
+              color: MEDAL_TEXT_COLORS[rankIndex] ?? '#cbd5e1',
             },
           },
-          medalDot(MEDAL_COLORS[index] ?? '#94a3b8', String(index + 1)),
-          name
+          medalDot(MEDAL_COLORS[rankIndex] ?? '#94a3b8', String(place.rank)),
+          place.names
         );
       })
     );

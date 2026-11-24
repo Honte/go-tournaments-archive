@@ -1,7 +1,6 @@
 domain: https://wagc.go.art.pl
 events:
   - id: wagc
-    domain: https://wagc.go.art.pl
 config:
   generateSgfs: true
   generateRawSgfs: true

@@ -166,6 +166,16 @@ export function normalizeBasePath(basePath?: string) {
   return normalizePath(basePath);
 }
 
+export function normalizeDomain(domain?: string): string | undefined {
+  if (!domain) {
+    return undefined;
+  }
+
+  const trimmed = domain.trim().replace(/\/+$/, '');
+
+  return trimmed.length > 0 ? trimmed : undefined;
+}
+
 function normalizePath(path: string) {
   return `/${path.replace(/^\/+|\/+$/g, '')}`;
 }

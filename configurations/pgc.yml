@@ -1,7 +1,6 @@
 domain: https://mp.go.art.pl
 events:
   - id: pgc
-    domain: https://mp.go.art.pl
 config:
   generateSgfs: true
   generateRawSgfs: true
