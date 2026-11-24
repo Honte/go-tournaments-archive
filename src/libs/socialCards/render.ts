@@ -1,17 +1,18 @@
 import { ImageResponse } from 'next/og';
 import { createElement, type ReactElement } from 'react';
 import sharp from 'sharp';
-import { OG_IMAGE_HEIGHT, OG_IMAGE_WIDTH } from '@/libs/metadata';
-import { loadOgFonts } from './assets';
-import type {
-  ArchiveCardSpec,
-  EditionCardSpec,
-  GamesCardSpec,
-  GeneralCardSpec,
-  OgCardSpec,
-  OgLogoAsset,
-  OgRenderRequest,
-  StatsCardSpec,
+import { loadSocialFonts } from './assets';
+import {
+  SOCIAL_IMAGE_HEIGHT,
+  SOCIAL_IMAGE_WIDTH,
+  type ArchiveCardSpec,
+  type EditionCardSpec,
+  type GamesCardSpec,
+  type GeneralCardSpec,
+  type SocialCardSpec,
+  type SocialLogoAsset,
+  type SocialRenderRequest,
+  type StatsCardSpec,
 } from './schema';
 
 const DARK_BG = '#15181c';
@@ -27,12 +28,12 @@ const MEDAL_TEXT_COLORS = ['#f8fafc', '#e2e8f0', '#cbd5e1'] as const;
 
 const el = createElement;
 
-export async function renderOgCardJpeg({ backgroundSrc, card, logo }: OgRenderRequest): Promise<Buffer> {
-  const fonts = await loadOgFonts();
+export async function renderSocialCardJpeg({ backgroundSrc, card, logo }: SocialRenderRequest): Promise<Buffer> {
+  const fonts = await loadSocialFonts();
   const element = createCardElement(card, backgroundSrc, logo);
   const response = new ImageResponse(element, {
-    width: OG_IMAGE_WIDTH,
-    height: OG_IMAGE_HEIGHT,
+    width: SOCIAL_IMAGE_WIDTH,
+    height: SOCIAL_IMAGE_HEIGHT,
     fonts,
   });
   const pngBuffer = Buffer.from(await response.arrayBuffer());
@@ -40,7 +41,7 @@ export async function renderOgCardJpeg({ backgroundSrc, card, logo }: OgRenderRe
   return sharp(pngBuffer).jpeg({ quality: 85, mozjpeg: true }).toBuffer();
 }
 
-export function createCardElement(card: OgCardSpec, backgroundSrc: string, logo: OgLogoAsset): ReactElement {
+export function createCardElement(card: SocialCardSpec, backgroundSrc: string, logo: SocialLogoAsset): ReactElement {
   switch (card.type) {
     case 'archive':
       return renderArchiveCard(card, backgroundSrc, logo);
@@ -55,7 +56,7 @@ export function createCardElement(card: OgCardSpec, backgroundSrc: string, logo:
   }
 }
 
-function renderArchiveCard(card: ArchiveCardSpec, backgroundSrc: string, logo: OgLogoAsset): ReactElement {
+function renderArchiveCard(card: ArchiveCardSpec, backgroundSrc: string, logo: SocialLogoAsset): ReactElement {
   const titleFontSize = card.title.length > 34 ? 48 : 56;
   const tags = [...card.eventAcronyms];
 
@@ -123,7 +124,7 @@ function renderArchiveCard(card: ArchiveCardSpec, backgroundSrc: string, logo: O
   );
 }
 
-function renderGeneralCard(card: GeneralCardSpec, backgroundSrc: string, logo: OgLogoAsset): ReactElement {
+function renderGeneralCard(card: GeneralCardSpec, backgroundSrc: string, logo: SocialLogoAsset): ReactElement {
   const titleFontSize = card.siteName.length > 36 ? 44 : 52;
   const headerLabel = card.displayDomain ? card.displayDomain.toUpperCase() : card.acronym;
 
@@ -182,7 +183,7 @@ function renderGeneralCard(card: GeneralCardSpec, backgroundSrc: string, logo: O
   );
 }
 
-function renderEditionCard(card: EditionCardSpec, backgroundSrc: string, logo: OgLogoAsset): ReactElement {
+function renderEditionCard(card: EditionCardSpec, backgroundSrc: string, logo: SocialLogoAsset): ReactElement {
   const isUpcoming = Boolean(card.upcomingBadge);
   const accent = isUpcoming ? BLUE_ACCENT : GOLD_ACCENT;
   const domainColor = isUpcoming ? BLUE_TEXT : GOLD_TEXT;
@@ -344,7 +345,7 @@ function renderEditionFooter(card: EditionCardSpec, width: number): ReactElement
   return el('div', { style: { height: 24 } });
 }
 
-function renderStatsCard(card: StatsCardSpec, backgroundSrc: string, logo: OgLogoAsset): ReactElement {
+function renderStatsCard(card: StatsCardSpec, backgroundSrc: string, logo: SocialLogoAsset): ReactElement {
   const titleFontSize = card.title.length > 34 ? 46 : 54;
 
   return cardShell(
@@ -417,7 +418,7 @@ function renderStatsCard(card: StatsCardSpec, backgroundSrc: string, logo: OgLog
   );
 }
 
-function renderGamesCard(card: GamesCardSpec, backgroundSrc: string, logo: OgLogoAsset): ReactElement {
+function renderGamesCard(card: GamesCardSpec, backgroundSrc: string, logo: SocialLogoAsset): ReactElement {
   const titleFontSize = card.title.length > 34 ? 46 : 54;
 
   return cardShell(
@@ -503,8 +504,8 @@ function cardShell(
     'div',
     {
       style: {
-        width: OG_IMAGE_WIDTH,
-        height: OG_IMAGE_HEIGHT,
+        width: SOCIAL_IMAGE_WIDTH,
+        height: SOCIAL_IMAGE_HEIGHT,
         display: 'flex',
         position: 'relative',
         backgroundColor: DARK_BG,
@@ -520,7 +521,7 @@ function cardShell(
         top: 0,
         right: 0,
         width: 960,
-        height: OG_IMAGE_HEIGHT,
+        height: SOCIAL_IMAGE_HEIGHT,
         objectFit: 'cover',
         opacity: backgroundOpacity,
       },
@@ -531,7 +532,7 @@ function cardShell(
         position: 'absolute',
         top: 0,
         left: 0,
-        width: OG_IMAGE_WIDTH,
+        width: SOCIAL_IMAGE_WIDTH,
         height: 6,
         backgroundColor: accent,
       },
@@ -546,7 +547,7 @@ function cardShell(
           justifyContent: 'space-between',
           padding: '50px 64px',
           width: contentWidth,
-          height: OG_IMAGE_HEIGHT,
+          height: SOCIAL_IMAGE_HEIGHT,
         },
       },
       header,
@@ -556,7 +557,7 @@ function cardShell(
   );
 }
 
-function logoImage(logo: OgLogoAsset): ReactElement {
+function logoImage(logo: SocialLogoAsset): ReactElement {
   return el('img', {
     src: logo.src,
     width: logo.width,
@@ -569,9 +570,9 @@ function svgHorizontalFade(hex: string, stops: readonly [number, number][]): Rea
   return el(
     'svg',
     {
-      width: OG_IMAGE_WIDTH,
-      height: OG_IMAGE_HEIGHT,
-      viewBox: `0 0 ${OG_IMAGE_WIDTH} ${OG_IMAGE_HEIGHT}`,
+      width: SOCIAL_IMAGE_WIDTH,
+      height: SOCIAL_IMAGE_HEIGHT,
+      viewBox: `0 0 ${SOCIAL_IMAGE_WIDTH} ${SOCIAL_IMAGE_HEIGHT}`,
       style: { position: 'absolute', top: 0, left: 0 },
     },
     el(
@@ -585,7 +586,7 @@ function svgHorizontalFade(hex: string, stops: readonly [number, number][]): Rea
         )
       )
     ),
-    el('rect', { x: 0, y: 0, width: OG_IMAGE_WIDTH, height: OG_IMAGE_HEIGHT, fill: 'url(#fadeH)' })
+    el('rect', { x: 0, y: 0, width: SOCIAL_IMAGE_WIDTH, height: SOCIAL_IMAGE_HEIGHT, fill: 'url(#fadeH)' })
   );
 }
 

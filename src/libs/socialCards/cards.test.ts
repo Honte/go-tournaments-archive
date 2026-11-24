@@ -114,7 +114,7 @@ function createEventData(tournaments: Tournament[], sgfs = 28): EventData {
   };
 }
 
-describe('OG card spec builders', () => {
+describe('social card spec builders', () => {
   it('caps archive selector acronyms and formats domain with basePath', () => {
     const configuration: ArchiveConfiguration = {
       title: 'European Go Championships Archives',

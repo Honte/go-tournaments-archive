@@ -16,48 +16,48 @@ import {
   loadEventBackgroundDataUri,
   loadEventLogoAsset,
   loadGenericBackgroundDataUri,
-} from '@/libs/og';
-import type { BuildOgRequest } from './og';
+} from '@/libs/socialCards';
+import type { BuildSocialCardRequest } from './socialCardWorker';
 
-const OG_WORKER_PATH = fileURLToPath(new URL('./og.ts', import.meta.url));
+const SOCIAL_CARD_WORKER_PATH = fileURLToPath(new URL('./socialCardWorker.ts', import.meta.url));
 const STATUS_DELAY = 5000;
 
-export type EventOgAssetSource = {
+export type EventSocialAssetSource = {
   event: EventContext;
   data: EventData;
   allTranslations: Record<Locale, Translations>;
 };
 
-export async function buildOgAssets(
+export async function buildSocialAssets(
   configuration: ArchiveConfiguration,
   allEvents: EventContext[],
-  eventSources: EventOgAssetSource[],
-  publicOgDir: string
+  eventSources: EventSocialAssetSource[],
+  publicSocialDir: string
 ): Promise<void> {
-  const tasks = await collectOgTasks(configuration, allEvents, eventSources, publicOgDir);
+  const tasks = await collectSocialTasks(configuration, allEvents, eventSources, publicSocialDir);
 
   if (tasks.length === 0) {
     return;
   }
 
-  const workerCount = getOgAssetWorkerCount(tasks.length);
+  const workerCount = getSocialImageWorkerCount(tasks.length);
   console.log(
-    `[assets] generating ${tasks.length} og images with ${workerCount} worker${workerCount === 1 ? '' : 's'}`
+    `[assets] generating ${tasks.length} social images with ${workerCount} worker${workerCount === 1 ? '' : 's'}`
   );
 
-  const pool = new Piscina<BuildOgRequest, string>({
-    filename: OG_WORKER_PATH,
+  const pool = new Piscina<BuildSocialCardRequest, string>({
+    filename: SOCIAL_CARD_WORKER_PATH,
     minThreads: workerCount,
     maxThreads: workerCount,
     execArgv: ['--import', 'tsx'],
   });
 
-  const interval = setInterval(() => console.log(`[assets] completed ${pool.completed} og images`), STATUS_DELAY);
+  const interval = setInterval(() => console.log(`[assets] completed ${pool.completed} social images`), STATUS_DELAY);
 
   try {
     await Promise.all(tasks.map((task) => pool.run(task)));
   } catch (err) {
-    console.log(`[assets] failed to process og images`);
+    console.log(`[assets] failed to process social images`);
     throw err;
   } finally {
     await pool.destroy();
@@ -65,23 +65,25 @@ export async function buildOgAssets(
   }
 }
 
-async function collectOgTasks(
+async function collectSocialTasks(
   configuration: ArchiveConfiguration,
   allEvents: EventContext[],
-  eventSources: EventOgAssetSource[],
-  publicOgDir: string
-): Promise<BuildOgRequest[]> {
-  const tasks: BuildOgRequest[] = [];
+  eventSources: EventSocialAssetSource[],
+  publicSocialDir: string
+): Promise<BuildSocialCardRequest[]> {
+  const tasks: BuildSocialCardRequest[] = [];
 
-  if (allEvents.length > 1 && configuration.config?.generateOgImages !== false) {
-    const selectorTasks = await collectArchiveSelectorTasks(configuration, allEvents, publicOgDir);
+  if (allEvents.length > 1 && configuration.config?.generateSocialImages !== false) {
+    const selectorTasks = await collectArchiveSelectorTasks(configuration, allEvents, publicSocialDir);
 
     for (const task of selectorTasks) {
       tasks.push(task);
     }
   }
 
-  const perEventTaskLists = await Promise.all(eventSources.map((source) => collectEventOgTasks(source, publicOgDir)));
+  const perEventTaskLists = await Promise.all(
+    eventSources.map((source) => collectEventSocialTasks(source, publicSocialDir))
+  );
 
   for (const list of perEventTaskLists) {
     for (const task of list) {
@@ -95,11 +97,11 @@ async function collectOgTasks(
 async function collectArchiveSelectorTasks(
   configuration: ArchiveConfiguration,
   allEvents: EventContext[],
-  publicOgDir: string
-): Promise<BuildOgRequest[]> {
+  publicSocialDir: string
+): Promise<BuildSocialCardRequest[]> {
   const locales = configuration.locales ?? ['en'];
   const [backgroundSrc, logo] = await Promise.all([loadGenericBackgroundDataUri(), loadArchiveLogoAsset()]);
-  const tasks: BuildOgRequest[] = [];
+  const tasks: BuildSocialCardRequest[] = [];
 
   for (const locale of locales) {
     const [baseTranslations, eventTranslationsList] = await Promise.all([
@@ -113,23 +115,26 @@ async function collectArchiveSelectorTasks(
       card: buildArchiveCardSpec(configuration, acronyms, locale, t),
       backgroundSrc,
       logo,
-      outputPath: path.join(publicOgDir, locale, 'archive.jpg'),
+      outputPath: path.join(publicSocialDir, 'archive', `${locale}.jpg`),
     });
   }
 
   return tasks;
 }
 
-async function collectEventOgTasks(source: EventOgAssetSource, publicOgDir: string): Promise<BuildOgRequest[]> {
+async function collectEventSocialTasks(
+  source: EventSocialAssetSource,
+  publicSocialDir: string
+): Promise<BuildSocialCardRequest[]> {
   const { allTranslations, data, event } = source;
 
-  if (event.generateOgImages === false) {
+  if (event.generateSocialImages === false) {
     return [];
   }
 
   const [backgroundSrc, logo] = await Promise.all([loadEventBackgroundDataUri(event.id), loadEventLogoAsset(event.id)]);
-  const eventOutputDir = path.join(publicOgDir, event.prefix || '');
-  const tasks: BuildOgRequest[] = [];
+  const eventOutputDir = path.join(publicSocialDir, event.prefix || '');
+  const tasks: BuildSocialCardRequest[] = [];
 
   for (const locale of event.locales) {
     const translations = allTranslations[locale];
@@ -175,8 +180,8 @@ async function collectEventOgTasks(source: EventOgAssetSource, publicOgDir: stri
   return tasks;
 }
 
-function getOgAssetWorkerCount(taskCount: number): number {
-  const override = process.env.OG_ASSET_WORKERS;
+function getSocialImageWorkerCount(taskCount: number): number {
+  const override = process.env.SOCIAL_IMAGE_WORKERS;
 
   if (override) {
     const parsed = Number(override);
@@ -185,7 +190,7 @@ function getOgAssetWorkerCount(taskCount: number): number {
       return Math.min(taskCount, parsed);
     }
 
-    console.warn(`[assets] ignoring invalid OG_ASSET_WORKERS value: ${override}`);
+    console.warn(`[assets] ignoring invalid SOCIAL_IMAGE_WORKERS value: ${override}`);
   }
 
   return Math.min(taskCount, Math.max(1, availableParallelism() - 1));

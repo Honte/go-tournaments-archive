@@ -20,7 +20,7 @@ export type EventConfig = {
   readonly generateZips?: boolean;
   readonly generateSgfs?: boolean;
   readonly generateRawSgfs?: boolean;
-  readonly generateOgImages?: boolean;
+  readonly generateSocialImages?: boolean;
   readonly external?: boolean;
   readonly domain?: string; // must be provided if external is true
   readonly basePath?: string; // acquired from top-level archive configuration

@@ -15,9 +15,9 @@ import {
   loadEventBackgroundDataUri,
   loadEventLogoAsset,
   loadGenericBackgroundDataUri,
-  renderOgCardJpeg,
-  type OgCardSpec,
-} from '@/libs/og';
+  renderSocialCardJpeg,
+  type SocialCardSpec,
+} from '@/libs/socialCards';
 import { loadData } from '@/data/load';
 
 const JPG_HEADERS = {
@@ -25,36 +25,15 @@ const JPG_HEADERS = {
   'Cache-Control': 'no-store',
 };
 
-export async function getSingleOgImageOptions(event: EventContext): Promise<{ path: string[] }[]> {
-  return buildEventOgOptions(event);
-}
-
-export async function getMultiOgImageOptions(configuration: ArchiveConfiguration): Promise<{ path: string[] }[]> {
-  const options: { path: string[] }[] = [];
+export function getArchiveSocialImageOptions(configuration: ArchiveConfiguration): { locale: string }[] {
   const locales = configuration.locales ?? ['en'];
 
-  for (const locale of locales) {
-    options.push({ path: [locale, 'archive.jpg'] });
-  }
-
-  const events = await loadConfiguredEvents(configuration);
-
-  for (const event of events) {
-    if (event.external || !event.prefix) {
-      continue;
-    }
-
-    const eventOptions = await buildEventOgOptions(event, event.prefix);
-
-    for (const option of eventOptions) {
-      options.push(option);
-    }
-  }
-
-  return options;
+  return locales.map((locale) => ({
+    locale: `${locale}.jpg`,
+  }));
 }
 
-async function buildEventOgOptions(event: EventContext, prefix?: string): Promise<{ path: string[] }[]> {
+export async function getEventSocialImageOptions(event: EventContext): Promise<{ locale: string; path: string[] }[]> {
   const files = await fg.glob(`./events/${event.id}/data/*.yml`);
   const years: string[] = [];
 
@@ -66,48 +45,47 @@ async function buildEventOgOptions(event: EventContext, prefix?: string): Promis
     }
   }
 
-  const options: { path: string[] }[] = [];
-  const baseSegments = prefix ? [prefix] : [];
+  const options: { locale: string; path: string[] }[] = [];
 
   for (const locale of event.locales) {
-    options.push({ path: [...baseSegments, locale, 'general.jpg'] });
-    options.push({ path: [...baseSegments, locale, 'stats.jpg'] });
-    options.push({ path: [...baseSegments, locale, 'games.jpg'] });
+    options.push({ locale, path: ['general.jpg'] });
+    options.push({ locale, path: ['stats.jpg'] });
+    options.push({ locale, path: ['games.jpg'] });
 
     for (const year of years) {
-      options.push({ path: [...baseSegments, locale, 'tournaments', `${year}.jpg`] });
+      options.push({ locale, path: ['tournaments', `${year}.jpg`] });
     }
   }
 
   return options;
 }
 
-export async function serveArchiveOgImage(configuration: ArchiveConfiguration, localeSegment: string) {
+export async function serveArchiveSocialImage(configuration: ArchiveConfiguration, localeParam: string) {
+  const match = localeParam.match(/^([a-z]{2})\.jpg$/);
+  const locale = match?.[1];
   const locales = configuration.locales ?? ['en'];
 
-  if (!isValidLocale(localeSegment, locales)) {
+  if (!locale || !isValidLocale(locale, locales)) {
     return new Response('Not found', { status: 404 });
   }
 
   const allEvents = await loadConfiguredEvents(configuration);
   const [baseTranslations, eventTranslationsList, backgroundSrc, logo] = await Promise.all([
-    loadBaseTranslations(localeSegment),
-    Promise.all(allEvents.map((event) => loadTranslations(event, localeSegment))),
+    loadBaseTranslations(locale),
+    Promise.all(allEvents.map((event) => loadTranslations(event, locale))),
     loadGenericBackgroundDataUri(),
     loadArchiveLogoAsset(),
   ]);
   const t = getTranslator(baseTranslations);
   const acronyms = eventTranslationsList.map((translations) => getTranslator(translations)('site.acronym'));
-  const card = buildArchiveCardSpec(configuration, acronyms, localeSegment, t);
-  const jpeg = await renderOgCardJpeg({ card, backgroundSrc, logo });
+  const card = buildArchiveCardSpec(configuration, acronyms, locale, t);
+  const jpeg = await renderSocialCardJpeg({ card, backgroundSrc, logo });
 
   return new Response(new Uint8Array(jpeg), { headers: JPG_HEADERS });
 }
 
-export async function serveEventOgImage(event: EventContext, segments: string[]) {
-  const [localeSegment, ...rest] = segments;
-
-  if (!localeSegment || !isValidLocale(localeSegment, event.locales)) {
+export async function serveEventSocialImage(event: EventContext, localeSegment: string, segments: string[]) {
+  if (!isValidLocale(localeSegment, event.locales)) {
     return new Response('Not found', { status: 404 });
   }
 
@@ -118,13 +96,13 @@ export async function serveEventOgImage(event: EventContext, segments: string[])
     loadEventLogoAsset(event.id),
   ]);
   const t = getTranslator(translations);
-  const card = resolveEventCardSpec(event, data, localeSegment, t, rest);
+  const card = resolveEventCardSpec(event, data, localeSegment, t, segments);
 
   if (!card) {
     return new Response('Not found', { status: 404 });
   }
 
-  const jpeg = await renderOgCardJpeg({ card, backgroundSrc, logo });
+  const jpeg = await renderSocialCardJpeg({ card, backgroundSrc, logo });
 
   return new Response(new Uint8Array(jpeg), { headers: JPG_HEADERS });
 }
@@ -135,7 +113,7 @@ function resolveEventCardSpec(
   locale: Locale,
   t: ReturnType<typeof getTranslator>,
   segments: string[]
-): OgCardSpec | undefined {
+): SocialCardSpec | undefined {
   if (segments.length === 1) {
     if (segments[0] === 'general.jpg') {
       return buildEventGeneralCardSpec(event, data, locale, t);

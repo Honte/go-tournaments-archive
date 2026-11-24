@@ -30,7 +30,7 @@ export function buildArchiveCardSpec(
   const title = getString(configuration.title, locale) ?? t('metadata.archiveTitle');
   const subtitle =
     eventAcronyms.length > 0
-      ? t('og.archiveSubtitle', formatCount(eventAcronyms.length, 'tournamentsGenitive', locale))
+      ? t('socialCard.archiveSubtitle', formatCount(eventAcronyms.length, 'tournamentsGenitive', locale))
       : t('site.description');
   const visibleAcronyms = eventAcronyms.slice(0, MAX_ARCHIVE_ACRONYMS);
   const extraEventsCount = Math.max(0, eventAcronyms.length - visibleAcronyms.length);
@@ -77,7 +77,7 @@ export function buildEventGeneralCardSpec(
     siteName: t('site.name'),
     acronym: t('site.acronym'),
     displayDomain: formatDisplayDomain(event.domain, event.basePath, event.prefix),
-    subtitle: sgfs > 0 ? t('og.generalSubtitle') : t('og.generalSubtitleNoSgf'),
+    subtitle: sgfs > 0 ? t('socialCard.generalSubtitle') : t('socialCard.generalSubtitleNoSgf'),
     pills,
   };
 }
@@ -99,7 +99,7 @@ export function buildEditionCardSpec(
       displayDomain,
       heading,
       metaLine,
-      upcomingBadge: t('og.upcomingBadge'),
+      upcomingBadge: t('socialCard.upcomingBadge'),
       podium: [],
       categoryWinners: [],
       isPairs: Boolean(event.pairs),
@@ -164,9 +164,9 @@ export function buildEventStatsCardSpec(data: EventData, locale: Locale, t: Tran
 
   return {
     type: 'stats',
-    badge: t('og.statsBadge'),
+    badge: t('socialCard.statsBadge'),
     title: getEventDisplayName(t),
-    subtitle: t('og.statsSubtitle'),
+    subtitle: t('socialCard.statsSubtitle'),
     metrics,
   };
 }
@@ -195,9 +195,9 @@ export function buildEventGamesCardSpec(data: EventData, locale: Locale, t: Tran
 
   return {
     type: 'games',
-    badge: t('og.gamesBadge'),
+    badge: t('socialCard.gamesBadge'),
     title: getEventDisplayName(t),
-    subtitle: t('og.gamesSubtitle'),
+    subtitle: t('socialCard.gamesSubtitle'),
     pills,
   };
 }

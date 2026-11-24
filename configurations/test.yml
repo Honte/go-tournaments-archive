@@ -7,4 +7,4 @@ config:
   generateZips: true
   generateSgfs: false
   generateRawSgfs: false
-  generateOgImages: false
+  generateSocialImages: false

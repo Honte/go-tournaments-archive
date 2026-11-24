@@ -46,7 +46,7 @@
     "recordWithDraws": "%{0}-%{1}-%{2} record (%{3}%)",
     "medalsDetail": "%{0} (%{1})"
   },
-  "og": {
+  "socialCard": {
     "generalSubtitle": "Results, standings, all-time statistics and SGF game records.",
     "generalSubtitleNoSgf": "Results, standings and all-time statistics.",
     "upcomingBadge": "UPCOMING EDITION",

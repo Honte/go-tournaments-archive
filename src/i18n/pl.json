@@ -46,7 +46,7 @@
     "recordWithDraws": "bilans %{0}-%{1}-%{2} (%{3}%)",
     "medalsDetail": "%{0} (%{1})"
   },
-  "og": {
+  "socialCard": {
     "generalSubtitle": "Wyniki, tabele, statystyki wszech czasów i zapisy partii SGF.",
     "generalSubtitleNoSgf": "Wyniki, tabele i statystyki wszech czasów.",
     "upcomingBadge": "NADCHODZĄCA EDYCJA",

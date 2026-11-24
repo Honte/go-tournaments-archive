@@ -2,7 +2,7 @@
 
 Most archive presets deploy as static exports (`output: 'export'`) uploaded via FTP ZIP, and multi-event presets such as `europe` contain thousands of player and country pages. Generating a unique OpenGraph image per route (or using Next.js `opengraph-image.tsx` with PNG output) would bloat static artifacts and build times, while several events define async `Logo.tsx` components that read local PNGs from disk and cannot be rendered directly inside Satori JSX.
 
-We decided to generate 1200×630 JPEG share images during `prebuild` in `tools/assets/` (into git-ignored `public/og/[prefix]/...`, mirrored by `*.dev.ts` route handlers in development) using a bounded 4-tier event model—general overview, per-edition, statistics, and game records—per event locale, plus an archive-level card for multi-event selectors. Rendering uses `next/og` (Satori/resvg) with bundled Inter fonts and pre-rendered `Logo.tsx` (`color="white"`) rasters, compressed to mozjpeg via `sharp`.
+We decided to generate 1200×630 JPEG share images during `prebuild` in `tools/assets/` (into git-ignored `public/social/[prefix]/...`, mirrored by `*.dev.ts` route handlers in development) using a bounded 4-tier event model—general overview, per-edition, statistics, and game records—per event locale, plus an archive-level card (`public/social/archive/[locale].jpg`) for multi-event selectors. Rendering uses `next/og` (Satori/resvg) with bundled Inter fonts and pre-rendered `Logo.tsx` (`color="white"`) rasters, compressed to mozjpeg via `sharp`.
 
 ## Considered Options
 
@@ -12,6 +12,6 @@ We decided to generate 1200×630 JPEG share images during `prebuild` in `tools/a
 
 ## Consequences
 
-- Production and standalone deployments both serve prebuilt static JPEGs from `public/og/` with zero runtime rendering cost; development uses `*.dev.ts` handlers for instant iteration.
-- `generateOgImages: false` can disable share-image generation in fast test presets (such as `test.yml`).
+- Production and standalone deployments both serve prebuilt static JPEGs from `public/social/` with zero runtime rendering cost; development uses `*.dev.ts` handlers for instant iteration.
+- `generateSocialImages: false` can disable share-image generation in fast test presets (such as `test.yml`).
 - Any new event without a custom `background.jpg` falls back to the shared generic Go board artwork also used by multi-event selector cards.

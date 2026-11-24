@@ -59,7 +59,7 @@ const PLURALS: Record<Locale, Record<PluralNoun, PluralForms>> = {
   },
 };
 
-const OG_LOCALES: Record<Locale, string> = {
+const OPEN_GRAPH_LOCALES: Record<Locale, string> = {
   en: 'en_US',
   pl: 'pl_PL',
 };
@@ -93,8 +93,8 @@ export function formatDisplayDomain(domain?: string, basePath?: string, prefix?:
   return fullPath ? `${host}${fullPath}` : host;
 }
 
-export function getOgLocale(locale: Locale): string {
-  return OG_LOCALES[locale] ?? locale;
+export function getOpenGraphLocale(locale: Locale): string {
+  return OPEN_GRAPH_LOCALES[locale] ?? locale;
 }
 
 export function getEventDisplayName(t: Translator): string {

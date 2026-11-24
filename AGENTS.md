@@ -103,13 +103,14 @@ Configuration selection:
 - If neither `CONFIG` nor `EVENT` is set, the app loads `configurations/multi.yml`.
 
 Route mode is based on the resolved preset: one configured event enables `*.single.*` route files, and multiple
-configured events enable `*.multi.*` route files. Single-event public pages and assets use `/:locale`, `/data/...`, and
-`/sgf/...`; multi-event pages and assets use `/:eventPrefix/:locale`, `/data/:eventPrefix/...`, and
-`/sgf/:eventPrefix/...`.
+configured events enable `*.multi.*` route files. Single-event public pages and assets use `/:locale`, `/data/...`,
+`/sgf/...`, and `/social/...`; multi-event pages and assets use `/:eventPrefix/:locale`, `/data/:eventPrefix/...`,
+`/sgf/:eventPrefix/...`, and `/social/:eventPrefix/...` (with archive selector cards at `/social/archive/:locale.jpg`).
 
-`npm run build` runs `prebuild` first. Single-event builds write root `public/data` and `public/sgf` assets; multi-event
-builds write `public/data/<prefix>` and `public/sgf/<prefix>` assets. Preset entries marked `external: true` appear in
-selectors but are skipped for internal routes and generated assets.
+`npm run build` runs `prebuild` first. Single-event builds write root `public/data`, `public/sgf`, and `public/social`
+assets; multi-event builds write `public/data/<prefix>`, `public/sgf/<prefix>`, and `public/social/<prefix>` assets
+(plus `public/social/archive/`). Preset entries marked `external: true` appear in selectors but are skipped for
+internal routes and generated assets.
 
 Presets with `dynamic: true` use Next.js standalone output instead of `out/`; the selected configuration is embedded
 in the build. Asset prebuild still runs. See `README.md` for standalone asset copying and startup instructions.
@@ -152,16 +153,18 @@ directly, for example `.\node_modules\.bin\tsc.cmd --noEmit` on Windows.
 - Linting uses Oxlint with type-aware checks.
 - Tests use `node:test` and `node:assert/strict`.
 - Keep changes scoped. This repo has large data and SGF trees; avoid unrelated reformatting or bulk edits.
-- Do not edit generated output in `.next/`, `out/`, `public/data/`, or `public/sgf/`.
+- Do not edit generated output in `.next/`, `out/`, `public/data/`, `public/sgf/`, or `public/social/`.
 
 ### Feature libraries and UI boundaries
 
 - Group related domain logic under `src/libs/<feature>/` when it spans distinct responsibilities. Give each module
   a cohesive purpose and a name that describes its behavior. Let actual responsibilities determine the split;
   keep small standalone helpers in single files and avoid empty layers or a fixed module template.
-- Use `index.ts` as the feature's public entrypoint, exporting the functions and types consumers need. Prefer
-  `@/libs/<feature>` in consumers and direct sibling imports inside the feature to avoid circular barrel imports.
-  Keep feature-specific shared types in a local `schema.ts`; keep shared input/API types in `src/schema/`.
+- Use `index.ts` as the feature's public entrypoint, keeping it short and strictly limited to re-exports (preferring
+  `export * from './...'` over verbose symbol lists). Never put implementation logic in `index.ts`, and never create
+  an `index.test.ts` file; place logic and its colocated tests in named modules instead. Prefer `@/libs/<feature>` in
+  consumers and direct sibling imports inside the feature to avoid circular barrel imports. Keep feature-specific
+  shared types in a local `schema.ts`; keep shared input/API types in `src/schema/`.
 - Design library outputs around what consumers need to render and act on. Return plain data with the derived values,
   display content, and navigation targets the feature requires. Share these output types with consumers and avoid
   redundant representations or conversion layers. Reuse existing helpers and pass contextual dependencies explicitly.
@@ -174,8 +177,9 @@ directly, for example `.\node_modules\.bin\tsc.cmd --noEmit` on Windows.
 
 ### Test organization
 
-- Colocate tests with the behavior they cover using `<module>.test.ts`. Split or move tests with their implementation;
-  assertions belong to the module responsible for the behavior, including when that module is a shared helper.
+- Colocate tests with the behavior they cover using `<module>.test.ts` (never `index.test.ts`). Split or move tests
+  with their implementation; assertions belong to the module responsible for the behavior, including when that module
+  is a shared helper.
 - Test observable results and invariants rather than implementation details. Import the responsible module directly
   for focused tests and use the public entrypoint for integration tests. Cover interactions between modules without
   duplicating their full test suites.

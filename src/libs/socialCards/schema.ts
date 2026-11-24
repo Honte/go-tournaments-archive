@@ -1,6 +1,9 @@
 import type { CategoryWinner } from '@/libs/metadata';
 
-export type OgLogoAsset = {
+export const SOCIAL_IMAGE_WIDTH = 1200;
+export const SOCIAL_IMAGE_HEIGHT = 630;
+
+export type SocialLogoAsset = {
   src: string;
   width: number;
   height: number;
@@ -56,10 +59,10 @@ export type GamesCardSpec = {
   pills: string[];
 };
 
-export type OgCardSpec = ArchiveCardSpec | GeneralCardSpec | EditionCardSpec | StatsCardSpec | GamesCardSpec;
+export type SocialCardSpec = ArchiveCardSpec | GeneralCardSpec | EditionCardSpec | StatsCardSpec | GamesCardSpec;
 
-export type OgRenderRequest = {
-  card: OgCardSpec;
+export type SocialRenderRequest = {
+  card: SocialCardSpec;
   backgroundSrc: string;
-  logo: OgLogoAsset;
+  logo: SocialLogoAsset;
 };

@@ -76,24 +76,24 @@ export function logoWhiteUrl(event: EventContext) {
   return joinPaths(event.basePath, event.prefix, '/logo-white.svg');
 }
 
-export function ogArchiveImageUrl(basePath: string | undefined, locale: string) {
-  return joinPaths(basePath, 'og', locale, 'archive.jpg');
+export function socialArchiveImageUrl(basePath: string | undefined, locale: string) {
+  return joinPaths(basePath, 'social', 'archive', `${locale}.jpg`);
 }
 
-export function ogGeneralImageUrl(event: EventContext, locale: string) {
-  return joinPaths(event.basePath, 'og', event.prefix, locale, 'general.jpg');
+export function socialGeneralImageUrl(event: EventContext, locale: string) {
+  return joinPaths(event.basePath, 'social', event.prefix, locale, 'general.jpg');
 }
 
-export function ogTournamentImageUrl(event: EventContext, locale: string, year: number | string) {
-  return joinPaths(event.basePath, 'og', event.prefix, locale, 'tournaments', `${year}.jpg`);
+export function socialTournamentImageUrl(event: EventContext, locale: string, year: number | string) {
+  return joinPaths(event.basePath, 'social', event.prefix, locale, 'tournaments', `${year}.jpg`);
 }
 
-export function ogStatsImageUrl(event: EventContext, locale: string) {
-  return joinPaths(event.basePath, 'og', event.prefix, locale, 'stats.jpg');
+export function socialStatsImageUrl(event: EventContext, locale: string) {
+  return joinPaths(event.basePath, 'social', event.prefix, locale, 'stats.jpg');
 }
 
-export function ogGamesImageUrl(event: EventContext, locale: string) {
-  return joinPaths(event.basePath, 'og', event.prefix, locale, 'games.jpg');
+export function socialGamesImageUrl(event: EventContext, locale: string) {
+  return joinPaths(event.basePath, 'social', event.prefix, locale, 'games.jpg');
 }
 
 export function i18nUrl(event: EventContext, locale: string) {

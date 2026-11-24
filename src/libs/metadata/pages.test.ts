@@ -6,6 +6,7 @@ import type { CategoryStats, CountryStats, PlayerStats, Tournament } from '@/sch
 import type { ArchiveConfiguration, EventContext, EventData } from '@/schema/event';
 import type { Locale, Translations } from '@/i18n/consts';
 import { getTranslator } from '@/i18n/translator';
+import { SOCIAL_IMAGE_HEIGHT, SOCIAL_IMAGE_WIDTH } from '@/libs/socialCards/schema';
 import {
   buildAllCountriesStatsMetadata,
   buildAllPlayersStatsMetadata,
@@ -20,13 +21,7 @@ import {
   buildPlayerStatsMetadata,
   buildTournamentMetadata,
   buildTournamentsOverviewMetadata,
-  formatCount,
-  formatDisplayDomain,
-  getYearSpan,
-  OG_IMAGE_HEIGHT,
-  OG_IMAGE_WIDTH,
-  resolveMetadataBase,
-} from './index';
+} from './pages';
 
 const baseEn = JSON.parse(readFileSync('./src/i18n/en.json', 'utf-8')) as Translations;
 const basePl = JSON.parse(readFileSync('./src/i18n/pl.json', 'utf-8')) as Translations;
@@ -167,39 +162,8 @@ function createEventData(tournaments: Tournament[]): EventData {
   };
 }
 
-describe('metadata format helpers', () => {
-  it('resolves metadataBase and formats display domains cleanly', () => {
-    assert.equal(resolveMetadataBase('https://eurogofed.org/')?.href, 'https://eurogofed.org/');
-    assert.equal(resolveMetadataBase(''), undefined);
-    assert.equal(resolveMetadataBase('not-a-url'), undefined);
-    assert.equal(formatDisplayDomain('https://www.eurogofed.org/', '/archives', 'egc'), 'eurogofed.org/archives/egc');
-    assert.equal(formatDisplayDomain('https://mp.go.art.pl'), 'mp.go.art.pl');
-    assert.equal(formatDisplayDomain(undefined, '/archives', 'egc'), undefined);
-  });
-
-  it('pluralizes Polish and English counts accurately', () => {
-    assert.equal(formatCount(1, 'editions', 'pl'), '1 edycja');
-    assert.equal(formatCount(2, 'editions', 'pl'), '2 edycje');
-    assert.equal(formatCount(5, 'editions', 'pl'), '5 edycji');
-    assert.equal(formatCount(12, 'editions', 'pl'), '12 edycji');
-    assert.equal(formatCount(22, 'editions', 'pl'), '22 edycje');
-    assert.equal(formatCount(1, 'pairs', 'pl'), '1 para');
-    assert.equal(formatCount(4, 'pairs', 'pl'), '4 pary');
-    assert.equal(formatCount(5, 'pairs', 'pl'), '5 par');
-    assert.equal(formatCount(1, 'sgfs', 'en'), '1 SGF game record');
-    assert.equal(formatCount(42, 'sgfs', 'en'), '42 SGF game records');
-  });
-
-  it('formats calendar year spans and omits non-calendar season numbers', () => {
-    assert.equal(getYearSpan([]), undefined);
-    assert.equal(getYearSpan([2025]), '2025');
-    assert.equal(getYearSpan([2025, 1995, 2010]), '1995–2025');
-    assert.equal(getYearSpan([1, 2, 7]), undefined);
-  });
-});
-
 describe('event metadata builders', () => {
-  it('builds single-event home and redirect metadata with locales, alternates, and OG tags', () => {
+  it('builds single-event home and redirect metadata with locales, alternates, and social tags', () => {
     const event = createEvent();
     const translations = createTranslations('pl', {
       site: {
@@ -244,15 +208,15 @@ describe('event metadata builders', () => {
     assert.deepEqual(home.openGraph?.alternateLocale, ['en_US']);
     assert.deepEqual(home.openGraph?.images, [
       {
-        url: '/og/pl/general.jpg',
-        width: OG_IMAGE_WIDTH,
-        height: OG_IMAGE_HEIGHT,
+        url: '/social/pl/general.jpg',
+        width: SOCIAL_IMAGE_WIDTH,
+        height: SOCIAL_IMAGE_HEIGHT,
         alt: 'Archiwum Mistrzostw Polski w Go',
         type: 'image/jpeg',
       },
     ]);
     assert.equal(home.twitter && 'card' in home.twitter ? home.twitter.card : undefined, 'summary_large_image');
-    assert.deepEqual(home.twitter?.images, ['/og/pl/general.jpg']);
+    assert.deepEqual(home.twitter?.images, ['/social/pl/general.jpg']);
     assert.equal(redirect.alternates?.canonical, '/pl');
   });
 
@@ -283,7 +247,7 @@ describe('event metadata builders', () => {
     assert.match(meta.description ?? '', /Podium: 1\. Stanisław Frejlak, 2\. Cezary Czernecki, 3\. Koichiro Habu\./);
     assert.match(meta.description ?? '', /2 SGF game records\.$/);
     assert.equal(meta.alternates?.languages, undefined);
-    assert.deepEqual(meta.twitter?.images, ['/og/en/tournaments/2025.jpg']);
+    assert.deepEqual(meta.twitter?.images, ['/social/en/tournaments/2025.jpg']);
   });
 
   it('handles categorized, pairs, and announcement editions cleanly', () => {
@@ -316,7 +280,7 @@ describe('event metadata builders', () => {
     });
     assert.match(categorized.description ?? '', /Categories: U12: Stanisław Frejlak, U18: Cezary Czernecki\./);
     assert.equal(categorized.alternates?.canonical, '/archives/eygc/en/2025');
-    assert.deepEqual(categorized.twitter?.images, ['/archives/og/eygc/en/tournaments/2025.jpg']);
+    assert.deepEqual(categorized.twitter?.images, ['/archives/social/eygc/en/tournaments/2025.jpg']);
 
     const tPl = getTranslator(
       createTranslations('pl', {
@@ -401,7 +365,7 @@ describe('event metadata builders', () => {
     });
     assert.equal(overview.title, 'Tournaments - World Amateur Go Championships Archive');
     assert.match(overview.description ?? '', /2 editions \(2024–2025\)/);
-    assert.deepEqual(overview.twitter?.images, ['/og/en/general.jpg']);
+    assert.deepEqual(overview.twitter?.images, ['/social/en/general.jpg']);
 
     const allPlayers = buildAllPlayersStatsMetadata({
       event,
@@ -411,7 +375,7 @@ describe('event metadata builders', () => {
       totalStats: data.summary.totalStats,
     });
     assert.match(allPlayers.description ?? '', /35 players, 120 games across 2 editions \(2024–2025\)/);
-    assert.deepEqual(allPlayers.twitter?.images, ['/og/en/stats.jpg']);
+    assert.deepEqual(allPlayers.twitter?.images, ['/social/en/stats.jpg']);
 
     const player: PlayerStats = {
       id: 'stanislaw-frejlak',
@@ -447,7 +411,7 @@ describe('event metadata builders', () => {
       countryCount: Object.keys(data.stats.countries).length,
     });
     assert.match(allCountries.description ?? '', /2 countries, 120 games across 2 editions \(2024–2025\)/);
-    assert.deepEqual(allCountries.twitter?.images, ['/og/en/stats.jpg']);
+    assert.deepEqual(allCountries.twitter?.images, ['/social/en/stats.jpg']);
 
     const country: CountryStats = {
       code: 'PL',
@@ -511,10 +475,10 @@ describe('event metadata builders', () => {
     });
     assert.equal(gamesMeta.alternates?.canonical, '/en/stats/games');
     assert.match(gamesMeta.description ?? '', /42 SGF game records from 2 editions \(2024–2025\)/);
-    assert.deepEqual(gamesMeta.twitter?.images, ['/og/en/games.jpg']);
+    assert.deepEqual(gamesMeta.twitter?.images, ['/social/en/games.jpg']);
   });
 
-  it('builds multi-event selector metadata and respects basePath and generateOgImages: false', () => {
+  it('builds multi-event selector metadata and respects basePath and generateSocialImages: false', () => {
     const configuration: ArchiveConfiguration = {
       title: { en: 'European Go Championships Archives', pl: 'Archiwa Mistrzostw Europy w Go' },
       domain: 'https://eurogofed.org',
@@ -538,23 +502,23 @@ describe('event metadata builders', () => {
     });
     assert.equal(selectorMeta.title, 'European Go Championships Archives');
     assert.equal(selectorMeta.alternates?.canonical, '/archives');
-    assert.deepEqual(selectorMeta.twitter?.images, ['/archives/og/en/archive.jpg']);
+    assert.deepEqual(selectorMeta.twitter?.images, ['/archives/social/archive/en.jpg']);
     assert.match(selectorMeta.description ?? '', /2 Go tournaments/);
 
-    const noOgEvent = createEvent({ domain: undefined, generateOgImages: false });
-    const eventLayout = buildEventLayoutMetadata(noOgEvent, t);
+    const noSocialEvent = createEvent({ domain: undefined, generateSocialImages: false });
+    const eventLayout = buildEventLayoutMetadata(noSocialEvent, t);
     assert.equal(eventLayout.metadataBase, undefined);
     assert.equal(eventLayout.title, t('site.name'));
 
-    const noOgHome = buildEventHomeMetadata({
-      event: noOgEvent,
+    const noSocialHome = buildEventHomeMetadata({
+      event: noSocialEvent,
       locale: 'pl',
       t: getTranslator(createTranslations('pl')),
       tournaments: [createTournament()],
       totalStats: createEventData([createTournament()]).summary.totalStats,
     });
-    assert.equal(noOgHome.metadataBase, undefined);
-    assert.equal(noOgHome.openGraph?.images, undefined);
-    assert.equal(noOgHome.twitter?.images, undefined);
+    assert.equal(noSocialHome.metadataBase, undefined);
+    assert.equal(noSocialHome.openGraph?.images, undefined);
+    assert.equal(noSocialHome.twitter?.images, undefined);
   });
 });
