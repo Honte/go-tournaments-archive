@@ -15,14 +15,9 @@ type RouteProps = {
 
 export async function GET(_: NextRequest, props: RouteProps) {
   const { eventId, locale, path } = await props.params;
+  const event = await loadEventFromPrefix(eventId);
 
-  try {
-    const event = await loadEventFromPrefix(eventId);
-
-    return serveEventSocialImage(event, locale, path);
-  } catch {
-    return new Response('Not found', { status: 404 });
-  }
+  return serveEventSocialImage(event, locale, path);
 }
 
 export async function generateStaticParams() {

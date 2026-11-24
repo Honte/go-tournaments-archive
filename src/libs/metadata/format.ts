@@ -68,15 +68,7 @@ const DEFAULT_EVENT_NAMES = new Set(['Tournament', 'Turniej']);
 export function resolveMetadataBase(domain?: string): URL | undefined {
   const normalized = normalizeDomain(domain);
 
-  if (!normalized) {
-    return undefined;
-  }
-
-  try {
-    return new URL(normalized);
-  } catch {
-    return undefined;
-  }
+  return normalized ? (URL.parse(normalized) ?? undefined) : undefined;
 }
 
 export function formatDisplayDomain(domain?: string, basePath?: string, prefix?: string): string | undefined {

@@ -26,39 +26,29 @@ export type SocialFontSpec = {
   style: 'normal';
 };
 
-let cachedFontsPromise: Promise<SocialFontSpec[]> | undefined;
-let cachedGenericBgPromise: Promise<string> | undefined;
-let cachedArchiveLogoPromise: Promise<SocialLogoAsset> | undefined;
-const eventLogoCache = new Map<string, Promise<SocialLogoAsset>>();
-const eventBgCache = new Map<string, Promise<string>>();
+let cachedFonts: SocialFontSpec[] | undefined;
+let cachedGenericBg: string | undefined;
+let cachedArchiveLogo: SocialLogoAsset | undefined;
+const eventLogoCache = new Map<string, SocialLogoAsset>();
+const eventBgCache = new Map<string, string>();
 
-export function loadSocialFonts(): Promise<SocialFontSpec[]> {
-  if (!cachedFontsPromise) {
-    cachedFontsPromise = Promise.all([
-      loadFontFile('inter-400.woff', 400),
-      loadFontFile('inter-600.woff', 600),
-      loadFontFile('inter-700.woff', 700),
-    ]).catch((error: unknown) => {
-      cachedFontsPromise = undefined;
-      throw error;
-    });
-  }
+export async function loadSocialFonts(): Promise<SocialFontSpec[]> {
+  cachedFonts ??= await Promise.all([
+    loadFontFile('inter-400.woff', 400),
+    loadFontFile('inter-600.woff', 600),
+    loadFontFile('inter-700.woff', 700),
+  ]);
 
-  return cachedFontsPromise;
+  return cachedFonts;
 }
 
-export function loadGenericBackgroundDataUri(): Promise<string> {
-  if (!cachedGenericBgPromise) {
-    cachedGenericBgPromise = rasterizeBackgroundToDataUri(GENERIC_BACKGROUND_PATH).catch((error: unknown) => {
-      cachedGenericBgPromise = undefined;
-      throw error;
-    });
-  }
+export async function loadGenericBackgroundDataUri(): Promise<string> {
+  cachedGenericBg ??= await rasterizeBackgroundToDataUri(GENERIC_BACKGROUND_PATH);
 
-  return cachedGenericBgPromise;
+  return cachedGenericBg;
 }
 
-export function loadEventBackgroundDataUri(eventId: string): Promise<string> {
+export async function loadEventBackgroundDataUri(eventId: string): Promise<string> {
   const existing = eventBgCache.get(eventId);
 
   if (existing) {
@@ -66,42 +56,29 @@ export function loadEventBackgroundDataUri(eventId: string): Promise<string> {
   }
 
   const bgPath = resolveEventBackgroundPath(eventId);
-  const promise = (bgPath ? rasterizeBackgroundToDataUri(bgPath) : loadGenericBackgroundDataUri()).catch(
-    (error: unknown) => {
-      eventBgCache.delete(eventId);
-      throw error;
-    }
-  );
-  eventBgCache.set(eventId, promise);
+  const dataUri = bgPath ? await rasterizeBackgroundToDataUri(bgPath) : await loadGenericBackgroundDataUri();
+  eventBgCache.set(eventId, dataUri);
 
-  return promise;
+  return dataUri;
 }
 
-export function loadArchiveLogoAsset(): Promise<SocialLogoAsset> {
-  if (!cachedArchiveLogoPromise) {
-    cachedArchiveLogoPromise = rasterizeArchivesIcon().catch((error: unknown) => {
-      cachedArchiveLogoPromise = undefined;
-      throw error;
-    });
-  }
+export async function loadArchiveLogoAsset(): Promise<SocialLogoAsset> {
+  cachedArchiveLogo ??= await rasterizeArchivesIcon();
 
-  return cachedArchiveLogoPromise;
+  return cachedArchiveLogo;
 }
 
-export function loadEventLogoAsset(eventId: string): Promise<SocialLogoAsset> {
+export async function loadEventLogoAsset(eventId: string): Promise<SocialLogoAsset> {
   const existing = eventLogoCache.get(eventId);
 
   if (existing) {
     return existing;
   }
 
-  const promise = rasterizeEventLogo(eventId).catch((error: unknown) => {
-    eventLogoCache.delete(eventId);
-    throw error;
-  });
-  eventLogoCache.set(eventId, promise);
+  const logo = await rasterizeEventLogo(eventId);
+  eventLogoCache.set(eventId, logo);
 
-  return promise;
+  return logo;
 }
 
 export async function loadArchiveEventAcronyms(events: readonly EventContext[], locale: Locale): Promise<string[]> {
