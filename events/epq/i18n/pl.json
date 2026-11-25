@@ -3,12 +3,12 @@
     "name": "Archiwum Kwalifikacji Europejskich Pro w Go",
     "acronym": "EPQ",
     "description": "Archiwum wyników wszystkich edycji Mistrzostw Europy Pro w Go",
-    "yearDescription": "Wyniki kwalifikacji z roku %{0}",
+    "yearDescription": "Wyniki kwalifikacji z roku {year}",
     "allTimeStatsDescription": "Lista wszech czasów wszystkich zawodników Kwalifikacji Europejskich Pro w Go",
-    "playerStatsDescription": "Statystyki gracza %{0} we wszystkich rozegranych edycjach Kwalifikacji Europejskich Pro w Go"
+    "playerStatsDescription": "Statystyki gracza {player} we wszystkich rozegranych edycjach Kwalifikacji Europejskich Pro w Go"
   },
   "details": {
-    "goToWebsite": "Przejdź na stronę EPQ %{0}"
+    "goToWebsite": "Przejdź na stronę EPQ {year}"
   },
   "winners": {
     "first": "Nowy Europejski Pro"

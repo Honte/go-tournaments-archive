@@ -5,9 +5,8 @@ import sharp from 'sharp';
 import type { EventContext } from '@/schema/event';
 import type { Locale } from '@/i18n/consts';
 import { loadTranslations } from '@/i18n/server';
-import { getTranslator } from '@/i18n/translator';
+import { getTranslator, translateOptional } from '@/i18n/translator';
 import { renderEventLogoSvg } from '@/libs/logo';
-import { translateOptional } from '@/libs/metadata';
 import type { SocialLogoAsset } from './schema';
 
 const GENERIC_BACKGROUND_PATH = path.resolve('src/assets/social-background.jpg');

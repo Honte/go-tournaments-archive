@@ -1,35 +1,34 @@
-import type { Translation, Translations } from '@/i18n/consts';
+import { createTranslator, type IntlError, type Messages, type TranslationValues } from 'use-intl/core';
+import type { Translations, Translator } from '@/i18n/consts';
 
-export function getTranslator(translations: Translations) {
-  return (path: string, ...params: string[]) => translate(translations, path, ...params);
-}
+const translatorCache = new WeakMap<Translations, Translator>();
 
-export function translate(translations: Translations, path: string, ...params: string[]) {
-  const translation = getTranslation(translations, path);
+export function getTranslator(translations: Translations): Translator {
+  const cached = translatorCache.get(translations);
 
-  if (typeof translation === 'object') {
-    console.warn(`Translation not specific enough: ${path}`);
-    return path;
+  if (cached) {
+    return cached;
   }
 
-  if (typeof translation === 'undefined') {
-    console.warn(`Missing translation: ${path}`);
-    return path;
-  }
+  const translator = createTranslator({
+    locale: translations.locale,
+    messages: translations as Messages,
+    onError: logTranslationError,
+  });
 
-  return params.length ? applyTranslationParams(translation, ...params) : translation;
+  translatorCache.set(translations, translator);
+
+  return translator;
 }
 
-export function getTranslation(translations: Translations, path: string): Translation | undefined {
-  let translation: Translation | undefined = translations;
-
-  for (const step of path.split('.')) {
-    translation = typeof translation === 'object' ? translation[step] : undefined;
+export function translateOptional(t: Translator, key: string, values?: TranslationValues): string | undefined {
+  if (!t.has(key) || typeof t.raw(key) !== 'string') {
+    return undefined;
   }
 
-  return translation;
+  return t(key, values);
 }
 
-export function applyTranslationParams(msg: string, ...params: string[]) {
-  return msg.replaceAll(/%\{(\d+)}/g, (match, index) => params[index]);
+function logTranslationError(error: IntlError): void {
+  console.warn(error.message);
 }

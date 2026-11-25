@@ -4,12 +4,12 @@
     "eventName": "Korea Prime Minister Cup",
     "acronym": "KPMC",
     "description": "Archive of all Korea Prime Minister Cup tournaments",
-    "yearDescription": "Results of KPMC %{0}",
+    "yearDescription": "Results of KPMC {year}",
     "allTimeStatsDescription": "All-time statistics of all Korea Prime Minister Cup participants",
-    "playerStatsDescription": "Participation statistics of %{0} in all Korea Prime Minister Cup events"
+    "playerStatsDescription": "Participation statistics of {player} in all Korea Prime Minister Cup events"
   },
   "details": {
-    "goToWebsite": "Go to KPMC %{0} website"
+    "goToWebsite": "Go to KPMC {year} website"
   },
   "winners": {
     "first": "KPMC Champion"

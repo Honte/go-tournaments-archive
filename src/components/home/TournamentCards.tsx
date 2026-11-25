@@ -39,7 +39,7 @@ export function TournamentCards({ event, previewCount, results, translations }: 
       ))}
       previewCount={previewCount}
       moreLabel={
-        previewCount === undefined ? '' : t('winners.showMoreTournaments', String(tournaments.length - previewCount))
+        previewCount === undefined ? '' : t('winners.showMoreTournaments', { count: tournaments.length - previewCount })
       }
       lessLabel={t('actions.showLess')}
     />

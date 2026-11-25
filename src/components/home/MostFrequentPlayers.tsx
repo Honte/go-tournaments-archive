@@ -18,7 +18,7 @@ export function MostFrequentPlayers({ event, players, translations }: MostFreque
 
   return (
     <div className="flex h-full flex-col">
-      <H1 className="mt-0 mb-2 flex min-h-9 items-center">{t('stats.attendants', '10')}</H1>
+      <H1 className="mt-0 mb-2 flex min-h-9 items-center">{t('stats.attendants', { count: 10 })}</H1>
       <table className="w-full table-fixed">
         <colgroup>
           <col />

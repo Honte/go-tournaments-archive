@@ -4,7 +4,7 @@ import { useMemo, useState } from 'react';
 import type { CategoryPlayer, CategoryStats } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
-import { getTranslator, translate } from '@/i18n/translator';
+import { getTranslator } from '@/i18n/translator';
 import { createPodiumColumnSorter } from '@/libs/sort';
 import type { KeysMatching } from '@/libs/types';
 import { StatsTable } from '@/components/table/StatsTable';
@@ -33,6 +33,7 @@ type SummaryRow = {
 type MedalKey = KeysMatching<SummaryRow, CategoryPlayer[]>;
 
 export function CategoryResultsTable({ event, translations, stats, className }: CategoryResultsTableProps) {
+  const t = getTranslator(translations);
   const [includeUnsure, setIncludeUnsure] = useState(true);
 
   const data = useMemo(() => {
@@ -63,7 +64,6 @@ export function CategoryResultsTable({ event, translations, stats, className }: 
   const hasUnsure = data.some((r) => r.hasUnsure);
 
   const columns = useMemo<StatsColumnDef<SummaryRow>[]>(() => {
-    const t = getTranslator(translations);
     const podiumColumn = (key: MedalKey, label: string): StatsColumnDef<SummaryRow> => ({
       accessorFn: (row) => (row[key]?.length ? row[key] : undefined),
       header: t(label),
@@ -94,7 +94,7 @@ export function CategoryResultsTable({ event, translations, stats, className }: 
         header: t('table.players'),
       },
     ];
-  }, [translations, event]);
+  }, [translations, event, t]);
 
   return (
     <div className={clsx('flex-2 flex-col', className)}>
@@ -102,12 +102,12 @@ export function CategoryResultsTable({ event, translations, stats, className }: 
         actions={
           hasUnsure ? (
             <Toggle checked={includeUnsure} onChange={setIncludeUnsure}>
-              {translate(translations, 'stats.includeUnsurePlayers')}
+              {t('stats.includeUnsurePlayers')}
             </Toggle>
           ) : undefined
         }
       >
-        {translate(translations, 'stats.summary')}
+        {t('stats.summary')}
       </H1>
       <StatsTable data={data} columns={columns} />
     </div>

@@ -28,7 +28,7 @@ export function CountryAchievements({ event, country, translations, category }: 
         const achievements = country.categoriesMedals[category]?.[index];
 
         if (achievements?.length) {
-          details[t(`winners.${medal}In`, t(`categories.short.${category}`))] = (
+          details[t(`winners.${medal}In`, { category: t(`categories.short.${category}`) })] = (
             <AchievementYears event={event} years={achievements} locale={translations.locale} />
           );
           hasMedals = true;

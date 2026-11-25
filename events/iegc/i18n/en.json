@@ -3,12 +3,12 @@
     "name": "Irish Go Championships Archive",
     "acronym": "IEGC",
     "description": "Archive of all Irish Championships tournaments",
-    "yearDescription": "Results of IEGC %{0}",
+    "yearDescription": "Results of IEGC {year}",
     "allTimeStatsDescription": "All-time statistics of all Irish Go Championships participants",
-    "playerStatsDescription": "Participation statistics of %{0} in all Irish Go Championships events"
+    "playerStatsDescription": "Participation statistics of {player} in all Irish Go Championships events"
   },
   "details": {
-    "goToWebsite": "Go to IEGC %{0} website"
+    "goToWebsite": "Go to IEGC {year} website"
   },
   "winners": {
     "first": "Irish Champion"

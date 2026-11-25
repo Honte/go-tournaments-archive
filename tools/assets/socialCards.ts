@@ -89,7 +89,7 @@ function collectEventSocialTasks(
     tasks.push(
       {
         eventId: event.id,
-        card: buildEventGeneralCardSpec(event, statsInput, locale, t),
+        card: buildEventGeneralCardSpec(event, statsInput, t),
         outputPath: path.join(localeDir, 'general.jpg'),
       },
       {
@@ -99,7 +99,7 @@ function collectEventSocialTasks(
       },
       {
         eventId: event.id,
-        card: buildEventGamesCardSpec(statsInput, locale, t),
+        card: buildEventGamesCardSpec(statsInput, t),
         outputPath: path.join(localeDir, 'games.jpg'),
       }
     );

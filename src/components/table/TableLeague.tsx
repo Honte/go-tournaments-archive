@@ -42,7 +42,7 @@ export function TableLeague({ event, stage, players, games, translations }: Tabl
             {event.showCountry && <th className="p-1">{t(event.pairs ? 'table.pairCountry' : 'table.country')}</th>}
             {rounds.map((round, index) => (
               <th className="p-1" key={index}>
-                {t('table.round', String(index + 1))}
+                {t('table.round', { round: index + 1 })}
               </th>
             ))}
             {visibleBreakers.map((breaker) => (

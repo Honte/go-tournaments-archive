@@ -4,23 +4,23 @@
     "eventName": "Mistrzostwa Polski Par w Go",
     "acronym": "MPP",
     "description": "Archiwum wyników wszystkich edycji Mistrzostw Polski Par w Go",
-    "yearDescription": "Wyniki mistrzostw z roku %{0}",
+    "yearDescription": "Wyniki mistrzostw z roku {year}",
     "allTimeStatsLink": "Zawodnicy",
     "allTimeStatsDescription": "Lista wszech czasów wszystkich zawodników Mistrzostw Polski Par w Go",
-    "playerStatsDescription": "Statystyki gracza %{0} we wszystkich rozegranych edycjach Mistrzostw Polski Par w Go"
+    "playerStatsDescription": "Statystyki gracza {player} we wszystkich rozegranych edycjach Mistrzostw Polski Par w Go"
   },
   "table": {
     "name": "Zawodnicy"
   },
   "details": {
-    "goToWebsite": "Przejdź na stronę MPP %{0}",
+    "goToWebsite": "Przejdź na stronę MPP {year}",
     "awarded": "Medaliści"
   },
   "winners": {
     "first": "Mistrzowie Polski"
   },
   "stats": {
-    "attendants": "Top %{0} zawodników",
+    "attendants": "Top {count} zawodników",
     "opponents": "Podsumowanie przeciwników",
     "medalists": "Zawodnicy"
   },

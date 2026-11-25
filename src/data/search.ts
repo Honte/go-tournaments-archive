@@ -7,7 +7,7 @@ import type {
   TournamentSearchEntry,
 } from '@/schema/search';
 import type { Translations } from '@/i18n/consts';
-import { translate } from '@/i18n/translator';
+import { getTranslator, translateOptional } from '@/i18n/translator';
 import { getString } from '@/i18n/utils';
 import { getParticipantPlayers } from '@/libs/participants';
 import { tokenizeSearchText } from '@/libs/search';
@@ -19,11 +19,16 @@ export function buildSearchIndex(
   translations: Translations,
   eventPlayers: EventPlayer[] = []
 ): SearchIndex {
+  const t = getTranslator(translations);
   const playerRegistry = new Map(eventPlayers.map((player) => [player.id, player]));
   const { playerCounts, countryCounts } = collectGameCounts(data);
 
   const tournaments = data.tournaments.map<TournamentSearchEntry>((tournament) => {
-    const name = getString(tournament.name, translations.locale) ?? translate(translations, 'site.eventName') ?? '';
+    const name =
+      getString(tournament.name, translations.locale) ??
+      translateOptional(t, 'site.eventName') ??
+      translateOptional(t, 'search.types.tournament') ??
+      '';
     const location = tournament.location ?? null;
     const country = tournament.country ?? null;
 
@@ -64,15 +69,15 @@ export function buildSearchIndex(
     ? Object.values(data.stats.countries)
         .toSorted((a, b) => a.code.localeCompare(b.code))
         .map<CountrySearchEntry>((country) => {
-          const name = translate(translations, `country.${country.code}`) ?? country.code;
+          const name = translateOptional(t, `country.${country.code}`) ?? country.code;
 
           return [country.code, name, countryCounts.get(country.code.toUpperCase()) ?? 0];
         })
     : undefined;
 
   const categories = event.categories?.map<SearchEntry<string>>((category) => {
-    const name = translate(translations, `categories.full.${category}`) ?? category;
-    const shortName = translate(translations, `categories.short.${category}`);
+    const name = translateOptional(t, `categories.full.${category}`) ?? category;
+    const shortName = translateOptional(t, `categories.short.${category}`);
 
     return createSearchEntry(category, name, [shortName]);
   });

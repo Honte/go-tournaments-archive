@@ -3,10 +3,9 @@ import type { ArchiveConfiguration, EventContext } from '@/schema/event';
 import type { Locale, Translator } from '@/i18n/consts';
 import { getString } from '@/i18n/utils';
 import {
-  formatCount,
+  cleanWhitespace,
   formatDisplayDomain,
   formatNumber,
-  formatPluralNoun,
   formatTournamentMetaLine,
   getCompletedTournaments,
   getEventDisplayName,
@@ -39,7 +38,11 @@ export function buildArchiveCardSpec(
   const title = getString(configuration.title, locale) ?? t('metadata.archiveTitle');
   const subtitle =
     eventAcronyms.length > 0
-      ? t('socialCard.archiveSubtitle', formatCount(eventAcronyms.length, 'tournamentsGenitive', locale))
+      ? cleanWhitespace(
+          t('socialCard.archiveSubtitle', {
+            tournaments: t('counts.tournamentsGenitive', { count: eventAcronyms.length }),
+          })
+        )
       : t('site.description');
   const visibleAcronyms = eventAcronyms.slice(0, MAX_ARCHIVE_ACRONYMS);
   const extraEventsCount = Math.max(0, eventAcronyms.length - visibleAcronyms.length);
@@ -57,7 +60,6 @@ export function buildArchiveCardSpec(
 export function buildEventGeneralCardSpec(
   event: EventContext,
   { totalStats, tournaments }: EventCardStatsInput,
-  locale: Locale,
   t: Translator
 ): GeneralCardSpec {
   const completed = getCompletedTournaments(tournaments);
@@ -70,15 +72,15 @@ export function buildEventGeneralCardSpec(
   }
 
   if (completed.length > 0) {
-    pills.push(formatCount(completed.length, 'editions', locale));
+    pills.push(cleanWhitespace(t('counts.editions', { count: completed.length })));
   }
 
   if (players > 0) {
-    pills.push(formatCount(players, 'players', locale));
+    pills.push(cleanWhitespace(t('counts.players', { count: players })));
   }
 
   if (sgfs > 0) {
-    pills.push(formatCount(sgfs, 'sgfsShort', locale));
+    pills.push(cleanWhitespace(t('counts.sgfsShort', { count: sgfs })));
   }
 
   return {
@@ -119,13 +121,13 @@ export function buildEditionCardSpec(
   const participantCount = getTournamentParticipantCount(tournament);
 
   if (participantCount > 0) {
-    statParts.push(formatCount(participantCount, event.pairs ? 'pairs' : 'players', locale));
+    statParts.push(cleanWhitespace(t(event.pairs ? 'counts.pairs' : 'counts.players', { count: participantCount })));
   }
 
   const sgfCount = getTournamentSgfCount(tournament);
 
   if (sgfCount > 0) {
-    statParts.push(formatCount(sgfCount, 'sgfsShort', locale));
+    statParts.push(cleanWhitespace(t('counts.sgfsShort', { count: sgfCount })));
   }
 
   const podium = getTournamentPodiumPlaces(tournament, 3);
@@ -157,21 +159,21 @@ export function buildEventStatsCardSpec(
   if (completed.length > 0) {
     metrics.push({
       value: formatNumber(completed.length, locale),
-      label: formatPluralNoun(completed.length, 'editions', locale),
+      label: t('socialCard.statsMetrics.editions', { count: completed.length }),
     });
   }
 
   if (players > 0) {
     metrics.push({
       value: formatNumber(players, locale),
-      label: formatPluralNoun(players, 'players', locale),
+      label: t('socialCard.statsMetrics.players', { count: players }),
     });
   }
 
   if (playedGames > 0) {
     metrics.push({
       value: formatNumber(playedGames, locale),
-      label: formatPluralNoun(playedGames, 'games', locale),
+      label: t('socialCard.statsMetrics.games', { count: playedGames }),
     });
   }
 
@@ -186,7 +188,6 @@ export function buildEventStatsCardSpec(
 
 export function buildEventGamesCardSpec(
   { totalStats, tournaments }: EventCardStatsInput,
-  locale: Locale,
   t: Translator
 ): GamesCardSpec {
   const sgfCount = totalStats.sgfs;
@@ -194,7 +195,7 @@ export function buildEventGamesCardSpec(
   const pills: string[] = [];
 
   if (sgfCount > 0) {
-    pills.push(formatCount(sgfCount, 'sgfsShort', locale));
+    pills.push(cleanWhitespace(t('counts.sgfsShort', { count: sgfCount })));
   }
 
   if (span) {

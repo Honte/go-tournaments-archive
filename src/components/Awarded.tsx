@@ -21,7 +21,9 @@ export function Awarded({ event, tournament, translations }: AwardedProps) {
     <div className="flex-1 flex flex-col">
       {awarded.map(({ category, awarded }, index) => (
         <Fragment key={index}>
-          <H2>{category ? t('details.awardedIn', t(`categories.short.${category}`)) : t('details.awarded')}</H2>
+          <H2>
+            {category ? t('details.awardedIn', { category: t(`categories.short.${category}`) }) : t('details.awarded')}
+          </H2>
           <ol className="list-decimal pl-5">
             {awarded.map((players, index) => {
               const list = players.map((p) => (

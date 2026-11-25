@@ -31,7 +31,7 @@ export function prepareSearchOptions(
       secondary: t('search.types.country'),
       href: countryUrl(event, locale, navigationId),
       gamesHref: event.generateSgfs && gameCount ? allGameStatsForCountryUrl(event, locale, navigationId) : undefined,
-      gamesLabel: gameCount ? t('search.games', String(gameCount)) : undefined,
+      gamesLabel: gameCount ? t('search.games', { count: gameCount }) : undefined,
     });
 
     countriesByCode.set(option.normalizedId, { displayName, terms });
@@ -73,7 +73,7 @@ export function prepareSearchOptions(
         secondary: t('search.types.player'),
         href: playerUrl(event, locale, navigationId),
         gamesHref: event.generateSgfs && gameCount ? allGameStatsForPlayerUrl(event, locale, navigationId) : undefined,
-        gamesLabel: gameCount ? t('search.games', String(gameCount)) : undefined,
+        gamesLabel: gameCount ? t('search.games', { count: gameCount }) : undefined,
       })
     );
   }

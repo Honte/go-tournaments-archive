@@ -35,7 +35,7 @@ export function GamesList({ event, tournament, translations }: GamesListProps) {
       case 'league':
       case 'ladder-table':
         for (const [index, round] of stage.rounds.entries()) {
-          const roundName = t('table.round', String(index + 1));
+          const roundName = t('table.round', { round: index + 1 });
 
           list.push({
             stage: name,
@@ -101,7 +101,7 @@ export function GamesList({ event, tournament, translations }: GamesListProps) {
                 game={games[game]}
                 translations={translations}
                 players={players}
-                title={`${t('site.acronym')} ${tournament.year} - ${list.name} - ${t('table.game', String(gameIndex + 1))}`}
+                title={`${t('site.acronym')} ${tournament.year} - ${list.name} - ${t('table.game', { game: gameIndex + 1 })}`}
                 wide={true}
               />
             ))}

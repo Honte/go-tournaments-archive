@@ -4,12 +4,12 @@
     "eventName": "Akademickie Mistrzostwa Polski w Go",
     "acronym": "AMP",
     "description": "Archiwum wyników wszystkich edycji akademickich Mistrzostw Polski w Go",
-    "yearDescription": "Wyniki mistrzostw z roku %{0}",
+    "yearDescription": "Wyniki mistrzostw z roku {year}",
     "allTimeStatsDescription": "Lista wszech czasów wszystkich zawodników akademickich Mistrzostw Polski w Go",
-    "playerStatsDescription": "Statystyki gracza %{0} we wszystkich rozegranych edycjach akademickich Mistrzostw Polski w Go"
+    "playerStatsDescription": "Statystyki gracza {player} we wszystkich rozegranych edycjach akademickich Mistrzostw Polski w Go"
   },
   "details": {
-    "goToWebsite": "Przejdź na stronę AMP %{0}"
+    "goToWebsite": "Przejdź na stronę AMP {year}"
   },
   "winners": {
     "first": "Akademicki Mistrz Polski"

@@ -1,69 +1,12 @@
 import type { Participant, Tournament } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Locale, Translator } from '@/i18n/consts';
+import { translateOptional } from '@/i18n/translator';
 import { getString } from '@/i18n/utils';
 import { formatDate, formatRange } from '@/libs/dates';
 import { isPair } from '@/libs/participants';
 import { joinPaths, normalizeBasePath, normalizeDomain } from '@/libs/urls';
 import type { CategoryWinner, PodiumPlace } from './schema';
-
-export type PluralNoun =
-  | 'editions'
-  | 'editionsGenitive'
-  | 'editionsLocative'
-  | 'players'
-  | 'pairs'
-  | 'games'
-  | 'sgfs'
-  | 'sgfsShort'
-  | 'countries'
-  | 'appearances'
-  | 'medals'
-  | 'tournamentsGenitive';
-
-type PluralForms = {
-  one: string;
-  few?: string;
-  many: string;
-};
-
-const PLURALS: Record<Locale, Record<PluralNoun, PluralForms>> = {
-  en: {
-    editions: { one: 'edition', many: 'editions' },
-    editionsGenitive: { one: 'edition', many: 'editions' },
-    editionsLocative: { one: 'edition', many: 'editions' },
-    players: { one: 'player', many: 'players' },
-    pairs: { one: 'pair', many: 'pairs' },
-    games: { one: 'game', many: 'games' },
-    sgfs: { one: 'SGF game record', many: 'SGF game records' },
-    sgfsShort: { one: 'SGF game', many: 'SGF games' },
-    countries: { one: 'country', many: 'countries' },
-    appearances: { one: 'appearance', many: 'appearances' },
-    medals: { one: 'medal', many: 'medals' },
-    tournamentsGenitive: { one: 'Go tournament', many: 'Go tournaments' },
-  },
-  pl: {
-    editions: { one: 'edycja', few: 'edycje', many: 'edycji' },
-    editionsGenitive: { one: 'edycji', few: 'edycji', many: 'edycji' },
-    editionsLocative: { one: 'edycji', few: 'edycjach', many: 'edycjach' },
-    players: { one: 'gracz', few: 'graczy', many: 'graczy' },
-    pairs: { one: 'para', few: 'pary', many: 'par' },
-    games: { one: 'partia', few: 'partie', many: 'partii' },
-    sgfs: { one: 'zapis SGF', few: 'zapisy SGF', many: 'zapisów SGF' },
-    sgfsShort: { one: 'partia SGF', few: 'partie SGF', many: 'partii SGF' },
-    countries: { one: 'kraj', few: 'kraje', many: 'krajów' },
-    appearances: { one: 'udział', few: 'udziały', many: 'udziałów' },
-    medals: { one: 'medal', few: 'medale', many: 'medali' },
-    tournamentsGenitive: { one: 'turnieju Go', few: 'turniejów Go', many: 'turniejów Go' },
-  },
-};
-
-const OPEN_GRAPH_LOCALES: Record<Locale, string> = {
-  en: 'en_US',
-  pl: 'pl_PL',
-};
-
-const DEFAULT_EVENT_NAMES = new Set(['Tournament', 'Turniej']);
 
 export function resolveMetadataBase(domain?: string): URL | undefined {
   const normalized = normalizeDomain(domain);
@@ -84,18 +27,22 @@ export function formatDisplayDomain(domain?: string, basePath?: string, prefix?:
   return fullPath ? `${host}${fullPath}` : host;
 }
 
-export function getOpenGraphLocale(locale: Locale): string {
-  return OPEN_GRAPH_LOCALES[locale] ?? locale;
+export function getOpenGraphLocale(locale: string): string {
+  try {
+    const maximized = new Intl.Locale(locale).maximize();
+
+    if (maximized.region && /^[A-Z]{2}$/.test(maximized.region)) {
+      return `${maximized.language}_${maximized.region}`;
+    }
+  } catch {
+    // Fall back to the raw locale tag when Intl.Locale rejects the input.
+  }
+
+  return locale;
 }
 
 export function getEventDisplayName(t: Translator): string {
-  const eventName = t('site.eventName');
-
-  if (eventName && !DEFAULT_EVENT_NAMES.has(eventName)) {
-    return eventName;
-  }
-
-  return t('site.name');
+  return translateOptional(t, 'site.eventName') ?? t('site.name');
 }
 
 export function getTournamentHeading(tournament: Tournament, locale: Locale, t: Translator): string {
@@ -109,15 +56,11 @@ export function getTournamentHeading(tournament: Tournament, locale: Locale, t: 
 }
 
 export function formatNumber(value: number, locale: Locale): string {
-  return new Intl.NumberFormat(locale).format(value).replace(/[\u00a0\u202f]/g, ' ');
+  return cleanWhitespace(new Intl.NumberFormat(locale).format(value));
 }
 
-export function formatPluralNoun(count: number, noun: PluralNoun, locale: Locale): string {
-  return selectPluralForm(count, PLURALS[locale][noun], locale);
-}
-
-export function formatCount(count: number, noun: PluralNoun, locale: Locale): string {
-  return `${formatNumber(count, locale)} ${formatPluralNoun(count, noun, locale)}`;
+export function cleanWhitespace(text: string): string {
+  return text.replace(/[\u00a0\u202f]/g, ' ').replace(/\s*–\s*/g, '–');
 }
 
 export function getYearSpan(years: readonly number[]): string | undefined {
@@ -326,37 +269,8 @@ export function formatCategoryLabel(category: string, t: Translator): string {
   );
 }
 
-export function translateOptional(t: Translator, key: string): string | undefined {
-  const translated = t(key);
-
-  return translated && translated !== key ? translated : undefined;
-}
-
-function selectPluralForm(count: number, forms: PluralForms, locale: Locale): string {
-  const abs = Math.abs(count);
-
-  if (abs === 1) {
-    return forms.one;
-  }
-
-  if (locale === 'pl' && forms.few) {
-    const mod10 = abs % 10;
-    const mod100 = abs % 100;
-
-    if (mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14)) {
-      return forms.few;
-    }
-  }
-
-  return forms.many;
-}
-
 function parseValidDate(raw: string): Date | undefined {
   const parsed = new Date(raw);
 
   return Number.isNaN(parsed.getTime()) ? undefined : parsed;
-}
-
-function cleanWhitespace(text: string): string {
-  return text.replace(/[\u00a0\u202f]/g, ' ').replace(/\s*–\s*/g, '–');
 }

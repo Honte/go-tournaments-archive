@@ -4,18 +4,18 @@
     "eventName": "World Youth Go Championship",
     "acronym": "WYGC",
     "description": "Archive of all World Youth Go Championships tournaments",
-    "yearDescription": "Results of WYGC %{0}",
+    "yearDescription": "Results of WYGC {year}",
     "allTimeStatsDescription": "All-time statistics of all World Youth Go Championships participants",
-    "playerStatsDescription": "Participation statistics of %{0} in all World Youth Go Championships events"
+    "playerStatsDescription": "Participation statistics of {player} in all World Youth Go Championships events"
   },
   "details": {
-    "goToWebsite": "Go to WYGC %{0} website"
+    "goToWebsite": "Go to WYGC {year} website"
   },
   "winners": {
     "first": "World Youth Champion",
-    "firstIn": "World Youth Champion %{0}",
-    "secondIn": "2nd place %{0}",
-    "thirdIn": "3rd place %{0}"
+    "firstIn": "World Youth Champion {category}",
+    "secondIn": "2nd place {category}",
+    "thirdIn": "3rd place {category}"
   },
   "categories": {
     "full": {

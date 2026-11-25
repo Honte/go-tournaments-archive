@@ -1,7 +1,7 @@
 import { LuExternalLink } from 'react-icons/lu';
 import type { EventContext } from '@/schema/event';
 import type { LocalizedString, Translations } from '@/i18n/consts';
-import { getTranslator } from '@/i18n/translator';
+import { getTranslator, translateOptional } from '@/i18n/translator';
 import { tournamentUrl } from '@/libs/urls';
 import { Link } from '@/components/navigation/Link';
 
@@ -25,7 +25,9 @@ export function TournamentAnnouncementBanner({ event, tournament, translations }
       ? announcement[translations.locale]
       : typeof announcement === 'string'
         ? announcement
-        : undefined) ?? t('site.eventName');
+        : undefined) ??
+    translateOptional(t, 'site.eventName') ??
+    t('site.name');
 
   return (
     <div className="flex overflow-hidden rounded-xl border border-archive-accent-fill bg-archive-accent-fill text-archive-accent-text shadow-sm transition-colors duration-500 hover:bg-archive-accent-fill-hover">

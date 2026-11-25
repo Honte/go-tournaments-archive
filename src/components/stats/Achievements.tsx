@@ -71,7 +71,7 @@ export function Achievements({ event, player, translations, category }: Achievem
             hover:bg-archive-accent-fill-hover hover:text-archive-accent-text
           `}
           >
-            {t('stats.viewGameRecords', toCount(player.totalSgfs))}
+            {t('stats.viewGameRecords', { count: toCount(player.totalSgfs) })}
           </Button>
         )}
       </div>

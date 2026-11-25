@@ -2,7 +2,8 @@ import { readdir } from 'node:fs/promises';
 import path from 'node:path';
 import { readYamlEnv } from 'yaml-env-defaults';
 import type { ArchiveConfiguration, EventConfig, EventDefinition } from '@/schema/event';
-import { normalizeDomain } from '@/libs/urls';
+// Relative import required: Next.js's next.config.ts transpiler rewrites @/* relative to the project root, not this file.
+import { normalizeDomain } from './libs/urls';
 
 const CONFIGURATIONS_DIR = 'configurations';
 export const CONFIG = process.env.CONFIG || (process.env.EVENT ? 'single' : 'multi');

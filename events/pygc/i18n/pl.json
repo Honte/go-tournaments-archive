@@ -4,18 +4,18 @@
     "eventName": "Mistrzostwa Polski Juniorów w Go",
     "acronym": "MPJ",
     "description": "Archiwum wyników wszystkich edycji Mistrzostw Polski Juniorów w Go",
-    "yearDescription": "Wyniki mistrzostw z roku %{0}",
+    "yearDescription": "Wyniki mistrzostw z roku {year}",
     "allTimeStatsDescription": "Lista wszech czasów wszystkich zawodników Mistrzostw Polski Juniorów w Go",
-    "playerStatsDescription": "Statystyki gracza %{0} we wszystkich rozegranych edycjach Mistrzostw Polski Juniorów w Go"
+    "playerStatsDescription": "Statystyki gracza {player} we wszystkich rozegranych edycjach Mistrzostw Polski Juniorów w Go"
   },
   "details": {
-    "goToWebsite": "Przejdź na stronę MPJ %{0}"
+    "goToWebsite": "Przejdź na stronę MPJ {year}"
   },
   "winners": {
     "first": "Mistrz Polski Juniorów",
-    "firstIn": "Mistrz Polski Juniorów %{0}",
-    "secondIn": "2. miejsce %{0}",
-    "thirdIn": "3. miejsce %{0}"
+    "firstIn": "Mistrz Polski Juniorów {category}",
+    "secondIn": "2. miejsce {category}",
+    "thirdIn": "3. miejsce {category}"
   },
   "categories": {
     "full": {

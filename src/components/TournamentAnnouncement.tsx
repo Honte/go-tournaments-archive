@@ -1,7 +1,7 @@
 import { LuExternalLink } from 'react-icons/lu';
 import type { Tournament } from '@/schema/data';
 import type { Translations } from '@/i18n/consts';
-import { getTranslator } from '@/i18n/translator';
+import { getTranslator, translateOptional } from '@/i18n/translator';
 
 type TournamentAnnouncementProps = {
   tournament: Tournament;
@@ -19,7 +19,9 @@ export function TournamentAnnouncement({ tournament, translations }: TournamentA
       ? tournament.announcement[translations.locale]
       : typeof tournament.announcement === 'string'
         ? tournament.announcement
-        : undefined) ?? t('site.eventName');
+        : undefined) ??
+    translateOptional(t, 'site.eventName') ??
+    t('site.name');
 
   return (
     <section className="my-4 flex items-center justify-center rounded-lg bg-archive-accent-fill text-xl text-archive-accent-text transition-colors duration-500 hover:bg-archive-accent-fill-hover">

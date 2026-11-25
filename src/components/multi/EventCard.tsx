@@ -9,14 +9,10 @@ import { ThemeLogo } from '@/components/ui/ThemeLogo';
 type EventCardProps = EventEntry & {
   locale: Locale;
   hasSingleLocale?: boolean;
+  externalLabel: string;
 };
 
-const EXTERNAL_LABELS: Record<Locale, string> = {
-  en: 'Self-hosted archive',
-  pl: 'Zewnętrzne archiwum',
-};
-
-export function EventCard({ event, name, locale, hasSingleLocale }: EventCardProps) {
+export function EventCard({ event, name, locale, hasSingleLocale, externalLabel }: EventCardProps) {
   let eventLocale = locale;
   let eventName = getString(name, eventLocale);
 
@@ -36,7 +32,7 @@ export function EventCard({ event, name, locale, hasSingleLocale }: EventCardPro
       >
         {event.external && (
           <span className="flex items-center gap-1 self-end rounded-full bg-archive-page px-2 py-1 text-[.6rem] font-medium text-archive-text/70">
-            {EXTERNAL_LABELS[locale]}
+            {externalLabel}
             <LuExternalLink aria-hidden="true" />
           </span>
         )}

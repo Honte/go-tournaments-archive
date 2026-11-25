@@ -3,12 +3,12 @@
     "name": "European Pro Go Championships Archive",
     "acronym": "EPC",
     "description": "Archive of all European Pro Championships tournaments",
-    "yearDescription": "Results of EPC %{0}",
+    "yearDescription": "Results of EPC {year}",
     "allTimeStatsDescription": "All-time statistics of all European Pro Go Championships participants",
-    "playerStatsDescription": "Participation statistics of %{0} in all European Pro Go Championships events"
+    "playerStatsDescription": "Participation statistics of {player} in all European Pro Go Championships events"
   },
   "details": {
-    "goToWebsite": "Go to EPC %{0} website"
+    "goToWebsite": "Go to EPC {year} website"
   },
   "winners": {
     "first": "European Pro Champion"

@@ -104,6 +104,7 @@ export async function loadMultiTranslations(locales?: string[]) {
       themeAuto: t('navigation.theme.auto'),
       themeLight: t('navigation.theme.light'),
       themeDark: t('navigation.theme.dark'),
+      externalArchive: t('navigation.externalArchive'),
     };
 
     return all;

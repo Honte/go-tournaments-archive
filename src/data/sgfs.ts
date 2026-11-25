@@ -4,7 +4,7 @@ import type { Game, Tournament } from '@/schema/data';
 import type { EventDefinition, EventContext } from '@/schema/event';
 import { CustomSgfProps, SgfRootProps } from '@/schema/sgf';
 import type { Translations } from '@/i18n/consts';
-import { getTranslator } from '@/i18n/translator';
+import { getTranslator, translateOptional } from '@/i18n/translator';
 import { Sgf, type SgfNodeDataChange } from '@tools/sgf';
 import { getParticipantName, getParticipantPlayers } from '@/libs/participants';
 import { getStageName } from '@/libs/stage';
@@ -121,11 +121,12 @@ export function getSgfProps(event: EventContext, game: Game, tournament: Tournam
   const stage = tournament.stages[game.stage];
   const stageName = stage && getStageName(stage, translations);
   const roundName = stage && game.props.round ? `${game.props.round} (${stageName})` : undefined;
+  const eventName = translateOptional(t, 'site.eventName') ?? t('site.name');
   const gameName = [
-    `${t('site.eventName')} ${tournament.year}`,
+    `${eventName} ${tournament.year}`,
     tournament.stages.length > 1 ? stageName : undefined,
-    typeof game.props.round === 'number' ? `${t('table.round', String(game.props.round))}` : undefined,
-    typeof game.props.index === 'number' ? `${t('table.game', String(game.props.index))}` : undefined,
+    typeof game.props.round === 'number' ? t('table.round', { round: game.props.round }) : undefined,
+    typeof game.props.index === 'number' ? t('table.game', { game: game.props.index }) : undefined,
   ]
     .filter(Boolean)
     .join(' - ');

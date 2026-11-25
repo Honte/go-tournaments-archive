@@ -3,12 +3,12 @@
     "name": "Slovak Go Championships Archive",
     "acronym": "SKGC",
     "description": "Archive of all Slovak Championships tournaments",
-    "yearDescription": "Results of SKGC %{0}",
+    "yearDescription": "Results of SKGC {year}",
     "allTimeStatsDescription": "All-time statistics of all Slovak Go Championships participants",
-    "playerStatsDescription": "Participation statistics of %{0} in all Slovak Go Championships events"
+    "playerStatsDescription": "Participation statistics of {player} in all Slovak Go Championships events"
   },
   "details": {
-    "goToWebsite": "Go to SKGC %{0} website"
+    "goToWebsite": "Go to SKGC {year} website"
   },
   "winners": {
     "first": "Slovak Champion"

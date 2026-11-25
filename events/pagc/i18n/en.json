@@ -4,12 +4,12 @@
     "eventName": "Polish Academic Go Championship",
     "acronym": "PAGC",
     "description": "Archive of all Polish Academic Go Championships tournaments",
-    "yearDescription": "Results of PAGC %{0}",
+    "yearDescription": "Results of PAGC {year}",
     "allTimeStatsDescription": "All-time statistics of all Polish Academic Go Championships participants",
-    "playerStatsDescription": "Participation statistics of %{0} in all Polish Academic Go Championships events"
+    "playerStatsDescription": "Participation statistics of {player} in all Polish Academic Go Championships events"
   },
   "details": {
-    "goToWebsite": "Go to PAGC %{0} website"
+    "goToWebsite": "Go to PAGC {year} website"
   },
   "winners": {
     "first": "Polish Academic Champion"

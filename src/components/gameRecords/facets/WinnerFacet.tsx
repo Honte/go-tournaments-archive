@@ -22,12 +22,12 @@ export function WinnerFacet({ store, t }: GameFacetProps) {
       ? [
           {
             value: 'player',
-            label: t('gamesFilter.playerWinner', playerLabel ?? t('gamesFilter.player')),
+            label: t('gamesFilter.playerWinner', { player: playerLabel ?? t('gamesFilter.player') }),
             count: facets.winner.player,
           },
           {
             value: 'player-opponent',
-            label: opponentLabel ?? t('gamesFilter.opponentWinner', playerLabel ?? t('gamesFilter.player')),
+            label: opponentLabel ?? t('gamesFilter.opponentWinner', { player: playerLabel ?? t('gamesFilter.player') }),
             count: facets.winner['player-opponent'],
           },
         ]
@@ -36,12 +36,12 @@ export function WinnerFacet({ store, t }: GameFacetProps) {
       ? [
           {
             value: 'country',
-            label: t('gamesFilter.countryPlayerWinner', countryLabel!),
+            label: t('gamesFilter.countryPlayerWinner', { country: countryLabel! }),
             count: facets.winner.country,
           },
           {
             value: 'country-opponent',
-            label: opponentCountryLabel ?? t('gamesFilter.countryOpponentWinner', countryLabel!),
+            label: opponentCountryLabel ?? t('gamesFilter.countryOpponentWinner', { country: countryLabel! }),
             count: facets.winner['country-opponent'],
           },
         ]

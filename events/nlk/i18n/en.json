@@ -3,12 +3,12 @@
     "name": "Dutch Go Championships Archive",
     "acronym": "NLK",
     "description": "Archive of all Dutch Championships tournaments",
-    "yearDescription": "Results of NLK %{0}",
+    "yearDescription": "Results of NLK {year}",
     "allTimeStatsDescription": "All-time statistics of all Dutch Go Championships participants",
-    "playerStatsDescription": "Participation statistics of %{0} in all Dutch Go Championships events"
+    "playerStatsDescription": "Participation statistics of {player} in all Dutch Go Championships events"
   },
   "details": {
-    "goToWebsite": "Go to NLK %{0} website"
+    "goToWebsite": "Go to NLK {year} website"
   },
   "winners": {
     "first": "Dutch Champion"

@@ -41,7 +41,7 @@ export function Header({ event, translations }: TopBarProps) {
               <span className="sr-only">{t('navigation.home.anchor')}</span>
               <img src={logoWhiteUrl(event)} alt="" className="h-4 xs:h-5 shrink-0" />
               <span className="text-base xs:text-lg font-semibold truncate">
-                {t('navigation.archiveLabel', t('site.acronym'))}
+                {t('navigation.archiveLabel', { acronym: t('site.acronym') })}
               </span>
             </Link>
             <HeaderSearch event={event} translations={translations} />

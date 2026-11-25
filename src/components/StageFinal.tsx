@@ -37,7 +37,8 @@ export function StageFinal({ event, stage, games, players, translations }: Stage
   return (
     <div className="flex flex-col gap-2">
       <p>
-        {t('stage.requiredWins', String(requiredWins))} {includePrevious ? t('stage.includePreviousWins') : ''}
+        {requiredWins !== undefined ? t('stage.requiredWins', { wins: requiredWins }) : ''}{' '}
+        {includePrevious ? t('stage.includePreviousWins') : ''}
       </p>
       <div className="text-lg flex items-center gap-2 flex-wrap">
         <span className={tied ? undefined : 'font-bold'}>

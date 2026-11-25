@@ -137,11 +137,11 @@ async function buildTargetCardSpec(
 
   switch (target.type) {
     case 'general':
-      return buildEventGeneralCardSpec(event, statsInput, locale, t);
+      return buildEventGeneralCardSpec(event, statsInput, t);
     case 'stats':
       return buildEventStatsCardSpec(statsInput, locale, t);
     case 'games':
-      return buildEventGamesCardSpec(statsInput, locale, t);
+      return buildEventGamesCardSpec(statsInput, t);
   }
 }
 

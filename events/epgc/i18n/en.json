@@ -3,12 +3,12 @@
     "name": "European Pair Go Championships Archive",
     "acronym": "EPGC",
     "description": "Archive of all European Pair Championships tournaments",
-    "yearDescription": "Results of EPGC %{0}",
+    "yearDescription": "Results of EPGC {year}",
     "allTimeStatsDescription": "All-time statistics of all European Pair Go Championships participants",
-    "playerStatsDescription": "Participation statistics of %{0} in all European Pair Go Championships events"
+    "playerStatsDescription": "Participation statistics of {player} in all European Pair Go Championships events"
   },
   "details": {
-    "goToWebsite": "Go to EPGC %{0} website"
+    "goToWebsite": "Go to EPGC {year} website"
   },
   "winners": {
     "first": "European Pair Champion"

@@ -72,7 +72,7 @@ function AllGamesContent({ event, games, translations }: AllGamesContentProps) {
   const titleCount =
     model.filteredCount === model.totalCount
       ? String(model.totalCount)
-      : t('gamesFilter.count', String(model.filteredCount), String(model.totalCount));
+      : t('gamesFilter.count', { filtered: model.filteredCount, total: model.totalCount });
 
   const groups = useMemo<GameRecordGroup[]>(
     () =>

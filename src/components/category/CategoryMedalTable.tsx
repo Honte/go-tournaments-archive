@@ -21,7 +21,7 @@ export function CategoryMedalTable({ event, category, stats, translations }: Cat
 
   return (
     <div className="flex-1 flex-col">
-      <H1>{t('details.awardedIn', t(`categories.short.${category}`))}</H1>
+      <H1>{t('details.awardedIn', { category: t(`categories.short.${category}`) })}</H1>
       <MedalTable
         translations={translations}
         results={medalists}

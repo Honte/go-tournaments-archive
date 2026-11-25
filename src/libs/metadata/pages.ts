@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import type { ArchiveConfiguration, EventContext } from '@/schema/event';
 import type { Locale, Translator } from '@/i18n/consts';
+import { translateOptional } from '@/i18n/translator';
 import { getString } from '@/i18n/utils';
 import {
   allCountryStatsUrl,
@@ -35,13 +36,7 @@ import {
   describeTournament,
   describeTournamentsOverview,
 } from './descriptions';
-import {
-  formatCategoryLabel,
-  getOpenGraphLocale,
-  getTournamentHeading,
-  resolveMetadataBase,
-  translateOptional,
-} from './format';
+import { formatCategoryLabel, getOpenGraphLocale, getTournamentHeading, resolveMetadataBase } from './format';
 import {
   SOCIAL_IMAGE_HEIGHT,
   SOCIAL_IMAGE_WIDTH,
@@ -197,7 +192,7 @@ export function buildAllPlayersStatsMetadata(input: AllPlayersStatsMetadataInput
 export function buildPlayerStatsMetadata(input: PlayerStatsMetadataInput): Metadata {
   const { category, event, locale, player, t } = input;
   const siteName = t('site.name');
-  const baseTitle = t('site.playerStatsTitle', player.name);
+  const baseTitle = t('site.playerStatsTitle', { player: player.name });
   const pageTitle = category ? `${baseTitle} (${formatCategoryLabel(category, t)})` : baseTitle;
   const description = describePlayerStats(input);
 
@@ -237,7 +232,7 @@ export function buildCountryStatsMetadata(input: CountryStatsMetadataInput): Met
   const { category, country, event, locale, t } = input;
   const siteName = t('site.name');
   const countryName = translateOptional(t, `country.${country.code}`) ?? country.code;
-  const baseTitle = t('site.countryStatsTitle', countryName);
+  const baseTitle = t('site.countryStatsTitle', { country: countryName });
   const pageTitle = category ? `${baseTitle} (${formatCategoryLabel(category, t)})` : baseTitle;
   const description = describeCountryStats(input);
 
@@ -258,7 +253,7 @@ export function buildCategoryStatsMetadata(input: CategoryStatsMetadataInput): M
   const { category, event, locale, t } = input;
   const siteName = t('site.name');
   const categoryName = formatCategoryLabel(category, t);
-  const pageTitle = t('site.categoryStatsTitle', categoryName);
+  const pageTitle = t('site.categoryStatsTitle', { category: categoryName });
   const description = describeCategoryStats(input);
 
   return buildEventPageMetadata({

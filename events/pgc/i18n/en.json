@@ -4,12 +4,12 @@
     "eventName": "Polish Go Championship",
     "acronym": "PGC",
     "description": "Archive of all Polish Go Championships tournaments",
-    "yearDescription": "Results of PGC %{0}",
+    "yearDescription": "Results of PGC {year}",
     "allTimeStatsDescription": "All-time statistics of all Polish Go Championships participants",
-    "playerStatsDescription": "Participation statistics of %{0} in all Polish Go Championships events"
+    "playerStatsDescription": "Participation statistics of {player} in all Polish Go Championships events"
   },
   "details": {
-    "goToWebsite": "Go to PGC %{0} website"
+    "goToWebsite": "Go to PGC {year} website"
   },
   "winners": {
     "first": "Polish Champion"

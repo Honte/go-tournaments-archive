@@ -3,12 +3,12 @@
     "name": "Dutch Junior Go Championships Archive",
     "acronym": "NLKJ",
     "description": "Archive of all Dutch Junior Championships tournaments",
-    "yearDescription": "Results of NLKJ %{0}",
+    "yearDescription": "Results of NLKJ {year}",
     "allTimeStatsDescription": "All-time statistics of all Dutch Junior Go Championships participants",
-    "playerStatsDescription": "Participation statistics of %{0} in all Dutch Junior Go Championships events"
+    "playerStatsDescription": "Participation statistics of {player} in all Dutch Junior Go Championships events"
   },
   "details": {
-    "goToWebsite": "Go to NLKJ %{0} website"
+    "goToWebsite": "Go to NLKJ {year} website"
   },
   "winners": {
     "first": "Dutch Junior Champion"

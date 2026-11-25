@@ -4,12 +4,12 @@
     "eventName": "World Women's Go Tournaments",
     "acronym": "WWGC",
     "description": "Archive of all World Women's Go Tournaments",
-    "yearDescription": "Results of WWGC %{0}",
+    "yearDescription": "Results of WWGC {year}",
     "allTimeStatsDescription": "All-time statistics of all World Women's Go Tournaments participants",
-    "playerStatsDescription": "Participation statistics of %{0} in all World Women's Go Tournaments"
+    "playerStatsDescription": "Participation statistics of {player} in all World Women's Go Tournaments"
   },
   "details": {
-    "goToWebsite": "Go to WWGC %{0} website"
+    "goToWebsite": "Go to WWGC {year} website"
   },
   "winners": {
     "first": "Women Champion"

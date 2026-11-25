@@ -27,7 +27,7 @@ export function Game({ event, className, game, players, translations, title, wid
   const hasSgf = event.generateSgfs && game.props.sgf;
   const hasProps = Object.keys(game.props).length > 0;
   const preview = game.props.jpg ?? game.props.svg ?? game.props.png;
-  const gameTitle = t('game.preview', `${title}: ${getParticipantName(home)} vs ${getParticipantName(away)}`);
+  const gameTitle = t('game.preview', { game: `${title}: ${getParticipantName(home)} vs ${getParticipantName(away)}` });
 
   return (
     <div

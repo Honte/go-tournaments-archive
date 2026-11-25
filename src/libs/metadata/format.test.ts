@@ -3,14 +3,13 @@ import { describe, it } from 'node:test';
 import type { Tournament } from '@/schema/data';
 import { getTranslator } from '@/i18n/translator';
 import {
-  formatCount,
   formatDisplayDomain,
-  formatPluralNoun,
+  getEventDisplayName,
+  getOpenGraphLocale,
   getSgfTournamentYears,
   getTournamentPodiumPlaces,
   getYearSpan,
   resolveMetadataBase,
-  translateOptional,
 } from './format';
 
 describe('metadata format helpers', () => {
@@ -23,22 +22,27 @@ describe('metadata format helpers', () => {
     assert.equal(formatDisplayDomain(undefined, '/archives', 'egc'), undefined);
   });
 
-  it('pluralizes Polish and English counts and standalone nouns accurately', () => {
-    assert.equal(formatCount(1, 'editions', 'pl'), '1 edycja');
-    assert.equal(formatCount(2, 'editions', 'pl'), '2 edycje');
-    assert.equal(formatCount(5, 'editions', 'pl'), '5 edycji');
-    assert.equal(formatCount(12, 'editions', 'pl'), '12 edycji');
-    assert.equal(formatCount(22, 'editions', 'pl'), '22 edycje');
-    assert.equal(formatCount(1, 'pairs', 'pl'), '1 para');
-    assert.equal(formatCount(4, 'pairs', 'pl'), '4 pary');
-    assert.equal(formatCount(5, 'pairs', 'pl'), '5 par');
-    assert.equal(formatCount(1, 'sgfs', 'en'), '1 SGF game record');
-    assert.equal(formatCount(42, 'sgfs', 'en'), '42 SGF game records');
-    assert.equal(formatPluralNoun(1, 'editions', 'pl'), 'edycja');
-    assert.equal(formatPluralNoun(2, 'editions', 'pl'), 'edycje');
-    assert.equal(formatPluralNoun(5, 'players', 'pl'), 'graczy');
-    assert.equal(formatPluralNoun(1, 'games', 'en'), 'game');
-    assert.equal(formatPluralNoun(140, 'games', 'en'), 'games');
+  it('derives Open Graph locales dynamically via Intl.Locale with safe fallbacks', () => {
+    assert.equal(getOpenGraphLocale('en'), 'en_US');
+    assert.equal(getOpenGraphLocale('pl'), 'pl_PL');
+    assert.equal(getOpenGraphLocale('de'), 'de_DE');
+    assert.equal(getOpenGraphLocale('en-GB'), 'en_GB');
+    assert.equal(getOpenGraphLocale('eo'), 'eo');
+    assert.equal(getOpenGraphLocale('invalid_locale!'), 'invalid_locale!');
+  });
+
+  it('prefers site.eventName over site.name when eventName is defined', () => {
+    const withEventName = getTranslator({
+      locale: 'en',
+      site: { name: 'WAGC Archive', eventName: 'World Amateur Go Championship' },
+    } as never);
+    const withoutEventName = getTranslator({
+      locale: 'en',
+      site: { name: 'European Go Congress Archive' },
+    } as never);
+
+    assert.equal(getEventDisplayName(withEventName), 'World Amateur Go Championship');
+    assert.equal(getEventDisplayName(withoutEventName), 'European Go Congress Archive');
   });
 
   it('formats calendar year spans and extracts SGF tournament years excluding announcements', () => {
@@ -70,11 +74,5 @@ describe('metadata format helpers', () => {
       { rank: 1, names: 'Alice, Bob' },
       { rank: 3, names: 'Carol' },
     ]);
-  });
-
-  it('returns undefined from translateOptional when key is missing', () => {
-    const t = getTranslator({ locale: 'en', site: { acronym: 'WAGC' } } as never);
-    assert.equal(translateOptional(t, 'site.acronym'), 'WAGC');
-    assert.equal(translateOptional(t, 'countries.ZZ'), undefined);
   });
 });

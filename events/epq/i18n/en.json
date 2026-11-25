@@ -3,12 +3,12 @@
     "name": "European Pro Qualifications Archive",
     "acronym": "EPQ",
     "description": "Archive of all European Pro Qualifications tournaments",
-    "yearDescription": "Results of EPQ %{0}",
+    "yearDescription": "Results of EPQ {year}",
     "allTimeStatsDescription": "All-time statistics of all European Pro Qualifications participants",
-    "playerStatsDescription": "Participation statistics of %{0} in all European Pro Qualifications events"
+    "playerStatsDescription": "Participation statistics of {player} in all European Pro Qualifications events"
   },
   "details": {
-    "goToWebsite": "Go to EPQ %{0} website"
+    "goToWebsite": "Go to EPQ {year} website"
   },
   "winners": {
     "first": "New European Pro"

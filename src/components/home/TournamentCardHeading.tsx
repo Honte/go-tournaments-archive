@@ -2,7 +2,7 @@ import { LuCalendarDays, LuMapPin } from 'react-icons/lu';
 import type { Tournament } from '@/schema/data';
 import type { EventContext } from '@/schema/event';
 import type { Translations } from '@/i18n/consts';
-import { translate } from '@/i18n/translator';
+import { getTranslator } from '@/i18n/translator';
 import { formatDate, formatRange } from '@/libs/dates';
 import { tournamentUrl } from '@/libs/urls';
 import { Link } from '@/components/navigation/Link';
@@ -39,11 +39,9 @@ function LocationRenderer({ event, tournament, translations }: TournamentCardHea
     return null;
   }
 
+  const t = getTranslator(translations);
   const location =
-    [
-      tournament.location,
-      event.showCountry && tournament.country ? translate(translations, `country.${tournament.country}`) : undefined,
-    ]
+    [tournament.location, event.showCountry && tournament.country ? t(`country.${tournament.country}`) : undefined]
       .filter(Boolean)
       .join(', ') || undefined;
 

@@ -33,7 +33,7 @@ export function TableLadder({ event, stage, players, games, translations }: Tabl
             {showRank && <th className="p-1">{t('table.rank')}</th>}
             {rounds.map((round, index) => (
               <th className="p-1" key={index}>
-                {t('table.round', String(index + 1))}
+                {t('table.round', { round: index + 1 })}
               </th>
             ))}
             {playoffsColumns > 0 ? (

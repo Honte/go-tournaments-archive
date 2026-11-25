@@ -3,12 +3,12 @@
     "name": "Archiwum Mistrzostw Europy Pro w Go",
     "acronym": "EPC",
     "description": "Archiwum wyników wszystkich edycji Mistrzostw Europy Pro w Go",
-    "yearDescription": "Wyniki mistrzostw z roku %{0}",
+    "yearDescription": "Wyniki mistrzostw z roku {year}",
     "allTimeStatsDescription": "Lista wszech czasów wszystkich zawodników Mistrzostw Europy Pro w Go",
-    "playerStatsDescription": "Statystyki gracza %{0} we wszystkich rozegranych edycjach Mistrzostw Europy Pro w Go"
+    "playerStatsDescription": "Statystyki gracza {player} we wszystkich rozegranych edycjach Mistrzostw Europy Pro w Go"
   },
   "details": {
-    "goToWebsite": "Przejdź na stronę EPC %{0}"
+    "goToWebsite": "Przejdź na stronę EPC {year}"
   },
   "winners": {
     "first": "Mistrz Europy Pro"

@@ -7,9 +7,10 @@ import { H2 } from '@/components/ui/H2';
 type EventGroupProps = EventEntryGroup & {
   locale: Locale;
   hasSingleLocale?: boolean;
+  externalLabel: string;
 };
 
-export function EventGroup({ title, events, locale, hasSingleLocale }: EventGroupProps) {
+export function EventGroup({ title, events, locale, hasSingleLocale, externalLabel }: EventGroupProps) {
   return (
     <section className="flex flex-col gap-3">
       {title && <H2>{getString(title, locale)}</H2>}
@@ -21,6 +22,7 @@ export function EventGroup({ title, events, locale, hasSingleLocale }: EventGrou
             name={event.name}
             locale={locale}
             hasSingleLocale={hasSingleLocale}
+            externalLabel={externalLabel}
           />
         ))}
       </div>

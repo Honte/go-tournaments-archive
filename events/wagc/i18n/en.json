@@ -4,12 +4,12 @@
     "eventName": "World Amateur Go Championship",
     "acronym": "WAGC",
     "description": "Archive of all World Amateur Go Championships tournaments",
-    "yearDescription": "Results of WAGC %{0}",
+    "yearDescription": "Results of WAGC {year}",
     "allTimeStatsDescription": "All-time statistics of all World Amateur Go Championships participants",
-    "playerStatsDescription": "Participation statistics of %{0} in all World Amateur Go Championships events"
+    "playerStatsDescription": "Participation statistics of {player} in all World Amateur Go Championships events"
   },
   "details": {
-    "goToWebsite": "Go to WAGC %{0} website"
+    "goToWebsite": "Go to WAGC {year} website"
   },
   "winners": {
     "first": "World Champion"

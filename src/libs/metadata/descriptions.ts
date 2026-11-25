@@ -1,8 +1,9 @@
 import type { StatsMedals } from '@/schema/data';
 import type { Locale, Translator } from '@/i18n/consts';
+import { translateOptional } from '@/i18n/translator';
 import {
+  cleanWhitespace,
   formatCategoryLabel,
-  formatCount,
   formatNumber,
   formatTournamentMetaLine,
   getCompletedTournaments,
@@ -14,7 +15,6 @@ import {
   getTournamentPodiumPlaces,
   getTournamentSgfCount,
   getYearSpan,
-  translateOptional,
 } from './format';
 import type {
   AllCountriesStatsMetadataInput,
@@ -29,41 +29,46 @@ import type {
   TournamentsOverviewMetadataInput,
 } from './schema';
 
-export function describeMultiArchive({ events, locale, t }: ArchiveMetadataInput, title: string): string {
+export function describeMultiArchive({ events, t }: ArchiveMetadataInput, title: string): string {
   if (events.length === 0) {
     return t('site.description');
   }
 
-  return t('metadata.archiveDescription', title, formatCount(events.length, 'tournamentsGenitive', locale));
+  return cleanWhitespace(
+    t('metadata.archiveDescription', {
+      title,
+      tournaments: t('counts.tournamentsGenitive', { count: events.length }),
+    })
+  );
 }
 
-export function describeEventHome({ locale, t, totalStats, tournaments }: EventHomeMetadataInput): string {
+export function describeEventHome({ t, totalStats, tournaments }: EventHomeMetadataInput): string {
   const completed = getCompletedTournaments(tournaments);
   const years = completed.map((tournament) => tournament.year);
   const span = getYearSpan(years);
   const parts: string[] = [];
 
   if (completed.length > 0) {
-    parts.push(withYearSpan(formatCount(completed.length, 'editions', locale), span));
+    parts.push(withYearSpan(t('counts.editions', { count: completed.length }), span));
   }
 
   if (totalStats.players > 0) {
-    parts.push(formatCount(totalStats.players, 'players', locale));
+    parts.push(t('counts.players', { count: totalStats.players }));
   }
 
   if (totalStats.playedGames > 0) {
-    parts.push(formatCount(totalStats.playedGames, 'games', locale));
+    parts.push(t('counts.games', { count: totalStats.playedGames }));
   }
 
   if (totalStats.sgfs > 0) {
-    parts.push(formatCount(totalStats.sgfs, 'sgfs', locale));
+    parts.push(t('counts.sgfs', { count: totalStats.sgfs }));
   }
 
   if (parts.length === 0) {
     return t('site.description');
   }
 
-  return t('metadata.homeSummary', t('site.name'), parts.join(', '));
+  return cleanWhitespace(t('metadata.homeSummary', { name: t('site.name'), summary: parts.join(', ') }));
 }
 
 export function describeTournament({ event, locale, t, tournament }: TournamentMetadataInput): string {
@@ -71,9 +76,9 @@ export function describeTournament({ event, locale, t, tournament }: TournamentM
   const metaLine = formatTournamentMetaLine(tournament, event, locale, t);
 
   if (tournament.announcement) {
-    const header = metaLine ? `${heading} (${metaLine})` : heading;
+    const edition = metaLine ? `${heading} (${metaLine})` : heading;
 
-    return t('metadata.editionUpcoming', header);
+    return cleanWhitespace(t('metadata.editionUpcoming', { edition }));
   }
 
   const sentences: string[] = [];
@@ -86,7 +91,7 @@ export function describeTournament({ event, locale, t, tournament }: TournamentM
   const participantCount = getTournamentParticipantCount(tournament);
 
   if (participantCount > 0) {
-    introParts.push(formatCount(participantCount, event.pairs ? 'pairs' : 'players', locale));
+    introParts.push(t(event.pairs ? 'counts.pairs' : 'counts.players', { count: participantCount }));
   }
 
   sentences.push(introParts.length > 0 ? `${heading} — ${introParts.join(', ')}.` : `${heading}.`);
@@ -96,29 +101,33 @@ export function describeTournament({ event, locale, t, tournament }: TournamentM
   if (podium.length > 0) {
     const formattedPodium = podium.map((place) => `${place.rank}. ${place.names}`).join(', ');
 
-    sentences.push(t('metadata.editionPodium', formattedPodium));
+    sentences.push(t('metadata.editionPodium', { podium: formattedPodium }));
   } else {
     const categoryWinners = getTournamentCategoryWinners(tournament, t);
 
     if (categoryWinners.length > 0) {
       const formattedCategories = categoryWinners.map((item) => `${item.category}: ${item.winner}`).join(', ');
 
-      sentences.push(t('metadata.editionCategories', formattedCategories));
+      sentences.push(t('metadata.editionCategories', { categories: formattedCategories }));
     }
   }
 
   const sgfCount = getTournamentSgfCount(tournament);
 
   if (sgfCount > 0) {
-    sentences.push(t('metadata.editionIncludesResultsAndSgfs', formatCount(sgfCount, 'sgfs', locale)));
+    sentences.push(
+      t('metadata.editionIncludesResultsAndSgfs', {
+        sgfs: t('counts.sgfs', { count: sgfCount }),
+      })
+    );
   } else {
     sentences.push(t('metadata.editionIncludesResults'));
   }
 
-  return sentences.join(' ');
+  return cleanWhitespace(sentences.join(' '));
 }
 
-export function describeTournamentsOverview({ locale, t, tournaments }: TournamentsOverviewMetadataInput): string {
+export function describeTournamentsOverview({ t, tournaments }: TournamentsOverviewMetadataInput): string {
   const completed = getCompletedTournaments(tournaments);
 
   if (completed.length === 0) {
@@ -126,12 +135,12 @@ export function describeTournamentsOverview({ locale, t, tournaments }: Tourname
   }
 
   const span = getYearSpan(completed.map((tournament) => tournament.year));
-  const editionsLabel = withYearSpan(formatCount(completed.length, 'editionsGenitive', locale), span);
+  const editions = withYearSpan(t('counts.editionsGenitive', { count: completed.length }), span);
 
-  return t('metadata.tournamentsSummary', editionsLabel, getEventDisplayName(t));
+  return cleanWhitespace(t('metadata.tournamentsSummary', { editions, event: getEventDisplayName(t) }));
 }
 
-export function describeAllPlayersStats({ locale, t, totalStats, tournaments }: AllPlayersStatsMetadataInput): string {
+export function describeAllPlayersStats({ t, totalStats, tournaments }: AllPlayersStatsMetadataInput): string {
   const completed = getCompletedTournaments(tournaments);
   const { players, playedGames } = totalStats;
 
@@ -140,14 +149,20 @@ export function describeAllPlayersStats({ locale, t, totalStats, tournaments }: 
   }
 
   const span = getYearSpan(completed.map((tournament) => tournament.year));
-  const editionsPart = withYearSpan(formatCount(completed.length, 'editionsLocative', locale), span);
-  const details = [formatCount(players, 'players', locale)];
+  const editions = withYearSpan(t('counts.editionsLocative', { count: completed.length }), span);
+  const details = [t('counts.players', { count: players })];
 
   if (playedGames > 0) {
-    details.push(formatCount(playedGames, 'games', locale));
+    details.push(t('counts.games', { count: playedGames }));
   }
 
-  return t('metadata.allTimePlayersSummary', details.join(', '), editionsPart, getEventDisplayName(t));
+  return cleanWhitespace(
+    t('metadata.allTimePlayersSummary', {
+      details: details.join(', '),
+      editions,
+      event: getEventDisplayName(t),
+    })
+  );
 }
 
 export function describePlayerStats({ category, event, locale, player, t }: PlayerStatsMetadataInput): string {
@@ -176,17 +191,17 @@ export function describePlayerStats({ category, event, locale, player, t }: Play
   const facts: string[] = [];
 
   if (player.totalAttended > 0) {
-    facts.push(formatCount(player.totalAttended, 'appearances', locale));
+    facts.push(t('counts.appearances', { count: player.totalAttended }));
   }
 
-  const medalSummary = formatMedalSummary(player.medals, locale, t);
+  const medalSummary = formatMedalSummary(player.medals, t);
 
   if (medalSummary) {
     facts.push(medalSummary);
   }
 
   if (event.showBestPlace && Number.isFinite(player.bestPlace)) {
-    facts.push(t('metadata.bestPlace', String(player.bestPlace)));
+    facts.push(t('metadata.bestPlace', { place: player.bestPlace }));
   }
 
   const recordSummary = formatWinLossRecord(
@@ -203,15 +218,20 @@ export function describePlayerStats({ category, event, locale, player, t }: Play
   }
 
   if (facts.length === 0) {
-    return t('site.playerStatsDescription', player.name);
+    return t('site.playerStatsDescription', { player: player.name });
   }
 
-  return t('metadata.playerSummary', nameParts.join(' '), eventScope, facts.join(', '));
+  return cleanWhitespace(
+    t('metadata.playerSummary', {
+      player: nameParts.join(' '),
+      scope: eventScope,
+      facts: facts.join(', '),
+    })
+  );
 }
 
 export function describeAllCountriesStats({
   countryCount,
-  locale,
   t,
   totalStats,
   tournaments,
@@ -224,14 +244,20 @@ export function describeAllCountriesStats({
   }
 
   const span = getYearSpan(completed.map((tournament) => tournament.year));
-  const editionsPart = withYearSpan(formatCount(completed.length, 'editionsLocative', locale), span);
-  const details = [formatCount(countryCount, 'countries', locale)];
+  const editions = withYearSpan(t('counts.editionsLocative', { count: completed.length }), span);
+  const details = [t('counts.countries', { count: countryCount })];
 
   if (playedGames > 0) {
-    details.push(formatCount(playedGames, 'games', locale));
+    details.push(t('counts.games', { count: playedGames }));
   }
 
-  return t('metadata.allTimeCountriesSummary', details.join(', '), editionsPart, getEventDisplayName(t));
+  return cleanWhitespace(
+    t('metadata.allTimeCountriesSummary', {
+      details: details.join(', '),
+      editions,
+      event: getEventDisplayName(t),
+    })
+  );
 }
 
 export function describeCountryStats({ category, country, event, locale, t }: CountryStatsMetadataInput): string {
@@ -252,19 +278,19 @@ export function describeCountryStats({ category, country, event, locale, t }: Co
   const facts: string[] = [];
 
   if (years.length > 0) {
-    facts.push(formatCount(years.length, 'editions', locale));
+    facts.push(t('counts.editions', { count: years.length }));
   }
 
   if (uniquePlayers.size > 0) {
-    facts.push(formatCount(uniquePlayers.size, 'players', locale));
+    facts.push(t('counts.players', { count: uniquePlayers.size }));
   }
 
-  const medalSummary = formatMedalSummary(country.medals, locale, t);
+  const medalSummary = formatMedalSummary(country.medals, t);
 
   if (medalSummary) {
     facts.push(medalSummary);
   } else if (event.showBestPlace && Number.isFinite(country.bestPlace)) {
-    facts.push(t('metadata.bestPlace', String(country.bestPlace)));
+    facts.push(t('metadata.bestPlace', { place: country.bestPlace }));
   }
 
   const recordSummary = formatWinLossRecord(
@@ -281,26 +307,38 @@ export function describeCountryStats({ category, country, event, locale, t }: Co
   }
 
   if (facts.length === 0) {
-    return t('site.countryStatsDescription', countryName);
+    return t('site.countryStatsDescription', { country: countryName });
   }
 
-  return t('metadata.countrySummary', countryName, eventScope, facts.join(', '));
+  return cleanWhitespace(
+    t('metadata.countrySummary', {
+      country: countryName,
+      scope: eventScope,
+      facts: facts.join(', '),
+    })
+  );
 }
 
-export function describeCategoryStats({ category, locale, stats, t }: CategoryStatsMetadataInput): string {
+export function describeCategoryStats({ category, stats, t }: CategoryStatsMetadataInput): string {
   const categoryName = formatCategoryLabel(category, t);
 
   if (stats.tournaments.length === 0) {
-    return t('site.categoryStatsDescription', categoryName);
+    return t('site.categoryStatsDescription', { category: categoryName });
   }
 
   const span = getYearSpan(stats.tournaments.map((tournament) => tournament.year));
-  const editionsPart = withYearSpan(formatCount(stats.tournaments.length, 'editions', locale), span);
+  const editions = withYearSpan(t('counts.editions', { count: stats.tournaments.length }), span);
 
-  return t('metadata.categorySummary', categoryName, getEventDisplayName(t), editionsPart);
+  return cleanWhitespace(
+    t('metadata.categorySummary', {
+      category: categoryName,
+      event: getEventDisplayName(t),
+      editions,
+    })
+  );
 }
 
-export function describeGames({ locale, t, totalStats, tournaments }: GamesMetadataInput): string {
+export function describeGames({ t, totalStats, tournaments }: GamesMetadataInput): string {
   const sgfCount = totalStats.sgfs;
 
   if (sgfCount === 0) {
@@ -309,16 +347,22 @@ export function describeGames({ locale, t, totalStats, tournaments }: GamesMetad
 
   const years = getSgfTournamentYears(tournaments);
   const span = getYearSpan(years);
-  const editionsPart = withYearSpan(formatCount(years.length, 'editionsGenitive', locale), span);
+  const editions = withYearSpan(t('counts.editionsGenitive', { count: years.length }), span);
 
-  return t('metadata.gamesSummary', formatCount(sgfCount, 'sgfs', locale), editionsPart, getEventDisplayName(t));
+  return cleanWhitespace(
+    t('metadata.gamesSummary', {
+      sgfs: t('counts.sgfs', { count: sgfCount }),
+      editions,
+      event: getEventDisplayName(t),
+    })
+  );
 }
 
 function withYearSpan(label: string, span?: string): string {
   return span ? `${label} (${span})` : label;
 }
 
-function formatMedalSummary(medals: StatsMedals | undefined, locale: Locale, t: Translator): string | undefined {
+function formatMedalSummary(medals: StatsMedals | undefined, t: Translator): string | undefined {
   if (!medals) {
     return undefined;
   }
@@ -330,22 +374,24 @@ function formatMedalSummary(medals: StatsMedals | undefined, locale: Locale, t: 
     return undefined;
   }
 
-  const labels = locale === 'pl' ? ['Z', 'S', 'B'] : ['G', 'S', 'B'];
   const breakdown: string[] = [];
 
   if (gold.length > 0) {
-    breakdown.push(`${gold.length}${labels[0]}`);
+    breakdown.push(`${gold.length}${t('medals.short.gold')}`);
   }
 
   if (silver.length > 0) {
-    breakdown.push(`${silver.length}${labels[1]}`);
+    breakdown.push(`${silver.length}${t('medals.short.silver')}`);
   }
 
   if (bronze.length > 0) {
-    breakdown.push(`${bronze.length}${labels[2]}`);
+    breakdown.push(`${bronze.length}${t('medals.short.bronze')}`);
   }
 
-  return t('metadata.medalsDetail', formatCount(total, 'medals', locale), breakdown.join(' '));
+  return t('metadata.medalsDetail', {
+    medals: t('counts.medals', { count: total }),
+    breakdown: breakdown.join(' '),
+  });
 }
 
 function formatWinLossRecord(
@@ -363,17 +409,20 @@ function formatWinLossRecord(
   }
 
   const lost = Math.max(0, resolved - won - drawn);
-  const pct = Math.round((won / resolved) * 100);
+  const percentage = Math.round((won / resolved) * 100);
 
   if (drawn > 0) {
-    return t(
-      'metadata.recordWithDraws',
-      formatNumber(won, locale),
-      formatNumber(lost, locale),
-      formatNumber(drawn, locale),
-      String(pct)
-    );
+    return t('metadata.recordWithDraws', {
+      won: formatNumber(won, locale),
+      lost: formatNumber(lost, locale),
+      drawn: formatNumber(drawn, locale),
+      percentage,
+    });
   }
 
-  return t('metadata.record', formatNumber(won, locale), formatNumber(lost, locale), String(pct));
+  return t('metadata.record', {
+    won: formatNumber(won, locale),
+    lost: formatNumber(lost, locale),
+    percentage,
+  });
 }

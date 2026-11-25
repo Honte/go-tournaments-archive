@@ -54,7 +54,7 @@ export function ArchiveStats({ event, translations, stats }: ArchiveStatsProps) 
       label: t('stats.total.black'),
       value: toPercentage(blackShare),
       progress: blackShare,
-      title: t('stats.total.blackSample', toCount(stats.color)),
+      title: t('stats.total.blackSample', { count: toCount(stats.color) }),
     });
   }
 

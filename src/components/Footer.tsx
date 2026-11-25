@@ -21,10 +21,10 @@ export function Footer({ translations }: { translations: Translations }) {
           &copy; {generationTime.getFullYear()}
         </p>
         <p className="ml-auto text-xs flex items-center gap-2">
-          {t('site.lastUpdated', formatDate(generationTime, translations.locale))}
+          {t('site.lastUpdated', { date: formatDate(generationTime, translations.locale) })}
           <ExternalLink
             href={REPOSITORY_URL}
-            title={t('site.github', REPOSITORY_URL)}
+            title={t('site.github', { url: REPOSITORY_URL })}
             className="text-archive-shell-text hover:text-archive-accent-hover"
           >
             <FaGithub />

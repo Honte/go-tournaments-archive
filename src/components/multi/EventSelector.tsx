@@ -24,6 +24,7 @@ export type MultiEventTranslations = {
   themeAuto: string;
   themeLight: string;
   themeDark: string;
+  externalArchive: string;
 };
 
 export function EventSelector({ title, footer, groups, locales, hasSingleLocale, translations }: EventSelectorProps) {
@@ -31,7 +32,7 @@ export function EventSelector({ title, footer, groups, locales, hasSingleLocale,
   const locale = (params.get('locale') ?? locales?.[0] ?? 'en') as Locale;
   const footerContent = getString(footer, locale);
   const selectorTitle = getString(title, locale, 'Go Tournaments Archives');
-  const translation = translations[locale] ?? translations['en']!;
+  const translation = translations[locale] ?? translations[locales?.[0] ?? 'en'] ?? Object.values(translations)[0]!;
 
   return (
     <>
@@ -69,6 +70,7 @@ export function EventSelector({ title, footer, groups, locales, hasSingleLocale,
             events={group.events}
             locale={locale}
             hasSingleLocale={hasSingleLocale}
+            externalLabel={translation.externalArchive}
           />
         ))}
         {footerContent && (

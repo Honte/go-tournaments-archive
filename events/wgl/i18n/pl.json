@@ -4,12 +4,12 @@
     "eventName": "Warszawska Liga Go",
     "acronym": "WGL",
     "description": "Archiwum wyników wszystkich edycji Warszawskiej Ligi Go",
-    "yearDescription": "Wyniki ligi z edycji %{0}",
+    "yearDescription": "Wyniki ligi z edycji {year}",
     "allTimeStatsDescription": "Lista wszech czasów wszystkich zawodników Warszawskiej Ligi Go",
-    "playerStatsDescription": "Statystyki gracza %{0} we wszystkich rozegranych edycjach Warszawskiej Ligi Go"
+    "playerStatsDescription": "Statystyki gracza {player} we wszystkich rozegranych edycjach Warszawskiej Ligi Go"
   },
   "details": {
-    "goToWebsite": "Przejdź na stronę WGL %{0}"
+    "goToWebsite": "Przejdź na stronę WGL {year}"
   },
   "winners": {
     "first": "Zwycięzca Warszawskiej Ligi Go"

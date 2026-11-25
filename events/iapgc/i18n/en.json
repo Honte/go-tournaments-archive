@@ -3,12 +3,12 @@
     "name": "International Amateur Pair Go Championships Archive",
     "acronym": "IAPGC",
     "description": "Archive of all International Amateur Pair Championships tournaments",
-    "yearDescription": "Results of IAPGC %{0}",
+    "yearDescription": "Results of IAPGC {year}",
     "allTimeStatsDescription": "All-time statistics of all International Amateur Pair Go Championships participants",
-    "playerStatsDescription": "Participation statistics of %{0} in all International Amateur Pair Go Championships events"
+    "playerStatsDescription": "Participation statistics of {player} in all International Amateur Pair Go Championships events"
   },
   "details": {
-    "goToWebsite": "Go to IAPGC %{0} website"
+    "goToWebsite": "Go to IAPGC {year} website"
   },
   "winners": {
     "first": "Pair Champion"

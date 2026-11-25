@@ -115,11 +115,11 @@ describe('social card spec builders', () => {
     });
     const statsInput = createCardStatsInput([createTournament({ year: 2024 }), createTournament({ year: 2025 })], 28);
 
-    const general = buildEventGeneralCardSpec(event, statsInput, 'pl', t);
+    const general = buildEventGeneralCardSpec(event, statsInput, t);
     assert.equal(general.displayDomain, 'mp.go.art.pl');
     assert.deepEqual(general.pills, ['2024–2025', '2 edycje', '48 graczy', '28 partii SGF']);
 
-    const noSgfGeneral = buildEventGeneralCardSpec(event, createCardStatsInput([createTournament()], 0), 'pl', t);
+    const noSgfGeneral = buildEventGeneralCardSpec(event, createCardStatsInput([createTournament()], 0), t);
     assert.equal(noSgfGeneral.subtitle, 'Wyniki, tabele i statystyki wszech czasów.');
     assert.equal(noSgfGeneral.pills.length, 3);
 
@@ -131,7 +131,7 @@ describe('social card spec builders', () => {
       { value: '140', label: 'partii' },
     ]);
 
-    const games = buildEventGamesCardSpec(statsInput, 'pl', t);
+    const games = buildEventGamesCardSpec(statsInput, t);
     assert.equal(games.badge, 'ZAPISY PARTII (SGF)');
     assert.deepEqual(games.pills, ['28 partii SGF', '2024–2025']);
   });

@@ -52,7 +52,7 @@ export function MedalCard({ card, event, translations }: MedalCardProps) {
           <div key={group.category ?? 'all'}>
             <dt className="text-sm text-archive-text-muted">
               {group.category
-                ? t(`winners.${card.award}In`, t(`categories.short.${group.category}`))
+                ? t(`winners.${card.award}In`, { category: t(`categories.short.${group.category}`) })
                 : t(`winners.${card.award}`)}
             </dt>
             <dd className="flex flex-wrap gap-x-3 gap-y-1 mt-1">
