@@ -1,15 +1,16 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import type { ReactElement, ReactNode } from 'react';
-import { createCardElement } from './render';
+import { createElement, type ReactElement, type ReactNode } from 'react';
 import type {
   ArchiveCardSpec,
   EditionCardSpec,
   GamesCardSpec,
   GeneralCardSpec,
+  SocialCardSpec,
   SocialLogoAsset,
   StatsCardSpec,
 } from './schema';
+import { SocialCard } from './SocialCard';
 
 const LOGO: SocialLogoAsset = {
   src: 'data:image/svg+xml;base64,PHN2Zy8+',
@@ -19,16 +20,23 @@ const LOGO: SocialLogoAsset = {
 
 const BG = 'data:image/jpeg;base64,/9j/';
 
-function isReactElement(
-  node: ReactNode
-): node is ReactElement<{ children?: ReactNode; style?: Record<string, unknown> }> {
+type AnyElement = ReactElement<{ children?: ReactNode; style?: Record<string, unknown> }>;
+
+function renderCard(card: SocialCardSpec): ReactElement {
+  return createElement(SocialCard, { card, backgroundSrc: BG, logo: LOGO });
+}
+
+function isReactElement(node: ReactNode): node is AnyElement {
   return typeof node === 'object' && node !== null && 'type' in node && 'props' in node;
 }
 
-function collectElements(
-  node: ReactNode,
-  out: ReactElement<{ children?: ReactNode; style?: Record<string, unknown> }>[] = []
-) {
+function expandComponent(element: AnyElement): ReactNode {
+  const component = element.type as (props: Record<string, unknown>) => ReactNode;
+
+  return component(element.props as Record<string, unknown>);
+}
+
+function collectElements(node: ReactNode, out: AnyElement[] = []): AnyElement[] {
   if (Array.isArray(node)) {
     for (const child of node) {
       collectElements(child, out);
@@ -39,7 +47,7 @@ function collectElements(
 
   if (isReactElement(node)) {
     out.push(node);
-    collectElements(node.props.children, out);
+    collectElements(typeof node.type === 'function' ? expandComponent(node) : node.props.children, out);
   }
 
   return out;
@@ -55,13 +63,13 @@ function collectText(node: ReactNode): string {
   }
 
   if (isReactElement(node)) {
-    return collectText(node.props.children);
+    return collectText(typeof node.type === 'function' ? expandComponent(node) : node.props.children);
   }
 
   return '';
 }
 
-describe('social card element renderer', () => {
+describe('SocialCard', () => {
   it('renders archive cards without a top bar and with unique tag keys even when acronyms repeat', () => {
     const spec: ArchiveCardSpec = {
       type: 'archive',
@@ -71,9 +79,9 @@ describe('social card element renderer', () => {
       extraEventsCount: 1,
     };
 
-    const element = createCardElement(spec, BG, LOGO);
+    const element = renderCard(spec);
     const elements = collectElements(element);
-    const keyedTags = elements.filter((item) => item.type === 'div' && item.key !== null);
+    const keyedTags = elements.filter((item) => item.type !== 'stop' && item.key !== null);
 
     assert.deepEqual(
       keyedTags.map((item) => item.key),
@@ -101,7 +109,7 @@ describe('social card element renderer', () => {
       isPairs: false,
     };
 
-    const element = createCardElement(spec, BG, LOGO);
+    const element = renderCard(spec);
     const elements = collectElements(element);
     const podiumRows = elements.filter((item) => item.key === '1-Alice, Bob' || item.key === '3-Carol');
     assert.equal(podiumRows.length, 2);
@@ -132,10 +140,10 @@ describe('social card element renderer', () => {
       metrics: [{ value: '2', label: 'editions' }],
     };
 
-    const repeatedText = collectText(createCardElement(repeatedStats, BG, LOGO));
+    const repeatedText = collectText(renderCard(repeatedStats));
     assert.equal(repeatedText.match(/European Go Championships Archive/g)?.length, 1);
 
-    const distinctText = collectText(createCardElement(distinctStats, BG, LOGO));
+    const distinctText = collectText(renderCard(distinctStats));
     assert.match(distinctText, /Polish Go Championships Archive/);
     assert.match(distinctText, /Polish Go Championship/);
   });
@@ -178,10 +186,10 @@ describe('social card element renderer', () => {
       upcomingBadge: 'UPCOMING EDITION',
     };
 
-    assert.match(collectText(createCardElement(general, BG, LOGO)), /2024–2025/);
-    assert.match(collectText(createCardElement(stats, BG, LOGO)), /Polish Go Championships Archive/);
-    assert.match(collectText(createCardElement(games, BG, LOGO)), /42 SGF games/);
-    assert.match(collectText(createCardElement(categorized, BG, LOGO)), /U18Alice/);
-    assert.match(collectText(createCardElement(upcoming, BG, LOGO)), /UPCOMING EDITION/);
+    assert.match(collectText(renderCard(general)), /2024–2025/);
+    assert.match(collectText(renderCard(stats)), /Polish Go Championships Archive/);
+    assert.match(collectText(renderCard(games)), /42 SGF games/);
+    assert.match(collectText(renderCard(categorized)), /U18Alice/);
+    assert.match(collectText(renderCard(upcoming)), /UPCOMING EDITION/);
   });
 });
