@@ -19,9 +19,9 @@ export type MedalCardData = {
 };
 
 const MEDAL_CLASSES = {
-  gold: 'border-t-archive-medal-gold',
-  silver: 'border-t-archive-medal-silver',
-  bronze: 'border-t-archive-medal-bronze',
+  gold: 'border-l-archive-medal-gold',
+  silver: 'border-l-archive-medal-silver',
+  bronze: 'border-l-archive-medal-bronze',
 };
 
 const ICON_CLASSES = {
@@ -38,7 +38,7 @@ export function MedalCard({ card, event, translations }: MedalCardProps) {
   return (
     <article
       className={`
-        rounded-lg border border-t-5 p-5
+        rounded-lg border border-l-6 p-5
         border-archive-border bg-archive-surface ${MEDAL_CLASSES[card.medal]}
       `}
     >
