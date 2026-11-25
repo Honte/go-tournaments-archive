@@ -63,14 +63,13 @@
     "generalSubtitle": "Results, standings, all-time statistics and SGF game records.",
     "generalSubtitleNoSgf": "Results, standings and all-time statistics.",
     "upcomingBadge": "UPCOMING EDITION",
-    "statsBadge": "ALL-TIME STATISTICS",
-    "statsSubtitle": "All-time standings, player profiles, medals and game records.",
+    "statsSubtitle": "Tournament results, game records, participation summaries and player statistics.",
+    "statsSubtitleNoSgf": "Tournament results, participation summaries and player statistics.",
     "statsMetrics": {
       "editions": "{count, plural, one {edition} other {editions}}",
       "players": "{count, plural, one {player} other {players}}",
       "games": "{count, plural, one {game} other {games}}"
     },
-    "gamesBadge": "GAME RECORDS (SGF)",
     "gamesSubtitle": "Browse, filter and replay archived SGF game records.",
     "archiveSubtitle": "Results, all-time statistics and SGF game records for {tournaments}."
   },

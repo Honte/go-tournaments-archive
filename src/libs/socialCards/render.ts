@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og';
 import { createElement, type ReactElement } from 'react';
 import sharp from 'sharp';
-import { SOCIAL_IMAGE_HEIGHT, SOCIAL_IMAGE_WIDTH } from '@/libs/metadata';
+import { cleanWhitespace, SOCIAL_IMAGE_HEIGHT, SOCIAL_IMAGE_WIDTH } from '@/libs/metadata';
 import { loadSocialFonts } from './assets';
 import type {
   ArchiveCardSpec,
@@ -15,12 +15,7 @@ import type {
 } from './schema';
 
 const DARK_BG = '#15181c';
-const GOLD_ACCENT = '#c68e1e';
-const GOLD_TEXT = '#e5b54b';
-const BLUE_ACCENT = '#5287ae';
 const BLUE_TEXT = '#93c5fd';
-const GREEN_ACCENT = '#799b29';
-const GREEN_TEXT = '#bef264';
 
 const MEDAL_COLORS = ['#fece43', '#c0c0c0', '#cd7f32'] as const;
 const MEDAL_TEXT_COLORS = ['#f8fafc', '#e2e8f0', '#cbd5e1'] as const;
@@ -65,7 +60,6 @@ function renderArchiveCard(card: ArchiveCardSpec, backgroundSrc: string, logo: S
 
   return cardShell(
     backgroundSrc,
-    BLUE_ACCENT,
     1,
     [
       [0, 1],
@@ -77,15 +71,8 @@ function renderArchiveCard(card: ArchiveCardSpec, backgroundSrc: string, logo: S
     780,
     el(
       'div',
-      { style: { display: 'flex', alignItems: 'center', gap: 18 } },
-      el('img', { src: logo.src, width: logo.width, height: logo.height }),
-      card.displayDomain
-        ? el(
-            'div',
-            { style: { fontSize: 20, fontWeight: 600, color: BLUE_TEXT, letterSpacing: '0.05em' } },
-            card.displayDomain.toUpperCase()
-          )
-        : null
+      { style: { display: 'flex', alignItems: 'center' } },
+      el('img', { src: logo.src, width: logo.width, height: logo.height })
     ),
     el(
       'div',
@@ -125,11 +112,9 @@ function renderArchiveCard(card: ArchiveCardSpec, backgroundSrc: string, logo: S
 
 function renderGeneralCard(card: GeneralCardSpec, backgroundSrc: string, logo: SocialLogoAsset): ReactElement {
   const titleFontSize = card.siteName.length > 36 ? 44 : 52;
-  const headerLabel = card.displayDomain ? card.displayDomain.toUpperCase() : card.acronym;
 
   return cardShell(
     backgroundSrc,
-    GOLD_ACCENT,
     1,
     [
       [0, 1],
@@ -139,12 +124,7 @@ function renderGeneralCard(card: GeneralCardSpec, backgroundSrc: string, logo: S
       [100, 0.12],
     ],
     760,
-    el(
-      'div',
-      { style: { display: 'flex', alignItems: 'center', gap: 18 } },
-      logoImage(logo),
-      el('div', { style: { fontSize: 20, fontWeight: 600, color: GOLD_TEXT, letterSpacing: '0.06em' } }, headerLabel)
-    ),
+    eventHeader(logo),
     el(
       'div',
       { style: { display: 'flex', flexDirection: 'column', gap: 16 } },
@@ -183,15 +163,11 @@ function renderGeneralCard(card: GeneralCardSpec, backgroundSrc: string, logo: S
 }
 
 function renderEditionCard(card: EditionCardSpec, backgroundSrc: string, logo: SocialLogoAsset): ReactElement {
-  const isUpcoming = Boolean(card.upcomingBadge);
-  const accent = isUpcoming ? BLUE_ACCENT : GOLD_ACCENT;
-  const domainColor = isUpcoming ? BLUE_TEXT : GOLD_TEXT;
   const headingSize = getEditionHeadingFontSize(card.heading);
   const footerWidth = card.isPairs ? 560 : 480;
 
   return cardShell(
     backgroundSrc,
-    accent,
     1,
     [
       [0, 1],
@@ -201,23 +177,7 @@ function renderEditionCard(card: EditionCardSpec, backgroundSrc: string, logo: S
       [100, 0.14],
     ],
     780,
-    el(
-      'div',
-      { style: { display: 'flex', alignItems: 'center', gap: 18 } },
-      logoImage(logo),
-      el(
-        'div',
-        { style: { display: 'flex', flexDirection: 'column' } },
-        el('div', { style: { fontSize: 22, fontWeight: 600, color: '#e2e8f0' } }, card.siteName),
-        card.displayDomain
-          ? el(
-              'div',
-              { style: { fontSize: 17, color: domainColor, fontWeight: 600, marginTop: 2 } },
-              card.displayDomain
-            )
-          : null
-      )
-    ),
+    eventHeader(logo, card.siteName, card.heading),
     el(
       'div',
       { style: { display: 'flex', flexDirection: 'column', gap: 10 } },
@@ -350,7 +310,6 @@ function renderStatsCard(card: StatsCardSpec, backgroundSrc: string, logo: Socia
 
   return cardShell(
     backgroundSrc,
-    BLUE_ACCENT,
     0.68,
     [
       [0, 1],
@@ -360,30 +319,7 @@ function renderStatsCard(card: StatsCardSpec, backgroundSrc: string, logo: Socia
       [100, 0.2],
     ],
     780,
-    el(
-      'div',
-      { style: { display: 'flex', alignItems: 'center', gap: 18 } },
-      logoImage(logo),
-      el(
-        'div',
-        {
-          style: {
-            display: 'flex',
-            alignItems: 'center',
-            gap: 10,
-            padding: '8px 16px',
-            borderRadius: 999,
-            backgroundColor: 'rgba(82,135,174,0.24)',
-            border: '1px solid rgba(82,135,174,0.6)',
-            color: BLUE_TEXT,
-            fontSize: 18,
-            fontWeight: 600,
-          },
-        },
-        iconChart(BLUE_TEXT),
-        card.badge
-      )
-    ),
+    eventHeader(logo, card.siteName, card.title),
     el(
       'div',
       { style: { display: 'flex', flexDirection: 'column', gap: 14 } },
@@ -423,7 +359,6 @@ function renderGamesCard(card: GamesCardSpec, backgroundSrc: string, logo: Socia
 
   return cardShell(
     backgroundSrc,
-    GREEN_ACCENT,
     0.72,
     [
       [0, 1],
@@ -433,30 +368,7 @@ function renderGamesCard(card: GamesCardSpec, backgroundSrc: string, logo: Socia
       [100, 0.16],
     ],
     780,
-    el(
-      'div',
-      { style: { display: 'flex', alignItems: 'center', gap: 18 } },
-      logoImage(logo),
-      el(
-        'div',
-        {
-          style: {
-            display: 'flex',
-            alignItems: 'center',
-            gap: 10,
-            padding: '8px 16px',
-            borderRadius: 999,
-            backgroundColor: 'rgba(121,155,41,0.24)',
-            border: '1px solid rgba(121,155,41,0.6)',
-            color: GREEN_TEXT,
-            fontSize: 18,
-            fontWeight: 600,
-          },
-        },
-        iconBoard(GREEN_TEXT),
-        card.badge
-      )
-    ),
+    eventHeader(logo, card.siteName, card.title),
     el(
       'div',
       { style: { display: 'flex', flexDirection: 'column', gap: 14 } },
@@ -492,7 +404,6 @@ function renderGamesCard(card: GamesCardSpec, backgroundSrc: string, logo: Socia
 
 function cardShell(
   backgroundSrc: string,
-  accent: string,
   backgroundOpacity: number,
   fadeStops: readonly [number, number][],
   contentWidth: number,
@@ -527,16 +438,6 @@ function cardShell(
       },
     }),
     svgHorizontalFade(DARK_BG, fadeStops),
-    el('div', {
-      style: {
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        width: SOCIAL_IMAGE_WIDTH,
-        height: 6,
-        backgroundColor: accent,
-      },
-    }),
     el(
       'div',
       {
@@ -554,6 +455,19 @@ function cardShell(
       body,
       footer
     )
+  );
+}
+
+function eventHeader(logo: SocialLogoAsset, siteName?: string, middleTitle?: string): ReactElement {
+  const showSiteName = Boolean(
+    siteName && (!middleTitle || cleanWhitespace(siteName) !== cleanWhitespace(middleTitle))
+  );
+
+  return el(
+    'div',
+    { style: { display: 'flex', alignItems: 'center', gap: 18 } },
+    logoImage(logo),
+    showSiteName ? el('div', { style: { fontSize: 22, fontWeight: 600, color: '#e2e8f0' } }, siteName) : null
   );
 }
 
@@ -609,44 +523,6 @@ function medalDot(color: string, rank: string): ReactElement {
       },
     },
     rank
-  );
-}
-
-function iconChart(color: string): ReactElement {
-  return el(
-    'svg',
-    {
-      width: 22,
-      height: 22,
-      viewBox: '0 0 24 24',
-      fill: 'none',
-      stroke: color,
-      strokeWidth: 2.2,
-      strokeLinecap: 'round',
-      strokeLinejoin: 'round',
-    },
-    el('path', { d: 'M3 3v18h18' }),
-    el('rect', { x: 7, y: 12, width: 3, height: 6, fill: color, stroke: 'none', rx: 1 }),
-    el('rect', { x: 12, y: 7, width: 3, height: 11, fill: color, stroke: 'none', rx: 1 }),
-    el('rect', { x: 17, y: 10, width: 3, height: 8, fill: color, stroke: 'none', rx: 1 })
-  );
-}
-
-function iconBoard(color: string): ReactElement {
-  return el(
-    'svg',
-    {
-      width: 22,
-      height: 22,
-      viewBox: '0 0 24 24',
-      fill: 'none',
-      stroke: color,
-      strokeWidth: 1.8,
-    },
-    el('rect', { x: 3, y: 3, width: 18, height: 18, rx: 3 }),
-    el('path', { d: 'M9 3v18M15 3v18M3 9h18M3 15h18', opacity: 0.45 }),
-    el('circle', { cx: 9, cy: 9, r: 2.5, fill: color }),
-    el('circle', { cx: 15, cy: 15, r: 2.5, fill: 'none', strokeWidth: 2 })
   );
 }
 

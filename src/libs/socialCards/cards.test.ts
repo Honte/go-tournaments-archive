@@ -90,7 +90,7 @@ function createCardStatsInput(tournaments: Tournament[], sgfs = 28): EventCardSt
 }
 
 describe('social card spec builders', () => {
-  it('caps archive selector acronyms and formats domain with basePath', () => {
+  it('caps archive selector acronyms and formats subtitle counts', () => {
     const configuration: ArchiveConfiguration = {
       title: 'European Go Championships Archives',
       domain: 'https://eurogofed.org',
@@ -102,38 +102,54 @@ describe('social card spec builders', () => {
 
     const spec = buildArchiveCardSpec(configuration, acronyms, 'en', t);
 
-    assert.equal(spec.displayDomain, 'eurogofed.org/archives');
     assert.equal(spec.eventAcronyms.length, 9);
     assert.equal(spec.extraEventsCount, 2);
     assert.match(spec.subtitle, /11 Go tournaments/);
   });
 
-  it('builds general, stats, and games card specs without middle dots', () => {
-    const event = createEvent();
-    const t = createTranslator('pl', {
-      site: { name: 'Archiwum Mistrzostw Polski w Go', eventName: 'Mistrzostwa Polski w Go', acronym: 'MP' },
+  it('builds general, stats, and games card specs and omits header archive name when repeated in title', () => {
+    const tWithEventName = createTranslator('pl', {
+      site: { name: 'Archiwum Mistrzostw Polski w\u00a0Go', eventName: 'Mistrzostwa Polski w Go', acronym: 'MP' },
+    });
+    const tWithoutEventName = createTranslator('en', {
+      site: { name: 'European Go Championships Archive', acronym: 'EGC' },
     });
     const statsInput = createCardStatsInput([createTournament({ year: 2024 }), createTournament({ year: 2025 })], 28);
+    const noSgfInput = createCardStatsInput([createTournament()], 0);
 
-    const general = buildEventGeneralCardSpec(event, statsInput, t);
-    assert.equal(general.displayDomain, 'mp.go.art.pl');
+    const general = buildEventGeneralCardSpec(statsInput, tWithEventName);
+    assert.equal(general.siteName, 'Archiwum Mistrzostw Polski w\u00a0Go');
     assert.deepEqual(general.pills, ['2024–2025', '2 edycje', '48 graczy', '28 partii SGF']);
 
-    const noSgfGeneral = buildEventGeneralCardSpec(event, createCardStatsInput([createTournament()], 0), t);
+    const noSgfGeneral = buildEventGeneralCardSpec(noSgfInput, tWithEventName);
     assert.equal(noSgfGeneral.subtitle, 'Wyniki, tabele i statystyki wszech czasów.');
     assert.equal(noSgfGeneral.pills.length, 3);
 
-    const stats = buildEventStatsCardSpec(statsInput, 'pl', t);
-    assert.equal(stats.badge, 'STATYSTYKI WSZECH CZASÓW');
-    assert.deepEqual(stats.metrics, [
+    const statsWithHeader = buildEventStatsCardSpec(statsInput, 'pl', tWithEventName);
+    assert.equal(statsWithHeader.siteName, 'Archiwum Mistrzostw Polski w\u00a0Go');
+    assert.equal(statsWithHeader.title, 'Mistrzostwa Polski w Go');
+    assert.equal(
+      statsWithHeader.subtitle,
+      'Wyniki turniejów, zapisy partii, podsumowanie udziałów i statystyki graczy.'
+    );
+    assert.deepEqual(statsWithHeader.metrics, [
       { value: '2', label: 'edycje' },
       { value: '48', label: 'graczy' },
       { value: '140', label: 'partii' },
     ]);
 
-    const games = buildEventGamesCardSpec(statsInput, t);
-    assert.equal(games.badge, 'ZAPISY PARTII (SGF)');
-    assert.deepEqual(games.pills, ['28 partii SGF', '2024–2025']);
+    const statsNoSgf = buildEventStatsCardSpec(noSgfInput, 'en', tWithoutEventName);
+    assert.equal(statsNoSgf.siteName, undefined);
+    assert.equal(statsNoSgf.title, 'European Go Championships Archive');
+    assert.equal(statsNoSgf.subtitle, 'Tournament results, participation summaries and player statistics.');
+
+    const gamesWithHeader = buildEventGamesCardSpec(statsInput, tWithEventName);
+    assert.equal(gamesWithHeader.siteName, 'Archiwum Mistrzostw Polski w\u00a0Go');
+    assert.deepEqual(gamesWithHeader.pills, ['28 partii SGF', '2024–2025']);
+
+    const gamesWithoutHeader = buildEventGamesCardSpec(statsInput, tWithoutEventName);
+    assert.equal(gamesWithoutHeader.siteName, undefined);
+    assert.equal(gamesWithoutHeader.title, 'European Go Championships Archive');
   });
 
   it('builds standard, tied-podium, categorized, and announcement edition cards using commas instead of dots', () => {
@@ -142,6 +158,7 @@ describe('social card spec builders', () => {
     });
 
     const standard = buildEditionCardSpec(createEvent(), createTournament(), 'pl', tPl);
+    assert.equal(standard.siteName, 'Archiwum Mistrzostw Polski w Go');
     assert.equal(standard.heading, 'MP 2025');
     assert.equal(standard.metaLine?.includes('·'), false);
     assert.match(standard.metaLine ?? '', /^Gdańsk, /);
@@ -185,7 +202,7 @@ describe('social card spec builders', () => {
       'en',
       tEn
     );
-    assert.equal(categorized.displayDomain, 'eurogofed.org/archives/eygc');
+    assert.equal(categorized.siteName, 'EYGC Archive');
     assert.equal(categorized.podium.length, 0);
     assert.deepEqual(
       categorized.categoryWinners.map((item) => `${item.category}:${item.winner}`),

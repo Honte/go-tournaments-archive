@@ -63,14 +63,13 @@
     "generalSubtitle": "Wyniki, tabele, statystyki wszech czasów i zapisy partii SGF.",
     "generalSubtitleNoSgf": "Wyniki, tabele i statystyki wszech czasów.",
     "upcomingBadge": "NADCHODZĄCA EDYCJA",
-    "statsBadge": "STATYSTYKI WSZECH CZASÓW",
-    "statsSubtitle": "Tabela wszech czasów, profile graczy, medale i bilanse partii.",
+    "statsSubtitle": "Wyniki turniejów, zapisy partii, podsumowanie udziałów i statystyki graczy.",
+    "statsSubtitleNoSgf": "Wyniki turniejów, podsumowanie udziałów i statystyki graczy.",
     "statsMetrics": {
       "editions": "{count, plural, one {edycja} few {edycje} other {edycji}}",
       "players": "{count, plural, one {gracz} other {graczy}}",
       "games": "{count, plural, one {partia} few {partie} other {partii}}"
     },
-    "gamesBadge": "ZAPISY PARTII (SGF)",
     "gamesSubtitle": "Przeglądaj, filtruj i odtwarzaj archiwalne zapisy partii SGF.",
     "archiveSubtitle": "Wyniki, statystyki wszech czasów i zapisy partii SGF dla {tournaments}."
   },

@@ -16,7 +16,6 @@ export type ArchiveCardSpec = {
   type: 'archive';
   title: string;
   subtitle: string;
-  displayDomain?: string;
   eventAcronyms: string[];
   extraEventsCount: number;
 };
@@ -24,16 +23,13 @@ export type ArchiveCardSpec = {
 export type GeneralCardSpec = {
   type: 'general';
   siteName: string;
-  acronym: string;
-  displayDomain?: string;
   subtitle: string;
   pills: string[];
 };
 
 export type EditionCardSpec = {
   type: 'edition';
-  siteName: string;
-  displayDomain?: string;
+  siteName?: string;
   heading: string;
   metaLine?: string;
   statsLine?: string;
@@ -45,7 +41,7 @@ export type EditionCardSpec = {
 
 export type StatsCardSpec = {
   type: 'stats';
-  badge: string;
+  siteName?: string;
   title: string;
   subtitle: string;
   metrics: {
@@ -56,7 +52,7 @@ export type StatsCardSpec = {
 
 export type GamesCardSpec = {
   type: 'games';
-  badge: string;
+  siteName?: string;
   title: string;
   subtitle: string;
   pills: string[];

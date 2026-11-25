@@ -4,7 +4,6 @@ import type { Locale, Translator } from '@/i18n/consts';
 import { getString } from '@/i18n/utils';
 import {
   cleanWhitespace,
-  formatDisplayDomain,
   formatNumber,
   formatTournamentMetaLine,
   getCompletedTournaments,
@@ -51,14 +50,12 @@ export function buildArchiveCardSpec(
     type: 'archive',
     title,
     subtitle,
-    displayDomain: formatDisplayDomain(configuration.domain, configuration.basePath),
     eventAcronyms: visibleAcronyms,
     extraEventsCount,
   };
 }
 
 export function buildEventGeneralCardSpec(
-  event: EventContext,
   { totalStats, tournaments }: EventCardStatsInput,
   t: Translator
 ): GeneralCardSpec {
@@ -86,8 +83,6 @@ export function buildEventGeneralCardSpec(
   return {
     type: 'general',
     siteName: t('site.name'),
-    acronym: t('site.acronym'),
-    displayDomain: formatDisplayDomain(event.domain, event.basePath, event.prefix),
     subtitle: sgfs > 0 ? t('socialCard.generalSubtitle') : t('socialCard.generalSubtitleNoSgf'),
     pills,
   };
@@ -101,13 +96,12 @@ export function buildEditionCardSpec(
 ): EditionCardSpec {
   const heading = getTournamentHeading(tournament, locale, t);
   const metaLine = formatTournamentMetaLine(tournament, event, locale, t);
-  const displayDomain = formatDisplayDomain(event.domain, event.basePath, event.prefix);
+  const siteName = getHeaderSiteName(t('site.name'), heading);
 
   if (tournament.announcement) {
     return {
       type: 'edition',
-      siteName: t('site.name'),
-      displayDomain,
+      siteName,
       heading,
       metaLine,
       upcomingBadge: t('socialCard.upcomingBadge'),
@@ -136,8 +130,7 @@ export function buildEditionCardSpec(
 
   return {
     type: 'edition',
-    siteName: t('site.name'),
-    displayDomain,
+    siteName,
     heading,
     metaLine,
     statsLine: statParts.length > 0 ? statParts.join(', ') : undefined,
@@ -153,7 +146,8 @@ export function buildEventStatsCardSpec(
   t: Translator
 ): StatsCardSpec {
   const completed = getCompletedTournaments(tournaments);
-  const { players, playedGames } = totalStats;
+  const { players, playedGames, sgfs } = totalStats;
+  const title = getEventDisplayName(t);
   const metrics: { value: string; label: string }[] = [];
 
   if (completed.length > 0) {
@@ -179,9 +173,9 @@ export function buildEventStatsCardSpec(
 
   return {
     type: 'stats',
-    badge: t('socialCard.statsBadge'),
-    title: getEventDisplayName(t),
-    subtitle: t('socialCard.statsSubtitle'),
+    siteName: getHeaderSiteName(t('site.name'), title),
+    title,
+    subtitle: sgfs > 0 ? t('socialCard.statsSubtitle') : t('socialCard.statsSubtitleNoSgf'),
     metrics,
   };
 }
@@ -192,6 +186,7 @@ export function buildEventGamesCardSpec(
 ): GamesCardSpec {
   const sgfCount = totalStats.sgfs;
   const span = getYearSpan(getSgfTournamentYears(tournaments));
+  const title = getEventDisplayName(t);
   const pills: string[] = [];
 
   if (sgfCount > 0) {
@@ -204,9 +199,13 @@ export function buildEventGamesCardSpec(
 
   return {
     type: 'games',
-    badge: t('socialCard.gamesBadge'),
-    title: getEventDisplayName(t),
+    siteName: getHeaderSiteName(t('site.name'), title),
+    title,
     subtitle: t('socialCard.gamesSubtitle'),
     pills,
   };
+}
+
+function getHeaderSiteName(siteName: string, middleTitle: string): string | undefined {
+  return cleanWhitespace(siteName) !== cleanWhitespace(middleTitle) ? siteName : undefined;
 }

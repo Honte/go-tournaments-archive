@@ -62,24 +62,27 @@ function collectText(node: ReactNode): string {
 }
 
 describe('social card element renderer', () => {
-  it('renders archive cards with unique tag keys even when acronyms repeat', () => {
+  it('renders archive cards without a top bar and with unique tag keys even when acronyms repeat', () => {
     const spec: ArchiveCardSpec = {
       type: 'archive',
       title: 'European Go Championships Archives',
       subtitle: 'Browse 2 Go tournaments.',
-      displayDomain: 'eurogofed.org/archives',
       eventAcronyms: ['EGC', 'EGC'],
       extraEventsCount: 1,
     };
 
     const element = createCardElement(spec, BG, LOGO);
-    const keyedTags = collectElements(element).filter((item) => item.type === 'div' && item.key !== null);
+    const elements = collectElements(element);
+    const keyedTags = elements.filter((item) => item.type === 'div' && item.key !== null);
 
     assert.deepEqual(
       keyedTags.map((item) => item.key),
       ['0-EGC', '1-EGC', '2-+1']
     );
-    assert.match(collectText(element), /EUROGOFED\.ORG\/ARCHIVES/);
+    assert.equal(
+      elements.some((item) => item.props.style?.height === 6 && item.props.style?.top === 0),
+      false
+    );
     assert.match(collectText(element), /European Go Championships Archives/);
   });
 
@@ -88,7 +91,6 @@ describe('social card element renderer', () => {
       type: 'edition',
       siteName: 'Polish Go Championships Archive',
       heading: 'PGC 2025',
-      displayDomain: 'mp.go.art.pl',
       metaLine: 'Gdańsk, Nov 8–11, 2025',
       statsLine: '4 players, 2 SGF game records',
       podium: [
@@ -111,28 +113,50 @@ describe('social card element renderer', () => {
       elements.some((item) => item.props.children === '2'),
       false
     );
+    assert.match(collectText(element), /Polish Go Championships Archive/);
+  });
+
+  it('renders archive name next to logo only when it is not repeated in the middle', () => {
+    const repeatedStats: StatsCardSpec = {
+      type: 'stats',
+      siteName: 'European Go Championships Archive',
+      title: 'European Go Championships Archive',
+      subtitle: 'Tournament results, game records, participation summaries and player statistics.',
+      metrics: [{ value: '2', label: 'editions' }],
+    };
+    const distinctStats: StatsCardSpec = {
+      type: 'stats',
+      siteName: 'Polish Go Championships Archive',
+      title: 'Polish Go Championship',
+      subtitle: 'Tournament results, game records, participation summaries and player statistics.',
+      metrics: [{ value: '2', label: 'editions' }],
+    };
+
+    const repeatedText = collectText(createCardElement(repeatedStats, BG, LOGO));
+    assert.equal(repeatedText.match(/European Go Championships Archive/g)?.length, 1);
+
+    const distinctText = collectText(createCardElement(distinctStats, BG, LOGO));
+    assert.match(distinctText, /Polish Go Championships Archive/);
+    assert.match(distinctText, /Polish Go Championship/);
   });
 
   it('renders general, stats, games, categorized, and upcoming edition variants cleanly', () => {
     const general: GeneralCardSpec = {
       type: 'general',
       siteName: 'Polish Go Championships Archive',
-      acronym: 'PGC',
       subtitle: 'Results, standings, all-time statistics, and SGF game records.',
-      displayDomain: 'mp.go.art.pl',
       pills: ['2024–2025', '2 editions'],
     };
     const stats: StatsCardSpec = {
       type: 'stats',
-      badge: 'ALL-TIME STATISTICS',
-      title: 'Polish Go Championships Archive',
-      subtitle: 'Player records and standings.',
+      siteName: 'Polish Go Championships Archive',
+      title: 'Polish Go Championship',
+      subtitle: 'Tournament results, game records, participation summaries and player statistics.',
       metrics: [{ value: '2', label: 'editions' }],
     };
     const games: GamesCardSpec = {
       type: 'games',
-      badge: 'GAME RECORDS (SGF)',
-      title: 'Polish Go Championships Archive',
+      title: 'European Go Championships Archive',
       subtitle: 'Browse and replay SGF game records.',
       pills: ['42 SGF games'],
     };
@@ -155,8 +179,8 @@ describe('social card element renderer', () => {
     };
 
     assert.match(collectText(createCardElement(general, BG, LOGO)), /2024–2025/);
-    assert.match(collectText(createCardElement(stats, BG, LOGO)), /ALL-TIME STATISTICS/);
-    assert.match(collectText(createCardElement(games, BG, LOGO)), /GAME RECORDS \(SGF\)/);
+    assert.match(collectText(createCardElement(stats, BG, LOGO)), /Polish Go Championships Archive/);
+    assert.match(collectText(createCardElement(games, BG, LOGO)), /42 SGF games/);
     assert.match(collectText(createCardElement(categorized, BG, LOGO)), /U18Alice/);
     assert.match(collectText(createCardElement(upcoming, BG, LOGO)), /UPCOMING EDITION/);
   });
